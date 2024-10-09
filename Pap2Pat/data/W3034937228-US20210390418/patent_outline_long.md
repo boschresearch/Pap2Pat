@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to faq retrieval
+
+## SUMMARY
+
+- introduce system embodiment
+- introduce method embodiment
+- introduce computer program product embodiment
+
+## DETAILED DESCRIPTION
+
+- introduce FAQs and their limitations
+- define FAQs and their components
+- describe query matching against FAQs
+- motivate neural models for FAQ similarity prediction
+- describe limitations of supervised learning for FAQ models
+- introduce unsupervised retrieval models for query to question matching
+- describe information retrieval techniques used in unsupervised models
+- introduce BERT Q-q model for FAQ retrieval
+- describe fine-tuning BERT Q-q model using paraphrases
+- describe re-ranking candidates using BERT Q-q model
+- introduce additional models for re-ranking candidates
+- describe combining scores from multiple models
+- describe application to document retrieval
+- introduce weak-supervision using paraphrases
+- describe experiments and results
+- introduce process for training BERT Q-q model
+- receive question-answer pairs
+- index question-answer pairs
+- generate answer-question pairs
+- fine-tune GPT model using answer-question pairs
+- extract answers from answer-question pairs
+- generate question paraphrases using fine-tuned GPT
+- generate answer-paraphrase pairs
+- generate question-paraphrase pairs
+- filter question paraphrases using index
+- output filtered question-paraphrase pairs
+- train BERT Q-q model using filtered pairs
+- introduce system for re-ranking candidates
+- receive query and retrieve ranked candidates
+- re-rank candidates using passage-based re-ranker
+- re-rank candidates using BERT Q-a re-ranker
+- re-rank candidates using BERT Q-q re-ranker
+- fuse scores from multiple re-rankers
+- generate final ranking
+- describe training BERT Q-a re-ranker
+- describe application of BERT Q-a re-ranker
+- describe BERT-Q-q re-ranker
+- train BERT-Q-q re-ranker
+- fuse rankings
+- describe fusion component
+- calculate combined score
+- apply query expansion
+- return final ranking
+- describe system 200
+- generate question paraphrases
+- fine-tune GPT model
+- generate paraphrases
+- filter paraphrases
+- describe paraphrase generation
+- concatenate answers and questions
+- generate paraphrases using GPT model
+- filter paraphrases by FAQ
+- filter paraphrases by index
+- describe process for filtering paraphrases
+- train BERT Q-q model
+- generate triplets
+- calculate hinge loss
+- train BERT Q-q model using triplets
+- describe system for training BERT Q-q model
+- describe trained BERT Q-q model
+- receive query and question
+- generate representation
+- calculate output score
+- re-rank candidates
+- describe method for fine-tuning BERT query-question model
+- fine-tune BERT query-question model
+- describe process flow diagram
+- introduce method 700
+- receive query
+- retrieve ranked candidates
+- re-rank candidates using BERT model
+- return re-ranked candidate
+- discuss additional operations
+- introduce cloud computing environment
+- define cloud computing
+- describe characteristics of cloud computing
+- describe service models of cloud computing
+- describe deployment models of cloud computing
+- discuss private cloud
+- discuss community cloud
+- discuss public cloud
+- conclude cloud computing discussion
+- define hybrid cloud
+- describe cloud computing environment
+- introduce computing device
+- describe processor
+- describe memory device
+- describe input/output device interface
+- describe display interface
+- describe network interface controller
+- describe storage device
+- describe trainer module
+- describe receiver module
+- describe index module
+- describe re-ranker module
+- describe functionality of trainer module
+- describe functionality of receiver module
+- describe functionality of index module
+- describe functionality of re-ranker module
+- describe cloud computing environment
+- describe cloud computing nodes
+- describe local computing devices
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe workloads layer
+- describe computer program product
+- describe computer readable storage medium
+- describe network
+- describe computer readable program instructions
+- describe flowchart illustrations
+- describe block diagrams
+- describe computer implemented process
+- describe tangible, non-transitory computer-readable medium
+- describe paraphrase generator
+- describe paraphrase filter module
+- describe model tuner module
+- describe receiver module
+- describe index module
+- describe BERT Q-q model module
+- describe display module
+- describe flowchart and block diagrams
+- describe special purpose hardware-based systems
+- describe additional software components
+- describe fine-tuning BERT Q-q model
+- describe BERT Q-t model
+- describe modifications and variations
+- describe terminology
+

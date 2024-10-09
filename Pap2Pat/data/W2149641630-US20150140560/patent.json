@@ -1,0 +1,477 @@
+{
+    "id": "US20150140560",
+    "authors": [
+        "Raoul Kopelman",
+        "Mark A. Burns",
+        "Yunzi Li"
+    ],
+    "title": "ASYNCHRONOUS MAGNETIC BEAD ROTATION (AMBR) MICROVISCOMETER FOR ANALYSIS OF ANALYTES",
+    "date": "2014-11-04 00:00:00",
+    "abstract": "The disclosure provides a label-free viscosity-based analyte detection system using paramagnetic beads as an asynchronous magnetic bead rotation (AMBR) microviscometer. It is disclosed herein that the bead rotation period is linearly proportional to the viscosity of a solution comprising analytes surrounding the paramagnetic bead. Optical measurement of asynchronous microbead motion determines solution viscosity precisely in microscale volumes, thus allowing an estimate of analyte concentration. The results demonstrate the feasibility of viscosity-based analyte detection using AMBR in microscale aqueous volumes.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "STATEMENT OF GOVERNMENT INTEREST",
+                    "paragraphs": [
+                        "This invention was made with government support under federal grants EB006789 and HG005077 awarded by the National Institutes of Health. The Government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "disclose government support"
+                    ],
+                    "num_characters": 188,
+                    "outline_medium": [
+                        "disclose government support"
+                    ],
+                    "outline_short": [
+                        "disclose government support"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present disclosure is directed to a microviscometer based on asynchronous magnetic bead rotation (AMBR) and used for analyte detection."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define microviscometer"
+                    ],
+                    "num_characters": 139,
+                    "outline_medium": [
+                        "define microviscometer"
+                    ],
+                    "outline_short": [
+                        "define microviscometer"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The background description provided herein is for the purpose of generally presenting the context of the disclosure. Work of the presently named inventors, to the extent it is described in this background section, as well as aspects of the description that may not otherwise qualify as prior art at the time of filing, are neither expressly nor impliedly admitted as prior art against the present disclosure.",
+                        "Sensitive and cost-effective DNA detection methods have a wide range of applications, from clinical diagnostics and drug development to the food industry and forensic sciences [Tang et al., Clin. Chem. 43(11): 2021-2038 (1997); Valasek et al., Adv Physiol Educ 29(3): 151-159 (2005); Mandal et al., Am. J. Food Technol 6: 87-102 (2011); van Oorschot et al., Investig genet 1(1), 14 (2010)]. In medical diagnostics, especially for infectious diseases, DNA detection technology such as quantitative polymerase chain reaction (qPCR), restriction fragment length polymorphism (RFLP) and ligation detection reaction (LDR) are crucial diagnostic tools [Landegren et al., Science 242(4876): 229-237 (1998); Kubista et al., Mol Aspects Med 27(2-3), 95-125 (2006); Handal et al., Expert Review of Molecular Diagnostics 6(1), 29-38 (2006)]. Fluorescence has been used almost exclusively as the DNA detection method in these tools due to its simplicity and high sensitivity [Kubista et al., Mol Aspects Med 27(2-3), 95-125 (2006); Handal et al., Expert Review of Molecular Diagnostics 6(1), 29-38 (2006)]. Recently, numerous efforts have been made to seek more cost-effective DNA detection technologies, notably for use in the developing world, yet none of them achieve the same sensitivity and applicability as fluorescence-based methods [Li et al., PLoS ONE 6(12): e29224 (2011); Diakite et al., Lab Chip 12(22): 4738-4747 (2012); Leslie et al., J. Am. Chem. Soc. 134(12): 5689-5696 (2012)].",
+                        "Another approach to detect and quantify DNA in diagnostic reactions is to measure the solution viscosity [Livak-Dahl et al., Lab on a Chip 13(2): 297 (2013); Srivastava et al., Anal. Chem. 77(2): 383-392 (2005)]. The viscosity of a double-stranded DNA (dsDNA) solution at a known temperature depends on the mass concentration and the average length of the DNA strands. The solution viscosity can indicate DNA concentration and/or length [Huggins J. Am. Chem. Soc. 64(11): 2716-2718 (1942); Ross et al., Biopolymers 6(8): 1005-1018 (1968); Tsortos et al., Biopolymers 95(12), 824-832 (2011)]. In restriction digestion reactions the solution viscosity decreases as longer DNA strands are cut into shorter pieces. Alternatively, in PCR, the solution viscosity increases as the length of the DNA increases, through polymerization of the target sequence."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate DNA detection",
+                        "describe current DNA detection methods",
+                        "highlight limitations of current methods",
+                        "introduce viscosity-based DNA detection",
+                        "explain viscosity-based DNA detection principles"
+                    ],
+                    "num_characters": 2743,
+                    "outline_medium": [
+                        "motivate DNA detection",
+                        "discuss existing methods"
+                    ],
+                    "outline_short": [
+                        "motivate DNA detection methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "Disclosed herein is a microviscometer that is based on asynchronous magnetic bead rotation (AMBR) and used for analyte detection. AMBR detection monitors the rotational motion of a free-floating magnetic bead placed in a rotating magnetic field and uses changes in this motion to infer physical properties of the surrounding solution. When the rotation rate of the external field exceeds a critical value, the bead rotates at a speed different from that of the external field. The rate of this asynchronous rotation is viscosity dependent. Readily available paramagnetic microbeads can thus be used for measuring changes in analyte concentrations or average lengths of specific analytes, such as, without limitation, DNA.",
+                        "Accordingly, in one aspect the disclosure provides a method of detecting a change in state of an analyte in a sample comprising (a) contacting the sample with a magnetic particle; (b) measuring a first instantaneous non-linear rotation rate of the magnetic particle in the sample at a first time; and (c) measuring a second instantaneous non-linear rotation rate of the magnetic particle in the sample at a second time Y; wherein a difference between the first instantaneous rotation rate relative to the second instantaneous rotation rate indicates the change in state of the analyte in the sample.",
+                        "In some embodiments, the change in state is a physical change in state. In further embodiments, the physical change in state further comprises a change in temperature of the sample comprising the analyte. In related embodiments, the analyte is water or a population of cells.",
+                        "In additional embodiments, the change in state is a chemical change in state. In related embodiments, the analyte is a monomer of a biopolymer. In further embodiments, the analyte is selected from the group consisting of a cell, a nucleic acid, a protein, a carbohydrate, a lipid, and an amino acid. In still further embodiments, the chemical change is catalyzed by an enzyme. The enzyme, in some embodiments, is selected from the group consisting of a polymerase, a nuclease, a hydrolase, a lyase, an oxidase, a peptidase, and a ligase.",
+                        "In further embodiments, the chemical change is selected from the group consisting of nucleic acid synthesis, protein synthesis, nucleic acid hydrolysis, nucleic acid ligation, and protein hydrolysis. In some embodiments, the nucleic acid synthesis is by polymerase chain reaction (PCR). In further embodiments, the protein synthesis is by in vitro translation. In additional embodiments, the protein synthesis occurs in a cell. In some embodiments, the nucleic acid hydrolysis is catalyzed by a type I or a type II restriction endonuclease.",
+                        "The chemical change, in some embodiments, is formation or loss of a nucleic acid hybrid, a blood clot, or a ligand-receptor interaction, a nucleic acid-protein interaction, a protein-lipid interaction, a protein-carbohydrate interaction, an antibody-antigen interaction. In further embodiments, the chemical change occurs in a supercooled liquid or in an electric battery fluid while the battery is charging.",
+                        "In various embodiments, the difference between the first rotation rate relative to the second rotation rate indicates a change in concentration of analyte in the sample.",
+                        "In various embodiments, the difference between the first rotation rate relative to the second rotation rate indicates a change in average length of analyte in the sample.",
+                        "In further embodiments of the disclosure, the difference between the first rotation rate relative to the second rotation rate is measured in real time."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce AMBR detection",
+                        "describe AMBR principle",
+                        "define method of detecting analyte change",
+                        "describe physical change in state",
+                        "describe chemical change in state",
+                        "list various embodiments of analyte",
+                        "describe real-time measurement"
+                    ],
+                    "num_characters": 3586,
+                    "outline_medium": [
+                        "introduce AMBR detection",
+                        "describe microviscometer",
+                        "outline method of detecting analyte"
+                    ],
+                    "outline_short": [
+                        "describe AMBR detection"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "Described herein are methods for analysis of one or more analytes using magnetic particles. In particular, described herein are asynchronous magnetic bead rotation (AMBR) methods for analysis of analytes. AMBR is additionally described in U.S. Pat. No. 8,846,331, incorporated herein by reference in its entirety. The methods of the disclosure are based on the use of a magnetic particle, which magnetic particle is free in the sample volume and is not tethered to the analyte of interest. As a result of a change in state of the analyte, the viscosity of the sample is varied. Such a variance in the viscosity is detectable by the magnetic particle and the use of AMBR technology, and is correlated with the change in state. The change in state can be translated to, for example and without limitation, the concentration of the analyte in the sample and/or the average length of an analyte. Moreover, the present techniques are able to detect microviscosity changes which correlate to small scale changes in the analyte, such as small scale changes in the length or concentration of the analyte. Moreover still, these microviscosity changes that can be measured may be used in various other physical state change and chemical change applications. For example, viscosity changes, measured through an AMBR technology can be used to detect deterioration of chemicals in a solution, e.g. deterioration of engine oils over time, olive oils, etc. Plus these chemical changes may be measured at scales heretofore un-attainable through conventional means, not without expensive equipment such as molecular imaging techniques, and the like.",
+                        "In a specific aspect, the present disclosure provides a method of detecting amplification of a nucleic acid (e.g., DNA) in a sample in real-time. In such an aspect, the change in viscosity that occurs in the sample via the polymerization of DNA is detectable by the magnetic particle using the methods described herein.",
+                        "As can be seen, generally speaking, the present techniques may be used to determine any number of small scale physical state changes and chemical changes, in solution, so long as those changes result in and correlate to small-scale, e.g., microviscometric. changes in the solution, i.e., viscosity changes detectable through the techniques described herein.",
+                        "The advantages of using the methods provided by the disclosure center on the ability of the AMBR microviscometer to detect very small changes in the viscosity of a sample. Further, such small changes in viscosity are detectable in small sample volumes. It was unexpected that such small changes in viscosity (e.g., the changes in viscosity generated in a sample in which qPCR is being performed) could be detected using the AMBR technique. In view of such an ability of the AMBR technique, however, new applications are made available. For example, and without limitation, use of the methods provided herein eliminate the need for a label (such as a fluorescent label) and also allow for rapid quantification of an analyte in real-time.",
+                        "It is noted here that, as used in this specification and the appended claims, the singular forms \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d include plural reference unless the context clearly dictates otherwise."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Asynchronous Magnetic Bead Rotation (AMBR)",
+                            "paragraphs": [
+                                "Typically, in AMBR, a magnetic particle (e.g., a bead) is exposed to a driving rotating magnetic field that is rotating above a critical frequency so that the rotational rate of the magnetic particle is sensitized to changes in the shape or size of the particle including object bound to the particle. In some cases (e.g., particularly with ferromagnetic beads) at low driving rates the magnetic bead rotates synchronously with the driving magnetic field, referred to as the synchronous mode. When the magnetic particle rotates at a rate that is slower than the driving rate, the system may be referred to as operating in the asynchronous mode. In contrast to the synchronous mode, in the asynchronous mode the rate of rotation of the magnetic particle slows as viscosity of the solution comprising the analyte increases. While the magnetic particles remain in the synchronous mode, changes in viscosity do not slow the rotation of the magnetic particle.",
+                                "The magnetic particles that may be used for AMBR are, in various embodiments, paramagnetic, superparamagnetic, or ferromagnetic. Although the various examples described herein refer to analytes that are DNA, other analytes may be detected, including but not limited to molecules (proteins, carbohydrates, etc.), nucleotides, cells, and the like. If the analyte is a cell, such as a prokaryotic or eukaryotic cell or cells (e.g., bacterial, cancer cells, etc.), the rate of rotation of the magnetic particle in the asynchronous rotation mode may depend upon the concentration or aggregation of the cells in a solution. Changes in the cell number or changes in the aggregation of the cells will alter the rotational rate of the magnetic particles. Thus, by monitoring the rate of rotation of the magnetic bead or beads in the asynchronous mode, it is possible to detect and monitor changes in viscosity of the solution comprising the analyte.",
+                                "Currently, AMBR systems may monitor the rotation of magnetic particles under the driving rotating magnetic field to detect the asynchronous rate of rotation. The rate of rotation is typically monitored using a laser (e.g., focusing laser or coherent light source), a microscope, camera, and typically software to help visualize and detect the rate of rotation. Devices, systems and methods performing AMBR are described in, e.g., U.S. Pat. No. 8,846,331, incorporated herein by reference, in relevant part.",
+                                "AMBR devices use magnetic beads that may rotate asynchronously when a driving magnetic field used to rotate the magnetic beads exceeds a critical frequency. Above this critical frequency, the particle's rotation is asynchronous with the external field, thus the particle is in an asynchronous condition. In some of the variations described herein, the magnetic beads are clustered so that the AMBR technique may be applied by rotating the entire cluster (or in some variations multiple clusters) of magnetic particles in the asynchronous mode. Changes in this asynchronous rotational rate of the entire cluster of particles may be used to detect changes in viscosity of a solution. Furthermore, measurement of a cluster's rotation can be performed with any of the AMBR devices described in U.S. Pat. No. 8,846,331 using low-cost and readily available electronic components, e.g. diodes and photodiodes, allowing for broad applicability. Rather than only being able to measure changes in viscosity, the AMBR methods described herein are powerful in that they are able to correlate small changes in viscosity with a quantification of the concentration of an analyte and/or the average length of an analyte such as a nucleic acid.",
+                                "Relative to previous understanding of AMBR, the methods of the disclosure advantageously work in small sample volumes. In various embodiments, methods for detecting a change in state of an analyte in a sample are performed in a volume of from about 1 picoliter (pL) to about 1 milliliter (mL). In further embodiments, the methods are performed in a volume of from about 1 pL to about 100 microliters (0), or from about 50 pL to about 100 \u03bcl, or from about 100 pL to about 100 \u03bcl, or from about 500 pL to about 100 \u03bcl, or from about 1 \u03bcl to about 100 \u03bcl, or from about 1 \u03bcl to about 90 \u03bcl, or from about 1 \u03bcl to about 80 \u03bcl, or from about 1 \u03bcl to about 70 \u03bcl, or from about 1 \u03bcl to about 60 \u03bcl, or from about 1 \u03bcl to about 50 \u03bcl, or from about 1 \u03bcl to about 40 \u03bcl, or from about 1 \u03bcl to about 30 \u03bcl, or from about 1 \u03bcl to about 20 \u03bcl, or from about 1 \u03bcl to about 10 \u03bcl, or from about 1 \u03bcl to about 5 \u03bcl, or from about 10 \u03bcl to about 100 \u03bcl, or from about 10 \u03bcl to about 90 \u03bcl, or from about 10 \u03bcl to about 80 \u03bcl, or from about 10 \u03bcl to about 70 \u03bcl, or from about 10 \u03bcl to about 60 \u03bcl, or from about 10 \u03bcl to about 50 \u03bcl, or from about 10 \u03bcl to about 40 \u03bcl, or from about 10 \u03bcl to about 30 \u03bcl, or from about 10 \u03bcl to about 20 \u03bcl, or from about 20 \u03bcl to about 100 \u03bcl, or from about 20 \u03bcl to about 90 \u03bcl, or from about 20 \u03bcl to about 80 \u03bcl, or from about 20 \u03bcl to about 70 \u03bcl, or from about 20 \u03bcl to about 60 \u03bcl, or from about 20 \u03bcl to about 50 \u03bcl, or from about 20 \u03bcl to about 40 \u03bcl, or from about 20 \u03bcl to about 30 \u03bcl, or from about 30 \u03bcl to about 100 \u03bcl, or from about 30 \u03bcl to about 90 \u03bcl, or from about 30 \u03bcl to about 80 \u03bcl, or from about 30 \u03bcl to about 70 \u03bcl, or from about 30 \u03bcl to about 60 \u03bcl, or from about 30 \u03bcl to about 50 \u03bcl, or from about 30 \u03bcl to about 40 \u03bcl, or from about 40 \u03bcl to about 100 \u03bcl, or from about 40 \u03bcl to about 90 \u03bcl, or from about 40 \u03bcl to about 80 \u03bcl, or from about 40 \u03bcl to about 70 \u03bcl, or from about 40 \u03bcl to about 60 \u03bcl, or from about 40 \u03bcl to about 50 \u03bcl, or from about 50 \u03bcl to about 100 \u03bcl, or from about 50 \u03bcl to about 90 \u03bcl, or from about 50 \u03bcl to about 80 \u03bcl, or from about 50 \u03bcl to about 70 \u03bcl, or from about 50 \u03bcl to about 60 \u03bcl, or from about 60 \u03bcl to about 100 pi, or from about 60 \u03bcl to about 90 \u03bcl, or from about 60 \u03bcl to about 80 \u03bcl, or from about 60 \u03bcl to about 70 \u03bcl, or from about 70 \u03bcl to about 100 \u03bcl, or from about 70 \u03bcl to about 90 \u03bcl, or from about 70 \u03bcl to about 80 \u03bcl, or from about 80 \u03bcl to about 100 \u03bcl, or from about 80 \u03bcl to about 90 \u03bcl, or from about 90 \u03bcl to about 100 \u03bcl. In still further embodiments, the methods are performed in a volume that is or is at least 1 \u03bcl, is or is at least 2 \u03bcl, is or is at least 3 \u03bcl, is or is at least 4 \u03bcl, is or is at least 5 \u03bcl, is or is at least 6 \u03bcl, is or is at least 7 \u03bcl, is or is at least 8 \u03bcl, is or is at least 9 \u03bcl, is or is at least 10 \u03bcl, is or is at least 11 \u03bcl, is or is at least 12 \u03bcl, is or is at least 13 \u03bcl, is or is at least 14 \u03bcl, is or is at least 15 \u03bcl, is or is at least 16 \u03bcl, is or is at least 17 \u03bcl, is or is at least 18 \u03bcl, is or is at least 19 \u03bcl, is or is at least 20 \u03bcl, is or is at least 21 \u03bcl, is or is at least 22 \u03bcl, is or is at least 23 \u03bcl, is or is at least 24 \u03bcl, is or is at least 25 \u03bcl, is or is at least 26 \u03bcl, is or is at least 27 \u03bcl, is or is at least 28 \u03bcl, is or is at least 29 \u03bcl, is or is at least 30 \u03bcl, is or is at least 31 \u03bcl, is or is at least 32 \u03bcl, is or is at least 33 \u03bcl, is or is at least 34 \u03bcl, is or is at least 35 \u03bcl, is or is at least 36 \u03bcl, is or is at least 37 \u03bcl, is or is at least 38 \u03bcl, is or is at least 39 \u03bcl, is or is at least 40 \u03bcl, is or is at least 41 \u03bcl, is or is at least 42 \u03bcl, is or is at least 43 \u03bcl, is or is at least 44 \u03bcl, is or is at least 45 \u03bcl, is or is at least 46 \u03bcl, is or is at least 47 \u03bcl, is or is at least 48 \u03bcl, is or is at least 49 \u03bcl, is or is at least 50 \u03bcl, is or is at least 51 \u03bcl, is or is at least 52 \u03bcl, is or is at least 53 \u03bcl, is or is at least 54 \u03bcl, is or is at least 55 \u03bcl, is or is at least 56 \u03bcl, is or is at least 57 \u03bcl, is or is at least 58 \u03bcl, is or is at least 59 \u03bcl, is or is at least 60 \u03bcl, is or is at least 61 \u03bcl, is or is at least 62 \u03bcl, is or is at least 63 \u03bcl, is or is at least 64 \u03bcl, is or is at least 65 \u03bcl, is or is at least 66 \u03bcl, is or is at least 67 \u03bcl, is or is at least 68 \u03bcl, is or is at least 69 \u03bcl, is or is at least 70 \u03bcl, is or is at least 71 \u03bcl, is or is at least 72 \u03bcl, is or is at least 73 \u03bcl, is or is at least 74 \u03bcl, is or is at least 75 \u03bcl, is or is at least 76 \u03bcl, is or is at least 77 \u03bcl, is or is at least 78 \u03bcl, is or is at least 79 \u03bcl, is or is at least 80 \u03bcl, is or is at least 81 \u03bcl, is or is at least 82 \u03bcl, is or is at least 83 \u03bcl, is or is at least 84 \u03bcl, is or is at least 85 \u03bcl, is or is at least 86 \u03bcl, is or is at least 87 \u03bcl, is or is at least 88 \u03bcl, is or is at least 89 \u03bcl, is or is at least 90 \u03bcl, is or is at least 91 \u03bcl, is or is at least 92 \u03bcl, is or is at least 93 \u03bcl, is or is at least 94 \u03bcl, is or is at least 95 \u03bcl, is or is at least 96 \u03bcl, is or is at least 97 \u03bcl, is or is at least 98 \u03bcl, is or is at least 99 \u03bcl, or is or is at least 100 \u03bcl or more.",
+                                "As disclosed herein, and also relative to previous understanding of AMBR, the methods provided by the disclosure are capable of detecting small changes in viscosity in a sample. Thus, in various embodiments of the methods, a change in viscosity that is from about 0.01 centipoise (cP) to about 10 cP is detected. In some embodiments, the change in viscosity that is detected is from about 0.01 cP to about 9 cP, or from about 0.01 cP to about 8 cP, or from about 0.01 cP to about 7 cP, or from about 0.01 cP to about 6 cP, or from about 0.01 cP to about 5 cP, or from about 0.01 cP to about 4 cP, or from about 0.01 cP to about 3 cP, or from about 0.01 cP to about 2 cP, or from about 0.01 cP to about 1 cP, or from about 0.01 cP to about 0.5 cP, or from about 0.1 centipoise (cP) to about 10 cP, or from about 0.1 cP to about 9 cP, or from about 0.1 cP to about 8 cP, or from about 0.1 cP to about 7 cP, or from about 0.1 cP to about 6 cP, or from about 0.1 cP to about 5 cP, or from about 0.1 cP to about 4 cP, or from about 0.1 cP to about 3 cP, or from about 0.1 cP to about 2 cP, or from about 0.1 cP to about 1 cP, or from about 0.1 cP to about 0.5 cP, or from about 0.5 cP to about 10 cP, or from about 0.5 cP to about 9 cP, or from about 0.5 cP to about 8 cP, or from about 0.5 cP to about 7 cP, or from about 0.5 cP to about 6 cP, or from about 0.5 cP to about 5 cP, or from about 0.5 cP to about 4 cP, or from about 0.5 cP to about 3 cP, or from about 0.5 cP to about 2 cP, or from about 0.5 cP to about 1 cP, or from about 1 cP to about 10 cP, or from about 1 cP to about 9 cP, or from about 1 cP to about 8 cP, or from about 1 cP to about 7 cP, or from about 1 cP to about 6 cP, or from about 1 cP to about 5 cP, or from about 1 cP to about 4 cP, or from about 1 cP to about 3 cP, or from about 1 cP to about 2 cP, or from about 1 cP to about 1.5 cP, or from about 2 cP to about 10 cP, or from about 2 cP to about 9 cP, or from about 2 cP to about 8 cP, or from about 2 cP to about 7 cP, or from about 2 cP to about 6 cP, or from about 2 cP to about 5 cP, or from about 2 cP to about 4 cP, or from about 2 cP to about 3 cP, or from about 3 cP to about 10 cP, or from about 3 cP to about 9 cP, or from about 3 cP to about 8 cP, or from about 3 cP to about 7 cP, or from about 3 cP to about 6 cP, or from about 3 cP to about 5 cP, or from about 3 cP to about 4 cP, or from about 4 cP to about 10 cP, or from about 4 cP to about 9 cP, or from about 4 cP to about 8 cP, or from about 4 cP to about 7 cP, or from about 4 cP to about 6 cP, or from about 4 cP to about 5 cP, or from about 5 cP to about 10 cP, or from about 5 cP to about 9 cP, or from about 5 cP to about 8 cP, or from about 5 cP to about 7 cP, or from about 5 cP to about 6 cP, or from about 6 cP to about 10 cP, or from about 6 cP to about 9 cP, or from about 6 cP to about 8 cP, or from about 6 cP to about 7 cP, or from about 7 cP to about 10 cP, or from about 7 cP to about 9 cP, or from about 7 cP to about 8 cP, or from about 8 cP to about 10 cP, or from about 8 cP to about 9 cP, or from about 9 cP to about 10 cP. In further embodiments, the methods of the disclosure are capable of detecting a change in viscosity in a sample that is or is at least 0.01 cP, is or is at least 0.02 cP, is or is at least 0.03 cP, is or is at least 0.04 cP, is or is at least 0.05 cP, is or is at least 0.06 cP, is or is at least 0.07 cP, is or is at least 0.08 cP, is or is at least 0.09 cP, is or is at least 0.1 cP, is or is at least 0.11 cP, is or is at least 0.12 cP, is or is at least 0.13 cP, is or is at least 0.14 cP, is or is at least 0.15 cP, is or is at least 0.16 cP, is or is at least 0.17 cP, is or is at least 0.18 cP, is or is at least 0.19 cP, is or is at least 0.2 cP, is or is at least 0.21 cP, is or is at least 0.22 cP, is or is at least 0.23 cP, is or is at least 0.24 cP, is or is at least 0.25 cP, is or is at least 0.26 cP, is or is at least 0.27 cP, is or is at least 0.28 cP, is or is at least 0.29 cP, is or is at least 0.3 cP, is or is at least 0.31 cP, is or is at least 0.32 cP, is or is at least 0.33 cP, is or is at least 0.34 cP, is or is at least 0.35 cP, is or is at least 0.36 cP, is or is at least 0.37 cP, is or is at least 0.38 cP, is or is at least 0.39 cP, is or is at least 0.4 cP, is or is at least 0.41 cP, is or is at least 0.42 cP, is or is at least 0.43 cP, is or is at least 0.44 cP, is or is at least 0.45 cP, is or is at least 0.46 cP, is or is at least 0.47 cP, is or is at least 0.48 cP, is or is at least 0.49 cP, is or is at least 0.5 cP, is or is at least 0.51 cP, is or is at least 0.52 cP, is or is at least 0.53 cP, is or is at least 0.54 cP, is or is at least 0.55 cP, is or is at least 0.56 cP, is or is at least 0.57 cP, is or is at least 0.58 cP, is or is at least 0.59 cP, is or is at least 0.6 cP, is or is at least 0.61 cP, is or is at least 0.62 cP, is or is at least 0.63 cP, is or is at least 0.64 cP, is or is at least 0.65 cP, is or is at least 0.66 cP, is or is at least 0.67 cP, is or is at least 0.68 cP, is or is at least 0.69 cP, is or is at least 0.7 cP, is or is at least 0.71 cP, is or is at least 0.72 cP, is or is at least 0.73 cP, is or is at least 0.74 cP, is or is at least 0.75 cP, is or is at least 0.76 cP, is or is at least 0.77 cP, is or is at least 0.78 cP, is or is at least 0.79 cP, is or is at least 0.8 cP, is or is at least 0.81 cP, is or is at least 0.82 cP, is or is at least 0.83 cP, is or is at least 0.84 cP, is or is at least 0.85 cP, is or is at least 0.86 cP, is or is at least 0.87 cP, is or is at least 0.88 cP, is or is at least 0.89 cP, is or is at least 0.9 cP, is or is at least 0.91 cP, is or is at least 0.92 cP, is or is at least 0.93 cP, is or is at least 0.94 cP, is or is at least 0.95 cP, is or is at least 0.96 cP, is or is at least 0.97 cP, is or is at least 0.98 cP, is or is at least 0.99 cP, is or is at least 1 cP, is or is at least 1.1 cP, is or is at least 1.2 cP, is or is at least 1.3 cP, is or is at least 1.4 cP, is or is at least 1.5 cP, is or is at least 1.6 cP, is or is at least 1.7 cP, is or is at least 1.8 cP, is or is at least 1.9 cP, is or is at least 2 cP, is or is at least 2.1 cP, is or is at least 2.2 cP, is or is at least 2.3 cP, is or is at least 2.4 cP, is or is at least 2.5 cP, is or is at least 2.6 cP, is or is at least 2.7 cP, is or is at least 2.8 cP, is or is at least 2.9 cP, is or is at least 3 cP, is or is at least 3.1 cP, is or is at least 3.2 cP, is or is at least 3.3 cP, is or is at least 3.4 cP, is or is at least 3.5 cP, is or is at least 3.6 cP, is or is at least 3.7 cP, is or is at least 3.8 cP, is or is at least 3.9 cP, is or is at least 4 cP, is or is at least 4.1 cP, is or is at least 4.2 cP, is or is at least 4.3 cP, is or is at least 4.4 cP, is or is at least 4.5 cP, is or is at least 4.6 cP, is or is at least 4.7 cP, is or is at least 4.8 cP, is or is at least 4.9 cP, is or is at least 5 cP, is or is at least 5.1 cP, is or is at least 5.2 cP, is or is at least 5.3 cP, is or is at least 5.4 cP, is or is at least 5.5 cP, is or is at least 5.6 cP, is or is at least 5.7 cP, is or is at least 5.8 cP, is or is at least 5.9 cP, is or is at least 6 cP, is or is at least 6.1 cP, is or is at least 6.2 cP, is or is at least 6.3 cP, is or is at least 6.4 cP, is or is at least 6.5 cP, is or is at least 6.6 cP, is or is at least 6.7 cP, is or is at least 6.8 cP, is or is at least 6.9 cP, is or is at least 7 cP, is or is at least 7.1 cP, is or is at least 7.2 cP, is or is at least 7.3 cP, is or is at least 7.4 cP, is or is at least 7.5 cP, is or is at least 7.6 cP, is or is at least 7.7 cP, is or is at least 7.8 cP, is or is at least 7.9 cP, is or is at least 8 cP, is or is at least 8.1 cP, is or is at least 8.2 cP, is or is at least 8.3 cP, is or is at least 8.4 cP, is or is at least 8.5 cP, is or is at least 8.6 cP, is or is at least 8.7 cP, is or is at least 8.8 cP, is or is at least 8.9 cP, is or is at least 9 cP, is or is at least 9.1 cP, is or is at least 9.2 cP, is or is at least 9.3 cP, is or is at least 9.4 cP, is or is at least 9.5 cP, is or is at least 9.6 cP, is or is at least 9.7 cP, is or is at least 9.8 cP, is or is at least 9.9 cP, or is or is at least 10 cP.",
+                                "In addition, changes in the concentration of an analyte over time are detectable using the methods of the disclosure. Such quantification over time allows for use of the techniques in monitoring, for example, nucleic acid synthesis, protein synthesis, nucleic acid hydrolysis, nucleic acid ligation, and protein hydrolysis."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce AMBR principle",
+                                "explain synchronous and asynchronous modes",
+                                "discuss magnetic particle types and analytes",
+                                "describe current AMBR system monitoring",
+                                "introduce AMBR",
+                                "describe asynchronous rotation",
+                                "explain cluster rotation",
+                                "discuss viscosity measurement",
+                                "highlight advantages over previous understanding",
+                                "specify small sample volumes",
+                                "list various volume ranges",
+                                "provide further volume ranges",
+                                "specify additional volume ranges",
+                                "continue listing volume ranges",
+                                "provide more volume ranges",
+                                "conclude volume ranges",
+                                "introduce AMBR",
+                                "describe viscosity detection capabilities",
+                                "list viscosity ranges",
+                                "list additional viscosity ranges",
+                                "describe analyte concentration detection",
+                                "list applications of analyte concentration detection",
+                                "describe nucleic acid synthesis monitoring",
+                                "describe protein synthesis monitoring",
+                                "describe nucleic acid hydrolysis monitoring",
+                                "describe nucleic acid ligation monitoring",
+                                "describe protein hydrolysis monitoring",
+                                "describe other monitoring applications",
+                                "summarize AMBR capabilities",
+                                "describe advantages of AMBR",
+                                "describe limitations of prior art",
+                                "describe benefits of AMBR over prior art",
+                                "conclude AMBR description"
+                            ],
+                            "num_characters": 17295,
+                            "outline_medium": [
+                                "introduce AMBR principles",
+                                "application of AMBR in analyte detection",
+                                "introduce AMBR",
+                                "describe asynchronous rotation",
+                                "motivate small sample volumes",
+                                "list sample volume ranges",
+                                "highlight advantages over previous understanding",
+                                "correlate viscosity changes with analyte concentration",
+                                "introduce AMBR",
+                                "describe viscosity detection capabilities",
+                                "list viscosity ranges",
+                                "describe analyte concentration detection",
+                                "mention applications of techniques",
+                                "specify monitoring capabilities",
+                                "list specific monitoring examples",
+                                "conclude detection capabilities"
+                            ],
+                            "outline_short": [
+                                "introduce AMBR principles",
+                                "introduce AMBR",
+                                "describe advantages",
+                                "specify sample volumes",
+                                "introduce AMBR",
+                                "specify viscosity detection range",
+                                "list various embodiments of viscosity detection",
+                                "describe applications of AMBR"
+                            ]
+                        },
+                        {
+                            "title": "Analytes",
+                            "paragraphs": [
+                                "The methods provided herein allow for the quantification of an analyte in a sample. The quantification, in various aspects, involves quantitating a concentration of the analyte and/or quantifying an average size of the analyte. Any analyte that, when present, changes the viscosity of the sample through a change in state is amenable to the methods disclosed herein. The \u201cchange in state\u201d as used herein takes on its ordinary meaning in the art. Thus, the methods disclosed herein allow for the detection and analysis of analytes undergoing both a physical change in state as well as a chemical change in state. In some embodiments, the methods herein are used to detect both a physical change in state and a chemical change in state in the same reaction.",
+                                "In general, changes in state that are detectable by the methods of the disclosure include, without limitation, a polymerization reaction, a chain-cutting reaction (e.g., degrading polymers to make them shorter), a gelation reaction, growth of a cell population, a colloidal suspension (e.g., paints), or an age sensor (e.g., age of oil in a car).",
+                                "Analytes contemplated by the disclosure for use according to the methods include, but are not limited to, a cell, a nucleic acid, a protein, a carbohydrate, a lipid, an amino acid, and derivatives thereof (e.g., nucleoproteins, glycosylated proteins, phospholipids). Additional analytes contemplated herein include, without limitation, a gel, a buffer, pulp. milk, and yogurt.",
+                                "**Cell**",
+                                "In some aspects, the present disclosure provides methods for detecting the presence of, and/or the aggregation of, cells. In various embodiments, the cell is a prokaryotic cell or the cell is a eukaryotic cell. In further embodiments, the cell is a cancer cell. Thus, in one embodiment the concentration of cells over time in a culture is quantified using an AMBR microviscometer technique as described herein. In another embodiment, the aggregation of cells in a sample (e.g., due to blood clotting) is detected using an AMBR microviscometer technique as described herein. In yet other embodiments, the interaction of dissimilar cell types is assessed or exploited, such as the interaction of a pathogenic (or non-pathogenic) bacterial cell and a eukaryotic cell.",
+                                "**Nucleic Acid**",
+                                "Nucleic acids contemplated by the present disclosure include DNA, RNA, modified forms and combinations thereof. In some embodiments, the DNA is double-stranded, and in further embodiments the DNA is single-stranded. In further aspects, the methods of the disclosure utilize RNA, and in some embodiments the RNA is double-stranded RNA. The term \u201cRNA\u201d includes duplexes of two separate strands, as well as single-stranded structures. Single-stranded RNA also includes RNA with secondary structure.",
+                                "An oligomer of a nucleic acid is understood in the art to comprise individually polymerized nucleotide subunits and is referred to as an \u201coligonucleotide.\u201d The term \u201cnucleotide\u201d or its plural as used herein is interchangeable with modified forms as discussed herein and otherwise known in the art. In certain instances, the art uses the term \u201cnucleobase\u201d which embraces naturally occurring nucleotides, and non-naturally occurring nucleotides which include modified nucleotides. Thus, nucleotide or nucleobase includes the naturally occurring nucleosides and nucleotides containing any of adenine (A), guanine (G), cytosine (C), thymine (T) and uracil (U). Non-naturally occurring nucleobases include, for example and without limitations, xanthine, diaminopurine, 8-oxo-N6-methyladenine, 7-deazaxanthine, 7-deazaguanine, N4,N4-ethanocytosin, N\u2032,N\u2032-ethano-2,6-diaminopurine, 5-methylcytosine (mC), 5-(C3-C6)-alkynyl-cytosine, 5-fluorouracil, 5-bromouracil, pseudoisocytosine, 2-hydroxy-5-methyl-4-tr-iazolopyridin, isocytosine, isoguanine, inosine and the \u201cnon-naturally occurring\u201d nucleobases described in Benner et al., U.S. Pat. No. 5,432,272 and Susan M. Freier and Karl-Heinz Altmann, 1997, Nucleic Acids Research, vol. 25: pp 4429-4443. The term \u201cnucleobase\u201d also includes not only the known purine and pyrimidine heterocycles, but also heterocyclic analogues and tautomers thereof. Further naturally and non-naturally occurring nucleobases include those disclosed in U.S. Pat. No. 3,687,808 (Merigan, et al.), in Chapter 15 by Sanghvi, in Antisense Research and Application, Ed. S. T. Crooke and B. Lebleu, CRC Press, 1993, in Englisch et al., 1991, Angewandte Chemie, International Edition, 30: 613-722 (see especially pages 622 and 623, and in the Concise Encyclopedia of Polymer Science and Engineering, J. I. Kroschwitz Ed., John Wiley & Sons, 1990, pages 858-859, Cook, Anti-Cancer Drug Design 1991, 6, 585-607, each of which is hereby incorporated by reference in its entirety or in relevant part, as would be apparent from context). In various aspects, nucleic acid oligomers also include one or more \u201cnucleosidic bases\u201d or \u201cbase units\u201d which are a category of non-naturally-occurring nucleotides that include compounds such as heterocyclic compounds that can serve like nucleobases, including certain \u201cuniversal bases\u201d that are not nucleosidic bases in the most classical sense but serve as nucleosidic bases. Universal bases include 3-nitropyrrole, optionally substituted indoles (e.g., 5-nitroindole), and optionally substituted hypoxanthine. Other desirable universal bases include, pyrrole, diazole or triazole derivatives, including those universal bases known in the art.",
+                                "In some aspects, methods of the disclosure provide the ability to determine the average length of a nucleic acid oligomer in a sample. In various embodiments, the length of a nucleic acid oligomer that is detectable using the methods disclosed herein is from about 20 to about 5000 nucleotides in length. Methods are also contemplated wherein the nucleic acid oligomer is about 20 to about 2000 nucleotides in length, about 20 to about 1000 nucleotides in length, about 20 to about 500 nucleotides in length, about 20 to about 400 nucleotides in length, about 20 to about 300 nucleotides in length about 20 to about 200 nucleotides in length, about 20 to about 100 nucleotides in length, about 20 to about 50 nucleotides in length, about 50 to about 4000 nucleotides in length, about 50 to about 3000 nucleotides in length, about 50 to about 2000 nucleotides in length, about 50 to about 1500 nucleotides in length, about 50 to about 1000 nucleotides in length, about 50 to about 800 nucleotides in length, about 50 to about 600, about 50 to about 500 nucleotides in length, about 50 to about 400, about 50 to about 300 nucleotides in length, about 50 to about 200 nucleotides in length, about 50 to about 100 nucleotides in length, and all nucleic acid oligomers intermediate in length of the sizes specifically disclosed. Accordingly, nucleic acid oligomers of 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1900, 1950, 2000, 2050, 2100, 2150, 2200, 2250, 2300, 2350, 2400, 2450, 2500, 2550, 2600, 2650, 2700, 2750, 2800, 2850, 2900, 2950, 3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3450, 3500, 3550, 3600, 3650, 3700, 3750, 3800, 3850, 3900, 3950, 4000, 4050, 4100, 4150, 4200, 4250, 4300, 4350, 4400, 4450, 4500, 4550, 4600, 4650, 4700, 4750, 4800, 4850, 4900, 4950, 5000, or more nucleotides in length are contemplated as being detectable using the methods of the disclosure.",
+                                "**Protein/Amino Acid**",
+                                "As used herein a \u201cprotein\u201d refers to a polymer comprised of amino acid residues and may also be referred to as a \u201cpolypeptide\u201d in the art. Consistent with the understanding in the art, \u201cprotein\u201d can also refer to the association (covalent or non-covalent) of distinct \u201cpolypeptide\u201d or \u201cprotein\u201d polymers or chains.",
+                                "\u201cAmino acids\u201d are organic compounds that combine to form proteins. Amino acids are typically classified as either essential, nonessential, and conditional. Essential amino acids cannot be made by the reference body, typically a human body. As a result, they must come from food. The nine essential amino acids for humans are: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, and valine. \u201cNonessential\u201d means that the body, such as the human body, produces an amino acid, even if it is not obtained from the food we eat. Nonessential amino acids include alanine, asparagine, aspartic acid, and glutamic acid. Conditional amino acids are usually not essential, except in times of illness and stress; for humans, these include arginine, cysteine, glutamine, tyrosine, glycine, ornithine, proline, and serine.",
+                                "In some aspects of the disclosure, the AMBR microviscometer is used to detect the synthesis or the average size of a protein. Proteins are understood in the art and include without limitation an antibody, an enzyme, a structural polypeptide and a hormone. Regardless of the protein of interest, the methods of the disclosure are amenable to determining their concentration over time as they are being synthesized, either via in vitro transcription and/or translation, or in vivo. Thus, in some aspects it is contemplated that a magnetic particle of the disclosure detects the synthesis of a protein inside a cell.",
+                                "Proteins of the present disclosure may be either naturally occurring or non-naturally occurring.",
+                                "Naturally occurring proteins include, without limitation, biologically active proteins (including antibodies) that exist in nature or can be produced in a form that is found in nature by, for example, chemical synthesis or recombinant expression techniques. Naturally occurring proteins also include lipoproteins and post-translationally modified proteins, such as, for example and without limitation, glycosylated proteins.",
+                                "Antibodies contemplated for use in the methods and compositions of the present disclosure include without limitation antibodies that recognize and associate with a target molecule either in vivo or in vitro.",
+                                "Structural polypeptides contemplated by the disclosure include without limitation actin, tubulin, collagen, elastin, myosin, kinesin and dynein.",
+                                "Non-naturally occurring proteins contemplated by the present disclosure include but are not limited to synthetic proteins, as well as fragments, analogs and variants of naturally occurring or non-naturally occurring proteins as defined herein. Non-naturally occurring proteins also include proteins or protein substances that have D-amino acids, modified, derivatized, or non-naturally occurring amino acids in the D- or L-configuration and/or peptidomimetic units as part of their structure.",
+                                "Non-naturally occurring proteins are prepared, for example, using an automated polypeptide synthesizer or, alternatively, using recombinant expression techniques using a modified polynucleotide that encodes the desired protein.",
+                                "As used herein a \u201cfragment\u201d of a protein is meant to refer to any portion of a protein smaller than the full-length protein expression product.",
+                                "As used herein an \u201canalog\u201d refers to any of two or more proteins substantially similar in structure and having the same biological activity, but can have varying degrees of activity, to either the entire molecule, or to a fragment thereof. Analogs differ in the composition of their amino acid sequences based on one or more mutations involving substitution, deletion, insertion and/or addition of one or more amino acids for other amino acids. Substitutions can be conservative or non-conservative based on the physico-chemical or functional relatedness of the amino acid that is being replaced and the amino acid replacing it.",
+                                "As used herein a \u201cvariant\u201d refers to a protein or analog thereof that is modified to comprise additional chemical moieties not normally a part of the molecule. Such moieties may modulate, for example and without limitation, the molecule's solubility, absorption, and/or biological half-life. Moieties capable of mediating such effects are disclosed in Remington's Pharmaceutical Sciences (1980). Procedures for coupling such moieties to a molecule are well known in the art. In various aspects, polypeptides are modified by glycosylation, pegylation, and/or polysialylation, and such modifications are also detectable using the methods of the disclosure.",
+                                "Fusion proteins, including fusion proteins wherein one fusion component is a fragment or a mimetic, are also contemplated. A \u201cmimetic\u201d as used herein means a peptide or protein having a biological activity that is comparable to the protein of which it is a mimetic. By way of example, an endothelial growth factor mimetic is a peptide or protein that has a biological activity comparable to the native endothelial growth factor. The term further includes peptides or proteins that indirectly mimic the activity of a protein of interest, such as by potentiating the effects of the natural ligand of the protein of interest. A \u201cpeptide,\u201d as is understood in the art, is generally shorter than a protein.",
+                                "**Carbohydrates**",
+                                "Carbohydrates, such as mono-, oligo-, and poly-saccharides, are contemplated by the disclosure to be an analyte capable of being detected by the methods herein.",
+                                "Carbohydrates such as oligosaccharides include any carbohydrates comprising between about two to about ten monosaccharides or more connected by either an alpha- or beta-glycosidic link. Oligosaccharides are found throughout nature in both the free and bound form.",
+                                "**Lipids**",
+                                "Also contemplated by the disclosure are methods comprising the detection of lipids. Lipid and phospholipid-derived hormones are contemplated for use in the methods of the disclosure, and these compounds derived from lipids such as linoleic acid and arachidonic acid and phospholipids. The main classes are the steroid hormones that derive from cholesterol and the eicosanoids."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce analytes",
+                                "define change in state",
+                                "list examples of changes in state",
+                                "introduce cells as analytes",
+                                "describe cell types",
+                                "introduce nucleic acids as analytes",
+                                "define nucleic acid oligomers",
+                                "list examples of nucleic acid oligomers",
+                                "describe nucleobases",
+                                "introduce universal bases",
+                                "describe length of nucleic acid oligomers",
+                                "list examples of nucleic acid oligomer lengths",
+                                "introduce proteins as analytes",
+                                "define proteins",
+                                "describe protein types",
+                                "introduce amino acids",
+                                "classify amino acids",
+                                "describe protein synthesis detection",
+                                "introduce non-naturally occurring proteins",
+                                "describe fragments of proteins",
+                                "describe analogs of proteins",
+                                "describe variants of proteins",
+                                "introduce carbohydrates as analytes",
+                                "define carbohydrates",
+                                "describe oligosaccharides",
+                                "introduce lipids as analytes",
+                                "describe lipid-derived hormones",
+                                "list examples of lipid-derived hormones"
+                            ],
+                            "num_characters": 14204,
+                            "outline_medium": [
+                                "introduce analytes",
+                                "define change in state",
+                                "list examples of changes in state",
+                                "introduce cells as analytes",
+                                "describe cell detection methods",
+                                "introduce nucleic acids as analytes",
+                                "define nucleic acid oligomers",
+                                "describe nucleic acid detection methods",
+                                "introduce proteins as analytes",
+                                "define proteins and polypeptides",
+                                "describe protein detection methods",
+                                "introduce carbohydrates as analytes",
+                                "define carbohydrates",
+                                "introduce lipids as analytes"
+                            ],
+                            "outline_short": [
+                                "define analytes",
+                                "describe cell analytes",
+                                "describe nucleic acid analytes",
+                                "describe protein/amino acid analytes",
+                                "describe carbohydrate analytes",
+                                "describe lipid analytes",
+                                "provide examples of analytes"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce AMBR methods",
+                        "describe magnetic particle use",
+                        "motivate viscosity change detection",
+                        "summarize application examples",
+                        "highlight advantages of AMBR",
+                        "clarify terminology usage"
+                    ],
+                    "num_characters": 3241,
+                    "outline_medium": [
+                        "introduce AMBR methods",
+                        "application of AMBR technology",
+                        "advantages of AMBR microviscometer"
+                    ],
+                    "outline_short": [
+                        "describe AMBR methods for analyte analysis"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "Reagents. Solutions used in the viscosity test were purchased from Sigma-Aldrich, unless otherwise specified. Samples tested in the experiment include glycerol and water solutions, lambda DNA EcoRI digest with lengths of 3530-21226 base pairs (bp), and pUC18 HaeIII digest with lengths of 80-587 bp. Magnetic beads with diameters of 7.6, 16 and 45 \u03bcm were purchased from Spherotech Inc.",
+                                "In digestion reactions and PCR amplifications, lambda DNA was used as the template and purchased from Life Technologies. The restriction enzymes EcoRI with EcoRI buffer and PvuI with NEBuffer 3 were purchased from New England Biolabs. For PCR, the forward primer is 5\u2032-GGTGCTTTATGACTCTGCCGC-3\u2032 (SEQ ID NO: 1), and the reverse primer is 5\u2032-CGGCACTGGCAAGCAACTGA-3\u2032 (SEQ ID NO: 2). Both primers were purchased from Integrated DNA Technologies. PCR master mix was purchased from Promega.",
+                                "Viscosity Measurement.",
+                                "The magnetic beads were washed with water three times and a concentrated bead solution was added to the samples (with 0.2% bovine serum albumin as a non-specific blocking agent). The bead concentration in the sample solution was 0.0075% w/v. The sample solution was rapidly mixed and then placed between two glass slides. The microviscometer works with very small liquid volumes (less than 10 \u03bcL). Double-sided tape was inserted between the two glass slides, and nickel particles (210-420 \u03bcm) were placed on the edges of the tape to ensure a minimum gap of 210 \u03bcm between the two glass slides. Finally, silicone sealant (Dow Corning) was applied to the exterior edges to prevent sample evaporation.",
+                                "The glass slides were placed in a planar observation area confined within a controlled magnetic field. The latter was generated using orthogonal Helmholtz coils (FIG. 1(a)). Viscosity measurements with an AMBR microviscometer were conducted at 25\u00b11\u00b0 C. The magnetic field was measured with a 3-axis magnetic field probe (C-H3A-2m; Senis GmbH, Switzerland). The field strength was 2.7 milliTesla (mT) and a driving frequency was as specified for each experiment, both of which were controlled with a custom LabVIEW program. Image stacks of bead rotations were recorded (FIG. 2) during the experiment at a rate of 10 frames per second. Rotation periods of ten randomly selected beads were recorded for each sample, to accommodate the wide variance in commercial bead properties. The image stacks were analyzed using ImageJ, and a plot of image intensity versus image number was generated by ImageJ. The plot was imported into MATLAB, and the periodicity of the bead rotation was determined by applying a fast Fourier transform.",
+                                "The viscosities of glycerol and water solutions at 25\u00b0 C. were verified using an Ubbelohde viscometer. Briefly, 15 mL glycerol and water solution were poured into an Ubbelohde viscometer that was immersed in a water bath. The time that it took to pass through two calibrated marks on the viscometer was measured and used to determine the solution viscosity."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce reagents",
+                                "describe viscosity measurement",
+                                "detail sample preparation",
+                                "explain image analysis",
+                                "verify viscosities using Ubbelohde viscometer"
+                            ],
+                            "num_characters": 2981,
+                            "outline_medium": [
+                                "describe reagents and solutions",
+                                "describe viscosity measurement"
+                            ],
+                            "outline_short": [
+                                "describe experimental setup for viscosity measurement"
+                            ]
+                        },
+                        {
+                            "title": "Calibration of AMBR Viscometer",
+                            "paragraphs": [
+                                "A linear relationship was found between the solution viscosity and the rotation period of the bead in the solution. A series of glycerol/water solutions with varying glycerol mass fraction were analyzed by the AMBR microviscometer and, in parallel, with an Ubbelohde viscometer [Cragg et al., Can. J. Chem. 39(1): 203-215 (1961)]. The microviscometer results matched both the Ubbelohde viscosity values and the theoretically predicted values for the mixtures over a viscosity range from 0.89 to 2.8 centipoise (cP) (FIG. 1(c)) [Sheely, Industrial & Engineering Chemistry 24(9): 1060-1064 (1932)]. A correlation curve relating the bead rotation period with the solution viscosity was constructed and yielded excellent uniformity (FIG. 1(d)). The experimentally observed linear relationship between rotation and viscosity agrees well with the theory developed for the paramagnetic AMBR system [Kinnunen et al., Biosens. Bioelectron. 26(5), 2751-2755 (2011)]. Additionally, the linear correlation is robust to variation in the magnetic field driving frequency (FIG. 3), and for three different bead sizes tested, with the 45 \u03bcm beads giving optimal linear correlation results (FIG. 4). The slope of the curve as defined by Equation (3) increases with decreasing magnetic responsiveness of the magnetic beads and increasing bead sizes (FIG. 4). The magnetic responsiveness takes into account a combination of factors, such as the volume of the magnetic content and the magnetic susceptibility, as defined in Equation (3). The data show that a smaller magnetic responsiveness gives a larger rotation period, under the same field, resulting in a larger slope (compare FIG. 4B with FIGS. 4A and 4C); also a bigger bead size improves the sensitivity of the viscometer, when the magnetic responsiveness is about the same (compare FIGS. 4A and 4C). These experimental observations are in agreement with the theoretical predictions indicated by Equation (3) (see below).",
+                                "However, the linearity does not hold as well for a frequency close to the instability threshold, as shown in FIG. 3. Furthermore, the measurement of rotation period is not as reliable, because the jerky motion affects the image analysis.",
+                                "The observed linear correlation between solution viscosity and bead rotation period can be explained by the nonlinear magnetic oscillation theoretical framework [Kinnunen et al., Biosens. Bioelectron. 26(5): 2751-2755 (2011); McNaughton et al., Sens. Actuators, B 121(1): 330-340 (2007); Sinn et al., Lab Chip 11(15): 2604-2611 (2011); Helgesen et al., Phys. Rev. A 42(12): 7271-7280 (1990); Helgesen et al., Phys. Rev. Lett. 64(12): 1425-1428 (1990)]. At a low driving frequency, the bead rotates at the same rate as the driving magnetic field. However, as the driving frequency increases, the bead cannot overcome the viscous drag exerted by the surrounding fluid, and thus cannot follow the rotating magnetic field. The bead then rotates slower, and asynchronously, with respect to the driving magnetic field (FIG. 1(b)) [Kinnunen et al., Biosens. Bioelectron. 26(5): 2751-2755 (2011); Sinn et al., Lab Chip 11(15): 2604-2611 (2011); Helgesen et al., Phys. Rev. Lett. 64(12): 1425-1428 (1990); Chevry et al., Phys. Rev. E 88(6): 062306 (2013); Frka-Petesic et al., J. Magn. Magn. Mater. 323(10): 1309-1313 (2011); Tokarev et al., Langmuir 28(26): 10064-10071 (2012)]. The nonlinear oscillation only occurs in the asynchronous regime. In a low Reynolds number environment, the force balance between the magnetic torque and the viscous drag yields the relationship between the bead rotation period and the solution viscosity. The effects of interaction between the magnetic bead and the solid surface can be neglected under the experimental conditions described herein. For a paramagnetic bead, the magnetic torque due to the induced magnetic dipole can be expressed as [Kinnunen et al., Biosens. Bioelectron. 26(5): 2751-2755 (2011)],",
+                                "\u0393mag=(\u03c7\u2033VmB2)/\u03bc0\u2003\u2003Equation (1)",
+                                "where \u03c7\u2033 is the imaginary part of the magnetic susceptibility (which is frequency dependent), Vm is the volume of the bead's magnetic content (i.e., the magnetic nanoparticles embedded in the bead), B is the strength of the driving magnetic field, and \u03bc0 is the permeability of free space. The torque due to the viscous drag can be expressed as,",
+                                "\u0393vis=\u2212\u03ba\u03b7V d\u03b8/dt\u2003\u2003Equation (2)",
+                                "where \u03b8 is the arc length of the rotation, \u03ba is the shape factor of the bead (\u03ba=6 for a sphere), \u03b7 is the solution viscosity, and V is the volume of the magnetic bead. By combining Equations (1) and (2), the equation becomes,",
+                                "T/\u03b7=(2\u03c0\u03bc0\u03baV)/(\u03c7\u2033VmB2)\u2003\u2003Equation (3)",
+                                "Therefore, in the asynchronous regime, the rotation period of a paramagnetic bead, under the rotating field of a given strength and frequency, is expected to be linearly proportional to the solution viscosity, i.e., T\u221d\u03b7. The experimentally observed results confirm this theoretical relationship."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe calibration experiment",
+                                "explain linear relationship between viscosity and rotation period",
+                                "detail correlation curve construction",
+                                "discuss theoretical framework",
+                                "explain nonlinear magnetic oscillation",
+                                "derive equation for magnetic torque",
+                                "derive equation for viscous drag",
+                                "combine equations to relate rotation period to viscosity",
+                                "confirm theoretical relationship experimentally"
+                            ],
+                            "num_characters": 4907,
+                            "outline_medium": [
+                                "describe calibration experiment",
+                                "analyze results and construct correlation curve",
+                                "discuss theoretical framework",
+                                "explain equation for bead rotation period"
+                            ],
+                            "outline_short": [
+                                "calibrate AMBR viscometer using glycerol/water solutions",
+                                "analyze correlation between bead rotation period and solution viscosity"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "To advance the practical utility of the asynchronous rotation method, the influence of the variation in bead properties on bead rotation periods was investigated. A relative standard deviation of approximately 10% is observed due to the variation in bead properties, such as size and magnetic content. As shown in FIG. 5(a), the rotation periods of 20 beads in the same solution do not show a clear bead-size dependency. Thus, bead-size non-uniformity is not the primary contributor to the variation in the rotation period measurement, despite the expected correlation in Equation (3). More likely, the bead magnetic properties, such as magnetic volume and susceptibility, are more significant for the inter-bead variation than is the size variation. The scattered pattern in FIG. 5(a) supports the averaging over multiple beads in the construction of correlation curves and viscosity measurement experiments.",
+                                "To confirm that inter-bead variation in the rotation period is primarily due to inherent bead properties, the rotation period of the same bead was continuously measured over time. The differences in rotation period over time are much smaller than the differences between two beads in the same experiment (FIG. 5(b)). The relative standard deviation for a single bead over time is approximately 1%, 10 times smaller than the standard deviation in the rotation period among 10 beads. Therefore, the observed measurement error is smaller than the error caused by bead non-uniformity. A wide variation in commercial bead properties has been observed before [Connolly et al., Bio-Med. Mater. Eng. 15(6): 421-431 (2005); Sinn et al., Appl. Phys. Lett. 98(2): 024101 (2011)]; consequently, improved uniformity of bead magnetic character and size is expected to give better sensitivity in viscosity measurement."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate influence of bead properties on rotation periods",
+                                "analyze variation in rotation periods among beads",
+                                "confirm inter-bead variation due to inherent bead properties"
+                            ],
+                            "num_characters": 1814,
+                            "outline_medium": [
+                                "investigate influence of bead properties on rotation periods"
+                            ],
+                            "outline_short": [
+                                "investigate influence of bead properties on rotation periods"
+                            ]
+                        },
+                        {
+                            "title": "Preparation of Digestion Reaction Samples",
+                            "paragraphs": [
+                                "In the digestion reactions, the restriction enzymes, the corresponding buffers, lambda DNA and nuclease-free water were mixed and incubated at 37\u00b0 C. for 1 hour. After the reaction, the solutions were placed in a 25\u00b0 C. water bath before being measured by the AMBR microviscometer.",
+                                "Preparation of PCR Samples.",
+                                "All the reagents were added and mixed, and then distributed, 50 \u03bcL of the mixture to each tube. The tubes were capped during the reaction to prevent evaporation. Two tubes were used as the product of cycle 0, and the rest were put into a thermal cycler (Bio-Rad). The thermal cycling involved an initial denaturation at 95\u00b0 C. for 30 seconds, followed by six amplification cycles. The thermal cycles were: 95\u00b0 C. for 30 seconds (denaturation), 60\u00b0 C. for 1 minute (annealing), 72\u00b0 C. for 5 minutes (extension). Then, the reactions were stopped and held at 4\u00b0 C. Two tubes of samples were taken out from the thermal cycler, and labeled as cycle 6. The rest of the samples underwent resumption of the reaction with an additional five cycles. This was repeated until a total of 41 cycles was completed for the last two tubes of samples. All the samples extracted from different cycles of the reaction were stored in a \u221220\u00b0 C. freezer, and placed in a 25\u00b0 C. water bath before AMBR measurement or gel electrophoresis.",
+                                "Gel Electrophoresis.",
+                                "Gel electrophoresis was used to verify the DNA solution results measured by the AMBR microviscometer. A 0.8% agarose gel was prepared, and 1 \u03bcL reaction solution was diluted and loaded onto the gel. The gel electrophoresis was conducted in a 1\u00d7TBE buffer at 10 V/cm for 2 hours. The fluorescent signal intensities of the 4500 bp bands were estimated with ImageJ.",
+                                "Viscosity Measurement of DNA Aqueous Solutions.",
+                                "There is a linear relationship between the viscosity of common diagnostic reaction solutions and the concentration of DNA in those solutions. At a fixed temperature, the relationship between the solution viscosity, \u03b7, and the DNA concentration, C, for a very dilute solution can be expressed as \u03b7=\u03b70 (1+C[\u03b7]), where \u03b70 is the viscosity of the solvent and [n] is the intrinsic viscosity of the DNA product. This equation gives a linear correlation between the viscosity and the macromolecule concentration. The intrinsic viscosity increases with the molecular weight of dsDNA, and this correlation has been documented [Tsortos et al., Biopolymers 95(12): 824-832 (2011)],",
+                                "[\u03b7]=3.5*10\u22126\u00d7MWDNA1.05,7\u00d7103\u2266MWDNA\u22662\u00d7106",
+                                "[\u03b7]=8.0*10\u22124\u00d7MWDNA0.690,2\u00d7106\u2266MWDNA\u22668\u00d71010",
+                                "The linear relationship between the viscosity and the DNA concentration breaks down at very high molecular weight or high concentration due to the non-Newtonian property of the DNA solution [Heo et al., J. Rheol. 49(5): 1117 (2005)].",
+                                "Digestion of DNA with EcoRI has a variety of uses and performs a selective cleaving of DNA at a specific site, forming DNA fragments of length 3530, 4878, 5643, 5804, 7421 and 21226 bp from lambda DNA of original length of 48502 bp. With the experimental relationship given in FIG. 1(c), the viscosities of the DNA EcoRI digest solutions were estimated, at different concentrations, using the measured bead rotation periods. A linear relationship was found between the solution viscosity and the DNA concentration (Table 1 and FIG. 6(a)), confirming the assumption that these solutions were in the dilute solution range. The viscosities of the DNA solutions measured using the AMBR microviscometer are within the theoretically estimated upper and lower bounds.",
+                                "Measurement of DNA Reaction Progression.",
+                                "Measurements of restriction digestion samples confirm that the AMBR microviscometer is sensitive to viscosity changes caused by the DNA size changes. As shown in FIG. 6(b), a clear difference in bead rotation period can be seen between the digested and undigested lambda DNA solutions. Thus, the AMBR microviscometer can detect DNA sequence variation using a site-specific restriction endonuclease to essentially alter the solution viscosity.",
+                                "Measurements of PCR samples over the course of the reaction show that the AMBR microviscometer can detect the formation of PCR products in real time. As expected, the reactions with the higher initial template concentration reach the maximum product concentration sooner than those with lower template concentrations (FIG. 6(c)), and the plot of reaction cycle number versus log of initial DNA concentration yields a linear correlation (FIG. 7). Comparing the AMBR measurements with the gel electrophoresis results on the same samples (FIG. 6(d)) confirms that the viscosity-based method is approximately 5 cycles delayed, relative to gel electrophoresis detection.",
+                                "Using commercial paramagnetic beads, the AMBR microviscometer is found to be sensitive to the viscosity changes associated with DNA reactions. The results on PCR, with a product size of 4500 bp, yielded a 10% relative error in the rotation period measurement. The AMBR microviscometer is able to detect PCR product sizes that are about 1000 bp, assuming a conversion of more than 95% of dNTPs to polymerized product (i.e., 0.42 g/L final product concentration). However, this sensitivity can be further improved so as to meet the need of monitoring DNA reactions with smaller viscosity changes (e.g., PCRs with shorter DNA products) by optimizing the bead size, shape, temperature, vibration, and magnetic properties. Based on the 1% relative error observed for single-bead measurements, over time, the AMBR microviscometer is able to detect PCR with product size as low as 50 bp. By measuring the changes in viscosity of DNA solutions, the methods disclosed herein can measure either the difference in molecular length for a known concentration or the difference in concentration for a known length.",
+                                "In summary, the viscosity-based approach using an AMBR microviscometer introduces a new option for label-free DNA detection and for reaction monitoring. In the viscosity range of common DNA reactions, the measurement is completed within one minute, and a typical AMBR microviscometer set-up allows continuous, real-time measurement during the course of any reaction. This viscometer requires only a small amount of sample, and volumes in the picoliter range are accessible if integrated into a microfluidic device. A laser-photodiode apparatus can easily replace the microscope detection setup used in this work, so as to make the measurement more cost-effective [Hecht et al., Biosens. Bioelectron. 48: 26-32 (2013)]. Although demonstrated with DNA solutions, the viscosity-based technology described here can be applied to any polymer reaction or degradation system, as used in the broadest sense of the term \u201cpolymer\u201d to refer to conventional chemical polymers and to such aggregations and dis-aggregations as would be found in cell-cell interactions. The improved understanding provided herein of the AMBR microviscometer performance in complex fluids enables new applications, including without limitation mapping the viscosity in living cells, understanding drug delivery mechanisms, and diagnosing blood clotting."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe digestion reaction",
+                                "detail PCR sample preparation",
+                                "explain thermal cycling",
+                                "describe gel electrophoresis",
+                                "estimate fluorescent signal intensities",
+                                "introduce linear relationship between viscosity and DNA concentration",
+                                "explain intrinsic viscosity",
+                                "discuss non-Newtonian property of DNA solution",
+                                "describe digestion of DNA with EcoRI",
+                                "estimate viscosities of DNA EcoRI digest solutions",
+                                "confirm linear relationship between viscosity and DNA concentration",
+                                "measure DNA reaction progression",
+                                "detect DNA sequence variation",
+                                "detect PCR product formation in real time"
+                            ],
+                            "num_characters": 7092,
+                            "outline_medium": [
+                                "describe digestion reaction",
+                                "describe preparation of PCR samples",
+                                "describe gel electrophoresis",
+                                "describe viscosity measurement of DNA aqueous solutions",
+                                "discuss linear relationship between viscosity and DNA concentration",
+                                "describe measurement of DNA reaction progression",
+                                "discuss results and applications"
+                            ],
+                            "outline_short": [
+                                "prepare digestion reaction samples",
+                                "prepare PCR samples",
+                                "perform gel electrophoresis"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of detecting a change in state of an analyte in a sample comprising:\n(a) contacting the sample with a magnetic particle;\n(b) measuring a first instantaneous non-linear rotation rate of the magnetic particle in the sample at a first time; and\n(c) measuring a second instantaneous non-linear rotation rate of the magnetic particle in the sample at a second time Y;\nwherein a difference between the first instantaneous rotation rate relative to the second instantaneous rotation rate indicates the change in state of the analyte in the sample.",
+        "2. The method of claim 1 wherein the change in state is a physical change in state.",
+        "3. The method of claim 2 further comprising a change in temperature of the sample comprising the analyte.",
+        "4. The method of claim 2 wherein the analyte is water or a population of cells.",
+        "5. The method of claim 1 wherein the change in state is a chemical change in state.",
+        "6. The method of claim 5 wherein the analyte is a monomer of a biopolymer.",
+        "7. The method of claim 5 wherein the analyte is selected from the group consisting of a cell, a nucleic acid, a protein, a carbohydrate, a lipid, and an amino acid.",
+        "8. The method of claim 5 wherein the chemical change is catalyzed by an enzyme.",
+        "9. The method of claim 8 wherein the enzyme is selected from the group consisting of a polymerase, a nuclease, a hydrolase, a lyase, an oxidase, a peptidase, and a ligase.",
+        "10. The method of claim 5 wherein the chemical change is selected from the group consisting of nucleic acid synthesis, protein synthesis, nucleic acid hydrolysis, nucleic acid ligation, and protein hydrolysis.",
+        "11. The method of claim 10 wherein the nucleic acid synthesis is by polymerase chain reaction (PCR).",
+        "12. The method of claim 10 wherein the protein synthesis is by in vitro translation.",
+        "13. The method of claim 10 wherein the protein synthesis occurs in a cell.",
+        "14. The method of claim 10 wherein the nucleic acid hydrolysis is catalyzed by a type I or a type II restriction endonuclease.",
+        "15. The method of claim 5 wherein the chemical change is formation or loss of a nucleic acid hybrid, a blood clot, or a ligand-receptor interaction, a nucleic acid-protein interaction, a protein-lipid interaction, a protein-carbohydrate interaction, an antibody-antigen interaction.",
+        "16. The method of claim 6 wherein the difference between the first rotation rate relative to the second rotation rate indicates a change in concentration of analyte in the sample.",
+        "17. The method of claim 6 wherein the difference between the first rotation rate relative to the second rotation rate indicates a change in average length of analyte in the sample.",
+        "18. The method of claim 1 wherein the difference between the first rotation rate relative to the second rotation rate is measured in real time."
+    ]
+}

@@ -1,0 +1,214 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce mobile communication generations
+
+## SUMMARY
+
+- introduce polar encoding and decoding
+- motivate relaxation in polar encoding
+- define encoding nodes and relaxation attributes
+- determine relaxation group and final relaxation level
+- perform encoding and relaxation on encoding nodes
+- select and group relaxation attributes
+- perform encoding operation on relaxation levels
+- outline adaptive polar component code selection
+
+## DETAILED DESCRIPTION
+
+- introduce communications system
+- describe system components
+- define wireless transmit/receive units (WTRUs)
+- describe base stations
+- explain air interface
+- introduce multiple access schemes
+- describe radio technologies (e.g., UMTS, LTE, NR)
+- explain base station and WTRU implementation
+- describe multiple radio access technologies
+- introduce dual connectivity principles
+- describe other radio technologies (e.g., WiFi, WiMAX)
+- introduce base station 114b
+- describe wireless local area network (WLAN)
+- describe wireless personal area network (WPAN)
+- describe picocell or femtocell
+- introduce core network (CN)
+- describe CN functionality
+- introduce public switched telephone network (PSTN)
+- describe Internet connectivity
+- describe other networks
+- introduce WTRU multi-mode capabilities
+- describe WTRU components (e.g., processor, transceiver)
+- describe transmit/receive element
+- describe speaker/microphone
+- describe keypad
+- describe display/touchpad
+- describe non-removable memory
+- describe removable memory
+- describe power source
+- describe global positioning system (GPS) chipset
+- describe peripherals
+- describe full duplex radio
+- describe interference management unit
+- describe half-duplex radio
+- introduce radio access network (RAN)
+- describe RAN components (e.g., eNode-Bs)
+- describe RAN functionality
+- describe eNode-Bs and CN components
+- describe eNode-Bs' functions
+- describe MME's functions
+- describe SGW's functions
+- describe PGW's functions
+- describe CN's facilitation of communications with other networks
+- describe WLAN in Infrastructure Basic Service Set (BSS) mode
+- describe AP's functions
+- describe STAs' functions
+- describe peer-to-peer traffic
+- describe 802.11ac infrastructure mode of operation
+- describe primary channel's functions
+- describe High Throughput (HT) STAs' functions
+- describe Very High Throughput (VHT) STAs' functions
+- describe sub 1 GHz modes of operation
+- describe 802.11ah's functions
+- describe WLAN systems' primary channel
+- describe available frequency bands for 802.11ah
+- describe RAN and CN according to an embodiment
+- describe gNBs' functions
+- describe WTRUs' communication with gNBs
+- describe gNBs' implementation of MIMO technology
+- describe gNBs' implementation of carrier aggregation technology
+- describe gNBs' implementation of Coordinated Multi-Point (CoMP) technology
+- describe WTRUs' communication with gNBs using scalable numerology
+- describe gNBs' configuration for standalone and non-standalone configurations
+- describe CN's components
+- describe AMF's functions
+- describe SMF's functions
+- describe UPF's functions
+- describe CN's facilitation of communications with other networks
+- describe emulation devices' functions
+- describe emulation devices' testing of other devices
+- describe emulation devices' deployment in a communication network
+- introduce polar codes
+- motivate polar codes
+- describe polar code structure
+- define polar code encoding
+- explain polar code decoding
+- categorize polar code decoding
+- describe successive cancellation decoding
+- describe belief propagation decoding
+- introduce relaxation of polar codes
+- describe relaxation operation
+- explain reduced decoding complexity
+- describe graph representation of polar code
+- define nodes in polar code graph
+- explain polarization operation
+- describe binary expansion of polar code
+- explain SC-based decoding structure
+- describe error probability calculation
+- introduce inactivation of nodes
+- describe union bound of error rate
+- motivate relaxation schemes
+- describe conventional relaxation schemes
+- explain drawbacks of conventional schemes
+- describe disclosed relaxation schemes
+- explain complexity reduction
+- describe memory usage reduction
+- explain code block-length and code-rate flexibility
+- describe polar encoder and decoder implementations
+- explain complexity reduction in polar encoding
+- describe relaxation attributes
+- explain initial relaxation attribute selection
+- describe relaxation group determination
+- explain final relaxation level determination
+- describe encoding operation with relaxation
+- explain relaxation implementation
+- describe graph-representation of polar encoding
+- explain initial relaxation requirements
+- describe relaxation attribute of a node
+- explain paired nodes in relaxation
+- describe XOR operation in polar encoding
+- explain paired node indexes
+- describe bit reversing interleaver
+- explain initial relaxation attribute determination
+- describe reliability order of polar code construction
+- explain selection of most reliable and least reliable bits
+- describe good channel and bad channel relaxations
+- explain complexity reduction in code constructions
+- conclude polar code relaxation schemes
+- define polar code construction
+- motivate reliability sequence of input bit indexes
+- determine initial relaxation attribute
+- select Ng and Nb values
+- define complexity reduction ratio
+- determine relaxation groups
+- group relaxation indices
+- determine minimum block size
+- change RLi,0 from 1 to 0
+- apply relaxation in the first level
+- generalize relaxation condition
+- configure polar code
+- determine final relaxation level
+- determine next level relaxation attribute
+- continue relaxation up to final level
+- determine relaxation attribute in incremental manner
+- select smaller polar codes within overall polar code
+- relax component codes
+- perform encoding operations
+- omit XOR operations for relaxed pairs
+- describe compact relaxation attribute determination
+- exclude single relaxation attribute
+- extend relaxation technique to remaining stages
+- perform relaxation for rate matching
+- apply puncturing
+- set corresponding input bits to zero
+- handle corresponding input bits as frozen bits
+- apply shortening
+- set corresponding input bits to zero
+- handle corresponding input bits as frozen bits
+- set LLR of shortened output bit to infinite
+- apply relaxation to punctured or shortened bits
+- include converted frozen bits in bad channel relaxation
+- apply same implementation for bad channel relaxation
+- describe relaxation node selection
+- select most reliable Ng bit indices
+- exclude single relaxation attribute
+- extend relaxation technique to remaining stages
+- describe compact implementation
+- assume relaxation limited to good channel relaxation
+- describe extension of relaxation technique
+- introduce polar encoding relaxation
+- describe bad channel relaxation
+- explain puncturing and shortening
+- describe repetition
+- introduce polar code decoding
+- describe decoding with relaxation
+- explain message passing
+- describe relaxed pair equations
+- explain SC-based implementation
+- describe BP-based implementation
+- present numerical results
+- summarize simulation conditions
+- describe evaluated implementations
+- explain good channel selection
+- describe coding gain by relaxation
+- explain performance improvement
+- introduce Bhattacharyya code construction
+- describe conventional Bhattacharyya code construction
+- describe proposed Bhattacharyya code construction
+- explain RLi,j acquisition
+- describe relaxation conditions
+- explain adaptive polar encoder and decoder complexity reduction
+- describe adaptive configuration
+- explain transmitter and receiver interaction
+- describe complexity reduction information exchange
+- explain control channel format
+- describe offline calculations of relaxation attributes
+- explain complexity reduction level determination
+- describe battery status information exchange
+- explain complexity reduction-BLER performance trade-off
+- describe relaxation example
+- explain encoding node association
+- describe initial relaxation attribute selection
+- explain relaxation group determination
+- describe encoding with relaxation
+

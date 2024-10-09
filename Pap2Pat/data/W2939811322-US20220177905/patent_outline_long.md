@@ -1,0 +1,284 @@
+# DESCRIPTION
+
+## GOVERNMENT SPONSORSHIP
+
+- acknowledge government support
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- motivate gene drive systems
+- limitations of CRISPR-Cas9
+
+## SUMMARY OF THE INVENTION
+
+- introduce allelic gene drive
+- describe dual gRNA drive system
+- explain copy-cutting allelic drive
+- explain copy-grafting allelic drive
+- introduce lethal mosaicism
+- summarize methods of invention
+
+## DETAILED DESCRIPTION
+
+- incorporate references
+- define technical terms
+- describe conventional techniques
+- introduce allelic-drive copy-cutting
+- describe allelic-drive copy-cutting method
+- introduce allelic-drive copy-grafting
+- describe allelic-drive copy-grafting method
+- describe allelic-drive element insertion
+- describe allelic conversion efficiency
+- describe Cas endonuclease integration
+- describe progeny survival
+- describe perduring Cas9-gRNA complexes
+- describe lethal mosaicism
+- describe essential gene modification
+- describe functional recoded sequences
+- describe gene examples
+- introduce selectively eliminating alleles
+- describe lethal mosaicism technique
+- introduce germline editing
+- describe repair of cleavage-sensitive allele
+- describe assembling alleles in plants
+- describe assembling alleles in insects
+- define transitional phrases
+- explain "consists of" and "consisting of"
+- explain "consists essentially of" and "consisting essentially of"
+- define articles "a", "an", "the", and "said"
+- explain "comprising", "including", and "having"
+- define "and/or"
+- explain "consisting" and "consisting essentially of" aspects and embodiments
+- describe range format
+- explain "about" values and ranges
+- define "pharmaceutically acceptable"
+- define "pharmaceutically acceptable carrier"
+- explain "complementary" and "complement thereof"
+- define "configured to" and "designed to"
+- define "region"
+- define "region of interest"
+- explain "RNA-dependent DNA polymerase" and "reverse transcriptase"
+- explain "DNA-dependent DNA polymerase"
+- explain "DNA-dependent RNA polymerase" and "transcriptase"
+- define "sequence"
+- explain "identical" and "percent identity"
+- define "label"
+- define "linker"
+- define "fragment"
+- explain "hybridization", "annealing", "selectively bind", and "selective binding"
+- define "nucleic acid" and "nucleic acid molecule"
+- explain nucleic acid backbone and sugar moieties
+- explain nitrogenous bases and analogs
+- describe locked nucleic acids (LNA)
+- explain modified bases
+- describe synthetic methods for making nucleic acids
+- describe purification of nucleic acids from natural sources
+- explain single-stranded and double-stranded nucleic acids
+- summarize nucleic acid definitions
+- conclude detailed description
+- define oligonucleotide
+- describe preparation methods
+- introduce nucleases
+- list types of endonucleases
+- describe Cas proteins
+- list Cas protein subtypes
+- describe Cas9 protein
+- describe Cas9 optimization
+- describe PAM sequence recognition
+- describe DNA cleavage activity
+- describe mutated endonucleases
+- describe nickase activity
+- describe codon optimization
+- describe gene expression in eukaryotic cells
+- describe fusion proteins
+- list examples of peptide or protein domains
+- describe reporter genes
+- describe localization signals
+- define guide polynucleotide
+- describe guide polynucleotide composition
+- describe double molecule guide polynucleotide
+- describe VT and CER domains
+- describe crRNA and tracrRNA molecules
+- define guide polynucleotide
+- describe VT domain
+- describe CER domain
+- describe single guide RNA
+- define variable targeting domain
+- describe complementarity between VT domain and target sequence
+- describe length of variable targeting domain
+- describe composition of variable targeting domain
+- define guide polynucleotide
+- describe degree of complementarity between guide polynucleotide and target sequence
+- describe length of guide polynucleotide
+- describe selection of guide polynucleotide
+- describe target sequence
+- describe homology arm
+- describe length of homology arm
+- describe degree of complementarity between homology arm and target sequence
+- describe genetic modification
+- describe methods of introducing nucleic acid into host cell
+- describe combating insect-borne diseases
+- describe treating diseases or conditions
+- describe controlling agriculture pest species
+- describe suppressing crop pests
+- describe targeting pests or weeds resistant to pesticides or herbicides
+- define agriculture pests
+- list agriculture pest insects
+- list agriculture pest mites
+- list agriculture pest nematodes
+- list grape pests
+- list pest molluscs
+- list strawberry pests
+- list Western honey bee pests
+- list insect pests of ornamental plants
+- list insect vectors of plant pathogens
+- describe agriculture pest insects
+- describe agriculture pest mites
+- describe agriculture pest nematodes
+- describe grape pests
+- describe pest molluscs
+- describe strawberry pests
+- describe Western honey bee pests
+- describe insect pests of ornamental plants
+- describe insect vectors of plant pathogens
+- provide examples of agriculture pest insects
+- provide examples of agriculture pest mites
+- provide examples of agriculture pest nematodes
+- provide examples of other pests
+- list plant pathogenic nematodes
+- list invasive species
+- describe applications of similar methods
+- define model organisms
+- list virus model organisms
+- list prokaryotic model organisms
+- list protist model organisms
+- list fungal model organisms
+- list plant model organisms
+- list invertebrate animal model organisms
+- list vertebrate animal model organisms
+- provide examples of mammalian model organisms
+- provide examples of non-mammalian vertebrate model organisms
+- provide examples of fish model organisms
+- provide examples of human model organisms
+
+### EXAMPLES
+
+- introduce allele-specific Cas9-dependent cleavage
+- describe X-linked Drosophila Notch locus
+- illustrate loss- and gain-of-function dominant alleles
+- show scheme of DsRed-marked y<ccN> CopyCat element
+- describe gRNA-y and gRNA-N+ targets
+- illustrate DNA sequence of gRNA-N+ target site
+- show wing phenotypes of Drosophila adults
+- illustrate crossing scheme to generate F1 master females
+- describe transmission of y<ccN> and NAx16 alleles
+- show percent transmission of y<ccN> and NAx16 alleles
+- describe conversion of receiver chromosomes
+- illustrate percent conversion of receiver chromosomes
+- describe NAx16 allele and PAM site
+- illustrate sequences of genomic DNA mutations
+- describe gRNA-N+ design and function
+- illustrate CopyCat element and yellow locus
+- describe hypothesis of Super-Mendelian inheritance
+- illustrate F1 master females and control females
+- describe transmission percentages of y<ccN> and NAx16 alleles
+- illustrate sequence analysis of Cas9-induced yellow-mutations
+- describe mosaic phenotypes of F2 female progeny
+- illustrate molecular and genetic markers for scoring donor vs receiver chromosomes
+- describe compiled results of allelic conversion rates
+- introduce reciprocal inheritance bias
+- describe drive-induced lethal events
+- show neurogenic phenotypes
+- describe Cas9-dependent generation of N− alleles
+- test lethal mosaicism hypothesis
+- describe dominant elimination of lethal NHEJ alleles
+- show mosaic wing phenotypes
+- test lethal mosaicism hypothesis using N+IS allele
+- describe sequencing of single F2 ♀ lines
+- show rescuing lethal mosaicism in female F2 progeny
+- test lethal mosaicism hypothesis using vasa-Cas9
+- describe absence of emerging N− F1 females
+- test lethal mosaic hypothesis using ccN element
+- show 100% lethality induced by ccN CopyCat element
+- describe lethal mosaicism as potent process
+- test possibility of gene-drive or allelic-drive in F3 generation
+- show shadow drive and co-drive analyses
+- describe co-drive of NAx16 allele with DsRed marked element
+- show chromosome pairing is required for efficient allelic-drive
+- describe co-drive phenomenon
+- show correlation between copying efficiency of y<ccN> element and NAx16 allele
+- describe co-drive phenomenon in single F2 female lines
+- test whether co-drive depends on chromosome pairing
+- show loss of co-drive and reduction in NAx16 copying
+- describe frequency of DsRed copying
+- test whether co-drive depends on active copying at yellow locus
+- show reduced transmission of NAx16 allele
+- describe copying y<ccN> element increases allelic-drive
+- summarize results of experiments
+- discuss implications of results
+- conclude that lethal mosaicism is a potent process
+- introduce allelic drive experiments
+- show allelic conversion at Notch locus
+- describe crossing scheme for double conversion
+- describe crossing scheme for single conversion
+- show conversion percentages for double and single conversion schemes
+- examine cis- versus trans-configurations for y<ccN> and NAx16 alleles
+- show crossing schemes for cis- and trans-configurations
+- show percentages of bi-directional conversion rates
+- identify de-novo Abruptex alleles
+- test allelic drive with de-novo allele
+- show efficient allelic drive of de novo cleavage site NAx103 allele
+- describe copy grafting allelic drive strategy
+- show allelic drive mediated by copy-grafting
+- describe copy-grafting scheme
+- show percent of F2 progeny demonstrating features of drive
+- summarize different drive systems
+- describe inverse-drive scheme
+- show results of inverse allelic-drive via copy-grafting
+- show copy-grafting sustains efficient co-drive
+- describe preliminary cage trial experiments for copy-grafting allelic-drive
+- show introduction of ccN drive element and favored non-cleavable allele
+- show N+IS allelic frequency measured in males over 5 generations
+- show presence of ccN drive element measured in each population
+- describe preliminary cage trial experiments for copy grafting in an allelic pump paradigm
+- show introduction of ccN drive element and cleavage resistant Notch+ allele
+- show N+IS allelic frequency measured in males for two generations
+- show presence of ccN drive element measured in each population
+- describe feasibility of two forms of allelic-drive
+- describe mechanism contributing to efficient allelic drive
+- describe shadow-drive phenomenon
+- describe correlation between copying events
+- describe development of Cas9 variants with broadened PAM specificity
+- show nanos-Cas9 source sustains efficient allelic conversion
+- describe potential applications of allelic drive in plants
+- describe potential applications of allelic drive in animal models
+- describe potential applications of allelic drive in reversing pesticide resistance
+- describe potential applications of allelic drive in disease reduction strategies
+- describe potential applications of allelic drive in favoring genetic variants
+- conclude allelic drive strategies are broadly applicable
+- address run-away NHEJ problem
+- present evidence against run-away NHEJ problem
+- discuss limitations of allelic-drives
+- introduce lethal mosaicism
+- discuss implications of lethal mosaicism
+- describe construction of ccN CopyCat element
+- provide details of ccN CopyCat plasmid
+- describe cloning of ccN CopyCat plasmid
+- discuss sequencing of ccN element
+- describe genomic DNA preparation
+- outline Drosophila genetics
+- describe sequence analysis
+- discuss active genetic safety measures
+- describe wing dissection and mounting
+- describe antibody staining of Drosophila embryos
+- present Table 2
+- present Table 3
+- summarize molecular events
+- discuss embodiments of the invention
+- provide abbreviation key
+- conclude with scope of the invention
+

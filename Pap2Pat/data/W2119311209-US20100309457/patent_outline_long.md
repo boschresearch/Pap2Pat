@@ -1,0 +1,194 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce phase sensing devices
+- describe limitations of commercial optical sensors
+- explain importance of phase in imaging
+- describe applications of phase microscopes
+- introduce conventional DIC microscopes
+- describe principle of conventional DIC devices
+- illustrate conventional DIC device
+- describe limitations of conventional phase microscopes
+- explain entanglement of amplitude and phase information
+- describe artifacts in images of birefringent samples
+- introduce other phase microscopy techniques
+- describe phase shifting interferometry schemes
+- describe digital holography or Hilbert phase microscopy
+- describe swept-source phase microscopy
+- describe polarization quadrature microscopy
+- describe harmonically matched grating-based phase microscopy
+- describe technique for calculating optical phase
+- describe limitations of technique for calculating optical phase
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce wavefront imaging device (WIS)
+- describe WIS measuring amplitude and phase variations
+- describe aperture layer and light detector
+- describe transparent layer separating light detector and aperture layer
+- describe operation of WIS
+- describe measuring phase gradient and amplitude
+- describe numerically generating images
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce WIS (wavefront imaging sensor)
+- describe WIS components: aperture layer, light detector, and transparent layer
+- explain self-focusing scheme in high Fresnel number regime
+- describe advantages over conventional wavefront sensors
+- introduce phase gradient measuring functionality on a simple sensor chip
+- describe cost and design advantages
+- introduce imaging device employing WIS
+- describe advantages of imaging device: no polarized light required
+- describe aperture layer: one or more apertures, opaque or semi-opaque
+- describe aperture: light transmissive region, hole or filled with transparent material
+- describe aperture size and shape
+- describe array of apertures: one-dimensional, two-dimensional, or multitude
+- describe spacing between adjacent apertures
+- describe close aperture spacing: densely populated light data
+- describe transparent layer: one or more layers, transparent or semi-transparent material
+- describe light detector: detects light, generates signals with amplitude, intensity, and phase gradient data
+- describe light detecting elements: size, shape, and arrangement
+- describe assignment of light detecting elements to apertures
+- describe imaging device employing WIS: generates light field image
+- describe illumination source: provides light, polarized or unpolarized
+- describe operating principle of WIS
+- describe light transmission through aperture: forms light projection on light detector
+- describe light projection: received at light detector, centered or laterally shifted
+- describe lateral shift of light projection: related to phase gradient of light wave
+- describe mathematical relationship between lateral shift and phase gradient
+- describe determination of normalized phase gradients
+- describe determination of amplitude of light wave
+- describe high Fresnel number design: intrinsic focusing, narrowed light projection
+- describe advantages of high Fresnel number design: improved sensitivity
+- describe example of high Fresnel number designed WIS: normalized phase gradient sensitivity
+- describe imaging device employing highly sensitive WIS: improved image quality
+- define Fresnel number: dimensionless number associated with diffraction
+- describe expression for Fresnel number
+- describe WIS applications: microscopy, photography, machine recognition, object ranging, texture assessment
+- describe WIS applications: LASIK surgery, high-resolution retinal imaging
+- describe advantages of WIS: self-focusing, no lenses required
+- describe advantages of WIS: cost-effective, simple design
+- describe advantages of WIS: improved image quality, robustness
+- summarize WIS: wavefront imaging sensor with phase gradient measuring functionality
+- define Fresnel number
+- motivate high Fresnel number regime
+- describe Fresnel diffraction
+- describe far-field diffraction
+- introduce self-focusing plane
+- describe WIS design for high Fresnel number regime
+- calculate Fresnel number example
+- describe light detector operation
+- describe WIS advantages
+- introduce WIS system 200
+- describe microscope 180 operation
+- describe light projection imaging
+- determine self-focusing plane location
+- design WIS 100 based on self-focusing plane location
+- illustrate WIS 100 components
+- simulate light projection image
+- graph light projection size vs distance
+- describe lens implementation
+- motivate lens implementation
+- introduce functionalized sensor chips
+- introduce functionalized sensor chip
+- describe sensor chip components
+- specify sensor chip examples
+- describe fabrication process
+- detail aperture layer creation
+- describe functionalized sensor chip capabilities
+- specify phase gradient sensitivity
+- describe color and/or black and white image generation
+- introduce wavefront imaging devices
+- describe WIS system implementation
+- specify WIS system benefits
+- describe WIS microscope system
+- describe WIS digital camera system
+- show WIS system photograph
+- describe conventional microscope configuration
+- specify sensor chip for DIC images
+- describe WIS system resolution
+- show images of unstained worm
+- describe intensity and phase gradient images
+- compare WIS and DIC images
+- describe limitations of DIC images
+- show images of stained ascaris
+- describe intensity and phase gradient images
+- compare WIS and DIC images
+- describe graph comparing DIC and WIS images
+- describe birefringent sample imaging
+- show images of ctenoid fish scale
+- describe intensity and phase gradient images
+- compare WIS and DIC images
+- describe phase gradient information
+- describe WIS system 200
+- generate phase gradient images
+- determine phase image along direction
+- generate phase gradient image based on magnitude
+- describe WIS system components
+- describe host computer and processor
+- describe CRM and code
+- describe WIS system in optofluidic microscope imaging scheme
+- describe corrections of aberrations
+- describe modifications to WIS system
+- describe operational methods
+- estimate center/lateral shifts of light projection
+- describe centroid method
+- describe Fourier-demodulation algorithms
+- describe cyclic algorithm
+- define complex number for initial position
+- define complex number for second position
+- calculate lateral shift of light projection
+- describe discrete data from two-dimensional array
+- replace integrals with summations
+- describe calibration methods
+- test linearity and sensitivity of WIS 100
+- introduce specific normalized phase gradients
+- measure phase gradient response
+- generate calibration curve
+- describe quantitative phase imaging
+- describe corrections of aberrations
+- describe adaptive optics strategies
+- describe deep tissue imaging of multiphoton microscopy
+- describe modifications to WIS 100
+- describe operations of WIS 100
+- describe logic comprising software, hardware, or combination
+- describe precision of estimating lateral shifts
+- describe imaging intracellular fluorescent proteins
+- describe sub-diffraction-limit imaging
+- describe WIS system 200 for calibrating WIS 100
+- illustrate components of WIS system 200
+- explain method of operating WIS system 200
+- provide WIS 100
+- design WIS 100 for high Fresnel number regime
+- determine thickness H of transparent layer 130
+- calibrate WIS 100
+- check linearity and sensitivity of phase gradient response
+- introduce object 300 into light field of WIS 100
+- modulate light from illumination source 150
+- receive light projections by light detector 120
+- estimate lateral shifts of light projections
+- determine phase gradient
+- determine amplitude of wavefront
+- generate images of object 300
+- describe modifications to methods
+- introduce computer devices
+- show block diagram of subsystems in computer devices
+- describe interconnection of subsystems
+- describe peripherals and input/output devices
+- describe system memory and fixed disk
+- describe output device of WIS system 200
+- describe implementation of present invention
+- describe software components or functions
+- describe storage of software code
+- describe variations of disclosure
+- describe scope of disclosure
+- describe combining features of embodiments
+- describe modifying or omitting features
+- describe integrating or separating components
+- incorporate patents, patent applications, publications, and descriptions by reference
+- describe WIS 100 with aperture layer and light detector
+- describe transparent layer between aperture layer and light detector
+- describe high Fresnel number design
+

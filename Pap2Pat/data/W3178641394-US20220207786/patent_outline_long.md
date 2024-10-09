@@ -1,0 +1,208 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to transformable bottleneck networks
+
+## BACKGROUND
+
+- introduce human motion retargeting
+
+## DETAILED DESCRIPTION
+
+- introduce retargeting human body motion problem
+- describe previous approaches
+- introduce motion retargeting system
+- describe 3D modeling and manipulation
+- describe transformable bottleneck network (TBN)
+- describe multi-resolution scheme
+- describe foreground extraction and manipulation
+- describe background extraction and compositing
+- describe training scheme
+- introduce networked computing environment
+- describe messaging system architecture
+- describe client device and messaging client
+- describe messaging server system
+- describe application servers
+- describe database server
+- describe web server
+- describe API server
+- describe application servers functionality
+- describe messaging server functionality
+- describe image processing server
+- describe social network server
+- describe motion retargeting system functionality
+- describe messaging client functionality
+- describe external resource integration
+- describe launching external resources
+- describe accessing external resources
+- describe presenting external resources
+- describe notifying users of external resource activity
+- describe sharing items in external resources
+- describe presenting list of external resources
+- describe system architecture
+- describe ephemeral timer system
+- describe collection management system
+- describe curation interface
+- describe augmentation system
+- describe map system
+- describe game system
+- describe external resource system
+- describe launching web-based resources
+- describe accessing web-based resources
+- describe integrating SDK into web-based resources
+- describe SDK functionality
+- describe bridging communications between external resources and messaging client
+- describe Web View JavaScript Bridge
+- describe establishing communication channels
+- describe sending messages between external resources and messaging client
+- describe implementing SDK functions
+- describe constructing callback identifier
+- introduce messaging system architecture
+- describe SDK limitations on shared information
+- explain visual representation of web-based external resources
+- detail user interface for accessing external resources
+- describe authorization process for external resources
+- explain menu for authorizing external resources
+- describe OAuth 2 framework for authorization
+- explain control of user data shared with external resources
+- describe motion retargeting system operation
+- introduce data architecture
+- describe message data structure
+- explain entity table and entity graph
+- detail profile data storage
+- describe augmentation data storage
+- explain image and video data storage
+- describe real-time video processing
+- detail object detection and tracking
+- explain transformation of video frames
+- describe face detection and facial feature reference points
+- explain landmark identification procedures
+- describe shape alignment and similarity transform
+- detail search for landmarks and template matching
+- explain transformation system for image manipulation
+- describe modification icons and computer animation model
+- explain user interface for selecting modifications
+- detail persistent modifications and toggling
+- describe story table and collections of messages
+- explain personal story and live story collections
+- describe location story and contribution process
+- introduce data communications architecture
+- describe message structure and components
+- explain message identifier and text payload
+- detail message image and video payloads
+- describe message audio payload and augmentation data
+- explain message duration and geolocation parameters
+- describe message story identifier and tag
+- detail message sender and receiver identifiers
+- explain pointers to content data values
+- describe image table and video table storage
+- explain augmentation table storage
+- detail story table storage
+- describe entity table storage
+- explain message table storage
+- describe data storage in memory
+- detail data storage in database
+- explain data retrieval and access
+- describe data processing and analysis
+- detail data visualization and presentation
+- explain user interface for data interaction
+- describe data security and access control
+- explain data backup and recovery
+- detail data scalability and performance
+- describe data integration and interoperability
+- explain data analytics and insights
+- summarize data architecture and communication
+- introduce time-based access limitation architecture
+- describe ephemeral message 502
+- explain message duration parameter 506
+- illustrate message timer 510
+- describe ephemeral message group 504
+- explain group duration parameter 508
+- illustrate group participation parameter 512
+- describe group timer 514
+- explain ephemeral timer system 202
+- illustrate removal of ephemeral message 502
+- describe expiration of ephemeral message group 504
+- illustrate indicium associated with ephemeral message group 504
+- introduce motion retargeting system 130
+- describe image generation using motion retargeting system 130
+- illustrate 2D-3D Encoder 714
+- explain 3D-2D Decoder 718
+- describe flow network 716
+- illustrate occupancy decoder 708
+- explain multi-resolution representation
+- describe skip connections between 3D encoder and 3D decoder
+- illustrate source reference image xfg
+- explain warping features using flow network F
+- describe synthesized foreground frame
+- illustrate training techniques and loss functions
+- explain background environment modeling
+- define motion retargeting system
+- introduce perceptual loss
+- describe reconstruction quality measurement
+- introduce mask supervision
+- define occupancy decoder
+- describe mask loss
+- introduce unsupervised training technique
+- describe synthesized image generation
+- introduce discriminator
+- define adversarial loss
+- describe total loss function
+- illustrate example method for transforming motion
+- describe accessing two-dimensional images
+- extract implicit volumetric representations
+- generate three-dimensional warping field
+- generate two-dimensional image
+- describe machine architecture
+- introduce machine components
+- describe processor components
+- describe memory components
+- describe input/output components
+- describe biometric components
+- describe motion components
+- describe environmental components
+- describe position components
+- describe communication components
+- describe camera system
+- describe rear cameras
+- describe front cameras
+- describe 360° camera
+- describe dual rear cameras
+- describe software architecture
+- introduce operating system
+- describe kernel
+- describe services
+- describe drivers
+- describe libraries
+- describe system libraries
+- describe API libraries
+- describe frameworks
+- describe applications
+
+### Glossary
+
+- define carrier signal
+- define client device
+- define communication network
+- describe types of communication networks
+- define component
+- describe software components
+- describe hardware components
+- describe special-purpose processors
+- describe temporarily configured circuitry
+- describe hardware components as tangible entities
+- describe communicative coupling between hardware components
+- describe signal transmission between hardware components
+- describe storage and retrieval of information
+- define processor-implemented component
+- describe cloud computing environment
+- describe software as a service (SaaS)
+- define computer-readable storage medium
+- describe machine-storage media
+- describe transmission media
+- define ephemeral message
+- describe access time for ephemeral message
+- define non-transitory computer-readable storage medium
+- define signal medium
+

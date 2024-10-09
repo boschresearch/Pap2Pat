@@ -1,0 +1,405 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### Field of the Invention
+
+- introduce plasmonic gold films
+
+### INTRODUCTION
+
+- motivate protein microarrays
+- describe biomolecular interactions
+- discuss radioimmunoassay
+- introduce enzyme-linked immunosorbent assay
+- describe planar microarray assays
+- describe Luminex bead assays
+- highlight limitations of current assays
+- introduce plasmonic Au substrates
+
+### RELATED ART
+
+- describe surface-enhanced Raman scattering
+- describe near-infrared fluorescence enhancement
+- discuss preparation of plasmonic gold substrates
+- highlight limitations of current methods
+- describe solution phase chemical synthesis
+- discuss prior art patents and publications
+
+### SPECIFIC PATENTS AND PUBLICATIONS
+
+- describe Nathan et al. patent
+- describe Geddes et al. patent
+- describe Hong et al. publication
+- describe Tabakman et al. publication
+- describe additional publications
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce plasmonic gold film
+- describe spectroscopic detection
+- highlight near-infrared fluorescence enhancement
+- describe gold film preparation
+- introduce discontinuous gold film
+- describe isolated island areas
+- highlight Au(0) clusters
+- describe gap distances
+- describe height of isolated island areas
+- introduce biosensor
+- describe substrate
+- describe gold film application
+- introduce array of biological samples
+- describe microarray platforms
+- highlight fluorescence enhanced immunoassay
+- describe protein biomarkers
+- introduce microarray
+- describe isolated island areas
+- describe gap distances
+- describe height of isolated island areas
+- introduce self-assembled monolayer
+- describe biological molecules
+- highlight near-infrared fluorescence emission
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+### Definitions
+
+- define technical terms
+- specify nomenclatures
+- define ranges
+- define "about"
+- define protein
+- describe protein modifications
+- define antibody
+- describe antibody classes
+- define autoantibody
+- describe autoantibody examples
+- define specific binding
+- describe specific binding characteristics
+- define cytokine
+- describe cytokine functions
+- define polynucleotide
+- describe polynucleotide structure
+- define plasmonically active
+- describe plasmonic properties
+- define nanometer sized
+- define islands
+- describe island shapes
+- define NIR fluorescence enhancement
+- describe NIR-FE mechanism
+- define sample
+- describe sample types
+- define self-assembled monolayer
+- describe SAM formation
+- define NIR label
+- describe NIR label examples
+- define SERS
+- describe SERS application
+
+### I. Overview
+
+- introduce microarray platform
+- motivate high-throughput screening
+- describe gold enhanced NIR-fluorescence
+- summarize microarray advantages
+- introduce plasmonic Au films
+- describe solution phase growth
+- outline three-step process
+- detail seeding step
+- detail reducing step
+- detail growing step
+- describe NIR-FE properties
+- introduce assays based on SERS
+- introduce NIR-FE assays
+- describe NIR-FE mechanism
+- detail fluorescence enhancement
+- describe multiplexed detection
+- illustrate Au film structure
+- outline optimal conditions
+
+### Section I. Solution Phase Method Gold Film Deposition for SERS-Based Immunoassay (FIGS. 1-5), Examples 1-5
+
+- introduce gold-on-gold (Au/Au) substrates
+- describe substrate preparation
+- detail seeding solution composition
+- explain seeding process
+- describe washing steps
+- introduce sodium borohydride reduction
+- detail growth solution composition
+- explain growth process
+- describe film deposition on bioassay substrate
+- summarize SERS enhancement factors
+- describe protein bioassay coating
+- introduce Au seeding step
+- hypothesize ligand exchange mechanism
+- describe Au cluster seeding density control
+- detail effect of pH on seeding
+- describe Au nanoparticle seeding methodology
+- explain importance of nitrogen-containing basic ligands
+- describe direct seeding of Au0 nanoparticles
+- explain need for NaBH4 reduction
+- describe AFM confirmation of nanoscopic spheres
+- detail absorbance spectroscopy results
+- describe growth of Au film by hydroxylamine reduction
+- explain rate of HAuCl4 reduction
+- detail optimal synthesis conditions for SERS-active Au/Au films
+- describe effect of Au3+ concentration on plasmon peak and particle morphology
+- detail morphology of Au/Au films
+- explain control of gold nanoparticle island sizes and inter-particle spacing
+- describe importance of ensemble surface plasmon resonance
+- detail systematic variation of synthetic conditions
+- describe library of plasmonic substrates
+- introduce alternative methods for isolated island areas
+- describe chemical synthesis of Au nanoplates
+- detail self-assembly and Langmuir Blodgett assembly
+- describe patterning methods for plasmonic Au substrates
+- detail nanosphere lithography and block-copolymer lithography
+- describe optimal synthesis conditions for SERS-active Au/Au films
+- detail SERS enhancement factors for benzenethiol
+- describe increase in SERS enhancement factors with red-shifted plasmons
+- explain drop in enhancement factor at high Au3+ growth condition
+- describe application to protein bioassay
+- detail deposition of Au precursor seeds onto protein bioassay
+- describe growth of Au seeds by hydroxylamine-mediated Au3+ reduction
+- detail Raman scattering intensity enhancement
+- describe detection of carcinoembryonic antigen in serum
+- summarize broad applicability of Au NP seeding
+- introduce μArray/Au assays
+- describe advantages over traditional methods
+- motivate low biological autofluorescence
+- describe metal-enhancement of NIR fluorescence emission
+- summarize signal-to-noise ratios
+- describe detection of CEA in xenograft mouse models
+- compare to commercially available CEA ELISA kits
+- demonstrate multiplexing capabilities
+- describe printing of human autoantigens onto substrates
+- compare nitrocellulose-based substrates to μArray/Au
+- describe limitations of nitrocellulose films
+- summarize advantages of μArray/Au substrates
+- describe detection of autoantibodies in autoimmune diseases
+- illustrate multiplexed cytokine detection protocol
+- describe preparation of plasmonic gold film on glass substrate
+- describe attachment of antigens to substrate
+- describe incubation with plasma or serum
+- describe labeling with secondary antibodies
+- describe limitations of ELISA
+- describe advantages of cytokine detection on plasmonic gold films
+- describe fluorescence enhancement of near-infrared fluorophores
+- describe multiplexed cytokine detection on plasmonic gold substrates
+- describe selectivity of detection
+- describe application to rapid identification of diabetes autoantibodies
+- describe advantages of μArray/Au assays
+- describe solution phase growth procedure of Au/Au films
+- describe stability and uniformity of Au/Au film substrates
+- describe potential applications of μArray/Au assays
+- introduce Section III
+- describe use of Au/Au films for NIR fluorescence enhanced molecular imaging
+- describe limitations of NIR fluorophores
+- describe enhancement of photoluminescence in the NIR
+- describe use of SWNTs and organic fluorescent labels
+- describe selective tagging of U87-MG brain cancer cells
+- describe NIR-FE imaging of molecularly targeted cells
+- describe observation of transmembrane endocytosis
+- describe NIR-FE imaging of biological systems
+- describe cell-type selective staining and imaging
+- describe synthesis of Au/Au films on quartz
+- introduce gold film deposition method for SERS-based immunoassay
+- describe cell staining and imaging using SWNT-IR800-RGD conjugates
+- discuss fluorescence enhancement on Au/Au film vs. quartz substrate
+- explain resonance coupling between SWNT emission and plasmonic modes
+- describe distance dependent fluorescence enhancement effect
+- discuss generality of NIR-FE imaging for various NIR fluorescent dyes
+- summarize results of NIR-FE imaging of cells
+- introduce protein microarrays and other biosensors
+- describe methods of preparing Au/Au films for SERS substrates
+- discuss various biosensor formats and detection systems
+- describe self-assembled monolayers (SAMs) for biosensors
+- discuss application of Au/Au gold film to microarray platforms
+- describe protein microarray preparation methods
+- discuss immobilization of multiplexed capturing proteins
+- list materials for solution phase gold seeding
+- describe solution phase Au/Au film synthesis
+- discuss deposition/precipitation of Au3+ onto substrates
+- describe solution phase reduction of seeded Au3+
+- discuss growth of Au films by hydroxylamine reduction of HAuCl4
+- describe Au film growth as a function of seeding density
+- discuss concentration dependence of growth solution
+- describe optimal growth conditions for Au/Au films
+- discuss effect of gold concentration variations on Au/Au films
+- describe morphology of resulting Au/Au films
+- discuss optimal seeding and growth concentrations for SERS and fluorescence enhancing substrates
+- introduce electron-beam silver evaporation
+- describe application of Au/Au films to microarray platforms
+- discuss protein microarray creation methods
+- describe immobilization of capturing molecules on Au substrates
+- discuss application of Au/Au films to biosensors
+- describe advantages of Au/Au films for biosensors
+- discuss potential applications of NIR-FE imaging
+- describe potential applications of Au/Au films for biosensors
+- discuss limitations of current biosensor technologies
+- describe advantages of Au/Au films over current biosensor technologies
+- summarize benefits of Au/Au films for biosensors and NIR-FE imaging
+- describe e-beam evaporation of silver onto glass slides
+- describe UV/V is/NIR absorbance measurements
+- describe AFM imaging of gold seeds on SiO2
+- describe SEM imaging of Au/Au films on glass
+- describe benzenethiol SAM formation
+- describe Raman measurement
+- describe enhancement factor calculation
+- describe SWNT bioconjugate preparation
+- describe Au/Au film optimization for deposition onto Raman bioassay
+- describe CEA assay procedure
+- describe Raman measurement of SWNT labels bound to CEA immunoassay protein spots
+- describe integration time and laser power optimization
+- describe error bar calculation
+- describe calibration curve measurement
+- describe advantages of high power density excitation
+- describe limitations of high power density excitation
+
+### EXAMPLES
+
+- introduce Au/Au film preparation
+- describe seeding of gold precursors onto unmodified substrates
+- detail deposition rate of Au3+ species onto substrate
+- discuss seeding density dependence on HAuCl4 concentration
+- describe solution phase reduction of gold precipitate precursors
+- detail formation of Au NPs with diameters of 5-10 nm
+- discuss UV/Vis absorption spectroscopy results
+- introduce selective reduction of Au3+ onto precursor Au seeds
+- describe growth of Au precursor seeds into plasmonic nano-islands
+- detail color change of substrate during film growth
+- discuss SEM imaging results of Au nano-islands
+- describe dependence of Au/Au film thickness and structure on seeding density and Au3+ ion concentration
+- detail SEM imaging results of Au/Au films at varying seeding densities
+- discuss absorbance spectroscopy results of Au/Au films
+- describe digital photographs of Au/Au films at varying growth concentrations
+- introduce optimization of Au/Au films for surface-enhanced Raman scattering
+- describe use of benzenethiol self-assembled monolayers as Raman reporters
+- detail SERS properties of Au/Au films on glass, PVC, and PDMS
+- discuss estimated enhancement factors at 785 nm excitation
+- describe SERS enhancement factors dependence on hydroxylamine-mediated growth conditions
+- detail optimal Au/Au film preparation conditions
+- compare SERS enhancement factors of Au/Au films and silver films
+- introduce deposition of Au/Au films onto protein-coated bioassays
+- describe preparation of SERS-active Au/Au films atop protein bioassays
+- detail sandwich immunoassays on glass substrates
+- describe conjugation of IR800 to goat anti-rabbit IgG
+- detail conjugation of IR800/Cy5 to streptavidin
+- introduce preparation of gold-on-gold (Au/Au) films
+- describe attachment of 6PEG-COOH to films and microarray printing
+- detail construction of multilayer surface chemistry on gold film for cytokine assay
+- describe microarray CEA sandwich assay procedure
+- detail microarray cytokine microarray sandwich assay procedure
+- discuss SERS enhancement of SWNTs on Au/Au films
+- conclude Au/Au film preparation and applications
+- describe NHS-activated gold slides preparation
+- describe microarray printing process
+- describe cytokine antigen preparation
+- describe polyclonal goat anti-cytokine incubation
+- describe IR800 conjugated streptavidin incubation
+- describe assay washing and drying
+- describe multiplexed autoantigen microarray assay procedure
+- describe autoantigen array blocking
+- describe human sera incubation
+- describe goat anti-human IgG secondary antibody incubation
+- describe assay washing and drying
+- describe multiplexed antibody-based cytokine microarray assay procedure
+- describe cytokine-specific capture antibody printing
+- describe cytokine or mixture of cytokines incubation
+- describe biotinylated polyclonal rabbit anti human VEGF incubation
+- describe IR800 conjugated streptavidin incubation
+- describe assay washing and drying
+- describe culture of SKOV-3 and OVCAR-3 cells
+- describe cell maintenance and supernatant sampling
+- describe fluorescence measurement and analysis
+- describe fluorescence lifetime measurement
+- describe xenograft models and animal handling
+- describe blood collection and serum preparation
+- describe tumor volume measurement
+- describe materials
+- describe conjugation of IR800 to goat anti-rabbit IgG and goat anti-human IgG
+- describe CEA sandwich assay procedure for all substrates
+- describe fluorescence measurement and analysis
+- describe fluorescence lifetime measurement
+- describe modification of gold solution phase films for near-infrared fluorescence enhancement
+- describe gold-on-gold films preparation
+- introduce Au/Au films
+- optimize gold seeding step
+- describe plasmonic resonances
+- enhance fluorescence of fluorophores
+- integrate fluorescence results
+- determine relative enhancement factors
+- describe microarray printing process
+- modify surface of gold film
+- covalently conjugate PEG-carboxylate
+- deposit monoclonal mouse anti-CEA
+- compare capture antibody concentrations
+- detect CEA-spiked into fetal bovine serum
+- demonstrate sensitivity over six orders of magnitude
+- compare μArray/Au assay with glass substrates
+- investigate variables in obtaining fluorescence enhancement
+- describe SEM imaging of Au/Au films
+- discuss importance of optimal nanoscopic gold island sizes
+- measure excited state lifetimes for fluorophores
+- probe excited state lifetime of Cy5 on Au/Au films
+- detect biomarkers in xenograft mouse serum
+- prepare mouse models bearing xenograft tumors
+- analyze serum CEA levels on μArray/Au
+- observe increase in CEA serum concentration
+- describe multiplexed μArray/Au assays for autoantibody detection
+- print autoantigens onto μArray/Au
+- incubate with human sera and probe with IR800-conjugated goat anti-human IgG
+- compare μArray/Au with nitrocellulose and glass substrates
+- describe chemical modification of plasmonic gold substrates
+- synthesize tortuous gold film
+- covalently conjugate PEG-amine polymer stars
+- immobilize capture antibodies specific for cytokines
+- perform cytokine measurement using 4-layer immunoassay approach
+- compare plasmonic gold substrate with nitrocellulose and glass slides
+- demonstrate single cytokine detection with femtomolar sensitivity
+- describe multiplexed cytokine detection on plasmonic Au substrates
+- incubate solutions containing a single cytokine
+- demonstrate specificity of the multiplexed cytokine array
+- show averaged fluorescence intensity over spots in each row
+- measure high positive to negative signal ratio
+- perform additional specificity test
+- incubate multiplexed microarrays on gold to a mixture of five cytokines
+- demonstrate capability of performing cytokine assays on plasmonic gold substrates
+- introduce multiplexed cytokine detection
+- demonstrate utility on cancer cell culture media
+- describe ovarian cancer OVCAR3 cell line experiment
+- describe ovarian cancer SKOV3 cell line experiment
+- compare microarrays on nitrocellulose slides and glass
+- motivate serum cytokine profiling for inflammatory disease patients
+- describe limitations of ELISA
+- introduce cytokine microarrays on plasmonic substrate
+- analyze 20 human serum samples from patients
+- detect six inflammatory disease related cytokines
+- analyze cytokine levels using calibration curves
+- compare results with healthy controls
+- profile patient samples with Luminex xMAP
+- validate measurements with ELISA
+- discuss applicability to autoimmunity
+- introduce detection of diagnostic biomarkers of type 1 diabetes
+- describe protein microarray printing onto gold plasmonic substrate
+- detect autoantibodies in patient samples
+- detect three diabetes autoantibodies
+- confirm results with RIA
+- prepare Au/Au films from solution phase for cell imaging
+- describe solution-phase Au/Au film synthesis
+- image Au/Au film via SEM
+- measure UV-Vis-NIR extinction curve
+- prepare water soluble SWNT-IR800-RGD bioconjugate
+- image SWNT-IR800-RGD bioconjugate via AFM
+- measure PLE spectra of SWNT-IR800-RGD conjugate
+- incubate and stain cells
+- image cells with NIR photoluminescence
+- analyze fluorescence intensity
+- discuss targeted cell imaging in NIR II window
+- discuss targeted cell imaging in NIR I window
+- map cells based on fluorescence intensity
+
+## CONCLUSION
+
+- define scope of invention
+

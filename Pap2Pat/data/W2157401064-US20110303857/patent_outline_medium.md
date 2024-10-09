@@ -1,0 +1,34 @@
+# DESCRIPTION
+
+- introduce beam scanning
+- motivate particle beams
+- describe scanning methods
+- summarize spot-scan method
+- summarize pixel-scan method
+- summarize grid scanning
+- summarize continuous scanning
+- summarize uniform scanning
+- describe beam position measurement
+- describe beam intensity measurement
+- motivate objective of invention
+- describe method of invention
+- describe advantages of invention
+- describe applications of invention
+- describe asynchronous measurement of beam position and intensity
+- motivate time control for applying specific dose
+- consider extraction profile of beam source
+- describe position measurement with detector types
+- describe width determination of beam
+- introduce irradiation device with measuring device and sequence control system
+- describe sequence control system functions
+- describe computer implementation of sequence control system
+- describe modules for each function
+- describe connection of equipments in series
+- introduce control system for controlling irradiation device
+- describe modification of position measuring device
+- describe irradiation device components
+- describe scanning method and beam control
+- describe sequence control system functions
+- describe measures for determining beam position or intensity
+- describe measures for possible changes of beam
+

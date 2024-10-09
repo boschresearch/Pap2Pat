@@ -1,0 +1,200 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce technical field of OGT and wound healing
+
+## BACKGROUND ART
+
+- describe chronic wounds and diabetes
+- explain O-glycosylation and OGT
+- discuss hyperglycemia and O-glycosylation
+- describe O-glycosylation in diabetic tissue
+- discuss O-glycosylation in wound healing
+
+## BRIEF SUMMARY
+
+- introduce compounds and methods for targeting OGT
+- describe isolated antisense OGT polynucleotide
+- specify length and sequence of antisense OGT polynucleotide
+- describe pharmaceutical composition with antisense OGT polynucleotide
+- specify pharmaceutically acceptable carrier
+- describe sequence of antisense OGT polynucleotide
+- specify hybridization conditions
+- describe second wound healing agent and/or second anti-OGT agent
+- specify sequence of antisense OGT polynucleotide
+- describe administration of isolated polynucleotide
+- specify subject with wound
+- describe wound characteristics
+- specify subject with diabetes
+- describe method of inhibiting OGT in a cell
+- specify anti-OGT agent
+- describe method of treating a subject with a wound
+- specify polynucleotide sequence
+- describe pharmaceutical composition
+- specify formulation for topical application
+- describe sustained release formulation
+- specify pharmaceutical composition form
+- describe administration of pharmaceutical composition
+
+## DETAILED DESCRIPTION OF EXEMPLARY EMBODIMENTS
+
+- introduce embodiments
+- modifications to embodiments
+- provide clearness of understanding
+- no unnecessary limitations
+- each example is provided by way of explanation
+- various modifications and variations
+- plural characteristic(s) or limitation(s)
+- all combinations of method or process steps
+- methods and compositions of the present disclosure
+- compounds, compositions, and methods
+- isolated antisense OGT polynucleotide
+- define "isolated"
+- terms "nucleotide", "polynucleotide", "nucleic acid" and "nucleic acid sequence"
+- synthesis of antisense polynucleotides
+- inhibit transcription and/or translation of an OGT
+- specific inhibitor of transcription and/or translation
+- bind to the OGT gene or mRNA
+- antisense polynucleotide is generally antisense to an OGT mRNA
+- hybridize to the OGT mRNA
+- inhibit the expression of OGT
+- duplex formation
+- define "complementary"
+- hybridize to all or part of the OGT mRNA
+- exact complement of all or a part of OGT mRNA
+- polynucleotide is typically a homologue
+- suitable polynucleotides are from about 6 to 40 nucleotides in length
+- polynucleotide can have a sequence set forth in SEQ ID NO: 3
+- pharmaceutical composition
+- anti-OGT agent and a pharmaceutically acceptable carrier
+- polynucleotide having a sequence of any one of SEQ ID NOs: 4-172
+- pharmaceutically acceptable carrier
+- composition is formulated for various desirable forms of administration
+- wound dressing
+- wound promoting matrix
+- define chronic wound
+- describe characteristics of chronic wound
+- classify chronic wounds
+- describe pressure ulcers
+- classify pressure ulcers
+- describe decubitus ulcers
+- describe arterial ulcers
+- describe venous ulcers
+- describe venous stasis ulcers
+- describe diabetic ulcers
+- describe traumatic ulcers
+- describe burn ulcers
+- describe vasculitic ulcers
+- describe pyoderma gangrenosum
+- describe infectious ulcers
+- define dehiscent wound
+- describe composition of wound healing agent
+- describe anti-connexin agents
+- describe anti-OGT agents
+- define subject
+- describe veterinary therapeutic uses
+- describe treatment of mammals
+- describe treatment of non-diabetic subjects
+- describe treatment of diabetic subjects
+- describe method of inhibiting OGT in a cell
+- describe method of treating a subject having a wound
+- describe administration of anti-OGT agent
+- describe administration of second wound healing agent
+- describe administration of second anti-OGT agent
+- describe composition for administration
+- describe publicly-available databases
+- define technical and scientific terms
+- describe methods, devices, and materials
+- describe use of "a", "an", and "the"
+- describe use of "about"
+- describe ranges
+- describe specific examples
+- describe prophetic examples
+- describe compilations of data
+- describe data gathered during development and experimentation
+
+### EXAMPLES
+
+- introduce diabetic skin ulcers
+- motivate O-GlcNAc modification
+- describe OGT and OGA enzymes
+- link O-GlcNAc modification to diabetes
+- introduce hyperglycemic conditions
+- describe cell culture media
+- introduce shRNA plasmids
+- describe lentiviral eGFP shRNA
+- introduce antibodies
+- describe cell culture and scratch wounding
+- introduce puromycin selection
+- describe statistical analyses
+- introduce stable transduction of keratinocytes
+- describe quantification of immunoblot signals
+- introduce siRNA transfection of keratinocytes
+- describe results of hyperglycemic conditions
+- show increased O-GlcNAc levels
+- describe delayed wound healing
+- introduce gene knockdown of OGT and OGA
+- describe RNA interference
+- analyze cell lysates by immunoblot
+- show impact of RNAi on O-GlcNAc levels
+- describe scratch-wounding of shRNA-transducted cells
+- show effect of OGT knockdown on wound closure
+- introduce siRNA knock-down of OGT
+- describe siRNA transfection
+- analyze cell lysates by immunoblot
+- show effect of siRNA on O-GlcNAc levels
+- describe scratch-wounding of siRNA-transfected cells
+- show effect of siRNA on wound closure
+- describe shRNA knockdown of OGT and OGA
+- analyze cell lysates by immunoblot
+- show effect of shRNA on O-GlcNAc levels
+- introduce OGT antisense oligodeoxynucleotides
+- describe topical application of OGT antisense ODNs
+- discuss potential therapeutic approach
+- introduce O-glycosylation
+- describe OGT and OGA enzymes
+- link O-glycosylation to diabetes and wound healing
+- describe OGT overexpression in keratinocytes
+- show delayed wound healing in OGT overexpressing keratinocytes
+- describe RNAi knockdown of OGT
+- show accelerated wound healing with OGT knockdown
+- propose OGT-targeted therapeutic intervention
+- describe hyperglycemia and O-glycosylation
+- link O-glycosylation to diabetes pathology
+- describe genetic association of diabetes and OGA mutations
+- summarize preliminary work on OGT and wound healing
+- describe effects of OGT on cell adhesion and wound healing
+- describe approach and methods
+- describe diabetic mouse models
+- describe wound-healing experiments in diabetic mouse models
+- describe optimizing in vivo dosing
+- describe assaying wound healing in vivo
+- describe further characterizing OGT mechanism
+- describe in vitro assays
+- describe manipulating OGT activity
+- describe assays for O-glycosylation
+- describe assays for cell proliferation
+- describe assays for cell-cell adhesion
+- describe assays for chemotaxis
+- describe in vivo assays
+- describe assaying keratinocyte proliferation in vivo
+- describe analyzing tissue samples for inflammatory infiltrate
+- describe quantifying neutrophil infiltration
+- describe quantifying macrophage infiltration
+- describe OGT knockdown in diabetic mouse models
+- describe effects of OGT knockdown on wound healing
+- describe effects of OGT knockdown on O-GlcNAc modification
+- describe effects of OGT knockdown on cell adhesion
+- describe effects of OGT knockdown on cell proliferation
+- describe effects of OGT knockdown on chemotaxis
+- describe effects of OGT knockdown on wound inflammation
+- describe topical delivery of OGT antisense ODNs
+- describe potential benefits of OGT antisense ODNs
+- describe potential applications of OGT antisense ODNs
+- describe potential impact of OGT antisense ODNs
+- describe potential risks and limitations
+- describe future directions
+- describe potential for translational clinical studies
+- conclude with potential of OGT antisense ODNs for wound healing
+

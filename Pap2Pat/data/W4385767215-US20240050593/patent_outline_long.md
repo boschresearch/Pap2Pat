@@ -1,0 +1,464 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce spinal cord injury
+- describe limitations of current treatments
+- discuss regeneration in non-mammalian vertebrates
+- highlight importance of axon regeneration
+- emphasize need for new treatments
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- disclose HB-EGF compositions
+- disclose isolated nucleic acid molecules
+- disclose plasmids
+- disclose transgene cassettes
+- disclose transgenic animals
+- disclose vectors
+- disclose AAV vectors
+- disclose vectors with promoters
+- disclose vectors with 3' UTR regions
+- disclose vectors with plasmids
+- disclose vectors with isolated nucleic acid molecules
+- disclose vectors with transgenes
+- disclose pharmaceutical formulations
+- disclose kits
+- disclose method of treating spinal cord injury
+- disclose method of stimulating regeneration
+- disclose method of promoting glial cell proliferation
+- disclose method of promoting axonal tract regeneration
+- disclose method of triggering neurite outgrowth
+- disclose method of triggering neuron formation
+- disclose method of improving spinal cord function
+- disclose method of generating non-viral vectors
+- disclose method of generating viral vectors
+- disclose method of generating AAV vectors
+- disclose method of generating hydrogels
+- disclose method of identifying putative TREEs
+- disclose method of identifying TREEs
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention scope
+- clarify references
+
+### A. Definitions
+
+- define scope of invention
+- clarify terminology
+- specify singular forms
+- define "consisting essentially of"
+- define "consisting of"
+- define "comprising"
+- explain "about" and ranges
+- provide examples of ranges
+- define "approximately" or "about"
+- explain "in vitro" and "in vivo"
+- define "biomarker"
+- explain types of biomarkers
+- define "parts by weight"
+- explain "optional" or "optionally"
+- define "subject"
+- specify types of subjects
+- define "effective amount"
+- explain "therapeutically effective amount"
+- provide examples of effective amounts
+- define "control"
+- explain types of controls
+- define "diagnosed"
+- explain "suspected of having"
+- define "treat" or "treating" or "treatment"
+- explain beneficial clinical results
+- define "patient"
+- explain types of patients
+- define "prevent" or "preventing" or "prevention"
+- explain prophylactic measures
+- define "administering" and "administration"
+- explain routes of administration
+- define "concurrently"
+- explain concurrent administration
+- define "contacting"
+- explain contacting target areas
+- define "determining"
+- explain determining disease presence and severity
+- provide examples of determining methods
+- define CRISPR
+- define CRISPRa
+- define CRISPRi
+- define dCas9
+- define PAM
+- define CRISPR-based endonucleases
+- describe CRISPR/Cas systems
+- list examples of CRISPR/Cas proteins
+- describe RNA recognition and/or RNA binding domains
+- describe modifications to CRISPR/Cas proteins
+- define promoter
+- describe tissue-specific promoters
+- describe neuron-specific promoters
+- define ubiquitous/constitutive promoter
+- list examples of ubiquitous/constitutive promoters
+- define inducible promoter
+- describe operably linked
+- define enhancer
+- describe expression cassette
+- define isolated biological component
+- describe sequence identity and sequence similarity
+- describe substantial sequence identity
+- describe variants
+- disclose components for preparing nucleic acids
+- disclose components for preparing vectors
+- disclose components for preparing compositions
+- disclose components for preparing pharmaceutical formulations
+- describe combinations of materials
+- describe subsets of materials
+- describe interactions of materials
+- describe groups of materials
+
+### B. Compositions
+
+- define HB-EGF compositions
+- describe recombinant HB-EGF
+- specify HB-EGFa and rHB-EGFa
+- specify HB-EGFb and rHB-EGFb
+- describe human HB-EGF
+- specify SEQ ID NO:35, SEQ ID NO:36, SEQ ID NO:37, or SEQ ID NO:55
+- describe sequence identity to SEQ ID NO:35, SEQ ID NO:36, SEQ ID NO:37, or SEQ ID NO:55
+- specify spinal cord injury treatment
+- specify regeneration of injured spinal cord tissue
+- specify glial cell proliferation
+- specify axonal tract regeneration
+- specify neurite outgrowth
+- specify neuron formation
+- specify improvement of spinal cord function
+- specify ASIA score improvement
+- define isolated nucleic acid molecules
+- specify TREE element
+- specify encoded polypeptide
+- specify promoter directing expression
+- specify 3' UTR noncoding region
+- specify polyadenylation sequence
+- specify structural element stabilizing RNA message
+- specify ITRs derived from AAV genome
+- specify damaged and/or injured spinal cord tissues
+- specify mammalian or non-mammalian spinal cord tissue
+- specify human spinal cord tissue
+- specify non-human spinal cord tissue
+- specify neurons, neuroglia, or combination
+- specify microglia and/or macroglia
+- specify minimal promoter
+- specify human minimal promoter or murine minimal promoter
+- specify Hsp70 promoter or fragment
+- specify Hsp68 promoter or fragment
+- specify cfos promoter or fragment
+- specify AAV e1B promoter or fragment
+- specify CMV promoter/enhancer or fragment
+- specify Thy1 promoter or fragment
+- specify GFAP promoter or fragment
+- specify FoxJ1 promoter or fragment
+- specify pro-regenerative activity
+- specify encoded polypeptide promoting glial cell proliferation
+- specify encoded polypeptide improving spinal cord function
+- define plasmids
+- describe transgene cassette
+- describe transgenic animals
+- describe cells
+- introduce vectors
+- describe vector components
+- describe viral vectors
+- describe non-viral vectors
+- describe AAV vectors
+- describe AAV vector components
+- describe gene or transgene cassette
+- describe vector comprising plasmid
+- describe vector comprising isolated nucleic acid molecule
+- describe vector comprising gene or transgene cassette
+- describe vector comprising CRISPR-based epigenome editing tools
+- describe vector comprising gRNAs
+- describe vector comprising promoter
+- describe AAV or rAAV vector
+- describe AAV or rAAV vector components
+- describe vector comprising nucleic acid sequence
+- describe vector comprising promoter
+- describe vector comprising 3' UTR noncoding region
+- describe pharmaceutical formulations
+- describe pharmaceutical formulation components
+- describe pharmaceutical formulation comprising isolated nucleic acid molecule
+- describe pharmaceutical formulation comprising vector
+- describe pharmaceutical formulation comprising HB-EGF
+- describe pharmaceutical formulation comprising recombinant HB-EGF
+- describe pharmaceutical formulation comprising epidermal growth factor
+- describe pharmaceutical formulation comprising heparin binding epidermal growth factor
+- describe pharmaceutical formulation comprising recombinant human HB-EGF
+- describe pharmaceutical carrier
+- describe solid carriers
+- describe liquid carriers
+- describe gaseous carriers
+- describe kit components
+- describe kit for treating spinal cord injury
+- describe kit for identifying putative TREEs
+
+### C. Methods
+
+- define method of treating spinal cord injury
+- administer isolated nucleic acid molecule
+- administer vector
+- administer pharmaceutical formulation
+- stimulate regeneration of spinal cord tissue
+- promote glial cell proliferation
+- promote axonal tract regeneration
+- trigger neurite outgrowth
+- trigger neuron formation
+- improve spinal cord function
+- administer HB-EGF
+- administer therapeutically effective amount of HB-EGF
+- define recombinant HB-EGF
+- define HB-EGFa
+- define rHB-EGFa
+- define HB-EGFb
+- define rHB-EGFb
+- define recombinant human HB-EGF
+- stimulate regeneration of spinal cord tissue
+- promote glial cell proliferation
+- promote axonal tract regeneration
+- trigger neurite outgrowth
+- trigger neuron formation
+- improve spinal cord function
+- reduce inflammation
+- reduce scar tissue
+- apply hydrogel
+- define therapeutic agents
+- define methylprednisolone
+- define corticosteroids
+- apply HB-EGF
+- administer isolated nucleic acid molecule systemically
+- administer vector systemically
+- administer pharmaceutical formulation systemically
+- administer HB-EGF systemically
+- administer therapeutically effective amount of HB-EGF systemically
+- direct expression of encoded polypeptide
+- define spinal cord tissue
+- repeat administering step
+- administer additional therapeutic agents
+- monitor subject for adverse effects
+- generate viral or non-viral vector
+- prepare hydrogel
+- define spinal cord tissue
+- specify neuroglia types
+- describe method of administering promoter
+- describe method of administering HB-EGF
+- describe method of administering therapeutic agents
+- describe monitoring for adverse effects
+- describe generating viral or non-viral vector
+- describe preparing hydrogel
+- describe method of stimulating regeneration
+- describe method of promoting glial cell proliferation
+- specify HB-EGF types
+- describe method of treating spinal cord injury
+- describe method of stimulating regeneration
+- describe method of promoting axonal tract regeneration
+- describe method of triggering neurite outgrowth
+- describe method of triggering neuron formation
+- describe method of improving spinal cord function
+- specify improvements in sensory function
+- specify improvements in motor function
+- describe method of reducing inflammation
+- describe method of reducing scar tissue
+- describe method of promoting glial cell proliferation
+- describe method of promoting axonal tract regeneration
+- describe method of stimulating regeneration
+- describe method of treating spinal cord injury
+- describe method of improving spinal cord function
+- describe method of reducing inflammation
+- describe method of reducing scar tissue
+- describe method of generating viral or non-viral vector
+- describe method of preparing hydrogel
+- define disclosed method
+- apply hydrogel to spinal cord tissue
+- include therapeutic agents in hydrogel
+- administer HB-EGF to spinal cord tissue
+- administer HB-EGF systemically or directly
+- direct expression of polypeptide in spinal cord tissue
+- repeat administering step
+- administer additional therapeutic agents
+- monitor for adverse effects
+- generate viral or non-viral vector
+- prepare hydrogel
+- trigger neurite outgrowth and/or neuron formation
+- treat spinal cord injury
+- stimulate regeneration of spinal cord tissue
+- promote glial cell proliferation
+- promote axonal tract regeneration
+- improve sensory function and/or motor function
+- reduce inflammation in spinal cord tissue
+- reduce scar tissue in spinal cord tissue
+- apply hydrogel to spinal cord tissue
+- apply HB-EGF to spinal cord tissue
+- administer HB-EGF systemically or directly
+- direct expression of polypeptide in spinal cord tissue
+- repeat administering step
+- administer additional therapeutic agents
+- monitor for adverse effects
+- generate viral or non-viral vector
+- prepare hydrogel
+- trigger neurite outgrowth and/or neuron formation
+- treat spinal cord injury
+- stimulate regeneration of spinal cord tissue
+- promote glial cell proliferation
+- improve spinal cord function
+- define method of improving spinal cord function
+- administer HB-EGF to subject
+- specify HB-EGF composition
+- describe method of improving spinal cord function
+- specify improvements in sensory and/or motor function
+- describe sustained improvements
+- reduce inflammation and scar tissue
+- apply hydrogel to injured tissue
+- specify hydrogel composition
+- administer additional therapeutic agents
+- monitor for adverse effects
+- modify treatment based on adverse effects
+- generate viral or non-viral vector
+- prepare hydrogel
+- use method in platform for spatiotemporally targeted tissue regeneration
+- generate non-viral vector
+- generate viral vector
+- generate AAV vector
+- generate hydrogel
+- identify putative TREEs
+- isolate nuclei from spinal cord cells
+- analyze chromatin structure and function
+- compare chromatin profiles
+- validate putative TREE
+- generate transgenic zebrafish
+- assess ability of putative TREE to drive expression
+- incorporate putative TREE into vector or isolated nucleic acid molecule
+- use method in platform for spatiotemporally targeted tissue regeneration
+- specify first population of spinal cord cells
+- specify second population of spinal cord cells
+- obtain chromatin profile for first population
+- obtain chromatin profile for second population
+- compare chromatin profiles
+- identify putative TREEs
+- validate putative TREE
+
+## EXAMPLES
+
+- introduce zebrafish spinal cord regeneration
+- describe hb-egf role in regeneration
+
+### A. Materials and Methods
+
+- introduce zebrafish
+- describe generation of transgenic and mutant lines
+- generate GFAP:H2B-mCherry zebrafish
+- generate hb-egfa:EGFP zebrafish
+- generate hb-egfb:EGFP zebrafish
+- generate hb-egfaKO and hb-egfbKO zebrafish
+- generate hsp70:shb-egfa-P2A-TBFP zebrafish
+- generate hb-egfaEN-cfos:EGFP and cfos:EGFP zebrafish
+- describe spinal cord injuries in zebrafish
+- perform larval spinal cord transection
+- perform adult spinal cord injuries
+- describe RNA- and ATAC-sequencing
+- prepare tissue samples for RNA- and ATAC-sequencing
+- perform ATAC-seq library preparation
+- perform RNA-seq library preparation
+- align ATAC-seq reads to zebrafish genome
+- align RNA-seq reads to zebrafish genome
+- call differential accessible sites
+- perform differential expression analysis
+- pair ATAC-seq peaks to RNA-seq differential expression data
+- perform conservation test
+- analyze TF binding sites in promoter region of hb-egfa
+- describe RNA isolation and qRT-PCR
+- perform Western blotting
+- describe Edu, biocytin, and HR-HB-EGF treatment
+- perform Edu incorporation
+- perform biocytin treatment
+- generate synthetic biomaterials for local HR-HB-EGF delivery
+- describe synthesis of UPy-bearing linker
+- describe synthesis of HA-UPy
+- describe synthesis of FITC conjugated HA-Upy (HA-Upy-FITC)
+- describe oxidation of HA-UPy
+- quantify aldehyde content in HA-UPy-DA
+- describe hydrogelation and growth factor loading
+- describe histological analysis in zebrafish
+- describe swim capacity assays
+- describe handling of mice
+- describe spinal cord injuries in mice
+- describe histological analyses in mice
+- describe virus production and titers
+- describe data analyses and statistics
+- detail synthesis of HA-UPy
+- detail synthesis of FITC-HMD
+- detail conjugation of FITC-HMD to HA-UPy
+- detail oxidation of HA-UPy or HA-UPy-FITC
+- detail quantification of aldehyde content
+- detail hydrogelation and growth factor loading
+- detail histological analysis in zebrafish
+- detail swim capacity assays
+- detail handling of mice
+- detail spinal cord injuries in mice
+- detail histological analyses in mice
+- detail virus production
+- detail virus purification
+- detail virus titration
+- detail data analyses
+- detail statistical tests
+- describe figure legends
+
+### B. Specific Examples
+
+- introduce HB-EGF paralogues in zebrafish spinal cord regeneration
+- describe expression profiling experiment for genes induced during regeneration
+- report HB-EGF stimulation of mammalian neurogenesis and neurite outgrowth
+- describe in situ hybridization (ISH) of hb-egfa and hb-egfb transcripts
+- report expression of Erb-B2 Receptor Tyrosine Kinase 4 (ERBB4) and epidermal growth factor receptor (EG
+- describe CRISPR/Cas9 methods for generating hb-egfa and hb-egfb mutants
+- analyze effects of hb-egf mutations on spinal cord regeneration
+- perform EdU incorporation assays to measure cell proliferation
+- measure tissue bridging using GFAP and acetylated α-tubulin staining
+- quantify axon regeneration using biocytin-soaked gelfoam sponge
+- assess swim capacity after spinal cord injury
+- generate reporter lines for hb-egfa and hb-egfb
+- analyze expression patterns of hb-egfa and hb-egfb
+- describe fluorescence co-localization with Sox2 and GFAP
+- report hb-egfa-directed fluorescence in bridging glia
+- analyze effects of hb-egfa and hb-egfb single mutants on regeneration
+- report swim performance after spinal cord injury in mutants
+- describe polarized distribution of hb-egfa mRNA or hb-egfa:EGFP expression
+- quantify EGFP signal in caudal and rostral ends
+- generate transgenic fish expressing soluble form of hb-egfa
+- disrupt polarized expression of hb-egfa using heat-inducible promoter
+- analyze effects of whole-animal overexpression on regeneration
+- test effects of targeted Hb-egf augmentation using biomaterial depots
+- analyze dynamics of compound release from hydrogels
+- report effects of HR-HB-EGF administration on axon regeneration
+- describe enhancer near HB-EGFA sufficient for polarized gene expression
+- perform Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq)
+- integrate ATAC-seq and RNA-seq datasets
+- identify candidate TREEs using bioinformatic analysis
+- describe hb-egfa-linked enhancer (hb-egfaEN) region
+- test hb-egfaEN using EGFP reporter gene
+- analyze spatiotemporal dynamics of hb-egfaEN-cfos:EGFP expression
+- report polarized localization of hb-egfaEN-cfos:EGFP
+- implicate transcription factors regulating hb-egfa expression
+- test if hb-egfa is a direct or indirect target of Sox2
+- describe Example 5: Zebrafish HB-EGFEN regulatory sequences direct injury-responsive gene expression in neonatal mouse spinal cord
+- test functional conservation of hb-egfaEN in mammals
+- generate adeno-associated viral vector (AAV) containing hb-egfaEN
+- assess EGFP expression in adult and neonatal mice
+- report hb-egfEN-directed HB-EGF expression improves axon regeneration in neonatal mouse spinal cord injuries
+- describe strategy harnessing hb-egfaEN to augment HB-EGF in lesion sites of neonatal mice
+
+## SUMMARY OF EXPERIMENTAL RESULTS
+
+- identify Hb-egfa as instructive factor
+- describe patterning challenge in spinal cord injury
+- motivate bias of Hb-egfa expression
+- discuss localization of stimuli in regeneration models
+- introduce TREEs in regeneration programs
+- explore hb-egfaEN TREE recognition
+- discuss potential applications of TREE-based delivery systems
+

@@ -1,0 +1,144 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to controlling friction characteristics
+
+## BACKGROUND
+
+- introduce friction
+- motivate friction control
+- describe molecular scale friction
+- describe continuum scale friction
+- introduce bio-inspired structures
+- describe fibrillar array structure
+- describe internal channels structure
+- describe film-terminated fibrillar structure
+- motivate limitations of prior art
+- describe need for improved friction control
+- summarize prior art limitations
+
+## SUMMARY
+
+- introduce near-surface architectures
+- describe film-terminated fibrillar structure
+- describe effect of sharp film/fibril juncture
+- describe film-terminated ridge-valley structure
+- describe anisotropic frictional properties
+- describe effect of varying material/geometry parameters
+- describe crack-trapping mechanism
+- describe repeated folding mechanism
+- summarize invention advantages
+
+## DETAILED DESCRIPTION
+
+- introduce resilient members with near-surface architectures
+- describe film-terminated array of discrete fibrils
+- detail backing layer and fibrillar array formation
+- describe contact film layer formation
+- introduce sharp film/fibril juncture
+- contrast with conventional resilient members
+- describe fabrication process
+- introduce alternative fabrication methods
+- describe controlling friction characteristics
+- detail varying dimensions and geometry of micrometer-scale structures
+- describe effect of interfibrillar spacing on friction force
+- introduce crack-trapping mechanism
+- describe effect of interfibrillar spacing on sliding friction force
+- introduce repeated folding of contact film layer
+- describe internal energy storage and release
+- show deformation patterns in optical micrographs
+- describe friction test without shear load
+- describe friction test with shear load
+- show graph of friction force vs. displacement
+- describe effect of fibril spacing on friction force
+- describe effect of fibril spacing on static friction force
+- describe effect of fibril spacing on sliding friction force
+- introduce control structure without near-surface architecture
+- describe varying fibril height and spacing
+- describe effect of fibril spacing on friction force curves
+- describe static friction force and sliding friction force
+- introduce rough indenter
+- describe differences in static friction forces
+- show data for film-terminated fibrillar resilient members
+- describe effect of interfibrillar spacing on static friction force
+- describe effect of interfibrillar spacing on sliding friction force
+- show optical micrographs of contact region
+- describe actual area of contact
+- show data for film-terminated fibrillar resilient members with rough indenter
+- describe effect of interfibrillar spacing on friction forces
+- show folds in contact film layer and/or fibrillar members
+- describe similar patterns of results with different rough indenters
+- show similar folds in contact film layer and/or fibrillar members
+- describe adhesion characteristics
+- introduce relationship for work of adhesion
+- describe limitations to unlimited scaling of properties
+- introduce cavitation relationship
+- describe fibril breakage and film collapse limitations
+- introduce film collapse relationship
+- describe selecting parameters to maintain relationships
+- summarize enhanced static friction and sliding friction forces
+- describe resilient members with near-surface architectures
+- introduce film-terminated fibrillar array
+- describe isotropic frictional characteristics
+- introduce anisotropic structure providing anisotropic frictional characteristics
+- describe film-terminated ridge structure
+- detail ridge array formation process
+- describe contact film layer formation
+- describe resilient member fabrication
+- discuss friction increase with increased spacing
+- explain fold-based mode of deformation
+- describe anisotropic frictional characteristics
+- show deformation of prior art resilient member
+- describe data for film-terminated ridge array resilient members
+- show data for increased load
+- show data for different ridge height
+- describe cooperation of ridge height and spacing
+- show data for increased load and different ridge height
+- describe anisotropic nature of film-terminated ridge array resilient members
+- show data for movement in direction of elongation of ridges
+- show data for increased load and movement in direction of elongation of ridges
+- show data for lesser ridge height and movement in direction of elongation of ridges
+- describe optical micrographs of deformation
+- describe buckling and folding of ridge/film structure
+- explain energy loss and friction enhancement
+- describe critical event of buckling and folding
+- describe friction measurements for sliding along ridges
+- show optical micrographs of folded terminal film
+- describe adhesion test
+- show force-displacement traces for different samples
+- describe control sample
+- describe film-terminated fibrillar structure
+- describe film-terminated ridge/channel specimen
+- discuss adhesion force
+- describe advantages of strong adhesion force
+- discuss applications of strong adhesion force
+- describe alternative processes for fabricating resilient members
+- describe unitary structure manufacturing
+- describe bonding of manufactured contact film layer
+- describe ultrasonic welding/heating
+- discuss manufacturing techniques
+- describe PDMS material properties
+- describe backing layer and contact film layer thickness
+- describe ridge height and spacing
+- describe load and movement rates
+- describe data analysis
+- discuss results and implications
+- describe advantages of invention
+- discuss potential applications
+- summarize invention
+- describe film terminated ridge/valley structures
+- present test results of adhesion force profiles
+- discuss advantages of low adhesion and high sliding friction
+- show chart of normalized adhesive force vs ridge spacing
+- explain effect of ridge height and spacing on folding mode
+- discuss control of near-surface architectures
+- describe condition for enhanced sliding friction
+- provide equation for avoiding film collapse
+- explain condition for internal folding and high sliding friction
+- provide equation for achieving enhanced sliding friction
+- give examples of parameter values for achieving enhanced sliding friction
+- discuss application to motor vehicles
+- provide typical ranges of parameters for commercial applications
+- discuss scope of invention and possible variations
+

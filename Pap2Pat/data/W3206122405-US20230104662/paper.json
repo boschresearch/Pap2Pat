@@ -1,0 +1,177 @@
+{
+    "id": "https://semopenalex.org/work/W3206122405",
+    "authors": [
+        "Xing Chen",
+        "Wenhao Liu",
+        "Caiming Xiong",
+        "Zahra Fatemi"
+    ],
+    "title": "Improving Gender Fairness of Pre-Trained Language Models without  Catastrophic Forgetting",
+    "date": "2021-10-11",
+    "abstract": "Existing studies addressing gender bias of pre-trained language models, usually build a small gender-neutral data set and conduct a second phase pre-training on the model with such data. However, given the limited size and concentrated focus of the gender-neutral data, catastrophic forgetting would occur during second-phase pre-training. Forgetting information in the original training data may damage the model's downstream performance by a large margin. In this work, we empirically show that catastrophic forgetting occurs in such methods by evaluating them with general NLP tasks in GLUE. Then, we propose a new method, GEnder Equality Prompt (GEEP), to improve gender fairness of pre-trained models with less forgetting. GEEP freezes the pre-trained model and learns gender-related prompts with gender-neutral data. Empirical results show that GEEP not only achieves SOTA performances on gender fairness tasks, but also forgets less and performs better on GLUE by a large margin.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Pre-trained language models, e.g., BERT (Devlin et al., 2019) and RoBERTa (Liu et al., 2019), have shown competitive performance in a wide variety of NLP downstream applications. However, such models are often prone to exhibit gender bias (de Vassimon Manela et al., 2021;Zhao et al., 2019;Webster et al., 2020), due to their large scale unsupervised training data from the web (Liu et al., 2019;Brown et al., 2020). Gender bias refers to unbalanced model behaviors with respect to a specific gender (Cheng et al., 2020). Among various gender-biased behaviours of pre-trained models, bias on professions is the most prominent and wellstudied (de Vassimon Manela et al., 2021;Vig et al., 2020;Qian et al., 2019;Zhao et al., 2019). For example, in coreference resolution tasks, a pre-trained model would predict female pronoun and names * Work done during internship with Salesforce Research for professions like \"nurse\" and \"housekeeper\", while predict male pronouns for \"computer programmer\" or \"doctor\" (Kurita et al., 2019). The pre-trained models also wouldn't prefer genderneutral pronouns actively, which is unfair to other gender identities beyond males/females (Deutsch and Buchholz, 2015).",
+                "Given the large model size and tremendous time complexity for language model pre-training, training a gender-neutral model from scratch with manually filtered data seems impossible for most organizations. Due to this limitation, existing studies usually build a relatively small gender-neutral data set (for example building a data set that have more balanced gender pronouns for profession names), and conduct second phase pre-training on the pretrained model with such data (Webster et al., 2020;de Vassimon Manela et al., 2021). However, given the limited size of the gender-neutral data and its potential distributional mismatch with the original pre-training data, catastrophic forgetting can occur during second-phase pre-training of such methods. Catastrophic forgetting (Kirkpatrick et al., 2017) is a long-standing problem which illustrates the tendency of a neural network to forget previously learned information upon learning new information. When it comes to further training a pretrained model, using the small gender-neutral data to update the entire massive model could make the model forget the diverse information from the original pre-training data, which damages the model's downstream performance by a large margin.",
+                "In this paper, we first empirically verify that further updating a pre-trained model (such as RoBERTa (Liu et al., 2019)) with manually-built gender-neutral data can cause catastrophic forgetting. We follow existing work and build our profession-related gender-neutral data set by filtering out Wikipedia sentences mentioning professions and swapping their gender related pronouns. We find that although our gender-neutral data is from Wikipedia which is part of RoBERTa's pretraining data, the model's performance on downstream tasks in GLUE (Wang et al., 2018) still drops with a considerable margin after secondphase pre-training, due to the smaller size and more concentrated focus of the gender-neutral data.",
+                "Therefore, we propose a new method, GEnder Equality Prompt (GEEP), to alleviate gender bias of pre-trained models without catastrophic forgetting. Specifically, inspired by recent prompt-tuning methods (Lester et al., 2021) for fine-tuning large pre-trained models, GEEP freezes the entire model, adds and updates new word embeddings of professions as gender equality prompts, instead of updating all model parameters at second-phase pretraining as previous methods. Since all the pretrained parameters are frozen during further training, diverse information from the original training data preserved in the pre-trained parameters is not erased. Therefore forgetting can be alleviated to large extent. Moreover, since the embeddings of professions are re-initialized when debiasing training starts, gender bias from previous data that is embedded in such representations is already removed before second-phase pre-training. Therefore, GEEP also improves gender fairness of the model more effectively with much fewer iterations. Empirical results show that GEEP not only achieves state-of-the-art performances with fewer iterations on various gender fairness tasks such as pronoun coreference resolution, but also forgets less and achieves better results on GLUE tasks."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Related Work",
+            "paragraphs": [
+                "Compared with the existing work focusing on quantifying and alleviating gender bias (Bolukbasi et al., 2016;Caliskan et al., 2017;Zhao et al., 2018b;Gonen and Goldberg, 2019;Sun et al., 2019;Garg et al., 2018;Zhao et al., 2018a;Bolukbasi et al., 2016;Zhao et al., 2018b) in standard word embedding models, such as word2vec (Mikolov et al., 2013) and GloVe (Pennington et al., 2014), gender bias in large pre-trained language models seems less studied. Recent work on gender fairness of pre-trained language models, such as ELMo (Peters et al., 2018) and BERT (Devlin et al., 2019), mostly focus on showing and measuring the gender bias embedded in such models (Zhao et al., 2019;Tan and Celis, 2019). These studies propose metrics to quantify gender bias in pre-trained language models (de Vassimon Manela et al., 2021;Tan and Celis, 2019;Webster et al., 2018;Kurita et al., 2019). In our work, we employ such methods to evaluate GEEP and baseline methods on improving gender fairness. Existing works focusing on mitigating gender bias of pre-trained models usually collect and build gender-neutral data on their own and conduct a second phase pre-training on the released pre-trained model (Webster et al., 2020;de Vassimon Manela et al., 2021;Cheng et al., 2020). In this work, we demonstrate empirically that the performance of the debiased model on general downstream tasks such as GLUE, still drops by a considerable margin after such second-phase pre-training. Then, given this phenomenon, we propose GEEP to alleviate gender bias in pre-trained models without forgetting."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Improving Gender Fairness without Forgetting",
+            "paragraphs": [
+                "In this section, we first describe the gender-neutral collection method we adopt from existing methods and the forgetting issue in such methods. Then we describe the proposed method GEnder Equality Prompt (GEEP)."
+            ],
+            "subsections": [
+                {
+                    "title": "Profession-Related Gender-Neutral Data Collection",
+                    "paragraphs": [
+                        "We follow existing work to build a professionrelated gender neutral data set since professionrelated gender bias is a relatively well-studied aspect of gender bias. To construct profession-related data with equal numbers of references to male and female genders, we adopt the data filtering method by (Zhao et al., 2018a) on the English Wikipedia corpus. Specifically, we filter Wikipedia for sentences containing at least one profession that is supposed to be gender-neutral but generally viewed with gender bias, e.g., nurse, defined by (Bolukbasi et al., 2016). For each of these sentences, we swap the gendered terms with their opposite genders (such as \"Man\" \u2192\"Woman\", \"he\"\u2192\"she\", and vice-versa). We also provide an analysis of the processed data in Appendix B.8. Our dataset includes both the original profession-related sentences and their gender-swapped counterparts. We get 6. "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Gender Equality Prompt Approach",
+                    "paragraphs": [
+                        "To alleviate forgetting while mitigating gender bias in pre-trained language models, we propose GEnder Equality Prompt (GEEP). In GEEP, instead of updating all model parameters during secondphase pre-training, we freeze all of the pre-trained model parameters and add new trainable embeddings for profession names as gender equality prompts. Since all previous pre-trained parameters are frozen, diverse information from original massive pre-training data that are memorized by the pre-trained parameters wouldn't be erased. Therefore, the forgetting of information from the original training data can be alleviated to the fullest extent. Let X = {x 1 , x 2 , ..., x n } denote the original vocabulary of the pre-trained model and W x \u2208 R n\u00d7d be the original pre-trained token embedding matrix of the model with dimension of d. Given a set of m profession names, {p 1 , p 2 , ..., p m }, we build an embedding matrix W p \u2208 R m\u00d7d where the embedding of each token is initialized randomly. To obtain an integrated word embedding matrix, we concatenate W x and W p as W emb = Concat(W x , W p ). We note that we concatenate them along the dimension of words/tokens instead of in the embedding space. After concatenation, the model's representation size (hidden) remain unchanged. During both second-phase pre-training and the training/inference after that, once a profession occurs, we only update/use its new embedding in W p . We show the comparison between GEEP and other second-phase pre-training methods in Figure 1. Given all the pre-trained model's frozen parameters W whole that contains W x , the objective function of second-phase pre-training of GEEP is,",
+                        "(",
+                        "N mask is the number of masked positions in the input sequence x. With such an objective, W p is updated with gender-neutral data. Moreover, since the embeddings of professions are re-initialized when debiasing training starts in GEEP, gender bias from previous data that is embedded in such representations is already erased before second-phase pre-training. Therefore, it is also easier for GEEP to debias the model during further pre-training. We note that GEEP can lead to a slight increase of the original model's parameter size. We report the scale of the increase and its effect in Appendix B.7."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experiments",
+            "paragraphs": [
+                "In this section, we present the results of GEEP and its baselines to show that GEEP achieves state-ofthe-art performances on gender fairness tasks while alleviating the forgetting issue of the baselines."
+            ],
+            "subsections": [
+                {
+                    "title": "Experimental Setup",
+                    "paragraphs": [
+                        "In our experiments, we mainly use the publicly released RoBERTa-base model as the pre-trained model. We have also conducted experiments on publicly released BERT during preliminary explorations. Details on BERT experiments are in Appendix B.9. Given a pre-trained RoBERTa-base model, we compare GEEP with two main baselines. "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Evaluation Tasks",
+                    "paragraphs": [
+                        "To assess gender fairness, we conduct pronoun coreference resolution experiments on different data sets, Winogender (Rudinger et al., 2018), Winograd Schema Challenge (WSC) (Levesque et al., 2012), and Definite Pronoun Resolution (DPR) (Rahman and Ng, 2012). Pronoun coreference resolution is the task of linking the pronouns with their references in a text. In order to resolve a pronoun accurately, a model needs to overcome the biased link between gender and profession (e.g. the assumption that nurses are female) and instead make the decision based on available linguistic cues. Therefore, better performances on pronoun coreference resolution usually indicates less gender bias preserved in the model (Kurita et al., 2019). Detailed setups of this experiment can be found in Appendix B.2. Additionally, we also qualitatively and quantitatively evaluate our method on direct pronoun prediction. Details of this experiment are in Appendix B.4. We note that given all existing tasks are designed for binary gender pronouns, we are unable to include all existing gender identities in our main experiments. We present an analysis on more gender identities in Appendix B.6.",
+                        "To evaluate how much each debiased model for-gets after second-phase pre-training, we report the performances of the debiased models on GLUE benchmark (Wang et al., 2018). Detailed setups of this experiment can be found in Appendix B.3."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Results",
+                    "paragraphs": [
+                        "We first show the pronoun coreference resolution results of different models on three datasets in Table 1. Results show that GEEP model obtains the best accuracy compared to other models, especially on the Wingender dataset where the candidate nouns are professions. We also conduct an ablation study to show the effect of total training iterations on the performances of both methods. We find that GEEP can improve the model's performance with significantly fewer number of training iterations. Details are in Appendix B.1.",
+                        "Then we show in Table 5 the performance of different models on 8 GLUE tasks, to see how severe the forgetting issue is after the second-phase training of SPPA and GEEP. Compared with RoBERTa, SPPA suffers from forgetting issue in 7 out of 8 tasks except QNLI. For tasks like CoLA and RTE, the model's performance drops significantly (more than 10 points) after SPPA. For tasks with larger data set for fine-tuning, such as MNLI, QQP and SST-2, they are less vulnerable to the quality of pre-training (Wu et al., 2020;Joshi et al., 2020). Therefore, SPPA's performance drop on such data sets is less significant. GEEP mitigates the forgetting issue of SPPA in all sub-tasks. Since GEEP ditches the original pre-trained profession embeddings and uses a smaller data set to update new profession embeddings, the forgetting problem cannot be fully avoided. While GEEP still achieves an average GLUE score of 83.3, significantly outperforming SPPA. We have also included an empirical analysis regarding to the reasons behind SPPA's GLUE performance drop in Appendix B.5."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Closing Remarks",
+            "paragraphs": [
+                "In this paper, we proposed GEEP to improve gender fairness of pre-trained language models with less catastrophic forgetting. For a fair comparison to existing work under the current gender fairness literature, we mainly conduct experiments with profession-related gender neutral data because profession-related gender bias is relatively more well studied so far. The good empirical results indicates it is worth to try applying GEEP to other more challenging and under-explored aspects of gender fairness, which would be our future work."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Limitations",
+            "paragraphs": [
+                "In this paper, we only focus on investigating and improving gender fairness of pre-trained language models and didn't touch other fairness issues given the length of the paper. However, we would like to note that with the investigation of other fairness issues in human language more deeply conducted, if the biased words regarding other fairness issues can be more specifically concluded, GEEP can be directly applied to address other fairness problems in pre-trained large language models."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B Appendix B.1 Hyper-parameters for SPPA and GEEP",
+            "paragraphs": [
+                "For the main results presented in the paper of second-phase pre-training in GEEP and SPPA, we further train RoBERTa-base for 100, 000 steps with our gender-neutral data. We use an AdamW optimizer with a learning rate of 1e -5, max_seq_length of 128 and batch size 256. In GEEP method, we initialize the embedding of every profession prompt with a normal distribution and standard deviations of 0.2.",
+                "Alongside the final results, we also evaluate SPPA and GEEP during the second-phase pretraining. In Table 3 we show SPPA and GEEP's performance on pronoun coreference resolution at the 20k iteration and 50k iteration. From Table 3 we can see that GEEP improves the pre-trained model's gender fairness with much less number of iterations. At 20k iteration, GEEP's performance is already better than SPPA's final performance on all 3 tasks. At 50k iteration, GEEP's performance has almost converged to its final scores on all 3 tasks. While SPPA's performance is still far behind its final performances on Winogender and WSC."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.2 Pronoun Coreference Resolution Experiment Setup",
+            "paragraphs": [
+                "Pronoun Coreference Resolution is the task of linking the pronouns with their references in a text. Studies show that BERT performance decreases in a text where the gender pronoun is female and the topic is biased towards the male gender (Kurita et al., 2019). To assess the performance of different models in pronoun coreference, we fine-tune our models with GAP data set (Webster et al., 2018). We fine-tune each model for one epoch with a train batch size of 64 and a learning rate of 5.0e -6.",
+                "After fine-tuning, we evaluate the performance of different models on three data sets:",
+                "\u2022 Winogender: This dataset includes 1, 584 sentences with three mentions: a profession, a participant, and a pronoun (where the pronoun is referred to either profession or pronoun) (Rudinger et al., 2018).",
+                "\u2022 WSC: The Winograd Schema Challenge (WSC) incorporates 273 sentences used for commonsense reasoning for resolution (Levesque et al., 2012).",
+                "\u2022 DPR: The Definite Pronoun Resolution (DPR) corpus with 131 test sentences contains exam-ples with two noun phrases and a pronoun or possessive adjective referring to one of the noun phrases (Rahman and Ng, 2012)."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.3 GLUE Experiment Setup",
+            "paragraphs": [
+                "To evaluate how much each debiased model forgets after second-phase pre-training, we fine-tune the pre-trained models on GLUE (General Language Understanding Evaluation) to evaluate the performance of the pre-trained models. We follow previous work to use eight tasks in GLUE, including CoLA, RTE, MRPC, STS, SST, QNLI, QQP, and MNLI. For evaluation metrics, we report Matthews correlation for CoLA, Pearson correlation for STS-B, and accuracy for other tasks. We use the same optimizer (Adam) with the same hyper-parameters as in pre-training. Following previous work, we search the learning rates during the fine-tuning for each downstream task. For a fair comparison, we do not apply any published tricks for fine-tuning. Each configuration is run five times with different random seeds, and the average of these five results on the validation set is calculated as the final performance of one configuration. We report the best number over all configurations for each task."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.4 Pronoun Prediction Experiment Setup and Results",
+            "paragraphs": [
+                "Different approaches have been proposed to quantify and analyze the gender bias in contextual language models (de Vassimon Manela et al., 2021;Webster et al., 2020;Kurita et al., 2019). For BERT, we choose one approach that can be directly applied to a model pre-trained with Masked Language Modeling (MLM) loss without further fine-tuning. In this approach, we first define a template containing a pronoun and a profession. The profession is supposed to be gender-neutral however it is currently viewed with gender bias to a large extent. By masking the pronoun, the model is queried to predict the pronouns at the masked position given the context, including the profession. Here is an example, \"[MASK]\" is a registered nurse. The difference between the probabilities of filling the masked position in each sentence with \"he\" and \"she\", is used to show gender bias in the model, Pronoun Bias Score = (3) Prob(\"he\") -Prob(\"she\"). ( 4)",
+                "To assess fairness in BERT model, we consider 303 of professions used by (Bolukbasi et al., 2016). In To find the reference of each pronoun in the template sentences, we follow (Kocijan et al., 2019) approach. Specifically, during the evaluation for every data set, in each sentence there are two candidate nouns (such as \"nurse\" or \"surgeon\") and a pronoun. The pronoun is replaced with a [MASK] token, and the model makes a prediction at the masked pronoun position from the two candidate nouns. In order to resolve a pronoun accurately, a model needs to overcome the biased link between gender and profession (e.g. a normative assumption that nurses are female) and instead make the decision based on the available linguistic cues. We report the prediction accuracy of all 3 methods on the aforementioned three data sets.",
+                "Figure 3 displays the pronoun prediction bias score (defined in Equation 5) of all methods for 60 biased professions defined in (Bolukbasi et al., 2016). Specifically, in both sub-figures, blue dots show the pronoun prediction bias score from BERTbase model for each profession. In Figure 3 (a), the pink dots are the bias scores from BERT-SPPA model. We can see from this sub-figure that compared with BERT-base, the bias scores from BERT-SPPA model are indeed closer to 0, indicating that BERT-SPPA can mitigate gender bias of such professions to some extent. In Figure 3 (b), the blue dots are the bias scores from GEEP model. Compared with both BERT-SPPA and BERT-base, GEEP's bias scores are significantly closer to 0, indicating that GEEP is more effective at removing gender bias from such biased professions compared with BERT-SPPA. Moreover, we also calculate the average absolute pronoun prediction bias score for all 303 gender-neutral profession words in (Bolukbasi et al., 2016). We obtain 0.44 for BERT-base, 0.16 for BERT-SPPA and 0.13 for GEEP. GEEP model gets the lowest average bias with 70% reduction compared to the BERT-base model."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.5 Analysis regarding SPPA's performance drop on GLUR",
+            "paragraphs": [
+                "We conduct experiments to analyze reasons behind the GLUE performance drop of SPPA demonstrated in Table 2 in our original submission. The performance drop of SPPA compared to RoBERTa can be of two reasons: 1) the model is further trained with a subset of Wikipedia significantly smaller than the RoBERTa pre-train data, which could enforce the model to forget about the information embedded in the large RoBERTa pre-train data; 2) we processed the subset of Wikipedia to make them gender-neutral, which could potentially introduce noise and distribution mismatch with the downstream data. To provide a more detailed analysis, we conduct experiments as follows.",
+                "First, starting from a pre-trained RoBERTa, we further train the model with SPPA on the same subset of Wikipedia that we used in main experiments without making the data subset gender-neutral. We name this model SPPA-without-GN (Gender Neutralization). We also run GEEP-without-GN to see whether GEEP can still alleviate forgetting when the data is just small but not debiased. For GEEPwithout-GN, we further train a RoBERTa with the same Wiki subset without gender neutralization. During this further training of GEEP-without-GN, we follow GEEP to add and update new profession embeddings while freezing the rest entire model. GLUE results of SPPA-without-GN and GEEPwithout-GN are in Table 4 in this pdf.",
+                "By comparing SPPA, SPPA-without-GN and the original RoBERTa, we can find SPPA-without-GN performs better than SPPA while worse than RoBERTa. It suggests that both data subset selection and gender neutralization contribute to the performance drop of SPPA compared to RoBERTa. Figure 3: Difference between the probabilities of filling a masked pronoun with \"he\" and \"she\" tokens in the template sentences containing 60 most biased professions. GEEP method outperforms the two other methods. For example, the bias score for \"nurse\" token decreases from -0.7 in BERT-base to -0.5 in BERT-SPPA and 0.1 in GEEP model.",
+                "We would also like to note that GEEP-without-GN outperforms SPPA-without-GN as well and achieve similar GLUE score as RoBERTa. This indicates that GEEP can also alleviate forgetting introduced by data subset selection effectively when there is not gender-neutralizing procedure is taken."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.6 Discussions on non-binary gender identities",
+            "paragraphs": [
+                "In this discussion, we would like to start with the pronoun choices for different gender identities. Because in our submission we mainly try to address the unfair pronoun preference of pre-trained models. According to social research, gender-neutral pronouns are more appropriate for referring to transgender and non-binary individuals (Deutsch and Buchholz, 2015). 'Zie' and 'hir' are specific to transgender community, but people outside of the community are not familiar with these pronouns. Deutsch and Buchholz (2015) has proposed a Gender-ID to pronoun mapping for transgenders and Genderqueer in electronic health records (EHR). In this system, transgenders are mapped to he/his or she/her where there exists gender bias, but genderqueer are mapped to they/them. For people who prefer binary pronouns(he/she) regardless of their gender identities, our experiments still hold because the pronoun coreference resolution tasks that we evaluate on, i.e. Winogender, WSC and DPR/WSCR, are all binary-pronoun tasks. However, an alternative to asking for preferred pronouns would be to use singular pronouns to address everyone until the individual indicates a preference to use certain pronouns and/ or reveal their gender identity (Darr and Kibbey, 2016). One optional term that is already used as a singular pronoun like \"they/their\" (Darr and Kibbey, 2016;Richards et al., 2016;Sun et al., 2021). If such singular pronoun can be promoted to a larger community, the pronoun unfairness issue can be resolved from the data fundamentally."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.7 The capacity increase of GEEP compared to SPPA",
+            "paragraphs": [
+                "By adding profession embeddings, it is true that the total number of model parameters slightly increases. However, the entire size of the newlyadded parameters is 303*768=232k, which is only 0.21% of the original RoBERTa parameter size (110 million). 303 is the number of professions and 768 is the embedding size of RobERTa. Therefore, even if we extend this method to other fair-ness problems in the future and add more new word embeddings such as 3000 words or 10000 words, the newly-added parameters would be just around 2% or 9% of the original parameter size, which wouldn't cause serious scaling issue. Moreover, we run a new SPPA variant that has the same capacity (the same number of parameters) with GEEP. In the new SPPA variant, we conduct SPPA training after adding new word embedding of the profession names, same as GEEP. We refer this model as SPPA-with-NPE (new profession embeddings). The difference between SPPA-with-NPE and GEEP is GEEP's core implementation to prevent forgetting, that GEEP freezes the rest parameters during further training and only update new profession embeddings. While SPPA-with-NPR updates all parameters including the original model parameters and the newly added profession embeddings. When encountering the pre-defined profession names in training or fine-tuning, SPPAwith-NPR also updates their new embeddings instead of old word/token embeddings. GLUE results are shown in Table 4. Compared with SPPA, SPPA-with-NPE can alleviate forgetting slightly and achieve better debiasing results, while still significantly under-perform GEEP. Results on pronoun coreference resolution tasks show the same trend. SPPA-with-NPE got 58.6 on Winogender, 51.3 on WSC and 52.4 on DPR/WSCR. They are all slightly better than SPPA while significantly lower than GEEP."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.8 Quality of gender-neutral data",
+            "paragraphs": [
+                "The relatively big performance drop of both our method and SPPA compared to the original RoBERTa motivates us to analyze more on the quality of our gender-neutral data.",
+                "While first we note that CoLA and RTE are known to be more sensitive to quality of pre-trained models compared with other tasks in GLUE, due to their small data sizes. In other words, if the pre-trained model is trained insufficiently or with less data, we can see a larger performance drop on CoLA and RTE compared with other tasks. While if the pre-trained model's quality is better, we can see larger improvements on them as well. This trend has been observed in BERT vs RoBERTa, BERT vs Span-BERT, and BERT vs ELECTRA. Therefore, the reason for the large performance drop on COLA can partially be its natural sensitivity to our small data size of further training RoBERTa.",
+                "Second, the gender neutralization process of the training data could cause gender mismatch between pronouns and some very rare nouns. we did follow the reviewer's suggestion to sample 500 sentences from the augmented dataset and manually checked whether there are grammar errors. In these 500 sentences, there are no grammar errors, such as mismatches between nouns and verb formats (e.g. \"he are\"). Because during the gender neutralization, we follow previous work to just swap the genderrelated pronouns (such as he/she) or nouns (such as uncle/aunt) when profession names occur. And such gender-related nouns share the same verb formats with their counterparts. We also share the full list of gender-related nouns in the appendix in this submission. However, when we sample more modified sentences, we find that if a rare gender-related noun, such as \"spinster\", that is not on the published gender-related noun list occurs, the gender neutralization process would change the pronoun while leave the noun unchanged since it is not on the list. Although it happens quite rarely, this causes pronoun misuse that could lead to grammar errors in pre-training data that contribute to the performance drop on CoLA."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.9 Experiment Results on BERT",
+            "paragraphs": [
+                "During the preliminary exploration on this problem, we have also applied SPPA and GEEP on publicly released BERT and conducted pronoun coreference resolution and GLUE experiments on them. In this experiment, we only further trained the released BERT model for 10k iterations with our genderneutral data. Moreover, our gender-neutral data set (7.1 GB) is not significantly smaller than the original pre-training data of BERT (16 GB), and the two data sets both come from Wikipedia. Due to these two reasons, the forgetting problem on this BERT experiment is not as obvious for SPPA.",
+                "Table 5 shows the performance of different methods on 8 GLUE tasks. Although the forgetting is less server, SPPA still suffers from forgetting issue in the following 6 tasks out of the total 8 tasks, CoLA, MRPC, STS-B, MNLI, QNLI, and SST-2. As for the average GLUE score, SPPA is 0.7 point lower after its second-phase pre-training, which is not a small margin considering it is the average score of 8 tasks. GEEP mitigates the forgetting issue of SPPA in all sub-tasks except in RTE. GEEP also gets the average GLUE score of 82.8, which outperforms SPPA and is similar to the original GLUE score of the pre-trained BERT.",
+                "Table 6 shows the coreference resolution results of different models on three data sets. Results show that GEEP model obtains the best accuracy compared to other models, especially in Wingender dataset where the candidate nouns are professions. We observe that the SPPA method also can help improve coreference resolution performance of the pre-trained model, but not as effective as GEEP."
+            ],
+            "subsections": []
+        }
+    ]
+}

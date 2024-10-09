@@ -1,0 +1,117 @@
+# DESCRIPTION
+
+## BRIEF DESCRIPTION OF THE DRAWINGS
+
+- introduce patent drawings
+- describe drawing execution
+- mention color drawing(s)
+- provide instructions for obtaining color drawing(s)
+- describe FIG. 1
+- show alignment of pentabasic recognition site
+- describe FIGS. 2A-B
+- show binding of eNOS to p38
+- describe FIGS. 3A-C
+- show binding of eNOS to ERK-2
+- describe FIG. 4
+- show sequence alignment of NOS mammalian isoforms
+- describe FIG. 5
+- show mass spectroscopy results
+- describe FIGS. 6A-B
+- show structural cartoons of NOS reductase domains
+- describe FIGS. 7A-D
+- show optical biosensing analysis
+- describe FIG. 8
+- show fluorescence decays of unphosphorylated and ERK phosphorylated eNOS
+- introduce eNOS and MAPK binding partners
+- describe phosphorylation of eNOS by ERK and p38
+- discuss effects of phosphorylation on NO synthesis
+- describe binding of eNOS to p38 and ERK
+- discuss recognition of pentabasic sequence
+- introduce MAPK signaling networks
+- describe regulation of eNOS by kinases
+- discuss autoinhibitory element of eNOS
+- introduce calcium/calmodulin activation
+- describe phosphorylation sites in eNOS
+- discuss PKC inhibition of eNOS
+- introduce MAP kinases in signaling pathways
+- describe ERK and p38 phosphorylation of eNOS
+- discuss contradictory reports of ERK phosphorylation site
+- introduce pentabasic binding site for MAP kinases
+- describe targets of phosphorylation
+- discuss effects of phosphorylation on NO synthesis
+- introduce peptides that bind to pentabasic binding site
+- describe methods for modulating NOS activity
+- introduce MAP kinase phosphorylation of NOS
+- describe methods for modulating cytochrome C reductase activity
+- introduce pentabasic peptides and variants
+- describe antibodies that bind to pentabasic binding site
+- introduce phosphorylated peptide analogs
+- describe peptidomimetic mutant enzymes
+- introduce vectors and expression systems
+- introduce physiological p38-eNOS binding
+- motivate MAP kinase pathways
+- summarize ERK phosphorylation of eNOS
+- describe pentabasic motif and phosphorylation sites
+- discuss MAPK binding site and phosphorylation
+- describe eNOS-MAP kinase interaction
+- summarize ERK inhibition of eNOS
+- describe experimental methods for ERK kinase reactions
+- explain fluorescence lifetime measurement
+- describe optical biosensing using biolayer interferometry
+- describe surface plasmon resonance experiments
+- show alignment of DNA and amino acid sequences
+- describe autoinhibitory element region
+- discuss MAP kinase binding site evolution
+- describe phosphorylation of eNOS by ERK
+- show mass spectroscopy results of eNOS tryptic digests
+- identify phosphorylation sites from mass spectroscopy
+- describe structural cartoon of NOS reductase domains
+- describe structural cartoon of eNOS oxygenase dimer
+- show location of ERK targets in disordered region
+- describe calmodulin binding site
+- discuss reductase complex and electron supply
+- compare eNOS and nNOS crystal structures
+- discuss homology between eNOS and nNOS
+- conclude eNOS-MAP kinase interaction
+- describe drawings
+- illustrate FAD and FMN binding domains
+- show CaM and MAP kinase binding sites
+- depict eNOS oxygenase dimer structure
+- summarize experimental results
+- show effects of ERK phosphorylation on eNOS activity
+- describe effects on conformational states
+- discuss CaM binding to unphosphorylated and phosphorylated eNOS
+- show BLI traces for CaM binding
+- illustrate SPR sensorgrams for CaM binding
+- describe single-cycle kinetic analysis
+- discuss conformational states during catalytic cycle
+- show fluorescence decays of unphosphorylated and phosphorylated eNOS
+- summarize effects of ERK phosphorylation on eNOS activity and conformational states
+- describe MAP kinases ERK and P38
+- phosphorylation of eNOS by ERK
+- identify phosphorylation sites on eNOS
+- describe phosphorylation of S602
+- describe effect of phosphorylation on FMN binding domain
+- describe CaM binding to ERK phosphorylated eNOS
+- compare CaM binding to unphosphorylated and phosphorylated eNOS
+- describe phosphorylation of T46 and S58
+- discuss possible effects of T46 and S58 phosphorylation
+- discuss phosphorylation of other sites on eNOS
+- describe system of eNOS as a junction of many signaling pathways
+- incorporate by reference Sequence_Listing_ST25.txt
+- incorporate by reference Cargnello and Roux (2011)
+- incorporate by reference Cuadrado and Nebreda (2010)
+- incorporate by reference Zarubin and Han (2005)
+- incorporate by reference Bardwell et al. (2009)
+- incorporate by reference Gaestel (2008)
+- incorporate by reference Ignarro et al. (1987)
+- incorporate by reference Furchgott (1988)
+- incorporate by reference Papapetropoulos et al. (1997)
+- incorporate by reference Corbett et al. (1993)
+- incorporate by reference Henningsson et al. (2002)
+- incorporate by reference Bernier et al. (2000)
+- incorporate by reference Roux and Blenis (2004)
+- incorporate by reference Enslen et al. (2001)
+- incorporate by reference Sharrocks et al. (2000)
+- incorporate by reference remaining references
+

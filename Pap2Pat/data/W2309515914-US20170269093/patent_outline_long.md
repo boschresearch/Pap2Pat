@@ -1,0 +1,395 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERALLY FUNDED RESEARCH
+
+- acknowledge government support
+
+## BACKGROUND
+
+- introduce field of discovery
+- describe cancer cell invasion
+- explain lamellipodium formation
+- discuss Lpd's role in lamellipodia
+- describe Lpd's function in cell migration
+- discuss Lpd's role in metastasis
+- highlight need for reliable biomarkers
+- summarize limitations of current biomarkers
+- emphasize need for early diagnosis
+
+## SUMMARY
+
+- introduce compositions and methods
+- describe Lpd as biomarker
+- explain correlation of Lpd levels with metastasis
+- describe method for assessing metastatic cancer
+- obtain biological sample
+- determine Lpd protein or gene expression
+- correlate Lpd levels with metastatic state
+- diagnose or prognose metastatic cancer
+- describe alternative method
+- detect Lpd protein with antibody
+- determine Lpd protein amount
+- correlate Lpd protein with metastatic state
+- describe another method
+- detect Lpd gene expression
+- determine Lpd gene expression level
+- correlate Lpd gene expression with metastatic state
+- describe additional method
+- extract RNA or protein
+- determine Lpd protein or gene expression
+- correlate Lpd levels with metastatic state
+- administer therapeutic
+- describe therapeutic agents
+- provide diagnostic kits
+
+## BRIEF DESCRIPTION OF THE DRAWINGS
+
+- introduce figures
+- describe figure 1A
+- describe figure 1B
+- describe figure 1C
+- describe figure 1D
+- describe figure 1E
+- describe figure 1F
+- describe figure 1G
+- describe figure 1H
+- describe figure 1I
+- describe figure 1J
+- introduce figure 2
+- describe figure 2A-2E
+- describe figure 2F-2I
+- describe figure 2J-2K
+- describe figure 2L-2P
+- introduce figure 3
+- describe figure 3A-3B
+- describe figure 3C-3F
+- describe figure 3G-3K
+- introduce figure 4
+- describe figure 4A-4L
+- describe figures
+- show Lpd requirement for 3D-invasion of cancer cells
+- perform inverted invasion assays
+- quantify number of nuclei of invading cells
+- show Lpd binding to ENa/VASP is required for chemosensing
+- quantify chemotactic index
+- show c-Src phosphorylates Lpd
+- show Lpd-Scar/WAVE interaction is positively regulated by c-AbI and c-Src
+- quantify band intensities of chemiluminescence blots
+- show Lpd is required for invasion of breast cancer cells
+- quantify 3D-inverted invasion assays
+- show Western blot analysis of Lpd expression
+- perform 3D inverted invasion assay
+- quantify percentage of cell displaying Lpd localization
+- show phosphorylation of Lpd by c-Src and c-AbI is required for cancer cell invasion
+- perform in vitro kinase assay
+- quantify band intensities of chemiluminescence blots
+- perform inverted invasion assays
+- quantify number of protrusion
+- show Lpd phosphorylation by c-Src does not affect LpdNASP interaction
+- perform immunoprecipitation
+- quantify band intensities of chemiluminescence blots
+- perform GST-pull down assay
+- quantify band intensities of chemiluminescence blots
+- perform inverted invasion assays
+- quantify number of nuclei of invading cells
+- quantify mean protrusion speed
+- show Lpd phosphorylation by c-Src is required for its interaction with Scar/WAVE
+- perform immunoprecipitation
+- show association of Lpd with Mena isoforms
+
+## DETAILED DESCRIPTION
+
+- motivate need for new biomarkers
+- describe limitations of existing biomarkers
+- introduce Lpd as potential biomarker
+- describe correlation of Lpd levels with metastasis-free survival
+- describe mechanistic role of Lpd in metastasis
+- provide detailed description of invention
+- define terms used in invention
+- describe scope of invention
+- incorporate references by reference
+- describe preferred methods and materials
+- interpret ranges of values
+- define technical and scientific terms
+- provide general definitions of terms
+- describe molecular biology methods
+- define transitional phrases
+- describe phrase "at least one"
+- describe order of method steps
+- define "effective amount"
+- define "biomarker"
+- describe use of biomarkers
+- define "detect"
+- describe detectable moieties
+- define "determining", "assessing", "assaying", "measuring", and "detecting"
+- define "invasive cancer"
+- define "metastatic cancer"
+- describe "comprises", "comprising", "containing", and "having"
+- define "agent"
+- define "Disease-Free Survival (DFS)"
+- define "reference" or "control"
+- describe "sample"
+- define "selectively hybridizes to"
+- define "subject" or "patient"
+- describe "treat", "treating", "treatment"
+- define "siRNA"
+- describe siRNA design
+- define "shRNA"
+- describe "upregulated" or "enhanced"
+- define "polypeptide"
+- define monoclonal antibody
+- describe characteristics of monoclonal antibody
+- introduce isolated antibody
+- define isolated antibody
+- describe substantially pure composition
+- introduce human antibody
+- define human antibody
+- describe production of human antibody
+- introduce recombinant human antibody
+- define recombinant human antibody
+- describe production of recombinant human antibody
+- introduce humanized antibody
+- define humanized antibody
+- describe production of humanized antibody
+- introduce techniques for humanizing antibody
+- describe humanized antibody with modified Fc regions
+- introduce rodent hypervariable regions
+- describe grafting rodent hypervariable regions
+- introduce human framework regions
+- describe humanized antibody with human framework regions
+- introduce recombinant, combinatorial human antibody library
+- describe production of humanized antibody using transgenic animals
+- introduce humanized antibody with altered CDRs
+- describe production of humanized antibody using recombinant expression vector
+- introduce antibody specificity
+- describe antibody classes
+- introduce IgG antibody
+- describe IgG subclasses
+- introduce antibody fragments
+- describe variable region of antibody
+- introduce hypervariable regions
+- describe framework regions
+- introduce light chains
+- describe kappa and lambda light chains
+- introduce HVR delineations
+- describe Kabat CDRs
+- describe Chothia structural loops
+- describe AbM HVRs
+- describe contact HVRs
+- introduce extended HVRs
+- describe composition or pharmaceutical composition of antibodies
+- list pharmaceutical carriers
+- describe composition formulation
+- define small organic molecule
+- describe nucleic acid probes
+- motivate cancer cell metastasis
+- describe cell adhesions
+- introduce metastatic cancer
+- describe Lpd's role in metastasis
+- outline method for assessing metastatic cancer
+- describe obtaining biological sample
+- determine Lpd protein or gene expression
+- correlate Lpd levels to metastatic state
+- describe alternative method for assessing metastatic cancer
+- describe measuring Lpd alone or with other biomarkers
+- define increased Lpd levels
+- describe fold increase in Lpd levels
+- outline additional method for diagnosing metastatic cancer
+- describe comparing Lpd levels to control
+- describe diagnosing or prognosing metastatic cancer
+- outline method for diagnosing metastatic cancer using Lpd-specific antibody
+- introduce Lpd-specific antibodies for detecting metastatic cancer
+- describe various techniques for detecting Lpd protein
+- define "specifically hybridizes" and "selective hybridization conditions"
+- describe labeling of Lpd-specific antibodies with detectable labels
+- outline method for diagnosing metastatic cancer using Lpd gene expression
+- describe detecting Lpd gene expression using nucleic acid probes
+- define "complementary" nucleic acid sequences
+- describe stringent conditions for hybridization
+- outline method for detecting MENA gene expression
+- describe PCR techniques for detecting and quantifying nucleic acids
+- outline real-time quantitative detection technique using PCR
+- describe advantages of real-time quantitative detection technique
+- outline method for detecting presence or absence of variances
+- describe probes for detecting variances
+- outline preparation of probes with particular specificities
+- describe probes that specifically recognize Lpd and/or MENA sequences
+- outline types of probes, including nucleic acid hybridization probes and antibodies
+- describe isolated, purified, or enriched nucleic acid sequences
+- outline length of probes
+- describe detectable labels for probes
+- outline types of oligonucleotides, including oligoribonucleotides and modified oligonucleotides
+- describe synthesis of oligonucleotides
+- outline modifications to oligonucleotides
+- describe isolated nucleic acids suitable for use in methods
+- outline methods for isolating nucleic acids
+- describe labeling of nucleic acids with detectable markers
+- outline method for diagnosing metastatic cancer using Lpd protein or gene expression
+- describe extracting total RNA or protein from biological samples
+- outline determining Lpd protein or gene expression level
+- describe correlating Lpd protein or gene expression level to metastatic state
+- outline diagnosing metastatic cancer based on Lpd protein or gene expression level
+- define diagnosing metastatic cancer method
+- obtain biological sample
+- extract RNA or protein
+- determine Lpd protein or expression level
+- correlate Lpd level to metastatic state
+- administer therapeutic
+- fix and label biological sample
+- prepare sample for analysis
+- section and mount sample
+- dehydrate and clear sample
+- image sample under microscope
+- block or quench endogenous biotin or enzymes
+- reduce background staining
+- treat subject at risk of metastatic cancer
+- correlate Lpd level to metastatic state
+- administer therapeutic course
+- detect and measure Mena protein
+- use additional antibodies for further information
+- provide therapeutic compositions
+- inhibit Lpd protein activity
+- prepare compositions for storage or administration
+- determine effective amount of therapeutic agent
+- determine toxicity and therapeutic efficacy
+- estimate therapeutically effective dose
+- formulate dosage for human use
+- define therapeutic agent as nucleic acid, antibody, or protein
+- define RNA and its analogs
+- define complementarity and complementary
+- define siRNA
+- describe siRNA structure
+- specify siRNA length
+- describe siRNA modifications
+- introduce 3'-overhang
+- specify 3'-overhang length
+- describe 3'-overhang stabilization
+- introduce hairpin siRNA
+- describe target mRNA
+- introduce PNA
+- describe PNA binding
+- define cognate gene
+- describe siRNA function
+- define reduce or inhibit
+- describe siRNA expression
+- describe target sequence selection
+- introduce RNA interference
+- describe shRNA expression vectors
+- describe antisense oligonucleotides
+- list therapeutic agents
+- describe delivery routes
+- describe formulations
+- describe oral formulations
+- describe tablets
+- describe coated tablets
+- describe hard gelatin capsules
+- describe soft gelatin capsules
+- describe aqueous suspensions
+- describe oily suspensions
+- describe dispersible powders and granules
+- describe oil-in-water emulsions
+- describe syrups and elixirs
+- describe sterile injectable preparations
+- describe suppositories
+- describe parenteral administration
+- describe dosage unit forms
+- describe administration to non-human animals
+- describe combination therapy
+- describe expression of nucleic acid molecules
+- describe eukaryotic promoters
+- describe expression vectors
+- describe transcription initiation and termination regions
+- describe diagnostic kits
+- describe biological samples
+- describe cancer cells or tissues
+- describe breast cancer cells or tissues
+- describe cancer types
+- describe combinations of elements
+- describe experimental details
+- provide claims
+
+### EXAMPLES
+
+- introduce breast cancer metastasis
+- describe multistep process of metastasis
+- explain role of actin polymerization in migration
+- discuss regulation of actin polymerization by proto-oncogenes
+- describe function of Ena/VASP proteins
+- introduce Lamellipodin (Lpd) as binding partner of Ena/VASP
+- explain regulation of Lpd-Ena/VASP interaction by AbI kinase
+- describe role of Lpd in lamellipodium formation
+- discuss requirement of Lpd for random cell migration
+- introduce correlation between Lpd levels and breast cancer invasion
+- describe analysis of Lpd mRNA levels in breast tumors
+- discuss correlation between Lpd protein expression and clinical outcome
+- introduce role of Lpd in promoting cancer cell invasion
+- describe effect of Lpd depletion on metastasis
+- discuss role of Lpd in local tumor invasion and intravasation
+- introduce zebrafish embryo model for breast cancer intravasation
+- describe effect of Lpd overexpression on breast cancer cell seeding
+- discuss role of Lpd in later stages of metastatic cascade
+- introduce effect of Lpd depletion on EGF-induced 3D invasion
+- describe role of Lpd in lamellipodial dynamics
+- discuss effect of Lpd depletion on protrusion persistence and distance
+- introduce role of Lpd in actin polymerization downstream of EGFR
+- describe recruitment of Mena and Arp2/3 complex to protruding edge
+- discuss role of Lpd in chemotactic responses
+- introduce micropipette assay for EGF gradient sensing
+- describe enrichment of Lpd at edges of cells oriented towards EGF gradient
+- discuss requirement of Lpd for chemosensing
+- introduce role of Ena/VASP proteins in chemosensing
+- describe effect of Lpd depletion on 3D invasion towards EGF
+- discuss role of Lpd in MMP-dependent ECM degradation
+- introduce co-localization of Lpd with cortactin at invadopodia
+- describe role of Lpd in invadopodial precursor formation and matrix degradation
+- discuss effect of Lpd mutants on 3D invasion
+- introduce phosphorylation of Lpd by Src kinases
+- describe regulation of Lpd-Scar/WAVE interaction by Src phosphorylation
+- discuss identification of c-Src phosphorylation sites in Lpd
+- describe effect of Lpd phosphorylation site mutations on Scar/WAVE interaction
+- verify Src and Abl kinases requirement
+- investigate Lpd tyrosine phosphorylation significance
+- study MenaINV interaction with Lpd
+- describe plasmids and shRNAs
+- outline cell culture and transfection methods
+- list antibodies used
+- describe immunoprecipitation and western blotting
+- introduce examples
+- describe immunoprecipitation
+- describe peptide array assay
+- describe immunofluorescence microscopy
+- describe inverted invasion assay
+- describe inverted invasion assay on collagen
+- describe extravasation metastasis assay
+- describe membrane protrusion assays
+- describe micropipette assay
+- describe barbed-end assay
+- describe invadopodium degradation and immunofluorescence
+- describe zebrafish tumor cell dissemination assay
+- describe mouse models
+- describe intravital imaging
+- describe statistics
+- analyze clinical data sets
+- describe tissue microarrays
+- analyze Lpd expression in breast cancer patients
+- describe Lpd function in metastasis
+- describe Lpd regulation by Src and Abl kinases
+- describe Lpd-ENa/VASP interaction
+- describe Lpd-Scar/WAVE interaction
+- describe Lpd-driven cell migration
+- describe Lpd-dependent chemosensing
+- describe Lpd function in 3D chemotaxis and migration
+- analyze correlation between Lpd levels and breast cancer mortality
+- analyze correlation between Lpd membrane abundance and disease-free interval
+- analyze correlation between Lpd mRNA levels and metastasis-free survival
+- describe Lpd function in pro-metastatic signaling pathway
+- summarize Lpd function in metastasis
+- summarize Lpd regulation by Src and Abl kinases
+- summarize Lpd-ENa/VASP and Lpd-Scar/WAVE interactions
+- summarize Lpd function in cell migration and chemosensing
+- conclude Lpd function in pro-metastatic signaling pathway
+
+## EQUIVALENTS
+
+- acknowledge equivalents
+

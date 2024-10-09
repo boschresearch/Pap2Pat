@@ -1,0 +1,184 @@
+# DESCRIPTION
+
+## GOVERNMENT SUPPORT CLAUSE
+
+- acknowledge government support
+
+## BACKGROUND
+
+- motivate bone disease treatment
+
+## SUMMARY
+
+- introduce level set functions
+- analyze bone marrow biopsy data
+- predict treatment outcome
+- create level set function for single site
+- create level set function for multiple sites
+- convert single site to multiple sites
+
+## DETAILED DESCRIPTION
+
+- define scope of invention
+- clarify terminology
+- explain singular and plural forms
+- define ranges and approximations
+- explain optional events
+- define "comprise" and variations
+- explain "exemplary" and "such as"
+- disclose components for methods and systems
+- explain combinations of components
+- describe methods and systems in general
+- explain hardware and software embodiments
+- describe computer program products
+- explain web-implemented computer software
+- describe block diagrams and flowcharts
+- explain computer program instructions
+- describe computer-readable memory
+- explain article of manufacture
+- describe computer-implemented process
+- explain special purpose hardware-based systems
+- disclose methods and systems for bone remodeling
+- create level set function for bone remodeling
+- analyze bone marrow biopsy data
+- predict bone volume, mass, cell counts, and spatial distributions
+- predict treatment outcome of bone disease
+- describe functional description of methods
+- explain imaging data processing software
+- describe computer 101 and its components
+- explain operating environment for performing methods
+- describe general purpose and special purpose computing systems
+- explain processing of methods and systems
+- describe software components and program modules
+- explain distributed computing environments
+- describe computer 101 and its components in detail
+- explain mass storage device and imaging data
+- describe input/output devices and network connections
+- introduce level set function for bone remodeling
+- define level set function (1) with five equations
+- explain level set function (1) for bone remodeling
+- describe interactions between osteocytes, pre-osteoblasts, osteoblasts, and osteoclasts
+- define osteocyte cell counts at a time t
+- describe dynamics of osteocyte cell counts
+- define pre-osteoblast cell counts at a time t
+- describe dynamics of pre-osteoblast cell counts
+- define osteoblast cell counts at a time t
+- describe dynamics of osteoblast cell counts
+- define osteoclast cell counts at a time t
+- describe dynamics of osteoclast cell counts
+- define bone mass or bone volume at a time t
+- describe dynamics of bone mass or bone volume
+- summarize level set function (1) with verbal description
+- illustrate results of level set function (1) using a specific set of parameters
+- describe simulation results for bone cell counts during a single cycle of a normal targeted bone remodeling
+- explain effectiveness of pathways
+- illustrate dynamics of osteocyte cell counts during an event of targeted bone remodeling
+- illustrate dynamics of pre-osteoblast cell counts during an event of targeted bone remodeling
+- illustrate dynamics of osteoblast cell counts during an event of targeted bone remodeling
+- illustrate dynamics of osteoclast cell counts during an event of targeted bone remodeling
+- illustrate dynamics of bone volume during a single event of a targeted bone remodeling
+- associate parameters with role of osteocyte RANKL production
+- associate parameters with influence of osteocyte paracrine signaling and pre-osteoblast autocrine signaling
+- compute steady state bone volume as a simultaneous function of effectiveness of osteocyte paracrine signaling and pre-osteoblast autocrine signaling
+- illustrate steady state bone volume as a simultaneous function of effectiveness of osteocyte paracrine signaling and pre-osteoblast autocrine signaling
+- illustrate steady state bone volume computed as a function of effectiveness of osteocyte paracrine signaling
+- compare sensitivity of parameters g21 and g32
+- discuss significance of role of osteocyte signaling
+- associate parameters with effect of using a drug
+- describe effect of anti-sclerostin drugs on bone remodeling
+- modify parameters to determine effects of an anti-sclerostin drug
+- describe imbalance in resorption/formation
+- discuss application of level set function (1) in a prognostic system
+- discuss determination of parameters in the level set function
+- discuss updating of the system continuously for different patient types
+- conclude level set function (1) for bone remodeling
+- define parameters g22 and g44
+- motivate time dependence of g22 and g44
+- specify function g22(t) and g44(t)
+- describe effects of anti-sclerostin drug on g22 and g44
+- associate parameters with effects of other drugs
+- illustrate change in bone mass without treatment
+- illustrate results with anti-sclerostin drug treatment
+- describe level set function (2)
+- define parameters of level set function (2)
+- illustrate level set function (2) in no tumor case
+- illustrate level set function (2) in multiple myeloma case
+- relate parameters to effects of drug treatment
+- describe time dependence of parameters
+- motivate use of level set function (2)
+- describe osteoclast and osteoblast interactions
+- illustrate local "microenvironment" interactions
+- describe effects of tumor cells on bone remodeling
+- describe normal bone remodeling
+- describe bone loss and osteoclast and osteoblast derangement
+- summarize application of level set function (2)
+- receive bone marrow biopsy data
+- define bone marrow biopsy data
+- describe histomorphometry data
+- describe geometry data
+- describe cell counts and volume fractions
+- describe progress of bone disease
+- analyze histomorphometric data
+- stain biopsy cores
+- analyze H&E section
+- analyze immunohistochemical sections
+- spatially register data
+- compute overall cell density
+- calculate proximity of cells
+- determine parameters of level set function
+- extract information from bone marrow biopsy data
+- process histology data
+- determine parameters by standard parameter estimation techniques
+- predict bone volume or bone mass
+- predict cell counts
+- solve level set function
+- determine treatment outcome of bone disease
+- provide insight into prognosis of bone disease
+- create level set function
+- define level set function
+- describe tumor modification
+- receive bone marrow biopsy data
+- describe bone marrow biopsy data
+- analyze histomorphometric data
+- spatially register data
+- compute overall cell density
+- calculate proximity of cells
+- solve level set function
+- analyze histological images
+- create counting routine for cell types
+- identify morphological and cellular features
+- determine area of marrow space, mineralized bone, bone, cartilage, interstitial fluid, and boundaries of trabeculae
+- identify osteocytes, empty osteocyte lacunae, plasma cells, stromal cells, and tumor cells
+- determine parameters of level set function
+- extract information from bone marrow biopsy data
+- determine tumor scaling density and tumor modification of bone cells
+- process histology data to determine parameters in level set function
+- determine geometry data to determine parameters in level set function
+- determine bone marrow interface
+- identify morphological and cellular features associated with marrow space, mineralized bone, bone, cartilage, interstitial fluid, and boundaries of trabecula
+- determine cell counts and spatial distributions for osteoclasts, osteoblasts, and tumor cells
+- predict treatment outcome of bone disease
+- create level set function based on local model of bone remodeling
+- determine bone marrow interface
+- calculate velocity term for bone marrow interface
+- convert first level set function to second level set function
+- associate second level set function with spatial model of bone remodeling
+- replace rate of change of bone mass with velocity term
+- couple osteoclast and osteoblast counts to Gompertz law for tumor load
+- determine parameters in second level set function based on bone marrow biopsy data
+- predict orthopedic treatment and/or bone disease treatment
+- illustrate computational results for level set function
+- show aggregation across space of dynamics under normal bone remodeling
+- show bone and bone marrow interface snapshots in time
+- illustrate computational results for level set function for myeloma dysregulated bone remodeling
+- show aggregation across space of dynamics under multiple myeloma dysregulated bone remodeling
+- show bone and bone marrow interface snapshots in time
+- use idealized geometry for level set function
+- replace idealized circular geometry with actual geometries
+- predict treatment outcome of bone disease based on cell counts and spatial distributions
+- identify patients with varying degrees of derangement in bone remodeling
+- determine whether immediate treatment with bisphosphonate therapy is needed
+- determine when to terminate bisphosphonate therapy
+- describe advantages of level set function
+- provide disclaimer for scope of invention
+

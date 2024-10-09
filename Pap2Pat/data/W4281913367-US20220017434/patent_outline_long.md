@@ -1,0 +1,151 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to methane upgrading system
+
+## SUMMARY
+
+- introduce methane conversion process
+- describe value-added products
+- mention low-cost techniques
+- introduce non-oxygen type of oxidizers process
+- describe removal of toxic impurities
+- mention use of sulphur as radical source
+- outline process for converting methane to higher hydrocarbons
+- describe first reactor operation
+- outline conversion of methane and H2S to CS2 and H2
+- describe second reactor operation
+- outline conversion of CS2 and H2 to CH3SH and H2S
+- describe third reactor operation
+- outline conversion of CH3SH to higher hydrocarbons
+- mention aromatic hydrocarbons
+- describe first feedstock composition
+- describe first reaction condition
+- mention high conversion rate of methane and H2S
+- describe second catalytic material
+- mention high conversion rate of CS2 and H2
+- describe third catalytic material
+- mention high conversion rate of CH3SH
+- describe process for recovering heat
+- outline heat recovery in first reactor
+- outline heat recovery in second reactor
+- outline heat recovery in third reactor
+- describe process for removing impurities
+- outline separation of final reaction mixture
+- describe recycling of methane and H2S
+- outline system for converting methane to higher hydrocarbons
+- describe reaction unit and heat integration system
+- introduce methane upgrading process
+- describe system components
+- detail reaction section
+- specify catalyst systems
+- describe heat integration system
+- detail separation unit
+- describe acid gas removal unit
+- outline method for methane upgrading
+- specify reaction conditions
+- describe separation process
+- detail acid gas removal process
+- describe heat integration benefits
+- illustrate process flow diagram
+- describe heat integration system
+- detail separation unit components
+- describe acid gas removal unit components
+- compare with conventional methods
+- highlight advantages
+- describe drawings and figures
+- provide disclaimer
+
+## DETAILED DESCRIPTION
+
+- introduce BTX products and their production through catalytic reforming of naphtha
+- describe naphtha prices and yields of BTX products
+- highlight the importance of benzene and its increasing price
+- discuss the market for BTX and its major competitors
+- introduce Exxon Mobil Chemical and The Dow Chemical Company as major competitors
+- describe Anellotech Inc.'s clean technology platform for producing BTX from renewable biomass
+- highlight the limitations of current approaches to produce olefins and aromatics
+- introduce the present disclosure's novel systems and methods for converting methane to value-added products
+- describe the oxidative coupling of methane method for direct conversion of CH4 to value-added chemicals
+- discuss the challenges of the OCM catalytic reaction
+- introduce the methane aromatization method for GTL process
+- describe the limitations of the methane aromatization method
+- introduce the mercaptans to BTX method for methane conversion
+- describe the desulfurization process and its importance
+- introduce the data science approach for catalysis
+- describe the implementation of machine learning techniques in catalysis
+- discuss the analysis of catalysts for OCM reactions using machine learning
+- introduce the statistical analysis and proposal of novel heterogeneous catalysts for OCM
+- describe the development of a novel ML method for catalyst design and discovery
+- discuss the prediction accuracy of the ML approach
+- introduce the catalyst optimization procedure using ML
+- describe the current industrial conversion of CH4 through auto thermal or catalytic steam reforming
+- highlight the limitations of current industrial processes
+- introduce the Yildirim group's analysis of steam reforming of CH4 using decision trees
+- describe the extraction of knowledge for the dry reforming of CH4 reaction
+- introduce the high throughput screening instrument for catalyst evaluation
+- describe the simultaneous optimization of catalyst and reactor design
+- introduce the present disclosure's system, process, and method for converting methane to added-valuable products
+- describe the process flow diagram for low-cost methane upgrading to more valuable products
+- introduce the mass balance across all process units
+- describe the chemical reactions, catalysts, and reaction conditions
+- introduce Reactor-A for methane activation
+- describe the conversion rate and selectivity of Reactor-A
+- introduce Reactor-B for methyl mercaptan synthesis
+- describe the conversion rate and outlet temperature of Reactor-B
+- introduce Reactor-C for methyl mercaptan conversion
+- describe the product distributions of Reactor-C
+- highlight the advantages of the present disclosure's systems and methods
+- describe the low-cost process technology for methane upgrading to olefins and aromatics
+- introduce the waste-heat-recovery system to reduce fuel gas required
+- describe the physical separation using propane cycle for BTX separation
+- introduce the acid gas removal unit for H2S removal and recycling
+- list thermodynamic study findings
+- recommend low-pressure operation and sulfur addition
+- describe reaction conversion and temperature effects
+- motivate machine learning models for process simulation
+- develop multivariate polynomial regression models
+- derive analytical approximations for process outputs
+- list equations for H2S conversion, CS2 conversion, and production rates
+- describe techno-economic analysis parameters
+- present cost analysis results
+- show breakdown cost shares for methane upgrading process
+- show breakdown cost shares for propane cycle
+- show breakdown cost shares for AGR section
+- show breakdown cost shares for reaction section
+- summarize techno-economic analysis results
+- introduce oxidative coupling of methane (OCM) process
+- describe OCM process limitations
+- highlight Qatar's natural gas reserves and opportunities
+- discuss H2S treatment and sulphur recovery
+- describe sulphur's impact on fuel production and plant maintenance
+- highlight Qatar's sulphur processing capabilities
+- emphasize the importance of sulphur removal
+- conclude with Qatar's potential for natural gas utilization
+- motivate methane upgrading technology
+- introduce non-oxygen type of oxidizers process
+- list benefits of the technology
+- describe process flow diagram and simulation tools
+- calculate system mass and heat balance
+- conduct techno-economic analyses and thermodynamic parametric analysis
+- utilize machine learning models and variance-based sensitivity analysis
+- describe data set and process simulation
+- explain methodology and mathematical expressions
+- define rRMSE equation
+- motivate alternative machine learning models
+- introduce Sobol indices for sensitivity analysis
+- explain first-order, second-order, and total-order indices
+- present results of sensitivity analysis
+- describe how to read tables 9 and 10
+- report relative errors of polynomial approximations
+- introduce new "Non-oxygen type of oxidizers" process
+- list benefits of the present technology
+- define terms and phrases used in the disclosure
+- explain numerical ranges and claim support
+- clarify singular and plural forms
+- interpret "comprise," "include," and "having"
+- discuss embodiments and combinations
+- explain "and/or" and "at least one of"
+- provide additional information and references
+

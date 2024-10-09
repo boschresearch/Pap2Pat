@@ -1,0 +1,220 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### Field of the Invention
+
+- define field of invention
+
+### Background Information
+
+- describe role of myeloid cells
+- discuss macrophage polarization
+- explain CSF1R inhibitors
+- summarize integrin CD11b function
+- identify need for novel cancer treatments
+
+## SUMMARY OF THE INVENTION
+
+- summarize CD11b signaling effects
+- describe method of treating cancer
+- specify agonists of CD11b expression
+- list types of cancer
+- describe combination therapy
+- specify chemotherapeutic agents
+- describe method of treating cancer with anti-miRNA Let7a
+- specify transgenic non-human mammal
+- describe method of enhancing immunity
+- describe method of rendering cancer cells susceptible
+- describe method of screening for therapeutic agents
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce CD11b signaling in myeloid cells
+- describe inhibition of immune suppression
+- describe modulation of neovascularization
+- describe promotion of anti-tumor immune responses
+- provide disclaimer on limitations of invention
+- define singular and plural forms of terms
+- define "comprising" and related phrases
+- define technical and scientific terms
+- describe preferred methods and materials
+- define "cancer" and related terms
+- define "subject" and related terms
+- define "biological sample"
+- define "pharmaceutically acceptable"
+- define "administration" and related terms
+- describe parenteral administration
+- describe systemic administration
+- define "effective amount"
+- describe treatment and related terms
+- describe promotion and related terms
+- describe inhibition and related terms
+- define "selective inhibition"
+- define "polypeptide" and related terms
+- define "amino acid" and related terms
+- describe protein coding sequence
+- describe promoter and related terms
+- describe constitutive promoters
+- describe inducible promoters
+- describe spatially restricted promoters
+- describe temporally restricted promoters
+- define "gene" and related terms
+- define regulatory gene
+- define functionally linked
+- define conservatively modified variants
+- define antibody
+- define transgenic organism
+- define genetic knockout
+- define genetic knockin
+- describe knockout animal
+- describe knockin animal
+- describe preparation of transgenic animals
+- introduce transgenic non-human mammal
+- describe isolated cell
+- provide amino acid sequence
+- introduce macrophages
+- describe role of VCAM receptor integrin α4β1
+- describe role of CD11b
+- describe Itgam−/− macrophages
+- describe F4/80+ TAMs
+- describe siRNA-mediated knockdown of CD11b
+- describe effect of inhibitory CD11b antibodies
+- describe adhesion of macrophages to substrates
+- describe regulation of NFκB activation
+- describe adoptive transfer of macrophages
+- describe tumor growth in Itgam−/− mice
+- describe immune response in tumors
+- introduce constitutively activated CD11b knockin mouse strain
+- describe characteristics of I332G knockin mice
+- describe adhesion assays with I332G cells
+- describe tumor growth in I332G Itgam knockin mice
+- introduce CD11b expression in macrophages
+- evaluate effect of macrophage media on CD11b expression
+- describe role of cytokines in tumor microenvironment
+- discuss macrophage control of immune responses and angiogenesis
+- describe role of PDGF-BB in tumor vascularization
+- examine patterns of blood vessel development in Itgam−/− and WT tumors
+- analyze protein and gene expression of PDGF-BB and VEGF-A
+- discuss role of CD11b in controlling tumor vascularization
+- investigate effect of imatinib on tumor growth and vascular normalization
+- discuss role of Stat3 in macrophage polarization
+- examine effect of Stat3 inhibition on immune suppressive factor expression
+- discuss role of IL-6 in driving immune suppressive polarization
+- describe method of treating cancer using CD11b agonist
+- introduce microRNAs and their role in tumor immune suppression and angiogenesis
+- discuss Let7 family of miRNAs and their control of Il6 expression
+- examine effect of CD11b expression on Let7a expression
+- analyze effect of CD11b ligation on Let7a expression and Il6 expression
+- discuss role of Let7a in inhibiting immune suppressive gene expression
+- examine effect of c-Myc on Let7 transcription and macrophage polarization
+- discuss role of CD11b in suppressing Myc expression and immune suppressive macrophage polarization
+- investigate effect of Let7a expression on neovascularization
+- examine effect of anti-miR Let7a on tumor growth and immune suppression
+- discuss role of CD11b in restraining immune suppression and vascular maturation
+- describe method of treating cancer using miRNA Let7a
+- discuss advances in cancer immunotherapy
+- examine role of tumor-associated myeloid cells in resistance to immunotherapies
+- investigate effect of anti-miRNA Let7a on tumor perfusion and responsiveness to chemotherapy
+- discuss role of CD11b in regulating tumor immune and vascular responses
+- introduce leukadherin 1 (LA1) as a small molecule agonist of CD11b
+- examine effect of LA1 on macrophage polarization and tumor growth
+- describe method of treating cancer using LA1 and chemotherapeutic agents
+- describe effects of LA1 on tumor associated macrophages
+- show LA1 inhibits tumor growth
+- demonstrate LA1 repolarizes tumor associated macrophages
+- show LA1 increases CD8+ T cell recruitment to tumors
+- describe role of CD11b in macrophage polarization
+- show CD11b ligation inhibits immune suppressive transcriptional signature
+- demonstrate CD11b ligation stimulates accumulation of CD8+ T cells
+- show CD11b ligation suppresses tumor growth
+- describe differences in CD11b function in tumors versus inflamed tissue
+- show CD11b promotes miRNA Let7a and inhibits Myc expression
+- demonstrate CD11b agonists could provide benefit in cancer treatment
+- describe improved vascular perfusion in CD11b−/− animals
+- show tumor blood vessels from CD11b−/− mice display increased pericyte coverage
+- demonstrate deletion of CD11b or Let7a suppression increases PDGF-BB/VEGF-A ratio
+- show integrin CD11b−/− macrophages express increased levels of IL-6
+- demonstrate decreased integrin CD11b expression or activation negatively regulates Let-7a
+- show loss of CD11b down-regulates Let7a, leading to elevated Il6 levels
+- demonstrate Myc drives immune suppressive transcription and inhibition of immune stimulatory transcription
+- show LA1, a potent activator of integrin CD11b/CD18, alters macrophage polarization
+- demonstrate LA1 increases CD8+ T cell recruitment to tumors and inhibits tumor progression
+- show adoptive transfer of LA1 treated macrophages directly inhibits tumor growth
+- demonstrate LA1 effects depend on intact CD11b
+- show LA1 may inhibit immune suppressive myeloid cell trafficking to tumors
+- demonstrate LA1 stimulates a pro-inflammatory phenotype in macrophages
+- show adoptive transfer of LA1 treated TAMs abolishes tumor growth
+- demonstrate LA1 repolarizes TAMs, leading to recruitment and activation of CD8+ T cells
+- show systemic delivery of LA1 recruits CD8+ T cells and repolarizes TAMs
+- demonstrate LA1 acts on myeloid cells to change tumor associated macrophage polarization
+- show LA1 affects T cell independent processes to suppress tumor growth
+- demonstrate LA1 reduces inhibiting vascular normalization in all tumor models
+- provide method of identifying cancer cells amenable to treatment with a chemotherapeutic agent
+- provide method of rendering a cancer cell susceptible to a cancer therapeutic treatment regimen
+- provide composition comprising the agonist of CD11b or Let7a activity or expression
+
+### EXAMPLE 1
+
+- obtain cell lines
+- culture cells
+- authenticate cell lines
+- obtain mice
+- generate ITGAM I332G knock-in mouse
+- characterize ITGAM I332G knock-in mouse
+- breed mice
+- house mice
+- inject tumor cells
+- measure tumor volume
+- divide mice into cohorts
+- administer treatments
+- evaluate tumor burden
+- harvest tissues
+- analyze tissues
+- perform immunohistochemistry
+- quantify immunohistochemistry
+- perform flow cytometry
+- analyze flow cytometry
+- perform cytotoxicity assay
+- isolate single cells
+- perform immunostaining
+- quantify immunostaining
+- differentiate human macrophages
+- culture human macrophages
+- differentiate murine macrophages
+- culture murine macrophages
+- polarize macrophages
+- analyze macrophage polarization
+- perform cell adhesion assay
+- describe lentiviral transduction of bone marrow derived macrophages
+- detail viral titer assessment and cell culture conditions
+- outline analysis of gene expression using qPCR
+- summarize immunoblotting protocol
+- describe ELISA assays for protein detection
+- detail in vivo macrophage adoptive transfer experiments
+- outline integrin CD11b ligation experiments
+- describe siRNA mediated knockdown of Itgam and Il6
+- detail microRNA and anti-microRNA delivery
+- describe nanoparticle preparation and administration
+- outline statistical analysis methods
+- reference previous studies on tumor progression and metastasis
+- reference studies on myeloid cells in tumor inflammation
+- reference studies on macrophage plasticity and polarization
+- reference studies on myeloid-derived suppressor cells
+- reference studies on myeloid cells as targets for therapy
+- reference studies on macrophages and therapeutic resistance
+- reference studies on molecular profiling of monocytes and macrophages
+- cite prior art
+- describe role of PI3Kγ in immune suppression
+- describe role of CSF-1R in glioma progression
+- describe role of integrin-alpha4beta1 in tumor inflammation
+- describe role of PI3-kinase gamma in tumor inflammation
+- describe role of receptor tyrosine kinases and TLR/IL1Rs in myeloid cell PI3kγ
+- describe role of Mac-1 in neutrophil apoptosis
+- describe role of NF-kappaB in inflammation
+- describe role of integrin CD11b in leukocyte inflammatory functions
+- describe role of PDGF-B in pericyte recruitment
+- describe role of VEGF in vessel normalization
+- describe role of STAT3 in tumor vessel normalization
+- conclude prior art
+

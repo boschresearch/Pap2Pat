@@ -1,0 +1,393 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce hepatic mitochondrial function
+- describe limitations of current methods
+- identify need for non-invasive methods
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce composition with isotopically labelled C3 compound and glucose
+- describe isotopically labelled C3 compound options
+- describe isotopically labelled glucose options
+- specify concentration ranges for isotopically labelled compounds
+- describe pharmaceutically acceptable composition
+- describe intravenous infusion formulation
+- introduce 13C-labelled beta-hydroxybutyric acid
+- describe method of measuring metabolic rates
+- describe administration of isotopically labelled compounds
+- describe collection and analysis of biological samples
+- describe calculation of pyruvate carboxylase flux and hepatic mitochondrial oxidation flux
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- describe PINTA method
+- validate PINTA method
+- demonstrate PINTA method's sensitivity
+
+### Compositions
+
+- define composition
+- describe isotopically labelled glucose
+- describe isotopically labelled C3 compound
+- describe isotopically labelled beta-hydroxybutyric acid
+- describe pharmaceutically acceptable composition
+- describe concentration ranges
+- describe molar ratios
+
+### Methods
+
+- describe method of non-invasively measuring VCS and VPC
+- administer isotopically labelled glucose, C3 compound, and beta-hydroxybutyric acid
+- collect biological sample
+- analyze biological sample
+- describe isotopically labelled glucose
+- describe isotopically labelled C3 compound
+- describe isotopically labelled beta-hydroxybutyric acid
+- describe composition formulation
+- describe administration methods
+- describe concentration ranges
+- describe molar ratios
+- describe infusion rates
+- describe biological sample collection
+- describe analysis methods
+- determine rate of endogenous glucose production
+- calculate VPC/VHGP ratio
+- calculate VPC flux
+- calculate VCS flux
+- correct for 13CO2 enrichment
+- describe additional administration of 2H-labelled glycerol and 13C-labelled palmitate
+- describe use of methods for evaluating hepatic mitochondrial function
+- describe use of methods for evaluating novel therapies
+
+### Kits
+
+- describe kit composition
+- describe kit with separate compositions
+- describe kit with additional composition
+- describe pharmaceutically acceptable composition
+- describe instructional material
+
+### Dosing and Administration
+
+- introduce pharmaceutical composition
+- describe formulations and excipients
+- discuss administration modes
+- detail parenteral administration
+- describe formulations for parenteral administration
+- discuss reconstitution of dry formulations
+- provide examples of administration techniques
+
+### Definitions
+
+- define abnormal
+- define about
+- define co-administered
+- define composition
+- define CRMP
+- define disease
+- define disorder
+- define DNP
+- define effective amount
+- define efficacy
+- define instructional material
+- define LC/MS/MS
+- define NAFLD
+- define NMR
+- define non-invasive
+- define parenteral
+- define patient
+- define pharmaceutically acceptable
+- define pharmaceutically acceptable carrier
+- define pharmaceutically acceptable salt
+- define potency
+- define prevent
+- define therapeutic
+- define treatment
+- discuss ranges
+- discuss formulations and combinations
+- discuss isomers and enantiomers
+- discuss equivalents
+- discuss art-recognized meanings
+- introduce examples
+
+## EXAMPLES
+
+- provide illustrative examples
+
+### Example 1: Non-Invasive Assessment of Hepatic Mitochondrial Metabolism by Positional Isotopomer NMR Tracer Analysis
+
+- introduce animal studies
+- describe animal preparation
+- outline high fat diet and treatment
+- describe surgery and recovery
+- outline experimental design
+- introduce human studies
+- describe human subject selection
+- outline human experimental design
+- introduce tracer studies
+- describe rat tracer infusion
+- describe human tracer infusion
+- outline flux modeling
+- introduce PINTA analysis
+- describe flux calculation equations
+- derive equation (1)
+- introduce assumptions
+- simplify equation (3)
+- derive equation (4)
+- derive equation (5)
+- derive equation (6)
+- derive equation (7)
+- introduce expanded derivation of VPC/VCS
+- describe pyruvate recycling and minor fluxes
+- derive equation (8)
+- simplify equation (8)
+- derive equation (9)
+- describe relationship between α-ketoglutarate and OAA labeling
+- derive equation (30)
+- derive equations for positional isotopomer NMR tracer analysis
+- simplify equations based on published work and experimental results
+- rearrange equation to solve for VPC/VCS ratio
+- discuss impact of pyruvate recycling on calculated VPC/VCS ratio
+- describe calculation of VPC/VEGP using MIDA analysis
+- derive binomial relationship for isotopomer distribution of glucose
+- solve for XFE and VPC/VEGP in terms of G2/G1 ratio
+- list key assumptions of MIDA calculation
+- discuss correction for [m+2] glucose synthesized from 13C2-trioses
+- introduce flux modeling using ex vivo NMR of hepatic tissue
+- introduce non-invasive assessment of hepatic mitochondrial metabolism
+- describe flux calculations for VPC and VCS
+- outline GC/MS analysis for [13C]glucose enrichment
+- describe LC-MS/MS analysis for [13C]glutamate enrichment
+- outline 13C NMR spectroscopy for positional enrichment of glucose, glutamate, and alanine
+- describe liver glycogen content analysis
+- outline statistical analysis using GraphPad Prism
+- compare VPC/VCS and VPC/VEGP ratios using PINTA and ex vivo NMR
+- demonstrate correlation between liver and plasma glucose enrichment
+- measure VPC/VCS ratio in healthy human subjects
+- validate PINTA method using controlled-release mitochondrial protonophore
+- measure VPC/VEGP ratio in glycogen-depleted rats
+- discuss alterations in hepatic fatty acid metabolism
+- discuss development of non-invasive methods to assess hepatic mitochondrial oxidation and gluconeogenesis
+- outline PINTA method for measuring VPC/VCS and VPC/VEGP ratios
+- validate PINTA method using ex vivo NMR analysis
+- discuss assumptions of PINTA method
+- discuss advantages of using [3-13C]lactate as an isotope
+- compare PINTA method to 2H2O method for measuring gluconeogenic flux rates
+- outline advantages of PINTA method
+- describe application of PINTA method to humans and rodent models of diabetes
+- discuss potential of PINTA method for examining target engagement for novel therapies
+- describe limitations of PINTA method
+- discuss importance of considering pyruvate cycling in PINTA method
+- outline equation for adjusting PINTA-determined rates of VPC/VCS flux
+- discuss potential applications of PINTA method in various physiologic and pathophysiologic states
+- describe use of PINTA method in examining role of altered hepatic mitochondrial and glucose metabolism
+- outline potential of PINTA method for examining target engagement for novel therapies
+- discuss importance of non-invasive methods for assessing hepatic mitochondrial oxidation and gluconeogenesis
+- describe advantages of PINTA method over invasive methods
+- outline potential of PINTA method for use in clinical settings
+- discuss importance of further validation of PINTA method
+- describe potential applications of PINTA method in personalized medicine
+- outline potential of PINTA method for use in drug development
+- discuss importance of considering individual variability in PINTA method
+- describe potential applications of PINTA method in monitoring treatment response
+- outline potential of PINTA method for improving understanding of hepatic mitochondrial metabolism
+
+### Example 2: Leptin Mediates a Glucose-Fatty Acid Cycle to Maintain Glucose Homeostasis in Starvation
+
+- introduce glucose metabolism in starvation
+- describe shift from glucose to fat metabolism
+- explain role of insulin and glucagon in glucose metabolism
+- discuss effect of starvation on plasma leptin concentrations
+- hypothesize effect of hypoleptinemia on glucose and fat metabolism
+- introduce PINTA method for assessing in vivo metabolic rates
+- describe experimental design for assessing glucose and fat metabolism
+- outline measurements taken during experiments
+- describe animal studies
+- detail animal housing and diet
+- describe surgical procedures for catheter placement
+- outline fasting and feeding protocols
+- describe induction of T1D
+- detail tissue collection and processing
+- introduce tracers used in experiments
+- describe primed-continuous infusion of tracers
+- outline measurements taken during tracer infusions
+- describe leptin infusions
+- detail stepwise increasing doses of leptin
+- outline measurements taken during leptin infusions
+- introduce pharmacologic manipulation of glycogen and acetyl-CoA
+- describe glycogen phosphorylase inhibitor
+- detail CPT-1 and ATGL inhibitors
+- outline measurements taken during inhibitor studies
+- introduce glucose clamps
+- describe alanine turnover measurements
+- outline glucose infusion protocol
+- describe hyperinsulinemic-euglycemic clamps
+- introduce alanine replacement
+- describe flux measurements
+- outline calculation of whole-body substrate turnover rates
+- describe GC-MS and LC-MS/MS methods
+- detail calculation of VPC and VCS flux rates
+- introduce biochemical analysis
+- describe measurement of plasma glucose and lactate
+- outline measurement of plasma triglyceride and β-hydroxybutyrate
+- describe measurement of plasma amino acid concentrations
+- outline measurement of plasma hormone concentrations
+- introduce tissue analysis
+- describe measurement of liver and muscle glycogen and TAG content
+- introduce starvation model
+- describe plasma glucose concentrations
+- correlate plasma glucose with net hepatic glycogenolysis
+- describe shift from glucose to fat/ketone oxidation
+- describe changes in plasma NEFA, glycerol, and β-hydroxybutyrate concentrations
+- describe changes in liver TAG and DAG content
+- describe changes in PKCε translocation
+- describe changes in endogenous glucose production
+- describe changes in skeletal muscle TAG content
+- describe changes in PGC-1α expression
+- describe changes in gluconeogenic enzyme expression
+- describe changes in plasma insulin and glucagon concentrations
+- describe changes in plasma leptin concentrations
+- describe activation of HPA axis
+- describe changes in plasma corticosterone and ACTH concentrations
+- describe changes in plasma epinephrine and norepinephrine concentrations
+- describe changes in plasma growth hormone concentration
+- describe changes in plasma FGF-21 concentrations
+- describe effects of glycogen phosphorylase inhibitor
+- describe effects of physiologic leptin replacement
+- describe effects of supraphysiologic leptin treatment
+- describe effects of leptin on HPA axis activity
+- describe effects of leptin on WAT lipolysis
+- describe effects of leptin on hepatic glucose production
+- describe effects of leptin on plasma glucose concentrations
+- describe effects of leptin on plasma NEFA, glycerol, and β-hydroxybutyrate concentrations
+- describe effects of leptin on plasma catecholamine concentrations
+- describe effects of leptin on plasma insulin concentrations
+- describe effects of leptin on plasma FGF-21 concentrations
+- describe effects of leptin on fatty acid and glycerol turnover
+- describe effects of leptin on hepatic acetyl-CoA content
+- describe effects of leptin on WAT lipolysis in T1D rats
+- describe effects of leptin on HPA axis activity in T1D rats
+- describe effects of leptin on catecholamine concentrations in T1D rats
+- describe effects of leptin on WAT lipolysis and hepatic acetyl-CoA content
+- describe effects of etomoxir on plasma glucose and insulin concentrations
+- describe effects of atglistatin on plasma glucose concentrations
+- introduce Leptin Mediates a Glucose-Fatty Acid Cycle
+- describe hepatic glycogen metabolism in fasting rats
+- examine effect of glycogen phosphorylase inhibitor on glucose production
+- assess plasma lipolytic hormone concentrations and WAT lipolysis
+- suggest hypoleptinemia-driven HPA axis activation promotes gluconeogenic flux
+- describe increases in WAT lipolysis and hepatic acetyl-CoA content
+- examine role of hepatic acetyl-CoA content in maintaining gluconeogenesis
+- treat rats with ATGL inhibitor and CPT-1 inhibitor
+- challenge canonical view of insulinopenia-mediated gluconeogenesis
+- examine effect of mifepristone on WAT lipolysis and glucose turnover
+- test role of HPA axis activation and hypoleptinemia in driving WAT lipolysis
+- infuse leptin to increase plasma leptin concentrations
+- examine effect of leptin on WAT lipolysis and hepatic gluconeogenesis
+- perform leptin dose-response studies in streptozotocin-induced rat model
+- examine impact of absence of leptin on WAT lipolysis and glucose production
+- examine effect of supraphysiologic leptin concentrations on WAT lipolysis
+- discuss role of leptin in stimulating sympathetic nervous system
+- compare results to previous studies on leptin's effect on glucose production
+- discuss differences between rodents and humans in insulinopenia- and hypoleptinemia-induced HPA axis activation
+- examine effect of caloric restriction on plasma leptin concentrations
+- discuss alternative mechanism of starvation regulating plasma leptin concentrations
+- examine effect of acute treatment with inhibitors on plasma glucose and leptin concentrations
+- discuss role of progressive reductions in plasma glucose concentrations in regulating plasma leptin concentrations
+- examine effect of increased plasma glucose concentrations on WAT glucose uptake and leptin secretion
+- discuss role of reductions in plasma glucose concentrations in stimulating HPA axis activity
+- examine effect of alanine infusion on hepatic gluconeogenesis and mitochondrial oxidation
+- discuss role of reductions in alanine turnover in suppressing hepatic mitochondrial oxidation rates
+- examine effect of glucose infusion on whole-body alanine turnover
+- summarize new concepts regarding leptin biology and regulation of substrate metabolism
+- describe progressive decreases in plasma glucose and insulin concentrations during early starvation
+- discuss role of reductions in plasma leptin concentrations in stimulating HPA axis activity
+- examine effect of increases in WAT lipolysis on hepatic acetyl-CoA content and gluconeogenesis
+- discuss necessity of insulinopenia for increased WAT lipolysis and gluconeogenesis
+- examine effect of decreased glucose-alanine cycling on hepatic pyruvate carboxylase flux and mitochondrial oxidation
+- discuss role of physiologic leptin replacement in inhibiting WAT lipolysis and gluconeogenesis
+- summarize findings on fasting-induced hepatic steatosis and lipid-induced hepatic insulin resistance
+
+### Example 3: Glucagon Allosterically Stimulates Gluconeogenesis by InsP3R-I Mediated Intrahepatic Lipolysis
+
+- introduce glucagon and its role in hyperglycemia
+- discuss glucagon-blocking therapies
+- describe dual glucagon-like peptide-1/glucagon receptor agonist
+- motivate glucagon's potential to promote hepatic mitochondrial fat oxidation
+- summarize glucagon's stimulation of hepatic glycogenolysis and gluconeogenesis
+- describe hepatic calcium signaling's role in transcriptional regulation of gluconeogenesis
+- discuss InsP3R-I's role in regulating gluconeogenic gene expression
+- introduce animal protocols
+- describe liver-specific InsP3R-I KO mice generation
+- outline animal care and housing
+- describe adeno-associated virus administration
+- outline surgical procedures
+- describe acute glucagon infusion studies
+- outline chronic glucagon infusion studies in mice
+- describe chronic glucagon infusion studies in rats
+- introduce in vivo studies
+- describe blood collection and plasma separation
+- outline PINTA analysis of hepatic mitochondrial fluxes
+- describe calculation of glucose turnover and VPC/VHGP ratio
+- outline correction for 13CO2 labeling of glucose
+- introduce glucagon allosterically stimulating gluconeogenesis
+- describe ex vivo NMR analysis
+- define HGP measurement
+- describe glucose tolerance tests
+- summarize biochemical analysis
+- describe plasma glucose measurement
+- describe plasma insulin measurement
+- describe plasma glucagon measurement
+- describe plasma NEFA measurement
+- describe liver acetyl- and malonyl-CoA measurement
+- describe liver DAG and ceramide measurement
+- describe cAMP measurement
+- describe protein concentration measurement
+- describe gluconeogenic gene mRNA expression measurement
+- introduce in vitro studies
+- describe primary hepatocyte isolation
+- describe Ca2+ imaging experiments
+- describe in vitro glucose production and lipolysis studies
+- describe glucose production assay
+- describe lipolysis assay
+- describe oxygen consumption measurement
+- introduce statistical analysis
+- describe comparison methods
+- introduce selected discussion
+- describe InsP3R-I knockout mice study
+- describe glucagon's acute effect on hepatic glucose production
+- introduce glucagon's effect on hepatic glucose production
+- describe hepatic long-chain acyl-CoA and acetyl-CoA content
+- discuss phosphorylation of acetyl-CoA carboxylase and AMPK
+- explain glucagon stimulation of intrahepatic lipolysis
+- describe increase in hepatic acetyl-CoA content
+- discuss malonyl-CoA suppression of carnitine palmitoyl transferase-I
+- describe glucagon-induced endogenous glucose production
+- discuss hepatic gluconeogenic response to glucagon
+- describe ATGL S406 phosphorylation
+- discuss HSL phosphorylation
+- describe glucagon stimulation of intrahepatic lipolysis
+- discuss InsP3R-mediated calcium signaling
+- describe glucagon stimulation of glucose production and VPC
+- discuss ATGL knockdown in liver-specific manner
+- describe glucagon's effect on HGP, VPC flux, and long-chain- and acetyl-CoA content
+- discuss alterations in hepatic gluconeogenesis rates
+- describe glucagon promotion of mitochondrial and cytosolic calcium signaling
+- discuss InsP3R agonist vasopressin
+- describe glucagon stimulation of hepatic mitochondrial oxidation
+- discuss VPDH and VPK flux
+- describe in vitro studies on oxygen consumption
+- discuss liver triglyceride concentrations
+- describe chronic glucagon infusion studies
+- discuss hepatic mitochondrial oxidation and fat oxidation
+- describe glucagon's effect on fasting plasma glucose and insulin concentrations
+- discuss hepatic triglyceride and diacylglycerol concentrations
+- describe PKCε translocation
+- discuss glucose tolerance and insulin sensitivity
+- describe chronic glucagon infusion in diet-induced obese WT and InsP3R-I KO mice
+- discuss InsP3R-I-mediated calcium signaling
+- summarize glucagon's effect on hepatic gluconeogenesis and mitochondrial oxidation
+- conclude glucagon biology and mechanistic insights
+

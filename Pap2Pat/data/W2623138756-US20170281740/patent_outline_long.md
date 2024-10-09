@@ -1,0 +1,242 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate to serodiagnosis of salmon poisoning disease
+
+## BACKGROUND
+
+- introduce salmon poisoning disease
+- describe history of disease discovery
+- explain life cycle of Neorickettsia helminthoeca
+- discuss geographic distribution of disease
+- describe symptoms of disease
+- discuss current therapies for disease
+- describe immunity to disease
+- classify Neorickettsia species
+- discuss molecular phylogenetic analyses
+- describe pathogenic species of Neorickettsia
+- discuss transmission of Neorickettsia
+- describe 16S rRNA gene sequence-based phylogenetic analysis
+- discuss abundance of Neorickettsia in nature
+- describe recent reports of new Neorickettsia genotypes
+- discuss global distribution of Neorickettsia spp
+- highlight need for rapid and sensitive serodiagnostic technique
+
+## SUMMARY
+
+- describe genome of N. helminthoeca Oregon
+- discuss metabolic capabilities of N. helminthoeca
+- identify genes involved in pathogenesis
+- describe cloning and expression of surface antigens
+- evaluate reactivity of dog blood specimens to antigens
+- disclose immunogenic composition
+- describe method of preventing or inhibiting SPD
+- disclose method for detecting N. helminthoeca infection
+
+## DETAILED DESCRIPTION
+
+- introduce isolated polypeptides
+- describe NH P51 protein
+- describe NH P51 functional derivative
+- describe NH P51 variant
+- describe NH SSA protein
+- describe NH SSA functional derivative
+- describe NH SSA variant
+- describe NH NSP1 protein
+- describe NH NSP1 functional derivative
+- describe NH NSP1 variant
+- describe NH NSP2 protein
+- describe NH NSP2 functional derivative
+- describe NH NSP2 variant
+- describe NH NSP3 protein
+- describe NH NSP3 functional derivative
+- describe NH NSP3 variant
+- define functional derivative
+- describe immunoreactivity
+- describe detection methods
+- describe variants
+- describe conservative substitutions
+- describe nonconservative substitutions
+- describe site-specific mutagenesis
+- describe preparation of variants
+- describe screening assays
+- describe fragments
+- describe immunoreactive fragments
+- describe fusion proteins
+- describe tags
+- describe chimeric proteins
+- describe uses of NH polypeptides
+- describe compositions of matter
+- describe multimeric forms
+- describe carriers
+- describe indicator reagents
+- describe polynucleotides
+- describe encoding NH P51 protein
+- describe encoding NH SSA protein
+- describe encoding NH NSP1 protein
+- describe encoding NH NSP2 protein
+- describe encoding NH NSP3 protein
+- define polynucleotides complementary to disclosed nucleic acid sequences
+- describe polynucleotides with degeneracy of genetic code
+- introduce functional equivalents of isolated polynucleotides and derivatives
+- describe addition, deletion or substitution of nucleotides to 5'-end and/or 3'-end
+- introduce structurally modified polypeptides with substantially same utility or activity
+- describe hybridization probes for isolating and identifying cDNA clones and genomic clones
+- define stringent conditions and highly stringent hybridization conditions
+- describe nucleic acid probe consisting of 10 to 1000 nucleotides
+- introduce hybridization probes with sequence at least 90% complementary to sense strand
+- describe labeling techniques for hybridization probes
+- introduce immobilization of nucleic acid probe on solid support
+- describe PCR primers for amplifying transcripts of genes encoding NH polypeptides
+- introduce primers with minimum of 12 to 15 nucleotides and maximum of 30 to 35 nucleotides
+- describe primers with at least 98% complementarity to sense strand or antisense strand
+- introduce design of probes and primers based on disclosed sequences
+- describe methods for diagnosing Neorickettsia helminthoeca infection using disclosed polypeptides
+- introduce immunodetection methods for detecting antibodies specific for Neorickettsia helminthoeca
+- describe immunogenic compositions comprising Neorickettsia helminthoeca proteins or immunogenic fragments
+- introduce vaccine comprising immunogenic NH polypeptide and pharmaceutically acceptable carrier
+- describe method of producing immune response which recognizes NH in a host
+- introduce method of preventing or inhibiting salmon poisoning disease in a subject
+- describe vaccine formulations including antigen amounts, route of administration, and addition of adjuvants
+- introduce adjuvants which enhance production of antibodies and immune cells
+- describe method of detecting infection with N. helminthoeca in a Canidae patient
+- introduce method of detecting N. helminthoeca polypeptides in a test sample
+- describe detection of polypeptide/antibody complexes
+- introduce method of detecting antibodies specific for N. helminthoeca
+- describe isolated or purified outer membrane protein of N. helminthoeca
+- introduce expression vector for transformation of a host cell
+- describe host cell comprising the expression vector
+- introduce isolated outer membrane protein of N. helminthoeca with at least 85% identity to SEQ ID NO: 1-5
+- describe isolated outer membrane protein of N. helminthoeca with at least 90% identity to SEQ ID NO: 1-5
+- introduce isolated outer membrane protein of N. helminthoeca with at least 95% identity to SEQ ID NO: 1-5
+- describe immunoreactive fragment of outer membrane protein
+- introduce kit for detecting N. helminthoeca in a subject
+- describe kit for detecting N. helminthoeca in a subject with biomolecule for detecting interaction
+- introduce reagent kit for detecting infection with N. helminthoeca in a subject
+- describe antibodies that specifically bind to a N. helminthoeca polypeptide
+- introduce various modifications of the invention
+- describe scope of the invention
+- conclude the invention
+
+### EXAMPLES
+
+- introduce examples
+- motivate analysis of complete genome sequence
+- describe Neorickettsia helminthoeca
+- explain salmon poisoning disease
+- analyze complete genome sequence
+- determine outer membrane proteins
+- test immunoreactivity of recombinant OMPs
+- describe general features of genome
+- analyze G+C content
+- predict replication origin
+- describe rRNA genes
+- identify tRNA genes
+- analyze protein-coding genes
+- compare genomic contents among Neorickettsia species
+- perform 2- and 3-way comparisons
+- identify conserved proteins
+- analyze species-specific genes
+- describe metabolism
+- analyze central metabolic pathways
+- describe energy production
+- discuss results
+- conclude example
+- introduce amino acid biosynthesis
+- describe fatty acid biosynthesis
+- discuss nucleotide and cofactor biosynthesis
+- summarize transporters and porins
+- describe DNA, RNA, protein synthesis, and DNA repair
+- introduce pathogenesis
+- discuss protein secretion systems
+- describe twin-arginine translocation pathway
+- summarize extracellular protein secretion systems
+- describe type I secretion system
+- discuss type IV secretion system
+- introduce two-component regulatory systems
+- describe histidine protein kinase/response regulator pairs
+- discuss one-component regulatory systems
+- summarize transcriptional regulations
+- introduce sigma factors
+- describe putative transcriptional regulators
+- discuss DNA-binding regulators
+- summarize NhxR homologs
+- describe Tr1 regulator
+- discuss other DNA-binding regulators
+- introduce protein synthesis and degradation
+- describe protein fate
+- summarize protein synthesis
+- discuss ribosomal proteins
+- introduce DNA repair
+- describe homologous recombination
+- discuss mismatch repair
+- summarize nucleotide excision repair
+- describe base excision repair
+- introduce DNA photolyases
+- discuss protein secretion
+- describe Sec-dependent pathway
+- summarize Tat pathway
+- introduce extracellular secretion systems
+- describe type I secretion system
+- discuss type IV secretion system
+- summarize two-component regulatory systems
+- describe one-component regulatory systems
+- discuss transcriptional regulations
+- introduce ankyrin domain proteins
+- describe ankyrin repeat-containing proteins
+- discuss AnkA protein of A. phagocytophilum
+- describe Ank200 of E. chaffeensis
+- identify ankyrin-repeat containing proteins in N. helminthoeca
+- analyze phylogenetic relationships of Ank proteins
+- introduce iron uptake and storage
+- describe iron transport across inner membranes
+- discuss iron uptake systems in Neorickettsia spp.
+- analyze bacterioferritin in Neorickettsia spp.
+- introduce cell wall components
+- describe lipopolysaccharide and peptidoglycan biosynthesis
+- analyze peptidoglycan biosynthesis genes in N. helminthoeca
+- discuss peptidoglycan components and immune response
+- introduce lipoproteins and putative outer membrane proteins
+- describe lipoprotein-processing enzymes
+- identify putative lipoproteins in N. helminthoeca
+- analyze outer membrane proteins in N. helminthoeca
+- describe beta-barrel assembly machinery
+- discuss outer surface proteins in Neorickettsia spp.
+- introduce strain-specific antigens
+- analyze phylogenetic relationships of SSA proteins
+- discuss immunoreactivities of putative outer membrane proteins
+- describe Western blot analysis of OMPs
+- analyze cross-reactivity of OMPs with other species
+- discuss potential diagnostic applications of OMPs
+- introduce conclusion and discussion
+- discuss significance of N. helminthoeca genome sequence
+- describe potential applications of comparative genomics
+- discuss importance of prevention and early diagnosis of SPD
+- describe serological assay based on OMP antigens
+- discuss epidemiological significance of OMP-based assay
+- introduce definitive hosts of N. helminthoeca-infected trematodes
+- discuss asymptomatic hosts and antibody responses
+- introduce serodiagnostic test for SPD in dogs
+- limitations of the assay
+- clinical diagnosis and sensitivity and specificity of the test
+- culture isolation of additional N. helminthoeca strains
+- characterization of antigenic surface proteins of N. helminthoeca
+- describe experimental procedures
+- culture N. helminthoeca Oregon strain
+- purify host cell-free bacteria for genome sequencing
+- prepare genomic DNA
+- sequence and annotate genome
+- prepare indexed Illumina mate pair libraries
+- prepare Illumina non-Truseq paired end genomic DNA libraries
+- sequence libraries on Illumina HiSeq 2500 and MiSeq
+- prepare DNA samples for PacBio sequencing
+- generate assemblies with various combinations of data and assembly algorithms
+- perform bioinformatic analysis
+- align 16S rRNA, NSP, P51, and SSA proteins with Neorickettsia orthologs
+- infer phylogenetic trees
+- calculate GC-skew and generate synteny plots
+- determine protein ortholog clusters and N. helminthoeca-specific genes
+- clone, express, and analyze putative N. helminthoeca outer membrane proteins
+- perform Western blot analysis
+

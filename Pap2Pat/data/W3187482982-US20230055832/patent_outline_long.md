@@ -1,0 +1,218 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate in situ analysis
+- limitations of existing methods
+
+## SUMMARY
+
+- introduce cleavable detectably-labeled tyramide
+- define detectable markers
+- describe method of multiplexed in situ analysis
+- outline steps of method
+- describe stripping of HRP-conjugated targeting agents
+- repeat steps for multiple target biomolecules
+- specify types of biomolecules
+- introduce kit for detecting target biomolecules
+- describe components of kit
+- outline instructions for kit
+
+## DETAILED DESCRIPTION
+
+- introduce in situ protein analysis approach
+- describe cleavable labeled tyramide (CLT) composition
+- motivate cleavable linker
+- describe cleavable linker structure
+- provide examples of suitable linkers
+- describe tyramide-N3— chemical structure
+- describe tyramide-N3-Cy5 chemical structure
+- summarize synthesis of tyramide-N3-Cy5
+- list fluorophores for use in cleavable detectably-labeled tyramide
+- define multiplexed in situ analysis
+- outline method for multiplexed in situ analysis
+- describe contacting tissue with HRP-conjugated antibody
+- describe contacting tissue with cleavable detectably-labeled tyramide
+- describe imaging step
+- describe cleavage step
+- outline reiterative cycles of analysis
+- describe targeting agents for protein detection
+- describe targeting agents for nucleic acid detection
+- describe targeting agents for carbohydrate detection
+- describe preparation of antibody-HRP conjugates
+- describe preparation of oligonucleotide-HRP conjugates
+- describe use of tyramide signal amplification buffer
+- describe removing step
+- list methods of removing detectable signal
+- introduce detectable marker removal
+- describe chemical cleavage of linker
+- specify temperature and time of incubation
+- mention washing step prior to next cycle
+- describe fluorescence photomicroscopy detection
+- introduce digital fluorescence microscopy
+- cite references for M-FISH and SKY
+- describe oligonucleotide targeting agent design
+- define binding and hybridization
+- describe blocking step to reduce background signal
+- specify washing step after cleaving detectable label
+- introduce stripping step
+- describe heat-induced stripping
+- describe combination of heat and other agents for stripping
+- specify sources of biological entities
+- describe cell or tissue fixation step
+- define biomolecule and biological molecule
+- define polypeptide, peptide, and protein
+- define nucleic acid and oligonucleotide
+- describe nucleic acid of interest and target nucleic acid
+- specify length of oligonucleotide probes
+- define hybridize and hybridization
+- describe kit components
+- specify detectable markers
+- describe written insert component
+- specify amplification reaction buffer and blocking reagent
+- describe hydrogen peroxide additive
+- specify TCEP and PTA for removing detectable label
+- describe use of kit components
+- define technical and scientific terms
+- describe publications incorporated by reference
+- define singular and plural forms
+- define "about"
+- describe various embodiments and aspects
+- cite experimental support
+- conclude description of patent application
+
+### EXAMPLES
+
+- introduce protein in situ profiling approach
+- motivate multiplexed protein analysis
+- describe limitations of existing methods
+- introduce cleavable fluorescent tyramide (CFT) approach
+- describe advantages of CFT approach
+- introduce high-performance CFT
+- describe synthesis of tyramide-N3-Cy5
+- describe characterization of tyramide-N3-Cy5
+- describe deparaffinization and antigen retrieval of FFPE tissue
+- describe protein staining in FFPE tissue
+- describe fluorophore cleavage and HRP deactivation
+- describe effect of cleavage by PTA
+- describe cell culture
+- describe cell fixation and permeabilization
+- describe immunofluorescence with CFT
+- describe multiplexed protein imaging in cells
+- describe multiplexed protein imaging in FFPE tissue
+- describe imaging and data analysis
+- introduce platform design
+- describe design and synthesis of high-performance CFT
+- motivate use of Cy5 as fluorophore
+- describe synthesis of tyramide-N3-Cy5
+- describe characterization of tyramide-N3-Cy5
+- describe efficient fluorophore cleavage
+- describe preservation of epitope integrity
+- describe simultaneous HRP deactivation and fluorophore cleavage
+- describe staining of multiple proteins in HeLa cells
+- describe signal removal efficiency
+- describe HRP deactivation efficiency
+- describe application of high-performance CFT
+- describe advantages of high-performance CFT
+- describe limitations of first-generation CFT
+- describe improved signal removal efficiency
+- describe improved HRP deactivation efficiency
+- describe preservation of epitope integrity
+- describe application of high-performance CFT in FFPE tissue
+- describe advantages of high-performance CFT in FFPE tissue
+- describe limitations of existing methods in FFPE tissue
+- describe improved protein profiling in FFPE tissue
+- summarize high-performance CFT approach
+- introduce multiplexed protein imaging
+- compare CFT with TSA approach
+- analyze protein expression heterogeneity
+- study protein expression correlation
+- identify regulatory network
+- demonstrate multiplexed in situ protein profiling
+- compare CFT with conventional TSA method
+- discuss limitations of existing reiterative protein staining approaches
+- evaluate high signal removal efficiency of CFT
+- summarize advantages of CFT approach
+- highlight improved detection sensitivity
+- emphasize benefits of using commercially available antibodies
+- introduce protein analysis
+- limitations of current methods
+- motivation for new approach
+- describe protein antigeneity preservation
+- describe epitope integrity maintenance
+- envision multiplexing capacity
+- describe application to in situ analysis
+- describe potential for combined DNA, RNA, protein, and metabolic analysis
+- list reference 1
+- list reference 2
+- list reference 3
+- list reference 4
+- list reference 5
+- list reference 6
+- list reference 7
+- list reference 8
+- list reference 9
+- list reference 10
+- list reference 11
+- list reference 12
+- list reference 13
+- list reference 14
+- list reference 15
+- list reference 16
+- list reference 17
+- list reference 18
+- list reference 49
+- introduce protein detection technology
+- motivate limitations of existing tools
+- summarize advantages of present technology
+- describe multiplexed protein detection process
+- outline six steps of analysis cycle
+- highlight importance of multiplexed single-cell protein analysis
+- motivate need for ultra-sensitive and multiplexed in situ protein profiling
+- describe existing multiplexed protein imaging technologies
+- highlight limitations of existing multiplexed protein imaging technologies
+- introduce approach using cleavable fluorescent tyramide and off-the-shelf antibodies
+- describe protein profiling approach
+- demonstrate feasibility of approach
+- apply approach to quantify 20 proteins in human FFPE tonsil tissue
+- partition individual cells into cell clusters based on protein expression profiles
+- study cell-cell interactions in tonsil tissue
+- conclude approach enables multiplexed protein imaging
+- introduce multiplexed single-cell protein analysis
+- motivate limitations of existing technologies
+- describe ultra-sensitive and multiplexed in situ protein profiling approach
+- explain application of approach in cell heterogeneity studies
+- describe advantages of approach over existing technologies
+- outline platform design
+- describe antibody stripping and epitope integrity
+- explain efficient antibody stripping
+- demonstrate epitope integrity after antibody stripping
+- describe multiplexed in situ protein profiling in FFPE tissues
+- demonstrate feasibility of approach in FFPE tissues
+- describe cell heterogeneity and spatial distribution in human tonsil tissue
+- analyze single-cell in situ protein expression profiles
+- identify cell clusters and their spatial distribution
+- investigate cell-cell interactions in human tonsil tissue
+- analyze cell-cell contacts between different cell clusters
+- identify subclusters based on cell-cell contacts
+- map subclusters to native tissue locations
+- discuss advantages of approach over existing technologies
+- discuss application of approach in cell heterogeneity studies
+- discuss potential of approach for profiling hundreds of protein targets
+- describe potential integration with nucleic acids and metabolic imaging technologies
+- outline potential for automatic tissue imaging platform
+- discuss potential applications in systems biology and biomedical studies
+- summarize approach and its advantages
+- conclude discussion
+
+### Materials and Methods
+
+- list chemicals and solvents
+- deparaffinize and retrieve antigens
+- deactivate endogenous HRP
+- stain proteins in FFPE tonsil tissue
+- cleave fluorophores and deactivate HRP
+- strip antibodies
+- image FFPE tonsil tissues
+- analyze image data
+

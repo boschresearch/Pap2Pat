@@ -1,0 +1,55 @@
+# DESCRIPTION
+
+- introduce microelectrodes and devices for neural interfacing applications
+- describe neurostimulation and recording electric signals
+- list examples of applications (cochlear implants, retinal implants, deep brain stimulation, cortical implants)
+- describe requirements for electrodes used for neurostimulation
+- discuss biocompatibility and charge transfer process
+- describe electrochemical properties required for electrodes
+- discuss limitations of MEA systems used ex-vivo
+- describe need for electrodes with small diameters
+- discuss problem of gradual degradation of electrodes
+- introduce synthetic diamond as a potential electrode material
+- describe properties of synthetic diamond (chemically and biologically inert, excellent electrochemical properties)
+- discuss growth of diamond films
+- describe properties of BDD diamond (quasi-metal conductivity, electrochemical properties)
+- discuss limitations of BDD diamond (small double layer electrochemical capacity, high impedance)
+- state technical problem to be solved (find biocompatible material with high interfacial capacitance and low electrochemical impedance)
+- introduce microelectrode with textured material (compact set of hollow or solid tubes)
+- describe structure of microelectrode (first substrate layer, second adhesion layer, third layer with tubes)
+- describe features of tubes (length, section, material)
+- describe method for manufacturing microelectrode
+- describe steps of manufacturing method (providing substrate, depositing adhesion layer, making third layer)
+- describe particular embodiments of manufacturing method
+- introduce multi-electrode network for neural interfacing applications
+- describe flexible implant for neural interfacing applications
+- describe method for manufacturing microelectrode (steps and particular embodiments)
+- describe advantages of microelectrodes according to the invention
+- summarize benefits of microelectrodes (large potential window, high electric double layer capacity, robustness, biocompatibility)
+- describe microelectrode arrangement
+- illustrate tube bundles
+- detail tube structure
+- motivate MEA network applications
+- describe flexible implant configuration
+- outline microelectrode manufacturing method
+- specify first substrate layer material
+- describe second layer deposition
+- detail third layer material and structure
+- outline steps for growing diamond on CNTs
+- describe CNT growth and diamond deposition
+- describe alternative electrode manufacturing method
+- motivate structured diamond material
+- describe structured diamond material properties
+- describe microelectrode structure
+- describe electric current outlet
+- describe passivation layer
+- describe method for producing current outlet and passivation layer
+- describe advantages of invention
+- describe method for manufacturing MEA multi-electrode network
+- describe depositing diamond particles
+- describe growing diamond and CNTs
+- describe structuring diamond electrodes
+- describe depositing metal contact outlet and passivation layer
+- describe alternative methods for manufacturing MEA multi-electrode network
+- describe method for manufacturing flexible implant
+

@@ -1,0 +1,376 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to treating chronic kidney disease
+
+## BACKGROUND OF THE INVENTION
+
+- define chronic kidney disease
+- describe prevalence of chronic kidney disease
+- discuss causes of end stage renal disease
+- describe comorbidities and risk factors
+- discuss limitations of current treatments
+- introduce regenerative medicine approaches
+- describe prior art in renal cell-based therapy
+
+## SUMMARY OF THE INVENTION
+
+- introduce therapeutic composition
+- describe method of treating chronic kidney disease
+- specify injection procedure
+- describe administration schedule
+- specify patient population
+- describe improved kidney function
+- specify bioactive renal cell population
+- describe cell isolation and expansion
+- specify biomaterial formulation
+- describe advantages of the invention
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- disclaim limitations of embodiments
+- establish application scope
+
+### Definitions
+
+- define technical terms
+- provide general guide to terms used
+- specify presence of stated features
+- define cell population
+- describe isolation and culturing of cell populations
+- define bioactive
+- describe bioactive renal cells
+- define selected renal cells
+- describe isolation and expansion of selected renal cells
+- define native organ
+- define native kidney
+- define regenerative effect
+- describe benefits to native organ
+- define admixture
+- describe enriched cell population
+- define hypoxic culture conditions
+- define oxygen-tunable
+- define biomaterial
+- describe biomaterial forms
+- define kidney disease
+- describe disorders associated with kidney disease
+- define treatment
+- describe therapeutic and prophylactic measures
+- define in vivo contacting
+- describe direct contact between products and native organ
+- define construct or formulation
+- describe cell populations deposited on biomaterial
+- define Neo-Kidney Augment (NKA)
+- define Advance Cell Therapy (ACT)
+- define subject
+- define patient
+- define sample or biological sample
+- define regenerated kidney
+- define hydrogel
+- define adverse event
+- define serious adverse event
+- introduce BRCs
+- describe cell culture medium
+- describe hypoxic culture conditions
+- describe density gradient separation
+- describe SRC generation
+- describe therapeutic compositions
+- describe bioactive renal cell populations
+- describe cell populations from healthy individuals
+- describe cell populations from individuals with kidney disease
+- describe cell populations from in vitro cultures
+- describe BRCs and SRCs from kidney biopsies
+- describe BRCs and SRCs from whole kidney tissue
+- describe therapeutically-active cell populations
+- describe SRCs from autologous sources
+- describe renal cell isolation and expansion
+- describe SRC characteristics
+- describe SRC function evaluation
+- introduce biomaterials
+- describe polymeric matrices
+- describe biocompatible materials
+- describe hydrogels
+- describe hydrogel properties
+- describe gelatin-based hydrogels
+- describe temperature-sensitive biomaterials
+- describe enzymatic degradation
+- describe biomaterial response to external conditions
+- describe favorable environment for active agents
+- describe bioactive cell formulations
+- describe implantable constructs
+- describe biomaterial-cell population combinations
+- describe Neo-Kidney Augment (NKA)
+- describe NKA composition
+- describe SRC isolation and expansion
+- describe SRC selection by density gradient centrifugation
+- describe NKA manufacturing process
+- describe renal cortical tissue collection
+- describe renal cell isolation and expansion
+- describe density gradient separation
+- describe NKA formulation
+- define biomaterials
+- describe association of bioactive cell population with biomaterial
+- motivate temperature-sensitive biomaterial
+- describe benefits of suspended cell population
+- describe manufacturing process for bioactive cell formulations
+- motivate cryopreservation of renal cells
+- describe composition of bioactive cell formulation
+- specify concentration of cells per mL
+- specify concentration of gelatin
+- describe presentation of NKA
+- calculate final volume of formulation
+- determine therapeutic dosage
+- describe dosage of cells to subject
+- describe therapeutically effective amount of bioactive renal cell populations
+- describe pharmaceutically acceptable carriers
+- formulate bioactive renal cell preparation
+- describe administration of bioactive cell formulation
+- describe cell viability agent
+- motivate methods of use
+- describe treatment of disease with bioactive cells
+- describe administration of bioactive cells to native organ
+- describe treatment of kidney disease
+- describe indicators of kidney function
+- describe effective treatment of kidney disease
+- describe stabilization of kidney function
+- describe improvement of kidney function
+- describe regeneration of native kidney
+- describe characterization of regenerated kidney
+- describe expression of stem cell markers
+- describe regenerative effect
+- describe assessment of regenerative outcome
+- describe analysis of microvesicle-associated miRNA/protein expression
+- describe methods of assessing responsiveness to treatment
+- describe non-invasive prognostic methods
+- describe methods and routes of administration
+- define administration methods
+- list modes of administration
+- describe surgical means of administration
+- outline delivery via laparoscopic or percutaneous technique
+- describe injection into renal cortex
+- discuss distribution of therapeutic formulation
+- describe use of imaging guidance
+- outline injection administration to single or both kidneys
+- introduce chronic kidney disease
+- describe characteristics of CKD
+- discuss global prevalence of CKD
+- outline associated morbidity and mortality
+- describe progressive staging of CKD
+- define estimated glomerular filtration rate
+- outline staging and grading of kidney function
+- describe standard-of-care in CKD
+- discuss treatment of patients with CKD
+- outline administration of ACEI and/or ARB
+- describe insulin and anti-diabetic agents for glycemic control
+- discuss statin therapy to counter dyslipidemia
+- describe renal replacement therapy
+- outline limitations of hemodialysis
+- discuss kidney transplantation
+- introduce therapeutic product Neo Kidney Augment
+- describe biologically active component SRC
+- outline scientific evaluation of SRC
+- describe development of NKA
+- outline manufacturing process of NKA
+- describe treatment regimen
+- discuss therapeutic dose selection
+- outline calculation of dosage
+- describe presentation of NKA
+- discuss number of treatments
+- outline cryopreservation of renal cells
+- describe administration of BRC or SRC
+- outline repeated or multiple injections
+- describe timing of injections
+- outline administration to one or both kidneys
+- provide examples of treatment regimens
+
+## EXAMPLES
+
+### Example 1—PHASE I, Open-Label Safety and Delivery Optimization Study of an Autologous Neo-Kidney Augment (NKA) in Patients with Chronic Kidney Disease (TNG-CL010)
+
+- introduce clinical trial
+- describe patient selection
+- outline study protocol
+- detail patient preparation
+- describe biopsy procedure
+- outline cell separation and preparation
+- formulate NKA product
+- measure cell viability
+- assess cell phenotype and potency
+- describe implantation procedure
+- detail Swedish implantation method
+- detail US implantation method
+- describe MR imaging protocol
+- measure cortical thickness
+- quantify kidney volume
+- describe renal scintigraphy protocol
+- assess differential renal function
+- outline biochemical analyses
+- describe statistical analyses
+- present estimated glomerular filtration rate results
+- compare pre- and post-injection eGFR decline
+- present individual patient eGFR results
+- present serum creatinine results
+- compare pre- and post-injection sCr increase
+
+### Example 2—PHASE II, Open-Label Safety and Efficacy Study of an Autologous Neo-Kidney Augment (NKA) in Patients with Type 2 Diabetes and Chronic Kidney Disease (RMCL-001)
+
+- introduce therapeutic product
+- describe NKA manufacturing process
+- state study objectives
+- define primary objective
+- define primary safety outcome measures
+- define primary efficacy outcome measures
+- define secondary objective
+- define secondary safety and tolerability outcome measures
+- define exploratory objective
+- define exploratory outcome measures
+- describe study design
+- state randomization method
+- describe control group
+- state sample size
+- describe study population
+- list inclusion criteria
+- list exclusion criteria
+- describe study duration
+- describe study enrollment
+- outline investigational plan
+- describe screening procedures
+- describe biopsy procedure
+- describe injection procedure
+- describe post-injection follow-up
+- describe long-term follow-up
+- state NKA dose
+- describe safety monitoring
+- describe injection procedure precautions
+- describe post-injection monitoring
+- describe analysis methods
+- state sample size justification
+- describe subgroup analyses
+- describe safety profile evaluation
+- list laboratory assessments
+- describe eGFR estimation
+- describe virology testing
+- describe laboratory result grading
+- describe imaging studies
+- describe vital sign monitoring
+- describe adverse event evaluation
+- describe event of special interest evaluation
+- describe study flow overview
+- introduce study design
+- outline urine chemistry assessments
+- describe research analytes
+- outline pregnancy testing
+- introduce renal imaging
+- describe ultrasound procedures
+- describe MRI procedures
+- describe renal scintigraphy
+- outline surgical procedures
+- describe biopsy procedures
+- outline guidance on wound care
+- describe injection procedures
+- outline percutaneous procedure
+- describe image guidance
+- outline procedural technique
+- describe NKA injection
+- outline post-injection procedures
+- describe laparoscopic procedure
+- outline post-procedure evaluation
+- describe initial results
+- outline patient outcomes
+- describe clinical outcomes
+- outline representative metabolic measures
+- describe eGFR decline
+- outline NKA injection effects
+- describe glomerular filtration rate
+- outline therapy for co-morbidities
+- describe blood pressure medication reduction
+- outline efficacy of re-injecting patients
+- describe potential dosing strategies
+- outline potential benefits of multiple doses
+- describe potential benefits of dosing both kidneys
+- outline potential impact on kidney function
+- describe potential therapeutic applications
+- outline potential future studies
+- conclude study findings
+
+### Example 3—NKA Injection for Interventional Radiology
+
+- clinic evaluation prior to procedure
+- determine cell suspension volume
+- specify needle size and placement
+- describe needle advancement and placement confirmation
+- outline NKA cell injection procedure
+- specify injection rate and volume
+- describe handling of renal masses and cysts
+- outline CT scan and sedation procedures
+- specify guidance for needle placement
+- evaluate for complications after withdrawal
+
+### Example 4—A Phase II, Open-Label Safety and Tolerability Study of an Autologous Neo-Kidney Augment (NKA) in Patients with Type 2 Diabetes and Chronic Kidney Disease (RMCL-002 and RMCL-003)
+
+- introduce NKA product
+- state study purpose
+- propose NKA treatment effect
+- list study objectives
+- define primary objective
+- define primary outcome measures
+- define secondary objective
+- define secondary outcome measures
+- define exploratory objective
+- define exploratory outcome measures
+- describe study design
+- describe randomization
+- describe control group
+- state sample size
+- describe study population
+- list inclusion criteria
+- list exclusion criteria
+- describe number of sites
+- specify patient age range
+- specify eGFR range
+- specify blood pressure range
+- introduce study design
+- describe study duration
+- outline study enrollment
+- detail investigational plan
+- describe screening procedures
+- outline renal biopsy procedure
+- describe NKA injection procedure
+- detail follow-up evaluations
+- outline safety monitoring
+- describe investigational product
+- detail dosage and mode of administration
+- outline statistical analysis methods
+- provide rationale for two NKA injections
+- discuss safety of two NKA injections
+- describe laboratory assessments
+- detail eGFR measurement
+- outline routine urinalysis
+- describe hematology assessments
+- detail virus serology testing
+- outline drug screen
+- describe pregnancy screen
+- detail renal imaging assessments
+- outline ultrasound procedures
+- describe computerized tomography procedures
+- detail magnetic resonance imaging procedures
+- outline renal scintigraphy procedures
+- describe surgical procedures
+- detail biopsy procedure
+- outline NKA injection procedure
+- describe post-procedure care
+- detail wound care and pain management
+- outline NKA injection evaluation
+- describe prophylactic antibiotics administration
+- detail CT scan procedures
+- outline NKA delivery procedure
+- describe moderate conscious sedation
+- detail post-procedure imaging
+- outline track embolization procedure
+- describe post-procedure monitoring
+- detail discharge criteria
+- outline study visit schedule
+- describe data collection and analysis
+- summarize study objectives
+

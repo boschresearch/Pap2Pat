@@ -1,0 +1,1779 @@
+# DESCRIPTION
+
+This application claims the benefit of U.S. Provisional Application No. 61/381,364 filed Sep. 9, 2010 and U.S. Provisional Application No. 61/266,061 filed Dec. 2, 2009, which are incorporated by reference herein.
+
+## BACKGROUND OF THE INVENTION
+
+Fibroblast Growth Factor 21 (FGF21) is a secreted polypeptide that belongs to a subfamily of Fibroblast Growth Factors (FGFs) that includes FGF19, FGF21, and FGF23 (Itoh et al., 2004, Trend Genet. 20: 563-69). FGF21 is an a typical FGF in that it is heparin independent and functions as a hormone in the regulation of glucose, lipid, and energy metabolism.
+
+FGF21 is highly expressed in liver and pancreas and is the only member of the FGF family to be primarily expressed in liver. Transgenic mice overexpressing FGF21 exhibit metabolic phenotypes of slow growth rate, low plasma glucose and triglyceride levels, and an absence of age-associated type 2 diabetes, islet hyperplasia, and obesity. Pharmacological administration of recombinant FGF21 protein in rodent and primate models results in normalized levels of plasma glucose, reduced triglyceride and cholesterol levels, and improved glucose tolerance and insulin sensitivity. In addition, FGF21 reduces body weight and body fat by increasing energy expenditure, physical activity, and metabolic rate. (Xu et al. 2009 Diabetes 58:250-259) There is also evidence that FGF21 may have a protective effect in acute pancreatitis (Johnson et al. 2009 Gasteroenterology 137(5):1795-1804).
+
+Experimental research provides support for the pharmacological administration of FGF21 for the treatment of type 2 diabetes, obesity, dyslipidemia, and other metabolic conditions or disorders in humans. (Xu et al., 2009 Am J Physiol Endocrinol Metab. 297:E1105-E1114; Reviewed in Ryden 2009 Cell Mol Life Sci. 66:2067-73)
+
+FGF21 is a liver derived endocrine hormone that stimulates glucose uptake in adipocytes and lipid homeostasis through the activation of its receptor. Interestingly, in addition to the canonical FGF receptor, FGFR1c, the FGF21 receptor also consists of the membrane associated β-Klotho as an essential cofactor. Activation of the FGF21 receptor leads to multiple beneficial effects on a variety of metabolic parameters.
+
+In mammals, FGFs mediate their action via a set of four FGF receptors FGFR1-4 that in turn are expressed in multiple spliced variants. Each FGF receptor contains an intracellular tyrosine kinase domain that is activated upon ligand binding, leading to downstream signaling pathways involving MAPKs (Erk1/2), RAF1, AKT1 and STATs. (Kharitonenkov et al., 2008 BioDrugs 22:37-44). Several reports suggested that the “c”-reporter splice variants of FGFR1-3 exhibit specific affinity to βKlotho and could act as endogenous receptor for FGF21 (Kurosu et al., 2007 J. Biol. Chem. 282:26687-26695); Ogawa et al., 2007 Proc. Natl. Acad. Sci. USA 104:7432-7437; Kharitonenkov et al., 2008 J. Cell Physiol. 215, 1-7). In the liver, which abundantly expresses both βKlotho and FGFR4, FGF21 does not induce phosphrylation of MAPK albeit the strong binding of FGF21 to the βKlotho-FGFR4 complex. In 3T3-L1 cells and white adipose tissue, FGFR1 is by far the most abundant receptor, and it is therefore most likely that FGF21's main functional receptors in this tissue are the βKlotho-FGFR1c complexes.
+
+The present disclosure provides binding proteins, including bispecific binding proteins, that can activate FGF21-mediated signaling, i.e., an agonistic binding protein that mimics the function of FGF21. Such a binding protein can be a molecule with FGF21-like activity and selectivity but with added therapeutically desirable characteristics such as protein stability, low immunogenicity, ease of production and a desirable in vivo half-life.
+
+## BRIEF SUMMARY OF THE INVENTION
+
+In one aspect of the present disclosure a binding protein that selectively binds β-Klotho is provided. In one embodiment the binding protein comprises one or more of:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position. In specific embodiments the binding protein of claim 1, wherein the binding protein comprises one or more of:
+
+A binding protein that selectively binds β-Klotho is provided. In one embodiment the binding protein comprises one or more of:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position. In specific embodiments the binding protein comprises one or more of:
+
+In another aspect of the present disclosure a binding protein that selectively binds FGFR1c is provided. In one embodiment the binding protein comprises:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position.
+
+In specific embodiments the binding protein comprises one or more of:
+
+The binding protein can further comprise a linker comprising the sequence SAPASEPPGSL (SEQ ID NO: 12).
+
+In yet other specific embodiments the binding protein comprises one or more of:
+
+In yet another embodiment the binding protein comprises the sequence:
+
+In a further aspect of the present disclosure a binding protein that selectively binds β-Klotho is provided. In one embodiment the binding protein comprises:
+
+(a) a first β-Klotho binding domain comprising a sequence selected from the group represented by the sequences:
+
+(b) a second β-Klotho binding domain comprising a sequence selected from the group represented by the sequences:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position.
+
+In one embodiment the binding protein further comprises at least one linker joining (a) and (b). The linker can be, for example, one or more of: ETPT (SEQ ID NO: 1319), GDSHILPFSTPGPST (SEQ ID NO: 14), SAPASEPPGSL (SEQ ID NO:12), PAPT (SEQ ID NO:1320), QAPT (SEQ ID NO:1321), AQPT (SEQ ID NO:1322), AHT, PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), GRPGPGATSAPAA (SEQ ID NO: 13). In other specific embodiments the β-Klotho binding domain of (a) comprises one or more of:
+
+In yet other specific embodiments the β-Klotho binding domain of (b) comprises one or more of:
+
+In still another aspect of the present disclosure a binding protein that selectively binds β-Klotho and FGFR1c is provided. In one embodiment the binding protein comprises (a) one or more domains that selectively bind β-Klotho, and (b) one or more domains that selectively bind FGFR1c, wherein the binding protein comprises:
+
+(a) a β-Klotho binding domain comprising one or more of:
+
+(b) an FGFR1c binding domain comprising one or more of:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position. The binding protein can further comprise at least one linker joining (a) and (b). In specific embodiments the linker is one or more of: ETPT (SEQ ID NO: 1319), GDSHILPFSTPGPST (SEQ ID NO: 14), SAPASEPPGSL (SEQ ID NO:12), PAPT (SEQ ID NO:1320), QAPT (SEQ ID NO:1321), AQPT (SEQ ID NO:1322), AHT, PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), GRPGPGATSAPAA (SEQ ID NO: 13). In other specific embodiments
+
+(i) the β-Klotho binding domain of (a) comprises one or more of:
+
+(ii) the FGFR1c binding domain of (b) comprises one or more of:
+
+In still other specific embodiments the FGFR1c binding domain of (b) further comprises a linker comprising the sequence SAPASEPPGSL (SEQ ID NO: 12). In yet other specific embodiments the FGFR1c binding domain comprises one or more of:
+
+In still another aspect of the present disclosure a binding protein that selectively binds β-Klotho and FGFR1c comprising (a) one or more domains that selectively bind β-Klotho, and (b) one or more domains that selectively bind FGFR1c is provided. In one embodiment the binding protein comprises:
+
+(a) a β-Klotho binding domain comprising one or more of:
+
+- - and
+
+(b) an FGFR1c binding domain comprising a sequence selected from the group represented by the sequence:
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position. The binding protein can further comprises at least one linker joining (a) and (b). In specific embodiments the linker is one or more of: ETPT (SEQ ID NO: 1319), GDSHILPFSTPGPST (SEQ ID NO: 14), SAPASEPPGSL (SEQ ID NO:12), PAPT (SEQ ID NO:1320), QAPT (SEQ ID NO:1321), AQPT (SEQ ID NO:1322), AHT, PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), GRPGPGATSAPAA (SEQ ID NO: 13). In particular embodiments
+
+(i) the β-Klotho binding domain of (a) comprises one or more of:
+
+The FGFR1c binding domain of (b) can further comprise a linker; in one embodiment the linker comprises the sequence SAPASEPPGSL (SEQ ID NO: 12). In particular embodiments the FGFR1c binding domain comprises one or more of:
+
+In still another aspect a binding protein that selectively binds β-Klotho and FGFR1c comprising (a) one or more domains that selectively bind β-Klotho, and (b) one or more domains that selectively bind FGFR1c is provided. In one embodiment the binding protein comprises:
+
+(a) a β-Klotho binding domain comprising:
+
+
+- - (i) a first binding domain comprising one or more of:
+
+- - (ii) a second binding domain comprising one or more of:
+
+- - - and
+
+  - (iii) a linker joining the first binding domain and the second
+    binding domain; and
+
+(b) an FGFR1c binding domain comprising a sequence selected from the group represented by the sequence:
+
+CG[AE][GS]LFTC[GR][NRS][AST][KN]ICIS[EHQS][AV]W[IV]CDG[IV]DDC[DE]DNSDE[DKMNT][NSY]C; (SEQ ID NO: 108) and
+
+(c) a linker joining the sequences of (a) and (b),
+
+wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position. In particular embodiments the first binding domain of (a) comprises one or more of:
+
+In other particular embodiments the second binding domain of (a) comprises one or more of:
+
+In yet other embodiments the linker of (a) comprises one or more of: ETPT (SEQ ID NO: 1319), GDSHILPFSTPGPST (SEQ ID NO: 14), SAPASEPPGSL (SEQ ID NO:12), PAPT (SEQ ID NO:1320) and QAPT (SEQ ID NO:1321). In still further embodiments the FGFR1c binding domain comprises one or more of:
+
+The FGFR1c binding domain can further comprise a linker comprising the sequence SAPASEPPGSL (SEQ ID NO: 12) and, in specific embodiments can comprise one or more of:
+
+For example, the FGFR1c binding domain can comprise one or more of: CGEGLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASEPPGSL (SEQ ID NO: 297). In still further embodiments the linker of (c) can comprise one or more of: AQPT (SEQ ID NO:1322), AHT, PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), SAPASEPPGSL (SEQ ID NO: 12), GRPGPGATSAPAA (SEQ ID NO: 13), and GDSHILPFSTPGPST (SEQ ID NO: 14). In one particular embodiment the binding protein comprises the sequence: CGADQFRCGNGSCVPRAWRCDGVDDCGDGSDEAPEICETPTCQSNEFRCRSGRCIPQ HWLCDGLNDCGDGSDESQQCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDD CEDNSDENNCSAPASEPPGSL (SEQ ID NO: 359). In another particular embodiment the binding protein comprises the sequence: CLPDEFQCGSGRCIPQHWLCDGLNDCGDGSDE PPAHCSAPASEPPGSLCRAGEFRCSNGRCVPLTWLCDGEDDCQDNSDEKNCAQPTCG EGLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASEPPGSL (SEQ ID NO:339). In yet another particular embodiment the binding protein comprises the sequence: CAPGEFTCKNTGRCIPLNWRCDGDDDCGDGSDETDCPAPTCPSNQFPCRSTGICIPLA WVCDGLNDCGDGSDESPAHCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDD CEDNSDENNCSAPASEPPGSL (SEQ ID NO:1270). In still a further particular embodiment the binding protein comprises the sequence: CGPDEFRCNNGQCIPLP WRCDGVDDCGDNSDEPLEICQAPTCQSNEFRCRSGRCIPQHWLCDGLNDCGDGSDE PPAHCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASE PPGSL (SEQ ID NO:1271).
+
+In another aspect a binding protein is provided that comprises:
+
+(B1)a-(L1)x-(B2)b-(L2)y-(1C)c-(L3)z
+
+wherein a, b, c, x, y, and z is 0, 1, or 2, provided however that at least one of a, b, and c is 1 or 2; wherein B1 is an amino acid sequence comprising one or more of: C[AGP][APS][DGN][EQ]F[QRT]C[GNRS][GNS][GT][GKQS][-IK]C[ILV]P [LQRV][AEHP]W[LRV]CDG[DLV][DN]DCGD[GN]SDE[AEKPS][GLPS][-AEV][-IT]C (SEQ ID NO: 254); CLPDEFQC[SG]SGRCIPQ[HT]W[VL]CDGLNDCGD GSDE[PS]PA[HT]C (SEQ ID NO: 597); and C[AGPR][AP][DGNS][EQ]F[QRT]C [GSK]N[GT][GHR][R]C[ILV][PS][ALQ][NST]W[LRV]CDG[DEV]DDC[GL]DGSDE[AE T][DNS][-A][-T]C (SEQ ID NO:249); wherein B2 is an amino acid sequence comprising one or more of: CQSNEFRCRSGRCIPQHWLCDGLNDCGDGSDE[PS][PQ][AQ][-H]C (SEQ ID NO: 394); C[ELPQR][APS][DGIN][EGQ][FQ][FKPQRT][-E]C[GNRS][NS]G [HNQR]C[IV]P[AELPQRV][AHPQRT]W[LRV]CDG[DEV][DNP]DC[GLQ]D[DGNS]SD E[AEKT][DGLNS][-A][-H]C (SEQ ID NO: 217); and C[AGP][APS][DGN][EQ]F [QRT]C[GNRS][GNS][GT][GKQS][-IK]C[ILV]P [LQRV][AEHP]W[LRV]CDG [DLV][DN]DCGD[GN]SDE[AEKPS][GLPS][-AEV][-IT]C (SEQ ID NO: 254); wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position; wherein 1C is an amino acid sequence comprising CG[AE][GS]LFTC[GR][NRS][AST][KN]ICIS[EHQS][AV]W[IV]CDG[IV] DDC[DE]DNSDE[DKMNT][NSY]C (SEQ ID NO: 108); wherein amino acids in brackets indicate alternative amino acids at a specified position and “-” indicates no amino acid at the specified position; wherein L1 is an amino acid sequence comprising one or more of: ETPT (SEQ ID NO: 1319), GDSHILPFSTPGPST (SEQ ID NO: 14), SAPASEPPGSL (SEQ ID NO:12), PAPT (SEQ ID NO:1320) and QAPT (SEQ ID NO:1321); wherein L2 is an amino acid sequence comprising one or more of: AQPT (SEQ ID NO:1322), AHT, PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), SAPASEPPGSL (SEQ ID NO: 12), GRPGPGATSAPAA (SEQ ID NO: 13), and GDSHILPFSTPGPST (SEQ ID NO: 14); and wherein L3 is SAPASEPPGSL.
+
+In a further aspect, the binding proteins provided herein can further comprise a half life-extending moiety that increases the serum half-life of the binding protein in a mammal compared to the serum half-life of the binding protein lacking the half life-extending moiety in a mammal. For example, the half life-extending moiety is one or more of: polyethylene glycol (PEG), human serum albumin (HSA), an immunoglobulin (IgG), and an Fc moiety. The half life-extending moiety can also comprise a protein sequence that specifically binds a blood factor, such as serum albumin, an immunoglobulin or an erythrocyte.
+
+In another aspect the binding protein can comprise an amino acid sequence comprising one or more non-naturally occurring amino acids.
+
+Also provided is a polynucleotide encoding a binding protein comprising, in various embodiments, one or more of: (a) a β-Klotho binding domain; (b) an FGFR1c binding domain; (c) one or more β-Klotho binding domains and an FGFR1c binding domain; and (c) a binding protein comprising the amino acid sequence CGADQFRCGNGSCVPR AWRCDGVDDCGDGSDEAPEICETPTCQSNEFRCRSGRCIPQHWLCDGLNDCGDGSD ESQQCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASE PPGSL (SEQ ID NO: 359); CLPDEFQCGSGRCIPQHWLCDGLNDCGDGSDEPP AHCSAPASEPPGSLCRAGEFRCSNGRCVPLTWLCDGEDDCQDNSDEKNCAQPTCGE GLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASEPPGSL (SEQ ID NO:339); CAPGEFTCKNTGRCIPLNRWRCDGDDDCGDGSDETDCPAPTCPSNQFPCRSTGICIPLA WVCDGLNDCGDGSDESPAHCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDD CEDNSDENNCSAPASEPPGSL (SEQ ID NO:1270); or CGPDEFRCNNGQCIPLP WRCDGVDDCGDNSDEPLEICQAPTCQSNEFRCRSGRCIPQHWLCDGLNDCGDGSDE PPAHCSAPASEPPGSLCGEGLFTCRSTNICISHAWVCDGVDDCEDNSDENNCSAPASE PPGSL (SEQ ID NO:1271). The encoded binding proteins can also comprise a half-life extending moiety. Also provided are an expression vector comprising any of the provided polynucleotides, as well as host cells comprising the expression vector. A method of making a binding protein is also provided and comprises incubating the disclosed host cells under conditions suitable to induce expression of the binding protein, and optionally isolating the expressed polypeptide.
+
+In another aspect, a pharmaceutical composition is provided and in particular embodiments comprises: (a) a binding protein provided herein; and (b) a pharmaceutically acceptable formulation agent. The pharmaceutically acceptable formulation agent can be a carrier, adjuvant, solubilizer, stabilizer, or anti-oxidant.
+
+In still a further aspect a method for treating a metabolic disorder is provided. The method comprises administering to a human patient in need thereof the disclosed pharmaceutical compositions. The metabolic disorder can be, for example, one or more of: diabetes, obesity, dyslipidimia, hypertension, hepatosteaotosis, non-alcoholic steatohepatitis (NASH), acute pancreatitis, metabolic syndrome, cardiovascular disease, such as atherosclerosis, and aging. In a specific embodiment the metabolic disorder is diabetes, and in another specific embodiment the metabolic disorder is obesity.
+
+In one aspect the present disclosure provides binding proteins, monomers and multimers comprising amino acid sequences that are at least 80%, 85%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98%, or 99% identical to the amino acid sequences of the binding proteins, monomers and multimers disclosed herein.
+
+In another aspect, the binding proteins, monomers and multimers disclosed herein are recombinant, and thus are not found in nature. Such binding proteins, monomers and multimers are engineered as described herein.
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Definitions
+
+The section headings used herein are for organizational purposes only and are not to be construed as limiting the subject matter described.
+
+Unless otherwise defined herein, scientific and technical terms used in connection with the present application shall have the meanings that are commonly understood by those of ordinary skill in the art. Further, unless otherwise required by context, singular terms shall include pluralities and plural terms shall include the singular.
+
+Following standard convention, as used herein, “a” and “an” mean one or more unless specifically indicated otherwise.
+
+As used herein, use of parentheses in a sequence motif indicates that that the positions within the brackets can be present or absent (e.g., “[ekq]” indicates that the position is absent or either E, K, or Q can be at that position). When more than one “x” is used in parentheses (e.g., “[xx]”), each x represents a possible position. Thus “[xx]” indicates that zero, one or two amino acids can be at that position(s), where each amino acid is independently selected from any amino acid. Absent amino acids can also be designated by “-.”
+
+The term “FGF21-like signaling activity” means exhibiting an FGF21-like agonistic efficacy level of equal to or greater than 5% 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85% and preferably equal to or greater than 90%, 95%, 96%, 97%, 98%, 99%, or 100% of the activity of FGF21 in one of the following assays: (1) a reporter, e.g. luciferase, assay in a recombinant cell line engineered to respond to FGF21 such as the assay described in Example 9; (2) an assay that demonstrates changes in the downstream signaling molecules, e.g., ERK-phosphorylation in a recombinant cell line, e.g., rat myoblastic L6 cells engineered to respond to FGF21, such as the assay described in Example 10; and (3) an assay that demonstrates changes in the downstream signaling molecules, e.g., ERK-phosphorylation in primary human adipocytes which respond to FGF21, such as the assay described in Example 11. The “potency” of the substantial activity of such a binding protein is defined as having EC50 of equal of or less than 100 nM and preferably less than 10 nM of the binding protein in the aforementioned assays.
+
+As used herein, the term “binding protein” refers to a protein that specifically binds a specified target protein, such as FGFR1c, β-Klotho or both FGFR1c and β-Klotho, e.g., human FGFR1c, human β-Klotho or both human FGFR1c and human β-Klotho. A binding protein can comprise one or more monomers, as defined and described herein, joined to one another via a linker sequence to form a “multimer.” For clarity, the definition of a binding protein specifically excludes antibodies.
+
+A binding protein is said to “specifically bind” its target when the dissociation constant (KD) is ≦10−7 M. A binding protein specifically binds its target with “high affinity” when the KD is ≦5×10−9 M, and with “very high affinity” when the KD is ≦5×10−10 M when tested using a binding assay, such as the assay described in Example 7. In one embodiment, a binding protein will bind to FGFR1c, β-Klotho or both FGFR1c and β-Klotho, e.g. human FGFR1c, human β-Klotho or both human FGFR1c and human β-Klotho, with an EC50 of between about 10−8 M and 10−10 M as determined by binding ELISA, and in yet another embodiment the binding proteins will bind with a EC50≦5×10−9 as determined by binding ELISA. Thus, the phrase “specifically (or selectively) binds” to a polypeptide, when referring to a monomer, multimer, or binding protein, refers to a binding reaction that can be determinative of the presence of the polypeptide in a heterogeneous population of proteins (e.g., a cell or tissue lysate) and other biologics. Thus, under standard conditions or assays used in antibody binding assays, a binding protein (e.g., a monomer or multimer) specifically binds to a particular target molecule above background (e.g., 2×, 5×, 10× or more above background) and does not bind in a significant amount to other molecules present in the sample.
+
+The terms “monomer domain” or “monomer” are used interchangeably herein refer to a discrete region found in a protein or polypeptide. A monomer domain can form a native three-dimensional structure in solution in the absence of flanking native amino acid sequences. Some monomer domains disclosed herein can specifically bind to a target molecule. For example, a polypeptide that forms a three-dimensional structure that binds to a target molecule is a monomer domain. As used herein, the term “monomer domain” does not encompass the complementarity determining region (CDR) of an antibody. Two or more monomers can be joined to one another via a linker sequence to form a multimer.
+
+The term “monomer domain variant” refers to a monomer domain resulting from human manipulation of a monomer domain sequence. Examples of human-manipulated changes include, e.g., random mutagenesis, site-specific mutagenesis, recombining, directed evolution, oligo-directed forced crossover events, direct gene synthesis incorporation of mutation, etc. The term “monomer domain variant” does not embrace a mutagenized complementarity determining region (CDR) of an antibody.
+
+The term “loop” refers to a portion of a monomer domain that is typically exposed to the environment by the assembly of the scaffold structure of the monomer domain protein, and which is involved in target binding. The present disclosure provides three types of loops that are identified by specific features, such as, potential for disulfide bonding, bridging between secondary protein structures, and molecular dynamics (e.g., flexibility). The three types of loop sequences are a cysteine-defined loop sequence, a structure-defined loop sequence, and a B-factor-defined loop sequence.
+
+As used herein, the term “cysteine-defined loop sequence” refers to a subsequence of a naturally occurring monomer domain-encoding sequence that is bound at each end by a cysteine residue that is conserved with respect to at least one other naturally occurring monomer domain of the same family. Cysteine-defined loop sequences are identified by multiple sequence alignment of the naturally occurring monomer domains, followed by sequence analysis to identify conserved cysteine residues. The sequence between each consecutive pair of conserved cysteine residues is a cysteine-defined loop sequence. The cysteine-defined loop sequence does not include the cysteine residues adjacent to each terminus. Monomer domains having cysteine-defined loop sequences include the LDL receptor A-domains, EGF-like domains, sushi domains, Fibronectin type 1 domains, and the like. Thus, for example, in the case of LDL receptor A-domains represented by the consensus sequence, CX6CX4CX6CX5CX8C (SEQ ID NO: 5), wherein X6, X4, X5, and X8 each represent a cysteine-defined loop sequence comprising the designated number of amino acids.
+
+The term “B-factor-defined loop sequence” refers to a subsequence of at least three amino acid residues of a monomer-domain encoding sequence in which the B-factors for the alpha carbons in the B-factor-defined loop are among the 25% highest alpha carbon B factors in the entire monomer domain. Typically the average alpha-carbon B-factor for the subsequence is at least about 65. As used herein, the term “B-factor” (or “temperature factor” or “Debye-Waller factor”) is derived from X-ray scattering data. The B-factor is a factor that can be applied to the X-ray scattering term for each atom, or for groups of atoms, that describes the degree to which electron density is spread out B-factors employed in the practice disclosed herein can be either isotropic or anisotropic. The term “average alpha-carbon B-factor” refers to:
+
+\(\left( {\sum\limits_{i = 1}^{n}{B\text{-}{factor}_{C\; \alpha \; i}}} \right)/n\)
+
+where n corresponds to the number of residues in the loop, and is at least 3, and B-factorCαi is the B-factor for the alpha carbon of amino acid residue i of the loop.
+
+The term “multimer” is used herein to indicate a protein comprising at least two monomer domains. The separate monomer domains in a multimer can be joined together by a linker A multimer is also known as a combinatorial mosaic protein or a recombinant mosaic protein.
+
+The term “family” and “family class” are used interchangeably to indicate proteins that are grouped together based on similarities in their amino acid sequences. These similar sequences are generally conserved because they are important for the function of the protein and/or the maintenance of the three dimensional structure of the protein. Examples of such families include LDL Receptor A-domain family, the FGF19 subfamily of the FGF family, and the like. Additionally, related sequences that bind to the same target molecule can be divided into families based on common sequence motifs.
+
+The term “ligand,” also referred to herein as a “target molecule,” encompasses a wide variety of substances and molecules, which range from simple molecules to complex targets. Target molecules can be proteins, nucleic acids, lipids, carbohydrates or any other molecule capable of recognition by a monomer domain. For example, a target molecule can include a chemical compound (i.e., non-biological compound such as, e.g., an organic molecule, an inorganic molecule, or a molecule having both organic and inorganic atoms, but excluding polynucleotides and proteins), a mixture of chemical compounds, an array of spatially localized compounds, a biological macromolecule, a bacteriophage peptide display library, a polysome peptide display library, an extract made from a biological materials such as bacteria, plants, fungi, or animal (e.g., mammalian) cells or tissue, a protein, a toxin, a peptide hormone, a cell, a virus, or the like. Other target molecules include, e.g., a whole cell, a whole tissue, a mixture of related or unrelated proteins, a mixture of viruses or bacterial strains or the like. Target molecules can also be defined by inclusion in screening assays described herein or by enhancing or inhibiting a specific protein interaction (i.e., an agent that selectively inhibits a binding interaction between two predetermined polypeptides). Examples of target molecules include β-Klotho and FGFR1c.
+
+The term “linker” is used herein to indicate a moiety or group of moieties that joins or connects two or more discrete separate monomer domains. A linker allows the discrete separate monomer domains to remain separate when joined together in a multimer. A linker moiety is typically a substantially linear moiety. Suitable linkers include polypeptides, polynucleic acids, peptide nucleic acids and the like. Suitable linkers also include optionally substituted alkylene moieties that have one or more oxygen atoms incorporated in the carbon backbone. Typically, the molecular weight of the linker is less than about 2000 daltons. More typically, the molecular weight of the linker is less than about 1500 daltons and often is less than about 1000 daltons. A linker can be small enough to allow the discrete separate monomer domains to cooperate, e.g., where each of the discrete separate monomer domains in a multimer binds to the same target molecule via separate binding sites. Exemplary linkers include a polynucleotide encoding a polypeptide, or a polypeptide of amino acids or other non-naturally occurring moieties. A linker can be a portion of a native sequence, a variant thereof, or a synthetic sequence. Linkers can comprise, e.g., naturally occurring, non-naturally occurring amino acids, or a combination of both. Examples of particular linkers that can be employed in the binding proteins disclosed herein include ATHT (SEQ ID NO: 6), PERT (SEQ ID NO: 7), TTRT (SEQ ID NO: 8), GTTGPT (SEQ ID NO: 9), ETSGPT (SEQ ID NO: 10), SQDPEFHKVS (SEQ ID NO: 11), SAPASEPPGSL (SEQ ID NO: 12), GRPGPGATSAPAA (SEQ ID NO: 13), GDSHILPFSTPGPST (SEQ ID NO: 14), [AEKPT][AEKLPT][EHPR]T (SEQ ID NO: 15), [AEKRT][AGS][APSV][AEGV][HP]T (SEQ ID NO: 16), PTKRPEEV (SEQ ID NO: 17), SQDPEFHKV (SEQ ID NO: 18), SAPASEPPGSL (SEQ ID NO: 12), GRPGPGATSAPAA (SEQ ID NO: 13), GDSHILPFSTPGPST (SEQ ID NO: 14), [AEPT][AEPQ][HP]T (SEQ ID NO: 22), [EGT][AGR][AST][EGV][PR]T (SEQ ID NO: 23), KAPVPT (SEQ ID NO: 24), SQDPGFHKV (SEQ ID NO: 25), [APK][AT][HPR]T (SEQ ID NO: 26), [EQ][ART][HP]T (SEQ ID NO: 27), EQRT (SEQ ID NO: 28), RRAAHT (SEQ ID NO: 29), [AK][AG][PS][EG][HP]T (SEQ ID NO: 30), ETPT (SEQ ID NO: 1319), PAPT (SEQ ID NO:1320), QAPT (SEQ ID NO:1321), AQPT (SEQ ID NO:1322), and sequences comprising conservative substitutions, wherein amino acids in brackets indicate alternative amino acids at a specified position.
+
+The term “separate” is used herein to indicate a property of a moiety that is independent and remains independent even when complexed with other moieties, including for example, other monomer domains. A monomer domain is a separate domain in a protein because it has an independent property that can be recognized and separated from the protein. For instance, the ligand binding ability of FGFR1c is an independent property. Other examples of separate include the separate monomer domains in a multimer that remain separate independent domains even when complexed or joined together in the multimer by a linker. Another example of a separate property is the separate binding sites in a multimer for a ligand.
+
+As used herein, “directed evolution” refers to a process by which polynucleotide variants are generated, expressed, and screened for an activity (e.g., a polypeptide with binding activity) in a recursive process. One or more candidates in the screen are selected and the process is then repeated using polynucleotides that encode the selected candidates to generate new variants. Directed evolution involves at least two rounds of variation generation and can include 3, 4, 5, 10, 20 or more rounds of variation generation and selection. Variation can be generated by any method known to those of skill in the art, including, e.g., by error-prone PCR, gene recombination, chemical mutagenesis and the like.
+
+The term “shuffling” is used herein to indicate recombination between non-identical sequences. In some embodiments, shuffling can include crossover via homologous recombination or via non-homologous recombination, such as via cre/lox and/or flp/frt systems. Shuffling can be carried out by employing a variety of different formats, including for example, in vitro and in vivo shuffling formats, in silico shuffling formats, shuffling formats that utilize either double-stranded or single-stranded templates, primer based shuffling formats, nucleic acid fragmentation-based shuffling formats, and oligonucleotide-mediated shuffling formats, all of which are based on recombination events between non-identical sequences and are described in more detail or referenced herein below, as well as other similar recombination-based formats.
+
+The term “random” as used herein refers to a polynucleotide sequence or an amino acid sequence composed of two or more amino acids and constructed by a stochastic or random process. The random polynucleotide sequence or amino acid sequence can include framework or scaffolding motifs, which can comprise invariant sequences.
+
+The term “pseudorandom” as used herein refers to a set of polynucleotide or polypeptide sequences that have limited variability, so that the degree of residue variability at some positions is limited, but any pseudorandom position is allowed at least some degree of residue variation.
+
+The terms “polypeptide,” “peptide,” and “protein” are used herein interchangeably to refer to an amino acid sequence of two or more amino acids.
+
+The term “amino acid” refers to naturally occurring and synthetic amino acids, as well as amino acid analogs/amino acid mimetics/non-naturally occurring amino acids that function in a manner similar to the naturally occurring amino acids. Naturally occurring amino acids are those encoded by the genetic code, as well as those amino acids that are later modified, e.g., hydroxyproline, γ-carboxyglutamate, and O-phosphoserine. Amino acid analogs refers to compounds that have the same basic chemical structure as a naturally occurring amino acid, i.e., an α carbon that is bound to a hydrogen, a carboxyl group, an amino group, and an R group, e.g., homoserine, norleucine, methionine sulfoxide, methionine methyl sulfonium. Such analogs have modified R groups (e.g., norleucine) or modified peptide backbones, but retain the same basic chemical structure as a naturally occurring amino acid. An “amino acid mimetic” is a chemical compound that has a structure that is different from the general chemical structure of an amino acid, but that functions in a manner similar to a naturally occurring amino acid. A “non-naturally occurring amino acid” is a compound that has the same basic chemical structure as a naturally occurring amino acid, but is not incorporated into a growing polypeptide chain by the translation complex. “Non-naturally occurring amino acid” also includes, but is not limited to, amino acids that occur by modification (e.g., posttranslational modifications) of a naturally encoded amino acid (including but not limited to, the 20 common amino acids) but are not themselves naturally incorporated into a growing polypeptide chain by the translation complex. A non-limiting lists of examples of non-naturally occurring amino acids that can be inserted into a binding protein sequence or substituted for a wild-type residue in an antigen binding sequence include β-amino acids, homoamino acids, cyclic amino acids and amino acids with derivatized side chains. Examples include (in the L-form or D-form; abbreviated as in parentheses): citrulline (Cit), homocitrulline (hCit), Nα-methylcitrulline (NMeCit), Nα-methylhomocitrulline (Nα-MeHoCit), ornithine (Orn), Nα-Methylornithine (Nα-MeOrn or NMeOrn), sarcosine (Sar), homolysine (hLys or hK), homoarginine (hArg or hR), homoglutamine (hQ), Nα-methylarginine (NMeR), Nα-methylleucine (Nα-MeL or NMeL), N-methylhomolysine (NMeHoK), Nα-methylglutamine (NMeQ), norleucine (Nle), norvaline (Nva), 1,2,3,4-tetrahydroisoquinoline (Tic), Octahydroindole-2-carboxylic acid (Oic), 3-(1-naphthyl)alanine (1-Nal), 3-(2-naphthyl)alanine (2-Nal), 1,2,3,4-tetrahydroisoquinoline (Tic), 2-indanylglycine (IgI), para-iodophenylalanine (pI-Phe), para-aminophenylalanine (4AmP or 4-Amino-Phe), 4-guanidino phenylalanine (Guf), glycyllysine (abbreviated “K(Nε-glycyl)” or “K(glycyl)” or “K(gly)”), nitrophenylalanine (nitrophe), aminophenylalanine (aminophe or Amino-Phe), benzylphenylalanine (benzylphe), γ-carboxyglutamic acid (γ-carboxyglu), hydroxyproline (hydroxypro), p-carboxyl-phenylalanine (Cpa), α-aminoadipic acid (Aad), Nα-methyl valine (NMeVal), N-α-methyl leucine (NMeLeu), Nα-methylnorleucine (NMeNle), cyclopentylglycine (Cpg), cyclohexylglycine (Chg), acetylarginine (acetylarg), α,β-diaminopropionoic acid (Dpr), α,γ-diaminobutyric acid (Dab), diaminopropionic acid (Dap), cyclohexylalanine (Cha), 4-methyl-phenylalanine (MePhe), β,β-diphenyl-alanine (BiPhA), aminobutyric acid (Abu), 4-phenyl-phenylalanine (or biphenylalanine; 4Bip), α-amino-isobutyric acid (Aib), beta-alanine, beta-aminopropionic acid, piperidinic acid, aminocaprioic acid, aminoheptanoic acid, aminopimelic acid, desmosine, diaminopimelic acid, N-ethylglycine, N-ethylaspargine, hydroxylysine, allo-hydroxylysine, isodesmosine, allo-isoleucine, N-methylglycine, N-methylisoleucine, N-methylvaline, 4-hydroxyproline (Hyp), γ-carboxyglutamate, ε-N,N,N-trimethyllysine, ε-N-acetyllysine, O-phosphoserine, N-acetylserine, N-formylmethionine, 3-methylhistidine, 5-hydroxylysine, ω-methylarginine, 4-Amino-O-Phthalic Acid (4APA), and other similar amino acids, and derivatized forms of any of those specifically listed.
+
+“Conservative amino acid substitution” refers to the interchangeability of residues having similar side chains. For example, a group of amino acids having aliphatic side chains is glycine, alanine, valine, leucine, and isoleucine; a group of amino acids having aliphatic-hydroxyl side chains is serine and threonine; a group of amino acids having amide-containing side chains is asparagine and glutamine; a group of amino acids having aromatic side chains is phenylalanine, tyrosine, and tryptophan; a group of amino acids having basic side chains is lysine, arginine, and histidine; and a group of amino acids having sulfur-containing side chains is cysteine and methionine. Preferred conservative amino acids substitution groups are: valine-leucine-isoleucine, phenylalanine-tyrosine, lysine-arginine, alanine-valine, and asparagine-glutamine.
+
+As used herein the term “recombinant,” when used in the context of a binding protein, monomer or multimer, means that the binding protein, monomer or multimer is not found in nature and cannot be isolated from an un-altered source found in nature (e.g., a cell, tissue or biological fluid). When the term is used with reference to, e.g., a cell, or nucleic acid, protein, or vector, it indicates that the cell, nucleic acid, protein or vector, has been modified by the introduction of a heterologous nucleic acid or protein or the alteration of a native nucleic acid or protein, or that the cell is derived from a cell so modified. Thus, for example, recombinant cells express genes that are not found within the native (nonrecombinant) form of the cell or express native genes that are otherwise abnormally expressed, under-expressed or not expressed at all.
+
+As used herein the term “non-recombinant,” when used in the context of a binding protein, monomer or multimer, means that the binding protein, monomer or multimer is found in nature and can be isolated from a un-altered source found in nature (e.g., a cell, tissue or biological fluid).
+
+The phrase “nucleic acid sequence” refers to a single or double-stranded polymer of deoxyribonucleotide or ribonucleotide bases read from the 5′ to the 3′ end or an analog thereof.
+
+The term “encoding” refers to a polynucleotide sequence encoding one or more amino acids. The term does not require a start or stop codon. An amino acid sequence can be encoded in any one of six different reading frames provided by a polynucleotide sequence.
+
+The term “promoter” refers to regions or sequence located upstream and/or downstream from the start of transcription that are involved in recognition and binding of RNA polymerase and other proteins to initiate transcription.
+
+A “vector” refers to a polynucleotide, which when independent of the host chromosome, is capable of replication in a host organism. Examples of vectors include plasmids. Vectors typically have an origin of replication. Vectors can comprise, e.g., transcription and translation terminators, transcription and translation initiation sequences, and promoters useful for regulation of the expression of the particular nucleic acid.
+
+The terms “identical” or percent “identity,” in the context of two or more nucleic acids or polypeptide sequences, refer to two or more sequences or subsequences that are the same. “Percent identity” means the percent of identical residues between the amino acids or nucleotides in the compared molecules and is calculated based on the size of the smallest of the molecules being compared. For these calculations, gaps in alignments (if any) must be addressed by a particular mathematical model or computer program (i.e., an “algorithm”). Methods that can be used to calculate the identity of the aligned nucleic acids or polypeptides include those described in Computational Molecular Biology, (Lesk, A. M., ed.), (1988) New York: Oxford University Press; Biocomputing Informatics and Genome Projects, (Smith, D. W., ed.), 1993, New York: Academic Press; Computer Analysis of Sequence Data, Part I, (Griffin, A. M., and Griffin, H. G., eds.), 1994, New Jersey: Humana Press; von Heinje, G., (1987) Sequence Analysis in Molecular Biology, New York: Academic Press; Sequence Analysis Primer, (Gribskov, M. and Devereux, J., eds.), 1991, New York: M. Stockton Press; and Carillo et al., (1988) SIAM J. Applied Math. 48:1073.
+
+In calculating percent identity, the sequences being compared are aligned in a way that gives the largest match between the sequences. The computer program used to determine percent identity is the GCG program package, which includes GAP (Devereux et al., (1984) Nucl. Acid Res. 12:387; Genetics Computer Group, University of Wisconsin, Madison, Wis.). The computer algorithm GAP is used to align the two polypeptides or polynucleotides for which the percent sequence identity is to be determined. The sequences are aligned for optimal matching of their respective amino acid or nucleotide (the “matched span”, as determined by the algorithm). A gap opening penalty (which is calculated as 3× the average diagonal, wherein the “average diagonal” is the average of the diagonal of the comparison matrix being used; the “diagonal” is the score or number assigned to each perfect amino acid match by the particular comparison matrix) and a gap extension penalty (which is usually 1/10 times the gap opening penalty), as well as a comparison matrix such as PAM 250 or BLOSUM 62 are used in conjunction with the algorithm. In certain embodiments, a standard comparison matrix (see, Dayhoff et al., (1978) Atlas of Protein Sequence and Structure 5:345-352 for the PAM 250 comparison matrix; Henikoff et al., (1992) Proc. Natl. Acad. Sci. U.S.A. 89:10915-10919 for the BLOSUM 62 comparison matrix) is also used by the algorithm.
+
+Recommended parameters for determining percent identity for polypeptides or nucleotide sequences using the GAP program are the following:
+
+Algorithm: Needleman et al., 1970, J. Mol. Biol. 48:443-453;
+
+Comparison matrix: BLOSUM 62 from Henikoff et al., 1992, supra;
+
+Gap Penalty: 12 (but with no penalty for end gaps)
+
+Gap Length Penalty: 4
+
+Threshold of Similarity: 0
+
+Certain alignment schemes for aligning two amino acid sequences can result in matching of only a short region of the two sequences, and this small aligned region can have very high sequence identity even though there is no significant relationship between the two full-length sequences. Accordingly, the selected alignment method (e.g., the GAP program) can be adjusted if so desired to result in an alignment that spans at least 50 contiguous amino acids of the target polypeptide.
+
+“Substantially identical” refers to two or more nucleic acids or polypeptide sequences having a specified percentage of amino acid residues or nucleotides that are the same (e.g., 60% identity, optionally 65%, 70%, 75%, 80%, 85%, 90%, or 95% identity over a specified region, or, when not specified, over the entire sequence), when compared and aligned for maximum correspondence over a comparison window, or designated region as measured using one of the following sequence comparison algorithms or by manual alignment and visual inspection. Optionally, the identity or substantial identity exists over a region that is at least about 50 nucleotides in length, or over a region that is 100 to 500 or 1000 or more nucleotides or amino acids in length, or if not specified, over the length of a sequence. The present disclosure provides polypeptides comprising binding sequences that bind to FGFR1c, β-Klotho or both FGFR1c and β-Klotho, wherein the binding sequences are substantially identical (e.g., at least 65%, 70%, 75%, 80%, 85%, 90%, or 95% identical) to at least one binding sequence that binds to FGFR1c and β-Klotho, as provided herein, including but not limited to, any of SEQ ID NOS:335-392 and SEQ ID NOS:1180-1200.
+
+A polynucleotide or amino acid sequence is “heterologous to” a second sequence if the two sequences are not linked in the same manner as found in naturally-occurring sequences. For example, a promoter operably linked to a heterologous coding sequence refers to a coding sequence which is different from any naturally-occurring allelic variants. The term “heterologous linker,” when used in reference to a multimer, indicates that the multimer comprises a linker and a monomer that are not found in the same relationship to each other in nature (e.g., they form a recombinant fusion protein that is not normally expressed in nature).
+
+“Percentage of sequence identity” is determined by comparing two optimally aligned sequences over a comparison window, wherein the portion of the polynucleotide sequence in the comparison window can comprise additions or deletions (i.e., gaps) as compared to the reference sequence (which does not comprise additions or deletions) for optimal alignment of the two sequences. The percentage is calculated by determining the number of positions at which the identical nucleic acid base or amino acid residue occurs in both sequences to yield the number of matched positions, dividing the number of matched positions by the total number of positions in the window of comparison and multiplying the result by 100 to yield the percentage of sequence identity.
+
+A “comparison window”, as used herein, includes reference to a segment of any one of the number of contiguous positions selected from the group consisting of from 20 to 600, usually about 50 to about 200, more usually about 100 to about 150 in which a sequence can be compared to a reference sequence of the same number of contiguous positions after the two sequences are optimally aligned. Methods of alignment of sequences for comparison are well-known in the art. Optimal alignment of sequences for comparison can be conducted, e.g., by the local homology algorithm of Smith and Waterman (1970) Adv. Appl. Math. 2:482c, by the homology alignment algorithm of Needleman and Wunsch (1970) J. Mol. Biol. 48:443, by the search for similarity method of Pearson and Lipman (1988) Proc. Nat'l. Acad. Sci. USA 85:2444, by computerized implementations of these algorithms (GAP, BESTFIT, FASTA, and TFASTA in the Wisconsin Genetics Software Package, Genetics Computer Group, 575 Science Dr., Madison, Wis.), or by manual alignment and visual inspection (see, e.g., Ausubel et al., Current Protocols in Molecular Biology (1995 supplement)).
+
+One example of a useful algorithm is the BLAST 2.0 algorithm, which is described in Altschul et al. (1990) J. Mol. Biol. 215:403-410, respectively. Software for performing BLAST analyses is publicly available through the National Center for Biotechnology Information. This algorithm involves first identifying high scoring sequence pairs (HSPs) by identifying short words of length W in the query sequence, which either match or satisfy some positive-valued threshold score T when aligned with a word of the same length in a database sequence. T is referred to as the neighborhood word score threshold (Altschul et al., supra). These initial neighborhood word hits act as seeds for initiating searches to find longer HSPs containing them. The word hits are extended in both directions along each sequence for as far as the cumulative alignment score can be increased. Cumulative scores are calculated using, for nucleotide sequences, the parameters M (reward score for a pair of matching residues; always >0) and N (penalty score for mismatching residues; always <0). For amino acid sequences, a scoring matrix is used to calculate the cumulative score. Extension of the word hits in each direction are halted when: the cumulative alignment score falls off by the quantity X from its maximum achieved value; the cumulative score goes to zero or below, due to the accumulation of one or more negative-scoring residue alignments; or the end of either sequence is reached. The BLAST algorithm parameters W, T, and X determine the sensitivity and speed of the alignment. The BLASTN program (for nucleotide sequences) uses as defaults a wordlength (W) of 11, an expectation (E) or 10, M=5, N=−4 and a comparison of both strands. For amino acid sequences, the BLASTP program uses as defaults a wordlength of 3, and expectation (E) of 10, and the BLOSUM62 scoring matrix (see Henikoff and Henikoff (1989) Proc. Natl. Acad. Sci. USA 89:10915) alignments (B) of 50, expectation (E) of 10, M=5, N=−4, and a comparison of both strands.
+
+The BLAST algorithm also performs a statistical analysis of the similarity between two sequences (see, e.g., Karlin and Altschul (1993) Proc. Natl. Acad. Sci. USA 90:5873-5787). One measure of similarity provided by the BLAST algorithm is the smallest sum probability (P(N)), which provides an indication of the probability by which a match between two nucleotide or amino acid sequences would occur by chance. For example, a nucleic acid is considered similar to a reference sequence if the smallest sum probability in a comparison of the test nucleic acid to the reference nucleic acid is less than about 0.2, more preferably less than about 0.01, and most preferably less than about 0.001.
+
+### I. INTRODUCTION
+
+The present disclosure provides binding proteins that can induce FGF21-mediated signaling, as defined herein. In vivo, the mature form of FGF21 is the active form of the molecule. The nucleotide sequence encoding full length FGF21 is provided; the nucleotides encoding the signal sequence are underlined.
+
+The amino acid sequence of full length FGF21 is provided; the amino acids that make up the signal sequence are underlined:
+
+The present disclosure provides binding proteins that are not expressed in non-recombinant organisms and which bind to FGFR1c, β-Klotho, or both FGFR1c and β-Klotho. In vivo, FGFR1c and β-Klotho associate with FGF21 to form a signaling complex. See FIG. 1, diagram A. Some binding proteins that bind to both FGFR1c and β-Klotho can mimic FGF21's in vivo signaling activity by localizing FGFR1c and β-Klotho, and can therefore take the place of FGF21 in the signaling complex. See FIG. 1, diagram B. Such binding proteins are disclosed herein.
+
+Generally, the binding proteins of the present disclosure comprise one or more monomer domains that bind to FGFR1c, β-Klotho, or both FGFR1c and β-Klotho. These domains can be readily identified using a variety of polypeptide scaffolds to generate a plurality of polypeptide variants and then selecting a variant that binds to FGFR1c, β-Klotho or both FGFR1c and β-Klotho. The present disclosure therefore also provides methods for selecting a protein that binds to FGFR1c, β-Klotho, or both FGFR1c and β-Klotho. Proteins that bind both FGFR1c and β-Klotho are useful for a variety of purposes, including, e.g., for treating, metabolic disorders, such as diabetes, obsesity, dyslipidimia, hypertension, hepatosteaotosis, non-alcoholic steatohepatitis (NASH), acute pancreatitis, cardiovascular disease, such as atherosclerosis, and aging. The polypeptides disclosed herein are also useful to detect and quantify FGFR1c and/or β-Klotho in a sample. The amino acid sequences of human FGFR1c (SEQ ID NO: 33) and human β-Klotho (SEQ ID NO: 34) are known and are provided:
+
+While the present disclosure provides for binding proteins comprising various single domains associated by linkers and other sequences, multimers of the domains can also be synthesized and used. In some embodiments, some (or optionally all, in some embodiments) of the domains of a binding protein bind FGFR1c, β-Klotho, or both FGFR1c and β-Klotho. In some of these embodiments, two or more of the domains are identical and bind to the same portion of a target protein, such as FGFR1c and/or β-Klotho. In other embodiments, at least some of the domains in the multimer bind to different portions of FGFR1c and/or β-Klotho. In yet other embodiments, at least some of the domains of a binding protein bind to a molecule or molecules other than FGFR1c or β-Klotho (e.g., a blood factor such as serum albumin, an immunoglobulin, or to erythrocytes).
+
+### II. GENERAL DISCUSSION OF MONOMER DOMAINS
+
+The binding proteins disclosed herein comprise one or more monomer domains. Monomer domains that are particularly suitable for generating the binding proteins of the present disclosure are cysteine-rich domains comprising disulfide bonds. Cysteine-rich domains that form elements of the binding proteins disclosed herein typically do not form an α helix, a β sheet, or a β-barrel structure. Typically, the disulfide bonds promote folding of the domain into a three-dimensional structure. Usually, cysteine-rich domains have at least two disulfide bonds, more typically at least three disulfide bonds. In some embodiments, at least 5, 10, 15 or 20% of the amino acids in a monomer domain are cysteines.
+
+Monomer domains can have any number of characteristics. For example, in some embodiments, the domains have low or no immunogenicity in an animal (e.g., a human). Monomer domains can also have a small size. In some embodiments, the domains are small enough to penetrate skin or other tissues. Additionally, monomer domains can have a range of in vivo half-lives or stabilities.
+
+Illustrative monomer domains suitable for use in the binding proteins disclosed herein include, e.g., an EGF-like domain, a Kringle-domain, a fibronectin type I domain, a fibronectin type II domain, a fibronectin type III domain, a PAN domain, a Gla domain, a SRCR domain, a Kunitz/Bovine pancreatic trypsin Inhibitor domain, a Kazal-type serine protease inhibitor domain, a Trefoil (P-type) domain, a von Willebrand factor type C domain, an Anaphylatoxin-like domain, a CUB domain, a thyroglobulin type I repeat, LDL-receptor class A domain, a Sushi domain, a Link domain, a Thrombospondin type I domain, an Immunoglobulin-like domain, a C-type lectin domain, a MAM domain, a von Willebrand factor type A domain, a Somatomedin B domain, a WAP-type four disulfide core domain, a F5/8 type C domain, a Hemopexin domain, an SH2 domain, an SH3 domain, a Laminin-type EGF-like domain, a C2 domain, and other such domains known to those of ordinary skill in the art, as well as derivatives and/or variants thereof. FIG. 2 schematically diagrams various kinds of monomer domains found in molecules in the LDL-receptor family.
+
+In some embodiments, suitable monomer domains (e.g., domains with the ability to fold independently or with some limited assistance) can be selected from the families of protein domains that contain β-sandwich or β-barrel three dimensional structures as defined by such computational sequence analysis tools as Simple Modular Architecture Research Tool (SMART), see Shultz et al., SMART: a web-based tool for the study of genetically mobile domains, (2000) Nucleic Acids Research 28(1):231-234) or CATH (see Pearl et. al., Assigning genomic sequences to CATH, (2000) Nucleic Acids Research 28(1):277-282).
+
+In another embodiment, monomer domains of the disclosed binding proteins include domains other than a fibronectin type III domain, an anticalin domain and a Ig-like domain from CTLA-4. Some aspects of these domains are described in WO01/64942, WO99/16873 and WO 00/60070.
+
+As described herein, monomer domains can be cysteine rich. Suitable cysteine rich monomer domains include, e.g., the LDL receptor class A domain (“A-domain”) or the EGF domain. The monomer domains can also have a cluster of negatively charged residues. FIG. 3A shows an example of an A-domain.
+
+As described herein, monomer domains can be selected for the ability to bind to a target other than the target that a homologous naturally occurring domain may bind. Thus, in some embodiments, monomer domains (and multimers comprising such monomers) are provided that do not bind to the target or the class or family of target proteins that a substantially identical naturally-occurring monomer domain may bind.
+
+Characteristics of a monomer domain can include the ability to fold independently and the ability to form a stable structure. Thus, the structure of the monomer domain is often conserved, although the polynucleotide sequence encoding the monomer need not be conserved. For example, the A-domain structure is conserved among the members of the A-domain family, while the A-domain nucleic acid sequence is not. Thus, for example, a monomer domain is classified as an A-domain by its cysteine residues and its affinity for calcium, not necessarily by its nucleic acid sequence. See FIG. 3B.
+
+Specifically, the A-domains (sometimes called “complement-type repeats” or “LDL receptor type or class A domains”) contain about 30-50 or 30-65 amino acids. In some embodiments, the domains comprise about 35-45 amino acids and in some cases about 35-40 amino acids. Within the 30-50 amino acids, there are about 6 cysteine residues. Of the six cysteines, disulfide bonds typically are found between the following cysteines: C1 and C3, C2 and C5, C4 and C6. The cysteine residues of the domain are disulfide linked to form a compact, stable, functionally independent moiety. See FIG. 3B. Clusters of these repeats make up a ligand binding domain, and differential clustering can impart specificity with respect to the ligand binding. FIG. 4 presents an exemplary list of various ligands that are recognized by the LDL-receptor family members.
+
+One typical consensus sequence useful to identify A domains is the following: C-[VILMA]-X(5)-C-[DNH]-X(3)-[DENQHT]-C-X(3,4)-[STADE]-[DEH]-[DE]-X(1,5)-C (SEQ ID NO: 35). Consistent with the definition provided hereinabove, the residues in brackets indicate possible residues at one position. “X(#)” indicates number of residues. These residues can be any amino acid residue. Parentheticals containing two numbers refers to the range of amino acids that can occupy that position (e.g., “[DE]-X(1,5)-C” (SEQ ID NO: 36) means that the amino acids DE are followed by 1, 2, 3, 4, or 5 residues, followed by cysteine, “C”). This consensus sequence only represents the portion of the A domain beginning at the third cysteine. A second consensus is as follows: C—X(3-15)-C-X(4-15)-C-X(6-7)-C-[N,D]-X(3)-[D,E,N,Q,H,S,T]-C-X(4-6)-D-E-X(2-8)-C (SEQ ID NO: 37). The second consensus predicts amino acid residues spanning all six cysteine residues. In some embodiments, A domain variants comprise sequences substantially identical to any of the above-described sequences. Note that reference to “LDL receptor class A” domain, for the purposes of the present disclosure, is not intended to indicate origin or binding properties of the domain.
+
+Additional exemplary A domains include the following sequence:
+
+wherein C is cysteine, Xn-m represents between n and m number of independently selected amino acids, and (D,N) indicates that the position can be either D or N; and wherein Ca-Cc, Cb-Ce and Cd-Cf form disulfide bonds.
+
+To date, at least 290 naturally-occurring human A-domains have been identified based on cDNA sequences. See FIG. 5. Exemplary proteins containing naturally-occurring A-domains include, e.g., complement components (e.g., C6, C7, C8, C9, and Factor I), serine proteases (e.g., enteropeptidase, matriptase, and corin), transmembrane proteins (e.g., ST7, LRP3, LRP5 and LRP6) and endocytic receptors (e.g., Sortilin-related receptor, LDL-receptor, VLDLR, LRP1, LRP2, and ApoER2). A domains and A domain variants can function as monomer domains and variants thereof in the binding proteins disclosed herein. Further description of A domains can be found in the following publications and references cited therein: Howell and Hertz, The LDL receptor gene family: signaling functions during development, (2001) Current Opinion in Neurobiology 11:74-81; Krieger, The “best” of cholesterols, the “worst” of cholesterols: A tale of two receptors, (1998) PNAS 95: 4077-4080; Goldstein and Brown, The Cholesterol Quartet, (2001) Science, 292: 1310-1312; and, Moestrup and Verroust, Megalin-and Cubilin-Mediated Endocytosis of Protein-Bound Vitamins, Lipids, and Hormones in Polarized Epithelia, (2001) Ann. Rev. Nutr. 21:407-28.
+
+A number of other domain types can also be used to generate FGFR1c and/or β-Klotho-binding monomer domains. Exemplary EGF monomer domains include the sequence:
+
+wherein C is cysteine, Xn-m represents between n and m number of independently selected amino acids; and wherein Ca-Cc, Cb-Ce and Cd-Cf form disulfide bonds.
+
+Each of the domains described herein employ exemplary motifs (i.e., scaffolds). Certain positions are marked x, indicating that any amino acid can occupy the position. These positions can include a number of different amino acid possibilities, thereby allowing for sequence diversity and thus affinity for different target molecules. Use of brackets in motifs indicates alternate possible amino acids within a position (e.g., “[ekq]” indicates that either E, K or Q can be at that position). As used herein, use of parentheses in a sequence motif indicates that that the positions within the parentheses can be present or absent (e.g., “([ekq])” indicates that the position is absent or either E, K, or Q can be at that position). When more than one “x” is used in parentheses (e.g., “(xx)”), each x represents a possible position. Thus “(xx)” indicates that zero, one or two amino acids can be at that position(s), where each amino acid is independently selected from any amino acid. Absent amino acids can also be designated by “-.” α represents an aromatic/hydrophobic amino acid such as, e.g., W, Y, F, or L; β represents a hydrophobic amino acid such as, e.g., V, I, L, A, M, or F; χ represents a smaller polar amino acid such as, e.g., G, A, S, or T; δ represents a charged amino acid such as, e.g., K, R, E, Q, or D; ε represents a small amino acid such as, e.g.,; V, A, S, or T; and φ represents a negatively charged amino acid such as, e.g., D, E, or N.
+
+Suitable domains include, e.g. thrombospondin type 1 domains, trefoil domains, and thyroglobulin domains.
+
+Thrombospondin type 1 (“TSP1”) domains contain about 30-50 or 30-65 amino acids. In some embodiments, the domains comprise about 35-55 amino acids and in some cases about 50 amino acids. Within the 35-55 amino acids, there are typically about 4 to about 6 cysteine residues. Of the six cysteines, disulfide bonds typically are found between the following cysteines: C1 and C5, C2 and C6, C3 and C4. The cysteine residues of the domain are disulfide linked to form a compact, stable, functionally independent moiety comprising distorted beta strands. Clusters of these repeats make up a ligand binding domain, and differential clustering can impart specificity with respect to the ligand binding.
+
+Exemplary TSP1 domain sequences and consensus sequences are as follows (SEQ ID NOS 40-45, respectively, in order of appearance):
+
+In some embodiments, thrombospondin type 1 domain variants comprise sequences substantially identical to any of the above-described sequences.
+
+To date, at least 1677 naturally occurring thrombospondin domains have identified based on cDNA sequences. Exemplary proteins containing the naturally occurring thrombospondin domains include, e.g., proteins in the complement pathway (e.g., properdin, C6, C7, CBA, C8B, and C9), extracellular matrix proteins (e.g., mindin, F-spondin, SCO-spondin,), circumsporozoite surface protein 2, and TRAP proteins of Plasmodium. Thrombospondin type 1 domains are further described in, e.g., Roszmusz et al., BBRC 296:156 (2002); Higgins et al., J. Immunol. 155:5777-85 (1995); Schultz-Chemy et al., J. Biol. Chem. 270:7304-7310 (1995); Schultz-Cherry et al., J. Biol. Chem. 269:26783-8 (1994); Bork, FEBS Lett 327:125-30 (1993); and Leung-Hagesteijn et al., Cell 71:289-99 (1992).
+
+Another exemplary monomer domain suitable for use in generating the binding proteins of the present disclosure is the trefoil domain. Trefoil monomer domains are typically about 30-50 or 30-65 amino acids. In some embodiments, the domains comprise about 35-55 amino acids and in some cases about 45 amino acids. Within the 35-55 amino acids, there are typically about 6 cysteine residues. Of the six cysteines, disulfide bonds typically are found between the following cysteines: C1 and C5, C2 and C4, C3 and C6.
+
+At least 149 naturally occurring trefoil domains have identified based on cDNA sequences. Exemplary proteins containing naturally occurring trefoil domains include, e.g., protein pS2 (TFF1), spasmolytic peptide SP (TFF2), intestinal trefoil factor (TFF3), intestinal surcease-isomaltase, and proteins which may be involved in defense against microbial infections by protecting the epithelia (e.g., Xenopus xP1, xP4, integumentary mucins A.1 and C.1. Trefoil domains are further described in, e.g., Sands and Podolsky, Annu. Rev. Physiol. 58:253-273 (1996); Carr et al., PNAS USA 91:2206-2210 (1994); DeA et al., PNAS USA 91:1084-1088 (1994); Hoffman et al., Trends Biochem Sci 18:239-243 (1993).
+
+Exemplary trefoil domain sequences and consensus sequences are as follows (SEQ ID NOS 46-51, respectively, in order of appearance):
+
+Yet another exemplary monomer domain suitable for use in generating the binding proteins of the present disclosure is the thyroglobulin domain. Thyroglobulin monomer domains are typically about 30-85 or 30-80 amino acids. In some embodiments, the domains comprise about 35-75 amino acids and in some cases about 65 amino acids. Within the 35-75 amino acids, there are typically about 6 cysteine residues. Of the six cysteines, disulfide bonds typically are found between the following cysteines: C1 and C2, C3 and C4, C5 and C6.
+
+At least 251 naturally occurring thyroglobulin domains have been identified based on cDNA sequences. The N-terminal section of Tg contains 10 repeats of a domain of about 65 amino acids which is known as the Tg type-1 repeat. See, e.g., Malthiéry Y, Lissitzky S., Eur J Biochem. (1987) 165(3):491-8; Molina et al., Eur. J. Biochem. 240:125-133 (1996). Exemplary proteins containing naturally occurring thyroglobulin domains include e.g., the HLA class II associated invariant chain, human pancreatic carcinoma marker proteins, nidogen (entactin), insulin-like growth factor binding proteins (IGFBP), saxiphilin, chum salmon egg cysteine proteinase inhibitor, and equistatin. The Thyr-1 and related domains belong to MEROPS proteinase inhibitor family I31, clan IX. Thyroglobulin domains are further described in, e.g., Molina et al., Eur. J. Biochem. 240:125-133 (1996); Guncar et al., EMBO J 18:793-803 (1999); Chong and Speicher, D W 276:5804-5813 (2001).
+
+Exemplary thyroglobulin domain sequences and consensus sequences are as follows (SEQ ID NOS 52-56, respectively, in order of appearance):
+
+Still another exemplary monomer domain that can be used in generating the binding proteins of the present disclosure is a laminin-EGF domain. Laminin-EGF domains are typically about 30-85 or 30-80 amino acids. In some embodiments, the domains comprise about 45-65 amino acids and in some cases about 50 amino acids. Within the 45-65 amino acids, there are typically about 8 cysteine residues which interact to form 4 disulfide bonds. Laminins are a major noncollagenous component of basement membranes that mediate cell adhesion, growth migration, and differentiation. They are composed of distinct but related alpha, beta, and gamma chains. The three chains form a cross-shaped molecule that consists of a long arm and three short globular arms. The long arm consists of a coiled coil structure contributed by all three chains and cross-linked by interchain disulfide bonds.
+
+Exemplary laminin EGF domain sequences and consensus sequences are as follows (SEQ ID NOS 57-59, respectively, in order of appearance):
+
+In some embodiments, the monomer domain is a Notch/LNR monomer domain, a DSL monomer domain, an Anato monomer domain, an integrin beta monomer domain, and a Ca-EGF monomer domain.
+
+In some embodiments, the Ca-EGF monomer domain comprises the following sequence (SEQ ID NO: 60):
+
+In some embodiments, the Notch/LNR monomer domain, comprises the following sequence (SEQ ID NO: 61): C1xx(xx)xxxC2xxxxxNGxC3xxxC4NxxxC5xxDGxDC6
+
+In some embodiments, the DSL monomer domain comprises the following sequence:
+
+Anato monomer domain comprises the following sequence (SEQ ID NO: 63):
+
+In some embodiments, the integrin beta monomer domain comprises the following sequence (SEQ ID NO: 1240):
+
+C1xxC2xxxxpxC3xWC4xxxxFxxx(Gx)xxxxRC5DxxxxLxxxgC6; and “x” is any amino acid.
+
+In some embodiments, C1-C5, C2-C4 and C3-C6 of the Notch/LNR monomer domain form disulfide bonds; and C1-C5, C2-C4 and C3-C6 of the DSL monomer domain form disulfide bonds.
+
+In some embodiments, the Ca-EGF monomer domain comprises the following sequence:
+
+In some embodiments, the Notch/LNR monomer domain, comprises the following sequence:
+
+In some embodiments, the DSL monomer domain comprises the following sequence:
+
+In some embodiments, the Anato monomer domain comprises the following sequence:
+
+In some embodiments, the integrin beta monomer domain comprises the following sequence:
+
+C1xxC2[β]xx[GHDS][PK]xC3[χ][α]C4xxxx[α]xxx([GR]xx)x[χ]xRC5[DNAE]xxxxL[βK]xx [GN]C6 (SEQ ID NO: 68); α is selected from: W, Y, F, and L; β is selected from: V, I, L, A, M, and F; χ is selected from: G, A, S, and T; δ is selected from: K, R, E, Q, and D; ε is selected from: V, A, S, AND T; and φ is selected from: D, E, and N.
+
+In some embodiments, the Ca-EGF monomer domain comprises the following sequence:
+
+In some embodiments, the Notch/LNR monomer domain, comprises the following sequence:
+
+In some embodiments, the DSL monomer domain comprises the following sequence:
+
+In some embodiments, the Anato monomer domain comprises the following sequence:
+
+In some embodiments, the integrin beta monomer domain comprises the following sequence:
+
+Polynucleotides encoding the monomer domains are typically employed to make monomer domains via expression. Nucleic acids that encode monomer domains can be derived from a variety of different sources. Libraries of monomer domains can be prepared by expressing a plurality of different nucleic acids encoding naturally occurring monomer domains, altered monomer domains (i.e., monomer domain variants), or a combinations thereof. For example, libraries can be designed in which a scaffold of amino acids remain constant (e.g., an LDL A receptor domain, EGF domain) while the intervening amino acids in the scaffold comprise randomly generated amino acids.
+
+Also provided herein are methods of identifying monomer domains that bind to a selected or desired ligand or mixture of ligands. In some embodiments, monomer domains are identified or selected for a desired property (e.g., binding affinity) and then the monomer domains are formed into multimers. See FIG. 6. For those embodiments, any method resulting in selection of domains with a desired property (e.g., a specific binding property) can be used. For example, the methods can comprise providing a plurality of different nucleic acids, each nucleic acid encoding a monomer domain; translating the plurality of different nucleic acids, thereby providing a plurality of different monomer domains; screening the plurality of different monomer domains for binding of the desired ligand or a mixture of ligands; and, identifying members of the plurality of different monomer domains that bind the desired ligand or mixture of ligands.
+
+Monomer domains can be non-recombinant (e.g., isolated from a cell) or altered (e.g., recombinant variants). The term “non-recombinant” is used in this context to indicate that a protein sequence can be found in nature. For example, non-recombinant monomer domains can include human monomer domains or optionally, domains derived from different species or sources, e.g., mammals, primates, rodents, fish, birds, reptiles, plants, etc. Non-recombinant monomer domains can be obtained by a number of methods, e.g., by PCR amplification of genomic DNA or cDNA.
+
+Monomer domains disclosed herein, whether an element of a binding protein or not, can be non-recombinant domains or recombinant variants. Libraries of monomer domains can contain non-recombinant monomer domain, recombinant monomer domain variants, or a combination thereof.
+
+Monomer domain variants can include ancestral domains, chimeric domains, randomized domains, mutated domains, and the like. For example, ancestral domains can be based on phylogenetic analysis. Chimeric domains are domains in which one or more regions are replaced by corresponding regions from other domains of the same family. For example, chimeric domains can be constructed by combining loop sequences from multiple related domains of the same family to form novel domains with potentially lowered immunogenicity. Those of skill in the art will recognize the immunologic benefit of constructing modified binding domain monomers by combining loop regions from various related domains of the same family rather than creating random amino acid sequences. For example, by constructing variant domains by combining loop sequences or even multiple loop sequences that occur naturally in human LDL receptor class A-domains, the resulting domains may contain novel binding properties but may not contain any immunogenic protein sequences because all of the exposed loops are of human origin. The combining of loop amino acid sequences in endogenous context can be applied to all of the monomer constructs disclosed herein. Thus also provided is a method for generating a library of chimeric monomer domains derived from human proteins, the method comprising: providing loop sequences corresponding to at least one loop from each of at least two different naturally occurring variants of a human protein, wherein the loop sequences are polynucleotide or polypeptide sequences; and covalently combining loop sequences to generate a library of at least two different chimeric sequences, wherein each chimeric sequence encodes a chimeric monomer domain having at least two loops. Typically, a chimeric domain has at least four loops, and usually at least six loops. As described above, the present disclosure provides three types of loops that are identified by specific features, such as, potential for disulfide bonding, bridging between secondary protein structures, and molecular dynamics (i.e., flexibility). The three types of loop sequences are a cysteine-defined loop sequence, a structure-defined loop sequence, and a B-factor-defined loop sequence.
+
+Randomized domains are domains in which one or more regions are randomized. The randomization can be based on full randomization, or optionally, partial randomization based on natural distribution of sequence diversity.
+
+The present disclosure also provides recombinant nucleic acids encoding one or more binding proteins comprising one or a plurality of monomer domains that bind FGFR1c or β-Klotho or both FGFR1c and β-Klotho. For example, the binding protein can be selected to comprise a non-recombinant domain from the group consisting of: an EGF-like domain, a Kringle-domain, a fibronectin type I domain, a fibronectin type II domain, a fibronectin type III domain, a PAN domain, a Gla domain, a SRCR domain, a Kunitz/Bovine pancreatic trypsin Inhibitor domain, a Kazal-type serine protease inhibitor domain, a Trefoil (P-type) domain, a von Willebrand factor type C domain, an Anaphylatoxin-like domain, a CUB domain, a thyroglobulin type I repeat, LDL-receptor class A domain, a Sushi domain, a Link domain, a Thrombospondin type I domain, an Immunoglobulin-like domain, a C-type lectin domain, a MAM domain, a von Willebrand factor type A domain, a Somatomedin B domain, a WAP-type four disulfide core domain, a F5/8 type C domain, a Hemopexin domain, an SH2 domain, an SH3 domain, a Laminin-type EGF-like domain, a C2 domain and variants of one or more thereof. In another embodiment, the naturally occurring polypeptide encodes a monomer domain found in the Pfam database and/or the SMART database.
+
+All the compositions of the present disclosure, including the binding proteins produced by the methods disclosed herein and/or described herein, e.g., monomer domains, multimers and libraries thereof, can be optionally bound to a matrix of an affinity material. Examples of affinity material include beads, a column, a solid support, a microarray, other pools of reagent-supports, and the like.
+
+Moreover, all of the binding proteins produced by the methods disclosed herein and/or described herein can optionally comprise non-naturally occurring amino acids. The term “non-naturally occurring amino acid” also includes, but is not limited to, amino acids that occur by modification (e.g., post-translational modifications) of a naturally encoded amino acid (including but not limited to, the 20 common amino acids) but are not themselves naturally incorporated into a growing polypeptide chain by the translation complex. Examples of such non-naturally-occurring amino acids include, but are not limited to, N-acetylglucosaminyl-L-serine, -acetylglucosaminyl-L-threonine, O-phosphotyrosine, and those provided hereinabove.
+
+### III. MONOMERS OF THE PRESENT DISCLOSURE
+
+The present disclosure provides binding proteins that comprise one or more monomers. In particular, methods, compositions and kits, as well as discrete monomer domains that bind to FGFR1c and/or β-Klotho, and which can form elements of a multimer (also known as a combinatorial mosaic protein or a recombinant mosaic protein) comprising two or more monomer domains that are joined via a linker are described. The multimers can be screened to identify those that have an improved phenotype such as improved avidity or affinity or altered specificity for the ligand or the mixture of ligands, compared to the discrete monomer domain; multimers identified using these and other approaches are provided.
+
+Monomer domains can be of any size. In some embodiments, monomer domains have about 25 to about 500, about 30 to about 200, about 30 to about 100, about 35 to about 50, about 35 to about 100, about 90 to about 200, about 30 to about 250, about 30 to about 60, about 9 to about 150, about 100 to about 150, about 25 to about 50, or about 30 to about 150 amino acids. Similarly, a monomer domain can comprise, e.g., from about 30 to about 200 amino acids; from about 25 to about 180 amino acids; from about 40 to about 150 amino acids; from about 50 to about 130 amino acids; or from about 75 to about 125 amino acids. Monomer domains can typically maintain a stable conformation in solution, and are often heat stable, e.g., stable at 95° C. for at least 10 minutes without losing binding affinity. In some embodiments, monomer domains can fold independently into a stable conformation. In one embodiment, the stable conformation is stabilized by ions (e.g., such as metal or calcium ions). The stable conformation can optionally contain disulfide bonds (e.g., at least one, two, or three or more disulfide bonds). The disulfide bonds can optionally be formed between two cysteine residues. In some embodiments, monomer domains, or monomer domain variants, are substantially identical to the sequences exemplified.
+
+As described herein, monomer domains can be cysteine rich. Suitable cysteine rich monomer domains include, e.g., the LDL receptor class A domain (“A-domain”) or the EGF-like domain. The monomer domains can also have a cluster of negatively charged residues. Specifically, the A-domains (sometimes called “complement-type repeats”) contain about 30-50 or 30-65 amino acids. In some embodiments, the domains comprise about 35-45 amino acids and in some cases about 40 amino acids. Within the 30-50 amino acids, there are an even number of cysteine residues, typically about 6 cysteine residues. Of the six cysteines, disulfide bonds typically are found between the following cysteines: C1 and C3, C2 and C5, C4 and C6. The A domain constitutes a ligand binding moiety. The cysteine residues of the domain are disulfide linked to form a compact, stable, functionally independent moiety. Clusters of these repeats make up a ligand binding domain, and differential clustering can impart specificity with respect to the ligand binding.
+
+Other features of monomer domains include the ability to bind ligands (e.g., as in the LDL receptor class A domain, or the CUB domain (complement C1r/C1s, Uegf, and bone morphogenic protein-1 domain), the ability to participate in endocytosis or internalization (e.g., as in the cytoplasmic tail of the LDL receptor or the cytoplasmic tail of Megalin), the ability to bind an ion (e.g., Ca2+ binding by the LDL receptor A-domain), and/or the ability to be involved in cell adhesion (e.g., as in the EGF-like domain). Other monomer domains that bind ions to maintain their secondary structure include, e.g., A domain, EGF domain, EF Hand (e.g., such as those found in present in calmodulin and troponin C), Cadherin domain, C-type lectin, C2 domain, Annexin, Gla-domain, Trombospondin type 3 domain, all of which bind calcium, and zinc fingers (e.g., C2H2 type C3HC4 type (RING finger), Integrase Zinc binding domain, PHD finger, GATA zinc finger, FYVE zinc finger, B-box zinc finger), which bind zinc.
+
+Characteristics of a monomer domain include the ability to fold independently and the ability to form a stable structure. Thus, the structure of the monomer domain is often conserved, although the polynucleotide sequence encoding the monomer need not be conserved. For example, the A-domain structure is conserved among the members of the A-domain family, while the A-domain nucleic acid sequence is not. Thus, for example, a monomer domain is classified as an A-domain by its cysteine residues and its affinity for calcium, not necessarily by its nucleic acid sequence.
+
+As described herein, monomer domains can be selected for the ability to bind to targets other than the target that a homologous naturally occurring domain can bind. Thus, in some embodiments, monomer domains (and multimers comprising such monomers) are provided that do not bind to the target or the class or family of target proteins that a homologous naturally occurring domain can bind.
+
+III.A. FGFR1c Binding Proteins
+
+In some aspects, monomer domains are provided that bind to (e.g., selectively bind) human FGFR1c or a portion thereof. A portion of FGFR1c can comprise, e.g., at least 5, 10, 15, 20, 30, 50, 100, or more contiguous amino acids of the polypeptide. In some embodiments, the monomers will bind to FGFR1c with a affinity stronger than 10−3 M (e.g, 10−4M, etc.). In some embodiments, the affinity is stronger than 10−4 M, 10−5 M, 10−6 M, 10−7 M, 10−8 M, 10−9 M or 10−10 M.
+
+A large number of FGFR1c binding sequences having an A domain scaffold were generated. As described in detail in the Examples, three families (i.e., Families 1-3, or “Fam 1-3”) of monomer domains that bind to FGFR1c were identified. The consensus motifs generated based on these families indicate common amino acid residues between the binders within the family.
+
+III.A.1.Family 1 Sequences
+
+Family 1 has the following consensus motif (SEQ ID NO: 74):
+
+Exemplary sequences comprising the FGFR1c Family 1 motif include the following sequences:
+
+III.A.2.Family 2 Sequences
+
+Family 2 has the following consensus motif (SEQ ID NO: 108):
+
+Exemplary sequences comprising the FGFR1c Family 2 motif include the following sequences:
+
+III.A.3.Family 3 Sequences
+
+Family 3 has the following consensus motif (SEQ ID NO: 119):
+
+Exemplary sequences comprising the FGFR1c Family 3 motif include the following sequences:
+
+As described herein, monomer domains can be linked to form multimers that bind the same target (e.g., FGFR1c). The present disclosure provides polypeptides comprising both homo- (i.e., at least two identical monomers) and hetero- (i.e., different monomers that bind the same target) multimers.
+
+III.B. β-Klotho Monomer Binding Proteins
+
+In some aspects, monomer domains are provided that bind to (e.g., selectively binds) a β-Klotho polypeptide or a portion thereof. A portion of a polypeptide can be, e.g., at least 5, 10, 15, 20, 30, 50, 100, or more contiguous amino acids of the polypeptide. In some embodiments, the monomers will bind to β-Klotho with a affinity stronger than 10−3 M (e.g, 10−4M, etc.). In some embodiments, the affinity is stronger than 10−4 M, 10−5 M, 10−6 M, 10−7 M, 10−8 or 10−9 M.
+
+A large number of β-Klotho binding sequences having an A domain scaffold were generated. As described in detail in the examples, five families (i.e., Families 6-9, or “Fam 6-9”) of monomer domains that bind to β-Klotho were identified. The consensus motifs generated based on these families indicate common amino acid residues between the binders within the family. In addition a number of β-Klotho binding sequences having an LNR/Notch scaffold were generated. As described in detail in the Examples, one family (Family 5 or “Fam 5”) of LNR/Notch monomer domains that bind to β-Klotho has been identified. The consensus motifs generated based on this family indicate common amino acid residues between the binders within the family.
+
+III.B.1. Family 4 Sequences
+
+Family 4 has the following consensus motif (SEQ ID NO: 130):
+
+Exemplary sequences comprising the β-Klotho Family 4 motif include the following sequences:
+
+III.B.2. Family 5 Sequences
+
+Family 5 was generated by panning the naïve LNR/Notch scaffold library on recombinant β-Klotho.
+
+Family 5 has the following consensus motif (SEQ ID NO: 1242):
+
+Exemplary sequences comprising the β-Klotho Family 5 motif include the following sequences:
+
+III.B.3. Family 6 Sequences
+
+Family 6 was generated by mutating β-Klotho M01 (SEQ ID NO: 493) and selecting for monomer domains with increased binding affinity for β-Klotho.
+
+Family 6 has the following consensus motif (SEQ ID NO: 185):
+
+C[LMP][PST][DH]EF[QR]C[GR]SG[RW]CIP[LQR][AKRST]W[GV]CDGLNDCG DGSGE[SW]PA[HLQ]C;
+
+Exemplary sequences comprising the β-Klotho Family 6 motif include the following sequences:
+
+III.B.4. Family 7 Sequences
+
+Family 7 was generated by mutating β-Klotho M25 (SEQ ID NO: 519) and selecting for monomer domains with increased binding affinity for β-Klotho.
+
+Family 7 has the following consensus motif (SEQ ID NO:194):
+
+Exemplary sequences comprising the β-Klotho Family 7 motif include the following sequences:
+
+III.B.5. Family 8 Sequences
+
+Family 8 was generated by mutating β-Klotho M42 (SEQ ID NO: 305) and selecting for monomer domains with increased binding affinity for β-Klotho.
+
+Family 8 has the following consensus motif (SEQ ID NO: 207):
+
+C[EQ][PS][DE]EF[MRT]C[RS]SGRCIP[QV][HIST]WLCDGLNDCGDGSDE[PR] P[AE][HQ]C;
+
+Exemplary sequences comprising the β-Klotho Family 8 motif include the following sequences:
+
+III.B.5. Family 9 Sequences
+
+Family 9 was generated by mutating β-Klotho M50 (SEQ ID NO: 306) and selecting for monomer domains with increased binding affinity for β-Klotho.
+
+Family 9 has the following consensus motif (SEQ ID NO: 212):
+
+Exemplary sequences comprising the β-Klotho Family 9 motif include the following sequences:
+
+III.C. β-Klotho Dimer Binding Proteins
+
+As described herein, monomer domains can be linked to form multimers that bind the same target (e.g., β-Klotho). The present disclosure provides polypeptides comprising both homo- (i.e., at least two identical monomers) and hetero- (i.e., different monomers that bind the same target) multimers. Additional libraries, referred to as “walking libraries,” were generated by ligating phage display-selected monomers (i.e. selected monomers) with the full representation of a naïve monomer library.
+
+In some aspects, dimer domains are provided that bind to (e.g., selectively binds) a β-Klotho polypeptide or a portion thereof. A portion of a polypeptide can be, e.g., at least 5, 10, 15, 20, 30, 50, 100, or more contiguous amino acids of the polypeptide. In some embodiments, the dimers will bind to β-Klotho with a affinity stronger than 10−3 M (e.g, 10−4 M, etc.). In some embodiments, the affinity is stronger than 10−4 M, 10−5 M, 10−6 M, 10−7 M, 10−8, 10−9 M or 10−10 M.
+
+A large number of β-Klotho binding sequences comprising two monomer domains were generated. As described in detail in the examples, twelve families (i.e., Families 10-21, or “Fam 10-21”) of monomer domains that bind to β-Klotho have been identified. These are summarized in FIG. 14. The consensus motifs generated based on these families indicate common amino acid residues between the binders within the family.
+
+III.C.1.Family 10 Sequences
+
+Family 10 was generated by ligating the full representation of a naïve monomer library to the C-terminal of β-Klotho M01 (SEQ ID NO: 493) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 10 has the following consensus motif for the second domain (SEQ ID NO: 217):
+
+Exemplary sequences comprising the β-Klotho Family 10 (second domain) motif include the following sequences:
+
+III.C.2.Family 11 Sequences
+
+Family 11 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M01 (SEQ ID NO: 493) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 11 has the following consensus motif for the second domain (SEQ ID NO: 232):
+
+Exemplary sequences comprising the β-Klotho Family 11 (second domain) motif include the following sequences:
+
+III.C.3.Family 12 Sequences
+
+Family 12 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M06 (SEQ ID NO: 499) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 12 has the following consensus motif for the second domain (SEQ ID NO: 240):
+
+Exemplary sequences comprising the β-Klotho Family 12 (second domain) motif include the following sequences:
+
+III.C.4.Family 13 Sequences
+
+Family 13 was generated by ligating the full representation of a naïve monomer library to the C-terminal of β-Klotho M06 (SEQ ID NO: 499) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 13 has the following consensus motif for the second domain (SEQ ID NO: 245):
+
+Exemplary sequences comprising the β-Klotho Family 13 (second domain) motif include the following sequences:
+
+III.C.5.Family 14 Sequences
+
+Family 14 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M08 (SEQ ID NO: 694) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 14 has the following consensus motif for the second domain (SEQ ID NO: 249):
+
+Exemplary sequences comprising the β-Klotho Family 14 (second domain) motif include the following sequences:
+
+III.C.6.Family 15 Sequences
+
+Family 15 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M21 (SEQ ID NO: 508) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 15 has the following consensus motif for the second domain (SEQ ID NO: 254):
+
+Exemplary sequences comprising the β-Klotho Family 15 (second domain) motif include the following sequences:
+
+III.C.7.Family 16 Sequences
+
+Family 16 was generated by ligating the full representation of a naïve monomer library to the C-terminal of β-Klotho M21 (SEQ ID NO: 508) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 16 has the following consensus motif for the second domain (SEQ ID NO: 262):
+
+Exemplary sequences comprising the β-Klotho Family 17 (second domain) motif include the following sequences:
+
+III.C.8.Family 17 Sequences
+
+Family 17 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M42 (SEQ ID NO: 305) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 17 has the following consensus motif for the second domain (SEQ ID NO: 265):
+
+Exemplary sequences comprising the β-Klotho Family 17 (second domain) motif include the following sequences:
+
+III.C.9. Family 18 Sequences
+
+Family 18 was generated by ligating the full representation of a naïve monomer library to the C-terminal of β-Klotho M42 (SEQ ID NO: 305) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 18 has the following consensus motif for the second domain (SEQ ID NO: 270):
+
+Exemplary sequences comprising the β-Klotho Family 18 (second domain) motif include the following sequences:
+
+III.C.10.Family 19 Sequences
+
+Family 19 was generated by ligating the full representation of a naïve monomer library to the N-terminal of β-Klotho M50 (SEQ ID NO: 306) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 19 has the following consensus motif for the second domain (SEQ ID NO: 274):
+
+Exemplary sequences comprising the β-Klotho Family 19 (second domain) motif include the following sequences:
+
+III.C.11.Family 20 Sequences
+
+Family 20 was generated by ligating the full representation of a naïve monomer library to the C-terminal of β-Klotho M50 (SEQ ID NO: 306) and selecting for dimer domains with increased binding affinity for β-Klotho.
+
+Family 20 has the following consensus motif for the second domain (SEQ ID NO: 284):
+
+Exemplary sequences comprising the β-Klotho Family 20 (second domain) motif include the following sequences:
+
+III.D. FGFR1c and β-Klotho Bispecific Binding Proteins
+
+A number of binding proteins were made that specifically bind both FGFR1c and β-Klotho. These bispecific binding proteins were formed by joining a FGFR1c-binding sequence selected from one of Families 1-3 to a β-Klotho-binding sequence selected from one of Families 4-20 in various combinations via a linker. The sequences from Families 1-3 that were used in preparing the bispecific proteins were:
+
+The sequences from Families 4-20 that were used in preparing the bispecific proteins were:
+
+The bispecific polypeptides that were generated include the following sequences (summarized in FIGS. 22 and 32):
+
+### IV. IMPROVING SERUM HALF-LIFE
+
+The present disclosure further provides monomer domains that bind (e.g., selectively bind) to a blood factor (e.g., serum albumin, immunoglobulin, or to erythrocytes). In some embodiments, the monomers disclosed herein will bind to a blood factor with an affinity of less than 10−3 M (i.e., binds stronger than an affinity of 10−3 M). In some embodiments, the affinity (i.e., KD) is less than 10−4 M, 10−5 M, 10−6 M, 10−7 M, 10−8 M or 10−9 M.
+
+In some embodiments, the monomer domains bind to an immunoglobulin polypeptide or a portion thereof.
+
+Thus, the present disclosure provides a method for extending the serum half-life of a binding protein, including, e.g., a multimer or a protein of interest, in an animal, including humans. In one embodiment, the method comprises first providing a monomer domain that has been identified as a binding protein that specifically binds to a half-life extender such as a blood-carried molecule or cell, such as serum albumin (e.g., human serum albumin), IgG, red blood cells, etc. The half-life extender-binding monomer is then covalently linked to another monomer domain that has a binding affinity for a protein of interest (e.g., FGFR1c, β-Klotho or both FGFR1c and β-Klotho, or a different target). This complex formation results in the half-life extension protecting the multimer and/or bound protein(s) from proteolytic degradation and/or other removal of the multimer and/or protein(s) and thereby extending the half-life of the protein and/or multimer. One variation of this use of the binding proteins disclosed herein includes the half-life extender-binding monomer covalently linked to the protein of interest. The protein of interest can include a monomer domain, a multimer of monomer domains, or a synthetic drug. Alternatively, monomers that bind to either immunoglobulins or erythrocytes can be generated using the above method and could be used for half-life extension.
+
+Half-life extender-binding multimers are typically multimers of at least two domains, chimeric domains, or mutagenized domains (e.g., one that binds to FGFR1c, one that binds to β-Klotho, or one of each type of monomer, and one that binds to the blood-carried molecule or cell). Suitable domains include all of those described herein, that are further screened and selected for binding to a half-life extender. The half-life extender-binding multimers are generated in accordance with the methods for making multimers described herein, using, for example, monomer domains pre-screened for half-life extender-binding activity. The serum half-life of a molecule can be extended to be, e.g., at least 1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200, 250, 400, 500 or more hours.
+
+Half-life extending monomer domain(s) can be linked to the N—, C-terminus or both the N- and C-termini of a binding protein (e.g., a protein comprising FGFR1c-, β-Klotho- or both FGFR1c and β-Klotho-binding monomer domain).
+
+In some embodiments the multimer can be covalently linked to the N- or C-terminus of human serum albumin or to the N- or C-terminus of the Fc domain of immunoglobulin G. Such fusions have enhanced serum half-life as a result of passing through the FcRn scavenger pathway in the endothelium that is used by native endogenous serum albumin and IgG. The serum half-life of a molecule can be extended to be, e.g., at least 1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200, 250, 400, 500 or more hours.
+
+In some embodiments N-terminal sequences are added to the binding protein to permit addition of polyethylene glycol (PEG) moieties via amide linkage chemistry. Addition of PEG increases the hydrodynamic radius of the binding protein, thus reducing excretion via kidney filtration. PEG molecules available for such purposes come in a range of molecular weights and as either linear or branched molecules.
+
+### V. MULTIMERS
+
+Methods for generating multimers form another aspect of the present disclosure. Multimers, which comprise some of the binding proteins described herein, comprise at least two monomer domains (e.g., a domain that binds to FGFR1c and a domain that binds to β-Klotho, two domains that bind β-Klotho or two domains that bind FGFR1c). For example, multimers can comprise from 2 to about 10 monomer domains, from 2 and about 8 monomer domains, from about 3 and about 10 monomer domains, about 7 monomer domains, about 6 monomer domains, about 5 monomer domains, or about 4 monomer domains. In some embodiments, the multimer comprises 3 or at least 3 monomer domains. In some embodiments, the multimers have no more than 2, 3, 4, 5, 6, 7, or 8 monomer domains. In view of the possible range of monomer domain sizes, the multimers can be, e.g., less than 100 kD, less than 90 kD, less than 80 kD, less than 70 kD, less than 60 kD, less than 50 kD, less than 40 kD, less than 30 kD, less than 25 kD, less than 20 kD, less than 15 kD, less than 10 kD or can be smaller or larger. In some cases, the monomer domains have been pre-selected for binding to a target molecule of interest (e.g., FGFR1c or β-Klotho). In some embodiments, the multimers will bind to FGFR1c, β-Klotho or both FGFR1c and β-Klotho (or, e.g., a blood factor such as HSA or IgG) with an affinity of less than 10−3 M (i.e., binds stronger than an affinity of 10−3 M). In some embodiments, the affinity is less than 10−4 M, 10−5 M, 10−6 M, 10−7 M, 10−8 M, 10−9 M, or 10−10 M. In some embodiments, the affinity of a multimer will be stronger (less) than the sum of affinities of the respective monomer domains in the multimer.
+
+In some embodiments, each monomer domain specifically binds to one target molecule (e.g., FGFR1c or β-Klotho), while in other embodiments each monomer binds to the same target molecule (e.g., β-Klotho or FGFR1c), possibly at different locations on the same target protein. In some of these embodiments, each monomer binds to a different position (analogous to an epitope) on a target molecule. Multiple monomer domains that bind to the same target molecule results in an avidity effect resulting in improved affinity of the multimer for the target molecule compared to the affinity of each individual monomer. In some embodiments, the multimer has an affinity of at least about 1.5, 2, 3, 4, 5, 10, 20, 50, 100, 200, 500, or 1000 times the affinity of a monomer domain alone. In some embodiments, at least one, two, three, four or more (e.g., all) monomers of a multimer bind an ion such as calcium or another ion.
+
+Multimers can comprise a variety of combinations of monomer domains. For example, in a single multimer, the monomer domains can be identical (e.g., two or more identical domains that bind to FGFR1c, or two or more identical domains that bind to β-Klotho) or different (e.g., one or more domains that binds to FGFR1c and one or more domain(s) that bind to β-Klotho). In addition, the selected monomer domains can comprise various different monomer domains from the same monomer domain family, or various monomer domains from different domain families, or optionally, a combination of both. For example, the monomer domains can be selected from Families 1-3 of FGFR1c-binding monomer domains or Families 4-10 of the β-Klotho-binding monomer domains. In some embodiments, at least one of the monomer domains is selected from Families 1-3 (FGFR1c-binding monomers) and another monomer domain is selected from Families 4-10 (β-Klotho-binding monomers). Exemplary FGFR1c-, β-Klotho- and bispecific FGFR1c- and β-Klotho-binding dimers are provided herein.
+
+Additional examples of multimers that can be generated include the following:
+
+(1) A homo-multimer (a multimer of the same domain, i.e., A1-A1-A1-A1);
+
+(2) A hetero-multimer of different domains of the same domain class, e.g., A1-A2-A3-A4. For example, hetero-multimer include multimers where A1, A2, A3 and A4 are different recombinant variants of a particular LDL-receptor class A domains, or where some of A1, A2, A3, and A4 are non-recombinant variants of a LDL-receptor class A domain.
+
+(3) A hetero-multimer of domains from different monomer domain classes, e.g., A1-B2-A2-B1. For example, where A1 and A2 are two different monomer domains (either recombinant or non-recombinant) from LDL-receptor class A, and B1 and B2 are two different monomer domains (either recombinant or non-recombinant) from class EGF-like domain).
+
+In another embodiment, the multimer comprises monomer domains with specificities for different target molecules (e.g., a blood factor such as serum albumin, immunoglobulin, or erythrocytes). For example, in some embodiments, the multimers comprise 1, 2, 3, or more monomer domains that bind to FGFR1c, β-Klotho or both FGFR1c and β-Klotho, and at least one monomer domain that binds to a second target molecule. Exemplary target molecules include, e.g., a serum molecule that extends the serum half-life of the multimer (e.g., an immunoglobulin or serum albumin). Exemplary molecules that extend the serum half-life of a multimer include, e.g., red blood cells (i.e., erythrocytes), IgG, and serum albumin such as HSA. An example of a multimer can include, e.g., a monomer domain from Families 1-3 of the FGFR1c binding domains and a monomoer from Families 4-19 of the β-Klotho-binding domains (and optionally 2, 3, 4, or more FGFR1c and/or β-Klotho binding domains) and an immunoglobulin binding monomer domain.
+
+Multimer libraries can contain homo-multimers, hetero-multimers of different monomer domains of the same monomer class, or hetero-multimers of monomer domains from different monomer classes, or combinations thereof.
+
+Monomer domains, as described herein, can also be readily employed in an immuno-domain-containing heteromultimer (i.e., a multimer that has at least one immuno-domain variant and one monomer domain variant). Thus, multimers can have at least one immuno-domain such as a minibody, a single-domain antibody, a single chain variable fragment (ScFv), or a Fab fragment; and at least one monomer domain, such as, for example, an EGF-like domain, a Kringle-domain, a fibronectin type I domain, a fibronectin type II domain, a fibronectin type III domain, a PAN domain, a Gla domain, a SRCR domain, a Kunitz/Bovine pancreatic trypsin Inhibitor domain, a Kazal-type serine protease inhibitor domain, a Trefoil (P-type) domain, a von Willebrand factor type C domain, an Anaphylatoxin-like domain, a CUB domain, a thyroglobulin type I repeat, LDL-receptor class A domain, a Sushi domain, a Link domain, a Thrombospondin type I domain, an Immunoglobulin-like domain, a C-type lectin domain, a MAM domain, a von Willebrand factor type A domain, a Somatomedin B domain, a WAP-type four disulfide core domain, a F5/8 type C domain, a Hemopexin domain, an SH2 domain, an SH3 domain, a Laminin-type EGF-like domain, a C2 domain, or variants thereof.
+
+Domains need not be selected before the domains are linked to form multimers. On the other hand, the domains can be selected for the ability to bind to a target molecule before being linked into multimers. Thus, for example, a multimer can comprise two domains that bind to one target molecule (e.g., β-Klotho) and a third domain that binds to a second target molecule (e.g., FGFR1c), and a fourth domain that binds to a half-life modulator domain. See FIG. 8.
+
+Multimers can have one or more of the following qualities: multivalent, multispecific, single chain, heat stable, extended serum and/or shelf half-life. Moreover none, one, more than one or all of the monomer domains can bind an ion (e.g., a metal ion or a calcium ion), none, one, more than one or all of the monomer domains can be derived from LDL receptor A domains and/or EGF-like domains, at least one, more than one or all of the monomer domains can be recombinant, and/or at least one, more than one or all of the monomer domains can comprise 1, 2, 3, or 4 disulfide bonds per monomer domain. In some embodiments, the multimers comprise at least two (or at least three) monomer domains, wherein at least one monomer domain is a recombinant monomer domain and the monomer domains bind calcium. In some embodiments, the multimers comprise at least 4 monomer domains, wherein at least one monomer domain is recombinant, and wherein:
+
+a. each monomer domain is between 30-100 amino acids and each of the monomer domains comprise at least one disulfide linkage; or
+
+b. each monomer domain is between 30-100 amino acids and is derived from an extracellular protein; or
+
+c. each monomer domain is between 30-100 amino acids and binds to a protein target.
+
+In some embodiments, the multimers comprise at least 4 monomer domains, wherein at least one monomer domain is recombinant, and wherein:
+
+a. each monomer domain is between 35-100 amino acids; or
+
+b. each domain comprises at least one disulfide bond and is derived from a human protein and/or an extracellular protein.
+
+In some embodiments, the multimers comprise at least two monomer domains, wherein at least one monomer domain is recombinant, and wherein each domain is:
+
+a. 25-50 amino acids long and comprises at least one disulfide bond; or
+
+b. 25-50 amino acids long and is derived from an extracellular protein; or
+
+c. 25-50 amino acids and binds to a protein target; or
+
+d. 35-50 amino acids long.
+
+In some embodiments, the multimers comprise at least two monomer domains, wherein at least one monomer domain is recombinant and:
+
+a. each monomer domain comprises at least one disulfide bond; or
+
+b. at least one monomer domain is derived from an extracellular protein; or
+
+c. at least one monomer domain binds to a target protein.
+
+Monomer domains and/or multimers identified can have biological activity, which is meant to include at least selective binding of a selected or desired ligand or target, and, in some instances, will further include the ability to block the binding of other compounds, to stimulate or inhibit a metabolic pathway, to act as a signal or messenger, to stimulate or inhibit cellular activity, and the like. In some embodiments, one or more of the monomer domains of the binding proteins provided herein bind to FGFR1c or β-Klotho or both FGFR1c and β-Klotho. In some embodiments, the binding of one or more monomer domains either block the binding of other molecules to FGFR1c or β-Klotho or, significantly and as shown in the Examples provided herein, mimic the in vivo activity of FGF21 and consequently activate FGF21-mediated signaling events.
+
+A single ligand can be used, or optionally a variety of ligands can be used to select the monomer domains and/or multimers. A monomer domain can bind a single ligand or a variety of ligands. A multimer of the present invention can have multiple discrete binding sites for a single ligand, or optionally, can have multiple binding sites for a variety of ligands.
+
+In some embodiments, the multimers bind to the same or other multimers to form aggregates. Aggregation can be mediated, for example, by the presence of hydrophobic domains on two monomer domains, resulting in the formation of non-covalent interactions between two monomer domains. Alternatively, aggregation may be facilitated by one or more monomer domains in a multimer having binding specificity for a monomer domain in another multimer. Aggregates can also form due to the presence of affinity peptides on the monomer domains or multimers. Aggregates can contain more target molecule binding domains than a single multimer.
+
+Multimers with affinity for both a cell surface target (e.g., β-Klotho or FGFR1c) and a second target may provide for increased avidity effects. In some cases, membrane fluidity can be more flexible than protein linkers in optimizing (by self-assembly) the spacing and valency of the interactions. In some cases, multimers will bind to two different targets, each on a different cell or one on a cell and another on a molecule with multiple binding sites.
+
+In some embodiments, the monomers or multimers disclosed herein are linked to another polypeptide to form a fusion protein. Any polypeptide can be used as a fusion partner, though it can be desirable if the fusion partner forms multimers. For example, monomers or multimers can, for example, be fused to the following locations or combinations of locations of an antibody:
+
+1. At the N-terminus of the VH1 and/or VL1 domains, optionally just after the leader peptide and before the domain starts (framework region 1);
+
+2. At the N-terminus of the CH1 or CL1 domain, replacing the VH1 or VL1 domain;
+
+3. At the N-terminus of the heavy chain, optionally after the CH1 domain and before the cysteine residues in the hinge (Fc-fusion);
+
+4. At the N-terminus of the CH3 domain;
+
+5. At the C-terminus of the CH3 domain, optionally attached to the last amino acid residue via a short linker;
+
+6. At the C-terminus of the CH2 domain, replacing the CH3 domain;
+
+7. At the C-terminus of the CL1 or CH1 domain, optionally after the cysteine that forms the interchain disulfide; or
+
+8. At the C-terminus of the VH1 or VL1 domain.
+
+In some embodiments, one or more monomer or multimer domains, such as those described herein, is linked to a molecule (e.g., a protein, nucleic acid, organic small molecule, etc.) to form a pharmaceutical. Exemplary pharmaceutical proteins suitable for fusion with a binding protein include, e.g., cytokines, antibodies, chemokines, growth factors, interleukins, cell-surface proteins (e.g., FGFR1c or β-Klotho), extracellular domains, cell surface receptors, cytotoxins, etc. Exemplary small molecule pharmaceuticals include toxins or therapeutic agents. In some embodiments, a metal can be bound to the binding proteins disclosed herein. This can be useful, e.g., as a contrast agent for use in MRI.
+
+In some embodiments a Human Serum Albumin (HSA) polypeptide is fused to the N- or C-terminus of a monomer or multimer. As described herein, a heterologous sequence can be an amino acid sequence or a non-amino acid-containing polymer. A HSA sequence(s) can be fused either directly to the monomer or multimer or via a linker or adapter molecule. A linker or adapter molecule can be one or more amino acid residues (or -mers), e.g., 1, 2, 3, 4, 5, 6, 7, 8, or 9 residues (or -mers), preferably from 10 to 50 amino acid residues (or -mers), e.g., 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30, 35, 40, 45, or 50 residues (or -mers), and more preferably from 15 to 35 amino acid residues (or -mers). A linker or adapter molecule can also be designed with a cleavage site for a DNA restriction endonuclease or for a protease to allow for the separation of the fused moieties.
+
+In some embodiments, the monomer or multimers are selected to bind to a tissue- or disease-specific target protein. Tissue-specific proteins are proteins that are expressed exclusively, or at a significantly higher level, in one or several particular tissue(s) compared to other tissues in an animal.
+
+In some embodiments, the monomers or multimers that bind to one or more target proteins are linked to a pharmaceutical protein or small molecule such that the resulting complex or fusion is targeted to the specific tissue or disease-related cell(s) where the target protein (e.g., FGFR1c or β-Klotho) is expressed. Monomers or multimers for use in such complexes or fusions can be initially selected for binding to the target protein and can be subsequently selected by negative selection against other cells or tissue (e.g., to avoid targeting bone marrow or other tissues that set the lower limit of drug toxicity) where it is desired that binding be reduced or eliminated in other non-target cells or tissues. By keeping the pharmaceutical away from sensitive tissues, the therapeutic window is increased so that a higher dose can be administered safely. In another alternative, in vivo panning can be performed in animals by injecting a library of monomers or multimers into an animal and then isolating the monomers or multimers that bind to a particular tissue or cell of interest.
+
+The binding proteins described herein can also include a linker peptide between the pharmaceutical protein and the monomer or multimers. A peptide linker sequence can be employed to separate, for example, the polypeptide components by a distance sufficient to ensure that each polypeptide folds into its secondary and tertiary structures. Fusion proteins can generally be prepared using standard techniques, including chemical conjugation. Fusion proteins can also be expressed as recombinant proteins in an expression system by standard techniques.
+
+Multimers or monomer domains can be produced according to any methods known in the art. In some embodiments, E. coli comprising a plasmid encoding the polypeptides under transcriptional control of an inducible promoter is used to express the protein. After harvesting the bacteria, they can be lysed by mechanical methods such as sonication and homogenization, chemical extraction with detergent or by the application of heat, and then clarified by centrifugation.
+
+The polypeptides can be purified using Ni-NTA agarose elution (if 6×His (SEQ ID NO: 393) tagged) or DEAE sepharose elution (if untagged) and refolded, such as by dialysis. Misfolded proteins can be neutralized by capping free sulfhydryls with iodoacetic acid. Q sepharose elution, phenyl sepharose flow-through, butyl sepharose flow-through, SP sepharose elution, DEAE sepharose elution, and/or CM sepharose elution can be used to purify the polypeptides. Equivalent anion and/or cation exchange purification steps can also be employed.
+
+In some embodiments, monomers or multimers can be purified using heat lysis, typically followed by a fast cooling to prevent most proteins from renaturing. Due to the heat stability of the proteins disclosed herein, the desired proteins will not be denatured by the heat and therefore will allow for a purification step resulting in high purity. In some embodiments, a continuous flow heating process to purify the monomers or multimers from bacterial cell cultures is used. For example, a cell suspension can be passed through a stainless steel coil submerged in a water bath set to a temperature resulting in lysis of the bacteria (e.g., about 65-100 degrees C.). The lysed effluent is routed to a cooling bath to obtain rapid cooling and prevent renaturation of denatured E. coli proteins. E. coli proteins denature and are prevented from renaturing, but the monomer or multimers do not denature under these conditions due to the exceptional stability of their scaffold. The heating time can be controlled by adjusting the flow rate and length of the coil. This approach yields active proteins with high yield and exceptionally high purity (e.g., >80%, >85%, >90%, >95%, >96%, >97%, >98%, or >99%) compared to alternative approaches and is amenable to large scale production of clinical material.
+
+In some embodiments, following the generation of the monomers or multimers described herein, the binding proteins are stored in a solution comprising iodoacetic acid to prevent scrambling of disulfide bind linkages. In some embodiments, 0.1-100 mM (e.g., 1-10 mM) iodoacetic acid is included in the solutions for storage. If desired, the iodoacetic acid can be removed before administered to an individual.
+
+In some embodiments, the polypeptide comprising a monomer or multimer is linked to itself (C-terminus to N-terminus), e.g., for protein stability.
+
+### VI. LINKERS
+
+Monomer domains can be joined by a linker to form a multimer. For example, a linker can be positioned between each separate discrete monomer domain in a multimer.
+
+Joining the selected monomer domains via a linker can be accomplished using a variety of techniques known in the art. For example, combinatorial assembly of polynucleotides encoding selected monomer domains can be achieved by restriction digestion and re-ligation, by PCR-based, self-priming overlap reactions, or other recombinant methods. The linker can be attached to a monomer before the monomer is identified for its ability to bind to a target multimer or after the monomer has been selected for the ability to bind to a target multimer.
+
+The linker can be naturally-occurring, synthetic or a combination of both. For example, the synthetic linker can be a randomized linker, e.g., both in sequence and size. In one aspect, the randomized linker can comprise a fully randomized sequence, or optionally, the randomized linker can be based on natural linker sequences. The linker can comprise, e.g., a non-polypeptide moiety, a polynucleotide, a polypeptide or the like. See FIG. 9, which provides examples of linkers based on naturally occurring diversity in A-domain linkers taken from the human genome that can form a component of the binding proteins provided herein.
+
+A linker can be rigid, or flexible, or a combination of both. Linker flexibility can be a function of the composition of both the linker and the monomer domains that the linker interacts with. The linker joins two selected monomer domain, and maintains the monomer domains as separate discrete monomer domains. The linker can allow the separate discrete monomer domains to cooperate yet maintain separate properties such as multiple separate binding sites for the same ligand in a multimer, or e.g., multiple separate binding sites for different ligands in a multimer. The linker may itself interact with the ligand or ligands, providing a binding site in addition to those binding sites provided by the constituent monomers of the multimer.
+
+Choosing a suitable linker for a specific case where two or more monomer domains are to be connected can depend on a variety of parameters including, e.g., the nature of the monomer domains, the structure and nature of the target to which the polypeptide multimer should bind and/or the stability of the peptide linker towards proteolysis and oxidation.
+
+The present disclosure provides methods for optimizing the choice of linker once the desired monomer domains/variants have been identified. Generally, libraries of multimers having a composition that is fixed with regard to monomer domain composition, but variable in linker composition and length, can be readily prepared and screened as described above.
+
+Additional discussion of linkers can be found in U.S. Patent Publication No. 2005/0048512, for example, which is incorporated herein by reference.
+
+### VII. IDENTIFYING MONOMERS OR MULTIMERS WITH AFFINITY FOR A TARGET MOLECULE
+
+Those of skill in the art can readily identify monomer domains with a desired property (e.g., binding affinity). In this regard, any method resulting in selection of domains with a desired property (e.g., a specific binding property) can be used. For example, the methods can comprise providing a plurality of different nucleic acids, each nucleic acid encoding a monomer domain; translating the plurality of different nucleic acids, thereby providing a plurality of different monomer domains; screening the plurality of different monomer domains for binding of the desired ligand or a mixture of ligands; and, identifying members of the plurality of different monomer domains that bind the desired ligand or mixture of ligands.
+
+In addition, any method of mutagenesis, such as site-directed mutagenesis and random mutagenesis (e.g., chemical mutagenesis) can be used to produce monomer domains, e.g., for a monomer domain library. In some embodiments, error-prone PCR can be employed to create variants. Additional methods include aligning a plurality of naturally occurring monomer domains by aligning conserved amino acids in the plurality of naturally occurring monomer domains; and, designing the recombinant monomer domain by maintaining the conserved amino acids and inserting, deleting or altering amino acids around the conserved amino acids to generate the recombinant monomer domain. In one embodiment, the conserved amino acids comprise cysteines. In another embodiment, the inserting step uses random amino acids, or optionally, the inserting step uses portions of the naturally occurring monomer domains. The portions can ideally encode loops from domains from the same family. Amino acids are inserted or exchanged using synthetic oligonucleotides, or by shuffling, or by restriction enzyme based recombination. Human chimeric domains of the present disclosure can be employed in therapeutic applications where minimal immunogenicity is desired. The present disclosure provides methods for generating libraries of human chimeric domains. Human chimeric monomer domain libraries can be constructed by combining loop sequences from different variants of a human monomer domain, as described above. The loop sequences that are combined can be sequence-defined loops, structure-defined loops, B-factor-defined loops, or a combination of any two or more thereof.
+
+Alternatively, a human chimeric domain library can be generated by modifying naturally-occurring human monomer domains at the amino acid level, as compared to the loop level. In some embodiments, to minimize the potential for immunogenicity, only those residues that naturally occur in protein sequences from the same family of human monomer domains are utilized to create the chimeric sequences. This can be achieved by providing a sequence alignment of at least two human monomer domains from the same family of monomer domains, identifying amino acid residues in corresponding positions in the human monomer domain sequences that differ between the human monomer domains, generating two or more human chimeric monomer domains, wherein each human chimeric monomer domain sequence consists of amino acid residues that correspond in type and position to residues from two or more human monomer domains from the same family of monomer domains. Libraries of human chimeric monomer domains can be employed to identify human chimeric monomer domains that bind to a target of interest by screening the library of human chimeric monomer domains for binding to a target molecule, and identifying a human chimeric monomer domain that binds to the target molecule. Suitable naturally-occurring human monomer domain sequences employed in the initial sequence alignment step include those corresponding to any of the naturally-occurring monomer domains described herein.
+
+Domains of human monomer variant libraries of the present disclosure (whether generated by varying loops or single amino acid residues) can be prepared by methods known to those having ordinary skill in the art. Methods particularly suitable for generating these libraries are split-pool format and trinucleotide synthesis format as described in WO01/23401, incorporated herein by reference.
+
+In some embodiments, monomer domains of the disclosure are screened for potential immunogenicity by:
+
+
+- - (a) providing a candidate protein sequence;
+  - (b) comparing the candidate protein sequence to a database of human
+    protein sequences;
+  - (c) identifying portions of the candidate protein sequence that
+    correspond to portions of human protein sequences from the database;
+    and
+  - (d) determining the extent of correspondence between the candidate
+    protein sequence and the human protein sequences from the database.
+
+In general, the greater the extent of correspondence between the candidate protein sequence and one or more of the human protein sequences from the database, the lower the potential for immunogenicity is predicted as compared to a candidate protein having little correspondence with any of the human protein sequences from the database. A database of human protein sequences that is suitable for use in the practice of the invention method for screening candidate proteins can be found at the website for the National Center for Biotechnology Information (NCBI). This website provides the Basic Local Alignment Search Tool (BLAST) algorithm as a resource that can be used to find regions of local similarity between sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches. Databases available for comparison contain sequence information from whole genomes of many vertebrate, invertebrate, plant, fungi, protozoan, prokaryotic and archaean species. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families. A second tool available at NCBI, COBALT (constraint-based alignment tool) allows the simultaneous alignment of multiple sequences that can be applied to database searches. These methods are particularly useful in determining whether a crossover sequence in a chimeric protein, such as, for example, a chimeric monomer domain, is likely to cause an immunogenic event. If the crossover sequence corresponds to a portion of a sequence found in the database of human protein sequences, it is possible that the crossover sequence is less likely to cause an immunogenic event.
+
+Information pertaining to portions of human protein sequences from the database can be used to design a protein library of human-like chimeric proteins. Such library can be generated by using information pertaining to “crossover sequences” that exist in naturally occurring human proteins. As used herein the term “crossover sequence” refers to a sequence that is found in its entirety in at least one naturally occurring human protein, in which portions of the sequence are found in two or more naturally occurring proteins. Thus, recombination of the latter two or more naturally occurring proteins would generate a chimeric protein in which the chimeric portion of the sequence actually corresponds to a sequence found in another naturally occurring protein. The crossover sequence contains a chimeric junction of two consecutive amino acid residue positions in which the first amino acid position is occupied by an amino acid residue identical in type and position found in a first and second naturally occurring human protein sequence, but not a third naturally occurring human protein sequence. The second amino acid position is occupied by an amino acid residue identical in type and position found in a second and third naturally occurring human protein sequence, but not the first naturally occurring human protein sequence. In other words, the “second” naturally occurring human protein sequence corresponds to the naturally occurring human protein in which the crossover sequence appears in its entirety, as described above.
+
+In some embodiments, a library of human-like chimeric proteins is generated by:
+
+(a) identifying human protein sequences from a database that correspond to proteins from the same family of proteins; aligning the human protein sequences from the same family of proteins to a reference protein sequence;
+
+(b) identifying a set of subsequences derived from different human protein sequences of the same family, wherein each subsequence shares a region of identity with at least one other subsequence derived from a different naturally occurring human protein sequence; and
+
+(c) identifying a chimeric junction from a first, a second, and a third subsequence, wherein each subsequence is derived from a different naturally occurring human protein sequence, and wherein the chimeric junction comprises two consecutive amino acid residue positions in which the first amino acid position is occupied by an amino acid residue common to the first and second naturally occurring human protein sequence, but not the third naturally occurring human protein sequence, and the second amino acid position is occupied by an amino acid residue common to the second and third naturally occurring human protein sequence, and generating human-like chimeric protein molecules each corresponding in sequence to two or more subsequences from the set of subsequences, and each comprising one of more of the identified chimeric junctions.
+
+Thus, for example, if the first naturally-occurring human protein sequence is, A-B-C, and the second is, B-C-D-E, and the third is, D-E-F, then the chimeric junction is C-D. Alternatively, if the first naturally-occurring human protein sequence is D-E-F-G, and the second is B-C-D-E-F, and the third is A-B-C-D, then the chimeric junction is D-E. Human-like chimeric protein molecules can be generated in a variety of ways. For example, oligonucleotides comprising sequences encoding the chimeric junctions can be recombined with oligonucleotides corresponding in sequence to two or more subsequences from the above-described set of subsequences to generate a human-like chimeric protein, and libraries thereof. The reference sequence used to align the naturally occurring human proteins is a sequence from the same family of naturally occurring human proteins, or a chimera or other variant of proteins in the family.
+
+Nucleic acids encoding fragments of naturally-occurring monomer domains can also be mixed and/or recombined (e.g., by using chemically or enzymatically-produced fragments) to generate full-length, modified monomer domains. The fragments and the monomer domain can also be recombined by manipulating nucleic acids encoding domains or fragments thereof. For example, ligating a nucleic acid construct encoding fragments of the monomer domain can be used to generate an altered monomer domain.
+
+Altered monomer domains can also be generated by providing a collection of synthetic oligonucleotides (e.g., overlapping oligonucleotides) encoding conserved, random, pseudorandom, or a defined sequence of peptide sequences that are then inserted by ligation into a predetermined site in a polynucleotide encoding a monomer domain. Similarly, the sequence diversity of one or more monomer domains can be expanded by mutating the monomer domain(s) with site-directed mutagenesis, random mutation, pseudorandom mutation, defined kernal mutation, codon-based mutation, and the like. The resultant nucleic acid molecules can be propagated in a host for cloning and amplification. In some embodiments, the nucleic acids are shuffled.
+
+The present disclosure also provides a method for recombining a plurality of nucleic acids encoding monomer domains and screening the resulting library for monomer domains that bind to the desired ligand or mixture of ligands or the like. Selected monomer domain nucleic acids can also be back-crossed by shuffling with polynucleotide sequences encoding neutral sequences (i.e., sequences having an insubstantial functional effect on binding), such as for example, by back-crossing with a wild-type or naturally-occurring sequence substantially identical to a selected sequence to produce native-like functional monomer domains. Generally, during back-crossing, subsequent selection is applied to retain the property, e.g., binding to the ligand.
+
+In some embodiments, a monomer library is prepared by shuffling. In such a case, monomer domains are isolated and shuffled to combinatorially recombine the nucleic acid sequences that encode the monomer domains (recombination can occur between or within monomer domains, or both). The first step involves identifying a monomer domain having the desired property, e.g., affinity for a certain ligand. While maintaining the conserved amino acids during the recombination, the nucleic acid sequences encoding the monomer domains can be recombined, or recombined and joined into multimers.
+
+An advantage of the methods and compositions disclosed herein is that known ligands, or unknown ligands can be used to select the monomer domains and/or multimers. No prior information regarding ligand structure is required to isolate the monomer domains of interest or the multimers of interest. The monomer domains and/or multimers identified can have biological activity, which is meant to include at least specific binding affinity for a selected or desired ligand, and, in some instances, will further include the ability to block the binding of other compounds, to stimulate or inhibit metabolic pathways, to act as a signal or messenger, to stimulate or inhibit cellular activity, and the like. Monomer domains can also be generated to function as ligands for receptors where the natural ligand for the receptor has not yet been identified (orphan receptors). These orphan ligands can be created to either block or activate the receptor to which they bind.
+
+A single ligand can be used, or optionally a variety of ligands can be used to select the monomer domains and/or multimers. A monomer domain of the present disclosure can bind a single ligand or a variety of ligands. A multimer of the present disclosure can have multiple discrete binding sites for a single ligand, or optionally, can have multiple binding sites for a variety of ligands.
+
+In some embodiments, multimers or monomers are screened for the ability to bind to a protein from multiple (e.g., 2, 3, or more) different species. For example, human and primate orthologous proteins can be screened, thereby generating polypeptides that bind the proteins (e.g., IgG, HSA or other serum half-life extender or other protein) from both a human and a primate, thereby allowing for ease of analysis of toxicology in primates for use in humans.
+
+Also described are compositions that are produced by methods disclosed herein. For example, the present disclosure includes monomer domains selected or identified from a library and/or libraries comprising monomer domains produced by the methods disclosed herein.
+
+The present disclosure also provides libraries of monomer domains and libraries of nucleic acids that encode monomer domains. The libraries can comprise, e.g., about 100, 250, 500 or more nucleic acids encoding monomer domains, or the library can include, e.g., about 100, 250, 500 or more polypeptides that encode monomer domains. Libraries can include monomer domains containing the same cysteine frame, e.g., A-domains or EGF-like domains.
+
+In some embodiments, variants are generated by recombining two or more different sequences from the same family of monomer domains (e.g., the LDL receptor class A domain). Alternatively, two or more different monomer domains from different families can be combined to form a multimer. In some embodiments, the multimers are formed from monomers or monomer variants of at least one of the following family classes: an EGF-like domain, a Kringle-domain, a fibronectin type I domain, a fibronectin type II domain, a fibronectin type III domain, a PAN domain, a Gla domain, a SRCR domain, a Kunitz/Bovine pancreatic trypsin Inhibitor domain, a Kazal-type serine protease inhibitor domain, a Trefoil (P-type) domain, a von Willebrand factor type C domain, an Anaphylatoxin-like domain, a CUB domain, a thyroglobulin type I repeat, LDL-receptor class A domain, a Sushi domain, a Link domain, a Thrombospondin type I domain, an Immunoglobulin-like domain, a C-type lectin domain, a MAM domain, a von Willebrand factor type A domain, a Somatomedin B domain, a WAP-type four disulfide core domain, a F5/8 type C domain, a Hemopexin domain, an SH2 domain, an SH3 domain, a Laminin-type EGF-like domain, a C2 domain and derivatives thereof. In another embodiment, the monomer domain and the different monomer domain can include one or more domains found in the Pfam database and/or the SMART database. Libraries produced by the methods above, one or more cell(s) comprising one or more members of the library, and one or more displays comprising one or more members of the library also form aspect of the present disclosure.
+
+Optionally, a data set of nucleic acid character strings encoding monomer domains can be generated e.g., by mixing a first character string encoding a monomer domain, with one or more character string encoding a different monomer domain, thereby producing a data set of nucleic acids character strings encoding monomer domains, including those described herein. In another embodiment, the monomer domain and the different monomer domain can include one or more domains found in the Pfam database and/or the SMART database. The methods can further comprise inserting the first character string encoding the monomer domain and the one or more second character string encoding the different monomer domain in a computer and generating a multimer character string(s) or library(s), thereof in the computer.
+
+The libraries can be screened for a desired property such as binding of a desired ligand or mixture of ligands. For example, members of the library of monomer domains can be displayed and prescreened for binding to a known or unknown ligand or a mixture of ligands. The monomer domain sequences can then be mutagenized (e.g., recombined, chemically altered, etc.) or otherwise altered and the new monomer domains can be screened again for binding to the ligand or the mixture of ligands with an improved affinity. The selected monomer domains can be combined or joined to form multimers, which can then be screened for an improved affinity or avidity or altered specificity for the ligand or the mixture of ligands. Altered specificity can mean that the specificity is broadened, e.g., binding of multiple related viruses, or optionally, altered specificity can mean that the specificity is narrowed, e.g., binding within a specific region of a ligand. Those of skill in the art will recognize that there are a number of methods available to calculate avidity. See, e.g., Mammen et al., Angew Chem Int. Ed. 37:2754-2794 (1998); Muller et al., Anal. Biochem. 261:149-158 (1998).
+
+### VIII. SELECTION OF MONOMER DOMAINS THAT BIND FGFR1c OR β-KLOTHO
+
+Preliminary screens can be conducted by screening for agents capable of binding to FGFR1c or β-Klotho. The binding assays can involve contacting an FGFR1c or β-Klotho protein (or a fragment thereof) with one or more test agents (i.e., monomers or multimers disclosed herein) and allowing sufficient time for the protein and test agents to form a binding complex. Any formed binding complexes can be detected using any of a number of established analytical techniques. Protein binding assays include, but are not limited to, enzyme-linked immunosorbent assays (ELISA), Alphascreen (amplified luminescent proximity homogeneous assay), immunohistochemical binding assays, flow cytometry or other assays. The FGFR1c and β-Klotho proteins utilized in such assays can be naturally expressed, cloned or synthesized. Similar methods can be used to identify monomer domains or multimers that bind IgG or HSA.
+
+The screening methods disclosed herein can be performed as in vitro or cell-based assays. Cell-based assays can be performed in any cells in which FGFR1c, β-Klotho or both FGFR1c and β-Klotho is expressed. Cell-based assays can involve whole cells or cell fractions containing FGFR1c and/or β-Klotho to screen for agent binding or modulation of activity by the agent. Exemplary cell types that can be used according to the methods disclosed herein include, e.g., any mammalian cells, as well as fungal cells, including yeast, and bacterial cells. Cells can be primary cells or tumor cells or other types of immortal cell lines. Of course, FGFR1c or β-Klotho can be recombinantly expressed in cells that do not endogenously contain FGFR1c or β-Klotho.
+
+FGFR1c or β-Klotho activity assays can also be used to identify a modulator (antagonist or agonist) of FGFR1c or β-Klotho. Additionally, activity assays to identify modulators of FGF21-mediated activity, such as those described in the Examples, can also be employed. In these embodiments, one or more test agents are contacted to a cell expressing FGFR1c, or both FGFR1c and β-Klotho, and then tested for FGFR1c-, or FGF21-mediated activity, respectively. In order to determine that the modulator has β-Klotho dependent activity (a characteristic of FGF-21) it is necessary to show that it can induce agonist activity on cells co-expressing a member of the FGFR family (FGFR1c, FGFR2c, FGFR3c, and FGFR4) and β-Klotho (see, e.g., FIG. 37). Exemplary FGFR1c-mediated activities include activation of luciferase expression under the control of an ERK pathway sensitive promoter in response to FGF-1 in the absence of β-Klotho (see, e.g., FIG. 46) and exemplary FGF21-mediated activities include activation of luciferase expression under the control of an ERK pathway sensitive promoter in response to FGF-21 in the presense of β-Klotho (see, e.g., FIGS. 30 and 31, 33 to 35, 38, 45, and 47 to through 49). In other embodiments, downstream molecular events can also be monitored to determine signaling activity. For example, FGF21-mediated signal transduction is mediated by the ERK pathway and various methods are known to measure signaling through the ERK pathway, including those disclosed herein, e.g., in Examples 9, 10 and 11.
+
+In some embodiments, activity assays, such as those disclosed herein in Example 9, can also used to confirm that identified agonist monomers or multimers (e.g., those that bind to both FGFR1c or β-Klotho) lack antagonist activity (i.e., that they do not block FGF21-mediated signaling).
+
+Agents that are initially identified by any of the foregoing screening methods can be further tested to validate the apparent activity. Such studies can be conducted with suitable animal models. The basic format of such methods involves administering an agent of interest identified during an initial screen to an animal that serves as a model for humans and then determining if FGF21-mediated signaling is in fact modulated and/or a desired physiological effect is observed (e.g., lowering of blood glucose levels, blood insulin levels or blood lipid levels) and/or a disease or condition is ameliorated (e.g., diabetes or obesity). The animal models utilized in validation studies generally are mammals of any kind. Specific examples of suitable animals include, but are not limited to, non-human primates (including cynomolgous and rhesus monkeys), mice and rats.
+
+Selection of monomer domains that bind FGFR1c or β-Klotho from a library of domains can be accomplished using any of a variety of procedures. For example, one method of identifying monomer domains which have a desired property (e.g., binding FGFR1c or β-Klotho or IgG) involves translating a plurality of nucleic acids, where each nucleic acid encodes a monomer domain, screening the polypeptides encoded by the plurality of nucleic acids, and identifying those monomer domains that, e.g., bind to a desired ligand or mixture of ligands, thereby producing a selected monomer domain. The monomer domains expressed by each of the nucleic acids can be tested for their ability to bind to the ligand by methods known in the art (e.g., panning, affinity chromatography, ELISA, Alphascreen, or FACS analysis, as are described herein).
+
+As noted herein, the selection of monomer domains can be based on binding to a ligand such as FGFR1c or β-Klotho, or a fragment thereof or other target molecule (e.g., lipid, carbohydrate, nucleic acid and the like). The ligand can be provided either as a recombinant purified protein, or expressed on the surface of a cell, such as a bacterial, fungal, insect or mammalian cell. Other molecules can optionally be included in the methods along with the target, e.g., ions such as Ca+2.
+
+When a monomer domain is selected based on its ability to bind to a ligand, the selection basis can include selection based on a slow dissociation rate, which is usually predictive of high affinity. The valency of the ligand can also be varied to control the average binding affinity of selected monomer domains. The ligand can be bound to a surface or substrate at varying densities, such as by including a competitor compound, by dilution, or by other method known to those in the art. High density (valency) of predetermined ligand can be used to enrich for monomer domains that have relatively low affinity, whereas a low density (valency) can preferentially enrich for higher affinity monomer domains.
+
+A variety of reporting display vectors or systems can be used to express nucleic acids encoding the monomer domains and/or multimers disclosed herein and to test for a desired activity. For example, a phage display system is a system in which monomer domains are expressed as fusion proteins on the phage surface (Pharmacia, Milwaukee Wis.). Phage display can involve the presentation of a polypeptide sequence encoding monomer domains on the surface of a filamentous bacteriophage, typically as a fusion with a bacteriophage coat protein.
+
+Generally in these methods, each phage particle or cell serves as an individual library member displaying a single species of displayed polypeptide in addition to the natural phage or cell protein sequences. The nucleic acids are cloned into the phage DNA at a site which results in the transcription of a fusion protein, a portion of which is encoded by the plurality of the nucleic acids. The phage containing a nucleic acid molecule undergoes replication and transcription in the cell. The leader sequence of the fusion protein directs the transport of the fusion protein to the tip of the phage particle. Thus, the fusion protein that is partially encoded by the nucleic acid is displayed on the phage particle for detection and selection by the methods described above and below. For example, the phage library can be incubated with a predetermined ligand such as FGFR1c or β-Klotho or a fragment thereof, so that phage particles which present a fusion protein sequence that binds to the ligand can be differentially partitioned from those that do not present polypeptide sequences that bind to the predetermined ligand. For example, the separation can be provided by immobilizing the predetermined ligand. The phage particles (i.e., library members) which are bound to the immobilized ligand are then recovered and replicated to amplify the selected phage subpopulation for a subsequent round of affinity enrichment and phage replication. After several rounds of affinity enrichment and phage replication, the phage library members that are thus selected are isolated and the nucleotide sequence encoding the displayed polypeptide sequence is determined, thereby identifying the sequence(s) of polypeptides that bind to the predetermined ligand. Such methods are further described in PCT Publication Nos. WO 91/17271, WO 91/18980, WO 91/19818 and WO 93/08278.
+
+Examples of other display systems include ribosome displays, a nucleotide-linked display (see, e.g., U.S. Pat. Nos. 6,281,344; 6,194,550, 6,207,446, 6,214,553, and 6,258,558), polysome display, cell surface displays and the like. The cell surface displays include a variety of cells, e.g., E. coli, yeast and/or mammalian cells. When a cell is used as a display, the nucleic acids, e.g., those obtained by PCR amplification followed by digestion, are introduced into the cell and translated. Optionally, polypeptides encoding the monomer domains or the multimers disclosed herein can be introduced, e.g., by injection, into the cell.
+
+The monomer and multimer libraries of the present disclosure can be screened for a desired property such as binding of a desired ligand (e.g., FGFR1c or β-Klotho) or a mixture of ligands. For example, members of the library of monomer domains can be displayed and prescreened for binding to a known or unknown ligand or a mixture of ligands. The monomer domain sequences can then be mutagenized (e.g., recombined, chemically altered, etc.) or otherwise altered and the new monomer domains can be screened again for binding to the ligand or the mixture of ligands with an improved affinity. The selected monomer domains can be combined or joined to form multimers, which can then be screened for an improved affinity or avidity or altered specificity for the ligand or the mixture of ligands. Altered specificity can mean that the specificity is broadened, e.g., binding of multiple related ligands, or optionally, altered specificity can mean that the specificity is narrowed, e.g., binding within a specific region of a ligand. Those of skill in the art will recognize that there are a number of methods available to calculate avidity. See, e.g., Mammen et al., Angew Chem Int. Ed. 37:2754-2794 (1998); Muller et al., Anal. Biochem. 261:149-158 (1998).
+
+Those of skill in the art will recognize that the steps of generating variation and screening for a desired property can be repeated (i.e., performed recursively) to optimize results. For example, in a phage display library or other like format, a first screening of a library can be performed at relatively lower stringency, thereby selected as many particles associated with a target molecule as possible. The selected particles can then be isolated and the polynucleotides encoding the monomer or multimer can be isolated from the particles. Additional variations can then be generated from these sequences and subsequently screened at higher affinity.
+
+All the compositions of the present disclosure, e.g., monomer domains as well as multimers and libraries thereof, can be optionally bound to a matrix of an affinity material. Examples of affinity material include beads, a column, a solid support, a microarray, other pools of reagent-supports, and the like.
+
+When multimers capable of binding relatively large targets are desired, they can be generated by a “walking” selection method, as was performed to generate a number of the disclosed binding proteins. This method is carried out by providing a library of monomer domains and screening the library of monomer domains for affinity to a first target molecule. Once at least one monomer that binds to the target is identified, that monomer is covalently linked to a new library or each remaining member of the original library of monomer domains. This new library of multimers (dimers) is then screened for multimers that bind to the target with an increased affinity, and a multimer that binds to the target with an increased affinity can be identified. The “walking” monomer selection method provides a way to assemble a multimer that is composed of monomers that can act additively or even synergistically with each other given the restraints of linker length. This walking technique is very useful when selecting for and assembling multimers that are able to bind large target proteins with high affinity. The walking method can be repeated to add more monomers thereby resulting in a multimer comprising 2, 3, 4, 5, 6, 7, 8 or more monomers linked together. This “walking” method was employed in the generation of β-Klotho-specific binding proteins, as described in Example 7.
+
+In some embodiments, the selected multimer comprises more than two domains. Such multimers can be generated in a step fashion, e.g., where the addition of each new domain is tested individually and the effect of the domains is tested in a sequential fashion. See FIG. 7. In an alternate embodiment, domains are linked to form multimers comprising more than two domains and selected for binding without prior knowledge of how smaller multimers, or alternatively, how each domain, bind.
+
+The methods of the present disclosure also include methods of evolving monomers or multimers. Intra-domain recombination can be introduced into monomers across the entire monomer or by taking portions of different monomers to form new recombined units. Interdomain recombination (e.g., recombining different monomers into or between multimers) or recombination of modules (e.g., multiple monomers within a multimer) can be achieved. Inter-library recombination is also contemplated.
+
+Methods for evolving monomers or multimers can comprise, e.g., any or all of the following steps: providing a plurality of different nucleic acids, where each nucleic acid encoding a monomer domain; translating the plurality of different nucleic acids, which provides a plurality of different monomer domains; screening the plurality of different monomer domains for binding of the desired ligand (e.g., FGFR1c or β-Klotho) or mixture of ligands; identifying members of the plurality of different monomer domains that bind the desired ligand or mixture of ligands, which provides selected monomer domains; joining the selected monomer domains with at least one linker to generate at least one multimer, wherein the at least one multimer comprises at least two of the selected monomer domains and the at least one linker; and, screening the at least one multimer for an improved affinity or avidity or altered specificity for the desired ligand or mixture of ligands as compared to the selected monomer domains.
+
+Variation can be introduced into either monomers or multimers. An example of improving monomers includes intra-domain recombination in which two or more (e.g., three, four, five, or more) portions of the monomer are amplified separately under conditions to introduce variation (for example by shuffling or other recombination method) in the resulting amplification products, thereby synthesizing a library of variants for different portions of the monomer. By locating the 5′ ends of the middle primers in a “middle” or “overlap” sequence that both of the PCR fragments have in common, the resulting “left” side and “right” side libraries can be combined by overlap PCR to generate novel variants of the original pool of monomers. These new variants can then be screened for desired properties, e.g., panned against a target or screened for a functional effect. The “middle” primer(s) can be selected to correspond to any segment of the monomer, and will typically be based on the scaffold or one or more consensus amino acids within the monomer (e.g., cysteines such as those found in A domains).
+
+Similarly, multimers can be created by introducing variation at the monomer level and then recombining monomer variant libraries. On a larger scale, multimers (single or pools) with desired properties can be recombined to form longer multimers. In some cases variation is introduced (typically synthetically) into the monomers or into the linkers to form libraries. This can be achieved, e.g., with two different multimers that bind to two different targets, thereby eventually selecting a multimer with a portion that binds to one target and a portion that binds a second target.
+
+Additional variation can be introduced by inserting linkers of different length and composition between domains. This allows for the selection of optimal linkers between domains. In some embodiments, optimal length and composition of linkers will allow for optimal binding of domains. In some embodiments, the domains with a particular binding affinity(s) are linked via different linkers and optimal linkers are selected in a binding assay. For example, domains are selected for desired binding properties and then formed into a library comprising a variety of linkers. The library can then be screened to identify optimal linkers. Alternatively, multimer libraries can be formed where the effect of domain or linker on target molecule binding is not known.
+
+Methods of the present disclosure also include generating one or more selected multimers by providing a plurality of monomer domains. The plurality of monomer domains is screened for binding of a desired ligand or mixture of ligands. Members of the plurality of domains that bind the desired ligand or mixture of ligands are identified, thereby providing domains with a desired affinity. The identified domains are joined with at least one linker to generate the multimers, wherein each multimer comprises at least two of the selected domains and the at least one linker; and, the multimers are screened for an improved affinity or avidity or altered specificity for the desired ligand or mixture of ligands as compared to the selected domains, thereby identifying the one or more selected multimers.
+
+Multimer libraries can be generated, in some embodiments, by combining two or more libraries or monomers or multimers in a recombinase-based approach, where each library member comprises as recombination site (e.g., a lox site). A larger pool of molecularly diverse library members in principle harbor more variants with desired properties, such as higher target-binding affinities and functional activities. When libraries are constructed in phage vectors, which can be transformed into E. coli, library size (typically 109-1010 members) is limited by the transformation efficiency of E. coli. A recombinase/recombination site system (e.g., the Cre-loxP system) and in vivo recombination can be exploited to generate libraries that are not limited in size by the transformation efficiency of E. coli.
+
+For example, the Cre-loxP system can be used to generate dimer libraries with 1010, 1011, 1012, 1013 members, or even greater diversity. In some embodiments, E. coli as a host for one naïve monomer library and a filamentous phage that carries a second naïve monomer library are used. The library size in this case is limited only by the number of infective phage (carrying one library) and the number of infectible E. coli cells (carrying the other library). For example, infecting 1012 E. coli cells (1 L at OD600=1) with >1012 phage could produce as many as 1012 dimer combinations.
+
+Selection of multimers can be accomplished using a variety of techniques including those mentioned above for identifying monomer domains. Other selection methods include, e.g., a selection based on an improved affinity or avidity or altered specificity for the ligand compared to selected monomer domains. For example, a selection can be based on selective binding to specific cell types, or to a set of related cells or protein types (e.g., different virus serotypes). Optimization of the property selected for, e.g., avidity of a ligand, can then be achieved by recombining the domains, as well as manipulating amino acid sequence of the individual monomer domains or the linker domain or the nucleotide sequence encoding such domains, as mentioned in the present disclosure.
+
+One method for identifying multimers can be accomplished by displaying the multimers. As with the monomer domains, the multimers are optionally expressed or displayed on a variety of display systems, e.g., phage display, ribosome display, polysome display, nucleotide-linked display (see, e.g., U.S. Pat. Nos. 6,281,344; 6,194,550, 6,207,446, 6,214,553, and 6,258,558) and/or cell surface display, as described above. Cell surface displays can include but are not limited to E. coli, yeast or mammalian cells. In addition, display libraries of multimers with multiple binding sites can be panned for avidity or affinity or altered specificity for a ligand or for multiple ligands.
+
+Monomers or multimers can be screened for target binding activity in yeast cells using a two-hybrid screening assay. In this type of screen the monomer or multimer library to be screened is cloned into a vector that directs the formation of a fusion protein between each monomer or multimer of the library and a yeast transcriptional activator fragment (i.e., Gal4). Sequences encoding the “target” protein are cloned into a vector that results in the production of a fusion protein between the target and the remainder of the Gal4 protein (the DNA binding domain). A third plasmid contains a reporter gene downstream of the DNA sequence of the Gal4 binding site. A monomer that can bind to the target protein brings with it the Gal4 activation domain, thus reconstituting a functional Gal4 protein. This functional Gal4 protein bound to the binding site upstream of the reporter gene results in the expression of the reporter gene and selection of the monomer or multimer as a target binding protein. (see Chien et. al. (1991) Proc. Natl. Acad. Sci. (USA) 88:9578; Fields S, and Song O. (1989) Nature 340: 245) Using a two-hybrid system for library screening is further described in U.S. Pat. No. 5,811,238 (see also Silver S.C. and Hunt S. W. (1993) Mol. Biol. Rep. 17:155; Durfee et al. (1993) Genes Devel. 7:555; Yang et al. (1992) Science 257:680; Luban et al. (1993) Cell 73:1067; Hardy et al. (1992) Genes Devel. 6:801; Bartel et al. (1993) Biotechniques 14:920; and Vojtek et al. (1993) Cell 74:205). Another useful screening system is the E. coli/BCCP interactive screening system (Germino et al. (1993) Proc. Nat. Acad. Sci. (U.S.A.) 90:993; Guarente L. (1993) Proc. Nat. Acad. Sci. (U.S.A.) 90:1639).
+
+Other variations include the use of multiple binding compounds, such that monomer domains, multimers or libraries of these molecules can be simultaneously screened for a multiplicity of ligands or compounds that have different binding specificity. Multiple predetermined ligands or compounds can be concomitantly screened in a single library, or sequential screening against a number of monomer domains or multimers. In one variation, multiple ligands or compounds, each encoded on a separate bead (or subset of beads), can be mixed and incubated with monomer domains, multimers or libraries of these molecules under suitable binding conditions. The collection of beads, comprising multiple ligands or compounds, can then be used to isolate, by affinity selection, selected monomer domains, selected multimers or library members. Generally, subsequent affinity screening rounds can include the same mixture of beads, subsets thereof, or beads containing only one or two individual ligands or compounds. This approach affords efficient screening, and is compatible with laboratory automation, batch processing, and high throughput screening methods.
+
+In another embodiment, multimers can be simultaneously screened for the ability to bind multiple ligands, wherein each ligand comprises a different label. For example, each ligand can be labeled with a different fluorescent label, contacted simultaneously with a multimer or multimer library. Multimers with the desired affinity are then identified (e.g., by FACS sorting) based on the presence of the labels linked to the desired labels.
+
+Libraries of either monomer domains or multimers (referred to in the following discussion for convenience as “affinity agents”) can be screened (i.e., panned) simultaneously against multiple ligands in a number of different formats. For example, multiple ligands can be screened in a simple mixture, in an array, displayed on a cell or tissue (e.g., a cell or tissue provides numerous molecules that can be bound by the monomer domains or multimers disclosed herein), and/or immobilized. The libraries of affinity agents can optionally be displayed on yeast or phage display systems. Similarly, if desired, the ligands (e.g., encoded in a cDNA library) can be displayed in a yeast or phage display system.
+
+Initially, the affinity agent library is panned against the multiple ligands. Optionally, the resulting “hits” are panned against the ligands one or more times to enrich the resulting population of affinity agents.
+
+If desired, the identity of the individual affinity agents and/or ligands can be determined. In some embodiments, affinity agents are displayed on phage. Affinity agents identified as binding in the initial screen are divided into a first and second portion. The first portion is infected into bacteria, resulting in either plaques or bacterial colonies, depending on the type of phage used. The expressed phage are immobilized and then probed with ligands displayed in phage selected as described below.
+
+The second portion are coupled to beads or otherwise immobilized and a phage display library containing at least some of the ligands in the original mixture is contacted to the immobilized second portion. Phage that bind to the second portion are subsequently eluted and contacted to the immobilized phage described in the paragraph above. Phage-phage interactions are detected (e.g., using a monoclonal antibody specific for the ligand-expressing phage) and the resulting phage polynucleotides can be isolated.
+
+In some embodiments, the identity of an affinity agent-ligand pair is determined. For example, when both the affinity agent and the ligand are displayed on a phage or yeast, the DNA from the pair can be isolated and sequenced. In some embodiments, polynucleotides specific for the ligand and affinity agent are amplified. Amplification primers for each reaction can include 5′ sequences that are complementary such that the resulting amplification products are fused, thereby forming a hybrid polynucleotide comprising a polynucleotide encoding at least a portion of the affinity agent and at least a portion of the ligand. The resulting hybrid can be used to probe affinity agent or ligand (e.g., cDNA-encoded) polynucleotide libraries to identify both affinity agent and ligand.
+
+The above-described methods can be readily combined with “walking” to simultaneously generate and identify multiple multimers, each of which bind to a ligand in a mixture of ligands. In these embodiments, a first library of affinity agents (monomer domains or multimers) are panned against multiple ligands and the eluted affinity agents are linked to the first or a second library of affinity agents to form a library of multimeric affinity agents (e.g., comprising 2, 3, 4, 5, 6, 7, 8, 9, or more monomers), which are subsequently panned against the multiple ligands. This method can be repeated to continue to generate larger multimeric affinity agents. Increasing the number of monomer domains may result in increased affinity and avidity for a particular target. Of course, at each stage, the panning is optionally repeated to enrich for significant binders. In some cases, walking will be facilitated by inserting recombination sites (e.g., lox sites) at the ends of monomers and recombining monomer libraries by a recombinase-mediated event.
+
+The selected multimers of the above methods can be further manipulated, e.g., by recombining or shuffling the selected multimers (recombination can occur between or within multimers or both), mutating the selected multimers, and the like. This results in altered multimers which then can be screened and selected for members that have an enhanced property compared to the selected multimer, thereby producing selected altered multimers. In view of the description herein, it is clear that the following process can be followed. Recombinant or non-recombinant monomer domains can be recombined or variants can be formed. Optionally the domains initially or later are selected for those sequences that are less likely to be immunogenic in the host for which they are intended. Optionally, a phage library comprising the recombined domains is panned for a desired affinity. Monomer domains or multimers expressed by the phage can be screened for IC50 for a target. Hetero- or homo-meric multimers can be selected. The selected polypeptides can be selected for their affinity to any target, including, e.g., hetero- or homo-multimeric targets.
+
+Linkers, multimers or selected multimers produced by the methods described herein form aspects of the present disclosure. Libraries comprising multimers, e.g., a library comprising about 100, 250, 500 or more members, produced as described herein or selected by the methods disclosed herein are provided. In some embodiments, one or more cell comprising members of the libraries, are also included. Libraries of the recombinant polypeptides are also a feature of the present disclosure, e.g., a library comprising about 50, 100, 250, 500 or more different recombinant polypetides.
+
+Compositions comprising the polypeptides disclosed herein can be bound to a matrix of an affinity material, e.g., the recombinant polypeptides. Examples of affinity material include, e.g., beads, a column, a solid support, and/or the like.
+
+**IX. THERAPEUTIC AND PROPHYLACTIC TREATMENT METHODS**
+
+In other aspects, the present disclosure also provides methods of therapeutically or prophylactically treating a disease or disorder by administering in vivo or ex vivo one or more nucleic acids or binding proteins described herein (or compositions comprising a pharmaceutically acceptable excipient and one or more such nucleic acids or polypeptides) to a subject, including, e.g., a mammal, including a human, primate, mouse, pig, cow, goat, rabbit, rat, guinea pig, hamster, horse, sheep; or a non-mammalian vertebrate such as a bird (e.g., a chicken or duck), fish, or invertebrate.
+
+Binding proteins that bind FGFR1c, β-Klotho or both FGFR1c and β-Klotho, particularly those that activate FGF21-mediated signaling, including binding proteins comprising FGFR1c and/or β-Klotho-binding monomer domains or multimers, can be employed to treat of a number of human diseases. Exemplary binding domains include the specific sequences disclosed herein, including, but not limited to:
+
+Exemplary human diseases for which activation of FGF21-mediated signaling is ameliorative include, e.g., diabetes, obesity, dyslipidimia, hypertension, hepatosteaotosis, non-alcoholic steatohepatitis (NASH), acute pancreatitis, metabolic syndrome, cardiovascular disease, such as atherosclerosis, and aging.
+
+In some aspects, a monomer or multimer disclosed herein is administered to a subject with at least one other molecule used for treatment of one of the above-listed ailments. The other molecule can be prepared in a formulation with the monomer or multimer or can be administered simultaneously or before or after the monomer or multimer is administered.
+
+In another aspect, the present disclosure provides a method of treating a subject for diabetes with a therapeutic monomer or multimer of the present disclosure, such as the monomers and multimers described herein, together with one or more other treatments. In one embodiment, such a combination therapy achieves a synergistic effect. The monomers or multimers can be administered in combination with one or more of the type 2 diabetes treatments currently available. These treatments include biguanide (metaformin), and sulfonylureas (such as glyburide, glipizide). Additional treatments directed at maintaining glucose homeostasis including PPAR gamma antagonists (pioglitazone, rosiglitazone); and alpha glucosidase inhibitors (acarbose, voglibose). Additional treatments include injectable treatments such as Exenatide® (glucagon-like peptide), and Symlin® (pramlintide).
+
+In some embodiments, a binding protein comprising a monomer or multimer described herein that binds FGFR1c, β-Klotho or both FGFR1c and β-Klotho is used to decrease blood glucose levels and/or blood triglyceride levels and/or blood lipid levels and/or blood insulin levels in a subject. The subject can be one who has a genetic history (naturally-occurring or induced) of diabetes or obesity, or otherwise is at risk from ill health effects of high levels of glucose, high levels of triglycerides or high levels of lipids. FGF21 is a mediator of blood glucose and lipid levels. This is evidenced by the fact that FGF21 administration in mice reduces glycemia (Berglund et al 2009 Endocrinology 150: 4084-93), reverses hepatic steatosis, increases energy expenditure, and improves insulin sensitivity (Xu et al 2009 Diabetes 58: 250-9) and corrects obesity (Coskun et al 2008 Endocrinology 149: 6018-27). In diabetic rhesus monkeys chronic FGF21 administration has been shown to reduce fasting plasma glucose, fructosamine, triglycerides, insulin, and glucagon without causing hypoglycemia. Additionally improvements to serum lipid profiles plus a small but significant reduction in weight was observed (Kharitonenkov et al., (2007) Endocrinology 148: 774-81).
+
+In some embodiments, a binding protein comprising a monomer or multimer described herein that binds FGFR1c, β-Klotho or both FGFR1c and β-Klotho is used to reduce inflammatory damage in acute pancreatitis. This is evidenced by the severe disease that follows experimental induction of pancreatitis with cerulein in FGF21 knockout mice. Transgenic mice constituitively expressing human FGF21 from a liver-specific promoter exhibited decreased inflammation in the pancreas following cerulein administration (Johnson et al., (2009) Gasteroenterology 137(5): 1795-1804).
+
+In some embodiments, a binding protein comprising a monomer or multimer disclosed herein that binds FGFR1c, β-Klotho or both FGFR1c and β-Klotho is administered in combination with a drug that reduces blood glucose and/or blood lipid levels. Statins, resins (cholestyramine, colestipol, colesevalam) and nicotinic acid are examples of drugs that reduce lipid levels. Exemplary statins include, but are not limited to, atorvastatin, fluvastatin, lovastatin, pravastatin, rosuvastatin, and simvastatin. Examples of compounds that lower blood glucose levels include insulin and rosiglitizone.
+
+In one aspect of the disclosure, in ex vivo methods, one or more cells or a population of cells of interest of a subject (e.g., tumor cells, tumor tissue sample, organ cells, blood cells, cells of the skin, lung, heart, muscle, brain, mucosae, liver, intestine, spleen, stomach, lymphatic system, cervix, vagina, prostate, mouth, tongue, etc.) are obtained or removed from the subject and contacted with an amount of a selected binding protein provided herein that is effective in prophylactically or therapeutically treating the disease, disorder, or other condition. The contacted cells are then returned or delivered to the subject to the site from which they were obtained or to another site (e.g., including those defined above) of interest in the subject to be treated. If desired, the contacted cells can be grafted onto a tissue, organ, or system site (including all described above) of interest in the subject using standard and well-known grafting techniques or, e.g., delivered to the blood or lymph system using standard delivery or transfusion techniques.
+
+Also provided are in vivo methods in which one or more cells or a population of cells of interest of the subject are contacted directly or indirectly with an amount of a selected binding protein disclosed herein effective in prophylactically or therapeutically treating the disease, disorder, or other condition. In direct contact/administration formats, the selected binding protein is typically administered or transferred directly to the cells to be treated or to the tissue site of interest (e.g., tumor cells, tumor tissue sample, organ cells, blood cells, cells of the skin, lung, heart, muscle, brain, mucosae, liver, intestine, spleen, stomach, lymphatic system, cervix, vagina, prostate, mouth, tongue, etc.) by any of a variety of formats, including topical administration, injection (e.g., by using a needle or syringe), or vaccine or gene gun delivery, pushing into a tissue, organ, or skin site. The selected binding protein can be delivered, for example, intramuscularly, intradermally, subdermally, subcutaneously, orally, intraperitoneally, intrathecally, intravenously, or placed within a cavity of the body (including, e.g., during surgery), or by inhalation or vaginal or rectal administration. Exemplary delivery include, e.g., oral delivery (buccal or intestinal uptake/delivery), home injection (e.g., formulated in about a 1.4 ml volume or less), transdermal uptake/delivery, subcutaneously implantable pump, pulmonary uptake/delivery (systemic or non-systemic), blood-brain-barrier uptake/delivery, and/or nasal uptake/delivery.
+
+Design approaches for oral delivery include, e.g., including in the binding protein a binding affinity for mucosal peptide transporters such as PepT1, PepT2, HPT1, ABC-family; addition of a translocation domain (PE38 or PE40 from Pseudomonas exotoxin A) to the binding protein; or including a binding affinity for blood-brain barrier transporters such as Transferrin receptor.
+
+The four primary mechanisms for transepithelial delivery are:
+
+
+- - (1) Transcellular: through the cell by diffusion: mostly used by
+    small molecules.
+  - (2) Paracellular: around the cells through desmosomes/tight
+    junctions: mostly used by hydrophilic peptides
+  - (3) Transcytosis: through the cells inside vesicles by pinocytosis
+  - (4) Carrier- or Transporter-mediated, for molecules that bind to the
+    transporter/carrier
+
+In another approach, the binding protein is designed to bind to receptors on the cell surface or inside vesicles that are actively transported across the cell to the serum, carrying the drug along. Such receptors are called Transporters. One such receptor is the neonatal immunoglobulin Fc receptor (FcRn) which can be used for pulmonary and intestinal delivery to the serum. Another receptor is the Transferrin receptor, which can transport across the blood-brain barrier into the cerebrospinal fluid. Alternatively, the monomer or multimer is designed to bind to the neonatal Fc receptor for pulmonary and intestinal transport. This method can comprise engineering the final drug product for pH sensitive release.
+
+Considering the present disclosure, a range of strategies is possible. Binding proteins that bind known transporters (e.g., PepT1, HPT-1, PepT2, the ABC family, TAP1, TAP2, MDR) can be identified. Other useful binders can be identified by identifying monomers or multimers that bind to Caco2 cells (e.g., using an uptake blocking assay using 14C-Cephalexin uptake by Caco2 cells). See, e.g., Blanchette, J., et al. Biomedicine and Pharmacotherapy 58:142-151 (2004); Low, S. C., et al. Human Reproduction—advance access Apr. 7, 2005; Lee, V. J. Natl Cancer Institute, Monographs 29 (2001); Rubas, W., et al. J. Pharm. Sci. 85:165-169 (1996); Yang, C. Y., et al. Pharmaceutical Research 16:1331-1343 (1999); Dietrich, C. G., et al. Gut 52:1788-1799 (2003); Cleland, J. L., et al. Current Opinion in Biotechnology 12:212-219 (2001); Nielsen, C. U. and Brodin, B. Current Drug Targets 4:373-388 (2004); Kunta, J. R., et al. Current Drug Metabolism 5:109-124 (2004).
+
+In another approach, a phage library of multimers can be applied to the oral cavity of a mammal and phage or DNA from the phage can be recovered in the serum of the animal to enrich for sequences that are good delivery agents. Natural domains or peptides that are known to be orally transported can also be fused to monomers or multimers disclosed herein. In yet another alternative, phage displayed domains are selected for resistance to the appropriate body fluid (nasal, intestinal, etc) or to purified proteases.
+
+In in vivo indirect contact/administration formats, the selected binding protein is typically administered or transferred indirectly to the cells to be treated or to the tissue site of interest, including those described above (such as, e.g., skin cells, organ systems, lymphatic system, or blood cell system, etc), by contacting or administering the polypeptide directly to one or more cells or population of cells from which treatment can be facilitated. For example, tumor cells within the body of the subject can be treated by contacting cells of the blood or lymphatic system, skin, or an organ with a sufficient amount of the selected binding protein such that delivery of the selected binding protein to the site of interest (e.g., tissue, organ, or cells of interest or blood or lymphatic system within the body) occurs and effective prophylactic or therapeutic treatment results. Such contact, administration, or transfer is typically made by using one or more of the routes or modes of administration described above.
+
+In another aspect, the present disclosure provides ex vivo methods in which one or more cells of interest or a population of cells of interest of the subject (e.g., tumor cells, tumor tissue sample, organ cells, blood cells, cells of the skin, lung, heart, muscle, brain, mucosae, liver, intestine, spleen, stomach, lymphatic system, cervix, vagina, prostate, mouth, tongue, etc.) are obtained or removed from the subject and transformed by contacting said one or more cells or population of cells with a polynucleotide construct comprising a nucleic acid sequence disclosed herein that encodes a biologically active binding protein of interest (e.g., a selected monomer domain and/or multimer) that is effective in prophylactically or therapeutically treating the disease, disorder, or other condition. The one or more cells or population of cells is contacted with a sufficient amount of the polynucleotide construct and a promoter controlling expression of said nucleic acid sequence such that uptake of the polynucleotide construct (and promoter) into the cell(s) occurs and sufficient expression of the target nucleic acid sequence results to produce an amount of the biologically active polypeptide, encoding a selected binding protein, effective to prophylactically or therapeutically treat the disease, disorder, or condition. The polynucleotide construct can comprise a promoter sequence (e.g., CMV promoter sequence) that controls expression of the nucleic acid sequence and/or, if desired, one or more additional nucleotide sequences encoding at least one or more of another polypeptide disclosed herein, a cytokine, adjuvant, or co-stimulatory molecule, or other polypeptide of interest.
+
+Following transfection, the transformed cells are returned, delivered, or transferred to the subject to the tissue site or system from which they were obtained or to another site (e.g., tumor cells, tumor tissue sample, organ cells, blood cells, cells of the skin, lung, heart, muscle, brain, mucosae, liver, intestine, spleen, stomach, lymphatic system, cervix, vagina, prostate, mouth, tongue, etc.) to be treated in the subject. If desired, the cells can be grafted onto a tissue, skin, organ, or body system of interest in the subject using standard and well-known grafting techniques or delivered to the blood or lymphatic system using standard delivery or transfusion techniques. Such delivery, administration, or transfer of transformed cells is typically made by using one or more of the routes or modes of administration described above. Expression of the target nucleic acid occurs naturally or can be induced (as described in greater detail herein) and an amount of the encoded polypeptide is expressed sufficient and effective to treat the disease or condition at the site or tissue system.
+
+In another aspect, also provided are in vivo methods in which one or more cells of interest or a population of cells of the subject (e.g., including those cells and cells systems and subjects described above) are transformed in the body of the subject by contacting the cell(s) or population of cells with (or administering or transferring to the cell(s) or population of cells using one or more of the routes or modes of administration described above) a polynucleotide construct comprising a nucleic acid sequence of the present disclosure that encodes a biologically active binding protein interest (e.g., a selected monomer domain and/or multimer) that is effective in prophylactically or therapeutically treating the disease, disorder, or other condition.
+
+The polynucleotide construct can be directly administered or transferred to cell(s) suffering from the disease or disorder (e.g., by direct contact using one or more of the routes or modes of administration described above). Alternatively, the polynucleotide construct can be indirectly administered or transferred to cell(s) suffering from the disease or disorder by first directly contacting non-diseased cell(s) or other diseased cells using one or more of the routes or modes of administration described above with a sufficient amount of the polynucleotide construct comprising the nucleic acid sequence encoding the biologically active binding protein, and a promoter controlling expression of the nucleic acid sequence, such that uptake of the polynucleotide construct (and promoter) into the cell(s) occurs and sufficient expression of the nucleic acid sequence results to produce an amount of the biologically active binding protein effective to prophylactically or therapeutically treat the disease or disorder, and whereby the polynucleotide construct or the resulting expressed binding protein is transferred naturally or automatically from the initial delivery site, system, tissue or organ of the subject's body to the diseased site, tissue, organ or system of the subject's body (e.g., via the blood or lymphatic system). Expression of the target nucleic acid occurs naturally or can be induced (as described in greater detail below) such that an amount of expressed binding protein is sufficient and effective to treat the disease or condition at the site or tissue system. The polynucleotide construct can comprise a promoter sequence (e.g., CMV promoter sequence) that controls expression of the nucleic acid sequence and/or, if desired, one or more additional nucleotide sequences encoding at least one or more of another binding protein disclosed herein, a cytokine, adjuvant, or co-stimulatory molecule, or other binding protein of interest.
+
+In each of the in vivo and ex vivo treatment methods as described herein, a composition comprising an excipient and the binding protein or nucleic acid of the present disclosure can be administered or delivered. In one aspect, a composition comprising a pharmaceutically acceptable excipient and a binding protein or nucleic acid disclosed herein is administered or delivered to the subject as described above in an amount effective to treat the disease or disorder.
+
+In another aspect, in each in vivo and ex vivo treatment method described above, the amount of polynucleotide administered to the cell(s) or subject can be an amount such that uptake of said polynucleotide into one or more cells of the subject occurs and sufficient expression of said nucleic acid sequence results to produce an amount of a biologically active binding protein effective to enhance an immune response in the subject, including an immune response induced by an immunogen (e.g., an antigen). In another aspect, for each such method, the amount of binding protein administered to cell(s) or subject can be an amount sufficient to enhance an immune response in the subject, including that induced by an immunogen (e.g., an antigen).
+
+In yet another aspect, in an in vivo or in vivo treatment method in which a polynucleotide construct (or composition comprising a polynucleotide construct) is used to deliver a physiologically active binding protein to a subject, the expression of the polynucleotide construct can be induced by using an inducible on- and off-gene expression system. Examples of such on- and off-gene expression systems include the Tet-On™ Gene Expression System and Tet-Off™ Gene Expression System (see, e.g., Clontech Catalog 2000, pg. 110-111 for a detailed description of each such system), respectively. Other controllable or inducible on- and off-gene expression systems are known to those of ordinary skill in the art. With such system, expression of the target nucleic of the polynucleotide construct can be regulated in a precise, reversible, and quantitative manner. Gene expression of the target nucleic acid can be induced, for example, after the stable transfected cells containing the polynucleotide construct comprising the target nucleic acid are delivered or transferred to or made to contact the tissue site, organ or system of interest. Such systems are of particular benefit in treatment methods and formats in which it is advantageous to delay or precisely control expression of the target nucleic acid (e.g., to allow time for completion of surgery and/or healing following surgery; to allow time for the polynucleotide construct comprising the target nucleic acid to reach the site, cells, system, or tissue to be treated; to allow time for the graft containing cells transformed with the construct to become incorporated into the tissue or organ onto or into which it has been spliced or attached, etc.).
+
+**X. FURTHER MULTIMER USES**
+
+The potential applications of multimers of the present disclosure are diverse and include any use where an affinity agent is desired, particularly a binding protein and more particularly a bispecific binding protein that binds to FGFR1c, β-Klotho or both FGFR1c and β-Klotho.
+
+In some cases, a pair of monomers or multimers are selected to bind to the same target (i.e., for use in sandwich-based assays). To select a matched monomer or multimer pair, two different monomers or multimers typically are able to bind the target protein simultaneously. One approach to identify such pairs involves the following:
+
+(1) immobilizing the phage or protein mixture that was previously selected to bind the target protein
+
+(2) contacting the target protein to the immobilized phage or protein and washing;
+
+(3) contacting the phage or protein mixture to the bound target and washing; and
+
+(4) eluting the bound phage or protein without eluting the immobilized phage or protein.
+
+One use of the multimers or monomer domains provided herein is to replace antibodies or other affinity agents in detection or other affinity-based assays. Thus, in some embodiments, monomer domains or multimers are selected against the ability to bind components other than a target in a mixture. The general approach can include performing the affinity selection under conditions that closely resemble the conditions of the assay, including mimicking the composition of a sample during the assay. Thus, a step of selection could include contacting a monomer domain or multimer to a mixture not including the target ligand and selecting against any monomer domains or multimers that bind to the mixture. Thus, the mixtures (absent the target ligand, which could be depleted using an antibody, monomer domain or multimer) representing the sample in an assay (serum, blood, tissue, cells, urine, semen, etc) can be used as a blocking agent. Such an approach can be desirable, for example, to create pharmaceutical proteins that bind to their target but not to other serum proteins or non-target tissues.
+
+For example, agonists can be created, such as those described herein, in which the selected monomer domains or multimers mimic signaling events that arise from the in vivo association of two proteins, e.g., FGFR1c and β-Klotho. See FIG. 1. Optionally, the methods disclosed herein can be employed to generate antagonists. For example, multimers binding two different proteins, e.g., enzyme and substrate, can inhibit protein function, including, for example, enzymatic activity and/or substrate conversion.
+
+In some embodiments, the monomer domains are used for ligand inhibition, ligand clearance or ligand stimulation. Possible ligands in these methods can include, e.g., FGFR1c and/or β-Klotho.
+
+In another embodiment, a multimer comprising at least two monomers that bind to receptors is used to bring two receptors into proximity by both binding the multimer, thereby activating the receptors. A subset of the binding proteins described herein behave in this fashion. See, e.g., Example 11.
+
+Further examples of potential uses of the compositions disclosed herein include monomer domains, and multimers thereof, that are capable of drug binding (e.g., binding radionucleotides for targeting, pharmaceutical binding for half-life extension of drugs, controlled substance binding for overdose treatment and addiction therapy), immune function modulating (e.g., immunogenicity blocking by binding such receptors as CTLA-4, immunogenicity enhancing by binding such receptors as CD80, or complement activation by Fc type binding), and specialized delivery (e.g., slow release by linker cleavage, electrotransport domains, dimerization domains, or specific binding to: cell entry domains, clearance receptors such as FcR, oral delivery receptors such as plgR for trans-mucosal transport, and blood-brain transfer receptors such as transferrinR).
+
+In further embodiments, monomers or multimers can be covalently linked to a detectable label (e.g., Cy3, Cy5, etc.) or expressed as a fusion polypeptide fused to a reporter gene product (e.g., CAT, luciferase, horseradish peroxidase, alkaline phosphotase, GFP, etc.).
+
+**XI. FURTHER MANIPULATING MONOMER DOMAINS AND/OR MULTIMER NUCLEIC ACIDS AND POLYPEPTIDES**
+
+As described herein, the binding proteins of the present disclosure can be altered. Descriptions of a variety of diversity generating procedures for generating modified or altered nucleic acid sequences encoding these binding proteins are described herein and the references provided.
+
+Another aspect of the present disclosure includes the cloning and expression of monomer domains, selected monomer domains, multimers and/or selected multimers coding nucleic acids. Thus, multimer domains can be synthesized as a single protein using expression systems well known in the art. General texts which describe molecular biological techniques useful herein, including the use of vectors, promoters and many other topics relevant to expressing nucleic acids such as monomer domains, selected monomer domains, multimers and/or selected multimers, include Berger and Kimmel, Guide to Molecular Cloning Techniques, Methods in Enzymology volume 152 Academic Press, Inc., San Diego, Calif. (Berger); Sambrook et al., Molecular Cloning—A Laboratory Manual (2nd Ed.), Vol. 1-3, Cold Spring Harbor Laboratory, Cold Spring Harbor, N.Y., 1989 and Current Protocols in Molecular Biology, F. M. Ausubel et al., eds., Current Protocols, a joint venture between Greene Publishing Associates, Inc. and John Wiley & Sons, Inc. Examples of techniques sufficient to direct persons of skill through in vitro amplification methods, useful in identifying, isolating and cloning monomer domains and multimers coding nucleic acids, including the polymerase chain reaction (PCR) the ligase chain reaction (LCR), Q-replicase amplification and other RNA polymerase mediated techniques (e.g., NASBA), are found in Berger, Sambrook, and Ausubel, as well as Mullis et al., (1987) U.S. Pat. No. 4,683,202; PCR Protocols A Guide to Methods and Applications (Innis et al. eds) Academic Press Inc. San Diego, Calif. (1990) (Innis); Arnheim & Levinson (Oct. 1, 1990) C&EN 36-47; The Journal Of NIH Research (1991) 3, 81-94; (Kwoh et al. (1989) Proc. Natl. Acad. Sci. USA 86, 1173; Guatelli et al. (1990) Proc. Natl. Acad. Sci. USA 87, 1874; Lomell et al. (1989) J. Clin. Chem 35, 1826; Landegren et al., (1988) Science 241, 1077-1080; Van Brunt (1990) Biotechnology 8, 291-294; Wu and Wallace, (1989) Gene 4, 560; Barringer et al. (1990) Gene 89, 117, and Sooknanan and Malek (1995) Biotechnology 13: 563-564. Improved methods of cloning in vitro amplified nucleic acids are described in Wallace et al., U.S. Pat. No. 5,426,039. Improved methods of amplifying large nucleic acids by PCR are summarized in Cheng et al. (1994) Nature 369: 684-685 and the references therein, in which PCR amplicons of up to 40 kb are generated. One of skill will appreciate that essentially any RNA can be converted into a double stranded DNA suitable for restriction digestion, PCR expansion and sequencing using reverse transcriptase and a polymerase. See, e.g., Ausubel, Sambrook and Berger.
+
+The present disclosure also relates to the introduction of vectors of the present disclosure into host cells, and the production of monomer domains, selected monomer domains, multimers and/or selected multimers of the present disclosure by recombinant techniques. Host cells are genetically engineered (i.e., transduced, transformed or transfected) with the vectors of the present disclosure, which can be, for example, a cloning vector or an expression vector. The vector can be, for example, in the form of a plasmid, a viral particle, a phage, etc. The engineered host cells can be cultured in conventional nutrient media modified as appropriate for activating promoters, selecting transformants, or amplifying the monomer domain, selected monomer domain, multimer and/or selected multimer gene(s) of interest. The culture conditions, such as temperature, pH and the like, are those previously used with the host cell selected for expression, and will be apparent to those skilled in the art and in the references cited herein, including, e.g., Freshney (1994) Culture of Animal Cells, a Manual of Basic Technique, third edition, Wiley-Liss, New York and the references cited therein.
+
+As mentioned above, the binding proteins of the present disclosure can also be produced in non-animal cells such as plants, yeast, fungi, bacteria and the like. Indeed, as noted throughout, phage display is an especially relevant technique for producing such polypeptides. In addition to Sambrook, Berger and Ausubel, details regarding cell culture can be found in Payne et al. (1992) Plant Cell and Tissue Culture in Liquid Systems John Wiley & Sons, Inc. New York, N.Y.; Gamborg and Phillips (eds) (1995) Plant Cell, Tissue and Organ Culture; Fundamental Methods Springer Lab Manual, Springer-Verlag (Berlin Heidelberg New York) and Atlas and Parks (eds) The Handbook of Microbiological Media (1993) CRC Press, Boca Raton, Fla.
+
+The present disclosure also provides for alterations of monomer domains, immuno-domains and/or multimers to improve pharmacological properties, to reduce immunogenicity, or to facilitate the transport of the multimer and/or monomer domain into a cell or tissue (e.g., through the blood-brain barrier, or through the skin) These types of alterations include a variety of modifications (e.g., the addition of sugar-groups or glycosylation), the addition of PEG, the addition of protein domains that bind a certain protein (e.g., HSA or other serum protein), the addition of proteins fragments or sequences that signal movement or transport into, out of and through a cell, the addition of proteins or protein domains (e.g. HSA or the Fc domain of IgG) that can extend the half-life of the multimer in serum. Additional components can also be added to a multimer and/or monomer domain to manipulate the properties of the multimer and/or monomer domain. A variety of components can also be added including, e.g., a domain that binds a known receptor (e.g., a Fc-region protein domain that binds a Fc receptor), a toxin(s) or part of a toxin, a prodomain that can be optionally cleaved off to activate the multimer or monomer domain, a reporter molecule (e.g., green fluorescent protein), a component that bind a reporter molecule (such as a radionuclide for radiotherapy, biotin or avidin) or a combination of modifications.
+
+**XII. ANIMAL MODELS**
+
+Another aspect of the present disclosure is the development of specific non-human animal models in which to test the immunogenicity of binding proteins comprising monomer or multimer domains. The method of producing such non-human animal model comprises: introducing into at least some cells of a recipient non-human animal, vectors comprising genes encoding a plurality of human proteins from the same family of proteins, wherein the genes are each operably linked to a promoter that is functional in at least some of the cells into which the vectors are introduced such that a genetically modified non-human animal is obtained that can express the plurality of human proteins from the same family of proteins.
+
+Suitable non-human animals employed in the practice of the methods and composition disclosed herein include all vertebrate animals, except humans (e.g., mouse, rat, rabbit, sheep, and the like). Typically, the plurality of members of a family of proteins includes at least two members of that family, and usually at least ten family members. In some embodiments, the plurality includes all known members of the family of proteins. Exemplary genes that can be used include those encoding monomer domains, such as, for example, members of the LDL receptor class A-domain family, the EGF-like domain family, as well as the other domain families described herein.
+
+The non-human animal models of the present disclosure can be used to screen for immunogenicity of a binding protein comprising a monomer or multimer domain that is derived from the same family of proteins expressed by the non-human animal model. The present disclosure includes the non-human animal model made in accordance with the method described above, as well as transgenic non-human animals whose somatic and germ cells contain and express DNA molecules encoding a plurality of human proteins from the same family of proteins (such as the monomer domains described herein), wherein the DNA molecules have been introduced into the transgenic non-human animal at an embryonic stage, and wherein the DNA molecules are each operably linked to a promoter in at least some of the cells in which the DNA molecules have been introduced.
+
+An example of a mouse model useful for screening LDL receptor class A-domain derived binding proteins is described as follows. Gene clusters encoding the wild type human LDL receptor class A-domain monomers are amplified from human cells using PCR. Almost all of the 200 different A-domains can be amplified with only three separate PCR amplification reactions of about 7 kb each. These fragments are then used to generate transgenic mice according to the method described above. The transgenic mice will recognize the human A-domains as “self,” thus mimicking the “selfness” of a human with regard to A-domains. Individual A-domain-derived monomers or multimers are tested in these mice by injecting the A-domain-derived monomers or multimers into the mice, then analyzing the immune response (or lack of response) generated. The mice are tested to determine if they have developed a mouse anti-human response (MAHR). Monomers and multimers that do not result in the generation of a MAHR are likely to be non-immunogenic when administered to humans.
+
+Historically, the MAHR test in transgenic mice is used to test individual proteins in mice that are transgenic for that single protein. In contrast, the above described method provides a non-human animal model that recognizes an entire family of human proteins as “self,” and that can be used to evaluate a huge number of variant proteins that each are capable of vastly varied binding activities and uses.
+
+**XIII. KITS**
+
+Kits comprising components that can be employed in the disclosed methods (typically in an unmixed form), and packaging materials, instructions for using the components and/or performing the methods, and one or more containers for holding the components (reaction tubes, columns, etc.) form an aspect of the present disclosure. Kits comprising compounds and methods described herein can comprise a multimer library, or a binding protein comprising a a single type of monomer or multimer, e.g., one or more of the FGFR1c and/or β-Klotho binding proteins described herein. Kits can also include reagents suitable for promoting target molecule binding, such as buffers or reagents that facilitate detection, including detectably-labeled molecules. Standards for calibrating a ligand binding to a monomer domain or the like, can also be included in the kits.
+
+The present disclosure also provides commercially valuable binding assays and kits to practice the assays. In some of the assays, one or more ligand is employed to detect binding of a monomer domain, immuno-domains and/or multimer. Such assays are based on any known method in the art, e.g., flow cytometry, fluorescent microscopy, plasmon resonance, and the like, to detect binding of a ligand(s) to the binding protein.
+
+Kits based on disclosed assays are also provided. Such a kit can comprise a container, and one or more ligand. A kit can also comprise directions for performing the assays, additional detection reagents, buffers, or instructions for the use of any of these components, or the like. Alternatively, kits can include cells, vectors, (e.g., expression vectors, secretion vectors comprising a polypeptide disclosed herein), for the expression of a binding protein of the present disclosure.
+
+In a further aspect, the use of any composition, monomer domain, immuno-domain, multimer, cell, cell culture, apparatus, apparatus component or kit provided herein, for the practice of any method or assay herein, and/or for the use of any apparatus or kit to practice any assay or method herein and/or for the use of cells, cell cultures, compositions or other features herein as a therapeutic formulation is provided. The manufacture of all components herein as therapeutic formulations for the treatments described herein is also provided.
+
+**XIV. INTEGRATED SYSTEMS**
+
+The present disclosure provides computers, computer readable media and integrated systems comprising character strings corresponding to monomer domains, selected monomer domains, multimers and/or selected multimers and nucleic acids encoding such binding proteins. These sequences can be manipulated by in silico recombination methods, or by standard sequence alignment or word processing software.
+
+For example, different types of similarity and considerations of various stringency and character string length can be detected and recognized in the integrated systems herein. For example, many homology determination methods have been designed for comparative analysis of sequences of biopolymers, for spell checking in word processing, and for data retrieval from various databases. With an understanding of double-helix pair-wise complement interactions among four principal nucleobases in natural polynucleotides, models that simulate annealing of complementary homologous polynucleotide strings can also be used as a foundation of sequence alignment or other operations typically performed on the character strings corresponding to the sequences herein (e.g., word-processing manipulations, construction of figures comprising sequence or subsequence character strings, output tables, etc.). An example of a software package with GOs for calculating sequence similarity is BLAST, which can be adapted by inputting character strings corresponding to the sequences herein.
+
+BLAST is described in Altschul et al., (1990) J. Mol. Biol. 215:403-410. Software for performing BLAST analyses is publicly available through the National Center for Biotechnology Information. This algorithm involves first identifying high scoring sequence pairs (HSPs) by identifying short words of length W in the query sequence, which either match or satisfy some positive-valued threshold score T when aligned with a word of the same length in a database sequence. T is referred to as the neighborhood word score threshold (Altschul et al., supra). These initial neighborhood word hits act as seeds for initiating searches to find longer HSPs containing them. The word hits are then extended in both directions along each sequence for as far as the cumulative alignment score can be increased. Cumulative scores are calculated using, for nucleotide sequences, the parameters M (reward score for a pair of matching residues; always >0) and N (penalty score for mismatching residues; always <0). For amino acid sequences, a scoring matrix is used to calculate the cumulative score. Extension of the word hits in each direction are halted when: the cumulative alignment score falls off by the quantity X from its maximum achieved value; the cumulative score goes to zero or below, due to the accumulation of one or more negative-scoring residue alignments; or the end of either sequence is reached. The BLAST algorithm parameters W, T, and X determine the sensitivity and speed of the alignment. The BLASTN program (for nucleotide sequences) uses as defaults a wordlength (W) of 11, an expectation (E) of 10, a cutoff of 100, M=5, N=−4, and a comparison of both strands. For amino acid sequences, the BLASTP program uses as defaults a wordlength (W) of 3, an expectation (E) of 10, and the BLOSUM62 scoring matrix (see Henikoff & Henikoff (1989) Proc. Natl. Acad. Sci. USA 89:10915).
+
+An additional example of a useful sequence alignment algorithm is PILEUP. PILEUP creates a multiple sequence alignment from a group of related sequences using progressive, pairwise alignments. It can also plot a tree showing the clustering relationships used to create the alignment. PILEUP uses a simplification of the progressive alignment method of Feng & Doolittle, (1987) J. Mol. Evol. 35:351-360. The method used is similar to the method described by Higgins & Sharp, (1989) CABIOS 5:151-153. The program can align, e.g., up to 300 sequences of a maximum length of 5,000 letters. The multiple alignment procedure begins with the pairwise alignment of the two most similar sequences, producing a cluster of two aligned sequences. This cluster can then be aligned to the next most related sequence or cluster of aligned sequences. Two clusters of sequences can be aligned by a simple extension of the pairwise alignment of two individual sequences. The final alignment is achieved by a series of progressive, pairwise alignments. The program can also be used to plot a dendogram or tree representation of clustering relationships. The program is run by designating specific sequences and their amino acid or nucleotide coordinates for regions of sequence comparison. For example, in order to determine conserved amino acids in a monomer domain family or to compare the sequences of monomer domains in a family, the sequence in question, or coding nucleic acids, are aligned to provide structure-function information.
+
+In one aspect, the computer system is used to perform “in silico” sequence recombination or shuffling of character strings corresponding to the monomer domains. A variety of such methods are set forth in “Methods For Making Character Strings, Polynucleotides & Polypeptides Having Desired Characteristics” by Selifonov and Stemmer, filed Feb. 5, 1999 (U.S. Ser. No. 60/118,854) and “Methods For Making Character Strings, Polynucleotides & Polypeptides Having Desired Characteristics” by Selifonov and Stemmer, filed Oct. 12, 1999 (U.S. Ser. No. 09/416,375). In brief, genetic operators are used in genetic algorithms to change given sequences, e.g., by mimicking genetic events such as mutation, recombination, death and the like. Multi-dimensional analysis to optimize sequences can be also be performed in the computer system, e.g., as described in the '375 application.
+
+A digital system can also instruct an oligonucleotide synthesizer to synthesize oligonucleotides, e.g., used for gene reconstruction or recombination, or to order oligonucleotides from commercial sources (e.g., by printing appropriate order forms or by linking to an order form on the Internet).
+
+The digital system can also include output elements for controlling nucleic acid synthesis (e.g., based upon a sequence or an alignment of a recombinant, e.g., recombined, monomer domain as herein), i.e., an integrated system of the present disclosure optionally includes an oligonucleotide synthesizer or an oligonucleotide synthesis controller. The system can include other operations that occur downstream from an alignment or other operation performed using a character string corresponding to a sequence herein, e.g., as noted above with reference to assays.
+
+## EXAMPLES
+
+While the foregoing invention has been described in some detail for purposes of clarity and understanding, it will be clear to one skilled in the art from a reading of this disclosure that various changes in form and detail can be made without departing from the true scope of the invention. For example, all the techniques, methods, compositions, apparatus and systems described above can be used in various combinations. All publications, patents, patent applications, or other documents cited in this application are incorporated by reference in their entirety for all purposes to the same extent as if each individual publication, patent, patent application, or other document were individually indicated to be incorporated by reference for all purposes. PCT applications PCT/US02/13257 and PCT/US03/35664 and U.S. Patent Publication No. 2005/0089932 are hereby incorporated by reference in their entirety.
+
+### Example 1
+
+This example describes selection of monomer domains and the creation of multimers.
+
+Starting materials for identifying monomer domains and creating multimers from the selected monomer domains and procedures can be derived from any of a variety of human and/or non-human sequences. For example, to produce a selected monomer domain with specific binding for a desired ligand or mixture of ligands, one or more monomer domain gene(s) are selected from a family of monomer domains that bind to a certain ligand. The nucleic acid sequences encoding the one or more monomer domain gene can be obtained by PCR amplification of genomic DNA or cDNA, or optionally, can be produced synthetically using overlapping oligonucleotides.
+
+Most commonly, these sequences are then cloned into a cell surface display format (i.e., bacterial, yeast, or mammalian (COS) cell surface display; phage display) for expression and screening. The recombinant sequences are transfected (transduced or transformed) into the appropriate host cell where they are expressed and displayed on the cell surface. For example, the cells can be stained with a labeled (e.g., fluorescently labeled), desired ligand. The stained cells are sorted by flow cytometry, and the selected monomer domains encoding genes are recovered (e.g., by plasmid isolation, PCR or expansion and cloning) from the positive cells. The process of staining and sorting can be repeated multiple times (e.g., using progressively decreasing concentrations of the desired ligand until a desired level of enrichment is obtained). Alternatively, any screening or detection method known in the art that can be used to identify cells that bind the desired ligand or mixture of ligands can be employed.
+
+The selected monomer domain encoding genes recovered from the desired ligand or mixture of ligands binding cells can be optionally recombined according to any of the methods described herein or in the cited references. The recombinant sequences produced in this round of diversification are then screened by the same or a different method to identify recombinant genes with improved affinity for the desired or target ligand. The diversification and selection process is optionally repeated until a desired affinity is obtained.
+
+The selected monomer domain nucleic acids selected by the methods can be joined together via a linker sequence to create multimers, e.g., by the combinatorial assembly of nucleic acid sequences encoding selected monomer domains by DNA ligation, or optionally, PCR-based, self-priming overlap reactions. The nucleic acid sequences encoding the multimers are then cloned into a cell surface display format (i.e., bacterial, yeast, or mammalian (COS) cell surface display; phage display) for expression and screening. The recombinant sequences are transfected (transduced or transformed) into the appropriate host cell where they are expressed and displayed on the cell surface. For example, the cells can be stained with a labeled, e.g., fluorescently labeled, desired ligand or mixture of ligands. The stained cells are sorted by flow cytometry, and the selected multimers encoding genes are recovered (e.g., by PCR or expansion and cloning) from the positive cells. Positive cells include multimers with an improved avidity or affinity or altered specificity to the desired ligand or mixture of ligands compared to the selected monomer domain(s). The process of staining and sorting can be repeated multiple times (e.g., using progressively decreasing concentrations of the desired ligand or mixture of ligands until a desired level of enrichment is obtained). Alternatively, any screening or detection method known in the art that can be used to identify cells that bind the desired ligand or mixture of ligands can be employed.
+
+The selected multimer encoding genes recovered from the desired ligand or mixture of ligands binding cells can be optionally recombined according to any of the methods described herein or in the cited references. The recombinant sequences produced in this round of diversification are then screened by the same or a different method to identify recombinant genes with improved avidity or affinity or altered specificity for the desired or target ligand. The diversification and selection process is optionally repeated until a desired avidity or affinity or altered specificity is obtained.
+
+### Example 2
+
+This example describes in vivo intra-protein recombination to generate libraries of greater diversity.
+
+A monomer-encoding plasmid vector (pCK-derived vector; see below), flanked by orthologous loxP sites, was recombined in a Cre-dependent manner with a phage vector via its compatible loxP sites. The recombinant phage vectors were detected by PCR using primers specific for the recombinant construct. DNA sequencing indicated that the correct recombinant product was generated.
+
+### Reagents and Experimental Procedures
+
+pCK-cre-lox-Monomer-loxP.
+
+This vector has two particularly relevant features. First, it carries the cre gene, encoding the site-specific DNA recombinase Cre, under the control of Plac. Cre was PCR-amplified from p705-cre (from GeneBridges) with cre-specific primers that incorporated XbaI (5′) and SfiI (3′) at the ends of the PCR product. This product was digested with XbaI and SfiI and cloned into the identical sites of pCK, a bla−, CmR derivative of pCK110919-HC-Bla (pACYC ori), yielding pCK-cre.
+
+The second feature is the naïve A domain library flanked by two orthologous loxP sites, loxP(wild-type) and loxP(FAS), which are required for the site-specific DNA recombination catalyzed by Cre. See, e.g., Siegel, R. W., et al. FEBS Letters 505:467-473 (2001). These sites rarely recombine with another. loxP sites were built into pCK-cre sequentially. 5′-phosphorylated oligonucleotides loxP(K) and loxP(K_rc), carrying loxP(WT) and EcoRI and HinDIII-compatible overhangs to allow ligation to digested EcoRI and HinDIII-digested pCK, were hybridized together and ligated to pCK-cre in a standard ligation reaction (T4 ligase; overnight at 16° C.).
+
+The resulting plasmid was digested with EcoRI and SphI and ligated to the hybridized, 5′-phosphorylated oligos loxP(L) and loxP (L_rc), which carry loxP(FAS) and EcoRI and SphI-compatible overhangs. To prepare for library construction, a large-scale purification (Qiagen MAXI prep) of pCK-cre-lox-P(wt)-loxP(FAS) was performed according to Qiagen's protocol. The Qiagen-purified plasmid was subjected to CsCl gradient centrifugation for further purification. This construct was then digested with SphI and BglII and ligated to digested naïve A domain library insert, which was obtained via a PCR-amplification of a preexisting A domain library pool. By design, the loxP sites and monomer are in-frame, which generates monomers with loxP-encoded linkers. This library was utilized in the in vivo recombination procedure as detailed below.
+
+fUSE5HA-Monomer-lox-lox Vector.
+
+The vector is a derivative of fUSE5 from George Smith's laboratory (University of Missouri). It was subsequently modified to carry an HA tag for immunodetection assays. loxP sites were built into fUSE5HA sequentially. 5′-phosphorylated oligonucleotides loxP(I) and loxP(I)_rc, carrying loxP(WT), a string of stop codons and XmaI and SfiI-compatible overhangs, were hybridized together and ligated to XmaI- and SfiI-digested fUSE5HA in a standard ligation reaction (New England Biolabs T4 ligase; overnight at 16° C.).
+
+The resulting phage vector was next digested with XmaI and SphI and ligated to the hybridized oligos loxP(J) and loxP(J)_rc, which carry loxP(FAS) and overhangs compatible with XmaI and SphI. This construct was digested with XmaI/SfiI and then ligated to pre-cut (XmaI/SfiI) naïve A domain library insert (PCR product). The stop codons are located between the loxP sites, preventing expression of gIII and consequently, the production of infectious phage.
+
+The ligated vector/library was subsequently transformed into an E. coli host bearing a gIII-expressing plasmid that allows the rescue of the fUSE5HA-Monomer-lox-lox phage, as detailed below.
+
+pCK-gIII.
+
+This plasmid carries gIII under the control of its native promoter. It was constructed by PCR-amplifying gIII and its promoter from VCSM13 helper phage (Stratagene) with primers gIIIPromoter_EcoRI and gIIIPromoter_HinDIII. This product was digested with EcoRI and HinDIII and cloned into the same sites of pCK110919-HC-Bla. As gIII is under the control of its own promoter, gIII expression is presumably constitutive. pCK-gIII was transformed into E. coli EC100 (Epicentre).
+
+In Vivo Recombination Procedure.
+
+In summary, the procedure involves the following key steps: a) Production of infective (i.e., rescue) of fUSE5HA-Monomer-lox-lox library with an E. coli host expressing gIII from a plasmid; b) Cloning of 2nd library (pCK) and transformation into F+ TG1 E. coli; c) Infection of the culture carrying the 2nd library with the rescued fUSE5HA-Monomer-lox-lox phage library.
+
+a. Rescue of Phage Vector.
+
+Electrocompetent cells carrying pCK-gIII were prepared by a standard protocol. These cells had a transformation frequency of 4×108/μg DNA and were electroporated with large-scale ligations (˜5 μg vector DNA) of fUSE5HA-lox-lox vector and the naïve A domain library insert. After individual electroporations (100 ng DNA/electroporation) with ˜70 μL cells/cuvette, 930 μL warm SOC media were added, and the cells were allowed to recover with shaking at 37 C for 1 hour. Next, tetracycline was added to a final concentration of 0.2 μg/mL, and the cells were shaken for ˜45 minutes at 37 C. An aliquot of this culture was removed, 10-fold serially diluted and plated to determine the resulting library size (1.8×107). The remaining culture was diluted into 2×500 mL 2×YT (with 20 μg/mL chloramphenicol and 20 μg/mL tetracycline to select for pCK-gIII and the fUSE5HA-based vector, respectively) and grown overnight at 30 C.
+
+Rescued phage were harvested using a standard PEG/NaCl precipitation protocol. The titer was approximately 1×1012 transducing units/mL.
+
+b. Cloning of the 2nd Library and Transformation into an E. coli Host.
+
+The ligated pCK/naïve
+
+A domain library is electroporated into a bacterial F+ host, with an expected library size of approximately 108. After an hour-long recovery period at 37 C with shaking, the electroporated cells are diluted to OD600˜0.05 in 2×YT (plus 20 μg/mL chloramphenicol) and grown to mid-log phase at 37 C before infection by fUSEHA-Monomer-lox-lox.
+
+c. Infection of the Culture Carrying the 2nd Library with the Rescued fUSE5HA-Monomer-lox-lox Phage Library.
+
+To maximize the generation of recombinants, a high infection rate (>50%) of E. coli within a culture is desirable. The infectivity of E. coli depends on a number of factors, including the expression of the F pilus and growth conditions. E. coli backgrounds TG1 (carrying an F′) and K91 (an Hfr strain) were hosts for the recombination system.
+
+### Example 3
+
+This example describes construction of an EGF-based monomer library.
+
+The CaEGF domain library, E3, encodes a protein domain of 36-43 amino acids having the following pattern:
+
+The table below describes for each position which amino acids are encoded in the library based upon the natural diversity of human calcium binding EGF domains:
+
+The library of DNA sequences, E3, encoding monomeric calcium binding EGF domains, was created by assembly PCR as described in Stemmer et al., Gene 164:49-53 (1995). The oligonucleotides used in this PCR reaction are in two groups, Group 1 and Group 2. They are:
+
+Group 1 (SEQ ID NOS 406-411, respectively, in order of appearance):
+
+Group 2 (SEQ ID NOS: 412-415, respectively, in order of appearance):
+
+Following the separate PCRs of the Group 1 and 2 oligonucleotides, the Group 1 PCR fragments were digested with BpmI and group 2 PCR fragments were digested with BsrDI. Digestion products were purified using Qiagen Qiaquick columns and then ligated together. The ligated DNA was then amplified in a PCR using two primers. The primers used were:
+
+The PCR products were purified with Qiagen Qiaquick columns and digested with SfiI. The digested product was purified with Qiagen Qiaquick columns. The DNA fragments were ligated into the SfiI restriction sites of phage display vector fuse5-HA(G4S)4 (SEQ ID NO: 418), a derivative of fuse5 carrying an in-frame HA-epitope and a glycine, serine flexible linker. The ligation mixture was electroporated into TransforMax™ EC100™ electrocompetent E. coli cells. Transformed E. coli cells were grown overnight at 37° C. in 2×YT medium containing 20 μg/ml tetracycline. The resulting library contained 2×109 independent clones. Phage particles were purified from the culture medium by PEG-precipitation. The titer of the phage was 1.3×1012/ml. The sequences of 24 individual clones were determined and these were consistent with the library design.
+
+### Example 4
+
+This example describes in vitro intra-protein recombination to generate recombined libraries and method to generate libraries with randomized inter-cysteine loops.
+
+Recombination can be used for intradomain optimization. For example a PCR overlap reaction can be used that recombines two or more segments of a single domain relative to each other. One can use two, three, four, five or more fragment overlap reactions in the same way as illustrated. This recombination process has many applications. One application is to recombine a large pool of hundreds of previously selected clones without sequence information. All that is needed for each overlap to work is one known region of (relatively) constant sequence that exists in the same location in each of the clones (fixed site approach). For A domains, typically these clones would have been derived from a library in which 20-25 amino acids distributed over all five inter-cysteine segments were randomized. The intra-domain recombination method can also be performed on a pool of sequence-related monomer domains by standard DNA recombination (e.g., Stemmer, Nature 370:389-391 (1994)) based on random fragmentation and reassembly based on DNA sequence homology, which does not require a fixed overlap site in all of the clones that are to be recombined.
+
+Another application of this process is to create multiple separate, naïve (meaning unpanned) libraries in each of which only one of the intercysteine loops is randomized, to randomize a different loop in each library. After panning of these libraries separately against the target, the selected clones are then recombined. From each panned library only the randomized segment is amplified by PCR and multiple randomized segments are then combined into a single domain, creating a shuffled library which is panned and/or screened for increased potency. This process can also be used to shuffle a small number of clones of known sequence.
+
+Any common sequence can be used as a cross-over point. For A domains or other cysteine-containing monomers, the cysteine residues are logical places for the crossover. However, there are other ways to determine optimal crossover sites, such as computer modeling. Alternatively, residues with highest entropy, or the least number of intramolecular contacts, may also be good sites for crossovers.
+
+An exemplary method of generating libraries comprised of proteins with randomized inter-cysteine loops is presented below. In this example, in contrast to the separate loop, separate library approach described above, multiple intercysteine loops are randomized simultaneously in the same library.
+
+An A domain NNK library encoding a protein domain of 39-45 amino acids having the following pattern was constructed:
+
+where,
+
+C1-C6: cysteines;
+
+X(n): sequence of n amino acids with any residue at each position;
+
+E1-E3: glutamine;
+
+F: phenylalanine;
+
+R1-R2: arginine;
+
+A: alanine;
+
+G1-G4: glycine;
+
+I: isoleucine;
+
+P: proline;
+
+S1-S3: serine;
+
+W: tryptophan;
+
+V: valine;
+
+D1-D5: aspartic acid; and
+
+C1-C3, C2-C5 & C4-C6 form disulfides.
+
+The library was constructed by creating a library of DNA sequences, containing tyrosine codons (TAT) or variable non-conserved codons (NNK), by assembly PCR as described in Stemmer et al., Gene 164:49-53 (1995). Compared to the native A-domain scaffold and the design that was used to construct library A1 (described previously) this approach: 1) keeps more of the existing residues in place instead of randomizing these potentially critical residues, and 2) inserts a string of amino acids of variable length of all 20 amino acids (NNK codon), such that the average number of inter-cysteine residues is extended beyond that of the natural A domain or the A1 library. The rate of tyrosine residues was increased by including tyrosine codons in the oligonucleotides, because tyrosines were found to be overrepresented in antibody binding sites, presumably because of the large number of different contacts that tyrosine can make. The oligonucleotides used in this PCR reaction are (SEQ ID NOS: 420-446, respectively, in order of appearance):
+
+The library was constructed though an initial round of 10 cycles of PCR amplification using a mixture of 4 pools of oligonucleotides, each pool containing 400 pmols of DNA. Pool 1 contained oligonucleotides 1-9, pool 2 contained 10-17, pool 3 contained only 18 and pool 4 contained 19-27. The fully assembled library was obtained through an additional 8 cycles of PCR using pool 1 and 4. The library fragments were digested with XmaI and SfiI. The DNA fragments were ligated into the corresponding restriction sites of phage display vector fuse5-HA, a derivative of fuse5 carrying an in-frame HA-epitope. The ligation mixture was electroporated into TransforMax™ EC 100™ electrocompetent E. coli cells resulting in a library of 2×109 individual clones. Transformed E. coli cells were grown overnight at 37° C. in 2×YT medium containing 20 μg/ml tetracycline. Phage particles were purified from the culture medium by PEG-precipitation and a titer of 1.1×1013/ml was determined. Sequences of 24 clones were determined and were consistent with the expectations of the library design.
+
+### Example 5
+
+This example describes optimization of multimers by optimizing monomers and/or linkers for binding to a target.
+
+One approach for optimizing multimer binding to targets involves optimization of monomers, multimers and linkers. First a library of monomers is panned for binding to the target (e.g., FGFR1c or β-Klotho). However, some of the monomers may bind at locations on the target that are far away from each other, such that the domains that bind to these sites cannot be connected by a linker peptide. It is therefore useful to create and screen a large library of homo- or heterotrimers from these monomers before optimization of the monomers. These trimer libraries can be screened, e.g., on phage (typical for heterotrimers created from a large pool of monomers) or made and assayed separately (e.g., for homotrimers). By this method, the best trimer is identified. The assays can include binding assays to a target or agonist or antagonist potency determination of the multimer in functional protein- or cell-based assays.
+
+The monomeric domain(s) of the single best trimer are then optimized as a second step. Homomultimers are easiest to optimize, since only one domain sequence exists, though heteromultimers can also be synthesized. For homomultimers, an increase in binding by the multimer compared to the monomer is an avidity effect.
+
+After optimization of the domain sequence itself (e.g., by recombining or NNK randomization) and phage panning, the improved monomers are used to construct a dimer with a linker library. Linker libraries can be formed, e.g., from linkers with an NNK composition and/or variable sequence length.
+
+After panning of this linker library, the best clones (e.g., determined by potency in the inhibition or other functional assay) are converted into multimers composed of multiple (e.g., two, three, four, five, six, seven, eight, etc.) sequence-optimized domains and length- and sequence-optimized linkers.
+
+### Example 6
+
+This example describes a structural analysis of A domains.
+
+As with virtually all proteins, only a small fraction of the total surface of an A-domain participates in binding a single target. Based on the solution structure of the domain, adjacent residue positions can be identified which are likely to be able to cooperate in binding to a given target. Herein, such groups of adjacent residues are referred to as structural categories. As an example, four such categories have been identified through examination of the A-domain structure, designated Top, Bottom, Loop 1, and Loop 2. By designing libraries which only allow diversity within a given category, the theoretical sequence space allowed by a library can be significantly reduced, allowing for better coverage of the theoretical space by the physical library. Further, in the case of non-overlapping categories such as the Top and Bottom categories, half-domain sequences selected against different targets can be combined into a single sequence which would be able to bind simultaneously or alternatively to the selected targets. In either case, creating binding sites that occupy only half a domain allows for the creation of molecules that are half as large and would have half the number of immunogenic epitopes, reducing the risk of immunogenicity.
+
+### Structural Classification of A-domain Positions
+
+A canonical A-domain sequence (SEQ ID NO: 447) is shown below with high-diversity positions represented as an X. Positions that belong to either the Top, Bottom, Loop 1, or Loop 2 categories are designated with a star.
+
+### Example 7
+
+This example describes screening for monomers or multimers that bind human FGFR1c or human β-klotho.
+
+Phage libraries were panned through several rounds either on solid support (e.g., Nunc MaxiSorp plates or Dynal beads) or in solution (e.g., capturing with. Dynal beads). Output phage pools with (a) the highest frequency of individual phage clones that bind to human FGFR1c (huFGFR1c) or recombinant human β-klotho (rhβ-klotho) and (b) high sequence diversity among the binding-positive phage clones were chosen for protein screening.
+
+I. Round 1 (MaxiSorp plates or Dynal Beads)
+
+1. Coating Target huFGFR1c-Fc
+
+**A. Coating Plates:**
+
+Five or six wells for each A-domain library were directly coated with 50 nM huFGFR1c-Fc (R & D Systems) diluted in TBS[pH 7.5]/2 mM CaCl2 (100 uL total volume/well) for 1-2 hours with shaking at room temperature. In addition, one negative control well/library was incubated with TBS[pH 7.5]/2 mM CaCl2 only. For certain panning lineages, the libraries were pre-bound to Protein A beads coated with huIgG to subtract huIgG-binding phage. For certain other lineages, protein M10 (which binds to human Fc) was added to block the A1 library phage from binding to the M10 epitope of huFGFR1c-Fc during the phage binding incubation steps.
+
+**B. Coating Beads:**
+
+20 μL Protein A beads (Dynal ASA) were incubated with 50 nM huFGFR1c-Fc in 500 μL TBS[pH 7.5]/2 mM CaCl2 and rotated at room temperature for 1 hr in Eppendorf tubes. As a negative control, 20 μL Protein A beads without target were incubated in 500 μL of TBS[pH 7.5]/2 mM CaCl2 and rotated at room temperature for 1 hr. Note that Dynal beads were washed at least twice with TBS [pH 7.5]/2 mM CaCl2 before adding target, and beads were coated in bulk. For certain panning lineages, the libraries were pre-bound to huIgG to subtract huIgG-binding phage. For certain other lineages, protein M10 (which binds to human Fc) was added to block the A1 library phage from binding to the M10 epitope of huFGFR1c-Fc during the phage binding incubation steps. Three rounds of panning were conducted with a constant target concentration of 50 nM for some lineages. Other lineages employed a five-fold decease in target concentration (e.g., 50 nM for Round 1, 10 nM for Round 2 and 2 nM for Round 3) each round.
+
+2. Coating Target Recombinant Human Beta-Klotho
+
+**A. Coating Plates:**
+
+Five or six wells for each library (A1, 1AJJ, DSL, and LNR) used in panning were directly coated with 50 nM or 100 nM (Round 1) recombinant human beta-klotho (rhβ-klotho) diluted in TBS[pH 7.5]/2 mM CaCl2 (100 μL total volume/well) for 1-2 hours with shaking at room temperature. In addition, one negative control well/library was incubated with TBS[pH 7.5]/2 mM CaCl2 only. For certain panning lineages, an anti-HIS tag antibody was coated first onto plates, followed by HIS-tagged rhβ-klotho, to present the target via the antibody. For certain panning lineages, immunoglobulin Fc-domain binders were subtracted from libraries using Protein A/FGFR1c-Fc before being applied to rhβ-klotho. For certain other lineages, Protein A coated onto plates was used to form complexes comprised of huFGFR1c-Fc (50 nM) and rhβ-klotho (250 nM) (Round 1); 10 nM/25 nM (Round 2); and 2 nM/5 nM (Round 3).
+
+**B. Coating Beads:**
+
+Recombinant human β-klotho-Fc fusion was immobilized on Protein A beads, Dyax StrepAvidin beads or on Invitrogen Talon Beads and was panned against libraries (A1, 1AJJ, DSL, and LNR). For certain panning lineages, Fc binders were subtracted from libraries using Protein A/IgG before being applied to rhβ-klotho while Strepavidin binders were subtracted from libraries using Strepavin beads. In addition, the preformed complex of huFGFR1c-Fc (50 nM) with rhβ-klotho-HIS (250 nM) was captured by 20 uL Protein A beads and panned against A1 and 1AJJ libraries. Three rounds of panning were conducted with a constant target concentration of 50 nM for some lineages, and certain lineages employed a five-fold decease in target concentration (e.g., 50 nM for Round 1, 10 nM for Round 2 and 2 nM for Round 3) each round.
+
+3. Blocking
+
+**A. Blocking Plates:**
+
+Coating solution was removed and wells were washed one time with 200 μL/well of TBS[pH 7.5]/2 mM CaCl2. 250 μl/well of 1% BSA (protease-free) in TBS[pH 7.5]/2 mM CaCl2 was added and incubated for 1 hr. at room temperature with shaking Alternative reagents (e.g., casein or milk) can be used for blocking
+
+**B. Blocking Beads:**
+
+Coating solution was removed and beads were washed twice with TBS [pH 7.5]/2 mM CaCl2. 500 μl 1% BSA (protease-free) was added in TBS[pH 7.5]/2 mM CaCl2 and rotated for 1 hr at room temperature. As noted above, alternative blocking reagents can be used.
+
+4. Washes
+
+**A. Wash Plates:**
+
+Wells were washed three times with 200 μL/well of TBS[pH 7.5]/2 mM CaCl2 to remove excess target/blocker.
+
+**B. Wash Beads:**
+
+Beads were washed three times with 1000 μL of TBS[pH 7.5]/2 mM CaCl2 to remove excess target/blocker. Beads were allowed to collect on a magnet for a few minutes after each wash to avoid bead loss.
+
+5. Phage Addition
+
+**A. Phage Addition to Plates:**
+
+About 100-1000 library equivalents (A1 domain-based libraries or others, such as LNR, DSL, etc. phage libraries) were added in phage addition buffer (1% nonfat dry milk/0.2% BSA (protease-free), or other appropriate blocking agent, in TBS [pH 7.5]/2 mM CaCl2) and incubated at room temperature for 1-2 hr with shaking. In rounds 2-3, 25-60 μL total of harvested phage was added to each of 5-6 wells (+1 negative control) diluted in phage addition buffer.
+
+**B. Phage Addition to Beads:**
+
+About 100-1000 library equivalents (A1 domain-based libraries or others, such as LNR, DSL, etc. phage libraries) were added in 500 μl 1% non-fat dry milk+100 μl 1% BSA (protease-free) in TBS [pH 7.5]/2 mM CaCl2 and incubated with rotation at room temperature for 1-2 hr. In rounds 2-3, 100 μL total of harvested phage were added to beads.
+
+6. Washes
+
+**A. Washing Plates:**
+
+The plates were washed 5 to 7 times with 200 μl/well of TBS [pH 7.5]/2 mM CaCl2/0.1% Tween-20.
+
+**B. Washing Beads:**
+
+The beads were washed 8-12 times with 800 μl of TBS [pH 7.5]/2 mM CaCl2/0.1% Tween-20. Bead resuspension was facilitated by dispensing wash buffer directly onto collected beads or by pipetting up and down. Alternatively, a KingFisher apparatus (Thermo LabSystems), or equivalent, is used for bead washing.
+
+7. Phage Elution
+
+**A. Elution Off of Plates:**
+
+100 μL/well of low pH buffer [0.2 M glycine pH 2.0] was added, and the plates were incubated at room temperature for 10 min with shaking. Then, 100 μl of 1M Tris pH 7.5 was added to each well to neutralizing the solution.
+
+**B. Elution Off of Beads:**
+
+100 μL 0.2 M glycine pH 2.0 was added to beads, which were then incubated at room temperature (in an Eppendorf rack) for 10 min with shaking. Then, 400 μl of 1M Tris pH 7.5 was added to each well to neutralizing the solution.
+
+**C. Elution and Concomitant Infection:**
+
+Phage were eluted by 0.2 M glycine pH 2.0 as above and then remaining phage were recovered using 200-500 μL of log-phase BlueKan K91 E. coli cells at OD600˜0.5-0.8. Cells were added to each well (for plates) or to aspirated beads. The infection was allowed to proceed for 30 min at 37° C. without shaking. Next, the 200 μL volumes were pooled and added to ˜3-5 mL of 2×YT/0.2 μg/mL tetracycline and shaken for 15 min at 37° C.
+
+8. Infection: (same for Plate and Bead Protocol)
+
+An appropriate volume of log-phase BlueKan K91 E. coli (in 2×YT/40 μg/mL kanamycin) was grown to OD600˜0.5-0.8. When the culture reached this OD600, it was either used immediately or placed on ice prior to use, although the time on ice was generally minimized.
+
+A. In a 50 mL sterile conical tube, eluted phage were mixed with 3 mL log-phase BlueKan K91 E. coli culture and incubated at 37° C. for 25 min without shaking The sterile conical tubes were covered with AirPore tape (Qiagen) to facilitate aeration.
+
+B. Tetracycline was added to a final concentration of 0.2 μg/mL and shaken for 15 min at 37° C.
+
+C. A 10 μL aliquot was sampled for titering and serially diluted 10-fold (10−1 to 10−6) in 2×YT, plated in 8 μL/dilution spots (or 70-90 μL/plate) on 2×YT/20 μg/ml tetracycline plates and incubated overnight at 30° C. or 37° C. These plates yielded single colonies used for subsequent phage target-binding ELISAs.
+
+D. Infected 3 mL cultures were diluted ˜10-fold into 50 mL 2×YT/20 μg/mL tetracycline and incubated with shaking at 30° C. overnight to saturation.
+
+9. Titering Input Phage was Used in the Current Round of Panning (Same for Plate and Bead Protocol)
+
+A. 100-fold serial dilutions (10−4 to 10−10) of harvested phage were made in 2×YT.
+
+B. 100 μL/well of a log-phase BlueKan K91 E. coli culture at OD600 0.5-0.6 was added to 7 wells of a 96-well polypropylene plate.
+
+C. 10 μL of diluted phage was added to the wells containing 100 μL of BlueKan K91 E. coli. 
+
+D. Phage/cell mixtures were incubated at 37° C. for 25 min without shaking, and the plates were covered with AirPore tape (Qiagen) to allow for aeration.
+
+E. Tetracycline was added to a final concentration of 0.2 μg/mL and the plate was shaken for 15 min at 37° C.
+
+F. 8 μL of each dilution (10−4 to 10−10) was plated onto a dry 2×YT agar/20 μg/mL tetracycline plate.
+
+G. Plates were incubated at 30° C. or 37° C. overnight.
+
+10. Harvesting Phage (Same for Plate and Bead Protocols)
+
+A. Overnight cultures were centrifuged at 6500 or 6800 rpm in disposable 50 mL tubes for 15 min to pellet cells.
+
+B. A standard PEG/NaCl phage-precipitation procedure was performed by adding ⅕ volume of a 20% PEG/15% NaCl stock to culture supernatant. It was mixed well by repeatedly inverting and incubating on ice for 45 min to 1 hr.
+
+C. The culture was centrifuged at 6500 or 6800 rpm for 40 min to pellet phage and the supernatant was discarded.
+
+D. The phage pellet was resuspended in 1 mL TBS [pH 7.5]/2 mM CaCl2, transferred to an Eppendorf tube and centrifuged at 13K rpm for at least 2 min to pellet insoluble material.
+
+E. Supernatant was transferred to a fresh tube and ⅕ volume of PEG/NaCl was added, mixed and incubated on ice for ˜5-20 min.
+
+F. The mixture was then centrifuged at 13,000 rpm for at least 2 min, and the supernatant was removed. The pelleted, purified phage were resuspended in approximately 1 mL TBS [pH 7.5]/2 mM CaCl2 and stored at 4° C.
+
+Monomers identified as binding to FGFR1c are shown in FIG. 10, and monomers identified as binding to β-Klotho are shown in FIG. 11.
+
+**II. Round 2 and Round 3 Panning**
+
+In general, the 2nd and 3rd round panning conditions were the same as in Round 1 described above, except the coated targets were either held at the starting concentration (e.g., 50 nM), or the target concentration was decreased approximately 2- to 5-fold for each subsequent round, and the plates (or beads) were washed approximately 2-4 additional times in each subsequent round of panning.
+
+**III. Optimization of Anti-FGFR1c Monomers Through Mutagenesis and Phage Display Panning**
+
+Mutagenesis libraries were constructed based upon anti-FGFR1c monomers M03, M23 and M33 whose respective sequences (SEQ ID NOS 287, 290 and 292, respectively, in order of appearance) are as follows:
+
+The primers used for mutagenesis libraries are listed in the following table (SEQ ID NOS 451-460, respectively, in order of appearance) where a common 5′-rescue primer was designed for all libraries along with a 3′-rescue primer unique for each library. Capital letters represent fixed bases, while the lower-case letters represent mixes of bases in a proportion of 0.85:0.05:0.05:0.05 (e.g., ‘a’ indicates a mix of 0.85A, 0.05T, 0.05G, and 0.05C).
+
+Mutagenesis libraries were constructed as follows. The ‘FOR’ and ‘REV’mutagenic oligonucleotides for each monomer were annealed via a 9-base pair overlap (TGCGACGGC) (SEQ ID NO: 461) at 30-31° C. and extended to create double-strand DNA by PCR extension using LA Taq polymerase (Takara). The assembled library inserts were amplified by a pair of 5′/3′ “rescue” primers, purified by columns (Qiagen), and digested by SfiI and XmaI (NEB). The digested library inserts were gel-purified and ligated into SfiI/XmaI-digested fUSE5HA vector. The ligated fUSE5HA vector was purified by ethanol or isopropanol precipitation, and was electroporated into EC100 electrocompetent cells (Epicentre Technologies). The electroporated cells were grown overnight and phage was harvested for use in panning
+
+The panning protocol was essentially as described above but with changes. huFGFR1c was coated onto plates or Protein A beads at 2 or 20 nM (Round 1); 0.1, 0.5 or 5 nM (Round 2); 0.02, 0.1 or 1 nM (Round 3). After phage incubation with target, plates or beads were washed 7×, 9×, or 13×. Some pannings had 11× washes at 37° C., or pannings were in the presence of 10× or 500× molar excess of purified parental monomer binding protein.
+
+IV. Optimization of anti-rhβ-Klotho Monomers Through Mutagenesis and Phage Panning
+
+Mutagenesis libraries were constructed based upon anti-rhβ-klotho monomers M01, M25, M42, and M50 whose respective sequences (SEQ ID NOS 462-463 and 305-306, respectively, in order of appearance) were as follows:
+
+Construction was essentially the same as described for FGFR1c mutagenesis libraries. The primer sequences are shown in the following table (SEQ ID NOS 466-478, respectively, in order of appearance) where the capital letters represent fixed bases, while the lower-case letters represent mixes of bases in a proportion of 0.91:0.03:0.03:0.03 (e.g., “a” indicates a mix of 0.91A, 0.03T, 0.03G, and 0.03C).
+
+The “FOR” and “REV” oligonucleotides for each monomer were used to construct each library, as described for FGFR1c mutagenesis libraries.
+
+Panning protocol was essentially as described above but with the following changes: rhβ-klotho and recombinant murine beta-klotho (muβ-klotho) were coated at 2 nM and 10 nM (Round 1); 3.3 nM and 0.67 nM (Round 2 and 3). In certain lineages, the target was rhβ-klotho in Rounds 1-3; rmuβ-klotho in Rounds 1-3; rhβ-klotho (Round 1), rmuβ-klotho (Round 2), then rhβ-klotho (Round 3). The number of washes was 7, 9 and 11 times, respectively, for Round 1, 2 and 3.
+
+FIG. 13 shows the sequences of β-Klotho-binding monomers generated using this method.
+
+V. Optimization of anti-rhf-3-Klotho Monomers Through Domain Walking to Create Dimers
+
+Two sets of “walked dimer” libraries were constructed. Set 1 contained seed monomers M01, M02, M08, M21 and M42 (SEQ ID NOS 304, 480, 694, 481 and 305, respectively, in the following table; the ‘spike monomers’ which induce increased signal above total initial signal in AlphaScreen assays), and Set 2 contained seed monomers M06, M46 and M50 (SEQ ID NOS 483-484 and 306, respectively, in the following table; ‘non-spike’ monomers which do not vary the signal from total initial signal in AlphaScreen assays). The amino acid sequences of these monomers are as follows:
+
+Each set of monomers was fused to a naïve binding protein library (e.g., A1 domain library) at either N-terminus or C-terminus to construct “walked/walking libraries”, which are dimer libraries comprised of either the Set 1 or Set 2 monomers fused to a naïve A1 domain library. These libraries were constructed in the following manner. PCR was used to amplify in two separate reactions: a) the coding sequences of the selected monomers with pETF (ACCCGTATGATGTTCCGGATTA; (SEQ ID NO: 486)/pETB2r (GATGTATTCGGCCCCAGA GGCCTGCAATGAC; SEQ ID NO: 487); and b) the coding sequences of naïve monomers in a monomer library with 21new1 (GAAATTCACCTCGAAAGCAA; (SEQ ID NO: 488)/23(ATGGGTTCCTATTGGGCT; SEQ ID NO: 489). The ˜200 bp products were isolated from a 2-3% agarose gel and purified with Qiagen QIAquick spin columns. Each product from (a) and (b) above was digested with either BsrDI or BpmI (NEB) in separate reactions. BpmI-digested monomers have an overhang which can be ligated to BsrDI-digested monomers. The purified digestion products were ligated to one another using T4 DNA ligase (NEB). Ligation of BsrDI-cut naïve monomers with BpmI-cut selected monomers generates a walking dimer library comprised of N-terminal naïve monomers fused to C-terminal selected monomers (from Set 1 or 2). Ligation of BpmI-cut naïve monomers with BsrDI-cut selected monomers generates a walking dimer library comprised of C-terminal naïve monomers fused to N-terminal selected monomers (from Set 1 or 2). Primers pETF/pETB2r were used to PCR-amplify the ligated dimer from the ligation, and the purified products were digested with SfiI followed by XmaI. The digested products were ligated to the phage vector fUSE5HA for the generation of a phage-displayed dimer “walked/walking library”, typically with 108-109 unique members.
+
+The panning protocol was essentially as described above but with changes. rhβ-klotho was coated at 10 nM and 2 nM (Round 1); 3.3 nM and 0.67 nM (Round 2); 1.1 nM and 0.22 nM (Round 3). The number of washes was 7, 9 and 11 times, respectively, for Round 1, 2 and 3.
+
+FIG. 14 show the sequences of β-Klotho-binding multimers generated using the walked dimer method.
+
+**VI. Analysis of Panning Output (Same for Plate and Bead Protocols)**
+
+Phage ELISAs:
+
+For each output “phage pool” to be analyzed (typically Rounds 2, 3 and 4, if applicable), independent clones were inoculated into 1 mL (2×YT/20 μg/mL tetracycline) cultures grown in Costar 96-well polypropylene deep-well plates. Inoculating tips were left in, and plates were shaken overnight at 37° C. Cells were pelleted by centrifugation at 3600 rpm for 15 min. Culture supernatants were retained and ELISAs were performed as described below.
+
+Target proteins (hFGFR1c or hβKlotho) diluted to 20 nM in TBS [pH 7.5]/2 mM CaCl2 were directly coated at 100 μL/well onto 96-well Nunc Maxisorp plates. For each phage clone, a no target well was also coated using 100 uL/well TBS [pH 7.5]/2 mM CaCl2 alone. Plates were incubated O/N at 4′C or 1.5 hrs at room temperature with shaking Plates were emptied and wells were blocked with 200 μL/well of 1% BSA (fraction V)/TBS [pH 7.5]/2 mM CaCl2 and incubated at RT for 1 hr with shaking Plates were then washed three times with TBS [pH 7.5]/1 mM CaCl2. Next, 40 μL of each phage supernatant was added to wells in the presence of 60 μL of 0.2% BSA/[pH 7.5]/2 mM CaCl2/0.02% Tween-20. Covered plates were incubated at RT for 1.5 hr with shaking
+
+Plates were washed three times with TBS [pH 7.5]/1 mM CaCl2/0.02% Tween-20. Next, 100 μL/well of α-M13-HRP monoclonal antibody (Amersham Pharmacia), diluted 1:5000 in TBS [pH 7.5]/2 mM CaCl2+0.02% Tween-20, was added. Plates were incubated at room temperature for 1 hr with shaking Plates were washed three times with TBS [pH 7.5]/2 mM CaCl2/0.02% Tween-20. 100 μL/well of TMB/H2O2 mixture (Pierce), diluted 1:1, was added for ELISA development. The reactions were allowed to turn blue until the strongest OD650 signals reached ˜1.0. The reaction was stopped with 100 μL/well 2N H2SO4, and positive wells changed in color from blue to yellow. Once the reaction was stopped, it was read at OD450 on an ELISA plate reader using SoftMaxPro software.
+
+Phage ELISA-positive phage pools were chosen for subcloning into an expression vector if they had (a) a high frequency of individual phage clones that bound to hFGFR1c or hbKlotho and (b) high sequence diversity among the binding-positive phage clones. Pools meeting these criteria were chosen for protein screening in the process outlined below. To subclone the monomer or multimer sequences from a given phage pool into the expression vector, pEve, approximately 108-1010 phage were amplified by 25 cycles of PCR as follows:
+
+**PCR Recipe**
+
+0.5-1 μL purified phage
+
+**5 μL 10× Buffer**
+
+8 μL 2.5 mM dNTPs
+
+5 μL 10 uM VS-For primer
+
+5 μL 10 uM EveNut primer
+
+**26 μL H2O**
+
+0.5 μL LA Taq polymerase (1 unit) (Takara)
+
+**Cycles: 25×[94° C./10 sec., −45° C./30 sec., −72° C./30 sec.]**
+
+PCR products were run on a 2% agarose gel for analysis. The monomer or multimer product (approximately 200 bp) was purified with a QIAquick spin column (Qiagen), digested with Sfi I (NEB), purified again with a QIAquick column and then ligated using T4 DNA Ligase (NEB) to the Sfi I digested vector, pEve. The ligation was transformed into electrocompetent BL21 (DE3) E. coli and plated onto 2×YT plates containing kanamycin at 40 μg/mL. Following overnight growth, approximately 3000-6000 individual clones were inoculated into 2×YT/kanamycin and grown overnight. Positive and negative controls were also included on the plates.
+
+**VII. Screening of Thousands of Monomer Proteins in 1 mL Cell Lysates**
+
+Protein Production of 1 mL Heated Lysates (Day 1):
+
+Individual clones were inoculated into wells of a 96-well Costar deep-well plate containing 500 μL/well of 2×YT/40 μg/mL kanamycin. Cultures were grown overnight (inoculating tips were left in wells) while shaken at 300 rpm at 37° C. This process allowed screening of thousands of individual, partially-purified monomers at the cell-lysate level.
+
+(Day 2) 100 μL of overnight culture was inoculated into new 96-well Costar deep-well plate containing 1 mL/well of 2×YT/40 μg/mL kanamycin+1 mM CaCl2. (The remaining overnight culture was archived by the addition of 25% final glycerol concentration and then stored at −80° C. for later use.) Plates were covered with AirPore Tape (Qiagen) and cultures were grown with shaking at 300 rpm at 37° C. until an OD600 of ˜0.8 to 1.0 was reached. Once the desired OD600 was reached, cultures were induced with 1 mM IPTG for 3 hr while shaking at 375 rpm at 37° C. Plates containing induced cultures were then centrifuged for 15 min at 3600 rpm at 4° C. to pellet cells. Supernatant was removed and discarded, and the remaining cell pellet was resuspended in 100 μL of TBS [pH 7.5]/1 mM CaCl2. Resuspended cells were transferred from the 96-well deep-well plate to a 96-well polypropylene PCR plate and heated for 5 min at 65° C. in a PCR machine. Heated/lysed cells were then centrifuged for 15 min at 3600 rpm at 4° C. After centrifugation, protein production was complete, and protein lysates were ready for characterization in a primary screen via binding ELISA and/or competition AlphaScreen assays.
+
+**FGFR1c and β-Klotho Protein ELISA:**
+
+96-well Maxisorp plates were coated with 100 μL/well of 20 nM huFGFR1c/Fc or 20 nM huβKlotho-His diluted in TBS[pH 7.5]/1 mM CaCl2, and the covered plate was incubated at 4° C. overnight or room temperature (RT) for 1.5 hr with shaking. For binding proteins comprising an antihuIgG monomer domain, huFGFR1c-His was coated instead of huFGF-Fc. Wells were emptied and then blocked with 200 μL/well of 1% BSA (fraction V)/TBS[pH7.5]/1 mM CaCl2. The covered plate was incubated at RT for 1 hr with shaking. The plate was washed three times with TBS [pH 7.5]/1 mM CaCl2. Protein from 1 mL lysate preparations was added to the wells as a single point concentration diluted 1:10 in TBS [pH 7.5]/1 mM CaCl2/0.1% BSA/0.02% Tween-20 to a final volume of 100 μL per well. For Ni/Q-purified proteins, a titration curve starting at 1-3 μM and diluting serially in TBS [pH 7.5]/1 mM CaCl2/0.1% BSA/0.02% Tween-20 1:3 for monomers or 1:4 for mutant monomers or walked dimers for 12 pts., last point no protein, was added at 100 uL/well to the plate. Covered plates were incubated at RT for 1.5 hr with shaking The plate was washed three times with TBS [pH 7.5]/1 mM CaCl2/0.02% Tween-20. 100 μL/well of anti-HA-HRP detection antibody (Roche/12013819001) diluted 1:2000 in TBS [pH 7.5]/1 mM CaCl2/0.1% BSA/0.02% Tween-20 was added. Covered plates were incubated at RT for 1 hr with shaking. The plate was washed three times with TBS [pH 7.5]/1 mM CaCl2/0.02% Tween-20. 100 μL/well of TMB/H2SO4 mixture diluted 1:1 was added. Color was allowed to turn blue until OD650 of the strongest signals reached ˜1.0. The reaction was stopped with 100 μL/well of 2NH2SO4. Once stopped, the plate was read on ELISA plate reader at OD450 using SoftMaxPro software.
+
+Receptor-Fc Protein AlphaScreen Binding Assay:
+
+All assay components were diluted in AlphaScreen Buffer: 40 mM HEPES [pH 7.4] w/NaOH, 1 mM CaCl2, 0.1% BSA (w/v), 0.05% Tween-20, 100 mM NaCl. Three additions were made to a white, 384-well, reduced-volume, Greiner microtiter assay plate with no incubation time in between additions. The assay final volume was 6 μL. First, 2 μL of a 1:50 dilution of protein from 1 mL lysate preparations was added to the plate (1:150 final assay dilution.) For Ni/Q-purified protein, 2 μL/well of a titration curve starting at 1 μM final and diluting 1:3 for 12 pts., last point no protein, was added to the plate. Secondly, 2 μL/well of hFGFR1c/Fc at 9 nM (3 nM final assay concentration) was added to the plate. Alternatively, 2 μL/well of family member target-Fc at 9 nM (3 nM final assay concentration) was added to the plate. For monomer mutagenesis, target-Fc concentrations were dropped 6×, to 0.5 nM final assay concentration. Note that the remainder of the assay was done in subdued or green-filtered light as AlphaScreen beads are light sensitive. Thirdly, 2 μL/well of a mixture of biotin-rat-antiHA Ab (clone 3F10, Roche/12 158 167 001) at 3 nM (1 nM final concentration) and AlphaScreen Streptavidin “donor beads” and Protein A “acceptor beads” (PerkinElmer/6760617M) both diluted to 40 μg/mL (10 μg/mL final assay concentration) was added to the plate, as shown in FIG. 17. The assay plate was then covered with topseal and spun down for ˜1 min. at 800 rpm. The plate was then incubated overnight in the dark at room temperature and read the next day on the Fusion Plate reader (PerkinElmer).
+
+Biotin-Target Protein AlphaScreen Binding Assay:
+
+All assay components were diluted in AlphaScreen Buffer: 40 mM HEPES [pH 7.4] w/NaOH, 1 mM CaCl2, 0.1% BSA (w/v), 0.05% Tween-20, 100 mM NaCl. Three additions were made to a white, 384-well, reduced-volume, Greiner microtiter assay plate with no incubation time in between additions. The assay final volume was 6 μL. First, 2 μL of a 1:50 dilution of protein from 1 mL lysate preparations was added to the plate (1:150 final assay dilution.) For Ni/Q-purified protein, 2 uL/well of a titration curve starting at 1 uM final and diluting 1:3 for 12 pts., last point no protein, was added to the plate. Secondly, 2 μL/well of biotin-bKlotho-His at 15 nM (5 nM final assay concentration) was added to the plate. Alternatively, 2 μL/well of family member target-biotin at 15 nM (5 nM final assay concentration) was added to the plate. The remainder of the assay was done in subdued or green-filtered light as AlphaScreen beads are light sensitive. Thirdly, 2 μL/well of a mixture of rat-antiHA Ab (clone 3F10, Roche/11 867 431 001) at 6 nM (2 nM final concentration) and AlphaScreen Streptavidin “donor beads” and antimuIgG “acceptor beads” (PerkinElmer/6760606M) both diluted to 40 μg/mL (10 μg/mL final assay concentration) was added to the plate, as shown in FIG. 18. The assay plate was then covered with topseal and spun down for ˜1 min. at 800 rpm. The plate was then incubated overnight in the dark at room temperature and read the next day on the Fusion Plate reader (PerkinElmer).
+
+AlphaScreen Ligand Independent Inhibition Assay:
+
+All assay components were diluted in AlphaScreen Buffer: 40 mM HEPES [pH 7.4] w/NaOH, 1 mM CaCl2, 0.1% BSA (w/v), 0.05% Tween-20, 100 mM NaCl. Three additions were made to a white, 384-well, reduced-volume, Greiner microtiter assay plate with no incubation time in between additions. The assay final volume was 6 μL. First, 2 μL of a 1:5 dilution of protein from 1 mL lysate preparations was added to the plate (1:15 final assay dilution.) For Ni/Q-purified protein, 2 μL/well of a titration curve starting at 1 uM final and diluting 1:3 for 12 pts., last point no protein, was added to the plate. Secondly, 2 μL/well of biotin-βKlotho-His at 15 nM (5 nM final assay concentration) was added to the plate. Note that the remainder of the assay was done in subdued or green-filtered light as AlphaScreen beads are light sensitive. Thirdly, 2 μL/well of a mixture of hFGFR1c/Fc at 90 nM (30 nM final concentration) and AlphaScreen Streptavidin “donor beads” and Protein A “acceptor beads” (PerkinElmer/6760617M) both diluted to 40 μg/mL (10 μg/mL final assay concentration) was added to the plate, as shown in FIG. 19. Alternatively, 2 uL/well hFGFR4/Fc at 15 nM (5 nM final concentration) and AlphaScreen (same dilution as above) was added to the plate. The assay plate was then covered with topseal and spun down for ˜1 min. at 800 rpm. The plate was then incubated overnight in the dark at room temperature and read the next day on the Fusion Plate reader (PerkinElmer).
+
+AlphaScreen Ligand Dependent Inhibition Assay:
+
+All assay components were diluted in AlphaScreen Buffer: 40 mM HEPES [pH 7.4] w/NaOH, 1 mM CaCl2, 0.1% BSA (w/v), 0.05% Tween-20, 100 mM NaCl. Three additions were made to a white, 384-well, reduced-volume, Greiner microtiter assay plate with no incubation time in between additions. The assay final volume was 8 μL. First, 2 μL of undiluted protein from 1 mL lysate preparations was added to the plate (1:4 final assay dilution.) For Ni/Q-purified protein, 2 μL/well of a titration curve starting at 1 uM final and diluting 1:3 for 12 pts., last point no protein, was added to the plate. For a positive control, a titration curve of unlabeled huFGF21 starting at 1 uM final and diluting 1:3 for 12 pts., last point no ligand was added at 2 μL/well to the plate.] Secondly, 4 μL/well of a mixture of hubKlotho-His (or mubKlotho-His) at 80 nM (40 nM final assay concentration) and huFGFR1c/Fc at 60 nM (30 nM final assay concentration) was added to the plate. Alternatively, 4 μL/well of a mixture of hubKlotho-His (or mubKlotho-His) at 14 nM (7 nM final assay concentration) and huFGFR4/Fc at 10 nM (5 nM final assay concentration) was added to the plate. The remainder of the assay was done in subdued or green-filtered light as AlphaScreen beads are light sensitive. Thirdly, 2 μL/well of a mixture of biotin-huFGF21 at 28 nM (7 nM final concentration) and AlphaScreen Streptavidin “donor beads” and Protein A “acceptor beads” (PerkinElmer/6760617M) both diluted to 40 μg/mL (10 μg/mL final assay concentration) was added to the plate, as shown in FIG. 20. The assay plate was then covered with topseal and spun down for ˜1 min. at 800 rpm. The plate was then incubated overnight in the dark at room temperature and read the next day on the Fusion Plate reader (PerkinElmer).
+
+AlphaScreen Ligand Dependent Inhibition Assay (for Binding Proteins Comprising an antihuIgG Monomer Half Life Domain):
+
+All assay components were diluted in AlphaScreen Buffer: 40 mM HEPES [pH 7.4] w/NaOH, 1 mM CaCl2, 0.1% BSA (w/v), 0.05% Tween-20, 100 mM NaCl. Three additions were made to a white, 384-well, reduced-volume, Greiner microtiter assay plate with no incubation time in between additions. The assay final volume was 8 μL. First, 2 μL/well of a titration curve of Ni/Q-purified binding protein+IgG monomer domain starting at 1 uM final and diluting 1:3 for 12 pts., last point no protein, was added to the plate. For a positive control, a titration curve of unlabeled huFGF21 starting at 1 μM and diluting 1:3 for 12 pts., last point no ligand was added at 2 μL/well to the plate. Secondly, 4 μL/well of a mixture of hubKlotho-His (or mubKlotho-His) at 80 nM (40 nM final assay concentration) and huFGFR1c-His at 60 nM (30 nM final assay concentration) was added to the plate. Alternatively, 4 μL/well of a mixture of hubKlotho-His (or mubKlotho-His) at 14 nM (7 nM final assay concentration) and huFGFR4-His at 10 nM (5 nM final assay concentration) was added to the plate. The remainder of the assay was done in subdued or green-filtered light as AlphaScreen beads are light sensitive. Thirdly, 2 μL/well of a mixture of biotin-huFGF21 at 28 nM (7 nM final concentration) and AlphaScreen Streptavidin “donor beads” and Nickel Chelate “acceptor beads” (PerkinElmer/6760619M) both diluted to 40 μg/mL (10 μg/mL final assay concentration) was added to the plate, as shown in FIG. 21. The assay plate was then covered with topseal and spun down for ˜1 min. at 800 rpm. The plate was then incubated overnight in the dark at room temperature and read the next day on the Fusion Plate reader (PerkinElmer).
+
+**VIII. Multimerization and Recombination of Phage Display-Selected Monomers**
+
+Monomers that were subcloned into pEve (pEve/monomer) were multimerized in one of the two following ways. pEve/monomer plasmids (individually or in pools) were digested with either BsrDI or BpmI (NEB). The ˜1.1 kb BsrDI and ˜2.9 BpmI fragments were isolated from 1% agarose gels and purified with Qiagen QIAquick spin columns. Pools of each of the two fragments were ligated using T4 DNA ligase (NEB); subsequently, the ligation was purified with a Qiagen QIAquick spin column. Using the primers VS-For and EveNut described in the phage subcloning section above, the multimer coding sequences were PCR-amplified from the ligation. The PCR products were purified and digested with SfiI (NEB), followed by ligation with pEve and transformation of BL21 (DE3) E. coli. The other method to generate multimers is to amplify the monomers from pEve/monomer plasmids (individually or in pools) with the primers VS-For and EveNut as described above. The amplified monomers were purified, digested with either BsrDI or BpmI (NEB), and ligated to create multimers. The ligated products were amplified with VS-For and EveNut primers, followed by purification, digestion with SfiI, ligation with pEVE vector and transformation into BL21 (DE3) E. coli. The PCR products were purified and digested with SfiI (NEB), followed by ligation with pEve and transformation of BL21 (DE3) E. coli. This method created dimers comprised of different combinations of the starting monomers. This method can also be used to generate other multimers, such as trimers. When making trimers, pools of pEve/dimers and pEve/monomers are the starting materials. They are processed as above. A molecular biology procedure similar to that described below for making “walking libraries” was also used to generate multimers. In all cases, proteins were expressed, purified and screened as above.
+
+Additional libraries, referred to as “walking libraries,” were generated by ligating phage display-selected monomers (i.e., selected monomers) with the full representation of a naïve monomer library. These libraries were constructed in the following manner. PCR was used to amplify in two separate reactions: a) the coding sequences of the selected monomers with pETF (ACCCGTATGATGTTCCGGATTA; SEQ ID NO: 486)/pETB2r (GATGTATTCGGCCCCAGA GGCCTGCAATGAC; SEQ ID NO: 487); and b) the coding sequences of naïve monomers in a monomer library with 21new1 (GAAATTCACCTCGAAAGCAA; SEQ ID NO: 488)/23 (ATGGGTTCCTATTGGGCT; SEQ ID NO: 489). The ˜200 bp products were isolated from a 3% agarose gel and purified with Qiagen QIAquick spin columns. Each product from (a) and (b) above was digested with either BsrDI or BpmI (NEB) in separate reactions. BpmI-digested monomers have an overhang which can be ligated to BsrDI-digested monomers. The purified digestion products were ligated to one another using T4 DNA ligase (NEB). Ligation of BsrDI-cut naïve monomers with BpmI-cut selected monomers generates a walking dimer library comprised of N-terminal naïve monomers fused to C-terminal selected monomers. Ligation of BpmI-cut naïve monomers with BsrDI-cut selected monomers generates a walking dimer library comprised of C-terminal naïve monomers fused to N-terminal selected monomers. Primers pETF/pETB2r were used to PCR-amplify the ligated dimer coding sequences from the ligation, and the purified products were digested with SfiI followed by XmaI. The digested products were ligated to the phage vector fUSE5HA for the generation of a phage display dimer “walking library”, typically with 108-109 unique members. A trimer (or larger multimer) “walking library” can be generated in a similar fashion, except that the starting materials are dimers (or larger) and naïve monomers. Walking libraries were panned against β-Klotho and screened as described above.
+
+**IX. Characterization of Purified Monomers in Binding and Competition Assays**
+
+Once proteins were characterized at the heated protein lysate level, the best monomers were chosen for further characterization. Larger-scale cultures of individual clones were prepared and the monomers, which bear an 8×His tag (SEQ ID NO: 492), were purified via Ni-NTA resin. These nickel-purified monomers were assayed in binding ELISAs and the AlphaScreen competition assay. Protein sequence data and biochemical data from characterization of purified monomers are in FIGS. 10-12.
+
+Protein Purification From 500 mL Cultures for NiNTA:
+
+(Day 1) In a 15 mL culture tube containing 3 mL of 2×YT+40 μg/mL kanamycin, the appropriate “primary hit well” archived glycerol stock was inoculated. Culture was shaken overnight at 300 rpm at 37° C.
+
+(Day 2) 2 mL of overnight culture was inoculated into 1 L Erlenmeyer shake flask containing 500 mL of 2×YT+40 μg/mL kanamycin. Cultures were grown with shaking at 375 rpm at 37° C. until an OD600 of about 0.8-1.0 was reached. Once desired OD600 was reached, cultures were induced with 1 mM final concentration of IPTG for 3 hr while shaking at 375 rpm. After 3 hr induction, the 500 mL culture was transferred to clean/autoclaved Sorvall tube and centrifuged for 8 min at 8000 rpm at 4° C. to pellet cells.
+
+Once cells were pelleted, supernatant was removed and discarded, and 20 mL of Nickel Binding/Wash Buffer (20 mM Tris [pH 7.5]/20 mM Imidazole/300 mM NaCl/0.2 mM CaCl2) was added to each tube. The pellet was resuspended with 10 mL serological pipet until there were no visible clumps, and then the resuspended cells (˜30 mL) were transferred into 35 mL Oakridge Tubes and heated in a water bath for 10 min at 80° C. to lyse cells. After heating, the warm Oakridge Tubes containing lysed cells were placed in a ice/water bath for ˜10 min to cool. Once cooled, tubes were centrifuged for 30 min at 18,000 rpm at 4° C. to pellet cells.
+
+NiNTA resin (Qiagen) was washed with Nickel Binding Buffer 3× before addition to protein lysate in order to equilibrate the resin. A total of 1.5 mL of NiNTA resin in Nickel Binding/Wash Buffer was added to appropriately labeled (with protein ID) clean 50 mL screw cap tube. After lysed cells were pelleted, protein supernatant was removed and added to 50 mL tube containing the 1.5 mL of washed NiNTA resin. Protein was allowed bind to NiNTA resin by rocking gently for 0.5 hours atroom temperature. After incubation with NiNTA resin, 50 mL tubes with NiNTA bound to protein was centrifuged for 10 min at ˜1500 rpm. Supernatant was gently poured out and discarded.
+
+NiNTA resin+bound protein was transferred to appropriately labeled 15 mL Clontech columns by adding 1 mL of Nickel Binding/Wash Buffer to 50 mL tube containing resin, swirling to resuspend, then pipetting the mixture into a column which has been mounted on a vacuum manifold. NiNTA resin+bound protein was washed with at least 10 column volumes (15 mL) of NiNTA wash buffer. 15 mL columns containing NiNTA resin+bound and washed protein were transferred to a clean 15 mL screw cap collection tubes and 4 mL of Ni Elution buffer (20 mM Tris [pH 7.5], 200 mM NaCl, 0.1 mM CaCl2, 200 mM imidazole) was added to each column to elute off protein into the 15 mL collection tube. It was then allowed to elute by gravity.
+
+Eluted protein was transferred to slide-A-lyzer cassette (appropriate MW cutoff—for monomers used 3.5 kDa cutoff and for dimers and trimers used 10 kDa cutoff) using 18.5 gauge needle and 5 mL syringe to load cassette. Slide-A-lyzer cassettes containing eluted proteins were placed into overnight dialysis buffer containing redox reagents (20 mM Tris [pH 7.5], 100 mM NaCl, 1 mM CaCl2, 1 mM 2-mercaptoethanol, 0.25 mM 2-hydroxyethyldisulfide).
+
+(Day 3) Slide-A-lyzer cassettes containing overnight dialyzed proteins were transferred into dialysis buffer without redox (20 mM Tris [pH 7.5], 50 mM NaCl, 1 mM CaCl2). After 3 hr dialysis, Slide-A-lyzer cassettes were transferred into fresh TBS/CaCl2 without redox for another 3 hr. After 2nd dialysis change, proteins were removed from Slide-A-lyzer cassettes using 18.5 gauge needle and 5 mL syringe, and protein was transferred by filtering using 0.2 micron syringe filter into appropriately labeled 15 mL polypropylene tube.
+
+The purified binding proteins, which were selected as the “best agonists” in reporter cell assays, were further purified by Q-Sepharose anion exchange to remove contaminants.
+
+Q-Sepharose Purification:
+
+1 mL of Q-Sepharose Fast-Flow Resin (Amersham Biosciences) was added to 15 mL Clontech column. Resin with 15 column volumes (or 15 mL) of 20 mM Tris [pH 7.5], 50 mM NaCl, 1 mM CaCl2 was equilibrated. 2 mL (˜5 mg) of filtered NiNTA-purified protein was added to resin and protein was allowed to bind to resin by gravity. Flow-through into first column of 96-well plate was collected. Columns loaded with protein were transferred to 15 mL collection tube and resin/bound protein were washed with 10 column volumes (or 10 mL) of 20 mM Tris [pH 7.5], 50 mM NaCl, 1 mM CaCl2. Once washed, NaCl gradient elution of protein was started. NaCl concentration was varied in gradient as follows: 100 mM, 150 mM, 180 mM, 200 mM, 220 mM, 250 mM NaCl, to a base of 20 mM Tris [pH 7.5], 1 mM CaCl2. Fractions were collected in 96-well deep-well polypropylene plate—2 mL/fraction, in 1 mL increments. Fractions containing protein were tested by Bradford and analyzed by SDS PAGE. Fractions were tested in binding ELISAs and competition assays as described above with the following change. Protein from 500 mL NiNTA purified preparations or NiNTA+Q-sepharose purified preparations was added to the plate as a twelve-point concentration curve starting with a 1:5 to 1:100 first dilution and then 1:4 serial dilutions thereafter with the last point as buffer only.
+
+**FGFR1c Binding Monomers**
+
+The following is a summary of the FGFR1c monomers identified from the panning of the naïve A1 library (SEQ ID NOS 493-508, 288, 290, 511, 292, 513, 291, 515-517, 289, 519-522, 287 and 524-525, respectively, in order of appearance; see FIG. 10):
+
+The following is a consensus sequence for the FGFR1c-binding monomers. Conserved residues are in bold. Framework cysteines denoted as . The range of linkers identified are also listed.
+
+**Linkers:**
+
+The following is a summary of the FGFR1c-binding monomers identified from the panning of the M03/M15 mutant monomer library (SEQ ID NOS 293-295, 448, 297, 449-450, 464, 296 and 287, respectively, in order of appearance)
+
+The following is a consensus sequence for the FGFR1c monomers identified from the panning of the M03/M15 mutant monomer library. Conserved residues are in bold. Framework cysteines denoted as . The range of linkers identified are also listed.
+
+**Linker:**
+
+The following is a summary of the FGFR1c monomers identified from the panning of the M23 mutant monomer library (SEQ ID NOS 298, 479, 303, 301, 299, 482, 485, 302, 300 and 290, respectively, in order of appearance)
+
+The following is a consensus sequence for the FGFR1c monomers identified from the panning of the M23 mutant monomer library. Conserved residues are in bold. Framework cysteines denoted as . The range of linkers identified are also listed.
+
+**βKlotho Binding Monomers and Dimers**
+
+The following is a summary of the βKlotho monomers identified from the panning of the naïve A1 library (SEQ ID NOS 304, 510, 290, 512, 512, 480, 514, 518, 523, 527-536, 484, 537-541, 483, 483, 542, 481, 305, 543-547, 547-550, 306, 551, 551-562, 1235 and 563, respectively, in order of appearance; see FIG. 11)
+
+The following is a consensus sequence for the β-Klotho-binding monomers. Conserved residues are in bold. Framework cysteines denoted as . The range of linkers identified are also listed.
+
+**Linkers:**
+
+The following is a summary of the β-Klotho monomers identified from the panning of the naïve LNR library (SEQ ID NOS 1243, 1246, 1253, 1251, 1250, 1276, 1247, 1254, 1277, 1255, 1257, 1261, 1258, 1260, 1278, 1244, 1252, 1279, 1245, 1256 and 1262 respectively, in order of appearance, Family 5; see FIG. 12.
+
+The following is a consensus sequence for the β-Klotho-binding monomers identified from the panning of the LNR library. Framework cysteines denoted as C.
+
+All monomers derived from LNR library panning against β-Klotho have 9 amino acid long linkers. The following is the consensus sequence for these linkers.
+
+The following is a summary of the β-Klotho monomers identified from the panning of the mutagenesis library constructed from β-Klotho M01 (SEQ ID NOS 19-21, 526, 465, 509 and 563, respectively, in order of appearance, Family 6; see FIG. 13)
+
+The following is a consensus sequence for the β-Klotho-binding monomers identified from the panning of the mutagenesis library constructed from β-Klotho M01. Framework cysteines denoted as C.
+
+C-terminal linker for all members of family 6; SQDPEFHKV (SEQ ID NO: 18)
+
+The following is a summary of the β-Klotho monomers identified from the panning of the mutagenesis library constructed from β-Klotho M25 (SEQ ID NOS 564-569 and 569-574, respectively, in order of appearance, Family 7; see FIG. 13)
+
+The following is a consensus sequence for the β-Klotho-binding monomers identified from the panning of the mutagenesis library constructed from β-Klotho M25. Framework cysteines denoted as C.
+
+C-terminal linker for all members of family 7; PTHT (SEQ ID NO: 575)
+
+The following is a summary of the β-Klotho monomers identified from the panning of the mutagenesis library constructed from β-Klotho M42 (SEQ ID NOS 576-579, respectively, in order of appearance, Family 8; see FIG. 13)
+
+The following is a consensus sequence for the β-Klotho-binding monomers identified from the panning of the mutagenesis library constructed from β-Klotho M42. Framework cysteines denoted as C.
+
+C-terminal linker for all members of family 8; SAPASEPPGSL (SEQ ID NO: 12)
+
+The following is a summary of the β-Klotho monomers identified from the panning of the mutagenesis library constructed from β-Klotho M50 (SEQ ID NOS 580-583, respectively, in order of appearance, Family 9; see FIG. 13)
+
+The following is a consensus sequence for the β-Klotho-binding monomers identified from the panning of the mutagenesis library constructed from β-Klotho M50. Framework cysteines denoted as C.
+
+C-terminal linker for all members of family 9; GDSHILPFSTPGPST (SEQ ID NO: 14)
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M01 N-terminal walked dimer library (SEQ ID NOS 584 and 584-590, respectively, in order of appearance, Family 10; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M01 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M01 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the β-Klotho M01-related sequences (on which the consensus alignment shown above (SEQ ID NO: 597) that provided the seeds for the selected walked dimers derived from the β-Klotho M01 N-terminal walked dimer library
+
+The following are the linkers incorporated at the C-termini of the dimers identified from the panning of the β-Klotho M01 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library (SEQ ID NOS 598, 307, 599-600, 310, 308-309 and 601-606, respectively, in order of appearance, Family 11; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M01 C-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M06 N-terminal walked dimer library (SEQ ID NOS 620 and 620-622, respectively, in order of appearance, Family 12; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M06 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M06 N-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M06 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following is the linker at the C-termini of the dimers identified from the panning of the β-Klotho M06 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M06 C-terminal walked dimer library (SEQ ID NOS 626-628, respectively, in order of appearance, Family 13; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M06 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following is the linker between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M06 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M06 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M06 C-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M08 N-terminal walked dimer library (SEQ ID NOS 632-633, 311 and 634, respectively, in order of appearance, Family 14; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M08 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M08 N-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M08 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M08 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M21 N-terminal walked dimer library (SEQ ID NOS 639-640, 312 and 641-643, respectively, in order of appearance, Family 15; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M21 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M21 N-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M21 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M21 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M21 C-terminal walked dimer library (SEQ ID NOS 650-651, respectively, in order of appearance, Family 16; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M21 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following is the linker between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M21 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M21 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M21 C-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M42 N-terminal walked dimer library (SEQ ID NOS 654-657, respectively, in order of appearance, Family 17; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M42 N-terminal walked dimer library Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M42 N-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M42 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+An additional seed sequence containing multiple mutations in the β-Klotho M42 monomer domain was identified in the output from the panning of the β-Klotho M42 N-terminal walked dimer library.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M42 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M42 C-terminal walked dimer library (SEQ ID NOS 660-662, respectively, in order of appearance, Family 18; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M42 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M42 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M42 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M42 C-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M50 N-terminal walked dimer library (SEQ ID NOS 666-674, respectively, in order of appearance, Family 19; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M50 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M50 N-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M50 N-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following is the linker at the C-termini of the dimers identified from the panning of the β-Klotho M50 N-terminal walked dimer library.
+
+The following is a summary of the β-Klotho walked dimers identified from the panning of the β-Klotho M50 C-terminal walked dimer library (SEQ ID NOS 685-686, respectively, in order of appearance, Family 20; see FIG. 14).
+
+The following is a consensus sequence for the N-terminal monomers from the dimers identified from the panning of the β-Klotho M50 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following is the linker between monomer domains 1 and 2 of the dimers identified from the panning of the β-Klotho M50 C-terminal walked dimer library.
+
+The following is a consensus sequence for the C-terminal monomers from the dimers identified from the panning of the β-Klotho M50 C-terminal walked dimer library. Framework cysteines denoted as C.
+
+The following are the linkers at the C-termini of the dimers identified from the panning of the β-Klotho M50 C-terminal walked dimer library.
+
+**Example 8**
+
+This example describes generating and screening binding proteins made by combining FGFR1c- and βKlotho-binding monomers.
+
+A PCR-based method was used in which pools of β-klotho- or FGFR1c-binding protein coding sequences were PCR-amplified, digested, and ligated together to create bispecific molecules.
+
+In general, the coding sequences of (i) FGFR1c-binding monomers and (ii) beta-klotho-binding monomer and dimer binding proteins were individually PCR-amplified using 5′ primer U_vs_for (ggtcatactgaaccgATGGCCGGTCCGGCCTAC) (SEQ ID NO: 688) and 3′ primer EveNut (aaa agg ccc cag agg cct tct gca atg a) (SEQ ID NO: 689) to create “products A.” These genes were also PCR-amplified with 5′ primer BpmI_for (atgccccgggtctggaggcgtctggtggttc) (SEQ ID NO: 690) and 3′ primer EveNutUrescue (ggtaccatgcttgcattcGGCCCCAGAGGCCTTCTGCAATGA) (SEQ ID NO: 691) to create “products B.”
+
+PCR products were purified with a Qiagen 96-well block and then digested with restriction endonucleases. “Products A” were digested with BsrDI, “Products B” with BpmI, and all were purified with a 96-well Qiagen block.
+
+Two-fragment ligations were performed in 12 pools. In each ligation, 60-120 ng of each fragment were ligated in a volume of 10 μL using T4 DNA ligase (NEB) for 4 hours at room temperature. The ligated products (i.e., genes for the binding proteins) in 0.5 μL of ligation were preferentially PCR-amplified using 5′ primer Rescue_fusion_for (ggtcatactgaaccg) (SEQ ID NO: 692) and 3′ primer Rescue1_rev (ggtaccatgcttgcattc) (SEQ ID NO: 693). Products were purified, digested with SfiI, then gel-purified, and subcloned into pEVE expression vector. Correct clones were identified by DNA sequencing.
+
+FGFR1c/βKlotho Binding Proteins
+
+A series of heterodimeric binding proteins was generated that would bind to both FGFR1c and β-Klotho (see FIGS. 22-23).
+
+The following summarizes the FGFR1c monomers that were used to generate a set of binding proteins that were tested for agonist activity (see FIGS. 10, 15 and 16). The resulting bispecific multimers were shown to bind FGFR1c and β-Klotho by ELISA (FIG. 24) and Alphascreen (FIG. 25). The bispecific multimers may or may not block the binding of FGF-21 to the FGFR1c/β-Klotho complex in Alphascreen (FIG. 26) but do not block the association of FGFR1c and β-Klotho in Alphascreen (FIG. 27). The multimers exhibit increased avidity for the FGFR1c/β-Klotho complex relative to the isolated constituent warheads in binding ELISA (FIG. 28) and for the FGFR1c/β-Klotho complex on the surface of transfected cells by flow cytometry (FIG. 29). Additionally, the multimers induced an FGF-21 like agonist response when added to FGF-21 sensitive luciferase reporter cells (FIG. 30).
+
+The following summarizes the β-Klotho monomers and dimers that were used to generate the set of binding proteins (see FIGS. 15, 16 and 32):
+
+**Preparation and Testing of Binding Proteins.**
+
+Binding proteins were initially screened for activity as crude preparations in bacterial lysate (see FIG. 31).
+
+Protein Production of 1 mL Heated Lysates (Day 1):
+
+Individual clones were inoculated into wells of a 96-well Costar deep-well plate containing 500 μL/well of 2×YT/40 μg/mL kanamycin. Cultures were grown overnight (inoculating tips were left in wells) while shaken at 300 rpm at 37° C. This process allowed screening of thousands of individual, partially-purified monomers at the cell-lysate level.
+
+(Day 2) 100 μL of overnight culture was inoculated into new 96-well Costar deep-well plate containing 1 mL/well of 2×YT/40 μg/mL kanamycin+1 mM CaCl2. (The remaining overnight culture was archived by the addition of 25% final glycerol concentration and then stored at −80° C. for later use.) Plates were covered with AirPore Tape (Qiagen) and cultures were grown with shaking at 375 rpm at 37° C. until an OD600 of ˜0.8 to 1.0 was reached. Once the desired OD600 was reached, cultures were induced with 1 mM IPTG for 3 hr while shaking at 375 rpm at 37° C. Plates containing induced cultures were then centrifuged for 15 min at 3600 rpm at 4° C. to pellet cells. Supernatant was removed and discarded, and the remaining cell pellet was resuspended in 100 μL of TBS [pH 7.5]/1 mM CaCl2. Resuspended cells were transferred from the 96-well deep-well plate to a 96-well polypropylene PCR plate and heated for 5 min at 65° C. in a PCR machine. Heated/lysed cells were then centrifuged for 15 min at 3600 rpm at 4° C. After centrifugation, protein production was complete, and protein lysates were ready for characterization in ELISA, Alphascreen and an FGF-21 sensitive luciferase reporter cell assay.
+
+After initial screening at the lysate level, selected FGFR1c/βKlotho binding proteins were selected for scaled-up expression and purification, using the same methods used for expressing and purifying the original warheads (see Example 7).
+
+**Example 9**
+
+This example describes experiments demonstrating activation of luciferase expression in a reporter cell line in response to FGF-21 and FGF-21 mimetic molecules
+
+Reporter cell lines used were derived from AM-1D, a cell line derived from Chinese Hamster Ovary (CHO) cells and obtained from the Amgen Research Cell Bank. Cell lines were maintained in Dulbecco's Modified Eagles Medium (DMEM)+10% fetal bovine serum (FBS) (Gibco) supplemented with non-essential amino acids (Mediatech) and sodium pyruvate (Mediatech)
+
+An AM-1D cell line stably expressing human FGFR1c was derived (AM-1D-huFGFR1c). Transient transfection of this cell line in a 96 well plate format with pTT5-cyno β-Klotho (25 ng DNA/well), pFR-luciferase reporter construct (150 ng DNA/well) (Promega) and pFA-Gal4-Elk transactivator (10 ng/well DNA) (Stratagene) produces cells that are responsive to FGF-21.
+
+AM-1D huFGFR1c cells were plated on day 1 at a density of 2.5×104 cells/well on white poly-D-lysine coated 96 well plates (Becton Dickinson) and incubated overnight at 37° C., 5% CO2. On day 2 cells were transfected with DNA as described herein and incubated overnight at 37° C., 5% CO2. On day 3 the medium was changed on the cells and replaced with assay medium (Ham's F12 medium+1% bovine serum albumin). On day 4 the assay was performed. Dilutions of test article (crude bacterial lysate containing a binding protein, or a purified binding protein) were made in assay medium and added to the 96 well plates. Each 96 well plate also included a positive control titration of human FGF-21. The cells were incubated at 37° C., 5% CO2 for 4 hours, after which Promega Steadyglo luciferase reagent was added in a 1:1 ratio with mixing, according to the manufacturer's instructions. Agonist activity was directly proportional to the luminescence signal.
+
+A series of AM-1D cell lines were derived that stably expressed human FGFR1c, human β-Klotho plus the Gal4-Elk transactivator and FA-luciferase reporter (371F series). Four clones were used in these studies (371F-1D2, 371F-1E11, 371F-2E10, 371F-2G10). AM-1D 371F cells were plated on day 1 at a density of 2.0×104 cells/well on white poly-D-lysine coated 96 well plates (Becton Dickinson) and incubated overnight at 37° C., 5% CO2. On day 2 the medium was changed on the cells and replaced with assay medium (Ham's F12 medium+1% bovine serum albumin). On day 3 the assay was performed. Dilutions of test article (crude bacterial lysate containing a binding protein, or a purified binding protein) were made in assay medium and added to the 96 well plates. Each 96 well plate also included a positive control titration of human FGF-21. The cells were incubated at 37° C., 5% CO2 for 4 hours, after which Promega Steadyglo luciferase reagent was added in a 1:1 ratio with mixing, according to the manufacturer's instructions. Agonist activity was directly proportional to the luminescence signal.
+
+These assays permitted the determination of the binding protein's potency and efficacy relative to each other and to native human FGF-21, allowing the ranking of the binding proteins based on their biological activity. Examples of data from this assay are shown in FIGS. 30, 31, 33-35, 38-49.
+
+**Example 10**
+
+This example describes experiments allowing the identification of specific pairs of FGF receptor and klotho protein co-receptor that permit activation by FGF-21 or an FGF-21 mimetic molecule. An example of this data is shown in FIG. 37.
+
+L6 cells were maintained in Dulbecco's modified Eagle's medium supplemented with 10% fetal bovine serum and penicillin/streptomycin. Cells were transfected with expression vectors using Lipofectamine 2000 transfection reagent (Invitrogen) according to the manufacturer's protocol. L6 cells plated in 24 well plates (106 cells/well) were transfected with various FGF receptors, including FGFR1b, 1c, 2b, 2c, 3b, 3c and FGFR4 and αKlotho or βKlotho and serum starved in 0.2% bovine serum albumin overnight before treatment with FGF-21 or an FGF-21 mimetic molecule. Media was aspirated after 10 min and plates were snap frozen in liquid nitrogen. Cells in each well were lysed in 60 μl of complete lysis buffer and total and phosphorylated ERK was measured using MSD whole cell lysate Phospho-ERK1/2 kit (Meso Scale Discovery, Gaithersburg, Md.) according to the manufacturer's instructions.
+
+**Example 11**
+
+This example describes experiments demonstrating induction of Erk phosphorylation in cultured human adipocytes in response to FGF-21 and FGF-21 mimetic molecules
+
+**Primary Human Adipocyte Cell Culture and Differentiation**
+
+Cryopreserved subcutaneous human preadipocytes (Lot#SL0037) from Zen-Bio, Research Triangle Park, N.C. were stored in liquid nitrogen tank.
+
+Cells were removed from liquid nitrogen and place immediately into a 37 degree water bath with agitation. The cells were added to a sterile conical bottom centrifuge tube containing 10 ml of Preadipocyte Medium per vial of cells (Zen-Bio, PM-1). The cells were centrifuged at 280×g, 20 degrees, 5 min. The medium was aspirated and the cells resuspended in PM-1.
+
+Cells were counted and approximately 1.3×106 cells were plated in T-175 culture flasks in PM-1 medium. The cells were grown in humidified 37 degree incubator with 5% CO2.
+
+The cells were incubated until they were 85-90% confluent (about 3-4 days).
+
+The medium was aspirated and preadipocytes were washed 2 times with sterile PBS. The PBS was removed and the cells released from the flask by adding 5 ml of 0.25% trypsin/2.21 mM EDTA solution. Cells were allowed to trypsinize for 5 minutes at 37 degrees. The trypsin was neutralized with 15 ml PM-1, spun, resuspended in PM-1 and count.
+
+400,000 cells were plated per well in 3 ml PM-1 on Greiner Bio-One 6-well plates (VWR #82050-842) and grown in humidified 37 degree incubator with 5% CO2.
+
+Once cells were completely confluent (24-48 hrs post-plating), differentiation was induced by removing the entire volume of PM-1 from all wells and adding 3 ml of Adipocyte Differentiation Medium (Zen-Bio, DM-2). Cells were then incubated for 7 days at 37 degrees and 5% CO2.
+
+After 7 days, 1.8 ml of DM-2 was removed and 2.4 ml of Adipocyte Maintenance Medium (Zen-Bio, AM-1) was added. Every 2-3 days thereafter, 1.8 ml of AM-1 was removed and 1.8 ml fresh AM-1 was added. Day 14 of differentiation was the last exchange of AM-1.
+
+Primary Human Adipocyte Treatment for pERK:
+
+On Day 17 of differentiation, all medium was removed from wells and each well was washed twice with 2 ml of warm PBS. The adipocytes were serum starved for 3 hrs in adipocyte serum starvation medium comprised of 1:1 low glucose DMEM (Invitrogen, #11885) and F12 (Invitrogen, #11765) with 0.2% Fatty Acid-Free BSA (Sigma, A9205), 2 ml per well.
+
+After 3 hr incubation, 1.4 ml medium was removed and the cells treated with the proper doses of binding protein for 10 minutes at 37 degrees (add 60 μL of 11× sample in starvation medium to each well). Recombinant FGF-21 was used as a positive control.
+
+After 10 min treatment, medium was aspirated from wells and the cells washed twice with 2 ml cold PBS.
+
+Lyse the cells in 175 ul/well of lysis buffer.
+
+Lysis buffer:
+
+**1% Nonidet P40**
+
+- 0.25% Sodium Deoxycholate
+
+**1 mM NaF**
+
+1 tablet complete protease inhibitor cocktail/50 ml (Roche, Indianapolis, Ind.) 0.7 μg/ml Pepstatin
+
+**1 mM Na3VO4**
+
+Protease inhibitor, Na3VO4, 1 mM NaF and pepstatin fresh were added before lysis.
+
+The plate was snap frozen in liquid nitrogen and store at −80° C. until later use or proceed with lysate harvest.
+
+Before harvesting the lysate, the plate was shaken for 20 min at 4° C. and the lysate transferred to 1.5 mL eppendorf tubes.
+
+The lysates were spun at 15,000 rpm for 30 minutes at 4° C.
+
+Lysates (undiluted) were quantitated with the DC Protein assay (Bio-Rad, Hercules, Calif., Cat#500-0116).
+
+**ERK Phospho/Total MSD Assay:**
+
+MSD (Meso-Scale Discovery, Gaithersburg, Md.) Phospho-, Total ERK1/2 Whole Cell Lysate kit (cat#K11107D-1, V2) was used to test human adipocyte lysates.
+
+The protocol on the package insert included in the kit was followed. 25 ug of cell lysate was added to each well.
+
+Once the assay finished, the % phosphoprotein was determined according to MSD formula:
+
+% phosphoprotein=((2*pERK)/(pERK+Total ERK))*100
+
+An example of this data is shown in FIG. 36.
+
+Binding Proteins with Agonist Activity Similar to FGF-21 in In Vitro Cell-Based Assays
+
+The following summarizes the sequences of FGFR1c/βKlotho bispecific binding proteins that have been shown to have potency similar to, or exceeding that of native FGF-21. The efficacies of these binding proteins varies from 10% to 100% that of native FGF-21. The results of the assays are shown in FIGS. 38-45, 47-50. These proteins were shown to not activate signaling in the absence of β-Klotho (FIG. 46).
+
+**Example 12**
+
+This example describes methods for extending the half-life of binding proteins in vivo.
+
+**A. IgG Binders and Serum Half-Life Extension**
+
+The instant disclosure further provides monomer domains that bind to (e.g., selectively bind) a blood factor (e.g., serum albumin, immunoglobulin, or erythrocytes). In some embodiments, the monomers disclosed herein will bind to a blood factor with an affinity of less than 10−3 M (i.e., binds stronger than an affinity of 10−3 M). In some embodiments, the affinity is less than 10−4 M, 10−5 M, 10−6 M, 10−7 M, or 10−8 M.
+
+In some embodiments, the monomer domains bind to an immunoglobulin polypeptide or a portion thereof.
+
+In some embodiments, the monomer domains bind to human serum albumin or a portion thereof.
+
+Two families (i.e., A domain IgG Families 2 and 3) of monomer domains that bind to immunoglobulin have been identified.
+
+IgG Family 2 comprises the following consensus motif (SEQ ID NO: 698):
+
+Exemplary sequences comprising the IgG Family 2 motif are displayed herein. References to IgG binding monomers or multimers encompass each Family 2 sequence exemplified in the examples.
+
+IgG Family 3 comprises either of the two following consensus motifs (SEQ ID NOS 699-700, respectively, in order of appearance):
+
+Exemplary sequences comprising the IgG Family 3 motif are displayed in the examples. References to IgG binding monomers or multimers encompass each Family 3 sequence exemplified in the examples.
+
+Monomer domains that bind to red blood cells (RBC) or serum albumin (CSA) are described in U.S. Patent Publication No. 2005/0048512, and include, e.g. SEQ ID NOS:701-704:
+
+Also provided herein is a method for extending the serum half-life of a protein, including, e.g., a multimer disclosed herein or a protein of interest in an animal. The protein of interest can be any protein with therapeutic, prophylactic, or otherwise desirable functionality. This method comprises first providing a monomer domain that has been identified as a binding protein that specifically binds to a half-life extender such as a blood-carried molecule or cell, such as serum albumin (e.g., human serum albumin), IgG, red blood cells, etc. The half-life extender-binding monomer is then covalently linked to another monomer domain that has a binding affinity for the protein of interest (e.g., FGFR1c or a different target). This complex formation results in the half-life extension protecting the multimer and/or bound protein(s) from proteolytic degradation and/or other removal of the multimer and/or protein(s) and thereby extending the half-life of the protein and/or multimer. One variation of this use includes the half-life extender-binding monomer covalently linked to a protein of interest. The protein of interest can include a monomer domain, a multimer of monomer domains, or a synthetic drug. Alternatively, monomers that bind to either immunoglobulins or erythrocytes could be generated using the above method and could be used for half-life extension.
+
+The half-life extender-binding multimers are typically multimers of at least two domains, chimeric domains, or mutagenized domains (i.e., one that binds to FGFR1c and/or β-Klotho and one that binds to the blood-carried molecule or cell). Suitable domains include all of those described herein, that are further screened and selected for binding to a half-life extender. The half-life extender-binding multimers are generated in accordance with the methods for making multimers described herein, using, for example, monomer domains pre-screened for half-life extender-binding activity. The serum half-life of a molecule can be extended to be, e.g., at least 1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70 80, 90, 100, 150, 200, 250, 400, 500 or more hours.
+
+A half-life extending monomer domain, such as a monomer that binds to IgG or HSA, can be linked to the N-, C-terminus or both the N- and C-termini of a target molecule (e.g., a FGFR1c/βKlotho binding protein). Exemplary sequences of binding proteins that bind to FGFR1c, βKlotho and IgG include the following (SEQ ID NOS 705-710, respectively, in order of appearance):
+
+**B. Human Serum Albumin Fusions**
+
+In some embodiments binding protein domains are fused to either the N- or C-terminus of human serum albumin. This confers human serum albumin-like half life on the binding protein by targeting the binding protein (as part of the binding protein-human serum albumin polypeptide) to the FcRn scavenger pathway. Additionally, the increase in mass prevents loss of the intact binding protein-human serum albumin from serum by kidney filtration.
+
+Binding protein-human serum albumin fusions can be expressed in yeast or mammalian cells.
+
+A FGFR1c/βKlotho binding protein can be linked to the N- or C-terminus of human serum albumin. The binding protein sequence can be linked directly to the human serum albumin coding sequence, or via an intermediate linking sequence. In this context the binding protein still functions as an agonist, able to induce FGF21-like signaling in a reporter cell assay (see, e.g. FIGS. 51-53). Exemplary sequences of such polypeptides include the following:
+
+In some embodiments any monomer or multimer that binds to FGFR1c or β-Klotho and FGFR1c and β-Klotho can be fused to HAS (SEQ ID NO:715)
+
+The monomers or multimers can be linked to HSA using any of the linkers described in FIG. 9 or any other polypeptide sequence. Joining the selected monomer domains via a linker can be accomplished using a variety of techniques known in the art. Linkers consisting of GGGGSGGGGS (SEQ ID NO: 3), GGGGSGGGGSGGGGS (SEQ ID NO: 4) and GGGGSGGGGSGGGGSGGGGS (SEQ ID NO: 418) have been used to linker C3201 (SEQ ID NO: 359) to HSA (SEQ ID NO: 715) with the resulting molecules retaining FGF-21 like agonist activity (FIG. 52). Exemplary sequences of such polypeptides include the following:
+
+In some embodiments the fusions of binding protein domains and HSA can be expressed in mammalian cells using a variety of techniques known in the art. Expression in mammalian cells can result in addition of carbohydrate moeities to the side chains of certain amino acids. These glycosylation sites can be identified by a number of publically available algorithms. N-linked glycosylation occurs when carbohydrate moeities are added to the side chain of asparigine residues if the asparigine is located in the context of the consensus motif N-X-[S/T] (SEQ ID NO: 1287), where X can be any amino acid except for proline. The recognition motifs for O-linked glycosylation (addition of carbohydrate moeities to the side chains of serine or threonine residues) are less well defined, with O-linked glycosylation occurring preferentially on serine and threonine residues found in the context of proline-rich sequences.
+
+Analysis of binding protein-HSA fusion C3201-HSA (SEQ ID NO: 713) identified an N-linked glycosylation site at N16 and an O-linked glycosylation site at S86. The following dual mutations were made to eliminate these glycosylation sites to improve protein homogeneity.
+
+After these changes have been made the binding protein-HSA fusions retain the same FGF-21-like agonist activity in reporter cell and primary adipocyte assays as the parent binding protein-HSA fusion (FIG. 53).
+
+**C. Fusion to a Monovalent IgG-Fc Domain**
+
+In some embodiments binding protein domains are fused to either the N- or C-terminus of a monovalent human IgG-Fc, consisting of two heavy chain Fcs linked by a (G4S)7 linker (GGGGSGGGGSGGGGSGGGGSGGGGSGGGGSGGGGS) (SEQ ID: 1292). This monovalent human IgG-Fc is described herein and in the associated Figures by the abbreviation “HCFC.”
+
+This confers an extended half life on the binding protein by targeting the binding protein (as part of the binding protein-monovalent human IgG-Fc polypeptide) to the FcRn scavenger pathway. Additionally, the increase in mass prevents loss of the intact binding protein-monovalent human IgG-Fc from serum by kidney filtration.
+
+Binding protein—monovalent human IgG-Fc fusions can be expressed in bacteria, yeast or mammalian cells.
+
+A FGFR1c/βKlotho binding protein can be linked to the N- or C-terminus of monovalent human IgG-Fc. The binding protein sequence can be linked directly to the monovalent human IgG-Fc coding sequence, or via an intermediate linking sequence. In this context the binding protein still functions as an agonist, able to induce FGF21-like signaling in a reporter cell assay (FIG. 54). Exemplary sequences of such polypeptides include the following:
+
+The monomers or multimers described above can be linked to the monovalent human IgG-Fc by the linker ASGGGGSGGGG (SEQ ID NO: 1298). In addition, the monomers or multimers can be linked to the monovalent human IgG-Fc by a using any of the linkers described herein, for example those presented in FIG. 9, or via any other polypeptide sequence, including those commonly regarded as linker sequences (e.g., a (GxS)y sequence, wherein G is glycine, S is serine and x and y are independently any number). Joining the selected monomer domains via a linker can be accomplished using any technique known in the art, including standard peptide chemistry.
+
+**D. PEGylation**
+
+In some embodiments N-terminal sequences are added to the binding protein molecule to permit addition of polyethylene glycol (PEG) moieties via amide linkage chemistry. Addition of PEG increases the hydrodynamic radius of the binding protein, thus reducing excretion via kidney filtration. PEG molecules available for such purposes come in a range of molecular weights and as either linear or branched molecules. Linear or branched PEG molecules of any size can be employed (e.g., 10 kDa, 20 kDa, 30 kDa, 40 kDa, 50 kDa, 60 kDa, 70 kDa, 80 kDa, 90 kDa or 100 kDa.)
+
+Covalently linking PEG to the binding protein via amide linkage chemistry requires an available primary amine. A primary amine can be, e.g., the N-terminal amine or the amine side chain of any lysine residues within the polypeptide sequence. Lysine residues can be engineered out of the polypeptide sequence, being replaced with arginine residues to conserve positive charge and maintain activity. Exemplary sequences where one or more internal lysine residues was substituted with one or more arginine residues, and which maintained biological activity, include the following;
+
+N-terminal sequences that permit addition of one PEG molecule to the N-terminal primary amine include the following;
+
+**MYV**
+
+In various embodiments two PEG molecules can be added to the N-terminal region; one PEG molecule can be added at the N-terminal primary amine, and one PEG molecule can be added at an internal lysine residue. Examples of N-terminal sequences that permit addition of two PEG molecules to a binding protein include the following;
+
+**Cynomolgous Monkey Study**
+
+The binding protein construct designated as C3201-HSA was generated using the methodology disclosed in Examples 1-11. C3201-HSA comprises the binding protein C3201 fused to human serum albumin (HSA), but is referred to in the instant Example and in the associated figures by the shorthand “C3201.” The binding protein component of C3201 is described by the sequence of SEQ ID NO:359, which comprises β-Klotho walked dimer WD29 (SEQ ID NO:312), and FGFR1c mutM09 (SEQ ID NO:297). When fused with the half-life extender HSA (SEQ ID NO:715), C3201 (i.e., C3201-HSA) comprised the sequence of SEQ ID NO:713. C3201 was expressed, purified and characterized as described herein and was studied in vivo in obese cynomolgous monkeys. The experimental design and results are shown below.
+
+**13.1 Study Design**
+
+The study was conducted in obese cynomolgous monkeys. The monkeys were 8-19 years old. Their body weights ranged from 7-14 kg and BMI ranged from 36-74 kg/m2. Monkeys were acclimated for 6 weeks prior to the initiation of compound administration. During the acclimation period, the monkeys were familiarized with study-related procedures, including chair-restraint, subcutaneous injection (PBS, 0.1 ml/kg), gavage (Water, 10 ml/kg), and blood drawn for non-OGTT and OGTT samples. After 4 weeks of training, baseline OGTT and plasma metabolic parameters were measured. 30 monkeys were selected and randomized into two treatment groups to achieve similar baseline levels of body weight, glucose OGTT profiles, and plasma glucose and triglyceride levels.
+
+The study was conducted in a blinded fashion. Vehicle (n=10), C3201-HSA low dose (n=10), C3201-HSA high dose (n=10). Compound was administered weekly at 0.5 mg/kg for the first 2 weeks for C3201-HSA low dose and 2.5 mg/kg for C3201-HSA high dose and at 1 mg/kg for the last 2 weeks for C3201-HSA low dose and 5 mg/kg for C3201-HSA high dose. After 4 injections of C3201-HSA, animals were monitored during an additional 6 weeks for compound washout and recovery from treatments. Food intake, body weight, clinical chemistry and OGTT were monitored throughout the study. Food intake was measured every meal. Body weight was measured weekly. Blood samples were collected on different days in fasted or fed state to measure glucose, insulin and triglyceride levels. OGTTs were conducted every two weeks after the initiation of the study. The day starting the treatment is designated as 0 and the detailed study plan is shown in FIG. 55.
+
+The results presented in this Example represent data collected throughout the 68 days of the study.
+
+**Food Intake**
+
+Animals were fed twice a day, with each animal receiving 120 g of formulated food established during the acclimation period. The remaining food was removed and weighed after each meal to calculate food intake. The feeding times were from 8:00 AM to 8:30 AM (±30 minutes) and then from 4:30 PM to 5:00 PM (±30 minutes). Fruit (apple, 150 g) was supplied to each animal at 11:30 to 12:30 PM (±30 minutes) every day.
+
+Compared with vehicle, C3201-HSA low and high dose (n=10) did not reduced AM food intake in the monkeys (FIG. 56). However, apple food intake was significantly reduced between 7 and 21 days (FIG. 57) and PM food intake was statistically significantly decreased with the low and high dose (FIG. 58). However, the effect diminished and the food intake returned to close to baseline or control levels at 21 days (FIG. 58).
+
+**Body Weight**
+
+Body weight was monitored weekly throughout the study. Over the course of the 4 week treatments, the body weight of animals treated with vehicle remained constant while body weight of animals treated with C3201-HSA (low and high doses) progressively decreased. Body weight returned to baseline by the end of the 6 weeks wash out period (FIG. 59).
+
+**Body Mass Index (BMI), Abdominal Circumference (AC) and Skin Fold Thickness (SFT)**
+
+BMI, AC and SFT were monitored weekly throughout the study, both pre- and post-administration of test compound when the body weight was taken. BMI is defined as the individual's body weight divided by the square of his or her height. SFT is the thickness of a double layer of skin and the fat beneath it as measured with a caliper. BMI, SFT and AC are relatively accurate, simple, and inexpensive measurements of body composition, particularly indicative of subcutaneous fat. Animals treated with vehicle showed relatively stable BMI, SFT and AC throughout the study. Animals treated with C3201-HSA showed decreased levels of BMI, AC and SFT in a dose dependent fashion over the course of the 4 week study, suggesting that C3201-HSA compound resulted in reduction of fat mass. Results for BMI, AC and SFT are shown in FIGS. 60-62, respectively. These measured parameters came back to baseline values at the end of the 6 weeks wash out period.
+
+**Oral Glucose Tolerance Test (OGTT)**
+
+OGTTs were conducted before and after initiation of treatments. Before C3201-HSA injections baseline values for glucose and insulin levels were measured throughout the OGTT (FIGS. 57 and 58, respectively) and were not statistically significantly different between the vehicle and C3201-HSA groups. Post-dose OGTTs were performed every two weeks during the treatment period and after 3 weeks of wash out period. C3201-HSA high dose slightly improved glucose tolerance after 4 weeks of treatment. The animal model used is not glucose intolerant, explaining the modest effects observed (FIG. 63). Insulin levels were statistically significantly decreased in animals treated with C3201-HSA (significance observed at time 0, 30 and 180 during the OGTT performed after 2 weeks of treatment (FIG. 64).
+
+**Fasting and Fed Blood Glucose and Insulin Levels**
+
+Blood was collected from overnight fasted animals or in fed conditions after the AM feeding. In the fasted conditions, blood drawn was conducted weekly 5 days post each injection. In the fed conditions, blood drawn was conducted on days 2, 11, 16, 25 and 46 post first injection. C3201-HSA did not reduce fasting or fed blood glucose levels (FIG. 65). No hypoglycemia was observed in any of the monkeys treated with C3201-HSA. C3201-HSA did, however, result in a statistically significant decrease in fasting and fed plasma insulin levels (FIG. 66).
+
+**Trigylceride Levels**
+
+Measurements were made from the same samples collected for glucose and insulin measurements. Triglyceride levels were significantly reduced in animals treated with C3201-HSA when measured in fed conditions (FIG. 67).
+
+**13.8 Conclusions**
+
+In a study conducted in male obese cynomolgous monkeys, animals treated with C3201-HSA showed improved metabolic parameters. Body weight was reduced and body composition was improved. Short-term reduction of food intake was observed and the effect diminished and the food intake recovered to baseline or control levels at 21 days into the study. Fasting insulin and fed triglyceride levels were also reduced by C3201-HSA. Insulin levels measured during OGTT were also improved.
+

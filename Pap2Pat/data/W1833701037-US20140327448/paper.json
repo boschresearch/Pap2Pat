@@ -1,0 +1,116 @@
+{
+    "id": "https://semopenalex.org/work/W1833701037",
+    "authors": [
+        "Young Jun Ko",
+        "Jin Rak Lee",
+        "Il Dong Kim",
+        "Young Taek Jin"
+    ],
+    "title": "A Study on the Condition Monitoring of Transmission Line by On-line Circuit Parameter Measurement",
+    "date": "2013-08-22",
+    "abstract": "An on-line condition monitoring method for transmission line is proposed using electrical circuit theory and IT technology in this paper. It is reasonable that the circuit parameters such as resistance (R), inductance (L), conductance (g) and capacitance (C) of a transmission line expose the electrical conditions and physical state of the line. Those parameters can be calculated from the linear equation composed of voltages and currents measured by synchro-phasor measurement technique at both end of the line. A set of linear voltage drop equations containing four terminal constants ( \u2022 \u2022 \u2022 \u2022 D , C , B , A ) are mathematical models of the transmission line circuits. At least two sets of those linear equations are established from different operation condition of the line, they may mathematically yield those circuit parameters of the line. The conditions of line connectivity including state of connecting parts or contacting parts of the switching device may be monitored by resistance variations during operation. The insulation conditions of the line can be monitored by conductance (g) and capacitance (C) measurements. Together with other condition monitoring devices such as partial discharge, sensors and visual sensing device etc., they may give useful information to monitor out any incipient symptoms of faults. The prototype of hardware system has been developed and tested through laboratory level simulated transmission lines. The test has shown enough evident to put the proposed method to practical uses. Keywords\u2014Transmission Line, Condition Monitoring, Circuit Parameters, Synchro-phasor Measurement.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "ECHNOLOGY of design and manufacturing for the electric power equipment has been much improved, however the fault still occurs in the power system during operation due to the defective parts or deteriorated part of the equipment, so that unexpected large scale power loss and damage on the power equipment are happen from time to time. Nowadays on the other hand, the higher qualities of electricity are required to the consumer therefore higher degree of power system integrity is needed. So that powerful on-line monitoring devices or tools for power system and power equipment are strongly recommended in order to anticipate before the fault or failure of the power equipment.",
+                "The most of the condition monitoring devices up to now are depended on the secondary physical phenomena such as variations of temperature, pressure, level, gas and partial discharge etc., instead of the primary ones such as circuit resistance (R), inductance (L), capacitance (C) and conductivity (g), which directly influence to any electrical and physical phenomena of the power equipment.",
+                "A proposed method is a condition monitoring of the transmission line by measuring four circuit parameters R, L, g and C of the lines. This method could be implemented by a simple computerized operating unit to perform some arithmetical operation and synchronized voltage and current measuring units at both side of the line and communication channel between them. The circuit parameters of the transmission lines by this time, actually has not been measured by on-line measurement during operation, but been only measured by off-line testing or laboratory testing."
+            ],
+            "subsections": [
+                {
+                    "title": "II. ON-LINE CIRCUIT PARAMETER MEASURING",
+                    "paragraphs": [
+                        "When the voltage and current at both ends of the line are measured simultaneously, the following two (1), (2) can be established representing the circuit of the line with four terminal constants ( If two different sets of voltage and currentare measured according to the power flow changes or power system condition variations. They would yield two different set of four terminal equations, so that four terminal constants contained circuit parameters R, L, g, C can be calculated.",
+                        "In order to get the circuit parameters correctly, for each phase in (1), ( 2) are used positive sequence values filtered by symmetrical component filter different degree of the line length (1) and by those equivalent ones and their relations between the parameters and the constants in the following Table I respectively."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "A. Short Distance Line",
+                    "paragraphs": [
+                        "The short distance line means that the both side currents are normally almost same magnitude and phase angle due to the short length of the line; less than 10-20km for aerial line and several km for the underground cable line. The capacitance and conductance between phases can be ignored for the line.  ",
+                        "From the (1), (2) for the short distance line, the sending end current (",
+                        ") is same as the receiving therefore,",
+                        "The resistance (R) and inductance (L) of the line could be simply measured by this equation. wo different sets of voltage and currentare measured according to the power flow changes or power system condition variations. They would yield two different set of four terminal terminal constants for each phase in (1), (2) are used positive sequence values al component filter [2]. According to and (2) can be expressed by those equivalent ones and their relations between the onstants in the following Table I hort distance line means that the both side currents are normally almost same magnitude and phase angle due to the 20km for aerial line and several km for the underground cable line. The capacitance and tween phases can be ignored for the line.",
+                        "From the (1), (2) for the short distance line, the sending end is same as the receiving end current ( "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "B. Medium Distance Line",
+                    "paragraphs": [
+                        "Medium distance is longer than the short distance than about 100km. The magnitude of capacitance conductance (g) are considerable enough so can't be byp Usually \"T\" or \"\u03c0\" equivalent circuit are usable for medium distance lines, \"T\" circuit is adapted in this study From \"T\" equivalent circuit, the following relations and admittance (Y) of the line can be calculated by the (4) as in the 2 nd row on Table I.",
+                        "where is one of the four terminal parameter capacitance of the line."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "C. Long Distance Line",
+                    "paragraphs": [
+                        "The line longer than 100km is represented by hyper functions generally: i.e. 1), (2). In order to calculate the circuit parameters out from them effectively, the following exp (5)-( 7) which are equivalent to the hyperbolic functions, are applied. It has proven that even up to third term of these equations are well represent the long distance line characteristic because of l \u03b3 \u2022 is much less than 1.0 line length is over 100km [4]. 5) and then the line circuit parameters are measured through the following relations.",
+                        "Medium distance is longer than the short distance and less than about 100km. The magnitude of capacitance (C) and",
+                        ") are considerable enough so can't be bypassed. Usually \"T\" or \"\u03c0\" equivalent circuit are usable for medium distance lines, \"T\" circuit is adapted in this study [3].",
+                        "From \"T\" equivalent circuit, the following relations and ) of the line can be calculated by the (4) as in the",
+                        "is one of the four terminal parameters. C is the The line longer than 100km is represented by hyperbolic 1), (2). In order to calculate the circuit parameters out from them effectively, the following expansion (7) which are equivalent to the hyperbolic functions, are applied. It has proven that even up to third term of these equations are well represent the long distance line characteristic less than 1.0 at 60Hz or 50Hz even if the [4].",
+                        "and substituting it to (6) and (7), the line circuit parameters are measured through the "
+                    ],
+                    "subsections": [
+                        {
+                            "title": "III. HARDWARE DEVELOPMENT",
+                            "paragraphs": [
+                                "The proposed condition monitoring system is composed of three components: synchro-phasor measurement unit circuit parameter measurement unit (CMU) and HMI unit. The Fig. 3 shows it's over view of the system configuration.",
+                                "A. Synchro-Phasor Measurement Unit (SMU) Three phase voltages and currents from the metering CTs and PTs are simultaneously sampled at both ends of the line using GPS signals.     The followings are given and known circuit parameters of the equivalent circuit to be tested."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "SMU",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Line resistance(R ) Line inductance(L) Source voltage Load resistance: Case 1 Case 2 Case 3",
+                    "paragraphs": [
+                        ") of the line and sends them to the HMI unit. The unit generates several reporting data such as trends of measured graphic data etc., in order to operator or maintenance engineers can get some condition information of the line. A HMI can accommodate multi lines in a same substation for monitoring several transmission lines using this II briefly shows some technical ERIFICATION TEST AND RESULTS To verify the performance of parameter measuring of the condition monitoring system, laboratory level tests have been carried out using an equivalent circuit (Fig. 4) for short transmission line and \"T\" equivalent circuit (Fig. 5) for medium distance line. But the test for long distance line couldn't be carried out because the equivalent hardware circuit construction is not easy however.",
+                        "The followings are given and known circuit parameters of the equivalent circuit to be tested.",
+                        ":    "
+                    ],
+                    "subsections": [
+                        {
+                            "title": "V. FUTURE APPLICATION AND STUDY",
+                            "paragraphs": [
+                                "If the resistance value of a phase is increased or changed comparing to the other phase's one during operation, the state of the line connectivity of the phase may be abnormal in someplace of the line conductor, connecting parts or contacting parts of the switching devices such as line switch or circuit breakers. The insulation conditions of the line can be monitored by conductance (g), and capacitance (C) variations. If increasing conductance (g) and decreasing capacitance (C) are measured, then it means that the insulation level of some part of the line is going to be deteriorated. Even though the location of abnormal points could not be find out directly, but the electrical conditions of overall of the line are well monitored. Together with other monitoring devices such as partial discharge, sensors, visual sensing devices etc., it will be further useful to get information to find out any incipient symptoms of faults.",
+                                "And also average temperature of the line conductor could be estimated by means of the variation of the line resistance(R) according to thermal characteristic of the line conductor.",
+                                "In order to apply this method to a mutually coupled transmission line, there needs another pair of synchro-phased voltage and current values measured from the mutually coupled parallel line.",
+                                "This monitoring system would be well used for the other equipment such as power transformer, generator and large size motor, in those cases there are no need of synchro-phasor measurement units.",
+                                "For practical use this method to the actual transmission line, it is necessary to take some test run on real transmission line for over a couple of years in order to tune-up and put some adaptive functions."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "VI. CONCLUSIONS",
+                            "paragraphs": [
+                                "In order to carry forward a predictive maintenance idea by finding out the incipient state of the transmission line before the faults, a condition monitoring system using on-line measurement of the circuit parameter has been studied and its hardware system developed and tested.",
+                                "The hardware system components have underwent international standard level of performance test. For provision of commercial use in substation in the near future, the system hardware has been tested from several authorized institutions in Korea and overseas.",
+                                "Verification test for measuring performance has been carried out using the simulated circuits which are equivalent to the transmission lines and shown that the prototype system works as well as expected ones.",
+                                "In order to put it to practical uses, the most important thing is to learn more about the real aspect between the circuit parameters and the conditions of transmission lines by direct experience and field tests."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "ACKNOWLEDGMENT",
+                            "paragraphs": [
+                                "This research work was supported by the KETEP Korea, project No: 2011T100100396."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

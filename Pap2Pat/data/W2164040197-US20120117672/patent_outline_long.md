@@ -1,0 +1,241 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND INFORMATION
+
+- introduce infantile hemangiomas
+- describe characteristics of hemangiomas
+- discuss conventional treatment options
+- limitations of conventional treatment options
+- motivate need for new treatment options
+- highlight importance of patient tolerance
+
+## SUMMARY OF THE INVENTION
+
+- introduce stem cell population from hemangioma
+- describe self-renewing stem cells
+- characterize tumor sphere formation
+- enrich for cells expressing CD133 or SALL4
+- culture cells in vitro without serum
+- differentiate into endothelial-like tissue
+- screen agents modulating cell proliferation
+- determine effect of test agent on stem cells
+- use xenograft transplanted in non-human animal
+- determine immunohistochemical profile
+- generate global maps for SALL4 promoter binding
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define scope of invention
+- describe terminology used
+- explain singular forms
+- define technical terms
+- describe angioma
+- classify congenital hemangiomas
+- describe nevus flammeus hemangioma
+- describe cavernous hemangioma
+- describe infantile hemangioma
+- describe histopathology of hemangiomas
+- propose stem cell disease model
+- describe classical tumor model
+- describe alternative tumor model
+- explain involution of hemangiomas
+- describe limitations of current understanding
+- introduce need for cell line or mouse model
+- describe identification of stem cells
+- define stem cell
+- describe tumor sphere formation
+- evaluate cells for tissue-specific markers
+- describe SALL4 and CD133 markers
+- define enriched population of stem cells
+- describe isolation of stem cells
+- describe immortalization of stem cells
+- define self renewal capacity
+- describe differentiation capacity
+- characterize stem/progenitor cells
+- describe analysis of stem/progenitor cells
+- describe culture medium
+- describe culture conditions
+- describe use of stem cells for testing angiogenic inhibitors
+- describe screening methods for new drugs
+- describe method of screening test agents
+- describe use of tumor spheres as xenografts
+- describe in vivo proliferation of cells
+- describe non-human animal containing xenograft transplant
+- describe treatment of infantile hemangiomas
+- describe co-administration of angiogenesis inhibitors
+- describe observation of involution
+- describe screening agents that modulate self renewal/differentiation capacity
+- describe method of screening agents that reduce SALL4 expression
+- describe VEGF-induced differentiated cells
+- suggest differential sensitization treatment
+- outline method for screening agents
+- describe determination of differentiation
+- list first agents for inducing differentiation
+- list second agents for modulating properties
+- describe combination therapy
+- outline administration methods
+- describe pharmaceutical formulations
+- outline oral administration
+- outline topical administration
+- outline parenteral administration
+- describe injectable formulations
+- describe suppository formulations
+- outline topical gel, spray, ointment, or cream formulations
+- describe transdermal device administration
+- outline emulsion formulations
+- describe oily phase of emulsions
+- outline fat or oil selection
+- describe genetic modification of stem cells
+- outline methods for introducing vectors into cells
+- describe transformation of cells
+- outline viral transduction methods
+- describe adenoviral vectors
+- outline non-viral delivery methods
+- describe DNA-ligand complexes
+- describe lipofection
+- describe liposome construction
+- describe genetically modified stem cells
+- motivate tissue culture protocols
+- summarize DNA or RNA isolation methods
+- define sample
+- describe total RNA isolation
+- describe mRNA isolation
+- describe target polynucleotide derivation
+- summarize restriction fragment analysis
+- describe RNA abundance modification methods
+- define ribozymes
+- describe ribozyme methods
+- define antisense
+- describe antisense molecules
+- define RNAi
+- describe RNAi mechanism
+- describe RNAi optimization
+- describe RNAi homology requirements
+- describe base-pairing in RNA
+- define hybridizing and annealing
+- describe dsRNA complex generation
+- describe oligonucleotide synthesis
+- define amplification
+- describe polypeptide measurement methods
+- define antigenic determinant
+- introduce stem cells
+- describe molecular biology techniques
+- explain nucleic acid hybridization analysis
+- describe dot blot hybridization
+- describe sandwich hybridization
+- discuss signal amplification methods
+- introduce microarrays
+- describe microarray fabrication methods
+- discuss spotting technologies
+- describe ink-jet technology
+- discuss printing on glass plates
+- describe high-density oligonucleotide arrays
+- discuss metal and metal oxide surfaces
+- describe self-assembled monolayers
+- discuss microstructured monolayers
+- describe detection methods
+- introduce transcript arrays
+- describe transcript array production
+- discuss labeling methods
+- describe sequencing by hybridization
+- discuss probe synthesis methods
+- describe linker groups
+- introduce devices and computer systems
+- discuss VLSIPS technology
+- describe hybridization conditions
+- discuss specific hybridization
+- introduce polynucleotide probes
+- describe microarray applications
+- discuss disease diagnostics
+- describe treatment regimens
+- discuss drug discovery and development
+- describe toxicological and tumorgenicity studies
+- discuss forensics
+- describe pharmacogenomics
+- introduce disease progression monitoring
+- discuss treatment efficacy monitoring
+- describe animal model applications
+- discuss gene expression data analysis
+- describe drug screening methods
+- discuss molecular mode of action determination
+- describe microarray data analysis
+- discuss comparative gene expression analysis
+- describe electronic analysis methods
+- discuss proteome analysis
+- describe antibody microarrays
+- discuss disease monitoring applications
+- describe treatment optimization methods
+- define expression profile
+- motivate diagnostic profile
+- explain response profile
+- describe genetic level modifications
+- describe RNA level modifications
+- describe protein level modifications
+- describe protein activity modifications
+- introduce microarray technology
+- describe two-color fluorescence labeling
+- motivate gene expression profiles
+- describe Terskikh's method
+- compare invention with Terskikh's method
+- list prior art DNA chip methods
+- describe Brown's method
+- motivate microarrays of genomic DNA
+- describe chromatin immunoprecipitation
+- describe promoter tiling arrays
+- describe custom microarray design
+- describe hybridization and scanning
+- describe data analysis
+- motivate anti-stem cell antibodies
+- describe method for raising antibodies
+- describe monoclonal antibody production
+- describe humanized antibodies
+- describe XENOMOUSE technology
+- introduce hemangioma derived stem cells
+- motivate drug development targets
+- describe antibody-based methods
+- explain XENOMOUSE technology
+- describe raising immune response
+- genetically engineer stem cells
+- use stem cells as vaccine
+- stimulate antigen presenting dendritic cells
+- generate anti-hemangioma derived stem cell antibodies
+- describe adenoviral vectors
+- identify biological pathways
+- screen drugs for binding to receptors
+- describe reporter polypeptides
+- detect signal from reporter polypeptides
+- describe high throughput screening
+- synthesize test compounds on solid substrate
+- react test compounds with stem cells
+- detect bound stem cells
+- describe automation software and machinery
+- measure response of target cells
+- compare detectable signal to control cells
+- perform subtraction analysis
+- describe genetically modified stem cells
+- use genetically modified stem cells in HTS
+- describe detectable signal from genetically modified stem cells
+- provide kit for identifying agent for reducing hemangiomas
+- provide kit for determining activity level of polynucleotide or protein
+
+## EXAMPLES
+
+### Example 1
+
+- isolate tumor spheres
+- culture and grow tumor spheres
+- test self-renewal capacity
+- test differentiation capacity
+- demonstrate lineage commitment
+- express stem cell markers
+- suggest potential uses
+
+### Example 2
+
+- perform ChIP assay
+- analyze histone modifications
+

@@ -1,0 +1,197 @@
+{
+    "id": "https://semopenalex.org/work/W4353114847",
+    "authors": [
+        "Renata Khasanova",
+        "Felix Schmidt",
+        "Ken\u2010yu Kobayashi",
+        "Matteo Casserini",
+        "Arno Schneuwly"
+    ],
+    "title": "Unlocking Layer-wise Relevance Propagation for Autoencoders",
+    "date": "2023-03-21",
+    "abstract": "Autoencoders are a powerful and versatile tool often used for various problems such as anomaly detection, image processing and machine translation. However, their reconstructions are not always trivial to explain. Therefore, we propose a fast explainability solution by extending the Layer-wise Relevance Propagation method with the help of Deep Taylor Decomposition framework. Furthermore, we introduce a novel validation technique for comparing our explainability approach with baseline methods in the case of missing ground-truth data. Our results highlight computational as well as qualitative advantages of the proposed explainability solution with respect to existing methods.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Autoencoders (Rumelhart et al., 1986) are neural network architectures that play a fundamental role in unsupervised machine learning. They are frequently used in various tasks such as anomaly detection, machine translation and image processing (Bank et al., 2020). Autoencoders are designed to encode the input data into a compressed, meaningful representation. This representation is then decoded in such a way that the reconstruction is as close as possible to the input data. Specifically, Autoencoders aim to minimize a reconstruction error, which is computed with a loss function based on the difference between the original input and its reconstruction. By minimizing this error, Autoencoders learn the informative representation of the data. Nonetheless, despite their good performance and widespread usage across different applications, they are hardly interpretable due to their intrinsic nonlinearity. In particular, when an Autoencoder fails to properly reconstruct a given input, understanding the rationale behind this failure is challenging. To that end, the addition of explainability capabilities to these types of models is highly desirable.",
+                "One way to explain an Autoencoder output for a given sam-* Equal contribution 1 Oracle Labs, Switzerland. Correspondence to: Kenyu Kobayashi <kenyu.kobayashi@oracle.com>.  Here, the baseline method focuses not only on the damaged area of the hazelnut, but on the borders of the object as well. Our approach, on the other hand, focuses attention on the damaged area.",
+                "ple can be achieved by using attribution-based explainability methods (Linardatos et al., 2021). The main idea of these approaches is to explain machine learning models by assigning a relevance score to each input feature depending on its importance for the model's prediction. Such scores can be computed by measuring the reconstruction error of each individual feature. But depending on the approach used, additional noise may appear in explanations, as depicted in Figure 1 (c). This happens due to the fact that relevance scores are being assigned without taking into consideration any contextual information. Another approach is to modify the original input and measure the impact of such modifications on the model's output (Lundberg & Lee, 2017;Ribeiro et al., 2016). Then, high relevance scores are assigned to features that have a significant impact.",
+                "However, in this case the number of perturbations to reli-ably compute such scores increases exponentially with the dimensionality of the input data. Hence, this process may get computationally expensive. Other types of explainability approaches (Bach et al., 2015;Shrikumar et al., 2017;Sundararajan et al., 2017) leverage the knowledge of architecture configurations and often come with computational benefits.",
+                "In this work we propose an explainability approach specific to Autoencoders by extending the Layer-wise Relevance Propagation (LRP) framework (Bach et al., 2015). Figure 1 (d) illustrates an example of an explanation generated with our method when applied to a convolutional Autoencoder model. This model is trained to reconstruct images of a non-damaged sample object from the MVTec dataset (Bergmann et al., 2019a). Figure 1 shows that our explanation (d) is more focused on the damaged part, while the reconstruction error-based one (c) focuses not only on the damaged area but also on borders and background noise.",
+                "Our contribution is two-fold:",
+                "\u2022 we propose a novel LRP-based explainability approach specific to Autoencoders, that allows the propagation of reconstruction errors and assignment of relevance scores to input features;",
+                "\u2022 in order to assess explainability methods' performance, we introduce a self-supervised validation approach. The latter produces artificial explanation labels, which can be used for evaluation."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Related Work",
+            "paragraphs": [
+                "Attribution-based explanation methods (Linardatos et al., 2021) have recently gained popularity in the field of explainable artificial intelligence (Samek et al., 2021). The main idea of such approaches is to compute relevance scores for each input feature. The scores reflect the features corresponding importance with respect to the model's decision-making process. Formally, given an input feature vector x = [x 1 , . . . , x N ] \u2208 R N and a model output y, the attribution-based approach assigns relevance scores R = [R 1 , ...R N ] \u2208 R N to features, where R i designates the contribution of x i to the output y of the model.",
+                "We distinguish between two classes of attribution-based methods: perturbation-based methods (Lundberg & Lee, 2017;Ribeiro et al., 2016) and backpropagation-based methods (Shrikumar et al., 2017;Sundararajan et al., 2017;Bach et al., 2015). While the former are modelagnostic and, therefore, applicable to any black-box model, the latter are model-specific and exploit the underlying structure of the model to provide explanations. Modelagnostic perturbation-based methods (e.g. SHAP (Lundberg & Lee, 2017;Antwarg et al., 2019;Kim et al., 2021), LIME (Ribeiro et al., 2016)) typically analyze output values of multiple modifications of the original input feature vector, and assign relevance scores to features based on this analysis. Therefore, they are computationally expensive (Ullah et al., 2020), which makes them unsuitable for tasks with a high input dimensionality. On the other hand, backpropagationbased approaches (Ancona et al., 2018) exploit the structure of predictive models to compute relevance scores in a single backward pass, which makes them computationally efficient. As these methods are model-specific, their field of application is constrained, as they require knowledge of the architecture. Shrikumar et al. (2017) and Sundararajan et al. (2017) propose to estimate relevance scores based on differences between the model's output for a given sample and the model's output for what they call a baseline input. Such a baseline input needs to be selected with information on the application domain. For example, in an image classification task, a black image may be selected as a baseline to represent the absence of any information. Therefore, the main limitation of such an approach is the requirement of domain-specific knowledge. In contrast, the LRP approach (Bach et al., 2015;Montavon et al., 2019) is designed for neural network architectures and directly propagates the model's output backward using propagation rules designed for various layer types, such as fully-connected, pooling, convolutional layers, etc. (Samek et al., 2017;Gholizadeh & Zhou, 2021;Bohle et al., 2019). The LRP explainability approach is typically applied to supervised tasks (Arras et al., 2017;Eitel et al., 2019;Bohle et al., 2019;Agarwal et al., 2021) and to, the best of our knowledge, no LRP propagation rule for the reconstruction loss function of Autoencoders exists. Therefore, in this work, we propose such a rule that permits propagation of an Autoencoder's reconstruction error throughout the network to assign relevance scores to the corresponding input feature vector."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Novel LRP Rule for Autoencoders",
+            "paragraphs": [
+                "In this section, we start by introducing Layer-wise Relevance Propagation (LRP), which we leverage for the explanation of Autoencoders. Then, we describe the challenges of applying this technique to neural networks with a reconstruction layer. Further, we briefly introduce the key concepts of the Deep Taylor Decomposition method (DTD) (Montavon et al., 2017) that we use to extend the LRP approach and make it applicable to Autoencoders. Finally, we present our novel LRP rule, which allows us to explain the reconstruction error of Autoencoders."
+            ],
+            "subsections": [
+                {
+                    "title": "Layer-wise Relevance Propagation",
+                    "paragraphs": [
+                        "Layer-wise Relevance Propagation (Bach et al., 2015) is an explainability method designed for neural networks to pro-duce relevance scores for each feature of an input sample x. LRP assigns these scores by backward propagation from the model's output y = f (x) to the input features. First, the approach assigns a relevance score to the output of the model R o = f (x) = y. Then, R o is redistributed to the neurons from the reconstruction layer l, according to the LRP rule designed for the corresponding layer type. Further, relevance scores of those neurons are in turn propagated to the neurons from layer l -1. Thus, this procedure is repeated until the input layer of the network is reached.",
+                        "All LRP rules satisfy a conservation property (Bach et al., 2015), which is defined by two equations. The first equation states that the sum of the relevance values received by a neuron should be equal to its own relevance value:",
+                        "where R",
+                        "(l)",
+                        "i is the relevance value assigned to neuron i in layer l, R (l,l+1) i\u2190k is the relevance value that is distributed from neuron k in layer l + 1 to the neuron i in layer l. The second equation states that the sum of the relevance values distributed by a neuron should be equal to its own relevance value: R",
+                        "where",
+                        "is the relevance score of the neuron k in layer l + 1.",
+                        "Eq. (1) and Eq. ( 2) lead to the following layer-wise conservation property:",
+                        "and the following global conservation property:",
+                        "where i and k denote neurons' indexes in the layers l and m respectively. These properties define that the sum of relevance scores of all neurons for a given layer is constant and equal to the relevance score, which is assigned to the output of the model R o = f (x) = y. This global conservation property defined in Eq. ( 4) is desirable for any explainability method that assigns relevance scores to input features (Bach et al., 2015).",
+                        "Using the conservation property, Bach et al. (2015) define what they refer to as the basic propagation rule, which works for both convolutional and fully-connected layers, as follows: R",
+                        "where a i is the activation value of neuron i, w ik is the weight of a link between the i-th and k-th neurons in layers l and l + 1 respectively. This rule produces an explanation that is equivalent to the gradient multiplied by the input. Further, Montavon et al. (2019) propose additional rules, such as the LRP-rule to absorb the relevance values of neurons with weak activations and the LRP-\u03b3 rule to favor the effect of positive over negative contributions. We refer the reader to the work by Montavon et al. (2019) for more information about these rules."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Autoencoders",
+                    "paragraphs": [
+                        "Autoencoders are used in various tasks such as anomaly detection or image processing. These networks encode an input feature vector x into a latent representation and then predict the reconstruction of the input, denoted here as x.",
+                        "Typically, a reconstruction loss function e(x, x) is used to optimize the parameters of an Autoencoder model. One common example of such a loss function is the L 2 loss:",
+                        "where x i and xi are the Autoencoder's input and output features, respectively, and m is the dimensionality of the input feature vector x. Another common example is the L 1 loss:",
+                        "We propose a method to extend the LRP explanation approach for Autoencoders to such reconstruction losses. The rule from Eq. ( 5) is not applicable to this case, as e(x, x) depends on both, the output and input layers of the Autoencoder. Thus, we propose a novel LRP rule that permits to propagate the reconstruction error to the Autoencoder's output layer."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Deep Taylor Decomposition",
+                    "paragraphs": [
+                        "Deep Taylor Decomposition (DTD) (Montavon et al., 2017) is a similar back-propagation explainability approach that assigns relevance scores to the input features. However, while LRP rules are typically designed heuristically, DTD derives rules by using Taylor expansions. It is interesting to note that heuristically-defined LRP rules for some types of layers have a DTD interpretation (Montavon et al., 2019). Moreover, other works (Arras et al., 2019;Samek et al., 2017) combine LRP and DTD rules to propagate relevance scores through an ML model.",
+                        "DTD is inspired by the divide-and-conquer paradigm, leveraging the fact that a deep neural network's function can be decomposed into a set of simpler sub-functions. These subfunctions are defined on single neurons, therefore, they can be easily expanded and decomposed using Taylor expansion. This permits the definition of a propagation rule for each neuron. Then, by aggregating multiple rules, we propagate the relevance from the output of the network to the inputs.",
+                        "More formally, to obtain these decompositions we use the following two steps (Montavon et al., 2017):",
+                        "\u2022 we assume that relevance R (l) j of neuron j in layer l depends solely on the set of neurons s j = {i 1 , i 2 , . . .} from the previous layer l-1 and, therefore, there exists a function f Rj (s j ) = R (l) j ;",
+                        "\u2022 we identify a set of neurons sj = \u01291 , \u01292 , . . . which are referred to as root points and serve as the starting points to compute Taylor expansion.",
+                        "For any input feature vector x, in order to choose a root point sj , we search for a set of neurons that satisfies the two following conditions (Montavon et al., 2017):",
+                        "1. f Rj (s j ) = 0. This condition is necessary to obtain a decomposition that fully redistributes the relevance across the neurons {i 1 , i 2 , . . . };",
+                        "2. sj lies in the vicinity of \u015dj under a desired distance metric (e.g. L 2 ). Here, \u015dj is the value of neurons s j in layer l -1 when a sample x is propagated through the network.",
+                        "Such a root point is usually obtained as a solution of an optimization problem, by minimizing the following objective:",
+                        "where \u039e is the input domain of f Rj (i.e. the set of possible neurons that influence neuron j).",
+                        "Using the Taylor decomposition, we can then represent R (l) j = f Rj (s j ) as follows:",
+                        "where \u03b5 j denotes the first order Taylor residual, | sj indicates that the derivative is evaluated at the root point sj and R (l-1,l) i\u2190j is the relevance that neuron i in layer l -1 receives from neuron j in layer l. Here, the decomposition is done only at the first-order, because the second-and higher-order terms would involve complex combinations of several neurons that propagate relevance, and, therefore, it is more challenging to derive such propagation rules (Montavon et al., 2017).",
+                        "By combining Eq. (3) and Eq. ( 9), we can finally compute the relevance score of neuron i in the layer l -1 for a chosen root point as follows:",
+                        "Montavon et al. ( 2017) suggest to choose root points based on the layer's input domain. For example, when calculating relevance scores for pixels, they propose to constrain the values of root points to be in the range between 0 and 255. Following Eq. ( 10), other works (Montavon et al., 2019;Arras et al., 2019) describe different propagation formulas for various types of layers."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "LRP Rule for Reconstruction Loss Functions",
+                    "paragraphs": [
+                        "In this section, we describe a novel LRP rule that we can use to explain an Autoencoder's reconstruction error. This rule allows the propagation of a relevance score from the reconstruction error R e = e(x, x) to neurons from the Autoencoder's output layer. The proposed rule can be combined with other rules used for the remaining layers of the Autoencoder, depending on their types. Therefore, relevance scores can be seamlessly propagated all the way from the reconstruction error to the input feature vector.",
+                        "As we generate explanations for a given sample, we can assume without loss of generality that our reconstruction error e depends solely on the output neurons of the Autoencoder's output layer x = {x 1 , x2 , . . . } and thus we treat the input feature vector x as a constant. We then derive an LRP rule for the Autoencoder's reconstruction error by decomposing the function f Re (x) = R e = e(x)",
+                        "In order to perform such a decomposition we need to choose a root point x = {x 1 , x2 , . . . } for which f Re (x) is equal to zero. Based on the above assumptions, the only solution is the input feature vector, which is also the optimal solution for Eq. ( 8).",
+                        "We then perform the Taylor decomposition as follows:",
+                        "where reconstruction error e(x) = 0 as x is the root point; H e is the Hessian matrix of the reconstruction loss function f Re ; and \u03b5 e is the Taylor residual. Note that \u03b5 e = 0 for both the L 2 and L 1 loss functions introduced in Sec. 3.2. Below we describe in detail the derivation of the LRP rule for both L 2 and L 1 reconstruction functions.",
+                        "L 2 reconstruction function. It should be noted that we rely on the second-order Taylor decomposition for the L 2 loss function as its first-order derivative is equal to zero, and all the second-order terms involving multiple variables are equal to zero. Thus, we decompose f Re (x) for the L 2 reconstruction loss from Eq. ( 6) as follows:",
+                        "where xi and xi are the elements of the root point and reconstructed feature vectors correspondingly with dimension m; e is the reconstruction error; l and l e denotes the Autoencoder's output and reconstruction error layers correspondingly; and R (l,le)",
+                        "i\u2190e is the relevance score that is propagated from the reconstruction error e to the neuron i in the Autoencoder's output layer l.",
+                        "As each neuron i in the Autoencoder's output layer receives relevance only from reconstruction error e, we derive the propagation rule for the L 2 loss as follows:",
+                        "L 1 reconstruction function. Similarly, we derive a propagation rule for the L 1 loss:",
+                        "Here, the second-order term is equal to zero, while i 1 m |x i -xi | represents the first-order term of the Taylor decomposition. More precisely, the first-order term is defined everywhere except at the singularity xi = xi , where we can assume the derivative to be zero.",
+                        "It is important to mention that for any input sample x both of these propagation rules preserve the conservation property: (15)",
+                        "The proposed propagation rules for the L 1 and L 2 reconstruction loss functions allow us to extend the LRP approach to Autoencoders. In the following section we provide a detailed analysis of the proposed LRP rule by applying it to two challenging anomaly detection tasks."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experiments",
+            "paragraphs": [
+                "In this section, we describe the results of our experiments with Autoencoders for anomaly detection. We evaluate the proposed approach for Autoencoders on a SQL workload log and on image datasets. First, we assess the performance of the proposed explainability algorithm on anomalies from a SQL workload. The workload is unlabelled, which makes it challenging to evaluate explainability approaches. Therefore, we introduce a self-supervised validation method based on corruption. Second, we generate and visualize explanations for images to explain the anomalous parts of objects detected by a convolutional Autoencoder."
+            ],
+            "subsections": [
+                {
+                    "title": "Anomaly Detection on SQL Logs",
+                    "paragraphs": [
+                        "For our first experiment, we use a dataset that consists of SQL workload logs to train an anomaly detection system for database intrusion detection. The underlying model is a vanilla Autoencoder-based anomaly detector that we train in an unsupervised manner with the goal of memorizing regular database activity. The dataset contains approximately 10M training, 5M validation and 10M test samples. The trained Autoencoder produces small reconstruction errors for test samples similar to training samples. Anomalous user behaviour results in an erroneous reconstruction of the input. An anomaly score is computed based on the L 2 distance between Autoencoder's input and reconstruction. The scores are normalized between 0 and 1.",
+                        "Each dataset's sample is composed of textual and numerical features which, among others, encode various information related to the user, session, and SQL statements. Various standard embedding techniques are applied to encode the 21 features. Explainability algorithms assign a relevance score to each of these embedded features.",
+                        "We compare the three following methods:",
+                        "\u2022 Residual explanation, which uses the L 2 distance between the individual original and reconstructed features as explanations,",
+                        "\u2022 SHAP (Lundberg & Lee, 2017), a model-agnostic explainability approach,",
+                        "\u2022 our approach (see Sec. 3) using the L 2 loss.",
+                        "In our experiment, we use the kernel SHAP implementation with 1000 re-evaluations of each prediction and 755 as the background dataset size. For our approach, we use the proposed L 2 propagation rule for the reconstruction layer and the z + rule (Montavon et al., 2019) for all fully-connected layers of the Autoencoder except for the first layer, for which we apply the w 2 rule.",
+                        "The purpose of our validation approach is two-fold. First, we quantify the performance of an explanation method to prove that the delivered explanations are satisfactory. Second, we discuss time complexity and compare the computational performance of different explainability methods.",
+                        "Quantitative comparison. We quantify the performance of an attribution-based explanation method through a validation method based on corruption. Our approach consists in modifying one input feature of a clean and randomly chosen sample. The modification changes the feature's value in such a way that the Autoencoder produces a high anomaly score for the modified sample. Thus, we obtain a ground truth that indicates the feature causing the high anomaly score of the given sample, and permits the computation of a validation metric to compare different explainability approaches.",
+                        "For the input feature modification we use the following three corruption strategies: null, random and adversarial.",
+                        "The null corruption method changes the feature's value to 0; the random corruption approach modifies the feature's value to a random value sampled from a uniform distribution between 0 and 1 (that is, the same range as the initial feature values). Finally, the adversarial corruption method updates the feature's value in such a way that reconstruction of the given feature does not increase while the the reconstruction error of other features increases. Further details are given in the Appendix.",
+                        "Then, we generate K = 100 anomalous samples with the aforementioned corruptions. All these generated samples have anomaly scores greater than a threshold T . We set T = 0.3, T = 0.5 and T = 0.3 for the adversarial, random and null corruptions, respectively. We have chosen these values empirically, based on the difficulty for the corruption method to produce datapoints with an anomaly score exceeding the given threshold. In practice, we expect explanation methods to achieve better performance when T is large, as the corrupted feature's contribution to the anomaly becomes large. Conversely, when T is lower, the validation approach leads to assessing an explanation method's sensitivity to identifying a corrupted feature with a lower contribution to the anomaly.",
+                        "To compare different approaches we use a recall metric that we calculate as follows. We define an explanation to be correct when a corrupted feature is among the m \u2208 {1, . . . , M } features with the highest anomaly scores, where M is the number of features. Otherwise, we define an explanation to be incorrect. We calculate the recall metric based on generated validation samples recall = N + /(N + + N -), where N + and N -denote the number of correct and incorrect explanations respectively.",
+                        "Figure 2 illustrates the recall metric defined above for the null, random and adversarial corruption validation datasets correspondingly. The experiment shows that the Residual explanation achieves a good validation score on the null and random corruption datasets. However, the performance on the more challenging adversarial corruption dataset is poor. On the other hand, SHAP and our method achieve good performance on all datasets. This shows that our proposed approach and SHAP are more generic and succeed in explaining a broader range of anomalies.",
+                        "Time Complexity. Even though SHAP produces accurate results, our method delivers explanations of comparable quality with substantially lower time complexity. This is explained by the fact that our approach only requires one forward and backward pass to compute relevance scores, while SHAP requires a forward pass for each generated perturbation and for each re-evaluation. In our experiments, using the parameters described at the beginning of this Section, the execution time required to compute explanations is three to four orders of magnitude faster with our method compared to SHAP.",
+                        "We conclude that SHAP and the proposed approach produce more accurate results compared to the Residual explanation. Nonetheless, as our method is several orders of magnitude faster than SHAP, our approach is more suitable for timesensitive applications."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Anomaly Detection on Image Dataset",
+                    "paragraphs": [
+                        "For our visual anomaly detection experiments we use images from the MVTec dataset (Bergmann et al., 2019a), which contains several objects with various types of damage. For each of these objects we train a convolutional Autoencoder model as suggested by Bergmann et al. (2019b). The training set consists of images of non-damaged objects and the test set contains images of damaged objects. In this case the Autoencoder is expected to show high reconstruction error for the damaged parts of objects in the test set. In this experiment, we provide explanations for this reconstruction error and compare them with ground-truth images of damaged areas that are also provided in the dataset.",
+                        "We convert each image to gray-scale, apply a Gaussian filter with kernel size 3 and \u03c3 = 0.5 and resize to 128 \u00d7 128 pixels. To avoid overfitting, we use 10% of the training dataset as validation. We also preprocess the training and validation data by applying random rotations and flips to the images. Using this augmentation method, we generate 10000 training samples and 1000 validation samples for each class of objects. We use a similar architecture as the one proposed by Bergmann et al. (2019b), with the following modifications:",
+                        "\u2022 all leaky ReLU activations are replaced with ReLU activations;  \u2022 convolutional kernels sizes are modified.",
+                        "Appendix A provides more details about the exact model architecture.",
+                        "To evaluate our explanations, we rely on the precisionrecall metric. We compute this metric separately for the various damaged object groups. For each group we set anomaly thresholds: T = (t 1 , . . . , t i , . . . , t 1000 ) in range (min(R j ), max(R j )), where min(R j ) and max(R j ) are minimal and maximal pixel relevance values across all pixels and all images of the given group j. Any pixel that is assigned a relevance value higher than t i is considered as damaged. For each threshold t i , we calculate precision and recall values by taking into account all pixels that have relevance values higher than t i . Further, we compute the average precision (AP) metric by calculating the area under the precision-recall curve.",
+                        "Table 1. AP metric for object classes from the MVTec dataset (Bergmann et al., 2019a). Here we compare the L1 and L2 Residual explanation methods with the proposed approach for L1 and L2 reconstruction functions. We rely on two baseline methods to evaluate the performance of our convolutional Autoencoder's explanation ap-proach, which we denote as Residual-L 1 and Residual-L 2 . These methods calculate reconstruction error as (x -x) 2 and |x -x| respectively. Similarly, for our approach we investigate the following two settings, when the reconstruction error is computed using either L 1 or L 2 losses and propagated using the LRP-rules from Eq. ( 13) and Eq. ( 14) respectively. We refer to these methods as Ours-L 1 and Ours-L 2 . In both these methods we rely on the z + -rule for the relevance propagation through convolutional layers, and z-box-rule for the first layer.",
+                        "Table 1 shows a comparison of AP for several object classes from the MVTec dataset (Bergmann et al., 2019a). On average, our approaches produce higher scores compared to the baseline methods. We also notice that some damages are harder to explain, e.g. the transistor object class with the cut lead damage. The main reason is that the Autoencoder model is not able to reach good reconstruction accuracy, which consequently lowers the performance for all explainability approaches.",
+                        "Furthermore, Figure 3 illustrates explanations that are produced by the proposed approach and baseline method. We notice that our explanations focus on the important part of the object and its neighbouring area that belongs to the object. Also, it does not assign much importance to the background pixels. In contrast, the Residual explanations highlight various parts of images, which are primarily borders and are not necessarily relevant to the damaged part of the object. Additional examples to highlight the preceding statement are provided in the Appendix 4.",
+                        "Finally, we analyze images, on which Residual explanations outperform our approach with respect to the AP metric. We notice that the score does not always reflect the quality of produced explanations. For example, the samples of objects with the hazelnut class, which is depicted by Figure 3, have pixels with high relevance scores outside of the ground truth area. However, all of those pixels are located next to the correct damaged parts of the object. In contrast, the Residual explanation highlights some object borders, which are not relevant to the damages, but the amount of highlighted pixels is smaller outside the ground truth area, which results in a high AP metric. Therefore, the AP metric might not be ideal for evaluation of explainability approaches. While developing an appropriate metric is out of the scope of this work, it is an interesting direction for future research."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this work, we have proposed a principled way to extend an LRP explainability technique for Autoencoders us-ing Deep Taylor Decomposition (Montavon et al., 2017). Furthermore, we have suggested a self-supervised validation technique for attribution-based explanation methods by leveraging various corruption methods. Finally, our experiments show that the proposed method outperforms the Residual explanation baseline method and shows comparable performance to model-agnostic approaches such as SHAP (Lundberg & Lee, 2017), while being several orders of magnitude faster."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A. Adverserial Corruption",
+            "paragraphs": [
+                "A commonly used approach to generating adversarial examples is the Iterative Fast Gradient Sign Method (I-FGSM) (Kurakin et al., 2017), which uses the Fast Gradient Sign Method (FGSM) (Goodfellow et al., 2015). I-FGSM applies FGSM multiple times with a small step size to maximize the output of a loss function L given x adv , and clips values of intermediate results after each step to ensure that they are in an -neighbourhood of the original datapoint x:",
+                "x adv 0 = x (16)",
+                "where Clip x, indicates the resulting datapoint is clipped within the -ball of the original datapoint x, N is the iteration number, \u03b1 is the step size, and L x adv N is the model's loss on x adv N . Adversarial corruption extends I-FGSM to generate anomalous datapoints. Notably, the method corrupts one randomly selected feature of a non-anomalous datapoint. By definition, such a datapoint has a low reconstruction error. The corruption aims to maximize the reconstruction error of the resulting datapoint for all features except the corrupted one. For the latter, the error is minimized. To that end, we make the following adaptations to the I-FSGM:",
+                "1. We define the loss function to be maximized in this context. We define x i as the i-th feature of x, and x c the feature to be corrupted. Furthermore, we define feature x i 's reconstruction error as \u03c6(x, i) = (x i -xi ) 2 , where xi is the reconstruction of feature x i . The goal is to minimize x c 's reconstruction error, while maximizing the ones from x i , for all i = c. This translates as maximizing the following loss function:",
+                "where x designates the Autoencoder's input feature vector, c is the index of the feature to be corrupted, m is the size of x, \u03b8 is the weight controlling the extent to which the x c 's reconstruction error should be minimized relatively to the global optimization objective.",
+                "2. We emphasize the fact that the adversarial corruption should only modify x c , as the resulting datapoint's anomaly should be caused by x c . Therefore, the updates on x should only concern x c .",
+                "3. We do not require the adversarial example to be in the neighbourhood of the original datapoint x.",
+                "Applying the above points, we reduce Eq. 16 and Eq. 17 to formulate the following adversarial optimization:",
+                "x adv c N +1 = x adv c N + \u03b1 sign \u2207 xc r adv x adv N , c",
+                "where x adv N corresponds to the datapoint x adv after N update steps. Since the updates only concern x c , x adv N is identical to x adv 0 for all features except x c , i.e. x adv i N = x adv i0 , for all i = c. We refer to the above adversarial optimization, which produces x adv given x, as the adversarial corruption.",
+                "Furthermore, to improve results with adversarial corruption we introduce a step size updater, which halves the value of \u03b1 every k updates, if the two following conditions are both met:",
+                "1. The reconstruction error of the corrupted feature \u03c6(x, c) did not decrease; 2. The sum of the reconstruction errors of the non-corrupted features m i=1;i =c \u03c6(x, i) did not increase.",
+                "Lastly, we strongly recommend performing the adversarial optimization on a datapoint which has been subject to random corruption. This enables the initial anomaly score to reach a desired threshold, and experiments show that optimization starting from that regime leads to better results. In that case, the adversarial optimization should be done on the same corrupted feature as the one subjected to random corruption."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.1. Autoencoder Architecture",
+            "paragraphs": [
+                "We use a modified version of a convolutional Autoencoder architecture defined in Bergmann et al. (2019b) "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.2. Examples",
+            "paragraphs": [
+                "In this section we present additional explanations of anomalous samples from the MVTec dataset presented in Sec. 4.2. Figure 4 follows the same schema as Figure 3. "
+            ],
+            "subsections": []
+        }
+    ]
+}

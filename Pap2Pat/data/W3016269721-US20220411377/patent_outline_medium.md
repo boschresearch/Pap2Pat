@@ -1,0 +1,223 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce nitric oxide synthases
+- motivate selective inhibition of nNOS
+
+## SUMMARY
+
+- disclose compounds and pharmaceutical compositions
+- summarize methods of using compounds
+- outline advantages over prior art
+
+## DETAILED DESCRIPTION
+
+- define terms
+- specify meaning of "a", "an", and "the"
+- define "about", "approximately", "substantially", and "significantly"
+- define "include" and "comprise"
+- define "subject in need thereof"
+- introduce chemical entities
+- define "alkyl"
+- define "alkylene", "haloalkyl", "heteroalkyl", "alkenyl", and "alkynyl"
+- define "cycloalkyl", "cycloalkylene", and "partially unsaturated carbocyclyl"
+- define "aryl", "heterocyclyl", "heteraryl", and other terms
+- define subject and disease
+- define effective amount
+- define modulate
+- describe method of inhibiting nitric oxide synthase
+- describe pharmaceutical composition
+- describe administration of compound
+- introduce novel 7-phenyl-2-aminoquinolines
+- describe formula of compounds
+- describe specific embodiments of compounds
+- describe pharmaceutical compositions
+- describe methods of treating disease
+- describe methods of inhibiting nitric oxide synthase in a cell
+
+### ILLUSTRATIVE EMBODIMENTS
+
+- define compound of formula
+- specify X in compound of formula
+- define embodiment 2
+- specify X in embodiment 2
+- define embodiment 3
+- specify Z in embodiment 3
+- define embodiment 4
+- specify R in embodiment 4
+- define embodiment 5
+- specify Z in embodiment 5
+- define embodiment 6
+- define embodiment 7
+- specify X in embodiment 7
+- define embodiment 8
+- define embodiment 9
+- define embodiment 10
+- define embodiment 11-24
+- describe synthesis of derivatives 49
+- describe Suzuki coupling and deprotection
+- describe synthesis of 5-cyano derivative 14
+- describe synthesis of isoindoline derivative 16
+- describe synthesis of indanylamine derivatives 17 and 18
+- describe synthesis of 4-substituted derivatives 19-24
+- describe synthesis of 4-ether halide derivatives 25-37
+- describe nNOS inhibitor assay and crystallography
+- describe initial inhibitory and structural analysis of modified amine tail analogues
+- describe optimization of conformational positioning of the tail amine
+- describe o-substituted isomers
+- compare potencies of m-substituted isomers
+- analyze crystal structures of rnNOS-12 and hnNOS-12
+- discuss differences in active site of human eNOS
+- propose homologated analogue 13
+- analyze crystal structures of rnNOS-13 and hnNOS-13
+- discuss installation of nitrile at 5-position
+- describe pyridine analogue 15
+- discuss constrained amine analogues 16-18
+- describe 4-alkoxy-3-aminomethyl analogues 19-29
+- discuss 4-phenyloxymethylaryl analogues 30-37
+- describe illustrative embodiments
+- introduce pyridinylmethyl ether groups
+- discuss binding positions of compounds
+- analyze differences in binding affinity
+- discuss importance of heterocyclic H-bond acceptors
+- describe incorporation of smaller heterocycles
+- discuss human iNOS inhibition study
+- analyze cross-species selectivity
+- discuss directed mutagenesis
+- analyze importance of Asp597 and Met336 residues
+- illustrate inhibitor selectivity
+- discuss off-target profiling
+- determine membrane permeability
+- evaluate microsome stability
+- summarize compound synthesis
+- describe experimental procedures
+- detail general procedures for Suzuki coupling
+- outline general procedures for deprotection
+- synthesize compound 5
+- synthesize compound 6
+- synthesize compound 7
+- conclude compound synthesis
+- summarize conclusions
+- describe experimental section
+- provide general procedures
+- synthesize compound 8
+- synthesize compound 9
+- synthesize compound 10
+- synthesize compound 11
+- synthesize compound 12
+- synthesize compound 13
+- characterize compound 8
+- characterize compounds 9-13
+- synthesize compound 14
+- synthesize compound 15
+- synthesize compound 16
+- synthesize compound 17
+- synthesize compound 18
+- synthesize compound 19
+- characterize compound 14
+- characterize compound 19
+- synthesize compound 20
+- synthesize compound 21
+- synthesize compound 22
+- synthesize compound 23
+- synthesize compound 24
+- synthesize compound 25
+- characterize compound 20
+- characterize compound 25
+- synthesize compound 26
+- synthesize compound 27
+- synthesize compound 28
+- synthesize compound 29
+- synthesize compound 30
+- synthesize compound 31
+- couple compounds 39 and 105
+- couple compounds 39 and 106
+- couple compounds 39 and 107
+- couple compounds 39 and 109
+- describe compound 32
+- describe compound 33
+- describe compound 34
+- describe compound 35
+- describe compound 36
+- describe compound 37
+- synthesize compound 32
+- synthesize compound 33
+- synthesize compound 34
+- synthesize compound 35 and 36 and 37
+- synthesize compound 39
+- describe NOS enzyme assays
+- detail PAMPA-BBB assay protocol
+- provide equations for effective permeability and retention membrane factor
+- calculate IC50 and Ki values
+- describe human liver microsome stability assay
+- calculate half-life and intrinsic clearance
+- prepare inhibitor complex crystals
+- collect and process X-ray diffraction data
+- refine and validate crystal structures
+- list PDB ID codes
+- list references
+- cite prior art
+- discuss neurodegenerative disorders
+- describe nitric oxide synthase
+- summarize inhibitors of nitric oxide synthase
+- discuss molecular architecture of mammalian nitric oxide synthase
+- describe contribution of endothelial nitric oxide to blood pressure
+- summarize simplified 2-aminoquinoline-based scaffold
+- discuss phenyl ether- and aniline-containing 2-aminoquinolines
+- cite prior art
+- describe blood-brain barrier permeability assays
+- discuss pharmacokinetics and drug-likeness
+- introduce nitric oxide synthase inhibitors
+- describe synthesis of sulfonamide derivatives
+- discuss cyclopentane-1,3-dione as a carboxylic acid isostere
+- describe expression and purification of nitric oxide synthase
+- discuss X-ray crystallography and structure solution
+- describe molecular docking protocol
+- discuss constrained amine analogues
+- describe small 4-alkyloxy-3-aminomethyl analogues
+- illustrate binding of 25 to rnNOS
+- illustrate binding of 26 to rnNOS and heNOS
+- illustrate binding of 25 and 26 to hnNOS
+- describe binding of 28 to rnNOS, hnNOS, and heNOS
+- describe unusual binding behavior of 31
+- describe structural features of 36 and 37
+- provide experimental section for synthesis of compounds
+- synthesize tert-butyl (4-iodobenzyl)(methyl)carbamate (46)
+- synthesize (S,S)—N—(−1-(4-bromophenyl)propan-2-yl)-2-methylpro
+- synthesize tert-butyl (S)-(1-(4-bromophenyl)propan-2-yl)carbamate (49)
+- synthesize compound 67
+- synthesize compound 73
+- synthesize compound 77
+- synthesize compound 78
+- synthesize compound 79
+- synthesize compound 80
+- synthesize compound 85
+- synthesize compound 90
+- synthesize compound 92a and 92b
+- synthesize compound 93
+- synthesize compound 94
+- characterize synthesized compounds
+- describe synthesis of compound 100
+- outline general procedure 1 for delépine reaction
+- apply general procedure 1 to synthesize compounds 87, 88, 95, 98, and 101
+- outline general procedure 2 for ether formation
+- apply general procedure 2 to synthesize compounds 104 and 105
+- describe synthesis of compound 103
+- describe characterization of compounds 87, 88, 95, 98, 101, 103, 104, and 105
+- provide spectral data for compounds 95, 101, and 103
+- synthesize compound 106
+- synthesize compound 107
+- synthesize compound 108
+- synthesize compound 109
+- synthesize compound 110 and 111
+- describe illustrative embodiments
+- synthesize compound 112
+- synthesize compound 113
+- synthesize compound 114
+- synthesize compound 115
+- synthesize compound 116
+- list references
+- cite molecular modeling software
+- cite patents and publications
+

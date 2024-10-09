@@ -1,0 +1,116 @@
+# Introduction
+
+Recently, spliceosome-mediated trans-splicing is receiving considerable attentions both as an intriguing natural phenomenon and as a new means to repair/engineer natural pre-messenger RNA (mRNA) [1][2][3][4]. This is a kind of splicing by which exons from separately transcribed precursor RNA molecules are joined when an mRNA is generated. A gene on chromosomal DNA contains coding regions (exons) and is generally transcribed into a pre-mRNA containing intervening noncoding regions (introns). Such introns are removed from the pre-mRNA via a fine process referred to as splicing. Splicing is known to take place as an interaction coordinated by several small ribonucleoproteins (snRNPs) and many protein factors that assemble to form an enzyme complex known as a spliceosome.
+
+In most cases, the splicing reaction takes place within the same pre-mRNA molecule, which is referred to as cis-splicing. Splicing that takes place between two independently-transcribed pre-mRNAs is referred to as trans-splicing. Trans-splicing was discovered for the first time in Trypanosoma [5,6] and then discovered in nematode, flatworm [7,8], and plant mitochondria [9]. To date, a method to restore the expression of a native protein in the protein-deficient cells by applying trans-splicing technique for gene therapy [1], or protein identification method that involve application of the technique to imaging within animals [2], or the method to express large amount of serum-albumin fused proteins in vivo [3] have been reported.
+
+Antibody fragments and their fusion proteins are indispensable tools as immunoassay reagents in diagnostics and molecular/cellular biotechnology. Especially, the fusion protein of antibody fragments and an reporter enzyme has become widely used in place of enzyme-labeled antibodies in immunoassays such as ELISA and Western blotting, since chemical conjugation needs many steps of reaction/purification that might affect the antibody activity. However, individual construction of an expression vector for each fusion protein needs tedious molecular cloning steps of at least two antibody variable region genes V H /V L , and more importantly, it is not always the case that the cloned genes show the same performance as the parent antibody. For example, the expression of cloned antibody genes by bacteria such as Escherichia coli with correct tertiary structure is not guaranteed because of the lack of proper folding machinery and/or post-translational modifications.
+
+To avoid such negative circumstance, the selection of positive clones by phage display or other selection method is often required. Moreover, frequently used bacterial alkaline phosphatase shows lower specific activity than the corresponding mammalian enzymes, which hampers its wider use as a detection reagent.
+
+As a potential technique to resolve the above problems, here we propose a method that enables the production of a fusion protein of antibody variable region and a reporter enzyme, within a short time without constructing individual expression vectors. As a result, we discovered that a target fusion protein could be produced conveniently within a short time by recovering fusion proteins generated within cells through the use of trans-splicing.
+
+## Materials and Methods
+
+### Cultured cells
+
+J558L plasmacytoma expressing the λ1 chain of an anti-4-hydroxy-3-nitrophenyl acetyl (NP) antibody was purchased from the European Collection of Cell Cultures.
+
+Cells were cultured in DMEM medium supplemented with 10% fetal calf serum, penicillin and streptomycin in a humidified incubator at 37°C and 5% CO 2 .
+
+### Construction of trans-splicing (TS) vector to express V H -SEAP
+
+A pSV2gpt-based murine IgM expression vector pSV-Vµ1 encoding murine genomic DNA for anti-NP IgM was provided by Dr. Michael Neuberger [10]. Before constructing vectors to induce trans-splicing (hereinafter, TS vector), an expression vector pscFv(NP)SEAP to express anti-NP single chain Fv(scFv)-SEAP fusion protein was made as a positive control. The backbone of this vector was derived of pSEAP2_control (Clontech, Takara-bio, Shiga, Japan), and an IgH secretion signal as well as the scFv sequences [11] were appended to the 5' of SEAP sequence with intervening introns. In addition, a His 6 tag sequence was added to the 3' of SEAP sequence to allow purification and detection of the protein (Fig. 1). The details for the construction of pscFv(NP)SEAP will be described elsewhere (R.I. et al., in preparation).
+
+To construct TS vectors, the leader and the scFv sequences of pscFv(NP)SEAP were substituted with the binding domain sequence (hereinafter, BD) that can hybridize a target pre-mRNA sequence. Specifically, as sequences to which BD hybridizes, a repeat sequence (Sµ), which is involved in antibody class switch recombination should exist on every IgH genome, and more popular 3' splice site (3' ss) were selected. To obtain BDs, Sµ region was PCR amplified using pSV-Vµ1 as a template, SmuEcoFor as primers. On the other hand, to amplify the 3'-terminus of the intron preceding µCH1,
+
+#### Int20028F
+
+(5'-gtttcgtcctgtataccagg-3') and IntEcoNcoB (5'ggaattc[EcoRI]catggctgaggaccagagagggataaaag-3') were used as primers. These BDs designated Sµ1, Sµ2, and 3' ss, respectively, were treated with EcoRI and AflII, and inserted to pscFv(NP)SEAP that had also been treated with the same enzymes. The nucleotide sequence was confirmed by CEQ-8000 sequencer (Beckman-Coulter, Tokyo, Japan). Thus, three TS vectors (pTS-Sµ1-SEAP, pTS-Sµ2-SEAP, and pTS-3'ss-SEAP)
+
+were constructed (Fig. 1).
+
+### Construction of the vectors to express Fab-SEAP
+
+To express the fusion protein of Fab and SEAP, another TS vector was constructed by inserting the CH1 domain sequence of human IgG1 to the upstream of SEAP sequence. The CH1 sequence was amplified by PCR using hgCH1BspE1back (5'gcaggttccgga[BspEI]gcctccaccaagggcccatcg-3') and hgCH1G4SBspE1for
+
+(5'-ggatgattccgga[BspEI]tgtgtgagttttgtcacaag-3') as primers, and pUC-VDJ-gamma 1m
+
+(obtained from HS gene bank, Osaka, Japan as HG324) as a template. The nucleotide sequence of the product was confirmed after cloning the fragment into pTA2 vector (Toyobo, Osaka, Japan). The confirmed insert was excised with restriction enzyme BspEI. The digested product was inserted to pTS-Sµ1-SEAP that had been treated with BspEI and Antarctic alkaline phosphatase (New England Biolabs Japan, Tokyo), and screened for the insert with correct orientation, designated pTS-SµC-SEAP (Fig. 1).
+
+To co-express the light chain in COS-1 cells, an expression vector for murine λ1 chain with C-terminal His 6 tag was also constructed. First, λ1 cDNA previously cloned from J558L was amplified by PCR using pBSλ [11] as a template, and VlamMfeBack
+
+(5'-caggtccaattg[MfeI]gatgctgttgtgactcaggaatc-3') and mLamC_XbaFor (5'gctctaga[XbaI]ggaacagtcagcacgggacaa-3') as primers. The nucleotide sequence of the product was confirmed after cloning into pTA2, and the confirmed insert was digested with XbaI and MfeI, which was inserted to pScFv(NP)SEAP that had been digested with the same, designated pVCL.
+
+### Transfection
+
+COS-1 cells (1.5×10 5 cells) were seeded on a φ35-mm dish (Iwaki Technoglass, Tokyo, Japan) for adhesion cell culture. 12 to 24 hours later, cotransfection was performed with pSV-Vµ1 and one of the three TS vectors, and a transfection reagent Lipofectamine 2000 (Invitrogen, Carlsbad, CA) or COSFectin (Bio-Rad, Heracules, CA) according to the protocol specified by the manufacturer.
+
+### Reverse transcription polymerase chain reaction (RT-PCR)
+
+To analyze mRNAs generated through cis-and trans-splicing, total RNA was extracted from the cells at 48 hours after transfection using an RNAspin Mini (GE Healthcare). Using this RNA, ExScript reverse transcriptase (Takara Bio) was used to prepare cDNA according to manufacturer's instruction. Taking this cDNA as a template, PCR amplification was performed with either NPVHMfeBack (5'-caggtccaattg[MfeI]cagcagcctggg-3') and pSEAPBk
+
+(5'-ccggaattc[EcoRI]atatgggaagcggtccattgccaggggtat-3'), or NPVHMfeBack and MunIgMCH2for (5'-cacatttacattgggattcat-3') for the detection of trans-and cis-spliced mRNA, respectively. After PCR, each reaction solution was analyzed using 1.5% agarose gel, and if necessary, the band was recovered to confirm its nucleotide sequence.
+
+Nucleotide sequences were determined by CEQ-8000 sequencer using CEQ DTCS kit (Beckman-Coulter, Tokyo, Japan).
+
+### Enzyme immunoassay (ELISA)
+
+The antigen solution (100 µg/ml NP-BSA or BSA in PBS) was dispensed at 100 µl per well of a 96-well white plate (Costar 3922, Corning Japan, Tokyo) and then stored at 4°C overnight for immobilization. After washing with PBS containing 0.05% Tween 20 (PBST) for three times, 200 µl each of 20% immunoblock (DS Pharma, Osaka, Japan) in PBS was added and incubated for 2 hrs at room temperature. To the solution, 30 µl of the culture supernatant at 144 h after transfection using COSFectin (Bio-rad) and 10 µl of the culture supernatant of J558L cells expressing the anti-NP antibody λ chain were added, followed by an incubation for 1 h at 25°C. After washing, 100 µl of the endogenous AP inhibition solution in a Reporter Assay Kit -SEAP-(Toyobo Biochemicals, Osaka, Japan) was added, followed by an incubation for 30 min at 37°C.
+
+After another washing, 100 µl of CSPD solution in the kit was added. The luminescence intensity integrated for 10 s was measured using a luminometer AB2100 (ATTO, Tokyo, Japan).
+
+## Results
+
+### Vector construction
+
+It is known that the efficiency of trans-splicing is strongly influenced by the length of intron. [12]We chose immunoglobulin heavy chain V-C intron as a primary target for trans-splicing because it is the longest intron in germline IgH genome, which is also the case after reorganization through VDJ rearrangement and class switch recombination.
+
+Furthermore, as a target of binding domain (BD), in addition to previously reported sequence around 3' splice site of the intron, we attempted to utilize Sµ sequence.
+
+Irrespective of VDJ recombination, Sµ sequence should exist in every V-Cµ intron, and albeit in part, should exist in every V-C intron of other classes even after class-switch recombination. Sµ is an essential sequence element in Ig class switch recombination [13]. In addition, Sµ is high repetitive (repeat of 6 bp sequence), and as long as 2 kb.
+
+Due to such nature, we can expect high hybridization efficiency between Sµ and its complementary BD.
+
+As a reporter enzyme that facilitate detection after secretion of the protein into the culture media, secretion-type human placental alkaline phosphatase (SEAP) was employed. In total, one TS vector that target 3' splice site (3'ss) and two of them with somewhat different lengths (1.8 kb and 2.0 kb) that target Sµ sequence were constructed.
+
+# RT-PCR
+
+To evaluate trans-splicing efficiency between the target IgH genomic pre-mRNA and a TS vector-derived pre-mRNA, a vector encoding mouse IgM genome with V NP variable region sequence (pSV-Vµ1) [10] and one of TS vectors (Fig. 1) were used to co-transfect simian COS-1 cells, which ensures presence of a high copy number of the transfected genes in the cell nucleus in an episomal form, to evaluate transiently expressed/spliced mRNA as previously reported. [14] To detect trans-spliced mRNA, two days after transfection, RNA was extracted and subjected to reverse transcription and PCR. Using a primer pair to amplify trans-spliced product, bands at around the estimated size of 605 bp was observed in all the samples from COS-1 cells into which pSV-Vµ1 and any one of three TS vectors had been introduced (Fig. 2A). The thickness of each band was almost a half of that from the cells in which positive control pScFv(NP)SEAP had been introduced. On the other hand, no such bands at around 605 bp were observed for the cells into which the TS vector alone or pSV-Vµ1 alone had been introduced. These results suggest that mRNA had been generated by trans-splicing at high efficiencies between the pre-mRNA of the target and the pre-mRNA of the TS vector.
+
+To further confirm that the observed bands were derived of trans-spliced product, the nucleotide sequences were determined. After direct sequencing reaction of the gel-recovered PCR products, it was found that at least two TS vectors that target Sµ gave the expected trans-spliced sequence with good quality (Fig. S1A). On the other hand, the chromatogram for pTS-3'ss-SEAP-derived band gave mixed wave pattern, suggesting some TS mRNA undergo mis-splicing around the designated splicing site.
+
+This partial mis-splicing was also suggested by the duplex band pattern on the gel.
+
+## Quantitative PCR
+
+To evaluate the quantity of the trans-and cis-spliced mRNAs, quantitative PCR of the cDNA derived of each transfectant was performed (Fig. S1, B andC). As a positive control for trans-and cis-spliced products, the RNA from the cells transfected with pScFv(NP)SEAP alone, and from the cells transfected with pSV-Vµ1 alone, respectively, were used. As shown in Figure S1B, the amount of trans-spliced mRNA showed 0.3~1% that of the positive control mRNA. Though the value for pTS-3'ss-SEAP might have overestimated the productive mRNA amount because of the mis-splicing, the result clearly show the existence of sub-percentage amounts of trans-spliced mRNA. Also, for the TS vectors that target Sµ, the longer BD showed somewhat more efficient trans-splicing.
+
+On the other hand, the cis-spliced transcripts of the double transfectants showed 25~30% of the positive control. This might be due to the interference of cis-splicing by the trans-splicing, but other possibilities such as reduced transcription of IgH pre-mRNA from pSV-Vµ1 because of the co-transfection, and also for the more efficient transcription from TS-vectors suggested by the higher amount of scFv-SEAP-derived transcript compared with that from pSV-Vµ1, cannot be excluded.
+
+### Detection of V H -SEAP activity
+
+To investigate whether the trans-splicing resulted in the desired translation/secretion of V H -SEAP protein, AP activity of the culture supernatant from the transfected COS-1 cells was determined by the chemiluminescence. This time, either both the target (pSV-Vµ1) and the TS vector (3'ss or Sµ-1) were co-transfected, or each of them were individually transfected as controls. When the AP activity of the culture supernatant was measured after heat treatment for 30 min at 65°C to inactivate intrinsic AP derived of COS-1 cell, a significantly higher signal was observed for the cells co-transfected with pSV-Vµ1 and pTS-3'ss-SEAP, than the control transfectants (Fig. 3A).
+
+To further evaluate antigen-specific binding activity of the V H in addition to SEAP activity, AP activity was compared after binding reaction of the culture supernatants to the immobilized antigen NP-BSA in the presence of the culture supernatant of J588L containing anti-NP λ1 light chain, so as to restore functional Fv domain. [15] As a control, AP activity after binding to BSA was also measured. As shown in Fig. 3B, after washing and substrate addition, significantly higher levels of AP activity were detected for the wells with the culture supernatant from co-transfected cells, and in this case pTS-Sµ1-SEAP/pSV-Vµ1 co-transfectant showed the highest activity. It should be noted that while some increase in signal for BSA-immobilized wells were observed for the co-transfectants, this is probably due to nonspecific binding of the exposed hydrophobic surface of the V H domain in V H -SEAP, since similar binding was also observed for the culture supernatant of COS-1 cells transfected with V H -SEAP expression vector (R.I. et al., in preparation). From these results, the secretion of V H -SEAP fusion protein derived from the mRNA generated by trans-splicing was strongly suggested.
+
+### Production of Fab-SEAP
+
+In the experiments above, the mRNA for anti-NP antibody heavy chain variable region (V H )-SEAP fusion protein was generated as a result of trans-splicing. To further demonstrate the utility of this system for producing other types of antibody-fusion proteins, production of Fab-SEAP through trans-splicing was attempted. To this end, there were two possible ways: one was to make a TS vector that targets µCH 1 -µCH 2 intron. However, the length of this intron was rather short (110 bp), and the resultant TS vector would be class(IgM)-specific. The other was to use the same BD as for V H -SEAP, but supply C H1 domain sequence to the TS vector. Since this will allow higher TS efficiency without restriction of Ig class, we decided to take the latter approach, by inserting C H1 domain cDNA derived of human IgG 1 into the downstream of the 3' splice acceptor sequence of pTS-Sµ1-SEAP.
+
+Then the constructed vector pTS-SµC-SEAP was used to co-transfect COS-1 with pSV-Vµ1 and a λ1 expression vector pVCL. To confirm the existence of TS mRNA, cellular RNA was extracted as before, and used for RT-PCR to detect trans-and cis-spliced mRNAs (Fig. S2, A andB). As shown in Fig. S2A, a specific band of 700 bp, which was not observed for the RNA from the cells transfected with pTS-SµC-SEAP alone (lane 1) was clearly observed (lane 2). In addition, the nucleotide sequence of the band was also determined (Fig. S2C). A very clear chromatogram showing the expected V NP -hγC H1 joining was clearly observed.
+
+From quantitative PCR, the amounts of cDNA from trans-and cis-spliced mRNAs were 8.50×10 -6 and 4.82×10 -4 (µg/µg total cDNA), respectively, for the triple transfectant. This result suggests a TS efficiency of 1.76%.
+
+The culture supernatant one week after transfection was also used for SEAP assay as well as for ELISA that detects NP-specific AP activity. As a result, in both assays, significantly higher AP activities were detected than the other culture supernatants from the cells transfected with one or no plasmid 4).
+
+## Discussion
+
+TS had been implied as a potential mechanism in human-mouse chimeric immunoglobulin synthesis in transgenic mouse [16]. However, until now, no demonstration of artificially induced TS that utilize the IgH V-C intron has been reported. In this study, we constructed two types of TS vectors with and without C H1 domain. In both cases, the utility of Sµ sequence as an antibody H chain-specific binding domain was suggested. The data presented by Puttaraju et al. [1] point to a strong correlation between the size of the binding domain and the frequency of TS, which peaks at around 150 bp and then sharply declines. This is in contrast to our result using more than 1 kb of BD. A possible reason is highly repeated nature of Sµ region.
+
+Our results demonstrate a new utility of S regions encoded in a rearranged IgH locus, especially Sµ. In our results, the secretion of each product protein (V H -SEAP and F ab -SEAP) to the culture supernatant as a result of pre-mRNA trans-splicing was strongly suggested. Especially, rapid production of V H -SEAP fusion protein will be useful in open-sandwich ELISA that measures antigen-dependent V H /V L interaction for antigen detection. [17,18] The possibility in immediate future is the direct expression of these TS vectors in hybridoma cells. We think this is quite feasible considering the previous report of successful trans-splicing from a transfected TS vector to endogenous IgH transcript in hybridoma [14]. In addition, recent report of in vivo experiment utilizing albumin transcript [3] suggests that when the target endogenous mRNA level is high, the level of targeted trans-spliced mRNA and the resultant protein production become significantly high. Since the transcription of immunoglobulin pre-mRNA in plasma cells is highly abundant, albeit less than that of albumin in hepatocytes, our finding will lead to the rapid production and analysis of various antibody-enzyme fusions suitable for ELISA, and also antibody-dependent enzyme prodrug therapy (ADEPT) [19].       
+
+## Acknowledgment
+
+We thank Akihito Tanabe for his assistance in experimental work. We thank JSPS and Japan Science and Technology Agency (PRESTO program) for financial supports.
+

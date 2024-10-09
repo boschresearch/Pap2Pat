@@ -1,0 +1,238 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define invention scope
+
+## BACKGROUND OF THE INVENTION
+
+- motivate muscular dystrophy treatment
+
+## SUMMARY OF THE INVENTION
+
+- provide method for treating muscular dystrophy
+- administer small molecule compound orally or parenterally
+- specify small molecule compounds
+- provide method for treating muscular dystrophy with compound of formula (I)
+- specify muscular dystrophy types
+- provide method for reducing symptoms of muscular dystrophy
+- administer small molecule compound orally or parenterally
+- specify small molecule compounds
+- provide method for reducing symptoms of muscular dystrophy with compound of formula (I)
+- specify muscular dystrophy types
+- provide method for increasing utrophin promoter activity
+- administer small molecule compound orally or parenterally
+- specify small molecule compounds
+- provide method for increasing utrophin promoter activity with compound of formula (I)
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy
+- specify small molecule compound administration
+- specify compound of formula (I) administration
+- specify muscular dystrophy types
+- provide method for reducing symptoms of muscular dystrophy
+- specify small molecule compound administration
+- specify compound of formula (I) administration
+- specify muscular dystrophy types
+- provide method for increasing utrophin promoter activity
+- specify small molecule compound administration
+- specify compound of formula (I) administration
+- specify muscular dystrophy types
+- provide method for increasing utrophin expression or activity
+- specify small molecule compound administration
+- specify compound of formula (I) administration
+- specify muscular dystrophy types
+- provide method for correcting dystrophin deficiency
+- specify small molecule compound administration
+- specify compound of formula (I) administration
+
+## DEFINITIONS
+
+- define substituted compounds
+- explain stable compounds
+- define aliphatic groups
+- describe alkyl, alkenyl, and alkynyl groups
+- define alicyclic groups
+- explain cycloalkyl groups
+- define heteroaliphatic groups
+- describe heteroalicyclic and heterocyclic groups
+- explain substituted heterocycloalkyl or heterocycle groups
+- define aromatic moieties
+- describe heteroaromatic moieties
+- explain attachment of aromatic and heteroaromatic moieties
+- define aryl groups
+- define heteroaryl
+- define aryl and heteroaryl groups
+- define alkoxy
+- define thioalkyl
+- define alkylamino and aminoalkyl
+- list examples of substituents
+- define halo and halogen
+- define haloalkyl, amino, and acyl
+- define C2-6alkenylene and other terms
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define muscular dystrophy
+- describe small molecule therapy embodiments
+- introduce small molecule compound structures
+- describe piperine and its analogs
+- describe apigenin and its analogs
+- describe other small molecule compounds and their analogs
+- provide examples of small molecule compounds
+- summarize small molecule compound analogs
+- describe leflunomide
+- list analogs of leflunomide
+- describe kawain
+- list analogs of kawain
+- describe clorgyline
+- list analogs of clorgyline
+- describe equilin
+- list analogs of equilin
+- define isomers
+- define prodrugs
+- define pharmaceutically acceptable salts
+- list examples of inorganic salts
+- list examples of organic salts
+- describe pharmaceutical products
+- outline methods for treating muscular dystrophy
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy
+- provide method for reducing muscular dystrophy symptoms
+- provide method for increasing utrophin promoter activity with piperine
+- provide method for increasing utrophin expression or activity with piperine
+- provide method for correcting dystrophin deficiency with piperine
+- provide method for treating muscular dystrophy with piperine
+- provide method for reducing muscular dystrophy symptoms with piperine
+- provide method for increasing utrophin promoter activity with apigenin
+- provide method for increasing utrophin expression or activity with apigenin
+- provide method for treating muscular dystrophy with apigenin
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy
+- provide method for reducing muscular dystrophy symptoms
+- provide method for increasing utrophin promoter activity with apigenin
+- provide method for increasing utrophin expression or activity with apigenin
+- provide method for correcting dystrophin deficiency with apigenin
+- provide method for treating muscular dystrophy with apigenin
+- provide method for reducing muscular dystrophy symptoms with apigenin
+- provide method for increasing utrophin promoter activity with chrysin
+- provide method for increasing utrophin expression or activity with chrysin
+- provide method for correcting dystrophin deficiency with chrysin
+- provide method for treating muscular dystrophy with chrysin
+- provide method for reducing muscular dystrophy symptoms with chrysin
+- provide method for increasing utrophin promoter activity with nabumetone
+- provide method for increasing utrophin expression or activity with nabumetone
+- provide method for treating muscular dystrophy with nabumetone
+- provide method for treating muscular dystrophy
+- provide method for reducing symptoms of muscular dystrophy
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy with utrophin promoter activity
+- provide method for treating muscular dystrophy with utrophin expression or activity
+- provide method for reducing symptoms of muscular dystrophy with utrophin promoter activity
+- provide method for reducing symptoms of muscular dystrophy with utrophin expression or activity
+- provide method for treating muscular dystrophy with nabumetone
+- provide method for reducing symptoms of muscular dystrophy with nabumetone
+- provide method for increasing utrophin promoter activity with riluzole
+- provide method for increasing utrophin expression or activity with riluzole
+- provide method for treating muscular dystrophy with riluzole
+- provide method for treating muscular dystrophy
+- provide method for reducing symptoms of muscular dystrophy
+- increase activity of utrophin promoter
+- increase expression or activity of utrophin
+- correct deficiency of dystrophin
+- treat muscular dystrophy with hesperetin
+- reduce symptoms of muscular dystrophy with hesperetin
+- increase activity of utrophin promoter with hesperetin
+- increase expression or activity of utrophin with hesperetin
+- correct deficiency of dystrophin with hesperetin
+- treat muscular dystrophy with resveratrol
+- reduce symptoms of muscular dystrophy with resveratrol
+- increase activity of utrophin promoter with resveratrol
+- increase expression or activity of utrophin with resveratrol
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy
+- provide method for reducing muscular dystrophy symptoms
+- provide method for increasing utrophin promoter activity with resveratrol
+- provide method for increasing utrophin expression with resveratrol
+- provide method for correcting dystrophin deficiency with resveratrol
+- provide method for treating muscular dystrophy with resveratrol
+- provide method for reducing muscular dystrophy symptoms with resveratrol
+- provide method for increasing utrophin promoter activity with phenazopyridine
+- provide method for increasing utrophin expression with phenazopyridine
+- provide method for treating muscular dystrophy with phenazopyridine
+- provide method for reducing muscular dystrophy symptoms with phenazopyridine
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy
+- provide method for reducing muscular dystrophy symptoms
+- provide method for increasing utrophin promoter activity with tiabendazole
+- provide method for increasing utrophin expression or activity with tiabendazole
+- provide method for correcting dystrophin deficiency with tiabendazole
+- provide method for treating muscular dystrophy with tiabendazole
+- provide method for reducing muscular dystrophy symptoms with tiabendazole
+- provide method for increasing utrophin promoter activity with leflunomide
+- provide method for increasing utrophin expression or activity with leflunomide
+- provide method for correcting dystrophin deficiency with leflunomide
+- provide method for treating muscular dystrophy with leflunomide
+- provide method for reducing muscular dystrophy symptoms with leflunomide
+- provide method for treating muscular dystrophy with tiabendazole or leflunomide
+- provide method for reducing muscular dystrophy symptoms with tiabendazole or leflunomide
+- provide method for treating muscular dystrophy with tiabendazole or leflunomide
+- provide method for treating muscular dystrophy
+- provide method for reducing symptoms of muscular dystrophy
+- provide method for increasing activity of utrophin promoter
+- provide method for increasing expression or activity of utrophin
+- provide method for correcting deficiency of dystrophin
+- provide method for treating muscular dystrophy with kawain
+- provide method for reducing symptoms of muscular dystrophy with kawain
+- provide method for increasing activity of utrophin promoter with kawain
+- provide method for increasing expression or activity of utrophin with kawain
+- provide method for correcting deficiency of dystrophin with kawain
+- provide method for treating muscular dystrophy with clorgyline
+- provide method for reducing symptoms of muscular dystrophy with clorgyline
+- provide method for increasing activity of utrophin promoter with clorgyline
+- provide method for increasing expression or activity of utrophin with clorgyline
+- provide method for treating muscular dystrophy
+- provide method for reducing symptoms of muscular dystrophy
+- provide method for increasing utrophin promoter activity
+- provide method for increasing utrophin expression or activity
+- provide method for correcting dystrophin deficiency
+- provide method for treating muscular dystrophy with utrophin promoter activity
+- provide method for treating muscular dystrophy with utrophin expression or activity
+- provide method for reducing symptoms of muscular dystrophy with utrophin promoter activity
+- provide method for reducing symptoms of muscular dystrophy with utrophin expression or activity
+- provide method for treating muscular dystrophy with equilin
+- provide method for reducing symptoms of muscular dystrophy with equilin
+- provide method for increasing utrophin promoter activity with equilin
+- provide method for increasing utrophin expression or activity with equilin
+- provide method for correcting dystrophin deficiency with equilin
+
+### Pharmaceutical Compositions and Methods of Administration
+
+- describe administration methods
+- formulate for oral administration
+- formulate for intravenous administration
+- formulate for topical administration
+- formulate for suppository administration
+- describe carriers and diluents
+- describe liquid formulations
+- describe controlled-release compositions
+- describe delivery systems
+- describe combination therapies
+
+## EXAMPLES
+
+- screen chemical library for utrophin promoter activators
+- identify and characterize dose-dependent activators
+- evaluate activity of selected compounds in muscle cells and in vivo
+- suggest therapeutic utility in muscular dystrophy
+

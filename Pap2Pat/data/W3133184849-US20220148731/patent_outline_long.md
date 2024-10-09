@@ -1,0 +1,182 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce machine learning
+- describe applications in healthcare
+- motivate radiogenomics
+- explain radiogenomics integration
+- discuss limitations of radiogenomics
+- highlight importance of uncertainty quantification
+- compare to non-medical ML applications
+- emphasize need for individual prediction uncertainty
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce method for generating prediction data
+- describe machine learning model
+- outline output and display
+
+## DETAILED DESCRIPTION
+
+- introduce radiogenomics-based prediction models
+- limitations of current methods
+- motivate uncertainty quantification
+- describe transductive Gaussian process (GP) model
+- output genetic prediction data with uncertainty figure
+- enhance model performance and interpretability
+- quantify predictive uncertainty through probability distributions
+- introduce individualized oncology
+- describe challenges of internal genetic heterogeneity
+- introduce radiogenomics as a solution
+- describe spatially resolved radiogenomics maps
+- motivate predictive uncertainty quantification
+- describe importance of uncertainty quantification
+- introduce transductive learning GP model
+- minimize uncertainty in model training
+- quantify predictive uncertainty
+- inform likelihood of accurate prediction
+- impact on sample predictions with border uncertainty
+- reduce model complexity
+- describe GP model capabilities
+- illustrate GP model example
+- describe standard GP model limitations
+- introduce transductive learning component
+- prioritize minimization of average predictive uncertainty
+- describe transductive GP model
+- generate predictions for unlabeled samples
+- combine labeled and unlabeled samples
+- describe knowledge-infused global-local (KGL) data fusion model
+- introduce semi-supervised learning (SSL) algorithms
+- describe self-training SSL algorithm
+- describe co-training SSL algorithm
+- describe low-density separation SSL algorithm
+- describe graph-based SSL models
+- describe GP model advantages
+- introduce KGL data fusion predictive model
+- describe example KGL data fusion model
+- define Gaussian process model
+- formulate semi-supervised learning problem
+- introduce domain knowledge constraints
+- derive Lagrangian function
+- simplify optimization problem
+- solve inner minimization
+- obtain final objective function
+- compute gradient of objective function
+- describe optimization algorithm
+- explain utility of indicator function
+- discuss advantages of KGL model
+- introduce prior specification approach
+- describe Bayes' rule
+- discuss limitations of prior specification
+- introduce posterior regularization framework
+- formulate PostReg optimization problem
+- explain KL-divergence term
+- describe regularization term
+- discuss variational family of distributions
+- mention applications of PostReg
+- conclude PostReg optimization
+- introduce optimization problem
+- define PostReg framework
+- introduce KGL model
+- illustrate flowcharts for training and implementing predictive models
+- describe training data
+- describe machine learning models
+- describe assembling training data
+- describe feature selection
+- describe training machine learning models
+- describe storing trained models
+- describe generating genetic prediction data
+- describe accessing medical image data
+- describe accessing trained machine learning models
+- describe inputting medical image data to trained models
+- describe generating output data
+- describe displaying output data
+- describe example study
+- describe dataset collection
+- describe constructing transductive learning GP model
+- describe quantifying predictive uncertainty
+- describe testing hypothesis
+- describe generating p-values
+- describe integrating uncertainty estimates
+- describe optimizing model training
+- describe evaluating model performance
+- describe illustrating spatially resolved predictive maps
+- describe prioritizing interpolation
+- describe training standard GP model
+- describe quantifying interpolated and extrapolated predictions
+- describe comparing standard and transductive learning models
+- describe advantages of transductive learning
+- describe integrating radiogenomics predictions
+- describe decision support in individualized oncology
+- describe addressing intratumoral heterogeneity
+- describe utilizing annotated dataset
+- describe predicting EGFR amplification status
+- describe minimizing predictive uncertainty
+- describe optimizing model parameters
+- describe using CNV threshold
+- describe transforming log-scale CNV data
+- describe addressing skewed distributions
+- describe collecting dataset
+- describe quantifying EGFR amplification status
+- describe comparing with spatially matched image features
+- describe constructing transductive learning GP model
+- describe classifying EGFR amplification status
+- describe evaluating model performance
+- describe illustrating predictive maps
+- describe discussing results
+- describe concluding advantages
+- introduce transductive learning GP model
+- compare with standard GP model
+- describe feature selection
+- discuss model complexity
+- motivate leveraging accuracy and uncertainty
+- stratify sample predictions based on uncertainty
+- show ROC analysis
+- describe another example study
+- introduce GBM and TCD
+- motivate mapping TCD distribution
+- describe data acquisition
+- extract features from MRI
+- integrate PI mechanistic model
+- describe PI model
+- impose constraints on predictive means
+- describe KGL model training
+- show training procedure
+- select tuning parameters
+- generate predictive distribution of TCD
+- compute mean absolute prediction error
+- perform leave-one-patient-out cross validation
+- select best tuning parameters
+- generate final optimal parameters
+- visualize predictive means and variances
+- show predictive TCD maps
+- compare KGL with other methods
+- describe application in neurosurgery
+- describe application in radiation therapy
+- introduce system for generating genetic prediction data
+- describe computing device
+- describe data source
+- describe communication network
+- describe server
+- describe hardware for computing device
+- describe processor
+- describe display
+- describe inputs
+- describe communication systems
+- describe memory
+- describe hardware for server
+- describe processor
+- describe display
+- describe inputs
+- describe communication systems
+- describe memory
+- describe hardware for data source
+- describe processor
+- describe inputs
+- describe communication systems
+- describe memory
+- describe computer readable media
+- describe transitory and non-transitory media
+- conclude with scope of invention
+

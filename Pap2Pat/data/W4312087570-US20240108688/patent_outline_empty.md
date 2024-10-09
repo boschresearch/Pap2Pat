@@ -1,0 +1,20 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+## BACKGROUND ART
+
+## DISCLOSURE OF INVENTION
+
+### Conclusions
+
+## DESCRIPTION OF EMBODIMENTS
+
+### EXAMPLES
+
+## DETAILED DESCRIPTION OF THE FIGURES
+
+## Material and Methods:
+
+### Non-Patent Literature
+

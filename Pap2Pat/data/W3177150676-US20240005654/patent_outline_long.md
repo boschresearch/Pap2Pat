@@ -1,0 +1,167 @@
+# DESCRIPTION
+
+- claim benefit of provisional application
+
+## TECHNICAL FIELD
+
+- relate to artificial intelligence
+
+## BACKGROUND
+
+- motivate artificial intelligence
+
+## SUMMARY
+
+- summarize techniques for evaluating AI results
+- describe error-based explanations for AI behavior
+- explain VQA model behavior
+- describe synthesizing error map with attention map
+- output helpfulness metric
+- provide benefits of error-based explanations
+- describe computing system embodiment
+- execute AI model to analyze image
+- process image to assign error scores
+- obtain error map
+- update image to visually indicate error scores
+- output error scores, error map, and updated image
+- describe method of explaining AI result
+- describe device and method embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce machine learning
+- describe machine learning model training
+- explain limitations of machine learning model training
+- describe erratic behavior of machine learning models
+- motivate need for explainability in machine learning
+- introduce virtual question answering (VQA) model
+- describe VQA model components
+- explain complexity of VQA model
+- describe black-box nature of machine learning systems
+- introduce car parts factory example
+- describe problem of black-box decision making
+- motivate need for explanation techniques
+- introduce explanation techniques for artificial intelligence
+- describe error-based explanations
+- describe attention-based explanations
+- describe hybrid explanations
+- explain benefits of explanation techniques
+- describe improved operation of VQA model
+- introduce car parts assembly example
+- describe analytic explanation for faulty operation outcome
+- introduce physician assistant example
+- describe need for understanding decision path
+- introduce FIGS. 1A and 1B
+- describe computing architecture
+- introduce computation engine
+- describe input devices
+- describe communication devices
+- describe output devices
+- describe memory
+- describe processing circuitry
+- describe operating environment
+- introduce sensors
+- describe sensor types
+- introduce image capture devices
+- describe image capture device types
+- describe input device functionality
+- introduce AI engine
+- describe AI models
+- introduce machine learning models
+- describe guided and unguided training
+- list examples of machine learning algorithms
+- discuss limitations of training data
+- explain erratic behavior of AI models
+- motivate need for explainability
+- introduce visual question answering (VQA) model
+- describe operation of VQA model
+- discuss input devices and data
+- explain processing of audio and image data
+- describe bidirectional encoder representation from transformation (BERT) model
+- discuss convolutional neural network (CNN) and semantic parsing
+- explain error-based explanation
+- describe error score and error map
+- introduce gradient-weighted class activation mapping (Grad-CAM)
+- explain updated image with error map
+- discuss query error map and updated query
+- introduce attention score and attention map
+- explain updated image with attention map
+- discuss helpfulness metric
+- describe negative correlation between error map and attention map
+- explain benefits of error-based explanation
+- discuss limitations of VQA model
+- introduce distributed computing architecture
+- describe backend server and edge-device
+- discuss offloading processing intensive tasks
+- explain server cluster and distributed processing
+- describe various computing architectures
+- discuss implementation of VQA model
+- explain benefits of synthesizing error map and attention map
+- discuss user experience and trust
+- introduce automatic unguided training
+- explain analysis of different VQA models
+- discuss deciding which VQA model to use
+- describe various aspects of techniques
+- explain benefits of techniques
+- conclude techniques
+- introduce VQA model
+- describe BERT model
+- describe answer prediction model
+- describe rationalizing model
+- describe error map generation module
+- describe attention map generation module
+- illustrate VQA model with error maps and attention maps
+- describe error map image
+- describe attention map image
+- determine overall helpfulness metric
+- illustrate error maps and attention maps with query
+- describe error heatmap
+- describe attention heatmap
+- illustrate confidence in result
+- describe flowchart of VQA model operation
+- receive query and image
+- process image and assign error scores
+- obtain error map
+- update image with error map
+- output error map image
+- process image and assign attention scores
+- generate attention map
+- update image with attention map
+- output attention map image
+- generate helpfulness metric
+- illustrate further VQA model operation
+- receive query and image
+- process image and assign error scores
+- obtain error map
+- generate attention map
+- update image with error map and attention map
+- output helpfulness metric
+- process ID to identify attention score
+- generate attention map based on attention scores
+- apply BERT algorithm to generate attention scores and attention map
+- generate helpfulness metric based on error map and attention map
+- synthesize error map and attention map to assign overall score
+- generate helpfulness metric as negative correlation between error map and attention map
+- output helpfulness metric for review
+- introduce example 1
+- describe computing system of example 1
+- process image to assign error score to each image feature
+- obtain error map based on error scores
+- update image to visually indicate error score
+- output error scores, error map, and updated image
+- introduce example 2
+- process image to identify attention score for each image feature
+- determine attention map based on attention scores
+- introduce example 3
+- update image to visually indicate basis by which model reached result
+- output attention scores, attention map, and updated image
+- introduce example 4
+- determine helpfulness metric based on error map and attention map
+- output helpfulness metric
+- introduce example 5
+- determine helpfulness metric as negative correlation between error map and attention map
+- introduce example 6
+- apply BERT model to identify attention score
+- describe implementation of techniques in hardware, software, or firmware
+- describe computer-readable medium containing instructions
+

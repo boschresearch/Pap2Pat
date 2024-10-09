@@ -1,0 +1,494 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce birth defects
+- statistics of birth defects in China
+- genetic factors of birth defects
+- chromosomal abnormalities
+- chromosomal aneuploidy
+- common genetic diseases of chromosomal aneuploidy
+- limitations of traditional screening methods
+- advantages of non-invasive prenatal screening
+- discovery of fetal cell-free DNA
+- development of non-invasive prenatal screening technology
+- clinical application of NIPS in China
+- sensitivity and specificity of NIPS
+- limitations of WGS method
+- SNP method for detection of chromosomal aneuploidy
+- advantages of SNP method over WGS method
+- current NIPS detection methods
+- limitations of WGS method in practical application
+- advantages of SNP method in practical application
+- targeted enrichment amplification primers for microdeletion/microduplication diseases
+- summary of current NIPS technology
+
+### SUMMARY
+
+- introduce method of analyzing nucleic acid molecules
+- capture target nucleic acid molecule using capture probe
+- analyze captured target nucleic acid molecule
+- target nucleic acid molecule is cell-free or cellular
+- isolate nucleic acid molecules from biological sample
+- amplify nucleic acid molecules
+- determine pairing kinetics
+- determine melting temperature
+- use Nearest Neighbor model
+- specify capture probe length
+- specify capture probe GC content
+- target region is proximal to or within specific genes
+- capture probe is free floating or bound to solid surface
+- analyze captured target nucleic acid molecule by sequencing
+- determine chromosomal abnormality or monogenic variant
+- specify chromosomal abnormality types
+- specify SNP site allele frequency
+- capture multiple target nucleic acid molecules
+- design capture probe
+- determine target region in reference genome
+- select capture probe sequence
+- specify capture probe sequence identity
+- provide composition of different capture probes
+- analyze fetal-derived nucleic acids
+- obtain sequence reads of nucleic acid molecules
+- identify informative SNP sites
+- determine chromosomal aneuploidy with one parental meiotic recombination
+- determine chromosomal aneuploidy with n parental meiotic recombinations
+- define chromosomal aneuploidy
+- introduce likelihood equations
+- define informative SNP sites
+- determine chromosomal aneuploidy
+- introduce method of analyzing fetal-derived nucleic acids
+- obtain sequence reads
+- identify informative SNP sites
+- determine likelihood of disomy and aneuploidy
+- calculate difference between likelihoods
+- determine maximum sum of differences
+- determine chromosomal microdeletion or microduplication
+- introduce alternative method of determining maximum sum
+- introduce beta-binomial distribution
+- calculate likelihood of disomy and aneuploidy using beta-binomial
+- introduce multinomial factor for karyotype
+- determine probability of specific fetal genotype
+- introduce method of analyzing fetal-derived nucleic acids for dominant monogenic variation
+- identify variant site
+- determine likelihood of paternally inherited or de novo fetal mutation
+- calculate difference between likelihoods
+- determine dominant monogenic variation
+- introduce method of determining fetal fraction
+- identify informative SNP sites for fetal fraction
+- determine fraction of sequence reads with alternative allele
+- determine fetal fraction
+- introduce computer system and non-transitory computer-readable storage medium
+- introduce system configured to perform methods
+
+## DETAILED DESCRIPTION
+
+- relate to nucleic acid molecule analysis
+- introduce non-invasive prenatal detection
+- describe COATE method
+- define capture probe
+- explain pairing kinetics
+- determine melting temperature
+- describe Nearest Neighbor model
+- specify capture probe length
+- specify capture probe GC content
+- apply method to target nucleic acid molecules
+- specify SNP site allele frequency
+- capture multiple target nucleic acid molecules
+- specify number of capture probes
+- describe capture probe binding
+- apply method to sequencing preparation
+- analyze captured target nucleic acid molecule
+- determine chromosomal abnormality
+- specify chromosomal abnormality types
+- design capture probe
+- select capture probe sequence
+- provide capture probe
+- specify capture probe sequence identity
+- provide composition of capture probes
+- specify composition capture probe sequence identity
+- analyze fetal-derived nucleic acids
+- detect chromosomal aneuploidy
+- identify informative SNP sites
+- determine likelihood of disomy or aneuploidy
+- calculate difference in likelihoods
+- determine maximum sum of differences
+- determine chromosomal aneuploidy with one recombination
+- specify equations for ΔL(H12) and ΔL(H21)
+- detect chromosomal aneuploidy with multiple recombinations
+- specify method for multiple recombinations
+- determine maximum sum of differences for multiple recombinations
+- specify equation for ΔL(H121)
+- define equation 2
+- define variables in equation 2
+- determine chromosomal aneuploidy with two parental meiotic recombinations
+- define equation 1
+- define variables in equation 1
+- determine chromosomal aneuploidy with three parental meiotic recombinations
+- define equation 2
+- define variables in equation 2
+- determine chromosomal aneuploidy with four parental meiotic recombinations
+- generalize method for determining chromosomal aneuploidy
+- increase sensitivity of detection
+- provide method for detecting chromosomal microdeletion and/or microduplication
+- obtain sequence reads of nucleic acid molecules
+- identify informative SNP sites
+- determine likelihood of fetus having disomy or aneuploidy
+- determine maximum sum of differences
+- determine chromosomal microdeletion or microduplication
+- use beta-binomial distribution to determine likelihood
+- define parameters for beta-binomial distribution
+- determine threshold range for detecting chromosomal aneuploidy
+- provide method for detecting dominant monogenic variation
+- obtain sequence reads of nucleic acid molecules
+- identify variant site
+- determine likelihood of alternative allele being paternally inherited or de novo fetal mutation
+- determine dominant monogenic variation
+- determine fetal fraction
+- introduce sequencing procedure
+- determine α based on systemic noise
+- determine α based on empirically measured value
+- capture nucleic acid molecules using capture probe
+- sequence captured nucleic acid molecules
+- apply method to cell-free or cellular nucleic acid molecules
+- apply method to various biological samples
+- treat subject upon detection of chromosomal aneuploidy
+- provide computer system for performing method
+- provide non-transitory computer-readable storage medium
+- provide system for performing method
+- use customized oligonucleotide probes for COATE
+- use NGS for quantitative analysis of chromosome and gene mutations
+- integrate multiple metrics for multidimensional analysis
+- describe WGS method for NIPS
+- describe high-depth targeted sequencing method
+- design target capture probe using COATE technology
+- detect chromosomal aneuploidy and monogenic mutations
+- select chromosomes of interest for probe design
+- detect fetal variation in maternal plasma
+- use targeted enrichment methods for detection
+- describe issue of allele drop-outs in enriching cfDNA
+- describe COATE method for suppressing bias
+- calculate difference in hybridization annealing temperature
+- design probes with minimal ΔTm to reference gene sequence
+- describe principle of sequence selection for probes
+- describe innovative aspects of detection method
+- compare WGS method and SNP method
+- describe advantages of SNP method
+- describe use of customized oligonucleotide probes
+- describe product for non-invasive detection
+- describe advantages of product
+- describe detection method for non-invasive prenatal screening
+- describe method of designing targeted capture probe
+- describe detection kit for non-invasive prenatal screening
+- describe device for non-invasive prenatal screening
+- describe computer-readable storage medium for non-invasive prenatal screening
+- describe system for non-invasive prenatal screening
+- describe use of targeted capture probe
+- describe detection method for non-invasive prenatal screening
+- describe operations of detection method
+- detect and calculate fetal fraction
+- select SNP sites for detection
+- use targeted capture probe for capturing cfDNA
+- calculate probability of fetus having normal or abnormal chromosome copy number
+- calculate karyotype probabilities of fetus
+- define calculation of fetal chromosome copy number variation
+- derive equation for distribution difference
+- explain detection threshold
+- introduce detection method for chromosome copy number
+- define calculation of fetal chromosome microdeletion/microduplication
+- derive equation for distribution difference
+- explain detection threshold
+- introduce detection method for chromosome microdeletion/microduplication
+- define calculation of dominant monogenic variation
+- derive equation for probability of paternal or de novo mutations
+- explain detection threshold
+- introduce detection method for dominant monogenic variation
+- combine calculations for non-invasive prenatal screening
+- explain use of targeted capture probe
+- introduce detection method for fetal chromosome copy number variation
+- introduce detection method for fetal chromosome microdeletion/microduplication
+- introduce detection method for dominant monogenic variation
+- explain limitations of detection method
+- introduce detection method with no limitation on fetal fraction calculation
+- detect and calculate fetal fraction of cell-free nucleic acids
+- explain calculation of fetal fraction
+- select chromosome sites for detecting fetal fraction
+- select SNP sites for detection
+- introduce detection method for non-invasive prenatal screening
+- use targeted capture probe in preparation of reagents or kits
+- use targeted capture probe for non-invasive prenatal screening
+- provide targeted capture probe for non-invasive prenatal screening
+- derive equations for sum of probabilities at chromosomal SNP sites
+- define equations for chromosomal aneuploidy detection
+- specify H1, H2 values
+- introduce detection method for non-invasive prenatal screening
+- describe targeted capture probe for gene mutations
+- specify selection of SNP sites
+- provide URLs of public databases
+- describe method of designing targeted capture probe
+- calculate annealing temperatures for probes
+- specify calculation equation for annealing temperature
+- describe operation of designing targeted capture probe
+- specify length of probe
+- introduce detection method for chromosome copy number variation
+- describe use of targeted capture probe
+- detect and calculate fetal fraction
+- select SNP sites
+- specify alleles and genotypes
+- use targeted capture probe for cfDNA capture and sequencing
+- calculate probability of normal or abnormal chromosome copy number
+- calculate karyotype probabilities
+- specify calculation equation for karyotype probabilities
+- calculate weighting coefficient πk
+- specify Hardy-Weinberg equation
+- specify allele frequency p
+- calculate p(FET) according to Mendel's Laws
+- calculate fetal chromosome copy number variation
+- specify calculation equation for distribution difference
+- specify H values
+- specify LD and LH values
+- specify M value
+- determine chromosomal aneuploidy
+- provide detection thresholds
+- introduce detection method
+- calculate fetal chromosome microdeletion/microduplication
+- derive calculation equation
+- define chromosomal aneuploidy
+- calculate dominant monogenic variation
+- derive probability equation
+- define parameters
+- calculate detection threshold
+- describe method for chromosome copy number variation
+- describe method for dominant monogenic variation
+- describe method for chromosome microdeletion/microduplication
+- describe method for non-diagnostic purposes
+- describe method for calculating fetal fraction
+- describe method for detecting and calculating fetal fraction
+- select chromosome site
+- select SNP site
+- describe equation for chromosomal recombination
+- describe equation for one or two chromosomal recombinations
+- describe targeted capture probe
+- select genes for targeted capture probe
+- prioritize SNP sites
+- select sites based on allele frequency
+- provide URLs of public databases
+- describe method for designing targeted capture probe
+- determine SNP site of interest
+- design probes
+- calculate annealing temperatures
+- calculate difference in annealing temperatures
+- select optimal probe
+- describe method for non-invasive prenatal screening
+- conclude detection method
+- define detection method
+- specify chromosome copy number variation
+- specify microdeletion/microduplication
+- specify dominant monogenic variation
+- introduce targeted capture probe
+- calculate Tm values
+- calculate ΔTm values
+- design four probes
+- calculate Tm using nearest neighbor model
+- specify probe length
+- design targeted capture probe
+- calculate ΔTm for reference gene sequence
+- calculate ΔTm for mutant gene sequence
+- select optimal probe
+- cover all genes containing gene mutations
+- specify genes covered
+- prepare targeted capture probe
+- introduce detection kit
+- specify targeted capture probe in kit
+- specify genes covered in kit
+- specify probe length in kit
+- introduce device for non-invasive prenatal screening
+- specify processor and memory
+- execute detection method
+- introduce computer-readable storage medium
+- store computer program
+- execute detection method
+- introduce system for non-invasive prenatal screening
+- detect cell-free nucleic acids
+- calculate probability of normal chromosome copy number
+- calculate karyotype probabilities
+- define detailed description
+- introduce mathematical equations for chromosomal aneuploidy detection
+- define variables for chromosomal aneuploidy detection
+- describe calculation of chromosomal aneuploidy
+- introduce system for non-invasive prenatal screening
+- describe calculation of fetal fraction
+- introduce selection of SNP sites
+- describe calculation of chromosomal aneuploidy with chromosomal recombination
+- introduce targeted capture probe
+- describe genes covered by targeted capture probe
+- describe length of targeted capture probe
+- introduce use of targeted capture probe
+- describe preparation of targeted capture probe
+- describe genes covered by targeted capture probe
+- describe length of targeted capture probe
+- introduce method for non-invasive prenatal screening
+- describe operations of detection method
+- define percent sequence identity
+- introduce algorithms for determining percent sequence identity
+- describe software for BLAST analysis
+- define nucleotide sequence having at least 90% sequence identity
+- describe hybridization conditions
+- classify hybridization conditions by stringency
+- describe highest stringency condition
+- describe higher stringency condition
+- describe moderate stringency condition
+- describe low stringency condition
+- describe function of highest stringency condition
+- describe function of higher stringency condition
+- introduce Sambrook et al. reference
+- describe moderate stringency conditions
+- describe pre-washing conditions
+- describe hybridizing conditions
+- describe washing conditions
+
+### Computer System
+
+- introduce computer system
+- define computer system components
+- describe subsystems
+- explain system bus
+- list peripherals and input/output devices
+- describe data collection device
+- introduce computer control systems
+- describe computer system 1101
+- explain central processing unit (CPU)
+- describe memory and storage unit
+- explain communication interface
+- describe peripheral devices
+- explain communication bus
+- introduce computer network
+- describe network types
+- explain distributed computing
+- describe peer-to-peer network
+- explain CPU operations
+- describe circuit and integrated circuit
+- explain storage unit functions
+- describe data storage units
+- explain remote computer systems
+- describe user access
+- introduce machine-executable code
+- explain code storage
+- describe code execution
+- explain programming language
+- describe machine-readable medium
+- list types of machine-readable media
+- explain user interface
+- describe algorithm implementation
+- explain control logic
+- describe software components
+
+### Other Embodiments
+
+- introduce section headings
+- explain methodology variations
+- describe terminology limitations
+- explain scope of disclosure
+
+## EXAMPLES
+
+- illustrate various embodiments of the invention
+
+### Example 1: Capture of DNA with the Target Probe
+
+- separate plasma and extract cell-free DNA
+- extract cell-free DNA using TIANGEN Magnetic Serum/Plasma DNA Maxi Kit
+- sequence library construction
+- end repairing of cell-free DNA
+- linker addition reaction
+- PCR amplification and sequencing tag addition
+- fragment screening, purification, and recovery
+- quantify library using Qubit 1× dsDNA HS Assay Kit
+- enrich library samples
+- hybridize library with Cot-1 DNA and XP magnetic beads
+- wash XP magnetic beads
+- elute library from XP magnetic beads
+- prepare eluant
+- add eluant to XP magnetic beads
+- incubate and mix XP magnetic beads
+- transfer hybridization sample to new PCR tube
+- add M-270 magnetic beads to PCR tube
+- wash M-270 magnetic beads
+- elute captured DNA library from M-270 magnetic beads
+- PCR amplify captured DNA library
+- purify PCR amplified library
+- quantify purified library using Qubit dsDNA HS Assay Kit
+- detect library quality using electrophoresis
+- analyze enrichment degrees of target region
+- compare capture efficiencies for target region
+- quantify enrichment degrees of target region
+
+### Example 2: Sequencing
+
+- perform sequencing using MGI high-throughput sequencing platform
+- quantify library concentration and fragment length
+- cyclize library
+- prepare DNA nanoballs (DNB)
+- perform data splitting and comparison
+
+### Example 3: The Coordinative Allele-Aware Target Enrichment Improves Capture Homogeneity of Alleles in Target Region
+
+- design capture probes using COATE method
+- capture target sequences using designed probes
+- perform high-throughput sequencing
+- compare mutation frequencies of hybridized probes
+- analyze capture homogeneity of alleles
+- compare variances of different sites
+- compare central allele fraction (CAF) of germ-line heterozygote mutation
+
+### Example 4: Determination of the Negative Threshold of Trisomy 21 Syndrome
+
+- introduce fetal aneuploidy detection method
+- detect and calculate fetal fraction
+- select SNP sites in chromosome to be detected
+- capture cell-free DNA and sequence
+- calculate probability of normal or abnormal chromosome copy number
+- calculate karyotype probabilities of fetus at each SNP site
+- calculate chromosome copy number variation
+- determine chromosomal aneuploidy
+- calculate sum of probabilities at chromosomal SNP sites
+- analyze results
+- set negative threshold
+- determine false positive rate
+
+### Example 5: Determination of the Positive Threshold of Trisomy 21 Syndrome
+
+- mix positive reference sample and maternal DNA
+- analyze results and set positive threshold
+
+### Example 6: Detection of Trisomy 21 Syndrome in Maternal Plasma
+
+- analyze results of maternal plasma samples
+
+### Example 7: Detection of Trisomy in which Homologous Chromosome Recombination has Occurred
+
+- describe trisomy formation process
+- calculate likelihood value of fetal trisomy
+- consider mixing mode of L(MI/MII) or L(MII/MI)
+- calculate sum of probabilities at SNP sites
+- analyze results
+- determine chromosomal aneuploidy
+- set detection threshold
+
+### Example 8: Detection of Chromosome Microdeletion (Example of DiGeorge)
+
+- mix positive reference cell line and maternal cell line
+- analyze results
+
+### Example 9: Detection of Dominant Monogenic Variation (FGFR3:.pG380R)
+
+- mix fetal and maternal DNAs
+- calculate probability of paternal or de novo mutations
+- define system error rate
+- calculate ΔL
+- determine gene mutation
+- show sequence of capture probe
+- analyze detection result
+- determine system error rate
+- determine probabilities ΔL of gene mutations
+

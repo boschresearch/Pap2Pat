@@ -1,0 +1,121 @@
+{
+    "id": "https://semopenalex.org/work/W4238117232",
+    "authors": [
+        "Leslie Cope",
+        "Christopher B. Umbricht",
+        "Martha A. Zeiger",
+        "Yongchun Wang",
+        "Zhiyang Liu",
+        "Lisa M. Rooper",
+        "Brittany McKelvey"
+    ],
+    "title": "Retrospective Analysis of Cancer-Specific Gene Expression Panel for Thyroid Fine Needle Aspiration Specimens.",
+    "date": "2021-06-08",
+    "abstract": "Background: While molecular testing is a promising strategy for preoperative assessment of cytologically indeterminate thyroid nodules, thyroid fine needle aspiration biopsy (FNA) presents unique challenges for molecular assays, including contaminating peripheral blood mononuclear cells (PBMC) and variable numbers of evaluable epithelial thyroid cells. Moreover, the newly recognized entity, noninvasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP), has added an additional challenge to the currently available molecular diagnostic platforms. New diagnostic tools are still needed to correctly distinguish benign and malignant thyroid nodules preoperatively. Methods: Twenty-two transcript splice variants from 12 genes we previously identified as discriminating benign from malignant thyroid nodules were characterized in 80 frozen thyroid tumors from 8 histological subtypes. Isoforms detectable in PBMC were excluded, and the 5 most discriminating isoforms were further validated by real-time quantitative PCR (qPCR) on intraoperative FNA samples from 59 malignant tumors, 55 benign nodules, and 23 NIFTP samples. The qPCR threshold cycle values for each transcript were normalized to the thyrocyte-specific thyroid peroxidase isoform 1 (TPO1) and z-transformed. Receiver operating characteristic (ROC) analyses of the composite transcript scores were used to evaluate classification of thyroid FNAs by the 5-gene isoform expression panel. Results: A molecular signature was developed by combining expression levels of specific isoforms of CDH3, FNDC4, HMGA2, KLK7, and PLAG1. FNAs containing at least 12-36 thyrocytes were sufficient for this assay. The 5-gene composite score achieved an area under the ROC curve (AUC) of 0.86 for distinguishing malignant from benign nodules, with a specificity of 91%, sensitivity of 75%, negative predictive value of 91% and positive predictive value of 74%. Conclusion: Our newly developed 5-gene isoform expression panel distinguishes benign from malignant thyroid tumors and, may help distinguish benign from malignant thyroid nodules in the context of the new NIFTP subtype.",
+    "sections": [
+        {
+            "title": "Background",
+            "paragraphs": [
+                "Thyroid cancer incidence is rapidly increasing worldwide. In the United States, its prevalence has nearly quadrupled over the past 15 years, predominantly due to the increased incidence of papillary thyroid carcinoma (PTC) (1). Thyroid nodules are detectable by ultrasound in over 50% of the adult population, and ne needle aspiration (FNA) cytopathology is the most accurate means of pre-operative diagnosis.",
+                "However, up to 30% of the FNA samples result in indeterminate cytology: atypia of undetermined signi cance/follicular lesion of undetermined signi cance (Bethesda III), follicular neoplasm/suspicious for a follicular neoplasm (Bethesda IV), and suspicious for malignancy (Bethesda V) (2), demonstrating inherent limitations of visual microscopic diagnosis. The situation has been further complicated by the recent reclassi cation in the American Thyroid Association management guidelines for thyroid tumors of a previously considered malignant subgroup of follicular variant of papillary thyroid carcinoma (FVPTC) to the noninvasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP), an indolent neoplasm with questionable malignant potential (3). NIFTP cannot be differentiated from invasive FVPTC by cytopathology, however, and requires histopathologic evaluation for diagnosis (2,4).",
+                "In the last decade, molecular testing has emerged as a promising strategy for the preoperative assessment of thyroid nodules to enable clinicians to better tailor surgical interventions and avoid overtreatment of benign disease. ThyroSeq v3 next generation sequencing (CBL Path, Rye Brook, NY) (5) A rma gene expression with recently upgraded gene sequencing classi ers (Veracyte, South San Francisco, CA)(6), and ThygenX/ThyraMIR gene mutation and miRNA analysis (Interpace Diagnostics, Parsippany, NJ) (7) are major molecular tests currently in clinical use in the United States. The DNAbased tests, however, are limited by the prevalence of several of the assessed mutations in benign thyroid lesions (8, 9), and all tests suffer from a lack of speci city after the introduction of the newly de ned NIFTP subtype (10)(11)(12)(13). Indeed, both ThyroSeq and A rma tests currently report NIFTP as \"positive\" or \"suspicious\" for malignant disease. In a recent study, the positive predictive value (PPV) of ThyroSeq mutational analysis panels (including 7-gene ThyroSeq and ThyroSeq V2) decreased from 43-14% and A rma gene expression classi er from 30-25% ( 14), if NIFTP was classi ed as non-malignant.",
+                "Before the introduction of the NIFTP subtype, our group performed a transcriptome microarray analysis of 125 tumor samples representing the most common epithelial thyroid tumor diagnoses: adenomatoid nodules (AN), follicular adenomas (FA), H\u00fcrthle cell adenomas (HA), follicular carcinomas (FC), H\u00fcrthle cell carcinomas (HC), FVPTC, and PTC, and identi ed over 75 transcripts that were differentially expressed between benign and malignant tumors (15). In a follow-up study, we further characterized 14 of these transcripts by a combination of immunohistochemical and quantitative reverse transcription-PCR assays, and identi ed a candidate 3-gene panel as a potential preoperative diagnostic tool for FNA samples (16).",
+                "In the current study, we selected 12 of the 14 genes based on their diagnostic performance in a receiver operating characteristic (ROC) analysis, to determine if newly characterized speci c isoforms further improved their diagnostic performance, including cases of the pathologically con rmed NIFTP tumor subtype. We also investigated isoforms of thyroglobulin and thyroid peroxidase (TPO) to identify a thyrocyte-speci c load control, since, in contrast to qualitative markers such as mutations, quantitative molecular assessments are complicated by highly variable samples and admixture of non-thyroid derived cells like peripheral blood mononuclear cells (PBMC). Finally, we tested our 5 best performing candidate isoforms directly in intra-operatively obtained FNA samples."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Clinical samples",
+            "paragraphs": [
+                "Under Institutional Review Board approval, thyroid tumor tissue, intraoperative FNA, and blood specimens were collected from patients undergoing thyroid surgery at Johns Hopkins Hospital. Intraoperative FNAs were collected from the tumor with a 25-gauge needle syringe immediately prior to resection and preserved in 95% Ethanol at -20\u00b0C, or in RNALater at -80\u00b0C. The FNA site was marked intraoperatively to ensure correlation with the nal pathological diagnosis. During pathological prosection, an aliquot of tumor tissue was snap frozen in liquid nitrogen and stored at -80\u00b0C. Tumor tissue was identi ed by hematoxylin and eosin staining of frozen tissue sections, and nal surgical pathological diagnoses of samples were con rmed by a pathologist. All FVPTCs were re-reviewed to allow reclassi cation of NIFTPs from FVPTCs where indicated. PBMCs were isolated from patient blood drawn intraoperatively with Ficoll-Paque Plus (GE Healthcare) and stored at -80\u00b0C."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "RNA isolation and reverse transcription",
+            "paragraphs": [
+                "Total RNA from 80 frozen thyroid tumors (15 ANs, 14 FAs, 10 HAs, 5 NIFTPs, 7 FVPTCs, 7 HCs, 7 FCs, and 15 PTCs) and PBMCs from 31 thyroid patients were isolated with Trizol (Invitrogen) and RNeasy Mini Kit (Qiagen) following the manufacturer's instructions. cDNA was synthesized by reverse transcription with 500 ng of total RNA using SuperScript III reverse transcriptase (Invitrogen). Total RNA from single pass FNA samples was isolated using GenElute Single Cell RNA Puri cation Kit (Sigma-Aldrich) following the manufacturer's instructions. Because of the variable number of thyroid cells in individual FNA samples, the entire total RNA elution volume (11 \u00b5l) was used for cDNA synthesis."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "PCR of thyroid tumor tissue and PBMC samples",
+            "paragraphs": [
+                "Each PCR assay was performed with 5% of total cDNA using Platinum Taq DNA polymerase (Invitrogen) following the manufacturer's instructions. Ampli ed DNA was analyzed by agarose gel electrophoresis (see below) for 22 isoforms from 12 genes, CEACAM6, CDH3, DIRAS3, DPP4, FNDC4, HMGA2, KLK7, MRC2, SFN, c-KIT, PRSS3, and PLAG1. Additionally, 4 isoforms of thyroglobulin and thyroid peroxidase (TPO) were assessed as potential thyrocyte-speci c load control on solid thyroid tumor and PBMC samples. Glyceraldehyde-3-phosphate dehydrogenase (GapDH, NM_002046) served as a total RNA load control."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Real-time quantitative PCR (qPCR) on FNA samples",
+            "paragraphs": [
+                "Selected target and reference gene isoforms were tested by real-time qPCR on 159 FNA samples from 6 con rmed surgical histological subtypes of thyroid tumors; AN, FA, HA, NIFTP, FVPTC, and PTC. (See supplemental Table S1 for PCR primer sequences.) Gene expression was quantitated in duplicate using 5% of total cDNA in each assay and Power SYBR Green Master Mix (Applied Biosystems) on a Bio-Rad iQ5 thermal cycler for 40 cycles. The Ct values of the duplicates were averaged. Serial dilutions of frozen tumor RNA were used to establish the threshold of detectability of the selected thyrocyte-speci c reference gene in the assay, and an ampli cation threshold cycle (Ct) value > 30 was chosen to exclude sample from further analysis for lack of su cient thyrocytes"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Data analysis",
+            "paragraphs": [
+                "For the initial selection of candidate gene isoforms on frozen tumor tissue samples, semi-quantitative densitometry using BioRad Quantity One image analysis software was used to select the isoforms showing the highest levels of differential expression between cancer and non-cancer samples on agarose gel electrophoresis images. Expression levels of each isoform were assessed by normalizing to the RNA load control gene GapDH and then z-transformed, so all genes could be assessed on the same scale.",
+                "For the subsequent qPCR analysis of FNA samples, the relative expression of each target gene was calculated with respect to the reference load control gene TPO1 [\u2206Ct = Ct (target) -Ct (reference)] and then z-transformed for assessment. When a target gene was undetectable after 40 cycles, the sample was assigned the maximum observed \u2206Ct value + 5% of the standard deviation of the \u2206Ct values observed for that gene across all samples.",
+                "The ability of the candidate genes to distinguish between malignant and benign thyroid tumor subtypes was evaluated using ROC analysis. Overall performance was measured as the AUC.",
+                "We then applied Bayes Rule to estimate the positive predictive value (PPV) and negative predictive value (NPV) from our observed sensitivity and speci city using the tumor prevalence rates reported by Steward et al (17).",
+                "The overall work ow of the study in shown in supplemental Figure S1."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Candidate gene isoform selection by reverse transcription-PCR using tumor tissues and PBMCs",
+            "paragraphs": [
+                "The 22 selected transcript isoforms were characterized on frozen tumor tissue samples from 15 ANs, 14 FAs, 10 HAs, 5 NIFTPs, 7 FVPTCs, 7 HCs, 7 FCs, and 15 PTCs, using semi-quantitative PCR. Five transcript isoforms from the following genes: CDH3, FNDC4, HMGA2, KLK7, PLAG1 showed the most differential expression among thyroid cancers, NIFTPs, and benign tumors (Table 1, Fig. 1), as determined by image analysis of agarose gel electrophoresis of the PCR products. Importantly, none of the isoforms were detectable in PBMCs from 31 patients (Figure S2). Among the candidate thyrocyte load-control isoforms of TPO and thyroglobulin tested, TPO1 was the only isoform not detectable in PBMCs (Figure S3) and stably expressed across the well-differentiated thyroid tumor subtypes (Fig. 1a). Therefore, TPO1 was selected as the load control for thyroid cell content of FNA samples. One recurrent metastatic HC showed markedly reduced TPO1 levels (Fig. 1a). No FNA samples of this case were available for testing, however.",
+                "Validation of the 5 candidate gene isoforms on an independent cohort of FNA samples Seven (4.4%) of the 159 FNA samples tested had no detectable TPO1 expression with 40 qPCR cycles and, were therefore excluded from the study. Serial dilutions of thyroid tissue-derived RNA revealed that TPO1 was detectable at 30 qPCR cycles using a minimum of 370 pg of total RNA, which corresponds to the total RNA of approximately 12-36 cells (18), lower than the cytopathological threshold of minimal thyrocyte content in FNA samples (6 clusters of at least 10 follicular epithelial cells on 2 or more slides) (19). We therefore selected a TPO1 threshold Ct value of 30 to include FNA samples for our study, a criterion met by a total of 137 of 159 (86.2%) FNA samples tested. There was no signi cant difference in the fail rates across the diagnostic subgroups tested. Table 2 summarizes the patient information for the FNAs used. The TPO1-normalized \u2206Ct data were z-transformed to create a z-\u2206Ct score for the expression of each target gene. Figure 2 shows the expression pro les of the selected CDH3, FNDC4, HMGA2, KLK7, PLAG1 isoforms and the composite z-\u2206Ct score in the 6 thyroid tumor subtypes tested (AN, FA, HA, NIFTP, FVPTC, and PTC). Each individual isoform showed higher expression in malignant thyroid tumors, than in benign. When summing the 5 transcripts, the composite z-\u2206Ct score exhibited a differential pro le among thyroid tumors (Fig. 2f).",
+                "An ROC analysis (Fig. 3a) was used to evaluate the ability of our 5-gene isoform expression panel to differentiate benign tumors (AN, FA, HA, and NIFTP, n = 78) from malignant tumors (FVPTC and PTC, n = 59). Overall performance was measured as the AUC, which was 0.86. Several combinations of sensitivity and speci city, representing points along the ROC curve, are shown in Table 3 as well. One of these combinations is highlighted on the ROC curve and on the strip-plots in Fig. 2. Corresponding to a threshold for the composite expression score (z-\u2206Ct) of -1, this value was chosen to maximize sensitivity (75%) while controlling speci city above 90% (actual value = 91% We used the prevalence rates from a previous large multicenter study (17) to apply Bayes Rule to estimate the NPV and PPV from our observed sensitivity and speci city, resulting in an NPV of 91% and a PPV of 74% (Table 3). Variations of this calculation, assuming malignant sample prevalence rates ranging from 20-30%, are shown in Supplemental Table S2.",
+                "The panel also signi cantly differentiated the NIFTPs from the malignant PTCs and FVPTCs (26.1% of NIFTPs versus 74.6% of cancers with scores > -1, p = 0.0002). Further, the comparison between NIFTP versus invasive FVPTC showed a statistically signi cant separation (p < 0.05)."
+            ],
+            "subsections": [
+                {
+                    "title": "Discussion",
+                    "paragraphs": [
+                        "In the past decade, molecular testing has emerged as a promising method to increase the accuracy of the preoperative diagnosis of malignant thyroid tumors. Several molecular diagnostic tests, including RNA based gene expression and multi-panel mutation genotyping analysis are commercially available for clinical use (17,20). Available tests remain, however, limited by relatively low speci city and PPV (21,22). Furthermore, the recent reclassi cation of a subgroup of malignant FVPTC to clinically \"benign\" NIFTP has further complicated the situation, since prior publications assessing the performance of commercially available molecular tests were based upon NIFTP being categorized as malignant. Indeed, most NIFTPs were reported as suspicious/malignant by expression based A rma or mutation and gene fusion based ThyroSeq in several studies (14,21,23,24).",
+                        "Our group previously carried out a series of studies to identify genetic markers for distinguishing cancer from benign thyroid tumors using genome-wide gene expression arrays (15,16). In this study, we have developed a molecular test for evaluating preoperative thyroid FNAs taking NIFTP lesions into consideration, by further characterizing isoforms of our previously pro led gene candidates.",
+                        "Taking advantage of the improved annotation of the human genome over the last decade, we rst explored expression of a broad range of splice variants of our 12 gene set in frozen thyroid tumor samples to select candidates which were differentially expressed in benign and malignant neoplasms. In this study, the 5 isoforms of CDH3, FNDC4, HMGA2, KLK7, and PLAG1 we identi ed showed potential in differentiating different thyroid tumor subtypes, and importantly, were chosen because they were not expressed in PBMCs. In FNA samples, quantitative molecular tests must address the contribution from PBMCs. Positive or negative selection using antibody-coated magnetic beads can minimize their contribution, but their use decreases overall assay sensitivity (data not shown). In the absence of selection, the load control reference gene needs to re ect the number of thyrocytes in FNA samples rather than a standard total RNA content measure. In our study, we tested two isoforms of TPO and two of thyroglobulin. Only TPO1 was found to have constant levels of expression across differentiated thyroid tumor subtypes (Fig. 1a) and importantly, was undetectable by PCR after 40 cycles in any of the 31 PBMC samples obtained perioperatively (Figure S3). We did observe, however, a decrease in TPO1 expression in one large HC metastasis, possibly a consequence of loss of differentiation in this recurrent advanced tumor.",
+                        "The 5-isoform panel was tested using our intraoperative FNA samples. In this study, only a single pass of needle aspirate from each tumor was used for our analysis. To ensure the reliability of the assay, only samples reaching a TPO1 threshold of detectability of 30 cycles or less were included in this study. Only 7 (4.4%) of FNA samples showed no detectable TPO1, and 137 (86.2%) of 159 FNA samples met our threshold and produced reliable gene expression pro les. This compares favorably with reported 2-20% of cases yielding cytopathologically non-diagnostic results with two to ve FNA passes (25).",
+                        "In our study, quantitative PCR data generated from 137 quali ed FNA samples demonstrated a differential expression among benign and malignant thyroid tumors. The ROC analysis shows our 5isoform panel has an 86% ability to distinguish benign thyroid tumors (AN, FA, and HA) and NIFTP from malignant tumors (FVPTC and PTC), with a speci city of 91% at a sensitivity of 75%, resulting in an NPV of 91% and a PPV of 74%.",
+                        "The thyroid follicular-patterned lesions, FA, NIFTP, and FVPTC, contribute the most to the indeterminate cytologies. Molecularly, they all are frequently associated with RAS mutations (26). Currently, histologic evaluation of capsule and vascular invasion is necessary for diagnosis of NIFTP. Thus, an accurate diagnosis of NIFTP is impossible by preoperative cytology or mutation based molecular tests. Nevertheless, NIFTP is an indolent lesion with < 1% risk of recurrence (27), and should not be treated as thyroid cancer, although it may warrant resection as potential premalignant lesion.",
+                        "The NIFTP classi cation is new. Currently, the reclassi ed indolent NIFTP is still considered as a surgical disease by most endocrinologists. Its separation from malignant FVPTC may signi cantly impact clinical treatment decisions, leading to lesser surgical and other ablative procedures, and potentially simple observation as therapeutic options, which are currently under active investigation. More studies, especially prospective long-term follow-up studies, are needed to evaluate its behavior, progression, and optimal management. Finding tools for accurate preoperative identi cation of NIFTP will promote the study and management for this lesion. The data presented here show our newly developed 5-isoform panel may reduce cytologically and molecularly indeterminate diagnoses.",
+                        "Our study also has a number of limitations, foremost the number of available intraoperative FNAs, which also do not exactly replicate the standard preoperative diagnostic FNAs typically obtained percutaneously in a clinic setting. We limited ourselves to epithelial thyroid tumors, and were unable to obtain FNA samples from the infrequent FC and HC cases encountered in the timespan samples were collected for this study. Therefore, although the available FC and HC tissue samples had high scores, suggesting the selected isoform panel may do well diagnostically, the performance of the panel in these cases remains unknown for FNAs."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Conclusions",
+                    "paragraphs": [
+                        "In conclusion, we have developed a 5-transcript model combining speci c splice variants of HMGA2, PLAG1, KLK7, FNDC4, and CDH3 to better characterize thyroid nodules using the technically challenging but clinically relevant diagnostic FNA samples. Further validation trials will be needed to develop this panel as a diagnostic assay to guide preoperative surgical decision making for thyroid tumors.   "
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Funding.",
+                            "paragraphs": [
+                                "This work was supported by a grant from the TEDCO-Maryland Innovation Initiative #2016-MII-3379, awarded to CBU."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Availability of Data and Material.",
+                            "paragraphs": [
+                                "The datasets used during the current study are available from the corresponding author on reasonable request."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Supplementary Files",
+                    "paragraphs": [
+                        "This is a list of supplementary les associated with this preprint. Click to download. "
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

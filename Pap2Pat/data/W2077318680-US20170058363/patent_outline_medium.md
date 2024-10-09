@@ -1,0 +1,164 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define scope of invention
+
+## BACKGROUND OF THE INVENTION
+
+### Introduction
+
+- introduce Acropora genus
+- motivate microsatellite markers
+
+## SUMMARY OF THE INVENTION
+
+- define method for identifying Acropora genus
+- detect microsatellite loci in genome
+- list microsatellite loci
+- describe 5' flanking region of locus 8346m3
+- describe 3' flanking region of locus 8346m3
+- describe 5' flanking region of locus 7961m4
+- describe 3' flanking region of locus 7961m4
+- describe 5' flanking region of locus 11745m3
+- describe 3' flanking region of locus 11745m3
+- describe 5' flanking region of locus 12406m3
+- describe 3' flanking region of locus 12406m3
+- describe 5' flanking region of locus 11543m5
+- describe 3' flanking region of locus 11543m5
+- describe 5' flanking region of locus 530m4
+- describe 3' flanking region of locus 530m4
+- describe 5' flanking region of locus 11401m4
+- describe 3' flanking region of locus 11401m4
+- describe 5' flanking region of locus 441m6
+- describe 3' flanking region of locus 441m6
+- describe 5' flanking region of locus 11292m4
+- describe 3' flanking region of locus 11292m4
+- describe primer pairs for amplifying microsatellite loci
+- describe amplification of microsatellite loci using genomic DNA
+- define primer pairs
+- list primer pairs
+- describe primer modification
+- define microsatellite locus
+- list microsatellite loci
+- describe primer pair selection
+- list primer pair options
+- describe primer sequence identity
+- list primer sequence identity options
+- describe primer pair composition
+- list primer pair composition options
+- describe primer sequence similarity
+- list primer sequence similarity options
+- describe primer pair selection criteria
+- summarize primer pair options
+- define primer pairs
+- list primer pairs
+- list primer pairs
+- describe primer modification
+- introduce method for identifying Acropora species
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- list microsatellite loci
+- define primer pairs
+- specify primer sequences
+- describe microsatellite locus amplification
+- specify primer pairs for microsatellite locus amplification
+- describe primer selection
+- specify primer pairs for primer selection
+- describe additional primer feature
+- specify M13 primer sequence
+- describe primer pair combinations
+- specify primer pair combinations
+- describe microsatellite locus detection
+- specify microsatellite locus detection
+- describe Acropora species identification
+- specify Acropora species identification
+- describe genomic DNA template
+- specify genomic DNA template
+- define primer pair
+- specify microsatellite locus
+- describe primer composition
+- specify primer sequence identity
+- describe primer pair selection
+- specify microsatellite locus 8346m3
+- specify microsatellite locus 7961m4
+- specify microsatellite locus 11745m3
+- specify microsatellite locus 12406m3
+- specify microsatellite locus 11543m5
+- specify microsatellite locus 530m4
+- specify microsatellite locus 11401m4
+- specify microsatellite locus 441m6
+- specify microsatellite locus 11292m4
+- specify microsatellite locus 8499m4
+- specify microsatellite locus 7203m5
+- specify microsatellite locus 10366m5
+- specify microsatellite locus 12130m5
+- list primer pairs
+- describe primer pair composition
+- introduce method for identifying alleles
+- list microsatellite loci
+- describe kit for determining PCR size polymorphic alleles
+- list primer pairs for kit
+- describe primer pair composition for kit
+- provide sequence identity requirements
+- specify consecutive nucleotides requirement
+- conclude kit primer pair options
+- define primer pairs
+- list primer pairs
+- define primer pairs with SEQ ID NO
+- list primer pairs with SEQ ID NO
+- introduce method for quantifying chimerism
+- identify microsatellite loci
+- list microsatellite loci
+- determine molar percentages of genomic DNA
+- provide index of level of chimerism
+- introduce kit for quantifying chimerism
+- describe kit components
+- conclude kit description
+- define microsatellite loci
+- describe primer pairs
+- specify kit for quantifying chimeric coral colony
+- describe primer pairs for kit
+- specify kit for quantifying level of chimerism
+- describe primer pairs for kit
+- list microsatellite locus 8346m3
+- list microsatellite locus 7961m4
+- list microsatellite locus 11745m3
+- list microsatellite locus 12406m3
+- list microsatellite locus 11543m5
+- list microsatellite locus 530m4
+- list microsatellite locus 11401m4
+- list microsatellite locus 441m6
+- list remaining microsatellite loci
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define "about" in numerical values
+- define "a" or "an" as "at least one"
+- define "identifying a subject to Acropora genus"
+- define "subject" as biological material
+- define "PCR" as polymerase chain reaction technology
+- describe preparation of genomic DNA
+- define "comprising at least 17 consecutive nucleotides"
+- define "having at least 90% sequence identity to a sequence"
+- define "identifying an allele of a microsatellite locus"
+- define "determining a PCR size polymorphic allele"
+- describe method and kit for determining PCR size polymorphic allele
+- define "an index of chimeric level"
+- describe determination of index of chimeric level
+- introduce examples
+- describe materials and methods
+- describe genomic DNA isolation and sequencing
+- describe primer design and selection
+- describe PCR amplification and fragment analysis
+- present results and discussion
+

@@ -1,0 +1,312 @@
+{
+    "id": "US20110197684",
+    "authors": [
+        "Kambiz Vafai",
+        "Abdul Rahim A. Khaled"
+    ],
+    "title": "EPSILON-SHAPED MICROCANTILEVER ASSEMBLY WITH ENHANCED DEFLECTIONS FOR SENSING, COOLING, AND MICROFLUIDIC APPLICATIONS",
+    "date": "2011-04-27 00:00:00",
+    "abstract": "An assembly of microcantilever-based sensors with enhanced deflections. A deflection profile of an \u03b5-assembly can be compared with that of a rectangular microcantilever and a modified triangular microcantilever. Various force-loading conditions can also be considered. A theorem of linear elasticity for thin beams is utilized to obtain the deflections. The obtained defections can be validated against an accurate numerical solution utilizing a finite element method with a maximum deviation of less than 10 percent. The \u03b5-assembly produces larger deflections than the rectangular microcantilever under the same base surface stress and same extension length. Also, the \u03b5-microcantilever assembly produces a larger deflection than a modified triangular microcantilever. The deflection enhancement increases as the \u03b5-assembly's free length decreases for various types of force loading conditions. The \u03b5-microcantilever can be utilized in microsensing applications to provide a favorable high detection capability with a reduced susceptibility to external noises.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "Embodiments generally relate to sensors with enhanced deflections comprising microcantilever-based sensors."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 107,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define microcantilever-based sensors"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "The rapid growth of nanotechnology has led to developments of new sensing devices of micrometer size coined as microsensors. These devices can be used to detect, measure, analyze, and economically monitor low concentrations of chemical and biological agents. The monitoring of a specific substance is pivotal in many applications especially for clinical purposes. This is in order to screen a patient for the presence of a disease at an early stage. Microcantilevers based microsensors have been proven to be very sensitive and accurate. See Wu G, Ji H, Hansen K, Thundat T, Datar R, Cote R, Hagan M F, Chakraborty A K, and Majumdar A (2001) Origin of Nanomechanical cantilever motion generated from biomolecular interactions, PNAS, 98:1560-1564.",
+                        "The changes in the physical properties of the microcantilever are considered to indicate or detect changes in the environment surrounding it. The most often considered physical property is the deflection. The deflection of the microcantilever was first used for atomic force microscopy. However, it is mainly used to indicate the presence or absence of a certain analyte. See Alkamine S, Barrett R. C., and Quate C. F. (1990) Improved atomic force microscope images using microcantilevers with sharp tips, Appl. Phys. Lett., 57:316 and Raiteri R, Nelles G, Butt H-J, Knoll W, and Skladal P (1999) Sensing of biological substances based on the bending of the microfabricated cantilevers, Sens. Actuators B, 61:213-217.",
+                        "The magnitude of microcantilever deflection is of the order of nanometers and it is usually measured using an optical method. The noise level in the surrounding environment affects the performance of the microcantilever as a sensing device. For example, Raiteri R, Nelles G, Butt H-J, Knoll W, and Skladal P (1999), Sensing of biological substances based on the bending of the microfabricated cantilevers, Sens. Actuators B, 61:213-217 reported that the microcantilever deflection due to flow disturbances and due to thermal effects could reach 5-10 times that due to analyte sensing. Accordingly, further developments in microcantilever technology is necessary in order to magnify the deflection signal due to the sensing effect so that its signal can be easily distinguished from the noise signal. See Fritz J, Bailer M K, Lang H P, Rothuizen H, Vettiger P, Meyer E, Guntherodt H-J, Gerber Ch, and Gimzewski J K (2000) Translating biomolecular recognition into nanomechanics, Science, 288:316-8, Yang M, Zhang X, Vafai K, and Ozkan C S (2003) High sensitivity piezoresistive cantilever design and optimization for an analyte-receptor binding, J. Micromech. Microeng., 13:864-72, and Khaled A.-R. A. and Vafai, K. (2004) Optimization modelling of analyte adhesion over an inclined microcantilever-based biosensor, J. Micromech. Microeng., 14:1220-29. As such, Khaled A-R A, Vafai K, Yang M, Zhang X, and Ozkan C S (2003) Analysis, control and augmentation of microcantilever deflections in bio-sensing systems, Sens. Actuators B, 94:103-115, pointed out the necessity of establishing special microcantilevers assemblies for this purpose."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce microsensors",
+                        "motivate microcantilever-based sensors",
+                        "describe deflection of microcantilever",
+                        "discuss limitations of microcantilever deflection",
+                        "summarize prior art",
+                        "motivate need for improvement"
+                    ],
+                    "num_characters": 3105,
+                    "outline_medium": [
+                        "introduce microsensors",
+                        "motivate microcantilever-based sensors",
+                        "discuss limitations of microcantilever deflection"
+                    ],
+                    "outline_short": [
+                        "motivate microcantilever technology"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY",
+                    "paragraphs": [
+                        "The following summary is provided to facilitate an understanding of some of the innovative features unique to the disclosed embodiment and is not intended to be a full description. A full appreciation of the various aspects of the embodiments disclosed herein can be gained by taking the entire specification, claims, drawings, and abstract as a whole.",
+                        "It is therefore one aspect of the disclosed embodiments to provide for an epsilon-shaped microcantilever and assembly thereof that can be employed in a variety sensing, cooling, and/or microfluidic applications.",
+                        "It is another aspect of the disclosed embodiments to provide for an epsilon-shaped microcantilever and assembly thereof having at least a first beam, a second beam, and an intermediate beam.",
+                        "It is yet another aspect of the disclosed embodiments to provide for an epsilon-shaped microcantilever and assembly thereof with enhanced deflections for sensing applications.",
+                        "The aforementioned aspects and other objectives and advantages can now be achieved as described herein. An epsilon-shaped microcantilever is disclosed, which includes a first side beam, a second side beam, and an intermediate beam, wherein the first side beam comprises an end attached to an end of the second side beam. The intermediate beam comprises an end attached to the ends of the first and second side beams such that the intermediate beam is positioned between the first and second side beams. Additionally, the ends opposite to the attached ends of the first side beam, second side beam, and intermediate beam are left free and are force-loaded. The first side beam, the second side beam, and the intermediate beam each possess a top surface and a bottom surface. The epsilon-shaped microcantilever can also include a receptor coated on the top surfaces of the first and second side beams and on the bottom surface of the intermediate beam.",
+                        "Varying force loadings including at least one of a concentrated force, a concentrated moment, and a constant surface stress can be utilized with respect to the epsilon-shaped microcantilever assembly disclosed herein. In general, a deflection theory of thin beams can be utilized to obtain a deflection profile with respect to the epsilon-shaped microcantilever assembly disclosed herein. Obtained deflections of the epsilon-shaped assembly can be validated against an accurate numerical solution utilizing a finite element method with a maximum deviation of less than approximately ten percent. Additionally, the deflection enhancement increases as the free length decreases for various types of force loading conditions with respect to the disclosed epsilon-shaped microcantilevers assembly."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "summarize disclosed embodiments",
+                        "describe epsilon-shaped microcantilever",
+                        "outline aspects of disclosed embodiments",
+                        "describe epsilon-shaped microcantilever assembly",
+                        "summarize advantages"
+                    ],
+                    "num_characters": 2681,
+                    "outline_medium": [
+                        "summarize epsilon-shaped microcantilever",
+                        "outline advantages of epsilon-shaped microcantilever"
+                    ],
+                    "outline_short": [
+                        "summarize epsilon-shaped microcantilever assembly"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The following Table 1 provides the various symbols and meanings used in this section:",
+                        "The accompanying figures, in which like reference numerals refer to identical or functionally similar elements throughout the separate views and which are incorporated in and form a part of the specification, further illustrate the present invention and, together with the detailed description of the invention, serve to explain the principles of the disclosed embodiments.",
+                        "FIG. 1 illustrates a schematic diagram depicting the geometry of a rectangular microcantilever (MC) 10. Specifying the extension length L, width W, thickness t, Young's modulus E, and Poisson's ratio can summarize the properties of the rectangular microcantilever 10 v. When the length of the microcantilever is much larger than its width, Hooks law for small deflections can be utilized to relate the microcantilever deflections to the effective elastic modulus Y and the bending moment M, and can be represented by the following equation (1):",
+                        "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez}{\uf74cx^{2}} = \\frac{M}{YI}} & {{Eq}.\\mspace{14mu} \ue89e1}\n\\end{matrix}\\)",
+                        "In the formulation above, the variable z is the deflection of the microcantilever at any section located at a position x from the base surface. I is the area moment of inertia of the microcantilever cross-section about its neutral axis. For a rectangular cross-section with its neutral axis coinciding with its centroidal axis, I is given by equation (2) below:",
+                        "\\(\\begin{matrix}\n{I = {\\frac{1}{12}\ue89e{Wt}^{3}}} & {{Eq}.\\mspace{14mu} \ue89e(2)}\n\\end{matrix}\\)",
+                        "The boundary conditions for Equation (1) are given by",
+                        "\\(\\begin{matrix}\n{{z\ue8a0\\left( {x = 0} \\right)} = {\\left. \\frac{\uf74cz}{\uf74cx}\ue89e \\right|_{x = 0} = 0}} & {{{Eqs}.\\mspace{14mu} \ue89e3}\ue89e\\left( {a,b} \\right)}\n\\end{matrix}\\)",
+                        "For a concentrated force exerted on the rectangular microcantilever tip (x=L), the solution of Equation (1), denoted by zaF(\u03c7), subject to boundary conditions given by Equations 3 (a, b) can be expressed as:",
+                        "\\(\\begin{matrix}\n{{z_{aF}\ue8a0(x)} = {\\left( \\frac{6\ue89e{FL}^{3}}{{EWt}^{3}} \\right)\ue8a0\\left\\lbrack {\\left( \\frac{x}{L} \\right)^{2} - {\\frac{1}{3}\ue89e\\left( \\frac{x}{L} \\right)^{3}}} \\right\\rbrack}} & {{Eq}.\\mspace{14mu} \ue89e(4)}\n\\end{matrix}\\)",
+                        "The above result is based on a realistic linearly increasing bending moment from the base prescribed by:",
+                        "\\(\\begin{matrix}\n{M = {{FL}\ue8a0\\left( {1 - \\frac{x}{L}} \\right)}} & {{Eq}.\\mspace{14mu} \ue89e(5)}\n\\end{matrix}\\)",
+                        "For thin cross-sections, the surface stress, \u03c3, can be calculated from the following equation:",
+                        "\\(\\begin{matrix}\n{\\sigma = {\\frac{M}{I}\ue89e\\left( \\frac{t}{2} \\right)}} & {{Eq}.\\mspace{14mu} \ue89e(6)}\n\\end{matrix}\\)",
+                        "The surface stress at x=0 (base surface) denoted by \u03c3aFo is equal to",
+                        "\\(\\begin{matrix}\n{\\sigma_{aFo} = \\frac{6\ue89e{FL}}{{Wt}^{2}}} & {{Eq}.\\mspace{14mu} \ue89e(7)}\n\\end{matrix}\\)",
+                        "The maximum deflection which occurs at the microcantilever tip (x=L) can be expressed as indicated by equation (8) below:",
+                        "\\(\\begin{matrix}\n{z_{{aF}\ue89e\\mspace{14mu} \ue89e\\max} = \\frac{4\ue89e\\; \ue89e{FL}^{3}}{{EWt}^{3}}} & {{Eq}.\\mspace{14mu} \ue89e(8)}\n\\end{matrix}\\)",
+                        "For a bending moment M exerted on the rectangular microcantilever tip (x=L), the solution of Equation (1), denoted by zaM(\u03c7), subject to boundary conditions given by Equations 3 (a, b) can be expressed as:",
+                        "\\(\\begin{matrix}\n{{z_{aM}\ue8a0(x)} = {\\left( \\frac{6\ue89e\\; \ue89e{ML}^{2}}{{EWt}^{3}} \\right)\ue89e\\left( \\frac{x}{L} \\right)^{2}}} & {{Eq}.\\mspace{14mu} \ue89e(9)}\n\\end{matrix}\\)",
+                        "The surface stress at the base section which is denoted by \u03c3aMo is equal to:",
+                        "\\(\\begin{matrix}\n{\\sigma_{aMo} = \\frac{6\ue89eM}{{Wt}^{2}}} & {{Eq}.\\mspace{14mu} \ue89e(10)}\n\\end{matrix}\\)",
+                        "The maximum deflection which is the deflection at the microcantilever tip is equal to:",
+                        "\\(\\begin{matrix}\n{z_{{aM}\ue89e\\mspace{14mu} \ue89e\\max} = \\frac{6\ue89e\\; \ue89e{ML}^{2}}{{EWt}^{3}}} & {{Eq}.\\mspace{14mu} \ue89e(11)}\n\\end{matrix}\\)",
+                        "When the microcantilever is coated on one side with a thin film of receptor, it is usually bent due to analyte adhesion on that layer. This adhesion causes a differential in the surface stress across the microcantilever section yielding a bending moment at each section. The bending moment M [1, 8] is given by equation (12) below:",
+                        "\\(\\begin{matrix}\n{M = \\frac{\\Delta \ue89e\\; \ue89e\\sigma \ue89e\\; \ue89e{Wt}}{2}} & {{Eq}.\\mspace{14mu} \ue89e(12)}\n\\end{matrix}\\)",
+                        "wherein \u0394\u03c3 is the difference between the surface stresses of the top and bottom sides of the microcantilever. The solution of Eq. (1), denoted by za\u0394\u03c3(\u03c7), subject to boundary conditions given by Equations 3 (a, b) can then be expressed by equation (13) below:",
+                        "\\(\\begin{matrix}\n{{z_{a\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}\ue8a0(x)} = {\\frac{6\ue89e\\left( {1 - v} \\right)\ue89e\\Delta \ue89e\\; \ue89e\\sigma_{o}\ue89eL^{2}}{{{Et}^{2}\ue8a0\\left( {n + 1} \\right)}\ue89e\\left( {n + 2} \\right)}\ue89e\\left( \\frac{x}{L} \\right)^{n + 2}}} & {{Eq}.\\mspace{14mu} \ue89e(13)}\n\\end{matrix}\\)",
+                        "This is because the effective elastic modulus for this case is given by Y=E/(1\u2212v). Also, \u0394\u03c3 is considered to vary along the microcantilever length according to the following relationship of equation (14):",
+                        "\\(\\begin{matrix}\n{{\\Delta\\sigma} = {{\\Delta\\sigma}_{o}\ue8a0\\left( \\frac{x}{L} \\right)}^{n}} & {{Eq}.\\mspace{14mu} \ue89e(14)}\n\\end{matrix}\\)",
+                        "wherein n is the model index. This variation is expected as analyte concentration in the surrounding environment and is expected to increase as the distance from the microcantilever base increases. The maximum deflection due to analyte adhesion is obtained from Equation 205 by substituting x=L. It is equal to:",
+                        "\\(\\begin{matrix}\n{{z_{a\ue89e\\; \ue89e{\\Delta\\sigma}\ue89e\\; \ue89e{mmax}}\ue8a0(x)} = \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e{\\Delta\\sigma}_{o}\ue89eL^{2}}{{{Et}^{2}\ue8a0\\left( {n + 1} \\right)}\ue89e\\left( {n + 2} \\right)}} & {{Eq}.\\mspace{14mu} \ue89e(15)}\n\\end{matrix}\\)",
+                        "Equation (15) is reducible to the Stoney's equation when n is set to be equal to zero.",
+                        "FIG. 2 illustrates a schematic diagram depicting the geometry of a microcantilever assembly 12. The microcantilever assembly 12 shown in FIG. 2 includes an SB (Side Beam) 14 and an SB 16. The microcantilever assembly 12 depicted in FIG. 2 constitutes a modified triangular MC assembly, as opposed to the rectangular MC 10 depicted in FIG. 1.",
+                        "Equation (1) is changeable to the following when the center line of the free end (x=L) is loaded by a normal concentrated force of magnitude F:",
+                        "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez_{bF}}{\uf74cx^{2}} = {\\left( \\frac{3\ue89e{FL}}{{EWt}^{3}} \\right) \\times 2\ue89e{\\left( {1 - {x/L}} \\right)/{\\cos^{3}\ue8a0(\\theta)}}}} & {{Eq}.\\mspace{14mu} \ue89e(16)}\n\\end{matrix}\\)",
+                        "Note that I for each beam is I=Wt3/12. Note that \u03b8 is half the triangular tip angle. The cosine of the angle \u03b8 is given by:",
+                        "\\(\\begin{matrix}\n{{\\cos \ue8a0(\\theta)} = \\left\\lbrack {1 + {0.25\ue8a0\\left\\lbrack \\frac{B/L}{1 - {0.5\ue89e\\left( {W/L} \\right)}} \\right\\rbrack}^{2}} \\right\\rbrack^{{- 1}/2}} & {{Eq}.\\mspace{14mu} \ue89e(17)}\n\\end{matrix}\\)",
+                        "The boundary conditions for Equation 208 are given by:",
+                        "\\(\\begin{matrix}\n{{z_{b}\ue8a0\\left( {x = 0} \\right)} = {{\\frac{\uf74cz_{b}}{\uf74cx}\ue89e\ue85c_{x = 0}} = 0}} & {{{{Eqs}.\\mspace{14mu} \ue89e18}\ue89e\\left( {a,b} \\right)}\ue89e\\mspace{11mu}}\n\\end{matrix}\\)",
+                        "The solution of Equation (16), denoted by zbF(\u03c7), subject to the above boundary conditions is the following:",
+                        "\\(\\begin{matrix}\n{{z_{bF}\ue8a0(x)} = {{\\left( \\frac{3\ue89e{FL}^{3}}{{EWt}^{3}} \\right)\ue8a0\\left\\lbrack {\\left( \\frac{x}{L} \\right)^{2} - {\\frac{1}{3}\ue89e\\left( \\frac{x}{L} \\right)^{3}}} \\right\\rbrack}\ue89e\\left( \\frac{1}{\\cos^{3}\ue8a0(\\theta)} \\right)}} & {{{Eq}.\\mspace{14mu} \ue89e19}\ue89e(a)}\n\\end{matrix}\\)",
+                        "Using Equation (6), the surface stress at x=0, \u03c3bFo, is equal to:",
+                        "\\(\\begin{matrix}\n{\\sigma_{bFo} = {\\left( \\frac{3\ue89e{FL}}{{Wt}^{2}} \\right)\ue8a0\\left\\lbrack \\frac{1}{\\cos \ue8a0(\\theta)} \\right\\rbrack}} & {{Eq}.\\mspace{14mu} \ue89e(20)}\n\\end{matrix}\\)",
+                        "The maximum deflection occurs at the tip (x=L). It is equal to:",
+                        "\\(\\begin{matrix}\n{z_{{bF}\ue89e\\mspace{11mu} \ue89e\\max} = {\\left( \\frac{3\ue89e{FL}^{3}}{{EWt}^{3}} \\right)\ue89e\\left\\{ \\frac{2}{3\ue89e\\; \ue89e{\\cos^{3}\ue8a0(\\theta)}} \\right\\}}} & {{Eq}.\\mspace{14mu} \ue89e(21)}\n\\end{matrix}\\)",
+                        "For a bending moment M about x-axis exerted on the centerline of the free end of the assembly (b) (at x=L), Equation (3) is changeable to the following form:",
+                        "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez_{bM}}{\uf74cx^{2}} = {\\left( \\frac{3\ue89eM}{{EWt}^{3}} \\right) \\times {2/{\\cos \ue8a0(\\theta)}}}} & {{Eq}.\\mspace{14mu} \ue89e(22)}\n\\end{matrix}\\)",
+                        "the solution of Equation (22), subject to boundary conditions given by Equation 18 (a, b) is the following:",
+                        "\\(\\begin{matrix}\n{{z_{bM}\ue8a0(x)} = {\\left( \\frac{2\ue89e{ML}^{2}}{{EWt}^{3}} \\right)\ue89e{\\left( \\frac{x}{L} \\right)^{2}\ue8a0\\left\\lbrack \\frac{1}{\\cos \ue8a0(\\theta)} \\right\\rbrack}}} & {{Eq}.\\mspace{14mu} \ue89e(23)}\n\\end{matrix}\\)",
+                        "As such, the maximum deflection is expected to be equal to:",
+                        "\\(\\begin{matrix}\n{z_{{bM}\ue89e\\; \ue89e\\max} = {\\left( \\frac{3\ue89e{ML}^{2}}{{EWt}^{3}} \\right)\ue89e\\left\\{ \\frac{1}{\\cos \ue8a0(\\theta)} \\right\\}}} & {{Eq}.\\mspace{14mu} \ue89e(24)}\n\\end{matrix}\\)",
+                        "Using Equation (6), the surface stress at x=0, \u03c3cMo, is equal to:",
+                        "\\(\\begin{matrix}\n{\\sigma_{bMo} = {\\frac{3\ue89eM}{{Wt}^{2}}\ue89e{\\cos \ue8a0(\\theta)}}} & {{Eq}.\\mspace{14mu} \ue89e(25)}\n\\end{matrix}\\)",
+                        "When a receptor layer is coated on one side of assembly (b)-side beams (SB), Equation (3) changes to the following form after the analyte adhesion on these coatings:",
+                        "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez_{b\ue89e\\; \ue89e{\\Delta\\sigma}}}{\uf74cx^{2}} = {\\left\\{ \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e{\\Delta\\sigma}_{o}}{{Et}^{2}} \\right\\} \\times {\\left( {x/L} \\right)^{n}/{\\cos^{2}\ue8a0(\\theta)}}}} & {{Eq}.\\mspace{14mu} \ue89e(26)}\n\\end{matrix}\\)",
+                        "The solution of Equation (26), subject to boundary conditions given by Equation (18) (a, b) is the following:",
+                        "\\(\\begin{matrix}\n{{z_{b\ue89e\\; \ue89e{\\Delta\\sigma}}\ue8a0(x)} = {\\left\\{ \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e{\\Delta\\sigma}_{o}\ue89eL^{2}}{{{Et}^{2}\ue8a0\\left( {n + 1} \\right)}\ue89e\\left( {n + 2} \\right)} \\right\\} \ue89e{\\left( \\frac{x}{L} \\right)^{n + 2}\ue8a0\\left\\lbrack \\frac{1}{\\cos^{2}\ue8a0(\\theta)} \\right\\rbrack}}} & {{Eq}.\\mspace{14mu} \ue89e(27)}\n\\end{matrix}\\)",
+                        "The maximum deflection due to analyte adhesion is then equal to:",
+                        "\\(\\begin{matrix}\n{z_{b\ue89e\\; \ue89e{\\Delta\\sigma}\ue89e\\mspace{11mu} \ue89em\ue89e\\; \ue89e\\max} = {\\left\\{ \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e{\\Delta\\sigma}_{o}\ue89eL^{2}}{{Et}^{2}} \\right\\} \ue89e\\left\\{ \\frac{1/{\\cos^{2}\ue8a0(\\theta)}}{\\left( {n + 1} \\right)\ue89e\\left( {n + 2} \\right)} \\right\\}}} & {{Eq}.\\mspace{14mu} \ue89e(28)}\n\\end{matrix}\\)",
+                        "Define the first deflection indicator \u03b3pU as the ratio of the microcantilever deflection at the tip (x=L) per surface stress at the base for the microcantilever of type (p) due to force loading of type U to the corresponding value for the rectangular microcantilever. The type (p) can be either the microcantilever type shown in FIG. 2 or the type depicted in FIG. 3. The force loading of type U can be either a concentrated force loading (F), an external bending moment (M) or a constant surface stress (\u0394\u03c3o). As such, \u03b3bF, \u03b3bM and \u03b3b\u0394\u03c3are equal to",
+                        "\\(\\begin{matrix}\n{\\gamma_{bF} = {1/{\\cos^{3}\ue8a0(\\theta)}}} & {{{Eq}.\\mspace{14mu} \ue89e29}\ue89e(a)} \\\\\n{\\gamma_{bM} = \\frac{1}{\\cos^{2}\ue8a0(\\theta)}} & {{{Eq}.\\mspace{14mu} \ue89e29}\ue89e(b)} \\\\\n{\\gamma_{b\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma_{o}} = {1/{\\cos^{2}\ue8a0(\\theta)}}} & {{{Eq}.\\mspace{14mu} \ue89e29}\ue89e(c)}\n\\end{matrix}\\)"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "The Microcantilever \u03b5-Assembly",
+                            "paragraphs": [
+                                "FIG. 3 illustrates a schematic diagram of an epsilon (\u03b5) shaped microcantilever or MC assembly 13, in accordance with the disclosed embodiments. The MC assembly 13 shown in FIG. 3 includes a SB 15 and a SB 17 along with an IB (Intermediate Beam) 19, which together form the epsilon (\u03b5) shaped microcantilever or MC assembly 13. In order to configure the geometry of the microcantilever assembly 13 shown in FIG. 3, the centerline of the assembly free end (x=L) can be loaded by a normal concentrated force of magnitude F. Additionally, the free end of the intermediate beam (IB) 19 can be loaded by the negative of the previous load (\u2212F). Accordingly, Equation (3) changes to the following:",
+                                "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez_{cF}}{\uf74cx^{2}} = {\\left( \\frac{3\ue89e{FL}}{{EWt}^{3}} \\right) \\times \\left\\lbrack \\begin{matrix}\n{{2/{\\cos \ue8a0(\\theta)}},} & \\left( {{for}\ue89e\\mspace{14mu} \ue89e{SB}} \\right) \\\\\n{{{- 4}\ue89e\\left( {x/L} \\right)},} & \\left( {{for}\ue89e\\mspace{14mu} \ue89e{IB}} \\right)\n\\end{matrix} \\right.}} & {{Eq}.\\mspace{14mu} \ue89e(30)}\n\\end{matrix}\\)",
+                                "wherein SB stands for the side beams of the assembly. The boundary conditions of Equation (30) can be given by:",
+                                "\\(\\begin{matrix}\n{{z_{cSB}\ue8a0\\left( {x = 0} \\right)} = {\\left. \\frac{\uf74cz_{cSB}}{\uf74cx}\ue89e \\right|_{x = 0} = 0}} & {{{Eq}.\\mspace{14mu} \ue89e31}\ue89e(a)} \\\\\n{{z_{cSB}\ue8a0\\left( {x = L} \\right)} = {z_{cIB}\ue8a0\\left( {x = L} \\right)}} & {{{Eq}.\\mspace{14mu} \ue89e31}\ue89e(b)} \\\\\n{\\left. \\frac{\uf74cz_{cSB}}{\uf74cx}\ue89e \\right|_{x = L} = \\left. \\frac{\uf74cz_{cIB}}{\uf74cx}\ue89e \\right|_{x = L}} & {{{Eq}.\\mspace{14mu} \ue89e31}\ue89e(c)}\n\\end{matrix}\\)",
+                                "The solution of Equation 30, denoted by zcF(\u03c7), is equal to:",
+                                "\\(\\begin{matrix}\n{\\mspace{79mu} \ue89e{{z_{cSBF}\ue8a0(x)} = {\\left( \\frac{3\ue89e{FL}^{3}}{{EWt}^{3}} \\right)\ue89e{\\left( \\frac{x}{L} \\right)^{2}\ue8a0\\left\\lbrack \\frac{1}{\\cos \ue8a0(\\theta)} \\right\\rbrack}}}} & {{{Eq}.\\mspace{14mu} \ue89e32}\ue89e(a)} \\\\\n{{z_{cIBF}\ue8a0(x)} = {\\left( \\frac{3\ue89e{FL}^{3}}{{EWt}^{3}} \\right)\ue89e\\left\\{ {{{- \\left( \\frac{2}{3} \\right)}\ue89e\\left( \\frac{x}{L} \\right)^{3}} + {2\ue89e\\left( {\\frac{1}{\\cos \ue8a0(\\theta)} + 1} \\right)\ue89e\\left( \\frac{x}{L} \\right)} + D_{1}} \\right\\}}} & {{{Eq}.\\mspace{14mu} \ue89e32}\ue89e(b)}\n\\end{matrix}\\)",
+                                "wherein D1 is equal to:",
+                                "\\(\\begin{matrix}\n{D_{1} = {- \\left\\{ {\\frac{1}{\\cos \ue8a0(\\theta)} + \\frac{4}{3}} \\right\\}}} & {{{Eq}.\\mspace{14mu} \ue89e32}\ue89e(c)}\n\\end{matrix}\\)",
+                                "The surface stress at the base section \u03c3cFo is equal to:",
+                                "\\(\\begin{matrix}\n{\\sigma_{cFo} = {\\left( \\frac{3\ue89e{FL}}{{Wt}^{2}} \\right)\ue89e{\\cos \ue8a0(\\theta)}}} & {{Eq}.\\mspace{14mu} \ue89e33}\n\\end{matrix}\\)",
+                                "The second deflection indicator \u03bbdU can be defined as the ratio of the IB-free end deflection zcIBU(\u03c7=0) to that at the assembly free end zcU(\u03c7=L) due to force loading of type U. The force loading of type U can be either the current described force loading (F), external bending moment loading (M) or the constant surface stress (\u0394\u03c3o) loading. The last two types of force loadings will be described later on. As such, \u03bbcF is equal to:",
+                                "\\(\\begin{matrix}\n{\\lambda_{cF} = {\\frac{{zc}_{dIBF}\ue8a0\\left( {x = 0} \\right)}{z_{cF}\ue8a0\\left( {x = L} \\right)} = {- \\left\\{ {1 + {\\frac{4}{3}\ue89e{\\cos \ue8a0(\\theta)}}} \\right\\}}}} & {{Eq}.\\mspace{14mu} \ue89e34}\n\\end{matrix}\\)",
+                                "Now, let a bending moment M be exerted on the free end centerline of the MC assembly 13 and let another bending moment of same magnitude be exerted on the IB-free end at x=0. The deflection equations for this assembly under the current moments loading is given by the following:",
+                                "\\(\\begin{matrix}\n{\\frac{\uf74c^{2}\ue89ez_{cM}}{\uf74cx^{2}} = {\\left( \\frac{6\ue89eM}{{EWt}^{3}} \\right) \\times \\left\\lbrack \\begin{matrix}\n{{2/{\\cos \ue8a0(\\theta)}},} & \\left( {{for}\ue89e\\mspace{14mu} \ue89e{SB}} \\right) \\\\\n{{- 2},} & \\left( {{for}\ue89e\\mspace{14mu} \ue89e{IB}} \\right)\n\\end{matrix} \\right.}} & {{Eq}.\\mspace{14mu} \ue89e35}\n\\end{matrix}\\)",
+                                "The boundary conditions are given by Equations 31 (a-c). The solution of Equation 35 is given by:",
+                                "\\(\\begin{matrix}\n{{z_{cSBM}\ue8a0(x)} = {\\frac{1}{\\cos \ue8a0(\\theta)}\ue89e\\left( \\frac{6\ue89e{ML}^{2}}{{EWt}^{3}} \\right)\ue89e\\left( \\frac{x}{L} \\right)^{2}}} & {{{Eq}.\\mspace{14mu} \ue89e36}\ue89e(a)} \\\\\n{{z_{cIBM}\ue8a0(x)} = {\\left( \\frac{6\ue89e{ML}^{2}}{{EWt}^{3}} \\right)\ue89e\\left\\{ {{- \\left( \\frac{x}{L} \\right)^{2}} + {2\ue89e\\left( {\\frac{1}{\\cos \ue8a0(\\theta)} + 1} \\right)\ue89e\\left( \\frac{x}{L} \\right)} + D_{2}} \\right\\}}} & {{{Eq}.\\mspace{14mu} \ue89e36}\ue89e(b)}\n\\end{matrix}\\)",
+                                "wherein D2 is equal to:",
+                                "\\(\\begin{matrix}\n{D_{2} = {- \\left\\lbrack {\\frac{1}{\\cos \ue8a0(\\theta)} + 1} \\right\\rbrack}} & {{{Eq}.\\mspace{14mu} \ue89e36}\ue89e(c)}\n\\end{matrix}\\)",
+                                "the surface stress at x=0, \u03c3cMo, is equal to:",
+                                "\\(\\begin{matrix}\n{\\sigma_{cMo} = {\\frac{6\ue89eM}{{Wt}^{2}}\ue89e{\\cos \ue8a0(\\theta)}}} & {{Eq}.\\mspace{14mu} \ue89e39}\n\\end{matrix}\\)",
+                                "The second deflection indicator for assembly (c) (i.e., FIG. 3) for the current moments loading \u03bbcM is equal to:",
+                                "\\(\\begin{matrix}\n{\\lambda_{cM} = {\\frac{z_{cIBM}\ue8a0\\left( {x = 0} \\right)}{z_{cM}\ue8a0\\left( {x = L} \\right)} = {- \\left\\lbrack {{\\cos \ue8a0(\\theta)} + 1} \\right\\rbrack}}} & {{Eq}.\\mspace{14mu} \ue89e40}\n\\end{matrix}\\)",
+                                "If the top surfaces of the side beams of MC assembly 13 can be coated with a receptor while the receptor coating on the intermediate beam is on its bottom surface, then the deflection equations of the MC assembly 13 changes to:",
+                                "\\(\\begin{matrix}\n{{{\\cos^{2}\ue8a0(\\theta)} \\times \\frac{\uf74c^{2}\ue89ez_{{cSB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}}{\uf74cx^{2}}} = {{- \\frac{\uf74c^{2}\ue89ez_{{cIB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}}{\uf74cx^{2}}} = {\\frac{6\ue89e\\left( {1 - v} \\right)\ue89e{\\Delta\\sigma}_{o}}{{Et}^{2}}\ue89e\\left( \\frac{x}{L} \\right)^{n}}}} & {{Eq}.\\mspace{14mu} \ue89e41}\n\\end{matrix}\\)",
+                                "The solution for Equation 41 subject to boundary conditions given by Equations 223(a-c) is equal to:",
+                                "\\(\\begin{matrix}\n{\\mspace{79mu} \ue89e{{z_{{cSB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}\ue8a0(x)} = {\\left\\{ \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e\\Delta \ue89e\\; \ue89e\\sigma_{o}\ue89eL^{2}}{{E\ue8a0\\left( {n + 1} \\right)}\ue89et^{2}} \\right\\} \ue89e\\left( \\frac{x}{L} \\right)^{n + 2}\ue89e\\left\\{ \\frac{1/{\\cos^{2}\ue8a0(\\theta)}}{n + 2} \\right\\}}}} & {{{Eq}.\\mspace{14mu} \ue89e42}\ue89e(a)} \\\\\n{{z_{{cIB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}\ue8a0(x)} = {\\left\\{ \\frac{6\ue89e\\left( {1 - v} \\right)\ue89e\\Delta \ue89e\\; \ue89e\\sigma_{o}\ue89eL^{2}}{{E\ue8a0\\left( {n + 1} \\right)}\ue89et^{2}} \\right\\} \ue89e\\left\\{ {{\\frac{- 1}{\\left( {n + 2} \\right)}\ue89e\\left( \\frac{x}{L} \\right)^{n + 2}} + {\\left\\lbrack {1 + \\frac{1}{\\cos^{2}\ue8a0(\\theta)}} \\right\\rbrack \ue8a0\\left\\lbrack {\\frac{x}{L} - \\frac{n + 1}{n + 2}} \\right\\rbrack}} \\right\\}}} & {{{Eq}.\\mspace{14mu} \ue89e42}\ue89e(b)}\n\\end{matrix}\\)",
+                                "The deflection indicator for MC assembly 13 due to the alternating analyte adhesion on the surfaces \u03bbc\u0394\u03c3 is equal to:",
+                                "\\(\\begin{matrix}\n{\\lambda_{c\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma} = {\\frac{z_{{cIB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}\ue8a0\\left( {x = 0} \\right)}{z_{{cSB}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89e\\sigma}\ue8a0\\left( {x = L} \\right)} = {- {\\left( {n + 1} \\right)\ue8a0\\left\\lbrack {{\\cos^{2}\ue8a0(\\theta)} + 1} \\right\\rbrack}}}} & {{Eq}.\\mspace{14mu} \ue89e43}\n\\end{matrix}\\)",
+                                "The deflection indicators \u03b3cF, \u03b3cM and \u03b3c\u0394\u03c3can be shown to be equal to the following:",
+                                "\u03b3cF=1.5/cos2(\u03b8)\u2003\u2003Eq. 44(a)",
+                                "\u03b3cM=1/cos2(\u03b8)\u2003\u2003Eq. 44(b)",
+                                "\u03b3c\u0394\u03c3=1/cos2(\u03b8)\u2003\u2003Eq. 44(c)"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "illustrate microcantilever assembly",
+                                "define epsilon shaped microcantilever",
+                                "derive equation for microcantilever assembly",
+                                "specify boundary conditions",
+                                "solve equation for microcantilever assembly",
+                                "define surface stress",
+                                "define second deflection indicator",
+                                "derive equation for bending moment loading",
+                                "solve equation for bending moment loading",
+                                "define surface stress for bending moment loading",
+                                "define second deflection indicator for bending moment loading",
+                                "derive equation for receptor coating",
+                                "define deflection indicators"
+                            ],
+                            "num_characters": 6837,
+                            "outline_medium": [
+                                "illustrate microcantilever assembly",
+                                "derive deflection equations for force loading",
+                                "solve deflection equations for force loading",
+                                "derive deflection equations for moment loading",
+                                "derive deflection equations for surface stress loading",
+                                "define deflection indicators for various loadings"
+                            ],
+                            "outline_short": [
+                                "derive deflection equations for epsilon shaped microcantilever assembly",
+                                "solve deflection equations for various force loadings",
+                                "define deflection indicators for assembly"
+                            ]
+                        },
+                        {
+                            "title": "Validation",
+                            "paragraphs": [
+                                "Note that present analytical methods were tested against an accurate numerical solution using finite element methods and accounting for all mechanical constraints induced by the assemblies. Among these constraints is restraining the wrapping of the side beams due to the presence of the small connecting beam at x=L. The deflection contours for assembly (c) with L=385 \u03bcm, W=30 \u03bcm and t=20 nm under concentrated moment condition described in section 2.2.II with M=10\u221212 N\u03bcm is shown in FIG. 4. The microcantilever material was taken to be silicon with E=0.185 N\u03bcm\u22122 and a poisons ratio of v=0.33. The assembly deflection at x=L is equal to zcM(\u03c7=L)=0.028 \u03bcm using Equation (36)(b). Also, the deflection at the intermediate beam's free end can be shown to be equal to zcIBM(\u03c7=0)=0.048 \u03bcm.",
+                                "As can be seen from FIG. 4, the corresponding numerical values of those deflections are equal to 0.026 \u03bcm and 0.045 \u03bcm, respectively. Notice that the maximum error between the numerical and the derived analytical solutions is less than 10 percent. Also, notice that the numerical values of deflections are smaller than those predicated by the analytical methods. This is because the geometrical constraints imposed on the assemblies impede the deflections.",
+                                "FIG. 5 illustrates a graph 50 depicting plotted data indicative of the variation of the performance indicators \u03b3bF and \u03b3cF with the relative dimensions of assemblies 12 and 13. It is noticed that all the values of \u03b3bF and \u03b3cF are larger than one which indicates that assemblies 12 and 13 produce larger deflections than rectangular microcantilevers under same surface stress at the base and same length L. Moreover, both indicators increase as both the microcantilever width W and the assembly width B increase. Similar findings are noticed for the performance indicators \u03b3bM, \u03b3cM, \u03b3b\u0394\u03c3, and \u03b3c\u0394\u03c3 as can be seen from graphs 60 and 70 shown respectively FIGS. 6 and 7. On the other hand, an increase in B causes the effective free length of the assembly to increase, which makes the assembly more pronounced to external noises.",
+                                "FIG. 8 illustrates a graph 80 depicting data indicative of the variation of the second performance indicator \u03bbcF with the relative dimensions of the epsilon shaped microcantilever assembly 13. It is noticed that all values of \u03bbcF are smaller than minus one. This indicates that IB-free end deflection is always larger than that of the assembly tip deflection. Moreover, the absolute value of \u03bbcF is noticed to increases as both W and B decreases. Similar findings are noticed for the performance indicators \u03bbcM and \u03bbc\u0394\u03c3 as can be seen from graphs 90 and 100 depicted respectively in FIGS. 9 and 10. As a result, the epsilon shaped microcantilever assembly 13 can provide larger deflections than the modified triangular microcantilever assembly 12, while it is less affected by external noise. This is because its deflection increases as B decreases, which results in a reduction of the assembly's free length. Moreover, the absolute values of \u03bbc\u0394\u03c3 increases as n increases as can be shown using Equation 234. This indicates the advantage of assembly 13 in microsensing applications as compared to rectangular cantilevers or triangular cantilevers.",
+                                "Advantages of utilizing microcantilever assemblies including the \u03b5-assembly in microsensing applications have been explored, as discussed herein. Various force loadings conditions that can produce noticeable deflections such as the concentrated force, moment and constant surface stress, which can be due to analyte adhesion, are considered. The linear elasticity theory for thin beams is used to obtain the deflections. Different deflection indicators are defined and various controlling variables are identified. The performance of different microcantilever assemblies is compared with the performance of rectangular microcantilevers in order to map out conditions that produce magnification of the sensing deflection relative to the noise deflection.",
+                                "To the extent necessary to understand or complete the disclosure herein, all publications, patents, and patent applications mentioned herein are expressly incorporated by reference therein to the same extent as though each were individually so incorporated.",
+                                "Having thus described exemplary embodiments of the present invention, it should be noted by those skilled in the art that the within disclosures are exemplary only and that various other alternatives, adaptations, and modifications may be made within the scope of the present invention. Accordingly, the present invention is not limited to the specific embodiments as illustrated herein, but is only limited by the following claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test analytical methods against numerical solution",
+                                "show deflection contours for assembly (c)",
+                                "compare analytical and numerical deflection values",
+                                "illustrate performance indicators variation with assembly dimensions",
+                                "show performance indicators increase with width and assembly width",
+                                "illustrate variation of second performance indicator with assembly dimensions",
+                                "discuss advantages of microcantilever assemblies in microsensing",
+                                "incorporate publications, patents, and patent applications by reference",
+                                "describe scope of the present invention"
+                            ],
+                            "num_characters": 4670,
+                            "outline_medium": [
+                                "validate analytical methods",
+                                "compare numerical and analytical solutions",
+                                "illustrate performance indicators",
+                                "discuss advantages and limitations"
+                            ],
+                            "outline_short": [
+                                "validate analytical methods",
+                                "discuss advantages of microcantilever assemblies"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce symbols and meanings",
+                        "describe figures and their relation to the specification",
+                        "specify properties of rectangular microcantilever",
+                        "derive equation for microcantilever deflections",
+                        "define boundary conditions for equation",
+                        "solve equation for concentrated force exerted on tip",
+                        "calculate surface stress at base surface",
+                        "calculate maximum deflection at microcantilever tip",
+                        "solve equation for bending moment exerted on tip",
+                        "calculate surface stress at base section",
+                        "calculate maximum deflection at microcantilever tip",
+                        "describe bending moment due to analyte adhesion",
+                        "solve equation for bending moment due to analyte adhesion",
+                        "describe variation of surface stress along microcantilever length",
+                        "calculate maximum deflection due to analyte adhesion",
+                        "describe microcantilever assembly with side beams",
+                        "derive equation for microcantilever assembly with side beams",
+                        "specify boundary conditions for equation",
+                        "solve equation for concentrated force exerted on tip",
+                        "calculate surface stress at x=0",
+                        "define deflection indicators for microcantilever types"
+                    ],
+                    "num_characters": 10975,
+                    "outline_medium": [
+                        "introduce symbols and meanings",
+                        "describe figures and their relation to the specification",
+                        "derive equation for microcantilever deflection",
+                        "formulate surface stress equation",
+                        "calculate maximum deflection",
+                        "describe bending moment and surface stress equations",
+                        "derive equation for microcantilever assembly deflection",
+                        "formulate surface stress and maximum deflection equations for assembly",
+                        "describe analyte adhesion and surface stress equations",
+                        "define deflection indicators"
+                    ],
+                    "outline_short": [
+                        "introduce microcantilever geometry",
+                        "derive equations for rectangular microcantilever deflection",
+                        "derive equations for triangular microcantilever deflection",
+                        "derive equations for surface stress and maximum deflection",
+                        "define deflection indicators for microcantilever types"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An epsilon-shaped microcantilever assembly, comprising:\na first side beam, a second side beam, and an intermediate beam, wherein the first side beam comprises an end attached to an end of the second side beam;\nthe intermediate beam comprising an end attached to the ends of the first and second side beams such that the intermediate beam is positioned between the first and second side beams;\nwherein an end of the intermediate beam opposite to the attached ends of the first side beam, second side beam, and the intermediate beam are left free and are force-loaded;\nwherein the first side beam, second side beam, and the intermediate beam each possess a top surface and a bottom surface; and\na receptor coated on the top surfaces of the first and second side beams and on the bottom surface of the intermediate beam.",
+        "2. The epsilon-shaped microcantilever assembly of claim 1 wherein varying force loadings including at least one of a concentrated force, a concentrated moment, and a constant surface stress are utilized with respect to the epsilon-shaped microcantilever assembly.",
+        "3. A method of forming an epsilon-shaped microcantilever assembly, the method comprising:\nforming a first side beam, a second side beam, and an intermediate beam, wherein the first side beam comprises an end attached to an end of the second side beam;\nconfiguring the intermediate beam to include an end attached to the ends of the first and second side beams such that the intermediate beam is positioned between the first and second side beams;\nleaving the ends opposite to the attached end of the first side beam, second side beam, and intermediate beam free and are force-loaded;\nconfiguring the first side beam, second side beam, and the intermediate beam to each possess a top surface and a bottom surface; and\ncoating a receptor on the top surfaces of the first and second side beams and on the bottom surface of the intermediate beam, such that the first side beam, the second side beam, and the intermediate beam form said epsilon-shaped microcantilever assembly.",
+        "4. The method of claim 3 further comprising validating obtained deflections of the epsilon-shaped assembly against an accurate numerical solution utilizing a finite element technique with a maximum deviation of less than approximately ten percent."
+    ]
+}

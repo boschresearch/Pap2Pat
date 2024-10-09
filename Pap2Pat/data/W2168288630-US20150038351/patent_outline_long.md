@@ -1,0 +1,474 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- define field of invention
+- introduce related art
+- motivate genomic technologies
+- discuss radiation-induced cancer
+- describe limitations of current knowledge
+- discuss public misconceptions
+- introduce advanced genomic technologies
+- describe molecular responses to LD radiation
+- discuss genetic background effects
+- criticize linear-no-threshold model
+- discuss dose rate effects
+- summarize current understanding of LD radiation
+
+## SUMMARY OF THE INVENTION
+
+- introduce panels of genetic probes
+- describe nine biomarker panel
+- describe 46 biomarker panel
+- describe 55 biomarker panel
+- describe 36 biomarker panel
+- outline method for identifying cancer patients
+- detail step (a) of method
+- detail step (b) of method
+- detail step (c) of method
+- describe application of method
+- describe alternative method
+- detail step (d) of alternative method
+- describe 90-marker panel
+- outline method for detection of specific biomarkers
+- describe panel of genetic probes for LD-induced cancer
+- outline method for identifying patients with susceptibility
+- detail step (a) of method
+- detail step (b) of method
+- detail step (c) of method
+- describe application of method
+- describe alternative panel of genetic probes
+- outline method for identifying patients with higher predicted probability
+- detail step (a) of method
+- detail step (b) of method
+- detail step (c) of method
+- describe application of method
+- describe another panel of genetic probes
+- outline method for identifying patients with susceptibility
+- detail step (a) of method
+- detail step (b) of method
+- introduce invention
+- describe gene panels
+- outline method for identifying patients
+- outline alternative method for identifying patients
+- discuss radiation response
+- present table 1
+- present tables 2a and 2b
+- present table 3
+- present tables 4-8
+- present tables 9-11
+- conclude tables
+
+## DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce systems, methods, and devices for identifying multiple panels of genes associated with disease-free survival
+- describe 9-gene panel signature associated with low dose ionizing radiation-induced tissue damage and disease-free survival
+- describe four signatures associated with duration of disease-free survival in women diagnosed with breast cancer
+- determine higher predicted probability of disease free survival in patients with various types of cancers
+- measure expression levels of genes from a sample from a patient comprising a cancer cell or cancer tissue
+- describe methods for detection of expression levels of a gene
+- measure expression level of a gene by measuring mRNA or transcript in a cell
+- measure expression level of a gene by measuring protein or polypeptide expressed
+- describe methods for extracting mRNA or transcript from a cell
+- describe methods for preparing cDNA from an mRNA preparation
+- determine expression levels of all genes in a panel
+- evaluate expression levels of fewer genes in a panel
+- quantify RNA expression using quantitative amplification methods
+- employ array-based assays to quantify RNA expression
+- detect protein products using antibodies
+- compare detected expression level to a reference expression level
+- determine a total amplification or expression level of a panel of genes
+- identify a patient with higher predicted probability of disease free survival
+- describe gene sequences and gene products detected in the invention
+- obtain an RNA sample from a tumor sample
+- quantify target RNA using reverse transcription and PCR
+- employ quantitative amplification techniques to quantify target RNA
+- describe various methods for performing quantitative amplification of nucleic acids
+- employ labeled oligonucleotides that emit a signal when bound to a nucleic acid
+- use intercalating agents that produce a signal when intercalated in double stranded DNA
+- immobilize mRNA on a solid surface and contact with a probe
+- immobilize probes on a solid surface and contact with mRNA
+- employ microarrays to measure expression levels of large numbers of genes
+- synthesize arrays using mechanical synthesis methods
+- select primer and probes for use in amplifying and detecting target sequences
+- detect level of expression of one or more reference genes
+- measure protein expression level using immunoassays
+- produce polyclonal and monoclonal antibodies that react specifically with an allelic variant
+- prepare antibodies by immunizing rabbits or mice
+- employ noncompetitive and competitive assays to detect protein expression
+- use mass spectrometry techniques to directly detect proteins correlated with treatment outcomes
+- evaluate protein expression levels of control genes
+- incorporate computer and/or software elements to perform logic operations and calculations
+- generate a report of total expression levels measured and comparison with reference levels
+- provide diagnostic devices and kits for identifying gene expression products associated with prognosis
+- construct diagnostic devices with probes to detect at least 5, 6, 7, 8, 9, 10, 11,
+- 12, 13, 14, 15, 20, 25, 30, 36, 40, or including all
+- 46 gene expression products of the genes in the described gene panels
+- provide oligonucleotide probes attached to a solid support
+- construct arrays/microarrays of nucleic acid molecules
+- provide beads that contain one or more probes, primers, or other detection reagents
+- provide kits that contain one or more detection reagents and other components necessary to carry out an assay
+- provide instructions for using the kit to detect the biomarker nucleic acid molecule of interest
+
+### Low-Dose Ionizing Radiation Induced Cancer Risk Gene Panels
+
+- introduce systems biology approach
+- describe radiation-induced genomic instability
+- demonstrate high-dose exposure induces persistent genomic instability
+- contrast LD exposure with high-dose exposure
+- launch system search for molecular mechanisms
+- use transcript profiling to identify strain differences
+- investigate three exposure scenarios
+- analyze expression profiles to identify biological functions
+- test LD susceptibility associated signatures
+- identify tissue functions associated with susceptibility
+- describe genetic variation in baseline expression
+- describe genetic variation in responses to LD exposures
+- identify genetic features that predispose/protect individuals
+- provide panel of nine biomarkers for disease free survival
+- describe BMP2K gene and its function
+- describe CBX7 gene and its function
+- describe CLASP2 gene and its function
+- describe PRDX2 gene and its function
+- describe PRDX3 gene and its function
+- describe RAB6B gene and its function
+- describe RPS6 gene and its function
+- describe RUNX1 gene and its function
+- describe SLC15A2 gene and its function
+- provide method for identifying cancer patients with higher probability of disease free survival
+- measure amplification or expression levels of genes
+- compare expression levels to median sum of amplification or expression level
+- describe BMP2K gene expression measurement
+- describe CBX7 gene expression measurement
+- describe CLASP2 gene expression measurement
+- describe PRDX2 gene expression measurement
+- describe PRDX3 gene expression measurement
+- describe RAB6B gene expression measurement
+- describe RPS6 gene expression measurement
+- describe RUNX1 gene expression measurement
+- describe SLC15A2 gene expression measurement
+- provide panel of 46 biomarkers for disease free survival
+- list genes in panel of 46 biomarkers
+- describe application of gene panels in medical field
+- describe benefits of knowing radiation sensitivity
+- introduce MAGOHB gene
+- describe MAGOHB function
+- provide GenBank Accession information for MAGOHB
+- introduce PAPOLA gene
+- describe PAPOLA function
+- provide GenBank Accession information for PAPOLA
+- introduce PNPT1 gene
+- describe PNPT1 function
+- provide GenBank Accession information for PNPT1
+- introduce POP4 gene
+- describe POP4 function
+- provide GenBank Accession information for POP4
+- introduce PPIH gene
+- describe PPIH function
+- provide GenBank Accession information for PPIH
+- introduce RBM39 gene
+- describe RBM39 function
+- provide GenBank Accession information for RBM39
+- introduce SUPT16H gene
+- describe SUPT16H function
+- provide GenBank Accession information for SUPT16H
+- introduce TXNL4A gene
+- describe TXNL4A function
+- provide GenBank Accession information for TXNL4A
+- introduce additional genes (EIF2S1, GNA13, GNB1, HLA-DRA, RAD23A)
+- introduce RAD23A gene
+- describe RAD23A function
+- provide GenBank Accession numbers for RAD23A
+- introduce SMC6 gene
+- describe SMC6 function
+- provide GenBank Accession numbers for SMC6
+- introduce ABCB10 gene
+- describe ABCB10 function
+- provide GenBank Accession numbers for ABCB10
+- introduce ABCF1 gene
+- describe ABCF1 function
+- provide GenBank Accession numbers for ABCF1
+- introduce BAT5 gene
+- describe BAT5 function
+- provide GenBank Accession numbers for BAT5
+- introduce C17orf95 gene
+- describe C17orf95 function
+- provide GenBank Accession numbers for C17orf95
+- introduce C19orf56 gene
+- describe C19orf56 function
+- provide GenBank Accession numbers for C19orf56
+- introduce C5orf22 gene
+- describe C5orf22 function
+- provide GenBank Accession numbers for C5orf22
+- introduce CAP1 gene
+- describe CAP1 function
+- provide GenBank Accession numbers for CAP1
+- introduce CHCHD3 gene
+- describe CHCHD3 function
+- provide GenBank Accession numbers for CHCHD3
+- introduce DNAJC10 gene
+- describe DNAJC10 function
+- provide GenBank Accession information for DNAJC10
+- introduce GADD45GIP1 gene
+- describe GADD45GIP1 function
+- provide GenBank Accession information for GADD45GIP1
+- introduce GBP1 gene
+- describe GBP1 function
+- provide GenBank Accession information for GBP1
+- introduce HLA-B gene
+- describe HLA-B function
+- provide GenBank Accession information for HLA-B
+- introduce KIF5B gene
+- describe KIF5B function
+- provide GenBank Accession information for KIF5B
+- introduce MCART1 gene
+- describe MCART1 function
+- provide GenBank Accession information for MCART1
+- introduce MCM6 gene
+- describe MCM6 function
+- provide GenBank Accession information for MCM6
+- introduce MTFR1 gene
+- describe MTFR1 function
+- provide GenBank Accession information for MTFR1
+- introduce NRD1 gene
+- describe NRD1 function
+- introduce PI4K2B gene
+- describe PI4K2B function
+- provide GenBank Accession information for PI4K2B
+- introduce PIGO gene
+- describe PIGO function
+- provide GenBank Accession information for PIGO
+- introduce PPME1 gene
+- describe PPME1 function
+- provide GenBank Accession information for PPME1
+- introduce SAPS3 gene
+- describe SAPS3 function
+- provide GenBank Accession information for SAPS3
+- introduce SCAND1 gene
+- describe SCAND1 function
+- provide GenBank Accession information for SCAND1
+- introduce SHC1 gene
+- describe SHC1 function
+- provide GenBank Accession information for SHC1
+- introduce SNX6 gene
+- describe SNX6 function
+- provide GenBank Accession information for SNX6
+- introduce TM2D2 gene
+- describe TM2D2 function
+- provide GenBank Accession information for TM2D2
+- introduce 55 biomarkers for disease free survival
+- categorize RNA processing genes
+- categorize stress response genes
+- introduce 36 biomarkers for disease free survival
+- categorize mitotic genes
+- introduce CAD gene
+- describe CAD function and provide GenBank Accession information
+- introduce CDC7 gene
+- describe CDC7 function
+- provide GenBank Accession numbers for CDC7
+- introduce CDT1 gene
+- describe CDT1 function
+- provide GenBank Accession numbers for CDT1
+- introduce CENPH gene
+- describe CENPH function
+- provide GenBank Accession numbers for CENPH
+- introduce CHEK1 gene
+- describe CHEK1 function
+- provide GenBank Accession numbers for CHEK1
+- introduce EZH2 gene
+- describe EZH2 function
+- provide GenBank Accession numbers for EZH2
+- introduce GINS1 gene
+- describe GINS1 function
+- provide GenBank Accession numbers for GINS1
+- introduce HELLS gene
+- describe HELLS function
+- provide GenBank Accession numbers for HELLS
+- introduce MCM2-7 genes
+- describe MCM2-7 functions
+- provide GenBank Accession numbers for MCM2
+- provide GenBank Accession numbers for MCM3
+- provide GenBank Accession numbers for MCM4
+- provide GenBank Accession numbers for MCM5
+- provide GenBank Accession numbers for MCM6
+- provide GenBank Accession numbers for MCM7
+- introduce MYC gene
+- describe MYC function
+- provide GenBank Accession numbers for MYC
+- introduce genes related to cancer risk
+- describe PRIM1 gene function
+- describe RFC5 gene function
+- describe RRM2 gene function
+- describe SNRPD3 gene function
+- describe TK1 gene function
+- describe TYMS gene function
+- describe UHRF1 gene function
+- describe WDHD1 gene function
+- describe CCDC86 gene function
+- describe ELOVL6 gene function
+- describe GABRP gene function
+- describe KRT17 gene function
+- specify GenBank Accession for PRIM1
+- specify GenBank Accession for RFC5
+- specify GenBank Accession for RRM2
+- specify GenBank Accession for SNRPD3
+- specify GenBank Accession for TK1
+- specify GenBank Accession for TYMS
+- specify GenBank Accession for UHRF1
+- specify GenBank Accession for WDHD1
+- specify GenBank Accession for CCDC86
+- specify GenBank Accession for ELOVL6
+- specify GenBank Accession for GABRP
+- specify GenBank Accession for KRT17
+- introduce genes associated with cancer risk
+- describe MMP12 gene
+- describe NUP107 gene
+- describe NUTF2 gene
+- describe PA2G4 gene
+- describe SLC7A5 gene
+- describe SQLE gene
+- describe WASF1 gene
+- summarize gene panels
+- describe baseline signature panel
+- describe reduced baseline signature panel
+- describe method for identifying cancer patients
+- describe 9-marker baseline panel
+- describe 55-marker baseline panel
+- describe 46-marker baseline panel
+- describe 1 month low-dose response gene set
+- describe 90-marker panel
+- describe use of panels in determining susceptibility
+- describe predictor panels for LD-induced cancer
+- describe predictor panels for disease-free survival
+- introduce proliferation-independent expression signatures
+- describe investigation of gene expression profiling
+- describe identification of risky and protective genes
+- describe subdivision of genes into categories
+- describe computation of single value estimate
+- describe estimation of risk or protection
+- describe four categories of genes
+- describe full list and signature list for each category
+
+### Example 1
+
+- introduce biomarker predictor panel
+- describe micronuclei frequency in mice
+- compare transcript profiles in blood and mammary glands
+- identify systemic baseline signature
+- analyze early transcriptional responses to LD radiation
+- associate responses with immune, epithelial, and microenvironment signaling
+- identify HIF1A transcription factor network
+- analyze LD induced immune system network
+- associate responses with coagulation and leukocyte extravasation signaling
+- identify MG development genes
+- analyze TGFβ responsive genes
+- compare early and late MG transcriptional responses
+- associate late responses with proliferation, senescence, and microenvironment function
+- identify MYC-centric network
+- analyze CDKN1A network
+- associate responses with cell cycle arrest and senescence
+- identify SOX9 mark for adult human progenitor cells
+- analyze ECM remodeling and epithelial differentiation
+- associate LD regulated genes with human breast cancer survival duration
+- test hypothesis of association with breast cancer outcomes
+- calculate sum of normalized expression intensities
+- associate above-median expression with reduced survival duration
+- identify cancer outcome associated genes
+- enrich for stress response and RNA processing
+- identify tumor suppressor genes
+- associate down-regulation with disease-free survival
+- analyze remaining genes
+- associate higher expression with disease-free survival
+- compare associations with full systemic baseline signature
+- discuss implications of findings
+- summarize results
+- conclude on biomarker predictor panel
+
+### Example 2
+
+- determine 36 biomarker predictor panel
+- select full set of 105 BALB/c genes
+- examine association with disease-free survival
+- divide patients into two groups by median
+- show higher rates of breast-cancer related deaths
+- show significantly worse prognosis
+- select 105 genes with least differential expression
+- show no significant association with breast cancer survival
+- identify 36 COA genes individually showing differential expression
+- relate 25 genes to mitosis
+- relate 6 genes to poor survival in breast cancer patients
+- address hypothesis of concordance in direction of expression changes
+- compare full set of genes modulated at 1-month after LD exposure
+- compare direction of expression for overlapping genes
+- test association between 1-month LD BALB/c signature and poor prognosis
+- show strong concordance in direction of LD-induced expression
+- employ in vivo systems analyses to identify genetic differences
+- identify distinct tissue functions and signatures associated with cancer risks
+- associate strain variations with differential susceptibility to LD-induced mammary cancer
+- associate signatures with inter-individual variations in human breast cancer survival
+- support hypothesis that mechanisms controlling susceptibility to LD-induced mammary cancer are similar
+- identify differential baseline expression of tumor suppressor genes
+- identify genes associated with stress response and RNA processing
+- identify reduced immune activity early after LD exposure
+- identify differential expression of proliferation associated genes
+- associate strong association of baseline and 1-month signatures with disease-free survival
+- point to tissue mechanisms of individual variation to LD-induced mammary cancer
+- provide evidence for non-linear dose responses after LD exposures
+- observe genomic instability after HD exposures
+- find no evidence for genomic instability after LD exposures
+- search for genetic variation in molecular barrier functions
+- identify unique tissue response functions associated with mammary cancer risk
+- identify stunted immune response early after LD-irradiation
+- demonstrate reduced numbers of tissue macrophages
+- predict that MG tissue of resistant C57BL/6 mice mounts a barrier against cell progression
+- demonstrate reduced frequencies of SOX9-protein-positive epithelial cells
+- identify 55 genes associated with patient survival
+- find inverse association for 9 genes
+- suggest that increased cancer sensitivity is associated with less effective tumor suppressor mechanisms
+- identify 36 genes associated with patient disease-free survival
+- find minimal overlap between signatures and intrinsic gene signature
+- provide strong evidence against the validity of the LNT model for molecular responses
+
+### Methods and Materials.
+
+- introduce ethics statement
+- describe animal selection and acclimatization
+- outline irradiation protocol
+- collect peripheral blood samples
+- process blood samples for micronucleated red blood cell analysis
+- analyze micronucleated reticulocytes and normochromatic erythrocytes
+- compare frequencies of micronucleated cells between exposed and sham mice
+- harvest mammary glands and lymph nodes
+- isolate RNA from mammary gland and lymph node tissues
+- perform microarray hybridizations
+- analyze microarray data using RMA and NUSE
+- identify differentially expressed genes
+- perform pathway analysis using Ingenuity and KEGG
+- validate select expression array findings using quantitative RT-PCR
+- compare gene lists to known gene signatures
+- retrieve direction of expression in DCIS and breast cancer
+- identify human homologs of mouse genes
+- compare gene lists to breast cancer data sets
+- perform Kaplan-Meier disease-free survival analysis
+- perform log-rank tests
+- perform immunohistochemical analyses
+- describe design limitations
+- discuss limitations of using only two mouse strains
+- discuss limitations of time-points chosen
+- discuss limitations of using gross mixture of mammary cell types
+
+### Example 3
+
+- introduce goal of determining four signature panel
+- describe analysis of expression profiles of diagnostic breast tissue
+- identify genes associated with decreased or increased disease-free survival
+- adjust for proliferation status using meta-PCNA index
+- identify four groups of genes associated with disease-free survival
+- perform step-wise Cox regressions to identify smaller signatures
+- describe bioinformatic analysis of gene functions
+- outline criteria for selecting risky and protective genes
+- describe identification of risky and protective genes using Cox regression
+- profile microarrays of normal, healthy individuals
+- apply meta-PCNA index to discriminate genes associated with proliferation
+- perform Kaplan-Meier analysis of risk stratification of four signatures
+

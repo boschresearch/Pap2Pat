@@ -1,0 +1,269 @@
+{
+    "id": "US20160076023",
+    "authors": [
+        "Stephen R. Quake",
+        "William F. Burkholder",
+        "Lewis Z. Hong"
+    ],
+    "title": "METHOD FOR GENERATING EXTENDED SEQUENCE READS",
+    "date": "2014-04-17 00:00:00",
+    "abstract": "The present invention provides an approach to increase the effective read length of commercially available sequencing platforms to several kilobases and be broadly applied to obtain long sequence reads from mixed template populations. A method for generating extended sequence reads of long DNA molecules in a sample, comprising the steps of: assigning a specific barcode sequence to each template DNA molecule in a sample to obtain barcode-tagged molecules; amplifying the barcode-tagged molecules; fragmenting the amplified barcode-tagged molecules to obtain barcode-containing fragments; juxtaposing the barcode-containing fragments to random short segments of the original DNA template molecule during the process of generating a sequencing library to obtain demultiplexed reads; and assembling the demultiplexed reads to obtain extended sequence reads for each DNA template molecule, is disclosed. Also disclosed are methods systems and software for assembling paired end sequence reads to produce extended reads.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to a method for generating extended sequence reads and in particular, but not exclusively, to a method for generating extended sequence reads of large genomes."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to method for generating extended sequence reads"
+                    ],
+                    "num_characters": 189,
+                    "outline_medium": [
+                        "define field of invention"
+                    ],
+                    "outline_short": [
+                        "define field of invention"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The current maximum read length of next-generation sequencing technologies, such as those developed by Illumina\u00ae and Life Technologies\u2122, is around 250 bases. The read length is one of the main factors that determine the quality of a genome assembly. In general, longer reads make better assemblies because they span more repeats.",
+                        "Furthermore, increasing the read length of next-generation sequencing technologies enables broader applications such as being able to sequence larger genomes, generate extended sequence reads and be useful for long-range haplotype analysis on targeted genomic regions.",
+                        "Therefore, there is a need for an approach to increase the read length of these commercially available sequencing platforms to several kilobases."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate need for longer read lengths"
+                    ],
+                    "num_characters": 746,
+                    "outline_medium": [
+                        "motivate need for longer read lengths"
+                    ],
+                    "outline_short": [
+                        "motivate need for longer read lengths"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "In accordance with a first aspect of the present invention, there is provided a method for generating extended sequence reads of long DNA molecules in a sample, comprising the steps of:\n\n\n- - (i) assigning a specific barcode sequence to each template DNA\n    molecule in a sample to obtain barcode-tagged molecules;\n  - (ii) amplifying the barcode-tagged molecules;\n  - (iii) fragmenting the amplified barcode-tagged molecules to obtain\n    barcode-containing fragments;\n  - (iv) juxtaposing the barcode-containing fragments to random short\n    segments of the original DNA template molecule during the process of\n    generating a sequencing library to obtain demultiplexed reads; and\n  - (v) assembling the demultiplexed reads to obtain extended sequence\n    reads for each DNA template molecule.",
+                        "Preferably, the method further comprises the step of labelling the amplified barcode-tagged molecules with biotin.",
+                        "Preferably, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the step of subjecting the amplified barcode-tagged molecules to unidirectional deletion from the barcode-distal end of the barcode-tagged molecules to obtain barcode-containing fragments.",
+                        "Preferably, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the steps of:\n\n\n- - (i) creating a nick at the barcode-distal end of the amplified\n    barcode-tagged molecules;\n  - (ii) performing a nick translation towards the barcode-proximal end;\n    and\n  - (iii) treating with endonuclease the resulting molecules to generate\n    blunt ends, to obtain barcode-containing fragments.",
+                        "Preferably, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the step of performing random fragmentation by a mechanical method or an enzymatic method to obtain barcode-containing fragments.",
+                        "Preferably, the barcode-containing fragments have lengths ranging from about 300 base pairs to N base pairs, wherein N equals to the length of the original DNA template molecule.",
+                        "Preferably, the method further comprises the step of purifying the barcode-containing fragments using streptavidin-coated paramagnetic beads.",
+                        "Preferably, wherein the step of purifying the barcode-containing fragments comprises dissociating the biotin-labelled molecules from the streptavidin-coated paramagnetic beads.",
+                        "Preferably, wherein the step of purifying the barcode-containing fragments comprises dissociating the biotin-labelled molecules from the streptavidin-coated paramagnetic beads, further comprises the step of circularizing the purified barcode-containing fragments by intramolecular ligation.",
+                        "Preferably, the method further comprises the step of ligating sequencing adaptors onto the ends of the barcode-containing fragments prior to the step of juxtaposing the barcode-containing fragments to random short segments of the original DNA template molecule.",
+                        "Preferably, the specific barcode sequence is assigned by linker ligation to each template DNA molecule.",
+                        "Preferably, wherein the step of amplifying the barcode-tagged molecules is by circularizing the barcode-tagged molecules and performing rolling circle amplification.",
+                        "Preferably, the extended sequences reads are compatible for sequencing on sequencing platforms.",
+                        "In accordance with a second aspect of the present invention, there is provided a system for obtaining extended sequence reads from template molecules of a DNA sequence, comprising:\n\n\n- - (i) a quality filtering module for filtering raw paired-end sequence\n    reads from a sequencer by removing read-pairs with low quality\n    scores, removing read-pairs with missing barcode sequences and\n    trimming platform-specific adaptor sequences;\n  - (ii) a barcode analysis module for identifying highly-represented\n    barcodes and re-assigning sequences associated with\n    poorly-represented barcodes;\n  - (iii) a demultiplexing module for using barcode sequences as\n    identifiers to obtain reads associated with individual template\n    molecules and removing duplicate read-pairs; and\n  - (iv) an assembly module for assembling demultiplexed reads to obtain\n    extended sequence reads for each template molecule.",
+                        "The system in accordance to the second aspect of the present invention wherein the DNA sequence is a known sequence, further comprising:",
+                        "(i) a sequence alignment module for performing paired-end alignment to a reference sequence and removing disconcordant alignments;\n\n\n- - (ii) a demultiplexing module for using barcode sequences as\n    identifiers to obtain alignments to individual template molecules\n    and removing duplicate read-pairs in place of the demultiplexing\n    module according to the second aspect of the present invention; and\n  - (iii) a haplotyping module for obtaining pileup of aligned reads at\n    each position along the reference sequence, determining consensus\n    base-call at each position and assembling base-calls to obtain\n    extended sequence reads for each template molecule in place of the\n    assembly module according to the second aspect of the present\n    invention.",
+                        "In accordance with a third aspect of the present invention, there is provided a computer-readable medium with an executable programme stored thereon, the programme comprising instructions for obtaining extended sequence reads from template molecules of a DNA sequence, wherein the programme instructs a microprocessor to perform the following steps:\n\n\n- - (i) filtering raw paired-end sequence reads from a sequencer by\n    removing read-pairs with low quality scores, removing read-pairs\n    with missing barcode sequences and trimming platform-specific\n    adaptor sequences;\n  - (ii) identifying highly-represented barcodes and re-assigning\n    sequences associated with poorly-represented barcodes;\n  - (iii) using barcode sequences as identifiers to obtain reads\n    associated with individual template molecules and removing duplicate\n    read-pairs; and\n  - (iv) assembling demultiplexed reads to obtain extended sequence\n    reads for each template molecule.",
+                        "The computer-readable medium in accordance to the third aspect of the present invention wherein the DNA sequence is a known sequence, wherein the programme instructs the microprocessor to further perform the following steps:\n\n\n- - (i) performing paired-end alignment to a reference sequence and\n    removing disconcordant alignments at the step of identifying\n    highly-represented barcodes and re-assigning sequences associated\n    with poorly-represented barcodes;\n  - (ii) replacing the step of using barcode sequences as identifiers to\n    obtain reads associated with individual template molecules and\n    removing duplicate read-pairs with the step of using barcode\n    sequences as identifiers to obtain alignments to individual template\n    molecules and removing duplicate read-pairs; and\n  - (iii) replacing the step of assembling demultiplexed reads with the\n    step of obtaining pileup of aligned reads at each position along the\n    reference sequence, determining consensus base-call at each position\n    and assembling base-calls to obtain extended sequence reads for each\n    template molecule.",
+                        "The present invention provides an approach that can: 1) increase the effective read length of these commercially available sequencing platforms to several kilobases and 2) be broadly applied to obtain long sequence reads from mixed template populations.",
+                        "The present invention applies the concept of barcoding to generate long sequence reads by providing a technical advance in juxtaposing the assigned barcode to random overlapping segments of the original template.",
+                        "The present invention relies on assigning barcodes to individual template molecules, allowing for unambiguous assembly of template sequences even for molecules with high sequence similarity. This also means that the present invention will work for sequencing targeted genomic regions or viral genomes.",
+                        "Accordingly, aspect(s) of the present invention also includes: \u2014",
+                        "a) A method to assign unique DNA barcodes, i.e., a random string of DNA nucleotides, to individual long (>3 kilo bases (kb)) template molecules.\n\nb) A method to juxtapose the assigned DNA barcode to random short segments of the original template molecule during the process of generating a sequencing library.\n\nc) A method of using the DNA barcode associated with each molecule of a sequencing library to identify the template of origin.\n\nd) A method of using DNA barcodes to substantially reduce the error rate of massively parallel sequencing.\n\ne) A method for barcode-directed assembly of short sequence reads to obtain individual template sequences.",
+                        "Other aspects and advantages of the present invention will become apparent to those skilled in the art from a review of the ensuing description, which proceeds with reference to the following illustrative drawings of preferred embodiments."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce method for generating extended sequence reads",
+                        "assign specific barcode sequence to each template DNA molecule",
+                        "amplify barcode-tagged molecules",
+                        "fragment amplified barcode-tagged molecules",
+                        "juxtapose barcode-containing fragments to random short segments",
+                        "assemble demultiplexed reads to obtain extended sequence reads",
+                        "label amplified barcode-tagged molecules with biotin",
+                        "fragment amplified barcode-tagged molecules by unidirectional deletion",
+                        "fragment amplified barcode-tagged molecules by nick translation",
+                        "fragment amplified barcode-tagged molecules by random fragmentation",
+                        "purify barcode-containing fragments using streptavidin-coated paramagnetic beads",
+                        "dissociate biotin-labelled molecules from streptavidin-coated paramagnetic beads",
+                        "circularize purified barcode-containing fragments by intramolecular ligation",
+                        "ligate sequencing adaptors onto ends of barcode-containing fragments",
+                        "assign specific barcode sequence by linker ligation",
+                        "amplify barcode-tagged molecules by circularizing and rolling circle amplification",
+                        "obtain extended sequence reads compatible for sequencing on sequencing platforms"
+                    ],
+                    "num_characters": 8901,
+                    "outline_medium": [
+                        "introduce method for generating extended sequence reads",
+                        "assign barcode sequence to template DNA molecules",
+                        "amplify and fragment barcode-tagged molecules",
+                        "juxtapose fragments to random short segments",
+                        "assemble demultiplexed reads to obtain extended sequence reads",
+                        "describe optional steps for fragmenting and purifying",
+                        "introduce system for obtaining extended sequence reads",
+                        "describe computer-readable medium with executable programme"
+                    ],
+                    "outline_short": [
+                        "introduce method for generating extended sequence reads",
+                        "describe steps of method",
+                        "describe system for obtaining extended sequence reads",
+                        "describe computer-readable medium with executable programme"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The present invention applies the concept of barcoding to generate long sequence reads by providing a technical advance in juxtaposing the assigned barcode to random overlapping segments of the original template.",
+                        "The present invention relies on assigning barcodes to individual template molecules, allowing for unambiguous assembly of template sequences even for molecules with high sequence similarity. This also means that the present invention will work for sequencing targeted genomic regions or viral genomes.",
+                        "The current maximum read length of next-generation sequencing technologies, such as those developed by Illumina\u00ae and Life Technologies\u2122, is around 250 bases. The present invention, also known as \u201cBarcode-directed Assembly for Extra-long Sequences (BAsE-Seq)\u201d provides an approach that can: 1) increase the effective read length of these commercially available sequencing platforms to several kilobases and 2) be broadly applied to obtain long sequence reads from mixed template populations. In brief, our method relies on assigning random DNA barcodes to long template molecules (FIG. 1A), followed by a library preparation protocol that juxtaposes the assigned barcode to random short segments of the original template (FIGS. 1B and 2). The resulting molecules are ligated with platform-specific adaptors for next-generation sequencing. Sequence reads are de-multiplexed using the barcode sequence and used to assemble long-range haplotypes that were present on the original template. In practice, we have applied this technology to perform single virion sequencing on the Hepatitis B virus, a DNA virus with a 3.2 kb genome. In general, we anticipate that this technology can be broadly applied to generate extended sequence reads and will be useful for long-range haplotype analysis on targeted genomic regions, or for improving de novo genome and transcriptome assemblies. A detailed description of our protocol is described in the following paragraphs.",
+                        "There is described a method for generating extended sequence reads of long DNA molecules (>3 kb), in a sample. The method comprises the steps of: (i) assigning a specific barcode sequence to each template DNA molecule in a sample to obtain barcode-tagged molecules; (ii) amplifying the barcode-tagged molecules; (iii) fragmenting the amplified barcode-tagged molecules to obtain barcode-containing fragments; (iv) juxtaposing the barcode-containing fragments to random short segments of the original DNA template molecule during the process of generating a sequencing library to obtain demultiplexed reads; and (v) assembling the demultiplexed reads to obtain extended sequence reads for each DNA template molecule.",
+                        "a) Barcode Assignment.",
+                        "In the first step, individual template molecules are assigned with a unique DNA barcode. In our example, two rounds of PCR amplification are performed using primers with template-specific sequence from opposite ends of the molecule (FIG. 1A). This will generate uniquely tagged template molecules for preparing libraries and can be broadly applied for assigning barcodes to targeted genomic regions. Both primers contain a universal sequence on their 5\u2032-ends and one of them contains a barcode, i.e., a string of 20 random nucleotides (encodes for >1012 sequences). To ensure that each template molecule is uniquely assigned, the template should be diluted to obtain a relatively small number of genomes (<109) compared to unique barcode sequences.",
+                        "Subsequently, barcode-tagged molecules can be clonally amplified by PCR using universal primers and the PCR product can be used to prepare sequencing libraries. In other manifestations where the template sequence is unknown, the barcode can be assigned by ligation of double- or single-stranded DNA linkers carrying a random string of nucleotides flanked by universal sequences.",
+                        "The use of unique barcodes to tag individual template molecules has been shown to greatly reduce the error rate of massively parallel sequencing. Using this strategy, mutations that pre-existed on the template and errors introduced during barcode assignment will be found in all daughter molecules.",
+                        "In contrast, errors introduced in subsequent steps of library preparation, sequencing, or base-calling can be easily removed because they will only be present in a minority of daughter molecules (FIG. 1A). Based on the published error rate of the DNA polymerase used in our protocol, this translates to one error in every 50 template sequences for template molecules that are 3 kb in size. Furthermore, by using barcodes as unique identifiers for individual genomes, sequences associated with each barcode can be assembled into a complete template sequence.",
+                        "b) Library Preparation.",
+                        "The goal of library preparation is to tag overlapping fragments of each template molecule with its assigned barcode in order to obtain uniform sequence coverage. This concept is illustrated in FIG. 1B and a detailed outline of the protocol is shown in FIG. 2.",
+                        "Firstly, clonally amplified barcode-tagged molecules are deleted from the barcode-distal end to achieve a broad size distribution of fragments ranging from \u02dc300 bp to N bp, where N equals the length of the template molecule. Unidirectional deletion can be achieved by protecting the barcode-proximal end with nuclease-resistant nucleotides or a 3\u2032-protruding overhang, and performing time-dependent digestion from the barcode-distal end using a 3\u2032 to 5\u2032 exonuclease (such as Exonuclease III), followed by treatment with an endonuclease (such as S1 Nuclease or Mung Bean Nuclease) to generate blunt-ends.",
+                        "Barcode-containing fragments are purified using streptavidin-coated beads, and these biotinylated fragments will be dissociated and subjected to end repair, such that both ends of the molecules are blunt and 5\u2032-phosphorylated. The end-repaired molecules are circularized by intramolecular ligation using a DNA ligase (such as T4 DNA ligase). Uncircularized molecules will be removed by nuclease treatment (such as a combination of Exonuclease I and Lambda Exonuclease).",
+                        "After circularization, different regions from the original template will be juxtaposed to its barcode. The circularized molecules will be used as template for random fragmentation and adaptor tagging using a transposome-based method, such as the Nextera XT kit (Illumina\u00ae).",
+                        "Importantly, the primers used during PCR enrichment of the sequencing library will be designed such that the second sequencing read will be anchored by the barcode sequence. Thus, this PCR generates double-stranded DNA molecules that are \u201csequencing-ready\u201d. Finally, the PCR products are subjected to size selection before sequencing. A custom sequencing primer that anneals to the forward priming sequence is used for the second sequencing read.",
+                        "There are several alternative approaches to generate a broad distribution of barcode-tagged molecules before circularization. One approach involves creating a nick at the barcode-distal end using a nicking endonuclease, nick translation towards the barcode-proximal end using DNA polymerase I, followed by treatment with endonuclease to generate a blunt end. Another approach involves performing random fragmentation using a mechanical method, such as using the Covaris instrument for focused-ultrasonication, or an enzymatic method, such as using the NEBNext dsDNA Fragmentase, followed by purification of barcode-containing fragments using streptavidin-coated paramagnetic beads.",
+                        "An alternative, PCR-free approach to clonal amplification is contemplated, such as circularizing the barcoded template and performing rolling circle amplification using phi29 polymerase.",
+                        "Barcodes can be assigned by linker ligation. Both linkers will contain universal sequences on their 5\u2032-end to facilitate clonal amplification in the next step. The barcode-containing linker will also contain a unique universal sequence on its 3\u2032-end for primer annealing during the PCR step at the end of the protocol.",
+                        "Software packages for obtaining extended or extra-long sequence reads by reference-assisted assembly and for obtaining extended or extra-long sequence reads from template molecules of an unknown sequence are illustrated in FIGS. 3 and 4, respectively.",
+                        "There is described hereinafter a system for obtaining extended sequence reads from template molecules of a DNA sequence. The system comprises (i) a quality filtering module for filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences; (ii) a barcode analysis module for identifying highly-represented barcodes and re-assigning sequences associated with poorly-represented barcodes; (iii) a demultiplexing module for using barcode sequences as identifiers to obtain reads associated with individual template molecules and removing duplicate read-pairs; and (iv) an assembly module for assembling demultiplexed reads to obtain extended sequence reads for each template molecule (FIG. 4). The template molecules are long, preferably >3 kb.",
+                        "Where the DNA sequence is a known sequence, the system further comprises (i) a sequence alignment module for performing paired-end alignment to a reference sequence and removing disconcordant alignments; (ii) a demultiplexing module for using barcode sequences as identifiers to obtain alignments to individual template molecules and removing duplicate read-pairs in place of the demultiplexing module shown in FIG. 4; and (iii) a haplotyping module for obtaining pileup of aligned reads at each position along the reference sequence, determining consensus base-call at each position and assembling base-calls to obtain extended sequence reads for each template molecule in place of the assembly module shown in FIG. 4 (FIG. 3).",
+                        "There is also disclosed a computer-readable medium with an executable programme stored thereon, the programme comprising instructions for obtaining extended sequence reads from template molecules of a DNA sequence, wherein the programme instructs a microprocessor to perform the following steps of (i) filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences; (ii) identifying highly-represented barcodes and re-assigning sequences associated with poorly-represented barcodes; (iii) using barcode sequences as identifiers to obtain reads associated with individual template molecules and removing duplicate read-pairs; and (iv) assembling demultiplexed reads to obtain extended sequence reads for each template molecule.",
+                        "Where the DNA sequence is a known sequence, the programme instructs the microprocessor to further perform the following steps of (i) performing paired-end alignment to a reference sequence and removing disconcordant alignments at the step of identifying highly-represented barcodes and re-assigning sequences associated with poorly-represented barcodes; (ii) replacing the step of using barcode sequences as identifiers to obtain reads associated with individual template molecules and removing duplicate read-pairs described above with the step of using barcode sequences as identifiers to obtain alignments to individual template molecules and removing duplicate read-pairs; and (iii) replacing the step of assembling demultiplexed reads described above with the step of obtaining pileup of aligned reads at each position along the reference sequence, determining consensus base-call at each position and assembling base-calls to obtain extended sequence reads for each template molecule."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Examples",
+                            "paragraphs": [
+                                "Hepatitis B virus (HBV), which contains a 3.2 kb dsDNA genome, was used as a template for methodology development and generating proof-of-concept data. The results presented below demonstrate the use of BAsE-Seq to obtain long (\u02dc3.2 kb) sequence reads from individual template molecules, thereby achieving single virion sequencing of HBV.",
+                                "HBV DNA was isolated from a chronically infected patient, PCR-amplified to obtain full-length viral genomes, and cloned into a TOPO pCR2.1 vector (Life Technologies\u2122). Sanger sequencing was performed across each clone to obtain full-length sequences, and two clones (Clone-1 and Clone-2) with 17 single nucleotide polymorphisms (SNPs) between them were used as input for barcode assignment. In the results presented hereafter, barcode-tagged whole-genome amplicons from 20,000 template molecules (HBV genomes) were used as input for library preparation using the BAsE-Seq protocol described above.",
+                                "Summary statistics from a typical single virion sequencing experiment of HBV are shown in Table 1, and coverage data per template molecule are illustrated in FIGS. 5 and 6. In this library, 18,143,186 read-pairs were obtained from the MiSeq sequencer (Illumina\u00ae), from which Ser. No. 12/004,237 read-pairs contained the barcode in the expected orientation. After trimming for adaptor, barcode tag and universal sequences, and removing reads shorter than 15 bp, 7,336,915 pass-filter read-pairs were used for alignment to a HBV reference genome. From these read-pairs, 97% read-pairs aligned concordantly, and were distributed across 4,294 individual template molecules, 2,717 of which were identified as \u201chigh coverage\u201d and were used for constructing long reads.",
+                                "To test the sensitivity and accuracy of our methodology in generating long sequence reads, Clone-1 and Clone-2 were mixed at different ratios to generate a mixed template population where Clone-1 is present at approximately 1% or 10% frequency in the sample. BAsE-Seq was performed on each mixed-template pool. Firstly, barcodes were removed from each read-pair prior to alignment and the resulting data was treated as a \u201cbulk\u201d sequencing experiment to determine overall allele frequencies at the SNP positions. The minor allele frequencies in both libraries were very close to the mixing ratio\u20140.98% for the \u201c1% pool\u201d (Lib\u20141:99) and 13.44% for the \u201c10% pool\u201d (Lib\u20141:9)\u2014indicating that the mixed template pool was generated correctly and PCR bias was negligible (Table 2 and FIG. 7). Subsequently, the \u201cbulk\u201d sequence data was de-multiplexed using barcode sequences and sequence reads from individual template molecules were analyzed to obtain \u02dc3.2 kb reads. Using the long sequence reads, 17-SNP haplotypes were generated for each template molecule. In Lib\u20141:9, 240 molecules carried a Clone-1 haplotype and 1,639 molecules carried a Clone-2 haplotype, corresponding to a 12.77% minor haplotype frequency. In Lib\u20141:99, 20 molecules carried a Clone-1 haplotype and 1,912 molecules carried a Clone-2 haplotype, corresponding to a 1.04% minor haplotype frequency. Importantly, chimeric sequences where Clone-1 and Clone-2 SNPs were found on the same molecule were present at \u22660.1% frequency. Furthermore, the use of barcodes to correct for sequencing errors resulted in a very low error rate for BAsE-Seq, allowing for significant separation of true sequence variants from background noise in Lib\u20141:99 (Table 2 and FIG. 8).",
+                                "Those skilled in the art will appreciate that the invention described herein is susceptible to variations and modifications other than those specifically described. The invention includes all such variation and modifications. The invention also includes all of the steps, features, formulations and compounds referred to or indicated in the specification, individually or collectively and any and all combinations or any two or more of the steps or features.",
+                                "Each document, reference, patent application or patent cited in this text, if any, is expressly incorporated herein in their entirety by reference, which means that it should be read and considered by the reader as part of this text. That the document, reference, patent application or patent cited in this text is not repeated in this text is merely for reasons of conciseness.",
+                                "Any manufacturer's instructions, descriptions, product specifications, and product sheets for any products mentioned herein or in any document incorporated by reference herein, are hereby incorporated herein by reference, and may be employed in the practice of the invention.",
+                                "The present invention is not to be limited in scope by any of the specific embodiments described herein. These embodiments are intended for the purpose of exemplification only. Functionally equivalent products, formulations and methods are clearly within the scope of the invention as described herein.",
+                                "The invention described herein may include one or more range of values (e.g. size, concentration etc). A range of values will be understood to include all values within the range, including the values defining the range, and values adjacent to the range which lead to the same or substantially the same outcome as the values immediately adjacent to that value which defines the boundary to the range.",
+                                "Throughout this specification, unless the context requires otherwise, the word \u201ccomprise\u201d or variations such as \u201ccomprises\u201d or \u201ccomprising\u201d, will be understood to imply the inclusion of a stated integer or group of integers but not the exclusion of any other integer or group of integers. It is also noted that in this disclosure and particularly in the claims and/or paragraphs, terms such as \u201ccomprises\u201d, \u201ccomprised\u201d, \u201ccomprising\u201d and the like can have the meaning attributed to it in U.S. patent law; e.g., they can mean \u201cincludes\u201d, \u201cincluded\u201d, \u201cincluding\u201d, and the like; and that terms such as \u201cconsisting essentially of\u201d and \u201cconsists essentially of\u201d have the meaning ascribed to them in U.S. patent law, e.g., they allow for elements not explicitly recited, but exclude elements that are found in the prior art or that affect a basic or novel characteristic of the invention.",
+                                "Other definitions for selected terms used herein may be found within the detailed description of the invention and apply throughout. Unless otherwise defined, all other scientific and technical terms used herein have the same meaning as commonly understood to one of ordinary skill in the art to which the invention belongs.",
+                                "While the invention has been described with reference to specific methods and embodiments, it will be appreciated that various modifications and changes may be made without departing from the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe Hepatitis B virus as a template for methodology development",
+                                "outline PCR amplification and cloning of full-length viral genomes",
+                                "describe Sanger sequencing to obtain full-length sequences",
+                                "outline barcode assignment to whole-genome amplicons",
+                                "describe library preparation using BAsE-Seq protocol",
+                                "outline summary statistics from a typical single virion sequencing experiment",
+                                "describe coverage data per template molecule",
+                                "outline testing sensitivity and accuracy of methodology",
+                                "describe mixed template population generation",
+                                "outline de-multiplexing and analysis of sequence reads",
+                                "describe haplotype generation and error rate determination",
+                                "outline results from Lib\u20141:9 and Lib\u20141:99 experiments",
+                                "describe significance of results"
+                            ],
+                            "num_characters": 6660,
+                            "outline_medium": [
+                                "describe Hepatitis B virus (HBV) as a template for methodology development",
+                                "describe PCR amplification and cloning of HBV DNA",
+                                "describe barcode assignment and library preparation using BAsE-Seq protocol",
+                                "describe summary statistics from a typical single virion sequencing experiment of HBV",
+                                "describe testing sensitivity and accuracy of BAsE-Seq methodology",
+                                "describe results of BAsE-Seq on mixed template populations"
+                            ],
+                            "outline_short": [
+                                "describe single virion sequencing of Hepatitis B virus",
+                                "present summary statistics and coverage data",
+                                "test sensitivity and accuracy of methodology"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce Barcode-directed Assembly for Extra-long Sequences (BAsE-Seq)",
+                        "describe limitations of next-generation sequencing technologies",
+                        "outline BAsE-Seq approach to increase effective read length",
+                        "describe assigning random DNA barcodes to long template molecules",
+                        "outline library preparation protocol",
+                        "describe juxtaposing barcode-containing fragments to random short segments",
+                        "outline demultiplexing and assembling long-range haplotypes",
+                        "describe application to single virion sequencing of Hepatitis B virus",
+                        "outline method for generating extended sequence reads",
+                        "describe assigning specific barcode sequence to each template DNA molecule",
+                        "outline amplifying and fragmenting barcode-tagged molecules",
+                        "describe juxtaposing barcode-containing fragments to random short segments",
+                        "outline assembling demultiplexed reads to obtain extended sequence reads",
+                        "describe barcode assignment using PCR amplification",
+                        "outline clonal amplification and library preparation",
+                        "describe alternative approaches to generate barcode-tagged molecules",
+                        "outline software packages for obtaining extended sequence reads",
+                        "describe system for obtaining extended sequence reads from template molecules",
+                        "outline quality filtering and barcode analysis modules",
+                        "describe demultiplexing and assembly modules",
+                        "outline alternative approach for known DNA sequences",
+                        "describe computer-readable medium with executable programme",
+                        "outline programme instructions for obtaining extended sequence reads"
+                    ],
+                    "num_characters": 11711,
+                    "outline_medium": [
+                        "introduce Barcode-directed Assembly for Extra-long Sequences (BAsE-Seq)",
+                        "describe advantages of BAsE-Seq over current sequencing technologies",
+                        "outline method for generating extended sequence reads",
+                        "describe barcode assignment step",
+                        "describe library preparation step",
+                        "describe fragmentation and circularization of barcode-tagged molecules",
+                        "describe PCR enrichment and sequencing library preparation",
+                        "describe software packages for obtaining extended sequence reads",
+                        "describe system for obtaining extended sequence reads from template molecules",
+                        "describe computer-readable medium with executable program for obtaining extended sequence reads",
+                        "provide examples of BAsE-Seq methodology development and proof-of-concept data"
+                    ],
+                    "outline_short": [
+                        "introduce Barcode-directed Assembly for Extra-long Sequences (BAsE-Seq)",
+                        "describe method for generating extended sequence reads",
+                        "detail barcode assignment and library preparation",
+                        "outline software packages for obtaining extended sequence reads",
+                        "describe system for obtaining extended sequence reads from template molecules"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for generating extended sequence reads of long DNA molecules in a sample, comprising the steps of:\n(i) assigning a specific barcode sequence to each template DNA molecule in a sample to obtain barcode-tagged molecules;\n(ii) amplifying the barcode-tagged molecules;\n(iii) fragmenting the amplified barcode-tagged molecules to obtain barcode-containing fragments;\n(iv) juxtaposing the barcode-containing fragments to random short segments of the original DNA template molecule during the process of generating a sequencing library to obtain demultiplexed reads; and\n(v) assembling the demultiplexed reads to obtain extended sequence reads for each DNA template molecule.",
+        "2. The method according to claim 1, further comprising the step of labelling the amplified barcode-tagged molecules with biotin.",
+        "3. The method according to claim 1, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the step of subjecting the amplified barcode-tagged molecules to unidirectional deletion from the barcode-distal end of the barcode-tagged molecules to obtain barcode-containing fragments.",
+        "4. The method according to claim 1, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the steps of:\n(i) creating a nick at the barcode-distal end of the amplified barcode-tagged molecules;\n(ii) performing a nick translation towards the barcode-proximal end; and\n(iii) treating with endonuclease the resulting molecules to generate blunt ends, to obtain barcode-containing fragments.",
+        "5. The method according to claim 1, wherein the step of fragmenting the amplified barcode-tagged molecules comprises the step of performing random fragmentation by a mechanical method or an enzymatic method to obtain barcode-containing fragments.",
+        "6. The method according to claim 1, wherein the barcode-containing fragments have lengths ranging from about 300 base pairs to N base pairs, wherein N equals to the length of the original DNA template molecule.",
+        "7. The method according to claim 2, further comprising the step of purifying the barcode-containing fragments using streptavidin-coated paramagnetic beads.",
+        "8. The method of claim 7, wherein the step of purifying the barcode-containing fragments comprises dissociating the biotin-labelled molecules from the streptavidin-coated paramagnetic beads.",
+        "9. The method of claim 1, wherein step (iv) comprises circularizing the purified barcode-containing fragments by intramolecular ligation.",
+        "10. (canceled)",
+        "11. The method of claim 1, wherein the specific barcode sequence is assigned by linker ligation to each template DNA molecule.",
+        "12. The method of claim 1, wherein the step of amplifying the barcode-tagged molecules is by circularizing the barcode-tagged molecules and performing rolling circle amplification.",
+        "13. The method of claim 1, wherein the extended sequences reads are compatible for sequencing on sequencing platforms.",
+        "14-17. (canceled)",
+        "18. The method of claim 1, further comprising the step of ligating sequencing adaptors onto the ends of the barcode-containing fragments.",
+        "19. A system for obtaining extended sequence reads from template molecules of a DNA sequence, comprising:\n(i) a quality filtering module for filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences;\n(ii) a demultiplexing module for using barcode sequences as identifiers to obtain reads associated with individual template molecules and removing duplicate read-pairs; and\n(iii) an assembly module for assembling demultiplexed reads to obtain extended sequence reads for each template molecule.",
+        "20. A system for obtaining extended sequence reads from a known DNA sequence, comprising:\n(i) a quality filtering module for filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences;\n(ii) a sequence alignment module for performing paired-end alignment to a reference sequence and removing discordant alignments;\n(iii) a demultiplexing module for using barcode sequences as identifiers to obtain alignments to individual template molecules and removing duplicate read-pairs; and\n(iv) a haplotyping module for obtaining pileup of aligned reads at each position along the reference sequence, determining consensus base-call at each position and assembling base-calls to obtain extended sequence reads for each template molecule.",
+        "21. A computer-readable medium with an executable programme stored thereon, the programme comprising instructions for obtaining extended sequence reads from template molecules of a DNA sequence, wherein the programme instructs a microprocessor to perform the following steps:\n(i) filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences;\n(ii) using barcode sequences as identifiers to obtain reads associated with individual template molecules and removing duplicate read-pairs; and\n(iii) assembling demultiplexed reads to obtain extended sequence reads for each template molecule.",
+        "22. A computer-readable medium with an executable programme stored thereon, the programme comprising instructions for obtaining extended sequence reads from a known sequence template molecules of a DNA sequence, wherein the programme instructs a microprocessor to perform the following steps:\n(i) filtering raw paired-end sequence reads from a sequencer by removing read-pairs with low quality scores, removing read-pairs with missing barcode sequences and trimming platform-specific adaptor sequences;\n(ii) performing paired-end alignment to a reference sequence and removing discordant alignments;\n(iii) using barcode sequences as identifiers to obtain alignments to individual template molecules and removing duplicate read-pairs; and\n(iv) obtaining pileup of aligned reads at each position along the reference sequence, determining consensus base-call at each position and assembling base-calls to obtain extended sequence reads for each template molecule."
+    ]
+}

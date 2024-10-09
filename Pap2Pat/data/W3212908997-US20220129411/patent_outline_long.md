@@ -1,0 +1,258 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce quantum circuits
+- describe Clifford circuits
+- motivate fault-tolerance
+- limitations of conventional synthesis
+- conventional template matching
+- limitations of peephole optimization
+
+## SUMMARY
+
+- introduce invention
+- describe system components
+- template matching
+- partition Clifford circuit
+- symbolic peephole optimization
+- alternative embodiment
+- implementation as method/product
+
+## DETAILED DESCRIPTION
+
+- disclaim limitations of description
+- introduce quantum circuits
+- motivate Clifford circuits
+- define Clifford gates
+- describe Pauli-push equations
+- introduce template matching
+- define templates
+- describe template application
+- explain forward and backward template application
+- discuss independence of templates
+- outline circuit optimization procedure
+- describe handling of blocking gates
+- conclude optimization process
+- introduce Clifford circuits
+- limitations of conventional template matching
+- limitations of conventional peephole optimization
+- motivate partitioned template matching
+- motivate symbolic peephole optimization
+- define partitioned template matching
+- define symbolic peephole optimization
+- describe partitioning of Clifford circuit
+- describe template matching on computation stage
+- describe SWAP optimization
+- describe floating-gates technique
+- describe symbolic peephole optimization
+- describe rewriting straddling gates
+- describe replacing straddling gates with symbolic Pauli gates
+- describe peephole optimization with symbolic Pauli gates
+- describe sequential combination of partitioned template matching and symbolic peephole optimization
+- describe electronic generation of optimized Clifford circuits
+- describe solving technical problems with partitioned template matching and symbolic peephole optimization
+- describe controlling real-world devices with optimized Clifford circuits
+- illustrate block diagram of Clifford optimization system
+- describe Clifford optimization system components
+- describe partition component
+- describe template component
+- describe floating component
+- describe SWAP component
+- describe symbolic component
+- describe peephole component
+- describe iterative execution of components
+- illustrate flow diagram of computer-implemented method
+- describe receiving suboptimal Clifford circuit
+- describe partitioning suboptimal Clifford circuit
+- describe applying template matching to computation stage
+- describe applying floating-gates technique
+- describe applying SWAP optimization
+- describe selecting subcircuit for peephole optimization
+- describe rewriting straddling gates
+- describe replacing straddling gates with symbolic Pauli gates
+- describe performing peephole optimization with symbolic Pauli gates
+- describe generating optimized Clifford circuit
+- illustrate flow diagram of computer-implemented method
+- describe receiving Clifford unitary
+- describe compiling Clifford unitary
+- describe optimizing compiled circuit
+- describe partitioning optimized circuit
+- describe applying template matching to computation stage
+- describe applying floating-gates technique
+- describe applying SWAP optimization
+- describe selecting subcircuit for peephole optimization
+- describe rewriting straddling gates
+- describe replacing straddling gates with symbolic Pauli gates
+- describe performing peephole optimization with symbolic Pauli gates
+- describe generating optimized Clifford circuit
+- conclude Clifford circuit optimization
+- describe computer-implemented method 200
+- perform template matching
+- perform SWAP optimization
+- perform symbolic peephole optimization
+- output optimized Clifford circuit
+- describe computer-implemented method 300
+- receive suboptimal Clifford circuit
+- synthesize suboptimal Clifford circuit
+- perform acts 204-210
+- iteratively repeat acts 304-306
+- output optimized Clifford circuit
+- explain partitioned template matching and symbolic peephole optimization
+- describe two ways to apply novel algorithms
+- illustrate baseline compiler
+- define decoupling of Pauli operators
+- prove Lemma 1
+- describe compiling algorithm
+- illustrate system 500
+- describe partition component
+- illustrate Pauli gate pushing
+- illustrate partitioned Clifford circuit
+- illustrate system 800
+- describe template component
+- illustrate templates in library
+- introduce template component
+- implement Hadamard pushing and/or Phase pushing
+- illustrate exemplary templates for Hadamard and Phase pushing
+- introduce floating gate conversion rules
+- define rules for converting Phase gates and/or Hadamard gates
+- illustrate how floating gate pushing can be used to remove blocking gates
+- introduce SWAP equivalence relations
+- optimize SWAP stage
+- illustrate how a SWAP gate can be optimized at the cost of one entangling gate
+- introduce symbolic Pauli gates
+- facilitate peephole optimization
+- create symbolic Pauli gates in suboptimal Clifford circuit
+- define cost of each gate
+- define cost of a circuit
+- consider a circuit and a small subset of qubits
+- optimize restriction of circuit onto subset of qubits
+- define entangling and/or straddling CNOT gate
+- rewrite/rewire entangling/straddling CNOT gate
+- partition entangling/straddling CNOT gates into groups
+- expand each entangling/straddling CNOT gate
+- obtain Clifford circuit UA(v)
+- obtain non-unitary circuit UB(v)
+- introduce symbolic Pauli gates Xv, Yv, and Zv
+- illustrate exemplary circuit
+- illustrate equivalent exemplary circuit
+- discuss symbolic peephole optimization
+- focus on reducing two-qubit gate count
+- complement partitioned template matching
+- discuss limitations of conventional template matching
+- discuss limitations of conventional peephole optimization
+- introduce floating component
+- discuss how floating component can solve problem
+- discuss how SWAP component can optimize SWAP stage
+- discuss how symbolic component can facilitate peephole optimization
+- discuss how symbolic component can create symbolic Pauli gates
+- conclude discussion of detailed description
+- define symbolic component 120
+- optimize Clifford circuits
+- respect temporal order of symbolic Pauli gates
+- preserve overall phase of each circuit
+- generate phase factors
+- select subset A to be optimized
+- run passes until optimal cost is reached
+- illustrate symbolic peephole optimization
+- replace straddling CNOT gates with symbolic Pauli gates
+- convert subcircuit UA to U'A
+- implement phase factor iv
+- lift U'A to U'
+- illustrate system 1900
+- prepare suboptimal Clifford circuit for peephole optimization
+- perform peephole optimization on subcircuit
+- implement dynamic programming
+- define Clifford-plus-symbolic-Pauli-gate operator
+- specify Clifford-plus-symbolic-Pauli-gate circuit
+- define cost of Clifford-plus-symbolic-Pauli-gate circuit
+- perform change of variables
+- minimize function F
+- define intermediate objective functions
+- compute canonical representatives
+- prove Lemma 2
+- illustrate flow diagram of method 2000
+- perform acts of method 2000
+- describe computer-implemented method 2000
+- push blocking gate out of template matching range
+- re-partition Clifford circuit
+- describe computer-implemented method 2100
+- perform peephole optimization on Clifford circuit
+- select subset of qubits
+- rewire entangling gate
+- replace rewired entangling gate with symbolic Pauli gate
+- partition Clifford circuit into stages
+- perform template matching on computation stage
+- push blocking gate out of template matching range
+- re-partition Clifford circuit
+- describe experiments and simulations
+- generate random Clifford unitaries
+- synthesize Clifford unitaries using baseline compiler
+- perform optimization on synthesized circuits
+- compare results with conventional techniques
+- apply optimization techniques to encoding circuits for QECC
+- synthesize encoding circuits using Clifford circuit synthesis algorithm
+- recompile circuits using baseline compiler
+- perform optimization on recompiled circuits
+- compare results with reference circuits
+- describe novel algorithms for Clifford circuit optimization
+- describe partitioned template matching
+- describe symbolic peephole optimization
+- describe use of variables and symbols
+- describe computing environment
+- describe program modules and computer-readable storage media
+- describe computer system architecture
+- describe computer system architecture
+- introduce operating system and applications
+- describe emulation technologies
+- introduce security module
+- describe input devices
+- describe output devices
+- describe networked environment
+- describe local area network (LAN)
+- describe wide area network (WAN)
+- describe cloud storage systems
+- describe wireless communication
+- introduce cloud computing environment
+- describe cloud computing nodes
+- describe local computing devices
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe resource provisioning
+- describe metering and pricing
+- describe security
+- describe user portal
+- describe service level management
+- describe service level agreement planning
+- describe workloads layer
+- describe mapping and navigation
+- describe software development and lifecycle management
+- describe virtual classroom education delivery
+- describe data analytics processing
+- describe transaction processing
+- describe differentially private federated learning processing
+- describe system, method, apparatus, and computer program product
+- describe computer readable storage medium
+- describe computer readable program instructions
+- describe network
+- describe computer readable program instructions execution
+- describe electronic circuitry
+- describe programmable logic circuitry
+- describe field-programmable gate arrays (FPGA)
+- describe programmable logic arrays (PLA)
+- describe flowchart illustrations and block diagrams
+- describe computer implemented process
+- describe special purpose hardware-based systems
+- describe program modules
+- describe computer system configurations
+- describe distributed computing environments
+- describe component, system, platform, interface
+- describe apparatus with specific functionality
+- describe electronic components
+- describe virtual machine
+- describe processor
+- describe memory components
+- describe various embodiments
+

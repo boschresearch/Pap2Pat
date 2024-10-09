@@ -1,0 +1,375 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to estimation of quantum resources
+
+## SUMMARY
+
+- introduce embodiments of invention
+- describe system embodiment
+- describe computer-implemented method embodiment
+- describe computer program product embodiment
+- summarize estimation of quantum resources
+
+## DETAILED DESCRIPTION
+
+- introduce quantum resource estimation system
+- define derivative and derivative asset
+- describe purpose of derivative pricing
+- introduce geometric Brownian motion model
+- define payoff of derivative
+- introduce equation for pricing derivative
+- describe transition probabilities of geometric Brownian motion
+- define parameters of geometric Brownian motion
+- introduce covariance matrix of underlyings
+- describe system 100, 200, and 300
+- introduce quantum resource estimation system 102
+- describe components of quantum resource estimation system 102
+- introduce memory 104
+- describe types of memory
+- introduce processor 106
+- describe types of processors
+- introduce re-parameterization component 108
+- introduce estimation component 110
+- introduce variational component 202
+- introduce error analysis component 302
+- describe bus 112
+- introduce types of bus
+- describe communicative coupling of components
+- describe electric coupling of components
+- describe operative coupling of components
+- describe optical coupling of components
+- introduce external systems, sources, and devices
+- describe wired and wireless networks
+- introduce computer and machine readable components
+- describe executable instructions
+- introduce quantum fault-tolerant operation
+- describe application of quantum fault-tolerant operation
+- introduce transformation operation
+- describe application of transformation operation
+- introduce training of variational quantum circuit
+- describe use of Hamiltonian operator
+- introduce calculation of errors
+- describe estimation of defined criterion
+- introduce computation of expectation value
+- describe target probability distribution
+- introduce normal probability distribution
+- describe standard normal probability distribution
+- introduce discrete time multivariate stochastic process
+- describe auto-callable option and TARF derivatives
+- introduce resource estimates for quantum derivative pricing
+- describe re-parameterization method
+- introduce hybridization of pre-trained variational circuits
+- describe fault-tolerant quantum computing
+- introduce logical qubits required
+- describe T-depth required
+- introduce logical clock speed required
+- conclude quantum resource estimation system
+- define correlation between assets
+- derive probability of path
+- introduce risk-free rate
+- discuss classical derivatives pricing
+- introduce quantum algorithms for derivatives pricing
+- motivate quantum resource estimation system
+- describe quantum resource estimation system
+- summarize optimizations of quantum resource estimation system
+- introduce discretized derivative pricing
+- define discrete space of paths
+- discuss price space vs. return space
+- derive transition probabilities in return space
+- discuss advantages of return space
+- introduce core approach to derivative pricing
+- define normalized payoff
+- outline four phases of algorithm 2.1
+- describe loading probability distribution
+- describe calculating payoffs in quantum parallel
+- describe amplitude estimation
+- introduce quantum derivative pricing
+- motivate amplitude estimation
+- summarize path-dependent derivatives
+- introduce amplitude estimation for derivative pricing
+- describe amplitude estimation algorithm
+- introduce iterative quantum amplitude estimation
+- describe path distribution loading
+- introduce Grover-Rudolph method
+- introduce quantum generative adversarial network
+- introduce error analysis
+- describe truncation error
+- describe discretization error
+- introduce Chernoff tail bounds
+- define truncated window
+- describe discretization error calculation
+- introduce Riemann summation method
+- describe Riemann summation pricing algorithm
+- introduce normalization factor
+- describe limitations of Riemann summation
+- introduce re-parameterization method
+- motivate re-parameterization method
+- describe advantages of re-parameterization method
+- introduce quantum resource estimation system
+- describe quantum resource estimation system
+- introduce path loading operator
+- describe path loading operator
+- introduce transition operators
+- describe transition operators
+- introduce amplitude estimation for payoff calculation
+- describe amplitude estimation for payoff calculation
+- introduce normalization factor Pmax
+- derive Pmax in return space
+- discuss limitations of Pmax
+- introduce Riemann summation error analysis
+- analyze arithmetic error
+- analyze probability density error
+- analyze rescaling error
+- bound total error
+- introduce resource estimates
+- provide example of basket auto-callable
+- discuss normalization issue
+- introduce re-parameterization method
+- motivate re-parameterization method
+- describe re-parameterization method
+- introduce Algorithm 3.2
+- describe step 1 of Algorithm 3.2
+- describe step 2 of Algorithm 3.2
+- describe step 3 of Algorithm 3.2
+- describe step 4 of Algorithm 3.2
+- describe step 5 of Algorithm 3.2
+- introduce variationally trained Gaussian loaders
+- describe variational ansatz
+- describe energy-based method
+- describe L∞ cost function
+- discuss training results
+- discuss portability to fault-tolerant regime
+- introduce error analysis
+- bound total error
+- analyze arithmetic error
+- bound arithmetic error
+- discuss resource estimates
+- provide example of TARF contract
+- introduce auto-callable contracts
+- define auto-callable contract components
+- describe payoff implementation
+- illustrate circuit 500 for payoff estimation
+- introduce TARFs
+- define TARF components
+- describe TARF payoff implementation
+- discuss resource and error analysis
+- provide target performance threshold
+- discuss background on derivatives
+- introduce forwards
+- introduce options
+- discuss path-dependence and discounted payoffs
+- introduce auto-callable options
+- introduce target accrual redemption forwards
+- describe auto-callable payoff implementation
+- describe TARF payoff implementation
+- discuss resource estimates for auto-callable
+- discuss resource estimates for TARF
+- discuss error analysis for payoff circuits
+- discuss arithmetic and gate synthesis error
+- discuss resource criteria for circuit components
+- discuss error correction and hardware improvements
+- discuss Shor's algorithm resource estimates
+- discuss quantum advantage for derivative pricing
+- discuss limitations of existing approaches
+- discuss stochastic or local volatility methods
+- discuss conditional or non-stationary re-parametrization
+- discuss loading multiple independent stochastic processes
+- discuss geometric Brownian motion
+- discuss path-independent options
+- discuss European call and put options
+- discuss binary options
+- discuss knock-out European call option
+- discuss knock-in t option
+- discuss discounted payoff
+- discuss expected value of discounted payoff
+- discuss Monte Carlo simulations
+- discuss path-dependent options
+- discuss opportunity to use quantum speedups
+- introduce Grover-Rudolph algorithm
+- limitations of Grover-Rudolph method
+- motivate alternative methods
+- describe approximate method for standard normal distributions
+- criticize approximate method
+- introduce fixed-point quantum arithmetic resources
+- describe quantum arithmetic operations
+- perform resource estimation
+- estimate Toffoli gates for addition and subtraction
+- estimate T-depth for controlled and uncontrolled addition
+- estimate Toffoli gates for multiplication
+- estimate T-depth for multiplication
+- describe parallelization of multiplication circuit
+- estimate Toffoli gates for square root
+- estimate T-depth for square root
+- describe logical operations
+- estimate Toffoli gates for exponential
+- estimate T-depth for parallel polynomial evaluation
+- estimate qubit count for parallel polynomial evaluation
+- describe arcsine calculation
+- describe transformation for arcsine calculation
+- describe conditional square root evaluation
+- conclude resource estimation
+- introduce resource estimation considerations
+- describe comparator and conditional operations
+- detail Toffoli gate usage
+- explain T-depth and qubit count for arcsin(√x)
+- introduce Ry(θ) rotations and Repeat-Until-Success method
+- describe controlled-Ry(θ) operation
+- introduce error analysis
+- discuss addition and multiplication errors
+- analyze exponential error
+- examine square root error
+- bound arcsine error
+- bound sine error
+- introduce Riemann summation path loading resource estimates
+- detail T-depth and qubit count for Riemann summation
+- describe resource estimates for computing Equation (12)
+- explain parallelization of computations
+- introduce importance sampling for normalization in Riemann summation
+- describe univariate probability density function f
+- introduce payoff function g
+- explain scaled function f(x)/P and corresponding operator
+- describe importance sampling technique
+- introduce probability distribution h(xi)
+- explain efficient loading of h(xi) into a quantum state
+- describe construction of new operator H
+- discuss existence of h such that f(x)/(h(x)N) ∈ [0,1]
+- conclude importance sampling technique
+- define detailed description
+- derive equation 90
+- derive equation 91
+- derive equation 92
+- discuss multivariate probability density functions
+- derive equation 93
+- derive equation 94
+- derive equation 95
+- derive equation 96
+- derive equation 97
+- discuss re-parameterization path loading resource estimates
+- derive equation 98
+- discuss computation of asset prices
+- discuss qubit count for loading paths
+- derive equation 99
+- derive equation 100
+- discuss method for gaussian loader training
+- discuss energy based training
+- derive equation 101
+- derive equation 102
+- derive equation 103
+- discuss variational quantum eigensolver approach
+- derive equation 104
+- derive equation 105
+- discuss ry-cnot circuit
+- derive equation 106
+- derive equation 107
+- derive equation 108
+- discuss l∞ training refinements
+- discuss optimization runs
+- discuss graphs 600a, 600b, 600c
+- discuss graphs 700a, 700b
+- discuss failure of l∞ norm direct optimization
+- discuss cost function landscape
+- derive equation 109
+- discuss probing cost function landscape
+- conclude detailed description
+- define quantum resource estimation system
+- illustrate example graphs for estimation of quantum resources
+- describe cost function landscape
+- motivate variational parameters digitization
+- describe protocol to optimize parameters on a grid
+- illustrate example graphs for digitization error
+- describe flow diagram of computer-implemented method
+- apply quantum fault-tolerant operation
+- estimate criterion of quantum computer
+- associate with various technologies
+- provide technical improvements to systems
+- provide technical improvements to processing unit
+- describe practical application
+- provide new approach to estimation
+- employ hardware or software
+- solve highly technical problems
+- utilize combinations of electrical components
+- perform simultaneous multi-operational execution
+- include impossible to obtain manual information
+- associate with cloud computing environment
+- employ computing resources of cloud computing environment
+- execute operations in accordance with embodiments
+- describe cloud computing characteristics
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- describe service models
+- describe deployment models
+- describe cloud computing environment
+- describe functional abstraction layers
+- describe classical computing devices
+- describe quantum hardware and software
+- describe execution of operations
+- describe classical and quantum computing resources
+- describe implementation of teachings
+- describe cloud computing model
+- define service models
+- describe SaaS
+- describe PaaS
+- describe IaaS
+- define deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- introduce computer-implemented methodologies
+- describe acts of methodologies
+- describe alternative representations of methodologies
+- describe article of manufacture
+- introduce operating environment
+- describe computer components
+- describe system memory
+- describe input/output devices
+- describe networked environment
+- describe remote computer connections
+- describe cloud computing environment
+- illustrate cloud computing nodes
+- describe communication between nodes
+- introduce functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe resource provisioning
+- describe metering and pricing
+- describe security
+- describe user portal
+- describe service level management
+- describe service level agreement planning
+- describe workloads layer
+- describe mapping and navigation
+- describe software development and lifecycle management
+- describe virtual classroom education delivery
+- describe data analytics processing
+- describe transaction processing
+- describe quantum resource estimation software
+- describe system, method, apparatus, and computer program product
+- describe computer readable storage medium
+- describe computer readable program instructions
+- describe downloading instructions from storage medium
+- describe network adapter card or network interface
+- describe computer readable program instructions execution
+- describe flowchart and block diagram illustrations
+- describe computer readable program instructions implementation
+- describe special purpose hardware-based systems
+- describe program modules
+- describe computer system configurations
+- describe distributed computing environments
+- describe remote processing devices
+- describe computer executable components
+- describe distributed memory units
+- describe computer-related entities
+- describe component, system, platform, interface
+- describe apparatus with specific functionality
+- describe electronic components without mechanical parts
+- describe virtual machine
+- describe examples and exemplary structures
+

@@ -1,0 +1,135 @@
+# DESCRIPTION
+
+- introduce neuropathic pain
+- motivate need for new treatments
+- describe limitations of current treatments
+- summarize gene expression study
+- identify VGF as key factor
+- describe VGF's role in pain signaling
+- introduce novel pain signaling pathway
+
+## SUMMARY OF THE DISCLOSURE
+
+- summarize method of treating neuropathic pain
+- describe VGF activity mediation
+- summarize method of treating neuropathic pain via gC1qR
+- outline various embodiments of inhibitors and assays
+
+## DETAILED DESCRIPTION OF THE DISCLOSURE
+
+- define gC1q-R
+- introduce VGF
+- describe VGF expression
+- discuss VGF-expressing cells
+- describe human VGF
+- outline VGF-derived peptides
+- discuss functional roles of VGF-derived peptides
+- describe pain pathways
+- introduce TLQP-62
+- describe LQEQ-19
+- define VGF activity
+- describe inhibition of VGF activity
+- discuss use of oligonucleotides
+- discuss use of antibodies
+- define neutralising antibody
+- describe inhibition of VGF activity by interfering with signaling pathways
+- discuss MEK involvement in VGF survival
+- describe TLQP-21 binding to gC1qR
+- define corresponding interaction
+- describe peptide of the TLQP-21 type
+- introduce anti-VGF antibody
+- introduce anti-gC1qR antibody
+- describe antibody targeting epitope on VGF or gC1qR
+- describe antibody causing conformational change
+- define specificity of antibody
+- discuss antibody generation
+- describe antibody fragments
+- introduce humanized antibodies
+- describe chimeric antibodies
+- discuss use of MEK inhibitor
+- describe VGF inhibitor therapy
+- define direct gC1qR inhibitor
+- describe method of treating Fibromyalgia
+- describe combination therapy
+- describe administration forms
+- describe formulation for injection or infusion
+- describe formulation for delivery by infusion or slow injection
+- describe formulation for delivery by bolus injection
+- describe preservatives and stabilisers
+- describe use of cyclodextrin
+- describe oral administration
+- describe solid compositions
+- describe excipients
+- describe lubricating agents
+- describe fillers in gelatin or HPMC capsules
+- describe aqueous suspensions and elixirs
+- describe capsules
+- describe enteric coating
+- describe permeable acrylic polymers
+- describe dosage determination
+- describe treatment regime
+- describe in vitro method of screening for inhibitor
+- describe method of screening for inhibitor of VGF mediated activity
+- describe inhibitor of receptor gC1q-R
+- describe anti-gC1q-R antibody
+- describe method of treating patient with neuropathic pain
+- describe inhibitor of VGF activity mediated through gC1q-R
+- describe use of anti-gC1q-R antibody in manufacture of medicament
+- describe kit for screening for inhibitor of VGF activity
+
+### EXAMPLE
+
+- introduce VGF and its upregulation in DRG neurons
+- show VGF-immunoreactivity in injured DRG neurons
+- describe TLQP-21 and its effect on intracellular Ca2+ levels
+- show Ca2+ release from endoplasmic reticulum
+- describe de-sensitisation to TLQP-21 treatment
+- suggest specific receptor for TLQP-21 in macrophages and microglia
+- describe PCR array experiments and chemokine regulation
+- identify receptor for TLQP-21 using Sulfo-EMCS-conjugated TLQP-21
+- purify and identify receptor(s) for TLQP-21 using biotin-tagged TLQP-21
+- identify gC1q-R as the receptor for TLQP-21
+- describe gC1q-R as a multi-functional protein
+- confirm gC1q-R expression in macrophage and microglia cells
+- suggest TLQP-21 acts on microglia and macrophage through gC1q-R
+- describe LQEQ-19 and its direct role on DRG neurons
+- show LQEQ-19 causes hypersensitivity to mechanical stimuli
+- show LQEQ-19 increases compound action potentials in dorsal roots
+- suggest LQEQ-19 acts as an autocrine factor for nociceptive primary sensory neurons
+- describe VGF peptides involved in pain pathways
+- describe physiological functions of VGF peptides from VGF gene deletion
+- confirm cellular pattern and time course of VGF expression in primary sensory neurons
+- study VGF expression in models of peripheral neuropathic pain
+- analyse promoter region of VGF gene responsible for activation triggered by nerve damage
+- identify essential promoter element(s) in VGF expression
+- investigate consequences of VGF siRNA application in neuropathic pain models
+- downregulate VGF protein expression in cultured DRG neurons
+- observe in vivo effect of siRNA treatment in neuropathic pain models
+- study efficacy and potency of VGF-derived peptides in nociception
+- screen VGF-derived peptides in vitro for activating DRG neurons and microglia/macrophage
+- describe in vivo experiments
+- introduce acute experiments
+- detail chronic experiments
+- hypothesize macrophage effect
+- test macrophage hypothesis
+- examine VGF mRNA upregulation
+- apply neutralizing antibody
+- describe gC1qR protein
+- detail gC1qR interactions
+- discuss macrophage signaling
+- suggest new pain control method
+- identify mechanisms of VGF activation
+- study VGF-derived peptide effects
+- assess voltage-gated channels
+- perform immunohistochemistry
+- study TRPV1 and TRPA1 receptors
+- investigate signaling molecules
+- study microglia and macrophage activation
+- investigate IP3 and PLC
+- analyze downstream signaling
+- list references
+- list prior art references
+- provide background information
+- discuss limitations of prior art
+- introduce novel approach
+

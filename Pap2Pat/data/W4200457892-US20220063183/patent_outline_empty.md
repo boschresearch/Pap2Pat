@@ -1,0 +1,16 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Examples, Results of Experiments, and Associated Data
+
+### Working Examples
+
+## Glossary
+

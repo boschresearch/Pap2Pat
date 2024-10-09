@@ -1,0 +1,228 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERALLY SPONSORED RESEARCH/DEVELOPMENT
+
+- acknowledge government support
+
+## BACKGROUND
+
+- describe blood-brain barrier limitations
+- motivate receptor-mediated transport systems
+- explain pH-induced changes in protein binding
+- discuss histidine's role in pH sensitivity
+- summarize protein design exploiting pH sensitivity
+- introduce transferrin receptor as therapeutic target
+- describe transferrin's natural ligand binding
+- explain endocytosis and recycling of transferrin
+- discuss cytotoxins based on transferrin conjugates
+- identify need for pH-dependent antibody
+
+## SUMMARY OF THE INVENTION
+
+- introduce pH-dependent antibody
+- describe antibody's antigen binding properties
+- specify preferred embodiments of antibody structure
+- outline method of delivering therapeutic agent
+- describe various embodiments of invention
+
+## DESCRIPTION OF THE INVENTION
+
+- define scope of invention
+- establish terminology
+- describe subject
+- define administering and administration
+- define contacting and exposing
+- define pharmaceutical composition
+- describe effective amount
+- describe pharmaceutical compositions
+- describe diluents and additives
+- describe controlled or sustained release compositions
+- define pharmaceutically acceptable carriers
+- describe aqueous and non-aqueous carriers
+- define treating and treatment
+- describe antibody and antibody molecule
+- describe monoclonal antibody
+- describe human monoclonal antibody
+- describe chimeric antibody
+- describe humanized antibody
+- describe human antibody
+- describe recombinant human antibody
+- describe antibody fragments
+- describe Fab, Fab', F(ab')2, scFv, Fv, dsFv, Fd, dAbs, TandAbs
+- describe production of antibody fragments
+- describe antibody light chain variable region (VL)
+- describe antibody heavy chain variable region (VH)
+- describe heavy chain constant region
+- describe kappa light chain constant region
+- describe lambda light chain constant region
+- define fragment
+- describe complementarity determining regions (CDRs)
+- describe CDRH1, CDRH2, and CDRH3
+- define pH-sensitive antibody
+- describe pH-dependent binding
+- introduce transferrin receptor (TfR)
+- describe TfR function
+- introduce endocytosis
+- describe yeast display
+- introduce single-chain variable fragment (scFv)
+- describe scFv creation
+- introduce saturation mutagenesis
+- describe protein and polypeptide terms
+- introduce therapeutic agent
+- describe therapeutic agent examples
+- introduce present invention
+- describe pH-dependent antibody
+- introduce enhanced delivery
+- describe antibody binding affinity
+- introduce rapid release
+- describe carrier protein
+- introduce transferrin receptor (TfR) as target protein
+- describe pH values
+- introduce histidine residues in CDR
+- describe histidine residues in antibody heavy chain
+- introduce histidine residues in CDRH1
+- describe histidine residues percentage
+- introduce mutation of wild type antibody
+- describe pH-dependent antibody fragment
+- introduce SEQ ID NOs
+- describe antibody fragment amino acid sequence
+- conclude pH-dependent antibody description
+- describe pH-dependent antibody
+- provide embodiments of pH-dependent antibody
+- describe pH-dependent antibody fragments
+- provide examples of pH-dependent antibody fragments
+- describe pharmaceutical composition
+- provide embodiments of pharmaceutical composition
+- describe antibody-targeted brain delivery system
+- provide embodiments of antibody-targeted brain delivery system
+- describe therapeutic agents
+- provide examples of therapeutic agents
+- describe formulations for delivering therapeutic agents
+- provide embodiments of formulations
+- describe method of delivering therapeutic agents
+- provide steps of method
+- describe delivery of therapeutic agents in vivo
+- provide references for delivery strategies
+- describe molecule to be delivered
+- provide embodiments of molecule
+- describe production of pH-dependent antibodies
+- provide methods for producing pH-dependent antibodies
+- describe histidine saturation mutagenesis
+- provide example of obtaining pH-dependent antibodies
+- describe exposure of BBB or cancer cells to pH-dependent antibody
+- describe exposure of BBB or cancer cells to molecule
+- describe linking of therapeutic agent to pH-dependent antibody
+- provide methods of conjugating therapeutic agent
+- describe non-covalent linkage of therapeutic agent
+- describe exposure of target cell or BBB to pH-dependent antibody
+- describe vector comprising pH-dependent antibody
+- describe microorganism comprising vector
+- describe expression vector
+- describe host cell comprising expression vector
+- describe liposome or nanoparticle carriers
+- describe biotinylation of targeting vector or protein therapeutic
+- describe expression of pH-dependent antibody as fusion protein
+- describe decoration of liposomes or nanoparticles with targeting vector
+- describe administration of pH-dependent antibodies
+- describe kit for delivering therapeutic agent
+- describe therapeutic device for delivering pH-dependent antibodies
+
+### EXAMPLES
+
+- introduce examples of compounds and methods
+- motivate pH-dependent mechanisms in biological systems
+- describe histidine saturation mutagenesis of anti-TfR scFv
+- summarize yeast surface display with pH-dependent screening pressure
+- identify scFvs with increased dissociation from TfR at pH 5.5
+- describe pH-sensitivity resulting from histidine residues in CDRH1
+- summarize internalization of pH-sensitive scFv clone M16
+- describe differences in intracellular distribution of M16
+- motivate engineering of pH-sensitive TfR binding for drug delivery
+- describe histidine-saturation mutagenesis of anti-TfR scFv
+- summarize screening and selection of pH-sensitive scFv
+- describe materials and methods for cell culture
+- describe materials and methods for yeast culture
+- describe plasmid construction for scFv surface display
+- describe histidine-saturation mutagenesis of scFv H7 CDRH1
+- summarize creation of recombinant histidine-saturated CDRH1 library
+- describe screening and assessment of yeast-displayed scFvs
+- describe fabrication of DNA cassette containing histidine-saturated CDRH1
+- describe creation of H7CDRH1his library by homologous recombination
+- describe FACS-based screening and selection of pH-sensitive scFv
+- introduce yeast library selection
+- describe yeast library preparation
+- detail FACS sorting procedure
+- describe pH shift procedure
+- quantify binding affinity
+- describe scFv secretion and purification
+- detail binding and pH-sensitive dissociation assay
+- describe immunocytochemistry procedure
+- detail antibody incubations
+- describe image capture and analysis
+- calculate Pearson co-localization coefficients
+- describe variation of immunocytochemistry procedure
+- detail flow cytometric quantification procedure
+- describe cell preparation for flow cytometry
+- detail antibody trafficking and quantification
+- describe inhibition of intracellular acidification
+- detail cell detachment and fixation
+- quantify total-cell associated antibody
+- quantify internalized antibody fraction
+- describe data analysis and normalization
+- detail control experiments
+- describe yeast library enrichment
+- detail scFv display on yeast surface
+- describe rhTfR binding and dissociation
+- detail scFv capture on particles
+- describe particle labeling and analysis
+- calculate specific, pH-driven dissociation
+- summarize results
+- introduce statistics
+- describe data analysis
+- motivate pH-sensitive scFv engineering
+- establish wild-type scFv H7 pH-sensitivity
+- describe yeast surface display dissociation assay
+- show pH-dependent dissociation of H7 from TfR
+- motivate engineering scFvs with rapid dissociation
+- describe CDRH1his library construction
+- screen CDRH1his library for pH-sensitive scFvs
+- describe flow-cytometric screening of CDRH1his library
+- isolate pH-sensitive and pH-insensitive mutants
+- analyze scFv clones from M, N, and 5P pools
+- evaluate histidine substitution in engineered CDRH1s
+- describe mutational patterns in M, N, and 5P clones
+- quantify fractional TfR dissociation at pH 5.5
+- compare TfR dissociation of M and N/5P clones
+- show apparent equilibrium binding affinity of select clones
+- discuss role of CDRH1 and CDRH2 in TfR binding
+- describe previous scFv H7 variants with improved affinity
+- summarize screening strategy and pool selection
+- introduce pH-dependent scFv binding
+- characterize pH-dependent scFv binding
+- measure equilibrium binding affinity
+- compare binding affinity of N5 and M16
+- evaluate pH-dependent TfR binding
+- analyze scFv secretion and purification
+- evaluate pH-dependent TfR binding using magnetic bead assay
+- show analysis of soluble M16, N5, and H7 scFvs
+- describe whole-cell immunolabeling
+- explore pH-sensitive TfR binding on intracellular antibody trafficking
+- analyze monomeric scFv binding and internalization
+- show immunolabeling of surface and internalized scFvs
+- quantify scFv association with SK-BR-3 cells
+- analyze internalized scFv
+- quantify internalized scFv after trypsinization
+- compare internalization of M16, N5, and H7
+- evaluate effect of bafilomycin A1 on internalization
+- discuss pH-dependent internalization
+- evaluate co-localization of internalized scFvs with endosomal and lysosomal markers
+- show co-localization with EEA1, LAMP1, and LAMP2
+- quantify co-localization with EEA1, LAMP1, and LAMP2
+- discuss reduction in co-localization
+- discuss divergence in trafficking
+- discuss creation of pH-dependent antibodies
+- discuss potential therapeutic relevance
+- discuss understanding pH-dependent mechanisms
+- summarize pH-dependent TfR binding and internalization
+- conclude pH-dependent antibodies for TfR-targeted therapy
+

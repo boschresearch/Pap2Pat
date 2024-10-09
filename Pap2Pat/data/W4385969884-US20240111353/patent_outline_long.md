@@ -1,0 +1,348 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate semiconductor design
+
+## BACKGROUND OF THE DISCLOSURE
+
+- introduce clock gating
+
+## DETAILED DESCRIPTION
+
+- introduce GPU architecture
+- describe processing logic
+- outline detailed description approach
+- introduce clock gating technique
+
+### System Overview
+
+- introduce processing system 100
+- describe system components
+- specify processor types
+- detail processor cores
+- explain instruction set
+- describe cache memory
+- introduce register file
+- explain interface bus
+- describe memory controller
+- detail platform controller hub
+- introduce memory device
+- explain data storage
+- describe graphics processor
+- introduce accelerator
+- describe display device
+- explain peripherals
+- detail audio controller
+- describe network controller
+- introduce firmware interface
+- explain wireless transceiver
+- describe touch sensors
+- introduce data storage device
+- explain legacy I/O controller
+- describe USB controllers
+- introduce system chipset
+- describe circuit boards
+- explain data center architecture
+- introduce system overview
+- describe processor components
+- detail graphics processor components
+- describe system agent core components
+- explain interconnect options
+- describe I/O link and embedded memory module
+- detail processor core variations
+- describe graphics processor core block components
+- detail function block components
+- describe geometry/fixed function pipeline components
+- detail graphics SoC interface components
+- describe media pipeline components
+- detail pixel backend components
+- explain graphics SoC interface functionality
+- describe graphics microcontroller functionality
+- detail scheduling and management tasks
+- describe low-power state management
+- detail graphics core components
+- describe vector engine components
+- detail matrix acceleration unit components
+- describe sampler components
+- detail ray tracing unit components
+- introduce GPU architecture
+- describe multi-core group components
+- detail scheduler/dispatcher functionality
+- describe tensor core components
+- detail register file and cache components
+- introduce system overview
+- describe I/O circuitry
+- detail IOMMU functionality
+- explain virtualization support
+- describe integrated CPU, GPU, and I/O devices
+- detail memory architecture
+- introduce tensor cores
+- describe matrix operation capabilities
+- explain neural network implementation
+- detail deep learning implementations
+- introduce ray tracing cores
+- describe ray tracing functionality
+- detail ray tracing instruction set
+- explain hybrid rasterization/ray tracing approach
+- introduce GPGPU architecture
+- describe GPGPU components
+- detail compute units
+- explain command processing
+- introduce thread dispatcher
+- describe conditional computation
+- introduce additional graphics processor architectures
+- describe graphics processor components
+- detail display controller
+- explain video codec engine
+- introduce block image transfer engine
+- describe 3D pipeline
+- detail media pipeline
+- explain 3D/Media subsystem
+- introduce graphics processor with tiled architecture
+- describe graphics engine tiles
+- detail memory modules
+- explain tile interconnects
+- introduce fabric interconnect
+- describe copy engines
+- explain display controller
+- introduce compute accelerator
+- describe compute engine tiles
+- detail memory architecture
+- explain tile interconnects
+- introduce fabric interconnect
+- describe large L3 cache
+- explain integrated network interface
+- detail network processor
+- describe physical layer interconnect
+- explain multiple compute accelerator instances
+- introduce distributed denoising approach
+- describe neural network learning/training data sharing
+- explain ray tracing core acceleration
+- detail general-purpose compute operations
+- describe mesh projection and refinement
+
+### Graphics Processing Engine
+
+- introduce graphics processing engine
+- describe 3D pipeline
+- describe media pipeline
+- introduce command streamer
+- describe command streamer functionality
+- introduce unified return buffer
+- describe unified return buffer functionality
+- introduce graphics core cluster
+- describe graphics core cluster architecture
+- introduce graphics core block
+- describe graphics core block architecture
+- introduce execution resources
+- describe execution resources functionality
+- introduce shared function logic
+- describe shared function logic functionality
+- introduce sampler
+- describe sampler functionality
+- introduce math logic
+- describe math logic functionality
+- introduce inter-thread communication logic
+- describe inter-thread communication logic functionality
+- introduce cache
+- describe cache functionality
+- introduce graphics processing resources
+- describe graphics core cluster architecture
+- introduce vector engine
+- describe vector engine functionality
+- introduce matrix engine
+- describe matrix engine functionality
+- describe graphics core architecture
+- introduce graphics processing engine
+- describe vector engine 502
+- detail thread arbiter 522
+- explain send unit 530
+- describe branch unit 532
+- detail SIMD FPU(s) 534
+- explain SIMD ALUs 535
+- describe combined SIMD+SIMT operation
+- introduce matrix engine 503
+- describe processing elements 552AA-552MN
+- explain systolic array operation
+- detail memory 541A-541N, 542A-542M
+- describe systolic register file 540
+- explain input sparsity support
+- detail output sparsity support
+- describe compressed tensor representations
+- explain structured sparsity support
+- introduce tile 600 of multi-tile processor
+- describe global dispatcher 602
+- detail L3 cache 606 and memory 610
+- explain memory fabric 603
+- describe L2 cache 604
+- detail tile interconnect 608
+- introduce graphics processor instruction formats 700
+- describe 128-bit instruction format 710
+- explain 64-bit compacted instruction format 730
+- detail instruction opcode 712
+- describe instruction control field 714
+- explain exec-size field 716
+- detail operands src0 720, src1 722, and destination 718
+- describe access/address mode field 726
+- conclude graphics processing engine
+- introduce graphics processing engine
+- describe 128-bit instruction format
+- explain access/address mode field
+- detail opcode grouping
+- describe move and logic opcode group
+- describe flow control instruction group
+- describe miscellaneous instruction group
+- describe parallel math instruction group
+- describe vector math group
+- describe opcode decode
+- introduce graphics pipeline
+- describe geometry pipeline
+- describe media pipeline
+- describe display engine
+- describe thread execution logic
+- describe render output pipeline
+- describe command streamer
+- describe vertex fetcher
+- describe vertex shader
+- describe thread dispatcher
+- describe graphics cores
+- describe L1 cache
+- describe geometry pipeline components
+- describe tessellation components
+- describe programmable hull shader
+- describe programmable domain shader
+- describe tessellator
+- describe geometry shader
+- describe clipper
+- describe rasterizer and depth test component
+- describe pixel shader logic
+- describe stream out unit
+- describe interconnect bus
+- describe render output pipeline components
+- describe rasterizer and depth test component
+- describe pixel operations component
+- describe media pipeline components
+- describe media engine
+- describe video front-end
+- describe display engine components
+- describe 2D engine
+- describe display controller
+- introduce graphics pipeline programming
+- describe graphics processor command format
+- describe graphics processor command sequence
+- describe pipeline control commands
+
+### IP Core Implementations
+
+- implement IP cores on machine-readable medium
+- represent logic within integrated circuit
+- fabricate logic to perform techniques
+- generate modular, re-usable designs
+- design, test, and verify IP core behavior
+- create RTL design from simulation model
+- synthesize RTL design into hardware model
+- simulate or test hardware model
+- store IP core design for delivery
+- transmit IP core design to fabrication facility
+- fabricate integrated circuit based on IP core design
+- configure integrated circuit to perform operations
+- illustrate implementation of processor or accelerator devices
+- implement logic in configurable or fixed-functionality hardware
+- interconnect units of hardware logic
+- route electrical signals between logic and substrate
+- couple chiplets with substrate using interconnect structure
+- enable communication between logic chiplets
+- implement active interposer with embedded logic
+- include hardware logic for I/O, cache memory, and other logic
+- enable communication between chiplets and active interposer
+- facilitate point-to-point interconnect between chiplets
+- assemble interchangeable chiplets into standardized slots
+- couple base chiplets via bridge interconnect
+- connect memory chiplets to logic or I/O chiplets
+- communicate via interconnect fabric
+- select chiplets based on power and performance targets
+
+### Exemplary System on a Chip Integrated Circuit
+
+- fabricate system on a chip integrated circuit using IP cores
+- include application processor, graphics processor, and other logic
+- include peripheral or bus logic
+- provide storage via flash memory subsystem
+- access memory via memory controller
+- include embedded security engine
+- illustrate graphics processor for use within SoC
+- execute different shader programs via separate logic
+- perform vertex processing stage of 3D graphics pipeline
+- produce framebuffer for display device
+- optimize fragment processor for fragment shader programs
+- provide virtual to physical address mapping
+- synchronize MMUs within the system
+- interface with other IP cores within the SoC
+- include unified shader core architecture
+- execute programmable shader code
+- dispatch execution threads to shader cores
+- accelerate tiling operations for tile-based rendering
+- couple with host system via host interface
+
+### Constructing Hierarchical Clock Gating Architectures via Rewriting
+
+- introduce hierarchical clock gating architectures
+- transform RTL representations into muxes
+- enable clock gating analysis using rewriting techniques
+- retain original RTL implementation
+- perform analysis using conventional techniques
+- illustrate detection of clock gating opportunity
+- analyze RTL code for circuit
+- transform RTL into second circuit with clock gate circuitry
+- illustrate exemplary clock gate circuitry
+- receive EN and CLK signals as input
+- provide stable, glitch-free CLK signal
+- act to reduce dynamic power of overall circuitry
+- perform optimization during mux tree analysis
+- construct tree representation of clock network
+- determine enable conditions for inserting clock gates
+- group common enable terms to maximize clock gating efficiency
+- re-synthesize mux tree with optimal gates
+- add clock gating circuitry triggered by local enable signals
+- prevent downstream clock logic toggling
+- reduce dynamic power for circuit
+- describe hardware design tool using e-graph rewriting
+- illustrate e-graph rewriting
+- apply rewrites to find power-efficient designs
+- verify design equivalence using formal verification utilities
+- introduce ASSUME operators
+- combine ASSUME operators via rewriting
+- apply ASSUME operators to registers
+- generate clock gating signals
+- evaluate delay and area consequences
+- determine profitability of clock gating
+- generate complex Boolean enable signals
+- apply rewrites to discover clock gating opportunities
+- generate hardware representations of clock gating circuitry
+- illustrate method of constructing hierarchical clock gating architectures
+- load and analyze RTL code
+- generate dataflow graph
+- generate initial e-graph
+- rewrite expressions in e-graph
+- assume design with multiplexor-based equivalent expressions
+- analyze multiplexor-based equivalent expressions
+- detect clock gating opportunities
+- select equivalent expressions with clock gating opportunities
+- generate representations of clock gating circuitry
+- generate RTL code for clock gating circuitry
+- implement method of constructing hierarchical clock gating architectures
+- expand e-graph by rewriting expressions
+- detect clock gating opportunities within RTL code
+- generate second RTL code with clock gating circuitry
+- generate updated first RTL code
+- provide non-transitory machine-readable medium
+- provide data processing system
+- configure one or more processors
+- execute instructions on one or more processors
+- describe system configuration
+- provide computer program product
+- download computer program product
+- define terms used throughout document
+- provide disclaimer on embodiments
+

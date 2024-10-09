@@ -1,0 +1,154 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to monitoring device and method
+
+## BACKGROUND TO THE INVENTION
+
+- introduce chronic respiratory and nasal diseases
+- describe non-adherence to medication regimes
+- motivate acoustic recordings of inhaler usage
+- limitations of manually listening to acoustic recordings
+- challenges of analysing patient inhaler technique
+- describe existing systems (GB 2 395 437, WO2011/135353)
+- limitations of existing systems
+- motivate need for automatic detection system
+- object of the invention
+
+## SUMMARY OF THE INVENTION
+
+- introduce system for monitoring user technique
+- describe microphone and processing circuitry
+- analyse temporal and spectral components
+- determine inhalation and exhalation breath characteristics
+- unique aspects of the invention
+- use of acoustic signals to interpret inhaler use
+- record pertinent acoustic information
+- provide valuable information regarding patients' adherence
+- identify drug priming or blistering characteristics
+- analyse temporal components for temporal adherence
+- re-configure for different temporal adherence requirements
+- identify multiple inhalations or exhalation before inhalation
+- identify insufficient inhalation volume
+- identify different frequency components
+- compare short term power spectrum to predefined threshold
+- track time of device inhaler use
+- calculate median amplitude and duration of inhalation
+- calculate amplitude of exhalation
+- calculate minimum energy to disperse medicament
+- calculate duration of breath sound
+- record and store timestamp
+- use gyroscope and accelerometer for correct orientation
+
+## DETAILED DESCRIPTION OF THE DRAWINGS
+
+- illustrate inhaler device
+- describe system components
+- explain microprocessor activation
+- detail data upload process
+- introduce signal processing
+- describe singular value decomposition
+- explain zero crossing rate threshold
+- detail frequency domain analysis
+- describe ratio of high and low frequency bands
+- identify release of drug
+- calculate median amplitude and duration
+- determine successful, partial, or unsuccessful inhalation
+- introduce microphone specifications
+- describe microSD card features
+- detail battery selection
+- explain device activation
+- configure internal and external clocks
+- initialize memory card
+- configure ADC
+- set sampling rate
+- describe data rate and audio quality
+- trigger recording on inhaler opening
+- perform integrity checks
+- record until inhaler is closed
+- save recording to memory card
+- enter low power mode
+- keep time with external oscillator
+- increment time stamp
+- monitor recording length
+- stop recording after 120 seconds
+- download data via SD card or USB
+- upload data to web server
+- interpret metadata
+- calculate inhaler use times
+- describe hardware and firmware design
+- improve audio recording fidelity
+- reduce processor noise
+- change recording protocol
+- extract data via direct memory access
+- identify inhaler technique errors
+- display traffic light system
+- describe experimental data
+- hypothesize acoustic energy and drug dispersion
+- detail experimental procedure
+- classify blow-ins as hard or soft
+- calculate acoustic energy
+- plot relationship between acoustic energy and drug dispersed
+- discuss experimental results
+- conclude on the importance of acoustic energy in detecting exhalations
+- describe adherence device
+- introduce microphone and microcontroller
+- explain audio file recording
+- describe sleep mode
+- illustrate acoustic signal
+- motivate signal processing
+- extract mel frequency cepstral coefficients
+- apply singular value decomposition
+- set adaptive threshold
+- compute zero crossing rate
+- calculate median amplitude
+- introduce fixed threshold constants
+- describe algorithm training
+- validate algorithm
+- show identification of inhalation
+- compare to human raters
+- discuss algorithm performance
+- analyze onset and offset times
+- discuss limitations of algorithm
+- propose modifications to algorithm
+- discuss implications for clinicians and patients
+- describe applications of algorithm
+- introduce acoustic recording device
+- describe device specifications
+- describe experiment setup
+- introduce Diskus inhaler
+- explain correct Diskus inhaler use
+- introduce technique adherence algorithm
+- describe blister event detection
+- describe breath sound detection
+- describe breath classification
+- describe technique score calculation
+- describe algorithm testing
+- introduce temporal adherence analysis
+- describe data visualization
+- introduce webportal service
+- describe webportal functionality
+- describe manual classification
+- describe over-reading function
+- describe typical webportal use
+- describe algorithm functionality
+- describe computer apparatus
+- describe computer programs
+- describe carrier medium
+- describe signal transmission
+- define terms
+- describe patent scope
+- describe Diskus inhaler use
+- describe audio file analysis
+- describe blister sound characteristics
+- describe breath sound characteristics
+- describe inhalation and exhalation detection
+- describe technique error detection
+- describe temporal adherence analysis
+- describe data visualization
+- describe webportal output
+- describe clinician use
+- describe patient use
+- describe algorithm application
+

@@ -1,0 +1,278 @@
+{
+    "id": "US20100050279",
+    "authors": [
+        "Christopher Raymond",
+        "Philippe Soriano"
+    ],
+    "title": "HIGH EFFICIENCY FLP SITE-SPECIFIC RECOMBINATION IN MAMMALIAN CELLS USING AN OPTIMIZED FLP GENE",
+    "date": "2007-06-21 00:00:00",
+    "abstract": "The present invention provides an optimized FLP site-specific recombinase coding sequence and methods for its use. This genetically engineered FLP gene displays a marked increase in recombination efficiency compared to the native FLP gene and is therefore useful in a wide array of molecular applications.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention provides compositions and methods directed to the use of an optimized FLP DNA site-specific recombinase coding sequence in mammalian cells."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce FLP DNA site-specific recombinase"
+                    ],
+                    "num_characters": 161,
+                    "outline_medium": [
+                        "introduce FLP DNA site-specific recombinase"
+                    ],
+                    "outline_short": [
+                        "introduce FLP DNA site-specific recombinase"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "DNA site-specific recombinases (SSRs) are a powerful tool for analyzing gene function in eukaryotes. SSRs recognize specific DNA sequences (recognition sites) and catalyze recombination between two recognition sites. Upon binding to their recognition sites, SSRs can induce conditional gene inactivation or expression. If the two recognition sites are located on the same DNA molecule in the same orientation, the intervening DNA sequence is excised by the SSR from the parental molecule as a closed circle, leaving one recognition site on each of the reaction products. If the two sites are in inverted orientation, the recognition-site flanked region is inverted through recombinase-mediated recombination. Alternatively, if the two recognition sites are located on different molecules, recombinase-mediated recombination will lead to integration of a circular molecule or translocation between two linear molecules. These features make SSRs extremely useful for a number of applications in eukaryotic systems, including conditional activation of transgenes, chromosome engineering to obtain deletions, translocations or inversions, removal of selection marker genes, gene replacement, targeted insertion of transgenes, and the activation or inactivation of genes by inversion (see e.g., Branda, et al., Dev. Cell. 6 (1):7-28 (2004); Nagy, Genesis. 26 (2):99-109 (2000); Cohen-Tannoudji et al., Mol. Hum. Reprod. 4(10):929-938 (1998)). The simultaneous use of multiple SSRs allows for the analysis of multiple gene knockouts or conditional gene expression.",
+                        "The first widely used SSR in mammalian cultured cells and animals was the P1 bacteriophage-derived Cre gene (Sauer et al., Proc. Natl. Acad. Sci. U.S.A. 85 (14):5166-70 (1988); O'Gorman et al., Science. 251 (4999):1351-5 (1991); Lakso et al., Proc. Natl. Acad Sci. U.S.A. 89 (14):6232-6 (1992); Orban et al., Proc. Natl. Acad. Sci. U.S.A. 89 (15):6861-5 (1992)). Cre recognizes homotypic 34 base pair (bp) DNA sequences known as loxP sites and can induce the deletion, insertion, or inversion of DNA sequences depending on the number and orientation of loxP sites (Hoess et al., Proc. Natl. Acad. Sci. U.S.A. 9 (11):3398-402 (1982)). In addition to Cre, other SSRs have been shown to exhibit some activity in mammalian cells. These include the Kw recombinase of Kluyveromyces waltii (Ringrose et al., Eur. J. Biochem. 15:248 (3):903-12 (1997)); mutant integrases of phage lamda (Lorbach et al., J. Mol. Biol. 296 (5):1175-81 (2000)); the integrases of phage HK022 (Kolot et al., Mol. Biol. Rep. 26 (3):207-13 (1999)); mutant gammadelta resolvase (Schwikardi et al., FEBS. Lett. 471 (2-3):147-50 (2000)); beta-recombinase (Diaz et al., J. Biol. Chem. 274 (10):6634-40 (1999)); and \u03a6C31 from Streptomyces lividans (Groth et al., Proc. Natl. Acad. Sci. USA. 97 (11):5995-6000 (2000); Belteki et al., Nat. Biotechnol. 21 (3):321-4 (2003)).",
+                        "FLP from Saccharomyces cerevisiae is another SSR that has been used in mammals (Dymecki, Proc. Natl. Acad. Sci. U.S.A. 93 (12):6191-6 (1996)). Similar to Cre, FLP recognizes a distinct 34 bp sequence known as an FRT site, and can mediate the deletion, inversion, and insertion of DNA sequences between two of these sites (McLeod et al., Mol. Cell Bio. 6 (10):3357-67 (1986)). Initial use of FLP in mouse and mammalian cells revealed inefficient recombinase activity due to thermo-instability of the protein (Buchholz et al., Nucleic Acids Res. 24 (21):4256-62 (1996)). Subsequent screening for thermo-stable mutants resulted in the identification of an enhanced FLP recombinase (FLPe), which showed a 4-fold increase in recombination efficiency compared to endogenous FLP (Buchholz et al., Nat. Biotechnol. 16 (7):657-62 (1998)). Despite this improvement in thermo-stability, the recombination efficiency of FLP in mammalian cultured cells remains quite low. FLP has only been shown to exhibit at most a 6% recombination rate in mouse embryonic stem (ES) cell clones, with mosaic recombination found in almost all ES clones (Schaft et al., Genesis. 31 (1):6-10 (2001)). This low efficiency of recombination has hampered the use of FLP in cultured cells.",
+                        "One reason for the low efficiency of these SSRs in mammalian cells may be their prokaryotic origin. For use in eukaryotic systems, SSRs should ideally be expressed at high levels. Often, achieving high steady-state expression levels of prokaryotic genes in mammalian systems can be difficult. One potential problem is that the amino acid codon usage differs greatly between prokaryotes and vertebrates (Ikemura, Mol. Biol. Evol. 2 (1):13-34 (1985)). Prokaryotic genes often contain a proportionally high-abundance of codons for tRNAs that are rare in vertebrates, resulting in low levels of expression (Grantham et al., Nucleic Acids Res. 9 (1):r43-r74 (1981)). A second potential problem associated with expression of prokaryotic genes in vertebrates is the presence of cryptic splice acceptor/donor sites, since prokaryotic genes do not normally undergo splicing in the native host. Another potential problem is that a high number of the DNA dinucleotide motif CpG may also result in gene silencing, since DNA methylation occurs at such cytosines in vertebrates. Additionally, the overall base composition of the prokaryotic gene can affect mRNA stability in eukaryotic cells. Prokaryotic genes with high A/T content often result in less stable mRNAs and thus low levels of expression.",
+                        "Optimization of the endogenous gene can be used to improve expression, however, codon-optimization has to be performed individually for each new gene, taking into account all factors that can influence gene expression. Codon-optimized Cre genes with improved expression in mammals have been described previously (e.g., Koresawa et al., Transplant Proc. 32 (7):2516-17 (2000); PCT International Publication No. WO/2002/04609). A codon-optimized \u03a6C31 recombinase has also been reported. (U.S. Patent Publication No. 20030186291).",
+                        "The present invention overcomes previous shortcomings in the art by providing a codon-optimized FLP (FLPo) SSR and methods for its use. This genetically engineered FLP gene displays a marked increase in recombination efficiency compared to the native FLP gene and is therefore useful in a wide array of molecular applications."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce DNA site-specific recombinases",
+                        "describe recognition sites and recombination",
+                        "motivate conditional gene inactivation or expression",
+                        "summarize applications of SSRs",
+                        "introduce Cre gene and its uses",
+                        "describe other SSRs and their limitations",
+                        "introduce FLP from Saccharomyces cerevisiae",
+                        "describe limitations of FLP in mammalian cells",
+                        "explain reasons for low efficiency of SSRs",
+                        "describe codon-optimization of prokaryotic genes",
+                        "mention previous codon-optimized Cre and \u03a6C31 genes",
+                        "motivate optimized FLP gene"
+                    ],
+                    "num_characters": 6296,
+                    "outline_medium": [
+                        "motivate DNA site-specific recombinases",
+                        "describe Cre gene",
+                        "describe other SSRs",
+                        "limitations of FLP in mammalian cells",
+                        "reasons for low efficiency of SSRs",
+                        "previous attempts to optimize SSRs"
+                    ],
+                    "outline_short": [
+                        "motivate DNA site-specific recombinases",
+                        "describe limitations of existing SSRs",
+                        "discuss optimization of prokaryotic genes in eukaryotes"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention provides an optimized FLP gene having an enhanced recombinase activity. The present invention also includes constructs, cells, and transgenic organisms containing this gene and useful for a variety of genetic analysis and molecular biology applications.",
+                        "Further provided by the present invention is a method of removing a selection cassette flanked by FLP recognition sequences using a novel, optimized FLP gene having an enhanced recombinase activity. The present invention also includes the cells and transgenic organisms produced using this method and usefull for a variety of genetic analysis and molecular biology applications.",
+                        "In further embodiments, the present invention provides a method for using multiple recombinases in a cell using a novel, optimized FLP gene having an enhanced recombinase activity. The present invention also includes the cells and transgenic organisms produced using this method and useful for a variety of genetic analysis and molecular biology applications."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce optimized FLP gene",
+                        "describe methods and applications of optimized FLP gene"
+                    ],
+                    "num_characters": 1016,
+                    "outline_medium": [
+                        "summarize optimized FLP gene and methods"
+                    ],
+                    "outline_short": [
+                        "summarize optimized FLP gene and its applications"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The present invention is explained in greater detail below. This description is not intended to be a detailed catalog of all the different ways in which the invention may be implemented, or all the features that may be added to the instant invention. For example, features illustrated with respect to one embodiment may be incorporated into other embodiments, and features illustrated with respect to a particular embodiment may be deleted from that embodiment. In addition, numerous variations and additions to the various embodiments suggested herein will be apparent to those skilled in the art in light of the instant disclosure, which do not depart from the instant invention. Hence, the following specification is intended to illustrate some particular embodiments of the invention, and not to exhaustively specify all permutations, combinations, and variations thereof."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Definitions",
+                            "paragraphs": [
+                                "As used herein, \u201ca,\u201d \u201can\u201d or \u201cthe\u201d can mean one or more than one. For example, \u201ca\u201d cell can mean a single cell or a multiplicity of cells.",
+                                "Also as used herein, \u201cand/or\u201d refers to and encompasses any and all possible combinations of one or more of the associated listed items, as well as the lack of combinations when interpreted in the alternative (\u201cor\u201d).",
+                                "As used herein, the term \u201cnucleic acid molecule\u201d refers to a DNA or RNA molecule, including cDNA, a DNA fragment, genomic DNA, synthetic (e.g., chemically synthesized) DNA, plasmid DNA, mRNA, and anti-sense RNA. A nucleic acid may or may not be immediately contiguous with nucleotide sequences with which it is immediately contiguous (one on the 5\u2032 end and one on the 3\u2032 end) in the naturally occurring genome of the organism from which it is derived. The term includes, for example, a DNA molecule that is incorporated into a construct, into a vector, into the genomic DNA of a prokaryote or eukaryote, or which exists as a separate molecule (e.g., a cDNA or a genomic DNA fragment produced by PCR or restriction endonuclease treatment) independent of other sequences. It also includes a recombinant DNA that is part of a hybrid nucleic acid.",
+                                "As used herein, the term \u201cnucleic acid sequence\u201d or \u201csequence\u201d refers to the sequence of nucleotides from the 5\u2032 to 3\u2032 end of nucleic acid molecule. Nucleic acid sequences provided herein are represented using the standard code for representing the nucleotide characters as set forth in the U.S. sequence rules, 37 CFR \u00a7\u00a71.821-1.825 and the World Intellectual Property Organization (WIPO) Standard ST.25.",
+                                "As used herein, the term \u201cgene\u201d refers to a nucleic acid molecule capable of being used to produce mRNA or antisense RNA. Genes may or may not be capable of being used to produce a functional protein.",
+                                "As used herein, the term \u201ccoding sequence\u201d refers to a nucleic acid molecule that codes for a protein sequence. A coding sequence can be used to produce a protein product. The coding sequence may or may not include non-coding regions such as introns, poly adenylation signals, and other untranslated regions. The coding sequence may or may not be fused to another coding sequence or localization signal, such as a nuclear localization signal. The coding sequence may be cloned into a vector or expression construct, may be integrated into a genome, or may be present as a DNA fragment.",
+                                "As used herein, the term \u201coptimized coding sequence\u201d refers to a coding sequence that has been improved over the native coding sequence. Means of improvement include, but are not limited to, incorporating codon usage preferences, reducing rare codon usage, reducing CpG content, removing cryptic splice acceptor/donor sequences, changing overall nucleotide base composition, and engineering a Kozak translational initiation consensus sequence. An optimized coding sequence may or may not be produced synthetically (e.g., chemically synthesized).",
+                                "As used herein, the term \u201cenhanced recombinase activity\u201d refers to the recombinase activity of gene product shoving increased activity when compared to the gene product of the native or endogenous gene. The recombinase activity can be measured in vivo or in vitro. Methods for measuring recombinase activity are provided herein, but are not limited to these methods alone.",
+                                "As used herein, the term \u201cconstruct\u201d refers to a recombinant nucleic acid molecule comprising containing a cis-acting regulatory element such as a gene. A construct may be cloned into a vector such as an autonomously replicating plasmid or virus. The vector may be used to manipulate DNA molecules or to produce a transgenic organism or host cell. Such constructs and vectors, cells, and organisms containing such constructs are an aspect of the invention.",
+                                "As used herein, the term \u201ctransforming\u201d refers to causing a cell or organism to undergo genetic transformation. Genetic transformation is the genetic modification of a cell or organism by the uptake and incorporation of exogenous DNA. Genetic transformation used in practicing the methods of the present invention may be by any method known to one skilled in the art.",
+                                "As used herein, the term \u201ctransgenic organism\u201d refers to an organism having chromosomes into which one or more heterologous genes have been incorporated either artificially or naturally. Transgenic organisms of the present invention may be produced via the transformation of a cell or organism by any method known to one skilled in the art. Transgenic organisms of the present invention include all species of eukaryotic organisms.",
+                                "As used herein, the term \u201cselection cassette\u201d refers to a construct useful for identifying or selecting desirable cells or organisms. Selection cassettes contain a selectable marker gene that results in positive or negative selection of cells or organisms harboring this gene. Selectable marker genes are well known to those skilled in the art and include, but are not limited to, antibiotic resistance genes. Selectable marker genes usually code for a gene product that the host cell cannot make naturally, such as specific antibiotic resistance factor. A selectable marker is used to ensure that the cell or organism has been transformed.",
+                                "As used herein, the term \u201cSSR\u201d or \u201crecombinase\u201d refers to a DNA site-specific recombinase. SSRs recognize specific DNA sequences (recognition sites) and catalyze recombination between two recognition sites. SSRs for use in the present invention include, but are not limited to, the PI bacteriophage-derived Cre gene (Sauer et al., Proc. Natl. Acad. Sci. U.S.A. 85 (14):5166-70 (1988); O'Gorman et al., Science. 251 (4999):1351-5 (1991); Lakso et al., Proc. Natl. Acad. Sci. U.S.A. 89 (14):6232-6 (1992); Orban et al., Proc. Natl. Acad Sci. USA. 89 (15):6861-5 (1992)); Kw recombinase of Kluyveromyces waltii (Ringrose et al., Eur. J Biochem. 15:248 (3):903-12 (1997)); mutant integrases of phage lamda (Lorbach et al., J. Mol. Biol. 296 (5):1175-81 (2000)); the integrases of phage HK022 (Kolot et al., Mol. Biol. Rep. 26 (3):207-13 (1999)); mutant gammadelta resolvase (Schwikardi et al., FEBS Lett. 471 (2-3):147-50 (2000)); beta-recombinase (Diaz et al., J. Biol. Chem. 274 (10):6634-40 (1999)); \u03a6C31 from Streptomyces lividans (Groth et al., Proc. Natl. Acad. Sci. U.S.A. 97 (11):5995-6000 (2000); Belteki et al., Nat. Biotechnol. 21 (3):321-4 (2003)); and other mutations and optimized versions of SSR genes (e.g., PCT International Publication No. WO/2002104609; U.S. Patent Publication No. 20030186291).",
+                                "As used herein, the term \u201crecognition site\u201d refers to a specific DNA sequence that is recognized by a SSR. The SSR binds the recognition site and catalyzes recombination between two recognition sites. Each SSR has specific recognition sites. For example, FLP recognizes a distinct 34 bp sequence known as an FLP recombinase target (FRT) site, and can mediate the deletion, inversion, and insertion of DNA sequences between two of these sites (McLeod et al., Mol. Cell Bio. 6 (10):3357-67 (1986)).",
+                                "As used herein, the term \u201csequence identity\u201d refers to the percentage of identical nucleotides between two sequences in a sequence alignment. Sequence identity is calculated by producing a sequence alignment optimally aligning a first nucleic acid sequence to a reference nucleic acid sequence with appropriate nucleotide insertions or deletions over the window of comparison. A sequence alignment is an arrangement of two or more sequences highlighting their similarity. Gaps may be introduced in the sequences so that wherever possible the nucleotides at each position in the alignment are identical. Compositions of this invention include an optimized FLP recombinase coding sequence having at least about 70% identity, more preferably about 80% identity, and most preferably about 90% identity over a comparison window of at least about 1000 nucleotide positions, more preferably at least about 1150 nucleotide positions, and most preferably over the entire length of the nucleic acid sequence provided as SEQ ID NO:1. Pair-wise sequence alignment methods producing optimal sequence alignments are well known to those skilled in the art. Ideal methods include computerized implementations of the Needleman-Wunsch algorithm or the Smith Waterman algorithms (available as the GCG Wisconsin\u00ae Package or Accelrys GCG\u00ae from Accelrys Software Inc., San Diego Calif.). The optimized FLP recombinase coding sequence may be a full-length molecule or a portion of a longer molecule.",
+                                "Thus in one embodiment, this invention provides an optimized FLP coding sequence having an enhanced recombinase activity in a cell containing and expressing the optimized FLP gene. Our results demonstrate significantly enhanced recombinase activity with the optimized FLPo gene as compared to the native FLP gene, FLPe. This enhanced recombination efficiency facilitates the use of the FLP recombinase in a wider array of molecular applications than was previously possible with the FLPe gene. These molecular applications include, but are not limited to, study of gene function, removal of selection cassettes used in gene targeting, tissue-specific gene knockouts, and controlling or modulating gene expression in specific cell types or tissues.",
+                                "The present invention also includes constructs, cells, and transgenic organisms produced using an optimized FLP coding sequence and useful for a variety of genetic analysis and molecular biology applications. The cells and transgenic organisms of the present invention may or may not contain the optimized FLP coding sequence.",
+                                "In another embodiment, this invention provides a method for the efficient removal of a selection cassette flanked by FLP recombinase recognition sites (FRT sites) using the optimized FLP gene provided herein. The increase in recombination efficiency with the optimized FLPo coding sequence facilitates the use of the FLP recombinase in cultured cells and transgenic organisms such as transgenic mice. To date, the use of FLP in cultured cells has been hampered by the low efficiency of recombination. In one embodiment, this method can be used in cultured cells for removing a positive selection cassette flanked by FLP recombinase recognition sites. Such selection cassettes may be used in gene targeting in cultured ES cells. Often the removal of such a selection cassette, which is required to generate a \u201cclean\u201d targeted allele, is not performed in culture due to the inefficient and incomplete FLP-mediated recombination in ES cells. Removal of a FRT-mediated cassette can be done in vivo by crossing mice to a general \u201cFLP-deletor\u201d mouse stain (Farley et al., Genesis. 28 (3-4):106-10 (2000)). However, the drawback to this approach is the extra time required for breeding of mice. The present invention solves this problem by providing a method for efficient and complete FLP-mediated recombination in ES cells, thus facilitating the removal of the selection cassette in cell culture. The present invention also includes cells and transgenic organisms produced using this method.",
+                                "In another embodiment, this invention provides a method for using multiple, highly efficient SSRs in cells and transgenic organisms using the optimized FLP gene provided herein. Other recombinases for use in this invention include any SSR that recognizes specific recognition sites in a cell or transgenic organism and can catalyze recombination between the two recognition sites. This method can be used for broad range of molecular manipulations, including, but not limited to performing multiple general or tissue-specific gene knockouts, studying gene function at the intersection of overlapping expression, and controlling gene expression in a temporal \u201coff-on-off\u201d manner in single or multiple cell types or tissues. The present invention also includes cells and transgenic organisms produced using this method.",
+                                "The methods and compositions of the present invention are useful in eukaryotic systems for a number of applications including, but not limited to, conditional activation and/or inactivation of transgenes and/or endogenouos genes; chromosome engineering to obtain deletions, translocations, insertions, or inversions; removal of selection marker genes; gene replacement; targeted insertion of transgenes; and the activation and/or inactivation of genes by inversion. Eukaryotic systems or organisms useful in practicing the present invention include, but are not limited to, vertebrates such as fish, amphibians, reptiles, birds, and manrnals as well as invertebrates such as sponges, jellyfish, planarians, worms, starfish, sea urchins, sea cucumbers, mollusks, and arthropods."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define \"a\", \"an\", or \"the\"",
+                                "define \"and/or\"",
+                                "define \"nucleic acid molecule\"",
+                                "define \"nucleic acid sequence\"",
+                                "define \"gene\"",
+                                "define \"coding sequence\"",
+                                "define \"optimized coding sequence\"",
+                                "define \"enhanced recombinase activity\"",
+                                "define \"construct\"",
+                                "define \"transforming\"",
+                                "define \"transgenic organism\"",
+                                "define \"selection cassette\"",
+                                "define \"SSR\" or \"recombinase\"",
+                                "define \"recognition site\"",
+                                "define \"sequence identity\"",
+                                "describe optimized FLP recombinase coding sequence",
+                                "describe use of optimized FLP coding sequence",
+                                "describe molecular applications of optimized FLP coding sequence",
+                                "describe constructs, cells, and transgenic organisms produced using optimized FLP coding sequence",
+                                "describe method for efficient removal of selection cassette",
+                                "describe method for using multiple SSRs",
+                                "describe eukaryotic systems useful in practicing the invention",
+                                "describe applications of the invention",
+                                "describe limitations of prior art",
+                                "provide general information about the invention"
+                            ],
+                            "num_characters": 12670,
+                            "outline_medium": [
+                                "define \"a\", \"an\", or \"the\"",
+                                "define \"and/or\"",
+                                "define \"nucleic acid molecule\"",
+                                "define \"nucleic acid sequence\"",
+                                "define \"gene\"",
+                                "define \"coding sequence\"",
+                                "define \"optimized coding sequence\"",
+                                "define \"enhanced recombinase activity\"",
+                                "define \"construct\"",
+                                "define \"transforming\"",
+                                "define \"transgenic organism\"",
+                                "define \"selection cassette\""
+                            ],
+                            "outline_short": [
+                                "define \"a\", \"an\", or \"the\"",
+                                "define \"and/or\"",
+                                "define \"nucleic acid molecule\"",
+                                "define \"nucleic acid sequence\" or \"sequence\"",
+                                "define \"gene\"",
+                                "define \"coding sequence\""
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLES",
+                            "paragraphs": [
+                                "**Site-Specific Recombinase Genes and Expression Vectors**",
+                                "An optimized FLP coding sequence (FLPo) (provided as SEQ ID NO:1) was commercially synthesized de novo (Geneart GmbH, Regensburg, Germany) according to the FLPe amino acid sequence (Buchholz et al., Nat. Biotechnol. 16 (7):657-62 (1998)). FLPo was designed with mouse codon usage in order to increase translational efficiency in mammalian cells. FLPo also has an increased GIC nucleotide content to prolong MRNA half-life. FLPo was also engineered to include a Kozak consensus translational start sequence, two transcriptional stop sequences, and a bovine growth hormone polyadenylation sequence to increase the efficiency of transcription and translation in vertebrate cells. The FLPo coding sequence was blunt cloned into a mammalian expression vector driven by the high expressing phospho-glycerate kinase (PGK) promoter to generate the expression vector PGKFLPo (FIG. 1B). The CAGGSFLPe expression construct, containing the FLPe coding sequence for transient expression of FLPe in mouse ES cells, was a gift from A. F. Stewart (FIG. 1A). CAGGSFLPe was previously reported to give the highest efficiency of FLP-mediated recombination in ES cells (Schaft et al., Genesis. 31 (1).6-10 (2001)).",
+                                "**Analysis of FLP Recombinase Efficiency in ES Cells**",
+                                "The recombination efficiency of codon-optimized FLPo was compared to FLPe using FLP reporter ES cells. FLP reporter ES cells harbor a FLP-inducible PLAP reporter gene integrated at the broadly expressed ROSA26 locus (FIG. 1C). These cells were used as previously described to monitor FLP recombination activity (Awatramani et al., Nat. Genet. 29 (3):257-9 (2001)). FLP reporter ES cells were electroporated with 10 \u03bcg of circular CAGGSFLPe or PGKFLPo. Alkaline phosphatase reporter activity was measured after 5 days in culture (FIGS. 2A and 2B). A majority of the ES colonies displayed some degree of FLP-mediated recombination activity when transfected with PGKFLPo (FIG. 2B). In contrast, very little FLP-mediated recombination activity was observed in ES cells transfected with the CAGGSFLPe vector (FIG. 2A). Quantitation of alkaline phosphatase reporter activity revealed that nearly 75% of ES cell colonies transfected with FLPo displayed either mosaic or complete recombination (FIG. 2C). This represents nearly a 20-fold increase in recombination activity for codon-optimized FLPo over FLPe.",
+                                "The ability of codon-optimized FLPo to mediate full recombination in an ES cell colony was tested in FLP reporter ES cells. Cells were co-electroporated with linearized PGKFLPo or CAGGSFLPe DNA in a 10:1 molar ratio with linearized PGKHygromycin. ES cells were then treated with hygromycin for 10 days, and the hygromycin-resistant (hygroR) ES colonies were stained for alkaline phosphatase activity. The staining indicated that ES cells harboring an integrated codon-optimized FLPo expression vector underwent complete recombination in cultured cells (FIG. 3B). In comparison, ES cell colonies containing an integrated FLPe construct showed only background alkaline phosphatase staining (FIG. 3A). Quantitation of these results showed that 0/10 ES cell colonies with an integrated CAGGSFLPe expression vector showed recombination activity, while 7/14 ES cell colonies harboring an integrated codon-optimized FLPo vector showed recombination activity (Table 1). This demonstrates that the genetically engineered FLPo gene displays a marked increase in recombination efficiency in ES cells compared to the native FLP gene.",
+                                "Except as otherwise indicated, standard methods known to those skilled in the art may be used for the construction and use of nucleic acid molecules, vectors, selectable markers, cells, transgenic organisms, and the like. Such techniques are well known to those skilled in the art. See, e.g., J. Sambrook et al., Molecular Cloning: A Laboratory Manual 3rd Ed. (2001) (Cold Spring Harbor Laboratory Press; Woodbury, N.Y.); Current Protocols In Molecular Biology, edited by F. M. Ausubel et al. (John Wiley & Sons, Inc.; Hoboken, N.J.); and Current Protocols in Cell Biology, edited by Juan S. Bonifacino, et al. (John Wiley & Sons, Inc.; Hoboken, N.J.).",
+                                "All publications patents, and patent publications cited herein are incorporated by reference in their entireties for the teachings relevant to the sentence and/or paragraph in which the reference is presented."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe optimized FLP coding sequence (FLPo)",
+                                "describe expression vector PGKFLPo",
+                                "describe CAGGSFLPe expression construct",
+                                "describe analysis of FLP recombinase efficiency in ES cells",
+                                "describe FLP reporter ES cells",
+                                "describe results of FLP-mediated recombination activity",
+                                "describe testing of codon-optimized FLPo in ES cells",
+                                "provide general information about standard methods used in the invention"
+                            ],
+                            "num_characters": 4400,
+                            "outline_medium": [
+                                "describe optimized FLP coding sequence",
+                                "analyze FLP recombinase efficiency in ES cells",
+                                "test ability of codon-optimized FLPo to mediate full recombination",
+                                "provide general methods for construction and use of nucleic acid molecules"
+                            ],
+                            "outline_short": [
+                                "describe construction of optimized FLP coding sequence and expression vector",
+                                "analyze FLP recombinase efficiency in ES cells"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "provide detailed description of invention"
+                    ],
+                    "num_characters": 876,
+                    "outline_medium": [
+                        "provide detailed description of invention"
+                    ],
+                    "outline_short": [
+                        "provide definitions of terms used in the invention"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An optimized FLP recombinase coding sequence having the sequence provided as SEQ ID NO: 1 and having an enhanced recombinase activity in a cell containing and expressing the same.",
+        "2. An optimized FLP recombinase coding sequence having at least about 90% sequence identity to the sequence provided as SEQ ID NO: 1 and having an enhanced recombinase activity in a cell containing and expressing the same.",
+        "3. A construct comprising the optimized FLP recombinase coding sequence of claim 1.",
+        "4. A cell comprising the optimized FLP recombinase coding sequence of claim 1.",
+        "5. The cell of claim 4, wherein the cell is a eukaryotic cell.",
+        "6. The cell of claim 5, wherein the cell is an invertebrate cell.",
+        "7. The cell of claim 5, wherein the cell is a vertebrate cell.",
+        "8. The cell of claim 7, wherein the cell is a mammalian cell.",
+        "9. The cell of claim 8, wherein the cell is a mouse cell.",
+        "10. A transgenic organism comprising the optimized FLP recombinase coding sequence of claim 1.",
+        "11. The transgenic organism of claim 10, wherein said transgenic organism is an invertebrate.",
+        "12. The transgenic organism of claim 10, wherein said transgenic organism is a vertebrate.",
+        "13. The transgenic organism of claim 12, wherein said transgenic organism is a mammal.",
+        "14. The transgenic organism of claim 13, wherein said transgenic organism is a mouse.",
+        "15. A cell produced using the optimized FLP recombinase coding sequence of claim 1.",
+        "16. The cell of claim 15, wherein the cell is a eukaryotic cell.",
+        "17. The cell of claim 16, wherein the cell is an invertebrate cell.",
+        "18. The cell of claim 16, wherein the cell is a vertebrate cell.",
+        "19. The cell of claim 18, wherein the cell is a mammalian cell.",
+        "20. The cell of claim 19, wherein the cell is a mouse cell.",
+        "21. A transgenic organism produced using the optimized FLP recombinase coding sequence of claim 1.",
+        "22. The transgenic organism of claim 21, wherein said transgenic organism is an invertebrate.",
+        "23. The transgenic organism of claim 21, wherein said transgenic organism is a vertebrate.",
+        "24. The transgenic organism of claim 23, wherein said transgenic organism is a mammal.",
+        "25. The transgenic organism of claim 24, wherein said transgenic organism is a mouse.",
+        "26. A method for the removal of a selection cassette flanked by FLP recognition sites comprising:\na. transforming a cell with an optimized FLP recombinase coding sequence having the sequence provided as SEQ ID NO: 1 and having an enhanced recombinase activity; and\nb. selecting cells that express the optimized FLP recombinase coding sequence.",
+        "27. A cell produced using the method of claim 26.",
+        "28. The cell of claim 27, wherein the cell is a eukaryotic cell.",
+        "29. The cell of claim 28, wherein the cell is an invertebrate cell.",
+        "30. The cell of claim 28, wherein the cell is a vertebrate cell.",
+        "31. The cell of claim 30, wherein the cell is a mammalian cell.",
+        "32. The cell of claim 31, wherein the cell is a mouse cell.",
+        "33. A transgenic organism produced using the method of claim 26.",
+        "34. The transgenic organism of claim 33, wherein said transgenic organism is an invertebrate.",
+        "35. The transgenic organism of claim 33, wherein said transgenic organism is a vertebrate.",
+        "36. The transgenic organism of claim 35, wherein said transgenic organism is a mammal.",
+        "37. The transgenic organism of claim 36, wherein said transgenic organism is a mouse.",
+        "38. A method for using multiple recombinases in cells comprising:\na. transforming a cell with an optimized FLP recombinase coding sequence having the sequence provided as SEQ ID NO: 1 and having an enhanced recombinase activity;\nb. transforming said cell with at least one other recombinase coding sequence; and\nc. selecting cells that express said optimized FLP recombinase coding sequence and said other SRR coding sequence.",
+        "39. A cell produced using the method of claim 38.",
+        "40. The cell of claim 39, wherein the cell is a eukaryotic cell.",
+        "41. The cell of claim 40, wherein the cell is an invertebrate cell.",
+        "42. The cell of claim 40, wherein the cell is a vertebrate cell.",
+        "43. The cell of claim 42, wherein the cell is a mammalian cell.",
+        "44. The cell of claim 43, wherein said cell is a mouse cell.",
+        "45. A transgenic organism produced using the method of claim 38.",
+        "46. The transgenic organism of claim 45, wherein said transgenic organism is an invertebrate.",
+        "47. The transgenic organism of claim 45, wherein said transgenic organism is a vertebrate.",
+        "48. The transgenic organism of claim 47, wherein said transgenic organism is a mammal.",
+        "49. The transgenic organism of claim 48, wherein said transgenic organism is a mouse."
+    ]
+}

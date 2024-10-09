@@ -1,0 +1,60 @@
+# DESCRIPTION
+
+## BRIEF DESCRIPTION OF THE DRAWINGS
+
+- introduce patent drawings
+- describe FIG. 1
+- describe FIGS. 2A-B
+- describe FIG. 3A-C
+- describe FIG. 4
+- describe FIG. 5
+- describe FIGS. 6A-B
+- describe FIGS. 7A-D
+- describe FIG. 8
+- summarize drawings
+- describe eNOS phosphorylation
+- describe eNOS binding to p38
+- describe eNOS binding to ERK
+- describe eNOS regulation
+- describe MAP kinase recognition site
+- describe CaM binding
+- describe eNOS autoinhibitory element
+- describe phosphorylation sites
+- describe eNOS activity modulation
+- describe cytochrome C reductase activity
+- describe pentabasic peptides
+- describe antibodies
+- describe peptidomimetic mutant enzymes
+- introduce eNOS and p38 binding
+- discuss MAP kinase pathways and eNOS regulation
+- describe ERK phosphorylation of eNOS
+- discuss pentabasic motif and MAPK binding site
+- describe eNOS-MAP kinase interaction and complex formation
+- discuss inhibition of eNOS by MAP kinase
+- describe experimental methods for eNOS expression and purification
+- describe ERK kinase reactions and eNOS phosphorylation
+- discuss fluorescence lifetime measurement and data analysis
+- describe biolayer interferometry and surface plasmon resonance experiments
+- discuss DNA and amino acid sequences of mammalian nitric oxide synthase isoforms
+- describe phosphorylation of eNOS by ERK and mass spectroscopy results
+- describe drawings
+- illustrate structure of eNOS oxygenase dimer
+- summarize experimental results
+- discuss effects of ERK phosphorylation on eNOS activity
+- analyze CaM-eNOS binding
+- describe fluorescence decays of eNOS holoenzyme
+- summarize effects of ERK phosphorylation on eNOS activity
+- describe ERK phosphorylation of eNOS
+- identify phosphorylation sites on eNOS
+- discuss effects of phosphorylation on eNOS activity
+- describe CaM binding to phosphorylated eNOS
+- compare ERK and PKC phosphorylation of eNOS
+- discuss potential roles of phosphorylation sites
+- incorporate by reference external materials
+- list incorporated references
+- describe MAP kinase signaling pathways
+- discuss regulation of eNOS by MAP kinases
+- describe nitric oxide production and its effects
+- discuss regulation of insulin secretion by nitric oxide
+- describe endothelial nitric oxide synthase structure and function
+

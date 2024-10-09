@@ -1,0 +1,244 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical scope
+
+## BACKGROUND
+
+- describe wearable electronic devices
+
+## DETAILED DESCRIPTION
+
+- introduce social connection via shared objects
+- describe indirect interaction using anchor points
+- summarize object sharing via messaging system
+- describe connected session with co-located users
+- outline collaboration software and AR display tools
+- explain three strategies for placing content
+- summarize methods for sharing object representations
+- describe varying presentation perspectives
+- outline modifying objects using AR display tools
+- introduce detailed description of systems and methods
+- define terminology and nomenclature
+- describe connections and couplings
+- outline additional objects and advantages
+- describe orientations of electronic eyewear devices
+- introduce reference to accompanying drawings
+
+### Electronic Eyewear Device
+
+- introduce electronic eyewear device with AR capability
+- describe benefits of electronic eyewear device
+- illustrate hardware configuration of electronic eyewear device 100
+- describe optical assembly 180A with image display 180C
+- introduce visible light cameras 114A and 114B
+- describe angle of coverage of visible light cameras 114A and 114B
+- explain image sensor data capture and processing
+- describe stereoscopic vision using visible light cameras 114A and 114B
+- illustrate three-dimensional image reproduction
+- describe electronic eyewear device 100 components
+- introduce frame 105 and right rim 107A
+- describe right temple 110A and see-through image display 180C
+- introduce head movement tracker 109
+- describe eye movement tracker 113
+- explain processor 432 and memory 434
+- describe image display driver 442
+- illustrate electronic eyewear device 100 with head movement tracker 109
+- describe inertial measurement unit (IMU)
+- explain accelerometer and gyroscope functions
+- describe magnetometer function
+- illustrate head movement tracking
+- describe variation of head direction
+- explain deviation angle threshold
+- describe horizontal axis variation
+- describe vertical axis variation
+- illustrate right temple 110A components
+- describe flexible PCB 140A
+- introduce microphone(s) 130 and speaker(s) 132
+- describe low-power wireless circuitry and high-speed wireless circuitry
+- illustrate visible light camera 114A and cover lens
+- describe first see-through image display 180C and first optical assembly 180A
+- illustrate electronic eyewear device 100 rear view
+- describe frame 105 and right rim 107A
+- introduce eye scanner 113 with infrared emitter 115 and infrared camera 120
+- describe infrared emitter 115 and infrared camera 120 functions
+- illustrate infrared emitter 115 and infrared camera 120 arrangements
+- describe eye position and gaze direction identification
+- describe electronic eyewear device 200
+- illustrate hardware configuration of electronic eyewear device 200
+- describe eye scanner 213
+- describe infrared emitter 215 and infrared camera 220
+- describe frame 105 and rims 107A-B
+- describe optical assemblies 180A-B and see-through image displays 180C-D
+- describe display matrix 180C and 180D
+- describe optical layers 176A-N
+- describe prism in optical layers 176
+- describe projector 150 and optical strips 155A-N
+- describe electronic eyewear device 100
+- describe temples 110A-B and frame 105
+- describe see-through image displays 180C and 180D
+- describe apertures 175A-B and optical assemblies 180A-B
+- describe angle of view and field of view
+- describe block diagram of capturing visible light with cameras 114A and 114B
+- describe image processing by image processor 412
+- describe system block diagram of electronic eyewear device 100 or 200
+- describe electronic components of electronic eyewear device 100 or 200
+- describe memory 434 and instructions for execution by processor 432
+- describe eye movement tracking programming 445
+- describe object/marker recognition and connection software 460
+- describe image capture software 470
+- describe collaboration software 480
+- describe mobile device 500 and server system 498
+- describe wireless connections 425 and 437
+- describe high-speed circuitry 430 and low-power circuitry 420
+- describe image display driver 442 and image processor 412
+- describe high-speed processor 432 and memory 434
+- describe high-speed wireless circuitry 436
+- describe low-power wireless circuitry 424
+- describe memory 434 and storage of data and applications
+- describe server system 498 and network 495
+- describe gallery 490 of snapshots and AR objects
+- describe output components of electronic eyewear devices 100 and 200
+- describe input components of electronic eyewear devices 100 and 200
+- describe peripheral device elements of electronic eyewear devices 100 and 200
+- describe biometric components of electronic eyewear devices 100 and 200
+- describe motion components of electronic eyewear devices 100 and 200
+- describe position components of electronic eyewear devices 100 and 200
+
+### Mobile Device
+
+- introduce mobile device 500
+- describe flash memory 505
+- detail camera 525
+- describe image display 530
+- explain mobile display driver 535
+- detail display controller 540
+- describe user input layer 545
+- introduce digital transceiver 550
+- detail short-range transceivers 555
+- explain global positioning system (GPS) receiver
+- describe central processing unit (CPU) 510
+- detail memory or storage system
+- explain audio transceiver 570
+- summarize mobile device components
+
+### Server System
+
+- introduce server system
+- describe hardware components
+- explain dedicated hardware logic components
+- discuss applications of server system
+- illustrate block diagram of computer system
+- describe back-end server system
+- explain execution of instructions
+- discuss storage of representations of objects
+- describe maintenance of gallery and collaboration software
+- discuss alternative configurations of machine
+- explain networked deployment
+- describe peer machine in peer-to-peer network environment
+- list examples of machines
+- explain implementation of methods
+- discuss modules and their operations
+- describe arrangement of circuits as modules
+- explain software residing on machine-readable medium
+- describe hardware processor and main memory
+- discuss static memory and interlink
+- list components of machine
+- describe mass storage device and signal generation device
+- explain network interface device and sensors
+- discuss output controller and peripheral devices
+- describe machine-readable medium and instructions
+- explain transmission of instructions over communications network
+- discuss communication networks and protocols
+- describe network interface device and antennas
+- explain wireless communication techniques
+- discuss embodiment of features and flowcharts
+- describe applications and programming languages
+- explain third-party application and API calls
+- discuss specialized computer hardware and ASIC
+- describe program aspects and machine-readable medium
+- introduce server system
+- describe mobile device application
+- explain electronic eyewear device application
+- establish connections between users
+- describe object exchanges
+- introduce AR content
+- explain real-world content
+- describe system functionality
+- establish physical markers
+- describe connections between physical markers
+- trigger AR content
+- describe time-buffer
+- determine field of view
+- track user's gaze direction
+- send passive messages
+- send messages from object to object
+- send messages from object to user
+- describe default AR content
+- recommend AR content
+- trigger messages using face as marker
+- describe transient and persistent AR
+- generate clone of real-world object
+- share clone with other users
+- describe object gallery
+- provide marketplace for objects
+- generate virtual objects on map
+- send 3D object via messaging application
+- receive and share 3D object
+- describe collaboration session
+- annotate 3D object
+- illustrate establishing social connection
+- illustrate completion of social connection
+- introduce server system
+- describe user interaction with refrigerator
+- describe transmission of communication to user 2
+- describe user 2's interaction with cabinet
+- describe reception of communication by user 2
+- describe GUI for reception of sparkles
+- describe user 2's response to user 1
+- describe capture of mug image
+- describe transmission of mug image to user 1
+- describe GUI for transmission of mug image
+- describe reception of mug image by user 1
+- describe GUI for reception of mug image
+- describe transmission of 3D scanned shoe
+- describe GUI for transmission of 3D scanned shoe
+- describe reception of 3D scanned shoe
+- describe GUI for reception of 3D scanned shoe
+- describe collaboration software
+- describe sharing of 3D scanned shoe
+- describe AR display tools
+- describe modification of shared 3D scanned shoe
+- describe flow chart for object pairing and connection management
+- receive identification tag for marker-endpoint object
+- provide option to name marker-endpoint object
+- store marker-endpoint object ID, picture, and name
+- access marker-endpoint objects of another user
+- pair marker-endpoint objects
+- store connection in server system
+- manage connections
+- invoke AR content
+- describe flow chart for sharing 3D AR objects
+- receive AR object
+- identify co-located users
+- establish collaboration session
+- share received 3D object
+- determine position and orientation of head
+- change presentation perspective of received 3D object
+- manipulate received 3D object
+- add annotations to received 3D object
+- send annotated AR object back to original sender
+- maintain gallery of AR content and images
+- present stored AR content and images for selection
+- track GPS coordinates of object
+- trigger communication of AR elements or scanned objects
+- initiate and conduct methods without gestures or touch operations
+- extract image without hand gestures or manual selection
+- modify received object without hand gestures or manual selection
+- interpret claims broadly
+- disclaim unintended embracement of subject matter
+- define terms and expressions
+- describe relational terms
+- describe measurements and values
+

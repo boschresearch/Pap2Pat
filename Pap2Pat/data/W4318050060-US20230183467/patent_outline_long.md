@@ -1,0 +1,283 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### Field of the Invention
+
+- relate to polymer and elastomer compositions
+
+### Description of Related Art
+
+- describe conductive polymers and elastomers
+- describe use in RFI and EMI shielding
+- describe use in dissipative applications
+- describe need for improvement in materials
+- describe use in semiconductor manufacturing
+- describe need for minimizing particulation
+- describe importance of seal life monitoring
+- describe prior art attempts to monitor seal life
+- describe use of sensors in seals
+- describe use of RFID tags in seals
+- describe use of pressure sensors in seals
+- describe use of micro sensors in process chambers
+- describe use of part wear indicator materials
+- describe use of phosphorescent materials
+- describe use of pressure regulation systems
+- describe use of sensors to control door speed
+- describe use of sensors to monitor door movement
+- describe use of pressure sensors to control door operation
+- describe applicant's prior contributions to monitoring properties
+- describe need for simpler alternatives to sensor usage
+- describe need for seals with varying electrical properties
+- describe need for cleanroom-friendly seals
+- describe need for seals with consistent properties
+- describe use of acicular particles and pressure-sensitive granules
+- describe use of composite structures with acicular particles
+- describe use of dielectric particles in liquid silicon polymer matrix
+- describe use of polymer or elastomer binders with void-bearing structures
+- describe use of spherical magnetite conductive material
+- describe use of sensors to measure micro stress/micro strain
+- describe use of sensors to measure temperature and micro strain
+- describe need for improved ways to ensure maximum seal life
+- describe need for critical analysis to choose optimal seal
+- describe need for seals suitable for semiconductor manufacturing
+- describe need for seals with responsive electrical properties
+- describe need for clean seals with controlled electrical properties
+- describe use of shielding devices in EMI shielding
+- describe use of multiple layers and coatings in EMI shielding
+- describe use of conductive materials in EMI shielding
+- describe use of metal or carbon fillers in EMI shielding
+- describe use of spherical particles of aluminum, graphite, or copper
+- describe use of metallic filler dispersed in thermoplastic matrix
+- describe use of conductive elastomers in EMI shielding
+- describe need for EMI shielding compositions with good sealing properties
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce novel compositions and articles
+- describe end applications
+- motivate conductivity change under compressive stress
+- describe insulative and conductive properties
+- introduce dissipative nature
+- describe electromagnetic interference shielding applications
+- introduce composition for forming articles
+- describe matrix polymer selection
+- introduce three-dimensional, branched and/or crosslinked carbon nanostructure additive
+- describe volume resistivity level
+- introduce curable polymer selection
+- describe cured polymer composition
+- introduce crosslinking additive
+- describe carbon nanostructure additive properties
+- introduce filler selection
+- describe composition ratio
+- introduce thermoplastic polymer selection
+- describe conductive filler selection
+- introduce article formation
+- describe electromagnetic interference shielding device
+- introduce composition for dissipative effect
+- describe quantum tunneling composite effect
+- introduce composition ratio for dissipative effect
+- describe article properties
+- introduce self-sensing article
+- describe method of making article
+- introduce heat-forming and curing process
+- describe article selection
+- introduce method of making article for dissipative effect
+- describe article properties for dissipative effect
+- introduce elastomeric quantum tunneling composite
+- describe conductivity change under compressive stress
+- introduce self-sensing article for real-time performance evaluation
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define spatial relationships
+- introduce carbon nanostructure additive compositions
+- motivate QTC and EMI shielding applications
+- describe self-sensing seal embodiments
+- summarize semiconductor manufacturing applications
+- introduce gate and slit valves with seals
+- describe metallic door materials
+- introduce elastomeric seal materials
+- describe back-up rings or seals
+- motivate three-dimensional branched carbon nanostructure additives
+- describe carbon nanostructure properties
+- introduce Athlos™ Carbon Nanostructures
+- describe dielectric nature of curable polymer compositions
+- motivate conductivity level in polymer compositions
+- introduce pressure-sensing applications
+- describe EMI and RFI shielding effects
+- motivate loading of carbon nanostructure additives
+- describe preferred loading ranges
+- introduce curable perfluoropolymers and fluoropolymers
+- describe bulk resistivity requirements
+- motivate elastomeric article configurations
+- introduce QTC effect and dissipative conductive polymers
+- describe lower loading ranges for QTC effect
+- motivate antistatic dissipative materials
+- describe QTC electron carrying options
+- introduce dielectric environment in elastomers
+- describe measurement of bulk resistivity and conductivity
+- motivate analysis of seal life and performance
+- summarize self-sensing seal benefits
+- introduce QTC effects and applications
+- describe curable polymer compositions
+- explain crosslinking agents and curative materials
+- discuss polymer and elastomer compositions
+- summarize additives for polymeric and elastomeric compositions
+- motivate carbon nanostructures for conductivity and resistivity
+- describe elastomeric and non-elastomeric matrix materials
+- introduce suitable curable polymers
+- explain formation of elastomers
+- define curing and elastomers
+- describe compression set and other elastomeric properties
+- explain uncured and curable polymers
+- introduce categories of polymers for QTC and EMI/RFI shielding
+- describe silicones and their cure systems
+- explain platinum catalyst curing
+- describe condensation curing systems
+- discuss peroxide cure systems
+- introduce commercial silicones for QTC and EMI/RFI shielding
+- describe silicone polymers and their substitutions
+- discuss cure system components
+- introduce additives and modifiers for silicone compositions
+- describe siloxane additives and ultra-high molecular weight siloxane additives
+- list other additives and modifiers
+- discuss limitations of additives
+- conclude additives and modifiers for silicone compositions
+- introduce QTC applications
+- discuss limitations of conductive materials
+- describe preferred additives in silicon-containing polymer compositions
+- discuss optional additives and their amounts
+- describe cure systems and their adjustments
+- introduce nitrile rubbers and olefinic rubbers
+- describe curable fluoropolymers for QTC and EMI/RFI shielding
+- discuss fluoropolymers for harsh environments
+- introduce FKM polymers and their cure site monomers
+- describe curable fluoropolymers and their formation
+- discuss radiation crosslinkable fluoropolymers
+- describe peroxide curable fluoropolymers
+- introduce additional cure sites and curing systems
+- describe curable fluoropolymer compositions
+- discuss perfluoroelastomers and cured perfluoroelastomers
+- introduce curable perfluoropolymers and their formation
+- describe perfluoroelastomeric compositions and their properties
+- discuss blended curable fluoropolymer compositions
+- introduce perfluorinated cure site monomers
+- describe curable perfluoropolymer compositions with TFE and PAVEs
+- discuss preferred cure sites and functional groups
+- introduce radiation curing and alternative curatives
+- describe exemplary cure site monomers
+- discuss structure of cure site monomers
+- introduce formulas for cure site monomers
+- describe formula (1) for cure site monomers
+- describe formula (2) for cure site monomers
+- describe formula (3) for cure site monomers
+- describe formula (4) for cure site monomers
+- describe formula (5) for cure site monomers
+- describe formula (6) for cure site monomers
+- describe formula (7) for cure site monomers
+- describe formula (8) for cure site monomers
+- summarize curable fluoropolymer compositions
+- conclude detailed description of the invention
+- define perfluoropolymer structures
+- describe cure site monomers
+- introduce perfluoropolymers with TFE content
+- describe PAVE content
+- specify cure site monomer amounts
+- introduce blends of curable fluoropolymers
+- describe incorporation of fluoroplastic particles
+- cite references for fluoroplastic particles
+- introduce other perfluoropolymers and elastomers
+- cite references for perfluoropolymers and elastomers
+- describe synthesis of perfluoropolymers
+- specify polymerization techniques
+- introduce commercially available perfluoropolymers
+- cite references for perfluoropolymers
+- introduce curatives for crosslinking
+- describe preferred curatives
+- introduce bisphenyl-based curatives
+- cite references for curatives
+- introduce radiation-curing technology
+- describe aromatic amines as curatives
+- introduce formulas for curatives
+- describe R1 and R2 groups
+- introduce formulas for organic amine curatives
+- describe R3 and R4 groups
+- introduce formulas for oxazole-, imidazole-, thiazole- and triazine-ring forming curatives
+- describe heat resistance of curatives
+- introduce preferred curatives for heat resistance
+- describe exemplary curatives
+- introduce formulas for exemplary curatives
+- describe most preferred crosslinking agents
+- define alkylene groups
+- provide examples of perfluoroalkylene groups
+- introduce bisaminophenyl compounds
+- describe preferred compounds according to formula (X)
+- list non-limited examples of curatives
+- describe oxazole-, imidazole-, thiazole-, and triazine-ring forming curatives
+- mention bisaminophenol, bisaminophenol AF, and combinations thereof
+- describe bisamidines, bisamidoximes, bisamidrazones, monoamidines, monoamidoximes, and
+- monoamidrazones
+- introduce compounds with cross-linking reactive groups
+- describe preferred curatives
+- introduce fluorinated imidoylamidines
+- describe bisaminophenols, bisamidines, bisamidoximes, bisamidrazones, monoamidines,
+- monoamidoximes, monoamidrazones, biasminothiophenols, and bisdiaminophenyls
+- introduce tetra-amines and aromatic amines
+- describe compounds represented by formula (II)
+- describe compounds represented by formula (III)
+- describe compounds represented by formula (IV)
+- describe compounds represented by formula (V)
+- introduce curable fluorine-containing elastomer composition
+- describe perfluoroimidoylamidines
+- introduce bisaminophenol and its salts
+- describe combination of curatives
+- introduce compound of formula (XII)
+- describe compound of formula (X)
+- introduce preferred ratios of curatives
+- describe curable perfluoroelastomer composition
+- introduce carbon nanostructure additives
+- describe incorporation of additives
+- introduce other additives
+- describe optional fillers
+- introduce cure accelerators, co-curatives, co-agents
+- describe curing process
+- introduce postcuring steps
+- describe molding process
+- introduce additional curatives and cure accelerators
+- describe non-curable fluoropolymers or perfluoropolymers
+- introduce polymeric matrices
+- describe combining carbon nanostructures with other additives
+
+## EXAMPLE 1
+
+- introduce EMF/RFI shielding end applications
+- describe industry standard for EMF/RFI shielding
+- prepare and test samples with varying formulations
+- compare particulation results with commercial standard
+- demonstrate lower particulation and excellent conductivity
+- show volume resistivity levels below 0.5 ohm-cm
+
+## EXAMPLE 2
+
+- prepare compositions for QTC elastomer composites
+- incorporate Cabot carbon nanostructures in varying levels
+- test physical properties and formulations
+- demonstrate QTC effect with increasing carbon nanostructure additive
+- show optimal QTC effects at specific additive levels
+- test button samples with varying deflection levels
+
+## EXAMPLE 3
+
+- prepare KF seals with carbon nanostructure additive
+- test conductivity of KF seals
+- prepare QTC formulations with varying additive levels
+- test conductivity with compression
+- show conductivity rise with deflection and leveling off
+- compare conductivity behavior with different fillers
+- demonstrate QTC composite effect under depression
+- describe alternative method for making KF-40 seals
+- describe use of compositions in QTC smart seal
+- illustrate resistance measurement system
+- note potential modifications within the inventive concept
+

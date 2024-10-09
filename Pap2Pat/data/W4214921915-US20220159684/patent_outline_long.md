@@ -1,0 +1,190 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field of invention
+
+## BACKGROUND
+
+- motivate wireless communication improvements
+
+## SUMMARY
+
+- introduce UE beam codebook design
+- describe UE embodiment
+- describe UE components
+- describe UE functionality
+- introduce method embodiment
+- describe method steps
+- mention other technical features
+- define certain words and phrases
+
+## DETAILED DESCRIPTION
+
+- introduce 5G communication systems
+- motivate beam-specific operations
+- describe frequency bands for 5G communication systems
+- discuss beamforming and massive MIMO techniques
+- introduce system network improvement developments
+- describe duplex method for DL and UL signaling
+- discuss OFDM and OFDMA communication techniques
+- introduce various embodiments of the present disclosure
+- describe FIG. 1, an example wireless network
+- introduce gNB and UE components
+- describe coverage areas of gNBs
+- introduce 2D antenna arrays
+- describe codebook design and structure
+- introduce sub-chain beam codebook design and operation
+- describe FIG. 2, an example gNB
+- introduce multiple antennas and RF transceivers
+- describe TX and RX processing circuitry
+- introduce controller/processor and memory components
+- describe backhaul or network interface
+- introduce beam forming or directional routing operations
+- describe sub-chain beam codebook design and operation
+- introduce BIS algorithm and process
+- describe FIG. 3, an example UE
+- introduce antenna, RF transceiver, and TX/RX processing circuitry
+- describe microphone, speaker, and I/O interface
+- introduce processor and memory components
+- describe touchscreen and display components
+- introduce OS and applications
+- describe UL transmission on uplink channel
+- introduce I/O interface and accessories
+- describe FIG. 4A, transmit path circuitry
+- introduce channel coding and modulation block
+- describe S-to-P and IFFT blocks
+- introduce P-to-S and add cyclic prefix blocks
+- describe up-converter block
+- introduce FIG. 4B, receive path circuitry
+- describe down-converter block
+- introduce remove cyclic prefix and S-to-P blocks
+- describe Size N FFT block
+- introduce P-to-S and channel decoding and demodulation blocks
+- conclude detailed description
+- describe configurable hardware and software components
+- introduce FFT and IFFT blocks
+- describe transmit path circuitry
+- describe channel coding and modulation
+- describe serial-to-parallel conversion
+- describe IFFT operation
+- describe parallel-to-serial conversion
+- describe cyclic prefix insertion
+- describe up-conversion
+- describe receive path circuitry
+- describe down-conversion
+- describe cyclic prefix removal
+- describe serial-to-parallel conversion
+- describe FFT operation
+- describe parallel-to-serial conversion
+- describe channel decoding and demodulation
+- describe 5G communication system use cases
+- describe eMBB use case
+- describe URLL use case
+- describe mMTC use case
+- describe communication system architecture
+- describe downlink signals
+- describe uplink signals
+- describe resource allocation
+- describe antenna panel architecture
+- describe multi-beam operation
+- describe antenna block architecture
+- describe quasi co-located antenna ports
+- introduce UE configuration
+- describe TCI-State configurations
+- explain QCL relationship configuration
+- detail MAC-CE activation command
+- motivate multi-beam operation
+- describe beam training and measurement procedure
+- explain beam indication procedure
+- define antenna panel
+- describe gNB transmit beam formation
+- explain beam sweeping procedure
+- detail RS resource configuration
+- describe UE measurement report feedback
+- motivate beamforming in mmWave
+- describe antenna configuration on mobile terminal
+- detail power consumption modeling
+- illustrate fallback process for terminal
+- describe temperature check operation
+- detail LTE fallback operation
+- motivate sub-chain operation
+- describe power consumption reduction
+- explain sub-chain beam transmission
+- list notations used throughout disclosure
+- define Nch(i)
+- define NUL(i) and NDL(i)
+- define T(i)
+- define γUL(i) and γDL(i)
+- define K(i) and G(0,0)
+- illustrate downlink-uplink correspondence
+- describe beam-sweeping operation
+- introduce sub-chain beam codebook design
+- define similarity score metric
+- describe spherical coverage metric
+- describe beam correspondence spherical coverage metric
+- illustrate codebook design procedure
+- describe selection among three different design metrics
+- illustrate codebook selection based on inter-chain beam correspondence
+- describe codebook selection based on beam measurements
+- illustrate codebook selection based on beam measurements
+- describe codebook selection based on terminal beam sweeping timing
+- illustrate codebook selection based on terminal beam sweeping timing
+- introduce beam correspondence evaluation for sub-chain beam operation
+- describe beam correspondence tolerance scheme
+- describe procedure of beam correspondence tolerance scheme
+- introduce sub-chain beam operation
+- describe basic UE procedure for determining DL/UL beam operation scheme
+- describe scheme of NUL=NDL
+- describe scheme of NUL≠NDL
+- introduce PMI feedback
+- illustrate scheme selection based on PMI feedback configuration
+- describe PMI feedback configuration without PMI feedback
+- describe PMI feedback configuration with PMI feedback
+- introduce temperature control
+- describe power savings
+- describe signal strength/quality
+- describe maximum permissible exposure (MPE)
+- describe precoding matrix index (PMI) feedback
+- describe inter-chain beam correspondence requirement
+- describe sub-chain beam codebook design based on three different metrics
+- describe codebook selection based on operation requirement
+- describe codebook selection based on beam measurements and inter-chain beam correspondence
+- describe codebook selection based on terminal beam sweeping timing and inter-chain beam correspondence
+- conclude sub-chain beam operation
+- illustrate sub-chain/full-chain operation dependent on temperature
+- check temperature to determine if sub-chain should be applied
+- determine whether a temperature control trigger has been triggered
+- adopt sub-chain beam operation
+- adopt full-chain beam operation
+- reduce number of chains as temperature increases
+- check temperature periodically
+- determine whether a temperature control trigger has been triggered
+- adopt Y-chain beam
+- maintain X-chain operation
+- check temperature again
+- determine whether a temperature control has been triggered
+- reduce to a lower sub-beam chain
+- set NUL=NDL based on temperature
+- try other antenna modules or fallback to sub-6 GHz LTE or 5G connection
+- reduce NUL to the minimum and then reduce NDL
+- iteratively reduce NUL and NDL
+- reduce the number of chains according to power consumption
+- determine the number of chains based on signal strength/quality
+- determine the number of chains based on battery level
+- determine the number of chains based on maximum permissible exposure
+- determine the number of chains based on upper layer requirement
+- jointly consider temperature control, PMI feedback, signal strength, battery level, MPE, and other factors
+- check temperature, signal strength, battery level, or MPE
+- apply full-chain DL and UL operation
+- apply same number of sub chains for DL and UL
+- apply different number of chains for DL and UL
+- apply a fewer number of chain for UL than DL
+- perform antenna duty cycle reduction procedure
+- determine if RX beam is used for beam measurement and not for data reception
+- apply full-chain DL operation
+- apply smaller number of sub chains for DL
+- decide when to apply the antenna duty cycle reduction procedure according to the temperature
+- perform beam sweeping during the change of chains
+- adjust beam management parameter for sub-chain beam codebook
+

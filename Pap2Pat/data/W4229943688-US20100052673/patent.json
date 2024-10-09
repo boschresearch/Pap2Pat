@@ -1,0 +1,199 @@
+{
+    "id": "US20100052673",
+    "authors": [
+        "Piotr Tekely",
+        "Markus Weingarth",
+        "Geoffrey Bodenhausen"
+    ],
+    "title": "Efficient heteronuclear decoupling by quenching rotary resonance in solid-state NMR",
+    "date": "2009-08-19 00:00:00",
+    "abstract": "A method for heteronuclear decoupling in fast magic-angle spinning NMR measurements comprises application of a decoupling RF-pulse sequence with a decoupling-field amplitude \u03bd1I on spins of a first nucleus and of an excitation pulse on spins of a second nucleus, the sequence comprising m blocks of pulses, with m\u22674, each block comprising an N-fold repetition of a pair of pulses with pulse width \u03c4p and phases whereby \u03c4p is equal for all pulses, whereby the phase of the pulse pair of the (i+1)-th block is inverted with respect to the pulse pair of the i-th block, with i=1 . . . m\u22121 and i is an odd number, whereby the pulses within each pair are phase inverted, whereby a phase shift is carried out after each j-th block, with j is an even number. The efficiency of the inventive method compares favourably with CW, TPPM, SPINAL and XiX decoupling methods at medium and high RF amplitudes, particularly under rotary resonance conditions.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [
+                "This application claims Paris Convention priority of EP 08 014 973.5 filed Aug. 28, 2008 the entire disclosure of which is hereby incorporated by reference."
+            ],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "The invention concerns a method for heteronuclear decoupling in fast magic-angle spinning nuclear magnetic resonance measurements of solid samples.",
+                        "Efficient heteronuclear decoupling is one of the most challenging requirements that must be fulfilled to obtain high-resolution NMR spectra of solids. In powders containing directly bonded dilute spins S=13C and abundant spins I=1H, efficient proton decoupling requires a reduction of the heteronuclear dipolar interactions by no less than three orders of magnitude. In polycrystalline or amorphous samples studied by magic-angle spinning (MAS) with slow spinning frequencies \u03bdrot of a few kHz, continuous-wave (CW) irradiation of the abundant I spins with an RF amplitude (also known as nutation or Rabi frequency \u03bd1I=\u2212\u03b3B1) in the range 60<\u03bd1I<80 kHz remains the simplest way to achieve efficient heteronuclear decoupling. At higher spinning speeds, more elaborate schemes have been proposed that use \u03c0 phase shifted (XiX) [1,2] or two-pulse phase-modulated (TPPM) techniques [3]. The success of these methods has lead to renewed interest in the intricate mechanisms underlying efficient decoupling in rotating solids [4]. Several variants of TPPM [5-8] and more sophisticated decoupling schemes have been developed [9-11].",
+                        "Recent progress in the design of MAS probes and in superconducting magnet technology, fuelled by the apparently unquenchable demand for enhanced sensitivity and spectral resolution, opens the way to very fast spinning frequencies and to ever-increasing static fields. Higher spinning frequencies lead to a more effective averaging of dipolar interactions. It may be useful to recouple dipolar interactions when they give access to structural information. Many recent methodological developments deliberately exploit recoupling to drive the transfer of magnetization from one spin to another. Yet, recoupling can also occur unwittingly, so that the efficiency of heteronuclear decoupling is compromised. Once identified, it is possible to combat these deleterious effects by suitable phase-modulated schemes.",
+                        "New recoupling schemes require the design of appropriately tailored RF pulse sequences [12]. One of the simplest methods to recouple dipolar interactions in rotating solids is known as rotary resonance recoupling (R3) [13]. It consists in applying an unmodulated continuous-wave (CW) RF field with an amplitude \u03bd1 adjusted to fulfil one of the conditions \u03bd1=n\u03bdrot with n=\u00bd, 1 and 2 [13-14]. Besides the recovery of the chemical shift anisotropy (CSA) at n=1 and 2, the recoupling of homonuclear interactions can occur at n=\u00bd and 1, while heteronuclear interactions are recoupled for n=1, 2, 3, . . . . Recoupling by rotary resonance has been exploited both for structural studies and to induce a transfer of magnetization [12-19].",
+                        "However, rotary resonance can also manifest itself through a partial breakdown of the efficiency of heteronuclear dipolar decoupling [20, 21], leading to a broadening of the resonances of dilute spins S. To avoid this undesirable broadening, the nutation frequency should be at least 4 times higher than the spinning frequency, i.e., \u03bd1I>4\u03bdrot [8, 22]. Clearly, with increasing spinning speeds (up to 70 kHz nowadays), it becomes more and more challenging to avoid rotary resonance interferences. Yet, surprisingly, rotary resonance-induced line broadening seems to be perceived so far as inevitable collateral damage of the combination of decoupling and spinning.",
+                        "[30] discloses a broadband decoupling sequence designed for liquid crystals which is based on a phase modulation of pulses with phase shifts through small angles.",
+                        "[31] refers to a recoupling method and discloses a magic angle spinning experiment for separating undistorted quasi-static chemical shift powder patterns, using only 360\u00b0 pulses with suitable phases which makes the spectral patterns insensitive to pulse length errors and other imperfections.",
+                        "Object of the invention is to present a method that allows one to quench the above described type of interference to a large extent."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce heteronuclear decoupling in fast magic-angle spinning NMR",
+                        "describe challenges of efficient heteronuclear decoupling",
+                        "discuss previous methods for heteronuclear decoupling",
+                        "introduce rotary resonance recoupling and its effects",
+                        "describe limitations of previous methods under rotary resonance conditions",
+                        "motivate need for new method to quench rotary resonance interferences",
+                        "summarize recent progress in MAS probes and superconducting magnet technology",
+                        "highlight importance of recoupling schemes in NMR measurements"
+                    ],
+                    "num_characters": 4072,
+                    "outline_medium": [
+                        "introduce heteronuclear decoupling in fast magic-angle spinning NMR",
+                        "describe challenges of efficient decoupling",
+                        "discuss previous methods and limitations",
+                        "motivate need for new method"
+                    ],
+                    "outline_short": [
+                        "motivate heteronuclear decoupling in fast magic-angle spinning NMR",
+                        "discuss limitations of existing decoupling methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "This object is achieved by a method according to the independent claim.",
+                        "The inventive method for heteronuclear decoupling in fast magic-angle spinning nuclear magnetic resonance measurements, comprises application of a decoupling RF-pulse sequence with a nutation frequency \u03bd1I on spins (I) of a first kind of nucleus and of an excitation pulse on spins (S) of a second kind of nucleus, the decoupling RF-pulse sequence comprising m blocks of pulses, with m\u22674, each block comprising a N-fold repetition of a pair of pulses (\u03c4p)x(\u03c4p)\u2212x, (\u03c4p)y(\u03c4p)\u2212y, (\u03c4p)\u2212x(\u03c4p)x, or (\u03c4p)\u2212y(\u03c4p)y with pulse duration \u03c4p and phases x, \u2212x, y, \u2212y, whereby N>1 and N is an integer number, whereby \u03c4p is equal for all pulses, whereby the pulse phases of all pulse pair of the (i+1)-th block are inverted with respect to the pulse pair of the i-th block, with i=1 . . . m\u22121 and i is an odd number, whereby the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y within each pair (\u03c4p)x(\u03c4p)\u2212x, (\u03c4p)y(\u03c4p)\u2212y are phase inverted, whereby a phase shift of the pulses is carried out after each j-th block, with j<m and j is an even number.",
+                        "Because of the phase inversion of the pulse pairs of neighboring blocks the first pulse of the i-th pair and the second pulse of the (i+1)-th pair have the same phase x or y. The inventive method is not limited to phase shifts between two phases x, y. When choosing m\u22676 further phase shifts are possible.",
+                        "Preferably the pulse sequence is repeated M times, whereby M is a positive number, in particular until the signal of the spins (S) of the second nucleus has decayed. The number of possible repetitions can vary in a wide range and depends on the line width of the signal of the nucleus to be observed.",
+                        "In a highly preferred variant N is an odd number. Sequences with an odd number of repetitions of the pulse pairs show a significantly better performance.",
+                        "For practical use it is preferred to chose m=4 and j=2.",
+                        "In an advantageous variant of the inventive method the phase shift after each j-th block is different from 180\u00b0. In this case the phase shift after the j-th block is not a simple phase inversion.",
+                        "In a preferred variant the phase shift after each j-th block is equal to 90\u00b0.",
+                        "It is also possible to carry out the inventive method whereby the phase shift after each j-th block is 0\u00b0. This simplified variant can also be used with NMR apparatuses which are not capable of performing phase shifts other than 180\u00b0.",
+                        "Advantageously the pulse duration \u03c4p is optimized for the nutation frequency \u03bd1I for maximum peak height of the signals of the spins (S) of the second nucleus. The optimization is carried out during application of the decoupling RF field. The optimized value of the pulse duration \u03c4p is used during the whole sequence.",
+                        "The advantages of the inventive method are highly emphasized if the rotary resonance conditions \u03bd1I=n\u03bdrot are fulfilled, with n is an integer number, since state of the art methods show a poor efficiency under the rotary resonance conditions, whereas the inventive method results in a good performance independent of the existence of rotary resonance conditions.",
+                        "In order to reduce dissipation of power it is advantageous to choose \u03bd1I<100 kHz, preferably \u03bd1I<50 kHz. The inventive method is by far superior to state of the art methods in the range of said decoupling nutation frequencies.",
+                        "In another advantageous variant of the inventive method decoupling nutation frequencies \u03bd1I<\u03bdrot are used. Such low-amplitude decoupling can be used to alleviate interference effects."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce inventive method for heteronuclear decoupling",
+                        "describe decoupling RF-pulse sequence with nutation frequency \u03bd1I",
+                        "outline structure of pulse sequence with m blocks and N-fold repetition",
+                        "explain phase inversion of pulse pairs and phase shifts after each block",
+                        "highlight advantages of inventive method, including quenching of rotary resonance interferences",
+                        "mention preferred variants of the inventive method"
+                    ],
+                    "num_characters": 3519,
+                    "outline_medium": [
+                        "introduce inventive method for heteronuclear decoupling",
+                        "describe key features of method",
+                        "highlight advantages of method"
+                    ],
+                    "outline_short": [
+                        "introduce inventive method for heteronuclear decoupling"
+                    ]
+                },
+                {
+                    "title": "DESCRIPTION OF THE PREFERRED EMBODIMENT",
+                    "paragraphs": [
+                        "Polycrystalline powders of L-alanine and calcium formate with natural isotopic abundance, and of uniformly 13C, 15N-labelled L-alanine and L-glycine, were used without further purification. All experiments were performed on a Bruker spectrometer operating at 9.4 T (Larmor frequency 400.2 MHz for protons), equipped with a 2.5 mm triple resonance MAS probe. In all experiments, cross-polarization (CP) was used to enhance the carbon-13 magnetization, and the spinning frequency was set to \u03bdrot=30 kHz. The carrier frequency \u03bd0I of the decoupling RF field applied to the protons I was systematically placed on-resonance for the protons that are directly attached to the 13C nuclei under observation.",
+                        "Starting from the original scheme employing simple \u03c0 phase shifts [1], a new supercycled scheme aimed at attenuating rotary resonance interferences during heteronuclear decoupling has been developed. The Phase-Inverted Supercycled Sequence for Attenuation of Rotary ResOnance (PISSARRO) is composed of pulse pairs (\u03c4p)x(\u03c4p)\u2212x, (\u03c4p)\u2212x(\u03c4p)x, (\u03c4p)\u2212y(\u03c4p)y and (\u03c4p)y(\u03c4p)\u2212y each of which is repeated N times (typically N=5, see below) to form a block. In the PISSARRO scheme shown in FIG. 1 four blocks are combined, but other numbers of blocks can also be used. After the combination of phase inverted blocks (\u03c4p)x(\u03c4p)\u2212x, and (\u03c4p)\u2212x(\u03c4p)x a phase shift, for example 90\u00b0, is carried out, thereby shifting the phase from x to y (phase shifts other than 90\u00b0 are also possible). By constructing such supercycles [9, 23], rotary resonance interferences can be attenuated and higher order heteronuclear terms can be minimized [9]. The decoupling efficiency of the new scheme has been compared with well-known decoupling methods such as CW, TPPM [3], SPINAL-64 [24] and XiX [1, 2] over a wide range of nutation frequencies 40<\u03bd1I<140 kHz. For the TPPM sequence, the pulse duration \u03c4p and phase angle \u03c6 were optimized for each nutation frequency \u03bd1I, \u03c4p being varied in the vicinity of the duration of an ideal \u03c0 pulse, the phase angles \u03c6 being varied around \u00b115\u00b0. For a given nutation frequency \u03bd1I, the optimal pulse durations for the SPINAL-64 experiments were found to be close to those for TPPM. For XiX decoupling, the pulse duration \u03c4p has been optimized around the recommended condition \u03c4p=2.85\u00b7\u03c4rot [2]. For the PISSARRO sequence, the pulse duration \u03c4p was optimized for each nutation frequency \u03bd1I in the interval 0.1\u00b7\u03c4rot<\u03c4p<1.1\u00b7\u03c4rot.",
+                        "To simulate the 13C spectrum of calcium formate with XiX and PISSARRO decoupling at the n=2 rotary resonance condition, isolated 13C-1H spin pairs with an internuclear distance of 1.09 \u212b have been assumed, neglecting chemical shift anisotropies. All simulations used the SIMPSON program [25]. Powder averaging was achieved with 17 \u03b3-angles and 615 \u03b1, \u03b2-orientations using the Zaremba-Conroy-Wolfsberg (ZCW) scheme [25].",
+                        "To illustrate how rotary resonance recoupling can interfere destructively with decoupling in rapidly spinning powders, FIG. 2 shows plots of 13C signals of L-alanine in natural abundance recorded with CW decoupling as a function of the nutation frequency \u03bd1I. Besides a dramatic collapse of all peaks in the vicinity of the rotary resonance conditions \u03bd1I=n\u03bdrot with n=1 and 2, the plots reveal that the \u2018dips\u2019 around these recoupling conditions extend symmetrically over a wide range of nutation frequencies \u03bd1I. Although their breadth can be in part ascribed to the inhomogeneity of the RF-field, since rotary resonance is very sensitive to this parameter [15(a)], the fact that the dips are the broadest for the CH group must be due to the strength of the heteronuclear dipolar interactions. Note that for the methyl CH3 and carboxyl COOH groups, the two dips for n=1 and 2 are much broader than would be expected from the magnitudes of the corresponding heteronuclear couplings. This strongly suggests that homonuclear proton-proton dipolar interactions must also contribute to the breadth of these dips [21] by playing an indirect role in the recoupling conditions at n=1 and 2.",
+                        "Quenching of Interference of Rotary Resonance Recoupling (R3) with Heteronuclear Decoupling",
+                        "The efficiency of different decoupling sequences for the CH3, CH2 and CH groups of uniformly labelled alanine and glycine is shown in FIG. 3 over a wide range of nutation frequencies \u03bd1I that include rotary resonance conditions \u03bd1I=n\u03bdrot with n=2, 3 and 4. For each resonance, the signal intensities were normalized to S=1 for the PISSARRO scheme using the highest nutation frequency \u03bd1I. Besides the obvious improvement in performance of all phase-modulated schemes compared to CW decoupling, the PISSARRO sequence proved to be the most effective in quenching rotary resonance effects in the range 40<\u03bd1I<100 kHz. For CH3 and CH groups, it turned out to be the most efficient method over the whole range 40<\u03bd1I<140 kHz that has been explored. Indeed, for both CH3 and carboxyl groups (the latter not shown), the new scheme using \u03bd1I=90 kHz is more efficient than TPPM with \u03bd1I=140 kHz, and for CH3 and CH groups the new method, again using \u03bd1I=90 kHz, reaches \u02dc80% of the performance of XiX with \u03bd1I=140 kHz. For the CH2 group of glycine, the PISSARRO scheme was only inferior to the TPPM sequence in the range of 110<\u03bd1I<130 kHz, while for \u03bd1I=140 kHz the new method showed the same performance as XiX and TPPM. Obviously, a high decoupling efficiency with moderate nutation frequencies \u03bd1I<100 kHz is particularly attractive for heat-sensitive samples, such as proteins with high water and salt content, where high RF power levels can be harmful.",
+                        "FIG. 4a allows one to appreciate how sensitive various decoupling schemes are to rotary resonance interference at the n=2 condition (\u03bd1I=60 kHz and \u03bdrot=30 kHz). The relative intensities of the CH3 signals using PISSARRO, XiX, SPINAL-64, TPPM and CW decoupling are 100, 33, 27, 18 and 8% respectively. The CH3 linewidths are 83, 126, 163, 250 and 730 Hz for the five methods that have been compared. Note that areas of the signals are not conserved, since the signal amplitudes are partly transferred to modulation sidebands, as discussed below. For the CH resonance, the relative intensities in FIG. 4a are 100, 18, 14, 8 and 7%, and the corresponding linewidths are 135, 218, 285, 760 and 1250 Hz. For the CH2 resonance, the relative intensities are 100, 12, 12, 13 and 9%, and the corresponding linewidths 250, 440, 1100, 710 and 1230 Hz. Although at the n=2 rotary resonance condition, the amplitude of the CH2 signal observed with PISSARRO remains humble compared to high amplitude decoupling (the efficiency of decoupling at \u03bd1I=100 kHz is shown in FIG. 4b), the CH2 intensity could be increased by a factor of at least 8 compared to other decoupling schemes at n=2. It should be pointed out that for XiX decoupling, an improved efficiency was observed at n=2 with \u03c4p=0.85\u00b7\u03c4rot, much shorter that the recommended duration \u03c4p=2.85\u00b7\u03c4rot. However, the intensities recorded under such unusual conditions are significantly below those observed with the new decoupling scheme."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Quenching of Modulation Sidebands",
+                            "paragraphs": [
+                                "Another remarkable advantage of the new PISSARRO scheme is its unique capacity to suppress spurious modulation sidebands, which arise from the interference between the decoupling field and the modulation of dipolar couplings by MAS [3]. FIG. 5 shows spectra recorded at the n=2 rotary resonance condition, with different decoupling schemes optimized for signal intensity. The modulation sidebands show up dramatically for all known techniques except for the new scheme, which offers a remarkably clean spectrum.",
+                                "Because of the complexity of the evolution of the magnetization under phase-modulated irradiation and MAS close to the rotary resonance conditions, the combined effects of homo- and heteronuclear dipolar interactions are difficult to handle analytically. To gain a better insight into some basic features of XiX and PISSARRO decoupling, the behaviour of calcium formate Ca(CHCOO)2 with natural 13C abundance, which contains reasonably isolated 13C-1H spin pairs, has been studied by experiments and simulations. Very similar effects could be observed for the (less well isolated) CH group in uniformly 13C enriched L-alanine. As shown in FIG. 6, both the experimental and simulated spectra clearly show the dependence of the modulation sidebands that appear at \u03bdms=N(\u00b1\u03bdrot\u22131/\u03c4p) on the pulse duration \u03c4p of XiX decoupling. Thus for \u03bdrot=30 kHz and \u03c4p=31.5 \u03bcs, i.e., 1/\u03c4p=31.746 kHz, one obtains sidebands at multiples of 1.746 kHz. These modulation sidebands cannot be avoided when optimizing the \u03c4p values for the best efficiency of XiX decoupling. On the other hand, experimental and simulated spectra obtained with the PISSARRO scheme with optimized \u03c4p values are remarkably free of any spurious sideband signals. Further simulations (not shown) reveal that the magnitudes of the dipolar and CSA interactions, the proton offset as well as the decoupling frequency affect the intensity of the modulation sidebands under XiX decoupling. Extensive numerical simulations will be necessary to probe the influence of homonuclear proton-proton couplings when quenching rotary resonance effects. Indeed, the relevance of such interactions for heteronuclear decoupling in fast spinning solids has been recognized early on [1], and studied experimentally and theoretically under different conditions [1, 9, 26-28]. It is worth noting that the modulation sidebands overlap with their parent signals when \u03c4p corresponds to a full rotor period (\u03bdrot=1/\u03c4p), thus fulfilling one of the recoupling conditions for phase-modulated decoupling [1, 2].",
+                                "Finally, it should be noted that a simplified, truncated version of the PISSARRO scheme, using only the first half of the decoupling sequence in FIG. 1, without any 90\u00b0 phase shifts, also exhibits a significantly improved decoupling efficiency at n=2 compared with other pulse sequences. For 70<\u03bd1I<80 kHz, it is actually superior to the complete untruncated PISSARRO scheme.",
+                                "The supercycled PISSARRO sequences with odd numbers of pulse pairs N=3, 5, 7 . . . (usually, N=5) perform significantly better than those with even numbers N=2, 4, . . . . This appears to open further opportunities to improve the quenching of rotary resonance interferences.",
+                                "Destructive interference due to rotary resonance recoupling also occurs when very fast spinning frequencies \u03bdrot>30 kHz are combined with commonly used RF-decoupling schemes. For CH and CH2 resonances observed with spinning frequencies \u03bdrot=40 kHz, rotary resonance interferences can extend beyond \u03bd1I=200 kHz [8] while at \u03bdrot=70 kHz such effects occur at \u03bd1I=350 kHz [22]. All previously known decoupling methods therefore entail the use of ever-increasing RF-amplitudes with increasing nutation frequencies. Of course, low-amplitude decoupling with \u03bd1I<<\u03bdrot can be used to avoid interference effects. Except for CH2 resonances, this simple approach can compete in efficiency with high amplitude decoupling, provided \u03bdrot>40 kHz [8, 29].",
+                                "A novel heteronuclear decoupling scheme for fast MAS that offers improved decoupling efficiency over a wide range of nutation frequencies \u03bd1I has been introduced. The-PISSARRO decoupling sequence using a single adjustable \u03c4p parameter proved to be more effective that the XiX, TPPM, SPINAL-64 and CW methods in quenching rotary resonance interference effects. The new method yields improved resolution and sensitivity for all solid-state NMR spectra recorded with fast spinning with nutation frequencies \u03bd1I close to the n=2 rotary resonance condition. Numerical simulations of PISSARRO decoupling using an experimentally optimized pulse duration \u03c4p corroborate the experimental observation that spurious signals due to modulation sidebands are efficiently eliminated. For CH3, COOH and CH groups, PISSARRO decoupling proved to be the most efficient method over the whole range 40<\u03bd1I<140 kHz that was examined. For the most challenging CH2 groups, PISSARRO decoupling was less efficient than TPPM only in a limited range 110<\u03bd1I<130 kHz. At \u03bd1I=140 kHz the new scheme has the same performance as XiX and TPPM. Since PISARRO decoupling leads to quenching of rotary resonance interferences, one can expect an improved efficiency of low-amplitude decoupling at spinning frequencies \u03bdrot>40 kHz. The inventive method has been exemplary explained for the resonance measurements with dilute spins S=13C and abundant spins I=1H. However, the application of the inventive method is not restricted to these nuclei, but can be carried out in analogous manner using spins of other nuclei.",
+                                "The proposed a new scheme for heteronuclear decoupling designed for fast magic-angle spinning (MAS) is dubbed Phase-Inverted Supercycled Sequence for Attenuation of Rotary ResOnance (PISSARRO). Its efficiency compares favourably with CW, TPPM, SPINAL and XiX decoupling methods at medium and high nutation frequencies, particularly under conditions where the efficiency of decoupling can be affected by undesired rotary resonance effects."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce problem of modulation sidebands in NMR spectra",
+                                "describe effects of modulation sidebands on NMR spectra",
+                                "show spectra recorded with different decoupling schemes",
+                                "highlight ability of PISSARRO to suppress modulation sidebands",
+                                "study dependence of modulation sidebands on pulse duration \u03c4p",
+                                "discuss influence of homonuclear proton-proton couplings on modulation sidebands",
+                                "mention opportunities for further improvement of PISSARRO sequence",
+                                "highlight importance of quenching modulation sidebands in NMR measurements",
+                                "describe experimental setup and materials used",
+                                "introduce Phase-Inverted Supercycled Sequence for Attenuation of Rotary ResOnance (PISSARRO)",
+                                "outline advantages of PISSARRO sequence in quenching modulation sidebands"
+                            ],
+                            "num_characters": 5962,
+                            "outline_medium": [
+                                "describe modulation sidebands",
+                                "show dependence on pulse duration",
+                                "compare XiX and PISSARRO decoupling",
+                                "discuss influence of dipolar and CSA interactions",
+                                "highlight advantages of PISSARRO decoupling"
+                            ],
+                            "outline_short": [
+                                "discuss modulation sidebands in XiX decoupling",
+                                "show suppression of modulation sidebands with PISSARRO"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe experimental setup and materials used",
+                        "introduce Phase-Inverted Supercycled Sequence for Attenuation of Rotary ResOnance (PISSARRO)",
+                        "outline structure of PISSARRO sequence with four blocks",
+                        "explain phase shifts after each block",
+                        "compare decoupling efficiency of PISSARRO with other methods",
+                        "simulate 13C spectrum of calcium formate with XiX and PISSARRO decoupling",
+                        "illustrate destructive interference of rotary resonance recoupling with decoupling",
+                        "show efficiency of PISSARRO sequence in quenching rotary resonance effects",
+                        "compare performance of PISSARRO with other decoupling methods",
+                        "highlight ability of PISSARRO to suppress spurious modulation sidebands",
+                        "study dependence of modulation sidebands on pulse duration \u03c4p",
+                        "discuss influence of homonuclear proton-proton couplings on heteronuclear decoupling",
+                        "mention simplified, truncated version of PISSARRO scheme",
+                        "highlight opportunities for further improvement of PISSARRO sequence"
+                    ],
+                    "num_characters": 7059,
+                    "outline_medium": [
+                        "describe experimental setup",
+                        "introduce PISSARRO sequence",
+                        "compare PISSARRO with other decoupling methods",
+                        "illustrate quenching of rotary resonance interference",
+                        "show suppression of modulation sidebands",
+                        "discuss optimization of pulse duration",
+                        "highlight advantages of PISSARRO sequence"
+                    ],
+                    "outline_short": [
+                        "describe experimental setup and methods",
+                        "introduce Phase-Inverted Supercycled Sequence for Attenuation of Rotary ResOnance (PISSARRO)",
+                        "compare performance of PISSARRO with other decoupling methods"
+                    ]
+                }
+            ],
+            "outline_long": [
+                "claim Paris Convention priority"
+            ],
+            "num_characters": 156,
+            "outline_medium": [
+                "claim Paris Convention priority"
+            ],
+            "outline_short": [
+                "claim Paris Convention priority"
+            ]
+        }
+    ],
+    "claims": [
+        "1. A method for heteronuclear decoupling in magic-angle spinning nuclear magnetic resonance measurements of solid samples, the method comprising the steps of:\na) applying a decoupling RF-pulse sequence with a nutation frequency \u03bd1I on spins (I) of a first kind of nucleus; and\nb) applying an excitation pulse on spins (S) of a second kind of nucleus, which is different from the first kind of nucleus, wherein the decoupling RF-pulse sequence comprises m blocks of pulses, with m\u22674, each block comprising an N-fold repetition of a pair of pulses (\u03c4p)x(\u03c4p)\u2212x, (\u03c4p)y(\u03c4p)\u2212y, (\u03c4p)\u2212x(\u03c4p)x or (\u03c4p)\u2212y(\u03c4p)y, wherein \u03c4p, given in parentheses, is a pulse duration (\u03c4p) and x, \u2212x, y, \u2212y, given in subscripts, are pulse phases, wherein N>1 and N is an integer number, \u03c4p being equal for all pulses, wherein the pulse phases of all pulses in the pulse pair of the (i+1)-th block are inverted with respect to the pulse pair of the i-th block, with i=1 . . . m\u22121 and i is an odd number, the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y within each pair (\u03c4p)x(\u03c4p)\u2212x, (\u03c4p)y(\u03c4p)\u2212y being phase inverted, and a phase shift of the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y is carried out after each j-th block, with j\u2266m, wherein j is an even number.",
+        "2. The method of claim 1, wherein the decoupling RF-pulse sequence is repeated M times, where M is a positive integer number.",
+        "3. The method of claim 1, wherein N is an odd number.",
+        "4. The method of claim 1, wherein m=4 and j=2.",
+        "5. The method of claim 1, wherein the phase shift of the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y after each j-th block is different from 180\u00b0.",
+        "6. The method of claim 5, wherein the phase shift of the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y after each j-th block is equal to 90\u00b0.",
+        "7. The method of claim 5, wherein the phase shift of the pulses (\u03c4p)x, (\u03c4p)\u2212x, (\u03c4p)y, (\u03c4p)\u2212y after each j-th block is 0\u00b0.",
+        "8. The method of claim 1, wherein the pulse duration \u03c4p is optimized for the nutation frequency \u03bd1I for maximum peak height of signals of the spins (S) of the second kind of nucleus.",
+        "9. The method of claim 1, wherein rotary resonance conditions \u03bd1I=n\u03bdrot are fulfilled, where n is an integer number and \u03bdrot is the spinning frequency.",
+        "10. The method of claim 1, wherein \u03bd1I<\u03bdrot.",
+        "11. The method of claim 1, wherein \u03bd1I<100 kHz.",
+        "12. The method of claim 11, wherein \u03bd1I<50 kHz."
+    ]
+}

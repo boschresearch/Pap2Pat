@@ -1,0 +1,191 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to quantum resource estimation
+
+## SUMMARY
+
+- introduce re-parameterization method
+- summarize embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce quantum resource estimation system
+- define derivative and derivative asset
+- describe purpose of derivative pricing
+- introduce geometric Brownian motion model
+- define payoff of derivative
+- introduce equation for pricing derivative
+- describe transition probabilities of geometric Brownian motion
+- introduce parameters of geometric Brownian motion
+- describe covariance matrix of underlyings
+- introduce quantum resource estimation system components
+- describe memory and processor components
+- introduce bus component
+- describe communicative coupling of components
+- introduce external systems and devices
+- describe wired and wireless communication technologies
+- introduce computer and machine readable components
+- describe execution of operations by processor
+- introduce re-parameterization component
+- describe estimation of defined criterion
+- introduce variational component
+- describe training of variational quantum circuit
+- introduce error analysis component
+- describe calculation of errors
+- introduce application of quantum fault-tolerant operation
+- describe transformation operation
+- introduce estimation of expectation value of stochastic process
+- define correlation between assets
+- introduce risk-free rate
+- motivate simple derivatives
+- describe path-dependent derivatives
+- introduce quantum algorithms for derivative pricing
+- describe quantum resource estimation system
+- discretize derivative pricing
+- contrast price space vs. return space
+- outline core approach to derivative pricing
+- introduce quantum derivative pricing
+- motivate amplitude estimation
+- describe path-dependent derivatives
+- introduce amplitude estimation for derivative pricing
+- describe path distribution loading
+- introduce error analysis
+- analyze truncation error
+- analyze discretization error
+- introduce Riemann summation method
+- describe Riemann summation pricing algorithm
+- analyze limitations of Riemann summation
+- introduce re-parameterization method
+- describe re-parameterization method
+- analyze advantages of re-parameterization method
+- conclude quantum derivative pricing methods
+- introduce normalization factor Pmax
+- derive Pmax in return space
+- discuss limitations of Pmax
+- introduce Riemann summation error analysis
+- analyze arithmetic error
+- analyze probability density error
+- analyze rescaling error
+- bound total error in Riemann summation approach
+- provide resource estimates for basket auto-callable
+- introduce re-parameterization method
+- describe re-parameterization method pricing
+- discuss variational training of Gaussian loaders
+- analyze L∞ error in variational training
+- discuss portability to fault-tolerant regime
+- analyze total error in re-parameterization approach
+- bound arithmetic error in re-parameterization approach
+- calculate resources for auto-callable contract
+- introduce auto-callable contract
+- define auto-callable contract parameters
+- describe algorithm for auto-callable payoff implementation
+- introduce TARF
+- define TARF parameters
+- describe algorithm for TARF payoff implementation
+- discuss resource and error analysis
+- provide background on derivatives
+- introduce forwards
+- introduce options
+- discuss path-dependence and discounted payoffs
+- introduce auto-callable options
+- introduce target accrual redemption forwards
+- describe TARF payoff possibilities
+- discuss knock-out conditions for TARF
+- provide resource estimates for quantum computers
+- discuss future work on algorithms and hardware
+- highlight the significance of the subject disclosure
+- conclude the discussion on quantum resource estimation system
+- introduce Grover-Rudolph algorithm
+- limitations of Grover-Rudolph method
+- approximate method for standard normal distributions
+- insufficiency of Grover-Rudolph method
+- introduce fixed-point quantum arithmetic resources
+- describe resource estimation for arithmetic operations
+- estimate resources for addition and subtraction
+- estimate resources for multiplication
+- estimate resources for square root
+- estimate resources for logical operations
+- estimate resources for exponential and arcsine
+- introduce resource estimation considerations
+- describe conditional operations for arcsine computation
+- present Toffoli count and T-depth for arcsine computation
+- describe Ry rotations for variational preparation of Gaussians
+- outline error analysis for arithmetic operations
+- analyze error for addition and multiplication
+- analyze error for exponential computation
+- analyze error for square root and arcsine computations
+- analyze error for sine computation
+- describe Riemann summation path loading resource estimates
+- present T-depth and qubit count for Riemann summation
+- introduce importance sampling for normalization in Riemann summation
+- describe alternative probability distribution for efficient loading
+- define quantum harmonic oscillator Hamiltonian
+- introduce Gaussian function as ground state
+- describe energy based training method
+- define cost function for energy based training
+- describe variational quantum eigensolver approach
+- introduce Ry-CNOT circuit as ansatz
+- describe unitary circuit operation
+- introduce L∞ training refinements
+- describe failure of direct L∞ optimization
+- introduce re-parameterization path loading
+- describe loading gaussian states using variational method
+- describe computing asset prices using affine transformation
+- describe parallelization of asset price computation
+- describe qubit count and T-depth for path loading
+- introduce method for gaussian loader training
+- describe energy based training for gaussian loader
+- describe L∞ norm difference between prepared and target distributions
+- describe difference in energy of associate quantum harmonic oscillator model
+- define quantum resource estimation system
+- illustrate example graphs for cost function landscape
+- describe variational parameters digitization
+- illustrate example graphs for L∞ norm difference
+- describe flow diagram of computer-implemented method
+- apply quantum fault-tolerant operation
+- estimate criterion of quantum computer
+- associate with various technologies
+- provide technical improvements
+- implement using classical computing device
+- provide new approach to estimate criterion
+- employ hardware or software
+- utilize combinations of electrical components
+- perform simultaneous multi-operational execution
+- include impossible to obtain manual information
+- associate with cloud computing environment
+- employ computing resources of cloud computing environment
+- execute operations in accordance with embodiments
+- describe cloud computing characteristics
+- define service models
+- describe deployment models
+- introduce cloud computing environment
+- explain computer-implemented methodologies
+- describe operating environment
+- detail computer components
+- describe system memory and storage
+- explain software components
+- describe input/output devices
+- illustrate networked environment
+- describe cloud computing environment
+- illustrate cloud computing nodes
+- describe functional abstraction layers
+- list hardware and software components
+- describe virtualization layer
+- describe management layer
+- describe workloads layer
+- describe computer program product
+- describe computer readable storage medium
+- describe network transmission
+- describe computer readable program instructions
+- describe flowchart illustrations
+- describe block diagrams
+- describe computer-implemented methods
+- describe distributed computing environments
+- describe memory and memory units
+- describe components and systems
+- describe apparatus with specific functionality
+- describe electronic components without mechanical parts
+- describe inclusive "or" and exemplary language
+

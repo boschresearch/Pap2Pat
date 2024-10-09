@@ -1,0 +1,355 @@
+{
+    "id": "US20230267333",
+    "authors": [
+        "Mahmoud Salem",
+        "Frederick Tung",
+        "Mohamed O. Ahmed",
+        "Gabriel Oliveira"
+    ],
+    "title": "REPARAMETERIZATION OF SELECTIVE NETWORKS FOR END-TO-END TRAINING",
+    "date": "2023-02-23 00:00:00",
+    "abstract": "A method is provided for training a selective network that includes a selection node for selecting whether to make a prediction. During training, the selection node is reparameterized as a differentiable function of learnable parameters acting on noise from a base distribution. The differentiable function approximates a sampling from a categorical distribution.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present disclosure relates to artificial intelligence (AI), and more particularly to training of selective networks."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 120,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field of AI"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "In many real-world AI applications, the ability to assess model uncertainty and adapt the system behavior accordingly is critical. There is an extensive body of work that addresses the challenges of detecting when a model is highly uncertain (Gal et al., 2017, Lakshminarayanan et al., 2017, Corbi\u00e8re et al., 2019, Maddox et al., 2019, Antor\u00e1n et al., 2020, Liu et al., 2020, Dusenberry et al., 2020, Durasov et al., 2021). In practice, it is useful for an AI system to have the option of abstaining from making a prediction or decision when it detects a situation of high uncertainty. When an AI model is uncertain about its prediction, for example due to the uniqueness of the input with respect to previously observed training samples, it is often preferable for the model to abstain from making a prediction, instead of making a poor prediction that could erode user confidence or lead to harmful downstream consequences. In cases of abstention, the system may fall back on expert judgment or safe defaults. Some prior approaches to abstention policy include custom-built abstention rules (e.g., thresholding based on the softmax response (Geifman and El-Yaniv, 2017) or predictive uncertainty (Malinin et al., 2017)) applied post-hoc at inference time.",
+                        "The automatic learning of an abstention policy would free AI system developers from having to hand-craft a set of selection rules based on heuristics. Given that the system has the option to abstain, an important question to ask is how to train the model with the knowledge that it is allowed to abstain. By integrating this option into model training, the model can learn to automatically recognize and optimize for the part of the data distribution for which confident predictions can be made, instead of attempting to fit to the entire data distribution at training time and then applying hand-crafted abstention rules.",
+                        "How to train a neural network with the knowledge that it is allowed to abstain has received relatively little attention in the AI community. Geifman and El-Yaniv (2019) proposed the modern selective network (SelectiveNet), which adds a dedicated selection head to the base network. Selective networks are trained with an integrated reject option, i.e., the option to abstain from making a prediction when the model is uncertain (Geifman and El-Yaniv, 2019). The network is trained to optimize the task performance criterion, such as classification accuracy, given a target level of coverage: the proportion of input samples for which the network should make predictions. For example, a target coverage of 90% means that the network should abstain at most 10% of the time. Liu et al. (2019) proposed to add the abstention option as a separate class that can be predicted. A threshold is applied to the score of the abstention class to achieve a desired level of coverage without re-training. However, this approach can be applied to classification networks only. Huang et al. (2020) used the selective classification task to illustrate the potential of their self-adaptive training technique.",
+                        "Optimizing selective networks is challenging because of the non-differentiability of the binary selection operation (the decision of whether to select or abstain). In the conventional formulation of selective networks, the non-differentiability of selection is handled by replacing the binary selection operation with a soft relaxation. However, this approximation means that in practice the selective network does not perform selection during training, but instead assigns a soft instance weight to each training sample."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate model uncertainty",
+                        "limitations of prior approaches",
+                        "importance of abstention policy",
+                        "prior approaches to abstention policy",
+                        "limitations of prior approaches",
+                        "integrate abstention into model training",
+                        "overview of selective networks"
+                    ],
+                    "num_characters": 3597,
+                    "outline_medium": [
+                        "motivate model uncertainty",
+                        "limitations of prior approaches",
+                        "introduce selective networks"
+                    ],
+                    "outline_short": [
+                        "motivate selective networks"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "In one aspect, a method of training a selective network is provided. The selective network includes a selection node for selecting whether to make a prediction. During training, the selection node is reparameterized as a differentiable function of learnable parameters acting on noise from a base distribution. The differentiable function approximates a sampling from a categorical distribution.",
+                        "In one preferred embodiment, the base distribution is the Gumbel distribution. In one implementation of this embodiment, during at least one forward pass of the network, argmax is used to perform selection at the selection node, and during at least one backward pass of the network, a softmax approximation of the argmax is used at the selection node to compute gradients. Preferably, the softmax approximation uses temperature annealing.",
+                        "The noise may be i.i.d. noise.",
+                        "In some embodiments, the prediction is a classification. In other embodiments, the prediction is a numerical value.",
+                        "The selective network may be, for example, a convolutional network, a fully connected network, a residual network, or a recurrent network.",
+                        "In other aspects, data processing systems and computer program products for implementing the method are also described."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "summarize method of training selective network",
+                        "embodiment of method"
+                    ],
+                    "num_characters": 1245,
+                    "outline_medium": [
+                        "summarize method"
+                    ],
+                    "outline_short": [
+                        "describe selective network training method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "One aspect of the present disclosure presents selective networks that enable binary selection decisions during training while preserving end-to-end differentiability. In one preferred embodiment, the selective networks are adapted to use the Gumbel-softmax reparameterization technique (Jang et al., 2017, Maddison et al., 2017) and are referred to herein as \u201cGumbel-softmax selective networks\u201d.",
+                        "The technique for training selective networks described in the present disclosure is general and does not assume a particular prediction task (e.g. classification). It leverages a principled machine learning approach to perform selection or abstention within an end-to-end training framework. The method described herein is orthogonal to, and can be combined with, self-adaptive training technique (Huang et al., 2020). Experiments on public datasets demonstrate the potential of the selective networks described herein for both selective classification and selective regression tasks.",
+                        "A selective neural network can be defined as a pair (f,g), where f is a prediction function and g is a binary selection function, such that the output of the network is given by Geifman and El-Yaniv (2019):",
+                        "\\(\\begin{matrix}\n{{\\left( {f,g} \\right)(x)} = \\left\\{ {\\begin{matrix}\n{{{f(x)}{if}{g(x)}} = 1} \\\\\n{{{Abstain}{if}{g(x)}} = 0}\n\\end{matrix}.} \\right.} & (1)\n\\end{matrix}\\)",
+                        "Selective networks trade off prediction performance against coverage: the proportion of input samples that the network selects (i.e., makes predictions for). Given a set of m training data points {(xi, yi)}i=1m, the empirical coverage is defined as:",
+                        "\\(\\begin{matrix}\n{{{\\overset{\\hat{}}{\\phi}(g)} = {\\frac{1}{m}{\\sum_{i = 1}^{m}{g\\left( x_{i} \\right)}}}},} & (2)\n\\end{matrix}\\)",
+                        "and the empirical selective risk is defined as:",
+                        "\\(\\begin{matrix}\n{{{\\overset{\\hat{}}{r}\\left( {f,g} \\right)} = \\frac{\\frac{1}{m}{\\sum_{i = 1}^{m}{{\\ell\\left( {{f\\left( x_{i} \\right)},y_{i}} \\right)}{g\\left( x_{i} \\right)}}}}{\\overset{\\hat{}}{\\phi}(g)}},} & (3)\n\\end{matrix}\\)",
+                        "where  is a loss function such as cross-entropy for classification or mean squared error for regression. These are merely illustrative loss functions and are not intended to be limiting. The overall training objective is then a weighted combination of the empirical selective risk and a penalty term that penalizes differences between the empirical coverage and a pre-specified target coverage:",
+                        "(f,g)={circumflex over (r)}(f,g)+\u03bb\u03a8(c\u2212{umlaut over (\u03d5)}(g)),\u2003\u2003(4)",
+                        "where c is a pre-specified target coverage, \u03a8 is a penalty function (e.g. \u03a8(a)=max(0, a)2), and \u03bb is a balancing hyperparameter.",
+                        "Optimizing Eq. 4 is challenging because of the non-differentiability of the binary selection function g. Geifman and El-Yaniv (2019) handle the non-differentiability of selection by replacing the binary function g with a relaxed function g: \u2192[0,1]. While this addresses the differentiability issue, the approximation means that in practice the selective network does not perform selection during training, but instead assigns a soft instance weight to each training sample. This is not aligned with the goal of the optimization process which aims at minimizing the loss over only the selected examples to achieve a desired coverage. To address this discrepancy, the present disclosure describes a differentiable method for enabling binary selection during training while preserving end-to-end training. In one preferred embodiment, this is achieved using the Gumbel-softmax reparameterization technique."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Gumbel-Softmax Selective Networks",
+                            "paragraphs": [
+                                "The reparameterization technique (Kingma and Welling, 2014, Rezende et al., 2014) in deep learning allows replacement of a stochastic computation graph by a differentiable computation graph with learnable parameters, acting on noise from a fixed base distribution. For example, consider a stochastic node in a neural network that performs sampling from a normal distribution parameterized by mean \u03bc and standard deviation \u03c3. It is not possible to backpropagate through this stochastic node because of the non-differentiability of the sampling operation. However, this stochastic node can be replaced with a parameterized differentiable computation that takes noise as input: the computation takes input noise sampled from the standard normal (0,1), scales it by a, and then shifts the result by Since \u03bc and \u03c3 can be generated by deterministic neural network layers trainable by backpropagation, this reparameterization effectively enables sampling from an arbitrary, learnable normal distribution. To reiterate, the dependency on parameters \u03bc and \u03c3 is moved from the stochastic computation graph to a differentiable computation graph that acts on base noise.",
+                                "Revisiting the conventional selective network formulation, the reparameterization technique can be used to perform binary selection while preserving end-to-end training. The output of g can be redefined as the probability of selecting the input (i.e., the probability the network should make the prediction instead of abstaining). The selection function becomes a stochastic operator that selects the input with probability g. Similar to the example noted above, there is a stochastic node that performs a sampling operation. However, instead of sampling from a normal distribution, the node should sample from the Bernoulli distribution, Bernoulli(g).",
+                                "The Gumbel-softmax reparameterization technique (Jang et al., 2017, Maddison et al., 2017) allows reparameterization of a stochastic node that samples from a categorical distribution, again by replacing it with a differentiable function of learnable parameters, acting on noise from a base distribution. Given a categorical distribution of k events with probability \u03c01, . . . , \u03c0k, compute log \u03c01, . . . , log \u03c0k, and to each of these terms add i.i.d. noise sampled from the Gumbel distribution (Gumbel, 1954). A stochastic sample z (represented by a one-hot vector) can then be drawn by taking the argmax:",
+                                "z=one_hot(arg maxi[Gi+log \u03c0i]),\u2003\u2003(5)",
+                                "where Gi\u02dcGumbel(0,1). To allow end-to-end training, approximate the argmax with a softmax, which gives a softened vector {tilde over (z)}:",
+                                "\\(\\begin{matrix}\n{{{\\overset{\u02dc}{z}}_{i} = \\frac{\\left. {{\\exp\\left( \\left( {{\\log\\pi_{i}} + G_{i}} \\right) \\right)}/\\tau} \\right)}{\\sum_{j = 1}^{k}{\\exp\\left( {\\left( {{\\log\\pi_{j}} + G_{j}} \\right)/\\tau} \\right)}}},{{{for}i} = 1},\\ldots,k} & (6)\n\\end{matrix}\\)",
+                                "The temperature parameter \u03c4>0 determines the sharpness of the softmax, and is annealed over time towards zero to recover the argmax. As \u03c4\u2192\u221e, the Gumbel-softmax distribution converges to the uniform distribution, and as \u03c4\u21920, the Gumbel-softmax distribution converges to the categorical distribution. Therefore, the dependency on parameters \u03c01, . . . , \u03c0k has moved from the non-differentiable stochastic sampling function to a differentiable function consisting of softmax and log operations acting on base noise, which can be trained end-to-end with backpropagation.",
+                                "Combining the foregoing, binary selection is performed by applying the Gumbel-softmax reparameterization technique with \u03c01=g, \u03c02=1\u2212g. In the forward pass, the argmax form is used to perform binary selection. In the backward pass, the softmax form with temperature annealing is used to compute gradients and enable end-to-end training. This variation of using argmax in the forward pass and softmax in the backward pass, as applied in contexts other than selecvtive networks, is also known as the straight-through Gumbel-softmax (Jang et al., 2017). FIG. 1 shows a visual summary of the proposed approach.",
+                                "In FIG. 1, during a forward pass 102, input (x) 104 is fed 106 to a selection probability generator (g) 108 which generates initial probabilities of selection and abstention to which i.i.d. noise (+) is added 110 (see Eq. (5) above). Argmax 112 acts on the two probabilities, and selects whether to predict 114 or abstain 116. For a backward pass 118, a softmax 120 is calculated, with a temperature parameter (\u03c4) 122 to compute gradients. The temperature parameter (\u03c4) 122 is annealed over time such that the softmax 120 approaches the argmax 112.",
+                                "Reference is now made to FIG. 2, which is a flow chart showing an illustrative method 200 for training a selective network that includes a selection node for selecting whether to make a prediction. The prediction may be, for example, a classification or a numerical value. The selective network may be, for example, any of a convolutional network, a fully connected network, a residual network, and a recurrent network, among others.",
+                                "At step 202, the selection node is reparameterized as a differentiable function of learnable parameters acting on noise from a base distribution. As noted above, in one preferred embodiment, the base distribution is the Gumbel distribution and the noise is i.i.d. noise; other configurations are also contemplated. The differentiable function approximates a sampling from a categorical distribution.",
+                                "At step 204, the method 200 executes a forward pass of the network, using argmax to perform selection at the selection node, and then proceeds to step 206. At step 206, the method 200 executes a backward pass of the network, using a softmax approximation of the argmax at the selection node to compute gradients. In one preferred embodiment, the softmax approximation uses temperature annealing.",
+                                "At step 208, the method 200 tests whether training is complete, according to a predetermined criteria, for example a maximum number of epochs (iterations). If the training is complete (\u201cyes\u201d at step 208), the method 200 ends, although further actions, such as tuning or testing, may then be undertaken. If training is not complete (\u201cno\u201d at step 208), the method 200 returns to step 204 for another forward pass. Thus, there is at least one forward pass and at least one backward pass; in most embodiments there will be many forward and backward passes."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Gumbel-softmax reparameterization",
+                                "motivate Gumbel-softmax reparameterization",
+                                "redefine selection function",
+                                "apply Gumbel-softmax reparameterization",
+                                "derive Gumbel-softmax distribution",
+                                "approximate argmax with softmax",
+                                "discuss temperature annealing",
+                                "combine Gumbel-softmax with selective networks",
+                                "illustrate proposed approach",
+                                "describe forward pass",
+                                "describe backward pass",
+                                "summarize Gumbel-softmax selective networks"
+                            ],
+                            "num_characters": 6372,
+                            "outline_medium": [
+                                "explain reparameterization technique",
+                                "apply reparameterization to selective networks",
+                                "describe Gumbel-softmax reparameterization",
+                                "illustrate Gumbel-softmax reparameterization",
+                                "summarize proposed approach",
+                                "illustrate method for training selective network"
+                            ],
+                            "outline_short": [
+                                "motivate Gumbel-softmax reparameterization",
+                                "describe Gumbel-softmax technique",
+                                "apply Gumbel-softmax to selective networks"
+                            ]
+                        },
+                        {
+                            "title": "Experimental Results",
+                            "paragraphs": [
+                                "This section describes a set of experiments used to validate the effectiveness and generalization of Gumbel-softmax selective networks according to the present disclosure.",
+                                "**Baselines**",
+                                "Baselines are grouped into two categories: techniques that are applicable to general purpose selective networks (i.e., unconstrained to a particular prediction task) and techniques that are specialized to classification networks. While the goal of the present disclosure is to develop a technique for training general purpose selective networks, for completeness the latter category of baselines is included due to their state-of-the-art performance on selective classification benchmarks.",
+                                "**General Purpose Selective Networks**",
+                                "One direct comparison is with conventional selective network training (Geifman and El-Yaniv, 2019), which is described above. This baseline is denoted as SelectiveNet in the experimental results. A comparison is also drawn with MC-dropout (Gal and Ghahramani, 2016), which estimates model uncertainty by performing multiple forward passes with dropout.",
+                                "**Specialized Selective Networks**",
+                                "On the selective classification benchmarks, baselines include Deep Gamblers (Liu et al., 2019), as well as Softmax Response (Geifman and El-Yaniv, 2017), which uses the maximum softmax output value as a measure of the confidence of a classification network.",
+                                "**Datasets**",
+                                "CIFAR-10 (Krizhevsky, 2009) is a standard benchmark in selective networks evaluation (Geifman and El-Yaniv, 2019, Liu et al., 2019, Huang et al., 2020). This image classification benchmark consists of 32\u00d732 resolution RGB images covering ten object classes. The training set contains 50,000 images and the testing set contains 10,000 images.",
+                                "Cats vs. Dogs (Elson et al., 2007) is an additional image classification benchmark that is used to evaluate selective networks (Geifman and El-Yaniv, 2019, Liu et al., 2019). It consists of 25,000 images of cats and dogs with an even split between classes. This dataset does not specify a standard training-testing split. The publicly released training-testing split of (Liu et al., 2019), which consists of 80% of the images for training and 20% for testing, was adopted.",
+                                "ImageNet-100 (Tian et al., 2019) is a 100-class subset of ImageNet. Details on its construction can be found in the supplementary of Tian et al., 2019.",
+                                "Concrete Compressive Strength (Yeh, 1998) is a regression dataset from the UCI Machine Learning Repository (Dua and Graff, 2017) that is used in the experimental evaluation of SelectiveNet (Geifman and El-Yaniv, 2019). It consists of 1,030 instances and the task is to predict the compressive strength given eight numerical input variables. As there is no standard training-testing split, the dataset was randomly split into 60% for training, 20% for held-out validation, and 20% for testing. After tuning hyperparameters on the validation set, the final models were trained on the combined training-validation set and the results were generated on the testing set.",
+                                "California Housing (Pace and Barry, 1997) is an additional regression dataset. It consists of 20,640 instances and the task is to predict median housing values of California districts given eight input features. As there is no standard training-testing split, the dataset was randomly split into 80% for training (16,512 instances) and 20% for testing (4,128 instances). For hyperparameter searching purposes, the training set was further divided into 80% training and 20% validation. After hyperparameter exploration, the combined training-validation set is used to train the final models for evaluation on the testing set.",
+                                "Ames Housing (De Cock, 2011) is a house price regression dataset featuring houses sold in Ames, Iowa during the period from 2006 to 2010. The dataset has 1,460 instances and the goal is to predict the sale price of the house. The dataset includes 79 features divided into categorical and numerical. Columns with more than 80% of samples missing, which are Alley, PoolQC, MiscFeature and Fence, were dropped. GarageYrBlt was also removed due to high redundancy to the MasVnrArea feature. The training set contains 1,022 instances and the testing set contains 438 instances. For hyperparameter searching purposes the training set is further divided into 70% training and 30% validation. After hyperparameter exploration the entire 1022/438 training/testing set is used to generate the final results. The dataset contains a number of missing values in both its numerical and categorical features. In order to replace the missing values, mean value imputation is performed along each numerical column and most frequent value for each categorical column. Additionally, categorical data was also converted to one-hot encoding representation to obtain the final configuration used during experiments.",
+                                "**Implementation Details**",
+                                "Following the recommendation in Geifman and El-Yaniv (2019), an auxiliary prediction head was used as a regularizer during training. The auxiliary head is discarded after training and there is no additional overhead at inference time.",
+                                "In the classification experiments for CIFAR-10 and Cats vs. Dogs, Geifman and El-Yaniv (2019) was followed by adjusting the VGG-16 architecture to small datasets and image sizes as proposed in Liu and Deng, 2015 by using one fully connected layer with 512 neurons instead of two, adding batch normalization and dropout. In the classification experiments for ImageNet-100, the ResNet-34 architecture (He et al., 2016) was used. Standard data augmentation was used in all classification experiments consisting of horizontal flips, vertical and horizontal shifts, and rotations. Stochastic gradient descent (SGD) was used for optimization with momentum 0.9 and starting with initial learning rate of 0.1. The training schedule was lengthened by a factor of two, applying a learning rate decay of 0.5 every 50 epochs for CIFAR-10 and Cats vs. Dogs and every 100 epochs for ImageNet-100 for a total of 600 epochs. The Gumbel-softmax temperature \u03c4 was initialized to 5 and annealed using multi-step decay by the rate of 0.985 every 5 epochs.",
+                                "In the regression experiments, multilayer perceptron (MLP) backbones were adopted. For the Concrete Compressive Strength (CCS) dataset, a single hidden layer MLP with 64 neurons with ReLU and batch normalization was utilized, following the same setting from Geifman and El-Yaniv (2019). The California Housing dataset backbone is composed of a MLP with two hidden layers of 100 neurons each with ReLU. For the Ames Housing dataset, a two hidden layer MLP with 100 neurons with ReLU and batch normalization was used. The networks were trained for 800 epochs for the CCS and Ames datasets and for 1000 epochs for the California Housing dataset. All datasets used adam as optimizer, with initial learning rate of 0.007 and decay at epochs 400, 500, 600, 700 with a factor of 0.5 for the CCS dataset, an initial learning rate of 0.007 and decay at epochs 250, 500, 750 with a factor of 0.1 for the California Housing dataset, and an initial learning rate of 0.007 and decay at epochs 150, 250 with a factor of 0.1 for the Ames Housing dataset. The Gumbel-softmax temperature \u03c4 was initialized to 30 and annealed using multi-step decay by the rate of 0.985 every 5 epochs for the Concrete Compressive Strength and California Housing datasets. The Ames Housing dataset used an initial \u03c4 of 10 and annealed \u03c4 using multi-step decay by the rate of 0.995 every 5 epochs.",
+                                "**Coverage Calibration**",
+                                "Selective networks trained at the same level of target coverage may differ in the actual coverage achieved in evaluation (i.e., the number of predictions made on the test set) due to distribution shift or random train-test variations. For a fair comparison, coverage calibration (Geifman and El-Yaniv, 2019, Liu et al., 2019) was applied to equalize the number of test predictions across all approaches. For example, when evaluating at a coverage level of 70%, the error metrics over the 70% most confident predictions (highest g values) among the test samples were computed.",
+                                "However, this evaluation protocol has a shortcoming in that it does not reflect how a selective network operates in a real-world system. In practice, a selective model makes binary selection decisions to achieve an empirical coverage that ideally matches the target coverage. Therefore, additional results are reported without calibration in the regression experiments for the Concrete Compressive Strength and California Housing datasets (in the classification experiments, the calibrated results reported in Geifman and El-Yaniv (2019) are directly quoted as the reported results were not reproduced in the experiments).",
+                                "**Selective Classification Results**",
+                                "Table 1 summarizes the experimental results on the CIFAR-10 and Cats vs. Dogs classification benchmarks. Table 1 compares classification error rates at the same coverage levels considered by previous work (Geifman and El-Yaniv, 2019, Liu et al., 2019). Results on both datasets are averaged over five trials.",
+                                "Compared with conventional selective networks, Gumbel-softmax selective networks obtain an improvement in classification accuracy at higher coverage levels on CIFAR-10 (80%+coverage) and Cats vs. Dogs (85%+coverage). While improvements at lower coverage levels were not observed, this is not considered probative because strict comparisons on these datasets below 80% coverage are difficult due to the very low error rates (Liu et al., 2019). The performance of Gumbel-softmax selective networks approaches the state-of-the-art Deep Gamblers: in many of the evaluated coverage levels, the difference in accuracy between Gumbel-softmax selective networks and Deep Gamblers is within one standard deviation. This result supports the utility of Gumbel-softmax selective networks because Deep Gamblers is tailored to classification tasks, while Gumbel-softmax selective networks are more generally applicable to other predictive tasks, such as regression, which is discussed in the next section.",
+                                "Table 2 summarizes the experimental results on the ImageNet-100 dataset, averaged over five trials following Feng et al., 2022 (which is explicitly denied to be prior art). Gumbel-softmax selective networks modestly outperform SelectiveNets at higher coverage levels; both methods perform comparably at lower coverage levels.",
+                                "**Selective Regression Results**",
+                                "Tables 3, 4, 5, 6 and 7 summarize the experimental results for Gumbel-softmax selective networks and SelectiveNets on the regression datasets, averaged over five trials. All models were trained from scratch, and for a fair comparison all shared hyperparameters and train budgets are the same. Regression error metrics are reported for coverages ranging from 100% to 50%. In Tables 4 and 6, empirical coverage refers to the actual coverage achieved on the test samples. Mean squared error is computed over the selected (non-abstained) test samples.",
+                                "On the Concrete Compressive Strength dataset, the results for SelectiveNet are better than those reported in the original paper (Geifman and El-Yaniv, 2019) as it was found that applying a learning rate decay schedule, instead of a constant learning rate as in Geifman and El-Yaniv (2019), significantly boosts performance. Nevertheless, Gumbel-softmax selective networks outperform SelectiveNets at every coverage level on this dataset (Table 3). In the non-calibrated results (Table 4), it is observed that Gumbel-softmax selective networks are also more consistent in obtaining actual (empirical) coverages that match the target coverages without the need for calibration. This translates to more reliable abstention performance in operation.",
+                                "Calibrated and non-calibrated results for the California Housing dataset are shown in Tables 5 and 6, respectively. Table 5 includes two metrics: mean absolute error and mean squared error. For both metrics, Gumbel-softmax selective networks outperform SelectiveNets at every coverage level. The non-calibrated results (Table 6) show that Gumbel-softmax selective networks provide a better matching between empirical and target coverages for all tested coverages, in line with the observations on the Concrete Compressive Strength dataset. Again, this translates to more reliable abstention performance in operation.",
+                                "Table 7 shows results for the Ames Housing dataset. Again, Gumbel-softmax selective networks outperform SelectiveNets at every coverage level.",
+                                "With the increasing integration of AI techniques in real-world systems, it has become more and more important to consider how models are integrated with existing infrastructure, and in particular how to train models so that they are aware of their operational context. AI models are often deployed not in isolation, but as part of a larger system, with non-AI logic, legacy processes, or humans in the loop. In operational contexts where the system has the option of falling back on supporting processes when the AI model is uncertain, the option to abstain should ideally be integrated directly in the AI model training\u2014the model should be aware of this system option. The present disclosure enables the abstention option to be directly integrated into training in a rigourous way.",
+                                "As can be seen from the above description, the selective network training technology described herein represents significantly more than merely using categories to organize, store and transmit information and organizing information through mathematical correlations. The selective network training technology is in fact an improvement to machine learning, as it allows binary selection during training while preserving end-to-end training. This facilitates improvements in training by improving the optimization of the weighted combination of the empirical selective risk and the penalty term that penalizes differences between the empirical coverage and a pre-specified target coverage. Moreover, the selective network training technology is specifically directed to a computer problem, namely challenges in training of selective networks, and specifically improves the performance of a computer system when carrying out training of a selective network. The present technology is therefore confined to machine learning applications, and still more particularly to selective networks.",
+                                "The present technology may be embodied within a system, a method, a computer program product or any combination thereof. The computer program product may include a computer readable storage medium or media having computer readable program instructions thereon for causing a processor to carry out aspects of the present technology. The computer readable storage medium can be a tangible device that can retain and store instructions for use by an instruction execution device. The computer readable storage medium may be, for example, but is not limited to, an electronic storage device, a magnetic storage device, an optical storage device, an electromagnetic storage device, a semiconductor storage device, or any suitable combination of the foregoing.",
+                                "A non-exhaustive list of more specific examples of the computer readable storage medium includes the following: a portable computer diskette, a hard disk, a random access memory (RAM), a read-only memory (ROM), an erasable programmable read-only memory (EPROM or Flash memory), a static random access memory (SRAM), a portable compact disc read-only memory (CD-ROM), a digital versatile disk (DVD), a memory stick, a floppy disk, a mechanically encoded device such as punch-cards or raised structures in a groove having instructions recorded thereon, and any suitable combination of the foregoing. A computer readable storage medium, as used herein, is not to be construed as being transitory signals per se, such as radio waves or other freely propagating electromagnetic waves, electromagnetic waves propagating through a waveguide or other transmission media (e.g., light pulses passing through a fiber-optic cable), or electrical signals transmitted through a wire.",
+                                "Computer readable program instructions described herein can be downloaded to respective computing/processing devices from a computer readable storage medium or to an external computer or external storage device via a network, for example, the Internet, a local area network, a wide area network and/or a wireless network. The network may comprise copper transmission cables, optical transmission fibers, wireless transmission, routers, firewalls, switches, gateway computers and/or edge servers. A network adapter card or network interface in each computing/processing device receives computer readable program instructions from the network and forwards the computer readable program instructions for storage in a computer readable storage medium within the respective computing/processing device.",
+                                "Computer readable program instructions for carrying out operations of the present technology may be assembler instructions, instruction-set-architecture (ISA) instructions, machine instructions, machine dependent instructions, microcode, firmware instructions, state-setting data, or either source code or object code written in any combination of one or more programming languages, including an object oriented programming language or a conventional procedural programming language. The computer readable program instructions may execute entirely on the user's computer, partly on the user's computer, as a stand-alone software package, partly on the user's computer and partly on a remote computer or entirely on the remote computer or server. In the latter scenario, the remote computer may be connected to the user's computer through any type of network, including a local area network (LAN) or a wide area network (WAN), or the connection may be made to an external computer (for example, through the Internet using an Internet Service Provider). In some embodiments, electronic circuitry including, for example, programmable logic circuitry, field-programmable gate arrays (FPGA), or programmable logic arrays (PLA) may execute the computer readable program instructions by utilizing state information of the computer readable program instructions to personalize the electronic circuitry, in order to implement aspects of the present technology.",
+                                "Aspects of the present technology have been described with reference to flowchart illustrations and/or block diagrams of methods, apparatus (systems) and computer program products according to various embodiments. In this regard, the flowchart and block diagrams in the Figures illustrate the architecture, functionality, and operation of possible implementations of systems, methods and computer program products according to various embodiments of the present technology. For instance, each block in the flowchart or block diagrams may represent a module, segment, or portion of instructions, which comprises one or more executable instructions for implementing the specified logical function(s). It should also be noted that, in some alternative implementations, the functions noted in the block may occur out of the order noted in the Figures. For example, two blocks shown in succession may, in fact, be executed substantially concurrently, or the blocks may sometimes be executed in the reverse order, depending upon the functionality involved. Some specific examples of the foregoing may have been noted above but any such noted examples are not necessarily the only such examples. It will also be noted that each block of the block diagrams and/or flowchart illustration, and combinations of blocks in the block diagrams and/or flowchart illustration, can be implemented by special purpose hardware-based systems that perform the specified functions or acts, or combinations of special purpose hardware and computer instructions.",
+                                "It also will be understood that each block of the flowchart illustrations and/or block diagrams, and combinations of blocks in the flowchart illustrations and/or block diagrams, can be implemented by computer program instructions. These computer readable program instructions may be provided to a processor of a general purpose computer, special purpose computer, or other programmable data processing apparatus to produce a machine, such that the instructions, which execute via the processor of the computer or other programmable data processing apparatus, create means for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.",
+                                "These computer readable program instructions may also be stored in a computer readable storage medium that can direct a computer, other programmable data processing apparatus, or other devices to function in a particular manner, such that the instructions stored in the computer readable storage medium produce an article of manufacture including instructions which implement aspects of the functions/acts specified in the flowchart and/or block diagram block or blocks. The computer readable program instructions may also be loaded onto a computer, other programmable data processing apparatus, or other devices to cause a series of operational steps to be performed on the computer, other programmable apparatus or other devices to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide processes for implementing the functions/acts specified in the flowchart and/or block diagram block or blocks.",
+                                "An illustrative computer system in respect of which the technology herein described may be implemented is presented as a block diagram in FIG. 3. The illustrative computer system is denoted generally by reference numeral 300 and includes a display 302, input devices in the form of keyboard 304A and pointing device 304B, computer 306 and external devices 308. While pointing device 304B is depicted as a mouse, it will be appreciated that other types of pointing device, or a touch screen, may also be used.",
+                                "The computer 306 may contain one or more processors or microprocessors, such as a central processing unit (CPU) 310. The CPU 310 performs arithmetic calculations and control functions to execute software stored in an internal memory 312, preferably random access memory (RAM) and/or read only memory (ROM), and possibly additional memory 314. The additional memory 314 may include, for example, mass memory storage, hard disk drives, optical disk drives (including CD and DVD drives), magnetic disk drives, magnetic tape drives (including LTO, DLT, DAT and DCC), flash drives, program cartridges and cartridge interfaces such as those found in video game devices, removable memory chips such as EPROM or PROM, emerging storage media, such as holographic storage, or similar storage media as known in the art. This additional memory 314 may be physically internal to the computer 306, or external as shown in FIG. 3, or both.",
+                                "The computer system 300 may also include other similar means for allowing computer programs or other instructions to be loaded. Such means can include, for example, a communications interface 316 which allows software and data to be transferred between the computer system 300 and external systems and networks. Examples of communications interface 316 can include a modem, a network interface such as an Ethernet card, a wireless communication interface, or a serial or parallel communications port. Software and data transferred via communications interface 316 are in the form of signals which can be electronic, acoustic, electromagnetic, optical or other signals capable of being received by communications interface 316. Multiple interfaces, of course, can be provided on a single computer system 300.",
+                                "Input and output to and from the computer 306 is administered by the input/output (I/O) interface 318. This I/O interface 318 administers control of the display 302, keyboard 304A, external devices 308 and other such components of the computer system 300. The computer 306 also includes a graphical processing unit (GPU) 320. The latter may also be used for computational purposes as an adjunct to, or instead of, the (CPU) 310, for mathematical calculations.",
+                                "The external devices 308 include a microphone 326, a speaker 328 and a camera 330. Although shown as external devices, they may alternatively be built in as part of the hardware of the computer system 300.",
+                                "The various components of the computer system 300 are coupled to one another either directly or by coupling to suitable buses.",
+                                "The term \u201ccomputer system\u201d, \u201cdata processing system\u201d and related terms, as used herein, is not limited to any particular type of computer system and encompasses servers, desktop computers, laptop computers, networked mobile wireless telecommunication computing devices such as smartphones, tablet computers, as well as other types of computer systems.",
+                                "Thus, computer readable program code for implementing aspects of the technology described herein may be contained or stored in the memory 312 of the computer 306, or on a computer usable or computer readable medium external to the computer 306, or on any combination thereof.",
+                                "Finally, the terminology used herein is for the purpose of describing particular embodiments only and is not intended to be limiting. As used herein, the singular forms \u201ca\u201d, \u201can\u201d and \u201cthe\u201d are intended to include the plural forms as well, unless the context clearly indicates otherwise. It will be further understood that the terms \u201ccomprises\u201d and/or \u201ccomprising,\u201d when used in this specification, specify the presence of stated features, integers, steps, operations, elements, and/or components, but do not preclude the presence or addition of one or more other features, integers, steps, operations, elements, components, and/or groups thereof.",
+                                "The corresponding structures, materials, acts, and equivalents of all means or step plus function elements in the claims below are intended to include any structure, material, or act for performing the function in combination with other claimed elements as specifically claimed. The description has been presented for purposes of illustration and description, but is not intended to be exhaustive or limited to the form disclosed. Many modifications and variations will be apparent to those of ordinary skill in the art without departing from the scope of the claims. The embodiment was chosen and described in order to best explain the principles of the technology and the practical application, and to enable others of ordinary skill in the art to understand the technology for various embodiments with various modifications as are suited to the particular use contemplated."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe experimental setup",
+                                "introduce baselines",
+                                "categorize baselines",
+                                "describe general purpose selective networks",
+                                "introduce SelectiveNet",
+                                "introduce MC-dropout",
+                                "describe specialized selective networks",
+                                "introduce Deep Gamblers",
+                                "introduce Softmax Response",
+                                "describe datasets",
+                                "introduce CIFAR-10",
+                                "describe CIFAR-10 dataset",
+                                "introduce Cats vs. Dogs",
+                                "describe Cats vs. Dogs dataset",
+                                "introduce ImageNet-100",
+                                "describe ImageNet-100 dataset",
+                                "introduce Concrete Compressive Strength",
+                                "describe Concrete Compressive Strength dataset",
+                                "introduce California Housing",
+                                "describe California Housing dataset",
+                                "introduce Ames Housing",
+                                "describe Ames Housing dataset",
+                                "describe implementation details",
+                                "introduce auxiliary prediction head",
+                                "describe architecture adjustments",
+                                "describe data augmentation",
+                                "describe optimization",
+                                "describe Gumbel-softmax temperature",
+                                "describe coverage calibration",
+                                "introduce coverage calibration",
+                                "describe evaluation protocol",
+                                "describe selective classification results",
+                                "introduce Table 1",
+                                "describe results on CIFAR-10",
+                                "describe results on Cats vs. Dogs",
+                                "introduce Table 2",
+                                "describe results on ImageNet-100",
+                                "describe selective regression results",
+                                "introduce Tables 3-7",
+                                "describe results on Concrete Compressive Strength",
+                                "describe results on California Housing",
+                                "describe results on Ames Housing",
+                                "discuss importance of abstention",
+                                "discuss integration with existing infrastructure",
+                                "discuss significance of selective network training",
+                                "describe computer program product",
+                                "describe computer readable storage medium",
+                                "describe network adapter card",
+                                "describe computer readable program instructions",
+                                "describe electronic circuitry",
+                                "describe flowchart illustrations",
+                                "describe block diagrams",
+                                "describe computer system"
+                            ],
+                            "num_characters": 26730,
+                            "outline_medium": [
+                                "introduce experimental setup",
+                                "categorize baselines",
+                                "describe general purpose selective networks",
+                                "describe specialized selective networks",
+                                "introduce datasets",
+                                "describe CIFAR-10 dataset",
+                                "describe Cats vs. Dogs dataset",
+                                "describe ImageNet-100 dataset",
+                                "describe Concrete Compressive Strength dataset",
+                                "describe California Housing dataset",
+                                "describe Ames Housing dataset",
+                                "outline implementation details",
+                                "describe auxiliary prediction head",
+                                "describe architecture adjustments",
+                                "describe data augmentation",
+                                "describe optimization",
+                                "describe Gumbel-softmax temperature",
+                                "outline coverage calibration",
+                                "describe selective classification results",
+                                "present results on CIFAR-10 and Cats vs. Dogs",
+                                "present results on ImageNet-100",
+                                "outline selective regression results",
+                                "present results on Concrete Compressive Strength",
+                                "present results on California Housing",
+                                "present results on Ames Housing",
+                                "discuss implications of results"
+                            ],
+                            "outline_short": [
+                                "introduce experimental setup",
+                                "describe baselines for general purpose selective networks",
+                                "describe baselines for specialized selective networks",
+                                "introduce datasets used in experiments",
+                                "describe implementation details for classification experiments",
+                                "describe implementation details for regression experiments",
+                                "explain coverage calibration",
+                                "present selective classification results",
+                                "present selective regression results for Concrete Compressive Strength dataset",
+                                "present selective regression results for California Housing dataset",
+                                "present selective regression results for Ames Housing dataset",
+                                "discuss importance of integrating abstention option into AI model training",
+                                "describe potential applications and embodiments of the technology"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce selective networks",
+                        "motivate selective networks",
+                        "define selective neural network",
+                        "derive empirical coverage and selective risk",
+                        "formulate training objective",
+                        "discuss limitations of existing approaches"
+                    ],
+                    "num_characters": 3518,
+                    "outline_medium": [
+                        "introduce selective networks",
+                        "define selective neural network",
+                        "motivate Gumbel-softmax reparameterization"
+                    ],
+                    "outline_short": [
+                        "introduce selective networks"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of training a selective network, wherein:\nthe selective network includes a selection node for selecting whether to make a prediction;\nwherein:\nduring training, the selection node is reparameterized as a differentiable function of learnable parameters acting on noise from a base distribution;\nwherein the differentiable function approximates a sampling from a categorical distribution.",
+        "2. The method of claim 1, wherein the base distribution is the Gumbel distribution.",
+        "3. The method of claim 2, further comprising:\nduring at least one forward pass of the network, using argmax to perform selection at the selection node; and\nduring at least one backward pass of the network, using a softmax approximation of the argmax at the selection node to compute gradients.",
+        "4. The method of claim 3, wherein the softmax approximation uses temperature annealing.",
+        "5. The method of claim 1, wherein the noise is i.i.d. noise.",
+        "6. The method of claim 1, wherein the prediction is a classification.",
+        "7. The method of claim 1, wherein the prediction is a numerical value.",
+        "8. The method of claim 1, wherein the selective network is one of a convolutional network, a fully connected network, a residual network, and a recurrent network.",
+        "9. A data processing system, comprising;\nat least one processor;\na memory coupled to the at least one processor, the memory containing instructions which, when executed by the at least one processor, cause the at least one processor to:\ntrain a selective network, wherein the selective network includes a selection node for selecting whether to make a prediction; and\nduring training, reparameterize the selection node as a differentiable function of learnable parameters acting on noise from a base distribution, wherein the differentiable function approximates a sampling from a categorical distribution.",
+        "10. The data processing system of claim 9, wherein the base distribution is the Gumbel distribution.",
+        "11. The data processing system of claim 10, wherein the instructions, when executed by the at least one processor, further cause the at least one processor to:\nduring at least one forward pass of the network, use argmax to perform selection at the selection node; and\nduring at least one backward pass of the network, use a softmax approximation of the argmax at the selection node to compute gradients.",
+        "12. The data processing system of claim 11, wherein the softmax approximation uses temperature annealing.",
+        "13. The data processing system of claim 9, wherein the noise is i.i.d. noise.",
+        "14. The data processing system of claim 9, wherein the prediction is a classification.",
+        "15. The data processing system of claim 9, wherein the prediction is a numerical value.",
+        "16. The data processing system of claim 9, wherein the selective network is one of a convolutional network, a fully connected network, a residual network, and a recurrent network.",
+        "17. A computer program product comprising a non-transitory tangible computer-readable medium having computer-readable instructions embodied therewith, wherein the instructions, when executed by at least one processor, cause the at least one processor to:\ntrain a selective network, wherein the selective network includes a selection node for selecting whether to make a prediction; and\nduring training, reparameterize the selection node as a differentiable function of learnable parameters acting on noise from a base distribution, wherein the differentiable function approximates a sampling from a categorical distribution.",
+        "18. The computer program product of claim 17, wherein the base distribution is the Gumbel distribution.",
+        "19. The computer program product of claim 18, wherein the instructions, when executed by the at least one processor, cause the at least one processor to:\nduring at least one forward pass of the network, use argmax to perform selection at the selection node; and\nduring at least one backward pass of the network, use a softmax approximation of the argmax at the selection node to compute gradients.",
+        "20. The computer program product of claim 19, wherein the softmax approximation uses temperature annealing.",
+        "21. The computer program product of claim 17, wherein the noise is i.i.d. noise.",
+        "22. The computer program product of claim 17, wherein the prediction is a classification.",
+        "23. The computer program product of claim 17, wherein the prediction is a numerical value.",
+        "24. The computer program product of claim 17, wherein the selective network is one of a convolutional network, a fully connected network, a residual network, and a recurrent network."
+    ]
+}

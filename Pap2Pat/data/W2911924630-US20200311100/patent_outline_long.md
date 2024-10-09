@@ -1,0 +1,267 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce data-visualization systems
+- limitations of topological visualizations
+- limitations of client-device interactions
+- limitations of fixed scale topological visualizations
+- limitations of Multiscale-Mapper algorithm
+
+## SUMMARY
+
+- introduce varied-scale-topological construct
+- generate initial and local topological constructs
+- combine constructs to form varied-scale-topological construct
+- render varied-scale-topological construct
+
+## DETAILED DESCRIPTION
+
+- introduce topological data visualization system
+- generate varied-scale-topological construct
+- combine initial and local topological constructs
+- select region for magnification
+- determine relative densities of multidimensional data
+- generate initial topological construct
+- select region for magnification
+- generate local topological construct
+- combine local and initial topological constructs
+- render varied-scale-topological construct
+- apply Mapper algorithm
+- generate nerve of initial cover
+- select region for magnification
+- identify edges connecting nodes
+- apply clustering algorithm
+- determine contractibility of nodes and edges
+- select region for magnification
+- generate multiple topological constructs
+- determine component persistence
+- select region for magnification
+- generate local topological construct
+- generate local cover
+- identify topological scale
+- combine local and initial topological constructs
+- generate nerve for new cover
+- identify nodes in different regions
+- determine edges connecting nodes
+- render varied-scale-topological construct
+- overcome technical deficiencies
+- improve accuracy and precision
+- improve flexibility
+- simplify and automate client-device interactions
+- define multidimensional data
+- define topological construct
+- define topological scale
+- define cover
+- define lens function
+- define varied-scale-topological construct
+- introduce topological data visualization system
+- describe system components
+- explain analytics database
+- describe analytics system
+- illustrate topological data visualization system
+- generate initial topological construct
+- select region for magnification
+- generate local topological construct
+- combine local and initial constructs
+- render varied-scale-topological construct
+- describe varied-scale-topological construct
+- illustrate varied-scale-topological construct
+- generate initial topological construct
+- select region for magnification
+- generate local topological construct
+- combine local and initial constructs
+- render varied-scale-topological construct
+- describe varied-scale-topological construct
+- introduce Mapper algorithm
+- explain open cover
+- describe simplicial complex
+- explain nerve
+- describe Nerve Theorem
+- explain homotopy equivalence
+- describe point cloud
+- explain paracompact space
+- describe topological data analysis
+- apply Mapper algorithm
+- project point cloud
+- generate cover
+- modify cover
+- generate pullback cover
+- describe pullback cover
+- explain lens function
+- describe image space
+- conclude topological data visualization system
+- define topological data visualization system
+- generate modified pullback cover
+- compute nerve for modified pullback cover
+- render 1-dimensional skeleton in graph form
+- apply Mapper algorithm
+- generate initial topological construct
+- partition lower-dimensional-image space
+- generate local cover
+- refine bin sections into bin subsections
+- generate local Mapper construct
+- partition another selected region
+- generate another local cover
+- generate another local Mapper construct
+- illustrate partitioning of initial lower-dimensional-image space
+- refine bin sections into bin subsections
+- describe limitations of Mapper algorithm
+- generate varied-scale-topological construct
+- select region of initial topological construct
+- identify first set of nodes
+- identify second set of nodes
+- determine edges for varied-scale-topological construct
+- generate initial topological construct
+- select region of initial topological construct
+- generate local cover
+- identify inverse images
+- generate clusters of multidimensional data
+- determine simplices for varied-scale-topological construct
+- generate nerve for varied-scale-topological construct
+- select additional regions of initial topological construct
+- generate additional sets of clusters
+- determine additional simplices
+- generate varied-scale-Mapper construct
+- define varied-scale-Mapper construct
+- project subset of multidimensional data
+- identify preservation region
+- identify set of clusters outside selected region
+- generate local cover
+- identify inverse images
+- generate set of clusters
+- compute nerve
+- generate overall set of clusters
+- compute nerve for varied-scale-Mapper construct
+- introduce varied-scale-Mapper construct
+- illustrate varied-scale-Mapper construct
+- describe topological data visualization system
+- select region for magnification
+- apply clustering algorithm
+- determine contractibility violation
+- select alternative topological scale
+- analyze edges within region
+- identify nodes and edges within region
+- apply clustering algorithm to shared set of multidimensional data
+- generate clusters of multidimensional data
+- determine contractibility violation
+- select region for magnification
+- identify topological scale demonstrating contractibility
+- use Reeb graph and Mapper algorithm
+- define Reeb space
+- identify regions of initial Mapper construct at too coarse topological scale
+- apply contractibility to point cloud
+- determine contractibility using clustering algorithm
+- apply DBSCAN as clustering algorithm
+- apply HDBSCAN or OPTICS as clustering algorithm
+- identify contractibility violation
+- select region for magnification
+- identify topological scale demonstrating contractibility
+- generate multiple topological constructs
+- analyze components of simplicial complexes
+- determine violation of component-persistence threshold
+- select region for magnification
+- identify topological scale demonstrating contractibility
+- generate topological constructs at different topological scales
+- identify disconnected components
+- determine persistence parameter
+- determine violation of component-persistence threshold
+- select region for magnification
+- identify topological scale demonstrating contractibility
+- select alternative topological scale
+- define Multiscale Mapper algorithm
+- introduce tower of covers
+- define map of covers
+- introduce tower of simplicial complexes
+- define Multiscale Mapper based on Dey
+- introduce successive relationship of Mapper constructs
+- define pullback cover
+- apply persistence algorithm
+- determine birth-death pair
+- count topological feature
+- remove noisy features
+- determine true number of voids
+- generate tower of cover on Cu∩Cv
+- define covers of ƒ(X)
+- determine pullback tower of covers
+- determine number of connected components
+- use component-persistence threshold
+- select region for magnification
+- identify alternative topological scale
+- describe graphical user interface
+- introduce multidimensional-data graphic
+- describe visualization option
+- describe topological visualization request
+- describe varied-scale-topological construct
+- describe topological visualization
+- introduce topological data visualization system
+- describe computing device
+- describe analytics system
+- describe topological construct generator
+- describe topological scale selector
+- describe varied-scale-topological-construct generator
+- describe topological visualizer
+- describe storage manager
+- describe multidimensional datasets
+- describe topological-visualization images
+- describe communication between components
+- describe implementation of components
+- describe varied-scale-topological construct generation
+- describe initial topological construct generation
+- describe region selection for magnification
+- describe local topological construct generation
+- describe varied-scale-topological construct combination
+- describe flowchart of acts
+- describe act of generating initial topological construct
+- describe act of selecting region for magnification
+- describe act of generating local topological construct
+- describe act of combining local and initial topological constructs
+- describe selecting region based on data density
+- describe selecting region based on user selection
+- describe selecting region based on edge analysis
+- describe selecting region based on clustering algorithm
+- describe generating local topological construct
+- describe combining local and initial topological constructs
+- describe generating varied-scale-topological construct
+- describe generating varied-scale-topological construct with multiple scales
+- describe generating varied-scale-topological construct with simplices
+- describe generating varied-scale-topological construct with nerve
+- describe generating varied-scale-topological construct with edges
+- describe varied-scale-topological construct generation
+- render varied-scale-topological construct
+- identify user input for topological visualization
+- render varied-scale-topological construct in GUI
+- select alternative topological scale
+- identify contractibility of topological construct
+- select alternative topological scale based on contractibility
+- identify component-persistence threshold
+- select alternative topological scale based on component-persistence threshold
+- generate initial topological construct
+- project multidimensional dataset into lower-dimensional-image space
+- generate local topological construct
+- project subset of multidimensional data into local lower-dimensional-image space
+- partition initial lower-dimensional-image space into bin sections
+- generate local topological construct based on local cover
+- select additional region for magnification
+- generate additional local topological construct
+- combine local topological constructs and initial topological construct
+- generate clusters of multidimensional data
+- generate nodes based on clusters of multidimensional data
+- render topological visualization
+- vary topological scales of regions
+- describe computer system components
+- describe non-transitory computer-readable storage media
+- describe transmission media
+- describe network
+- describe computer-executable instructions
+- describe computer system configurations
+- describe distributed system environments
+- describe cloud computing environments
+- describe computing device components
+- describe processor
+- describe memory
+- describe storage device
+- describe I/O interface
+- describe communication interface
+- describe communication infrastructure
+

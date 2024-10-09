@@ -1,0 +1,702 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate alternative splicing
+- introduce ADOA disease
+
+## SUMMARY
+
+- describe method of modulating OPA1 protein expression
+- introduce agent or vector encoding agent
+- modulate splicing of NMD exon
+- modulate level of processed mRNA
+- modulate OPA1 protein expression
+- define antisense oligomer with sequence identity
+- specify targeted portion of pre-mRNA
+- define upstream and downstream regions
+- specify genomic site GRCh38/hg38
+- define intronic region between canonical exonic regions
+- specify overlap with NMD exon or intron
+- define 5' or 3' NMD exon-intron junction
+- specify targeted portion within NMD exon
+- define sequence identity to SEQ ID NO: 279
+- specify non-sense mediated RNA decay-inducing exon
+- define exon-intron junction of exon GRCh38/hg38
+- specify OPA1 protein expression
+- define full-length or wild-type OPA1 protein
+- specify functional OPA1 protein
+- define exclusion of NMD exon from pre-mRNA
+- specify increase in exclusion of NMD exon
+- define increase in level of processed mRNA
+- specify increase in expression of OPA1 protein
+- define antisense oligomer with sequence identity
+- specify gene editing molecule CRISPR-Cas9
+- describe method of modulating OPA1 protein expression
+- promote exclusion of coding exon from pre-mRNA
+- specify targeted portion of pre-mRNA
+- define coding exon with sequence identity
+- specify targeted portion within coding exon
+- summarize method
+- motivate OPA1 protein
+- describe agent
+- describe OPA1 protein expression
+- describe functional OPA1 protein
+- describe NMD exon
+- describe antisense oligomer
+- describe gene editing molecule
+- describe CRISPR-Cas9
+- describe method of modulating OPA1 protein
+- describe coding exon
+- describe target portion of pre-mRNA
+- describe inclusion of coding exon
+- describe method of modulating target protein
+- describe exclusion of coding exon and NMD exon
+- describe agent binding
+- describe modulation of splicing factor
+- describe targeted portion of pre-mRNA
+- summarize embodiments of coding exon
+- specify targeted portion of pre-mRNA
+- describe exclusion of coding exon
+- specify increase in processed mRNA level
+- describe increase in target protein expression
+- specify OPA1 protein as target protein
+- describe functional OPA1 protein
+- specify antisense oligomer as agent
+- describe gene editing molecule as agent
+- specify CRISPR-Cas9 as gene editing molecule
+- describe backbone modification of antisense oligomer
+- specify phosphorothioate linkage or phosphorodiamidate linkage
+- describe sugar moiety modification of antisense oligomer
+- specify length of antisense oligomer
+- describe viral vector encoding agent
+- specify adenoviral vector, AAV vector, lentiviral vector, HSV vector, or retroviral vector
+- describe assessing mRNA level or expression level of OPA1 protein
+- specify therapeutic agent
+- describe pharmaceutical composition
+- specify antisense oligomer with at least 80% sequence identity
+- describe composition with backbone modification, sugar moiety modification, or combination
+- specify pharmaceutical composition promoting exclusion of coding exon
+- describe pharmaceutical composition promoting exclusion of both coding exon and NMD exon
+- specify formulation for administration
+- describe method of treating disease or condition
+- specify disease or condition associated with loss-of-function mutation in OPA1 gene
+- specify disease or condition associated with haploinsufficiency of OPA1 gene
+- describe eye disease or condition
+- specify various diseases or conditions
+- describe method of treating optic atrophy type 1
+- describe method of treating autosomal dominant optic atrophy
+- specify disease or condition associated with autosomal recessive mutation of OPA1 gene
+- describe subject as human or non-human animal
+- specify administration route
+- describe ex vivo cells
+- specify therapeutic agent administration
+- describe treatment of disease or condition
+- summarize method of treating disease or condition
+
+## DETAILED DESCRIPTION
+
+- introduce alternative splicing events in OPA1 gene
+- describe therapeutic agents for modulating alternative splicing
+
+### mRNA Splicing
+
+- describe mRNA splicing process
+- introduce spliceosome complex
+- explain 5′ splice site recognition
+- explain 3′ splice site recognition
+- describe U2AF protein function
+- introduce intronic and exonic splicing enhancers/silencers
+- explain stochastic nature of splicing decisions
+- describe role of cis-acting auxiliary elements
+- introduce trans-acting RNA-binding proteins
+- explain function of SR proteins
+- describe repressive effects of ESSs
+- introduce alternative splicing process
+- describe inclusion/exclusion of exons
+- explain production of multiple protein isoforms
+- introduce alternatively spliced exons
+- describe regulation of alternative splicing
+- explain nonsense-mediated mRNA decay (NMD) pathway
+- introduce NMD-inducing exons (NIEs)
+- describe cryptic splice sites
+- explain identification of splice sites and regulatory sequences
+
+### Target Transcripts
+
+- exploit NMD exon in OPA1 pre-mRNA
+- induce exon skipping of NMD exon
+- inhibit NMD pathway
+- increase OPA1 protein in patient cells
+- alleviate symptoms of OPA1 deficiency
+- exploit alternative splicing of OPA1 pre-mRNA
+- modulate OPA1 protein expression level
+- target coding exon of OPA1 pre-mRNA
+- promote exclusion of coding exon
+- increase OPA1 protein expression
+- modulate levels of alternatively spliced mRNA transcripts
+- translate mature OPA1 mRNA into different OPA1 proteins
+- alleviate symptoms of OPA1 deficiency
+- treat diseases not directly associated with OPA1
+- target protein not directly associated with disease
+- modulate expression of target protein
+- provide therapeutic agent
+- target OPA1 mRNA transcripts
+- modulate splicing or protein expression level
+- target NMD exon of OPA1 pre-mRNA
+- target sequence within NMD exon
+- target sequence upstream from 5' end of NMD exon
+- target sequence downstream from 3' end of NMD exon
+- target sequence within intron flanking NMD exon
+- target sequence comprising NMD exon-intron boundary
+- target sequence within exon of OPA1 pre-mRNA
+- target sequence within intron of OPA1 pre-mRNA
+- target sequence comprising both intron and exon
+- target specific regions of OPA1 pre-mRNA
+- target exon 6x, 7x, or 28x of OPA1 pre-mRNA
+- target specific sequences upstream or downstream from exon
+- provide ASO with specific sequence complementary to target
+- define target transcripts
+- specify ASO targets
+- describe exon-intron boundary targets
+- describe NMD exon targets
+- describe pseudo-exon targets
+- describe coding exon targets
+- specify upstream targets
+- specify downstream targets
+- describe intron targets
+- describe exon targets
+- describe targets with sequence identity
+- specify exon 7 targets
+- specify other coding exon targets
+- describe upstream distance targets
+- describe downstream distance targets
+- specify maximum upstream distance targets
+- specify maximum downstream distance targets
+- describe ASO sequence complementarity
+- describe upstream coding exon targets
+- describe exon-intron boundary targets
+- describe downstream coding exon targets
+- describe coding exon targets with sequence identity
+- describe upstream targets with sequence identity
+- describe downstream targets with sequence identity
+- describe exon-intron boundary targets with sequence identity
+- describe ASO targets with sequence identity
+
+### Protein Expression
+
+- define functional OPA1 protein
+- define partially functional OPA1 protein
+- describe method to increase OPA1 protein production
+- motivate haploinsufficiency of OPA1 protein
+- describe antisense oligomer binding to OPA1 pre-mRNA
+- induce exon skipping of pseudo-exon
+- increase mature mRNA encoding functional OPA1 protein
+- increase OPA1 protein expression in cells
+- describe autosomal recessive inheritance
+- describe autosomal dominant inheritance
+- use ASO to increase protein or functional RNA expression
+- target pre-mRNA transcript encoding disease-causative protein
+- target NMD exon-containing pre-mRNA transcript
+- induce skipping of NMD exon or coding exon
+- describe subject with mutant alleles
+- bind ASO to targeted portion of pre-mRNA
+- increase mRNA encoding OPA1 protein
+
+### Exon Inclusion
+
+- define NMD exon-containing pre-mRNA
+- describe alternative splicing
+- introduce pseudo-exon inclusion
+- explain NMD of mature mRNA
+- describe aberrant protein expression
+- identify most abundant pseudo-exon
+- describe antisense oligomer targeting
+- induce exon skipping
+- calculate percent exon inclusion
+- provide ENCODE data
+- describe ASO-mediated protein increase
+- specify protein increase percentage
+- describe mRNA increase
+- specify mRNA increase percentage
+- describe control compound
+- define NMD exon length
+- describe intron retention
+- describe 5' end portion of intron
+- describe 3' end portion of intron
+- describe portion within intron
+- specify NMD exon length range
+- describe frameshift and PIC
+- describe non-productive mRNA
+- describe PIC position
+- provide OPA1 exon examples
+- introduce method of modulating OPA1 protein expression
+- describe agent binding to pre-mRNA
+- promote inclusion of coding exon
+- specify target portion of pre-mRNA
+- describe coding exon sequence identity
+- specify genomic site
+- describe increase in coding exon inclusion
+
+### Exclusion of Both NMD Exon and Coding Exon
+
+- introduce method of modulating expression of target protein
+- describe contacting agent to cell
+- explain promotion of exclusion of coding exon and NMD exon
+- detail increase in level of processed mRNA
+- specify binding of agent to targeted portion of pre-mRNA
+- describe modulation of binding of factor involved in splicing
+- explain interference with binding of factor
+- specify location of NMD exon
+- describe targeted portion of pre-mRNA proximal to coding exon
+- specify location of targeted portion within intronic region
+- detail targeted portion within coding exon
+- specify targeted portion within region spanning upstream of coding exon
+- describe targeted portion proximal to NMD exon
+- specify location of targeted portion within intronic region of NMD exon
+- detail targeted portion within NMD exon
+- specify targeted portion within region spanning upstream of NMD exon
+- describe applicability to modulation of OPA1 protein expression
+- specify sequence identity of coding exon and NMD exon
+- detail increase in exclusion of coding exon and NMD exon
+- explain increase in level of processed mRNA and OPA1 protein expression
+
+### Therapeutic Agents
+
+- provide therapeutic agents to modulate OPA1 protein expression
+- define NIE repressor agent
+- describe polynucleic acid polymer composition
+- motivate treatment of OPA1 protein deficiency
+- describe method of treatment or prevention
+- administer NIE repressor agent to increase functional OPA1 protein
+- bind agent to region of pre-mRNA transcript
+- decrease inclusion of NMD exon in mature transcript
+- specify binding to intron containing NMD exon
+- specify binding to NMD exon-activating regulatory sequence
+- describe reduction of NMD exon inclusion
+- specify percentage reduction of NMD exon inclusion
+- motivate treatment of functional OPA1 protein deficiency
+- administer agent to increase functional OPA1 protein
+- bind agent to region of pre-mRNA transcript
+- decrease inclusion of coding exon in mature transcript
+- specify binding to region containing coding exon
+- describe increase of active OPA1 protein levels
+- specify percentage increase of active OPA1 protein
+- describe polynucleic acid polymer length
+- specify sequence complementarity of polynucleic acid polymer
+- describe hybridization of polynucleic acid polymer
+- specify sequence identity of polynucleic acid polymer
+- describe tolerance of substitutions in polynucleic acid polymer
+- determine sequence identity by BLAST alignment
+- provide composition comprising antisense oligomer
+- induce exon skipping by binding to targeted portion of OPA1 pre-mRNA
+- describe design of antisense oligomer
+- define ASO hybridization
+- describe Tm of hybridization
+- define complementary oligomers
+- describe sequence complementarity
+- define ASO composition
+- describe backbone structure
+- list backbone modifications
+- describe stereochemistry of phosphorus linkages
+- describe diastereomeric purity
+- describe Rp and Sp configurations
+- describe nonrandom mixture of Rp and Sp
+- describe ASO sequence identity
+- describe Rp and Sp percentages
+- describe sugar moiety modifications
+- list sugar moiety modifications
+- describe uniform modifications
+- describe mixed modifications
+- describe backbone and sugar moiety modifications
+- describe 2'MOE modification and phosphorothioate backbone
+- describe phosphorodiamidate morpholino (PMO)
+- describe peptide nucleic acid (PNA)
+- describe modification of ASO components
+- describe enhancing binding affinity
+- describe reducing binding to non-target sequences
+- describe reducing degradation by nucleases
+- describe improving uptake into cells and nuclei
+- describe altering pharmacokinetics and pharmacodynamics
+- describe modulating half-life
+- describe MOE phosphorothioate-modified nucleotides
+- describe advantages of MOE-modified nucleotides
+- describe synthesizing ASOs
+- define nucleic acid directions
+- define upstream and downstream regions
+- describe ASO binding to OPA1 pre-mRNA
+- specify ASO binding regions downstream of 5' splice site
+- list specific binding regions downstream of 5' splice site
+- specify ASO binding regions upstream of 5' splice site
+- list specific binding regions upstream of 5' splice site
+- describe ASO binding to OPA1 pre-mRNA upstream of 3' splice site
+- specify ASO binding regions upstream of 3' splice site
+- list specific binding regions upstream of 3' splice site
+- describe ASO binding to OPA1 pre-mRNA downstream of 3' splice site
+- specify ASO binding regions downstream of 3' splice site
+- list specific binding regions downstream of 3' splice site
+- specify targeted portion of OPA1 pre-mRNA
+- describe targeted portion within NMD exon
+- describe targeted portion at pseudo-exon and intron boundary
+- specify ASO length
+- list specific ASO lengths
+- specify ASO length ranges
+- list specific ASO length ranges
+- specify ASO length of 8-50 nucleobases
+- specify ASO length of more than 50 nucleobases
+- specify ASO length of 8-40 nucleobases
+- specify ASO length of 8-35 nucleobases
+- specify ASO length of 8-30 nucleobases
+- specify ASO length of 8-25 nucleobases
+- specify ASO length of 8-20 nucleobases
+- introduce therapeutic agents
+- describe ASO chemistries
+- describe ASO conjugates
+- describe targeted nucleic acid
+- describe cell types
+- introduce pharmaceutical compositions
+- describe composition preparation
+- describe pharmaceutically acceptable salts
+- describe salt preparation
+- list examples of salts
+- describe dosage forms
+- describe suspension formulations
+- describe therapeutic agents
+- introduce liposomes
+- describe sterically stabilized liposomes
+- describe surfactants
+- describe penetration enhancers
+- describe combination therapies
+- introduce additional therapeutic agents
+- describe small molecules
+- describe antisense oligonucleotides
+- describe treatment of subjects
+- define individual
+- describe administration methods
+- describe treatment of diseases
+- describe OPA1 deficiency
+- describe eye diseases
+- describe Optic atrophy type 1
+- describe mitochondrial disorders
+- describe gene editing tools
+- describe viral vectors
+- describe administration routes
+- describe blood-brain barrier penetration
+- describe evaluation methods
+
+### Methods of Identifying Additional ASOs That Induce Exon Skipping
+
+- introduce method for identifying ASOs
+- motivate pseudo-exon skipping
+- describe ASO walk method
+- design ASOs for target region
+- tile ASOs every 5 nucleotides
+- deliver ASOs to disease-relevant cell line
+- assess exon skipping effects
+- describe ASO micro-walk method
+- refine nucleotide acid sequence
+- explore regions with ASO micro-walk
+- assess splicing-inducing effects
+- test ASOs in vivo using animal models
+- administer ASOs by various routes
+- assess effect of ASO treatment
+- validate NMD-inducing exon with NMD inhibitor
+
+### Specific Embodiments (a)
+
+- define method of treating Optic atrophy type 1
+- specify target protein as OPA1
+- describe method of increasing OPA1 protein expression
+- exclude non-sense mediated RNA decay-inducing exon
+- specify target protein without non-sense mediated RNA decay-inducing exon
+- describe full-length target protein
+- specify antisense oligomer (ASO) as therapeutic agent
+- specify pre-mRNA as target
+- describe contacting therapeutic agent with nucleus of cell
+- correct deficiency in target protein or functional RNA
+- specify cells in or from subject with condition caused by OPA1 deficiency
+- describe haploinsufficiency of target protein
+- specify subject with condition caused by disorder resulting from target protein deficiency
+- describe target protein with reduced function
+- describe target protein with full function
+- specify targeted portion within non-sense mediated RNA decay-inducing exon
+- specify targeted portion upstream or downstream of non-sense mediated RNA decay-inducing exon
+- describe NMD exon mRNA with sequence identity to SEQ ID NO: 2 or 3
+- describe genetic sequence with sequence identity to SEQ ID NO: 1
+- describe targeted portion with sequence identity to region of SEQ ID NO: 2 or 3
+- describe ASO with sequence complementary to SEQ ID NO: 2 or 3
+- specify targeted portion within specific exons of OPA1
+- specify targeted portion upstream or downstream of specific exons of OPA1
+- describe targeted portion at exon-intron junction of OPA1
+- describe full-length protein or wild-type protein production
+- describe increase in mRNA encoding target protein or functional RNA
+- describe increase in target protein production
+- specify administration of therapeutic agent
+- define specific embodiments
+- specify therapeutic agent
+- describe antisense oligomer
+- outline pharmaceutical composition
+- detail method of treating subject
+- specify administering method
+- describe composition for treating optic atrophy
+- outline composition for increasing expression
+- specify therapeutic agent for treating condition
+- describe composition for treating disease or disorder
+- specify OPA1 protein and NMD exon mRNA
+- describe exclusion of non-sense mediated RNA decay-inducing exon
+- outline composition for treating optic atrophy type 1
+- specify full-length OPA1 protein
+- describe antisense oligomer targeting NMD exon mRNA
+- outline composition for treating condition associated with OPA1 protein
+- specify sequence identity to SEQ ID NO: 2 or 3
+- describe targeted portion of NMD exon mRNA
+- outline composition for treating subject with antisense oligomer
+- specify pharmaceutical composition with excipient
+- define specific embodiments
+- specify targeted portion of NMD exon mRNA
+- specify OPA1 NMD exon mRNA transcript
+- specify antisense oligomer backbone modification
+- specify antisense oligomer composition
+- specify antisense oligomer length
+- specify antisense oligomer sequence identity
+- specify targeted portion of OPA1 NMD exon mRNA transcript
+- specify pharmaceutical composition formulation
+- specify method of administering second therapeutic agent
+- specify second therapeutic agent
+- specify method of correcting intron retention
+- describe method of inducing processing of deficient OPA1 mRNA transcript
+- describe method of treating condition caused by deficient OPA1 protein
+- describe method of treating Optic atrophy type 1
+- describe method of increasing expression of OPA1 protein
+- specify agent that modulates splicing of NMD exon mRNA
+- describe method of modulating expression of target protein
+- describe method of treating disease or condition
+- specify therapeutic agent that modulates splicing of NMD exon
+- specify targeted portion of mRNA encoding target protein
+- specify distance of targeted portion from NMD exon
+- specify genomic site of targeted portion
+- specify location of targeted portion in intronic region
+- specify overlap of targeted portion with NMD exon or intron
+- specify composition of targeted portion
+- specify sequence identity of targeted portion
+- specify mRNA encoding target protein
+- specify sequence identity of mRNA encoding target protein
+- specify embodiments
+- define mRNA encoding target protein
+- specify sequence identity
+- define targeted portion of mRNA
+- specify antisense oligomer
+- define non-sense mediated RNA decay-inducing exon
+- specify exon-intron junction
+- define full-length protein
+- promote exclusion of NMD exon
+- increase expression of target protein
+- specify therapeutic agent
+- increase level of processed mRNA
+- specify disease or condition
+- specify loss-of-function mutation
+- specify haploinsufficiency
+- specify Optic atrophy type 1
+- promote exclusion of NMD exon and increase expression
+- inhibit exclusion of NMD exon
+- decrease expression of target protein
+- specify gain-of-function mutation
+- specify allele encoding mutant target protein
+- inhibit exclusion of NMD exon and decrease expression
+- specify backbone modification
+- specify phosphorodiamidate morpholino
+- specify modified sugar moiety
+- specify length of antisense oligomer
+- specify complementary antisense oligomer
+- assess mRNA level or expression level
+
+### Further Specific Embodiments
+
+- define embodiment 1
+- specify agent composition
+- specify embodiment 2
+- specify agent binding
+- specify agent modulation
+- specify embodiment 3
+- specify agent interference
+- specify embodiment 4
+- specify targeted portion proximity
+- specify embodiment 5
+- specify targeted portion distance
+- specify embodiment 6
+- specify targeted portion distance
+- specify embodiment 7
+- specify targeted portion distance
+- specify embodiment 8
+- specify targeted portion distance
+- specify embodiment 9
+- specify targeted portion location
+- specify embodiment 10
+- specify targeted portion location
+- specify embodiment 11
+- specify targeted portion location
+- specify embodiment 12
+- specify targeted portion location
+- specify embodiment 13
+- specify targeted portion location
+- specify further embodiments
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify targeted portion of pre-mRNA
+- specify method of modulating expression
+- specify embodiment 90
+- specify embodiment 91
+- specify embodiment 92
+- specify embodiment 93
+- specify embodiment 94
+- specify embodiment 95
+- specify embodiment 96
+- specify embodiment 97
+- specify embodiment 98
+- specify embodiment 99
+- specify embodiment 100
+- specify embodiment 101
+- specify embodiment 102
+- specify embodiment 103
+- specify embodiment 104
+- specify embodiment 105
+- specify embodiment 106
+- specify embodiment 107
+- specify embodiment 108
+- specify embodiment 109
+- specify embodiment 110
+- specify embodiment 111 to 134
+- specify embodiment 135
+- specify embodiment 136
+- specify embodiment 137
+- specify embodiment 138
+- specify embodiment 139
+- specify embodiment 140
+- specify embodiment 141
+- specify embodiment 142
+- specify embodiment 143
+- specify embodiment 144
+- specify embodiment 145
+- specify embodiment 146
+- specify embodiment 147
+- specify embodiment 148
+- specify embodiment 149
+- specify embodiment 150
+- specify embodiment 151
+- specify embodiment 152
+- specify embodiment 153
+- specify embodiment 154
+- specify embodiment 155
+- specify embodiment 156
+- specify embodiment 157
+- specify embodiment 158
+- specify embodiment 159-180
+
+## EXAMPLES
+
+- provide examples of NMD-inducing exon inclusion events
+
+### Example 1: Identification of NMD-inducing Exon Inclusion Events in Transcripts by RNAseq using Next Generation Sequencing
+
+- identify NMD exon inclusion events using RNAseq
+
+### Example 2: Confirmation of NMD Exon via Cycloheximide Treatment
+
+- confirm NMD exon via cycloheximide treatment
+
+### Example 3: NMD Exon Region ASO Walk
+
+- perform ASO walk for NMD exon region
+
+### Example 4: NMD Exon Region ASO Walk Evaluated by RT-PCR
+
+- evaluate ASO walk sequences by RT-PCR
+
+### Example 5: NMD Exon Region ASO Microwalk Evaluated by RT-qPCR
+
+- evaluate ASO microwalk sequences by RT-qPCR
+
+### Example 6: Dose-Dependent Effect of Selected ASO in CXH-Treated Cells
+
+- show dose-dependent effect of selected ASO
+
+### Example 7: Intravitreal (IVT) Injection of Selected ASOs
+
+- inject ASOs intravitreally
+
+### Example 8: Intracerebroventricular (ICV) Injection of Selected ASOs
+
+- inject ASOs intracerebroventricularly
+
+### Example 9: OPA1 Non-Productive Splicing Event Identification and Validation
+
+- identify nonsense mediated decay exon inclusion event
+- describe non-productive mRNA transcript degradation
+- evaluate true abundance of event using cycloheximide
+- show increase in OPA1 transcripts containing NMD exon
+- validate presence of NMD exon in other ocular cell lines
+- introduce Example 10
+- show reverse transcription PCR data from primate eyes
+- quantify NMD exon abundance at different ages
+- introduce Example 11
+- transfect antisense oligomers into HEK293 cells
+- assess effect on NMD exon using cycloheximide
+- quantify non-productive splicing and productive OPA1 mRNA levels
+- introduce Example 12
+- transfect different doses of ASO-14 into HEK293 cells
+- analyze impact on non-productive OPA1 mRNA and OPA1 mRNA expression
+- show western blots of OPA1 protein expression
+- introduce Example 13
+- generate OPA1 haploinsufficient cell line using CRISPR-Cas9
+- transfect different doses of ASO-14 into OPA1+/- HEK293 cells
+- analyze impact on OPA1 protein levels
+- introduce Example 14
+- describe ASO treatment and RNA analysis
+- show gel image of RT-PCR products
+- quantify qPCR Ct values for different reactions
+- show relative amount of corresponding transcripts
+- show OPA1 expression level after ASO treatment
+- describe microwalk experiment
+- show Ct values for qPCR reaction
+- quantify relative amount of OPA1 transcripts
+- show Ct values for RPL32 transcripts
+- describe experiment with 16-mers
+- show Ct values for qPCR reaction
+- quantify relative amount of OPA1 transcripts
+- show Ct values for RPL32 transcripts
+- describe dose response experiment
+- show dose response curves of relative amounts of OPA1 transcripts
+- describe ATP measurement experiment
+- show ATP level measured under each condition
+- show OPA1 protein under each condition
+- describe experiment with OPA1 mutations from diagnosed patients
+- show mRNA and protein expression of OPA1 gene in patient cells
+- show effects of ASO-14 on OPA1 NMD exon inclusion
+- show effects of ASO-14 on OPA1 mRNA level
+- show effects of ASO-14 on OPA1 protein level
+- describe experiment with patient fibroblast cells
+- show deficiencies in mitochondrial bioenergetics
+- show effects of ASO-14 on mitochondrial energetics in F35 patient cells
+- show effects of ASO-14 on mitochondrial energetics in F36 patient cells
+- summarize preclinical data
+- describe TANGO disease modifying approach
+- provide concluding remarks
+

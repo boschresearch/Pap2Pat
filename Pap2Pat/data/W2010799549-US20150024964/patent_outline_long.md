@@ -1,0 +1,470 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- define field of invention
+- describe background of quantum systems
+
+## SUMMARY OF THE INVENTION
+
+- classify system state by order, coherence, and decay rate
+- describe quantum reservoir computer
+- outline drug discovery method using energy level spacing
+- outline drug discovery method using energy level spacing and in vitro assay
+- outline drug discovery method using decoherence decay
+- outline drug discovery method using decoherence decay and in vitro assay
+- describe Trans-Turing machine
+- outline method of measuring system state by coherence and order
+- specify determining order by decoherence decay
+- specify determining order by energy level spacing
+- specify system as molecule
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+
+- introduce Poised Realm concept
+- define Poised Realm as physical system between quantum and classical behavior
+- describe two independent features of open quantum systems
+- define decoherence and recoherence
+- illustrate Poised Realm with two-dimensional coordinate system
+- define fully classical and fully quantum systems
+- explain classical double slit experiment
+- introduce Hamiltonian H
+- describe classical trajectories and quantization of Hamiltonian
+- explain Lyapunov exponents and degree of chaos
+- define chaotic patches in phase space
+- describe critical point on x-axis
+- explain power law scaling of Lyapunov exponent
+- introduce level spacing statistics
+- describe Poissonian distribution
+- describe Wigner surmise
+- introduce x-coordinate for intermediate situations
+- explain criticality in quantum systems
+- describe eigenfunctions in ordered and chaotic regions
+- introduce semi-Poissonian distribution
+- describe coupling of low-dimensional quantum system to environment
+- explain decoherence caused by environment
+- introduce position on y-axis as ratio of Γ and Δ(E)
+- describe modulating degree of order in physical system
+- introduce three methods for controlling degree of order
+- describe altering Hamiltonian to change position on x-axis
+- explain measuring Lyapunov exponent to array classical systems on x-axis
+- describe suppressing decoherence
+- explain entropy production in system
+- introduce Kolmogorov-Sinai entropy
+- describe relation between entropy production and Lyapunov exponent
+- explain power law decay of coherence
+- introduce zero entropy production state
+- describe transition from integrability to chaos
+- explain metal-insulator transition point
+- describe equivalence of metal-insulator and chaos-integrability transitions
+- introduce Poised Realm Critical state
+- describe identifying Poised Realm Critical state by measuring coherence decay
+- introduce tunability of position on x-axis by quantum networks and graphs
+- describe Erdos Renyi Random Graphs
+- explain phase transition from disconnected trees to Giant Component
+- describe emergence of loops at critical ratio of links/nodes
+- introduce Adjacency matrix for static quantum networks
+- explain eigenvalues of Adjacency matrix as energy levels
+- describe distribution of energy jumps in ER subcritical, critical, and supracritical networks
+- introduce quantum rotors and quantum oscillators as generic models
+- describe arbitrary graphs with quantum oscillators and/or rotors
+- explain application to drug design and nano-technology design
+
+### Controlling the Topology of the Quantum Networks Via Proximity of the Nodes
+
+- introduce chromophores as quantum network nodes
+- describe electron exchange linking chromophores
+- detail dependence of interaction on chromophore positions
+- define supracritical, critical, and subcritical quantum networks
+- describe liposome-based quantum networks
+- explain chromophore anchoring to bilipid double membrane
+- discuss tuning chromophore density in liposomes
+- introduce embodied algorithmic and non-algorithmic trans-Turing machine quantum-poised realm-classical information processing systems
+- describe liposome construction with beta barrel proteins and chromophores
+- explain random distribution of chromophores inside and outside liposome membrane
+- describe quantum graph formation by chromophores
+- discuss open quantum, poised realm, and classical behavior of liposome systems
+- explain decoherence and recoherence of quantum degrees of freedom
+- describe alteration of classical and quantum Hamiltonians
+- introduce quantum measurement in the poised realm
+- discuss means of measurement, including classical degrees of freedom
+- introduce pulsed stimulation for controlling position on the x-axis
+- model pulsed stimulation with kicked quantum rotor
+- describe ordered, critical, and chaotic states of quantum rotors
+- explain measurement of quantum energy level distributions
+- discuss selection of light frequency for stimulation
+- introduce molecular topology tuning of decoherence rates
+- describe electronic energy transfer in chlorophyll
+- explain decoherence and loss of phase information
+- introduce Lindblad operator and Weiner process models of decoherence
+- describe simulation of kicked quantum rotor using Weiner process
+- explain Quantum Zeno effect and frequent measurement
+- introduce driving systems to be more coherent
+- describe time-independent and time-dependent Hamiltonians
+- separate coherent and temporally random parts of external potential
+- derive time evolution of averaged density matrix
+- discuss evidence of driving systems to more quantum behavior
+- explain Zeno effect and reemergence of quantum amplitudes
+- describe quantum entangled degrees of freedom and sudden death
+- introduce Shor theorem and restoration of quantum coherent behavior
+- discuss chlorophyll and antenna protein as means to drive coherence
+- introduce decoherence measure
+- motivate quantum networks
+- define Wiener process
+- model decoherence with Wiener process
+- describe kicked quantum rotor
+- introduce quantum information processing
+- define Trans-Turing systems
+- explain decoherence in open quantum systems
+- model kicks and decoherence processes
+- implement quantum measurement
+- describe quantum localization of chaotic dynamics
+- explain energy scaling of decoherence
+- discuss preferential decoherence of high energy amplitudes
+- introduce Fermi's Golden Rule
+- describe energy transfer in Poised Realm
+- solve frame problem in Trans-Turing systems
+- alter classical and quantum Hamiltonians
+- describe behavior of single kicked quantum rotor
+- summarize single kicked quantum rotor in Poised Realm
+- discuss finite number of quantum amplitudes
+- explain quantum localization of chaotic behavior
+- describe transition from quantum to classical behavior
+- discuss slope in transition from quantum to classical behavior
+- move system from quantum to classical behavior
+- describe non-random behavior in Poised Realm
+- introduce Lindblad operator
+- simulate quantum systems using Lindblad operator
+- conclude simulations
+- introduce Lindblad operator
+- limitations of Lindblad operator
+- implement kicked quantum rotor
+- analyze behavior of kicked quantum rotor
+- describe movement on x-axis
+- relate movement on x-axis to Poised Realm
+- discuss evolved organic molecules in Poised Realm
+- propose testing biological molecules in Poised Realm
+- describe two slit experiment
+- discuss drugs in Poised Realm
+- criticize classical view of biological processes
+- introduce combinatorial chemistry
+- discuss failure of combinatorial chemistry
+- contrast Japanese medicinal chemistry approach
+- propose using Poised Realm for drug discovery
+- discuss quantum biology
+- describe long-term quantum coherence of chlorophyll
+- discuss molecular topology and decoherence
+- describe quantum events in biology
+- discuss electron transfer in cells
+- propose percolating connected pathways of electron transfer
+- discuss recoherence and Quantum Zeno Effect
+- relate criticality in Poised Realm to drug behavior
+- discuss universal behavior at criticality
+- propose using position on x-axis for chemical design
+- describe method for determining position on x-axis
+- discuss position on y-axis and distance from critical state
+- describe echo measurement for determining distance
+- discuss changing molecular system parameters
+- relate degree of order to decoherence rate
+- Controlling the Topology of the Quantum Networks Via Proximity of the Nodes
+- Introduce drug discovery method
+- Describe limitations of traditional methods
+- Introduce alternative approach
+- Select biological target
+- Test molecule for binding to target
+- Determine energy level spacing distribution
+- Compare to reference functions
+- Determine degree of order
+- Select drug candidate
+- Describe variation of method
+- Perform in vitro and in vivo biological assay
+- Correlate energy level spacing distribution with biological activity
+- Test new candidate molecule
+- Compare to correlation
+- Advance as drug candidate
+- Measure rate of decoherence
+- Model molecules using quantum networks
+- Describe Erdos Renyi random graphs
+- Analyze Giant Component of critical Erdos Renyi graphs
+- Compare to biological small molecules
+- Note similarity in mean <k> values
+- Suggest natural selection has tuned biological molecules
+- Describe testing for power law decoherence
+- Discuss implications for drug discovery and action
+- Describe turning drug on or off
+- Design drugs critical on the x-axis
+- Improve drugs by tuning <k> to criticality
+- Describe blocking or activating biological drug target molecules
+- Increase number of candidate drugs per target
+- Alter local quantum Poised Realm behavior
+- Turn drug on or off using recoherence and decoherence
+- Use infrared radiation to induce recoherence
+- Avoid damage to tissues
+- Optimize drug action by controlling behavior in the Poised Realm
+- Tune annealing by tuning where drug is on the x-axis
+- Use infrared radiation to tune decoherence and recoherence
+- Describe analogy to simulated annealing
+- "Anneal" drug to target
+- Use infrared radiation to sustain Poised Realm behavior
+- Describe application to drug design and discovery
+- Discuss potential for improved drug action
+- Note potential for new way of thinking about drug action
+- Discuss potential for increased number of candidate drugs
+- Describe potential for improved understanding of biological systems
+- Discuss potential for new methods of drug discovery
+- Summarize implications for drug discovery and action
+- introduce quantum networks
+- determine coherence and order of candidate drug molecules
+- motivate absorption/emission spectrum analysis
+- describe level spacing distribution
+- discuss decoherence rate
+- introduce quantum anti-zeno effect
+- assess criticality via eigenvalue spectrum
+- test predictions experimentally
+- introduce three independent approaches
+- use quantum network model
+- measure absorption/emission spectrum distribution
+- measure decoherence rate
+- stimulate classical behavior
+- obtain quantum coherent behavior
+- measure position on x-axis simultaneously
+- assess assemblies of molecules
+- deconvolute spectral distributions
+- study effective drugs and evolved biomolecules
+- test locations on x-axis and in poised realm
+- introduce quantum reservoir computer
+- describe nodes with quantum degrees of freedom
+- tune coherence time
+- realize quantum reservoir
+- describe nodes and substrate
+- build non-algorithmic computational architecture
+- introduce quantum networks
+- describe node radiation
+- introduce detector
+- describe detection process
+- introduce output processor module
+- describe signal processing
+- introduce training procedure
+- describe training method
+- introduce flowchart
+- describe training blocks
+- introduce quantum reservoir computer
+- describe D-WAVE implementation
+- introduce D-Wave Hamiltonian
+- describe metal-insulator transition
+- introduce Trans-Turing Machine
+- describe Schrodinger's aperiodic crystal
+- contrast with Shannon and Kolmogorov information
+- describe embodied information
+- introduce broken symmetries
+- describe information in aperiodic solids
+- introduce Kant's organized being
+- describe autonomous system
+- define function and task
+- describe limitations of Shannon and Kolmogorov information
+- introduce Poised Realm Systems
+- describe complex Hamiltonians
+- introduce Salahub's paper
+- describe decoherence to classicity
+- describe altered behavior of quantum degrees of freedom
+- describe non-random behavior of classical Hamiltonian
+- describe Trans-Turing system behavior
+- introduce Trans-Turing system
+- describe non-determinacy of Trans-Turing system
+- list six criteria for Trans-Turing behavior
+- describe first criterion: quantum degrees of freedom
+- describe second criterion: decoherence and measurement
+- describe third criterion: coupled classical degrees of freedom
+- describe fourth criterion: alteration of classical behavior
+- describe fifth criterion: non-random alteration of quantum behavior
+- describe sixth criterion: recoherence of classical degrees of freedom
+- discuss evolution as evidence for Trans-Turing systems
+- introduce Universal Turing Machine
+- describe definiteness of Universal Turing Machine
+- introduce classical analogue computers
+- describe Poised Realm Systems
+- describe quantum and Poised Realm degrees of freedom
+- describe constructive and destructive interference
+- introduce "bright idea" concept
+- describe dynamics of Poised Realm system
+- discuss entanglement among quantum and Poised Realm degrees of freedom
+- describe correlation with "outside world"
+- discuss random Boolean networks and threshold networks
+- describe critical Poised Realm systems
+- discuss fractal amplitudes in critical Poised Realm systems
+- describe resistance to decoherence in critical Poised Realm systems
+- discuss classical particle in a box analogy
+- describe quantum wave process in a potential well
+- discuss drum head analogy
+- describe measurement bias in Poised Realm system
+- discuss movement of Poised Realm system on x-axis
+- describe actions taken by Poised Realm system
+- discuss design and evolutionary selection of Poised Realm systems
+- describe simulation of Poised Realm systems by digital computers
+- discuss evolutionary selective algorithms
+- describe liposome vesicles with chemical reactions
+- describe chromophores in liposome membrane
+- discuss entanglement of quantum and Poised Realm degrees of freedom
+- describe selection for desired Poised Realm behaviors
+- discuss formation of liposomes with proteins embedded
+- describe detergent depletion method
+- discuss reconstitution of membrane proteins into liposomes
+- describe electroswelling method for forming giant liposome vesicles
+- discuss budding of liposomes
+- describe alteration of chromophore density and spectral characteristics
+- discuss real evolution of embodied liposomes
+- describe use of genetic algorithm to evolve desired behaviors
+- discuss inputs to Trans-Turing system
+- describe outputs of Trans-Turing system
+- discuss transformation of inputs to outputs
+- describe internal dynamical attractors of Trans-Turing system
+- discuss classification of inputs into attractors
+- introduce Trans-Turing system
+- describe liposome containing chlorophyll and antenna proteins
+- explain rafting and proximity of molecules
+- label molecules with red and green quantum dots
+- assess orientation of labeled molecules
+- define output variables
+- introduce input variables
+- describe laser light input spectrum
+- describe sound vibration input spectrum
+- establish mapping from input space to output space
+- describe bijective mapping
+- describe classification of input space
+- introduce control parameter space
+- describe evolutionary search process
+- introduce liposomes with controllable densities
+- describe classical control parameters
+- describe evolutionary search algorithm
+- describe recombination
+- describe tuning of variation and recombination
+- describe attainment of Trans-Turing systems
+- introduce multiple figures of merit
+- describe global Pareto optimality
+- describe search for global Pareto optimal points
+- generalize to multiple Trans-Turing systems
+- describe quantum dots and photon exchange
+- describe chromophore coupled systems
+- describe liposome swelling and shrinking
+- introduce Poised Realm systems
+- describe autocatalytic set and liposome division
+- describe natural selection and co-evolution
+- describe emergence of novel functions
+- describe swim bladder example
+- describe adjacent possible empty niches
+- describe evolving and co-evolving Trans-Turing protocells
+- describe frame problem solution
+- describe nanofabrication and embodied evolution
+- describe direct design and digital algorithms
+- describe Poised Realm devices with desirable properties
+- describe Autonomous Trans-Turing systems
+- describe novel dynamics and information processing
+- describe embodied Poised Realm systems forming networks
+- describe communication and interaction between systems
+- describe co-evolution and community assembly
+- describe maximum power efficiency per unit fuel
+- describe Essential Variables and goal behavior
+- describe Ashby's homeostat and Essential Variables
+- Controlling the Topology of the Quantum Networks Via Proximity of the Nodes
+- Introduce Poised Realm Systems
+- Describe classical variables and parameters
+- Explain decoherence and recoherence
+- Introduce bifurcation points and attractors
+- Describe the role of decoherence and recoherence in Poised Realm Systems
+- Introduce the concept of "homeostat"
+- Explain the process of choosing essential variables
+- Describe the role of essential variables in Poised Realm Systems
+- Introduce secondary goals and subgoals
+- Explain the concept of "Alive Box" and "Secondary Alive Box"
+- Describe the process of attaining the Alive Box
+- Introduce the concept of "operant conditioning"
+- Explain the role of memory classical variables
+- Describe the process of operant conditioning in Poised Realm Systems
+- Introduce the concept of "attention" in Poised Realm Systems
+- Explain the role of classical Hamiltonian in attention
+- Describe the process of focusing attention in Poised Realm Systems
+- Introduce the concept of "step changes in parameters"
+- Explain the analogy between quantum degree of freedom and step changes
+- Describe the concept of "reshaping the Hamiltonian"
+- Introduce the concept of "non-algorithmic quantum-Poised Realm-classical computing"
+- Explain the diversity of organized behaviors of Poised Realm Systems
+- Introduce Random Boolean networks
+- Describe the behavior of critical networks
+- Introduce the concept of "set complexity"
+- Explain the definition of set complexity
+- Describe the extension of set complexity to Poised Realm Systems
+- Introduce the concept of "quantum set complexity"
+- Explain the definition of quantum set complexity
+- Describe the total classical and quantum set complexity
+- Introduce the design criterion for Poised Realm systems
+- Explain the maximization of set complexity
+- Describe the possible neurobiological implications
+- Introduce the proposal of Trans-Turing behavior in molecules
+- Explain the proposal of experience and qualia
+- Describe the proposal of entangled degrees of freedom
+- Introduce the proposal of classical behaviors of neurons
+- Explain the proposal of decoherence and measurement
+- Describe the proposal of unity of consciousness
+- Introduce the approach to test the proposal
+- Explain the approach of selecting for ease of anesthetization
+- Describe the approach of comparing wild type and mutant proteins
+- Introduce the preferred embodiment of Trans-Turing systems
+- Explain the incorporation of chlorophyll molecules and antenna proteins
+- introduce quantum networks via proximity of nodes
+- motivate chlorophyll antenna complexes in liposomes
+- describe liposome creation process
+- summarize alternative mode of realization
+- introduce nanotube structure with affixed chlorophyll
+- describe incorporation into liposomes
+- explain Trans-Turing systems without liposomes
+- discuss quantum coherent behavior and entanglement
+- calculate quantum pathways and decoherence
+- introduce incident driving quantum or classical input
+- control decoherence and recoherence
+- discuss coupled quantum systems
+- introduce 2DPE spectropscopy
+- measure decoherence and recoherence
+- note spin echo and neutron spin echo
+- achieve controlled entanglement
+- discuss entanglement in Trans-Turing systems
+- measure classical degrees of freedom
+- form a "society" of interacting Trans-Turing systems
+- alter entanglement and classical correlations
+- discuss total behavior of Trans-Turing systems
+- obtain organic molecules for Trans-Turing systems
+- assemble molecules for incorporation into liposomes
+- link to consciousness in the human brain
+- hypothesize conscious experience with quantum measurement
+- motivate quantum measurement and conscious experience
+- propose experiments to test association of conscious experience with quantum measurement
+- describe construction of living neural networks with controlled architecture
+- introduce entanglement of diverse unconnected or connected quantum degrees of freedom
+- explain how entanglement leads to highly correlated classical degrees of freedom
+- describe how local alterations can alter entanglement patterns
+- introduce analogy of classical physics volume and quantum wave behavior
+- describe how quantum systems "know" their boundary conditions
+- apply analogy to brain synapses and potential wells
+- explain how tuning of potential wells allows Poised Realm behaviors to "know" their external world
+- generalize to plurality of Trans-Turing systems
+- introduce evolving Trans-Turing systems for desired behaviors
+- describe use of Holland Genetic Algorithm or adaptive strategy
+- explain how figure of merit is used for selection
+- describe creation of fitness landscape
+- discuss statistical features of fitness landscape
+- introduce Global Pareto optimality
+- describe embodiment of Trans-Turing systems in self-reproducing protocells
+- explain how exaptations allow new functions to emerge
+- introduce swim bladders as example of preadaptation
+- describe how preadaptations solve the frame problem
+- introduce collectively autocatalytic sets of polymers
+- explain catalytic task closure
+- describe Kantian wholes and their consequences
+- explain how evolving Kantian wholes solve the frame problem
+- describe preferred embodiment of Trans-Turing systems in protocells
+- introduce autocatalytic set of polymers in reproducing liposome
+- describe open-ended evolution of autocatalytic sets
+- introduce artificial cells with DNA, RNA, and encoded proteins
+- describe use of artificial cells to create populations of evolving Trans-turing systems
+- introduce genetic regulatory net of transcription factors
+- describe marriage of classical critical behavior with Trans-Turing behavior
+

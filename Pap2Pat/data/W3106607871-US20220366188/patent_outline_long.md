@@ -1,0 +1,269 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to semantic role labeling
+
+## SUMMARY
+
+- introduce embodiments
+- describe system components
+- outline system operation
+
+## DETAILED DESCRIPTION
+
+- introduce semantic role labeling
+- define semantic role labeling
+- motivate semantic role labeling
+- application of semantic role labeling
+- decompose semantic role labeling into sub-tasks
+- assume predicate is given
+- convert argument prediction into sequence tagging problem
+- perform semantic role labeling using machine learning model
+- limitations of deep learning models
+- motivate need for addressing low-frequency exceptions
+- introduce parameterized neighborhood memory adaptation
+- define parameterized neighborhood memory adaptation
+- motivate parameterized neighborhood memory adaptation
+- describe library generation phase
+- generate activation maps for tokens
+- record activation maps in library
+- describe neighborhood parameterization phase
+- initialize learnable neighborhood parameters
+- generate activation maps for input sentence
+- identify nearest neighbors in library
+- combine learnable neighborhood parameters with nearest neighbors
+- compute neighborhood parametric representation
+- feed neighborhood parametric representation to remaining hidden layers
+- output labels predicting semantic roles
+- update learnable neighborhood parameters via backpropagation
+- describe improved performance of deep learning model
+- introduce computerized tool implementing parameterized neighborhood memory adaptation
+- describe components of computerized tool
+- describe receiver component
+- describe library component
+- describe parametric component and execution component
+- define parametric component
+- create neighborhood parameters
+- retrain labeler with neighborhood parameters
+- generate token activation maps
+- identify k nearest neighbors
+- combine neighbors with neighborhood parameters
+- generate neighborhood parametric representation
+- feed representations to labeler
+- compute loss and update parameters
+- repeat process for entire training dataset
+- execute retrained SRL model on input sentence
+- generate word embeddings
+- generate token activation maps
+- identify k nearest neighbors
+- combine neighbors with neighborhood parameters
+- generate neighborhood parametric representation
+- feed representations to labeler
+- generate labels for input sentence
+- provide example of SRL model training
+- generate library of token activation maps
+- randomly initialize neighborhood parameters
+- identify nearest neighbors for each token
+- compute Euclidean distance
+- select k nearest neighbors
+- generate neighborhood parametric representation
+- feed representations to labeler
+- compute loss and update parameters
+- repeat process for entire training dataset
+- collate library by token
+- compute Euclidean distance by token
+- select k nearest neighbors by token
+- generate neighborhood parametric representation
+- discuss hardware and software implementation
+- define tasks associated with embodiments
+- emphasize computerized nature of invention
+- introduce parameterized neighborhood memory adaptation for semantic role labeling
+- motivate need for improved SRL models
+- describe limitations of conventional SRL models
+- introduce embodiments of the invention
+- describe integration of embodiments into practical applications
+- describe technical problem addressed by embodiments
+- describe solution provided by embodiments
+- describe improved performance metrics of embodiments
+- describe control of tangible devices based on embodiments
+- introduce figures and disclosure
+- describe non-limiting examples of embodiments
+- illustrate block diagram of example system
+- describe parametric neighborhood memory adaptation system
+- describe semantic role labeling model
+- describe embedder
+- describe encoder
+- describe labeler
+- describe training dataset
+- describe limitations of conventional SRL models
+- describe PNMA system
+- describe processor and computer-readable memory
+- describe receiver component
+- describe library component
+- describe parametric component
+- describe execution component
+- describe updating of neighborhood parameters
+- describe retraining of labeler
+- describe deployment of SRL model
+- describe improved performance metrics
+- describe technical improvement in field of SRL
+- describe non-limiting examples of embodiments
+- describe various aspects of embodiments
+- conclude description of embodiments
+- illustrate semantic role labeling model
+- describe embedder functionality
+- describe encoder functionality
+- describe labeler functionality
+- illustrate token activation map library generation
+- describe library component functionality
+- illustrate neighborhood parameters generation
+- describe parametric component functionality
+- illustrate neighborhood parametric representation generation
+- describe nearest neighbors identification
+- describe neighborhood parametric representation computation
+- illustrate system with token activation map library
+- illustrate system with neighborhood parameters
+- describe neighborhood parameters initialization
+- describe neighborhood parameters update
+- illustrate neighborhood parametric representation usage
+- describe labeler retraining
+- describe execution component functionality
+- illustrate sentence processing
+- describe word embeddings generation
+- describe token activation maps generation
+- describe nearest neighbors identification
+- describe neighborhood parametric representation computation
+- illustrate neighborhood parameters learning
+- describe execution component and parametric component interaction
+- describe labeler retraining
+- illustrate neighborhood parameters update
+- describe neighborhood parameters refinement
+- describe labeler performance improvement
+- describe low-frequency exceptions handling
+- describe data patterns and distributions exhibition
+- describe labeler generalization
+- describe performance benefit
+- describe technical problem overcoming
+- describe semantic role labeling improvement
+- introduce SRL model
+- describe parametric component
+- describe execution component
+- describe labeler
+- describe embedder
+- describe encoder
+- describe token activation map library
+- describe neighborhood parameters
+- describe neighborhood parametric representation
+- describe updating neighborhood parameters
+- describe retraining labeler
+- describe generating neighborhood parametric representations
+- describe feeding neighborhood parametric representations to labeler
+- describe outputting labels
+- describe computing losses and errors
+- describe updating weights and biases
+- describe repeating process for all sentences
+- describe executing retrained SRL model
+- describe generating token activation maps
+- describe leveraging token activation map library
+- describe generating neighborhood parametric representations
+- describe feeding neighborhood parametric representations to labeler
+- describe outputting labels
+- describe empirical results
+- describe hypothesis
+- describe testing hypothesis
+- describe library generation phase
+- describe parameterized neighborhood memory adaptation phase
+- describe computing compact representation
+- describe using neighborhood parameters
+- describe updating parameters
+- describe retraining classification layers
+- describe evaluating final model
+- describe experimental setup
+- describe results
+- describe improved performance
+- describe illustrating flow diagrams
+- describe feeding training sentences
+- describe recording token activation maps
+- describe feeding training sentence
+- describe identifying nearest neighbors
+- describe computing neighborhood parametric representation
+- describe feeding computed representations
+- describe updating parameters
+- describe iterating through acts
+- describe feeding sentence
+- describe identifying nearest neighbors
+- describe computing neighborhood parametric representation
+- clarify usage of term "each"
+- provide context for embodiments
+- describe computing environment
+- define program modules
+- discuss computer system configurations
+- describe distributed computing environments
+- define computer-readable storage media
+- describe machine-readable storage media
+- discuss computer-readable storage media types
+- describe tangible and non-transitory media
+- discuss accessing computer-readable storage media
+- define communications media
+- describe modulated data signal
+- discuss wired and wireless media
+- introduce computing environment 1400
+- describe computer 1402 components
+- discuss processing unit 1404
+- describe system memory 1406
+- discuss system bus 1408
+- describe ROM 1410 and RAM 1412
+- discuss BIOS and memory types
+- describe internal hard disk drive 1414
+- discuss external storage devices 1416
+- describe drive 1420 and disk 1422
+- discuss interface technologies
+- describe program modules and data
+- discuss emulation technologies
+- describe input/output devices and network connections
+- describe computer in WAN networking environment
+- describe modem and system bus connection
+- describe networked environment and remote memory storage
+- describe cloud storage systems and network connections
+- describe external storage interface and cloud storage management
+- describe wireless communication and devices
+- introduce cloud computing environment
+- describe cloud computing nodes and local computing devices
+- describe node communication and network types
+- describe functional abstraction layers in cloud computing
+- describe hardware and software layer components
+- describe virtualization layer and virtual entities
+- describe management layer and resource provisioning
+- describe metering and pricing
+- describe security and identity verification
+- describe user portal and service level management
+- describe service level agreement planning and fulfillment
+- describe workloads layer and functionality examples
+- describe differentially private federated learning processing
+- describe system, method, apparatus, and computer program product
+- describe computer readable storage medium and program instructions
+- describe network and computer readable storage medium interaction
+- describe computer readable program instructions and execution
+- describe flowcharts and block diagrams
+- describe computer implemented process and instructions
+- describe special purpose hardware-based systems
+- describe program modules and abstract data types
+- describe computer system configurations and distributed computing
+- describe component, system, platform, and interface definitions
+- describe apparatus with specific functionality
+- describe electronic components and virtual machine emulation
+- describe inclusive "or" and articles "a" and "an"
+- describe example and exemplary usage
+- describe processor and computing processing unit definitions
+- describe memory components and storage
+- describe volatile and nonvolatile memory
+- describe RAM and various types of RAM
+- describe memory components and computer-implemented methods
+- describe systems and computer-implemented methods examples
+- describe combinations and permutations of the disclosure
+- describe inclusive terms and transitional words
+- describe modifications and variations
+- describe terminology and explanation
+- describe practical application and technical improvement
+

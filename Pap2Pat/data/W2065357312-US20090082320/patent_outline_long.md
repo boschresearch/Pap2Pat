@@ -1,0 +1,284 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- introduce fluorinated 4-azasteroid derivatives
+
+## BACKGROUND OF THE INVENTION
+
+- define androgen receptor
+- describe androgen receptor structure
+- explain androgen ligand binding
+- discuss androgen therapy
+- motivate tissue-selective androgen receptor agonists
+- describe limitations of current androgen therapies
+- discuss role of androgens in bone formation
+- summarize beneficial effects of androgens on bone
+- describe negative effects of androgens on lipid profile
+- discuss need for tissue-selective androgen receptor agonists
+- describe osteoporosis
+- discuss treatment of osteoporosis
+- motivate osteoanabolic agents
+- discuss selective androgen receptor modulators
+- describe hematopoietic disorders
+- discuss treatment of anemia
+- motivate selective androgen receptor modulators
+- discuss obesity
+- describe treatment of obesity
+- motivate selective androgen receptor modulators
+- discuss non-steroidal compounds
+- describe prior art
+- discuss need for more effective agents
+- motivate selective androgen receptor modulators
+- describe in vitro cell-assays
+- discuss identification of SARM compounds
+- describe tissue selective AR agonism
+- discuss treatment of diseases
+- describe prostate disease
+- discuss treatment of hirsutism
+- describe treatment of sarcopenia and frailty
+- discuss treatment of obesity
+- describe treatment of vasomotor symptoms
+- discuss treatment of prostate cancer
+- describe treatment of pancreatic cancer
+- discuss treatment of hematopoietic disorders
+
+## SUMMARY OF THE INVENTION
+
+- define structural formula I
+- specify R1, R2, and R3 groups
+- list aryl group options
+- describe substituents for alkyl and cycloheteroalkyl groups
+- describe substituents for aryl groups
+- specify R2 and R3 ring formation
+- claim androgen receptor agonist activity
+- describe pharmaceutical compositions
+- outline treatment methods for various conditions
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define structural formula I
+- specify R1 options
+- specify R2 options
+- specify R3 options
+- describe first embodiment
+- describe second to sixth embodiments
+- describe another embodiment
+- describe yet another embodiment
+- define alkyl and aryl groups
+- specify substituents for alkyl and aryl groups
+- describe methylene carbon atom substitutions
+- list illustrative compounds of the present invention
+- specify pharmaceutically acceptable salts and enantiomers
+- describe another embodiment of the invention
+- list compounds of the present invention in another embodiment
+- specify pharmaceutically acceptable salts and enantiomers
+- describe yet another variant of the compounds
+- list compounds of the present invention in yet another variant
+- specify pharmaceutically acceptable salts and enantiomers
+- describe one embodiment of the invention
+- list compounds of the present invention in one embodiment
+- specify pharmaceutically acceptable salts and enantiomers
+- discuss asymmetric centers and chiral axes
+- describe racemates and diastereomers
+- discuss tautomers
+- illustrate tautomeric structures
+- describe X as the remainder of the fluorinated 4-azasteroid derivatives
+- specify that claims include tautomeric structures
+- specify that claims include mixtures of tautomers
+- describe the scope of the invention
+- conclude the description of the invention
+- define alkyl
+- define alkenyl, alkynyl, alkylidene, cycloalkyl, cycloheteroalkyl
+- define alkoxy
+- define aryl group
+- define alkyl and arylalkyl
+- define halogen
+- define oxy, thio, oxo, and carbonyl
+- define substituted
+- describe nomenclature rules
+- introduce compounds of the present invention
+- describe tissue-selective modulators of androgen receptor
+- describe activation of androgen receptor in bone and muscle tissue
+- describe antagonism of androgen receptor in prostate
+- describe compounds that block androgen receptor in prostate and uterus
+- describe treatment of conditions caused by androgen deficiency
+- describe pharmaceutical compositions
+- describe treatment of osteoporosis and other bone disorders
+- describe treatment of male hypogonadism and related conditions
+- describe treatment of arthritic conditions
+- describe treatment of female androgen deficiency
+- describe treatment of prostate cancer
+- describe treatment of pancreatic cancer
+- describe advantages over existing hormone replacement therapy
+- describe increase in blood cells and treatment of hematopoietic disorders
+- describe binding affinity for androgen receptor
+- describe pharmacologically effective amounts
+- describe enantiomerically pure form
+- describe separation of enantiomers
+- define agonist, partial agonist, and antagonist
+- define pharmaceutically acceptable salts
+- describe salts derived from inorganic bases
+- describe salts derived from organic non-toxic bases
+- describe salts derived from acids
+- define therapeutically effective amount
+- define composition
+- define pharmaceutically acceptable
+- define administration of a compound
+- define modulating a function mediated by the androgen receptor
+- describe administration of a compound of structural formula I
+- determine effective amount of a compound
+- describe daily dosage of a compound of structural formula I
+- describe forms of compositions for oral administration
+- describe dose administration frequency
+- describe administration via intranasal, transdermal, rectal, or vaginal routes
+- exemplify pharmaceutical composition
+- describe process for making a pharmaceutical composition
+- describe formulations of tissue-selective androgen receptor modulator
+- describe carrier requirements
+- describe pharmaceutical formulation
+- describe formulations suitable for oral administration
+- describe preparation of formulations
+- describe topical preparations
+- describe liposome delivery systems
+- describe monoclonal antibody delivery systems
+- describe soluble polymer delivery systems
+- describe biodegradable polymer delivery systems
+- describe formulations suitable for parenteral administration
+- describe concentrated solutions or solids
+- describe combination with other therapeutically active compounds
+- describe treatment of osteoporosis
+- describe combination with bone-strengthening agents
+- describe treatment of periodontal disease, bone fracture, and bone damage
+- describe combination with estrogen or estrogen derivative
+- describe combination with bisphosphonates
+- describe combination with antiestrogens or SERMs
+- describe combination with cathepsin K inhibitors
+- describe combination with vacuolar ATPase inhibitors
+- describe combination with osteoprotegerin
+- describe combination with other agents
+- describe bone antiresorptive agents
+- describe estrogen and estrogen derivatives
+- describe bisphosphonates
+- describe specific bisphosphonates
+- describe combination with alendronate
+- describe combination with other bisphosphonates
+- introduce αvβ3 integrin receptor antagonists
+- describe peptidyl and peptidomimetic antagonists
+- reference scientific and patent literature
+- describe benzazepine, benzodiazepine, and benzocycloheptene antagonists
+- describe dibenzocycloheptene, dibenzocycloheptane, and dibenzoxazepine antagonists
+- describe backbone conformational ring constraints
+- describe phenyl constraint antagonists
+- describe monocyclic ring constraint antagonists
+- describe bicyclic ring constraint antagonists
+- reference reviews for additional literature
+- introduce cathepsin K
+- describe cysteine protease inhibitors
+- introduce HMG-CoA reductase inhibitors
+- describe statins
+- introduce osteoclast vacuolar ATPase inhibitors
+- describe proton pump inhibitors
+- introduce VEGF antagonists
+- describe PPARγ activators
+- introduce calcitonin
+- introduce protein kinase inhibitors
+- describe p38 inhibitors
+- introduce osteoanabolic agents
+- describe parathyroid hormone
+- introduce calcium receptor antagonists
+- introduce growth hormone secretagogues
+- describe growth hormone and growth hormone releasing hormone
+- introduce insulin-like growth factor
+- introduce bone morphogenetic protein
+- introduce inhibitors of BMP antagonism
+- describe tissue-selective androgen receptor modulators
+- combine with osteoprotegerin for bone loss treatment
+- reference U.S. Pat. No. 6,288,032
+- employ prostaglandin derivatives
+- employ fibroblast growth factors
+- combine with other agents for skeletal benefits
+- employ vitamin D and derivatives
+- employ vitamin K and derivatives
+- employ soy isoflavones
+- employ fluoride salts
+- employ dietary calcium supplements
+- describe daily dosage ranges
+- adjust dosages for combined agents
+- employ bisphosphonates
+- employ controlled-release delivery devices
+- treat atherosclerosis, hypercholesterolemia, and hyperlipidemia
+- combine with lipid-altering compounds
+- combine with other pharmaceutical agents
+- describe daily dosage ranges for HMG-CoA reductase inhibitors
+- describe daily dosage ranges for other agents
+- effect bone turnover markers
+- administer individual components separately or concurrently
+
+### ABBREVIATIONS USED IN THE DESCRIPTION OF THE PREPARATION OF THE COMPOUNDS OF THE PRESENT INVENTION
+
+- define abbreviations
+- list abbreviations
+
+### Preparation of the Compounds of the Invention
+
+- introduce preparation methods
+- describe Scheme 1
+- describe Scheme 2
+- describe Scheme 3
+- describe Scheme 4
+- provide Example 1
+- describe Step A of Example 1
+- describe Step B of Example 1
+- describe Step C of Example 1
+- describe Step D of Example 1
+- provide Example 2
+- describe Step A of Example 2
+- describe Step B of Example 2
+- provide Examples 3-50
+- provide Example 51
+- describe Step A of Example 51
+- describe Step B of Example 51
+- describe Step C of Example 51
+- describe Step D of Example 51
+- describe Step E of Example 51
+- provide Examples 52-72
+
+### In Vitro and In Vivo Assays for Identification of Compounds with SARM Activity
+
+- introduce hydroxylapatite-based radioligand displacement assay
+- describe binding buffer composition
+- describe wash buffer composition
+- introduce methyltrienolone and its use
+- describe cell passaging procedure
+- describe preparation of MDA-MB-453 cell lysate
+- outline procedure for multiple compound screening
+- describe serial dilution of compounds
+- describe incubation and washing procedures
+- describe measurement of luciferase activity
+- introduce MMP1 promoter suppression assay
+- describe cell culture and transfection procedures
+- describe treatment with test compounds
+- describe measurement of luciferase activity
+- introduce mammalian two-hybrid assay
+- describe transfection procedure
+- describe treatment with test compounds
+- describe measurement of luciferase activity
+- introduce antagonist mode of mammalian two-hybrid assay
+- describe treatment with test compounds and R1881
+- describe measurement of luciferase activity
+- introduce trans-activation modulation of androgen receptor assay
+- describe cell culture and transfection procedures
+- describe treatment with test compounds
+- describe measurement of luciferase activity
+- introduce in vivo prostate assay
+- describe orchiectomy procedure
+- describe treatment with test compounds
+- describe necropsy and endpoint measurements
+- introduce in vivo bone formation assay
+- describe ovariectomy and treatment with alendronate
+- describe treatment with test compounds
+- describe necropsy and endpoint measurements
+- describe histological analysis of bone samples
+- conclude with scope of invention
+

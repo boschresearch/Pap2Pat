@@ -1,0 +1,22 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING RIGHTS TO INVENTION MADE UNDER FEDERALLY-SPONSORED RESEARCH AND DEVELOPMENT
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION
+
+### [Tag Circuit]
+
+### [Tag Lifetimes]
+
+### [Beam Transmission Patterns]
+
+### [Transmission Detection Range]
+
+### [Coding and Activation]
+

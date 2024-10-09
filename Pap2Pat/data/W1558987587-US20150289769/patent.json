@@ -1,0 +1,266 @@
+{
+    "id": "US20150289769",
+    "authors": [
+        "Bharath Ambale Venkatesh",
+        "Anderson Armstrong",
+        "Joao A.C. Lima",
+        "Chia-Ying Liu",
+        "Boaz D. Rosen"
+    ],
+    "title": "Method and System for Determining Strain Relaxation of Left Ventricular Diastolic Function",
+    "date": "2013-11-01 00:00:00",
+    "abstract": "An embodiment in accordance with the present invention provides a system and method for determining cardiac events. The system and method include using an imaging modality to obtain a cardiac image of the subject. The image is then used to determine the subject's systolic, post-systolic, and early diastolic strain peaks. Additionally, a strain rate index (SRI) value is computed for the subject using the systolic, post-systolic, and early diastolic strain peaks. The SRI value can then be used to determine a level of risk of cardiac failure. Further, a likelihood of atrial fibrillation can also be determined. The SRI value and risk of cardiac event can then be used to create a treatment plan for the subject, if necessary.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates generally to cardiac health. More particularly the present invention relates to determining cardiac function using a strain relaxation index."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define cardiac health field"
+                    ],
+                    "num_characters": 171,
+                    "outline_medium": [
+                        "define cardiac health field"
+                    ],
+                    "outline_short": [
+                        "define cardiac health field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Heart failure and atrial fibrillation are major health concerns, especially when they are clinical outcomes in older individuals. Diastolic dysfunction is a highly prevalent condition and has been associated with heart failure (HF) and atrial fibrillation (AF) in cross-sectional studies. It has traditionally been thought that the physiological cause of HF and AF is abnormal diastolic deformation of the left ventricle. However, this remains largely unproven.",
+                        "Circumferential strain and strain rate using CMR tagged images has been shown to accurately and reproducibly quantify deformation of the left ventricle (LV) through diastole. Evaluation of diastolic function using cardiac magnetic resonance (CMR) has not been firmly established in spite of a number of efforts. Early-diastolic strain rate and untwist rate have been used as diastolic parameters, but not as metrics to predict cardiovascular events.",
+                        "It would therefore be advantageous to provide a method and system to predict cardiovascular events using CMR analysis for deformation of the LV through diastole."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate cardiac health problem",
+                        "limitations of prior art"
+                    ],
+                    "num_characters": 1075,
+                    "outline_medium": [
+                        "motivate cardiac function analysis"
+                    ],
+                    "outline_short": [
+                        "motivate cardiac function analysis"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The foregoing needs are met, to a great extent, by the present invention, wherein in one aspect a method for determining cardiac function and health for a subject is provided. The method includes a step of obtaining a cardiac image of the subject using an imaging modality and a step of determining from the cardiac image of the subject systolic, post-systolic, and early diastolic strain peaks. Additionally, the method includes a step of computing a strain rate index (SRI) value using the systolic, post-systolic, and early diastolic strain peaks. The method also includes a step of determining a level of risk of cardiac failure using the SRI value.",
+                        "In accordance with another aspect of the present invention, the method can include using mid-wall ventricular circumferential strain and strain rates throughout a cardiac cycle of the subject in order to determine the systolic, post-systolic, and early diastolic strain peaks. A treatment plan can be determined for the subject based on the level of risk of cardiac failure. Another step can include assessing cardiac deformation that precedes filling. Varying heart rates can be normalized by applying the difference between a cardiac RR interval and a time to peak systolic strain. The SRI algorithm used can be expressed as",
+                        "\\(\\frac{{SRI} = \\left\\{ {\\left( {T_{pos} - T_{sys}} \\right)/\\left( {{{RR}\ue89e\\mspace{14mu} \ue89e{Interval}} - T_{sys}} \\right)} \\right\\}}{E_{Ecc}}.\\)",
+                        "The imaging modality can take the form of a magnetic resonance imaging machine, an echocardiography device, or any other suitable device or modality. The method can be used for determining a risk of heart failure and also a risk of atrial fibrillation. It should also be noted that a non-transitory computer readable medium can be programmed to execute the steps of the method. However, any suitable means for executing the method known to or conceivable by one of skill in the art can also be used.",
+                        "In accordance with another aspect of the present invention, a system for determining cardiac function and health of a subject includes an imaging modality configured to obtain a cardiac image of the subject. The system also includes a processor configured to communicate with the imaging modality and process the cardiac image obtained by the imaging modality. The processor is configured to execute steps including determining from the cardiac image of the subject systolic, post-systolic, and early diastolic strain peaks. The processor is also configured to compute a strain rate index (SRI) value using the systolic, post-systolic, and early diastolic strain peaks. Further, the processor is configured to determine a level of risk of cardiac failure using the SRI value."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce cardiac function method",
+                        "compute strain rate index",
+                        "determine cardiac failure risk",
+                        "embodiment of imaging modality",
+                        "embodiment of system"
+                    ],
+                    "num_characters": 2703,
+                    "outline_medium": [
+                        "outline method for cardiac function analysis",
+                        "outline system for cardiac function analysis"
+                    ],
+                    "outline_short": [
+                        "outline cardiac function method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The presently disclosed subject matter now will be described more fully hereinafter with reference to the accompanying Drawings, in which some, but not all embodiments of the inventions are shown. Like numbers refer to like elements throughout. The presently disclosed subject matter may be embodied in many different forms and should not be construed as limited to the embodiments set forth herein; rather, these embodiments are provided so that this disclosure will satisfy applicable legal requirements. Indeed, many modifications and other embodiments of the presently disclosed subject matter set forth herein will come to mind to one skilled in the art to which the presently disclosed subject matter pertains having the benefit of the teachings presented in the foregoing descriptions and the associated Drawings. Therefore, it is to be understood that the presently disclosed subject matter is not to be limited to the specific embodiments disclosed and that modifications and other embodiments are intended to be included within the scope of the appended claims.",
+                        "An embodiment in accordance with the present invention provides a system and method for determining cardiac events. The system and method include using an imaging modality to obtain a cardiac image of the subject. The image is then used to determine the subject's systolic, post-systolic, and early diastolic strain peaks. Additionally, a strain rate index (SRI) value is computed for the subject using the systolic, post-systolic, and early diastolic strain peaks. The SRI value can then be used to determine a level of risk of cardiac failure. Further, a likelihood of atrial fibrillation can also be determined The SRI value and risk of cardiac event can then be used to create a treatment plan for the subject, if necessary.",
+                        "Although LV diastolic dysfunction is an important component of cardiac disease, the power of diastolic function parameters to early predict heart failure (HF) is unknown. The current CMR methods being employed to characterize diastolic function are: peak filling rate, transmitral flow velocity, torsion recoil (untwisting), and early diastolic strain rate. However, the methods used to assess diastolic function by CMR are not firmly established. CMR tagged images can be used to accurately assess LV strain and strain rate curves, reflecting the cardiac deformation. During the cardiac cycle, the circumferential strain reaches a minimum value (maximal shortening) at the end systole, indicated as the peak systolic strain. In sequence, starts the left ventricular relaxation, with the closure of the aortic valve (AVC).",
+                        "The isovolumic relaxation time (IVRT) is defined as the time between aortic valve closure and mitral valve opening. During IVRT, a positive peak can be observed in the strain rate curve (following the aortic valve closure) and another minimum peak can be seen in the strain curve, the post-systolic strain peak. After the mitral valve opening, another positive peak is presented in the strain rate curve, indicating relaxation in the early diastolic filling phase. The bigger the difference between time to systolic and post-systolic strain peaks in the very early stage of cardiac relaxation, the longer it takes to achieve pressure dropin LV. The drop in LV pressure is related to diastolic filling. This is similar to the IVRT, which increases in the case of diastolic dysfunction; the longer the IVRT, the lower the ability to create early diastolic suction in the LV. The early diastolic strain rate (E peak) decreases with diastolic dysfunction, indicating slower rates of tissue relaxation. The combination of very early relaxation and tissue relaxation properties could be an accurate indicator of diastolic LV function.",
+                        "SRI should be able to both discriminate heart failure conditions and predict HF over and above traditional risk assessments. It should also compare well with diastolic parameters from echocardiography. Also, while the motivation for SRI came out of a need to assess diastolic function from CMR, SRI can be used to evaluate diastolic function from strain curves (longitudinal, circumferential, radial, maximal shortening, maximal thickening) irrespective of the modality as long as there is sufficient temporal resolution. The very early LV relaxation is characterized by the difference in time between post-systolic and systolic peaks (analogous to IVRT) and values directly related to diastolic dysfunction. The tissue properties can be assessed using the early diastolic strain rate peak and it is inversely related to diastolic dysfunction. The strain relaxation index will be calculated as the difference between post-systolic and systolic times of the strain peaks divided by the early diastolic strain rate peak. The time difference will be normalized by the cardiac RR interval during the CMR scans to adjust for varying heart rates.",
+                        "FIG. 1 illustrates a flow diagram of a method 10 for determining cardiac function and health for a subject. The method includes step 12 of obtaining a cardiac image of the subject using an imaging modality and step 14 of determining from the cardiac image of the subject systolic, post-systolic, and early diastolic strain peaks. Additionally, the method includes a step 16 of computing a strain rate index (SRI) value using the systolic, post-systolic, and early diastolic strain peaks. The method also includes step 18 of determining a level of risk of cardiac failure using the SRI value.",
+                        "More particularly, and in addition to the steps illustrated in FIG. 1, the method can include using mid-wall ventricular circumferential strain and strain rates throughout a cardiac cycle of the subject in order to determine the systolic, post-systolic, and early diastolic strain peaks. A treatment plan can be determined for the subject based on the level of risk of cardiac failure. Another step can include assessing cardiac deformation that precedes filling. Varying heart rates can be normalized by applying the difference between a cardiac RR interval and a time to peak systolic strain. The SRI algorithm used can be expressed as",
+                        "\\(\\frac{{SRI} = \\left\\{ {\\left( {T_{pos} - T_{sys}} \\right)/\\left( {{{RR}\ue89e\\mspace{14mu} \ue89e{Interval}} - T_{sys}} \\right)} \\right\\}}{E_{Ecc}}.\\)",
+                        "The imaging modality can take the form of a magnetic resonance imaging machine, an echocardiography device, or any other suitable device or modality. The method can be used to determining heart failure and also atrial fibrillation. It should also be noted that a non-transitory computer readable medium can be programmed to execute the steps of the method. However, any suitable means for executing the method known to or conceivable by one of skill in the art can also be used.",
+                        "In order to further illustrate the steps of the method described with respect to FIG. 1, above, FIG. 2 illustrates a schematic diagram of the system 50 used to execute the method. The system 50 includes an imaging modality 52, and it should be noted that, as described above with respect to the method, any suitable imaging modality known to or conceivable by one of skill in the art can be used to obtain images of the subject's heart can be used. Images taken with the imaging modality 52 can be transferred via a network 54, such as a local area network, the internet, a server, or any other suitable networking construct known to or conceivable by one of skill in the art, to a computing device 56. Alternately, the computing device 56 can be a separate device connected to or integrated directly with the imaging modality 52 using a hard wired connection.",
+                        "Further, with respect to FIG. 2, the computing device 56, preferably, includes a non-transitory computer readable medium 58 or other executable disc known to one of skill in the art. The non-transitory computer readable medium contains code such that the method described herein can be executed and used to determine cardiac function. The non-transitory computer readable medium 58 can also include a user interface 60 and a display 62 such that an operator can interact with the system 50 in order to input any necessary values or configure the functionality of the program as well as view the results of the method executed by the computing device 56. The display can take the form of a computer screen, tablet computing device, smartphone, television, or other display device known to one of skill in the art.",
+                        "It should be noted that a non-transitory computer readable medium can be programmed to execute the above described method. The non-transitory computer readable medium can be loaded onto a computing device or server. The computing device or server can also be in networked communication with a source of data for analysis by the program loaded onto the non-transitory computer readable medium. The computing device can take any suitable form known to one of skill in the art such as a personal computer, tablet computing device, smartphone, processor, server, etc. The non-transitory computer readable medium can either be loaded directly onto a hard drive of the computing device, can be on a separate hard disk or CD-ROM, can be on the server described above, another independent server, a network, or any other suitable configuration known to or conceivable by one of skill in the art. A non-transitory computer readable medium is defined as any article of manufacture that contains data that can be read by a computer. Such computer readable media includes but is not limited to magnetic media, such as a floppy disk, a flexible disk, a hard disk, reel-to-reel tape, cartridge tape, cassette tape or cards; optical media such as CD-ROM and writeable compact disc; magneto-optical media in disc, tape or card form; and paper media, such as punched cards and paper tape. The non-transitory computer readable medium contains code such that the method described herein can be executed.",
+                        "FIG. 3 illustrates deformation curves through the cardiac cycle. During the cardiac cycle, the circumferential strain reaches a minimum value (maximal shortening) at the peak systolic strain. In sequence, starts the left ventricular relaxation, followed by the closure of the aortic valve (AVC). During the isovolumic relaxation time (IVRT), a positive peak can be observed in the strain rate curve following the aortic valve closure. In sequence, the post-systolic strain peak can be seen. The strain rate curve also shows a positive peak after the mitral valve opening, indicating relaxation.",
+                        "The bigger the difference between time to systolic and post-systolic strain peaks in the early stage of cardiac relaxation, the longer it takes to achieve the pressure drop required for diastolic filling. This is similar to the IVRT, which increases in the case of diastolic dysfunction. Moreover, the early diastolic strain rate (E peak) decreases with diastolic dysfunction, indicating stiffer tissue. Therefore, the combination of early cardiac relaxation and tissue relaxation properties is proposed as an accurate indicator of diastolic LV function. As noted above, SRI can be calculated as follows:",
+                        "\\(\\frac{{SRI} = \\left\\{ {\\left( {T_{pos} - T_{sys}} \\right)/\\left( {{{RR}\ue89e\\mspace{14mu} \ue89e{Interval}} - T_{sys}} \\right)} \\right\\}}{E_{Ecc}}\\)",
+                        "As calculated in the algorithm above, SRI is the difference between post-systolic (Tpos) and systolic (Tsys) times of the strain peaks divided by the early diastolic strain rate (EEcc) peak. The time difference was normalized by the difference between the cardiac RR interval and the time to peak systolic strain, representing the total interval of relaxation."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EXAMPLE",
+                            "paragraphs": [
+                                "The following example is included merely as an illustration of the present method and is not intended to be considered limiting. This example is one of many possible applications of the methods described above. Any other suitable application of the above described methods known to or conceivable by one of skill in the art could also be created and used. While this example is directed to analysis of early diastolic function with a CMR image, any suitable point in the cardiac cycle can be studied with any suitable imaging modality, known to or conceivable by one of skill in the art.",
+                                "The study was performed using data from the multi-ethnic study of atherosclerosis (MESA) is a prospective, population-based observational cohort study of 6814 men and women representing four racial/ethnic groups (Caucasian, African-American, Hispanic and Chinese-American), aged 45-84 years and free of clinical cardiovascular disease at enrolment. As part of the baseline examination, between 2001 and 2002, a total of 5004 (73%) participants received comprehensive cardiac MRI studies at six field centers. The institutional review boards of all MESA field centers approved the study protocol. Of the 5004 individuals who underwent cardiac MRI examination, 1617 participants with available clinical covariate data agreed to a slightly longer examination to accommodate MRI tagging analyses. Of these participants, deformation data could not be analyzed owing to data acquisition failure or of insufficient quality for strain and strain rate determination in 73 participants. The remaining 1544 participants with complete circumferential strain, strain rate and strain relaxation rate measurements were included in this analysis. Of these 1544 participants, 743 underwent a follow-up examination after an 8-year period, with MRI tagging as a part of the imaging protocol. Of these, 27 were excluded because of insufficient quality of determined strain or data acquisition failure. Tagged MR protocol and analysis methods remained the same in the baseline and follow-up visits.",
+                                "Images were acquired in whole body scanners using electrocardiogram triggered segmented k-space fast spoiled gradient-echo pulse sequences during breath holds. CMR myocardial horizontal and vertical tagging was performed on three LV short-axis slices (base, mid, apex) by non-selective radiofrequency pulses separated by a spatial modulation of magnetization (SPAMM) encoding gradients. CMR myocardial horizontal and vertical tagging was performed on three LV short-axis slices (base, mid, apex) by non-selective radiofrequency pulses separated by a spatial modulation of magnetization (SPAMM) encoding gradients. Parameters for tagged images were: field of view, 40 cm; slice thickness 7 to 8 mm; repetition time, 6 ms; echo time, 3 ms; flip angle, 10\u00b0 to 12\u00b0 ; phase encoding views, 128 with 6 phase encoding views per segment; temporal resolution, 40 ms; tag spacing, 7 mm. All MRI studies were submitted to the major MRI reading center of the MESA trial located in Johns Hopkins Hospital. The analyses of all acquired images were performed in the core laboratory of the MRI reading center.",
+                                "Short-axis tagged slices were analyzed by the harmonic phase method. Systolic and post-systolic circumferential strain peaks were assessed from the mid-wall, mid-ventricular circumferential strain (Ecc) and strain rates through the cardiac cycle. These were then used to compute SRI. Ecc values are conventionally negative to express circumferential shortening.",
+                                "With respect to risk factors, serum concentration of NT-proBNP was measured using a highly sensitive and specific immunoassay based on a double-antibody sandwich technique (Roche Diagnostics Corporation, Indianapolis, Ind.). Coronary calcium scores were obtained from the phantom-adjusted mean Agatston calcium score.",
+                                "A telephone interviewer contacted each participant (or representative) every 6 to 9 months to inquire about all interim hospital admissions, cardiovascular outpatient diagnoses, and deaths. Two physicians reviewed all records for independent end point classification and assignment of event dates.",
+                                "Criteria for HF as an end-point included symptomatic HF diagnosed by a physician and patient receiving medical treatment for HF and 1) pulmonary edema/congestion by chest X-ray, and/or 2) dilated ventricle or poor LV function by echocardiography or ventriculography, or evidence of LV diastolic dysfunction. Participants who had a physician's diagnosis of HF were classified as having HF. Criteria for AF as end-point was if AF was diagnosed present on an ECG obtained as part of the study procedure. The combined end-point was ascertained as the first-documented event of either HF or AF.",
+                                "All continuous variables were visually inspected for normality of distribution. Continuous presented as mean/SD, and categorical presented as %. SRI, early diastolic strain rate and NT-proBNP showed skewed distributions and underwent natural logarithmic transformation. Longitudinal differences in SRI were assessed with a Student's T-test in the population with a follow-up MRI exam.",
+                                "Univariate analysis using Cox regression was used to assess the performance of SRI and peak early diastolic circumferential strain to predict the combined end-point. The AHA recommendations for evaluations of novel markers of cardiovascular risk was used as the basis of statistical analysis. Cox proportional hazards models were also used to assess the association of SRI to events independent of conventional risk factors (age, race, gender; body mass index, smoking status, systolic blood pressure, diastolic blood pressure, use of hypertension medication, diabetes mellitus/impaired fasting glucose, LDL cholesterol, total cholesterol). The hazard ratio, associated confidence intervals and p-value were used to evaluate this association. The Schoenfeld's test was used to confirm proportionality of the hazards assumption. Harrell's C-statistic was used to measure the area under the receiver-operator curves to measure the predictive discrimination of multi-markers for each end-point. The added value of SRI to the existing model was calculated from the difference in the calculated c-statistic and the significance of this difference.",
+                                "Integrated discrimination index (IDI) was calculated to report the improvement in discrimination based on the survival probabilities with the addition of SRI to the conventional risk factors. Net reclassification index (NRI) was used to quantify the number of individuals correctly and incorrectly reclassified with the addition of the new biomarker in to low, intermediate and high risk categories. Risk categories of <5%, 5-20% and >20% were used in the measurement of NRI for HF and the combined end-points. For AF as the end-point, categories were defined as <5%, 5-15% and >15%.",
+                                "A secondary analysis was performed to test the ability of SRI to predict HF and/or AF independent of other established risk factors in addition to the conventional risk factors. Due to lack of availability of all covariates, this was done in a reduced population. Cox proportional hazards models were also used to assess the association of SRI to events independent of conventional and established risk factors. Models considered were those with the progressive addition of established risk factors to conventional risk actors\u2014coronary calcium score (model 1), NT-proBNP (model 2), LV mass index (model 3) and LV ejection fraction (model 4).",
+                                "Calibration of the models was confirmed using the Gronnesby-Borgan tests to compare the expected and observed event rates across deciles for each model, See Table 9. Kaplan-Meier curves of event incidence were used for comparison of survival rates across tertiles of SRI. Two tailed p-values were <0.05 used for significance testing. All statistical analysis was done using STATA v11.0 (StataCorp LP, CollegeStation, Tex., USA).",
+                                "Baseline characteristics of the participants are provided in Table 1. HF was incident in 2.6% of the population while AF was incident in 3.9% over the 8-year follow-up period. 14 participants had both AF and HF, 12 of those with AF preceding HF. Incidences of HF and AF were associated with increased age, male gender, higher BMI, higher systolic blood pressure, higher levels of coronary calcium, higher levels of NT-proBNP, decreased early-diastolic strain rate and increased SRI. FIG. 4 illustrates that the normalized relaxation interval increases in participants with HF or AF compared to those without.",
+                                "In the longitudinal follow-up, logSRI increased (baseline=0.74\u00b10.58, follow-up=1\u00b10.58, p<0.05) and early diastolic strain rate decreased (baseline=0.12\u00b10.06, follow-up=0.10\u00b10.04, p<0.05) in the population (n=696) without events. There were only twenty individuals as part of the follow-up MRI exams with HF/AF and hence SRI between the visits was not compared.",
+                                "FIG. 5 illustrates the Kaplan-Meier survival curves for the combined end-point across tertiles of SRI. Univariate and multivariate analyses of early-diastolic strain rate and SRI are shown in Table 2 for the combined end-point. The hazard ratio (HR) for SRI and the early diastolic strain rate were both significant for the combined end-point for the univariate analysis and after adjustment for conventional risk factors. The C-statistic for prediction of combined end-points was greater for SRI compared to the early diastolic strain rate. Table 3 provides analysis with HF and AF as end-points.",
+                                "For the combined end-point, there was a significant improvement in discrimination (IDI) with the addition of SRI to the conventional risk factors of 1.2% (p<0.05). The IDI for HF and AF as end-points were 1.5% (p=0.07) and 0.9% (p<0.05) respectively.",
+                                "Risk category reclassification (NRI) was higher for prediction of combined end-points as compared to only the conventional risk factors. The improvement in the net reclassification was both a result of upward reclassification of events to higher risk categories and a downward reclassification of non-events (see Table 4). The NRI for HF and AF were 14.4% (p=0.05) and 5.9% (p\u22120.14) respectively (see Table 5).",
+                                "A secondary analysis was performed in a reduced population (see Table 6). In this analysis (see Table 4), the HR for SRI was stable and significant for the combined end-point across all models tested after adjustments for established risk factors (categories of calcium score, NT-proBNP, LV mass index and LV ejection fraction). The area under the receiver-operator curve improved with the addition of SRI for all the models. A similar table for analysis with HF and AF as end-points (see Table 7).",
+                                "Gronnesby-Borgan calibration tests were used to compare the expected and observed event rates across deciles for each model (see Table 8), without significant difference (all p>0.05).",
+                                "SRI increases compared to the baseline after an 8-year follow-up exam in the same population (excluding those with HF/AF) indicating that diastolic dysfunction increases with age. The AHA-recommended guidelines were used to establish SRI as a new biomarker, and a powerful predictor of HF and/or AF, after a 8-year follow-up period, independent of conventional and established risk factors. Univariate analysis showed that SRI was better than tagged MRI-derived peak early diastolic strain rate, an index of tissue stiffness as a predictor of the combined end-point. Multivariate analysis revealed that SRI was an independent predictor of HF or AF after adjustment for conventional and established risk factors. Moreover, adding SRI to conventional risk factors significantly improved discrimination and reclassification for the combined clinical outcome of HF and AF in a large asymptomatic population.",
+                                "Post-systolic shortening has mainly been used in the study of ischemic segments, but it also can be found in healthy hearts. While the term \u201cpost-systolic shortening\u201d has generally been used only when the post-systolic strain is greater than the systolic strain, we use it to denote the local minimum found on the strain curve prior to the time of peak early-diastolic strain rate irrespective of whether it was greater than the peak systolic strain. The interval between the occurrence of the post-systolic peak and the peak systolic strain is a measure of cardiac relaxation and is influenced by LV filling pressures, it is clearly increased in those with HF and AF compared to those without events, as illustrated in FIG. 4. IVRT from tissue Doppler imaging has been shown to be a load independent measure of active relaxation. SRI also accounts for ventricular stiffness measure by early-diastolic strain rate (another load independent quantity), influenced by fibrosis, myocyte loss and changes in LV geometry. The combination of the two improves the predictive ability of SRI over the conventionally used early-diastolic strain rate. To our knowledge, this is the first CMR-derived measurement of diastolic function that predicts the combined end-point.",
+                                "In this example, SRI is calculated from mid-wall, mid-ventricular circumferential strain from a single tagged MR slice. While tagged MRI has been the gold standard for strain imaging, in theory, SRI could also be calculated speckle tracking echocardiography (STE). SRI can also potentially be calculated from longitudinal strain and radial strain curves. Therefore, SRI could be a very useful measurement for evaluating diastolic function in clinical practice.",
+                                "It should be noted that although the invention is described with respect to studying early diastolic deformation it is possible that this analysis could be applied to different stages of the cardiac cycle. It should also be noted that imaging modalities other than a CMR could potentially be used to execute the present method. Of course, it is also possible that an imaging modality currently in development or an imaging modality yet to be conceived could also be used to implement this invention.",
+                                "The many features and advantages of the invention are apparent from the detailed specification, and thus, it is intended by the appended claims to cover all such features and advantages of the invention which fall within the true spirit and scope of the invention. Further, since numerous modifications and variations will readily occur to those skilled in the art, it is not desired to limit the invention to the exact construction and operation illustrated and described, and accordingly, all suitable modifications and equivalents may be resorted to, falling within the scope of the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce example study",
+                                "describe MESA study",
+                                "introduce cardiac MRI studies",
+                                "describe data acquisition and analysis",
+                                "introduce circumferential strain and strain rates",
+                                "compute SRI value",
+                                "describe risk factors",
+                                "introduce NT-proBNP measurement",
+                                "describe coronary calcium scores",
+                                "introduce event classification",
+                                "describe HF and AF criteria",
+                                "introduce combined end-point",
+                                "describe statistical analysis",
+                                "introduce Cox regression",
+                                "describe hazard ratio and confidence intervals",
+                                "introduce Harrell's C-statistic",
+                                "describe integrated discrimination index (IDI)",
+                                "introduce net reclassification index (NRI)",
+                                "describe secondary analysis",
+                                "introduce established risk factors",
+                                "describe model calibration",
+                                "introduce Kaplan-Meier curves",
+                                "describe baseline characteristics",
+                                "introduce HF and AF incidence",
+                                "describe SRI and early diastolic strain rate changes",
+                                "illustrate Kaplan-Meier survival curves",
+                                "describe univariate and multivariate analyses",
+                                "introduce IDI and NRI results",
+                                "conclude SRI as a predictor of HF and/or AF"
+                            ],
+                            "num_characters": 14568,
+                            "outline_medium": [
+                                "introduce example",
+                                "describe study population",
+                                "explain data acquisition",
+                                "describe image analysis",
+                                "calculate SRI",
+                                "assess risk factors",
+                                "describe event classification",
+                                "perform statistical analysis",
+                                "illustrate Kaplan-Meier survival curves",
+                                "provide univariate and multivariate analysis",
+                                "calculate integrated discrimination index (IDI)",
+                                "calculate net reclassification index (NRI)",
+                                "perform secondary analysis",
+                                "conclude example"
+                            ],
+                            "outline_short": [
+                                "introduce example of SRI application",
+                                "describe study population and data collection",
+                                "explain SRI calculation and analysis",
+                                "present results of SRI prediction of cardiac events",
+                                "discuss significance of SRI in cardiac disease diagnosis",
+                                "compare SRI with other diastolic function parameters",
+                                "conclude SRI as a powerful predictor of cardiac events"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce patent application structure",
+                        "describe patent application purpose",
+                        "motivate cardiac event determination",
+                        "describe system and method for determining cardiac events",
+                        "introduce imaging modality",
+                        "describe cardiac image analysis",
+                        "compute strain rate index (SRI) value",
+                        "determine level of risk of cardiac failure",
+                        "describe limitations of current CMR methods",
+                        "introduce circumferential strain and strain rates",
+                        "describe systolic, post-systolic, and early diastolic strain peaks",
+                        "explain isovolumic relaxation time (IVRT)",
+                        "describe early diastolic strain rate (E peak)",
+                        "motivate SRI development",
+                        "describe SRI calculation",
+                        "illustrate method flow diagram",
+                        "describe system components",
+                        "introduce non-transitory computer readable medium",
+                        "describe user interface and display",
+                        "illustrate deformation curves",
+                        "describe SRI algorithm",
+                        "introduce example study",
+                        "conclude SRI as a predictor of HF and/or AF"
+                    ],
+                    "num_characters": 11622,
+                    "outline_medium": [
+                        "introduce patent application structure",
+                        "describe patent application scope",
+                        "motivate cardiac event determination",
+                        "describe system and method for determining cardiac events",
+                        "explain strain rate index (SRI) calculation",
+                        "illustrate method flow diagram",
+                        "describe system components",
+                        "explain non-transitory computer readable medium",
+                        "illustrate deformation curves",
+                        "provide example of method application",
+                        "conclude patent application scope"
+                    ],
+                    "outline_short": [
+                        "introduce patent application structure",
+                        "describe system and method for determining cardiac events",
+                        "explain strain rate index (SRI) calculation and significance",
+                        "illustrate system components and method steps",
+                        "provide example of SRI application in cardiac disease diagnosis"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for determining cardiac function and health for a subject comprising:\nobtaining a cardiac image of the subject using an imaging modality;\ndetermining from the cardiac image of the subject systolic, post-systolic, and early diastolic strain peaks;\ncomputing a strain rate index (SRI) value using the systolic, post-systolic, and early diastolic strain peaks;\ndetermining a level of risk of cardiac failure using the SRI value.",
+        "2. The method of claim 1 further comprising using mid-wall ventricular circumferential strain and strain rates throughout a cardiac cycle of the subject in order to determine the systolic, post-systolic, and early diastolic strain peaks.",
+        "3. The method of claim 1 further comprising determining a treatment plan for the subject based on the level of risk of cardiac failure.",
+        "4. The method of claim 1 further comprising assessing cardiac deformation that precedes filling.",
+        "5. The method of claim 1 further comprising programming a non-transitory computer readable medium with the steps to execute the method.",
+        "6. The method of claim 1 further comprising normalizing varying heart rates by applying the difference between a cardiac RR interval and a time to peak systolic strain.",
+        "7. The method of claim 1 further comprising determining SRI with an algorithm\n\n\\(\\frac{{SRI} = \\left\\{ {\\left( {T_{pos} - T_{sys}} \\right)/\\left( {{{RR}\ue89e\\mspace{14mu} \ue89e{Interval}} - T_{sys}} \\right)} \\right\\}}{E_{Ecc}}.\\)",
+        "8. The method of claim 1 wherein the imaging modality comprises a magnetic resonance imaging machine.",
+        "9. The method of claim 1 wherein the imaging modality comprises an echocardiography device.",
+        "10. The method of claim 1 further comprising determining heart failure.",
+        "11. The method of claim 1 further comprising determining atrial fibrillation.",
+        "12. A system for determining cardiac function and health of a subject comprising:\nan imaging modality configured to obtain a cardiac image of the subject;\na processor configured to communicate with the imaging modality and process the cardiac image obtained by the imaging modality;\na non-transitory computer readable medium programmed for:\ndetermining, from the cardiac image of the subject, systolic, post-systolic, and early diastolic strain peaks;\ncomputing a strain rate index (SRI) value using the systolic, post-systolic, and early diastolic strain peaks; and\ndetermining a level of risk of cardiac failure using the SRI value.",
+        "13. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for assessing cardiac deformation that precedes filling.",
+        "14. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for normalizing varying heart rates by applying the difference between a cardiac RR interval and a time to peak systolic strain.",
+        "15. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for determining SRI with an algorithm comprising\n\n\\(\\frac{{SRI} = \\left\\{ {\\left( {T_{pos} - T_{sys}} \\right)/\\left( {{{RR}\ue89e\\mspace{14mu} \ue89e{Interval}} - T_{sys}} \\right)} \\right\\}}{E_{Ecc}}.\\)",
+        "16. The system of claim 12 wherein the imaging modality comprises a magnetic resonance imaging machine.",
+        "17. The system of claim 12 wherein the imaging modality comprises an echocardiography device.",
+        "18. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for determining heart failure.",
+        "19. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for determining atrial fibrillation.",
+        "20. The system of claim 12 further comprising the non-transitory computer readable medium being programmed for suggesting a course of treatment for the subject."
+    ]
+}

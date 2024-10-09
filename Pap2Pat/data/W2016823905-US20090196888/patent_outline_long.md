@@ -1,0 +1,189 @@
+# DESCRIPTION
+
+- claim benefit of provisional application
+
+## BACKGROUND OF THE INVENTION
+
+- introduce coccidiosis disease
+- describe economic problem in chicken industry
+- explain life cycle of Eimeria parasite
+- discuss limitations of coccidiostat drugs
+- motivate vaccine development
+- describe native antigens from gametocyte stages
+- summarize previous research on protective antigens
+- describe molecular characterization of antigens
+- discuss cloning and sequencing of genes
+- explain expression of genes in bacteria
+- describe immunofluorescence analysis
+- discuss glycosylation of antigens
+- introduce 14 kDa antigen from oocyst walls
+- summarize subunit vaccine research
+- describe sporozoite extracts and monoclonal antibodies
+- discuss cloning and sequencing of sporozoite genes
+- summarize protective immunity results
+- introduce merozoite stage antigens
+- discuss correlation between maternal immunity and antibodies
+- summarize previous research on protective maternal immunity
+
+## SUMMARY OF THE INVENTION
+
+- introduce nucleic acid encoding 56 and 82 kDa antigens
+- describe 30 kDa and 14 kDa proteins from gametocytes
+- summarize vaccine and method of immunization
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce isolated nucleic acid
+- define 56 kDa polypeptide
+- describe homologs of polypeptide
+- specify identity percentages for homologs
+- describe nucleotide sequence of homologs
+- specify identity percentages for nucleotide sequence
+- describe DNA molecule embodiment
+- describe cDNA molecule embodiment
+- describe RNA molecule embodiment
+- describe operatively linked promoter
+- introduce vector embodiment
+- describe plasmid embodiment
+- specify nucleotide sequence of plasmid
+- describe host cell embodiment
+- specify types of host cells
+- introduce transformed cell embodiment
+- describe transformed cell clone
+- describe plasmid deposition
+- describe bacterial cell deposition
+- introduce method of producing recombinant polypeptide
+- describe culturing transformed cell
+- describe isolating recombinant polypeptide
+- introduce vaccine embodiment
+- describe plasmid-based vaccine
+- describe recombinant polypeptide-based vaccine
+- describe mixture vaccine embodiment
+- introduce second antigen embodiment
+- describe 30 kDa protein antigen
+- describe 14 kDa protein antigen
+- describe nucleic acid antigen
+- introduce third antigen embodiment
+- describe 230 kDa sporozoite/merozoite antigen
+- describe nucleic acid sequence of antigen
+- describe protein sequencing and cloning
+- introduce fourth antigen embodiment
+- describe polypeptide antigen
+- describe nucleic acid sequence of antigen
+- introduce method of immunizing
+- describe administration methods
+- define nucleic acid embodiments
+- specify DNA molecule embodiments
+- describe cDNA molecule embodiments
+- provide nucleotide sequence embodiments
+- define RNA molecule embodiments
+- describe isolated nucleic acid embodiments
+- specify vector embodiments
+- describe plasmid embodiments
+- provide host cell embodiments
+- describe transformed cell embodiments
+- deposit plasmid and bacterial cell
+- describe transformed cell embodiments
+- provide method of producing recombinant polypeptide
+- describe vaccine embodiments
+- provide method of immunizing subject
+- specify subject species embodiments
+- describe administration methods
+- provide fertilized egg embodiments
+- describe recombinant polypeptide embodiments
+- provide additional protein embodiments
+- describe administration methods
+- describe vaccine for Eimeria oocysts
+- specify avian species
+- describe immunization method
+- specify live virus
+- specify subject species
+- describe feeding method
+- specify plant
+- describe plasmid administration
+- specify homologous nucleic acid
+- define homology
+- describe hybridization conditions
+- describe nucleotide sequences
+- describe functionally equivalent sequences
+- describe hybridization conditions
+- describe coding sequences
+- describe methods for isolating sequences
+- describe stringent conditions
+- describe homologous polypeptides
+- describe biological activity
+- describe portion of polypeptide
+- describe deletion, insertion, and substitution
+- describe recombinant cloning and sequencing
+- describe expression of recombinant antigens
+- describe vaccine against coccidiosis
+- describe cloning and sequencing of antigens
+- describe production of gametocytes
+- describe purification of antigens
+- describe amino acid sequencing
+- describe RACE PCR
+- describe cDNA sequencing
+- describe Southern and northern blotting
+- describe cloning into expression vector
+- describe expression in E. coli
+- describe identification of recombinant antigens
+- describe relationship between 56 kDa antigen and 30 kDa oocyst protein
+
+### EXPERIMENTAL DETAILS
+
+- Purify Eimeria maxima gametocytes on a large scale
+- Sacrifice chickens, remove intestines, and wash with PBS
+- Cut intestines into pieces, incubate with hyaluronidase, and filter
+- Collect and count gametocytes, freeze at -70°C
+- Purify 56, 82, and 230 kDa gametocyte antigens
+- Extract proteins from gametocytes, run over Sepharose 4B column
+- Elute affinity-purified gametocyte antigens (APGA) and lyophilize
+- Analyze APGA by SDS-PAGE, visualize 56 and 82 kDa native antigens
+- Perform two-dimensional gel electrophoresis of APGA
+- Identify and sequence 56 and 82 kDa antigens by immunoblotting
+- Sequence amino-terminus of 56 and 82 kDa proteins
+- Determine internal tryptic peptide sequences of 56 and 82 kDa proteins
+- Compare tryptic peptide sequences to cloned DNA sequences
+- Perform RACE PCR cloning and sequencing of 56 and 82 kDa genes
+- Analyze PCR products, clone into pGEMT-Easy vector
+- Sequence cloned DNA, translate to amino acid sequences
+- Compare predicted protein sizes to native protein sizes
+- Perform Southern blotting using E. maxima and chicken DNA
+- Probe with P32-labeled cDNA for 56 and 82 kDa antigens
+- Perform Northern blotting using E. maxima and chicken RNA
+- Probe with P32-labeled 56 and 82 kDa cDNA clones
+- Express recombinant 56 and 82 kDa antigens in E. coli
+- Clone full-length genes into pTrcHis vector
+- Express and analyze recombinant proteins by SDS-PAGE and immunoblotting
+- Use anti-His antibody to detect recombinant proteins
+- Use chicken polyclonal anti-APGA antibody to detect recombinant proteins
+- Express partial fragment of 56 kDa gene in pTrcHis vector
+- Analyze recombinant protein by SDS-PAGE and immunoblotting
+- Detect homology of 56 kDa antigen with 30 kDa antigen from E. maxima oocysts
+- Sequence N-terminus of 30 kDa protein
+- Express gam 56, a 56 kDa gametocyte antigen from Eimeria maxima
+- Clone gene fragment into pTRCHisb expression vector
+- Express and analyze recombinant protein by SDS-PAGE and immunoblotting
+- Use anti-His antibody to detect recombinant protein
+- Express r250 protein, a recombinant fragment of the 250 kDa a sexual stage protein
+- Clone gene fragment into pTrcHisB expression vector
+- Express and analyze recombinant protein by SDS-PAGE and immunoblotting
+- Use anti-His antibody to detect recombinant protein
+- Perform immunization trial with recombinant proteins
+- Use chickens, immunize with recombinant proteins, and collect sera
+- Analyze sera by ELISA and immunoblotting
+- Perform challenge experiment with E. maxima oocysts
+- Collect and count oocysts, analyze for contamination
+- Evaluate protection against E. maxima infection
+
+## Example 12
+
+- describe oocyst wall formation
+- introduce 56 kDa and 82 kDa proteins
+- analyze antibody recognition
+- identify 30 kDa protein
+- resolve 14 kDa protein into components
+- sequence N-terminus of proteins
+- summarize protein composition of oocyst wall
+- discuss di-tyrosine crosslinks
+

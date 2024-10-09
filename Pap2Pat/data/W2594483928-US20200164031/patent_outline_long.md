@@ -1,0 +1,239 @@
+# DESCRIPTION
+
+- claim priority and incorporate references
+
+## BACKGROUND ART
+
+- introduce heart failure and its causes
+- discuss inflammatory cardiomyopathies
+- describe inflammation in heart failure
+- discuss limitations of cytokine blocking
+- motivate need for better immunotherapy targets
+
+## SUMMARY OF THE INVENTION
+
+- identify immune mediators and T cell involvement
+- describe therapeutic approach using abatacept
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define inhibitor of T cell costimulation and/or activation and/or function
+- specify use in treatment and/or prevention of cardiac pathologies
+- describe preferred embodiments of inhibitor
+- list molecules promoting T cell costimulation
+- describe CTLA4-Ig molecule
+- specify amino acid sequence of CTLA4-Ig molecule
+- introduce Abatacept as preferred inhibitor
+- describe nucleic acid molecule encoding for inhibitor
+- introduce expression vector comprising nucleic acid molecule
+- describe genetically engineered host cell or nanoparticle or microvesicle
+- introduce pharmaceutical composition comprising inhibitor
+- list cardiac pathologies
+- describe related symptoms of cardiac pathologies
+- exclude inflammatory cardiomyopathy caused by autoimmunity
+- exclude inflammatory cardiomyopathy caused by immune response to infection
+- define inhibitor of T cell activation
+- describe T cell activation and costimulation
+- define inhibitor of T cell costimulation
+- define inhibitor of T cell function
+- describe decrease in specified parameter
+- list non-limiting examples of inhibitors
+- list protein sequences
+- describe CTLA4 protein
+- define CTLA4 molecule
+- describe extracellular domain of CTLA4
+- describe fusion protein
+- describe Abatacept
+- describe administration of Abatacept
+- list dosages of CTLA4Ig
+- describe effective amount of CTLA4Ig
+- describe administration schedule of CTLA4Ig
+- describe CTLA4-Ig monomer
+- describe extracellular domain of CTLA4-Ig
+- describe modified human IgG1 hinge region
+- describe CTLA4 variants
+- list amino acid modifications
+- describe Fc region
+- describe linker
+- describe peptide bond
+- describe glycine-serine polymers
+- describe polyethylene glycol
+- describe CTLA4-Ig proteins
+- describe variant CTLA4
+- describe variant Fc region
+- describe amino acid modification
+- describe amino acid substitution
+- describe amino acid insertion
+- describe amino acid deletion
+- describe carbohydrate attachment
+- describe IgG carbohydrate structure
+- describe CTLA4-Ig molecule
+- describe multimer forms of CTLA4-Ig
+- describe binding of CTLA4-Ig to CD80 and/or CD86
+- define B7-1 and B7-2
+- define B7-1-Ig and B7-2-Ig
+- conclude description of CTLA4-Ig molecule
+- define mediators of costimulation and inhibitors of costimulation
+- introduce CTLA4Ig protein molecule
+- describe SEQ ID NO:2 monomers and dimers
+- define SEQ ID NO:2 proteins
+- introduce Abatacept
+- define heart failure
+- describe symptoms of heart failure
+- list causes of heart failure
+- classify heart failure into NYHA classes
+- describe ACC/AHA classification
+- define antibody and immunoglobulin
+- introduce antibody fragments
+- define antibody mimetics
+- describe chimeric antibodies
+- introduce polynucleotides
+- describe derivatives of polynucleotides
+- define functional fragments of polynucleotides
+- define protein
+- define analogue
+- define derivative
+- define functional mutants
+- define fragments
+- define effective amount
+- discuss dosage
+- discuss administration methods
+- describe delivery vehicles
+- list examples of delivery vehicles
+- discuss gene transfer techniques
+- describe pharmaceutical compositions
+- list forms of pharmaceutical compositions
+- discuss administration routes
+- describe expression vectors
+- discuss regulatory sequences
+- discuss marker genes
+- discuss promoters
+- describe recombinant expression vectors
+- discuss pharmaceutical compositions for oral administration
+- discuss pharmaceutical compositions for buccal administration
+- discuss pharmaceutical compositions for parenteral administration
+- describe injectable solutions
+- discuss preservatives and additives
+- describe unit dose forms
+- discuss typical dosages
+- describe emulsifying agents
+- discuss pharmaceutical compositions for rectal administration
+- discuss pharmaceutical compositions for topical application
+- describe transdermal administration
+- discuss iontophoresis
+- describe administration routes
+- discuss sustained release forms
+- describe pharmaceutical formulations
+- discuss combination therapy
+- describe measuring T cell activation
+- define expression vector
+- define host cell
+
+### EXAMPLES
+
+- describe animal procedures
+- detail transverse aortic constriction
+- outline echocardiography
+- describe abatacept treatment
+- detail adoptive transfer of wild-type T and B cells
+- describe human biopsies
+- outline quantitative RT-PCR analysis
+- describe transgenic Akt mice
+- detail exercise-trained mice
+- describe immunohistochemical analysis
+- outline TUNEL assay
+- describe in vitro stimulation of splenocytes
+- detail flow cytometry
+- outline statistics
+- describe normal distribution tests
+- detail parametric and non-parametric analysis
+- outline Grubb's test
+- describe statistical significance tests
+- detail Fisher's exact tests
+- outline standard deviation plot
+- introduce analysis of soluble and cellular immune mediators
+- describe TAC model for pathological cardiac hypertrophy
+- detail qPCR analysis
+- outline cardiac functionality monitoring
+- describe upregulation of Tnfa and Il6
+- detail chemokine expression
+- describe Itgam upregulation
+- outline correlation between Cd3e and il6
+- describe immune response mediator profile
+- detail exercise-trained mice analysis
+- outline Akt transgenic mice analysis
+- describe heart dysfunction versus inflammation dot plot
+- introduce T cells in stressed myocardium
+- motivate T cells as therapeutic target
+- examine T cell presence in mice
+- analyze T cell abundance in human heart failure patients
+- summarize link between T cell presence, cardiac fibrosis, and pathological hypertrophy
+- introduce T cell costimulation blockade
+- test abatacept treatment in TAC model
+- analyze cardiac function after abatacept treatment
+- examine morphometric indicators of cardiac hypertrophy
+- analyze myocardial "stress genes"
+- assess fibrosis levels
+- discuss potential for alloreactivity
+- compare abatacept treatment to isotype control
+- test abatacept treatment at late timepoint
+- analyze protective effect of abatacept at late timepoint
+- discuss mechanism of abatacept
+- examine T cell activation
+- analyze T cell numbers
+- assess macrophage activation
+- examine maturation state of macrophages
+- discuss downstream effects on macrophages
+- examine immune mediators
+- analyze IL-10 upregulation
+- discuss anti-inflammatory effects of IL-10
+- examine source of IL-10
+- test abatacept in IL-10KO mice
+- analyze T cell presence in IL-10KO mice
+- examine cardiac hypertrophy in IL-10KO mice
+- analyze cardiomyocyte apoptosis
+- discuss IL-10 dependence of abatacept effects
+- calculate heart dysfunction and inflammation indices
+- discuss improvement of cardiac function
+- transfer IL-10 wild-type B cells or T cells into IL-10KO recipients
+- test abatacept treatment in IL-10KO recipients
+- analyze protective effect of IL-10 wild-type B cells
+- analyze protective effect of IL-10 wild-type T cells
+- discuss B cell-mediated effect
+- assess IL-10 production in vitro
+- summarize mechanism of abatacept-mediated cardioprotective effect
+
+## Discussion
+
+- introduce abatacept as an FDA-approved drug
+- describe its effect on cardiac hypertrophy and fibrosis
+- explain the role of immune response in HF pathogenesis
+- discuss the association between inflammation and cardiac pathology
+- motivate targeting the adaptive immune system
+- describe the limitations of targeting cytokines
+- introduce fibrosis as a clinical feature of pathological cardiac hypertrophy
+- explain the role of Th2-polarized T cells and innate immune cells in fibrosis
+- describe the presence of T cells in human HF patients
+- introduce regulatory T cells (Treg) and their role in regulating T cell action
+- discuss the link between Treg deficiency and chronic HF
+- describe the detection of Tregs in TAC mice
+- discuss the potential of Treg adoptive cell therapy
+- introduce the use of super-activating anti-CD28 antibodies to activate Tregs
+- discuss the limitations of this approach
+- introduce the use of a fusion protein based on CTLA-4
+- describe the function of CTLA-4 in inhibiting T cell function
+- introduce abatacept as a CTLA4-Ig fusion protein
+- describe the use of the TAC mouse model of HF
+- discuss the systemic suppression of T cells by abatacept
+- describe the reduction of cardiac pathology and delayed development of symptoms
+- explain the mechanism of abatacept in inhibiting T cell function
+- describe the inhibition of cardiac macrophage activation and maturation
+- discuss the attenuation of inflammation and the balance of pro- vs anti-cytokine levels
+- introduce IL-10 as a necessary cytokine for the protective effects of abatacept
+- describe the production of IL-10 by B cells after in vitro treatment with abatacept
+- discuss the schematic outline of the combined removal of pro-inflammatory T cell activation and induction of anti-inflammatory signals
+- explain the potential of abatacept in inducing regulatory T cells
+- discuss the targeting of costimulation and its relevance to the chronicity of cardiac disease
+- summarize the findings of the present study
+- conclude the potential of an FDA-approved drug in treating or preventing heart failure pathologies
+

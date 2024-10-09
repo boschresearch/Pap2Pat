@@ -1,0 +1,211 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate query-response systems
+- limitations of conventional data collection
+- decreased applicability to new domains
+- reduced accuracy of training data
+- diminished model flexibility
+
+## SUMMARY
+
+- introduce logical-form dialogue generator
+- generate NL2QL dataset
+- apply logical-form rules
+
+## DETAILED DESCRIPTION
+
+- introduce NL2QL pair generation system
+- describe system inputs (database, lexicon, ontology)
+- explain logical-form dialogue generation
+- generate logical-form representation of dialogue sequence
+- apply NL2QL template to generate natural language query and query language representation
+- crowdsource alternative natural language expressions
+- generate contextual representation of prior-generated dialogue sequence
+- analyze contextual representation to determine satisfied logical-form rules
+- generate logical-form representation of subsequent dialogue sequence
+- apply NL2QL template to generate natural language query and query language representation
+- provide natural language query and query language representation to query-language-response database
+- describe advantages of NL2QL pair generation system (domain-independence)
+- describe advantages of NL2QL pair generation system (increased accuracy)
+- describe advantages of NL2QL pair generation system (flexible model architecture)
+- define dialogue sequence
+- define logical-form representation
+- define predicate and predicate arguments
+- define contextual representation
+- define predicate arguments (question instance, question entity, question path)
+- define logical-form rules
+- define natural language query
+- define crowdsourced expressions
+- define query-language representation
+- define NL2QL template
+- define NL2QL pair database
+- define NL2QL machine-learning model
+- describe learning parameters for NL2QL machine-learning model
+- describe loss function for updating parameters
+- describe seq2seq model
+- introduce computing system environment
+- describe server(s)
+- describe client device
+- describe third-party server
+- describe network
+- describe client application
+- describe user input
+- describe NL2QL pair generation system
+- describe digital content management system
+- describe handling of logical-form dialogue generation
+- describe handling of NL2QL pairs
+- describe sending data to NL2QL pair database
+- describe training NL2QL machine-learning model
+- describe alternative arrangements of components
+- describe direct communication between components
+- describe logical-form dialogue generation for multi-turn construction
+- describe generating paired natural language queries and query-language representations
+- describe using logical-form rules to generate logical-form representation
+- describe using NL2QL template to generate natural language query and query language representation
+- describe providing NL2QL pair to NL2QL pair database
+- describe using NL2QL pair generation system for training NL2QL machine-learning model
+- introduce NL2QL pair generation system
+- describe system components
+- illustrate system architecture
+- define domain ontology
+- describe domain database
+- explain lexicon
+- generate NL2QL pairs
+- provide NL2QL pairs to database
+- describe logical-form dialogue generation
+- illustrate logical-form specification
+- define predicates
+- describe arguments
+- explain value types
+- generate logical-form representation
+- describe inquire-property predicate
+- describe retrieve-objects predicate
+- describe compute predicate
+- illustrate logical-form dialogue sequence
+- describe contextualization model
+- apply context update rules
+- generate contextual representation
+- compare contextual representation with logical-form rules
+- generate logical-form representation
+- describe first rule
+- describe trigger condition
+- describe logical-form action
+- describe second rule
+- describe trigger condition
+- describe logical-form action
+- describe third rule
+- describe trigger condition
+- describe logical-form action
+- describe fourth rule
+- describe trigger condition
+- describe logical-form action
+- illustrate NL2QL pair generation
+- describe NL2QL template
+- generate NL2QL pair
+- provide NL2QL pair to database
+- describe training NL2QL machine-learning model
+- describe application of NL2QL machine-learning model
+- describe advantages of NL2QL pair generation system
+- describe domain independence
+- describe cross-application
+- describe training various machine-learning models
+- describe responding to natural language questions
+- describe query language content
+- describe software program
+- describe application design/build
+- describe terminology
+- describe functionality
+- introduce NL2QL pair generation system
+- describe NL2QL pair generation system components
+- define logical-form representation
+- motivate logical-form rules
+- describe fifth rule
+- describe sixth rule
+- describe seventh rule
+- illustrate logical-form representation
+- describe NL2QL template
+- describe natural language query template
+- describe query-language representation template
+- generate natural language query
+- generate query-language representation
+- pair natural language query and query-language representation
+- describe third-party crowdsourcing system
+- generate refined natural language queries
+- execute query-language representation
+- generate response
+- update context
+- iterate dialogue sequence generation
+- conclude dialogue session
+- transmit NL2QL pairs
+- train NL2QL machine-learning model
+- compare predicted query-language representation
+- determine loss
+- adjust model parameters
+- illustrate experimental results
+- describe accuracy chart
+- describe domain input manager
+- describe logical-form dialogue generator
+- describe NL2QL pair engine
+- describe NL2QL machine-learning model optimization data facility
+- describe data storage manager
+- obtain domain inputs
+- extract data from domain database
+- extract data from domain ontology
+- extract data from lexicon
+- generate contextual representation
+- compare with logical-form rules
+- generate logical-form representation
+- apply NL2QL template
+- generate natural language query
+- generate query-language representation
+- convert predicate argument terms
+- train NL2QL machine-learning model
+- utilize NL2QL pair database
+- maintain data
+- store logical-form rules
+- store NL2QL pairs
+- store domain data
+- store model parameters
+- describe computing device components
+- introduce software, hardware, or both
+- explain computer-executable instructions
+- describe operating systems and applications
+- illustrate mobile device applications
+- describe product names and trademarks
+- introduce NL2QL pair generation system
+- describe flowcharts and acts
+- illustrate generating contextual representation
+- compare contextual representation to logical-form rules
+- perform logical-form action
+- apply logical-form representation to NL2QL template
+- describe optional acts
+- illustrate constructing logical-form representation
+- provide query-language representation
+- describe NL2QL machine-learning model
+- modify NL2QL machine-learning model
+- provide crowdsourced expressions
+- describe constructing logical-form representation
+- introduce special purpose or general-purpose computer
+- describe computer hardware and system memory
+- explain non-transitory computer-readable media
+- describe transmission media
+- illustrate computer-executable instructions
+- describe network and data links
+- explain computer-readable media
+- describe computer-executable instructions
+- illustrate cloud computing environments
+- describe service models and deployment models
+- introduce computing device
+- describe processor, memory, and storage device
+- explain input/output interfaces
+- describe communication interface
+- illustrate bus
+- describe processor and memory
+- explain storage device
+- describe I/O interfaces
+- illustrate communication interface
+- describe bus
+- conclude with scope of invention
+

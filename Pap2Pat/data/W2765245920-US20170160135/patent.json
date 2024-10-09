@@ -1,0 +1,394 @@
+{
+    "id": "US20170160135",
+    "authors": [
+        "Michael Golub",
+        "Amir Averbuch",
+        "Menachem Nathan"
+    ],
+    "title": "SNAPSHOT SPECTRAL IMAGING BASED ON DIGITAL CAMERAS",
+    "date": "2017-02-22 00:00:00",
+    "abstract": "Snapshot spectral imagers comprise an imaging lens, a dispersed image sensor and a restricted isometry property (RIP) diffuser inserted in the optical path between the source image and the image sensor. The imagers are used to obtain a plurality of spectral images of the source object in different spectral bands in a single shot. In some embodiments, the RIP diffuser is one dimensional. An optional disperser may be added in the optical path, to provide further dispersion at the image sensor. In some embodiments, all imager components except the RIP diffuser may be part of a digital camera, with the RIP diffuser added externally. In some embodiments, the RIP diffuser may be included internally in a digital camera.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "Embodiments disclosed herein relate in general to spectral imaging (SI) apparatus, systems and methods and in particular to snapshot (\u201csingle shot\u201d) spectral imaging (SSI) performed with digital cameras."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define spectral imaging"
+                    ],
+                    "num_characters": 203,
+                    "outline_medium": [
+                        "define spectral imaging"
+                    ],
+                    "outline_short": [
+                        "define spectral imaging"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Snapshot spectral imagers are known. Such imagers perform simultaneous (instantaneous) acquisition of spatial and spectral data in a single snapshot. The data acquired forms a \u201cspectral cube\u201d (also referred to as \u201cdata cube\u201d) of a source object (also referred to simply as \u201cobject\u201d or \u201cscene\u201d). A spectral cube includes light intensity data in two spatial dimensions and one spectral dimension and is expressed as a three-dimensional (3D) matrix. An advanced SSI system based on a regular digital camera and a 1D disperser inserted in the optical path between an imaged object and the camera sensor chip is disclosed in U.S. Pat. No. 8,081,244, which is incorporated herein by reference in its entirety. Some embodiments disclosed therein further include a blurring element. U.S. Pat. No. 8,081,244 also provides additional background information.",
+                        "Known snapshot SI designs are based exclusively on computed tomography spectral imaging (CTIS) designs, which use one of two disperser types: a rotating disperser (prism or grating), or a two-dimensional (2D) grating disperser (e.g. in U.S. Pat. Nos. 6,522,403 and 7,092,088). Disadvantages of CTIS imagers include complicated and expensive optical setups with high quality relay optics, some requiring moving parts, the need to process and output huge spectral cubes, an inherent \u201cmissing cone\u201d problem in data processing, a lack of miniaturization leading to relatively large sizes, and high cost.",
+                        "Compressed sensing (CS) based spectral imaging is also known. One CS-SI approach uses a single pixel camera which incorporates a digital micro-mirror array (DMD) driven by pseudo random patterns and a single spectrometer (C. Li et al., IEEE Transactions on Image Processing, Vol. 21(3), pp. 1200-1210, 2012). Other approaches employ variants of \u201ccoded aperture snapshot spectral imaging\u201d (CASSI). CASSI uses modulation of an image with a coded aperture and dispersive elements. CASSI variants include a single-shot compressive spectral imager having a dual-disperser architecture (DD CASSI), or a single disperser design (SD CASSI). A more recent approach, referred to as random convolution snapshot spectral imaging (RCSSI), is based on focal plane array measurements of spectrally dispersed coherent sources that have been randomly convoluted by two spatial light modulators. RCSSI requires coherent illumination, which restricts the imaging system considerably.",
+                        "The known solutions to the problem of acquiring a full spectral cube in a snapshot involve much more complex and expensive hardware that that of a regular digital camera. Moreover, these solutions cannot be miniaturized. There is a therefore a need for, and it would be advantageous to have snapshot spectral imagers based on digital cameras, without any (or with just minimal) hardware changes to the cameras. It would be further advantageous to have such imagers miniaturized."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce snapshot spectral imagers",
+                        "describe CTIS designs",
+                        "describe CS-SI approaches",
+                        "limitations of known solutions",
+                        "need for miniaturized snapshot spectral imagers"
+                    ],
+                    "num_characters": 2894,
+                    "outline_medium": [
+                        "motivate snapshot spectral imaging",
+                        "limitations of known designs"
+                    ],
+                    "outline_short": [
+                        "limitations of snapshot spectral imagers"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "In various embodiments there are disclosed methods and apparatus for SSI based on compressed sensing principles. An apparatus disclosed herein is a snapshot spectral imager. Thus, \u201capparatus for SSI\u201d and \u201csnapshot spectral imager\u201d are used interchangeably. Although focused on spectral imaging of a source object, methods and apparatus disclosed herein can also be applied to gray or colored images. \u201cSpectral images\u201d or \u201cspectral imaging\u201d also refers to multispectral and hyperspectral images (or imaging). Methods and apparatus disclosed herein enable simultaneous capture of the spectral and spatial data stored in a 3D spectral cube of the source object of size M\u00d7N\u00d7L (where M and N are spatial dimensions L is a spectral dimension) using essentially a digital camera with a single added optical element\u2014a \u201crestricted isometry property (RIP) diffuser\u201d. The RIP diffuser, defined and described in detail below, is inserted in the optical path between source object and image sensor. In some embodiments, the RIP diffuser is 1D. The digital camera may be any camera (for example a regular digital camera, a digital SLR camera, a mobile (cell) phone camera, a capsule endoscope camera, a video camera, etc.) having a 2D image sensor (e.g. of CMOS or CCD type) of size H\u00d7V where M\u00d7N\u00d7L\u2266H xV. As used herein, a \u201cdispersed image\u201d refers to a diffusely-dispersed image created by an optical system with the RIP diffuser and obtained at a dispersed image sensor. The dispersed image sensor may occupy part of the regular 2D camera image sensor or be a separate image sensor. A second optical element, a 1D or 2D disperser, may be optionally added in the optical path. A CS-based mathematical algorithm is provided and used for reconstruction of the spectral cube from a 2D dispersed image.",
+                        "In an embodiment, there is provided a snapshot spectral imager for obtaining spectral images of a source object comprising an imaging lens, a dispersed image sensor, and a RIP diffuser inserted in an optical path between the source object and the dispersed image sensor, wherein the snapshot spectral imager is configured to obtain at the dispersed image sensor a dispersed image formed through the imaging lens and the RIP diffuser, and wherein the snapshot spectral imager is further configured to process the dispersed image to provide a plurality of spectral images of the source object.",
+                        "In an embodiment there is provided a method for snapshot spectral imaging of a source object comprising the steps of providing an imager comprising an imaging lens, a dispersed image sensor and a RIP diffuser inserted in an optical path between the object and the dispersed image sensor, obtaining at the dispersed image sensor a dispersed image formed through the imaging lens and the RIP diffuser, and processing the dispersed image to provide a plurality of spectral images of the source object.",
+                        "In an embodiment there is provided a snapshot spectral imager for obtaining spectral images of a source object, comprising a digital camera which includes a dispersed image sensor, and a RIP diffuser inserted in an optical path between the source object and the dispersed image sensor, wherein the digital camera is configured to process a dispersed image obtained from the source image at the dispersed image sensor into a plurality of spectral images of the source object."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce SSI based on compressed sensing",
+                        "describe apparatus for SSI",
+                        "define RIP diffuser",
+                        "describe digital camera with RIP diffuser",
+                        "describe dispersed image and reconstruction",
+                        "summarize embodiments"
+                    ],
+                    "num_characters": 3353,
+                    "outline_medium": [
+                        "introduce snapshot spectral imager",
+                        "application of compressed sensing",
+                        "embodiment of RIP diffuser"
+                    ],
+                    "outline_short": [
+                        "introduce snapshot spectral imager"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The description next provides details of methods for SSI using essentially a digital camera and a RIP diffuser and various apparatus embodiments. Due to the optical properties of the RIP diffuser (see below), each pixel in a dispersed image obtained with such apparatus includes a linear mixture of spectral and spatial information from all pixels of a corresponding column in the dispersed image. For the reconstruction of the full spectral cube, each pixel of the dispersed image can be thought of as a linear equation with ML variables. Since there are MN equations and a total of MNL variables, this problem seems underdetermined. However, CS theory suggests a method to capture and represent compressible images at a rate significantly below the Nyquist rate, by exploiting the sparse nature of the image data in some mathematical basis. This may be done using non-adaptive linear projections which enable full reconstruction of the spectral cube of the source object. The full reconstruction is done using an optimization process to compensate for the underdetermined nature of the problem. The operator performing the linear projections can be described as a \u201csensing matrix\u201d that has fewer rows than columns and that operates on the spectral cube to form a dispersed image. The dispersed image has fewer elements than the original source object and is formed from a smaller number of equations than the total number of variables (voxels) in the spectral cube. The spectral cube can be reconstructed, with some accuracy, from the dispersed image by an iterative digital processing algorithm.",
+                        "The reconstruction process guarantees full reconstruction of the source object if the sensing matrix satisfies a RIP condition. The RIP condition is expressed in Eq. (21) below. A RIP diffuser is designed so that the transfer function of the optical imaging system (which is identical with the sensing matrix) including the diffuser satisfies the RIP condition at each single wavelength (or at a band chosen around the single wavelength). Put differently, a RIP diffuser is a diffuser which obeys a mathematical RIP condition with a block-sensing matrix of the optical system, wherein each block of the block-sensing matrix corresponds to a single wavelength (or a band chosen around the single wavelength) in a spectral range of interest. In some embodiments, the block-sensing matrix may be of Toeplitz type. In particular, the RIP diffuser modifies a point spread function (PSF) of an imaging optical system at each wavelength, such that the resulting linear transform of the source object to a dispersed image satisfies the RIP condition, as required in compressed sensing based reconstruction, The RIP diffuser may be an optical element with a 1D or 2D random phase transmission function, amplitude transmission function or a combination thereof.",
+                        "Due to the compressibility property of the source object, this object can be represented in a space in which it is sparse. The sparse representation of the source object can be reconstructed from the dispersed image by performing minimization with respect to a L1 difference criterion between a reconstructed sparse vector of the source object multiplied by the sensing matrix and the dispersed image. The L1 minimization process (with the constraint) can be exemplarily achieved via a linearized Bregman iteration process, see e.g. W. Yin et al., SIAM J. Imaging Sciences (hereinafter \u201cLB\u201d). Vol. 1(1), pp. 143-168, 2008, or via a split Bregman iteration process, see e.g. Z. Cai et al., SIAM J. Multiscale Modeling and Simulation, Vol. 8(2), pp. 337-369, 2009 (hereinafter \u201cSB\u201d). Both processes have been known to be efficient tools for CS reconstruction. The Bregman iteration (linearized or split) is an iterative algorithm which involves a closed loop, with the reconstruction constrained L1 error serving as the feedback to the loop, and with a shrinking operation that ensures a sparse reconstruction.",
+                        "FIG. 1A shows schematically an embodiment of a method for SSI disclosed herein. In step 102, a dispersed image is obtained with an optical imaging system that includes a digital camera having an imaging lens and a pixelated image sensor, and a 1D or 2D RIP diffuser inserted in the optical path between an object and the image sensor. Optionally, the imaging system may also include a fixed 1D disperser as described in U.S. Pat. No. 8,081,244. The RIP diffuser (and optionally the disperser) may be installed between the imaging lens and the scene, between the imaging lens and the camera sensor, or as a part of (inside) the imaging lens. After determination of the block sensing matrix corresponding to the RIP diffuser formulation above, a dispersed image at the camera sensor can be linearly related to the voxels of the spectral cube. Specifically, for a 1D RIP diffuser, each column of the dispersed image is a linear combination of all spectral and spatial data in the corresponding source object column. In step 104, the sensing matrix is used to perform a Bregman iteration process which is sequentially applied to columns of the dispersed image separately, to reconstruct spectral cube information corresponding to M voxels in each of N columns and L spectral bands of the source object cube. Details are given in FIG. 1B. The result of step 104 is a set of vectors, each vector including all spectral information for every pixel in the corresponding image column. In step 106, the results from all reconstructed image columns from step 104 are placed next to each other, thereby providing the entire spectral information for every pixel in the dispersed image. The result of step 106 is the reconstruction of a matrix X\u2032 defined in Eq. (1) below and which represents the full spectral cube. Finally, in step 108, the spectral cube is processed to obtain L separate spectral images of the object, i.e. each consecutive set of M rows in X\u2032 is taken to form the spectral image of that set's corresponding spectral band.",
+                        "FIG. 1B shows details of step 104. It describes the process that each column j, which is taken from the sensor that contains the snapshot image, goes through. In step 120, the measurement (sensing) matrix A is multiplied by either a wavelet matrix or a framelet matrix \u03a8 to sparsify the sensing matrix. This yields a new sensing matrix \u0398. A linearized or split Bregman iteration using column j of the snapshot image (represented by a vector y) and \u0398 is performed in step 122 to approximate a vector \u015d. In step 124, \u015d is then transformed by \u03a8 to obtain x, a vector which includes all spectral information in each pixel of the column.",
+                        "FIG. 1C shows details of step 122 for a linearized Bregman iteration as described in LB. Vectors \u015d and v are initialized in step 130. An approximation error between \u0398\u015d and y is found, and this approximation error is transformed by \u0398T and added to v (an auxiliary vector used in the Bregman iterations) in step 132. Each element of v is then compared to a threshold to obtain a more sparse vector \u015d in step 134.",
+                        "FIG. 1D shows detail of step 122 for a split Bregman iteration as described in SB. Vectors u, d and b are initialized in step 140. To sparsify the source object data, a framelet transform, wavelet transform, a combination thereof, or K-SVD is applied to d-b in step 142. Appropriate framelet transforms may be found in A. Averbuch, P. Neittaanmaki and V. Zheludev, \u201cPeriodic discrete-time frames: Design and application for image processing\u201d, submitted to the SIAM J. on Imaging Sciences, 2012, and in A. Averbuch, P. Neittaanmaki and V. Zheludev, \u201cSpline-based frames in the space of periodic signals\u201d, submitted to Inverse Problems and Imaging, 2012. A linear equation is then solved to find a new value for vector u in step 144. An inverse framelet transform F\u22121{u} of u is calculated in step 146. Each element of F\u22121u+bv is compared to a threshold to obtain a new value for vector d in step 148. A new value for b is then calculated as bnew=b+(F\u22121u\u2212d) in step 150."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Diffuser Design Formulation",
+                            "paragraphs": [
+                                "The spectral cube 3D matrix is considered as a set of 2D spectral images in two spatial dimensions expressed by L matrices with size M\u00d7N, each of a different spectral band (\u03bbi, 1\u2266i\u2266L). Next, a 2D matrix X of size ML\u00d7N, created by placing the L spectral images one on top of the other, is defined such that",
+                                "\\(\\begin{matrix}\n{{X = {\\begin{pmatrix}\n{\\left. \\begin{matrix}\nX_{1,1,1} & \\ldots & X_{1,N,1} \\\\\n\\vdots & \\; & \\vdots \\\\\nX_{M,1,1} & \\ldots & X_{M,N,1}\n\\end{matrix} \\right\\} \ue89e\\lambda_{1}} \\\\\n{\\left. \\begin{matrix}\nX_{1,1,2} & \\ldots & X_{1,N,2} \\\\\n\\vdots & \\; & \\vdots \\\\\nX_{M,1,2} & \\ldots & X_{M,N,2}\n\\end{matrix} \\right\\} \ue89e\\lambda_{2}} \\\\\n\\vdots \\\\\n{\\left. \\begin{matrix}\nX_{1,1,L} & \\ldots & X_{1,N,L} \\\\\n\\vdots & \\; & \\vdots \\\\\nX_{M,1,L} & \\ldots & X_{M,N,L}\n\\end{matrix} \\right\\} \ue89e\\lambda_{L}}\n\\end{pmatrix}.}},} & (1)\n\\end{matrix}\\)",
+                                "where Xm,j,i is a voxel of the spectral cube corresponding to the spatial pixel positioned in row number m, 1\u2266m\u2266M, in column number j, 1\u2266j\u2266N and in a wavelength range number i, 1\u2266i\u2266L. This matrix can be vectorized in different ways. Consider a 1D dispersion that does not provide a mix between the first and second spatial dimensions of X. Therefore, each column of X",
+                                "\\(\\begin{matrix}\n{x^{j} = \ue89e\\begin{matrix}\n{\\begin{pmatrix}\nX_{1,j,1} \\\\\n\\vdots \\\\\nX_{M,j,1} \\\\\nX_{1,j,2} \\\\\n\\vdots \\\\\nX_{M,j,2} \\\\\n\\vdots \\\\\nX_{1,j,L} \\\\\n\\vdots \\\\\nX_{M,j,L}\n\\end{pmatrix},{1 \\leq j \\leq {N.}}} & \\;\n\\end{matrix}} & (2)\n\\end{matrix}\\)",
+                                "is treated separately. The imaging at spectral band \u03bbi of a light intensity pattern I\u03bbwith pixels from the source object through an incoherent optical imaging system, i.e. one comprising a RIP diffuser, can be modeled mathematically by a convolution between the image intensity and the impulse response of the diffuser (for each spectral band \u03bbi separately) such that the polychromatic image intensity is:",
+                                "\\(\\begin{matrix}\n{I^{\\prime} = {\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89eI_{\\lambda_{i}}^{\\prime}}}} & (3)\n\\end{matrix}\\)",
+                                "where I\u2032 characterizes the dispersed image formed on the image sensor and I\u03bbcharacterizes the cross section of the spectral cube of the object or image intensity in spectral band \u03bbi with the same size of matrices characterizing I\u2032 and \u03bb\u03bb\u00b7c\u03bbare coefficients of spectral sensitivity of the image sensor in spectral ranges. The function I\u2032\u03bbof the dispersed image intensity is a 2D linear transformation calculated with respect to index m, 1\u2266m\u2266M corresponding to spatial coordinates as",
+                                "\\(\\begin{matrix}\n{I_{\\lambda_{i},m^{\\prime},j^{\\prime}}^{\\prime} = {\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{h_{\\lambda_{i},m^{\\prime},m,j^{\\prime},j}\ue89eI_{\\lambda_{i},m,j}}}}} & \\left( {4\ue89ea} \\right)\n\\end{matrix}\\)",
+                                "or approximately with 1D linear transformation",
+                                "\\(\\begin{matrix}\n{I_{\\lambda_{i},m^{\\prime}}^{\\prime} = {\\sum\\limits_{m = 1}^{M}\ue89e{h_{\\lambda_{i},m^{\\prime},m}\ue89eI_{\\lambda_{i},m}}}} & \\left( {4\ue89eb} \\right)\n\\end{matrix}\\)",
+                                "where h\u03bbis the incoherent point spread function (PSF) or impulse response. For a spatially variant incoherent optical system, the linear transformation becomes a convolution operation",
+                                "I\u2032\u03bb=I\u03bbh\u03bb\u2003\u2003(5)",
+                                "Note that the values required for the mathematical algorithm may be positive or negative, whereas optical implementation as an intensity response naturally leads to positive values only. Accordingly, instead of h\u03bb,m\u2032,m,j\u2032,j, an impulse response h\u03bb,m\u2032,m,j\u2032,j+\u03bbwith a constant addition \u03bb(DC) can be implemented, leading to an additional DC-related term in the dispersed image intensity. To evaluate and subtract the DC-related term, one has to consider, in addition to the dispersed image, a regular (non-dispersed) image, and execute digital processing of both regular and dispersed images. In particular, the digital processing subtracts the sums such that",
+                                "\\(\\begin{matrix}\n{I_{\\lambda_{i},m^{\\prime},j^{\\prime}}^{\\prime} = {{\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{\\left( {h_{\\lambda_{i},m^{\\prime},m,j^{\\prime},j} + {\\overset{\\_}{h}}_{\\lambda_{i}}} \\right)\ue89eI_{\\lambda_{i},m,j}}}} - {{\\overset{\\_}{h}}_{\\lambda_{i}}\ue89e{\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{I_{\\lambda_{i},m,j}.}}}}}} & (6)\n\\end{matrix}\\)",
+                                "The camera sensor summarizes spectrally the intensity in each pixel with spectral weights c\u03bbsuch that to provide the dispersed image as a subtraction of positive PSFs",
+                                "\\(\\begin{matrix}\n{I_{m^{\\prime},j^{\\prime}}^{\\prime} = {{\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89eI_{\\lambda_{i},m^{\\prime},j^{\\prime}}^{\\prime \ue8a0{(i)}}}} = {{\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89e{\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{\\left( {h_{\\lambda_{i},m^{\\prime},m,j^{\\prime},j} + {\\overset{\\_}{h}}_{\\lambda_{i}}} \\right)\ue89eI_{\\lambda_{i},m,j}}}}}} - {\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89e{\\overset{\\_}{h}}_{\\lambda_{i}}\ue89e{\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{I_{\\lambda_{i},m,j}.}}}}}}}} & (7)\n\\end{matrix}\\)"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define matrix X of size ML\u00d7N",
+                                "describe vectorization of X",
+                                "model imaging at spectral band \u03bbi",
+                                "describe linear transformation of dispersed image intensity",
+                                "define impulse response h\u03bb",
+                                "describe digital processing of regular and dispersed images",
+                                "calculate PSF of incoherent imaging system h\u03bb",
+                                "define matrix H\u03bb for 1D linear transformation",
+                                "relate to compressed sensing problem"
+                            ],
+                            "num_characters": 4871,
+                            "outline_medium": [
+                                "define spectral cube 3D matrix",
+                                "describe imaging at spectral band \u03bbi",
+                                "model mathematically with convolution and PSF",
+                                "define sensing matrix and RIP condition"
+                            ],
+                            "outline_short": [
+                                "define spectral cube and its vectorization",
+                                "derive mathematical model for imaging system with RIP diffuser"
+                            ]
+                        },
+                        {
+                            "title": "Finally",
+                            "paragraphs": [
+                                "\\(\\begin{matrix}\n{I_{m^{\\prime},j^{\\prime}}^{\\prime} = {\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89e{\\sum\\limits_{j = 1}^{N}\ue89e{\\sum\\limits_{m = 1}^{M}\ue89e{h_{\\lambda_{i},m^{\\prime},m,j^{\\prime},j}\ue89e{I_{\\lambda_{i},m,j}.}}}}}}} & \\left( {8\ue89ea} \\right)\n\\end{matrix}\\)",
+                                "or approximately with 1D linear transformation",
+                                "\\(\\begin{matrix}\n{I_{m^{\\prime}}^{\\prime} = {\\sum\\limits_{\\lambda_{i}}\ue89e{c_{\\lambda_{i}}\ue89e{\\sum\\limits_{m - 1}^{M}\ue89e{h_{\\lambda_{i},m^{\\prime},m}\ue89e{I_{\\lambda_{i},m}.}}}}}} & \\left( {8\ue89eb} \\right)\n\\end{matrix}\\)",
+                                "For a spatially invariant incoherent optical system, the matrix of the linear transformation in Eqs. (8a) and (8b) for each spectral band \u03bbi is Toeplitz, i.e. h\u03bb,m\u2032,m,j\u2032,j=h\u03bb,m\u2032-m,j\u2032-j and h\u03bb, m\u2032,m,=h\u03bbi,m\u2032-m respectively.",
+                                "Assuming that the RIP diffuser is designed (see below), the PSF of the incoherent imaging system h\u03bbcan be calculated as:",
+                                "\\(\\begin{matrix}\n{{h_{\\lambda_{i}} = {{{FT}\ue89e\\left\\{ {T_{\\lambda_{i}}*T_{\\lambda_{i}}} \\right\\}} = {\uf603{{FT}\ue89e\\left\\{ T_{\\lambda_{i}} \\right\\}}\uf604}^{2}}},} & (9) \\\\\n{T_{\\lambda_{i}} = e^{{i\\phi}_{\\lambda_{i}}}} & (10)\n\\end{matrix}\\)\n\n\n- - where T is the diffuser transfer function, \u03c6_(\u03bbi) is a random phase\n    function of the RIP diffuser which depends on spatial coordinates,\n    FT denotes the spatial Fourier transform and \\* is a symbol of the\n    spatial autocorrelation. For a fixed column j one can define",
+                                "Xm,j,i=I\u03bb,m,j,Ym,j,\u03bb=I\u2032\u03bb,m,j,\u2003\u2003(11)",
+                                "as well as define a matrix with size M\u00d7M for the case of 1D linear transformation, Eq. (4b)",
+                                "\\(\\begin{matrix}\n{H_{\\lambda_{i}} = \\begin{pmatrix}\nh_{\\lambda_{i},1,1} & \\ldots & h_{\\lambda_{i},1,M} \\\\\n\\ddots & \\ddots & \\; \\\\\nh_{\\lambda_{i},M,1} & \\ddots & h_{\\lambda_{i},M,M}\n\\end{pmatrix}} & (12)\n\\end{matrix}\\)",
+                                "By re-writing Eq. (4b) in algebraic matrix form and resorting to notations of Eq. (11), the convolution of Eq. (4) is turned into a matrix multiplication between Toeplitz matrix H\u03bband the vectors that represent a column j of the source and the dispersed image intensity as",
+                                "\\(\\begin{matrix}\n{\\begin{pmatrix}\nY_{i,j,\\lambda_{i}} \\\\\n\\vdots \\\\\nY_{M,j,\\lambda_{i}}\n\\end{pmatrix} = {{H_{\\lambda_{i}}\ue8a0\\begin{pmatrix}\nX_{1,j,\\lambda_{i}} \\\\\n\\vdots \\\\\nX_{M,j,\\lambda_{i}}\n\\end{pmatrix}}.}} & (13)\n\\end{matrix}\\)",
+                                "Note that although 1D operation Eq. (13) are used for simplicity, more general linear transformations may be considered in spatially variant optical systems, with proper generalization of the mathematical formulation. Defining vectors",
+                                "\\(\\begin{matrix}\n{{y^{j} = \\begin{pmatrix}\nY_{1,j} \\\\\n\\vdots \\\\\nY_{M,j}\n\\end{pmatrix}},{Y_{m,j} = I_{\\lambda_{i},m}^{\\prime}},{1 \\leq j \\leq {N.}}} & (14)\n\\end{matrix}\\)",
+                                "with size M\u00d71, and combining equations (8) and (13) yields:",
+                                "yj=(H\u03bb. . . H\u03bb)xj.\u2003\u2003(15)",
+                                "The matrix",
+                                "H=(H\u03bb. . . H\u03bb)\u2003\u2003(16)",
+                                "is named \u201csensing matrix\u201d or \u201cmeasurement matrix\u201d and is a block matrix (e.g. Toeplitz type) with size M\u00d7N\u2032 where N\u2032=ML. Thus, H can be considered a dimension-reducing matrix which reduces the size of vector x\u2032 from N\u2032\u00d71 to M\u00d71. Accordingly, Eq. (15) may be written in matrix form",
+                                "yj=Hxj\u2003\u2003(17)",
+                                "which relates directly to the compressed sensing problem of reconstructing x from the samples of vector y when",
+                                "y=\u03a6x,\u2003\u2003(18)",
+                                "where \u03a6 is a dimension-reducing sensing matrix with dimensions M\u00d7N\u2032 and is equal to H. A stable solution is assured if matrix \u03a6 (or H) satisfies the RIP condition Eq (21) below, if x is a K-sparse or compressible matrix and if M\u2267K. If vector x is not sparse but compressible, then it can be represented as a sparse vector in another orthonormal basis:",
+                                "x=\u03c8S\u2003\u2003(19)",
+                                "where \u03c8 is a sparsifying matrix and S is a K-sparse vector. In this case:",
+                                "y=\u03a6x=\u03a6\u03c8S=\u0398S\u2003\u2003(20)",
+                                "and the RIP condition applies to \u0398 where \u0398=\u03a6\u03c8. The sparsifying matrices, which are used to transform an unknown image to a sparse representation, may be derived from wavelet transforms, framelet transforms or their combinations or alternatively from K-SVD matrices.",
+                                "For a K sparse vector reconstruction (whose nonzero positions are known), the RIP condition requires for any vector v sharing the same K nonzero entries as S and for some small number \u03b4k>0, that the following inequality be satisfied:",
+                                "(1\u2212\u03b4k)\u2225v\u22252\u2266\u2225\u0398v\u22252\u2266(1+\u03b4k)\u2225v\u22252\u2003\u2003(21)",
+                                "If the nonzero positions of S are unknown, then a sufficient condition for a stable solution for both K-sparse and compressible signals is that \u0398 satisfies Eq. (21) for an arbitrary 3K-sparse vector v. A related condition requires that the rows of \u03a6 cannot sparsely represent the columns of \u03c8 (and vice versa). This condition is referred to as \u201cincoherence in compressed sensing\u201d.",
+                                "Both the RIP and the incoherence conditions can be obtained by selecting \u03a6 as a deterministic sensing matrix built as rows of kernels of a discrete cosine transform (DCT) or a Hadamard transform. Alternatively, both the RIP and the incoherence conditions can be obtained by selecting \u03a6 as a random matrix. Perhaps the best known random sensing matrix is formed by independent and identically distributed (\u201ciid\u201d) random variables from a Gaussian probability density function with zero mean and with variance. Then, the columns of \u03a6 are approximately orthonormal. Other random sensing matrices that obey the RIP condition can be formed using iid random variables with different distributions, e.g. a Bernoulli distribution. It is also known that in mathematics, Toeplitz and circulant matrices whose first row is iid Gaussian or iid Bernoulli can be used as good sensing matrices.",
+                                "Returning to the model above and to Eqs. (12), (13), (17) and (18), one sees that H is in fact the sensing matrix. To enable stable reconstruction of x from y, H must obey the RIP condition Eq. (21). As H is a block Toeplitz matrix, it is enough to determine the first row and the first column of each Toeplitz block to describe full matrices as",
+                                "(h\u03bb,M,1 . . . h\u03bb,2,1h\u03bb,1,1 . . . h\u03bb,1,M).\u2003\u2003(22)",
+                                "Examples of such first rows can be random variable arrays with either Gaussian or Bernoulli probability distributions. Moreover, Eq, (9) states that the power spectral density (PSD) of the diffuser Eq. (10) is considered as a spatial random process. Therefore, after determining H\u03bbfrom an iid set of random variables with e.g. a Gaussian or Bernoulli probability distribution density function, one can obtain for each \u03bbi a PSD for Eq. (10) and ensure that the RIP diffuser enables a stable solution to the compressed sensing problem of restoring x from y."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe dispersed image intensity",
+                                "define matrix H and its properties",
+                                "relate to compressed sensing problem",
+                                "define vectors yj and xj",
+                                "describe matrix H as sensing matrix",
+                                "relate to compressed sensing problem",
+                                "define sparsifying matrix \u03c8",
+                                "describe RIP condition",
+                                "explain incoherence condition",
+                                "describe deterministic sensing matrix",
+                                "describe random sensing matrix",
+                                "relate to RIP diffuser design"
+                            ],
+                            "num_characters": 6382,
+                            "outline_medium": [
+                                "summarize dispersed image intensity",
+                                "describe Toeplitz matrix for spatially invariant system",
+                                "define PSF of incoherent imaging system",
+                                "outline matrix multiplication for convolution",
+                                "describe sensing matrix and RIP condition",
+                                "discuss sparsifying matrices and K-SVD"
+                            ],
+                            "outline_short": [
+                                "summarize dispersed image formation",
+                                "define sensing matrix and its properties",
+                                "outline RIP condition for stable reconstruction"
+                            ]
+                        },
+                        {
+                            "title": "Exemplary RIP Diffuser Implementation",
+                            "paragraphs": [
+                                "The main mathematical requirement from the RIP diffuser is to have a transfer function of the type T=ei\u03c6 with a random phase \u03c6 such that the corresponding PSD h\u03bb=FFT{T\u03bb*T\u03bb} obeys the RIP condition. This provides the sensing matrix for the RIP algorithm. In some embodiments, the RIP diffuser is 1D. In an exemplary embodiment, a RIP diffuser fulfilling this requirement is designed as a thin optical diffractive element with a randomly selected groove depth. As mentioned, a RIP diffuser implements a random phase mask such that a block Toeplitz sensing matrix satisfies the RIP condition. For the 1D case, the RIP diffuser may be designed with phase levels as in FIG. 9B below. These may be implemented as micro-relief horizontal lines, each line characterized by a width and a o depth h, as illustrated exemplarily in FIGS. 9C and 9D. This forms in effect a phase transmitting diffractive optical element with a groove depth h, varying along spatial coordinates x, y. Each groove depth h, causes a corresponding phase shift",
+                                "\\(\\begin{matrix}\n{\\phi_{\\lambda} = \\frac{2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{h\ue8a0\\left\\lbrack {{n\ue8a0(\\lambda)} - 1} \\right\\rbrack}}{\\lambda}} & (23)\n\\end{matrix}\\)",
+                                "determining the phase function, where n(\u03bb) is the refractive index. Since the phase is wavelength-dependent, each groove depth adds a different phase to light with a different wavelength. The relation between the phase additions for two different wavelengths is given by",
+                                "\\(\\begin{matrix}\n{\\frac{\\phi_{\\lambda_{1}}}{\\phi_{\\lambda_{2}}} = {{\\frac{\\lambda_{2}}{\\lambda_{1}}\ue89e\\frac{{n\ue8a0\\left( \\lambda_{1} \\right)} - 1}{{n\ue8a0\\left( \\lambda_{2} \\right)} - 1}} \\cong {\\frac{\\lambda_{2}}{\\lambda_{1}}.}}} & (24)\n\\end{matrix}\\)",
+                                "The last approximation in Eq. (24) can be applied because n varies slowly with wavelength. Therefore, if the grooves of the mask are designed for a specific wavelength \u03bbdes its impact on light with wavelength \u03bb is",
+                                "\\(\\begin{matrix}\n{\\phi_{\\lambda} = {{\\phi_{\\lambda_{des}}\ue89e\\frac{\\lambda_{des}}{\\lambda}\ue89e\\frac{{n(\\lambda \ue89e\\;)} - 1}{{n\ue8a0\\left( \\lambda_{des} \\right)} - 1}} \\cong {\\frac{\\lambda_{des}}{\\lambda}.}}} & (25)\n\\end{matrix}\\)",
+                                "Finally, the complex transmission function T of the diffuser is given by:",
+                                "\\(\\begin{matrix}\n{{T\ue8a0\\left( {y^{\\prime},\\lambda} \\right)} = {{\\exp \ue8a0\\left( {i\ue89e\\; \ue89e\\phi_{\\lambda}} \\right)} = {\\exp \ue89e\\left\\{ {i\ue89e\\frac{\\lambda_{des}}{\\lambda}\ue89e\\frac{{n(\\lambda \ue89e\\;)} - 1}{{n\ue8a0\\left( \\lambda_{des} \\right)} - 1}\ue89e\\frac{2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{{h\ue8a0\\left( y^{\\prime} \\right)}\ue8a0\\left\\lbrack {{n\ue8a0\\left( \\lambda_{{des}\ue89e\\;} \\right)} - 1} \\right\\rbrack}}{\\lambda_{des}}} \\right\\}}}} & (26)\n\\end{matrix}\\)",
+                                "where y\u2032 is the 1D coordinate at the diffuser's plane. In particular, in a case when the phase is piece-wise constant (i.e. constant for each resolution step), there is a discrete version",
+                                "\\(\\begin{matrix}\n{{T\ue8a0\\left( {y^{\\prime},\\lambda} \\right)} = {\\exp \ue8a0\\left( {i\ue89e\\frac{\\lambda_{des}}{\\lambda}\ue89e\\frac{{n(\\lambda \ue89e\\;)} - 1}{{n\ue8a0\\left( \\lambda_{des} \\right)} - 1}\ue89e\\frac{2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{h_{m}\ue8a0\\left\\lbrack {{n\ue8a0\\left( \\lambda_{des} \\right)} - 1} \\right\\rbrack}}{\\lambda_{des}}} \\right)}} & (27)\n\\end{matrix}\\)",
+                                "where m is the index of a vertical line on the mask and hm is the corresponding random depth of the diffuser micro-relief profile. This transfer function is designed such that it meets the above mentioned requirement to allow reconstruction of spectral data.",
+                                "Note that the RIP diffuser performance depends strongly on the wavelength. Accordingly, the diffuser works as a random dispersing element, with the dispersed image being essentially a diffusely-dispersed image."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define RIP diffuser requirements",
+                                "design 1D RIP diffuser with random phase mask",
+                                "derive transfer function of diffuser",
+                                "describe wavelength dependence of diffuser",
+                                "provide discrete version of transfer function",
+                                "discuss limitations of RIP diffuser performance",
+                                "explain use of RIP diffuser in spectral imaging"
+                            ],
+                            "num_characters": 3570,
+                            "outline_medium": [
+                                "define RIP diffuser requirements",
+                                "design 1D RIP diffuser with random phase mask",
+                                "derive transfer function of RIP diffuser"
+                            ],
+                            "outline_short": [
+                                "design RIP diffuser with random phase mask"
+                            ]
+                        },
+                        {
+                            "title": "Apparatus Embodiments",
+                            "paragraphs": [
+                                "FIG. 2A shows schematically an embodiment 200 of a snapshot spectral imager disclosed herein. Imager 200 includes a digital camera 202 and a RIP diffuser 204. The digital camera may be any known camera, for example a SLR camera, a video camera, a cell-phone camera or a miniaturized camera of the type used in gastroscopy or endoscopy. In an embodiment, the RIP diffuser may be one-dimensional (1D), see design below. In the embodiment shown, the RIP diffuser is inserted in an optical path between a source object 201 and an image sensor 206. For simplicity, all source objects in the following embodiments are marked with, and referred to by the same number, 201. Imager 200 further includes an imaging lens 208, a system aperture diaphragm 210, and, optionally, a 1D (or 2D) disperser 212 and a band-pass spectral filter 214. The image sensor provides a dispersed image 216. The RIP diffuser, (and optionally the disperser), may be positioned at the plane of the system aperture diaphragm. Such positioning allows the diffuser to function in an essentially plane light-wave mode, which minimizes inherent aberrations and improves image quality. In an embodiment, the RIP diffuser may be part of a lens block and placed inside the camera. In another embodiment, the RIP diffuser may be placed outside the digital camera, between the camera lens and the object. In yet another embodiment, the RIP diffuser may be placed inside the digital camera lens, between the lens and the image sensor. The design of the component lenses may be matched with the light dispersing properties of the diffuser (and, if present, of the disperser). The processing of the dispersed image and other information is performed by a processor 220, which may be integrated in the digital camera or may be external to the camera. A processor exists in all apparatus embodiments in FIGS. 2b and 3-7, but is not shown for simplicity. Since miniaturized digital cameras are known and since the RIP diffuser may be made in the form of a thin diffusive-diffractive optical element, an imager such as imager 200 can clearly be miniaturized, for example for use in a diagnostic pill.",
+                                "FIG. 2B shows schematically another embodiment 200\u2032 of a snapshot spectral imager disclosed herein. Similar to imager 200, imager 200\u2032 includes a digital camera 202\u2032 and a RIP diffuser 204, except that camera 202\u2032 is a double-aperture camera that includes two apertures for imaging lenses 208 instead of single system aperture 210. Accordingly, image sensor 206 is replaced by a double-image sensor 206\u2032, which captures both a regular image 216\u2032 and a dispersed image 216. In other embodiments, there may be more than two apertures. In general, an apparatus disclosed herein may also use designs with two optical paths leading to a single image sensor, see e.g. US patent application No. 2007/0285554. One path may pass through a RIP diffuser to produce a dispersed image, while the other passes directly to the image sensor to provide a regular image.",
+                                "FIGS. 3-6 show optical schemes of snapshot spectral imagers disclosed herein and including two-channels of imaging: one with a RIP diffuser and one with regular imaging as in a digital camera. All following embodiments provide both a dispersed image and a regular image. The two images are subtracted, when necessary, for implementation of a negative-valued sensing matrix in incoherent optical imaging systems.",
+                                "FIG. 3 shows schematically another embodiment 300 of a snapshot spectral imager disclosed herein. This embodiment includes a reflective-refractive beam splitter and two separate image sensors. Imager 300 includes an anterior block of imaging lens 304, a beam splitter 306, a RIP diffuser 308, a system aperture diaphragm 310, a 1st posterior block of imaging lens 312, a dispersed image sensor 314 for providing a dispersed image 316, a 2nd posterior block of imaging lens 318, and a regular image sensor 320 for providing a regular (non-dispersed) image 322. Optionally, imager 300 may include a 1D (or 2D) disperser 324 and a band-pass spectral filter 326. Splitter 306 may be a semi-transparent mirror or beam splitting cube, oriented at an angle larger than 45 degrees to the optical axis, such as to reflect light to lens 318. The RIP diffuser, (and optionally the disperser), are placed preferably at the plane of system aperture diaphragm 310. The design of the lenses is matched with the light dispersing properties of the diffuser and disperser.",
+                                "FIG. 4 shows schematically yet another embodiment 400 of a snapshot spectral imager disclosed herein. Imager 400 differs from imager 300 in that it includes an added turning mirror 402, a double image sensor 404 that captures both dispersed and regular images, and a second system aperture 406. Here, splitter 306 is oriented at an angle close to 45 degrees to the optical axis, such as to reflect light to turning mirror 402. The double-image sensor is obtained by aligning the dispersed and regular image sensors.",
+                                "FIG. 5 shows schematically yet another embodiment 500 of a snapshot spectral imager disclosed herein. Imager 500 differs from imagers 300 and 400 in that it includes a diffractive disperser 502 that serves as both beam splitter and 1D disperser. Also included is a double image sensor as in FIG. 4. Diffractive disperser 502 may be implemented as a diffraction grating which splits light to 0 and 1st diffraction orders 504 and 506, where the 0 order has no dispersion and forms a regular image 508 and where the 1st order has dispersion and forms a dispersed image 510 on the double image sensor.",
+                                "FIG. 6 shows schematically yet another embodiment 600 of a snapshot spectral imager disclosed herein. Imager 600 includes a diffractive disperser 502 as in FIG. 5, but has a single posterior block 602 instead of two separate posterior blocks of imaging lenses 314 and 520. Anterior block 304 and system aperture diaphragm 310 are packaged with 1st posterior blocks 312 and 320 to form the imaging lens. In some embodiments, either the anterior block or posterior block(s) of the imaging lens may be missing, such that the imaging lens is formed solely by the posterior block(s) or solely by the anterior block, respectively. RIP diffuser 308 and (if present) disperser 312 are preferably spatially located closer to the system aperture (or entrance or exit pupil of the imaging lens) than to the image sensor.",
+                                "In use in one of the embodiments of imagers 300-600, a source object is illuminated with white light or radiates its own light. The light from the object passes through the optional band-pass filter, is collected by the anterior block of the imaging lens and passes through the system aperture diaphragm, is split to two beams by the splitter (or alternatively by the diffractive disperser). The light is then spectrally dispersed by the RIP diffuser and, optionally, by the disperser. Alternatively the light is spectrally dispersed by the diffractive disperser One of the two split beams passes through the RIP diffuser and is imaged by the 2nd posterior block (or alternatively by the common posterior block) of the imaging lens to the dispersed image sensor (or to the double sensor), thereby providing a dispersed image on the dispersed image sensor. The other beam is imaged by the 1st posterior block (or alternatively by the common posterior block) of the imaging lens to the regular image sensor (or to the double sensor), thereby providing a regular image. The optional band-pass filter may be used in some embodiments to filter unwanted sections of the spectrum. The light is dispersed by a joint operation of RIP diffuser 208 and optional disperser 212 or 230 and into a number of spectral bands that are mixed at each detector pixel as described above. The mixed spectrum is unmixed further by digital image processing as described above to obtain a spectral cube. The data may be further processed to obtain the necessary separate spectral and spatial information (i.e. spectral images).",
+                                "The optical schemes of snapshot spectral imagers disclosed herein and including two-channels of imaging may be implemented by resorting to conventional SLR digital cameras with a jumping mirror, switching the image either to the main image sensor or to the eyepiece image sensor. Alternatively, they may be implemented by resorting to conventional digital cameras with a digital eyepiece. In both cases, the eyepiece channel may be used as a channel for the regular image, whereas the main image channel may be equipped with the RIP diffuser and optional disperser."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce snapshot spectral imager embodiment 200",
+                                "describe digital camera and RIP diffuser components",
+                                "explain optical path of embodiment 200",
+                                "introduce embodiment 200' with double-aperture camera",
+                                "describe optical path of embodiment 200'",
+                                "introduce embodiment 300 with reflective-refractive beam splitter",
+                                "describe optical path of embodiment 300",
+                                "introduce embodiment 400 with turning mirror",
+                                "describe optical path of embodiment 400",
+                                "introduce embodiment 500 with diffractive disperser",
+                                "describe optical path of embodiment 500",
+                                "introduce embodiment 600 with single posterior block",
+                                "describe optical path of embodiment 600",
+                                "explain use of band-pass filter",
+                                "describe image processing and spectral cube reconstruction",
+                                "discuss implementation of optical schemes",
+                                "explain use of conventional digital cameras"
+                            ],
+                            "num_characters": 8571,
+                            "outline_medium": [
+                                "introduce snapshot spectral imager with RIP diffuser",
+                                "describe digital camera with RIP diffuser",
+                                "describe double-aperture camera with RIP diffuser",
+                                "describe optical schemes with two-channels of imaging",
+                                "describe reflective-refractive beam splitter embodiment",
+                                "describe diffractive disperser embodiment",
+                                "describe single posterior block embodiment",
+                                "describe use cases for imagers"
+                            ],
+                            "outline_short": [
+                                "describe snapshot spectral imager with RIP diffuser and digital camera",
+                                "describe double-aperture camera with RIP diffuser and regular imaging",
+                                "describe optical schemes with two-channels of imaging",
+                                "describe various embodiments of snapshot spectral imagers"
+                            ]
+                        },
+                        {
+                            "title": "Computer Simulations",
+                            "paragraphs": [
+                                "Computer simulations were run to test various aspects of the algorithm and to simulate the entire snapshot spectral imaging process. A first simulation relates to a proof of some mathematical aspects of the CS algorithm expressed by equations above. A second simulation relates to a combination of the random Toeplitz matrix with a Bregman CS algorithm. A third simulation provides proof of the spectral cube reconstruction for test source objects, when the reconstruction error can be estimated. In exemplary embodiments using random dispersion provided by the 1D RIP diffuser image columns are independent of each other, and the proposed algorithm operates on each column separately.",
+                                "**Simulation of Mathematical Aspects in the Use of CS Algorithms**",
+                                "FIG. 7A shows a gray-level version of a 3-wavelength colored source object used in this simulation. The source is object 512\u00d7512\u00d73 pixels. FIG. 7B shows the source object of FIG. 7A separately for each of three wavelength bands of R(ed), G(reen) and B(lue), each with size 512\u00d7512 pixels. These R, G, and B matrices were merged with each other along the columns to form one combined matrix of size 1536\u00d7512, denoted by C (FIG. 7B). To simulate a model dispersed image on the detector, matrix C was multiplied by a random Gaussian matrix G of size 512\u00d71536 to form a mixed matrix M=GC of size 512\u00d7512, which is displayed in FIG. 7C.",
+                                "A framelet-based Split Bregman iteration scheme was applied to matrix M using the semi-tight wavelet frame derived from a quasi-interpolating quadratic spline. The frame decomposition was applied down to the fifth level. After 20 iterations, matrix M (FIG. 7C) was expanded into a matrix C1 of size 1536\u00d7512. Matrix C1 was split into the three separate matrices corresponding to the 3 spectral bands of size 512\u00d7512 each, to provide the reconstruction results at each spectral band, FIG. 7D. FIG. 7E shows in a graph sample cross sections along a column of the source object and its reconstruction. Specifically, one column from matrix C1 taken from FIG. 7D (solid line in FIG. 7E), was compared with the respective column in the original source object matrix C, taken from FIG. 7B (dotted line in FIG. 7E), to see the difference between the source object and its reconstruction. A PSNR was calculated to characterize the accuracy in image reconstruction and found to be 27.9 dB. This confirms the high accuracy of the Bregman iterative method as applied to spectral imaging, for the special case of three wavelength bands. FIG. 7F shows the gray level version of the 3-wavelength reconstructed image built from images of FIG. 7D and demonstrates the good overall visual reconstruction accuracy.",
+                                "Simulation for Combination of a Random Toeplitz Matrix with a Bregman CS Algorithm",
+                                "FIG. 8A shows graphs in each of five spectral bands of a single column of a random source object, used for checking convergence of Bergman iterations. The single column includes M=200 pixels and has a sparse representation in a discrete cosine transform (DCT) base function, so the sparsity transform matrix used in the process is a DCT matrix. The sensing matrix, shown in FIG. 8B, is a block random Toeplitz sensing matrix whose first row and column are chosen to be random iid with a Gaussian distribution function with zero mean and variance 1/M. FIG. 8C shows a graph of a column of the dispersed image formed with the sensing matrix of FIG. 8B from the source object of FIG. 8A. FIG. 8D shows graphs of the reconstructed images (ring markers) at each of 5 spectral bands, obtained by applying linearized Bregman iterations to the dispersed image of FIG. 8C. Point markers show the source object of FIG. 8A, for comparison. FIG. 8E shows graphs of the reconstructed images (ring markers) at each of 5 spectral bands, obtained by applying split Bregman iterations to the dispersed image of FIG. 8C. Point markers show the source object of FIG. 8A, for comparison. Perfect reconstruction is achieved with either Bregman method. In each figure except 8B, the horizontal axis represents pixel number and the vertical axis represents pixel value. In FIG. 8B, the horizontal axis represents matrix column numbers and the vertical axis represents matrix row numbers.",
+                                "Simulation of Spectral Cube Reconstruction for Test Source Objects Sensed with a Digital Camera Equipped with a 1D RIP Diffuser",
+                                "FIG. 9A shows graphs of a single column of the source object for each of three spectral bands used in this simulation. As in FIG. 8, the single column includes M=200 pixels and has a sparse representation in a DCT base function, so the sparsity transform matrix used in the process is a DCT matrix. FIG. 9B shows a finite set of 10 discrete micro-relief levels for the RIP diffuser design. FIG. 9C shows an exemplary design incorporating these levels. Part of the design of FIG. 9C is shown in magnification in FIG. 9D. The sensing matrix, shown in FIG. 9E is a random block Toeplitz matrix, consisting of 3 sub-matrices, each corresponding to a spectral band and calculated using the 1D RIP diffuser of FIG. 9C. The rows and columns of the block Toeplitz matrix are chosen according to the optical convolution in separate spectral bands, as described in the section dedicated to the RIP diffuser design above. FIG. 9F shows a graph of a column of the dispersed image formed with the sensing matrix of FIG. 9E from the source object of FIG. 9A. FIG. 9G shows the graphs of the reconstructed images (ring markers) in each of 3 spectral bands, obtained by applying linearized Bregman iterations to the dispersed image of FIG. 9F. Point markers show the source object of FIG. 8A, for comparison. Perfect reconstruction is achieved in both cases.",
+                                "It is emphasized that citation or identification of any reference in this application shall not be construed as an admission that such a reference is available or admitted as prior art. While this disclosure describes a limited number of embodiments, it will be appreciated that many variations, modifications and other applications of such embodiments may be made. For example, while the description refers specifically to a Bregman iteration for the reconstruction process, other algorithms may be used for this process. Further, while Toeplitz matrices and convolution are described in detail, more general matrices and linear transformations, corresponding to non-paraxial and spatially-variant optical systems and/or optical systems having aberrations may also be used. For example, while 1D diffusion and dispersion are described in detail, 2D diffusion and dispersion may also be used. Thus, the disclosure is to be understood as not limited to Bregman iteration and 1D diffusion/dispersion. Further, the methods disclosed herein exemplarily for three wavelength bands may remove the need for color filter arrays on digital camera image sensors. Further yet, these methods may allow reconstruction of a color image obtained with a black and white digital camera+RIP diffuser. This can be done because the algorithms described enable reconstruction of spectral information independently of the type of sensor used in the snapshot imaging. In general, the disclosure is to be understood as not limited by the specific embodiments described herein, but only by the scope of the appended claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce simulation of CS algorithm",
+                                "describe source object and simulation setup",
+                                "explain formation of mixed matrix M",
+                                "apply framelet-based Split Bregman iteration scheme",
+                                "describe reconstruction results",
+                                "calculate PSNR and confirm accuracy",
+                                "introduce simulation of random Toeplitz matrix with Bregman CS algorithm",
+                                "describe source object and simulation setup",
+                                "form dispersed image with sensing matrix",
+                                "apply linearized Bregman iterations",
+                                "apply split Bregman iterations",
+                                "introduce simulation of spectral cube reconstruction",
+                                "describe source object and simulation setup",
+                                "apply linearized Bregman iterations and confirm perfect reconstruction"
+                            ],
+                            "num_characters": 7306,
+                            "outline_medium": [
+                                "simulate mathematical aspects of CS algorithm",
+                                "simulate combination of random Toeplitz matrix with Bregman CS algorithm",
+                                "simulate spectral cube reconstruction for test source objects",
+                                "describe simulation setup for source object",
+                                "describe simulation results for Bregman iteration",
+                                "describe simulation results for split Bregman iteration",
+                                "describe simulation results for spectral cube reconstruction"
+                            ],
+                            "outline_short": [
+                                "simulate mathematical aspects of CS algorithm",
+                                "simulate combination of random Toeplitz matrix with Bregman CS algorithm",
+                                "simulate spectral cube reconstruction for test source objects"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce SSI using digital camera and RIP diffuser",
+                        "describe optical properties of RIP diffuser",
+                        "explain CS theory for compressible images",
+                        "define sensing matrix and its operation",
+                        "describe reconstruction process using Bregman iteration",
+                        "illustrate method for SSI in FIG. 1A",
+                        "detail step 104 of FIG. 1A using Bregman iteration",
+                        "describe linearized Bregman iteration in FIG. 1C",
+                        "describe split Bregman iteration in FIG. 1D",
+                        "define spectral cube 3D matrix",
+                        "model imaging at spectral band \u03bbi",
+                        "describe linear transformation of dispersed image intensity",
+                        "define sensing matrix H and its properties",
+                        "relate to compressed sensing problem",
+                        "explain RIP condition for stable solution"
+                    ],
+                    "num_characters": 8007,
+                    "outline_medium": [
+                        "introduce SSI using digital camera and RIP diffuser",
+                        "describe underdetermined problem and CS theory",
+                        "explain sensing matrix and RIP condition",
+                        "outline reconstruction process using Bregman iteration",
+                        "describe FIG. 1A and steps for SSI",
+                        "detail FIG. 1B and 1C for linearized and split Bregman iteration",
+                        "describe FIG. 1D for split Bregman iteration"
+                    ],
+                    "outline_short": [
+                        "introduce SSI method using digital camera and RIP diffuser",
+                        "describe CS theory for reconstruction of spectral cube",
+                        "outline Bregman iteration process for sparse reconstruction"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An optical assembly for use in a spectral imaging system, comprising: a phase transmitting diffractive optical element and a diffusing optical element positioned in an imaging path extending between a source object and an image sensor, wherein the dispersing optical element and the diffusing optical element cooperatively diffuse and disperse light originating or reflected from the object to form a diffused-dispersed image of the object on the image sensor, and wherein the diffused-dispersed image is processable into at least three different spectral images of the object.",
+        "2. The optical assembly of claim 1, wherein the diffusing optical element is one-dimensional.",
+        "3. The optical assembly of claim 1, wherein the dispersing optical element is a prism.",
+        "4. The optical assembly of claim 1, wherein the dispersing optical element is a grating.",
+        "5. The optical assembly of claim 2, wherein the dispersing optical element is a prism.",
+        "6. The optical assembly of claim 2, wherein the dispersing optical element is a grating.",
+        "7. The optical assembly of claim 2, wherein the one-dimensional diffusing optical element includes a plurality of parallel grooves.",
+        "8. The optical assembly of claim 7, wherein each of the parallel grooves is characterized by a width and by a random depth h, the width and depth varying along one or two orthogonal spatial coordinates.",
+        "9. The optical assembly of claim 8, wherein each groove depth h is designed to cause a corresponding phase shift\n\n\\(\\phi_{\\lambda} = \\frac{2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{h\ue8a0\\left\\lbrack {{n\ue8a0(\\lambda)} - 1} \\right\\rbrack}}{\\lambda}\\)\n\nwhere n(\u03bb) is a wavelength dependent refractive index",
+        "10. The optical assembly of claim 1, wherein the diffusing optical element is two-dimensional."
+    ]
+}

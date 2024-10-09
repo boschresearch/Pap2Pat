@@ -1,0 +1,393 @@
+{
+    "id": "US20230225696",
+    "authors": [
+        "Seraina Dual",
+        "Francois Haddad",
+        "Alison Marsden",
+        "Constance M. Verdonk",
+        "Myriam Amsallem"
+    ],
+    "title": "Methods and Systems for Assessment of Pulmonary Hypertension",
+    "date": "2023-01-06 00:00:00",
+    "abstract": "Systems and methods for non-invasively estimating right ventricular pressure are provided. Tricuspid regurgitation echocardiography Doppler signals can be acquired utilizing sonography. Digitization and interpolation of the tricuspid regurgitation Doppler signals can be utilized to estimate tricuspid regurgitation and right ventricular pressure and/or provide a metric for signal quality (quality control) as well as increase confidence in the right ventricular pressure estimates.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNOLOGICAL FIELD",
+                    "paragraphs": [
+                        "The disclosure is generally directed to methods and systems to assess pulmonary hypertension using noninvasive techniques."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce methods and systems for assessment of pulmonary hypertension"
+                    ],
+                    "num_characters": 122,
+                    "outline_medium": [
+                        "introduce methods and systems for assessment of pulmonary hypertension"
+                    ],
+                    "outline_short": [
+                        "introduce pulmonary hypertension assessment"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Pulmonary hypertension (PH) is a condition in which the pressure within the pulmonary artery is too high. The right ventricle pumps blood to the lungs passing through the pulmonary artery to allow oxygenation. The pressure in this side of the heart and in the artery is normally low-usually much lower than systolic or diastolic blood pressure measured within the radial artery of the arm. High pressure in the pulmonary artery can lead to impairment of blood flow through the lungs, resulting in an increase of right ventricle afterload, and further resulting in right ventricle dysfunction.",
+                        "The initial symptoms of PH are difficulty breathing and fatigue, which are common to many other medical conditions. The lack of distinguishable symptoms makes PH difficult to diagnose. When PH is suspected to be affecting an individual, the affirmative diagnosis of PH is typically performed via right heart catheterization, which is very intrusive invasive, unpleasant, and comes with a risk of infection. Generally, the catheterization procedure is performed under local anesthesia and sedation and requires insertion of a pressure sensor within a flexible tube into a vein (e.g., femoral vein) that is guided up into the right ventricle and pulmonary artery, where arterial pressure is measured.",
+                        "A Doppler echocardiogram, which utilizes ultrasound sonography, provides a noninvasive means to assess PH. Doppler echocardiograms, however, can be unreliable and highly dependent on the skill of the operator to accurately determine pulmonary arterial and right ventricular pressure. Thus, these scans are typically utilized as primary diagnostic tool prior to performing pulmonary artery catheterization."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define pulmonary hypertension",
+                        "describe symptoms and diagnosis of PH",
+                        "discuss limitations of current diagnostic methods"
+                    ],
+                    "num_characters": 1699,
+                    "outline_medium": [
+                        "describe pulmonary hypertension and its diagnosis"
+                    ],
+                    "outline_short": [
+                        "motivate PH diagnosis challenges"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Several embodiments are directed to methods and systems of estimating right ventricular pressure. In many embodiments, sonography is utilized to acquire tricuspid regurgitation (TR) echocardiography Doppler signal. In several embodiments, the TR curve is traced and the TR Doppler signal is digitized. In many embodiments, digitization of TR Doppler signal is performed by synchronizing traced TR curves with electrocardiography and normalized to the RR interval. In several embodiments, right ventricular pressure curves are derived from the TR curve, which can be utilized to identify physiological phases and/or calculated maximum and minimum pressure estimates.",
+                        "In several embodiments, a TR Doppler signal may be interpolated. In some embodiments, TR Doppler signal interpolation is performed by cubic polynomial interpolation based on a polynomial of third-degree p(t), where t is the time normalized over the RR interval. In various embodiments, TR Doppler signal cubic polynomial interpolation is performed on one or more of the following phases of the TR signal: isovolumic phase, ejection phase, or the shoulder point. In several embodiments, utilizing a TR Doppler signal cubic polynomial interpolation result, right ventricular pressure is estimated. From the pressure signal, right ventricular systolic pressure is calculated. Utilizing interpolated signal can provide greater confidence in the estimation of pulmonary artery pressure. Further the interpolated signal can be utilized to assess the acquired TR Doppler signal quality and the TR Doppler signal tracing."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce methods and systems for estimating right ventricular pressure",
+                        "describe use of sonography and Doppler signal interpolation",
+                        "outline advantages of the invention"
+                    ],
+                    "num_characters": 1580,
+                    "outline_medium": [
+                        "summarize methods and systems of estimating right ventricular pressure"
+                    ],
+                    "outline_short": [
+                        "summarize right ventricular pressure estimation"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Turning now to the drawings and data, various methods and systems for noninvasive estimation of right ventricular pressure signals utilizing cubic polynomial interpolation of tricuspid regurgitation (TR) Doppler signal are described in accordance with various embodiments. In several embodiments, right ventricular pressure is estimated for the diagnosis of pulmonary hypertension. In many embodiments, estimation of right ventricular pressure utilizes TR echocardiography Doppler signal acquired via sonography. In several embodiments, TR Doppler signal is digitized, ventricular physiological phases are identified, and the digitized Doppler signal is interpolated utilizing the physiological phase points. In many embodiments, interpolated TR Doppler signal is utilized to estimate maximal velocity of the TR. In several embodiments, the estimated maximal velocity is utilized to calculate right ventricular systolic pressure. In some embodiments, the right ventricular pressure is calculated from the maximal velocity via the Bernoulli equation.",
+                        "A goal in clinical assessment of PH utilizing medical imaging, such as sonographic Doppler echocardiography, is to provide reliable right ventricular systolic pressure calculation for proper diagnosis of PH. Prior methods for computing right ventricular systolic pressure from TR Doppler signal is highly variable. Because of the high variability, right heart catheterization is typically performed to confirm any PH diagnosis provided by Doppler echocardiography. Accordingly, it would be an advance in the art to provide a standardized mathematic based method that provides reliable, automatic reproducible and user-independent estimation of right ventricular pressure such that diagnosis of PH can be performed and minimize the need of the invasive right heart catheterization procedure."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Noninvasive Determination of Pulmonary Arterial Pressure",
+                            "paragraphs": [
+                                "Several embodiments are directed to estimating right ventricular pressure utilizing echocardiography Doppler signal of tricuspid regurgitation (TR). In many embodiments, a TR signal is acquired, digitized and interpolated. In several embodiments, the digitized TR signal is utilized to identify one or more ventricular physiological phases. Ventricular physiological phases to be identified include (but are not limited to) the isovolumic phase, the ejection phase, and the shoulder point. In many embodiments, the one or more identified ventricular physiological phases is used in the interpolation of the digitized TR signal. In several embodiments, an interpolated TR signal is utilized to estimate a maximal velocity. In many embodiments, an estimated maximal velocity is utilized to compute a right ventricular systolic pressure.",
+                                "Provided in FIG. 1 is an exemplary method to estimate right ventricular pressure in accordance with various embodiments. Method 100 begins with acquiring (101) tricuspid regurgitation (TR) echocardiography Doppler signal. Doppler signals can be acquired utilizing sonography.",
+                                "As depicted in FIG. 1, method 100 digitizes and interpolates (103) the acquired TR Doppler signal. To digitize the TR Doppler signal, in many embodiments, TR curves are traced, which can be performed manually or via automated software. In several embodiments, the traced TR curves are synchronized with electrocardiography and normalized to the RR interval. In some embodiments, the Doppler signal is filtered using a lowpass filter (e.g., 2nd-order Butterworth lowpass filter) with an appropriate cutoff (e.g., 10 Hz). Removal of low frequencies can help smooth the TR curves by removing spikes in frequency signal and/or smooth out ridges of the curve. From the TR curve, in accordance with many embodiments, the right ventricular pressure (RVP) is derived, which can be utilized to calculate right ventricular systolic/maximum pressure (RVSP), maximum and minimum pressure differentials (dP/dt max, dP/dt min), kurtosis and skewness. In various embodiments, maximum and minimum pressure differentials of the first and second pressure differentials are used to define one or more ventricular physiological phases, such as the isovolumic phase, the ejection phase, and the shoulder point. In some embodiments, first pressure derivatives are utilized to calculate dP/dt max and min to identify the isovolumic phase. In some embodiments, a second derivative is used to identify the beginning and end of the ejection phase as well as the shoulder point.",
+                                "In several embodiments, cubic polynomial interpolation of the TR curve is performed. Alternatively, in some embodiments, cubic spline interpolation of the TR curve is performed. The decision to utilize cubic polynomial or cubic spline interpolation will depend on the desired outcome. To perform cubic polynomial interpolation, in accordance with many embodiments, the interpolation is based on a polynomial of third-degree p(t), where t is the time normalized over the RR interval. In many embodiments, parameters are calculated for each individual TR signal based on the boundary points of specific physiological phases and their respective local first derivatives, such that a smooth interpolated curve is generated. For more on parameter determination, see the Exemplary Embodiments and FIG. 5.",
+                                "In many embodiments, isovolumic contraction phase starts at the beginning of the TR signals (isovolumic contraction (IVC)) and ends at the minima of the second derivative. Isovolumic relaxation (IVR) phase starts with the second minima of the second derivative and ends at the end of the Doppler signal. In several embodiments, the ejection phase starts and ends with the opening and the closing of the pulmonary valve, which are equivalent to first and last minima of the second derivative. In many embodiments, the shoulder point interpolation is established based on the observed decrease in TR slope shortly after the start of the ejection, evidenced in the curve shape visually as a \u2018shoulder\u2019 point, and mathematically by the constant second derivative. In some embodiments, the \u2018shoulder\u2019 point was mathematically defined as the second derivative of the TR velocity signal d2v/dt2 < 500 m/s3 after the beginning of ejection. In various embodiments of shoulder point determination, a d2v/dt2 < 500 m/s3, a d2v/dt2 < 400 m/s3, a d2v/dt2 < 300 m/s3, a d2v/dt2 < 200 m/s3, a d2v/dt2 < 100 m/s3, or any appropriate cutoff is utilized.",
+                                "Method 100 further estimates (105) tricuspid regurgitation maximal velocity (Vmax) and right ventricular systolic pressure (RVSP) using the interpolated Doppler signal. In several embodiments, the interpolated Doppler signal provides a Vmax. In many embodiments, the tricuspid regurgitation maximal velocity is utilized to calculate right ventricular systolic pressure using Bernoulli\u2019s equation or a modified version thereof. In some embodiments, the following modified Bernoulli\u2019s equation is utilized:",
+                                "\\(\\text{RVSP}\\text{=}\\text{4}\\mspace{6mu}\\text{*}\\mspace{6mu}\\left( \\text{Vmax} \\right)^{2} + \\text{RAP}\\)",
+                                "where RVSP is the right ventricular systolic pressure, Vmax is the maximal velocity, and RAP is the right atrial pressure. In many embodiments, RAP is estimated, which can be done based on acquired Doppler imaging. For instance, RAP can be estimated by inferior vena cava and hepatic vein size and/or diameter.",
+                                "In some embodiments, a correction factor is utilized to calculate RVSP. For instance, for calculation RVSP at the isovolumic phase, it is expected that the pressure will be overestimated due to the fact that the isovolumic phase interpolation is prior to pulmonary valve opening and therefore change in curvature. In some embodiments, a linear regression is utilized to determine a correction factor. For more on correction factors, see the Exemplary Embodiments.",
+                                "Method 100 optionally assesses (107) the traced TR Doppler signal utilizing the interpolated TR Doppler signal. Interpolation curves can be utilized to assess, confirm, and/or verify the acquired TR Doppler signal and tracings of the signal, whether performed manually or via software. Interpolation curves and methods of their use can also be utilized to assess, confirm or verify automated Doppler methods used to calculate RVSP. Accordingly, in some embodiments, interpolation is performed to confirm and/or verify clinical estimates of RVSP or other systolic pressures.",
+                                "While specific examples of methods for estimating right ventricular pressure utilizing echocardiographic Doppler signals are described above, one of ordinary skill in the art can appreciate that various steps of the process can be performed in different orders and that certain steps may be optional according to some embodiments of the invention. As such, it should be clear that the various steps of the process could be used as appropriate to the requirements of specific applications. Furthermore, any of a variety of processes for estimating right ventricular pressure appropriate to the requirements of a given application can be utilized in accordance with various embodiments of the invention.",
+                                "Furthermore, estimated right ventricular systolic pressure can be utilized to diagnose pulmonary hypertension. When the pulmonary valve is open, right ventricular systolic pressure corresponds to the systolic pulmonary arterial pressure (sPAP) in the absence of outflow track obstruction. Once sPAP is estimated, it can be used to estimate mean pulmonary arterial pressure (mPAP). Several well-established equations can be utilized to estimate mPAP, such as the Chemla equation (see the Exemplary Embodiments). In accordance with generally accepted medical practices, a mPAP of greater than 20 mmHg is consistent with pulmonary hypertension."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method for estimating right ventricular pressure",
+                                "describe acquisition of TR Doppler signal",
+                                "digitize and interpolate TR Doppler signal",
+                                "identify ventricular physiological phases",
+                                "interpolate TR Doppler signal using cubic polynomial",
+                                "estimate maximal velocity",
+                                "calculate right ventricular systolic pressure",
+                                "describe use of Bernoulli's equation",
+                                "estimate right atrial pressure",
+                                "discuss correction factors",
+                                "assess traced TR Doppler signal",
+                                "confirm and verify clinical estimates of RVSP",
+                                "diagnose pulmonary hypertension",
+                                "estimate mean pulmonary arterial pressure",
+                                "discuss clinical interventions"
+                            ],
+                            "num_characters": 7814,
+                            "outline_medium": [
+                                "acquire tricuspid regurgitation echocardiography Doppler signal",
+                                "digitize and interpolate TR Doppler signal",
+                                "estimate tricuspid regurgitation maximal velocity and right ventricular systolic pressure",
+                                "calculate right ventricular systolic pressure using Bernoulli\u2019s equation",
+                                "estimate right atrial pressure",
+                                "assess traced TR Doppler signal utilizing interpolated TR Doppler signal",
+                                "describe optional steps of the process"
+                            ],
+                            "outline_short": [
+                                "introduce TR Doppler signal acquisition",
+                                "describe TR Doppler signal digitization and interpolation",
+                                "estimate right ventricular systolic pressure"
+                            ]
+                        },
+                        {
+                            "title": "Applications Utilizing Estimated Right Ventricular Systolic Pressure",
+                            "paragraphs": [
+                                "Various embodiments are directed to performing diagnostics and treatments upon individuals based on their estimated right ventricular systolic pressure as determined utilizing echocardiographic Doppler signal. As described herein, an individual may be determined as having an elevated mPAP and thus at risk of developing or has developed PH. In some embodiments, the estimated ventricular systolic pressure and/or a derivative thereof is utilized to perform a clinical intervention. Clinical interventions include performing a confirmatory diagnostic and/or administering a treatment.",
+                                "**Diagnostic Methods**",
+                                "A number of embodiments are directed towards diagnosing an individual using estimated right ventricular systolic pressure and/or a derivative thereof. In some embodiments, a TR echocardiographic Doppler signal is acquired and traced; then digitized and interpolated to estimate right ventricular systolic pressure. In some embodiments, the estimated right ventricular systolic pressure is utilized to determine an individual\u2019s mPAP, which can be further used to diagnose PH.",
+                                "In several of embodiments, a diagnostic can be performed as follows:\n\n\n- perform echocardiography Doppler signal on the tricuspid valve\n- estimate right ventricular pressure based on a trace of tricuspid\n  regurgitation\n- determine a pulmonary arterial pressure\n- diagnose the individual as at risk of developing or having developed\n  pulmonary hypertension based on the pulmonary arterial pressure.",
+                                "Diagnoses, in accordance with various embodiments, can be performed utilizing an estimated right ventricular pressure, which can be estimated as described in FIG. 1. In some embodiments, a PH diagnosis is based on a pulmonary arterial pressure being equal to and/or above a threshold. The threshold can be any appropriate diagnostic threshold, such as thresholds established by American Heart Association, American College of Cardiology, European Society of Cardiology, European Respiratory Society, or the World Health Organization. Although thresholds can vary between professional health organizations, common thresholds are mPAP \u2265 20 mmHg or mPAP \u2265 25 mmHg when the individual is at rest. Further, it is to be understood that professional health organizations can change the diagnostic threshold as appropriate.",
+                                "**Medications, Supplements, and Further Diagnostics**",
+                                "Several embodiments are directed to the use of medications and/or dietary supplements to treat an individual in based upon an estimated right ventricular pressure and/or a derivative thereof. In some embodiments, medications and/or dietary supplements are administered in a therapeutically effective amount as part of a course of treatment. As used in this context, to \u201ctreat\u201d means to ameliorate at least one symptom of the disorder to be treated or to provide a beneficial physiological effect. A therapeutically effective amount can be an amount sufficient to prevent reduce, ameliorate or eliminate symptoms of PH or pathological conditions related to PH, such as (for example) heart failure, arrhythmias, blood clots, bleeding in the lungs, or pregnancy complications.",
+                                "An \u201ceffective amount\u201d is an amount sufficient to effect beneficial or desired results. For example, a therapeutic amount is one that achieves the desired therapeutic effect. This amount can be the same or different from a prophylactically effective amount, which is an amount necessary to prevent onset of disease or disease symptoms. An effective amount can be administered in one or more administrations, applications or dosages. A therapeutically effective amount of a composition depends on the composition selected. The compositions can be administered one from one or more times per day to one or more times per week; including once every other day. The skilled artisan will appreciate that certain factors may influence the dosage and timing required to effectively treat a subject, including but not limited to the severity of the disease or disorder, previous treatments, the general health and/or age of the subject, and other diseases present. Moreover, treatment of a subject with a therapeutically effective amount of the compositions described herein can include a single treatment or a series of treatments. For example, several divided doses may be administered daily, one dose, or cyclic administration of the compounds to achieve the desired therapeutic result.",
+                                "A number of medications and treatments are known for pulmonary hypertension and related disorders. Accordingly, embodiments are directed toward treating an individual with a treatment regimen when diagnosed with PH as described herein. Once diagnosed for PH, treatments include administration of a vasodilator (e.g., epoprostenol or treprostinil), administration of a guanylate cyclase stimulator (e.g., riociguat), administration of an endothelin receptor antagonist (e.g., bosentan, macitentan, or ambrisentan), administration of a phosphodiesterase 5 inhibitor (e.g., sildenafil or tadalafil), administration of a calcium channel blocker (e.g., amlodipine, diltiazem, or nifedipine), administration of an anticoagulant (e.g., warfarin), administration of a sodium-potassium ATPase pump inhibitor (e.g., digoxin), atrial septosmotomy, valve repair, and valve replacement."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce diagnostic methods",
+                                "describe estimation of right ventricular pressure",
+                                "determine pulmonary arterial pressure",
+                                "diagnose pulmonary hypertension",
+                                "discuss medications and supplements",
+                                "administer therapeutically effective amount",
+                                "treat pulmonary hypertension",
+                                "discuss further diagnostics",
+                                "perform atrial septostomy",
+                                "perform valve repair and replacement"
+                            ],
+                            "num_characters": 5288,
+                            "outline_medium": [
+                                "diagnose pulmonary hypertension",
+                                "perform clinical interventions",
+                                "administer medications and/or dietary supplements",
+                                "describe treatment regimens",
+                                "describe further diagnostics"
+                            ],
+                            "outline_short": [
+                                "diagnose pulmonary hypertension",
+                                "treat pulmonary hypertension"
+                            ]
+                        },
+                        {
+                            "title": "Computational Processing System",
+                            "paragraphs": [
+                                "A computational processing system to estimate right ventricular pressure in accordance with various embodiments of the disclosure utilizes a processing system including one or more of a CPU, GPU and/or neural processing engine. In a number of embodiments, captured sonographic data is processed to generate a tricuspid regurgitation echocardiography Doppler signal using a computational processing system. In some embodiments, the computational processing system is housed within a sonographic imaging modality. In some embodiments, the computational processing system is housed separately from and receives the acquired sonographic data. In certain embodiments, the computational processing system is in communication with the imaging modality. In various embodiments, the processing system communicates with the imaging modality by any appropriate means (e.g., a wireless connection). In certain embodiments, the computational processing system is implemented as a software application on a computing device such as (but not limited to) mobile phone, a tablet computer, a wearable device (e.g., watch), and/or portable computer.",
+                                "A computational processing system in accordance with various embodiments of the disclosure is illustrated in FIG. 2. The computational processing system 200 includes a processor system 202, an I/O interface 204, and a memory system 206. As can readily be appreciated, the processor system 202, I/O interface 204, and memory system 206 can be implemented using any of a variety of components appropriate to the requirements of specific applications including (but not limited to) CPUs, GPUs, ISPs, DSPs, wireless modems (e.g., WiFi, Bluetooth modems), serial interfaces, depth sensors, IMUs, pressure sensors, ultrasonic sensors, volatile memory (e.g., DRAM) and/or non-volatile memory (e.g., SRAM, and/or NAND Flash). In the illustrated embodiment, the memory system is capable of storing a right ventricular pressure estimator application 208. The right ventricular pressure estimator application can be downloaded and/or stored in non-volatile memory. When executed the right ventricular pressure estimator application is capable of configuring the processing system to implement computational processes including (but not limited to) the computational processes described above and/or combinations and/or modified versions of the computational processes described above. In several embodiments, the right ventricular pressure estimator application 208  utilizes tricuspid regurgitation signal data 210, which is optionally stored in the memory system, to perform signal processing including (but not limited to) digitizing tricuspid regurgitation signal data, interpolating tricuspid regurgitation signal data, and estimating maximal velocity. In certain embodiments, the digitizing tricuspid regurgitation signal data application 208 utilizes interpolation parameters 212 stored in memory to process acquired signal data to perform processes including (but not limited to) performing TR Doppler signal cubic polynomial interpolation on one or more of the following phases of the TR signal: isovolumic phase, ejection phase, or the shoulder point (also referred to as the knee point). In several embodiments, the tricuspid regurgitation signal data 210 is temporarily stored in the memory system during processing and/or saved for use in establishing interpolation parameters.",
+                                "While specific computational processing systems are described above with reference to FIG. 2, it should be readily appreciated that computational processes and/or other processes utilized in the provision of right ventricular estimation in accordance with various embodiments of the disclosure can be implemented on any of a variety of processing devices including combinations of processing devices. Accordingly, computational devices in accordance with embodiments of the disclosure should be understood as not limited to specific imaging systems, computational processing systems, and/or right ventricular pressure estimator systems. Computational devices can be implemented using any of the combinations of systems described herein and/or modified versions of the systems described herein to perform the processes, combinations of processes, and/or modified versions of the processes described herein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce computational processing system",
+                                "describe processing system components",
+                                "store right ventricular pressure estimator application",
+                                "execute right ventricular pressure estimator application",
+                                "process tricuspid regurgitation signal data",
+                                "digitize and interpolate TR Doppler signal",
+                                "estimate maximal velocity",
+                                "discuss implementation on various devices"
+                            ],
+                            "num_characters": 4318,
+                            "outline_medium": [
+                                "describe computational processing system",
+                                "process sonographic data to generate TR echocardiography Doppler signal",
+                                "store right ventricular pressure estimator application",
+                                "describe optional components of computational processing system"
+                            ],
+                            "outline_short": [
+                                "describe computational processing system architecture",
+                                "implement right ventricular pressure estimator application"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe method for estimating right ventricular pressure",
+                        "detail interpolation of TR Doppler signal",
+                        "explain calculation of right ventricular systolic pressure"
+                    ],
+                    "num_characters": 1841,
+                    "outline_medium": [
+                        "describe noninvasive determination of pulmonary arterial pressure"
+                    ],
+                    "outline_short": [
+                        "describe noninvasive right ventricular pressure estimation"
+                    ]
+                },
+                {
+                    "title": "EXEMPLARY EMBODIMENTS",
+                    "paragraphs": [
+                        "The embodiments of the disclosure will be better understood with the various examples provided. Described herein are examples of estimating right ventricular systolic pressure utilizing echocardiographic Doppler signals. Results of estimated right ventricular systolic pressure are compared with standard practices within the field of cardiology. The results demonstrate the improvements provided by the embodiments described herein."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Elucidating Tricuspid Doppler Signal Interpolation and Its Implication for Assessing Pulmonary Hypertension",
+                            "paragraphs": [
+                                "This study had three main objectives to define the conceptual framework of TR waveform analysis. First, the TR waveform and its relationship with physiological metrics were analyzed, the metrics including but not limited to right ventricular (RV) longitudinal strain, TR severity, pulmonary vascular resistance (PVR), and heart rate. Second, a cubic polynomial interpolation method of estimating RVSP was derived and validated from different phases of the cardiac cycle. Finally, it was determined whether cubic polynomial interpolation could improve estimation of RVSP in cohort with greater bias between RVSP estimation from echo and RHC.",
+                                "**Methods**",
+                                "First, a script for extraction of TR tracings was developed with automated analysis of normalized TR duration, skewness, kurtosis and maximal and minimal first pressure time derivatives (dp/dt max and min). Subsequently, RV pressure curves were constructed using the Bernoulli equation by adding estimated RAP. Then, a cubic polynomial interpolation model was derived to guide estimation of Vmax and RVSP.",
+                                "Clinical cohorts: Three cohorts were analyzed as part of this study: (1) a derivation cohort to evaluate cubic polynomial interpolation method, (2) a separate validation cohort, (3) a cohort to test the clinical applicability of the interpolation methods, (4) and a non-PAH cohort with and without PH (FIG. 3). The derivation cohort included 44 patients recruited between January 2007 and June 2009 with a diagnosis of pulmonary arterial hypertension (PAH) and in whom echo and right heart catheterization was obtained within 12 hours of each other in stable clinical condition. The validation cohort (n=71) patients were enrolled between December 2006 and December 2013, from the previously published prospective Vera Moulton Wall Center registry (M. Amsallen, et al, Circ Cardiovasc Imaging. 2017;10:e005771, the disclosure of which is herein incorporated by reference). A third \u201coutlier\u201d cohort of 22 patients with advanced lung disease and found to have a difference of greater than 30% between echocardiographic and invasive estimates. A non-PAH group (n=44) with referred to right heart catheterization was also added to assess performance of the method in another nosological context. The diagnosis of PAH was defined by the presence of mean pulmonary arterial pressure (mPAP) > 20 mmHg, pulmonary arterial wedge pressure \u2264 15 mmHg, and WHO group 1 diagnosis. All patients were in sinus rhythm at the time of echo, presence of right bundle branch block and QRS duration were recorded. Stanford University Institutional Review Board approved the study, which was conducted in agreement with the Helsinki-II declaration.",
+                                "Echocardiography: Studies were acquired using Philips IE 33 ultrasound systems (Philips, Amsterdam, The Netherlands). All measurements were performed according to the latest guidelines by certified level 3 expert readers [C. V., M. A., F. H.] (see, R. M. Lang, et al., J Am Soc Echocardiogr. 2015;28:1-39; and S. E. Wiegers, et al., Circ Cardiovasc Imaging. 2019: 26; the disclosures of which are herein incorporated by reference). The reader only selected complete TR signals, for which the curve was interpretable for the entire cardiac cycle. Measures of RV size and function included relative right ventricular area (right to left area ratio), RV fractional area change and RV longitudinal strain. RV free wall Lagrangian longitudinal strain (RVLS) was measured from mid-endocardial end-diastolic and end-systolic manually traced lengths and calculated as: (end-systolic length - end-diastolic length. RAP was estimated from the inferior vena cava size and collapse according to American Society of Echocardiography guidelines (L. G. Rudski, et al., J Am Soc Echocardiogr. 2010;23:685-713, the disclosure of which is herein incorporated by reference).",
+                                "Right heart catheterization: RHC was performed through the internal jugular or right femoral veins. Mixed venous saturation, RAP, systolic pulmonary artery pressure (SPAP), mean pulmonary arterial pressure (MPAP) diastolic pulmonary arterial pressure, and pulmonary capillary wedge pressure, were measured, and pulmonary vascular resistance (PVR), and cardiac index (using the assumed Fick method) subsequently calculated (see, C. G. LaFarge and O. S. Miettinen, Cardiovasc Res. 1970;4:23-30, the disclosure of which is herein incorporated by reference).",
+                                "Digitization of TR signals using a novel semi-automated analysis: The outline of the TR Doppler waveform was first manually segmented then automatically extracted with the ECG and normalized to the R-R interval (FIG. 3). The TR waveform was filtered using a 2nd-order Butterworth lowpass filter using a 10 Hz cut-off. Digitization of the TR signals was reliable as assessed by the coefficient of determination for RVSP (R2=0.991) and velocity time integrals (VTIs) (R2=0.929) (FIG. 3). The analysis of the velocity profiles included the Vmax and the VTI, skewness and kurtosis. Skewness was defined as time to maximal pressure (Pmax) normalized by the duration of TR signal. RV pressure curves were constructed using the Bernoulli equation by adding estimated RAP. The first pressure derivatives were derived to calculate dP/dt max and min. The second derivative was used to identify the beginning and end of the ejection phase as previously described by Vanderpool et al (R. R. Vanderpool, et al., Pulm Circ. 2020;10:1-11, the disclosure of which is herein incorporated by reference).",
+                                "Cubic polynomial interpolation: Polynomial interpolation is based on a polynomial of variable-degree p(t), where t is the time normalized over the RR interval. A second-degree polynomial interpolation would be synonymous with a parabolic fit of the TR signal, assumed in the guidelines (see, P. Lancellotti, et al., Eur J Echocardiogr. 2010;11:307-32, the disclosure of which is herein incorporated by reference). In contrast, a cubic polynomial approach was used, which additionally captures the skewness of the TR waveform. The four parameters were calculated for each individual TR waveform based on the boundary points of specific physiological phases and their respective local first derivatives, enforcing a smooth interpolated curve. Therefore, each patient\u2019s curve interpolation was based on the TR curve only, not on an averaged interpolation from the entire cohort. The relevant physiological phases were found using the derivation cohort.",
+                                "Various mathematical methods are commonly used for data interpolation: piecewise constant (nearest neighbor), linear, or polynomial functions of varying degree, where constant and linear functions are zero and first-degree polynomials, respectively. In polynomial interpolation, the interpolated section is approximated by a polynomial of degree n by fitting n+1 unknown coefficient based on n+1 datapoints. The cubic polynomial interpolation is based on a polynomial of third-degree p(t), where t is the time normalized over the RR interval.",
+                                "\\(p_{TR}(t) = a_{1} + a_{2} \\ast t + a_{3} \\ast t^{2} + a_{4} \\ast t^{3}\\)",
+                                "The parameters of the cubic polynomial a1 - a4 are unknown and calculated for every TR waveform based on the continuity at the respective boundary points p(t1) and p(t2) including the smoothness condition on their derivative dp/dt (t1) and dp/dt (t2).",
+                                "\\(p\\left( t_{1} \\right) = a_{1} + a_{2} \\ast t_{1} + a_{3} \\ast t_{1}^{2} + a_{4} \\ast t_{1}^{3}\\)",
+                                "\\(p\\left( t_{2} \\right) = a_{1} + a_{2} \\ast t_{2} + a_{3} \\ast t_{2}^{2} + a_{4} \\ast t_{2}^{3}\\)",
+                                "\\({{dp}/{dt\\left( t_{1} \\right)}} = a_{2} + 2\\mspace{6mu} a_{3} \\ast t_{1}\\mspace{6mu} + \\mspace{6mu} 3\\mspace{6mu} a_{4} \\ast t_{1}^{2}\\)",
+                                "\\({{dp}/{dt\\left( t_{2} \\right)}} = a_{2} + 2\\mspace{6mu} a_{3} \\ast t_{2}\\mspace{6mu} + \\mspace{6mu} 3\\mspace{6mu} a_{4} \\ast t_{2}^{2}\\)",
+                                "The above equations are written in matrix format with A consisting of the four unknown parameters a1 - a4, P as the fours pressure and pressure derivatives, and X including the time values. The linear system of equations is then solved for the unknown parameters a1 - a4 with Gauss elimination.",
+                                "\\(A = {P/X}\\)",
+                                "Statistical analyses: Continuous data are presented in terms of median and interquartile ranges and were compared between cohorts using the Mann-Whitney test, while Categorical data were presented as number and percentage and compared using Chi-square test between cohorts. Spearman correlation analysis was used to analyze association between variables and multivariable linear regression analysis to identify independent correlates. Bland-Altman analysis was also used to describe bias and limits of agreement between cubic polynomial interpolation and expert read echocardiographic studies and between echo and right heart catheterization measures. A paired t-test was used to analyze changes between clinical reports and cubic polynomial interpolation based on early phases of the TR signal. Results were considered significant when 2-sided p-values were <0.05. Analysis was performed using custom scripts in python (Python 3.0) with libraries PIL, scipy, and cv2 and using Medcalc statistical software (Version V19.8).",
+                                "**Patient Sample Population**",
+                                "The characteristics of the derivation and validation cohort are presented in Table 1A, the characteristics of the non-PAH cohort in Table 1B. The mean MPAP, PVR, and RVLS in the validation cohort were 51 [47; 55] mmHg, 11.8 [1.4; 35.1] and -15.7[-16.8;-14.7], respectively. There were minor differences in cohort characteristics with small differences in RVLS and LVEF.",
+                                "**TR Waveform Analysis Using Digital Extraction**",
+                                "In the derivation cohort, the TR waveforms obtained were representative with excellent correlation between expert read echo and RHC (r = 0.90, p<0.001) and small negative bias -8.3 mmHg [-4.9; -11.6] (FIG. 4A). After digital extraction, normalized TR duration, skewness and kurtosis were analyzed (Table 2; FIG. 4B). As shown in FIG. 4C, the TR waveforms were non-parabolic with varying skewness. Normalized TR duration and corresponding (Bernoulli converted) peak pressure are the most closely related to right ventricular and pulmonary vascular characteristics. Normalized TR duration was moderately associated with RVLS, PVR, and heart rate; skewness was more strongly associated with RAP and heart rate, whereas Pmax was related to relative RV relative size, RVLS, RAP, PVR, and heart rate (FIG. 4C) (all p<0.001). Kurtosis on the other hand was only related to heart rate (p<0.001) (FIG. 4C). On multivariable analysis, Pmax was associated with RV size (p=0.0032) and PVR (p=0.0007), overall p<0.0001 and R2=0.64; while skewness was mainly related to TR normalized duration (p=0.0002, R2 =0.60).",
+                                "RVSP pressure curves was constructed based on the TR waveforms by adding estimated RAP. In the cohort, the estimated RAP was 10.1 mmHg [9.0;11.1] based on echo and 9.9 [8.7; 11.0] mmHg on RHC, with no significant difference (p=0.78), correlation R2=0.67, bias 0.2 mmHg.",
+                                "For cubic polynomial interpolation, three different phases--the isovolumic, ejection and \u201cknee\u201d phase corresponding to an inflection point in the early ejection phase--were used (FIG. 5). These phases were identified using first and second derivatives of the digitized TR waveform. For ejection phase interpolation, the beginning of ejection was identified using the first second derivative minima corresponding to a change in the curvature associated with pulmonary valve opening. \u201cKnee point\u201d interpolation was based on the early inflection point after pulmonary valve opening. The \u201cknee\u201d point was mathematically defined as the second derivative of the TR velocity waveform d2v/dt2 < 200 m/s3 after the beginning of ejection. The threshold was found iteratively in the derivation cohort and was applied to the validation cohort as well as the \u201coutlier\u201d cohort.",
+                                "The cubic polynomial interpolation relied on the pressure at start time point tA and end time point tB defined in the physiological phases as well as the respective derivatives of the curve (FIG. 5). Local derivatives were calculated as a time-average over 3% of the cardiac cycle time, which was found to be optimal in the derivation cohort. FIG. 5 provides a typical example of cubic polynomial interpolation according to the three physiological phases. The three interpolation methods of Pmax were strongly associated with expert estimates of RVSP (all R2\u2265 0.931) or SPAP or MPAP by RHC (all R2 \u2265 0.844) (FIGS. 6A and 6B). While interpolation using the knee point provided a numerically higher coefficient of determination compared to the other methods of interpolation, the differences were not statistically different (p=0.54 for isovolumic phase, p=0.79 for ejection phase). The limits of agreement for isovolumic, ejection, and knee point interpolations were 6.03 [4.33; 7.73], -2.94 [1.47; 4.41], and -3.11 [-4.52; -1.71] mmHg, respectively (FIG. 6A).",
+                                "The cubic polynomial interpolation method performed well in the validation cohort. The three methods had a high coefficient of determination when compared to expert reader (R2 isovolumic=0.910, R2 ejection phase=0.930, R2 Knee point=0.920) (FIG. 6A).",
+                                "Since the isovolumic phase interpolation is prior to pulmonary valve opening and therefore change in curvature, it is expected that the pressure will be overestimated. Therefore, a correction factor needs to be incorporated and can be addressed using a fixed correction factor defined on the derivation and validation cohort with respect to the knee point. Using a linear regression equation, we found RVSP knee = 0.893 * RVSPiso (R2=0.98) and similarly RVSPknee = 0.926 * RVSPej (R2=1.0) (FIG. 7).",
+                                "In the derivation and validation cohorts, severe TR was observed in 37% of patients. Pmax was statistically higher in patients with severe TR than in those with mild or moderate degree of TR (86+/-17 mmHg vs. 72+/- 24 mmHg, p=0.001). TR severity was not associated with the magnitude of difference between interpolation estimated RVSP and SPAP from RHC, regardless of the interpolation method used (isovolumic interpolation, 1.9+/-13.3 for non-severe TR vs. -0.19+/-15.11 for severe TR, p=0.43; knee interpolation, -6.95+/-11.9 vs. -9.75+/-13 mmHg, p=0.25; ejection interpolation, -1.49 vs. -2.64+/-14 mmHg, p=0.65).",
+                                "Comparison with alternate linear regression model based on TR waveform parameters: As an alternative to cubic polynomial interpolation, we also tested whether linear regression based on RAP, pressure derivatives, and time intervals could provide estimates of peak signals. For RVSP estimates we included in the multivariable model normalized TR duration, dP/dt min and max, and RAP. Overall, the R2 of the model was 0.78 (p<0.0001). When compared to the alternate multi-variable regression model, the cubic polynomial interpolation based on the knee performs better (R2=0.78 vs R2=0.94, p<0.0001). In the derivation cohort, variables retained were RVSP=0.038*dP/dt max -0.061 *dP/dtmin+ 0.96*RAP (R2=0.66, p<0.0001).",
+                                "A correlation was seen between pressure at the start and end of RV ejection (Peji and Peje), with MPAP and DPAP are respectively r=0.68 and r=0.75 for MPAP and r=0.69 and r=0.65 for DPAP. The R2 was 0.83 for linear regression based on those two physiologically relevant points of the TR curve to predict Pmax (p<0.0001). The model was then defined as follows: Pmax=9.2+0.81*Peje+0.45*Peji.",
+                                "**Testing the Interpolation Method in the Outlier Cohort**",
+                                "The interpolation method was tested in the clinical setting using an outlier cohort with more than 30% relative difference between clinical echocardiographic and invasive measures. In the outlier cohort, echo estimates of RVSP was 50+/-21 mmHg, with mean RAP of 7 mmHg. The correction factor defined based on the validation and derivation cohorts was applied (uncorrected results presented in FIG. 7) to the outlier cohort to reduce overestimation of Pmax using interpolation from ejection and isovolumic phases.",
+                                "In the outlier cohort, the echo report results underestimated RVSP and showed high variability -11.0[-15.4;0.2] mmHg (FIG. 8A). Interpolation methods showed decreased variability with -4.4[-7.9;0.7] mmHg for knee interpolation, -3.2[-7.5;0.9] mmHg for ejection phase, -3.1[-8.6;2.0] mmHg for isovolumic phase interpolation (FIG. 8A). From the 22 patients in the outlier cohort, relative change in estimate from the knee interpolation and echo report of more than 20% was observed in 13 patients with 8 correcting an underestimation and 5 patients correcting an overestimation. When comparing to RHC, estimates by knee interpolation resulted in lower bias and smaller limits of agreement compared to the echo report (6 [1; 11] vs. 21 [12; 29] mm Hg, p=0.0149 for underestimation, -13.3 [-25.2;-1.3] vs. -26.2 [-46.42; -5.0] mm Hg, p=0.065 for overestimation) (FIG. 8B).",
+                                "**Testing the Interpolation Method in the Non-PAH Cohort With or Without PH**",
+                                "44 patients presenting left heart disease were selected as controls, 20 were without PH according to ESC guidelines with MPAP \u2264 20 mmHg based on right heart catheterization. Extrapolated Pmax from pressure at knee yielded a correlation of r=0.98 with RVSP as measured by echo. Correlation was not modified according to the presence or absence of PH with r=0.98 for patients with PH as previously defined vs. r=0.97 for patients without PH (FIG. 9).",
+                                "When analyzing differences in TR waveform characteristics, it was observed that skewness of the TR waveform was higher in patients without PH compared to the pooled patients with PH from all cohorts 0.69 vs. 0.36, p<0.0001. Kurtosis of the TR waveform was similar in both groups 2.25 vs. 2.28, p=0.91.",
+                                "In this study, a novel physiological approach to TR waveform analysis and interpolation was developed. The study had two main findings. First, it was found that the TR waveform was non-parabolic with significant variability in skewness. Second, cubic polynomial interpolation using isovolumic or early ejection phases (including knee) provided reliable interpolation of maximal RVSP. If further implemented, interpolation methods provide additional quality control for RVSP estimates to inform diagnosis of PH."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define conceptual framework of TR waveform analysis",
+                                "analyze TR waveform and its relationship with physiological metrics",
+                                "derive and validate cubic polynomial interpolation method of estimating RVSP",
+                                "determine whether cubic polynomial interpolation improves estimation of RVSP",
+                                "develop script for extraction of TR tracings",
+                                "perform automated analysis of normalized TR duration, skewness, kurtosis, and maximal and minimal first pressure time derivatives",
+                                "construct RV pressure curves using the Bernoulli equation",
+                                "derive cubic polynomial interpolation model",
+                                "calculate parameters of the cubic polynomial",
+                                "analyze various mathematical methods for data interpolation",
+                                "describe cubic polynomial interpolation method",
+                                "calculate parameters of the cubic polynomial",
+                                "perform statistical analyses",
+                                "present characteristics of the derivation and validation cohort",
+                                "analyze TR waveforms obtained in the derivation cohort",
+                                "analyze normalized TR duration, skewness, and kurtosis",
+                                "analyze association between variables",
+                                "identify independent correlates",
+                                "perform Bland-Altman analysis",
+                                "analyze changes between clinical reports and cubic polynomial interpolation",
+                                "identify phases of the cardiac cycle",
+                                "define the \"knee\" point",
+                                "perform cubic polynomial interpolation using three physiological phases",
+                                "analyze association between interpolation methods and expert estimates of RVSP",
+                                "analyze limits of agreement for interpolation methods",
+                                "perform multivariable analysis",
+                                "analyze association between RVSP and RV size and PVR",
+                                "analyze association between skewness and TR normalized duration",
+                                "construct RVSP pressure curves",
+                                "analyze association between estimated RAP and RHC",
+                                "analyze performance of cubic polynomial interpolation in the validation cohort",
+                                "analyze association between TR severity and Pmax",
+                                "compare cubic polynomial interpolation with alternate linear regression model",
+                                "test interpolation method in the outlier cohort",
+                                "analyze performance of interpolation methods in the outlier cohort",
+                                "test interpolation method in the non-PAH cohort with or without PH"
+                            ],
+                            "num_characters": 18146,
+                            "outline_medium": [
+                                "define conceptual framework of TR waveform analysis",
+                                "analyze TR waveform and its relationship with physiological metrics",
+                                "derive and validate cubic polynomial interpolation method of estimating RVSP",
+                                "determine whether cubic polynomial interpolation improves RVSP estimation",
+                                "develop script for extraction of TR tracings",
+                                "perform automated analysis of normalized TR duration, skewness, kurtosis, and maximal and minimal first pressure time derivatives",
+                                "construct RV pressure curves using Bernoulli equation",
+                                "derive cubic polynomial interpolation model",
+                                "calculate parameters of cubic polynomial a1 - a4",
+                                "perform statistical analyses",
+                                "present patient sample population characteristics",
+                                "analyze TR waveform using digital extraction",
+                                "correlate TR waveform with right ventricular and pulmonary vascular characteristics",
+                                "perform multivariable analysis",
+                                "construct RVSP pressure curves",
+                                "identify physiological phases for cubic polynomial interpolation",
+                                "compare cubic polynomial interpolation with expert estimates of RVSP",
+                                "test interpolation method in outlier cohort"
+                            ],
+                            "outline_short": [
+                                "define conceptual framework of TR waveform analysis",
+                                "analyze TR waveform and its relationship with physiological metrics",
+                                "derive and validate cubic polynomial interpolation method of estimating RVSP",
+                                "describe clinical cohorts and data collection",
+                                "digitize TR signals using semi-automated analysis",
+                                "construct RV pressure curves using Bernoulli equation",
+                                "perform statistical analyses and correlation studies",
+                                "test cubic polynomial interpolation method in outlier cohort",
+                                "test interpolation method in non-PAH cohort with or without PH"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce estimation of right ventricular systolic pressure using echocardiographic Doppler signals"
+                    ],
+                    "num_characters": 433,
+                    "outline_medium": [
+                        "introduce estimation of right ventricular systolic pressure using echocardiographic Doppler signals"
+                    ],
+                    "outline_short": [
+                        "describe estimation of right ventricular systolic pressure using echocardiographic Doppler signals"
+                    ]
+                },
+                {
+                    "title": "DOCTRINE OF EQUIVALENTS",
+                    "paragraphs": [
+                        "While the above description contains many specific embodiments of the invention, these should not be construed as limitations on the scope of the invention, but rather as an example of one embodiment thereof. Accordingly, the scope of the invention should be determined not by the embodiments illustrated, but by the appended claims and their equivalents."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe scope of the invention"
+                    ],
+                    "num_characters": 355,
+                    "outline_medium": [
+                        "claim scope of invention"
+                    ],
+                    "outline_short": [
+                        "claim scope of invention"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for determining right ventricular systolic pressure, comprising: \nobtaining a sonographic Doppler signal of tricuspid regurgitation of an individual;\ntracing a tricuspid regurgitation curve based on the sonographic Doppler signal;\nidentifying one or more ventricular phases;\ninterpolating the tricuspid regurgitation curve using cubic polynomial or cubic spline interpolation and the identified one or more ventricular phases to yield a maximal velocity; and\nestimating right ventricular systolic pressure using the maximal velocity.",
+        "2. The method of claim 1, wherein the right ventricular systolic pressure is estimated using a Bernoulli\u2019s equation or a modified Bernoulli\u2019s equation.",
+        "3. The method of claim 2, wherein the right ventricular systolic pressure is estimated using the following modified Bernoulli\u2019s equation:\n\n\\(\\text{RVSP} = 4*\\left( \\text{Vmax} \\right)^{2} + \\text{RAP}\\)\n\nwhere RVSP is right ventricular systolic pressure, Vmax is maximal velocity, and RAP is right atrial pressure.",
+        "4. The method of claim 1, wherein a correction factor is utilized to correct the estimated right ventricular systolic pressure.",
+        "5. The method of claim 4, wherein the correction factor is utilized to correct the estimated right ventricular systolic pressure when the ventricular phase is an isovolumic phase.",
+        "6. The method of claim 1 further comprising:\nassessing the traced tricuspid regurgitation curve by comparing it to the interpolated tricuspid regurgitation curve.",
+        "7. The method of claim 1, wherein the one or more ventricular phases comprises the isovolumic phase, the ejection phase, or the shoulder point.",
+        "8. The method of claim 1, wherein the one or more ventricular phases are defined by a maximum and minimum pressure differential.",
+        "9. The method of claim 1, wherein the tricuspid regurgitation curve by a semi-automated analysis, comprising:\nmanually segmenting a waveform of the tricuspid regurgitation Doppler signal;\nautomatically extracting the waveform from the tricuspid regurgitation Doppler signal; and\nnormalizing the waveform of the tricuspid regurgitation Doppler signal to the R-R interval.",
+        "10. The method of claim 1 further comprising:\nestimating a mean pulmonary arterial pressure from the estimated right ventricular systolic pressure.",
+        "11. The method of claim 10 further comprising:\ndiagnosing the individual as having pulmonary hypertension based on the estimated mean pulmonary arterial pressure.",
+        "12. The method of claim 11 further comprising:\nadministering a treatment to the individual for pulmonary hypertension.",
+        "13. A system for determining right ventricular systolic pressure, comprising:\na processor, a memory, and an application stored within the memory;\nwherein the application directs the processor to:\nacquire or receive a sonographic Doppler signal of tricuspid regurgitation of an individual;\ntrace or receive a tracing of a tricuspid regurgitation curve based on the sonographic Doppler signal;\nidentify one or more ventricular phases;\ninterpolate the tricuspid regurgitation curve using cubic polynomial or cubic spline interpolation and the identified one or more ventricular phases to yield a maximal velocity; and\nestimate right ventricular systolic pressure using the maximal velocity.",
+        "14. The system of claim 13, wherein the processor is communication with a sonographic imaging modality, and wherein the imaging modality captures the sonographic Doppler signal.",
+        "15. The system of claim 14, wherein the processor and the memory is integrated within the sonographic imaging modality.",
+        "16. The system of claim 15, wherein the application directs the processor to acquire the sonographic Doppler signal.",
+        "17. The system of claim 14, wherein the processor and the memory is housed separately from the sonographic imaging modality.",
+        "18. The system of claim 13, wherein the application directs the processor to automatically trace the tricuspid regurgitation curve.",
+        "19. The system of claim 13, wherein the application directs the processor to assess the traced tricuspid regurgitation curve by comparing it to the interpolated tricuspid regurgitation curve.",
+        "20. The system of claim 13, wherein the application directs the processor to estimate a mean pulmonary arterial pressure from the estimated right ventricular systolic pressure."
+    ]
+}

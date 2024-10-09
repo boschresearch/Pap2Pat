@@ -1,0 +1,115 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce hydrocarbon upgrading processes
+- motivate efficient utilization of petroleum
+- describe shale gas formations
+- discuss stranded gas and associated gas
+- motivate upgrading stranded natural gas
+- describe commercialized NGL to Liquids processes
+- discuss limitations of current dehydrogenation methods
+- motivate upgrading stranded NGLs
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments of the present disclosure
+- define terms for the purpose of this description and appended claims
+- define "a" and "an" and "the" and similar referents
+- define recitation of ranges of values
+- define all processes described herein
+- define "alkane" or "paraffin"
+- define "alkene" or "olefin"
+- define "bimetallic catalyst"
+- define "Cn" hydrocarbon
+- define "catalyst"
+- define "comprise," "comprises," "comprising," "include," "includes," "including"
+- define "hydrocarbon"
+- define "liquid hydrocarbon"
+- define "support" or "substrate"
+- define "zeolite"
+- relate to new hydrocarbon upgrading processes
+- describe dehydrogenation of light alkanes to their respective alkene derivatives
+- describe oligomerization of the light olefins to higher molecular weight hydrocarbon derivatives
+- describe Natural Gas Liquid-to-Liquid (NTL) process
+- describe dehydrogenation of NGLs followed by oligomerization of the resulting alkenes
+- describe advantages of catalytic dehydrogenation over steam cracking
+- describe deploying NTL processes at modular scales
+- describe addition of an NTL plant to an existing NGL extraction plant
+- describe recovery of ethane by operating the NGL plant in an "ethane recovery" mode
+- describe producing a heavier molecular weight hydrocarbon stream
+- describe dehydrogenation reactions of alkanes to olefins
+- describe catalytic dehydrogenation of hydrocarbons
+- describe dehydrogenation reactions performed over conventional catalysts
+- describe Pt—Sn and CrOx based catalysts supported on an alkali (Na/K) modified alumina
+- describe novel catalyst compositions
+- describe bimetallic catalyst composition
+- describe preparation of catalysts
+- describe impregnating a support material with manganese, vanadium, chromium, titanium, or combinations thereof
+- describe adding a metal selected from the group consisting of Group VIII noble metal(s)
+- describe preparing bimetallic catalyst composition
+- describe adding metals to a support material
+- describe calcining and reducing the catalyst material
+- describe preparing catalysts by various methods
+- describe adding binder material, extrusion aids or other additives
+- describe processing the catalyst into a form suitable for loading into a reactor
+- describe pretreating the catalyst
+- describe process for the dehydrogenation of alkanes to olefins
+- describe introducing an alkane feedstock into a reaction chamber
+- describe regenerating the catalyst in-situ, when necessary
+- describe reaction chamber
+- specify catalyst systems
+- define dehydrogenation reaction conditions
+- explain adiabatic and non-adiabatic operations
+- discuss catalyst deactivation
+- introduce in-situ regeneration
+- introduce ex-situ regeneration
+- describe regeneration process
+- explain periodic operation
+- discuss economic efficiency
+- introduce oligomerization reaction
+- describe oligomerization catalyst
+- specify transition metal ions
+- describe nickel-based catalyst
+- introduce zeolite with MFI topology
+- discuss boron substitution
+- describe Bronsted acid sites
+- discuss catalyst preparation
+- introduce in-situ regeneration for oligomerization
+- introduce ex-situ regeneration for oligomerization
+- describe oligomerization process
+- describe reaction chamber
+- specify reaction conditions
+- outline process overview
+- describe dehydrogenation reaction
+- specify dehydrogenation catalyst
+- describe oligomerization reaction
+- specify oligomerization catalyst
+- describe separation system
+- illustrate process with FIG. 2
+- describe feed stream
+- describe methane removal
+- describe dehydrogenation reactor
+- describe heat exchange unit
+- describe hydrogen separation system
+- describe oligomerization reactor
+- describe heat exchanger
+- describe two-phase separator
+- describe pressure drop
+- describe heat exchange unit
+- describe two-phase separator
+- describe recycle stream
+- describe techno-economic analysis
+- illustrate variation of process with FIG. 3
+- describe multi-stage separator configuration
+- describe variation of process with FIG. 4
+- describe hydrogen tolerant oligomerization catalyst
+- illustrate integrated process design with FIG. 5
+- describe heat and mass integration
+- describe integration with NGL extraction plant
+- describe utilization of hydrogen by-product
+- illustrate hydrogen fixation process with FIGS. 6 and 7
+- describe gas treatment process
+- describe hydrogen fixation process
+- summarize process overview
+

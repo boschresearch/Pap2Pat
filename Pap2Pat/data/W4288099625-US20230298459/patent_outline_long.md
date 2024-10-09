@@ -1,0 +1,133 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce connected and autonomous vehicles
+- limitations of sensor data
+- motivate inter-vehicular communication
+
+## BRIEF DESCRIPTION
+
+- introduce computer device
+- describe computer device functionality
+- introduce computer-implemented method
+- describe computer-implemented method functionality
+- introduce vehicle
+- describe vehicle functionality
+
+## DETAILED DESCRIPTION
+
+- define terms
+- explain singular forms
+- define "optional"
+- explain approximating language
+- define "database"
+- describe computer program embodiment
+- explain system execution environments
+- describe system flexibility
+- define "processor" and "computer"
+- explain memory
+- describe input channels
+- describe output channels
+- define "software" and "firmware"
+- explain "non-transitory computer-readable media"
+- define "real-time"
+- introduce field of invention
+- describe vehicular communication
+- explain Driver Messenger System (DMS)
+- illustrate lane change scenario
+- describe DMS process
+- illustrate system block diagram
+- describe local object map module
+- describe automatic scenario detection module
+- describe target recognition module
+- describe Vehicle-to-Everything (V2X) communications
+- explain local object map creation
+- describe scenario detection module
+- list common driving scenarios
+- describe lane change scenario detection
+- introduce Driver Messenger System 205
+- identify target vehicles for scenario
+- execute target recognition module 220
+- analyze local object map module 210
+- identify leading and trailing vehicles
+- determine target vehicle distance threshold
+- utilize coordinate transformation and longitudinal distance
+- classify trailing vehicles
+- determine target vehicle for lane change scenario
+- utilize longitudinal distance and host vehicle's path history
+- choose target vehicle based on lateral distance
+- utilize host vehicle's path history for curved roads
+- iterate through history points
+- calculate initial lateral distance
+- consider history points for lane change detection
+- detect prolonged irregularities in yaw rate values
+- detect target vehicles in both straight and curved roads
+- use differential yaw rates for lane change detection
+- introduce V2X communication module 225
+- transmit and receive basic safety messages
+- send and receive Driver Intent Messages
+- illustrate process 300 for lane change scenario
+- receive updated local object map
+- detect host vehicle's lane change intent
+- trigger target vehicle recognition module 220
+- send Driver Intent Message to target vehicle 110
+- illustrate process 400 for identifying target vehicle 110
+- consider all trailing vehicles
+- use host vehicle's path history
+- determine if trailing vehicle is in adjacent lane
+- include trailing vehicle in potential target vehicle list
+- choose closest vehicle to host vehicle 105
+- explain benefits of using path history
+- discuss advanced safety features
+- describe vehicle 700
+- introduce sensors 705
+- describe vehicle controller 710
+- introduce driver messenger system 205
+- describe infotainment panel 720
+- introduce mobile device 725
+- describe autonomous or semi-autonomous vehicle-related functionality
+- introduce user computer device 802
+- describe processor 805
+- introduce memory device 810
+- describe media output component 815
+- introduce input device 820
+- describe communication interface 825
+- introduce user interface
+- describe web browser and/or client application
+- introduce sensor data
+- describe autonomous or semi-autonomous vehicle-related functionality
+- introduce vehicle controller 710
+- describe processor 805
+- introduce memory device 810
+- describe communication interface 825
+- introduce server computer device 901
+- describe processor 905
+- introduce memory area 910
+- describe communication interface 915
+- introduce storage device 934
+- describe storage interface 920
+- introduce computer-executable instructions
+- describe wireless communication-based autonomous or semi-autonomous vehicle technology
+- introduce driver alertness or responsive monitoring
+- describe pedestrian detection
+- introduce artificial intelligence and/or back-up systems
+- describe navigation or GPS-related systems
+- introduce security and/or anti-hacking measures
+- describe lane keeping assistance
+- introduce theft prevention systems
+- describe computer device 205
+- introduce host vehicle 105
+- describe sensor information
+- introduce local object map
+- describe driving scenario
+- introduce target vehicle 110
+- describe one or more messages
+- introduce status messages
+- describe local object map
+- introduce plurality of vehicles 115
+- describe corresponding distance
+- introduce subset of trailing vehicles and subset of leading vehicles
+- describe driving scenarios
+- introduce historical locations for plurality of vehicles 115
+

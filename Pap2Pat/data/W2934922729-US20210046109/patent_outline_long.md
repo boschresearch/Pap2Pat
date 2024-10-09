@@ -1,0 +1,247 @@
+# DESCRIPTION
+
+## INTRODUCTION
+
+- introduce immunotherapy
+- describe immune checkpoint protein inhibitors
+- discuss limitations of anti-PD-L1/PD-1 therapy
+- explain PD-L1 function
+- describe PD-L1 on extracellular vesicles
+- summarize research on exosomal PD-L1
+- identify needs in the art
+
+## SUMMARY OF THE INVENTION
+
+- introduce inhibitors of suppressive EVs
+- describe uses of suppressive EV inhibitors
+- introduce methods of priming T cells
+- describe engineered cancer cells
+- introduce prognostic and diagnostic methods
+- describe methods of quantifying suppressive exosome production
+- introduce therapeutic uses of suppressive exosomes
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define cancer
+- specify subject types
+- define treatment
+- introduce extracellular vesicles (EVs)
+- describe systemic suppression of immune system
+- define therapeutically effective amount
+- clarify "a" or "an" usage
+- introduce inhibition of suppressive EVs to treat cancer
+- describe suppressive EV inhibitors
+- define systemic immunosuppression
+- outline method of inhibiting systemic suppression
+- describe suppressive EV inhibitor for use in inhibiting systemic suppression
+- outline method of treating cancer
+- describe suppressive EV inhibitor for use in treating cancer
+- outline method of enhancing immunotherapy treatment
+- describe suppressive EV inhibitor for use in enhancing immunotherapy treatment
+- introduce mechanisms of suppressive EV inhibitors
+- describe inhibition of suppressive EV capacity
+- describe inhibition of suppressive EV signaling functions
+- describe disruption of suppressive molecule interactions
+- introduce small molecule inhibitors
+- describe peptide inhibitors
+- describe antibody inhibitors
+- introduce constructs disrupting suppressive molecule expression
+- describe short interfering RNAs
+- describe hairpin RNAs
+- describe zinc finger nucleases
+- describe transcription activator-like effector nucleases
+- describe CRISPR systems
+- introduce inhibitors of EV biogenesis
+- describe inhibitors of Rab27a
+- describe inhibitors of nSMase2
+- introduce other inhibitors of EV biogenesis
+- describe peptide inhibitors of exosome biogenesis
+- describe agents disrupting exosome biogenesis gene expression
+- describe PROTACs targeting EV production proteins
+- introduce exemplary inhibitors of suppressive EVs
+- introduce suppressive EV inhibitor
+- describe delivery agent
+- describe administration of suppressive EV inhibitor
+- describe relief of systemic immunosuppression
+- describe co-administration with immunotherapy agents
+- describe co-administration with immune checkpoint inhibitors
+- describe co-administration with cellular immunotherapy agents
+- describe co-administration with immunotherapy comprising agent priming immune cells in vivo
+- describe co-administration with immunotherapy comprising cytokine
+- describe co-administration with immunotherapy agent comprising antibody directed to cancer-associated antigen
+- describe scope of invention
+- describe co-administration with cancer fighting agents other than immunotherapy agents
+- describe packaging and distribution of combination product
+- describe co-administration schedule
+- describe administration methods
+- describe formulation of suppressive EV inhibitor
+- describe therapeutically effective amount
+- introduce engineered cancer cell for immunization against tumors
+- describe method of treating cancer
+- describe engineered cancer cells with reduced capacity for systemic immunosuppression
+- describe use of engineered cancer cells in manufacture of medicament
+- describe source of engineered cancer cells
+- describe culture of cancer cells
+- describe engineered cancer cells with reduced abundance of suppressive molecules
+- describe disruption of expression of suppressive molecules
+- describe disruption of packaging of suppressive molecules in EVs
+- describe engineered cancer cells with reduced capacity to produce suppressive EVs
+- describe disruption of EV production genes
+- describe disruption of Rab27a expression or activity
+- describe disruption of nSMase2 expression or activity
+- describe engineered cancer cells with both reduced suppressive capacity and reduced EV production
+- define engineering of cancer cells
+- describe transformation of cancer cells
+- conclude engineering of cancer cells
+- define engineering of cancer cells
+- disrupt target gene expression
+- modify target protein abundance or activity
+- express immunogenic factors
+- impair cell growth
+- confer sensitivity to drugs
+- modify to impair metastatic capacity
+- invoke immune response
+- produce therapeutically effective amount
+- describe vaccination procedure
+- cite prior art
+- formulate suppressive EV-deficient cells
+- administer delivery composition
+- provoke immune response
+- combine with adjuvants or carriers
+- administer in physical elements
+- enhance immunogenic response
+- impair viability
+- administer therapeutically effective amount
+- determine balance of engineered to resident cancer cells
+- assess dosage
+- combine with treatments
+- apply in various contexts
+- treat resident cancer
+- prevent recurrence
+- assess likelihood of response
+- determine cold tumor status
+- measure circulating suppressive EVs
+- select treatment regimen
+- inhibit systemic suppression
+- administer suppressive EV inhibitor
+- co-administer with immunotherapy
+- determine cold status
+- quantify immune cells
+- visualize and quantify suppressive EVs
+- define fusion proteins
+- describe expression in cancer cell lines
+- describe nucleic acids and EVs
+- describe tracking and quantification of suppressive EVs
+- describe sample preparation
+- describe visualization and quantification of reporter
+- describe screening protocol for agents
+- describe tracking of suppressive exosomes in whole animals
+- describe immunosuppressive properties of suppressive EVs
+- describe compositions and methods for systemic suppression
+- describe therapeutic suppressive EVs
+- describe inflammatory or autoimmune conditions
+- describe need for immunosuppression
+- describe transplant conditions
+- describe therapeutic immunosuppressive EV
+- describe immunosuppressive molecules
+- describe EV engineering
+- describe functionalization of EVs
+- describe biologically effective amount of immunosuppressive molecules
+- describe protein engineering
+- describe EV types
+- describe EV size
+- describe production of EVs
+- describe harvesting of EVs
+- describe sources of therapeutic suppressive EVs
+- describe general therapeutic method
+- describe administration of therapeutic suppressive EVs
+- describe dosages of therapeutic suppressive EVs
+- describe pharmaceutical composition
+
+## EXAMPLES
+
+### Example 1
+
+- introduce novel pathway regulating immune checkpoints
+- describe exosomes as major source of PD-L1 presentation
+- explain exosomal PD-L1's potential for immune suppression
+- motivate genetic targeting of enzymes regulating exosome biogenesis
+- describe in vitro and in vivo blocking of exosomal PD-L1
+- summarize in vivo model of prostate cancer
+- explain potential of modulating exosomal PD-L1
+- describe high-throughput cell assays for exosome production and PD-L1 secretion
+- explain PD-1-PD-L1 pathway and its function
+- describe exosome biogenesis process
+- explain role of enzymes in exosome biogenesis
+- describe exosome tracking and quantification method
+- outline high-throughput screening method for anti-exosomal compounds
+
+### Example 2
+
+- introduce PD-L1 blockade and its limitations
+- describe alternative role of PD-L1 secreted in exosomes
+- explain removal of exosomal PD-L1 inhibiting tumor growth
+- describe exosomal PD-L1 suppressing T-cell activation
+- introduce EVs and their heterogeneity
+- define exosomes and their biogenesis
+- explain genetic manipulation of enzymes for exosome biogenesis
+- describe exosomal PD-L1 from tumor cells suppressing T-cell function
+- show exosomal PD-L1 promoting tumor growth in an immune-dependent fashion
+- describe differential secretion of PD-L1 between cancer cell lines
+- compare mRNA and protein levels of PD-L1 in different cell lines
+- evaluate translation rates of PD-L1 in different cell lines
+- assess protein degradation pathways for PD-L1
+- consider differential secretion of PD-L1 in membrane vesicles
+- enrich extracellular vesicles using sequential centrifugation
+- analyze conditioned media from different cell types
+- explore IFNγ effect on PD-L1 secretion
+- show PD-L1 specifically secreted within exosomes
+- enrich exosomes based on density using sucrose gradient
+- colocalize PD-L1 with exosomal markers
+- use genetic approach to remove exosomes
+- knockout Rab27a and nSMase2 genes in PC3 cells
+- evaluate effect of Rab27a and nSMase2 deletion on exosomes
+- show critical roles for Rab27a and nSMase2 in exosome biogenesis and PD-L1 secretion
+- explore origin of exosomal PD-L1
+- show exosomal PD-L1 arising from the limiting membrane of the late endosome
+- evaluate exosomal PD-L1 function in suppressing T-cell activation
+- use CRISPR/Cas9 editing to delete Pd-l1 gene in PC3 cells
+- show exosomal PD-L1 promoting tumor progression
+- use syngeneic model of prostate cancer to evaluate exosomal PD-L1
+- delete Rab27a and Pd-l1 in TRAMP cells
+- evaluate tumor growth in immunocompetent and immunodeficient mice
+- show RAB27A and NSMASE2 promoting tumor growth through immune suppression
+- evaluate immune response in lymphoid tissues
+- show enhanced systemic immune response in absence of exosomes or PD-L1
+- evaluate T-cell activation and exhaustion markers
+- show exposure to tumor cells lacking exosomes or PD-L1 results in robust memory response
+- introduce exosomal PD-L1
+- evaluate effect on tumor progression
+- knockout Pd-l1 and Rab27a in MC38 cells
+- analyze tumor growth and survival
+- compare effect of Pd-l1 and Rab27a loss
+- test epistasis of exosomes and PD-L1
+- evaluate effect of exosome depletion and anti-PD-L1 treatment
+- analyze survival curves
+- test effect of exosomal PD-L1 on distant tumor growth
+- evaluate immune response in draining lymph node
+- analyze tumor growth and survival in double-injected mice
+- evaluate effect of exogenously introduced exosomal PD-L1
+- analyze immune response in spleen and draining lymph node
+- evaluate effect on tumor growth and survival
+- discuss cancer immunization
+- evaluate effect of engineered cancer cells on resident tumors
+- discuss role of exosomal PD-L1 in tumor progression
+- summarize evidence for exosomal PD-L1 in promoting tumor growth
+- discuss implications for therapeutic strategies
+- evaluate role of exosomal and cellular PD-L1 in MC38 model
+- discuss potential of targeting both cell surface and exosome presentation of PD-L1
+- evaluate effect of inhibition of exosome secretion on systemic immune response
+- discuss potential of combining localized anti-exosomal therapy with systemic anti-PD-L1/PD-1 blockade
+- describe genetic approaches to dissect role of exosomal PD-L1
+- evaluate effect of deleting Rab27a and nSMNase2 on exosome biogenesis
+- discuss therapeutic potential of targeting Rab27a and nSMNase2
+- describe CRISPR-Cas9-mediated gene disruption
+- describe nanoparticle tracking analysis
+- describe tumor cell injections and tumor growth monitoring
+

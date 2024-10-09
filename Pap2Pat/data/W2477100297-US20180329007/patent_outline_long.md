@@ -1,0 +1,115 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce magnetic resonance spectroscopy
+
+## DETAILED DESCRIPTION
+
+- introduce MRSI and its limitations
+- motivate PCSI as a solution to MRSI limitations
+- describe PCSI as a frequency-resolved technique
+- explain phase-sweep method of PCSI
+- introduce ultra-low flip angle for high spectral resolution
+- describe simplification of scanning by making spatial suppression unnecessary
+- illustrate method associated with PCSI (FIG. 1)
+- apply excitation RF pulses with low flip angle
+- adjust phase of RF pulses to sweep through frequency range
+- sample frequency range uniformly or non-uniformly
+- acquire MR data at frequencies in frequency range
+- graph spectral peaks corresponding to targeted metabolites
+- generate images of sample illustrating metabolite levels
+- illustrate bSSFP pulse sequence associated with PCSI (FIG. 2A)
+- define rotational matrices for nuclear magnetization precession
+- derive steady-state magnetization of bSSFP
+- represent relaxation process using matrices EA and EB
+- include cycled RF phase in magnetization evolution
+- simplify form of steady-state equation
+- solve equations for steady-state magnetization
+- express complex form of transverse magnetization
+- calculate magnitude of transverse magnetization
+- simplify equation for φ,θ=0
+- simplify equation for φ=π, θ=0
+- illustrate magnitude profiles of magnetization for different flip angles (FIG. 3)
+- describe banding artifacts in bSSFP images
+- motivate use of low flip angle in PCSI
+- calibrate applied flip angle to achieve desired flip angle
+- calculate desired flip angle for maximum magnetization
+- describe advantages of PCSI in terms of SNR and acquisition speed
+- generate spectrum for each voxel after acquiring MR data
+- illustrate magnetization profiles associated with PCSI (FIG. 4A)
+- describe absolute magnetization profile
+- describe real magnetization profile
+- describe imaginary magnetization profile
+- illustrate one period of magnetization profiles
+- conclude description of PCSI and its advantages
+- illustrate phase profiles associated with phase cycled magnetic resonance spectroscopic imaging
+- motivate sharp phase transition
+- describe application of PCSI in tumor tissue imaging
+- illustrate magnetization real components and phase shifting
+- describe effect of cycled RF phase on magnetization profiles
+- illustrate magnetization absorption components and phase shifting
+- describe correction of overall phase shifting
+- illustrate acquisition window selection associated with PCSI
+- describe water and fat signal suppression
+- illustrate response functions for different periods
+- describe differences in response functions between periods
+- illustrate conventional free induction decay graph
+- describe non-uniform frequency sampling in PCSI
+- illustrate spectrum associated with PCSI
+- describe targeting of specific metabolites
+- illustrate assumed metabolite signals associated with simulated spectrum
+- describe simulation of real signal associated with simulated spectrum
+- illustrate simulated real signal with different flip angles
+- describe effect of flip angle on response function
+- illustrate sample density associated with non-uniform PCSI
+- describe non-uniform sample strategy based on prior knowledge
+- illustrate signal processing method regarding data measurements
+- describe image reconstruction and phase correction
+- describe peak shifting and baseline correction
+- describe spectrum conversion and fitting analysis
+- describe normalization and generation of parametric maps
+- illustrate MR system configured to perform PCSI
+- describe MRI apparatus
+- illustrate PCSI logic
+- show spectral signal
+- illustrate spectrum
+- compare spectra
+- illustrate spectrum from healthy volunteer
+- compare spectra
+- illustrate parametric maps
+- simulate PCSI signals
+- study relationship between signal and flip angle
+- illustrate PCSI spectrum
+- identify J-coupled metabolites
+- illustrate PCSI spectra
+- determine optimal flip angle
+- fit PCSI spectra
+- illustrate metabolic parameter maps
+- discuss advantages of PCSI
+- compare PCSI with SVS
+- discuss shimming
+- discuss SAR
+- discuss water and fat suppression
+- discuss acquisition scheme
+- discuss potential applications
+
+### Definitions
+
+- define terms employed
+- explain embodiment references
+- define computer storage medium
+- define logic
+- define signal
+- define user
+- explain algorithmic descriptions
+- explain physical manipulations
+- explain term associations
+- explain processing references
+- introduce flow diagrams
+- explain methodology flexibility
+- explain inclusive language
+- explain claim scope
+- explain alterations and modifications
+- explain claim limitations
+

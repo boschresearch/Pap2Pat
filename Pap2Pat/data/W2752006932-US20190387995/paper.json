@@ -1,0 +1,298 @@
+{
+    "id": "https://semopenalex.org/work/W2752006932",
+    "authors": [
+        "Zhijun Zhang",
+        "Tao Yu",
+        "Yuanqing Li",
+        "Xin Pan",
+        "Jun Qu",
+        "Yongqian Huang",
+        "Siyuan Chen"
+    ],
+    "title": "An Intention-Driven Semi-autonomous Intelligent Robotic System for Drinking",
+    "date": "2017-09-08",
+    "abstract": "In this study, an intention-driven semi-autonomous intelligent robotic (ID-SIR) system is designed and developed to assist the severely disabled patients to live independently. The system mainly consists of a noninvasive brain machine interface (BMI) subsystem, a robot manipulator and a visual detection and localization subsystem. Different from most of the existing systems remotely controlled by joystick, head- or eye-tracking, the proposed ID-SIR system directly acquires the intention from users' brain. Compared with the state-of-art system only working for a specific object in a fixed place, the designed ID-SIR system can grasp any desired object in a random place chosen by a user and deliver it to his/her mouth automatically. As one of the main advantages of the ID-SIR system, the patient is only required to send one intention command for one drinking task and the autonomous robot would finish the rest of specific controlling tasks, which greatly reduces the burden of patients. Eight healthy subjects attended our experiment, which contained 10 tasks for each subject. In each task, the proposed ID-SIR system delivered the desired beverage container to the mouth of the subject and then put it back to the original position. The mean accuracy of the eight subjects was $97.5%$, which demonstrated the effectiveness of the ID-SIR system.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Independent living is essential for the patients with motor deficit due to stroke, spinal cord injures, etc. (Kim et al., 2012; Carlson and del R Millan, 2013; Susko et al., 2016). In order to assist the patients to live independently, intelligent robotics technology is an attractive solution (Hochberg et al., 2012; Wu et al., 2015; He et al., 2016).",
+                "With less burden during the task execution period, it is a challenging work to accurately and real-time obtain the intentions of patients, locate the desired object, and efficiently control the robot manipulator to grasp the object and deliver it to the user. Evidently, intention obtaining approach, robot control, and object perception are three key points."
+            ],
+            "subsections": [
+                {
+                    "title": "Intention Obtaining Approach",
+                    "paragraphs": [
+                        "Brain\u2013machine interface (BMI) technology is one of the favored solutions, as it can decode directly the users\u2019 intentions in terms of their brain signals without nervous peripherals. In 1999, some researchers applied the invasive BMI to train rats to control a robot arm (Chapin et al., 1999). In 2011, Kim et al. (2011) used the microelectrode array signals to control a point-and-click cursor, which made it possible for patients with tetraplegic to use the computer. Later, as a representative work, Hochberg et al. (2012) proposed an invasive BMI technology based on the microelectrode array signals, allowing two patients with long-standing tetraplegia to control a robotic arm for drinking. Even though the invasive BMI is a good solution, it needs an operation on users in advance. The patients may suffer from the expensive craniotomy and additional risks, such as infections and side effects from operations. Therefore, atraumatic non-invasive BMI technology is a better choice for most people.",
+                        "As Onose et al. pointed out, EEG is the only realistically practical non-invasive BMI approach at present among the existing non-invasive BMI technologies, because it is relatively affordable and easy to set-up (Onose et al., 2012; Ferracuti et al., 2013; Li et al., 2013, 2016; Yu et al., 2013). Other non-invasive BMI technologies, such as functional magnetic resonance imagery, magneto-encephalography, and positron emission tomography, are quite expensive and not portable in terms of the size and electrical energy usage (Onose et al., 2012). Therefore, a number of EEG-based BMI paradigms and systems are exploited and developed in recent years (Schr\u00f6er et al., 2015; Wang et al., 2015). Active/voluntary paradigm (e.g., Motor imagery, for short as MI) and passive paradigm (e.g., P300 and steady-state evoked potentials, for short as SSVEP) are two basic strategies for the interaction between users and computers. Although some researchers employed the MI-BMI to control a robot arm to perform a task of picking and placing (Wang et al., 2015), the disadvantages are inherent and difficult to accept, such as less control options, more preliminary training, low accuracy, and instability (Li and Yu, 2015). By contrast, P300 evoked potential is more suitable to detect users\u2019 intention. It has been verified that the P300 allows very high accuracy and more optional orders with little training time (less than 5\u2009min), which is essential in practical applications (Prezmarcos et al., 2011; Li and Yu, 2015). In addition, P300-BMI systems do not require subjects to learn how to modulate their EEG, and the P300-BMI was about two times faster than the equivalent Mi-BMI systems (Prezmarcos et al., 2011). A comparison research between P300-BMI system and SSVEP-BMI system has also proved that P300-BMI is more robust for subjects, though SSVEP-BMI has higher bit rate (Lijing et al., 2012). Moreover, the SSVEP-BMI needs to flash consistently in real time to obtain the corresponding signals, which is more tiresome for users. Considering the safety, robustness and less burden, P300-BMI system is more suitable and applied in the ID-SIR system.",
+                        "In order to improve the accuracy and information transmission rate, efficient classification algorithms are necessary. Among numerous P300-BMI applications, support vector machine (SVM) and linear discriminant analysis (LDA) have been used to achieve acceptable results (Lenhardt et al., 2008; Schr\u00f6er et al., 2015; Simbolon et al., 2015). As pointed out in Lenhardt et al. (2008), compared with other complex classifiers such as SVM, LDA was capable due to its good classification performance as well as low computational and training requirements. Hoffmann et al. successfully applied the LDA to obtain high classification accuracies and bit rates for severely disabled subjects (Hoffmann et al., 2008). Different from most existing LDA-P300 systems with a fixed training-round number (Townsend et al., 2010; Akram et al., 2015; Chang et al., 2016), a self-adaptive Bayesian linear discriminant analysis algorithm is exploited in this paper to classify the P300 signals to obtain the user\u2019s intention. It can effectively decrease the cost of recognition time. The user\u2019s intention is then translated into control commands that are used to control the robot manipulator to execute desired tasks."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Robot Control",
+                    "paragraphs": [
+                        "For the severely disabled patients, the less brain burden the system brought in, the better patients may feel. The designed intention-driven semi-autonomous intelligent robotic (ID-SIR) system seeks to decrease the need for user continuously sending commands through \u201cshared control\u201d to realize it. Here, shared control means that it is a semi-autonomous robot, which only needs very limited high-level commands of users. It indicates that users do not need to continuously send instructions to the BMI system. In practical applications, the user only needs to send one command to \u201ctell\u201d the BMI block which object is desired. All the other work will be finished automatically by the robot."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Object Perception",
+                    "paragraphs": [
+                        "Object perception is realized by embedding with the computer vision. Considering the complexity of objects in home/hospital environments, a region-growing algorithm, and a deep convolutional neural network (CNN) are implemented in the system for cup detection, as well as a depth information based vision localization technology is exploited and applied. Compared with the state-of-art system with color-based classifier (Schr\u00f6er et al., 2015), the deep CNN method is more powerful and accurate. For instance, robot in Schr\u00f6er et al. (2015) can only grasp a very specific cup in a predefined place, but the proposed ID-SIR system can grasp any learnt object from any initial position in the range of vision and robot attainability.",
+                        "Before ending this section, the main contributions of this paper lie as below.",
+                        "The remainder of this paper is organized in four sections. Section 2 presents the whole system in detail. The methods used in the ID-SIR system are stated in Section 3. The experiment results are discussed in Section 4. Section 5 concludes this paper with final remarks."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "System Overview",
+            "paragraphs": [
+                "In this section, the working mechanism and information transmission process of the proposed ID-SIR system (as shown in Figure 1) is stated in detail. From Figure 1, we can see that the ID-SIR system includes triple layers, i.e., the perception layer, decision-making layer, and execution layer. The perception layer of the system includes a P300-based brain\u2013machine interface subsystem and a visual detection and localization subsystem. The decision-making layer is about how to convert and transmit the intention of users to the control commands of robots. The execution layer is used for robot control.",
+                "First, in the BMI subsystem, an EEG cap and a direct-current amplifier (NuAmps) are applied to acquire brain signals. After preprocessing of the signals and feature extraction, a self-adaptive Bayesian linear discriminant analysis (SA-BLDA) algorithm is employed for classification, and the intention of the user is obtained. Finally, an intention command is sent to the decision-making layer and the visual detection and localization subsystem as an output signal.",
+                "Second, in the visual detection and localization subsystem, two Microsoft Kinects are applied as the vision input sensors. With the help of region growing algorithm and deep neural network, the positions of the beverage containers are detected and obtained. Applying the Kinect software development kit (SDK), the position information of the user\u2019s mouth is detected. The position information of the desired beverage container and the user\u2019s mouth are then sent to the decision-making layer in real time.",
+                "Third, the decision-making layer works as a connector and coordinator between the other modules, which is responsible for information transition and decision-making. It should decide when and how to deliver which beverage container to the mouth of the user according to the inputs from perception layers and feedback from the execution layer.",
+                "Fourth, in order to grasp the desired beverage container and deliver it to the mouth flexibly, a robot manipulator of six degrees-of-freedom (DOF) with three fingers (KINOVA JACO2 robot manipulator) is applied. Through motion planning and control, the executive commands, generated by the decision-making layer, are well preformed on the robot manipulator to move along the expected path and finish the drinking task."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [
+                "In this section, the algorithms and working mechanism of three layers in the ID-SIR system are presented in detail. Specifically, it includes perception layer (including BMI and computer vision), decision-making layer, and execution layer."
+            ],
+            "subsections": [
+                {
+                    "title": "Brain\u2013Machine Interface",
+                    "paragraphs": [
+                        "In this section, the BMI subsystem of the proposed ID-SIR system is stated in detail. Specifically, it includes data acquisition and amplification, graphical user interface, time series and control mechanism, and mapping intentions to execution commands."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Data Acquisition And Amplification",
+                            "paragraphs": [
+                                "First of all, EEG cap is worn by the user and the software setting is prepared. With the application of the cap, the scalp signals referenced to the right ear are detected.",
+                                "In the experiment, a 32-channel Quik-CapTM (from Compumedics, Neuroscan, Inc.) is employed. The horizontal electrooculograph (HEOG) and vertical electrooculograph (VEOG) are about eye movements that are not necessary in our data analysis process. Therefore, the two channels are ignored in the designed BCI of the ID-SIR system. The corresponding names of electrodes and distribution of remaining 30 channels are shown in Figure 2. As the P300 signals are mainly produced in parietal lobe and occipital lobe, most of the sampling electrodes distribute in these zones.",
+                                "Second, the captured EEG signals from the cap is amplified, recoded, and transmitted to the computer by a NuAmps device (Compumedics). In the signal acquisition process, all the impedances of the electrodes should be less than 5\u2009K\u03a9, the sampling rate of the signals is 250\u2009Hz, and the output band pass of the NuAmps device is between 0.5 and 100\u2009Hz."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Experiment Gui Design",
+                            "paragraphs": [
+                                "In order to attain the user\u2019s intention to control the robot manipulator to deliver the object (such as a bottle or a cup) to the month of the user, a P300-based speller system with 4 symbols are designed (see Figure 3). It is displayed as a 2\u2009\u00d7\u20092 matrices, and each button is attached with a white word and black background in idle periods. As can be seen from Figure 3, the 4 symbol buttons of the GUI are \u201ccup1,\u201d \u201ccup2,\u201d \u201ccup3,\u201d and \u201cback.\u201d Here, the number of symbols denotes the intention which can drive the robot to grasp the ith object (cup/bottle) and deliver it to the user\u2019s mouth (i\u2009=\u20091, 2, and 3). Symbol button \u201cback\u201d denotes the intention that drives the robot to put the object back."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Time Series And Control Mechanism",
+                            "paragraphs": [
+                                "In the proposed ID-SIR system, the user\u2019s intention is recognized by a self-adaptive P300-based BMI system that works with the time series shown in Figure 4. When the button flashes, it changes into green background and black words.",
+                                "A session is a user\u2019s off-line training or online testing time period, i.e., a subject\u2019s time cost in the training/testing experiment. In the training process, a character training time is a trial; and in the testing process, a character recognition time is a trial.",
+                                "In the proposed ID-SIR system, one session includes N trials and each trail corresponds to the recognition time cost of a symbol button. Moreover, one trial is divided into M rounds. The number of rounds M is a self-adaption value determined by the user\u2019s mental state. The time period of a round spans from the flash of the first button to the recover of the final button. The corresponding time is denoted by tround. In general, the more rounds it takes, the more accurate the recognition will be and the more time the system will spend.",
+                                "In order to enhance the efficiency, a small number of rounds are expected if the accuracy is satisfied to some extent. According to the actual applications, a trial is set as 10 rounds in the proposed ID-SIR system. Each of the four buttons flashes only once per round, and the total time cost of a round is tround\u2009=\u20091.2\u2009s. The stimulus duration is the time cost when one button keeps continuous lighting. In this system, the stimulus duration is 100\u2009ms. Moreover, it is not necessary to start one button\u2019s flashing after others finish. The delay time between one button\u2019s flash and another button\u2019s staring point is called inter-stimulus interval (ISI). The ISI is 200\u2009ms in the ID-SIR system. An epoch is the time period within which P300 signal is recorded and detected. In other words, the P300 signal can be found in an epoch if the user pays attention to the flash button during the corresponding epoch. In the ID-SIR system, tepoch\u2009=\u2009600\u2009ms."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Mapping Intentions To Executive Commands",
+                            "paragraphs": [
+                                "In order to accurately map the intentions to task commands, a GUI and a decision-making block are necessary. As can be seen from Figure 3, there are four executive commands totally, i.e., \u201ccup1,\u201d \u201ccup2,\u201d \u201ccup3,\u201d and \u201cback.\u201d During the task execution, the flashing button stimulates the eyes, and the P300 signals are detected, recognized, and converted to executive commands. The robot manipulator is driven by the executive commands to deliver the expected cup to the user\u2019s month.",
+                                "To do so, a self-adaptive Bayesian linear discriminant analysis (SA-BLDA) algorithm is exploited. In this self-adaptive algorithm, the round number M is dynamically and automatically determined on the basis of the user\u2019s mind state and the quality of the signals. The presented SA-BLDA algorithm considers both of the accuracy and the recognition speed."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "Blda Algorithm Description",
+                                    "paragraphs": [
+                                        "To recognize the acquired P300 signals, a Bayesian linear discriminant analysis (BLDA) is exploited in the proposed ID-SIR system. Considering a regularization parameter, the BLDA algorithm can avoid overfitting problem (Hoffmann et al., 2008). (a)Assume that a training set (x, t) consists of P sampling points, denoted by vector x \u2208 RP, and x\u2009=\u2009(x1,\u2009\u22ef\u2009,\u2009xP)T. Since we need to estimate whether it is a P300 signal or not, it is a logical problem, and thus target value t \u2208 {\u22121, 1}.",
+                                        "For Bayesian regression theory, target values t consists of x linearly weighted by w with Gaussian noise nnoise as bellow. \\(\\textit{\\textbf{t}} = \\textit{\\textbf{w}}^{\\text{T}}\\textit{\\textbf{x}} + \\textit{\\textbf{n}}_{\\mathit{noise}}.\\)",
+                                        "The uncertainty over the value of the target variable can be described by using a Gaussian probability distribution. That is to say, t has a Gaussian distribution with the mean \u03bc\u2009=\u2009wTx, and the variance \u03c32\u2009=\u2009\u03b2\u22121, i.e., \\(p\\left( {\\textit{\\textbf{t}}\\left| \\textit{\\textbf{x}},\\textit{\\textbf{w}},\\beta \\right.} \\right) = \\mathcal{N}\\;\\left( {\\textit{\\textbf{t}}\\left| \\mu,\\sigma^{2} \\right.} \\right) = \\mathcal{N}\\;\\left( {\\textit{\\textbf{t}}\\left| \\textit{\\textbf{w}}^{\\text{T}}\\textit{\\textbf{x}},\\beta^{- 1} \\right.} \\right)\\;\\;,\\)  where parameter \u03b2 is the reciprocal of the variance, which denotes the precision of the Gaussian probability distribution.",
+                                        "For the convenience of analysis, we suppose the P300 signals of all the trials are independently and identically distributed. If the number of training samples is denoted by Q, for Q independent experiment samples and P total sampling numbers, inputs X can be denoted as \\(\\textit{\\textbf{X}} = \\left\\{ {x_{1},x_{2},\\cdots,x_{Q}} \\right\\} \\in R^{P \\times Q}\\) . Considering the number of functional keys K, number of trails N, and number of rounds M, the experiment samples Q\u2009=\u2009N\u2009\u22c5\u2009M\u2009\u22c5\u2009K. If CChannels channels are used, and the sampling number of a section selected P300 signal is denoted by SSamples, the total sampling number P\u2009=\u2009CChannels\u22c5SSamples. According to the definition of a joint probability, the joint probability of independent experiment samples is determined by the product of the marginal probabilities for each sample value separately. Therefore, the likelihood function is \\(\\begin{array}{l} {p\\left( {\\textit{\\textbf{t}}\\left| \\textit{\\textbf{X}},\\textit{\\textbf{w}},\\beta \\right.} \\right) = \\prod\\limits_{n = 1}^{Q}\\mathcal{N}\\;\\left( {t_{n}|\\textit{\\textbf{w}}^{\\text{T}}\\textit{\\textbf{x}}_{n},\\beta^{- 1}} \\right)\\;,} \\\\ {\\mspace{99mu} = \\left( \\frac{\\beta}{2\\pi} \\right)^{Q \\slash 2} \\cdot \\text{exp}\\;\\left( {- \\frac{\\beta \\parallel \\textit{\\textbf{X}}^{\\text{T}}\\textit{\\textbf{w}} - \\textit{\\textbf{t}} \\parallel^{2}}{2}} \\right).} \\end{array}\\)  (b)For utilizing the Bayesian framework and for the convenience of analysis, a prior distribution over the polynomial coefficients w is considered. For simplicity, a zero mean Gaussian distribution is formulated as",
+                                        "\\(\\begin{array}{l} {p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right) = \\mathcal{N}\\;\\left( {\\textit{\\textbf{w}}\\left| 0,\\alpha^{- 1}\\textit{\\textbf{I}} \\right.} \\right)\\qquad} \\\\ {\\mspace{67mu} = \\left( \\frac{\\alpha}{2\\pi} \\right)^{\\frac{P + 1}{2}}\\left( \\frac{\\epsilon}{2\\pi} \\right)\\;\\exp\\;\\left( {- \\frac{\\alpha}{2}\\textit{\\textbf{w}}^{\\text{T}}\\textit{\\textbf{I}}\\prime(\\alpha)\\textit{\\textbf{w}}} \\right)\\;,} \\end{array}\\)  where parameter \u03b1 decides the precision of this Gaussian distribution. For the linear regression with Pth order polynomial, the total element number of feature vector w is P\u2009+\u20091. In practical applications, parameter \u03b5 is usually a small value. Matrix I is a unit matrix, and I\u2032(\u03b1) is \\(\\textit{\\textbf{I}}\\prime(\\alpha) = \\begin{bmatrix} \\alpha & 0 & \\cdots & 0 \\\\ 0 & \\alpha & \\cdots & 0 \\\\  \\vdots & \\vdots & \\ddots & \\vdots \\\\ 0 & 0 & \\cdots & \\epsilon \\end{bmatrix}\\;\\;.\\)",
+                                        "Based on Bayes theorem (Bishop, 2006), the posterior distribution for w is \\(p\\left( {\\textit{\\textbf{w}}\\left| \\textit{\\textbf{X}},\\textit{\\textbf{t}},\\alpha,\\beta \\right.} \\right) = \\frac{p\\left( {\\textit{\\textbf{t}}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right)}{\\int p\\left( {\\textit{\\textbf{t}}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right)d\\textit{\\textbf{w}}}.\\)",
+                                        "For simplify, training set {X, t} can be replaced by D. Equation (3) is reformulated as \\(p\\left( {\\textit{\\textbf{D}}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right) = \\left( \\frac{\\beta}{2\\pi} \\right)^{Q \\slash 2} \\cdot \\text{exp}\\;\\left( {- \\frac{\\beta \\parallel \\textit{\\textbf{X}}^{\\text{T}}\\textit{\\textbf{w}} - \\textit{\\textbf{t}} \\parallel^{2}}{2}} \\right),\\)  and equation (5) can be rewritten as \\(p\\left( {\\textit{\\textbf{w}}\\left| \\textbf{D},\\alpha,\\beta \\right.} \\right) = \\frac{p\\left( {\\textbf{D}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right)}{\\int p\\left( {\\textbf{D}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right)d\\textit{\\textbf{w}}}.\\)",
+                                        "From equation (7), we see that the posterior distribution of w is proportional to the product of the prior distribution and the likelihood function, i.e., \\(p\\left( {\\textit{\\textbf{w}}\\left| \\textit{\\textbf{D}},\\alpha,\\beta \\right.} \\right) \\propto p\\left( {\\textit{\\textbf{D}}\\left| \\textit{\\textbf{w}},\\beta \\right.} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\alpha \\right.} \\right),\\)  where w can be determined by finding the most probable value of w given data set {X, t}. In equation (8), the likelihood p(D|w, \u03b2) and prior p(w|\u03b1) are computed by equations (6) and (4), respectively. The posterior distribution of w is Gaussian because both of the prior and likelihood are Gaussian, and the mean m and covariance C are \\(\\begin{array}{r} {m = \\beta\\;\\left( {\\beta\\textit{\\textbf{XX}}^{\\text{T}} + \\textit{\\textbf{I}}\\prime(\\alpha)} \\right)^{- 1}\\textit{\\textbf{Xt}},} \\end{array}\\)  \\(\\begin{array}{r} {C = \\left( {\\beta\\textit{\\textbf{XX}}^{T} + \\textit{\\textbf{I}}\\prime(\\alpha)} \\right)^{- 1},} \\end{array}\\)  where \u03b1 and \u03b2 can be computed by an iterative algorithm (Mackay, 1992). (c)When a new input sample \\(\\hat{x}\\)  is obtained, the distribution function of its predictive regression value t^ is",
+                                        "\\(p\\left( \\hat{\\textit{\\textbf{t}}} \\middle| \\beta,\\alpha,\\hat{\\textit{\\textbf{x}}},\\textit{\\textbf{D}} \\right) = \\int p\\left( \\hat{\\textit{\\textbf{t}}} \\middle| \\beta,\\hat{\\textit{\\textbf{x}}},\\textit{\\textbf{w}} \\right)p\\left( {\\textit{\\textbf{w}}\\left| \\beta,\\alpha,\\textit{\\textbf{D}} \\right.} \\right)d\\textit{\\textbf{w}}.\\)",
+                                        "The predictive distribution (11) is also a Gaussian distribution, and the mean and variance are, respectively, as \\(\\left. \\mu = m^{\\text{T}}\\hat{\\textit{\\textbf{x}}},\\quad\\sigma^{2} = 1\\slash\\beta + {\\hat{\\textit{\\textbf{x}}}}^{\\text{T}}C\\hat{\\textit{\\textbf{x}}}. \\right.\\)",
+                                        "In this ID-SIR system, the decision is made by mean \u03bc."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Self-Adaptive Algorithm Design",
+                                    "paragraphs": [
+                                        "First, during each stimulus period, epoch data need to be preprocessed. Specifically, the sampled EEG data (about 150 discrete points) in 600\u2009ms in each channel are filtered by a narrowband filter with frequency 0.1\u201320\u2009Hz. In order to compress the data, the narrowband signal data are then sampled again once every 6 points. They are denoted by symbol SSamples (see Figure 5). All the 30-channel signals (i.e., CChannels\u2009=\u200930) are combined as a new vector x with P\u2009=\u2009CChannels\u22c5SSamples dimensions. During online test, 4 functional keys flash per round, and we can get 4-epoch EEG data. It means 4 feature vectors can be obtained at each round.",
+                                        "Second, in order to recognize the 4 characters (i.e., \u201ccup1,\u201d \u201ccup2,\u201d \u201ccup3,\u201d and \u201cback\u201d), an SA-BLDA algorithm is exploited, and the corresponding flowchart is shown in Figure 6. When the first P300 signal of one trail comes, the round number M is set to zero after the system initializes. When a new EEG signal including 4-epoch data of a new round comes, the round number M is set to be M\u2009+\u20091. Afterward, all the EEG signal data of 4 epochs at the Mth round are preprocessed and 4 feature vectors are constituted (each vector includes 30 channels data). The algebraic mean value of the previous M rounds feature vectors is computed. In the SA-BLDA algorithm, 4 characters are used, so 4 averaged eigenvectors corresponding to the 4 characters are obtained (i.e., each character corresponding to one \\(\\hat{x}\\)  in (12)). From equation (12), 4 regression scores (i.e., \u03bc in equation (12)) can be obtained. These scores are then normalized between 0 and 1, and denoted by notation S. Parameters Mmin and Mmax denote the minimum and maximum number of repeated rounds, respectively. In the proposed ID-SIR system, Mmin\u2009=\u20093 and Mmax\u2009=\u20098. Threshold \u03b80 is set in view of training results. The specific selection method is described in the next section."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Selection Of Threshold Parameter \u03980",
+                                    "paragraphs": [
+                                        "Selection of threshold parameter \u03b80 is a balance issue between classification accuracy and information transfer rate (ITR). A practical system is expected to have high classification accuracy and ITR. To achieve this aim, curves of accuracy and ITR with various \u03b80 are firstly presented. In the ID-SIR system, since the ITR drops while \u03b80 increases, \u03b80 is set at the point where the curve of accuracy first reaches its highest value. A concrete application example is illustrated in Section 4."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Visual Detection And Localization",
+                    "paragraphs": [
+                        "In order to realize the automatic task of assistive drinking, it is essential to recognize and locate the desired object as well as the user\u2019s mouth. As shown in Figure 7, two Kinect sensors are applied to execute perception tasks. One is placed in front of the user to detect the position of the user\u2019s mouth, while the other is set up beside the table to recognize and locate the cup, bottle, and pop can. The robot manipulator is placed on one side of the table between Kinect and the user\u2019s chair. In the ID-SIR system, the desired object (such as a cup, a bottle, and a pop) can be put at anywhere in the cross field of Kinect\u2019s scanning zone and robot manipulator\u2019s working region (i.e., the area around the black and white calibration board in Figure 7).",
+                        "In the ensuing sections, the coordinate transformations from camera coordinate system to the world coordinate system and further to the robot coordinate system are first discussed. The methods of the mouth and object (cup, bottle, and pop can) detection and localization are then analyzed in detail."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Coordinate Transformation",
+                            "paragraphs": [
+                                "In order to control the robot manipulator to grasp and move an object, the position information of the object in the robot coordinate system needs to be known.",
+                                "First, camera calibration and transformation from the camera coordinate system to the calibration-board coordinate system are implemented.",
+                                "The camera coordinate systems of two Kinects (denoted by K1 and K2), calibration-board coordinate systems (denoted by C1 and C2), and robot coordinate system (denoted by R) are shown in Figure 7. The relationship between the camera coordinate system and the calibration-board coordinate system is formulated as \\(\\left\\lbrack \\begin{array}{l} X_{\\text{K}} \\\\ Y_{\\text{K}} \\\\ Z_{\\text{K}} \\\\ {\\, 1} \\end{array} \\right\\rbrack = \\begin{bmatrix} {\\,_{\\text{C}}^{\\text{K}}R} & {\\,_{\\text{C}}^{\\text{K}}T} \\\\ 0 & 1 \\end{bmatrix}\\text{\u2009\u2009}\\left\\lbrack \\begin{array}{l} X_{\\text{C}} \\\\ Y_{\\text{C}} \\\\ Z_{\\text{C}} \\\\ {\\, 1} \\end{array} \\right\\rbrack,\\)  where XK, Y K, and ZK represent the three-dimensional position information in the camera coordinate system of Kinect; XC, YC, and ZC represent the three-dimensional position information in the calibration-board coordinate system; \\(\\,_{C}^{K}R\\)  and \\(\\,_{C}^{K}T\\)  stand for rotation matrix and translation matrix.",
+                                "In the ID-SIR system, a common camera calibration method is used to determine intrinsic and extrinsic parameters of Kinect (Zhang, 2000), with which parameters \\(\\,_{C}^{K}R\\)  and \\(\\,_{C}^{K}T\\)  are obtained. By using the SDK of Kinect, the three-dimensional position information of all the points of the object is obtained. The method of getting the three-dimensional position information of the object and mouth in the camera coordinate system will be illustrated in the following sections.",
+                                "Second, the three-dimensional position information of the object and mouth in the camera coordinate system is transformed into the calibration-board coordinate system as \\(\\left\\lbrack \\begin{array}{l} X_{\\text{C}} \\\\ Y_{\\text{C}} \\\\ Z_{\\text{C}} \\\\ {\\, 1} \\end{array} \\right\\rbrack_{\\text{\u2009Obect}} = \\begin{bmatrix} {\\,_{\\text{C}}^{\\text{K}}R} & {\\,_{\\text{C}}^{\\text{K}}T} \\\\ 0 & 1 \\end{bmatrix}^{- 1}\\left\\lbrack \\begin{array}{l} X_{\\text{K}} \\\\ Y_{\\text{K}} \\\\ Z_{\\text{K}} \\\\ {\\, 1} \\end{array} \\right\\rbrack_{\\text{\u2009Object}},\\)  where \\(\\,_{C}^{K}R\\)  and \\(\\,_{C}^{K}T\\)  are obtained during camera calibration of Kinect.",
+                                "Third, the three-dimensional position information of the object and mouth in the calibration-board coordinate system is transformed into the robot coordinate system as \\(\\left\\lbrack \\begin{array}{l} X_{\\text{R}} \\\\ Y_{\\text{R}} \\\\ Z_{\\text{R}} \\\\ {\\, 1} \\end{array} \\right\\rbrack_{\\text{\u2009Obect}} = \\begin{bmatrix} {\\,_{\\text{C}}^{\\text{R}}R} & {\\,_{\\text{C}}^{\\text{R}}T} \\\\ 0 & 1 \\end{bmatrix}^{- 1}\\left\\lbrack \\begin{array}{l} X_{\\text{C}} \\\\ Y_{\\text{C}} \\\\ Z_{\\text{C}} \\\\ {\\, 1} \\end{array} \\right\\rbrack_{\\text{\u2009Object}},\\)  where \\(\\,_{C}^{R}R\\)  and \\(\\,_{C}^{R}T\\)  stand for rotation matrix and translation matrix.",
+                                "Fourth, the three-dimensional position information of the object (cup, bottle, and pop can) and mouth in the robot coordinate system are sent to decision-making layer to implement the drink delivering task."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Object Detection And Localization",
+                            "paragraphs": [
+                                "As mentioned above, a Kinect sensor is employed to collect the three-dimensional point cloud in the camera coordinate system. We first implement a plane extraction algorithm for background detection and elimination. Next, an object segmentation in the non-background proportion of the point cloud is applied. According to the collection of potential objects\u2019 three-dimensional point sets in the camera coordinate system, the corresponding RGB images of potential objects are isolated and identified with the recognition algorithm based on the library which includes images of the target object. After the recognition and coordinate transformation, the three-dimensional position information of the selected potential object in the robot coordinate system is obtained and sent to the decision-making layer to implement robot manipulator control."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "Background Extraction",
+                                    "paragraphs": [
+                                        "In order to recognize and locate the desired object on the table rapidly and accurately, plane extraction for background\u2013 foreground separation is essential. In the ID-SIR system, a region growing (RG) algorithm is exploited to search the horizontal background plane HPlane.",
+                                        "In the point cloud, we assume that the horizontal plane is a plane where all the normal vectors of points are nearly perpendicular. According to this assumption, all the neighboring points with nearly perpendicular norm vectors are considered as the points on the same horizontal plane. Based on this hypothesis, the RG algorithm is developed, and the corresponding flowchart is shown in Figure 8.",
+                                        "First of all, the normal vectors of each point in the point cloud are calculated. Without loss of generality, the point P, whose coordinate information is (xk, yk, zk) in the point-cloud space (or termed camera coordinate system), maps to the point of which the pixel coordinate is (ik, jk) in the pixel space (or termed image coordinate system). As shown in Figure 9, the normal vector \\({\\overset{\\rightarrow}{v}}_{\\text{P}}\\)  of point Pk is computed as \\({\\overset{\\rightarrow}{v}}_{\\text{P}} = {\\overset{\\rightarrow}{v}}_{1} \\times {\\overset{\\rightarrow}{v}}_{2},\\)  where \\({\\overset{\\rightarrow}{v}}_{1} = \\text{P}_{1} - \\text{P}_{3}\\)  and \\({\\overset{\\rightarrow}{v}}_{2} = \\text{P}_{2} - \\text{P}_{4}\\) , P1(ik, jk\u22121), P2(ik+1, jk), P3(ik, jk+1), and P4(ik\u22121, jk) are the four surrounding points beside Pk in the image coordinate system. All the normal vectors of the points in the point cloud are computed according to equation (16).",
+                                        "Second, search all the normal vectors that are nearly parallel to the perpendicular direction and add them into a potential horizontal plane set MPoint. Here, the point Pk can be seen as a seed (i.e., a starting point) of the region growing, in which the four surrounding points PS of the seed are checked whether their normal vectors are perpendicular and the distance DS between PS and the seed are smaller than a threshold value DThreshold.",
+                                        "The surrounding qualified points are collected into the potential planar point set MPoint and inserted into a queue. They work as new seeds of the region growing. The circulation of the region growing will stop only when the queue is empty. Moreover, if the number of potential point set \\(n_{M_{\\text{Point}}}\\)  is larger than a certain value nC, the potential planar point set MPoint would be added into the plane set CPlane. Finally, when the scanning of all the normal vectors \\({\\overset{\\rightarrow}{v}}_{\\text{P}}\\)  is completed, the plane set CPlane will be output as the horizontal plane HPlane."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Object Segmentation",
+                                    "paragraphs": [
+                                        "In order to segment the expected object from the background, convex hull searching and two-times region growing (RG) algorithms are exploited. The flowchart of the algorithm is shown in Figure 10. The schematic diagram of two-times region growing algorithm is illustrated in Figure 11.",
+                                        "First, according to plane set CPlane, the convex hulls of objects in the RGB image are computed. A convex hull is the minimum polygon, which roughly describes the outline of an object.",
+                                        "Second, two-times region growing algorithm is proposed to obtain a complete object. The first-time region growing is applied to obtain all the point sets within the convex hulls, and the second-time region growing algorithm is used to handle the convex hull boundary so as to obtain a complete object. Specifically, there are three steps."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Object Recognition",
+                                    "paragraphs": [
+                                        "In order to recognize objects effectively, a deep convolutional neural network (CNN) is designed and applied. Specifically, the architecture of our CNN is presented in Figure 12.",
+                                        "The network contains eight layers with weights: the first four are convolutional layers and the remaining are fully connected layers. Every convolutional layer is followed by a max-pooling layer with kernels of size 2\u2009\u00d7\u20092. The neurons in the fully connected layers are linked to all neurons in the previous layer. The rectified linear units (Relu) is applied to every convolutional layer and fully connected layer as the activation function.",
+                                        "The first convolutional layer filters the 3\u2009\u00d7\u2009200\u2009\u00d7\u2009200 input image with 32 kernels of size 3\u2009\u00d7\u20093\u2009\u00d7\u20093. The second convolutional layer takes the max-pooled output of the first convolutional layer and filters it with 64 kernels of size 32\u2009\u00d7\u20093\u2009\u00d7\u20093. The third convolutional layer has 128 kernels of size 64\u2009\u00d7\u20093\u2009\u00d7\u20093 connected to the max-pooled output of the second convolutional layer. The fourth convolutional layer has 256 kernels of size 128\u2009\u00d7\u20093\u2009\u00d7\u20093. After the convolutional layers, a flatten layer is employed to transformed the multidimensional feature maps into single dimensional feature maps, which can be put into the fully connected layers. Four fully connected layers have 256, 128, 64, and 4 hidden units, respectively. Between the third and forth fully connected layers, \u201cdropout\u201d technique is applied to reduce the overfitting problem by setting the output of each hidden neuron to zero with probability 0.5. The output of the last fully connected layer is connected to a 4-way softmax which produces a distribution over the 4 class labels (i.e., background, cup, bottle, and pop can)."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Object Location",
+                                    "paragraphs": [
+                                        "After the recognition, the position information of the desired beverage container in the camera coordinate system is calculated as the mean value of position information of all the points of the actual object point set. With the coordinate transformation from the camera coordinate system to the robot coordinate system (see Section 3.2), the three-dimensional position information of the desired beverage container in the robot coordinate system is obtained and is sent to the decision-making layer."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "Mouth Detection And Localization",
+                                    "paragraphs": [
+                                        "In order to complete the automatical assistive drinking task, the position information of the user\u2019s mouth is required. As mentioned at the beginning of Section 3.2, a Kinect sensor is put in front of the user and capture the mouth. With the assistance of the Kinect SDK 2.0, the 3D location of the user\u2019s mouth in the camera coordinate system is obtained. By using the coordinate transformation mentioned in Section 3.2.1, the three-dimensional position information of the user\u2019s mouth in the robot coordinate system is obtained and is sent to the decision-making layer."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Robot Manipulator Control",
+                    "paragraphs": [
+                        "As shown in Figures 7 and 13, KINOVA JACO2 robot manipulator is employed in the ID-SIR system. The robot manipulator has six joints and three fingers. Each finger has a controllable joint and a passive joint. When the controllable joint is grasping an object, the passive joint rotates automatically so that it can hold the object more firmly. Consequently, the robot manipulator has an adequate ability to grasp an object firmly and deliver it to the user\u2019s mouth steadily.",
+                        "By using the official API, the end-effecter of the robot manipulator (i.e., the three fingers) can be controlled to move from an initial position to an expected position automatically and smoothly. Therefore, only several separated key points in the task space are required to obtain the continuous tracking trajectories of joint space. At present, only the positions of the desired beverage container and the user\u2019s mouth are variable. The remaining position points in the delivering process are predefined. With the consideration of the manipulator\u2019s stability and user\u2019s safety during the task execution, joint velocities of the manipulator are limited at an appropriate speed. Moreover, the manipular state, including position and direction information, is captured and transferred to the robot controller in real time so as to perform accurate control. The manipular state is also sent back to the decision-making layer to make sure that the task is finished."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experiments And User Study",
+            "paragraphs": [
+                "The study was approved by the Ethics Committee of South China University of Technology. Written informed consent was obtained from each subject. In order to verify the effectiveness of the proposed ID-SIR system, two experiments are designed: one is the CNN training and the other is whole system evaluation. Moreover, comparisons among existing BMI-based assistive robotic systems and our ID-SIR system are also presented. Figure 13 shows a scenario of a user drinking with the help of the ID-SIR system."
+            ],
+            "subsections": [
+                {
+                    "title": "Cnn Training",
+                    "paragraphs": [
+                        "In order to train our CNN to recognize the desired object, a specific data set needs to be established. Without loss of generality, we task three kinds of objects (i.e., a cup, a bottle, and a pop) as an example. The data set was designed to contain 4 classes, i.e., cup, bottle, pop can, and background. Thus, 26,564 images in total, approximately 6,500 samples for each class, were gathered through a Kinect applying the region growing algorithm. The data set was then divided into training set and validation set randomly with a rate of 7:3.",
+                        "Before training, data augmentation was implemented as generating new images with rescaling and horizontal reflections to reduce the overfitting problem. After 5 epoch of training with \u201cadam\u201d optimization scheme, our CNN finally achieved 0.9905 accuracy on the validation set."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Whole System Evaluation",
+                    "paragraphs": [
+                        "Eight volunteers were asked to attend the evaluation experiment. The whole system evaluation process consisted of two parts: off-line training and online testing. These volunteers were all healthy subjects (19\u201321\u2009years old), among which only one subject (i.e., subject 8) had experience in using P300-based BMI system before and the other seven subjects had no experience in BMI system."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Off-Line Training",
+                            "paragraphs": [
+                                "The EEG signal data were acquired by the following three steps. First of all, a target symbol was given randomly by the computer and displayed in the text box above the four buttons. Second, the subject was asked to pay attention to the given target symbol. Third, the buttons flashed in a random order. Each subject had to complete 40 off-line trials (i.e., N\u2009=\u200940) and the chain of potential signals, including useful EEG P300 signals and noises from 30 channels, were recorded in this training process.",
+                                "After the data acquisition, the data set was processed by the method of self-adaptive Bayesian linear discriminant analysis (SA-BLDA) illustrated in Section 3.1, and the classifier model of the subject was obtained, which was employed to detect the intention command in online testing process.",
+                                "Figure 15 illustrates the relationship among accuracy, ITR and \u03b80 in the SA-BLDA algorithm. As analyzed in Section 3.1.3, parameter \u03b80 is set at the point where the curve of accuracy first reaches its highest value. According to this rule, the final selections of \u03b80 of all the subjects and the corresponding accuracy and ITR are listed in Table 1. From the table, we can see that the off-line training process is fast, and the accuracy is high. Specifically, all the accuracies are greater than 95%, and all the ITR are less than 20\u2009bits/min."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Online Testing",
+                            "paragraphs": [
+                                "During the online testing process, each subject was asked to control the robot manipulator to finish 10 times assistive drinking tasks. In each task, the subject chose a beverage container through the P300-based BMI subsystem and controlled the robot to deliver the beverage container to his mouth, and then sent the \u201cback\u201d command to drive the robot manipulator to send the drink back to its original position. Evidently, two commands were required to complete each task: (i) grasp and deliver the desired beverage container to the month, (ii) put the beverage container back. Therefore, during the online testing experiment, each subject was asked to finish 20 control commands (i.e., trial number N\u2009=\u200920). The snapshots of a subject experiencing one assistive drinking task are shown in Figure 14.",
+                                "The experimental results of eight subjects\u2019 online testing are shown in Tables 2 and 3. In the second and third columns of Table 2, the average round number Ma and the corresponding average time of P300 signal recognition tP300 of each subject are presented, respectively. The fourth and fifth columns list eight average time and average accuracy when users completed 10 times drinking tasks. It is worth pointing out that a drinking task includes delivering process and returning process. In other words, the time cost of a drinking task includes time periods of P300 signal recognition, object recognition, object localization, and robot operating. As seen from Table 3 that the mean time of P300 signal recognition is 5.25\u2009s and the average time of completing one task is 84\u2009s in the online testing. The average accuracy of 10 times drinking tasks controlling the robot manipulator is 97.50%. The eight online experiments verify the effectiveness of the proposed ID-SIR system.",
+                                "Table 3 shows the evaluation of the eight subjects to the proposed ID-SIR system after their experiences. The first four questions are about the functions of the ID-SIR system and the average scores are 4.25, 4.75, 4.13, and 4.75, respectively. These four high scores demonstrate well that the ID-SIR system is very capable and suitable for the assistive drinking tasks. The scores of Q5 and Q6 (reaching to 3.5 and 4.25, respectively) shows that subjects did not bear so much burden in the experiment and the user experience of the ID-SIR system is acceptable. The 4.13 score of the last question indicates that it is possible for the ID-SIR system to continue to perform experiments on patients with stroke and neurodegenerative diseases."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Comparisons With The Existing Systems",
+                    "paragraphs": [
+                        "In order to highlight the advantages and effectiveness of our system, comparisons among existing BMI-based assistive robotic systems and the ID-SIR system are shown in Table 4.",
+                        "As shown in Table 4, a robotic system in Hochberg et al. (2012) first applied the invasive MI-based BMI technology with a robot manipulator to complete foam balls reaching and grasping tasks and achieved the accuracy as 95.6% (touch) and 62.2% (grasp) spending about 7\u2009s per task. Later, a female patient with tetraplegia and anarthria was assisted by the system to drink coffee from a bottle speeding more than 85\u2009s each time with 67.7% accuracy. However, this system is inefficient and cause great burden on users. Users have to concentrate continually to control the robot manipulator in real time. Besides, sensors need to be implanted in users\u2019 brains and more than 1\u2009month is required for the operation recovery and training. The robotic assistive systems in Wang et al. (2015) and (Katyal et al., 2013) employed non-invasive BMI technology and eye-tracking technology to a control robot manipulator to grasp or pick objects. Besides, vision algorithms, such as Euclidean clustering extraction (ECE) algorithm or sample consensus (SC) algorithm, were also used to locate objects in RGB-D images. However, they did not consider about detection or assistive drinking problems. Regarding the assistive drinking problem, the system in Schr\u00f6er et al. (2015) incorporated non-invasive MI-based BMI technology with object localization and mouth detection to control the robot. However, the system took almost 2\u2009min to complete one task and the color-based classifier for recognizing a specific colorful plastic cup limited the choices for users.",
+                        "In order to overcome the deficits of existing systems listed in Table 4, our ID-ARR system applies non-invasive P3000-based BMI technology to complete the assistive drinking task automatically and reduce great burdens on users. It only requires users to have short time training at the beginning and concentrate only two times to give out commands during each whole drinking process. Besides, two-times region growing algorithm and convoluted neural network are applied to recognize and locate the object, which are more effective and generalizable in practical environments."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this paper, an intention-driven semi-autonomous intelligent robotic (ID-SIR) system has been designed. The system is composed of a P300-based brain\u2013computer interface (BMI) subsystem, a robot manipulator and an automatic-visual-inspection subsystem. It can detect a desired object and deliver it to the mouth of the user. In order to detect the intention of the user, a self-adaption Bayesian linear discriminant analysis algorithm has been exploited and performed to improve training efficiency and accuracy. Besides, a novel two-times region growing algorithm has been proposed to obtain the complete object. One of the important contributions of this paper is that the combination of BMI and semi-autonomous robot technologies eases the burden on the brain and satisfy user\u2019s assisted-living requirement. By using our system, eight subjects successfully complete 10 times assistive drinking tasks with satisfactory accuracies (\u226597.5%). The experiment results have verified the capability of the proposed ID-SIR system and the corresponding algorithms. Compared with the existing BMI system, the advantages of the proposed ID-SIR system are that (1) the object is not predefined and can be put at anywhere in the cross field of sensor\u2019s scanning zone and robot manipulator\u2019s region and (2) both the accuracy and efficiency are considered in the P300-BMI subsystem. Further studies will be conducted to set up the system on a mobile platform and investigate the practical performance on patients."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Author Contributions",
+            "paragraphs": [
+                "All authors listed have made a substantial, direct, and intellectual contribution to the work and approved it for publication."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conflict Of Interest Statement",
+            "paragraphs": [
+                "The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest."
+            ],
+            "subsections": []
+        }
+    ]
+}

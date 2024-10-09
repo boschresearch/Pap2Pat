@@ -1,0 +1,75 @@
+# DESCRIPTION
+
+- introduce circulating tumor cells
+- define tumor
+- explain metastasis formation
+- describe current treatments
+- limitations of current treatments
+- estimate circulating tumor cells in advanced cancer
+- introduce circulating tumor cell clusters
+- describe Aceto et al.'s study
+- describe Au et al.'s study
+- explain tumor cell cluster behavior
+- state object of the invention
+- describe device according to claim 1
+- describe pump and throttle design
+- state object of the invention (method)
+- describe method according to claim 7
+- explain comminution and inactivation by shear stresses
+- define shear stress
+- describe experimental studies
+- describe destruction of tumor cell clusters
+- describe inactivation of individual tumor cells
+- discuss potential hemolytic effects
+- describe mechanical properties of circulating tumor cells
+- explain therapeutic window for shear stress
+- describe placement of pump in venous drain
+- explain advantages of placement during primary tumor removal
+- describe pressure conditions in bloodstream
+- explain suitable locations for pump placement
+- describe hepatic portal vein as a suitable location
+- describe superior vena cava as a suitable location
+- discuss potential for multiple device placements
+- describe blood pressure in veins
+- describe blood flow in veins
+- propose pump design point
+- determine pump variables
+- establish pump characteristic
+- operate pump at design point
+- generate shear forces
+- avoid damaging blood components
+- adapt to local circulatory control
+- provide pressure sensors and control unit
+- regulate pressure difference
+- design micro-axial pump
+- design throttle
+- ensure constant shear stress
+- prevent cavitation
+- describe micropump design
+- compare to cardiac assist systems
+- specify volumetric flow and pumping pressure
+- describe variation in venous blood circulation
+- tailor design point to individual patient
+- use diagnostic methods to determine design point
+- manufacture device using additive and subtractive methods
+- describe arrangement of device in venous drain
+- show schematic representation of device
+- describe venous catheter and control unit
+- describe optional injection system
+- describe alternative implantation methods
+- describe micro-axial pump embodiments
+- describe outer and inner jacket tubes
+- describe screw shaft and blades
+- describe pressure-reducing throttle
+- describe annular gap and shear stress
+- show experimental results for comminution of tumor cell clusters
+- describe therapeutic window
+- model process of tumor cell release and inactivation
+- describe micrographs of tumor cells and clusters
+- describe destruction of tumor cell clusters
+- describe control of pump within therapeutic range
+- describe adaptation to local circulation control
+- describe placement of device in venous drain
+- describe suitable locations for device placement
+- describe reduction of hematogenous metastasis
+

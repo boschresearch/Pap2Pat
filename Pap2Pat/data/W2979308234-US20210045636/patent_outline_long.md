@@ -1,0 +1,187 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate to in-vivo determination of bone stiffness
+
+## BACKGROUND
+
+- introduce bone health
+- describe bone structure
+- explain bone function
+- discuss bone types
+- describe bone remodeling
+- explain bone diseases
+- introduce osteoporosis
+- describe osteoporosis mechanisms
+- discuss bone strength
+- introduce areal bone mineral density (aBMD)
+- describe Dual-energy X-ray absorptiometry (DXA)
+- introduce volumetric bone mineral density (vBMD)
+- describe peripheral quantitative computed tomography (pQCT)
+- describe high resolution peripheral quantitative computed tomography (HRpQCT)
+- discuss limitations of aBMD and vBMD measurements
+- introduce quasistatic mechanical testing (QMT)
+- describe bone bending strength
+- describe bone bending stiffness
+- discuss limitations of QMT
+
+## SUMMARY
+
+- introduce method for determining bone stiffness
+- apply superposition of static and oscillatory forces
+- receive measurement data
+- repeat steps to obtain parameter set
+- determine stiffness of bone
+- transform data to functions of frequency
+- reduce data to accelerance frequency response function
+- determine complex compliance frequency response function
+- fit parametric mathematical model
+- determine discrepancies between parameters
+- determine second measure of conformity
+- save parameter set
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce specific embodiments
+- define technical terms
+- clarify singular and plural forms
+- explain "at least one" component
+- define "configured" to embody a particular property
+- explain "preferably," "commonly," and "typically"
+- define "substantially" and "approximately"
+- explain numerical ranges and parameters
+- define "automatically"
+- define "calculate"
+- define "computer"
+- define "data receiver"
+- define "exemplary"
+- define "GUI"
+- define "parametric mathematical model"
+- define "processor"
+- define "root mean square"
+- define "skin-bone complex"
+- define "server"
+- define "viscoelastic material"
+- introduce parametric model-based method for determining bone stiffness
+- describe data collection for complex accelerance frequency response function
+- describe analysis of complex accelerance frequency response function
+- define parametric mathematical model
+- derive equations for Real and Imaginary parts of H(f)
+- derive equations for A0, A1, A2, A3, C1, and C0
+- describe limitations of prior MRTA practice
+- explain effect of unmodeled mode of vibration on RMS error
+- describe difference in parameter estimates from Y(f) and H(f)
+- explain function of static force in skin-bone complex
+- describe effect of static load on resonant frequency
+- determine optimal static load range
+- describe parametric model-based computer-implemented method
+- apply superposition of static and oscillatory forces
+- measure oscillatory forces and accelerations
+- perform Fourier transformations
+- determine complex compliance and stiffness frequency response functions
+- fit parametric mathematical model to Y(f) and H(f)
+- describe characteristic peaks in frequency response function
+- determine correct probe placement
+- describe plots of frequency response function data
+- superimpose best fit on frequency response function data
+- determine discrepancies between parameter sets
+- determine second measure of conformity
+- describe skewness of bone peaks
+- define skewness formula
+- describe kurtosis of bone peaks
+- define kurtosis formula
+- explain significance of skewness and kurtosis
+- describe agreement between bone peaks
+- conclude conformity of data to parametric mathematical model
+- define kurtosis formula
+- derive kurtosis formula
+- calculate kurtosis error
+- calculate second measure of conformity
+- describe application of second measure
+- illustrate good fit of parametric model
+- highlight distinction between optimal and sub-optimal data sets
+- describe improved selection of optimal parameter set
+- improve accuracy and repeatability of MRTA and CBMT measurements
+- save parameter sets to storage medium
+- retain raw data for repeated analysis
+- apply static and oscillatory forces to shifted region
+- determine oscillatory acceleration and forces
+- determine complex compliance frequency response function
+- fit parametric mathematical model to Y(f)
+- fit parametric mathematical model to H(f)
+- repeat collection and analysis of data
+- adjust static force for repetitions
+- apply viscoelastic material to skin-bone complex
+- determine optimized parameter set
+- iteratively determine optimized parameter set
+- monitor first and second measures of conformity
+- shift bone probe to collect data at shifted region
+- apply static and oscillatory forces to shifted region
+- improve first and second measures of conformity
+- determine optimized parameter set with respect to shifting
+- rotate forearm to access new region
+- apply static and oscillatory forces to new region
+- determine optimized parameter set with respect to rotation
+- shift region longitudinally along long axis
+- apply static and oscillatory forces to new region
+- determine optimized parameter set with respect to longitudinal shifting
+- vary magnitude of static load
+- apply static and oscillatory forces to new region
+- determine optimized parameter set with respect to static load
+- insert layers of viscoelastic material
+- apply static and oscillatory forces to new region
+- determine optimized parameter set with respect to viscoelastic material
+- determine overall optimized parameter set
+- determine stiffness of bone from optimized parameter set
+- introduce 6-parameter model
+- motivate exclusion of BP
+- describe application for research purposes
+- define area under imaginary part of compliance curve
+- describe criterion for conformity to 7-parameter model
+- introduce oscillatory forces
+- describe excitation frequency range
+- select excitation frequency range
+- describe waveforms
+- fit parametric mathematical model
+- describe subranges within excitation frequency range
+- generate subranges
+- describe threshold minimum and maximum frequencies
+- select threshold frequencies
+- describe determination of stiffness of bone
+- describe elapsed testing time
+- describe optimized parameter set
+- introduce system for estimating stiffness of bone
+- describe device for measuring stiffness of bone
+- describe data analyzer
+- describe bone positioning support
+- describe mechanical force applicator
+- describe frequency response recorder
+- describe open framework
+- introduce inverted delta robot
+- describe bone positioning harness
+- describe platform carriage
+- introduce second delta robot
+- describe viscoelastic material
+- describe force generator
+- describe force and acceleration sensors
+- describe force probe
+- describe data analyzer components
+- describe storage medium
+- describe processor
+- describe visual subsystem
+- describe graphical user interface
+- introduce method for determining stiffness of bone
+- apply controlled superposition of static force and oscillatory force
+- measure oscillatory accelerations
+- transform F(f) and a(f) to obtain H(f) and Y(f)
+- fit parametric model to H(f) and Y(f)
+- determine discrepancies between parameter sets
+- determine second measure of conformity
+- save parameter set
+- apply static and oscillatory forces to shifted region
+- measure oscillatory forces and accelerations for shifted region
+- transform F(f) and a(f) to obtain H(f) and Y(f) for shifted region
+- fit parametric model to H(f) and Y(f) for shifted region
+- determine optimized parameter set
+

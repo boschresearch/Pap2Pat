@@ -1,0 +1,162 @@
+{
+    "id": "https://semopenalex.org/work/W4307323539",
+    "authors": [
+        "Xiao Zhang",
+        "Jonathon Shlens",
+        "Dragomir Anguelov",
+        "Mingxing Tan",
+        "Zhaoqi Leng",
+        "Shuyang Cheng",
+        "Weiyue Wang",
+        "Benjamin Caine"
+    ],
+    "title": "PseudoAugment: Learning to Use Unlabeled Data for Data Augmentation in Point Clouds",
+    "date": "2022-01-01",
+    "abstract": "Data augmentation is an important technique to improve data efficiency and save labeling cost for 3D detection in point clouds. Yet, existing augmentation policies have so far been designed to only utilize labeled data, which limits the data diversity. In this paper, we recognize that pseudo labeling and data augmentation are complementary, thus propose to leverage unlabeled data for data augmentation to enrich the training data. In particular, we design three novel pseudo-label based data augmentation policies (PseudoAugments) to fuse both labeled and pseudo-labeled scenes, including frames (PseudoFrame), objecta (PseudoBBox), and background (PseudoBackground). PseudoAugments outperforms pseudo labeling by mitigating pseudo labeling errors and generating diverse fused training scenes. We demonstrate PseudoAugments generalize across point-based and voxel-based architectures, different model capacity and both KITTI and Waymo Open Dataset. To alleviate the cost of hyperparameter tuning and iterative pseudo labeling, we develop a population-based data augmentation framework for 3D detection, named AutoPseudoAugment. Unlike previous works that perform pseudo-labeling offline, our framework performs PseudoAugments and hyperparameter tuning in one shot to reduce computational cost. Experimental results on the large-scale Waymo Open Dataset show our method outperforms state-of-the-art auto data augmentation method (PPBA) and self-training method (pseudo labeling). In particular, AutoPseudoAugment is about 3X and 2X data efficient on vehicle and pedestrian tasks compared to prior arts. Notably, AutoPseudoAugment nearly matches the full dataset training results, with just 10% of the labeled run segments on the vehicle detection task.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "3D object detection from LiDAR point cloud data is a core component of autonomous driving. Building accurate 3D object detection systems requires vast quantities of labeled scenes with accurate 3D bounding box annotations. While unlabeled LiDAR data is readily available, labeling itself is costly, e.g., 6.4 hours of LiDAR data contains more than 10 million human labeled 3D boxes [58]. ) and our method (AutoPseudoAugment) are evaluated using 3D detection AP at Level 1 difficulty on the validation split of the Waymo Open Dataset [58]. Using 10% of labeled run segments, AutoPseu-doAugment is about 3\u00d7 data efficient as PPBA and Pseudo label method on the vehicle class and 2\u00d7 on the pedestrian class. AutoPseudoAugment is nearly 10\u00d7 and more than 5\u00d7 data efficient compared to the supervised (no augmentation) vehicle and pedestrian baselines.",
+                "Thus, an effective way to increase the data efficiency for model training would be very appealing.",
+                "Data augmentation is an effective way to increase data efficiency for labeled data. Data augmentations for 3D detection generally come in two forms: global augmentations like scene rotations, or local augmentations like ground truth augmentation, where crops of ground truth objects from the training set are inserted into the scene. Pasting ground truth objects into the scene has been shown to be extremely effective on various 3D detection datasets [64,25,8,66,70,65,30].",
+                "However, these augmentation techniques are typically limited to the labeled training data. A simple way to incorporate unlabeled data into training is pseudo labeling, but naively applying existing 3D data augmentation policies to pseudo labeled frames has an intrinsic limitation, i.e., pseudo labeled frames contain numerous false positive/negative bounding boxes and points. Several recent studies on 3D pseudo labeling [4,44] have tried to use large-capacity teacher models to mitigate this issue, but the intrinsic pseudo-labeling errors persist. Here, we seek to an alternative approach: mitigating the pseudo labeled errors by new data augmentation policies.",
+                "Another challenge is how to effectively combine labeled and unlabeled data via data augmentation. Previous approaches treat pseudo-labeled frames as a whole and do not recognize the compositional nature of 3D point clouds scenes [4,44]. This limits the diversity of training data. A simple way to fuse la- beled and pseudo-labeled frame is to generalize the existing copy-pasting object data augmentation to leverage unlabeled objects. Interestingly, we observe that only pasting objects between labeled and pseudo-labeled frames is not enough [64,25,8,66,70,65,30], because we miss out the diverse background scenes in the pseudo labeled dataset. Especially for 3D point clouds, more than 90% of the points are backgrounds, which provide critical ingredients for 3D detectors to learn to detect objects in new scenes. Thus, it is necessary to develop a set of data augmentation policies that take advantage of both foreground objects and background points in the pseudo labeled frames along with labeled frames to generate combinatorial number of point clouds.",
+                "In this work, we propose a set of data augmentation policies tailored for pseudo labeled data, named PseudoAugments. As shown in Figure 2, our Pseu-doAugments contain three new data augmentation policies: PseudoFrame removes low confidence points, PseudoBBox pastes pseudo objects onto labeled scenes, and PseudoBackground swaps the background point clouds between la-beled and pseudo-labeled scenes. All our augmentations allow pseudo-labeling uncertainty, and only make use of points of frame, object, and background with high-confidence. PseudoAugments significantly increase the diversity of training data by enabling a combinatorial number of new fused training scenes, including 1) ground truth objects on pseudo labeled background scenes, 2) pseudo labeled objects on ground truth background scenes, and 3) pseudo labeled objects on pseudo labeled background scenes, which greatly enrich the diversity of training data.",
+                "Based on PseudoAugments, we develop an auto data augmentation framework named AutoPseudoAugment to learn the best augmentation policies. Our AutoPseudoAugment is based on population-based training (PBT) and searches for the best augmentation policies online at different training stages. On top of PBT, AutoPseudoAugment uses the top-performing models in previous generations as an ensemble of teachers to pseudo label unlabeled data, which further boosts the quality of pseudo labeled data without the need of training a separated set of high-capacity teacher models [4,44]. AutoPseudoAugment extends PBT beyond simple hyperparameter tuning by introducing population-based distillation and creates a virtuous cycle between students and teachers, where good teachers in previous generations improves the quality of student models, which become better teachers to pseudo label for future generations.",
+                "Our main contributions can be summarized as follows: 2 Related Work"
+            ],
+            "subsections": [
+                {
+                    "title": "Data augmentation",
+                    "paragraphs": [
+                        "Data augmentation has been widely adopted to improve the performance of models trained with supervised learning, such as image classification [55,10,60,49,29,13,67],",
+                        "2D object detection [23,14], image segmentation [46,38,48,15], point cloud classification and detection [70,64,7,30,39,51,34,8,18,50,28,31,9,68]. Designing a strong set of augmentation policies for a given task and dataset requires extensive hyperparameter tuning. Automated data augmentation algorithms [33,45,11,12,35,24] were proposed to search data augmentation policies. Recently, PointAugment [34] and PPBA [8] introduced automated data augmentation for point clouds, which showed strong empirical results.",
+                        "Unlike existing data augmentation methods, which only operates on labeled data, our PseudoAugments are designed to improve the quality of pseudo labeled data and generate combinatorially diverse scenes by fusing labeled and pseudo labeled frames. Different from automated data augmentation frameworks, in particular population-based data augmentation [24,8], our AutoPseudoAugment framework enables hyperparameters tuning and self-training in one-shot. It reduces the training cost especially for iterative self-training [63] and outperforms the state-of-the-art data augmentation framework for 3D point clouds, shown in Table 4."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Self-training",
+                    "paragraphs": [
+                        "Self-training [36,63,6,4], also referred to as pseudo-labeling [32], aims to learn from a combination of labeled and unlabeled data. In self-training, a trained teacher network is used to predict labels (pseudo labels) on unlabeled data, and a student model is trained on the combination of the original labeled examples and the new pseudo-labeled examples. Self-training has been applied to a wide variety of tasks, including classification [63,56,1], semantic segmentation [40,6,62,22], object detection [47,57,71,4], speech recognition [41,27].",
+                        "Different from prior works on pseudo labeling for 3D point cloud [4, 44,61], where unlabeled frames are used as a whole, our PseudoAugments enables combinatorial new training data by fusing labeled and unlabeled frames. In this work, we aim to demonstrate simple PseudoAugment policies are effective and general methods, while advanced techniques such as IoU-based filtering [61], part&shape-aware data augmentation [68,9], and randering-based method [18] could further improve the quality of PseudoAugments."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Object Detection for Point Clouds",
+                    "paragraphs": [
+                        "There exists a large collection of different architectures for performing 3D object detection. The majority of methods [7, 66,30,70,64,19,16] discretize the space into either a 2D (Birds eye view) or 3D grid, and perform either 2D or 3D convolutions on this grid. Some methods alternatively opt to work with the range image view, performing convolutions on the spherical LiDAR image [37,2,17]. There also exists a third class of methods, that opt to learn features directly from the raw point cloud [43,39,54,42], along with a handful of techniques that blend approaches [69,52,53,59]. Because our method is architecture-agnostic, we view these innovations as complimentary, as our method should benefit current and future architectures."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [
+                "In this section, we first motivate PseudoAugment policies and explain their designs, then we detail the AutoPseudoAugment framework, including our overall data augmentation search process, and how this interacts with PseudoAugment policies. A summary of the algorithm can be found in Algorithm 1. end if end while"
+            ],
+            "subsections": [
+                {
+                    "title": "PseudoAugments",
+                    "paragraphs": [
+                        "The primary goal of PseudoAugments is to generate diverse training data by fusing pseudo-labeled and labeled frames, while reducing mislabeled points and objects in pseudo-labeled frames. We propose three new data augmentation polices which correspond to three different ways of utilizing pseudo-labeled data: PseudoFrame, PseudoBBox, and PseudoBackground.",
+                        "PseudoFrame. PseudoFrame extends the self-training approach, where a pseudo-labeled frame is used as if a labeled frame during training. Unlike [4], where pseudo bounding boxes with low prediction confidence are dropped to reduce false positive bounding boxes, PseudoFrame augments pseudo-labeled frames by removing point clouds within those low confidence pseudo bounding boxes, shown in Figure 2. In fact, pseudo labeling is suboptimal compared to PseudoFrame, regardless of what the confidence threshold is, e.g., setting a high threshold will introduce false negative points in the scenes while setting a low threshold will lead to additional false positive pseudo-labeled bounding boxes in the scenes. PseudoFrame mitigates this issue by dropping point clouds in confusing (low confidence) pseudo boxes, which increases the effective quality of pseudo-labeled data, Figure 4, and leads to higher quality student models, Table 1. The PseudoFrame policy contains two hyperparameters: the probability of applying this policy (range [0, 1]), and the threshold of the classification confidence score for both dropping bounding boxes and points (range [0.5, 1]). In practice, we follow the recommendations of PPBA [8] and only explore up to three augmentation policy choices per generation, with exploration rate 0.8. More details on population-based data augmentation can be found in [24,8].",
+                        "Though PseudoFrame leverages unlabeled data and increases the effective quality of pseudo-labeled data, the labeled frames and pseudo-labeled frames are used independently. To further increase the diversity of the training data, we introduce two additional data augmentation policies, i.e., PseudoBBox and PseudoBackground, to fuse labeled frames and pseudo-labeled frames, which introduce a combinatorial number of new training data.",
+                        "PseudoBBox. Unlike pasting ground truth objects from the labeled frames [64,8,39,30], PseudoBBox is designed to introduce diverse pseudo objects into a training example while reducing the likelihood of pasting false positive points as objects, shown in Figure 2. PseudoBBox fuses pseudo-labeled frames and labeled frames by pasting pseudo-labeled foreground objects onto labeled scenes. The PseudoBBox policy contains three parameters: the probability of applying this policy (range [0, 1]), the number of objects that will be added (range [0, 20]), and the threshold of the classification confidence score (range [0.5, 1]) required for an object to be inserted into a scene.",
+                        "To align pasted objects to the new background scene, we adjust the Z coordinate of pasted objects based on the estimated Z coordinate of the new ground plane 1 . We oversample 10\u00d7 pseudo objects and reject pseudo objects that overlap with any other pseudo objects and existing ground truth objects in the scene, then sample from the reminding pseudo objects and paste the predefined number of pseudo objects into the scene. If the pasted objects overlap with background points, we will remove background points.",
+                        "PseudoBackground. Perhaps surprisingly, the background point clouds in unlabeled data contain important ingredients for generating diverse fused scenes, which were not recognized. Simply swapping the background point clouds in labeled frames and unlabeled frames, we generate diverse fused training scenes with ground truth objects on top of background point clouds from pseudo-labeled scenes. Different from PseudoFrame and PseudoBBox, we aggressively reject both true negative and false negative points in point clouds by removing all points within pseudo bounding boxes with object classification confidence scores above 0.1, and use reminding points as the background point clouds. Thus, the PseudoBackground contains only one hyperparameter, i.e., the probability of applying this operator (range [0, 1]). We align the ground plane of the new pseudo background point cloud with the existing point cloud and reject pseudo background point clouds when overlapping with bounding boxes, following the process described above for PseudoBBox."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "AutoPseudoAugment",
+                    "paragraphs": [
+                        "AutoPseudoAugment is a data augmentation framework designed for efficient hyperparameter tuning while applying PseudoAugments in one shot, shown in Algorithm 1.",
+                        "Population-based distillation Motivated by the recent success of populationbased augmentation [24,8], we use PBT to search hyperparameters in Pseu-doAugments. However, traditionally, hyperparameter tuning and self-training are decoupled. Especially for iterative self-training [63], tuning the hyperarameters for the student model in each iteration will incur significant computation cost. To mitigate this challenge, we propose population-based distillation, where we take advantage of the models in previous generations as an ensemble of teachers to pseudo label unlabeled data, shown in Figure 3.",
+                        "Unlike PBT, where model checkpoints in previous generations are discarded when training models, we recycle and use the top N model checkpoints in the previous generation as teachers. Because the previous generation checkpoints are trained with different schedules of data augmentation policies, they naturally form a diverse set of teachers. Thus, population-based distillation achieves both hyperparameter tuning and ensemble distillation at once.",
+                        "In addition to our three new PseudoAugment policies PseudoFrame, Pseu-doBBox, and PseudoBackground, we adopt the full suite of data augmentations used by PPBA [8]. In order to further increase the diversity of our training data, we apply our three PseudoAugment policies before we apply other geometricbased data augmentations, allowing pseudo-label augmented scenes to be further "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experiments",
+            "paragraphs": [
+                "We extensively evaluate PseudoAugments policies and AutoPseudoAugment framework using voxel-based PointPillars model2 [30] and point-based StarNet model 2 [39] on KITTI [20] and Waymo Open Dataset [58].",
+                "For the following experiments, we train two separate models to detect vehicles and pedestrians and adopt the same training setting as prior works [39,8,4]. To study the data efficiency, we create a smaller training set consisting of 10%, 30% and 50% of the run segments from the Waymo Open Dataset training set to use as our labeled dataset, while using the remaining run segments as an unlabeled dataset. We want to highlight that 10% of the Waymo Open Dataset contains a considerable amount of 3D labeled bounding boxes (more than 1 million) which is on par with other full training dataset such as KITTI, NuScenes, and Argoverse dataset [21,3,5]. For hyperparameter tuning on Waymo Open Dataset, we create a random subsampling of the validation set, using 10% of examples (4109 samples) as mini-val and use Level 1 difficulty average precision (AP) as our objective value."
+            ],
+            "subsections": [
+                {
+                    "title": "PseudoAugments helps quality and diversity",
+                    "paragraphs": [
+                        "In this section, we show PseudoAugments reduce the errors in pseudo labeled scenes via PseudoFrame and can generate diverse fused scenes when applying PseudoBBox and PseudoBackground, which outperform pseudo labeling method for both vehicle and pedestrian detection tasks. We follow the implementation in [4] and train teacher models on 10% of the training run segments using random Z rotation and random flip Y data augmentation for 150 epochs. We use the teacher models to pseudo label the reminding 90% of the training run segments and remove pseudo-labeled bounding boxes with classification score below 0.5. When training the student models, we use 1:1 ratio of labeled and pseudo labeled scene in each mini batch. Since the training data is increased 10\u00d7, we train the student model for 10\u00d7 steps to take advantage of the additional pseudo labeled data, results shown in Table 1.  Precision and recall are defined based on whether a point is inside labeled/pseudo labeled vehicle or pedestrian bounding boxes. Vanilla pseudo labeling approach only adds pseudo bounding boxes if the prediction confidence is higher than 0.5, but keeps all the false-negative points; In contrast, our PseudoFrame also drops points in low-confidence bounding boxes, thus reducing false negatives and improving precision-recall of pseudo labeled frames.",
+                        "PseudoFrame improves data quality. PseudoFrame augments the pseudo labeled scenes by removing point clouds in low-confidence pseudo bounding boxes. Here, we remove bounding boxes and corresponding point clouds with classification confidence score below 0.5. As shown in Figure 4, simply removing those point clouds is an effective data augmentation to increase the previsionrecall of pseudo labeled points. PseudoFrame improves the quality of student models (+0.4 on Vehicle AP and +0.5 on Pedestrian AP) compared to Pseudo labeling, shown in Table 1.",
+                        "PseudoBBox and PseudoBackground increase diversity. PseudoB-Box and PseudoBackground increase the diversity of the training scenes by fusing pseudo labeled and labeled scenes, as shown in Figure 2. To find the optimal hyperparameters, we randomly sample 16 different combinations of hyperparameters from the search space detailed in subsection 3.1. Introducing fused scenes further improves the quality of student models (+3.2 on Vehicle AP and + 1.2 on Pedestrian AP) compared to only applying PseudoFrame data augmentation, Table 1, which shows the benefit of PseudoBBox and PseudoBackground is additive."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Generalization of PseudoAugments",
+                    "paragraphs": [
+                        "In the previous section, we demonstrate PseudoAugments improves upon pseudo labeling method on PointPillars models. In this section, we show PsueodAugments generalizes to different model sizes and architectures. In addition to Point-Pillars model, which is a voxel-based architecture [30], we evaluate PseudoAugment on larger PointPillars models and point-based StarNet [39] models. We use the same pseudo labeled data as in subsection 4.1, which is labeled by the supervised PointPillars models shown in Table 1. We show besides self-training using the same model size and architectures, PseudoAugments enables self-training from a smaller model to a larger model and across different architectures. Our results show PseudoAugments lead to higher improvements compared to pseudo labeling, Table 2. For the following experiments, we adopt the same training settings as in subsection 3.1."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Setup",
+            "paragraphs": [
+                "Vehicle AP Pedestrian AP Supervised 52.1 56.9",
+                "Pseudo labeling [4] 51.6 (-0.5) 57.8 (+0.9) All PseudoAugments (Ours) 55.7(+5. Table 2: PseudoAugments generalize to larger capacity models and different architectures. PseudoAugments outperform pseudo labeling on 10% run segments using PointPillars [30], in Table 1, as teachers. (a) self-training from PointPillars teachers to larger PointPillars models (Pillars2X) and (b) self-training from PointPillars teachers to StarNet models [39]. Note that Pseu-doAugments improve the vehicle detection quality of Pillars2X whereas pseudo labeling is unable to. 3D detection Level 1 AP are evaluated on the Waymo Open Dataset validation set.",
+                "Generalize to larger models. We double the channel numbers of every convolution layers in the PointPillars model and denote it as Pillars2X. We train Pillars2X on the same supervised 10% run segments as the supervised training baseline, which has higher quality compared to the standard (1x) PointPillars, shown in Table 2a. Interestingly, the pseudo labeling method failed to improve the vehicle Pillars2X model (52.1 AP) when we use a weaker (1X) model (49.6 AP) as teacher. This indicates errors in pseudo labeled frames diminishe the benefit of introducing unseen scenes to diversify the training data. Whereas, applying PseudoAugments overcomes this limitation and leads to significant im-provement (+4.1 on Vehicle AP and + 1.9 on Pedestrian AP) compared to pseudo labeling.",
+                "Generalize to different architectures. Unlike voxel-based PointPillars, StarNet is a point-based 3D detector and learns feature representations directly from raw point clouds. Our results show, using PointPillars model as teacher, PseudoAugments significantly improves quality of the StarNet student models (+3.0 on Vehicle AP and + 1.2 on Pedestrian AP) compared to pseudo labeling method Table 2b. This shows PseudoAugments are model agnostic and outperform pseudo labeling method when we distill two models with very different architectures."
+            ],
+            "subsections": [
+                {
+                    "title": "Generalize to KITTI dataset",
+                    "paragraphs": [
+                        "In this section, we show PseudoAugments is a general method that is effetive on significantly different datasets. Different from Waymo Open Dataset [58], KITTI [20] dataset was collected in different cities and has different point and object density per frame. Here, we follow the common practice and split the KITTI dataset in half, i.e., one used for training and the other half used for validation. We randomly select 10% of the training frames as a mini training split, while removing labels on the rest 90% of the training frames. We train PointPillars teacher models on the mini training split with random flip and random world scaling data augmentations. Our results, in  [30] as teachers. 3D detection APs for easy, moderate, and hard (E/M/H) objects are evaluated on the KITTI validation set."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "AutoPseudoAugment improves data efficiency",
+                    "paragraphs": [
+                        "In previous sections, we demonstrate PseudoAugments are strong data augmentation methods that improves upon pseudo labeling. In this section, we show AutoPseudoAugment leverages PseudoAugments and further advances state-ofthe-art auto data augmentation methods for 3D point clouds (PPBA) [8].",
+                        "When the models are trained on 10% labeled run segments, we use generation step 1000 for both PPBA and AutoPseudoAugment. On 30% and 50% run segments, we increase the generation step to 2000. Even though AutoPseudoAugment introduces additional PseudoAugment policies with more hyperparameters compared to PPBA, we use the same number of tuners (population size 16) for AutoPseudoAugment and PPBA. We follow the other training settings in [8]. At the end of each generation, we select the top 10 models in previous generations with L1 AP above 0.35 as ensemble of teachers to pseudo label unlabeled data.",
+                        "AutoPseudoAugment outperforms both Pseudo labeling and PPBA methods Our AutoPseudoAugment framework subsumes both the auto data augmentation and pseudo labeling, which takes advantage of additional unlabeled data while tuning hyperparameters online. More importantly, PseudoAugments generate high-quality fused scenes, which greatly increases the diversity of the training data. As shown in Table 4, AutoPseudoAugment outperforms both PPBA and Pseudo labeling on 10%, 30%, and 50% labeled run segments.",
+                        "To estimate the data efficiency, we train PointPillars models without data augmentation on 10%, 20%, 30%, 50% and 100% of training run segments, shown in Figure 1. According to this metric, our AutoPseudoAugment at 10% run segments (56.7 AP) is almost 10\u00d7 more data efficient on the vehicle class, which nearly matches the model trained with 100% labeled data (57.2 AP). On pedestrian class, AutoPseudoAugment at 10 % run segments (60.3 AP) shows 5\u00d7 data efficient and suprasses no augmentation baseline model trained on 50 % of the run segments (60.0 AP), shown in Figure 1.  segments with only one data augmentation to tease apart the contribution of each PseudoAugment. As a reference, we also show the performance of common data augmentation policies such as random global Z rotation, random global Y rotation, and ground truth bounding box data augmentations [64,8,39,30]. Compared to common data augmentation methods, standalone PseudoAugment achieves comparable improvements, shown in Table 5."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Setup",
+            "paragraphs": [
+                "PseudoBBox introduces diverse foreground objects. Unlike using ground truth bounding boxes, PseudoBBox leverages unseen objects in unlabeled data to enrich the training data. On vehicle detection tasks, PseudoBBox significantly outperforms ground truth bounding box (GTBBox) augmentation (+1.7 AP), which highlights the importance of using unseen objects in unlabeled data.",
+                "PseudoBackground is important. Interestingly, we observe that utilizing the background point clouds in unlabeled data is important, especially for pedestrian detection. Taking advantage of the unseen backgrounds (PseudoBackground + 3.1 AP) is even more effective to improve model quality compared to using unseen object (PseudoBBox +1.6 AP) for detecting pedestrian."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "Despite many prior works on data augmentation for 3D point clouds, data augmentation was mostly based on labeled data. In this paper, we propose to use unlabeled point clouds to augment training data and introduce Pseu-doAugments, which utilizes unlabeled point clouds to improve 3D detection. PseudoAugments mitigate intrinsic errors in pseudo labeled scenes while introducing diverse training data by fusing labeled and pseudo labeled scenes. We perform extensive studies and comparisons to show that PseudoAugments generalize to different architectures, model sizes, and datasets and demonstrate that AutoPseudoAugment framework outperforms existing state-of-the-art data augmentation method PPBA [8] and pseudo labeling [4] at various ratio of labeled and unlabeled data."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Acknowledgments",
+            "paragraphs": [
+                "We would like to thank Yuning chai, Vijay Vasudevan, Jiquan Ngiam and the rest of Waymo and Google Brain teams for value feedback and infra supports."
+            ],
+            "subsections": []
+        }
+    ]
+}

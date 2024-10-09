@@ -1,0 +1,212 @@
+# DESCRIPTION
+
+- claim priority to provisional patent applications
+
+## TECHNICAL FIELD OF THE INVENTION
+
+- relate to antivirals and compositions, methods and treatment of viral particles
+
+## BACKGROUND OF THE INVENTION
+
+- introduce nanowires and their applications
+- discuss silver and glycerin properties and uses
+
+## SUMMARY OF THE INVENTION
+
+- motivate need for better method of inhibiting AIDS transmission
+- introduce compositions and methods for making and using anti-viral composition
+- describe synthesis of silver nanoparticles and nanowires using glycerin
+- mention extension to other metals and metal oxides
+- discuss problem of antibiotic resistance and potential of silver nanoparticles
+- highlight properties of silver nanoparticles and their potential uses
+- mention versatility of glycerin and potential applications
+
+## BRIEF DESCRIPTION OF THE DRAWINGS
+
+- introduce figures and their contents
+- describe FIG. 1, SEM image and XRD pattern of silver nanowires
+- describe FIG. 2, X-ray photoelectron spectra of pure PVP
+- describe FIG. 3, X-ray photoelectron spectra of PVP-coated silver nanowires
+- describe FIGS. 4-10, TEM and SEM images of silver nanowires at different times
+- describe FIGS. 11-14, SEM and TEM images and EDS analysis of sulfidized silver nanowires
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention scope
+- define terms
+- define antiviral and antiviral composition
+- define derivatives
+- define delivering
+- define nanometer
+- define nanoparticle
+- define non-tissue
+- define targeted
+- define polyol
+- provide polyol examples
+- define viral infection
+- define synergic action
+- define therapeutics
+- describe antiviral agents
+- describe combination therapy
+- describe method of joint drug administration
+- describe kit for improved antiviral therapy
+- discuss size confinement effects
+- discuss surface Plasmon resonance effect
+- discuss changes in optical properties
+- discuss effects on structural and magnetic order
+- conclude invention description
+- introduce size confinement effects
+- describe noble metal nanoparticles and nanowires
+- motivate use of glycerin as solvent and reducing agent
+- describe polyol method for synthesizing metal and metal oxide nanoparticles and nanowires
+- compare glycerin with ethylene glycol
+- describe synthesis of silver nanowires using glycerin and PVP or PDDAM
+- characterize silver nanowires using SEM, TEM, and XRD
+- analyze nanoparticles and nanowires using TEM and EDS
+- discuss growth mechanism and defects in silver nanowires
+- summarize main conclusions of silver nanowire synthesis
+- describe importance of inorganic nanostructures
+- discuss physicochemical properties of noble-metal nanomaterials
+- describe surface plasmon resonances in metal nanoparticles
+- discuss correlation between absorption spectra and size/shape of silver nanoparticles
+- describe importance of size control in silver nanoparticle applications
+- discuss solution phase synthesis of gold and silver nanoparticles
+- describe structural fluctuations in small metal particles
+- discuss morphological fluctuations and potential surface energy
+- describe polyol method for synthesizing metal nanostructures
+- discuss control of size and morphology in polyol method
+- describe synthesis of silver nanowires using polyol method
+- discuss stability of PVP-coated silver nanowires against atmospheric corrosion
+- describe formation of silver sulfide nanocrystals on surface of nanowires
+- discuss atmospheric corrosion of silver nanowires and nanoparticles
+- describe TEM and XPS analysis of atmospherically corroded samples
+- discuss enhanced reactivity of regions with defects and dislocations
+- describe sulfidization of silver nanostructures using hydrogen sulfide
+- confirm presence of PVP on surface of sulfidized silver nanostructures
+- discuss similarity between corrosion at nanoscale and bulk silver
+- list materials used in synthesis
+- describe synthesis of silver nanoparticles and nanowires
+- describe purification of silver nanowires by centrifugation
+- evaluate stability of silver nanowires against atmospheric corrosion
+- prepare samples for electron microscopy
+- expose samples to lab air at ambient conditions
+- conduct electron microscopy analyses periodically
+- conclude stability evaluation of silver nanowires
+- describe sulfidation experiment
+- describe sample preparation
+- describe SEM analysis
+- describe TEM analysis
+- describe XRD analysis
+- describe XPS analysis
+- characterize as-synthesized silver nanowires
+- analyze EDS spectra
+- analyze XRD pattern
+- describe nanowire structure
+- discuss role of capping agent
+- analyze XPS spectra of PVP-coated silver nanowires
+- discuss interaction between PVP and silver surface
+- analyze XPS spectra of pure PVP
+- discuss binding energies of C 1s, N 1s, and O 1s electrons
+- analyze XPS spectra of PVP-coated silver nanowires
+- discuss interaction between oxygen and silver surface
+- evaluate stability of silver nanowires
+- describe TEM analysis of silver nanowires
+- describe SEM analysis of silver nanowires
+- discuss degradation of silver nanowires
+- discuss effect of electron beam irradiation
+- describe TEM analysis of non-irradiated samples
+- describe HAADF images of nanowires
+- analyze EDS line scans
+- analyze punctual compositional analyses
+- discuss formation of silver sulfide shell
+- analyze FFT of high-resolution TEM image
+- discuss presence of silver sulfide
+- discuss atmospheric corrosion of silver
+- discuss influence of reduced-sulfur gases
+- discuss sulfidation mechanism
+- discuss role of water in sulfidation
+- discuss enhancement of sulfidation by other gases
+- describe sulfidation reactions
+- introduce OCS corrosion of silver
+- reaction of OCS with water
+- non-uniform film formation on silver surface
+- effect of humidity and temperature on corrosion rate
+- present images of corroded nanowires and nanoparticles
+- discuss non-homogeneous corrosion of nanowires
+- propose reasons for non-homogeneous corrosion
+- explain enhanced reactivity of defective regions
+- describe structure of decahedral seed particles
+- discuss presence of defects in nanowires
+- explain effect of defects on corrosion rate
+- discuss sulfidation of silver nanostructures
+- present results of sulfidation experiment
+- analyze EDS mapping of sulfidized nanowires
+- discuss presence of PVP coating on sulfidized nanowires
+- present XPS results of sulfidized nanowires
+- analyze binding energies of elements on sulfidized nanowires
+- discuss limitations of silver nanostructures in nanoelectronics
+- introduce surface-enhanced Raman scattering (SERS)
+- discuss effect of silver sulfide formation on SERS
+- propose cleaning techniques for silver sulfide
+- discuss potential applications of Ag—Ag2S core-shell nanostructures
+- propose use of higher PVP proportions to prevent corrosion
+- discuss need for similar studies on other synthesis techniques
+- introduce advantages of glycerin and PVP
+- discuss safety of glycerin and PVP
+- compare nanoparticles produced by this technology to physical methods
+- discuss potential applications of nanoparticles and nanowires
+- introduce antiviral properties of silver nanoparticles
+- describe topical antiviral applications
+- describe systemic antiviral applications
+- highlight advantages of silver nanoparticles in viral inhibition
+- describe biocidal properties of silver nanoparticles
+- introduce method of inhibiting AIDS transmission using silver nanoparticles
+- describe apparatus and method of the invention
+- discuss prior art on antiviral properties of silver
+- discuss prior art on antibacterial properties of silver
+- describe dosage forms of silver nanoparticles
+- describe parenteral administration of silver nanoparticles
+- describe oral administration of silver nanoparticles
+- describe topical administration of silver nanoparticles
+- describe formulation of parenteral compositions
+- describe preparation of sterile injectable solutions
+- describe preparation of sterile powders for injectable solutions
+- describe formulation of oral compositions
+- describe preparation of oral solutions and suspensions
+- describe preparation of oral tablets and capsules
+- describe nasal solutions and sprays
+- describe vaginal suppositories and rectal suppositories
+- describe substrates for compositions
+- describe excipients for compositions
+- describe optional additives for compositions
+- describe topical cream against HIV and other retroviruses
+- describe use of silver nanoparticles in condoms
+- describe sterile intravenous solution against HIV
+- describe use of silver nanoparticles in mouthwash
+- describe use of silver nanoparticles in inhalant form
+- describe use of silver nanoparticles in tablet form
+- describe use of silver nanoparticles in liposomal form
+- describe buffered ophthalmic solution for HIV-associated retinitis
+- describe highly concentrated solution for intramuscular injection
+- describe suppository form for chemoprevention
+- describe chemo-preventative vaginal douche and creme
+- describe vaginal sponge for time-released silver nanoparticles
+- describe use of silver nanoparticles in preventing STDs
+- describe use of silver nanoparticles in preventing AIDS transmission
+- describe advantages of silver nanoparticles in preventing AIDS transmission
+- describe method of inhibiting AIDS transmission using silver nanoparticles
+- describe apparatus and method of the invention
+- discuss prior art on antiviral properties of silver
+- discuss prior art on antibacterial properties of silver
+- summarize invention and its applications
+- introduce silver nanoparticles for healthcare workers
+- propose soap with silver nanoparticles and anti-bacterial agents
+- describe preparation of noble metal nanoparticle or nanowire-polyols or polymer complexes
+- outline production of modified release profile beads
+- describe capsule for immediate and extended release
+- provide examples of formulations for different release methods
+- state scope of invention and equivalents
+- incorporate publications and patent applications by reference
+- define transitional phrases in claims
+- assert that compositions and methods can be made without undue experimentation
+

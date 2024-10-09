@@ -1,0 +1,226 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### Field of the Invention
+
+- introduce binding agents
+
+### Background Information
+
+- describe voltage-gated sodium channels
+- discuss importance of Nav isoforms
+- motivate need for specific binding agents
+- introduce nanobodies
+- highlight limitations of current antibodies
+
+## SUMMARY OF THE INVENTION
+
+- introduce llama-derived single-domain antibodies
+- describe sdAb binding to Nav1.4 or Nav1.5
+- specify camelid or humanized sdAb
+- define CDR sequences
+- provide amino acid sequences
+- describe isolated polynucleotide encoding sdAb
+- introduce expression cassette
+- describe vector including expression cassette
+- provide host cell including polynucleotide
+- outline pharmaceutical composition and methods
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention based on llama-derived single-domain antibodies
+- clarify scope of invention
+- define singular forms
+- incorporate publications by reference
+- define technical terms
+- describe illustrative methods and materials
+- provide embodiment of single-domain antibody
+- describe voltage-gated sodium channel structure
+- explain channel conformational states
+- describe action potential process
+- explain inactivation gate function
+- describe refractory period
+- explain deinactivation process
+- list Nav channel types
+- describe Nav 1.4 expression and associated channelopathies
+- describe Nav 1.5 expression and associated channelopathies
+- define antibodies and immunoglobulins
+- describe antibody structure and function
+- explain effector functions
+- describe antibody production techniques
+- introduce antibody-derived scaffolds
+- describe single-domain antibody structure and function
+- explain advantages of single-domain antibodies
+- describe production of single-domain antibodies
+- introduce CH2 domain and Abdurins
+- describe advantages of Abdurins
+- describe production of antibody fragments
+- introduce recombinant host cell production
+- describe alternative production techniques
+- provide embodiment of single-domain antibody
+- summarize invention
+- define sdAb structure
+- specify CDR sequences
+- provide sdAb examples
+- describe camelid-derived sdAb
+- explain VHH antibodies
+- discuss benefits of VHH antibodies
+- describe humanization of sdAb
+- define chimeric antibody
+- explain humanized antibody
+- describe primatized antibody
+- specify sdAb selection
+- define sdAb specificity and affinity
+- describe sdAb binding properties
+- provide isolated polynucleotide encoding sdAb
+- define nucleic acid and oligonucleotide
+- describe isolated nucleic acid
+- explain nucleic acid extraction and analysis
+- specify polynucleotide sequence identity
+- define sequence identity ranges
+- describe conservative amino acid substitutions
+- provide expression cassette including isolated polynucleotide
+- define expression cassette
+- describe recombinant nucleic acid construct
+- explain operatively linked nucleotide sequences
+- provide example of protein tag
+- describe affinity tags
+- describe epitope tags
+- define expression cassette
+- describe polynucleotide encoding protein tag
+- describe fusion protein
+- define fusion protein
+- describe fusion protein with cargo
+- describe fusion protein with histidine tag
+- describe vector including expression cassette
+- define vector
+- describe regulatory elements in vector
+- describe additional regulatory elements
+- describe selectable markers
+- describe non-limiting examples of vectors
+- describe E3 ubiquitin-protein ligase NEDD4
+- describe fusion with catalytic domain of E3 ligase
+- describe additional regulatory elements in vectors
+- describe host cell including polynucleotide encoding sdAb
+- describe host cell including expression cassette
+- describe host cell including vector
+- describe introduction of nucleic acid construct into host cell
+- describe methods of introduction of nucleic acid into cell
+- describe pharmaceutical composition including sdAb
+- define pharmaceutical composition
+- describe pharmaceutically acceptable carrier
+- describe examples of carrier
+- describe examples of excipient
+- describe examples of diluent
+- describe voltage-gated sodium channels
+- describe use of sdAb as molecular visualization agents
+- describe use of sdAb as bait proteins
+- describe use of sdAb as Nav channel modulators
+- describe method of detecting and/or capturing Nav1.4 or Nav1.5
+- describe methods of detecting disease or condition
+- introduce sample preparation
+- describe cell or tissue preparation
+- describe lysate preparation
+- describe cell culture and fixation
+- describe immunofluorescent assay
+- describe flow cytometry
+- describe immunoprecipitation or co-immunoprecipitation assays
+- describe western blot assay
+- introduce method of detecting disease or condition
+- define detecting a disease or condition
+- describe absence of detection of Nav1.4 or Nav1.5
+- describe channelopathy diagnosis
+- describe gastrointestinal channelopathy diagnosis
+- define subject
+- list diseases or conditions
+- describe cancer
+- list types of cancer
+- define neoplasm or tumor
+- describe neoplastic disease or disorder
+- introduce method of treating cardiac arrhythmia
+- describe sdAb interaction with Nav1.4 or Nav1.5
+- define treatment
+- describe administration routes
+- describe pharmaceutical composition
+- describe unit dosage forms
+- introduce method of treating cancer
+- describe sdAb for tissue-specific targeting
+- list types of cancer
+- describe sdAb having specific amino acid sequence
+- provide examples of sdAb
+- describe sdAb for tissue-specific targeting
+- describe sdAb having specific amino acid sequence
+- provide examples of sdAb
+
+### EXAMPLES
+
+- express Nav1.4-CaM protein
+- immunize llama with Nav1.4-CaM
+- construct library of llama antibodies
+- amplify antibody coding regions
+- clone into phagemid vector
+- transform E. coli cells
+- select for antibody-expressing clones
+- perform phage display selection
+- elute bound phages
+- titrate eluted phages
+- express and purify selected antibodies
+- test antibody specificity by ELISA
+- subclone selected antibodies
+- express and purify recombinant antibodies
+- purify C-terminal Nav1.4-CaM protein
+- co-express with CaM and purify
+- purify other Nav isoform-CaM proteins
+- detect antibody specificity by ELISA
+- analyze antibody binding to Nav isoforms
+- characterize antibody-Nav interactions
+- describe protein purification
+- motivate protein recognition
+- introduce EIA/RIA plates
+- describe protein coating
+- describe washing and incubation
+- describe peroxidase activity assay
+- crystallize Nb82
+- describe crystallization conditions
+- describe crystal growth
+- describe data collection
+- describe structure refinement
+- describe Nb-mediated shift
+- describe binding kinetics
+- describe thermostability assay
+- describe western blots
+- generate and select Nav1.4-specific Nbs
+- describe Nb phage display libraries
+- classify Nb sequences
+- introduce nanobodies
+- express and purify nanobodies
+- describe Nb17 and Nb82 purification
+- determine structure of Nb82
+- describe CDR3 loop of Nb82
+- compare Nb82 with other nanobodies
+- evaluate specificity of Nb17 and Nb82
+- perform ELISA with Nb17 and Nb82
+- analyze complexes with size exclusion chromatography
+- describe binding of Nb17 and Nb82 to CTNav1.4 and CTNav1.5
+- determine kinetic parameters of Nb17 and Nb82
+- study thermal stability of Nb17 and Nb82
+- detect Nav1.4 and Nav1.5 with Nb82
+- compare Nb82 with anti-pan-Nav antibody
+- fuse nanobody with active E3 ligase domain
+- assess effect of nanobodies on Nav1.5 channel activity
+- discuss properties of Nb17 and Nb82
+- describe advantages of nanobodies
+- discuss potential of Nb17 and Nb82 as molecular probes
+- describe flow cytometric FRET 2-hybrid assay
+- detect interaction of Nb17 and Nb82 with Nav1.5
+- analyze FRET data
+- discuss interaction of Nb17 and Nb82 with Nav1.5
+- analyze nanobody interaction with Nav channels
+- determine thermal stability of Nb17 and Nb82
+- describe DSC curves of Nb17 and Nb82
+- discuss denaturation mechanisms of Nb17 and Nb82
+- describe van't Hoff enthalpy of Nb17
+- describe activation energy of Nb82
+- conclude nanobody properties
+

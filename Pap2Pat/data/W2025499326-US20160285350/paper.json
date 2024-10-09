@@ -1,0 +1,153 @@
+{
+    "id": "https://semopenalex.org/work/W2025499326",
+    "authors": [
+        "Janez Mo\u017eina",
+        "Peter Gregor\u010di\u010d",
+        "B. Zajec",
+        "David Vegelj"
+    ],
+    "title": "Adaptive Pulsed-Laser Welding of Electrical Laminations",
+    "date": "2014-02-15",
+    "abstract": "In this contribution we develop and describe a new, adaptive, pulsed-laser welding method for thin electrical laminations. By using a reflective laser sensor and a custom-made control unit with the appropriate software the system triggers the laser pulse only at the contacts between the laminations. In this way the total laser pulse energy and, consequently, the specific power losses of the electromotor, where the stack is used, are significantly reduced. This new method has great potential in the serial production of electromotors.",
+    "sections": [
+        {
+            "title": "INTRODUCTION",
+            "paragraphs": [
+                "The laser welding of electrical laminations is a new technology that has been developed in the past decade and is of great interest in the field of manufacturing highly efficient electromotors for both hybrid and pure-electric vehicles, where the stator and rotor stacks are made of thin electrical steel laminations in order to reduce the eddy currents. In alreadyestablished procedures, the laminations are made using a technology of stamping or blanking [1] and then fastened together in stacks by riveting, interlocking, conventional and laser welding, and sticking technology [2] to [4]. The main problem with these classic methods is that they all have a significant effect on the magnetic properties of the stack.",
+                "In the past few years, interest in the technology of laser welding electrical laminations has rapidly increased; this is because the laser welds tend to be small and, consequently, their influence on the magnetic properties of the stacks is smaller than the influence of the already-established procedures [5]. Additionally, the classic interlocking system is becoming less reliable as the thickness of the laminations decreases [6]; this is especially important in high-end products. It is with such cases that laser technology shows a great deal of promise. Laserwelding technology also uses less energy, while ensuring that the mechanical properties of the welds are satisfactory for use in electrical motors.",
+                "In general, there are two techniques for laser welding that are currently in use: (i) continuous-laser welding and (ii) pulsed-laser welding, with a large degree of overlap [7] and [8]. Although other authors [9] and [10] have compared these two regimes and shown that, in general, there is a significant difference between them, there is no research that analyses the differences in the specific application of welding laminations. Here, in both regimes, the laser radiation melts the whole material of the lamination surface. However, this is unnecessary, since the joints are only needed at the contacts between the individual laminations. The main aim of our work is therefore to upgrade the existing methods by developing a pulsed-laser welding system that reduces the volume of molten material. In this contribution we present the developed system, which (i) significantly reduces the total-pulse energy per weld needed for the production of mechanically sufficient and acceptable welds, and (ii) enables smaller total magnetic losses and a higher relative permeability of the stator or rotor stack."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "COMPARISON OF DIFFERENT LASER-WELDING APPROACHES",
+            "paragraphs": [
+                "The main ideas behind the different approaches to the laser welding of electrical laminations are schematically presented in Fig. 1. The electrical laminations with the marked regions of the welds are sketched in the middle of different schemes for pulsepower vs. distance.",
+                "The main idea behind the classic, continuous welding is presented in Fig. 1a. Here, a continuous laser with a constant power is used. The main advantages of such an approach are reliable welds, fast welding, no need for extra sensors, and less maintenance of the laser source.",
+                "On the other hand, since the laser power is all the time higher than the threshold for the material melting, this leads to strong and large welds, resulting in significant magnetic losses for the electromotor.",
+                "Continuous welding can be improved in the context of reducing the volume of molten material by employing adaptive, continuous welding, which is shown in Fig. 1b. Although this approach still uses a continuous laser, we modulate its power during the processing so that the maximum power is achieved at the gaps between the laminations, while the minimum power is maintained on the lamination surfaces, where the welds are unnecessary. During such a procedure, less laser energy is needed, since less material is being melted. However, if we keep the maximum power at the same level as in the case of continuous welding, this approach leads to unreliable welds with frequent cracks and blowholes. In contrast, increasing the total energy per a weld results in appropriate welds in terms of the mechanical properties, but in this case there is no advantage of using adaptive, continuous welding in comparison with the classic, continuous welding; the welds are still large and they have a significant influence on the magnetic properties of the electromotor.",
+                "Another possible regime is pulsed-laser welding, which is schematically presented in Fig. 1c. Here, the laser pulses start at the beginning of the stack and finish at the end of the stack, with a large overlapping of the pulses. This approach is usually slower than continuous welding, since we need a certain frequency of the pulses to achieve a sufficient degree of overlapping (usually around 70%) at the desired speed. The advantages of pulsed welding are smaller but deeper welds and less energy consumption in comparison with continuous welding.",
+                "The classic form of pulsed welding can be significantly improved by using an adaptive, pulsedwelding method, schematically presented in Fig. 1d. In this case we only trigger the pulses at the gaps between the laminations. In this new approach, a sensor for monitoring the gaps is necessary, since the laminations are not equally thick due to the manufacturing process of the electrical steel; their thicknesses can vary by up to 8% [11]."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "MATERIALS AND METHODS",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Experimental Setup",
+                    "paragraphs": [
+                        "We have developed a new, adaptive, pulsed-laser welding system, which is schematically presented in Fig. 2. Our system first determines the position of the gap between two laminations and then triggers the laser pulse that welds two successive laminations.",
+                        "In order to determine the gaps between the laminations we use a reflective laser sensor (Keyence LV-NH37, Japan) with a working distance of 70\u00b15 mm. It consists of a probe laser (\u03bb = 660 nm) that illuminates the laminations and the receiving sensor that observes the amount of reflected probe-laser light. The spot diameter of the probe beam at the working distance is 50 \u00b5m. At the output the sensor gives an analog signal in the range 1 to 5 V. Its response time is shorter than 1 ms. The analog signal from the sensor is first amplified and filtered using a low-pass, 30-Hz filter (Stanford Research Systems SR560). The signal from the amplifier goes to the control unit.",
+                        "The control unit uses two microcontrollers (Arduino Mini) for the signal processing and a relay for the laser triggering. Microcontroller 1 (see Fig. 2) The main idea of our A/D conversion is to eliminate the noise in the signal. The processed signal is then converted into a digital signal, which is transferred to the second microcontroller (Microcontroller 2 in Fig. 2). This second microcontroller allows the setting of the delay between the input digital signal and the output triggering signal. The setting of this delay is necessary in order to synchronize the positions of the sensor and the processing laser beam. The triggering signal is then connected to the relay, which triggers the laser according to the detected gaps. For such control we wrote custom software in the open-source Arduino programming language."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Fig. 2. A schematic presentation of our adaptive pulsed-laser welding system with three main components: (i) reflective-laser sensor, (ii) control unit, and (iii) welding laser",
+            "paragraphs": [
+                "As the welding laser we used a high-energy Nd:YAG laser (SpotLight Plus, Fotona, Slovenia, \u03bb = 1064 nm). The laser works in a pulsed mode with pulse energy in the range 1 to 120 J. The laser beam was focused onto the surface of the laminations using a lens with a focal length of 95 mm. Due to the zoom beam-expander built into the welding laser, we were able to change the beam diameter at the focus from 0.3 to 2.0 mm. In our experiments we used the laserwelding parameters that are presented in Table 1.",
+                "During the experiments we chose the lowest possible pulse energies still ensuring the appropriate mechanical properties of the weld. During the welding we also used argon as a shielding gas with a flow of approximately 6 l/min. The samples were attached to a linear, motorized stage (Standa, model 8MT177-100) connected to a PC. The motorized stage moves with a constant velocity of 1 to 3 mm/s. The velocity depends on the thickness of the sample. The laser pulses were only irradiated when a gap between the laminations was detected by the reflective laser sensor.",
+                "At the end of each weld we obtained the totalpulse energy by multiplying the single-pulse energy by the measured number of pulses that corresponds to the number of laminations in a single stack. "
+            ],
+            "subsections": [
+                {
+                    "title": "Electrical-Lamination Samples",
+                    "paragraphs": [
+                        "The experiments with our laser spot-welding system were performed on three different stator stacks (A, B and C). The laminations of each stack had the same dimensions, but different material grades, chemical composition and thickness. The characteristics of samples' laminations are listed in Table 2. All the laminations had a circular shape (e.g., see Fig. 3a) with an outside diameter of 50\u00b10.05 mm and an inside diameter of 46\u00b10.05 mm. The electrical laminations were built into a stator stack manually, i.e., they were fixed with a custom-made clamping tool, as shown in Fig. 3b. The black dotted line in Fig. 3b represents the position of the weld. All the manually made stacks had the same height of 16.3\u00b10.2 mm.",
+                        "Each sample was welded four times on the outside diameter where the welds were shifted by 90\u00b0 around the symmetrical axes going through the center of the laminations. For each sample we performed 10 experiments and from these measurements we calculated the average and the standard deviation. "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "A Real Stator Stack",
+                    "paragraphs": [
+                        "In addition to the experiments made on the sample that we described in Subsection 3.2, we also tested our new, adaptive, pulsed-laser welding system on an example of a real stator stack. As a real sample we used the stator core of a hybrid vehicle that is already being manufactured using classic, continuous-laser welding. The laminations are made of the material M270-35A, which is very similar to the material M330-35A described in Table 2 (see sample C). The stator has an outside diameter of 180.0\u00b10.1 mm, a height of 140.0+0.7 mm and a weight of approximately 9.9 kg. When fully assembled, the electromotor reaches around 30 kW in its normal operating mode. We compared the magnetic properties of a motor with a stator stack that was welded (i) classically, i.e., with continuous-laser welding, and (ii) with our new, adaptive, pulsed-laser welding method. In both cases we made 10 welds around the perimeter of the stack."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Magnetic-Properties Testing",
+                    "paragraphs": [
+                        "Magnetic measurements are very important for assessing the quality of the manufactured stator or the rotor stacks. Thus, after the welding we measured the relative permeability (\u00b5 r ) and specific core power losses (P S ) of all the samples.",
+                        "Here, the specific power losses are the losses that occur due to the rotation of the core in the magnetic field of the poles and they are a combination of the hysteresis and eddy-current losses [1], [12] and [13]. They are calculated on the basis of the mass of the tested stack. While the welding does not affect the hysteresis losses, it causes the laminations to come into electrical contact and thus increase the eddycurrent losses. The specific power losses appear as heat and thus raise the temperature of the electromotor. On the other hand, the permeability is the degree of magnetization that a material achieves in response to an applied magnetic field. The relative permeability is the ratio between the permeability of the material and that of free space."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Fig. 4. Magnified image of the lamination's surface of sample a) A, b) B, and c) C; the circles indicate the gaps between the laminations",
+            "paragraphs": [
+                "For measuring purposes we used a Brockhaus Messtechnik MPG 100D AC/DC system that is widely used in the automotive industry. The measurements on this system were made according to the ISO standard IEC 60404. More details of the magnetic measurements can be found elsewhere, e.g., in [14] and [15]. To determine the magnetic properties of the samples A, B and C, they were wrapped with 257 primary and secondary coils, while the real stator was wrapped with 90 primary and secondary coils. During the measurements we used flux densities of 1.5 T. Since high-end applications usually work at frequencies higher than 50 Hz, we used frequencies of 50 and 400 Hz in our testing."
+            ],
+            "subsections": [
+                {
+                    "title": "Breaking-Force Measurement",
+                    "paragraphs": [
+                        "The tensile strength of a weld is only important until the winding of the copper wire. After the winding, the welds lose their functionality and only represent a distraction that affects the magnetic properties of the electromotor [15]. This does not mean that the welds can have cracks or other errors. It only means that the welds should be as small as possible, while still being mechanically acceptable. In this context we tested our samples with a modified breaking-force test.",
+                        "For the testing of the welds we used an Instron 4206 tensile system. We attached the samples to the lower and upper plates of the tensile system with a two-component adhesive and tore them apart with a constant speed of 5 mm/min. Load was applied in the longitudinal direction of the samples. In this way we measured the breaking force at which the first of four welds on the sample was broken, i.e., it has not joined the laminations anymore. For all the small sample stators we decided that the welds were acceptable if they sustain a breaking force larger than 100 N. This force threshold was set on the basis of production demand."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "RESULTS AND DISCUSSION",
+            "paragraphs": [
+                "The advantage of our new, adaptive method is clear from Fig. 5, which shows a comparison between the weld produced using classic, pulsed welding (Fig. 5a) and the weld produced using our new, adaptive, pulsed-laser welding system (Fig. 5b). In the case of the classic, pulsed method, a large overlap of the laser pulses is seen. On the other hand, our new method only irradiates the processing pulses at the gaps between the laminations. Thus, in this case a significantly smaller total-pulse energy is necessary. For this particular example (presented in Fig. 5), our method uses only 23% of the total-pulse energy in comparison with the classic, pulsed-welding method. Typical cross-section in the transversal direction (e.g., see the broken line A-A in Fig. 5b) is presented in Fig. 6. In this particular case the pulse energy was 4.7 J and the thickness of the laminations was 0.5 mm (sample B). The shape of the weld suggests that our laser parameters were close to the threshold for the keyhole welding. "
+            ],
+            "subsections": [
+                {
+                    "title": "Total-Pulse Energy Reduction",
+                    "paragraphs": [
+                        "The dependence of the breaking force as a function of the total-pulse energy for all three samples and for both laser-welding techniques, i.e., for our new, adaptive pulsed-laser welding and for the classic, pulsed-welding method, are presented in Figs. 7 (for samples A), 8 (for samples B) and 9 (for samples C).",
+                        "The horizontal dotted lines in all the figures show the smallest, still acceptable, breaking force (i.e., larger than 100 N), while the dashed lines show a linear fit to the measured data. From these results we can conclude that for still-acceptable mechanical properties of the weld, our method uses significantly less energy in comparison with the classic, pulsedwelding technique. The ratio:",
+                        "between the total-pulse energy needed per stillacceptable weld for our adaptive (E APW ) and for the classic, pulsed-welding (E PW ) method equals around 21% for samples A, 29% for samples B and 52% for samples C. Fig. 7 shows the breaking force versus totalpulse energy per weld for samples A. In this case the thicker laminations (1 mm; see Table 2) were used and the stack consisted of 15 laminations. From these results it can be concluded that our new method needs a significantly lower total-pulse energy than the classic, pulsed-welding method for welds with similar mechanical properties. For example, for the welds to sustain a tensile force of approximately 200 N, five-times less total-pulse energy per weld is needed with our new welding method (105 J per weld) in comparison with the classic, pulsed technique (490 J per weld). When using a lower total-pulse energy per weld than 105 J, the laminations in the stack welded with our method do not stand together. Similarly, the lowest total-pulse energy per weld with the classic method is 490 J; if a lower total-pulse energy is used with this method, the stack decays into laminations as soon as it is taken out of the clamping tool.",
+                        "The dependence of the breaking force on the total-pulse energy for the samples B is shown in Fig. 8. Here, the stacks were assembled from 33 laminations with a thickness of 0.5 mm (see Table 2). In this case the lowest total-pulse energy per still-acceptable weld is around 100 J for our method and 350 J for the classic, pulsed-welding method. So, our new method in this case enables stillacceptable welds with only 29% of the total-pulse energy of the classic method. On the other hand, for the same breaking force (around 200 N), our method uses around 2 to 3 times less total-pulse energy than the classic welding method for the laminations of type B.",
+                        "Fig. 9 shows the dependence of the breaking force as a function of the total-pulse energy per weld for samples C. Here, thinner laminations with a thickness of 0.35 mm were used and the stack consisted of 47 laminations. In this case the lowest total-pulse energy per still-acceptable weld (i.e., a weld retaining a tensile force larger than 100 N and without cracks or other errors after the welding) equals 215 J for our adaptive method and 415 J for the classic, pulsedwelding method. Thus, the ratio \u03b7 [see Eq. ( 1)] in this case equals 52%. At this point it should be noted that the samples C are made from the material M330-35A that is less appropriate for welding due to its high Si content (see Table 2). For this reason, the welds obtained with the classic method do not hold the stack together for total-pulse energies lower than approximately 400 J. If a lower energy is used, the stack decays into individual laminations as soon as it is taken out of the clamping tool. From the results presented in Figs. 7 to 9 the trend of \u03b7 is clearly visible. When the lamination thickness goes to zero, the ratio \u03b7 goes to 1. The reason for this lies in the fact that for the laminations thinner than the spot size, there is no difference between our new, adaptive method and the classic, pulsed-welding method, since in both cases an overlapping of the successive pulses is achieved. On the other hand, our method gives significantly better results in the context of the total-pulse energy per weld reduction in the case of thick laminations (e.g., for samples A, where the thickness of the laminations is 1 mm)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Magnetic Properties of the Welds",
+                    "paragraphs": [
+                        "The influence of the welds produced by our adaptive, pulsed-laser welding and classic, laser pulsed welding on (i) the specific power losses and (ii) the relative permeability was examined by measuring the magnetic properties of the electrical-lamination samples as well as of a real stator stack. Different authors [14] and [16] compared the welded and non-welded stacks and showed that the specific power losses increase, while the relative permeability decreases, when the stack is welded.",
+                        "The specific power losses at a frequency of 400 Hz and a flux density 1.5 T as a function of the total-pulse energy per weld for all three electricallamination samples are shown in Figs. 10a (for samples A), 10b (for samples B) and 10c (for samples C). From our results it can be concluded that there is no significant difference in the specific power losses between classic welded stacks (the full triangles in Fig. 10) and the stacks welded using our new, adaptive method (the full rectangles in Fig. 10). The difference in this case is within \u00b11%, which is also the measurement uncertainty of the measuring system. We can explain this result with the size of the welds. Since the samples are small, their welds do not significantly influence the magnetic properties of the sample stacks.",
+                        "However, we developed our method for welding the real stator stacks that are used in the electromotors of vehicles. Thus, we also tested the magnetic properties of a real stator stack welded with our new welding method. In contrast to the electricallamination samples, a real sample of a stator stack is much larger, as already described in Subsection 3.3.",
+                        "All the tested real samples had fully acceptable mechanical properties. In the case of a real stator stack that means that the welds were strong enough to hold the laminations together during the winding of the copper wire. The welds in all the tested real samples were also free of cracks and other failures.",
+                        "The specific power losses and the relative permeability as a function of the total-pulse energy for the real stator sample are presented in Fig. 11. Here, the full rectangles show the measurements obtained from the stacks that were welded with our new, adaptive, pulsed-laser welding method, while the full triangles correspond to the samples welded with a classic,continuous welding technique (already used in serial production). All the measurements were obtained at a frequency of 50 Hz and a flux density 1.5 T."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Fig. 11. a) the specific power losses (PS), and b) the relative permeability (\u00b5r) as a function of the total-pulse energy for a real stack welded with the classic, continuous-welding technique (triangles) and with our new, adaptive pulsed method (squares)",
+            "paragraphs": [
+                "From the results in Fig. 11a it can be concluded that our new method results in around 10% lower specific power losses than the classic, continuous welding method and needs only 70 % of the totalpulse energy compared to the classic method. Similarly, Fig. 11b reveals that our new method provides a 16% higher permeability of the stator stack than the classic technique. Here, we should also note that the classic, continuous welding technique is already used in serial production and therefore already optimized, while there is still space for further parameter optimization in our new, adaptive, pulsedwelding method.",
+                "The results in Fig. 11 confirm our hypothesis that the adaptive welding technique (i) results in significantly lower specific power losses than the already-established continuous welding technique, and (ii) it ensures acceptable mechanical properties with a significantly less total-pulse energy weld."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "CONCLUSIONS",
+            "paragraphs": [
+                "We have developed and presented an experimental system for the new technique of adaptive, pulsed-laser welding. The system is based on an on-line monitoring of the gap positions between the electrical laminations and thus enables the efficient welding of the laminated electrical cores for electromotors.",
+                "The results of visual, mechanical and magnetic testing on two different groups of samples, i.e., the small experimental stator samples and the real stator samples, revealed that (i) our system is capable of producing laser welds that are made with up to five times less total-pulse energy per a weld, while maintaining equal mechanical strength in comparison with the classic, pulsed-welding technique, and (ii) that adaptive, pulsed welds produce lower specific power losses and increase the relative permeability of the samples in comparison with conventional, continuous laser welding that is already used in industrial production.",
+                "Thus, our method brings advantages to the production as well as to the final product and can be easily implemented in serial manufacturing."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "ACKNOWLEDGMENT",
+            "paragraphs": [
+                "This research has been partly supported and financed by the European Union, European Social Fund, 2009."
+            ],
+            "subsections": []
+        }
+    ]
+}

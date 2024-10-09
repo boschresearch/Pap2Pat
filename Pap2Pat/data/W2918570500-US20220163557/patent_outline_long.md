@@ -1,0 +1,125 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce atom interferometers
+
+## SUMMARY OF THE EMBODIMENTS
+
+- motivate limitations of atom interferometers
+- motivate limitations of optomechanical resonators
+- introduce optomechanical inertial reference mirrors
+- describe hybrid interferometer operation
+- highlight advantages of hybrid interferometer
+- describe compactness and robustness
+- list applications of hybrid interferometer
+- describe vacuum compatibility and heat emission
+- describe fabrication from non-magnetic materials
+- describe formation of optomechanical inertial reference mirror
+- describe embodiment with bridges and reflector
+- describe hybrid interferometry methods
+
+## DETAILED DESCRIPTION OF THE EMBODIMENTS
+
+- introduce optomechanical inertial reference mirror
+- describe hybrid interferometer
+- explain atom interferometer operation
+- motivate matter wave phase shift
+- describe light pulse properties
+- explain matter wave splitting and recombination
+- describe measurement cycle of atom interferometer
+- explain phase shift measurement
+- describe optomechanical resonator structure
+- explain Fabry-Perot cavity operation
+- describe fringe excursion measurement
+- explain simultaneous measurement of external acceleration
+- describe frame acceleration response
+- explain test mass displacement
+- describe optomechanical resonator signal measurement
+- explain reflector attachment to substrate
+- describe reflective coating deposition
+- explain alternative reflector designs
+- describe advantages of hybrid interferometer
+- explain short-term measurement characteristics
+- describe long-term measurement characteristics
+- explain dynamic range of optomechanical resonator
+- describe phase correction using atom interferometer
+- explain continuous output of optical resonator signal
+- describe alternative optomechanical inertial reference mirror design
+- explain direct measurement of test mass acceleration
+- describe mechanical transfer function of optomechanical inertial reference mirror
+- explain removal of top leg for optical access
+- describe deposition of reflector on test mass surface
+- explain importance of flat wavefronts for atom interferometer accuracy
+- identify trade-off between spot size and test mass dimensions
+- constrain test mass size and mechanical response
+- evaluate trade-offs using computer modeling
+- adjust spring constants of bridges
+- select material properties for optomechanical inertial reference mirror
+- form optomechanical inertial reference mirror using fabrication process
+- lap and polish top surface
+- form non-planar or angled top surface
+- form v-grooves on top surface
+- form Fabry-Perot cavity with free-space mirrors
+- replace fiber-optic-based mirror with free-space optic
+- configure optomechanical inertial reference mirror for vacuum or ambient conditions
+- place optomechanical inertial reference mirror outside or inside vacuum system
+- use different type of optical interferometer
+- incorporate retroreflecting mirror onto test mass
+- compare optomechanical inertial reference mirror 300 to optomechanical inertial reference mirror 100
+- affix optomechanical resonator to substrate
+- model bond as a spring
+- configure hybrid interferometer in open-loop or closed-loop configuration
+- combine measurements from optomechanical resonator and atom interferometer
+- adjust phase of light pulse
+- operate atom interferometer with different types of light pulses
+- measure horizontal acceleration
+- form spatially-separated interaction zones
+- launch atoms perpendicularly to gravity
+- implement hybrid interferometer in horizontal orientation
+- intersect light pulses with horizontal line of motion
+- implement Ramsey-Borde interferometer
+- use optomechanical inertial reference mirror in Bragg-diffraction atom interferometer
+- generate optical lattice
+- diffract matter waves via Bragg diffraction
+- measure acceleration of retroreflecting mirror
+- combine optomechanical resonator with atom interferometer
+- describe experimental demonstration of optomechanical atom-interferometric hybrid device
+- combine rubidium Raman-type atom interferometer with optomechanical resonator
+- measure atom-interferometer phase
+- describe optomechanical resonator prototype
+- specify Fabry-Perot cavity characteristics
+- describe cantilever readout setup
+- illustrate spacetime diagram of atom interferometer
+- plot raw data from atom interferometer
+- plot optical resonator signal
+- describe post-correction of raw data
+- plot corrected data with sinusoidal fit
+- plot short-term acceleration instability
+- describe hybrid device operation
+- measure gravitational acceleration
+- describe acceleration noise of optomechanical resonator
+- discuss potential improvements
+- plot expected performance of hybrid device
+- describe method embodiments
+- measure acceleration of frame
+- measure acceleration of test mass
+- correct measured acceleration
+- describe alternative method embodiments
+- measure acceleration of frame with atom interferometer
+- describe combination of features
+- specify optomechanical inertial reference mirror
+- describe bridges between test mass and frame
+- specify reflective faces
+- describe optical coatings and sub-wavelength gratings
+- specify fiber-optic-based mirrors
+- describe volume of optomechanical inertial reference mirror
+- specify optomechanical resonator
+- describe substrate and bridges
+- specify reflective faces and optical coatings
+- describe fiber-optic-based mirrors and sub-wavelength gratings
+- specify substrate attachment methods
+- describe monolithic element formation
+- specify volume of optomechanical resonator
+- note scope of invention
+

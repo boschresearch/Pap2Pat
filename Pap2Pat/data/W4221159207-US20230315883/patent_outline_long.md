@@ -1,0 +1,141 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING PRIOR DISCLOSURES BY THE INVENTOR OR JOINT INVENTOR
+
+- disclose prior public disclosures
+
+## BACKGROUND
+
+- introduce entity resolution
+- explain private set intersection and local sensitivity hashing
+
+## SUMMARY
+
+- introduce private data intersection method
+- perform private set intersection
+- remove identical intersecting records
+- compute locality sensitive hash values
+- jointly perform private set intersection
+- determine matching records
+- introduce computer program product
+- describe program instructions
+- introduce computer system
+
+## DETAILED DESCRIPTION
+
+- introduce entity resolution and private set intersection (PSI)
+- motivate need for privacy preserving record-linkage
+- describe limitations of existing protocols
+- introduce Locality-Sensitive-Hashing (LSH) algorithm
+- describe properties of LSH
+- propose using LSH for private data matching
+- describe application of PSI to LSH
+- introduce band signatures and their role in LSH
+- describe how to determine matching records using LSH
+- propose using optimization methods to improve accuracy
+- describe how to compute Jaccard similarity index
+- introduce shingles and their role in computing Jaccard index
+- describe how to compute size of intersection and union
+- propose using PSI to privately compute Jaccard index
+- describe system, method, and computer program product embodiments
+- introduce computer readable storage medium
+- describe types of computer readable storage medium
+- propose using network to download computer readable program instructions
+- describe how computer readable program instructions are executed
+- introduce assembler instructions, ISA instructions, and machine instructions
+- describe how computer readable program instructions are stored
+- propose using electronic circuitry to execute computer readable program instructions
+- describe flowchart illustrations and block diagrams
+- introduce functional block diagram of network computing environment
+- describe user device and its components
+- introduce user interface and application
+- describe graphical user interface and script/API
+- propose using application to securely find matching records
+- describe server and its components
+- introduce private data intersection program
+- describe how server provides resources to computing devices
+- propose using cloud computing environment
+- describe clustered computers and components
+- introduce network computing environment
+- describe user device and server communication
+- propose using network to interconnect devices
+- describe modifications and variations to embodiments
+- conclude description of present invention
+- describe system architecture
+- introduce server components
+- describe private data intersection program
+- outline data processing
+- explain informed consent
+- describe data storage
+- outline storage device implementation
+- describe data record database
+- explain data preprocessing
+- describe data cleaning
+- outline data integration
+- describe data reduction
+- explain data transformation
+- describe joining fields
+- outline canonicalization process
+- describe cyclic shingles
+- explain Jaccard similarity
+- describe private set intersection
+- outline PSI on record fields
+- describe locality sensitive hash
+- explain LSH computation
+- describe min-hash values
+- outline band signature creation
+- describe LSH tuple creation
+- explain match declaration
+- describe Jaccard similarity coefficient
+- outline match control
+- describe Jaccard threshold selection
+- explain probability of match
+- describe optimization problem
+- outline empirical search
+- describe analytical formula for b and r
+- introduce private data intersection program
+- describe purpose of private data intersection
+- motivate private data intersection
+- describe embodiment of private data intersection
+- introduce PSI protocol
+- describe reordering process in PSI protocol
+- describe combining cardinality computation with scoring scheme
+- introduce private data intersection program for multiple parties
+- describe generating hashes from records
+- describe applying secret key to hashes
+- describe distributing signed collections
+- describe searching for band signatures
+- introduce configuring rules for record matching
+- describe applying rules for record matching
+- describe applying screen candidate with exact value
+- describe applying hash algorithms and PSI
+- describe removing candidates from database
+- describe using similarity-based PSI
+- introduce flow chart diagram for determining intersecting data
+- describe pre-processing of record sets
+- describe performing private set intersection
+- describe computing locality sensitive hash values
+- describe jointly performing private set intersection
+- describe determining matching records based on similarity score
+- introduce table data for determining intersecting pairs
+- describe generating min-hash values
+- describe grouping min-hashes into bands
+- describe forming LSH for compared pair of records
+- describe using separate hash to hash signatures
+- describe considering strings in same bucket as similar
+- introduce block diagram of computing device
+- describe components of computing device
+- describe operating computing device
+- describe storing program instructions
+- describe using removable media
+- describe providing input and output
+- describe displaying data to user
+- introduce cloud computing environment
+- describe characteristics of cloud computing
+- describe service models of cloud computing
+- describe deployment models of cloud computing
+- introduce block diagram of cloud computing environment
+- describe communicating with cloud computing nodes
+- introduce functional abstraction model layers
+- describe layers and functions of cloud computing environment
+

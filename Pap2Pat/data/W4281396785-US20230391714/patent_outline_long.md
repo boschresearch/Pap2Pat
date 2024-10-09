@@ -1,0 +1,158 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce HCN channels
+- motivate MDD treatment
+- describe HCN channel structure
+- summarize TRIP8b-HCN interaction
+- discuss HCN channel regulation
+- introduce virtual high-throughput screen
+
+## SUMMARY
+
+- disclose compounds as TRIP8b-HCN inhibitors
+- define formula I
+- describe X substituents
+- describe Y substituents
+- describe Z substituents
+- describe R² substituents
+- describe biological activities
+- disclose pharmaceutical compositions
+- disclose methods for treating MDD
+
+## DETAILED DESCRIPTION
+
+- define terms used throughout the application
+- specify meaning of "a", "an", and "the"
+- define "about", "approximately", "substantially", and "significantly"
+- explain meaning of "include" and "comprising"
+- define "subject" and "subject in need of treatment"
+- specify meaning of "effective amount"
+- define "modulate"
+- introduce chemical entities and uses
+- explain use of asterisk and plus sign in chemical notation
+- define "alkyl"
+- define "alkylene"
+- define "haloalkyl"
+- define "heteroalkyl"
+- define "alkenyl"
+- define "alkynyl"
+- define "cycloalkyl"
+- define "cycloheteroalkyl"
+- define "cycloalkylene"
+- define "partially unsaturated carbocyclyl"
+- define "aryl"
+- define "heterocyclyl"
+- define "amine" and "amino"
+- define "alkoxy" and "alkoxyl"
+- define "ether"
+- define "carbonyl"
+- define "oxo"
+- define "carboxamido"
+- define "carboxy"
+- define "amide" and "amido"
+- discuss stereoisomers
+- introduce inhibitors of TRIP8b and uses
+- describe compounds of formula I
+- specify embodiments of X in formula I
+- specify embodiments of R² in formula I
+- define compounds of formula I
+- specify m values
+- specify R1 values
+- specify W values
+- specify Y values
+- specify Z values
+- specify R2 values
+- specify R3 values
+- specify R4 values
+- describe pharmaceutical compositions
+- describe methods for treating diseases
+- describe biological activities
+- describe TRIP8b-HCN1 interaction
+- describe concentration ranges
+- describe toxicity
+- describe pharmaceutical composition formulation
+- describe administration methods
+- describe treatment methods
+- describe dose ranges
+- describe minimal and maximal dose levels
+- describe pharmaceutical composition dosage forms
+- list pharmaceutical composition components
+- describe filling agents
+- describe binding agents
+- describe lubricants
+- describe sweeteners
+- describe flavoring agents
+- describe preservatives
+- describe diluents
+- describe disintegrants
+- describe effervescent agents
+- describe pharmaceutical composition formulation
+- describe oral administration
+- describe pharmaceutical composition preparation
+- describe administration routes
+- describe oral administration forms
+- describe transdermal administration
+- describe topical administration
+- describe ophthalmic administration
+- describe nasal administration
+- describe parenteral administration
+- list compounds with TRIP8b-HCN1c40 Alphascreen IC50 activity
+
+### Examples
+
+- introduce in silico screening
+- filter out promiscuous molecules
+- prepare protein for docking simulations
+- analyze atomic structure of TRIP8b
+- correct protein structure
+- generate grid cube for docking
+- perform virtual screening
+- analyze docking results
+- select compounds for biochemical testing
+- perform biochemical screening
+- determine IC50 value
+- validate binding mode using STD-NMR
+- perform STD-NMR experiment
+- analyze STD-NMR results
+- determine solubility of NUCC-0200590
+- prepare salt forms of NUCC-0200590
+- compare solubility of salt forms
+- determine microsomal stability
+- describe synthetic route for compounds
+- provide exemplary synthetic route for NUCC-0200590
+- alkylate 5-bromosalicylaldehyde
+- perform reductive amination
+- hydrolyze ester
+- perform amide coupling
+- perform Suzuki coupling
+- describe synthesis of 2-(4-bromo-2-((4-methylpiperazin-1-yl)methyl)phenoxy
+- describe synthesis of 2-(4-bromo-2-((4-methylpiperazin-1-yl)methyl)phenoxy
+- describe synthesis of N-(4-chlorobenzyl)-2-((4′-fluoro-3-((4-methylpiperaz
+- describe synthesis of N-(4-chlorobenzyl)-2-((4′-fluoro-3-((4-methylpiperaz
+- describe synthesis of N-(4-chlorobenzyl)-2-((4′-fluoro-3-((4-methylpiperaz
+- describe synthesis of N-(4-chlorobenzyl)-2-((4′-fluoro-3-((4-methylpiperaz
+- describe STD-NMR experiment
+- describe cellular assays
+- describe cell viability assays
+- describe flow cytometry
+- describe HEK electrophysiology
+- describe slice electrophysiology
+- describe immunohistochemistry
+- describe NanoBiT live cell protein-protein interaction assay
+- describe AlphaScreen assay
+- describe TRIP8b-HCN interaction
+- describe HCN channel trafficking
+- describe TRIP8b isoforms
+- describe HCN isoforms
+- describe cell-based assays
+- describe FA version of compound
+- describe TRIP8b(1a-4) isoform
+- describe HCN1 and HCN2 subunits
+- describe electrophysiological properties
+- describe cell viability
+- describe surface expression evaluation
+- describe HEK cell transfection
+- describe statistical analyses
+

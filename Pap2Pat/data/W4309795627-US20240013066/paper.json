@@ -1,0 +1,195 @@
+{
+    "id": "https://semopenalex.org/work/W4309795627",
+    "authors": [
+        "Igor Melnyk",
+        "Payel Das",
+        "Pierre Dognin"
+    ],
+    "title": "Knowledge Graph Generation From Text",
+    "date": "2022-11-18",
+    "abstract": "In this work we propose a novel end-to-end multi-stage Knowledge Graph (KG) generation system from textual inputs, separating the overall process into two stages. The graph nodes are generated first using pretrained language model, followed by a simple edge construction head, enabling efficient KG extraction from the text. For each stage we consider several architectural choices that can be used depending on the available training resources. We evaluated the model on a recent WebNLG 2020 Challenge dataset, matching the state-of-the-art performance on text-to-RDF generation task, as well as on New York Times (NYT) and a large-scale TekGen datasets, showing strong overall performance, outperforming the existing baselines. We believe that the proposed system can serve as a viable KG construction alternative to the existing linearization or sampling-based graph generation approaches. Our code can be found at https://github.com/IBM/Grapher",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Automatic Knowledge Graph (KG) construction is an active research area aiming at representing the information present in abundant textual corpora in a more organized, structured and compressed form, which can be efficiently utilized in a variety of downstream applications, including reasoning, decision making, question answering, to name a few. However, this is a challenging problem due to the inherent non-unique graph representation (graph with N nodes can have N ! equivalent adjacency matrices), complex node and edge structure (node set is not fixed and edges are not binary), large output spaces (for graph with N nodes the system may need to output up to N 2 edges to specify its structure), lack of efficient architectures specialized for graph-structured generation output and limited parallel training data."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Generate Nodes",
+            "paragraphs": [
+                "Output Graph"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Input Text",
+            "paragraphs": [
+                "Figure 1: Grapher overview. For a given text input, in the first step we generate graph nodes, leveraging the representation power of pre-trained language models, fine-tuned on the task of entity extraction. In the second step, the graph edges are generated using the available entity information to construct the final graph.",
+                "The related problem of generating text from a given KG is generally more widely studied, with many suggested architectures and approaches. Among the proposed methods, some of the current state-of-the-art systems that work on small or moderately-sized graphs, (Li et al., 2020;Ribeiro et al., 2020;Agarwal et al., 2020;Xie et al., 2022), usually formulate it as a simple sequenceto-sequence problem by representing the graph in a linearized form and fine-tune the pre-trained language models (PLMs), such as T5 (Raffel et al., 2020) or BART (Lewis et al., 2020), on the task of translating the sequence of triples to the corresponding textual description.",
+                "Nevertheless, KG generation remains a popular research area, receiving attention from many communities, including natural language processing (NLP), data mining, and machine learning. Recent success of the Transformer-based language models from the NLP community (Vaswani et al., 2017;Devlin et al., 2019;Raffel et al., 2020), pretrained on large textual corpora, led to a series of works that attempted to exploit the vast amounts of learned linguistic knowledge for the downstream task of KG construction. Some of these approaches looked into a simpler problem of graph completion (Li et al., 2016;Yao et al., 2019;Malaviya et al., 2020). The drawback of these methods is that they are limited to the task of extending existing graphs by local neighborhood modifications and are not suitable for building the entire global graph structures. Alternatively, other works (Petroni et al., 2019;Roberts et al., 2020;Jiang et al., 2019;Shin et al., 2020;Li and Liang, 2021) proposed to query the pre-trained models to extract the learned factual and commonsense knowledge. The idea is to prompt the language model to predict the masked objects in cloze sentences describing the partially complete triples. Similarly as before, these methods are usually only suitable for local graph patching, lacking the ability to perceive the global graph structure.",
+                "Alternatively, there are a number of works that propose to generate the entire graph structure ground up. One example is GraphRNN from You et al. (2018), which models a graph as a sequence of additions of new nodes using node-level RNN and edges using another edge-level RNN. Although promising for our task of KG construction, the sequential and greedy nature of its generation can cause sub-optimal graph structures. CycleGT of (Guo et al., 2020b) is an unsupervised method for text-to-graph and graph-to-text generation, where the graph generation part relies on off-the-shelf entity extractor followed by a classifier to predict the relationships. The reliance on external NLP pipelines breaks the end-to-end continuity of system training, potentially leading to sub-optimal results. Similarly, (Dognin et al., 2020) proposed DualTKB employing unsupervised cycle loss to enable the graph-text translation in both directions. However, their method was applied only to single sentence-single triple generation, limiting applicability for larger graphs. Other approaches, such as BT5 from (Agarwal et al., 2020) proposed to utilize large pre-trained T5 model to generate KG in a linearized form, where the object-predicatesubject triples are concatenated together and the entire text-to-graph problem is viewed as sequenceto-sequence modeling. The potential issue with this approach is that the graph linearization is not unique and inefficient due to the repetition of graph components multiple times, leading to long sequences and increased complexity. (Lu et al., 2022) is another text-to-structure method, however it uses predefined schema (e.g., for entity or triplet extraction), while our method is schema-free and generalizes to any text form of nodes and edges. Finally, (Wang et al., 2020) proposed MaMa for KG construction, where entities and relationships are first matched using the attention weight matrices from the forward pass of the LM. Those are then mapped to the existing KG schema to generate the final graph.",
+                "The proposed system: Grapher Analyzing the shortcomings of the existing methods, in this work we propose to address them with a novel Knowledge Graph construction system which we call Grapher, presented schematically in Fig. 1. Given input text, the graph generation is split into two steps. In the first step, we leverage the representation power of pre-trained language models, e.g., T5 (Raffel et al., 2020), fine-tuned on the task of entity (graph nodes) extraction, while in the second stage the relationships (graph edges) are generated using the available entity information. There are three main properties of Grapher: (i) The use of state-of-theart language models pre-trained on large textual corpora, used for node generation is key to the algorithm's performance as it lays out the foundation for the entire graph. The available parallel data for learning the text to graph translation is usually small, therefore training custom-built entity extraction architectures from scratch on this limited data is inferior to fine-tuning the already pretrained Transformer-based language models. (ii) The partitioning of graph construction process into two steps ensures efficiency that each node and edge is generated only once, which is in contrast to graph linearization approaches, e.g., (Agarwal et al., 2020) (Dognin et al., 2021), whose graph sequence representation is non-unique and can be inefficient. (iii) Finally, the entire system is end-toend trainable, where the node and edge generation are optimized jointly, enabling efficient information transfer between the two modules, avoiding the need of any external NLP pipelines such as entity/relation extraction, co-reference resolution, etc. We evaluate the proposed Grapher on three datasets: the WebNLG+ 2020 Challenge (Ferreira et al., 2020) matching state-of-the-art performance for Text-to-RDF generation as well as on NYT (Riedel et al., 2010) and a recent large-scale TEK-GEN (Agarwal et al., 2021) dataset showing strong results outperforming existing baselines."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Method",
+            "paragraphs": [
+                "In this Section we cover the details of the proposed approach, first describing the functionality of the node generation in Section 2.1, followed by the edge generation in Section 2.3 and the discussion on edge imbalance problem in Section 2.4. In Fig. 2 we summarize all the architectural choices of the Grapher system. The branches marked with a red cross denote the setups which in our earlier evaluations did not show advantage over the neighboring branch, e.g., the focal loss underperformed the sparse edge training for the text nodes combined with edge generation head. The branches with green check marks are the ones we select for further evaluation. ",
+                "a W Z a P z J j V K g s 6 1 U y y Q T e l K e 9 6 r q z C c c P 8 9 z G 9 z 0 u v F 5 N 7 r u t S + + 1 F n v s Q / s I + u w m H 1 i F + w 7 u 2 J 9 x t k v 9 s B + s 8 f G n + B 9 c B K c r l u D R j 1 z z D Y q 6 P w F e a D B R g = = < / l a t e x i t > 4 < l a t e x i t s h a 1 _ b a s e 6 4 = \" p h",
+                "Figure 2: Grapher architectural choices. -setups that did not show advantage or did not perform well during preliminary evaluations, -selected for further evaluation , -best performing system"
+            ],
+            "subsections": [
+                {
+                    "title": "Node Generation: Text Nodes",
+                    "paragraphs": [
+                        "Given text input, the objective of this module is to generate a set of unique nodes, which define the foundation of the graph. As we mentioned in Section 1, the node generation is key to the successful operation of Grapher, therefore for this task we use a pre-trained encoder-decoder language model (PLM), such as T5. Using a PLM, we can now formulate the node generation as a sequence-to-sequence problem, where the system is fine-tuned to translate textual input to a sequence of nodes, separated with special tokens, PAD NODE 1 NODE_SEP NODE 2 \u2022 \u2022 \u2022 /S , where NODE i represents one or more words.",
+                        "As seen in Fig. 3, in addition to node generation, this module supplies node features for the downstream task of edge generation. Since each node can have multiple associated words, we greedydecode the generated string and utilize the separation tokens NODE_SEP to delineate the node boundaries and mean-pool the hidden states of the decoder's last layer. Note that in practice we fix upfront the number of generated nodes and fill the missing ones with a special NO_NODE token. Here the input text and the query vectors (in the form of embedding matrix) is transformed into node features. Those are then decoded into graph nodes using node generation head (e.g, LSTM or GRU). The same features are also sent to the edge construction module."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Node Generation: Query Nodes",
+                    "paragraphs": [
+                        "One issue with the above approach is ignoring that the graph nodes are permutation invariant, since any permutation of the given set of nodes should be treated equivalently. To address this limitation, we propose a second architecture, inspired by DETR (Carion et al., 2020). See Fig. 4 for an illustration.",
+                        "Learnable Node Queries The decoder receives as input a set of learnable node queries, represented as an embedding matrix. We also disable causal masking, to ensure that the Transformer is able to attend to all the queries simultaneously. This is in contrast to the traditional encoder-decoder architecture that usually gets as an input embedding of the target sequence with the causal masking during training or the embedding of the self-generated sequence during inference. The output of the decoder can now be directly read-off as N (number of nodes) d-dimensional node features F n \u2208 R d\u00d7N and passed to a prediction head (LSTM or GRU) to be decoded into node logits L n \u2208 R S\u00d7V \u00d7N , where S is the generated node sequence length and V is the vocabulary size.",
+                        "Permutation Matrix To avoid the system to mem-orize the particular target node order and enable permutation-invariance, the logits and features are permuted as",
+                        "for s = 1, . . . , S and where P \u2208 R N \u00d7N is a permutation matrix obtained using bipartite matching algorithm between the target and the greedy-decoded nodes. We used cross-entropy loss as the matching cost function. The permuted node features F n are now target-aligned and can be used in the edge generation stage."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Edge Generation",
+                    "paragraphs": [
+                        "The generated set of node features from previous step is then used in this module for the edge generation. Fig. 5 shows a schematic description of this step. Given a pair of node features, a prediction head decides the existence (or not) of an edge between their respective nodes. One option is to use a head similar to the one in Section 2.2 (LSTM or GRU) to generate edges as a sequence of tokens.",
+                        "The other option is to use a classification head to predict the edges. The two choices have their own pros and cons and the selection depends on the application domain. The advantage of generation is the ability to construct any edge sequence, including ones unseen during training, at the risk of not matching the target edge token sequence exactly.",
+                        "On the other hand, if the set of possible relationships is fixed and known, the classification head is more efficient and accurate, however if the training has limited coverage of all possible edges, the system can misclassify during inference. We explore both options in Section 4. Note that since in general KGs are represented as directed graphs, it is important to ensure the correct order (subject-object) between two nodes. For this, we propose to use a simple difference between the feature vectors: F n (:, i) -F n (:, j) for the case when the node i is a parent of node j. We experimented with other options, including concatenation and adding position information but found the difference being the most effective, since the model learns that F n (:, i) -F n (:, j) implies i \u2192 j, while F n (:, j) -F n (:, i) implies j \u2192 i."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Imbalanced Edge Distribution",
+                    "paragraphs": [
+                        "Observe that since we need to check the presence of edges between all pairs of nodes, we have to generate or predict up to N 2 edges, where N is the number of nodes. There are small savings that can be done by ignoring self-edges as well as ignoring edges when one of the generated nodes is the NO_NODE token. When no edge is present between the two nodes, we denote this with a special token NO_EDGE . Moreover, since in general the number of actual edges is small and NO_EDGE is large, the generation and classification task is imbalanced towards the NO_EDGE token/class.",
+                        "To remedy this, we propose two solutions: one is a modification of the cross-entropy loss, and the other is a change in the training paradigm.",
+                        "Focal Loss Here we replace the traditional Cross-Entropy (CE) loss with Focal (F) loss (Lin et al., 2020), whose main idea is down-weight the CE loss for well-classified samples ( NO_EDGE ) and increase the CE loss for mis-classified ones, as illustrated below for a probability p corresponding to a single edge and t is a target class:",
+                        "where \u03b3 \u2265 0 is a weighting factor, such that \u03b3 = 0 makes both losses equivalent. The application of this loss to the classification head is straightforward while for the generation head we modify it by first accumulating predicted probabilities over the edge sequence length to get the equivalent of p t and then apply the loss. In practice, we observed that Focal loss improved the accuracy for the classification head, while for the generation head the performance did not change significantly.",
+                        "Sparse Edges To address the edge imbalance problem another solution is to modify the training settings by sparsifying the adjacency matrix to remove most of the NO_EDGE edges as shown in Fig. 6, therefore re-balancing the classes artificially. Here, we keep all the actual edges but then leave only a few randomly selected NO_EDGE ones. Note that this modification is done only to improve efficiency of the training, during inference the system still needs to output all the edges, as in Fig. 5, since their true location is unknown. In practice, besides seeing 10-20% improvement in accuracy, we also observed about 10% faster training time when using sparse edges as compared to using full adjacency matrix."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Data",
+            "paragraphs": [
+                "To evaluate Grapher's performance and compare it to the baselines, we use three datasets: two smallscale datasets: WebNLG+ 2020 (Ferreira et al., 2020) and NYT (Zeng et al., 2018), and a largescale TEKGEN dataset from (Agarwal et al., 2021)."
+            ],
+            "subsections": [
+                {
+                    "title": "WebNLG+ 2020",
+                    "paragraphs": [
+                        "The WebNLG+ corpus v3.0 is part of the 2020 WebNLG Challenge that offers two tasks: the generation of text from a set of RDF triples (subjectpredicate-object), and the opposite task of semantic parsing for converting textual descriptions into sets of RDF triples. We preprocess the data to remove any underscores and surrounding quotes, in order to reduce noise in the data. Moreover, due to a mismatch of T5 vocabulary and the WebNLG dataset, some characters in WebNLG are not present in T5 vocabulary and ignored during tokenization. We normalize the data mapping the missing characters to the closest available, e.g., '\u00f8' is converted to 'o', or '\u00e3' is mapped to 'a'.",
+                        "To prepare data for Grapher training, we split the triples into nodes (extracting subjects  For edges, each element i, j of the adjacency matrix is filled with PAD EDGE i,j /S if there is an edge between NODE i and NODE j or with PAD NO_EDGE /S otherwise. In case sparse edges are used, we first sparsify the adjacency matrix, and then flatten it to a sequence of edges, similar as for the nodes. Finally, for the classification edge head we scan the training set and collect all the unique predicates to be the edge class list. There are 407 edge classes in our train split, including the NO_EDGE class."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "TEKGEN",
+                    "paragraphs": [
+                        "TEKGEN is a large-scale parallel text-graph dataset built by aligning Wikidata KG to Wikipedia text, and its statistics is shown in Table 2.",
+                        "The data was preprocessed by filtering out triples containing more than 7 predicates, with triple components longer than 100 characters, and with corresponding textual descriptions longer than 200 characters. This was done to match the settings of the WebNLG data and to reduce the computational complexity of the scoring. The final statistics of the dataset is shown in the second row of Table 2. In total, the training set contains 1003 predicates/graph edges, which is more than twice larger than in the WebNLG dataset. Note that to match the evaluation to the baseline (Dognin et al., 2021), and to further manage the limited computational resources, we limit the Test split to 50K sentence-triples pairs."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "NYT",
+                    "paragraphs": [
+                        "As a third evaluation dataset, we selected the New York Times (NYT) corpus for our experiments, originally proposed by (Riedel et al., 2010), consisting of 1.18M sentences. We used an adapted version of the dataset pre-processed by (Zeng et al., 2018), referred as \"normal\", and contains the nonoverlapping entities (i.e., head/tail pair has only single edge connecting them), and 25 relation types (the smallest set as compared to WebNLG and TEK-GEN). Table 3 shows the statistics of the dataset."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experiments",
+            "paragraphs": [
+                "In this Section we provide details about the model setups for evaluations, describe the scoring metrics, and present the results for both datasets."
+            ],
+            "subsections": [
+                {
+                    "title": "Grapher Setup",
+                    "paragraphs": [
+                        "For our base pre-trained language model we used T5 \"large\", for a total number of 770M parameters, from HuggingFace, Inc (Wolf et al., 2020) (see Appendix for the results using other model sizes). For Query Node generation we also defined the learnable query embedding matrix M \u2208 R H\u00d7N , where H = 1024 is the hidden size of T5 model, and N = 8 is the maximum possible number of nodes in a graph. The node generation head uses single-layer GRU decoder with H GRU = 1024 followed by linear transformation projecting to the vocabulary of size 32, 128. The same GRU setup is used for the edge generation head, where we also set the maximum number of edges to be 7. Finally, for the edge classification head, we defined four fully-connected layers with ReLU non-linearities and dropouts with probability 0.5, projecting the output to the space of edge classes.",
+                        "During training we fine-tuned all the model's parameters, using the AdamW optimizer with learning rate of 10 -4 , and default values of \u03b2 = [0.9, 0.999] and weight decay of 10 -2 . The batch size was set to 10 samples using a single NVIDIA A100 GPU for WebNLG and NYT training, while for TEKGEN training we employed distributed training over 10 A100 GPUs, thus making the effective batch size of 100. Under these settings, it takes approximately 3,500 steps to complete a training epoch for WebNLG, together with the validations done every 1,000 steps, we get a model that reaches its top performance in approximately 6-7 hours. For NYT, the epoch takes approximately 4,600 mini-batches, achieving top performance in about 15 epochs (24 hours). Finally, TEKGEN, each epoch takes approximately 54,000 steps, with the evaluations done every 1,000 steps we trained and validated the model for 150,000 iterations, taking approximately 14 days of compute time."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Baselines",
+                    "paragraphs": [
+                        "To evaluate the performance of Grapher, for baselines we selected the top performing teams reported on the WebNLG 2020 Challenge Leaderboard, and briefly describe them here: Amazon AI (Shanghai) (Guo et al., 2020a) was the Challenge winner for Text-to-RDF task. They followed a simple heuristic-based approach that first does entity linking to match the entities present in the input text with the DBpedia ontology, and then query the DBpedia database to extract the relation between them. BT5 (Agarwal et al., 2020) came in second place and used large pre-trained T5 model to generate KG in a linearized form, where the object-predicate-subject triples are concatenated together and the entire text-to-graph problem is viewed as a traditional sequence-to-sequence modeling. CycleGT (Guo et al., 2020b), third place contestant, followed an unsupervised method for text-to-graph and graph-to-text generation, where the KB construction part relies on off-the-shelf entity extractor to identify all the entities present in the input text, and a multi-label classifier to predict the relation between pairs of entities. Stanford CoreNLP Open IE (Manning et al., 2014): This is an unsupervised approach that was run on the input text part of the test set to extract the subjects, relations, and objects to produce the output triplets to give a baseline performance for the WebNLG 2020 Challenge. ReGen (Dognin et al., 2021): Recent work that leverages T5 pretrained language model and Reinforcement Learning (RL) for bidirectional text-to-graph and graph-to-text generation, which, similarly to Agarwal et al. (2020), also follows the linearized graph representation approach."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Evaluation Metrics",
+                    "paragraphs": [
+                        "For scoring the generated graph, we used the evaluation scripts from WebNLG 2020 Challenge (Ferreira et al., 2020), which computes the Precision, Recall, and F1 scores for the output triples against the ground truth. In particular, since the order of generated and ground truth triples should not influence the result, the script searches for the optimal alignment between each candidate and the reference triple through all possible permutation of the hypothesis-reference pairs. Then, the metrics based on Named Entity Evaluation (Segura-Bedmar et al., 2013) were used to measure the Precision, Recall, and F1 score in four different ways. Exact: The candidate triple should match exactly the reference "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "WebNLG Results",
+                    "paragraphs": [
+                        "The main results for evaluating all the compared methods on WebNLG test set are presented in Table 4. As one can see, our Grapher system, based on Text Nodes and Class Edges, achieved on par top performance, as the ReGen (Dognin et al., 2021) model. Our system also uses the Focal loss to account for edge imbalance during training. We can also see that Grapher based on Text Nodes, where the T5-based model generates the nodes directly as a string, outperforms the alternative approach that generates the nodes through query vectors and permutes the features to get invariance to node ordering. A possible explanations is that the graphs at hand and the training data are both quite small. Therefore, the representational power of T5, pre-trained on textual corpora several orders of magnitude larger, can handle the entity extraction task much better. As we mentioned earlier, the ability to extract the nodes is very crucial to the overall success of the system, so if the querybased node generation constructs less reliable sets of nodes, the follow-up stage of edge generation will underperform as well.",
+                        "Agra Airport is in India where one of its leaders is T.S. Thakur  Comparing the edge generation versus classification, we see that the former approach already brings up the system to the level of the top two leaderboard performers, while the edge classification adds extra accuracy and makes Grapher one of the leading system. This again might be due to a smaller training set, in which case GRU edge decoder underperforms, generating less accurate edges, while the classifier just needs to predict a single class to construct an edge, making it a better alternative in the low-data scenarios.",
+                        "Finally, note that although the query-based node generation did not perform well in our evaluations, it is still informative to examine the behaviour of these vectors learned during the training. For this, we analyze the cross-attention weights in the T5 model between the node query vectors and the embeddings of the input text; the results are shown in Fig. 7. The ground truth nodes for this sentence are 'Agra Airport', 'India' and 'T.S. Thakur'. It can be seen that each query vector focuses on a set of words that can potentially become a node. For example, the first query vector emphasizes the words 'Agra', 'Airport', 'T.S.' and 'Thakur', but since the weight on the first two words is higher, the resulting feature vector sent to the Node GRU module correctly decodes it as 'Agra Airport'. The same process happens for the third and forth query vectors.",
+                        "It is also interesting to see that the rest of the queries were also correctly decoded as NO_NODE token, even though they had high attention weights on some of the words (e.g., weight of 0.2 on 'Agra' and 0.18 on 'India' for the second query vector). One potential explanation is that since no causal mask is used when feeding query vectors to the decoder, T5 has an opportunity to exchange the information between all of the query vectors across all the layers and heads. Thus, once the found nodes are assigned to specific vectors, the rest of them are suppressed and decoded into NO_NODE , irrespective of the attention weights."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "TEKGEN Results",
+                            "paragraphs": [
+                                "The results on the test set of the TEKGEN dataset (Agarwal et al., 2021) are shown in Table 5. To compute the graph generation performance, we use the same scoring functions as in WebNLG 2020 Challenge (Ferreira et al., 2020). As in Table 4, in this experiment we observe a similar pattern in which the Grapher based on Text Nodes outperforms the query-based system. At the same time we see now that the GRU-based edge decoding performs better than the classification edge head.",
+                                "Recall that for the smaller-size WebNLG dataset the classification edge head performed better, while now on the larger-size TEKGEN dataset, the GRU edge generation is more accurate, outperforming the simpler classification edge head. Also, our Grapher model now outperforms the ReGen baseline from (Dognin et al., 2021), which is based on the linearization technique to represent the graph, showing advantage of the proposed multi-stage generation approach."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "NYT Results",
+                            "paragraphs": [
+                                "Finally, Table 6 shows the results on NYT dataset. Similar as for the TEKGEN, Grapher based on text nodes and generation edges performs the best, outperforming the other architectural choices and the baseline (note that this baseline is our own implementation similar to (Dognin et al., 2021) and (Agarwal et al., 2020), which uses T5 pre-trained language model on the linearized graph representation). Comparing with the results from Tables 4 and5, we can see that for smaller datasets, the classification head has a clear advantage, while as more training data becomes available, the GRU edge decoder becomes more accurate, outperforming the classifier edge head."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this work, we proposed Grapher, a novel multistage KG generation system, that separates the overall graph generation into two steps. In the first step, the nodes are generated from the input text using a pretrained language model. The resulting node features are then used for edge generation to construct the output graph. We proposed several architectural choices for each stage. In particular, graph nodes can either be generated as a sequence of text tokens or as a set of query-based feature vectors decoded into tokens through generation head (e.g., GRU). Edges can be either generated by a GRU decoding head or selected by a classification head.",
+                "We also addressed the problem of skewed edge distribution, where the token/class corresponding to the missing edge is over-represented, leading to inefficient training. For this, we proposed to use of either the focal loss, or the sparse adjacency matrix. The experimental evaluations showed that Grapher matched state-of-the-art performance on smaller WebNLG dataset, and showed strong overall performance, outperforming existing baselines, on NYT and TEKGEN datasets, serving as a viable alternative to the existing baselines."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Limitations",
+            "paragraphs": [
+                "There are several limitations of this work that need to be addressed in the future work. The first is the computational complexity of edge generation, which is quadratic in the number of edges, and this sets the limit on the sizes of the graphs that the systems can process. Moreover, since the nodes are generated using transformer-based models, which have quadratic complexity of the attention mechanism, there is a limit on the size of the input text the system can handle. Therefore, the current algorithm is suitable for small or medium size graphs and text passages. The extension to large scale is important and will be a part of the future effort. Moreover, the current setup was applied only to English domain datasets, which is a limitation, given that there is a benefit of multi-and cross-lingual training of language systems as ours. Finally, although not being our objective, the current model is designed to handle only the direction from text to knowledge graph, and the reverse direction has not been explored yet but can be a part of the future investigation."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Appendix",
+            "paragraphs": [
+                "In Tables 7 and8 we present the results of the best performing Grapher configurations, which uses Text Nodes with either Class Edges or Gen Edges respectively, with multiple random initializations to examine the results variability on WebNLG and NYT test set. As can be seen, the scores averaged across 5 runs (with different random initializations) show low standard deviation, further validating Grapher's stable performance.  In Tables 9 and10 we also present additional experiments by varying the T5 model size. In particular, in addition to the T5-large model, containing 770M parameters, used in the main paper, we also considered T5-base (220M parameters) and T5-small (60M parameters). It can be seen, that in general the performance drops as the model size decreases. However, for NYT dataset, the model architecture that uses Text Nodes and Class Edges, T5-small actually outperforms T5-base. At the same time, for Gen Edges all three model choices performed very similar with minor drop in performance as the size decreases.  In Fig. 8 we present some examples of the generated graphs (right column) and their associated ground truths (left column) for WebNLG dataset. In Fig. 9 similar results are given for TEKGEN dataset. Both examples show that the trained Grapher system sometimes can generated more detailed and accurate graphs corresponding to the input text as compared to the ground truth (e.g., first three examples in Fig. 9, where it adds extra edges for genre, occupation and birth date). Also, the use of T5 model for node extraction shows that the model can include information in the generated nodes that is not present in the input text (e.g., third example in Fig. 8 "
+            ],
+            "subsections": []
+        }
+    ]
+}

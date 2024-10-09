@@ -1,0 +1,164 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate differential analysis
+- describe high-dimensional datasets
+- introduce false discovery rate control
+- describe Benjamini-Hochberg procedure
+- describe Storey procedure
+- motivate existing DEF detection approaches
+- describe t-test and ranksum test
+- describe SAM and corrected statistics
+- criticize delta index and introduce miFDR
+- describe limitations of single base statistics
+- motivate robust DEF detection
+
+## SUMMARY
+
+- introduce Composite-Index and Composite-Cut
+- describe integration of multiple base statistics
+- formulate integration as optimization problem
+- describe Composite-Cut algorithm
+- describe experimental results
+- assume feature independence
+- describe geometric interpretation
+- introduce alternative names
+- describe computer system and microarray analysis system
+
+## DETAILED DESCRIPTION
+
+- introduce systems and methods for differential analysis
+- motivate Composite-Index for feature selection
+- describe geometric interpretation of Composite-Index
+- introduce Composite-Cut algorithm
+- describe computer hardware architecture
+- detail CPU and memory components
+- describe cache and GPU components
+- introduce bus and I/O connections
+- describe hard drive and mass-storage components
+- describe adaptation for genome datasets
+- introduce microarrays and lab-on-a-chip
+- describe methods and algorithms for DEF detection
+- introduce Composite-Index and Power Maximization Constrained by FDR
+- define Composite-Index and reject regions
+- formulate optimization problem for DEF detection
+- introduce Composite-Cut algorithm
+- describe corrected t-statistic and ranksum-statistic
+- introduce fudge factor for variance stabilization
+- describe NULL hypothesis and FDR calculation
+- introduce R and V variables for FDR calculation
+- describe Bayes rule for FDR calculation
+- introduce non-parametric methods for estimating P(C∈Γ|NULL)
+- describe permutation method for estimating P(C∈Γ|NULL)
+- introduce P(NULL) estimation
+- describe uniform distribution of p-values
+- introduce conservative estimation of P(NULL)
+- describe estimation of P(C∈Γ|R(Γ)>0)
+- introduce estimated FDR formula
+- describe justification of estimated FDR formula
+- introduce Theorem 1 for large feature scenario
+- introduce Theorem 2 for finite feature scenario
+- define variables and expectations
+- derive equation S2
+- derive equation S3
+- condition on R(Γ)
+- define convex function φ
+- apply Jensen's inequality
+- derive equation S5
+- derive equation S6
+- derive equation S7
+- derive equation S8
+- combine equations S7 and S8
+- derive equation S9
+- derive equation S10
+- plug equation S10 into equation S9
+- prove theorem 1
+- prove theorem 2
+- provide composite-cut algorithm pseudo code
+- define Composite-Cut algorithm
+- describe algorithm steps
+- introduce dataset acquisition
+- calculate base statistics
+- perform Composite-Cut algorithm
+- generate transformations
+- find positive threshold
+- identify significant features
+- evaluate pairs
+- estimate FDR
+- generate report
+- describe experiments
+- introduce simulation test
+- describe null hypotheses
+- simulate alternative hypotheses
+- run simulation test
+- compare Composite-Cut with other methods
+- show results
+- describe another simulation test
+- compare Composite-Cut with other RNA-seq methods
+- describe test datasets
+- simulate read-counts
+- make genes as true DEFs
+- run simulation test
+- record detected DEFs and actual FDRs
+- compare overall performances
+- describe effectiveness of FDR control
+- describe detection power
+- compare DC versions
+- show benefits of integrating multiple basic attributes
+- describe results of different sample sizes
+- group DEFs detected by DC versions
+- observe benefits of integrating multiple basic attributes
+- describe distribution categories
+- compare DCT and DCNB
+- describe importance of modeling mean-variance relationship
+- summarize results
+- discuss implications
+- conclude
+- provide references
+- end of patent application
+- introduce simulation tests
+- compare DCT and DCNB
+- discuss limitations of parametric approaches
+- motivate non-parametric processes
+- introduce application of systems and methods
+- describe gene expression datasets
+- preprocess datasets
+- compare FDR control settings
+- analyze detection results
+- discuss biological insights of detected genes
+- introduce GSE28462 dataset
+- analyze gene expressions
+- identify probesets
+- map probesets to genes
+- discuss biological functions of genes
+- introduce GSE20910 dataset
+- analyze gene expressions
+- identify probesets
+- perform GO enrichment analysis
+- compare GO analysis results
+- analyze TCGA Acute Myeloid Leukemia mRNA-Seq dataset
+- identify DEGs
+- build classifier
+- analyze DEGs as prognostic biomarkers
+- discuss relationships between DEGs and molecular abnormalities
+- perform survival analysis
+- discuss prognostic values of DEGs
+- generate hypothesis on molecular mechanism
+- discuss roles of STX6 and ZFYVE16
+- analyze Gene Set Enrichment
+- discuss transplant as a factor affecting survival time
+- perform dependency analysis
+- perform survival analysis with transplant records
+- analyze RNA-Seq data of ERCC Spike-Ins
+- benchmark Composite-Cut and other FDR control settings
+- calculate true positive rate and false positive rate
+- discuss performance of Composite-Cut
+- discuss applications of Composite-Index and Composite-Cut
+- discuss advantages of Composite-Cut
+- discuss capabilities of Composite-Cut
+- discuss importance of detecting subtle changes
+- discuss scope of the invention
+- discuss equivalents and variations of the invention
+- conclude the invention
+

@@ -1,0 +1,181 @@
+{
+    "id": "US20130028289",
+    "authors": [
+        "Zaixuan Zhang",
+        "Chenxia Li",
+        "Jianfeng Wang",
+        "Xiangdong Yu",
+        "Wensheng Zhang",
+        "Wenping Zhang",
+        "Xiaohui Niu"
+    ],
+    "title": "DISPERSION AND LOSS SPECTRUM AUTO-CORRECTION DISTRIBUTED OPTICAL FIBER RAMAN TEMPERATURE SENSOR",
+    "date": "2010-08-20 00:00:00",
+    "abstract": "A dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor has a dual fiber pulsed laser module with dual Raman wavelength shifts. The laser module is composed of a power supply (11), an electronic switch (12), a primary laser (13) and a secondary laser (14), a first combiner (15), a bidirectional coupler (16), a multimode fiber (17), an integrated optical fiber wavelength division multiplexer (18), a second combiner (19), a direct detection system (20), a signal collection and processing system (21) and a display (22). The sensor uses two light sources that have two Raman wavelength shifts, wherein the central wavelength of backward anti-Stokes Raman scattering peak of the primary light source coincides with that of the backward Stokes scattering peak centre wavelength of the secondary light source, and the time domain reflection signal of the one-way optical fiber Rayleigh scattering is deducted. Based on the optical fiber Raman scattering temperature measurement principle, the dispersion and loss spectrum auto-correction method and the optical time domain reflection principle, the optical fiber dispersion and the loss spectrum can be self-corrected, and the random power loss caused by bending and stretching in installation can also be auto-corrected.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present invention relates to a technical field of optical fiber sensing, and specifically to a dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce optical fiber sensing"
+                    ],
+                    "num_characters": 195,
+                    "outline_medium": [
+                        "introduce optical fiber sensing"
+                    ],
+                    "outline_short": [
+                        "introduce optical fiber sensing"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "In recent years, by means of the temperature modulation effect of optical fiber Raman scattering light intensities and the optical time domain reflection (OTDR) principle, distributed optical fiber Raman temperature sensors have been developed. They can be used to measure the on-site temperature in real time, predict the temperature change trend, monitor the on-site temperature change and provide on-line temperature alarming when the measured temperature is over a certain range. The distributed optical fiber Raman temperature sensor is a linear temperature response detector of safe type in nature and easy to build an optical fiber sensor network. It has been successfully applied in the fields of power industry, petrochemical enterprises, large scale civil engineering, on-line disaster monitoring, etc.",
+                        "The optical fiber Raman scattering frequency shift is about 13.2 THz. So there is a relatively large wavelength difference between the anti-Stokes Raman scattering light and the Stokes Raman scattering light of the optical fiber. Due to the dispersion effect in optical fibers, the backward anti-Stokes Raman scattering light and the Stokes Raman scattering light have different transmission velocities in the optical fiber, thus leading to the \u201casynchronism\u201d or \u201cseparation\u201d phenomenon between the anti-Stokes Raman scattering light and the Stokes Raman scattering light in the time domain reflection curves. For distributed optical fiber Raman temperature sensors, the time domain reflection signal of the optical fiber backward Stokes Raman scattering light is used to demodulate the time domain reflection signal of the anti-Stokes Raman scattering light, in order to obtain temperature information of all segments of the optical fiber. However, the \u201casynchronism\u201d or \u201cseparation\u201d phenomenon happened in the two OTDR signals decreases the spatial resolution and temperature measurement precision of the sensor system, and even causes measurement errors. In a distributed optical fiber Raman temperature sensor, the anti-Stokes Raman scattering light is used as the temperature measurement signal channel, while the Stokes Raman scattering light is used as the temperature measurement reference channel. Since the two channels have quite different wavelength and the optical fiber attenuation losses are different for various wavelengths, they have different intensity losses. Therefore, when the Stokes Raman reference channel is used to demodulate the anti-Stokes Raman signal, the demodulated temperature curve presents a non-linear feature. This causes the temperature measurement errors and decreases the temperature measurement precision. Additionally, when optical fibers are installed on-site, they are very likely bent and stretched which leads to non-linear optical effects in optical fibers, and causes power losses at different wavelengths. Furthermore, since both the magnitude and the position of the bend and the stretch in pressing of the optical fiber and optical cable are random and unpredictable, it is difficult to correct the measurement manually. Thus, an auto-correction method is needed.",
+                        "In 2007, Chung E. Lee et al proposed a solution: \u201cMethods and Apparatus for Dual Source Calibration for Distributed Temperature Systems\u201d which has been granted a U.S. patent right (No. US2007/0223556A1), wherein dual light sources are employed, and the optical fiber backward anti-Stokes Raman scattering wave of the primary laser and the optical fiber Stokes Raman scattering wave of the secondary laser within the same waveband are alternately controlled by an optical fiber switch in a manner of time-division. The optical fiber backward anti-Stokes Raman scattering wave of the primary laser is demodulated by the optical fiber Stokes Raman scattering wave of the secondary laser so as to obtain the temperature information of all segments of the optical fiber. In such round trip Raman scattering OTDR signals, though the return thereof fall within the same waveband, the wavelength of the incident waves lies in the primary laser wavelength and the secondary laser wavelength which differ from each other by a dual Raman shift, so that the influences of the optical fiber dispersion spectrum and the optical fiber loss spectrum cannot be eliminated completely."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe distributed optical fiber Raman temperature sensors",
+                        "explain temperature modulation effect",
+                        "describe OTDR principle",
+                        "discuss dispersion effect in optical fibers",
+                        "explain \"asynchronism\" or \"separation\" phenomenon",
+                        "describe limitations of prior art",
+                        "mention Chung E. Lee et al's solution",
+                        "highlight shortcomings of prior art"
+                    ],
+                    "num_characters": 4297,
+                    "outline_medium": [
+                        "describe distributed optical fiber Raman temperature sensors",
+                        "limitations of prior art",
+                        "describe Chung E. Lee et al's solution",
+                        "limitations of Chung E. Lee et al's solution"
+                    ],
+                    "outline_short": [
+                        "describe distributed optical fiber Raman temperature sensors",
+                        "limitations of prior art"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "Considering the shortages in the related art, the present invention is to provide a dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor. The sensor according to the present invention is low-cost, simple and reliable in structure, and can self-correct the optical fiber dispersion, attenuation loss spectrum and the non-linear loss caused by the bend and the stretch in the on-site installation of the optical fiber cables.",
+                        "According to an embodiment of the present invention, the dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor comprises: a dual fiber pulsed laser module having dual Raman shift wavelengths, which is consisted of a power supply, an electronic switch, a primary laser and a secondary laser; a first combiner; a bidirectional coupler; a multimode optical fiber; an integrated optical fiber wavelength division multiplexer; a second combiner; a direct detection system; a signal collection and processing system; and a display, wherein output terminals of the primary laser and the secondary laser are respectively connected with an input terminal of the first combiner, an output terminal of the first combiner is connected with an input terminal of the bidirectional coupler, an output terminal of the bidirectional coupler is connected with an input terminal of the multimode optical fiber, backward Rayleigh scattering and Raman scattering echoes of the multimode optical fiber enter an input terminal of the integrated optical fiber wavelength division multiplexer through the bidirectional coupler. The integrated optical fiber wavelength division multiplexer has three output ports, the first output port is an output port for the central wavelength of Raman scattering peak, the second output port is an output port for the optical fiber backward Rayleigh scattering wave of the primary laser wavelength, the third output port is an output port for optical fiber backward Rayleigh scattering wave of secondary laser wavelength. The first output port of the integrated optical fiber wavelength division multiplexer is connected with an input terminal of the direct detection system, the second and third output ports of the integrated optical fiber wavelength division multiplexer are respectively connected with two input terminals of the second combiner, an output terminal of the second combiner is connected with another input terminal of the direct detection system, an output terminal of the direct detection system is connected with an input terminal of the signal collection and processing system, and the signal collection and processing system provides temperature values in various segments of the optical fiber to be shown by the display.",
+                        "In the above-mentioned dual fiber pulsed laser module having dual Raman shift wavelengths, a fiber pulsed laser with the central wavelength of 980 nm, the spectrum width of lnm, the laser pulse width of 18 ns and the peak power of 7 W may be used as the primary laser; a fiber pulsed laser with the central wavelength of 905 nm, the spectrum width of 1 nm, the laser pulse width of 18 ns and the peak power of 8 W may be used as the secondary laser. The primary laser and the secondary laser are switched by the electronic switch with a set time interval to operate alternately.",
+                        "The primary laser and the secondary laser in the dual fiber pulsed laser module having dual Raman shift wavelengths also can be other pairs unlike the above mentioned, such as 1660 nm and 1450 nm, 1064 nm and 980 nm, or others that meet the dual Raman shift difference requirement.",
+                        "The wavelength difference between two lasers is the dual Raman shift wavelength difference. The two lasers are driven synchronously by the power supply with a repetition frequency of 8 kHz, and are alternately switched on by the electronic switch with a certain interval period (10 seconds, for example). The time-division dual-wavelengths fiber pulsed laser light switched by the electronic switch passes through the first combiner and the bidirectional coupler, and enters the multimode temperature sensing fiber. The backward Rayleigh scattering and Raman scattering echoes of the optical fiber enter the integrated optical fiber wavelength division multiplexer through the bidirectional coupler. At the first output port of the integrated optical fiber wavelength division multiplexer and the direct detection system, the time-division OTDR signals of optical fiber backward anti-Stokes Raman scattering wave of the primary laser and optical fiber Stokes Raman scattering wave of the secondary laser within the same primary wavelength waveband are thus obtained. These round-trip OTDR signals, though their echoes are within the same waveband, have incident waves between the primary laser wavelength and the secondary laser wavelength which differ from each other by a dual Raman shift wavelength, and can not eliminate the effects due to the optical fiber refractive index and loss spectrum in different waveband. Therefore, it is necessary to utilize the signal collection and processing system to deduct the single-trip optical fiber Rayleigh wave OTDR signals of the primary and the secondary laser wavelength.",
+                        "The method employed includes: the second output port and the third output port of the optical fiber wavelength division multiplexer are connected with another terminal of the direct detection system via the second combiner, thus the optical fiber backward Rayleigh wave OTDR signals of the primary and the secondary laser, which are round-trip in a manner of time-division, are obtained. The two single-trip optical fiber backward Rayleigh wave OTDR signals of the primary and the secondary laser wavelength at different wavebands are obtained by the signal collection and processing system, respectively. Then the single-trip optical fiber backward Rayleigh wave OTDR signal of the primary laser wavelength in the optical fiber backward anti-Stokes Raman scattering wave OTDR signal of the primary laser and the single-trip optical fiber backward Rayleigh wave OTDR signal of the secondary laser wavelength in the optical fiber backward anti-Stokes Raman scattering wave OTDR signal of the secondary laser wavelength are deducted respectively by means of the signal collection and processing system, obtaining the intensity ratio of single-trip optical fiber backward anti-Stokes Raman scattering wave OTDR signal of the primary laser with respect to single-trip optical fiber Stokes Raman scattering wave OTDR signal of the secondary laser which are within the same waveband, temperature information for each segment of the optical fiber is obtained based on the optical fiber Raman temperature measurement principle, achieving dispersion and loss spectrum auto-correction.",
+                        "The measurement principle of the present dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor is shown as follows:",
+                        "Raman scattering is one of the non-linear optical effects. When a laser light interacts with the optical fiber molecules, an incident photon is scattered by molecules and changes to low-frequency Stokes photon or high-frequency anti-Stokes photon. At the same time, the corresponding molecules complete transitions between two vibrational states. The photon is referred to as a Stokes Raman photon after the photon emits a phonon during the scattering. The photon is referred to as an anti-Stokes Raman photon after the photon absorbs a phonon during the scattering. For optical fiber molecules, the optical phonon frequency is around 13.2 THz. The number of particles for thermal distribution on the optical fiber molecule energy levels follows the Boltzmann law. So the intensity ratio R(T,l) of the anti-Stokes Raman scattering light with respect to the Stokes Raman scattering light is determined as:",
+                        "\\(\\begin{matrix}\n{{R\ue8a0\\left( {T,l} \\right)} = {\\left\\lbrack \\frac{v_{as}}{v_{s}} \\right\\rbrack^{4}\ue89e{\\exp \ue8a0\\left( {- \\frac{{hc}\ue89e\\; \ue89e\\Delta \ue89e\\; \ue89ev}{kT}} \\right)}\ue89e{\\exp \ue8a0\\left\\lbrack {{- \\left( {\\alpha_{as} - \\alpha_{s}} \\right)}\ue89el} \\right\\rbrack}}} & (1)\n\\end{matrix}\\)",
+                        "wherein \u03bdas and \u03bds are the frequencies of the anti-Stokes Raman scattering light and the Stokes Raman scattering light, respectively, h is the Planck constant, h=6.626 068 76.52\u00d710\u221234J.s (the basic physics constant in 1998), c is the velocity of light in vacuum, \u0394\u03bd is the phonon frequency of the optical fiber molecule and equals to 13.2 THz, k is the Boltzmann constant, k=1.380 650324\u00d710\u221223JK\u22121, T is the Kelvin absolute temperature, \u03b1as and \u03b1s are optical fiber attenuation coefficients of the anti-Stokes Raman scattering light and the Stokes Raman scattering light, respectively.",
+                        "The intensity ratio of single-trip backward anti-Stokes Raman light of the primary laser with respect to the single-trip backward Stokes Raman light of the secondary laser is:",
+                        "\\(\\begin{matrix}\n{{R\ue8a0(T)} = {\\frac{I_{{1\ue89el},{AS}}}{I_{2,S}} = {\\frac{I_{1}}{I_{2\ue89e\\;}}\ue89e\\left( \\frac{v_{1,{AS}}}{v_{2,S}} \\right)^{4}\ue89e{\\exp \ue8a0\\left( {- \\frac{hcv}{kT}} \\right)}\ue89e\\frac{\\exp - {\\alpha_{1,{As}} \\cdot l}}{\\exp - {\\alpha_{2,S} \\cdot l}}}}} & (2)\n\\end{matrix}\\)",
+                        "wherein the single-trip backward anti-Stokes Raman light of the primary laser and the single-trip backward Stokes Raman light of the secondary laser are within the same waveband, i.e. \u03bd1,AS=\u03bd2.S \u03b11,AS=\u03b12,S ,",
+                        "Thus the equation (2) is simplified as:",
+                        "\\(\\begin{matrix}\n{{R\ue8a0(T)} = {\\frac{I_{1,{AS}}}{I_{2,S}} = {\\frac{I_{1}}{I_{2\ue89e\\;}}\ue89e{\\exp \ue8a0\\left( {- \\frac{hcv}{kT}} \\right)}}}} & (3)\n\\end{matrix}\\)",
+                        "If the temperature of an optical fiber section immediately before the temperature sensing fiber is known as T=T0, the temperatures of various segments of the temperature sensing fiber is obtained by the known Raman light intensity ratio and the equation (3):",
+                        "\\(\\begin{matrix}\n{T = \\left\\lbrack {\\frac{1}{T_{0}} - {\\frac{k}{hcv}\ue89e{\\ln \ue8a0\\left( \\frac{R\ue8a0(T)}{R\ue8a0\\left( T_{0} \\right)} \\right)}}} \\right\\rbrack} & (4)\n\\end{matrix}\\)",
+                        "The advantages of the present invention include:",
+                        "According to the present invention, the dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor may employ low-cost and reliable electronic switch to replace the expensive optical fiber switch. Also the electronic switch is simple in structure, excellent in signal-to-noise ratio, and good in reliability. As the single-trip backward anti-Stokes Raman light of the primary laser and the single-trip backward Stokes Raman light of the secondary laser are within the same waveband, dispersion and loss spectrum of the optical fiber as well as the random loss caused by bending and stretching in real installations can be self-corrected. Therefore, the temperature measurement error caused by departure from linearity when using the Stokes Raman reference channel to demodulate the anti-Stokes Raman signal channel in the temperature measurement system is overcome. According to the present invention, the electronic switch can be employed to control the two light sources with dual Raman shift wavelength differences, the integrated wavelength division multiplexer and the direct detection system. It also can improve the signal-to-noise ratio, reliability and spacial resolution of the distributed optical fiber Raman photon temperature sensor system. The temperature sensing fiber laid for monitoring on-site can be insulative, non-electriferous, immune to electromagnetic interference, radiation resistant, corrosion resistant, and safe in nature. The optical fiber acts as both the transferring media and the sensing media, can be a temperature sensing fiber of an intrinsic type, and have long working life for over 30 years."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor",
+                        "describe sensor structure",
+                        "explain dual fiber pulsed laser module",
+                        "describe primary and secondary lasers",
+                        "explain electronic switch",
+                        "describe first combiner",
+                        "describe bidirectional coupler",
+                        "describe multimode optical fiber",
+                        "describe integrated optical fiber wavelength division multiplexer",
+                        "describe second combiner",
+                        "describe direct detection system",
+                        "describe signal collection and processing system",
+                        "describe display",
+                        "explain time-division dual-wavelengths fiber pulsed laser light",
+                        "describe backward Rayleigh scattering and Raman scattering echoes",
+                        "explain signal processing",
+                        "describe intensity ratio calculation",
+                        "explain temperature information calculation",
+                        "describe Raman scattering principle",
+                        "explain Boltzmann law",
+                        "describe intensity ratio equation",
+                        "describe temperature calculation equation",
+                        "highlight advantages of the invention"
+                    ],
+                    "num_characters": 11739,
+                    "outline_medium": [
+                        "motivate dispersion and loss spectrum auto-correction",
+                        "describe sensor structure",
+                        "describe dual fiber pulsed laser module",
+                        "describe signal collection and processing system",
+                        "describe temperature measurement principle",
+                        "derive equation (1)",
+                        "derive equation (2)",
+                        "derive equation (3)",
+                        "derive equation (4)",
+                        "describe advantages of the invention",
+                        "describe features of the temperature sensing fiber"
+                    ],
+                    "outline_short": [
+                        "motivate dispersion and loss spectrum auto-correction",
+                        "describe sensor structure",
+                        "explain measurement principle",
+                        "outline method for auto-correction",
+                        "highlight advantages"
+                    ]
+                },
+                {
+                    "title": "DESCRIPTION OF EXEMPLARY EMBODIMENTS",
+                    "paragraphs": [
+                        "Referring to the FIG. 1, a dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor comprises: a dual fiber pulsed laser module having dual Raman shift wavelengths consisting of a power supply 11, an electronic switch 12, a primary laser 13 and a secondary laser 14; a first combiner 15; a bidirectional coupler 16; a multimode optical fiber 17; an integrated optical fiber wavelength division multiplexer 18; a second combiner 19; a direct detection system 20; a signal collection and processing system 21; and a display 22. Output terminals of the primary laser 13 and the secondary laser 14 are connected with an input terminal of the first combiner 15, respectively. An output terminal of the first combiner 15 is connected with an input terminal of the bidirectional coupler 16; an output terminal of the bidirectional coupler 16 is connected with an input terminal of the multimode optical fiber 17. Backward Rayleigh scattering and Raman scattering echoes of the multimode optical fiber enter an input terminal of the integrated optical fiber wavelength division multiplexer 18 through the bidirectional coupler 16. The integrated optical fiber wavelength division multiplexer 18 has three output ports. The first output port is an output port for the central wavelength of Raman scattering peak. The second output port is an output port for optical fiber backward Rayleigh scattering wave of the primary laser wavelength. The third output port is an output port for optical fiber backward Rayleigh scattering wave of the secondary laser wavelength. The first output port of the integrated optical fiber wavelength division multiplexer 18 is connected with an input terminal of the direct detection system 20. The second and third output ports of the integrated optical fiber wavelength division multiplexer 18 are respectively connected with two input terminals of the second combiner 19. An output terminal of the second combiner 19 is connected with another input terminal of the direct detection system 20. An output terminal of the direct detection system 20 is connected with an input terminal of the signal collection and processing system 21. By means of the intensity ratio of the single-trip backward anti-Stokes Raman scattering wave of the primary laser with respect to the single-trip Stokes Raman scattering wave of the secondary laser (within the same waveband) processed by the signal collection and processing system 21, the temperature information for each segment of the optical fiber can be obtained, which is shown by the display 22.",
+                        "The first output port of the above-mentioned integrated optical fiber wavelength division multiplexer 18 is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 940 nm, the bandwidth of 15 nm and the insertion loss less than 0.5 dB. The anti-Stokes Raman scattering light (940 nm) signal of the primary laser with the wavelength of 980 nm and Stokes Raman scattering light (940 nm) signal of the secondary laser with the wavelength of 905 nm which both fall within the same waveband are outputted through the first output port in a manner of time-division. The second output port is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 980 nm, the bandwidth of 3 nm and the insertion loss less than 0.5 dB; and the third output port is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 905 nm, the bandwidth of 3 nm and the insertion loss less than 0.5 dB. The optical fiber Rayleigh scattering OTDR signals of the primary laser and the secondary laser are outputted in a manner of time-division by the second output port and the third output port via the second combiner 19.",
+                        "The direct detection system 20 is formed by two optical fiber photoelectric receiving and amplifying modules, and it is consisted of a low-noise Si photoelectric avalanche diode equipped with optical fiber and a low-noise MAX4107 preamplifier and a primary amplifier.",
+                        "The signal collection and processing system 21 can utilize a two-channel NI5911 signal processing card from U.S.A. NI (National Instruments) Inc., which has the bandwidth of 100 MHz and the sampling rate of 100 MS/s, or utilize a two-channel CS21GB-1GHz signal processing card from Canada GaGe Inc. with the sampling rate of 500 MS/s."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe dual fiber pulsed laser module",
+                        "describe first combiner",
+                        "describe bidirectional coupler",
+                        "describe multimode optical fiber",
+                        "describe integrated optical fiber wavelength division multiplexer",
+                        "describe second combiner",
+                        "describe direct detection system",
+                        "describe signal collection and processing system"
+                    ],
+                    "num_characters": 4414,
+                    "outline_medium": [
+                        "describe dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor",
+                        "describe integrated optical fiber wavelength division multiplexer",
+                        "describe direct detection system",
+                        "describe signal collection and processing system"
+                    ],
+                    "outline_short": [
+                        "describe sensor components",
+                        "explain signal processing"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor, characterized in that it comprises:\na dual fiber pulsed laser module having dual Raman shift wavelengths, which is consisted of a power supply (11), an electronic switch (12), a primary laser (13) and a secondary laser (14);\na first combiner (15);\na bidirectional coupler (16);\na multimode optical fiber (17);\nan integrated optical fiber wavelength division multiplexer (18);\na second combiner (19);\na direct detection system (20);\na signal collection and processing system (21); and\na display (22),\nwherein output terminals of the primary laser (13) and the secondary laser (14) are respectively connected with an input terminal of the first combiner (15), an output terminal of the first combiner (15) is connected with an input terminal of the bidirectional coupler (16), an output terminal of the bidirectional coupler (16) is connected with an input terminal of the multimode optical fiber (17), backward Rayleigh scattering and Raman scattering echoes of the multimode optical fiber enter an input terminal of the integrated optical fiber wavelength division multiplexer (18) via the bidirectional coupler (16), the integrated optical fiber wavelength division multiplexer (18) has three output ports, the first output port is an output port for the central wavelength of Raman scattering peak, the second output port is an output port for optical fiber backward Rayleigh scattering wave of the primary laser wavelength, the third output port is an output port for the optical fiber backward Rayleigh scattering wave of the secondary laser wavelength, the first output port of the integrated optical fiber wavelength division multiplexer (18) is connected with an input terminal of the direct detection system (20), the second and third output ports of the integrated optical fiber wavelength division multiplexer (18) are respectively connected with two input terminals of the second combiner (19), an output terminal of the second combiner (19) is connected with another input terminal of the direct detection system (20), an output terminal of the direct detection system (20) is connected with an input terminal of the signal collection and processing system (21), and an output terminal of the signal collection and processing system (21) is connected with the display (22).",
+        "2. The dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor according to claim 1, characterized in that the primary laser (13) is a fiber pulsed laser with the central wavelength of 980 nm, the spectrum width of 1 nm, the laser pulse width of 18 ns and the peak power of 7 W; the secondary laser (14) is a fiber pulsed laser with the central wavelength of 905 nm, the spectrum width of 1 nm, the laser pulse width of 18 ns and the peak power of 8 W; and the primary laser (13) and the secondary laser (14) are connected with the power supply (11) through the electronic switch (12).",
+        "3. The dispersion and loss spectrum auto-correction distributed optical fiber Raman temperature sensor according to claim 1, characterized in that the first output port of the integrated optical fiber wavelength division multiplexer (18) is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 940 nm, the bandwidth of 15 nm and the attenuation loss less than 0.5 dB; the second output port is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 980 nm, the bandwidth of 3 nm and the attenuation loss less than 0.5 dB; and the third output port is consisted of a parallel optical fiber path and an optical filter with the central wavelength of 905 nm, the bandwidth of 3 nm and the attenuation loss less than 0.5 dB."
+    ]
+}

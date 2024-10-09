@@ -1,0 +1,234 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+- introduce sigma-2 receptor binders
+
+## BACKGROUND OF THE INVENTION
+
+- identify sigma-1 and sigma-2 receptors
+- describe sigma receptor sub-types
+- discuss therapeutic utility of sigma-2 receptor binders
+- highlight dysregulation of sigma-2 receptor activity
+- mention cancer treatment opportunities
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce novel sigma-2 receptor binders
+- define compounds of formula (I)
+- describe R1a and R1b groups
+- define R2 and R3 groups
+- describe R4 and R5 groups
+- outline compositions comprising compounds
+- describe method for treating diseases
+- outline process for preparing sigma-2 receptor binders
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- motivate sigma-2 receptor modulators
+- limitations of current treatments
+- introduce need for new sigma-2 receptor binders
+- describe diseases associated with sigma-2 receptor dysregulation
+- summarize therapeutic potential of sigma-2 receptor modulators
+- describe sigma-2 receptor binders and activity modulators
+- outline treatment and prevention of diseases
+- discuss overexpression of sigma-2 receptor
+- define composition and process terms
+- clarify language and terminology
+- define halogen
+- define alkyl and aliphatic groups
+- define cycloalkyl, haloalkyl, alkoxy, and aryl groups
+- define heterocyclic units
+- define heteroaryl groups
+- describe C1-C5 heteroaryl
+- define fused ring units
+- describe substituents
+- define substituted moieties
+- provide examples of substituents
+- describe optional substituents
+- define compounds, analogs, and compositions of matter
+- describe stereoisomers and regioisomers
+- describe pharmaceutically acceptable salts
+- describe formation of salts
+- define treating and treatment
+- define terms
+- describe subject patients
+- introduce sigma-2 receptor binders
+- define formula (I)
+- describe compounds of formula (II)
+- describe compounds of formula (IIa)
+- describe compounds of formula (IIb)
+- describe compounds of formula (IIc)
+- define compounds
+- specify formula (III)
+- specify formula (IIIa)
+- specify formula (IIIb)
+- specify formula (IIIc)
+- specify formula (IId)
+- specify formula (IV)
+- specify formula (IVa)
+- specify formula (IVb)
+- define compounds having formula Vc
+- define compounds having formula Vd
+- define compounds having formula VI
+- define compounds having formula VIa
+- define compounds having formula VIb
+- define compounds having formula VIc
+- define compounds having formula VId
+- define compounds having formula VII
+- define compounds having formula (VIIIb)
+- define compounds having formula (VIIIc)
+- define compounds having formula (VIIId)
+- define compounds having formula (IX)
+- define compounds having formula (IXa)
+- define compounds having formula (IXb)
+- define compounds having formula (IXc)
+- define compounds having formula (IXd)
+- specify embodiments of A
+- specify embodiments of n
+- specify embodiments of R1a and R1b
+- specify embodiments of R2, R3, R4, R4a, R4b, and R4c
+- define R4c embodiments
+- define R4d embodiments
+- define R4c embodiments
+- define R5 embodiments
+- define R5a embodiments
+- define R5b embodiments
+- define embodiments of R5b
+- define embodiments of R5c and R5d
+- define embodiments of R6, R7, R8a, R8b, and R9a
+- define R9a embodiments
+- define R9b embodiments
+- define R9a and R9b ring embodiments
+- define R10 embodiments
+- define R11 embodiments
+- define R12a and R12b embodiments
+- list compound examples
+- describe formula II embodiments
+- describe formula X embodiments
+- describe formula XI embodiments
+- describe formula XII embodiments
+- describe naming conventions
+
+### Process
+
+- outline preparation process
+- describe standard synthetic methods
+- discuss process monitoring and analysis
+- explain protection and deprotection of chemical groups
+- illustrate general synthetic schemes
+- react compound 5 with compound 6
+- react compound 9 with compound 10
+- react compound 13 with compound 14
+- react compound 17 with compound 18
+- treat compound 19 with paraformaldehyde
+- convert compound 21 to compound 22
+- react compound 22 with compound 23
+- react compound 25 with compound 26
+- treat compound 27 with paraformaldehyde
+- convert compound 29 to compound 30
+- react compound 30 with compound 31
+- react compound 33 with base
+- react compound 34 with iodine
+- react compound 35 with compound 36
+- react compound 38 with ruthenium chloride
+- react compound 44 with compound 45
+
+### EXAMPLES
+
+- introduce examples of the invention
+- provide representative methods for preparing compounds
+- describe preparation of methyl 2,2-dimethylpent-4-enoate
+- describe preparation of ethyl 2,2-diethylpent-4-enoate
+- describe preparation of 1-allylcyclobutanecarboxylic acid
+- describe preparation of 1-allylcyclopentanecarboxylic acid
+- describe preparation of 1-allylcyclohexanecarboxylic acid
+- describe preparation of 5-(2-Hydroxy-ethyl)-3,3-dimethyl-dihydro-furan-2-one
+- describe preparation of 3,3-diethyl-5-(2-hydroxyethyl)dihydrofuran-2(3H)-one
+- describe preparation of 7-(2-hydroxyethyl)-6-oxaspiro[3.4]octan-5-one
+- describe preparation of 3-(2-hydroxyethyl)-2-oxaspiro[4.4]nonan-1-one
+- describe preparation of 2-(4,4-dimethyl-5-oxotetrahydrofuran-2-yl)ethyl 4
+- prepare compounds
+- prepare 2-(5-oxo-6-oxaspiro[3.4]octan-7-yl)ethyl 4
+- prepare 2-(1-oxo-2-oxaspiro[4.4]nonan-3-yl)ethyl 4
+- prepare 2-(1-oxo-2-oxaspiro[4.5]decan-3-yl)ethyl 4
+- prepare 5-(2-bromoethyl)-3,3-diethyldihydrofuran-2(3H)-one
+- prepare 3-(2-bromoethyl)-2-oxaspiro[4.5]decan-1-one
+- prepare 2,2-diethylpent-4-enoic acid
+- prepare 3,3-diethyl-5-(iodomethyl)dihydrofuran-2(3H)-one
+- prepare 3-(iodomethyl)-2-oxaspiro[4.4]nonan-1-one
+- prepare 3-(iodomethyl)-2-oxaspiro[4.5]decan-1-one
+- prepare 3-hydroxy-2-oxaspiro[4.4]nonan-1-one
+- prepare 3-hydroxy-2-oxaspiro[4.5]decan-1-one
+- provide example 27
+- provide example 28
+- provide example 29
+- provide example 30-33
+- provide example 34-36
+- provide additional examples
+- describe example 37
+- describe example 38
+- describe example 39
+- describe examples 40-42
+- describe examples 43-44
+- describe examples 45-46
+- provide examples
+- prepare tert-butyl 5-(m-tolyl)hexahydropyrrolo[3,4-c]pyrrole-2(
+- prepare tert-butyl 5-(p-tolyl)hexahydropyrrolo[3,4-c]pyrrole-2(
+- prepare tert-butyl 5-(2-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(3-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(4-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- describe example 57
+- describe example 58
+- describe example 59
+- describe examples 60-64
+- describe examples 65-66
+- provide examples
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- prepare compounds
+- describe synthesis of compounds
+- provide NMR data for compounds
+- describe purification methods for compounds
+- provide MS data for compounds
+- describe reaction conditions for compounds
+- provide structural information for compounds
+- describe substitution reactions for compounds
+- provide yield information for compounds
+- describe example 96
+- describe example 97
+- describe example 98
+- describe example 99
+- describe example 100
+- describe example 101
+- describe example 102
+- describe examples 103-105
+- describe examples of compounds
+- describe examples of compounds
+- describe examples of compounds
+- describe examples of compounds
+- introduce formulations
+- define excipient
+- describe role of excipient
+- describe pharmaceutical compositions
+- describe oral formulations
+- describe solid carriers
+- describe liquid carriers
+- describe parenteral administration
+- describe unit dosage forms
+- describe effective dosage
+- describe administration methods
+- describe transdermal administration
+- describe transdermal administration
+- describe rectal and vaginal administration
+- describe lipid formulations and nanocapsules
+- describe combination therapy
+- describe pharmaceutical compositions
+- outline procedure for evaluating sigma-2 receptor binders
+

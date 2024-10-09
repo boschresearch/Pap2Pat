@@ -1,0 +1,485 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- introduce video coding
+- motivate compression
+- limitations of compression
+- introduce affine motion compensation
+
+## SUMMARY
+
+- introduce apparatuses and methods for encoding and decoding
+- provide apparatuses and methods for prediction refinement with optical flow (PROF)
+- define embodiments of the present application
+- outline particular embodiments in the attached independent claims
+- outline other embodiments in the dependent claims
+- achieve objects by the subject matter of the independent claims
+- provide further implementation forms from the dependent claims, description, and figures
+- apply method for prediction refinement with optical flow (PROF) for an affine coded block
+- perform PROF process for a current sub-block of the affine coded block
+- obtain refined prediction sample values of the current sub-block
+- perform PROF process when a plurality of constraint conditions for applying PROF are not fulfilled
+- determine that the plurality of constraint conditions for applying PROF are not fulfilled
+- specify constraint conditions for applying PROF
+- indicate PROF is disabled for a picture containing the affine coded block
+- indicate PROF is disabled for slices associated with a picture containing the affine coded block
+- indicate no partition of the affine coded block
+- set variable fallbackModeTriggered to 1
+- perform optical flow processing for the current sub-block
+- obtain a delta prediction value of a current sample of the current sub-block
+- obtain refined prediction sample values of the current sub-block
+- generate a second prediction matrix
+- generate a first prediction matrix based on motion information
+- generate the second prediction matrix based on the first prediction matrix
+- generate the second prediction matrix based on motion information
+- generate horizontal and vertical prediction gradient matrices
+- calculate a delta prediction value based on horizontal and vertical prediction gradient values
+- calculate a delta prediction value based on a difference between motion vectors
+- specify the affine block as a coding block or a decoding block
+- specify the current sub-block of the affine coded block as a 4×4 block
+- specify the luma location of the top-left sample of the affine coded block
+- refer to samples of the current sub-block using absolute positions
+- refer to samples of the current sub-block using relative positions
+- specify the first prediction matrix as a two-dimensional array
+- specify the second prediction matrix as a two-dimensional array
+- specify the horizontal and vertical prediction gradient matrices as two-dimensional arrays
+- use a motion vector difference between a motion vector of a current sample unit and a motion vector of a center sample of the sub-block
+- balance processing overheads and prediction accuracy
+- represent an element of the second prediction matrix as I1(p, q)
+- represent an element of the horizontal prediction gradient matrix as X (i, j)
+- represent an element of the vertical prediction gradient matrix as Y (i, j)
+- provide an improved method for prediction refinement with optical flow (PROF)
+- summarize prediction refinement method
+- introduce apparatus for prediction refinement
+- describe determining unit
+- describe prediction processing unit
+- define motion vector difference
+- represent prediction matrix elements
+- represent horizontal prediction gradient matrix elements
+- represent vertical prediction gradient matrix elements
+- calculate delta prediction value
+- describe constraint conditions for applying PROF
+- describe obtaining second prediction matrix
+- generate horizontal and vertical prediction gradient matrices
+- perform subblock-based affine motion compensation
+- describe apparatus for prediction refinement with optical flow
+- describe determining unit
+- describe prediction processing unit
+- define motion vector difference
+- represent prediction matrix elements
+- represent horizontal prediction gradient matrix elements
+- represent vertical prediction gradient matrix elements
+- calculate delta prediction value
+- describe constraint conditions for applying PROF
+- describe obtaining second prediction matrix
+- generate horizontal and vertical prediction gradient matrices
+- perform subblock-based affine motion compensation
+- describe encoder
+- describe decoder
+- describe decoder with non-transitory computer-readable storage medium
+- describe encoder with non-transitory computer-readable storage medium
+- describe apparatus for encoding video stream
+- describe apparatus for decoding video stream
+- describe computer program
+- describe computer-readable storage medium
+- describe video picture encoding method
+- describe video picture decoding method
+- describe drawings and description
+- describe claims
+
+## DETAILED DESCRIPTION OF THE EMBODIMENTS
+
+- introduce video coding
+- define video coding
+- describe video encoding and decoding
+- explain lossless and lossy video coding
+- introduce hybrid video codecs
+- describe block-based video coding
+- motivate video coding system 10
+- describe source device 12
+- describe picture source 16
+- describe pre-processor 18
+- describe video encoder 20
+- describe communication interface 22
+- describe destination device 14
+- describe communication interface 28
+- describe video decoder 30
+- describe post-processor 32
+- describe display device 34
+- describe encoder and decoder implementation
+- describe processing circuitry 46
+- describe software implementation
+- describe source and destination devices
+- describe video coding settings
+- introduce HEVC and VVC
+- describe encoder 20
+- describe input 201
+- describe residual calculation unit 204
+- describe transform processing unit 206
+- describe quantization unit 208
+- describe inverse quantization unit 210
+- describe inverse transform processing unit 212
+- describe reconstruction unit 214
+- describe loop filter unit 220
+- describe decoded picture buffer 230
+- describe mode selection unit 260
+- describe entropy encoding unit 270
+- describe output 272
+- describe inter prediction unit 244
+- describe intra prediction unit 254
+- describe partitioning unit 262
+- describe picture partitioning
+- describe block partitioning
+- describe picture block 203
+- describe slice partitioning
+- describe tile group and tile partitioning
+- describe residual calculation unit 204
+- define residual calculation unit
+- calculate residual block
+- apply transform
+- obtain transform coefficients
+- apply integer approximations of DCT/DST
+- apply scaling factors
+- output transform parameters
+- quantize transform coefficients
+- reduce bit depth
+- adjust quantization parameter
+- output quantization parameters
+- apply inverse quantization
+- obtain dequantized coefficients
+- apply inverse transform
+- obtain reconstructed residual block
+- add reconstructed residual block to prediction block
+- obtain reconstructed block
+- filter reconstructed block
+- smooth pixel transitions
+- output loop filter parameters
+- store reference pictures
+- store filtered blocks
+- select partitioning and prediction mode
+- determine partitioning
+- perform inter-prediction
+- perform intra-prediction
+- select best prediction mode
+- output intra-prediction parameters
+- output inter-prediction parameters
+- describe partitioning unit
+- partition block into smaller blocks
+- apply tree-partitioning
+- describe coding tree unit
+- describe coding unit
+- describe prediction unit
+- describe transform unit
+- describe quad-tree and binary tree partitioning
+- describe intra-prediction modes
+- describe inter-prediction modes
+- introduce motion compensation unit
+- perform inter prediction
+- generate syntax elements
+- entropy encoding
+- apply entropy encoding algorithm
+- bypass compression
+- output encoded bitstream
+- describe non-transform based encoder
+- describe combined quantization and inverse quantization unit
+- introduce video decoder
+- receive encoded picture data
+- obtain decoded picture
+- describe entropy decoding unit
+- parse bitstream
+- perform entropy decoding
+- obtain quantized coefficients
+- describe inverse quantization unit
+- receive quantization parameters
+- apply inverse quantization
+- obtain dequantized coefficients
+- describe inverse transform processing unit
+- receive dequantized coefficients
+- apply inverse transform
+- obtain reconstructed residual blocks
+- describe reconstruction unit
+- add reconstructed residual block
+- obtain reconstructed block
+- describe loop filter unit
+- filter reconstructed block
+- obtain filtered block
+- describe decoded picture buffer
+- store decoded pictures
+- describe prediction
+- perform split or partitioning decisions
+- perform prediction
+- obtain prediction block
+- describe mode application unit
+- determine prediction information
+- produce prediction blocks
+- introduce AMVP mode
+- introduce merge mode
+- describe candidate motion vector list construction
+- describe pruning of candidate motion vector list
+- motivate non-translational motion model
+- introduce 4-parameter affine motion model
+- describe 4-parameter affine motion model representation
+- introduce 6-parameter affine motion model
+- describe 6-parameter affine motion model representation
+- describe affine coded block prediction
+- introduce inherited control point motion vector prediction method
+- describe inherited control point motion vector prediction method
+- describe determining process using A1 as an example
+- describe calculating motion vector vx0
+- describe calculating motion vector vy0
+- describe calculating motion vector vx1
+- describe calculating motion vector vy1
+- describe calculating motion vector vx2
+- describe calculating motion vector vy2
+- introduce constructed control point motion vector prediction method
+- describe constructed control point motion vector prediction method
+- describe combining motion vectors of neighboring encoded blocks
+- describe combining motion vectors of top-left sample and top-right sample
+- describe combining motion vectors of top-left sample, top-right sample, and bottom-left sample
+- describe using motion vectors of two encoded blocks as candidate control point motion vectors
+- describe using motion vectors of three encoded blocks as candidate control point motion vectors
+- describe using other motion models and candidate locations
+- describe using other search and traversal orders
+- describe using other control points to represent motion models
+- describe using other methods to predict control point motion vectors
+- describe using other affine motion models
+- describe using other prediction modes
+- describe using other coding block partitioning methods
+- describe using other sample block sizes
+- describe using other block sizes
+- describe using other neighboring locations
+- describe using other orders for traversing blocks
+- conclude description of embodiments
+- define motion vectors
+- introduce control point motion vectors prediction method
+- obtain motion information of control points
+- combine motion information of control points
+- construct 4-parameter affine motion model
+- construct 6-parameter affine motion model
+- construct 8-parameter bilinear motion model
+- traverse models in preset order
+- determine reference frame index
+- scale control point motion vector
+- convert control point combinations
+- convert 4-parameter affine motion model
+- convert {CP1, CP2} into {CP1, CP2, CP3}
+- convert {CP1, CP3} into {CP1, CP2}
+- convert {CP2, CP3} into {CP1, CP2}
+- convert {CP1, CP4} into {CP1, CP2}
+- convert {CP1, CP4} into {CP1, CP2, CP3}
+- convert {CP2, CP4} into {CP1, CP2}
+- convert {CP2, CP4} into {CP1, CP2, CP3}
+- convert {CP3, CP4} into {CP1, CP2}
+- convert {CP3, CP4} into {CP1, CP2, CP3}
+- define formulas for converting control points
+- describe affine motion model-based advanced motion vector prediction mode
+- construct candidate motion vector list
+- determine optimal control point motion vector predictors candidate
+- determine control point motion vectors
+- describe affine merge mode
+- construct control point motion vectors merge candidate list
+- determine control point motion vectors candidate
+- define terms used in application
+- describe syntax structures for inter prediction mode
+- specify inter_affine_flag
+- specify inter_pred_idc
+- specify sps_affine_enabled_flag
+- describe cu_affine_type_flag
+- specify MotionModelIdc
+- describe variables for maximum list length
+- describe inter_pred_idc
+- describe num_ref_idx_l0 active_minus1
+- describe ref_idx_l0
+- describe mvd_coding
+- describe mvp_l0_flag
+- describe num_ref_idx_l1_active_minus1
+- describe ref_idx_l1
+- describe mvp_l1_flag
+- describe decoding method
+- parse bitstream to determine inter prediction mode
+- construct candidate motion vector list for affine motion model-based AMVP mode
+- construct candidate motion vector list for affine motion model-based merge mode
+- describe FIG. 7
+- derive control point motion information
+- use 4-parameter affine motion model
+- use 6-parameter affine motion model
+- derive motion vectors of control points
+- construct candidate motion vector list
+- parse bitstream and determine optimal control point motion vector predictors
+- parse bitstream and determine control point motion vectors
+- obtain motion vector of each sub-block
+- calculate coordinates of center sample
+- use 6-parameter affine motion model formula
+- use 4-parameter affine motion model formula
+- perform motion compensation
+- construct motion information candidate list
+- use inherited control point motion vector prediction method
+- derive candidate control point motion information
+- add to motion information candidate list
+- check for duplicate motion information
+- determine maximum list length
+- use constructed control point motion vector prediction method
+- derive candidate control point motion information
+- add to motion information candidate list
+- describe flowchart for constructed control point motion vectors prediction method
+- describe process of constructing candidate motion vector list
+- describe process of parsing bitstream
+- describe process of determining control point motion vectors
+- describe process of obtaining motion vector of each sub-block
+- describe process of performing motion compensation
+- describe process of constructing motion information candidate list
+- describe process of using inherited control point motion vector prediction method
+- describe motion information of control points
+- combine motion information of control points
+- add constructed control point motion information to candidate motion vector list
+- traverse combinations of motion information of control points
+- determine reference frame index of combination
+- scale control point motion vector
+- validate combination
+- pad candidate motion vector list
+- parse bitstream and determine optimal control point motion information
+- obtain motion vector of each sub-block
+- perform motion compensation for each sub-block
+- describe subblock-based affine motion compensation
+- calculate horizontal and vertical gradient values of prediction signal
+- implement gradient value calculation methods
+- obtain prediction signal through interpolation
+- perform edge extension on prediction signal
+- calculate delta prediction value
+- calculate motion vector difference
+- simplify motion vector difference calculation
+- describe 4-parameter and 6-parameter affine models
+- perform prediction refinement
+- refine prediction sample value
+- conditionally perform prediction refinement with optical flow
+
+### Embodiment 1
+
+- apply optical flow method
+- reduce complexity constraint
+
+### Embodiment 2
+
+- propose sub-block size selection
+- describe method a) for prediction signal refinement
+- describe method b) for prediction signal refinement
+- describe method c) for prediction signal refinement
+- introduce gradient value calculation
+- describe edge extension
+- calculate size_w*size_h gradient value
+- obtain each 4×4 gradient value
+- introduce PROF method
+- determine optical flow decision conditions
+- perform PROF process
+- obtain refined prediction sample values
+- obtain delta prediction value
+- obtain refined predictor
+- list optical flow decision conditions
+- describe indication information
+- describe derived indication information
+- derive variable fallbackModeTriggered
+- describe condition (c) for optical flow decision
+- describe condition (d) for optical flow decision
+- describe condition (e) for optical flow decision
+- describe condition (f) for optical flow decision
+- determine uni-prediction affine picture block
+- define embodiment 2
+- introduce optical flow decision conditions
+- provide examples of optical flow decision conditions
+- describe step S1102
+- obtain second prediction matrix
+- calculate horizontal and vertical prediction gradient matrices
+- calculate delta prediction value
+- obtain refined prediction sample value
+- describe alternative implementation
+- obtain second prediction matrix
+- calculate horizontal and vertical prediction gradient matrices
+- calculate delta prediction value matrix
+- obtain refined prediction sample value
+- describe another possible design
+- obtain second prediction matrix
+- calculate horizontal and vertical prediction gradient matrices
+- calculate delta prediction value matrix
+- obtain refined prediction sample value
+- describe alternative implementation
+- introduce method for prediction refinement with optical flow
+- determine optical flow decision conditions
+- perform prediction refinement with optical flow
+- obtain refined prediction sample value
+- skip prediction refinement with optical flow
+- describe alternative implementation
+- set first indicator
+- perform prediction refinement with optical flow
+- skip prediction refinement with optical flow
+- describe optical flow decision conditions
+- provide examples of optical flow decision conditions
+- describe implementation
+- set first indicator
+- provide additional information
+- introduce embodiment 2
+- provide PROF process
+- obtain first prediction matrix
+- calculate horizontal and vertical prediction gradient matrices
+- calculate delta prediction value matrix
+- obtain refined third prediction matrix
+- define first and second prediction matrices
+- define horizontal and vertical prediction gradient matrices
+- describe gradient matrix calculation
+- describe possible design for uni-prediction
+- describe possible design for bi-prediction
+- describe alternative possible design for uni-prediction
+- describe alternative possible design for bi-prediction
+- describe weighted summation for bi-prediction
+- introduce four-step PROF process
+- describe step 1: sub-block-based affine motion compensation
+- describe step 2: calculate spatial gradients
+- define spatial gradients gx and gy
+- describe gradient calculation using 3-tap filter
+- describe sub-block prediction extension
+- describe sample copying for border extension
+- describe luma prediction refinement calculation
+- describe optical flow equation
+- provide additional details on PROF process
+- conclude embodiment 2
+- define embodiment 2
+- derive Δv(i, j)
+- calculate affine model parameters
+- describe 4-parameter affine model
+- describe 6-parameter affine model
+- perform luma prediction refinement
+- illustrate apparatus 1500
+- describe determining unit 1501
+- describe prediction processing unit 1503
+- explain apparatus structure
+- describe encoder 20
+- describe decoder 30
+- explain inter prediction unit
+- describe content supply system 3100
+- explain capture device 3102
+- describe terminal device 3106
+- explain display 3126
+- describe communication link 3104
+- explain capture device functionality
+- describe video encoder 20
+- describe audio encoder
+- explain terminal device functionality
+- describe video decoder 30
+- describe audio decoder
+- illustrate terminal device 3106 structure
+- describe protocol proceeding unit 3202
+- describe demultiplexing unit 3204
+- describe video decoder 3206
+- describe audio decoder 3208
+- describe synchronous unit 3212
+- describe video/audio display 3214
+- describe subtitle decoder 3210
+- describe video/audio/subtitle display 3216
+- explain mathematical operators
+- explain embodiment combinations
+- describe hardware and software implementation
+

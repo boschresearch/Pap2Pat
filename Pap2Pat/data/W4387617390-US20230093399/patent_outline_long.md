@@ -1,0 +1,542 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of stem cell biology
+
+## BACKGROUND OF THE INVENTION
+
+- introduce stem cell technology
+- describe isolation and propagation of primordial stem cells
+- discuss telomerase and telomere length
+- describe human ES cells and their potential
+- discuss nuclear transfer and SCNT
+- describe analytical reprogramming technology
+- discuss transplant rejection and gynogenesis
+- describe parthenogenesis and its advantages
+- discuss HLA haplotypes and hemizygous cell lines
+- describe genetic modification to reduce immunogenicity
+- introduce universal donor cells
+- discuss differentiating primordial stem cells
+- describe clonal embryonic progenitor cell lines
+- discuss research and therapeutic applications
+- describe ECAPCs and BAT
+- discuss screening pluripotent stem cell-derived cells
+- describe need for improved differentiation methods
+- discuss site-specific differences in gene expression
+- describe need for purified adipocyte progenitors
+- discuss BAT cells and their importance
+- describe need for generating progenitor cell types
+- discuss need for biocompatible matrix
+- summarize needs in the field
+
+## SUMMARY
+
+- introduce invention
+- provide compounds and compositions
+- provide kits and reagents
+- provide methods for differentiation
+- provide isolated clonal progenitor cell lines
+- provide brown adipose cells in vitro
+- provide brown adipose cells in vivo
+- express FABP4 and UCP1
+- express C19orf80 and ADIPOQ
+- express FABP4, C19orf80, and ADIPOQ
+- formulate in a mixture
+- restore healthy levels of adipokines
+- generate weight loss
+- express C19orf80
+- express UCP1
+- combine formulations
+- maximize gene expression
+- obtain embryonic cellular progenitors
+- express DLK1 and HOXA5
+- express POSTN and KRT34
+- express TACT and SCARA5
+- obtain cells expressing markers
+- obtain cells expressing UCP1
+- obtain cells expressing C19orf80
+- obtain cells expressing FABP4 and UCP1
+- treat metabolic and vascular disease
+
+## DEFINITIONS AND ABBREVIATIONS
+
+### Definitions
+
+- define adipose-derived SVF
+- define adult stem cells
+- define analytical reprogramming technology
+- define blastomere/morula cells
+- define brown adipose cell
+- define cell expressing gene X
+- define cell line
+- define clonal
+- define colony in situ differentiation
+- define differentiated cells
+- define direct differentiation
+- define embryoid bodies
+- define embryonic stem cells
+- define feeder cells
+- define growth environment
+- define genetically altered
+- define human embryo-derived cells
+- define human embryonic germ cells
+- define human embryonic stem cells
+- define human iPS cells
+- describe characteristics of human iPS cells
+- describe methods of producing human iPS cells
+- provide examples of human iPS cell production methods
+- describe applications of human iPS cells
+- provide references for human iPS cell production methods
+- conclude definitions
+- define embryonic stem cells
+- define ICM cells
+- define oligoclonal
+- define pluripotent stem cells
+- define pooled clonal
+- define primordial stem cells
+- define universal donor cells
+- define subject
+- define treat
+- define tissue regeneration
+- define adiponectin
+- define FABP4
+- define lipasin
+- define UCP1
+- provide disclaimer
+- describe scope of invention
+- describe range of values
+- describe meaning of "about"
+- describe technical terms
+- describe singular forms
+- describe exclusive terminology
+- describe combination of embodiments
+- describe order of events
+- conclude definitions
+
+### Abbreviations
+
+- define BMP
+- introduce cGMP
+- abbreviate CT
+- define ECM
+- abbreviate PCR
+
+## DETAILED DESCRIPTION
+
+- solve problem of generating large populations of highly purified cellular components of human brown adipose tissue
+- differentiate pluripotent stem cells into normal functional cellular components of BAT
+- expand clonal embryonic progenitor cells or pooled clonal embryonic progenitor cells
+- cryopreserve and expand again
+- differentiate using techniques described to generate cellular components of BAT
+- optimize combination of factors for manufacturing technology
+- produce population of highly-enriched cells capable of differentiating into ADIPOQ, C19orf80, and UCP1-expressing
+- develop methods to efficiently produce BAT cells from hES cells
+- genetically modify hES cells to allow introduction of genetic modifications
+- manufacture industrial scale quantities of BAT cells
+- provide system to generate unbounded quantities of BAT cells
+- describe use of BAT cells in research and pharmaceutical development
+- provide pharmaceutical compositions, devices, and treatment methods
+- regenerate and remodel BAT to restore youthful fat, lipoprotein, and glucose metabolism
+- describe importance of generating progenitor cell types from ES and iPS cells
+
+### Sources of Stem Cells
+
+- describe sources of stem cells suitable for use in this invention
+
+### Pluripotent Stem Cells
+
+- define pluripotent stem cells
+- describe capabilities of pluripotent stem cells
+- list examples of pluripotent stem cells
+- describe genetic modification of pluripotent stem cells
+- describe isolation of human embryonic stem cells
+- describe preparation of human embryonic stem cells
+
+### Reprogramming of Somatic Cells
+
+- prepare reprogramming medium
+- prepare human fibroblasts for reprogramming
+- transition human fibroblasts to reprogramming medium
+- transfect human fibroblasts with microRNAs
+- transfect human fibroblasts with mRNA cocktail
+- repeat transfection of mRNA
+- isolate RNA-reprogrammed iPS cell lines
+- expand clonal, stable RNA-reprogrammed iPS cell lines
+- characterize RNA-reprogrammed iPS cell lines
+
+### Propagation of Human Pluripotent Stem Cells in an Undifferentiated State
+
+- define culture conditions for human pluripotent stem cells
+- describe serum-containing ES medium composition
+- introduce feeder cells for ES cell culture
+- describe preparation of feeder cell layer
+- introduce feeder-free culture method
+- describe extracellular matrix for feeder-free culture
+- outline cell plating and enzymatic digestion
+- describe harvesting and plating of cells without enzymes
+- introduce nutrient medium for feeder-free culture
+- describe conditioning of medium with irradiated feeder cells
+- outline addition of factors supporting proliferation
+- describe features of feeder-free culture method
+- characterize relatively undifferentiated pluripotent stem cells
+- describe expression of stage-specific embryonic antigens
+- introduce parental cell lines of the invention
+- describe characterization and differentiation of cell lines
+- introduce cell line NP110SM
+- describe expansion and quiescence of NP110SM cells
+- outline gene expression markers of NP110SM cells
+- describe differentiation of NP110SM cells into BAT cells
+- outline expression of BAT-specific markers
+- describe importance of innervation by sympathetic nervous system
+- introduce Netrin G1 as axon guidance cue
+- describe value of clonal embryonic stem cell lines
+- introduce cell line C4ELS5.1
+- describe expansion and quiescence of C4ELS5.1 cells
+- outline gene expression markers of C4ELS5.1 cells
+- introduce cell line C4ELSR2
+- describe expansion and quiescence of C4ELSR2 cells
+- outline gene expression markers of C4ELSR2 cells
+- introduce cell line E72
+- describe expansion and quiescence of E72 cells
+- outline gene expression markers of E72 cells
+- describe differentiation of E72 cells into BAT cells
+- outline expression of osteogenic markers
+- describe potential applications of cell lines
+- describe cell lines E75 and E163
+- gene expression markers of E75
+- gene expression markers of E163
+- differentiate E75 in HyStem with TGFβ3 and BMP4
+- expression of osteogenic markers
+- expression of enamel markers
+- differentiate E75 in HyStem with BMP4
+- expression of adipocyte markers
+- usefulness of differentiated cells
+- formulate cells in hydrogels
+- transplant cells for therapeutic applications
+- reduce immunogenicity of parental and progeny cell lines
+- HLA molecules and immune system
+- methodologies to minimize immunogenicity
+- matching donor HLA types with recipient HLA-type
+- remove HLA alleles
+- knock out Beta-2 microglobulin
+- suppress HLA class II molecules
+- express non-polymorphic HLA molecule
+- knock out/editing HLA alleles
+- overexpress HLA-G
+- other immune modulation strategies
+- progenitor cells that give rise to brown fat cells
+- markers expressed by brown fat cells
+- isolated cell line expressing C19orf80
+- combined formulation of cells expressing C19orf80 and UCP1
+
+### Progenitor Cell Lines
+
+- define progenitor cells
+- introduce ES cell or iPS cell origin
+- describe obtaining progenitor cells from ES cell line
+- specify passaging of progenitor cells
+- describe differentiation of progenitor cells
+- characterize multipotent progenitor cells
+- distinguish from pluripotent cells
+- distinguish from mesenchymal stem cells
+- describe gene expression of progenitor cells
+- introduce specific progenitor cell lines
+- describe gene expression of C4ELSR2 cell line
+- describe gene expression of C4ELS5.1 cell line
+- describe gene expression of E3 cell line
+- describe gene expression of E72 cell line
+- describe gene expression of E75 cell line
+- describe gene expression of E163 cell line
+- describe gene expression of NP110SM cell line
+- describe potential of progenitor cells to differentiate
+- introduce adult-derived cells for BAT cell manufacture
+- describe immortalization of smooth muscle cells
+- describe immortalization of BAT tissue-derived preadipocytes
+- introduce progenitor cell lines
+- describe differentiation methods
+- motivate scalability of somatic progenitors
+- define embryonic progenitors
+- describe chondrogenic potential of hEP lines
+- detail 4D20.8 cell line
+- compare osteochondral progenitor lines
+- describe site-specific gene expression
+- provide cell culture embodiments
+- describe C4ELSR2, C4ELS5.1, E3, E72, E75, E163, and NP110SM
+- introduce clonal embryonic vascular endothelial cells
+- describe differentiation of hES or iPS cells
+- detail endothelial cell culture
+- describe uses of ITLN1 or ITLN2-expressing endothelial cells
+- motivate Universal Donor Cells
+- describe co-injection with hydrogels, SVF, and cells
+- detail dosage of ITLN1-expressing endothelial cells
+- introduce clonal embryonic progenitor line nomenclature
+- describe previously described cell lines
+- detail NP110SM cell line
+- describe nomenclature modifications
+- define passage number and population doubling number
+- describe expansion of clones
+- detail RNA extraction
+- describe subsequent passages and PDs
+- introduce propagation of clonal, pooled clonal, oligoclonal, and pooled oligoclonal cell lines
+- describe methods for identifying and differentiating embryonic progenitor cell lines
+- provide examples of cell lines and cell culture media
+
+### Limb Bud Mesenchyme
+
+- introduce Axolotls regeneration
+- describe blastema composition
+- motivate human tissue regeneration
+- introduce ELBM cells
+- describe HOX gene expression
+- compare with adult-derived stem cells
+- introduce clonally-purified human embryonic progenitor mesenchyme cell lines
+- describe HOXA10 expression
+- motivate site-specific tissue regeneration
+- introduce methods to manufacture homogeneous cells
+- describe cell formulation options
+- motivate therapy applications
+
+### Initial Differentiation of hES Cells for BAT Progenitor Derivation
+
+- describe hES cell maintenance
+- outline initial differentiation protocol
+
+### Generation of Stock Candidate Cultures
+
+- describe EB formation
+- outline dissociation and replating protocol
+- describe candidate culture expansion
+
+### Generation of Clonal Embryonic Progenitor Cell Lines From Candidate Cultures
+
+- prepare cloning dishes
+- add NP(+) medium to dishes
+- manually dilute single cell suspension
+- achieve different densities of single cell suspension
+- use automatic cell deposition unit
+- use flow sorting or affinity purification techniques
+- select cells enriched for antigens present on NP110SM cells
+- incubate dishes in CO2 incubator
+- allow single cells to attach to culture dish surface
+- allow colonies to grow to sufficient size for isolation
+- use NP(+) media conditioned by NP110SM cells
+- visually inspect dishes
+- pick well-separated cell colonies
+- plate isolated cell colonies into 24 well plates
+- culture in Promocell Smooth Muscle Cell Growth Medium 2
+- further culture in SM media
+- dissociate cells using TrypLE
+- replate in progressively larger tissue culture vessels
+- cryopreserve cells in T225 flask(s)
+- seed for immunostaining and RNA isolation
+- screen for cells with pattern of gene expression like NP110SM
+- amplify transcripts for HOXA5 and IL13RA2
+- serially passage cells in original medium
+- disaggregate and replate cells at lower density
+- prevent undesired differentiation at high density
+- expose cells to differentiation conditions
+- assay for markers of differentiation
+- analyze mRNA transcripts by PCR or gene expression microarray
+- identify cells expressing FABP4 and CD36
+- identify cells expressing BETATROPHIN
+- differentiate progenitor cells using TGFβ superfamily members
+- differentiate progenitor cells using retinol
+- differentiate progenitor cells using thyroid hormone
+- differentiate progenitor cells using adrenergic agonist
+- introduce HyStem-C matrix
+- describe cell line freezing and thawing
+- discuss high-throughput robotic systems
+- analyze gene expression microarray data
+- identify genes regulated by HyStem-C
+- describe cell line E15 and W10
+- discuss therapeutic implications of HyStem-C
+- introduce diverse clonal embryonic progenitor cell lines
+- describe differentiation responses to growth factors
+- discuss adipocyte differentiation
+- introduce C19orf80-expressing adipocytes
+- describe gene expression profiles of cell lines E72, E75, and E163
+- discuss differentiation of cell lines into C19orf80-expressing adipocytes
+- introduce HEPACAM+ adipocytes
+- discuss therapeutic applications of C19orf80-expressing adipocytes
+- describe methods for treating type I and type II diabetes
+- introduce mitotically inactivated C19orf80-expressing adipocytes
+- discuss telomere length extension in pancreatic beta cells
+- introduce methods and compositions for cryo-preserving cells
+- describe cryopreserved progenitor cells
+- introduce cryopreserved in vitro differentiated progeny of progenitor cells
+- discuss hydrogel compositions for cryopreservation
+- describe methods for cryo-preserving cells in hydrogels
+- introduce therapeutic applications of cryopreserved compositions
+- describe method of cryo-preserving cells using FBS and DMSO
+- describe method of cryo-preserving cells using FBS and glycerol
+- introduce hEP cells and in vitro differentiated progeny
+- discuss hydrogel compositions and cell seeding
+- describe media compositions for cryopreservation
+- introduce general laboratory techniques
+- provide references for stem cell biology and manipulation
+- cite molecular genetics and genetic engineering references
+- introduce applications of disclosed methods
+- describe research uses of brown fat progenitors and cells
+- describe therapeutic uses of brown fat progenitors and cells
+- highlight commercial advantages of master cell banks
+- describe formulations for producing three-dimensional adipose tissue
+- introduce drug screening using cells of this invention
+- describe screening factors that promote maturation into brown fat cells
+- describe screening small molecule drugs that affect brown fat cell activity
+- describe testing pharmaceutical compounds for effect on brown fat cell growth
+- describe assessing activity of candidate pharmaceutical compounds
+- determine cytotoxicity of compounds
+- describe use of differentiated progeny as feeder cells
+- describe use of extracellular matrix to support less differentiated cells
+- describe use of conditioned media for research and therapy
+- identify and characterize genes activated or repressed during differentiation
+- describe making gene trap cells and detecting changes in gene expression
+- describe inducing single cell-derived or oligoclonal cell-derived cells to differentiate
+- describe regulated expression of factors that overcome inhibition of cell cycle
+- describe delivering factors that override cell cycle arrest using protein transduction domains
+- introduce use of BAT precursor and fully differentiated BAT cells in clinical therapy
+- describe treatment of disorders relating to cell biology, adipocyte differentiation, and lipoprotein metabolism
+- describe generating cDNA libraries to study gene expression in developing tissue
+- describe using hEP cells and differentiated progeny in drug screening
+- describe screening for gene expression to determine effects of drugs
+- describe using differentiated progeny to screen for effects of growth factors and hormones
+- describe introducing differentiated progeny into tissues to exhibit therapeutic utility
+- describe using differentiated progeny to induce differentiation of other pluripotent stem cells
+- describe cell-cell induction to direct differentiation
+- conclude applications of disclosed methods
+- introduce cell types influenced by inductive signals
+- describe differentiation of pluripotent stem cells
+- explain induction methods
+- describe use of removable membrane
+- describe use of biocompatible matrix
+- formulate BAT cells for therapeutic use
+- describe preparation of BAT cells
+- formulate BAT cells with patient-specific adipose stromal vascular fraction
+- describe graft augmentation with pluripotent stem cell-derived vascular progenitors
+- describe pharmaceutical composition of BAT cells
+- describe matrix for keeping BAT cells in place
+- list possible matrices
+- describe transplantation of BAT cells
+- describe dosage and concentration of BAT cells
+- describe assessment of therapy effectiveness
+- describe site of engraftment
+- describe genetic modification of BAT cells
+- describe prevention of atherosclerosis
+- describe management of Type I and Type II diabetes
+- describe composition or device packaging
+- describe adaptations of the invention
+- describe immortalization of hEP cell line
+- describe use of phage display technology
+- describe measurement of gene expression levels
+- describe normalization of gene expression data
+- describe expression of CD antigen genes
+- describe use of CD antigens for sorting cells
+- describe injection of cells into mice to raise antibodies
+- describe use of cells for generating diverse cell types
+- describe use of cells in animal transplant models
+- describe manufacturing of betatrophin and adiponectin
+- describe harvesting of mRNA, microRNA, and cDNA
+- describe generation of database of gene expression information
+- describe hierarchical clustering analysis
+- describe use of gene expression analysis to identify developmental pathways
+- describe Oil Red-O staining
+- detail staining procedure
+- motivate gene expression analysis
+- describe RNA isolation
+- detail RNA purification
+- describe cDNA synthesis
+- detail cDNA purification
+- motivate qRT-PCR analysis
+- describe qRT-PCR setup
+- detail qRT-PCR conditions
+- describe qPCR primer design
+- detail qPCR primer synthesis
+- motivate secreted protein isolation
+- describe Secreted Protein Isolation Protocol 1
+- detail conditioned medium collection
+- describe protein concentration and purification
+- motivate Secreted Protein Isolation Protocol 2
+- describe urea-mediated protein extraction
+- motivate extracellular matrix isolation
+- describe DOC-mediated matrix preparation
+- motivate screening of secreted proteins
+- describe biological activity assays
+- introduce cell culture methods
+- describe cell lines and media
+- detail chondrogenic differentiation in HyStem BMP4/BMP7
+- list chondrogenic medium components
+- describe adipogenesis protocol 3
+- detail adipocyte differentiation condition
+- describe differentiation medium
+- detail confluence adipocyte cell differentiation condition
+- describe RNA extraction
+- detail micromass differentiation conditions
+- describe micromass culture
+- detail HyStem bead differentiation condition
+- describe HyStem-C matrix preparation
+- detail cell suspension and gelation
+- describe differentiation medium addition
+- detail cell feeding and harvesting
+- describe March Adipo 2 adipocyte differentiation condition
+- detail BMP7 and Rosiglitazone supplementation
+- describe March Adipo 4 adipocyte differentiation condition
+- detail BMP7 and Rosiglitazone supplementation
+- describe March Adipo 6 adipocyte differentiation condition
+- detail BMP4 and Rosiglitazone supplementation
+- describe high-throughput differentiation analysis
+- detail cryopreservation and thawing of beads
+- describe gene expression microarray analysis
+- define March Adipo 7 Adipocyte Differentiation Condition
+- define HyStem Osteo Cell Differentiation Condition
+- describe gene expression analysis
+- summarize RNA extraction and quality control
+- describe whole-genome expression analysis
+- describe qRT-PCR confirmation
+- analyze comparative mRNA expression
+- introduce seven responsive hEP cell lines
+- describe screen for site-specific hEP cell lines
+- describe adipocyte differentiation protocol
+- analyze mRNA expression by microarray analysis
+- describe kits and media
+- introduce TGF-β superfamily members
+- describe media supplementation with TGF-β superfamily members
+- describe media supplementation with retinoic acid
+- describe hydrogel composition
+- describe biological deposits
+- introduce example 1: analysis of effects of differentiation conditions
+- describe expression of transcript PCK1
+- describe expression of transcript NNAT
+- describe expression of transcript THRSP
+- describe expression of transcript CEBPA
+- describe expression of transcript CIDEA
+- describe expression of transcript COX7A1
+- introduce example 2
+- describe characteristics of cell line C4ELSR2
+- describe differentiation of cell line C4ELSR2
+- introduce example 3
+- describe genetic modification of human ES cell lines
+- describe establishment of master and working cell banks
+- describe differentiation of working cell banks
+- introduce example 4
+- describe differentiation of cell line C4ELS5.1
+- describe gene expression analysis of cell line C4ELS5.1
+- describe characteristics of cell line E85
+- describe gene expression analysis of cell line E85
+- compare gene expression of cell lines C4ELS5.1 and E85
+- describe utility of cell line C4ELS5.1
+- introduce example 5
+- describe isolation of cell line NP110SM
+- describe gene expression analysis of cell line NP110SM
+- describe differentiation of cell line NP110SM
+- describe gene expression analysis of differentiated NP110SM cells
+- compare gene expression of NP110SM and fBAT cells
+- describe expression of Netrin G1 in NP110SM cells
+- describe utility of cell line NP110SM
+- summarize characteristics of cell line NP110SM
+- describe potential therapeutic applications of cell line NP110SM
+- describe potential cosmetic applications of cell line NP110SM
+- describe potential applications of cell line NP110SM in tissue repair and regeneration
+- describe potential applications of cell line NP110SM in alleviating symptoms of diseases
+- conclude description of cell line NP110SM
+

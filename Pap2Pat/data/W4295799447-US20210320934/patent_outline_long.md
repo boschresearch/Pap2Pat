@@ -1,0 +1,176 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- define IP reputation
+
+## BACKGROUND
+
+- explain IP reputation systems
+
+## DETAILED DESCRIPTION
+
+- introduce IP reputation systems
+- limitations of protocol specific IP reputation systems
+- benefits of leveraging multiple protocol specific reputations
+- describe combinatorial effect of features
+- limitations of blocklists
+- example scenarios where IP address should be blocked
+- limitations of previous IP blocking systems
+- introduce machine learning (ML) and artificial intelligence (AI)
+- describe ML model training process
+- introduce supervised and unsupervised training
+- describe ensemble trees training
+- introduce hyperparameters
+- describe re-training of ML models
+- introduce training data
+- describe IP behavioral data sources
+- introduce labeling of training data
+- describe confidence scoring
+- introduce data pre-processing
+- describe model deployment
+- introduce model execution
+- describe output post-processing
+- introduce feedback analysis
+- describe model updating
+- introduce FIG. 1
+- describe reputation data store
+- introduce email data store
+- introduce HTTP data store
+- introduce network data store
+- describe reputation controller
+- introduce data collector
+- describe data collector functionality
+- introduce label generator
+- describe label generator functionality
+- introduce confidence scorer
+- describe confidence scorer functionality
+- introduce data selector
+- describe data selector functionality
+- introduce feature identifier
+- describe feature identifier functionality
+- introduce model trainer
+- describe model trainer functionality
+- introduce model executor
+- describe model executor functionality
+- introduce model data store
+- describe model data store functionality
+- introduce reputation request servicer
+- describe reputation request servicer functionality
+- introduce client device
+- describe client device functionality
+- introduce FIG. 2
+- describe message monitor
+- describe data querier and threat responder
+- introduce detailed description
+- describe message monitor
+- identify features of message
+- describe data querier
+- forward features to reputation request servicer
+- describe threat responder
+- determine maliciousness of message
+- describe responsive action
+- describe alternative implementations
+- describe client device
+- describe message monitor implementation
+- describe data querier implementation
+- describe threat responder implementation
+- describe alternative client device implementations
+- describe flowcharts of reputation controller and client device
+- describe machine readable instructions
+- describe hardware logic and state machines
+- describe executable programs
+- describe non-transitory computer readable storage medium
+- describe alternative instruction languages
+- describe machine readable instructions storage
+- describe compressed and encrypted formats
+- describe installation and modification of instructions
+- describe library and software development kit requirements
+- describe configuration of instructions
+- describe instruction language examples
+- describe non-transitory computer readable medium
+- define including and comprising
+- define at least one of
+- describe singular references
+- describe flowchart of example process
+- collect data from reputation data store
+- identify first features from first data set
+- identify second features from second data set
+- describe first features of HTTP data set
+- describe second features of email data set
+- describe pre-labeled data sets
+- describe confidence value
+- describe machine learning model training
+- describe cross-protocol analysis
+- define features of data sets
+- motivate time windows for features
+- describe standard weekly behavior cycles
+- motivate aberrant behavior detection
+- generate combined labels and confidence scores
+- describe training data set creation
+- select training data for model training
+- filter training data by label
+- train machine learning model
+- review model output for error
+- determine whether to continue training
+- adjust model parameters
+- store trained model
+- determine if model requires retraining
+- generate label and confidence score
+- select first label from first data set
+- select second label from second data set
+- combine labels and assign confidence score
+- describe lookup table for combined labels
+- illustrate example lookup table
+- describe label confidence column
+- describe IP reputation system
+- introduce cross-protocol analysis
+- explain data collection process
+- describe label generation process
+- introduce machine learning model
+- describe model training process
+- explain model execution process
+- describe reputation request servicer
+- introduce client device process
+- describe message monitoring process
+- explain feature identification process
+- describe data querying process
+- introduce threat response process
+- describe processor platform architecture
+- explain memory hierarchy
+- describe input/output devices
+- introduce communication device
+- describe mass storage devices
+- explain machine executable instructions
+- describe client device architecture
+- explain message monitoring process
+- describe data querying process
+- introduce threat response process
+- describe processor platform architecture
+- explain memory hierarchy
+- describe input/output devices
+- introduce communication device
+- describe mass storage devices
+- explain machine executable instructions
+- describe example 1
+- describe example 2
+- describe example 3
+- describe example 4
+- describe example 5
+- describe example 6
+- describe example 7
+- describe example 8
+- describe example 9
+- describe example 10
+- describe example 11
+- describe example 12
+- describe example 13
+- describe example 14
+- describe example 15
+- describe example 16
+- describe example 17
+- describe example 18
+- describe example 19
+- describe example 20
+- describe example 21-29
+

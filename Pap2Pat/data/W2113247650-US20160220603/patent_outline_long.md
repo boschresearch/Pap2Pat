@@ -1,0 +1,196 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce metabotropic glutamate receptors
+- describe receptor structure
+- explain receptor function
+- discuss ligands and their effects
+- mention potential therapeutic applications
+- provide background references
+
+## SUMMARY
+
+- introduce method for modulating mGluR activity
+- describe orthosteric and allosteric drugs
+- mention potential therapeutic applications
+- introduce method for treating diseases
+- describe administering calcium agents
+- discuss dosage and formulation
+- mention composition and optimal amounts
+
+## DETAILED DESCRIPTION
+
+- introduce mGluR1α and its sensing of [Ca2+]o
+- describe mGluR1-mediated activation of Ca2+-activated Cl− channels
+- discuss modulation of mGluR1 activity by [Ca2+]o
+- identify [Ca2+]o-binding site in the hinge region of the ECD of mGluR1α
+- describe the role of D318, E325, D322, and L-Glu in [Ca2+]o binding
+- discuss synergistic modulation of mGluR1α by L-Glu and Ca2+
+- examine the effect of mutating L-Glu- and Ca2+-binding sites on mGluR1α activity
+- investigate the role of [Ca2+]o in modulating the actions of orthosteric ligands
+- study the interaction between Ca2+ and mGluR1 allosteric modulators
+- discuss the enhancement of [3H]-L-Quis binding to mGluR1α by [Ca2+]o
+- examine the effect of (s)-MCPG on mGluR1α activity
+- discuss the potentiation of Ro-674853 by [Ca2+]o
+- describe the inhibition of mGluR1α by CPCCOEt
+- summarize the modulation of mGluR1α activity by [Ca2+]o
+- introduce orthosteric and allosteric mGluR modulators
+- describe the use of orthosteric agonists and antagonists of mGluR
+- discuss the use of allosteric modulators of mGluR
+- introduce extracellular calcium modulators
+- describe the use of calcium agents to modulate extracellular calcium levels
+- discuss the effect of calcium levels on mGluR activity
+- introduce calcium supplements
+- describe the absorption of calcium from the gastrointestinal tract
+- discuss the role of vitamin D in calcium absorption
+- introduce neurotransmitters or amino acids that affect mGluR sensitivity to calcium
+- describe the effect of L-glutamate on mGluR activity
+- introduce electric or mechanical stimulation as a calcium agent
+- discuss the use of biosensors to measure extracellular calcium levels
+- describe the adjustment of extracellular calcium levels to optimal levels
+- introduce methods of treatment using disclosed compositions and methods
+- discuss the treatment of neurological and psychiatric disorders
+- describe the treatment of cognitive disorders and anxiety disorders
+- summarize the treatment of various diseases and disorders using disclosed compositions and methods
+- introduce therapeutic agents for CNS disorders
+- describe combinations of disclosed compositions with other therapeutic agents
+- list examples of therapeutic agents for combination therapy
+- describe administration of disclosed compositions with sedatives, hypnotics, anxiolytics, antipsychotics, and antidepressants
+- list examples of sedatives, hypnotics, anxiolytics, antipsychotics, and antidepressants
+- describe administration of disclosed compositions with levodopa and other neuroleptic agents
+- list examples of neuroleptic agents
+- describe administration of disclosed compositions with anoretic agents
+- list examples of anoretic agents
+- describe administration of disclosed compositions with antidepressant or anti-anxiety agents
+- list examples of antidepressant or anti-anxiety agents
+- describe administration of disclosed compositions with opiate agonists, lipoxygenase inhibitors, and other agents
+- list examples of opiate agonists, lipoxygenase inhibitors, and other agents
+- introduce dosage forms of pharmaceutical compositions
+- describe preparation of pharmaceutical compositions
+- list examples of excipients for tablets
+- describe coating of tablets
+- describe hard gelatin capsules
+- describe soft gelatin capsules
+- describe aqueous suspensions
+- list examples of suspending agents
+- describe oily suspensions
+- describe dispersible powders and granules
+- describe oil-in-water emulsions
+- describe syrups and elixirs
+- describe sterile injectable aqueous solutions, micellar formulations, and oleaginous suspensions
+- describe vehicles and solvents for injectables
+- introduce therapeutically effective amounts of mGluR orthosteric or allosteric drug
+- describe dosage levels
+- describe dosage regimens
+- describe factors affecting dosage regimens
+- introduce therapeutic administration of disclosed compositions
+- describe routes of administration
+- describe formulation of disclosed compositions
+- describe carriers, adjuvants, and vehicles for administration
+- describe oral administration
+- describe parenteral administration
+- describe inhalation administration
+- describe topical administration
+- conclude therapeutic administration of disclosed compositions
+
+### DEFINITIONS
+
+- define selective agents
+- define orthosteric ligands
+- define allosteric ligands
+- explain affinity
+- define allosteric modulators
+- define subject and patient
+- define therapeutically effective
+- define pharmaceutically acceptable
+
+### EXAMPLES
+
+- introduce experimental procedures
+- dock L-Quis to ECD-mGluR1α using Autodock-Vina
+- analyze binding residues using Dymdon
+- perform MD simulation and correlation analysis using Amber
+- construct mGluR1α variants with site-directed mutagenesis
+- express mGluR1α variants in HEK293 cells
+- measure effect of [Ca2+]o on activation of mGluR1α by L-Quis
+- measure [Ca2+]i responses to L-Glu or L-Quis
+- determine effect of [Ca2+]o on potency of Ro 67-4853
+- measure [Ca2+]i responses in presence of CPCCOEt
+- determine effect of [Ca2+]o on [3H]-L-Quis binding
+- analyze predicted [Ca2+]o-binding site
+- model binding site for L-Quis using Autodock-Vina
+- analyze correlation between [Ca2+]o-binding site and L-Glu-binding site
+- perform molecular dynamics simulations
+- analyze correlation between [Ca2+]o-binding site and L-Quis-binding site
+- determine effect of [Ca2+]o on activation of mGluR1α by L-Quis
+- analyze effect of [Ca2+]o on L-Quis CRC
+- test effect of [Ca2+]o on activation of mGluR1α variants
+- analyze effect of [Ca2+]o on L-Quis binding to mGluR1α variants
+- determine effect of (s)-MCPG on sensitivity of mGluR1α to L-Glu
+- analyze effect of (s)-MCPG on L-Glu CRC
+- determine effect of (s)-MCPG on sensitivity of mGluR1α to [Ca2+]o
+- analyze effect of (s)-MCPG on [Ca2+]o CRC
+- test effect of CPCCOEt on L-Glu-induced [Ca2+]i response
+- analyze effect of CPCCOEt on L-Glu CRC
+- test effect of CPCCOEt on [Ca2+]o-induced [Ca2+]i response
+- analyze effect of CPCCOEt on [Ca2+]o CRC
+- determine effect of Ro 67-4853 on activation of mGluR1α by [Ca2+]o
+- analyze effect of Ro 67-4853 on [Ca2+]o CRC
+- summarize predicted [Ca2+]o-binding site
+- summarize correlation between [Ca2+]o-binding site and L-Glu-binding site
+- summarize effect of [Ca2+]o on activation of mGluR1α by L-Quis
+- summarize effect of [Ca2+]o on L-Quis binding to mGluR1α
+- summarize effect of (s)-MCPG on sensitivity of mGluR1α to L-Glu and [Ca2+]o
+- summarize effect of CPCCOEt on L-Glu-induced and [Ca2+]o-induced [Ca2+]i responses
+- summarize effect of Ro 67-4853 on activation of mGluR1α by [Ca2+]o
+- conclude that [Ca2+]o regulates effects of orthosteric ligands on mGluR1α
+- introduce mGluR1α
+- describe Ca2+ binding site
+- motivate Ca2+ effect on mGluR1α
+- describe L-Glu-induced activation
+- show Ca2+ enhancement of L-Glu binding
+- discuss Ca2+ release from ER
+- describe Ca2+ influx through store-operated channels
+- show Ca2+ effect on L-Quis binding
+- discuss Ca2+ modulation of orthosteric ligands
+- describe predicted Ca2+ binding site
+- show correlation between Ca2+ binding site and orthosteric binding sites
+- discuss conservation of Ca2+ binding site
+- describe effect of Ca2+ on responses to orthosteric agonists and antagonists
+- discuss Molecular Dynamics studies
+- describe effect of Ca2+ on allosteric modulators
+- show CPCCOEt inhibition of L-Glu response
+- describe Ca2+ restoration of CPCCOEt sensitivity
+- discuss potential therapeutic effect of CPCCOEt
+- describe Ro 67-4853 enhancement of L-Glu response
+- show Ca2+ reduction of Ro 67-4853 EC50 value
+- discuss allosteric interaction between Ca2+ binding site and Ro 67-4853 site
+- describe E325I mutation effect on Ca2+ modulation of Ro 67-4853
+- discuss integrated action of ECD and TMDs
+- describe potential of Ca2+ to modulate profile of agents acting on mGluR1α
+- introduce Example 2
+- describe Methods for Example 2
+- describe mGluR5 transfection and Fura-2 loading
+- describe fluorescence microscopy measurement
+- show Ca2+ induction of intracellular Ca2+ oscillation in mGluR5-transfected cells
+- describe Ca2+ concentration effect on oscillation frequency
+- discuss mGluR5 Ca2+ binding site conservation
+- describe Ca2+ effect on mGluR5
+- discuss potential of Ca2+ to modulate mGluR5
+- describe potential therapeutic implications
+- discuss family C GPCRs modulation by Ca2+
+- describe potential for developing allosteric modulators
+- discuss co-activation induced by endogenous agonists and PAMs
+- conclude modulation of mGluR1α by Ca2+
+- describe experimental methods
+- report effects of extracellular Ca2+ on mGluR5 response to L-Glu
+- report effects of extracellular Ca2+ on mGluR5 response to Ro-674853
+- report effects of extracellular Ca2+ on mGluR5 response to L-Quis
+- describe methods for Example 4
+- report results of Example 4
+- describe activation of mGluR1 by glutamate and calcium
+- report results of mGluR1 activation
+- define technical and scientific terms
+- discuss equivalents to specific embodiments
+

@@ -1,0 +1,307 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND OF THE INVENTION
+
+- introduce cancer
+- describe genetic alterations
+- discuss ROR1 and ROR2
+- describe ROR2 expression in cancer
+- discuss ROR protein structure
+- highlight challenges in developing ROR2 antibodies
+- describe normal physiology of hROR2
+- identify need for high-quality anti-ROR2 antibodies
+
+## SUMMARY OF THE INVENTION
+
+- introduce fully human antibodies binding to ROR2
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention
+- describe non-limiting embodiments
+- provide antibody selection process
+- describe antibody drug conjugates
+- describe antibody effector conjugates
+- describe chimeric antigen receptors
+- describe bi- or multispecific antibodies
+- describe isolated polynucleotides and expression vectors
+- describe use of antibodies for treating neoplastic disease
+- describe method for treating neoplastic disease
+- describe method for detecting neoplastic disease
+
+### Definitions
+
+- define human antibody
+- define antibody-based binding protein
+- define modified antibody format
+- define antibody derivative or fragment
+- describe intact antibody structure
+- describe immunoglobulin genes
+- describe heavy and light chain classification
+- describe heavy chain constant region
+- describe light chain constant region
+- describe variable regions
+- describe complementarity-determining regions
+- describe framework regions
+- describe single chain antibody
+- describe single chain variable region fragment
+- describe antibody-based binding proteins
+- describe antigen-binding fragments
+- describe Fab fragment
+- describe F(ab′)2 fragment
+- describe Fd fragment
+- describe Fv fragment
+- describe disulfide stabilized Fvs
+- describe single domain antibody
+- describe isolated complementarity determining region
+- describe methods for generating antibodies
+- describe methods for generating scFv antibodies
+- describe methods for generating Fv fragments
+- describe methods for generating dsFvs
+- describe methods for generating dAbs
+- describe methods for generating camelid single domain antibodies
+- describe conservatively modified variant
+- describe silent variations
+- describe percent identity
+
+### DETAILED DESCRIPTION OF EMBODIMENTS
+
+- introduce human anti-ROR2 antibodies
+- define antibody-based binding proteins
+- describe antigen-binding fragments
+- motivate AECs, ADCs, or CARs
+- specify binding to ROR2 epitope
+- describe antibody, derivative, modified format or fragment
+- summarize SEQ ID NO:2-25
+- describe assays for assessing binding competition
+- motivate methods for determining binding epitope
+- describe preferred embodiment of fully human anti-ROR2 antibodies
+- specify binding affinity
+- describe kon, koff, and Kd
+- motivate binding affinity determination methods
+- introduce fully human anti-ROR2 antibodies, antibody-based binding proteins
+- describe VH chain comprising three CDRs
+- specify peptide sequences for V_(H) CDR no. 1, 2, and 3
+- define anti-ROR2 antibodies
+- specify VH chain CDRs
+- list VH CDR1 sequences
+- list VH CDR2 sequences
+- list VH CDR3 sequences
+- specify VH chain CDRs with Table 3
+- specify VH chain CDRs with given triplets
+- specify VH chain CDRs with preferred triplets
+- define VL chain CDRs
+- specify VL chain CDRs
+- list VL CDR1 sequences
+- list VL CDR2 sequences
+- list VL CDR3 sequences
+- specify VL chain CDRs with Table 3
+- specify VL chain CDRs with given triplets
+- specify VL chain CDRs with preferred triplets
+- define VL and VH chain CDRs
+- specify VL and VH chain CDRs with Table 3
+- specify VL and VH chain CDRs with given triplets
+- specify VL and VH chain CDRs with preferred triplets
+- define anti-ROR2 antibodies
+- specify VL and VH chain sequences
+- describe cross-reactivity
+- motivate cross-reactivity advantages
+- specify CDR sets
+- describe antibody-based binding proteins
+- specify sequence pairs
+- describe bi- or multispecific antibodies
+- specify effector antigens
+- show sequences
+- describe preferred heavy chain/light chain pairs
+- define substantially identical sequences
+- describe conservatively modified variants
+- specify antibody isotypes
+- describe bivalent antibodies
+- specify binding targets
+- describe embodiments of anti-ROR2 antibodies
+- describe binding to human ROR2 and cynomolgus ROR2
+- describe binding to cynomolgus ROR2 and human ROR2
+- describe binding to human ROR2 and mouse ROR2
+- describe binding to mouse ROR2 and human ROR2
+- describe cross reactivity with mouse ROR2
+- describe binding to human ROR2, cynomolgus ROR2, and mouse ROR2
+- describe polynucleotides encoding anti-ROR2 antibodies
+- describe host cells transformed with polynucleotides
+- describe methods of making anti-ROR2 antibodies
+- describe expression vectors for producing anti-ROR2 antibodies
+- describe promoters and regulatory elements for expression vectors
+- describe secretion signal sequences for expression vectors
+- describe host cells for expressing anti-ROR2 antibodies
+- describe methods for introducing expression vectors into host cells
+- describe stable expression of anti-ROR2 antibodies
+- describe antibody effector conjugates (AECs)
+- describe antibody drug conjugates (ADCs)
+- describe linkers for ADCs and AECs
+- describe cytotoxic and/or cytostatic agents for ADCs
+- describe site-specific conjugation of payloads to antibodies
+- describe non-site-specific conjugation of payloads to antibodies
+- describe general formula for ADCs
+- describe general formula for AECs
+- describe oligopeptide linkers
+- describe hydrazine linkers
+- describe thiourea linkers
+- describe self-immolative linkers
+- describe SMCC linkers
+- describe disulfide linkers
+- describe thioether linkers
+- describe maleimide linkers
+- describe cleavable spacers for linkers
+- describe protease-cleavable linkers
+- describe valine-citruline PAB linkers
+- describe LPXTGn- linkers
+- describe LPXAGn- linkers
+- describe NPQTGn- linkers
+- define ADC and AEC
+- describe conjugation of linker to antibody
+- motivate cytotoxic agent
+- list examples of cytotoxic agents
+- describe therapeutic agents
+- list examples of therapeutic agents
+- describe preferred embodiment of ADC
+- describe toxin selection
+- describe formula (i) toxin
+- describe linker composition
+- describe molecule for conjugation
+- describe label selection
+- describe stoichiometric ratio
+- describe conjugation to heavy chains
+- describe conjugation to light chains
+- describe multiple toxin or label binding
+- describe conjugation methods
+- describe SMAC-technology
+- describe sortase recognition motif
+- describe oligoglycine tag
+- describe method of producing AEC or ADC
+- describe sortase-mediated conjugation
+- describe sortase enzyme recognition motif
+- describe resulting linker sequences
+- describe engineered sortases
+- describe sortase transpeptidation
+- describe sortase tag embodiment
+- motivate additional amino acids between binding protein and sortase tag
+- describe GnS peptide embodiment
+- describe cleavable linker embodiment
+- introduce ROR2 chimeric antigen receptor
+- describe cell comprising chimeric antigen receptor
+- describe use for treating neoplastic disease
+- describe method of treating neoplastic disease
+- specify neoplastic diseases
+- describe pharmaceutical composition
+- describe method of killing or inhibiting cell growth
+- specify cell expressing ROR2
+- describe method of treating disease or condition
+- specify diseases or conditions
+- describe administered anti-ROR2 antibody or fragment
+- describe conjugation to synthetic molecule
+- describe conjugation to transmembrane region and intracellular domain
+- describe chimeric antigen receptor on T cell
+- describe conjugation to cytotoxic agent, radioisotope, or liposome
+- define treating or treatment
+- describe method of administration
+- describe monotherapy or combination therapy
+- specify dosage
+- define subject
+- describe method for treating subject
+- specify neoplastic diseases
+- describe pharmaceutical composition or kit
+- describe pharmaceutically acceptable carrier
+- describe buffering agents and preservatives
+- describe composition preparation
+- describe routes of administration
+- describe release delivery systems
+- introduce antibody or antigen-binding fragment in a kit
+- package kit components
+- provide single dosages in sterilized containers
+- describe method of detection
+- treat sample with antibody effector conjugate
+- detect neoplastic disease or immune disease
+- provide method for detecting altered level of ROR2
+- contact biological sample with antibody
+- determine amount of antibody that selectively binds
+- compare to control level of ROR2
+- screen for presence of disorder associated with elevated ROR2
+- obtain sample from test subject
+- measure level of ROR2 using antibody
+- compare to control level of ROR2
+- determine whether subject has disorder associated with elevated ROR2
+- monitor progress of disorder associated with elevated ROR2
+- obtain sample from subject
+- measure level of ROR2 using antibody
+- compare to control level of ROR2
+- determine whether subject's disorder is deteriorating or improving
+- provide methods for screening a subject for altered level of ROR2
+- administer antibody conjugated to label
+- image subject to detect label
+- determine whether region has altered density or concentration of label
+- provide methods for treating subject with adoptive transfer of genetically engineered T-cells
+- introduce CAR-encoding genetic material into T-cells
+- expand T-cells
+- transfer T-cells to patient
+- mount immune response against ROR2 expressing cells
+- co-administer second therapeutic agent
+- provide eukaryotic or non-eukaryotic cells engineered to produce antibody
+- use cells as expression system to produce antibody
+- provide ROR2 targeted immune cells engineered to express antibody
+- construct T-cells expressing CAR
+- provide examples of invention
+- describe antibody library generation and screening
+- express and purify hROR2-TwinStrep antigen
+- isolate non-B cells
+- prepare hROR2-TwinStrep
+- generate antibody cDNA library
+- transcribe RNA to cDNA
+- amplify variable domains
+- clone into vectors
+- characterize library
+- co-transfect into preB-cells
+- select B cells
+- evaluate antibodies by ELISA
+- evaluate antibodies by secondary killing assay
+- analyze ELISA results
+- analyze killing assay results
+- express and purify anti-ROR2 antibodies
+- design expression vectors
+- transfect into HEK293T cells
+- expand and select cells
+- purify antibodies
+- analyze antibody purity and integrity
+- measure antibody binding to hROR2 by SPR
+- capture antibodies on sensor chip
+- calculate association and dissociation rate constants
+- describe ELISA-based assay
+- evaluate binding of antibodies to hROR2, mROR2, and cROR2
+- show ELISA profiles of mAbs
+- summarize binding status of each mAb to ROR2
+- produce recombinant Sortase A enzyme
+- generate glycine-modified toxins
+- conjugate toxins to anti-ROR2 and comparative antibodies
+- assess DAR by Reverse Phase Chromatography
+- conclude SMAC-Technology conjugation efficiency
+- engineer EMT-6 cells to stably express hROR2
+- confirm ROR2 expression on selected EMT-6 ROR2 cells
+- analyze cells using FACS Aria II and FlowJo software
+- show FACS analysis data of high ROR2-expressing clone 14
+- investigate cytotoxicity of PNU-based ADCs on hROR2-expressing EMT-6 cancer cells
+- add ADCs to EMT-6 cells and measure luminescence
+- fit curves of luminescence versus ADC concentration
+- determine IC50 values using Graphpad Prism Software
+- report IC50 values in Table 12
+- show dose-response curve of in vitro cell killing assays
+- investigate cytotoxicity of PNU-based ADCs on hROR2-expressing EMT-6 breast cancer cells and on ROR2
+- negative cancer cells
+- report IC50 values in Table 13
+- provide general statement about the invention
+
+## SEQUENCES
+
+- provide electronic sequence listing
+

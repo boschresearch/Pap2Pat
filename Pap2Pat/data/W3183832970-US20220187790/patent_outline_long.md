@@ -1,0 +1,174 @@
+# DESCRIPTION
+
+## FIELD
+
+- define field of invention
+
+## BACKGROUND
+
+- introduce additive manufacturing
+- describe additive manufacturing process
+- define voxel
+- motivate voxel selection
+
+## SUMMARY
+
+- motivate voxelization
+- introduce point cloud and mesh
+- describe limitations of prior art
+- introduce displaced signed distance field
+- describe advantages of displaced signed distance field
+- introduce robustness improvement
+- describe regularization of sign function
+- introduce filtering of sign function
+- describe efficient displacement information determination
+- introduce method for selecting voxels
+- receive surface approximation data
+- generate voxel-based approximation
+- determine signed distance values
+- select voxels based on signed distance values
+- generate control signals for additive manufacturing device
+- produce object with additive manufacturing device
+- describe 3D printing process
+- introduce material jetting process
+- describe generation of successive slices
+- introduce model creation
+- describe modelling step
+- generate input data
+- encode reproduction information
+- describe vertex information
+- describe texture information
+- introduce height map
+- describe colour and translucency information
+- introduce RGBA signal
+- describe data formats
+- introduce computer device
+- receive surface approximation data
+- generate voxel-based approximation
+- determine signed distance values
+- generate manufacturing data
+- output manufacturing data
+- describe surface approximation data
+- generate voxel-based approximation
+- determine displacement values
+- describe displacement map
+- introduce basic approximation
+- describe displacement value computation
+- introduce local surface patches
+- describe noise assumption
+- compute displacement value
+- describe two-dimensional polygons
+- determine displacement value
+- describe inter-voxel distances
+- describe displacements
+- introduce general procedure for computing displacement values
+- describe true surface definition
+- introduce flat polygon
+- introduce higher-order polygon
+- describe precomputed local approximation
+- introduce displacement image
+- describe mathematical function
+- introduce curved polygon
+- describe transformation of surface approximation
+- define coordinate system
+- arrange approximation in building space
+- define surface approximation data
+- represent voxel by center point coordinates
+- compute distance with respect to center point
+- generate data set for additive manufacturing
+- generate control signals for printing
+- operate additive manufacturing device
+- perform voxelization procedure
+- generate manufacturing data
+- transfer data to additive manufacturing device
+- integrate computer device into manufacturing device
+- overlap voxelization and printing
+- subdivide build space into virtual slices
+- generate manufacturing data for each slice
+- transfer data to additive manufacturing device
+- process subsequent slices
+- reduce memory space requirements
+- parallelize voxel selection
+- distribute computational load
+- perform efficient memory management
+- store unsigned distance value and sign value
+- determine signed distance value
+- define displacement value
+- derive displacement value from displacement map
+- model curvatures of surface
+- store displacement values in displacement map
+- compute displacements with respect to primitive-based approximation
+- select voxels based on signed distance value
+- filter sign function
+- smooth or average sign function values
+- adjust filtering based on signed distance value
+- apply box filter or Gaussian filter
+- determine sign for voxel containing primitives
+- determine orientation of voxel face with respect to primitives
+- project gradient onto predefined directions
+- sum gradients for each primitive
+- take distance of primitives into account
+- perform floodfill computation
+- compensate for self-intersection
+- discard selected voxels resembling self-overlapping portions
+- propose computer program product
+- execute method steps on computer or automation system
+- propose program storage medium
+- propose computer comprising program storage medium
+- propose signal wave carrying information representing program
+- propose printing system for producing an object
+
+## DETAILED DESCRIPTION
+
+- introduce computer device and 3D printer
+- describe build space and Cartesian reference coordinate system
+- define voxel size and resolution
+- introduce object to be produced and primitive-based surface approximation
+- receive surface approximation data
+- describe surface approximation data
+- transform coordinates into reference coordinate system
+- associate primitives with voxels
+- select voxels for voxel-based approximation
+- determine displaced signed distance field
+- define distance field
+- add sign to distance field
+- determine signed distance value
+- introduce displacement map
+- compute displacement map
+- expand signed distance function
+- determine sign s for each voxel center
+- deal with sub-voxel boundaries
+- evaluate orientation of faces with respect to primitives
+- incorporate weighting
+- compute signed distance for each primitive
+- evaluate change of signed distance
+- sum up gradients of signed distance functions
+- weight gradients
+- define weights
+- illustrate quantities in equations
+- determine overall sign s
+- consider multiple directions
+- compute displaced signed distance value
+- regularize sign function
+- filter sign function
+- compensate for self-overlapping portions
+- perform floodfill computation
+- identify contiguous regions
+- label exterior and interior empty regions
+- determine equivalences between regions
+- label equivalent regions
+- select voxels
+- perform voxel-based surface extraction
+- store attributes at surface voxels
+- store displacement value
+- examine neighboring voxels
+- store precise location of signed distance field
+- store signed distance field value
+- remove interior or hidden surface voxels
+- complete measures for self-overlaps
+- define manufacturing data set
+- send manufacturing data to additive manufacturing device
+- perform steps for slices or chunks of slices
+- enable streaming of manufacturing data
+- enable scalability for devices with large build spaces
+

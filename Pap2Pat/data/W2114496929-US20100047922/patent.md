@@ -1,0 +1,928 @@
+# DESCRIPTION
+
+The present invention relates to an improved turbidimetric immunoassay for assessing human Cystatin C in a human body liquid sample by making use of specific nanoparticle-antibody conjugates; a method for the assessment of the glomerular filtration rate of a patient by making use of said assay; corresponding reaction kits; improved nanoparticle-antibody conjugates and their use for the above mentioned medical purpose.
+
+## BACKGROUND OF THE INVENTION
+
+Cystatin C was discovered and characterized in 1981 by A. Grubb and H. Lovberg [Grubb A O, et al: Proc. Natl. Acad. Sci. USA 1982; 79]. Cystatin C was the first protein discovered in what later has been named the Cystatin protein superfamily. The Cystatin protein superfamily is a group of proteins that inhibits of cystein protease enzymes. Other biological functions of Cystatin C are presently under investigation. Contrary to other members of the Cystatin superfamily, Cystatin C is present in all body fluids, while the total composition of different Cystatins varies from body fluid to body fluid, and in different compartments [Abrahamson M, et al: J. Biol. Chem. 1986; 261:11282]. In 1990, Abrahamsson et al. demonstrated that Cystatin C is produced at a stable rate and by all (or close to all) nucleated cells in the human body, being what is called a “householding” protein [Abrahamson M, et al: Biochem. J. 1990; 268:287-94].
+
+Cystatin C—with a molecular mass of 13 kD—is freely filtered through the normal glomerular membrane of the kidney, but is then reabsorbed and catabolized in the “proximal tubuli”, the compartment of the kidneys that re-absorbs most of the peptides and smaller proteins that pass the glomerular membrane. In this way the kidneys preserve these proteinaceous materials for the body and hinder loss to the urine (Jacobsson B, et al: Histopathology 1995; 26:559-64.) [Heyms S B, et al: Am. J. Clin. Nutr. 1983; 37: 478].
+
+Creatinine, until now the mostly used marker for glomerular filtration rate (GFR), is a small molecular weight molecule produced in muscles cell. The rate of formation and secretion of creatinine is therefore closely linked to the muscular mass of the body. It is well known that the muscular mass of an individual in a population varies considerably. Elderly people often have a low muscular mass compared to the body mass, also many patients lose muscular mass as their diseases progress. Children generally have a different relative muscular mass compared to adults, and men have in average a higher relative muscular mass than women. Therefore, when serum creatinine concentration is used as a marker for glomerular filtration rate, the serum creatinine value can be found within the reference range even when a 50% reduction in glomerular filtration rate has taken place [Shemesh 0, et al: Kidn. Int. 1985; 28: 830-8]. Also diet influences the serum level of creatinine significantly, especially a protein rich diet [Perrone R D, et al: Clin. Chem. 1992; 38:1933-53].
+
+Serum and plasma creatinine measurements are not reliable, “gold standard methods” for measurement of glomerular filtration rate. The use of intravenous injections of radio labeled substances like Cr-51-EDTA or Tc-99m-DTPA, or injections of iodinated agents like iohexyl, have therefore gained some popularity. These methods are expensive, time-consuming and injections are necessary—and often repeated blood sampling. In the publication “Simple Cystatin C-Based Prediction Equations for Glomerular Filtration Rate Compared with the Modification of Diet in Renal Disease Prediction Equation for Adults and the Scwartz and the Counahan-Barratt Prediction Equations for Children”, by Grubb & al. in Clinical Chemistry 51:8, 1420-1431, it was demonstrated that simple Cystatin C measurements in blood can replace complicated methods of measuring the glomerular filtration rate.
+
+Cystatin C measurement originally used classical biochemical methods, but soon moved over to turbidimetric and nephelometric immunoassays. The Dade-Behring Company pioneered nephelometric measurement methods. See also Coll, E & al. Am. J. Kidney Disease 2000; 36, 2934. The nephelometric methods are very reliable. The disadvantage of nephelometric methods is that the instruments themselves have rather slow processing speed compared to automated spectrophotometers based on light transmission. Nephelometers produced by Dade Behring, typically the BNII nephelometer and ProSpec nephelometers, and Beckman Instruments, have gained substantial market penetration, but are much less widespread than instruments based on transmission measurements. Nephelometers also have a much lower sample throughput than the large automated instruments based on transmission measurements.
+
+H. Stone & al. in the article “Analytical performance of a particle-enhanced nephelometric immunoassay for serum Cystatin C using rate analysis”, in Clinical Chemistry Vol 8, pp 1482-85, 2001, presented a rate nephelometric method. However, nephelometric instruments have limited capacity for a large number of samples, and the number of nephelometric instruments is limited. Therefore there was a demand to move to absorption spectrophotometric-homogeneous instruments, since such instruments are more abundant and have a higher capacity.
+
+Dako Cytomation, Denmark, has pioneered the field of turbidimetric Cystatin C immunoassays. The state of the art is described in the following articles: “Cystatin C—The marker of choice for renal function testing” by C. Schmidt in European Clinical Laboratory, 10 Feb. 2004. “New improved automated particle enhanced turbidimetric immunoassay for quantitative determination of human Cystatin C in serum and plasma” by C. Schmidt, C. Kjøller and K Grønkjaer, a presentation downloaded from the Dako Cytomation AS' web site July 2005 (incorporated by reference).
+
+Turbidimetric measurements are—however—disturbed by turbidity in samples, as described in the article “Turbidity in immunoturbidimetric assays” by Dahr & al, in Ann. Clin. Biochem. Vol 27, p. 509, 1990. At the 29th Nordic Congress of Clinical Chemistry, Malmo, Sweden, 24-27 April, 2004, A. Grubb presented results on interference from triglycerides in serum and plasma samples on the results from Cystatin C measurements. There is therefore still a need for improvements on the turbidimetric immunoassay for human Cystatin C.
+
+An alternative to homogeneous immunoassay systems would be a separation-based non-homogeneous immunoassay systems. The advantage of non-homogeneous immunoassay systems is characterized by a separation step with washing during the performance of the assay. The advantage of these systems is that they—by means of the washing—remove any interfering substances. Furthermore, it allows washing away non-bound antibodies and non-bound enzymes or fluorescent or colored or other signal-giving moieties. These methods are generally non-competitive since the substance to be measured—hereinafter called the analyte—does not have to compete with labeled analogues for the binding to the antibodies. This aspect, and the use of washing steps, makes it possible to use immobilized antibodies and labeled antibodies in excess, rendering a high sensitivity and usually a high level of accuracy, especially if high quality antibodies are used.
+
+There are numerous textbooks on solid phase and other non-homogeneous immunoassay systems. Big automated systems are commercially available. Abbott Diagnostic Division, US, sells reagents for ImX, AxSYM and other automated non-homogeneous immunoassay instruments; Roche Diagnostics, Germany, sells reagents for Elecsys and other non-homogeneous immunoassay systems; and there are numerous other suppliers of non-homogeneous immunoassay systems and reagents. A still very popular non-homogeneous immunoassay system is the so-called microtitre immunoassay systems. These systems are slow but reliable and inexpensive. The general immunoassay literature gives a lot of information on these systems, which are well known to those skilled in the art.
+
+The disadvantage of non-homogeneous immunoassay systems is the lack of capacity for a high number of assays per time unit, i.e. per hour running time. The methods involve separation and washing steps, which—although automated—occupy instrument running time. Furthermore, since solid phases are involved, special devices or solid phases are often used, which have a certain production price, even when mass-produced. High through-put and speed of result generation have become more and more important in recent years, due to the ever increasing number of tests to run. There is a demand to move assays from non-homogeneous, often solid phase based, immunoassay technologies, to homogeneous immunoassay systems.
+
+Homogeneous immunoassay systems are simple in construction and have a higher throughput capacity. The reagents are mixed, incubated and measured, either during or after incubation. Endpoint signals or differences in signal between different time points or continuous kinetic measurements are used. Signals may be measurements of fluorescence, color or opacity (turbidimetry). In particular, large automated instruments for measurements of color and/or opacity/turbidimetry have been very successful. The Hitachi Company in Japan pioneered this large-scale automation, working together with Roche, but also numerous other manufacturers including Olympus and Bayer supply such instruments and reagents. These instruments are automated multi-well spectrophotometers measuring transmission of light through a mixture of the sample and reagents at different wavelengths and at different time points. Since the turbidimetric Cystatin C immunoassays run on such homogeneous high capacity instruments, this is another reason why high quality turbidimetric Cystatin C assays are in demand.
+
+Most homogeneous immunoassay systems are based on mixing the sample with reagent solutions comprising a well-controlled concentration of labeled analyte or analyte analogue, and antibodies having specific affinity for the analyte. The analyte molecules in the sample compete with the labeled analyte or analyte analogue, and a signal is generated. The vast immunoassay literature teaches the use of different labels and analogues. Here it should be noted that—so far—there has been limited success using homogeneous immunoassay methods for high molecular weight analytes (molecular mass above 4000) generating colored signals. (There has been success using fluorescent techniques, e.g. proximity assays, but there are not many high throughput automated fluorometers available, and therefore these technologies do not serve the purpose of the present invention). The EMIT technology from Syva and the CDEIA technology from Microgenics, both companies located in California, have been successful with color signals in homogeneous immunoassays for low molecular mass analytes. For high molecular mass analytes, particle enhanced turbidimetric measurements have been the most successful technology for the automated multi-well spectrophotometers measuring transmission of light through the mixture of the sample and the reagents. Turbidimetric methods are therefore preferred for higher molecular weight analytes. General descriptions of turbidimetric methods are found in numerous immunoassay textbooks.
+
+Why are high precision measurements of Cystatin C necessary? From the perspective of biology, the literature on the biology of Cystatin C and creatinine, as well as the meta-analysis cited above, point in the direction of the use of Cystatin C instead of creatinine to monitor and diagnose reduced glomerular filtration rate. However, although the biological argument is in favour of using Cystatin C, the biological advantage is only of importance if the accuracy and precision of the Cystatin C analysis is good. The accuracy and precision of creatinine measurements is excellent, and the medical advantage of analyzing Cystatin C instead of creatinine is easily lost if the accuracy or precision of the Cystatin C immunoassay methods is too low.
+
+A problem to be solved by the present invention is to provide an immuno-turbidimetric Cystatin C immunoassay with improved accuracy and/or precision and/or less interference from lipids and hemoglobin in test sample if compared to corresponding commercially available turbidimetric assays.
+
+Another drawback of the prior art of turbidimetric measurements of Cystatin C is the low rate of change in turbidimetry, which leads to long assay time and/or high imprecision. A further problem to be solved by the present invention is therefore, to provide a faster turbidimetric measurements of Cystatin C.
+
+## SUMMARY OF THE INVENTION
+
+The above problems associated with the prior art turbidimetric immunoassays for the measurement of Cystatin C could, surprisingly, be solved by a turbidimetric method as defined in the claims and explained in more detail in the subsequent parts of the description. Said method of the invention particularly makes use of improved nanoparticle-immunoconjugates which allow a more rapid and/or more sensitive and/or more reliable Cystatin C measurement under different experimental conditions, as in particular, different Cystatin C concentrations, different measuring wavelengths, different reaction times and different temperatures. Further advantages of the invention are evident form the attached experiments.
+
+By careful adjustments of immunoparticles and optionally assay reagents, a surprisingly stronger and faster turbidimetric signal could be observed, and thereby interferences could be reduced and the linearity could be improved without loosing accuracy. Also the assay time could be reduced.
+
+Best modes of the invention will be described below, but also other reagents and sequences of steps and times as used for preparing the reaction mixture and for performing the measurement can be used to achieve this surprising result.
+
+There are several suppliers of nanoparticles, e.g. Bangs Laboratories Inc, USA and Merck S. A., France. Numerous suppliers of conjugation services for coupling of antibodies to nanoparticles can be found on the Internet. Dako Cytomation AS, Denmark, supplies nanoparticles conjugated to anti-Cystatin C antibodies, and they were tested by the present inventors, whether or not to achieve the objective of this invention. However said prior art products turned out to be unsuccessful.
+
+The present inventors observed that, i.a., the particle size must be balanced carefully. Large particles create a good signal, however the background is high, and the binding capacity is low, so that a lot of particles must be added, creating even higher background turbidity. Previous suppliers of assays, like Dako Cytomation AS, product numbers LX002/EFG/CS/25.10.04, S2361/EFG/KGR109.07.03 and X0974/EFG/SUM/09.09.04, have not achieved good turbidimetric signals.
+
+## Definitions of General Terms
+
+A “body liquid sample” as used in the assay method according to the invention is a sample derived from a mammal, in particular a human being, and which contains Cystatin C, in particular human Cystatin C. Any Cystatin C containing liquid sample may be used. Said samples to be assayed according to the invention may be any Cystatin C containing biological fluid or tissue extract and may be pre-treated prior to the assay. Examples of suitable samples are blood, blood fractions, like serum and plasma, and pre-treated blood, like EDTA-blood, or EDTA-plasma, citrate-plasma, heparin plasma, or urine samples. The originally obtained samples or fractions thereof may be further modified by methods known in the art, as for example by fractionation or dilution. Fractionation may be performed to remove constituents which might disturb the assay. Dilution may be performed by mixing the original sample or fraction with a suitable sample liquid, like a suitable buffer, in order to adjust the concentration the constituents, as for example of the analyte. Such modified samples exemplify samples “derived from” the original body fluid sample collected or isolated from the body of the mammal.
+
+An “analyte” to be assayed according to the invention is Cystatin C, in particular human Cystatin C, as formed by the body of a healthy or diseased individual. Although not necessary, it may also be possible to use as the analyte a derivative of Cystatin C or a mixture of natural Cystatin C and Cystatin C derivative(s). Non-limiting examples of Cystatin C derivatives are Cystatin C compounds carrying a suitable detectable marker, as for example a radioactive, metal or chromophor label.
+
+“Assessing” or “assessment” is intended to include both quantitative and qualitative determination in the sense of obtaining an absolute value for the amount or concentration of the analyte, here Cystatin C, present in the sample, and also obtaining an index, ratio, percentage, visual or other value indicative of the level of analyte in the sample. Assessment may be direct or indirect and the chemical species actually detected need not of course be the analyte itself but may for example be a derivative thereof.
+
+“Homogeneous immunoassays” are, as opposed to non-homogeneous immunoassays, simpler in construction and have a higher throughput capacity. In particular, homogeneous assays do not encompass a pre-treatment step of the sample in the form of separation step, for example by applying the sample on a solid matrix, like a chromatography column, and separating the analyte from parts of the original constituents of the original complex sample. For a homogeneous assay the sample and reagents are mixed, incubated and measured, either during or after incubation. Endpoint signals or differences in signal between different time points or continuous kinetic measurements are used.
+
+A “particle enhanced” turbidimetric measurements or immunoassay is based on the “light scattering properties” associated with the nanoparticles or nanoparticle-immunoconjugates as used according to the invention. Such nanoparticles are usually approximately spherical, preferably with a narrow size distribution. The size of said particles is normally expressed via their mean diameter. According to the well-known laws of light scattering said light scattering properties may be influenced by the particle size, and/or the ratio of the refractive index of the particle to that of the medium. Weak light scattering properties may result from a small particle size, and/or a low ratio of the refractive index of the particle to that of the medium (see also Rayleigh's law of light scattering)
+
+The size and/or the refractive index ratio of the nanoparticles are such that they can cause light scattering at the wavelength used for detection of agglutinated nanoparticle-immunoconjugates. That size is generally chosen to be smaller than that detection wavelength.
+
+The “detection wavelength” as used according to the present invention for measuring the change of turbidity in the sample is usually from 300 nm to 1200 nm, preferably from 400 to 700 nm in particular from 500 to 600 nm.
+
+The “accuracy” of an analytical method of the present invention, is the methods ability to accurately determine the concentration of Cystatin C in a sample, compared to the concentration as determined by an even more reliable reference method.
+
+The “precision” of an analytical method of the present invention, is the variation in the results when the concentration of Cystatin C in a sample is determined repeatedly.
+
+A “robustness” of an assay according to the present invention is the methods ability to tolerate interfering substances and variations in assay conditions without influencing the resulting value of Cystatin C concentration determination.
+
+An “inert protein” as used in the context of the invention is a protein of any origin (for example, human or non-human mammalian, microbial) which does not disturb the assay method of the invention; in particular it should have substantially no or no detectable affinity for Cystatin C to be analysed and/or for the antibodies as used in the assay method of the invention.
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### a) Aspects of the Present Invention
+
+A first aspect of the invention relates to a particle enhanced turbidimetric immunoassay for assessing human Cystatin C in a human body liquid sample or a sample derived there from, by
+
+
+- - (1) forming an assay mixture by contacting said sample or a dilution
+    thereof with a nanoparticle-antibody conjugate (or
+    nanoparticle-immunoconjugate), comprising nanoparticles suitable for
+    turbidimetric measurement, wherein said nanoparticles are coated
+    with anti-human Cystatin C antibodies or antigen binding fragments
+    thereof, to bind said Cystatin C, wherein said coated nanoparticles
+    have a median diameter in the range of at least 40 nm, as for
+    example at least 45, 50, 55 or 58 nm, preferably more than 58 nm,
+    and
+  - (2) assessing the human Cystatin C content by measuring the change
+    in turbidity of said mixture.
+
+Preferably said antibodies comprise polyclonal non-human, non-rodent antibodies against human Cystatin C; in particular said polyclonal antibodies comprise avian anti-bodies against human Cystatin C.
+
+In a further preferred embodiment at least 25 wt.-% of said polyclonal antibodies or fragments thereof have been obtained by affinity purification with human Cystatin C. By affinity purification the proportion of those antibodies binding to human Cystatin C is increased. In addition it may be possible to further enrich by affinity purification antibodies which bind to human Cystatin C with higher affinity (or avidity) than those antibodies which were removed from the mixture.
+
+For example, a suitable antibody as used according to the invention may have an affinity or avidity for human Cystatin C which corresponds to (or is substantially identical with) the affinity or avidity of an avian (for example polyclonal) antibody obtainable by affinity purification of avian antibody through binding of avian anti-human Cystatin C antiserum to human Cystatin C immobilized on a solid phase and, preferably after washing for example with phosphate-buffered saline, eluting bound antibodies with citrate buffer, of a molarity in the range 0.05 M to 0.2 M, or 0.08 to 0.12 M, in particular about 0.1 M; and a pH in the range of about 3 to 3.5, or 3.1 to 3.3, in particular about 3.2 (as for example explained in more detail in the subsequent experimental part).
+
+In a further embodiment said antibodies comprise (a) monoclonal antibodies binding to a single epitope of human Cystatin C or (b) a set of two or more species of monoclonal antibodies, wherein each species of monoclonal antibodies binds a different epitope of human Cystatin C or two or more species bind identical epitopes with different binding strength (affinity or avidity).
+
+Said monoclonal antibodies are either of human or of non-human (for example originating from a rodent, sheep, goat, bird or rabbit) origin.
+
+The coated nanoparticles as used according to the invention preferably have a mean diameter of more than 58 nm, in particular a mean diameter in the range of 59 to 160, 60 to 140, 70 to 120, 75 to 110, 80 to 105, or 90 to 95 nm. Preferably they are coated with a layer of antibodies. In particular said layer may be considered as monolayer with an approximate thickness of about 5 nm. The layer may be “complete” (particles saturated with antibodies) or, more preferably “incomplete” (i.e. less antibodies are used than the binding capacity of the particle would afford).
+
+In a further preferred embodiment said coated nanoparticles are coated incompletely with about 5 to 35%, in particular 10 to 30% or 15 to 25% antibody per total weight of the nanoparticle-antibody conjugate.
+
+In a further preferred embodiment, the nanoparticles are coated with a mixture of antibody and inert, preferably hydrophilic, protein. For example, from 20 to 90%, and more preferred 35 to 80%, and even more preferred 40 to 70% of the total protein bound to the surface of the nanoparticles are constituted by the anti-Cystatin C antibody. Such particles preferably carry antibodies in an amount which is less than the amount of antibodies theoretically attachable to the particles according to the binding capacity of said non-coated particles. At the same time areas of the particle surface not covered by antibody molecules are saturated with inert, preferably hydrophilic protein.
+
+In a preferred embodiment, said original, non-coated nanoparticles are essentially made of latex, polystyrene, polyvinyl chloride, epoxy resin, polyvinylidene chloride, poly-alpha-naphthyl methacrylate, polyvinyinaphthalene, and corresponding copolymers thereof. Other suitable particle materials are available in the art and a skilled reader, guided by the teaching of the invention, will be in a position to make an appropriate selection.
+
+According to a further embodiment of the claimed method the turbidity change is measured via the change in the said assay mixture's absorbance of light at a wavelength in the range of 500 to 600 nm, preferably and at a temperature in the range of 10 to 50 degree Celsius, and preferably after a period of 30 to 600 seconds, as for example 40, 120, 260 or 600 seconds, of reaction time.
+
+The present invention also provides turbidimetric immunoassay methods for measuring Cystatin C in a body liquid sample or a sample derived from a body liquid, characterized by forming an assay mixture by contacting said Cystatin C containing liquid sample, or a sample derived from a Cystatin C containing liquid or a dilution of a Cystatin C containing sample, with nanoparticle-bound polyclonal or monoclonal anti-Cystatin C antibodies or antibody fragments, to bind said Cystatin C, and assessing the Cystatin C content by measuring the change in turbidity of the mixture, and the turbidity is further characterized by a change in the said mixture's absorbance of light of a given wavelength, if the mixture is kept for a given period of time at a given temperature after forming said mixture with coated nanoparticles of a certain minimum sizes, as stated in the following Table A.
+
+By way of example the highest rates of absorbance change are about 4 times, preferably about 2 or 3 times higher that the above mentioned highest levels as observed for each of the given test condition
+
+By way of example, the following values may be obtained:
+
+37 degrees Celcius, 260 seconds, median diameter 92 nm;
+
+32 degrees Celcius, 600 seconds, median diameter 92 nm;
+
+A further preferred method according to the invention is characterized by that—when a correlation curve against a nephelometric method is constructed—an intercept value of less than 0.15 mg/l, preferentially less than 0.1 and even more preferred less than 0.05 mg/l of Cystatin is obtained for the turbidimetric method for a corresponding value of 0 mg/l Cystatin C as obtained by the nephelometric method.
+
+A further preferred method according to the invention is characterized by that—when a correlation curve against a non-homogeneous immunoassay method is constructed—an intercept value of less than 0.25 mg/l, preferentially less than 0.15 and even more preferred less than 0.5 mg/l of Cystatin is obtained for a corresponding value of 0 mg/l Cystatin C.
+
+A further preferred method according to the invention is characterized by having an interference from 15 mmol/liter triglycerides in the test sample of less than 6%, preferably less than 4% or even more preferred less than 2% on the measured value of Cystatin C at a level of 1.2 mg Cystatin C per l.
+
+A further preferred method according to the invention is characterized by having a deviation from linearity below 5%, preferably below 4% or more preferred below 3% in a measurement range of 1.32 to 7.5 mg Cystatin C per liter, and/or a deviation from linearity below 15%, preferably below 11% and even more preferred below 7% in the measurement region from measurement range of 0.75 to 1.32 mg Cystatin C per liter.
+
+A further preferred method according to the invention is characterized by determining the Cystatin C concentration of a sample by measuring the initial rate of the increase of the absorbance, (a) by direct recording at the time of the mixing, or (b) by recording shortly after the mixing combined with a backwards extrapolation to the initial increase absorbance, or (c) by measuring the absorbance difference between two or more timepoints less than 1 minute after the mixing of the sample and the reagents.
+
+A further aspect of the invention provides a method for the assessment of the glomerular filtration rate of a mammal, which method comprises the turbidimetric assessment of human Cystatin C according to a method a defined above. Said method may in particular be applied during diagnosis or therapy of renal dysfunctions (like renal insufficiency or failure) or diseases or conditions associated therewith.
+
+Still another aspect of the invention relates to a reagent kit or kit of parts, or set of reagents for the performance of the method as defined above, comprising (a) particles, comprising anti-Cystatin C immunoparticles as defined above in dry or suspended form, (b) an assay buffer in dry or dissolved form, and, optionally (c) calibrator mixture(s) and control mixture(s) each in dry or dissolved or suspended form.
+
+Preferably the particle and the assay buffer are provided in combination either in dry or in suspended form.
+
+According to another aspect of the invention nanoparticle-antibody conjugates according to the above definition and the more detailed description below are provided.
+
+The present invention relates to the use of such nanoparticle-antibody conjugates in an immunoassay for the assessment of human Cystatin C or in a diagnostic method for the assessment of the glomerular filtration rate of a mammal.
+
+Finally, the present invention relates to the use of such nanoparticle-antibody conjugates in an immunoassay for the assessment of human Cystatin C or in a diagnostic method for the assessment of renal dysfunction, as for example renal insufficiency or failure.
+
+### b) Preparation of Anti-Human Cystatin C Antibodies
+
+b1) Polyclonal Antibodies
+
+Polyclonal anti human Cystatin C antibodies can be prepared by methods well known in the art, such as those described for example by Chase, M. W., 1967, in “Methods of Immunology and Immunochemistry”, ed. Williams, A. et al., M. W., pp. 197-209, Academic Press, New York. Briefly, animals of a suitable species (for example rabbits, goats, or sheep, or, preferably avian species, in particular poultry, like hens) are repetitively immunized with purified antigen in an appropriate adjuvant, for example Freund's complete or incomplete adjuvant. After immunization the animals are bled and the polyclonal antibodies are purified by methods such as for example ammonium sulfate or ammonium chloride precipitation, anionic exchange chromatography, immunoaffinity chromatography, and/or affinity chromatography.
+
+To achieve a sufficient turbidimetric signal, antibodies of high avidity are preferred. Since polyclonal antibodies comprise many different antibody molecules, an affinity constant cannot be calculated, however high avidity and affinity was obtained by conventional polyclonal antibody techniques. Rabbit antibodies obtained by conventional methods were used, however even better results were obtained with sheep antibodies. Even more better results were obtained when avian antibodies were used. The avian antibodies may be according to the methods described in Larsson A, Baaloew R-M, Lindahl T, and Forsberg P-O in Poultry Science 72:1807-1812, 1993. It is contemplated that the avians being genetically more distinct from humans are able to generate anti-bodies towards human Cystatin C that have a higher avidity than polyclonal mammalian antibodies.
+
+Polyclonal avian antibodies routinely are obtained from egg yolk (and are therefore designated IgYs). Egg yolk, however, contains large amounts of lipids making their further use problematic. IgY can be isolated from egg yolk by using stepwise ammonium sulphate (for example 25 to 40%) and polyethylene glycol (PEG) precipitation.
+
+For initial purification also commercial IgY purification kits obtainable from Gallus Immunotch Inc, Cary, USA, or the Eggcellent Chicken IgY Purification Kit, obtainable from Pierce, Rockford, USA may also be employed considering the manufacturer's instructions.
+
+Furthermore, the avidity of polyclonal antibodies may be further increased by using antibodies that ware purified by the use of antigen affinity purification methods, for example according to the teaching in “Affinity Purification of Proteins” downloaded from www.piercenet.com (April 2006) and incorporated by reference Affinity purification is described in more detail below.
+
+Increased avidity was in particular observed when 20% of the antibodies used had been antigen affinity purified, even more increase was observed when 50% of the antibodies had been antigen affinity purified and even more when more than 75%, like 75 to 100% of the antibodies had been obtained by antigen affinity purification methods.
+
+For affinity purification of avian polyclonal anti-human Cystatin C antibodies a suitable human Cystatin C affinity column has to be prepared. Purified human Cystatin C is fixed by a standard protocol to a suitable solid supports as for example are Sepharose or Affi-gel, activated to covalently the antigen to the support (suitable activated solid supports are for example available from Pierce, Rockford, USA). An affinity column is then prepared from said antigen-carrying resin.
+
+Successful affinity purification of antibody depends on effective presentation of the relevant epitopes on the antigen to binding sites of the antibody. If the antigen is small and immobilized directly to a solid support surface by multiple chemical bonds, important epitopes may be blocked or sterically hindered, prohibiting effective antibody binding. Therefore, it is best to immobilize antigens using a unique functional group (e.g., sulfhydryl on a single terminal cysteine in a peptide) and to use an activated support whose reactive groups occur on spacer arms that are several atoms long. For larger antigens, especially those with multiple sites of immobilization, the spacer arm length becomes less important since the antigen itself serves as an effective spacer between the support matrix and the epitope.
+
+Little variation normally exists among typical binding and elution conditions for affinity purification of antibodies because at the core of each procedure is the affinity of an antibody for its respective antigen. Since antibodies are designed to recognize and bind antigens tightly under physiologic conditions, most affinity purification procedures use binding conditions that mimic physiologic pH and ionic strength. The most common binding buffers are phosphate buffered saline (PBS) and Tris buffered saline (TBS) at pH 7.2 and 1.5 M NaCl (premixed buffer packs are for example available from Pierce, Rockford, USA). Once the antibody has been bound to an immobilized antigen, additional binding buffer is used to wash unbound material from the support. To minimize non-specific binding, the wash buffer may contain additional salt or detergent to disrupt any weak interactions.
+
+Specific, purified antibodies are eluted from an affinity resin by altering the pH and/or ionic strength of the buffer (common elution buffers are for example available from Pierce, Rockford, USA). Antibodies in general are resilient proteins that tolerate a range of pH from 2.5 to 11.5 with minimal loss of activity, and this is by far the most common elution strategy. In some cases an antibody-antigen interaction is not efficiently disrupted by pH changes or is damaged by the pH, requiring that an alternate strategy be employed.
+
+An example for an affinity purification protocol is given below:
+
+Step 1: Wash the column (−1 ml resin bed) to remove residual protein before each use using 10 column volumes of the following sequence of buffers:
+
+0.2 M glycine, pH 2.8˜10 ml
+
+**0.1 M NaHCO3, pH 8.5, 0.5 M NaCl˜10 ml**
+
+Repeat the cycle with the above buffers twice. Then equilibrate the column in TTBS buffer (0.3 M NaCl, 20 mM Tris/CI, pH 7.8, 0.1% (v/v) Tween-20 and 0.01% NaN3) containing NaCl adjusted to 0.5 M.
+
+Step 2: Add to 10 ml aliquot of crude antibody preparation, 1 ml 10×TTBS and 0.55 ml 4 M NaCl. Centrifuge the mixture to remove any precipitate.
+
+Step 3: Absorb the antibody batchwise by transferring the affinity resin to the tube (a 15 ml tube) with the serum. Incubate in the cold room. Alternatively, one can apply the serum to the column using a slow flow rate. Manually collected fractions are obtained. Collect the phase that passes through the column and re-apply it a second time using a slow flow rate.
+
+Step 4: Wash the column extensively with TTBS+NaCl to 0.5 M until the A280 is less than 0.02. Collect 10 ml fractions of the washes and check the A280 of the fractions.
+
+Step 5: Elute the antibody using 0.2 M glycine, pH 2.8, containing 0.02% NaN3. Elute using 1 ml aliquots of buffer. Collect fractions into 1.5 ml microfuge tube containing 50 ml 1 M Tris, pH 8.5. This neutralizes the acidic elution buffer soon after the protein is eluted. Collect at least 10 fractions. This is usually sufficient to remove the antibody. Read the A280 of each fraction using an appropriate blank (i.e., 1 ml glycine buffer plus 50 ml 1 M Tris).
+
+Step 6: Pool the appropriate fractions. Get an A280 of the pools and store antibodies at 4° C. or consider freezing (−70° C.) in aliquots in the presence of 50% glycerol.
+
+Step 7: Wash the column by washing extensively with the 0.2 M glycine, pH 2.8 buffer, followed by TTBS.
+
+b2) Monoclonal Antibodies
+
+Polyclonal antibodies are often more preferred than monoclonal antibodies in particle-enhanced turbidimetric assays. Polyclonal antibodies are inherently reactive to many different epitopes on the antigens (or analytes) (contrary to monoclonals), and therefore more easily create cross-bindings and networks between the antigens molecules per se, and between the antigens and the particles to which the antibodies are immobilized. In contrast, monoclonal antibodies generally bind to one type of epitopes only, which makes it more difficult to form cross-bindings and networks. The diagnostic industry often prefers, however, the use of monoclonal antibodies, because they are easier to standardized and to quality control to a predefined standard, especially over a product life-time of many years. There are, therefore, good examples on the use of monoclonal antibodies for particle enhanced turbidimetric immunoassays, especially when there are antigenic characteristics favoring the use of monoclonal antibodies. Eda & al. in “Development of a New Microparticle-Enhanced Turbidimetric Assay for C-reactive protein With Superior features in Analytical Sensitivity and Dynamic range”, J. Clin. Lab. Analysis, 12: 137-144 (1998) describes the use of two different monoclonal antibodies and two different micro particles. CRP is especially favourable for the use of monoclonals, because the CRP molecule is a pentamer of identical subunits—and therefore carries five replicates of all epitopes (Pepys M B & al, Adv. Immunol. 34:141-212 (1983)), which makes the use of monoclonal antibodies much easier. However, also with monomeric and smaller proteins like Cystatin C, cocktails of different monoclonal antibodies may be used in special embodiments of the present inventions. Cocktails of different monoclonal antibodies, especially when they are composed of many different monoclonal antibodies with high affinity to Cystatin C, will result in good embodiments of the present invention of Cystatin C immunoassays.
+
+Monoclonal anti human Cystatin C antibodies also can be prepared by methods well known in the art, as for example those described by G. Köhler at al., 1975, Nature 256, 495, G. Galfre et al., 1981, Meth. Enzymol. 73, 3-46, or R. Kennet, 1980, in: “Hybridomas: a new dimension in biological analysis”, ed. R. Kennet et al., Plenum press, New York & London. Spleen cells or peripheral blood cells from immunized mice or rats are fused with a myeloma cell line, using for instance the polyethylene fusion method. After fusion the cells are grown under suitable conditions, for example on culture plates and a selection of correctly fused cells is performed using for example the hypoxanthine/aminopterin/thymidine (HAT) selection method. Antibody producing cell lines are identified by methods such as EIAs, RIAs or agglutination assays. After identification of the antibody producing cell line, the cells are repeatedly subcloned, as for example by the method of limited dilution, to guarantee that the new growing cell line derives from one single cell.
+
+b3) Chimeric Antibodies
+
+Chimeric anti human Cystatin C antibodies can be obtained by methods well known in the art such as that described by G. L. Boulianne et al., 1984, Nature 312, 643-645. The procedure can be briefly described as follows. The DNA of the antigen-binding site from a monoclonal antibody of one species or parts thereof are transferred to the DNA of the antibody framework of another antibody of a different species. This new construct is cloned into an expression vector, which is transferred to the corresponding expression system to produce the antibody.
+
+b4) Recombinant Antibodies
+
+Recombinant anti human Cystatin C antibodies can be obtained without using animal vehicles by methods known in the art, such as those described by G. Winter et al., 1991, Nature, 349, 293 or J. S. Huston et al., 1988, Proc. Ntl. Acad. Sci. USA, 85, 5879. Those methods involve the following steps: introduction of DNA (cDNA or synthetic DNA) coding for an antibody or fragments thereof into a host cell, for example E. coli, fungi, yeast, plants or eucaryotic cells, selection of antibodies with the desired specificity and affinity and expressing the antibody or fragment thereof in the corresponding expression system.
+
+b5) Antibody Fragments
+
+Fab-, Fab′-, and F(ab′)2-fragments of polyclonal antibodies, monoclonal antibodies of any species (including chimeric antibodies and or recombinant antibodies) can be prepared by methods well known in the art, such as those described for example by A. Nissonoff et al., 1960, Arch Biochem Biophys, 89, 230, or R. P. Porter, 1959, Biochem J, 73, 119, or E. Harlow et al, 1988, in “Antibodies—A Laboratory Manual”, 626-631, Cold Spring Harbour Press, New York, USA.
+
+b6) Selection of Anti Human Cystatin C Antibodies of Different Reactivities to the Human Cystatin C
+
+When using monoclonal antibodies or fragments thereof as binding partners, the selection of the antibodies of different, in particular high and low reactivity, can conveniently be performed by coating each of the monoclonal antibody separately onto nanoparticles of the same material and size by conventional coating techniques, followed by mixing the nanoparticle reagents in a given ratio, for example 1/1 v/v, in a permutative manner with the analyte. After generating calibration curves of the nanoparticle reagent under the same conditions, the steepness of the resulting calibration curves for low concentrations of analyte gives a first indication of the reactivity of the immunological binding partners.
+
+When using polyclonal antibodies as binding partners, the preparation of high and low reactivity polyclonal antibodies may be performed according to methods well known in the art by introducing the polyclonal antibodies into an affinity chromatography column, carrying the antigenic analyte covalently bound to the gel matrix. With a gradient of elution buffer low reactivity polyclonal antibody fractions will elute first from the column, followed by fractions with increasingly higher reactivity. (see S. Yamamoto et al., 1993, “Veterinary Immunology and Immunopathology” 36, 257-264, Elsevier Science Publishers B.V., Amsterdam). Reactivity of the fractions can then be checked either with a BIAcore instrument or by coating them independently onto nanoparticles of the same size and material and generating the corresponding calibration curves.
+
+Selection of antibodies can be done by the above mentioned procedure of coating them on nanoparticles followed by a detection limit analysis or a determination of its functional affinity as described above. If appropriate, mixtures of different anti human Cystatin C antibodies differing with respect to their affinity/avidity vis-à-vis human Cystatin C may be used for preparing nanoparticle-antibody conjugates of the present invention. Suitable mixing ratios can be determined by a skilled person by a limited series of experiments.
+
+Suitable anti human Cystatin C antibodies are also commercially available from different sources. For example, HyTest, Finland offers a set of high-affinity anti human Cystatin C antibodies recognizing different epitopes of the antigen. These antibodies are prepared in conventional manner by immunizing Balb/c mice with Cystatin C purified from human urine and producing hybridomas by fusion with the hybridoma cell line Sp2/0. Antibodies produced by selected clones were purified by protein A affinity chromatography. The following mAbs are presently available from HyTest: Cyst10, Cyst13, Cyst16, Cyst18, Cyst19, Cyst23, Cyst24, and Cyst28. Further suppliers for commercially available mono- or polyclonal anti human Cystatin C antibodies are: Fusion, Northern Ireland; BioVendor, Czech Republic, AB Location, Germany; Advanced Immunichemical, USA; Abcam, UK; Axxora, UK; Biodesign, USA; R&D Systems, USA; AbD Serotec, Norway; Strategic Biosolutions, USA. All anti human Cystatin C antibodies of said sources may, in principle, be used alone or in combination for performing the present invention.
+
+### c) Nanoparticles and their Conjugates with Antibody
+
+The material for preparing the nanoparticles of the invention may be any natural or synthetic, inorganic, organic, non-polymer or polymer material suitable for generating and performing particle-enhanced light scattering assays. Such materials include for example selenium, carbon, gold; nitrides of carbon, silicium or germanium, for example Si3N4; oxides of iron, titanium or silicium, for example TiO2 or SiO2; and polymeric materials such as for example, latex, polystyrene, poly(vinyl chloride), epoxy resins, poly(vinylidene chloride), poly(alpha-naphtyl methacrylate), poly(vinylnaphthalene), or copolymers thereof, in particular copolymers of styrene and a copolymerizable ethylenically unsaturated compound, for example styrene-(meth)acrylate co-polymers. Particles made of polymeric materials, as well as core-shell particles consisting of an inner core polymerized from styrene and an outer shell formed by copolymerization from styrene with a copolymerizable, ethylenically unsaturated compound, as described for example in U.S. Pat. No. 4,210,723, are also suitable.
+
+Suitable polymeric particles for conjugation can be purchased from Bangs Particles Inc. or Interfacial Dynamics Inc, Merck SA, France, or other suitable sources. The particles can be activated for binding to antibodies according to numerous methods, a thorough teaching of such coupling chemistry can be found, e.g. in TechNote 205, Rev. 003, for example March, 2002, “Covalent Coupling” (incorporated by reference) which can be downloaded from Bangs Laboratories, Inc.'s web-site. For example, coupling may be achieved by means of particles carrying on their surface carboxyl-, amino-, hydroxyl-, hydrazide- or chloromethyl groups. The molecule to be coupled may either react directly with such groups or by means of a suitable linker, as for example carbodiimides, glutaraldehyde, or cyanogen bromide.
+
+The shell of the particles according to this invention preferably has to comprise antibodies with high affinities for Cystatin C, combined with a nanoparticle core of a certain size to generate a sufficient turbidimetric signal. Typically the nanoparticles comprising the shell of proteinaceous material is between 58 and 200 nm, more preferred between 65 and 150 nm, and even more preferred between 80 and 135 nm.
+
+In a particular embodiment of the invention the mean diameter of non-coated particles is about 80 nm. Using these particles, after coating they are typically 90-100 nanometers in diameter. As a general rule a monolayer of antibodies is about 5 nm thick, so that such particles are considered to carry a monolayer of antibodies.
+
+These particles will have good performance when 5 to 35% of the total dry weight of the conjugated particles is constituted by antibodies, better performance at 10 to 30%, and optimum performance when 15 to 25% of the total dry weight of the conjugated particles is constituted by antibodies.
+
+If slightly larger particles are used, these optimal percentage values go down. By way of example, if 95 nm naked particles are used, they typically end up being 110 nm in median diameter if coated. The corresponding percentages are then 4 to 32%, 8 to 26%, and, for optimum performance, 12 to 22% (percentage of the total dry weight of the conjugated particles constituted by antibodies). However, with these slightly larger particles, more particles (in the meaning more weight of particles) has to be used in the assay to have enough binding capacity to create a calibration curve without a flattening of the curve at higher concentration of Cystatin C (the assay calibration curve must have a good dynamic range up to over 8 μg Cystatin C per μl sample), which leads to a much higher absorption background (larger particles and more particles), and a lower signal to noise ratio.
+
+On the other hand, smaller particles will have a higher optimum of antibody percentage in the coated immunoparticle. For example, if non-coated particles of a size of 70 nm are used, the median diameter of the coated particles is typically 80 nm, and a proportion of 18 to 30% antibodies of the total dry weight of the conjugated particles will result in optimum percentages, and less optimal are proportions of 12 to 36%, and even less optimal are proportions of 4 to 42% of antibodies. However, with these slightly smaller particles, less particles (in the meaning less weight of particles) has to be used in the assay to create a calibration curve steep enough at lower concentrations, i.e. below 1 μg Cystatin C per μl sample, and the signal will be lower and also more vulnerable to background noise.
+
+Based on the above explanation a skilled reader will be able to provide, guided by the teaching of the present invention, optimum immunoparticle preparations for different assay conditions.
+
+The coating of the anti human Cystatin C antibodies onto the nanoparticles can be performed adsorptively or covalently according to methods well known in the art which meet the properties of the material used.
+
+According to a preferred embodiment, mixtures of one or more hydrophilic inert proteins with the anti-Cystatin C antibodies should be present during the conjugation/binding of the antibodies to the nanoparticles. The inventors have surprisingly observed that optimal results with hydrophilic particles with a high binding capacity is obtained when antibodies are conjugated to the particles together with hydrophilic proteins having μl values close to the conjugation pH. Best results were obtained when bovine transferrin and albumin were present during the conjugation. However, also other inert proteins may be mixed with the antibodies during conjugation. Non-limiting examples for such hydrophilic, inert proteins are limpet hemocyanin, haptoglobin and other water soluble proteins, without any affinity for the antibodies nor the Cystatin C.
+
+During the coupling process the conditions are or should be, or if necessary should be adapted to be, such that the antibodies are more reactive with the nanoparticle core material than the inert protein so that they will bind more or less quantitatively to the core. Residual reactive portions of the nanoparticle surface will be blocked by the inert protein.
+
+The present inventors observed, as general rule, that in a the first step the hydrophobic parts of the antibodies seem to bind physically to the particles, and thus the whole molecule is close to the reactive, as for example chloromethyl, groups on the particle surface, which then reacts with the corresponding, as for example amine, groups of the protein molecule. Due to this physical absorption, the large antibody molecules surprisingly compete well with the smaller, inert hydrophilic proteins like albumin and transferrin. However—since the used less antibodies than the binding capacity of the particles, the inert proteins, like albumins and transferrins, react with whatever is left to react with on the surface of the particles, and then render particles of the present invention, which have a good hydrophilic surface and a good antibody binding capacity at the same time, and an appropriate proportion of nanoparticle material that can generate a good signal.
+
+Adapting suitable conditions to each coating process variant is, guided by the teaching provided herein, routine for a person skilled in the art.
+
+For example, for coupling a pH half a unit above the μl of the antibody may be chosen when monoclonal antibodies were used. Polyclonal antibodies have a quite diverse μl, and so with polyclonal antibodies pH of 8.8 may preferably be chosen.
+
+In a preferred embodiment, based on the total protein content of the coupling reaction mixture, about 3 to 70 wt.-%, or even more preferred 5 to 40 wt.-% of the protein present during conjugation should be constituted by the anti-Cystatin C antibodies.
+
+Since the antibodies have, as explained above, a higher binding rate to the particles than the hydrophilic inert proteins, the ratio of antibody protein to total protein bound to the surface of the particles will be much higher; for example from 20 to 90%, and more preferred 35 to 80%, and even more preferred 40 to 70% of the total protein bound to the surface of the particles are constituted by the antibodies.
+
+### d) Preferred Embodiments of the Claimed Turbidimetric Method
+
+d1) Advantages of the Invention
+
+The present invention provides a turbidimetric Cystatin C immunoassay with a far stronger signal to noise ratio than in the prior art. By choosing large core and protein shell particles, preferably of a certain minimum size, combined with antigen affinity purified antibodies, a surprisingly high aggregation signal was obtained. A strong turbidimetric signal was obtained due to a surprising synergetic effect between the refractive index of the particles compared to the assay buffer, and the high affinity (or avidity) of the highly purified antibodies. The strong turbidimetric signal led to a higher robustness to interfering substances, e.g. triglycerides, and a better linearity than in the prior art of turbidimetric Cystatin C immunoassays.
+
+The critical factor for a homogeneous immunoassay is the signal generated per mass unit per volume of assay mixture. The assay mixture is the mixture obtained when all reagents and the sample have been added. For example, if a sample of 3 μl is to be analyzed, and the said sample contains 1 mg/l Cystatin C, and the final volume after mixing all reagents and sample is 300 μl, the concentration of Cystatin C in the final assay mixture is 10 μg/l. If the concentration of the analyte in the sample is low, this can often be compensated by using a larger sample compared to the assay mixture volume, e.g. increasing the sample to 6 μl in an assay mixture volume of 300 μl. There are several obstacles to increasing the sample volume. Firstly, the concentration of all interfering substances that might be in the sample is increased in the assay mixture. Secondly, the need for antibodies to overcome the critical hook effect (i.e. dose/response curve with negative slope) is increased, which in turn, increases the antibody costs of the assay correspondingly.
+
+There is therefore a requirement to obtain good signal strength and robust assays at a low assay mixture concentration of the analyte, and a corresponding low sample volume. increasing the sample volume in homogeneous immunoassays leads to more interference and to more expensive assays.
+
+The present invention provides a surprising increase in signal strength, robustness and linearity of turbidimetric Cystatin C immunoassays. The present invention also has less interference from lipids such as triglycerides. It was accomplished after understanding the shortcomings of the prior art being based on a too-low signal strength in the turbidimetric signal per mass unit of analyte, and provides a methods with better precision, linearity and less interference than the turbidimetric methods in the prior art.
+
+d2) Specific Improvements Observed at Different Test Condition
+
+According to the present invention improved turbidimetric immunoassay methods for measuring Cystatin C in a body liquid sample or a sample derived from a body liquid are provided, which are characterized by
+
+forming an assay mixture by contacting said Cystatin C containing liquid sample, or a sample derived from a Cystatin C containing liquid or a dilution of a Cystatin C containing sample, with nanoparticle-bound polyclonal anti-Cystatin C antibodies or antibody fragments, to bind said Cystatin C, and
+
+assessing the Cystatin C content by measuring the change in turbidity of the mixture, and the turbidity is further characterized by a change in the said mixture's absorbance of light of a wavelength of 546 nm of
+
+more than 15 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 30 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 75 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture, and the method is further characterized by the median diameter of the said nanoparticle-bound polyclonal-anti-Cystatin C antibody or antibody fragment conjugates is more than 58 nm.
+
+This is especially beneficial because 546 nm wavelength and 37 degrees Celsius is a typical operating mode for many large automated clinical chemistry analyzers, like the Hitachi, the Cobas and Modular from Roche, the Olympus and many other instruments.
+
+The present invention further provides an improved method, characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 25 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 55 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 125 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture, which is beneficial for the same reason.
+
+And furthermore, the present invention provides a method, characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 30 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 85 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 190 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture. which also is beneficial for the same reason.
+
+Several analytical spectrophotometric instruments operate at lower wavelengths. Therefore, the present invention also provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 505 nm of
+
+more than 20 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 50 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 90 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+In particular the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 505 nm of
+
+more than 30 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 75 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 150 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+Furthermore, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 505 nm of
+
+more than 40 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 100 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 250 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+Other analytical spectrophotometric instruments may operate at higher wavelengths.
+
+The present invention therefore also provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 570 nm of
+
+more than 10 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 30 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 80 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+In particular, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 570 nm of
+
+more than 15 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 45 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 100 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+In addition, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 570 nm of
+
+more than 20 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 55 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 125 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 260 seconds after forming the mixture.
+
+There are several clinical chemistry instruments that operate at a lower temperature than 37 degrees Celsius. Therefore, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 12 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 25 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 70 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 32 degrees Celsius for 600 seconds after forming the mixture.
+
+There is a big demand for a faster and a more efficient assay method, in order to increase the capacity of clinical chemistry automates. If an assay runs faster, more assays can be performed per time unit. Especially if the instruments are built to run in kinetic mode, a fast and strong signal increase after the start of the assay is beneficial. The present invention therefore provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 8 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 20 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 50 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 120 seconds after forming the mixture.
+
+In particular, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 15 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 30 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 75 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 120 seconds after forming the mixture.
+
+Further, the present invention provides a method characterized by a change in the said mixture's absorbance of light having a wavelength of 546 nm of
+
+more than 4 mAbs Units/cm at a concentration of 9.9 μg Cystatin C per l in the assay mixture, or of
+
+more than 7 mAbs Units/cm at a concentration of 19.8 μg Cystatin C per l in the assay mixture, or of
+
+more than 15 mAbs Units/cm at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+if said mixture is kept at 37 degrees Celsius for 40 seconds after forming the mixture.
+
+d3) Results as Obtained Under Identical Conditions with a Prior Art Turbidimetric System
+
+As explained above, the particle size of the nanoparticles as used in the assay must be balanced carefully. Large particles create a good signal, however the background is high, and the binding capacity is low, so that a lot of particles must be added, creating a high background turbidity. Previous suppliers of assays, like Dako Cytomation AS, have presumably for this main reason, not achieved good turbidimetric signals.
+
+When following the instructions as given in the package insert of Dako Cytomation AS, product numbers LX002/EFG/CS/25.10.04, S2361/EFG/KGR109.07.03 and X0974/EFG/SUM/09.09.04 and in the article of Schmidt, Kjoller and Gronkjaer cited above, this resulted in a turbidimetric immunoassay method for Cystatin C, characterized by—at wavelength 546 nm at 37 degrees Celsius within 260 seconds—a change in absorbance of
+
+merely 9 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture,
+
+merely 24 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and
+
+merely 50 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+These results were far below the results observed for the present invention (see above).
+
+When trying to use a shorter assay time (aimed at kinetic readings), 120 seconds resulted in a change in absorbance of
+
+merely 6 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and
+
+merely 15 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and
+
+merely 24 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+which was far below the results as obtained for the present invention.
+
+Furthermore, when trying to use even shorter assay time (aimed at kinetic readings), 40 seconds resulted in a change in absorbance of
+
+merely 3 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture,
+
+merely 6 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and
+
+merely 9 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture,
+
+which was also far below the results as obtained for the present invention.
+
+The assay time above is defined as the time from addition of the immunoparticles suspension to the mixture of the assay reagents and the sample. All volumes and sequences were according to the producer's information. The concentrations of Cystatin C have been determined using ProSpec nephelometric reference methods from Dade-Behring US, product number OQNM13 N Latex Cystatin C.
+
+d4) Performing the Assay Method of the Present Invention
+
+In a preferred embodiment of the present invention an assay buffer is mixed with a sample and an immunoparticle suspension, and the turbidity of the mixture or the resulting suspension is monitored by a photometer, preferentially a recording photometer, and further preferentially a recording spectrophotometer. A preferred sequence of steps is: mixing the sample in the assay buffer, allowing the mixture to fully dissolve and stabilize, and then adding the immunoparticle mixture. The present invention can also be performed by mixing the assay buffer and the immunoparticle suspension first, and then adding and mixing the sample. Optimal mixing methods (selected among methods well known in the art) should be applied, which can be determined by means of a limited number of pre-experiments.
+
+When a recording photometer is used, the initial rate of the increase of the turbidity can be determined, either by determining the Cystatin C concentration of a sample by measuring the initial rate of the increase of the absorbance, either by direct recording at the time of the mixing, or by recording shortly after the mixing combined with a backwards extrapolation to the initial increase absorbance, or by measuring the absorbance difference between two or more time-points less than 1 minute after the mixing of the sample and the reagents.
+
+These measurements or combined measurements can be correlated or compared to corresponding results with calibrators of known Cystatin C concentration, and the concentration of unknown samples can thus be calculated. These ways to record absorbance values and to compute results are very well known for numerous other substances to be measured by the skilled man of the art of clinical chemistry. Of course, the very good signal derived from the present invention makes such measurements and calculations much more robust and accurate, especially when good signals shortly after the mixing of the sample and the reagents are obtained as described above.
+
+There are several assay buffer mixtures that can be used, with different kinds of buffer substances, with different kinds of detergents and/or different kinds of polymers- and/or salts added to the buffer.
+
+TRIS buffer, phosphate buffer, borate buffer and other buffer substances, like MOPS, PIPES, HEPES can be used, and are not critical to the present invention, as long as the assay can maintain a well regulated pH of the final assay mixture, independent of the pH and the buffering capacity of the sample added. Typically the buffer is added in a final molar proportion of about 5 mM to 0.2 M or 10 mM to 0.1 M. The pH is adjusted in the range of 6 to 8, in particular 6.5 to 7.5.
+
+Furthermore, several detergents can be used, as long as they are able to dissolve any lipid content of the sample added, and do not interfere too strongly with the antibodies' reaction with Cystatin C introduced with the sample. Triglycerides, cholesterols and a range of lipoproteins are examples of interfering substances in turbidimetric assays, because the lipids form micro droplets and micelles that give interfering signals. Tween 20, Triton X-100 and deoxycholates are examples of suitable detergents. Measuring Cystatin C in lipid-containing samples is a big challenge, and needs good solubility of the lipids, but even more importantly, a strong signal that overrides any minor interference. Detergents are typically added in a final proportion of 0.01 to 0.5%, or 0.1 to 0.3%, each by weight of the final reaction mixture.
+
+The most widely used polymers are polyethylene glycols of different molecular sizes (in particular of about 6.000 to 8.000), but dextrans and other polymers are can also be used. The polymers have the disadvantage that—when the concentration is too high—they create unspecific precipitation of the other substances introduced when the test sample is mixed into the assay mixture. On the other hand, the said polymers at the same time increase the signal. However, they tend to reduce the overall binding capacity of the immunoparticles. Polymers are typically added in a final proportion of about 0.05 to 0.5% or 0.1 to 0.3%, each by weight of the final reaction mixture.
+
+Suitable salts to adapt the ionic strength are for example alkali metal halides, in particular sodium chloride, added in a concentration of 1 to 100 mM, or 5 to 50 mM.
+
+Further suitable constituents which may be present in the assay mixture are:
+
+amino acids, like glycine, added in final concentrations of about 1 to 50 mM or 5 to 20 mM;
+
+proteins, like albumine added in final proportions of 0.1 to 5 g/l or 0.5 to 2 g/l;
+
+antimicrobial agents, like sodium azide, added in final proportions of 0.1 to 10 or 1 to 5 g/l;
+
+calibrators or control substances: These are typically solutions comprising known concentrations of Cystatin C dissolved in a buffer substance, typically a phosphate buffer or TRIS buffer, optionally with some proteinaceous material, optionally comprising human or animal serum up to 100 volume % (if 100 volume % is serum, then there is no room and no need for the buffer solution.)
+
+Furthermore, one or more of the reagents can be used in a dry, optionally lyophilized form. The antibodies conjugated to the nanoparticles can be used in a dry form, e.g. as a pellet, and be dissolved before use, or can be dissolved into the assay buffer reagent or into to reaction mixture. One or more of the components in the reaction buffer can be added in a dry form before or during the performance of the assay, so also the calibrators. Even the samples can be provided in a dried or lyophilized form, and added to the reaction mixture in a dry form, or being dissolved prior to its use.
+
+In clinical chemistry analysis, the use of standard curves for calibration purposes is standard practice. Thus, in the performance of the method of this invention, samples of known Cystatin C content may be used in the place of clinical samples to construct a standard curve for the response/signal to be measured and the Cystatin C content of the unknown samples may then be calculated by interpolation from the standard curve.
+
+The total concentration of nanoparticle-immunoconjugates in the mixture will be selected according to methods well known in the art of particle enhanced light scattering immunoassays, so that absorbance values deriving from said nanoparticles do not influence accurate and precise measurements but the microparticle concentration is high enough to get signal development. The amount is, of course influenced by different parameters, like the volume of the body fluid sample or the sample derived there from, as well as Cystatin C content.
+
+As non-limiting typical parameters of an assay the following may be mentioned:
+
+A typical sample volume is 1 to 20 μl, as for example 2 to 10 μl, or in particular 3 μl.
+
+A typical immunoparticle volume is 10 to 100 μl or 20 to 60 μl, or in particular 40 μl. Said immunoparticles may be provided as a suspension of 0.5 to 10 or 1 to 5, typically about 2 to 3, in particular 2.26 mg particles per ml buffer solution. The buffer may have a pH in the range of 6 to 9, as for example 7 to 8.5, typically about pH 8.4. Said buffer solution may contain in addition to the buffer substance further ingredients as for example amino acids, salts, inert proteins and emulsifiers or solubilises as defined above. A typical mixture of such ingredients and buffer comprises 10 mM borate buffer, 10 mM glycine, 15 mM NaCl, with 0.25% Tween 20 and 1 g/l albumin.
+
+A typical total assay volume is 100 to 1000 μl, or 200 to 500 μl, or 250 to 300 μl or in particular about 280 μl.
+
+Different instruments run with different total volumes, so that 30% or 60% of these volumes or 150% or 300% of these volumes are typical for other instruments. The ratio between sample volume and the immunoparticle volume can be anything between 1/100 to 2/3, more preferred 2/100 to 1/3, and even more preferred 1/40 to 1/5.
+
+d5) Medical Uses
+
+The assay method of the present invention may be used for the diagnosis and monitoring of pathological or potentially pathological conditions which are related to or manifested in the Cystatin C content of body fluids or tissues. These include in particular the glomerular filtration rate (GFR, as a measure for the kidney function) of a mammal or pathological conditions affecting said filtration rate.
+
+The claimed method may be used to determine the GFR in children; or the GFR of patients with muscle atrophy; to supervise the effects of cancer therapy in kidney function; to supervise renal transplantation and immunosuppressive therapy; to supervise renal filtration rate in diabetes; for detection and management of eclampsia; and to find the correct dosage of drugs in case drug administration is associated with a decrease of GFR which may result in an undesired drug accumulation in the body.
+
+The assay method may also be used for the evaluation of the effects of pharmaceutical on said filtration rate.
+
+A skilled reader of the present description may become aware of further potential applications.
+
+The present invention also provides a set of reagents for the performance of the immunoassay according to this invention. The reagent set is characterized by comprising anti-Cystatin C immunoparticles, a suitable assay buffer and, optionally calibrator solution(s) and control solution(s). Optionally, the particle suspension and the assay buffer are delivered as a combined reagent.
+
+In another aspect the invention provides an analytical product, optionally in kit or kit-of-parts format, for use in the assay of Cystatin C in a sample, said product comprising: at least on type of nanoparticle-immunoconjugates as described above in dried or suspended form, and optionally one or more further constituents as defined herein, as for example, a suitable assay buffer and, optionally calibrator solution(s) and control solution(s).
+
+The present invention also provides a set of reagents for the performance of the immunoassay according to this invention. The reagent set is characterized by comprising anti-Cystatin C immunoparticles, a suitable assay buffer and, optionally calibrator solution(s) and control solution(s). Optionally, the particle suspension and the assay buffer are delivered as a combined reagent.
+
+Optionally, means for signal assessment may also be present, like a calculator schemes allowing to directly correlate the observed Cystatin C concentration with the GFR parameter.
+
+The following non-limiting examples illustrate in a non-limiting manner the method of the invention.
+
+## EXPERIMENTAL PART
+
+### Preparation of Polyclonal Avian Serum and Affinity Purification thereof
+
+**a) Preparation of Avian Serum**
+
+The following immunization protocol may be used for the generation of polyclonal IgY antibodies against human Cystatin C:
+
+Two to four hens are used for each immunization experiment. A couple of eggs are collected before immunization begins. IgY purified from these eggs will serve as the control IgY. 100 μg of highly purified human Cystatin C (purified from urine of patients with tubular proteinuria) in phosphate buffer was emulsified with Freund's complete adjuvant and injected into the breast muscle of hens. The injection was repeated every 4 weeks. 10 weeks after the start of the injections, eggs were collected. The egg yolk was isolated from the eggs, and the IgY fraction from the egg yolk was isolated by ammoniumchloride precipitation, in a conventional manner according to prior art methods of egg antibody isolation (see for example Larsson A, Baaloew R-M, Lindahl T, and Forsberg P-O in Poultry Science 72:1807-1812, 1993).
+
+**b) Affinity Purification of Polyclonal Serum**
+
+10 mg of highly purified human Cystatin C was immobilized on a HITRAP NHS-Active HP column from Amersham Pharmacia Biotech, following the prescription in the package insert of the column.
+
+The isolated IgY fraction was diluted to 2 mg/ml in phosphate buffered saline. 200 ml of this IgY solution was passed through the column, followed by 50 ml phosphate buffered saline with no IgY. The antibodies with specific affinity for the immobilized Cystatin C was eluted with 35 ml of 0.1 molar citrate buffer pH=3.2. The eluted specific anti-Cystatin C antibodies were dialyzed against phosphate buffered saline and concentrated to 3 mg/ml using an Amicon Centircon centrifugation filtration device with molecular weight cut-off of 30,000 Dalton.
+
+### Preparation of Monoclonal Anti-Human Cystatin C Antibodies
+
+The preparation of monoclonal anti-human Cystatin C antibodies may be performed as follows by making use of methods well known in the art, described for example by Harlow et al., 1988, Section 6 of “Antibodies: a Laboratory Manual”, Cold Spring Harbor Press, New York, USA. Human PSA was isolated from human seminal plasma as described Sensabaugh et al., 1990, J. Urology 144, 1523.
+
+Mice were immunized in regular intervals with 4 injections of 50 μg human Cystatin C in RAS (RIBI adjuvant system). Four months after the first injection lymphocytes isolated from the spleen of the immunized mice were fused with the myeloma cell line SP2/0-Ag14 using the polyethyleneglycol method as described by G. Galfre et al., 1981, Methods in Enzymology, 73, 3-46.
+
+Hybridomas secreting an antibody against Cystatin C were identified by the following screening ELISA: microtiterplates were coated with rabbit anti-human-Cystatin C immunoglobulin; Cystatin C bound to this solid phase, was incubated with the supernatants of the hybridoma cultures. Monoclonal antibody bound to Cystatin C was detected using anti-mouse-immunoglobulin-peroxidase-conjugate.
+
+Several hundred hybridomas may be isolated, secreting antibodies against different epitopes of human Cystatin C. The corresponding monoclonal antibodies are then affinity purified and can be characterized in more detail.
+
+Epitope binding was performed and the relative reactivity of the antibodies was determined in terms of their apparent dissociation constants, using the BIAcore biosensor technology (Pharmacia, Sweden). The latter is based on the surface plasmon resonance technique (see J. L. Daiss et al., 1994. in “Methods: A Companion to Methods in Enzymology” 6, 143-156, Academic Press Inc., NY, USA) and allows to monitor the kinetics and stochiometry of biomolecular reactions.
+
+Starting from cell culture supernatants, the monoclonal antibodies were bound to the biosensor surface via polyclonal rabbit anti-mouse-Fc-antibody. Association and dissociation of the antigen Cystatin C to the monoclonal antibodies were monitored. The data may be analysed using the inherent BIA evaluation software, based on the simple A+B=AB equilibrium model (L. G. Fagerstam et al., 1992, Journal of Chromatography, 597, 397-410). The obtained antibodies may then be compared with respect to their respective apparent dissociation constants. Suitable antibodies or combinations thereof may then be used for preparing the immunoparticles of the invention.
+
+### Preparation of Anti-Cystatin C Immunoparticles
+
+**a) Coupling Process—Standard Procedure:**
+
+**(1) Buffers & Reagents**
+
+In order to have more signal from the polymer particles per mg of antibody the pH of coupling buffer was adapted in a specific way to the pi of the antibodies to be coupled. In addition the antibodies were diluted with albumin/transferrin prior to coupling (see below). For coupling a pH half a unit above the pi of the antibody was chosen when monoclonal antibodies were used. Polyclonal antibodies have a quite diverse pi, and so with polyclonal antibodies pH of 8.8 was used. The chosen pH was obtained by mixing the above mentioned PBS and borate buffers.
+
+The following standard procedure outlines both a simple one step method for the attachment by physical adsorption of antibodies to chloromethyl. The protocol is for a 1 μm chloromethyl latex at 1% solids. This reaction can easily be scaled up or down to fit individual needs. For example if a different particle size is used then the amounts of antibody (Ab) can be calculated from:—
+
+Weight of Ab=(Weight of Ab for 1 μm-particle)/(particle diameter in μm)
+
+**(2) Preparation of Latex Particle Suspension**
+
+- - 1. Pipette 2.5 ml (40 mg/ml) Chloromethyl latex microspheres and
+    dilute with 10 mL MES buffer.
+  - 2. Centrifuge the mixture to sediment the particles; ˜3,000 G for
+    ˜20 min.
+  - 3. Remove supernatant and re-disperse the pellet in 10 ml MES
+    buffer.
+  - 4. Centrifuge again and remove the supernatant from the particles.
+  - 5. Re-suspend pellet in 5 ml MES buffer, being sure to completely
+    suspend microsphere particles.
+
+The latex suspension is now at approx. 2% solids (i.e. ˜20 mg/ml).
+
+**(3) Coupling**
+
+- - 1. To a 5 ml solution of 1.5 mg antibody, 3.75 mg albumin and 7 mg
+    of bovine transferrin in PBS/borate buffer adjusted to the
+    appropriate pH (see above) 5 ml of the latex is added. This is less
+    than a monolayer of antibody would require. The antibodies are more
+    reactive with the latex than the transferring and the albumin, and
+    bind more or less quantitatively with the latex, and the rest of the
+    latex surface is saturated albumin and/or transferrin. This mixture
+    also ensures against aggregation and good hydrophilicity of the
+    particles. Also other inert proteins may be mixed with the
+    antibodies during conjugation, like limpet hemocyanin, haptoglobin
+    and other water soluble proteins, without any affinity for the
+    antibodies nor the Cystatin C.
+  - 2. Incubate latex/protein mixture with gentle mixing at room
+    temperature overnight.
+  - 3. Centrifuge to separate the protein-labeled latex particles from
+    unbound protein.
+  - 4. Remove and retain supernatant for protein determination.
+    - At this step, the supernatant can be reserved and a protein
+      determination made. Any residual protein in the supernatant can be
+      subtracted from the original amount added. The remainder is coated
+      on the particles. The only method for protein determination
+      compatible with latex microspheres is the Micro BCA Protein
+      Determination Kit from Pierce.
+  - 5. Resuspend the pellet in 10 ml PBS.
+  - 6. Centrifuge again to sediment the particles.
+  - 7. Repeat steps 5-6 twice more for a total of 3 washes.
+  - 8. Re-suspend the final latex in 10 ml Storage Buffer giving a final
+    concentration of 1% solids. Store at 4° C. until used. Do not
+    freeze.
+
+Glycine is used in the storage buffer to fill any reactive sites on the microsphere surface which have not been covered by the protein. This is to reduce non-specific binding. Inert proteins as bovine Serum Albumin (BSA) or bovine transferring may be used for the same purpose if desired. The NaN3 is present as a biocide. If the latex is kept sterile, NaN3, which is not compatible with cell or tissue culture, can be omitted.
+
+**b) Preparation of Coated Nanoparticles**
+
+The above standard procedure was applied to coat latex particles with a diameter of 0.08 μm for preparing nanoparticle-conjugates of the present invention. According to the above formula 24 mg of antibody and 65 mg of albumin were used to coat 100 mg of particles.
+
+Said anti-Cystatin C immunoparticles were produced by coupling anti-Cystatin C anti-bodies product number A167 Cys-C-AF from Norwegian Antibodies AS, Norway (said polyclonal anti human Cystatin C antibodies correspond to the affinity purified immunoglobulin fraction of immunoglobulins isolated from the eggs of hens immunised with Cystatin C from patients with chronic renal tubular proteinuria; the affinity purification process was performed with immobilised human Cystatin C), to chloromethyl activated latex particles (0.08 μm, from Intefacial Dynamics Inc., USA, product number C37487). For said coupling the protocol “Coupling of Proteins to IDC Ultraclean Chloromethyl Latex, downloaded from http://www.idclatex.com/body-bgrounder-superactiveprotocol-11.asp may be used.
+
+Alternative particles and coupling protocols can be found at Interfacial Dynamics website, Invitrogen's website and Bangs Particles Inc.'s website.
+
+The obtained particles are used as a suspension of 2.26 mg particles per ml in 10 mM borate buffer, 10 mM glycine, 15 mM NaCl, with 0.25% Tween 20 and 1 g/l albumin.
+
+### Turbidimetric Cystatin C Assay Based on Immunoparticles of the Present Invention Under Different Assay Conditions
+
+The immunoparticle suspension as prepared by Synthesis Example 3 as used in the following experiments:
+
+In said experiments the following optimized assay buffer pH=7.2 was used:
+
+polyethylene glycol (Sigma) 22 g/l,
+
+Tween 20 (Sigma) 3 g/l,
+
+MOPS (Sigma) 9.4 g/l,
+
+sodium azide 2.7 g/l,
+
+sodium chloride 27 g/l,
+
+3 μl sample was mixed with 250 μl of the assay buffer, and allowed to stand for 300 seconds, followed by adding 40 μl particle suspension and mixing. After said mixing, the light absorbance per cm was measured in a Schimadzu UV 1601 spectrophotometer.
+
+Dependant on the concentration, the temperature, the time after adding the immunoparticles suspension and mixing, and wavelength of the light used in the spectrophotometer, the following results were obtained (mAbs Units/cm=milliabsorbance units per centimeter light pathway):
+
+a) At wavelength 546 nm at 37 degrees Celsius within 260 seconds assay time:
+
+a change in absorbance of 33 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and 88 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and 194 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+b) At wavelength 505 nm at 37 degrees Celsius within 260 seconds assay time:
+
+a change in absorbance of 43 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and 128 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and 282 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+c) At wavelength 570 nm at 37 degrees Celsius within 260 seconds assay time:
+
+a change in absorbance of 24 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and 65 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and 148 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+d) At wavelength 546 nm at 37 degrees Celsius within 120 seconds assay time:
+
+a change in absorbance of 11 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and 31 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and 72 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+e) At wavelength 546 nm at 37 degrees Celsius within 40 seconds assay time:
+
+a change in absorbance of 4 mAbs Units at a concentration of 9.9 μg Cystatin C per l in the assay mixture, and 11 mAbs Units at a concentration of 19.8 μg Cystatin C per l in the assay mixture, and 23 mAbs Units at a concentration of 34.1 μg Cystatin C per l in the assay mixture.
+
+The “assay time” was defined as the number of seconds from mixing the immunoparticles with the mixture of assay buffer and sample until the reading of the absorbance. The concentrations of Cystatin C had been determined using ProSpec nephelometric reference methods from Dade-Behring, US, prod. number OQNM13 N Latex Cystatin C.
+
+These results, with a faster and stronger turbidimetric signal, were then used to investigate the effect of interference from triglycerides, a common interfering substance in turbidimetric immunoassays, and the linearity of the method of the invention, compared to the best prior art method. These experiments are described below.
+
+### Assay Example 2
+
+**Investigating the Triglyceride Interference of a Turbidity Measurement of the Method of the Invention**
+
+The purpose of this study was to determine if the method of the invention experiences interference from triglycerides (TG) in the test sample. Whether interference is found below the predetermined TG concentration a dose response study is performed to demonstrate the relationship between interference and concentration of the possibly interfering substance. The procedure is based on the NCCLS guide “Interference testing in clinical chemistry; approved guideline”, NCCLS section 6.1.2.
+
+**a) Equipment:**
+
+Instrument: Hitachi 917 instrument with standard accessories, provided by Roche Diagnostics.
+
+Setting of the Hitachi 917 instrument:
+
+**b) Reagents:**
+
+Assay buffer: Polyethylene glycol (Sigma) 22 g/l, Tween 20 (Sigma) 3 g/l, MOPS (Sigma) 9.4 g/l, sodium azide 2.7 g/l, sodium chloride 27 g/l, pH=7.2.
+
+Calibrator: A serum comprising 7.70 mg human Cystatin C per liter, as determined by a reference laboratory using Dade-Behring's nephelometric method on the ProSpec nephelometer.
+
+Immunoparticles: Anti-Cystatin C immunoparticles as prepared according to Synthesis Example 2, above. The particles were used as a suspension (2.26 mg particles per ml suspension) in 10 mM borat buffer, 10 mM glycin, 15 mM NaCl, with 0.25% Tween 20 and 1 g/l albumin.
+
+**c) Samples:**
+
+Serum 1: A pool of human sera with triglyceride concentration above 20 mmol/l.
+
+Serum 2: A pool of human sera with triglyceride concentration below 10 mmol/l.
+
+These two serum samples were used to prepare samples of the desired triglyceride concentrations.
+
+**d) Determining the Cystatin C Concentration in the Two Serum Pools to be Used:**
+
+The Cystatin C concentration of the two serum pools to be used was measured in 10 replicates.
+
+The mean values were assigned the Cystatin C values of said serum pools.
+
+A limit of +/−5% interference at values above 1 mg/l and +/−7.5% at values below 1 mg Cystatin C was chosen for the maximum interference allowed from triglycerides. This difference is called dmax.
+
+According to NCCLS guidelines, the number of replicates (n) needed to perform this experiment with 95% confidence level (α=0.05) and 95% power (β=0.05)-two-sided test:
+
+\(n = {2\left\lbrack \frac{\left( {{1,960} + {1,645}} \right)s}{d_{\max}} \right\rbrack}^{2}\)
+
+where s is the within run precision (in mg Cystatin C/l) of the serum pool.
+
+Calculation of minimum of replicates according to the NCCLS guidelines:
+
+\({{Low}\mspace{14mu} {sample}\text{:}\mspace{14mu} n} = {{2\left\lbrack \frac{\left( {{1,960} + {1,645}} \right)s}{d_{\max}} \right\rbrack}^{2} = {0,76}}\)
+\({{High}\mspace{14mu} {sample}\text{:}\mspace{14mu} n} = {{2\left\lbrack \frac{\left( {{1,960} + {1,645}} \right)s}{d_{\max}} \right\rbrack}^{2} = {2,08}}\)
+
+The results demonstrated that 3 replicates were sufficient.
+
+**e) Preparation of Triglyceride Spiked Serum:**
+
+Serum with approximately 20 mmol/l triglycerides was made (serum pool A). An independent service laboratory determined the triglyceride content. Half of this portion of serum was spiked with purified Cystatin C from Scipac Ltd. UK, resulting in a Cystatin C value above 3 mg/l. (Serum pool B).
+
+Half of serum pools A and B were treated by ultracentrifugation at 50,000 rpm for 30 minutes in a Beckman TL-100 ultracentrifuge. The clear portion of the sample was used as the control pool, and the volume was corrected for the volume of the removed lipids. (Named serum pool C and D, respectively).
+
+**f) Analytical Runs:**
+
+3 aliquots of each of the base pool mixtures and the control pool mixtures A, B, C and D were prepared.
+
+Calibration of the instrument according to the instructions and analysis of the base pool mixtures and control pool mixtures (pools A, B, C and D) were performed in alternating order.
+
+If interference was observed, a 50% mid pool from the 0% and 100% pools was made. From the mid pool and the 0% pool, a 25% pool was made. From the mid pool and 100% pool a 75% pool was made by mixing equal amounts of each pool. n replicates of all in random order in one run with new calibration were measured.
+
+The average concentration for the 0% pool was calculated and subtracted from all other results.
+
+**g) Net Results for Data Analysis:**
+
+g1) The high Cystatin C Value Samples
+
+g2) The low Cystatin C value samples
+
+It was observed that according to the test conditions specified, TG at concentrations below 18 mmol/l does not interfere with the Cystatin C immunoassay of the present invention.
+
+It can therefore be concluded that the present invention provides a turbidimetric immunoassay method for Cystatin C characterized by having an interference from 15 mmol/liter triglycerides in the test sample of equal or less than 5% on the measured value of Cystatin C at a level of 3.2 and 0.83 mg Cystatin C per liter.
+
+**Assay Example 3**
+
+**Determination of Interference with TG for a Prior Art Assay**
+
+A corresponding investigation using the Hitachi 917 instrument and the prior art reagents (Dako Cytomation) was performed.
+
+**b) Results:**
+
+b1) The High Cystatin C Value Samples, Prior Art Reagents
+
+b2) the Low Cystatin C Value Samples, Prior Art Reagents
+
+From the above tables we can conclude that the method of the present invention is more robust against interference from triglycerides.
+
+**Assay Example 4**
+
+**Linearity Investigation Using the Method of the Present Invention**
+
+This investigation was performed according to the NCCLS protocol EP6-A, vol. 23, No 16.
+
+In this experiment the linearity of the Cystatin C immunoassay of the present invention was investigated. This was done by diluting 3 different spiked high serum samples with a low concentration serum sample, from 0-100%. By plotting the results of the dilution series and investigating the plot by first, second and third order regression analysis, we concluded that the Cystatin C immunoassay method of the present invention was linear according to the given criteria. The criteria were to examine and compare the plot parameters by a student's t-test to see whether the measuring points (plotted against dilution factor) could fit better to a second or third order polynomial than a first order polynomial. If the t-test failed, we accepted a difference of 6% between the first order polynomial and the higher order polynomial with the lowest Chi Square value related to the measured mean value at each level (except at the end points, where a difference up to 25% can be accepted due to the fact that one rarely or never measure samples with Cystatin C concentrations in this area). According to these criteria, the Cystatin C immunoassay method of the present invention is linear on Hitachi 911 measuring system.
+
+**a) Instruments:**
+
+A Hitachi 911 instrument was used.
+
+**b) Reagents:**
+
+The above described assay buffer and Cystatin C calibrator and anti-Cystatin C immunoparticles were used.
+
+**c) Samples:**
+
+3 different patient serum samples, A, B and C, where all samples have Cystatin C values above 6 mg/l.
+
+One patient serum sample, D with low Cystatin C concentration, below 0.8 mg/l, was used as a diluent of the high sera.
+
+Dilution series of plasma samples A, B and C as described in table 1 for sample A. Dilute each sample A, B and C 10 times, from 100%-0% of original concentration with the low sample D, where 100% is pure high concentration serum (A100, B100, C100 and 0% is pure low concentration serum (D100), were prepared.
+
+The same dilution series for sample B and sample C as described in table 1 was made.
+
+A calibration on the Hitachi 911 to establish a standard curve was performed using the following assay parameters:
+
+Each of the diluted samples was measured in 3 replicates, and the result for each sample A, B and C was recorded.
+
+**d) Results:**
+
+d1) Regression Analysis
+
+A plot of measured mean values versus the dilution factor for all three sera with regression analysis is shown in FIGS. 1, 2 and 3
+
+d2) Student's T-Test
+
+A student t-test was performed to check if the higher order regression parameters fitted the data. The results are shown in Table 4:
+
+**Serum 1**
+
+From table 4 we conclude that the dataset from serum 1 does not fit a second order polynomial, as the calculated t-value is less than the tabulated t-value.
+
+From table 4 we conclude that the dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 6%. The third order polynomial has the lowest chi square value.
+
+DL=P(x)−L(x),
+
+where P(x) is polynomial equation and L(x) is the linear equation
+
+The DL(%) plot for serum 1 is shown in FIG. 4.
+
+**Serum 2**
+
+From table 4 we conclude that the dataset from serum 2 does not fit a second order polynomial, as the calculated t-value is less than the tabulated t-value.
+
+From this we conclude that the dataset from serum 2 does not fit a third order polynomial as the calculated t-value is less than the tabulated t-value and the dilution series is considered linear.
+
+**Serum 3**
+
+From table 4 we conclude that the dataset from serum 3 does not fit a second order polynomial, as the calculated t-value is less than the tabulated t-value.
+
+From table 4 we conclude that the dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 5%. (DL). The third order polynomial has the lowest chi square value.
+
+DL=P(x)−L(x),
+
+where P(x) is the polynomial equation and L(x) is the linear equation.
+
+The DL(%) plot for serum 3 is shown in FIG. 5.
+
+From the calculations above and the specifications set to linearity, we find that the Cystatin C immunoassay of the present invention is linear in the tested range of approx 0.6-8.5 mg/l.
+
+As the reference interval is covered in this range, and Cystatin C concentrations above 8 mg/l have yet to be measured, the linear range documented is sufficient for all clinical purposes of Cystatin C immunoassay of the present method.
+
+It can be concluded from this study that the turbidimetric immunoassay method for Cystatin C according to the present invention is characterized by having a deviation from linearity below 4% in a measurement range of 1.32 to 7.5 mg Cystatin C per liter, and a deviation from linearity below 15-% in a measurement range of 0.75 to 7.5 mg Cystatin C per liter.
+
+**Assay Example 5**
+
+**Linearity Investigation on the Method According to the Present Invention**
+
+This investigation was performed according to the NCCLS protocol EP6-A, vol. 23, No 16.
+
+In this experiment the linearity of the Cystatin C immunoassay of the present invention was investigated. This was done by diluting a spiked high serum sample with a low concentration serum sample, from 0-100%. By plotting the results of the dilution series and investigating the plot by first, second and third order regression analysis, we concluded that the Cystatin C immunoassay method of the present invention was linear according to the given criteria. The criteria were to examine and compare the plot parameters by a student's t-test to see whether the measuring points (plotted against dilution factor) could fit better to a second or third order polynomial than a first order polynomial. If the t-test failed, we accepted a difference of 6% between the first order polynomial and the higher order polynomial with the lowest Chi Square value related to the measured mean value at each level (except at the end points, where a difference up to 25% can be accepted due to the fact that one rarely or never measure samples with Cystatin C concentrations in this area). According to these criteria, the Cystatin C immunoassay method of the present invention is linear on Architect ci8200 measuring system.
+
+**a) Instrument**
+
+An Architect ci8200 instrument was used.
+
+**b) Reagents**
+
+The above described assay buffer and Cystatin C calibrator and anti-Cystatin C immunoparticles were used.
+
+**c) Samples**
+
+One patient serum sample, A, that has Cystatin C values above 6 mg/l. One patient serum sample, D with low Cystatin C concentration, below 0.8 mg/l, was used as a diluent of the high serum.
+
+Dilution series of plasma sample A, as described in table 1. Dilute the sample 10 times, from 100%-0% of original concentration with the low sample D, where 100% is pure high concentration serum (A100, and 0% is pure low concentration serum (D100)
+
+A calibration on the Hitachi 911 to establish a standard curve was performed using the following assay parameters:
+
+Each of the diluted samples was measured in 3 replicates, and the result for sample A was recorded
+
+**d) Results:**
+
+d1) Regression Analysis
+
+A plot of measured mean values versus the dilution factor for serum A with regression analysis is shown in FIGS. 6, 7 and 8
+
+d2) Student's T-Test
+
+**Serum A**
+
+From table 9 we conclude that the dataset from serum A does not fit a second order polynomial as the calculated t-value is less than the tabulated t-value.
+
+From table 9 we conclude that the dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 6%. The third order polynomial has the lowest chi square value.
+
+DL=P(x)−L(x),
+
+where P(x) is polynomial equation and L(x) is the linear equation
+
+From the calculations above and the specifications set to linearity, we find that the Cystatin C immunoassay of the present invention is linear in the tested range of approx 0.6-8.8 mg/l.
+
+As the reference interval is covered in this range, and Cystatin C concentrations above 8 mg/l have yet to be measured, the linear range documented is sufficient for all clinical purposes of Cystatin C immunoassay of the present method.
+
+It can be concluded from this study that the turbidimetric immunoassay method for Cystatin C according to the present invention is characterized by having a deviation from linearity below 4% in a measurement range of 1.32 to 7.5 mg Cystatin C per liter, and a deviation from linearity below 15% in a measurement range of 0.75 to 7.5 mg Cystatin C per liter.
+
+**Assay Example 6**
+
+**Linearity Investigation on a Prior Art Turbidimetric Assay**
+
+**a) Analysis**
+
+An investigation corresponding to Assay Example 4 was performed using the prior art method and settings, according to “Cystatin C—The marker of choice for renal function testing”, by Camilla Schmidt in the journal European Clinical Laboratory, 10 Feb. 2004, and the package insert of the Dako products referred to in said article, the following results were obtained:
+
+**b) Results**
+
+b1) Regression Analysis
+
+The plots of measured mean values versus dilution factor for all three sera A, B and C with regression analysis are shown in FIGS. 10, 11 and 12
+
+b2) Student's T-Test
+
+A student t-test was performed to check if the higher order regression parameters fitted the data. The corresponding values are summarized in Table 11:
+
+**Serum 1**
+
+The dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 6% (DL). The third order polynomial has the lowest chi square value. The differences (DL) are:
+
+The DL(%) plot for serum 1 is shown in FIG. 13.
+
+**Serum 2**
+
+The dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 6% (DL). The third order polynomial has the lowest chi square value
+
+The differences (DL) are:
+
+The DL(%) plot for serum 2 is shown in FIG. 14.
+
+**Serum 3**
+
+This means that the dataset may fit to a higher order polynomial and we need to check if the difference between the first order polynomial and the higher order polynomial with the lowest chi square value is more than 6% (DL). The third order polynomial has the lowest chi square value.
+
+The differences (DL) are:
+
+The DL(%) plot for serum 3 is shown in FIG. 15.
+
+We conclude that the prior art of turbidimetric immunoassays exemplified by the Dako Cystatin C immunoassay is not satisfactorily linear in the lower part of the reference range.
+
+**Assay Example 7**
+
+**Correlation of Turbidimetric Assay of the Invention to Nephelometry Reference Methods**
+
+Reference is made to the publication “New improved automated particle-enhanced turbidimetric immunoassay for quantitative determination of human Cystatin C in serum and plasma” by C. Schmidt, C. Kjoller and K Gronkjaer, downloadable from the Dako Cytomation web-site, spring 2005. In a correlation study with the nephelometric reference method from Dade-Behring, they find an intercept of +0.214 and an increment/slope in the correlation curve of 0.6954. This is a big difference from the reference method.
+
+By the present invention there is provided a method having a much better correlation to the reference method, for the reasons stated above.
+
+**a) Assay Conditions:**
+
+In this experiment the Cystatin C immunoassay of this invention, with settings of the Hitachi 917 instrument as described above, was compared with the Dade-Behring Cystatin C method on BN ProSpec at Akademiska University Hospital in Uppsala, Sweden, by measuring the same 51 serum samples in duplicates on both methods (on one calibration and one day) and comparing them with bias analysis and linear regression analysis. In addition, the difference from Dade-Behring's upper confidence limit, also called Medical Decision Point, was determined. The experimental design and data analysis followed the recommendations in the NCCLS protocol EP-2,Vol. 22, No. 19.
+
+**b) Results**
+
+The following FIGS. 16, 17 and 18 demonstrate the result. Said FIGS. 16, 17 and 18 demonstrate that the method of the present invention surprisingly provides Cystatin C measurements with very good accuracy rendering results not significantly different from the nephelometric reference method. In the present study of 50 test samples, there was no significant bias between the two methods. In total there was a bias of 0.023, with a 95% confidence interval of −0.023 to +0.0658; in essence there was no bias significantly different from zero.
+
+The Dade-Behring Cystatin C immunoassay has a Medical Decision Point of 0.95 mg/l. Using Linear Regression Analysis, we find that a sample measuring 0.95 mg/l with the Dade Behring method will measure between 0.83-0.89 mg/l with the Cystatin C immunoassay method according to the present invention. The plasma method comparison analysis resulted in a slope of the correlation curve of, 0.968, with an intercept of 0.103 mg/l. This means that the plasma analysis's slope and intercept fall within the confidence interval of the serum analysis' slope and intercept.
+
+This demonstrates that the method of the present invention results in a much better correlation with the nephelometric reference method, compared to the previous best state of the art in turbidimetric methods.
+
+The above mentioned publication “New improved automated particle-enhanced turbidimetric immunoassay for quantitative determination of human Cystatin C in serum and plasma” demonstrates that the turbidimetric Cystatin C measurements can be used for estimation of glomerular filtration rate. This was also demonstrated by the publication “Simple Cystatin C-Based Prediction Equations for Glomerular Filtration Rate Compared with the Modification of Diet in Renal Disease Prediction Equation for Adults and the Schwartz and the Counahan-Barratt Prediction Equations for Children”, by Grubb & al. In Clinical Chemistry 51:8, 1420-1431. A similar publication using the nephelometric reference method is “Calculation of glomerular filtration rate expressed in ml/min from plasma Cystatin C values in mg/l” by A. Larsson & al., in Scand. J. Lab. Invest. 2004; 64, 25-30. A method according to the present invention, having a better correlation with the nephelometric method, is of course even better suited for this purpose then prior art turbidimetric measurement methods.
+

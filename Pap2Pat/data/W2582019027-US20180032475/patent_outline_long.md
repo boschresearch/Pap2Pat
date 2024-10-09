@@ -1,0 +1,178 @@
+# DESCRIPTION
+
+## FIELD
+
+- define chaotic systems and entanglement
+
+## BACKGROUND
+
+- motivate entanglement and chaos theory
+
+## SUMMARY
+
+- introduce cupolets and entangled cupolet pairs
+- describe circuitry for creating entangled cupolet pairs
+- summarize method for maintaining entangled cupolets
+- describe logic gate with entangled cupolet pair
+- summarize secure memory device with entangled cupolet pair
+- describe method for creating multi-cupolet entanglement
+- summarize method for creating multi-cupolet entanglement among multiple chaotic systems
+- describe application of entangled cupolet pairs
+- describe benefits of entangled cupolet pairs
+- conclude summary of invention
+
+## DETAILED DESCRIPTION OF THE DISCLOSURE
+
+- introduce cupolets
+- describe stabilization of UPOs
+- reference prior art
+- define entanglement between cupolets
+- describe exchange function
+- explain pure entanglement
+- discuss physical realizability
+- introduce generating cupolets
+- describe controlling chaotic systems
+- provide example of double scroll oscillator
+- define Poincaré surface of section
+- describe partitioning Poincaré sections
+- define coding function
+- illustrate coding function
+- describe macrocontrols
+- describe microcontrols
+- explain control scheme
+- illustrate cupolets of various periods
+- adopt naming convention
+- describe organizing libraries
+- illustrate diversity in spectral signatures
+- illustrate time-domain variations
+- discuss applications in image and music compression
+- mention theoretical results
+- describe transforming cupolets into wavelet-like waveforms
+- describe transitioning between cupolets
+- describe entangling two interacting chaotic systems
+- explain exchange function
+- describe emitted sequence
+- discuss properties of cupolet entanglement
+- conclude description of cupolet entanglement
+- illustrate chaotic entanglement
+- generate entanglement between cupolets
+- stabilize cupolet
+- apply control code
+- obtain visitation sequence
+- pass visitation sequence to exchange function
+- modify visitation sequence
+- send emitted sequence to System II
+- stabilize second cupolet
+- repeat cupolet interaction
+- define cupolets' interaction
+- guarantee stability
+- consider measurement on entangled cupolet
+- describe pure entanglement
+- apply visitation sequence as control code
+- generate pure entanglement
+- discuss relations between chaotic and quantum systems
+- describe exchange functions
+- modify visitation sequence
+- emit cupolet-stabilizing control code
+- discuss periodicity property
+- describe exchange function categories
+- illustrate exchange function operation
+- describe integrate-and-fire exchange function
+- operate on visitation sequence
+- describe preponderance exchange function
+- apply preponderance exchange function
+- describe logic gate exchange function
+- apply logic gate exchange function
+- describe logic operations
+- convert binary inputs to single bit
+- repeat output
+- append to emitted sequence
+- reset register
+- repeat modification process
+- describe exchange function operation
+- motivate energy accumulation
+- introduce Complement exchange function
+- describe Complement function operation
+- illustrate Complement function example
+- introduce NOutOfMtoL exchange function
+- describe NOutOfMtoL function operation
+- illustrate NOutOfMtoL function example
+- introduce ZerosAndOnes exchange function
+- describe ZerosAndOnes function operation
+- illustrate ZerosAndOnes function example
+- describe Ones and Zeros exchange functions
+- summarize exchange function categories
+- describe double scroll system for entanglement
+- illustrate self-entanglement and cross-entanglement
+- describe LogicGate and IntegrateAndFire exchange functions
+- describe Preponderance exchange function
+- observe entanglement properties
+- discuss measurement and collapse of wavefunction
+- describe cupolet stabilization
+- discuss measurement and collapse of wavefunction
+- describe cupolet stabilization
+- discuss natural entanglement
+- describe potential for spontaneous entanglements
+- discuss knowledgeable measurement
+- describe blind measurement
+- discuss entangled cupolet pairs
+- describe measurement on entangled pair
+- discuss communication between entangled pairs
+- describe drift from entangled pair states
+- discuss Hilbert space considerations
+- describe cupolets as basis elements
+- discuss spectrum collection
+- describe cupolets as states of the system
+- discuss measurement alteration of state
+- describe cupolet entanglement
+- describe cross-entanglement
+- describe self-entanglement
+- discuss exchange function categories
+- describe LogicGate exchange function
+- describe IntegrateAndFire exchange function
+- describe Preponderance exchange function
+- describe ZerosAndOnes exchange function
+- summarize exchange function operation
+- motivate chaotic entanglement
+- discuss entropy in chaotic systems
+- define Kolmogorov entropy
+- describe properties of chaotic systems
+- outline search procedure for cupolet entanglement
+- generate library of cupolets
+- compute visitation sequences
+- create emitted sequences
+- detect entanglement between cupolets
+- modify cupolet entanglement for multiple entanglements
+- identify control code bits for each lobe
+- define local control codes and visitation sequences
+- convert local visitation sequences to emitted sequences
+- use emitted sequences to stabilize lobes of other cupolets
+- illustrate entangled cupolets lattice
+- describe entanglement process
+- illustrate additional examples of entangled cupolets lattices
+- describe process for maintaining mutual stabilization
+- generate first cupolet and apply control code
+- produce first visitation sequence
+- apply exchange function to produce second control code
+- apply second control code to second cupolet
+- transform second visitation sequence to produce first control code
+- apply first control code to first cupolet for second time
+- describe process for creating multi-cupolet entanglement
+- apply controls to chaotic systems
+- produce outputs based on visitation sequences
+- apply outputs as controls to other chaotic systems
+- describe additional aspects of chaotic entanglement
+- design memory device using entangled cupolets
+- implement exchange functions
+- develop basic logic gates using entangled cupolets
+- create AND gate using entangled cupolets
+- implement more advanced logic gates
+- describe hardware implementation of double-scroll oscillator
+- illustrate Chua's circuit
+- describe nonlinear negative resistance
+- discuss integration of Chua's circuit into monolithic chip
+- describe fabrication of array of Chua circuits
+- discuss benefits of hardware platform for chaotic entanglement
+- describe flexibility of chaotic entanglement systems
+- conclude with scope of invention
+

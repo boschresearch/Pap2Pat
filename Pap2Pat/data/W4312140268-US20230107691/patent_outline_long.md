@@ -1,0 +1,172 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- define biometrics
+- motivate biometric data monitoring
+- describe physiological processes
+- introduce biosignals
+- describe detector devices
+- explain biometric data analysis
+- introduce cardiovascular measurements
+- describe limitations of contemporary biometrics systems
+- introduce autonomic nervous system
+- describe biofeedback
+- explain closed-loop system
+- describe wearable systems
+
+## SUMMARY OF THE INVENTION
+
+- introduce wearables
+- describe wearable systems
+- motivate limitations of wearables
+- describe detector devices of wearables
+- explain limitations of wearables
+- introduce closed-loop system
+- describe in-ear infrasonic hemodynography technology
+- introduce in-ear biosensor system
+- describe data analysis system
+- explain real-time data collection and analysis
+- describe advantages of in-ear biosensor system
+- introduce IH signals
+- describe continuous data stream
+- introduce closed-loop system features
+- describe data analysis system
+- create baseline autonomic nervous system profile
+- identify current physiological state
+- describe physiological data
+- create baseline profile by plotting data
+- create baseline profile using machine learning model
+- create baseline profile from external sensors
+- create baseline profile from user data
+- present current physiological state
+- instruct individual to adjust physiological state
+- access target physiological state
+- instruct individual to adjust to target state
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce invention and its scope
+- define terms and conventions
+- describe FIG. 1A and its components
+- detail components within and/or in communication with network cloud
+- describe computing devices and their components
+- explain CPUs and their functions
+- describe microprocessors and microcontrollers
+- detail application code and its execution
+- explain operating system and its functions
+- describe APIs and their role
+- detail in-ear biosensor system and its components
+- describe earbuds and their connections
+- explain controller board and its functions
+- describe user devices and their components
+- detail user app and its functions
+- describe application server and its functions
+- detail medical professionals and their roles
+- describe connections between components
+- explain wireless communications links
+- detail data analysis system and its functions
+- describe infrasound and its characteristics
+- explain biosignals and their detection
+- detail sensors and their functions
+- describe "stereo effect" and its benefits
+- explain operation of closed loop system
+- detail authentication and login process
+- describe transmission of biosignals
+- explain Path A, B, and C communications paths
+- detail Path C and its components
+- describe Path B and its components
+- conclude description of preferred embodiments
+- describe in-ear biosensor system
+- send biosignals to data analysis system
+- analyze biosignals with machine learning models
+- access and update medical record
+- send notification messages
+- communicate with other systems and devices
+- display visual content
+- notify individual
+- present notification messages
+- identify and characterize biosignals
+- update medical records
+- report problems to medical professionals
+- provide feedback to individuals
+- describe in-ear biosensor system components
+- include auxiliary sensors
+- communicate with mobile devices
+- describe closed loop system 10-2
+- receive biosignals from multiple sources
+- describe ECG system
+- describe wrist-worn wearable
+- describe eyeglass user device
+- describe VR headset
+- describe in-ear biosensor system architecture
+- capture IH signals and play audio
+- describe biosignal sensitivity study
+- plot biosignals, ECG signals, and tachograms
+- compute tachograms and HR and HRV values
+- analyze data quality and identify peaks
+- describe power spectra plots
+- indicate frequency domain representation
+- define low-frequency and high-frequency bands
+- motivate use of IH signals for health monitoring
+- limitations of existing wearables
+- describe closed loop system for cardiac assessment
+- motivate IH technology for comprehensive monitoring
+- describe acoustic/vibration sensors
+- speculate on future use cases for speech and motion signals
+- describe cloud infrastructure for data storage
+- describe data analysis system
+- illustrate autonomic nervous system
+- describe physiological data and its effect on autonomic nervous system
+- describe closed loop system with and without auxiliary sensors
+- describe baseline autonomic nervous system profile
+- describe combination of physiological data for autonomic nervous system state
+- describe translation of data points to physiological states
+- describe continuum of physiological states
+- describe method of operation of data analysis system
+- monitor and access biosignals
+- identify physiological data from biosignals
+- create baseline autonomic nervous system profile
+- store biosignals and profile to medical record
+- monitor and access new biosignals
+- identify current physiological data and state
+- map current physiological data to baseline profile
+- store new biosignals and current physiological state to medical record
+- describe complex mapping of physiological data
+- describe use of machine learning and deep learning methods
+- provide more detail for creating baseline profile
+- provide more detail for mapping current physiological data
+- conclude method of operation of data analysis system
+- describe data analysis system
+- create baseline autonomic nervous system profile
+- map current physiological data against baseline profile
+- describe biofeedback method
+- discuss individual variability in physiological data
+- obtain and store multiple instances of biosignals and physiological data
+- monitor and access biosignals
+- identify and extract physiological data
+- access other physiological data from external sensors
+- synchronize time-stamped physiological data
+- access user-provided physiological data
+- describe various other physiological data
+- pass data to machine learning model
+- obtain trained model specific to individual
+- access new biosignals and physiological data
+- identify new physiological data
+- pass new data to trained model
+- instruct individual to perform actions
+- describe direct and indirect actions
+- determine successful actions
+- update personalized response profiles
+- describe various applications
+- describe advertising capabilities
+- refine advertisement selection
+- describe advantages of in-ear biosensor system
+- access stored baseline autonomic nervous system profiles
+- predict changes to current physiological state
+- describe music applications
+- describe work space applications
+- describe social media and dating applications
+- present current physiological state and baseline profile
+- access target physiological state and instruct individual
+

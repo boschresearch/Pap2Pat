@@ -1,0 +1,22 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+## BACKGROUND ART
+
+### PRIOR ART LITERATURE
+
+## DISCLOSURE OF THE INVENTION
+
+### Problem for Solution by the Invention
+
+### Means to Solve the Problem
+
+### Effect of the Invention
+
+## BEST MODES FOR CARRYING OUT THE INVENTION
+
+### EXAMPLES
+
+## INDUSTRIAL APPLICABILITY
+

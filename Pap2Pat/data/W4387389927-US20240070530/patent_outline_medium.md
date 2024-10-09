@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce federated learning
+- describe federated averaging
+- limitations of federated averaging
+- describe federated distillation
+
+## SUMMARY
+
+- introduce hybrid federated learning
+- select client devices for federated averaging
+- select client devices for federated distillation
+- generate federated averaging updates
+- generate federated distillation updates
+- update global ML model using federated averaging
+- update global ML model using federated distillation
+- address shortcomings of federated averaging and distillation
+- determine quantity of client data available
+- generate query for client data availability
+- generate distribution of client devices
+- select fast and slow clients
+- generate federated averaging updates at slow clients
+- generate federated distillation updates at fast clients
+
+## DETAILED DESCRIPTION
+
+- introduce hybrid federated learning technique
+- describe client devices and remote system
+- identify client devices for federated learning
+- determine quantity of client data for each device
+- generate distribution of client devices
+- select client devices for federated averaging and distillation
+- process client data using on-device ML model
+- generate predicted outputs
+- describe on-device ML model training
+- generate gradient using supervised learning
+- generate gradient using unsupervised or semi-supervised learning
+- describe teacher-student technique
+- describe client data masking technique
+- generate federated averaging update
+- update on-device ML model locally
+- transmit federated averaging update to remote system
+- describe multiple client devices in first subset
+- process client data at client device 110N
+- generate predicted outputs at client device 110N
+- generate gradient at client device 110N
+- update on-device ML model at client device 110N
+- transmit federated distillation update to remote system
+- describe federated averaging engine at remote system
+- update global ML model using federated averaging updates
+- describe federated distillation engine at remote system
+- update global ML model using federated distillation updates
+- conclude hybrid federated learning technique
+- describe federated learning
+- process client data locally
+- generate gradients
+- transmit gradients to remote system
+- combine gradients at remote system
+- update global ML model
+- distill on-device ML model into global ML model
+- process public data
+- generate labels
+- utilize labels as supervision signal
+- update global ML model
+- transmit updated global ML model to client devices
+- replace on-device ML model with updated global ML model
+- describe client device architecture
+- illustrate automated assistant client
+- describe on-device ML engines
+- describe cloud-based automated assistant components
+- illustrate interactions between client device and cloud-based components
+- describe user interactions with automated assistant
+- describe audio data processing
+- describe vision data processing
+- describe textual data processing
+- describe other data processing
+- describe predicted output generation
+- describe fulfillment data generation
+- describe cloud-based automated assistant components
+- explain on-device and cloud-based processing
+- introduce hybrid federated learning technique
+- identify population of client devices
+- determine quantity of client data
+- select client devices for federated learning
+- generate federated averaging updates
+- generate federated distillation updates
+- update global ML model
+- further update global ML model
+- describe client device processing
+- generate client device gradients
+- update on-device ML model
+- transmit updated on-device weights
+- describe second subset client device processing
+- update on-device ML model and transmit updates
+- describe example computing device architecture
+- describe user interface output devices
+- describe storage subsystem
+- describe processor and memory
+- describe bus subsystem
+- describe computing device
+- describe user control over data collection
+- introduce federated learning method
+- describe selecting client devices for federated learning
+- describe generating federated averaging updates
+- describe updating global ML model with federated averaging updates
+- describe generating federated distillation updates
+- describe updating global ML model with federated distillation updates
+- describe selecting client devices based on data distribution
+- describe determining quantity of client data
+- describe transmitting query to client devices
+- describe receiving indication of client data quantity
+- describe transmitting updated global ML model to client devices
+- describe concluding federated learning round
+- introduce alternative federated learning method
+- describe storing global weights of ML model
+- describe updating global ML model with combined updates
+

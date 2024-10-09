@@ -1,0 +1,605 @@
+{
+    "id": "US20170091649",
+    "authors": [
+        "David Clarke",
+        "Jay Deep Sau",
+        "Sankar Das Sarma"
+    ],
+    "title": "ADIABATIC PHASE GATES IN PARITY-BASED QUANTUM COMPUTERS",
+    "date": "2016-06-30 00:00:00",
+    "abstract": "Example methods and mechanisms are described herein for implementing and adiabatically operating a topological quantum computing (TQC) phase gate that complements the existing Clifford operations, and thereby allows universal quantum computation with Majorana systems. Further embodiments include a testing system for the phase gate that is feasible with Majorana zero modes and demonstrates violations of the CHSH-Bell inequality. Further, the design used for the testing of the inequality leads directly to a practical platforms for performing universal TQC with Majorana wires in which explicit braiding need never occur. Thus, certain embodiments of the disclosed technology involve three synergistically connected aspects of anyonic TQC the context of the currently active area of using MZMs for topological quantum computation): a practical phase gate for universal topological quantum computation using MZMs, a precise protocol (using CHSH inequality) for testing that the desired gate operation has been achieved, and bypassing the necessity of MZM braiding (and so avoiding, e.g., problems of nonadiabaticity in the braids).",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "This application relates to reversible computing, such as quantum computing. In particular, this application discloses embodiments for phase gates for use in a quantum circuit."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to reversible computing"
+                    ],
+                    "num_characters": 176,
+                    "outline_medium": [
+                        "relate to reversible computing"
+                    ],
+                    "outline_short": [
+                        "relate to reversible computing"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Carrying out fault-tolerant topological quantum computation using non-Abelian anyons (e.g., Majorana zero modes) is a desired goal in quantum computation. However, the Gottesman-Knill theorem holds that if a system can only perform a certain subset of available quantum operations (e.g., operations from the Clifford group) in addition to the preparation and detection of qubit states in the computational basis, then that system is insufficient for universal quantum computation. Indeed, any measurement results in such a system could be reproduced within a local hidden variable theory, so that there is no need for a quantum mechanical explanation and therefore no possibility of quantum speedup.",
+                        "Unfortunately, Clifford operations are precisely the ones available through braiding and measurement in systems supporting non-Abelian Majorana zero modes, which are otherwise a suitable candidate for topologically protected quantum computation. In order to move beyond the classically simulable subspace, an additional phase gate is desired. This phase gate would allow the system to violate the Bell-like CHSH inequality that would otherwise constrain a local hidden variable theory."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate fault-tolerant topological quantum computation",
+                        "limitations of Clifford operations"
+                    ],
+                    "num_characters": 1186,
+                    "outline_medium": [
+                        "motivate fault-tolerant topological quantum computation"
+                    ],
+                    "outline_short": [
+                        "motivate fault-tolerant topological quantum computation"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Disclosed herein are representative embodiments of methods, apparatus, and systems for quantum computing, and in particular for quantum computing using a universal topological quantum computer. The disclosed methods, apparatus, and systems should not be construed as limiting in any way.",
+                        "In this disclosure, a new type of phase gate is introduced for already existing semiconductor-based Majorana wire systems. Additionally, embodiments disclosed herein demonstrate how this phase gate may be benchmarked using CHSH measurements.",
+                        "In particular embodiments, systems and techniques are disclosed that use a \u201cmeasurement-only\u201d approach that bypasses the need for explicit Majorana braiding. This approach may be scaled beyond the two-qubit system used for CHSH violations, leading to a well defined platform for universal fault-tolerant quantum computation using Majorana zero modes.",
+                        "Certain example embodiments concern a method for operating an adjustable phase gate in a quantum circuit, the adjustable phase gate comprising a stationary pair of Ising anyons. Example implementations comprise the acts of causing a mobile Ising anyon to pass through the adjustable phase gate, thereby creating a targeted phase change in the stationary pair of Ising anyons; and controlling the mobile Ising anyon as the mobile Ising anyon passes through the adjustable phase gate so that the mobile Ising anyon has a complex amplitude during passage. Further, the controlling is performed such that the targeted phase change experienced by the stationary pair of Ising anyons is between 0 and \u03c0 or 0 and \u2212\u03c0. In particular implementations, the controlling comprises performing one or more of: (a) adjusting a gate voltage of one or more gates capacitively coupled to one or more superconducting islands that form the adjustable phase gate, (b) adjusting a capacitance of the one or more superconducting islands; or (c) adjusting a strength of at least one Josephson junction relative to at least one other Josephson junction, the Josephson junctions connecting two or more of the superconducting islands to one another. In some implementations, the method further comprises, in a first operational stage, altering a magnetic flux through the adjustable phase gate in a first direction, the first direction comprising either increasing the magnetic flux or decreasing the magnetic flux; and, in a second operational stage, altering the magnetic flux through the adjustable phase gate in a second direction that is opposite of the first direction. Further, in some examples, during either or both operational stages, the method can comprises adjusting a strength of a first Josephson junction at a first end of a superconducting region in the adjustable phase gate; and, during either or both operational stages, adjusting a strength of a second Josephson junction at a second end of the superconducting region in the adjustable phase gate, wherein h strengths of the first and second Josephson junctions are selected to create a relative difference that produces the targeted phase change in the Ising pair. In some examples, the adjustable phase gate comprises a plurality of superconducting regions arranged to form a superconducting loop, wherein adjacent ones of the superconducting regions are connected to one another via respective Josephson junctions, and herein one of the superconducting regions comprises a Majorana wire located on the one of the superconducting regions. In certain example embodiments, the adjustable phase gate is implemented in a transmission line resonator comprising three Majorana wires arranged to form a qubit between a bus and a phase ground of the e transmission line resonator. In some example embodiments, the method further comprises measuring one or more Pauli operators of the qubit by selectively controlling: (a) Josephson couplings between a first superconducting region on which a first Majorana wire is located and a bus and phase ground; and (b) Josephson couplings between a second superconducting region on which a second Majorana wire is located and the bus and the phase ground. In some example embodiments, the superconducting loop that is desirable for the phase gate is formed by the second superconducting region, the phase ground, and a third superconducting region containing no Majorana wire.",
+                        "Further example quantum circuit phase gates disclosed herein comprise: a plurality of superconducting components arranged in a ring to form a superconducting loop, wherein adjacent superconducting components are connected to each other via Josephson junctions; a Majorana wire located on a respective one of the superconducting components; and a magnetic field generator configured to apply a variable magnetic field to the superconducting loop formed by the ring of superconductive components. In some implementations, the magnetic field generator and the capacitance of one lore of the superconducting components are controllable to draw a Josephson vortex into the superconducting loop. Further, in certain examples, the superconducting components comprise first and second superconducting islands connected to a bulk superconductor. In some implementations, for example, the first superconducting island is connected to the bulk superconductor via a first controllable Josephson junction, the second superconducting island is connected to the bulk superconductor via a second controllable Josephson junction, and the first superconducting island is connected to the second superconducting island via a third Josephson junction. In certain examples, only the first and second Josephson junctions are controllable. Still further, the phase gate can be part of a greater system. For instance, in some example embodiments disclosed herein, a microwave resonator system configured to implement a qubit register between a bus and a phase ground is disclosed, the qubit register comprising the phase gate as described above. In some implementations of such systems, the Majorana wire is a first Majorana wire, and the plurality of superconducting components arranged in a ring comprises: a first superconducting component coupled to the phase ground via a first controllable Josephson junction and coupled to the bus via a second controllable Josephson junction, the first Majorana wire being located on the first superconducting component; and a second superconducting component coupled to the phase ground via a third controllable Josephson junction and coupled to the first superconducting component via a fixed Josephson junction, the second superconducting component being disconnected from the bus. In some examples, the microwave resonator further comprises: a third superconducting component coupled to the phase ground via a fifth controllable Josephson junction and to the bus via a sixth controllable Josephson junction; a second Majorana wire located on the third superconducting component; a third Majorana wire located on a superconducting component connected to the bus, the first, second and third Majorana wires being positioned to create the qubit register with no braiding mechanism. In some examples, a Clauser-Horne-Shimony-Holt (CISH) inequality or Bell inequality measurement system is disclosed, in which the system comprises the phase gate as described here.",
+                        "In some example embodiments, methods of operating a quantum circuit phase gate are disclosed in which the method comprises: applying a time-varying magnetic field to a set of regions in the quantum circuit phase gate, at least some of the regions being connected to one another via respective Josephson junction; and controlling a first of the Josephson junctions and a second of the Josephson junctions to create a Josephson vortex in the quantum circuit phase gate as the time varying magnetic field is applied. In some implementations, the regions are superconducting regions, and the regions form a superconducting loop. In certain implementations, the Josephson vortex produces a phase change to a qubit stored in a qubit register formed with the quantum circuit phase gate. In some implementations, the method comprises selectively varying the phase change between 0 and \u03c0 or 0 and \u2212\u03c0.",
+                        "The foregoing and other objects, features, and advantages of the invention will become mare apparent from the following detailed description, which proceeds with reference to the accompanying figures."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce phase gate for topological quantum computer",
+                        "benchmark phase gate using CHSH measurements",
+                        "describe measurement-only approach",
+                        "scale approach beyond two-qubit system",
+                        "define adjustable phase gate",
+                        "cause mobile Ising anyon to pass through phase gate",
+                        "control mobile Ising anyon for targeted phase change",
+                        "adjust gate voltage or capacitance",
+                        "adjust Josephson junction strength",
+                        "alter magnetic flux in first direction",
+                        "alter magnetic flux in second direction",
+                        "adjust Josephson junction strengths",
+                        "implement phase gate in transmission line resonator",
+                        "measure Pauli operators of qubit",
+                        "describe superconducting loop phase gate",
+                        "describe microwave resonator system"
+                    ],
+                    "num_characters": 8413,
+                    "outline_medium": [
+                        "introduce phase gate for topological quantum computer",
+                        "benchmark phase gate using CHSH measurements",
+                        "describe measurement-only approach",
+                        "scale approach beyond two-qubit system",
+                        "define adjustable phase gate",
+                        "control mobile Ising anyon",
+                        "describe example implementations",
+                        "summarize disclosed embodiments"
+                    ],
+                    "outline_short": [
+                        "introduce phase gate for topological quantum computer",
+                        "describe measurement-only approach",
+                        "summarize embodiments of phase gate",
+                        "outline example implementations"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "I. General Considerations",
+                            "paragraphs": [
+                                "Disclosed herein are representative embodiments of methods, apparatus, and systems for quantum computing, and in particular for quantum computing using a universal topological quantum computer. The disclosed methods, apparatus, and systems should not be construed as limiting in any way, instead, the present disclosure is directed toward all novel and nonobvious features and aspects of the various disclosed embodiments, alone or in various combinations and subcombinations with one another. Furthermore, any features or aspects of the disclosed embodiments can be used alone or in various combinations and subcombinations with one another. For example, one or more method acts from one embodiment can be used with one or more method acts from another embodiment and vice versa. The disclosed methods, apparatus, and systems are not limited to any specific aspect or feature or combination thereof, nor do the disclosed embodiments require that any one or more specific advantages be present or problems be solved.",
+                                "Although the operations of some of the disclosed methods are described in a particular, sequential order for convenient presentation, it should be understood that this manner of description encompasses rearrangement, unless a particular ordering is required by specific language set forth below. For example, operations described sequentially may in sonic cases be rearranged or performed concurrently. Moreover, for the sake of simplicity, the attached figures may not show the various ways in which the disclosed methods can he used in conjunction with other methods.",
+                                "Various alternatives to the examples described herein are possible. For example, some of the methods described herein can be altered by changing the ordering of the method acts described, by splitting, repeating, or omitting certain method acts, etc. The various aspects of the disclosed technology can be used in combination or separately. Different embodiments use one or more of the described innovations. Some of the innovations described herein address one or more of the problems noted herein. Typically, a given technique/tool does not solve all such problems.",
+                                "As used in this application and in the claims, the singular forms \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d include the plural forms unless the context clearly dictates otherwise. Additionally, the term \u201cincludes\u201d means \u201ccomprises.\u201d Further, as used herein, the term \u201cand/or\u201d means any one item or combination of any items in the phrase."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce quantum computing",
+                                "describe limitations of disclosed embodiments",
+                                "discuss flexibility of disclosed embodiments",
+                                "define terms used in application"
+                            ],
+                            "num_characters": 2474,
+                            "outline_medium": [
+                                "introduce patent scope",
+                                "describe flexibility of disclosed embodiments"
+                            ],
+                            "outline_short": [
+                                "introduce patent scope and limitations"
+                            ]
+                        },
+                        {
+                            "title": "II. Introduction to Disclosed Technology",
+                            "paragraphs": [
+                                "Implementing fault-tolerant quantum computation using physical qubits is a goal for developers of quantum computers. Unique among such efforts is so-called topological quantum computation (\u201cTQC\u201d), which utilizes exotic non-Abelian quasiparticles in storing the qubits. These anyons, the most prominent examples of which are zero-energy localized excitations(called \u201cMajorana zero modes\u201d) in the superconducting gaps of certain types of topological superconductors, are neither fermions nor bosons, obeying instead a non-Abelian statistics in two-dimensional systems. As nonlocal topological objects, these anyonic quasiparticles are immune to local perturbations in the system, and thus have the characteristic property of having little or no quantum decoherence, making them desirable from the perspective of quantum computation.",
+                                "Disclosed herein are embodiments for addressing a current roadblock in carrying out anyonic TQC by providing mechanisms and methods for carrying out universal qua computation using Majorana qubits. Also disclosed are mechanisms and methods for connecting the anyonic TQC with fundamental aspects of quantum nonlocality through the observation of a particular variant of the Bell inequality using Majorana zero modes as a clear signal of the universality of the underlying topological quantum computing platform.",
+                                "Universal quantum computation involves the operator having the ability to produce any quantum state in the computational Hilbert space, including in particular those that violate the limits imposed on local hidden variable theories by the Bell inequality or its variants such as the Clauser-Horne-Shimony-Holt (\u201cCHSH\u201d) inequality. Even with the aid of measurement, however, a topological quantum computer based on the braiding of anyonic Majorana fermion zero modes (\u201cMZMs\u201d) cannot create such a state in a topologically protected manner. This is related to the fact that the braids and measurements of MZMs together form a representation of the Clifford group, which is classically simulable. This limitation of MZMs in carrying out universal quantum computation arises from the Ising (or SU (2)2) nature of the corresponding topological quantum field theory (\u201cTQFT\u201d) which enables only \u03c0/2 rotations in the Hilbert space of the qubits through braiding. (The surface code implementation in superconducting quints, which is one of the most promising practical approaches to quantum computation at the present time, also suffers from the of only supporting Clifford group operations in a natural way.)",
+                                "While there are many theoretical proposals for going beyond MZMs (e.g., beyond the Ising anyon universality) which, in principle, could lead to universal topological quantum computation by utilizing richer TQFT (e.g. SU (2)3 or Fibonacci anyons), no such system has been experimentally demonstrated. Furthermore, these richer systems enabling universal TQC often require extremely complicated braiding operations involving very high overhead in order to approximate Clifford group operations, which themselves are useful for quantum error correcting codes.",
+                                "It is therefore desirable to develop quantum computing approaches that specifically use MZMs (potentially some additional operations) to carry out inherently quantum-mechanical tasks beyond the constraint of the Gottesman-Knill theorem. In particular, it has been observed that the \u201cprotected\u201d operations of braiding and measurement on MZMs (and also the surface code) become universal for quantum computation when supplemented with a single qubit phase gate of small enough angle. The so-called \u03c0/8 phase gate (or T gate) e\u2212i\u03c0/8|00|+ei\u03c0/8|11| is often named as part of a universal gate set. In part, this is because of the \u201cmagic state distillation\u201d protocol that corrects errors in noisy T gates through the use of Clifford gates and measurement. See S. Bravyi and A. Kitaev, Phys. Rev. A 71, 022316 (2005), quant-ph/0403025. However, any single qubit phase gate that produces a phase difference 0 between be two qubit states with \u03b8\u2260n\u03c0/4 for integer n is sufficient for universal quantum computation as long as it can be produced consistently. (In fact, it would be useful for the reduction of overhead to be able to produce a phase gate of arbitrary angle, and there are now error correction algorithms designed this in mind.)",
+                                "In this disclosure, example methods and mechanisms are described for implementing and adiabatically performing the phase gate that complements the existing Clifford operations, and thereby allows universal quantum computation with Majorana systems. In order to test such a gate, a quantum demonstration feasible with MZMs, namely, violations of CHSH-Bell inequality, is also disclosed. Further, the design used for the testing of the inequality leads directly to a practical platform for performing universal TQC with Majorana wires in which explicit braiding need never occur. Thus, certain embodiments of the disclosed technology involve three synergistically connected aspects of anyonic TQC (in the context of the currently active area of using MZMs for topological quantum computation): a practical phase gate for universal topological quantum computation using MZMs, a precise protocol (using CHSH inequality) for testing that the desired gate operation has been achieved, and bypassing the necessity of MZM braiding (and so avoiding, for example, problems of nonadiabaticity in the braids). Any one or more of these developments can be used alone or in combination with one another.",
+                                "In designing the phase gate and the quantum computation platform, example embodiments disclosed herein take a \u201cblack box\u201d approach to the Majorana wire system itself, avoiding as much as possible the manipulation of parameters that might change the topological nature of the wire state, or tune couplings between the MZMs. This approach is advantageous due to the continuously-developing nature of the Majorana field. Particular embodiments focus on a universal aspect of the Majorana system: a well-developed degeneracy associated with the fermion parity of a given wire. This approach (based in \u201cmeasurement-only\u201d TQC) is entirely sufficient for producing and testing the adiabatic phase gate and (by extension) for universal quantum computation. See, e.g., P. Bonderson et al., Phys. Rev. Lett. 101, 010501 (2008), arXiv:0802.0279, and P. Bonderson et al., Annals of Physics 324, 787 (2009), arXiv:0808.1933.",
+                                "In Section III below, the CHSH inequalities are reviewed in the context of Majorana zero mode physics. A measurement of violations of the CHSH-Bell Inequalities is a useful step in demonstrating not only the fundamental quantum physics and non-Abelian statistics of Majorana zero modes, but also the departure from the Clifford group that is necessary for universal quantum computation. In particular, it has been shown that operations capable of producing a violation of the CHSH inequality, when combined with Clifford operations, are sufficient for universal quantum computation. This may be thought of as a refinement of the usual error-correction bound given by magic-state distillation. Put another way, if a phase gate produces a violation of the CHSH inequalities then it falls within the error-correction bound. Thus, a CHSH measurement be used as a single-number benchmark of the quality of a gate, rather than relying on tomography of the entire produced state.",
+                                "In Sections IV-V, embodiments of a new type of phase gate are introduced and analyzed. Other proposals for introducing a single qubit phase gate into a Majorana-wire based system have been fundamentally limited by timing errors due to the largely unknown relaxation rates involved in the detailed wire physics. In certain embodiments of the disclosed technology, however, these limitations are bypassed by eliminating timing errors entirely, and instead performing (or operating) the phase gate adiabatically. In some example implementations, the disclosed phase gate uses elements such as semiconductor Majorana wires, superconductors, magnetic fields, and Josephson junctions and may be integrated into designs that use these elements for various other purposes (e.g., for braiding and Majorana-based memory) without much additional overhead. For example, embodiments of the disclosed phase gate can be integrated with designs such as those described in T. Hyart et al., Phys. Rev. B 88, 035121 (2013), 1303.4379. For this reason, certain example embodiments disclosed herein are designs that are appropriate for corporation into such a system. However, these embodiments are not limiting, as the technology is adaptable for use in a variety of Majorana wire systems.",
+                                "In Sec. VI below, example experimental setups for benchmarking the new phase gate using the CHSH inequalities are discussed, in contrast to various exotic proposals for going beyond MZMs and SU (2)2 TQFT, certain example experimental setups disclosed herein do not require building new experimental platforms, but use already existing and extensively experimentally studied semiconductor nanowire-based MZM platforms. Further, the experiments discussed below establish the non-Abelian nature of the Majorana zero modes as well as test example embodiments of the disclosed phase gate. In some examples, measurement-based procedures directly equivalent to Majorana braiding are performed in the same architecture. In fact, embodiments of the disclosed system provide a simpler platform for effectively braiding with nanowire MZMs than other proposals in the sense that no coupling needs to be fine-tuned between the various Majorana modes.",
+                                "In Sec. VII, example embodiments of a scalable memory register capable of measuring any Pauli operator on a set of qubits are described. The architecture of particular example implementations disclosed herein use only one junction of Majorana wires per qubit, greatly simplifying fabrication requirements for a Majorana-wire platform. Combined with the phase gate of Sec. IV, this design enables universal fault tolerant quantum computation using nanowire MZMs. Embodiments of the disclosed technology were designed with elements in mind that are available now, but the principles behind the disclosed phase gate and memory design examples are adaptable to any known or future Majorana wire system."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce topological quantum computation",
+                                "describe anyons and their properties",
+                                "discuss limitations of anyonic TQC",
+                                "introduce Majorana qubits",
+                                "describe universal quantum computation",
+                                "discuss limitations of MZMs in TQC",
+                                "introduce phase gate for universal TQC",
+                                "describe magic state distillation protocol",
+                                "discuss importance of phase gate for TQC",
+                                "introduce CHSH-Bell inequality",
+                                "describe connection between phase gate and CHSH inequality",
+                                "discuss advantages of \"black box\" approach",
+                                "introduce measurement-only TQC",
+                                "describe degeneracy associated with fermion parity",
+                                "discuss importance of CHSH inequality for TQC",
+                                "introduce phase gate for universal TQC using MZMs",
+                                "describe design of phase gate",
+                                "discuss advantages of adiabatic phase gate",
+                                "introduce CHSH inequality as benchmark for phase gate",
+                                "discuss adaptability of disclosed technology"
+                            ],
+                            "num_characters": 10322,
+                            "outline_medium": [
+                                "introduce topological quantum computation",
+                                "describe anyons and Majorana zero modes",
+                                "motivate universal quantum computation",
+                                "describe limitations of MZMs for universal quantum computation",
+                                "introduce phase gate for universal quantum computation",
+                                "describe CHSH-Bell inequality and its relation to universal quantum computation",
+                                "introduce measurement-only TQC approach",
+                                "describe advantages of disclosed technology",
+                                "outline structure of patent application",
+                                "preview disclosed embodiments"
+                            ],
+                            "outline_short": [
+                                "introduce topological quantum computation",
+                                "describe limitations of Majorana qubits",
+                                "motivate need for universal quantum computation",
+                                "introduce phase gate as solution",
+                                "outline disclosed technology"
+                            ]
+                        },
+                        {
+                            "title": "III. CHSH Inequalities",
+                            "paragraphs": [
+                                "In this section, example device-independent aspects of embodiments of the disclosed technology are discussed. The example protocol described below to test the inequalities is independent of the particular platform used to realize MZMs (and as such transcends the specific Majorana wire system discussed herein). In order to test the inequality, and in one disclosed embodiment, six Majorana zero modes, the ability to do a pairwise measurement of adjacent Majorana modes, and a phase gate implemented on (a particular) two of the Majorana modes are used. The example procedure is as follows:",
+                                "First, the six MZMs are divided into two sets of three. FIG. 1 is a block diagram 100 schematically showing the six Majorana zero modes (MZMs), labeled 110, 112, 114, 120, 122, 124, respectively. The MZMs in FIG. 1 are arranged in two qubits 130 and 132 comprising three MZMs each, with pairs corresponding to the x, y and z axis of each qubit labeled. An arrow designates the definition of the corresponding Pauli operator in terms of the MZMs. For example, \u03c3z=i\u03b11\u03b12, \u03c3y=i\u03b11\u03b13. Referring to FIG. 1, the Majorana fermion operators associated with the zero are labeled as modes \u03b1i and \u03b2i, where i \u2208 {1, 2, 3}. The eigenvalues and commutation relations of the operators t\u03b1i\u03b1j are such that one can make the identification",
+                                "ieijk\u03b1i\u03b1j\u22612\u03c3*k \u2003\u2003(1)",
+                                "where the \u03c3k are Pauli matrices. The complex conjugation on the right hand side reverses the sign of \u03c32 and ensures the correct commutation relations. In this way, one can identify the operators of three MZMs with those of a single spin-",
+                                "\\(\\frac{1}{2},\\)",
+                                "such that the pairwise measurement of the state of two of the three MZMs corresponds to projective measurement along the x, y, or z axis of the spin. In FIG. 1, these psuedospin axes are labeled as x, y, or z. Pauli matrices for the \u03b2i operators are labeled similarly but with the axes there labeled with capital letters X, Y, or Z.",
+                                "The CHSH-Bell inequality (emph{see J. F. Clausen et al., Phys. Rev. Lett. 23, 880 (1969), URL http://link.aps.org/doi/10.1103/PhysRevLett.23.880) asserts that, in particular,",
+                                "|E(x, X)\u2212E(x, Z)+E(z, X)+E(z, Z)|\u22662\u2003\u2003(2)",
+                                "for a local hidden variable theory, where E (a, B) indicates the expectation value of the operator a  B. Local in this case means local to the qubits (here, the sets of three MZMs). The measurements made in this example are necessarily non-local in the individual MZMs themselves.",
+                                "That said, and in accordance with embodiments of the disclosed technology, one can prepare a state that violates the CHSH inequality by first making initialization measurements that entangle the state of the two qubits. To this end, one can begin by measuring the operators i\u03b11\u03b21 and i\u03b12\u03b22, projecting both into their \u22121 eigenstates. (If the \u2018wrong\u2019 state is obtained, it may be corrected by measuring one MZM from the pair with one outside, then repeated until success.) This alone is not enough to violate the inequality, but only to saturate it. In spin language, in the z-basis, the operators are in the state",
+                                "\\(\\frac{1}{\\sqrt{2}}\\)",
+                                "\u2191\u2191+|\u2193\u2193. One may easily check that the expectation value of xX\u2212xZ+zX+zZ for this state is indeed 2. In fact, any set of measurements (or braiding) performed on the MZMs can only saturate the classical bound, never exceed it (thus not manifesting quantum entanglement properties, as is consistent with the Gottesman-Knill theorem). To violate the CHSH inequality, and in accordance with embodiments of the disclosed technology, one can add a phase gate (or equivalent) to the system. Applying this gate around, for example, the y-axis with an angle \u03b8, it can he found that",
+                                "E(x, X)\u2212E(x, Z)+E(z, X)+E(z, Z)=2\u221a{square root over (2)} cos(2\u03b8\u2212\u03c0/4) \u2003\u2003(3)",
+                                "Note that the phase gate that is available from braiding alone has \u03b8=\u03c0/4 and therefore can only saturate the classical bound indicated in Equation (2). A more finely resolved phase gate than is available from braiding is useful in order to violate the CHSH inequality. Example embodiments are described below for how this can be done in order to directly observe quantum entanglement properties through the violation of CHSH-Bell inequality in an MZM-based platform,"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce device-independent aspects of disclosed technology",
+                                "describe protocol for testing CHSH inequality",
+                                "introduce six Majorana zero modes",
+                                "describe pairwise measurement of adjacent Majorana modes",
+                                "introduce phase gate implemented on two Majorana modes",
+                                "describe initialization measurements for entangling state",
+                                "discuss saturation of CHSH inequality without phase gate",
+                                "introduce phase gate for violating CHSH inequality"
+                            ],
+                            "num_characters": 4180,
+                            "outline_medium": [
+                                "introduce CHSH inequalities",
+                                "describe device-independent protocol for testing CHSH inequalities",
+                                "outline procedure for testing CHSH inequalities",
+                                "describe expectation values for CHSH inequalities"
+                            ],
+                            "outline_short": [
+                                "introduce CHSH-Bell inequality",
+                                "describe protocol for testing inequality"
+                            ]
+                        },
+                        {
+                            "title": "IV. Example Phase Gate Embodiments",
+                            "paragraphs": [
+                                "In this disclosure, example embodiments of a new type of phase gate are described whose elements are native to the Majorana wire platform and which performs the phase rotation adiabatically so that precise timing is not a concern. In order to describe the new phase gate, consider first the following system: two Majorana zero modes (or Ising anyons) together form a two level system, which one may think of as the \u03c32 component of a qubit. A third Ising anyon will pick up a topological component of phase \u03c0(1\u2212\u03c3z)/2 upon going past this pair on one side (e.g., around the top (or bottoms)), relative to the phase it picks up going around the opposite side around the bottom (or top)), in addition to any Abelian phase.",
+                                "FIG. 2 is a schematic block diagram 200 illustrating this system and shows the phase gained by an example Ising anyon passing above (represented by top arrow 210) or below (represented by bottom arrow 212) a stationary Ising pair 220. (It is understood that the reference to \u201cabove\u201d, \u201cbelow\u201d, \u201ctop\u201d, and \u201cbottom\u201d is for exemplary orientation purposes, and that the phase change example illustrated can occur in any desired orientation with equal effect.) The phase acquired is dependent on the combined state (qubit) stored by the two anyons. If the test particle passes entirely to one side of the pair, it acquires a topological phase of 0 or \u03c0 (or \u2212\u03c0) relative to passing on the other side in addition to the Abelian phase \u03c7. Quantum effects, whereby the test particle has an amplitude to pass on either side and these paths interfere, can lead to more general (though unprotected) phases. The role of the test particle in particular implementations described herein is implemented by a Josephson vortex, while that of the stationary pair is held by a Majorana wire placed on a superconducting island. If instead of giving this particle a classical trajectory, it is allowed to behave quantum mechanically, then it now has some complex amplitude A (or B) for going above (or below) the qubit pair as it moves across the system (e.g., from left to right in FIG. 2, though it should be understood that this orientation is illustrative only). Referring to the orientation in FIG. 2, the total left-to-right amplitude is A\u03c3z+B. In the special case that the (Abelian) phases of A and B differ by \u03c7=90\u00b0, the transmission probability is independent of the qubit state, and a phase gate",
+                                "\\(\\begin{matrix}\n{{U\ue8a0\\left( {A,B} \\right)} = {{\\frac{1}{\\sqrt{{\uf603A\uf604}^{2} + {\uf603B\uf604}^{2}}}\ue89e\\left( {{\uf603B\uf604} + {i\ue89e{\uf603A\uf604}\ue89e\\sigma_{z}}} \\right)} = \uf74d^{{\uf74e\ue89e\\arctan}\ue89e\\frac{\uf603A\uf604}{\uf603B\uf604}\ue89e\\sigma_{z}}}} & (4)\n\\end{matrix}\\)",
+                                "is applied to the qubit by the passage of the anyon.",
+                                "FIG. 3 is a schematic block diagram of an example embodiment of a physical phase gate 300 in accordance with the disclosed technology. A Majorana nanowire 310 sits on the upper left of two superconducting islands 320, 322 connected to a bulk superconductor 330. (The superconducting regions 320, 322 are referred to as \u201cislands\u201d on account of their connection to the bulk superconductor 330 and each other through respective junctions (e.g., Josephson junctions)).",
+                                "In the illustrated embodiments, Josephson junctions J1 340 and J2 342 are adjustable (e.g., using any controllable Josephson junction), while a Josephson junction J3 344 is strong and fixed. Gates of potential V1 (gate 350) and V2 (gate 352) are capacitively coupled to the superconducting islands 320, 322, respectively. In some example implementations, the gates 350 and 352 are nearby metallic probes that may be set to a given electric potential. It should be understood that the particular orientation of the Majorana nanowire 310 and the other components of the phase gate is by way of example only, as the phase gate can be rotated or the Majorana nanowire located on the opposite superconducting island, as desired for any particular implementation.",
+                                "Operation of the exemplary phase gate 300 is performed by increasing (e.g., ramping up) (or decreasing (e.g., ramping down)) the magnetic flux in the superconducting loop (e.g., from \u03a6=0 to \u03a6=2\u03c0 (or from \u03a6=0 to \u03a6=\u22122\u03c0)) while the strengths of couplings J1 and J2 are comparable to draw a Josephson vortex into the loop through two interfering paths, then decreasing the flux (e.g., ramping the flux back down) to a lower value (e.g., zero) (or increasing the flux to a higher value ((e.g., zero) if the initial stage involved decreasing the magnetic flux) with J2<<J1 to release the vortex deterministically through the right junction.",
+                                "The flux can be generated by an external magnetic field generator, such as a solenoid or coil shown schematically as magnetic flux generator 360. In FIG. 3, the magnetic flux generator 360 is shown in dashed lines to show an example position and orientation above or below the phase gate, though show arrangement is not limiting, as there exists a variety of different arrangements that can produce the desired flux and Josephson vortex in the phase gate. Further, for ease of illustration and to avoid obfuscation, many of the other figures in this disclosure do not show the magnetic flux generator, though the magnetic flux generator is understood to be present in such embodiments.",
+                                "In certain implementations, the embodiment of FIG. 3 can be described as a ring of superconducting islands 320, 322, 330 connected by three Josephson junctions 340, 342, 344. In particular implementations, two of the Josephson junctions 340, 342, are adjustable, while the third 344 is assumed to be a much stronger link than the other two. One of these islands will hold a Majorana wire (e.g., of the type described by R. M. Lutchyn et al., Phys. Rev. Lett. 105, 077001 (2010), 1002.4033; Y. Oreg et al., Phys. Rev. Lett. 105, 177002 (2010), 1003.1145; and J. D. Sau et al., Phys. Rev. B 82, 214509 (2010), 1006.2829.",
+                                "In the illustrated embodiment, the Majorana wire 310 is shown on island 320. The endpoints of this wire (e.g., wire 310) act as Majorana zero modes, and allow that island to contain either an even or odd number of electrons with no energy penalty. Here, the fermion parity (q={0,1}) of this and is used as the axis of the qubit around which the rotation is performed. The role of the mobile Ising anyon in the embodiment above may then be implemented by a magnetic flux vortex traveling through the Josephson junctions to enter the ring. The topological component of the phase picked up when a flux encircles the Majorana wire is again \u03c0(1\u2212\u03c3z)/2, now using from the Aharanov-Casher effect. Finally, the example embodiment includes a capacitive coupling to an adjustable gate voltage by one or both of the superconducting islands. This is represented in the example embodiment by the \u201cgate charge\u201d vector {right arrow over (Q)}=(Cg1Vg1 C2Vg2) where Cgi and Vgi are, respectively, the capacitance and voltage of the gates on each island. Changing {dot over (Q)} allows one to adjust the relative (Abelian) phase \u03c7 acquired by the flux as it moves through one or the other of the weak Josephson links.",
+                                "In order to implement a phase gate in accordance with the disclosed technology, the external magnetic field (e.g., generated by a magnetic field generator, such as a solenoid or coil) is adjusted in order to adiabatically (e.g., slowly) increase the amount of magnetic flux running through the superconducting loop from 0 to 2\u03c0. (Note that there is no precise constraint on the exact timing of the flux threading process as long as it is adiabatic.) This will deterministically draw a Josephson vortex into the loop through one of the weak links, but does not measure which path that vortex takes. This is an example of the anyon interferometer that produces the phase gate (see, e.g., P. Bonderson. et al., ArXiv e-prints (2013), 1306.2379.)",
+                                "It remains to determine the phase that is produced based on the physical parameters of the system. To do so, begin with the Lagrangian:",
+                                "\\(\\begin{matrix}\n{\\mspace{79mu} \ue89e{{L = {{\\frac{1}{2}\ue89e\\left( \\frac{\\Phi_{0\ue89e\\;}}{2\ue89e\\pi} \\right)^{2}\ue89e\\overset{.}{\\overset{\\rightarrow}{\\varphi}}\ue89e\\; \ue89eC\ue89e\\overset{.}{{\\overset{\\rightarrow}{\\varphi}}^{T}}} + {\\frac{\\Phi_{0}}{2\ue89e\\pi}\ue89e{\\overset{.}{\\overset{\\rightarrow}{\\varphi}} \\cdot \\left( {{\\overset{\\rightarrow}{Q}}^{T} + {e\ue89e{\\overset{\\rightarrow}{q}}^{T}}} \\right)}} - {V\ue8a0\\left( {\\varphi_{1},\\varphi_{2}} \\right)}}}\ue89e\ue89e\\mspace{79mu} \ue89e{where}\ue89e\ue89e\\mspace{79mu} \ue89e{{\\overset{\\rightarrow}{\\varphi} = \\begin{pmatrix}\n\\varphi_{1} & \\varphi_{2}\n\\end{pmatrix}},\ue89e\\mspace{79mu} \ue89e{C = \\begin{pmatrix}\nC_{1} & {- C_{3}} \\\\\n{- C_{3}} & C_{2}\n\\end{pmatrix}},\ue89e\\mspace{79mu} \ue89e{and}}}} & (5) \\\\\n{{V\ue8a0\\left( {\\varphi_{1},\\varphi_{2}} \\right)} = {{{- J_{1}}\ue89e{\\cos \ue8a0\\left( {\\varphi_{1} - {\\Phi/2}} \\right)}} - {J_{2}\ue89e{\\cos \ue8a0\\left( {\\varphi_{2} + {\\Phi/2}} \\right)}} - {J_{3}\ue89e{{\\cos \ue8a0\\left( {\\varphi_{1} - \\varphi_{2}} \\right)}.}}}} & (6)\n\\end{matrix}\\)",
+                                "Here {right arrow over (q)}=(q 0) is the fermion parity on the Majorana wire, the variable \u03a6 is the flux through the superconducting ring, and {dot over (\u03c6)}i is the time derivative of the superconducting phase on island i. It will often be convenient to refer to the Josephsen assymmetry e, defined through J1=(1+e)J, J2=(1\u2212e)J, and the unitless strength of the strong Josephson link \u03bb=J3/J.",
+                                "To run (operate) the example phase gate, the value of \u03a6 is adiabatically increased from 0 to 2\u03c0 by applying an external magnetic field.",
+                                "FIG. 4 shows graphs 400, 402, 404, 406 that illustrate the potential energy vs. the superconducting phase difference \u03b4\u03c6=\u03c61\u2212\u03c62 (minimized over \u03c6=(\u03c61+\u03c602)/2), plotted for a strong junction twice as strong as the average of the other two (\u03bb=2) and a Josephson assymetry e=0.1, and various values of \u03a6. (In the illustrated example magnetic flux is first increased (from 0 to 2\u03c0), but it should be understood that this is by way of example only; in other embodiments, the magnetic flux can first be decreased (from 0 to \u22122\u03c0).) As \u03a6 is tuned from 0 to 2\u03c0, a magnetic flux is drawn into the superconducting loop. Note the degeneracy at \u03a6=\u03c0, shown generally at 410.",
+                                "FIG. 5 includes graphs 500, 502, 504 that show the potential energy vs. the super-conducting phase difference S (minimized over the average superconducting phase ) near the degeneracy point, plotted for a strong n twice as strong as the average of the other two (\u03bb=2) and a Josephson assymetry e=0.1. Note that two inequivalent minima (shown generally at 510, 512) develop when the flux from the external field \u03a6=\u03c0, and an instanton event is required for the system to remain in the absolute mini num of energy as \u03a6 is tuned past this point. This instanton may occur either with a forward or a backward jump in , and there is interference between the two paths.",
+                                "Of particular note is the point \u03a6=\u03c0, shown in graph 502, at which the system will need to cross a tunnel barrier to move from one degenerate minimum (the true minimum for \u03a6<\u03c0) to the other (the true minimum for \u03a6>\u03c0) (See FIG. 5). A system is considered for which:",
+                                "J3(J1+J2)\u2267J1J2\u2267J3(J1\u2212J2)\u22670 \u2003\u2003(7)",
+                                "In terms of the unitless coupling constants f and A, this condition may be expressed as:",
+                                "2\u03bb\u22671\u2212e2\u22672\u03bbe\u22670 \u2003\u2003(8)",
+                                "In such a system, the tunneling is well described by two interfering paths. Both paths will alter the phase difference \u03b4\u03c6=\u03c61\u2212\u03c62 by the same amount. The paths differ by a full 2\u03c0 winding of the average phase =(\u03c61+\u03c62)/2 of the superconducting islands. In Section X, the relative amplitude of these two paths is calculated in an instanton approximation. It has been found that the effective phase gate after adiabatic evolution of \u03a6 is given by",
+                                "U(q)=exp(iArg(1+ei(S(q)\u2212S\u2212(q)))) \u2003\u2003(9)",
+                                "where S+(q)\u2212S_(q) is the difference in instanton actions dependent on the qubit state q. It is calculated in Section X to be",
+                                "\\(\\begin{matrix}\n{{{{S_{+}\ue8a0(q)} - {S_{-}\ue8a0(q)}} = {{{{- \uf74e}\ue89e\\; \ue89e\\Phi_{0}\ue89e\\sqrt{\\frac{J\ue89e\\; \ue89e\\eta}{2\ue89eC}}\ue89e\\left( {{2\ue89e\\overset{\\_}{C}\ue89e\\frac{\\varepsilon}{\\eta}} + {\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}}} \\right)} + {\ue52e\ue8a0\\left( \\eta^{5/2} \\right)} + {\\Phi_{0}\ue8a0\\left( {Q_{1} + Q_{2}} \\right)} + {\\pi \ue89e\\; \ue89e{q.\ue89e\\mspace{20mu} \ue89e{Here}}\ue89e\\mspace{14mu} \ue89e\\eta}} = \\frac{1 - \\varepsilon^{2}}{2\ue89e\\lambda}}},{\\overset{\\_}{C} = {C_{1} + C_{2} - {2\ue89eC_{3}}}},{{{and}\ue89e\\mspace{14mu} \ue89e\\overset{\\sim}{C}} = {C_{1} - {C_{2}.}}}} & (10)\n\\end{matrix}\\)",
+                                "Note that the phase gate given by Eq. (9) is gauge dependent. For particular nonlimiting example embodiments, a gauge is chosen in which tunneling a Josephson vortex through J1 gives a phase difference (e.g., positive \u03c0 or negative \u03c0) between the two states of the qubit, while tunneling a vortex through J2 does not measure the quint charge. In order to get a gauge invariant quantity, one can reverse the described procedure to release the vortex from the superconducting loop by ramping down the magnetic field, this time with J2 tuned to 0 so that the vortex has a guaranteed exit path.",
+                                "The difference in instanton actions for the two entry paths takes the form i(S+\u2212S_)=i\u03c0q+i\u03c7\u2212d, where \u03c7 and d are real numbers with \u03c7=\u03a60(Q1+Q2) and",
+                                "\\(d \\approx {\\Phi_{0}\ue89e\\sqrt{\\frac{J\ue89e\\; \ue89e\\eta}{2\ue89eC}}\ue89e{\\left( {{2\ue89e\\overset{\\_}{C}\ue89e\\frac{\\varepsilon}{\\eta}} + {\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}}} \\right).}}\\)",
+                                "In these terms, the phase ted between the two qubit states is given by",
+                                "2\u03b8=arg(sin h (d)+i sin(\u03c7)) \u2003\u2003(11)",
+                                "The \u03c0/8 phase gate appropriate to magic state distillation or for increasing (e.g., maximizing) the violation of the CHSH inequality (See Eqs. (2-3)), may be attained by choosing, \u03c7=\u03c0/2, d=a sin h(1).",
+                                "One possible source of error is an induced splitting between the qubit states due to different rates of tunneling for the two qubit states near the instanton point \u03a6=\u03c0, leading a dynamic phase error in the qubit. Near the instanton point, the wave function is in a superposition between the left and right minima, and the energy of the lower state depends on the probability of the instanton event occurring. If this probability is different for different qubit states, the qubit will split. The probability of the instanton event occurring for each state is proportional to",
+                                "P(q)\u221d|1+ei(S(q)\u2212S\u2212(q))|=|1+(\u22121)qe\u2212d+i\u03c7|. \u2003\u2003(12)",
+                                "This splitting puts a lower bound on how fast the phase gate should be performed, so as to reduce (e.g., minimize) the accumulation of phase error. Note that if \u03c7=\u03c0/2, there is no splitting, as the probabilities are equal for the two qubit states. (This is also the condition that maximizes the controlled phase given by Eq. (11)). The dynamic phase error can also be reduced (e.g., minimized) under this condition, an expectation which is borne out by numerical calculation.",
+                                "In the next section, results of a simulation that supports the analytical instanton analysis of this section are provided."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce phase gate embodiments",
+                                "describe system with two Majorana zero modes",
+                                "illustrate phase gained by Ising anyon passing above or below stationary Ising pair",
+                                "explain quantum effects leading to general phases",
+                                "implement test particle with Josephson vortex",
+                                "describe stationary pair with Majorana wire on superconducting island",
+                                "derive phase gate equation",
+                                "illustrate physical phase gate embodiment",
+                                "describe Majorana nanowire on superconducting island",
+                                "explain adjustable Josephson junctions",
+                                "describe operation of phase gate",
+                                "generate magnetic flux with external magnetic field generator",
+                                "describe ring of superconducting islands connected by Josephson junctions",
+                                "implement Majorana wire on one island",
+                                "use fermion parity as qubit axis",
+                                "implement mobile Ising anyon with magnetic flux vortex",
+                                "describe topological phase from Aharanov-Casher effect",
+                                "include capacitive coupling to adjustable gate voltage",
+                                "adjust external magnetic field to implement phase gate",
+                                "draw Josephson vortex into loop through weak links",
+                                "determine phase produced based on physical parameters",
+                                "derive Lagrangian for system",
+                                "describe potential energy vs. superconducting phase difference",
+                                "illustrate degeneracy at \u03a6=\u03c0",
+                                "describe instanton event at \u03a6=\u03c0",
+                                "calculate relative amplitude of interfering paths",
+                                "derive effective phase gate equation",
+                                "describe gauge dependence of phase gate",
+                                "discuss error sources and mitigation strategies"
+                            ],
+                            "num_characters": 14640,
+                            "outline_medium": [
+                                "introduce phase gate embodiments",
+                                "describe system with two Majorana zero modes",
+                                "illustrate phase gained by Ising anyon passing above or below stationary Ising pair",
+                                "explain role of test particle and stationary pair in implementations",
+                                "derive phase gate equation",
+                                "describe physical phase gate embodiment",
+                                "explain operation of phase gate",
+                                "generate magnetic flux using external magnetic field generator",
+                                "describe implementation of phase gate using adjustable gate voltage",
+                                "derive Lagrangian for system",
+                                "illustrate potential energy vs. superconducting phase difference",
+                                "explain instanton event at degeneracy point",
+                                "calculate relative amplitude of two paths in instanton approximation",
+                                "derive effective phase gate after adiabatic evolution of \u03a6"
+                            ],
+                            "outline_short": [
+                                "introduce phase gate concept",
+                                "describe system with two Majorana zero modes",
+                                "illustrate phase gate embodiment with Majorana nanowire",
+                                "explain operation of phase gate with adjustable Josephson junctions",
+                                "derive Lagrangian for phase gate system",
+                                "analyze potential energy vs. superconducting phase difference",
+                                "calculate effective phase gate after adiabatic evolution"
+                            ]
+                        },
+                        {
+                            "title": "V. Numerical Simulation",
+                            "paragraphs": [
+                                "In order to go beyond the instanton approximation detailed in the previous section and Section X, numerical simulations of the Schrodinger equation associated with the Lagrangian (5) were performed. The corresponding Hamiltonian for the system can be written as",
+                                "\\(\\begin{matrix}\n{{{H\ue8a0(\\Phi)} = {{E_{C}\ue89e{\\sum\\limits_{{j = 1},2}\ue89e\\left( {n_{j} - \\frac{Q_{j}}{2\ue89ee}} \\right)^{2}}} - {J_{1}\ue89e{\\cos \ue8a0\\left( \\varphi_{1} \\right)}} - {J_{2}\ue89e{\\cos \ue8a0\\left( {\\varphi_{2} + \\Phi} \\right)}} - {J_{3}\ue89e{\\cos \ue8a0\\left( {\\varphi_{1} - \\varphi_{2}} \\right)}}}},} & (13)\n\\end{matrix}\\)",
+                                "where EC is the charging energy of each island (here it s assumed that C1=C2=2e2/EC, C3=0 for simplicity) and n3=\u2212i0\u03c6, the charge operator on each superconducting island. The Josephson energy part of the Hamiltonian, which is proportional to J1,2,3, is identical to the potential used in the Lagrangian in Eq. (6) up to a gauge transformation. For the numerical calculation, it is convenient to choose a gauge where the Hamiltonian is manifestly 2\u03c0-periodic. Technically, there are three different such gauges where the flux enters across each of the junctions. As mentioned at the end of the last section, invariance with respect to the different gauge choices is guaranteed only when the Hamiltonian traces a closed loop where the flux \u03a6 vanishes at the beginning and the end of the loop.",
+                                "In order to perform the simulation of the phase gate process, the process of changing the flux \u03a6 through the loop from 0 to 2\u03c0 is divided into a series of small time steps. At each step, the Schrodinger equation H (\u03a6)|\u03c8(\u03a6)=E(\u03a6)|\u03c8(\u03a6) is numerically solved by expanding the wave-function in the eigenbasis |n1n2 of the charge operators. The charging energy is diagonal in this basis and the Josephson energy terms are represented in terms of \u201chopping\u201d terms such as |n1, n2<n1+1, n2| etc. In some example embodiments, and with a large enough cutoff (nj \u2208 [\u221215,15] turns out to be sufficient for the example parameters in this discussion), one can diagonalize the Hamiltonian a the charge basis to obtain the ground state wave function. Since the Hamiltonian is 2\u03c0-periodic in the flux, the Berry phase can be computed from the expression",
+                                "\\(\\begin{matrix}\n{{\uf74d^{\uf74e\ue89e\\; \ue89e\\theta_{Berry}} \\approx {\\prod\\limits_{n = 1}^{N}\ue89e\\; \ue89e{\\langle\\left. {\\psi \ue8a0\\left( \\frac{2\ue89e\\pi \ue89e\\; \ue89en}{N} \\right)} \\middle| {\\psi \ue8a0\\left( \\frac{2\ue89e{\\pi \ue8a0\\left( {n + 1} \\right)}}{N} \\right)} \\right.\\rangle}}},} & (14)\n\\end{matrix}\\)",
+                                "where N is the number of steps into which the flux can be discretized. Note that t one chooses N to be too small, the magnitude of the right hand side will be significantly less than unity, as N\u2192\u221e, the above approximation becomes exact. The magnitude of the overlap at each step is thus a helpful diagnostic and should be near unity, serving as a useful check on the accuracy of the simulation.",
+                                "FIG. 6 is a graph 600 showing the relative phase between the two qubit states acquired through the adiabatic evolution. Note that the \u201cmagic\u201d phase \u03c0/4 can be attained either by adjusting the gate voltages to change Qi, or by adjusting the imbalance e in the Josephson couplings. One can compare these results to the prediction of the instanton approximation using the calculated",
+                                "\\(d \\approx {4\ue89e\\pi \ue89e\\sqrt{\\frac{\\lambda \ue89e\\; \ue89eJ}{E_{C}\ue8a0\\left( {1 - \\varepsilon^{2}} \\right)}}\ue89e{\\varepsilon.}}\\)",
+                                "In particular, graph 600 shows the relative phase acquired between states of the qubit after the phase gate is enacted, here plotted as a function of the Josephson junction asymmetry e for a strong junction that is twice as strong as the weak junctions (\u03bb=2). The charging energy EC has been chosen to be 0.4 relative to the scale of Josephson energy (J1+J2)/2. The sum and difference of the gate charges (Q+(Q1+Q2) and Q\u2212=Q1\u2212Q 2) are expressed in units of the Cooper pair charge 2e. Note that a relatively small junction asymmetry of e\u22660.1 can tune the gate through a large range of phases.",
+                                "The qubit state q is encoded in the Hamiltonian through a shift of h gate charge Q1\u2192Q1+q. The qubit phase generated from the phase gate is calculated by calculating the difference of Berry phases \u03b8Berry(q=1)\u2212\u03b8Berry(q=0) acquired as the flux \u03a6 is changed by 2\u03c0. To maintain adiabaticity, the flux is desirably swept at a rate that is small compared to the first excitation gap Egap above the ground state \u03c8(\u03a6) of the Hamiltonian in Eq. (13). Such a slow sweep rate leads to a dynamical contribution to the qubit phase that is given by:",
+                                "\\(\\begin{matrix}\n{\\theta_{dyn} = {\\int{{\uf74c\\Phi}\ue89e{\\frac{{E\ue8a0\\left( {\\Phi,{q = 1}} \\right)} - {E\ue8a0\\left( {\\Phi,{q = 0}} \\right)}}{\\overset{.}{\\Phi}}.}}}} & (15)\n\\end{matrix}\\)",
+                                "To keep this error small, the s weep rate {dot over (\u03a6)} is desirably kept larger than the energy difference, e.g., |E(\u03a6, q=1)\u2212E(\u03a6, q=0)<<{dot over (\u03a6)}. At the same time, adiabaticity desirably involves {dot over (\u03a6)}<<Egap. Thus, the dynamical range (e.g. the range of sweep rates) over which this gate desirably operates, is proportional to",
+                                "\\(\\begin{matrix}\n{\\zeta = {\\frac{E_{gap}}{\uf603{{E\ue8a0\\left( {\\Phi,{q = 1}} \\right)} - {E\ue8a0\\left( {\\Phi,{q = 0}} \\right)}}\uf604}.}} & (16)\n\\end{matrix}\\)",
+                                "The inverse of the dynamical range \u03b6\u22121 also quantifies the contribution the dynamical phase to the systematic error in the gate.",
+                                "FIG. 7 is a graph 700 showing the dynamical range of the phase gate as a function of the Josephson assymmetry e for a set of gate charge values Q+=(Q1+Q2) and Q\u2212=Q1\u2212Q2 (expressed in units of 2e). In the example graph, the best dynamic range is found for Q1+Q2=\u00bc, corresponding to a phase of \u03c7=\u03c0/2 in Eq, (12). Here the dynamic phase error and the minimal gap differ by three orders of magnitude, allowing the gate to function for a significant range of ramping times.",
+                                "FIG. 8 is a graph 800 showing he dynamical range of the phase gate as a function the total gate charge Q+=(Q1+Q2) (units of 2e) for a set of values of the Josephson assymetry e and Q\u2212=Q1\u2212Q2 (expressed in units of 2e), Note the resonances in dynamic range as the qubit states are tuned to degeneracy.",
+                                "While at the lowest order instanton approximation, the energy E(\u03a6, q) is independent of q, as seen from the numerical results in FIG. 7, higher order instanton corrections lead to energy splittings that are a finite fraction \u03b6\u22121>0 of the gap. This is apparent from FIG. 7, since in the ideal case \u03b6 would he infinite. However, it is also clear that the leading order contribution to can be reduced (e.g., minimized) by choosing the total gate charge near Q1+Q2=0.25. This is expected if the major contribution to the qubit splitting comes from the instanton contribution described in Sec. IV. Q1+Q2=0.25 corresponds to \u03c7=\u03c0/2 in Eq, (12). FIG. 8 shows that the resonance in the dynamic range (corresponding to the degeneracy point for the quoit states) does not always occur exactly at Q1+Q2=0.25, Higher order corrections to the instanton calculation will detect the asymmetry in the system, leading to dependence of the resonance Q1\u2212Q2 and e. Nevertheless, it is evident that a dynamic range of two to three orders of magnitude is achievable over a broad range of parameter space, enabling a rather unconstrained experimental implementation of the phase gate without undue fine tuning. Based on these results, example embodiments of an experimental scheme are introduced to implement embodiments of the disclosed phase gate as well as to verify it he CHSH-Bell inequality.",
+                                "FIG. 9 is a schematic block diagram showing an example design for a CHSH measurement system 900. The system 900 comprises several superconducting islands (islands 910, 912, 914, 916, 918, 920, 922) placed within a microwave resonator. Five Majorana nanowires (Majorana nanowires 930, 932, 934, 936, 938) are placed among the islands in such a way as to produce six Majorana zero modes, one at each endpoint along the outer edge, and one at each intersection where three wires meet (see, e.g., T. Hyart et all., Phys. Rev. B 88, 035121 (2013), 1303.4379, for additional detail concerning an example of this type of arrangement).",
+                                "The top three Majoranas (Majorana nanowires 930, 932, 934) form one qubit, and the bottom three (Majorana nanowires 934, 936, 948) form another qubit. Eight adjustable Josephson junctions (labeled 1-8 in FIG. 9) and one strong fixed junction (junction 940, which can be a strong, fixed Josephson junction) couple the islands to each other and to the Bus 950 (e.g., a superconductive \u201cbus\u201d plate shown at the top of FIG. 9) and Phase Ground 952 (e.g., a superconductive \u201cphase ground\u201d plate shown at the bottom of FIG. 9 and sometimes referred to as the bulk superconductor) of the microwave resonator.",
+                                "Of these junctions, those labeled 1-6 need only have \u201con\u201d (strongly coupled) and \u201coff\u201d (very weakly coupled) settings. Junctions 7 and 8 are used to implement an embodiment of the phase gate as described above.",
+                                "FIG. 10 is a series of block diagrams 1000, 1002, 1004 illustrating an example initialization process for the system shown in FIG. 9. For ease of illustration, the reference numerals and junction numbering from FIG. 9 are omitted, but are understood to have correspondence to the structure shown in FIGS. 10-12. The superconducting islands shown as hatched are strongly Josephson coupled to the Bus 950 whereas the superconducting islands shown with a solid gray fill are strongly Josephson coupled to the Phase Ground 952. The Josephson junctions 1-8 can be controlled to couple (e.g., capacitively couple via the adjustable Josephson junctions 1-8) the islands to each other and to Bus 950 or Phase Ground 952 in any desired configuration. In diagram 1000 (labeled as the \u201ctare\u201d measurement), coupling all islands to the Bus gives a measurement of the overall fermion parity of the system. This allows one to equivalently measure the parity of a qubit by coupling the constituent Majorana modes to the Bus (as in diagram 1002) or the Phase Ground (as in diagram 1004). The two qubits in this device can be put into the superposition 1/\u221a{square root over (2)} (|00>+|11<) by making two measurements; each measurement includes one MZM from each qubit. (Along with the tare measurement of diagram 1000, this will also effectively measure the parity of the central island).",
+                                "FIG. 11 is a series of block diagrams 1100, 1102 illustrating measurement of the X projection (diagram 1100) and Z projection (diagram 1102) of the upper qubit. The parity of a set of MZMs is measured by Josephson coupling the corresponding superconducting islands strongly to the Bus 950, while coupling the remaining islands to the Phase Ground 952.",
+                                "FIG. 12 is a series of block diagrams 1200, 1202 illustrating measurement of the x projection (diagram 1200) and z projection (diagram 1202) of the lower qubit. The tare measurement (see diagram 1000 of FIG. 10) allows one to relate the parity of the section coupled to the Phase Ground 952 to the parity of the section coupled to the Bus."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "perform numerical simulations of Schrodinger equation",
+                                "write Hamiltonian for system",
+                                "choose gauge for Hamiltonian",
+                                "solve Schrodinger equation numerically",
+                                "expand wave-function in eigenbasis of charge operators",
+                                "diagonalize Hamiltonian in charge basis",
+                                "compute ground state wave function",
+                                "compute Berry phase",
+                                "approximate Berry phase using overlap of wave functions",
+                                "discuss importance of sweep rate for adiabaticity",
+                                "define dynamical phase",
+                                "compute dynamical phase",
+                                "discuss range of sweep rates for gate operation",
+                                "quantify systematic error in gate",
+                                "show graph of relative phase acquired through adiabatic evolution",
+                                "show graph of dynamical range of phase gate",
+                                "discuss effect of Josephson asymmetry on dynamical range",
+                                "discuss effect of gate charge on dynamical range",
+                                "show graph of dynamical range vs gate charge",
+                                "discuss implications of results for experimental implementation",
+                                "introduce example experimental scheme for phase gate"
+                            ],
+                            "num_characters": 10915,
+                            "outline_medium": [
+                                "perform numerical simulation of Schrodinger equation",
+                                "derive Hamiltonian for system",
+                                "choose gauge for Hamiltonian",
+                                "solve Schrodinger equation numerically",
+                                "calculate Berry phase",
+                                "compute dynamical phase",
+                                "analyze results of simulation",
+                                "compare to instanton approximation",
+                                "discuss limitations of simulation",
+                                "show graphs of results"
+                            ],
+                            "outline_short": [
+                                "perform numerical simulation of Schrodinger equation",
+                                "calculate Berry phase from wave function overlap",
+                                "compute dynamical phase contribution",
+                                "analyze dependence of dynamical range on Josephson asymmetry",
+                                "discuss results in relation to instanton approximation"
+                            ]
+                        },
+                        {
+                            "title": "VI. Example Measurement Scheme and Procedure",
+                            "paragraphs": [
+                                "In order to implement and test example embodiment of the phase gate shown in FIGS. 10-12 within a physical system, the measurement scheme disclosed by F. Hassler et al. can be used. (See, e.g., F. Hassler et at New Journal of Physics 13, 095004 (2011), 1105.0315.) In particular, the measurement scheme allows the parity of a pair of Majorana fermions to be read out through a superconducting charge qubit in a trans transmission line resonator (a \u201ctransition\u201d). (See, e.g., J. Koch et al., Phys. Rev. A 76, 042319 (2007), URL http://link.aps.org/doi/10.11.03/PhysRevA.76.042319 for additional details concerning example transmon configurations that can be used with embodiments of the disclosed technology.)",
+                                "For example, using the arrangement shown in FIG. 9, one can implement the steps of the CHSH-Bell test without ever needing to physically braid any of the Majoranas. This is in line with the so-called \u201cMeasurement Only\u201d schemes for topological quantum computation. (See, e.g., P. Bonderson. et al., Phys. Rev. Lett. 101, 010501 (2008), arXiv:0802.0279; and P. Bonderson et al., Annals of Physics 324, 787 (2009), arXiv:0808.1933.) In the illustrated arrangement, each of the islands containing Majorana wires is attached through a series of adjustable Josephson junctions to the larger superconducting region on either the top (Bus 950) or bottom (Phase Ground 952). It is assumed that the coupling between the three Majoranas at each of the trijunctions is strong compared with the charging energy of the islands, and is comparable to the Josephson energy at junction J8 during the performance of the phase gate. Due to this large coupling, the Majorana at the left end of the wire in FIG. 3 is effectively replaced by the zero mode of the trijunction.",
+                                "Measurement of the resonance frequency of this system when placed within a microwave resonator can resolve whether the total parity of islands connected to the Bus 950 is even or odd. Again, the trijunction coupling is assumed to be large compared with the measurement scale so that the trijunctions are treated as effectively single MZMs. The X and Z components of the upper qubit may be measured by connecting the islands containing the corresponding MZMs strongly to the Bus while connecting all other islands to the Phase Ground, as illustrated in FIG. 11. Similarly, measurements of the lower qubit may be made by connecting the corresponding islands strongly to the Phase Ground, as illustrated in FIG. 12. Because the resonator measurement determines the total parity connected to the Bus, the parity of the islands connected to the Phase Ground may be inferred once the overall parity of the Majorana system is measured. In FIG. 10, this is labeled a \u201cTare\u201d measurement.",
+                                "Together, FIGS. 10-12 show the sets of islands coupled to Bus and Phase Ground corresponding to each of the measurements necessary for a test of the CHSH inequality. In most cases, only two settings are needed for the Josephson junctions, strong connection EJ>>EC (On), and very weak connection EJ>>EC(Off). This switching can be controlled, for example, by threading half a flux between two strong Josephson junctions. The two Josephson junctions in the lower right of FIG. 9, labeled 7 and 8, adjust the phase gate in the manner described above, acting as control parameters for J1 and J2 . A strong Josephson coupling J3 is assumed between the two islands in the lower right. While the phase gate is being implemented, Junctions 2 and 3 should be off, allowing flux to pass freely between e island containing the lower right Majorana wire (\u201cy\u201d) and the remaining wires. The loop in the lower right now acts as the superconducting loop of FIG. 3 for implementing the phase gate around the y-axis. The remaining Josephson junctions should be on, so that no measurement path is open in the resonator system and all other islands have the superconducting phase inherited from the Phase Ground 952. In this case, the Josephson en of the lower trijunction acts to renormalize the coupling J1 in the phase gate design of FIG. 3.",
+                                "FIGS. 10-12 provide the schematic and the protocol for the experimental platform as well as the measurements for the phase gate and CHSH violation disclosed herein. They also provide the tools necessary to conduct an independent test of the fidelity of the phase gate without any alteration of the device, e.g. by measuring x before and after a phase rotation around y."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce measurement scheme for phase gate",
+                                "describe measurement of parity of Majorana fermions",
+                                "describe measurement of X and Z projections of qubits",
+                                "describe tare measurement",
+                                "show block diagrams of measurement process",
+                                "describe implementation of CHSH-Bell test",
+                                "discuss advantages of measurement-only scheme",
+                                "discuss implications of results for topological quantum computation"
+                            ],
+                            "num_characters": 4439,
+                            "outline_medium": [
+                                "describe measurement scheme",
+                                "outline procedure for CHSH-Bell test",
+                                "discuss implementation of phase gate",
+                                "describe measurement of qubit states"
+                            ],
+                            "outline_short": [
+                                "describe measurement scheme for CHSH-Bell test",
+                                "outline procedure for implementing phase gate and CHSH test"
+                            ]
+                        },
+                        {
+                            "title": "VII. Qubit Design for Universal Quantum Computation",
+                            "paragraphs": [
+                                "Once Bell violations have been demonstrated, the next step toward universal quantum computation is a scalable qubit register in which all necessary gate operations (e.g., Clifford gates and the \u03c0/8 phase gate) could he performed. Example embodiments of the phase gate disclosed herein can be easily worked into such a design, as is demonstrated here in a simplification of the random access Majorana memory (RAMM) introduced in T. Hyart et all., Phys. Rev, 88, 035121 (2013), 1303.4379:",
+                                "As shown in FIGS. 13A-C, one can construct a set of islands within the resonator system to function as a single qubit, with measurement settings available to measure any Pauli operator {I, X, Y, Z}, along with a phase gate that operates around the Y axis. In more detail, the system 300 comprises several superconducting islands (islands 1310, 1312, 1314) placed within a microwave resonator. Two Majorana nanowires (Majorana nanowires 1330, 1332) and a further Majorana wire (Majorana nanowire 1334) connected to the Bus 1350 are placed in the system 1300 in such a way as to produce four Majorana zero modes: one at each endpoint along the outer edge, and one at each intersection where three wires meet. These Majorana modes (originating from Majorana nanowires 1350, 1352, 1354) form one qubit. Five adjustable Josephson junctions (labeled 1\u2032 to 5\u2032 in FIG. 13) and one strong fixed junction (junction 1340, which can be a strong, fixed Josephson junction) couple the islands to each other and to the Bus 1350 (e.g., a superconductive \u201cbus\u201d plate shown at the top of FIG. 13) and/or Phase Ground 1352 (e.g., a superconductive \u201cphase ground\u201d plate shown at he bottom of FIG. 13 and sometimes referred to as he bulk superconductor) of the microwave resonator. Of these junctions, those labeled 1\u2032-3\u2032 need only have (stroll y coupled) and \u201coff\u201d (very weakly coupled) settings. Junctions 4\u2032 and 5\u2032 are used to implement an embodiment of the phase gate as described above. For ease of illustration, the reference numerals and junction numbering from diagram 1300 in FIG. 13 are omitted in diagrams 1302-1308 but are understood to have correspondence to the structure shown in diagram 1300 of FIG. 13A.",
+                                "Furthermore, by coupling several qubits to the same register, one can perform Pauli measurements (e.g., any Pauli measurement) on the qubits. The set of Clifford gates may be efficiently constructed using Pauli measurements. (See, Bonderson et al., Phys. Rev. Lett. 101, 010501 (2008). arXiv:0802.0279, and P. Bonderson et al., Annals of Physics 324, 787 (2009), arXiv:0808.1933, for additional detail. Combined with the phase gates available on each qubit and the distillation of magic states using these phase gates, this example design provides the necessary components for universal quantum computation. One notable feature of this example design is the elimination of a need for nanowire \u201cnetworks,\u201d For instance, only a single (and separated) crossing of Majorana wires is used for each qubit significantly simplifying the fabrication of the Majorana register.",
+                                "The method outlined in FIGS. 13A-C, which combines magic state distillation and measurement-only techniques in the context of the example phase gate disclosed herein, represents a practical approach for carrying out universal quantum computation using nanowire MZMs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce qubit design for universal quantum computation",
+                                "describe construction of qubit register",
+                                "describe measurement settings for Pauli operators",
+                                "describe implementation of phase gate",
+                                "discuss advantages of design for universal quantum computation",
+                                "discuss implications of results for Majorana-based platforms"
+                            ],
+                            "num_characters": 3323,
+                            "outline_medium": [
+                                "introduce qubit design",
+                                "describe operation of phase gate",
+                                "discuss universality of qubit design"
+                            ],
+                            "outline_short": [
+                                "introduce qubit design for universal quantum computation using phase gate"
+                            ]
+                        },
+                        {
+                            "title": "VIII. Additional Observations",
+                            "paragraphs": [
+                                "The real world function of the phase gate, as well as its quantum entanglement properties (beyond the Gottesman-Knill constraint of pure Clifford operations) can be diagnosed through Bell measurements. These tests of the CHSH inequality are no more daunting than tests of braiding, yet are better targeted toward the eventual implementation of quantum information processing in Majorana-based platforms. In fact,it has been shown that any operation capable of producing a violation of the CHSH inequality, when combined with Clifford operations, is sufficient for universal quantum computation. By contrast, the protocols described herein with reference to FIGS. 10-13 are not necessarily tests of quantum nonlocality itself, as it is unlikely that the qubits in the example configurations will be space-like separated. In any case, it is clear that nonlocality is not sufficient for universal quantum computation, as it may be achieved in Ising anyons through braiding alone (a system that does not even suffice for universal classical computation).",
+                                "In certain embodiment, the CHSH inequality is used to experimentally characterize the example phase gate disclosed herein, a realization that benefits from a relative immunity to timing errors and that can be combined with measurement operations in a unified architecture."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "discuss diagnosis of phase gate through Bell measurements",
+                                "discuss implications of results for quantum information processing"
+                            ],
+                            "num_characters": 1324,
+                            "outline_medium": [
+                                "discuss significance of CHSH inequality for quantum computation"
+                            ],
+                            "outline_short": [
+                                "discuss significance of CHSH inequality for quantum computation"
+                            ]
+                        },
+                        {
+                            "title": "IX. General Embodiments",
+                            "paragraphs": [
+                                "FIG. 14 is a flow chart 1400 illustrating an example process for operating an adjustable phase gate in a quantum circuit. Here, the adjustable phase gate comprises a stationary pair of Ising anyons. The particular example shown in FIG. 14 should not be construed as limiting, as the disclosed method acts can be performed alone, in different orders, or at least partially simultaneously with one another. Further, any of the disclosed methods or method acts can be performed any other methods or method acts disclosed herein.",
+                                "At 1410, a mobile Ising anyon is passed through (e.g., caused to pass through) the adjustable phase gate, thereby creating a targeted phase change in the stationary pair of Ising anyons. For instance, any of the embodiments described with respect to FIGS. 2, , and 9-13 can be used to create such passage.",
+                                "At 1412, the mobile Ising anyon is controlled as the mobile Ising anyon passes through the adjustable phase gate so that the mobile Ising anyon has a complex amplitude during passage. In particular implementations, the controlling is performed such that the targeted phase change experienced by the stationary pair of Ising anyons is between 0 and \u03c0 or 0 and \u2212\u03c0. In particular Implementations, the controlling can be performed by making one or more adjustments to the adjustable variables of the phase gate (e.g., as discussed above with reference to FIG. 3). For instance, the controlling can comprise performing one or more of: (a) adjusting a gate voltage of one or more gates capacitively coupled to one or more superconducting islands that form the adjustable phase gate, (b) adjusting a capacitance of one or more of the superconducting islands; or (c) adjusting a strength of at least one Josephson junction relative to at least one other Josephson junction, the Josephson junctions connecting two or more of the superconducting islands to one another.",
+                                "In certain example embodiments, the method further comprises, in a first operational stage, altering a magnetic flux through the adjustable phase gate in a first direction, the first direction comprising either increasing the magnetic flux or decreasing the magnetic flux; and, in a second operational stage, altering the magnetic flux through the adjustably: phase gate a second direction that is opposite of the first direction. In some examples, during either or both operational stages, the method can comprise adjusting a strength of a first Josephson junction at a first end of a superconducting region in the adjustable phase gate; and, during either or both operational stages, adjusting a strength of a second Josephson junction at a second end of the superconducting region in the adjustable phase gate, wherein the strengths of the first and second Josephson junctions are selected to create a relative difference that produces the targeted phase change in the Ising pair.",
+                                "In certain implementations, the adjustable phase gate comprises a plurality of superconducting regions arranged to form a superconducting loop, adjacent ones of the superconducting regions are connected to one another via respective Josephson junctions, and one of the superconducting regions comprises a Majorana wire located on the one of the superconducting regions. In some implantations, the adjustable phase gate is implemented in a transmission line resonator comprising three Majorana wires arranged to form a qubit between a bus and a phase ground of the transmission line resonator. IN certain implementations, the method further comprises measuring one or more Pauli operators of the qubit by selectively controlling: (a) Josephson couplings between a first superconducting region (e.g., island 1312) on which a first Majorana wire is located and a bus and phase ground; and (b) Josephson couplings between a second superconducting region (e.g., island 1310) on which a second Majorana wire: located and the bus and the phase ground. In some example embodiments, the superconducting loop that is desirable for the phase gate is formed by he second superconducting region, the phase ground, and a third superconducting region (e.g., island 1314) containing no Majorana wire.",
+                                "FIG. 15 is a flow chart 1500 illustrating an example process for operating a quantum circuit phase gate. The particular example shown in FIG. 15 should not be construed as limiting, as the disclosed method acts can be performed alone, in different orders, or at least partially simultaneously with one another. Further, any of the disclosed methods or method acts can be performed with any other methods or method acts disclosed herein.",
+                                "At 1510, a time-varying magnetic field is applied to a set of regions in the quantum circuit phase gate, at least some of the regions being connected to one another via respective Josephson junctions.",
+                                "At 1512, a first of the Josephson junctions and a second of the Josephson junctions are controlled to create a Josephson vortex in the quantum circuit phase gate as the time-varying magnetic field is applied.",
+                                "In one embodiment, the regions are superconducting regions that together form a superconducting loop (e.g., regions 320, 322, 330 as in FIG. 3; regions 938, 920, 952 as in FIG. 9; or 1312, 1314, 1352 as in FIG. 13). In some embodiments, the Josephson vortex produces a phase change to a qubit stored in a qubit register formed with the quantum circuit phase gate. In further implementations, the phase change is selectively variable between 0 and \u03c0 or 0 and \u2212\u03c0.",
+                                "In other embodiments, a quantum circuit phase gate is disclosed herein. The quantum circuit phase gate of such embodiments can comprise, for example: a plurality of superconducting components arranged in a ring to form a superconducting loop, the adjacent superconducting components being connected to each other via Josephson junctions; a Majorana wire located on a respective one of the superconducting components; and a magnetic field generator configured to apply a variable magnetic field to the superconducting loop formed by the ring of superconductive components.",
+                                "In particular implementations, the magnetic field generator and the capacitance of one or more of the superconducting components are controllable to draw a Josephson vortex into the superconducting loop. In some implementations (as in FIGS. 3, 9, and 13, for example), the superconducting components comprise first and d second superconducting islands connected to a bulk superconductor. Further, in some examples, the first superconducting island is connected to the bulk superconductor via a first controllable Josephson junction, the second superconducting island is connected to the bulk superconductor via a second controllable Josephson junction, and the first superconducting island is connected to the second superconducting island via a third Josephson junction. In particular implementations, only the first and second Josephson junctions are controllable (e.g., as shown in FIGS. 3, 9, and 13).",
+                                "In some embodiments, the phase gate is part of a qubit register in a microwave resonator system. Further, in such embodiments, the Majorana can be a first Majorana wire, and the plurality of superconducting components arranged in a ring can comprise: (a) a first superconducting component coupled to the phase ground via a first controllable Josephson junction and coupled bus via a second controllable Josephson junction, the first Majorana wire being located on the first superconducting component; and (b) a second superconducting component coupled to the phase ground via a third controllable Josephson junction and coupled to the first superconducting component via a fixed Josephson junction, the second superconducting component being disconnected from the bus. In further implementations (e.g., as shown in FIG. 13), the microwave resonator can comprise a third superconducting component coupled to the phase ground via a fifth controllable Josephson junction and to the bus via a sixth controllable Josephson junction. The resonator can further comprise a second Majorana wire located on the third superconducting component and a third Majorana wire located on a superconducting component connected to the bus, where the first, second, and third Majorana wires are positioned to create the qubit register with no braiding mechanism.",
+                                "Further embodiments comprise a Clauser-Horne-Shimony-Holt (CHSH) inequality or Bell inequality measurement system comprising any of the phase gates as described herein.",
+                                "**X. Example Instanton Calculation**",
+                                "When \u03a6=\u03c0, the degenerate minima of the potential V from Eq. 6 occur at",
+                                "\\(\\begin{matrix}\n{{{\\cos \ue8a0\\left( {\\delta \ue89e\\; \ue89e\\varphi} \\right)} = {\\frac{J_{1}^{2} + J_{2}^{2}}{2\ue89eJ_{1}\ue89eJ_{2}} - \\frac{J_{1}\ue89eJ_{2}}{2\ue89eJ_{3}^{2}}}}\ue89e\ue89e{{\\tan \ue8a0\\left( \\overset{\\_}{\\varphi} \\right)} = {\\frac{J_{1} - J_{2}}{J_{1} + J_{2}}\ue89e{{\\cot \ue8a0\\left( {\\delta \ue89e\\; \ue89e{\\varphi/2}} \\right)}.}}}} & (17)\n\\end{matrix}\\)",
+                                "The value of the potential at these minima is",
+                                "\\(\\begin{matrix}\n{V_{\\min} = {{J_{3}\ue89e\\frac{J_{1}^{2} + J_{2}^{2}}{2\ue89eJ_{1}\ue89eJ_{2}}} - {\\frac{J_{1}\ue89eJ_{2}}{2\ue89eJ_{3}}.}}} & (18)\n\\end{matrix}\\)",
+                                "The classical equations of me r the Lagrangian (5) (with \u03a6=\u03c0) may be derived and rewritten as",
+                                "\\(\\begin{matrix}\n{{{\\frac{\\Phi_{0}^{2}}{8\ue89e\\pi^{2}\ue89eJ}\ue89e{\\hat{C}\ue8a0\\begin{pmatrix}\n\\overset{\u00a8}{\\overset{\\_}{\\varphi}} \\\\\n{\\delta \ue89e\\overset{\u00a8}{\\varphi}}\n\\end{pmatrix}}} = {{\\begin{pmatrix}\n1 & \\varepsilon \\\\\n\\varepsilon & 1\n\\end{pmatrix}\ue89e\\begin{pmatrix}\n{{- \\sin}\ue89e\\overset{\\_}{\\; \ue89e\\varphi}\ue89e\\sin \ue89e\\frac{\\delta \ue89e\\; \ue89e\\varphi}{2}} \\\\\n{\\cos \ue89e\\overset{\\_}{\\; \ue89e\\varphi}\ue89e\\cos \ue89e\\frac{\\delta \ue89e\\; \ue89e\\varphi}{2}}\n\\end{pmatrix}} - \\begin{pmatrix}\n0 \\\\\n{\\lambda \ue89e\\; \ue89e{\\sin \ue8a0\\left( {\\delta \ue89e\\; \ue89e\\varphi} \\right)}}\n\\end{pmatrix}}},\ue89e{{{where}\ue89e\\mspace{14mu} \ue89eJ_{1}} = {\\left( {1 + \\varepsilon} \\right)\ue89eJ}},{J_{2} = {\\left( {1 - \\varepsilon} \\right)\ue89eJ}},{J_{3} = {\\lambda \ue89e\\; \ue89eJ}}} & (19) \\\\\n{{{\\hat{C} = \\begin{pmatrix}\n\\overset{\\_}{C} & \\overset{\\sim}{C} \\\\\n\\overset{\\sim}{C} & C_{\\delta}\n\\end{pmatrix}},{and}}\ue89e\ue89e{\\overset{\\_}{C} = {C_{1} + C_{2} - {2\ue89eC_{3}}}}\ue89e\ue89e{\\overset{\\sim}{C} = {C_{1} - C_{2}}}\ue89e\ue89e{C_{\\delta} = {C_{1} + C_{2} + {2\ue89e{C_{3}.}}}}} & (20)\n\\end{matrix}\\)",
+                                "One can analyze these equations using an instanton approximation in the limit",
+                                "\\(\\eta = {\\frac{1 - \\varepsilon^{2}}{2\ue89e\\lambda}\ue2fb1.}\\)",
+                                "Note that the condition (8) additionally requires that e <\u03b7.",
+                                "In this case, one can vastly simplify the equations of motion by expanding in orders of",
+                                "\\(\\begin{matrix}\n{{\\delta \ue89e\\; \ue89e\\varphi} = {{2\ue89e\\eta \ue89e\\; \ue89e\\cos \ue89e\\; \ue89e\\overset{\\_}{\\varphi}} - {\\frac{\\Phi_{0}^{2}\ue89e\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}}{4\ue89e\\pi^{2}\ue89eJ}\ue89e\\overset{\u00a8}{\\overset{\\_}{\\varphi}}} + {{\ue52e\ue8a0\\left( \\eta^{3} \\right)}.}}} & (21)\n\\end{matrix}\\)",
+                                "To bound the order of the corrections, one can use the fact that the first equation of motion implies that time derivatives scale as \u221a{square root over (\u03b7)} because the  excursion for the instanton is not small. Next, one lake use of energy conservation to gain the first integral of motion:",
+                                "\\(\\begin{matrix}\n{H = {0 = {{\\frac{\\Phi_{0}^{2}}{8\ue89e\\pi^{2}\ue89e\\overset{\\_}{C}}\ue89e\\left( {\\overset{\\_}{C} - {\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}\ue89e\\; \ue89e\\sin \ue89e\\; \ue89e\\overset{\\_}{\\varphi}}} \\right)^{2}\ue89e{\\overset{.}{\\overset{\\_}{\\varphi}}}^{2}} + {J\ue89e\\; \ue89e{\\eta \ue8a0\\left( {{\\sin \ue89e\\; \ue89e\\overset{\\_}{\\varphi}} - \\frac{\\varepsilon}{\\eta}} \\right)}^{2}} + {{\ue52e\ue8a0\\left( \\eta^{3} \\right)}.}}}} & (22)\n\\end{matrix}\\)",
+                                "Note that for this equation to have a non-trivial solution for real \u03c6i, one can propagate the system in imaginary time (hence the instanton solution). The total instanton action is therefore",
+                                "\\(\\begin{matrix}\n{S = {{\\int_{{- i}\ue89e\\; \ue89e\\infty}^{i\ue89e\\; \ue89e\\infty}\ue89e{{\uf74ct}\ue89e\\sqrt{\\frac{\\Phi_{0}^{2}\ue89eJ\ue89e\\; \ue89e\\eta}{2\ue89e\\pi^{2}\ue89e\\overset{\\_}{C}}}\ue89e{i\ue8a0\\left( {\\overset{\\_}{C} - {\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}\ue89e\\; \ue89e\\sin \ue89e\\; \ue89e\\overset{\\_}{\\varphi}}} \\right)}\ue89e\\left( {{\\sin \ue89e\\; \ue89e\\overset{\\_}{\\varphi}} - \\frac{\\varepsilon}{\\eta}} \\right)}} + {\\frac{\\Phi_{0}}{2\ue89e\\pi}\ue89e\\left( {Q_{1} + Q_{2} + {eq}} \\right)\ue89e\\overset{.}{\\overset{\\_}{\\varphi}}} + {\\frac{\\Phi_{0}}{4\ue89e\\pi}\ue89e\\left( {Q_{1} - Q_{2} + {eq}} \\right)\ue89e\\delta \ue89e\\; \ue89e\\overset{.}{\\varphi}} + {{\ue52e\ue8a0\\left( \\eta^{3} \\right)}.}}} & (23)\n\\end{matrix}\\)",
+                                "The last term provides a constant phase shift that is exactly canceled by the adiabatic phase coming from the change of the potential minimum for \u03b4\u03c6 as \u03a6 is cycled from 0 to 2\u03c0 (unlike , \u03b4\u03c6 returns to zero after a full cycle). Likewise, one may ignore terms that are independent of the direction that  travels. In fact, of primary interest is the difference between the action of the paths with positive and negative .",
+                                "The effective phase gate after adiabatic evolution of \u03a6 is given by",
+                                "U(q)=exp(iArg(1+ei(S(q)\u2212S\u2212(q)))), \u2003\u2003(24)",
+                                "where q is the qubit state and we can now calculate",
+                                "\\(\\begin{matrix}\n{{{S_{+}\ue8a0(q)} - {S_{-}\ue8a0(q)}} = {{{- \uf74e}\ue89e\\; \ue89e\\Phi_{0}\ue89e\\sqrt{\\frac{J\ue89e\\; \ue89e\\eta}{2\ue89e\\overset{\\_}{C}}}\ue89e\\left( {{2\ue89e\\overset{\\_}{C}\ue89e\\frac{\\varepsilon}{\\eta}} + {\\eta \ue89e\\; \ue89e\\overset{\\sim}{C}}} \\right)} + {\ue52e\ue8a0\\left( \\eta^{5/2} \\right)} + {\\Phi_{0}\ue8a0\\left( {Q_{1} + Q_{2}} \\right)} + {\\pi \ue89e\\; \ue89e{q.}}}} & (25)\n\\end{matrix}\\)",
+                                "**XI. Concluding Remarks**",
+                                "Having illustrated and described the principles of the disclosed technology, it will be apparent to those skilled in the art that the disclosed embodiments can be modified arrangement and detail without departing from such principles. In view of the many possible embodiments to which the principles of the disclosed in may he applied, it should be recognized that the illustrated embodiments are only preferred examples of the invention and should not be taken as limiting the scope of the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "illustrate process for operating adjustable phase gate",
+                                "pass mobile Ising anyon through adjustable phase gate",
+                                "control mobile Ising anyon during passage",
+                                "create targeted phase change in stationary pair of Ising anyons",
+                                "adjust gate voltage of one or more gates",
+                                "adjust capacitance of one or more superconducting islands",
+                                "adjust strength of at least one Josephson junction",
+                                "alter magnetic flux through adjustable phase gate",
+                                "adjust strength of first Josephson junction",
+                                "adjust strength of second Josephson junction",
+                                "implement adjustable phase gate in transmission line resonator",
+                                "measure one or more Pauli operators of qubit",
+                                "control Josephson couplings between superconducting regions",
+                                "form superconducting loop with superconducting regions",
+                                "illustrate process for operating quantum circuit phase gate",
+                                "apply time-varying magnetic field to set of regions",
+                                "control Josephson junctions to create Josephson vortex",
+                                "produce phase change to qubit stored in qubit register",
+                                "selectively vary phase change between 0 and \u03c0 or 0 and \u2212\u03c0",
+                                "disclose quantum circuit phase gate with superconducting components",
+                                "locate Majorana wire on superconducting component",
+                                "apply variable magnetic field to superconducting loop",
+                                "control magnetic field generator and capacitance of superconducting components",
+                                "draw Josephson vortex into superconducting loop",
+                                "implement phase gate in qubit register in microwave resonator system",
+                                "disclose CHSH inequality or Bell inequality measurement system"
+                            ],
+                            "num_characters": 13535,
+                            "outline_medium": [
+                                "illustrate example process for operating adjustable phase gate",
+                                "pass mobile Ising anyon through adjustable phase gate",
+                                "control mobile Ising anyon to create targeted phase change",
+                                "adjust adjustable variables of phase gate",
+                                "alter magnetic flux through adjustable phase gate",
+                                "adjust strength of Josephson junctions",
+                                "implement adjustable phase gate in transmission line resonator",
+                                "measure Pauli operators of qubit",
+                                "illustrate example process for operating quantum circuit phase gate",
+                                "apply time-varying magnetic field to quantum circuit phase gate",
+                                "control Josephson junctions to create Josephson vortex",
+                                "implement quantum circuit phase gate in microwave resonator system",
+                                "describe Clauser-Horne-Shimony-Holt inequality or Bell inequality measurement system"
+                            ],
+                            "outline_short": [
+                                "illustrate adjustable phase gate operation",
+                                "control mobile Ising anyon passage",
+                                "apply time-varying magnetic field",
+                                "create Josephson vortex",
+                                "describe quantum circuit phase gate",
+                                "detail superconducting components and Majorana wires"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for operating an adjustable phase gate in a quantum circuit, the adjustable phase gate comprising a stationary pair of Ising anyons, comprising:\ncausing a mobile Ising anyon to pass through the adjustable phase gate, thereby creating a targeted phase change in the stationary pair of Ising anyons; and\ncontrolling the mobile Ising anyon as the mobile Ising anyon passes through the adjustable phase gate so that the mobile Ising anyon has a complex amplitude during passage, wherein the controlling is performed such that the targeted phase change experienced by the stationary pair of Ising anyons is between 0 and \u03c0 or 0 and \u2212\u03c0.",
+        "2. The method of claim 1, wherein the controlling comprises performing one or more of: (a) adjusting a gate voltage of one or more gates capacitively coupled to one or more superconducting islands that form the adjustable phase gate, (b) adjusting a capacitance of one or more of the superconducting islands; or (c) adjusting a strength of at least one Josephson junction relative to at least one other Josephson junction, the Josephson junctions connecting two or more of the superconducting islands to one another.",
+        "3. The method of claim 1, further comprising:\nin a first operational stage, altering a magnetic flux through the adjustable phase gate in a first direction, the first direction comprising either increasing the magnetic flux or decreasing the magnetic flux; and\nin a second operational stage, altering the magnetic flux through the adjustable phase gate in a second direction that is opposite of the first direction.",
+        "4. The method of claim 3, further comprising:\nduring either or both operational stages, adjusting a strength of a first Josephson junction at a first end of a superconducting region in the adjustable phase gate; and\nduring either or both operational stages, adjusting a strength of a second Josephson junction at a second end of the superconducting region in the adjustable phase gate,\nwherein the strengths of the first and second Josephson junctions are selected to create a relative difference that produces the targeted phase change in the Ising pair.",
+        "5. The method of claim 1, wherein the adjustable phase gate comprises a plurality of superconducting regions arranged to form a superconducting loop, wherein adjacent ones of the superconducting regions are connected to one another via respective Josephson junctions, and one of the superconducting regions comprises a Majorana wire located on the one of the superconducting regions.",
+        "6. The method of claim wherein the adjustable phase gate is implemented in a transmission line resonator comprising three Majorana wires arranged to form a qubit between a bus and a phase ground of the transmission line resonator.",
+        "7. The method of claim 1, further comprising measuring one or more Pauli operators of the qubit by selectively controlling: (a) Josephson couplings between a first superconducting region on which a first Majorana wire is located and a bus and phase ground; and (b) Josephson couplings between a second superconducting region on which a second Majorana wire is located and the bus and the phase ground, and wherein a superconducting loop is formed by the second superconducting region, the phase ground, and a third superconducting region containing no Majorana wire.",
+        "8. A quantum circuit phase gate, comprising:\na plurality of superconducting components arranged in a ring to form a superconducting loop, wherein adjacent superconducting components are connected to each other via Josephson junctions;\na Majorana wire located on a respective one of the superconducting components; and\na magnetic field generator configured to apply actable magnetic field to the superconducting loop formed by the ring of superconductive components.",
+        "9. The quantum circuit phase gate of claim 8, wherein the magnetic field generator and the capacitance of one or more of the superconducting components are controllable to draw a Josephson vortex into the superconducting loop.",
+        "10. The quantum circuit phase gate of claim 8, wherein the superconducting components comprise first and second superconducting islands connected to a bulk superconductor.",
+        "11. The quantum circuit phase gate of claim 10, wherein the first superconducting island is connected to the bulk superconductor via a first controllable Josephson junction, the second superconducting island is connected to the bulk superconductor via a second controllable Josephson junction,and the e first superconducting island is connected to the second superconducting island via a third Josephson junction.",
+        "12. The quantum circuit phase gate of claim in only the first and second Josephson junctions are controllable.",
+        "13. A microwave resonator system configured to implement a qubit register between a bus and a phase ground, the qubit register comprising the phase gate of claim 8.",
+        "14. The microwave resonator of claim 13, wherein the Majorana wire is a first Majorana wire, and wherein the plurality of superconducting components arranged in a ring comprises: a first superconducting component coupled to the phase ground via a first controllable Josephson junction and coupled to the bus via a second controllable Josephson junction, the first Majorana wire being located on the first superconducting component; and a second superconducting component coupled to the phase ground via a third controllable Josephson junction and coupled to the first superconducting component via a fixed Josephson junction, the second superconducting component being disconnected from the bus.",
+        "15. The microwave resonator of claim 14, further comprising: a third superconducting component coupled to the phase ground via a fifth controllable Josephson junction and to the bus via a sixth controllable Josephson junction; a second Majorana created on the third superconducting component; a third Majorana wire located on a superconducting component connected to the bus, wherein the first, second, and third Majorana wires are positioned to create the qubit register with no braiding mechanism.",
+        "16. A Clauser-Horne-Shimony-Holt (CHSH) inequality or Bell inequality measurement system comprising the phase gate of claim 8.",
+        "17. A method of operating a quantum circuit phase gate, comprising:\napplying a time-varying magnetic field to a set of regions in the quantum circuit phase gate, at least some of the regions being connected to one another via respective Josephson junctions; and\ncontrolling a first of the Josephson junctions and a second of the Josephson junctions to create a Josephson vortex in the quantum circuit phase gate as the time-varying magnetic field is applied.",
+        "18. The method of claim 17, wherein the regions are superconducting regions, and wherein the regions form a superconducting loop.",
+        "19. The method of claim 17, wherein the Josephson vortex produces a phase change to a quint stored in a qubit register formed with the quantum circuit phase gate.",
+        "20. The method of claim 19, further comprising selectively varying the phase change between 0 and \u03c0 or 0 and \u2212\u03c0."
+    ]
+}

@@ -1,0 +1,398 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define genetic engineering field
+
+## BACKGROUND
+
+- motivate phosphatase control
+
+## SUMMARY OF THE INVENTION
+
+- relate to genetic engineering
+- construct operons to produce biologically active agents
+- describe fusion proteins
+- introduce substrate recognition domain
+- introduce DNA-binding domain
+- introduce anchoring unit for RNA polymerase
+- describe reporter gene
+- introduce first enzyme
+- introduce second enzyme
+- describe system of proteins
+- introduce protein phosphatase
+- introduce protein tyrosine phosphatase
+- introduce protein tyrosine phosphatase 1B
+- describe reporter protein
+- introduce LuxAB bioreporters
+- introduce fluorescent protein
+- introduce mClover
+- introduce antibiotic resistance
+- introduce decoy protein fusion
+- introduce third enzyme
+- describe substrate domains
+- introduce light modulated enzyme
+- introduce protein-LOV2 chimera
+- introduce PTP1B-LOV2 chimera
+- describe toxic product
+- introduce SacB
+- describe expression vector
+- describe bacterial cell
+- detect inhibitors of an enzyme
+- describe system for detecting inhibitors
+- evolve inhibitors of an enzyme
+- describe method for evolving inhibitors
+- detect selective inhibitors
+- evolve selective inhibitors
+- evolve photoswitchable enzymes
+- describe method for evolving photoswitchable enzymes
+- evolve selective mutants of an enzyme
+- describe method for evolving selective mutants
+- evolve substrate domains selective for an enzyme
+- describe method for evolving substrate domains
+- use microbial biosensor
+- describe method of using microbial biosensor
+- provide variants of chemical structures
+- describe method for providing variants
+- describe fusion protein DNA construct
+- define fusion protein
+- describe protein phosphatase
+- describe protein light switch
+- describe method of using fusion protein
+- describe controlling cell movement
+- describe controlling cell signaling
+- describe modulatory effect
+- describe illumination
+- describe light-induced conformational change
+- describe altering catalytic activity
+- describe method for detecting small molecule modulator
+- describe providing fusion protein
+- describe expressing fusion protein
+- describe contacting with small molecule test compound
+- describe illuminating fusion protein
+- describe measuring visual readout
+- describe identifying small molecule test compound
+- describe using modulatory small molecule test compound
+- describe treating patient
+- describe disease associated with phosphatase
+- describe photoswitchable protein tyrosine phosphatase enzyme construct
+- describe N-terminal alpha helix
+- describe C-terminal allosteric domain region
+- describe biosensor for enzyme activity
+- describe substrate domain
+- describe substrate recognition domain
+- describe first fluorescent protein
+- describe second fluorescent protein
+- describe genetically encoded system for detecting small molecules
+- describe first region
+- describe second region
+- describe operator
+- describe binding site for RNA polymerase
+- describe gene of interest
+- describe method for using genetically encoded system
+- describe providing genetically encoded system
+- describe transforming bacteria
+- describe observing expression of gene of interest
+- describe pathway that generates linear isoprenoid precursors
+- describe gene for terpene synthase
+- describe plurality of E. coli bacteria
+- describe extracting terpenoids
+- describe identifying terpenoids
+- describe purifying terpenoids
+- describe treating mammalian cell culture
+- describe measuring biochemical effect
+- describe quantifying modulatory effect
+- define genetically encoded detection operon system
+- describe method of using inhibitor detection operon
+- detail first region of DNA in operable combination
+- describe second region of DNA in operable combination
+- outline method of using genetically encoded detection operon system
+- describe mevalonate-terpene pathway operon
+- detail fourth DNA sequence under control of fifth promoter
+- describe transfecting bacteria with inhibitor detection operon
+- describe transfecting bacteria with mevalonate pathway operon
+- describe transfecting bacteria with fourth DNA sequence
+- describe growing bacteria cells expressing three genes of interest
+- describe isolating protein phosphatase inhibitor molecules
+- describe treating mammalian cell cultures
+- describe reducing activity of protein phosphatase enzyme
+- describe protein phosphatase enzyme
+- describe terpene synthase enzyme
+- describe genes of interest
+- describe method of using genetically encoded system for detecting small molecules
+- describe genetically encoded pathway for polyketide biosynthesis
+- describe method of using genetically encoded system for detecting small molecules and genetically encoded pathway for polyketide biosynthesis
+- describe method of using genetically encoded system for detecting small molecules and genetically encoded pathway for alkaloid biosynthesis
+- describe engineered bacteria cell line
+- describe phosphatase inhibitor molecule produced by bacterium
+- describe bacteria strain producing phosphatase inhibitor molecule
+- describe terpenoid molecule
+- describe inducible promoter
+
+## DEFINITIONS
+
+- define operon
+- define phosphorylation-regulating enzymes
+- define phosphorylation
+- define optogenetic actuator
+- define dynamic range
+- define operably linked
+- define other terms
+
+## DETAILED DESCRIPTION OF INVENTION
+
+- relate invention to genetic engineering
+- introduce operons for producing biologically active agents
+- describe systems for detecting and constructing biologically active agents
+- provide microbial operons for identifying small molecule inhibitors/modulators
+- describe use of inhibitors/modulator molecules in treating diseases
+- introduce Protein tyrosine phosphatase 1B (PTP1B) as a valuable model system
+- describe PTP1B as an experimentally tractable model system
+- describe PTP1B as an enzyme for which optical modulation is contemplated
+- relate PTP1B to spatial regulation and intracellular signaling
+
+### I. Protein Tyrosine Phosphatases (PTPs) and Protein Tyrosine Kinases (PTKs) in Relation to Disease.
+
+- introduce PTPs and PTKs in relation to disease
+- describe PTPs and PTKs as contributing to anomalous signaling events
+- describe use of light as photoswitchable constructs for controlling PTPs and PTKs
+- describe photoswitchable constructs of PTPs and PTKs
+- describe use of photoswitchable constructs for identifying specific alleles of PTPs and/or PTKs
+- describe use of photoswitchable constructs for screening and testing molecules
+- introduce Fan et al. reference
+- describe LOV2 conjugates
+- introduce WO2011133493 reference
+- describe fusion proteins comprising a kinase and a LOV domain
+- introduce WO2012111772 reference
+- describe polypeptide for optical control of calcium signaling
+- introduce U.S. Pat. No. 8,859,232 reference
+- describe fusion proteins comprising protein light switches
+- describe methods of photomanipulating protein function
+- introduce A. Protein Tyrosine Phosphatases (PTPs)
+- describe PTPs as regulatory enzymes
+- describe detailed biophysical studies of PTP IB
+- describe allosteric communication in PTPs
+- describe results of X-ray crystallography and molecular dynamics simulations
+- describe kinetic studies of PTPs
+- describe allosteric network resolved in this study
+- describe new sites for targeting allosteric inhibitors of PTPs
+- describe functional influence of disease-associated mutations
+
+### II. Optogenetic Actuators.
+
+- introduce optogenetic actuators
+- describe biochemical events under optical control
+- motivate limitations of existing technologies
+- describe observational interference
+- describe illuminating half the story
+- describe limited palette of actuators
+- introduce photoswitchable constructs
+- describe advantages over other technologies
+- describe reference WO2013016693
+- describe bacteriophytochrome-based photoactivated fusion proteins
+- describe limitations of existing approaches
+- introduce "cage-free" approach
+- describe current strategies for optical control
+- describe limitations of cage-based systems
+- introduce genetically encoded photoswitchable phosphatase
+- describe PTP1B-regulated processes
+- describe photoswitchable phosphatases
+- state hypothesis
+- describe experimental approach
+- describe kinetic assays and binding studies
+- describe crystallographic and spectroscopic analyses
+- describe extension to STEP and PTK6
+- introduce photoswitchable variant of PTP1B
+- describe LOV2 domain
+- describe PTP1B-LOV2 chimeras
+- describe light-dependent catalytic activity
+- describe mutational analysis
+- describe dynamic range
+- describe FIG. 1C
+- describe different crossover points
+- describe different partitioning of the linker
+- describe Jalpha helix
+- describe A'alpha helix
+- describe alpha7 helix of PTP1B
+- describe combination of sites
+- describe limitations of native AsLOV2 domain
+- describe efforts to engineer improved variants
+- describe exemplary linkers
+- describe exemplary mutations
+- describe biophysical studies
+- describe development of a photoswitchable variant of PTP1B
+- Optogenetic Actuators
+- Target PTP1BPS with dynamic range and recovery time
+- Motivate PTP1BPS for optical control of cell signaling
+- Derive biophysical properties of PTP1BPS
+- Characterize PTP1B-Substrate and PTP1B-Protein Interactions
+- Analyze kinetic studies of PTP1BW and PTP1BPS
+- Compare substrate specificity of PTP1BW and PTP1BPS
+- Investigate substrate-dependence of photoswitchability
+- Assess protein-protein interactions of PTP1BW and PTP1BPS
+- Biostructural characterization of PTP1BPS
+- Use X-ray crystallography to study PTP1BPS structure
+- Use NMR spectroscopy to study PTP1BPS catalytic activity
+- Exemplary Imaging Methodology to Study Subcellular Signaling Events
+- Hypothesize subcellular localization of PTPs and PTKs
+- Develop approach for studying spatially localized signaling events
+- Localize PTP1BPS in living cells
+- Control PTP1BPS in living cells using confocal microscopy
+- Develop FRET-based sensor for protein phosphorylation
+- Optimize FRET sensor for Src kinase activity
+- Use reaction-diffusion model to study spatially distinct subpopulations
+- Investigate relationships between PTP1BPS activation and sensor phosphorylation
+- Image analysis to estimate ER in different regions of irradiation
+- Spatial Regulation and Intracellular Signaling
+- Hypothesize role of PTP1B in tumorigenesis
+- Develop tools to investigate differential influence of PTP1B subpopulations
+- Network biology to study spatial context in signaling networks
+- Generalize approach to Protein Tyrosine Phosphatases and Kinases
+- Develop photoswitchable variants of STEP and PTK6
+- Measure substrate specificities of photoswitchable chimeras
+- Collect crystal structures of optimal chimeras
+- Exemplary photoswitch construct sequences for mammalian cells
+- Exemplary FRET sensors for monitoring PTP1B activity
+- Exemplary mammalian expression vector for expressing photoswitch construct
+- Contemplative embodiments for invadopodia formation and EGFR regulation
+- Determine role of cytosolic PTP1B in invadopodia formation
+- Analyze cooperative contribution of PTP1B and PTK6 to EGFR regulation
+
+### III. Genetically Encoded System for Constructing and Detecting Biologically Active Agents: Microbial Inhibitor Screening Systems.
+
+- introduce operons for specific purposes
+- describe genetic operons for insertion
+- link enzyme activity to cellular luminescence, fluorescence, or growth
+- detect biologically active molecules and non-native biologically active metabolites
+- enable detection of metabolites that inhibit/activate a protein of interest
+- describe genetic operons for detecting and/or evolving biologically active metabolites
+- modify operons for use in detecting and/or evolving biologically active metabolites
+- install metabolic pathways responsible for making natural metabolites
+- enable detection of metabolite-based biological activities
+- modify methods of evolving molecules from Moses et al.
+- modify methods of evolving molecules from Badran et al.
+- construct drug leads using microbial hosts
+- address the development of low-cost pharmaceuticals
+- use biology for the systematic construction of new molecules
+- accelerate the rate and lower the cost of pharmaceutical development
+- optimize pharmacological properties of drug leads
+- develop protein inhibitors, particularly for natural products
+- use enzymes to construct terpenoid inhibitors
+- study the molecular-level origin and thermodynamic basis of affinity and activity
+- develop selective inhibitors of protein tyrosine phosphatase 1B (PTP1B)
+- hypothesize about abietic acid as an allosteric inhibitor of PTP1B
+- make structural variants of abietadiene
+- determine free energies, enthalpies, and entropies of binding
+- examine the molecular basis and thermodynamic origin of affinity and activity
+- develop a set of empirical relationships that predict how mutations influence product attributes
+- evolve high-affinity terpenoid inhibitors of PTP1B
+- identify structure-activity relationships that enable the evolution of terpenoid inhibitors
+- develop a biophysical framework for using protein crystal structures to identify enzymes
+- apply the technology to develop treatments for diabetes, obesity, and cancer
+- introduce synthetic biology approach
+- describe limitations of current pathway discovery and optimization methods
+- propose strategy for using synthetic biology to build new molecular function
+- describe operon for detecting molecules that inhibit protein of interest
+- discuss advantages of methods and systems over other systems for detecting small molecule inhibitors
+- compare with U.S. Pat. No. 6,428,951
+- discuss PCA strategy for detecting interactions of proteins with small molecules
+- describe WO2004048549 and its limitations
+- discuss advantages of methods and systems over other systems for detecting small molecule inhibitors
+- describe technology for evolving proteins with different affinities for other proteins/peptide substrates
+- discuss discovery of metabolites with targeted biological activities but unknown structures
+- describe high-throughput metabolic engineering
+- identify new inhibitors as a starting point
+- describe metabolic engineering of E. coli to produce abietadiene
+- assess ability of minor structural perturbations of abietadiene derivatives to yield improved inhibitors
+- functionalize abietadiene using mutants of cytochrome P450bm3
+- perform biostructural analyses of PTP1B
+- develop high-throughput screens for detecting inhibitors
+- provide structurally varied terpenoids with different affinities for the allosteric binding pocket
+- describe research plan for using enzymes to build selective terpenoid inhibitors of PTP1B
+- hypothesize structural changes affecting affinity of ligands for PTP1B
+- describe strategy for generating terpenoids that differ in stereochemistry, shape, and size
+- generate terpenoids that differ in size using mutations that increase/decrease the volume of the active sites of ABS
+- isolate and characterize new terpenoids
+- measure free energy, enthalpy, and entropy of binding to PTP1B
+- hydroxylate and halogenate terpenoids using mutants of cytochrome P450 BM3 and CYP720B4
+- construct variants with hydroxyl or carboxyl groups at different positions
+- use mutants of tryptophan 6-halogenase and vanadium haloperoxidase to generate halogenated ligands
+- screen and characterize halogenated diterpenoids
+- discuss advantages of methods and systems over other systems for detecting small molecule inhibitors
+- describe high-throughput screens for terpenoids with a targeted activity
+- discuss identification of new inhibitors
+- describe metabolic engineering of E. coli to produce abietadiene
+- assess ability of minor structural perturbations of abietadiene derivatives to yield improved inhibitors
+- functionalize abietadiene using mutants of cytochrome P450bm3
+- perform biostructural analyses of PTP1B
+- develop high-throughput screens for detecting inhibitors
+- provide structurally varied terpenoids with different affinities for the allosteric binding pocket
+- describe research plan for using enzymes to build selective terpenoid inhibitors of PTP1B
+- hypothesize structural changes affecting affinity of ligands for PTP1B
+- describe strategy for generating terpenoids that differ in stereochemistry, shape, and size
+- summarize advantages of methods and systems over other systems for detecting small molecule inhibitors
+
+### IV. Evolving High-Affinity Terpenoid Inhibitors of PTP1B.
+
+- develop high-throughput screens for PTP1B inhibitors
+- use site-saturation and random mutagenesis to evolve new inhibitors
+- introduce biological selection method for rapid screening
+- describe operon construction for linking inhibitor potency to cell growth
+- outline components of operon for PTP1B inhibition
+- develop luminescence-based system for operon optimization
+- introduce FRET sensor for PTP1B activity
+- describe FRET sensor construction for monitoring PTP1B activity
+- outline FACS-based screen for PTP1B inhibition
+- introduce FRET sensor for changes in PTP1B conformation
+- describe FRET experiment for detecting PTP1B conformational changes
+- outline FACS-based screen for PTP1B conformational changes
+- introduce binding-induced changes in tryptophan fluorescence
+- describe tryptophan fluorescence-based screen for PTP1B inhibition
+- outline mutagenesis strategies for evolving terpenoid inhibitors
+- introduce site-saturation mutagenesis for identifying plastic residues
+- describe error-prone PCR for generating mutated terpenoid pathways
+- develop biophysical framework for identifying enzymes capable of synthesizing inhibitors
+- analyze relationships between binding pockets
+- construct matrices for comparing binding pocket properties
+- validate and extend approach to identify promising active site motifs
+
+### VI. Evolving Optogenetic Actuators: Photoswitchable Constructs.
+
+- introduce optogenetic actuators
+- describe limitations of blue and green light
+- propose photoswitchable enzymes stimulated by red or infrared light
+- describe operon to evolve photoswitchable constructs
+- outline control strategy of operon
+- describe PTP1B suppression of transcription
+- explain difference in growth rates
+- describe initial experiments with Lux-based luminescence
+- outline goals of operon development
+- describe FRET sensors
+- outline use of FRET to monitor PTP1B activity
+- describe optimization of sensor
+- outline directed evolution of phosphatases and kinases
+- describe hypothesis of phytochrome proteins
+- outline experimental approach
+- describe construction of library of PTP1B-phytochrome chimeras
+- outline screening of library for functional mutants
+- describe kinetic and biostructural characterization of mutants
+- outline extension of approach to STEP and PTK6
+- describe development of synthetic operon for evolving PTP1B-phytochrome chimeras
+- outline components of operon
+- describe use of operon to evolve photoswitchable PTP1B-BphP1 chimeras
+- outline advantages of using operons
+- describe directed evolution of PTP1B-BphP1 chimeras
+- outline extension of approach to other enzymes
+
+## ABBREVIATIONS
+
+- define abbreviations
+- list protein tyrosine phosphatases
+- list other abbreviations
+
+## Examples
+
+- illustrate statistical analysis
+- exemplify estimation of IC50
+- discuss scope of invention
+

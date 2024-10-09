@@ -1,0 +1,475 @@
+{
+    "id": "US20150087053",
+    "authors": [
+        "Jennifer Pluznick",
+        "Niranjana Natarajan",
+        "Blythe Shepard"
+    ],
+    "title": "COMPOSITIONS AND METHODS FOR INCREASING THE EXPRESSION AND SIGNALLING OF PROTEINS ON CELL SURFACES",
+    "date": "2013-09-26 00:00:00",
+    "abstract": "The present invention relates to the field of protein expression. More specifically, the present invention provides compositions and methods for increasing the expression and signaling of proteins on cell surfaces. In particular embodiments, the present invention provides nucleic acids and amino acid sequences useful for improving/increasing protein expression on the cell surface. In several embodiments, the sequences are operably linked to the N-terminal end of the protein of interest. The nucleic acid sequence encoding the sequence tag and the protein comprise part of an expression vector. The protein is expressed with the N-terminal sequence tag. In certain embodiments, the sequences of the present invention can be used with one or more chaperone or accessory proteins. In particular embodiments, the one or more chaperone/accessory proteins are encoded by the same vector or separate vectors. In other embodiments, the chaperone/accessory proteins are encoded the same vector that encodes the protein of interest.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "STATEMENT OF GOVERNMENTAL INTEREST",
+                    "paragraphs": [
+                        "This invention was made with government support under grant no. R00DK081610 awarded by the National Institutes of Health. The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "state government rights"
+                    ],
+                    "num_characters": 173,
+                    "outline_medium": [
+                        "state government rights"
+                    ],
+                    "outline_short": [
+                        "state government rights"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to the field of protein expression. More specifically, the present invention provides compositions and methods for increasing the expression and signaling of proteins on cell surfaces."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define protein expression field"
+                    ],
+                    "num_characters": 214,
+                    "outline_medium": [
+                        "define protein expression field"
+                    ],
+                    "outline_short": [
+                        "define protein expression field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Olfactory receptors (ORs) are seven transmembrane domain G protein-coupled receptors (GPCRs) that govern the sense of smell in the olfactory epithelium, and comprise the largest gene family in the genome (\u02dc1000 OR genes in mice [1] and \u02dc300 [2] in humans). Although this family was first identified over 20 years ago [3], the majority of ORs remain orphan receptors, with no known ligand. This is due, in large part, to the fact that OR deorphanization is typically attempted using in vitro ligand screening assays in heterologous cell systems which require surface expression of the OR as a prerequisite for the assay (i.e., HEK293T cells or Xenopus oocytes) [4-7]. Unfortunately, many ORs do not traffic to the cell surface in heterologous cell systems; rather, they are retained in the ER and degraded [8-10], making ligand assignment impossible. To combat this problem, studies have utilized the co-expression of various accessory proteins and/or the addition of N-terminal tags [11-14]. For example, the addition of the first 20 amino acids of rhodopsin onto the N-terminus of ORs (Rho tag) enhances OR surface expression for a number of ORs [15]. Similarly, receptor transporting protein (RTP), originally identified as a potential chaperone for ORs [16,17], also enhances expression of multiple ORs. A recent study showed that the best surface expression was achieved [18] by co-expressing the short form of RTP (RTP1S) [19], Ric8b (a putative GEF) [20] and G\u03b1olf (the G protein that couples to ORs in the olfactory epithelium) [21] with Rho-tagged ORs. While these tools have been beneficial to the field [5,15,16,18,20,22-24] and are the most reliable enhancers of OR surface expression available to date, their effects are not universal. Despite these developments, many ORs are still unable to reach the cell surface when heterologously expressed, and thus remain as orphan receptors.",
+                        "As membrane proteins, ORs enter the biosynthetic pathway upon translocation into the endoplasmic reticulum (ER). Typically, this is accomplished co-translationally where a signal peptide serves to mediate ER translocation through the heterotrimeric Sec61 complex that forms a channel in the ER membrane [25]. While most GPCRs use one of their transmembrane domains (TMD) as a signal anchor sequence, a small subset of GPCRs and other TMD proteins (and all secretory proteins) have cleavable signal peptides which are found at the extreme N-terminus of the immature protein [26,27]. As their name implies, these cleavable signal peptides are not incorporated into the mature protein; rather they are cleaved off in the ER membrane upon translocation. While cleavable signal peptides do not have a conserved sequence, they do share characteristic features including a hydrophobic region flanked by polar amino acids [25,26].",
+                        "Recently, the single-spanning membrane protein, Leucine Rich Repeat Containing 32 (LRRC32) was found to possess a leucine-rich 17-amino acid cleavable signal peptide (MRPQILLLLALLTLGLA) which is required for proper ER translocation and surface expression in both T regulatory cells (where it is natively expressed) as well as in HEK293T cells [28]. Because the addition of other cleavable signal peptides has been shown to enhance surface expression for some GPCRs in cell culture [29,30], we hypothesized that the addition the LRRC32 signal peptide may promote surface expression of ORs. Importantly, as signal peptides are cleaved off in the ER, the addition of such a tag would not affect the mature protein, preventing any potential alteration or interference with ligand binding. To assay whether the addition of a cleavable signal peptide could aid in OR surface expression, we added the 17 amino acid signal peptide from LRRC32 (which we named \u201cLucy,\u201d for its leucine repeats) to the N-terminus of 15 diverse ORs (murine ORs from both Class I and Class II, representing 11 different subfamilies, as well as 2 human ORs) and assayed for surface expression. We also combined our Lucy tag with both the Rho tag and the best practice in OR trafficking (co-expression with accessory proteins RTP1S, Ric8b and G\u03b1olf [18]) in order to assess the universal effects of this tag. Here we report that the Lucy tag, in combination with the Rho tag and the accessory proteins, promotes surface expression of all ORs tested, raising the possibility for wide-spread deorphanization."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce olfactory receptors",
+                        "describe limitations of OR deorphanization",
+                        "motivate accessory proteins",
+                        "describe Rho tag",
+                        "describe RTP and Ric8b",
+                        "describe G\u03b1olf",
+                        "introduce cleavable signal peptides",
+                        "motivate LRRC32 signal peptide"
+                    ],
+                    "num_characters": 4395,
+                    "outline_medium": [
+                        "introduce olfactory receptors",
+                        "describe limitations of OR deorphanization",
+                        "summarize existing solutions for OR surface expression",
+                        "motivate need for new solution"
+                    ],
+                    "outline_short": [
+                        "motivate olfactory receptors",
+                        "limitations of current methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention is based, at least in part, on the discovery of an N-terminal tag sequence which aids in olfactory receptor trafficking. When expressed exogenously in mammalian cells, olfactory receptors (ORs) fail to traffic to the cell surface. This is a problem in the field as receptor ligands cannot be assayed unless the receptor is present on the cell surface. Either alone or in combination with chaperone proteins, this novel tag allows all ORs assayed thus far to reach the cell surface.",
+                        "Accordingly, in one aspect, the present invention provides nucleic acids/polynucleotide and amino acid/polypeptide sequences useful for improving/increasing protein expression on the cell surface. In several embodiments, the sequences are operably linked to the N-terminal end of the protein of interest. The nucleic acid sequence encoding the sequence tag and the protein comprise part of an expression vector. The protein is expressed with the N-terminal sequence tag. In certain embodiments, the sequences of the present invention can be used in conjunction with one or more chaperone or accessory proteins. In particular embodiments, the one or more chaperone/accessory proteins are encoded by the same vector or separate vectors. In other embodiments, the chaperone/accessory proteins are encoded the same vector that encodes the protein of interest.",
+                        "Using the compositions and methods of the present invention, numerous proteins can be expressed on the surface of a host cell. Such proteins can be receptor proteins. In several embodiments, the receptor proteins are olfactory receptors. Olfactory receptors can include, but are not limited to, Olfr78, Olfr51E2, mOREG (Olfr73), Olf145, Olfr691, Olfr52B2, Olfr99, Olfr693, Olfr805, Olfr1392, Olfr1393, Olfr90, Olfr545, Olfr985, and Olfr894.",
+                        "In another embodiment, the present invention provides composition encoding a cleavable signal peptide linked to the N-terminus of a protein of interest, i.e., a cell surface-expressed protein. In a specific embodiment, the cleavable signal peptide comprises the Lucy tag described herein. In a more specific embodiment, the Lucy tag comprises SEQ ID NO:3. In another embodiment, the Lucy tag can further comprise a Rho tag. In yet another embodiment, the Lucy tag can further comprise a Flag tag. In certain embodiments, the Lucy tag further comprises a Rho tag and a Flag tag. The tags (Lucy, Rho, Flag, and/or the like) can be linked (or not) with a linker. Thus, a composition that is linked to the N-terminus of a protein of interest may comprise SEQ ID NO:1, SEQ ID NO:2 or SEQ ID NO:3.",
+                        "The protein of interest can be any surface expressed protein. In certain embodiments, the protein of interest is an olfactory receptor. Such a protein can include, but is not limited to, Olfr78, Olfr51E2, mOREG (Olfr73), Olf145, Olfr691, Olfr52B2, Olfr99, Olfr693, Olfr805, Olfr1392, Olfr1393, Olfr90, Olfr545, Olfr985, and Olfr894.",
+                        "The present invention can be used to increase expression, trafficking, and/or signaling of the protein of interest to the cell surface. In particular embodiments, the present invention can be utilized with olfactory receptor proteins and used in assays by perfume, fragrance, flavor or food companies. The system or assay can further utilize one or more chaperone/accessory proteins to assist in the expression, trafficking, and/or signaling of the protein of interest to the cell surface. Examples of such proteins include, but are not limited to, RTPL1, RTP1S, RTP2, REEP, \u03b2-adrenergic receptor, heat shock protein 70, Ric8b, and G\u03b1olf."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce N-terminal tag sequence",
+                        "describe problem of OR trafficking",
+                        "summarize invention",
+                        "describe nucleic acid sequences",
+                        "describe expression vectors",
+                        "describe chaperone/accessory proteins",
+                        "describe applications"
+                    ],
+                    "num_characters": 3569,
+                    "outline_medium": [
+                        "introduce novel N-terminal tag sequence",
+                        "describe application of tag for OR trafficking",
+                        "summarize invention's benefits"
+                    ],
+                    "outline_short": [
+                        "introduce novel tag sequence"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "It is understood that the present invention is not limited to the particular methods and components, etc., described herein, as these may vary. It is also to be understood that the terminology used herein is used for the purpose of describing particular embodiments only, and is not intended to limit the scope of the present invention. It must be noted that as used herein and in the appended claims, the singular forms \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d include the plural reference unless the context clearly dictates otherwise. Thus, for example, a reference to a \u201cprotein\u201d is a reference to one or more proteins, and includes equivalents thereof known to those skilled in the art and so forth.",
+                        "Unless defined otherwise, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this invention belongs. Specific methods, devices, and materials are described, although any methods and materials similar or equivalent to those described herein can be used in the practice or testing of the present invention.",
+                        "All publications cited herein are hereby incorporated by reference including all journal articles, books, manuals, published patent applications, and issued patents. In addition, the meaning of certain terms and phrases employed in the specification, examples, and appended claims are provided. The definitions are not meant to be limiting in nature and serve to provide a clearer understanding of certain aspects of the present invention.",
+                        "The term \u201cnucleic acid\u201d or \u201cpolynucleotide\u201d refers to a polymeric form of nucleotides of any length, either ribonucleotides and/or deoxyribonucleotides. These terms include a single-, double- or triple-stranded DNA, genomic DNA, cDNA, RNA, DNA-RNA hybrid, or a polymer comprising purine and pyrimidine bases, or other natural, chemically, biochemically modified, non-natural or derivatized nucleotide bases. The backbone of the nucleic acid can comprise sugars and phosphate groups (as may typically be found in RNA or DNA), or modified or substituted sugar or phosphate groups. Alternatively, the backbone of the nucleic acid can comprise a polymer of synthetic subunits such as phosphoramidates and thus can be an oligodeoxynucleoside phosphoramidate (P\u2014NH2) or a mixed phosphoramidate-phosphodiester oligomer. In addition, a double-stranded nucleic acid can be obtained from the single stranded nucleic acid product of chemical synthesis either by synthesizing the complementary strand and annealing the strands under appropriate conditions, or by synthesizing the complementary strand de novo using a DNA polymerase with an appropriate primer.",
+                        "The following are non-limiting examples of nucleic acids: a gene or gene fragment, exons, introns, mRNA, tRNA, rRNA, ribozymes, cDNA, recombinant nucleic acids, branched nucleic acids, plasmids, vectors, isolated DNA of any sequence, isolated RNA of any sequence, nucleic acid probes, and primers. A nucleic acid may comprise modified nucleotides, such as methylated nucleotides and nucleotide analogs, uracyl, other sugars and linking groups such as fluororibose and thioate, and nucleotide branches. The sequence of nucleotides may be interrupted by non-nucleotide components. A nucleic acid may be further modified after polymerization, such as by conjugation with a labeling component. Other types of modifications included in this definition are caps, substitution of one or more of the naturally occurring nucleotides with an analog, and introduction of means for attaching the nucleic acid to proteins, metal ions, labeling components, other nucleic acids, or a solid support.",
+                        "The terms \u201cisolated,\u201d \u201cpurified,\u201d or \u201cbiologically pure\u201d refer to material that is free to varying degrees from components which normally accompany it as found in its native state. Various levels of purity may be applied as needed according to this invention in the different methodologies set forth herein; the customary purity standards known in the art may be used if no standard is otherwise specified.",
+                        "By \u201cisolated nucleic acid (or polynucleotide) molecule\u201d is meant a nucleic acid (e.g., a DNA, RNA, or analog thereof) that is free of the genes which, in the naturally occurring genome of the organism from which the nucleic acid molecule of the present invention is derived, flank the gene. The term therefore includes, for example, a recombinant DNA that is incorporated into a vector, into an autonomously replicating plasmid or virus; or into the genomic DNA of a prokaryote or eukaryote; or that exists as a separate molecule (for example, a cDNA or a genomic or cDNA fragment produced by PCR or restriction endonuclease digestion) independent of other sequences. In addition, the term includes an RNA molecule which is transcribed from a DNA molecule, as well as a recombinant DNA which is part of a hybrid gene encoding additional polypeptide sequence.",
+                        "As used herein, the term \u201coperably linked\u201d means that nucleic acid sequences or proteins are operably linked when placed into a functional relationship with another nucleic acid sequence or protein. For example, a promoter sequence is operably linked to a coding sequence if the promoter promotes transcription of the coding sequence. As a further example, a repressor protein and a nucleic acid sequence are operably linked if the repressor protein binds to the nucleic acid sequence. Additionally, a protein may be operably linked to a first and a second nucleic acid sequence if the protein binds to the first nucleic acid sequence and so influences transcription of the second, separate nucleic acid sequence. Generally, \u201coperably linked\u201d means that the DNA sequences being linked are contiguous, although they need not be, and that a gene and a regulatory sequence or sequences (e.g., a promoter) are connected in such a way as to permit gene expression when the appropriate molecules (e.g., transcriptional activator proteins\u2014transcription factors\u2014or proteins which include transcriptional activator domains) are bound to the regulatory sequence or sequences.",
+                        "The term \u201camino acid\u201d refers to naturally occurring and synthetic amino acids, as well as amino acid analogs and amino acid mimetics that function in a manner similar to the naturally occurring amino acids. Naturally occurring amino acids are those encoded by the genetic code, as well as those amino acids that are later modified, for example, hydroxyproline, gamma-carboxyglutamate, and O-phosphoserine, phosphothreonine.",
+                        "An \u201camino acid analog\u201d refers to a compound that has the same basic chemical structure as a naturally occurring amino acid, i.e., a carbon that is bound to a hydrogen, a carboxyl group, an amino group, and an R group (e.g., homoserine, norleucine, methionine sulfoxide, methionine methyl sulfonium), but that contains some alteration not found in a naturally occurring amino acid (e.g., a modified side chain). The term \u201camino acid mimetic\u201d refers to chemical compounds that have a structure that is different from the general chemical structure of an amino acid, but that function in a manner similar to a naturally occurring amino acid. Amino acid analogs may have modified R groups (for example, norleucine) or modified peptide backbones, but retain the same basic chemical structure as a naturally occurring amino acid. In one embodiment, an amino acid analog is a D-amino acid, a beta-amino acid, or an N-methyl amino acid.",
+                        "Amino acids and analogs are well known in the art. Amino acids may be referred to herein by either their commonly known three letter symbols or by the one-letter symbols recommended by the IUPAC-IUB Biochemical Nomenclature Commission. Nucleotides, likewise, may be referred to by their commonly accepted single-letter codes.",
+                        "The terms \u201cpolypeptide,\u201d \u201cprotein,\u201d and \u201cpeptide\u201d are used herein interchangeably to refer to amino acid chains in which the amino acid residues are linked by peptide bonds or modified peptide bonds. The amino acid chains can be of any length of greater than two amino acids. Unless otherwise specified, the terms \u201cpolypeptide,\u201d \u201cprotein,\u201d and \u201cpeptide\u201d also encompass various modified forms thereof. Such modified forms may be naturally occurring modified forms or chemically modified forms. Examples of modified forms include, but are not limited to, glycosylated forms, phosphorylated forms, myristoylated forms, palmitoylated forms, ribosylated forms, acetylated forms, etc. Modifications also include intra-molecular crosslinking and covalent attachment to various moieties such as lipids, flavin, biotin, polyethylene glycol or derivatives thereof, etc. In addition, modifications may also include cyclization, branching and cross-linking. Further, amino acids other than the conventional twenty amino acids encoded by genes may also be included in a polypeptide.",
+                        "An \u201cexpression vector\u201d or \u201cvector\u201d is a nucleic acid construct, generated recombinantly or synthetically, bearing a series of specified nucleic acid elements that enable transcription of a particular gene in a host cell. A vector is typically designed for transduction/transfection of one or more cell types. Typically, gene expression is placed under the control of certain regulatory elements, including constitutive or inducible promoters, tissue-preferred regulatory elements, and enhancers.",
+                        "A \u201chost cell\u201d is any prokaryotic or eukaryotic cell that contains either a cloning vector or an expression vector. This term also includes those prokaryotic or eukaryotic cells that have been genetically engineered to contain the cloned gene(s) in the chromosome or genome of the host cell. In certain embodiments, a \u201chost cell\u201d or \u201ctransformed cell\u201d refers to a cell into which (or into an ancestor of which) has been introduced, by means of recombinant DNA techniques, a polynucleotide molecule encoding (as used herein) a protein of the present invention.",
+                        "By \u201cfragment\u201d is meant a portion (e.g., at least about 5, 10, 25, 50, 100, 125, 150, 200, 250, 300, 350, 400, or 500 amino acids or nucleic acids) of a protein or nucleic acid molecule that is substantially identical to a reference protein or nucleic acid and retains at least one biological activity of the reference. In some embodiments the portion retains at least 50%, 75%, or 80%, or more preferably 90%, 95%, or even 99% of the biological activity of the reference protein or nucleic acid described herein.",
+                        "By \u201csubstantially identical\u201d is meant a protein or nucleic acid molecule exhibiting at least 50% identity to a reference amino acid sequence (for example, any one of the amino acid sequences described herein) or nucleic acid sequence (for example, any one of the nucleic acid sequences described herein). Preferably, such a sequence is at least 60%, more preferably 80% or 85%, and most preferably 90%, 95% or even 99% identical at the amino acid level or nucleic acid to the sequence used for comparison.",
+                        "Sequence identity is typically measured using sequence analysis software (for example, Sequence Analysis Software Package of the Genetics Computer Group, University of Wisconsin Biotechnology Center, 1710 University Avenue, Madison, Wis. 53705, BLAST, BESTFIT, GAP, or PILEUP/PRETTYBOX programs). Such software matches identical or similar sequences by assigning degrees of homology to various substitutions, deletions, and/or other modifications. Conservative substitutions typically include substitutions within the following groups: glycine, alanine; valine, isoleucine, leucine; aspartic acid, glutamic acid, asparagine, glutamine; serine, threonine; lysine, arginine; and phenylalanine, tyrosine. In an exemplary approach to determining the degree of identity, a BLAST program may be used, with a probability score between e\u22123 and e\u2212100 indicating a closely related sequence.",
+                        "The present invention is based, at least in part, on the discovery of an N-terminal tag sequence which aids in olfactory receptor trafficking. When expressed exogenously in mammalian cells, olfactory receptors (ORs) fail to traffic to the cell surface. This is a problem in the field as receptor ligands cannot be assayed unless the receptor is present on the cell surface. Either alone or in combination with chaperone proteins, this novel tag allows all ORs assayed thus far to reach the cell surface.",
+                        "The present inventors believe that this tag has never before been used on an OR or any other exogenously expressed receptor construct. This tag, either alone (for some ORs) or in combination with previously identified chaperones (for other ORs) is able to successfully traffic all ORs assayed to the cell surface. This tag is cleaved off of the protein during protein processing. Because ORs on the cell surface will then be used to assay function of the OR (to screen for potential ligands), adding an N-terminal tag in many cases is not ideal as it may alter the structure of the protein. However, this tag succeeds in getting the OR out of the endoplasmic reticulum and Golgi, but is cleaved off before the OR reaches the cell surface. This is a unique feature, and this allows scientists to assay a surface-expressed OR that no longer has the tag (and therefore the tag cannot interfere with or modify ligand binding).",
+                        "By allowing ORs to traffic to the cell surface, the present invention, in certain embodiments, greatly speeds the rate at which odorants and ligands are identified. This can help basic science researchers to identify ligands for receptors, and can also help fragrance/flavor companies as they seek to develop new perfumes, etc.",
+                        "Accordingly, in one aspect, the present invention provides nucleic acids/polynucleotide and amino acid/polypeptide sequences useful for improving/increasing protein expression on the cell surface. In several embodiments, the sequences are operably linked to the N-terminal end of the protein of interest. The nucleic acid sequence encoding the sequence tag and the protein comprise part of an expression vector. The protein is expressed with the N-terminal sequence tag. In certain embodiments, the sequences of the present invention can be used in conjunction with one or more chaperone or accessory proteins. In particular embodiments, the one or more chaperone/accessory proteins are encoded by the same vector or separate vectors. In other embodiments, the chaperone/accessory proteins are encoded the same vector that encodes the protein of interest.",
+                        "Using the compositions and methods of the present invention, numerous proteins can be expressed on the surface of a host cell. Such proteins can be receptor proteins. In several embodiments, the receptor proteins are olfactory receptors. Olfactory receptors can include, but are not limited to, Olfr78, Olfr51E2, mOREG (Olfr73), Olf145, Olfr691, Olfr52B2, Olfr99, Olfr693, Olfr805, Olfr1392, Olfr1393, Olfr90, Olfr545, Olfr985, and Olfr894.",
+                        "In a specific embodiment, the present invention provides the nucleotide sequence set forth in SEQ ID NO:1. In another embodiment, a nucleotide sequence encodes the amino acid sequence of SEQ ID NO:2. In yet another embodiment, the present invention provides an amino acid sequence set forth in SEQ ID NO:2.",
+                        "The present invention also provides an N-terminal amino acid sequence useful in trafficking proteins to the cell surface comprising SEQ ID NO:3. In certain embodiments, SEQ ID NO:3 can be referred to as the \u201cLucy tag.\u201d In another embodiment, the sequence further comprises a Flag tag. The Flag tag can comprise SEQ ID NO:6. In a specific embodiment, the sequence further comprises a Rho tag. The Rho tag can comprise SEQ ID NO:10. In a further embodiment, the sequence further comprises a Flag tag and a Rho tag. The sequence can further comprise a linker between the Flag tag and the Rho tag. The linker can be any linker that allows/promotes/increases surface expression of a protein of interest can include, for example, a 3 amino acid linker. In one embodiment, the linker comprises SEQ ID NO:8. In certain embodiments, the Lucy tag is upstream of the Flag tag, followed by the linker and the Rho tag.",
+                        "The present invention also provides an N-terminal amino acid sequence useful in trafficking proteins to the cell surface comprising an amino acid sequence substantially identical to SEQ ID NO:3. In one embodiment, the sequence has at least about 85% identity to SEQ ID NO:3. In other embodiments, the sequence has at least about 88%, at least about 90%, at least about 91%, at least about 92%, at least about 93%, at least about 94%, or at least about 95% identity to SEQ ID NO:3 (Lucy tag). Indeed, the present invention contemplates one or more amino acid substitutions to the Lucy tag. Such substitutions can be conservative substitutions. One of ordinary skill in the art can substitute amino acids based on similar side chain polarity (e.g., alanine and cysteine are both non-polar) and/or side chain charge (e.g., isoleucine and leucine are both neutral). In most embodiments, the Lucy tag retains its leucine rich nature.",
+                        "In another embodiment, the N-terminal amino acid sequence useful in trafficking proteins to the cell surface further comprises a Flag tag. In another embodiment, the sequence further comprises a Rho tag. In a further embodiment, the sequence further comprises a Flag tag and a Rho tag. In a specific embodiment, the sequence further comprises a linker between the Flag tag and the Rho tag.",
+                        "In another aspect, the present invention provides systems for increasing surface expression of proteins. In one embodiment, the system comprises: (a) a vector comprising (i) a nucleotide sequence described herein or (ii) a nucleotide sequence encoding an amino acid sequence described herein; and (b) a vector encoding a chaperone protein that aids in expression, signaling and/or trafficking of the protein to the cell surface. In particular embodiments, the protein is an olfactory receptor. The system can be used to clone in the sequence encoding a protein of interest into the vector of step (a). In specific embodiments, the chaperone protein is a receptor trafficking protein. The receptor trafficking protein can be selected from the group consisting of RTPL1, RTP1S, and RTP2. In another embodiment, the chaperone protein is Receptor Expressing Enhancing Protein (REEP). In yet another embodiment, the chaperone protein is \u03b2-adrenergic receptor. The can also be heat shock protein 70 homolog. In a specific embodiment, the chaperone protein is Resistance to Inhibitors of Cholinesterase 8 homolog B (Ric8b). The chaperone protein can also be Olfactory G-protein (G\u03b1olf). The system can utilize any combination of the foregoing including, but not limited to, RTP1S, Ric8b and G\u03b1olf. A vector can encode one or more chaperon proteins or multiple vectors can be used. In certain embodiments, the system further comprises a cell line. In a specific embodiment, the cell line may comprise HEK293T cells.",
+                        "The present invention further provides a system for increasing surface expression of proteins comprising: (a) a vector comprising a nucleotide sequence encoding SEQ ID NO:3; (b) a vector encoding RTP1S; (c) a vector encoding Ric8b; and (d) a vector encoding G\u03b1olf. It is understood that the nucleotide sequence encoding the protein of interest can be cloned into the vector of step (a). In particular embodiments, the Lucy tag is operably linked to the N-terminal end of the protein of interest. Alternatively, a vector can encode one or more chaperone/accessory proteins. Further, a single vector can be used to encode SEQ ID NO:3, the protein of interest and one or more chaperone/accessory proteins. In an alternative embodiment, the vector of step (a) further comprises a nucleotide sequence encoding a Flag tag. In another embodiment, the vector of step (a) further comprises a nucleotide sequence encoding Rho tag. In yet another embodiment, the vector of step (a) further comprises a nucleotide sequence encoding a Flag tag and a Rho tag. Further, the vector of step (a) can comprise a linker between the Flag tag and the Rho tag.",
+                        "The present invention also provides a system for increasing surface expression of proteins comprising: (a) a vector comprising a nucleotide sequence encoding SEQ ID NO:2; (b) a vector encoding RTP1S; (c) a vector encoding Ric8b; and (d) a vector encoding G\u03b1olf. The nucleotide sequence encoding the protein of interest can be cloned into the vector of step (a). In another embodiment, a system for increasing surface expression of olfactory receptors comprises: (a) a vector comprising a nucleotide sequence encoding SEQ ID NO:2; (b) a vector encoding RTP1S; (c) a vector encoding Ric8b; and (d) a vector encoding G\u03b1olf. The nucleotide sequence encoding the olfactory receptor can be cloned into the vector of step (a). In particular embodiments, the Lucy tag is operably linked to the N-terminal end of the protein of interest/olfactory receptor.",
+                        "Without further elaboration, it is believed that one skilled in the art, using the preceding description, can utilize the present invention to the fullest extent. The following examples are illustrative only, and not limiting of the remainder of the disclosure in any way whatsoever."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Examples",
+                            "paragraphs": [
+                                "The following examples are put forth so as to provide those of ordinary skill in the art with a complete disclosure and description of how the compounds, compositions, articles, devices, and/or methods described and claimed herein are made and evaluated, and are intended to be purely illustrative and are not intended to limit the scope of what the inventors regard as their invention. Efforts have been made to ensure accuracy with respect to numbers (e.g., amounts, temperature, etc.) but some errors and deviations should be accounted for herein. Unless indicated otherwise, parts are parts by weight, temperature is in degrees Celsius or is at ambient temperature, and pressure is at or near atmospheric. There are numerous variations and combinations of reaction conditions, e.g., component concentrations, desired solvents, solvent mixtures, temperatures, pressures and other reaction ranges and conditions that can be used to optimize the product purity and yield obtained from the described process. Only reasonable and routine experimentation will be required to optimize such process conditions.",
+                                "Olfactory receptors (ORs) are G protein-coupled receptors that detect odorants in the olfactory epithelium, and comprise the largest gene family in the genome. Identification of OR ligands typically requires OR surface expression in heterologous cells; however, ORs rarely traffic to the cell surface when exogenously expressed. Therefore, most ORs are orphan receptors with no known ligands. To date, studies have utilized non-cleavable rhodopsin (Rho) tags and/or chaperones (i.e., Receptor Transporting Protein, RTP1S, Ric8b and G\u03b1olf) to improve surface expression. However, even with these tools, many ORs still fail to reach the cell surface. We used a test set of fifteen ORs to examine the effect of a cleavable leucine-rich signal peptide sequence (Lucy tag) on OR surface expression in HEK293T cells. We report here that the addition of the Lucy tag to the N-terminus increases the number of ORs reaching the cell surface to 7 of the 15 ORs (as compared to 3/15 without Rho or Lucy tags). Moreover, when ORs tagged with both Lucy and Rho were co-expressed with previously reported chaperones (RTP1S, Ric8b and G\u03b1olf), we observed surface expression for all 15 receptors examined. In fact, two-thirds of Lucy-tagged ORs are able to reach the cell surface synergistically with chaperones even when the Rho tag is removed (10/15 ORs), allowing for the potential assessment of OR function with only an 8-amino acid Flag tag on the mature protein. As expected for a signal peptide, the Lucy tag was cleaved from the mature protein and did not alter OR-ligand binding and signaling. Our studies demonstrate that widespread surface expression of ORs can be achieved in HEK293T cells, providing promise for future large-scale deorphanization studies."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce examples",
+                                "describe experiment with fifteen ORs",
+                                "describe results of experiment",
+                                "describe benefits of Lucy tag for OR expression",
+                                "conclude examples"
+                            ],
+                            "num_characters": 2860,
+                            "outline_medium": [
+                                "describe experimental methods",
+                                "provide results of experiments"
+                            ],
+                            "outline_short": [
+                                "illustrate the use of the Lucy tag in increasing surface expression of olfactory receptors"
+                            ]
+                        },
+                        {
+                            "title": "Materials and Methods",
+                            "paragraphs": [
+                                "Reagents and Antibodies.",
+                                "Polyclonal (F7425) and M2 monoclonal (F1804) Flag antibodies and M2 Flag beads were purchased from Sigma (St. Louis, Mo.). The monoclonal HA antibody (3F10) was purchased from Roche (Indianapolis, Ind.) and the \u03b2-actin antibody was purchased from Abcam (Cambridge, Mass.). Alexa-conjugated fluorescent secondary antibodies were purchased from Invitrogen (Carlsbad, Calif.). HRP-conjugated secondary antibodies were purchased from Jackson ImmunoResearch Labs (West Grove, Pa.). The Dual-Luciferase Reporter Assay kit was purchased from Promega (Madison, Wis.). The odorants used in this study, isovaleric acid and eugenol, were also purchased from Sigma.",
+                                "OR Constructs and Cloning.",
+                                "The mOR-EG full-length construct, containing N-terminal Flag/Rho tags, was a kind gift from Kazushige Touhara (Univ. of Toyko) [22]. To clone the full-length sequences of the other ORs tested into the \u201cRho-OR\u201d vector, the sequence encoding mOR-EG was excised from its parent vector (pME18S) and PCR products containing the full-length sequence of other ORs of interest were ligated into the corresponding sites in this vector. ORs were ligated in frame with an upstream start site, such that they incorporated sequences encoding N-terminal Flag and Rho tags. Full-length human OR51E2 and OR52B2 were amplified by PCR from human DNA (using primers which added appropriate restriction sites), taking advantage of the fact that ORs do not contain introns. The constructs containing murine Olfr78 (MOR18-2), Olfr90 (MOR256-21), Olfr1392 (MOR256-25), Olfr1393 (MOR256-24) and mOR-EG have been previously described [31]. The other full-length ORs were amplified using primers which added appropriate restriction sites from either mouse genomic DNA or from kidney RNA after performing RT (Olfr145 (MOR161-6, K21), Olfr99 (MOR156-1), Olfr394 (MOR135-8), Olfr545 (MOR42-1, S50), Olfr691 (MOR31-6), Olfr693 (MOR283-8), Olfr805 (MOR110-4), and Olfr985 (MOR171-4)). All constructs used in this study contain a Flag tag for detection purposes but will be referenced based on their other N-terminal tags for simplicity. All constructs were sequenced to confirm identity.",
+                                "The Lucy tag (atgagaccccagatcctgctgctcctggccctgctgaccctaggcctggct) (SEQ ID NO:4) was added to the original (Rho-OR) vector for Olfr691 using overlap-extension PCR [32] to obtain a Lucy-Rho-OR. Subsequently, Olfr691 was excised from the Lucy-Rho vector, and the other ORs were excised from the original parent vector (Rho-OR) using the same restriction sites. The other ORs were then subcloned into the Lucy-Rho vector by ligation.",
+                                "The Rho tag was deleted from both the Rho-Olfr78 and Lucy-Rho-Olfr78 constructs to obtain the OR or Lucy-OR constructs using PCR-mediated deletion [33]. Subsequently, Olfr78 was excised from the vectors, and the other ORs were excised from the original parent vector (Rho-OR) using the same restriction sites and then subcloned into the OR and Lucy-OR vectors by ligation.",
+                                "To assay Lucy cleavage, an HA tag was added to the extreme N-terminus of the Lucy-Rho construct for Olfr691 using overlap-extension PCR [32], yielding an HA-Lucy-Flag-Rho-Olfr691 construct. As a control, an HA tag was also added to the extreme N-terminus of the Rho construct for Olfr691, yielding an HA-Flag-Rho-Olfr691 construct.",
+                                "Immunofluorescence.",
+                                "HEK293T cells were seeded onto 18-mm coverslips coated with poly-L-lysine and transfected with OR constructs with or without accessory proteins (Lipofectamine 2000, Invitrogen). Flag-tagged OR trafficking was assayed using surface immunocytochemistry, as previously described [5]. Briefly, live, non-permeabilized cells at 4\u00b0 C. were exposed to a rabbit polyclonal anti-Flag antibody in PBS with 0.1% BSA. Subsequently, cells were washed, fixed with 4% paraformaldehyde, permeabilized (0.3% Triton X-100) and then exposed to a mouse monoclonal (M2) anti-Flag antibody. As the external Flag epitope (surface Flag) epitope is \u2018blocked\u2019 after binding to the polyclonal Flag antibody, the monoclonal Flag antibody detects only the internal population of ORs. Control experiments where the cells were surface labeled with the polyclonal Flag antibody followed by another surface label with the monoclonal Flag antibody confirmed that 100% of the external Flag epitopes were bound by the polyclonal antibody, as no subsequent labeling was seen with the second surface label. Fluorescent secondary antibodies reported the localization of the polyclonal and monoclonal Flag-tags. Cells were visualized for epifluorescence using a Zeiss Axiophot microscope (Thornwood, N.Y.). Images were taken with a CoolSnap Digita Camera (Photometrics, Tucson, Ariz.) and IP Labs software (Biovision, Exton, Pa.). For some experiments, a total of 0.8 \u03bcg of accessory plasmids (pcDNA3-RTP1S (modified from RTP1L, kind gift from S. Firestein, Columbia Univ.), pCMV Sport6-Ric8b (purchased from Open Bioystems), and pcDNA3.1-G\u03b1olf (subcloned from a pGEMHE2 G\u03b1olf construct, kind gift from S. Firestein, Columbia Univ.)) or 0.8 \u03bcg of an empty pcDNA4.1 vector (OR alone) were co-transfected along with 0.8 \u03bcg of the OR. In FIGS. 1 and 2, the immunofluorescent images shown in each row (OR, Rho-OR, Lucy-OR and Lucy-Rho-OR with and without accessory proteins) were transfected and processed simultaneously and image exposures remained constant for each OR. Images represent representative fields of view from at least 4 independent experiments. To assess OR surface expression, the entirety of each coverslip was systematically scanned and scored based on detectable surface immunofluorescence. A \u2018+\u2019 was scored for those ORs whose surface expression was detectable in >90% of all fields of view while ORs received an \u2018*\u2019 if surface expression was found in <50% of all fields of view. A complete lack of detectable surface expression was scored as a \u2018\u2212\u2019. To quantitate cell surface expression using ImageJ (FIG. 7), the background was subtracted from the surface labeled Olfr691 images and the mean fluorescence intensity was measured. The mean intensity was normalized to the mean intensity of the corresponding binary nuclear image, to control for cell number.",
+                                "ORs were cloned and co-expressed in HEK293T cells without Rho or Lucy tags (OR), with a Rho tag (Rho-OR), with the Lucy tag (Lucy-OR) or with both the Lucy and Rho tags (Lucy-Rho-OR) along with (or without) the chaperone proteins, RTP15, Ric8b and G\u03b1olf. The cells were then surface labeled with a Flag antibody to detect membrane-associated OR. Images were taken for each OR at equal exposure for all conditions. To assess OR surface expression, the entirety of each coverslip was systematically scanned and scored based on detectable surface immunofluorescence. A \u2018+\u2019 was scored for those ORs whose surface expression was detectable in >90% of all fields of view while ORs received an \u2018*\u2019 if surface expression was found in <50% of all fields of view. A complete lack of detectable surface expression was scored as a \u2018\u2212\u2019. Results for 6 representative ORs are shown in FIG. 2 and the results for all ORs tested are summarized in Table 1.",
+                                "Enzyme-Linked Immunosorbent Assay (ELISA).",
+                                "ELISA measurements in HEK 293T cells transfected with various constructs were performed as previously described [5,34]. Wells for ELISA were assayed in quadruplicate. Briefly, transfected cells seeded in a 96 well plate were fixed and permeabilized. OR-expressing cells were probed with the polyclonal Flag antibody and detected with anti-rabbit HRP-conjugated secondary antibody. HRP levels were detected with 1-Step Ultra TMB (3,3\u2032,5,5\u2032-tetramethylbenzidine) (Thermo Scientific, Rockville, Ill.).",
+                                "Immunoprecipitation and Western Blotting.",
+                                "HEK293T cells in 35-mm dishes were transfected for 24 h with either the Rho-OR or Lucy-Rho-OR constructs and lysed in lysis buffer containing 1% NP-40, 150 mM NaCl, 50 mM Tris and 1 mM EDTA on ice for 30 min. The lysate was cleared by centrifugation at 16,000\u00d7g for 30 min at 4\u00b0 C. and 10% of the lysate was collected in Laemmli sample buffer for later analysis. Flag-tagged ORs were then immunoprecipitated from the remaining lysate using M2 monoclonal Flag beads. Both the immunoprecipitated fraction (B) and unbound fractions (UB) were lysed in Laemmli sample buffer and equal amounts were loaded on a gel along with the input lysate. Proteins were transferred to a nitrocellulose membrane and immunoblotted with the polyclonal Flag antibody using standard procedures. The input lysate membrane was stripped and reprobed for \u03b2-actin to ensure equal loading.",
+                                "Luciferase Assay.",
+                                "The luciferase assay was performed as previously described [5]. Briefly, ORs were transfected into HEK293T cells along with constructs encoding for CREB-dependent luciferase (Firefly) and a constitutively expressed luciferase (Renilla). OR activation leads to a rise in cAMP which drives an increase in Firefly luciferase expression. Firefly activity is normalized to the activity of the Renilla luciferase to control for variation in cell number and transfection efficiency. Data were collected using a FLUOstar Omega automated platereader (BMG LabTech, Cary, N.C.). For some experiments, RTP1S was also transfected.",
+                                "Statistical Analysis.",
+                                "One-way ANOVA analysis followed by the Student-Newman Keuls test was performed on the luciferase reporter assay to compare the doses of isovaleric acid (0.1-5 mM) or eugenol (100-300 \u03bcM) to the non-treated control (0 \u03bcM). As each condition was performed in triplicate, the analyses were done with an n=3, and P values \u22660.05 were deemed significant. One-way ANOVE followed by Student-Newman Keuls was also used to analyze the surface expression data in FIG. 7. A Student T-Test was performed on the ELISA to assess the significance of the increased protein expression (Control construct vs. Lucy construct for each OR, n=4 for each condition). P values \u22660.05 were deemed significant. In both the luciferase reporter assay and the ELISA, the error bars represent the SEM."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "list reagents and antibodies",
+                                "describe OR constructs and cloning",
+                                "detail immunofluorescence protocol",
+                                "describe ELISA protocol",
+                                "describe immunoprecipitation and Western blotting protocol",
+                                "describe luciferase assay protocol",
+                                "describe statistical analysis",
+                                "introduce OR cloning and co-expression with accessory proteins",
+                                "describe surface labeling with Flag antibody",
+                                "detail scoring system for surface expression",
+                                "describe transfection and processing of OR constructs",
+                                "introduce Lucy tag and its potential to aid in trafficking",
+                                "describe addition of Lucy tag to OR constructs",
+                                "detail co-transfection of OR constructs with accessory proteins",
+                                "describe immunoprecipitation and Western blotting to detect OR protein",
+                                "describe ELISA to detect total OR protein levels",
+                                "introduce luciferase reporter assay to test OR-ligand specificity",
+                                "describe response of Olfr691 to isovaleric acid",
+                                "describe response of mOREG to eugenol"
+                            ],
+                            "num_characters": 9981,
+                            "outline_medium": [
+                                "list reagents and antibodies",
+                                "describe OR constructs and cloning",
+                                "detail immunofluorescence protocol",
+                                "outline ELISA procedure",
+                                "describe immunoprecipitation and Western blotting",
+                                "detail luciferase assay",
+                                "outline statistical analysis",
+                                "describe surface labeling and scoring",
+                                "detail image acquisition and processing"
+                            ],
+                            "outline_short": [
+                                "list reagents and antibodies",
+                                "describe OR constructs and cloning",
+                                "outline immunofluorescence protocol",
+                                "summarize other methods (ELISA, immunoprecipitation, luciferase assay, statistical analysis)"
+                            ]
+                        },
+                        {
+                            "title": "Results",
+                            "paragraphs": [
+                                "Surface Expression of ORs with and without Rhodopsin Tags.",
+                                "Many ORs remain orphan receptors due to their inability to traffic in in vitro assays. To establish the trafficking ability of a varied group of ORs, we cloned 15 diverse ORs, the majority of which are orphan receptors which have not been previously reported to reach the cell surface. Live, non-permeabilized HEK 293T cells were surface labeled with a Flag antibody to detect membrane associated receptor and OR surface expression was scored based on detectable surface immunofluorescence. A \u2018+\u2019 was scored for those ORs whose surface expression was detectable in >90% of all fields of view, while ORs received an \u2018*\u2019 if surface expression was found in <50% of all fields of view (n=4). A complete lack of detectable surface expression was scored as a \u2018\u2212\u2019(Table 1). Examples of OR surface expression (or absence) can be found in FIG. 1, and the results for all ORs are summarized in Table 1 (Columns 1, 3, 5, and 7). ORs were cloned both with and without a 22-amino acid Rho tag (an N-terminal tag often used to aid in surface trafficking of ORs in vitro [15]). A small number of ORs were detected on the cell surface even in the absence of the Rho tag (Table 1, column 1). Surprisingly, the addition of the Rho tag (Table 1, column 3) had little effect on the number of ORs which reached the cell surface. Importantly, \u2018internal\u2019 Flag staining was consistently seen for every construct (as shown in FIG. 6 for Rho-Olfr691 and Rho-hOR52B2).",
+                                "A Cleavable Signal Peptide Enhances Olfactory Receptor Surface Expression.",
+                                "Recently, a 17-amino acid N-terminal signal peptide on Leucine Rich Repeat Containing 32 (LRRC32) was found to be required for proper cell surface expression of LRRC32 in regulatory T cells and HEK293T cells. This sequence (MRPQILLLLALLTLGLA) (SEQ ID NO:3) represents a classic cleavable signal peptide that serves to mediate the integration of proteins into the ER membrane [28]. We hypothesized that the addition of this cleavable peptide, known here as \u201cLucy\u201d for its leucine rich repeat regions, could also promote surface expression of olfactory receptors; the use of a cleavable signal sequence would be advantageous, as it would potentially aid in trafficking without adding additional amino acids to the mature OR protein. To determine whether the Lucy tag can promote OR surface trafficking, we added the Lucy sequence to the N-terminus of the 15 ORs and found that a total of 7 ORs were able to reach the cell surface (Table 1, column 5). To determine if the Lucy and Rho tags may have an additive effect, we assayed for the surface expression of ORs tagged with both Lucy and Rho and found that 8 ORs reached the cell surface (Table 1, column 7).",
+                                "Lucy Works Synergistically with RTP1s and Other Accessory Proteins to Promote OR Surface Expression.",
+                                "Previously, studies have found that the Rho tag works in synergism with RTP1S, Ric8b and G\u03b1olf to induce the greatest functional expression of ORs to date [18]. Therefore, we wondered if the Lucy tag could also work synergistically with these accessory proteins. To test for this, OR constructs (both with and without the Rho and Lucy tags) were co-transfected into cells along with RTP1S, Ric8b, G\u03b1olf and assayed for detectable surface expression. Examples can be seen in FIG. 2 and the results for all ORs are summarized in Table 1 (Columns 2, 4, 6, and 8). For the untagged ORs, co-expression of the accessory proteins allowed for surface expression of 5 ORs (Table 1, column 2). When Rho-tagged ORs were co-expressed with accessory proteins (currently the best practice for achieving OR surface expression [18]), 9 ORs were found on the cell surface (Table 1, column 4). When Lucy-tagged ORs were co-expressed with the accessory proteins, 10 ORs were found on the cell surface (Table 1, column 6). These data confirm that the Rho tag can work synergistically with accessory proteins to promote proper expression [18], and demonstrate that the same is true for the Lucy tag (Table 1). Importantly, when we used Lucy-Rho-tagged ORs together with known chaperones (RTP1S/Ric8b/G\u03b1olf), all 15 ORs were detected on the cell surface (Table 1, Column 8).",
+                                "It is worth noting that although the Rho tag, the Lucy tag, and OR chaperones all promote surface expression of some (but not all) ORs tested, they seem to promote expression of different populations of ORs. For example, Olfr99 and hOR52B2 require the Lucy tag for surface expression, but not the combination of accessory proteins or the Rho tag (Table 1). On the other hand, Olfr1393, 1392 and 90 are found on the cell surface only when co-expressed with RTP1S, Ric8b and G\u03b1olf and one of the N-terminal tags (Lucy or Rho). Still, other ORs (i.e., Olfr691) properly traffic with either the Lucy tag or the accessory proteins (but not the Rho tag alone). Ideally, one would prefer to achieve surface expression with the minimal amount of modification to the OR protein itself. Importantly, as a classic signal peptide, the Lucy tag contains a putative cleavage site. As such, it is not present on the mature protein which reaches the plasma membrane (as demonstrated below, FIG. 3). Using the cleavable Lucy tag (in the absence of the 22-amino acid Rho tag), we are able to achieve surface expression of 10/15 ORs tested (Table 1, Column 6). This will allow for functional characterization of these ORs with only an 8-amino acid flag tag on the plasma membrane protein (previously, only 5 ORs reached the cell surface with a Flag tag alone, Table 1, Column 2).",
+                                "Finally, although our goal was to achieve surface expression for ORs which did not previously reach the cell surface at all, we noted that some ORs appeared to have enhanced surface expression when both the Lucy tag and the accessory proteins were present (for example, Olfr78 and Olfr691 as seen in FIGS. 1 and 2). The increase in surface expression was confirmed when the fluorescent surface images were quantitated for Olfr691 (FIG. 7).",
+                                "The Lucy Tag is Cleaved.",
+                                "The Lucy tag is a putative cleavable signal peptide found on the N-terminus of LRRC32, and has been previously shown to be cleaved from the mature LRRC32 protein [28]. To determine whether the Lucy tag is also cleaved from the olfactory receptor constructs, we added an HA tag to the extreme N-terminus of both Rho-Olfr691 (FIG. 3A,B) and Lucy-Rho-Olfr691 (FIG. 3C,D). These constructs were then expressed in HEK293T cells along with RTP1S, which allows for Rho-tagged Olfr691 surface expression. The cells were stained in parallel with both an HA and Flag antibody to detect either the total OR population for both tags (FIG. 3A, C), or, on a separate coverslip, the cell surface membrane-associated receptor only for both tags (FIG. 3B, D). If the Lucy tag is cleaved, the HA tag should be removed (along with the Lucy tag) early on in the biosynthetic pathway and should not be detectable at the cell surface. When cells expressing HA-Flag-Rho-691 were stained, both Flag and HA antibodies could detect surface-associated (FIG. 3A) and intracellular receptor (FIG. 3B), indicating that both tags were present on the mature protein. However, when HA-Lucy-Flag-Rho-691 was surface labeled, the HA epitope was no longer present on the cell surface, although surface-associated receptor was still detectable via the Flag tag (FIG. 3D). In addition, while there was abundant intracellular Flag staining, there was only weak HA staining (FIG. 3C). Taken together, these results indicate that the Lucy tag acts as a functional, cleavable signal peptide when added to the N-terminus of ORs and is likely removed early on in the biosynthetic pathway.",
+                                "The Lucy Tag Increases Total Protein Levels of all ORs.",
+                                "When staining HEK293T cells expressing either Rho-ORs or Lucy-Rho-ORs, we noted that there was consistently more surface and intracellular Flag staining with the Lucy tagged constructs (FIG. 6). Since Lucy is an ER signal peptide, it is possible that it stabilizes the protein, and thus, increases expression. To examine total protein levels, we transfected HEK293T cells with either Rho-OR or Lucy-Rho-OR constructs, lysed the cells, and immunoprecipitated the OR using M2 Flag beads. An aliquot of the original lysate (input) and the immunoprecipitated ORs were then immunoblotted with a Flag antibody and a subset of ORs are shown in FIG. 4A. Typically, ORs are detected as a complex of high-molecular weight bands, likely due to aggregation, degradation and other modifications [8,16], as seen in the whole cell extract (FIG. 4A input); immunoprecipitation (FIG. 4A IP: Flag) allows for improved resolution. Both the high molecular weight bands and a prominent band at 39 kDa (the predicted size of tagged ORs) were completely recovered in the bound lysate (no bands were detected in the unbound fraction). In both the immunoprecipitate and input lysate, the presence of the Lucy tag appears to increase total OR protein expression (FIG. 4A). To ensure equal loading, the immunoblot was stripped and reprobed for \u03b2-actin. To quantitate the increase in OR protein, we performed an ELISA to detect total Flag protein levels. As seen in FIG. 4B, levels of Rho-ORs were elevated just slightly above background (nontransfected control; dashed line). However, when the Lucy tag was added, protein levels of all ORs tested were increased (1.5-2 fold increase n=4, P\u22660.005), suggesting that the Lucy tag may stabilize the expressed ORs (FIG. 4B).",
+                                "Lucy does not Alter OR-Ligand Specificity.",
+                                "OR surface expression in heterologous cell systems is a prerequisite for further functional studies, including OR deorphanization. Since Lucy is a cleaved signal peptide, it is not incorporated into the mature protein and thus, should not interfere with OR-ligand specificity or downstream signaling.",
+                                "However, some data have suggested that ORs require a \u201cco-receptor\u201d (RTP1S) to signal properly [19]. To determine whether Lucy-tagged ORs expressed on the cell surface can still respond to their ligands in the absence of RTP1S, and to ensure that the Lucy tag is not altering ligand binding or detection, we assayed for a functional ligand response using a luciferase reporter assay [5]. In this assay, OR-ligand binding leads to an increase in cAMP which drives the expression of a CRE luciferase. An increase in the Firefly (CRE-dependent luciferase):Renilla (constitutively activated luciferase) ratio indicates OR activation. Previously, it was determined that Olfr691 responds to isovaleric acid [16]. Here, Rho-Olfr691 and Lucy-Rho-Olfr691 were expressed in HEK293T cells with or without RTP1S and exposed to 0.1-5 mM isovaleric acid. By itself, Rho-Olfr691 was not significantly activated at any concentration (FIG. 5A), confirming the lack of detectable surface expression as seen by immunofluorescence (FIG. 1). When Rho-Olfr691 was co-expressed with RTP1S, we observed a dose-dependent increase in the Firefly:Renilla ratio (P\u22660.002 for all doses compared to 0 mM), confirming the previous findings (FIG. 5A). Lucy-Rho-Olfr691 also responded to isovaleric acid in a dose-dependent manner with and without the addition of RTP1S (P\u22660.007 for all doses compared to 0 mM) confirming that the surface expression observed in FIGS. 1 and 2 represents functional protein. As seen in FIG. 5A, we found that OR constructs with higher surface expression (whether due to the Lucy tag, Rho tag, or chaperones) tended to have a higher Firefly/Renilla ratio at baseline (non-treated, NT) in the luciferase reporter assay. This often corresponded to a higher ratio with stimulation as well, implying that the increased baseline may indicate a low level of basal signaling in the absence of ligand.",
+                                "To confirm that the Lucy tag does not interfere with OR-ligand binding and downstream signaling and that RTP1S is not required for proper activation, we also performed the luciferase reporter assay on mOREG (FIG. 5B). mOREG is a well-characterized OR known to respond to eugenol (hence its name). As mOREG is one of the ORs that reach the cell surface under every condition tested, we expressed the OR with and without the Lucy and Rho tags and assessed its response to eugenol. Every permeation of the mOREG construct resulted in a dose-dependent activation with eugenol (P\u22660.05, 300 \u03bcM vs. 0 \u03bcM), once again suggesting that the cleavable Lucy tag does not interfere with OR-ligand binding and that properly trafficked ORs likely do not require a co-receptor for function."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce surface expression of ORs with and without Rho tags",
+                                "describe scoring system for surface expression",
+                                "present results of surface expression for ORs with and without Rho tags",
+                                "introduce Lucy tag and its effect on OR surface expression",
+                                "present results of surface expression for ORs with Lucy tag",
+                                "describe synergistic effect of Lucy tag with accessory proteins",
+                                "present results of surface expression for ORs with Lucy tag and accessory proteins",
+                                "describe differences in ORs responding to Lucy tag and accessory proteins",
+                                "introduce co-expression of ORs with RTP1S, Ric8b, and G\u03b1olf",
+                                "present results of surface expression for ORs with Rho tag and accessory proteins",
+                                "present results of surface expression for ORs with Lucy tag and accessory proteins",
+                                "describe enhanced surface expression with Lucy tag and accessory proteins",
+                                "introduce quantitation of surface expression using ImageJ",
+                                "present results of quantitation of surface expression",
+                                "describe cleavage of Lucy tag",
+                                "introduce HA tag to detect Lucy tag cleavage",
+                                "present results of HA tag staining",
+                                "describe increase in total OR protein levels with Lucy tag",
+                                "introduce ELISA to detect total OR protein levels",
+                                "present results of ELISA",
+                                "describe luciferase reporter assay to test OR-ligand specificity",
+                                "present results of luciferase reporter assay for Olfr691",
+                                "present results of luciferase reporter assay for mOREG",
+                                "conclude that Lucy tag does not alter OR-ligand specificity"
+                            ],
+                            "num_characters": 12481,
+                            "outline_medium": [
+                                "summarize surface expression of ORs with and without Rho tags",
+                                "describe effect of Lucy tag on OR surface expression",
+                                "detail synergistic effect of Lucy tag and accessory proteins",
+                                "summarize surface expression of ORs with Lucy and Rho tags",
+                                "describe cleavage of Lucy tag",
+                                "show increased total protein levels with Lucy tag",
+                                "quantify increase in OR protein with Lucy tag",
+                                "demonstrate Lucy tag does not alter OR-ligand specificity",
+                                "show functional response of Lucy-Rho-Olfr691 to isovaleric acid",
+                                "show functional response of Lucy-Rho-mOREG to eugenol",
+                                "summarize surface expression of ORs with different tags and chaperones",
+                                "discuss implications of results"
+                            ],
+                            "outline_short": [
+                                "summarize surface expression of ORs with and without Rho tags",
+                                "describe effect of Lucy tag on OR surface expression",
+                                "show synergy between Lucy tag and accessory proteins",
+                                "demonstrate cleavage of Lucy tag",
+                                "show increase in total protein levels with Lucy tag",
+                                "confirm Lucy tag does not alter OR-ligand specificity"
+                            ]
+                        },
+                        {
+                            "title": "Discussion",
+                            "paragraphs": [
+                                "The limiting factor in OR deorphanization has been the ability\u2014or, often, the inability\u2014to heterologously express ORs on the cell surface. Here, we report that the addition of a leucine rich cleavable signal peptide (Lucy tag) onto the N-terminus of ORs significantly improves detectable surface expression, as well as total protein expression. When combined with RTP1S, Ric8b and G\u03b1olf, we found that all 15 of the Lucy-ORs that we examined successfully trafficked to the surface, providing promise for future deorphanization and other functional studies.",
+                                "What is the mechanism of the Lucy tag? Cleavable signal peptides are natively found on secreted proteins and subsets of TMD proteins (including some GPCRs) [25,26]. Recognition of these cleavable peptides at the extreme N-terminus of the protein by the Signal Recognition Particle (SRP) promotes co-translational ER translocation and ensures that the complete mature protein is translated in the lumen of the ER (as opposed to the cytosol) [25,26]. When TMD proteins do not contain a cleavable signal peptide, one of the TMDs (usually the first) takes its place and acts as a signal anchor sequence. Therefore, a signal peptide at the N-terminus of proteins is not required for proper ER translocation and only 5-10% of GPCRs possess a classic signal peptide [26]. Typically, receptors that utilize a signal peptide have long N-terminal tails that can rapidly fold, preventing post-translational translocation across the ER membrane [26]. ORs do not have unusually long N-terminal tails, and it is possible that the co-translational ER entry via the Lucy tag helps to stabilize the receptor or prevents misfolding. In support of this, our preliminary studies showed that mRNA levels of Lucy and non-Lucy-tagged constructs were similar, despite the fact that total protein expression for all ORs was enhanced by the addition of the Lucy tag (FIG. 4). However, in addition to increasing total protein levels, the Lucy tag by itself promoted surface expression of some ORs (FIG. 1). This indicates that the Lucy tag has roles beyond protein translation and may be promoting some of the later steps of protein trafficking or ER exit. ORs do not natively possess signal peptides, but they are not retained in the ER when natively expressed in the olfactory epithelium (OE); thus, the Lucy tag must be helping ORs to overcome ER processing problems that are unique to heterologous expression. Although the Lucy tag does increase total expression, this increase does not appear to account for the increase in surface expression. In preliminary studies, we found that simply transfecting more of a Rho-tagged OR (in \u03bcg), did not correlate with increased surface expression. Therefore, the increase in both total and surface expression for Lucy-tagged ORs is unique to the tag itself.",
+                                "It should be noted that the Lucy tag may be dependent on the immediate upstream sequence of the mature protein. Mutational studies have shown that signal peptides and their adjacent N-terminal sequences act as a \u201cfunctional unit\u201d and deletion of this upstream domain negatively affects ER translocation [26,35]. As our Lucy-tagged constructs contained a Flag tag (for detection purposes) following the cleavable peptide, the presence of this tag may be required for proper function and cleavage. Preliminary studies found that deletion of the Flag tag from a Lucy-Flag-OR construct prevented the OR from responding to its ligand, suggesting impaired surface expression (without the Flag tag, surface expression could not be assayed independently in this construct). It appears, then, that like other N-terminal sequences [26,35], the \u2018context\u2019 of the Lucy tag may be important for its function.",
+                                "Multiple Blockage Steps for OR Trafficking.",
+                                "Studies have shown that ORs are retained in the ER when expressed in heterologous cells where they undergo ER-associated degradation [8,13,36,37]. However, as demonstrated by Wu, et al [19], the ER-Golgi transition step is not the only point of retention. This is evidenced in our work by the fact that, under the same conditions, some ORs are more efficiently trafficked to the cell surface than others, despite taking what is presumed to be a common route to the plasma membrane. For example, in this study Olfr78, hOR51E2 and mOREG trafficked to the cell surface even in the absence of the Rho tag. While the surface expression was relatively weak, mOREG does respond its ligand in the absence of the Rho tag (FIG. 5B). Others, however, required much more assistance to make it to the plasma membrane. Olfr545, Olfr985 and Olfr394 required both the Lucy and Rho tags as well as the co-transfection of RTP1S, Ric8b and G\u03b1olf for proper surface expression. What can account for these differences? It is likely that some ORs are retained at multiple cellular checkpoints and each of these tags and accessory proteins function at one (or more than one) of these points. Further studies are clearly required to fully understand OR trafficking and the Lucy tag could prove to be a valuable tool to answer these questions.",
+                                "What is the Function of RTP1S?.",
+                                "The current \u201cgold standard\u201d in OR trafficking was found to be the combination of a Rho tag with RTP1S, Ric8b and G\u03b1olf [18]. Of these three accessory proteins, RTP1S is thought to be the most crucial as it can promote OR surface expression even in the absence of the other two compounds for some ORs [5,15,16,22-24]. Indeed, we have found that RTP1S is often required for cell surface expression. By contrast, G\u03b1olf is typically not required, and Ric8b is only occasionally necessary. RTP1S is natively expressed in the olfactory epithelium, and thus, it has been speculated that it is necessary for OR expression in both heterologous cells as well as the OE [16,18]. Recently, Wu et al performed a series of mutations and substitutions to RTP1S in order to elucidate the mechanism(s) of this important protein [19]. From this study, it was concluded that RTP1S and olfactory receptors (in this case Olfr599) interact throughout the biosynthetic pathway, and that individual domains of RTP are required for different stages of OR trafficking. It was also speculated that RTP1S may function as a co-receptor as the localization of both the OR and RTP to lipid raft domains was required for OR activation [19]. Indeed, much of our data is consistent with this study. Many of the ORs that we examined required RTP1S (with Ric8b and G\u03b1olf) for proper surface expression (i.e., Olfr693, Olfr1392, Olfr1393, Olfr90 and Olfr545). However, we also found that Olfr78, hOR51E2 and mOREG (FIG. 5B) were able to respond to their ligand even in the absence of RTP1S. To ensure that RTP is not natively expressed in HEK 293T cells, we performed RT-PCR using primers that could detect both the long and short form of RTP but did not detect any band in HEK293T cells (a positive control performed simultaneously gave a band of the expected size; FIG. S3). In addition, Olfr691 was functionally expressed on the cell surface (with the Lucy tag) in the absence of RTP1S, and retained a normal ligand response (FIG. 5A). While RTP1S is clearly playing important roles in the early trafficking steps and folding of olfactory receptors, it is not required for OR activation or surface expression and therefore is not an obligate co-receptor. Use of the Lucy tag can help shed new light on the functions of RTP1S, as OR function can now be assayed both with and without RTP1S (FIG. 5).",
+                                "Potential for Deorphanization.",
+                                "OR deorphanization has been greatly hampered by the inability to functionally express ORs in heterologous cell systems. To date, the addition of N-terminal tags or the co-expression of chaperone proteins has been crucial for surface expression of many receptors, but has not allowed for widespread OR deorphanization. In this study, we examined the trafficking of 15 diverse ORs with the Lucy tag, many of which are orphan receptors. Because the Lucy tag is cleaved prior to surface expression, this tag does not interfere with or alter ligand binding. In fact, for many ORs, the addition of the cleavable Lucy tag allowed surface expression even in the absence of the 22-amino acid Rho tag (FIGS. 1 and 2), allowing for the potential of OR deorphanization with only an 8 amino acid Flag tag on the mature protein. The identification of ligands for ORs is becoming increasingly important and has implications beyond olfaction. It has recently been demonstrated that ORs are expressed in multiple tissues outside of the OE [31,38-43], where they play functional roles in processes as varied as muscle cell migration, renal function, and sperm chemotaxis. In order to understand the roles that ORs are playing both in the OE and in other tissues, ligand assignment is imperative. The addition of the Lucy tag represents a distinct improvement in the trafficking of heterologously expressed ORs which we hope will lead to future wide scale deorphanization studies."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce OR deorphanization limitation",
+                                "report Lucy tag improvement",
+                                "explain cleavable signal peptide mechanism",
+                                "describe SRP recognition",
+                                "discuss TMD protein ER translocation",
+                                "motivate Lucy tag for OR stabilization",
+                                "show mRNA level comparison",
+                                "highlight Lucy tag role in protein trafficking",
+                                "discuss Flag tag requirement",
+                                "introduce multiple blockage steps for OR trafficking",
+                                "describe ER-Golgi transition step",
+                                "explain RTP1S function",
+                                "discuss RTP1S interaction with OR",
+                                "show RTP1S requirement for surface expression",
+                                "highlight potential for OR deorphanization",
+                                "discuss importance of ligand assignment",
+                                "conclude Lucy tag improvement for OR trafficking"
+                            ],
+                            "num_characters": 8987,
+                            "outline_medium": [
+                                "introduce OR deorphanization limitation",
+                                "describe Lucy tag mechanism",
+                                "explain signal peptide function",
+                                "discuss OR trafficking blockage steps",
+                                "describe RTP1S function",
+                                "summarize RTP1S interaction with ORs",
+                                "discuss potential for OR deorphanization",
+                                "highlight importance of ligand assignment"
+                            ],
+                            "outline_short": [
+                                "introduce OR deorphanization limitation",
+                                "explain Lucy tag mechanism",
+                                "discuss multiple blockage steps for OR trafficking",
+                                "motivate potential for deorphanization"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce terminology and definitions",
+                        "define nucleic acid and polynucleotide",
+                        "describe isolated nucleic acid molecule",
+                        "define operably linked",
+                        "describe expression vector",
+                        "define host cell",
+                        "describe fragment",
+                        "define substantially identical",
+                        "describe sequence identity",
+                        "introduce olfactory receptor trafficking problem",
+                        "describe N-terminal tag sequence",
+                        "describe tag's ability to aid in trafficking",
+                        "describe tag's cleavage during protein processing",
+                        "describe benefits of tag for ligand screening",
+                        "provide nucleic acid and amino acid sequences",
+                        "describe use of sequences for protein expression",
+                        "describe use of sequences with chaperone proteins",
+                        "provide specific embodiments of sequences",
+                        "describe Lucy tag",
+                        "describe Flag tag",
+                        "describe Rho tag",
+                        "describe linker between tags",
+                        "provide specific embodiments of Lucy tag",
+                        "describe use of Lucy tag with chaperone proteins",
+                        "describe system for increasing surface expression",
+                        "describe vector encoding Lucy tag",
+                        "describe vector encoding chaperone protein",
+                        "describe cell line for system",
+                        "provide specific embodiment of system",
+                        "describe use of system for olfactory receptors",
+                        "describe benefits of system for ligand screening",
+                        "introduce examples",
+                        "describe olfactory receptors and their function",
+                        "describe problem of OR surface expression",
+                        "describe use of Lucy tag and chaperones for OR expression",
+                        "describe results of OR expression experiments",
+                        "describe benefits of Lucy tag for OR expression",
+                        "describe potential for large-scale deorphanization studies",
+                        "describe cleavage of Lucy tag from mature protein",
+                        "describe lack of effect of Lucy tag on OR-ligand binding",
+                        "describe significance of results for OR research",
+                        "conclude description of invention"
+                    ],
+                    "num_characters": 21174,
+                    "outline_medium": [
+                        "define scope of invention",
+                        "describe terminology used",
+                        "define isolated nucleic acid molecule",
+                        "define operably linked",
+                        "describe expression vector",
+                        "define host cell",
+                        "describe fragment",
+                        "define substantially identical",
+                        "describe sequence identity",
+                        "introduce olfactory receptor trafficking problem",
+                        "describe novel N-terminal tag sequence",
+                        "describe tag's ability to traffic ORs to cell surface",
+                        "describe tag's cleavage during protein processing",
+                        "describe benefits of invention for ligand identification",
+                        "provide nucleic acid and amino acid sequences",
+                        "describe use of sequences in expression vectors",
+                        "describe use of chaperone/accessory proteins",
+                        "provide specific embodiments of invention",
+                        "describe system for increasing surface expression of proteins",
+                        "provide specific system embodiments",
+                        "describe examples of invention"
+                    ],
+                    "outline_short": [
+                        "define terms used in the invention",
+                        "describe nucleic acid and polynucleotide molecules",
+                        "define amino acid and polypeptide molecules",
+                        "describe expression vectors and host cells",
+                        "introduce the Lucy tag sequence for olfactory receptor trafficking",
+                        "describe the benefits of the Lucy tag in increasing protein expression on the cell surface",
+                        "provide specific embodiments of the invention, including nucleotide and amino acid sequences",
+                        "describe systems for increasing surface expression of proteins, including vectors and chaperone proteins",
+                        "provide examples of the invention, including the use of the Lucy tag with olfactory receptors",
+                        "summarize the advantages of the invention in deorphanization studies"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. The nucleotide sequence set forth in SEQ ID NO:1.",
+        "2. A nucleotide sequence encoding the amino acid sequence of SEQ ID NO:2.",
+        "3. The amino acid sequence set forth in SEQ ID NO:2.",
+        "4. An N-terminal amino acid sequence useful in trafficking proteins to the cell surface comprising SEQ ID NO:3.",
+        "5. The sequence of claim 4, further comprising a Flag tag.",
+        "6. The sequence of claim 4, further comprising a Rho tag.",
+        "7. The sequence of claim 5, further comprising a Rho tag.",
+        "8. The sequence of claim 7, further comprising a linker between the Flag tag and the Rho tag.",
+        "9. An N-terminal amino acid sequence useful in trafficking proteins to the cell surface comprising an amino acid sequence having at least 90% identity to SEQ ID NO:3.",
+        "10. The sequence of claim 9, further comprising a Flag tag.",
+        "11. The sequence of claim 9, further comprising a Rho tag.",
+        "12. The sequence of claim 10, further comprising a Rho tag.",
+        "13. The sequence of claim 12, further comprising a linker between the Flag tag and the Rho tag.",
+        "14. A system for increasing surface expression of proteins comprising:\na. a vector comprising the nucleotide sequence of claim 2; and\nb. a vector encoding a chaperone protein that aids in expression, signaling and/or trafficking of the protein to the cell surface.",
+        "15. The system of claim 14, wherein the protein is an olfactory receptor.",
+        "16. The system of claim 14, wherein the chaperone protein is a receptor trafficking protein.",
+        "17. The system of claim 16, wherein the receptor trafficking protein is selected from the group consisting of RTPL1, RTP1S, and RTP2.",
+        "18. The system of claim 14, wherein the chaperone protein is Receptor Expressing Enhancing Protein (REEP).",
+        "19. The system of claim 14, wherein the chaperone protein is \u03b2-adrenergic receptor.",
+        "20. The system of claim 14, wherein the chaperone protein is heat shock protein 70 homolog.",
+        "21. The system of claim 14, wherein the chaperone protein is Resistance to Inhibitors of Cholinesterase 8 homolog B (Ric8b).",
+        "22. The system of claim 14, wherein the chaperone protein is Olfactory G-protein (G\u03b1olf).",
+        "23. The system of claim 14, further comprising a cell line.",
+        "24. A system for increasing surface expression of proteins comprising:\na. a vector comprising a nucleotide sequence encoding SEQ ID NO:3;\nb. a vector encoding RTP1S;\nc. a vector encoding Ric8b; and\nd. a vector encoding G\u03b1olf.",
+        "25. The system of claim 24, wherein the vector of step (a) further comprises a nucleotide sequence encoding a Flag tag.",
+        "26. The system of claim 24, wherein the vector of step (a) further comprises a nucleotide sequence encoding Rho tag.",
+        "27. The system of claim 25, wherein the vector of step (a) further comprises a nucleotide sequence encoding Rho tag.",
+        "28. The system of claim 27, wherein the vector of step (a) further comprises a linker between the Flag tag and the Rho tag.",
+        "29. A system for increasing surface expression of proteins comprising:\na. a vector comprising a nucleotide sequence encoding SEQ ID NO:2;\nb. a vector encoding RTP1S;\nc. a vector encoding Ric8b; and\nd. a vector encoding G\u03b1olf.",
+        "30. A system for increasing surface expression of olfactory receptors comprising:\na. a vector comprising a nucleotide sequence encoding SEQ ID NO:2;\nb. a vector encoding RTP1S;\nc. a vector encoding Ric8b; and\nd. a vector encoding G\u03b1olf.",
+        "31. A system for increasing surface expression of proteins comprising:\na. a vector comprising a nucleotide sequence encoding the sequence of claim 4; and\nb. a vector encoding a chaperone protein that aids in expression, signaling and/or trafficking of the protein to the cell surface."
+    ]
+}

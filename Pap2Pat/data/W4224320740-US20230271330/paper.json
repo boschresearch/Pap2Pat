@@ -1,0 +1,209 @@
+{
+    "id": "https://semopenalex.org/work/W4224320740",
+    "authors": [
+        "Antonio Torralba",
+        "Dieter Fox",
+        "Tucker Hermans",
+        "Balakumar Sundaralingam",
+        "Chris Paxton",
+        "Valts Blukis",
+        "Jacob Andreas",
+        "Pratyusha Sharma"
+    ],
+    "title": "Correcting Robot Plans with Natural Language Feedback",
+    "date": "2022-04-11",
+    "abstract": "When humans design cost or goal specifications for robots, they often produce specifications that are ambiguous, underspecified, or beyond planners' ability to solve. In these cases, corrections provide a valuable tool for human-in-the-loop robot control. Corrections might take the form of new goal specifications, new constraints (e.g. to avoid specific objects), or hints for planning algorithms (e.g. to visit specific waypoints). Existing correction methods (e.g. using a joystick or direct manipulation of an end effector) require full teleoperation or real-time interaction. In this paper, we explore natural language as an expressive and flexible tool for robot correction. We describe how to map from natural language sentences to transformations of cost functions. We show that these transformations enable users to correct goals, update robot motions to accommodate additional user preferences, and recover from planning errors. These corrections can be leveraged to get 81% and 93% success rates on tasks where the original planner failed, with either one or two language corrections. Our method makes it possible to compose multiple constraints and generalizes to unseen scenes, objects, and sentences in simulated environments and real-world environments.",
+    "sections": [
+        {
+            "title": "II. PRELIMINARIES",
+            "paragraphs": [
+                "Given an environment E, we study planning problems formalized as Markov decision processes defined by the tuple (S, A, \u2126, T ). Where S is the set of robot states, A is the set of possible actions, \u2126 is the space of external observations, and T : S \u00d7 A \u00d7 S \u2192 [0, 1] is the stochastic transition function. In the case of the robot in Figure 2, S is a tuple of all possible positions, velocities and accelerations the robot can achieve represented as (q, q, q). The action space A = {up,down,left,right}. Its \u2126 is the observed cost of states k-steps around the robot's current s. The tuple (s, a, o, T ) describes the robot's state s \u2208 S, action taken a \u2208 A, observations from the environment o \u2208 \u2126 and the task T that the robot needs to complete. For a T , an associated cost map represented as C T may be specified by a user that wants a planner to perform T . C T is of the form,",
+                "and is a user specified costmap which can be probed for different s \u2208 S. For example, for reaching a goal, g in Figure 1 the costmap is a function that at every state on the map s returns the Euclidean distance (s -g) 2 . In addition to the C T , there is also a base cost C B 1 that helps the robot avoid its limits (collision avoidance, joint limits). Conditioned on o the robot takes an a sequentially to minimize,",
+                "The planning routine P then optimizes the robot's cumulative cost C R and outputs an estimate of the best action that can be taken in the given state s. The robot then takes the action a and ends up in a new state dictated by the dynamics of the robot T and the system and the processes is repeated. It is via this process that robot unrolls a trajectory, \u03c4 , to complete different tasks. More formally, P is,",
+                "With increasing complexity of the environment and without assuming access to a model of the world, it is challenging to specify a C T that accurately reflects the task. An optimal cost function would be one that reflects the intended task, capturing the true cost-to-go. For example, the cost function corresponding to navigating to a goal could be approximated as the euclidean distance to goal. However, in many environments, as shown in Fig 1, greedily optimizing this objective will result in only a locally optimal solution that is completely misaligned with the human's intent. Misalignment due to misspecified goals and insufficient constraints can cause a plan failure. This problem of misalignment or a difference in the cost in the mind of the human C H and the robot C R is referred 1 Detailed specifications of C B can be found in the appendix A to as the value alignment problem [42]. Feedback from the human can be used to minimize the differences between C H and C R . The human can generate a feedback based on their observation of the E, represented as o h and other variables of the E they have access to."
+            ],
+            "subsections": [
+                {
+                    "title": "III. APPROACH",
+                    "paragraphs": [
+                        "To minimize the gap between C H and C R , we propose the use of feedback from a user in the form of natural language corrections to update C R . Below we outline our approach."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "A. Our Method",
+                    "paragraphs": [
+                        "At any given point of time t, the user can issue feedback in the form of a natural language string, denoted as L. We assume that the user has access to o h , s, and information about the task while generating feedback. We learn a generative model that generates a costmap over all states associated with L conditioned on L, s the state of the robot, and o h . This cost is then composed with C R (C * R = C R + C L ) to generate an updated cost for the robot. P then solves the optimization informed by the updated objective C * R . We factor the language-based cost C L into functions that generate a continuous cost map C and a binary mask over the cost M. We combine them using element-wise multiplication, C L = C * M. Where the functions have the form,",
+                        "C for a given L maps to the cost for every s \u2208 S. M maps to a binary mask that is used over C. In the case of a goal-directed L, such as go to the left of the bottle, this is a guiding path to the goal. Whereas in the case of a constraints such as, go slower, this is a unit mask i.e. no-states are masked. This is done in-order to use a cue from the mask to help distinguish between changes in goals versus adding constraints to existing goals better. In theory, the cost-map itself should be able to direct a robot to the goal but we see that learning such a decomposition worked better in practice, specially in longhorizon tasks as shown in Appendix C.",
+                        "C and M are learnt using datasets containing data of one or both types. Dataset containing trajectories paired with L,",
+                        "Using D demos and D cmap we generate a unified final dataset.",
+                        "1) Generating Ground-truth C and M: The C associated with trajectories \u03c4 in D demos is generated by mapping every s on the trajectory to its distance to the goal measured along the trajectory and every s outside the trajectory is mapped to a fixed high cost. This kind of a mapping is representative of the fact that moving along the trajectory is definitively indicative of a decrease in cost for the specified L. For tasks where cost maps are specified, for instance stay away from X, the cost maps available are used directly. The process of generating ground truth masks for training is fairly straight forward. For datapoints in D demos , the binary mask is 1 for states along \u03c4 and is zero everywhere else. For datapoints in D cmap the",
+                        "1 , s 1 ), ...} where c and m correspond to the cost map and binary mask corresponding to the datapoint.",
+                        "2) Objective: C and M are learnt on the dataset D via maximum likelihood estimation. We initialize the parameters for models that learn C and M with parameters \u03b8 and \u03b7. The models for C and M condition on L, s, and o h . The probability of generating the correct C and M can be decomposed as follows.",
+                        "To update model parameters the optimization objective is,",
+                        "For datapoints from D demos we only penalize the cost prediction model for s on the trajectory whereas for datapoints from D cmap we penalize the model for the entire costmap. This is because, for demonstrations we are only confident about costs along the trajectory. This partial supervision used while training allows the model to extrapolate and make guesses of the costs everywhere else in the map and as a result the cost maps generated are smoother. At inference, to obtain the C and M corresponding to a new L, o h and s,",
+                        "3) Interfacing C L with the P: We explore two corrections types that can be encoded by our C L ; constraint addition and goal specification. In the case of constraint addition, the constraints are added to the P permanently (e.g., going faster, slower, staying away from an object). While optimizing, we keep track of the constraints in a set C LC to enable accounting over multiple constraints. In the case of goal specification, there are two cases in which a goal may be specified, first, in the absence of any previous goal and second, as a way to correct the model by introducing intermediate goals. In the first case, there is no existing goal cost and C L becomes the only active goal cost alongside the other constraints. In the second mode we deactivate the task cost C T and wait until C L is within a threshold before activating the original task cost C T back again. This temporary activation mode is used where L specifies an intermediate goal directive. The M along with the presence or absence of an existing C T is indicative of the mode of correction. A L with a M == 1 is always a constraint and that with a M = 1 is a goal directive. We interface our C L with an optimization based controller [7] to generate commands for the robot as shown in Algorithm 1. Architecture fig."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "CLIP Sentence Encoder CLIP Vision Transformer",
+                            "paragraphs": [
+                                "Fig. 3: Architecture: The architecture of the language parametrized cost correction module consists of two streams . The CLIP stream takes as input the natural language feedback as well as an image of the environment and the U-Net stream encodes the image of the environment. The output of this model is used to map to the cost associated with the language instruction. This could be learnt using specified costs corresponding to specific instructions or via estimating the cost from demonstrations. More details in section section III  [32] model with the Vision Transformer(ViT) [13] visual module. It takes as input the language correction L, robot state s and the RGB representation o h . The state of the robot is encoded using the location of it's end effector on a spatial map of the RGB o h . We use the 512 dimensional visual embedding output from ViT along with the 512 dimension language embedding output from the languagetransformer. The image is encoded using a U-Net architecture with skip connections [34]. It encodes the RGB image o h and robot state s of the robot and generates the output frames corresponding to the position cost map and velocity cost map each parametrized as 2D map in R |S|2 . The visual 2 |S| denotes the dimension of the S and language embedding from CLIP are concatenated with the embedding of the encoder before passing the embedding through the deconvolution layers to generate the cost map. The weights of the CLIP language transformer and ViT are frozen and the training optimizes the weights of the U-Net only. The model outputs two cost maps: 1) a position map and 2) a velocity map. 3"
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "IV. EXPERIMENTAL PROTOCOL",
+                                    "paragraphs": [
+                                        "For D demos , we generate a dataset containing 100 environments. Each environment contained two objects from a set of four YCB objects [11]: a Cheeze-it box, a bleach bottle, a can of spam and a bottle of mustard. The position of each object is sampled uniformly within the bounds of the environment. We sample object orientation from one of four equally-spaced options. We render each environment with the NVIDIA Scene Imaging Interface (NViSII) [26]. Images are top-down and are of size (2048, 2048) pixels. For every environment, we uniformly sample 10 different collision-free start positions. We choose goal positions to be 20 pixels offset from the midpoint of object edges where the offset is away from the object, and generate corresponding templated language instructions. This templated language is sampled from diverse referring expressions and object descriptions, as shown in Fig. 4.",
+                                        "We use STORM [7] as a planner which minimizes a Euclidean distance cost to generate trajectories from start to goal position. However, as this is not a global optimizer, it can get caught in local minima. Trajectories that successfully connect these positions are categorized as successful; failed trajectories are stored separately as a hard set for evaluation. In our setting, the planner failed 6.4% of the time. More details on the planner is described in appendix A. We then divided the environments with successful trajectories into training, validation, and test sets, so that a specific object configuration will only appear in one split. For D cmap , the cost maps are generated in the following way. For velocity speed-up, slow down, and when no constraints are given over velocity the velocity costmap outputs 0, 1, or 2 respectively, corresponding to all s \u2208 S. For instructions of avoiding objects the cost map generated is -(s -c) 2 where c is the location of the centre of the object to be stayed away from. All cost values are re-scaled between [0, 255].",
+                                        "Evaluation and metrics. We consider a trial a success when the robot reaches within 20 pixels of the goal position. We evaluate our method on two platforms: 1) using the planner on the test set in simulation and 2) using the planner on a real Franka Panda robot in cluttered environments that also contains unseen objects to study generalization."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "V. RESULTS",
+                                    "paragraphs": [
+                                        "We will first discuss the effect of the different components in our model, followed by the performance of our method in Section. V-A. We will then discuss the effectiveness of different types of feedback in Sec. V-C and our generalization experiments in Sec. V-D. We also show failures in Sec. V-E."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "A. Goal Reaching with Language",
+                    "paragraphs": [
+                        "First, we test how our method can be leveraged to reach positions given directly as (x,y) to the planner, when the robot is stuck in a local minimum. We evaluate on the test dataset where the planner was 100% successful and also on the hard set where the planner had 0% success. Visualizations of some of these hard environments can be found in appendix B. With just a single language correction (Single-correction) we can improve success rate from 0% to 81% in the hard-set of problems, which also brings our success rate to 98% on the full test set. With another language correction (Two-corrections, we get our success rate to 93% and 99% in the hard and test sets respectively. In this way, we see that minimal human input can bring the overall reliability of the system to an impressive level.",
+                        "We additionally tested our network's ability to understand language by starting the robot at the initial position and specifying the goal solely via the language string (Goalas-Language). In this setting, we do not give the planner access to the desired (x,y) position and as such the success rate drops to 65% on the full set. However, we see that in problems where the original planner failed to reach with access to (x,y) (hard set), we see that our network is able to succeed in 29% of the set without requiring access to (x,y). Through the results in  "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "B. Ablation Experiments",
+                    "paragraphs": [
+                        "To evaluate the effect of different components of our model, we run our method in simulation with our solvable test set of situations (independent and identically distributed with the training data). Again, we specify the goal only as a language instruction but do not give the planner the (x, y) position of the goal. This enables us to quantify the performance of the mapping from language string to planner success without any bias from a goal cost.",
+                        "We first disable the language module so that our network doesn't take any language input (No-Language). This is an under-specified system as the network does not know what the user feedback is and hence the success rate is only 4% as seen in table. II. This ablation shows that our dataset is not biased and it indeed requires language input for success.",
+                        "We then removed the vision input to the network (No-Vision), so both CLIP ViT and the U-Net encoder do not get the environment image or the location of the robot. This is done to test if simply given a language instruction, how well does exhibiting an average behavior do and the success rate is only at 33%. This success rate includes only very basic commands, like \"go left\", \"go down\", \"speed up\", et cetera; without vision, the system cannot accomplish any task that refers to an object. When we remove our U-Net encoder (No-U-Net-Encoder) and only use input to CLIP, the network does not do any better than (No-Vision), implying that the 512 vision embedding from CLIP is not sufficient to encode our task specific environments.",
+                        "Finally, we remove only the trajectory mask M, and only use C as cost in No-Mask. We see that this brings up the success rate to 58% but adding the trajectory mask get our method to 69% on the test dataset."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "C. Performance by Instruction Type",
+                    "paragraphs": [
+                        "In this section, we analyze our model's performance when given specific types of instruction. We trained on five spatial object dependent tasks-[Above, Below, Left of, Right of, Stay Away], two spatial robot object dependent tasks-[Behind, In front of], 4 directional spatial robot dependent tasks and 2 velocity tasks (fast, slow).   "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "D. Generalization Experiments",
+                    "paragraphs": [
+                        "The CLIP embeddings used in our model provide a strong basis for language generalization, as seen in previous work [40,35]. We performed additional set of experiments to show how our models preserve this generalization ability, making them more broadly useful despite the small amount of training data on only four objects. We evaluate on the real robot for these results, where the environment also contains unseen objects in clutter. The results of these generalization experiments are in Table IV, which shows how our approach can scale to a wide range of problems.",
+                        "To study generalization to unseen language instructions, we referred to the objects with non-templated phrases and synonymous object names that were not part of the training vocabulary, in 20 different setups and found that our method was able to successfully complete the task in 17 of them. Fig. 9 shows some examples of diverse natural-language sentences used to control the robot. We also tested our method with language instructions referring to 10 unseen objects and our method worked on cups(red, orange), plate, fork, ketchup bottle and failed on screwdriver, candle, book, banana, pepper can, pen. When any of the unseen objects were in the background (clutter) and language instructions were in reference to seen objects, our method succeeded always even when the objects were placed in orientations that were not seen during training as shown in Fig. 6. Our training data only contained scenes with two of four objects in poses chosen from a fixed set of 4 orientations while the evaluations we did on the real robot contained many objects and seen objects in different orientations.  "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "E. Failures",
+                    "paragraphs": [
+                        "Most failures of the correction policy are either due to a discontinuity in the trajectory mask generated or due to some few-off pixels in the cost map along the trajectory. Examples of these can be seen in Fig 10 . The figure also describes other curious scenarios. First, in the absence of an observable path C L tries to find a path from the edges of the frame. In the case of environments with two instances of the same object the model generates two distinct paths to both the objects. This  is also true in cases when there are two objects and there is ambiguity in the instruction as seen in Fig 10."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "F. Discussion",
+                    "paragraphs": [
+                        "In addition to generalization, our approach has the advantages of compositionality over other means of providing feedback to improve robot behavior. We can specify multiple constraints at execution time and combine them in the C L term. These can either be provided at once or at different times through the trial. We provide demonstrations showing a robot's behavior at combining velocity cost with goal reaching costs and with stay away cost while the robot is trying to reach a goal on our website sites.google.com/view/language-costs Issuing commands at different times is also a powerful and intuitive way to control the robot. For example, in Fig. 7 Compositionality of corrections"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Compositionality at a given time Compositionality in time",
+            "paragraphs": [
+                "Go to the bottom of the meat can."
+            ],
+            "subsections": [
+                {
+                    "title": "Go to the left of the can.",
+                    "paragraphs": [
+                        "Go to the top of the spam.",
+                        "Go to the right of the meat."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Go to the bottom of the white bottle.",
+                            "paragraphs": [
+                                "Go to the right of the bleach."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Go to the top of the soft scrub.",
+                    "paragraphs": [
+                        "Go to the top of the bleach.",
+                        "Fig. 7: Compositionality in time. Our approach allows the user to specify multiple different cost functions at different points in time, letting them guide the robot around an intended trajectory with language.",
+                        "Before Feedback \u2112",
+                        "After Feedback \u2112 Fig. 8: An example using our framework to tell a robot to avoid a set of fragile, glass objects while performing a pick and place task. Before, the robot moves dangerously close to the glass containers; after \"go through the bottom of spam\", it avoids them and maintains a safe distance. Fig. 9: The language correction module is trained with templated language instructions. For example, to teach the robot to go over an object, we use the template \"Go to the top of the X,\" where X is the name of an object that can be referred to in several ways. However, in spite of this, our model can generalize to a wide variety of different types of instructions, as shown above.",
+                        "we see the robot being asked to go to different locations around objects sequentially. Chaining corrections makes possible specifying procedures, and correcting trajectories that require more than a single correction to be corrected. It might also provide a way to generate data to learn more complex behaviors.",
+                        "One useful feature of our approach is the ability to correct Fig. 10: Some failures of our approach is shown here. Our method can produce masks that go outside the bounds of the image (left) or discontinuous masks in some instances. Our method also cannot distinguish between two objects of the same type as shown in the right.",
+                        "behaviors across multiple environments at once. Take the example in Fig. 11: \"go to the left of the bleach.\" This correction can be applied in every environment, even if the robot is moving to different goals, with no additional effort on the part of the user. To make such a correction with other means such as a joystick or kinesthetic feedback would require considerable time and effort. Importantly, corrections do not always need to be provided only in the case of a planner failure, but can be used by the user to modify the plan based on their preference. In Figure 8 we see a human providing a correction to steer the robot away from fragile objects. This correction is applied to the task of placing an object in the mug."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Go to the left of the Bleach.",
+                            "paragraphs": [],
+                            "subsections": [
+                                {
+                                    "title": "Start Location",
+                                    "paragraphs": [
+                                        "Predicted C L Robot: Trajectory End Fig. 11: Providing a single language command in multiple environments. One significant advantage of using language for correcting robot behaviors is how it allows us to issue the same correction in many environments at once."
+                                    ],
+                                    "subsections": [
+                                        {
+                                            "title": "VI. RELATED WORK",
+                                            "paragraphs": [
+                                                "This work builds upon multiple threads of related work. 1) Natural Language for Robot Behavior Correction: Correcting robot behavior using language has been studied for robots that ask for help [38], understand language corrections [10,12], and use language to disambiguate joystick corrections [21]. Broad et al. [10] use a grounding model based on a Distributed Correspondence Graph [18] to ground corrections, which limits grounding language to a hand-engineered set of optimization constraints. In contrast, we directly learn to predict cost maps using a neural network, side-stepping the potentially laborious constraint design process. Co-Reyes et al. [12] learn a policy that accepts corrections in addition to an instruction, however it requires training with corrections at training time which makes it sample inefficient as number of tasks scale. Further, it does not permit decoupling the notions of a goal and a trajectory to said goal when issuing a correction. Karamcheti et al. [21] use language to disambiguate underspecified joystick corrections by learning a mapping to robot joint space. This suffers from the same limitations as language-free joystick [36,33] or kinesthetic [6] corrections, requiring undivided user attention. Furthermore, their language grounding model is based on a nearest-neighbour lookup, which does not generalize to new environments and tasks.",
+                                                "2) Language for Robot Task Specification: Natural language has been extensively studied as a means for task specification or instruction following in robotics [37,22,15,4,28,43,8,31]. Mapping language to symbolic plans [37,22,24,4], has enabled following instructions by invoking a set of prespecified skills or motion primitives. Recently, instruction following has been studied in robotics by mapping instructions and raw visual observations to actions using end-toend representation learning and sim-to-real transfer [8,2,35]. All of these works, however, treat language instructions as goals that are fixed during execution. In contrast, by framing language grounding as cost prediction, we enable the use of language to refine robot behavior over time, while still allowing instruction-following as a special use-case.",
+                                                "3) Inferring costs from demonstrations: Our correction model is trained to map observations and language to cost maps, on data consisting of demonstrations or ground-truth cost maps. This is related to Inverse Reinforcement Learning (IRL) [1] that learns to recover reward functions from demonstrations, and has been successfully applied to infer objectives for manipulation motion planners [20]. In contrast, our cost model is conditioned on language and visual observations, which enables re-using the same model with diverse language corrections in a variety of tasks.",
+                                                "4) Value alignment problem: Our method presents an interactive solution to the value alignment problem [42], whereby the cost function provided to the robot is not reflective of the true task that the user has in mind. Our language corrections enable interactively updating the cost to better reflect the task. This problem has been also addressed by learning to predict true rewards given observed rewards across environments and tasks [16], and by learning from physical interactions with humans [5]."
+                                            ],
+                                            "subsections": []
+                                        },
+                                        {
+                                            "title": "VII. CONCLUSION",
+                                            "paragraphs": [
+                                                "In conclusion, we proposed a framework to integrate human provided feedback in natural language to update a robot's planning cost applied to situations when the planner fails. This is done by modelling cost associated with the language instruction C L conditioned on the language feedback L. The C L can be used in conjunction with the motion planner's existing costs. We train our model on data generated via simulation and evaluate the performance of the model in various out of distribution settings in the real world involving non-templated natural user commands, cluttered scenes, new poses and types of objects. We use STORM [7] as the planner which computes an action leveraging sampling based optimization to optimize over costs. The base cost C B for the 2D simulation robot contains the following terms: C collision (q t ) = Coll(q t , o h )",
+                                                "where Coll(\u2022) checks for collisions between the robot position and the image o h using a binary mask. When using the planner on the Franka Panda robot, we use the cost terms described in [7] with the following changes:",
+                                                "1) We only check for environment collisions with the table. We don't check for collisions with objects and rely on C L to ensure the ensure that the trajectory taken by the robot is not in collision. 2) We add a cost to constrain the position along z-axis and 3D orientation of the gripper during execution to a default value that's close to the table. Across all instances of the planner, we use 500 particles and a horizon of 30 timesteps."
+                                            ],
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "B. Hard environments",
+                                    "paragraphs": [
+                                        "Some examples of environments where the planner fails can be seen in Figure 12. An MPC model minimizing the C T from the start location to goal gets stuck in hard to escape localminima solutions. The robot is required to take several steps along a trajectory of increasing C T in order to reach a point starting where the robot can resume minimizing the specified C T to reach the true goal. It is these inflection points that the natural language feedback, L, helps point the robot to."
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "C. Convergence to Goal : Analysis",
+                                    "paragraphs": [
+                                        "A natural question to ask is what can one do when the correction module itself fails and afterall, it is also a model not immune to failures. Here we understand when the correction module fails. We group trajectories into easy medium and hard based on the length of the trajectories. It can be seen that corrections with longer trajectories are much worse than corrections with shorter trajectories. The main insight is that despite having a limited correcting ability one can still use it to make simple modifications at once or sequentially to correct behaviors. analysis Fig. 13: Convergence to Goal Analysis: a) As discussed in the results section the planner does better at short-horizon tasks as compared to long horizon tasks. The interesting aspect of the model is that even for long-horizon tasks, the first part of the trajectory does move in a direction where the goal is minimised for several steps. Even a model for CL with varying performance across short and long horizon corrections can still do well on introducing corrections that improve planner performance b) The advantage of generating a mask M over the cost is most evident for medium to long trajectories."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

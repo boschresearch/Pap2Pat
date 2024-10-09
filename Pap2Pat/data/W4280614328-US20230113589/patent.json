@@ -1,0 +1,444 @@
+{
+    "id": "US20230113589",
+    "authors": [
+        "Karthik Kashinath Kulkarni",
+        "Suren Jayasuriya",
+        "Ariane Middel",
+        "Tejaswi Gowda",
+        "Florian Arwed Schneider"
+    ],
+    "title": "BIOMETEOROLOGICAL SENSING DEVICE WITH EMBEDDED COMPUTER VISION",
+    "date": "2022-10-07 00:00:00",
+    "abstract": "The disclosure concerns biometeorological sensing devices including a processor communicatively coupled to a memory, and a plurality of sensors communicatively coupled to the processor. The plurality of sensors includes a humidity sensor, a UV sensor, an anemometer, an atmospheric thermometer, a globe thermometer, and a camera. The device also includes a network interface communicatively coupled to the processor. The processor is configured to estimate a mean radiant temperature (MRT) using data received from the plurality of sensors, identify a person in an image received from the camera, determine a bounding box that encloses the person in the image, generate a shadow map from the image, calculate an intersection over union (IOU) of the bounding box with the shadow map to determine if the person is in the shade, and transmit observed space usage and estimated MRT to a server communicatively coupled to the network interface.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present invention relates to biometeorological sensing devices."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define biometeorological sensing devices"
+                    ],
+                    "num_characters": 67,
+                    "outline_medium": [
+                        "define biometeorological sensing devices"
+                    ],
+                    "outline_short": [
+                        "define biometeorological sensing devices"
+                    ]
+                },
+                {
+                    "title": "BACKGDROUND",
+                    "paragraphs": [
+                        "The year 2020 marked the Earth\u2019s warmest 10-year period with an average increase in global temperature of 1.3\u00b0 C. above pre-industrial levels. Extreme heat and related heat waves put tremendous stress on individuals\u2019 health and well-being and limits their ability to work, travel, and socialize in outdoor settings. Globally, extreme heat and associated heat wave events are occurring more frequently and longer (Masson- Delmotte et al., 2021). Future trends of urban warming indicate the need for adaption measures to promote resilience in the population. The outdoor urban environment is a complex arrangement of urban forms and materials that impact how heat is experienced by pedestrians at the microscale. In hot, dry cities, pedestrian comfort is strongly dictated by the availability of shade (Middel et al., 2014; Colter et al., 2019). Pedestrian may respond to microscale outdoor conditions by changing their walking path from sun to shade or vice versa based on their heat exposure.",
+                        "The most common way to report urban heat is air temperature, which has been shown to be insufficient to quantify personal heat exposure (Harlan et al., 2006; Kuras et al., 2017). A more human-centric metric that emphasizes the heat load on the human body is the Mean Radiant Temperature (hereinafter, MRT). MRT objectively quantifies the total short- and longwave radiation the human body is exposed to at a given location and time (Kantor and Unger, 2011). This includes longwave radiation emitted from surrounding surfaces, such as asphalt parking lots or concrete walls, and shortwave radiation from the Sun. MRT roughly equals air temperature in the shade but can be 30\u00b0 C. higher in the Sun, making a person feel much less comfortable when it is hot. In warm, dry climates such as the desert city of Phoenix, Arizona in the USA, MRT is the heat metric that best describes how people experience heat (Middel et al., 2016). MRT is also a crucial input parameter for calculating outdoor human thermal comfort indices such as PET (H\u00f6ppe, 1999) and UTCI (Jendritzky et al., 2012).",
+                        "MRT has been successfully used in urban climate and human biometeorology research to predict heat-related mortality and outperformed air temperature as predictor (Thorsson et al., 2014). Using computer simulations, MRT was estimated to assess the impact of tree planting strategies on human thermal exposure under climate change in Vancouver, Canada (Aminipouri et al., 2019) and to perform thermal comfort routing in Tempe, Arizona, USA (Middel et al., 2017). Observational studies have quantified the benefit of shade for thermal comfort of different shade types including trees, engineered structures, and urban form (Lee et al., 2018; Middel et al., 2021). Accurate, high resolution MRT measurements require expensive equipment, such as the biometeorological instrument platform MaRTy (Middel and Krayenhoff, 2019), but lower-cost alternatives such as the gray 38 mm globe thermometers and cylindrical thermometers have been developed (Thorsson et al., 2006; Brown, 2019; Vanos et al., 2021).",
+                        "Active shade management in cities is important, especially in the Southwestern US, to provide shade where people work, travel, and socialize outdoors, because cooling benefits are hyperlocal."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate extreme heat and heat waves",
+                        "summarize global temperature increase",
+                        "describe limitations of air temperature",
+                        "introduce Mean Radiant Temperature (MRT)",
+                        "discuss importance of MRT in urban climate research",
+                        "highlight need for accurate MRT measurements"
+                    ],
+                    "num_characters": 3265,
+                    "outline_medium": [
+                        "motivate extreme heat and heat waves",
+                        "discuss limitations of air temperature",
+                        "introduce Mean Radiant Temperature (MRT)"
+                    ],
+                    "outline_short": [
+                        "motivate need for biometeorological sensing devices"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "While a large body of literature has investigated shade and microclimate in hot regions (Ali-Toudert and Mayer, 2007; Emmanuel et al., 2007; Shashua-Bar et al., 2009; Coutts et al., 2016), little information exists on how people use public spaces and when and where they are exposed to outdoor heat. We close this gap by developing a novel low-cost, portable, smart IoT weather station (MaRTiny) that can measure passively the local meteorological conditions, the heat exposure at the given location and count people in the shade and Sun. Connecting hyperlocal meteorological conditions with space use data captured by a camera reveals behavioral patterns of shade and sun preferences that vary by time of day, location, and ambient conditions. MaRTiny, as a passive sensor package, designed for hot, dry climates, provides local heat exposure, such as MRT, and space use data without using an external database.",
+                        "In some aspects, the disclosure concerns biometeorological sensing devices comprising: a processor communicatively coupled to a memory; a plurality of sensors communicatively coupled to the processor, the plurality of sensors comprising a humidity sensor, a UV sensor, an anemometer, an atmospheric thermometer, a globe thermometer, and a vision system; and a network interface communicatively coupled to the processor; wherein the processor is configured to: estimate a mean radiant temperature (MRT) using data received from the plurality of sensors; identify a person in an image received from the vision system; determine a bounding box that encloses the person in the image; generate a shadow map from the image; calculate an intersection over union (IOU) of the bounding box with the shadow map to determine if the person is in the shade; and transmit observed space usage and estimated MRT to a server communicatively coupled to the network interface.",
+                        "In some sensing devices, an embedded computer board is configured to execute a deep learning model. In some embodiments, the embedded computer board is configured to execute a deep learning model is utilized to detect people in shade and sun.",
+                        "In certain embodiments, the processor generates the shadow map by instructing the embedded computer board to execute a Bi-directional Feature Pyramid with Recurrent Attention Residual Module on the image, the image being provided to the embedded computer board by the processor.",
+                        "In some embodiments, the vison system comprises a camera. In certain aspects, the vision system has capabilities of object detection and identification.",
+                        "In certain sensing devices, the computer board is configured to record air temperature, relative humidity, globe temperature, and wind speed at predetermined regular intervals. In some embodiments, the vision system capabilities include shade detection in outdoor areas. In certain embodiments, air temperature is measured using a white shield to reflect solar radiation to minimize solar radiation impact on the air temperature measurement.",
+                        "Some sensing devices have sensors that are configured to be powered by DC power.",
+                        "Other aspects of the disclosure concern methods of monitoring biometeorological conditions and people\u2019s use of public spaces with changing weather conditions, the method comprising utilizing a plurality of sensors communicatively coupled to the processor to obtain and store humidity, UV level, wind speed and/or pressure using an anemometer, atmospheric temperature, mean radiant temperature using a globe thermometer, and images using a vision system; wherein sensor data is stored using a network interface communicatively coupled to the processor; wherein the processor: estimates a mean radiant temperature (MRT) using data received from the plurality of sensors; identifies a person in an image received from the camera; determines a bounding box that encloses the person in the image; generates a shadow map from the image; calculates an intersection over union (IOU) of the bounding box with the shadow map to determine if the person is in the shade; and transmits observed space usage and estimated MRT to a server communicatively coupled to the network interface.",
+                        "Some methods utilize an embedded computer board that is configured to execute a deep learning model to detect people in shade and sun. In certain embodiments, the processor generates the shadow map by instructing the embedded computer board to execute a Bi-directional Feature Pyramid with Recurrent Attention Residual Module on the image, the image being provided to the embedded computer board by the processor.",
+                        "In some embodiments, air temperature, relative humidity, globe temperature, and wind speed are recorded at predetermined regular intervals.",
+                        "In certain embodiments, the vision system comprises a camera. In certain embodiments, the vision system identifies objects.",
+                        "In some embodiments, the vision system identifies shade in outdoor areas.",
+                        "Some methods use sensors that are powered by DC power.",
+                        "Some methods measure the air temperature using a white shield to reflect solar radiation to minimize solar radiation impact on the air temperature measurement.",
+                        "In certain methods, the processer transmits data to a cloud database using WiFi."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce novel IoT weather station (MaRTiny)",
+                        "describe MaRTiny's capabilities",
+                        "motivate need for hyperlocal meteorological conditions",
+                        "introduce biometeorological sensing devices",
+                        "describe device components",
+                        "explain MRT estimation",
+                        "describe person detection and shade identification",
+                        "introduce deep learning model for shade detection",
+                        "describe vision system capabilities",
+                        "summarize device functionality"
+                    ],
+                    "num_characters": 5205,
+                    "outline_medium": [
+                        "introduce MaRTiny IoT weather station",
+                        "describe functionality of MaRTiny",
+                        "outline biometeorological sensing device components",
+                        "explain processing of sensor data",
+                        "summarize method of monitoring biometeorological conditions"
+                    ],
+                    "outline_short": [
+                        "summarize biometeorological sensing device",
+                        "describe application of device"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "This disclosure, its aspects and implementations, are not limited to the specific material types, components, methods, or other examples disclosed herein. Many additional material types, components, methods, and procedures known in the art are contemplated for use with particular implementations from this disclosure. Accordingly, for example, although particular implementations are disclosed, such implementations and implementing components may comprise any components, models, types, materials, versions, quantities, and/or the like as is known in the art for such systems and implementing components, consistent with the intended operation.",
+                        "The word \u201cexemplary,\u201d \u201cexample,\u201d or various forms thereof are used herein to mean serving as an example, instance, or illustration. Any aspect or design described herein as \u201cexemplary\u201d or as an \u201cexample\u201d is not necessarily to be construed as preferred or advantageous over other aspects or designs. Furthermore, examples are provided solely for purposes of clarity and understanding and are not meant to limit or restrict the disclosed subject matter or relevant portions of this disclosure in any manner. It is to be appreciated that a myriad of additional or alternate examples of varying scope could have been presented, but have been omitted for purposes of brevity.",
+                        "\u201cGlobe temperature\u201d is measured with a temperature sensor (here, a thermometer thermometer) placed inside a globe (here, a ping pong ball).",
+                        "Mean Radiant Temperature (MRT) is the uniform temperature of an imaginary enclosure (or environment) in which the radiant heat transfer from the human body is equal to the radiant heat transfer in the actual nonuniform enclosure (or environment).",
+                        "While this disclosure includes a number of embodiments in many different forms, there is shown in the drawings and will herein be described in detail particular embodiments with the understanding that the present disclosure is to be considered as an exemplification of the principles of the disclosed methods and systems, and is not intended to limit the broad aspect of the disclosed concepts to the embodiments illustrated."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Mean Radiant Temperature (MRT) Sensing",
+                            "paragraphs": [
+                                "MRT is typically determined with integral radiation measurements using the so-called 6-directional method (Hoppe, 1992). Three net radiometers are orthogonally setup to measure the longwave and shortwave radiation in six directions. The radiative fluxes are then summarized into a temperature value using the Stefan-Boltzmann Law:",
+                                "\\(MRT = \\sqrt[4]{\\frac{\\sum_{i = 1}^{6}{W_{i}\\left( {a_{k}K_{i} + a_{l}L_{i}} \\right)}}{a_{l}\\sigma}} - 273.15\\)",
+                                "where Ki and Li are the directional shortwave and longwave radiation fluxes, respectively; ak and al are absorption coefficients for short- and long wave radiation fluxes, respectively; \u03c3 is the Stefan-Boltzmann constant; and Wi are factors that weigh the directional fluxes to match the cylindrical shape of the human standing body (0.06 is used for sensors pointing up and down, 0.22 for lateral sensors). This method is limited by cost with three net radiometers that cost $5K each (All prices are at the time of testing).",
+                                "A more affordable but less accurate method to estimate MRT is using a black globe thermometer. Globe thermometers such as the Kestrel Heat Stress meter ($500) have been used to quantify the heat load of pedestrians, athletes, and outdoor workers in various studies (Johansson et al., 2014). Thorsson et al. (2006) developed a low-cost globe thermometer using a thermocouple in a gray ping pong ball (<$100). The acrylic gray color of the globe almost matches the average albedo of the combination of the human skin and clothing to reliably estimate MRT (Olesen et al., 1989; Thorsson et al., 2006). Albedo variations based on clothing and skin color are large between people and cannot simply be represented by one color alone, hence this gray globe can provide an accurate estimate for the average combined albedo which can be used as a reference.",
+                                "Various convection coefficients have been developed for globe thermometers to improve MRT estimations from globe temperature (Oliveira et al., 2019; Manavvi and Rajasekar, 2020; Acero et al., 2021; Alfano et al., 2021). Those coefficients are usually derived under specific outdoor conditions and cannot be generalized easily. Here, we will use an empirical model for acrylic gray globe temperature Tg developed by Vanos et al. (2021) in Phoenix, AZ based on air temperature Ta, wind speed Va, globe thermometer diameter D = 38 mm, and emissivity \u03b5 = 0.97 of the globe:",
+                                "\\(\\begin{array}{l}\n{MRT\\mspace{6mu} = \\mspace{6mu}\\left\\{ {\\left( {1.6T_{g} - 0.339T_{a} - 8.69 + 273.15} \\right)^{4} + \\left( {0.24 + 208.V_{a}^{0.5} + 1.14V_{a}^{0.667}} \\right)\\left( {1.6T_{g}} \\right)} \\right)} \\\\\n{\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu}\\mspace{6mu} - 0.339T_{a} - 8.69 - \\left( T_{a} \\right)\\left( 10^{8} \\right\\}^{1/4} - 273.15}\n\\end{array}\\)",
+                                "Due to limited sensing resources, MRT measurements across space and time are usually sparse. To address this gap, microclimate and radiation models have been developed that can calculate MRT using information on urban forms and meteorological data. However, it has been shown that conventional models do not perform well in extreme heat cases and struggle with complex urban forms. Currently, no model can accurately estimate MRT in the absence of detailed urban form parameters.",
+                                "Much research has been developed for pedestrian counting and crowd estimation. Sensor-based techniques (Zappi et al, 2010; Wahl et al., 2012; Raykov et al., 2016; Lau et al., 2018) use passive infrared (PIR) and proximity sensors to monitor moving pedestrians. Although these setups are compact and low-cost, they have a low accuracy and misclassify often, and work best only under certain environmental conditions. Alternatively, network-based techniques (Kj\u00e6rgaard et al., 2012; Weppner and Lukowicz, 2013; Depatla et al. 2015) use Bluetooth and WiFi networks for crowd sensing.",
+                                "Recently, machine learning techniques low-level image feature extraction methods (Chen et al., 2013, 2012), such as Haar cascade (Viola and Jones, 2001) and HOG (Histogram of Oriented Gradient) (Dalal and Triggs, 2005; Yao et al., 2020) combined with regression models such as SVM (Support Vector Machine) (Yao et al., 2020) or detectors such as AdaBoost (Viola and Snow, 2003). State-of-the-art methods leverage deep convolutional neural networks for crowd estimation using individual detection (Wu and Nevatia, 2005; Brostow and Cipolla, 2006; Wang and Wang, 2011; Stewart et al., 2016; Liu et al., 2019) and using perspective maps (Chan et al., 2008; Lempitsky and Zisserman, 2010; Zhang et al., 2015).",
+                                "Further, there are works revolving around analysis of crowd behaviour in urban areas (Hoogendoorn and Bovy, 2004; Hashimoto et al., 2016; Lee, 2020) and their relation with thermal comfort (Arens and Bosselmann, 1989; Givoni et al., 2003; Eliasson et al., 2007; Eom and Nishihori, 2021). In some aspects, we do not aim to outperform any existing pedestrian counting techniques, but to combine them with a weather station as a single setup.",
+                                "In summary, thermal exposure measurements in tandem with public space use assessments are crucial for active shade management in cities, but accurate MRT measurement setups are expensive and bulky. Low-cost systems such as gray globe thermometers have been developed but are not connected to the cloud for easy data storage and analysis. In addition, such low-cost sensors can suffer from over- and under-estimation of MRT at various times of the day as noted in previous literature. None of the existing MRT sensing platforms have vision capabilities, and space use is often assessed through time-consuming manual observations. Finally, physics-based MRT models require detailed 3D data of the urban environment to model radiation flux densities and sun-exposure. Our MaRTiny system aims to address all these gaps.",
+                                "Presented herein is a low-cost, portable, biometeorological sensing device and system that can measure passively the local meteorological conditions, the heat exposure at the given location and count people in the shade and sun using embedded computer vision. Connecting hyperlocal meteorological conditions with space use data captured by a camera reveals behavioral patterns of shade and sun preferences that vary by time of day, location, and ambient conditions. The instant biometeorological sensing devices (hereinafter \u201cBSD\u201d or \u201cdevice\u201d), as a passive sensor package designed for hot, dry climates, can provide local heat exposure, such as MRT, and space use data without requiring the use of an external database. According to various embodiments, the BSD is able to provide space use data as well as hyperlocal meteorological conditions in a portable package that employs inexpensive hardware.",
+                                "According, in various embodiments, the instant BSD comprises a weather station, a vision system, and a machine learning module that provides MRT. Various embodiments of the BSD provide a low-cost and compact Internet of Things (IoT) weather station that records air temperature, relative humidity, globe temperature, and wind speed at regular intervals. Globe temperature can be converted to MRT and validated with high-end MRT measurements.",
+                                "The instantly described BSD also comprises a low-cost, low-powered, compact and smart vision system driven by state-of-the-art AI algorithms. According to various embodiments, this system counts pedestrians and is also capable of identifying whether a pedestrian is under the cooling effect of shade. Some embodiments have demonstrated a precision of 95% for pedestrian detection and an accuracy of 80% for shade detection, outperforming more expensive, in time and/or money, conventional methods for monitoring space use. Advantageously, the instant device does not require active human labor during the collection of this data, saving money, time, while also reducing the need for human exposure to extreme heat conditions.",
+                                "Furthermore, various embodiments of the instant BSD employ a machine learning model that relies only on a few meteorological parameters while still being robust to changes in the surrounding environment. Some embodiments of this model correct the errors generated by the electrical noises created by sensors and the circuit, and predict with an accuracy of RMSE = 4\u00b0 C.",
+                                "FIG. 1 is a top view of a non-limiting example of a biometeorological sensing device. As shown, the BSD comprises a plurality of sensors communicatively coupled to at least one processor communicatively coupled to a network interface. The various components will be discussed in greater detail, below. According to various embodiments, the BSD operates as a compact, IoT, low-cost sensing and vision/recording/surveying platform. The primary functionality is to measure MRT for a given sun-exposed location using conventional meteorological sensors and a globe thermometer. The BSD measures air temperature, relative humidity, wind speed, and globe temperature, which are used to calculate MRT.",
+                                "In addition, various embodiments of the BSD are outfitted with a camera to detect and count people in the shade and sun within the observed area. The detected data will give an indication about pedestrian behavior in public spaces (e.g., identifying the number of people who utilize shade, umbrellas, bicycles and other transportation, etc.). The camera and people detection system preserves privacy by only storing quantitative metrics (e.g., people count, etc.) and discarding the captured images.",
+                                "The entire system may transmit data to an external server, such as a cloud database, using WIFI or other networking technologies known in the art such as cellular, mesh networks, and the like. The BSD can be powered with a single power source, making it convenient for mobile deployment. Some embodiments may make use of solar or other renewable power sources.",
+                                "Advantageous over conventional devices, the BSD is low cost while providing data comparable to more expensive conventional setups. As a specific example, one embodiment was built for under $200 using different micro-controllers and AI edge devices (e.g., embedded computing board, etc.). The instant BSD is able to capture MRT data and correlate it with pedestrian behavior in outdoor settings at a fraction of the size and cost of conventional solutions. Advantageously, the BSD does not need any active human labor during the collection of data, saving funds, time, and health during extreme heat conditions.",
+                                "According to various embodiments, the BSD comprises at least one processor to process the readings from sensors and implement machine vision algorithms in determining use of space. In some embodiments, the BSD may comprise a single, powerful processor. In other embodiments, however, the BSD may comprise multiple processors adapted for particular purposes. For example, in some embodiments, including the non-limiting example shown in FIG. 1, the BSD comprises a plurality of microcontrollers (e.g., Arduino Uno, etc.) for receiving data from the plurality of sensors, and an embedded computing board having an accelerated machine learning engine (e.g., NVIDIA Jetson Nano, etc.). As an option, some or all processors may also comprise conventional cooling systems (e.g., fans, heat sinks, Peltier coolers, etc.) allowing them to operate in the extreme temperature they are intended to observe.",
+                                "FIG. 2 is a schematic view of a non-limiting example of the instant BSD. As shown in this specific but non-limiting example, in some embodiments, five sensors are communicatively coupled to a first microcontroller (e.g., Arduino Uno) and the collected data is then transmitted to a second microcontroller (e.g., NodeMCU) using Serial Communication (or other protocol known in the art) which is then transmitted to an external server (e.g., AWS database) using MQTT Protocol.",
+                                "As shown, the BSD is configured with multiple types of sensors to collect meteorological data every minute. These sensors may include, but are not limited to, multiple temperature probes/thermometers, UV sensors, humidity sensors, and anemometers (e.g., wind speed sensor). Two temperature probes shown in FIG. 2 are utilized for globe and air temperature, respectively.",
+                                "As previously discussed, in some embodiments, globe temperature is measured using a grey ping-pong ball attached on top of its probe. The grey color of the globe almost matches the albedo of the human skin. The globe thermometer and the derived MRT emulate emulates the omnidirectional thermal exposure for a human body as a function of radiation, air temperature, and velocity, thus providing an accurate low-cost solution to net radiometers. In some embodiments, air temperature is measured using a downward hanging white cup that shades the attached temperature probe. The white cup reflects most of the solar radiation instead of absorbing it to provide an air temperature \u201cfree\u201d from the influence of solar radiations. Other embodiments may employ other structures and methods to obtain a shielded air temperature free from solar influence. The UV sensor is used to measure the UV intensity and train the machine learning model to estimate MRT based on all measured parameters. All the sensors except the anemometer and UV sensor are digital in nature. The wind-speed and UV intensity are linearly related to their device\u2019s output voltage.",
+                                "According to some embodiments, the BSD is powered by a DC adapter of 5V/4A or other suitable adapter, which is shared by both the weather station and the vision system. The anemometer may be supplied with 9V power by stepping up the primary voltage source. This setup can be easily scaled with more sensors without compromising on space and power. In practice, low-cost sensors are subject to noise and variation, which can yield errors in MRT estimation. To solve this problem, some embodiments employ a machine learning model to robustly estimate MRT despite these inaccuracies.",
+                                "Along with meteorological parameters, the BSD comprises a vision system whose capabilities include object detection and identification as well as shade detection in outdoor areas. As a specific example, in one embodiment, the NVIDIA Jetson Nano is used, which is a low-cost and low-powered edge device capable of running state-of-the-art deep learning models. The Jetson Nano features an ARM-based microprocessor built with a Nvidia V100 GPU that is programmed through Nvidia\u2019s low level API TensorRT engine. A compact MIPI (Mobile Industry Processor Interface) camera is used to capture video and stream the data to the Jetson Nano using a gstreamer pipeline. Vision data may be sent to AWS via an external USB WIFI on-board. Those skilled in the art will recognize that other embedded computer boards and machine learning engines, and/or network interfaces and protocols may be employed in other embodiments without departing from the instant BSD.",
+                                "Reading and processing the meteorological sensor data is performed using a cost-effective microcontroller such as an Arduino Uno. In some embodiments, the Uno board communicates with a NodeMCU micro-controller featuring an ESP8266 architecture that has an inbuilt WIFI module, flash memory, and supports the PEM (Privacy Enhanced Mail) file system. Sensor data is continuously read in a loop by the Uno board with a small delay of 1 ms to avoid overheating, according to some embodiments. Records are collected in a buffer, and an average is calculated for every minute, which is then transmitted to the NodeMCU board. On average, the Uno acquires around 80 readings per minute in this specific embodiment. Both boards make use of the serial communication protocol UART (Universal Asynchronous Receiver/Transmitter) to communicate with each other, as is known in the art. The NodeMCU communicates securely with the online database.",
+                                "Some embodiments may utilize AWS DynamoDB, which is a NoSQL database. Unlike traditional relational database systems, NoSQL can handle unstructured data, making it very flexible. All the necessary security PEM files are stored in the flash memory of NodeMCU, which is required during authentication of the BSD. Using these files, NodeMCU establishes a communication path with AWS through the MQTT protocol. MQTT is an extremely lightweight publish/subscribe messaging protocol designed for IoT communication. Once the communication is established, Node MCU waits for bytes of data to be received from the Uno board. Sensor data collected by Uno is sent to NodeMCU via serial communication every minute, which is then transmitted to DynamoDB using the MQTT protocol.",
+                                "Some embodiments of the BSD employ advanced machine learning capabilities on-board the device, to fully interpret and analyze the meteorological sensor data and captured images. An accurate MRT is robustly estimated from the sensor data via supervised learning with SVM (Support Vector Machine) and ANN (Artificial Neural Network) models. Additionally, deep learning models for people detection and shade identification in images are implemented. The BSD uses a novel method to detect pedestrians in shade, allowing the device to count people in shade automatically. To preserve privacy, images taken by the BSD may be used only for detection purposes and are not stored on the device memory or in the cloud, which would not be feasible without the on-board machine vision capabilities of the instant device.",
+                                "As previously discussed, the instant BSD is a low-cost, compact alternative to the expensive, conventional solutions such as the MaRTy sensing platform. However, the replacement of highly accurate sensors has drawbacks including less sensitivity and sensor lag. Inaccuracies introduced here can cause serious errors in the calculated MRT values. To overcome this limitation, some embodiments perform MRT estimation as a supervised learning problem using the validated data from a conventional system to develop a model. This requires labeled ground-truth MRT values to be provided in correspondence with the BSD\u2019s less robust meteorological sensor data. The use of machine learning allows the BSD to estimate MRT accurately from the BSD sensor data, despite the drawbacks mentioned.",
+                                "According to various embodiments, the BSD employs both a traditional machine learning method using SVM model with three different kernels as well as deep learning method by using an ANN model to perform this supervised learning task. These two algorithms are one of the most versatile and well-known algorithms in machine learning as they follow universal approximation theorem. In particular, it has been observed that an SVM with RBF (Radial Basis Function) kernel achieves the highest accuracy on an evaluation dataset. This method has the added advantage of being computationally lightweight, so it can be easily deployed onboard (e.g., using the NVIDIA Jetson Nano, etc.) the BSD for training and performing inference.",
+                                "FIG. 3 is a system overview of a non-limiting example of the BSD machine vision applying different types of deep learning models. The top network represents a BDRAR network, responsible for shade detection, and the bottom network represents Yolov3. As will be discussed below, the shadow map and bounding box of the pedestrian is fed into the pedestrian algorithm to check the number of people in the shade and sun.",
+                                "According to various embodiments, the BSD leverages deep learning models to detect people in the shade and sun. Ideally, the models need to fit onto the onboard embedded computing board (e.g., NVIDIA Jetson Nano, etc.) or other processor, and they need to be able to process frames coming from the MIPI camera with a frame rate of at least 1fps. To perform shadow detection in an image, the BSD uses the deep learning model Bi-directional Feature Pyramid with Recurrent Attention Residual Modules (BDRAR), visualized in the upper branch of FIG. 3. BDRAR network takes a single image as input and outputs a binary shadow map as output in an end-to-end manner. First, it leverages a convolutional neural network (CNN) to extract feature maps at different spatial resolutions. It then employs two series of recurrent attention residual modules to fully exploit global and local context for these feature maps. The features captured by shallow layers exploit shadow details in the local regions and the features captured by deep layers understands the overall shadow region of the image.",
+                                "For object detection, various embodiments of the BSD utilize the state-of-the-art Yolov3 network visualized in the lower branch of FIG. 3. The model is trained on 80 different classes of the Microsoft COCO dataset. The Yolov3 algorithm used by the BSD in some embodiments is built using the Darknet framework. Yolov3 has a mAP (mean Average purpose) of around 57 and has been proven to be efficient in crowded places. Since the YOLOv3-darknet model is large and computationally expensive to run on the NVIDIA Jetson Nano, in some embodiments it is converted into a simple neural graph using Nvidia\u2019s TensorRT. This allows the model to run successfully on the Nano with a framerate of 4fps.",
+                                "An image represents a three-dimensional environment as two-dimensional data, limiting the ability to determine the exact location of a pedestrian on the ground and their distance from the camera. Some embodiments of the instant BSD are configured to identify pedestrians in shade without determining the position in 3D space. First, a binary shadow map from BDRAR indicating the presence of shade per pixel is computed periodically (e.g., every 15 minutes as shade does not vary significantly in such a short time). For every frame from the MIPI camera, Yolov3 outputs objects with their bounding boxes consisting of pixel coordinates for the corners. The instant BSD calculates the IOU (Intersection over Union) of the bounding box with the shadow map. According to various embodiments, the device considers a person to be in shade if 40% of the bounding box region is inside the shadow map (i.e., IOU = 0.4).",
+                                "Calculating IOU without considering the position of the person with respect to shade can lead to errors. See, for example, FIG. 5, which shows two scenes, one where the person is sun-exposed and the another where the person is in the shade. IOU of the bounding box with the shadow map equals 60% in the first case and 40% in the second case. IOU for the first case is high due to the shade in the background and shadow cast by the person\u2019s body. This is the most common type of error that occurs at different orientations and positions of a person; therefore, it is necessary to distinguish between shade from a person and shade from the surroundings. According to various embodiments, the BSD\u2019s algorithm first checks if the edge of the bounding box is in the shade. A person does not have to be completely in shade to feel the cooling effect, hence the BSD considers only the bottom half (i.e., 50% of the bounding box) as ROI (Region of Interest). The device then calculates the IOU between this region and the shadow map. According to various embodiments, an IOU of 80% (which implies an IOU of 40% of the complete bounding box) is considered as the optimum value for a person to experience the cooling effects of shade. The ROI and IOU is subjected to change based on the environment and application, but the core logic will remain same."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce MRT concept",
+                                "describe 6-directional method for MRT measurement",
+                                "provide Stefan-Boltzmann Law equation",
+                                "discuss limitations of 6-directional method",
+                                "introduce black globe thermometer",
+                                "describe Thorsson's low-cost globe thermometer",
+                                "discuss albedo variations",
+                                "introduce convection coefficients for globe thermometers",
+                                "provide empirical model for acrylic gray globe temperature",
+                                "discuss limitations of existing MRT measurement methods",
+                                "introduce microclimate and radiation models",
+                                "discuss limitations of conventional models",
+                                "introduce pedestrian counting and crowd estimation techniques",
+                                "describe sensor-based techniques",
+                                "describe network-based techniques",
+                                "introduce machine learning techniques for crowd estimation",
+                                "describe low-level image feature extraction methods",
+                                "describe regression models and detectors",
+                                "introduce deep convolutional neural networks for crowd estimation",
+                                "describe perspective maps",
+                                "discuss analysis of crowd behavior in urban areas",
+                                "discuss relation with thermal comfort",
+                                "introduce MaRTiny system",
+                                "describe biometeorological sensing device",
+                                "introduce weather station",
+                                "describe vision system",
+                                "introduce machine learning module",
+                                "describe IoT weather station",
+                                "describe low-cost and compact vision system",
+                                "describe pedestrian detection and shade detection",
+                                "introduce machine learning model for MRT estimation",
+                                "describe error correction and prediction",
+                                "introduce FIG. 1",
+                                "describe BSD components",
+                                "describe camera and people detection system",
+                                "introduce data transmission to external server",
+                                "describe power source and cost-effectiveness",
+                                "introduce FIG. 2",
+                                "describe sensor configuration",
+                                "describe data collection and transmission",
+                                "introduce machine learning model for MRT estimation",
+                                "describe vision system capabilities",
+                                "introduce NVIDIA Jetson Nano",
+                                "describe MIPI camera and gstreamer pipeline",
+                                "introduce AWS database and MQTT protocol",
+                                "describe on-board machine vision capabilities"
+                            ],
+                            "num_characters": 23471,
+                            "outline_medium": [
+                                "introduce MRT and its importance",
+                                "describe traditional 6-directional method for MRT measurement",
+                                "provide mathematical formula for MRT calculation",
+                                "discuss limitations of traditional method",
+                                "introduce alternative method using black globe thermometer",
+                                "describe development of low-cost globe thermometer",
+                                "discuss albedo variations and their impact on MRT estimation",
+                                "introduce empirical model for acrylic gray globe temperature",
+                                "provide mathematical formula for MRT estimation using globe temperature",
+                                "discuss limitations of low-cost MRT measurement methods",
+                                "introduce microclimate and radiation models for MRT estimation",
+                                "discuss limitations of conventional models",
+                                "introduce pedestrian counting and crowd estimation techniques",
+                                "describe sensor-based techniques for pedestrian counting",
+                                "describe network-based techniques for crowd sensing",
+                                "introduce machine learning techniques for crowd estimation",
+                                "describe state-of-the-art methods for crowd estimation",
+                                "discuss analysis of crowd behavior in urban areas",
+                                "discuss relation between crowd behavior and thermal comfort",
+                                "summarize limitations of existing MRT sensing platforms",
+                                "introduce MaRTiny system and its objectives",
+                                "describe biometeorological sensing device (BSD) and its components",
+                                "outline advantages of BSD over conventional devices"
+                            ],
+                            "outline_short": [
+                                "define MRT and its importance",
+                                "describe traditional 6-directional method for MRT measurement",
+                                "introduce limitations of traditional method",
+                                "describe alternative method using black globe thermometer",
+                                "discuss limitations of globe thermometer method",
+                                "introduce empirical model for MRT estimation",
+                                "describe various convection coefficients for MRT estimation",
+                                "discuss limitations of existing MRT sensing platforms",
+                                "introduce need for low-cost, portable MRT sensing device",
+                                "describe importance of combining MRT sensing with pedestrian counting",
+                                "introduce MaRTiny system as a solution"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce patent application scope",
+                        "define globe temperature measurement",
+                        "describe limitations of MRT measurement methods",
+                        "motivate need for low-cost MRT sensing platform"
+                    ],
+                    "num_characters": 2134,
+                    "outline_medium": [
+                        "introduce context and scope of disclosure",
+                        "define terms and conventions used in disclosure"
+                    ],
+                    "outline_short": [
+                        "introduce background and motivation for MRT sensing"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "System Overview",
+                            "paragraphs": [
+                                "The MaRTiny system is a compact, Internet-of-Things (IoT), low-cost sensing and vision/recording/surveying platform (see FIG. 1). Its primary functionality is to measure MRT for a given sun-exposed location using off-the-shelf meteorological sensors and a custom-made globe thermometer. MaRTiny measures air temperature, relative humidity, wind speed, and globe temperature, which are used to calculate MRT (see Eq. (2)). In addition, MaRTiny is outfitted with a camera to detect and count people in the shade and Sun. This data helps analyze pedestrian behavior in public spaces (e.g., identifying the number of people who utilize shade, umbrella, bicycles and transportation etc.). Privacy can be preserved by only storing quantitative metrics (e.g., pedestrian count) and discarding the captured images after analysis.",
+                                "The entire system transmits data to a cloud database via WiFi. It is powered by a single power source of 20 W which is split among different components according to their power ratings. MaRTiny was built for under $200 using different micro-controllers and AI edge devices. MaRTiny is a useful scientific platform to capture MRT data and correlate it with pedestrian behavior in outdoor settings at a fraction of the size/ cost of existing solutions. No active human labor is needed for data collection which helps save funds, time, and heat exposure for researchers.",
+                                "MaRTiny has four types of sensors to collect meteorological data every minute\u2014multiple temperature probes/thermometers, UV sensor, humidity sensor, and anemometer (wind speed sensor) (see FIG. 2 and Tables 1 and 2 for details). Two temperature probes are utilized for globe and air temperature respectively. Globe temperature is measured using a gray ping- pong ball attached on top of its probe. The globe\u2019s gray color almost matches the albedo of the human skin. The globe thermometer and the derived MRT emulate the omnidirectional thermal exposure for a human body as a function of radiation, air temperature, and velocity, and thus are an accurate low-cost solution to net radiometers (Thorsson et al., 2006). Air temperature is measured using a downward hanging white cup that shades the attached temperature probe. The white cup reflects most of the solar radiation instead of absorbing it to provide an air temperature \u201cfree\u201d from the influence of solar radiations. The UV sensor is used to measure the UV intensity and train the machine learning model to estimate MRT based on all measured parameters. MaRTiny is powered by a DC adapter of 5V/4A, which is shared by both systems (weather station and vision system). The anemometer is supplied with 9 V power by stepping up the primary voltage source. This setup can be easily scaled with more sensors without compromising on space and power. In practice, low-cost sensors are subject to noise and variation, which can yield errors in MRT estimation using Eq. (2) as we show later in Section 5. To solve this problem, we introduce a machine learning model to robustly estimate MRT despite these inaccuracies.",
+                                "[0073] Along with meteorological parameters, MaRTiny requires vision capabilities including object detection and identification as well as shade detection in outdoor areas. We leverage the NVIDIA Jetson Nano, a low-cost and low-powered edge device to run state-of- the-art deep learning models. The Jetson Nano features an ARM- based micro-processor built with a Nvidia V100 GPU programmed through Nvidia\u2019s low level API TensorRT engine. It has configurable power consumption modes of 5W and 10 W. As we perform computationally heavy tasks, we have configured the Jetson Nano to 10 W mode. To capture video, we utilize a compact MIPI (Mobile Industry Processor Interface) camera and stream the data to the Jetson Nano using a gstreamer pipeline. Vision data is sent to AWS via an external USB WiFi on-board. In the next section, we describe in detail our deep learning networks to detect pedestrians in shade.",
+                                "To read meteorological sensor data, we use an Arduino Uno microcontroller. The Uno board communicates with a NodeMCU micro-controller featuring an ESP8266 architecture that has an inbuilt WiFi module, flash memory, and supports the PEM (Privacy Enhanced Mail) file system (see FIG. 2). Sensor data are continuously read in a loop by the Uno with a small 1 ms delay to avoid overheating. Data are collected in a buffer, and an average is calculated for every minute, which is then transmitted to the NodeMCU board. The Uno acquires around 80 readings per minute. Both boards communicate via the serial communication protocol UART (universal Asynchronus Receiver/Transmitter).",
+                                "The NodeMCU communicates securely with the online database. We utilize AWS DynamoDB, a NoSQL flexible database that can handle unstructured data. All the necessary security PEM files are stored in the NodeMCU\u2019s flash memory for authentication of MaRTiny. Using these files, NodeMCU establishes a communication path with AWS through the MQTT protocol, an extremely lightweight publish/subscribe messaging protocol designed for IoT. Once the communication is established, Node MCU waits for bytes of data to be received from the Uno board. Sensor data collected by Uno is sent to NodeMCU via serial communication every minute, which is then transmitted to DynamoDB using the MQTT protocol."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce MaRTiny system",
+                                "describe system functionality",
+                                "detail sensor components",
+                                "explain globe thermometer functionality",
+                                "describe anemometer functionality",
+                                "detail camera and vision system",
+                                "describe Jetson Nano and its functionality",
+                                "explain Arduino Uno and NodeMCU microcontrollers",
+                                "detail communication protocol between components",
+                                "describe data transmission to cloud database"
+                            ],
+                            "num_characters": 5334,
+                            "outline_medium": [
+                                "introduce MaRTiny system",
+                                "describe system components",
+                                "explain system functionality",
+                                "discuss system advantages",
+                                "highlight system applications"
+                            ],
+                            "outline_short": [
+                                "introduce MaRTiny system",
+                                "describe system components and functionality"
+                            ]
+                        },
+                        {
+                            "title": "Machine Learning Algorithm Development",
+                            "paragraphs": [
+                                "As MaRTiny is a low-cost, compact alternative to the MaRTy sensing platform (Middel and Krayenhoff, 2019; Middel et al., 2020, 2021), the replacement of highly accurate sensors has drawbacks including less accuracy and sensor lag (H\u00e4b et al., 2015). We noticed these inaccuracies caused serious errors in the calculated MRT values (FIG. 7). In particular, MRT was sensitive to the positioning and orientation of the MaRTiny relative to MaRTy (e.g., the MaRTiny was shaded in one of the test, which resulted in lower MRT values, while MaRTy\u2019s net radiometers were partially sun-exposed).",
+                                "To overcome this limitation, we formulate MRT estimation as a supervised learning problem. This requires labeled ground-truth MRT values to be provided in correspondence with our less robust meteorological sensor data. Below, we discuss data collection consisting of paired MaRTy and MaRTiny measurements to create this labeled data. This allows us to train a machine learning model to estimate MRT accurately from MaRTiny sensor data. We explored both traditional machine learning methods using a support vector machine (SVM) as well as a deep learning-based artificial neural network. These two algorithms are versatile and well-known in machine learning as they satisfy universal approximation theorems (Cybenko, 1989; Hammer and Gersmann, 2002). In particular, we observed an SVM with RBF (Radial Basis Function) kernel achieved the highest accuracy on our evaluation dataset below. This method is also computationally lightweight and can be easily deployed on the Jetson Nano for performing inference, i.e., the process of using a trained machine learning algorithm to make a prediction.",
+                                "To perform shadow detection in an image, we use the deep learning model Bi-directional Feature Pyramid with Recurrent Attention Residual Modules (BDRAR) (Zhu et al., 2018), visualized in the upper branch of FIG. 3. BDRAR network takes a single image as input and outputs a binary shadow map as output in an end-to-end manner. First, it leverages a convolutional neural network (CNN) to extract feature maps at different spatial resolutions. It then employs two series of recurrent attention residual modules to fully exploit global and local context for these feature maps. The features captured by shallow layers exploit shadow details in the local regions and the features captured by deep layers understands the overall shadow region of the image. FIG. 4 provides an example of shadow maps produced by the network."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate machine learning approach",
+                                "describe data collection for labeled dataset",
+                                "detail machine learning models (SVM and ANN)",
+                                "explain model evaluation and selection"
+                            ],
+                            "num_characters": 2499,
+                            "outline_medium": [
+                                "motivate machine learning approach",
+                                "describe machine learning models"
+                            ],
+                            "outline_short": [
+                                "develop machine learning model for MRT estimation"
+                            ]
+                        },
+                        {
+                            "title": "System Evaluation",
+                            "paragraphs": [
+                                "For evaluation, we collected a custom dataset of ground truth MRT values for two sun-exposed outdoor locations for 3 days in Tempe, Arizona, United States. For validation purposes, the MaRTy human-biometeorological platform (Middel and Krayenhoff, 2019) was paired with the MaRTiny system for simultaneous data logging. FIG. 6 illustrates the paired setup, the top box corresponding to MaRTiny and the bottom setup corresponds to MaRTy. We can clearly see the difference in scale between both the setups. In addition, an image dataset was collected for evaluating object and shade detection. Images from the MIPI camera were stored at random intervals along with the bounding boxes of the interested objects. Ground truth bounding boxes were drawn manually using tools such as AlexyAB, (2016); Tosmonav, (2020) for 30 images consisting of around 50 different objects. Precision and Recall for each object were calculated and then used to calculate mAP (mean Average Precision). The same images were used to evaluate shade detection using IOU (Intersection Over Union) metrics. Small video snippets were stored at random intervals which helped to cross-verify the number of people in a given time frame. All the images and videos were stored in an AWS S3 bucket and were deleted after testing.",
+                                "We first evaluated the performance of MaRTiny in estimating MRT values. We utilize Eq. 2 with the sensor data on-board to calculate MRT. MaRTy logs data every 2 s, and MaRTiny stores data every minute, hence we calculated 1-min averages for comparison. Ground truth MRT was calculated using Eq. 1. FIG. 7 shows MaRTiny MRT results and MaRTy\u2019s ground truth calculation as labeled in the figure. A significant error in MaRTiny\u2019s estimation of MRT was found in the mornings with an MSE of around 10\u00b0 C. The error is due to the spatial offset between the two devices, which caused the gray globe thermometer of the MaRTiny sensor to be partially shaded by a nearby palm tree in the mornings while MaRTy\u2019s net radiometers were sun- exposed. A palm tree has a narrow shadow pattern covering only portions of the whole MaRTy and MaRTiny setup (see FIG. 6).",
+                                "To overcome these issues, we utilized our supervised learning approach using both SVM and ANN. Machine learning models were trained on selected meteorological parameters - air temperature, globe temperature, humidity and UV intensity, which were comparatively more accurate and less prone to noise. We used around 12,000 data points for training and 3,000 for testing from a range of dates, times, and locations in the sensing period. These training points were fed as vectors into the scikit-learn package in Python for training SVMs and ANNs. 5-fold cross-validation was used to tune model hyperparameters such as learning rate. A separate dataset for evaluation consisted of around 700 data points from a single location collected in a day as is the usual application for this algorithm.",
+                                "Since there is a non-linear relation of globe temperature and air temperature with MRT given in Eq. 2, machine learning models need to understand complex non-linear relations between these parameters. A SVM with RBF kernel and a neural network with ReLU (Rectified Linear Unit) activation function are example of such models. In Table 3, we present a comparison of SVMs with three different kernels and a traditional artificial neural network (ANN). We report the Root Mean Square Error (RMSE) for both the testing and evaluation datasets. Note that the results of linear and polynomial SVM kernels justify our earlier assumption and the results of SVM with RBF kernel as well as the ANN achieved the best performance in quantitative metrics. From FIG. 8 we can see the performance of SVM with RBF kernel, which is almost linear with the ground truth.",
+                                "We trained our ANN on a i7 CPU. We set our learning rate \u03b1 to 0.001, which took around 5 min and 300 epochs to converge.",
+                                "Although this model performs slightly better on the test dataset than the SVM-RBF model, performance is identical on the evaluation dataset. The SVM model is also computationally lighter and can be easily trained and deployed on edge devices such as Jetson Nano.",
+                                "For object detection, we leverage the YOLOv3 architecture (Redmon and Farhadi, 2018). While not a state-of-the-art object detector, this model is computationally lightweight in comparison to more modern object detection models. Further, the object detector needed to be compatible with both the TensorRT engine which we utilize on the NVIDIA Jetson board as well as the Python dependencies and packages necessary to run BDRAR as well as itself. Future research could investigate the optimal choice of object detector with shade detection (or a joint-model) for enhanced application performance. Although the model is out-of-box, we wanted to evaluate its performance in the environment suitable for the MaRTiny device and hence, we collected a small custom dataset and evaluated performance on these images. This evaluation on custom dataset should only be considered as a secondary evaluation while we still refer the reader to the main evaluation mentioned in the original study (Redmon and Farhadi, 2018) for the full performance of the object detector.",
+                                "The standard evaluation metric used for any object detection is mAP (mean Average Precision). Bounding boxes were manually drawn using the tool for the dataset consisting of 30 images and IOU was calculated with the bounding boxes predicted by our model. Precision and recall is calculated for a series of different IOU thresholds ranging from 0.5 to 0.95. A precision-recall graph is constructed and the area under this graph provides us the mAP value of around 55%, which is close to the value reported in their study (Redmon and Farhadi, 2018). For our application IOU threshold of 0.5 gives us the optimal results. We also achieved an Average Precision of more than 85% for the class of Pedestrian, which is important for our application (FIG. 9).",
+                                "Evaluation of shadow detection is done on a per pixel basis, which is a binary evaluation method. A dataset consisting of 30 shade images was collected from different location and time. We manually annotated these images using the tool Tosmonav, (2020). We use the pre-trained BDRAR model to evaluate these images and calculated IOU of the shadow map with the ground truth and found a precision of 90%. This is not the most effective method to calculate model accuracy due to the irregular shapes, human error in annotation and small dataset and hence we also refer readers to the evaluation metrics of the original paper (Zhu et al., 2018). We evaluate our pedestrian in shade detection algorithm on a custom dataset of 50 images collected using MaRTiny. We have manually compared the detected values from our algorithm with the ground truth and plotted a confusion matrix to obtain an accuracy of around 80%. Test data consisted of different shading effects and relative positions of pedestrian. Since this kind of testing has not been carried out before, our result can act as a baseline for future tests. The accuracy can be improved on edge cases where pedestrian is partially exposed to Sun at different orientations. FIG. 10 and FIG. 11 provides examples of MaRTiny Vision where YOLOv3 detects different objects and works along with BDRAR to determine if a pedestrian is in shade or sun."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe evaluation dataset",
+                                "detail paired MaRTy and MaRTiny setup",
+                                "explain MRT calculation and comparison",
+                                "describe error in MaRTiny MRT estimation",
+                                "motivate supervised learning approach",
+                                "detail training and testing datasets",
+                                "explain model evaluation metrics (RMSE)",
+                                "compare SVM and ANN performance",
+                                "describe object detection using YOLOv3",
+                                "detail shade detection using BDRAR",
+                                "explain evaluation metrics for object detection (mAP)",
+                                "describe evaluation metrics for shade detection (IOU)",
+                                "detail pedestrian in shade detection algorithm",
+                                "explain evaluation results for pedestrian in shade detection"
+                            ],
+                            "num_characters": 7381,
+                            "outline_medium": [
+                                "introduce evaluation dataset",
+                                "describe evaluation methodology",
+                                "present MRT estimation results",
+                                "evaluate machine learning models",
+                                "discuss object detection results",
+                                "evaluate shade detection results",
+                                "summarize evaluation results"
+                            ],
+                            "outline_short": [
+                                "collect dataset for evaluation",
+                                "evaluate MRT estimation performance",
+                                "evaluate object and shade detection performance"
+                            ]
+                        },
+                        {
+                            "title": "Discussion",
+                            "paragraphs": [
+                                "This system engineering study introduced a novel low-cost device that combines meteorological sensing with computer vision to estimate MRT and space use. While previous work has mainly focused on assessing the accuracy and precision of various sensors and on advancing MRT simulation tools, the instant disclosure, in some aspects, focuses on developing a low-cost hardware and software setup that can be used by non-experts such as city staff and citizen scientists. We also explored the use of state-of-the-art machine learning techniques to improve MRT estimation from low-cost sensors.",
+                                "This description introduces the setup of the novel MaRTiny system to monitor biometeorological conditions and people\u2019s use of public spaces with changing weather conditions. An empirical study must follow to collect robust data over a long period of time to systematically analyze the relationship between thermal conditions and space usage. In addition, the MaRTiny biometeorological setup must be fully calibrated against NIST certified sensors before deployment, as it is built using off-the- shelf sensors with low accuracy (see Table 2).",
+                                "While an RMSE of 10\u00b0 C. between 6-directional MRT observations and globe temperature derived MRT may seem large, it is on the order of magnitude of errors reported by other authors and quite common for outdoor MRT measurements in heterogeneous built environments. Acero et al. (2021) found an RMSE of 7.4\u00b0 C. for the standard ISO7726 coefficient between the 6-directional setup and a standard black globe. Vanos et al. (2021) found an average difference of -1.6 \u00b1 7.2\u00b0 C. between an acrylic gray globe and integral radiation measurements on a solar roof that was not subject to shading from the surrounding built environment. Most recently, Lee et al. (2022) reported a large mean difference of 13.2-21.6\u00b0 C. on sunny days between globe thermometer MRT and traditional MRT measurements.",
+                                "Globe thermometers have various shortcomings, mostly related to the indirect measurement of incident radiative fluxes, which is highly sensitive to globe size, shape, material properties/assumptions, color, and wind speed (Vanos et al., 2021). Guo et al. (2018) and Chen et al. (2014) found significant impacts of wind speed on MRT obtained from globe thermometers, and Teitelbaum et al. (2020) point to errors from free convection. Globe thermometers also have a long response time (Nikolopoulou et al., 1999) that grows with globe diameter. MaRTinies are operated in stationary settings, which reduces the error, but they will not be able to respond quickly to changing cloud conditions. Lastly, globe thermometers are known to overestimate MRT during high incoming solar radiation periods and an underestimate at low solar elevation (Thorsson et al., 2006; Acero and Herranz-Pascual, 2015; Vanos et al., 2021).",
+                                "Advancements in sensor technology have led to smaller, more portable, and more affordable sensors that facilitate low-cost sensing for many applications. In the domain of urban climate, low-cost sensing has gained popularity for crowdsourcing and citizen science studies, but is also increasingly used to build IoT sensor networks, for example, to monitor air pollution (Xiaojun et al., 2015) or thermal conditions in occupational settings (Sulzer et al., 2022).",
+                                "MaRTiny leverages edge devices that are low-cost, low- powered, and yet computationally capable of running state-of- the-art machine learning algorithms. Integrating a vision system and people detection into the biometeorological sensing system enables in-depth analyses of how weather and microclimate conditions impact people\u2019s walking behavior in public spaces, including the use of shaded and sun-exposed areas. Once calibrated, the system will be deployed in City of Tempe parks and at playgrounds to inform municipal decision-making on targeted investments for cooling infrastructure in public spaces. The MaRTiny system is an example of how the emerging field of Urban Climate Informatics can support heat mitigation efforts through non-traditional observational methodologies.",
+                                "Pedestrian count under sun and shade along with other relevant counts (umbrellas, pets, and bicycles) are reported to the online database via the microcontroller or other processor that is communicatively coupled to the database, and the frame with identifying features is discarded. This allows the BSD to preserve the privacy of the individuals being observed, which is necessary for public deployment of the sensing platform.",
+                                "It will be understood that implementations are not limited to the specific components disclosed herein, as virtually any components consistent with the intended operation of a method and/or system implementation of a biometeorological sensing device may be utilized. Accordingly, for example, although particular processors, algorithms, protocols, devices, and sensors may be disclosed, such components may comprise any shape, size, style, type, model, version, class, grade, measurement, concentration, material, weight, quantity, and/or the like consistent with the intended operation of a method and/or system implementation for a biometeorological sensing device may be used. In places where the description above refers to particular implementations of a biometeorological sensing device, it should be readily apparent that a number of modifications may be made without departing from the spirit thereof and that these implementations may be applied to other biometeorological sensing devices."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "summarize MaRTiny system",
+                                "motivate empirical study",
+                                "discuss calibration requirements",
+                                "compare MRT estimation errors",
+                                "discuss limitations of globe thermometers",
+                                "motivate low-cost sensing",
+                                "describe edge device capabilities",
+                                "explain system deployment plans",
+                                "discuss privacy preservation",
+                                "describe potential system modifications",
+                                "conclude system implementation"
+                            ],
+                            "num_characters": 5516,
+                            "outline_medium": [
+                                "summarize system benefits",
+                                "discuss system limitations",
+                                "highlight future research directions",
+                                "emphasize system applications",
+                                "conclude system discussion"
+                            ],
+                            "outline_short": [
+                                "discuss system limitations and future work",
+                                "highlight system benefits and applications"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A biometeorological sensing device, comprising:\na processor communicatively coupled to a memory;\na plurality of sensors communicatively coupled to the processor, the plurality of sensors comprising a humidity sensor, a UV sensor, an anemometer, an atmospheric thermometer, a globe thermometer, and a vision system; and\na network interface communicatively coupled to the processor;\nwherein the processor is configured to:\nestimate a mean radiant temperature (MRT) using data received from the plurality of sensors;\nidentify a person in an image received from the vision system;\ndetermine a bounding box that encloses the person in the image;\ngenerate a shadow map from the image;\ncalculate an intersection over union (IOU) of the bounding box with the shadow map to determine if the person is in the shade; and\ntransmit observed space usage and estimated MRT to a server communicatively coupled to the network interface.",
+        "2. The device of claim 1, wherein an embedded computer board is configured to execute a deep learning model.",
+        "3. The device of claim 2, the embedded computer board is configured to execute a deep learning model is utilized to detect people in shade and sun.",
+        "4. The device of claim 1, wherein the processor generates the shadow map by instructing the embedded computer board to execute a Bi-directional Feature Pyramid with Recurrent Attention Residual Module on the image, the image being provided to the embedded computer board by the processor.",
+        "5. The device of claim 1, wherein the vison system comprises a camera.",
+        "6. The device of claim 1, where the vision system has capabilities of object detection and identification.",
+        "7. The device of claim 1, wherein the computer board is configured to record air temperature, relative humidity, globe temperature, and wind speed at predetermined regular intervals.",
+        "8. The device of claim 1, wherein the vision system capabilities include shade detection in outdoor areas.",
+        "9. The device of claim 1, wherein the sensors are configured to be powered by DC power.",
+        "10. The device of claim 1, wherein air temperature is measured using a white shield to reflect solar radiation to minimize solar radiation impact on the air temperature measurement.",
+        "11. A method of monitoring biometeorological conditions and people\u2019s use of public spaces with changing weather conditions, the method comprising\nutilizing a plurality of sensors communicatively coupled to the processor to obtain and store humidity, UV level, wind speed and/or pressure using an anemometer, atmospheric temperature, mean radiant temperature using a globe thermometer, and images using a vision system;\nwherein sensor data is stored using a network interface communicatively coupled to the processor; wherein the processor:\nestimates a mean radiant temperature (MRT) using data received from the plurality of sensors;\nidentifies a person in an image received from the camera;\ndetermines a bounding box that encloses the person in the image;\ngenerates a shadow map from the image;\ncalculates an intersection over union (IOU) of the bounding box with the shadow map to determine if the person is in the shade; and\ntransmits observed space usage and estimated MRT to a server communicatively coupled to the network interface.",
+        "12. The method of claim 11, wherein an embedded computer board is configured to execute a deep learning model to detect people in shade and sun.",
+        "13. The method of claim 11, wherein the processor generates the shadow map by instructing the embedded computer board to execute a Bi-directional Feature Pyramid with Recurrent Attention Residual Module on the image, the image being provided to the embedded computer board by the processor.",
+        "14. The method of claim 11, wherein air temperature, relative humidity, globe temperature, and wind speed are recorded at predetermined regular intervals.",
+        "15. The method of claim 11, wherein the vision system comprises a camera.",
+        "16. The method of claim 11, wherein the vision system identifies objects.",
+        "17. The method of claim 11, wherein the vision system identifies shade in outdoor areas.",
+        "18. The method of claim 11, wherein the sensors are powered by DC power.",
+        "19. The method of claim 11, wherein air temperature is measured using a white shield to reflect solar radiation to minimize solar radiation impact on the air temperature measurement.",
+        "20. The method of claim 11, wherein the processer transmits data to a cloud database using WiFi."
+    ]
+}

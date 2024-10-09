@@ -1,0 +1,952 @@
+{
+    "id": "US20100105564",
+    "authors": [
+        "Morag Park",
+        "Michael Hallett",
+        "Greg Finak",
+        "Svetlana Sadekova"
+    ],
+    "title": "Stroma Derived Predictor of Breast Cancer",
+    "date": "2007-09-17 00:00:00",
+    "abstract": "The invention provides methods and compositions for use in the diagnosis and management of cancer, particularly breast cancer. The invention utilizes differential gene expression profiles in tumor associated stroma and normal stroma to compile a stroma derived prognostic predictor that classifies breast cancer patients according to clinical outcome. The application provides nucleic acids, antibodies, microarray chips and kits for use with the methods described in the application.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The application relates to cancer and particularly to methods, compositions and kits for classifying patients with breast cancer according to clinical outcome."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to cancer and methods for classifying patients"
+                    ],
+                    "num_characters": 159,
+                    "outline_medium": [
+                        "relate to cancer and methods for classifying patients"
+                    ],
+                    "outline_short": [
+                        "relate to cancer classification"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Breast cancer is a major cause of morbidity and mortality in Western countries1. Although disease-related mortality has declined due to earlier diagnosis and adjuvant therapies, identification of patients at increased risk of recurrence, targeting them for more aggressive systemic therapy, remains a significant challenge. One of the challenges is still to identify patients at risk of relapse and the desire to not overtreat. Options for advanced disease are limited. Recent technological advances now permit the systematic genomic characterization of tumors, enhancing our understanding of cancer causes and progression2-4. Gene expression signatures have been identified that classify breast tumors into subtypes exhibiting distinct expression profiles and associated with specific clinical outcomes4. Transcriptional signatures have been identified for estrogen receptor (ER)-positive (luminal), HER2-positive (ERBB2-amplified), and ER/PR/HER2-negative (basal) breast cancer4. Predictors of metastasis in breast cancer are becoming available for use in the clinic2,5. Such prognostic gene expression signatures and predictors have generally been derived from tissues that include both tumor and stroma. Although some investigators have isolated and analyzed specific cell types or examined stroma-based gene expression signatures from cell culture experiments6-11, most have used whole tissue consisting of tumor cells and the surrounding tissue environment, where samples with <50% tumor cells are generally excluded3,4,12.",
+                        "Gene expression in isolated tumor stroma from clinical breast cancer samples has not been examined; therefore, it is important to elucidate the specific contribution of stroma to tumor progression. The tumor microenvironment plays an important role in cancer initiation and progression13,14. However, the exact mechanisms involved are not yet fully understood15-17.",
+                        "There is thus a need for a new method or system to predict outcome recurrence for patients with cancers such as breast cancer, with greater accuracy, ease and convenience. The present invention seeks to meet this and related needs."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce breast cancer",
+                        "describe current challenges in breast cancer treatment",
+                        "discuss recent advances in genomic characterization of tumors",
+                        "highlight need for new method to predict outcome recurrence"
+                    ],
+                    "num_characters": 2129,
+                    "outline_medium": [
+                        "introduce breast cancer and its challenges",
+                        "discuss existing gene expression signatures and predictors"
+                    ],
+                    "outline_short": [
+                        "motivate breast cancer diagnosis"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present inventors have used laser capture microdissection (LCM) to isolate tumor-associated and matched normal stroma from human breast cancer cases and performed microarray analyses to identify gene expression signatures or profiles associated with clinical outcome. From this, the inventors have developed a multivariate stromal derived prognostic predictor (SDPP) by ranking the independent predictive strength of each gene in the reference expression profile and identifying SDPP gene sets that are useful for predicting outcome in cancer patients.",
+                        "In one aspect, the present application concerns the identification of a set of genes in tumor stroma that are predictive of the outcome of cancer in breast cancer patients. These genes include pro-angiogenic and hypoxia-related factors, as well as T-cell markers, the combination of which is predictive of recurrence. The set of genes may be used to develop clinical tests to identify patients at risk of developing recurrence or likely to have a poor prognosis. They may also serve as targets for combination therapeutics.",
+                        "Accordingly, the present application provides a method for identifying a gene expression signature or profile of genes expressed in tumor associated stroma that is associated with, and useful for, predicting clinical outcome in cancer patients. A subset of the genes of the gene reference expression profile which is associated with disease outcome, is useful for predicting clinical outcome in a cancer patient. The method is useful for cancer types that comprise tumor associated stroma.",
+                        "In another aspect, the application provides, a method of predicting clinical outcome in a breast cancer patient using a stroma derived prognostic predictor (SDPP), comprising the steps of comparing expression levels of a plurality of genes of a SDPP gene set in a sample of the patient to a reference expression profile of the genes, wherein the reference expression profile is associated with clinical outcome, and predicting clinical outcome, wherein clinical outcome is predicted according to the similarity of the expression level to the reference expression profile associated with the clinical outcome. In one embodiment the breast cancer is HER2 positive. In another embodiment the breast cancer is ER positive.",
+                        "The application further provides in one embodiment, a method of predicting clinical outcome in a breast cancer patient comprising the steps of obtaining for a plurality of genes of a SDPP gene set in a sample of the patient, an expression level for the genes, comparing the expression level of the genes to a reference expression profile of the genes, wherein the reference expression profile is associated with a clinical outcome, and predicting clinical outcome, wherein clinical outcome is predicted according to the similarity of the expression level to the reference expression profile associated with the clinical outcome. The clinical outcomes in one embodiment are, good outcome, mixed outcome and poor outcome.",
+                        "The present application also provides methods of determining prognosis wherein the prognosis comprises a good prognosis, a mixed prognosis, or a poor prognosis. The SDPP predicts clinical outcome or prognosis independently of standard clinical prognostic factors and previously published predictors and has increased accuracy with respect to previously published predictors.",
+                        "In one embodiment, the application provides a method for determining prognosis in a breast cancer patient, comprising classifying the patient as having a good prognosis, a mixed prognosis or a poor prognosis comprising:\n\n\n- - a) detecting gene expression of at least 3 genes of a stroma derived\n    prognostic predictor (SDPP) gene set in a sample taken from the\n    patient;\n  - b) correlating the gene expression levels of the at least 3 genes\n    with a disease outcome class, the class being good prognosis, poor\n    prognosis or mixed prognosis.",
+                        "In another embodiment the application describes a method for predicting disease outcome in a breast cancer patient, comprising:\n\n\n- - a) obtaining an expression level of at least 3 genes of the SDPP\n    gene set in a sample of the patient;\n  - b) comparing the expression level of the genes in the sample to a\n    reference expression profile for the genes in the SDPP gene set; and\n  - c) predicting a good, mixed or poor prognosis disease outcome in the\n    patient;  \n    wherein the reference expression profile of the at least 3 genes in\n    the SDPP gene set correlates with a disease outcome class, the class\n    being either a good prognosis, a mixed prognosis or a poor prognosis\n    and wherein disease outcome is predicted according to the\n    statistical probability of falling within the class defined by the\n    reference expression profile of the at least 3 genes in the SDPP\n    gene set.",
+                        "In another embodiment, the application describes a method of diagnosing poor prognosis breast cancer comprising:\n\n\n- - a) obtaining an expression level of at least 3 genes of a SDPP gene\n    set in a sample of a subject;\n  - b) comparing the expression level of the genes to a reference\n    expression profile of corresponding genes in the SDPP gene set;  \n    wherein the reference expression profile of the at least 3 genes in\n    the SDPP gene set correlates with a poor prognosis class and wherein\n    the subject is diagnosed to have the poor prognosis according to the\n    statistical probability of falling within the poor prognosis class.",
+                        "An aspect provides a method of predicting the probability of cancer recurrence in a breast cancer patient. Accordingly in one embodiment the application provides a method for predicting recurrence in a breast cancer patient wherein a good prognosis predicts recurrence free survival of the patient, a poor prognosis predicts recurrence or non-survival, and a mixed prognosis predicts either recurrence free survival, or recurrence and/or non-survival comprising:\n\n\n- - a) obtaining an expression level of at least 3 genes of a SDPP gene\n    set in a sample of a patient;\n  - b) comparing the expression level of the genes to a reference\n    expression profile for corresponding genes in the SDPP gene set; and\n  - c) predicting recurrence, no recurrence or mixed recurrence and no\n    recurrence in the patient;  \n    wherein the reference expression profile of at least 3 genes in the\n    SDPP gene set correlates with a recurrence class, the class\n    comprising one or more of either no recurrence, recurrence or mixed\n    recurrence and no recurrence and wherein recurrence is predicted\n    according to the statistical probability of falling within the\n    recurrence class defined by the reference expression profile of the\n    at least 3 genes in the SDPP gene set.",
+                        "In one embodiment, the application provides a method of predicting the probability of cancer metastasis. In another embodiment, the application provides a method of diagnosing tumor subtype. Accordingly, the application provides a method for diagnosing a breast cancer sub-type in a subject having breast cancer wherein a good prognosis predicts a breast cancer subtype associated with recurrence free survival, a poor prognosis predicts a breast cancer subtype with recurrence or non-survival, and a mixed prognosis predicts a breast cancer subtype with either recurrence free survival, or recurrence and/or non-survival comprising the steps of:\n\n\n- - a) obtaining an expression level of at least 3 genes of a SDPP gene\n    set in a cancer sample of a subject; and\n  - b) comparing the expression level of the genes to a reference\n    expression profile of corresponding genes in the SDPP gene set; and\n  - c) diagnosing the cancer sub-type;  \n    wherein the reference expression profile of the at least 3 genes in\n    the SDPP gene set correlates with a cancer sub-type class, the class\n    comprising one or more of a good, mixed or poor prognosis cancer\n    sub-type and wherein the subject is predicted or diagnosed to have\n    the good, mixed or poor prognosis cancer subtype according to the\n    statistical probability of falling within the class defined by the\n    reference expression profile of the at least 3 genes in the SDPP\n    gene set.",
+                        "Diagnosing tumor subtype is important for a variety of applications including assigning treatment and assigning patients to appropriate clinical trials.",
+                        "Accordingly another aspect relates to a method of assigning or selecting a treatment or therapy for a breast cancer patient. In one embodiment the application provides a method for classifying a breast cancer wherein a good prognosis classifies a breast cancer class in a recurrence free survival class, a poor prognosis classifies a breast cancer in a recurrence or non-survival class, and a mixed prognosis classifies a breast cancer in either recurrence free survival, or recurrence and/or non-survival class comprising:\n\n\n- - a) obtaining an expression level of at least 3 genes of a SDPP gene\n    set in a cancer sample of a patient;\n  - b) comparing the expression level of the genes to a reference\n    expression profile for the genes in the SDPP gene set; and\n  - c) classifying the cancer as a good mixed or poor prognosis\n    cancer;  \n    wherein the reference expression profile of the at least 3 genes in\n    the SDPP gene set correlates with a cancer class, the class\n    comprising one or more of a good, mixed or poor prognosis cancer and\n    wherein the subject is predicted or diagnosed to have the good,\n    mixed or poor prognosis cancer according to the statistical\n    probability of falling within the class defined by the reference\n    expression profile of the at least 3 genes in the SDPP gene set.",
+                        "In one embodiment, method of selecting or assigning a treatment to a breast cancer patient comprises\n\n\n- - a) classifying the cancer according to a method described in the\n    application; and\n  - b) assigning an appropriate treatment according to the cancer class.",
+                        "In one embodiment, a method for optimizing treatment is provided. In another embodiment, a method for monitoring treatment is provided. In yet a further embodiment, a method of assigning a subject to or selecting a subject for a clinical study is provided. Accordingly the application describes a method of assigning a breast cancer patient to a clinical trial comprising:\n\n\n- - a) classifying the cancer according to a method described in the\n    application; and\n  - b) assigning the patient to a clinical trial for the cancer class.",
+                        "Another aspect relates to integration of the SDPP predictor with other predictors and signatures. Combining the SDPP with other known predictors and signatures improves clinical outcome prediction such as the prediction of metastases. The predictors are combined in one embodiment using a graphical modeling approach. In one embodiment the SDPP is combined to construct a predictor of metastasis.",
+                        "The application provides a number of SDPP gene sets comprising a plurality of genes that are useful with the methods described in the application. In one embodiment the SDPP gene set comprises at least 3 genes, 4-5 genes, at least 5 genes, 6-10 genes, 11-14 genes, 15 genes, 16-18 genes, 19 genes, 20-25 genes, 26 genes, 27-30 or more than 30 genes of the genes listed in Tables 3-6 and 9-11. In another embodiment, the application involves the use of a sub-set of genes such as 20 genes that are expressed in breast tumor stroma for diagnostic and possible therapeutic purposes.",
+                        "One aspect of the application is a composition comprising a plurality of nucleic acid sequences, wherein each nucleic acid sequence hybridizes to an RNA product of a gene of a SDPP gene set or a nucleic acid sequence complementary to the RNA product, wherein the composition is used to detect the level of expression of at least 2 genes of a SDPP gene set. The application also relates to specific primers and probes.",
+                        "Another aspect of the application is a composition comprising a plurality of 2 or more binding agents for example, isolated polypeptides, where each binding agent binds to a polypeptide product of a gene of a SDPP gene set described in the application.",
+                        "The application also provides in one aspect a method of identifying agents for use in the treatment of cancer. In one embodiment the method comprises identifying an agent that inhibits expression of one or more hypoxia response genes implicated in poor prognosis. In another embodiment, the method comprises identifying an agent that inhibits expression of one or more Th2 response genes associated with poor prognosis. In a further embodiment, the method comprises identifying an agent that inhibits expression of one or more angiogenesis genes associated with poor prognosis. In yet a further embodiment, the method comprises identifying an agent that inhibits expression of at least two genes selected from the group consisting of hypoxia response genes, Th2 response genes and angiogenesis genes associated with poor prognosis.",
+                        "The application also includes kits comprising nucleic acids and polypeptides described herein, that are useful for detecting expression levels of SDPP gene set gene products. In one embodiment, the kit comprises components for multiplex PCR.",
+                        "The application further includes arrays that are useful for detecting SDPP gene set expression levels. In one embodiment, the array is a microarray. In a further embodiment, the array is a DNA array. In another embodiment, the array is a tissue array.",
+                        "The application further includes computer systems, computer readable mediums and computer program products for implementing the methods described in the application.",
+                        "Other features and advantages of the present invention will become apparent from the following detailed description. It should be understood, however, that the detailed description and the specific examples while indicating preferred embodiments of the invention are given by way of illustration only, since various changes and modifications within the spirit and scope of the invention will become apparent to those skilled in the art from this detailed description."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce laser capture microdissection (LCM) to isolate tumor-associated and matched normal stroma",
+                        "perform microarray analyses to identify gene expression signatures",
+                        "develop multivariate stromal derived prognostic predictor (SDPP)",
+                        "identify set of genes in tumor stroma predictive of outcome",
+                        "describe genes including pro-angiogenic and hypoxia-related factors",
+                        "describe genes including T-cell markers",
+                        "provide method for identifying gene expression signature",
+                        "provide method for predicting clinical outcome using SDPP",
+                        "describe method for predicting clinical outcome in breast cancer patient",
+                        "describe method for determining prognosis",
+                        "describe method for predicting disease outcome",
+                        "describe method for diagnosing poor prognosis breast cancer",
+                        "describe method for predicting probability of cancer recurrence",
+                        "describe method for predicting probability of cancer metastasis",
+                        "describe method for diagnosing tumor subtype",
+                        "describe method for assigning treatment or therapy",
+                        "describe method for optimizing treatment",
+                        "describe method for monitoring treatment",
+                        "describe method for assigning subject to clinical study",
+                        "integrate SDPP predictor with other predictors and signatures",
+                        "combine SDPP with other known predictors and signatures",
+                        "describe SDPP gene sets",
+                        "describe composition comprising nucleic acid sequences",
+                        "describe composition comprising binding agents",
+                        "describe method of identifying agents for use in treatment of cancer",
+                        "describe kits comprising nucleic acids and polypeptides",
+                        "describe arrays for detecting SDPP gene set expression levels",
+                        "describe computer systems and computer program products"
+                    ],
+                    "num_characters": 14125,
+                    "outline_medium": [
+                        "introduce laser capture microdissection and microarray analyses",
+                        "identify gene expression signatures associated with clinical outcome",
+                        "develop multivariate stromal derived prognostic predictor (SDPP)",
+                        "identify genes predictive of outcome in cancer patients",
+                        "use genes to develop clinical tests and combination therapeutics",
+                        "provide method for identifying gene expression signature",
+                        "provide method for predicting clinical outcome using SDPP",
+                        "provide method for determining prognosis",
+                        "provide method for predicting disease outcome",
+                        "provide method for diagnosing poor prognosis breast cancer",
+                        "provide method for predicting probability of cancer recurrence",
+                        "provide method for predicting probability of cancer metastasis",
+                        "provide method for diagnosing tumor subtype",
+                        "provide method for assigning treatment or therapy"
+                    ],
+                    "outline_short": [
+                        "introduce stromal derived prognostic predictor (SDPP)",
+                        "describe SDPP gene sets",
+                        "outline method for predicting clinical outcome",
+                        "describe method for determining prognosis",
+                        "outline method for predicting disease outcome",
+                        "describe method for diagnosing poor prognosis breast cancer",
+                        "summarize SDPP applications"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "It is increasingly evident that breast cancer outcome is strongly influenced by signals emanating from tumor-associated stroma. However, little is known about how gene expression changes in this tissue affect tumor progression.",
+                        "The inventors are the first to provide a predictor of clinical outcome in patients with breast cancer based on normal and tumor-associated stroma cell expression profiles. The inventors have compared gene expression profiles from laser capture-microdissected tumor-associated versus matched normal stroma, and have derived transcriptional or reference expression profiles strongly associated with clinical outcome. Based on the outcome associated profiles derived from tumor associated stroma, the inventors have developed a prognostic tool for predicting clinical outcome. Disclosed herein is a stroma-derived prognostic predictor (SDPP) that provides new information to stratify disease outcome in breast cancer patients, independent of standard clinical prognostic factors and previously published predictors. The SDPP selects poor-outcome patients from multiple clinical subtypes, including lymph node-negative patients, and predicts outcome in multiple published expression data sets generated from whole tumor tissue. The SDPP has increased accuracy with respect to previously published predictors and prognostic accuracy increases upon predictor integration. Genes represented in the SDPP gene sets reveal the strong prognostic capacity of differential immune responses as well as angiogenic and hypoxic responses.",
+                        "Accordingly, in one embodiment, the application provides a stroma derived prognostic predictor (SDPP). The SDPP compares the expression level of 5 or more genes of a SDPP gene set in a sample of a breast cancer patient to the reference expression profile of the genes, the reference expression profile being associated with a disease outcome class, and predicts disease outcome according to the probability of falling within the disease outcome class defined by the reference expression profile of the SDPP genes.",
+                        "As used herein \u201cSDPP\u201d means stroma derived prognostic predictor and refers to a multivariate predictor or classifier generated from comparing gene expression in tumor associated versus normal stroma and identifying a reference expression profile of genes and/or gene sets associated with and predictive of a clinical outcome class, the classes being good, mixed and poor outcome. The SDPP predictor includes the correct weighting of genes. The SDPP provides a number of \u201cSDPP gene sets\u201d and the correct weighting of each gene in the gene set. The SDPP is useful for a variety of methods including methods for predicting clinical outcome, recurrence and metastasis, classifying and stratifying patients and tumors according to clinical outcome, diagnosing cancer subtype and/or providing a prognosis wherein the prognosis is good, mixed (alternatively referred to as uncertain) or poor. The SDPP gene sets are also useful for assigning, optimizing and monitoring treatment and assigning patients to clinical trials. The SDPP is useful in one embodiment for assigning, optimizing and monitoring treatment and assigning patients to clinical trials for HER2 positive cancers.",
+                        "As used herein \u201cSDPP gene set\u201d means a set of genes identified as predictive of outcome using a classifier such as a na\u00efve Bayes classifier, whose expression profile is associated with and predictive of a clinical outcome class. The gene sets were identified using a method wherein genes of a gene signature of tumor associated stroma subtypes were ranked according to their independent prognostic ability (Table 3) and then sets of incrementally larger gene sets from the ordered list were assessed using a multivariate na\u00efve Bayes classifier to identify SDPP gene sets that are predictive of clinical outcome.",
+                        "In one embodiment, the SDPP gene sets comprise genes listed in Tables 3-6 and 9-11, which are useful for predicting disease or clinical outcome. In a preferred embodiment the SDPP gene set comprises gene sets listed in Tables 9-11.",
+                        "The inventors have shown that prediction is also accomplished using a subset of genes in a SDPP gene set. By way of example, the inventors demonstrate that a subset of 15 of the 26 genes in the SDPP gene set provided in Table 9 (which 15 genes are listed in Table 11) is useful for predicting clinical outcome in one dataset (the NKI dataset) and a subset of 19 of the 26 genes in the SDPP gene set provided in Table 9 (which 19 genes are listed in Table 11) is useful for predicting clinical outcome in another dataset (the Wang et al.12 dataset). Accordingly in one embodiment, the gene set comprises a gene set listed in Table 11.",
+                        "In addition, a number of different SDPP gene sets were found to be predictive of outcome. Gene sets comprising as few as 3 genes are useful for the methods described in the application. The gene sets or subsets thereof used in the method described herein include at least one gene from each of three gene cluster groups identified (FIG. 2a). One gene cluster comprises genes predominantly elevated in the poor outcome class and includes genes associated with an angiogenic response and hypoxia response. A second comprises genes predominantly expressed in the good outcome class and the third comprises genes expressed in both the good and mixed outcome class. The SDPP gene sets useful for predicting clinical outcome comprise at least one gene from each of the identified gene clusters. For example a SDPP gene set in one embodiment comprises at least one gene having a reference expression profile associated with good outcome, at least one gene having a reference expression profile associated with mixed and good outcome and at least one gene having a reference expression profile associated with poor outcome. In one embodiment the SDPP gene set comprises at least one group 1 gene, at least 1 group 2 gene; and at least one group 3 gene, of Table 10. Accuracy of prediction is increased by including additional SDPP gene set genes. In one embodiment the gene set comprises at least 3, 4-5, at least 5, 6-10, 11-14, at least 15, 16-18, 19, 21-25, 26 or at least 26 of the genes listed in Tables 3-6, and/or 9-11. In one embodiment the gene set comprises at least 3 genes listed in Table 10 comprising at least one group 1 gene, at least 1 group 2 gene and at least one group 3 gene. In another preferred embodiment, the gene set comprises the genes listed in Table 9. The genes listed in Table 9 comprise the genes identified as the optimal predictor.",
+                        "As used herein \u201cclinical outcome\u201d, alternatively referred to as \u201cdisease outcome\u201d, also as \u201cprognosis\u201d is a patient class defined by a reference expression profile of a SDPP set comprising at least 3 genes. The clinical outcome, or prognosis means as used herein an indication of disease progression and includes an indication of likelihood of recurrence, metastasis, death due to disease, tumor subtype or tumor type. In one embodiment the clinical outcome class includes a good outcome, a poor outcome and a mixed outcome class. The clinical outcome class in another embodiment comprises a good prognosis, a mixed prognosis and/or a poor prognosis. A \u201cgood outcome\u201d or a \u201cgood prognosis\u201d as used herein refers to an increased likelihood of disease free survival for at least 60 months A \u201cpoor outcome\u201d or \u201cpoor prognosis\u201d as used herein refers to an increased likelihood of relapse, recurrence, metastasis or death within 60 months. A mixed outcome or mixed prognosis as used herein refers to a class that comprises both good outcome or prognosis and poor outcome or prognosis patients.",
+                        "As used herein \u201cexpression level\u201d of a gene of a SDPP gene set refers to the quantity of gene product produced by the gene in a sample of a patient wherein the gene product can be a transcriptional product or a translated transcriptional product. Accordingly the expression level can pertain to a nucleic acid gene product such as RNA or cDNA or a polypeptide gene product. The expression level is derived from a patient sample. The expression level in certain embodiments is detected using methods known in the art and described herein. As the inventors have shown the expression level of genes of a SDPP gene set may also be extracted from data comprising expression levels of a subset of SDPP genes. For example the expression levels is optionally obtained from data derived from a patient sample for other tests. Accordingly, in one embodiment the expression level of SDPP genes is obtained from a data set comprising values for the expression of at least 3 genes of a SDPP gene set. In a preferred embodiment the genes comprise genes from the SDPP gene set listed in Tables 9-11.",
+                        "A \u201creference expression profile\u201d optionally referred to as an \u201cexpression profile\u201d as used herein refers to the expression signature of SDPP genes or a gene set associated with a clinical outcome in a breast cancer patient. The reference expression profile is identified using one or more samples comprising tumor associated stroma wherein the expression is similar between related samples defining an outcome class and is different to unrelated samples defining a different outcome class such that the reference expression profile is associated with a particular clinical outcome. The reference expression profile is accordingly a reference profile or reference signature of the expression of SDPP gene set genes, the SDPP genes being genes listed in Tables 3-6 and 9-11, to which the expression levels of the corresponding genes in a patient sample are compared in methods for determining or predicting clinical outcome.",
+                        "As used herein \u201csample\u201d refers to any fluid, cell or tissue sample from a patient which can be assayed for gene expression levels, particularly genes differentially expressed in patients having or not having breast cancer. The sample comprises a cancer cell or cells or a tumor associated stroma cell or cells. Although the SDPP gene sets were identified using tumor associated stroma, the methods can be applied to tumor and/or tumor associated samples with or without stromal tissue. The inventors have shown that the SDPP is useful for predicting outcome using data derived from whole breast tumor tissue, containing tumor and stroma. As used herein, sample refers to a patient tumor or tumor associated sample. Tumor and cancer are herein used interchangeably. The sample is optionally a biopsy, a paraffin embedded section or material, a frozen specimen or fresh tumor tissue."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Identifying Classes and Genes for Predicting Clinical Outcome",
+                            "paragraphs": [
+                                "The application provides in one embodiment, a method to identify or discover classes according to the differential expression in tumor associated versus normal stroma. The inventors have conducted microarray experiments using tumor associated and normal stromal RNA samples and have identified the top 200 most variable genes across a group of breast cancer patients. Tumor stroma was clustered using these genes, identifying or discovering good outcome, mixed outcome and poor outcome classes, and the significance of the clusters was assessed by bootstrapping. A person skilled in the art will recognize that other numbers of most variable genes can be used. For example the top 50, 51-100, 101-200, 201-300 or more genes can be used.",
+                                "\u201cClass discovery\u201d as used herein refers to a method of analyzing data such as microarray data to identify or discover reproducible classes or clusters that have similar behaviour or properties, within the data set.",
+                                "In another embodiment the application provides a method of identifying informative genes, which are informative for predicting a class distinction. The inventors used pairwise class distinction to identify genes differentially expressed between the poor outcome, mixed outcome and good outcome classes. A reference expression profile for the outcome classes was derived. The class distinction in one embodiment is clinical outcome or prognosis. In other embodiments the class distinctions include among others disease recurrence, metastasis and tumor subtype.",
+                                "\u201cClass distinction\u201d as used herein refers to a method of analyzing data such as microarray data that identifies features such as genes that distinguish between known classes. To construct the multivariate predictor, the inventors trained Bayes' classifiers to predict prognosis using a ranked gene reference expression profile of the recurrence positive stroma cluster. The inventors are the first to use tumor associated stroma to construct a multivariate predictor. A person skilled in the art will recognize that although breast cancer tissues were used to derive the predictor, other cancer types that involve stomal involvement can also be used to derive a predictor for the cancer type.",
+                                "As mentioned, the inventors used breast cancer tissues to develop a multivariate predictor. Accordingly, the application also provides a stromal derived prognosis predictor (SDPP) which is a multivariate predictor of clinical outcome in breast cancer patients.",
+                                "A number of SDPP gene sets were identified that are useful with the methods described in the application for predicting clinical outcome in a breast cancer patient. Comparison of the expression level of 5 or more genes of a SDPP gene set in a sample of a patient to the gene reference expression profile the 5 or more genes of the SDPP gene set associated with a clinical outcome permits prediction of a clinical outcome in the patient.",
+                                "\u201cClass prediction\u201d as used herein refers to a method of classifying unknown samples into known classes. The stroma derived prognostic predictor disclosed herein provides a predictor for classifying disease outcome of cancer patients into good, poor and mixed classes.",
+                                "Accurate prediction and/or diagnosis of disease outcome, tumor subtype, disease recurrence or metastasis is important for a number of reasons. Patients may be classified on the basis of clinical outcome which allows for example assigning or selecting appropriate treatment plans according to the aggressiveness of the particular disease subtype. It further provides additional information that is useful for assigning or selecting subjects for clinical trials. The efficacy of new therapeutic agents can therefore be assessed according to the particular profiles of the trial participants which can also provide for more appropriate treatment options according to the disease subtype.",
+                                "Gene weighting is assigned using a probabilistic classifier such as a na\u00efve Bayes classifier. A \u201cna\u00efve Bayes classifier\u201d as used herein refers to a simple probabilistic classifier based on applying Bayes theorem. The na\u00efve Bayes classifier is trained in a supervised setting.",
+                                "As mentioned, the methods of constructing a stromal derived classifier or predictor and identifying stromal derived gene sets that are predictive of clinical outcome can be applied to any cancer wherein the tumor is associated with stroma and expression levels in tumor associated stroma and normal stroma can be detected.",
+                                "In one embodiment the application describes a method for predicting the likelihood of recurrence or prognosis of breast cancer in a patient, said method comprising:\n\n\n- - isolating normal stroma and epithelium as well as tumor stroma and\n    epithelium from breast tissue samples;\n  - identifying the top 200 most variable genes across all samples;\n  - using LIMMA and SAM approaches to identify the genes differentially\n    expressed between poor outcome tumor stroma subtypes and remaining\n    tumor stroma samples;\n  - using the set union of these approaches to derive expression\n    profiles of tumor stroma with poor outcome; and\n  - comparing said expression profiles with the expression profile of\n    tumor stroma of the patient to determine the likeliness of\n    recurrence or prognosis of breast cancer in the patient.",
+                                "In another embodiment, the application describes a method for predicting the likelihood of recurrence or prognosis of breast cancer in a patient, said method comprising:\n\n\n- - isolating normal stroma and epithelium as well as tumor stroma and\n    epithelium from breast tissue samples;\n  - identifying the top 200 most variable genes across all samples;\n  - using LIMMA and SAM approaches to identify the genes differentially\n    expressed between poor outcome tumor stroma subtypes and remaining\n    tumor stroma samples;\n  - using the set union of these approaches to derive expression\n    profiles of tumor stroma with poor outcome; and\n  - comparing said expression profiles with the expression profile of\n    tumor stroma of the patient to determine the likeliness of\n    recurrence or prognosis of breast cancer in the patient.",
+                                "In a further embodiment the application describes a method for predicting the likelihood of recurrence or prognosis of breast cancer in a patient, said method comprising:\n\n\n- - isolating normal stroma and epithelium as well as tumor stroma and\n    epithelium from breast tissue samples;\n  - identifying the top 20 most variable genes across all samples;\n  - using LIMMA and SAM approaches to identify the genes differentially\n    expressed between poor outcome tumor stroma subtypes and remaining\n    tumor stroma samples;\n  - using the set union of these approaches to derive expression\n    profiles of tumor stroma with poor outcome; and\n  - comparing said expression profiles with the expression profile of\n    tumor stroma of the patient to determine the likeliness of\n    recurrence or prognosis of breast cancer in the patient.",
+                                "In a yet a further embodiment the application describes a method for predicting the likelihood of recurrence or prognosis of breast cancer in a patient, using a method of described in the application wherein the 20 genes are: GZMA, CD8A, BC028083, CD52, CD48, CD3Z, GIMAP5, F2RL2, SLC40A1, RAI2, OGN, C21orf34, adrA2A, HOXA10, SPP1, HRASLS, VGLL1, ADM, AK055101 and THC2394165.\n\n\n- - A method of identifying a stroma derived predictor gene set\n    comprising a plurality of genes whose expression profile is\n    associated with disease outcome in a cancer patient comprising:\n  - a) determining a gene expression level in a first sample comprising\n    tumor associated stroma and in a second sample comprising normal\n    stroma;\n  - b) identifying at least 50 of the genes that vary most between the\n    first and the second sample;\n  - c) clustering the first sample according to the at least 50 most\n    variable genes to identify clusters associated with a disease\n    outcome, wherein the outcomes include at least good outcome and poor\n    outcome;\n  - d) identifying a gene set that comprises genes from each of the\n    clusters that correlates with the disease outcome; and\n  - e) determining whether the correlation is stronger than expected by\n    chance;\n  - wherein the stoma derived predictor gene set is the set of genes\n    that correlates with disease outcome in the patient more strongly\n    than expected by chance.",
+                                "In another embodiment, the application describes a method of identifying a stroma derived predictor gene set consisting of a plurality of genes comprising:\n\n\n- - a) comparing a gene expression level in a sample comprising tumor\n    associated stroma to a sample comprising normal stroma;\n  - b) sorting at least 50 genes by degree to which their expression in\n    the sample comprising tumor associated stroma vary most from the\n    sample comprising normal stroma;\n  - c) identifying a gene set from the sorted genes that correlates with\n    a disease outcome wherein the disease outcome is either a good\n    prognosis, a mixed prognosis or a poor prognosis;\n  - d) determining whether the correlation is stronger than expected by\n    chance; and\n  - e) displaying or outputting a result of steps a), b) c) or d) to a\n    user, a computer readable storage medium, a monitor, or a computer\n    that is part of a network;  \n    wherein the SDPP gene set is the set of genes that correlates with a\n    disease outcome more strongly than chance."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce class discovery",
+                                "describe microarray experiments",
+                                "identify top 200 most variable genes",
+                                "cluster tumor stroma",
+                                "assess cluster significance",
+                                "define class discovery",
+                                "introduce class distinction",
+                                "describe pairwise class distinction",
+                                "identify genes differentially expressed",
+                                "derive reference expression profile",
+                                "construct multivariate predictor",
+                                "train Bayes' classifiers",
+                                "describe class distinction",
+                                "define class prediction",
+                                "describe SDPP",
+                                "provide method for predicting clinical outcome",
+                                "describe gene weighting",
+                                "summarize class prediction"
+                            ],
+                            "num_characters": 9441,
+                            "outline_medium": [
+                                "introduce class discovery method",
+                                "describe microarray experiments",
+                                "define class distinction method",
+                                "outline pairwise class distinction",
+                                "describe reference expression profile derivation",
+                                "introduce Bayes' classifier",
+                                "describe multivariate predictor construction",
+                                "summarize SDPP development",
+                                "discuss predictor applications"
+                            ],
+                            "outline_short": [
+                                "describe method for identifying classes according to differential expression in tumor associated versus normal stroma",
+                                "explain class discovery and identification of informative genes",
+                                "discuss construction of multivariate predictor using Bayes' classifiers",
+                                "provide examples of class distinctions and their application"
+                            ]
+                        },
+                        {
+                            "title": "Cancers",
+                            "paragraphs": [
+                                "The application provides a method for predicting clinical outcome in a breast cancer patient using SDPP. Different breast cancer disease subtypes are known in the art and the SDPP is optionally used to predict outcome in any breast cancer subtype. The breast cancer is optionally node negative or node positive, ER positive or ER negative, HER2 positive or HER2 negative, PR positive or PR negative, high grade or low grade, basal-like or luminal-like, or any combination of these six factors. The inventors have shown that the methods described in the application are useful for predicting disease outcome prior to node involvement in breast cancer patients. Accordingly, in one embodiment the application provides a method of predicting disease outcome in a node negative breast cancer patient. The inventors have further shown that the SDPP is useful for predicting good versus poor outcome in patients having ER positive and HER2 positive cancers. Accordingly, the application provides in one embodiment a method of predicting clinical outcome in a patient that has an ER positive breast cancer. In another embodiment, the methods are applied to a patient having an ER negative breast cancer. In another embodiment, the methods described in the application are applied to a patient with a HER2 positive breast cancer. In a further embodiment the methods described in the application are applied to a patient with a HER2 negative breast cancer.",
+                                "As stromal changes accompany other cancers with stromal involvement, the methods of identifying a stroma derived predictor and of identifying a stromal derived gene set based on gene expression differences in tumor associated stroma versus normal stroma are applicable to different cancer types. \u201cCancer\u201d as used herein refers to a group of diseases characterized by uncontrolled growth and spread of abnormal cells. Cancer and tumor are herein used interchangeably.",
+                                "Accordingly, the application provides methods that are useful for identifying stromal derived predictor gene sets that are associated with clinical outcome in a cancer patient. In another embodiment the methods and stromal derived predictor gene sets described herein are useful for predicting disease outcome in a cancer patient or cancer subject. In one embodiment the cancer type is breast cancer. In another embodiment the cancer type is a colon cancer. In a further embodiment, the cancer type is a lung cancer. in other embodiments the cancer type is bladder, prostate or ovarian cancer."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce breast cancer",
+                                "describe breast cancer subtypes",
+                                "apply SDPP to breast cancer subtypes",
+                                "apply SDPP to other cancer types",
+                                "define cancer"
+                            ],
+                            "num_characters": 2510,
+                            "outline_medium": [
+                                "describe breast cancer subtypes",
+                                "outline applicability to other cancer types"
+                            ],
+                            "outline_short": [
+                                "discuss application of SDPP to different breast cancer subtypes and other cancer types"
+                            ]
+                        },
+                        {
+                            "title": "Nucleic Acid Compositions",
+                            "paragraphs": [
+                                "One aspect of the application is a composition comprising a plurality of at least two isolated nucleic acid sequences. The isolated nucleic acids comprise sequences complementary to novel SDPP genes."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe nucleic acid composition"
+                            ],
+                            "num_characters": 199,
+                            "outline_medium": [
+                                "describe nucleic acid composition comprising SDPP genes"
+                            ],
+                            "outline_short": [
+                                "describe composition comprising isolated nucleic acid sequences complementary to novel SDPP genes"
+                            ]
+                        },
+                        {
+                            "title": "SDPP Genes and Nucleic Acids",
+                            "paragraphs": [
+                                "The application describes a number of SDPP genes and gene sets. In one aspect the application provides a SDPP gene set comprising two or more isolated nucleic acids corresponding to SDPP genes. In one embodiment the SDPP gene set comprises at least 2, 3, 4, 5, 6, 7-10 or more isolated nucleic acids corresponding to SDPP genes. In another embodiment the SDPP gene set comprises 11-14, 15, 16-18, 19, 20-25, 26, 27-29, 30-50, 50-100, 100-162, 163, 164-199 or 200 isolated nucleic acids. In another embodiment the SDPP gene set genes are selected from genes listed in Tables 2-5 and 9-11. In one embodiment, the SDPP gene set comprises a plurality of two or more isolated nucleic acid sequences listed in Tables 3-7 and 9-11",
+                                "The SDPP gene sets also comprise a number of novel gene products that correlate with disease outcome. These include gene products which hybridize to probes THC2436642 (SEQ ID NO: 13), A\u201424_P82805 (SEQ ID NO: 14), ENST0000024 (SEQ ID NO:15), and THC2269172 (SEQ ID NO:16) THC2436642 is a TIGR human consensus sequence identifier and corresponds to probe A\u201432_P13533 with sequence GTTGGCTGATGG CTTTTAGCTTGAGCCCCAACAGTGTGACTTCATACAAGGCAATTTCTT (SEQ ID NO: 13). The sequence for A\u201424_P82805 probe is CCTCTGGACAAGGGAGGGCTTTGCATTCATGAGGGCTTCCACTGTGC TGCCTCCTCTTAA (SEQ ID NO: 14). ENST00000246228 corresponds to probe A\u201423_P366468 with sequence TAGAACGAAGATAAGCAAACTACAA ACCAGGAAAATGAAGGGGTTGAAGAAGTGACCTGC (SEQ ID NO: 15). THC2269172 corresponds to probe is A\u201424_P936252 with sequence GCAGAGATCCACGAGGTATTGAGAGCAACGCGGAAAATAGTA GTGAACCCTGTAAAAATC (SEQ ID NO: 16) The provided names beginning with \u201cA_\u201d are the agilent probe ids The THC numbers are TIGR tentative human consensus sequence identifiers.",
+                                "In one embodiment, the application provides an isolated nucleic acid comprising a polynucleotide sequence selected from the group consisting of:\n\n\n- - a) a polynucleotide sequence complementary to of any one of SEQ ID\n    NOS: 13-16;\n  - b) a polynucleotide sequence having at least 70%, 80% or 90%\n    sequence identity with a nucleic acid of a); and\n  - c) a polynucleotide sequence that that hybridizes to SEQ ID NOS:\n    13-16 under stringent conditions.",
+                                "The term \u201cisolated nucleic acid sequence\u201d as used herein refers to a nucleic acid substantially free of cellular material or culture medium when produced by recombinant DNA techniques, or chemical precursors, or other chemicals when chemically synthesized. The term \u201cnucleic acid\u201d is intended to include DNA and RNA and can be either double stranded or single stranded.",
+                                "The term \u201chybridize\u201d refers to the sequence specific non-covalent binding interaction with a complementary nucleic acid. One aspect of the application provides an isolated nucleotide sequence, which hybridizes to a RNA product of a gene of a SDPP gene set described in the application or a nucleic acid sequence which is complementary to an RNA product of a gene of a SDPP gene set described in the application. In a preferred embodiment, the hybridization is under high stringency conditions. Appropriate stringency conditions which promote hybridization are known to those skilled in the art, or can be found in Current Protocols in Molecular Biology, John Wiley & Sons, N.Y. (1989), 6.3.1 6.3.6. For example, 6.0\u00d7 sodium chloride/sodium citrate (SSC) at about 45\u00b0 C., followed by a wash of 2.0\u00d7SSC at 50\u00b0 C. may be employed.",
+                                "The stringency may be selected based on the conditions used in the wash step. For example, the salt concentration in the wash step can be selected from a high stringency of about 0.2\u00d7SSC at 50\u00b0 C. In addition, the temperature in the wash step can be at high stringency conditions, at about 65\u00b0 C.",
+                                "By \u201cat least moderately stringent hybridization conditions\u201d it is meant that conditions are selected which promote selective hybridization between two complementary nucleic acid molecules in solution. Hybridization may occur to all or a portion of a nucleic acid sequence molecule. The hybridizing portion is typically at least 15 (e.g. 20, 25, 30, 40 or 50) nucleotides in length. Those skilled in the art will recognize that the stability of a nucleic acid duplex, or hybrids, is determined by the Tm, which in sodium containing buffers is a function of the sodium ion concentration and temperature (Tm=81.5\u00b0 C.\u221216.6 (Log 10[Na+])+0.41(% (G+C)\u2212600/l), or similar equation). Accordingly, the parameters in the wash conditions that determine hybrid stability are sodium ion concentration and temperature. In order to identify molecules that are similar, but not identical, to a known nucleic acid molecule a 1% mismatch may be assumed to result in about a 1\u00b0 C. decrease in Tm, for example if nucleic acid molecules are sought that have a >95% identity, the final wash temperature will be reduced by about 5\u00b0 C. Based on these considerations those skilled in the art will be able to readily select appropriate hybridization conditions. In preferred embodiments, stringent hybridization conditions are selected. By way of example the following conditions may be employed to achieve stringent hybridization: hybridization at 5\u00d7 sodium chloride/sodium citrate (SSC)/5\u00d7Denhardt's solution/1.0% SDS at Tm-5\u00b0 C. based on the above equation, followed by a wash of 0.2\u00d7SSC/0.1% SDS at 60\u00b0 C. Moderately stringent hybridization conditions include a washing step in 3\u00d7SSC at 42\u00b0 C. It is understood, however, that equivalent stringencies may be achieved using alternative buffers, salts and temperatures. Additional guidance regarding hybridization conditions may be found in: Current Protocols in Molecular Biology, John Wiley & Sons, N.Y., 1989, 6.3.1-6.3.6 and in: Sambrook et al., Molecular Cloning, a Laboratory Manual, Cold Spring Harbor Laboratory Press, 1989, Vol. 3.",
+                                "The term \u201cproducts of a gene of a SDPP gene set\u201d as used herein refers to RNA and/or the polypeptide expressed by a gene of a SDPP gene set described in the application. In the case of RNA, it refers to RNA transcripts transcribed from a gene of a SDPP gene set described in the application. The term \u201cRNA product\u201d of the gene of a SDPP gene set described in the application as used herein includes mRNA transcripts, and/or specific spliced variants of mRNA. In the case of protein, it refers to proteins translated from the RNA transcripts transcribed from the genes of a SDPP gene set described in the application. The term \u201cpolypeptide product\u201d of a gene of a SDPP gene set described in the application includes polypeptides translated from the RNA products of the gene of a SDPP gene set described in the application."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define SDPP gene set",
+                                "describe SDPP gene set composition",
+                                "introduce novel gene products correlating with disease outcome",
+                                "describe gene products THC2436642, A\u201424_P82805, ENST00000246228, and THC2269172",
+                                "define isolated nucleic acid",
+                                "describe polynucleotide sequence selection",
+                                "explain hybridization conditions",
+                                "define stringency conditions",
+                                "describe Tm calculation",
+                                "explain hybridization conditions selection",
+                                "define products of a gene of a SDPP gene set",
+                                "describe RNA and polypeptide products",
+                                "summarize SDPP gene set products"
+                            ],
+                            "num_characters": 6568,
+                            "outline_medium": [
+                                "define SDPP gene sets",
+                                "describe isolated nucleic acids corresponding to SDPP genes",
+                                "provide novel gene products correlating with disease outcome",
+                                "define hybridization conditions",
+                                "describe products of SDPP genes",
+                                "explain RNA and polypeptide products of SDPP genes"
+                            ],
+                            "outline_short": [
+                                "define SDPP gene sets",
+                                "describe novel gene products correlating with disease outcome",
+                                "specify isolated nucleic acid sequences and hybridization conditions"
+                            ]
+                        },
+                        {
+                            "title": "Nucleic Acids, Primers and Probes",
+                            "paragraphs": [
+                                "One aspect of the application provides, a composition comprising a plurality of two or more isolated nucleic acid sequences, wherein each isolated nucleic acid sequence hybridizes to:\n\n\n- - a) a RNA product of a gene of a SDPP gene set; and/or\n  - b) a nucleic acid sequence complementary to a),  \n    wherein the composition is used to detect the level of RNA\n    expression level of two or more genes of a SDPP gene set.",
+                                "In one embodiment, the composition comprises two or more genes of a gene set that are selected from those in Tables 3-7 and 9-11.",
+                                "In another aspect, the application provides use of a collection of two or more isolated nucleic acid sequences are sets of specific primers. In one embodiment the nucleic acid sequences are the sequences as set out in Table 8. In another embodiment, the use comprises use of primers specific for one or more genes listed in Tables 3-6 and 9-11.",
+                                "The term \u201cprimer\u201d as used herein refers to a nucleic acid sequence, whether occurring naturally as in a purified restriction digest or produced synthetically, which is capable of acting as a point of synthesis of when placed under conditions in which synthesis of a primer extension product, which is complementary to a nucleic acid strand is induced (e.g. in the presence of nucleotides and an inducing agent such as DNA polymerase and at a suitable temperature and pH). The primer must be sufficiently long to prime the synthesis of the desired extension product in the presence of the inducing agent. The exact length of the primer will depend upon factors, including temperature, sequences of the primer and the methods used. A primer typically contains 15-25 or more nucleotides, although it can contain less. The factors involved in determining the appropriate length of primer are readily known to one of ordinary skill in the art. The term \u201cSDPP gene specific primer\u201d as used herein refers a set of primers which can produce a double stranded nucleic acid product complementary to a portion of one or more RNA products of a gene of a SDPP gene set described in the application or sequences complementary thereof.",
+                                "In one embodiment the primers are useful for quantitative multiplex PCR. Methods of designing primers suitable for multiplex PCR are known in the art. For example, SDPP gene specific primer pairs are first tested individually to find a PCR program that permits optimal amplification of all SDPP gene products and are then tested in combination to find a PCR program that is quantitative for all SDPP gene products being amplified.",
+                                "In another aspect, the application provides probes that are useful for detecting the SDPP genes listed in Tables 3-6 and 9-11. In one embodiment, the probes include SEQ ID NOs: 13-16. The probe may optionally comprise parts of the aforementioned SEQ ID NOs which retain specificity for the target sequence recognized by the corresponding SEQ ID NO. For example the probe may comprise all of part of SEQ ID NO: 13, the part being sufficient to hybridize specifically to the nucleic acid or nucleic acids complementary to SEQ ID NO: 13.",
+                                "Another aspect provides use of a collection of probes for detecting SDPP genes listed in Tables 3-6 and 9-11 and/or for detecting genes listed in Table 2. In one embodiment the nucleic acid sequences are the sequences as set out in Table 8. In another embodiment, the use comprises use of probes specific for one or more genes listed in Tables 3-6 and 9-11.",
+                                "The term \u201cprobe\u201d as used herein refers to a nucleic acid sequence that will hybridize to a nucleic acid target sequence. In one example, the probe hybridizes to an RNA product of a gene of a SDPP gene set described in the application or a nucleic acid sequence complementary to the RNA product of the a gene of a SDPP gene set described in the application. The length of probe depends on the hybridization conditions and the sequences of the probe and nucleic acid target sequence. In one embodiment, the probe is at least 8, 10, 15, 20, 25, 50, 75, 100, 150, 200, 250, 400, 500 or more nucleotides in length.",
+                                "The probes in one embodiment are fixed to a solid support. In one embodiment the probes are fixed to an array chip such as a microarray chip. In a further embodiment, the microarray probes range from 25-70 nucleotides in length. In another embodiment the probes comprise cDNA and can be for example, 500-5000 nucleotides in length."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe composition of isolated nucleic acid sequences",
+                                "introduce use of primers for detecting SDPP genes",
+                                "define primer",
+                                "describe primer design for multiplex PCR",
+                                "introduce probes for detecting SDPP genes",
+                                "define probe",
+                                "describe probe design for detecting SDPP genes",
+                                "summarize probe use"
+                            ],
+                            "num_characters": 4392,
+                            "outline_medium": [
+                                "provide compositions of isolated nucleic acid sequences",
+                                "describe use of primers for detecting SDPP genes",
+                                "provide probes for detecting SDPP genes",
+                                "explain probe length and hybridization conditions"
+                            ],
+                            "outline_short": [
+                                "provide compositions of isolated nucleic acid sequences for detecting RNA expression levels",
+                                "describe primers and probes for detecting SDPP genes"
+                            ]
+                        },
+                        {
+                            "title": "Polypeptide Binding Compositions",
+                            "paragraphs": [
+                                "The application describes a number of polypeptide products of SDPP genes and gene sets. In one aspect the application provides a composition comprising two or more SDPP polypeptides corresponding to SDPP genes. In one embodiment the composition comprises 3, 4, 5, 6, 7-10 or more polypeptides corresponding to SDPP genes. In another embodiment the composition comprises 11-14, 15, 16-18, 19, 20-25, 26, 27-29, 30-50, 50-100, 100-162, 163, 164-199 or 200 polypeptides corresponding to SDPP genes. In another embodiment the polypeptides correspond to genes selected from genes listed in Tables 3-5 and 9-11. In one embodiment the polypeptides correspond to genes selected from Table 2.",
+                                "As mentioned above, the expression level of genes of a SDPP gene set can also be detected by detecting the expression of polypeptide products described in the application. Accordingly, another aspect of the application is a composition comprising a plurality of at least two binding agents, wherein each binding agent binds to a polypeptide product of a gene of a SDPP gene set, and wherein the composition is used to measure the level of expression of at least two genes of the SDPP gene set. The detected polypeptide gene products are selected from the genes presented in Tables 3-6 and 9-11. In one embodiment, at least 3, at least 4, at least 5, at least 6 or at least 10 polypeptide products of genes are detected. In a preferred embodiment, at least 3 polypeptide products of genes selected from Tables 9-11 are detected.",
+                                "In one embodiment, the binding agent is an isolated polypeptide. The term \u201cisolated polypeptides\u201d as used herein refers to a proteinaceous agent, such as a peptide, polypeptide or protein, which is substantially free of cellular material or culture medium when produced recombinantly, or chemical precursors, or other chemicals, when chemically synthesized.",
+                                "The phrase \u201cbind to polypeptide products\u201d as used herein refers to binding agents such as isolated polypeptides that specifically bind to polypeptide products of the SDPP genes described in the application. In an embodiment, isolated polypeptides are antibodies or antibody fragments.",
+                                "The term \u201cantibody\u201d as used herein is intended to include monoclonal antibodies, polyclonal antibodies, and chimeric antibodies. The antibody may be from recombinant sources and/or produced in transgenic animals. The term \u201cantibody fragment\u201d as used herein is intended to include Fab, Fab\u2032, F(ab\u2032)2, scFv, dsFv, ds-scFv, dimers, minibodies, diabodies, and multimers thereof and bispecific antibody fragments. Antibodies can be fragmented using conventional techniques. For example, F(ab\u2032)2 fragments can be generated by treating the antibody with pepsin. The resulting F(ab\u2032)2 fragment can be treated to reduce disulfide bridges to produce Fab\u2032 fragments. Papain digestion can lead to the formation of Fab fragments. Fab, Fab\u2032 and F(ab\u2032)2, scFv, dsFv, ds-scFv, dimers, minibodies, diabodies, bispecific antibody fragments and other fragments can also be synthesized by recombinant techniques.",
+                                "To produce human monoclonal antibodies, antibody producing cells (lymphocytes) can be harvested from a human having cancer and fused with myeloma cells by standard somatic cell fusion procedures thus immortalizing these cells and yielding hybridoma cells. Such techniques are well known in the art, (e.g. the hybridoma technique originally developed by Kohler and Milstein (Nature 256:495-497 (1975)) as well as other techniques such as the human B-cell hybridoma technique (Kozbor et al., Immunol. Today 4:72 (1983)), the EBV-hybridoma technique to produce human monoclonal antibodies (Cole et al., Methods Enzymol, 121:140-67 (1986)), and screening of combinatorial antibody libraries (Huse et al., Science 246:1275 (1989)). Hybridoma cells can be screened immunochemically for production of antibodies specifically reactive with cancer cells and the monoclonal antibodies can be isolated.",
+                                "Specific antibodies, or antibody fragments, reactive against particular SDPP gene polypeptide product antigens, may also be generated by screening expression libraries encoding immunoglobulin genes, or portions thereof, expressed in bacteria with cell surface components. For example, complete Fab fragments, VH regions and FV regions can be expressed in bacteria using phage expression libraries (See for example Ward et al., Nature 341:544-546 (1989); Huse et al., Science 246:1275-1281 (1989); and McCafferty et al., Nature 348:552-554 (1990)).",
+                                "The application also contemplates the use of \u201cpeptide mimetics\u201d for detecting the polypeptide products of SDPP genes. Peptide mimetics are structures which serve as substitutes for peptides in interactions between molecules (See Morgan et al (1989), Ann. Reports Med. Chem. 24:243-252 for a review). Peptide mimetics include synthetic structures which may or may not contain amino acids and/or peptide bonds but retain the structural and functional features of the isolated proteins described in the application, such as its ability to bind to the polypeptide products of the SDPP genes described in the application. Peptide mimetics also include peptoids, oligopeptoids (Simon et al (1972) Proc. Natl. Acad, Sci USA 89:9367); and peptide libraries containing peptides of a designed length representing all possible sequences of amino acids corresponding to the cleavage recognition sequence described in the application.",
+                                "Peptide mimetics may be designed based on information obtained by systematic replacement of L-amino acids by D-amino acids, replacement of side chains with groups having different electronic properties, and by systematic replacement of peptide bonds with amide bond replacements. Local conformational constraints can also be introduced to determine conformational requirements for activity of a candidate peptide mimetic. The mimetics may include isosteric amide bonds, or D-amino acids to stabilize or promote reverse turn conformations and to help stabilize the molecule. Cyclic amino acid analogues may be used to constrain amino acid residues to particular conformational states. The mimetics can also include mimics of inhibitor peptide secondary structures. These structures can model the 3-dimensional orientation of amino acid residues into the known secondary conformations of proteins. Peptoids may also be used which are oligomers of N-substituted amino acids and can be used as motifs for the generation of chemically diverse libraries of novel molecules.",
+                                "In one embodiment the binding agents are fixed to a solid support. In a further embodiment the solid support is an ELISA plate."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe polypeptide products of SDPP genes",
+                                "introduce composition of SDPP polypeptides",
+                                "describe polypeptide composition selection",
+                                "introduce binding agents for detecting polypeptide products",
+                                "define isolated polypeptides",
+                                "describe binding agents for detecting polypeptide products",
+                                "introduce antibodies and antibody fragments",
+                                "describe antibody production methods",
+                                "introduce peptide mimetics",
+                                "describe peptide mimetic design",
+                                "introduce binding agents fixed to a solid support",
+                                "describe ELISA plate use",
+                                "summarize polypeptide binding compositions"
+                            ],
+                            "num_characters": 6614,
+                            "outline_medium": [
+                                "describe polypeptide products of SDPP genes",
+                                "provide compositions of SDPP polypeptides",
+                                "describe binding agents for detecting polypeptide products",
+                                "explain isolated polypeptides as binding agents",
+                                "describe antibody fragments as binding agents",
+                                "provide peptide mimetics as binding agents"
+                            ],
+                            "outline_short": [
+                                "describe polypeptide products of SDPP genes and gene sets",
+                                "provide compositions of binding agents for detecting polypeptide products",
+                                "specify isolated polypeptides, antibodies, and peptide mimetics as binding agents"
+                            ]
+                        },
+                        {
+                            "title": "Microarrays",
+                            "paragraphs": [
+                                "As mentioned, the expression level of genes of a SDPP gene set is optionally detected using arrays including DNA microarrays and tissue microarrays. A \u201cmicroarray: as used herein refers to a an ordered set of probes fixed to a solid surface that permits analysis such as gene analysis of a plurality of genes. A DNA microarray refers to an ordered set of DNA fragments fixed to the solid surface. For example, in one embodiment the microarray is a gene chip. A tissue microarray refers to an ordered set of tissue specimens fixed to a solid surface. For example, in one embodiment the tissue microarray comprises a slide comprising an array of arrayed tumor biopsy samples in paraffin. Tissue microarray technology optionally allows multiple specimens, such as biopsy samples, to be analysed in a single analysis at the DNA, RNA or protein level. Tissue microarrays are analysed by a number of techniques including immunohistochemistry, in situ hybridization, in situ PCR, RNA or DNA expression analysis and/or morphological and clinical characterization or a combination of techniques. The specimens are optionally from the same subject or from a plurality of subjects. Methods of detecting gene expression using arrays are well known in the art. Such methods are optionally automated. In one embodiment, a sample of a cancer patient is analysed using a tissue microarray. The sample is optionally used for clinical follow up to monitor the patient's progression.",
+                                "Accordingly the application provides in one aspect an array comprising for each gene in a plurality of genes, the plurality of genes being at least 3 of the genes listed in Tables 3-6 or 9-11, one or more polynucleotide probes complementary and hybridizable to a coding sequence in the gene.",
+                                "In one embodiment, the array comprises at least 15 genes listed in Table 9. In another embodiment the array comprises the genes listed in Table 9. In yet a further embodiment, the array comprises a substrate comprising a plurality of addresses, wherein each address has disposed thereon a capture probe that can specifically bind a gene of one or more SDPP gene sets of Tables 3-6 and/or 9-11.",
+                                "In another aspect, the application describes methods for using an array described herein. In one embodiment, the application provides a method of predicting clinical outcome associated with a SDPP reference expression profile of a plurality of genes in a breast cancer patient comprising:",
+                                "detecting the sample's gene expression levels using an array of described herein; comparing the gene expression levels to the SDPP reference expression profile of at least 3 genes of the SDPP gene set comprised on the array; and predicting clinical outcome associated the SDPP gene reference expression profile of the SDPP gene set;\n\nwherein clinical outcome is predicted according to the probability of falling within the class defined the reference expression profile of the SDPP gene set.",
+                                "In one embodiment, the microarray comprises one or more polynucleotide probes complementary and specific to one or more portions of a coding sequence for each gene of at least 3 genes listed in Tables 3-5 and 9-11. In one embodiment the microarray comprises polynucleotide probes complementary and specific to one or more portions of a coding sequence for each gene of at least 3 genes listed in Table 2."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce microarrays for detecting gene expression",
+                                "describe DNA microarrays",
+                                "describe tissue microarrays",
+                                "introduce array composition",
+                                "describe array use for predicting clinical outcome",
+                                "summarize microarray use"
+                            ],
+                            "num_characters": 3341,
+                            "outline_medium": [
+                                "describe microarrays for detecting gene expression",
+                                "provide arrays comprising polynucleotide probes",
+                                "describe methods for using arrays to predict clinical outcome"
+                            ],
+                            "outline_short": [
+                                "describe microarrays for detecting gene expression levels of SDPP genes"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Diagnosis",
+                            "paragraphs": [
+                                "The application discloses SDPP gene sets comprising genes which are differentially expressed in patients with different classes or subtypes of breast cancer. The subtypes are associated with different clinical outcomes or prognoses. Depending on the expression level of the SDPP genes in the patient sample, the breast cancer subtype is predicted to be associated with a good prognosis, a mixed prognosis or a poor prognosis. The subtypes are differentially associated with recurrence and metastasis. Accordingly, one aspect described in the application is a method of diagnosing a breast cancer subtype in a breast cancer patient. In another embodiment the application provides a method of providing a prognosis. In one embodiment, the application provides a method of predicting or diagnosing recurrence. In another embodiment the application provides a method of predicting metastasis.",
+                                "Clinical outcome is predicted by methods comprising the comparison of expression level of at least 3 genes or at least 5 genes of a SDPP gene set selected from Tables 3-6 and 9-11 in a sample of a patient to the reference expression profile of the corresponding genes derived from tumor associated stroma and predicting clinical outcome on the statistical probability of falling within the class defined by the reference expression profile of the at least 3 or at least 5 genes. In one embodiment the SDPP gene set comprises a gene set provided in Tables 9-11. In another embodiment, the SDPP gene set is the gene set provided in Table 9.",
+                                "Prognosis is predicted by methods comprising the comparison of expression level of at least 3 genes of a SDPP gene set selected from Tables 3-6 and 9-11 in a sample of a patient to the reference expression profile of the corresponding genes derived from tumor associated stroma and providing prognosis on the statistical probability of falling within the class defined by the reference expression profile of the at least 3 genes. In one embodiment at least 5 genes of a SDPP gene set selected from Tables 3-6 and 9-11 in a sample of a patient to the reference expression profile of the corresponding genes derived from tumor associated stroma and providing prognosis on the statistical probability of falling within the class defined by the reference expression profile of the at least 5 genes. In one embodiment the SDPP gene set comprises a gene set provided in Tables 9-11. In another embodiment, the SDPP gene set is the gene set provided in Table 9.",
+                                "Recurrence is predicted by methods comprising the comparison of expression level of at least 3 genes of a SDPP gene set selected from Tables 3-6 and 9-11 in a sample of a patient to the reference expression profile of the corresponding genes derived from tumor associated stroma and predicting the likelihood of recurrence on the statistical probability of falling within the class defined by the reference expression profile of the at least 3 genes. In one embodiment, the method comprises the comparison of at least 5 genes. In one embodiment the SDPP gene set comprises a gene set provided in Tables 9-11. In another embodiment, the SDPP gene set is the gene set provided in Table 9.",
+                                "Metastasis is predicted by methods comprising the comparison of expression level of at least 3 genes of a SDPP gene set selected from Tables 3-6 and 9-11 in a sample of a patient to the reference expression profile of the corresponding genes derived from tumor associated stroma and predicting the likelihood of metastasis on the statistical probability of falling within the class defined by the reference expression profile of the at least 3 genes. In one embodiment, the method comprises the comparison of at least 5 genes. In one embodiment the SDPP gene set comprises a gene set provided in Tables 9-11. In another embodiment, the SDPP gene set is the gene set provided in Table 9.",
+                                "The term \u201cpatient\u201d also referred to as \u201csubject\u201d as used herein refers to any member of the animal kingdom, preferably a human being.",
+                                "The term \u201cdiagnosis\u201d as used herein refers to identifying the nature of the disease or identifying the cause or outcome of a disease or group of related diseases such as breast cancer.",
+                                "In certain embodiments the expression level of at least 3 genes or at least 5 genes of a SDPP gene set is obtained by detecting the expression level of the genes in a patient sample. A person skilled in the art will appreciate that a number of methods can be used to measure or detect the level of RNA products or complementary DNA of a gene of a SDPP gene set described in the application within a sample, including microarrays, RT-PCR (including quantitative RT-PCR and multiplex quantitative RT-PCR), nuclease protection assays and northern blots. In a preferred embodiment detection comprises a quantitative multiplex PCR method. In another embodiment detection comprises a microarray method.",
+                                "In addition to measuring the expression of RNA products of genes of SDPP gene sets described in the application, differential expression of the polypeptide products of the SDPP genes described in the application can be used to predict disease outcome or diagnose cancer subtype. Accordingly, another aspect of the application is a method of predicting disease outcome or diagnosing cancer subtype comprising detecting the level of a plurality of at least two polypeptide gene products, each polypeptide gene product corresponding to a gene in a SDPP gene set.",
+                                "In one embodiment of the application antibodies or antibody fragments are used to determine the level of polypeptide product of one or more genes of a SDPP gene set described in the application. In one embodiment the isolated polypeptides are labeled with a detectable marker.",
+                                "The label is preferably capable of producing, either directly or indirectly, a detectable signal. For example, the label may be radio-opaque or a radioisotope, such as 3H, 14C, 32P, 35S, 123I, 125I, 131I; a fluorescent (fluorophore) or chemiluminescent (chromophore) compound, such as fluorescein isothiocyanate, rhodamine or luciferin; an enzyme, such as alkaline phosphatase, beta-galactosidase or horseradish peroxidase; an imaging agent; or a metal ion.",
+                                "In another embodiment, the detectable signal is detectable indirectly. For example, a secondary antibody that is specific for the isolated protein described in the application and contains a detectable label can be used to detect the isolated polypeptide described in the application.",
+                                "A person skilled in the art will appreciate that a number of methods can be used to determine the amount of the protein product of a gene of a SDPP gene set described in the application, including immunoassays such as Western blots, ELISA, and immunoprecipitation followed by SDS-PAGE, as well as immunocytochemistry or immunohistochemistry.",
+                                "In one embodiment at least 1, 2, 3, 4, 5 or more than 5 polypeptide gene products of a SDPP gene set are detected by detecting the polypeptide level of the corresponding gene.",
+                                "In addition detection of a level of gene expression of more than one gene of a SDPP gene set is in one embodiment, accomplished by combining detecting nucleic acid and polypeptide gene product expression levels. For example in one embodiment, the levels of gene expression of 5 genes of a SDPP gene set are obtained by detecting polypeptides of one or more genes of the SDPP gene set, and by detecting RNA expression of one more genes of the SDPP gene set such that a total of 5 gene expression levels are detected. In addition any of the methods described herein are optionally used in addition or in combination with traditional diagnostic techniques for breast cancer.",
+                                "Integration with Other Gene Sets or Prognostic Factors",
+                                "A number of other predictors have been identified including the 70-gene predictor, the wound signature and the hypoxia signature3\u203219\u20322\u00b0.",
+                                "The inventors have further shown that the accuracy of predicting disease outcome is enhanced when combined with other predictors such as those described above. For example the inventors have demonstrated that combining the SDPP with a number of predictors including the 70-gene predictor, the wound response and hypoxia signatures, increases the accuracy in predicting metastasis and good outcome. Accordingly, one aspect of the application provides a method integrating a method of predicting disease outcome using at least 3 genes of a SDPP gene set with other predictors. In one embodiment, the SDPP is combined with other predictors for predicting likelihood of metastasis."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "disclose SDPP gene sets for breast cancer subtypes",
+                                "predict breast cancer subtype based on SDPP gene expression",
+                                "predict prognosis based on SDPP gene expression",
+                                "predict recurrence based on SDPP gene expression",
+                                "predict metastasis based on SDPP gene expression",
+                                "define patient and diagnosis terms",
+                                "describe methods for detecting gene expression levels",
+                                "describe quantitative multiplex PCR method",
+                                "describe microarray method",
+                                "predict disease outcome using polypeptide products",
+                                "use antibodies to detect polypeptide products",
+                                "describe methods for determining protein product amounts",
+                                "detect multiple polypeptide gene products",
+                                "combine nucleic acid and polypeptide detection methods",
+                                "integrate with other gene sets or prognostic factors",
+                                "enhance accuracy of predicting disease outcome"
+                            ],
+                            "num_characters": 8529,
+                            "outline_medium": [
+                                "disclose SDPP gene sets for breast cancer subtypes",
+                                "predict breast cancer subtype by comparing gene expression levels",
+                                "predict prognosis by comparing gene expression levels",
+                                "predict recurrence by comparing gene expression levels",
+                                "predict metastasis by comparing gene expression levels",
+                                "define patient and diagnosis terms",
+                                "describe methods for detecting gene expression levels",
+                                "describe methods for detecting polypeptide products"
+                            ],
+                            "outline_short": [
+                                "diagnose breast cancer subtype",
+                                "predict clinical outcome",
+                                "predict recurrence",
+                                "predict metastasis"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Assigning or Selecting Treatment",
+                            "paragraphs": [
+                                "The inventors have found that the SDPP is able to stratify patients according to clinical outcome with a greater degree of accuracy than other known predictors. This allows the opportunity for clinicians to tailor treatment and reserve more aggressive therapies with greater risk or side effects for patients with poorer outcome.",
+                                "Accordingly, one aspect described in the application provides assigning treatment to a patient according to the predicted clinical outcome of the patient. Assigning treatment can be challenging for breast cancer subtypes that are associated with good prognostic factors such as ER positive, HER2 negative or low/no lymph node involvement breast cancers. A subset of these patients show poor outcome. The reverse is also true. A subset of cancer subtypes associated with poor prognostic factors show good outcome. Accordingly, in one embodiment, the patient has a HER2 positive breast cancer with good outcome. In another embodiment, the patient has a HER2 positive breast cancer with poor outcome. In another embodiment, the patient has a HER2 negative breast cancer with good outcome. In another embodiment the patient has a HER2 negative breast cancer with poor outcome. In another embodiment the patient has an ER positive breast cancer. In yet a further embodiment, the patient has an ER negative breast cancer.",
+                                "Another aspect relates to monitoring treatment efficacy. Gene expression of at least 3 genes of a SDPP gene set is assessed and reassessed at a subsequent time point after initiation of a treatment. A change in the expression levels from one class of clinical outcome, wherein the change is from a poor to a mixed or good clinical outcome, is indicative of treatment efficacy. Similarly a change from a mixed clinical outcome to a good clinical outcome is indicative of an efficacious treatment regimen. On the other hand a change from a good to mixed or poor clinical outcome suggests treatment failure.",
+                                "Accordingly, the application provides in one embodiment a method of monitoring effectiveness of a treatment in a breast cancer patient comprising:\n\n\n- - a) obtaining an expression level for at least 3 genes of an SDPP\n    gene set in a first sample of a patient, wherein the first sample is\n    taken before or after the start of the treatment;\n  - b) obtaining an expression level for at least 3 genes of a SDPP gene\n    set in a second sample of a patient, wherein the second sample is\n    taken subsequent to the first sample and after at least one\n    treatment;\n  - c) comparing the expression levels of the genes in the first and\n    second sample to the reference expression profile of the genes in\n    the SDPP gene set; and\n  - d) determining the disease outcome class for the first and second\n    sample;  \n    wherein a change in the outcome class of sample 2 indicating a\n    decreased probability of poor prognosis indicates the treatment is\n    effective.",
+                                "Analysis of the SDPP gene sets has also revealed several gene clusters that are associated with clinical outcome. For example, the inventors have shown that the tumor associated stroma of patients with poor outcome is enriched for genes involved in a Th2 immune response, hypoxia and angiogenesis. These genes include adrenomedulin, interleukin 8, CXCL1, MMP12 and MMP1. Stromal changes during breast cancer progression may include the induction of hypoxia, which promotes recruitment of immune cells and endothelial cells, providing growth and matrix remodeling factors as well as a new blood supply for the tumor. Local activation of fibroblasts enhances matrix remodeling, facilitating tumor cell invasion. Normally, the interplay between epithelial cells and the microenvironment maintains epithelial polarity and modulates growth inhibition14. Modification or destabilization of the microenvironment can lead to loss of epithelial cell polarity and increased cell proliferation, contributing to tumorigenesis14,21,22 Other tumor cell-microenvironment interactions can allow the tumor to escape immune surveillance and promote tumor growth and metastasis17.",
+                                "The inventors have further shown that genes expressed in the good outcome patient cluster are enriched for gene involved in the Th1 type immune response, including T cell selection and differentiation, MHC class 1 receptor activity and granzyme NB activity (FIG. 7) implying incrased recruitment of activated T-cells and NK cells in these tumors.",
+                                "Accordingly the application provides methods of treatment according to the transcriptional profile of tumor associated stroma and/or the clinical class predicted. In one embodiment patients predicted to have a poor clinical outcome are assigned therapies that target Th2 immune responses, angiogenesis processes and/or hypoxic processes. In one embodiment, the application provides a method of optimizing treatment. In another embodiment, the treatment regimen includes a component that promotes a Th1 immune response. In another embodiment the treatment regimen includes a component that inhibits a Th2 immune response. A treatment regimen is chosen that is tailored to the biological responses activated in the patient.",
+                                "**Novel Therapeutics**",
+                                "The application also provides in one aspect a method of identifying agents for use in the treatment of cancer. Clinical trials seek to test the efficacy of new therapeutics. The efficacy is often only determinable after many months of treatment. The methods disclosed herein are useful for monitoring the expression of SDPP genes associated with recurrence, metastasis or poor prognosis. A change in SDPP gene expression levels which are associated with a better prognosis are indicative of treatment efficacy.",
+                                "Accordingly in one embodiment, the application provides a method for identifying agents for use in treatment of breast cancer comprising:\n\n\n- - a) obtaining an expression level for at least 3 genes of an SDPP\n    gene set in a first sample of a cell culture;\n  - b) incubating the cell culture with a test agent;\n  - c) obtaining an expression level for the at least 3 genes in a\n    second sample, wherein the second sample is subsequent to incubating\n    the cell culture with the test agent;\n  - d) comparing the expression level of the at least 3 genes in the\n    first and second sample to a reference expression profile of the\n    genes;  \n    wherein a change in the expression level of the genes in the second\n    sample indicating a decreased probability of falling within a poor\n    prognosis class indicates that the agent is useful for the treatment\n    of breast cancer.",
+                                "A person skilled in the art will be familiar with various cell culture techniques and cell lines that are useful for the methods described herein.",
+                                "Further, the inventors have disclosed that specific pathways are activated in different classes of clinical outcome. The application provides in one embodiment a method to identify and test the efficacy of treatments targeted to these deregulated pathways. In one embodiment the method comprises identifying an agent that inhibits expression of hypoxia response genes implicated in poor prognosis. In another embodiment, the method comprises identifying an agent that inhibits expression of Th2 response genes associated with poor prognosis. In a further embodiment, the method comprises identifying an agent that inhibits expression of angiogenesis genes associated with poor prognosis.",
+                                "**Kits**",
+                                "Another aspect of the application is a kit for predicting disease outcome in a patient, classifying tumor subtype, monitoring treatment and disease progression and for diagnosing or detecting cancer comprising any one of the isolated nucleic acid compositions described in the application and instructions for use. In a preferred embodiment the kit comprises nucleic acid compositions for carrying out multiplex PCR.",
+                                "In one embodiment the application provides a kit for classifying a breast cancer comprising:\n\n\n- - a plurality of isolated nucleic acids for detecting expression\n    levels of at least 3 genes of a SDPP gene set; and instructions for\n    use.",
+                                "In another embodiment the kit the isolated comprises nucleic acids that are primers useful for amplifying the expression products of the at least 3 genes. In another embodiment the kit the primers comprise one or more of the primers selected from the group consisting of SEQ ID NO: 1-12. In yet another embodiment, the kit comprises isolated nucleic acids wherein the nucleic acids are probes that hybridize expression products of the at least 3 genes.",
+                                "In one embodiment, the invention provides a kit comprising an array chip such as a microarray chip for predicting disease outcome in a patient, classifying tumor subtype, monitoring treatment and disease progression and for diagnosing or detecting cancer.",
+                                "A further aspect is a kit for predicting disease outcome in a patient, classifying tumor subtype, monitoring treatment and disease progression and for diagnosing or detecting cancer comprising any one of the isolated polypeptides described herein and instructions for use. In one embodiment, the isolated protein is labeled using a detectable marker.",
+                                "**Computer Systems**",
+                                "The application also provides for a computer system for use with the methods described in the application. In another embodiment the application provides for a computer program product for implementing the methods described in the application. In a further embodiment, the application provides a computer readable medium having stored thereon a data structure for storing a method described in the application.",
+                                "Accordingly the application provides a computer system comprising:\n\n\n- - a) a database including records comprising the reference expression\n    profiles of a plurality of genes in Tables 3-6 and/or 9-11;\n  - b) a user interface capable of receiving a selection of gene\n    expression levels of at least 3 genes in Tables 3-6 and/or 9-11 for\n    use in comparing to the tumor associated gene reference expression\n    profiles in the database;\n  - c) an output that displays a prediction of clinical outcome\n    according to the expression levels of the at least 3 genes.",
+                                "In another embodiment the application provides a computer readable medium on which is stored a database capable of configuring a computer to respond to queries based on records belonging to the database, each of the records comprising:\n\n\n- - a) a value that identifies a gene of a SDPP gene set;\n  - b) a value that identifies the probability of a clinical outcome\n    associated with the gene.",
+                                "The computer readable medium on which is stored a database capable of configuring a computer to respond to queries based on records belonging to the database, each of the records comprising:\n\n\n- - a) a value that identifies a gene reference expression profile of a\n    SDPP gene set;\n  - b) a value that identifies the probability of a clinical outcome\n    associated with the gene reference expression profile.",
+                                "In yet another embodiment the application provides a computer readable medium comprising a plurality of digitally encoded reference expression profiles, wherein each profile of the plurality has a plurality of values, each value representing the expression of a different gene of a SDPP gene set. In one embodiment the computer readable medium includes program instructions for performing the following steps:\n\n\n- - a) comparing a plurality of gene expression levels of a patient\n    sample with a database including records comprising the reference\n    expression profiles of a plurality of genes in Table 2-6 and/or 9-11\n    and associated clinical outcome weighting to predict the clinical\n    outcome of the patient; and\n  - b) providing the clinical outcome prediction with the identified\n    gene expression levels.",
+                                "The following non-limiting examples are illustrative of the present invention:"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "assign treatment based on predicted clinical outcome",
+                                "tailor treatment for HER2 positive or negative breast cancer",
+                                "tailor treatment for ER positive or negative breast cancer",
+                                "monitor treatment efficacy using SDPP gene expression",
+                                "determine treatment effectiveness based on gene expression changes",
+                                "analyze SDPP gene sets for clinical outcome associations",
+                                "identify gene clusters associated with clinical outcome",
+                                "describe tumor associated stroma changes during breast cancer progression",
+                                "assign treatment based on transcriptional profile of tumor associated stroma",
+                                "target Th2 immune responses, angiogenesis, and hypoxic processes",
+                                "promote Th1 immune response",
+                                "inhibit Th2 immune response",
+                                "tailor treatment to biological responses activated in patient",
+                                "describe methods for identifying agents for cancer treatment",
+                                "monitor SDPP gene expression for treatment efficacy",
+                                "identify agents that inhibit hypoxia response genes",
+                                "identify agents that inhibit Th2 response genes",
+                                "identify agents that inhibit angiogenesis genes",
+                                "describe cell culture techniques for testing agents",
+                                "describe cell lines for testing agents",
+                                "identify agents that target deregulated pathways",
+                                "inhibit expression of genes associated with poor prognosis",
+                                "identify agents that promote good prognosis"
+                            ],
+                            "num_characters": 11868,
+                            "outline_medium": [
+                                "integrate SDPP with other predictors for disease outcome",
+                                "assign treatment based on predicted clinical outcome",
+                                "monitor treatment efficacy by reassessing gene expression",
+                                "describe treatment options for HER2 positive/negative breast cancer",
+                                "describe treatment options for ER positive/negative breast cancer",
+                                "analyze SDPP gene sets for clinical outcome",
+                                "identify gene clusters associated with clinical outcome",
+                                "describe tumor associated stroma and microenvironment interactions",
+                                "assign treatment based on transcriptional profile of tumor associated stroma",
+                                "optimize treatment by targeting specific biological responses",
+                                "describe methods for monitoring treatment efficacy"
+                            ],
+                            "outline_short": [
+                                "assign treatment based on predicted clinical outcome",
+                                "monitor treatment efficacy",
+                                "select treatment based on transcriptional profile",
+                                "optimize treatment regimen",
+                                "tailor treatment to biological responses"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce breast cancer outcome predictor",
+                        "motivate stroma-derived predictor",
+                        "define stroma-derived prognostic predictor (SDPP)",
+                        "describe SDPP gene sets",
+                        "explain SDPP gene set selection",
+                        "provide examples of SDPP gene sets",
+                        "describe accuracy of SDPP gene sets",
+                        "define clinical outcome",
+                        "explain expression level of SDPP genes",
+                        "define reference expression profile",
+                        "describe sample types",
+                        "introduce class discovery",
+                        "describe class distinction",
+                        "explain class prediction",
+                        "motivate accurate prediction",
+                        "describe gene weighting",
+                        "provide method for predicting clinical outcome",
+                        "provide alternative methods for predicting clinical outcome",
+                        "describe method for identifying SDPP gene set",
+                        "provide alternative method for identifying SDPP gene set",
+                        "summarize SDPP gene set identification"
+                    ],
+                    "num_characters": 10561,
+                    "outline_medium": [
+                        "introduce breast cancer outcome predictor",
+                        "motivate stroma-derived predictor",
+                        "define stroma-derived prognostic predictor (SDPP)",
+                        "describe SDPP gene sets",
+                        "explain clinical outcome classes",
+                        "define expression level and reference expression profile",
+                        "describe sample types",
+                        "outline methods for predicting clinical outcome",
+                        "discuss gene weighting and class prediction",
+                        "summarize SDPP applications"
+                    ],
+                    "outline_short": [
+                        "introduce stroma-derived prognostic predictor (SDPP) for breast cancer",
+                        "describe SDPP gene sets and their association with clinical outcome",
+                        "explain method for predicting clinical outcome using SDPP gene sets",
+                        "provide examples of SDPP gene sets and their application",
+                        "discuss advantages of SDPP over existing predictors"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Description of Samples**",
+                                "Tissue samples from 73 patients presenting with invasive ductal carcinoma (IDC) were subjected to laser capture microdissection (LCM). From this cohort, 53 samples were obtained of tumor-associated stroma; in 31 cases, patient-matched normal adjacent stroma was also obtained. The median follow-up of our patients was 3.44 years. Recurrence (local or distant) was determined by examination of medical records following diagnosis. Poor outcome was defined as alive with disease or dead of disease as of the time of the latest follow-up. No patient in the study received neoadjuvant therapy. This study was approved by the McGill University Health Centre (MUHC) Research Ethics Board (protocols SUR-00-966 and SUR-99-780), and all subjects provided written, informed consent.",
+                                "**LCM, RNA Isolation and Microarray Hybridization**",
+                                "Regions of tumor-associated and normal stroma were identified by a clinical pathologist prior to microdissection. LCM, sample isolation and preparations, as well as microarray hybridization, were carried out as previously described23. Normal stroma was harvested at least 2 mm away from the tumor margins. Each RNA sample was hybridized on Agilent 44K whole human genome microarrays in a dye-swap replication design; 50 samples were hybridized in duplicate, one in triplicate, and two in quadruplicate. In total, 459 arrays were obtained. After performing normalization and model fitting as previously described23,24, our microarray dataset contained 111 distinct expression experiments.",
+                                "Identification of a Tumor Stroma Subtype Associated with Recurrence and Poor Outcome",
+                                "A LIMMA25 model was fit to the patient-matched tumor-associated vs. normal stroma data, and identified the top 200 most variable genes across all patients, which were also differentially expressed in at least 3 patients (p<1e-5). The 200 genes chosen were in the 99.2% percentile of the variance distribution. This approach excluded genes that co-vary between tumor associated and normal stroma. Tumor associated stroma was clustered using these genes and the significance of clusters was assessed by bootstrapping (1000 bootstrap iterations) using the pvclust package26. Each cluster was tested for association with ER, PR, lymph node, HER2 and p53 status, as well as grade, recurrence, and outcome, using a CHI2 association test",
+                                "**Identification of Genes Differentially Expressed Between the Tumor Associated Stroma Subtypes**",
+                                "Pair-wise class distinction was used to identify genes differentially expressed between the poor outcome, mixed outcome, and good outcome associated stroma subtypes previously defined by class discovery. The expression profile of the outcome-associated tumor stroma subtypes was derived from the union of differentially expressed genes identified using SAM27 (multiclass comparison, q-value<0.01), and LIMMA (intersection of top 200 differentially expressed for each comparison, ranked by fold change FDR adjusted p-value<0.01) algorithms for differential expression.",
+                                "**Predictor Construction and Evaluation**",
+                                "Logistic regression was used to score and rank each gene in the expression profile, based on its significance in estimating binomial recurrence in a model including gene expression level, lymph node status, estrogen receptor status, progesterone receptor status and HER2 receptor status. This model ensured that the predictive strength of a gene was not confounded with lymph node, ER, PR, or HER2 status4.",
+                                "Na\u00efve Bayes' classifiers were trained to predict prognosis using the ranked gene expression profile of the recurrence-positive stroma cluster. Each classifier was trained on an incrementally larger set of genes from the ranked list, and then evaluated using 50 cross validation runs by randomly splitting the data into testing and training sets of equal size (n=27 training samples, n=26 testing samples). Receiver-operator-characteristic (ROC) curves were generated for each classifier, and classifiers were compared using their area under the curve (AUC). The optimal predictor was selected to maximize the AUC, and trained on all the data (n=53 samples). The performance of the SDPP in tumor associated stroma was compared to its performance in tumor epithelium, normal stroma, and normal epithelium using the AUC.",
+                                "**Gene Ontology (GO) Analysis**",
+                                "Genes differentially expressed in each stroma subtype were cross-referenced against Gene Ontology (GO) annotations28 to identify overrepresented GO categories using a test against the hypergeometric distribution, using a significance threshold of p\u22660.05.",
+                                "Comparison with Publicly Available Breast Cancer Datasets",
+                                "Publicly available breast cancer data from four different studies4,12,18,29 was downloaded and the SDPP was used to predict the outcome for each patient. In the NKI and Wang et al. data sets12,18, the poor, good, and mixed-outcome categories of samples identified by the SDPP were treated as categorical variables in Cox proportional hazards regression. These included age, HER2 status, ER status, grade, lymph node status, as well as predictions from the 70-gene predictor, and wound, and hypoxia signatures as other clinical risk factors. Tests were performed for association with both overall survival and recurrence-free survival.",
+                                "**Expression of Macrophage, Angiogenesis, Hypoxia and Immune Markers**",
+                                "ANOVA and Tukey's Honest Significant Difference test (HSD) were used to evaluate differences in the level of expression of selected macrophage, angiogenesis, immune, and, hypoxia-related markers between the three clusters of outcome-associated stroma identified in FIG. 2a. The genes analyzed were HIF1A, CXCL1, EDN2, MSR1, MARCO, MMP1, MMP12, and CCL2.",
+                                "**Functional Annotation of Unknown Predictor Genes**",
+                                "Gene symbols in the list of 163 differentially expressed genes were obtained from the BioConductor annotations for the Hgug4112a Agilent array. Symbols beginning with THC reference The Institute for Genomic Research (TIGR) Tentative Human Consensus (THC) sequences. Unknown probes were blasted against the ENSEMBL human genome assembly (release 45). The SDPP member gene THC2394165 was found to have a probe that aligned immediately upstream of SNTG2 (gamma-2 syntrophin). Correlation between the probes for STNG2 and THC2394165 was 0.42. This is in the 99th percentile of correlations between these probes and all other probes on the array, strongly suggesting that the probe for THC2394165 is detecting expression of SNTG2.",
+                                "**Immunohistochemistry**",
+                                "Expression of proteins corresponding to selected members of the SDPP gene set (CD8, CD3z and osteopontin/SPP1) was validated by immunohistochemistry, using sections from formalin-fixed paraffin-embedded blocks obtained from the MUHC Pathology archive, while CD31 expression was evaluated on frozen tissue sections. Procedures were carried out as per the manufacturer's instructions (see Table 7 for details). Slides were then scanned using an Aperio ScanScope XT (Aperio Technologies, Vista, Calif.) with a 20\u00d7 objective and images extracted using the ImageScope image viewer (Aperio Technologies).",
+                                "**Q-RT-PCR**",
+                                "Amplified RNA (aRNA) prepared from microdissected tissues were used as a templates for RT-Qt PCR validation using a LightCycler instrument (Roche Applied Science) as per the manufacturer's instructions. Briefly, reactions for CXCL1, VGLL1 and LCP1 were performed using the appropriate Universal Probe Library (Roche) probes, while reactions for ADM, CD8A and SPP1 were performed using probes designed using the OligoPerfect\u2122 Designer software (Invitrogen). aRNA was initially reverse transcribed using AMV reverse transcriptase (Roche). All primers and probe sequences were designed within 300 by of the 3\u2032-end. Primer sequences and Universal Probe Library probes are described in Table 8. The crossing point was automatically calculated using the LightCycler 3.5 software and determined from the second derivative maximum on the PCR amplification curve. Transcript quantification was performed by comparison with standard curves generated from dilution series of cDNA from pooled connective aRNA (crossing point vs. log initial RNA amount). Melt curve analyses confirmed that single products were amplified. Agarose gel electrophoresis was used to establish that PCR products were of the predicted length.",
+                                "**Results**",
+                                "Gene Expression in Breast Tumor Stroma Identifies Clusters Associated with Outcome",
+                                "To investigate changes in breast tumor-associated stroma LCM-based tissue isolation and RNA amplification were combined with gene expression profiling using DNA microarrays23. LCM was used to collect cells from the stromal compartment within the tumor bed and within adjacent normal tissue from 53 patients presenting with invasive ductal carcinoma (IDC) (Table 1). From 31 of these patients, data was obtained for matched tumor-associated and normal stroma. In order to determine whether gene expression in tumor-associated stroma could identify patient subtypes as has previously been observed in analysis using whole tissue4, a class discovery approach was applied. Therefore, a list of genes whose expression showed the most variation between the matched tumor versus normal stroma expression was generated for the 31 tissue-matched patients. The 200 most variable genes (Table 2) were used to cluster the complete data set of 53 patient tumor stroma samples (FIG. 1a-i). This class discovery analysis identified three patient clusters (FIG. 1b). One cluster (good outcome, FIG. 1b, 1c) has a significantly reduced rate of recurrence and longer relapse-free survival (RFS) (p=7.26e-3 and p=4.17e-3, respectively, c2 test for association), while a second patient cluster (poor outcome, FIG. 1b, 1c) has a significantly increased rate of recurrence and shorter RFS (p=2.04e-5 and p=2.87e-4, respectively). The third (FIG. 1b, lc) contains patients with mixed outcomes. Unlike similar analyses using breast cancer datasets derived from whole tissue where patients cluster predominantly based on ER and HER2 status30, multivariate Cox regression indicates that the poor outcome patient cluster identified by stromal gene expression is independent of ER, HER2 and lymph node status, as well as age and grade, (FIG. 1d). Hence the stroma-derived patient clusters are distinct from previously identified breast tumor subtypes4.",
+                                "**Good and Poor Outcome Patient Stroma Exhibits Distinct Biological Responses**",
+                                "The tri-partition of the patients by stromal expression profiles may represent three subtypes of breast tumor-associated stroma (FIG. 1b). To investigate if the differences between these patient groups reflect distinct biological responses that can be used to distinguish between the patient subgroups, genes differentially expressed between each patient cluster were identified. Using the complete unmatched tumor stroma gene expression data from the 53 patients, pairwise comparisons of gene expression between the three patient clusters were performed (FIG. 1a-ii). From this class distinction, 163 distinct genes were identified that have the greatest differences in expression between clusters (FIG. 2, Tables 3, 4, 5). Using this gene set, patients cluster by outcome in a manner similar to that previously generated by class discovery (FIG. 2a, b). The 163-gene set was then used as a starting point to characterize the differences between the good and poor outcome-associated stroma subtypes at the molecular level. These 163 genes cluster into three distinct groups (FIG. 2a, gene clusters identified as 1, 2 and 3).",
+                                "Each stroma patient subtype (FIG. 2a, good, poor and mixed-outcome patient clusters) contains several genes whose expression is elevated in that subtype and which are involved in distinct biological responses, providing evidence that each stromal subtype reflects different biologies. For example, gene cluster 2 (FIG. 2c) contains 102 genes specifically elevated in the poor-outcome patient cluster. Gene Ontology (GO) analysis of these genes (FIG. 7) identifies an enrichment for functions and processes previously associated with poor outcome31\u203232. These genes include factors associated with an angiogenic response, such as adrenomedullin (ADM), interleukin 8 (IL8) and CXCL133-35. Supporting the link to angiogenesis, patients within our poor outcome cluster exhibit the highest levels of endothelial content, as established by immunostaining with the endothelial marker CD31 (FIG. 8 b, c, d). Several matrix metalloproteinase genes are highly expressed in poor vs good outcome, (MMP12 and MMP1 respectively, poor vs good 15.6 and 3.59-fold differential expression, respectively, pvalues<1e-1 and 0.0014, respectively). MMP1 and MMP12 are known factors involved in tissue remodeling by macrophages. MMP1 is also linked to angiogenesis, invasion and metastasis36. Additionally, adrenomedullin has been previously identified as part of a hypoxia transcriptional response19.",
+                                "There are 29 genes predominantly expressed in the good outcome patient cluster (FIG. 2a, cluster 2 2e). GO analysis demonstrates enrichment for genes involved in the Th1-type immune response, including T-cell selection and differentiation, MHC class I receptor activity, and granzyme NB activity (FIG. 7). This implies that increased recruitment of activated T-cells and NK (natural killer) cells occurs in these tumors (FIG. 2a, good outcome cluster). Using immunohistochemistry it was confirmed that elevated levels of CD8 and CD3Z-positive cells are present in sections of tumor-associated stroma from patients in the good versus poor outcome-linked clusters (FIG. 5 a, b).",
+                                "There are 33 genes expressed in samples from both good and mixed-outcome patient clusters (FIG. 2a cluster 3 2d). GO analysis identifies enrichment for estrogen and androgen receptor activity and positive regulation of cell proliferation, among others, consistent with the preponderance of ER-positive patients in this cluster.",
+                                "**Construction of a Stroma-Derived Prognostic Predictor**",
+                                "Based on the 163-gene signature of tumor-associated stroma subtypes, a minimal subset of these genes was identified that can act as a predictor of outcome. Many factors known to have prognostic value for breast cancer outcome, such as ER or HER2 status, can significantly affect tumor gene expression profiles4. To limit the influence of these effects, genes predictive of outcome independent of these factors were identified. Multivariate logistic regression, with ER, PR, HER2 and lymph node status as covariates, was used to rank genes from most to least significant by their independent prognostic ability (FIG. 1a, iii, see Materials and Methods). Thus genes at the top of this list (Table 3) are more likely to be independent predictors of outcome. To construct a multivariate predictor of outcome, a multivariate na\u00efve Bayes classifier was trained using incrementally larger gene sets from the ordered list (Table 3, FIG. 1a-iv). Each classifier was evaluated using 50 cross-validation runs, randomly splitting the data into testing and training sets. Receiver-operator characteristic (ROC) curves and the area under the curve (AUC) were used to assess the classifiers. Although there were a number of predictors with similar performance (FIG. 6 a), the predictor that maximized the AUC contained 26 genes (FIG. 1a-v) and performed well only in tumor-associated stroma (FIG. 6 c, d, e). [Notably, these genes contain representatives from each of the three gene clusters (gene clusters 1, 2 and 3) identified from the 163-gene set (FIG. 2a). Expression of selected genes within the predictor was validated by quantitative real-time PCR and significant correlations were found with array data (FIG. 5 d). Attempts to identify highly accurate predictors using other, more parsimonious, approaches to this problem failed. For example, predictors learnt directly from the list of differentially expressed genes between good and poor outcome patients had significantly less predictive ability than the 26-gene set learned from the 163-gene stroma signature.",
+                                "Performance of the Stroma-Derived Prognostic Predictor (SDPP) in Datasets Derived from Whole Tissue",
+                                "Previous analyses have derived predictors for outcome from data derived from whole breast tumor tissue, containing tumor and stroma3,12. To establish whether our SDPP could successfully predict outcome in such data, several breast cancer datasets were examined. Two large publicly available examples have been analyzed extensively (van de Vijver et al.18 (NKI) and Wang et al.12) (FIG. 1a-vi). The NKI dataset consists of 295 IDC breast cancer samples with mixed ER, PR, HER2, and lymph node status, while the Wang et al. dataset contains 286 lymph node-negative cases. Only a subset of genes from the SDPP predictor were present on the arrays used for each of these datasets (15/26 for NKI and 19/26 for Wang et al.). Using these genes, the outcome of each sample using the SDPP classifier was predicted (FIG. 4a, d respectively; good, mixed, poor). In both datasets, patients assigned to the poor-outcome group by our SDPP are at significantly increased risk of recurrence and death from disease when compared to patients in the other two groups (FIG. 4 b,c.e) demonstrating the utility and robustness of the predictor in data derived from whole tissue. Moreover, since all patients in the Wang et al.12 dataset were node-negative, our analysis demonstrates that gene expression in tumor-associated stroma is predictive of outcome prior to node involvement.",
+                                "**The SDPP is an Independent Prognostic Factor**",
+                                "To test whether the SDPP was an independent prognostic factor, the composition of the SDPP patient clusters was examined, and multivariate Cox regression of available risk factors in the NKI and Wang et al. data sets was performed (FIG. 9 a, b). Although the mixed-outcome group was enriched for ER-positive/HER2-negative tumors, the good and poor outcome groups identified by the SDPP were composed of tumors with mixed ER and HER2 status (FIG. 9 c). In addition, the SDPP identifies good vs. poor outcome patients in both ER-positive and HER2-positive patient cohorts (FIG. 4 b, c, e, dashed lines, parentheses). In multivariate analyses, the SDPP was independent of classical clinical risk factors including ER and HER2 status, lymph node involvement, grade and age (FIG. 9 a, b), demonstrating that the SDPP is a novel predictor that identifies patients at risk of relapse independent of classical clinical risk factors.",
+                                "**The SDPP is Independent of Previously Described Predictors and Signatures**",
+                                "Other expression-based prognostic signatures and predictors have been identified in breast cancer3. The 70-gene predictor of van't Veer et. al.3 developed from a subset of the NKI patient cohort, has received FDA market clearance for use as a predictor for metastatic progression. Genes within this predictor have been identified as involved in proliferation, angiogenesis, and invasion3,37. In addition, signatures have been developed that reflect biological responses in vitro19,20. For example, the concept of tumors as \u201cwounds that do not heal\u201d led to the identification of a wound response signature derived from the response of stromal fibroblasts in culture to serum stimulation20. Similarly, since tumors undergo adaptation to hypoxia in response to decreased oxygen, a hypoxia-associated transcriptional response was derived from cell culture studies19. Interestingly, both of these signatures can predict outcome in different cancer types19,20.",
+                                "To test how the SDPP performs when compared to other predictors and signatures, the NKI dataset, where both the wound and hypoxia signatures predict outcome was examined19,20. Multivariate Cox regression showed that, despite some correlation (FIG. 9 d), the SDPP was independent of the wound response and hypoxia signatures (Table 6), demonstrating that the SDPP reflects important biological processes beyond these signatures. One gene present in the hypoxia signature (ADM) is present within the SDPP, thus implicating hypoxia as an important component of the SDPP.",
+                                "Additionally, the SDPP was independent of, and outperformed, the 70-gene predictor in the HER2-positive cohort of the NKI data (FIG. 9 a, e). These results demonstrate that the SDPP provides additional information to predict outcome, independent of published stroma-associated signatures and predictors entering clinical use.",
+                                "**Discussion**",
+                                "While there is an increasing awareness that stromal interactions contribute to tumor progression, the role played by the microenvironment in primary breast cancers is poorly understood. Previous predictors have not specifically investigated the biological processes that occur in stroma. Such insight is essential for the development of new therapeutic strategies. SDPP, based on differential gene expression patterns in tumor-associated stroma, forecasts disease outcome with greater accuracy than do predictors based on whole tissue, suggesting that gene expression in tumor associated stroma modulates progression and outcome. Multiple biological responses are differentially reflected within the stroma of patients in different outcome categories.",
+                                "Tumor associated stroma samples comprising the good-outcome patient cluster (FIG. 2a) overexpress a distinct set of immune-related genes relative to the other clusters, including T-cell and NK-cell markers indicative of a Th1-type immune response. This is consistent with previous work reporting a correlation between increased memory Th1 cell content and good outcome in colon cancer38. In contrast, this response is significantly diminished in patients of the poor outcome cluster (FIG. 2a). Stroma from poor outcome patients exhibits elevated expression of macrophage chemoattractants and macrophage scavenger receptors (FIG. 8a), supporting a Th2-type immune response39\u20324\u00b0. This is associated with poor outcome in animal models of breast cancer, including the polyoma middle-T model where type II macrophages stimulate invasion and metastasis by tumor cells41-43.",
+                                "Type II macrophages can be recruited to the tumor microenvironment via hypoxia. An elevated expression of the transcription factor HIF1A (hypoxia inducible factor 1-alpha), as well as VEGF (vascular endothelial growth factor), and EDN2 (endothelin 2) was observed in the poor-outcome vs. good-outcome clusters (FIG. 8 a). VEGF, CXCL1 and EDN2 are chemoattractants able to recruit monocytes to the tumor site40, where they may differentiate into type II macrophages. Two additional genes elevated in this cluster of patients, MSR1 (macrophage scavenger receptor 1) and MARCO (macrophage scavenger receptor with collagenous structure) (FIG. 8 a), are markers of type II macrophages40,44. In addition, the poor-outcome patient cluster exhibits increased markers for endothelial cells (FIG. 8 b-d), confirming previous reports that increased blood vessel density correlates with poor clinical outcome45,46. A significantly higher blood vessel density in tissues from patients was observed in the mixed and poor clusters vs. patients in the good cluster (FIG. 1a).",
+                                "The increased expression of pro-angiogenic factors as well as enrichment for other angiogenesis-related genes such as VEGF and EDN2 in the poor outcome cluster of patients supports a role for this process in affecting breast cancer outcome.",
+                                "Although each of these biological responses (differential immune response, hypoxia and angiogenesis) has previously been associated with poor prognosis, their value as independent prognostic factors remains in question31,32. This study reveals that integrating the output of these processes generates an independent predictor of outcome. In particular, one component of the SDPP, representing hypoxia and angiogenesis, is associated with poor outcome, while another, representing a specific immune response, is associated with good outcome.",
+                                "Osteopontin (SPP1) expression is strongly associated with the poor-outcome group in both the NKI and Wang et al. data sets. Increased immunostaining of breast carcinoma cells for this protein has previously been associated with poor outcome47, and is also observed in members of our patient cohort (FIG. 5 c)",
+                                "The stroma-derived pattern of gene expression, distilled as a 26-gene set is a robust predictor; it is correlated with clinical outcome in public breast cancer datasets derived from whole tumor tissue, using a subset of the 26 genes for outcome prediction12,18 Notably, tumors from good and poor outcome patients identified by the SDPP in the NKI patient data do not segregate by ER or HER2 status (FIG. 9 a, c), indicating that the SDPP identifies distinct biological processes, rather than those associated with known clinical breast cancer subtypes.",
+                                "Although conventional histological diagnosis and immunohistochemical testing is currently used to identify distinct clinical subtypes of breast cancer, it often fails to classify patients by outcome48. The relative risk associated with poor-outcome-associated stroma identified by the SDPP is greater than, and independent of, lymph node involvement, the current gold standard for predicting outcome in breast cancer49 (Table 6, FIG. 9 a). Interestingly, the SDPP shows significantly increased relative risk in HER2-positive patients (FIG. 4 b, c, e). This is consistent with reports demonstrating a link between HER2-positive human breast cancer and increased angiogenesis5\u00b0",
+                                "A predictor of outcome for breast cancer derived from gene expression signatures51 has recently received FDA market clearance. The SDPP gene set shows no overlap and adds independent information to this 70-gene predictor (Table 6, FIG. 9 a), and, in the data sets examined, outperforms it in HER2-positive patients, providing increased accuracy (FIG. 9 e). When compared with the wound and hypoxia signatures and the 70-gene predictor, our SDPP is the only one of the four that forecasts metastasis or poor outcome with greater than 50% accuracy (FIG. 9 g)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe tissue samples",
+                                "introduce laser capture microdissection",
+                                "describe RNA isolation and microarray hybridization",
+                                "identify tumor stroma subtype associated with recurrence and poor outcome",
+                                "define top 200 most variable genes",
+                                "cluster tumor associated stroma using genes",
+                                "test clusters for association with clinical variables",
+                                "identify genes differentially expressed between stroma subtypes",
+                                "construct predictor using logistic regression",
+                                "evaluate predictor using cross-validation",
+                                "compare predictor to other clinical risk factors",
+                                "perform gene ontology analysis",
+                                "compare to publicly available breast cancer datasets",
+                                "validate expression of selected genes by qRT-PCR",
+                                "analyze expression of macrophage, angiogenesis, hypoxia and immune markers",
+                                "functionally annotate unknown predictor genes",
+                                "validate protein expression by immunohistochemistry",
+                                "describe results of gene expression in breast tumor stroma",
+                                "identify clusters associated with outcome",
+                                "describe differences between good and poor outcome patient stroma",
+                                "identify genes differentially expressed between patient clusters",
+                                "cluster genes into distinct groups",
+                                "describe biological responses associated with each cluster",
+                                "analyze gene ontology of poor outcome cluster",
+                                "validate endothelial content by immunostaining",
+                                "describe matrix metalloproteinase genes",
+                                "analyze good outcome cluster",
+                                "describe Th1-type immune response",
+                                "validate CD8 and CD3Z expression by immunohistochemistry",
+                                "analyze mixed outcome cluster",
+                                "describe estrogen and androgen receptor activity",
+                                "construct stroma-derived prognostic predictor",
+                                "rank genes by independent prognostic ability",
+                                "train multivariate naive Bayes classifier",
+                                "evaluate classifier using cross-validation",
+                                "compare to other predictors",
+                                "validate expression of selected genes by qRT-PCR",
+                                "analyze performance in datasets derived from whole tissue",
+                                "test whether SDPP is an independent prognostic factor",
+                                "analyze composition of SDPP patient clusters",
+                                "perform multivariate Cox regression",
+                                "compare to previously described predictors and signatures",
+                                "analyze correlation with wound and hypoxia signatures",
+                                "compare to 70-gene predictor",
+                                "discuss biological processes reflected in SDPP",
+                                "describe immune response in good outcome cluster",
+                                "describe macrophage chemoattractants in poor outcome cluster",
+                                "analyze hypoxia-associated genes",
+                                "describe angiogenesis-related genes",
+                                "discuss integration of biological responses",
+                                "summarize SDPP as a robust predictor"
+                            ],
+                            "num_characters": 26026,
+                            "outline_medium": [
+                                "describe samples",
+                                "introduce LCM and RNA isolation",
+                                "perform microarray hybridization",
+                                "identify tumor stroma subtype associated with recurrence",
+                                "identify genes differentially expressed between subtypes",
+                                "construct predictor",
+                                "evaluate predictor",
+                                "perform GO analysis",
+                                "compare with publicly available datasets",
+                                "express macrophage, angiogenesis, hypoxia and immune markers",
+                                "functionally annotate unknown predictor genes",
+                                "perform immunohistochemistry",
+                                "perform Q-RT-PCR",
+                                "present results",
+                                "identify good and poor outcome patient stroma",
+                                "identify distinct biological responses",
+                                "construct stroma-derived prognostic predictor",
+                                "evaluate predictor in datasets derived from whole tissue",
+                                "show predictor is independent prognostic factor",
+                                "show predictor is independent of previously described predictors",
+                                "discuss biological significance of predictor",
+                                "discuss immune response",
+                                "discuss hypoxia and angiogenesis",
+                                "discuss macrophage response",
+                                "discuss implications for therapy"
+                            ],
+                            "outline_short": [
+                                "describe sample collection and processing",
+                                "perform LCM and RNA isolation",
+                                "hybridize RNA on microarrays",
+                                "identify differentially expressed genes",
+                                "cluster tumor-associated stroma samples",
+                                "associate clusters with recurrence and poor outcome",
+                                "identify genes differentially expressed between clusters",
+                                "construct predictor of prognosis",
+                                "evaluate predictor using cross-validation",
+                                "compare predictor with publicly available datasets",
+                                "validate expression of selected genes by Q-RT-PCR",
+                                "perform immunohistochemistry and functional annotation"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Integration of Multiple Predictors**",
+                                "The independent predictions of the 70-gene predictor, wound response signature, hypoxia signature, and our SDPP in the NKI data set were combined, to construct a Bayes' classifier of metastasis. The structure of the classifier was to condition metastasis on the output of wound response, 70-gene, hypoxia, and the SDPP. In order to compare the good and poor-outcome classes of each predictor, cases predicted as mixed or intermediate outcome for the SDPP and wound signatures, respectively, were removed for training. Posterior probabilities of metastasis were then estimated given different combinations of each predictor, including the case where information from a predictor was not used.",
+                                "Bayesian Network Integrating the Hypoxia, 70 Gene, and Wound Signatures with the SDPP.",
+                                "The structure and parameters of the Bayesian network that integrates the 70 gene, wound response, and hypoxic transcriptional response with the SDPP, as well as survival, metastasis, estrogen receptor status, and HER2 receptor status was learned from the NKI data set. The network was used to make inferences regarding posterior probabilities conditional on a variety of events including observation of individual signatures in isolation and in combinations.",
+                                "**Results**",
+                                "Having demonstrated that the SDPP was an independent prognostic predictor, the SDPP was tested for whether it adds predictive value to known predictors and signatures. For this a graphical modeling approach was applied (See Materials and Methods, FIG. 9 f). Using the NKI data set, and predictions from the 70-gene predictor, wound response and hypoxia signatures, and the SDPP, a Bayes' classifier of metastasis was constructed. From this analysis, the 70-gene, hypoxia, and wound response signatures each have a posterior probability of metastasis of less than 50%, whereas the SDPP has a posterior probability of metastasis of 56% (FIG. 5g) demonstrating the increased accuracy of the SDPP. Notably, combining the SDPP with any of the predictors improves the prediction of metastasis beyond that of any of the predictors alone, and beyond any combination of predictors that does not include the SDPP (FIG. 9 g, black points). Comparable improvements were observed when the SDPP is combined with other predictors to predict good outcome (FIG. 9 g, grey points). These results demonstrate an interaction between the biological processes underlying the predictors and highlight the increased prognostic power to be derived from an integrative approach.",
+                                "**Discussion**",
+                                "The SDPP provides a significant improvement in predictive accuracy when applied in combination with the other signatures/predictors (FIG. 9 g). Thus, distinct gene expression signatures in breast tumor stroma reflect different clinical outcomes, which are not restricted to a specific clinical subtype. The stroma-specific signature presented here, alone or in combination with other molecular prognostic predictors, promises to improve molecular classification and prediction of outcome in breast cancer, specifically for the identification of patients that may benefit from adjuvant or aggressive therapies. Additional information is derived from the SDPP, beyond that provided by classical clinical risk factors or published molecular signatures. This, in combination with the improved accuracy provided by a combinatorial approach, clearly highlights the need to fully integrate all aspects of the tumor microenvironment into prognostic prediction and may suggest future avenues of investigation for the development of additional targeted therapeutic modalities."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "integrate multiple predictors",
+                                "construct Bayes' classifier",
+                                "estimate posterior probabilities",
+                                "test SDPP for added predictive value",
+                                "demonstrate increased accuracy of SDPP",
+                                "discuss interaction between biological processes",
+                                "highlight need for integrative approach"
+                            ],
+                            "num_characters": 3630,
+                            "outline_medium": [
+                                "integrate multiple predictors",
+                                "construct Bayes' classifier",
+                                "demonstrate increased accuracy"
+                            ],
+                            "outline_short": [
+                                "integrate multiple predictors using Bayesian network"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Description of Samples**",
+                                "Tissue samples comprising tumor associated stroma and normal stroma from cancer patients such as colon cancer patients or lung cancer patients are subjected to laser capture microdissection (LCM). Recurrence (local or distant) is determined by examination of medical records following diagnosis. Poor outcome is defined as alive with disease or dead of disease as of the time of the latest follow-up.",
+                                "**LCM, RNA Isolation and Microarray Hybridization**",
+                                "Regions of tumor-associated and normal stroma are identified by a clinical pathologist prior to microdissection. LCM, sample isolation and preparations, as well as microarray hybridization, are carried out as previously described23. Normal stroma is harvested at least 2 mm away from the tumor margins. Each RNA sample is hybridized on Agilent 44K whole human genome microarrays in a dye-swap replication design; samples or a subset of samples are optionally hybridized in duplicate, triplicate, and/or quadruplicate. Normalization and model fitting is performed as previously described23,24.",
+                                "Identification of a Tumor Stroma Subtype Associated with Recurrence and Poor Outcome",
+                                "A LIMMA25 model to the patient-matched tumor-associated vs. normal stroma data is applied, and the top 200 most variable genes across all patients, which are also differentially expressed in at least 3 patients (p<1e-5) are identified. This approach excluded genes that co-vary between tumor and normal stroma. Tumor stroma is clustered using these genes and the significance of clusters is assessed by bootstrapping (1000 bootstrap iterations) using the pvclust package26. Each cluster is tested for association with known predictors of outcome that depend on the cancer type and may include lymph node, and p53 status, as well as grade, recurrence, and outcome, using a c2 association test.",
+                                "**Identification of Genes Differentially Expressed Between the Tumor Stroma Subtypes**",
+                                "Pair-wise class distinction is used to identify genes differentially expressed between the poor outcome, mixed outcome, and good outcome associated stroma subtypes previously defined by class discovery. The expression profile of the outcome-associated tumor stroma subtypes is derived from the union of differentially expressed genes from SAM27 (multiclass comparison, q-value<0.01), and LIMMA (intersection of top 200 differentially expressed for each comparison, ranked by fold change FDR adjusted p-value<0.01).",
+                                "**Predictor Construction and Evaluation**",
+                                "Logistic regression is used to score and rank each gene in the expression profile, based on its significance in estimating binomial recurrence in a model including gene expression level, and other predictors such as lymph node status. This model ensures that the predictive strength of a gene is not confounded with other predictor status.",
+                                "Na\u00efve Bayes' classifiers are trained to predict prognosis using the ranked gene expression profile of the recurrence-positive stroma cluster. Each classifier is trained on an incrementally larger set of genes from the ranked list, and then evaluated using cross validation runs by randomly splitting the data into testing and training sets of equal size, Receiver-operator-characteristic (ROC) curves are generated for each classifier, and classifiers are compared using their area under the curve (AUC). The optimal predictor is selected to maximize the AUC, and trained on all the data. The performance of the SDPP in tumor stroma to its performance in tumor epithelium, normal stroma, and normal epithelium is compared using the AUC.",
+                                "**Gene Ontology (GO) Analysis**",
+                                "Genes differentially expressed in each stroma subtype are cross-referenced against GO annotations28 to identify overrepresented GO categories using a test against the hypergeometric distribution, using a significance threshold of p\u22660.05.",
+                                "**Immunohistochemistry**",
+                                "Expression of proteins corresponding to selected members is validated by immunohistochemistry, using sections from formalin-fixed paraffin-embedded blocks. Slides are then scanned using an Aperio ScanScope XT (Aperio Technologies, Vista, Calif.) with a 20\u00d7 objective and images extracted using the ImageScope image viewer (Aperio Technologies).",
+                                "**Q-RT-PCR**",
+                                "Amplified RNA (aRNA) prepared from microdissected tissues is used as a template for RT-Qt PCR validation using a LightCycler instrument (Roche Applied Science) as per the manufacturer's instructions. aRNA is initially reverse transcribed using AMV reverse transcriptase (Roche). All primers and probe sequences are designed within 300 by of the 3\u2032-end. The crossing point is automatically calculated using the LightCycler 3.5 software and determined from the second derivative maximum on the PCR amplification curve. Transcript quantification is performed by comparison with standard curves generated from dilution series of cDNA from pooled connective aRNA (crossing point vs. log initial RNA amount). Melt curve analyses confirmed that single products are amplified. Agarose gel electrophoresis is used to establish that PCR products are of the predicted length."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe samples",
+                                "perform LCM, RNA isolation, and microarray hybridization",
+                                "identify tumor stroma subtype associated with recurrence",
+                                "identify genes differentially expressed between subtypes",
+                                "construct predictor using logistic regression",
+                                "evaluate predictor using cross-validation",
+                                "perform gene ontology analysis",
+                                "validate protein expression using immunohistochemistry",
+                                "validate gene expression using Q-RT-PCR",
+                                "compare performance of SDPP in different tissues"
+                            ],
+                            "num_characters": 5105,
+                            "outline_medium": [
+                                "describe samples",
+                                "perform LCM, RNA isolation, and microarray hybridization",
+                                "identify tumor stroma subtype associated with recurrence",
+                                "construct and evaluate predictor",
+                                "perform gene ontology analysis and immunohistochemistry"
+                            ],
+                            "outline_short": [
+                                "identify tumor stroma subtype associated with recurrence and poor outcome",
+                                "construct and evaluate predictor using logistic regression and Na\u00efve Bayes' classifier"
+                            ]
+                        },
+                        {
+                            "title": "Example 4",
+                            "paragraphs": [
+                                "**Description of Samples**",
+                                "Laser capture microdissection was used to isolate normal stroma and epithelium as well as tumor stroma and epithelium from each sample whenever possible. Tissue samples from 91 patients were microdissected. The cohort of 91 patients was composed of 68 patients with invasive ductal carcinoma (IDC), 1 patient with invasive lobular carcinoma (ILC), and 17 healthy donors who had undergone breast reduction surgery. From this cohort, the following samples were obtained: 53 samples of tumor stroma from IDC, 63 samples of tumor epithelium from IDC, 47 samples of normal stroma, of which nine were from breast reduction samples, 57 samples of normal epithelium (15 breast reduction cases), one sample of tumor epithelium from ILC, and three samples of tumor epithelium from lymph nodes. In total, 226 distinct tissue samples were obtained by microdissection from the 91 patients.",
+                                "Each sample was hybridized as a dye-swap: 219 samples were hybridized in duplicate, three in triplicate, and four in quadruplicate. In total, 463 arrays were obtained. After normalization and model fitting, a microarray dataset of 226 distinct expression experiments was produced. The following summarizes the results of the tumor stroma analysis.",
+                                "Identification of a Tumor Stroma Subtype Associated with Recurrence and Poor Outcome",
+                                "A LIMMA model was fitted to the patient-matched tumor vs normal stroma data and identified the top 200 most variable genes across all patients, which were differentially expressed in at least 3 patients. Tumor stroma was clustered using these genes and the significance of the clusters was assessed using the bootstrap. Each cluster was tested for association with ER, PR, lymph node, Her2, p53 status, grade, recurrence, and outcome.",
+                                "**Identification of Genes Differentially Expressed in the Poor Outcome Tumor Stroma Subtype**",
+                                "The genes differentially expressed between poor outcome tumor stroma subtype and the remaining tumor stroma samples were identified using the LIMMA (top 200 genes ranked by fold change, fdr adjusted p-value<0.01) and SAM (q-value<0.01) approaches to class distinction. The set union of these approaches was used to derive the expression profile of tumor stroma with poor outcome.",
+                                "Logistic regression was used to identify those genes from the expression profile that were predictive of recurrence or poor outcome. A multivariate model that included lymph node status, estrogen receptor status, progesterone receptor status, and Her2 receptor status was fitted. Genes that are significantly associated with recurrence or outcome (p<0.05) in the multivariate logistic regression model were identified.",
+                                "**Evaluation of the Prognostic Predictor by Cross Validation**",
+                                "A na\u00efve bayes classifier was trained to predict prognosis based on the genes identified as significant by the logistic regression model in tumor stroma. The classifier was evaluated under cross validation, by splitting the data randomly into a testing and a training set of equal size. ROC curves and the area under the curves were generated for the classifier, and were compared to ROC curves for a classifier trained on tumor epithelium data, using the same features.",
+                                "Comparison with Publicly Available Breast Cancer Datasets",
+                                "Publicly available breast cancer data was downloaded18 and the data clustered using the genes identified as associated with recurrence or outcome in tumor stroma. The two clusters of samples defined by these genes were treated as a categorical variable in Cox proportional hazard survival analysis, and tested for significance against survival, time to metastasis, local recurrence and regional recurrence.",
+                                "**Immunohistochemistry**",
+                                "Genes identified as significantly associated with poor outcome tumor stroma were validated by immunohistochemistry on paraffin sections of breast tissue.",
+                                "**Results**",
+                                "Class Discovery Identifies a Tumor Stroma Subtype Associated with Poor Outcome",
+                                "A cluster of tumor stroma that is associated with patients with poor outcome (alive with disease or dead of disease, p=2.04e-5, c2 test for association), and positive for recurrence (p=2.87e-4, c2 test for association) was identified (FIG. 10). This cluster of patients was not detected when tumor epithelium was analyzed in the same manner.",
+                                "**Genes Defining the Poor Outcome Tumor Stroma Cluster**",
+                                "The genes differentially expressed between the poor outcome tumor stroma subcluster and the remaining subclusters of tumor stroma were identified. Seventy-two (72) genes were identified as differentially expressed between the clusters (q-value<0.01) using SAM. The top 200 genes differentially expressed between the clusters were selected using LIMMA (ranked by fold change, fdr adjusted p<0.01). Twenty (20) genes were identified as significantly associated with recurrence or outcome in the logistic regression model and were used to cluster the tumor stroma expression data (FIG. 11).",
+                                "**Evaluation of the Prognostic Predictor**",
+                                "The 20 genes identified by logistic regression were used to build a na\u00efve bayes classifier of outcome. The data was randomly split into a testing and a training set, and the performance of the classifier was evaluated. ROC curves show that the classifier performed well under cross-validation, with an AUC of 0.99. These same were poor predictors of outcome in tumor epithelium, with an AUC of 0.46 (FIG. 12), and also a poor predictor in normal stroma (AUC=0.45).",
+                                "**Predictor Performance in Publicly Available Data Sets**",
+                                "The derived predictor was tested using a publicly available data set. Clustering the data set using the predictor revealed three groups of samples. Kaplan-Meier survival analysis showed that group 3 had significantly poorer overall survival (p=4.1e-7, log rank test) and shorter recurrence free survival (p=7.8e-4, log rank test) than the other two groups combined (FIG. 13A). Similarly, group 1 had significantly improved overall survival (p=4.87e-8, log rank test) and longer recurrence free survival (p=2.21e-4) than groups 2 and 3 combined (FIG. 13B). The difference in overall survival and recurrence free survival between all three groups is also significant (p=7.79e-8, p=6.01e-4, respectively, log rank test).",
+                                "Cox proportional hazards regression showed that the overall survival for group 3 was significantly decreased in a multivariate analysis including ER status, tumor size, lymph node involvement, mastectomy, grade, age, chemotherapy, hormonal therapy, as well as the wound signature predictor, and the 70 gene predictor.",
+                                "**Predictor Gene Expression in Tumor Stroma**",
+                                "The cluster of stroma associated with poor outcome expressed elevated levels of adrenomedullin, a pro-angiogenic factor, as well as decreased levels of HOXA10, a transcription factor whose expression in breast cancer cells has been shown to lead to a decrease in invasive phenotype5253. This cluster also shows a decrease in a number of proteins often downregulated in gastric tumors, including OGN and HRASLS5455. Furthermore, this group shows a decrease in expression of a number of T-cell markers and natural killer cell markers, including granzyme A, CD8A, and CD3Z. There is also decreased expression of CD48, a B-cell activation marker, as well as decreased expression of CD52, a lymphocyte and monocyte antigen important in the complement-mediated immune response. Interestingly, the combination of elevated angiogenic factors and decreased T-cell markers is predictive of poor prognosis in both the presently generated dataset and the publicly available breast cancer dataset (FIG. 11, FIG. 14).",
+                                "While the present invention has been described with reference to what are presently considered to be the preferred examples, it is to be understood that the invention is not limited to the disclosed examples. To the contrary, the invention is intended to cover various modifications and equivalent arrangements included within the spirit and scope of the appended claims.",
+                                "All publications, patents and patent applications are herein incorporated by reference in their entirety to the same extent as if each individual publication, patent or patent application was specifically and individually indicated to be incorporated by reference in its entirety."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe samples",
+                                "perform LCM and microarray hybridization",
+                                "identify tumor stroma subtype associated with recurrence",
+                                "identify genes differentially expressed between subtypes",
+                                "construct predictor using logistic regression",
+                                "evaluate predictor using cross-validation",
+                                "compare performance of predictor in tumor stroma and epithelium",
+                                "validate protein expression using immunohistochemistry",
+                                "test predictor in publicly available datasets",
+                                "perform survival analysis",
+                                "perform Cox proportional hazards regression",
+                                "analyze gene expression in tumor stroma",
+                                "discuss elevated angiogenic factors",
+                                "discuss decreased T-cell markers",
+                                "discuss combination of angiogenic factors and T-cell markers",
+                                "discuss implications of results"
+                            ],
+                            "num_characters": 8251,
+                            "outline_medium": [
+                                "describe samples",
+                                "identify tumor stroma subtype associated with recurrence",
+                                "identify genes differentially expressed in poor outcome tumor stroma",
+                                "evaluate prognostic predictor by cross-validation",
+                                "compare with publicly available breast cancer datasets",
+                                "validate genes by immunohistochemistry",
+                                "present results of class discovery and gene expression",
+                                "evaluate predictor performance in publicly available datasets"
+                            ],
+                            "outline_short": [
+                                "identify tumor stroma subtype associated with recurrence and poor outcome",
+                                "identify genes differentially expressed in poor outcome tumor stroma subtype",
+                                "evaluate prognostic predictor by cross-validation and comparison with publicly available datasets",
+                                "validate predictor gene expression in tumor stroma"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. (canceled)",
+        "2. A method for predicting disease outcome in a breast cancer patient, for predicting recurrence in a breast cancer patient, or for diagnosing a breast cancer sub-type in a subject having breast cancer comprising:\na) obtaining an expression level of at least 3 genes a stroma derived prognostic predictor (SDPP) gene set in a sample of the patient, wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165;\nb) comparing the expression level of the genes in the sample to a reference expression profile for the genes in the SDPP gene set; and\nc) predicting a good, mixed or poor prognosis disease outcome, recurrence or diagnosing breast cancer subtype in the patient;\n\nwherein the reference expression profile of the at least 3 genes in the SDPP gene set correlates with a disease outcome, recurrence or breast cancer subtype class, the class being either a good prognosis, a mixed prognosis or a poor prognosis wherein a good prognosis predicts recurrence free survival of the patient, a poor prognosis predicts recurrence or non-survival, and a mixed prognosis predicts either recurrence free survival, or recurrence and/or non-survival, or wherein a good prognosis predicts a breast cancer subtype associated with recurrence free survival, a poor prognosis predicts a breast cancer subtype with recurrence or non-survival, and mixed prognosis predicts a breast cancer subtype with either recurrence free survival, or recurrence and/or non-survival and wherein disease outcome is predicted according to the statistical probability of falling within the class defined by the reference expression profile of the at least 3 genes in the SDPP gene set.",
+        "3-4. (canceled)",
+        "5. The method of claim 1 for diagnosing poor prognosis breast cancer comprising:\na) obtaining an expression level of at least 3 genes of a SDPP gene set in a sample of a subject, wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165; and\nb) comparing the expression level of the genes to a reference expression profile of corresponding genes in the SDPP gene set;\n\nwherein the reference expression profile of the at least 3 genes in the SDPP gene set correlates with a poor prognosis class and wherein the subject is diagnosed to have the poor prognosis according to the statistical probability of falling within the poor prognosis class.",
+        "6-9. (canceled)",
+        "10. The method of claim 1 further comprising displaying or outputting a result of one or more steps to a user, a computer readable storage medium, a monitor, or a computer that is part of a network.",
+        "11. The method of claim 1 wherein the SDPP gene set comprises at least 3 genes selected from Tables 3, 4, 5, 9, 10, or 11.",
+        "12-15. (canceled)",
+        "16. The method of claim 11 wherein the SDPP gene set comprises the genes from Table 9 or 11 or a group of genes from Table 10.",
+        "17-20. (canceled)",
+        "21. The method of claim 1 wherein the gene expression level is detected using a microarray chip or a PCR method.",
+        "22. The method of claim 21 wherein the microarray chip also detects one or more genes selected from the group consisting of the Wang, NKI, wound signature or 70 gene predictor data sets.",
+        "23-25. (canceled)",
+        "26. The method of claim 21 wherein the PCR method comprises using one or more primers selected from the group consisting of SEQ ID NOS:1-12.",
+        "27. The method of claim 1 where the gene expression level is obtained by detecting the level of a plurality of polypeptides, wherein each of the plurality of polypeptides corresponds to a gene in the SDPP gene set.",
+        "28. (canceled)",
+        "29. The method of claim 27 wherein each polypeptide is detected using an antibody that specifically binds to the polypeptide, by performing immunohistochemical analysis on the sample, or by performing an ELISA assay.",
+        "30-31. (canceled)",
+        "32. The method of claim 1 wherein the breast cancer is selected from the group consisting of a HER2 positive or HER2 negative, ER positive or ER negative, PR positive or PR negative, node positive or node negative, high grade or low grade, basal-like or luminal like, or any combination of thereof, breast cancer.",
+        "33-35. (canceled)",
+        "36. The method of claim 1 wherein the sample is selected from a group consisting of a tumor biopsy sample, a frozen tissue sample, a cell sample, a paraffin embedded sample and a tumor associated stroma tissue sample.",
+        "37-41. (canceled)",
+        "42. A method of monitoring effectiveness of a treatment in a breast cancer patient comprising:\na) obtaining an expression level for at least 3 genes of an SDPP gene set in a first sample of a patient, wherein the first sample is taken before or after the start of the treatment, wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165;\nb) obtaining an expression level for at least 3 genes of a SDPP gene set in a second sample of a patient, wherein the second sample is taken subsequent to the first sample and after at least one treatment;\nc) comparing the expression levels of the genes in the first and second sample to the reference expression profile of the genes in the SDPP gene set; and\nd) determining the disease outcome class for the first and second sample;\n\nwherein a change in the outcome class of the second sample indicates a decreased probability of poor prognosis and indicates the treatment is effective.",
+        "43-45. (canceled)",
+        "46. An array comprising for each gene in a plurality of genes, the plurality of genes being at least 3 of the genes listed in Tables 3-5 or 9-11, one or more polynucleotide probes complementary and hybridizable to a coding sequence in the gene, wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165.",
+        "47-48. (canceled)",
+        "49. The array of claim 46 comprising a substrate comprising a plurality of addresses, wherein each address has disposed thereon the polynucleotide probe that can specifically bind a gene of one or more SDPP gene sets of Tables 3-5 and/or 9-11.",
+        "50-51. (canceled)",
+        "52. A composition comprising:\ntwo or more isolated nucleic acid sequences, wherein each isolated nucleic acid sequence hybridizes to:\na) a RNA product of a gene of a SDPP gene set; and/or\nb) a nucleic acid sequence complementary to a);\n\nor two or more isolated antibodies, wherein each antibody binds a polypeptide product of a gene of a SDPP gene set;\n\nwherein the composition is used to measure the expression level of 2 or more genes of a SDPP gene set selected from Tables 3-5 and/or 9-11, and wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165.",
+        "53-56. (canceled)",
+        "57. A kit for classifying a breast cancer comprising:\ntwo or more isolated nucleic acids wherein each isolated nucleic acid sequence hybridizes to:\na) a RNA product of a gene of a SDPP gene set; and/or\nb) a nucleic acid sequence complementary to a);\n\nor two or more isolated antibodies, wherein each antibody binds a polypeptide product of a gene of a SDPP gene set;\nor an array according to claim 46; and\ninstructions for use, wherein the two or more isolated nucleic acids, or the two or more antibodies or the array detect expression levels of at least 3 genes of a SDPP gene set.",
+        "58-64. (canceled)",
+        "65. A computer system comprising:\na) a processor; and\nb) a memory coupled to the processor and encoding one or more programs, wherein the one or more programs cause the processor to carry out the method of claim 1, steps (b) and (c).",
+        "66. (canceled)",
+        "67. A computer implemented stroma derived prognostic predictor (SDPP) system for predicting disease outcome in a breast cancer patient comprising:\na) values corresponding to at least 3 genes of a SDPP gene set, wherein at least one of the genes is selected from the group consisting of TRBV5-4, C21orf34, AK055101 and THC2394165;\nb) a weighting for each gene in the SDPP gene set according to a reference expression profile for each gene in the SDPP gene set, wherein the weighting is associated with disease outcome; and\nc) a means for receiving values corresponding to an expression level for each gene of the SDPP gene set in a patient sample;\n\nwherein the SDPP predicts disease outcome in a breast cancer patient by comparing the reference expression profile and weighting for at least 3 genes in the SDPP gene set to an expression level of a corresponding gene in a sample from a breast cancer patient.",
+        "68-69. (canceled)",
+        "70. The computer system according to claim 65\u2014comprising:\na) a database including records comprising the reference expression profiles of a plurality of genes in Tables 3-54 and/or 9-11 and associated clinical outcome weighting;\nb) a user interface capable of receiving a selection of gene expression levels of at least 3 genes in Tables 3-54 and/or 9-11 for use in comparing to the tumor associated gene expression profiles in the database;\nc) an output that displays a prediction of clinical outcome according to the expression levels of the at least 3 genes.",
+        "71. A computer readable medium on which is stored a database capable of configuring a computer to respond to queries based on records belonging to the database, each of the records comprising:\na) a value that identifies a gene of a SDPP gene set and/or a gene reference expression profile of a SDPP gene set;\nb) a value that identifies the probability of a clinical outcome associated with the gene and/or gene reference expression profile.",
+        "72-75. (canceled)"
+    ]
+}

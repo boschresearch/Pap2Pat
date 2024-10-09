@@ -1,0 +1,222 @@
+{
+    "id": "US20100246474",
+    "authors": [
+        "Jinyun Zhang",
+        "Lei Cao"
+    ],
+    "title": "Relay Coded Multi-User Cooperative Communications for Uplink 4G Wireless Networks",
+    "date": "2009-03-30 00:00:00",
+    "abstract": "Source nodes in an International Mobile Telecommunications (IMT)-advanced 4G network transmit data on uplink channels to a relay node and a BS using a channel code. The relay node decodes independently the data received from each source node, and applies network coding to data correctly decoded, and transmits the encoded data to the BS. The BS decodes the encoded data transmitted by the sources nodes and the relay nodes cooperatively via a turbo decoding process. The data from each source node are decoded by soft-input soft-output single user decoders and are decoded, together with the data from the relay node, by a soft-input soft-output multi-user decoder.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "This invention relates generally wireless relay networks, and more particularly to uplink in 4G wireless networks communication networks including the IMT-Advanced networks."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to wireless relay networks"
+                    ],
+                    "num_characters": 173,
+                    "outline_medium": [
+                        "relate to wireless relay networks"
+                    ],
+                    "outline_short": [
+                        "relate to wireless relay networks"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "IMT-Advanced 4G Wireless Communication Networks",
+                        "International Mobile Telecommunications (IMT)-advanced networks are the latest effort in International Telecommunication Union (ITU)-R for 4G wireless communications. One goal is to provide an uplink peak spectrum efficiency of 15 bits per second (bps) per Hz, and throughput as high as possible in the edge area of a network cell, given a reasonable network complexity. To achieve this goal, various enabling technologies have been described. A current consensus is to use relay stations (RS) for the improvement of link performance.",
+                        "The IEEE802.16j standard has also adopted RS. This invention is particularly related to the uplink of 4G wireless communication networks where the RS is used.",
+                        "Relay and Network Encoding",
+                        "Relay-based communications facilitates the cooperative decoding at a receiver to improve an overall link performance. There are in general two types of relay-based communication: amplifying and forwarding (AF) and decoding and forwarding (DF). The invention uses the DF. In network encoding, the network is modeled as a graph, where edges represent channels from a transmitter to a receiver. Using the max-flow min-cut theorem, it is possible to calculate the maximum amount of information flow that can be transmitted from a source to a specific receiver. Network coding can enable all intended receivers to get the maximum network information flow from the source simultaneously. Network encoding and channel coding both use operations in finite fields.",
+                        "Cooperative Communications",
+                        "One purpose of cooperative communication is to provide multiple links or channels for the communication between a source and destination node so that a virtual multiple-input multiple-out (MIMO) communications is provided for encoding and diversity.",
+                        "Turbo Decoding of Network Encoding and Channel Encoding",
+                        "In wireless communications, the data transmitted from the source to the destination are usually channel encoded to reduce the effect of channel noise. Channel encoding uses a forward error correction (FEC) code, and often with bit interleaving. The channel code is used to protect the transmitted data in the presence of noise. After data from one source node is received at the destination, the decoding of the received data to recover the source information can be carried out independent of the decoding of data from other source nodes. In the case of network coding, because all data are network encoded at the RS, decoded information of current data can be used to improve the decoding of other data. As a result, a turbo decoding process can be built up so that the decoding alternates between the channel decoding (single-user decoders) and network decoding (multi-user decoder)."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce IMT-Advanced 4G wireless communication networks",
+                        "describe relay stations for link performance improvement",
+                        "explain relay-based communication types",
+                        "introduce network encoding and channel encoding",
+                        "describe turbo decoding of network encoding and channel encoding"
+                    ],
+                    "num_characters": 2752,
+                    "outline_medium": [
+                        "introduce IMT-Advanced 4G wireless communication networks",
+                        "describe relay and network encoding"
+                    ],
+                    "outline_short": [
+                        "introduce IMT-Advanced 4G wireless communication networks"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The embodiments of this invention provide a multi-user, cooperative communication network and method which is related to transmitting data from multiple source nodes to a destination node with the assistance of relay nodes.",
+                        "This invention is specifically appropriate for the up-link IMT-advanced 4G wireless communication networks. One embodiment describes the encoding at the relay node, and another the cooperative decoding process at the destination node.",
+                        "Source nodes or mobile station (MS) concurrently transmit data using different wireless channels. The data can be received at a relay node and a destination node or base station (BS). The received data can be corrupted by channel fading and noise. The case where the destination is unable to receive or recover all of the data, due to a large distance or noisy channel condition, is also described.",
+                        "After the relay node receives the data from multiple sources, the relay demodulates and decodes the data for each source because channel encoding is applied by each source.",
+                        "If the data are correctly decoded, which can be determined by a cyclic redundancy check (CRC) codes, then the data are network encoded using a matrix, with an appropriate size, which is invertible over a binary finite field. The encoding process does not alter the size of the data before and after encoding due to features of a full rank of the matrix.",
+                        "Then, the encoded data are modulated and relayed to the destination. The steps include:\n\n\n- - Demodulating and decoding data of individual source nodes;\n  - Selecting a number of sources for cooperation;\n  - Using an invertible matrix over a finite field for the network\n    encoding data of the multiple sources; and\n  - Transmitting the encoded data to the destination.",
+                        "At the destination, two data sets can be received. One data set is transmitted by the sources using channel coding, and received directly by the destination, although corruption is possible. The other data set is transmitted by the relay using network encoding. This data can also be corrupted. The destination applies iterative decoding to the received data sets, alternating between a number of single-user decoders and a multi-user decoder.",
+                        "Components",
+                        "Soft-In Soft-Out Decoding",
+                        "For the soft-in soft-out decoding, the destination receives data and a priori information of symbols in the transmitted data. The decoder generates log-likelihood ratio (LLR) of the received symbols. This decoding is also called maximum a posteriori probability (MAP) decoding.",
+                        "Information-Exchange-Based Iterative Decoding",
+                        "Iterative decoding alternates between a multi-user decoder, which corresponds to the network encoder, a set of single-user decoders, which correspond to channel encoders.",
+                        "The embodiments of the invention provide a novel network encoding matrices, which are invertible over a binary finite field. As a result, self-recovery of the original data transmitted from each source is possible based on the encoded data in a communication network where direct links between sources and the destination are not available, or too noisy.",
+                        "The cooperative communication according to embodiments of the invention has the following advantages. Cooperation is considered concurrently for multiple sources using the network encoding in the relay. Therefore, in this invention, the decoding results of data transmitted from one source node can be exploited for the detection and decoding of data transmitted from other source nodes.",
+                        "Because the data from multiple sources are also decoded at the relay, and then network encoded before the encoded data are transmitted to the destination, the decoding of the data for multiple sources is also enabled at the destination. As a result, there are two types of encoding and decoding in this invention: channel encoding for single sources, and network encoding for multiple sources.",
+                        "The data recovery process at the destination is to find an estimate of the source data of the multiple sources so that the encoded data, after both types of encoding processes, have the minimum distance from data received at the destination. This maximum-likelihood decoding is known as a NP problem. In this invention, a near optimal turbo decoding strategy is provided at the destination to iteratively decode the received data.",
+                        "Network encoding makes it possible to achieve a data transmission rate approaching the capacity limit. One embodiment applies an exclusively OR (XOR) to data received from two mobile stations (MS) before being relaying the data to the BS. This way, the BS can jointly decode the data from the MS and RS with a lower bit error rate (BER) than if the data were decoded independently."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce multi-user cooperative communication network",
+                        "describe encoding at relay node",
+                        "describe cooperative decoding process at destination node",
+                        "introduce concurrent transmission of data from multiple sources",
+                        "describe data reception at relay node and destination node",
+                        "explain demodulation and decoding at relay node",
+                        "describe network encoding and transmission to destination",
+                        "introduce iterative decoding at destination",
+                        "describe advantages of cooperative communication"
+                    ],
+                    "num_characters": 4698,
+                    "outline_medium": [
+                        "introduce multi-user cooperative communication network",
+                        "describe encoding at relay node",
+                        "describe cooperative decoding process at destination node",
+                        "outline data recovery process"
+                    ],
+                    "outline_short": [
+                        "describe multi-user cooperative communication network",
+                        "outline encoding and decoding processes"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT",
+                    "paragraphs": [
+                        "FIG. 1 shows the general signaling in a wireless network of source nodes 101, relay nodes 103 and a destination node 106 according to embodiments of our invention via channels (links) 102, 103 and 104. The source concurrently transmits data to destination, either directly, indirectly via the relay nodes. As defined herein, source nodes, users and mobile stations (MS) are equivalent, destination node, base stations (BS) are equivalent, and links and channels are equivalent.",
+                        "FIG. 2 shows an example network of uplinks in an International Mobile Telecommunications (IMT)-advanced wireless communication network wherein a relay is used to assistant with the communication. In this example, there are four MSs transmitting signals to the BS concurrently. The MSs transmit symbols \u201ca\u201d, \u201cb\u201d, \u201cc\u201d, \u201cd\u201d, respectively, at a specific time instant. Both the BS and the RS can receive the transmission.",
+                        "The RS decodes the symbols, and uses network encoding to convert correctly decoded symbols \u201ca\u201d, \u201cb\u201d \u201cc\u201d \u201cd\u201d to symbols \u201cp1\u201d \u201cp2\u201d \u201cp3\u201d \u201cp4,\u201d which are then transmitted to the BS.",
+                        "The correct decoding of a specific MS is not required at RS. As long as the RS has correctly decoded data from a number of MS, the data can be switched to a mode of cooperative communication. A transfer matrix, of an appropriate size, is applied to the data from these MSs. If data from one MS are incorrectly decoded by the RS, then a different operation can be followed for this MS.",
+                        "The indices of the network encoded MSs are included in the head of a frame carrying the data. The number of MS that are network encoded can be different from frame to frame based on the number of MSs that are communicating with the BS, and the number of MS whose data are correctly decoded at the RS, detected by cyclic redundancy check (CRC) codes.",
+                        "FIG. 3A shows the method steps performed at the RS. The data transmitted by the MS 301 are decoded 302 independently. Each decoding is individually checked 303 for correctness. If correct, then the data are network encoded 305 and cooperatively transmitted to the BS 306. Otherwise, some other operations 304 can be applied to the incorrectly decoded data.",
+                        "For example, a retransmission strategy can be initiated in 304 so that the data that are incorrectly decoded in a current time slot can be correctly decoded and cooperated with data from other MSs in a later time slot.",
+                        "Alternatively, the RS can switch from the DF mode to the AF mode for this specific MS. As a result, this specific MS does not participate in the cooperative communications with other MSs, but still retains some degree of diversity due to the existence of multiple links including the direct link between the MS and the BS, and the link between the RS and the BS.",
+                        "FIG. 3B shows the transfer matrices 311,312 and 313 according to embodiments of the invention, respectively for when K is even, odd or 2. Because the different types of modulation can always be represented at the bit level, we describe the following by assuming a binary transmission, i.e., binary phase shift keying (BPSK) for each MS.",
+                        "The number of MS for cooperative communications can change from frame to frame. For one frame there are \u201cK\u201d MSs, where \u201cK\u201d can be even 311 or odd 312. The data from the \u201cK\u201d MSs, i.e., a column vector \u201cD\u201d with \u201cK\u201d symbols at a specific time index, is network encoded using a transfer matrix \u201cA\u201d, and generate a column vector \u201cP\u201d to be transmitted from the RS to the BS. That is, P=AD.",
+                        "Invertible Matrix",
+                        "The matrix is designed based on two objectives.",
+                        "First, self-recovery capability must be guaranteed, i.e., the column vector \u201cD\u201d can be correctly decoded even though only \u201cP\u201d is available. This is required in some cases where the direct links between the MSs and the BS are too severe to carry data. Therefore, the matrix \u201cA\u201d is a full rank, non-singular square matrix, i.e., an invertible matrix over a finite field. In linear algebra, an n-by-n square matrix A is invertible, or non-singular if there exists an n-by-n matrix B such that AB=BA=In, where In denotes the n-by-n identity matrix and the multiplication used is conventional. If this is the case, then the matrix B is uniquely determined by the matrix A, and is called the inverse of A, or A\u22121.",
+                        "Second, information of one symbol is spread over the encoded symbols so that soft information can be extracted later at the BS for the turbo decoding. The size of the matrix \u201cA\u201d is arbitrary, and the case when \u201cK\u201d=2 is described specifically in FIG. 3. B. Permutation of rows of the matrix gives the equivalent result.",
+                        "Channel encoding and decoding is used for the data of each MS to deal with errors. As a result, the data transmitted each MS also includes parity information. Because any linear channel code can be converted to a network code, we describe the data 401 in FIG. 4 from each MS as \u201cxi,\u201d i.e., source information, and \u201cxip,\u201d i.e., parity information, i=1, . . . , K.",
+                        "If the RS has correctly decoded the data, then the RS encodes the data 401 from \u201cK\u201d MS via network encoding. The network encoded data are denoted as 402, where N is the number of symbols in a frame. In addition, when all MSs are using the identical channel code, data 402 are in the identical coding space of the channel code. Therefore, data 402 can also be channel decoded in the horizontal direction as shown in FIG. 4.",
+                        "BS Decoder",
+                        "FIG. 5 shows the decoder at the BS. The destination (BS) receives signals from both the MSs and the RS, which can be corrupted by channel fading and noise. The objective of the BS is to recover the source data transmitted by each MS, i.e., \u201cxi\u201d, i=1, . . . , K, in FIG. 4.",
+                        "The optimal solution uses Maximum Likelihood (ML) decoding, which gives an estimate X* based on which the data Y* generated after both channel encoding and network encoding has the minimum distance from the entire received signal at the BS. The turbo decoding structure shown in FIG. 5 provides the near optimal solution of this problem.",
+                        "Data 501 is received directly from the MS and data 502 is received from the RS. The data can be corrupted due to channel fading and noise.",
+                        "The decoder includes multiplexers 503-505, and demultiplexer 506. Multiplexing is used to combine data received from the set of source and the relay for a multi-user decoder 510. Demultiplexing is used to separate the decoded data from the multi-user decoder for a set of single-user decoders 511-512, one for each user. Each of the decoders 511-512 is a soft-in-soft-out decoder, which implements a maximum a posteriori probability decoding, or equivalent.",
+                        "Threshold detectors 521-522 output 1 when the input is larger than 0, and \u22121 otherwise.",
+                        "FIG. 6 shows a soft-in-soft-out decoder 511 that has two inputs 601-602. One input is the received signal from the channel output at the BS, and the other is a priori information of the symbols that are extracted from the multi-user decoder. The input symbols are the channel corrupted version of the encoded data. Each symbol has a priori information. The output log-likelihood ratio (LLR) is generated for each input symbol. As a result, both source symbols and parity symbols have the a priori information before decoding, and the LLR and extrinsic information after decoding",
+                        "When the MS in cooperation use identical channel code, FIG. 6 also shows the structure of the multi-user decoder. When the MS in cooperation use different channel codes, FIG. 6 shows the structure of the multi-user decoder except that the a priori information 602, LLR 603 and extrinsic information 604 are only available for the source symbols, but not for the network coded symbol, in the network coding",
+                        "The output 603 of this decoder includes a hard decision 606, which is a LLR of decoded symbols. The LLR value less the input and a priori information 602 is called extrinsic information 604, which is the new information generated by the decoder. The extrinsic information is passed between the single-user decoders and multi-user decoder, after de-multiplexing or multiplexing as the updated a priori information to form a loop for turbo decoding. Finally, threshold detection with respect to value \u201c0\u201d is the hard decision of decoded symbols."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe general signaling in wireless network",
+                        "introduce example network of uplinks in IMT-advanced wireless communication network",
+                        "describe decoding and network encoding at relay node",
+                        "explain transfer matrix for network encoding",
+                        "describe method steps performed at relay node",
+                        "introduce retransmission strategy for incorrectly decoded data",
+                        "describe transfer matrices for different numbers of MS",
+                        "explain invertible matrix for network encoding",
+                        "describe channel encoding and decoding for each MS",
+                        "introduce BS decoder",
+                        "describe turbo decoding structure",
+                        "explain soft-in soft-out decoder",
+                        "describe multi-user decoder",
+                        "introduce threshold detectors",
+                        "describe output of soft-in soft-out decoder",
+                        "explain extrinsic information and hard decision"
+                    ],
+                    "num_characters": 8206,
+                    "outline_medium": [
+                        "describe general signaling in wireless network",
+                        "illustrate example network of uplinks in IMT-Advanced wireless communication network",
+                        "describe decoding and network encoding at relay node",
+                        "illustrate method steps performed at relay node",
+                        "describe transfer matrices for network encoding",
+                        "describe channel encoding and decoding",
+                        "illustrate decoder at base station",
+                        "describe soft-in-soft-out decoder"
+                    ],
+                    "outline_short": [
+                        "illustrate general signaling in a wireless network",
+                        "describe network encoding and decoding processes",
+                        "explain transfer matrices for network encoding",
+                        "detail BS decoder structure and operation"
+                    ]
+                },
+                {
+                    "title": "EFFECT OF THE INVENTION",
+                    "paragraphs": [
+                        "In an example network, four MSs perform cooperative communications. For the example, recursive systematic convolutional (RSC) code with generator (7,5)oct and rate \u00bd is used as the channel encode for each MS. Each MS-BS link experiences different block fading, which is equivalent to using different Gaussian channels. Operation at the RS is a 4\u00d74 matrix, which generates coded data equivalent to the parity information of a (8,4,4) extended Hamming code.",
+                        "When channel coding is not considered, for SNRd=5 dB of the link between the MS and the BS, there is a 2 dB improvement at BER=10\u22124 for various SNR of links between the RS and the BS, compared with maximum ratio combining (MRC) diversity. This results shows that when moderate direct links between MSs and BS exist, large gain can be obtained with the network encoding at the RS, even without the iterative decoding between channel encoding and network encoding.",
+                        "When channel coding is consider, for SNRd=1 dB of the link between the MS and the BS, there is about 3 dB improvement at BER=10\u22124 for various SNR of links between the RS and the BS, compared with MRC diversity. This results shows significant gain can be obtained with iterative decoding in the invention.",
+                        "Although the invention has been described by way of examples of preferred embodiments, it is to be understood that various other adaptations and modifications may be made within the spirit and scope of the invention. Therefore, it is the object of the appended claims to cover all such variations and modifications as come within the true spirit and scope of the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe example network with four MSs",
+                        "introduce channel coding and network encoding results",
+                        "describe gain obtained with iterative decoding"
+                    ],
+                    "num_characters": 1600,
+                    "outline_medium": [
+                        "describe example results of invention"
+                    ],
+                    "outline_short": [
+                        "summarize performance improvement of the invention"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A wireless International Mobile Telecommunications (IMT)-advanced 4G network including a set of source nodes, wherein the set of source nodes transmit data on uplink channels using a channel code, comprising:\na relay node comprising:\na receiver;\na set of decoders, there being one decoder for each source node transmitting the data, and wherein the data are channel encoded, and wherein each decoder determines whether the data received from the source node are decoded correctly;\na network encoder configured to encode the data correctly decoded, wherein each network encoder uses an invertible matrix over a binary finite field to encode the correctly decoded data; and\na transmitter configured to transmit the network encoded data.",
+        "2. The network of claim 1, further comprising:\na destination node comprising:\na receiver;\na multiplexer configured to combine the channel encode data transmitted by the set of sources and the network encoded data transmitted by the relay\na multi-user decoder configured to decode the network encoded data;\na demultiplexer configured to separate the combined data according to each source to produce decode data for each source;\na set of soft-input soft-output decoders, there being one soft-input soft-output for each separate decoded data; and\na threshold detector, for each soft-input soft-output decoder, configured to produce a hard decision for each soft-input soft-output decoder.",
+        "3. The network of claim 1, wherein the set of source nodes transmit concurrently, using channel codes.",
+        "4. The network of claim 1, wherein data from each source node are channel decoded and a correctness of the decoding is determined.",
+        "5. The network of claim 2, wherein each soft-input soft-output decoder is a single-user decoder that produces a priori information for the multi-user decoder.",
+        "6. The network of claim 2, wherein the soft-input soft-output decoder is a multi-user decoder that produces a priori information for the single-user decoders.",
+        "7. The network of claim 5, wherein each soft-input soft-output single user decoder receives a priori information from the multi-user decoder, and wherein the a priori information is subtracted from a log-likelihood ratio to produce extrinsic information to act as the a priori information for the multi-user decoder.",
+        "8. The network of claim 6, wherein the soft-input soft-output multi-user decoder receives a priori information from the single user decoders, and wherein the priori information is subtracted from a generated log-likelihood ratio to produce extrinsic information to act as the a priori information for the single-user decoders.",
+        "9. The network of claim 2, wherein the soft-in soft-out multi-user decoding and the soft-input soft-output single-user decoding alternate iteratively with information exchange.",
+        "10. The network of claim 1, wherein the source nodes use an identical channel code and the data are network encoded at the relay node for cooperation.",
+        "11. The network of claim 1, wherein the source nodes use different channel codes and the data are network encoded at the relay node for cooperation.",
+        "12. The network of claim 2, wherein when cooperative source nodes have an identical channel code, and the data are channel decoded with the same soft-in soft-out single user decoder after network encoding.",
+        "13. The network of claim 9, wherein the extrinsic information is extracted from the received data for systematic and parity data using a priori information.",
+        "14. The network of claim 1, further comprising:\nmeans for enabling the source nodes to join in the cooperative transmitting.",
+        "15. A method for communicating in a wireless International Mobile Telecommunications (IMT)-advanced 4G network including a set of source nodes, a relay node and a base station, wherein the set of source nodes transmit data on uplink channels to the relay node and the BS using a channel code, comprising:\ndecoding independently, in the relay node, for each source node, the data that are channel coded;\napplying network coding to the data that are correctly decoded;\ntransmitting the network encoded data to the BS; and\ndecoding in the base station, the data that are channel coded by each source nodes using a set of single-user decoders, and decoding the data that are network encoded by the relay station using a multi-user decoder.",
+        "16. The method of claim 15, wherein the network encoding uses an invertible matrix over a binary finite field.",
+        "17. The method of claim 15, wherein the set of source nodes transmit concurrently.",
+        "18. The method of claim 15, wherein each single-user decoder and the multi-user decoder use maximum a posteriori probability decoding."
+    ]
+}

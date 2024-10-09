@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous platforms
+
+## SUMMARY
+
+- motivate realistic simulated environmental scenes
+- describe traffic scene generators
+- explain probabilistic distributions of scenes
+- describe object characteristics sampling
+- explain joint probability distributions
+- describe autoregressive decomposition
+- explain sequential object insertion
+- describe training traffic scene generators
+- explain technical effects and benefits
+- describe simulated environmental data generation
+- explain advantages over prior approaches
+- describe machine-learned traffic scene generation model
+- explain limitations of prior methods
+- describe example computer-implemented method
+- explain environmental data and object set
+- describe sampling and updating environmental data
+- explain outputting synthesized traffic scene
+
+## DETAILED DESCRIPTION
+
+- introduce autonomous vehicle example
+- describe operational scenario
+- define environment and dynamic objects
+- describe sensor configuration
+- detail autonomous platform types
+- introduce system overview of autonomous vehicle
+- describe onboard vehicle computing system
+- detail vehicle computing system operations
+- describe vehicle operating modes
+- explain operating mode adjustments
+- introduce operations computing system
+- describe operations computing system components
+- detail remote computing system interactions
+- describe vehicle computing system components
+- introduce vehicle computing system
+- describe communication system
+- detail onboard systems
+- describe sensor system
+- explain sensor data acquisition
+- describe map data
+- detail positioning system
+- explain autonomy computing system functions
+- describe perception function
+- explain prediction function
+- detail motion planning function
+- describe object identification
+- explain object state estimation
+- detail motion trajectory prediction
+- describe motion planning data generation
+- explain motion plan optimization
+- detail vehicle motion control
+- describe vehicle interface
+- explain data storage
+- describe remote data communication
+- detail vehicle user devices
+- explain human-machine interface
+- introduce autonomy computing system
+- describe machine-learned models
+- motivate simulated environmental scene data
+- define environmental scene data
+- describe example traffic scene
+- illustrate example traffic scene
+- describe simulated scene processing
+- introduce scene generator
+- describe scene generator inputs
+- describe feature extractor
+- describe scene probability modeler
+- illustrate example iterations
+- describe scene generator outputs
+- describe scene generator
+- illustrate scene generator iterations
+- motivate multidimensional random variable
+- introduce backbone feature extractor
+- describe parameter models
+- illustrate autoregressive factorization
+- describe feature extractor
+- illustrate feature extractor architecture
+- describe parameter models with feature extractor
+- illustrate example parameter models
+- describe parameter C model
+- describe parameter P model
+- describe parameter B model
+- describe parameter V model
+- illustrate factorized distribution
+- introduce object bounding box size parameters
+- model distribution of bounding box size parameters
+- predict mixture weights and distribution parameters
+- sample bounding box size parameters
+- model distribution of object orientation
+- predict mixture weights and distribution parameters for orientation
+- sample object orientation
+- model distribution of object velocity
+- predict mixture weights and distribution parameters for velocity
+- sample object velocity
+- describe scene probability modeler
+- evaluate scene generator outputs
+- update scene generator parameters
+- introduce method 800 for generating simulated traffic scenes
+- obtain environmental data
+- sample parameters of new object
+- update environmental data by adding new object
+- output environmental data descriptive of synthesized traffic scene
+- introduce method 900A for generating and using simulated training data
+- generate simulated sensor data for environment
+- obtain labels for simulated sensor data
+- train machine-learned models of autonomous vehicle control system
+- introduce method 900B for training machine-learned models
+- input training instance into machine-learned autonomous vehicle model
+- generate objective metrics for machine-learned autonomous vehicle model
+- describe machine-learned traffic scene generation model
+- describe shared backbone feature extraction portion
+- describe plurality of prediction models
+- describe autoregressive model
+- describe method for training machine-learned scene generator models
+- obtain training data for training machine-learned scene generator
+- select training instance based on training data
+- input training instance into machine-learned scene generator
+- generate loss metric and/or objective for machine-learned scene generator
+- modify parameter of machine-learned scene generator based on loss metric and/or objective
+- train machine-learned model framework in end-to-end manner
+- describe computing system for performing observation tasks
+- obtain sensor data using computing system
+- store data and instructions in memory of computing system
+- execute instructions to perform operations using processor of computing system
+- store machine-learned models in memory of computing system
+- implement machine-learned models to obtain simulated environmental scenes
+- describe machine-learning computing system for training machine-learned models
+- store data and instructions in memory of machine-learning computing system
+- execute instructions to perform operations using processor of machine-learning computing system
+- train machine-learned models using model trainer
+- perform generalization techniques to improve generalization capability of models
+- communicate between computing systems using communication interface
+- illustrate example system for implementing present disclosure
+- describe variations and modifications of present disclosure
+

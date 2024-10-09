@@ -1,0 +1,251 @@
+{
+    "id": "US20180363001",
+    "authors": [
+        "Min Wei",
+        "Chunxia Qi"
+    ],
+    "title": "METHOD FOR INDUCING CCR5^32 DELETION BY USING CRISPR-CAS9 GENOME EDITING TECHNIQUE",
+    "date": "2016-04-12 00:00:00",
+    "abstract": "The present invention relates to a new method for successfully inducing the mutation of cell chemokine receptor CCR5 gene into CCR5\u039432 deletion gene by using the CRISPR-Cas9 genome editing technique. CCR5 is an important co-receptor for entry of Human Immunodeficiency Virus (HIV) into human host cells. CCR5\u039432 deletion is a 32-bp deletion in CCR5 coding region, which results in change and premature termination in the sequence following the 185th amino acid. Biallelic homozygous deletion of CCR5\u039432 is naturally resistant to HIV infection, i.e., the people carrying this mutation can't be infected by HIV. The present invention uses both lentiviral packaging system and the CRISPR technique to induce CCR5\u039432 deletion. Due to the characteristics of a wide range of lentivirus infection, the invention can be applied to cells such as bone marrow stem cells and CD4+ T cells and can be expected to be the therapeutic drug for HIV/AIDS infection or other diseases.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention belongs to the biomedical field, and relates to a novel method for inducing CCR5\u039432 deletion by using a CRISPR-Cas9 genome editing technique."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce biomedical field"
+                    ],
+                    "num_characters": 163,
+                    "outline_medium": [
+                        "introduce biomedical field"
+                    ],
+                    "outline_short": [
+                        "introduce biomedical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Acquired Immune Deficiency Syndrome (AIDS) caused by Human Immunodeficiency Virus (HIV) (also named AIDS virus) has been widespread for over 30 years all over the world. HIV/AIDS is a kind of highly infectious disease. HIV can directly attack the human immune system, thus resulting in human immune functional deficiency. Ultimately, the patients will die due to a variety of opportunistic infections and/or tumors. HIV is mainly classified into two types, HIV-1 and HIV-2. HIV-1 causes the pandemic all over the world. HIV-2 is only limited in some parts of Africa and in scattered reports of other areas. According to the report of the World Health Organization (WHO), by the end of 2013, there were about 65 million people affected with HIV-1 in total in the world. Among them, about 35 million people were living with HIV, and about 30 million people already died. In 2013, the new cases infected with HIV-1 were about 2.1 million, and the patients who died of AIDS were about 1.5 million in the same year (http://www.who.int). Up to now, there is still no effective anti-HIV vaccine. Although much progress is made in the anti-retroviral drugs and the anti-retroviral therapy (ART) and the virus replication can be effectively controlled, HIV in patient's body can't be thoroughly eradicated. Therefore, HIV/AIDS can't be fundamentally cured. Also, the anti-retroviral therapy requires a long period of time, which will bring side effects, huge mental stress and economic stress in patients.",
+                        "China was also suffered from HIV/AIDS. In 1989, one case was reported who was a hemophilia patient infected by HIV during blood transfusion. In 1990s\u2032, an outbreak of HIV infection happened among the drug-users in YunNan province. Entering the 21th century, the HIV transmission gradually transfers from blood collection and drug-use to sexual transmission (including homosexual and heterosexual transmissions) in our country. According to the report of the Ministry of Health of China and the Joint United Nations Program on HIV/AIDS, by the end of 2011, it is estimated that there were approximately 780,000 (620,000\u02dc940,000) people living with HIV in China. Among them, the ratio of female was 28.6%; AIDS patients were 154,000 people (146,000\u02dc162,000 people); the HIV morbility of whole population was 0.058% (0.046%\u02dc0.070%). It was estimated that the new HIV-1 infected people was approximately 48,000 people (41,000\u02dc54,000 people) in 2011 and the number of AIDS-related death was approximately 28,000 people (25,000\u02dc31,000 people) in 2011. As well, the HIV epidemic situation is not optimistic in China.",
+                        "HIV mainly attacks human immune system by firstly identifying and binding CD4+ receptor on cell surface (CD, the abbreviation of Cluster of Differentiation, is the generic term of a class of differentiation antigens located on the surface of cell membrane. The serial number following the \u201cCD\u201d represents one or a class of differentiation antigen molecules). CD4+ receptor is essential for HIV infection. In the following process, HIV molecule needs to interact with co-receptors. The main co-receptors are chemokine receptor CCR5 (C\u2014C Chemokine receptor type 5) and chemokine receptor CXCR4 (C\u2014X\u2014C chemokine receptor type 4). After HIV successfully binds the receptor and the co-receptor, the changes occur in viral structure and cell membrane, which causes virus-cell fusion and virus entry into the target cells. CCR5 is a seven-transmembrane protein (As shown in FIG. 1) and contains 352 amino acids. CCR5 is a kind of normal chemokine receptor on the cell surface, and is also a major co-receptor by which HIV enters into the target CD4+ cells. It was found that some of the European Caucasians enabled to resist HIV infection. The sequencing analysis indicates that normal CCR5 gene of these people is mutated into CCR5\u039432 gene. In CCR5\u039432 deletion, a 32-bp from position 794 to position 825 in CCR5 gene coding region is deleted (As shown in FIG. 2), which makes the changes on amino acids behind position 185 and results in premature termination in protein translation and generation of deleted protein only with 215 amino acids. This kind of deleted protein can't be generally positioned on cell membrane, but can only stay in endoplasmic reticulum because of the loss of three transmembrane regions 5, 6, and 7. The cell having this mutation is provided with the capability to resist HIV infection as it lacks the co-receptors required to fuse with the virus. If both of the CCR5 alleles inside a cell carry 432 deletion, the cell is a homozygote and recorded as CCR5\u039432/\u039432; if only one is 432 deletion and the other is the wild type, the cell is a heterozygote and recorded as CCR5\u039432/WT. The study indicates that CCR5\u039432/\u039432 homozygous deletion is naturally resistant to HIV infection, i.e., the patients can't be infected by HIV. The people with CCR5\u039432/WT heterozygous deletion are able to extend onset period of AIDS.",
+                        "In 2009, German doctors reported that a HIV-infected person named Timothy Brown in Berlin was diagnosed with acute myeloid leukemia after he was diagnosed with HIV infection for 10 years and received four-year anti-retroviral therapy (ART). The doctors gave him allogeneic stem cell transplantation and the donor of stem cell transplantation is CCR5\u039432/\u039432 homozygote. Virus rebound was not found after the second stem cell transplantation and stop of ART for 20 months. The more important was that the virus rebound was still not found after he stopped ART for 7 years. This is the first case in the world that HIV-infected person is considered to be cured or functionally cured, i.e., there is no virus rebound after the stop of ART.",
+                        "It is investigated that CCR5\u039432/\u039432 deletion homozygote rate is slightly higher in the European Caucasian population (4-10%), but few exists in Africa and Asian population, only 0-0.19% among Chinese. In China, it is unrealistic to reproduce \u201cthe Berlin Patient\u201d case by attempting to find CCR5\u039432/\u039432 deletion donors to perform bone marrow transplantation because of the exiguous donors and the risk of allograft rejection. The present invention attempts to use a new method to carry out this mission.",
+                        "HIV genome is ribonucleic acid (RNA). The classification of HIV belongs to the genus Lentivirus of the Retroviridae family, because HIV has reverse transcriptase. Virus of this genus is known as lentivirus because it needs the long latent period and the slow disease onset course to cause disease. Lentiviral vector is a gene therapy vector, which is developed based on HIV-1. In lentiviral vector, HIV-1 pathogenic gene is removed and the process of virus infection of a cell is simulated. The lentiviral vector has the ability to infect both dividing and non-dividing cells and is applied for the cells, which are harder to be transfected with an exogenous gene, such as lymphocytes, primary cells, neuronal cells, stem cells, and etc. This vector can effectively integrate the exogenous gene into host cell genome in order to express the exogenous gene stably for a long period of time. During the experiment, it is necessary to co-transfect the target plasmid carrying the exogenous gene and packaging plasmid into packaging cells in order to produce lentiviral particles. The well-packaged pseudovirions will be secreted into an extracellular medium. After centrifugation, supernatant is directly used for infection of host cells. Thus, the well-packaged lentiviral particles infect the host cells, the target plasmid is reversely transcribed to cDNA by reverse transcriptase and integrated into the host cell genome by integrase so as to stably express the exogenous interest gene in the host cells for a long period of time.",
+                        "Recently, a new genome editing technique\u2014clustered regularly interspaced short palindromic repeat (CRISPR) and CRISPR associated protein (Cas) technique has been paid attention gradually and widely used. CRISPR sequence generally exists in bacteria and archaebacteria. It is a kind of immune defense system formed in evolving process, in which bacteria fights against attack of virus of the bacteria\u2014phage. CRISPR locus is generally composed of short highly conserved repeats. Spacers with different length separate the repeats. The spacers are derived from phage or exogenous DNA sequence, which is similar to immunologic memory acquisition. When the phages or exogenous DNA with the same sequence infects bacteria again, the bacteria can recognize and bind the exogenous sequence with Cas proteins, and then the exogenous sequence is cleaved under the action of a series of Cas related proteins in order to achieve the purpose of protecting itself. CRISPR system can be classified into three types according to different Cas proteins involving in defense process. Among them, type II CRISPR system is widely used because of its simplicity. It only requires a Cas9 protein to complete entire cutting process of the exogenous gene sequence. Under natural condition, the type II CRISPR system also requires crRNA (CRISPR RNA) and transcrRNA (trans-activating crRNA) to together guide Cas9 to recognize and cleave the exogenous sequence. For simplicity of this system, the commonly used is crRNA and transcrRNA complex\u2014guide RNA (gRNA), which helps the Cas9 protein to recognize the target sequence. In CRISPR-Cas9 technique, gRNA recognizes the protospacer adjacent motif (PAM) and binds the target sequence. Thus, under the guide of gRNA, the double-stranded DNA at target site is cleaved by the nuclease Cas9, which leads to double-strand break and induction of cell self-repair process. The cell can be repaired by two ways\u2014homologous recombination or non-homologous end joining. These two kinds of repair ways can result in specific gene modification or deletion or insertion of a small number of nucleotide residues, and thus resulting in mutation of the target sequences.",
+                        "There have been some reports that this technique is used to abrogate the entire CCR5 gene. However, if the entire CCR5 gene is destroyed, the potential risk is unknown. The CCR5\u039432 deletion has been already present in the population. The people with this mutation can survive healthily without any abnormity. Therefore, it is more significant to induce CCR5\u039432 deletion.",
+                        "The present invention successfully expresses CRISPR-Cas9 in lymphocytes and successfully obtains the monoclonal cells with CCR5\u039432/\u039432 homozygous genotype by using the lentiviral packaging system. It provides a new way for people to treat HIV/AIDS at the genetic level."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce AIDS",
+                        "describe HIV infection",
+                        "provide HIV statistics",
+                        "describe HIV transmission in China",
+                        "introduce CD4+ receptor",
+                        "describe CCR5 receptor",
+                        "introduce CCR5\u039432 deletion",
+                        "describe CCR5\u039432 deletion mechanism",
+                        "introduce Timothy Brown case",
+                        "describe CCR5\u039432 deletion rate",
+                        "introduce lentiviral vector",
+                        "describe lentiviral vector application",
+                        "introduce CRISPR-Cas9 technique",
+                        "describe CRISPR-Cas9 mechanism",
+                        "introduce type II CRISPR system",
+                        "describe gRNA function",
+                        "introduce Cas9 nuclease",
+                        "describe CRISPR-Cas9 application",
+                        "introduce HIV genome editing",
+                        "describe CCR5 gene abrogation",
+                        "introduce CCR5\u039432 deletion significance"
+                    ],
+                    "num_characters": 10537,
+                    "outline_medium": [
+                        "introduce HIV/AIDS",
+                        "describe HIV/AIDS statistics",
+                        "explain HIV infection mechanism",
+                        "introduce CCR5\u039432 deletion",
+                        "describe CCR5\u039432 deletion benefits",
+                        "introduce Timothy Brown case",
+                        "describe CCR5\u039432 deletion distribution",
+                        "introduce lentiviral vector",
+                        "describe lentiviral vector application",
+                        "introduce CRISPR-Cas9 technique"
+                    ],
+                    "outline_short": [
+                        "introduce HIV/AIDS",
+                        "describe HIV infection process",
+                        "introduce CCR5\u039432 deletion",
+                        "describe lentiviral vector",
+                        "introduce CRISPR-Cas9 technique"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Technical Problem",
+                            "paragraphs": [
+                                "An object of the present invention is to solve the problem of the artificial induction of CCR5\u039432 deletion, and to provide a method for inducing CCR5\u039432/\u039432 deletion of HIV co-receptor by using CRISPR-Cas9 genome editing technique, in order to provide a new therapeutic drug to cure HIV/AIDS."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce problem of CCR5\u039432 deletion induction"
+                            ],
+                            "num_characters": 292,
+                            "outline_medium": [
+                                "introduce problem of artificial CCR5\u039432 deletion induction"
+                            ],
+                            "outline_short": [
+                                "motivate CCR5\u039432 deletion induction"
+                            ]
+                        },
+                        {
+                            "title": "Technical Solution",
+                            "paragraphs": [
+                                "The present invention provides a method for inducing CCR5\u039432 deletion by using the CRISPR-Cas9 genome editing technique. This method successfully induces the CCR5\u039432 deletion by using CRISPR-Cas9 genome editing technique. Specifically, this method includes:",
+                                "First, Design of a Guide RNA (gRNA)",
+                                "For the purpose of obtaining CCR5\u039432/\u039432 homozygous cells, a pair of gRNAs is designed for target sequences on both sides of CCR5\u039432. The left side target DNA sequences corresponding to gRNA are listed as SEQ ID No.1 and SEQ ID Nos. 3-19; the right side target DNA sequences corresponding to the gRNA are also listed as SEQ ID No.2 and SEQ ID Nos. 20-36. We found that the result of Cas9 nuclease cleavage after selecting these two target sequences was completely the same as natural CCR5\u039432 deletion (As shown in FIG. 2, Cas9 cleavage sites are marked with arrowheads).",
+                                "A pair of gRNAs is selected from any sequence of the left side target DNA sequences (SEQ ID No.1 and SEQ ID Nos. 3-19) and any sequence of the right side target DNA sequences (SEQ ID No.2 and SEQ ID Nos. 20-36), for example, a pair of gRNAs can be selected as a combination of SEQ ID No.1 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs can be selected as a combination of SEQ ID No.3 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; and so on, a pair of gRNAs can be selected as a combination of SEQ ID No.19 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs can be selected as a combination of SEQ ID No.2 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; a pair of gRNAs can be selected as a combination of SEQ ID No.20 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; and so on, a pair of gRNAs can be selected as a combination of SEQ ID No.36 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1.",
+                                "Due to the fault tolerance of CRISPR-Cas9, it can also be identified even if some individual base is changed. Thus, it will be within the protection scope of the present invention as long as the DNA sequences corresponding to gRNA with the seed DNA sequences \u201c5\u2032 gactgta 3\u2032\u201d and \u201c5\u2032 taatgtc 3\u2032\u201d is for the CCR5\u039432 deletion.",
+                                "Second, according to the gRNA designed in the first step, the DNA sequences corresponding to gRNAs are inserted into the CRISPR-Cas9 plasmid vector for constructing functional plasmid. The plasmid has the following characteristics:",
+                                "{circle around (1)} The plasmid carries the Cas9 nuclease expression reading frame, other associated gene sequences of the CRISPR and lentiviral packaging signals. The plasmid map is shown in FIG. 3 (the plasmid vector lenti-CRISPR-v2 is from Dr. Feng Zhang Laboratory at the Massachusetts Institute of Technology.).",
+                                "{circle around (2)} The plasmid is designed for the production of gRNAs targeting both sides of CCR5\u039432 locus, as described in the first step;",
+                                "The study indicated that a cleavage for the target sequence at the same place can not only be done by using the wild-type Cas9 nuclease; but also be done by using two Cas9 nickases (Cas9 mutant). Thus, the object of the present invention can also be achieved by using the Cas9 nickase or the Cas9 mutants, or by using another nuclease such as Fok I.",
+                                "Third, Preparation of a Lentiviral Particle Encapsulated with CRISPR-Cas9 Plasmid:",
+                                "The CRISPR-Cas9 plasmid constructed in the second step is transfected into the HEK293T cells together with the packaging plasmids PMD2.G and psPAX2. After a period of time, cell supernatant is collected. The supernatant contains the lentiviral particle that we need.",
+                                "Fourth, target cells are infected with the lentiviral particle obtained in the third step so that the CCR5\u039432/\u039432 homozygous deletion cells can be obtained."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design gRNA",
+                                "construct CRISPR-Cas9 plasmid",
+                                "prepare lentiviral particle",
+                                "infect target cells",
+                                "induce CCR5\u039432 deletion",
+                                "obtain CCR5\u039432/\u039432 homozygous cells",
+                                "apply to various cell types"
+                            ],
+                            "num_characters": 3715,
+                            "outline_medium": [
+                                "design guide RNA",
+                                "construct CRISPR-Cas9 plasmid",
+                                "prepare lentiviral particle and infect target cells"
+                            ],
+                            "outline_short": [
+                                "describe CRISPR-Cas9 method for inducing CCR5\u039432 deletion"
+                            ]
+                        },
+                        {
+                            "title": "Advantageous Effects",
+                            "paragraphs": [
+                                "- - (1) CCR5\u039432 deletion can be successfully induced by using a new\n    CRISPR-Cas9 genome editing technique and the lentiviral packaging\n    system.\n  - (2) The successfully induced CCR5\u039432/\u039432 homozygous deletion cells\n    can be used as a new drug for the treatment of HIV/AIDS.",
+                                "In summary, the present invention successfully obtains CCR5\u039432/\u039432 homozygous deletion lymphocytes by using the lentiviral packaging system and the CRISPR-Cas9 technique at the same time. In addition, the invention can also be applied to various types of cells such as neuronal cells, hepatocytes, cardiomyocytes, tumor cells, endothelial cells, stem cells and lymphocytes due to a wide range of lentivirus infection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe advantages of invention"
+                            ],
+                            "num_characters": 700,
+                            "outline_medium": [
+                                "summarize benefits of invention"
+                            ],
+                            "outline_short": [
+                                "summarize advantages of the invention"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Examples",
+                            "paragraphs": [
+                                "**Example 1: Reconstruction of Plasmid Carrying CRISPR-Cas9 System and Preparation of Lentiviral Particles Encapsulated with the Reconstructed Plasmid**",
+                                "1. Selection and Design of gRNA",
+                                "(1) According to the object of experiment, a pair of gRNAs should be designed to edit CCR5 gene at the same time. However, due to the restriction of the CCR5 gene and the restriction of the PAM locus, the selection of the gRNA is limited. For the purpose of obtaining CCR5\u039432/\u039432 homozygous cells, a pair of gRNAs is designed for target sequences on both sides of CCR5\u039432. The left side target DNA sequences corresponding to gRNA are listed as SEQ ID No.1 and SEQ ID Nos. 3-19; the right side target DNA sequences corresponding to the gRNA are also listed as SEQ ID No.2 and SEQ ID Nos. 20-36. A pair of gRNAs is selected from any sequence of the left side target DNA sequences (SEQ ID No.1 and SEQ ID Nos. 3-19) and any sequence of the right side target DNA sequences (SEQ ID No.2 and SEQ ID Nos. 20-36), for example, a pair of gRNAs can be selected as a combination of SEQ ID No.1 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs can be selected as a combination of SEQ ID No.3 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; and so on, a pair of gRNAs can be selected as a combination of SEQ ID No.19 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs can be selected as a combination of SEQ ID No.2 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; a pair of gRNAs can be selected as a combination of SEQ ID No.20 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; and so on, a pair of gRNAs can be selected as a combination of SEQ ID No.36 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1.",
+                                "(2) The reconstructed plasmid was obtained by adding a restriction enzyme cleavage site according to gRNA sequences, synthesizing DNAs, and ligating DNAs into BsmBI-digested lenti-CRISPR-v2 vector. The right insertion of the sequence was verified by sequencing. FIG. 4 shows the whole experimental process.",
+                                "2. Preparation of Lentiviral Particles and Identification of Infection Efficiency Thereof",
+                                "(1) HEK293T cells were plated in 10 mm diameter dishes. Total cell number is 6\u00d7106. The next day, two kinds of lenti-CRISPR-v2 plasmids with a pair of corresponding gRNAs obtained from the first step and lentiviral packaging plasmids PMD2.G and psPAX2 were co-transfected into cells in the microgram ratio 1 \u03bcg:1 \u03bcg:1 \u03bcg:1 \u03bcg and the cells were incubated in thermostatic incubator containing 5% CO2 at 37\u00b0 C. for 16 h. Then, the resulting culture was centrifuged to remove the whole medium. The fresh DMEM complete medium (in which 10% fetal calf serum and two kinds of antibiotics Penicillin-Streptomycin were added) was added thereto for incubation. After 24 h, the cell supernatant was collected by centrifugation. This supernatant contains the lentiviral particles we needed. Aliquot the supernatant into 1.5 ml centrifuge tubes by 1 ml per tube and store in a refrigerator at \u221280\u00b0 C. for use. Meanwhile, the pwpxld plasmid that can express the GFP protein was packaged into the lentiviral particle, so as to observe the efficiency of infection of lymphocytes by lentiviral particles.",
+                                "(2) Lymphocytes were plated in 6-well plates before infection. Total cell number per well was 2\u00d7105. The medium was the complete medium, which does not contain any antibiotics. The next day, the lentiviral particles encapsulated with pwpxld were added into cells. Polybrene that enables to increase the efficiency of virus infection was added at the same time and was adjusted to a concentration of 8 \u03bcg/ml. The resulting culture was centrifuged at 1600 rpm at 37\u00b0 C. for 1 h. After centrifugation, the medium containing virus fluid was removed and a new complete medium was added. The expression of GFP in cells was observed after incubation for 48 h. The efficiency of lentivirus infection can reach more than 80% depending on GFP expression situation in cells (see FIG. 5, the microscope photographs).",
+                                "**Example 2: The Result of Infecting Lymphocyte by the Lentiviral Particle Encapsulated with Reconstructed Plasmid Lenti-CRISPR-v2**",
+                                "1. Lymphocytes were plated in 6-well plates before infection. Total cell number per well was 2\u00d7105. The medium was the complete medium, which does not contain any antibiotics. The next day, the lentiviral particles encapsulated with lenti-CRISPR-v2 plasmid having corresponding gRNAs obtained in Example 1 and the lentiviral particle encapsulated with gRNA-free lenti-CRISPR-v2 plasmid were added into cell medium separately. Polybrene that enables to increase the efficiency of virus infection was added at the same time and was adjusted to a concentration of 8 \u03bcg/ml. The resulting culture was centrifuged at 1600 rpm at 37\u00b0 C. for 1 h. After centrifugation, the medium containing virus fluid was removed and a new complete medium was added. The cells were collected by centrifugation after incubation for 72 h. Half of the collected cells were transferred to a new culture flask for continuous incubation. The other half was used to extract total genomic DNA from the cells for subsequent analysis.",
+                                "2. Using the extracted genomic DNA of cells as a template, the sequence containing CCR5\u039432 locus was PCR-amplified with the forward primer SEQ ID No. 37 and the reverse primer SEQ ID No. 38. The editing efficiency of the CRISPR system was verified by T7 endonuclease (T7E1) digestion method (T7 endonuclease I, T7E1 in short, can identify and cut mismatched DNA). The experimental results were shown in FIG. 6. It can be seen from the figure that cleavage occurred in the group in which a pair of the lenti-CRISPR-v2 plasmids obtained in Example 1 was transfected, whereas cleavage did not occur in the gRNA-free empty vector group. It indicated our CRISPR-Cas9 system was working.",
+                                "3. CRISPR-Cas9 system may result in the insertion or deletion of a different number of bases at the break since it would initiate the cell self-repair pathway after DNA double-strands of the target sequence was cleaved by the CRISPR-Cas9 system. In order to purify cell genotype and get monoclonal cells, 100 cells were first taken out and diluted to a volume of 1000 \u03bcl after counting. Then mixed thoroughly, 10 \u03bcl of the mixture was added to a 96-well plate separately. 200 \u03bcl of complete culture medium was added to each well. The resulting mixture was incubated in a 5% CO2 incubator at 37\u00b0 C. The next day, the cell number of each well was observed, and the wells with only one cell were selected and labeled for further culture. After two weeks, the monoclonal cells grown from a single cell were transferred to a 24-well plate for further culture. Until the plate was covered with cells, the cells were transferred to a 6-well plate for further culture.",
+                                "4. The monoclonal cells in the 6-well plate were collected as described above. Half of the cells was used for further culture and the other half was used for extracting cell genome. A CCR5 gene sequence was also amplified using the primers described above. Then the amplification products were preliminarily identified whether the CCR5 gene was mutated in these monoclonal cells by digesting with T7E1. The experimental results were shown in FIG. 7. It can be seen that cleavage occurred in the five monoclonal cell groups (FIG. 7), which indicated a CRISPR-Cas9-mediated mutation. In the next step, we would prove whether a CCR5\u039432 deletion may occur by sequencing.",
+                                "5. Five different monoclonal cells were selected for further analyzing. First, 1 \u03bcl of the PCR product of each monoclonal cell was taken out and ligated into the TA cloning vector in order to obtain 20 \u03bcl of ligation product, respectively. Then, 5 \u03bcl of the ligation product was taken out and transformed into E. coli competent cell DH5a. The single cloning was picked from plate and identified by sequencing. The result of sequencing indicated that among them, CCR5\u039432/\u039432 homozygous deletion happened in 3 monoclonal cells, and another two monoclonal cells had insertion or deletion of different numbers of bases happened at CCR5\u039432 locus. Partial sequencing chromatograms were shown in FIG. 8. Partial sequence alignments were shown in FIG. 9.",
+                                "The present invention utilizes the lentiviral particle to encapsulate our designed CRISPR-Cas9 system to infect lymphocytes, and successfully induces CCR5\u039432/\u039432 homozygous deletion. Due to a wide range of lentivirus infection, this system can also be used to infect various types of cells such as neuronal cells, hepatocytes, cardiomyocytes, tumor cells, endothelial cells, stem cells and lymphocytes."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design gRNA",
+                                "select target DNA sequences",
+                                "reconstruct plasmid",
+                                "prepare lentiviral particles",
+                                "identify infection efficiency",
+                                "infect lymphocytes",
+                                "observe GFP expression",
+                                "infect lymphocytes with reconstructed plasmid",
+                                "extract genomic DNA",
+                                "PCR-amplify CCR5\u039432 locus",
+                                "verify editing efficiency",
+                                "purify cell genotype",
+                                "culture monoclonal cells",
+                                "extract cell genome",
+                                "identify CCR5 gene mutation",
+                                "sequence monoclonal cells",
+                                "induce CCR5\u039432/\u039432 homozygous deletion"
+                            ],
+                            "num_characters": 8644,
+                            "outline_medium": [
+                                "design gRNA",
+                                "reconstruct plasmid",
+                                "prepare lentiviral particles",
+                                "infect lymphocytes",
+                                "verify infection efficiency",
+                                "analyze editing efficiency",
+                                "purify monoclonal cells",
+                                "verify CCR5\u039432 deletion"
+                            ],
+                            "outline_short": [
+                                "design gRNA for CRISPR-Cas9 system",
+                                "prepare lentiviral particles and verify infection efficiency",
+                                "infect lymphocytes with lentiviral particles and analyze editing efficiency",
+                                "purify and analyze monoclonal cells with CRISPR-Cas9-mediated mutation"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for inducing CCR5\u039432 deletion by using CRISPR-Cas9 genome editing technique which is the genome editing technique\u2014clustered regularly interspaced short palindromic repeats and its associated protein CRISPR-Cas9 technique, wherein the method includes the following steps:\nStep 1, design of a guide RNA (gRNA)\nFor the purpose of obtaining CCR5\u039432/\u039432 homozygous cell, a pair of gRNAs for target sequences on both sides of CCR5\u039432 is designed, wherein the left side target DNA sequence corresponding to the gRNA is selected from SEQ ID No.1 or any one sequence of SEQ ID Nos. 3-19; the right side target DNA sequence corresponding to the gRNA is selected from SEQ ID No.2 or any one sequence of SEQ ID Nos. 20-36;\nStep 2, constructing functional plasmid by inserting the DNA sequences corresponding to the gRNAs into CRISPR-Cas9 plasmid vector according to the designed gRNAs in Step 1, wherein the functional plasmid has the following characteristics:\n{circle around (1)} the plasmid carries Cas9 nuclease expression reading frame, other associated gene sequences of CRISPR, and lentiviral packaging signals;\n{circle around (2)} the plasmid is for the gRNAs at both sides of CCR5\u039432 locus, as described in the Step 1;\nStep 3, preparation of a lentiviral particle encapsulated with CRISPR-Cas9 plasmid:\nco-transfecting the CRISPR-Cas9 plasmid constructed in the Step 2 and the packaging plasmids PMD2.G and psPAX2 into HEK293T cells, and collecting cell supernatant after a period of time, wherein the supernatant contains the needed lentiviral particles;\nStep 4, infecting target cells with the lentiviral particles obtained in the Step 3 to obtain CCR5\u039432/\u039432 homozygous deletion cells which are used as a new treatment for HIV/AIDS.",
+        "2. The method according to claim 1, wherein the DNA sequences corresponding to gRNAs contain at least DNA sequences \u201c5\u2032 gactgta 3\u2032\u201d and \u201c5\u2032 taatgtc 3\u2032\u201d for the CCR5\u039432 deletion purpose, wherein a pair of gRNAs is selected from any sequence of the left side target DNA sequences (SEQ ID No.1 and SEQ ID Nos. 3-19) and any sequence of the right side target DNA sequences (SEQ ID No.2 and SEQ ID Nos. 20-36), wherein a pair of gRNAs is selected as a combination of SEQ ID No.1 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs is selected as a combination of SEQ ID No.3 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; and so on, a pair of gRNAs is selected as a combination of SEQ ID No.19 and any sequence from SEQ ID Nos. 20-36 or SEQ ID No.2; a pair of gRNAs is selected as a combination of SEQ ID No.2 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; a pair of gRNAs can be selected as a combination of SEQ ID No.20 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1; and so on, a pair of gRNAs is selected as a combination of SEQ ID No.36 and any sequence from SEQ ID Nos. 3-19 or SEQ ID No.1.",
+        "3. The method according to claim 1, wherein the plasmid carries Cas9 nuclease expression reading frame in Step 2 carries Cas9 nickase which is Cas9 mutant or other Cas9 mutants or nuclease Fok I instead of Cas9 nuclease.",
+        "4. The method according to claim 1, wherein the plasmid vector is lentivirus vector or adenovirus vector or any other plasmid vector with CRISPR-Cas9.",
+        "5. The method according to claim 1, wherein the method in Step 3 is lentivirus infection or plasmid direct transfection."
+    ]
+}

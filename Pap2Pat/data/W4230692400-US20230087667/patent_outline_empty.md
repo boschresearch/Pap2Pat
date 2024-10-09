@@ -1,0 +1,26 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING PRIOR DISCLOSURES BY THE INVENTOR OR A JOINT INVENTOR
+
+## BACKGROUND
+
+## SUMMARY
+
+## DETAILED DESCRIPTION
+
+### Example Table 1
+
+### Further Comments and/or Embodiments
+
+### 1. INTRODUCTION
+
+### 2. RELATED WORK
+
+### 3. OPEN KGS CANONICALIZATION USING VAE
+
+### 4. Training Strategy
+
+### 5. Evaluation
+
+### 6. CONCLUSION AND FUTURE WORK
+

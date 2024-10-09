@@ -1,0 +1,14 @@
+# DESCRIPTION
+
+## COPYRIGHT NOTICE
+
+## FIELD
+
+## BACKGROUND
+
+## SUMMARY
+
+## DETAILED DESCRIPTION
+
+### Block SW-GAGD Model—Description
+

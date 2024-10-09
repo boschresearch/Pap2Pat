@@ -1,0 +1,117 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous mobile robots
+
+## SUMMARY
+
+- motivate problem of autonomous mobile robots
+- describe difficulty of avoiding collisions
+- state object of present disclosure
+- introduce first exemplary aspect
+- describe determination unit
+- describe detection unit
+- describe first arithmetic unit
+- describe second arithmetic unit
+- describe generation unit
+- describe movement control unit
+- describe updating estimated position and remaining route
+- introduce second exemplary aspect
+- describe control program
+- describe advantages of present disclosure
+- conclude summary
+
+## DESCRIPTION OF EMBODIMENTS
+
+- introduce autonomous mobile robot
+- describe movable base part
+- describe driving wheels and caster
+- explain movement of mobile robot
+- describe laser scanner
+- describe main-body part
+- describe trunk part, head part, arm, and hand
+- describe control box
+- describe stereo camera and display panel
+- explain display panel functions
+- describe head part movements
+- define moving plane and axes
+- describe system configuration
+- describe control unit
+- describe movable-base drive unit
+- describe upper-body drive unit
+- describe sensor unit
+- describe memory
+- describe communication IF
+- describe control unit functions
+- describe determination unit
+- describe detection unit
+- describe first arithmetic unit
+- describe second arithmetic unit
+- describe generation unit
+- describe movement control unit
+- explain expected performance
+- describe movement control unit functions
+- describe detection unit functions
+- describe determination unit functions
+- explain autonomous movement
+- describe avoiding action
+- describe course direction calculation
+- describe estimated position calculation
+- describe remaining route generation
+- describe movement control
+- describe periodic detection
+- describe updating estimated position and remaining route
+- describe course direction calculation method
+- describe one-dimensional potential calculation
+- define potential of a pedestrian
+- define parameters for mobile robot
+- calculate one-dimensional potential for determining course direction
+- express one-dimensional potential as a function of pedestrian positions and velocities
+- define pg(φ) for destination direction
+- calculate union of sets Hobs and Hvel for course direction candidates
+- describe example of course direction calculation
+- introduce trained model for estimating position
+- describe learning process for trained model
+- simulate pedestrian movements and operator input
+- generate teacher data for trained model
+- train trained model using teacher data
+- store trained model in memory
+- read trained model from memory
+- input information into trained model
+- calculate estimated position using trained model
+- generate remaining route to destination
+- describe process for generating remaining route
+- search for routes to destination
+- evaluate route costs
+- determine remaining route
+- describe process for generating remaining route with multiple course directions
+- calculate estimated positions for multiple course directions
+- generate remaining routes for multiple course directions
+- evaluate route costs for multiple course directions
+- determine remaining route
+- describe movement control unit
+- move mobile robot along planned route
+- detect moving objects
+- determine whether to avoid moving objects
+- calculate course direction
+- calculate estimated position
+- generate remaining route
+- move mobile robot along remaining route
+- determine whether mobile robot has reached destination
+- describe advantages of using trained model
+- describe conditions for recalculating course direction and remaining route
+- describe evaluation function for course direction
+- describe program storage and provision
+- describe non-transitory computer readable media
+- describe transitory computer readable media
+- describe variations of embodiments
+- describe scope of disclosure
+- describe mobile robot movement control
+- describe pedestrian detection
+- describe course direction calculation
+- describe estimated position calculation
+- describe remaining route generation
+- describe movement control unit operation
+- describe overall mobile robot operation
+

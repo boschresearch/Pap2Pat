@@ -1,0 +1,206 @@
+# DESCRIPTION
+
+## SUMMARY OF THE APPLICATION
+
+- motivate vaccination against turkey arthritis reovirus
+- introduce reverse genetics technology
+- define polynucleotide
+- define genetically modified
+- define coding region
+- define protein
+- define ex vivo
+- define in vivo
+- explain conversion between DNA and RNA sequences
+- define and/or
+- define or
+- define preferred
+- define have, has, having, include, includes, including
+- define consisting of and consisting essentially of
+- define a, an, the, and at least one
+
+## DETAILED DESCRIPTION
+
+- introduce reverse genetics system
+- describe advantages of Pichinde virus
+- discuss safety of Pichinde virus
+- describe genetic stability of Pichinde virus
+- introduce three genomic segments
+- describe first genomic segment
+- describe Z protein
+- describe L RdRp protein
+- describe second genomic segment
+- describe NP protein
+- describe third genomic segment
+- describe glycoprotein
+- define structural similarity
+- describe Blastp program
+- describe BESTFIT algorithm
+- define identity and similarity
+- describe conservative substitutions
+- compare Z protein to other arenaviruses
+- compare L RdRp protein to other arenaviruses
+- compare NP protein to other arenaviruses
+- compare glycoprotein to other arenaviruses
+- define Pichinde virus proteins
+- describe biological activity of proteins
+- introduce mutations in NP protein
+- describe effects of mutations on cytokine production
+- introduce mutations in glycoprotein
+- describe effects of mutations on virus spreading
+- introduce additional coding regions
+- describe avian reovirus sigma C protein
+- describe avian reovirus sigma B protein
+- define structural similarity of sigma C and sigma B proteins
+- describe conserved domains of sigma C and sigma B proteins
+- introduce modifications to sigma C and sigma B proteins
+- describe immune response to avian reovirus proteins
+- describe length of avian reovirus proteins
+- define ambisense genome
+- describe Pichinde virus genomic segments
+- detail UTRs and IGRs
+- describe coding regions
+- introduce detectable markers
+- describe polynucleotides
+- introduce vectors
+- describe vector construction
+- detail vector replication
+- introduce expression vectors
+- describe regulatory sequences
+- introduce promoters
+- describe transcription terminators
+- introduce ribozymes
+- describe RNA molecule transcription
+- detail viral particle production
+- introduce marker sequences
+- describe compositions
+- introduce pharmaceutically acceptable carriers
+- describe vaccine compositions
+- detail administration routes
+- describe dosage forms
+- introduce sterile solutions
+- describe sterile powders
+- detail oral compositions
+- describe tablets and capsules
+- introduce inhalation administration
+- describe transmucosal and transdermal administration
+- introduce controlled release formulations
+- describe biodegradable polymers
+- introduce liposomal suspensions
+- describe composition preparation
+- detail composition characteristics
+- define adjuvant
+- list examples of adjuvants
+- describe function of adjuvants
+- discuss dosage of compounds
+- describe range of dosage
+- discuss administration of composition
+- describe booster administration
+- introduce methods of use
+- describe making infectious viral particle
+- discuss production of full-length genomic RNA
+- describe transcription and translation of viral genes
+- discuss amplification of viral genome
+- describe release of infectious virus particles
+- discuss isolation and amplification of virus particles
+- describe inactivation of virus particles
+- introduce expression of avian reovirus proteins
+- describe introduction of genomic segments into cell
+- discuss incubation of cell for expression
+- introduce immunization of animal
+- describe administration of viral particle
+- discuss booster administration
+- describe immunization against reovirus
+- discuss treatment of avian reovirus infection
+- describe administration of composition
+- discuss determination of avian reovirus amount
+- introduce kit for immunizing animal
+- describe contents of kit
+- discuss instructions for use
+- introduce exemplary aspects
+- describe genetically engineered Pichinde virus
+- discuss mutations in nucleoprotein
+- discuss mutations in glycoprotein
+- introduce infectious virus particle
+- describe composition comprising infectious virus particle
+- introduce collection of vectors
+- describe making genetically engineered virus particle
+- discuss isolation of virus particle
+- introduce reverse genetics system
+- describe method for using reverse genetics system
+- discuss treatment of subject using infectious virus particle
+
+## EXAMPLES
+
+- illustrate disclosure
+
+### Example 1
+
+- introduce TARV infection problem
+- motivate vaccination as solution
+- describe recombinant PICV vaccine development
+- summarize TARV genome structure
+- explain S1 and S3 protein functions
+- describe limitations of current vaccines
+- introduce Pichinde virus as vaccine vector
+- describe reverse genetics technique
+- summarize rP18tri development
+- describe immunogenicity of rP18tri
+- introduce study objective
+- describe materials and methods
+- describe cell and virus preparation
+- describe Pichinde virus plasmids
+- describe gene insert preparation
+- describe cloning and transfection
+- describe recombinant plasmid verification
+- describe transfection and viral recovery
+- describe detection of reovirus antigenic proteins
+- describe FA assay for protein expression
+- conclude vaccine development and testing
+- describe vaccination experiment
+- inoculate turkey poults with recombinant PICVs
+- revaccinate via intranasal route
+- collect blood samples
+- perform serum neutralization assay
+- clone reovirus genes into PICV plasmids
+- confirm presence of reovirus genes
+- transfect cells with plasmids
+- rescue viable recombinant PICVs
+- detect GFP expression
+- infect BHK21 cells with recombinant PICVs
+- detect reovirus genes by RT-PCR
+- verify expression of reovirus antigenic proteins
+- perform direct fluorescence assay
+- observe fluorescence in BHK-21 cells
+- vaccinate birds with monovalent and bivalent PICVs
+- perform serum neutralization assay
+- analyze SN antibody titers
+- discuss use of PICV as a vector
+- discuss development of recombinant PICV-TARV vaccines
+- discuss growth of recombinant PICVs in BHK-21 cells
+- discuss detection of inserted genes and protein expression
+- discuss use of RT-PCR to detect inserted TARV genome
+- discuss FA procedure to confirm expression of reoviral antigenic proteins
+- discuss future in vivo experiments
+
+### Example 2
+
+- introduce objective
+- describe experimental plan
+- detail turkey poults procurement
+- summarize serum sample collection
+- describe meconium, intestine, and tendon sample testing
+- outline group division and housing
+- detail vaccination and challenge procedures
+- describe blood sample collection for serology
+- summarize bird examination and euthanization
+- detail necropsy and sample collection
+- summarize results of serum neutralizing antibodies
+- describe vaccine transmission to sentinels
+- summarize body weight results
+- describe reoviral replication in intestine
+- summarize reoviral replication in gastrocnemius tendons
+- describe tendon inflammation results
+- discuss conclusions and unexpected findings
+- suggest future work and adjustments to vaccine regimen
+- provide general disclaimer and scope of disclosure
+

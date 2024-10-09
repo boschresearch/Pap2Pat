@@ -1,0 +1,335 @@
+# DESCRIPTION
+
+## CROSS REFERENCE
+
+- claim priority
+
+## FIELD OF TECHNOLOGY
+
+- define application area
+
+## BACKGROUND
+
+- limitations of conventional techniques
+
+## DETAILED DESCRIPTION
+
+- introduce wearable devices for collecting user data
+- describe sleep data collection throughout a 24-hour period
+- classify different sleep stages for a user
+- receive physiological data from a wearable device
+- determine periods of time that the user is asleep
+- automatically classify periods of time into sleep stages
+- display classified sleep stages to a user via a GUI
+- provide feedback to a user regarding sleeping patterns
+- utilize a machine learning classifier for sleep stage classification
+- input physiological data into a machine learning classifier
+- identify features associated with physiological data
+- perform sleep stage classification based on identified features
+- normalize physiological data prior to input into a machine learning classifier
+- tailor sleep staging algorithms to each individual user
+- train a machine learning classifier with sleep data collected for each individual user
+- utilize circadian rhythm-derived features for sleep stage classification
+- describe circadian rhythm adjustment models
+- input a circadian rhythm adjustment model into a machine learning classifier
+- weight physiological data collected throughout a user's sleep
+- provide more accurate sleep stage classification
+- initially start with a baseline circadian rhythm adjustment model
+- modify the baseline model using physiological data collected from each user
+- generate tailored, individualized circadian rhythm adjustment models
+- describe a system that supports sleep staging algorithms
+- illustrate an example of a system that includes wearable devices, user devices, and servers
+- describe electronic devices that may be worn and/or operated by one or more users
+- list functionalities of electronic devices
+- describe example wearable devices
+- describe user devices
+- describe medical devices
+- describe IoT devices
+- measure physiological parameters of respective users
+- perform calculations described herein
+- operate, or be associated with, multiple electronic devices
+- receive data from wearable devices and perform calculations
+- describe a system that offers an on-demand database service
+- receive data from user devices via a network
+- store and analyze data
+- provide data to user devices via a network
+- describe servers that may be located at one or more data centers
+- provide a web-based interface to user devices via web browsers
+- support techniques for automatic sleep stage classification based on data collected by a wearable device
+- describe housing 205 components
+- describe outer housing 205-b materials
+- describe inner housing 205-a materials
+- describe ring 104 substrates
+- describe device electronics and battery 210 mounting
+- describe electrical traces functionality
+- describe modules and circuits functionality
+- describe memory 215 functionality
+- describe processing module 230-a functionality
+- describe communication module 220-a functionality
+- describe battery 210 and power source options
+- describe power module 225 functionality
+- describe temperature sensor 240 functionality
+- describe temperature data sampling
+- describe temperature data processing
+- describe temperature data storage
+- describe temperature data transmission
+- describe multiple temperature sensors 240 functionality
+- describe distal temperature measurement
+- describe PPG system 235 functionality
+- describe PPG signal generation
+- describe pulse waveform determination
+- describe physiological parameter determination
+- describe reflective PPG system 235 configuration
+- describe transmissive PPG system 235 configuration
+- describe optical transmitter and receiver options
+- describe PPG system 235 implementation
+- describe optical receiver location
+- describe optical transmitter control
+- describe PPG signal sampling
+- describe pulse waveform storage
+- describe pulse waveform processing
+- describe respiration rate determination
+- describe heart rate determination
+- describe HRV determination
+- describe oxygen saturation determination
+- describe circulatory parameter determination
+- describe data transmission to user device 106
+- describe data transmission to server 110
+- describe data storage on user device 106
+- describe data storage on server 110
+- describe ring 104
+- determine heart rate
+- store heart rate values
+- determine HRV
+- store HRV values
+- determine respiratory rate
+- store respiratory rate values
+- include motion sensors
+- generate motion signals
+- sample motion signals
+- determine motion of ring 104
+- store motion data
+- store temperature data
+- store PPG signal data
+- calculate derived values
+- store derived values
+- compress data
+- measure physiological parameters
+- take physiological measurements
+- collect data
+- store data
+- process data
+- transfer data
+- include wearable application
+- acquire data
+- store acquired data
+- process acquired data
+- evaluate sleep patterns
+- generate scores
+- calculate scores
+- determine sleep days
+- offset sleep days
+- adjust sleep days
+- determine contributors
+- calculate Sleep Score
+- calculate Readiness Score
+- classify sleep stages
+- utilize accelerometer data
+- utilize PPG data
+- utilize ANS-mediated peripheral signals
+- utilize circadian features
+- track health
+- provide feedback
+- guide behavioral change
+- understand sleep tracking data
+- measure accuracy
+- compare to PSG
+- improve sleep quality
+- describe ring 104 collecting physiological data
+- describe use of multiple light sources
+- describe advantages of using multiple LEDs
+- describe collecting accelerometer data
+- describe processing accelerometer data
+- describe features associated with accelerometer data
+- describe collecting temperature data
+- describe processing temperature data
+- describe features associated with temperature data
+- describe finger temperature and core body temperature
+- describe computing ANS-derived features
+- describe processing PPG data
+- describe extracting HRV features
+- describe normalizing physiological data
+- describe normalizing features on a per-night basis
+- describe not normalizing accelerometer data
+- describe smoothing physiological data
+- describe extracting features from physiological data
+- describe calculating scores for the user
+- describe displaying scores to the user
+- describe displaying physiological data to the user
+- describe inputting physiological data into machine learning classifier
+- describe training machine learning classifier
+- describe classifying physiological data into sleep stages
+- describe displaying sleep intervals and classified sleep stages
+- describe displaying additional data associated with user's sleep
+- describe displaying heart rate and HRV data
+- describe identifying features associated with physiological data
+- describe displaying identified features
+- describe generating recommendations for the user
+- describe determining bed time and wake time
+- describe training machine learning classifier based on user inputs
+- describe training individualized machine learning models
+- describe collecting physiological data during multiple nights
+- describe classifying physiological data using machine learning classifier
+- describe continually training machine learning classifier
+- describe FIG. 3 illustrating data acquisition diagram
+- describe FIG. 4 illustrating GUI
+- describe FIG. 5 illustrating GUI
+- describe ring 104 including NTC thermistors
+- describe PPG system 235 collecting PPG data
+- describe real-time moving average filter
+- describe identifying artifacts
+- describe extracting time and frequency domain HRV features
+- describe calculating mean and coefficient of variation
+- describe normalizing physiological data per-night
+- describe using robust z-score
+- describe using LightGBM classifier
+- describe performing machine learning model training and testing
+- describe machine learning classifier
+- introduce parameters and features of physiological data
+- describe ACC model
+- describe ACC+T model
+- describe ACC+T+HRV model
+- describe circadian features
+- motivate circadian rhythm adjustment model
+- describe circadian rhythm adjustment model
+- explain weighting of physiological data
+- describe application of circadian rhythm adjustment model
+- introduce time with respect to circadian rhythm
+- introduce time with respect to prevailing sleep pressure
+- introduce accumulated sleep duration
+- describe adjustment of circadian rhythm adjustment model
+- describe generalized circadian rhythm adjustment model
+- describe customized circadian rhythm adjustment model
+- describe modification of circadian rhythm adjustment model
+- describe varying probabilities of sleep stages
+- describe phase of circadian rhythm as input
+- describe machine learning classifier learning
+- describe sleep as dynamic process
+- introduce two-process model of sleep
+- describe circadian rhythm and homeostatic sleep drive
+- describe circadian rhythm adjustment model components
+- describe circadian drive component
+- describe homeostatic sleep pressure component
+- describe elapsed sleep duration component
+- describe adjustment of circadian drive component
+- describe adjustment of homeostatic sleep pressure component
+- describe adjustment of elapsed sleep duration component
+- describe identification of time duration from last sleep period
+- describe input of time duration into machine learning classifier
+- describe asymmetry of sleep stages
+- describe linearly repeating patterns of sleep
+- describe physiological differences between sleep stages
+- describe wearable sleep assessment
+- describe combining data streams and circadian features
+- describe performance of ACC models
+- describe performance of ACC+T models
+- describe performance of ACC+T+HRV models
+- describe performance of ACC+T+HRV+C models
+- describe sleep stage detection
+- motivate use of physiological data
+- describe accelerometer-only models
+- describe benefits of using multiple parameters
+- describe core body temperature patterns
+- describe finger temperature measurement
+- describe HRV features
+- describe sleep stage classification improvement
+- describe distribution of sleep stages
+- describe modeling circadian rhythm
+- describe sleep stage detection improvement
+- introduce device block diagram
+- describe input module
+- describe output module
+- describe wearable application
+- describe data acquisition component
+- describe machine learning classifier component
+- describe user interface component
+- describe wearable application components
+- describe data acquisition
+- describe machine learning classifier
+- describe user interface
+- describe data normalization
+- describe feature identification
+- describe feature display
+- describe user evaluation
+- describe data transmission
+- describe score generation
+- describe additional physiological data
+- describe additional data classification
+- describe GUI display
+- describe physiological data types
+- describe wearable ring device
+- introduce system diagram
+- describe device components
+- describe I/O controller
+- describe user interface component
+- describe memory
+- describe processor
+- describe wearable application
+- introduce sleep staging algorithms
+- describe benefits of improved sleep staging
+- illustrate method 1000
+- receive physiological data
+- input data into machine learning classifier
+- classify data into sleep stages
+- display sleep stages on GUI
+- illustrate method 1100
+- receive physiological data
+- input data into machine learning classifier
+- classify data into sleep stages
+- classify data into sleep intervals
+- classify each sleep interval into sleep stages
+- display sleep stages on GUI
+- illustrate method 1200
+- receive physiological data
+- perform normalization procedures
+- input normalized data into machine learning classifier
+- classify data into sleep stages
+- display sleep stages on GUI
+- illustrate method 1300
+- receive physiological data
+- input data into machine learning classifier
+- classify data into sleep stages
+- display sleep stages on GUI
+- receive additional physiological data
+- input additional data into machine learning classifier
+- classify additional data into sleep stages
+- display sleep stages on GUI
+- describe apparatus for automatically detecting sleep stages
+- describe processor and memory
+- describe instructions for receiving physiological data
+- describe instructions for inputting data into machine learning classifier
+- describe instructions for classifying data into sleep stages
+- describe instructions for displaying sleep stages on GUI
+- describe another apparatus for automatically detecting sleep stages
+- describe means for receiving physiological data
+- describe means for inputting data into machine learning classifier
+- describe means for classifying data into sleep stages
+- describe means for displaying sleep stages on GUI
+- describe non-transitory computer-readable medium
+- describe code for automatically detecting sleep stages
+- describe instructions for receiving physiological data
+- describe instructions for inputting data into machine learning classifier
+- describe instructions for classifying data into sleep stages
+- describe instructions for displaying sleep stages on GUI
+- describe optional operations for classifying physiological data
+- describe optional operations for displaying sleep intervals
+- describe optional operations for performing normalization procedures
+- describe optional operations for identifying features associated with physiological data
+- describe optional operations for displaying features
+- describe optional operations for identifying bed time and wake time
+- describe optional operations for transmitting physiological data to servers
+- describe optional operations for generating scores associated with user
+- describe optional operations for inputting circadian rhythm adjustment model
+- describe optional operations for receiving additional physiological data
+- describe optional operations for displaying physiological data
+

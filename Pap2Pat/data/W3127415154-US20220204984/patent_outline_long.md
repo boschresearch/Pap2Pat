@@ -1,0 +1,205 @@
+# DESCRIPTION
+
+## SEQUENCE
+
+- incorporate sequence listing
+
+## FIELD OF THE INVENTION
+
+- define invention field
+
+## SUMMARY OF THE INVENTION
+
+- introduce unusual fatty acid production in plants
+- describe limitations of current methods
+- propose solution to increase fatty acid production
+- explain mechanism of ACCase regulation
+- describe BADC genes' role in ACCase regulation
+- hypothesize BADC's role in unusual fatty acid production
+- describe experimental design to test hypothesis
+- crossbreed Arabidopsis strains with BADC mutations
+- analyze ACCase activity in resulting plants
+- describe results: increased fatty acid production
+- explain significance of results
+- propose application of discovery to industrial uses
+- describe potential for sustainable bioeconomy
+- introduce composition claims
+- claim composition with mutated BADC genes
+- claim composition produced by invention's methods
+- claim plant composition with defective BADC genes
+- claim method of increasing unusual fatty acid production
+- describe method of modifying plant cells
+- claim transgenic plant with reduced BADC expression
+- describe phenotypes of transgenic plant
+- claim transgenic plant with improved seed yield
+- describe target fatty acids
+- claim transgenic plant with altered fatty acid metabolism
+- describe transgene encoding fatty acid hydroxylase
+- claim transgenic plant with E. coli cyclopropane fatty acid synthase
+- describe transgene under seed-specific promoter
+- claim transgenic plant with mutation in BADC genes
+- claim transgenic plant with homozygous mutation
+- claim transgenic plant with heterozygous mutation
+- claim stably transformed transgenic plant cell
+- describe method of producing transgenic plant
+- claim method of silencing BADC genes
+- claim method of altering fatty acid metabolism
+- describe method of crossing transgenic plants
+- claim transgenic plant with reduced BADC expression
+- describe phenotypes of transgenic plant
+- claim transgenic plant with improved seed yield
+- describe target fatty acids
+- claim transgenic plant with altered fatty acid metabolism
+- describe transgene encoding fatty acid hydroxylase
+- claim transgenic plant with E. coli cyclopropane fatty acid synthase
+- describe transgenic plant or part thereof produced by invention's methods
+- define transgenic plant
+- describe plant cell composition
+- summarize plant phenotypes
+- describe transgenic plant part
+- specify genomic mutations
+- describe transgene encoding
+- specify target fatty acids
+- describe transgenic plant part combinations
+- describe reduced expression
+- provide progeny plant
+- describe method of modifying plant
+- provide transgenic seed
+- describe transgenic seed production
+- describe transgenic seed characteristics
+- provide transgenic seed combinations
+- describe transgenic seed phenotypes
+- provide tissue culture
+- describe tissue culture composition
+- describe tissue culture phenotypes
+- provide method of producing target fatty acid
+
+## DEFINITIONS
+
+- define wild-type and normal
+- define expression
+- define antisense RNA
+- define RNA transcript
+- define reducing gene expression
+- define specificity
+- describe post-transcriptional gene suppression
+- describe RNAi cassette
+- define mutation
+- describe deletion, insertion, and substitution
+- describe site-specific recombination
+- define genome editing
+- describe CRISPR-endonuclease system
+- define transformation
+- define stable transformation
+- define transgenic and genetically engineered cell
+- define transgene
+- define endogenous molecule
+- define heterologous molecule
+- define BADC1 gene
+- define BADC3 gene
+- define ortholog genes
+- define fatty acid
+- list unusual fatty acids
+- define rescued
+- define seed yield
+- define germination
+- define establishment
+- define plant
+- list plant examples
+- define homozygous
+- define homozygous null
+- define heterozygous
+- define breeding
+- define plant part
+- define regenerable
+- define progeny
+- define reduce
+- define inhibit
+- define decrease
+- define increase
+- define elevate
+- define raise
+- define alter
+- define modify
+- provide examples of grammatical equivalents
+- provide statistical significance
+
+## DESCRIPTION OF THE INVENTION
+
+- introduce specialized fatty acids
+- motivate transgenic expression
+- describe limitations of transgenic expression
+- hypothesize BADC-mediated inhibition
+- test hypothesis using badc1,3/fae1/FAH
+- summarize results of badc1,3/fae1/FAH
+- motivate crop improvement goal
+- describe barrier to progress
+- introduce hydroxy fatty acids
+- describe industrial applications of HFAs
+- describe limitations of HFA production
+- summarize previous attempts to overcome limitations
+- describe ACCase and BADC proteins
+- summarize role of BADCs in ACCase activity
+
+### DISCUSSION OF EXEMPLARY EMBODIMENTS
+
+- motivate HFA-dependent feedback inhibition of ACCase
+- describe ACCase regulation
+- introduce badc1 and badc3 null mutants
+- summarize effects on FA synthesis and HFA accumulation
+- discuss seed FA content restoration
+- explain non-rescue of seed weight
+- relate to previous studies on lipid homeostasis
+- describe reversible and irreversible inhibition of ACCase
+- discuss BADC-dependent inhibition of ACCase
+- propose conditional inhibition of ACCase activity
+- summarize in vitro studies on BADC and BCCP
+- discuss open question on BADC and BCCP interaction
+- motivate creation of HFA-accumulating crop variants
+- summarize previous studies on HFA accumulation
+- discuss overexpression of OLEOSIN1 and SEIPIN
+- describe seed-specific expression of WRINKLED1
+- discuss use of factors from mFA-accumulating species
+- summarize co-expression of mFA-preferring enzymes
+- generalize findings to other mFAs
+- discuss germination rates and mFA accumulation
+- motivate characterization of cellular components
+- test hypothesis on HFA-dependent reduction in FA synthesis
+- describe introgression of badc1,3 into fae1/FAH
+- summarize effects on FA synthesis rate and seed yield
+- discuss seedling establishment and root development
+- describe disruption of badc3 alone in CL37
+- summarize effects on HFA percentage and seed yield
+- discuss editing/silencing of BADC3 in sFA-producing crops
+- introduce experimental examples
+- describe plant growth conditions
+- summarize seed germination and establishment
+- describe Arabidopsis cross and screening of homozygous plants
+- outline RNA extraction and RT-qPCR
+- describe fatty acid analyses
+- introduce badc1,3/fae1/FAH homozygous plants
+- identify FAH expressing homozygotes lines
+- motivate knocking out BADC1 and BADC3
+- assess BADC1 and BADC3 transcription
+- evaluate FAH expression
+- quantify FA synthetic genes expression
+- analyze WRI1 transcript levels
+- quantify FA content in seeds
+- determine oil content in seeds
+- measure seed weight
+- analyze HFA and unmodified FA
+- determine FA synthesis rate
+- validate FA synthesis rate assay
+- measure fatty acid synthesis rate
+- test seed germination and establishment
+- analyze seedling establishment rates
+- compare seedling establishment rates
+- measure seed yield per plant
+- introduce badc1,3 in fad2/fae1 Camelina
+- disrupt BADC1 and BADC3 gene expression
+- evaluate fatty acid synthesis rate
+- measure seed size and weight
+- analyze FA composition and total FA
+- disrupt single BADC genes in Arabidopsis
+- analyze FA composition in seeds
+

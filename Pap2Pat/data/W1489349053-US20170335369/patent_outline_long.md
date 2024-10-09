@@ -1,0 +1,829 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate long-range DNA sequencing
+
+## SUMMARY
+
+- introduce clonal clusters
+- motivate NGS data limitations
+- describe XLRPs
+- explain benefits of XLRPs
+- introduce reconstituted chromatin
+- describe chromatin conformation
+- explain read pair generation
+- describe phase information
+- introduce high-quality assembly method
+- describe genomic assembly
+- introduce chromosome-level phasing
+- describe phasing method
+- introduce labeled polynucleotide generation
+- describe crosslinking
+- describe binding probe addition
+- describe labeled polynucleotide formation
+- introduce composition
+- describe association molecules
+- describe binding probe attachment
+- describe composition features
+- introduce method of mapping a sequence to a nucleic acid molecule
+- describe steps of obtaining a nucleic acid sample
+- define binding agent
+- describe fragmentation of nucleic acid sample
+- introduce restriction endonuclease
+- describe attachment of DNA to a specific sequence
+- introduce oligonucleotides attached to a solid substrate
+- describe annealing of DNA to oligonucleotides
+- describe ligation of DNA to oligonucleotides
+- remove protein from DNA sample
+- attach common double stranded DNA sequence
+- prepare DNA for sequencing analysis
+- introduce methods of sequencing
+- analyze sequence information
+- assign sequences to a common bin
+- resolve sequence reads to one or another original nucleic acid molecule
+- introduce dual tag system
+- obtain sequence contig information
+- introduce methods of labeling DNA complexes
+- crosslink a first DNA molecule
+- sever the DNA complex
+- attach a first label to the first segment end
+- attach a second label to the second segment end
+- describe first label and second label
+- introduce resolved locus
+- fill in overhang sequences
+- add a single nucleotide to the segment ends
+- attach labels to segment ends using TA-based ligation
+- associate sequence segments based on barcodes
+- ligate a barcoded aggregate to the DNA complex
+- amplify sequence segments using barcoded polynucleotides
+- generate barcoded polynucleotides using RCA
+- introduce aggregate molecules
+- crosslink a first DNA molecule to association molecules
+- link a sequencing adaptor to sequence segments
+- obtain sequence information of sequence segments
+- associate sequence segments using sequence information
+- assemble contigs using sequence information
+- assemble a genome using sequence information
+- introduce compositions comprising sequence segments and labels
+- introduce compositions comprising barcoded polynucleotides and aggregate molecules
+- introduce compositions comprising a DNA complex and barcoded polynucleotides
+- introduce methods for associating sequence segments
+- crosslink a DNA library
+- isolate sequence segments in a reaction volume
+- attach labels to sequence segments
+- release sequence segments from crosslinking
+- sever the DNA molecule
+- link a sequencing adaptor to labeled polynucleotides
+- obtain sequence information of labeled polynucleotides
+- associate sequence segments using sequence information
+- assemble contigs using sequence information
+- assemble a genome using sequence information
+- introduce an aqueous droplet comprising a nucleic acid molecule and association molecules
+- introduce compositions comprising an amplification template
+- introduce compositions comprising a polymerase, primer, restriction enzyme, or ligase
+- introduce compositions comprising emulsion of aqueous droplets
+- describe first nucleic acid molecule
+- introduce oligonucleotide with end sequence
+- describe molecular tag sequence
+- describe binding agent
+- describe covalent binding
+- describe single covalently bound molecule
+- describe double-stranded oligonucleotide
+- describe biotin
+- describe absence of molecular tag sequence
+- describe ligase
+- describe ATP
+- describe nucleic acid polymerase
+- describe BstXI
+- describe plurality of dNTP
+- describe biotinylated dNTP
+- describe restriction endonuclease
+- describe cleavage of double-stranded nucleic acid
+- describe inactive restriction endonuclease
+- describe NlaIII
+- introduce method of assembling contigs
+- describe generating read-pairs
+- describe assembling contigs using read-pairs
+- describe distance of read-pairs
+- describe nanoparticle
+- describe platinum-based nanoparticle
+- describe DNA intercalator
+- describe bis-intercalator
+- describe bisacridine
+- describe reversible crosslinking
+- describe heat reversal
+- describe chemical agent reversal
+- introduce method of haplotype phasing
+- describe generating read-pairs
+- describe assembling contigs using read-pairs
+- describe haplotype phasing accuracy
+- describe nanoparticle
+- describe platinum-based nanoparticle
+- describe DNA intercalator
+- describe bis-intercalator
+- describe bisacridine
+- describe reversible crosslinking
+- describe heat reversal
+- describe chemical agent reversal
+- introduce method of generating read-pair
+- describe crosslinking DNA molecule
+- describe linking DNA segments
+- describe sequencing linked DNA segment
+
+## DETAILED DESCRIPTION
+
+- introduce limitations of current DNA sequencing technologies
+- describe nanopore-based sequencing technology
+- describe sequencing of pools of diluted fosmid clones
+- describe use of data from chromatin capture experiments
+- motivate need for de novo genomic assembly
+- describe method for forming chromatin aggregates
+- describe cross-linking to fix long range interactions
+- describe identifying DNA sequences within aggregates
+- introduce present disclosure
+- describe methods for producing long range sequence information
+- describe associating ends of DNA with reverse complementary sequences
+- describe capturing DNA on chromatin capture platform
+- describe attaching common adaptor to ends of DNA
+- describe advantages of attaching adaptor
+- describe designing adaptor with unique barcode
+- describe using adaptor to negate bias
+- describe introducing protective moiety into adaptor
+- motivate identifying all DNA sequences within chromatin aggregate
+- describe method for identifying DNA sequences
+- describe attaching unique label to sequences
+- describe DNA sequencing of labeled sequences
+- describe methods for carrying out massively-parallel barcoding
+- describe using libraries of barcode aggregates
+- describe labeling individual DNA molecules with unique barcode tags
+- define singular forms
+- define "and" and "or"
+- define "comprise", "comprises", "comprising"
+- define "read" or "sequencing read"
+- define "contigs"
+- define "subject"
+- define "nucleic" or "polynucleotide"
+- define "naked DNA"
+- define "reconstituted chromatin"
+- define "nanoparticles"
+- define "read set", "read-set", "read pair", or "read-pair"
+- define "bridge amplification"
+- define "about"
+- describe methods for labeling and associating polynucleotides
+- describe using data for various applications
+- describe producing highly contiguous and accurate genomic assembly
+- describe phasing or assigning physical linkage information
+- describe overcoming barriers posed by repetitive regions
+- describe advancing field of genomics
+- introduce genome assembly method
+- provide assembled genome and variant calls
+- generate extremely long-range read pairs
+- integrate with standard molecular biology techniques
+- improve efficiency, specificity, and genomic coverage
+- generate read pairs in less than 30 days
+- provide high accuracy in ordering and orientating contigs
+- use with currently employed sequencing technology
+- simplify de novo genomic assembly
+- overcome scaffold integrity challenges
+- enable accurate phasing for large numbers of individuals
+- advance personalized medicine
+- drive basic evolutionary and biomedical research
+- provide methods for genome assembly
+- combine technologies for DNA preparation and tagged sequence reads
+- assist in genome assembly, haplotype phasing, and metagenomic studies
+- determine assembly of subject's genome or portions thereof
+- generate plurality of contigs from sequencing fragments
+- assemble overlapping ends of sequencing reads
+- use with contig information previously generated
+- assist in chromosomal assembly, ordering, and orientation
+- provide XLRS libraries for subject
+- obtain samples comprising target DNA
+- extract and prepare DNA from subject's sample
+- allow for accurate and predictive results with small amounts of material
+- extract very high molecular weight DNA
+- improve data from XLRS library by increasing fragment size
+- extract megabase-sized fragments of DNA
+- use with chromatin isolated from cell/organism or reconstituted chromatin
+- adjust crosslinking conditions to favor longer-range interactions
+- describe nanoparticle-based method
+- list nanoparticle properties
+- vary factors for condensation
+- specify nanoparticle concentrations
+- specify nanoparticle-to-DNA ratios
+- specify nanoparticle sizes
+- immobilize nanoparticles on substrates
+- improve ligation efficiency
+- produce read-sets with large distances
+- specify read-set generation times
+- achieve high accuracy in contig ordering
+- probe chromosome physical layout
+- fix chromatin in live cells
+- recover proximate associations among genomic regions
+- produce three-dimensional geometric map of chromosomes
+- capture nonspecific intrachromosomal interactions
+- use sequence tag information for mapping
+- assemble read position contig information
+- correlate chromosomal connectivity
+- reconstruct chromatin in vitro
+- create cross-links between genome regions
+- describe DNA molecule immunoprecipitation
+- describe DNA molecule fragmentation
+- describe binding partner contacting
+- describe polynucleotide collection
+- describe acetylated histone cross-linking
+- describe polynucleotide fragmentation techniques
+- list restriction enzymes
+- describe resulting sequence segment characteristics
+- describe sonication techniques
+- describe sequence segment labeling
+- describe sequencing technique
+- describe sequence information analysis
+- describe existing sequencing technology integration
+- list sequencing technologies
+- describe chromatin interaction patterns
+- describe distance-dependent decay
+- describe cis-trans ratio
+- describe genome assembly using 3D structure
+- describe physical distance analysis
+- describe read-pair mapping to contigs
+- describe adjacency matrix construction
+- describe read-set mapping to contigs
+
+### Using Sequence Reads to Order and Orient Contigs
+
+- introduce traditional paired-end sequencing data sets
+- describe barcode tagged sequence read data sets
+- define ordering and orientation problem
+- determine order among contigs using sequence reads
+- map individual sequence reads to a locus on a contig
+- identify nearby contigs using commonly tagged sequences
+- presume contigs are near one another in genomic sequence
+- orient contigs using sequence read sets
+- illustrate contig ordering using FIG. 13A-B
+- calculate expected number of shared barcodes
+- account for noise sources in shared barcodes
+- disentangle commonly tagged, genomically overlapping segments
+- use quantitative approaches to order, orient, or order and orient contigs
+- identify misoriented contigs using expected separation on genome
+- construct adjacency matrix of contigs using read-mapping data
+- weight read-sets using tendency for short-range interactions
+- fit function describing probability of particular distance
+- weight connections in adjacency matrix by distance to edge of contigs
+- scale adjacency matrix to down-weigh promiscuous regions of genome
+- analyze adjacency matrix to determine path through contigs
+
+### Phase Data and Uses
+
+- introduce haplotype phasing
+- importance of phasing in diploid genomes
+- limitations of short reads in phasing
+- computational inference of phasing
+- methods for phasing using allelic variants
+- examples of disease association with phasing
+- importance of haplotypes in organ transplantation
+- haplotypes in detecting disease associations
+- haplotypes in population structure and evolution
+- allelic imbalances in gene expression
+- in vitro technique for long-range linkage and phasing
+- constructing and sequencing read-sets
+- labeling sequence segments with barcodes
+- inferring genomic distance from interactions
+- producing read pairs that span large DNA fragments
+- achieving high phasing accuracy
+- phasing at longer ranges
+- using improved assembly software tools
+- labeling sequence segments that span large polynucleotides
+- phasing a higher proportion of variants
+- maintaining high levels of accuracy
+- extending phase information to longer ranges
+- using XLRP libraries to confirm phasing capabilities
+- accuracy of phasing results
+- investigating meta-genomes
+- determining composition of microbe populations
+- enabling metagenomic studies
+- applying methods to various nucleic acid samples
+- achieving high degrees of accuracy in cancer genome sequencing
+- generating accurate long sequences from complex samples
+- detecting large scale structural variants and rearrangements
+- obtaining phased variant calls over long sequences
+- assembling contigs from a single DNA molecule
+- generating read-pairs from a single DNA molecule
+- assembling contigs using read-pairs
+- cross-linking single DNA molecule outside of a cell
+- generating read-pairs within a certain timeframe
+- using methods for haplotype phasing
+- assigning haplotypes to computational resources
+- using methods for diagnostic, prognostic, therapeutic, and screening purposes
+- introduce genomics application
+- describe biomarker discovery
+- outline drug screening
+- discuss gene expression analysis
+- motivate infectious disease detection
+- describe genetic disease diagnosis
+- outline environmental monitoring
+- discuss forensic applications
+- describe food science applications
+- summarize SNP detection
+- outline STR detection
+- discuss RNA expression analysis
+- describe promoter methylation analysis
+- outline gene expression analysis
+- discuss virus detection
+- describe viral subtyping
+- outline drug resistance detection
+- discuss disease diagnosis
+- describe disease staging
+- outline treatment monitoring
+- discuss disease prognosis
+- summarize cytokine expression detection
+
+### Methods for Generating Labeled Polynucleotides
+
+- generate labeled polynucleotides from a first DNA molecule
+
+### Methods for Labeling DNA Segments
+
+- crosslink a first DNA molecule to yield a DNA complex
+- sever the DNA complex to form sequence segments
+- attach a first label to a first segment end
+- attach a second label to a second segment end
+- sever the first DNA molecule using a restriction enzyme
+- sever the first DNA molecule by ultraviolet irradiation
+- fill in overhang sequences to generate blunt ends
+- fill in overhang sequences with modified nucleotides
+- cut overhang sequences with an exonuclease
+- cross-link the first DNA molecule within a cell
+- cross-link the first DNA molecule outside of a cell
+- cross-link the first DNA molecule to association molecules
+- use identical labels for the first and second sequence segments
+- use different labels for the first and second sequence segments
+- use polynucleotides as labels
+- use adaptors with overhang sequences, barcodes, and capture sequences
+- hybridize the first sequence segment to a binding probe
+- extend the first sequence segment using a binding probe as a template
+- add single nucleotides to the first and second segment ends
+- attach labels to the first and second segment ends using TA-based ligation
+
+### Methods for Associating Sequence Segments and Haplotype Phasing
+
+- crosslink a DNA library comprising a first DNA molecule
+- isolate the first sequence segment and the second sequence segment
+- attach a first label to the first sequence segment
+- attach a second label to the second sequence segment
+- sever the first DNA molecule
+- release the first sequence segment and the second sequence segment
+- link the first sequence segment and the second sequence segment
+- cross-link the first sequence segment and the second sequence segment
+- use microfluidic devices to isolate the first sequence segment and the second sequence segment
+- use emulsions to isolate the first sequence segment and the second sequence segment
+- use liposomes or micelles to isolate the first sequence segment and the second sequence segment
+- generate a single DNA molecule in a reaction volume
+- generate a plurality of DNA molecules in a plurality of reaction volumes
+- use identical labels for the first and second sequence segments
+- use different labels for the first and second sequence segments
+- use polynucleotides as labels
+- produce labels from a template in the reaction volume
+- attach labels to the sequence segments by ligation or hybridization
+- release the first sequence segment and the second sequence segment from crosslinking
+- digest or modify the labels
+- attach sequencing adaptors to the first sequence segment and/or the second sequence segment
+- obtain sequence information of the first sequence segment and/or the second sequence segment
+
+### Bridge Amplification
+
+- introduce bridge amplification
+- describe binding probes on first resolved locus
+- define feature oligonucleotides
+- describe adaptor oligonucleotide
+- describe chromatin capture oligonucleotide (CCO)
+- describe spacer groups
+- attach oligonucleotides to glass surface
+- synthesize third set of oligonucleotides
+- describe functional domains of DNA sequence
+- provide examples of oligonucleotides
+- apply third set of oligonucleotides to glass surface
+- copy oligonucleotides onto glass surface
+- generate clones of barcoded oligonucleotides
+- control clone diameter
+- allow synthesized strands to base pair
+- create double strand break
+- remove DNA strands
+- ensure capture sequence availability
+- provide alternative bridge amplification protocol
+- describe capture sequence in CCO
+- provide restriction site in CCO
+- synthesize third set of oligonucleotides (alternative)
+- describe functional domains of DNA sequence (alternative)
+- allow synthesized strands to base pair (alternative)
+- create double strand break (alternative)
+- remove DNA strands (alternative)
+- ensure capture sequence availability (alternative)
+- provide examples of oligonucleotides (alternative)
+
+### DNA Complex Formation
+
+- form complex comprising nucleic acid and nucleic acid binding agent
+- sever first DNA molecule
+- describe methods for severing DNA molecule
+- cross-link first sequence segment and second sequence segment
+- describe cross-linking methods
+- cross-link to association molecules
+- describe association molecules
+- use nanoparticles as association molecules
+- describe nanoparticle properties
+- locate first resolved locus on substrate
+- describe substrate properties
+- form complex on substrate
+- describe binding probes on first resolved locus
+- generate labeled polynucleotides
+- link sequencing adaptor to labeled polynucleotides
+- obtain sequence information
+- associate sequence segments
+- assemble contigs or genome
+
+### Compositions
+
+- define composition with sequence segments and association molecules
+- describe binding probe attached to sequence segment
+- specify polymerase bound to binding probe
+- describe hybridization of sequence segment to binding probe
+- describe ligation of sequence segment to binding probe
+- specify identical binding probes
+- describe sequence segments part of same polynucleotide
+- describe sequence segments part of different polynucleotides
+- define composition with labels attached to sequence segments
+- describe ligation of labels to sequence segments
+- specify identical labels
+- describe labels as polynucleotides
+- describe labels with linker, barcode, and adaptor
+- describe hybridization of adaptor to binding probe
+- specify resolved locus on substrate
+- describe substrate as solid support
+- describe substrate as microarray
+- specify number of resolved loci on substrate
+- describe resolved locus with multiple binding probes
+- specify percentage of identical binding probes
+- describe feature oligonucleotides
+- describe feature oligonucleotides with linker, primer, barcode, and capture sequence
+- describe capture sequence hybridizing to sequence segment
+- describe resolved locus with multiple feature oligonucleotides
+- specify percentage of feature oligonucleotides with same barcode
+- describe association molecules as amino acids
+- describe association molecules as peptides or proteins
+- describe association molecules as nanoparticles
+- describe nanoparticles with positively charged surface
+- describe nanoparticles as platinum-based
+- describe nanoparticles as DNA intercalator or bisintercalator
+- describe association molecules from different source than DNA molecule
+- describe composition with barcoded polynucleotides and aggregate molecules
+- describe composition with aqueous droplet and nucleic acid
+
+### Samples
+
+- define samples
+- describe sample sources
+- specify sample types
+- introduce nucleic acid template molecules
+- describe nucleic acid isolation methods
+- mention extraction techniques
+- describe purification methods
+- introduce enzyme digestion step
+- mention RNase inhibitors
+- describe protein denaturation/digestion step
+- specify purification methods for DNA, RNA, or both
+- describe sub-fractions of extracted nucleic acids
+- introduce nucleic acid template molecules from US Patent Application
+- describe extraction techniques from Maniatis et al.
+- mention cross-linking in vitro
+- describe removal of native association proteins
+- specify high molecular weight double-stranded DNA
+- describe sample preparation for DNA complexes
+- introduce equimolar concentration of DNA complexes and oligo loci
+- describe benefits of equimolar concentration
+- mention non-one-to-one ratio of DNA complexes to oligo loci
+- describe downstream analysis for non-one-to-one ratio
+- introduce rare events of overlapping molecules
+- describe exclusion of overlapping molecules
+- mention later runs to sequence DNA complexes
+- describe smaller loci to decrease ratio of DNA complexes per locus
+- specify DNA complex preparation in solution
+- introduce equimolar concentration of DNA complexes and barcoded aggregates
+- describe benefits of equimolar concentration
+- mention non-one-to-one ratio of DNA complexes to barcoded aggregates
+- describe downstream analysis for non-one-to-one ratio
+- introduce rare events of overlapping molecules
+- describe exclusion of overlapping molecules
+- mention later runs to sequence DNA complexes
+- describe smaller loci to decrease ratio of DNA complexes per locus
+- define adapter oligonucleotides
+- describe adapter oligonucleotide structure
+- specify adapter oligonucleotide length
+- introduce barcodes
+- define barcodes
+- describe barcode structure
+- specify barcode length
+- describe barcode identification
+- introduce chromatin reconstitution
+- describe chromatin structure
+- explain chromatin assembly process
+- describe ATP-independent chromatin assembly
+- describe ATP-dependent chromatin assembly
+- introduce non-natural chromatin analogs
+- describe nanoparticle-based chromatin analogs
+- introduce fragmentation
+- define fragmentation terms
+- describe fragmentation methods
+- specify fragmentation lengths
+- describe size selection of cross-linked polynucleotides
+- describe sample polynucleotides
+- fragment polynucleotides into specific size ranges
+- generate fragments using mechanical, enzymatic, or chemical methods
+- treat fragments with enzymes to generate double-stranded breaks
+- cleave polynucleotides with restriction endonucleases
+- produce fragments with 5′ or 3′ overhangs or blunt ends
+- size select fragments via column purification or agarose gel
+- modify 5′ and/or 3′ end nucleotide sequences of fragments
+- ligate fragments with adapters having complementary overhangs
+- blunt-end polish fragments to produce blunt ends
+- add nucleotides to produce overhangs
+- join fragments to adapters having complementary overhangs
+- ligate blunt-ended fragments to adapters
+- phosphorylate 5′ ends of DNA fragments
+- dephosphorylate 5′ or 3′ ends of DNA fragments
+- define ligation in terms of covalent attachment
+- describe enzymatic and non-enzymatic ligation methods
+- list examples of ligases and their reaction conditions
+- describe ligation between nucleic acid segments with hybridizable sequences
+- describe ligation between blunt ends
+- utilize 5′ phosphate in ligation reactions
+- add or remove 5′ phosphates as needed
+- describe ligation reactions with varying concentrations
+- describe ligation reactions with varying times
+- join adapter oligonucleotides to target polynucleotides
+- describe ligation reactions with different adapter oligonucleotides
+- describe ligation reactions with varying concentrations and times
+- extend 3′ ends of polynucleotides using adapter oligonucleotides as templates
+- fill in 5′ overhangs to produce double-stranded sequences
+- describe extension reactions using various DNA polymerases
+- describe enrichment methods for nucleic acids
+- label nucleic acids with labeling agents
+- cross-link nucleic acids to association molecules with labeling agents
+- capture labeled target nucleic acids using capturing agents
+- describe capturing agents and their uses
+- introduce nucleic acid probes
+- describe enrichment method
+- specify sample types
+- detail probe binding
+- describe nucleic acid separation
+- specify nucleic acid sizes
+- repeat enrichment steps
+- introduce probe-derived amplicons
+- describe solid support types
+- detail solid support coatings
+- describe enrichment with restriction enzymes
+- describe ligation products
+- introduce amplification
+- define amplification
+- describe labeled polynucleotides
+- list amplification techniques
+- describe PCR conditions
+- detail PCR optimization
+- describe PCR amplification after dispensing
+- specify priming sequences
+- describe PCR cycle variations
+- compare PCR to whole genome amplification
+- describe fill-in reaction
+- specify primer lengths
+- describe amplification reaction cycles
+- specify amplification reaction temperatures
+- describe amplification reaction steps
+- specify target DNA amounts
+- describe determining amplifiable nucleic acid
+- introduce quantitative PCR
+- describe DNA-binding dye quantification
+- describe qPCR methods
+- explain fluorescent reporter-quencher probes
+- detail Taqman methodology
+- discuss other nucleic acid quantification methods
+- introduce labels for identifying/quantifying polynucleotides
+- describe types of labels (e.g. radionuclides, enzymes, fluorescent)
+- explain probe design and rationale
+- discuss probe length and restriction enzyme recognition sites
+- describe immobilization of probes on supports
+- detail array synthesis methods (e.g. VLSIPS, combinatorial synthesis)
+- introduce substrates and arrays
+- describe array technology and associated techniques
+- discuss library preparation and immobilization
+- explain spotting and indexing of libraries
+- describe microarray and macroarray formats
+- discuss detection methods (e.g. fluorescent, bioluminescent, radioactive)
+- introduce sequencing technologies
+- describe Sanger sequencing methods
+- detail high-throughput sequencing systems
+- explain real-time sequencing detection
+- discuss high-throughput sequencing read lengths
+- introduce Illumina sequencing technology
+- describe ABI Solid System sequencing technology
+- discuss other sequencing technologies
+- explain applications of sequencing technologies
+- describe data analysis methods for sequencing data
+- discuss bioinformatic tools for sequence analysis
+- introduce genomics and transcriptomics applications
+- describe epigenomics and proteomics applications
+- discuss single-cell analysis applications
+- explain synthetic biology applications
+- describe diagnostics and personalized medicine applications
+- discuss forensic analysis applications
+- introduce environmental monitoring applications
+- describe agricultural and biotechnological applications
+- discuss pharmaceutical and biomedical applications
+- explain computational methods for sequence analysis
+- describe machine learning and artificial intelligence applications
+- discuss data storage and management methods
+- introduce cloud computing and distributed computing applications
+- describe collaborative research and data sharing methods
+- discuss intellectual property and patent issues
+- explain regulatory and ethical considerations
+- summarize the importance of sequencing technologies
+- introduce high-throughput sequencing technologies
+- describe ion semiconductor sequencing
+- detail Helicos BioSciences Corporation's SMSS method
+- describe 454 Lifesciences' PicoTiterPlate device
+- detail bead amplification followed by fiber optics detection
+- describe Clonal Single Molecule Array (Solexa, Inc.) or sequencing-by-synthesis (SBS)
+- detail Pacific Biosciences' real-time (SMRT) technology
+- describe nanopore sequencing
+- detail Oxford Nanopore Technologies' GridlON system
+- describe GENIA's nanopore sequencing technology
+- detail NABsys' nanopore sequencing technology
+- describe IBM/Roche's nanopore sequencing technology
+- detail DNA nanoball sequencing (Complete Genomics)
+- describe AnyDot.chips (Genovoxx, Germany)
+- detail other high-throughput sequencing systems
+- describe real-time sequencing
+- detail temporal addition of bases via polymerization reaction
+- describe identifying incorporated nucleotide analogs
+- detail kits for high-throughput sequencing
+- describe kit components (association molecules, fixative agent, restriction endonuclease, ligase)
+- detail kit substrates (resolved loci, binding probes)
+- describe adaptor polynucleotides
+- detail barcoded polynucleotides or barcoded templates
+- describe beads (paramagnetic, capturing agent, streptavidin, antibody)
+- detail kit applications
+- describe histone proteins as association molecules
+- detail formaldehyde as fixative agent
+- describe DNA crosslinking agents
+- detail resolved loci on substrates
+- describe binding probes on resolved loci
+- detail barcoded template generation
+- describe linear or circular barcoded templates
+- detail bead coating (streptavidin, antibody)
+- describe kit uses
+- introduce kit components
+- list kit components
+- describe kit instructions
+- introduce computer system
+- describe computer system components
+- illustrate computer system architecture
+- describe processor types
+- describe high speed cache
+- describe north bridge and south bridge
+- describe peripheral bus
+- describe accelerator card
+- describe software and data storage
+- describe network interface cards
+- illustrate network architecture
+- describe data management and optimization
+- describe parallel processing
+- illustrate multiprocessor computer system
+- describe shared virtual address memory space
+- describe hardware acceleration
+
+## EXAMPLES
+
+### Example 1. Methods for Preparing the Substrate
+
+- define substrate
+- synthesize oligonucleotides
+- attach oligonucleotides to glass surface
+- synthesize barcoded oligonucleotides
+- anneal barcoded oligonucleotides to P5 oligo
+- perform PCR thermocycling
+- create blunt end breaks
+- prepare substrate for chromatin ligation
+
+### Example 2. Methods for Generating Labeled Polynucleotides
+
+- assemble chromatin
+- ligate chromatin to substrate
+- perform DNA polymerase extension
+- adenylate and ligate adaptors
+- prepare for high-throughput sequencing
+
+### Example 3. Surface Loci Preparation
+
+- synthesize oligonucleotides
+- attach oligonucleotides to glass surface
+- synthesize barcoded oligonucleotides
+- anneal barcoded oligonucleotides to P5 oligo
+- perform PCR thermocycling
+- create blunt end breaks
+- prepare substrate for chromatin ligation
+- describe adaptor oligonucleotide
+- describe chromatin capture oligonucleotide
+- attach oligonucleotides to silanized glass surface
+
+### Example 4. DNA Complex Ligation and Library Preparation
+
+- ligate chromatin to platform
+- prepare library for high-throughput sequencing
+
+### Example 5. Contig Ordering Using Sequence Read Information
+
+- obtain contig information
+- sequence genomic DNA sample
+- prepare artificial chromatin
+- cross-link chromatin
+- digest with MboI
+- hybridize to array
+- ligate and repair ends
+- convert to Illumina library
+- generate sequence sets
+- map sequences to contigs
+- identify physically linked molecules
+- infer gene structure
+- conclude functional drug-resistance gene
+- assemble genome
+
+### Example 6. Methods for Attaching a Universal Adaptor to Crosslinked Chromatin
+
+- prepare chromatin aggregates
+- attach universal adaptor
+
+### Example 7. Using Barcoded Aggregates to Label Crosslinked DNA Complexes
+
+- design and synthesize barcoded DNA molecules
+- assemble chromatin and ligate to DNA complexes
+- prepare for high-throughput sequencing
+
+### Example 8. Methods for Associating Sequence Segments in an Emulsion
+
+- introduce emulsion method
+- prepare chromatin and reagents
+- generate emulsion and nanoreactors
+- perform rolling circle amplification
+- restrict and ligate tags to DNA
+- break emulsion and analyze products
+
+### Example 9. Methods to Generate Chromatin In Vitro
+
+- introduce chromatin generation approaches
+- describe ATP-independent random deposition
+- describe ATP-dependent assembly of periodic nucleosomes
+- reference Lusser et al. for chromatin reconstitution strategies
+- incorporate Lusser et al. by reference
+- introduce genome assembly using chromatin capture techniques
+- describe fragmentation of human genome into pseudo-contigs
+- generate read pairs using chromatin capture method
+- map read pairs to pseudo-contigs
+- construct adjacency matrix based on mapping data
+- weight read pairs by distance to pseudo-contig edge
+- analyze adjacency matrix to determine path through pseudo-contigs
+- find single best neighbor pseudo-contig
+- perform additional experiments to test impact of shorter contigs
+- test alternate weighting and path-finding schemes
+- reference Burton et al. for ligating adjacent chromatin method
+- incorporate Burton et al. by reference
+- reference Kaplan et al. for DNA triangulation method
+- incorporate Kaplan et al. by reference
+- describe ligating adjacent chromatin method
+- cluster contigs to chromosome groups
+- order contigs within chromosome group
+- assign relative orientations to individual contigs
+- build graph for hierarchical clustering
+- merge contigs using hierarchical agglomerative clustering
+- exclude repetitive contigs and contigs with few restriction sites
+- assign contigs to groups based on link density
+- build graph for ordering contigs
+- calculate minimum spanning tree
+- lengthen trunk by adding adjacent contigs
+- convert trunk to full ordering
+- determine orientation of each contig
+- build weighted, directed, acyclic graph for orientation
+- calculate quality score for each contig orientation
+- describe DNA triangulation method
+- quantify CTR pattern by partitioning genome into bins
+- calculate interaction frequency for each contig
+- train naive Bayes classifier to predict chromosome
+- fit probabilistic single-parameter exponential decay model
+- estimate most likely position for each contig
+- quantify prediction error
+- combine DNA triangulation with long-insert libraries
+- improve predictability for each contig
+- reduce computational complexity of long-insert scaffolding
+- resolve ambiguous contig joining
+- reduce assembly errors
+- introduce methods for haplotype phasing
+- use read pairs to phase data from one of the 1000 genomes trios
+

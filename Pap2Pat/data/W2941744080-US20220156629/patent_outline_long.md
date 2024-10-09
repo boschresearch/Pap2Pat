@@ -1,0 +1,201 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to quantum information processing
+
+## BACKGROUND
+
+- motivate quantum computers
+- introduce qubits and superposition
+- describe quantum algorithms
+- discuss limitations of universal quantum computers
+- define qubits using Pauli operators
+- explain qubit measurements and errors
+- introduce decoherence and quantum error correction
+- describe surface codes and stabilizer codes
+- explain surface code architecture
+- introduce plaquettes and surface code quantum computing
+- describe two-dimensional surface code architecture
+- explain quantum logic gates in surface codes
+- discuss limitations of surface code architectures
+
+## SUMMARY
+
+- introduce device for quantum information processing
+- describe device components
+- explain confinement regions for qudits
+- detail first plurality of confinement regions
+- describe data regions and ancillary regions
+- explain second plurality of confinement regions
+- describe mediator regions
+- explain charge reservoirs
+- describe interactions between confinement regions
+- explain surface code quantum information processing
+- motivate mitigation of leakage errors
+- define leakage errors
+- explain general schemes to cope with leakage errors
+- describe devices' robustness against leakage errors
+- explain confinement regions and charge reservoirs
+- define confinement region
+- explain data qudit and ancillary qudit
+- describe mediator regions
+- explain mediated interaction
+- describe couplable confinement regions
+- explain qubit and qudit
+- describe data dot and ancilla dot
+- explain surface code architectures
+- motivate silicon quantum dots
+- describe challenges in scaling up devices
+- explain advantages of mediator dots
+- describe elongated mediator dots
+- explain dimensions of mediator dots
+- describe distance between confinement regions
+- explain spinful charge carriers
+- describe measurement device
+- explain controller for magnetic field
+- explain controller for oscillating magnetic field
+- introduce device with micromagnets
+- advantage of micromagnets
+- method for controlling charge stability
+- device components
+- method for controlling charge stability
+- tuning energy levels
+- maintaining charge stability
+- facilitating coherent spin interactions
+- facilitating interactions between confinement regions
+- measuring ancillary qudit
+- attaching confinement regions to charge reservoirs
+- detaching confinement regions from charge reservoirs
+- attaching and detaching confinement regions
+- controlling charge stability
+- causing quantum circuit to be implemented
+- facilitating interactions between confinement regions
+- attaching and detaching confinement regions
+- measuring quantum states
+- initialising device
+- attaching confinement regions to charge reservoirs
+- tuning energy levels
+- detaching confinement regions from charge reservoirs
+- applying magnetic field
+- apparatus/controller
+- apparatus components
+- controlling charge stability
+- facilitating coherent spin interactions
+- attaching confinement regions to charge reservoirs
+- causing quantum circuit to be implemented
+- facilitating coherent spin interactions
+- attaching and detaching confinement regions
+- computer-readable medium
+- computer program
+- modifications and embodiments
+- disclaimer
+- reference numerals
+
+## DETAILED DESCRIPTION
+
+- introduce quantum information processing device
+- describe device components: qubits, charge reservoirs
+- define data dots and ancilla dots
+- describe data dot properties: size, electron spin state
+- describe ancilla dot properties: size, electron spin state
+- introduce mediator dots for mediating interactions
+- describe mediator dot properties: size, electron occupation
+- illustrate two-dimensional array for surface code architecture
+- describe data dot and ancilla dot arrangement
+- introduce single-qubit logic gate operation via ESR
+- describe single-qubit addressability via stark shifts
+- discuss fidelity of single-qubit ESR gate
+- describe ancilla dot measurement apparatus
+- introduce double-dot ancilla advantages
+- describe reduced clutter in two-dimensional array
+- discuss improved error detection capabilities
+- describe immunity to Z/X errors
+- discuss global ESR gate application
+- describe parallel interactions between ancilla and data qubits
+- illustrate three-dot system for mediated exchange coupling
+- describe energy levels and electron jumps in three-dot system
+- derive exchange interaction strength equation
+- discuss tunability of exchange interaction strength
+- describe residue exchange interaction strength
+- discuss error probability due to residue exchange interaction
+- introduce mediated exchange control via on-site energy tuning
+- describe √SWAP gate implementation
+- discuss Hamiltonian for two-spin interaction
+- derive exchange interaction Hamiltonian
+- discuss Zeeman splitting gradient
+- introduce Control-Z gate implementation
+- discuss fidelity improvement via isotropically purified silicon substrate
+- describe single-qubit Z rotation and √SWAP gate implementation
+- introduce local charge reservoirs for system initialization
+- describe charge reservoir function for system restoration
+- introduce electric dipole spin resonance (EDSR) for single-qubit gates
+- discuss EDSR gate speed and fidelity
+- describe dipole-dipole like interaction for S gate implementation
+- derive S gate matrix representation
+- describe quantum circuit for Control-Z gate
+- discuss stray magnetic fields
+- explain electron shuttling
+- introduce virtual Z rotations
+- summarize device architecture
+- discuss leakage errors
+- explain charge ground state
+- describe leakage error correction
+- discuss relaxation processes
+- explain robustness against leakage errors
+- describe faulty exchange gates
+- introduce charge reservoir
+- compare architecture 200 to architecture 100
+- illustrate surface code architecture
+- describe device layers
+- explain multi-layered gate stack approach
+- illustrate CMOS structure
+- describe unit cell
+- explain ohmic implanted region
+- describe silicon oxide layer
+- illustrate conductive layers
+- describe mediator dots
+- explain barriers to charge reservoirs
+- illustrate data dots and ancilla dots
+- show side profiles of structure
+- describe variation with magnets
+- explain EDSR
+- illustrate flowchart for initializing device
+- describe initial positions of charge carriers
+- explain attaching mediator dots to charge reservoirs
+- describe tuning energy levels
+- explain detaching mediator dots from charge reservoirs
+- illustrate final positions of charge carriers
+- describe controller/computing apparatus
+- list components of controller/computing apparatus
+- describe processor functionality
+- describe memory functionality
+- describe user interfaces
+- describe communications module
+- describe port functionality
+- describe power source
+- describe processor configuration
+- describe magnetic field generator
+- describe oscillating magnetic field application
+- describe energy level adjustment
+- introduce method for controlling charge stability
+- describe tuning relative energy levels
+- describe facilitating interactions between confinement regions
+- describe attaching confinement regions to charge reservoirs
+- describe implementing surface code
+- describe checking X parities and/or Z parities
+- describe measuring stabiliser generators
+- describe decomposing Control-Z gates
+- describe initialising ancilla double dot
+- describe measuring ancilla dots
+- divide stabiliser check into disjoint partitions
+- describe performing partitions of stabiliser checks
+- describe resetting mediator dots
+- describe implementing quantum circuit with intermittent active resets
+- describe performing first set of quantum operations
+- describe performing active reset
+- describe performing second set of quantum operations
+- describe performing third set of quantum operations
+- describe performing fourth set of quantum operations
+- describe advantages of active reset operations
+

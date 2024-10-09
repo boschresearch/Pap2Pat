@@ -1,0 +1,127 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- define field of invention
+- describe limitations of current approaches
+- motivate need for new approach
+
+## SUMMARY OF THE INVENTION
+
+- introduce MIXP approach
+- describe network-based gene expression analysis
+- motivate iterative weighing of network nodes
+- describe MIXP method
+- outline network analysis algorithms
+- describe database creation method
+- outline gene-expression profile mapping
+- describe system for determining health situation propensity
+- provide disclaimer for drawings
+
+## DESCRIPTION OF EMBODIMENTS OF THE PRESENT INVENTION
+
+- introduce gene expression profiling
+- describe DNA Microarray technology
+- explain sequence-based techniques
+- introduce SuperSAGE
+- describe RNA-Seq
+- motivate expression profiling
+- explain gene regulation
+- describe factors affecting gene expression
+- introduce expression profiling experiments
+- describe measuring mRNA levels
+- explain contrasting healthy and diseased states
+- introduce gene signatures
+- describe GSEA
+- introduce pathway models
+- describe protein-protein interactions
+- explain gene regulatory networks
+- introduce metabolic networks
+- describe signaling networks
+- introduce MAPK/ERK pathway
+- describe algorithmic representations
+- explain computer operations
+- introduce data structures
+- describe machine operations
+- explain software modules
+- introduce apparatus for performing operations
+- describe object-oriented software
+- explain object-oriented operating system
+- introduce messages and events
+- describe inheritance in object-oriented systems
+- explain object-oriented programming
+- define key terms
+- explain windowing environment
+- describe network and server
+- define process and agent
+- explain module
+- describe desktop and API
+- introduce browser
+- explain SGML and HTML
+- describe XML file
+- define PDA and WWAN
+- explain synchronization
+- describe wireless communication
+- introduce WAP
+- define mobile software and mobile apps
+- explain PACS
+- describe computing environment
+- illustrate server and clients
+- describe computer system
+- explain bus and central processor
+- describe input/output controller
+- explain storage interface
+- describe network interface
+- introduce modem
+- explain signal transmission
+- describe microarray
+- explain gene expression analysis
+- describe heat maps
+- explain network structure comparison
+- describe iterative sampling and analysis
+- explain statistical treatment
+- describe microarray data sets
+- explain normalization methods
+- describe probe and mRNA relation
+- explain amplification bias
+- describe genomic EST information
+- introduce MIXP concept
+- explain feature transformation approach
+- describe gene discovery
+- describe MIXP approach
+- introduce network reordering algorithm
+- outline four steps of MIXP modeling
+- describe seed molecule selection
+- describe network reconstruction
+- describe network reordering
+- describe expression integrating
+- illustrate MIXP approach with Alzheimer's disease example
+- describe gene expression profiles
+- describe seed gene selection
+- describe network construction
+- describe node-weighted edge-scored PPI network
+- describe average differential expression values
+- describe network reordering using ACOR algorithm
+- describe ant colony optimization reordering
+- describe iteration process of ACOR algorithm
+- describe reordered adjacency matrix
+- describe fractal-like pattern in reordered adjacency matrix
+- describe relative position of proteins in reordered network
+- describe expression integrating using 1-D Gaussian function
+- describe integrated expression profile MIXP(t)
+- describe sample classification using SVM
+- describe input feature scaling
+- describe classification results for ACOR-based MIXP approach
+- compare classification results with other approaches
+- describe knowledge-supervised feature transformation
+- describe local and global network topology information
+- describe references used in development of present invention
+- describe HAPPI database
+- describe mining Alzheimer disease relevant proteins
+- describe ant algorithms and stigmergy
+- describe walking the interactome for prioritization of candidate disease genes
+- describe efficient algorithm for large-scale detection of protein families
+- describe whole-proteome prediction of protein function
+- describe exploiting indirect neighbours and topological weight
+- describe finding fractal patterns in molecular interaction networks
+

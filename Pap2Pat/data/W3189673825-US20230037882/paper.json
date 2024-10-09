@@ -1,0 +1,241 @@
+{
+    "id": "https://semopenalex.org/work/W3189673825",
+    "authors": [
+        "Junki Kim",
+        "Chao Fang",
+        "Kaihua Sun",
+        "Geert Vrijsen",
+        "Jungsang Kim",
+        "Tom Noel",
+        "Stephen Crain",
+        "C. P. Fitzgerald",
+        "I. V. Inlek",
+        "Robert Spivey",
+        "Zhubing Jia",
+        "Steffen Kross"
+    ],
+    "title": "High stability cryogenic system for quantum computing with compact  packaged ion traps",
+    "date": "2021-08-11",
+    "abstract": "Cryogenic environments benefit ion trapping experiments by offering lower motional heating rates, collision energies, and an ultra-high vacuum (UHV) environment for maintaining long ion chains for extended periods of time. Mechanical vibrations caused by compressors in closed-cycle cryostats can introduce relative motion between the ion and the wavefronts of lasers used to manipulate the ions. Here, we present a novel ion trapping system where a commercial low-vibration closed-cycle cryostat is used in a custom monolithic enclosure. We measure mechanical vibrations of the sample stage using an optical interferometer, and observe a root-mean-square relative displacement of 2.4 nm and a peak-to-peak displacement of 17 nm between free-space beams and the trapping location. We packaged a surface ion trap in a cryo-package assembly that enables easy handling, while creating a UHV environment for the ions. The trap cryo-package contains activated carbon getter material for enhanced sorption pumping near the trapping location, and source material for ablation loading. Using $^{171}$Yb$^{+}$ as our ion we estimate the operating pressure of the trap as a function of package temperature using phase transitions of zig-zag ion chains as a probe. We measured the radial mode heating rate of a single ion to be 13 quanta/s on average. The Ramsey coherence measurements yield 330 ms coherence time for counter-propagating Raman carrier transitions using a 355 nm mode-locked pulse laser, demonstrating the high optical stability.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "Ion traps are an experimentally verified platform for the storage and manipulation of high-fidelity quantum states [1]- [3]. The atomic ions provide fundamentally stable qubits when adequate hyperfine levels are used [4]- [6]. High-fidelity state preparation and detection [7]- [9], as well as logic gates driven by both lasers [5], [10]- [14] and microwave fields, are readily available [1]. The performance of trapped ion qubits arises from the fact that these atoms are well isolated from the environment under ultrahigh vacuum (UHV) conditions, and the control signals can be delivered to the qubits in the form of electromagnetic fields. These operating conditions require typical trapped ion experiments to have a UHV chamber and a complex set of laser systems to operate.",
+                "Traditionally, the experimental setups for atomic physics consist of a complex assembly of tabletop optical components, typically assembled individually by hand. While providing ultimate flexibility in the layout of the experiments, such an approach is subject to drift with temperature changes and often requires frequent adjustments to keep the optical alignment optimized. Transforming an ion trapping experiment into a reliable quantum computer is hampered by such stability and reliability concerns. The setup must be broken down into functional blocks, each block being an integrated module, to dramatically improve the system stability. In this article, we describe a novel system design approach to creating the UHV environment for the trapped ions, and the stable optical system to deliver the necessary laser light to manipulate the ion qubits.",
+                "The centerpiece of our approach is the design, construction, and testing of a compact UHV assembly for traps operating in cryogenic temperatures [15]- [19]. The UHV assembly consists of a copper lid sealed to a 100-pin ceramic pin grid array (CPGA) package containing the trap. We refer to this assembly as the \"trap cryopackage.\" The trap cryopackage is cooled to cryogenic temperatures to achieve the pressure levels needed for stable ion trap operation [20], [21]. The trap cryopackage is designed to minimize the volume of the UHV environment to be maintained. It only contains the components that are absolutely necessary for trapping: the ion trap, the atomic source, and activated carbon getter to achieve UHV at cryogenic temperatures.",
+                "Our setup also features a compact optical layout, where each optical function is designed onto a customized breadboard referred to as an \"optical block\" where the optical elements are precision mounted to a predesigned reference point. The breadboard can be temperature stabilized to eliminate optical misalignment due to thermal drifts. This design philosophy can be extended to future atomic physics experiments and ion trap quantum computers."
+            ],
+            "subsections": [
+                {
+                    "title": "II. EXPERIMENTAL SETUP",
+                    "paragraphs": [
+                        "Our overall system consists of four main parts [see Fig. 1(a)]: a continuous wave (CW) laser setup [shown in more detail in Fig. 1(b)], a laser frequency stabilization system, a 355-nm Raman laser modulation setup, and the main experimental housing. The main experimental housing includes the closedcycle cryostat system and several optical blocks for tasks, such as fluorescence collection for ion imaging and state detection, CW beam delivery for noncoherent qubit operations (photoionization, Doppler cooling, state initialization, and detection), Raman beam delivery for quantum gates, and ablation loading for the ion source [22]. Laser light between these various modules is routed using optical fibers. This allows for each optical block to be tested independently before they are incorporated into the complete system."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. CRYOSTAT",
+                            "paragraphs": [
+                                "We utilize a closed-cycle cryostat designed for mechanical stability for our operation (Montana Instruments Cryostation s200). This cryostat features low levels of vibration despite the mechanical motion of the Gifford-McMahon cryocooler. Another unique design feature of this cryostat compared with the traditional designs is that the sample space is anchored on the tabletop surface rather than hanging from the top [23]- [25], which makes swapping of the trap cryopackages and upgrade of the cryostat sample chamber straightforward. It has the added advantage that optical alignment can be tested before the cryostat is closed up for cooldown.",
+                                "A diagram of the cryostat and its internals is shown in Fig. 2. The internal sample chamber includes a large flat 90-K stage with a grid of tapped holes for mounting various components. In the center, there is an exposed 5-K base plate, upon which we mount a gold-coated copper sample mount that houses and cools our trap cryopackage. A radiation shield with optical viewports through all necessary axes is thermally anchored to the 90-K stage. The vacuum housing has two o-ring seals, one making contact with the base of the cryostat, and the other on the top side sealing the lid. Several temperature sensors are installed to monitor the temperature of the system, including the 5-K base plate and the sample mount near the trap."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "B. LASER SYSTEMS",
+                                    "paragraphs": [
+                                        "The traditional optomechanical apparatus use posts and clamps to secure optical components, such as mirrors and lenses, to an optical table or breadboard. This strategy offers flexibility in constructing an optical setup but it often results in bulky assemblies. The alignment of these traditional setups drifts in response to the changes in the laboratory environment, such as temperature, turbulent air flow, and acoustic noise.",
+                                        "We address this challenge by constructing compact optomechanical modules. Each module serves a self-contained optical function and can be connected to the others via optical fiber. Each module consists of a water-cooled base plate with tapped holes and dowel pins upon which optical blocks can be mounted and located. The optical blocks have tapped holes and dowel pins for aligning the optical components."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "1) CW LASER SYSTEM",
+                            "paragraphs": [
+                                "Fig. 1(b) shows the CW lasers needed for trapping, cooling, initializing, and measuring the 171 Yb + hyperfine qubits [26] used in our experiments. The 399-nm laser (AOSense, Inc., Sunnyvale, CA, USA) is used for resonant photoexcitation of the neutral Yb atoms for loading the trap. For efficient, isotope-selective ablation loading, a second photoionization step is required to excite the electron to the continuum. Here, we use the intense beam from the 355-nm Raman laser to achieve this goal. The 370-nm laser is resonant with the 2 S 1/2 to 2 P 1/2 transition in Yb + , and is used for Doppler cooling, optical pumping for qubit initialization, and exciting resonant fluorescence for qubit state detection. The Doppler cooling requires a modulated sideband at 14.7 GHz to pump out the dark state in the ground state manifold, and optical pumping requires a 2.1-GHz frequency shift. These are provided by electro-optic modulators (EOMs) in the beam path. Acousto-optic modulators (AOMs) are used to provide shutter functionality and fine tuning of the cooling and detection frequency. These AOMs can also be used to intensity stabilize our downstream free-space beams, which are incident upon the ion. The beam is divided up and fiber-coupled to be sent to either the experiment, the frequency stabilization setup, or to a wavemeter for frequency monitoring. The 935-nm laser is needed to repump the atomic population from the metastable 2 D 3/2 states back to the 2 S 1/2 -2 P 1/2 manifold. The optical elements are positioned precisely on the base plate using dowel pins according to a layout generated using computer-aided design tools. The base plate is temperature-stabilized with a water chiller, and enclosed to minimize air turbulence along the optical beam paths. This optical setup is stable enough that the single-mode fiber coupling alignments have not required adjustment for over a year of system operation."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "2) FREQUENCY STABILIZATION SYSTEM",
+                            "paragraphs": [
+                                "The frequency of the CW lasers driving atomic transitions (370-and 935-nm lasers) must be stabilized to the megahertz level or below. This is achieved by taking some of the laser outputs and locking them to an optical cavity using the Pound-Drever-Hall technique [27]. The length of the optical cavity itself is stabilized to an absolute frequency reference, which is a 780-nm laser stabilized against Rb vapor using Doppler-free spectroscopy techniques. The setup is designed and constructed in a similar approach to the CW laser modulation plate, as shown in Fig. 1(b)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "3) RAMAN LASER MODULATION SETUP",
+                            "paragraphs": [
+                                "The coherent operations on the qubits, such as a single-and two-qubit gates, are driven by Raman transition using a fardetuned laser at 355 nm. We use a mode-locked, frequencytripled Nd:YAG laser for this purpose (Coherent Paladin Compact). The output of the laser is split and modulated using multiple AOMs, driven by programmable RF sources to implement the logic gates. In our system, the laser is split into a global beam used to illuminate the entire ion chain from one side, and a pair of individual beams that will be tightly focused onto two selected ions in the chain from the other side, in a counter propagating geometry. The global beam and the pair of individual beams go through their respective modulation paths through the AOMs and are coupled into a single-mode photonic crystal fiber [28]. This modulation setup is called the \"upstream\" Raman optics. After the fibers, the global beam is shaped into an elongated elliptical beam in the \"downstream\" optics, and aligned to the ion chain. The individual beams are passed through an addressing system utilizing tilting mirrors fabricated using micro-electromechanical systems (MEMS) technology [29]- [31], where the beam steering functionality provides the ability to address individual ions in the chain with minimal crosstalk [10], [32]. The individual beams are also prepared in an elliptical shape to clear the limited numerical aperture available in the surface ion trap chip."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "C. MAIN EXPERIMENTAL ENCLOSURE",
+                                    "paragraphs": [
+                                        "The quality of the quantum logic gates imposed on the ion qubits will depend strongly on the stability of the laser beams seen by the qubits that drive the gates. Given that all laser beams are delivered to the ions in the cryostat through optical fibers, the optomechanical structure to accommodate beam path between the fiber and the ion requires care in reducing vibration and drift. The structure is placed in the main experimental enclosure and consists of a monolithic main frame onto which the various \"downstream\" optical blocks are assembled. All optical blocks and base plates are machined from MIC-6 (Tool and Jig) cast aluminum plates. This material is chosen for its low stress and good flatness specifications. The granular structure of cast aluminum allows for high speed machining while minimizing distortion, which can arise when working with rolled aluminum."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "1) OPTOMECHANICAL SETUP",
+                            "paragraphs": [
+                                "The entire Montana Instruments cryostat sample chamber and cryocooler module rest atop a 3.5-cm-thick base plate, which is 0.89-m long on a side. This makes up the foundation of the experimental setup, serving as a mechanical substrate for the ion trap chamber and all downstream optics such that vibrations between them are common mode. A series of evenly located 1.5-in-thick steel posts are used to suspend a second 1-in-thick optical breadboard at a height for the ion addressing optical block setups to operate. This custom optical breadboard has a grid of 1/4-20 tapped holes with a 2-in pitch, and each tapped hole has two accompanying 2-mm precision holes for dowel pins. In the space between the base plate and the optical breadboard, we have room for routing various cables and vacuum lines to and from the cryostat."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "2) OPTICAL BLOCKS",
+                            "paragraphs": [
+                                "Each unit of optical functionality is implemented as an optical block, which takes the form of a block of aluminum plate machined on top to locate and fasten optical components in space, similar to the unit shown in Fig. 1(b). Each optical block is installed onto the optical breadboard using 2-mm dowel pins for precision positioning. By fabricating the blocks from MIC-6 aluminum, good flat-to-flat interfaces between the breadboard and the optical blocks are ensured. Optical components themselves are directly mounted on the aluminum modules with dowel pins for positioning. Some optical modules are elevated with steel posts, where a different height in the enclosure is needed. Custom-designed corner pieces are used to join the large base plate with the optical breadboard, and to attach side and top panels for the housing. Each optical block as well as the entire optomechanical structure can be enclosed with a metallic cover to eliminate air turbulence and reduce acoustic vibration.",
+                                "This modular design strategy combines the stability of monolithic machined pieces with the experimental flexibility needed to redesign and improve optical functions. Each optical block can be replaced and assembled into the optical breadboard with precision alignment with respect to other blocks. Fig. 3 shows an image of the optical blocks placed on the optical breadboard, color coded to highlight their optical functions. The optical blocks include the following.",
+                                "1) An imaging plate (red) for state fluorescence detection designed to image photons collected from each ion onto a multimode fiber in a fiber array. 2) A CW beam delivery plate (green) that copropagates all trapping lasers and brings them into the ion trap at a downward 45 \u2022 angle elevated to access the window on the top cover of the cryostat. steering mirrors and a periscope that brings this beam up to the second module, which delivers the ablation beam to the atomic source in the trap cryopackage."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "3) COMPACT TRAP CRYOPACKAGE",
+                            "paragraphs": [
+                                "The vacuum inside the cryostat is maintained with o-ring seals, as opposed to copper gaskets, which are typically used in UHV chambers. This sealing mechanism limits the pressure to the low 10 -8 -torr range. To achieve UHV vacuum levels in the trapping region, we create a secondary chamber assembly called the \"trap cryopackage\" to hold the trap, which supports a UHV environment within the cryostat via differential pumping. The design of the trap cryopackage is shown in detail in Fig. 4. The assembly consists of a lid sealed to a CPGA package, on which the ion trap is mounted. The lid is machined out of copper, the side windows are made out of N-BK7 glass (5-mm diameter with 2-mm thickness), and the imaging window is made out of sapphire (15-mm diameter with 2-mm thickness).",
+                                "All windows are AR coated and attached to the lid with cryogenic-compatible epoxy (Epotek T7110).",
+                                "Sapphire was chosen due to the coefficient of thermal expansion (CTE) being well matched with metals, such as copper and titanium. An additional benefit of sapphire is the low permeation of hydrogen and helium. The downside is a birefringence-induced astigmatism that leads to polarizationdependent image focus. To avoid this issue, glass material, such as fused silica, should be used, but care must be taken to manage the CTE mismatch during the cooldown cycle. The side windows were chosen as N-BK7 to avoid birefringence, as the beams can tolerate slightly higher absorption losses.",
+                                "The top imaging viewport features a machined trench, which serves as a meandering narrow pumping port for evacuating the volume inside the cryopackage at room temperature before the system cools down. The 100-pin alumina CPGA package is modified with a \"ringframe\" brazed to it, which is 1-mm wide and protrudes 2.5 mm from the CPGA surface. This ringframe mates with a matching groove in the lid, designed for a tight fit with indium wires in between. The ringframe serves both as an alignment mechanism for the lid and as mechanical reinforcement for their mating.",
+                                "The indium wires increase the thermal conduction between the lid and the CPGA package, and serve as a breakable mechanical bond between the two pieces. A true hermetic seal is not required for our differentially pumped openlid design, and the adhesion provided by the indium is sufficient to keep the lid and the CPGA together during handling and installation.",
+                                "The top of the lid features eight tapped holes for affixing the lid firmly to the cold finger sample mount [see Fig. 4(a)]. This top surface is the main thermal and mechanical anchor for the assembly on the sample mount. A few pieces of activated carbon getter material, encapsulated by a fine copper mesh, is inserted into a cavity of the lid interior. Upon cooldown, the lid is cooled most efficiently, and the cryopumping by the getter achieves a UHV environment within the sealed enclosure. Some important internal features of the lid can be seen in Fig. 4(b). The first is an oblong conical ground shield feature, which is machined beneath the imaging window to allow the full numerical aperture of the imaging optics to be available while maximally shielding the potential impact of charge buildup at the exposed dielectric window from influencing the ions. There is also an internal holder to house a ytterbium ablation target. This ablation holder has optical access from a window directly across from the target, such that the path of atomic flux is orthogonal to the CW laser beam path for photoionization lasers to enable isotope-selective loading [22].",
+                                "The trap (Sandia HOA 2.0 [33]) is mounted on an interposer, placed on a ceramic spacer to bring the trap surface in line with the windows of the lid. The interposer also contains trench capacitors, to filter the RF signal on the dc electrodes. The HOA 2.0 trap we used in the experiment had an additional layer of gold (0.5 \u03bcm) deposited on the surface of the electrodes. The trap cryopackage is assembled in a clean room to minimize dust contamination and is installed into the printed circuit board (PCB) by pressing it into the 100-pin socket. This PCB and trap cryopackage assembly are installed into the 5-K sample mount in the cryostat chamber."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Engineering uantum",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "4) CRYOSTAT CHAMBER INTERIOR DESIGN",
+                    "paragraphs": [
+                        "Fig. 5 shows a schematic diagram of the interior elements included in the sample chamber of the cryostat. The trap cryopackage assembly and the PCB are installed into the 5-K sample mount with a small amount of thermal grease placed at the interface. The copper cryopackage lid makes the mechanical and thermal contact with the sample mount, and additional screws are used to support the PCB for strain relief. The system is designed to maintain the copper package lid as the coldest part in the trap cryopackage, ensuring that the temperature of the carbon getter is as low as possible.",
+                        "The PCB has a pair of thermally lagged dc cables and the RF signal pin. The dc cables are 50-pin flexi-PCB ribbon cables (Omnetics, Minneapolis, MN, USA), where the wires are made of phosphor bronze and the ribbon made of Kapton.",
+                        "Inside the sample chamber, we install three custom experimental elements on the 90-K stage. First is the RF helical resonator, with a coaxial cable input and a simple thick copper wire output. It is mounted close to the trap to avoid having a long cable between the resonator and the trap.",
+                        "Also mounted on the 90-K stage are two lenses specially designed for operation at cryogenic temperatures. The first is a 0.6 NA ion imaging lens (Photon Gear, ON, NY, USA) with a 150-\u03bcm field of view. This is mounted inside the cryostat to achieve a short working distance to the ions. In order to align this lens, we designed a specialized alignment stage. It has two micrometer-adjusted X and Y positioners, which are adjusted at room temperature. The stage also includes a custom kinematic-mount, with three cryogenic precision actuators (Attocube, Inc., Haar, Germany) that enables the adjustment of the tip, tilt, and z-translation of the lens, which are critical knobs to minimize imaging aberrations. The imaging lens is designed to be an infinite conjugate lens that allows us to use any off-the-shelf lens outside the cryostat to form an image with desired magnification. The infinite conjugate design also reduces aberrations that would arise due to traveling through the 90 K and room temperature viewports.",
+                        "The second lens is a Raman projection lens (Photon Gear) for the final tight focusing of individual addressing beams to the ion chain. We can achieve a 1.5-\u03bcm focused beam waist at the ion with this lens. This lens is placed manually at room temperature, with an in situ translation stage for the focus control."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "5) RF RESONATOR",
+                    "paragraphs": [
+                        "The helical resonator is also mounted on the 90-K stage within the cryostat, and has a compact design with an overall length of 6.9 cm, a coaxial cable input, and thick copper wire output. The copper wire has a grounded shield made of copper piping bridging most of the length between the helical resonator and the trap PCB RF pin. Fig. 6 shows a measurement of the behavior of relevant RF resonance parameters during the cooldown process from room temperature to 100 K. It is plotted in inverse temperature to guide the eye in the direction of time during the cooling process. As the system cools, the Q-factor increases, the reflected power decreases, and the center frequency increases. The increase in Q is expected due to reduced resistive losses in the resonator. The reflected power goes down because the impedance matching condition is intentionally detuned to compensate for the changes during the cooling process. For this particular trap, technical error in the measurement apparatus resulted in a loss data between 100 K and the base temperature. After the cooling process is complete and the system settled at its base temperature, we measured a Q-factor of 120 manually."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "D. SYSTEM CHARACTERIZATION",
+                            "paragraphs": [
+                                "The optomechanical system is designed to achieve mechanical and thermal stability sufficient to implement high-fidelity quantum logic gates. This requires that the optical wavefronts of the intersecting Raman beams be stable at the ion location over the duration of entangling gates that utilize the motional degrees of freedom of the ions in the chain [34]- [36]. This level of stability is challenging to achieve using closed-cycle cryostat's due to their inherent mechanical vibrations. In this section, we present the characterization of our system stability. "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Engineering uantum",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "1) THERMAL PERFORMANCE",
+                    "paragraphs": [
+                        "The cryostat used in this article incorporates a Sumitomo RDK-101D cryocooler. Sample space is rigidly attached to the base, and a unique cold finger design provides the thermal link between the cryocooler and the sample space while isolating the transfer of vibrations (details are Montana Instruments proprietary information).",
+                        "In order to operate the trap cryopackage below 10 K to benefit from cryopumping by the carbon getter, the heat load to the 5-K platform should be kept below 1 W. The main heat load in our setup comes from the dc and RF wires, and the applied RF signal for trapping. Since the wires originate from room temperature, special care should be taken to thermally lag these wires at the 90-K stage to minimize heat transfer to the 5-K sample mount. A summary of operating temperatures for different configurations is given in Table I. The measurement shows that the thermal dissipation from the RF signal is a significant contributor to the overall heat load."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "TABLE I Summary of the Temperature Readings on the 5-K Platform and in the Sample Mount for Different Experimental Configurations",
+                            "paragraphs": [
+                                "Note: After measuring the base temperature without any heat load to the setup, we investigate the effects of extra heat loads in subsequent measurements. We require 96 dc wires for operating with surface traps in our setup. To minimize heat transfer to 5-K stage, these wires are made from low thermal conductance metal. Additionally, we need to make an RF connection between helical resonator and the trap PCB, which provides a heat transfer path from 90-to 5-K stage. These two connections increase our operating temperature by about 1 K. In order to trap Yb + ions and work at 2-3 MHz radial motional frequencies, we need to apply RF with 200-300 V amplitude."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "2) VIBRATIONAL PERFORMANCE",
+                            "paragraphs": [
+                                "Mechanical vibrations between the ions in the trap and the Raman lasers cause infidelity in quantum logic gate operations. Conventional closed-cycle cryostats feature large mechanical motion of the cold finger sample mounts relative to the laboratory frame due to the expander motion of the cold head [25]. We designed an optical interferometer apparatus for characterizing the relative vibrations of our optical modules mounted on the breadboard with respect to the cold sample mount. We constructed an optical module that includes both arms of a Michelson interferometer (similar to Dubielzig et al. [37]), where the second arm reflects off of a mirror mounted in place of the ion trap on the cold finger sample mount [see Fig. 7(a) inset]. We measured the vibrations in the horizontal plane with this apparatus, the direction critical in maintaining optical phase of the Raman beams seen by the ions. We used 370-nm light to measure the interference signal on a photodiode and inverted it into a motional displacement in space. We observe that the displacement due to mechanical vibration is approximately 17-nm peak-to-peak with an rms deviation of 2.4 nm. This displacement is small compared to the optical wavelength of the Raman beam (355 nm), and should provide stable beams at the ion location to drive high-fidelity gates. The in-plane displacement and its power spectral density are shown in Fig. 7(a) and (b), respectively. We see that the dominant peak is at 1.42 Hz corresponding to the mechanical pumping frequency of the cryostat, and some peaks at 120 and 130 Hz due to fans nearby."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "III. EXPERIMENTS WITH TRAPPED IONS",
+                    "paragraphs": [
+                        "We use 171 Yb + ions as our qubit [26]. Our system is designed to outperform traditional room-temperature trapped ion experimental setups in providing stable operational environment to achieve higher fidelity quantum computing operations. We characterized the vacuum quality, motional heating rate, and Raman carrier coherence times of ions trapped inside the system, all critical performance metrics needed for high-fidelity operations. "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Engineering uantum",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "A. VACUUM CHARACTERIZATION WITH ZIG-ZAG CHAINS",
+                    "paragraphs": [
+                        "The core trap cryopackage used in our system is too compact to permit the integration of an ion gauge or cold-cathode gauge to monitor local pressure. This motivates the development of methods to use the behavior of ions to calculate pressure. One method is to utilize a double well quartic potential of known well-height and then capturing the hopping rate of the ion [38]. A double well potential measurement was problematic in our system due the low potential barriers necessary to probe the low energy collisions at cryogenic temperatures. The noise on the digital-to-analog converters was comparable to this well height and it would create a drifting well balance. In order to estimate the vacuum level, we employed a different method utilizing the zig-zag shaped chain of ions [23].",
+                        "A long linear chain of ions can be trapped in a surface trap and the axial confinement potential can be ramped up until a threshold is exceeded. Upon crossing this threshold, the chain buckles and collapses into a zig-zag shape (zig-zag phase transition) [39]. Due to the slight asymmetry in the two radial modes of the trap, there are two energetically degenerate, stable states that can arise in a zig-zag shape, whose ion positions are the mirror images of each other about the x-axis (trap axis). We capture images of seven ion zig-zag chains and count the rate \u03b3 zz at which they flip between the two stable configurations. \u03b3 zz is related to the molecular collision rate \u03b3 by \u03b3 zz = p flip \u03b3 , where p flip is the probability of a zig-zag flip event given a collision with the background molecules.",
+                        "If p flip can be estimated as a function of temperature, then this information can be used to translate the observed flipping events between the two zig-zag configurations into molecular collision events, and from these collision events, a Langevin model can be used to estimate the pressure inside the cryopackage assembly. The energy barrier between the two zig-zag configurations determines the behavior of p flip (T ). The small energy barrier between the two degenerate modes in the potential can be estimated from geometric considerations.",
+                        "We estimate the energy barrier between the two zig-zag configurations by considering the energy it would take to rotate a zig-zag chain by 180 \u2022 about the x-axis between the two mode shapes, as this represents a path that the chain could take from one state to the other. We estimated this energy barrier by first calculating the zig-zag structure for seven ions in a 3-D harmonic potential. The strength of the confining potential in each axis is measured via RF tickle spectroscopy [8] of the common modes of motion of a zig-zag chain under the same trapping potential used for the experiments. A simplex optimization algorithm is then used to relax ions into a zigzag shape in the potential. Once the lowest energy state is found, we rotate the chain about the x-axis by 90 \u2022 , which will be its highest energy rotational position about this axis. We use our potential energy calculation tool to then calculate the energy difference between the 0 \u2022 and 90 \u2022 position to estimate the \"barrier height\" between the two modes. In the type of zig-zag potential we used for this experiment, we calculated this energy difference to be approximately 0.02 meV.",
+                        "The average kinetic energy imparted on a trapped Yb + ion due to collision with background H 2 molecules is estimated in [38, eq. (5)]. For every collision with a background H 2 molecule in the cryogenic environment, the ion receives 0.023 times the average kinetic energy of the molecule, as most collisions are glancing and do not transfer all of their energy to the ion chain. This is factored into the model as a larger effective threshold kinetic energy for the zig-zag transition. Using this scaled effective threshold energy of E th,eff = 0.876 meV, we estimate the population of background molecules that could lead to the transition between the two zig-zag configurations as a function of temperature. Here, the Maxwell-Boltzmann speed distribution is used to calculate the fraction of gas molecules with kinetic energy large enough to cause a zig-zag transition. Ultimately, this analysis leads to a scaling behavior given by"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Engineering uantum",
+            "paragraphs": [
+                "where E k is the kinetic energy of the background molecule. Using this probability of transition between the zig-zag configurations given a collision, we can invert the zig-zag transition data to estimate the collision rate \u03b3 as a function of temperature. Finally, we substitute \u03b3 = \u03b3 zz /p flip and use a classical Langevin model to calculate the pressure P as",
+                "where \u03b1 H 2 is the static polarizability of H 2 molecules [40], e is the electron charge, \u03bc is the reduced mass of the H 2 and 171 Yb + system, and 0 is the permittivity of free space. Fig. 8 shows the results of this analysis. On the left-hand side, we show the transition rate between the two zig-zag configurations observed (events per minute). On the right-hand side, we plot this transition rate rescaled by (2) to estimate the pressure inside the UHV assembly. We see that the pressure scales with temperature exponentially. At cryo-UHV conditions, the error of pressure estimation is large because the chain transition rate is extremely low (a few events over several hours). Elevating the system temperature and observing the increasing prevalence of zig-zag flipping events allow one to trace out an estimated pressure curve. This pressure curve is most useful to characterize the onset of the regime in which transitions between the zig-zag configurations are prevalent. This exponential scaling with temperature arises because of the exponentially activated desorption of H 2 molecules from the activated carbon getter. Our error analysis assumes that the worst-case miscounting of flipping events is modeled by the shot noise error \u00b1 \u221a \u03b3 zz of the observed flipping rate. "
+            ],
+            "subsections": [
+                {
+                    "title": "B. MOTIONAL HEATING RATE",
+                    "paragraphs": [
+                        "The motional heating rate of ions in the trap is of paramount importance for two-qubit gate fidelity as most entangling gates utilize the motional degrees of freedom to mediate the qubit interaction. The gate fidelity and circuit depth attainable in our system will also be affected by the heating rate [14]. The measurement scheme is similar to that used in the articles presented in [41] and [42]. In surface electrode ion traps, one can generate the voltage solutions with arbitrary rotation of the trap principal axes. We measure the heating rates of the radial modes with a 45 \u2022 rotation of the trap axes with respect to the trap surface normal so that the Raman beams can interact with both radial modes. The ion motion is first cooled by Doppler cooling so that average motional excitation is \u22645 quanta, followed by 30 rounds of resolved sideband cooling [43] to reach an average motional excitation of \u223c0.09 quanta in the radial modes.",
+                        "After waiting for a duration, we drive both the red and blue sideband transitions on resonance. We perform a fit to the experimental data with a simulated Hamiltonian of the blue sideband rotations with heating decoherence effects.",
+                        "We include an exponential decay envelope to simulate the motional dephasing effects. We use the fitted value of n of these sideband rotations to determine the average motional excitation (or temperature) at any given wait time.",
+                        "We repeat this experiment for a variety of wait times, during which the surface noise influences the ion and causes heating. We scan the wait time to trace out the average motional excitation versus wait time and fit the results to establish a heating rate. The error of this heating rate is the standard deviation of the parameter estimate from the linear fit (see Fig. 9). We measured the heating rate at 15  The mean heating rate of these measurements was 13 quanta/s with a standard deviation of 5.1 quanta/s. A representative plot at operational trap frequencies for two-qubit gates on the radial modes is presented in Fig. 9, where we measure a heating rate of 14\u00b11.1 quanta/s. Improvements in the Raman intensity stability could reduce the measurement noise enough to detect a scaling trend with confidence; however, for these data, the trend seems flat within the range of investigation.",
+                        "In order to compare this to similar cryogenic systems, we need to normalize for the ion species and the trap frequency. Similar to Hite et al. [44], we can calculate the electric field noise spectral density S E (\u03c9) as",
+                        "where m is the ion mass and q is the elementary charge. When we multiply this by the motional frequency to obtain \u03c9S E (\u03c9), we can compare our results to other low temperature surface traps at different trap-ion distances [44]. Our noise spectral density \u03c9S E (\u03c9) = 3.2\u00d710 -7 V 2 / m 2 , which lies an order of magnitude below the average line of preexisting experiments with 70-\u03bcm ion-trap distance at cryogenic temperatures. Based on careful considerations of the error contribution to entangling gates, we anticipate that this level of heating rate would not limit the gate fidelity up to 99.99% [14]."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "C. COHERENT QUBIT OPERATIONS",
+                            "paragraphs": [
+                                "The loss of optical coherence in the Raman beams within the duration of the entangling gates limit the fidelity of the gate [14]. The optical coherence of counter-propagating Raman beams was characterized with our 355-nm laser systems. We performed Ramsey spectroscopy on the carrier Raman rotations to measure the interferometric stability of the Raman beams at the ion location. We first scan the two red sideband motional modes in frequency space to find the resonance condition, then perform 25 rounds of sideband cooling at these radial frequencies. This is followed by a \u03c0 2 carrier rotation to put the qubit in a coherent superposition state, then at a variable wait time later, the second \u03c0 2 rotation is performed with a shifted phase. This phase is scanned over 11 different values to trace out the parity curves to measure the loss of coherence by extracting the contrast in the Ramsey interference fringes. If the optical phase of the Raman beams seen by the ion between the two \u03c0 2 pulses fluctuate during the wait time, the contrast of the parity curve will degrade.",
+                                "This experiment was repeated and the wait time was scanned out to 1 s. The results of this experiment (without using spin echo) are shown in Fig. 10. Fitting this fringe contrast to an exponential decay, we estimate the 1  e decay time to obtain the optical coherence time of 330 ms. We do not expect the optical coherence of our system to be a limiting factor for the entangling gate fidelity [14]. "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "IV. CONCLUSION",
+                    "paragraphs": [
+                        "We have shown the design of an ion trap system based on a compact cryogenic package. An HOA 2.0 trap with a 0.5\u03bcm-thick gold recoating was installed in this system, and supports sufficiently high RF amplitude to achieve radial mode frequencies of 2-3 MHz. The system includes a high NA lens and helical RF resonator inside the cryostat on the 90-K plate. This system is tightly integrated into a surrounding optomechanical structure in which all free-space optical blocks are attached and precision aligned.",
+                        "Differential pumping with cryopumping creates state-ofthe-art UHV levels necessary to hold long ion chains for many hours at a time. We used zig-zag chains of ions to map out an estimated pressure curve as a function of sample temperature.",
+                        "The motional heating rate in the HOA 2.0 trap was measured the mean heating rate over a range of motional frequencies was found to be 13 quanta/s, when normalized for mode frequency and ion species, gives the electric field noise spectral density \u03c9S E (\u03c9) = 3.2\u00d710 -7 V 2 /m 2 . This value is significantly better than other examples [44], and should not pose any limitation in achieving high-fidelity entangling gates.",
+                        "We have demonstrated a 330-ms optical coherence time for counter-propagating carrier rotations, which demonstrates the optical stability of the setup despite operating in a closed-cycle cryostat."
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

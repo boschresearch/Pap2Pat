@@ -1,0 +1,196 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce cancer cells
+- describe de novo lipogenesis
+- discuss lipogenesis in cancer cells
+- motivate statins for cancer treatment
+- discuss controversy of statins
+- introduce SREBP1 and SREBP2
+- describe mTOR signaling
+- highlight need for understanding lipogenesis
+
+## SUMMARY
+
+- introduce DAXX
+- describe DAXX's role in lipogenesis
+- discuss DAXX's interaction with SREBP
+- describe DAXX's effect on MYC expression
+- discuss in vivo experiments
+- introduce SIM2 peptide
+- describe SIM2's effect on lipogenesis
+- discuss therapeutic potential of SIM2
+- describe DAXX's SUMO-interacting motifs
+- introduce polypeptide composition
+- describe polypeptide's effect on cancer
+- discuss various cancers
+- introduce combination therapy
+- describe composition and formulation
+
+## DETAILED DESCRIPTION
+
+- disclose DAXX as key regulator of cancer lipogenesis pathway
+- describe DAXX interaction with SREBPs and recruitment to SREBP-binding chromatin sites
+- explain DAXX depletion and overexpression effects on lipogenesis and tumor growth
+- describe DAXX expression induction in absence of exogenous lipid supplies
+- explain DAXX activation of MYC expression through SREBP2
+- describe SUMO-binding defective DAXX mutant effects on lipogenesis and tumor growth
+- introduce DAXX SIM-derived peptide (SIM2) and its effects on gene expression, de novo lipogenesis, and tumor growth
+- define DAXX SIM/SUMO interface as therapeutic target
+- define term "subject"
+- define term "therapeutically effective"
+- define term "pharmaceutically acceptable"
+- define term "carrier"
+- define term "treatment"
+- define term "polypeptide"
+- introduce SIM2 polypeptide composition
+- describe SIM2 polypeptide characteristics
+- list possible amino acid sequences of SIM2 polypeptide
+- introduce peptidomimetic concept
+- describe methods of making peptidomimetics
+- introduce internalization sequence or protein transduction domain concept
+- describe cell penetrating peptides (e.g., TAT, antennapedia, transportan)
+- describe polyarginine-based internalization sequences
+- introduce chimeric molecule concept with targeting molecule or moiety
+- introduce pharmaceutical compositions
+- define pharmaceutical carriers
+- formulate polypeptides into pharmaceutical preparations
+- combine polypeptides with other active ingredients
+- formulate compositions for single dosage administration
+- formulate peptides in peptide-delivery nanoparticles
+- chemically modify peptides for oral delivery
+- attach moieties to peptides for stability and uptake
+- use enteric coatings for gastric resistance
+- use nonenteric coatings for tablets
+- formulate capsules and pills
+- add surfactants as wetting agents
+- encapsulate polypeptides in biocompatible nanoparticles
+- formulate polypeptides for cancer treatment
+- define types of cancer for treatment
+- combine polypeptides with cytotoxic or cytostatic compounds
+- combine polypeptides with checkpoint inhibitors
+- administer compositions via various routes
+- determine dosage and frequency of administration
+- provide examples of dosage amounts
+- provide examples of administration schedules
+- claim scope of invention
+
+## EXAMPLES
+
+### Example 1
+
+- introduce cancer cells' lipogenesis
+- describe obesity and hypercholesterolemia as cancer risk factors
+- motivate de novo lipogenesis as cancer therapy target
+- summarize epidemiological studies on statins and breast cancer
+- describe antiproliferative and apoptotic effects of statins
+- introduce cholesterol production and treatment resistance
+- describe 25- and 27-hydroxycholesterol as ER ligands
+- introduce lipogenesis regulation by SREBP1/2
+- describe SREBP1/2 precursors and proteolytic cleavage
+- introduce oncogenic drivers of de novo lipogenesis
+- describe mTOR's role in lipogenesis
+- introduce acetate conversion to acetyl-CoA
+- describe DAXX as a regulator of cell death or survival
+- introduce DAXX's role in transcriptional regulation
+- describe DAXX as a SUMO-binding protein
+- introduce DAXX as a chaperone for histone variant H3.3
+- describe DAXX's oncogenic role in diverse cancer types
+- introduce DAXX's function in gene regulation
+- describe correlation between DAXX expression and tumor growth
+- introduce DAXX as a key regulator of cancer lipogenesis pathway
+- describe DAXX's interaction with SREBPs
+- introduce DAXX SIM-derived peptide (SIM2) as therapeutic target
+- describe bioinformatic analysis of clinical BC samples
+- introduce DAXX's role in lipogenic gene expression and de novo lipogenesis
+- describe effects of DAXX knockdown and overexpression on lipogenesis
+- introduce DAXX SIMs and their critical role in transcription activation
+- describe DAXX mutant's inability to activate lipogenic genes
+- introduce de novo lipogenesis assays using [14C]-acetate metabolic labeling
+- describe MS-based lipidomic profiling
+- introduce DAXX's interaction with SREBP1 and SREBP2
+- describe DAXX's binding sites on SREBP1/2
+- introduce SREBP-binding sites enriched in DAXX-associated chromatins
+- describe DAXX's chromatin association and recruitment to lipogenic genes
+- introduce DAXX-binding transcription factors
+- implicate chromatin recruitment of DAXX by other transcription factors
+- describe DAXX's role in tumor growth
+- test effects of DAXX expression levels on cell proliferation
+- describe cell morphology and size with variable DAXX levels
+- assess impact of DAXX expression levels on cell proliferation in 3D cell culture
+- examine effects of DAXX expression levels on tumor growth in vivo
+- profile lipidome in xenograft tumors with different DAXX expression levels
+- describe tumor growth phenotypes in prostate cancer and colon cancer xenograft models
+- describe the DA SREBP2 axis in lipogenesis and tumor growth
+- test SREBP2 knockdown on lipogenesis and tumor growth
+- link SREBP2 to DAXX-mediated tumorigenesis
+- describe DAXX phosphorylation and its effects on SREBP2 interaction
+- test DAXX mutants on lipogenic gene expression and tumor growth
+- describe DAXX's recruitment to promoters of lipogenic genes
+- test effects of mTOR kinase inhibitors on lipogenic gene expression
+- describe the S671A mutant's instability and inability to bind H3.3
+- test DAXX mutants on tumor growth in vivo
+- profile lipid production in xenograft tumors with DAXX mutants
+- describe gene expression profiling of MDA-MB-231 cells with DAXX mutants
+- introduce the S1M2 peptide and its ability to block de novo lipogenesis
+- describe SIM2's cell membrane permeability and binding to SUMO1
+- test SIM2's effects on de novo lipogenesis in diverse cancer cells
+- test SIM2's effects on lipogenic gene expression
+- describe SIM2's mechanism of action in blocking DAXX-SREBP interaction
+- test SIM2's in vivo efficacy in inhibiting tumor growth
+- describe SIM2's effects on lipid production and protein levels in vivo
+- discuss the therapeutic potential of SIM2
+- discuss the regulation of lipogenesis by SREBP1/2 and other transcription factors
+- describe DAXX's role in de novo lipogenesis and tumor growth
+- discuss the importance of the DAXX SUMO-binding property in lipogenesis and tumor growth
+- describe the SIM2 peptide as a class of therapeutics
+- discuss the regulation of the DAXX-SREBP2 axis by protein phosphorylation
+- describe the separation of DAXX's oncogenic function from its histone chaperone function
+- discuss the stabilization of DAXX through histone binding
+- describe the DAXX-ATRX interaction and its role in gene repression
+- discuss the tumor suppressor activity of DAXX in certain cancer types
+- describe ATRX-independent oncogenic function of DAXX in glioblastoma
+- summarize DAXX's role in oncogenic lipogenesis
+- describe the molecular mechanism of DAXX's oncogenic function
+- highlight the therapeutic potential of targeting the DAXX-SREBP2 axis
+- cell culture
+- microarray, RNA-seq, and qRT-PCR
+- DNA constructs
+- stable expression of cDNA and shRNA
+- immunoprecipitation and immunoblotting
+- de novo lipogenesis assays
+- liquid chromatography-mass spectrometry experiments
+- peptides
+- in vivo tumor growth and treatment experiments
+- Ingenuity Pathway Analysis
+- Gene Set Enrichment Analysis
+- ChIP-seq analysis
+- bioinformatics analysis
+- statistical analysis
+- describe cell lines
+- describe cell culture conditions
+- describe microarray experiments
+- describe RNA-seq data analysis
+- describe qRT-PCR experiments
+- describe DNA construct preparation
+- describe lentiviral transduction
+- describe immunoprecipitation protocol
+- describe immunoblotting protocol
+- describe de novo lipogenesis assay protocol
+- describe lipid extraction and analysis
+- describe peptide synthesis
+- describe in vivo tumor growth experiments
+- describe SIM2 treatment study
+- describe Ingenuity Pathway Analysis
+- describe Gene Set Enrichment Analysis
+- describe ChIP-seq protocol
+- describe bioinformatics analysis
+- describe statistical analysis
+- discuss gene expression data
+- discuss copy number data
+- discuss gene expression comparisons
+- discuss metabolic profiling assays
+- discuss statistical significance
+- provide general statements
+

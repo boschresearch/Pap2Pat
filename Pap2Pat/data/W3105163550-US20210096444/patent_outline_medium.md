@@ -1,0 +1,175 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to frequency comb generation
+
+## BRIEF SUMMARY
+
+- introduce optical frequency comb generation
+- describe device with thermal oxide substrate and microring resonator
+- specify microring resonator material and pump laser
+- detail Kerr frequency comb characteristics
+- describe microring resonator dimensions and shape
+- specify pump laser power and wavelength
+- describe device with electrodes for modulating refractive index
+- detail electro-optical frequency comb characteristics
+- describe electrodes and their positioning
+- specify thermal oxide substrate thickness
+- describe alternative device embodiments
+- summarize various device configurations
+- summarize embodiments
+- describe resonator characteristics
+- describe electro-optical frequency comb characteristics
+- describe method of generating Kerr frequency comb
+- describe method of generating electro-optical frequency
+- describe resonator structure
+- describe substrate characteristics
+- describe electro-optic material characteristics
+- describe pump laser characteristics
+- describe electrodes characteristics
+- describe inductor characteristics
+- describe driving configuration
+
+## DETAILED DESCRIPTION
+
+- introduce frequency combs
+- applications of frequency combs
+- limitations of current frequency comb generation methods
+- motivation for on-chip frequency comb generation
+- describe Kerr frequency comb generation
+- limitations of Kerr comb generation on other materials
+- advantages of lithium niobate for Kerr comb generation
+- describe structure of lithium niobate microresonators
+- design waveguide widths and heights for anomalous dispersion
+- discuss material platforms for microresonator frequency combs
+- limitations of off-chip components for frequency comb applications
+- motivation for monolithic integration of lithium niobate nanophotonic waveguides
+- describe requirements for χ(3) optical parametric oscillation process
+- discuss dispersion engineering capability of integrated approach
+- describe measurement setup for frequency comb generation
+- show simulated group velocity dispersion of integrated LN waveguides
+- show transmission spectrum of pump mode
+- show optical spectrum of generated frequency comb
+- describe frequency comb generation in high Q integrated LN microresonator
+- describe monolithic integrated photonic circuit with frequency comb generator and electro-optically tunable add-drop filter
+- describe operation of electro-optically tunable add-drop filter
+- show transmission spectra of comb generator with applied DC bias voltage
+- show eye diagrams of output of filter at different data rates
+- motivate electro-optic modulation
+- describe type II comb generation
+- introduce EO comb generator
+- derive output electric field equation
+- simplify output electric field equation
+- calculate power in qth comb line
+- approximate power in qth comb line
+- calculate power in qth comb line with detuning
+- describe effect of microwave detuning
+- discuss optical phase noise
+- modify modulator coherence function
+- write output optical field equation
+- discuss microwave phase noise suppression
+- introduce round-trip phase model
+- discuss resonance condition and dispersion limits
+- introduce EO frequency comb generation
+- limitations of traditional EO comb generators
+- motivation for integrated EO comb generators
+- describe microring resonator design
+- explain EO comb generation process
+- describe fabrication process of LN microring resonator
+- describe measurement setup for EO comb generation
+- present results of EO comb generation
+- analyze output characteristics of EO comb
+- describe method for determining resonator parameters
+- explain importance of waveguide dispersion engineering
+- present simulated dispersion and phase matching conditions
+- describe design for low microwave drive powers
+- estimate electrical power consumption of EO comb generator
+- discuss ways to reduce electrical power consumption
+- provide theoretical model for EO comb generation
+- analyze resonance condition for comb line generation
+- describe dynamic resonance condition
+- present experimental results for detuning effects
+- discuss generation of asymmetric combs
+- compare integrated EO combs with traditional bulk devices
+- describe experimental setup for generating beats of an EO comb
+- introduce EO comb generation
+- contrast with Kerr-based combs
+- describe dual-drive EO comb generation experiment
+- highlight advantages of integrated EO comb sources
+- describe racetrack resonator design
+- explain electro-optic driving principle
+- introduce integrated optical frequency comb generators
+- describe nonlinear OFC generation approach
+- describe EO comb generation approach
+- illustrate device operation principle
+- show fabricated LiNbO3 resonator
+- present EO comb output optical spectrum
+- describe travelling wave electrode design
+- describe LC microwave resonator design
+- introduce combining χ(2) and χ(3) combs
+- describe integrated χ(2) and χ(3) comb circuits
+- illustrate integration of filters and modulators
+- describe sideband generation processes
+- introduce combined Kerr and EO comb generator
+- introduce optical frequency combs
+- describe limitations of comb generators
+- propose solution using ring as wavelength-dependent coupler
+- describe design trade-offs of ring coupler
+- introduce RE-EO comb generators
+- describe output spectrum and noise properties of RE-EO comb generator
+- define parameters of RE-EO comb generator
+- derive output optical field equation
+- describe intra-resonator power spectrum
+- describe intra-resonator temporal power profile
+- introduce simplified analytical model for RE-EO comb generators
+- derive power in pth comb line equation
+- show output spectra for various modulation indices
+- show output spectra for various coupling power transmissions
+- introduce optical input phase noise
+- derive power spectral density of input optical field
+- describe electrode configurations for RE-EO comb generator
+- describe traveling wave configuration
+- describe combined EO/Kerr comb
+- conclude RE-EO comb generator design
+- derive output PSD of pth comb line
+- motivate impact of modulator phase noise
+- derive cascaded modulation function
+- analyze output field of pth comb line
+- derive PSD of pth comb line in presence of modulation phase noise
+- discuss implications of linewidth correction term
+- analyze non-resonant optical input
+- derive output power in pth comb line in presence of input optical frequency offset
+- analyze non-resonant modulation
+- derive power in pth comb line in presence of modulation frequency offset
+- discuss implications of modulation frequency offset
+- introduce round-trip phase model
+- validate round-trip phase model
+- derive resonance condition
+- analyze dispersion-limited comb width
+- introduce round-trip phase model
+- describe limitations of round-trip phase model
+- introduce steady-state matrix method
+- derive equations for steady-state matrix method
+- compare output spectra of different models
+- analyze effects of dispersion on comb spectra
+- describe dual-ring EO comb generator
+- derive equations for dual-ring EO comb generator
+- relate fields in small and large resonators
+- calculate output field with steady-state matrix method
+- describe dual-ring comb generator
+- compare output spectra of single-ring and dual-ring comb generators
+- discuss limitations of dual-ring comb generator design
+- show output spectra for different values of FSR ratio
+- analyze OSNR of WDM optical links utilizing RE-EO comb generators
+- describe WDM point-to-point inter-data center link
+- provide analytical and numerical methods for predicting output comb spectrum
+- calculate relation between phase noise of comb line and input optical field
+- derive PSD of output field
+- derive Jacobi-Anger expansion
+- obtain expressions for So,1(ω) and So,2(ω)
+- calculate So,3(ω) and output PSD
+- derive power in pth comb line with modulation frequency offsets
+- discuss material and resonator configurations
+- provide generalizations and variations
+

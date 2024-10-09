@@ -1,0 +1,292 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to unified computing on digital and quantum computers
+
+## BACKGROUND
+
+- describe limitations of classical computations
+- describe limitations of quantum computations
+- describe need for access to quantum computing
+- describe shortcomings of current solutions
+
+## SUMMARY
+
+- introduce quantum compiler
+- describe motivation for disclosed system and methods
+- describe unified level module
+- describe conversion to source code for digital computers
+- describe conversion to high level quantum language
+- describe refactoring of code
+- describe implementation of quantum data structures
+- describe high level module
+- describe conversion to low level quantum language
+- describe low level module
+- describe conversion to quantum gate level operations
+- describe gate level module
+- describe error mitigation procedures
+- describe gate synthesis
+- describe variations of modules
+- describe digital computer system for compiling
+- describe unified level module
+- describe high level module
+- describe low level module
+- describe gate level module
+- describe variations of modules
+- describe code refactoring
+- describe replacing loops with specialized functions
+- describe implementing abstract data types
+- describe refactoring recursive functions
+- describe high level quantum language
+- describe support for functions and data types
+- describe low level module
+- describe conversion to quantum gate level operations
+- describe gate level module
+- describe error mitigation procedures
+- describe gate synthesis
+- describe variations of modules
+- describe code refactoring
+- describe replacing loops with specialized functions
+- describe implementing abstract data types
+- describe refactoring recursive functions
+- describe high level quantum language
+- describe support for functions and data types
+- describe low level module
+- describe conversion to quantum gate level operations
+- describe gate level module
+- describe error mitigation procedures
+- describe gate synthesis
+- describe variations of modules
+
+## DETAILED DESCRIPTION
+
+- introduce compiler system
+- describe code refactoring process
+- convert refactored code to first code
+- compile first code to second code
+- convert second code to third code
+- compile third code to fourth code
+- define quantum gate-level language
+- describe instruction set and gate locality constraints
+- introduce compiler computer system topology
+- describe electronic communication between systems
+- apply quantum codes to quantum computer
+- illustrate compiler computer system components
+- describe processing units and memory
+- introduce user interface and communication bus
+- describe power supply and data storage
+- store operating system and computer program
+- store compiler and unified language module
+- describe refactoring and conversion process
+- introduce high-level and low-level modules
+- describe gate-level module and fourth code
+- motivate expansion of quantum algorithm users
+- describe limitations of current quantum algorithms
+- introduce novel compilation approach
+- describe history of programming languages
+- illustrate classical computational languages
+- describe input of conventional source code
+- generate abstract representation and quantum algorithm
+- translate to circuit representation and native circuit
+- introduce compiler structure
+- describe classical programming source code
+- introduce quantum languages
+- describe gate level module
+- describe low level module
+- describe high level module
+- describe unified level module
+- illustrate compiler structure
+- describe characterization and compilation
+- describe hardware and characterization of quantum computer
+- describe noise and error in quantum processors
+- describe characterization of gates
+- describe counterbalancing noise
+- describe differences in gates
+- illustrate calibration of quantum computer
+- describe qubit behavior
+- describe stray couplings in quantum computer
+- illustrate energy diagram
+- describe broadening and undefined gap
+- describe calibration process
+- describe decoherence
+- illustrate joint Ramsey experiments
+- describe stray couplings map
+- describe wait command
+- describe non-ideal quantum computer behavior
+- describe error mitigation techniques
+- illustrate error mitigation techniques
+- describe updating frame through compiler
+- describe calibrating pulses for gates
+- describe energy gap assumption
+- describe entangled qubits
+- describe selecting energy gap
+- describe error mitigation techniques
+- describe performing error mitigation techniques
+- describe original qubit behavior
+- describe dephasing due to stray couplings
+- describe updating frame through compiler
+- describe calibrating pulses for gates
+- describe energy gap assumption
+- describe selecting energy gap
+- introduce quantum computer architecture
+- describe qubit or qudit 102
+- illustrate frame update approach
+- motivate spin-echo approach
+- describe decoupling strategies
+- illustrate curve 2504
+- illustrate curve 2502
+- illustrate curve 2506
+- illustrate curve 2508
+- describe limitations of frame update approach
+- describe limitations of spin-echo approach
+- illustrate curve 2602
+- illustrate curve 2604
+- illustrate curve 2606
+- illustrate curve 2608
+- describe importance of decoupling
+- describe challenges of decoupling
+- introduce mapping of couplings between qubits or qudits 102
+- describe reverse engineering of pairwise couplings
+- illustrate coupling graph
+- describe compiler 12
+- describe gate level module 110
+- describe hydrogen module 110
+- illustrate hydrogen code
+- describe fault tolerance module
+- describe gate synthesis from fault-tolerant gate set
+- describe fault tolerance gate set optimization
+- describe circuit embedding
+- describe fault-tolerance encoding
+- describe structured text file
+- illustrate example hydrogen code
+- describe definition of gate set
+- describe advantage of function handles
+- describe change between quantum hardware instruction sets
+- illustrate example program written in helium code
+- describe gate synthesis
+- illustrate gate synthesis with parameterized gate
+- illustrate gate synthesis with discrete variable quantum system
+- describe synthesized instructions
+- describe ability to convert between gate sets
+- describe addressing systematic errors of target quantum computer 64
+- illustrate circuit "C" expressed using ideal operations
+- describe conversion between instruction sets
+- describe automatic conversion based on description of individual operations
+- describe use of gate synthesis to address systematic errors
+- describe importance of gate synthesis
+- conclude gate synthesis
+- introduce quantum computer 64
+- describe non-ideal quantum computer 64
+- characterize target quantum computer 64
+- define quantum channel
+- describe real operation applied to target quantum system
+- introduce goal of using sequence of operations
+- describe processing program representation
+- take into account quality of 2-subsystem gates
+- reorder stages 24, 25, and 26 of FIG. 31
+- convert between instruction sets
+- scan for opportunities to reduce instruction count
+- introduce helium language
+- describe helium module 106
+- parse helium source file
+- extract abstract syntax tree
+- support conditionals
+- support repetitions
+- support subroutines
+- support increment loops
+- support read out
+- describe helium language focus
+- describe unrolling loops
+- optimize code within conditionals
+- support quantum programs with indefinite run time
+- describe optimization subroutines
+- implement quantum Fourier transform
+- support measurement subroutines
+- describe fan-out and error correction
+- convert helium code to quantum circuit fragments
+- describe classical control flow
+- output finite state machine
+- scan for opportunities to reduce instruction count
+- run on simulator
+- introduce beryllium language
+- describe high level module 102
+- parse beryllium source file
+- extract abstract syntax tree
+- support functions and data structures
+- support breakable loops
+- support pointers
+- implement quantum data structures
+- describe utility of quantum data structures
+- define plurality of data types
+- utilize quantum mechanisms
+- implement matrix operations
+- describe matrix algebra procedure
+- conclude compiler 12 description
+- define quantum data structure
+- motivate state vectors
+- describe HHL algorithm
+- illustrate state vector representation
+- describe graph data structure
+- motivate local edge complementation
+- illustrate graph operations
+- describe intersect edge complementation
+- describe graph comparison
+- describe vertex comparison
+- describe automorphism testing
+- illustrate digital data structure limitations
+- describe compiler workflow
+- introduce carbon language
+- describe unified level module
+- illustrate carbon code
+- describe compiler goals
+- describe optimized quantum task
+- illustrate explicit complexity
+- describe implicit complexity
+- illustrate matrix multiplication complexity
+- describe complexity conversion approach
+- illustrate Matlab code
+- describe loop simplification
+- illustrate simplified loops
+- describe loop reordering
+- describe HHL algorithm application
+- describe compiler 12
+- introduce loop processing
+- motivate quantum extremal value search
+- describe sequential search
+- introduce amplitude amplification-based computation
+- describe analytical solution
+- illustrate quadratic speedup
+- describe optimization of computing problem
+- introduce digital processor compilation
+- describe loop refactoring
+- describe loop classification
+- describe loop replacement
+- introduce recursive function processing
+- describe recursive function refactoring
+- describe recursive function classification
+- describe recursive function replacement
+- introduce quantum data structures
+- describe vector implementation
+- describe array implementation
+- describe matrix implementation
+- describe graph implementation
+- describe queue implementation
+- introduce stage 5, 6, and 7 operations
+- describe loop processing operation
+- describe recursion processing operation
+- describe data structure operation
+- introduce carbon language
+- describe compiler 12 analysis
+- introduce target quantum system architecture
+- describe quantum code conversion
+- introduce qRAM synthesis
+- describe address register construction
+- describe return register construction
+- introduce Fredkin gate sequence
+- describe qRAM performance
+- introduce digital algorithm optimization
+- describe compiler 12 communication
+- introduce parallelization
+- describe language support
+

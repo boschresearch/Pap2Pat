@@ -1,0 +1,20 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## OBJECTIVES OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### EXAMPLES
+
+### Materials and Methods
+
+### Results
+
+### Advantages of the Invention
+

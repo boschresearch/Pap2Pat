@@ -1,0 +1,26 @@
+# DESCRIPTION
+
+## STATEMENT AS TO RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DISCUSSION OF THE INVENTION
+
+### Making VLP Antitoxins
+
+### Sequence Variations
+
+### Pharmaceutical Compositions and Administration to Patients
+
+## DEFINITIONS
+
+## EXAMPLES
+
+### Example 1
+
+### Example 2
+

@@ -1,0 +1,12 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION
+
+### Mode-to-Mode Coupling in Vibratory Gyroscopes
+

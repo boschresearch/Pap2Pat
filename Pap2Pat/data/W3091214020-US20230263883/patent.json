@@ -1,0 +1,806 @@
+{
+    "id": "US20230263883",
+    "authors": [
+        "Stephen J. Elledge",
+        "Ellen Shrock",
+        "Eric Fujimura"
+    ],
+    "title": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS CoV-2) Peptide Epitopes",
+    "date": "2021-07-08 00:00:00",
+    "abstract": "Peptide epitopes identified in subjects infected with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and methods of use thereof for diagnosing, determining prognosis, and treating Coronavirus Disease 2019 (COVID-19), and developing prophylactic or therapeutic vaccines against SARS-CoV-2.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FEDERALLY SPONSORED RESEARCH OR DEVELOPMENT",
+                    "paragraphs": [
+                        "This invention was made with Government support under Grant No. All 18633 awarded by the National Institutes of Health. The Government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "disclose government sponsorship"
+                    ],
+                    "num_characters": 171,
+                    "outline_medium": [
+                        "disclose government sponsorship"
+                    ],
+                    "outline_short": [
+                        "disclose government sponsorship"
+                    ]
+                },
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "Described herein are peptide epitopes identified in subjects infected with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and methods of use thereof for diagnosing, determining prognosis, and treating Coronavirus Disease 2019 (COVID-19), and developing prophylactic or therapeutic vaccines against SARS-CoV-2."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce technical field of SARS-CoV-2 diagnosis and treatment"
+                    ],
+                    "num_characters": 323,
+                    "outline_medium": [
+                        "introduce technical field of SARS-CoV-2 diagnosis and treatment"
+                    ],
+                    "outline_short": [
+                        "introduce technical field of SARS-CoV-2 diagnosis and treatment"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Coronaviruses comprise a large family of enveloped, positive-sense single-stranded RNA viruses that cause diseases in birds and mammals (1). Among the strains that infect humans are the alpha-coronaviruses HCoV-229E and HCoV-NL63 and the beta-coronaviruses HCoV-OC43 and HCoV-HKU1, which cause common colds (FIG. 1A). Three additional beta-coronavirus species result in much more severe infections in humans: Severe Acute Respiratory Syndrome Coronavirus (SARS-CoV) was responsible for an outbreak in Asia in 2003 which resulted in \u02dc8000 infections and over 800 deaths (2); Middle East Respiratory Syndrome Coronavirus (MERS-CoV), which emerged in 2012 and resulted in \u22122500 infections and over 800 deaths (3); and SARS-CoV-2, a novel coronavirus that emerged in late 2019 in Asia and quickly spread throughout the globe (4). As of early June 2020, SARS-CoV-2 had caused over 9 million confirmed infections and was responsible for over 475,000 deaths (5)."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "provide background on coronaviruses and SARS-CoV-2"
+                    ],
+                    "num_characters": 955,
+                    "outline_medium": [
+                        "provide background on coronaviruses and SARS-CoV-2"
+                    ],
+                    "outline_short": [
+                        "provide background on coronaviruses and SARS-CoV-2"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "As described herein, VirScan (see PCT/US2018/036663) was used to map a total of 3071 SARS-CoV-2 epitopes, including 813 unique epitopes, with unprecedented resolution. Kinetics of induction and variation in epitope selection were observed over time in recently-infected individuals. A machine learning model was developed, trained on VirScan data to detect SARS-CoV-2 exposure history with very high sensitivity and specificity. VirScan identified public epitopes that are specific to SARS-CoV-2, and we employed these in a rapid Luminex assay to distinguish recently-infected COVID-19 patients from controls. Finally, VirScan enabled us to examine the history of previous viral infections and to determine correlates of COVID-19 outcomes.",
+                        "Described herein are high throughput anti-SARS-CoV-2 antibody detection methodologies, e.g., the exemplary COVID-19 Luminex assay, which facilitate accurate analyses of seroprevalence. The identification of binding sites of anti-SARS-CoV-2 antibodies provides a stepping stone to the isolation and functional dissection of both neutralizing antibodies and antibodies that might exacerbate patient outcomes through antibody-dependent enhancement (ADE). Finally, the data showed that H COVID-19 patients exhibited a higher incidence of prior infection with CMV and HSV-1 but had lower levels of antibodies to most common viruses, compared to the NH cohorts.",
+                        "Thus, provided herein are methods for detecting the presence of antibodies that bind to SARS-CoV-2 in a sample. The methods include providing a sample comprising or suspected of comprising antibodies that bind to SARS-CoV-2; contacting the sample with one, two, or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising 4 or more consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, under conditions sufficient for binding of antibodies in the sample to the peptides; and detecting binding of antibodies in the sample to the peptides.",
+                        "In some embodiments, the sample is from a subject, optionally a subject who is known or suspected of being infected with SARS-CoV-2. In some embodiments, the methods include identifying a subject who has antibodies that bind to SARS-CoV-2 as having been infected with SARS-CoV-2. In some embodiments, the methods further include administering a treatment for SARS-CoV-2 to the subject or monitoring the subject for later health consequences of infection with SARS-CoV-2. In some embodiments, the subject is a human subject. In some embodiments, the sample comprises whole blood, serum, saliva or plasma.",
+                        "In some embodiments, the peptides comprise a detectable moiety, are conjugated to a bead, or are conjugated to a surface. In some embodiments, the detectable moiety is a fluorescent label. In some embodiments, the surface is a multiwell plate or glass coverslip. In some embodiments, the beads are magnetic.",
+                        "In some embodiments, detecting comprises performing an immunoassay, multiplex immunoassay, protein-fragment complementation assay (PCA), or single molecule array.",
+                        "Also provided herein are compositions or kits comprising one, two, or a plurality of antigenic peptides comprising 4 or more consecutive amino acids from epitope sequences shown herein, e.g., in Table 1, 3, or 4 or SEQ ID NOs:13-1170, e.g., from one of SEQ ID NOs: 1036-1050.",
+                        "In some embodiments, at least one of the peptides comprises a detectable moiety, is conjugated to a bead, or is conjugated to a surface. In some embodiments, the detectable moiety is a fluorescent label. In some embodiments, the surface is a multiwell plate or glass coverslip. In some embodiments, the beads are magnetic. In some embodiments, the composition comprises a pharmaceutically acceptable carrier and optionally an adjuvant.",
+                        "Also provided are the compositions for use in a method of treating or reducing risk of an infection with SARS-CoV-2 in a subject.",
+                        "Further provided are methods of treating or reducing risk or severity of an infection with SARS-CoV-2 in a subject, the methods comprising administering a therapeutically of prophylactically effective amount of a composition as described herein, comprising one, two, or a plurality of antigenic peptides comprising 4 or more consecutive amino acids from epitope sequences shown herein, e.g., in Table 1, 3, or 4 or SEQ ID NOs:13-1170, e.g., from one of SEQ ID NOs: 1036-1050.",
+                        "Additionally, provided are methods of generating an antibody to SARS-CoV-2, the method comprising administering the compositions, and optionally an adjuvant, to a mammal, and isolating antibodies from the mammal that bind to SARS-CoV-2.",
+                        "In addition, provided herein are methods for identifying antibodies that bind to neutralizing or non-neutralizing epitopes of SARS-CoV-2. The methods include providing a sample comprising an antibody obtained, preferably cloned, from a human who has had a SARS-CoV-2 infection; contacting the antibody with peptides comprising one or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 or more, consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, wherein: (i) the peptides comprise non-neutralizing epitopes as shown herein, e.g., from one of SEQ ID NOs: 333-1035 or 1051-1155, and the contacting is performed under conditions to allow binding of the antibody on B cells to the peptides; and identifying the antibody as non-neutralizing if it binds to a peptide that comprises a non-neutralizing epitope; or (ii) the peptides comprise neutralizing epitopes shown herein, e.g., from one of SEQ ID NOs: 1036-1050, and the contacting is performed under conditions to allow binding of the antibody on B cells to the peptides; and identifying the antibody as neutralizing if it binds to a peptide that comprises a neutralizing epitope.",
+                        "In some embodiments, the methods further include cloning one or more antibodies, wherein cloning the antibodies comprises providing a sample of B cells from a human who has had a SARS-CoV-2 infection; contacting the B cells with peptides including one, two, or more of the epitope sequences shown herein, e.g., in Table 1, Table 3, and/or Table 4, optionally one of one of SEQ ID NOs: 1036-1050; cloning and sequencing B cells encoding antibodies specific for one or more of the epitope sequences; and optionally testing these antibodies for neutralizing activity or Fc-mediated effector function (e.g., antibody-dependent cellular cytotoxicity, complement-dependent cytotoxicity, and antibody-dependent cellular phagocytosis).",
+                        "In some embodiments, the methods further include formulating the optimized population of antibodies into a pharmaceutical composition by mixing the antibodies with a pharmaceutically acceptable carrier, e.g., to reduce or prevent the evolution of antibodies that are immunodominant but not protective.",
+                        "In some embodiments, the methods further include administering a therapeutically effective amount of the pharmaceutical composition to a subject in need thereof.",
+                        "In some embodiments, the methods further include cloning one or more antibodies identified as non-neutralizing into a pharmaceutical composition.",
+                        "In some embodiments, the methods further include formulating the optimized population of antibodies into a pharmaceutical composition by mixing the antibodies with one or more of a pharmaceutically acceptable carrier, an adjuvant, and/or a SARS-CoV-2 vaccine comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide.",
+                        "In some embodiments, the methods further include administering a prophylactically effective amount of the pharmaceutical composition to a subject in need thereof.",
+                        "Also provided herein are methods for selecting a vaccine composition for use in eliciting a prophylactic response to SARS-CoV-2 in a subject. The methods include administering a composition comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide, to a test subject in an amount sufficient to elicit an immune response; obtaining a sample comprising antibodies obtained from the subject; contacting the sample with one or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 or more, consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, under conditions to allow binding of the antibody to the peptides; and detecting binding of antibodies in the sample to the peptides, wherein: (i) the composition of the vaccine excludes one or more epitopes that elicit non-protective antibodies; or (ii) the composition of the vaccine comprises epitopes that elicit protective (neutralizing) antibodies shown herein, e.g., one of SEQ ID NOs: 1036-1050; and selecting a vaccine composition that elicits neutralizing antibodies.",
+                        "In some embodiments, the vaccine composition comprises one or more mutations in a non-neutralizing epitope.",
+                        "Also provided are compositions comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide, wherein the SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide comprises a mutation in a non-neutralizing epitope sequences shown herein, e.g., in Table 3 or 4, and a pharmaceutically acceptable carrier, and optionally an adjuvant, and the use thereof in eliciting a prophylactic response in a subject.",
+                        "Further, provided herein are methods for generating an antibody to SARS-CoV-2, the method comprising administering the compositions to a subject.",
+                        "Additionally provided are methods for treating or reducing risk or severity of an infection with SARS-CoV-2 in a subject, the method comprising administering a therapeutically or prophylactically effective amount of the compositions to the subject. Also provided are kits comprising a composition as described herein, e.g., for use in a method of detecting the presence of antibodies that bind to SARS-CoV-2 in a sample, e.g., to diagnose a subject with COVID-19.",
+                        "Unless otherwise defined, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this invention belongs. Methods and materials are described herein for use in the present invention; other, suitable methods and materials known in the art can also be used. The materials, methods, and examples are illustrative only and not intended to be limiting. All publications, patent applications, patents, sequences, database entries, and other references mentioned herein are incorporated by reference in their entirety. In case of conflict, the present specification, including definitions, will control.",
+                        "Other features and advantages of the invention will be apparent from the following detailed description and figures, and from the claims."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce VirScan technology",
+                        "describe epitope mapping",
+                        "discuss kinetics of epitope selection",
+                        "develop machine learning model",
+                        "detect SARS-CoV-2 exposure history",
+                        "identify public epitopes",
+                        "employ Luminex assay",
+                        "distinguish COVID-19 patients from controls",
+                        "examine history of previous viral infections",
+                        "determine correlates of COVID-19 outcomes",
+                        "describe high-throughput antibody detection methodologies",
+                        "facilitate accurate analyses of seroprevalence",
+                        "identify binding sites of anti-SARS-CoV-2 antibodies",
+                        "isolate and functionally dissect neutralizing antibodies",
+                        "analyze antibody-dependent enhancement",
+                        "compare H COVID-19 patients to NH cohorts",
+                        "describe methods for detecting SARS-CoV-2 antibodies",
+                        "provide compositions or kits for detecting SARS-CoV-2 antibodies",
+                        "describe methods for treating or reducing risk of SARS-CoV-2 infection",
+                        "provide compositions for use in treating or reducing risk of SARS-CoV-2 infection",
+                        "describe methods for generating antibodies to SARS-CoV-2",
+                        "describe methods for identifying neutralizing or non-neutralizing epitopes"
+                    ],
+                    "num_characters": 11333,
+                    "outline_medium": [
+                        "introduce VirScan and epitope mapping",
+                        "describe machine learning model for detecting SARS-CoV-2 exposure",
+                        "identify public epitopes specific to SARS-CoV-2",
+                        "develop rapid Luminex assay for detecting SARS-CoV-2 antibodies",
+                        "examine history of previous viral infections and COVID-19 outcomes",
+                        "provide high-throughput anti-SARS-CoV-2 antibody detection methodologies",
+                        "identify binding sites of anti-SARS-CoV-2 antibodies",
+                        "analyze seroprevalence and correlates of COVID-19 outcomes",
+                        "describe methods for detecting SARS-CoV-2 antibodies",
+                        "provide compositions and kits for detecting SARS-CoV-2 antibodies",
+                        "outline methods for treating or reducing risk of SARS-CoV-2 infection"
+                    ],
+                    "outline_short": [
+                        "summarize VirScan method for epitope mapping",
+                        "describe machine learning model for detecting SARS-CoV-2 exposure",
+                        "summarize identification of public epitopes and Luminex assay",
+                        "describe high-throughput anti-SARS-CoV-2 antibody detection methodologies",
+                        "summarize methods for detecting and treating SARS-CoV-2 infections"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The clinical course of Coronavirus Disease 19 (COVID-19)\u2014the disease resulting from SARS-CoV-2 infection\u2014is notable for its extreme variability: while some individuals remain entirely asymptomatic, others experience fever, anosmia, diarrhea, severe respiratory distress, pneumonia, cardiac arrhythmia, blood clotting disorders, liver and kidney distress, enhanced cytokine release and, in a small percentage of cases, death (6). Understanding the factors influencing this spectrum of outcomes is therefore an intense area of research. Disease severity is correlated with advanced age, sex, ethnicity, socio-economic status, and co-morbidities including diabetes, cardiovascular disease, chronic lung disease, obesity, and reduced immune function (6). Additional relevant factors are likely to include the inoculum of virus at infection, the individual's genetic background and viral exposure history. The complex interplay of these elements also determines how individuals respond to therapies aimed at mitigating disease severity. One of the key aspects of human physiology that integrates many of these components is the functionality of the immune system. The immune system is the primary defense against the virus. The outcome of any individual's encounter with the virus is thus dependent on the functionality of the immune system, which depends on a number of factors including genetics, stress, age and the history of prior exposures. Detailed knowledge of the immune response to SARS-CoV-2 could improve our understanding of diverse outcomes and inform the development of improved diagnostics vaccines, and antibody-based therapies.",
+                        "The first SARS-CoV-2 infection was first reported from Wuhan, China, in December 2019. The genome of the virus has been determined. The genome comprises or flab encoding or flab polyproteins, genes encoding structural proteins including surface (S), envelope (E), membrane (M), and nucleocapsid N proteins, and 6 accessory proteins, encoded by ORF3a, ORF6, ORF7a, ORF7b, and ORF8 genes (Khailany et al., Gene Rep. 2020 June; 19: 100682; Wang et al., J Med Virol. 2020 June; 92(6):667-674. Epub 2020 Mar 20); genomic information is available at the NCBI Severe acute respiratory syndrome coronavirus 2 database (nhc.gov.cn/jkj/s7915/202001/e4e2d5e6f01147e0a8df3f6701d49f33.shtml) and NGDC Genome Warehouse (bigd.big.ac.cn/gwh/).",
+                        "Here we describe a detailed analysis of the humoral response in COVID-19 patients using VirScan, a programmable phage-display immunoprecipitation and sequencing (PhIP-Seq) technology we developed previously to explore antiviral antibody responses across the human virome (7-9). Cohorts of COVID-19 patients, pre-COVID-19 era negative controls, and longitudinal samples from COVID-19 patients over the course of infection enabled us to characterize SARS-CoV-2-specific antibodies as well as cross-reacting antibodies. These cross-reacting antibodies can confound serological diagnosis of COVID-19. VirScan can also identify virus-specific epitopes that allow one to discriminate between different coronavirus infections. We developed a machine learning model trained on VirScan data that detects SARS-CoV-2 exposure history with extremely high sensitivity and specificity, and we employed the most differentially-recognized SARS-CoV-2 peptides between COVID-19+ patients and pre-COVID-19 era controls in a Luminex assay to produce a fast and reliable diagnostic. We compared the anti-SARS-CoV-2 antibody response and virome-wide exposure history in COVID-19 patients who did or did not require hospitalization in order to identify correlates of disease severity. Finally, we used alanine-scanning mutagenesis coupled with VirScan to map epitopes across the SARS-CoV-2 proteome to single amino acid resolution; over a dozen of these epitopes are located in the receptor binding (RBD) of the spike, and 10 of these are located on the receptor binding motif (RBM) that directly contacts ACE2 and are likely targets of neutralizing antibodies.",
+                        "Using VirScan, we were able to map a total of over 3,000 SARS-CoV-2 epitopes, including 813 unique epitopes, with unprecedented resolution. Further, we were able to investigate their cross-reactivity with other human and bat coronavirus epitopes."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Identification of SARS-CoV-2 Epitopes Recognized by COVID Patients",
+                            "paragraphs": [
+                                "Antibody profiling of sera from 232 COVID-19 patients and 190 pre-COVID-19 era controls revealed robust antibody recognition of peptides encoded by SARS-CoV-2 among COVID-19 patients compared with controls. These were primarily directed against the S and N proteins, with significant cross-reactivity to SARS-CoV, and milder cross-reactivity with the more distantly related MERS-CoV and the seasonal Human coronaviruses (HCoVs). Cross-reactive responses to SARS-CoV-2 ORF1 were frequently detected in pre-COVID-19 era controls, suggesting that these result from antibodies induced by other pathogens.",
+                                "Examination of the response at the epitope level revealed the existence of public epitopes targeted by many COVID-19 patients. Using a combination of both 56-mer and 20-mer peptide tiles, together with the alanine scanning mutagenesis library, we mapped epitopes within SARS-CoV-2 at unprecedented resolution.",
+                                "At the population level, most SARS-CoV-2 epitopes were recognized by both IgA and IgG antibodies. We found individuals often exhibited a \u201ccheckerboard\u201d pattern, utilizing either IgG or IgA antibodies against a given epitope. This suggests that a given IgM clone often evolves into either an IgG or an IgA antibody, potentially influenced by local signals, and that, within an individual, there may often be a largely monoclonal response to a given epitope.",
+                                "Examination of the humoral response to SARS-CoV-2 at the epitope level using the triple-alanine scanning mutagenesis library revealed 145 epitopes in S, 116 in N, and 562 across the remainder of the SARS-CoV-2 proteome (FIGS. 11A-H). These epitopes ranged from private to highly public, with one public epitope cluster being recognized by 79% of COVID-19 patients (the S 811-830 region, see FIG. 6 C/D third panel from the left). Triple-alanine scanning mutagenesis showed highly conserved antibody footprints for some epitope clusters and diverse antibody footprints for others, indicating varying levels of conservation at the antibody-epitope interface among individuals (FIGS. 10A-F). Peptides containing public epitopes could be used to isolate and clone antibodies from B-cells bearing antigen-specific BCRs. If these antibodies are found to lack protective effects or have deleterious effects, these regions, e.g. S 811-830, could be mutated in future vaccines to divert the immunological response to other regions of S that might have more protective effects. Epitopes also varied in cross-reactivity, which can be explained by the presence or absence of sequence conservation between seasonal HCoVs and SARS-CoV-2 at these regions. Antibodies against several conserved epitopes in HCoVs seemed to be anamnestically boosted in COVID-19 patients. Altogether these data help explain why many serological assays for SARS-CoV-2 produce false positives, and should be taken as a cautionary note for those trying to develop such assays."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe antibody profiling of sera from COVID-19 patients and controls",
+                                "identify public epitopes targeted by many COVID-19 patients",
+                                "map epitopes within SARS-CoV-2 using alanine scanning mutagenesis",
+                                "describe the \"checkerboard\" pattern of IgA and IgG antibody responses",
+                                "highlight the potential for epitope-based vaccine design"
+                            ],
+                            "num_characters": 2909,
+                            "outline_medium": [
+                                "describe antibody profiling of sera from COVID-19 patients and controls",
+                                "map epitopes within SARS-CoV-2 using VirScan and alanine scanning mutagenesis"
+                            ],
+                            "outline_short": [
+                                "describe antibody profiling of sera from COVID-19 patients and controls"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Diagnosis: SARS-CoV-2 Signature Peptides for Detecting Seroconversion",
+                            "paragraphs": [
+                                "Using machine learning models trained on VirScan data, we developed a classifier that predicts SARS-CoV-2 exposure history with 99% sensitivity and 98% specificity. We identified peptides frequently and specifically recognized by COVID-19 patients and used these to create a Luminex assay that predicted SARS-CoV-2 exposure with 90% sensitivity and 95% specificity. Remarkably, the Luminex assay only required three peptides to obtain performance comparable to full antigen ELISAs. This highlights the utility of VirScan-based serological profiling in the development of rapid and efficient diagnostic assays based on public epitopes.",
+                                "The compositions and methods described herein can also be used to detect the presence of antibodies in a sample from a subject to determine whether a subject has been infected with SARS-CoV-2; the presence of antibodies that bind the epitopes indicates that the subject has had an infection with SARS-CoV-2. Thus provided herein are methods and kits for use in determining whether a subject has, or has had, SARS-CoV-2.",
+                                "The methods can include providing a sample from a subject, e.g., a sample comprising whole blood, serum, saliva or plasma, that comprises antibodies from a subject. In some embodiments, the subject is suspected to have, or to have been exposed to, SARS-CoV-2. In some embodiments, the subject is a mammal, e.g., a human or non-human veterinary subject, e.g., a cat, dog, ferret, Syrian hamster, tiger, lion, mink, bat, or pangolin.",
+                                "The sample is contacted with one or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 or more, consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, and binding of antibodies in the sample to the peptides (e.g., formation of antibody-epitope complexes) is detected. The presence of antibodies bound to the peptides indicates the presence of the virus in the subject. Preferably, the peptides are at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, up to 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, or 100 amino acids long, with each number being an endpoint for a range of sizes.",
+                                "The methods can include a purification step, in which un-bound epitope peptides, un-bound antibodies, or both, are removed from the sample, or in which bound complexes are isolated from the sample, before detection is performed.",
+                                "Detection of binding of antibodies to the epitopes can be performed using methods known in the art. In some embodiments, multiplex immunoassays are used, e.g., assays in which the peptides are immobilized on beads (e.g., Luminex (e.g., x eAP@ Assay) Abcam's FirePlex\u00ae, or Cytometric Bead Array (CBA) from BD Biosciences) or on a surface (e.g., RayBiotech's Quantibody\u00ae glass chip-based array), wherein each species of peptide (i.e., a species is a set of peptides that all share the same sequence) is individually identifiable, e.g., each peptide species is associated with a different label. See, e.g., Fu et al., Clin Chem. 2010 February;56(2):314-8. In some embodiments, split enzymes reconstitution or protein-fragment complementation assays (PCAs) (e.g., as described in Shekhawat and Ghosh, Curr Opin Chem Biol. 2011 December; 15(6): 789-797; Sierecki, ACS Cent. Sci. 2019, 5, 11, 1744-1746; Jones et al., ACS Cent. Sci. 2019, 5, 11, 1768-1776; Li et al., J. Proteome Res. 2019, 18, 8, 2987-2998) or single molecule detection methods (e.g., single molecule array (SIMOA) can be used (Mora et al., AAPS J. 2014 November; 16(6): 1175-1184; Costa et al., PLoS One. 2018; 13(3): e0193670; Chang et al., J Immunol Methods. 2012 Apr. 30; 378(1-2): 102-115; Libre et al., J Vis Exp. 2018; (136): 57421).",
+                                "In some embodiments, the methods can include quantitating a level of antibodies in a sample, e.g., by detecting a level of antibody/epitope complexes formed.",
+                                "In some embodiments, the presence and/or level of antibodies that bind to one or more peptide epitopes is comparable to or above the presence and/or level of binding in the disease reference, and the subject has one or more symptoms associated with COVID-19, then the subject has COVID-19 (i.e., a positive result) or had it in the past. In some embodiments, the subject has no overt signs or symptoms of COVID-19, but the presence and/or level of binding to one or more of the peptide epitopes is comparable to or above the presence and/or level of binding in the disease reference, then the subject has or had COVID-19 (i.e., a positive result). In some embodiments, once it has been determined that a person has COVID-19, then a treatment, e.g., as known in the art or as described herein, can be administered.",
+                                "The methods can also include contacting the samples with peptide epitopes specific for other pathogens, e.g., other viruses, e.g., Severe acute respiratory syndrome coronavirus (SARS-CoV, identified in 2003); cytomegalovirus (CMV); Rhinoviruses A and/or B; Influenza A and/or B, Enteroviruses A, B and/or C; HIV-1, Epstein-Barr virus (EBV), cytomegalovirus (CMV), and Herpes Simplex Virus 1 (HSV-1), or other Human coronaviruses (HCoVs) (e.g., MERS, SARS and other coronaviruses, including alphacoronaviruses (HCoV-229E and HCoV-NL63) and betacoronaviruses (HCoV-HKU1, HCoV-OC43, MERS-CoV, SARS-CoV, SARS-CoV-2)). See, e.g., U.S. Pat. No. 10,768,181. In some embodiments, epitope mapping is performed for the HCoVs to identify HCoV specific epitopes, and these are integrated into the methods described herein to reduce false positives, i.e., some response to SARS-CoV-2 peptides and a very strong response to peptides from another HCoV indicates the presence of an active high-titer response to the HCoV and that the SARS-CoV-2 response is a cross-reaction (and therefore a false positive for SARS-CoV-2).",
+                                "In these methods, a single sample can be used to detect infection with a plurality of viruses.",
+                                "In some embodiments, the reference level is the limit of detection of the assay, wherein detection of any level of antibodies that bind to one or more peptide epitopes is considered a positive result. In some embodiments, a reference value is chosen. Suitable reference values can be determined using methods known in the art, e.g., using standard clinical trial methodology and statistical analysis. The reference values can have any relevant form. In some cases, the reference comprises a predetermined value for a meaningful level of binding, e.g., a control reference level that represents a normal level of antibodies, e.g., a level in a subject who was previously exposed to a different coronavirus, and/or a disease reference that represents a level of binding associated with infection, e.g., a level in a subject who has or had a SARS-CoV-2 infection. In some embodiments, the reference value is a combined score that integrates antibody binding to multiple epitopes, determined using a machine learning model.",
+                                "The predetermined level can be a single cut-off (threshold) value, such as a median or mean, or a level that defines the boundaries of an upper or lower quartile, tertile, or other segment of a clinical trial population that is determined to be statistically different from the other segments. It can be a range of cut-off (or threshold) values, such as a confidence interval. It can be established based upon comparative groups, such as where association with risk of developing disease or presence of disease in one defined group is a fold higher, or lower, (e.g., approximately 2-fold, 4-fold, 8-fold, 16-fold or more) than the risk or presence of disease in another defined group. It can be a range, for example, where a population of subjects (e.g., control subjects) is divided equally (or unequally) into groups, such as a low-risk group, a medium-risk group and a high-risk group, or into quartiles, the lowest quartile being subjects with the lowest risk and the highest quartile being subjects with the highest risk, or into n-quantiles (i.e., n regularly spaced intervals) the lowest of the n-quantiles being subjects with the lowest risk and the highest of the n-quantiles being subjects with the highest risk.",
+                                "In some embodiments, the predetermined level is a level or occurrence in the same subject, e.g., at a different time point, e.g., an earlier time point.",
+                                "Subjects associated with predetermined values are typically referred to as reference subjects. For example, in some embodiments, a control reference subject does not have COVID-19 and/or has not been exposed to COVID-19.",
+                                "A disease reference subject is one who has (or has had) COVID-19.",
+                                "Thus, in some cases the level of antibody binding to an epitope described herein in a subject being less than or equal to a reference level of binding is indicative of a clinical status (e.g., indicative of absence of infection). In other cases the level of binding in a subject being greater than or equal to the reference level of binding is indicative of the presence of infection or a past infection. In some embodiments, the amount by which the level in the subject is the less than the reference level is sufficient to distinguish a subject from a control subject, and optionally is a statistically significantly less than the level in a control subject. In cases where the level of binding in a subject being equal to the reference level of binding, the \u201cbeing equal\u201d refers to being approximately equal (e.g., not statistically different).",
+                                "The predetermined value can depend upon the particular population of subjects (e.g., human subjects) selected. Accordingly, the predetermined values selected may take into account the category (e.g., sex, age, health, risk, presence of other diseases) in which a subject (e.g., human subject) falls. Appropriate ranges and categories can be selected with no more than routine experimentation by those of ordinary skill in the art.",
+                                "In characterizing likelihood, or risk, numerous predetermined values can be established.",
+                                "In some embodiments, once a subject has been diagnosed with COVID-19 using a method described herein, a treatment can be administered. Treatments for COVID-19 are known in the art and include quarantining the subject, administration of an antiviral medication (e.g., remdesivir, Favipiravir, MK-4482; Lopinavir and ritonavir); Recombinant ACE-2; Ivermectin; Oleandrin; bradykinin signaling blockers (e.g., icatibant, ecallantide lanadelumab); vasopressors; Vitamin D; steroids (e.g., Dexamethasone); Cytokine Inhibitors; Convalescent plasma/antibodies; Interferons; ventilation/respiratory support devices; Anticoagulants. Alternatively, if the active infection is past but it is found that infections can predispose an individual with other ailments such as heart or kidney disease or a predisposition for future strokes, they could be monitored more closely for those diseases later in their lives."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce machine learning models for predicting SARS-CoV-2 exposure history",
+                                "describe the development of a Luminex assay for detecting SARS-CoV-2 exposure",
+                                "outline the composition of the Luminex assay",
+                                "describe the methods for detecting antibody binding to epitopes",
+                                "introduce the concept of purification steps",
+                                "describe detection methods, including multiplex immunoassays",
+                                "outline the use of split enzymes reconstitution or protein-fragment complementation assays",
+                                "describe single molecule detection methods",
+                                "introduce quantitation of antibody levels",
+                                "describe the comparison of antibody levels to a disease reference",
+                                "outline the use of peptide epitopes specific for other pathogens",
+                                "describe epitope mapping for other Human coronaviruses",
+                                "introduce the concept of a reference level",
+                                "describe the determination of reference values",
+                                "outline the use of a single cut-off value or range of values",
+                                "describe the establishment of reference values based on comparative groups",
+                                "introduce the concept of a disease reference subject",
+                                "describe the use of a control reference subject",
+                                "outline the interpretation of results",
+                                "describe the potential for treatment administration",
+                                "introduce the concept of correlating antibody levels with disease severity",
+                                "describe the potential for monitoring subjects for future diseases"
+                            ],
+                            "num_characters": 11047,
+                            "outline_medium": [
+                                "describe machine learning models trained on VirScan data",
+                                "identify peptides frequently recognized by COVID-19 patients",
+                                "develop a Luminex assay for detecting SARS-CoV-2 exposure",
+                                "describe the utility of VirScan-based serological profiling",
+                                "outline methods for detecting antibodies in a sample",
+                                "describe the use of peptides comprising consecutive amino acids from SARS-CoV-2 epitope sequences",
+                                "discuss detection of antibody-epitope complexes",
+                                "describe purification and detection steps",
+                                "outline methods for quantitating antibody levels",
+                                "discuss the use of reference levels and disease references",
+                                "describe the integration of epitope mapping for other pathogens"
+                            ],
+                            "outline_short": [
+                                "describe machine learning model for predicting SARS-CoV-2 exposure history",
+                                "identify peptides frequently recognized by COVID-19 patients",
+                                "develop Luminex assay for detecting SARS-CoV-2 exposure",
+                                "describe methods for detecting antibody binding to epitopes",
+                                "outline potential applications of methods for detecting COVID-19"
+                            ]
+                        },
+                        {
+                            "title": "Correlates of Severity in COVID-19 Patients",
+                            "paragraphs": [
+                                "An important goal is to uncover serological elements that either correlate with, or predict the severity of, COVID-19 disease. To this end, we compared cohorts of COVID-19 patients who had (H) or had not (NH) required hospitalization. Using both VirScan and the COVID-19 Luminex assay, we noticed a striking and somewhat counterintuitive increase in recognition of peptides derived from the SARS-CoV-2 S and N proteins among the H group, with more extensive epitope spreading. Whether this is a cause or a consequence of severe disease is not clear. Individuals whose innate and adaptive immune responses are not able to quell the infection early may experience a higher viral antigen load, a prolonged period of antibody evolution and epitope spreading. Consequently, these patients might develop stronger and broader antibody responses to SARS-CoV-2 and could be more likely to have hyperinflammatory reactions such as cytokine storms that increase the probability of hospitalization. We noticed that hospitalized males had stronger antibody responses to SARS-CoV-2 than hospitalized females. This may indicate that males in this group are less able to control the virus soon after infection and is consistent with reported differences in disease outcomes for males and females. The presence of antibodies that bind to these epitopes (in the SARS-CoV-2 nucleoprotein) can be used to identify subjects who are likely to have a more severe response.",
+                                "VirScan also allowed us to examine viral exposure history, which revealed two striking correlations. First, the seroprevalence of CMV and HSV-1 was much greater in the H group compared to the NH group. The demographic differences in our relatively small cohort of H versus NH COVID-19 patients make it impossible for us to determine with certainty if CMV or HSV-1 infection impacts disease outcome or is simply associated with other covariates such as age, race and socioeconomic status. While CMV prevalence does slightly increase with age after 40 (31), its prevalence also differs greatly among ethnic and socioeconomic groups (32). CMV is a herpes virus that exhibits latency within the host and is known to have a profound impact on the immune system; it can skew the naive T-cell repertoire (33), decrease T and B cell function (34), and is associated with higher systemic levels of inflammatory mediators (35, 36). CMV latency also results in inversion of CD4+ and CD8+ T-cell numbers, poor proliferation response of T-cells, low B cell numbers, and has been associated with increased mortality of people over 65 years of age (37). CMV's effects on the immune system could potentially impact the response to SARS-CoV-2 infection in an older population. The effects of CMV on the immune system could impact COVID-19 outcomes.",
+                                "The second striking correlation we observed was a significant decrease in the levels of antibodies targeting ubiquitous viruses such as Rhinoviruses, Enteroviruses, and Influenza viruses, in COVID-19 H patients compared with NH patients. When we examined only the CMV+ or HSV-1+ individuals in the two groups, we found that the strength of the antibody response to CMV and HSV-1 peptides was also reduced in the H group. We examined the effects of age on viral antibody levels in a pre-COVID-19 era cohort and found a diminution with age in the antibody response against viral peptides differentially recognized between the H and NH groups, consistent with previous studies on the effects of aging on the immune system (38). This inferred reduced immunity during aging could impact the severity of COVID-19 outcomes. Thus, the presence of decreased levels antibodies to CMV and/or HSV-1 epitopes can be used to identify subjects who are likely to have a more severe response.",
+                                "In correlative analyses such as these, it is difficult to draw strong conclusions about causality given the demographical differences in the NH vs H groups. The NH group is younger, has a higher percentage of Caucasian individuals, and has more females (average age 42, 66% female) versus H (average age 58, 42% female). This is consistent with the well-documented age, race and sex differences among the more severely affected individuals (25, 26). However, even if age and other demographic factors are covariates, the reduction in immune function with age and CMV status described here could still impact severity of infection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce the goal of identifying serological elements correlating with disease severity",
+                                "describe the comparison of hospitalized and non-hospitalized COVID-19 patients",
+                                "highlight the increase in recognition of SARS-CoV-2 peptides among hospitalized patients",
+                                "discuss the potential role of viral antigen load and epitope spreading",
+                                "describe the correlation between CMV and HSV-1 seroprevalence and disease severity",
+                                "discuss the potential impact of CMV on the immune system",
+                                "describe the decrease in antibody levels against ubiquitous viruses in hospitalized patients",
+                                "highlight the potential for identifying subjects at risk of severe disease"
+                            ],
+                            "num_characters": 4391,
+                            "outline_medium": [
+                                "compare cohorts of COVID-19 patients who did or did not require hospitalization",
+                                "describe the increase in recognition of SARS-CoV-2 peptides among hospitalized patients",
+                                "discuss the correlation between CMV and HSV-1 seroprevalence and disease severity",
+                                "describe the decrease in antibody levels against ubiquitous viruses in hospitalized patients"
+                            ],
+                            "outline_short": [
+                                "compare antibody responses between hospitalized and non-hospitalized patients",
+                                "examine correlations between viral exposure history and disease severity"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Improving Vaccines",
+                            "paragraphs": [
+                                "The present methods can include identifying public and/or immunodominant epitopes that are the targets of non-protective antibodies and generating vaccines in which these epitopes are disrupted or removed, or delivering vaccines together with antibodies against these epitopes, with the goal of reducing the production of non-protective antibodies against these epitopes and boosting the production of more protective antibodies.",
+                                "As demonstrated herein, certain epitopes are more likely to be associated with neutralizing antibodies, while others may be more likely to generate immunodominant non-neutralising antibodies. It is believed that the epitopes within the receptor binding domain (see Table 4, SEQ ID NOs. 1036-1050, are believed to be associated with neutralizing antibodies. Thus, provided herein are methods for generating vaccines that are less likely to generate antibodies that bind to non-neutralizing epitopes. The methods can include administering to a mammal, e.g., a rodent (e.g., rat or mouse), rabbit, ferret, hamster, or a human or non-human primate, a composition comprising a mutated version of SARS-CoV-2 proteins, or nucleic acids encoding mutated versions of SARS-CoV-2 proteins, wherein the mutated versions comprises one or more mutations that disrupt one or more non-neutralizing epitopes as described herein, allowing sufficient time for an immune response to occur in the mammal, and obtaining antibodies from the mammal, then screening the antibodies and identifying mutant viral proteins that produce higher titers of neutralizing antibodies, but produce fewer, or do not produce any, antibodies to non-neutralizing epitopes. These methods can be used to identify and select mutations that reduce the generation of antibodies to non-neutralizing epitopes. In some embodiments, the methods are used to reduce the possibility of inducing or increasing risk of post-viral syndrome in subjects vaccinated with an antibody vaccine.",
+                                "Also provided herein are mutated versions of SARS-CoV-2 proteins, or nucleic acids encoding mutated versions of SARS-CoV-2 proteins, wherein the mutations remove one or more of the non-neutralizing epitopes described herein. The mutated nucleic acids or proteins can be used to generate vaccine compositions, wherein administration of the composition would result in generation of antibodies to neutralizing epitopes but with fewer antibodies to non-neutralizing epitopes.",
+                                "Also provided herein are methods that can be used for identifying those antibodies that are most likely to induce a protective immune response. The methods include providing a sample comprising (or expected to comprise) antibodies to SARS-CoV-2 from a subject who has been administered a vaccine to SARS-CoV-2; contacting the sample with one or more peptides as described herein, and detecting binding of the sample to the peptides. Vaccines that produce antibodies that bind to epitopes associated with neutralizing antibodies are likely to induce a protective response, and can be selected for further development, while vaccines that produce an antibody response to non-neutralizing epitopes, or to both neutralizing and non-neutralizing epitiopes, may be less desirable.",
+                                "The present methods can also include isolating and identifying protective and non-protective antibodies from SARS-CoV-2 patient samples. The methods can include providing a sample including B cells or antibodies to SARS-CoV-2, e.g., obtained from a human subject infected with SARS-CoV-2; contacting the sample with one or more peptides described herein, and isolating B cells or antibodies that bind these peptides. The antibodies may then be tested for protective function via neutralizing activity or Fc-mediated effector function.",
+                                "The methods can further include formulating the antibodies that bind neutralizing epitopes for administration as a therapeutic, and administering the antibodies that bind neutralizing epitopes to a subject, e.g., a subject who has or is at risk of contracting an infection with SARS-CoV-2. In some embodiments, the methods include detecting binding to antibodies that bind non-neutralizing epitopes, and optionally removing antibodies that bind non-neutralizing epitopes. The methods can also include isolating antibodies that bind to the non-neutralizing epitopes, and adding those antibodies to non-neutralizing epitopes to a vaccine, such that the non-neutralizing epitopes are covered (not accessible), and thus can be eliminated from the response because they are covered and are not capable of eliciting an antibody response.",
+                                "Also provided herein are methods for generating antibodies to SARS-CoV-2. Methods for making suitable antibodies are known in the art. One or more of the peptides listed in Tables 1, 3, and/or 4, e.g., SEQ ID NO: 1036-1050, can be used as an immunogen, or can be used to identify antibodies made with other immunogens, e.g., cells, membrane preparations, and the like, e.g., E rosette positive purified normal human peripheral T cells, as described in U.S. Pat. Nos. 4,361,549 and 4,654,210.",
+                                "Methods for making monoclonal antibodies are known in the art. Basically, the process involves obtaining antibody-secreting immune cells (lymphocytes) from the spleen of a mammal (e.g., mouse) that has been previously immunized with the antigen of interest (e.g., a neutralizing epitope antigen) either in vivo or in vitro. The antibody-secreting lymphocytes are then fused with myeloma cells or transformed cells that are capable of replicating indefinitely in cell culture, thereby producing an immortal, immunoglobulin-secreting cell line. The resulting fused cells, or hybridomas, are cultured, and the resulting colonies screened for the production of the desired monoclonal antibodies. Colonies producing such antibodies are cloned, and grown either in vivo or in vitro to produce large quantities of antibody. A description of the theoretical basis and practical methodology of fusing such cells is set forth in Kohler and Milstein, Nature 256:495 (1975), which is hereby incorporated by reference.",
+                                "Mammalian lymphocytes are immunized by in vivo immunization of the animal (e.g., a mouse) with a neutralizing epitope antigen. Such immunizations are repeated as necessary at intervals of up to several weeks to obtain a sufficient titer of antibodies. Following the last antigen boost, the animals are sacrificed and spleen cells removed.",
+                                "Fusion with mammalian myeloma cells or other fusion partners capable of replicating indefinitely in cell culture is effected by known techniques, for example, using polyethylene glycol (\u201cPEG\u201d) or other fusing agents (See Milstein and Kohler, Eur. J. Immunol. 6:511 (1976), which is hereby incorporated by reference). This immortal cell line, which is preferably murine, but can also be derived from cells of other mammalian species, including but not limited to rats and humans, is selected to be deficient in enzymes necessary for the utilization of certain nutrients, to be capable of rapid growth, and to have good fusion capability. Many such cell lines are known to those skilled in the art, and others are regularly described.",
+                                "Procedures for raising polyclonal antibodies are also known. Typically, such antibodies can be raised by administering the protein or polypeptide of the present invention subcutaneously to New Zealand white rabbits that have first been bled to obtain pre-immune serum. The antigens can be injected at a total volume of 100:1 per site at six different sites. Each injected material will contain synthetic surfactant adjuvant pluronic polyols, or pulverized acrylamide gel containing the protein or polypeptide after SDS-polyacrylamide gel electrophoresis. The rabbits are then bled two weeks after the first injection and periodically boosted with the same antigen three times every six weeks. A sample of serum is then collected 10 days after each boost. Polyclonal antibodies are then recovered from the serum by affinity chromatography using the corresponding antigen to capture the antibody. Ultimately, the rabbits are euthanized, e.g., with pentobarbital 150 mg/Kg IV. This and other procedures for raising polyclonal antibodies are disclosed in E. Harlow, et. al., editors, Antibodies: A Laboratory Manual (1988).",
+                                "In addition to utilizing whole antibodies, the invention encompasses the use of binding portions of such antibodies. Such binding portions include Fab fragments, F(ab\u2032)2 fragments, and Fv fragments. These antibody fragments can be made by conventional procedures, such as proteolytic fragmentation procedures, as described in J. Goding, Monoclonal Antibodies: Principles and Practice, pp. 98-118 (N.Y. Academic Press 1983).",
+                                "The antibody can also be a single chain antibody. A single-chain antibody (scFV) can be engineered (see, for example, Colcher et al., Ann. N. Y. Acad. Sci. 880:263-80 (1999); and Reiter, Clin. Cancer Res. 2:245-52 (1996)). The single chain antibody can be dimerized or multimerized to generate multivalent antibodies having specificities for different epitopes of the same target protein. In some embodiments, the antibody is monovalent, e.g., as described in Abbs et al., Ther. Immunol. 1(6):325-31 (1994), incorporated herein by reference."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "identify public and/or immunodominant epitopes",
+                                "generate vaccines with disrupted or removed epitopes",
+                                "deliver vaccines with antibodies against epitopes",
+                                "reduce production of non-protective antibodies",
+                                "boost production of protective antibodies",
+                                "associate epitopes with neutralizing antibodies",
+                                "generate vaccines with mutated SARS-CoV-2 proteins",
+                                "administer mutated proteins to mammals",
+                                "obtain antibodies from mammals",
+                                "screen antibodies and identify mutant viral proteins",
+                                "reduce generation of antibodies to non-neutralizing epitopes",
+                                "identify antibodies that induce protective immune response",
+                                "isolate and identify protective and non-protective antibodies",
+                                "formulate antibodies for administration as therapeutic",
+                                "administer antibodies to subjects with SARS-CoV-2 infection",
+                                "detect binding to non-neutralizing epitopes",
+                                "remove antibodies that bind non-neutralizing epitopes",
+                                "generate antibodies to SARS-CoV-2 using peptides"
+                            ],
+                            "num_characters": 9245,
+                            "outline_medium": [
+                                "identify public and/or immunodominant epitopes",
+                                "generate vaccines with disrupted or removed epitopes",
+                                "deliver vaccines with antibodies against epitopes",
+                                "administer mutated SARS-CoV-2 proteins or nucleic acids",
+                                "screen for antibodies and identify mutant viral proteins",
+                                "identify and select mutations reducing non-neutralizing epitopes",
+                                "isolate and identify protective and non-protective antibodies",
+                                "formulate and administer antibodies binding neutralizing epitopes",
+                                "generate antibodies to SARS-CoV-2 using peptides as immunogens"
+                            ],
+                            "outline_short": [
+                                "identify non-protective epitopes",
+                                "generate vaccines with disrupted epitopes",
+                                "isolate and identify protective antibodies",
+                                "formulate and administer therapeutic antibodies"
+                            ]
+                        },
+                        {
+                            "title": "Prophylactic and Therapeutic Compositions",
+                            "paragraphs": [
+                                "Also provided herein are compositions for use in eliciting a protective immune response to SARS-CoV-2 comprising one or more peptides as described herein that bind to a neutralizing epitope. The compositions can also include an adjuvant to increase T cell response. For example, nanoparticles that enhance T cell response can be included, e.g., as described in Stano et al., Vaccine (2012) 30:7541-6 and Swaminathan et al., Vaccine (2016) 34:110-9. See also Panagioti et al., Front. Immunol., 16 Feb. 2018; doi.org/10.3389/fimmu.2018.00276. Alternatively or in addition, an adjuvant comprising poly-ICLC (carboxymethylcellulose, polyinosinic-polycytidylic acid, and 25 poly-L-lysine double-stranded RNA), Imiquimod, Resiquimod (R-848), CpG oligodeoxynuceotides and formulations (IC31, QB10), AS04 (aluminium salt formulated with 3-O-desacyl-4\u2032-monophosphoryl lipid A (MPL)), ASO1 (MPL and the saponin QS-21), MPLA, STING agonists, other TLR agonists, Candida albicans Skin Test Antigen (Candin), GM-CSF, Fms-like tyrosine kinase-3 ligand (Flt3L), 30 and/or IFA (Incomplete Freund's adjuvant) can also be used. See, e.g., Coffman et al., Immunity. 2010 Oct. 29; 33(4): 492-503. See, e.g., WO2006071896.",
+                                "These compositions can be administered in a therapeutically effective amount to subjects who have, or in a prophylactically effective amount to subjects who are at risk of developing, an infection with SARS-CoV-2. In some embodiments, the methods include administering two or more doses of the composition (e.g., an initial dose and a booster dose), e.g., 1, 2, 3, 4, 5, 6, 7, or 8, 12, 18, 24, or 52 weeks apart. In some embodiments, the methods include administering annual doses of the compositions, e.g., a prophylactically effective amount.",
+                                "The present compositions can be used prophylactically to induce anti-SARS-CoV-2 immunity, or therapeutically to treat a SARS-CoV-2 infection in a subject. The methods include administering one or more doses of the vaccine compositions described herein to a subject, e.g., a subject in need thereof.",
+                                "A therapeutically effective amount as used herein is an amount sufficient to reduce one or more symptoms of a SARS-CoV-2 infection in a subject, or to reduce the length of time that the subject is infected or is symptomatic. A prophylactically effective amount as used herein is an amount sufficient to reduce risk of a subject developing a SARS-CoV-2 infection, or reduce the risk that the subject will experience severe morbidity or mortality associated with a SARS-CoV-2 infection.",
+                                "Dosage, toxicity and therapeutic efficacy of the therapeutic compositions can be determined by standard pharmaceutical procedures in cell cultures or experimental animals, e.g., for determining the LD50 (the dose lethal to 50% of the population) and the ED50 (the dose therapeutically effective in 50% of the population). The dose ratio between toxic and therapeutic effects is the therapeutic index and it can be expressed as the ratio LD50/ED50. Compositions that exhibit high therapeutic indices are preferred. While compositions that exhibit toxic side effects may be used, care should be taken to minimize and reduce side effects.",
+                                "The data obtained from cell culture assays and animal studies can be used in formulating a range of dosage for use in humans. The dosage of such compounds lies preferably within a range of circulating concentrations that include the ED50 with little or no toxicity. The dosage may vary within this range depending upon the dosage form employed and the route of administration utilized. For any compositions used in the methods described herein, the therapeutically effective dose can be estimated initially from cell culture assays. A dose may be formulated in animal models. Such information can be used to more accurately determine useful doses in humans.",
+                                "Alternatively or in addition, peptides described herein as associated with a neutralizing response can be used to generate antibodies, e.g., for use in vaccines for inducing a protective response or for use in treating subjects. These methods include immunizing an animal, e.g., a mouse, rat, rabbit, guinea pig, goat, sheep, llama, or camel, with an amount of the peptides sufficient to induce an immune response. The antibodies can be isolated from the animals using known methods and formulated for administration as a therapeutic or prophylactic treatment as described herein. The antibodies can optionally be humanized or otherwise rendered less immunogenic before administration."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide compositions for eliciting protective immune response",
+                                "include peptides that bind to neutralizing epitopes",
+                                "include adjuvants to increase T cell response",
+                                "administer compositions to subjects with SARS-CoV-2 infection",
+                                "administer compositions to subjects at risk of SARS-CoV-2 infection",
+                                "determine therapeutically effective amount",
+                                "determine prophylactically effective amount",
+                                "estimate dosage from cell culture assays",
+                                "formulate dosage for human use"
+                            ],
+                            "num_characters": 4517,
+                            "outline_medium": [
+                                "provide compositions for eliciting protective immune response",
+                                "include adjuvants to increase T cell response",
+                                "administer compositions in therapeutically or prophylactically effective amounts",
+                                "determine dosage, toxicity, and therapeutic efficacy"
+                            ],
+                            "outline_short": [
+                                "describe vaccine compositions with neutralizing epitopes",
+                                "administer vaccine compositions to induce immunity"
+                            ]
+                        },
+                        {
+                            "title": "Kits and Compositions",
+                            "paragraphs": [
+                                "Also provided herein are kits and compositions comprising one or more of the peptides described herein. The peptides can be, e.g., labeled and/or conjugated to beads or surfaces for use in a method of screening as described herein. Beads useful in the present methods and compositions include magnetic beads, polystyrene beads, and agarose beads. Methods of conjugating the peptides to a bead or a surface are known and can include conjugations via carboxy, aldehyde, azide, or alkyne groups; avidin/streptavidin binding; or protein A/G binding. Exemplary beads include Luminex MAGPLEX Microspheres (carboxylated polystyrene micro-particles dyed into spectrally distinct sets) and DYNABEADS magnetic beads. Surfaces useful in the present methods and compositions include columns, culture dishes, assay plates such as multiwell assay plates, and coverslips, e.g., glass coverslips.",
+                                "Also provided are pharmaceutical compositions, which typically include a pharmaceutically acceptable carrier. As used herein the language \u201cpharmaceutically acceptable carrier\u201d includes saline, solvents, dispersion media, coatings, antibacterial and antifungal agents, isotonic and absorption delaying agents, and the like, compatible with pharmaceutical administration.",
+                                "Pharmaceutical compositions are typically formulated to be compatible with its intended route of administration. Examples of routes of administration include parenteral, e.g., intravenous, intradermal, subcutaneous, intratumoral, intramuscular or subcutaneous administration.",
+                                "Methods of formulating suitable pharmaceutical compositions are known in the art, see, e.g., Remington: The Science and Practice of Pharmacy, 21st ed., 2005; and the books in the series Drugs and the Pharmaceutical Sciences: a Series of Textbooks and Monographs (Dekker, NY). For example, solutions or suspensions used for parenteral, intradermal, intramuscular, or subcutaneous application can include the following components: a sterile diluent such as water for injection, saline solution, fixed oils, polyethylene glycols, glycerine, propylene glycol or other synthetic solvents; antibacterial agents such as benzyl alcohol or methyl parabens; antioxidants such as ascorbic acid or sodium bisulfite; chelating agents such as ethylenediaminetetraacetic acid; buffers such as acetates, citrates or phosphates and agents for the adjustment of tonicity such as sodium chloride or dextrose. pH can be adjusted with acids or bases, such as hydrochloric acid or sodium hydroxide. The parenteral preparation can be enclosed in ampoules, disposable syringes or multiple dose vials made of glass or plastic.",
+                                "Pharmaceutical compositions suitable for injectable use can include sterile aqueous solutions (where water soluble) or dispersions and sterile powders for the extemporaneous preparation of sterile injectable solutions or dispersion. For intravenous administration, suitable carriers include physiological saline, bacteriostatic water, Cremophor EL\u2122 (BASF, Parsippany, N.J.) or phosphate buffered saline (PBS). In all cases, the composition must be sterile and should be fluid to the extent that easy syringability exists. It should be stable under the conditions of manufacture and storage and must be preserved against the contaminating action of microorganisms such as bacteria and fungi. The carrier can be a solvent or dispersion medium containing, for example, water, ethanol, polyol (for example, glycerol, propylene glycol, and liquid polyetheylene glycol, and the like), and suitable mixtures thereof. The proper fluidity can be maintained, for example, by the use of a coating such as lecithin, by the maintenance of the required particle size in the case of dispersion and by the use of surfactants. Prevention of the action of microorganisms can be achieved by various antibacterial and antifungal agents, for example, parabens, chlorobutanol, phenol, ascorbic acid, thimerosal, and the like. In many cases, it will be preferable to include isotonic agents, for example, sugars, polyalcohols such as mannitol, sorbitol, sodium chloride in the composition. Prolonged absorption of the injectable compositions can be brought about by including in the composition an agent that delays absorption, for example, aluminum monostearate and gelatin.",
+                                "Sterile injectable solutions can be prepared by incorporating the active compound in the required amount in an appropriate solvent with one or a combination of ingredients enumerated above, as required, followed by filtered sterilization. Generally, dispersions are prepared by incorporating the active compound into a sterile vehicle, which contains a basic dispersion medium and the required other ingredients from those enumerated above. In the case of sterile powders for the preparation of sterile injectable solutions, the preferred methods of preparation are vacuum drying and freeze-drying, which yield a powder of the active ingredient plus any additional desired ingredient from a previously sterile-filtered solution thereof.",
+                                "In one embodiment, the therapeutic compounds are prepared with carriers that will protect the therapeutic compounds against rapid elimination from the body, such as a controlled release formulation, including implants and microencapsulated delivery systems. Biodegradable, biocompatible polymers can be used, such as ethylene vinyl acetate, polyanhydrides, polyglycolic acid, collagen, polyorthoesters, and polylactic acid. Such formulations can be prepared using standard techniques, or obtained commercially, e.g., from Alza Corporation and Nova Pharmaceuticals, Inc. Liposomal suspensions (including liposomes targeted to selected cells with monoclonal antibodies to cellular antigens) can also be used as pharmaceutically acceptable carriers. These can be prepared according to methods known to those skilled in the art, for example, as described in U.S. Pat. No. 4,522,811.",
+                                "The pharmaceutical compositions can be included in a container, pack, or dispenser together with instructions for administration."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide kits and compositions with peptides",
+                                "label and/or conjugate peptides to beads or surfaces",
+                                "use beads and surfaces for screening",
+                                "conjugate peptides to beads or surfaces",
+                                "provide pharmaceutical compositions",
+                                "include pharmaceutically acceptable carrier",
+                                "formulate compositions for parenteral administration",
+                                "formulate compositions for injectable use",
+                                "include antibacterial and antifungal agents",
+                                "include isotonic agents",
+                                "prepare sterile injectable solutions",
+                                "prepare sterile powders for injectable solutions"
+                            ],
+                            "num_characters": 6034,
+                            "outline_medium": [
+                                "provide kits and compositions comprising peptides",
+                                "label and/or conjugate peptides to beads or surfaces",
+                                "formulate pharmaceutical compositions with pharmaceutically acceptable carriers",
+                                "prepare sterile injectable solutions or dispersions",
+                                "prepare sterile powders for injectable solutions",
+                                "include instructions for administration"
+                            ],
+                            "outline_short": [
+                                "provide kits with labeled peptides for screening",
+                                "describe pharmaceutical compositions with peptides",
+                                "formulate pharmaceutical compositions for administration"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce COVID-19 and its variability",
+                        "describe factors influencing disease severity",
+                        "highlight the importance of the immune system",
+                        "provide background on SARS-CoV-2 genome",
+                        "introduce VirScan technology",
+                        "describe antibody profiling of COVID-19 patients",
+                        "discuss cross-reactivity with other coronaviruses",
+                        "highlight the need for improved diagnostics and vaccines"
+                    ],
+                    "num_characters": 4257,
+                    "outline_medium": [
+                        "introduce COVID-19 and its variability",
+                        "describe factors influencing disease severity",
+                        "discuss the importance of the immune system",
+                        "provide background on SARS-CoV-2 and its genome"
+                    ],
+                    "outline_short": [
+                        "introduce COVID-19 and its variability",
+                        "describe the immune system's role in disease severity"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [
+                        "The invention is further described in the following examples, which do not limit the scope of the invention described in the claims."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Materials and Methods",
+                            "paragraphs": [
+                                "The following materials and methods were used in the Examples below.",
+                                "Sources of serum used in this study",
+                                "Cohort 1",
+                                "Plasma samples were from volunteers recruited at Brigham and Women's Hospital who had recovered from a confirmed case of Corona Virus Infectious Disease 19 (COVID-19). All volunteers had a PCR-confirmed diagnosis of COVID-19 prior to being admitted to the study. Volunteers were invited to donate specimens after recovering from their illness and were required to be symptom free for a minimum of 7 days. Participants provided verbal and/or written informed consent and provided blood specimens for analysis. Clinical data including date of initial symptom onset, symptom type, date of diagnosis, date of symptom cessation, and severity of symptoms was recorded for all participants, as were results of COVID-19 molecular testing. Participation in these studies was voluntary and the study protocols have been approved by the respective Institutional Review Boards.",
+                                "Cohort 2",
+                                "Serum samples were provided by collaborators from University of Washington in patients with PCR-confirmed COVID-19 cases while admitted to the hospital. Residual clinical blood specimens were used, as well as patients who were actively enrolled into a prospective study of COVID-19 infection. Clinical data, including symptom duration and comorbidities were extracted from the medical records and from participant-completed questionnaires. All study procedures have been approved by the University of Washington Institutional Review Board.",
+                                "Cohort 3",
+                                "Plasma samples were provided by collaborators from Ragon Institute of MGH, MIT and Harvard and Massachusetts General Hospital from study participants in three settings: 1) PCR-confirmed COVID-19 cases while admitted to the hospital; 2) PCR-confirmed SARS-CoV-2 infected cases seen in an ambulatory setting; 2) PCR-confirmed COVID-19 cases in their convalescent stage. All study participants provided verbal and/or written informed consent. Basic data on days since symptom onset were recorded for all participants as were results of COVID-19 molecular testing. Participation in these studies was voluntary and the study protocols have been approved by the Partners Institutional Review Board.",
+                                "Cohort 4",
+                                "Patients were enrolled in the Emergency Department (ED) in Massachusetts General Hospital from 3/15/2020 to 4/15/2020 in Boston at the during the peak of the COVID-19 surge, with an institutional IRB-approved waiver of informed consent. These included patients 18 years or older with a clinical concern for COVID-19 upon ED arrival, and with acute respiratory distress with at least one of the following: 1) tachypnea\u226522 breaths per minute, 2) oxygen saturation\u226492% on room air, 3) a requirement for supplemental oxygen, or 4) positive-pressure ventilation. A blood sample was obtained in a 10 mL EDTA tube concurrent with the initial clinical blood draw in the ED. Day 3 and day 7 blood draws were obtained if the patient was still hospitalized at those times. Clinical course was followed to 28 days post-enrollment, or until hospital discharge if that occurred after 28 days.",
+                                "Enrolled subjects who were SARS-CoV-2 positive were categorized into four outcome groups: 1) Requiring mechanical ventilation with subsequent death, 2) Requiring mechanical ventilation and recovered, 3) Requiring hospitalization on supplemental oxygen but not requiring mechanical ventilation, and 4) Discharge from ED and not subsequently readmitted with supplemental oxygen. Those who were SARS-CoV-2 negative were categorized as Controls.",
+                                "Demographic, past medical and clinical data were collected and summarized for each outcome group, using medians with interquartile ranges and proportions with 95% confidence intervals, where appropriate.",
+                                "Cohorts 5, 6",
+                                "Longitudinal Hopkins Cohort: Remnant serum specimens were collected longitudinally from PCR confirmed COVID-19 patients seen at Johns Hopkins Hospital. Samples were de-identified prior to analysis, with linked time since onset of symptom information. Specimens were obtained and utilized in accordance with an approved IRB protocol.",
+                                "Cohorts 7-8",
+                                "Cohorts 7-8 were previously published (9, 10).",
+                                "Cohort 9",
+                                "Plasma samples were collected from consented participants of the Partner's Biobank program at BWH during the period from July to August 2016 from 37 female and 51 male individuals with ages ranging from 18 to 85 years old. Plasma was harvested after a 10 minutes 1200xg ficoll density centrifugation from blood that was diluted 1:1 in phosphate buffered saline. Samples were frozen at \u221230 C in 1 mL aliquots. All samples were collected with Partners Institutional Review Board (IRB) approval."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce sources of serum used in the study",
+                                "describe cohort 1",
+                                "describe cohort 2",
+                                "describe cohort 3",
+                                "describe cohort 4",
+                                "describe cohorts 5 and 6",
+                                "describe cohorts 7 and 8",
+                                "describe cohort 9",
+                                "summarize demographic and clinical data collection"
+                            ],
+                            "num_characters": 4688,
+                            "outline_medium": [
+                                "describe sources of serum used in study",
+                                "outline cohort demographics and data collection",
+                                "describe blood sample collection methods",
+                                "outline design and cloning of public epitope tiling and alanine scanning library"
+                            ],
+                            "outline_short": [
+                                "describe sources of serum used in study",
+                                "outline blood sample collection methods"
+                            ]
+                        },
+                        {
+                            "title": "Blood Sample Collection Methods",
+                            "paragraphs": [
+                                "For cohorts 1-3: Blood samples were collected into EDTA (Ethylenediamine Tetraacetic Acid) tubes and spun for 15 minutes at 2600 rpm according to standard protocol. Plasma was aliquoted into 1.5 ml cryovials and stored in \u221280\u00b0 C. until analyzed. Only de-identified plasma aliquots including metadata (e.g., days since symptom onset, severity of illness, hospitalization, ICU status, survival) were shared for this study. When appropriate for non-convelescent samples plasma/serum was also heat inactivated at 56\u00b0 C. for 60 minutes, and stored at \u226420C until analyzed.",
+                                "For cohort 4: Blood samples were collected in EDTA tubes, and processed no more than 3 hours post blood draw in a Biosafety Level 2+ laboratory on site. Whole blood was diluted with room temperature RPMI medium in a 1:2 ratio to facilitate cell separation for other analyses using the SepMate PBMC isolation tubes (STEMCELL) containing 16 ml of Ficoll (GE Healthcare). Diluted whole blood was centrifuged at 1200 rcf for 20 minutes at 20C. After centrifugation, plasma (5 mL) was pipetted into 15 mL conical tubes and placed on ice during PBMC separation procedures. Plasma was then centrifuged at 1000 rcf for 5 min at 4C, pipetted in 1.5 mL aliquots into 3 cryovials (4.5 mL total), and stored at \u221280C. For the current study samples (200 uL) were first randomly allocated onto a 96 well plate based on disease outcome grouping."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe blood sample collection for cohorts 1-3",
+                                "describe blood sample collection for cohort 4"
+                            ],
+                            "num_characters": 1397,
+                            "outline_medium": [
+                                "describe blood sample collection and processing methods"
+                            ],
+                            "outline_short": [
+                                "describe blood sample collection and processing methods"
+                            ]
+                        },
+                        {
+                            "title": "Design and Cloning of the Public Epitope Tiling and Alanine Scanning Library",
+                            "paragraphs": [
+                                "Multiple VirScan libraries were constructed and each peptide was encoded in two distinct ways so there were distinguishable duplicate peptides for each fragment described below. We created \u02dc200 nt oligos encoding peptide sequences 56 AAs in length, tiled with 28-amino acid overlap through the proteomes of all coronaviruses known to infect humans including HCov-NL63, HCoV-229E, HCoV-OC43, HCoV-HKU1, SARS-CoV, MERS and SARS-CoV-2 as well as three closely related bat viruses: BatCoV-Rp3, BatCoV-HKU3 and BatCoV-279. For SARS-CoV-2 we included a number of coding variants available in early sequencing of the viruses. For SARS-CoV-2 we additionally made a 20 AA tiling library with 15-AA overlap. Additionally, for SARS-CoV-2 we made triple-mutant sequences scanning through all 56-mer peptides. Non-alanine AAs were mutated to alanine, and alanines were mutated to glycine. We reverse-translated the peptide sequences into DNA sequences that were codon-optimized for expression in Escherichia coli, that lacked restriction sites used in downstream cloning steps (EcoRI and XhoI), and that were unique in the 50 nt at the 5\u2032 end to allow for unambiguous mapping of the sequencing results. Then we added adapter sequences to the 5\u2032 and 3\u2032 ends to form the final oligonucleotide sequences. Adapter sequences were added to the 5\u2032 and 3\u2032 ends to facilitate downstream PCR and cloning steps. Different adapters were added to each sub-library so that they could be amplified separately. The resulting sequences were synthesized on a releasable DNA microarray (Agilent). We PCR-amplified the DNA oligo library with the primers shown below, digested the product with EcoRI and XhoI, and cloned it into the EcoRI/SalI site of the T7FNS2 vector (Larman et al., 2011). We packaged the resultant library into T7 bacteriophage using the T7 Select Packaging Kit (EMD Millipore) and amplified the library according to the manufacturer's protocol."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design public epitope tiling library",
+                                "describe alanine scanning library",
+                                "clone library into T7FNS2 vector"
+                            ],
+                            "num_characters": 1932,
+                            "outline_medium": [
+                                "describe design and cloning of public epitope tiling and alanine scanning library"
+                            ],
+                            "outline_short": [
+                                "describe design and cloning of VirScan libraries"
+                            ]
+                        },
+                        {
+                            "title": "Phage Immunoprecipitation and Sequencing",
+                            "paragraphs": [
+                                "We performed phage immunoprecipitation and sequencing as described previously or with slight modifications (9). For the IgA and IgG chain isotype-specific immunoprecipitations, we substituted magnetic protein A and protein G Dynabeads (Invitrogen) with 6 \u03bcg Mouse Anti-Human IgG Fc-BIOT (Southern Biotech) or 4 \u03bcg Goat Anti-Human IgA-BIOT (Southern Biotech) antibodies. We added these antibodies to the phage and serum mixture and incubated the reactions overnight a 4\u00b0 C. Next, we added 25 \u03bcL or 20 \u03bcL of Pierce Streptavidin Magnetic Beads (Thermo-Fisher) to the IgG or IgA reactions, respectively, and incubated the reactions for 4 h at room temperature, then continued with the washing steps and the remainder of the protocol, as previously described (9)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe phage immunoprecipitation and sequencing"
+                            ],
+                            "num_characters": 758,
+                            "outline_medium": [
+                                "describe phage immunoprecipitation and sequencing methods"
+                            ],
+                            "outline_short": [
+                                "describe phage immunoprecipitation and sequencing methods"
+                            ]
+                        },
+                        {
+                            "title": "Gradient Boosting Machine Learning Algorithm",
+                            "paragraphs": [
+                                "Gradient boosting classifier models were generated using the XGBoost algorithm. Classifier models were trained to discriminate either COVID-19+ and COVID-19\u2014patients (n=232 and n=190 respectively) or severe disease and mild disease (n=101 hospitalized patients and n=131 non-hospitalized patients). Two models were generated in each case, one using the Z-scores for each VirScan peptide from the IgG immunoprecipitation as input features, and the other using the Z-scores for each VirScan peptide from the IgA immunoprecipitation as input features. Additionally, a third logistic regression classifier was trained on the output probabilities from the IgG and IgA models to generate a combined prediction. The performance of each of the three model was assessed using a 20-fold cross-validation procedure, whereby predictions for each 5% of the data points were generated from a model trained on the remaining 95%. The SHAP package was used to identify the top discriminatory peptide features from each of the XGBoost models."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "train gradient boosting classifier models",
+                                "evaluate model performance using cross-validation"
+                            ],
+                            "num_characters": 1024,
+                            "outline_medium": [
+                                "describe gradient boosting machine learning algorithm and model training"
+                            ],
+                            "outline_short": [
+                                "describe gradient boosting classifier models and training"
+                            ]
+                        },
+                        {
+                            "title": "High-Resolution Epitope Identification and Clustering",
+                            "paragraphs": [
+                                "To generate a single-amino acid resolution map of SARS-CoV-2 antibody epitopes triple-alanine scanning data from each 56-mer peptide were aggregated across each protein. For each position in the 56-mer, the relative enrichment for each amino-acid was calculated as the mean fold-change of the three mutant peptides containing an alanine-mutation at that location relative to the median fold-change of all alanine mutants for the 56-mer. Overlapping 56-mers were combined by taking the minimum value at each shared position to account for the possibility that an epitope is disrupted in one of the tiles by the peptide junction. To map epitopes from the alanine-scanning data for each sample we used the HMMlearn python package to develop a three-state Hidden-Markov model (HMM) assuming a gaussian distribution of relative-enrichment emissions for each state. Mapped epitopes smaller than 5 amino acids were removed from the subsequent analysis. Next, we performed two-step hierarchical clustering procedure to identify the number of unique epitopes. First, for each protein all of the epitopes identified across the 169 COVID-19+ patients were clustered based on the start and stop locations predicted by the HMM classifier to generate a set of positional clusters we refer to as hotspots. Next, to identify unique epitopes within each hotspot we performed an additional step of hierarchical clustering on the samples with epitopes within each hotspot based on the alanine-scanning relative-enrichment values within the hotspot region (FIGS. 10A-F). The total number of unique epitopes for each protein was taken as the number of distinct epitope groupings following clustering on both epitope location and the motif of relative-enrichments values within the hotspot region."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "generate single-amino acid resolution map of SARS-CoV-2 antibody epitopes",
+                                "identify epitopes using Hidden-Markov model",
+                                "cluster epitopes to identify unique epitopes"
+                            ],
+                            "num_characters": 1775,
+                            "outline_medium": [
+                                "describe high-resolution epitope identification and clustering methods"
+                            ],
+                            "outline_short": [
+                                "describe high-resolution epitope identification and clustering methods"
+                            ]
+                        },
+                        {
+                            "title": "Similarity-Score Calculation",
+                            "paragraphs": [
+                                "Pairwise alignments were generated for the S protein of SARS-CoV-2 and each of the four common HCoVs. Similarity scores were calculated separately for a 21-amino acid window centered at each position of the SARS-CoV-2 S protein. The mean similarity score between SARS-CoV-2 and the corresponding sequence of the other HCoV was calculated for each window using the BLOSUM62 substitution matrix with a gap opening and extending penalty of \u221210 and \u22121 respectively. The maximum similarity was score was calculated as the maximum value among the pairwise-similarity scores between SARS-CoV-2 and each of the four common HCoVs for the sliding window centered at each position."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "calculate similarity scores between SARS-CoV-2 and other HCoVs"
+                            ],
+                            "num_characters": 670,
+                            "outline_medium": [
+                                "describe similarity-score calculation methods"
+                            ],
+                            "outline_short": [
+                                "describe similarity-score calculation methods"
+                            ]
+                        },
+                        {
+                            "title": "Luminex Multiplex Peptide Epitope Serology Assays",
+                            "paragraphs": [
+                                "Multiplexed SARS-CoV-2 peptide epitope assays were built using the peptides listed in Table 1. Peptides were synthesized by the Ragon Core Facility with a Proparglyglycine (Pra, X) (Fmok-Pra-OH) moiety in the amino terminus to facilitate crosslinking to Luminex beads using a \u201cclick\u201d chemistry strategy as described (39). In brief, Luminex beads were first functionalized with amine-PEG4-azide and then reacted with the peptides to generate 20 different Luminex beads with attached peptides. Luminex bead-based serology assays were performed in 96-well U-bottom polypropylene plates using PBS+0.1% bovine serum albumin as the assay buffer. Bead washes were done using PBS+0.05% Triton X-100 by incubation for 1 minute on a strong magnetic plate (Millipore-Sigma, Burlington, Mass.). All assay incubation times were 20 minutes. In the first step, beads were incubated with 20 uL of plasma samples (1:300 dilution). Samples used for the classifier were diluted 1:100, samples used to compare disease severity were diluted 1:300. After a wash step, peptide bound IgA or IgG detection was performed by adding 40 \u03bcL of biotin-labeled anti-IgA or IgG antibodies at 0.1 \u03bcg/ml (Southern Biotechnology, Birmingham, Ala.). Bound IgA or IgG was detected by adding 40 \u03bcL of phycoerythrin (PE)-labeled streptavidin (0.2 \u03bcg/ml) (Biolegend, San Diego, Calif.). Assay plates were analyzed on a Luminex FLEXMAP 3D instrument (Luminex Corporation, Austin, Tex.) to generate median fluorescence intensity (MFI) values to quantify peptide-specific IgA or IgG levels.",
+                                "**ELISA Serology Assays**",
+                                "ELISAs were performed separately using the SARS-CoV-2 N protein, S protein, or the S receptor-binding domain (RBD). 96-well plates were coated with antigen overnight. The plates were then blocked in PBS+3% BSA. After washing with PBS+0.05% Tween-20, the plasma sample were diluted 1:100, added to the plates and incubated overnight at 4\u00b0 C. Following incubation, the plates were washed 3\u00d7 with PBS+0.05% Tween-20. The bound IgG was detected by adding anti-Human IgG-alkaline phosphatase (Southern Biotech, Birmingham, Ala.) and incubating for 90 minutes at room temperature. The plates were washed an additional three times after which p-nitrophenyl phosphate solution (1.6 mg/mL in 0.1 M glycine, 1 mM ZnCl2, 1 mM MgCl2, pH 10.4) was added to each well and allowed to develop for 2 hours. Bound IgG was quantified by measuring the OD405, and the reported values were calculated as the fold change over the pre-COVID-19 controls.",
+                                "**Example 1. Development of a VirScan Library Targeting Human Coronaviruses**",
+                                "Our existing VirScan phage-display platform is based on an oligonucleotide library encoding 56-amino acid (56-mer) peptides tiling every 28 amino acids across the proteomes of all known pathogenic human viruses (\u02dc400 species and strains) plus many bacterial proteins (10). In order to interrogate the serological response to SARS-CoV-2 and other human coronaviruses (HCoVs), we supplemented this library with additional oligonucleotides encoding peptides that span the proteome of SARS-CoV-2 itself, plus the proteomes of the six human coronaviruses and the three bat coronaviruses that are most closely related to SARS-CoV-2 (FIG. 1A) (11,12). These additional oligonucleotides were composed of three sub-libraries. Sublibrary 1 encoded a 56 amino acid peptide library that tiles every 28 amino acids through each of the open reading frames (ORFs) expressed by the 10 coronavirus species (FIG. 1B); sublibrary 2 encoded 20 amino acid peptides tiling every 5 amino acids across the SARS-CoV-2 proteome, thereby permitting more precise delineation of epitopes; and sublibrary 3 comprised triple alanine scanning mutants of the 56-mer peptides tiling across the SARS-CoV-2 proteome, enabling epitopes to be mapped at amino acid resolution.",
+                                "We used VirScan (FIG. 1C) to profile the antibody repertoires of 8 cohorts of individuals from multiple locations including Baltimore, Md., Boston, Mass. and Seattle, Wash. These cohorts comprised individuals enrolled in prospective studies of COVID-19 infection, patients with active COVID-19 receiving treatment either in hospital or outpatient settings, and convalescent patients who had recovered from COVID-19. Some of the cohorts included longitudinal samples, with patients tracked for several weeks following an initial sample taken at either the time of symptom onset or point of hospital entry. (For simplicity, we will refer to all individuals who have experienced COVID-19 as COVID-19 patients.) Our cohorts also included a diverse set of control sera collected prior to the outbreak of COVID-19; to facilitate the identification of epitopes specific to other HCoVs, these included a cohort of young children experiencing HCoV infections for the first time. In total, we analyzed approximately 2,000 individual samples in duplicate for IgG and IgA antibodies, assessing 200 million potential antibody peptide interactions.",
+                                "**Example 2. Detection of SARS-CoV-2 Seropositivity with VirScan**",
+                                "To measure immune responses to SARS-CoV-2, we compared VirScan profiles of serum samples from COVID-19 patients to those of controls obtained before the emergence of SARS-CoV-2 in 2019. These pre-COVID-19 era controls facilitate identification of (1) SARS-CoV-2 peptides encoding epitopes specific to COVID-19 patients and (2) SARS-CoV-2 peptides encoding epitopes that are cross-reactive with antibodies developed in response to the ubiquitous common-cold HCoVs. Sera from COVID-19 patients exhibited much more SARS-CoV-2 reactivity compared to pre-COVID-19 era controls (FIGS. 1D-E). Some cross-reactivity towards SARS-CoV-2 peptides was observed in the pre-COVID-19 era samples, but this was expected since nearly everyone has been exposed to HCoVs (18).",
+                                "COVID-19 patient sera also showed significant levels of cross-reactivity with the other highly pathogenic HCoVs, SARS-CoV and MERS-CoV, although less was observed against the more distantly-related MERS-CoV. Extensive cross-reactivity was also observed against peptides derived from the three bat coronaviruses that share the greatest sequence identity with SARS-CoV-2 (FIGS. 1A, 1D-E) (11). We know that these represent cross-reactivities as, given the low prevalence and circumscribed geographical location of SARS-CoV and MERS-CoV, none of the individuals in this study are likely to have encountered these viruses.",
+                                "COVID-19 patient sera also exhibited a significantly higher level of reactivity to seasonal HCoV peptides compared to pre-COVID-19 era controls (FIGS. 1D-E). This could be due to the elicitation of novel antibodies that cross-react, or to an anamnestic response boosting B cell memory against HCoVs. The converse is not always true: many pre-COVID-19 era samples exhibit strong recognition of seasonal HCoV peptides but little or no recognition of SARS-CoV-2 peptides (FIG. 1D), although one caveat may be that the concentrations of antibodies against seasonal HCoVs may be below the threshold of detection in the pre-COVID-19 era samples.",
+                                "**Example 3. Coronavirus Proteins Targeted by Antibodies in COVID-19 Patients**",
+                                "Analysis of SARS-CoV-2 proteins targeted by COVID-19 patient antibodies revealed that the primary responses to SARS-CoV-2 are reactive with peptides derived from spike (S) and nucleoprotein (N) (FIGS. 2A-B). These two proteins exhibit significant differential recognition by sera from COVID-19 patients versus pre-COVID-19 era controls, indicating that their recognition is a result of antibody responses to SARS-CoV-2. Third-most frequently recognized is the replicase polyprotein ORF1, but, unlike S and N, ORF1 is recognized to a similar extent by sera from COVID-19 patients and pre-COVID-19 era controls. This suggests that recognition of SARS-CoV-2 ORF1 is a result of cross-reactions from antibodies elicited by exposure to other pathogens, possibly HCoVs. Antibody responses to peptides from membrane glycoprotein (M), ORF3 and ORF9b were occasionally detected in COVID-19 patients.",
+                                "We also analyzed longitudinal samples from 23 COVID-19 patients. Most patients displayed an antibody response to peptides derived from the S or N in the second week after symptom onset, with many displaying an antibody response by the end of the first week (FIG. 2C). The relative strength and onset of the antibody response to the S and N differed dramatically between individuals, and the initial immune response showed no preference for the S or N. The signal intensity of antibodies recognizing SARS-CoV-2 ORF1 epitopes did not increase over time, further suggesting that ORF1 antibodies likely represent a preexisting cross-reactive response.",
+                                "**Example 4. Identification of Immunogenic Regions of SARS-CoV-2 Proteins**",
+                                "To more precisely define the immunogenic regions of the SARS-CoV-2 proteome, we examined the specific 56-mer and 20-mer peptides that were detected by VirScan in COVID-19 patients compared to pre-COVID-19 era controls. An example IgG response from a single patient to the SARS-CoV-2 S and N is shown in FIG. 3A. We observed strong concordance between the viral regions enriched by the 56-mer and 20-mer fragments, demonstrating the robustness of VirScan. In many cases we observed recognition of overlapping 56-mer peptides, indicating an epitope in the common region.",
+                                "Next, we compared the protein regions recognized by IgG and IgA across COVID-19 patients (FIG. 3B). We identified four regions each in the S and N that are recurrently targeted by antibodies from >15% of COVID-19 patients, with additional regions recognized less frequently. Overall, IgG and IgA recognize the same protein regions with similar frequencies across the population. However, when IgG and IgA responses were compared within individuals, we observed considerable divergence (FIG. 3C): many epitopes were recognized by only IgG, only IgA, or both IgG and IgA within an individual patient. Together, these data suggest that patients raise distinct IgG and IgA antibody responses to SARS-CoV-2, but the regions targeted are largely shared at a population level.",
+                                "**Example 5. Machine Learning Guides the Design of a Luminex Assay for Rapid COVID-19 Diagnosis**",
+                                "To predict SARS-CoV-2 exposure history from VirScan data, we developed a gradient-boosting algorithm (XGBoost) that integrated both IgG and IgA data and predicted current or past COVID-19 disease with 99.1% sensitivity and 98.4% specificity (FIGS. 4A-B). Interrogating the model using Shapley Additive exPlanations (SHAP), a method to compute the contribution of each feature of the data to the predictive model (20), we identified peptides from SARS-CoV-2 S and N plus homologous peptides from SARS-CoV and BatCoV-HKU-3 and BatCoV-279 that were highly predictive of SARS-CoV-2 exposure (FIGS. 4C-D).",
+                                "We leveraged these insights to develop a simple, rapid Luminex-based diagnostic for COVID-19. We chose 12 SARS-CoV-2 peptides predicted by VirScan data and the machine-learning model to be highly indicative of SARS-CoV-2 exposure history (Table 1). These SARS-CoV-2 peptides, plus two positive control peptides from Rhinovirus A and Epstein-Barr virus (EBV) that are recognized in over 80% of seropositive individuals by VirScan (9), and a negative control peptide from HIV-1, were coupled to Luminex beads (39). We tested 163 COVID-19 patient samples and 165 pre-COVID-19 era controls for IgG reactivity to the Luminex panel. We detected clear responses to SARS-CoV-2 peptides in COVID-19 patient samples but rarely in the pre-COVID-19 era controls (FIG. 4E). Using the Luminex data, we developed a logistic regression model that predicted COVID-19 infection history with 89.6% sensitivity and 95.2% specificity (AUC=0.97) (FIGS. 4F-G). A subset of the COVID-19 positive samples (n=107) were also examined using an in-house ELISA using three SARS-CoV-2 antigens: N, S, and the S receptor-binding domain (RBD). Considering a sample positive if it scored above the 99% specificity threshold on any one of the three ELISA antigens, we determined that the sensitivity of the Luminex assay for this subset (88.8%) was similar to that of the ELISA (90.7%) (FIGS. 13A-D). Among samples run on all three assays, VirScan significantly out-performed both the Luminex and ELISAs (FIG. 13A and C). Remarkably, our optimal model integrated only 3 SARS-CoV-2 peptides which were also the most discriminatory 20-mers in the VirScan data: N 386-406, S 810-830, and S 1146-1166. IgG responses in the COVID-19 patients were highly correlated between the Luminex and VirScan assays, providing orthogonal validation of the VirScan data and supporting the prevalence of SARS-CoV-2-induced humoral responses to these regions of the S and N (FIG. 13D).",
+                                "**Example 6. Differential Antibody Responses to Common Viruses in Hospitalized and Non-Hospitalized Patients**",
+                                "We next considered whether differences in the antibody response to SARS-CoV-2 or to other viruses might be associated with the severity of COVID-19 disease. We grouped the COVID-19 patients into two subsets: those who required hospitalization (n=101), and those who did not (n=131). We compared the responses to peptides derived from the SARS-CoV-2 S and N proteins between the hospitalized (H) and non-hospitalized (NH) groups, and found that the H group exhibited stronger and broader antibody responses to S and N peptides that might be due to epitope spreading (FIG. 5A). We then analyzed 32 NH COVID-19 samples, 32 H COVID-19 samples, and 32 pre-COVID-19 era negative controls with the Luminex assay, and similarly observed that the H group had stronger and broader antibody responses to SARS-CoV-2-specific peptides compared with the NH group (FIG. 5B).",
+                                "VirScan also offers the opportunity to examine the history of previous viral infections and to determine correlates of COVID-19 outcomes. For example, prior viral exposure could provide some protection if cross-reactive neutralizing antibodies or T cell responses are stimulated upon exposure to SARS-CoV-2 (21, 22). Alternatively, cross-reactive antibodies to viral surface proteins could increase the risk of severe disease due to antibody-dependent enhancement (ADE), as has been observed for SARS-CoV (23, 24). Furthermore, exposure to certain viruses could impact the response to SARS-CoV-2 by altering the immune system. To examine these possibilities, we analyzed the virome-wide VirScan data and found that overall, the NH patients exhibited greater responses to individual peptides from common viruses such as Rhinoviruses, Influenza viruses, and Enteroviruses, while the H patients displayed greater responses to peptides from cytomegalovirus (CMV) and Herpes Simplex Virus 1 (HSV-1) (FIG. 5C). These observations may be influenced by demographic differences in the NH and H cohorts as described below.",
+                                "We sought to understand whether the differential reactivity to CMV and HSV-1 between the H and NH patients was due to differences in the strength of antibody responses or the prevalence of infection (these viruses are common, but not ubiquitous as are Rhinoviruses, Enteroviruses and Influenza viruses). Using VirScan data, we found that the H group had a higher incidence of both CMV and HSV-1 infection: 82.2% (83/101) of the H group were positive for CMV versus 37.4% (49/131) of the NH group, while 92.1% (93/101) of the H group were positive for HSV-1 versus 45.8% (60/131) of the NH group. To examine the relative strength of the antibody responses, we considered only CIV or HSV-1 seropositive individuals from the NH and H groups: the antibody response to both CMV (FIG. 5D) and HSV-1 (FIG. 14) was stronger among the NH individuals. Thus, the differing seroprevalence of CIV and HSV-1 in the NH versus H groups likely explain the results shown in FIG. 5C. We conclude that antibody responses to nearly all viruses, except SARS-CoV-2, were weaker in the H patients compared to the NH patients.",
+                                "These striking differences led us to examine potential demographic covariates between the NH and H groups. We found that age, sex, and race were all significantly associated with COVID-19 severity, as has been reported (25, 26). Higher age, male sex, and non-white ethnicity groups were significantly overrepresented in the H group compared with the NH group. Furthermore, hospitalized males exhibited stronger responses to N than hospitalized females while non-hospitalized males and females did not exhibit differential responses to any SARS-CoV-2 proteins. Advanced age is a dominant risk factor for severe COVID-19 and is correlated with reduced immune function (38). In light of the age difference between the H (median age 58) and NH (median age 42) patients in our cohort, we reasoned that the antigens recognized more strongly in the NH group might reflect more general age-associated changes in humoral immunity. To test this hypothesis, we examined VirScan data for a cohort of 648 healthy, pre-pandemic donors. We characterized the recognition of each NH-associated peptide in subsets of the healthy donors representing different age groups and observed a general decline in recognition with age, including a median 19% reduction in recognition from age 42 to 58 (FIG. 5E). These data suggest that age-related changes to the immune system may in part explain the observation of weaker antibody responses to most viruses in the H group. While correlative and potentially influenced by other demographic differences between the NH and H cohorts, the broad age-related diminution in immune system activity we observed could be an important aspect of the increased severity in the H group.",
+                                "**Example 7. Cross Reactivity of SARS-CoV-2 Epitopes**",
+                                "We returned to the question of epitope cross-reactivity, this time examining antibody responses to the triple-alanine scanning library. For each 56-mer peptide spanning the SARS-CoV-2 proteome, this library contained a collection of scanning mutants: the first mutant peptide encoded 3 alanines instead of the first 3 residues, the second mutant peptide contained the 3 alanines moved one residue downstream, and so on (FIGS. 14A-B). Antibodies that recognize the wild-type 56-mer peptide will not recognize mutant versions of the peptide containing alanine substitutions at critical residues; thus, the location of the linear epitope can be deduced by looking for \u201cantibody footprints\u201d, indicated by stretches of alanine mutants missing from the pool of immunoprecipitated phage. The first and last triple-alanine mutations to interfere with binding are expected to start two amino acids before the first residue essential for the antibody binding, and end two amino acids after the last.",
+                                "With respect to cross-reactivity, IgG from COVID-19 patients recognized more 56-mer peptides from the common HCoVs HKU1, OC43, 299E, and NL63, than IgG from pre-COVID-19 era controls. This difference is primarily driven by a dramatic increase in recognition of S peptides from the HCoVs and is likely a result of cross-reactivity of antibodies developed during SARS-CoV-2 infection (FIG. 6A).",
+                                "We mapped the position of all HCoV S peptides that display increased recognition in COVID-19 patient samples onto the SARS-CoV-2 S protein. This revealed four immunodominant regions recognized by >25% of COVID-19 patients (FIG. 6B). Comparing the frequency of peptide recognition between the COVID-19 patients and pre-COVID-19 era controls showed that two of these immunogenic regions in SARS-CoV-2 S are likely strongly cross-reactive with homologous regions of other HCoVs, as the frequency of recognition of the HCoV peptides at these regions rises in COVID-19 patients. For instance, peptides from all four seasonal HCoVs that span the region corresponding to residues 811-830 of SARS-CoV-2 S are frequently recognized by COVID-19 patients but much less so by pre-COVID-19 era controls, suggesting that this recognition is a result of antibodies developed or boosted in response to SARS-CoV-2 infection. Using triple-alanine scanning mutagenesis (FIGS. 14A-B), we mapped the antibody footprints in this region to an 11 amino acid stretch that is highly conserved between SARS-CoV-2 and all four common HCoVs, which explains the cross-reactivity (FIGS. 6C-D). Similarly, both SARS-CoV-2 and HCoV-OC43 peptides corresponding to S 1144-1163 were recognized much more frequently by COVID-19 patients than pre-COVID-19 era controls, and triple-alanine-scanning mutagenesis confirmed that the antibody footprints are located within a 10 amino acid stretch conserved between SARS-CoV-2 and HCoV-OC43 but not the other HCoVs. In contrast, the epitope sequences around S 551-570 and S 766-785 are not conserved between SARS-CoV-2 and the seasonal HCoVs, and indeed these epitopes are not cross-reactive. One HCoV-HKU1 peptide spanning S 551-570 scores in both COVID-19 patients and pre-COVID-19 era control samples; however, its frequency of detection is not further boosted in COVID-19 patients, suggesting the antibody responsible for boosting the SARS-CoV-2 S 551-570 peptide is distinct from the antibody recognizing the HCoV-HKU1 peptide, consistent with differences in sequence at this location (FIG. 6C).",
+                                "Interestingly, we detected antibody responses to SARS-CoV-2 S 811-830 in 79% of COVID-19 patients, but we also saw responses to the corresponding peptides from OC43 and 229E in \u02dc20% of the pre-COVID-19 era controls and these responses seem to cross-react with SARS-CoV-2. It is possible that some patients have pre-existing antibodies to this region that cross-react and are expanded during SARS-CoV-2 infection. This might explain the remarkably high prevalence of antibody responses to this epitope, and suggests that anamnestic responses to seasonal coronaviruses may influence the antibody response to SARS-CoV-2. Interestingly, this region is located directly after the predicted S2\u2032 cleavage site for SARS-CoV-2 and overlaps the fusion peptide. A recent study showed that adding an excess of the fusion peptide reduced neutralization, implying that an antibody that binds the fusion peptide might contribute to neutralization by interfering with membrane fusion (27, 29). Given the frequency of seroreactivity toward this epitope in COVID-19 patients, it will be important to determine if the antibodies recognizing this epitope are neutralizing in future studies.",
+                                "**Example 8. High Resolution Epitope Mapping Reveals Hundreds of Distinct SARS-CoV-2 Epitopes, Including Likely Epitopes of Neutralizing Antibodies**",
+                                "We also used the triple-alanine scanning mutagenesis library to map antibody footprints across the entire SARS-CoV-2 proteome (FIG. 7, FIGS. 12A-D and Tables 3-4). We used a Hidden Markov Model (HMM) to analyze the mutagenesis data and detect antibody footprints. By integrating signals across stretches of consecutive residues, the HMM successfully distinguished antibody footprints from random noise and thus detected regions containing epitopes with improved sensitivity and with far greater resolution than was possible with the 56-mer peptide data alone (see Methods) (FIGS. 8A-C, FIGS. 9A-B). We performed hierarchical clustering on the antibody footprints identified by the HMM to determine the number of distinct epitopes (here defined as unique antibody footprints) that we detected across the SARS-CoV-2 proteome (FIGS. 10A-F). Overall, we identified 3103 antibody footprints across 169 COVID-19 patient samples and mapped 823 distinct epitopes (Table 4). These epitopes are not evenly distributed along the proteins but rather fall into 303 epitope clusters, each of which contains multiple overlapping epitopes (FIGS. 10A-F, Table 3). For example, across the 89 IgA samples that recognized the epitope cluster from S 1135-1165, we identified 9 epitopes that overlap but have distinct triple-alanine scanning profiles that indicate unique antibody-epitope interactions (FIG. 10C). Individual epitopes are recognized at a wide range of frequencies in the COVID-19 patients. The average COVID-19 patient sample contained antibodies to \u02dc18 distinct linear epitopes (FIGS. 11A-I), although this is likely an underestimate of the total epitope count per person as VirScan does not efficiently detect antibodies recognizing discontinuous (conformational) epitopes (although such antibodies may retain some affinity to linear peptides comprising the epitope).",
+                                "The SARS-CoV-2 epitope landscape includes regions recognized by a large fraction of COVID-19 patients (public epitopes) and regions recognized by one or a few individuals (private epitopes). For example, we mapped 6 distinct epitopes in the region spanning N 151-175 (FIG. 12C). One of these epitopes was recognized by nearly one-third of the COVID-19 patients, while the rest were detected by less than 2% of the COVID-19 patients. Similarly, the region spanning S 766-835 contained over 20 distinct epitopes, including the highly public epitope cluster near S815 and the public epitope cluster near S770 that is preferentially recognized by IgA (FIG. 7B). This epitope cluster was identified by 43% of COVID-19 patient IgA samples but only 4% of COVID-19 patient IgG samples. In another example, we detected at least 20 distinct epitopes within a stretch of just 46 residues in N 363-408, 10 of which were specific to IgA and 2 of which were specific to IgG (FIG. 12D).",
+                                "We also mapped at least 12 distinct epitopes in the SARS-CoV-2 RBD, including 5 in the receptor binding motif (RBM) that binds ACE2, the human receptor for SARS-CoV-2, and 5 that are directly adjacent to ACE2 binding sites (FIGS. 7C-D, FIG. 8A). For example, S 414-427 (labeled E2 in FIGS. 7A-H) spans residue K417 in the RBD; K417 makes a direct contact with the human ACE2 protein in structures of ACE2 bound to the RBD. Thus, antibodies recognizing E2 are likely to block ACE2 binding and have neutralizing activity (FIG. 7E). Epitope S 454-463 (labeled E6 in FIGS. 7A-H) also overlaps ACE2 contact residues and partially overlaps the binding site of the neutralizing antibody CB6, suggesting that antibodies recognizing this epitope also have neutralizing potential (28-30) (FIG. 7G). Several other epitopes also span or are adjacent to critical residues contacted by ACE2 (FIGS. 7F and H). Thus, our data reveal some of the likely binding sites for neutralizing antibodies.",
+                                "Table 3 presents 303 peptide epitope clusters, and Table 4 presents 823 epitopes with their peptide sequences, with an indication of whether the peptide is believed to be the receptor binding domain (RBD) (True/False)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Luminex beads",
+                                "synthesize peptides with Proparglyglycine moiety",
+                                "functionalize Luminex beads with amine-PEG4-azide",
+                                "react peptides with Luminex beads using click chemistry",
+                                "perform Luminex bead-based serology assays",
+                                "incubate beads with plasma samples",
+                                "detect peptide-bound IgA or IgG",
+                                "analyze assay plates on Luminex FLEXMAP 3D instrument",
+                                "quantify peptide-specific IgA or IgG levels",
+                                "introduce ELISA serology assays",
+                                "coat 96-well plates with antigen",
+                                "block plates with PBS+3% BSA",
+                                "incubate plasma samples with plates",
+                                "detect bound IgG with anti-Human IgG-alkaline phosphatase",
+                                "quantify bound IgG by measuring OD405",
+                                "introduce VirScan library targeting human coronaviruses",
+                                "supplement library with oligonucleotides encoding peptides",
+                                "profile antibody repertoires of individuals",
+                                "analyze VirScan profiles of serum samples",
+                                "identify epitopes specific to COVID-19 patients",
+                                "introduce Luminex Multiplex Peptide Epitope Serology Assays",
+                                "develop gradient-boosting algorithm",
+                                "integrate IgG and IgA data",
+                                "predict current or past COVID-19 disease",
+                                "identify peptides from SARS-CoV-2 S and N proteins",
+                                "develop Luminex-based diagnostic for COVID-19",
+                                "choose SARS-CoV-2 peptides for Luminex assay",
+                                "couple peptides to Luminex beads",
+                                "test COVID-19 patient samples and pre-COVID-19 era controls",
+                                "develop logistic regression model",
+                                "compare Luminex assay with ELISA",
+                                "integrate only 3 SARS-CoV-2 peptides",
+                                "correlate IgG responses between Luminex and VirScan assays",
+                                "introduce Example 6",
+                                "group COVID-19 patients into hospitalized and non-hospitalized subsets",
+                                "compare responses to SARS-CoV-2 S and N peptides",
+                                "analyze Luminex assay data",
+                                "examine virome-wide VirScan data",
+                                "analyze responses to common viruses",
+                                "examine differential reactivity to CMV and HSV-1",
+                                "analyze relative strength of antibody responses",
+                                "examine demographic covariates",
+                                "analyze VirScan data for healthy donors",
+                                "introduce Example 7",
+                                "examine antibody responses to triple-alanine scanning library",
+                                "map position of HCoV S peptides",
+                                "compare frequency of peptide recognition",
+                                "use triple-alanine scanning mutagenesis",
+                                "map antibody footprints",
+                                "introduce Example 8",
+                                "use Hidden Markov Model to analyze mutagenesis data",
+                                "identify distinct epitopes across SARS-CoV-2 proteome"
+                            ],
+                            "num_characters": 26517,
+                            "outline_medium": [
+                                "describe Luminex bead-based serology assays",
+                                "detail peptide synthesis and attachment to Luminex beads",
+                                "outline assay protocol for detecting IgA or IgG levels",
+                                "describe ELISA serology assays",
+                                "detail ELISA protocol for detecting IgG levels",
+                                "introduce VirScan library targeting human coronaviruses",
+                                "describe development of VirScan library",
+                                "outline profiling of antibody repertoires using VirScan",
+                                "analyze immune responses to SARS-CoV-2 using VirScan",
+                                "identify immunogenic regions of SARS-CoV-2 proteins",
+                                "develop gradient-boosting algorithm",
+                                "identify predictive peptides",
+                                "develop Luminex-based diagnostic",
+                                "test COVID-19 patient samples",
+                                "develop logistic regression model",
+                                "compare Luminex and ELISA assays",
+                                "analyze differential antibody responses",
+                                "examine correlates of COVID-19 outcomes",
+                                "analyze virome-wide VirScan data",
+                                "examine demographic covariates",
+                                "analyze antibody responses to triple-alanine scanning library",
+                                "map position of HCoV S peptides",
+                                "identify immunodominant regions",
+                                "map antibody footprints across SARS-CoV-2 proteome",
+                                "identify distinct epitopes",
+                                "analyze epitope landscape"
+                            ],
+                            "outline_short": [
+                                "describe Luminex bead-based serology assays",
+                                "perform ELISA serology assays",
+                                "develop VirScan library targeting human coronaviruses",
+                                "detect SARS-CoV-2 seropositivity with VirScan",
+                                "identify immunogenic regions of SARS-CoV-2 proteins",
+                                "develop gradient-boosting algorithm",
+                                "identify predictive peptides",
+                                "develop Luminex-based diagnostic",
+                                "analyze antibody responses to SARS-CoV-2 and other viruses",
+                                "examine demographic covariates",
+                                "analyze cross-reactivity of SARS-CoV-2 epitopes",
+                                "map antibody footprints across SARS-CoV-2 proteome",
+                                "identify distinct epitopes, including likely epitopes of neutralizing antibodies"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe examples of the invention"
+                    ],
+                    "num_characters": 132,
+                    "outline_medium": [
+                        "describe materials and methods used in examples"
+                    ],
+                    "outline_short": [
+                        "describe materials and methods used in examples"
+                    ]
+                },
+                {
+                    "title": "OTHER EMBODIMENTS",
+                    "paragraphs": [
+                        "It is to be understood that while the invention has been described in conjunction with the detailed description thereof, the foregoing description is intended to illustrate and not limit the scope of the invention, which is defined by the scope of the appended claims. Other aspects, advantages, and modifications are within the scope of the following claims."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "discuss scope of the invention"
+                    ],
+                    "num_characters": 359,
+                    "outline_medium": [
+                        "disclaim limitations of the invention"
+                    ],
+                    "outline_short": [
+                        "describe scope of invention"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of detecting the presence of antibodies that bind to SARS-CoV-2 in a sample, the method comprising:\nproviding a sample comprising or suspected of comprising antibodies that bind to SARS-CoV-2;\ncontacting the sample with one, two, or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising 4 or more consecutive amino acids from a SARS-CoV-2 epitope sequence shown in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, under conditions sufficient for binding of antibodies in the sample to the peptides; and\ndetecting binding of antibodies in the sample to the peptides.",
+        "2. The method of claim 1, wherein the sample is from a subject, optionally a subject who is known or suspected of being infected with SARS-CoV-2.",
+        "3. The method of claim 2, further comprising identifying a subject who has antibodies that bind to SARS-CoV-2 as having been infected with SARS-CoV-2.",
+        "4. The method of claim 3, further comprising administering a treatment for SARS-CoV-2 to the subject or monitoring the subject for later health consequences of infection with SARS-CoV-2.",
+        "5. The method of claims 2-4, wherein the subject is a human subject.",
+        "6. The method of claims 1-5, wherein the sample comprises whole blood, serum, saliva or plasma.",
+        "7. The method of claims 1-6, wherein the peptides comprise a detectable moiety, are conjugated to a bead, or are conjugated to a surface.",
+        "8. The method of claims 1-7, wherein the detectable moiety is a fluorescent label.",
+        "9. The method of claim 7, wherein the surface is a multiwell plate or glass coverslip.",
+        "10. The method of claim 7, wherein the beads are magnetic.",
+        "11. The method of claims 1-10, wherein detecting comprises performing an immunoassay, multiplex immunoassay, protein-fragment complementation assay (PCA), or single molecule array.",
+        "12. A composition comprising one, two, or a plurality of antigenic peptides comprising 4 or more consecutive amino acids from epitope sequences shown in Table 1, 3, or 4 or SEQ ID NOs:13-1170, e.g., from one of SEQ ID NOs: 1036-1050.",
+        "13. The composition of claim 12, wherein at least one of the peptides comprises a detectable moiety, is conjugated to a bead, or is conjugated to a surface.",
+        "14. The composition of claim 13, wherein the detectable moiety is a fluorescent label.",
+        "15. The composition of claim 13, wherein the surface is a multiwell plate or glass coverslip.",
+        "16. The composition of claim 13, wherein the beads are magnetic.",
+        "17. The composition of claim 12, further comprising a pharmaceutically acceptable carrier and optionally an adjuvant.",
+        "18. The composition of claims 12 or 17, for use in a method of treating or reducing risk of an infection with SARS-CoV-2 in a subject.",
+        "19. A method of treating or reducing risk or severity of an infection with SARS-CoV-2 in a subject, the method comprising administering a therapeutically of prophylactically effective amount of the composition of claims 12 or 17.",
+        "20. A method of generating an antibody to SARS-CoV-2, the method comprising administering the composition of claims 12 or 17, and optionally an adjuvant, to a mammal, and isolating antibodies from the mammal that bind to SARS-CoV-2.",
+        "21. A method of identifying antibodies that bind to neutralizing or non-neutralizing epitopes of SARS-CoV-2, the method comprising:\nproviding a sample comprising an antibody obtained, preferably cloned, from a human who has had a SARS-CoV-2 infection;\ncontacting the antibody with peptides comprising one or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 or more, consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, wherein:\n(i) the peptides comprise non-neutralizing epitopes, e.g., from one of SEQ ID NOs: 333-1035 or 1051-1155, and the contacting is performed under conditions to allow binding of the antibody on B cells to the peptides; and identifying the antibody as non-neutralizing if it binds to a peptide that comprises a non-neutralizing epitope; or\n(ii) the peptides comprise neutralizing epitopes, e.g., from one of SEQ ID NOs: 1036-1050, and the contacting is performed under conditions to allow binding of the antibody on B cells to the peptides; and identifying the antibody as neutralizing if it binds to a peptide that comprises a neutralizing epitope.",
+        "22. The method of claim 21, further comprising cloning one or more antibodies, wherein cloning the antibodies comprises providing a sample of B cells from a human who has had a SARS-CoV-2 infection; contacting the B cells with peptides including one, two, or more of the epitope sequences shown in Table 1, Table 3, and/or Table 4, optionally one of one of SEQ ID NOs: 1036-1050; cloning and sequencing B cells encoding antibodies specific for one or more of the epitope sequences; and optionally testing these antibodies for neutralizing activity or Fc-mediated effector function (e.g., antibody-dependent cellular cytotoxicity, complement-dependent cytotoxicity, and antibody-dependent cellular phagocytosis).",
+        "23. The method of claim 21, further comprising formulating the optimized population of antibodies into a pharmaceutical composition by mixing the antibodies with a pharmaceutically acceptable carrier.",
+        "24. The method of claim 23, further comprising administering a therapeutically effective amount of the pharmaceutical composition to a subject in need thereof.",
+        "25. The method of claim 21, further comprising cloning one or more antibodies identified as non-neutralizing into a pharmaceutical composition.",
+        "26. The method of claim 21, further comprising formulating the optimized population of antibodies into a pharmaceutical composition by mixing the antibodies with one or more of a pharmaceutically acceptable carrier, an adjuvant, and/or a SARS-CoV-2 vaccine comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide.",
+        "27. The method of claim 26, further comprising administering a prophylactically effective amount of the pharmaceutical composition to a subject in need thereof.",
+        "28. A method of selecting a vaccine composition for use in eliciting a prophylactic response to SARS-CoV-2 in a subject, the method comprising:\nadministering a composition comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide, to a test subject in an amount sufficient to elicit an immune response;\nobtaining a sample comprising antibodies obtained from the subject;\ncontacting the sample with one or more, e.g., 1, 2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 50, 75, 80, 100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800, or more, peptides comprising at least 4, e.g., 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 or more, consecutive amino acids from a SARS-CoV-2 epitope sequence shown herein, e.g., in Table 1, Table 3, and/or Table 4 or SEQ ID NOs:13-1170, under conditions to allow binding of the antibody to the peptides;\ndetecting binding of antibodies in the sample to the peptides, wherein:\n(i) the composition of the vaccine excludes one or more epitopes that elicit non-protective antibodies; or\n(ii) the composition of the vaccine comprises epitopes that elicit protective (neutralizing) antibodies, e.g., one of one of SEQ ID NOs: 1036-1050; and selecting a vaccine composition that elicits neutralizing antibodies.",
+        "29. The method of claim 28, wherein the vaccine composition comprises one or more mutations in a non-neutralizing epitope.",
+        "30. A composition comprising a SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide, wherein the SARS-CoV-2 protein, peptide, or nucleic acid encoding a SARS-CoV-2 protein or peptide comprises a mutation in a non-neutralizing epitope sequences shown in Table 3 or 4, and a pharmaceutically acceptable carrier, and optionally an adjuvant.",
+        "31. The composition of claim 30, for use in eliciting a prophylactic response in a subject.",
+        "32. A method of generating an antibody to SARS-CoV-2, the method comprising administering the composition of claim 30 to a subject.",
+        "33. A method of treating or reducing risk or severity of an infection with SARS-CoV-2 in a subject, the method comprising administering a therapeutically or prophylactically effective amount of the composition of claim 30 to the subject.",
+        "34. A kit comprising the composition of claims 12-16, for use in a method of detecting the presence of antibodies that bind to SARS-CoV-2 in a sample."
+    ]
+}

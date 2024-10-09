@@ -1,0 +1,132 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce quantum circuits
+- motivate Clifford circuits
+- limitations of conventional optimization techniques
+
+## SUMMARY
+
+- introduce system for Clifford circuit optimization
+- describe partitioned template matching
+- describe symbolic peephole optimization
+
+## DETAILED DESCRIPTION
+
+- introduce quantum circuits
+- motivate Clifford circuits
+- define Clifford gates
+- explain Pauli-push equations
+- describe template matching
+- outline optimization procedure
+- introduce Clifford circuits
+- limitations of conventional template matching
+- limitations of conventional peephole optimization
+- motivate partitioned template matching
+- motivate symbolic peephole optimization
+- define partitioned template matching
+- define symbolic peephole optimization
+- describe partitioning of Clifford circuit
+- apply template matching to computation stage
+- optimize SWAP stage
+- describe floating-gates technique
+- apply symbolic peephole optimization
+- rewrite straddling gates
+- replace straddling gates with symbolic Pauli gates
+- perform peephole optimization on subcircuit
+- integrate partitioned template matching and symbolic peephole optimization
+- describe electronic generation of optimized Clifford circuits
+- describe control of real-world devices
+- illustrate block diagram of Clifford optimization system
+- describe partition component
+- describe template component
+- describe floating component
+- describe SWAP component
+- describe symbolic component
+- describe peephole component
+- illustrate flow diagrams of computer-implemented methods
+- describe optimization method
+- introduce partitioned template matching
+- introduce symbolic peephole optimization
+- describe computer-implemented method 200
+- describe computer-implemented method 300
+- explain novel algorithms for Clifford circuit optimization
+- describe baseline compiler
+- prove Lemma 1
+- describe system 500
+- explain partitioning of suboptimal Clifford circuit
+- describe system 800
+- explain template matching
+- introduce template component
+- describe Hadamard pushing and Phase pushing
+- illustrate templates for Hadamard and Phase pushing
+- introduce floating gate conversion rules
+- describe floating component functionality
+- illustrate floating gate pushing
+- introduce SWAP equivalence relations
+- describe SWAP component functionality
+- illustrate SWAP gate optimization
+- introduce symbolic Pauli gates
+- describe symbolic component functionality
+- define cost of gates and circuits
+- describe symbolic peephole optimization
+- define restriction of circuit onto subset of qubits
+- describe rewiring of entangling/straddling CNOT gates
+- partition entangling/straddling CNOT gates into groups
+- expand entangling/straddling CNOT gates
+- define UA and UB circuits
+- define symbolic component 120
+- optimize Clifford circuits
+- select subset A to optimize
+- illustrate symbolic peephole optimization
+- describe system 1900
+- implement dynamic programming
+- define Clifford-plus-symbolic-Pauli-gate operator
+- specify Clifford-plus-symbolic-Pauli-gate circuit
+- define cost of Clifford-plus-symbolic-Pauli-gate circuit
+- minimize cost function
+- describe dynamic programming method
+- prove Lemma 2
+- illustrate flow diagrams of computer-implemented methods
+- describe computer-implemented method 2000
+- describe computer-implemented method 2100
+- perform peephole optimization
+- select subset of qubits
+- rewire entangling gates
+- replace rewired gates with symbolic Pauli gates
+- partition Clifford circuit
+- perform template matching
+- describe experimental results
+- apply optimization techniques to encoding circuits
+- describe two novel algorithms for Clifford circuit optimization
+- explain use of variables and symbols
+- describe computing environment
+- describe computer-readable storage media
+- describe computer system architecture
+- introduce operating system and application programs
+- describe emulation technologies
+- introduce security module
+- describe input devices
+- describe output devices
+- describe networked environment
+- introduce cloud storage systems
+- describe communication with wireless devices
+- introduce cloud computing environment
+- describe cloud computing nodes
+- describe functional abstraction layers
+- introduce hardware and software layer
+- describe virtualization layer
+- introduce management layer
+- describe workloads layer
+- introduce differentially private federated learning processing
+- describe system, method, apparatus, and computer program product
+- introduce computer readable storage medium
+- describe computer readable program instructions
+- introduce network and transmission media
+- describe computer implemented process
+- introduce flowcharts and block diagrams
+- describe special purpose hardware-based systems
+- introduce distributed computing environments
+- describe components and systems
+

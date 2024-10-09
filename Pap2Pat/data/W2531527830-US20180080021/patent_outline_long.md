@@ -1,0 +1,257 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define nucleic acid sequencing technology
+
+## BACKGROUND
+
+- motivate integration of DNA and RNA sequencing
+- summarize benefits of combined DNA and RNA sequencing
+- describe limitations of current integrative sequencing approaches
+- highlight need for improved methods
+
+## SUMMARY
+
+- introduce method for simultaneously generating RNA and DNA sequencing libraries
+- describe DNA fragmentation step
+- describe RNA fragmentation step
+- describe ligation of adapters to RNA fragments
+- describe reverse transcription of RNA fragments
+- describe amplification of DNA fragments
+- describe amplification of cDNA fragments
+- describe sequencing of DNA and cDNA amplicons
+- describe use of index sequences to identify DNA and RNA sequences
+- describe optional steps for nucleic acid isolation and purification
+- describe optional steps for removing ribosomal RNA
+- describe optional steps for amplification and sequencing
+- describe optional steps for identifying mutations and copy number variations
+- describe kit for simultaneously generating RNA and DNA sequencing libraries
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- cite conventional methods of molecular biology
+- incorporate publications, patents, and patent applications by reference
+- define terms used in the invention
+- clarify singular and plural forms of terms
+- define "about" in reference to a quantity
+- define "substantially purified"
+- define "isolated" with respect to polypeptides and nucleic acids
+- define "polynucleotide," "oligonucleotide," "nucleic acid," and "nucleic acid molecule"
+- describe modifications to polynucleotides
+- define "biological sample"
+- define "common genetic variant" and "rare genetic variant"
+- define "rare blood cell"
+- define "homology" between polynucleotide or polypeptide molecules
+- describe methods for determining percent identity
+- describe the Smith-Waterman algorithm
+- describe the MPSRCH package of programs
+- describe the BLAST algorithm
+- describe Southern hybridization experiment
+- define "primer" or "oligonucleotide primer"
+- describe primer characteristics
+- describe primer length
+- describe primer tails
+- define "primer site," "priming site," or "primer binding site"
+- describe the use of primer sets
+- describe the 5' "upstream primer" or "forward primer"
+- describe the 3' "downstream primer" or "reverse primer"
+- define amplicon
+- define probe
+- define adapter
+- define barcode
+- define hybridize
+- define universal
+- define derived from
+- define melting temperature
+- define subject
+- define label
+- introduce modes of carrying out the invention
+- describe paired DNA and RNA profiling
+- introduce SIMUL-SEQ method
+- describe application of SIMUL-SEQ
+- describe SIMUL-SEQ method
+- isolate nucleic acids
+- fragment DNA
+- fragment RNA
+- ligate adapters to RNA fragments
+- produce cDNA fragments
+- amplify DNA fragments
+- amplify cDNA fragments
+- sequence DNA and cDNA amplicons
+- describe sources of nucleic acids
+- describe types of biological samples
+- describe types of cells
+- describe applications of the method
+- introduce cell pre-treatment
+- describe cell lysis methods
+- explain cell wall removal
+- outline nucleic acid extraction techniques
+- discuss contaminant removal methods
+- describe ribosomal RNA depletion methods
+- introduce selective RNA fragmentation
+- explain RNA adapter ligation
+- describe selective DNA fragmentation
+- outline DNA adapter ligation
+- introduce PCR amplification
+- describe PCR primer design
+- outline PCR reaction conditions
+- introduce reverse transcription PCR
+- describe clonal amplification methods
+- outline bridge PCR amplification
+- introduce digital PCR methods
+- describe partitioning of samples
+- outline PCR in partitions
+- introduce quantification of nucleic acids
+- describe primer synthesis methods
+- outline poly(A) or poly(C) extensions
+- introduce index or barcode sequences
+- describe adding index/barcode sequences
+- outline using index/barcode sequences
+- introduce labeling of oligonucleotides
+- describe biotinylation of probes
+- outline fluorescent labeling methods
+- introduce sulfhydryl-derivatized oligonucleotides
+- describe thiol-specific labels
+- outline comprehensive review of labeling methodologies
+- introduce fluorescent labels
+- describe fluorescein and derivatives
+- outline acridines and pyrenes
+- introduce benzoxadiazoles and stilbenes
+- describe SYBR green and other dyes
+- outline CAL Fluor and Quasar dyes
+- introduce rhodamine and carboxyrhodamine dyes
+- describe TET and HEX dyes
+- outline Dragonfly and ATTO-Tec dyes
+- introduce Bodipy, ALEXA, VIC, Cy3, and Cy5 dyes
+- describe oligonucleotide labeling
+- motivate MGB molecule
+- describe AE labeling
+- describe DNA/cDNA purification
+- describe electric field-based separation
+- introduce sequencing of nucleic acids
+- describe high-throughput sequencing techniques
+- describe spatially isolated sequencing
+- describe amplification methods
+- describe sequencing on Illumina platforms
+- describe data processing and assembly
+- describe adapter sequence recognition
+- describe trimming sequencing reads
+- introduce applications of the invention
+- describe genotyping and expression profiling
+- describe detection of genetic events
+- describe analysis of genomic and transcriptomic variation
+- describe detection of disease-associated changes
+- describe analysis of tumors
+- introduce kits for library preparation
+- describe kit components and instructions
+
+### EXAMPLE 1
+
+- introduce SIMUL-SEQ method
+- describe DNA and RNA sequencing workflow
+- highlight advantages of SIMUL-SEQ over standard methods
+- describe Tn5 transposase and RNA ligase enzymatic specificities
+- explain ribosomal depletion and dual indexing
+- discuss differential amplification of RNA and DNA adapter sequences
+- introduce droplet digital PCR (ddPCR) for library quantification
+- describe SIMUL-SEQ library preparation from fibroblasts
+- quantify DNA and RNA reads using ddPCR
+- analyze cross-species mapping rates
+- optimize read outputs using differential PCR
+- verify RNA-specific cycles using ddPCR
+- benchmark SIMUL-SEQ against established library preparation methods
+- describe DNA sequencing data quality
+- analyze genomic depth and coverage distribution
+- compare SIMUL-SEQ with standard DNA-seq method
+- identify variants and compare with control genome
+- discuss concordance of SNVs and indels
+- describe RNA sequencing data quality
+- analyze RNA read distribution and strand specificity
+- quantify ERCC transcript measurements
+- compare SIMUL-SEQ with RNA-seq control data
+- discuss reproducibility of transcriptome-wide FPKM measurements
+- apply SIMUL-SEQ to cancer genomics
+- describe laser capture microdissected material from esophageal adenocarcinoma
+- analyze DNA and RNA read distributions
+- identify structural variants, gene fusions, SNVs, and indels
+- discuss loss of heterozygosity and allele-specific expression
+- identify damaging germline variants in tumor suppressor genes
+- refine nonsynonymous mutations using SIMUL-SEQ RNA reads
+- discuss potential oncogenic mutations and neoantigens
+- identify expressed somatic missense mutations in Cosmic Cancer census genes
+- describe TP53 hotspot mutation and loss of function
+- discuss allele-specific expression of EGFR and CCND1 variants
+- characterize recurrent mutation in KIF3B
+- perform targeted resequencing of KIF3B locus
+- purify recombinant wild-type and mutant KIF3B motor domains
+- analyze ATP hydrolysis rates and kinesin-microtubule binding
+- discuss benefits of SIMUL-SEQ in comprehensive DNA and RNA profiling
+- compare SIMUL-SEQ with DR-seq and G&T-seq methods
+- highlight advantages of SIMUL-SEQ in retaining noncoding RNA species
+- discuss application of SIMUL-SEQ in cancer genome interpretation
+- provide accession codes for whole-genome sequencing, transcriptome, and targeting resequencing data
+- introduce ribosomal depletion
+- describe SIMUL-SEQ protocol
+- outline read processing and alignment
+- perform DNA and RNA QC analysis
+- generate Lorenz curves
+- analyze ERCC data
+- perform droplet digital PCR
+- describe laser capture microdissection
+- analyze somatic variants
+- identify large somatic structural variants
+- analyze loss of heterozygosity
+- examine allele-specific expression
+- perform targeted resequencing of KIF3B locus
+- describe kinesin-microtubule interaction assays
+- detail ribosomal RNA depletion protocol
+- outline SIMUL-SEQ library preparation
+- describe DNA library processing and analysis
+- describe RNA library processing and analysis
+- calculate coverage plots
+- analyze SNV and indel concordance
+- calculate summary statistics for SNVs
+- calculate read fractions
+- analyze strand specificity and gene body coverage
+- analyze transcripts biotypes
+- compare Log 10(FPKM+1) expression values
+- remove duplicates from hg19-aligned reads
+- calculate coverage at every position in the genome
+- align reads to ERCC reference
+- remove duplicate reads
+- determine total read counts for each ERCC transcript
+- normalize read counts across transcripts and libraries
+- perform ddPCR experiments
+- design custom qPCR assays
+- perform kinesin ATPase end-point biochemical assays
+
+### EXAMPLE 2
+
+- list reagents
+- list optional reagents
+- introduce equipment
+- introduce optional equipment
+- outline procedure
+- isolate nucleic acids
+- quantify genomic DNA and RNA
+- deplete ribosomal RNA
+- clean and concentrate RNA
+- quantify genomic DNA and RNA
+- set up tagmentation/fragmentation reaction
+- incubate and cool reaction
+- clean up reaction
+- remove RNA secondary structure
+- ligate 3' adapter
+- hybridize RT oligo
+- ligate 5' SR adapter
+- synthesize cDNA
+- clean up cDNA synthesis reaction
+- amplify gDNA/cDNA library
+- clean up final library
+- quantify final library
+- visualize library size
+- quantify libraries using ddPCR
+- outline critical steps
+- provide sequencing guidelines
+

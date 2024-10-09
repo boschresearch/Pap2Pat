@@ -1,0 +1,209 @@
+# DESCRIPTION
+
+## SUMMARY
+
+- introduce porous electrode with hydraulic permeability
+- describe electrode body with architecturally intact carbonized organic material
+- introduce non-metal conductor attached to electrode body
+- describe method of making electrode for CDI desalination system
+- introduce desalination system with porous electrodes and DC power supply
+- describe method of purifying salt or brackish water
+- introduce clause 1: porous electrode with hydraulic permeability
+- describe clause 2: electrode with porous plant portion or expanded viscoelastic plant material
+- introduce clause 3: electrode with carbonized porous plant portion
+- describe clause 4: electrode with aerenchyma
+- introduce clause 5: electrode with gas-expanded viscoelastic plant material
+- describe clause 6: electrode with gluten
+- introduce clause 7: electrode with bread
+- describe clause 8: electrode decorated with carbonized bacteria lysis residue
+- introduce clause 9: desalination system with porous electrodes and DC power supply
+- describe clause 10: desalination system with switch for controlling voltage
+- introduce clause 11: desalination system with controller for controlling switch
+- describe clause 12: desalination system with sensor for measuring salinity
+- introduce clause 13: desalination system with controller and waste outlet
+- describe clause 14: desalination system with solar cell or solar panel
+- introduce clause 15: desalination system with battery
+- describe clause 16: desalination system with multiple pairs of porous electrodes
+
+## DETAILED DESCRIPTION
+
+- define spatial and directional terms
+- describe drawings and numerical values
+- introduce aerenchyma tissue
+- describe aerenchyma in wetland plants
+- describe lignification of plant tissue
+- depict capacitive deionization desalination system
+- describe power source and rods
+- describe electrodes and fluid conduit
+- describe water flow through electrodes
+- describe controller and switch
+- describe use of system
+- describe deionization process
+- describe electrode restoration
+- describe salinity measurement
+- describe electrode configuration options
+- describe modular electrode design
+- describe fluid flow control
+- describe power supply options
+- describe low voltage operation
+- describe electrode preparation
+- describe carbonization of porous plant material
+- describe hydraulic permeability of electrodes
+- describe open-celled electrode structure
+- describe intact carbonized material
+- describe gas-expanded viscoelastic plant material
+- describe processing of viscoelastic material
+- describe baking and setting of viscoelastic material
+- describe carbonization of viscoelastic material
+- describe etching of nanoscale pores
+- describe hierarchical porosity
+- describe carbonization process
+- describe electrode composition
+- describe method of making electrode
+- describe device and system configuration
+- describe desalination system and method
+
+## EXAMPLES
+
+- motivate use of natural resources for porous carbon electrodes
+- introduce bread as a sustainable material for CDI electrodes
+- describe development of bread-derived desalination system
+- highlight competitive desalination performance of bread-derived electrodes
+
+### Example 1—Aerenchyma-Based Electrode
+
+- introduce need for micron-sized interconnected pores in FT electrodes
+- motivate use of mangrove aerenchyma as ideal electrode
+- describe carbonization of plant with developed aerenchyma tissue
+- show reduction of resistance to water flow through electrodes
+- demonstrate practical use of carbonized red mangrove roots as electrodes
+- describe plant material and carbonization process
+- detail carbonization procedure
+- describe sample preparation for hydraulic permeability measurement
+- explain hydraulic permeability measurement method
+- calculate flow rate and hydraulic permeability
+- describe imaging and cross-sectional pore area analysis
+- detail SEM imaging procedure
+- describe cross-sectional area analysis
+- characterize specific surface area using BET analysis
+- perform Raman spectroscopy
+- analyze EDX results
+- describe hydraulic permeability measurement results
+- compare hydraulic permeability of carbonized RMR and common woody biomass
+- describe FT-CDI experiment setup
+- detail FT-CDI experiment procedure
+- calculate salt adsorption capacity
+- calculate charge efficiency
+- describe results of FT-CDI experiments
+- show decrease in salt concentration over time
+- compare performance of multiple electrode pairs
+- discuss extended time to reach saturated state
+- compare SAC to other FT-CDI electrodes
+- discuss advantages of intact mangrove root electrodes
+- calculate charge efficiency
+- discuss charge efficiency results
+- describe cyclic operation of FT-CDI system
+- show decrease in salt concentration during cyclic operation
+- compare performance of carbonized RMRs during cyclic operation
+- discuss ASAR during cyclic operation
+- compare ASAR to other FT-CDI systems
+- discuss charging current during cyclic operation
+- highlight effectiveness of intact natural architecture as FT-CDI electrode
+- discuss implications of biomass properties on electrode performance
+- highlight advantages of biological adaptations
+- discuss coupling of natural designs with synthetic materials
+- conclude on potential of intact carbonized plant materials
+
+### Example 2—Bread-Based Electrode
+
+- introduce bread-based electrode
+- describe electrode fabrication (laboratory-based)
+- detail carbonization process
+- describe washing and drying process
+- detail KOH treatment
+- describe heating process
+- detail rinsing process
+- describe electrode fabrication (fire-based)
+- detail carbonization process
+- describe washing and drying process
+- detail KOH treatment
+- describe heating process
+- detail rinsing process
+- characterize structure of carbonized bread
+- describe SEM imaging
+- determine specific surface area
+- describe BET analysis
+- detail pore distribution
+- perform Raman spectroscopy
+- examine mechanical analysis
+- describe compressive failure strength
+- detail hydraulic permeability measurement
+- describe flow-through capacitive deionization experiments
+- detail salt concentration measurement
+- calculate salt adsorption capacity
+- calculate charge efficiency
+- describe FT-CDI experiments with multiple electrode pairs
+- detail salt concentration measurement
+- describe solar-powered desalination with fire-based bread electrodes
+- detail salt concentration measurement
+- perform statistical analysis
+- synthesize freestanding bread-derived electrodes
+- describe carbonization process
+- detail SEM imaging
+- determine specific surface area
+- describe BET analysis
+- detail pore distribution
+- evaluate structural stability of freestanding bread-derived electrodes
+- perform mechanical testing
+- describe compressive failure strength
+- characterize performance of bread-derived electrodes in FT-CDI system
+- detail salt concentration measurement
+- calculate salt adsorption capacity
+- calculate charge efficiency
+- describe compact FT-CDI cell design
+- detail salt concentration measurement
+- develop sustainable water desalination in decentralized locations
+- conclude desalination capabilities of firewood-based bread-derived electrodes
+
+### Example 3—Pathogen Removal
+
+- motivate pathogen removal
+- introduce waterborne diseases
+- describe modern water treatment systems
+- discuss limitations of common disinfection methods
+- introduce solar water disinfection (SODIS)
+- describe limitations of SODIS
+- introduce electrokinetic technologies
+- describe capacitive deionization (CDI)
+- explain electrostatic force on bacteria
+- introduce surface functionalization of AC electrodes
+- discuss feasibility of specialized materials in developing countries
+- introduce waste-derived electrodes for water disinfection
+- describe bread-derived electrodes
+- introduce nano/micro-scale surface decoration technique
+- describe antibacterial experiments
+- detail post-disinfection imaging
+- describe re-carbonization of electrodes
+- introduce water disinfection using bread-based CDI system
+- describe disinfection experiments
+- analyze cell concentration at varying potentials
+- discuss imaging of bacteria on bread-electrodes
+- describe Live/Dead staining results
+- analyze SEM imaging results
+- discuss elemental composition of debris
+- introduce real-time imaging of bacteria movement
+- describe custom designed system for real-time imaging
+- analyze GFP expressing bacteria movement
+- introduce nano/micro-scale electrode surface decoration
+- describe surface decoration formation
+- analyze effect of duration, voltage, and solution on surface decoration
+- discuss optimal conditions for surface decoration
+- introduce re-carbonization of decorated electrodes
+- analyze EDS results of re-carbonized electrodes
+- introduce MgCl2 solution for surface decoration mimic
+- describe SEM imaging results of MgCl2 solution
+- discuss literature review of electrolytic processing
+- introduce electrosynthesis of Mg(OH)2 coatings
+- discuss differences between previous reports and current method
+- summarize results and potential applications
+

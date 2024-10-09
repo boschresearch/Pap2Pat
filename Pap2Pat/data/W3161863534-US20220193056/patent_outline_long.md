@@ -1,0 +1,275 @@
+# DESCRIPTION
+
+## GOVERNMENT FUNDING
+
+- acknowledge government support
+
+## BACKGROUND
+
+- introduce PIK3CA
+- describe PI3K function
+
+## SUMMARY
+
+- introduce PIK3CA helical domain mutations
+- describe p85β disassociation
+- explain nuclear p85β-USP7-EZH1/2 axis
+- describe canonical p110-PDK1-AKT pathway
+- summarize therapeutic approach
+- list EZH inhibitors
+- list PI3K inhibitors
+- describe cancer types
+
+## DETAILED DESCRIPTION
+
+- define terms used in the specification
+- explain meaning of transitional terms
+- explain meaning of indefinite articles
+- define "about" and "comprising essentially of"
+- explain significance of endpoints and ranges
+- provide examples of disclosed values
+- define "cancer"
+- list examples of cancers
+- define "responsiveness"
+- explain meaning of "sample"
+- define "normal cell"
+- explain "contacting a cell"
+- define "candidate compound"
+- explain "severity" of cancer
+- describe cancer stage
+- describe tumor grade
+- describe histologic grade
+- describe nuclear grade
+- describe metastasis
+- define "symptom"
+- define "sign"
+- define "subject"
+- explain "therapeutically effective amount"
+- explain "promoting cancer regression"
+- describe tumor growth inhibition
+- describe prophylactic treatment
+- define "treatment"
+- explain prevention of disease
+- explain inhibition of disease
+- explain relief of disease
+- define "pharmaceutical formulation"
+- explain sterility of formulation
+- introduce PIK3CA helical domain mutant cancer
+- describe PI3K structure
+- describe PIK3CA mutations
+- describe p85β disassociation from p110α
+- describe nuclear translocation of p85β
+- describe recruitment of USP7 by p85β
+- describe stabilization of EZH1 and EZH2
+- describe enhancement of H3K27Me3
+- describe direct binding of p110α to IRS1
+- describe activation of PDK1-AKT signaling
+- summarize two independent oncogenic pathways
+- describe PIK3CA helical domain mutant cancer treatment
+- introduce combination therapy
+- describe administration of combination therapy
+- define synergistic effect
+- describe combination therapy with non-drug treatment
+- describe combination therapy with radiation therapy
+- describe formulation of combination therapy
+- describe pharmaceutical compositions
+- describe EZH inhibitors
+- describe PI3K inhibitors
+- describe p110α inhibitors
+- describe pharmaceutical composition formulation
+- describe unit dosage form
+- describe dosage forms for topical administration
+- define pharmaceutically acceptable
+- define pharmaceutically acceptable excipient
+- describe routes of administration
+- describe parenteral administration
+- describe oral administration
+- describe transdermal administration
+- describe transmucosal administration
+- describe pH adjustment
+- describe tonicity adjustment
+- describe antibacterial agents
+- describe antioxidants
+- describe chelating agents
+- describe buffers
+- describe administration methods
+- describe dose determination
+- describe therapeutic index
+- describe dosage adjustment
+- describe factors affecting dosage
+- describe long-acting pharmaceutical compositions
+- describe pharmaceutical composition manufacturing
+- describe formulation of pharmaceutical compositions
+- describe pharmaceutical compositions
+- list carriers for injectable use
+- describe preparation of sterile injectable solutions
+- describe preparation of sterile powders
+- describe oral compositions
+- list ingredients for oral compositions
+- describe administration by inhalation
+- describe transmucosal or transdermal administration
+- describe controlled release formulations
+- describe liposomal suspensions
+- describe dosage unit forms
+- describe dosages
+- describe factors affecting dosage
+- describe techniques for formulation and administration
+- describe pharmaceutical preparations
+- describe subjects to be treated
+- describe PIK3CA helical domain mutant cancer
+- describe mutations in p110α helical domain
+- describe refractory or resistant cancer
+- describe secondary cancer
+- describe resistance to EZH inhibitors or PIK3CA inhibitors
+- list exemplary cancers
+- describe PIK3CA helical domain mutant cancer in breast cancer
+- describe PIK3CA helical domain mutant cancer in colon cancer
+- describe PIK3CA helical domain mutant cancer in lung cancer
+- describe PIK3CA helical domain mutant cancer in pancreatic cancer
+- describe PIK3CA helical domain mutant cancer in prostate cancer
+- describe PIK3CA helical domain mutant cancer in skin cancer
+- describe PIK3CA helical domain mutant cancer in ovarian cancer
+- describe PIK3CA helical domain mutant cancer in breast cancer
+- describe PIK3CA helical domain mutant cancer in other cancers
+- describe PIK3CA helical domain mutant cancer in combination with other therapies
+- describe PIK3CA helical domain mutant cancer in combination with EZH inhibitors
+- describe PIK3CA helical domain mutant cancer in combination with PIK3CA inhibitors
+- describe PIK3CA helical domain mutant cancer in combination with other therapeutic agents
+- describe pharmaceutical compositions for PIK3CA helical domain mutant cancer
+- describe administration of pharmaceutical compositions
+- describe dosage regimens
+- describe factors affecting dosage regimens
+- describe techniques for formulation and administration
+- describe pharmaceutical preparations for PIK3CA helical domain mutant cancer
+- describe subjects to be treated with PIK3CA helical domain mutant cancer
+- define breast cancer
+- describe types of breast cancer
+- describe staging of breast cancer
+- describe grading of breast cancer
+- describe tumor characteristics
+- describe treatment of PIK3CA helical domain mutant cancer
+- describe reduction in tumor size
+- describe reduction in tumor volume
+- describe decrease in number of tumors
+- describe decrease in number of metastatic lesions
+- describe increase in average survival time
+- describe decrease in mortality rate
+- describe decrease in tumor growth rate
+- describe decrease in tumor regrowth
+- describe reduction in rate of cellular proliferation
+- describe reduction in proportion of proliferating cells
+- describe decrease in size of area of cellular proliferation
+- describe decrease in number of cells with abnormal morphology
+- describe cell death
+- describe non-cytotoxicity to normal cells
+- describe detection of mutant PIK3CA helical domain
+- describe determination of suitability for treatment
+- describe assessing mutant PIK3CA helical domain
+- describe transformative method of assaying
+- describe providing intermediate result
+- describe performing steps by medical practitioner
+- describe assessing proportion of cells with mutant PIK3CA helical domain
+- describe determining presence of PIK3CA helical domain RNA
+- describe predicting therapeutic effectiveness
+- describe providing test tissue sample
+- describe assaying test tissue sample
+- describe comparing proportion with threshold value
+- describe predicting effectiveness of treatment
+- describe exceeding threshold proportion
+- describe not exceeding threshold proportion
+- describe further illustration by examples
+- describe contents of figures
+- describe contents of references
+- describe patents and published patent applications
+- describe express incorporation by reference
+- describe breast cancer treatment
+- describe PIK3CA helical domain mutant cancer treatment
+- describe inhibitor of nuclear translocation of p85β
+- describe EZH inhibitor
+- describe PI3K inhibitor
+- describe combination therapy
+- describe therapeutic effectiveness
+
+### Example 1
+
+- show p85 β disassociation from p110α and translocation into nucleus in cancer cells
+
+### Materials & Methods
+
+- describe tissue culture and transfection
+- specify cell lines and media used
+- outline transfection procedure
+- describe DNA constructs and mutagenesis
+- specify plasmids used
+- outline site-directed mutagenesis kit
+- describe CRISPR/CAS9 genome editing
+- specify guiding RNA pairs designed
+- outline lentiCRISPRv2 vector cloning
+- describe puromycin selection
+- outline genomic PCR and Western blot validation
+- describe siRNA knockdown
+- specify siRNAs targeting human PIK3R2/p85β
+- outline RNA extraction and quantitative real-time PCR
+- describe cell growth assays
+- outline immunofluorescence staining
+- describe co-immunoprecipitation and Western blotting
+- outline nuclear/cytoplasmic fractionation
+- describe xenografts
+- outline drug treatment
+
+### Results
+
+- demonstrate p110α E545K mutant protein reduces binding to p85β
+- validate results with reciprocal immunoprecipitation
+- show more PI3K complex-free p85β in E545K-only cells
+- validate results with gel-filtration analyses
+- determine which p110α mutations affect binding to p85β
+- show p110α E542K and Q546K mutant proteins disrupt interactions with p85β
+- show p110α H1047R mutant protein has no impact on p85β binding
+- assess p85β-p110 complex formation in six cell lines
+- show weaker interactions between p85β and p110α in PIK3CA E545K mutation cell lines
+- show similar interactions between p85β and p110β or p85α and p110α
+- suggest p85β dissociates from mutant p110α in cancer cells
+- align protein sequences of p85α and p85β
+- construct chimeric p85 proteins to swap N-terminus regions
+- show N-terminal p85α-C-terminal p85β chimeric proteins bind similarly to p110α WT and E545K mutant proteins
+- show N-terminal p85β-C-terminal p85α chimeric protein binds less to p110α E545K mutant protein
+- suggest N-terminal sequences of p85β cause its disassociation from p110α helical domain mutant proteins
+- analyze TCGA datasets to assess p85β expression levels and clinical outcomes
+- show high expression of PIK3R2 is associated with poor five-year survival in helical domain mutation group
+- knock out p85β in isogenic DLD1 cell lines to investigate its function
+- show p85β promotes tumorigenesis in tumors with a PIK3CA helical domain mutation
+- introduce p85β nuclear translocation
+- identify NLS in p85β
+- test NLS mutation effect on nuclear translocation
+- show WT p85β rescues cell growth defects
+- generate p85β NLS mutant knockin cells
+- analyze p85β NLS mutant cell lines
+- show nuclear p85β promotes cancer cell growth
+- perform expression profiling
+- examine histone modifications
+- show nuclear p85β regulates H3K27me3
+- examine EZH1 and EZH2 protein levels
+- show nuclear p85β regulates EZH1 and EZH2 stability
+- analyze EZH1 and EZH2 protein stability
+- examine mRNA levels of EZH1 and EZH2
+- show nuclear p85β recruits USP7 to EZH1 and EZH2
+- examine USP7 interaction with EZH1 and EZH2
+- show EZH1 and EZH2 ubiquitination levels
+- test combination of EZH inhibitor and p110α inhibitor
+- show tumor regression with drug combination
+- test drug combination on different PIK3CA mutations
+- analyze pAKT and H3K27me3 levels
+- discuss nuclear p85β-USP7-EZH1/2 axis
+- discuss canonical p110-PDK1-AKT pathway
+- discuss therapeutic approach for PIK3CA helical domain mutant cancers
+- discuss nuclear translocation and function of p85β
+- discuss oncogenic role of nuclear p85β
+- discuss nuclear p85β-stabilized EZHs and p110α
+- discuss cancer treatment approach
+
+### Example 2
+
+- demonstrate combination therapy
+- scope of appended claims
+

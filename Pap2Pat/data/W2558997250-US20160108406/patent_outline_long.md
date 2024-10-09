@@ -1,0 +1,260 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce cystic fibrosis
+- describe symptoms
+- explain genetic cause
+- discuss effects on body
+- describe current treatments
+- highlight limitations of current treatments
+- discuss gene therapy approaches
+- mention problems with gene therapy
+- emphasize need for new treatment
+
+## SUMMARY OF THE INVENTION
+
+- introduce NEDD8 therapeutic agent
+- describe RNAi molecule
+- describe antisense oligonucleotide
+- describe small molecule drug
+- specify inhibition of NEDD8 expression
+- introduce FBXO2 therapeutic agent
+- describe RNAi molecule
+- describe antisense oligonucleotide
+- describe small molecule drug
+- specify inhibition of FBXO2 expression
+- introduce SYVN1 therapeutic agent
+- describe RNAi molecule
+- describe antisense oligonucleotide
+- describe small molecule drug
+- specify inhibition of SYVN1 expression
+- describe combination therapy
+- specify inhibition of NEDD8 and FBXO2
+- specify inhibition of NEDD8 and SYVN1
+- specify inhibition of FBXO2 and SYVN1
+- describe method of reducing ubiquitination
+- describe method of increasing processing
+- describe method of increasing function
+- specify CF cell
+- specify airway epithelial cell
+- describe method of treating CF
+- describe method of increasing chloride ion conductance
+- specify oral or inhalation administration
+- specify aerosol or dry powder administration
+- describe pharmaceutical composition
+- describe use of therapeutic agent
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- motivate therapeutic strategies for CFTR mutation
+- describe miR-138/SIN3A regulated gene network
+- identify individual gene products contributing to rescue of ΔF508-CFTR function
+- describe RNA interference (RNAi)-mediated depletion of SYVN1 or NEDD8
+- describe potentiation of rescue of ΔF508-CFTR biosynthesis
+- provide new knowledge of CFTR biosynthetic pathway
+- introduce therapeutic agents to treat cystic fibrosis
+- describe method of reducing ΔF508-CFTR ubiquitination or degradation
+- describe method of increasing ΔF508-CFTR processing or function
+- describe contacting cell with NEDD8 therapeutic agent
+- describe contacting cell with FBXO2 therapeutic agent
+- describe contacting cell with SYVN1 therapeutic agent
+- describe inhibiting NEDD8 and FBXO2 expression
+- describe inhibiting NEDD8, FBXO2, and SYVN1 expression
+- describe percentage of inhibition of NEDD8, FBXO2, and SYVN1
+- describe primary airway epithelial cell
+- describe in vivo cell
+- describe improvement of ΔF508-CFTR mediated Cl− transport
+- describe NEDD8 therapeutic agent
+- describe siRNA oligonucleotide, ASO oligonucleotide, small molecule inhibitor, or other chemical inhibitor
+- describe DsiRNA
+- describe chemical inhibitor of NEDD8
+- describe FBXO2 therapeutic agent
+- describe siRNA oligonucleotide, ASO oligonucleotide, small molecule inhibitor, or other chemical inhibitor
+- describe DsiRNA
+- describe SYVN1 therapeutic agent
+- describe siRNA oligonucleotide, ASO oligonucleotide, small molecule inhibitor, or other chemical inhibitor
+- describe DsiRNA
+- describe chemical inhibitor of SYVN1
+- describe AHSA1 therapeutic agent
+- describe siRNA oligonucleotide, ASO oligonucleotide, small molecule inhibitor, or other chemical inhibitor
+- describe DsiRNA
+- describe CFTR corrector and/or CFTR potentiator
+- describe small molecule corrector
+- describe chemical chaperone
+- describe CFTR potentiator
+- describe auxiliary compound
+- describe SIN3A therapeutic agent
+- describe miR-138 mimic
+- define CF
+- motivate RNAi
+- explain suppressing SIN3A expression
+- describe RNA interference
+- define mutant protein
+- define gene
+- define allele
+- define nucleic acid
+- define nucleic acid fragment
+- define nucleotide sequence
+- explain isolated or substantially purified nucleic acid
+- define naturally occurring
+- define variant
+- define functional RNA
+- define RNA transcript
+- define operably-linked
+- define expression
+- define oligonucleotides
+- modify for stability
+- stabilize 3'-residues
+- substitute pyrimidine nucleotides
+- enhance nuclease resistance
+- modify with nucleotide analogues
+- locate modified nucleotides
+- stabilize ends
+- modify sugar and backbone
+- replace phosphodiester linkages
+- modify 2' OH-group
+- modify nucleobases
+- block adenosine deaminase
+- list modified nucleobases
+- combine modifications
+- optimize function
+- include alternating modifications
+- form α-anomeric nucleic acid molecules
+- modify at base moiety
+- modify at sugar moiety
+- modify at phosphate backbone
+- generate peptide nucleic acid molecules
+- modify PNAs
+- form PNA-DNA chimeras
+- synthesize PNA-DNA chimeras
+- formulate as morpholino oligonucleotides
+- include Locked Nucleic Acids
+- conjugate with other molecules
+- define sequence identity
+- determine percent identity of two nucleic acid sequences
+- introduce local alignment algorithm
+- introduce gapped alignment algorithm
+- introduce global alignment algorithm
+- define sequence identity without gaps
+- introduce hybridization conditions
+- define stringency conditions for polynucleotide hybridization
+- introduce administration of therapeutic agent
+- describe routes of administration
+- introduce formulations suitable for administration
+- describe pharmaceutical compositions
+- introduce pharmaceutically acceptable carriers
+- describe aerosol formulations
+- introduce pharmaceutical compositions for non-pressurized preparations
+- describe administration with an agent that disrupts tight junctions
+- determine total amount of therapeutic agent administered
+- introduce systemic administration
+- describe oral therapeutic administration
+- introduce pharmaceutical compositions for oral administration
+- describe injectable preparations
+- introduce sterile aqueous solutions or dispersions
+- describe pharmaceutical dosage forms for injection or infusion
+- introduce topical administration
+- describe dermatologically acceptable carriers
+- introduce adjuvants and thickeners
+- describe useful dermatological compositions
+- determine useful dosages of therapeutic agent
+- introduce extrapolation of effective dosages
+- describe amount of therapeutic agent required for treatment
+- introduce pharmaceutical compositions for treatment
+- describe unit dosage form
+- introduce divided doses administered at appropriate intervals
+- describe administration in combination with other therapeutic agents
+- introduce composition comprising therapeutic agent and other therapeutic agents
+- describe kit comprising therapeutic agent and other therapeutic agents
+- introduce pharmaceutical composition with carriers that protect active ingredients
+- describe controlled release formulations
+- introduce biodegradable, biocompatible polymers
+- describe pharmaceutical composition for inhalation administration
+- introduce pressurized aerosol or nebulized formulation
+- describe patients that may benefit from administration of therapeutic compound
+- introduce activation of chloride transport in other diseases
+- define therapeutically effective amount
+
+### Example 1
+
+- introduce cystic fibrosis
+- describe ΔF508-CFTR mutation
+- motivate search for interventions
+- introduce miR-138 and SIN3A gene network
+- describe goal of study
+- identify SYVN1, NEDD8, and FBXO2 as components of gene network
+- describe RNAi-mediated depletion of each factor
+- propose role for SYVN1 and FBXO2 in ER quality control
+- propose new role for NEDD8 in regulating ΔF508-CFTR ubiquitination
+- describe primary human airway epithelia culture
+- describe RNA isolation
+- describe oligonucleotide transfections
+- describe oligonucleotide reagents
+- describe quantitative RT-PCR
+- describe electrophysiology studies
+- describe SDS-PAGE and immunoblotting
+- describe CFTR ubiquitination measurements
+- describe immunoprecipitation
+- describe measuring cell surface display of CFTR
+- describe pulse-chase live-cells surface ELISA
+- describe LDH cytotoxicity assay
+- describe histochemistry
+- introduce primary human airway epithelial cells
+- describe cell culture conditions
+- describe RNA isolation methods
+- describe oligonucleotide transfection protocols
+- describe quantitative RT-PCR assays
+- describe electrophysiology study protocols
+- describe SDS-PAGE and immunoblotting protocols
+- describe CFTR ubiquitination measurement protocols
+- describe immunoprecipitation protocols
+- fix epithelial sheets
+- perform statistical analysis
+- introduce RNAi screen
+- identify candidate genes
+- describe screening process
+- reveal role of SYVN1
+- describe NEDD8 expression
+- inhibit NEDD8 expression
+- measure membrane stability
+- determine ubiquitination impact
+- enhance biosynthesis
+- combine knockdown with C18
+- combine knockdown with low temperature
+- regulate ubiquitination
+- perform combinatorial RNAi knockdown
+- validate DsiRNA
+- identify RNF5/AMFR pathway
+- express SYVN1 cDNA
+- perform complementation experiments
+- overexpress AMFR
+- regulate ubiquitination via SCFFBXO2
+- validate FBXO2 DsiRNA
+- inhibit FBXO2 expression
+- perform combinatorial gene knockdown
+- combine NEDD8 and FBXO2 knockdown
+- combine SYVN1 and NEDD8 knockdown
+- rescue cAMP-dependent anion transport
+- evaluate cytotoxicity
+- measure LDH release
+- perform H&E staining
+- conclude results
+
+## DISCUSSION
+
+- show rescue phenotype of ΔF508-CFTR
+- derive hypothesis of co-regulated genes
+- describe RNAi screen and selection of candidate genes
+- identify SYVN1 as promising candidate
+- describe effect of SYVN1 inhibition on ΔF508-CFTR ubiquitination
+- discuss limitations of SYVN1 inhibition on ΔF508-CFTR membrane stability
+- describe effect of combining SYVN1 knockdown with low temperature
+- describe effect of combining SYVN1 knockdown with C18
+- discuss multiple pathways contributing to ΔF508-CFTR ubiquitination
+- describe role of SYVN1 in RNF5-AMFR network
+- describe effect of NEDD8 knockdown on ΔF508-CFTR processing and function
+- propose model of NEDD8 influence on ΔF508-CFTR ubiquitination
+- describe effect of FBXO2 knockdown on ΔF508-CFTR trafficking and function
+- summarize results and implications for CF therapies
+

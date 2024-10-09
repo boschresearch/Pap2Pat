@@ -1,0 +1,127 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to observational databases
+
+## SUMMARY
+
+- introduce invention concept
+- motivate disease progression model
+- limitations of tracking disease progression
+- application of discriminative features
+- describe disease progression prediction system
+- outline method for generating disease progression model
+- describe computer program product
+
+## DETAILED DESCRIPTION
+
+- disclaim limitations of embodiments
+- describe purpose of detailed description
+- introduce disease progression model
+- motivate tracking disease progression
+- describe difficulties in tracking disease progression
+- introduce system 100
+- describe system 100 components
+- introduce processor 102
+- describe memory 104
+- introduce system bus 106
+- describe receiving component 108
+- describe model generation component 110
+- describe identification component 112
+- describe ranking component 114
+- describe disease progression model 116
+- describe system 100 functionality
+- describe limitations of current state of art
+- introduce subject innovation
+- describe computer processing systems
+- describe computer-implemented methods
+- describe apparatus and/or computer program products
+- describe functionality of system 100
+- describe FIG. 1
+- describe receiving component 108 functionality
+- describe limitations of observational data
+- describe model generation component 110 functionality
+- describe identification component 112 functionality
+- describe ranking component 114 functionality
+- describe disease progression model 116 functionality
+- describe FIG. 2
+- describe filtering component 202 functionality
+- describe FIG. 3
+- describe pooling component 302 functionality
+- describe composite feature engineering step
+- describe final disease progression model 116 functionality
+- describe utility-based analysis
+- describe system 100 design flexibility
+- describe artificial intelligence employment
+- describe classification schemes
+- describe probabilistic and/or statistical-based analysis
+- describe real-world examples of observational data
+- illustrate disease registry data
+- motivate limitations of disease registry data
+- introduce electronic health record
+- motivate limitations of electronic health record
+- illustrate generating refined database
+- describe initial feature filtering
+- describe composite feature engineering
+- describe disease progression modeling
+- describe disease stage assignment
+- illustrate input data
+- describe observational data
+- describe knowledge data
+- illustrate analyzing observational data
+- describe extracting features related to disease progression
+- describe extracting features for other tasks
+- illustrate output database
+- describe reduced database
+- describe discriminative features sub-database
+- illustrate flow diagram of computer-implemented method
+- build preliminary disease progression model
+- identify discriminative clinical features
+- determine convergence on suitable reduced subset
+- rank discriminative powers of clinical features
+- generate final disease progression model
+- describe computer-implemented methodologies
+- illustrate operating environment
+- describe computer components
+- describe computer components
+- list storage media
+- illustrate disk storage
+- describe software components
+- explain operating system functions
+- describe system applications
+- illustrate input devices
+- describe interface ports
+- describe output devices
+- illustrate output adapters
+- describe remote computers
+- illustrate network connections
+- describe network interface
+- list network technologies
+- describe communication connections
+- illustrate computer program products
+- describe computer readable storage media
+- list storage medium examples
+- describe computer readable program instructions
+- explain instruction execution
+- describe electronic circuitry
+- illustrate flowcharts and block diagrams
+- describe computer implemented processes
+- explain distributed computing environments
+- describe computer-related entities
+- define components and systems
+- describe apparatus with specific functionality
+- explain virtual machines
+- clarify inclusive "or" usage
+- define "example" and "exemplary"
+- describe processor types
+- explain integrated circuits
+- describe memory components
+- list memory types
+- describe volatile and nonvolatile memory
+- explain RAM types
+- describe computer-implemented methods
+- explain system combinations
+- describe computer program products
+- clarify disclosure scope
+

@@ -1,0 +1,240 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous platforms
+
+## SUMMARY
+
+- introduce motion forecasting model
+- describe graph-centric motion forecasting model
+- motivate actor-specific graph
+- describe actor-specific graph components
+- explain node embeddings
+- describe global graph
+- explain message passing
+- describe motion trajectory prediction
+- compare to single vector approach
+- compare to fully-connected graph approach
+- compare to regression-based predictors
+- describe advantages of graph-centric approach
+- describe map-aware representation
+- explain distributed and map-aware representation
+- describe node embeddings
+- describe information propagation
+- describe forecasting on actor-specific graph
+- describe computational efficiency
+- describe rasterization limitations
+- describe graph representation advantages
+- introduce computer-implemented method
+- describe obtaining data and map data
+- generate actor-specific graphs
+- determine interaction between actors
+- determine predicted motion trajectory
+- describe node features
+- describe edge relationships
+- describe node embeddings
+- describe past motion data
+- determine relevant lanes
+- generate global graph
+- determine interaction using global graph
+- distribute global node embeddings
+- determine predicted goal and curvature
+- initiate motion control
+
+## DETAILED DESCRIPTION
+
+- introduce autonomous vehicle example
+- describe operational scenario
+- define environment
+- describe actors in environment
+- discuss trajectories of actors
+- introduce autonomous platform
+- describe sensors on autonomous platform
+- detail types of sensors
+- describe autonomous platform operation
+- introduce system overview
+- describe vehicle computing system
+- discuss sensor data processing
+- describe motion planning
+- detail types of vehicles
+- describe operating modes
+- discuss fully autonomous mode
+- discuss semi-autonomous mode
+- discuss manual mode
+- describe operating mode data structure
+- discuss adjusting operating modes
+- introduce operations computing system
+- describe operations computing system functions
+- discuss communications network
+- describe remote computing system(s)
+- describe vehicle computing system
+- describe components of vehicle computing system
+- describe communication system
+- describe onboard systems
+- describe sensors
+- describe sensor data
+- describe types of sensors
+- describe multi-modal sensor data
+- describe acquiring sensor data
+- describe sensor data indicative of objects
+- describe map data
+- describe types of map data
+- describe positioning system
+- describe determining current position
+- describe autonomy computing system
+- describe perception function
+- describe prediction function
+- describe motion planning function
+- describe identifying objects
+- describe perception data
+- describe predicting motion of objects
+- describe prediction data
+- describe determining motion plan
+- describe motion planning data
+- describe vehicle motion trajectories
+- describe optimization algorithm
+- describe cost data analysis
+- describe evaluating predicted motion trajectories
+- describe generating cost data
+- describe motion plan optimization
+- describe avoiding objects
+- describe reducing speed
+- describe proceeding cautiously
+- describe stopping action
+- describe passing objects
+- describe queuing behind objects
+- describe queuing in front of objects
+- introduce vehicle computing system
+- generate motion planning data
+- cause motion control
+- store vehicle data
+- communicate data
+- include user devices
+- obtain user input
+- update destination location
+- utilize machine-learned models
+- perform perception function
+- perform prediction function
+- perform motion planning function
+- leverage actor data and map data
+- generate actor-specific graphs
+- represent actor and context
+- construct actor-specific graph
+- include nodes and edges
+- include node embeddings
+- encode past motion and map features
+- determine interaction between actors
+- generate global graph
+- propagate features between graphs
+- distribute interactions to actor-specific graphs
+- predict motion trajectory
+- generate actor-specific graphs and global graph
+- leverage machine-learned model framework
+- process sensor data
+- obtain actor data and map data
+- forecast actor motion
+- include convolutional operator
+- include pooling operator
+- include encoder
+- include interactor module
+- generate actor-specific graphs
+- represent lane segments
+- include edges and node embeddings
+- encode lane features and past motion
+- determine relevant lanes
+- identify region of interest
+- evaluate previous locations and heading
+- rasterize past trajectory and map data
+- crop underlying representation
+- identify lanes traveled and may travel
+- generate actor-specific graph
+- characterize map structures
+- augment with node embeddings
+- capture geometric and semantic information
+- encode actor information
+- identify past motion as 2D displacements
+- include relative positions and orientations
+- clamp actor information
+- introduce neural network training systems
+- describe rectified linear units
+- generalize Restricted Boltzmann machines
+- define lane pooling operator
+- describe learnable pooling function
+- generate pooling feature
+- obtain neighboring nodes
+- express relative pose
+- leverage encoder
+- aggregate node embeddings
+- apply convolution layers
+- utilize graph shortcut mechanism
+- aggregate output
+- describe machine-learned model framework
+- determine interaction between actors
+- generate global graph
+- project actor-specific graphs
+- distribute global node embeddings
+- determine predicted motion trajectory
+- determine predicted goal
+- characterize different modalities
+- predict goal
+- determine curvature
+- interpolate curve
+- unroll kinematic model
+- sample 2D points
+- refine trajectory proposals
+- decode pair of values
+- select predicted motion trajectory
+- determine vehicle motion trajectory
+- communicate data
+- describe flowcharts
+- obtain data associated with actors
+- determine relevant lanes
+- generate actor-specific graphs
+- determine interaction between actors
+- generate global graph
+- determine interaction
+- distribute global node embedding
+- determine predicted motion trajectory
+- determine predicted goal
+- determine curvature
+- initiate autonomy operation
+- describe system architecture
+- describe machine learning computing system
+- describe memory and processor architecture
+- introduce machine-learned models
+- describe computing system 1100
+- describe machine learning computing system 1200
+- introduce model trainer
+- describe training data
+- describe training method
+- generate training data
+- select training instance
+- input training instance into model
+- generate loss metrics
+- modify model based on loss metrics
+- describe communication interface
+- describe network
+- illustrate computing system 1000
+- describe alternative configurations
+- describe computer-based systems
+- describe sequential and parallel operations
+- describe data and instruction storage
+- describe scope of disclosure
+- describe modifications and variations
+- describe combining and rearranging features
+- describe conjunctions in lists
+- describe "based on" terminology
+- describe adapting and modifying claims
+- describe rearranging claim elements
+- describe expanding and omitting claim elements
+- describe combining claim elements
+- describe modifying claim elements
+- describe letter references in claims
+- describe order of operations
+- describe parallel operations
+- describe list identifiers
+- describe operations before and after list identifiers
+- describe operations in parallel with list identifiers
+- describe scope of disclosure
+

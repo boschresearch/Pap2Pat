@@ -1,0 +1,126 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate machine learning
+
+## BRIEF SUMMARY
+
+- outline method embodiment
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments of the present invention
+- provide background on machine learning
+- define deep learning
+- describe structured and unstructured data
+- explain neural networks
+- describe nodes in neural networks
+- introduce supervised, unsupervised, and semi-supervised learning
+- describe deep learning models
+- explain limitations of deep learning models
+- introduce catastrophic forgetting
+- describe solutions to catastrophic forgetting
+- introduce task-incremental and class-incremental models
+- describe differences between task-incremental and class-incremental models
+- introduce need for realistic continual learning model
+- describe advantages of embodiments of the present invention
+- introduce Disjointing and Sharing Past Net (DSPN) model
+- describe components of DSPN model
+- explain aggregation block
+- describe cross connections between tasks
+- explain task-oriented path component
+- describe shareable blocks in deep neural networks
+- explain how DSPN model creates distinct paths for each task
+- describe training stage of DSPN model
+- explain how DSPN model freezes previously learned paths
+- describe how DSPN model updates neurons lying on the given task's path
+- explain how DSPN model preserves previous knowledge
+- describe how DSPN model utilizes cross connections between tasks
+- explain how DSPN model allows adding cross connections between tasks
+- describe how DSPN model aggregates information from different tasks
+- explain how DSPN model predicts class labels directly
+- introduce networked computer environment
+- describe computer and server components
+- explain communication network
+- describe client-server interaction
+- introduce cloud computing service model
+- describe cloud computing deployment model
+- explain how continual learning program interacts with database
+- describe how user uses continual learning program
+- summarize deep learning method
+- depict training environment
+- describe DSPN model
+- illustrate tasks
+- explain layers
+- describe aggregation block
+- explain freezing connections
+- describe forward and backward connections
+- illustrate operational flow chart
+- describe class-incremental learning
+- propose DSPN model
+- receive input
+- apply shareable blocks
+- learn distinct paths
+- describe disjoint paths
+- add cross connections
+- describe forward connections
+- describe backward connections
+- update hidden activations
+- describe DSPN model
+- introduce aggregation block
+- explain forward connection
+- explain backward connection
+- describe multiple backward and forward connections
+- add aggregation block
+- aggregate information from different tasks
+- continually update aggregation block
+- compare to conventional deep learning model
+- describe DSPN model without task id
+- load outputs from each previous path
+- make prediction
+- freeze path to preserve knowledge
+- introduce aggregation block architecture
+- generate unique hidden activation
+- update block S
+- share information between different tasks
+- provide output
+- classify input
+- compare output to sample labels
+- train DSPN model
+- test DSPN model
+- illustrate operational flow chart
+- describe FIG. 4
+- illustrate internal and external components
+- describe user client computer
+- describe network server
+- describe computer-readable tangible storage devices
+- describe R/W drive or interface
+- describe network adapters or interfaces
+- describe device drivers
+- describe cloud computing environment
+- describe characteristics of cloud computing
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- describe service models
+- describe software as a service
+- describe platform as a service
+- describe analytics as a service
+- describe infrastructure as a service
+- describe deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- illustrate cloud computing environment
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe workloads layer
+- describe continual learning program
+

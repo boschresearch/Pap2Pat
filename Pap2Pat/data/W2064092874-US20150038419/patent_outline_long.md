@@ -1,0 +1,232 @@
+# DESCRIPTION
+
+## CONTINUING APPLICATION DATA
+
+- claim benefit of provisional application
+
+## GOVERNMENT FUNDING
+
+- disclose government funding
+
+## BACKGROUND
+
+- describe medical conditions
+- motivate alternative anticoagulants
+
+## SUMMARY OF THE INVENTION
+
+- define simukunin polypeptide
+- describe anticoagulant activity
+- describe anti-inflammatory activity
+- define simukunin polypeptide with 80% identity
+- describe inhibition of Factor Xa
+- describe inhibition of elastase and/or cathepsin G
+- define simukunin polypeptide with 95% identity
+- describe inhibition of Factor Xa, elastase, and cathepsin G
+- describe inhibition of additional serine proteases
+- describe composition of simukunin polypeptide
+- describe pharmaceutically acceptable carrier
+- describe pyrogen-free composition
+- describe parenteral application
+- describe topical application
+- define isolated polynucleotide sequence
+- describe vector or host cell
+- describe method of producing polypeptide
+- describe method of inhibiting plasma coagulation
+- describe method of inhibiting Factor Xa
+- describe method of inhibiting serine proteases
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS OF THE PRESENT INVENTION
+
+- introduce simukunin protein
+- describe simukunin's anticoagulant and anti-inflammatory properties
+- define isolated simukunin polypeptide and its fragments and derivatives
+- specify simukunin polypeptide's physical or functional characteristics
+- describe simukunin polypeptide's amino acid identity to SEQ ID NO:2 or SEQ ID NO:3
+- describe simukunin polypeptide's encoding polynucleotide sequence
+- introduce Simulium vittatum SV-170 polypeptide and its fragments and derivatives
+- specify Simulium vittatum SV-170 polypeptide's physical or functional characteristics
+- describe Simulium vittatum SV-170 polypeptide's amino acid identity to SEQ ID NO:5 or SEQ ID NO:6
+- describe Simulium vittatum SV-170 polypeptide's encoding polynucleotide sequence
+- introduce fragments of polypeptides described herein
+- specify fragments' consecutive amino acids
+- introduce polypeptides with additional amino acid residues
+- describe polypeptides' physical characteristics, including Kunitz domain residues
+- describe polypeptides' functional characteristics, including anticoagulant and anti-inflammatory activities
+- specify polypeptides' enzymatic inhibition activities
+- describe polypeptides' binding activities to Factor Xa and/or elastase
+- describe polypeptide function
+- define polypeptide
+- define identity
+- describe sequence similarity
+- describe conditions for enzymatic reaction
+- describe isolated polynucleotide sequences
+- describe fragments and derivatives
+- describe Simulium vittatum SV-170 polypeptide
+- describe polynucleotide sequence identity
+- describe derivative sequence identity
+- describe polynucleotide sequence encoding polypeptide
+- describe amino acid sequence identity
+- compare polynucleotide sequences
+- describe hybridizing conditions
+- describe stringency of hybridization reactions
+- describe isolated polynucleotide with additional sequences
+- describe recombinant vectors
+- describe vector insertion
+- list bacterial vectors
+- list eukaryotic vectors
+- describe host cells
+- describe vector introduction into host cells
+- define polynucleotide
+- describe polynucleotide topology
+- describe coding region
+- describe regulatory sequences
+- define operably linked
+- describe heterologous nucleotides
+- describe flanking sequences
+- describe genetic methodologies
+- describe polynucleotide inclusion in vector
+- define exogenous polynucleotide
+- define endogenous polynucleotide
+- define complement and complementary
+- define substantial complement
+- describe isolated polypeptides or polynucleotides
+- describe isolated substances
+- describe compositions
+- describe formulations
+- describe pharmaceutically acceptable carriers
+- describe accessory ingredients
+- describe parenteral administration
+- describe enteral administration
+- describe nasal administration
+- describe rectal administration
+- describe sterility and purity standards
+- describe medical conditions
+- describe use of simukunin polypeptide
+- describe inhibition of enzymes
+- describe inhibition of Factor Xa
+- describe inhibition of elastase and cathepsin G
+- describe inhibition of additional serine proteases
+- describe use as anticoagulant and anti-inflammatory agent
+- describe treatment of medical conditions
+- describe coating or treating laboratory instruments
+- describe modulation of inflammation
+- describe inhibition of elastase and cathepsin G
+- describe modulation of immune cells
+- describe treatment of conditions associated with elastase and cathepsin G
+- describe topical treatment
+- describe modulation of coagulation and inflammation
+- describe inhibition of additional enzymes
+- describe modes of administration
+- describe dosage and duration of treatment
+- describe therapeutically effective amount
+- describe effective amount
+- describe combination therapy
+- describe additional therapeutic agents
+- describe therapeutic synergy
+- describe subject
+- describe in vitro and in vivo
+- describe isolated material
+- describe and/or
+- describe methods of making and using polypeptides, polynucleotides, and compositions
+
+### EXAMPLES
+
+- introduce black fly Simulium vittatum
+- describe blood feeding and saliva properties
+- identify Kunitz family proteins SV-66 and SV-170
+- motivate Kunitz family proteins as serine protease inhibitors
+- describe Kunitz domain structure and function
+- discuss Kunitz family proteins in arthropods
+- introduce ixolaris and penthalaris from deer tick saliva
+- describe anti-coagulation factors in tick saliva
+- introduce black fly Simulium vittatum as a vector of Onchocerca volvulus
+- describe salivary protein S. vittatum erythema protein (SVEP)
+- identify anti-coagulation factors in S. vittatum saliva
+- introduce sialome of S. vittatum salivary glands
+- express and assess anti-coagulant activity of SV-66 and SV-170
+- describe results of SV-66 and SV-170 expression
+- show alignment of Kunitz domain sequences with SV-66 and SV-170
+- identify signal sequences for SV-66 and SV-170
+- describe RT-PCR assays for SV-66 expression
+- show time course studies of SV-66 expression
+- express and purify rSV-66 and rSV-170
+- test effect of rSV-66 and rSV-170 on plasma clotting
+- show dose-dependent inhibition of coagulation by rSV-66
+- name rSV-66 as Simukunin
+- conclude Simukunin as an anti-coagulant with anti-FXa activity
+- introduce rSimukunin mutants
+- analyze anticoagulation activity
+- describe inhibition of multiple proteases
+- determine IC50 of rSimukunin
+- calculate Ki from IC50
+- determine Km for elastase, FXa, and cathepsin G
+- calculate Ki from Km and IC50
+- describe SPR studies
+- analyze binding of rSimukunin to FXa and elastase
+- discuss anticoagulant activity of Simukunin
+- discuss binding of rSimukunin to FXa
+- discuss role of Arg15 in anticoagulation activity
+- compare Simukunin to BPTI
+- discuss anti-clotting activity of Simukunin
+- discuss relationship between Simukunin and anti-FXa activity
+- discuss inhibition of kallikrein
+- discuss link between coagulation and inflammation
+- discuss inhibition of elastase, cathepsin G, and other enzymes
+- discuss regulation of chemokines, cytokines, and adhesion molecules
+- discuss effect of Simukunin on macrophage, mast cell, and neutrophil function
+- discuss inhibition of elastase by rSimukunin
+- compare Simukunin to other Kunitz family inhibitors
+- discuss inhibition of multiple enzymes by rSimukunin
+- discuss binding affinities of Simukunin for FXa and elastase
+- compare binding affinities of Simukunin to other Kunitz inhibitors
+- discuss significance of Simukunin's binding affinities
+- conclude discussion of Simukunin's properties and functions
+- introduce Simukunin
+- facilitate blood-feeding
+- modulate immune responses
+- identify Kunitz protein-encoding transcripts
+- describe S. vittatum culture
+- dissect salivary glands
+- synthesize cDNA
+- analyze expression
+- design PCR primers
+- clone Kunitz family proteins
+- sequence analysis
+- predict signal peptide sequences
+- predict glycosylation sites
+- align Kunitz domains
+- express proteins in bacteria
+- purify proteins
+- quantify proteins
+- visualize proteins
+- perform recalcification assay
+- analyze clotting time
+- perform serine protease inhibition assays
+- determine IC50 estimates
+- describe enzyme sources
+- describe assay buffers
+- describe peptidyl substrates
+- perform statistical analysis
+- compare enzymatic activity
+- provide titration curves
+- summarize results
+- describe SPR experiments
+- specify materials and methods
+- outline kinetic analysis
+- present data analysis
+- visualize rSV-66 and rSV-170
+- determine rSimukunin IC50 values
+- introduce anti-inflammatory effects
+- outline in vitro assays
+- outline in vivo assays
+- describe mouse footpad assay
+- introduce further characterization
+- outline rat model of arterial thrombosis
+- describe effect on blood clotting
+- introduce effect on pathogen killing
+- outline in vitro assays for pathogen killing
+- describe inhibitory effect on elastase and cathepsin G
+- incorporate references by reference
+- provide general disclaimer
+

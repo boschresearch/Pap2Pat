@@ -1,0 +1,256 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate content discovery systems
+
+## DETAILED DESCRIPTION
+
+- introduce problem statement - human activity understanding in videos
+- motivate representation learning methods
+- limitations of supervised training strategies
+- introduce self-supervised learning as alternative
+- limitations of self-supervised learning methods
+- introduce disclosed techniques - guided online cluster assignment algorithm
+- describe GOCA algorithm - initial cluster assignments
+- describe GOCA algorithm - final clustering assignment
+- describe training backbone network
+- introduce prototype regularization method
+- describe processing content items using machine learning models
+
+### NETWORKED COMPUTING ENVIRONMENT
+
+- introduce messaging system 100
+- describe client device 102
+- introduce messaging client 104
+- describe external applications 109
+- introduce clustering system 119
+- process content items
+- apply machine learning models
+- generate classifications
+- identify human activities
+- rank classifications
+- access RGB video frames
+- process RGB video frames
+- generate first optimal assignment
+- access optical flow frames
+- process optical flow frames
+- generate second optimal assignment
+- update first optimal assignment
+- update second optimal assignment
+- compute deviation
+- update machine learning models
+- train machine learning models
+- generate features
+- match vectors to prototype cluster centers
+- apply Sinkhorn-Knopp technique
+- apply Cuturi formulation technique
+- apply trained regularization term
+- generate updated optimal assignment
+- generate augmentations
+- process augmentations
+- generate third optimal assignment
+- update third optimal assignment
+- update machine learning model
+- communicate with messaging server system 108
+- exchange data
+- receive videos
+- apply machine learning models
+- generate classification
+- associate tags or metadata
+- share videos
+- present tags or metadata
+- describe messaging server system 108
+- introduce API server 116
+- introduce application servers 114
+- introduce database server 120
+- introduce web server 128
+- process incoming requests
+- provide interfaces
+- introduce messaging server 118
+- introduce image processing server 122
+- introduce social network server 124
+- support social networking functions
+- maintain entity graph 308
+- introduce external resource
+- launch external resource
+- describe networked computing environment
+- introduce external resource system
+- explain messaging client and external app servers
+- motivate SDK for integrating external resources
+- describe SDK functionality
+- explain WebViewJavaScriptBridge
+- summarize communication between external resources and messaging client
+- describe information sharing limitations
+- introduce HTML5 file and visual representation
+- explain messaging client GUI for external resources
+- describe authorization process for external resources
+- explain user data access control
+- introduce data architecture
+- describe message data structure
+- explain entity table and entity graph
+- describe profile data
+- introduce augmentation data
+- explain overlays and filters
+- describe geolocation filters
+- explain data filters
+- introduce augmented reality content items
+- describe real-time modifications
+- explain modifications to stored content
+- describe preview feature for augmented reality content items
+- conclude data architecture
+- introduce networked computing environment
+- describe real-time video processing
+- explain object detection and tracking
+- detail transformation of frames of a video stream
+- describe characteristic points calculation
+- explain mesh generation
+- detail tracking and modifying elements of an object
+- describe area generation and modification
+- explain control points selection
+- describe face detection using face detection algorithm
+- explain Active Shape Model algorithm
+- detail landmark identification procedure
+- describe shape alignment and mean shape calculation
+- explain search for landmarks
+- describe transformation system
+- explain complex image manipulations
+- describe computer animation model
+- explain modification icons
+- detail transformation process
+- describe graphical user interface
+- explain additional interaction options
+- describe story table
+- explain collection creation
+- describe live story
+- explain location story
+- describe data communications architecture
+- introduce message structure
+- describe message identifier
+- explain message text payload
+- describe message image payload
+- explain message video payload
+- describe message audio payload
+- explain message augmentation data
+- describe message duration parameter
+- explain message geolocation parameter
+- introduce networked computing environment
+- describe clustering system 500
+- process video frames to generate OF frames
+- generate first and second sets of video frames
+- generate first and second sets of OF frames
+- describe first and second backbone networks
+- introduce machine learning
+- describe types of machine learning problems
+- explain features in machine learning
+- describe training data and machine learning phases
+- explain feature engineering
+- describe neural networks
+- introduce different types of neural networks
+- describe prediction phases
+- apply Sinkhorn-Knopp technique
+- generate initial optimal assignments
+- process initial optimal assignments
+- generate updated optimal assignments
+- compute losses
+- update backbone network parameters
+- describe clustering system 500 operation
+- compute feature vectors
+- compute optimal assignments
+- define loss function
+- describe optimization problem
+- define distance matrix
+- describe constraint on assignments
+- solve optimization problem with linear programming
+- add entropy regularization
+- solve problem with Sinkhorn algorithm
+- describe unique solution
+- determine unknowns with Sinkhorn algorithm
+- assign initial prototype assignments
+- assign final prototype assignments
+- use prior in optimization problem
+- modify optimization problem
+- describe OAP optimization problems
+- conclude clustering system 500 operation
+- define networked computing environment
+- introduce optimization problems
+- solve optimization problems via Sinkhorn technique
+- describe regularization term
+- train prototype layer
+- define loss function
+- illustrate clustering system operations
+- access content items
+- process RGB video frames
+- generate updated optimal assignment
+- introduce machine architecture
+- describe machine components
+- execute instructions
+- store instructions
+- include I/O components
+- include user output components
+- include user input components
+- include biometric components
+- include motion components
+- include environmental components
+- include position components
+- include communication components
+- detect identifiers
+- introduce software architecture
+- describe machine components
+- include operating system
+- include libraries
+- include frameworks
+- include applications
+- invoke API calls
+- receive messages
+- manage hardware resources
+- provide common services
+- include kernel
+- include services
+- include drivers
+- provide low-level infrastructure
+- include system libraries
+- include API libraries
+- provide high-level infrastructure
+- include graphical user interface functions
+- include high-level resource management
+- include high-level location services
+
+### Glossary:
+
+- define carrier signal
+- define client device
+- define communications network
+- define ephemeral message
+- define machine-readable medium
+- define component
+- describe hardware component
+- describe software component
+- describe hardware component implementation
+- describe processor
+- describe processor-implemented component
+- describe hardware module
+- describe hardware-implemented module
+- describe communication between hardware modules
+- describe storage and retrieval of information
+- describe operation on a resource
+- describe processor-implemented module
+- describe cloud computing environment
+- describe software as a service (SaaS)
+- describe distributed performance of operations
+- describe geographic location of processors
+- describe multiple hardware modules
+- describe signal transmission between hardware modules
+- describe memory structures for communication
+- describe input/output devices
+- describe resource operation
+- describe processor configuration
+- describe hardware module instantiation
+- describe software configuration of processor
+- describe special-purpose processor
+- describe general-purpose processor
+- describe Field-Programmable Gate Array (FPGA)
+- describe Application-Specific Integrated Circuit (ASIC)
+- describe changes and modifications to disclosed examples
+- describe scope of present disclosure
+

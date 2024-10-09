@@ -1,0 +1,276 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce E. coli O157:H7
+- describe disease caused by E. coli O157:H7
+- discuss cattle as primary source of E. coli O157 infection
+- describe evolution of O157 from EPEC O55:H7
+- summarize virulence factors of O157
+- discuss complexity of O157 pathogenesis
+
+## SUMMARY OF THE INVENTION
+
+- introduce IVIAT technology
+- describe identification of immunogenic O157 proteins
+- summarize IVIAT results
+- introduce PELS technology
+- describe identification of immunogenic proteins in cattle
+- summarize PELS results
+- describe isolated nucleic acid molecules
+- describe vectors and cells including isolated nucleic acid molecules
+- describe method of producing recombinant polypeptides
+- describe recombinant polypeptides
+- describe substantially pure polypeptides
+- describe method for identifying compounds decreasing pathogenic factor expression
+- describe method for identifying compounds binding polypeptides
+- describe method of treating pathogenic infection
+- describe method of treating pathogenic infection with composition
+- describe inclusion of nucleic acid sequences facilitating detection
+- describe fragments of nucleic acid sequences
+- describe method for inducing immunological response
+- describe vaccine compositions
+- describe peptide vaccines
+- describe modified peptides
+- describe conjugated peptides
+- describe combination with adjuvants
+- describe vaccines for humans and cattle
+- describe production of antibodies
+- describe diagnosis of pathogenic condition
+- describe isolated nucleic acid molecule
+- describe polypeptide
+- describe substantially pure polypeptide
+- describe transformed cell
+- describe positioned for expression
+- describe purified antibody
+- describe specifically binds
+- describe derived from
+- describe infected
+- describe inhibiting a pathogen
+- describe pathogenic virulence factor
+- describe immune response
+- describe immunogenic
+- describe adjuvant
+- describe treating
+- describe prophalactic
+- describe therapeutic
+- describe rapidity of proteome-wide immunogenic protein-identification
+- describe features of the invention
+
+## DETAILED DESCRIPTION
+
+- identify immunogenic proteins
+
+### Example 1
+
+- identify limitations of animal models
+- exploit human immune response
+- describe IVIAT technique
+- motivate identification of O157 proteins
+- describe rationale for IVIAT
+- indicate usefulness of identified proteins
+- describe recombinant DNA methods
+- detail isolation of plasmid DNA
+- describe restriction digestions and agarose gel electrophoresis
+- detail DNA sequencing
+- describe bacterial strains and growth conditions
+- detail patient and control sera
+- assess reactivity of sera with immunogenic O157 proteins
+- describe adsorption of HUS-convalescent and control sera
+- detail adsorption protocol
+- assess efficiency of adsorption
+- describe enzyme immunoassay
+- detail construction of expression library
+- describe PATS profiling
+- select O157 isolate for library construction
+- generate expression library
+- describe transformation of E. coli DH5α
+- determine percentage of transformants with inserts
+- screen expression library with pooled sera
+- identify clones expressing immunogenic O157 proteins
+- describe IVIAT screening
+- identify O157 proteins expressed exclusively during human infection
+- predict cellular localization of ivi-proteins
+- assign putative functions to ivi-proteins
+- describe proteomic analysis of O157 grown in LB broth
+- prepare O157 whole cells for μLC-MS/MS analysis
+- detail μLC-MS/MS analysis
+- describe peptide ID and database searches
+- set peptide score cutoff values
+- introduce results and discussion
+- introduce HUS-convalescent sera
+- react with E. coli XL1-Blue and E. coli DH5α
+- contrast with E. coli BL21(DE3)
+- adsorption of pooled HUS-convalescent sera
+- determine adsorption efficiency
+- react with in vitro grown O157 lysates
+- residual serum reactivity with intimin-γ
+- screen O157 genomic expression library
+- identify persistently reactive clones
+- include previously identified O157 virulence-related proteins
+- describe intimin-γ
+- describe QseA
+- describe TagA
+- describe MsbB2
+- express from O157 backbone
+- identify glycolytic enzymes
+- identify hydrogenases
+- identify alcohol dehydrogenase
+- identify reductases
+- identify transport ivi-proteins
+- describe FhuA
+- describe CirA
+- describe TdcC
+- identify regulatory proteins
+- describe QseA
+- describe NarX
+- describe PhoQ
+- describe BasS
+- describe GlnL
+- describe HydH
+- introduce ivi-proteins
+- express phage-related proteins
+- identify homologous ivi-proteins
+- express non-phage, non-LEE effectors
+- identify Nle homologs
+- express proteins from OI sequences
+- identify enzymes involved in O-antigen and LPS core biosynthesis
+- express putative arylsulphatase and RhsA protein
+- express proteins from large OIs
+- identify putative acyl-coenzyme A synthetase
+- express inner membrane ABC-type transport permease
+- express inner membrane ABC-type bacteriocin/lantibiotic exporter
+- express cytoplasmic esterase
+- express conserved cytoplasmic protein
+- express inner membrane protein
+- express ivi-proteins from pO157
+- identify TagA and MsbB2
+- express SopA and nickase associated with plasmid maintenance
+- express hemolysin expression modulating protein
+- react with HUS-convalescent serum
+- identify ivi-proteins not expressed during in vitro growth
+- express backbone ivi-proteins during in vitro growth
+- graphically represent ivi-gene locations
+- conclude IVIAT identifies O157 proteins expressed in vivo
+
+### Example 2
+
+- introduce E. coli antigens in cattle
+- motivate vaccination against E. coli
+- describe PELS methodology
+- outline limitations of traditional methodologies
+- describe colony immunoscreening
+- describe IVIAT
+- describe bacterial surface display
+- describe immunoproteomics
+- describe protein microarray/chip-technology
+- describe NAPPA
+- describe antibody arrays/protein chips
+- introduce PELS principle
+- describe capture of recombinant proteins
+- describe 1D SDS PAGE ESI nano LC-MS/MS
+- describe SEAQUEST database searching
+- outline Materials and Methods
+- describe recombinant DNA methods
+- describe proteomic analysis
+- describe construction of inducible O157 genomic DNA expression library
+- describe preparation of cell-lysate and pellet fractions
+- describe coupling of bait PAbs to HiTrap NHS-activated HP columns
+- describe capture of recombinant O157 proteins
+- describe elution of captured proteins
+- describe assessment of nonspecific adsorption
+- describe proteomic analysis of elutions
+- describe 1D SDS PAGE ESI nano LC-MS/MS
+- describe GeLC-MS/MS
+- describe GeLC-MS/MS
+- prepare samples for 1D SDS-PAGE
+- perform 1D SDS-PAGE
+- stain and slice gels
+- destain and dry gel slices
+- perform in-gel digestion and peptide extraction
+- prepare samples for mass spectrometry
+- perform mass spectrometry
+- identify peptides using SEQUEST
+- determine peptide score cutoff values
+- validate single hit proteins
+- determine cellular localization of hypothetical proteins
+- determine putative functions of hypothetical proteins
+- generate hyper-immune bovine sera
+- evaluate reactivity of pooled hyperimmune sera
+- amplify and clone genes encoding full-length EspB and PilA
+- perform colony immunoblot assay
+- affinity-purify PAbs from hyperimmune sera
+- quantify and prepare affinity-purified IgG PAbs
+- construct and induce recombinant protein expression
+- capture recombinant proteins using affinity-purified PAbs
+- identify captured proteins using GeLC-MS/MS and SEQUEST
+- validate PELS by comparing with O157 immunome in humans
+- identify adhesins and colonization factors
+- identify outer membrane components and enzymes
+- identify hypothetical and unknown proteins
+
+### Example 3
+
+- identify immunogenic proteins
+- list pathogenic organisms
+- describe method for M. tuberculosis
+
+### Example 4
+
+- evaluate proteins as vaccines
+- prepare protein-based vaccine
+- administer protein vaccine
+- prepare pDNA-based vaccine
+- administer pDNA-based vaccine
+- determine vaccine efficacy
+
+### Example 5
+
+- isolate coding sequences of virulence factors
+- use standard strategies and techniques
+- identify sequences encoding pathogenicity-associated structures
+- use nucleic acid hybridization screening
+- detect hybridizing sequences by plaque or colony hybridization
+- design specific oligonucleotide probes
+- use degenerate oligonucleotide probes
+- use probes for gene isolation
+- use PCR cloning strategies
+- prepare recombinant DNA libraries
+- confirm sequence's relatedness to pathogenicity polypeptide
+- evaluate activity of gene product
+- produce polypeptides of the invention
+- transform host cell with polypeptide-encoding nucleic acid molecule
+- use expression systems
+- choose host system
+- use E. coli pET expression system
+- use pGEX expression system
+- express and isolate recombinant polypeptide
+- purify recombinant polypeptide
+- generate antibodies
+- express coding sequence as C-terminal fusion with GST
+- purify fusion protein
+- cleave with thrombin
+- immunize rabbits
+- monitor antibody titres
+- affinity purify antiserum
+- determine antiserum specificity
+- generate peptides corresponding to immunogenic regions
+- couple peptides to keyhole limpet hemocyanin
+- affinity purify antiserum
+- test specificity
+- prepare monoclonal antibodies
+- test monoclonal antibodies for specific recognition
+- use antibodies in immunoassay
+- screen compounds to identify agonists or antagonists
+- measure gene expression
+- measure polypeptide production
+- use immunoassays to detect polypeptide
+- screen compounds for binding to polypeptide
+- identify compounds that inhibit pathogenicity
+- use chromatography-based technique
+- identify compounds that bind to polypeptide
+- test compounds for ability to render pathogen less virulent
+- use compounds as therapeutics
+- use DNA sequences to discover antipathogenic compounds
+- use polypeptide, polynucleotide, or inhibitor to interfere with pathogen-host interaction
+

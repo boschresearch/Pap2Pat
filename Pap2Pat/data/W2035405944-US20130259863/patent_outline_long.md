@@ -1,0 +1,603 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD OF THE INVENTION
+
+- define technical field
+
+## BACKGROUND OF THE INVENTION
+
+- explain coagulation cascade
+- describe bleeding disorders
+- limitations of factor replacement therapy
+- motivate need for new treatment
+
+## SUMMARY OF THE INVENTION
+
+- introduce TFPI-binding peptides
+- define peptide structure
+- specify amino acid sequences
+- describe peptide variants
+- introduce SEQ ID NO: 3109
+- specify X7-X21 amino acids
+- describe N-terminal amino acid(s)
+- specify X1-X6 amino acids
+- describe C-terminal amino acid(s)
+- specify X22-X27 amino acids
+- introduce SEQ ID NOs: 1-7
+- describe TFPI-inhibiting peptides
+- introduce formula (I)
+- specify X1001-X1020 amino acids
+- describe formula (III)
+- specify X1001, X1003-X1018 amino acids
+- introduce formula (V)
+- specify X2001-X2023 amino acids
+- describe cyclic structure
+- introduce formula (VI)
+- specify X2001, X2002, X2007-X2022 amino acids
+- describe cyclic structure
+- introduce formula (VIII)
+- specify X3001-X3021 amino acids
+- describe TFPI-binding peptides
+- introduce formula (IX)
+- specify X3001-X3021 amino acids
+- describe peptide with 60% identity
+- introduce formula (XI)
+- define TFPI-binding peptide
+- describe structure of peptide
+- specify amino acid groups for each position
+- exclude specific structure formula
+- describe peptide variations
+- provide numbered paragraphs for exemplary variations
+- define peptide with specific structure
+- specify amino acid groups for each position
+- describe additional peptide variations
+- describe peptide with N-terminal amino acid(s) and/or moieties
+- describe peptide with C-terminal amino acid(s) and/or moieties
+- describe peptide with cyclic structure
+- specify cyclic structure formation
+- describe peptide with intramolecular disulfide bond
+- describe peptide with specific IC50 values
+- describe peptide consisting of specific amino acid sequences
+- describe TFPI-binding peptide as homo-dimer or homo-multimer
+- describe TFPI-binding peptide as hetero-dimer or hetero-multimer
+- describe peptide inhibiting TFPI activity
+- describe peptide conjugated to polyethylene glycol (PEG) moiety
+- describe peptide conjugated to other moieties
+- describe peptide conjugated to specific moieties
+- describe peptide for use in treating a subject
+- describe peptide for treating blood coagulation disorder
+- describe use of peptide for manufacturing medicament
+- describe use of peptide for manufacturing medicament for blood coagulation disorder
+- describe pharmaceutical composition with peptide and carrier
+- describe pharmaceutical composition with additional agent
+- describe pharmaceutical composition for treating blood coagulation disorder
+- describe method for targeting cell displaying TFPI
+- describe method for detecting peptide binding to TFPI
+- define method for treating disease
+- specify interaction partner
+- specify detection moiety
+- describe therapeutic agent
+- describe method for diagnosing disease
+- specify detectable moiety
+- describe method for purifying TFPI
+- describe method for identifying TFPI-binding compound
+- describe binding site
+- describe method for detecting binding
+- describe method for identifying TFPI-binding compound
+- describe binding site
+- describe method for detecting binding
+- describe method for identifying TFPI-binding compound
+- describe binding site
+- describe method for detecting binding
+- describe method for identifying TFPI-binding compound
+- describe binding site
+- describe method for detecting binding
+- describe method for identifying TFPI-binding compound
+- describe binding site
+- describe method for detecting binding
+- describe composition
+- describe use of TFPI inhibitor
+- describe method for treating disease
+- describe method for inhibiting human TFPI
+- describe method for treating disease
+- describe method for purifying compound
+- describe method for modeling interaction
+- describe computer storage media
+- describe method for comparing test compound
+- describe method for comparing test compound
+- describe computer storage media
+- describe computer storage media
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce Tissue Factor Pathway Inhibitor-1
+- describe blood coagulation cascade
+- motivate TFPI-inhibitory peptides
+- define conventional amino acids
+- define non-conventional amino acids
+- describe peptide sequence format
+- provide example peptide sequences
+- specify C-termini of peptide sequences
+- specify N-termini of peptide sequences
+- define core structure of peptides
+- describe variations of core structure
+- provide specific peptide sequence examples
+- describe N-terminal amino acid sequences
+- describe C-terminal amino acid sequences
+- define peptide structure
+- specify amino acid sequences
+- describe peptide variants
+- define formula (I)
+- specify X1001-X1020 amino acids
+- provide example peptide structures
+- define formula (II)
+- specify X1000-X1019 amino acids
+- define formula (III)
+- specify X1001-X1018 amino acids
+- describe TFPI-binding peptides
+- specify X1001 amino acids
+- specify X1003 amino acids
+- specify X1004 amino acids
+- specify X1005 amino acids
+- specify X1006 amino acids
+- specify X1008 amino acids
+- specify X1010 amino acids
+- specify X1014 amino acids
+- specify X1017 amino acids
+- specify X1018 amino acids
+- specify X1019 amino acids
+- define peptide structure
+- specify amino acid residues
+- describe N-terminal amino acid sequences
+- describe C-terminal amino acid sequences
+- introduce TFPI-binding peptide
+- describe cyclic structures
+- specify intramolecular disulfide bonds
+- describe non-conventional amino acids
+- specify cysteine residues
+- describe disulfide bridge formation
+- introduce formula (V) peptide structure
+- specify X2001-X2003 amino acid residues
+- specify X2004-X2006 amino acid residues
+- specify X2007-X2018 amino acid residues
+- specify X2019-X2023 amino acid residues
+- describe optional amino acid residues
+- specify X2001-X2003 optional residues
+- specify X2002-X2003 optional residues
+- define X2004-X2023
+- define peptide structure of formula (VI)
+- specify X2001-X2002 and X2023 as optional
+- define X2008-X2016 and X2022 as independent amino acids
+- specify X2001-X2002 as optional amino acids
+- define X2008-X2013 and X2016 as optional amino acids
+- specify X2022-X2023 as optional amino acids
+- define TFPI-binding peptide with at least 60% identity
+- specify peptide sequence of formula (V)-(VII)
+- define peptide comprising SEQ ID NOs: 1001-1293
+- introduce TFPI-binding peptide of formula (VIII)
+- specify X3001-X3002 as optional amino acids
+- define X3003-X3013 as independent amino acids
+- specify X3001-X3002 as amino acids
+- define X3003-X3005 as amino acids
+- specify X3006-X3013 as amino acids
+- define TFPI-binding peptide with at least amino acids 3-21
+- conclude TFPI-binding peptide of formula (VIII)
+- define X3014-X3021
+- define X3001-X3013
+- describe peptide structure
+- specify X3001-X3002
+- specify X3003-X3004
+- specify X3005-X3006
+- specify X3007-X3008
+- specify X3009-X3010
+- specify X3011-X3012
+- specify X3013-X3014
+- specify X3015-X3016
+- specify X3017-X3018
+- specify X3019-X3020
+- specify X3021
+- describe peptide binding to TFPI
+- describe formula (IX)
+- specify X3001-X3002 in formula (IX)
+- specify X3003-X3021 in formula (IX)
+- define TFPI-binding peptide
+- specify amino acid sequences
+- describe peptide structure
+- provide examples of peptides
+- specify SEQ ID NOs
+- describe TFPI-binding peptide of formula (XI)
+- specify X4001-X4020
+- exclude structure of formula (XII)
+- specify X5001-X5018
+- describe N-terminal amino acid(s) and/or moieties
+- describe C-terminal amino acid(s) and/or moieties
+- specify cyclic structure between X4018 and X4021
+- specify cyclic structure between X4011 and X4014
+- provide additional SEQ ID NOs
+- describe peptide consisting of amino acid sequence
+- specify JBT0047, JBT0049, JBT0101, JBT0120, or JBT0122
+- describe variants of peptides
+- specify percentage identity
+- describe peptide length
+- specify 15-35 amino acid residues
+- describe peptide fragments
+- specify amino acid substitutions
+- provide examples of substitutional mutants
+- describe TFPI inhibition
+- describe coagulation cascade
+- specify peptide binding to TFPI
+- describe blocking TFPI inhibition
+- summarize peptide characteristics
+- define amino acid substitutions
+- list families of amino acid residues
+- describe conservative substitutions
+- introduce non-naturally occurring amino acids
+- describe TFPI-inhibitory peptide variants
+- introduce fusion proteins
+- describe fusion partners
+- introduce albumin polypeptide or fragment
+- describe other suitable fusion partners
+- introduce TFPI-inhibitory peptide complex
+- describe homo-dimer and hetero-dimer
+- introduce derivatives
+- describe chemical modifications
+- introduce functional groups
+- describe peptide and protein modifications
+- introduce water soluble polymer attachments
+- describe PEGylated peptides
+- introduce other moieties for improving half life
+- describe targeting moieties
+- introduce chemical moieties for purification and detection
+- describe acylation and amidation
+- introduce modified or non-proteinogenic amino acids
+- describe modified linker groups
+- introduce homologs of amino acids
+- describe halogenated amino acids
+- introduce aromatic amino acids
+- conclude derivatives
+- define retro-modified peptide
+- define inverso-modified peptide
+- define retro-inverso modified peptide
+- describe synthesis of TFPI-binding peptides
+- describe expression of TFPI-binding peptides
+- describe purification of TFPI-binding peptides
+- describe nucleic acid encoding TFPI-inhibitory peptide
+- describe preparation of DNA/RNA molecule
+- describe incorporation into expression vector
+- describe preparation of expression vector
+- describe optional operable linkage to regulatory sequences
+- describe provision of TFPI-inhibitory peptide in composition
+- describe formulation with carrier, buffer, excipient, or diluent
+- describe optional provision of physiologically acceptable salt
+- describe optional inclusion of additional pharmaceutically-effective agents
+- describe inhibition of TFPI-1 activity
+- describe proposed mechanism of inhibition
+- describe inhibition of binding of TFPI to FXa
+- describe inhibition of binding of TFPI to TF/FVIIa complex
+- describe method of inhibiting TFPI-mediated downregulation
+- describe method of enhancing FXa-mediated conversion
+- describe TFPI antagonistic activity in model systems
+- describe extrinsic tenase assay
+- describe FXa inhibition assay
+- describe characterization of TFPI-antagonist activity in plasma-based assay
+- describe measurement of thrombin formation
+- describe enhancement of thrombin formation in absence of FVIII
+- describe administration to animal model of thrombin deficiency
+- describe binding of peptide to TFPI from various sources
+- describe determination of affinity and IC50 values
+- describe TFPI-inhibitory peptides
+- inhibit TFPI activity
+- detect and/or quantify TFPI
+- target biological structures with TFPI-binding peptides
+- conjugate peptides to moieties for additional functionality
+- administer peptides to target TFPI-displaying cells
+- detect peptide-TFPI complexes
+- use detection moieties for indirect detection
+- modify peptides for interaction partner binding
+- detect interaction partner-peptide complexes
+- identify peptide-TFPI complexes using various methods
+- use fluorescent detection moieties
+- use radioactive labels for detection
+- use paramagnetic metals for detection
+- modify peptides with detectable substituents or nuclides
+- diagnose diseases associated with aberrant TFPI activity
+- administer peptides to subjects for diagnosis
+- detect TFPI-peptide complexes for diagnosis
+- use interaction partners for diagnosis
+- purify TFPI using TFPI-binding peptides
+- use peptides for commercial production of TFPI
+- characterize TFPI molecules using peptides
+- enhance thrombin formation in clotting factor-deficient subjects
+- administer peptides to enhance thrombin formation
+- increase blood clot formation in subjects
+- define blood coagulation disorders
+- describe coagulation disorders caused by deficient blood coagulation factor activity
+- describe coagulation disorders caused by deficient platelet activity
+- list examples of coagulation disorders
+- describe TFPI-inhibitory peptide used to treat excessive bleeding
+- describe TFPI-inhibitory peptide used to reverse effects of anticoagulants
+- list examples of anticoagulants
+- define treating and treatment
+- describe administration of TFPI-inhibitory peptide to protect against excessive blood loss
+- describe peptide for use in method for treatment of disease
+- describe peptide for use in manufacture of medicament
+- describe administration of nucleic acid comprising TFPI-binding peptide
+- describe expression vectors and nucleic acid regulatory sequences
+- describe administration methods
+- describe dosage regimen
+- describe factors affecting dosage
+- describe route of administration
+- describe timing of administration
+- describe frequency of administration
+- describe dosage ranges
+- describe treatment course
+- describe administration methods for acute conditions
+- describe suitable methods of administering pharmaceutical composition
+- describe routes of administration
+- describe non-intravenous administration
+- describe regional administration
+- describe incorporation into microparticles
+- describe implantation devices
+- describe therapeutic delivery approaches
+- describe formulation into physiologically-acceptable composition
+- describe carriers and excipients
+- describe packaging and instructions
+- describe co-treatments
+- list examples of co-treatments
+- describe administration of TFPI-inhibitory peptide with other substances
+- describe administration strategies
+- introduce TFPI-binding compounds
+- conjugate peptide to moiety
+- administer peptide with interaction partner
+- identify TFPI-binding compound
+- contact peptide with KD1 and test compound
+- measure KD1-TFPI-binding peptide complexes
+- compare complex formation with and without test compound
+- detect displacement of TFPI-binding peptide
+- measure signal generated by KD1-TFPI-binding peptide complexes
+- compare signal with and without test compound
+- identify TFPI-binding compound that interferes with TFPI-FXa interactions
+- contact peptide with FXa and test compound
+- compare KD1-FXa binding with and without test compound
+- detect binding of test compound to TFPI binding site
+- use NMR to detect chemical shifts
+- determine presence or absence of chemical shifts
+- detect alterations in KD1-FVIIa or KD1-FXa binding
+- compare KD1-FVIIa or KD1-FXa binding with and without test compound
+- include KD2 in peptide
+- contact peptide with FXa and test compound
+- compare KD2-FXa binding with and without test compound
+- detect enzymatic activity of FVIIa or FXa
+- evaluate TFPI activity
+- isolate or purify TFPI-binding compound
+- use TFPI inhibitor to manufacture medicament
+- treat subject with TFPI inhibitor
+- inhibit human TFPI
+- administer inhibitor to subject
+- model candidate TFPI-compounds
+- use 3D modeling to determine fit
+- predict affinity rating
+- modify compound to improve fit and affinity
+- model surface of KD1 protein
+- match peptide to surface
+- determine contact points and affinity rating
+- repeat modeling for peptide family
+- implement method on computer
+- obtain protein structure 3D model
+- determine 3D relationship between amino acids
+- model surface bounded by amino acids
+- match test compound to surface
+- identify contact points and affinity rating
+- display contact points
+- compare peptide to selected 3D points
+- create protein structure for KD1 protein
+- determine 3D model of peptide
+- generate affinity of peptide for selected subset of amino acids
+- describe computer system architecture
+- detail system memory components
+- illustrate operating system and program modules
+- describe I/O interface and connected devices
+- detail super I/O chip and connected peripherals
+- describe computer storage media options
+- illustrate hard disk drive and stored components
+- describe removable storage media options
+- illustrate input devices and connections
+- describe networked environment and remote computer
+- illustrate TFPI protein 3D model and amino acids
+- illustrate peptide binding to TFPI protein
+- describe method of performing KD1 and peptide interaction modeling
+- obtain and store 3D protein model
+- determine 3D relationship between selected amino acids
+- model surface bounded by selected amino acids
+- generate and store 3D model of candidate compound
+- match peptide 3D model to surface bounded by amino acids
+- identify and store contact points between models
+- count contact points and calculate affinity rating
+- determine bond type for each contact point
+- update affinity rating based on bond type
+- iterate process for additional peptides or variants
+- store results for future analysis and decision making
+- claim scope and incorporate references
+
+### EXAMPLES
+
+- introduce examples
+- describe production of peptides
+- identify peptides for TFPI binding
+- synthesize candidate peptides
+- describe mRNA display technology
+- immobilize TFPI to solid support
+- isolate TFPI-bound peptide-RNA complexes
+- obtain coding DNA
+- perform peptide optimization
+- describe microarray-based scan analysis
+- perform N- and C-terminal truncation analysis
+- demonstrate peptide affinity via ELISA
+- describe binding ELISA protocol
+- perform competition ELISA
+- describe competition ELISA protocol
+- perform screening ELISA
+- describe screening ELISA protocol
+- classify peptides by binding affinity
+- introduce Example 2
+- describe anti-target binding
+- perform surface plasmon resonance assay
+- analyze binding kinetics
+- determine binding constants
+- confirm specific binding of peptides to TFPI-1
+- introduce example 3
+- describe extrinsic tenase assay
+- describe FXa inhibition assay
+- present results of extrinsic tenase and FXa inhibition assays
+- introduce example 4
+- describe plasma-based assay
+- describe thrombin generation measurement
+- present results of plasma-based assay
+- introduce example 5
+- describe modification of peptides with PEG
+- describe optimization of TFPI-binding peptide
+- describe conjugation of PEG to peptides
+- describe PEGylation of peptides
+- present results of pharmacokinetic analysis
+- describe thrombin generation improvement
+- describe example 3 method
+- describe example 3 materials
+- describe example 4 method
+- describe example 4 materials
+- describe example 5 method
+- describe example 5 materials
+- conclude peptide activity
+- characterize JBT1852 and JBT1855 peptides
+- motivate PEGylation
+- describe cell-based extrinsic tenase assay
+- apply cell-based extrinsic tenase assay to JBT0740
+- test PEGylated peptides
+- compare JBT1853 and JBT1854
+- compare JBT1855 and JBT1852
+- test peptides of JBT0120 family
+- optimize JBT1857 peptide
+- describe Example 6
+- motivate Example 6
+- describe Example 7
+- motivate Example 7
+- describe nuclear magnetic resonance
+- describe x-ray crystallography
+- prepare NMR sample
+- optimize sample conditions
+- record HSQC spectra
+- assign residues
+- analyze chemical shift changes
+- illustrate chemical shift changes
+- determine amide exchange rates
+- calculate relative exchange rates
+- identify binding site
+- derive constraints for HADDOCK models
+- calculate HADDOCK models
+- identify binding site of JBT0122
+- prepare NMR sample of JBT0122
+- record HSQC spectra of JBT0122
+- assign residues of JBT0122
+- analyze chemical shift changes of JBT0122
+- illustrate chemical shift changes of JBT0122
+- express and purify JBT0122
+- assign backbone signals of JBT0122
+- determine secondary structure of JBT0122
+- calculate torsion angles of JBT0122
+- prepare NMR sample of JBT0122-TFPI160 complex
+- record HSQC spectra of JBT0122-TFPI160 complex
+- assign residues of JBT0122 in complex
+- analyze chemical shift changes of JBT0122 in complex
+- illustrate secondary structure of JBT0122 in complex
+- identify binding site of JBT0122 on TFPI160
+- determine conformation of JBT0122 in complex
+- analyze chemical shift changes of JBT0122 in complex
+- illustrate secondary structure of JBT0122 in complex
+- identify residues of JBT0303 that interact with TFPI160
+- produce and label JBT0303 recombinantly
+- assign NMR spectra of JBT0303
+- determine secondary structure of JBT0303
+- illustrate secondary structure of JBT0303
+- assign NMR spectra of JBT0303 in complex with TFPI160
+- determine secondary structure of JBT0303 in complex with TFPI160
+- illustrate secondary structure of JBT0303 in complex with TFPI160
+- identify residues of JBT0303 with significant chemical shift changes
+- create model of KD1-JBT0303 complex using HADDOCK
+- define restraints for HADDOCK model calculation
+- describe model of KD1-JBT0303 complex
+- illustrate model of KD1-JBT0303 complex
+- describe models of JBT0740 and JBT1857 bound to KD1
+- define restraints for HADDOCK model calculation of JBT0740 and JBT1857
+- describe differences in binding modes of JBT0303 derivatives
+- express and refold TFPI in E. coli
+- purify and proteolytically digest TFPI
+- prepare JBT1857 by solid phase synthesis
+- co-crystallize JBT1857 with KD1
+- determine crystal structure of KD1-JBT1857 complex
+- describe structure of JBT1857
+- describe interactions between JBT1857 and KD1
+- identify hydrophobic contacts between JBT1857 and KD1
+- identify hydrogen bonds between JBT1857 and KD1
+- describe electrostatic interactions between JBT1857 and KD1
+- illustrate structure of KD1-JBT1857 complex
+- correlate structure with inhibitory function of JBT1857
+- identify TFPI amino acid residues that interact with JBT1857
+- describe characterization of secondary structure of peptides
+- describe correlation of structure with inhibitory function of peptides
+- describe TFPI-binding peptides
+- modify peptides with PEG moieties
+- examine binding affinity and TFPI inhibitory activity
+- assess plasma stability of PEGylated peptides
+- characterize PEGylated peptides in various assays
+- perform thrombin generation assay
+- determine TFPI inhibitory activity in extrinsic tenase assay
+- evaluate PEG size impact on TFPI inhibitory activity
+- describe rotational thromboelastography method
+- perform rotational thromboelastography on whole blood
+- analyze thromboelastographic parameters
+- illustrate exemplary results in figures
+- describe nail clip study in mice
+- administer JBT2329 to mice and collect blood samples
+- calculate and compare mean blood loss
+- generate peptides with alternate conjugation sites
+- generate peptides with alternative chemical moieties
+- conjugate PEG moiety to residue 14 of JBT1857
+- replace linear PEG moiety with branched PEG moiety
+- modify JBT1857 with K(Ttds-Maleimidopropionyl)
+- summarize results of characterized peptides
+- introduce examples
+- describe characterization of TFPI-binding peptides
+- summarize affinity and TFPI-inhibitory activity
+- describe FXa inhibition assay
+- describe extrinsic tenase assay
+- describe plasma-based functional assay
+- describe ROTEM assay
+- compare affinity and TFPI-inhibitory activity
+- introduce in vivo activity of TFPI-binding peptides
+- describe tail-tip bleeding model
+- describe administration of JBT2329 and ADVATE
+- describe efficacy of JBT2329
+- describe FIX knock-out tail-tip bleed mouse model
+- describe administration of JBT2329 and rFIX
+- describe efficacy of JBT2329 in FIX knock-out model
+- introduce detection of TFPI using inventive peptides
+- describe ELISA-like assay format
+- describe coating of microtiter plate
+- describe blocking and washing of plate
+- describe addition of JBT2271 and streptavidin-horseradish peroxidase conjugate
+- describe detection of TFPI
+- introduce koff assay for characterizing TFPI-binding peptides
+- describe coating of microtiter plate
+- describe blocking and washing of plate
+- describe addition of test peptide and tracer peptide
+- describe detection of TFPI
+- introduce evaluation of influence of TFPI-binding peptides on TFPI's inhibition of FVIIa/TF
+- describe kinetic measurements
+- describe addition of TFPI-binding peptide and chromogenic substrate
+- describe detection of residual activity
+- describe results of enzymatic assay
+- introduce influence of PEG and HSA conjugation on TFPI-binding peptides in vivo
+- describe pharmacokinetic analysis
+- describe administration of peptide-PEG and peptide-HSA conjugates
+- describe quantification of peptide-conjugate content in plasma
+- describe results of pharmacokinetic analysis
+

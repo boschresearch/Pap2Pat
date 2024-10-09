@@ -1,0 +1,357 @@
+{
+    "id": "US20140214780",
+    "authors": [
+        "Christoph Lange",
+        "Dandi Qiao"
+    ],
+    "title": "SYSTEMS AND METHODS FOR GENETIC DATA COMPRESSION",
+    "date": "2012-07-06 00:00:00",
+    "abstract": "Genetic data may be compressed efficiently by selecting for each bi-allelic marker, from among multiple compression algorithms with different associated storage requirements that depend on the minor allele frequency of the respective marker, the algorithm that has the lowest storage requirements. Efficient approaches compress, store, and load pedigree file data. A hybrid method is used that selects between multiple alternative compression algorithms whose performance depends on the frequency of certain observable genetic variations. The hybrid method may achieve higher compression ratios than PLINK or PBAT. Further, it results in a compressed data format that, generally, does not require any overhead memory space and CPU time for decompression, and, consequently, has shorter loading times for compressed files than the binary format in PLINK or PBAT. Moreover, the compressed data fonnat supports parallel loading of genetic information, which decreases the loading time by a factor of the number of parallel jobs.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present invention relates to systems and methods for compressing genetic data."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 82,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Genome-wide association studies (GWAS) are now a standard tool that is accessible (in terms of cost and laboratory efforts) for research groups, resulting in imminent demand for high-throughput sequencing data. As a result, the data-management requirements for analysis have changed fundamentally. During the days of candidate gene analyses and linkage analysis, \u201conly\u201d up to several thousands of genetic loci had to be stored and loaded into analysis packages, whereas current GWAS provide genetic information on several million genetic loci. For high-throughput sequencing studies, the number of genetic loci will again increase by several magnitudes.",
+                        "The standard data format to store genetic information for the analysis in software packages such as, e.g., FBAT, PBAT, or PLINK is the pedigree file type. Pedigree files contain the necessary family/pedigree information and genetic data for the genotyped loci in the study. The pedigree files are usually ACSII text files that are human-readable. However, for GWAS, such pedigree files are often impractically large, which creates not only storage challenges, but can also become a source for potential data management errors. The typical size of a pedigree file can be 1 Gigabyte to 30 Gigabytes for common-variants data (e.g., GWAS data), and can be up to several Terabytes for sequence data. Merely loading such large files can take up to a few hours. This results in great waste of disk space and computation time. Due to the popularity of genome-wide analysis, this problem is encountered routinely, and only a few alternatives are available. As high-throughput sequencing data becomes standard in research, the problem will grow even worse.",
+                        "One possible solution is to use general-purpose compression software, such as gzip. However, such software is not designed specifically for genotype data and its analysis. Decompression is always needed whenever the data is accessed. Also, general-purpose compression software typically only achieves a compression factor of five to six, and does not support parallel processing. Several solutions that are better tailored to genetic data compression have been proposed. For example, the freely available PLINK and PBAT software packages, which are whole-genome association analysis toolsets, have introduced binary PED formats. This format ensures that only two bits are required for storing the information for one genotype. Furthermore, sophisticated compression techniques designed specifically for sequence data (e.g., DNAzip) have been proposed that can achieve excellent compression rates. However, these techniques generally require a reference human genome and a reference single-nucleotide polymorphism (SNP) map, which entails large storage overhead.",
+                        "Accordingly, there is a need for more efficient compression and storage techniques tailored to genetic data."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce genome-wide association studies",
+                        "describe data management challenges",
+                        "discuss limitations of pedigree files",
+                        "mention existing compression solutions",
+                        "highlight need for efficient compression techniques"
+                    ],
+                    "num_characters": 2874,
+                    "outline_medium": [
+                        "motivate need for compressing genetic data",
+                        "describe limitations of existing solutions"
+                    ],
+                    "outline_short": [
+                        "motivate need for genetic data compression"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Described herein are various efficient approaches to compression, storage, and loading of pedigree file data. In various embodiments, a hybrid method is used that selects between multiple alternative compression algorithms whose performance depends on the frequency of certain observable genetic variations. The hybrid method may achieve higher compression ratios than PLINK or PBAT. Further, it results in a compressed data format that, generally, does not require any overhead memory space and CPU time for decompression, and, consequently, has shorter loading times for compressed files than the binary format in PLINK or PBAT. Moreover, the compressed data format supports parallel loading of genetic information, which decreases the loading time by a factor of the number of parallel jobs. Thus, the techniques described herein may enable the storage and analysis of next-generation sequencing data in existing hardware environments.",
+                        "In a first aspect, the invention provides a computer-implemented method of compressing, for a plurality of subjects, genetic data corresponding to at least one bi-allelic marker having at least one minor allele frequency associated therewith. The genetic data may, prior to compression, be stored in ASCII format. The method utilizes two or more compression algorithms (e.g., in some embodiments, three), and involves computing (e.g., with a computer processor) storage requirements associated with each of the compression algorithms for each of the markers. The storage requirements of the compression algorithms depend on the minor allele frequency associated with the marker, as well as, in some embodiments, on the number of subjects and/or other factors. The algorithm further includes compressing the genetic data for each marker using the compression algorithm that has the lowest associated storage requirement, and storing the compressed genetic data (e.g., in system memory or on a hard drive or other non-volatile data storage medium). In addition, the compressed genetic data may be analyzed (generally without prior de-compression), and one or more user queries may be processed based on the compressed data. In some embodiments, the compressed genetic data is stored on a non-volatile data storage medium in binary format and, when loaded into memory for analysis, translated into integer format (e.g., an integer array). (This mere translation from one data format into another does not constitute decompression.)",
+                        "In certain embodiments, the compression algorithms are selected from (i) a binary-encoding algorithm; (ii) an algorithm wherein total numbers and unique indices of all subjects having a rare homozygous genotype for a marker, all subjects having a heterozygous genotype for the marker, and all subjects having an unknown genotype for the marker are expressed in binary numbers; and (iii) an algorithm wherein the total numbers and unique indices of all subjects having a rare homozygous genotype for a marker and all subject having an unknown genotype for the marker are expressed in binary numbers, and the unique indices of all subjects having a heterozygous genotype for the marker are expressed in a single n-digit number, where n is the number of subjects.",
+                        "In another aspect, a computer system for compressing genetic data is provided. The system includes one or more data storage media (e.g., system memory and/or one or more mass storage devices) for storing original genetic data for a plurality of subjects (the data corresponding to one or more bi-allelic markers with associated minor allele frequencies), as well as compressed genetic data. Further, the system includes a computer processor (in communication with the storage medium) for computing, for each of the bi-allelic markers, computer storage requirements associated with each of two or more compression algorithms (e.g., the three algorithms set forth above). The storage requirement of one or more of the compression algorithms depends, at least in part, on the minor allele frequency associated with the marker. The processor is further configured for compressing the genetic data for each of the bi-allelic markers using the compression algorithm having the lowest associated storage requirement. Further, it may be configured to analyze the compressed genetic data (optionally after translation into integer format) without prior decompression, and/or to process user queries based on the compressed genetic data. The compressed genetic data may be stored in binary format on the data-storage medium, and the computer processor may be configured to load the compressed genetic data into memory and convert the binary format into integer format prior to analyzing the data.",
+                        "In a third aspect, the invention is directed to a computer-implemented method of compressing genetic data for a plurality of subjects and for one or more bi-allelic marker(s), where each subject is associated with a unique index. The genetic data may, prior to compression, be stored in ASCII format. The method involves using a computer processor to computationally determine from the genetic data (i) the total number and the unique indices of all subjects having a rare homozygous genotype for a marker, (ii) the total number and the unique indices of all subjects having a heterozygous genotype for the marker, and (iii) the total number and the unique indices of all subjects having an unknown genotype for the marker. The determined total numbers and unique indices of the subjects may be stored in computer memory or on another data storage medium (e.g., a hard drive), e.g., in binary format. The method may also include performing an analysis based on the stored total numbers and unique indices of the subjects.",
+                        "In a further aspect, the invention is directed to a computer system for compressing genetic data. The system includes one or more data storage media for storing original genetic data for a plurality of subjects and for one or more bi-allelic marker(s) (each subject being associated with a unique index) and compressed genetic data, and a computer processor in communication with the data storage media. The processor computationally determines from the original genetic data (i) the total number and the unique indices of all subjects having a rare homozygous genotype for a marker, (ii) the total number and the unique indices of all subjects having a heterozygous genotype for the marker, and (iii) the total number and the unique indices of all subject having an unknown genotype for the marker; the compressed genetic data comprises the total numbers and unique indices of the subjects. The computer processor may be further configured to analyze the compressed genetic data without decompression (but, optionally, if the data is stored in binary format, after conversion into integer format upon loading the data into memory).",
+                        "In a fifth aspect, the invention is directed to a computer-implemented method of compressing genetic data for n subjects (each being associated with a unique index) and for at least one bi-allelic marker. The method includes using a computer processor to computationally determine from the original genetic data (i) the total number and the unique indices of all subjects having a rare homozygous genotype for a marker, (ii) the total number and the unique indices of all subjects having an unknown genotype for the marker, and (iii) the unique indices of all subject having a heterozygous genotype for the marker. The method further involves storing the total numbers and unique indices of the subjects having the rare homozygous genotype and the subjects having the unknown genotype as binary numbers in computer memory, and storing a binary number of n digits indicating the indices of the subjects having the heterozygous genotype in computer memory or on another data storage medium (e.g., a hard drive). The method may also include performance of an analysis based on the stored total numbers and unique indices of the subjects having the rare homozygous genotype and the subjects having the unknown genotype and on the binary number of n digits indicating the indices of the subjects having the heterozygous genotype.",
+                        "In yet another aspect, the invention is directed to a computer system for compressing genetic data; the system includes one or more data storage media for storing both original genetic data for a plurality of n subjects and for at least one bi-allelic marker and compressed genetic data, and a computer processor in communication with the data storage media. The processor is configured to computationally determine from the original genetic data (i) the total number and the unique indices of all subjects having a rare homozygous genotype for a marker, (ii) the total number and the unique indices of all subjects having an unknown genotype for the marker, and (iii) the unique indices of all subject having a heterozygous genotype for the marker. The compressed genetic data includes (i) binary numbers for the total numbers and unique indices of the subjects having the rare homozygous genotype and the subjects having the unknown genotype and (ii) a binary number of n digits indicating the indices of the subjects having a heterozygous genotype. The computer processor may further be configured to analyze the compressed genetic data without decompression (but, optionally, if the data is stored in binary format, after conversion into integer format upon loading the data into memory)."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce hybrid compression method",
+                        "describe advantages over PLINK or PBAT",
+                        "outline compression algorithm selection",
+                        "explain storage requirement computation",
+                        "describe compression of genetic data",
+                        "mention analysis of compressed data",
+                        "introduce first aspect of invention",
+                        "describe computer-implemented method",
+                        "outline compression algorithm options",
+                        "explain compression and storage",
+                        "mention analysis and query processing",
+                        "introduce second aspect of invention",
+                        "describe computer system for compression",
+                        "outline system components",
+                        "explain compression and analysis",
+                        "introduce third aspect of invention",
+                        "describe alternative compression method",
+                        "outline system and method for compression"
+                    ],
+                    "num_characters": 9495,
+                    "outline_medium": [
+                        "introduce hybrid compression method",
+                        "describe advantages over existing solutions",
+                        "outline computer-implemented method",
+                        "describe compression algorithms",
+                        "outline computer system for compressing genetic data",
+                        "describe analysis of compressed genetic data",
+                        "outline alternative computer-implemented method",
+                        "describe alternative computer system for compressing genetic data",
+                        "outline further aspects of the invention"
+                    ],
+                    "outline_short": [
+                        "introduce hybrid compression method",
+                        "describe advantages of hybrid method",
+                        "outline computer-implemented method",
+                        "summarize computer system for compression"
+                    ]
+                },
+                {
+                    "title": "DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "1. Genetic Data Format",
+                            "paragraphs": [
+                                "Algorithms in accordance herewith may be used to compress data stored in pedigree files, i.e., human-readable text files that store, for a (typically large) number of individuals (or \u201csubjects\u201d), their genetic information for various markers\u2014i.e., DNA sequences at known locations within a chromosome that include observable genetic variations\u2014along with their family relationships and an indication of the presence or absence of a particular trait or disease. Pedigree files are often provided in the LINKAGE format, which has the general text structure shown in the example of FIG. 1. The first line 100 usually contains the marker names, separated by a space character. Starting from the second line, each line includes pedigree and genetic information for each individual. The first six columns 110 of these lines specify each individual's pedigree information in the order of pedigree ID, subject ID, father ID, mother ID, sex, and affection status. The subject ID must be unique within one's family. Father and mother ID are 0 if this information is unknown, as is the case, e.g., in a population-based study of unrelated subjects. Sex is \u201c1\u201d for male and \u201c2\u201d for female. Affection status is \u201c1\u201d if the subject is unaffected (i.e., does not have the disease or trait of interest), \u201c2\u201d if affected, and \u201c0\u201d if the status is unknown. The other columns 120 contain the genetic data for each individual, separated by a space between each marker. Information for each marker is represented by two columns for two alleles, also separated by a space. The allele information is coded using numerals 0 to 4 where \u201c1\u201d=A, \u201c2\u201d=C, \u201c3\u201d=G, \u201c4\u201d=T, and \u201c0\u201d means missing allele information.",
+                                "The LINKAGE format is the most commonly used pedigree file format, and will be used to illustrated compression algorithms in accordance with various embodiments. However, the algorithms described herein are also straightforwardly applied to any other pedigree file format (including, e.g., long-format), as well as to HapMat format."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce pedigree files",
+                                "describe LINKAGE format",
+                                "explain genetic data structure",
+                                "mention other formats (e.g., HapMat)"
+                            ],
+                            "num_characters": 2013,
+                            "outline_medium": [
+                                "introduce pedigree files",
+                                "describe LINKAGE format"
+                            ],
+                            "outline_short": [
+                                "describe pedigree file format"
+                            ]
+                        },
+                        {
+                            "title": "2. Compression Algorithms",
+                            "paragraphs": [
+                                "Various embodiments utilize one or a combination of three different compression algorithms whose performance depends on the minor allele frequency (MAF) of the genetic locus to be stored. Depending on the MAF, a \u201chybrid\u201d or optimization algorithm may select for each marker the best procedure among the three compression algorithms. The first algorithm is based on the binary format implemented in PLINK and PBAT. It utilizes the fact that the marker information for each marker can be represented using a two-digit binary number. The second algorithm uses subject indices to indicate heterogeneous, homogeneous, and missing genotypes. The third algorithm uses binary digits to indicate heterogeneous genotype, and subject indices to indicate homozygous and missing genotypes. For all three compression algorithms, the required memory space for storage can be computed prior to compression. This allows the hybrid algorithm to select the optimal method before compressing the data. The three different compression algorithms are described in detail in the following sections.",
+                                "**2.1 Algorithm I: Compression Using Binary Encoding**",
+                                "For any pedigree file, we assume that there are only bi-allelic markers in the file. Then, for any allele of a marker, an individual can only have zero, one, or two of this allele. Also, the allele information can be missing for any individual at any marker. Thus, the marker information can be transformed into the number of the copies of a certain allele which is zero, one, two, or missing. The four different possibilities can be represented by a two-digit binary number. In the compression process, in one embodiment, the minor alleles are determined for each marker, and \u201c00,\u201d \u201c01,\u201d and \u201c10\u201d are used to represent zero, one, or two copies, respectively, of the minor allele at that marker. Further, \u201c11\u201d is used to indicate that the genetic information is missing at this marker for the individual. Thus, information for one marker and one individual in the original file can be converted into two binary digits, i.e., two bits. Four of such two-digit binary numbers sum up to eight bits, which equals one byte. Therefore, the genetic information of four markers for one individual can be converted into one byte in a binary file. FIG. 2 illustrates this binary-encoding compression algorithm as applied to the genetic information 130 of the first four markers for the first three individuals in the example of FIG. 1. The minor alleles for the first four markers are 2, 2, 2, and 1, respectively.",
+                                "Based on this conversion method, the genetic information in the pedigree file can be compressed into a much smaller binary file. As shown in the example of FIG. 2, the genetic information for four genotypes occupies 16 bytes in the original pedigree file, and is converted to only one byte in the compressed file, which may save up to a factor of 16 of disk space. For the purpose of efficient loading, the information of all the subjects for one marker may be compressed together. Further, the major and minor allele types may be stored along with the compressed data to facilitate retrieving the genotype data at a later time, should this be desired. If the number of subjects is not a multiple of four, 1's may be padded to the end of the last character for this marker. Saving the allele types and padding both decrease the compression factor of sixteen by a small amount. In addition, since the pedigree information is saved in a separate text file, the space taken up by the pedigree information itself is generally not compressed. However, because the space occupied by the pedigree information, allele types, and the padded bits is much smaller than the space taken by the genetic information, the algorithm can still compress the original file by a factor of approximately 16. If there are n subjects in the dataset, the storage requirement per marker for this algorithm is given by:",
+                                "[2\u00d7n/8]Bytes\u2003\u2003(1).",
+                                "**2.2 Algorithm II: Compression Using Subject Indices**",
+                                "In the binary-encoding algorithm, the genetic information of any marker in one data set is compressed to the same size since the compression algorithm does not depend on the frequency of each genotype. As shown in FIGS. 3A and 3B (explained in more detail below), the performance of the binary compression algorithm (labeled \u201cAlg1\u201d) is the best achievable, among the different algorithms compared, when the variants are relatively common (e.g., MAF>30%). However, for SNPs with small MAF, only a few subjects have heterozygous genotypes, and even fewer have the rare homozygous genotype. Thus, it generally wastes disk space to record the genetic information for all subjects, especially for the subjects with the common homozygous genotype, which is by far the most frequent genotype. Accordingly, SNPs with small MAF may be exploited by recording only the indices of the subjects with missing, heterozygous, or rare homozygous genotypes for the SNP. The common homozygous genotype is the default genotype. Since the allele frequency distribution of the human genome is skewed to smaller allele frequencies, the improvements of this approach is usually substantial compared to the binary-encoding algorithm.",
+                                "Specifically, suppose there are n subjects in the data set. Recording the index of any subject then requires log2(n) binary digits. In a first step, the number of the rare homozygous, the heterozygous, and the missing genotypes may be counted. This information may be used to calculate the compressed size and determine whether algorithm II should be used for the SNP. If algorithm II requires the smallest amount of memory, the hybrid algorithm (described below) will select algorithm II for the compression of the genetic data for the SNP. The indices of the subjects with homozygous, heterozygous, and missing genotypes may be transformed into binary digits, and afterwards written into a binary file. Since the numbers of subjects with each genotype are varied, the counts are typically written to the file before the indices of the subjects are output to the file. Thus, the storage requirement of one marker for this algorithm is given by:",
+                                "[log2(n)\u00d7(#Homo+1+#Heter+1+#Missing+1)/8]\u2003\u2003(2),",
+                                "where #Missing, #Homo, and #Heter denote the number of subjects with missing genotype, the number of subjects with the rare homozygous genotype, and the number of subjects with the heterozygous genotype, respectively. Equation (2) is an approximation of the storage requirement, albeit a good one; as with algorithm I, the actual storage requirement is slightly, but typically not substantially, increased due to pedigree information, allele types, and/or padded bits.",
+                                "**2.3 Algorithm III: Compression Using Binary Encoding and Subject Indices**",
+                                "As shown in FIGS. 3A and 3B below, algorithm II (labeled \u201cAlg2\u201d) works best for SNPs with very small frequencies, but performs worse than algorithm I for more common SNPs (MAF>30%). However, by combining algorithms I and II, a third approach can be used that performs better than algorithm I and II for SNPs whose allele frequencies are somewhat between \u201cuncommon\u201d and very common. Since the storage space requirement for this third approach can be computed as well, the range for its optimal performance can be computed analytically.",
+                                "Since the heterozygous genotype is more common for genetic loci that are in the range between \u201cuncommon\u201d and very common, the heterozygous genotype is, in algorithm III, not recorded by an index of subjects. Instead, a binary number of n digits is used to indicate the subjects with heterozygous genotype, where n is the number of subjects in the data set. For example, if subject i has heterozygous genotype for the SNP, \u201c1\u201d may be put at position i instead of \u201c0.\u201d In addition, the indices of subjects with missing and homozygous minor allele genotypes may be recorded in the same way as in algorithm II. The storage requirement of one marker for this algorithm is given by:",
+                                "[((#Homo+1+#Missing+1)\u00d7log2(n)+n)/8]Bytes\u2003\u2003(3),",
+                                "where #Homo and #Missing denote the number of subjects with the rare homozygous genotype and the number of subjects with missing genotype for the SNP, respectively. Again, equation (3) is an approximation of the storage requirement; as with algorithms I and II, the actual storage requirements may be slightly higher due to pedigree information, allele types, and/or padded bits.",
+                                "**2.4 Hybrid Compression Method and Performance Comparison**",
+                                "In various embodiments, a hybrid compression method is used to first compute for each genetic locus (or marker) the storage requirements of the three algorithms (e.g., using formulas (1)-(3) above), and then select the algorithm that has the lowest storage requirement for compressing the genetic data for this marker. To assess the performance of the hybrid method, FIGS. 3A and 3B compare the compression factor (i.e., the ratio of storage requirements for data in the standard LINKAGE format to storage requirements for the compressed data) and storage requirements of the hybrid method (labeled \u201cSpeedGene\u201d) with those of the individual three algorithms described above (labeled \u201cAlg1,\u201d \u201cAlg2,\u201d and \u201cAlg3\u201d). The efficiency of algorithms I, II, and III depends generally on two factors: the genotype frequency of the genetic locus and the number of subjects included in the dataset. Assuming Hardy-Weinberg equilibrium, FIG. 3A provides a plot of the compression factors of the three algorithms versus different MAFs of one SNP for a dataset of 1000 subjects. FIG. 3B shows the number of bits needed for storing the information for one genotype for a dataset with 1000 subjects at different MAF values. The original space needed to record this information for one SNP was 4000 Bytes. The dashed line provides the performance for the hybrid method, which is based on the MAF and formulas (1), (2), and (3) to select the optimal compression procedure among algorithms I-III.",
+                                "As shown in the plot, the hybrid method achieves a compression factor of about 16 (relative to data in standard LINKAGE format) for MAF>0:3, for which the binary-compression algorithm is used. It accomplishes a compression factor between 16 and 30 for 0:05<MAF<0:3, for which algorithm II is selected. For rare and uncommon alleles (MAF<0:05), a compression factor of at least 30 is realized. With smaller MAF, the compression factor increases rapidly. Equivalently, 2 bits per genotype would be needed for MAF>0:3, about 1.0 to 2.0 bits per genotype for 0:05<MAF<0:3, and less than 1 bit per genotype is needed for MAF<0:05.",
+                                "The performance of the algorithms also depends on the number of subjects in the dataset. FIGS. 4A-4H show the compression factor of the algorithms for one marker for different numbers of subjects, at eight MAF levels. Generally, the compression factor decreases slightly as the number of subjects included increases, but is fairly constant over the range of numbers of subjects that was considered for different values of MAF. FIGS. 4A-4H confirm the information inferred from FIGS. 3A-3B. For example, for SNP with MAF=0:01, algorithm II can compress the genetic information by a factor of at least 100, which is much better than what algorithms I and III can achieve. However, for more common SNPs where 0:05<MAF<0:3, algorithm III is generally better with a compression factor of 20-30. For more common SNPs (MAF>0:3), algorithm I is generally the optimal solution with a compression factor of consistently 16. Thus, MAF is the most influential factor in determining which of algorithms I, II, and III is optimal.",
+                                "To empirically test the performance of the hybrid algorithm, a particular embodiment thereof, herein referred to as the SpeedGene algorithm, was applied to various datasets; the results are summarized in the following examples."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce compression algorithms",
+                                "describe hybrid algorithm",
+                                "motivate algorithm selection",
+                                "introduce algorithm I: binary encoding",
+                                "explain binary encoding process",
+                                "illustrate binary encoding example",
+                                "describe compression factor calculation",
+                                "introduce algorithm II: subject indices",
+                                "explain subject indices process",
+                                "describe compression factor calculation",
+                                "introduce algorithm III: binary encoding and subject indices",
+                                "explain algorithm III process",
+                                "describe compression factor calculation",
+                                "introduce hybrid compression method",
+                                "describe performance comparison",
+                                "illustrate performance plots",
+                                "explain performance dependence on MAF and number of subjects",
+                                "describe empirical testing of SpeedGene algorithm",
+                                "introduce example 1: GWAS SNP-chips",
+                                "describe example 1 results",
+                                "introduce example 2: sequence data",
+                                "describe example 2 results",
+                                "introduce example 3: 1000 genome data"
+                            ],
+                            "num_characters": 11818,
+                            "outline_medium": [
+                                "introduce compression algorithms",
+                                "describe hybrid algorithm",
+                                "motivate algorithm I: binary encoding",
+                                "describe algorithm I: binary encoding",
+                                "motivate algorithm II: subject indices",
+                                "describe algorithm II: subject indices",
+                                "motivate algorithm III: binary encoding and subject indices",
+                                "describe algorithm III: binary encoding and subject indices",
+                                "describe hybrid compression method",
+                                "compare performance of algorithms",
+                                "illustrate performance of hybrid method"
+                            ],
+                            "outline_short": [
+                                "introduce compression algorithms",
+                                "describe algorithm I: compression using binary encoding",
+                                "describe algorithm II: compression using subject indices",
+                                "describe algorithm III: compression using binary encoding and subject indices",
+                                "describe hybrid compression method and performance comparison"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 1",
+                            "paragraphs": [
+                                "The SpeedGene algorithm was applied to three datasets that were genotyped on commonly used GWAS SNP-chips, which have an emphasis on common SNPs. On average, SpeedGene can reach a compression factor between around 17 and around 23 for such datasets; this is equivalent to 1.3-1.8 bits needed per genotype. Details are shown in Table 1:"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe example 1 results"
+                            ],
+                            "num_characters": 335,
+                            "outline_medium": [
+                                "apply SpeedGene algorithm to GWAS SNP-chips"
+                            ],
+                            "outline_short": [
+                                "apply SpeedGene algorithm to GWAS SNP-chip datasets"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 2",
+                            "paragraphs": [
+                                "The SpeedGene algorithm was also applied to sequence data, for which the MAF are generally very small. Two datasets with 1000 subjects were simulated based on the Wright's distribution, which is f(p)=cp\u03b2s\u22121(1\u2212p)\u03b2n\u22121e\u03c3(1\u2212p), where the scaled mutation rates \u03b2s=0.001, \u03b2n=\u03b2s/3, the selection rate \u03c3=12, and c is a normalizing constant. Table 2 shows the compressed file size for the simulated sequence data sets. Since, for sequence data, the optimal algorithm is generally algorithm 2, SpeedGene is able to achieve a very large compression factor. In the simulated data, the compression factor is approximately 200, which is equivalent to 0.16 bits per genotype, whereas 2 bits per genotype is required by PLINK or PBAT."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe example 2 results"
+                            ],
+                            "num_characters": 718,
+                            "outline_medium": [
+                                "apply SpeedGene algorithm to sequence data"
+                            ],
+                            "outline_short": [
+                                "apply SpeedGene algorithm to sequence data"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 3",
+                            "paragraphs": [
+                                "The SpeedGene algorithm was also applied to the third release of the phase I 1000 genome data, which contains genotype calls of 1092 samples for SNPs, short indels, and large deletions. The original data was converted to pedigree files, and the indels and large deletions were removed in the process. The compression rate of SpeedGene was determined for three different populations, for different chromosomes, and for the entire genomes (sex chromosomes are not included) of the 1092 samples. The compressed file size using SpeedGene for three different populations are shown below in Table 3. The three datasets contain the 22 autosomal chromosomes of 97 Han Chinese in Beijing (CHB), 98 Yoruba in Ibadan, Nigera (YRI), and 98 Toscani in Italy (TSI). The compressed file includes the compressed genotypes of 36 million markers, and the table that matches each marker with its position in the file for fast access, which takes about 150 MB. There are less than one hundred subjects in each dataset. With larger number of subjects in each dataset, the compression rate would increase since the table would take a smaller proportion of the file.",
+                                "SpeedGene was also applied to each chromosome separately. The results of two chromosomes are shown in Table 4; the compression rates are similar for the chromosomes. Each dataset contains 1092 samples."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe example 3 results for populations",
+                                "describe example 3 results for chromosomes"
+                            ],
+                            "num_characters": 1346,
+                            "outline_medium": [
+                                "apply SpeedGene algorithm to 1000 genome data"
+                            ],
+                            "outline_short": [
+                                "apply SpeedGene algorithm to 1000 genome data"
+                            ]
+                        },
+                        {
+                            "title": "3. Implementation",
+                            "paragraphs": [
+                                "The compression methods and algorithms described herein may be implemented by computer-executable instructions, such as program modules, that are executed by a conventional computer. Generally, program modules include routines, programs, objects, components, data structures, etc. that perform particular tasks or implement particular abstract data types. Those skilled in the art will appreciate that the invention may be practiced with various computer system configurations, including multiprocessor systems, microprocessor-based or programmable consumer electronics, minicomputers, mainframe computers, and the like. The invention may also be practiced in distributed computing environments where tasks are performed by remote processing devices that are linked through a communications network. In a distributed computing environment, program modules may be located in both local and remote computer-storage media including memory storage devices.",
+                                "Communication in the network can take place via a wireless link (such as, e.g., a wireless a local area network (LAN), a wide area network (WAN), or a wireless personal area), or, alternatively, via a wired link. When used in a LAN networking environment, computers may be connected to the LAN through a network interface or adapter. When used in a WAN networking environment, computers typically include a modem or other communication mechanism. Modems may be internal or external, and may be connected to the system bus via the user-input interface, or other appropriate mechanism. Computers may be connected over the Internet, an Intranet, Extranet, Ethernet, or any other system that provides communications. Suitable communications protocols include, for example, TCP/IP, UDP, or OSI. For wireless communications, communications protocols may include Bluetooth, Zigbee, IrDa or another suitable protocol. Furthermore, components of the system may communicate through a combination of wired or wireless paths.",
+                                "A central computing device in a distributed computing environment, or a stand-alone computer, may comprise or consist of a general-purpose computer including a processing unit, a system memory, and a system bus that couples various system components including the system memory to the processing unit. Computers typically include a variety of computer-readable media that can form part of the system memory and be read by the processing unit. By way of example, and not limitation, computer readable media may comprise computer storage media and communication media. The system memory may include computer storage media in the form of volatile and/or nonvolatile memory such as read only memory (ROM) and random access memory (RAM). A basic input/output system (BIOS), containing the basic routines that help to transfer information between elements, such as during start-up, is typically stored in ROM. RAM typically contains data and/or program modules that are immediately accessible to and/or presently being operated on by processing unit. The data or program modules may include an operating system, application programs, other program modules, and program data. The operating system may be or include a variety of operating systems such as Microsoft WINDOWS operating system, the Unix operating system, the Linux operating system, the Xenix operating system, the IBM AIX operating system, the Hewlett Packard UX operating system, the Novell NETWARE operating system, the Sun Microsystems SOLARIS operating system, the OS/2 operating system, the BeOS operating system, the MACINTOSH operating system, the APACHE operating system, an OPENSTEP operating system or another operating system of platform.",
+                                "The computing environment may also include other removable/nonremovable, volatile/nonvolatile computer storage media. For example, a hard disk drive may read or write to nonremovable, nonvolatile magnetic media. A magnetic disk drive may read from or writes to a removable, nonvolatile magnetic disk, and an optical disk drive may read from or write to a removable, nonvolatile optical disk such as a CD-ROM or other optical medium. Other removable/nonremovable, volatile/nonvolatile computer storage media that can be used in the exemplary operating environment include, but are not limited to, magnetic tape cassettes, flash memory cards, digital versatile disks, digital video tape, solid state RAM, solid state ROM, and the like. The storage media are typically connected to the system bus through a removable or non-removable memory interface.",
+                                "The processing unit that executes commands and instructions may be a general-purpose processor, but may utilize any of a wide variety of other technologies including special-purpose hardware, a microcomputer, mini-computer, mainframe computer, programmed micro-processor, micro-controller, peripheral integrated circuit element, a CSIC (Customer Specific Integrated Circuit), ASIC (Application Specific Integrated Circuit), a logic circuit, a digital signal processor, a programmable logic device such as an FPGA (Field Programmable Gate Array), PLD (Programmable Logic Device), PLA (Programmable Logic Array), RFID processor, smart chip, or any other device or arrangement of devices that is capable of implementing the steps of the processes of the invention.",
+                                "Any suitable programming language may be used to implement without undue experimentation the functions described above. Illustratively, the programming language used may include assembly language, Ada, APL, Basic, C, C++, C*, COBOL, dBase, Forth, FORTRAN, Java, Modula-2, Pascal, Prolog, Python, REXX, and/or JavaScript for example. Further, it is not necessary that a single type of instruction or programming language be utilized in conjunction with the operation of the system and method of the invention. Rather, any number of different programming languages may be utilized as is necessary or desirable.",
+                                "In certain embodiments, the functionality of compression methods in accordance herewith is implemented in a C++ library, which makes it straightforward for users to incorporate it into their own programs. New files that are created by the compression algorithms can be directly loaded with the library. The user can retrieve the information that was stored in the original pedigree file and the summarized marker information. The C++ library may include two classes. The first class may be responsible for compressing a pedigree file in the LINKAGE format into a text file that contains the pedigree information only, and a binary file that contains the compressed genetic information. More specifically, the first class may include a function for reading the original pedigree file, writing the pedigree information into a separate text file, and storing the marker information in memory. This information is then used to determine the minor and major alleles and the numbers of subjects with homogenous, heterogeneous, and missing genotypes, from which the storage requirements for the three algorithms described above are computed. The hybrid algorithm then compresses the marker information with the respective optimal algorithm into a binary file, which is not human-readable.",
+                                "The second class may be responsible for loading the compressed binary files into memory, and for processing queries from the user. The user may, for example, retrieve information for specific markers or specific identified subjects, or a listing of all subjects having a particular genotype for one marker. The selective retrieved genetic data may be displayed along with the pedigree information for the subjects. Further, multiple sections of the file that correspond, e.g., to respective subsets of the marker may be loaded in parallel into different memories for simultaneous processing by multiple parallel processors. For many purposes (including the types of user queries mentioned above), the compressed data may be used without decompression. (In some embodiments, the compressed data is stored in binary format and, upon loading into memory, translated into an integer array; this does not constitute decompression.) However, if desired, the original genotype data (except for the allele type of a marker for which the second allele type is unknown) may be restored from the compressed files, as long as the major and minor allele types for each marker are stored. Thus, any standard, conventional genome analysis that relies only on genotype data can be performed on the data (with or without decompression, depending on the particular analysis).",
+                                "FIG. 5 illustrates, in block-diagram form, an exemplary computer 500 with features enabling it to perform genetic-data compression and storage in accordance herewith, as well as its integration into a network. The computer 500 includes a network interface 502, which interacts with other computers 504, 506 of the network via communication hardware 508. The computer 100 also includes input devices 510 (e.g., a keyboard, a mouse or other position-sensing device, etc.), by means of which a user can interact with the system, and a screen display 512. The computer 500 further includes a bidirectional system bus 515, over which the system components communicate, a non-volatile mass storage device (such as one or more hard disks and/or optical storage units) 520, which can contain one or more databases 522, and a main (typically volatile) system memory 525. The operation of computer 500 is directed by a central-processing unit (\u201cCPU\u201d) 530.",
+                                "The main memory 525 contains instructions, conceptually illustrated as a group of modules, that control the operation of CPU 530 and its interaction with the other hardware components. An operating system 540 directs the execution of low-level, basic system functions such as memory allocation, file management and operation of mass storage devices 520. At a higher level, one or more service applications 542 carry out the genetic-data compression in accordance with various embodiments. The service applications 542 may include three compression modules 544, 546, 548 for compressing genetic data (received, e.g., in LINKAGE format) in accordance with algorithms I, II, and III, respectively; a storage computation module 550 for computing the storage requirements associated with each of the three algorithms; and a selection module 552 that determines for each marker, based on the computed storage requirements, which of the three algorithms to use to compress the data. Further, a query and analysis module 554 may be provided, which can load the compressed data into system memory 525, receive requests from users (e.g., through I/O devices 110), and process the data in response to the requests and/or perform standard genome analysis.",
+                                "The compressed genetic data may be stored on mass storage devices 520, e.g., within the database 522. Alternatively or additionally, the data may be sent to other computers 504, 506 of the network. Similarly, the original genetic data to be compressed may be loaded into system memory 525 from mass storage devices 520, or received either from another application of computer 500, or from other computers 504, 506 of the network. To enable the handling of requests from computers 504, 506, the main memory 525 contains a network-server block 560. If the network is the Internet, for example, block 550 can be a conventional web server application.",
+                                "The algorithms described herein are generally applicable in any scenario in which multiple genomes are stored in the computing environment. The genomes need not necessarily come from the same study. Further, data for a new genome sequence can readily be added to an existing archive in a manner that provides the compression benefits. Moreover, sequence data for any individual can readily be retrieved from the compressed data, and such retrieval does not require processing time for decompression, as would be necessary if the data had been compressed using one of various prior-art methods.",
+                                "While particular embodiments of the invention have been illustrated and described in detail herein, it should be understood that various changes and modifications might be made to the invention without departing from the scope and intent of the invention. Further, it will be understood that certain features and sub-combinations are of utility and may be employed without reference to other features and sub-combinations. This is contemplated and within the scope of the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce computer-executable instructions",
+                                "define program modules",
+                                "describe computer system configurations",
+                                "discuss distributed computing environments",
+                                "explain communication in the network",
+                                "describe LAN networking environment",
+                                "describe WAN networking environment",
+                                "discuss modem or other communication mechanism",
+                                "describe Internet, Intranet, Extranet, Ethernet connections",
+                                "list suitable communications protocols",
+                                "describe wireless communications protocols",
+                                "describe central computing device in a distributed computing environment",
+                                "describe general-purpose computer components",
+                                "discuss computer-readable media",
+                                "describe system memory components",
+                                "discuss BIOS and ROM",
+                                "describe RAM and data/program modules",
+                                "list operating systems",
+                                "describe other removable/nonremovable computer storage media",
+                                "discuss processing unit and technologies",
+                                "describe programming languages",
+                                "implement compression methods in C++ library",
+                                "describe classes for compressing and loading genetic data",
+                                "illustrate exemplary computer with features for genetic-data compression and storage"
+                            ],
+                            "num_characters": 12459,
+                            "outline_medium": [
+                                "introduce computer-executable instructions",
+                                "describe computer system configurations",
+                                "explain distributed computing environments",
+                                "discuss communication protocols",
+                                "describe central computing device components",
+                                "explain computer-readable media",
+                                "discuss operating systems",
+                                "introduce programming languages",
+                                "describe C++ library implementation",
+                                "explain compression class functionality",
+                                "illustrate computer architecture",
+                                "discuss algorithm applicability"
+                            ],
+                            "outline_short": [
+                                "describe computer-executable instructions",
+                                "outline computer system configurations",
+                                "detail communication protocols",
+                                "specify computing environment components",
+                                "illustrate C++ library implementation",
+                                "describe computer architecture and integration"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A computer-implemented method of compressing, for a plurality of subjects, genetic data corresponding to at least one bi-allelic marker having at least one minor allele frequency associated therewith, the method utilizing at least two compression algorithms and comprising:\nfor each of the at least one bi-allelic marker,\nusing a computer processor to (i) compute storage requirements associated with each of the at least two compression algorithms, the storage requirement of at least one of the compression algorithms depending, at least in part, on the minor allele frequency associated with the marker, and (ii) compress the genetic data for the marker using the compression algorithm having the lowest storage requirement associated therewith; and\nstoring the compressed genetic data .",
+        "2. A method of claim 1, wherein the at least two compression algorithms comprise three compression algorithms.",
+        "3. The method of claim 1, wherein the storage requirements further depend on the number of subjects.",
+        "4. The method of claim 1, wherein the at least two compression algorithms are selected from (i) a binary-encoding algorithm, (ii) an algorithm wherein total numbers and unique indices of all subjects having a rare homozygous genotype for a marker, all subjects having a heterozygous genotype for the marker, and all subjects having an unknown genotype for the marker are expressed in binary numbers, and (iii) an algorithm wherein the total numbers and unique indices of all subjects having an rare homozygous genotype for a marker and all subject having an unknown genotype for the marker are expressed in binary numbers, and the unique indices of all subjects having a heterozygous genotype for the marker are expressed in a single n-digit number, where n is the number of subjects.",
+        "5. The method of claim 1, further comprising analyzing the compressed genetic data without decompression.",
+        "6. The method of claim 5, wherein analyzing the loaded data comprises processing a user query based thereon.",
+        "7. The method of claim 5, wherein the compressed genetic data is stored in binary format on a non-volatile data-storage medium, the method further comprising, prior to analyzing the compressed genetic data, loading the compressed genetic data into memory and converting it into integer format.",
+        "8. The method of claim 1, wherein the genetic data, prior to compression, is stored in ASCII format.",
+        "9. A computer system for compressing genetic data, the system comprising:\nat least one data storage medium for storing (i) original genetic data for a plurality of subjects, the data corresponding to at least one bi-allelic marker having at least one minor allele frequency associated therewith, and (ii) compressed genetic data; and\na computer processor, in communication with the at least one data storage medium, for (i) computing, for each of the at least one bi-allelic marker, computer storage requirements associated with each of at least two compression algorithms, the storage requirement of at least one of the compression algorithms depending, at least in part, on the minor allele frequency associated with the marker, and (ii) compressing the genetic data for each of the at least one bi-allelic markers using the compression algorithm having the lowest storage requirement associated therewith.",
+        "10. The system of claim 9, wherein the computer processor is further configured to analyze the compressed genetic data without decompression.",
+        "11. The system of claim 10, wherein the computer processor is further configured to process a user query based on the loaded data.",
+        "12. The system of claim 10, wherein the compressed genetic data is stored in binary format on the at least one data-storage medium and the computer processor is further configured to load the compressed genetic data into memory and convert the binary format into integer format prior to analyzing the compressed genetic data.",
+        "13. The system of claim 9, wherein the at least two compression algorithms are selected from (i) a binary-encoding algorithm, (ii) an algorithm wherein total numbers and unique indices of all subjects having a rare homozygous genotype for a marker, all subjects having a heterozygous genotype for the marker, and all subjects having an unknown genotype for the marker are expressed in binary numbers, and (iii) an algorithm wherein the total numbers and unique indices of all subjects having an rare homozygous genotype for a marker and all subject having an unknown genotype for the marker are expressed in binary numbers, and the unique indices of all subjects having a heterozygous genotype for the marker are expressed in a single n-digit number, where n is the number of subjects.",
+        "14-26. (canceled)"
+    ]
+}

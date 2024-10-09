@@ -1,0 +1,776 @@
+{
+    "id": "US20200022961",
+    "authors": [
+        "Abigail L. Reens",
+        "Amy L. Crooks",
+        "Corrella S. Detweiler"
+    ],
+    "title": "SMALL MOLECULE INHIBITORS OF BACTERIAL EFFLUX PUMPS AND METHODS OF USING SAME",
+    "date": "2018-03-27 00:00:00",
+    "abstract": "An empirical Screen for Anti-infectives using Fluorescence microscopy of IntracellulaR Enterobacteriaceae (SAFIRE) was developed. Using this methodology, a library of small molecules and identified antimicrobials that are cell permeable and non-host-toxic were screened. Inhibitors of bacterial efflux pumps were identified as being implicated in antibiotic resistance and are attractive therapeutic targets for antimicrobials.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "RESEARCH STATEMENT PURSUANT TO 37 CFR 401.14(a)(b)(1)",
+                    "paragraphs": [
+                        "This invention was made with government support under grant numbers AI126453, AI121365 and AI095395 awarded by the National Institutes of Health. The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "disclose government support"
+                    ],
+                    "num_characters": 197,
+                    "outline_medium": [
+                        "disclose government support"
+                    ],
+                    "outline_short": [
+                        "disclose government support"
+                    ]
+                },
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "This disclosure generally relates to small molecule inhibitors of bacterial efflux pumps, and more specifically to treating bacterial infections with such inhibitors."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field of invention"
+                    ],
+                    "num_characters": 166,
+                    "outline_medium": [
+                        "define field of invention"
+                    ],
+                    "outline_short": [
+                        "define field of invention"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The rise of antibiotic resistance has emphasized the need for novel antimicrobials (Levy S B et al., Nat. Med., S122-129, 2004). Although historical approaches to antibiotic discovery have yielded many crucial therapeutics, recent attempts at identifying new drugs has lagged far behind the spread of resistance. During the golden age of antibiotic discovery in the 1940s and 1950s, actinomycete extracts were screened for growth inhibition of pathogenic bacteria. This empirical platform led to identification of the major classes of antibiotics in use today. However, consistent rediscovery of established molecules led to the abandonment of empirical screening of natural products (Lewis K., Nat. Rev. Drug Discov., 371-387, 2013). Further, this broth-based strategy resulted in inhibitors that targeted core growth processes\u2014translation, DNA replication, and cell wall synthesis. Although highly effective, targeting essential processes leads to strong selection for resistance. In order to focus the search for antimicrobial compounds on targets less likely to lead to resistance, the field shifted toward screening of virulence-specific processes (Allen R C et al., Nat Rev. Microbiol. 300-308, 2014), aided by the advent of genomics and concomitant identification of virulence-associated targets. Some groups have sought to identify virulence inhibitors using broth conditions that mimic the host environment (Yep A et al., mBio, e01089-13-e01089-13, 2014; Hung D T et al., Science, 670-674, 2005). Pharmaceutical companies have invested in high-throughput screening of synthetic chemical libraries for inhibitory activity against validated molecular targets. Over the last 30 years, target-based approaches have yielded zero antibiotics for systemic use, due to a combination of meager hit identification from screens and a widespread lack of antibacterial activity (Lewis K., Nat. Rev. Drug Discov., 371-387, 2013; Payne D J et al., Nat Rev. Drug Discov., 29-40, 2007; Silver L L, Clin. Microbiol. Rev., 71-109, 2001).",
+                        "The disconnect between biochemical inhibition and antibacterial activity has been attributed to poor intracellular accumulation of small molecules in bacteria (Silver L L, Clin. Microbiol. Rev., 71-109, 2001). In particular, Gram-negative bacteria contain a cell membrane, a cell wall, and an outer membrane. This cell envelope restricts penetration of amphipathic and hydrophilic substances into the cytoplasm and poses a major challenge for antibiotics (Lewis K., Nat. Rev. Drug Discov., 371-387, 2013; Silver L L, Clin. Microbiol. Rev., 71-109, 2001; Denyer S P et al., J. Appl. Microbiol., 92, 2002). Furthermore, bacteria that survive within host cells (e.g. Salmonella enterica, Listeria monocytogenes, Staphylococcus aureus, Mycobacterium tuberculosis) are additionally protected by the host cell membrane; some pathogens that survive within vesicles are also shielded by phagosomal membranes. Even traditional antibiotics useful against extracellular pathogens are thus ineffective against intracellular microbes. For instance, aminoglycosides and \u03b2-lactams poorly accumulate within host cells and are typically ineffective (Carryn S. et al., Infect. Dis. Clin. North Am., 615-634, 2003; Lamaire S. et al., J. Antimicrob. Chemother., 897-904, 2005; Tulkens P M., Eur J. Clin. Microbiol. Infect. Dis., 100-106, 1991; Maurin M et al., Antimicrob. Agents Chemother., 2977-2986, 2001). Fluoroquinolones primarily localize to the host cell cytosol, and thus are less potent against pathogens within phagosomes (Carryn S. et al., Infect. Dis. Clin. North Am., 615-634, 2003; Carlier M-B et al., J. Antimicorb. Chemother., 27-39, 1990; Pechere J-C, Drugs, 29-36, 1993; Facinelli B., et al., Eur. J. Clin. Microbiol. Infect Dis., 827-833, 1997). Macrolides, although concentrated to high levels within cells, are typically ineffective against vesicular microbes due to inactivation at the low pH of phagolysosomes (Seral C. et al., Antimicrob. Agents Chemother., 2283,-2292, 2003; Labro M T., Clin. Microbiol. Infect., S24-S30, 1996). Similarly, hits from target-based screens typically lack antibacterial activity (Payne D J et al., Nat Rev. Drug Discov., 29-40, 2007; Silver L L, Clin. Microbiol. Rev., 71-109, 2001), as biochemical approaches inherently disregard cell permeability during initial screening. Thus, poor cell permeability represents a key pitfall for virulence-targeted antibacterials."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate need for novel antimicrobials",
+                        "summarize historical approaches to antibiotic discovery",
+                        "describe limitations of empirical screening",
+                        "discuss shift towards virulence-specific processes",
+                        "describe high-throughput screening of synthetic chemical libraries",
+                        "discuss disconnect between biochemical inhibition and antibacterial activity",
+                        "describe challenges of antibiotic penetration into bacterial cells",
+                        "summarize limitations of traditional antibiotics"
+                    ],
+                    "num_characters": 4432,
+                    "outline_medium": [
+                        "motivate need for novel antimicrobials",
+                        "summarize historical approaches to antibiotic discovery",
+                        "discuss limitations of target-based approaches",
+                        "highlight importance of cell permeability"
+                    ],
+                    "outline_short": [
+                        "motivate need for novel antimicrobials",
+                        "summarize limitations of current approaches"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "SAFIRE, a Screen for Anti-infectives using Fluorescence microscopy of IntracellulaR Enterobacteriaceae, is described in this disclosure. This high-content phenotypic assay uses fluorescence microscopy to identify molecules with antimicrobial activity against intracellular pathogens.",
+                        "In one aspect, an efflux pump modulator compound having the structure:",
+                        "- - (EPM30) is disclosed for treating a bacterial infection.",
+                        "In another aspect, an efflux pump modulator compound having the structure:",
+                        "- - (EPM35) is disclosed for treating a bacterial infection.",
+                        "In another aspect, an efflux pump modulator compound having the structure:",
+                        "- - (EPM43) is disclosed for treating a bacterial infection.",
+                        "In another aspect, a method of treating a bacterial pathogen in a subject is disclosed. The method comprises administering to the subject a therapeutically effective amount of an efflux pump modulator (EPM) compound.",
+                        "In embodiments, the method further comprises administering an antimicrobial peptide or an antibiotic. In embodiments, the antibiotic comprises tetracycline or another AcrB antibiotic substrate. In embodiments, the antimicrobial peptide comprises polymyxin B. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43. In embodiments, the EPM compound comprises EPM30. In embodiments, the EPM compound comprises EPM35. In embodiments, the EPM compound comprises EPM43. In embodiments, the bacterial infection comprises an infection with one or more of a Salmonella sp., K. Pneumoniae, Enterobacter cloacae, Shigella sp., Neisseria sp., or E. coli.",
+                        "In another aspect, a method of treating a bacterial infection in a cell is disclosed. The method comprises contacting the cell with a therapeutically effective amount of an efflux pump modulator (EPM) compound. In embodiments, the cell is an immune cell or a non-immune cell. In embodiments, the immune cell is a macrophage. In embodiments, the method further comprises administering an antimicrobial peptide or an antibiotic. In embodiments, the antibiotic comprises tetracycline. In embodiments, the antimicrobial peptide comprises polymyxin B. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43. In embodiments, the EPM compound comprises EPM30. In embodiments, the EPM compound comprises EPM35. In embodiments, the EPM compound comprises EPM43.",
+                        "In another aspect, use of an EPM compound for treating a bacterial infection in a subject is disclosed. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43.",
+                        "In another aspect, a method of identifying an anti-infective compound is disclosed. The method comprises: providing first and second subsets of cells; infecting the first and second subsets of cells with a marker-producing bacteria; staining the first subset of cells with a vitality marker and obtaining a first value of cellular infectivity; contacting the second subset of cells with an anti-infective compound; and staining the second subset of cells with a vitality marker and obtaining a second value of cellular infectivity; wherein when the second value of cellular infectivity is decreased compared to the first value of cellular infectivity, an anti-infective compound is identified. In embodiments, the first and second values of cellular infectivity are obtained by quantifying cells in the first and second subsets of cells using fluorescent microscopy."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce SAFIRE assay",
+                        "describe EPM30 compound",
+                        "describe EPM35 compound",
+                        "describe EPM43 compound",
+                        "outline method of treating bacterial infection",
+                        "outline method of identifying anti-infective compound"
+                    ],
+                    "num_characters": 3393,
+                    "outline_medium": [
+                        "introduce SAFIRE assay",
+                        "disclose efflux pump modulator compounds",
+                        "summarize methods of treating bacterial infections"
+                    ],
+                    "outline_short": [
+                        "introduce SAFIRE assay and EPM compounds"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The Gram-negative intracellular pathogen, Salmonella enterica serovar Typhimurium (Salmonella) (S.Tm) causes a natural infection of mice that models the human disease typhoid fever. S.Tm survives and replicates inside macrophages in systemic sites, and resides within a specialized phagolysosomal vesicle during infection. Assay platforms can be used that utilize fluorescent S.Tm, immortalized mouse macrophages, and automated fluorescence microscopy to visualize bacterial load. A MATLAB\u00ae-based algorithm was developed to process images for high-throughput quantification. Using this platform, a 14,400-compound Maybridge Hitfinder\u2122 Collection v11 was screened. There were 309 hits identified that reduced intracellular bacterial infection with minimal host cell toxicity. The majority of the hits have not been previously identified as having antibacterial activity. Similarly, very few hits possess antibiotic activity against bacteria grown in standard microbiological media. Thus, the screen represents a powerful approach to identify antibacterial compounds within existing libraries by directly assaying bacterial infection of host cells.",
+                        "Top hits were tested from the screen to determine whether any compounds inhibit bacterial efflux pumps (EPs). EPs are an attractive therapeutic target for antimicrobials and anticancer drugs, but most have proved troublesome for drug development due to toxicity issues. EPs utilize active transport to export chemicals, small molecules, and peptides. Although EPs are naturally important for defense against host-derived antimicrobials such as antimicrobial peptides and reactive oxygen species, many multidrug resistant (MDR) pathogens have increased expression of EPs, thereby limiting antibiotic exposure. S.Tm encodes nine EPs which contribute to antibiotic efflux and also attenuate or delay virulence in vivo. In particular, the EPs encoded by the acrAB and macAB operons are both required for infection of macrophages and mice. Thus, efflux pump modulators (EPMs) have potential as therapeutics for ordinary and MDR infections by sensitizing pathogens to host defenses and clinical antibiotics. Hits from SAFIRE may represent unidentified EPMs that enhance susceptibility to host antimicrobials present within macrophages. Top hits were tested from the screen to determine whether they inhibit bacterial efflux. This resulted in characterization of three novel EPMs."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Definitions and Interpretation",
+                            "paragraphs": [
+                                "Unless otherwise defined herein, scientific and technical terms used in connection with the present disclosure shall have the meanings that are commonly understood by those of ordinary skill in the art. Further, unless otherwise required by context, singular terms shall include pluralities and plural terms shall include the singular. Generally, nomenclature used in connection with, and techniques of, cell and tissue culture, molecular biology, immunology, microbiology, genetics and protein and nucleic acid chemistry and hybridization described herein are those well-known and commonly used in the art. The methods and techniques of the present disclosure are generally performed according to conventional methods well-known in the art and as described in various general and more specific references that are cited and discussed throughout the present specification unless otherwise indicated. See, e.g.: Sambrook J. & Russell D. Molecular Cloning: A Laboratory Manual, 3rd ed., Cold Spring Harbor Laboratory Press, Cold Spring Harbor, N.Y. (2000); Ausubel et al., Short Protocols in Molecular Biology: A Compendium of Methods from Current Protocols in Molecular Biology, Wiley, John & Sons, Inc. (2002); Harlow and Lane, Using Antibodies: A Laboratory Manual; Cold Spring Harbor Laboratory Press, Cold Spring Harbor, N.Y. (1998); and Coligan et al., Short Protocols in Protein Science, Wiley, John & Sons, Inc. (2003).",
+                                "As used herein, the acronym \u201cAcrB\u201d refers to the efflux transporter AcrB.",
+                                "As used herein, the acronym \u201cAMP\u201d refers to antimicrobial peptide.",
+                                "As used herein, the acronym \u201cEP\u201d refers to efflux pump.",
+                                "As used herein, the acronym \u201cEPM\u201d refers to efflux pump modulator compounds.",
+                                "As used herein, the acronym \u201cPA\u03b2N\u201d refers to the following chemical structure:",
+                                "As used herein, the acronym \u201cSAFIRE\u201d refers to Screen for Anti-infectives using Fluorescence microscopy of IntracellulaR Enterobacteriaceae, as detailed herein.",
+                                "As used herein, the term \u201cS.Tm\u201d refers to Salmonella enterica serovar Typhimurium.",
+                                "For the purposes of this disclosure, all chemical compounds described or structurally illustrated herein include all stereoisomers and tautomers thereof."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define scientific and technical terms",
+                                "specify nomenclature and techniques used",
+                                "provide references for molecular biology and protein chemistry",
+                                "define acronyms used in the disclosure"
+                            ],
+                            "num_characters": 2184,
+                            "outline_medium": [
+                                "define scientific and technical terms",
+                                "provide references for molecular biology and protein chemistry techniques"
+                            ],
+                            "outline_short": [
+                                "define technical terms and nomenclature used in the disclosure"
+                            ]
+                        },
+                        {
+                            "title": "Description of Aspects of the Disclosure",
+                            "paragraphs": [
+                                "In one aspect, an efflux pump modulator compound having the structure:",
+                                "- - (EPM30) is disclosed for treating a bacterial infection.",
+                                "In another aspect, an efflux pump modulator compound having the structure:",
+                                "- - (EPM35) is disclosed for treating a bacterial infection.",
+                                "In another aspect, an efflux pump modulator compound having the structure:",
+                                "- - (EPM43) is disclosed for treating a bacterial infection.",
+                                "In another aspect, a method of treating a bacterial pathogen in a subject is disclosed. The method comprises administering to the subject a therapeutically effective amount of an efflux pump modulator (EPM) compound.",
+                                "In embodiments, the method further comprises administering an antimicrobial peptide or an antibiotic. In embodiments, the antibiotic comprises tetracycline. In embodiments, the antimicrobial peptide comprises polymyxin B. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43. In embodiments, the EPM compound comprises EPM30. In embodiments, the EPM compound comprises EPM35. In embodiments, the EPM compound comprises EPM43. In embodiments, the bacterial infection comprises an infection with one or more Gram-positive or Gram-negative bacterial species. In embodiments, the bacterial infection comprises an infection with one or more of a Salmonella sp., K. Pneumoniae, Enterobacter cloacae, or E. coli.",
+                                "In another aspect, a method of treating a bacterial infection in a cell is disclosed. The method comprises contacting the cell with a therapeutically effective amount of an efflux pump modulator (EPM) compound. In embodiments, the cell is an immune cell or a non-immune cell. In embodiments, the immune cell is a macrophage. In embodiments, the method further comprises administering an antimicrobial peptide or an antibiotic. In embodiments, the antibiotic comprises tetracycline. In embodiments, the antimicrobial peptide comprises polymyxin B. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43. In embodiments, the EPM compound comprises EPM30. In embodiments, the EPM compound comprises EPM35. In embodiments, the EPM compound comprises EPM43.",
+                                "In another aspect, use of an EPM compound for treating a bacterial infection in a subject is disclosed. In embodiments, the EPM compound comprises one of EPM30, EPM35, or EPM43.",
+                                "In another aspect, a method of identifying an anti-infective compound is disclosed. The method comprises: providing first and second subsets of cells; infecting the first and second subsets of cells with a marker-producing bacteria; staining the first subset of cells with a vitality marker and obtaining a first value of cellular infectivity; contacting the second subset of cells with an anti-infective compound; and staining the second subset of cells with a vitality marker and obtaining a second value of cellular infectivity; wherein when the second value of cellular infectivity is decreased compared to the first value of cellular infectivity, an anti-infective compound is identified. In embodiments, the first and second values of cellular infectivity are obtained by quantifying cells in the first and second subsets of cells using fluorescent microscopy."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "disclose efflux pump modulator compound EPM30 for treating bacterial infections",
+                                "disclose efflux pump modulator compound EPM35 for treating bacterial infections",
+                                "disclose efflux pump modulator compound EPM43 for treating bacterial infections",
+                                "describe method of treating bacterial pathogen using EPM compound",
+                                "describe method of treating bacterial infection in a cell using EPM compound",
+                                "describe use of EPM compound for treating bacterial infection in a subject"
+                            ],
+                            "num_characters": 3172,
+                            "outline_medium": [
+                                "disclose efflux pump modulator compounds for treating bacterial infections",
+                                "describe methods of treating bacterial infections using efflux pump modulators",
+                                "describe use of efflux pump modulators for treating bacterial infections"
+                            ],
+                            "outline_short": [
+                                "describe efflux pump modulator compounds and methods of treating bacterial infections"
+                            ]
+                        },
+                        {
+                            "title": "Doses, Dosage Forms, and Methods of Treatment",
+                            "paragraphs": [
+                                "In embodiments, any of the compounds disclosed herein may be administered to treat a bacterial infection to a subject in need. In embodiments, any of the compounds disclosed herein may be administered for a prophylactic treatment. In embodiments, any of the compounds disclosed herein may be administered for a therapeutic treatment. In embodiments, the method of administration varies depending on the bacteria involved and the severity of the infection. Dosing regimens may vary based upon the condition being treated and the method of administration. In embodiments, the subject is given an effective amount of the compounds. An effective amount is the amount required to treat or prevent a bacterial infection. In embodiments, any of the compounds described herein are mixed with a suitable carrier substance. In embodiments, the compound is mixed with the suitable carrier substance in an amount of 1-99% by weight of the total weight of the composition.",
+                                "In embodiments, any of the compounds described herein may be administered periodically, such as once or twice a day, or any other suitable time period. For example, compounds may be administered to a subject in need once a week, once every other week, once every three weeks, once a month, every other month, every three months, every six months, every nine months, once a year, every eighteen months, every two years, every thirty months, or every three years.",
+                                "In embodiments, the duration of the treatment may be at least 1 day, at least 5 days, at least 10 days, at least 15 days, at least 20 days, at least 25 days, at least 30 days, at least 35 days, at least 40 days, at least 45 days, at least 50 days, at least 55 days, at least 60 days, at least 65 days at least 70 days, at least 75 days, at least 80 days, at least 85 days, at least 90 days, at least 95 days, or at least 100 days.",
+                                "In embodiments, any of the compounds disclosed herein are administered as a pharmaceutical composition. In embodiments, the pharmaceutical composition comprising any of the compounds described herein can be formulated in a wide variety of dosage forms, including but not limited to nasal, pulmonary, oral, topical, or parenteral dosage forms for clinical application. Each of the dosage forms can comprise various solubilizing agents, disintegrating agents, surfactants, fillers, thickeners, binders, diluents such as wetting agents or other pharmaceutically acceptable excipients. The pharmaceutical composition comprising a compound can also be formulated for injection, insufflation, infusion, or intradermal exposure. For instance, an injectable formulation may comprise the disclosed compounds in an aqueous or non-aqueous solution at a suitable pH and tonicity.",
+                                "In embodiments, the pharmaceutical composition comprises any of the compounds disclosed herein and an antibiotic selected from penicillin G, penicillin V, methicillin, oxacillin, cloxacillin, dicloxacillin, nafcillin, ampicillin, amoxicillin, carbenicillin, ticarcillin, mezlocillin, piperacillin, azlocillin, temocillin, cepalothin, cephapirin, cephradine, cephaloridine, cefazolin, cefamandole, cefuroxime, cephalexin, cefprozil, cefaclor, loracarbef, cefoxitin, cefmatozole, cefotaxime, ceftizoxime, ceftriaxone, cefoperazone, ceftazidime, cefixime, cefpodoxime, ceftibuten, cefdinir, cefpirome, cefepime, BAL5788, BAL9141, imipenem, ertapenem, meropenem, astreonam, clavulanate, sulbactam, tazobactam, streptomycin, neomycin, kanamycin, paromycin, gentamicin, tobramycin, amikacin, netilmicin, spectinomycin, sisomicin, dibekalin, isepamicin, tetracycline, chlortetracycline, demeclocycline, minocycline, oxytetracycline, methacycline, doxycycline, erythromycin, azithromycin, clarithromycin, telithromycin, ABT-773, lincomycin, clindamycin, vancomycin, oritavancin, dalbavancin, teicoplanin, quinupristin and dalfopristin, sulphanilamide, para-aminobenzoic acid, sulfadiazine, sulfisoxazole, sulfamethoxazole, sulfathalidine, linezolid, nalidixic acid, oxolinic acid, norfloxacin, perfloxacin, enoxacin, ofloxacin, ciprofloxacin, temafloxacin, lomefloxacin, fleroxacin, grepafloxacin, sparfloxacin, trovafloxacin, clinafloxacin, gatifloxacin, moxifloxacin, gemifloxacin, sitafloxacin, metronidazole, daptomycin, garenoxacin, ramoplanin, faropenem, polymyxin, tigecycline, AZD2563, and trimethoprim.",
+                                "The disclosed compounds may be administered to a subject via direct injection into the bacterial cells. In embodiments, the compounds can be administered systemically. In embodiments, the compounds can be administered via guided cannulation to tissues immediately surrounding the sites of tumor or infection.",
+                                "In embodiments, any of the compounds disclosed herein can be administered using any pharmaceutically acceptable method, such as intranasal, buccal, sublingual, oral, rectal, ocular, parenteral (intravenously, intradermally, intramuscularly, subcutaneously, intraperitoneally, intralesionally), pulmonary, intravaginal, locally administered, topically administered, topically administered after scarification, mucosally administered, via an aerosol, in semi-solid media such as agarose or gelatin, or via a buccal or nasal spray formulation. In embodiments, the method of administration is a systemic administration. In embodiments, the method of administration is a musculoskeletal administration.",
+                                "In embodiments, any of the compounds disclosed herein can be formulated into any pharmaceutically acceptable dosage form, such as a solid dosage form, tablet, pill, lozenge, capsule, liquid dispersion, gel, aerosol, pulmonary aerosol, nasal aerosol, ointment, cream, semi-solid dosage form, a solution, an emulsion, and a suspension. In embodiments, any of the compounds disclosed herein can be formulated into any pharmaceutically acceptable dosage form, such as a hydrogel, paste, plaster, drench, suppository, enema, injectable, or implant. In embodiments, any of the formulations described herein may be a controlled release formulation, sustained release formulation, immediate release formulation, or any combination thereof. In embodiments, the formulation may be a transdermal delivery system.",
+                                "In embodiments, the pharmaceutical composition comprising any of the compounds disclosed herein can be formulated in a solid dosage form for oral administration, and the solid dosage form can be powders, granules, capsules, tablets or pills. In embodiments, the solid dosage form can include one or more excipients such as calcium carbonate, starch, sucrose, lactose, microcrystalline cellulose or gelatin. In embodiments, the solid dosage form can include, in addition to the excipients, a lubricant such as talc or magnesium stearate. In embodiments, the oral dosage form can be immediate release, or a modified release form. Modified release dosage forms include controlled or extended release, enteric release, and the like. The excipients used in the modified release dosage forms are commonly known to a person of ordinary skill in the art.",
+                                "In embodiments, the pharmaceutical composition comprising any of the compounds disclosed herein can be formulated as a sublingual or buccal dosage form. Such dosage forms comprise sublingual tablets or solution compositions that are administered under the tongue and buccal tablets that are placed between the cheek and gum.",
+                                "In embodiments, the pharmaceutical composition comprising any of the compounds disclosed herein can be formulated as a nasal dosage form. Such dosage forms of the present invention comprise solution, suspension, and gel compositions for nasal delivery.",
+                                "In some embodiments, the pharmaceutical composition comprising any of the compounds disclosed herein can be formulated in a liquid dosage form for oral administration, such as suspensions, emulsions or syrups. In some embodiments, the liquid dosage form can include, in addition to commonly used simple diluents such as water and liquid paraffin, various excipients such as humectants, sweeteners, aromatics or preservatives. In embodiments, the composition comprising any of the compounds disclosed herein can be formulated to be suitable for administration to a pediatric patient.",
+                                "In embodiments, the pharmaceutical composition can be formulated in a dosage form for parenteral administration, such as sterile aqueous solutions, suspensions, emulsions, non-aqueous solutions or suppositories. In embodiments, the solutions or suspensions can include propyleneglycol, polyethyleneglycol, vegetable oils such as olive oil or injectable esters such as ethyl oleate.",
+                                "The dosage of the pharmaceutical composition can vary depending on the patient's weight, age, gender, administration time and mode, excretion rate, and the severity of disease.",
+                                "In some embodiments, the treatment of the bacteria is accomplished by guided direct injection of any of the compounds disclosed herein, using needle, or intravascular cannulation. In some embodiments, the disclosed vectors are administered into the cerebrospinal fluid, blood or lymphatic circulation by venous or arterial cannulation or injection, intradermal delivery, intramuscular delivery or injection into a draining organ near the site of disease."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe administration of compounds to treat bacterial infections",
+                                "describe prophylactic treatment using compounds",
+                                "describe therapeutic treatment using compounds",
+                                "specify dosing regimens",
+                                "describe mixing compounds with carrier substances",
+                                "specify administration periods",
+                                "describe duration of treatment",
+                                "formulate pharmaceutical composition",
+                                "describe nasal, pulmonary, oral, topical, or parenteral dosage forms",
+                                "specify solubilizing agents, disintegrating agents, surfactants, fillers, thickeners, binders, diluents",
+                                "describe injectable formulation",
+                                "describe antibiotic selection",
+                                "specify administration methods",
+                                "describe systemic administration",
+                                "describe musculoskeletal administration",
+                                "formulate controlled release, sustained release, or immediate release formulations",
+                                "describe transdermal delivery system",
+                                "specify excipients and lubricants"
+                            ],
+                            "num_characters": 9169,
+                            "outline_medium": [
+                                "describe administration of compounds to treat bacterial infections",
+                                "describe dosing regimens for compounds",
+                                "describe methods of administration for compounds",
+                                "describe pharmaceutical compositions comprising compounds",
+                                "describe formulation of compounds for injection, insufflation, or infusion",
+                                "describe administration of compounds with antibiotics",
+                                "describe administration of compounds via guided cannulation",
+                                "describe formulation of compounds for systemic administration",
+                                "describe controlled release formulations of compounds"
+                            ],
+                            "outline_short": [
+                                "describe administration of compounds to treat bacterial infections",
+                                "describe dosing regimens and effective amounts",
+                                "describe pharmaceutical compositions and formulations",
+                                "describe methods of administration and treatment durations"
+                            ]
+                        },
+                        {
+                            "title": "Bacterial Infections",
+                            "paragraphs": [
+                                "In embodiments, any of the compounds described herein can be used to treat any bacterial infections. In embodiments, a bacterial infection is invasion of bacteria into a host. In embodiments, this invasion results in excessive growth of bacteria. In embodiments, the invasion results in growth of bacteria in the host that is not normally present in the host. Bacterial infections include any bacterial infection caused by or associated with Salmonella sp., K. Pneumoniae, Enterobacter cloacae, Shigella sp., Neisseria sp., or E. coli, but are not limited to, bacterial pneumonia, urinary tract infections, intra-abdominal infections, skin and skin structure infections, bone and joint infections, central nervous center infections, gastro-intestinal tract infections, pelvic inflammatory diseases. Diseases associated with bacterial infections, include, but are not limited to rheumatoid arthritis, fibromyalgia, autonomic nervous dysfunction, multiple sclerosis, interstitial cystitis, multiple sclerosis, and chronic fatigue."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe bacterial infections",
+                                "specify diseases associated with bacterial infections"
+                            ],
+                            "num_characters": 1028,
+                            "outline_medium": [
+                                "describe bacterial infections and diseases associated with bacterial infections"
+                            ],
+                            "outline_short": [
+                                "describe bacterial infections and diseases associated with them"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce Salmonella enterica serovar Typhimurium (S.Tm) infection model",
+                        "describe assay platform for high-throughput quantification of bacterial load",
+                        "screen Maybridge Hitfinder Collection v11 for antibacterial compounds",
+                        "identify efflux pump modulator compounds"
+                    ],
+                    "num_characters": 2421,
+                    "outline_medium": [
+                        "describe Salmonella enterica serovar Typhimurium infection model",
+                        "screen for antibacterial compounds using fluorescent microscopy"
+                    ],
+                    "outline_short": [
+                        "describe Salmonella enterica serovar Typhimurium infection model and screen for antibacterial compounds"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1. Development of SAFIRE, a Screen for Anti-Infectives Using Fluorescence Microscopy of IntracellulaR Enterobacteriaceae",
+                            "paragraphs": [
+                                "A high-content, high-throughput fluorescence microscopy-based screening platform to assay S.Tm load within macrophages was developed (FIG. 1A). RAW 264.7 murine macrophages, a widely used cell line for bacterial infection studies, were infected with bacteria in a standard gentamicin protection assay. The Salmonella expressing GFP driven by the sifB promoter was incubated with the compound beginning at 2 hours post-infection. At 18 hours post-infection, cells were stained with MitoTracker Red CMXRos as a marker of macrophage vitality and processed for fluorescence microscopy. Stained with DAPI. A MATLAB\u00ae-based algorithm was developed to quantify infection (FIG. 1B) and compared to statistics to describe infection. Percentage of infected cells was determined by counting the proportion of macrophages within an image with at least 2 GFP+ pixels. Infection area was calculated by normalizing the number of GFP+ pixels within a cell to the cell's total area, then averaging across all cells in an image. To evaluate the approach, 2 \u03bcg/ml rifampicin in 96-well and 384-well plates was tested in three independent replicates. The Z\u2032-factor was employed as a measure of assay reproducibility. Numbers close to 1 indicated high reproducibility. For percentage of infected macrophages, the Z\u2032-factor was 0.59 and 0.48 in 96-well and 384-well plates, respectively, compared with 0.66 and 0.38 for infection area. The optimal Z\u2032-factor threshold for high-throughput screening was 0.5; however, values above 0 were considered marginal but feasible. Therefore, the percentage of infected macrophages statistic was used."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "develop high-content, high-throughput fluorescence microscopy-based screening platform",
+                                "quantify infection using MATLAB-based algorithm",
+                                "evaluate approach using Z'-factor as measure of assay reproducibility"
+                            ],
+                            "num_characters": 1616,
+                            "outline_medium": [
+                                "develop high-content, high-throughput fluorescence microscopy-based screening platform"
+                            ],
+                            "outline_short": [
+                                "develop high-content, high-throughput fluorescence microscopy-based screening platform"
+                            ]
+                        },
+                        {
+                            "title": "Example 2. Identification of Small Molecules that Reduce Salmonella Load in Macrophages",
+                            "paragraphs": [
+                                "The 14,400 compound library Maybridge HitFinder\u2122 v11 was screened, which has been extensively screened against mammalian and microbial targets. The library was screened in duplicate at 25 \u03bcM in 384-well plates (FIG. 1C). Data were normalized using the B-score method to remove positional variation. The significance of B-scores was calculated using a modified t-test assuming an inverse gamma distribution of variances. Using a dual threshold of B-score greater than 1 and standard deviation from the mean and p-value less than 0.05, 908 compounds (6.3%) were identified that decreased or increased the percentage of infected macrophages. Microscopy images were manually reviewed to eliminate toxic and auto-fluorescent compounds, and the remaining positives were retested using SAFIRE in 96-well plates, which demonstrated higher Z\u2032-factors as described above (FIGS. 2A,-B). Compounds that altered infection by at least 25% in 96-well plates were considered validated hits. This analysis revealed 309 compounds (2.1%) that decreased infection and 137 (0.95%) that increased infection.",
+                                "Of the 309 compounds that decreased the percentage of infected macrophages, 13 have been previously identified to have activity against microbes. In particular, amongst the compounds identified were chloramphenicol, a known antibiotic, and 9-aminoacridine, which has been used topically as an antiseptic. Other compounds identified included an inhibitor of activation of PhoP, a S.Tm virulence determinant and an inhibitor of MbtI, a siderophore biosynthesis enzyme in Mycobacterium tuberculosis. Several of the other compounds have been found in high-throughput screens against microbes including hepatitis C, influenza, malaria, trypanosomes, and Candida albicans. Furthermore, 33 compounds were identified that have known activities in mammalian cells, including inhibitors of calcium channels, telomerase, TGF-beta, and NF\u03baB. To estimate the frequency of false negatives in the screen, drugs and substances were catalogued in the Maybridge HitFinder\u2122 v11 library using the Chemical Structure Lookup Service from the CADD Group Chemoinformatics Tools and User Services (see: Table 1).",
+                                "There were two drugs with antibiotic activity present in the library that were not found in the screen: 6-aminopenicillinate and nalidixic acid. The screening data was re-examined to investigate why these antibiotics were not identified. 6-aminopenicillinate is a synthetic precursor to the beta-lactam antibiotics, and showed modest activity in the screen. Although the average B-score for 6-aminopenicillinate from the screen (\u22122.29) was beyond the threshold (\u22122.17), the p-value (0.056) was just above the threshold (0.05), suggesting that the use of a dual threshold increased selectivity for highly active and reproducible compounds. Nalidixic acid is a synthetic quinolone and displayed substantial activity in the first replicate of the screen (B-score \u22124.41), but was inactive in the second replicate (B-score 0.70). The original screening plate well was subsequently, which again showed minimal activity; further experiments suggested that nalidixic acid is sensitive to freeze-thawing when dissolved in DMSO (FIG. 3).",
+                                "To further categorize our hit compounds, 296 was re-tested for anti-S.Tm activity using gentamicin protection assays and plating for colony forming units (CFUs). Macrophages were infected in 96-well plates and treated with 25 \u03bcM compound. At 18 hours post-infection, macrophages were lysed to release intracellular bacteria and lysates were diluted and plated to determine CFUs. Although known bacteriostatic antibiotics such as rifampicin, ampicillin, and ciprofloxacin show similar inhibition by the CFU assay as by SAFIRE, only half of the hits displayed significant (>25%) inhibition by the CFU plating (FIG. 4). However, 64 of the top 75 compounds as ranked by SAFIRE exhibited significant activity by the CFU assay, suggesting that most highly active compounds are robust in both assays."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "screen 14,400 compound library Maybridge HitFinder v11",
+                                "normalize data using B-score method",
+                                "calculate significance of B-scores using modified t-test",
+                                "identify compounds that decrease or increase percentage of infected macrophages",
+                                "manually review microscopy images to eliminate toxic and auto-fluorescent compounds",
+                                "retest validated hits using SAFIRE in 96-well plates",
+                                "analyze hits for activity against microbes and mammalian cells"
+                            ],
+                            "num_characters": 3998,
+                            "outline_medium": [
+                                "screen compound library using SAFIRE",
+                                "validate hits using gentamicin protection assays and plating for colony forming units",
+                                "categorize hits based on anti-S.Tm activity"
+                            ],
+                            "outline_short": [
+                                "screen compound library using SAFIRE and validate hits"
+                            ]
+                        },
+                        {
+                            "title": "Example 3. Top Hits do not Inhibit Bacterial Growth in Broth",
+                            "paragraphs": [
+                                "Sixty of the top hits were repurchased and each confirmed activity by SAFIRE. Fifty-eight repurchased compounds were active with IC50s ranging from 0.5-10.5 \u03bcM. These top 58 hits were screened for activity against extracellular S.Tm grown in MHB broth (FIG. 2C). At 25 \u03bcM, none of the compounds reduced S.Tm growth. Even at 100 \u03bcM, only a few of the hits inhibited or reduced growth, which indicates that these top hits may target bacterial virulence or the host and would not have been identified in a broth-based screen."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "screen top hits for activity against extracellular S.Tm grown in MHB broth"
+                            ],
+                            "num_characters": 522,
+                            "outline_medium": [
+                                "test top hits for activity against extracellular S.Tm grown in MHB broth"
+                            ],
+                            "outline_short": [
+                                "test top hits for activity against extracellular S.Tm grown in MHB broth"
+                            ]
+                        },
+                        {
+                            "title": "Example 4. Three Compounds Inhibit Efflux of Fluorescent Dyes",
+                            "paragraphs": [
+                                "Efflux pumps (EPs) represent a key pathogen virulence strategy to protect against host antimicrobials as well as therapeutic antibiotics. Furthermore, efflux pump modulators (EPMs) typically demonstrate high MICs as single agents, similar to our hits (FIG. 2C). Thus, EPMs may have been identified by our screen due to cooperation with host antimicrobials. To uncover putative EPMs within our collection of hits, 58 repurchased compounds were screened in a Hoechst accumulation assay. Bacteria were incubated with Hoechst 33342, a dye which fluoresces when bound to DNA. Heat-killed bacteria exhibited very high fluorescence immediately after exposure to the dye, as all DNA was bound by Hoechst (FIG. 5A, open circles; FIG. 5B, white). After 60 minutes of exposure, wild-type S.Tm exhibited low fluorescence, likely because Hoechst is effluxed before it binds DNA. Hoechst accumulation increased in a strain lacking the AcrAB efflux pump (FIG. 5, black vs. gray) and a wild-type strain incubated with EPM Phe-Arg \u03b8-naphthylamide (PA\u03b2N) (FIG. 5A). Three of the top 58 compounds also increased S.Tm accumulation of Hoechst in a dose-dependent manner (FIG. 5A, red (EPM30), green (EPM35), blue (EPM43), with EC50s lower than that of PA\u03b2N (FIG. 6).",
+                                "Because Hoechst and other dyes commonly used to assess efflux bind cellular components, direct measurement of efflux is not possible using these methods; instead, the Hoechst assay measures dye accumulation, the net result of entry and efflux. Further, the slow off-rate of Hoechst entails that efflux pumps have no effect on dye already bound to DNA. As a result, compounds which increase Hoechst accumulation may actually enhance dye entry by altering porins or disrupting the membrane. To more specifically measure efflux pump activity, a second technique was employed using the dye Nile Red, a lipophilic membrane-partitioning dye which fluoresces in nonpolar environments. Because Nile Red is not known to bind cellular components, to directly observe efflux cells were preloaded with the dye in the absence of glucose to reduce efflux pump activity (FIG. 7A). Upon addition of glucose, bacteria rapidly effluxed Nile Red and fluorescence returned to baseline levels (FIG. 7B, top panel). Treatment with 500 \u03bcM PA\u03b2N inhibited glucose-activated efflux (FIG. 7B, second panel). The initial measured fluorescence was lower for DMSO-treated cells (upper dotted line) than for PA\u03b2N-treated cells due to glucose-independent efflux during sample preparation (FIG. 8A). Next, it was determined whether efflux pump activity is restored after removal of PA\u03b2N. Bacteria were incubated with compound for 15 minutes, pelleted and resuspended in buffer lacking compound, and then stimulated with glucose (FIGS. 7C, 7E). Washout of PA\u03b2N partially restored the ability of S.Tm to efflux Nile Red upon glucose addition, which is consistent with PA\u03b2N specifically binding efflux pumps during short incubations rather than disrupting the outer membrane. Nile Red fluorescence was quantified at 7 minutes post-glucose addition for several doses of PA\u03b2N and observed dose dependent inhibition of Nile Red efflux (FIGS. 7D, 7E).",
+                                "Next, it was determined whether the EPMs inhibit glucose-activated efflux of Nile Red (FIGS. 7B, 7D). Treatment with all three EPMs inhibited Nile Red efflux in a dose-dependent manner, as observed for PA\u03b2N. At the highest concentrations tested (FIG. 7B), EPM30 (75 \u03bcM) and EPM35 (100 \u03bcM) fully inhibited efflux, but EPM43 (100 \u03bcM) only partially inhibited efflux, suggesting that EPM30 and EPM35 may be more potent. Next it was determined whether efflux pump activity is restored after removal of the compound (FIG. 7C, 7E). Washout of EPM30 partially restored efflux, similar to washout of PA\u03b2N, suggesting EPM30 may reversibly bind efflux pump components. However, cells treated with EPM35 remained unable to efflux even after removal of the drug, implying that this drug may tightly bind its target or cause degradation of its target. Cells treated with EPM43 partially effluxed Nile Red after compound washout; this efflux was similar to efflux in the presence of compound, indicating that the partial inhibition by EPM43 at this concentration was maintained even after removal of the drug. Overall, these data suggest the EPMs may employ unique modes of efflux inhibition and may target unique biochemical pathways."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "screen top hits in Hoechst accumulation assay",
+                                "measure dye accumulation in wild-type and AcrAB-deficient S.Tm",
+                                "identify three compounds that increase Hoechst accumulation",
+                                "measure efflux pump activity using Nile Red",
+                                "determine whether compounds inhibit glucose-activated efflux of Nile Red",
+                                "wash out compounds to determine reversibility of efflux inhibition",
+                                "compare EC50s of compounds to PA\u03b2N",
+                                "analyze data to suggest unique modes of efflux inhibition"
+                            ],
+                            "num_characters": 4381,
+                            "outline_medium": [
+                                "screen top hits in a Hoechst accumulation assay",
+                                "identify three compounds that increase S.Tm accumulation of Hoechst",
+                                "test compounds in a Nile Red efflux assay",
+                                "determine whether compounds inhibit glucose-activated efflux of Nile Red"
+                            ],
+                            "outline_short": [
+                                "screen top hits in Hoechst accumulation assay",
+                                "test hits in Nile Red efflux assay"
+                            ]
+                        },
+                        {
+                            "title": "Example 5. EPMs do not Appear to Disrupt the Proton Motive Force",
+                            "paragraphs": [
+                                "One way to inhibit efflux pumps is to disrupt the proton motive force, which is required for transport by some EPs. The EPM30, EPM35, and EPM43 compounds were tested to determine whether they alter proton motive force by monitoring the ability of S.Tm to swim in soft agar plates overnight. Bacteria were injected into the center of 0.25% agar plates, and 10 \u03bcl of compound was added to paper disks on the periphery. The bacteria avoided swimming towards the known protonophore CCCP, creating a halo around CCCP spotted at 50\u00d7 the MIC (6.25 mM) (FIG. 9A). Since this assay requires an intact proton gradient and bacterial growth, bacteriostatic antibiotics not thought to disrupt the proton motive force, were tested to determine if they resulted in a halo. It was found that ciprofloxacin at 400\u00d7 the MIC (4 \u03bcM) formed a halo similar in size to that of CCCP (FIG. 9B). Also ampicillin and rifampicin were tested. We plotted the halo radius versus the concentration as the fold above the MIC (FIG. 9G). All three antibiotics converged (black line), whereas a series of CCCP concentrations was shifted to the left and up. Next, it was determined whether PA\u03b2N inhibited swimming; PA\u03b2N is thought to disrupt membranes over long incubations. PA\u03b2N at only 6.25\u00d7 the MIC (12.5 mM) was required to form a similar sized halo, (FIG. 9C), and PA\u03b2N, similar to CCCP, was shifted to the left (FIG. 9H), which suggests that PA\u03b2N inhibits overnight swimming by disrupting the membrane potential. These data suggest that compounds which inhibit growth inhibit swimming at higher concentrations relative to their MIC than compounds which disrupt proton motive force. Finally, the EPMs at 50 mM were tested (FIGS. 9D-F). EPM30 formed a halo. The concentration tested is 500\u00d7 the MIC, so it was concluded that EPM30 likely prevented swimming by inhibiting growth, similar to ciprofloxacin. EPM35 formed a small halo; the concentration tested is 125\u00d7 the MIC. EPM43 formed no halo, even though the concentration is \u02dc62.5\u00d7 the MIC. That EPMs only form halos at concentrations much higher than their MICs (or we are limited by solubility) suggests that the haloes formed by the EPMs are due to growth inhibition."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test EPMs for disruption of proton motive force using swimming assay",
+                                "compare results to known protonophore CCCP",
+                                "test bacteriostatic antibiotics for disruption of proton motive force",
+                                "analyze data to suggest EPMs do not disrupt proton motive force"
+                            ],
+                            "num_characters": 2191,
+                            "outline_medium": [
+                                "test EPMs for disruption of proton motive force using a swimming assay",
+                                "compare results to known protonophores and bacteriostatic antibiotics"
+                            ],
+                            "outline_short": [
+                                "test EPMs for disruption of proton motive force using swimming assay"
+                            ]
+                        },
+                        {
+                            "title": "Example 6. The Three EPMs are Potent and Structurally Diverse",
+                            "paragraphs": [
+                                "Next, the structural and drug-like properties of the three EPMs with PA\u03b2N were compared (FIG. 6). All three compounds showed greater than 97% inhibition of S.Tm in macrophages in the initial SAFIRE screen, single-digit micromolar IC50s, and reduction of at least 98% of bacteria in CFU plating assays (FIG. 2B, FIG. 6). The compounds also had low activity against S.Tm grown in broth, which is consistent with their activity as EPMs. As described above, the EPMs demonstrated lower EC50s in the Hoechst assay compared to PA\u03b2N. Next, the in vitro toxicity of the EPMs was investigated using the LDH assay in the human hepatocyte cell line HepG2, which predicts toxicity and metabolism of drugs by the liver. All three compounds displayed moderate toxicity in HepG2 LDH assays, although higher than the IC50s against intracellular S.Tm in RAWs, suggesting the presence of a therapeutic window below host toxicity. Further, optimization of the structure by medicinal chemistry may yield less toxic molecules. Log D describes the lipophilicity of a compound, and corresponds with its ability to permeate biological membranes; typically a log D below 3 is desirable for a drug. Together, log D and solubility indicate a compound's likely bioavailability, which impacts the utility as a therapeutic. All three EPMs have log D around 3 and poor solubility, leading to low predicted bioavailability; optimization of the chemical structures may lead to compounds that have potential as a biological probe or drug.",
+                                "All three EPMs are structurally distinct from each other and from EPM PA\u03b2N, which is a naphthyl peptidomimetic (FIG. 6). EPM30 is a small compound with an aminothiazole core, which is amenable to synthetic modification. Several aminothiazole compounds have been identified that inhibit efflux, although EPM30 is smaller than these molecules. Aminothiazoles often have adequate cellular permeability to be active against intracellular microbes. The next EPM identified was EPM35, a trifluoro-pyrimidine linked to a piperidine. Excitingly, a very similar compound was identified by an in silico screen of the Maybridge library for binding to AcrB, the active component of a key efflux pump in S.Tm. The EPM35-similar compound occupies the substrate-binding pocket of AcrB, and likely spans a large portion of the pocket, as do other inhibitors that target AcrB. Finally, the third compound, EPM43, is a small quinazoline, a planar moiety which is a common drug pharmacophore. Other quinazolines have been identified as inhibitors of bacterial and fungal EPs. Interestingly, EPM43 itself has previously been identified as an inhibitor of fungal dihydrofolate reductase (DHFR) though not the human enzyme. It is possible that this compound inhibits bacterial DHFR. If so, it seems likely that this activity might be independent of efflux inhibition, because there is no known connection between DHFR and bacterial efflux. EPM43 is less toxic to HepG2 cells than the other EPMs, but demonstrates poor aqueous solubility. Overall, the three EPMs represent three unique scaffolds amenable to medicinal chemistry."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "compare structural and drug-like properties of EPMs to PA\u03b2N",
+                                "analyze IC50s and inhibition of S.Tm in macrophages",
+                                "investigate in vitro toxicity of EPMs using LDH assay",
+                                "analyze log D and solubility of EPMs",
+                                "describe structural features of EPMs",
+                                "suggest potential for optimization of EPMs"
+                            ],
+                            "num_characters": 3111,
+                            "outline_medium": [
+                                "compare structural and drug-like properties of EPMs",
+                                "investigate in vitro toxicity of EPMs using LDH assay",
+                                "discuss potential for optimization of EPM structures"
+                            ],
+                            "outline_short": [
+                                "compare structural and drug-like properties of EPMs"
+                            ]
+                        },
+                        {
+                            "title": "Example 7. EPMs Sensitize S.Tm to Host Antimicrobial Peptides",
+                            "paragraphs": [
+                                "Next, it was investigated how EPMs might lead to bacterial clearance within host cells. Because efflux pumps are not essential for S.Tm growth in broth and the three EPMs exhibited high MICs, it was unlikely that EPMs independently cause bacterial death. Instead, EPMs may synergize with a host antimicrobial(s) that is effluxed by EPs. Two S.Tm EPs are necessary for infection of macrophages and mice (FIG. 10). The first EP, MacAB, is important for defense against ROS. The second S.Tm EP, AcrAB, is a homolog of MtrCDE, an EP in Neisseria gonorrhoeae which exports host antimicrobial peptides (AMPs). AcrAB thus likely exports AMPs as well as a variety of other substrates including antibiotics, dyes, and detergents. To test whether the EPMs synergize with macrophage defenses, wild-type bacteria was exposed in broth to ROS or AMPs in the presence of EPMs. The EPMs had no effect on bacterial growth in 0.2 mM H2O2, suggesting they do not synergize with ROS (FIG. 11). Next, the two AMPs were tested: polymyxin B is a model peptide produced by bacteria; LL-37 is a human cathelicidin produced by macrophages. Bacteria treated with 5 \u03bcg/ml AMP (\u215b MIC) or 25 \u03bcM EPM exhibited mild to no growth inhibition. However, combination treatment significantly inhibited growth; similar results were obtained with 500 \u03bcM PA\u03b2N (FIG. 12). Interestingly, co-treatment with EPMs and the human AMP LL-37 caused varying levels of growth inhibition, suggesting that polymyxin B and LL-37 may employ different mechanisms of action. However, co-treatment with polymyxin B and either EPM35 or EPM43 completely inhibited growth, indicating that the EPMs can synergize with AMPs.",
+                                "Although AMPs such as LL-37 and \u03b2-defensin 2 are upregulated in response to infection, AMPs such as LL-37, \u03b1-defensin, \u03b2-defensin 1, and angiogenin are also basally expressed and stored in azurophilic granules. Therefore, the question was whether the EPMs require host transcription or translation of AMPs or other factors, for antimicrobial activity. SAFIRE was performed in the presence of a transcriptional (DRB) or translational (cycloheximide) inhibitor (FIG. 13). Since exposure to inhibitors prior to infection greatly diminished macrophage viability, DRB or cycloheximide was added 2 hours post-infection, concurrently with EPMs. This procedure should prevent late induction of host defense genes, and, indeed, there was no observance of increased macrophage expression of Slc6A4 (5-HTT) and Camp, two genes induced in macrophages late (FIG. 13B). While treatment with DRB or cyclohexamide decreased basal infection (FIG. 14), antibacterial activity of the EPMs did not change (FIG. 13A). These data suggest that macrophage defenses induced more than 2 hours after infection do not contribute to EPM antibacterial activity. Instead, one or more of the many host defenses that are induced early 110] may synergize with EPMs.",
+                                "Next, whether EPMs may inhibit S.Tm growth in non-immune cells was analyzed. AMPs are expressed by multiple cell types, including diverse epithelial cells. Thus, whether EPMs inhibit S.Tm growth in HeLa cells was tested. HeLa cells express AMPs and are a model of epithelial cell infection. First, Eps were tested to determine if they are relevant for infection of HeLa cells. Deletion of acrAB but not macAB reduced bacterial colonization (FIG. 15A). Next HeLa cells were infected with S.Tm expressing GFP from the rpsM locus and monitored for bacterial infection with SAFIRE after treatment with the three EPMs (FIG. 15B, 15C). Treatment with EPM30 and EPM35 appeared to decrease MitoTracker signal in HeLa cells, which agrees with the results from the LDH assay (FIG. 9) and macrophage screening (FIG. 2B). However, all three EPMs decreased bacterial load in HeLa cells at 25 \u03bcM. EPM treatment of infected HeLa cells did not lead to complete absence of bacteria as observed during treatment of infected RAWs (FIG. 2B). Instead, we observed isolated intact bacteria. This may suggest that HeLa cells do not degrade dead bacteria as quickly as macrophages, or that EPMs primarily arrest bacterial growth in HeLas, or this effect may be due to differences in GFP expression by S.Tm. Overall, these data indicate the EPMs may be active against infections of diverse cell types, including non-immune cells."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate how EPMs lead to bacterial clearance within host cells",
+                                "test EPMs for synergy with ROS or AMPs",
+                                "analyze growth inhibition of S.Tm by EPMs and AMPs",
+                                "test EPMs with polymyxin B and LL-37",
+                                "analyze growth inhibition of S.Tm by EPMs and AMPs in presence of transcriptional or translational inhibitors",
+                                "test EPMs in HeLa cells",
+                                "analyze growth inhibition of S.Tm by EPMs in HeLa cells",
+                                "suggest EPMs may be active against infections of diverse cell types"
+                            ],
+                            "num_characters": 4299,
+                            "outline_medium": [
+                                "test EPMs for synergy with ROS or AMPs in broth",
+                                "investigate whether EPMs synergize with macrophage defenses",
+                                "test EPMs in the presence of transcriptional or translational inhibitors",
+                                "analyze EPM activity in non-immune cells"
+                            ],
+                            "outline_short": [
+                                "test EPMs for synergy with ROS or AMPs",
+                                "investigate requirement for host transcription or translation of AMPs"
+                            ]
+                        },
+                        {
+                            "title": "Example 8. EPM35 Increases Sensitivity of Multi-Drug Resistant S.Tm to Tetracycline",
+                            "paragraphs": [
+                                "Increased expression or function of efflux pumps often contributes to clinical multidrug resistance. Therefore, whether the EPMs re-sensitize two multidrug resistant strains of S.Tm to tetracycline was tested. Tetracycline is an antibiotic exported by AcrAB. The MAR1 strain is derived from wild-type SL1344 was selected by exposure to tetracycline, and has increased expression of the AcrAB efflux pump. 510801 is an MDR strain isolated from the mesenteric lymph node of a septic calf and is resistant to tetracycline, ampicillin, chloramphenicol, nalidixic acid, and triple sulfa. The basis of multi-drug resistance in this strain is unknown. MARL has a 2-fold increase in MIC (4 \u03bcg/ml) over isogenic wild-type S.Tm (2 \u03bcg/ml). S10801 has a 64-fold increase in tetracycline MIC (128 \u03bcg/ml) over wild type. It was found that EPM35 increased sensitivity to tetracycline, but not EPM30 or EPM43, suggesting these compounds have an alternative target. Treatment of both strains with 250 \u03bcM PA\u03b2N (\u215b MIC) or 50 \u03bcM EPM35 (\u215b MIC) decreased the tetracycline MIC 4-fold (FIG. 16A). In addition, the effect of these concentrations on the sensitivity of wild type S.Tm was tested, which showed similar reductions in MIC as with the MDR strains (FIG. 16A). To expand these results, checkerboard assays were performed with all three strains (FIG. 16B), which showed comparable reductions in MIC for different combinations of tetracycline and EPM35 or PA\u03b2N. The Fractional Inhibitory Concentration Index (FICI) was calculated for each pair and identified combinations where the FICI was below 0.5, suggesting synergistic interactions between tetracycline and the EPMs.",
+                                "Finally, whether EPM35 increased sensitivity of 510801 and wild-type S.Tm to tetracycline in vivo was tested. 7-week-old C57BL/6 mice were intraperitoneally infected with 1\u00d7104 bacteria. At 30 minutes and 24 hours post-infection, 25 mg/kg tetracycline and 50 mg/kg EPM35 was injected. Distress was observed in mice treated with EPM35 including squinty eyes and hunching posture, as well as neurological abnormalities in one mouse (loss of coordination, tail stiffening). Thus, the experiment was ended at 30 hours post-infection; the spleen and liver were harvested and plated to determine bacterial CFU. S10801-infected mice injected with tetracycline alone had lower levels of bacteria, but co-treatment with EPM35 appeared to further reduce bacterial CFU (FIG. 16C). This enhanced decrease was not observed in mice infected with wild-type bacteria, suggesting this combinatorial effect may be specific against MDR bacteria. Due to the signs of distress observed in mice treated with EPM35, the experiment was not repeated."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test EPMs for re-sensitization of MDR S.Tm to tetracycline",
+                                "analyze MIC of tetracycline in presence of EPM35 or PA\u03b2N",
+                                "perform checkerboard assays to determine synergistic interactions",
+                                "test EPM35 in vivo for increased sensitivity of MDR S.Tm to tetracycline",
+                                "analyze results to suggest EPM35 may be effective against MDR bacteria"
+                            ],
+                            "num_characters": 2681,
+                            "outline_medium": [
+                                "test EPMs for ability to re-sensitize MDR S.Tm to tetracycline",
+                                "investigate in vivo activity of EPM35 in combination with tetracycline"
+                            ],
+                            "outline_short": [
+                                "test EPMs for re-sensitization of MDR S.Tm to tetracycline"
+                            ]
+                        },
+                        {
+                            "title": "Example 9. Three Compounds Increase Salmonella Accumulation of an Efflux Pump Substrate",
+                            "paragraphs": [
+                                "SAFIRE has the potential to identify EPMs because Salmonella requires at least two efflux pumps, AcrAB and MacAB, to replicate and/or survive within macrophages and mice. The fluorescent dye Hoechst 33342 is an efflux pump substrate, and increased Hoechst accumulation relative to controls identifies potential modulators of efflux pumps. Bacteria was incubated with each of the 58 repurchased, validated hits and Hoechst 33342. As expected, heat-killed bacteria exhibited high fluorescence immediately after exposure to Hoechst because an electrochemical gradient is required to export pump substrates. Live, wild-type Salmonella demonstrated low fluorescence, and a strain lacking the AcrAB efflux pump had a modest level of fluorescence. Pa\u03b2N treatment resulted in higher levels of fluorescence. Under the same conditions, treatment with three of the 58 compounds (EPM30, EPM35 and EPM43) resulted in fluorescence comparable to that of PA\u03b2N (FIG. 17A). Further examination revealed that the three compounds had effective concentration-50s (EC50s) four-fold lower than that of PA\u03b2N in the Hoechst assay (FIG. 17B). The chemical structures of the three compounds do not resemble known efflux pump inhibitors (FIG. 17C). Finally, since the cell culture assays use gentamicin to prevent the replication of extracellular Salmonella, it was established that the three compounds do not synergize with the antibacterial activity of gentamicin in broth (FIG. 4). Altogether, the data suggested that the putative EPMs merit further study.",
+                                "**Example 10. Three Hit Compounds are Antibacterial Against Salmonella in Macrophages and Epithelial Cells**",
+                                "A more thorough characterization was performed of the putative EPMs regarding anti Salmonella activity in multiple mammalian cell types. Micrographs from RAW264.7 macrophages treated with 25 \u03bcM of each compound demonstrated a significant reduction in bacterial GFP signal compared to treatment with vehicle alone (FIG. 5A). The inhibitory concentration-50 (IC50) for the three compounds in macrophages ranged from 3 to 7 \u03bcM (FIG. 18A). HeLa cells harboring a Salmonella-165 GFP reporter strain and treated with 25 \u03bcM of each compound also demonstrated a reduction in bacterial GFP signal compared to treatment with vehicle alone (FIGS. 5C, 18B). To establish whether reduced GFP signal correlates with bacterial killing, we quantified bacterial survival by enumerating CFU from infected cells. RAW264.7 macrophages treated with the putative EPMs reduced the number of recoverable Salmonella 100-1,000-fold, compared to treatment with vehicle or PA\u03b2N (FIG. 18D). In primary bone marrow-derived mouse macrophages (BMDMs) all three hit compounds reduced the number of recoverable Salmonella (SL1344) by approximately 20-fold (FIG. 18C). Thus, the putative EPMs inhibit bacterial replication and/or survival in multiple cell types relevant to whole animal infection.",
+                                "**Example 11. The Putative EPMs Reduce the Survival of MDR Salmonella in Macrophages**",
+                                "Clinical MDR isolates frequently express high levels of efflux pumps (1). Salmonella encode at least two efflux pumps needed for bacterial survival in cells, AcrAB and MacAB. Both of these pumps use the TolC channel to transport cargo across the outer membrane. The importance of the acrAB, macAB and to/C genes for bacterial replication and/or survival was confirmed in macrophages (FIG. 18D). A laboratory isolate of Salmonella (SL1344), MAR1, was selected for resistance to tetracycline and is also resistant to other antibiotics based on a mutation that increases expression of the AcrAB efflux pump (27). Treatment of macrophages with any of the three putative EPMs [25 \u03bcM] was found to not significantly reduce the load of the MARL strain compared to treatment with DMSO (FIG. 18E). However, a clinical MDR Salmonella isolate (S10801) was recovered from macrophages at levels at 188 least 100-fold lower upon EPM treatment compared to DMSO or PA\u03b2N (FIG. 18F), indicating that the hit compounds inhibit MDR bacteria during infection.",
+                                "**Example 12. The Hit Compounds Inhibit Energy-Dependent Efflux Pump Activity**",
+                                "Having established that the putative EPMs are antimicrobial in mammalian cells, activity of the EPMs was further analyzed. While the Hoechst accumulation assay is a good first approximation of anti-efflux pump activity, quantification of export in real time based on glucose-dependence is a more specific assay for pump inhibition. Nile Red is an efflux pump substrate that becomes strongly fluorescent upon partitioning into the cytoplasmic membrane and possibly the inner leaflet of the outer membrane. Cells were preloaded with Nile Red and then treated with glucose to energize the efflux pumps and stimulate Nile Red export. Incubation with PA\u03b2N or any of the three EPMs reduced the rate and extent of Nile Red export upon glucose addition in a dose dependent manner (FIGS. 6A, 19A, 8). Washout of PA\u03b2N, EPM30 or EPM43 prior to adding glucose partially restored Nile Red export, suggesting the activity of these compounds, compared to EPM35, is readily reversible (FIG. 8). Moreover, a similar glucose-dependent assay using a different pump substrate, ethidium bromide, further demonstrated that all three EPMs reduced efflux pump export (FIG. 19B). These observations indicate that the three EPMs inhibit energy-dependent efflux pump activity.",
+                                "**Example 13. Bacterial Membranes Remain Intact Upon Exposure to the Three EPMs**",
+                                "Since efflux pumps rely upon the proton motive force or ATP to provide 210 the energy for the transport of substrates, chemicals that disrupt the inner membrane may indirectly inhibit efflux. To establish whether the three EPMs alter bacterial inner membrane potential, their effect on the incorporation of the voltage-sensitive dye Tetramethylrhodamine methyl ester (TMRM) was observed. After 30 minutes of exposure to the ionophore CCCP, TMRM levels in cells were approximately 50-fold lower than upon treatment with DMSO, but treatment with any of the three EPMs did not alter TMRM signal (FIGS. 20A, 20B). These observations suggest that membrane potential remains intact in the presence of the EPMs. To establish whether a longer incubation with the EPMs may compromise membrane integrity, the effect of the EPMs on bacterial swimming, an energy intensive activity was monitored over 15 hours (FIGS. 20C, 10). Bacteria were injected into the center of soft-agar plates and 10 \u03bcl of compound was pipetted onto paper disks on the periphery (41). Control compounds included CCCP and PA\u03b2N, which disrupts membranes over long (>30 minutes) exposures. Since swimming overnight also requires bacterial growth, we tested whether filters containing bacteriostatic antibiotics prevented swimming beyond growth inhibition. Neither the three EPMs nor the conventional antibiotics inhibited swimming relative to their MIC, as compared to CCCP and PA\u03b2N, further suggesting that the EPMs do not interfere with bacterial energy production across the inner membrane.",
+                                "A second class of chemicals that appears to interfere with bacterial efflux does so by permeabilizing the outer membrane, which allows substrates to diffuse into the periplasm. Therefore the EPMs were tested to determine whether they enable the chromogenic beta-lactam nitrocefin to access the periplasm and be hydrolyzed 233 by beta-lactamase. Compared to control compounds PA\u03b2N or polymyxin B, a pore-forming antimicrobial peptide, the EPMs did not increase nitrocefin permeation of the outer membrane (FIG. 20D), suggesting they do not disrupt efflux by increasing bacterial outer membrane permeability.",
+                                "**Example 14. The Hit Compounds are not Antibacterial in Standard Bacterial Medium**",
+                                "To establish whether the hit compounds have minimum inhibitory concentrations (MICs) in broth that are similar to their IC50S in host cells (see: FIG. 18), bacterial growth was examined in their presence using standard rich laboratory media, Mueller Hinton Broth. The MICs of EPM30, EPM35, and EPM43 respectively were 100 \u03bcM (\u03bcg/mL), 400 \u03bcM (186 \u03bcg/mL), and >400 \u03bcM (113 \u03bcg/mL), for three Salmonella strains: the strain used in the SAFIRE screen (SL1344), a tetracycline-resistant derivative of SL1344 with demonstrated increased production of AcrAB (MAR1), and a clinical MDR Salmonella isolate (S10801). These MIC values are considerably higher than the IC50S observed in host cells and higher than MICs observed for traditional antibiotics, which are usually in the 1-10 \u03bcg/mL range. Thus, the three putative EPMs may not function like traditional antibiotics and yet are potent in the context of the host cell.",
+                                "**Example 15. The Three EPMs Sensitize Bacteria to Antimicrobial Peptides**",
+                                "Next, it was determined why the EPMs kill bacteria in mammalian cells at 10-fold or more lower concentrations than they inhibit efflux in broth. One possibility is that the presence of antimicrobial peptides (AMPs) within host cells plays a role. Mammalian cells constitutively express AMPs and increase AMP expression in response to infection. It was found that in broth the combination of each EPM with either the bacterial derived polymyxin B or the human cathelicidin AMP LL37, but not individual treatments, significantly inhibited Salmonella growth (FIG. 7). These data suggest at least three possibilities: EPMs may potentiate AMP activity, AMPs may potentiate EPM activity, or both.",
+                                "To distinguish between these possibilities, it was first determined that bacterial exposure to polymyxin B concentrations high enough to allow nitrocefin access to the periplasm (5 \u03bcg/mL, FIGS. 20D, 20E) did not enhance the ability of the EPMs to increase Hoechst accumulation (FIG. 14). Similarly, cotreatment of polymyxin B with EPMs did not synergistically increase Nile Red retention compared to polymyxin B or EPMs alone (FIG. 14). These observations suggest that the membrane-damaging activity of polymyxin B did not potentiate EPM blockage of efflux pumps. Next, it was observed that low concentrations of polymyxin B (1 \u03bcg/mL), which do not by themselves allow nitrocefin access to the periplasm (FIGS. 20D, 20E), did indeed increase the rate of nitrocefin hydrolysis in the presence of EPMs (25 \u03bcM) (FIG. 21). It thus appears that EPMs potentiate AMPs with regard to both nitrocefin entry into the periplasm and bacterial growth inhibition. Therefore, EPMs may decrease the effective concentration of AMPs and, for this reason, have indirect antibacterial activity in the context of the host.",
+                                "**Example 16. EPM35 and EPM43 have Anti-Efflux Activity in MDR ESKAPE Pathogens**",
+                                "Six pathogens that cause the bulk of MDR nosocomial infections have been dubbed the ESKAPE pathogens: Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter species (56). EPM35 and EPM43 significantly reduced Nile Red export in MDR clinical isolates of K. pneumoniae and Enterobacter cloacae in addition to E. coli (FIGS. 22A, 22D), suggesting these two compounds have biological relevance in MDR strains beyond Salmonella.",
+                                "Referring to FIGS. 22A-22D: Defined strains obtained from BEI resources were examined for Nile Red retention after glucose addition in the presence of the indicated compound. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 as determined by comparison to DMSO+glucose with a one-way ANOVA and Dunnett's multiple comparison post-test."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Hoechst 33342 as efflux pump substrate",
+                                "describe bacterial incubation with compounds and Hoechst 33342",
+                                "show heat-killed bacteria exhibit high fluorescence",
+                                "show live, wild-type Salmonella demonstrate low fluorescence",
+                                "show strain lacking AcrAB efflux pump has modest level of fluorescence",
+                                "show Pa\u03b2N treatment results in higher levels of fluorescence",
+                                "show three compounds result in fluorescence comparable to Pa\u03b2N",
+                                "describe further examination of three compounds",
+                                "show EC50s of three compounds are four-fold lower than Pa\u03b2N",
+                                "show chemical structures of three compounds do not resemble known efflux pump inhibitors",
+                                "establish three compounds do not synergize with gentamicin in broth",
+                                "summarize data suggesting putative EPMs merit further study",
+                                "introduce anti-Salmonella activity in multiple mammalian cell types",
+                                "describe micrographs of RAW264.7 macrophages treated with compounds",
+                                "show IC50s for three compounds in macrophages",
+                                "describe HeLa cells harboring Salmonella-165 GFP reporter strain",
+                                "show reduction in bacterial GFP signal in HeLa cells",
+                                "quantify bacterial survival by enumerating CFU from infected cells",
+                                "show putative EPMs inhibit bacterial replication and/or survival",
+                                "describe importance of acrAB, macAB, and tolC genes for bacterial replication and/or survival",
+                                "show treatment with putative EPMs reduces survival of MDR Salmonella in macrophages",
+                                "summarize data suggesting putative EPMs inhibit energy-dependent efflux pump activity"
+                            ],
+                            "num_characters": 11403,
+                            "outline_medium": [
+                                "introduce Hoechst 33342 assay",
+                                "describe bacterial incubation with compounds and Hoechst 33342",
+                                "present results of fluorescence measurements",
+                                "compare results to PA\u03b2N treatment",
+                                "show chemical structures of three compounds",
+                                "establish lack of synergy with gentamicin",
+                                "summarize data suggesting further study of putative EPMs",
+                                "introduce Example 10",
+                                "introduce Example 11",
+                                "introduce Example 12",
+                                "introduce Example 13"
+                            ],
+                            "outline_short": [
+                                "introduce Hoechst 33342 assay",
+                                "test compounds for efflux pump modulation",
+                                "analyze fluorescence results",
+                                "compare EC50s of compounds",
+                                "discuss implications of results"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "Materials and Methods",
+                    "paragraphs": [
+                        "The following materials and methods were utilized in the examples described herein."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Bacterial Strains",
+                            "paragraphs": [
+                                "Salmonella enterica serovar Typhimurium strain SL1344 expressing GFP from the sifB promoter was used for screening and validation experiments. Saturated overnight cultures grown in LB with 30 \u03bcg/ml streptomycin and 30 \u03bcg/ml kanamycin were diluted to an OD of 0.001 and frozen in 100 \u03bcL aliquots at \u221280\u00b0 C. with a final concentration of 20% glycerol. Prior to infection, aliquots were thawed into 5 mL cultures of LB with 30 \u03bcg/ml streptomycin and 30 \u03bcg/ml kanamycin and grown for 18 hours at 37\u00b0 C. with aeration. Additional strains used for characterization experiments were routinely grown in LB media with 30 \u03bcg/ml streptomycin. These strains included wild-type SL1344, MARL, and strain SM022 containing rpsM::GFP. The acrAB::kan and macAB::kan strains were constructed using a method described in the literature. The multidrug resistant isolate 510801 (BEI Resources, NIAID, NIH) was grown in 30 \u03bcg/ml streptomycin, 50 \u03bcg/ml ampicillin, 10 \u03bcg/ml tetracycline; this strain was originally isolated from a calf with sepsis."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe bacterial strains used",
+                                "detail strain construction and growth conditions"
+                            ],
+                            "num_characters": 1024,
+                            "outline_medium": [
+                                "describe bacterial strains used"
+                            ],
+                            "outline_short": [
+                                "describe bacterial strains used in experiments"
+                            ]
+                        },
+                        {
+                            "title": "Cell Culture",
+                            "paragraphs": [
+                                "Murine macrophage-like RAW 264.7, HeLa human epithelial cells, and HepG2 human liver cells were grown in DMEM high glucose (Sigma) supplemented with 10% fetal bovine serum, 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, and 50 \u03bcM \u03b2-mercaptoethanol. All cell lines were maintained in a 5% CO2 humidified atmosphere at 37\u00b0 C. For screening, frozen aliquots of RAW 264.7 were thawed and allowed to expand for 3 days prior to seeding; other experiments were performed with cultures between passages 4 and 20."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe cell culture conditions"
+                            ],
+                            "num_characters": 510,
+                            "outline_medium": [
+                                "describe cell culture methods"
+                            ],
+                            "outline_short": [
+                                "describe cell culture conditions"
+                            ]
+                        },
+                        {
+                            "title": "Bacterial Infections for SAFIRE and CFU Plating",
+                            "paragraphs": [
+                                "For high-throughput screening and validation, 7\u00d7103 macrophages in 40 \u03bcL or 3\u00d7104 macrophages in 100 \u03bcL were seeded in 384- or 96-well black-walled, glass-bottomed plates (Brooks Automation). Twenty-four hours post seeding, bacteria in 20 or 50 \u03bcL PBS were added to a final concentration of 1\u00d7107 cfu/mL; we determined that these conditions resulted in infection of approximately 70% of macrophages at 18 hours post-infection with minimal macrophage toxicity. Forty-five minutes after bacterial addition, 20 or 50 \u03bcL gentamicin was added to a final concentration of 40 \u03bcg/mL. We empirically determined that this concentration did not affect intracellular infection but was sufficient to inhibit replication of extracellular bacteria. At 2 hours post-infection, 200 or 500 nL compound was added using a pin tool (CyBio) to yield a final concentration of 25 \u03bcM. Each assay plate included rifampicin and DMSO controls. In some experiments, media was removed and replaced with fresh medium containing 40 \u03bcg/mL gentamicin and the indicated concentrations of drugs. At 17.5 hours post-infection, PBS containing MitoTracker Red CMXRos (Life Technologies) was added to yield a final concentration of 300 nM (384-well) or 100 nM (96-well). Thirty minutes later, 16% paraformaldehyde was added to a final concentration of 1-2% and incubated at room temperature for 15 minutes. Wells were washed twice with PBS and stained for 20 minutes with 1 \u03bcM DAPI; wells were washed twice and stored in 90% glycerol in PBS until imaging.",
+                                "Infections to determine S.Tm CFUs were performed as described above, except macrophages were seeded in 96-well tissue culture coated plates (Greiner). At 18 hours post-infection, wells were washed three times in PBS, lysed with 30 \u03bcL 0.1% Triton X-100, diluted and plated to determine colony-forming units.",
+                                "Infections of HeLa cells with Salmonella were performed as above in 96-well plates, except 1\u00d7104 cells were seeded, cells were infected with S.Tm constitutively expressing GFP from the rpsM locus because sifB is poorly expressed in HeLa cells, and plates were spun for 5 minutes at 500\u00d7 g after addition of bacteria to enhance infection.",
+                                "Infections with Listeria monocytogenes were performed as described in the literature. Briefly, 5\u00d7104 macrophages in 100 \u03bcL were seeded into 96-well plates. Twenty-four hours later, Listeria monocytogenes were grown to mid-log phase in BHI medium, diluted to OD600 0.01 in PBS, and 50 \u03bcL was added to macrophages. After 30 minutes, cells were washed in PBS and 100 \u03bcL fresh media was added. At 1 hour post-infection, 100 \u03bcL media with gentamicin was added to yield a final concentration of 50 \u03bcg/ml gentamicin. At 2 hours post-infection, infected cells were treated with compound as described above. At 6 hours post-infection, cells were processed for CFUs as described above."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe infection protocol for macrophages",
+                                "detail gentamicin treatment and compound addition",
+                                "describe staining and imaging protocol",
+                                "detail infection protocol for HeLa cells",
+                                "describe infection protocol for Listeria monocytogenes"
+                            ],
+                            "num_characters": 2839,
+                            "outline_medium": [
+                                "describe bacterial infections for SAFIRE",
+                                "describe CFU plating methods"
+                            ],
+                            "outline_short": [
+                                "describe bacterial infection protocol"
+                            ]
+                        },
+                        {
+                            "title": "Real-Time Reverse Transcription PCR",
+                            "paragraphs": [
+                                "Infections were performed as described above, except that 8\u00d7104 RAW 264.7 macrophages were seeded in 6-well dishes and volumes were scaled for the larger culture volume. At indicated timepoints, wells were washed twice with PBS and RNA was extracted using the RNeasy mini kit (Qiagen) including Qiashredder homogenization and on-column DNase treatment. RNA yields ranged from 5-40 ng. First-strand cDNA was synthesized from 250 ng of total RNA using the iScript cDNA synthesis kit (BioRad) and diluted 10-fold. Quantitative PCR (qPCR) for the indicated genes was performed using the following primers: Hprt (GCGTTGGGCTTACCTCACT [SEQ ID NO: 1], ATCGCTAATCACGACGCTGG [SEQ ID NO: 2]); Sert (TTGGATAGTACGTTCGCAGGC [SEQ ID NO: 3], ACCACGATGAGCACAAACCA [SEQ ID NO: 4]); Camp (CAGCTGTAACGAGCCTGGTG [SEQ ID NO: 5], CACCTTTGCGGAGAAGTCCA [SEQ ID NO: 6]). Hprt was selected as the reference gene based on validation experiments. The qPCR reactions were performed in technical duplicates and contained 8 \u03bcL diluted cDNA, 200 nM of each primer, and 10 \u03bcL 2\u00d7 Power SYBR Green (Applied Biosystems) in 20 \u03bcL total volume. Reactions were run on an Eppendorf Realplex2 MasterCycler with the following cycling conditions: 10 minutes at 95\u00b0 C., then 40 cycles at 95\u00b0 C. for 15 seconds and 60\u00b0 C. for 60 seconds. Melting curve analysis of the PCR reaction showed a single amplicon for each target. No-template and no-reverse-transcriptase controls showed no product. Amplification results were baseline corrected, followed by manual determination of the threshold for each gene. The resulting CT values were analyzed as follows: (i) The mean CT of qPCR technical duplicates was determined for each sample. (ii) Sert and Camp expression for each sample was normalized to that of Hprt, resulting in the \u0394CT. (iii) Each sample was normalized to the mean of the uninfected samples for that experiment, resulting in the \u0394\u0394CT for that sample. (iv) The mean of sample replicates from the same experiment was calculated. (v) Fold expression and error were calculated using the 2\u2212\u0394\u0394CT equation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe RNA extraction and cDNA synthesis",
+                                "detail qPCR protocol and primer sequences",
+                                "describe data analysis and normalization",
+                                "calculate fold expression and error"
+                            ],
+                            "num_characters": 2064,
+                            "outline_medium": [
+                                "describe RNA extraction and cDNA synthesis",
+                                "describe qPCR methods and data analysis"
+                            ],
+                            "outline_short": [
+                                "describe real-time reverse transcription PCR protocol"
+                            ]
+                        },
+                        {
+                            "title": "Image Acquisition, MATLAB\u00ae-Based Screening Analysis, and Hit Selection",
+                            "paragraphs": [
+                                "High magnification images were acquired on an Olympus IX81 inverted widefield microscope. For screening imaging, three-color images were acquired at 10\u00d7 or 20\u00d7 on a Cellomics ArrayScan VTI (Thermo) and exported to DIB files. At least two images were taken per well for all experiments. We developed an automated MATLAB\u00ae script to quantify intracellular bacterial load; scripting packages have been deposited on MATLAB\u00ae File Exchange (https://www.mathworks.com/matlabcentral/fileexchange/), deposited as \u201cSAFIRE_ArrayScan\u201d and \u201cSAFIRE_OlympusIX81.\u201d. Briefly, the algorithm identifies macrophage borders via watershed segmentation using DAPI and MitoTracker signal. In order to identify bacteria, the user supplies an empirically determined GFP threshold that maximizes signal to noise. Within each macrophage, the number of pixels above the GFP threshold is counted. If more than 2 pixels are above the GFP threshold, the macrophage is labeled infected. The script calculates the percentage of macrophages infected in the image. To determine infection area for each cell, the number of GFP+ positive pixels was divided by the number of total pixels in the cell. Average infection area was determined by averaging across all cells within the image. Raw data for at least 2 images from the same well are averaged to yield one value for each well. Raw screening data was subjected to B-score normalization because we identified significant row and column effects by the method described in the literature. To determine significance of screening data, we employed the modified one-sample t-test by fitting the variances of replicates to an inverse gamma distribution. Assay positives were defined as having a p-value less than 0.05 and a B-score outside one standard deviation from the mean."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe image acquisition protocol",
+                                "detail MATLAB script for image analysis",
+                                "describe hit selection criteria and B-score normalization"
+                            ],
+                            "num_characters": 1786,
+                            "outline_medium": [
+                                "describe image acquisition and analysis methods"
+                            ],
+                            "outline_short": [
+                                "describe image acquisition and analysis protocol"
+                            ]
+                        },
+                        {
+                            "title": "Cytotoxicity Assays",
+                            "paragraphs": [
+                                "Cytoxocity was determined using the Pierce Lactate Dehydrogenase (LDH) Cytoxicity Assay. HepG2 liver cells were plated at 5\u00d7104 in 96 well tissue culture plates and allowed to settle overnight. Cells were treated with a 2-fold dilutions of each compound for 16 hours. Fifty microliters of conditioned media was mixed with the LDH assay reagent, incubated for 30 minutes, and absorbance was read at 490 and 680 nm. Curve fitting to determine CC50s was performed using GraphPad Prism; the CC50 is defined as 50% of the maximum LDH release as determined by lysed macrophages. There was no spontaneous LDH release or LDH present in the media."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe LDH cytotoxicity assay protocol"
+                            ],
+                            "num_characters": 638,
+                            "outline_medium": [
+                                "describe cytotoxicity assays using LDH release"
+                            ],
+                            "outline_short": [
+                                "describe cytotoxicity assay protocol"
+                            ]
+                        },
+                        {
+                            "title": "Broth Activity Assays",
+                            "paragraphs": [
+                                "Overnight Salmonella cultures were washed 3 times in PBS and diluted to an OD of 0.01 in Mueller Hinton Broth in 96-well flat bottom plates. Compound was added using a pin tool (CyBio) or manually, yielding a final concentration of no more than 1% DMSO. Plates were grown at 37\u00b0 C. shaking and OD600 was monitored using a BioTek Eon incubator shaker microplate absorbance reader. For experiments in defined media, bacteria were grown in M9 minimal media supplemented with 100 mM Tris pH 7.4, 0.35% glycerol, 0.002% histidine, 10 mM MgCl2, and 0.1% casamino acids. Where indicated, media was supplemented with 5 \u03bcg/ml polymyxin B or 0.2 mM H2O2. For experiments with LL-37, bacteria were grown in M9 minimal media supplemented with 0.4% dextrose, 0.004% histidine, 1 mM MgSO4, and 5 \u03bcg/ml LL-37. For checkerboard assays, MIC was defined as the concentration at which no growth was visually observed."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe broth activity assay protocol"
+                            ],
+                            "num_characters": 898,
+                            "outline_medium": [
+                                "describe broth activity assays for antimicrobial activity"
+                            ],
+                            "outline_short": [
+                                "describe broth activity assay protocol"
+                            ]
+                        },
+                        {
+                            "title": "Efflux Assays",
+                            "paragraphs": [
+                                "Hoechst accumulation assays were performed essentially as described in the literature. Briefly, overnight Salmonella cultures were washed 3 times in PBS and diluted to an OD of 0.1 in PBS with 2.5 \u03bcM Hoechst 33342 in the presence of the indicated concentrations of compounds. Fluorescence was monitored on a Biotek Synergy 2 with a 360/40 nm excitation filter and 460/40 nm emission filter. The maximum Hoechst fluorescence over 60 minutes of incubation was normalized to the signal from the equivalent number of heat-killed bacteria, after subtraction of autofluroescent signal determined from compound incubated in the absence of bacteria. Curve fitting to determine EC50s was performed using GraphPad Prism.",
+                                "Nile Red assays were adapted from an established protocol. Briefly, overnight Salmonella cultures were grown in Mueller-Hinton cation-adjusted broth (Sigma), washed, and resuspended at an OD600 of 2.0. Cells were incubated in 10 \u03bcM Nile Red for 3 hours at 37\u00b0 C. with aeration, then moved to room temperature for 1 hour. After pelleting at 2000\u00d7 g, dye-loaded cells were aliquoted and combined with compound at the indicated concentrations. Two hundred microliters was loaded into 96-well black walled plates (Greiner) and read using a Varioskan Flash Multimode Reader with 540 nm excitation and 625 nm emission filters. We observed that during loading into plates (\u02dc20 minutes), bacteria were able to efflux Nile Red even in the absence of glucose (FIG. 8A). To activate efflux, glucose was added to a final concentration of 2 mM. In some experiments, bacteria were treated with drug for 15 minutes, pelleted at 16,000\u00d7g, resuspended in fresh buffer, and stimulated with 2 mM glucose. All wash and incubation steps were performed in PBS with 1 mM MgCl2; incubations were performed in glass tubes to reduce adhesion of Nile Red."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe Hoechst accumulation assay protocol",
+                                "detail Nile Red efflux assay protocol",
+                                "describe data analysis and EC50 calculation"
+                            ],
+                            "num_characters": 1840,
+                            "outline_medium": [
+                                "describe efflux assays using Hoechst and Nile Red"
+                            ],
+                            "outline_short": [
+                                "describe efflux assay protocol"
+                            ]
+                        },
+                        {
+                            "title": "Swimming Assays",
+                            "paragraphs": [
+                                "Saturated overnight cultures were diluted to an OD600 of 0.01 in LB and 1 \u03bcL was injected into the center of low agar (0.25%) LB plates. Ten microliters of the indicated compounds were added to sterilized Whatman paper disks (diameter 0.7 cm) placed equidistant from the plate center. Plates were incubated lid up at 37\u00b0 C. overnight (no change in halo was observed between 14-24 hours incubation), imaged using a Gel Logic 200 imaging system, and halo radius (distance between center of disk and outermost edge of halo) was measured using ImageJ.",
+                                "**Mouse Infections**",
+                                "These studies were carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health, and all protocols were approved by the University of Colorado Institutional Committees for Biosafety and for Animal Care and Use. Bacteria were grown overnight in LB, then diluted in PBS. Seven week old C57/B16 female mice were intraperitoneally injected with 1\u00d7104S.Tm in 100 \u03bcL. Thirty minutes later, mice received two intraperitoneal injections: 25 mg/kg tetracycline in 150 \u03bcL PBS or PBS alone, and 50 mg/kg EPM35 in 100 \u03bcL DMSO or DMSO alone. Drug injections were repeated at 24 hours post-infection. At 30 hours post-infection, mice were humanely euthanized using carbon dioxide asphyxiation followed by cervical dislocation. Spleens and livers were harvested, homogenized, diluted in PBS, and plated to enumerate S.Tm CFUs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe swimming assay protocol",
+                                "detail halo radius measurement"
+                            ],
+                            "num_characters": 1472,
+                            "outline_medium": [
+                                "describe swimming assays for bacterial motility"
+                            ],
+                            "outline_short": [
+                                "describe swimming assay protocol"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "list materials and methods used in examples"
+                    ],
+                    "num_characters": 83,
+                    "outline_medium": [
+                        "describe materials and methods used in examples"
+                    ],
+                    "outline_short": [
+                        "describe bacterial strains and cell culture"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An efflux pump modulator compound having the structure:\n\n(EPM30) for treating a bacterial infection.",
+        "2. An efflux pump modulator compound having the structure:\n\n(EPM35) for treating a bacterial infection.",
+        "3. An efflux pump modulator compound having the structure:\n\n(EPM43) for treating a bacterial infection.",
+        "4. A method of treating a bacterial pathogen in a subject, the method comprising administering to the subject a therapeutically effective amount of an efflux pump modulator (EPM) compound.",
+        "5. The method of claim 4, further comprising administering an antimicrobial peptide or an antibiotic.",
+        "6. The method of claim 5, wherein the antibiotic comprises tetracycline.",
+        "7. The method of claim 4, wherein the antimicrobial peptide comprises polymyxin B.",
+        "8. The method of claim 4, wherein the EPM compound comprises one of EPM30, EPM35, or EPM43.",
+        "9. The method of claim 4, wherein the EPM compound comprises EPM30.",
+        "10. The method of claim 4, wherein the EPM compound comprises EPM35.",
+        "11. The method of claim 4, wherein the EPM compound comprises EPM43.",
+        "12. The method of claim 4, wherein the bacterial infection comprises an infection with one or more of a Salmonella sp., K. Pneumoniae, Enterobacter cloacae, or E. coli.",
+        "13. A method of treating a bacterial infection in a cell, the method comprising contacting the cell with a therapeutically effective amount of an efflux pump modulator (EPM) compound.",
+        "14. The method of claim 13, wherein the cell is an immune cell or a non-immune cell.",
+        "15. The method of claim 14, wherein the immune cell is a macrophage.",
+        "16. The method of claim 13, further comprising administering an antimicrobial peptide or an antibiotic.",
+        "17. The method of claim 16, wherein the antibiotic comprises tetracycline.",
+        "18. The method of claim 16, wherein the antimicrobial peptide comprises polymyxin B.",
+        "19. The method of claim 13, wherein the EPM compound comprises one of EPM30, EPM35, or EPM43.",
+        "20. The method of claim 13, wherein the EPM compound comprises EPM30.",
+        "21. The method of claim 13, wherein the EPM compound comprises EPM35.",
+        "22. The method of claim 13, wherein the EPM compound comprises EPM43.",
+        "23. Use of an EPM compound for treating a bacterial infection in a subject.",
+        "24. The use of claim 23, wherein the EPM compound comprises one of EPM30, EPM35, or EPM43.",
+        "25. A method of identifying an anti-infective compound, the method comprising:\n(a) providing first and second subsets of cells;\n(b) infecting the first and second subsets of cells with a marker-producing bacteria;\n(c) staining the first subset of cells with a vitality marker and obtaining a first value of cellular infectivity;\n(d) contacting the second subset of cells with an anti-infective compound; and\n(e) staining the second subset of cells with a vitality marker and obtaining a second value of cellular infectivity; wherein when the second value of cellular infectivity is decreased compared to the first value of cellular infectivity, an anti-infective compound is identified.",
+        "26. The method of claim 25, wherein the first and second values of cellular infectivity are obtained by quantifying cells in the first and second subsets of cells using fluorescent microscopy."
+    ]
+}

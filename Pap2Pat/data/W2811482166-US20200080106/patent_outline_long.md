@@ -1,0 +1,291 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate RNA half-life extension
+
+## SUMMARY
+
+- introduce circular RNA vector
+- describe vector elements
+- specify 5' homology arm
+- specify 3' group I intron fragment
+- specify protein coding or noncoding region
+- specify 5' group I intron fragment
+- specify 3' homology arm
+- describe optional elements
+- specify IRES sequence
+- specify 5' spacer sequence
+- specify 3' spacer sequence
+- describe vector embodiments
+- specify 3' group I intron fragment source
+- specify IRES sequence source
+- describe protein coding region
+- specify protein origin
+- specify antibody encoding
+- describe therapeutic use
+- describe diagnostic use
+- specify 5' homology arm length
+- specify 3' homology arm length
+- specify 5' spacer sequence length
+- specify 3' spacer sequence length
+- describe RNA polymerase promoter
+- specify circular RNA size range
+- summarize embodiments of IRES
+- specify length of IRES
+- describe vector for making circular RNA
+- outline elements of vector
+- specify application of vector
+- describe alternative vector
+- outline elements of alternative vector
+- specify application of alternative vector
+- exclude multi cloning site
+- describe circular RNA
+- outline elements of circular RNA
+- specify length of circular RNA
+- describe modifications of circular RNA
+- describe method of expressing protein
+- specify transfection methods
+- describe method of purifying circular RNA
+- specify HPLC conditions
+- describe precursor RNA
+- outline elements of precursor RNA
+- describe modifications of precursor RNA
+- describe method of making circular RNA
+- specify conditions for RNA circularization
+- describe pharmaceutical composition
+
+## DETAILED DESCRIPTION
+
+- introduce exogenous circRNA development
+- engineer self-splicing intron for circularization
+- describe functional protein production in eukaryotic cells
+- discuss endogenous circRNAs' biological functions
+- summarize limitations of endogenous circRNAs
+- motivate stabilization of mRNAs through circularization
+- highlight obstacles in circRNA production and purification
+- introduce engineering approach for exogenous circRNA generation
+
+### Abbreviations
+
+- define GFP
+- define ORF
+- define IRES
+- define UTR
+- define HEK
+- define EMCV
+- define PIE
+- describe vector for making circular RNA
+- define homology arm
+- describe 3' group I intron fragment
+- describe 5' group I intron fragment
+- define spacer
+- describe interfering sequences
+- describe unstructured RNA
+- describe structured RNA
+- describe spacer sequence length
+- describe spacer sequence composition
+- describe vector design using RNA folding software
+- describe sequence identity with natural sequences
+- describe protein coding regions
+- describe noncoding regions
+- describe vector embodiments
+- define vector
+- describe group I intron self-splicing sequences
+- describe protein coding region
+- describe homology arm length
+- define abbreviations
+- introduce circular RNA transfection methods
+- describe purification of circular RNA
+- motivate in vitro transcription
+- describe excess concentration of nucleotides
+- specify nucleotides used in excess
+- describe purification of circRNA
+- introduce pharmaceutical compositions
+- describe circRNA products
+- define pharmaceutically acceptable carrier
+- list examples of pharmaceutically acceptable carriers
+- describe formulation for parenteral administration
+- describe formulation for non-parenteral administration
+- motivate administration of circRNA
+- describe treatment of diseases
+- define therapeutically effective amount
+- define subject
+- describe splice site dinucleotide
+- motivate treatment of animals
+- describe delivery systems
+- list examples of delivery systems
+- describe administration methods
+- describe repeated administration
+- describe maintenance therapy
+- describe transient expression of circRNA
+- describe combination therapy
+- describe simultaneous delivery
+- describe treatment regimens
+
+### EXAMPLES
+
+- introduce RNA circularization strategies
+- describe enzymatic methods for RNA circularization
+- describe ribozymatic methods for RNA circularization
+- introduce permuted group I catalytic intron splicing strategy
+- describe design of precursor RNA for circularization
+- describe circularization reaction conditions
+- analyze splicing efficiency with homology arms
+- design spacers to improve splicing efficiency
+- test spacers for improved splicing efficiency
+- describe optimized construct for circularization
+- test alternative group I catalytic intron
+- optimize Anabaena catalytic intron for circularization
+- design de novo spacer sequences for circularization
+- test circularization of different RNA sequences
+- analyze circularization efficiency and nicking
+- test protein expression from circular RNA
+- analyze protein expression from different RNA sequences
+- test effect of IRES sequences on protein expression
+- test effect of polyA sequences on protein expression
+- analyze IRES efficacy in different cell types
+- describe purification methods for circular RNA
+- compare protein expression from purified and unpurified circular RNA
+- compare protein expression from circular RNA and linear mRNA
+- analyze stability of protein production from circular RNA
+- compare protein production half-lives from circular RNA and linear mRNA
+- discuss advantages of circular RNA for protein production
+- describe limitations of previous circular RNA systems
+- discuss potential of circular RNA for therapeutic protein expression
+- show effect of temperature on RNA circularization
+- show effect of GTP concentration on RNA circularization
+- show effect of RNA concentration on RNA circularization
+- show importance of purification for circular RNA expression
+- show effect of UTRs on expression from circular RNA
+- show effect of UTRs and spacers on expression from circular RNA
+- show efficient circularization of UTR-containing constructs
+- show expression assays using different IRES or spacer sequences
+- compare transfection reagent and nanoparticles for circular RNA expression
+- show effect of additional spacers on expression from circular RNA
+- summarize advantages of optimized circular RNA system
+- present results for FIGS. 23A and B
+- present results for FIG. 24
+- present results for FIGS. 25A and 25B
+- present results for FIGS. 26A and 26B
+- describe cloning and mutagenesis methods
+- describe circRNA design, synthesis, and purification methods
+- describe RNA structure prediction
+- describe in vitro transcription and RNA processing
+- describe RNA capping and polyadenosine tail addition
+- describe circRNA purification and enrichment
+- describe RNase H nicking analysis
+- describe reverse transcription and cDNA synthesis
+- describe tissue culture and transfection methods
+- describe cell transfection and RNA delivery
+- describe protein expression analysis
+- detail luminescence assays
+- outline flow cytometry
+- explain statistical analysis
+- introduce circular RNAs
+- discuss circRNA properties
+- describe circRNA generation
+- discuss RIG-I-mediated recognition
+- introduce RNA sensors
+- discuss nucleoside modifications
+- describe RNA modification with m6A
+- introduce circRNA for protein production
+- discuss immunogenicity and translatability
+- describe purification of exogenous circRNA
+- detail optimized permuted intron-exon splicing
+- describe circRNA synthesis
+- discuss group I catalytic introns
+- confirm circular products
+- describe RNase R treatment
+- detail HPLC purification
+- discuss oligonucleotide-targeted RNase H digestion
+- compare protein production and expression stability
+- probe immunogenicity of circRNA
+- describe cell line selection
+- detail purification steps
+- discuss innate cellular immune response
+- introduce immunogenicity of circRNA
+- demonstrate insufficient ablation of cytokine release
+- show reduction of cytokine release with phosphatase treatment
+- demonstrate improved GLuc expression stability with circRNA purity
+- show trend of increased circRNA purity improving A549 cell viability
+- demonstrate lack of transient response to circRNA
+- fail to induce pro-inflammatory transcripts in RAW264.7 cells
+- fail to induce pro-inflammatory transcripts in A549 cells
+- explore source of immunogenicity in circRNA splicing reactions
+- assess cytokine release and cell viability upon transfection
+- observe robust IL-6, RANTES, and IP-10 release
+- observe significant difference in A549 cell viability
+- analyze RIG-I and IFN-β1 transcript induction
+- observe significantly weaker induction of RIG-I and IFN-β1 transcripts
+- demonstrate RNase R treatment insufficiency
+- demonstrate contamination of purified circRNA with RIG-I ligand
+- observe RIG-I and IFN-β1 induction in HeLa cells
+- discuss nucleoside modification of circRNA
+- evaluate GLuc protein expression stability and cytokine release profile
+- attempt to circularize m1ψ-circRNA using PIE method
+- use T4 RNA ligase I and splint oligonucleotides for circRNA preparation
+- observe no protein expression from m1ψ-circRNA
+- compare protein expression stability of unmodified circRNA and linear mRNA
+- observe unmodified linear mRNA provoking greater cytokine response
+- investigate ability of different RNAs to activate TLRs
+- observe activation of TLR3 and TLR8 reporter cells
+- observe lack of response to linearized or circular RNA in TLR7 reporter cells
+- observe partial reversion of TLR8 response with uridine addition
+- linearize purified circRNA using heat and RNase H digestion
+- observe SEAP secretion in TLR8 reporter cells
+- examine translation and immunogenicity of unmodified and m1ψ-modified hEpo linear mRNAs and circRNAs
+- observe robust protein expression in 293 cells
+- detect hEpo in serum after injection of hEpo circRNA or linear mRNA
+- observe slower decay of hEpo from unmodified circRNA
+- assess compatibility of circRNA with lipid nanoparticles
+- observe robust expression from LNP-encapsulated hEpo circRNA
+
+## DISCUSSION
+
+- demonstrate exogenous circRNA evades RNA sensors
+- discuss previous studies on circRNA immunogenicity
+- describe limitations of previous studies
+- introduce RNase R purification method
+- discuss impurities in circRNA preparations
+- describe difficulties in HPLC purification
+- introduce phosphatase treatment
+- discuss importance of gentle circRNA preparation
+- describe purification protocol
+- discuss results of purification protocol
+- compare protein production from purified and unpurified circRNA
+- discuss nucleoside modifications
+- describe effect of uridine modifications on linear mRNA immunogenicity
+- discuss importance of folded RNA structures
+- describe effect of m1ψ and m6A modifications on circRNA translation
+- discuss possible reasons for TLR8 evasion by circRNA
+- describe differences in TLR3 activation by linearized circRNA
+- discuss results of intra-adipose injection of circRNA
+- compare hEpo expression from circRNA and modified mRNA
+- discuss factors affecting circRNA translation in vivo
+- describe results of intravenous delivery of circRNA by LNP
+- discuss tissue-specific stability of circRNA
+- describe assessment of miRNA binding sites
+- discuss results of serum cytokine analysis
+- describe formulation of circRNA into LNPs
+- discuss analysis of serum cytokines and local pro-inflammatory transcript levels
+- summarize potential of circRNA as a vector for therapeutic protein expression
+- introduce RNA design, synthesis, and purification methods
+- describe splint ligation method
+- describe RNase H nicking method
+- describe cell culture conditions
+- introduce transfection protocol
+- outline protein expression analysis
+- describe reverse transcription and qPCR
+- outline animal experiments
+- describe lipid nanoparticle formulation
+- outline cryo-TEM
+- describe data analysis and statistics
+- cite STAR methods
+- incorporate teachings of patents and references
+- describe cell viability assessment
+- outline SEAP secretion detection
+- describe luminescence assays
+- outline cytokine detection
+- outline gene expression normalization
+

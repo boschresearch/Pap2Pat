@@ -1,0 +1,294 @@
+{
+    "id": "US20120108446",
+    "authors": [
+        "Huiqing Wu",
+        "Xiwei Wu"
+    ],
+    "title": "4-miRNA SIGNATURE FOR PREDICTING CLEAR CELL RENAL CELL CARCINOMA METASTASIS AND PROGNOSIS",
+    "date": "2011-10-28 00:00:00",
+    "abstract": "An miRNA expression signature comprising a set of one or more miRNAs associated with metastatic cancer is provided. In one embodiment, the expression signature is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p. In some aspects, miR-199b-5p and miR-130b are overexpressed in metastatic cancer; and miR-10b and miR-139-5p are downregulated in metastatic cancer. Such an expression signature may be used in methods for predicting metastasis, risk for developing metastasis or a prognosis in a cancer. In another embodiment, a method for establishing such a cancer miRNA expression signature is provided.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Renal cell carcinoma (RCC) accounts for about 3% of all malignant tumors in adults. Its worldwide incidence and mortality are approximately 209,000 and 102,000 per year respectively, including 39,000 new cases and 13,000 deaths in the United States (Gupta et al. 2008). Clear cell RCC (ccRCC) represents the most common renal cancer histology, comprising 70-80% of all RCC cases (Rini et al. 2009). About 30% of patients with newly diagnosed disease have evidence of metastases at presentation (Landis et al 1999). Once RCC has metastasized, few patients achieve a durable remission. Only about 15-25% of patients having metastatic RCC respond to currently available therapies and the overall median survival is less than one year (Gupta et al. 2008). RCC metastasis cannot be predicted reliably based on patients' clinical manifestations, pathologic findings or other currently available laboratory tests.",
+                        "Although several algorithms have been used to predict clinical outcome for patients with metastatic RCC (mRCC) on the basis of clinical and pathologic features, these do not incorporate the more complex biological features of individual patients (Rini et al. 2009; Zisman et al. 2001). Recent studies have shown that the metastatic capability of cancer is conferred by genetic changes that occur relatively early in tumorigenesis and that metastatic dissemination may occur continually throughout the course of primary tumor development (Weinberg 2008; Klein 2008; Coghlin 2010).",
+                        "Early detection of ccRCC metastatic potential may be beneficial for a more precise prediction of clinical outcomes and may ultimately be used to identify subsets of patients that may benefit from specific targeted therapies. Therefore, it is desired to identify metastasis-specific molecular biomarkers at the time of nephrectomy to predict ccRCC metastasis."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce renal cell carcinoma",
+                        "limitations of current RCC diagnosis",
+                        "need for early detection of metastatic potential"
+                    ],
+                    "num_characters": 1847,
+                    "outline_medium": [
+                        "motivate RCC diagnosis"
+                    ],
+                    "outline_short": [
+                        "motivate RCC diagnosis"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "An miRNA expression signature comprising a set of one or more miRNAs associated with metastatic cancer is provided herein. In one embodiment, the expression signature is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p. In some aspects, miR-199b-5p and miR-130b are upregulated or overexpressed in metastatic cancer; and miR-10b and miR-139-5p are downregulated or underexpressed in metastatic cancer.",
+                        "In another embodiment, a method for establishing such a cancer miRNA expression signature is provided. The method includes determining a plurality of miRNA expression levels in one or more tumor tissue samples from a cohort of subjects; performing a univariate logistic regression analysis to identify a set of one or more miRNAs associated with metastasis; assigning a risk score to each tumor tissue sample by calculating a risk score formula; and determining a cut-off risk score to stratify the cohort subjects into one or more risk groups: low risk or high risk. In some embodiments, the miRNA expression levels may be determined by microarray analysis or RT-PCR. In other embodiments, the one or more miRNAs are selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+                        "In another embodiment, a method for predicting existence of or risk for developing metastasis is provided. The method includes detecting a test expression level of a set of one or more miRNAs of a cancer-specific expression signature in a biological test sample from a subject having a cancer such as clear cell renal cell carcinoma; assigning a risk score to the test expression level; and predicting the existence of or a high risk for developing metastasis when the test expression level is assigned a high risk score, predicting a low risk for developing metastasis when the test expression level is assigned a low risk score. In some embodiments, the miRNA expression levels may be determined by microarray or RT-PCR. In other embodiments, the one or more miRNAs are selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+                        "A method for predicting a prognosis in a cancer patient is provided. The method includes detecting a test expression level of a set of one or more miRNAs of a cancer-specific expression signature in a biological test sample from a subject having a cancer such as clear cell renal cell carcinoma; assigning a risk score to the test expression level; and predicting the a poor prognosis when the test expression level is assigned a high risk score; and predicting a good prognosis when the test expression level is assigned a low risk score. In some embodiments, the miRNA expression levels may be determined by microarray or RT-PCR. In other embodiments, the one or more miRNAs are selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce miRNA expression signature",
+                        "describe method for establishing signature",
+                        "describe method for predicting metastasis",
+                        "describe method for predicting prognosis",
+                        "summarize miRNA expression levels"
+                    ],
+                    "num_characters": 2865,
+                    "outline_medium": [
+                        "define miRNA expression signature",
+                        "outline methods for prediction and prognosis"
+                    ],
+                    "outline_short": [
+                        "introduce miRNA expression signature"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "A microRNA (miRNA) expression signature that may be used as a basis for computational methods or algorithms used for prediction, prognosis, screening, early diagnosis, staging, therapy selection and monitoring of a cancer and cancer related metastases is provided. In one embodiment, the miRNA expression signature includes an expression profile of one or more miRNA molecules. In one aspect, the miRNA molecules are selected from miR-10b, miR-130b, miR-139-5p and miR-199b-5p.",
+                        "According to the embodiments described herein, an miRNA expression signature and methods for its use may be generated toward any organ-specific cancer. In one embodiment, the miRNA expression signature is specific to clear cell renal cell carcinoma (ccRCC).",
+                        "An \u201cexpression signature\u201d is a group two or more genes or gene-related molecules (e.g., DNA, RNA, amino acids and proteins) that exist in a cell, tissue fluid or other sample whose combined expression pattern is characteristic of a particular tissue or is characteristic of a particular condition, or disease state. The expression signature can be used to select or stratify a group of subjects based on, for example, a specific stage of a disease, a risk of developing a particular disease or state of disease or a probability or prediction of a prognosis, with sufficient accuracy to facilitate diagnosis or selection of treatment.",
+                        "MicroRNA (miRNA) is a group of small non-coding RNAs that regulate gene expression during development and differentiation (Bartel 2004). miRNA expression is very tissue-specific (Bartel 2004). Some miRNAs that are stably expressed in certain tissue types might be expressed differently in other tissue types. In some embodiments, the miRNA molecules are present in tissues and/or organs at normal physiological conditions, but may be expressed at a much higher or lower level in diseased tissue or cells and are indicative of a change in health status. In other embodiments, the biomarkers may be absent in tissues and/or organs under normal physiological conditions, but are specifically expressed in diseased tissue or cells. In other embodiments, the biomarkers may be specifically released to the bloodstream under conditions of ccRCC, and/or are over- or under-expressed as compared to normal levels. Measurement of miRNA, alone or in combination, in patient samples provides information that may correlate with a diagnosis of the selected disease. Therefore, a set of one or more miRNA molecules may be used in diagnostic and prognostic assays.",
+                        "As used herein the phrase \u201cdiagnostic\u201d or means identifying the presence or nature of a pathologic condition. Diagnostic methods differ in their sensitivity and specificity. The \u201csensitivity\u201d of a diagnostic assay is the percentage of diseased individuals who test positive (percent of \u201ctrue positives\u201d). Diseased individuals not detected by the assay are \u201cfalse negatives.\u201d Subjects who are not diseased and who test negative in the assay may be termed \u201ctrue negatives.\u201d The \u201cspecificity\u201d of a diagnostic assay is 1 minus the false positive rate, where the \u201cfalse positive\u201d rate is defined as the proportion of those without the disease who test positive. While a particular diagnostic method may not provide a definitive diagnosis of a condition, it suffices if the method provides a positive indication that aids in diagnosis.",
+                        "As used herein the phrase \u201cdiagnosing\u201d refers to classifying a disease or a symptom, determining a severity of the disease, monitoring disease progression, forecasting an outcome of a disease and/or prospects of recovery. The term \u201cdetecting\u201d may also optionally encompass any of the above.",
+                        "A \u201cprognosis\u201d may be measured as any outcome of illness. In some embodiments a prognosis is a measurement of or prediction of overall survival, recurrence-free survival, or progression of a disease. A good prognosis indicates, for example, that the disease is less likely to progress, the chance of survival after diagnosis or treatment is high or the length of time a subject is likely to live after diagnosis or after treatment is a relatively long period of time. A poor prognosis indicates, for example, that the disease is more likely to progress, the chance of survival after diagnosis or treatment is low or the length of time a subject is likely to live after diagnosis or after treatment is relatively short.",
+                        "Alteration of miRNA expression has been shown in malignancies (Michael et al. 2003; Calin et al. 2005; Yanaihara et al. 2006) and plays an important role in tumorigenesis and cancer progression (Esquela-Kerscher & Slack 2006). Studies have shown that certain miRNAs play important roles in various steps of the metastatic cascade, such as the endothelial-mesenchymal transition (EMT), adhesion, migration, invasion, apoptosis and angiogenesis. Because the expression of multiple genes can be regulated by a single miRNA, miRNA expression profiles may be more accurate in determining cancer subtypes than RNA profiles of protein-coding genes (Calin & Croce 2006; Volinia et al. 2006). Expression signatures based on miRNA expression have been shown to aid in diagnosis and prognostication of cancer (Yu et al. 2008; Hiroki et al. 2010).",
+                        "In the current study, miRNA expression levels in benign kidney and ccRCC specimens were profiled using microarray. miRNA expression levels may also be profiled using a PCR-based assay, as further discussed herein. The miRNA expression associated with metastasis in a training cohort was analyzed to develop a 4-miRNA expression signature model that can predict concurrent and potential ccRCC metastasis and cancer-specific survival. This expression signature has been validated in an independent testing cohort and has also been converted to a quantitative PCR (q-PCR)-based assay, which may be used to validate large clinical cohorts and has the potential to be applied in a routine clinical setting.",
+                        "In one embodiment, a method for generating an miRNA expression signature is provided. Such a method includes detecting the expression of miRNA in one or more tumor tissue samples from a cohort of subjects. In one embodiment, the cohort of subjects includes a group of subjects having a representative tumors at each AJCC stage (I, II, III, IV). The miRNA expression may be detected by any suitable method for RNA detection including, but not limited to, microarray, reverse transcriptase polymerase chain reaction (RT-PCR) or other PCR-based assays (e.g. quantitative or real time RT-PCR) or mass spectrometry.",
+                        "The method for generating an miRNA expression signature further comprises performing a univariate logistic regression analysis to identify a set of one or more miRNAs associated with metastases. In one embodiment, the set of one or more miRNAs are selected from miR-10b, miR-130b, miR-139-5p and miR-199b-5p. The studies discussed below show that miR-199b-5p and miR-130b are overexpressed in ccRCC metastatic cancer; and miR-10b and miR-139-5p are downregulated in metastatic cancer ccRCC. These miRNAs have been shown to be relevant to other cancers as well. MiR-139-5p has been shown to be downregulated in endometrial serous and gastric adenocarcinoma (Hiroki et al. 2010; Guo et al 2009). Overexpression of miR-130b is involved in the growth control of breast epithelial cells via the modulation of the cell cycle inhibitor p21Waf1/Cip 1 (Borgdorff et al. 2010). Altered expression of miR-199b-5p involves HES-1 gene regulation and is associated with metastatic spread of medulloblastoma (Garzia et al. 2009). Dysregulation of miR-10b has been found in malignant glial tumors, esophageal cancer cell lines and primary breast cancer, though whether it is present in breast metastasis is in debate (Sasayama et al. 2009; Tian et al. 2010; lorio et al. 2005; Ma et al. 2007; Gee et al. 2008).",
+                        "The method for generating an miRNA expression signature may also include a step assigning a risk score to each tumor tissue sample by calculating a risk score formula and determining a cut-off risk score to stratify the cohort subjects into one or more risk groups (e.g., high risk, low risk, intermediate risk) as described in further detail in the examples below.",
+                        "In other embodiments, methods for predicting a cancer prognosis, the existence of metastasis or the risk for developing metastasis are provided. These methods may include detecting a test expression level of one or more miRNAs as part of a cancer-specific expression signature in a biological sample from a subject having a cancer, assigning a risk score to the test expression level; and predicting a cancer prognosis, the existence of metastasis or the risk for developing metastasis.",
+                        "When the test expression level is assigned a high risk score, the subject likely has metastasis or is likely to have metastasis. A high risk score may also be indicative of a poor prognosis. When the test expression level is assigned a low risk score, the subject is likely to be at low risk for having or developing metastasis. A low risk score may also be indicative of a good prognosis.",
+                        "As further described in the examples below, an independent testing cohort was validated and showed that the 4-miRNA expression signature described above exhibits high sensitivity and specificity for predicting metastasis. Currently, there is no clinically available molecular assay to predict ccRCC metastasis. A retrospective study previously reported that IMP3 expression analysis by immunohistochemistry could predict RCC metastasis and prognosis (Jiang et al. 2006). The retrospective study identified IMP-positive tumors were identified in 59/95 metastatic RCCs, 60/119 primary RCCs with metastasis and 11/287 primary RCCs with no metastasis. This resulted in an overall sensitivity of 56%, a specificity of 96% and a hazard ratio of 5.66. The 4-miRNA expression signature described herein achieves a higher sensitivity (75%), specificity (100%) and hazard ratio (12.68) as compared to the IMP3 study.",
+                        "In some embodiments, the methods of the present invention provide for utilizing a biological sample of a subject or patient received from a third party; or obtaining a biological sample from a subject or a patient. Examples of suitable biological samples which may optionally be used with the embodiments of the present invention include but are not limited to blood, serum, plasma, blood cells, urine, sputum, saliva, stool, spinal fluid or CSF, lymph fluid, the external secretions of the skin, respiratory, intestinal, and genitourinary tracts, tears, milk, neuronal tissue, lung tissue, any human organ or tissue, including any tumor or normal tissue, any sample obtained by lavage (for example of the bronchial system or of the breast ductal system), and also samples of in vivo cell culture constituents. The sample can optionally be diluted with a suitable eluant before contacting the sample to an antibody and/or performing any other diagnostic assay.",
+                        "Numerous well known tissue or fluid collection methods can be utilized to collect a biological sample from the subject in order to determine the level of DNA, RNA and/or polypeptide of the variant of interest in the subject. Examples include, but are not limited to, fine needle biopsy, needle biopsy, core needle biopsy and surgical biopsy (e.g., brain biopsy), and lavage. Regardless of the procedure employed or where the biopsy or sample is obtained, the level of the variant can be determined and a diagnosis can thus be made.",
+                        "Having described the invention with reference to the embodiments and illustrative examples, those in the art may appreciate modifications to the invention as described and illustrated that do not depart from the spirit and scope of the invention as disclosed in the specification. The Examples are set forth to aid in understanding the invention but are not intended to, and should not be construed to limit its scope in any way. The examples do not include detailed descriptions of conventional methods. Such methods are well known to those of ordinary skill in the art and are described in numerous publications. Further, all references cited above and in the examples below are hereby incorporated by reference in their entirety, as if fully set forth herein."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EXAMPLE 1",
+                            "paragraphs": [
+                                "**Development of a 4-MIRNA Expression Signature Model  for Detection of Clear Cell Renal Cell Carcinoma Metastasis**",
+                                "Materials and Methods",
+                                "Tissue preparation and RNA extraction. A total of 78 frozen benign kidney and clear cell renal cell carcinoma (ccRCC) specimens were used for the study. All the samples were collected from nephrectomy specimens of ccRCC patients at the City of Hope (COH) National Medical Center between 1986 and 2009. The samples were snap-frozen shortly after nephrectomy and had been stored at \u221280\u00b0 C. at the COH Tumor Bank since collected. Formalin-fixed paraffin embedded (FFPE) samples may also be used for the miRNA expression profiling studies (Weng et al. 2010). The protocol for using these samples was approved by the COH Cancer Protocol Review and Monitoring Committee (CPRMC) and Institutional Review Board (IRB). Total RNA was extracted from up to 10 sections (10 \u03bcm in thickness) of each sample as described previously (Weng et al. 2010).",
+                                "Microarray analysis for miRNA. Microarray testing of miRNA expression was performed at the COH Microarray Core using the MicroRNA Human Version 2 Microarray (probes for 723 human, Sanger miRBase 10.1) (Agilent Technologies, Inc., Santa Clara Calif.), as described previously (Weng et al. 2010).",
+                                "Statistical analysis. The analysis was performed using R statistical language. Raw data from Agilent miRNA array was processed by Quantile normalization, followed by a log 2 transformation with an offset of 1. miRNAs with a log 2 normalized expression level that is greater than 8 or called \u201cabsent\u201d by Agilent's Feature Extraction software in more than 90% of the samples were discarded. Differentially expressed miRNAs between tumor (training cohort) and benign samples were selected using t-test with a p value\u22660.05 and a 2-fold change. The miRNA expression signature was developed using the following steps. First, univariate logistic regression analysis was used to identify miRNAs that were associated with metastasis. Second, a mathematical formula based on the expression levels of the above identified miRNAs was developed to assign a risk score for each patient. Third, a risk score cut-off level was determined to classify each patient into a high or low risk group. The first step is a feature selection step. The second and third steps are model building steps.",
+                                "For the first step, a range of p values (0.05, 0.02, 0.01, 0.005, 0.002 and 0.001) were tested with Leave-One-Out Cross Validation (LOOCV) and the best p value cutoff score was found to be 0.01. Specifically, at each iteration step of the cross validation, one test sample was tested (the test sample) while the others remained in the training group (n=28\u22121). During this process, the feature selection and formula development were repeated within each iteration step and the expression signature model was used to predict the status of the test sample. The feature selection and expression signature model building steps were entirely independent of the test sample. This is important to ensure that the performance of the expression signature model formula developed can be estimated without bias. Using LOOCV, a minimal error rate was achieved having a p value of <0.01. A 2 or more-fold-change between metastatic and localized specimens was required to help develop a PCR-based assay for the expression signature. These criteria resulted in 4 miRNAs that were significantly associated with metastasis.",
+                                "To investigate the effectiveness of these four miRNAs as an expression signature to predict metastasis, a mathematical formula was constructed, taking into account both the strength and the positive or negative association of each miRNA with metastasis. More specifically, a risk score for each patient in the training cohort group was calculated using the formula, which was a linear combination of the expression level of the miRNAs, weighted by the regression coefficients derived from the aforementioned univariate logistic regression analysis. To choose the optimal risk score cutoff, a range of scores were tested to stratify these patients into high and low risk groups. The false positive rate (FPR) and true positive rate (TPR) of these cutoffs were calculated and a risk score cutoff point was selected based on the lowest FPR and highest TPR (FPR=8%, TPR=100%, FIG. 5). Therefore, an miRNA expression signature model, which consists of a risk score formula and a high risk score cutoff, was developed to classify patients into high and low risk groups for developing metastasis.",
+                                "The performance of the expression signature was further validated using the additional independent testing cohort data set (n=40), in which each patient's risk for developing metastasis was determined based on the calculated risk score and then compared to the clinical follow-up information. To investigate whether the 4-miRNA expression signature was also an independent prognostic factor for cancer specific survival, univariate Cox regression analysis was used to examine the patients' risk status based on the expression signature, patient age and gender, tumor histologic grade and size, clinical stage and available UCLA Integrated Staging System (UISS) score (see discussion below). A p value of <0.05 was used to determine significance.",
+                                "Reverse Transcriptase Polymerase Chain Reaction (RT-PCR). In each sample, the expression of each of the 4-miRNAs (hsa-miR-10b, 130b, 139-5p and 199b-5p) was analyzed using RT-PCR TaqMan MicroRNA Assays and 7900HT Fast Real-time PCR System (Applied Biosystems, Carlsbad, Calif.). Briefly, 10 ng of total RNA from each sample was subjected to reverse-transcription forming 1st strand cDNA with mature miRNAs specific primers containing stem loop, followed by real-time PCR with TaqMan probes. PCR reactions for each sample were carried out in triplicate. Each miRNA expression, normalized by hsa-miR-24, was quantified using the following formula: X=2\u2212\u0394CT, where \u0394CT=CT(miR-X)\u2212CT(miR-24).",
+                                "Clinical Characterization of Patients' Specimens in the Training and Testing Cohorts",
+                                "A set of benign kidney specimens as control samples (n=10) and a 28-sample ccRCC training cohort including localized/stage I (pT1, n=13) and metastatic (M1, n=15) tumors were used to profile miRNA expression in ccRCC and to develop a metastasis-specific expression signature. In addition, an independent ccRCC testing cohort was used to validate the expression signature, which included 40 primary tumor specimens of stage I (pT1, n=6), II (pT2, n=6), III (pT3, n=17) and IV (N2 or M1, n=11) tumors. In the testing cohort, the majority (34/40) of the specimens had at least 5 year follow-up information if there was no metastasis reported. The clinical characteristics of the specimens are summarized in Table 1 below.",
+                                "Profiling of miRNA Expression in ccRCCs",
+                                "Using Agilent microarray technology, the miRNA expression of the benign kidney samples (n=10) and the training cohort specimens (n=28) was profiled (FIG. 1). As shown in FIG. 2, an unsupervised hierarchical clustering using these miRNA expression data separated the benign and tumor samples. With a cut-off score of a 2-fold change and an FDR\u22660.05, 56 miRNAs were found to be aberrantly expressed in ccRCCs; 29 were up-regulated and 27 were down-regulated as shown in Table 3 below. Within the tumor group, 21 miRNAs were found to be differentially expressed between localized and metastatic specimens; 7 were upregulated and 14 were down-regulated in the metastatic tumors as shown in Table 3 below.",
+                                "Developing a 4-miRNA expression signature model for detection of ccRCC metastasis. Patients with stage I (T1) ccRCC usually have a favorable clinical outcome and their 5-year survival reaches 95% post nephrectomy (Cohen & McGovern 2005). In the study described herein, T1 tumors were considered to be \u201cgood\u201d tumors and were used to represent the control samples to compare with the metastatic ccRCCs. Using a univariate logistic regression test and LOOCV within the training set, the optimal p value cut-off score to select the miRNAs associated with metastasis was determined. A range of p values were tested in this LOOCV test and the p value <0.01 was determined because it had the best performance among all the p value cutoff scores tested. Additionally, a 2-fold change difference between the miRNA expression in metastatic and localized tumors was used to identify all the miRNAs that showed the largest difference between metastatic and local tumors. Four miRNAs (miR-10b, miR-139-5p, miR-130b and miR-199b-5p) satisfied the above criteria, and were selected to build a metastatic tumor expression signature. MiR-199b-5p and miR-130b were over-expressed in metastatic tumors, while miR-10b and miR-139-5p were downregulated (FIG. 2A).",
+                                "A risk score method was used to construct a expression signature model for ccRCC metastasis (Yu et al. 2008). The risk score formula is a linear combination of the expression levels of all the 4 miRNAs, weighted by the regression coefficients derived from the univariate logistic regression analysis, which is described as following:",
+                                "Risk score=\u22121.275564\u00d7XmiR-10b+2.106701\u00d7XmiR-130b\u22122.278192\u00d7XmiR-139-5p+1.101139\u00d7XmiR-199b-5p",
+                                "The next step was to determine a cut-off score for the risk score to stratify patients into a group of high or low risk for ccRCC metastasis. The risk score of each patient in the training set was calculated using the expression signature model developed, and the FPR and TPR within a range of cut-off scores were computed. A cut-off score of \u22128.12 was selected because it gave the best FPR and TPR (FIG. 5). Therefore, a 4-miRNA expression signature model was developed to determine the risk of tumor metastasis, in which a score \u2267\u22128.12 indicates a high risk."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "develop 4-miRNA expression signature model",
+                                "describe materials and methods",
+                                "prepare and extract RNA from tissue samples",
+                                "perform microarray analysis for miRNA",
+                                "describe statistical analysis",
+                                "process raw data from Agilent miRNA array",
+                                "select differentially expressed miRNAs",
+                                "develop risk score formula",
+                                "determine risk score cut-off level",
+                                "describe feature selection step",
+                                "describe model building steps",
+                                "use Leave-One-Out Cross Validation",
+                                "select minimal error rate",
+                                "require 2 or more-fold-change",
+                                "construct risk score formula",
+                                "choose optimal risk score cutoff",
+                                "describe clinical characterization of patients' specimens",
+                                "profile miRNA expression in ccRCCs",
+                                "develop 4-miRNA expression signature model"
+                            ],
+                            "num_characters": 9765,
+                            "outline_medium": [
+                                "introduce development of 4-miRNA expression signature model",
+                                "describe materials and methods",
+                                "discuss tissue preparation and RNA extraction",
+                                "describe microarray analysis for miRNA",
+                                "discuss statistical analysis",
+                                "describe feature selection and model building",
+                                "discuss Leave-One-Out Cross Validation",
+                                "describe development of risk score formula",
+                                "discuss validation of expression signature model"
+                            ],
+                            "outline_short": [
+                                "describe materials and methods",
+                                "outline statistical analysis",
+                                "develop 4-miRNA expression signature model",
+                                "validate expression signature model"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 2",
+                            "paragraphs": [
+                                "**The 4-miRNA Expression Signature Predicts Metastasis  or Risk for Developing Metastasis**",
+                                "Validation of the 4-miRNA expression signature in an additional independent testing cohort. To validate the expression signature, an additional independent testing cohort containing 40 primary ccRCC specimens of different clinical stages were used. 34 of 40 (34/40) specimens had at least 5 years of follow-up information if no metastasis was reported. Each specimen was predicted to be either high or low risk based on its calculated risk score using the 4-miRNA expression signature. The predicted risk status for each patient was then compared to clinical outcome. Among the 34 samples with 5-year follow-up information, 11 of 13 (85%) primary tumors with concurrent metastasis and 10 of 15 (67%) localized tumors with subsequent metastasis were predicted to be high risk, and 6 of 6 (100%) without metastasis were predicted to be low risk (FIG. 3A). The expression signature showed an overall sensitivity of 75% (21/28) and a specificity of 100% (6/6) for the determination and prediction of metastasis. In the additional 6 primary ccRCC specimens, 1 (1/6) was predicted to be low risk and 5 (5/6) were predicted to be high risk. However, these specimens were obtained within the last two years, and future development of metastasis is not known. All 5 patients predicted to be high risk had stage III disease and the 1 patient predicted to be low risk was stage I disease. The risk score of each ccRCC specimen determined by the 4-miRNA expression signature model appeared to be the only factor significantly associated with concurrent or potential metastasis (OR=4.20, 95% CI=1.00-17.57, p<0.05). Other variables, such as a patient's gender, age, tumor grade and stage, were not useful in predicting metastasis as shown in Table 4 below."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "validate 4-miRNA expression signature",
+                                "predict metastasis or risk for developing metastasis",
+                                "show expression signature predicts metastasis"
+                            ],
+                            "num_characters": 1836,
+                            "outline_medium": [
+                                "validate 4-miRNA expression signature in independent testing cohort"
+                            ],
+                            "outline_short": [
+                                "validate 4-miRNA expression signature in independent testing cohort"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 3",
+                            "paragraphs": [
+                                "**The 4-miRNA Expression Signature Predicts Overall  Cancer-Specific Survival**",
+                                "The miRNA expression was also examined to determine whether the expression signature model could independently predict the cancer-specific survival of ccRCC patients. With patients in the combined training and testing cohorts (n=68), a univariate Cox regression analysis showed that the predicted risk status was a significant prognostic factor for the patient's cancer-specific survival (Table 5). As shown in Table 5 below, relative risk for patients predicted to be of high risk was significantly higher as compared to patients of low risk (HR=12.68, 95% CI=2.97-54.13, p<0.0001). The stage of disease was the only other significant prognostic factor, while age, gender, tumor grade and size were not associated with survival. Patients predicted to be of high risk had a 5-year survival rate of only 32%, whereas those of low risk had a 5-year survival rate of 84% (FIG. 4A).",
+                                "Currently, the UCLA Integrated Staging System (UISS) is a widely used prognostic tool for RCC patient outcome. UISS classifies cases into high, intermediate and low risk groups, based on tumor stage, histological grade and Eastern Cooperative Oncology Group (ECOG) performance status (PS) (Han et al. 2003). As reported in international multi-center studies (Han et al., 2003; Patard et al. 2004), the overall 5-year cancer-specific survival rates estimated by the UISS were 92-94%, 65-78% and 30-48% for the low, intermediate and high risk group patients, respectively. To directly compare the UISS system with the miRNA expression signature described herein, a UISS risk score to each of the testing cohort patients was assigned. The predicted 5-year cancer-specific survival rates were 0%, 63% and 52% for the high, intermediate and low risk group patients, respectively, by UISS, compared to 32% and 84% for the high and low risk patients, respectively, by the 4-miRNA expression signature (FIG. 6A-C). The UISS score is not a significant prognostic factor for the test cohort, but the risk scores based on both microarray and RT-PCR are statistically significant as shown in Table 6 below. The hazard ratio of high versus low risk status is 6.81 (95% CI=1.52-30.53, p value<0.01) and 4.88 (95% CI=1.37-17.38, p value<0.01), by microarray and qPCR, respectively. The miRNA expression signature developed from the current study has the potential to be applied in a routine clinical setting. A PCR-based test will make the expression signature assay more practical for a clinical laboratory usage."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "examine miRNA expression for cancer-specific survival",
+                                "perform univariate Cox regression analysis",
+                                "compare predicted risk status with UISS",
+                                "show 5-year survival rates for high and low risk patients",
+                                "discuss potential clinical application"
+                            ],
+                            "num_characters": 2560,
+                            "outline_medium": [
+                                "analyze miRNA expression signature",
+                                "compare with UCLA Integrated Staging System"
+                            ],
+                            "outline_short": [
+                                "demonstrate miRNA expression signature for cancer-specific survival prediction"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 4",
+                            "paragraphs": [
+                                "**Development of an RT-PCR Based 4-miRNA Expression Signature Assay**",
+                                "One of the challenges of performing an RT-PCR based tissue miRNA expression analysis is to find a reliable reference miRNA or small RNA for the test normalization. To further develop a 4-miRNA expression signature assay using a RT-PCR platform, the microarray database of miRNA expression in all of the benign and tumor kidney samples (n=78) was analyzed.",
+                                "After carefully analyzing the microarray data discussed herein, it was found that miR-24 was most constantly and stably expressed (Table 7). The 4-miRNA expression signature based on qPCR data also showed a high sensitivity (75%) and specificity (100%), as well as a similar association with cancer-specific death. This further validates the microarray results as and provides the technologic basis for a larger scale q-PCR based validation.",
+                                "Therefore, miR-24 was selected as a reference miRNA for normalization. Each of the 4 miRNAs selected for the expression signature in each specimen in the training and testing cohorts were used, and their expression, normalized by that of miR-24, was analyzed using ABI TaqMan MicroRNA Assay. Similar to the microarray study described above, a PCR-based risk score formula model (Risk score=1.431559\u00d7XmiR-10b\u22121.530509\u2212XmiR-130b+1.888144\u00d7XmiR-139-5p\u22122.569280\u00d7XmiR-199b-5p) was constructed using the training cohort and the corresponding high risk cut-off score (\u221218.11) was determined (FIG. 2B). The expression signature was then validated using the testing cohort, which showed that 11 of 13 (85%) primary ccRCCs with concurrent metastasis and 10 of 15 (67%) localized tumors with subsequent metastasis were predicted to be of high risk, and 6 of 6 (100%) without metastasis were predicted to be of low risk (FIG. 3B). Overall, the validation test showed that the PCR-based assay of the expression signature had a sensitivity of 75% and a specificity of 100%. The findings were very similar to those based on the microarray platform. The expression signature was also found to be significantly associated with cancer-specific survival (HR=8.8, 95% CI=2.62-29.58, p<0.0001) (FIG. 4B, Table 5)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze microarray database for reference miRNA",
+                                "select miR-24 as reference miRNA",
+                                "develop PCR-based risk score formula model",
+                                "validate expression signature using testing cohort"
+                            ],
+                            "num_characters": 2162,
+                            "outline_medium": [
+                                "develop RT-PCR based 4-miRNA expression signature assay",
+                                "validate expression signature using testing cohort"
+                            ],
+                            "outline_short": [
+                                "develop RT-PCR based 4-miRNA expression signature assay"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce miRNA expression signature",
+                        "define expression signature",
+                        "describe miRNA regulation of gene expression",
+                        "discuss miRNA expression in cancer",
+                        "introduce diagnostic and prognostic methods",
+                        "define diagnostic and prognostic terms",
+                        "describe method for generating miRNA expression signature",
+                        "detect miRNA expression in tumor tissue samples",
+                        "perform univariate logistic regression analysis",
+                        "select miRNAs associated with metastases",
+                        "describe miRNA expression in ccRCC",
+                        "discuss miRNA dysregulation in cancer",
+                        "assign risk score to each tumor tissue sample",
+                        "predict cancer prognosis or metastasis",
+                        "describe biological samples used",
+                        "discuss tissue or fluid collection methods",
+                        "determine level of DNA, RNA, or polypeptide",
+                        "make diagnosis",
+                        "discuss modifications to the invention",
+                        "incorporate references by citation",
+                        "omit detailed descriptions of conventional methods",
+                        "discuss examples below",
+                        "describe independent testing cohort validation",
+                        "show 4-miRNA expression signature achieves high sensitivity and specificity"
+                    ],
+                    "num_characters": 12226,
+                    "outline_medium": [
+                        "introduce miRNA expression signature",
+                        "define expression signature",
+                        "describe miRNA regulation of gene expression",
+                        "discuss miRNA expression in cancer",
+                        "describe diagnostic and prognostic methods",
+                        "define diagnostic and prognostic terms",
+                        "introduce method for generating miRNA expression signature",
+                        "describe miRNA detection methods",
+                        "discuss method for predicting cancer prognosis",
+                        "describe biological samples used",
+                        "discuss tissue or fluid collection methods",
+                        "provide disclaimer for modifications to the invention"
+                    ],
+                    "outline_short": [
+                        "introduce miRNA expression signature",
+                        "define expression signature",
+                        "describe miRNA regulation in cancer",
+                        "motivate use of miRNA expression signature in cancer diagnosis",
+                        "describe method for generating miRNA expression signature",
+                        "outline applications of miRNA expression signature"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An miRNA expression signature comprising a set of one or more miRNAs associated with metastatic renal cell carcinoma.",
+        "2. The expression signature of claim 1, wherein the one or more miRNAs is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+        "3. The expression signature of claim1, wherein miR-199b-5p and miR-130b are overexpressed in metastatic renal cell carcinoma; and miR-10b and miR-139-5p are downregulated in metastatic renal cell carcinoma.",
+        "4. A method for establishing a metastatic renal cell carcinoma miRNA expression signature comprising:\ndetermining a plurality of miRNA expression levels in one or more tumor tissue samples from a cohort of subjects;\nperforming a univariate logistic regression analysis to identify a set of one or more miRNAs associated with metastasis;\nassigning a risk score to each tumor tissue sample by calculating a risk score formula; and\ndetermining a cut-off risk score to stratify the cohort subjects into one or more risk groups.",
+        "5. The method of claim 4, wherein the miRNA expression levels are determined by microarray analysis.",
+        "6. The method of claim 4, wherein the miRNA expression levels are determined by RT-PCR.",
+        "7. The method of claim 4, wherein the one or more miRNAs is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+        "8. The method of claim 4, wherein the one or more miRNAs are miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+        "9. The method of claim 4, wherein the risk groups are high risk, low risk, and intermediate risk.",
+        "10. The method of claim 4, wherein the cancer is clear cell renal cell carcinoma.",
+        "11. A method for predicting existence of or risk for developing metastasis in a renal cell carcinoma comprising:\ndetecting a test expression level of a set of one or more miRNAs of a renal cell carcinoma-specific expression signature in a biological sample from a subject having a renal cell cancer;\nassigning a risk score to the test expression level; and\npredicting the existence of or a high risk for developing metastasis when the test expression level is assigned a high risk score, predicting a low risk for developing metastasis when the test expression level is assigned a low risk score.",
+        "12. The method of claim 11, wherein the test expression level is determined by microarray.",
+        "13. The method of claim 11, wherein the test expression level is determined by RT-PCR.",
+        "14. The method of claim 11, wherein the one or more miRNAs is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p.",
+        "15. The method of claim 11, wherein the renal cell carcinoma is clear cell renal cell carcinoma.",
+        "16. A method for predicting a prognosis in a clear cell renal cell carcinoma cancer patient comprising:\ndetecting a test expression level of a set of one or more miRNAs of a clear cell renal cell carcinoma-specific expression signature in a biological test sample from a subject having clear cell renal cell carcinoma;\nassigning a risk score to the test expression level; and\npredicting the a poor prognosis when the test expression level is assigned a high risk score; and predicting a good prognosis when the test expression level is assigned a low risk score.",
+        "17. The method of claim 16, wherein the prognosis is overall cancer survival.",
+        "18. The method of claim 16, wherein the test expression level is determined by microarray.",
+        "19. The method of claim 16, wherein the test expression level is determined by RT-PCR.",
+        "20. The method of claim 16, wherein the one or more miRNAs is selected from the group consisting of miR-10b, miR-139-5p, miR-130b and miR-199b-5p."
+    ]
+}

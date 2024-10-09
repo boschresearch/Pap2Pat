@@ -1,0 +1,20 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+### Influenza Vaccines
+
+### Structure and Function of the HA Protein
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Definitions
+
+### DETAILED DESCRIPTION
+
+### Example 1
+

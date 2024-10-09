@@ -1,0 +1,701 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERALLY SPONSORED R&D
+
+- disclose government rights
+
+## BACKGROUND
+
+### Field
+
+- define field of synthetic biology
+
+### Description of the Related Art
+
+- motivate population control circuits
+
+## SUMMARY
+
+- disclose nucleic acid compositions
+- define first polynucleotide encoding first synthase
+- define second polynucleotide encoding second synthase
+- define third polynucleotide encoding transporter
+- define fourth polynucleotide encoding signal-binding protein
+- define fifth polynucleotide encoding first fusion protein
+- define sixth polynucleotide encoding second fusion protein
+- define seventh polynucleotide encoding third fusion protein
+- describe nucleic acid composition with multiple polynucleotides
+- specify target protein diminishing immune cell function
+- specify target protein as activity regulator
+- specify activity regulator reducing T cell activity
+- list ubiquitin ligases involved in TCR/CAR signal transduction
+- list negative regulatory enzymes
+- list negative regulatory scaffold/adapter proteins
+- list dominant negative versions of activating TCR signaling components
+- specify cytoplasmic tail of negative co-regulatory receptor
+- describe regulation of payload by orthogonal signal
+- define payload protein with degron and cut site
+- specify protease capable of cutting payload protein
+- list types of payload proteins and cytokines
+- define CAR and TCR
+- describe antigen binding domain
+- list tumor antigens
+- describe transmembrane domain
+- describe intracellular signaling domain
+- list primary signaling domains
+- list costimulatory domains
+- describe antigen binding domain structure
+- list antibody fragments
+- describe hinge region
+- list transmembrane domains
+- describe leader peptide
+- describe constant region and CDR4
+- list payload protein activities
+- list nuclease activities
+- list DNA modification activities
+- list other enzymatic activities
+- describe CRE recombinase
+- describe GCaMP
+- describe cell therapy components
+- describe knock-down gene therapy components
+- describe cell-surface exposed epitopes
+- describe diagnostic agents
+- list fluorescent proteins
+- summarize programmable nuclease
+- list examples of programmable nucleases
+- describe nucleic acid composition
+- detail targeting molecule
+- describe payload encoding cellular reprogramming factor
+- describe payload encoding cellular differentiation factor
+- describe orthogonal signal triggering permanent switch
+- describe recombinase-based permanent switch
+- detail recombinase and recombination event
+- describe stop cassette
+- describe payload transcript translation
+- describe stop sequence
+- list examples of recombinases
+- describe first synthase
+- describe second synthase
+- describe transporter
+- describe first precursor molecule
+- describe orthogonal signal
+- describe signal-binding protein
+- describe signal-responsive domain
+- describe plant hormone
+- list examples of plant hormones
+- describe pro-growth protein
+- list examples of pro-growth proteins
+- define pro-death proteins
+- list pro-death proteins
+- describe pro-death protein capabilities
+- describe pro-death protein combinations
+- introduce tandem gene expression elements
+- list tandem gene expression elements
+- describe promoter capabilities
+- list ubiquitous promoters
+- describe signal-binding protein capabilities
+- describe transcript stabilization elements
+- describe evolutionary stability
+- introduce orthogonal signal information
+- describe expression and activity responsiveness
+- describe synthetic protein circuit components
+- describe immune cell stimulation
+- describe diagnostic agents
+- introduce nucleic acid compositions
+- describe vector types
+- introduce compositions
+- describe composition components
+- introduce populations of cells
+- describe sender cells and receiver cells
+- describe cell population control
+- describe orthogonal signal capabilities
+- introduce therapeutic program
+- describe cell population configuration
+- detail critical orthogonal signal threshold
+- describe cell differentiation
+- describe cell state switching
+- describe population size and density control
+- describe tuned cell population size and density range
+- describe modulation of thresholds
+- describe difference between thresholds
+- describe therapeutic program activation
+- describe payload expression
+- describe immune cell activation
+- describe detector cells
+- describe killer cell types
+- describe cell differentiation
+- describe cell state switching
+- describe synthetic organogenesis and tissue repair
+- describe evolutionary robustness
+- describe eukaryotic cell types
+- describe stem cell types
+- describe targeting moieties
+- describe local critical cell population size and density threshold
+- describe targeting moieties selection
+- describe antibody or antigen-binding fragment
+- describe targeting moieties binding
+- describe CD antigens
+- describe other antigens
+- describe receptors
+- describe ligands
+- describe hormones
+- describe cofactors
+- describe vitamins
+- describe steroids
+- describe nucleic acids
+- describe other targeting moieties
+- outline treatment method
+- variations of treatment method
+- define target site
+- specify tissue types
+- list cancer types
+- describe disease associated with tumor antigen
+- list additional agents
+- specify protein phosphatase inhibitors
+- specify kinase inhibitors
+- specify cytokines
+- specify immune modulators
+- specify chemotherapeutics
+- specify hormone or growth factor antagonists
+- specify alkylating agents
+- specify TLR agonists
+- specify cytokine antagonists
+- specify checkpoint inhibitor antibodies
+- list alkylating agents
+- list antimetabolites
+- list vinca alkaloids
+- list platinum-based agents
+- list anthracyclines
+- list topoisomerase inhibitors
+- list taxanes
+- list antibiotics
+- list immunomodulators
+- list immune cell antibodies
+- list interferons
+- list interleukins
+- list HSP90 inhibitors
+- list anti-androgens
+- list antiestrogens
+- list anti-hypercalcaemia agents
+- list apoptosis inducers
+- list Aurora kinase inhibitors
+- list Bruton's tyrosine kinase inhibitors
+- list other inhibitors
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+- reference to accompanying drawings
+- define scope of disclosure
+- incorporate patents and publications by reference
+- disclose nucleic acid compositions
+- describe first polynucleotide encoding first synthase
+- describe second polynucleotide encoding second synthase
+- describe third polynucleotide encoding transporter
+- describe fourth polynucleotide encoding signal-binding protein
+- describe fifth polynucleotide encoding first fusion protein
+- describe sixth polynucleotide encoding second fusion protein
+- describe seventh polynucleotide encoding third fusion protein
+- disclose compositions comprising nucleic acid compositions
+- disclose populations of cells comprising nucleic acid compositions
+
+### Definitions
+
+- define nucleic acid and polynucleotide
+- define vector
+- define construct
+- define plasmid
+- define element
+- define regulatory element
+- define promoter
+- define enhancer
+- define operably linked
+- define subject
+- define mammal
+- define treatment
+- define effective amount
+- define pharmaceutically acceptable
+- define antibody fragment
+- define autologous
+- define allogeneic
+- define stimulation
+- define 2A sequences
+- define synthetic mammalian signaling circuits
+- define quorum sensing
+- define orthogonal signal
+- define negative feedback circuit
+- define paradoxical regulatory architecture
+- define evolutionarily robust population control
+
+### Synthetic Mammalian Signaling Circuits for Robust Cell Population Control
+
+- introduce synthetic mammalian signaling circuits
+- describe quorum sensing system
+- describe orthogonal signal
+- describe negative feedback circuit
+- describe paradoxical regulatory architecture
+- describe population control
+- describe directional cell-cell communication
+- describe communication between groups of different cell types
+- describe engineered consortia of multiple cell types
+- describe population size and density sensing
+- describe population control with negative feedback
+- describe evolutionary robust population control
+- describe population-level behavior activation
+- describe population-level density-dependent differentiation
+- describe cell state switching
+
+### Circuit Components
+
+- define nucleic acid compositions
+- describe first polynucleotide encoding first synthase
+- describe second polynucleotide encoding second synthase
+- describe third polynucleotide encoding transporter
+- describe fourth polynucleotide encoding signal-binding protein
+- describe fifth polynucleotide encoding first fusion protein
+- describe sixth polynucleotide encoding second fusion protein
+- describe seventh polynucleotide encoding third fusion protein
+- describe two or more nucleic acid compositions
+- describe signal-binding protein binding orthogonal signal
+- describe signal-binding protein reducing stability of protein
+- describe fifth, sixth, and seventh polynucleotides operably linked to tandem gene expression element
+- describe first promoter operably linked to fifth, sixth, and seventh polynucleotides
+- describe first promoter inducing transcription of fifth, sixth, and seventh polynucleotides
+- describe polycistronic transcript capable of being translated
+- describe nucleic acid comprising regulatory element for expression of synthetic protein circuit
+- describe vector for transferring exogenous genes into target cells
+- describe integrating vectors
+- describe non-integrating vectors
+- describe Epstein Barr oriP/Nuclear Antigen-1 vector
+- describe adenoviral vector and adeno-associated viral vector
+- describe single-strand negative-sense RNA viral vectors
+- describe minicircle vector
+- describe viral vector with regulatory sequence for translation of multiple proteins
+- describe internal ribosome entry site (IRES) and 2A self-processing sequence
+- describe F2A sequence with standard furin cleavage site
+- describe regulatory control elements influencing expression of RNA and protein products
+- describe promoter, enhancer, and microRNA recognition sequence
+- describe transcription termination signal and polyadenylation sequence
+- describe tissue-specific expression control elements and promoters
+- describe ubiquitous or promiscuous promoters and enhancers
+- describe regulatable elements conferring expression in response to signal or stimuli
+- describe hormone inducible promoter
+- describe repressible element decreasing expression in response to signal or stimuli
+- describe composition comprising one or more vectors
+- describe viral vector, plasmid, naked DNA vector, lipid nanoparticle, or combination thereof
+- describe AAV vector, lentivirus vector, retrovirus vector, integration-deficient lentivirus vector
+- describe lentiviral vector with promoter, packaging signal, primer binding site, and transgene of interest
+- describe gammaretroviral vector with promoter, packaging signal, primer binding site, and transgene of interest
+- describe lentivirus vector with self-inactivating lentiviral vector
+- describe vector technology for gene transfer into mammalian cells
+- describe retroviral vector with promoter, packaging signal, primer binding site, and transgene of interest
+- describe adenovirus vector with promoter, packaging signal, primer binding site, and transgene of interest
+- describe nucleic acid composition with single-stranded or double-stranded nucleic acid
+- describe nucleic acid composition with two or more nucleic acids
+- describe permanent switch in receiver cell triggered by orthogonal signal
+- describe recombinase-based permanent switch
+- describe recombinase catalyzing recombination event
+- describe payload transcript capable of being translated to generate payload protein
+
+### Orthogonal Signals
+
+- define orthogonal signal
+- describe properties of orthogonal signal
+- list examples of orthogonal signal molecules
+- specify first synthase and second synthase
+- identify transporter and precursor molecules
+- describe signal-binding protein and signal-responsive domain
+- provide examples of plant hormones
+- list specific types of plant hormones
+
+### Target Proteins & Payload Proteins
+
+- define target protein
+- describe payload protein regulation
+- introduce protease-based payload regulation
+- detail cage polypeptide structure
+- describe key polypeptide function
+- introduce synthetic protein circuit components
+- describe BiTE payload
+- introduce orthogonal signal triggers
+- list payload protein activities
+- describe CRE recombinase payload
+- introduce diagnostic agent payloads
+- describe target protein and payload protein immune cell function
+- introduce activity regulators
+- describe ubiquitin ligase activity regulators
+- list negative regulatory enzymes
+- describe negative regulatory scaffold/adapter proteins
+- introduce dominant negative TCR signaling components
+- describe cytoplasmic tail-based activity regulators
+- introduce prodrug-converting enzymes
+- describe payload RNA agents
+- list cytokine payloads
+- describe TGF-β/BMP family payloads
+- introduce programmable nuclease payloads
+- define target proteins
+- list therapeutic proteins
+- describe active fragments
+- describe fusion proteins
+- describe multi-subunit proteins
+- describe antibodies
+- describe pro-survival proteins
+- describe apoptotic factors
+- describe cellular reprogramming factors
+- describe programming factors
+- describe human adjuvant proteins
+- describe methods to improve expression efficiency
+- describe degree of protein expression
+- describe amount of protein in serum
+- describe length of payload protein
+- describe number of payload genes
+- describe length of payload genes
+- provide examples of payload proteins
+- describe payload proteins as therapeutic proteins
+- describe payload proteins as active fragments
+- describe payload proteins as fusion proteins
+- describe payload proteins as multi-subunit proteins
+- describe payload proteins as antibodies
+- describe payload proteins as pro-survival proteins
+- describe payload proteins as apoptotic factors
+- describe payload proteins as cellular reprogramming factors
+- describe payload proteins as programming factors
+- describe payload proteins as human adjuvant proteins
+- define target proteins
+- define payload proteins
+- describe chimeric antigen receptors
+- define CAR components
+- describe CAR structure
+- describe CAR signaling domains
+- define costimulatory molecules
+- describe costimulatory molecule functions
+- describe primary intracellular signaling domains
+- describe costimulatory intracellular signaling domains
+- describe CAR intracellular signaling domains
+- describe truncated intracellular signaling domains
+- describe CAR leader sequences
+- describe CAR constant regions
+- describe CAR CDR4
+- describe CAR signaling motifs
+- describe ITAM-containing primary cytoplasmic signaling sequences
+- describe CAR costimulatory domains
+- describe CAR costimulatory intracellular signaling domains
+- describe CAR linker molecules
+- describe glycine linker residues
+- describe alanine linker residues
+- describe CAR antibody fragments
+- describe single domain antibody fragments
+- describe single chain antibodies
+- describe humanized antibodies
+- describe bispecific antibodies
+- describe CAR antigen binding domains
+- define target proteins & payload proteins
+- describe CAR-mediated T-cell response
+- introduce antigen binding domain
+- list types of antigen binding domains
+- describe T cell receptor (TCR) as antigen binding domain
+- introduce multispecific antibody molecule
+- describe bispecific antibody molecule
+- define tumor antigen
+- describe solid tumor antigen
+- list examples of tumor antigens
+- describe tumor antigen selection
+- introduce CARs with antigen binding domain
+- describe MHC presented peptide
+- introduce TCR-like antibody
+- describe tumor antigen expression
+- describe tumor antigen selection criteria
+- list additional tumor antigens
+- introduce hinge region
+- describe transmembrane domain
+- list transmembrane domain sources
+- describe transmembrane domain modification
+- introduce homodimerization
+- describe transmembrane domain interaction minimization
+- describe transmembrane domain amino acid sequence modification
+- introduce transmembrane domain from T-cell receptor
+- introduce transmembrane domain from CD28
+- introduce transmembrane domain from CD3 epsilon
+- introduce transmembrane domain from CD45
+- introduce transmembrane domain from CD4
+- introduce transmembrane domain from CD5
+- introduce transmembrane domain from CD8
+- introduce transmembrane domain from CD9
+- introduce transmembrane domain from CD16
+- introduce transmembrane domain from CD22
+- introduce transmembrane domain from CD33
+- introduce transmembrane domain from CD37
+
+### Pro-Growth Proteins and Pro-Death Proteins
+
+- define pro-growth proteins
+- list examples of pro-growth proteins
+- define pro-death proteins
+- list examples of pro-death proteins
+- describe pro-death protein function
+- introduce suicide genes and prodrugs
+- provide examples of suicide gene/prodrug combinations
+
+### Cell Populations
+
+- define cell populations
+- describe sender cells
+- describe receiver cells
+- describe sender-receiver cells
+- motivate orthogonal signal
+- describe secretion of orthogonal signal
+- describe sensing of orthogonal signal
+- describe shared orthogonal signal pool
+- describe expression of synthases and transporters
+- describe expression of signal-binding proteins and fusion proteins
+- motivate modulation of synthases and transporters
+- describe tuned orthogonal signal range
+- describe therapeutic program activation
+- describe immune cell activation
+- describe cell differentiation
+- describe cell state switching
+- define cell populations
+- describe cell population size and/or density control
+- motivate therapeutic program activation
+- describe immune cell activation
+- describe cell differentiation
+- describe cell state switching
+- describe synthetic organogenesis and/or tissue repair
+- describe evolutionary robustness to mutations
+- describe eukaryotic cell types
+- describe stem cell types
+- introduce targeting moieties
+- describe targeting moieties binding to target site components
+- describe local critical cell population size and/or density threshold
+- list targeting moieties
+- describe antibody or antigen-binding fragment thereof
+- list antibody or antigen-binding fragment thereof types
+- describe targeting moieties binding to CD antigens
+- list CD antigens
+- describe targeting moieties binding to other antigens
+- list other antigens
+- describe targeting moieties binding to receptors
+- list receptors
+- describe targeting moieties binding to enzymes
+- list enzymes
+- describe targeting moieties binding to hormones
+- list hormones
+- describe targeting moieties binding to vitamins
+- list vitamins
+- describe targeting moieties binding to cofactors
+- list cofactors
+- describe targeting moieties binding to nucleic acids
+- list nucleic acids
+- describe targeting moieties binding to lipids
+- list lipids
+
+### Methods of Treating a Disease or Disorder
+
+- introduce method for treating disease or disorder
+- isolate cells from subject
+- introduce nucleic acid composition into cells
+- administer population of cells to subject
+- specify subject as mammal
+- specify disease associated with tumor antigen
+- list various types of cancer
+- list various types of hematologic cancer
+- specify autoimmune disease
+- list various autoimmune diseases
+- administer precursor molecule or exogenous agent
+- modulate population size/density of engineered cells
+- specify administration methods
+- specify therapeutically effective amount of engineered cells
+- include engineered cells in pharmaceutical composition
+- administer pharmaceutical composition to subject
+- describe ex vivo procedure for generating engineered cells
+- define target site
+- describe target site characteristics
+- specify tissue types
+- detail cancerous tissue types
+- provide percentage of engineered cells
+- describe ratio of payload protein concentration
+- list specific ratio values
+- specify minimum and maximum ratio values
+- conclude target site description
+- define target site
+- specify target cells
+- describe cell death ratio
+- provide ratio ranges
+- introduce additional agents
+- introduce method of treating disease or disorder
+- administer additional agents to subject
+- describe additional agents
+- list alkylating agents
+- list antimetabolites
+- list vinca alkaloids
+- list platinum-based agents
+- list anthracyclines
+- list topoisomerase inhibitors
+- list taxanes
+- list antibiotics
+- list immunomodulators
+- list immune cell antibodies
+- list interferons
+- list interleukins
+- list HSP90 inhibitors
+- list anti-androgens
+- list antiestrogens
+- list anti-hypercalcaemia agents
+- list apoptosis inducers
+- list Aurora kinase inhibitors
+- list Bruton's tyrosine kinase inhibitors
+- list calcineurin inhibitors
+- list CaM kinase II inhibitors
+- list CD45 tyrosine phosphatase inhibitors
+- list various other inhibitors
+
+## EXAMPLES
+
+- provide examples
+
+### Example 1
+
+- introduce synthetic mammalian quorum sensing circuits
+- motivate population control in multicellular organisms
+- describe limitations of current approaches
+- introduce auxin as a private communication system
+- summarize benefits of auxin
+- describe ectopic expression of osTIR1
+- explain auxin-dependent degradation of proteins
+- introduce bacterial indole-3-acetic acid hydrolase
+- describe controlled production of auxin
+- motivate paradoxical population control circuits
+- describe limitations of current approaches
+- introduce auxin pathway as a private mammalian communication channel
+- describe construction of synthetic population control circuits
+- compare negative feedback and paradoxical control systems
+- summarize results of population control circuits
+- introduce engineered mammalian cell lines
+- describe auxin sensing and response
+- validate auxin regulation of mCherry-AID-BlastR
+- describe auxin synthesis in two enzymatic steps
+- identify efficient indole-3-acetamide hydrolases
+- describe Sender-Receiver cell line
+- demonstrate auxin production from precursors
+- estimate spatial range of auxin signaling
+- describe long-range gradient of auxin response
+- demonstrate quorum sensing in Sender-Receiver cells
+- summarize results of quorum sensing experiments
+- introduce Paradaux cell line
+- describe negative autoregulatory feedback loop
+- motivate paradoxical circuit architecture
+- explain Allee effect
+- describe non-paradoxical negative feedback architecture
+- compare responses to cheater mutations
+- design paradoxical circuit
+- add parallel regulatory pathway
+- encode Paradaux circuit
+- integrate construct to create stable monoclonal cell lines
+- demonstrate individual functionality of circuit branches
+- produce biphasic survival curve
+- develop mathematical model of Paradaux circuit
+- derive approximate model based on two differential equations
+- assume auxin production and dilution
+- describe cell growth using generalized logistic function
+- constrain biochemical parameter values
+- fit remaining parameters using auxin-dependent survival rates
+- add phenomenological synergistic interaction term
+- check agreement with second Paradaux monoclonal cell line
+- scan for AP1903 and blasticidin concentrations favoring paradoxical control
+- classify dependence of cell survival on auxin
+- identify paradoxical regime
+- explore effect of time delay on population density oscillations
+- experimentally analyze population control
+- demonstrate robustness of paradoxical population control architecture
+- introduce time-lapse imaging experiment
+- describe paradoxical population control architecture
+- analyze fluorescence of mCherry and mGFP
+- compare circuit component expression
+- describe effects of negative feedback conditions
+- describe effects of paradoxical feedback conditions
+- analyze survival of cells
+- explain design of paradoxical architecture
+- describe RNA sequencing analysis
+- analyze gene expression changes
+- describe time-course movie experiment
+- analyze dynamics of paradoxical feedback model
+- describe negative feedback population control circuit
+- analyze circuit dynamics and stability
+- describe appearance of cheater mutations
+- analyze resistance to blasticidin
+- sequence integrated osTIR1/BlastR-AID-mCherry plasmid
+- describe paradoxical architecture's ability to suppress cheater mutants
+- discuss natural cytokine-based control circuits
+- describe engineering of simultaneous production and sensing of auxin
+- discuss quorum sensing and population control
+- describe construction of Paradaux circuit
+- compare operation of Paradaux circuit in different regimes
+- discuss limitations of negative feedback architecture
+- describe advantages of paradoxical design
+- discuss potential improvements to Paradaux circuit
+- describe auxin cell-cell communication system
+- discuss engineering of complex multi-cell type communication and control systems
+- describe potential applications of private communication channels
+- discuss incorporation of synthetic population control systems in engineered cell therapies
+- describe estimation of auxin diffusion coefficient
+- model one-dimensional diffusion
+- fit mCherry response curve to auxin and population
+- describe inverted Michaelis-Menten's equation
+- define ideal dynamic range
+- define loss to self-sensing
+- define loss to saturation
+- define actual dynamic range
+- conclude discussion of materials, methods, and supplementary text
+- define paradoxical population control circuit
+- describe biochemical reactions and assumptions
+- derive differential equations for iCasp9 and BlastR
+- describe blasticidin and AP1903 interactions
+- derive equations for blasticidin and AP1903 interactions
+- describe overall population dynamics using a generalized logistic function
+- derive equation for blasticidin-dependent growth rate
+- derive equation for iCasp9-dependent cell death rate
+- combine equations for growth rate and cell death rate
+- simplify description using time-scale separation
+- approximate system using singular perturbation theory
+- write R and C in terms of auxin concentration
+- define additional parameter combinations
+- substitute R and C into growth rate equation
+- verify validity of approximation using simulation
+- represent synergy between iCasp9 and blasticidin control
+- add synergistic interaction term to growth rate expression
+- perform parameter screening and stability analysis
+- compute Jacobian and eigenvalues for stability analysis
+- introduce experimental model and details
+- describe tissue culture and cell lines
+- outline method details
+- describe gene constructs
+- detail cell line engineering
+- describe flow cytometry
+- outline conditioned media
+- describe cell imaging
+- detail long-range gradient setup
+- describe bulk RNA sequencing of isolates
+- outline quantification and statistical analysis
+- describe confluence estimation
+- detail RNA-sequencing analysis
+- describe bootstrapping and significant tests
+- discuss limitations of embodiments
+- provide disclaimer for modifications
+- clarify use of plural and singular terms
+- define "open" terms
+- clarify claim language
+- discuss Markush groups
+- describe range disclosure
+- provide disclaimer for scope
+- discuss additional aspects and embodiments
+- provide disclaimer for illustration
+- describe transitional type between permissive and paradoxical
+- analyze unusual equilibrium points
+- discuss net growth rates
+- describe dynamics of curves
+- detail experimental methods
+- describe cell culturing
+- outline media refreshing methods
+- describe gene constructs and cloning
+- provide final disclaimer
+

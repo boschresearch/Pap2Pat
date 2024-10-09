@@ -1,0 +1,147 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to identifying codemixed text
+
+## BACKGROUND
+
+- describe prevalence of codemixed text
+- limitations of sentence level- and document level language identifiers
+- difficulties of human annotation
+
+## SUMMARY
+
+- receive codemixed text
+- segment text into tokens
+- extract features from each token
+- predict language probability distribution for each token
+- assign language to each token using greedy search
+- optional: extract features from adjacent tokens
+- optional: use character features
+- optional: use script features
+- optional: use lexicon features
+- extract character n-gram features
+- calculate frequency of character n-gram features
+- identify character script features
+- determine unicode value for character script features
+- assign character script type
+- query lexicon library
+- retrieve language probability distribution from lexicon library
+- use feed-forward neural network
+- use embedding layer
+- use hidden layer with ReLU
+- use output layer with softmax
+- optional: use assignment constraint
+
+## DETAILED DESCRIPTION
+
+- introduce codemixed text problem
+- motivate need for language identification
+- describe limitations of existing services
+- introduce two-stage process for language identification
+- describe first stage: predicting probability distribution
+- describe extracting features from tokens
+- describe using feed-forward neural network
+- describe outputting language distribution for each token
+- introduce second stage: assigning language labels
+- describe using decoder to assign language labels
+- describe greedy decoding strategy
+- describe applying global constraints
+- describe advantages over sequence-based models
+- introduce system architecture
+- describe user device and data processing hardware
+- describe language identifier and its components
+- describe parsing codemixed text into tokens
+- describe assigning language labels to tokens
+- describe transmitting codemixed text and language labels
+- describe using language labels in applications
+- describe user device and remote system interaction
+- describe language identifier on remote system
+- describe differences in storage requirements
+- describe using lexicon features for short inputs
+- describe omitting lexicon features for larger inputs
+- describe indirect generation of codemixed text
+- describe navigation query example
+- describe search query example
+- describe components of language identifier
+- describe parsing and extracting features from tokens
+- define character n-gram features
+- calculate frequency of character n-gram features
+- use feature hashing to control vocabulary size
+- extract character features from adjacent tokens
+- extract script features from tokens
+- store character script library
+- output final vector for each token
+- identify character script features
+- determine unicode value for character script features
+- assign character script type
+- extract lexicon features
+- store lexicon library
+- query lexicon library
+- retrieve language probability distribution
+- extract lexicon features from adjacent tokens
+- construct prefix lexicon library
+- query prefix lexicon library
+- retrieve language probability distribution for prefix
+- receive feature inputs by neural network model
+- predict probability distribution over possible languages
+- define feed-forward neural network model
+- configure embedding layer
+- configure hidden layer
+- configure output layer
+- describe greedy decoding strategy
+- apply assignment constraint
+- execute greedy decoding strategy
+- assign language labels
+- calculate score
+- compare language predictions
+- select language labels
+- output codemixed text
+- list example applications
+- describe language translator
+- describe content/sentiment analyzer
+- describe text to speech models
+- describe search result ranking
+- describe limitations of neural network model
+- describe grouped feature dropout strategy
+- train neural network model
+- evaluate accuracy of model
+- plot accuracy of model
+- train model on synthetic codemixed data
+- compare accuracy of models
+- describe EquiLID model
+- describe LanideNN model
+- describe Langid.py model
+- describe method of per-token language identification
+- receive codemixed text
+- segment codemixed text into tokens
+- extract features from tokens
+- predict language labels
+- assign language labels
+- output language labels
+- describe codemixed text processing method
+- extract features from tokens
+- predict language probability distribution
+- describe language identifier model architecture
+- assign language to tokens using greedy search
+- apply assignment constraint
+- define software application
+- describe example applications
+- introduce computing device
+- describe computing device components
+- explain memory and storage
+- describe high-speed and low-speed controllers
+- illustrate computing device forms
+- describe system implementation options
+- define computer-readable medium
+- explain machine-readable signal
+- describe programmable processor
+- outline computer program execution
+- describe special purpose logic circuitry
+- outline computer components
+- describe mass storage devices
+- outline computer readable media
+- describe user interaction options
+- conclude with implementation variations
+

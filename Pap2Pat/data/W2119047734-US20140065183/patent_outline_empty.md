@@ -1,0 +1,20 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## OBJECT OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+
+### Methods and Results
+
+### Mouse and Inoculation Schedule
+
+### Human Immunity
+
+### Variations
+

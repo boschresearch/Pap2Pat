@@ -1,0 +1,712 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- define glycogen storage disease type 1
+- describe GSD-Ia symptoms and complications
+- highlight limitations of current treatments
+
+## SUMMARY
+
+- introduce mRNA therapeutics for GSD-Ia treatment
+- describe mRNA encoding G6PC with modified nucleotides
+- outline LNP delivery system for mRNA
+- summarize pharmaceutical composition with mRNA and LNP
+- describe administration methods and dosages
+- outline therapeutic effects on G6PC activity and glycogen levels
+- describe reduction of liver glycogen and G6P levels
+- outline reduction of serum triglycerides
+- describe increase in blood glucose levels
+- summarize pharmaceutical composition with delivery agent
+- describe G6PC polypeptide sequence and ORF identity
+- outline mRNA with microRNA binding site and 3' UTR sequence
+- define mRNA structure
+- describe 5' UTR
+- describe 5' terminal cap
+- describe poly-A region
+- describe chemically modified nucleobases
+- describe human subject conditions
+- define polynucleotide structure
+- describe ORF sequence identity
+- describe stop codon
+- describe 3' UTR
+- describe miR binding site
+- describe miR binding site location
+- describe 3' UTR sequence identity
+- define mRNA structure
+- describe 5' UTR
+- describe 3' UTR
+- describe poly-A region
+- describe chemically modified nucleobases
+- describe polynucleotide sequences
+- describe pharmaceutical composition
+- describe delivery agent
+- describe method of expressing G6PC polypeptide
+- describe method of treating GSD-Ia
+- describe method of increasing glucose blood level
+- describe method of reducing liver glycogen level
+- describe method of reducing serum triglyceride level
+- describe method of increasing G6PC activity
+
+## DETAILED DESCRIPTION
+
+- introduce GSD-Ia disease
+- motivate mRNA therapeutics for GSD-Ia treatment
+- limitations of mRNA therapeutics
+- embodiment of mRNA therapeutic technology
+
+### 1. Glucose-6-Phosphatase (G6PC)
+
+- define G6PC enzyme
+- describe G6PC protein structure
+- summarize G6PC mutations in GSD-Ia patients
+- application of G6PC polypeptides in mRNA therapeutics
+
+### 2. Polynucleotides and Open Reading Frames (ORFs)
+
+- introduce polynucleotides for GSD-I treatment
+- define G6PC polypeptides and variants
+- describe polynucleotides encoding G6PC polypeptides
+- specify sequence-optimized polynucleotides
+- describe polynucleotides with codon-optimized ORFs
+- introduce mutant G6PC polypeptides with altered activity
+- describe polynucleotides encoding functional G6PC fragments
+- define polynucleotides
+- describe G6PC fragments
+- specify G6PC enzymatic activity
+- describe ORF encoding G6PC polypeptide
+- specify sequence identity to SEQ ID NOs
+- describe nucleotide sequence length
+- describe noncoding nucleic acid sequences
+- describe 5'-UTR and 3'-UTR sequences
+- specify polynucleotide composition
+- describe poly-A-tail region
+- describe delivery agents
+- specify mRNA composition
+
+### 3. Signal Sequences
+
+- describe signal sequences for protein trafficking
+
+### 4. Fusion Proteins
+
+- describe fusion proteins with multiple ORFs
+
+### Linkers and Cleavable Peptides
+
+- introduce linkers and cleavable peptides
+- describe 2A peptides and their use
+- provide examples of 2A peptides
+- describe use of 2A peptides for protein separation
+
+### 5. Sequence Optimization of Nucleotide Sequence Encoding a G6PC Polypeptide
+
+- introduce sequence optimization
+- describe codon optimization methods
+- provide examples of sequence optimization tools
+- describe benefits of sequence optimization
+- describe sequence optimization for human subjects
+- provide methods for sequence optimization
+- describe features of sequence-optimized nucleotide sequences
+
+### 6. Sequence-Optimized Nucleotide Sequences Encoding G6PC Polypeptides
+
+- introduce sequence-optimized nucleotide sequences
+- provide examples of sequence-optimized G6PC sequences
+- describe structure of sequence-optimized polynucleotides
+- describe modifications to uracil or thymine content
+- describe methods for optimizing codon usage
+
+### 7. Characterization of Sequence Optimized Nucleic Acids
+
+- test sequence optimized nucleic acids
+- define expression property
+- evaluate sequence optimized nucleic acids functionally
+- optimize nucleic acid sequence intrinsic properties
+- optimize nucleic acid sequence for protein expression
+- optimize target tissue or target cell viability
+- reduce immune and/or inflammatory response
+
+### 8. Modified Nucleotide Sequences Encoding G6PC Polypeptides
+
+- define modified nucleotide sequences
+- introduce uracil-modified sequences
+- describe modified uridine
+- specify uracil content
+- describe adjusted uracil content
+- introduce G/C content adjustment
+- describe codon substitution
+- specify alternative codon frequency
+- describe expression levels
+- specify mammalian cell types
+- describe administration methods
+- specify expression level increases
+- describe mRNA stability
+- specify stability measurements
+- describe immune response reduction
+- specify innate immune response reduction
+- describe cell death reduction
+- specify cell types for immune response reduction
+- describe mRNA structure modification
+- specify nucleoside and nucleotide modifications
+- describe therapeutic compositions
+- specify modified nucleotides and nucleosides
+- define modified nucleotide sequences
+- describe embodiments of RNA nucleic acids
+- specify uniform modification of nucleic acids
+- describe percentage of modified nucleotides
+- introduce untranslated regions (UTRs)
+- describe cis-acting RNA elements
+- discuss internal ribosome entry sequences (IRES)
+- describe upstream open reading frames (uORFs)
+- introduce modified polynucleotides with functional RNA elements
+- describe desired translational regulatory activities
+- define modified nucleotide sequences
+- describe RNA elements with desired translational regulatory activity
+- identify RNA elements by primary sequence, secondary structure, location, or biological function
+- provide mRNA with structural modifications inhibiting leaky scanning
+- describe GC-rich RNA elements with specific sequence compositions
+- specify location of GC-rich RNA elements relative to Kozak consensus sequence
+- provide GC-rich RNA elements with repeating GC-motifs
+- describe modified mRNA with GC-rich RNA elements from Table 2
+- specify location of GC-rich RNA elements from Table 2 relative to Kozak consensus sequence
+- provide examples of GC-rich RNA elements, including V1, V2, and EK
+- describe 5' UTR sequences with GC-rich RNA elements
+- provide specific embodiments of modified mRNA with GC-rich RNA elements
+- define modified mRNA
+- describe GC-rich RNA element
+- specify location of stable RNA secondary structure
+- describe ribosome profiling technique
+- explain role of UTRs in translation initiation
+- describe features of natural 5'UTRs
+- discuss engineering UTRs for enhanced expression
+- provide examples of UTRs from various sources
+- describe selection of UTRs from families of transcripts
+- discuss heterologous UTRs
+- provide list of exemplary UTRs
+- describe variants of UTRs
+- discuss synthetic UTRs
+- describe multiple UTRs
+- introduce microRNA binding sites
+- define modified nucleotide sequences
+- introduce sensor sequences
+- describe miRNA binding sites
+- explain miRNA-mediated regulation
+- detail miRNA processing
+- define miRNA binding site complementarity
+- describe miRNA binding site variations
+- explain miRNA binding site function
+- discuss advantages of miRNA binding sites
+- provide examples of miRNA binding site applications
+- introduce miRNA regulation
+- describe miRNA expression patterns
+- motivate immune cell specific miRNAs
+- describe miR-142 binding site engineering
+- describe further negative regulatory elements
+- list immune cell specific miRNAs
+- describe liver specific miRNAs
+- describe lung specific miRNAs
+- describe heart specific miRNAs
+- describe nervous system specific miRNAs
+- describe pancreas specific miRNAs
+- describe kidney and muscle specific miRNAs
+- list miRNAs in endothelial cells
+- list miRNAs in epithelial cells
+- list miRNAs in embryonic stem cells
+- select miRNAs based on expression in immune cells
+- describe miRNAs in hematopoietic cells
+- describe miRNAs in B cells
+- describe miRNAs in progenitor hematopoietic cells
+- incorporate multiple miR binding sites
+- target multiple cell types with miRs
+- modulate immune responses with miRs
+- reduce immune cell activation with miRs
+- reduce anti-drug antibody response with miRs
+- modulate accelerated blood clearance with miRs
+- design miR binding sequences
+- define modified nucleotide sequences
+- describe miRNA binding sites
+- motivate auxotrophic polynucleotides
+- specify miRNA binding site sequences
+- describe insertion of miRNA binding sites
+- specify insertion sites for miRNA binding sites
+- describe miRNA binding site positioning
+- specify codon optimized open reading frames
+- describe 3' UTR and 5' UTR structures
+- specify multiple miRNA binding sites
+- describe polynucleotide composition
+- define miRNA binding sites
+- specify miR-142-3p binding site
+- specify miR-126 binding site
+- list non-limiting exemplary miR sequences
+- describe miRNA gene regulation
+- discuss influence of 5'UTR on miRNA mediated gene regulation
+- describe engineering of miRNA binding sites into 3'UTR
+- specify possible locations of miRNA binding sites in 3'UTR
+- describe control of polynucleotide expression using miRNA binding sites
+- discuss targeted expression in specific tissues or cell types
+- describe design of miRNA binding sites with varying identity to miRNA seed sequences
+- define 3'UTRs
+- specify 3'UTR sequences
+- describe function of 3'UTRs
+- describe 5' cap regions
+- introduce modified nucleotide sequences
+- describe cap moiety incorporation
+- explain non-hydrolyzable cap structure
+- describe modified guanosine nucleotides
+- introduce cap analogs
+- describe limitations of cap analogs
+- describe post-manufacture capping
+- introduce more authentic 5′cap structures
+- describe poly-A tails
+- explain polyadenylation process
+- describe terminal groups on poly-A tails
+- introduce alternative polyA tail structures
+- describe unique poly-A tail lengths
+- introduce start codon region
+- describe alternative start codons
+- explain masking agents near start codon
+- describe modified nucleotide sequences
+- define stop codon region
+- outline polynucleotide structure
+- provide exemplary G6PC nucleotide constructs
+- list specific SEQ ID NOs
+- define modified nucleotide sequences
+- describe polynucleotide constructs
+- specify uracil replacements
+- outline polynucleotide composition
+- provide methods of making polynucleotides
+- introduce modified nucleotide sequences
+- describe in vitro transcription/enzymatic synthesis
+- motivate RNA polymerase selection
+- describe RNA polymerase variants
+- discuss polynucleotide or nucleic acid synthesis reactions
+- describe DNA polymerase selection
+- discuss Syn5 RNA polymerase
+- describe chemical synthesis of polynucleotides
+- discuss purification of polynucleotides
+- define purification of polynucleotides
+- describe column chromatography purification
+- discuss effects of RP-HPLC purification on G6PC protein expression
+- discuss effects of RP-HPLC purification on functional G6PC protein expression
+- discuss effects of RP-HPLC purification on detectable G6PC activity
+- quantify polynucleotides
+- isolate exosomes
+- analyze polynucleotides
+- correlate with clinical phenotypes
+- isolate polynucleotides
+- quantify polynucleotides using UV/Vis
+- check degradation of polynucleotides
+- provide pharmaceutical compositions
+- formulate polynucleotides
+- prepare pharmaceutical compositions
+- package pharmaceutical compositions
+- describe pharmaceutical formulations
+- formulate polynucleotides with excipients
+- describe delivery agents
+- provide pharmaceutical formulations
+- introduce lipid compounds
+- describe delivery agents
+- outline lipid nanoparticle formulations
+- specify molar ratios of lipid components
+- define ionizable lipids
+- describe compounds of Formula (I)
+- specify subsets of compounds of Formula (I)
+- describe compounds of Formula (IA) and (IB)
+- describe compounds of Formula (II)
+- define modified nucleotide sequences
+- describe compounds of Formula (IId) and (IIg)
+- describe ionizable lipids
+- describe compounds of Formula (III)
+- describe phospholipids
+- describe phospholipid moieties
+- describe fatty acid moieties
+- describe functionalized phospholipids
+- describe phospholipid analogs and variants
+- define modified nucleotide sequences
+- describe phospholipid head modifications
+- describe phospholipid tail modifications
+- describe alternative lipids
+- describe structural lipids
+- describe polyethylene glycol (PEG)-lipids
+- describe PEG-lipid synthesis
+- describe PEG-modified lipids
+- describe PEG-DMG structure
+- describe PEG-OH lipids
+- describe compounds of Formula (V)
+- describe Formula (V) components
+- describe Formula (V) variables
+- define modified nucleotide sequences
+- specify PEG lipid compounds
+- describe lipid compositions
+- provide embodiments of LNPs
+- define lipid nanoparticle composition
+- describe alternative lipid composition
+- specify N:P ratio of lipid nanoparticle
+- specify wt/wt ratio of ionizable cationic lipid to RNA
+- describe mean diameter of lipid nanoparticle
+- define alkyl, alkenyl, and alkynyl groups
+- define carbocycle and heterocycle groups
+- define biodegradable group
+- describe optional substituents for alkyl, alkenyl, and cyclyl groups
+- describe conversion of nitrogen-containing compounds to N-oxides
+- describe other lipid composition components
+- specify ratio of lipid composition to polynucleotide
+- describe pharmaceutical composition with multiple polynucleotides
+- describe lipid:polynucleotide weight ratio
+- describe nanoparticle compositions
+- define nanoparticle compositions
+- describe lipid bilayer structure
+- list types of lipid bilayers
+- describe ionizable lipids
+- define charged moieties
+- describe methods for characterizing nanoparticle compositions
+- discuss size of nanoparticles
+- describe polydispersity index
+- discuss zeta potential
+- define encapsulation efficiency
+- describe methods for measuring encapsulation efficiency
+- discuss amount of polynucleotide in nanoparticle composition
+- describe N:P ratio
+- discuss optimization of N:P ratio
+- describe methods for producing lipid nanoparticles
+- introduce delivery agents
+- describe liposomes
+- discuss liposome design
+- explain liposome formation
+- describe cationic oil-in-water emulsion
+- describe water-in-oil emulsion
+- describe lipid-polycation complex
+- describe lipid nanoparticle formulations
+- list ionizable lipids
+- describe phospholipids
+- describe structural lipids
+- describe PEG-modified lipids
+- describe LNP formulations
+- motivate phosphate conjugates
+- summarize polymer conjugates
+- describe carbohydrate carriers
+- motivate surfactant coatings
+- describe mucus-penetrating LNPs
+- summarize surface-altering agents
+- describe hypotonic formulations
+- motivate lipoplex formulations
+- describe controlled release and targeted delivery
+- describe lipid nanoparticles
+- formulate polynucleotides in lipid nanoparticles
+- describe geometrically engineered particles
+- describe stealth nanoparticles
+- formulate polynucleotides with lipidoids
+- describe lipidoid synthesis
+- test lipidoid formulations
+- formulate polynucleotides with aminoalcohol lipidoids
+- describe hyaluronidase
+- formulate polynucleotides with hyaluronidase
+- describe nanoparticle mimics
+- formulate polynucleotides in nanoparticle mimics
+- describe self-assembled nanoparticles
+- formulate polynucleotides in self-assembled nanoparticles
+- describe cations and anions
+- formulate polynucleotides with cations and anions
+- describe modified mRNA formulation
+- introduce PLGA microspheres
+- describe EVAc polymers
+- describe Poloxamer F-407 NF
+- formulate polynucleotides with PEG grafted PLL
+- formulate polynucleotides with block copolymers
+- formulate polynucleotides with amine-containing polymers
+- formulate polynucleotides with biodegradable cationic lipopolymer
+- formulate polynucleotides with cyclodextrin polymer
+- formulate polynucleotides with crosslinked cation-binding polymers
+- formulate polynucleotides with PEGylated albumin polymer
+- describe nanoparticle formulation
+- describe core-shell nanoparticles
+- formulate polynucleotides with peptides and proteins
+- describe conjugates with carrier or targeting groups
+- describe conjugates with naturally occurring substances
+- describe conjugates with synthetic molecules
+- describe synergistic biomolecule-polymer conjugates
+- describe aptamer conjugates
+- describe accelerated blood clearance
+- introduce immune response to lipid nanoparticles
+- describe effectors produced by immune cells
+- explain role of B1a and B1b cells in immune response
+- describe conventional B cells and their response
+- motivate need to inhibit immune response
+- describe methods to inhibit immune response
+- introduce B1a inert compounds and compositions
+- introduce CD19 inert compounds and compositions
+- describe compounds and compositions that do not promote ABC
+- explain importance of lipid-comprising compounds and compositions
+- describe compositions that do not stimulate acute phase response
+- describe characteristics of B1a cells
+- describe characteristics of B1b cells
+- motivate need to block B1a and/or B1b cell activation
+- describe strategies to block B1a and/or B1b cell activation
+- describe role of pDC cells in ABC and toxicity
+- describe role of platelets in ABC and toxicity
+- introduce assays to measure ABC activity and related activities
+- introduce LNP binding/association to B cells
+- describe LNP uptake/internalization by B cells
+- motivate LNP compositions evading recognition by ABC
+- describe methods of use for reducing ABC
+- define LNP that does not promote ABC
+- describe relative reduction in activation or induction
+- introduce platelet effects and toxicity
+- describe coagulopathy and DIC
+- describe CARPA and acute phase response
+- describe platelet effects and LNP association
+- motivate polynucleotides for treating G6PC-related diseases
+- describe methods of use for reducing glycogen levels
+- describe methods of use for increasing glucose levels
+- describe administration of polynucleotides encoding G6PC
+- describe reduction in glucose-6-phosphate levels
+- describe increase in blood glucose homeostasis
+- describe alleviation of GSD-Ia symptoms
+- describe reduction in biomarkers of GSD-Ia
+- describe increase in biomarkers of GSD-Ia
+- motivate gene replacement therapy for GSD-Ia
+- describe sequence-optimized polynucleotides
+- describe administration of polynucleotides for treating GSD-Ia
+- introduce modified nucleotide sequences encoding G6PC polypeptides
+- describe administration of cells to mammalian subjects
+- detail pharmaceutical compositions and formulations
+- describe delivery agents and their mole ratios
+- discuss therapeutic effectiveness of drug or treatment
+- describe GSD-Ia disease characteristics
+- introduce G6PC protein expression levels
+- describe measurement of G6PC protein expression levels
+- detail exemplary methods for determining protein levels
+- describe expected results of mRNA therapy on G6PC protein expression levels
+- introduce G6PC protein activity
+- describe measurement of G6PC protein activity
+- detail exemplary methods for determining enzymatic activity levels
+- describe expected results of mRNA therapy on G6PC protein activity
+- introduce GSD-Ia biomarkers
+- describe determining levels of biomarkers
+- discuss comparing biomarker levels
+- define terms
+- describe reference levels
+- motivate biomarkers for GSD-Ia
+- describe biomarker levels
+- compare biomarker levels
+- describe reduction of biomarker levels
+- describe sustained reduction of biomarker levels
+- describe increase of biomarker levels
+- describe sustained increase of biomarker levels
+- describe mRNA therapy dosing
+- describe liver size as biomarker
+- describe biomarker measurement in fasting subjects
+- introduce compositions and formulations
+- define modified nucleotide sequences
+- describe composition and formulation
+- specify uracil or thymine content
+- outline forms of administration
+- list routes of administration
+- describe delivery agents
+- specify administration methods
+- outline pharmaceutical compositions
+- describe inactive ingredients
+- outline injectable preparations
+- describe sterile formulations
+- outline kits for protein production
+- describe kit components
+- outline devices for administration
+- describe multi-administration devices
+- outline methods and devices utilizing catheters, lumens, and electrical current
+- define modified nucleotide sequences encoding G6PC polypeptides
+- introduce methods and devices for delivering polynucleotides
+- define terms used in the application
+- explain singular and plural forms of terms
+- define "and/or" and its usage
+- specify default meanings of technical and scientific terms
+- define "comprising" and its variations
+- explain units, prefixes, and symbols
+- define numeric ranges and their inclusivity
+- explain combinations of elements and their exclusions
+- define nucleotides and their notation
+- define amino acids and their notation
+- explain "about" and its usage
+- define "administered in combination" and its variations
+- explain amino acid substitution and its notation
+- define various terms used in the application
+- define conservative amino acid substitution
+- define non-conservative amino acid substitution
+- define conserved
+- define controlled release
+- define cyclic or cyclized
+- define cytotoxic
+- define delivering
+- define delivery agent
+- define destabilized
+- define diastereomer
+- define digest
+- define distal
+- define domain
+- define various terms related to polynucleotides and proteins
+- define G6PC enzymatic activity
+- define helper lipid
+- define homology
+- define identity
+- describe calculation of percent identity
+- describe software for sequence alignment
+- describe immune response
+- define inflammatory response
+- define inflammatory cytokines
+- define in vitro
+- define in vivo
+- define insertional and deletional variants
+- define intact
+- define ionizable amino lipid
+- define isolated
+- define substantially isolated
+- define isomer
+- define linker
+- define nucleic acid
+- define nucleotide sequence encoding
+- define off-target
+- define open reading frame
+- define operably linked
+- define optionally substituted
+- define part of polynucleotide
+- define patient
+- define pharmaceutically acceptable
+- define pharmaceutically acceptable excipients
+- define pharmaceutically acceptable salts
+- define pharmaceutically acceptable solvate
+- define pharmacokinetic
+- define physicochemical
+- define polynucleotide
+- define polypeptide
+- define polypeptide variant
+- define polypeptide per unit drug
+- define various terms related to disease and treatment
+- define reference nucleic acid sequence
+- describe salts
+- define sample
+- explain signal sequence
+- describe signal transduction pathway
+- define similarity
+- explain single unit dose
+- describe split dose
+- define specific delivery
+- explain stable
+- describe stabilized
+- define stereoisomer
+- explain subject
+- describe substantially
+- define sustained release
+- define transfection
+- define treating, treatment, therapy
+- define unmodified
+- define uracil
+- define uridine content
+- define uridine-modified sequence
+- define high uridine codon
+- define uridine enriched
+- define uridine rarefied
+- define variant
+- define initiation codon
+- describe translation initiation
+- define Kozak sequence
+- define modified
+- define nucleobase
+- define nucleoside/nucleotide
+- define nucleic acid
+- define nucleic acid structure
+- define open reading frame
+- define RNA element
+
+## CONSTRUCT SEQUENCES
+
+- define G5
+
+## EXAMPLES
+
+### Example 1
+
+- describe triphosphate route for chimeric polynucleotide synthesis
+- describe synthetic route for chimeric polynucleotide synthesis
+
+### Example 2
+
+- describe PCR procedure for cDNA production
+
+### Example 3
+
+- describe in vitro transcription reaction for polynucleotide synthesis
+
+### Example 4
+
+- describe enzymatic capping of polynucleotide
+
+### Example 5
+
+- describe polyA tailing reaction for polynucleotide
+
+### Example 6
+
+- describe natural 5′ caps and 5′ cap analogues for polynucleotide synthesis
+
+### Example 7
+
+- describe capping assays for polynucleotide analysis
+- describe methods for evaluating capping reaction efficiency
+
+### Example 8
+
+- describe agarose gel electrophoresis for modified RNA or RT PCR products
+
+### Example 9
+
+- introduce Nanodrop UV absorbance readings
+- quantify yield of polynucleotides
+- describe TE buffer usage
+- formulate modified mRNA using lipidoids
+- describe in vitro experiment setup
+- introduce electrospray ionization
+- analyze biological samples
+- compare protein fragments to known controls
+- introduce matrix-assisted laser desorption/ionization
+- analyze biological samples
+- compare protein fragments to known controls
+- introduce liquid chromatography-mass spectrometry-mass spectrometry
+- analyze biological samples
+- compare protein fragments to known controls
+- synthesize mRNA encoding G6PC
+- characterize mRNA sequence
+- describe mRNA modification process
+- introduce G6Pase activity testing
+- test G6Pase activity of individual G6PC substitutions
+- analyze effect of S298C substitution on G6Pase activity
+- examine effect of Q139R and Q247R substitutions on G6Pase activity
+- codon optimize mRNA constructs
+- test G6Pase activity of codon optimized mRNA constructs
+- select codon optimized mRNA constructs for further study
+- introduce in vivo expression and activity of mRNA-encoded G6PC variants
+- test G6Pase activity of codon optimized mRNA constructs in vivo
+- analyze G6PC protein expression in vivo
+- assess duration of action of mRNA-encoded G6PC in a liver-specific knockout mouse model
+- test effect of mRNA-encoded G6PC on fasting blood glucose levels
+- analyze time course effect of mRNA-encoded G6PC on fasting blood glucose levels
+- assess dose response of mRNA-encoded G6PC in a liver-specific knockout mouse model
+- test effect of mRNA-encoded G6PC on fasting glucose levels at different doses
+- analyze liver weight and appearance after mRNA-encoded G6PC injection
+- examine effect of mRNA-encoded G6PC on hepatic glucose-6 phosphate and glycogen levels
+- analyze effect of mRNA-encoded G6PC on serum triglyceride and ALT levels
+- summarize results of mRNA-encoded G6PC injection in liver-specific knockout mouse model
+- show effects of mRNA encoding G6PC on serum lactate levels
+- show effects of mRNA encoding G6PC on liver lactate levels
+- show hepatic G6Pase activity and G6PC protein expression
+- conduct pharmacokinetic analysis of mRNA-encoded G6PC variants
+- analyze mRNA levels, protein expression, and G6PC activity over time
+- compare protein expression and G6PC activity between G6PC variants
+- assess sustained efficacy of mRNA-encoded G6PC in a liver-specific knockout mouse model
+- measure fed and fasting glucose levels after multiple injections
+- analyze liver weight and G6PC activity after multiple injections
+- test efficacy of different lipid nanoparticle formulations
+- measure blood glucose levels after injection of mRNA-encoded G6PC
+- test impact of miRNA-142 target sites on mRNA-encoded G6PC expression
+- analyze protein expression levels in liver and spleen samples
+- test in vitro expression of mRNA-encoded G6Pase in kidney cells
+

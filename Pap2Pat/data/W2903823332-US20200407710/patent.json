@@ -1,0 +1,985 @@
+{
+    "id": "US20200407710",
+    "authors": [
+        "Melina Claussnitzer",
+        "Liang He",
+        "Manolis Kellis",
+        "Xinchen Wang"
+    ],
+    "title": "METHODS FOR HIGH-RESOLUTION GENOME-WIDE FUNCTIONAL DISSECTION OF TRANSCRIPTIONAL REGULATORY REGIONS",
+    "date": "2018-10-17 00:00:00",
+    "abstract": "Embodiments disclosed herein provide a general, scalable, high-throughput, and high-resolution approach for experimental dissection of regulatory regions and driver nucleotides in the context of human biology and disease. Applicants present HiDRA, a novel high-resolution global screen for transcriptional regulatory activity in accessible chromatin regions, enabling high-efficiency, high-throughput, and high-resolution inference of regulatory activity.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The subject matter disclosed herein is generally directed to genome-wide methods of detecting regulatory regions, in particular enhancer regions."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 145,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Precise spatiotemporal control of gene expression is achieved by the interplay between non-coding regulatory elements, including distal enhancers and proximal promoters, and the transcriptional regulators they help recruit or repel, thus modulating the expression of nearby genes. Unlike protein-coding genes, which can be readily identified by their sequence properties and evolutionary signatures, gene-regulatory elements lack highly-predictive sequence patterns and show only modest evolutionary conservation at the nucleotide level. Thus, systematic recognition of gene-regulatory elements has relied on mapping of their epigenomic signatures, including DNA accessibility, histone modifications, and DNA methylation. For example, both enhancers and promoters have high DNA accessibility and low H3K27me3, but distal enhancers show relatively higher H3K27ac and H3K4me1 while promoters show relatively higher H3K9ac and H3K4me3. However, many regions showing such epigenomic marks do not experimentally drive reporter gene expression, and some regions driving gene expression lack endogenous signatures. Moreover, epigenomic signatures are often low-resolution, with important driver regulatory nucleotides comprising only a small subset of the larger regions showing epigenomic signatures.",
+                        "Experimental dissection of enhancer and promoter regions has been traditionally expensive, laborious, low throughput, and low-resolution, lacking the resolution to pinpoint individual regulatory driver nucleotides without recourse to extensive mutagenesis. Several high-throughput reporter assays for enhancer function have recently been developed, enabling the testing of tens of thousands of distinct DNA sequences simultaneously, including MPRA and CRE-Seq. These assays entail microarray-based oligonucleotide synthesis technology to generate the tested elements and their barcodes, cloning the oligonucleotides into a common episomal reporter vector, and using high-throughput sequencing to quantify expression. Technical limitations of oligonucleotide synthesis currently restrict the maximum tested DNA fragment length to 230 nucleotides, and the maximum number of tested constructs to 240,000 sequences per array. Although still limited in the number of target regions, Sharpr-MPRA enabled higher-resolution inferences by densely tiling target regions with multiple overlapping constructs, and exploiting subtle differences between the measured activity of neighboring constructs to achieve offset resolution (\u02dc5 bp) instead of construct resolution (\u02dc230 bp). STARR-Seq integrated random genomic fragments downstream of the transcription start site of episomal reporter genes, thus foregoing the oligo synthesis step and the need for barcodes as the tested elements were transcribed and serve as their own activity reporters. However, STARR-seq fragments are selected by random genomic fragmentation. As random genomic fragmentation does not densely cover regulatory elements, STARR-seq has limited efficiency and resolution at regulatory regions.",
+                        "Thus, there is a need for improved genome wide methods for identifying regulatory elements."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce gene regulation",
+                        "describe limitations of current methods",
+                        "explain epigenomic signatures",
+                        "discuss experimental dissection of enhancer and promoter regions",
+                        "describe high-throughput reporter assays",
+                        "highlight need for improved methods"
+                    ],
+                    "num_characters": 3144,
+                    "outline_medium": [
+                        "introduce gene regulation",
+                        "describe limitations of current methods",
+                        "motivate need for new approach"
+                    ],
+                    "outline_short": [
+                        "motivate need for improved methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Genome-wide epigenomic maps revealed millions of regions showing signatures of enhancers, promoters, and other gene-regulatory elements. However, high-throughput experimental validation of their function and high-resolution dissection of their driver nucleotides remain limited in their scale and length of regions tested. It is an objective of the present invention to provide a general, scalable, high-throughput, and high-resolution approach for experimental dissection of regulatory regions and driver nucleotides in the context of human biology and disease.",
+                        "Here, Applicants present a new method, HiDRA (High-resolution Dissection of Regulatory Activity, also known as High-Definition Reporter Assay), that overcomes prior limitations by combining components of Sharpr-MPRA and STARR-Seq with genome-wide selection of accessible regions from ATAC-Seq (e.g. \u201cATAC-STARR-seq\u201d). Applicants used HiDRA to test 7 million DNA fragments preferentially selected from accessible chromatin in the GM12878 lymphoblastoid cell line. By design, accessibility selected fragments were highly overlapping (up to 370 per region), enabling the pinpointing of driver regulatory nucleotides by exploiting subtle differences in reporter activity between partially-overlapping fragments, using a new machine learning model SHARPR2 (also known as SHARPR-RE (SHARPR-Random Endpoints)). The resulting maps included 65,000 regions showing significant enhancer function and were enriched for endogenous active histone marks (including H3K9ac, H3K27ac), regulatory sequence motifs, and regions bound by immune regulators. Within them, Applicants discovered 13,000 high-resolution driver elements enriched for regulatory motifs and evolutionarily-conserved nucleotides. Additionally, the maps could predict causal genetic variants underlying disease from genome-wide association studies (GWAS).",
+                        "In one aspect, the present invention provides for a method of identifying genomic enhancer regulatory elements comprising: fragmenting genomic DNA at accessible chromatin in a population of cells thereby generating genomic DNA fragments, wherein said fragmenting comprises transposition; amplifying the genomic DNA fragments; enriching the amplified genomic DNA fragments by size; integrating the enriched fragments into a vector to obtain a vector library, wherein the vector encodes a reporter gene and the enriched fragments are integrated into an untranslated region (UTR) of the reporter gene, whereby transcription of the reporter gene results in a transcript comprising the integrated fragment sequence; transfecting or transducing a cell line with the vector library, wherein the transcript comprising the integrated fragment sequences is expressed in the cell line; and sequencing the transcript expressed in the cell line, whereby integrated fragments comprising enhancer activity are identified. The amplified genomic DNA fragments may be selected for a size between about 150-500 nucleotides long. The amplified genomic DNA fragments may be selected for a size between about 230-500 nucleotides long. The enriched fragments may be integrated in a UTR downstream of the reporter gene.",
+                        "In one embodiment, the method may further comprise removing mitochondrial DNA from the genomic DNA fragments. The mitochondrial DNA may be removed by treating the genomic DNA fragments with a CRISPR system comprising guide sequences targeting mitochondrial DNA sequences, wherein mitochondrial DNA is cleaved. The mitochondrial DNA may be removed after enriching amplified fragmented genomic DNA by size and before integration of the enriched fragments.",
+                        "In one embodiment, the vector may be a plasmid. The vector may be a viral vector. The viral vector may be a lentiviral vector. The viral vector may be an integrating or non-integrating lentiviral vector.",
+                        "In one embodiment, identifying enhancer regulatory elements may comprise measuring the ratio of the number of RNA sequencing reads comprising a fragment to the representation of the fragment in the non-transfected vector library.",
+                        "In one embodiment, identifying enhancer regulatory elements comprises comparing a sequenced genomic fragment to the chromatin state of the genomic locus of the fragment in the cell line, wherein fragments present in an enhancer chromatin state are selected. The enhancer chromatin state may comprise H3K27ac (histone H3 lysine 27 acetylation) and H3K4me1 (histone H3 lysine 4 mono-methylation).",
+                        "In one embodiment, identifying enhancer regulatory elements comprises comparing a sequenced genomic fragment to Long-Terminal-Repeat (LTR) retrotransposon sequences, wherein LTR sequences are not selected.",
+                        "In one embodiment, the method according to any embodiment herein, may further comprise detecting expression of the reporter gene in the cell line and sorting the cells based on the reporter levels. Not being bound by a theory, a detectable reporter (e.g., GFP, YFP, RFP) may be used to sort cells based on expression. Not being bound by a theory, only sequencing cells that express the detectable marker may decrease sequencing cost.",
+                        "In one embodiment, the population of cells may be obtained from a tissue sample. In one embodiment, the population of cells may be a tissue specific cell line. In one embodiment, the population of cells is obtained by pooling cells or tissues from more than one individual. The individuals may be chosen to maximize genetic diversity at informative disease variants. The cells may comprise immune cells. The cells may comprise cancer cells. In one embodiment, the population of cells may be derived from the same cell line used for transfecting or transducing, whereby enhancer regulatory elements active in the cell line may be identified. In other words, fragments are obtained from a cell line to obtain a vector library and the vector library is assayed in the same cell line. Not being bound by a theory, different cell lines express different activators and repressors and have different chromatin states. Therefore, fragmenting accessible chromatin in a cell line may provide fragments that function optimally in the same cell line. Not being bound by a theory different regulatory elements may be identified by assaying a vector library in different cell types.",
+                        "In certain embodiments, nuclei are isolated from the population of cells before fragmenting genomic DNA. In certain embodiments, the present invention applies ATAC-seq to obtain fragments of genomic DNA present in accessible chromatin in a cell. The ATAC-seq protocol described herein utilizes a buffer that results in a crude nuclei preparation. In certain embodiments, tissue samples to be analyzed are frozen. As described herein, components of Div-seq can be used for single-nucleus isolation and RNA-Seq. Div-seq is compatible with frozen or fixed tissue. In certain embodiments, nuclei are isolated from frozen tissue and genomic fragments obtained from the isolated nuclei following the steps described herein.",
+                        "In certain embodiments, the genomic fragments are amplified by error-prone PCR. In certain embodiments, the fragments are amplified in an amplification reaction comprising a mutagen. Not being bound by a theory, mutations affecting regulatory activity of a fragment may be determined by introducing mutations during PCR amplification.",
+                        "In certain embodiments, the method may further comprise high-resolution mapping of driver elements of enhancer activity within identified enhancer regulatory elements by a method comprising comparing the fragment enrichment enhancer activity of a set of overlapping fragments represented in the vector library, whereby driver elements of enhancer activity are identified for enhancer regulatory elements. The driver element may comprise a minimum of 18 driver nucleotides. Not being bound by a theory the resolution of driver elements increases with increasing overlapping fragments, however after about 40 overlapping fragments the resolution does not extend past 18 driver nucleotides. In certain embodiments, comparing may comprise uploading the overlapping fragment sequences into a computing system and applying an algorithm, wherein the algorithm compares the fragment enrichment enhancer activity of the overlapping fragments. The algorithm may estimate regulatory scores for nucleotides in the identified set of overlapping fragments. The set of overlapping fragments may comprise at least 10 unique overlapping fragments. The method may further comprise identifying driver element variants. The driver element variants may comprise genome wide association (GWAS) variants. GWAS variants are available on public data bases and are well known in the art. Not being bound by a theory, GWAS variants with unknown function may be linked to a regulatory element or driver element using the present invention. The GWAS variants may be genetic variants associated with a disease. In certain embodiments, identifying driver element variants may comprise resequencing the input vector library using reads sufficiently long to identify sequence variants. Not being bound by a theory, RNA-seq may not provide reads long enough to identify sequence variants. The method may further comprise correlating driver element variants with a disease. Not being bound by a theory, new variants previously not associated with a disease may be identified.",
+                        "In another aspect, the present invention provides for a method of identifying genomic enhancer regulatory elements comprising: fragmenting genomic DNA in a population of cells, wherein the fragmented genomic DNA is fragmented to create fragments comprising overhanging ends; filling in the overhanging ends with at least one labeled nucleotide, wherein the labeled nucleotide is used to isolate the nucleic acids; joining the filled in ends of the fragmented genomic DNA, wherein the joined fragments comprise contact domains; isolating the joined genomic DNA fragments using the labeled nucleotide; amplifying the isolated joined genomic DNA fragments; integrating the amplified fragments into a vector to obtain an input vector library, wherein the vector encodes a reporter gene and the fragments are integrated into an untranslated region (UTR) of the reporter gene, whereby transcription of the reporter gene results in a transcript comprising the integrated fragment sequence; transfecting or transducing a cell line with the vector library; and sequencing the transcripts expressed in the cell line, whereby integrated fragments comprising enhancer activity may be identified. Not being bound by a theory, a regulatory sequence may depend upon a chromatin loop to be formed to bring two sequences together at a contact domain. The present invention may allow for identifying previously unknown regulatory sequences that function at contact domains. The genomic DNA fragments may be held in a fixed position relative to one another. The nucleic acids may be fixed in position relative to one another by crosslinking. The crosslinking may comprise treatment with a chemical crosslinker. The chemical crosslinker may comprise an aldehyde. The aldehyde may comprise formaldehyde. The method may further comprise reversing the crosslinking. Reversing the crosslinking may comprise contacting the sample with Proteinase K.",
+                        "In another aspect, the present invention provides for identifying repressor regulatory elements. In one embodiment, the reporter gene is constitutively expressed and integrated fragments having repressor activity are identified by measuring depletion of fragments in relation to their representation in the input vector library.",
+                        "In another aspect, the present invention provides for a system for identifying enhancer regulatory elements comprising a computing element configured for applying an algorithm as described herein to sequenced transcripts as described herein.",
+                        "These and other aspects, objects, features, and advantages of the example embodiments will become apparent to those having ordinary skill in the art upon consideration of the following detailed description of illustrated example embodiments.",
+                        "The figures herein are for illustrative purposes only and are not necessarily drawn to scale."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce HiDRA method",
+                        "describe genome-wide selection of accessible regions",
+                        "explain use of ATAC-Seq",
+                        "describe fragmenting genomic DNA",
+                        "amplify and enrich fragments",
+                        "integrate fragments into vector",
+                        "transfect or transduce cell line",
+                        "sequence transcripts",
+                        "identify enhancer regulatory elements",
+                        "describe SHARPR2 machine learning model",
+                        "map enhancer function",
+                        "enrich for endogenous active histone marks",
+                        "discover high-resolution driver elements",
+                        "predict causal genetic variants",
+                        "describe method of identifying genomic enhancer regulatory elements",
+                        "fragment genomic DNA",
+                        "amplify and enrich fragments",
+                        "integrate fragments into vector",
+                        "transfect or transduce cell line",
+                        "sequence transcripts",
+                        "identify enhancer regulatory elements",
+                        "describe variations of method",
+                        "describe high-resolution mapping of driver elements",
+                        "identify driver element variants"
+                    ],
+                    "num_characters": 12201,
+                    "outline_medium": [
+                        "introduce HiDRA method",
+                        "describe genome-wide selection of accessible regions",
+                        "explain use of ATAC-Seq and STARR-Seq",
+                        "describe machine learning model SHARPR2",
+                        "summarize results of HiDRA method",
+                        "describe identification of enhancer function",
+                        "describe identification of driver elements",
+                        "describe prediction of causal genetic variants",
+                        "outline method of identifying genomic enhancer regulatory elements",
+                        "describe fragmenting genomic DNA",
+                        "describe integrating fragments into vector library",
+                        "describe sequencing transcripts"
+                    ],
+                    "outline_short": [
+                        "summarize objective",
+                        "introduce HiDRA method",
+                        "describe HiDRA components",
+                        "outline HiDRA workflow",
+                        "highlight HiDRA advantages",
+                        "summarize results"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE EXAMPLE EMBODIMENTS",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "General Definitions",
+                            "paragraphs": [
+                                "Unless defined otherwise, technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this disclosure pertains. Definitions of common terms and techniques in molecular biology may be found in Molecular Cloning: A Laboratory Manual, 2nd edition (1989) (Sambrook, Fritsch, and Maniatis); Molecular Cloning: A Laboratory Manual, 4th edition (2012) (Green and Sambrook); Current Protocols in Molecular Biology (1987) (F. M. Ausubel et al. eds.); the series Methods in Enzymology (Academic Press, Inc.): PCR 2: A Practical Approach (1995) (M. J. MacPherson, B. D. Hames, and G. R. Taylor eds.): Antibodies, A Laboraotry Manual (1988) (Harlow and Lane, eds.): Antibodies A Laboraotry Manual, 2nd edition 2013 (E. A. Greenfield ed.); Animal Cell Culture (1987) (R. I. Freshney, ed.); Benjamin Lewin, Genes IX, published by Jones and Bartlet, 2008 (ISBN 0763752223); Kendrew et al. (eds.), The Encyclopedia of Molecular Biology, published by Blackwell Science Ltd., 1994 (ISBN 0632021829); Robert A. Meyers (ed.), Molecular Biology and Biotechnology: a Comprehensive Desk Reference, published by VCH Publishers, Inc., 1995 (ISBN 9780471185710); Singleton et al., Dictionary of Microbiology and Molecular Biology 2nd ed., J. Wiley & Sons (New York, N.Y. 1994), March, Advanced Organic Chemistry Reactions, Mechanisms and Structure 4th ed., John Wiley & Sons (New York, N.Y. 1992); and Marten H. Hofker and Jan van Deursen, Transgenic Mouse Methods and Protocols, 2nd edition (2011).",
+                                "As used herein, the singular forms \u201ca\u201d, \u201can\u201d, and \u201cthe\u201d include both singular and plural referents unless the context clearly dictates otherwise.",
+                                "The term \u201coptional\u201d or \u201coptionally\u201d means that the subsequent described event, circumstance or substituent may or may not occur, and that the description includes instances where the event or circumstance occurs and instances where it does not.",
+                                "The recitation of numerical ranges by endpoints includes all numbers and fractions subsumed within the respective ranges, as well as the recited endpoints.",
+                                "The terms \u201cabout\u201d or \u201capproximately\u201d as used herein when referring to a measurable value such as a parameter, an amount, a temporal duration, and the like, are meant to encompass variations of and from the specified value, such as variations of +/\u221210% or less, +/\u22125% or less, +/\u22121% or less, and +/\u22120.1% or less of and from the specified value, insofar such variations are appropriate to perform in the disclosed invention. It is to be understood that the value to which the modifier \u201cabout\u201d or \u201capproximately\u201d refers is itself also specifically, and preferably, disclosed.",
+                                "As used herein, a \u201cbiological sample\u201d may contain whole cells and/or live cells and/or cell debris. The biological sample may contain (or be derived from) a \u201cbodily fluid\u201d. The present invention encompasses embodiments wherein the bodily fluid is selected from amniotic fluid, aqueous humour, vitreous humour, bile, blood serum, breast milk, cerebrospinal fluid, cerumen (earwax), chyle, chyme, endolymph, perilymph, exudates, feces, female ejaculate, gastric acid, gastric juice, lymph, mucus (including nasal drainage and phlegm), pericardial fluid, peritoneal fluid, pleural fluid, pus, rheum, saliva, sebum (skin oil), semen, sputum, synovial fluid, sweat, tears, urine, vaginal secretion, vomit and mixtures of one or more thereof. Biological samples include cell cultures, bodily fluids, cell cultures from bodily fluids. Bodily fluids may be obtained from a mammal organism, for example by puncture, or other collecting or sampling procedures.",
+                                "The terms \u201csubject,\u201d \u201cindividual,\u201d and \u201cpatient\u201d are used interchangeably herein to refer to a vertebrate, preferably a mammal, more preferably a human. Mammals include, but are not limited to, murines, simians, humans, farm animals, sport animals, and pets. Tissues, cells and their progeny of a biological entity obtained in vivo or cultured in vitro are also encompassed.",
+                                "Various embodiments are described hereinafter. It should be noted that the specific embodiments are not intended as an exhaustive description or as a limitation to the broader aspects discussed herein. One aspect described in conjunction with a particular embodiment is not necessarily limited to that embodiment and can be practiced with any other embodiment(s). Reference throughout this specification to \u201cone embodiment\u201d, \u201can embodiment,\u201d \u201can example embodiment,\u201d means that a particular feature, structure or characteristic described in connection with the embodiment is included in at least one embodiment of the present invention. Thus, appearances of the phrases \u201cin one embodiment,\u201d \u201cin an embodiment,\u201d or \u201can example embodiment\u201d in various places throughout this specification are not necessarily all referring to the same embodiment, but may. Furthermore, the particular features, structures or characteristics may be combined in any suitable manner, as would be apparent to a person skilled in the art from this disclosure, in one or more embodiments. Furthermore, while some embodiments described herein include some but not other features included in other embodiments, combinations of features of different embodiments are meant to be within the scope of the invention. For example, in the appended claims, any of the claimed embodiments can be used in any combination.",
+                                "All publications, published patent documents, and patent applications cited herein are hereby incorporated by reference to the same extent as though each individual publication, published patent document, or patent application was specifically and individually indicated as being incorporated by reference."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define technical terms",
+                                "provide references for molecular biology techniques",
+                                "define singular and plural forms",
+                                "define \"optional\" and \"optionally\"",
+                                "define numerical ranges",
+                                "define \"about\" and \"approximately\"",
+                                "define \"biological sample\"",
+                                "define \"subject\", \"individual\", and \"patient\"",
+                                "describe embodiment structure",
+                                "describe feature combinations",
+                                "incorporate publications by reference"
+                            ],
+                            "num_characters": 5691,
+                            "outline_medium": [
+                                "define technical terms",
+                                "provide references for molecular biology techniques",
+                                "define singular and plural forms",
+                                "define \"optional\" and \"about\"",
+                                "define \"biological sample\" and \"subject\""
+                            ],
+                            "outline_short": [
+                                "define technical terms",
+                                "provide references for molecular biology techniques"
+                            ]
+                        },
+                        {
+                            "title": "Overview",
+                            "paragraphs": [
+                                "Embodiments disclosed herein provide a general, scalable, high-throughput, and high-resolution approach for experimental dissection of regulatory regions and driver nucleotides in the context of human biology and disease.",
+                                "The present disclosure includes methods for performing HiDRA (High-resolution Dissection of Regulatory Activity), a novel high-resolution global screen for transcriptional regulatory activity in accessible regions, enabling high-efficiency, high-throughput, and high-resolution inference of regulatory activity. The methods may comprise extracting accessible DNA regions from ATAC-Seq, size-selecting for constructs between about 150 and about 500 nt long, and inserting the selected constructs downstream of an episomal reporter gene to test their activity and exploit their overlapping nature for high-resolution inferences. The approach overcomes the construct-length and region count limitations of synthesis-based technologies, and the ATAC-seq selection of open chromatin regions concentrates the signal on likely regulatory regions and enables high-resolution inferences. Altogether, enhancer constructs of comparable length to low-throughput studies may be tested, achieving high resolution dissection of systematic perturbation. In some embodiments, the methods allow for testing millions of unique fragments in a single experiment.",
+                                "In some embodiments, HiDRA may be applied to infer genome-wide regulatory activity across \u02dc7 million DNA fragments, e.g., selected from accessible chromatin in the GM12878 lymphoblastoid cell line, resulting in \u02dc95,000 active fragments clustering in \u02dc65,000 regions showing significant regulatory function. These fragments may be enriched for endogenous active histone marks (including H3K9ac, H3K27ac), regulatory sequence motifs, and regions bound by immune regulators. The ATAC-based selection approach may result in highly-overlapping fragments, with up to 370 fragments per region, enabling pinpointing driver regulatory nucleotides. Overall, HiDRA may provide a general, scalable, high-throughput, high-resolution (\u02dc50 nucleotides) approach for experimental dissection of regulatory regions and driver nucleotides in the context of human biology and disease.",
+                                "In some embodiments, the methods for identifying genomic enhancer regulatory elements may comprise fragmenting DNA molecules; amplifying the fragments; enriching the amplified fragments; integrating the enriched fragments into a vector to obtain a vector library; introducing (e.g., by transfecting or transducing) the vector library in a population of cells, thereby generating transcripts of one or more vector in the library; sequencing the transcripts; and identifying transcripts that have enhancer activity.",
+                                "In certain embodiments, the methods for identifying genomic enhancer regulatory elements may comprise fragmenting DNA molecules to generate fragments with overhanging ends; filling in the overhanging ends with labeled nucleotide(s); joining the overhanging ends; isolating and amplifying the joined fragments; integrating the amplified fragments into a vector to generate a vector library, introducing (e.g., by transfecting or transducing) the vector library to a population of cells thereby generating transcripts of one or more vector in the library; sequencing the transcripts; and identifying transcripts that have enhancer activity."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce HiDRA approach",
+                                "describe HiDRA method",
+                                "highlight advantages of HiDRA",
+                                "describe application of HiDRA",
+                                "provide example results of HiDRA",
+                                "summarize HiDRA benefits"
+                            ],
+                            "num_characters": 3385,
+                            "outline_medium": [
+                                "introduce HiDRA approach",
+                                "describe HiDRA method",
+                                "highlight advantages of HiDRA"
+                            ],
+                            "outline_short": [
+                                "introduce HiDRA method for high-resolution dissection of regulatory regions and driver nucleotides"
+                            ]
+                        },
+                        {
+                            "title": "Nucleic Acids Fragmentation",
+                            "paragraphs": [
+                                "In certain embodiments, the methods herein comprise fragmenting nucleic acids from a population of cells. In some cases, the population of cells may be cells in a cell line. Any method of fragmenting DNA, such that fragments are derived from \u201copen\u201d (i.e., accessible) chromatin may be used. In preferred embodiments, transposition is used to fragment genomic DNA to obtain fragmented genomic DNA (tagmented fragments). Transposition is performed on a population of cells. The cells are preferably in a homogenous single cell suspension. Methods of obtaining a homogenous single cell suspension from a biological sample (e.g., cell culture, tissue sample, blood) are well known in the art. In certain embodiments, fragmenting genomic DNA at accessible chromatin is performed according to methods known in the art (see, e.g., Buenrostro et al., 2015, ATAC-seq).",
+                                "In an exemplary embodiment, fragmenting the nucleic acids comprises a method comprising transposition and PCR amplification. An exemplary protocol may include any of the following reagents or steps:"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe fragmenting nucleic acids",
+                                "provide example protocol for fragmenting"
+                            ],
+                            "num_characters": 1059,
+                            "outline_medium": [
+                                "describe fragmenting nucleic acids"
+                            ],
+                            "outline_short": [
+                                "describe methods for fragmenting nucleic acids from a population of cells"
+                            ]
+                        },
+                        {
+                            "title": "Materials",
+                            "paragraphs": [
+                                "- - Phosphate Buffered Saline (PBS)\n  - Molecular biology grade IGEPAL CA-630\n  - Lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl\u2082, 0.1%\n    IGEPAL CA-630)\n  - 2\u00d7TD (2\u00d7 reaction buffer, Illumina Cat \\#FC-121-1030)\n  - TDE1 (Nextera Tn5 Transposase, Illumina Cat \\#FC-121-1030)\n  - Qiagen MinElute PCR Purification Kit\n  - NEBNext High-Fidelity 2\u00d7PCR Master Mix (New England Labs Cat\n    \\#M0541)\n  - 25 uM Custom Nextera PCR Primer 1\n  - 25 uM Custom Nextera PCR Primer 2\n  - 100\u00d7SYBR Green I (Invitrogen Cat \\#S-7563)\n  - 0.2-ml PCR tubes\n  - PCR Thermal cycler  \n    qPCR consumables, products are specific to the instrument"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "list materials needed"
+                            ],
+                            "num_characters": 638,
+                            "outline_medium": [
+                                "list materials needed"
+                            ],
+                            "outline_short": [
+                                "list materials needed for fragmenting and amplifying nucleic acids"
+                            ]
+                        },
+                        {
+                            "title": "Cell Preparation",
+                            "paragraphs": [
+                                "- - 1. Harvest cells, protocol to be defined by the user.\n    - Cells should be intact and in a homogenous single cell suspension.\n  - 2. Spin down 50,000 cells at 500\u00d7g for 5 min, 4\u00b0 C.\n    - The number of cells at this step is crucial as the transposase to\n      cell ratio sets the distribution of DNA fragments generated. See\n      Critical Parameters.\n  - 3. Wash once with 50 \u03bcl of cold 1\u00d7PBS buffer. Spin down at 500\u00d7g for\n    5 min, 4\u00b0 C.\n  - 4. Gently pipette to resuspend the cell pellet in 50 \u03bcl of cold\n    lysis buffer. Spin down immediately at 500\u00d7g for 10 min, 4\u00b0 C.\n    - This step provides lysis of cells with non-ionic detergent and\n      generates of a crude nuclei preparation.\n  - 5. Discard the supernatant, and immediately continue to\n    transposition reaction."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe cell preparation steps"
+                            ],
+                            "num_characters": 785,
+                            "outline_medium": [
+                                "describe cell preparation steps"
+                            ],
+                            "outline_short": [
+                                "describe steps for preparing cells for transposition reaction"
+                            ]
+                        },
+                        {
+                            "title": "Transposition Reaction and Purification",
+                            "paragraphs": [
+                                "- - 1. Make sure the cell pellet is set on ice.\n  - 2. To make the transposition reaction mix, combine the following:\n    - 25 \u03bcl TD (2\u00d7 reaction buffer)\n    - 2.5 \u03bcl TDE1 (Nextera Tn5 Transposase)\n    - 22.5 \u03bcl Nuclease Free H\u2082O\n  - 3. Resuspend nuclei in the transposition reaction mix.\n  - 4. Incubate the transposition reaction at 37\u00b0 C. for 30 min.\n    - Gentle mixing may increase fragment yield.\n  - 5. Immediately following transposition, purify using a Qiagen\n    MinElute PCR Purification Kit.\n  - 6. Elute transposed DNA in 10 \u03bcl Elution Buffer (10 mM Tris buffer,\n    pH 8).\n  - 7. Purified DNA can be stored at 20\u00b0 C.\n    - This is a convenient stopping point. Please note that these DNA\n      fragments are not PCR amplifiable if melted at this point."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe transposition reaction and purification steps"
+                            ],
+                            "num_characters": 765,
+                            "outline_medium": [
+                                "describe transposition reaction and purification steps"
+                            ],
+                            "outline_short": [
+                                "describe transposition reaction and purification of transposed DNA"
+                            ]
+                        },
+                        {
+                            "title": "PCR Amplification",
+                            "paragraphs": [
+                                "- - 1. To amplify transposed DNA fragments, combine the following in a\n    0.2 ml PCR tube:\n    - 10 \u03bcl Transposed DNA\n    - 10 \u03bcl Nuclease Free H\u2082O\n    - 2.5 \u03bcl 25 \u03bcM Custom Nextera PCR Primer 1\n    - 2.5 \u03bcl 25 \u03bcM Custom Nextera PCR Primer 2 (Contains Barcode)\n    - 25 \u03bcl NEBNext High-Fidelity 2\u00d7PCR Master Mix\n      - A complete list of primers is available in Buenrostro et al.\n        Care should be taken to ensure that samples are barcoded\n        appropriately for subsequent pooling and sequencing.\n  - 2. Thermal cycle as follows:\n    - 1 cycle of 72\u00b0 C. for 5 min, 98\u00b0 C. for 30 sec\n    - 5 cycles of 98\u00b0 C. for 10 sec, 63\u00b0 C. for 30 sec, 72\u00b0 C. for 1 min\n      - This first 5 minute extension at 72\u00b0 C. is critical to allow\n        extension of both ends of the primer after transposition,\n        thereby generating amplifiable fragments (see figure). This\n        short pre-amplification step ensures that downstream\n        quantitative PCR (qPCR) quantification will not change the\n        complexity of the original library.\n  - 3. To reduce GC and size bias in PCR, the appropriate number of PCR\n    cycles is determined using qPCR allowing us to stop amplification\n    prior to saturation. To run a qPCR side reaction, combine the\n    following in qPCR compatible consumables:\n    - 5 \u03bcl of previously PCR amplified DNA\n    - 4.41 \u03bcl Nuclease Free H\u2082O\n    - 0.25 \u03bcl 25 \u03bcM Customized Nextera PCR Primer 1\n    - 0.25 \u03bcl 25 \u03bcM Customized Nextera PCR Primer 2\n    - 0.09 \u03bcl 100\u00d7SYBR Green I\n    - 5 \u03bcl NEBNext High-Fidelity 2\u00d7PCR Master Mix\n  - 4. Using a qPCR instrument, cycle as follows:\n    - 1 cycle of 98\u00b0 C. for 30 sec\n    - 20 cycles of 98\u00b0 C. for 10 sec, 63\u00b0 C. for 30 sec, 72\u00b0 C. for 1\n      min\n  - 5. To calculate the additional number of cycles needed, plot linear\n    Rn versus cycle and determine the cycle number that corresponds to \u00bc\n    of maximum fluorescent intensity.\n    - The purpose of this qPCR step is to generate libraries that are\n      minimally PCR amplified. Most PCR bias comes from later PCR cycles\n      that occur during limited reagent concentrations. This\n      determination of the optimal number of cycles to amplify the\n      library reduces artifacts associated with saturation PCR of\n      complex libraries.\n  - 6. Run the remaining 45 \u03bcl PCR reaction to the cycle number\n    determined by qPCR. Cycle as follows:\n    - 1 cycle of 98\u00b0 C. for 30 sec\n    - N cycles of 98\u00b0 C. for 10 sec, 63\u00b0 C. for 30 sec, 72\u00b0 C. for 1 min\n      - Cycle for an additional N cycles, where N is determined using\n        qPCR.\n  - 7. Purify amplified library using Qiagen MinElute PCR Purification\n    Kit. Elute the purified library in 20 \u03bcl Elution Buffer (10 mM Tris\n    Buffer, pH 8). Be sure to dry the column before adding elution\n    buffer.\n    - The concentration of DNA eluted from the column ought to be\n      approximately 30 nM however 5-fold variation is possible and not\n      detrimental."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe PCR amplification steps",
+                                "highlight importance of initial extension step",
+                                "describe qPCR quantification",
+                                "determine optimal PCR cycles",
+                                "describe final PCR amplification steps"
+                            ],
+                            "num_characters": 2941,
+                            "outline_medium": [
+                                "describe PCR amplification steps",
+                                "describe qPCR quantification"
+                            ],
+                            "outline_short": [
+                                "describe PCR amplification of transposed DNA fragments"
+                            ]
+                        },
+                        {
+                            "title": "Type of Nucleic Acids",
+                            "paragraphs": [
+                                "The nucleic acids herein may comprise DNA, RNA, a mixture thereof, or a hybrid thereof. The nucleic acids may be genomic nucleic acids, e.g., genomic DNA. Alternatively or additionally, the nuclei acids may comprise nucleic acids from a organelle, e.g., mitochondria, ribosomes, or plastids. In some examples, the nucleic acids may comprise mitochondrial DNA. In some examples, the nucleic acids may comprise a mixture of genomic DNA and mitochondrial DNA. In some examples, the nucleic acids may comprise genomic DNA fragmented at open chromatin (e.g., tagmentation)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe types of nucleic acids used"
+                            ],
+                            "num_characters": 568,
+                            "outline_medium": [
+                                "describe types of nucleic acids"
+                            ],
+                            "outline_short": [
+                                "describe types of nucleic acids that may be used in the methods"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Fragmentation",
+                            "paragraphs": [
+                                "The fragmentation can be done by a variety of methods, such as enzymatic and chemical cleavage. For example, DNA can be fragmented using an endonuclease that cuts a specific sequence of DNA and leaves behind a DNA fragment with a 5\u2032 overhang, thereby yielding fragmented DNA. In other examples an endonuclease can be selected that cuts the DNA at random spots and yields overhangs or blunt ends. In some embodiments, fragmenting the nucleic acid present in the one or more cells comprises enzymatic digestion with an endonuclease that leaves 5\u2032 overhanging ends. Enzymes that fragment, or cut, nucleic acids and yield an overhanging sequence are known in the art and can be obtained from such commercial sources as New England BioLabs\u00ae and Promega\u00ae. One of ordinary skill in the art can choose the restriction enzyme without undue experimentation. One of ordinary skill in the art will appreciate that using different fragmentation techniques, such as different enzymes with different sequence requirements, will yield different fragmentation patterns and therefore different nucleic acid ends. The process of fragmenting the sample can yield ends that are capable of being joined.",
+                                "**Nuclei Isolation**",
+                                "In some embodiments, the methods comprise isolating nuclei from the population of cells. The isolation of nuclei may be performed before fragmenting the nucleic acids. In certain embodiments, nuclei are isolated from the population of cells before fragmenting genomic DNA (e.g., a tissue sample). In certain embodiments, ATAC-seq as described herein is used to obtain fragments of genomic DNA present in accessible chromatin in a cell. The ATAC-seq protocol described herein utilizes a buffer that results in a crude nuclei preparation. In certain embodiments, tissue samples to be analyzed are frozen or fixed and nuclei are isolated from the frozen or fixed tissue. The nuclei isolated from frozen or fixed tissue may be processed according to a protocol described herein to obtain genomic fragments.",
+                                "**Fragment Length**",
+                                "The nucleic acid fragments may be from about 50 base pairs (bp) to 5000 bp in length. In some cases, the nucleic acid fragments may be from about 100 bp to about 1000 bp in length, although longer and shorter fragments are contemplated. In some embodiments, the nucleic acid fragments are from about 100 bp to about 1000 bp in length, such as about 100, about 150, about 200, about 250, about 300, about 350, about 400, about 450, about 500, about 550, about 600, about 650, about 700, about 750, about 800, about 850, about 900, about 950 or about 1000 base pairs in length, for example form about 100 to about 1000, about 200 to about 800, about 500 to about 850, about 100 to about 500 and about 300 to about 775 base pairs in length and the like. In specific examples, the nucleic acid fragments are selected for fragments that are between about 300 and 500 base pairs in length.",
+                                "**Overhang**",
+                                "In certain embodiments, nucleic acids, e.g., genomic DNA, are fragmented to yield nucleic acid fragments with overhanging ends, such as a 5\u2032 overhanging end or a 3\u2032 overhanging end. In some cases, the nucleic acids fragments have a 5\u2032 overhanging end on one end. In some cases, the nucleic acid fragments have a 3\u2032 overhanging end on one end. In some cases, the nucleic acid fragments have a 5\u2032 overhanging end on one end and a 5\u2032 overhanging end on another end. In some cases, the nucleic acid fragments have a 3\u2032 overhanging end on one end and a 3\u2032 overhanging end on another end. In some cases, the nucleic acid fragments have a 3\u2032 overhanging end on one end and a 5\u2032 overhanging end on another end.",
+                                "**Filling Overhang Ends**",
+                                "The methods may further comprise filling in one or more of the overhanging ends of the nucleic acid fragments with at least one nucleotide, e.g., labeled nucleotide. The overhanging ends may be filled in, for example using a DNA polymerase, such as available from a commercial source. The filled in nucleic acid fragments are thus blunt ended at the end filled 5\u2032 end. The at least one nucleotide filled in the fragments may be labeled nucleotide described herein that allow for capturing and detecting of the fragments.",
+                                "**Joining Overhang Ends**",
+                                "The fragments may be then end joined at the filled in end, for example, by ligation using a commercially available nucleic acid ligase, or otherwise attached to another fragment that is in close physical proximity. The ligation, or other attachment procedure, for example nick translation or strand displacement, creates one or more end joined nucleic acid fragments having a junction, for example a ligation junction, wherein the site of the junction, or at least within a few bases, includes one or more labeled nucleic acids, for example, one or more fragmented nucleic acids that have had their overhanging ends filled and joined together. While this step typically involves a ligase, it is contemplated that any means of joining the fragments can be used, for example any chemical or enzymatic means. Further, it is not necessary that the ends be joined in a typical 3\u2032-5\u2032 ligation.",
+                                "Typically, the end joined fragments are desired to be between about 100 and about 1000 bases in length, although longer and shorter fragments are contemplated. In some embodiments, the nucleic acid fragments are between about 100 and about 1000 bases in length, such as about 100, about 150, about 200, about 250, about 300, about 350, about 400, about 450, about 500, about 550, about 600, about 650, about 700, about 750, about 800, about 850, about 900, about 950 or about 1000 bases in length, for example form about 100 to about 1000, about 200 to about 800, about 500 to about 850, about 100 to about 500 and about 300 to about 775 base pairs in length and the like. In specific examples, end joined fragments are selected for fragments that are between about 300 and 500 base pairs in length.",
+                                "**Label and Cross-Link**",
+                                "To identify the created ligation junction, a labeled nucleotide may be used. In one example embodiment, one or more labeled nucleotides are incorporated into the ligated junction. For example, the overhanging ends may be filled in using a DNA polymerase that incorporates one or more labeled nucleotides during the filling in step described above.",
+                                "The nucleic acid fragments may be held in a fixed position relative to one another. In some examples, the nucleic acid fragments may be fixed in position relative one another by crosslinking. In some embodiments, the nucleic acid fragments are cross-linked, either directly, or indirectly, and the information about spatial relationships between the different nucleic acid fragments in the cell, or cells, is maintained during this joining step, and substantially all of the end joined nucleic acid fragments formed at this step were in spatial proximity in the cell prior to the crosslinking step. In certain embodiments, the spatial relationships in the cell is locked in, for example cross-linked or otherwise stabilized. For example, a sample of cells can be treated with a cross-linker to lock in the spatial information or relationship about the molecules in the cells, such as the DNA in the cell.",
+                                "In some embodiments, the methods further comprise reversing the crosslinking. In these cases, the crosslinking may be performed using a reversible crosslinking agent. In one example, reversing the crosslinking may be performed by contacting the sample with Proteinase K, e.g., at an elevated temperature, such as about 45\u00b0 C.",
+                                "**Methods/Reagents of Crosslinking**",
+                                "In some embodiments, the crosslinking is performed by treating the nucleic acid fragments with one or more crosslinking agents. As used herein the term \u201ccrosslinking agent\u201d refers to a chemical agent or even light, which facilitates the attachment of one molecule to another molecule. Crosslinking agents can be protein-nucleic acid crosslinking agents, nucleic acid-nucleic acid crosslinking agents, and protein-protein crosslinking agents. Examples of such agents are known in the art. In some embodiments, a crosslinking agent is a reversible crosslinking agent. In some embodiments, a crosslinking agent is a non-reversible crosslinking agent. In some cases, the crosslinking agents may be chemical crosslinkers. Examples of the chemical crosslinkers include aldehyde, epoxy, N-hydroxysuccinimide, halogen, imidate, thiol, and quinone. In some examples, the chemical crosslinker may be aldehyde. In some examples, the chemical crosslinker may be formaldehyde.",
+                                "It has been found however, that in some situations, it is not necessary to hold the nucleic acids in place using a chemical fixative or crosslinking agent. Thus, in some embodiments, no crosslinking agent is used. In still other embodiments, the nucleic acids are held in position relative to each other by the application of non-crosslinking means, such as by using agar or other polymer to hold the nucleic acids in position. The labeled nucleotide is present in the junction is used to isolate or enrich the one or more end joined nucleic acid fragments using the labeled nucleotide.",
+                                "In some embodiments, in order to create discrete portions of nucleic acid that can be joined together in subsequent steps of the methods, the nucleic acids present in the cells, such as cross-linked cells, are fragmented.",
+                                "**Isolating Joined Fragments**",
+                                "In some embodiments, the methods further comprise isolating the nucleic acid fragments, e.g., the joined nucleic acid fragments. The isolation may be performed using the labeled nucleotide(s) filled in the fragments, e.g., by capturing the fragments with the labeled nucleotide(s). In some embodiments, the end joined DNA that includes a labeled nucleotide is captured with a specific binding agent that specifically binds a capture moiety, such as biotin, on the labeled nucleotide. In some embodiments, the capture moiety is adsorbed or otherwise captured on a surface. In specific embodiments, the end target joined DNA is labeled with biotin, for instance by incorporation of biotin-14-CTP or other biotinylated nucleotide during the filling in of the 5\u2032 overhang, for example with a DNA polymerase, allowing capture by streptavidin. Other means for labeling, capturing, and detecting nucleic acid probes include: incorporation of aminoallyl-labeled nucleotides, incorporation of sulfhydryl-labeled nucleotides, incorporation of allyl- or azide-containing nucleotides, and many other methods described in Bioconjugate Techniques (2nd Ed), Greg T. Hermanson, Elsevier (2008), which is specifically incorporated herein by reference. In some embodiments the specific binding agent has been immobilized for example on a solid support, thereby isolating the target nucleic molecule of interest. By \u201csolid support or carrier\u201d is intended any support capable of binding a targeting nucleic acid. Well-known supports or carriers include glass, polystyrene, polypropylene, polyethylene, dextran, nylon, amylases, natural and modified celluloses, polyacrylamides, agarose, gabbros and magnetite. The nature of the carrier can be either soluble to some extent or insoluble for the purposes of the present disclosure. The support material may have virtually any possible structural configuration so long as the coupled molecule is capable of binding to targeting probe. Thus, the support configuration may be spherical, as in a bead, or cylindrical, as in the inside surface of a test tube, or the external surface of a rod. Alternatively, the surface may be flat such as a sheet or test strip. After capture, the end joined nucleic acid fragments are available for amplification (e.g., PCR), wherein the amplified products include universal ends for use in cloning into the regulatory element assay vector described herein.",
+                                "**Identifying Regulatory Elements at Genome-Wide Contact Domains**",
+                                "In certain embodiments, fragmenting genomic DNA is performed in order to detect regulatory elements present at contact domains (also called \u201ctopologically constrained domains\u201d, \u201ctopologically associated domains\u201d, or \u201cphysical domains\u201d) (Dixon et al., 2012 Nature 485, 376-380; Lieberman-Aiden et al., 2009 Science 326, 289-293; Nora et al., 2012 Nature 485, 381-385; Rao et al., 2014 Cell 159, 1665-1680). Contact domains as used herein refer to contiguous genomic intervals in which there is an enhanced probability of contact among all loci. Contact domains range in size from tens of kilo bases to several megabases, with a median size of 185 kb. Many contact domains are also \u201cloop domains\u201d\u2014that is, contact domains whose boundaries are demarcated by the endpoints of a chromatin loop. Chromatin fibers are arranged in living cells as independent chromatin loops anchored to the nuclear matrix or chromosomal scaffold. Specific DNA sequences act as anchors for these loops. Genes are configured into looped structures or chromatin loops that juxtapose regulatory elements to activate or repress transcription. Moreover, chromatin loop formation is the result of the presence of a pair of CTCF binding motifs in the convergent orientation on opposite strands of the DNA. Not being bound by a theory contact domains are enriched for regulatory sequences as compared to the entire genome.",
+                                "In certain embodiments, regulatory elements comprising genomic contact domains in a cell may be identified. As described herein, fragments may be obtained using in situ Hi-C methods (see, e.g., WO2016089920). The methods include providing a sample of one or more cells or nuclei and following a method of Hi-C as described previously.",
+                                "**Amplification of Fragments**",
+                                "Methods herein may comprise amplifying the nucleic acid fragments. As used herein the term \u201camplifying\u201d or \u201camplification\u201d refers to a method to increase the number of copies of a nucleic acid molecule, such as one or more tagmented fragments or end joined nucleic acid fragments that includes a junction, such as a ligation junction. The resulting amplification products are called \u201camplicons.\u201d Amplification of a nucleic acid molecule (such as a DNA or RNA molecule) refers to use of a technique that increases the number of copies of a nucleic acid molecule (including fragments).",
+                                "An example of amplification is the polymerase chain reaction (PCR), in which a sample is contacted with a pair of oligonucleotide primers under conditions that allow for the hybridization of the primers to a nucleic acid template in the sample. The primers are extended under suitable conditions, dissociated from the template, re-annealed, extended, and dissociated to amplify the number of copies of the nucleic acid. This cycle can be repeated.",
+                                "Other examples of in vitro amplification techniques include quantitative real-time PCR; reverse transcriptase PCR (RT-PCR); real-time PCR (RT PCR); real-time reverse transcriptase PCR (rt RT-PCR); nested PCR; strand displacement amplification (see U.S. Pat. No. 5,744,311); transcription-free isothermal amplification (see U.S. Pat. No. 6,033,881, repair chain reaction amplification (see WO 90/01069); ligase chain reaction amplification (see European patent publication EP-A-320 308); gap filling ligase chain reaction amplification (see U.S. Pat. No. 5,427,930); coupled ligase detection and PCR (see U.S. Pat. No. 6,027,889); and NASBA\u2122 RNA transcription-free amplification (see U.S. Pat. No. 6,025,134) amongst others.",
+                                "In certain embodiments, the nucleic acid fragments may be amplified by an error-prone PCR. Error prone PCR is a method by which random mutants maybe inserted into any piece of DNA. The technique is based on PCR (polymerase chain reaction). Normally the replication of DNA by the polymerase is extremely specific. The difference in error prone PCR is that the fidelity of the Taq DNA polymerase is modulated by alteration of the composition of the reaction buffer. In these conditions, the polymerase makes mistakes in the base paring during DNA synthesis that results in the introduction of errors in the newly synthesized complementary DNA strand. By carefully controlling the buffer composition the frequency of mis-incorporation of nucleotide bases, and therefore the number of errors introduced into the sequence may be regulated. For the technique to work properly, a Taq DNA polymerase which does not have proof-reading ability may be used. This proof-reading, or auto-correction of nucleotide sequence, is a property that is found in many commercially available Taq DNA polymerases. Use of a proof-reading DNA polymerase in an error prone PCR reaction may result in the automatic correction of the mismatched nucleotides, and any mutations introduced during the reaction may be lost.",
+                                "The nucleic acid fragments may be amplified in an amplification reaction. The reaction may comprise one or more reagents for amplification. In some examples, the reaction may comprise nucleic acid polymerase, e.g., DNA polymerase. In certain examples, the reaction may comprise one or more mutagens. Examples of the mutagens include mitomycin, nitrous acid, photoactivated psoralens, sodium bisulfite, hydroxylamine, hydrazine or formic acid, analogues of nucleotide precursors, e.g., nitrosoguanidine, 5-bromouracil, 2-aminopurine, or acridine, or any combination thereof.",
+                                "**Enrichment and Selection**",
+                                "The method may comprise enriching the nucleic acid fragments, e.g., the amplified nucleic acid fragments. The enrichment may be performed by selecting the nucleic acid fragments according to certain characteristics. For example, the nucleic acid fragments may be selected by size, affinity, charge, label, or any combination thereof.",
+                                "In certain embodiments, the nucleic acid fragments may be selected by size For example, the nucleic acid fragments may be selected for size between about 50 and about 5000, between about 100 and about 2000, between about 100 and about 1000, between about 150 and about 500, between about 200 and about 500, between about 230 and about 500, between about 50 and about 150, between about 100 and about 200, between about 150 and about 250, between about 200 and about 300, between about 250 and about 350, between about 300 and about 400, between about 350 and about 450, between about 400 and about 500, between about 450 and about 550, or between about 500 and about 600 nucleotides long. In certain examples, the nucleic acid fragments may be selected for size between about 150 and about 500 nucleotides long. In certain examples, the nucleic acid fragments may be selected for size between about 230 and about 500 nucleotides long.",
+                                "In certain embodiments, fragments are manually loaded onto a gel and fragments corresponding to the correct size are cut from the gel and purified as is known in the art. In certain embodiments, automated size selection using precast, disposable gel cassettes may be used (see, e.g., Quail et al., (2012) Evaluation and optimisation of preparative semi-automated electrophoresis systems for Illumina library preparation. Electrophoresis. December; 33(23):3521-8). In certain embodiments, an automated optical electrophoretic system is used to select for fragment size (see, e.g., Pippin Prep (Sage Science; Beverly, Mass., USA).",
+                                "**Removing Mitochondrial DNA**",
+                                "The methods may further comprise removing non-genomic nucleic acids from the nucleic acid fragments. In some embodiments, the methods comprise removing mitochondrial DNA from the nucleic acid fragments. In certain embodiments, mitochondrial DNA is removed to reduce the cost of a vector library containing high amounts of mitochondrial DNA. In some examples, ATAC-seq is a high-throughput sequencing technique that identifies open chromatin. Depending on the cell type, ATAC-seq samples may contain 20-80% of mitochondrial sequencing reads.",
+                                "In certain embodiments, removal of mitochondrial DNA is performed before amplifying the nucleic acid fragments. In certain embodiments, removal of mitochondrial DNA is performed after amplifying the nucleic acid fragments. In certain embodiments, removal of mitochondrial DNA is performed before the enrichment of the amplified nucleic acid fragments. In certain embodiments, removal of mitochondrial DNA is performed after the enrichment of the amplified nucleic acid fragments. In certain embodiments, removal of mitochondrial DNA is performed before the integration of the enriched nucleic acid fragments. In certain embodiments, removal of mitochondrial DNA is performed after the integration of the enriched nucleic acid fragments. In certain examples, removal of mitochondrial DNA is performed after the enrichment of the amplified nucleic acid fragments and before the integration of the enriched nucleic acid fragments.",
+                                "Removal of mitochondrial DNA may be performed using a reagent targeting mitochondrial DNA. The reagent may be a CRISPR system comprising guide sequences targeting the mitochondrial DNA sequences, wherein the mitochondrial DNA is cleaved. For example, Montefiori, L. et al. 2017 describes a method of reducing mitochondrial DNA using a CRISPR/Cas9 system applicable to the present invention. Mitochondrial fragment depletion may use about 50, 75, 100, or 200 or more guide sequences. Not being bound by a theory, designing a denser set of guide sequences can achieve greater amounts of depletion to save on high-throughput sequencing costs later.",
+                                "In some embodiments, removal of mitochondrial DNA may be performed by positive selection using labeled nucleic acid molecules synthesized to capture pre-determined regions of accessible chromatin or promoter and enhancer sequences. The labeled nucleic acid molecules may be nucleic fragments filled in with labeled nucleotide(s).",
+                                "**Integration of Fragment to Vectors**",
+                                "The methods may further comprise integrating the nucleic acid fragments, e.g., the enriched fragments into a vector. In some cases, such integration generates a vector library. The integration may be performed using molecular cloning methods known in the art. For example, the integration may be performed by digesting the fragments and the vector using endonuclease to great ligatable ends, and ligating the digested fragments and the digested vector using ligase.",
+                                "**Vectors**",
+                                "In certain embodiments, the vectors are for delivering or introducing in a cell a reporter gene and library fragment as described herein, but also for propagating these components (e.g. in prokaryotic cells). As used herein, a \u201cvector\u201d is a tool that allows or facilitates the transfer of an entity from one environment to another. It is a replicon, such as a plasmid, phage, or cosmid, into which another DNA segment may be inserted so as to bring about the replication of the inserted segment. Generally, a vector may be capable of replication when associated with the proper control elements. In general, the term \u201cvector\u201d refers to a nucleic acid molecule capable of transporting another nucleic acid to which it has been linked. Vectors include, but are not limited to, nucleic acid molecules that are single-stranded, double-stranded, or partially double-stranded; nucleic acid molecules that comprise one or more free ends, no free ends (e.g. circular); nucleic acid molecules that comprise DNA, RNA, or both; and other varieties of polynucleotides known in the art. One type of vector is a \u201cplasmid,\u201d which refers to a circular double stranded DNA loop into which additional DNA segments can be inserted, such as by standard molecular cloning techniques.",
+                                "Another type of vector is a viral vector. For example, such vectors may have virally-derived DNA or RNA sequences are present in the vector for packaging into a virus (e.g. retroviruses, replication defective retroviruses, adenoviruses, replication defective adenoviruses, and adeno-associated viruses (AAVs)). Viral vectors also include polynucleotides carried by a virus for transfection into a host cell. The viral vectors may be non-integrating vectors. For example, certain vectors are capable of autonomous replication in a host cell into which they are introduced (e.g. bacterial vectors having a bacterial origin of replication and episomal mammalian vectors). The viral vectors may be integrating viral vectors. For examples, Other vectors (e.g., non-episomal mammalian vectors) are integrated into the genome of a host cell upon introduction into the host cell, and thereby are replicated along with the host genome. In certain examples, a vector may be a lentiviral vector (e.g., an integrating or non-integrating lentiviral vector). Moreover, certain vectors are capable of directing the expression of genes to which they are operatively-linked. Such vectors are referred to herein as \u201cexpression vectors.\u201d In certain embodiments, the methods utilize episomal vectors.",
+                                "Exemplary vectors are described in the art (see e.g., Arnold et al., Genome-Wide Quantitative Enhancer Activity Maps Identified by STARR-seq, Science 1 Mar. 2013: Vol. 339, Issue 6123, pp. 1074-1077; and Muerdter et al., STARR-seq\u2014Principles and applications, Genomics Volume 106, Issue 3, September 2015, Pages 145-150).",
+                                "**Reporter Genes**",
+                                "In certain embodiments, the vectors encode a reporter gene and an untranslated sequence (UTR) that when introduced into a cell of the present invention has low (basal) or non-existent expression. Upon introduction of an enhancer sequence into the vector, the vector expresses the transcript above basal levels, wherein the transcript includes the reporter gene sequence and enhancer sequence. One skilled in the art can generate a vector as described herein.",
+                                "In certain embodiments, the vector may encode a reporter gene. The reporter gene encoded by the vector may encode a detectable marker. In certain embodiments, the detectable marker is a fluorescent protein such as green fluorescent protein (GFP), enhanced green fluorescent protein (EGFP), red fluorescent protein (RFP), blue fluorescent protein (BFP), cyan fluorescent protein (CFP), yellow fluorescent protein (YFP), mCherry, tdTomato, DsRed-Monomer, DsRed-Express, DSRed-Express2, DsRed2, AsRed2, mStrawberry, mPlum, mRaspberry, HcRed1, E2-Crimson, mOrange, mOrange2, mBanana, ZsYellow1, TagBFP, mTagBFP2, Azurite, EBFP2, mKalama1, Sirius, Sapphire, T-Sapphire, ECFP, Cerulean, SCFP3A, mTurquoise, mTurquoise2, monomelic Midoriishi-Cyan, TagCFP, niTFP1, Emerald, Superfolder GFP, Monomeric Azami Green, TagGFP2, mUKG, mWasabi, Clover, mNeonGreen, Citrine, Venus, SYFP2, TagYFP, Monomeric Kusabira-Orange, mKOk, mK02, mTangerine, mApple, mRuby, mRuby2, HcRed-Tandem, mKate2, mNeptune, NiFP, mKeima Red, LSS-mKate1, LSS-m ate2, mBeRFP, PA-GFP, PAmCherry1, PATagRFP, TagRFP6457, IFP1.2, iRFP, Kaede (green), Kaede (red), KikGR1 (green), KikGR1 (red), PS-CFP2, mEos2 (green), mEos2 (red), mEos3.2 (green), mEos3.2 (red), PSmOrange, Dronpa, Dendra2, Timer, AmCyan1, a variant thereof, a fragment thereof, or a combination thereof. In certain embodiments, the detectable marker is a cell surface marker. In other instances, the cell surface marker is a marker not normally expressed on the cells, such as a truncated nerve growth factor receptor (tNGFR), a truncated epidermal growth factor receptor (tEGFR), CD8, truncated CD8, CD19, truncated CD19, a variant thereof, a fragment thereof, a derivative thereof, or a combination thereof.",
+                                "Enhancer activity is directly linked to the underlying DNA sequence and measured as presence of the resulting reporter transcripts among cellular RNA by deep sequencing. Specifically, DNA fragments are cloned downstream of a core promoter and into the 3\u2032 UTR of a reporter gene. Active enhancers will transcribe themselves and become part of the resulting reporter transcripts. This setup allows the simultaneous testing of millions of DNA sequences in a highly complex reporter library and also ensures that the identified sequences act as bona fide enhancers (rather than for example promoters) as they activate transcription from a remote position.",
+                                "In some embodiments, the methods comprise detecting expression of the reporter gene and sorting cells in the cell line based on expression levels of the reporter gene. In certain embodiments, cell sorting (e.g., FACS) may be used for enriching cells expressing a detectable marker. Not being bound by a theory, sorting may allow for sequencing of only transcripts having specific levels of enhancer activity.",
+                                "**UTR**",
+                                "In some embodiments, a nucleic acid fragment may be integrated into an untranslated region (UTR) of the reporter gene. A UTR may be a nucleotide sequence (e.g., of a mRNA or DNA sequence or chemical analog thereof) that is transcribed into a mRNA in which the nucleotides corresponding to the open reading frame (\u201cORF\u201d) are not present. In some embodiments, the UTR is the region of a mRNA that is not translated into protein. In one embodiment, the UTR is either or both a 5\u2032-UTR, i.e., upstream of the ORF coding region, or a 3\u2032-UTR, i.e., downstream of the ORF coding region. For example, the nucleic acid fragment may be integrated into an untranslated region (UTR) downstream of the reporter gene. In certain examples, the nucleic acid fragment may be integrated into an untranslated region (UTR) upstream of the reporter gene.",
+                                "**Introduction of Nucleic Acids to Cells**",
+                                "In some embodiments, the methods may comprise introducing nucleic acids to a population of cells. The nucleic acids to be introduced may be the nucleic acid fragments, vectors, or vectors integrated with the nucleic acid fragments (e.g., the vector library described herein). In some examples, nucleic acids to be introduced may be the vector library. After introduced into cells, the nucleic acids, e.g., DNA, may express one or more transcripts.",
+                                "Nucleic acids may be introduced to cells using molecular cloning techniques known in the art. Examples of methods of introducing nucleic acids into cells include transfection, transduction, electroporation, and microinjection. In some cases, the nucleic acids are introduced into cells by transfection. In some cases, the nucleic acids are introduced into cells by transduction.",
+                                "**Cells**",
+                                "Cells or the population of cells herein may be derived from cells taken from a subject, such as a tissue or cell line. A wide variety of cell lines for tissue culture models are known in the art. Examples of cell lines include, but are not limited to, HT115, RPE1, C8161, CCRF-CEM, MOLT, mIMCD-3, NHDF, HeLa-S3, Huh1, Huh4, Huh7, HUVEC, HASMC, HEKn, HEKa, MiaPaCell, Panc1, PC-3, TF1, CTLL-2, C1R, Rat6, CV1, RPTE, A10, T24, J82, A375, ARH-77, Calu1, SW480, SW620, SKOV3, SK-UT, CaCo2, P388D1, SEM-K2, WEHI-231, HB56, TIB55, Jurkat, J45.01, LRMB, Bcl-1, BC-3, IC21, DLD2, Raw264.7, NRK, NRK-52E, MRC5, MEF, Hep G2, HeLa B, HeLa T4, COS, COS-1, COS-6, COS-M6A, BS-C-1 monkey kidney epithelial, BALB/3T3 mouse embryo fibroblast, 3T3 Swiss, 3T3-L1, 132-d5 human fetal fibroblasts; 10.1 mouse fibroblasts, 293-T, 3T3, 721, 9L, A2780, A2780ADR, A2780cis, A172, A20, A253, A431, A-549, ALC, B16, B35, BCP-1 cells, BEAS-2B, bEnd.3, BHK-21, BR 293, BxPC3, C3H-10T1/2, C6/36, Cal-27, CHO, CHO-7, CHO-IR, CHO-K1, CHO-K2, CHO-T, CHO Dhfr \u2212/\u2212, COR-L23, COR-L23/CPR, COR-L23/5010, COR-L23/R23, COS-7, COV-434, CML T1, CMT, CT26, D17, DH82, DU145, DuCaP, EL4, EM2, EM3, EMT6/AR1, EMT6/AR10.0, FM3, H1299, H69, HB54, HB55, HCA2, HEK-293, HeLa, Hepa1c1c7, HL-60, HMEC, HT-29, Jurkat, JY cells, K562 cells, Ku812, KCL22, KG1, KYO1, LNCap, Ma-Mel 1-48, MC-38, MCF-7, MCF-10A, MDA-MB-231, MDA-MB-468, MDA-MB-435, MDCK II, MDCK II, MOR/0.2R, MONO-MAC 6, MTD-1A, MyEnd, NCI-H69/CPR, NCI-H69/LX10, NCI-H69/LX20, NCI-H69/LX4, NIH-3T3, NALM-1, NW-145, OPCN/OPCT cell lines, Peer, PNT-1A/PNT 2, RenCa, RIN-5F, RMA/RMAS, Saos-2 cells, Sf-9, SkBr3, T2, T-47D, T84, THP1 cell line, U373, U87, U937, VCaP, Vero cells, WM39, WT-49, X63, YAC-1, YAR, and transgenic varieties thereof. Cell lines are available from a variety of sources known to those with skill in the art (see, e.g., the American Type Culture Collection (ATCC) (Manassas, Va.)).",
+                                "In certain embodiments, the population of cells may be obtained from a tissue sample. As used herein the term \u201ctissue\u201d refers to a plurality of functionally related cells. A tissue can be a suspension, a semi-solid, or solid. Tissue includes cells collected from a subject such as blood, cervix, uterus, lymph nodes, breast, skin, and other organs. In some cases, the population of cells may be a tissue-specific cell line.",
+                                "The population of cells may comprise cells of certain type. For example, the population of cells may comprise immune cells. \u201cImmune cells\u201d as used herein is meant to include any cells of the immunesystem that may be assayed, including, but not limited to, B lymphocytes (also called B cells), T lymphocytes (also called T cells), natural killer (NK) cells, lymphokine-activated killer (LAK) cells, monocytes, macrophages, neutrophils, granulocytes, mast cells, platelets, Langerhans cells, stem cells, dendritic cells, peripheral blood mononuclear cells, tumor-infiltrating (TIL) cells, myeloid cells, such as monocytes, macrophages, eosinophils, mast cells, basophils, and granulocytes, gene modified immune cells including hybridomas, drug modified immune cells, and derivatives, precursors or progenitors of the above cell types.",
+                                "In certain examples, the population of cells may comprise cancer cells. Cancer cells may be cells obtained or derived from a tumor or cancer tissues. The cancer cells may be obtained or derived from leukemia, such as chronic lymphocytic leukemia, fibrosarcoma, myxo sarcoma, liposarcoma, chondrosarcoma, osteogenic sarcoma, chordoma, angiosarcoma, endotheliosarcoma, lymphangiosarcoma, lymphangioendothelio sarcoma, synovioma, mesothelioma, Ewing's, leiomyosarcoma, rhabdomyo sarcoma, gastrointestinal system carcinomas, colon carcinoma, pancreatic cancer, breast cancer, genitourinary system carcinomas, ovarian cancer, prostate cancer, squamous cell carcinoma, basal cell carcinoma, adenocarcinoma, sweat gland carcinoma, sebaceous gland carcinoma, papillary carcinoma, papillary adenocarcinomas, cystadenocarcinoma, medullary carcinoma, bronchogenic carcinoma, renal cell carcinoma, hepatoma, bile duct carcinoma, choriocarcinoma, seminoma, embryonal carcinoma, Wilms' tumor, cervical cancer, endocrine system carcinomas, testicular tumor, lung carcinoma, small cell lung carcinoma, non-small cell lung carcinoma, bladder carcinoma, epithelial carcinoma, glioma, astrocytoma, medulloblastoma, craniopharyngioma, ependymoma, pinealoma, hemangioblastoma, acoustic neuroma, oligodendroglioma, meningioma, melanoma, neuroblastoma, retinoblastoma, or combinations thereof.",
+                                "In some cases, the cells may be obtained by pooling cells or tissues from multiple individual. For example, the multiple individuals may be chosen to maximize genetic diversity at informative disease variants. In some cases, the population of cells are derived from the same cell line used for transfecting or transducing, whereby enhancer regulatory elements active in the cell line are identified.",
+                                "**Sequencing**",
+                                "In some embodiments, the methods comprise sequencing transcripts expressed by the vector library. The transcripts may comprise RNA molecules or DNA molecules derived therefrom. The sequences of the transcripts may be used for identifying nucleic acid fragments that have enhancer activity. In some examples, nucleic acid fragments with enhancer activity may be identified by measuring a ratio of a number of RNA sequencing reads comprising a fragment to the representation of the fragment in a non-transfected vector library.",
+                                "In some embodiments, nucleic acid fragments with enhancer activity may be identified by comparing a sequenced fragment to the chromatin state of a genomic locus of the fragment in the cell line, where fragments present in an enhancer chromatin state are selected. For example, the enhancer chromatin state comprises H3K27ac (histone H3 lysine 27 acetylation) and H3K4me1 (histone H3 lysine 4 mono-methylation). In some embodiments, nucleic acid fragments with enhancer activity may be identified by comparing a sequenced genomic fragment to Long-Terminal-Repeat (LTR) retrotransposon sequences, wherein LTR sequences are not selected.",
+                                "In preferred embodiments, the present invention uses next generation sequencing in order to detect transcripts. Exemplary next generation sequencing technologies include, for example, Illumina sequencing, Ion Torrent sequencing, 454 sequencing, SOLiD sequencing, and nanopore sequencing amongst others. Methods for constructing sequencing libraries are known in the art (see, e.g., Head et al., Library construction for next-generation sequencing: Overviews and challenges. Biotechniques. 2014; 56(2): 61-77).",
+                                "The terms \u201cdepth\u201d or \u201ccoverage\u201d as used herein refers to the number of times a nucleotide is read during the sequencing process. Depth can be calculated from the length of the original genome (G), the number of reads (N), and the average read length (L) as N\u00d7L/G. For example, a hypothetical genome with 2,000 base pairs reconstructed from 8 reads with an average length of 500 nucleotides will have 2\u00d7 redundancy. This parameter also enables one to estimate other quantities, such as the percentage of the genome covered by reads (sometimes also called coverage). A high coverage in shotgun sequencing is desired because it can overcome errors in base calling and assembly. The subject of DNA sequencing theory addresses the relationships of such quantities. Even though the sequencing accuracy for each individual nucleotide is very high, the very large number of nucleotides in the genome means that if an individual genome is only sequenced once, there will be a significant number of sequencing errors. Furthermore rare single-nucleotide polymorphisms (SNPs) are common. Hence to distinguish between sequencing errors and true SNPs, it is necessary to increase the sequencing accuracy even further by sequencing individual genomes or libraries a large number of times.",
+                                "The sequencing may be deep sequencing, e.g., ultra-deep sequencing. The term \u201cdeep sequencing\u201d as used herein indicates that the total number of reads is many times larger than the length of the sequence under study. The term \u201cdeep\u201d as used herein refers to a wide range of depths greater than 1\u00d7 up to 100\u00d7. The term \u201cultra-deep\u201d as used herein refers to higher coverage (>100-fold), which allows for detection of sequence variants in mixed populations. Alternatively or additionally, the sequencing may be low-pass sequencing or shallow sequencing. The terms \u201clow-pass sequencing\u201d or \u201cshallow sequencing\u201d as used herein refers to a wide range of depths greater than or equal to 0.1\u00d7 up to 1\u00d7.",
+                                "In the cases where nuclei are isolated, Nuc-seq can be used for single-nucleus isolation and RNA-Seq and is compatible with frozen or fixed tissue (see, e.g., Swiech et al., 2014, \u201cIn vivo interrogation of gene function in the mammalian brain using CRISPR-Cas9\u201d Nature Biotechnology Vol. 33, pp. 102-106; and Habib et al., 2016, \u201cDiv-Seq: Single-nucleus RNA-Seq reveals dynamics of rare adult newborn neurons\u201d Science, Vol. 353, Issue 6302, pp. 925-928, both of which are herein incorporated by reference in their entirety). In certain embodiments, the invention involves obtaining nuclei from a population of cells (e.g., tissues) and enriching genomic fragments from the nuclei. In certain embodiments, nuclei are isolated from cells where it is difficult to generate a single cell suspension, such as neurons, whereby a single suspension of nuclei is processed to generate fragments (e.g., from accessible chromatin).",
+                                "**High Resolution Mapping of Driver Elements**",
+                                "In certain embodiments, the method comprises high-resolution mapping of driver elements of enhancer activity within identified enhancer regulatory elements by a method comprising comparing the fragment enrichment enhancer activity of a set of overlapping fragments represented in the vector library, whereby driver elements of enhancer activity are identified for enhancer regulatory elements. As used herein the term \u201cdriver element(s)\u201d refers to nucleotides in a genomic regulatory fragment that is required for the functional activity of the fragment. In an exemplary embodiment, the fragment may comprise transcription factor binding sites (e.g., activator, mediator complex, RUNX3 or an unknown binding site). The driver elements may be chromatin modifying or remodeling recruitment sites (e.g., histone remodeling complexes, histone modifying enzymes). The fragment may comprise more than one driver element. As used herein the terms \u201cfragment enrichment enhancer activity\u201d or \u201cenhancer activity\u201d refers to of number of transcripts sequenced. In other words, fragments having a high enhancer activity generate more transcription of the reporter. The more transcripts, the more enhancer activity. Thus, the enhancer activity can be measured by the number of transcripts including a fragment sequence. The enhancer activity may be normalized by the representation of each fragment in the input vector library.",
+                                "Driver elements may be more than 10, 18, 20, 30, 40, 50, 60, 70, 80, 90 or more than 100 nucleotides in length. In certain embodiments, driver elements are greater than or equal to 18 nucleotides. In certain embodiments, overlapping fragments are represented in the input library. The enhancer activity of the overlapping fragments may be compared to identify driver elements.",
+                                "An algorithm may be used to compare the overlapping fragments (e.g., SHARPR2, as described herein). The algorithm may be used by a computing system. In some examples, the algorithm may estimate regulatory scores for nucleotides in the identified set of overlapping fragments. The sequencing data from the input library and sequenced transcripts may be uploaded to a computing system and the algorithm applied to generate an output of driver elements. Not being bound by a theory, the more overlapping fragments the higher the resolution of driver elements. In certain embodiments, the minimum number of overlapping fragments is ten. Not being bound by a theory, more than 40 overlapping fragments does not provide increased resolution.",
+                                "In some embodiments, the set of overlapping fragments may comprise at least 5 unique overlapping fragments, e.g., at least 10, 20, 40, 60, 80, 100 unique overlapping fragments. In certain examples, the set of overlapping fragments may comprise at least 10 unique overlapping fragments.",
+                                "**Identifying Sequence Variants**",
+                                "In certain embodiments, the method further comprises identifying driver element variants. The variants may comprise genome wide association (GWAS) variants. Variants may be identified by sequencing the transcripts. Variants may be identified by first identifying regulatory elements and second resequencing the vector library using reads sufficiently long to identify sequence variants. Not being bound by a theory, reads from sequencing transcripts may not be sufficiently long. In some embodiments, the methods further comprise correlating the driver element variants with a disease.",
+                                "In certain embodiments, driver element variants may be associated with a disease. In certain examples, the GWAS variants herein may be genetic variants associated with a disease. Variants associated with a disease may be identified by comparing regulatory elements in diseased and healthy tissue samples. The variants may also be correlated with changes in gene expression. In one exemplary embodiment, differential gene expression between disease and healthy samples is determined using methods known in the art. Fragments having regulatory activity are identified using methods as described herein. Fragment sequences capable of regulating genes differentially expressed are then analyzed for sequence variants. Additionally, the sequence variants may be present in a driver element. Sequence variants may be identified that modulate expression of the differentially expressed genes.",
+                                "In certain embodiments, sequence variants in regulatory elements or specifically in driver elements may be variants already associated with disease. Genome Wide Association Studies (GWASs) have identified SNPs that are associated with many complex diseases or traits. For example, as of February 2015, 2111 association studies have identified 15,396 SNPs for various diseases and traits, with the number of identified SNP-disease/trait associations increasing rapidly in recent years. However, it has been difficult for researchers to understand disease risk from GWAS results (see, e.g., Tak and Farnham, Epigenetics Chromatin. 2015 Dec. 30; 8:57). Thus, the present invention may identify functional consequences of sequence variants. In other words, a sequence variant may be identified to function in a regulatory element required for enhancer activity. In certain embodiments, a variant associated with a disease is not identified by the present invention, but a regulatory element comprising the sequence containing the variant may be identified. In certain embodiments, a fragment identified as having enhancer activity may be mutated to include the variant and enhancer activity assayed. In certain embodiments, regulatory elements are identified for a disease for which at least one genome-wide association (GWA) study (GWAS) has been performed.",
+                                "In some embodiments, a gene or allele or polymorphism has been identified as contributing to disease risk or severity in at least one GWAS. See, e.g., www.genome.gov/gwastudies for examples of GWAS studies and genetic variants (alleles, polymorphisms) associated with various diseases. In some embodiments, a gene (or any sequence) is one for which an allele or polymorphism is associated with an increased or decreased risk of developing a disease of at least 1.1, 1.2, 1.5, 2, 3, 4, 5, 7.5, 10, or more, relative to individuals not having the allele or polymorphism. In some embodiments, an allele or polymorphism is associated with an increased or decreased risk of developing a disease of at least 1.1, 1.2, 1.5, 2, 3, 4, 5, 7.5, 10, or more, relative to individuals not having the allele or polymorphism. Genes, alleles, polymorphisms, or genetic loci that may contribute to any phenotypic trait of interest such as longevity, weight, resistance to infection, response or lack thereof to various therapeutic agents, resistance or susceptibility to potentially harmful substances such as toxins or infectious agents (e.g., viruses, bacteria, fungi, parasites), severity of disease or prognosis (e.g., cancer), or resistance to therapy (e.g., cancer) are of interest. A phenotypic trait may be a physical sign (such as blood pressure), a biochemical marker, which in some embodiments may be detectable in a body fluid such as blood, saliva, urine, tears, etc., such as level of a metabolite, LDL, etc., wherein an abnormally low or high level of the marker may correlate with having or not having the disease or with susceptibility to or protection from a disease.",
+                                "Various additional embodiments are described in the following numbered paragraphs:",
+                                "1. A method of identifying genomic enhancer regulatory elements comprising: fragmenting genomic DNA at accessible chromatin in a population of cells thereby generating genomic DNA fragments, wherein said fragmenting comprises transposition; amplifying the genomic DNA fragments; enriching the amplified genomic DNA fragments by size; integrating the enriched fragments into a vector to obtain a vector library, wherein the vector encodes a reporter gene and the enriched fragments are integrated into an untranslated region (UTR) of the reporter gene, whereby transcription of the reporter gene results in a transcript comprising the integrated fragment sequence; transfecting or transducing a cell line with the vector library, wherein the transcript comprising the integrated fragment sequences is expressed in the cell line; and sequencing the transcript expressed in the cell line, whereby integrated fragments comprising enhancer activity are identified.\n\n2. The method according to paragraph 1, wherein the amplified genomic DNA fragments are selected for a size between about 150 and about 500 nucleotides long.\n\n3. The method according to paragraph 1 or 2, wherein the amplified genomic DNA fragments are selected for a size between about 230 and about 500 nucleotides long.\n\n4. The method according to any one of paragraphs 1-3, wherein the enriched fragments are integrated in a UTR downstream of the reporter gene.\n\n5. The method according to any one of paragraphs 1-4, further comprising removing mitochondrial DNA.\n\n6. The method according to any one of paragraphs 1-5, wherein the mitochondrial DNA is removed using a CRISPR system comprising guide sequences targeting the mitochondrial DNA sequences, wherein the mitochondrial DNA is cleaved.\n\n7. The method according to paragraph 5 or 6, wherein mitochondrial DNA is removed after the enriching the amplified genomic DNA fragments and before the integrating the enriched fragments.\n\n8. The method according to any one of paragraphs 1-7, wherein the vector is a plasmid.\n\n9. The method according to any one of paragraphs 1-8, wherein the vector is a viral vector.\n\n10. The method according to paragraph 9, wherein the viral vector is a lentiviral vector.\n\n11. The method according to any one of paragraphs 1-10, wherein the integrated fragments comprising enhancer activity is identified by measuring a ratio of a number of RNA sequencing reads comprising a fragment to the representation of the fragment in a non-transfected vector library.\n\n12. The method according to any one of paragraphs 1-11, wherein the integrated fragments comprising enhancer activity is identified by comparing a sequenced genomic fragment to the chromatin state of a genomic locus of the fragment in the cell line, wherein fragments present in an enhancer chromatin state are selected.\n\n13. The method according to paragraph 12, wherein the enhancer chromatin state comprises H3K27ac (histone H3 lysine 27 acetylation) and H3K4me1 (histone H3 lysine 4 mono-methylation).\n\n14. The method according to any one of paragraphs 1-13, wherein the integrated fragments comprising enhancer activity is identified by comparing a sequenced genomic fragment to Long-Terminal-Repeat (LTR) retrotransposon sequences, wherein LTR sequences are not selected.\n\n15. The method according to any one of paragraphs 1-14, further comprising detecting expression of the reporter gene in the cell line and sorting cells in the cell line based on expression levels of the reporter gene.\n\n16. The method according to any one of paragraphs 1-15, wherein the population of cells is obtained from a tissue sample.\n\n17. The method according to any one of paragraphs 1-16, wherein the population of cells is a tissue-specific cell line.\n\n18. The method according to any one of paragraphs 1-17, wherein the population of cells is obtained by pooling cells or tissues from more than one individual.\n\n19. The method according to any one of paragraphs 1-18, wherein the population of cells comprise immune cells.\n\n20. The method according to any one of paragraphs 1-19, wherein the population of cells comprise cancer cells.\n\n21. The method according to any one of paragraphs 1-20, wherein the population of cells are derived from the same cell line used for transfecting or transducing, whereby enhancer regulatory elements active in the cell line are identified.\n\n22. The method according to any one of paragraphs 1-21, further comprising isolating nuclei from the population of cells before fragmenting the genomic DNA.\n\n23. The method according to any one of paragraphs 1-22, wherein the fragments are amplified by error-prone PCR.\n\n24. The method according to any one of paragraphs 1-23, wherein the fragments are amplified in an amplification reaction comprising a mutagen.\n\n25. The method according to any one of paragraphs 1-24, further comprising high-resolution mapping of driver elements of enhancer activity within identified enhancer regulatory elements by a method comprising comparing the fragment enrichment enhancer activity of a set of overlapping fragments represented in the vector library, whereby driver elements of enhancer activity are identified for enhancer regulatory elements.\n\n26. The method according to paragraph 25, wherein the driver element comprises a minimum of 18 driver nucleotides.\n\n27. The method according to paragraph 25 or 26, wherein the comparing comprises uploading the overlapping fragment sequences into a computing system and applying an algorithm, wherein the algorithm compares the fragment enrichment enhancer activity of the overlapping fragments.\n\n28. The method according to paragraph 27, wherein the algorithm estimates regulatory scores for nucleotides in the identified set of overlapping fragments.\n\n29. The method according to any one of paragraphs 25-28, wherein the set of overlapping fragments comprises at least 10 unique overlapping fragments.\n\n30. The method according to any one of paragraphs 25-29, further comprising identifying driver element variants.\n\n31. The method according to paragraph 30, wherein the driver element variants comprise genome wide association (GWAS) variants.\n\n32. The method according to paragraph 31, wherein the GWAS variants are genetic variants associated with a disease.\n\n33. The method according to paragraph 32, wherein identifying driver element variants comprises resequencing the vector library using reads sufficiently long to identify sequence variants.\n\n34. The method according to any one of paragraphs 30-33, further comprising correlating the driver element variants with a disease.\n\n35. A method of identifying genomic enhancer regulatory elements comprising: fragmenting genomic DNA in a population of cells, thereby generating genomic DNA fragments comprising overhanging ends; filling in the overhanging ends with at least one labeled nucleotide; joining the filled in overhanging ends of the fragmented genomic DNA, wherein the joined fragments comprise contact domains; isolating the joined genomic DNA fragments using the labeled nucleotide; amplifying the isolated joined genomic DNA fragments; integrating the amplified fragments into a vector to obtain a vector library, wherein the vector encodes a reporter gene and the amplified fragments are integrated into an untranslated region (UTR) of the reporter gene, whereby transcription of the reporter gene results in a transcript comprising the integrated fragment sequence; transfecting or transducing a cell line with the vector library, wherein the transcript comprising the integrated fragment sequence is expressed in the cell line; and sequencing the transcripts expressed in the cell line, whereby integrated fragments comprising enhancer activity are identified.\n\n36. The method according to paragraph 35, wherein the genomic DNA fragments are held in a fixed position relative to one another.\n\n37. The method according to paragraph 35 or 36, wherein the genomic DNA fragments are fixed in position relative to one another by crosslinking.\n\n38. The method according to paragraph 37, wherein the crosslinking comprises treating the genomic DNA fragments with a chemical crosslinker.\n\n39. The method according to paragraph 38, wherein the chemical crosslinker comprises an aldehyde.\n\n40. The method according to paragraph 39, wherein the aldehyde comprises formaldehyde.\n\n41. The method according to any one of paragraphs 37-40, further comprising reversing the crosslinking.\n\n42. The method according to paragraph 41, wherein the reversing the crosslinking comprises contacting the sample with Proteinase K.",
+                                "The invention is further described in the following examples, which do not limit the scope of the invention described in the claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce fragmentation methods",
+                                "enzymatic cleavage",
+                                "chemical cleavage",
+                                "endonuclease selection",
+                                "5\u2032 overhang generation",
+                                "blunt end generation",
+                                "different fragmentation techniques",
+                                "different fragmentation patterns",
+                                "different nucleic acid ends",
+                                "fragmenting sample yields ends",
+                                "ends capable of being joined",
+                                "isolate nuclei from cells",
+                                "isolate nuclei before fragmentation",
+                                "isolate nuclei from frozen or fixed tissue",
+                                "process nuclei to obtain genomic fragments",
+                                "ATAC-seq protocol for genomic fragments",
+                                "buffer for crude nuclei preparation",
+                                "fragment length from 50 to 5000 bp",
+                                "fragment length from 100 to 1000 bp",
+                                "specific fragment length examples",
+                                "fragment length selection",
+                                "overhang generation",
+                                "5\u2032 overhanging end",
+                                "3\u2032 overhanging end",
+                                "multiple overhanging ends",
+                                "fill in overhanging ends",
+                                "fill in with labeled nucleotide",
+                                "blunt ended fragments",
+                                "join overhang ends",
+                                "ligation using nucleic acid ligase",
+                                "alternative joining methods",
+                                "end joined fragments",
+                                "junction with labeled nucleic acid",
+                                "label and cross-link",
+                                "cross-linking agents",
+                                "reversible crosslinking agents",
+                                "non-reversible crosslinking agents",
+                                "chemical crosslinkers",
+                                "no crosslinking agent",
+                                "non-crosslinking means",
+                                "isolate joined fragments",
+                                "capture with labeled nucleotide",
+                                "amplify fragments",
+                                "describe methods of fragmentation",
+                                "integrate nucleic acid fragments into vector",
+                                "define vector",
+                                "describe types of vectors",
+                                "describe viral vectors",
+                                "describe episomal vectors",
+                                "describe integrating viral vectors",
+                                "describe expression vectors",
+                                "describe reporter genes",
+                                "encode reporter gene and untranslated sequence",
+                                "describe detectable markers",
+                                "describe cell surface markers",
+                                "measure enhancer activity",
+                                "describe untranslated region (UTR)",
+                                "integrate nucleic acid fragment into UTR",
+                                "introduce nucleic acids to cells",
+                                "describe methods of introducing nucleic acids",
+                                "describe cells",
+                                "describe cell lines",
+                                "describe tissue samples",
+                                "describe immune cells",
+                                "describe cancer cells",
+                                "describe leukemia",
+                                "describe carcinomas",
+                                "describe other types of cancer cells",
+                                "motivate methods of fragmentation",
+                                "introduce sequencing",
+                                "describe sequencing technologies",
+                                "define depth and coverage",
+                                "explain importance of high coverage",
+                                "introduce deep sequencing",
+                                "define low-pass sequencing",
+                                "describe Nuc-seq",
+                                "introduce high-resolution mapping",
+                                "define driver elements",
+                                "describe fragment enrichment enhancer activity",
+                                "introduce algorithm for identifying driver elements",
+                                "describe use of computing system",
+                                "introduce identifying sequence variants",
+                                "describe correlating variants with disease",
+                                "introduce identifying driver element variants",
+                                "describe associating variants with disease",
+                                "introduce identifying regulatory elements",
+                                "describe identifying sequence variants in regulatory elements",
+                                "introduce identifying functional consequences",
+                                "describe identifying regulatory elements for disease",
+                                "introduce identifying genes contributing to disease risk",
+                                "describe identifying alleles or polymorphisms associated with disease",
+                                "introduce identifying phenotypic traits",
+                                "describe method of identifying genomic enhancer regulatory elements",
+                                "introduce fragmenting genomic DNA",
+                                "describe amplifying genomic DNA fragments",
+                                "introduce enriching amplified fragments",
+                                "describe integrating enriched fragments into vector",
+                                "introduce transfecting or transducing cell line",
+                                "describe sequencing transcripts",
+                                "introduce identifying integrated fragments with enhancer activity",
+                                "describe removing mitochondrial DNA",
+                                "introduce using CRISPR system",
+                                "describe integrating enriched fragments into UTR",
+                                "introduce using plasmid or viral vector",
+                                "describe identifying integrated fragments with enhancer activity",
+                                "introduce comparing sequenced genomic fragment to chromatin state",
+                                "describe comparing sequenced genomic fragment to LTR retrotransposon sequences",
+                                "introduce detecting expression of reporter gene",
+                                "describe sorting cells based on expression levels",
+                                "introduce obtaining population of cells"
+                            ],
+                            "num_characters": 55770,
+                            "outline_medium": [
+                                "introduce fragmentation methods",
+                                "describe enzymatic cleavage",
+                                "describe chemical cleavage",
+                                "specify endonuclease selection",
+                                "describe 5\u2032 overhang generation",
+                                "describe blunt end generation",
+                                "discuss different fragmentation patterns",
+                                "describe fragment end capabilities",
+                                "introduce nuclei isolation",
+                                "describe pre-fragmentation nuclei isolation",
+                                "describe post-fragmentation nuclei isolation",
+                                "specify fragment length ranges",
+                                "describe overhang generation",
+                                "describe filling overhang ends",
+                                "describe end joining",
+                                "describe ligation junction creation",
+                                "introduce label and cross-linking",
+                                "describe labeled nucleotide incorporation",
+                                "describe cross-linking methods",
+                                "describe reversing cross-linking",
+                                "describe isolating joined fragments",
+                                "describe methods of fragmentation",
+                                "define vectors",
+                                "describe types of vectors",
+                                "describe reporter genes",
+                                "describe untranslated regions (UTRs)",
+                                "describe introduction of nucleic acids to cells",
+                                "describe methods of introducing nucleic acids",
+                                "describe cells",
+                                "describe cell lines",
+                                "describe tissue samples",
+                                "describe immune cells",
+                                "describe cancer cells",
+                                "motivate methods of fragmentation",
+                                "introduce sequencing",
+                                "describe sequencing technologies",
+                                "define depth and coverage",
+                                "explain deep sequencing",
+                                "explain low-pass sequencing",
+                                "introduce Nuc-seq",
+                                "describe high-resolution mapping of driver elements",
+                                "define driver elements",
+                                "explain fragment enrichment enhancer activity",
+                                "describe algorithm for identifying driver elements",
+                                "introduce identifying sequence variants",
+                                "describe identifying driver element variants",
+                                "correlate driver element variants with disease",
+                                "describe identifying regulatory elements associated with disease",
+                                "describe identifying sequence variants in regulatory elements",
+                                "describe identifying functional consequences of sequence variants",
+                                "introduce additional embodiments",
+                                "describe method of identifying genomic enhancer regulatory elements",
+                                "describe additional embodiments of method",
+                                "describe alternative method of identifying genomic enhancer regulatory elements"
+                            ],
+                            "outline_short": [
+                                "describe fragmentation methods",
+                                "introduce enzymatic and chemical cleavage",
+                                "detail endonuclease selection",
+                                "explain fragment length variation",
+                                "describe overhang creation",
+                                "outline filling overhang ends",
+                                "detail joining overhang ends",
+                                "describe label and cross-link",
+                                "outline methods/reagents of crosslinking",
+                                "describe isolating joined fragments",
+                                "define fragmentation methods",
+                                "describe vectors",
+                                "explain reporter genes",
+                                "detail UTR integration",
+                                "outline introduction of nucleic acids to cells",
+                                "describe cells and cell lines",
+                                "introduce methods of fragmentation",
+                                "describe sequencing methods",
+                                "explain high-resolution mapping of driver elements",
+                                "identify sequence variants",
+                                "correlate driver element variants with disease",
+                                "describe various embodiments of the method",
+                                "detail specific steps of the method",
+                                "provide additional embodiments of the method",
+                                "describe alternative methods of fragmenting genomic DNA",
+                                "provide further details on the method"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1\u2014HiDRA Experimental Method Overview and Plasmid Library Construction",
+                            "paragraphs": [
+                                "HiDRA leverages the selective fragmentation of genomic DNA at regions of open chromatin to generate fragment libraries that densely cover putative transcriptional regulatory elements. Fragments are enriched from open chromatin and regulatory regions using ATAC-seq (Assay for Transposase-Accessible Chromatin with high throughput sequencing) and subsequently cloned into the 3\u2032 untranslated region (UTR) of a reporter gene on the self-transcribing enhancer reporter vector used in STARR-seq3,4. Fragments with transcriptional regulatory activity promote self-transcription such that active segments of DNA can be identified and quantified by high-throughput RNA sequencing to produce a quantitative readout of enhancer activity (FIG. 1A). Library construction can be completed in 2-3 days and requires as few as 104-105 cells as input starting material.",
+                                "Applicants constructed a HiDRA library with 9.7 million total unique mapping fragments, of which 4 million had a frequency greater than 0.1 reads per million (RPM; non-mitochondrial reads). More than 99% of fragments had lengths between 169 nt and 477nt (median: 337nt), with the fragment length distribution showing two peaks spaced by \u02dc147 nt, corresponding to the length of DNA wrapped around each nucleosome (FIG. 1). In contrast to unbiased fragmentation of the genome, the library has much higher efficiency for selectively targeting accessible DNA regions that are more likely to play gene-regulatory roles. The HiDRA library covers 4486 predicted enhancers and 9631 predicted promoters (\u201cActive Transcription Start Site (TSS)\u201d state) with more than 10 unique fragments (FIG. 1C, colored lines), a \u02dc130-fold and \u02dc210-fold enrichment compared to 35 enhancer and 46 promoter regions expected to be covered by chance at the same coverage, indicating that HiDRA library construction successfully targets predicted regulatory regions. Even among enhancer and promoter regions, those with higher expected activity are preferentially selected by HiDRA, as they show higher accessibility and are thus more likely to be cloned in our library and tested by our episomal reporters (FIG. 8).",
+                                "The cloning strategy is specifically designed to densely sample regulatory regions, in order to enable high resolution inference of regulatory activity from highly-overlapping fragments. Indeed, Applicants found up to 370 unique fragments per region in our HiDRA libraries, with \u02dc32,000 genomic intervals containing at least 10 overlapping fragments and \u02dc2750 containing at least 50 fragments, compared to 180 and 0 that would be expected by randomly-selected fragments, respectively. In addition to clustering of tested fragments within the same region, high-resolution inference relies on partially-overlapping rather than fully-overlapping fragments, which requires a random fragmentation pattern. Indeed, the Tn5 transposase Applicants used here inserts randomly into the genome, and indeed the resulting DNA fragments provide a dense sampling of start and end positions that mirrors the peaks of ATAC-seq experiments (FIG. 1D), indicating that accessible regions most likely to show regulatory activity will have both higher representation in our libraries, and also more starting and ending positions that can help identify driver nucleotides."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce HiDRA method",
+                                "describe ATAC-seq and STARR-seq",
+                                "outline library construction process",
+                                "detail fragment length distribution",
+                                "describe library coverage of enhancers and promoters",
+                                "highlight library's ability to target regulatory regions"
+                            ],
+                            "num_characters": 3292,
+                            "outline_medium": [
+                                "introduce HiDRA method",
+                                "describe plasmid library construction",
+                                "summarize library characteristics"
+                            ],
+                            "outline_short": [
+                                "describe HiDRA experimental method"
+                            ]
+                        },
+                        {
+                            "title": "Example 2\u2014Identification of DNA Fragments with Transcriptional Regulatory Activity",
+                            "paragraphs": [
+                                "To evaluate the ability of each cloned DNA fragment to promote gene expression, Applicants transfected the HiDRA library into GM12878 lymphoblastoid cells, collected RNA 24 hours post-transfection, and measured the abundance of transcribed fragments by high-throughput RNA sequencing. Applicants carried out 5 replicate transfection experiments from the same plasmid library, each into \u02dc120 million cells, and observed a high degree of correlation in the RNA counts between replicates (0.95 Pearson correlation on average for fragments \u22651 RPM; 0.76 for \u22650.1 RPM; FIGS. 9A-9D). To quantify the regulatory activity of tested elements, Applicants compared the number of RNA reads obtained for a fragment (corresponding to the expression level of the reporter gene, as the constructs are self-transcribing), relative to representation of that fragment in the non-transfected input plasmid library (thus normalizing the differential abundance of each fragment in our library). Applicants observed a substantial number of fragments that are more prevalent in RNA than DNA, indicating capability of many HiDRA fragments to drive reporter gene expression (FIG. 2A).",
+                                "Given the intentionally high initial complexity of the HiDRA library, many fragments are sequenced with a relatively low depth of coverage. Applicants therefore grouped fragments with a 75% reciprocal overlap to boost the read coverage of genomic regions and increase statistical power. This yielded 7.1 million unique \u201cfragment groups\u201d generated from merging 9.7 million HiDRA fragments. In total, Applicants identified 95,481 fragment groups that promote reporter gene expression at an FDR cut-off of 0.05, which Applicants refer to as \u2018active HiDRA fragments\u2019 (FIG. 2A, red dots). These 95,481 active HiDRA fragments are located within 66,254 unique genomic intervals that Applicants subsequently refer to as \u201cactive HiDRA regions\u201d.",
+                                "Applicants found that active HiDRA fragments showed a wide range of input DNA levels in the plasmid library, indicating that regulatory function and DNA accessibility rely on complementary sequence signals, and that DNA accessibility alone is not sufficient to predict episomal regulatory function. Applicants also found that active HiDRA regions are predominantly distal to annotated transcription start sites (TSSs) (FIG. 2B), validating the utility of HiDRA for pinpointing distal regulatory regions that are particularly challenging to identify.",
+                                "As proof-of-concept that HiDRA is capable of identifying true enhancer elements, Applicants examined the well studied immunoglobulin heavy chain enhancer within the intron of the immunoglobulin heavy constant epsilon (IGHE) gene18. Applicants observed that the peak of HiDRA activity is centered precisely within the region previously identified as driving enhancer activity in low-throughput luciferase assays (FIG. 2C).",
+                                "To assess the quantitative accuracy of HiDRA relative to luciferase assays, Applicants compared active HiDRA regions and luciferase results across 21 putative enhancers predicted and tested independently by Huang et al.19. Applicants found a 0.88 Pearson correlation between measured luciferase activity and HiDRA activity, confirming the accuracy and quantitative nature of the high-throughput approach (FIG. 2D). A visualization of 14 luciferase-tested enhancers in the serine/threonine kinase NEK6 locus shows a strong correspondence between luciferase assay results and HiDRA active regions (FIG. 2E)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe transfection and RNA sequencing",
+                                "quantify regulatory activity of fragments",
+                                "group fragments to boost read coverage",
+                                "identify active HiDRA fragments",
+                                "analyze active HiDRA fragments' input DNA levels",
+                                "validate HiDRA using immunoglobulin heavy chain enhancer"
+                            ],
+                            "num_characters": 3475,
+                            "outline_medium": [
+                                "describe transfection and RNA sequencing",
+                                "quantify regulatory activity of fragments",
+                                "identify active HiDRA fragments and regions"
+                            ],
+                            "outline_short": [
+                                "evaluate ability of DNA fragments to promote gene expression"
+                            ]
+                        },
+                        {
+                            "title": "Example 3\u2014HiDRA Regulatory Elements are Enriched in Promoter and Enhancer Elements",
+                            "paragraphs": [
+                                "Applicants next surveyed the 95,481 active HiDRA fragments identified in GM12878 to assess shared common genomic or epigenomic characteristics. In comparison to the set of all HiDRA fragments tested, active fragments were 12 times more likely to overlap an active promoter \u201cTssA\u201d chromatin state (marked by H3K4me3 and H3K27ac, FIG. 3A inset) and 5 times more likely to overlap an \u201cActive Enhancer\u201d chromatin state (marked by H3K4me1 and H3K27ac, FIG. 3A). By contrast, \u201cWeak Enhancer\u201d chromatin states (marked by H3K4me1 but lack of H3K27ac) showed substantially weaker enrichment (2.2-fold) within active HiDRA fragments than active enhancers, consistent with previous literature indicating that presence of H3K27ac correlates with higher greater expression of nearby genes (FIG. 3B). Overall, 35% of all predicted active promoters (8355 regions) and 16% of all predicted active enhancers (5276 regions) overlapped at least one active HiDRA fragment.",
+                                "In addition to active promoter and active enhancer chromatin states, the \u201cTSS Flanking Upstream\u201d chromatin state showed strong enrichment for active HiDRA fragments (7.3-fold higher than expected from the input library). This chromatin state is defined by the presence of both promoter and enhancer histone marks H3K4me1, H3K4me3, and H3K27ac, and was named \u201cTSS Flanking\u201d due its depletion at exactly the TSS position, but its enrichment 400nt-1 kb upstream of annotated transcription start sites9. However, 64% of its occurrences are >2 kb from the nearest transcription start site, suggesting that a portion of genomic regions annotated as \u201cTSS Flanking Upstream\u201d may function biologically as distal enhancers (FIG. 4A).",
+                                "When Applicants computed enrichment of chromatin states as a function of HiDRA activity strength, Applicants found a linear quantitative relationship for HiDRA activity levels up to \u02dc2.5-fold RNA/DNA ratios, with increasing activity showing increasing chromatin state enrichment for both promoter and enhancer chromatin states (FIG. 3B). Surprisingly, this enrichment stayed constant thereafter for promoter regions, and increased modestly for enhancer regions, ultimately surpassing the enrichment seen for promoters. In fact, even though promoter chromatin states were more enriched at intermediate HiDRA activity levels, enhancer chromatin states were the most enriched at the highest HiDRA activity levels (p=9.3\u00d710\u2212102, FIG. 10A), suggesting that enhancer elements have a greater dynamic range of regulatory activity potential, which has implications for the regulatory architecture of genes.",
+                                "At the other end of the spectrum, Quiescent and Polycomb-repressed chromatin states showed a 2-fold depletion for HiDRA active elements, but heterochromatin-associated chromatin states showed a modest enrichment, indicating that they may contain regulatory signals that become active once taken outside their repressive endogenous chromosomal context. The ZNF/repeats-associated chromatin state (marked by H3K36me3 and H3K9me3) showed a modest enrichment for lower HiDRA activity levels, but continued to increase linearly even at the highest activity levels, possibly due to active repetitive elements, as Applicants discuss below.",
+                                "Applicants also studied the enrichment of HiDRA regions for individual histone marks profiled by the ENCODE project in GM128789. Active promoter- and active-enhancer-associated acetylation marks H3K9ac and H3K27ac, histone turnover-associated H2A.Z, promoter- and enhancer-associated H3K4me3 and H3K4me1, and DNase I accessible chromatin were the most enriched individual marks within active HiDRA regions, while Polycomb-repression-associated H3K27me3, heterochromatin-associated H3K9me3, and transcription-associated H3K36me3 were the least enriched compared to the input library (FIG. 11).",
+                                "As these elements are tested outside their endogenous chromatin context, Applicants expect that they drive reporter gene transcription by recruiting transcriptional regulators in a sequence-specific way, and Applicants sought to gain insights into the recruited factors. Applicants calculated the overrepresentation of 651 transcription factor sequence motifs assembled by ENCODE in active HiDRA regions, and found enrichment for many distinct motifs for immune transcription factors (FIG. 10B), including IRF, NFKB1, and RELA, corresponding to transcriptional regulators known to function in GM12878 compared to other human cell lines. The motifs enriched in promoter chromatin states were largely distinct from those enriched in enhancer chromatin states, highlighting the differential regulatory control of the two types of regions (FIG. 10A). These differences in motif content indicate that the two types of regions recruit different sets of transcriptional regulators both in their endogenous context and in our episomal assays, consistent with their distinct endogenous chromatin state and their distinct properties in our HiDRA assays."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "survey active HiDRA fragments for chromatin characteristics",
+                                "analyze enrichment of active fragments in promoter and enhancer states",
+                                "describe enrichment of \"TSS Flanking Upstream\" chromatin state",
+                                "compute enrichment of chromatin states by HiDRA activity strength",
+                                "analyze enrichment of individual histone marks",
+                                "study motif enrichment in active HiDRA regions",
+                                "compare motif enrichment in promoter and enhancer chromatin states",
+                                "highlight differences in motif content between promoter and enhancer regions",
+                                "discuss implications for regulatory architecture of genes"
+                            ],
+                            "num_characters": 4949,
+                            "outline_medium": [
+                                "survey active HiDRA fragments for genomic characteristics",
+                                "analyze enrichment of active fragments in chromatin states",
+                                "study enrichment of individual histone marks",
+                                "discuss implications for regulatory architecture"
+                            ],
+                            "outline_short": [
+                                "survey active HiDRA fragments for shared genomic characteristics",
+                                "analyze enrichment of chromatin states and histone marks"
+                            ]
+                        },
+                        {
+                            "title": "Example 4\u2014HiDRA Regulatory Activity Outside Promoter and Enhancer Regions",
+                            "paragraphs": [
+                                "Even though HiDRA active regions were most enriched for enhancer and promoter states, they were not exclusive to them. In fact, approximately half of active HiDRA regions (52%) showed endogenous epigenomic signatures characteristic of repressed and inactive chromatin states, including Quiescent, Repressed Polycomb, Weak Repressed Polycomb, and Heterochromatin.",
+                                "As active chromatin states were defined based on the profiling of only a subset of known chromatin marks in GM12878, Applicants reasoned that perhaps other marks may be marking these regions active, but that they were perhaps not profiled in GM12878 and thus missed by the reference genome annotations. For example, a recent study identified subclasses of active enhancer elements marked with H3K122ac or H3K64ac but not H3K27ac14. While these marks were not profiled in GM12878, inactive chromatin states that showed HiDRA activity were 8-fold to 13-fold more likely to be bound by transcription factors in ChIP-seq experiments in GM12878 than inactive chromatin states that lacked HiDRA activity (FIG. 4B), indicating that the assays can successfully recover active regions even outside active chromatin states, and highlighting the importance of the unbiased survey of open chromatin regions regardless of their endogenous chromatin marks.",
+                                "As both high-throughput and low-throughput episomal assays test regions outside their endogenous chromatin context, Applicants reasoned that some active HiDRA regions with inactive chromatin signatures may reflect endogenously-inactive regions that become active when removed from the influence of nearby repressive effects. Applicants reasoned that these regions would contain sequence motifs of TFs active in GM12878, but that these sequence motifs would be less likely to be bound in vivo, compared to motifs in active states. Indeed, Applicants found that active HiDRA regions from endogenously-inactive chromatin states showed similar enrichments in regulatory motif occupancy to that of enhancer and promoter chromatin states (FIG. 4C), but substantial differences in their endogenous TF binding (FIG. 4B), consistent with endogenous repression due to their genomic context. These regions were also \u02dc30% more likely to be active in another human tissue, compared to HiDRA-inactive regions (FIG. 4D), consistent with cell-type specific repression in their endogenous chromatin context.",
+                                "In addition to the presence of regulatory motifs for known regulators active in GM12878, Applicants sought additional driver elements that may be responsible for the episomal activity of endogenously-inactive regions. In particular, Applicants considered the presence of Long-Terminal-Repeat (LTR) retrotransposons, which have been previously shown to have regulatory activity potential and were enriched in the set of all active HiDRA regions unlike other repetitive elements in the genome (FIG. 12)2,20. Indeed, Applicants found that active HiDRA regions from endogenously-inactive regions showed substantial enrichment for LTR retrotransposons. In fact, Quiescent and Heterochromatin states were more enriched for LTR retrotransposons than either Enhancer or Promoter chromatin states (FIG. 4E, FIG. 12). As LTRs are motif-rich and often act as the substrate for recently evolved enhancers, these endogenously inactive but episomally-active HiDRA regions may represent a reservoir for the emergence of new regulatory elements6."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze active HiDRA regions outside active chromatin states",
+                                "study binding of transcription factors in ChIP-seq experiments",
+                                "compare motif enrichment in active HiDRA regions",
+                                "analyze endogenous TF binding in active HiDRA regions",
+                                "study activity of HiDRA regions in another human tissue",
+                                "discuss enrichment of LTR retrotransposons in active HiDRA regions"
+                            ],
+                            "num_characters": 3430,
+                            "outline_medium": [
+                                "analyze active HiDRA regions outside active chromatin states",
+                                "study transcription factor binding in active regions",
+                                "discuss implications for endogenous repression and cell-type specificity"
+                            ],
+                            "outline_short": [
+                                "study active HiDRA regions outside active chromatin states"
+                            ]
+                        },
+                        {
+                            "title": "Example 5\u2014High-Resolution Mapping of Regulatory Activity with HiDRA",
+                            "paragraphs": [
+                                "Applicants next sought to exploit the highly overlapping nature of tested HiDRA fragments to increase the resolution of regulatory inferences by exploiting subtle differences between neighboring fragments that only overlap partially. As an example, Applicants considered a 3 kb region on chromosome 7 that is covered by 134 distinct HiDRA fragments. When Applicants examined every fragment in this region, Applicants observed that fragments overlapping the known RUNX3 motif showed substantially higher regulatory activity (FIG. 5A). This motif is bound by the RUNX3 protein in GM12878 cells and shows increased evolutionary conservation (FIG. 5A). These properties suggest that the driver regulatory nucleotides within this region are tightly concentrated surrounding the RUNX3 motif, and that on the global level the differential activity of HiDRA-tested segments should enable us to systematically discover these driver nucleotides in an unbiased way based on the relative activity of fragments that do or do not overlap them.",
+                                "As part of the development of Sharpr-MPRA2, Applicants had previously developed the SHARPR algorithm, a graphical probabilistic model that inferred high-resolution activity from MPRA tiling experiments by reasoning about the differential activity of partially-overlapping microarray spots. Intuitively, SHARPR allowed us to transform measurements from the 145-bp resolution of individually tested tiles to the 5-bp resolution of the offset between consecutive tiles. The SHARPR algorithm relies on synthesized oligos that uniformly tile regions at regularly spaced intervals, and thus is not applicable for the random fragmentation nature of HiDRA experiments where both the length and the spacing of neighboring fragments can vary. To address this challenge, Applicants developed a new algorithm, SHARPR2, which estimates regulatory scores underlying any set of randomly-positioned and variable-length segments, by appropriately scaling the segments by their varying lengths, and enabling inferences at variable-length offsets between them (Appendix A).",
+                                "Applying the SHARPR2 algorithm to the RUNX3 example above, Applicants found that the 3 kb region was narrowed down to a single \u2018driver\u2019 element of 27nt (FIG. 5A). These captured the known RUNX3 motif shown experimentally by ChIP-Seq to be bound by the RUNX3 regulator in GM128789, and also the independently-determined high-resolution region of evolutionary conservation, even though neither line of evidence was used in the inferences.",
+                                "Across all \u02dc32,000 \u201ctiled regions\u201d that are covered by at least 10 unique HiDRA fragments, SHARPR2 predicted \u02dc13,000 driver elements of median length 52nt, using a regional family-wise error rate of 5% (FIG. 5B). With increasing coverage, the resolution of driver regions also increased, from \u02dc50nt for regions with 10-20 fragments to \u02dc20nt for regions with 40 or more fragments (FIG. 13). The length of driver elements did not further decrease between 40 and 80 fragments per tiled region, suggesting a minimum number of \u02dc18 driver nucleotides necessary to drive regulatory activity. Similar to active HiDRA regions, driver elements were also mostly distal from annotated TSS regions, and were preferentially found in endogenously active chromatin states (active promoters, TSS-flanking, and active enhancer regions, FIGS. 14A-14B).",
+                                "Applicants found that predicted driver nucleotides were significantly more enriched for regulatory motifs than shuffled controls (obtained by randomly shuffling driver positions within tiled regions). The enriched motifs consisted of regulators known to be active in GM12878, including several critical B-cell and immune transcription factor including NF-kB and the IRF family (FIG. 5C). A total of 98 motifs were enriched in driver elements (FDR<0.05), clustering into several distinct groups with little overlap between groups, suggesting a wide range of distinct transcription factors act to regulate GM12878 gene expression (FIG. 5D). Applicants also found that driver nucleotides are significantly more likely to be evolutionarily-conserved across vertebrates than randomly-shuffled controls (FIG. 5E), with \u02dc1080 driver elements overlapping conserved regions, compared to only \u02dc650 expected by chance (p=2.23\u00d710\u221273). These results indicate that our high-resolution inferences are biologically meaningful and can help pinpoint driver nucleotides among larger regions."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe high-resolution mapping of regulatory activity",
+                                "analyze regulatory activity in a 3 kb region on chromosome 7",
+                                "develop SHARPR2 algorithm for high-resolution inferences",
+                                "apply SHARPR2 to predict driver elements",
+                                "analyze length of driver elements by coverage",
+                                "study enrichment of regulatory motifs in driver elements",
+                                "compare driver elements to shuffled controls",
+                                "discuss biological significance of high-resolution inferences"
+                            ],
+                            "num_characters": 4432,
+                            "outline_medium": [
+                                "describe SHARPR2 algorithm",
+                                "apply SHARPR2 to HiDRA data",
+                                "analyze predicted driver elements",
+                                "discuss biological significance of driver elements"
+                            ],
+                            "outline_short": [
+                                "develop SHARPR2 algorithm for high-resolution inferences",
+                                "apply SHARPR2 to predict driver elements and regulatory motifs"
+                            ]
+                        },
+                        {
+                            "title": "Example 6\u2014Prioritization and Characterization of GWAS Variants Affecting Regulatory Activity",
+                            "paragraphs": [
+                                "Applicants next sought to use the predicted active regions and driver nucleotides to gain insights into non-coding variation. Applicants studied the overlap between genetic variants associated with immune disorders and our high resolution predicted driver nucleotides. Even though driver nucleotides only cover 0.032% of the genome, Applicants found 12 cases where they overlap fine-mapped SNPs associated with 21 immune-related traits21 predicted to be causal (\u02dc5 expected by chance inside tiled regions, p=0.012, FIG. 6A). For example, Applicants predict a 76-nt driver element overlapping rs12946510 in the IKZF3 locus associated with multiple sclerosis in a tiled region of 3 kb (FIG. 6B), suggesting this may be the causal variant. The SNP overlaps a 76-nt driver element that contains a RUNX3 motif and a RELA motif, both bound by the respective TFs in GM128789. Indeed, rs12946510 is predicted to be causal based on genetic fine-mapping21, with a posterior probability of 0.314 of being causal with the next strongest signal showing only 0.067 posterior probability. rs12946510 is also an eQTL for the IKZF3 gene21,22, and was recently shown to disrupt enhancer activity for the surrounding 279-nt region using a luciferase reporter assay23, consistent with the prediction that rs12946510 is a causal SNP.",
+                                "To recognize regions that showed differential activity between risk and non-risk alleles of common genetic variants, Applicants first inferred the genotype of all RNA fragments profiled. As HiDRA is a sequencing-based assay, where the expression of reporter genes is quantified based on the number of sequencing reads, allele-specific differences in HiDRA activity between risk and non-risk haplotypes should be detectable in principle by using heterozygous positions to distinguish reads coming from the 275 paternal or the maternal allele. In practice however, HiDRA fragments are much longer (\u02dc337 median length) than the typical sequencing reads Applicants used for quantification (37nt, paired end), and thus 78% of genetic variants will not be covered by the sequencing reads (if they fall in the inner \u02dc260nt not captured by our paired-end sequencing). To overcome this limitation and to determine allele-specific activity scores for all of the fragments, Applicants used low-depth re-sequencing of the input library using long reads, thus revealing the genotype associated with each start/end position in our library (FIG. 7A). Applicants augmented this information with 4-nt random i7 barcodes that were added by PCR during the initial HiDRA library construction, thus ensuring that the [start, end, i7] triplet is almost guaranteed to be unique, by resolving the cases where both start and end positions are identical between paternal and maternal alleles. This strategy enabled Applicants to resolve the genotype of all previously quantified HiDRA fragments without having to sequence both the plasmid and RNA libraries to full length at high depth, which would be too costly.",
+                                "In a proof-of-concept analysis to assess the ability of HiDRA to detect allelic activity, Applicants applied this approach systematically to all heterozygous positions known in the genotyped GM12878 cell lines. Applicants found \u02dc180,000 heterozygous SNPs that were represented by at least one HiDRA fragment at either allele in our library. Applicants realized that fragments carrying the maternal or paternal alleles of a SNP may also differ at their start and end positions, and that differences at fragment ends may cause SNPs with no true biological activity to falsely appear to disrupt HiDRA activity (FIG. 15). Applicants attempted to filter out these cases by only comparing fragments that show 90% mutual overlap, and where the start and end of the fragment is more than 25nt from a high-resolution driver element, thus ensuring that allelic differences are not due to differential inclusion of driver elements (\u02dc16,000 SNPs remained after filtering). At an uncorrected nominal p-value cut-off of 0.05, Applicants found 880 \u2018allelic\u2019 HiDRA SNPs where paternal and maternal alleles showed differences in activity, 25 of which had a corrected FDR<0.1 (beta-binomial model24). The corresponding SNPs in these 880 allelic HiDRA regions were more frequently found in HiDRA active regions and more frequently predicted to have strong regulatory effects in open chromatin regions by an independent study25 (FIGS. 7B, 7C), suggesting they are biologically meaningful.",
+                                "For example, Applicants found that rs2382817, a SNP associated with inflammatory bowel disease22 (pGWAS=1.13\u00d710\u221213), shows differential HiDRA activity between paternal and maternal alleles. The risk allele shows increased regulatory activity upstream of a HiDRA-annotated active region (nominal p=8.7\u00d710\u22124, FDR=0.25, FIGS. 7D, 7E). In a panel of human individuals from the GTEx project26, rs2382817 was an eQTL for TMBIM1 in EBV-transformed lymphocytes (the same cell type as GM12878, FIG. 7F), and for TMBIM1 and other nearby genes PNKD, ARPC2 and GPBAR1 in other tissues, consistent with a role of rs2382817 in gene expression regulation, and illustrating the possibility of using HiDRA to detect SNPs with allelic effects on regulatory activity.",
+                                "These results indicate that HiDRA can help shed light on disease-associated variants, by either narrowing down the set of candidate causal SNPs using the high-resolution driver nucleotide inferences, or by directly observing differential activity between risk and non-risk alleles using allele-specific activity inferences."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "study overlap between genetic variants and driver nucleotides",
+                                "analyze overlap with fine-mapped SNPs associated with immune traits",
+                                "predict causal variant in IKZF3 locus",
+                                "discuss rs12946510 as a causal SNP",
+                                "infer genotype of RNA fragments",
+                                "use low-depth re-sequencing to determine allele-specific activity",
+                                "filter out false positives due to fragment end differences",
+                                "identify allelic HiDRA SNPs with differential activity",
+                                "analyze corresponding SNPs in allelic HiDRA regions",
+                                "study rs2382817 as an example of allelic HiDRA SNP",
+                                "discuss implications for disease-associated variants"
+                            ],
+                            "num_characters": 5546,
+                            "outline_medium": [
+                                "study overlap between GWAS variants and driver nucleotides",
+                                "analyze example of IKZF3 locus",
+                                "discuss implications for causal variant identification",
+                                "describe approach to detect allelic activity",
+                                "analyze example of rs2382817 SNP"
+                            ],
+                            "outline_short": [
+                                "study overlap between genetic variants and predicted driver nucleotides",
+                                "prioritize and characterize GWAS variants affecting regulatory activity"
+                            ]
+                        },
+                        {
+                            "title": "Example 7\u2014Discussion",
+                            "paragraphs": [
+                                "Applicants presented a high-throughput experimental assay, HiDRA, to test transcriptional regulatory activity for millions of DNA fragments preferentially generated from regions of open chromatin and discover high resolution driver elements. Applicants performed HiDRA mapping of regulatory activity using a library of sequences from the GM12878 lymphoblastoid cell line ranging from 169-477nt in length. Applicants found that the endogenous loci of up-regulated HiDRA fragments are significantly more likely to be classified as promoter and enhancer elements, contain motifs for immune transcription factors and be marked by activating histone modifications. Applicants also leverage the dense tiling of HiDRA fragments at regulatory regions to perform a high-resolution mapping of regulatory activity to identify short DNA segments that act as drivers of regulatory activity, including one 76nt driver element that overlaps a SNP, rs12946510, associated with multiple sclerosis risk.",
+                                "While Applicants performed the study in the GM12878 cell line, the HiDRA methodology can be readily applied to study the transcriptional regulatory architecture of any cell line. For cell lines with poor transfection efficiencies, a non-integrating lentiviral infection method can be used instead of transfection, as both approaches have shown highly similar results in other high-throughput reporter assays27. HiDRA libraries can also be transfected in a different cell line than was used for library generation. For example, libraries could be generated from limited patient tissue, and subsequently transfected into a relevant immortalized cell line.",
+                                "Applicants also demonstrate a proof-of-concept application of HiDRA to identify SNPs that alter regulatory element activity by mapping reads in an allele-specific manner, as well as illustrate potential confounding factors for analyzing allelic HiDRA and STARR-seq data when fragments mapping to either allele have different genomic positions. Moving forward, construction of libraries with higher coverage at relevant SNPs should mitigate this concern. HiDRA also relies on the presence of different alleles in the input genomic DNA. While no human individual or cell line exists that is heterozygous at every clinically important genetic variant, future studies can pool cells or tissue from multiple individuals to generate a HiDRA library heterozygous at more loci. As recent studies have also shown that cancer driver mutations are enriched inside promoter elements, HiDRA may also be applied to pools of tumor samples to identify promoter variants that experimentally alter regulatory activity and gene expression28.",
+                                "One limitation of HiDRA is the use of genomic DNA, while technologies involving in vitro synthesis can readily introduce changes to DNA not observed in the human population to better fine-map regulatory subregions of enhancers11,29. HiDRA fragment libraries can be modified to introduce non-existing mutations through error-prone PCR or introduction of mutagens during fragment amplification. Another improvement to the assay is to further enrich for fragments from active regulatory regions, by coupling with a fragment capture technology similar to those used in Capture Hi-C to selectively test a subset of enhancers or promoters at higher resolution while retaining the advantages of having larger fragment sizes and high library complexity30. Finally, the SHARPR2 high-resolution mapping algorithm can be applied to other STARR-seq experiments. For example, investigators interested in only a specific locus could perform STARR-seq on a bacterial artificial chromosome clone (\u201cBAC-STARR-seq\u201d) that contains the region of interest3. SHARPR2 high-resolution mapping will then readily be capable of mapping regulatory activity of this specific locus with single nucleotide resolution.",
+                                "In summary, Applicants present HiDRA, a high-throughput method to assay the regulatory activity of millions of open chromatin-derived fragments located genome-wide. As HiDRA can be readily applied to any eukaryotic cell type, Applicants envision this approach or similar technologies being used to quantify the transcriptional regulatory landscape of DNA sequences for a variety of tissues from multiple organisms."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "present high-throughput experimental assay",
+                                "perform HiDRA mapping of regulatory activity",
+                                "analyze results of HiDRA fragments",
+                                "discuss applicability to other cell lines",
+                                "demonstrate proof-of-concept application",
+                                "discuss limitations of HiDRA",
+                                "propose improvements to the assay",
+                                "summarize HiDRA method and its potential applications"
+                            ],
+                            "num_characters": 4268,
+                            "outline_medium": [
+                                "present high-throughput experimental assay",
+                                "discuss application and limitations of HiDRA",
+                                "propose improvements to HiDRA methodology",
+                                "summarize and envision future applications"
+                            ],
+                            "outline_short": [
+                                "demonstrate HiDRA methodology",
+                                "discuss limitations and future improvements"
+                            ]
+                        },
+                        {
+                            "title": "Example 8\u2014Methods",
+                            "paragraphs": [
+                                "**HiDRA Library Construction**",
+                                "Applicants performed 16 ATAC-seq reactions on 50,000 GM12878 cells each using a modified protocol based upon Buenrostro et al. (Supplemental Note 1). Applicants performed cell collection, lysis, and Tn5 digestion as described by Buenrostro et al., Tn5-fragmented DNA was cleaned up using a MinElute PCR purification kit (Qiagen #28004, four reactions per column eluted in 20 uL EB buffer) and the resulting 80 uL of eluate was split into 16 PCR reactions (Supplemental Note 2). PCR was performed using custom HPLC-purified primers (F: 5\u2032-TAGAGCATGCACCGGCAAGCAGAAGACGGCATACGAGATNNNNATGTCTCGTGGGC TCGGAGATGT-3\u2032 (SEQ ID NO. 1, R: 5\u2032-GGCCGAATTCGTCGATCGTCGGCAGCGTCAGATGTG-3\u2032 (SEQ ID NO. 2), NNNN corresponds to random 4nt i7 barcode sequence) and NEBNext Ultra II Q5 DNA polymerase master mix (NEB #M0544L). Thermocycler conditions were: 65 C for 5 min, 98 C for 30 sec, 8 cycles of: 98 C for 10 sec and 65 C for 90 sec. PCR reactions were pooled and 385 cleaned up with a Qiagen MinElute PCR purification kit (two PCR reactions per column eluted in 20 uL EB buffer) and run on a 1% agarose E-Gel EX with SYBR Gold II stain (Thermo Fisher #G402001). Size selection of ATAC-seq fragments was performed by gel excision using a razor blade. Gel slabs were pooled into <300 mg groups and DNA was purified using a MinElute Gel Extraction kit (Qiagen #28604), and eluted in 20 uL of buffer EB per column following modified guidelines described in Box 2 of Taiwo et al. (2012)31. The resulting size-selected ATAC-seq fragment library was treated with an anti-mitochondrial DNA CRISPR/Cas9 library following the protocol outlined in Montefiori et al. using 10\u00d7 excess of Cas9 protein (Supplemental Note 3)32. Applicants cleaned up the reaction with a Qiagen MinElute PCR purification kit and split into 8 PCR reactions for a second round of PCR using the same conditions and primers described above. PCR products were cleaned up using two rounds of AMPure bead selection (0.8\u00d7 ratio of beads to input) to size-select against small fragments, eluted in 40 uL of dH2O and quantified using a Qubit dsDNA HS Assay kit (Thermo Fisher #Q32854).",
+                                "The pSTARR-seq_human plasmid used for generating the plasmid library was a gift from Alexander Stark (Addgene plasmid #71509). The linear backbone used for the subsequent cloning steps was generated by digesting 4 ug of circular pSTARR-seq_human for 4-6 hours with AgeI and SalI restriction enzymes (NEB #R3552S and R3138S), followed by gel excision under a dark reader transilluminator (Clare Chemical #DR22A) to extract a linear 3.5 kb fragment corresponding to the human STARR-seq plasmid backbone. Applicants performed cloning of the fragment library into the plasmid backbone approximately following the Methods section from Arnold et al. (2013)3. For each library, Applicants performed 20 individual InFusion HD cloning reactions (Takara Bio #638911) using a 3.5:1 molar ratio of insert to vector backbone, following manufacturer's instructions (Supplemental Note 4). Each group of five InFusion reactions was collected and cleaned up using the Qiagen MinElute Enzymatic Reaction cleanup kit, eluted in 10 uL of dH2O, and transformed into four 20 uL aliquots of MegaX DH10B T1R electrocompetent bacteria. The bacteria were thawed on ice for 10 min and mixed with eluted DNA (five InFusion reactions per 100 uL of bacteria). 22 uL of bacteria/DNA mixture were pipetted into a 0.1 cm electroporation cuvette (Thermo Fisher Scientific #P41050) and tapped repeatedly against a hard surface to remove bubbles. Cuvettes were electroporated using a Bio-Rad Gene Pulser Xcell Microbial Electroporation System (Bio-Rad #1652662) using the conditions: 2.0 kV, 200\u03a9, 25 \u03bcF (Supplemental Note 5). For high-yield transformations, Applicants observed electroporation time constants between 4.8 and 5.1 ms. After electroporation, bacteria were immediately collected in 750 uL pre-warmed SOC media, pooled, and incubated for 1 hr in a 37 C shaker. After recovery, serial dilutions of bacteria were plated to estimate the number of clones in the library. Recovered bacteria were diluted in 2L of pre-warmed luria broth and 100 ug/mL of carbenicillin and grown overnight (8-10 hours while shaking). Plasmids were collected from bacteria using the Plasmid Plus MegaPrep kit (Qiagen #12981) following manufacturer's instructions. Plasmid concentration was quantified using a Nanodrop One machine (Thermo Scientific) and diluted to a 3 ug/uL concentration for subsequent transfection steps. To ensure plasmid library quality and diversity, a small aliquot of the fragment library was amplified by PCR using i5 and i7 primers, run on an Illumina MiSeq machine using the 50-cycle v2 kit as per manufacturer's instructions, and aligned to the human genome to ensure correct complexity and sufficient proportions of reads within predicted transcriptional regulatory elements (Supplemental Note 6, see subsequent Methods sections for details on processing of sequencing libraries).",
+                                "**Cell Culture and Transfections**",
+                                "GM12878 cells were obtained from the Coriell biorepository and grown in RPMI 1640 Medium with GlutaMAX Supplement (Thermo Fisher #61870127), 15% fetal bovine serum (Sigma Aldrich #F2442), and 1% pen/strep at a density of between 2\u00d7105 and 1\u00d7106 cells/mL with regular media changes every 2-3 days. Approximately 24 hours before transfection, GM12878 cells were split to a density of 4\u00d7105 cells/mL to ensure the presence of actively dividing cells for increased transfection efficiency. For transfection, cells were collected by centrifugation for 5 min at 300 g, washed once with pre-warmed PBS, and collected again for 5 min at 300 g. PBS was aspirated and cell pellets were re-suspended in Resuspension Buffer R (Thermo Fisher Scientific #MPK10096) at a concentration of 7.5 million cells per 100 uL. DNA was added to cells at a concentration of 5 ug of plasmid per 1 million cells. In total, Applicants transfected between 120-130 million cells per replicate using 100 uL tips from the Neon Transfection System at 1200V with 3 pulses of 20 ms. Transfected cells were immediately recovered in pre-warmed GM12878 media without antibiotic and recovered at a density of 1\u00d7106 cells/mL for 24 hours. In parallel, Applicants performed two transfections of GM12878 cells with a positive control GFP plasmid to assess transfection efficiency using the same conditions.",
+                                "RNA Isolation and cDNA Generation",
+                                "GM12878 cells were collected 24 hours post-transfection, washed twice in pre-chilled PBS (collecting for 5 min at 300 g) and RNA was purified using the Qiagen RNEasy Maxi kit (Qiagen #75162) following manufacturer's instructions and performing the optional on-column DNase treatment step (Qiagen #79254). Poly A+RNA was extracted from total RNA using the Oligotex mRNA Midi kit (Qiagen #70042, two columns per RNA sample), and any remaining DNA was digested with a second DNase treatment step using Turbo DNase (Thermo Fisher #AM2238) following manufacturer's instructions (Supplemental Note 7). Treated mRNA was cleaned up and concentrated using the Qiagen RNEasy MinElute Cleanup kit (Qiagen #74204). Applicants generated cDNA from mRNA using Superscript III Reverse Transcriptase (Thermo Fisher #18080085) with a gene-specific RT primer located in the 3\u2032UTR of the sgGFP reporter gene downstream from the inserted fragments (5\u2032-CAAACTCATCAATGTATCTTATCATG-3\u2032) (SEQ ID NO. 3). Reverse transcription was performed following manufacturer's recommendations except with 2 ug of poly A+mRNA and 1 uL of 12.5 uM primer per 20 uL reaction, and extension was performed for 60 minutes at 50 C (Supplemental Note 8). Reverse transcription reactions were cleaned up using a MinElute PCR purification kit (Qiagen #28106, two reactions per column) and eluted in 15 uL of pre-warmed buffer EB.",
+                                "**Library Construction and High-Throughput Sequencing**",
+                                "Applicants performed a qPCR to test the number of cycles needed for amplification of single-stranded cDNA as well as input material of plasmid DNA needed such that both reactions had the same Ct values. Applicants used 1 uL of ssDNA and dilutions of plasmid DNA similar to the method described by Tewhey et al. Cell 2016. qPCRs were performed in 10 uL reactions with all reagents scaled down proportionally from a normal 50 uL PCR reaction (1 uL of DNA, 5 uL of Ultra II Q5 master mix, 0.4 uL of 25 uM primer mix, 0.2 uL of 10\u00d7SYBR dye, 3.4 uL of dH2O) with thermocycler conditions: 98 C for 30 s, 20 cycles of: 98 C for 10 s, 65 C for 90 s. Applicants proceeded to perform eight regular 50 uL PCR reactions (each scaled up 5\u00d7 from the 10 uL PCR reactions) using the same thermocycler conditions except using the Ct value for the cycle number (F: 5\u2032-CAAGCAGAAGACGGCATACGAGAT-3\u2032, (SEQ ID NO. 4 R: 5\u2032-AATGATACGGCGACCACCGAGATCTACAC[X8]TCGTCGGCAGCGTC-3\u2032, \u201cX8\u201d sequence corresponds to sample barcode, chosen from Illumina Nextera barcode list) (SEQ ID NO. 5). PCR reactions were cleaned up using Qiagen MinElute PCR purification kits and balanced for sequencing using the Kapa Library Quantification Kit (Kapa Biosystems #KK4824, Supplemental Note 9).",
+                                "Each library batch (five transfected RNA biological replicates, five plasmid controls) was sequenced by the Broad Institute Walk-Up Sequencing Facility on four flowcells on a NextSeq 500 machine using the 75-cycle kit as per manufacturer's instructions for 2\u00d737nt paired-end reads with 2\u00d78nt barcodes.",
+                                "Read mapping, data processing and identification of significantly up-regulated fragment groups",
+                                "Reads were labelled by a random 4nt P7 barcode and an 8nt P5 barcode for sample ID. Reads were split into the ten samples (5 plasmid replicates and 5 RNA replicates) by P5 barcode and aligned to the human genome (hg19 assembly) using bowtie2 v2.2.9. Alignment files were filtered to (i) keep only aligned fragments, (ii) remove reads mapping to chrM, (iii) select reads passing the -q 30 filter in samtools, and (iv) remove reads aligning to the ENCODE hg19 blacklist regions (Supplemental Note 10). Applicants identified unique fragments using the bamtobed command in BEDTools (v2.26.0) and filtered to keep only fragments between 100 and 600nt.",
+                                "In analyzing results from HiDRA, Applicants track the abundance of each individual fragment between the input (plasmid DNA) and output (RNA). Applicants grouped fragments into \u201cfragment groups\u201d by 75% mutual overlap (bedtools v2.26.0), removed redundant fragment groups and summed counts of all fragments per group. To control for length-dependent biases, Applicants split fragment groups into bins of 100nt (100-200, 200-300, etc.) and used DEseq2 (v1.10.1) to identify FDR<0.05 significantly up-regulated fragment groups33.",
+                                "**Analysis of Active HiDRA Regions**",
+                                "All overlap and shuffle analyses performed using the BEDTools suite, v2.26.034. Most colors for plots chosen with guidance from the wesanderson R package (github.com/karthik/wesanderson). For chromatin state annotations, Applicants used the 18-state output model generated by the Roadmap Epigenomics Consortium1. Active enhancer states were merged from states #9 and #10 (EnhA1 and EnhA2). ATAC-seq peaks positions were obtained from Buenrostro et al. (2013)4.",
+                                "Signal tracks: Signal tracks for regulatory activity calculated as (RNA-DNA)/DNA after adding a pseudocount of 0.1 to both plasmid and RNA samples, and drawn in UCSC Genome browser showing only means (no whiskers) and with 5-pixel smoothing.",
+                                "Correlation between RNA samples: Applicants show correlations for fragments selected by four different cut-offs of minimum RPM. Pearson and Spearman correlations were calculated on log 2-transformed data. Matrix of graphs drawn using layout and grid.arrange functions in R from the gridExtra library. Scatterplot between RNA samples drawn using the hexbinplot function from the hexbin library in R with xbins=100.",
+                                "Proximal vs. distal: TSS regions were defined using the UCSC Genome Browser's Table Browser tool for hg19. Distances to nearest annotated TSS were taken using closestBed tool in the BEDTools2 suite.",
+                                "TF motif enrichment: Applicants obtained the hg19 TF motif catalog from the ENCODE project9. Applicants only considered motifs corresponding to transcription factors expressed in GM12878 (RPKM>5 using processed RNA-seq data from the Roadmap Epigenomics Consortium).",
+                                "Activity of HiDRA regions in other tissues: Applicants set a lenient definition for active in other tissues as the union of regions annotated in 97 non-GM12878 tissues from epigenome roadmap predicted with 18-state ChromHMM model. For active regions Applicants considered states \u201cTssA\u201d (state #1), \u201cTssFlnkU\u201d (state #3), and \u201cEnhA\u201d (states #9 and 10).",
+                                "SHARPR2 activity plots: Tracks were drawn in the UCSC Genome Browser using \u201cCustom Tracks\u201d. Coloring of individual fragments was performed by setting maximum and minimum colors (RGB 0,0,0 and RGB 255,255,0, respectively) to log 2(RNA/DNA) values of 3rd lowest and 3rd highest fragments (two strongest and weakest fragments were removed to avoid strong outliers), and scaling colors of all other fragments linearly between these extremes. Applicants chose to include only ChIP-seq bound TF bars for ChPseq experiments performed in GM12878 cells by the ENCODE project and where the motif (green bar) overlapped driver nucleotides.",
+                                "**SHARPR2 Identifcation of High-Resolution Driver Elements**",
+                                "See Appendix A for details and more information on SHARPR2.",
+                                "**Read Mapping and Data Analysis for Allele-Specific Regulatory Activity**",
+                                "Applicants used vcf-consensus (VCFTools) to mask the hg19 genome assembly by replacing heterozygous nucleotides identified by the Illumina NA12878 Platinum Genome with N's. 250nt paired-end MiSeq reads were trimmed using cutadapt to remove Illumina primer sequences, mapped to the NA12878-masked hg19 assembly using bowtie2 v2.2.9 (settings: --end-to-end --phred33 --sensitive -p 7 -N 1 --no-unal), and filtered using the steps described above for 37nt reads. As some long reads have poor quality scores at their 3\u2032 end, Applicants trimmed low quality sequences (quality value <38) to reduce the proportion of sequencing errors at SNPs that could lead to incorrect allelic assignment of fragments. Fragments were then assigned to a SNP based on genotype at the position. For comparisons of SNP activity, Applicants only considered fragments with 90% mutual overlap to reduce the confounding effect of fragments that differ by both allele and position. Applicants also removed fragments if either end was within 25nt of a driver element, as in these cases small differences in end position could artifically lead to large effects. After assigning fragment abundances (from high-depth 37nt PE read sequencing) to each allele of a SNP, Applicants identified SNPs with significant differential activity using QuASAR-MPRA. CENTIPEDE SNPs were identified by Moyerbrailean et al. (2016) using an effect-size cut-off of >3 or <\u22123, following the cut-offs used by Kalita et al. (2017)24,25.",
+                                "**URLs and Data Availability**",
+                                "All high-throughput sequencing data generated by this study has been deposited in NCBI GEO with accession GSE104001. Processed HiDRA plasmid input, RNA output, activity, as well as active fragments and driver elements can be visualized on the UCSC genome browser at: genome.ucsc.edu/cgibin/hgTracks?hgSdoOtherUser-submit&hgS_otherUserName=xinchenw&hgS_otherUserSessionName=HiDRA_GM12878_092617.",
+                                "The SHARPR2 R package is currently available from R-forge at:",
+                                "r-forge.rproject.org/R/?group_id=2288,\n\nand will also be available from CRAN pending package approval.",
+                                "**Supplementary Notes for Methods Section**",
+                                "0) Note on HiDRA insert size\u2014Applicants recommend caution before trying very large fragments (e.g. 800nt and above) in HiDRA or STARR-seq. If sequencing on an Illumina machine, fragments of this size do not cluster efficiently and can lead to poor sequencing results. Applicants tried a library with a wide length distribution of 600-1.5 kb, and found that large fragments (800nt and above) were very poorly represented in plasmid samples. Surprisingly, some of the strongest \u201cactive\u201d regions in RNA output were large fragments (1 kb and above)\u2014this is likely an artificial signal due to internal splicing of some large fragments, creating a smaller fragment that is very efficiently sequenced. A more detailed study of this artifact could yield insights into RNA splicing of nongenic regions and the evolution of new genes.",
+                                "1) Applicants performed 16 ATAC-seq reactions on 50,000 GM12878 cells each. Applicants chose to perform extra ATAC-seq reactions to ensure high library complexity, but performing so many reactions is not necessary if initial cell/tissue amount is an issue.",
+                                "2) 16 reactions chosen to maintain high library complexity and allow for low cycle number based on slide 67 from www.broadinstitute.org/files/shared/illuminavids/SamplePrepSlides.pdf. Applicants did not quantify library complexity with fewer reactions, but if reagents or time are an issue, reducing number of reactions will probably have minimal effect on the library.",
+                                "3) Mitochondrial fragment depletion was useful, however for future studies Applicants recommend designing a denser set of gRNAs to achieve greater amounts of depletion to save on high-throughput sequencing costs later.",
+                                "4) In subsequent tests Applicants found that in our hands that the NEBuilder HiFi DNA Assembly enzyme (NEB #e5520) yielded approximately 8-10\u00d7 more bacterial colonies per reaction using the same primers as described here, in our hands. Based on manufacturer's' literature, primers with longer homology arms (20-25 nt overlaps) should yield even greater efficiency.",
+                                "5) Applicants recommend using MegaX DH10B T1R cells, or performing extensive tests if changing to a different line of bacteria. In our hands, Applicants experienced substantially lower transfection efficiencies and greater degree of arcing when using other electrocompetent cells (e.g. NEB 10-beta). Also, if this is your first time performing bacterial electroporations, Applicants recommend practicing a few times with the pUC19 positive control plasmid under different conditions.",
+                                "6) The most important consideration for HiDRA library preparation is the expected complexity (number of unique fragments). If the complexity is too low, there will be insufficient fragments in most regulatory regions for high-resolution mapping. If library complexity is too high, more cells may need to be transfected for reliable activity readings, and DNA and RNA libraries will need to be sequenced to greater depth. While developing HiDRA, Applicants were able to generate plasmid libraries with over 30-50 million unique fragments (almost an order of magnitude greater than the data presented here), however this would require very large sequencing runs. In our experience, library complexity can be controlled in the (bottleneck) homology-based cloning step. Before proceeding through time-consuming and expensive transfection, RNA collection & RNA sequencing steps, Applicants recommend sequencing the plasmid library (MiSeq or spiking into a larger run) to estimate library complexity and proportion of reads within interesting regions (enhancers, promoters, etc).",
+                                "7) As the Oligotex mRNA kits are fairly expensive, another option is to synthesize biotin-labelled capture probes against the reporter gene transcript and perform streptavidin bead pull-down, as described by Tewhey et al. (Cell, 2016), but modifying the probe sequences to match the sgGFP reporter gene on pSTARR-seq_human.",
+                                "8) The Superscript III RT manual recommends using no more than 500 ng of polyA RNA for reverse transcription reactions. As Applicants are only reverse transcribing a single gene and not the entire transcriptome, Applicants reasoned Applicants could use add more polyA RNA per reaction. Applicants selected 2 ug of polyA RNA after performing reverse transcription reactions with increasing amounts of RNA followed by reaction cleanup and 6-cycle PCR to quantify yield.",
+                                "9) If possible Applicants recommend balancing libraries on either a MiSeq or by spiking in on a sequencing run. Applicants have tried Kapa kits, Bioanalyzer and Qubit/Nanodrop, and balancing by MiSeq/sequencing is the best option.",
+                                "10) Applicants always recommend filtering against the ENCODE blacklist regions, especially for ATACseq or ATAC-seq-esque libraries due to the presence of a pseudo-mitochondrial region near the beginning of chr1 that will otherwise substantially affect downstream analyses. Adapter removal is also important if read length is greater than minimum fragment size."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "perform HiDRA library construction",
+                                "introduce ATAC-seq reactions",
+                                "describe cell collection and lysis",
+                                "perform Tn5 digestion and cleanup",
+                                "split eluate into PCR reactions",
+                                "perform PCR using custom primers",
+                                "pool and clean up PCR reactions",
+                                "run on agarose gel and perform size selection",
+                                "purify DNA using MinElute Gel Extraction kit",
+                                "treat with anti-mitochondrial DNA CRISPR/Cas9 library",
+                                "clean up reaction and split into PCR reactions",
+                                "perform second round of PCR",
+                                "clean up PCR products using AMPure bead selection",
+                                "quantify using Qubit dsDNA HS Assay kit",
+                                "generate pSTARR-seq_human plasmid library",
+                                "perform cloning of fragment library into plasmid backbone",
+                                "transform into electrocompetent bacteria",
+                                "recover and incubate bacteria",
+                                "estimate number of clones in library",
+                                "collect and purify plasmids from bacteria",
+                                "quantify plasmid concentration using Nanodrop One machine",
+                                "ensure plasmid library quality and diversity",
+                                "amplify fragment library by PCR",
+                                "run on Illumina MiSeq machine",
+                                "align to human genome",
+                                "describe cell culture and transfections",
+                                "prepare GM12878 cells for transfection",
+                                "transfect cells with plasmid library",
+                                "recover and incubate transfected cells",
+                                "isolate RNA from transfected cells",
+                                "generate cDNA from mRNA",
+                                "perform qPCR to test amplification of cDNA",
+                                "perform PCR to amplify cDNA",
+                                "clean up and balance PCR reactions for sequencing",
+                                "sequence libraries on NextSeq 500 machine",
+                                "map reads to human genome",
+                                "identify unique fragments and filter reads",
+                                "group fragments into fragment groups",
+                                "identify significantly up-regulated fragment groups",
+                                "analyze active HiDRA regions",
+                                "provide URLs and data availability"
+                            ],
+                            "num_characters": 20635,
+                            "outline_medium": [
+                                "perform HiDRA library construction",
+                                "introduce ATAC-seq reactions",
+                                "describe cell collection and lysis",
+                                "outline Tn5 digestion and cleanup",
+                                "perform PCR and cleanup",
+                                "describe size selection of ATAC-seq fragments",
+                                "treat with anti-mitochondrial DNA CRISPR/Cas9 library",
+                                "perform second round of PCR",
+                                "describe plasmid library construction",
+                                "generate linear backbone",
+                                "perform InFusion HD cloning reactions",
+                                "transform into electrocompetent bacteria",
+                                "describe cell culture and transfections",
+                                "perform RNA isolation and cDNA generation",
+                                "generate cDNA from mRNA",
+                                "describe library construction and high-throughput sequencing",
+                                "perform qPCR to test amplification",
+                                "identify significantly up-regulated fragment groups",
+                                "analyze active HiDRA regions",
+                                "describe read mapping and data analysis for allele-specific regulatory activity"
+                            ],
+                            "outline_short": [
+                                "construct HiDRA library",
+                                "perform cell culture and transfections",
+                                "isolate RNA and generate cDNA",
+                                "construct and sequence HiDRA library",
+                                "map reads and process data",
+                                "identify significantly up-regulated fragment groups",
+                                "analyze active HiDRA regions",
+                                "identify high-resolution driver elements using SHARPR2",
+                                "analyze allele-specific regulatory activity",
+                                "provide URLs and data availability"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of identifying genomic enhancer regulatory elements comprising:\nfragmenting genomic DNA at accessible chromatin in a population of cells thereby generating genomic DNA fragments, wherein said fragmenting comprises transposition;\namplifying the genomic DNA fragments;\nenriching the amplified genomic DNA fragments by size;\nintegrating the enriched fragments into a vector to obtain a vector library, wherein the vector encodes a reporter gene and the enriched fragments are integrated into an untranslated region (UTR) of the reporter gene, whereby transcription of the reporter gene results in a transcript comprising the integrated fragment sequence;\ntransfecting or transducing a cell line with the vector library, wherein the transcript comprising the integrated fragment sequences is expressed in the cell line; and\nsequencing the transcript expressed in the cell line, whereby integrated fragments comprising enhancer activity are identified.",
+        "2. The method according to claim 1, wherein the amplified genomic DNA fragments are selected for a size between about 150 and about 500 nucleotides long.",
+        "3. The method according to claim 1, wherein the amplified genomic DNA fragments are selected for a size between about 230 and about 500 nucleotides long.",
+        "4. The method according to claim 1, wherein the enriched fragments are integrated in a UTR downstream of the reporter gene.",
+        "5. The method according to claim 1, further comprising removing mitochondrial DNA.",
+        "6. The method according to claim 5, wherein the mitochondrial DNA is removed using a CRISPR system comprising guide sequences targeting the mitochondrial DNA sequences, wherein the mitochondrial DNA is cleaved.",
+        "7. The method according to claim 5, wherein the mitochondrial DNA is removed after the enriching the amplified genomic DNA fragments and before the integrating the enriched fragments.",
+        "8. The method according to claim 1, wherein the vector is a plasmid.",
+        "9. The method according to claim 1, wherein the vector is a viral vector.",
+        "10. The method according to claim 9, wherein the viral vector is a lentiviral vector.",
+        "11. The method according to claim 1, wherein the integrated fragments comprising enhancer activity is identified by measuring a ratio of a number of RNA sequencing reads comprising a fragment to the representation of the fragment in a non-transfected vector library.",
+        "12. The method according to claim 1, wherein the integrated fragments comprising enhancer activity is identified by comparing a sequenced genomic fragment to the chromatin state of a genomic locus of the fragment in the cell line, wherein fragments present in an enhancer chromatin state are selected.",
+        "13. The method according to claim 12, wherein the enhancer chromatin state comprises H3K27ac (histone H3 lysine 27 acetylation) and H3K4me1 (histone H3 lysine 4 mono-methylation).",
+        "14. The method according to claim 1, wherein the integrated fragments comprising enhancer activity is identified by comparing a sequenced genomic fragment to Long-Terminal-Repeat (LTR) retrotransposon sequences, wherein LTR sequences are not selected.",
+        "15. The method according to claim 1, further comprising detecting expression of the reporter gene in the cell line and sorting cells in the cell line based on expression levels of the reporter gene.",
+        "16. The method according to claim 1, wherein the population of cells is obtained from a tissue sample.",
+        "17. The method according to claim 1, wherein the population of cells is a tissue-specific cell line.",
+        "18. The method according to claim 1, wherein the population of cells is obtained by pooling cells or tissues from more than one individual.",
+        "19. The method according to claim 1, wherein the population of cells comprise immune cells.",
+        "20. The method according to claim 1, wherein the population of cells comprise cancer cells.",
+        "21-42. (canceled)"
+    ]
+}

@@ -1,0 +1,667 @@
+# DESCRIPTION
+
+## RELATED APPLICATION DATA
+
+- claim priority to provisional applications
+
+## FIELD
+
+- define field of invention
+
+## BACKGROUND
+
+- motivate therapeutic energy delivery
+- discuss advantages of non-invasive delivery
+
+## SUMMARY
+
+- introduce focused ultrasound systems
+- describe high-intensity, moderate-intensity, low-intensity ultrasound
+- track target region position during therapy
+- use ultrasound imaging and/or beacon for tracking
+- maintain focus on target region during treatment
+- describe variations of methods, devices, and systems
+- introduce ultrasound delivery system with transducer array
+- control movement of transducer array
+- detect treatment region with detector
+- track position of treatment region
+- determine position of treatment region relative to transducer array
+- introduce ultrasound transceiver module
+- connect transceiver module to transducer array and detector
+- introduce computing unit
+- connect computing unit to transceiver module and actuator
+- determine position of treatment region relative to transducer array
+- track position of treatment region during therapy
+- introduce ultrasound imaging transducer array
+- detect beacon with three or more ultrasound receivers
+- deliver focused ultrasound energy off-axis
+- introduce semi-annular transducer elements
+- introduce snap fit or press fit transducer configuration
+- introduce three-dimensional printing process
+- introduce therapeutic ultrasound system with applicator
+- provide at least three degrees of freedom of movement
+- introduce ultrasound transducer array in chamber
+- couple transducer array to housing through second mover
+- introduce membrane for coupling applicator to patient's body
+- introduce first orientation sensor
+- introduce second orientation sensor
+- introduce water conditioner
+- detect treatment region with detector
+- track movement of treatment region during therapy
+- introduce detector with ultrasound receivers
+- introduce generator with computing unit and ultrasound transceiver
+- deliver focused ultrasound energy to treatment site
+- introduce method of delivering focused ultrasound
+- determine treatment plan
+- move ultrasound array to target treatment region
+- deliver focused ultrasound energy
+- verify change in orientation of ultrasound array
+- calculate required movement of ultrasound array
+- verify orientation change of ultrasound array
+- introduce method of delivery of focused ultrasound field
+- generate phase table
+- generate power table
+- combine phase table, power table, and time control sequence
+- deliver focused ultrasound energy
+- track target position prior to generating phase table
+- use ultrasound imaging detector to track target position
+- introduce method for delivery of focused ultrasound
+- drive same voltage across all output channels
+- pulse-width modulate electrical energy
+- deliver focused ultrasound field to treatment site
+- introduce therapeutic ultrasound transducer
+- describe transducer elements packaging
+- specify substrate formation process
+- detail three-dimensional printing process
+- describe processor configuration for receiving input
+- introduce imaging probe
+- describe imaging probe components
+- detail processor configuration for interpreting input
+- describe processor configuration for determining blood vessel position
+- introduce graphical user interface
+- describe therapeutic ultrasound transducer ridges
+- specify transducer element tolerance
+- describe system calibration procedure
+- introduce processor tracking region of interest
+- describe algorithm for comparing regions of interest
+- specify modulation techniques for output pulse
+- introduce electromechanical mover
+- describe therapeutic ultrasound transducer energy provision
+- introduce processor tracking target region
+- describe ultrasound imaging and signal beacon
+- introduce applicator and detector
+- describe detector components
+- introduce ultrasound transceiver module
+- describe transducer element shape
+- introduce first mover and second mover
+- describe therapeutic ultrasound transducer location
+- introduce orientation sensors
+- describe water conditioner
+- introduce detector with ultrasound receivers
+- describe generator and ultrasound transceiver
+- introduce treatment plan and processor configuration
+- describe processor configuration for determining required movement
+
+## DETAILED DESCRIPTION
+
+- introduce patent application structure
+- define scope of invention
+- describe variations of embodiments
+- outline clinical applications
+- explain singular and plural referents
+
+### I. System Layout
+
+- introduce therapeutic ultrasound system
+- describe system configuration
+- illustrate system components
+- explain generator functionality
+- describe water conditioner functionality
+- illustrate treatment module components
+- describe treatment transducer array
+- explain actuator functionality
+- illustrate acoustic coupling interface
+- describe applicator functionality
+- illustrate ball joint functionality
+- describe shaft movement
+- illustrate treatment module housing
+- describe membrane functionality
+- explain articulating joint functionality
+- describe patient platform functionality
+- illustrate treatment module positioning
+- describe tracking functionality
+- explain beacon functionality
+- describe imaging system functionality
+- illustrate ultrasound imager functionality
+- describe treatment process
+- explain catheterization procedure
+- describe targeting catheter functionality
+- illustrate applicator engagement
+- describe receiver functionality
+- explain ATOF signal transmission
+- describe treatment plan implementation
+
+### II. System Functionality
+
+- describe GUI functionality
+- introduce primary GUI features
+- describe secondary GUI features
+- introduce image detector functionality
+- describe camera monitor features
+- list camera monitor uses
+- introduce FIG. 11
+- describe generator features
+- introduce ultrasound transceiver module
+- describe computational subsystem
+- introduce treatment transducer features
+- describe controlled movements
+- introduce system controller
+- describe water conditioner features
+- introduce treatment process
+- describe initial target identification
+- describe manual applicator positioning
+- describe automated treatment process
+- introduce targeting catheter features
+- describe beacon excitation
+- describe triangulation calculation
+- describe applicator positioning check
+- introduce treatment delivery
+- describe treatment compensation
+- introduce FIG. 13
+- describe computing unit features
+- introduce ultrasound transceiver module features
+- describe electronic interface board features
+- introduce treatment transducer array features
+- describe phased-array features
+- introduce mover features
+- describe treatment module features
+- introduce generator features
+- describe portable cart features
+- introduce FIG. 17
+- describe functional block diagram
+- introduce electrical power monitoring unit
+- describe high voltage power supply features
+- describe system functionality
+- monitor electric current drawn by generator
+- detect performance/condition of transducers
+- stop treatment process and alert operator
+- include position and/or orientation sensors
+- detect position and/or orientation of treatment array
+- use capacitive transducer, linear variable differential transformer, etc.
+- determine orientation of treatment transducer array
+- monitor orientation during treatment process
+- execute treatment plan with focused ultrasound treatment
+- target first treatment region
+- deliver focused ultrasound energy
+- verify changes in orientation of treatment array
+- calculate required movement of treatment array
+- verify orientation changes of treatment array
+- determine required angular rotation of treatment array
+- verify orientation changes of treatment array
+- couple 3D orientation sensor to applicator
+- monitor orientation of applicator
+- adjust position of applicator
+- use base mover to adjust position of applicator
+- monitor temperature within applicator
+- detect error and prompt operator and/or shut down treatment module
+- integrate therapeutic array and system
+- generate control parameters for system
+- compensate for undetermined clinical thermal requirements
+- modify control parameters during calibration or optimization process
+- illustrate functional steps for ultrasound therapeutic system
+- locate target region to be treated
+- track target tissue and maintain focus of treatment transducer array
+- calculate dosage of focused ultrasound for treatment
+- initiate treatment and deliver focused ultrasound
+- conduct post-treatment evaluation
+- illustrate interconnection relationship of generator phase control and output power control
+- generate phase table for focal positions
+- generate power table for power requirements
+- combine phase and power tables
+- evaluate therapeutic array and system integration
+- determine element geometric center
+- determine beam steering area and focal positions
+- calculate phase angle for focusing control
+- calculate time delay for focusing control
+- generate phase table using time delay method
+- generate phase table using phase shift method
+- calculate gain setting values or voltage control parameters
+- extract electrical impedances and phases of treatment transducer array
+- select operating frequency
+- implement pulse-width modulation
+- describe pulse width modulated waveform
+- define pulse width modulation duty cycle
+- express waveform in frequency domain
+- adjust pulse width modulation for uniform power intensity
+- describe energy distribution among harmonics
+- determine electrical power distribution of array elements
+- calculate electrical power applied on each array element
+- adjust pulse width modulation for equal electrical intensity
+- select reference element with average element area and pulse width
+- adjust PWMDC for other elements relative to reference element
+- limit PWMDC to specific range
+- describe example of system pulse width modulation
+- describe voltage control and ATOF transformer ratio determination
+- calculate pulse width modulation duty cycle for specific transducer element
+- determine electrical power distribution of treatment array elements based on element contribution at focus
+- adjust pulse width of each control channel to proper value
+
+### III. Treatment Transducer Array
+
+- describe treatment transducer array designs
+- introduce array geometry
+- motivate specific ultrasound field pattern
+- describe system configuration for delivering specific ultrasound energy
+- specify ultrasound power intensity at focus
+- introduce selective transducer turn-off
+- describe transducer unit components
+- illustrate transducer array unit components
+- describe transducer frame and base frame
+- introduce electrical connectors
+- describe transducer array unit components in exploded view
+- illustrate transducer array unit components in exploded view
+- describe fan-shaped treatment transducer array
+- illustrate fan-shaped treatment transducer array
+- describe concentric pattern of transducer array elements
+- illustrate concentric pattern of transducer array elements
+- describe AFTOF receiver transducer array elements
+- illustrate AFTOF receiver transducer array elements
+- describe ATOF subsystem components
+- illustrate ATOF subsystem components
+- describe ATOF detection algorithm
+- describe ATOF receive elements and pre-amplifiers
+- describe targeting catheter and beacon
+- describe ultrasound receiver elements and applicator
+- describe electronic circuit and transmitter pulse
+- describe analog-to-digital converter and ATOF detection calculation
+- describe ATOF subsystem configuration and parameters
+- introduce treatment transducer array
+- describe actuator and control system
+- illustrate fan shaped configurations of transducer array designs
+- describe array with six sub-lobes
+- describe array with staggered configuration
+- describe array with concaved surface profile
+- describe array with diced or matrices arrangement
+- describe imaging and therapy applications
+- describe multi-channel ultrasound transceiver
+- illustrate concaved profile transducer array
+- describe imaging transducer array
+- describe three-dimensional fabrication process
+- illustrate random set of piezoelectric elements
+- describe single element transducer
+- describe coaxial cable and impedance matching network
+- describe PZT and acoustic matching layer
+- describe phase control to move focus
+- simulate focal spot of array
+- describe ability to generate ultrasound focus without side lobes
+- illustrate substantially flat array
+- describe angled individual transducer elements
+- describe optimized focal depth
+- illustrate multi-element therapeutic ultrasound transducer
+- describe associated ultrasound imaging probe
+- describe fiducials on imaging transducer
+- describe coordinate reference frame
+- describe multiple focal points along axis
+- describe multiple foci through different phasing patterns
+- illustrate bowl shape and pizza slice type shape
+- describe three-dimensional printing process
+- describe calibration of complete therapy array
+- describe auto-calibration technique
+- illustrate concentric ring design
+- describe centered annular array within pie segment shaped aperture
+- illustrate concave array designs
+- describe fan shaped design with six individual concaved plates
+- illustrate combination of fan shaped and circular profile
+- describe staggered or out-of-plane configuration
+- illustrate crescent shaped arrays with circular shaped array
+- describe allocation of surface area for imaging array elements
+- describe imaging array elements in rectangular shaped areas
+- describe exact position of imaging array
+- describe multiple imaging arrays in multiple positions
+- describe advantages of three-dimensional fabrication process
+- describe advantages of auto-calibration technique
+- describe advantages of phase control
+- describe advantages of concaved surface profile
+- describe advantages of fan shaped design
+- describe advantages of staggered or out-of-plane configuration
+- describe advantages of combination of fan shaped and circular profile
+- summarize treatment transducer array designs
+
+### IV. Tracking Beacon
+
+- introduce tracking beacon
+- describe beacon function
+- describe ultrasound emitter
+- describe catheter configuration
+- describe targeting catheter
+- describe catheter advancement
+- describe ultrasound transducer
+- describe PZT transducer
+- describe transducer liner
+- describe guide tube
+- describe electrical wiring
+- describe outer sheath
+- describe acoustic transmission
+- describe electrical isolation
+- describe catheter construction
+- describe PZT transducer dimensions
+- describe transducer liner construction
+- describe flare at distal end
+- describe safety line
+- describe electronic tuning module
+- describe inductor for capacitance matching
+- describe impedance matching
+- describe coax cable
+- describe handle connector
+- describe strain relief
+- describe electrical wiring configuration
+- describe service loop
+- describe primary sheath tubing
+- describe Nitinol mandrel
+- describe twisted pair electrical wiring
+- describe safety wire
+- describe PZT transducer dimensions
+- describe guide tubing
+- describe heat shrink tube
+- describe safety wire configuration
+- describe side opening for guide-wire access
+- describe primary sheath tubing lumens
+- describe epoxy plug
+- describe electrical wiring attachment
+- describe safety wire attachment
+- describe adhesive application
+- describe shrink-wrap tubing
+- describe targeting catheter placement
+- describe treatment planning
+- introduce tracking beacon
+- evaluate stability of targeting catheter beacon
+- determine location of targeting catheter beacon
+- describe shaped targeting catheter
+- describe ultrasound energy detection
+- describe complex patterns on catheter
+- launch treatment procedure software
+- configure system to prompt user for patient information
+- describe ATOF receivers for detecting ultrasound signals
+- calculate position of beacon relative to treatment transducer array
+- adjust position and orientation of treatment transducer array
+- describe applicator with movable treatment transducer array
+- select transducer array for treatment
+- verify installed transducer array
+- suggest suitable transducer array based on patient information
+- display position applicator screen
+- adjust targeting catheter drive voltage and frequency
+- adjust ATOF receiver sensors' parameters
+- target desired tissue for therapy
+- display remote targeting monitor
+- describe ATOF signal detection and display
+- control treatment applicator functions
+- manipulate treatment module for targeting
+- optimize targeting catheter and ATOF parameters
+- switch off ATOF sensors if necessary
+- position targeting catheter for treatment
+- lock treatment module ball and base
+- specify therapy plan
+- select dose per protocol
+- calculate proposed therapy plan
+- display warning for excessive acoustic power
+- initiate therapy delivery
+- assess targeting quality at each treatment position
+- perform pre-treatment angiogram
+- verify targeting catheter position
+- initiate administration of therapeutic ultrasound treatment
+- track therapy progress
+- display lesion plan
+- end treatment session
+- perform post-treatment angiogram
+- describe imaging transducer array for tracking target tissue
+- describe separate imaging and treatment arrays
+- describe 2D or 3D imaging array
+- describe actuator-controlled imaging array
+- describe tracking target tissue with imaging array
+- describe multiplexing of imaging and therapy functions
+
+### VII. Control
+
+- illustrate steps to perform focus ultrasound therapy
+- control, monitor, and automate steps through computer control
+- introduce software configuration for therapeutic system
+- describe treatment planning and delivery subsystem
+- outline GUI and UI components
+- illustrate therapy system controller and treatment planning
+- describe hardware layer and abstraction
+- outline application layer and its functions
+- describe cross-cutting layer and its services
+- illustrate dynamic view of software system
+- describe independently executing threads
+- outline top-level states of therapeutic system
+- illustrate patient session states
+- describe condition handling process
+- outline stages in condition handling
+- describe power-on self-test (POST)
+- outline system readiness checks
+- describe patient setup process
+- outline patient setup functions
+- describe therapy delivery process
+- outline therapy delivery functions
+- describe system software support for hardware subsystems
+- outline motor controller interface
+- describe water conditioner interface
+- outline power and transducer monitor interface
+- describe high voltage power supply interface
+- outline remote display interface
+- describe ultrasound transceiver interface
+- outline system operational parameter monitoring
+- describe monitored parameters
+- outline notification and response to out-of-limits conditions
+- describe logging of monitored values
+- outline system configuration for condition handling
+- describe pause and resume of therapy delivery
+- outline system heartbeat and status publishing
+- describe system shutdown on error
+- outline data collection and recording
+- describe water conditioning unit functions
+- outline applicator positioning assistance
+- describe targeting and dosing of tissues
+
+### VIII. System Conditioning and Boundary Conditions
+
+- define condition
+- motivate operational conditions
+- list operational conditions
+- motivate performance conditions
+- list performance conditions
+- motivate error conditions
+- list error conditions
+- distinguish workflow errors
+- distinguish normal system corrections
+- outline steps to address a condition
+- describe detection of a condition
+- describe workflow interruption
+- describe operator notification
+- describe operator acknowledgement
+- describe resolution
+- define condition components
+- describe condition number and description
+- describe when detected
+- describe dialog text
+- describe audible notification
+- describe pause/stop therapy
+- describe recovery state
+- describe can resume therapy after shutdown
+- describe other system actions
+- prioritize conditions
+- describe recovery states
+- describe detected states
+
+### IX. Treatment Module
+
+- describe treatment module
+- introduce treatment transducer array
+- explain cooling of transducer array
+- describe mover A
+- detail mover A components
+- explain mover A operation
+- describe treatment applicator
+- detail treatment applicator components
+- explain treatment applicator operation
+- describe membrane
+- explain membrane function
+- describe array mover
+- explain array mover function
+- describe treatment module base
+- detail treatment module base components
+- explain treatment module base operation
+- describe handles
+- explain handle functions
+- describe switches
+- explain switch functions
+- describe tubing
+- explain tubing functions
+- describe momentary-rocker switches
+- explain momentary-rocker switch functions
+- describe FIG. 128
+- describe FIG. 129
+- describe FIG. 130
+- describe exploded view of applicator
+- detail applicator components
+- describe ball joint
+- explain ball joint function
+- describe FIG. 132
+- describe FIG. 133
+- describe FIG. 134
+- describe exploded view of actuation unit
+- detail actuation unit components
+- describe mechanical joint
+- explain mechanical joint function
+- describe FIG. 137
+- describe FIG. 138
+- describe FIG. 139
+- describe FIG. 140
+- describe push rods
+- explain push rod function
+- describe FIG. 143
+- describe FIG. 144
+- describe treatment transducer unit modules
+- describe treatment transducer unit arrangement
+
+### X. Interface Cooling and Monitoring
+
+- describe nosecone for applicator
+- illustrate nosecone structure
+- explain fluid input and output ports
+- describe fluid pathway in nosecone wall
+- detail channel in rim of nosecone
+- explain fluid flow through channel
+- describe inner ports for fluid flow
+- illustrate output port for fluid removal
+- explain water conditioner functionality
+- describe temperature sensor application
+- introduce image detector for interface monitoring
+- describe image detector positioning
+- explain image detector capabilities
+- illustrate image detector in nosecone
+- describe image detector viewing area
+- explain image detector focusing capabilities
+- describe pattern recognition process
+- illustrate bubble detection process
+- explain detection threshold settings
+- describe multiple image detector configurations
+- illustrate image detector on treatment array unit
+- describe image detector movement with array
+- illustrate multiple image detector variations
+- describe image detector positioning on applicator
+- explain image detector use for transducer array orientation
+- describe image detector use for membrane inflation detection
+- explain image detector use for patient movement detection
+- describe image detector use for treatment module placement
+- explain image detector use for fiducial mark visualization
+- describe light source use for image enhancement
+- explain infrared imaging capabilities
+- describe image detector use for ultrasound therapy beam imaging
+- explain image processing for bubble detection
+- describe IR imaging for temperature detection
+- introduce bubble removing device
+
+### XI. Water Conditioner
+
+- introduce water conditioner
+- describe water conditioner components
+- detail water conditioning components
+- describe air pressure and vacuum components
+- detail electrical components
+- describe power supply configuration
+- detail USB communication port
+- describe RS-422 ports
+- control and modify pressure of coupling fluid
+- describe pressure sensors
+- control air pressure and suction
+- measure air flow and pressure
+- describe FIG. 163
+- detail dry box assembly
+- detail wet box assembly
+- describe membrane contactors
+- detail vacuum and pressure chamber
+- describe water reservoir
+- describe water chiller
+- describe electromagnetic interference filter
+- detail power entry enclosure
+- describe voltage selection switch
+- describe fuse holder panel mount
+- describe upper control panel
+- describe lower interface panel
+- detail back panel components
+- describe water conditioner operation
+- describe autonomous operation
+- describe treatment module positional controls
+- describe water temperature control
+- describe communication with computing unit
+- describe motor controller units
+- describe encoder cables
+- describe stepper motor drive controller units
+- describe communication port
+- describe stepper motor drive wires
+- describe water conditioner configuration
+- introduce water conditioner
+- describe operator control over treatment planning and control subsystem
+- detail therapeutic focal spot alignment
+- monitor DC power consumption
+- notify user of excessive current consumption
+- describe lesion pattern generation
+- detail pattern of focal positions
+- determine focal position depth
+- generate overlapping lesion patterns
+- calculate acoustic output power level
+- derive power calculation from input parameters
+- program power level for each lesion
+- calibrate system in average power
+- configure system to generate maximum power
+- execute intra-lesion cycles
+- track targeting catheter during treatment
+- verify therapeutic beam delivery
+- display treatment plan data to operator
+- check operator inputs for valid ranges
+- prevent administration of excessive dose
+- sequence operations for setting and delivering dose
+- calculate power in watts
+- limit power to prevent excessive dose
+- display power limits to operator
+- calculate electrical current expected for watts
+- define over-current limit
+- create treatment plan using calculated watts
+- send watts to transceiver module
+- convert watts to therapy voltage
+- monitor current during therapy
+- disable power supply on over-current condition
+- notify operator of over-current condition
+- implement additional safeguards to prevent out-of-bounds parameters
+- introduce phase aberration correction
+- apply phase aberration correction to refine phase control
+- adjust phase data based on modeling of physiology data
+- modify phase data based on time-of-flight calculations
+- detect signal generated by beacon
+- make phase adjustments based on signal travel time
+- implement control button for phase aberration correction
+- input control parameters for phase aberration correction
+- illustrate functional steps for phase aberration correction
+- describe performance improvements after phase aberration correction
+

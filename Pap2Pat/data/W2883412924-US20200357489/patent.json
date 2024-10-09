@@ -1,0 +1,233 @@
+{
+    "id": "US20200357489",
+    "authors": [
+        "Liming Cheng",
+        "Rongrong Zhu",
+        "Yanjing Zhu"
+    ],
+    "title": "DEEP LEARNING-BASED QUICK AND PRECISE HIGH-THROUGHPUT DRUG SCREENING SYSTEM",
+    "date": "2018-11-30 00:00:00",
+    "abstract": "A deep learning-based quick and precise high-throughput drug screening system, comprising a picture preprocessing module and a neural network module. The picture preprocessing module comprises a channel merging module and a picture standardization module. The channel merging module merges different cell single-color channel pictures into a multi-channel picture representation, and the tensor of the picture obtained after the merging is represented as [H,W,C]; the picture standardization module standardizes input multi-channel picture data into the tensor representation of [70,70,C]; the neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the tensor of the standardized picture, and final predictive classification determination is implemented by the trained neural network. The established deep learning-based drug screening system DeepScreen has the advantages of high throughput, precision, high efficiency, high speed, convenience, low costs and interference resistance, and has a practical application prospect worth concerning.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention refers to the technical field of biomedicine and artificial intelligence, particularly to a deep learning-based quick and precise high-throughput drug screening system."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce biomedicine and artificial intelligence"
+                    ],
+                    "num_characters": 190,
+                    "outline_medium": [
+                        "introduce technical field of biomedicine and artificial intelligence"
+                    ],
+                    "outline_short": [
+                        "introduce biomedicine and artificial intelligence"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "According to statistics, it takes 10-14 years for each new drug from research, testing to product launch, costing more than US$200 million. How to speed up the discovery and testing of new drugs has always been the key and difficult point of accelerating drug development. In recent years, the development of disciplines such as biochemistry, physiology and pathology has led to new methods for drug screening, such as some molecular and cellular drug screening models. High throughput screening technology (HTS) was developed in the late 1990s based on the described models and the development of more advanced detection technology, automation technology and computer technology. HTS relies mainly on automated operating systems, ie laboratory robot and high-sensitivity detection methods, including spectrophotometry and fluorescence detection technology. The emergence of HTS has greatly accelerated the speed of drug screening, but it still has great limitations, including high cost, difficulty in model establishment, and limited number of models. China started late in the study of drug screening systems, and only a few national key laboratories have HTS systems. Laboratory robots are difficult to popularize due to their high cost, and various detection methods are still inseparable from manual statistics and analysis.",
+                        "To the present, new drug screening technology has been increasingly combined with rapidly improving computer technology. In previous studies, computer technology was mostly used for the statistical processing of experimental data and the analysis and classification of existing features. Further applications of computer technology include computer-aided drug design. In recent years, there have been some studies applying machine learning to improve the effect of virtual screening. However, although virtual screening plays an important role in drug screening, it still relies on the existing small molecule database and various features that have been artificially classified, which is not enough to reflect the actual application efficacy of drugs. Various scientific research institutions and laboratories need a new drug screening system that can be used to evaluate drug efficacy. The drug screening system must have the advantages of high accuracy, strong anti-interference ability, short time consumption and low costs rather than the high cost like laboratory robots, and not limited by the existing database and artificial feature classification.",
+                        "In summary, the existing drug screening system cannot meet the growing scientific research needs. Therefore, it is critical to establish a simple, efficient, accurate, and low-cost high-throughput drug screening system. We consider applying machine learning methods to the establishment of laboratory drug screening systems.",
+                        "Deep learning is a branch of machine learning. Its concept is derived from the research of artificial neural networks. According to imitating the mechanism of the human brain to observe and interpret various data, it combines low-level features to form high-level representation attribute categories, thereby discovering distributed characteristics of data. Deep learning has become a research hotspot in the field of artificial intelligence in recent years because that its training process can extract and integrate features, collect and process large data, and has excellent universal applicability.",
+                        "Chinese Patent Application No. 2017101273955 disclosed an intelligent lead compound discovery method based on convolutional neural network, which solves the problems of low efficiency and low accuracy of current lead compound virtual screening. In this method, first, the structural formula of the compound is transformed into a plane picture, and the black-and-white and anti color processing are carried out. Then all the pictures are classified according to the active attributes of the compounds, labeled with numbers according to the categories, and input into the system. Next, a part of the pictures are selected as training set for the convolutional neural network to learn how to classify deeply, and the rest of the pictures are used as test set to evaluate the model. Finally, after the deep learning is completed, a same processed picture other than the training set and the test set is input to the system to calculate the probability that the compound on the picture has a certain active attribute.",
+                        "However, the deep learning-based quick and precise high-throughput drug screening system of the present invention has not been reported so far."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate drug development",
+                        "describe high-throughput screening technology",
+                        "limitations of high-throughput screening technology",
+                        "application of computer technology",
+                        "motivate machine learning",
+                        "limitations of virtual screening",
+                        "need for new drug screening system",
+                        "introduce deep learning",
+                        "describe Chinese Patent Application No. 2017101273955"
+                    ],
+                    "num_characters": 4578,
+                    "outline_medium": [
+                        "motivate need for new drug screening system",
+                        "describe limitations of current high-throughput screening technology",
+                        "discuss application of computer technology in drug screening",
+                        "highlight importance of establishing a new drug screening system"
+                    ],
+                    "outline_short": [
+                        "motivate need for quick drug screening",
+                        "limitations of current drug screening systems"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "In the present invention, a deep learning-based quick and precise high-throughput drug screening system is established, using deep learning method to train data for the first time. The system has the advantages of high accuracy, high efficiency, high speed and anti-interference, which greatly shortens the time to judge the drug efficacy, and is expected to replace the existing experimental methods drug evaluation.",
+                        "In one aspect, the present invention provides a deep learning-based quick and precise high-throughput drug screening system, said deep learning-based quick and precise high-throughput drug screening system comprises a picture preprocessing module and a neural network module; said picture preprocessing module comprising a channel merging module and a picture standardization module; the input data of said channel merging module are single-color channel pictures of cells, said channel merging module merges different cell single-color channel pictures into a multi-channel picture representation, and the tensor of the picture obtained after the merging is represented as [H,W,C]; said picture standardization module functions subsequent to said channel merging module, the input data of said picture standardization module is the tensor of merged picture, said picture standardization module standardizes the input multi-channel picture data into the tensor representation of [70,70,C], the standardization method is as follows:",
+                        "1) use bicubic interpolation algorithm to transform the picture tensor of [H, W, C] to [70, 70, C];",
+                        "2) treat the picture tensor after interpolation by regularization method;",
+                        "said neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the tensor of the standardized picture, and final predictive classification determination is obtained by the trained neural network. Said predictive classification determination is as follows:",
+                        "In a preferred embodiment, the network structure of said neural network module is as follows:",
+                        "More preferably, the network structure of said sub-network module 1 is as follows:",
+                        "More preferably, the network structure of said sub-network module 2 is as follows:",
+                        "More preferably, the network structure of said sub-network module 3 is as follows:",
+                        "In another preferred embodiment, the training method of neural network is as follows: train neural network on two NVIDIA GTX 1080ti video cards by using TensorFlow framework; use Adam optimizer as training optimizer and determine the corresponding training parameters as: learning rate 0.001, beta1 0.9, beta2 0.999, epsilon 1e-8.",
+                        "In another aspect, the present invention provides a method of deep learning-based quick and precise high-throughput drug screening, comprising:",
+                        "1) treating A549 cells and HepG2 cells with traditional medicine and nano medicine for two hours and six hours respectively, then staining with fluorescent antibody and getting the cell picture;",
+                        "2) inputting cell single-color channel pictures into a image preprocessing module to obtain standardized picture data;",
+                        "3) importing standardized picture data into neural network module to obtain final predictive classification determination.",
+                        "In a preferred embodiment, said picture preprocessing module comprising a channel merging module and a picture standardization module; the input data of said channel merging module is cell single-color channel pictures, said channel merging module merges different cell single-color channel pictures into a multi-channel picture representation, and the tensor of the picture obtained after the merging is represented as [H,W,C]; said picture standardization module functions subsequent to said channel merging module, the input data of said picture standardization module is the tensor of merged picture, said picture standardization module standardizes the input data into the tensor representation of [70,70,C], the standardization method is as follows:",
+                        "1) use bicubic interpolation algorithm to transform the picture tensor of [H, W, C] to [70, 70, C];",
+                        "2) treat the picture tensor after interpolation by regularization method;",
+                        "said neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the tensor of the standardized picture, and final predictive classification determination is obtained by the trained neural network.",
+                        "In another preferred embodiment, said predictive classification determination is as follows:",
+                        "In another preferred embodiment, the network structure of said neural network module is as follows:",
+                        "More preferably, the network structure of said sub-network module 1 is as follows:",
+                        "More preferably, the network structure of said sub-network module 2 is as follows:",
+                        "More preferably, the network structure of said sub-network module 3 is as follows:",
+                        "In another preferred embodiment, the training method of neural network is as follows: train neural network on two NVIDIA GTX 1080ti video cards by using TensorFlow framework; use Adam optimizer as training optimizer and determine the corresponding training parameters as: learning rate 0.001, beta1 0.9, beta2 0.999, epsilon 1e-8.",
+                        "The advantages of this invention are as follows:",
+                        "1. The drug screening models based on deep learning in the prior art are all virtual. However, the deep learning-based quick and precise high-throughput drug screening model in this invention can assess the true efficacy of drugs because the model is trained using experimental data.",
+                        "2. The model has a very high test accuracy when used to predict the efficacy of conventional drugs and drugs loaded on drug loading systems, that is, the drug delivery system does not affect the judgment of the model.",
+                        "3. This model can predict the efficacy of drugs with high accuracy, even the drug only acts on cells for 2 hours or 6 hours. Therefore, the consumption time is greatly shortened, but drug efficacy assessment by traditional MTT colorimetry or flow cytometry cannot be completed in such a short time.",
+                        "4. The accuracy of drug efficacy assessment cannot be affected by the autofluorescence of the drug, but traditional methods may get wrong results because of misreading fluorescence data.",
+                        "5. The model has a high accuracy in predicting drug efficacy, regardless of whether the inputted picture is related to antibody-stained cells or not. Of course, the picture of antibody-stained cells can increase its accuracy. So, Users can choose flexibly according to their needs.",
+                        "6. In the model training data set, the fluorescent drug curcumin is involved, which enhances the anti-interference ability of the model.",
+                        "7. Based on the convolutional neural network, the deep learning method is used to build the model, which avoids the assessment error caused by artificial screening features.",
+                        "8. The input data is cell pictures, and the requirements for equipment are low. So, the construction costs and test costs of the system in this invention are very low."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce deep learning-based drug screening system",
+                        "describe system components",
+                        "describe picture preprocessing module",
+                        "describe channel merging module",
+                        "describe picture standardization module",
+                        "describe neural network module",
+                        "describe network structure",
+                        "describe training method",
+                        "describe method of deep learning-based drug screening",
+                        "describe picture preprocessing module",
+                        "describe neural network module",
+                        "describe advantages of invention",
+                        "summarize invention"
+                    ],
+                    "num_characters": 7005,
+                    "outline_medium": [
+                        "introduce deep learning-based quick and precise high-throughput drug screening system",
+                        "describe system components: picture preprocessing module and neural network module",
+                        "outline advantages of system: high accuracy, high efficiency, high speed, and anti-interference",
+                        "describe method of deep learning-based quick and precise high-throughput drug screening",
+                        "highlight benefits of system: replacing existing experimental methods, shortening time to judge drug efficacy",
+                        "summarize advantages of invention"
+                    ],
+                    "outline_short": [
+                        "propose deep learning-based drug screening system",
+                        "describe system components and functionality",
+                        "highlight advantages of the system"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT",
+                    "paragraphs": [
+                        "The invention is further illustrated below in conjunction with specific embodiments. These examples are for illustrative purposes only and are not intended as limitations on the scope of the invention. In addition, changes therein and other uses will occur to those skilled in the art. Such changes and other uses can be made without departing from the scope of the invention as set forth in the claims."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Example 1 A Deep Learning-Based Quick and Precise High-Throughput Drug Screening System",
+                            "paragraphs": [
+                                "In the present invention, the cell pictures are used as input data. After training based on Convolutional Neural Network (CNN), a classification model \u201cDeepScreen\u201d for drug efficiency judgment is generated. The model shows a very high accuracy in the test of drug efficiency. Thus, the problems of the existing high-throughput drug screening systems are solved.",
+                                "The following describes the construction process of the drug screening system model.",
+                                "The A549 cells and HepG2 cells were treated with traditional medicine and drugs loaded on drug loading systems for two hours and six hours respectively, then stained with fluorescent antibody and photographed to get the cell pictures of training set.",
+                                "The DeepScreen model mainly includes two parts, the picture preprocessing module and the neural network module. The operation process is as follows:",
+                                "1. input cell single-color channel pictures into the picture preprocessing module to obtain standardized picture data;",
+                                "2. input the standardized picture data into the neural network module to obtain the final predictive classification determination.",
+                                "The final predictive classification determination is as follows:",
+                                "The picture preprocessing module comprises two sub-modules, a channel merging module and a picture standardization module.",
+                                "1. The Channel Merging Module",
+                                "The input data of the channel merging module is cell single-color channel pictures, and each color channel is derived from the corresponding cell coloring channel. These cell single-color channel pictures must have the same height H and width W. The channel merging module merges these cell single-color channel pictures into a multi-channel picture representation. If the number of color channels input at one time is C, the tensor of the picture obtained after the merging is represented as [H, W, C].",
+                                "2. The Picture Standardization Module",
+                                "The input data of the picture standardization module which functions subsequent to the channel merging module is the tensor of the picture obtained after the merging represented as [H, W, C]. Since the input data of different batches may have different heights H and widths W, the function of the picture standardization module is to standardize the input data into the tensor representation of [70,70,C]. The specific method is as follows:",
+                                "1) use bicubic interpolation algorithm to transform the picture tensor of [H, W, C] to [70, 70, C];",
+                                "2) treat the picture tensor after interpolation by regularization method.",
+                                "The neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the standardized tensor representation of [70,70,C], and final predictive classification determination is obtained by the trained neural network. Network structure is as follows:",
+                                "The network structure of sub-network module 1 is as follows:",
+                                "The network structure of sub-network module 2 is as follows:",
+                                "The network structure of sub-network module 3 is as follows:",
+                                "Training method: We used TensorFlow framework to train neural network on two NVIDIA GTX 1080ti video cards. The training optimizer is Adam optimizer, and the corresponding training parameters are: learning rate is 0.001, beta1 is 0.9, beta2 is 0.999, epsilon is 1e-8.",
+                                "The classification model of the drug screening system constructed above was used to predict drug efficacy to evaluate the accuracy of the model. FIG. 1 shows an example of training data for the neural network. Ch09 and Ch01 are white light channels, Ch11 is red fluorescent staining, Ch02 is green fluorescent channel. The left image shows two fluorescently labeled antibodies staining of A549 group (Ch11, Ch02), and the right image shows a fluorescence stain (red, Ch11) and curcumin spontaneous green fluorescence (Ch02) interference of HepG2 group. The training benchmark settings are shown in the table below. The A549 cells and HepG2 cells were treated with traditional drugs or drugs loaded on drug loading systems that the efficacy are known to obtain the classification settings used for training. In the table below, LDH is a layered double hydroxide, VP16 is etoposide, SLN is lipid nanoparticles, and Cur is curcumin.",
+                                "FIG. 2 is a schematic diagram of the model training and testing process. FIG. 3 shows the training data, test data, and accuracy of the model. K represents white light image data, R represents red channel image data, and G represents green channel image data in FIG. 3. Our research shows that DeepScreen model shows a very high accuracy in the test. Specifically, the accuracy of the model trained by pure white light cell image is as high as 0.7, the accuracy of the model trained by single fluorescent and white light image is as high as 0.87, and the accuracy of the model tested by double fluorescent antibody white light image training is as high as 0.95. Compared with the existing high-throughput virtual drug screening methods based on machine learning, the method of the present invention applies the advantages of machine learning without artificial feature mark to drug evaluation, thereby avoiding the influence of human subjective factors on drug evaluation. Compared with traditional laboratory drug evaluation methods, the DeepScreen model-based method of the present invention has the advantages of high throughput, high accuracy, short time consumption and low costs. In addition, we found that the model has a strong anti-interference ability for the evaluation of drugs with spontaneous fluorescence, and there is no significant difference in the accuracy of the model between drugs with or without fluorescence interference. In conclusion, DeepScreen, a drug screening system based on deep learning, has the advantages of high throughput, precision, high efficiency, high speed, convenience, low costs and interference resistance, and has a practical application prospect worthy of attention.",
+                                "The methods described herein are presently representative of preferred embodiments. It will be apparent to one skilled in the art that various changes and modifications can be made therein without departing from the spirit and scope thereof. Such changes and modifications are intended to be encompassed by the scope of the following claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe construction process of drug screening system model",
+                                "describe picture preprocessing module",
+                                "describe channel merging module",
+                                "describe picture standardization module",
+                                "describe neural network module",
+                                "describe network structure",
+                                "describe training method",
+                                "describe classification model",
+                                "describe training data",
+                                "describe model testing process",
+                                "describe model accuracy",
+                                "summarize advantages of DeepScreen model"
+                            ],
+                            "num_characters": 6241,
+                            "outline_medium": [
+                                "describe construction of DeepScreen model",
+                                "outline picture preprocessing module: channel merging and picture standardization",
+                                "describe neural network module: training and testing process",
+                                "highlight advantages of DeepScreen model: high accuracy, high throughput, and anti-interference",
+                                "compare with existing high-throughput virtual drug screening methods",
+                                "conclude practical application prospect of DeepScreen model"
+                            ],
+                            "outline_short": [
+                                "describe data preparation and preprocessing",
+                                "describe neural network architecture and training",
+                                "evaluate model performance and advantages"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe construction process of drug screening system model"
+                    ],
+                    "num_characters": 403,
+                    "outline_medium": [
+                        "describe construction process of drug screening system model"
+                    ],
+                    "outline_short": [
+                        "describe construction process of drug screening system model"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A deep learning-based quick and precise high-throughput drug screening system, wherein said deep learning-based quick and precise high-throughput drug screening system comprises a picture preprocessing module and a neural network module; said picture preprocessing module comprises a channel merging module and a picture standardization module; the input data of said channel merging module is cell single-color channel pictures, said channel merging module merges different cell single-color channel pictures into a multi-channel picture representation, and the tensor of the picture obtained after the merging is represented as [H,W,C]; said picture standardization module functions subsequent to said channel merging module, the input data of said picture standardization module is the tensor of merged picture, said picture standardization module standardize the input data into the tensor representation of [70,70,C], the standardization method is as follows:\n1) use bicubic interpolation algorithm to transform the picture tensor of [H, W, C] to [70, 70, C];\n2) treat the picture tensor after interpolation by regularization method;\nsaid neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the tensor of the standardized picture, and final predictive classification determination is obtained by the trained neural network.",
+        "2. The deep learning-based quick and precise high-throughput drug screening system of claim 1, wherein said predictive classification determination is as follows:",
+        "3. The deep learning-based quick and precise high-throughput drug screening system of claim 1, wherein the network structure of said neural network module is as follows:",
+        "4. The deep learning-based quick and precise high-throughput drug screening system of claim 3, wherein the network structure of said sub-network module 1 is as follows:",
+        "5. The deep learning-based quick and precise high-throughput drug screening system of claim 3, wherein the network structure of said sub-network module 2 is as follows:",
+        "6. The deep learning-based quick and precise high-throughput drug screening system of claim 3, wherein the network structure of said sub-network module 3 is as follows:",
+        "7. The deep learning-based quick and precise high-throughput drug screening system of claim 1, wherein the training method of neural network is as follows:\ntrain neural network on two NVIDIA GTX 1080ti video cards by using TensorFlow framework; use Adam optimizer as training optimizer and determine the corresponding training parameters as: learning rate 0.001, beta1 0.9, beta2 0.999, epsilon 1e-8.",
+        "8. A method of deep learning-based quick and precise high-throughput drug screening, comprising:\n1) treating A549 cells and HepG2 cells with traditional medicine and nano medicine for two hours and six hours respectively, then staining with fluorescent antibody and getting the cell picture;\n2) inputting cell single-color channel pictures into a image preprocessing module to obtain standardized picture data;\n3) importing standardized picture data into neural network module to obtain final predictive classification determination.",
+        "9. The method of claim 8, wherein said picture preprocessing module comprising a channel merging module and a picture standardization module; the input data of said channel merging module is cell single-color channel pictures, said channel merging module merges different cell single-color channel pictures into a multi-channel picture representation, and the tensor of the picture obtained after the merging is represented as [H,W,C]; said picture standardization module functions subsequent to said channel merging module, the input data of said picture standardization module is the tensor of merged picture, said picture standardization module standardizes the input data into the tensor representation of [70,70,C], the standardization method is as follows:\n1) use bicubic interpolation algorithm to transform the picture tensor of [H, W, C] to [70, 70, C];\n2) treat the picture tensor after interpolation by regularization method;\nsaid neural network module functions subsequent to the picture standardization module, the input data of the neural network module is the tensor of the standardized picture, and final predictive classification determination is obtained by the trained neural network.",
+        "10. The method of claim 9, wherein said final predictive classification determination is as follows:",
+        "11. The method of claim 9, wherein the network structure of said neural network module is as follows:",
+        "12. The method of claim 11, wherein the network structure of said sub-network module 1 is as follows:",
+        "13. The method of claim 11, wherein the network structure of said sub-network module 2 is as follows:",
+        "14. The method of claim 11, wherein the network structure of said sub-network module 3 is as follows:",
+        "15. The method of claim 11, wherein the training method of neural network is as follows: train neural network on two NVIDIA GTX 1080ti video cards by using TensorFlow framework; use Adam optimizer as training optimizer and determine the corresponding training parameters as: learning rate 0.001, beta1 0.9, beta2 0.999, epsilon 1e-8."
+    ]
+}

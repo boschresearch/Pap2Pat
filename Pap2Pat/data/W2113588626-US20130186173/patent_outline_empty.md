@@ -1,0 +1,26 @@
+# DESCRIPTION
+
+## FIELD
+
+## BACKGROUND
+
+## SUMMARY
+
+## DETAILED DESCRIPTION
+
+### Blast and Shear Conditions
+
+### EXAMPLE 2
+
+### EXAMPLE 3
+
+### EXAMPLE 4
+
+### EXAMPLE 5
+
+### EXAMPLE 6
+
+### EXAMPLE 7
+
+### EXAMPLE 8
+

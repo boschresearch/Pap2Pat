@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce videoconferencing technology
+- limitations of videoconferencing technology
+- challenges in determining directionality
+- other environments with similar difficulties
+
+## SUMMARY
+
+- introduce communication system
+- receive explicit and implicit control inputs
+- process control inputs to provide outputs
+- select output based on selection criterion
+- adjust indicator position based on output
+- explicit input mechanisms
+- implicit input mechanisms
+- various output mechanisms
+
+## DETAILED DESCRIPTION
+
+- organize disclosure
+- describe illustrative communication system
+- introduce functionality and modules
+- explain terminology
+- describe logic components
+- define optional features
+- introduce illustrative communication system 100
+- describe videoconferencing technology
+- explain meeting environment
+- describe satellite participant interaction
+- introduce attention determination module
+- describe input mechanisms
+- explain explicit input mechanisms
+- describe implicit input mechanisms
+- introduce head position determination mechanism
+- describe eye gaze detection mechanism
+- explain implicit control input
+- describe attention determination module components
+- introduce explicit control processing module
+- describe explicit control output
+- introduce implicit control processing module
+- describe implicit control output
+- explain mode selection module
+- describe selection criteria
+- introduce output mechanisms
+- describe mechanical vane mechanisms
+- describe solid-state vane mechanisms
+- describe display-related vane mechanisms
+- introduce implementation 200
+- describe hub conferencing devices
+- describe satellite conferencing devices
+- explain coupling mechanisms
+- introduce conferencing services
+- describe data stores
+- map functions to devices
+- describe meeting room environment
+- introduce display mechanism
+- describe video camera
+- introduce motor and mechanical pointer
+- describe mechanical pointer functionality
+- introduce FIG. 4
+- describe satellite participant attention shift
+- explain mechanical pointer movement
+- describe attention determination module operation
+- introduce explicit control input processing
+- describe implicit control input processing
+- explain mode selection module operation
+- describe output mechanism operation
+- conclude detailed description
+- describe meeting room setup
+- introduce mechanical pointer
+- describe benefits of mechanical pointer
+- describe directional speaker
+- introduce alternative mechanical pointers
+- describe movable mechanical pointer
+- describe non-movable mechanical pointer
+- describe mechanical pointer with motor
+- introduce solid-state output mechanism
+- describe solid-state display elements
+- introduce rotating display mechanism
+- describe rotating display mechanism
+- introduce visual information output mechanism
+- describe globe representation
+- describe overhead graphical representation
+- describe panoramic representation
+- introduce curved surface display mechanism
+- describe cylindrical curved surface
+- describe spherical curved surface
+- introduce hologram representation
+- describe movable display mechanism
+- introduce handheld computing device
+- describe indicator on handheld computing device
+- describe movement determination mechanism
+- describe position adjustment module
+- introduce satellite participant environment
+- describe display mechanism
+- describe explicit input mechanisms
+- describe implicit input mechanisms
+- introduce visual representations
+- describe graphical or video panoramic representation
+- describe overhead graphical or video representation
+- describe attention determination module
+- describe translating direction of awareness
+- describe predefined positions
+- describe automatic detection of hub participants
+- introduce illustrative processes
+- describe receiving control input
+- describe determining control mode
+- describe driving indicator
+- introduce electrical data processing functionality
+- describe processing devices
+- describe memory
+- describe media devices
+- describe input/output module
+- describe presentation module
+- describe communication buses
+

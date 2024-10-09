@@ -1,0 +1,197 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define wireless digital communication network
+
+## BACKGROUND
+
+- define beam
+- describe path loss
+- describe limitations of higher frequency carrier signals
+- introduce multiple antennas
+- define beam alignment
+- define wireless end device
+- describe massive MIMO
+- describe cell-free massive MIMO network
+- describe limitations of cell-based massive MIMO
+- describe need to decrease spectral interference
+- describe limitations of beam alignment
+
+## SUMMARY
+
+- introduce beam alignment protocol
+- describe apparatus for wireless communication
+- receive information records
+- compute preferred communication channels
+- configure wireless access points
+- describe method for wireless communication
+- receive information records
+- compute preferred communication channels
+- configure wireless access points
+- describe software program product
+- execute program instructions
+- describe wireless access-point device
+- perform beam-alignment protocol
+- receive channel configurations
+- send signals
+- describe method for wireless access-point device
+- perform beam-alignment protocol
+- receive channel configurations
+- send signals
+- describe software program product
+- execute program instructions
+- describe wireless communication device
+- perform beam-alignment protocol
+- receive channel configurations
+- receive signals
+- describe method for wireless communication device
+- perform beam-alignment protocol
+- receive channel configurations
+- receive signals
+- describe software program product
+- execute program instructions
+- configure wireless access points
+- send protocol initialization instruction
+- receive beam-alignment signals
+- compute receive information records
+- send receive information records
+- compute association between access points and data patterns
+- configure access points to transmit beam-alignment signals
+- minimize signal interference
+- associate data patterns with access points
+- compute centroid locations
+- cluster access points
+- compute new centroid locations
+- associate data patterns with access points
+- receive information records
+- compute preferred communication channels
+- configure access points
+- send signals
+- minimize interference between channels
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- introduce cell-free massive MIMO network
+- motivate beam alignment for wireless end devices
+- limitations of existing beam alignment solutions
+- define beam alignment problem in cell-free massive MIMO network
+- describe end device array of antennas
+- describe access point array of antennas
+- limitations of existing multi-TRP networks
+- motivate need for beam alignment protocol
+- propose beam-alignment protocol based on sequence of communication data-patterns
+- define subcarrier-frequency and subcarrier-frequency-slot
+- describe data-pattern comprising sequence of subcarrier-frequencies
+- describe manager configuring access points to send beam-alignment signals
+- describe end devices receiving beam-alignment signals
+- associate each access point with one of sequence of alignment subcarrier-frequency-slots
+- describe manager associating each access point with one of sequence of alignment subcarrier-frequency-slots
+- minimize signal interference between access points
+- describe end devices sending receive information records to manager
+- describe receive information record indicative of signal quality
+- associate receive information record with access point
+- describe manager computing preferred communication channels
+- minimize interference between communication channels
+- configure access points to communicate with end devices using preferred communication channels
+- describe access point sending beam-alignment signal using plurality of signals
+- describe end device receiving beam-alignment signal using plurality of data channel frequencies
+- use mmWave frequency for beam-alignment signal
+- describe manager communicating with end devices using wireless control channel frequency
+- describe manager communicating with access points using another wireless control channel frequency
+- describe manager connected to access points via wired digital communication network
+- compute association between access points and sequence of communication data patterns
+- compute centroid locations in identified space
+- cluster access points according to distance from centroid locations
+- compute new centroid locations for each cluster
+- use last plurality of clusters to compute association
+- select at most one access point from each cluster
+- associate each cluster with unique sequence of communication data-patterns
+- reduce likelihood of interference between access points
+- increase accuracy of receive information records
+- increase accuracy of preferred communication channels
+- increase network utilization of wireless network
+- describe embodiments as system, method, and/or computer program product
+- define computer readable storage medium
+- list examples of computer readable storage medium
+- describe computer readable program instructions
+- list examples of computer readable program instructions
+- describe network for downloading instructions
+- describe network components
+- describe computer readable program instructions execution
+- describe flowchart and block diagrams
+- describe blocks in flowchart and block diagrams
+- describe alternative implementations
+- introduce apparatus for wireless communication
+- describe manager and processing unit
+- describe optional manager functions
+- describe access points and processing units
+- describe optional access point connections
+- describe wireless control channels
+- describe wired digital communication network
+- describe wireless network protocol
+- describe beam alignment protocol
+- introduce association between subcarrier-frequency-slot and communication data-pattern
+- describe sequence of subcarrier-frequency-slots
+- describe sequence of communication data-patterns
+- describe association between data-patterns and subcarrier-frequency-slots
+- describe access point transmission
+- describe end device reception
+- introduce optional method for wireless communication
+- describe manager configuration of access points
+- describe access point transmission configuration
+- describe manager sending of communication data-patterns and subcarrier-frequency-slots
+- describe manager sending of subcarrier-frequency-slot indicator
+- describe protocol initialization instruction
+- describe sending of protocol initialization instruction
+- describe protocol initialization instruction
+- send protocol initialization instruction
+- send beam-alignment signal
+- receive beam-alignment signal
+- compute receive information records
+- send receive information records
+- receive combined receive information records
+- compute preferred communication channels
+- configure access points
+- configure end devices
+- send signals according to preferred communication channels
+- receive signals according to channel configurations
+- associate access points with communication data-patterns
+- select set of wireless access points
+- associate access points with communication data-patterns
+- add communication data-patterns to sequence
+- repeat association process
+- cluster access points
+- compute centroid locations
+- produce clusters
+- compute new centroid locations
+- use new centroid locations
+- select access points from clusters
+- associate access points with communication data-patterns
+- implement access-point part of beam-alignment protocol
+- receive protocol initialization instruction
+- perform access-point part of beam-alignment protocol
+- receive subcarrier-frequency-slot indicator and communication data-pattern
+- send beam-alignment signal
+- execute data-pattern iterations
+- transmit part of beam-alignment signal
+- receive channel configurations
+- send signals according to channel configurations
+- implement end-device part of beam-alignment protocol
+- receive protocol initialization instruction
+- perform end-device part of beam-alignment protocol
+- receive beam-alignment signals
+- compute receive information records
+- send receive information records
+- receive channel configurations
+- receive signals according to channel configurations
+- describe wireless access points
+- describe wireless end devices
+- describe communication data-patterns
+- provide modifications and variations
+- define terms
+- describe scope of terms
+- provide disclaimer
+- provide incorporation by reference
+- provide priority document incorporation
+

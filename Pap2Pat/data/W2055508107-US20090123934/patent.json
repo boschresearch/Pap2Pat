@@ -1,0 +1,717 @@
+{
+    "id": "US20090123934",
+    "authors": [
+        "Youbin Xiang",
+        "Sue Jaspersen",
+        "Laurence Florens",
+        "Sarah Kendall Smith",
+        "R. Scott Hawley"
+    ],
+    "title": "Inhibition of polo kinase by matrimony maintains G2 arrest in the meiotic cell cycle",
+    "date": "2008-10-17 00:00:00",
+    "abstract": "Matrimony (Mtrm) acts as a negative regulator of Polo kinase (Polo) during the later stages of G2 arrest. Indeed, both the repression of Polo expression until stage 11 and the inactivation of newly synthesized Polo by Mtrm until stage 13 play critical roles in maintaining and properly terminating G2 arrest. Our data suggest a model in which the eventual activation of Cdc25 by an excess of Polo at stage 13 triggers NEB and entry into prometaphase. In view of the foregoing, methods for modulating oocyte maturation are provided. More particularly, methods are provided for in vitro maturation of an oocyte. Further provided are methods for identifying functional orthologs of a Drosophila Matrimony polypeptide, as well as inhibitors thereof.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to methods for modulating oocyte maturation, including methods for in vitro maturation of an oocyte. The present invention also relates to methods for identifying functional orthologs of a Drosophila Matrimony polypeptide, as well as to methods for identifying inhibitors of such orthologs."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define invention scope"
+                    ],
+                    "num_characters": 320,
+                    "outline_medium": [
+                        "define invention scope"
+                    ],
+                    "outline_short": [
+                        "define invention scope"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Many meiotic systems in animal females include a lengthy arrest in G2 that separates the end of pachytene from nuclear envelope breakdown (NEB). However, the mechanisms by which a meiotic cell can arrest for long periods of time (decades in human females) have remained a mystery. One can imagine that both the maintenance and the termination of this arrest might involve either or both of two mechanisms\u2014the transcriptional or translational repression of a protein that induces NEB, and thus meiotic entry, or the presence of an inhibitory protein that precludes entry into the first meiotic division. Because Drosophila females exhibit a prolonged G2 arrest (see FIG. 1) and are amenable to both genetic and cytological analyses, they provide an ideal system in which to study this problem.",
+                        "The ovaries of Drosophila females are comprised of a bundle of ovarioles, each of which contains a number of oocytes arranged in order of their developmental stages [1-3]. For our purposes, the process of oogenesis may be said to consist of three separate sets of divisions: the initial stem cell divisions, which create primary cystoblasts; four incomplete cystoblast divisions, which create a 16 cell cyst that contains the oocyte; and the two meiotic divisions. Although a great deal is known regarding the mechanisms that control cystoblast divisions and oocyte differentiation, relatively little is known about the mechanisms by which the progression of meiosis is controlled.",
+                        "As is the case in many meiotic systems, female meiosis in Drosophila involves pre-programmed developmental pauses. The two most prominent pauses during Drosophila meiosis are an arrest that separates the end of pachytene at stages 5-6 from NEB at stage 13, and a second pause that begins with metaphase I arrest at stage 14 and continues until the egg passes through the oviduct. It is the release of this second pre-programmed arrest event that initiates anaphase I and allows the completion of meiosis I followed by meiosis II. As shown in FIG. 1, the end of meiotic prophase by dissolution of the synaptonemal complex (SC) at stages 5-6 [4,5], is separated from the beginning of the meiotic divisions, defined by NEB at stage 13, by approximately 40 hours to allow for oocyte growth.",
+                        "In view of the foregoing, it would be advantageous to identify mechanisms, molecules, and methods for understanding and modulating meiotic cell arrest in, e.g., G2."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce meiotic systems",
+                        "describe Drosophila oogenesis",
+                        "explain meiotic cell arrest",
+                        "identify need for modulating meiotic cell arrest"
+                    ],
+                    "num_characters": 2429,
+                    "outline_medium": [
+                        "describe meiotic cell arrest",
+                        "discuss Drosophila oogenesis"
+                    ],
+                    "outline_short": [
+                        "discuss meiotic cell arrest"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention is directed to achieving these and other goals. Thus, one embodiment of the present invention is a method for modulating oocyte maturation. This method includes the step of contacting an oocyte with an amount of a molecule selected from the group consisting of Polo kinase (Polo), an ortholog of Polo, a modulator of Polo or its ortholog, and combinations thereof, which amount is sufficient to achieve modulation of oocyte maturation.",
+                        "Another embodiment of the present invention is a method for in vitro maturation of an oocyte. This method includes the step of culturing an oocyte in a suitable media comprising at least one component that triggers nuclear envelope breakdown and/or entry into prometaphase.",
+                        "A further embodiment of the present invention is a method for preserving oocytes obtained from a patient prior to undergoing a therapy that may damage or destroy the patient's ovaries, such as, for example, chemo- or radiation therapy. This method includes the steps of (a) obtaining an oocyte from an ovary of the patient, (b) culturing the oocyte in a suitable media including at least one component that triggers oocyte maturation, and (c) preserving, such as, e.g., cryopreserving the matured oocyte.",
+                        "An additional embodiment of the present invention is a method for identifying a functional ortholog of a Drosophila Matrimony polypeptide. This method includes the steps of (a) screening polypeptides from an oocyte preparation for their ability to interact with Polo kinase (Polo) or an ortholog thereof and (b) identifying which, if any, of the polypeptides screened in step (a) act as an inhibitor of Polo or an ortholog thereof.",
+                        "A further embodiment of the present invention is a method for identifying a candidate compound that may be effective to inhibit an ortholog of Drosophila Matrimony (Mtrm). This method includes the steps of (a) contacting a test oocyte that expresses a functional ortholog of a Drosophila Matrimony polypeptide identified in a functional ortholog assay disclosed herein with a candidate compound and (b) determining whether the candidate compound causes a decrease in Mtrm function, an increase in Polo kinase function, nuclear envelop break down, and/or entry into prometaphase 1, wherein a candidate compound that decreases Mtrm function, increases Polo kinase function, triggers nuclear envelop break down (NEB) and/or entry into prometaphase 1 relative to a control cell that is not contacted with the candidate compound is indicative that the candidate compound may be effective to inhibit the ortholog of Drosophila Mtrm.",
+                        "Another embodiment of the invention is a method for identifying a candidate compound that modulates the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof. This method comprises the steps of: (a) contacting Matrimony or an ortholog thereof with Polo or an ortholog thereof under conditions suitable to form a Matrimony-Polo complex; (b) contacting the Matrimony-Polo complex with a candidate compound; and (c) determining the ability of the candidate compound to modulate binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof, wherein modulation of the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof indicates that the candidate compound is effective to modulate the binding of Matrimony or ortholog thereof to Polo or an ortholog thereof.",
+                        "Another embodiment of the invention is a method for identifying a functional ortholog of a Drosophila Matrimony polypeptide. This method comprises: (a) screening polypeptides from an oocyte preparation for their ability to interact with Polo kinase (Polo) or an ortholog thereof; and (b) identifying which, if any, of the polypeptides screened in step (a) act as an inhibitor of Polo or an ortholog thereof."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce method for modulating oocyte maturation",
+                        "describe method for in vitro maturation of an oocyte",
+                        "outline method for preserving oocytes",
+                        "introduce method for identifying functional ortholog of Drosophila Matrimony polypeptide",
+                        "describe method for identifying candidate compound to inhibit ortholog of Drosophila Matrimony",
+                        "outline method for identifying candidate compound that modulates binding of Matrimony to Polo",
+                        "introduce method for identifying functional ortholog of Drosophila Matrimony polypeptide"
+                    ],
+                    "num_characters": 3822,
+                    "outline_medium": [
+                        "introduce oocyte maturation method",
+                        "introduce in vitro maturation method",
+                        "introduce methods for identifying orthologs and inhibitors"
+                    ],
+                    "outline_short": [
+                        "outline invention embodiments"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "One embodiment of the present invention is a method for modulating oocyte maturation. This method includes the step of contacting an oocyte with an amount of a molecule selected from the group consisting of Polo kinase (Polo), an ortholog of Polo, a modulator of Polo or its ortholog, and combinations thereof, which amount is sufficient to achieve modulation of oocyte maturation.",
+                        "The Polo ortholog may be a human ortholog. Likewise, the modulator of Polo may be an ortholog of a Mtrm polypeptide. In the present invention, the term \u201cortholog\u201d denotes a polypeptide or protein obtained from one species that is a functional counterpart of a polypeptide or protein from a different species. Sequence differences among orthologs are the result of, e.g., speciation.",
+                        "In this embodiment, modulation of oocyte maturation includes activating oocyte maturation. In the present invention, activating oocyte maturation includes contacting the oocyte with an amount of Polo or an ortholog thereof sufficient to initiate nuclear envelope breakdown. Activating oocyte maturation also includes contacting the oocyte with an amount of an inhibitor of Mtrm or an ortholog thereof, which is sufficient to initiate nuclear envelope breakdown.",
+                        "Alternatively, modulation of oocyte maturation includes inhibiting initiation of nuclear envelope breakdown. In this embodiment, inhibiting oocyte maturation includes contacting the oocyte with an amount of Mtrm or an ortholog thereof sufficient to inhibit initiation of nuclear envelope breakdown. Inhibiting oocyte maturation may also include contacting the oocyte with an amount of an inhibitor of Polo or an ortholog thereof, which is sufficient to inhibit initiation of nuclear envelope breakdown. Non-limiting examples of such an inhibitor include HMN-214 ((E)-4-[2-[2-(p-methoxybenzenesulfonamide)-phenyl]ethenyl]pyridine-1-oxide, Nippon Shinyaku), ON-01910 (a small-molecule benzyl styryl sulfone polo-like kinase 1 inhibitor, Onconova), CYC800 (a small-molecule polo-like kinase-1 (Plk-1) inhibitor, Cyclacel), a signal inhibitor against Plk-1 (Rexahn), Bl-2536 (a polo-like kinase 1 inhibitor, Boehringer Ingelheim), GSK-461364A (a thiophene amide polo-like kinase-1 (Plk) inhibitor, GlaxoSmithKline), PIKT inhibitors (Kiadis), PLK-1 inhibitors (Onconova), PLK-1 inhibitors (Sareum), and combinations thereof.",
+                        "Another embodiment of the present invention is a method for in vitro maturation of an oocyte. This method includes the step of culturing an oocyte in a suitable media comprising at least one component that triggers nuclear envelope breakdown and/or entry into prometaphase.",
+                        "In this embodiment, the at least one component is an inhibitor of Matrimony or an inhibitor of a Matrimony ortholog. Preferably, the inhibitor of Matrimony or an inhibitor of a Matrimony ortholog is selected from the group including nucleic acids, polypeptides, polysaccharides, small organic or inorganic molecules, and combinations thereof. For example, the inhibitor is selected from the group including a fusion protein, an antibody, antibody mimetic, domain antibody, targeted aptamer, RNAi, siRNA, shRNA, antisense sequence, small molecule, and combinations thereof.",
+                        "Preferably, the at least one component is Polo kinase (Polo) or an ortholog thereof.",
+                        "A further embodiment of the present invention is a method for preserving oocytes obtained from a patient prior to undergoing a therapy that may damage or destroy the patient's ovaries, such as, e.g., chemo- or radiation therapy to treat, e.g., cancer. This method includes the steps of (a) obtaining an oocyte from an ovary of the patient, (b) culturing the oocyte in a suitable media including at least one component that triggers oocyte maturation, and (c) preserving, such as, e.g., cryopreserving the matured oocyte.",
+                        "The at least one component may be an inhibitor of Matrimony or an inhibitor of a Matrimony ortholog. Preferably, the at least one component is an inhibitor of an ortholog of Drosophila Matrimony identified by an assay of the present invention.",
+                        "This method may include an additional step of administering the matured oocyte from step (c) to the patient after the therapy, at a time when the patient desires to become pregnant.",
+                        "A further method of the invention is a method for identifying a candidate compound that modulates the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof. This method comprises the steps of: (a) contacting Matrimony or an ortholog thereof with Polo or an ortholog thereof under conditions suitable to form a Matrimony-Polo complex; (b) contacting the Matrimony-Polo complex with a candidate compound; and (c) determining the ability of the candidate compound to modulate binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof, wherein modulation of the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof indicates that the candidate compound is effective to modulate the binding of Matrimony or ortholog thereof to Polo or an ortholog thereof.",
+                        "In this method, the candidate compound may increase the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof. In another aspect of this method, the candidate compound may decrease the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof.",
+                        "In this method, the candidate compound is selected from the group consisting of a nucleic acid, a polypeptide, a polysaccharide, a small organic or inorganic molecule, and combinations thereof. In another aspect of this method, the candidate compound is selected from the group consisting of a fusion protein, an antibody, an antibody mimetic, a domain antibody, a targeted aptamer, a RNAi, a siRNA, a shRNA, an antisense sequence, a small molecule, and combinations thereof.",
+                        "With respect to this method, any known binding method/assay may be used so long as it is able to provide a readout, which is suitable to detect whether the candidate compound modulates the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof. For example, the binding may be determined using a method selected from the group consisting of a yeast two-hybrid (Y2H) assay, a fluorescence resonance energy transfer (FRET) assay, a bioluminescence resonance energy transfer (BRET) assay, a co-immunoprecipitation assay, a label transfer assay, a pull down assay, a tandem affinity purification (TAP) assay, an in vivo crosslinking assay, a chemical crosslinking assay, and a quantitative immunoprecipitation combined with knockdown (QUICK) assay. Preferably, the binding is determined using a yeast two-hybrid assay.",
+                        "An additional embodiment of the present invention is a method (or assay) for identifying a functional ortholog of a Drosophila Matrimony polypeptide. This method includes the steps of (a) screening polypeptides from an oocyte preparation for their ability to interact with Polo kinase (Polo) or an ortholog thereof and (b) identifying which, if any, of the polypeptides screened in step (a) act as an inhibitor of Polo or an ortholog thereof.",
+                        "Preferably, the oocyte preparation is obtained from a mammal, such as for example, from a human.",
+                        "Preferably, the screening step includes an assay selected from the group including yeast two-hybrid (Y2H), fluorescence resonance energy transfer (FRET), bioluminescence resonance energy transfer (BRET), co-immunoprecipitation, label transfer, pull down, tandem affinity purification (TAP), in vivo crosslinking, chemical crosslinking, and quantitative immunoprecipitation combined with knockdown (QUICK) or any other equivalent assay for determining protein-protein interaction.",
+                        "Preferably, a polypeptide identified in step (b) includes a Polo binding domain (PBD) having amino acids STP, SSP, or both STP and SSP.",
+                        "Another embodiment of the present invention is a method for identifying a candidate compound that may be effective to inhibit an ortholog of Drosophila Matrimony (Mtrm). This method includes the steps of (a) contacting a test oocyte that expresses a functional ortholog of a Drosophila Matrimony polypeptide identified in a functional ortholog assay disclosed herein with a candidate compound and (b) determining whether the candidate compound causes a decrease in Mtrm function, an increase in Polo kinase function, nuclear envelop break down, and/or entry into prometaphase 1, wherein a candidate compound that decreases Mtrm function, increases Polo kinase function, triggers nuclear envelop break down (NEB) and/or entry into prometaphase 1 relative to a control cell that is not contacted with the candidate compound is indicative that the candidate compound may be effective to inhibit the ortholog of Drosophila Mtrm.",
+                        "In the present invention, we are interested, inter alia, in elucidating the mechanisms that arrest meiotic progression at the end of prophase, but then allow onset of NEB and the initiation of meiotic spindle formation some 40 hours later. One intriguing possibility is that during this period of meiotic arrest the oocyte actively blocks the function of cell cycle regulatory proteins such as cyclin dependent kinase 1 (Cdk1), the phosphatase Cdc25 and Polo kinase (Polo), all of which promote meiotic progression, just as they do during mitotic growth. Recently, Polo was shown to be expressed in the germarium and required for the proper entry of Drosophila oocytes into meiotic prophase, as defined by the assembly of the SC [6]. Decreased levels of Polo resulted in delayed entry into meiotic prophase, while over-expression of Polo caused a dramatic increase in the number of cystocyte cells entering meiotic prophase, indicating that Polo is involved both in the initiation of SC formation and in the restriction of meiosis to the oocyte. How then is Polo, which is known to play multiple roles in promoting meiotic and mitotic progression [7,8], prevented from compelling the differentiated oocyte to proceed further into meiosis?",
+                        "One component of this regulation may well lie in the fact that Polo is not expressed during much of oogenesis. As shown below, Polo is clearly visible in the germarium but is then absent until stage 11 when it begins to accumulate to high levels in the oocyte (see FIG. 11). We show here that a second component of Polo regulation is mediated by binding to the protein product of the matrimony (mtrm) gene (FBgn0010431), which occurs from stage 11 until the onset of NEB at stage 13. This binding serves to inhibit Polo in the early stages of its expression, and thus prevents precocious nuclear envelope breakdown.",
+                        "The mtrm gene was first identified in a deficiency screen for loci that were required in two doses for faithful meiotic chromosome segregation [9]. mtrm/+ heterozygotes display a significant defect in achiasmate segregation (the meiotic process that ensures the segregation of those homologs that, for various reasons, fail to undergo crossingover). As a result of this defect, mtrm/+ heterozygotes exhibit high levels of achiasmate nondisjunction. As homozygotes, mtrm mutants are fully viable but exhibit complete female sterility. We show here that the Mtrm protein prevents precocious NEB. Indeed, as discussed below, the effects of reducing the dose of mtrm on meiotic progression and on chromosome segregation are easily explained as the consequence of precocious NEB at stages 11 or 12, and can be suppressed by simultaneously reducing the copy number of polo+. In addition, the effects of heterozygosity for loss-of-function alleles of mtrm can be phenocopied by increasing the copy number of polo+. These genetic interactions suggest that Mtrm negatively regulates Polo in vivo.",
+                        "Interestingly, Mtrm was shown to interact physically with Polo by a global yeast two-hybrid study [10]. We demonstrate that this yeast two-hybrid finding reflects a true physical interaction in vivo by both co-immunoprecipitation studies and by Multidimensional Protein Identification Technology (MudPIT) mass spectrometry experiments which indicate that Mtrm binds to Polo with an approximate stoichiometry of 1:1. Moreover, ablating one of the two putative Polo binding sites on Mtrm by mutation prevents the physical interaction between Polo and Mtrm and renders the mutated Mtrm protein functionless. This experiment, along with genetic interaction studies, provides compelling evidence that the function of the binding of Mtrm to Polo is to inhibit Polo, and not vice versa.",
+                        "The analysis of mtrm mutants allows us to examine the effects of premature Polo function during oogenesis. Our evidence shows that in the absence of Mtrm, newly synthesized Polo is capable of inducing NEB from stage 11 onward. As a result of this precocious NEB, chromosomes are not properly compacted into a mature karyosome and they are released prematurely onto the meiotic spindle. In many cases, the centromeres of achiasmate bivalents subsequently fail to co-orient."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "The Mtrm Gene Encodes a 217 Amino Acid Protein Whose Expression is Limited to the Period Between the End of Pachytene and the Onset of NEB",
+                            "paragraphs": [
+                                "The mtrm gene was first identified as a dosage-sensitive meiotic locus. Heterozygosity for a loss-of-function allele of mtrm specifically induced the failed segregation of achiasmate homologs [9]. The mtrm gene encodes a 217 amino acid protein with two Polo Box Domain binding sites (STP and SSP) and a C-terminal SAM/Pointed domain (see, e.g., SEQ ID NO:13). The studies reported herein rely primarily on a null allele of mtrm (mtrm126) that removes 80 bp of upstream sequence and the sequences encoding the first 41 amino acids of the Mtrm protein (see FIG. 2A).",
+                                "Western blot analysis using an anti-Mtrm antibody reveals that Mtrm can only be detected in ovaries (FIG. 2B). This is consistent with a previous report by Arbeitman et al. [11] which showed that the expression profile of the mtrm gene product was strictly maternal, and that its expression was reduced greater than 10 fold over 0 to 6.5 hours of embryonic development. The specificity of this antibody is demonstrated by the fact that no signal was detected by either western blotting or by immunofluorescence of ovarioles homozygous for the mtrm126 mutant (FIG. 2C). Immunofluorescence studies using the same antibody reveal that Mtrm is expressed as a diffuse nuclear protein in the oocytes and nurse cells beginning at stage 4-5 (see FIGS. 2C and 2D). As shown in FIG. 2C, the Mtrm signal was not restricted to the karyosome itself; but rather Mtrm seems to fill the space in the entire nucleus. Although Mtrm is restricted to the nucleus until approximately stage 10, it localizes throughout the oocyte in later stages. Mtrm brightly stains both the oocyte nucleus and cytoplasm between stage 11 and stage 12, but staining is greatly reduced at stage 13, the stage at which NEB occurs (FIG. 11)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce mtrm gene",
+                                "describe expression of Mtrm protein",
+                                "describe Western blot analysis using anti-Mtrm antibody"
+                            ],
+                            "num_characters": 1766,
+                            "outline_medium": [
+                                "describe Mtrm gene and its expression"
+                            ],
+                            "outline_short": [
+                                "describe Mtrm gene and its expression"
+                            ]
+                        },
+                        {
+                            "title": "Reducing the Dosage of the Polo+ Gene Suppresses the Chromosome Segregation Defects Observed in Mtrm/+ Heterozygotes",
+                            "paragraphs": [
+                                "Mtrm/+ heterozygotes display a significant defect in the processes that ensure the segregation of achiasmate homologs. These meiotic defects are strongly suppressed by simultaneous heterozygosity for strong loss-of-function alleles of polo (FBgn0003124). The impetus for searching for a genetic interaction between mtrm and polo came from the finding that the mutants in the mei-S332 gene were partially suppressed by polo mutants [12]. Meiotic mis-segregation was measured by assaying X and 4th chromosomal nondisjunction in females of the genotype FM7/X where FM7 is a balancer chromosome that fully suppresses X chromosomal exchange. The 4th chromosome is obligately achiasmate. As shown in FIG. 3B, FM7/X; mtrm/+ females typically show frequencies of X and 4th chromosome nondisjunction in the range of 35-45%, more than 100-fold above control values.",
+                                "However, FM7/X; mtrm126/+ females that were simultaneously heterozygous for either a deficiency (Df(3L)rdgC-co2) that uncovers polo or for either of two strong alleles of polo, poloKG03033 and polo16-1 (see FIG. 3A), displayed greatly reduced levels of meiotic nondisjunction (see FIG. 3B). The fact that the poloKG03033 mutation is due to a P element insertion allowed us to demonstrate that the observed interaction with mtrm was indeed a direct consequence of a reduction in polo activity. Two precise excisions of this insertion were generated and neither was able to suppress the nondisjunctional effects observed in mtrm/+ heterozygotes (data not shown). In addition, we also demonstrated that the poloKG03033 allele was able to suppress the meiotic defects generated by heterozygosity for mtrmexc13, an independently isolated allele of mtrm (data not shown).",
+                                "Heterozygosity for these same loss-of-function alleles of polo has no detectable effect on meiotic chromosome segregation in mtrm+/mtrm+ females. In females of the genotypes FM7/X; poloKG03033/+ or FM7/X; polo16-1/+, the observed levels of nondisjunction for the X chromosome were 0.2% and 0.4%, respectively. Similarly, the observed levels of nondisjunction for the 4th chromosome were 0.6% and 0.5%, respectively (n=1109 for FM7/X; poloKG03033/+ and n=1226 for FM7/X; polo16-1/+ females). These data alone are consistent with either a hypothesis in which Mtrm acts to inhibit Polo, and excess Polo creates a meiotic defect or a scenario in which Polo inhibits Mtrm, and the absence of sufficient Mtrm creates the defect. However, as we will show below, our additional data support the model whereby Mtrm inhibits Polo."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce genetic interaction between mtrm and polo",
+                                "describe meiotic defects in mtrm/+ heterozygotes",
+                                "describe suppression of meiotic defects by polo mutants",
+                                "describe genetic interaction between mtrm and polo",
+                                "describe effect of polo mutants on meiotic chromosome segregation"
+                            ],
+                            "num_characters": 2544,
+                            "outline_medium": [
+                                "describe genetic interaction between mtrm and polo",
+                                "show suppression of meiotic defects by reducing polo dosage"
+                            ],
+                            "outline_short": [
+                                "describe genetic interaction between Mtrm and Polo"
+                            ]
+                        },
+                        {
+                            "title": "Increasing the Dosage of Polo+ Partially Mimics the Effects of Mtrm and Enhances The Defects Observed In Mtrm/+ Heterozygotes",
+                            "paragraphs": [
+                                "If reducing the quantity of Polo suppresses the meiotic defects observed in mtrm/+ females, then over-expression of Polo alone should mimic the effects of reducing the dosage of mtrm+ (i.e., we should see a chromosome segregation defect solely in the presence of increased dosage of polo+, even in mtrm+/mtrm+ oocytes). To test this hypothesis, we analyzed FM7/X females carrying two doses of a UASP-polo+ transgene construct driven by the nanos-GAL4 driver. As shown in FIG. 3C, expression of the UASP-polo+ transgene construct results in a dosage-dependent increase in the frequency of achiasmate nondisjunction for both the X and the 4th chromosomes. Similar observations were made using chromosomal duplications that carry two copies of polo+ (Adelaide Carpenter, personal communication). Moreover, increasing the dose of Polo in females heterozygous for mtrm126 resulted in severe meiotic defects. Females carrying a single copy of the UASP-polo+ transgene and which were also heterozygous for mtrm126 were virtually sterile (data not shown). Thus, increasing the dosage of Polo enhances the defect observed in mtrm/+ heterozygotes by inducing sterility.",
+                                "The genetic interaction between Mtrm and Polo during oogenesis is paralleled by their patterns of expression. Mtrm reaches its maximum level of expression from the end of stage 10 onward, filling the oocyte during stages 11-12, and then diminishes at stage 13. Analysis of Polo expression using an anti-Polo antibody [13,14] and wild-type oocytes revealed that Polo is present in the oocyte at low levels (except in the germarium) until stages 11 or 12 and then rapidly fills the oocyte cytoplasm from stages 12-13 onward (FIG. 11). Taken together, these data support a model in which the presence of Mtrm inhibits Polo in the early stages of expression, while permitting the function of Polo at stage 13, when Mtrm is degraded. Data directly demonstrating that assertion are provided below."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce effect of increasing dosage of polo+",
+                                "describe dosage-dependent increase in achiasmate nondisjunction",
+                                "describe enhancement of defect in mtrm/+ heterozygotes"
+                            ],
+                            "num_characters": 1952,
+                            "outline_medium": [
+                                "describe effect of increasing Polo dosage on meiotic defects"
+                            ],
+                            "outline_short": [
+                                "describe effect of increasing Polo dosage on meiotic defects"
+                            ]
+                        },
+                        {
+                            "title": "Mtrm and Polo Physically Interact In Vivo",
+                            "paragraphs": [
+                                "A large scale yeast two-hybrid screen identified Mtrm as a candidate interactor with Polo [10] and showed that Mtrm carries two putative PBD binding sites, STP and SSP (FIG. 4A). In order to confirm that Mtrm interacts with Polo physically in vivo, we performed co-immunoprecipitation experiments on wild-type ovary extracts using a polyclonal anti-Mtrm antibody. As shown in lane 1 of FIG. 4B, the anti-Mtrm antibody also precipitated Polo.",
+                                "We used two separate approaches to confirm the interaction between Polo and Mtrm. In the first experiment, we used ovary extracts from females expressing a GFP-polo transgene [13] and performed the co-immunoprecipitation using an anti-GFP antibody. In the second experiment, we used ovary extracts from wild-type females and performed the co-immunoprecipitation using a monoclonal anti-Polo antibody [14]. In both experiments, we were able to show that Mtrm co-immuno-precipitated with Polo (FIG. 12).",
+                                "In addition, MudPIT mass spectrometry reveals that Mtrm and Polo interact in oocytes with a stoichiometry of approximately 1:1. We analyzed three independent affinity purifications from ovarian extracts expressing a C-terminally 3\u00d7FLAG-tagged Mtrm and used MudPIT mass spectrometry [15] to identify interacting proteins. We then compared the identified proteins to those detected in five control FLAG immuno-precipitations from control (w1118) flies. Among the proteins that showed reproducible and significant p values (p<0.001) identified in all three analyses, Polo was detected by multiple peptides and stands out as the only protein recovered at levels similar to those of Mtrm, as estimated by normalized spectral counts (NSAF) [16,17]. Although the NSAF values for Mtrm and Polo vary across the three biological replicates analyzed (FIG. 4C), the ratio between the two proteins remains constant with an average of 0.96\u00b10.11, suggesting one Mtrm molecule binds to one molecule of Polo.",
+                                "Thus, three lines of evidence demonstrate that Mtrm physically interacts with Polo: the yeast two-hybrid work [10]; our co-immunoprecipitation studies; and our MudPIT mass spectrometry experiments presented in this section. The observation of strong genetic interactions between mutants in these two genes (see FIG. 3) demonstrates a functional significance to this interaction.",
+                                "Mutation of the First PBD Binding Site of Mtrm Both Prevents its Ability to Interact with Polo and Ablates Mtrm Function",
+                                "Polo interacts with target proteins via the interaction of its Polo-box Domain (PBD) and the sequences STP or SSP on the target protein. In both of these PBD binding sites the center residues (threonine or serine) are phosphorylated to facilitate Polo binding [18-20]. Mtrm carries two potential PBD binding sites: STP with the central threonine at residue 40 and SSP with the central serine at residue 124 (FIG. 4A). To determine whether or not the interaction between Mtrm and Polo is mediated through the interaction of the Polo PBD with either or both of these two potential PBD binding sites, we created UASP-driven transgenes that carried mutations in either or both of the STP or SSP motifs. In each case, we mutated the central residue of the PBD binding sites on Mtrm to the non-phosphorylateable residue alanine. These mutants are denoted as mtrmT(40)A which disrupts the STP motif and mtrmS(124)A which disrupts the SSP motif. Each of these mutant constructs was expressed under the control of the nanos-GAL4 driver in a mtrm null background to insure that they were the only source of Mtrm protein in the oocytes. Co-immunoprecipitation experiments using anti-Mtrm antibodies revealed that MtrmS(124)A protein still interacted with Polo (FIG. 4B). However, MtrmT(40)A failed to bind to Polo (FIG. 4B), indicating that the STP residues define a motif critical for the Mtrm-Polo interaction. Mutation of both PBD sites also resulted in a version of Mtrm that did not interact with Polo (data not shown).",
+                                "Because the interaction of Polo with target proteins via its Polo-box Domain (PBD) requires the phosphorylation of the center residues (threonine or serine) of the STP or SSP motifs [18-20], we searched the MS/MS dataset for phosphorylated peptides derived from Mtrm or Polo. For each of the detected sites, we estimated the levels of modification by dividing the number of spectra matching a particular phosphopeptide by the total spectral count for this peptide (FIG. 4D). We were able to detect phosphorylation on both T40 and S124, although, in agreement with the second PBD not being the primary binding site, S124 phosphorylation was found less reproducibly (FIG. 4E). In addition, Mtrm S48, S52 and S137 were found phosphorylated at reproducibly high levels in two out of three experiments. We also observed that Polo T182 was detected as phosphorylated at high levels (over 80%) in all three immunoprecipitations, indicating that those Polo proteins that are bound to Mtrm were fully activated [21].",
+                                "Not only is the STP motif important for Polo binding, but it is also required for proper Mtrm function (FIG. 4E). We assayed the frequency of nondisjunction in females expressing either the mtrmS(124)A or the mtrmT(40)A construct in the germ lines of FM7/X; mtrm/+ heterozygotes (FIG. 4C). Although the mtrmS(124)A construct was able to rescue the meiotic defects seen in mtrm/+ heterozygotes, the mtrmT(40)A construct failed to rescue the mtrm defect, and maintained the high nondisjunction frequency seen in FM7/X; mtrm/+ heterozygotes. A similar failure to rescue was observed using a double mutant construct that carried both the mtrmS(124)A and the mtrmT(40)A mutations (data not shown). Based on these observations, we conclude that the STP site is critical for Mtrm function and the T(40)A mutation ablates Mtrm function as a direct consequence of a failure to interact with Polo."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "identify Mtrm as Polo interactor",
+                                "confirm Mtrm-Polo interaction via co-immunoprecipitation",
+                                "use GFP-polo transgene for co-immunoprecipitation",
+                                "use monoclonal anti-Polo antibody for co-immunoprecipitation",
+                                "analyze MudPIT mass spectrometry data",
+                                "detect phosphorylation of Mtrm and Polo",
+                                "estimate phosphorylation levels",
+                                "identify critical STP motif for Mtrm-Polo interaction",
+                                "mutate STP motif to alanine",
+                                "show MtrmT(40)A fails to bind Polo",
+                                "conclude STP site is critical for Mtrm function"
+                            ],
+                            "num_characters": 5852,
+                            "outline_medium": [
+                                "identify Mtrm as Polo interactor",
+                                "confirm Mtrm-Polo interaction via co-immunoprecipitation",
+                                "demonstrate Mtrm-Polo interaction via MudPIT mass spectrometry",
+                                "show Polo binding site on Mtrm is critical for interaction",
+                                "detect phosphorylation of Mtrm and Polo residues"
+                            ],
+                            "outline_short": [
+                                "confirm Mtrm-Polo interaction through co-immunoprecipitation",
+                                "demonstrate Mtrm-Polo interaction through MudPIT mass spectrometry"
+                            ]
+                        },
+                        {
+                            "title": "Mtrm Functions as an Inhibitor of Polo",
+                            "paragraphs": [
+                                "In the previous sections, we have presented three separate lines of evidence that Mtrm acts to inhibit Polo function and not vice versa. First, effects of heterozygosity for mtrm can be suppressed by a corresponding reduction in the dose of polo+. Second, we observed that the phenotype created by reducing the dose of mtrm+ can be mimicked by increasing the dose of Polo. Third, and most importantly, the observation that mutating the STP Polo binding site by a conservative amino acid replacement (STP->SAP) ablates Mtrm function argues strongly that Mtrm functions as an inhibitor of Polo. Were it the case that Polo inhibits Mtrm, one would expect loss of the Polo interacting site to produce a hyper-functional Mtrm, not a non-functional protein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "argue Mtrm functions as Polo inhibitor"
+                            ],
+                            "num_characters": 751,
+                            "outline_medium": [
+                                "argue Mtrm inhibits Polo function based on genetic evidence"
+                            ],
+                            "outline_short": [
+                                "argue Mtrm inhibits Polo function through multiple lines of evidence"
+                            ]
+                        },
+                        {
+                            "title": "As Either a Heterozygote or a Homozygote, Mtrm Causes Precocious Nuclear Envelope Breakdown",
+                            "paragraphs": [
+                                "The early stages of meiosis appear normal in both mtrm/+ and mtrm/mtrm oocytes. The germarium and early stages appear morphologically normal and at least in mtrm/+ oocytes both recombination and SC assembly are indistinguishable from normal ([9] and unpublished data). However, following stage 11, the period during which Mtrm is maximally expressed, we observed multiple defects in oocyte maturation in both mtrm/+ and mtrm/mtrm oocytes. Most critically, we show that a loss-of-function allele of mtrm induces precocious NEB in a dosage-dependent manner.",
+                                "In wild-type oocytes, NEB usually does not occur until stage 13; only a single case of NEB at stage 12 was observed among the 61 stage 11 and 12 wild-type oocytes examined (see FIG. 5). However, in mtrm126/+ heterozygotes more than a third of stage 12 egg chambers exhibited NEB. To ensure that the precocious NEB defect is the consequence of reducing the copy number of mtrm+, we repeated these experiments using females heterozygous for an independently isolated allele of mtrm, mtrmexc13. These females also displayed precocious NEB at stage 12 (data not shown). As is the case for the chromosome segregation defects observed in mtrm/+ oocytes, the precocious NEB that is seen in mtrm126/+ heterozygotes is strongly suppressed by simultaneous heterozygosity for a loss-of-function allele of polo (see FIG. 5B), suggesting that the timing of NEB is determined by the relative abundances of Mtrm and Polo. This conclusion is further strengthened by the observation that over-expression of Polo (using a UASp-polo+ transgene driven by the nanos-GAL4 driver) increases the frequency of precocious NEB in mtrm126/+heterozygotes by nearly two-fold (from 42% to 77%). The extent of the precocious NEB defect is even more evident in mtrm126 homozygotes. As shown in FIG. 5, NEB had already occurred in 32 out of 33 stage 12 oocytes examined and in 6 of 10 stage 11 oocytes examined. Thus, the loss of Mtrm causes precocious NEB in a dosage-dependent fashion. Taken together, these data argue that the presence of Mtrm prevents Polo from inducing NEB until stage 13, and that a reduction or absence of available Mtrm allows the Polo synthesized during stages 11 and 12 to initiate NEB.",
+                                "The precocious breakdown of the nuclear envelope at stages 11 to 12 is significant because the karyosome undergoes dramatic changes in structure during this period [2]. As noted above, in stages 9-10, the karyosome expands to the point that individual chromosomes can be detected [22-24]. These chromosomes re-condense into a compact karyosome during stages 11 to 12, the exact time at which a reduction in the level of Mtrm causes precocious NEB. Thus, the early NEB events promoted by heterozygosity for mtrm might be expected to result in the release of incompletely condensed or disordered karyosomes. To test this hypothesis, we examined karyosome morphology during the 20 minutes that preceded NEB in wild-type, mtrm126/mtrm+, and mtrm126 polo+/mtrm+ polo16-1 oocytes. As shown in FIG. 6, in only 2 out of 28 (7%) wild-type oocytes with incompletely compacted or disordered karyosomes were observed. However, 7 out of 27 (26%) mtrm126/mtrm+ oocytes displayed a disordered karyosome, an effect that was largely suppressed (to 8%) by simultaneous heterozygosity for polo16-1 (FIG. 6). These data support the view that the precocious NEB induced by lowering the level of Mtrm results in the release of improperly formed karyosomes into the cytoplasm and are again consistent with the possibility that Mtrm inhibits meiotic progression through its effects on Polo.",
+                                "Mtrm is Also Required to Maintain Karyosome Structure after NEB",
+                                "The karyosome plays a critical role in directing the formation of the acentriolar spindle in Drosophila oocytes. In 8 out of 9 (89%) wild-type oocytes, the karyosome remains associated even after NEB; it is then surrounded by microtubules and forms a bipolar meiotic spindle (FIG. 7). At metaphase I, chiasmate chromosomes are still condensed into a single mass at the metaphase plate in a tapered bipolar spindle [25-28].",
+                                "However, in FM7/X; mtrm126/mtrm+ oocytes the karyosome usually dissolved within 10-20 minutes following NEB and the individual bivalents became clearly visible (FIG. 7). In 15 out of 17 (88%) FM7/X, mtrm126/mtrm+ oocytes examined, the chromosomes were individualized during spindle assembly. Indeed, in 14 of these movies all three pairs of major chromosomes were physically separated at some point during the time course of imaging (in the remaining case, the three bivalents could be distinguished but were still physically associated). As disclosed previously herein, despite this dissociation into individual bivalents, in most oocytes the chromosomes are capable of re-aggregating into a single mass and eventually forming a bipolar spindle.",
+                                "A striking example where all four chromosome pairs can be clearly distinguished is the image taken 26 minutes after NEB for FM7/X; mtrm126/mtrm+ oocytes (FIG. 7). In those oocytes in which bivalent individualization was observed, the two major autosomes appeared to be held together by at least two chiasmata (one on each arm), suggesting that sister-chromatid cohesion along the euchromatic arms of these chromosomes still persists. The two X chromosomes remain physically associated, despite the lack of chiasmata, presumably as a consequence of the maintenance of heterochromatic pairing [29,30].",
+                                "Since the nondisjunction of achiasmate chromosomes observed in mtrm126/mtrm+ heterozygotes was suppressed by heterozygosity for loss-of-function alleles of polo, we next tested whether a polo mutation could also suppress this karyosome maintenance defect. As shown in FIG. 7, bivalent individualization was only observed in 3 out of 13 (23%) of FM7/X; mtrm126 polo+/mtrm+ polo16-1 oocytes, and thus 77% of the oocytes maintained the karyosome as a single mass throughout the process of spindle assembly. These data are consistent with the genetic data presented above: reducing the dose of polo+ strongly suppresses the deleterious effects of heterozygosity for mtrm."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe normal meiosis in mtrm/+ and mtrm/mtrm oocytes",
+                                "observe defects in oocyte maturation",
+                                "show precocious NEB in mtrm/+ and mtrm/mtrm oocytes",
+                                "suppress precocious NEB with polo16-1",
+                                "overexpress Polo to increase precocious NEB",
+                                "describe karyosome changes during stages 11-12",
+                                "examine karyosome morphology",
+                                "observe disordered karyosomes in mtrm/+ oocytes",
+                                "suppress disordered karyosomes with polo16-1",
+                                "conclude Mtrm prevents Polo-induced NEB",
+                                "describe karyosome structure after NEB",
+                                "show karyosome dissolution in mtrm/+ oocytes"
+                            ],
+                            "num_characters": 6111,
+                            "outline_medium": [
+                                "describe normal meiosis in wild-type oocytes",
+                                "show precocious NEB in mtrm/+ and mtrm/mtrm oocytes",
+                                "demonstrate dosage-dependent effect of Mtrm on NEB",
+                                "show Polo overexpression increases precocious NEB frequency",
+                                "examine karyosome morphology during precocious NEB",
+                                "demonstrate Polo heterozygosity suppresses precocious NEB"
+                            ],
+                            "outline_short": [
+                                "show precocious NEB in mtrm/+ and mtrm/mtrm oocytes",
+                                "demonstrate dosage-dependent effect of Mtrm on NEB timing",
+                                "link Mtrm-Polo interaction to NEB regulation"
+                            ]
+                        },
+                        {
+                            "title": "The Defects in Karyosome Maintenance are Followed by Defective Co-Orientation of Achiasmate Centromeres on the Meiotic Spindle",
+                            "paragraphs": [
+                                "Because the karyosomes of mtrm/+ females were poorly formed prior to NEB and usually transiently dissolved to individual bivalents shortly after NEB (see above), we also examined centromere co-orientation on bipolar prometaphase spindles using FISH probes (see Examples) directed against the X and 4th chromosomes (FIG. 8) in both wild-type and mtrm/+ oocytes.",
+                                "In wild-type oocytes, the vast majority of most X and 4th chromosome centromeres co-oriented properly (see FIG. 8). The frequencies of abnormal centromere co-orientation in oocytes with chiasmate X chromosomes (XX) were only 2% for the X chromosome and 4% for the 4th chromosome. In FM7/X females, where X chromosomal crossingover is blocked, the frequencies of abnormal co-orientation were still quite low (4% for the X chromosome and 2% for the 4th) However, co-orientation of achiasmate centromeres was often aberrant in mtrm/+ heterozygotes, such that the centromeres of both homologs were often oriented toward the same pole (FIG. 8A). In these cases, the two homologs also occupied different arcs of the meiotic spindle, a feature that is rarely, if ever, observed in wild-type oocytes. In chiasmate X females, 43% of observed oocyte nuclei displayed an aberrant co-orientation of 4th chromosome centromeres, and 6% of these oocytes displayed aberrant X centromere co-orientations (FIG. 8B); these oocytes likely reflect the 8-10% of oocytes that fail to undergo crossingover even in females bearing structurally normal X chromosomes. The defect in 4th chromosome centromere co-orientation was fully suppressed by simultaneous heterozygosity for polo16-1 (FIGS. 8A and 8B).",
+                                "As expected, due to the suppression of X chromosomal crossingover in FM7/X females, mtrm/+ heterozygotes displayed frequent abnormal centromere co-orientation for both X and 4th chromosomes, i.e. 43% for X chromosomes and 37% for 4th chromosomes (FIG. 8B). These results indicate that the mtrm heterozygotes display an obvious defect in centromere co-orientation. However, once again, both the defect in X and 4th chromosome centromere co-orientation was fully suppressed by simultaneous heterozygosity for polo16-1. Thus, as was the case with the previously considered defects, the deleterious effects of reducing the amount of available Mtrm can be suppressed by a simultaneous reduction in the amount of Polo.",
+                                "The data presented above argue that Mtrm serves to inactivate newly-synthesized Polo during the period of meiotic progression that precedes NEB. An excess of functional (un-bound) Polo, produced by reducing the amount of available Mtrm, causes the early onset of NEB. This early entry into prometaphase releases an immature karyosome into the cytoplasm, which then fails to properly align the centromeres of achiasmate chromosomes on the prometaphase spindle. These observations raise a number of questions ranging from the role of Polo in mediating the G2/M transition in oogenesis to the role of the karyosome structure in facilitating the proper segregation of achiasmate chromosomes."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "examine centromere co-orientation on meiotic spindle",
+                                "observe abnormal centromere co-orientation in mtrm/+ oocytes",
+                                "suppress abnormal co-orientation with polo16-1",
+                                "describe centromere co-orientation in FM7/X females",
+                                "observe frequent abnormal centromere co-orientation in mtrm/+ oocytes",
+                                "conclude Mtrm serves to inactivate Polo"
+                            ],
+                            "num_characters": 3044,
+                            "outline_medium": [
+                                "describe karyosome maintenance defects in mtrm/+ oocytes",
+                                "examine centromere co-orientation on meiotic spindles",
+                                "demonstrate Polo heterozygosity suppresses centromere co-orientation defects"
+                            ],
+                            "outline_short": [
+                                "describe karyosome maintenance defects and centromere co-orientation abnormalities"
+                            ]
+                        },
+                        {
+                            "title": "Polo Plays a Critical Role in Initiating the G2/M Transition in Oogenesis by Regulating Cdc25",
+                            "paragraphs": [
+                                "The trigger for the G2/M transition is activation of Cdk1 by Cdc25 (reviewed by [31]), and multiple lines of evidence suggest that Polo can activate Cdc25 [32]. First, in C. elegans, RNAi experiments demonstrate that ablation of Polo prevents NEB [33]. Second, the Xenopus Polo homolog Plx1 is activated in vivo during oocyte maturation with the same kinetics as Cdc25. Additionally, microinjection of Plx1 accelerates the activation of both Cdc25 and cyclinB-Cdk1 [34]. Moreover, microinjection of either an anti-Plx1 antibody or kinase-dead mutant of Plx1 inhibited the activation of Cdc25 and its target cyclinB-Cdk1. A later study by Qian et al. demonstrated that injection of a constitutively active form of Plx1 accelerated Cdc25 activation [35]. As pointed out by these authors, these studies support \u201cthe concept that Plx1 is the \u2018trigger\u2019 kinase for the activation of Cdc25 during the G2/M transition.\u201d Finally, a small molecule inhibitor of Polo kinase (BI 2536) also results in extension of prophase [36]. These data are consistent with the view that the presence of functional (un-bound) Polo plays a critical role in ending the extended G2 that is characteristic of oogenesis in most animals. We should note by Riparbelli et al. [37] that the careful study of female meiosis in polo1 homozygotes failed to observe a defect in the timing of NEB. However, as disclosed previously herein, polo1, a missense mutant that is viable even over some deficiencies and does not suppress mtrm, is the weakest of the known polo mutants and it is thus reasonable that no defect was observed.",
+                                "In light of these data, it is tempting to suggest that in wild-type Drosophila oocytes the large quantity of Mtrm deposited into the oocyte from stage 10 onward inhibits the Polo that is either newly synthesized or transported into the oocyte during stages 11 to 12. However, at stage 13 an excess of functional Polo is created when the number of Polo proteins exceeds the available amount of inhibitory Mtrm proteins. This unencumbered, and thus functional Polo then serves to activate Cdc25, initiating the chain of events that leads to NEB and the initiation of prometaphase. In the absence of a sufficient amount of Mtrm, an excess of Polo causes the precocious activation of Cdc25, and thus an early G2/M transition. A model describing this hypothesis is presented in FIG. 10. Based on this model, one can visualize that decreasing the dose of Mtrm or increasing the dosage of Polo will hasten NEB, while simultaneous reduction in the dosage of both proteins should allow for proper timing of NEB.",
+                                "Two lines of evidence directly support a model in which Mtrm exerts its effect on Polo, with respect to preventing precocious NEB, by blocking the ability of Polo to activate Cdc25. First, as shown in FIG. 9, mutants in the Drosophila cdc25 homolog twine (FBgn0002673) fail to undergo NEB in stage 13. In addition, heterozygosity for twine also decreases the frequency of precocious NEB in mtrm126/+ heterozygotes from 42% (see FIG. 5) to less than 10% (7/72)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe Polo's role in G2/M transition",
+                                "cite evidence for Polo's activation of Cdc25",
+                                "describe Plx1's role in Xenopus oocyte maturation",
+                                "mention small molecule inhibitor of Polo kinase",
+                                "discuss polo1 homozygotes and NEB timing",
+                                "propose model for Mtrm-Polo interaction and NEB timing"
+                            ],
+                            "num_characters": 3056,
+                            "outline_medium": [
+                                "discuss Polo's role in activating Cdc25",
+                                "present evidence for Polo's role in G2/M transition",
+                                "propose model for Mtrm-Polo interaction in regulating NEB"
+                            ],
+                            "outline_short": [
+                                "discuss Polo's role in activating Cdc25 and initiating G2/M transition"
+                            ]
+                        },
+                        {
+                            "title": "Mtrm Inhibition of Polo",
+                            "paragraphs": [
+                                "Mtrm's first PBD binding site (T40) is required for its interaction with Polo. Mtrm T40 has to be first phosphorylated by a priming kinase, such as one of the Cdks or MAPKs, and was indeed detected as phosphorylated in the mass spectrometry dataset. The NetPhosK algorithm [38] predicts T40 to be a Cdk5 site, and the serines immediately distal to T40, S48 and S52, which were also detected as phosphorylated (FIG. 4E), are sites for proline-directed kinases such as Cdk or MAPK sites as well. The other prominent phosphorylation event occurs at S137, which could be a Polo phosphorylation site because it falls within a Polo consensus (D/E-X\u2014S/T-\u00d8-X-D/E). Although the combined sequence coverage for Mtrm was 44%, indicating that some phosphorylated sites might have been missed, Mtrm S137 is a suitable binding site for activated Polo, in agreement with the processive phosphorylation model [18]. At this point of our studies, Mtrm T40 priming kinase or the kinase responsible for Polo activating phosphorylation on T182 has not been identified.",
+                                "The finding that Polo not only is able to bind to Mtrm in vivo in a 1:1 ratio, but also is fully phosphorylated on T182 in its activation loop [21] suggests a method by which Mtrm serves to inhibit Polo. In general, enzymes are usually not recovered from affinity purifications at levels similar to their targets. They do not form stable complexes, but rather transient interactions with their substrates, which is how efficient catalysis is achieved. Here, Mtrm is able to sequester activated Polo away in a stable binary complex over a long period of time. It is only when this equilibrium is disturbed at the onset of stage 13 by the production of an excess of Polo (as suggested in FIG. 10) or by degradation of Mtrm that Polo can be released. The molecular determinants of the Mtrm::Polo sequestration event are not clear, but it would be interesting to test whether the serines found phosphorylated in the vicinity of Mtrm PBD binding sites play a role in locking the binary complex into place.",
+                                "**Mtrm Exerts its Effects on Achiasmate Nondisjunction Via a Cdc25-Independent Pathway**",
+                                "Our data demonstrate that a reduction in the levels of Mtrm results in the release of an incompletely compacted karyosome that rapidly dissolves into individual bivalents during the early stages of spindle formation. For chiasmate bivalents this is apparently not a problem because they still co-orient correctly (for example, the chiasmate X chromosomes shown in FIG. 8 still achieve proper co-orientation in the vast majority of oocytes). However, the nonexchange bivalents frequently fail to co-orient properly such that both homologs are oriented toward the same pole (but often occupy two different arcs of the spindle). This initial failure of proper co-orientation leads to high frequencies of nondisjunction as demonstrated by the genetic studies and analysis of metaphase I images presented in Harris et al. (2003) [9].",
+                                "Although achiasmate homologs are properly co-oriented in wild-type oocytes [29,30], we have noted previously such homologs can often vacillate between the poles such that two achiasmate homologs are often found on the same arc of the same half-spindle during mid- to late prometaphase ([25] and unpublished data). These chromosomes are often observed to be physically associated. This situation is quite different from the defect observed in mtrm/+ heterozygotes where the homologs are neither physically associated nor on the same arc of the spindle.",
+                                "It is tempting to suggest that the chromosome segregation defects we observe in mtrm/+ heterozygotes are simply the result of precocious release of an incompletely re-compacted karyosome. According to this explanation, the defects observed in meiotic chromosome segregation are solely the consequence of premature NEB. (Implicit in this model is the assumption that it is the events that occur during karyosome re-compaction, at stages 11 and 12, that serve to initially bi-orient achiasmate chromosomes and we do not have direct evidence to support such a hypothesis.)",
+                                "Alternatively, Polo plays multiple roles in the meiotic process [7,8], and it is possible that the chromosome segregation defects we see represent effects of excess Polo that are un-related to the precocious breakdown of the nuclear envelope. Such a view is supported by two observations. First as shown in FIG. 7, the bivalent individualization observed after NEB in mtrm/+ oocytes does not disrupt FM7-X pairings. Second, although heterozygosity for twine in mtrm126/+ heterozygotes suppresses the frequency of precocious NEB from 42% (see FIG. 5) to less than 10% (7/72), but two alleles of twine tested (twe1 and twek08310) failed to suppress the levels of meiotic nondisjunction observed in FM7/X; mtrm126/+ heterozygotes. These data suggest that the effects of excess Polo on nondisjunction may not be regulated via Cdc25/Twine, but rather by the effects of excess Polo on some other, as yet unidentified Polo target. This suggests that the effects of Mtrm on the level of Polo might affect multiple Polo-related processes.",
+                                "Support for such an idea that Mtrm can inhibit Polo-regulated proteins that are un-related to NEB comes from the observation that the ectopic expression of Drosophila Mtrm in S. pombe blocks karyokinesis, producing long multi-septate cells with only one or two large nuclei ([39], Bruce Edgar, personal communication). This phenotype is similar, if not identical to that, exhibited by mutants in the S. pombe Polo homolog plo1 (Plo1, CAB11167), which fail in later stages of mitosis due to the role of Plo1 in activating the septation initiation network to trigger cytokinesis and cell division. However, Plo1 also plays a role in bipolar spindle assembly that might also be inhibited in the Mtrm expressing cells, but this function of Plo1 is less well understood.",
+                                "Thus, the possibility exists that the effect of mtrm mutants on meiotic chromosome segregation may well not be the direct consequence of early NEB, but rather due to the role of Polo in other meiotic activities, such as spindle formation or the combined effects of these defects with precocious NEB. Efforts to identify such processes and their components are underway in the lab.",
+                                "Finally, we should note that while Mtrm is the first known protein that is able to inactivate Polo by physical interaction to Polo itself; there is certainly additional mechanisms of Polo regulation. For example, Archambault et al. [40] have described mutants in the gene, which encodes Greatwall/Scant kinase (FBgn0004461) that have both late meiotic and mitotic defects. Although there is no evidence for a physical interaction between these two kinases, the authors speculate that the function of the Greatwall kinase serves to antagonize that of Polo. The Scant mutations create a hyperactive form of Greatwall, which might be expected to lower the dosage of Polo, and thus perhaps partially suppress the defects observed in mtrm/+ heterozygotes. Indeed, exactly such a suppressive effect has been observed in Scant homozygotes (however, this suppression is much weaker than that obtained by heterozygosity for loss of function alleles of polo)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Mtrm's PBD binding site",
+                                "phosphorylation requirements for Polo interaction",
+                                "predict phosphorylation sites using NetPhosK algorithm",
+                                "discuss phosphorylation events at S137 and T40",
+                                "suggest method of Mtrm inhibiting Polo",
+                                "describe Mtrm sequestering activated Polo",
+                                "introduce Mtrm's effects on achiasmate nondisjunction",
+                                "describe release of incompletely compacted karyosome",
+                                "discuss co-orientation of chiasmate and nonexchange bivalents",
+                                "suggest Cdc25-independent pathway for Mtrm's effects",
+                                "discuss role of Polo in meiotic process",
+                                "describe effects of excess Polo on nondisjunction",
+                                "provide evidence for Mtrm inhibiting Polo-regulated proteins",
+                                "discuss additional mechanisms of Polo regulation"
+                            ],
+                            "num_characters": 7224,
+                            "outline_medium": [
+                                "introduce Mtrm's PBD binding site and phosphorylation requirements",
+                                "describe Polo phosphorylation and activation",
+                                "explain Mtrm's inhibition of Polo through sequestration",
+                                "summarize Mtrm's effects on achiasmate nondisjunction",
+                                "discuss alternative explanations for chromosome segregation defects",
+                                "provide evidence for Mtrm's inhibition of Polo-regulated proteins",
+                                "mention additional mechanisms of Polo regulation"
+                            ],
+                            "outline_short": [
+                                "describe Mtrm-Polo interaction mechanism",
+                                "explain Mtrm's role in inhibiting Polo",
+                                "discuss Mtrm's effects on achiasmate nondisjunction via a Cdc25-independent pathway"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce method for modulating oocyte maturation",
+                        "define Polo kinase and orthologs",
+                        "describe modulation of oocyte maturation",
+                        "introduce activating oocyte maturation",
+                        "describe contacting oocyte with Polo or ortholog",
+                        "describe contacting oocyte with inhibitor of Mtrm or ortholog",
+                        "introduce inhibiting oocyte maturation",
+                        "describe contacting oocyte with Mtrm or ortholog",
+                        "describe contacting oocyte with inhibitor of Polo or ortholog",
+                        "list non-limiting examples of inhibitors",
+                        "introduce method for in vitro maturation of oocyte",
+                        "describe culturing oocyte in suitable media",
+                        "introduce at least one component that triggers nuclear envelope breakdown",
+                        "describe inhibitor of Matrimony or ortholog",
+                        "list non-limiting examples of inhibitors",
+                        "introduce method for preserving oocytes",
+                        "describe obtaining oocyte from patient",
+                        "describe culturing oocyte in suitable media",
+                        "describe preserving matured oocyte",
+                        "introduce method for identifying candidate compound",
+                        "describe contacting Matrimony or ortholog with Polo or ortholog",
+                        "describe contacting complex with candidate compound",
+                        "describe determining ability of candidate compound",
+                        "introduce method for identifying functional ortholog of Drosophila Matrimony",
+                        "describe screening polypeptides for ability to interact with Polo or ortholog"
+                    ],
+                    "num_characters": 12929,
+                    "outline_medium": [
+                        "introduce method for modulating oocyte maturation",
+                        "define Polo ortholog",
+                        "describe modulation of oocyte maturation",
+                        "introduce method for in vitro maturation of an oocyte",
+                        "describe at least one component for triggering nuclear envelope breakdown",
+                        "introduce method for preserving oocytes",
+                        "describe steps for preserving oocytes",
+                        "introduce method for identifying candidate compound that modulates binding of Matrimony to Polo",
+                        "describe steps for identifying candidate compound",
+                        "introduce method for identifying functional ortholog of Drosophila Matrimony polypeptide",
+                        "describe steps for identifying functional ortholog",
+                        "introduce method for identifying candidate compound that inhibits ortholog of Drosophila Matrimony"
+                    ],
+                    "outline_short": [
+                        "define method for modulating oocyte maturation",
+                        "describe Polo ortholog and modulator",
+                        "outline method for in vitro maturation of an oocyte",
+                        "describe method for preserving oocytes",
+                        "outline method for identifying candidate compound that modulates binding of Matrimony to Polo",
+                        "describe method for identifying functional ortholog of Drosophila Matrimony polypeptide"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "The data presented above demonstrate that Mtrm acts as a negative regulator of Polo during the later stages of G2 arrest during meiosis. Indeed, both the repression of Polo expression until stage 11 and the inactivation of newly synthesized Polo by Mtrm until stage 13 play critical roles in maintaining and properly terminating G2 arrest. Our data suggest a model in which the eventual activation of Cdc25 by an excess of Polo at stage 13 triggers NEB and entry into prometaphase. Although our data do shed some light on the mechanism by which Mtrm inhibits Polo, it is not entirely clear whether Polo's ability to phosphorylate targets other than Cdc25 might be blocked by Mtrm::Polo binding. These issues will clearly need to be addressed in future studies. Finally, we note that although small molecule inhibitors of Polo have been identified [36], Mtrm represents the first case of a protein inhibitor of Polo. It would be most exciting to identify functional orthologs of Mtrm outside of the genus Drosophila. Perhaps that might best be accomplished through a screen for oocyte-specific Polo-interacting proteins.",
+                        "The invention now being generally described, it will be more readily understood by reference to the following examples, which are included merely for purposes of illustration of certain aspects and embodiments of the present invention, and are not intended to limit the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "summarize Mtrm function",
+                        "introduce invention scope"
+                    ],
+                    "num_characters": 1401,
+                    "outline_medium": [
+                        "summarize research findings"
+                    ],
+                    "outline_short": [
+                        "summarize findings"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Drosophila Stocks",
+                            "paragraphs": [
+                                "Throughout this study a w1118 stock served as our normal sequence X wild-type control, and for achiasmate X-chromosome studies, FM7/yw was used as wild-type control. The GFP-polo stock was kindly provided by Adelaide Carpenter. The nanos-GAL4 driver was used to express UASP-driven transgenes (see below) in the ovary. All polo mutants, the P element insertion mutant, and deficiencies related to mtrm were acquired from the Bloomington Drosophila Stock Center."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Drosophila stocks"
+                            ],
+                            "num_characters": 461,
+                            "outline_medium": [
+                                "describe Drosophila stocks used"
+                            ],
+                            "outline_short": [
+                                "describe Drosophila stocks used"
+                            ]
+                        },
+                        {
+                            "title": "Isolation and Characterization of a Null Allele of Mtrm",
+                            "paragraphs": [
+                                "A P-element insertion mutant, KG08051, causing a mutation in the mtrm gene and exhibiting high levels of nondisjunction for achiasmate chromosomes [9] was obtained from the Bloomington Drosophila Stock Center. Although Harris et al. (2003) [9] positioned the insertion site for this transposon 90-bp upstream of the first ATG in the mtrm coding sequence, re-sequencing indicates that the true insertion site is in fact 80-bp upstream of the first ATG in the mtrm coding sequence (see, e.g., SEQ ID NO:12). mtrm126 was generated by imprecise excision from the insertion of a null allele of mtrm. It is a deletion that removes 80-bp of 5\u2032-UTR and 123-bp of coding sequence, deleting the first 41 amino acids (FIG. 2A). RT-PCR and Western blotting confirmed that mtrm126 homozygotes had no transcripts and no protein expression (data not shown). Like the original P element insertion mutant, mtrm126 showed a dosage-sensitive effect on meiotic nondisjunction that was specific to achiasmate chromosomes and homozygous sterile females (homozygous males are fully fertile and meiotic segregation is normal in both mtrm heterozygotes and homozygotes)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "isolate P-element insertion mutant",
+                                "characterize mtrm126 null allele"
+                            ],
+                            "num_characters": 1145,
+                            "outline_medium": [
+                                "describe isolation and characterization of mtrm126 null allele"
+                            ],
+                            "outline_short": [
+                                "describe isolation and characterization of mtrm126 null allele"
+                            ]
+                        },
+                        {
+                            "title": "Construction of Transgene Plasmids",
+                            "paragraphs": [
+                                "To construct the UASp-polo+ transgene, we amplified a 1.74-kb XhoI-XbaI polo fragment from reverse transcribed cDNA by PCR using the primers 5\u2032-ctcgaggatggccgcgaagcccgaggataag-3\u2032 (SEQ ID NO: 1) and 5\u2032-tctagattatgtgaacatcttctccagcattttcc-3\u2032 (SEQ ID NO: 2). The polo fragment was cloned into the pBluescript to generate pBlue-polo-cDNA. Then, a polo fragment was obtained by digestion with KpnI and XbaI from pBlue-polo-cDNA and cloned into the pUASp vector [41] to produce pUASp-polo+. The UASp-polo+ cassette in this plasmid was sequenced for confirmation. The transformation of the pUASp-polo+ and other plasmids (see below), to generate transgenic flies, was conducted by Genetic Services, Inc. in Boston, Mass.",
+                                "To place the 3\u00d7Flag downstream of mtrm, the PCR amplified 687-bp mtrm+1.5\u00d7-Flag fragment was created using primer pKpnI-mtrm-5,5\u2032-ggggtaccaa atggagaattctcgcacgcccacgaacaag-3\u2032 (SEQ ID NO: 3), and primer mtrm-3-flag(1.5\u00d7), 5\u2032-gtccttgtagtccttgtcatcgtcgtccttgtagtcaagagtgtggagcacatccatgatacgg-3\u2032 (SEQ ID NO: 4). Then the 687-bp mtrm+1.5\u00d7-Flag was amplified with the flag(3\u00d7)stop-XbaI primer, 5\u2032-gctctagattacttgtcatcgtcgtccftgtagtccttgtcatcgtcgtccttgtagtccttgtcatcgtcgtccttg-3\u2032 (SEQ ID NO: 5), to produce the KpnI-XbaI mtrm-Flag(3\u00d7) fragment. The fragment was then cloned into the pUASP vector [41] to produce pUASP-mtrm-flag(3\u00d7).",
+                                "The Mtrm protein possesses two potential PBD binding sites: STP with the central threonine at residue 40 and SSP with the central serine at residue 124 (FIG. 4A). In order to mutate the central residues to alanine in each motif, PCR assembly was used to make two separate codon changes in the mtrm gene, one at +118 from ACT to GCT to produce mtrmT(40)A and the other at +370 from CAG to CGC to produce mtrmS(124)A. In order to mutate the STP motif, primer pmtrm-mut-ATG: 5\u2032-cggggtaccaaaagatggagaattctcgcacgcccacgaacaagac-3\u2032 (SEQ ID NO: 6) and primer pmtrm-STPre: 5\u2032-gagaftgggcgaacggaagttgccaaagatcggagcagagcatcgcacgttggaggtgttcaccttcag-3\u2032 (SEQ ID NO: 7) were used to amplify a 150-bp fragment for 5\u2032-terminus of mtrm. The rest of mtrm was amplified with primers pmtrm-STP: 5\u2032-ctgaaggtgaacacctccaacgtgcgatgctctgctccgatctttggcaacttccgttcgcccaatctc-3\u2032 (SEQ ID NO: 8), and pmtrm-mut-TAA: 5\u2032-gctctagattaaagagtg tggagcacatccatgatacgcttgc-3\u2032 (SEQ ID NO: 9) to produce a 520-bp fragment. The 150-bp and 520-bp fragments were combined in equal amounts and amplified by PCR to assemble the full length KpnI-XbaI mtrmT(40)A gene introducing a point mutation. The KpnI-XbaI mtrmT(40)A was cloned in to pUASP to generate pUASP-mtrmT(40)A. After confirmation by sequencing the plasmid was used for genetic transformation.",
+                                "To construct the mtrmS(124)A transgene, primer pmtrm-mut-ATG and primer pmtrm-SSPre: 5\u2032-ggtctccatattcgagtcatccgaacaggtatccggggcgctgcagctct-3\u2032 (SEQ ID NO: 10) were used to amplify a 420-bp fragment of the 5\u2032-terminus of mtrm. The 3\u2032-terminus of mtrm was amplified by using primer pmtrm-SSP: 5\u2032-agagctgcagcgccccggatacc tgttcggatgactcgaatatggagacc-3\u2032 (SEQ ID NO: 11) and primer pmtrm-mut-TAA to produce a 300-bp fragment. The two fragments in equal molar amounts were amplified by PCR to assemble a full length KpnI-XbaI mtnmS(124)A gene with a point mutation introduced. The KpnI-XbaI mtrmS(124)A was cloned in pUASP to generate pUASP-mtrmS(124)A. The plasmid was used for genetic transformation after confirmation by sequencing."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "construct UASp-polo+ transgene",
+                                "construct UASp-mtrm-flag(3\u00d7) transgene",
+                                "mutate STP motif",
+                                "mutate SSP motif",
+                                "construct pUASP-mtrmT(40)A transgene",
+                                "construct pUASP-mtrmS(124)A transgene"
+                            ],
+                            "num_characters": 3379,
+                            "outline_medium": [
+                                "construct UASp-polo+ transgene",
+                                "construct UASp-mtrm-flag(3\u00d7) transgene",
+                                "construct UASp-mtrmT(40)A and UASp-mtrmS(124)A transgenes"
+                            ],
+                            "outline_short": [
+                                "describe construction of transgene plasmids"
+                            ]
+                        },
+                        {
+                            "title": "Antibodies",
+                            "paragraphs": [
+                                "The mtrm gene was cloned into a pET-21a vector (Norvagen). 6\u00d7His-tagged Mtrm was expressed in the bacterial strain BL21 (DE3), isolated and purified using the Probed Purification System (Invitrogen) and used to raise rabbit and guinea pig polyclonal antisera by Cocalico Biologicals Inc in Reamstown, Pa. Affinity purification of the antiserum against Mtrm was performed by using a Sulfolink kit from the Pierce Company. Mouse monoclonal anti-Polo antibody was kindly provided by Moutinho-Santos [1,3]. Anti-GFP antibody from rabbits was purchased from Abcam Inc (Cambridge, Mass.)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "generate antibodies against Mtrm"
+                            ],
+                            "num_characters": 582,
+                            "outline_medium": [
+                                "describe generation of antibodies against Mtrm and Polo"
+                            ],
+                            "outline_short": [
+                                "describe generation of antibodies against Mtrm"
+                            ]
+                        },
+                        {
+                            "title": "Immunostaining for Mtrm Localization",
+                            "paragraphs": [
+                                "To prepare ovaries to fix for immunostaining, female fly preparation and ovary dissection were conducted as described in Xiang and Hawley (2006) [30]. Whole ovaries were collected and kept in 0.75 ml 1\u00d7 Robb's solution during the dissection. After egg chambers were manually teased apart, the ovaries were transferred to an Eppendorf tube. Then, 0.25 ml 16% formaldehyde was added and incubated for 15 minutes. The ovaries were washed three times in PBS+0.1% Triton X-100 (PBST) for 10 minutes each. After washing three times in PBST, they were incubated in PBST with 5% goat serum for at least two hours at 4\u00b0 C. with gentle shaking before being incubated overnight with primary antibodies. Egg chambers were washed four times in PBST and then incubated with proper fluorescently-labeled secondary antibodies for 4 hours at room temperature. Egg chambers were stained for ten minutes in PBST with 0.5 \u03bcg/ml DAPI and re-washed four times in the solution for a total of 40 minutes. The egg chambers were mounted on slides in Vectashield for analysis. Microscopy observation was conducted using a DeltaVision microscopy system (Applied Precision, Issaquah, Wash.) as described in Xiang and Hawley (2006) [30]."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "prepare ovaries for immunostaining",
+                                "perform immunostaining for Mtrm localization"
+                            ],
+                            "num_characters": 1207,
+                            "outline_medium": [
+                                "describe immunostaining protocol for Mtrm localization"
+                            ],
+                            "outline_short": [
+                                "describe immunostaining protocol for Mtrm localization"
+                            ]
+                        },
+                        {
+                            "title": "Immunoprecipitations",
+                            "paragraphs": [
+                                "To prepare the ovary extract for immunoprecipitation, ovaries from 100 yeast-fed female flies were dissected in 1\u00d7PBS. The ovaries were homogenized in an Eppendorf tube at 4\u00b0 C. by a small pestle in 0.5 ml of ovary extract buffer containing 25 mM Hepes (pH 6.8), 50 mM KCl, 1 mM MgCl2, 1 mM DTT and 125 mM sucrose with protease inhibitors cocktail (Calbiochem). The extract was centrifuged at 14000\u00d7g for 15 minutes at 4\u00b0 C. and the supernatant was collected.",
+                                "Protein A agarose beads were used for binding polyclonal antibodies from rabbit and guinea pig. Protein G agarose beads were used for binding monoclonal antibody from mouse. 50 ul of protein A or G-coated agarose was washed three times with PBST (PBS+0.1% Triton X-100). 10 ul of antibody was added to the beads in a final volume of 500 ul of PBS and mixed on a shaker for 1 hour at 4\u00b0 C. The beads then were washed twice with PBST. The ovary extract was immunoprecipitated with the beads for 1 hour at 4\u00b0 C. with continual shaking. After recovery by centrifugation at 1000\u00d7g for 3 minutes, the beads were washed 4 times with the cold ovary extract buffer with protease inhibitors, for 5 minutes each. For Western blotting, the beads were suspended in 30 \u03bcl of SDS loading buffer (50 mM Tris-HCl (pH 6.8), 100 mM DTT, 2% SDS, 0.1% bromophenol blue, 10% glycerol) and heated for 3 minutes at 95\u00b0 C. before being loaded on a PAGE gel. Western blotting for Mtrm (FIG. 2B) was conducted by using anti-Mtrm antibody from guinea pigs and an Alkaline Phosphatase chromogen kit (BCIP/NBT) (Roche). Fluorescent Western blotting techniques were used to display both Mtrm and Polo from CO\u2014IP on the same membrane.",
+                                "Affinity Purification of Mtrm-Flag(3\u00d7) from Ovaries",
+                                "In order to prepare a C-terminally 3\u00d7FLAG-tagged Mtrm for the MudPIT mass spectrometry assay, the UASP-mtrm-Flag (3\u00d7) construct was expressed in ovaries under the control of the nanos-GAL4 driver in a wild-type background. The extraction of protein from the ovaries was the same as described above. 100 \u03bcl of anti-FLAG beads were washed 2 times with pre-chilled 1\u00d7PBS and then 2 times with pre-chilled ovary extract buffer. The anti-FLAG beads were mixed with the extract supernatant, incubated and washed as described above. After washing, the beads bound with Mtrm-FLAG (3\u00d7) were finally transferred to a mini-column and washed with 25 ml of TBS (50 mM Tris-HCl, pH 7.4, 150 mM NaCl) at 4\u00b0 C. When washing was completed, 300 \u03bcl TBS with 100 \u03bcg/ml 3\u00d7FLAG peptide was added to elute proteins. TCA was added to the eluted protein solution at a final concentration of 20%. The solution was mixed and kept on ice for at least 30 minutes. The solution was centrifuged at 14000 rpm at 4\u00b0 C. for 15 minutes. The pellet was collected and 300 \u03bcl of pre-chilled acetone was gently added. After centrifuging again at 14000 rpm at 4\u00b0 C. for 15 minutes, the pellet was carefully collected. The pellet was air dried and ready for the Mud PIT spectrometry analysis."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "prepare ovary extract",
+                                "perform immunoprecipitation with antibodies",
+                                "wash and recover immunoprecipitates",
+                                "perform Western blotting",
+                                "perform fluorescent Western blotting"
+                            ],
+                            "num_characters": 2969,
+                            "outline_medium": [
+                                "describe immunoprecipitation protocol",
+                                "describe Western blotting and co-immunoprecipitation analysis"
+                            ],
+                            "outline_short": [
+                                "describe immunoprecipitation protocol for Mtrm and Polo"
+                            ]
+                        },
+                        {
+                            "title": "Multidimensional Protein Identification Technology (MudPIT) Analysis",
+                            "paragraphs": [
+                                "TCA-precipitated proteins were urea-denatured, reduced, alkylated and digested with endoproteinase Lys-C (Roche) followed by modified trypsin (Promega) as described in Washburn (2001) [1,5]. Peptide mixtures were loaded onto 100 \u03bcm fused silica microcapillary columns packed with 5-\u03bcm C18 reverse phase (Aqua, Phenomenex), strong cation exchange particles (Partisphere SCX, Whatman), and reverse phase [42]. Loaded microcapillary columns were placed in line with a Quaternary 1100 series HPLC pump (\u00b1Agilent) and a LTQ linear ion trap mass spectrometer equipped with a nano-LC electrospray ionization source (ThermoFinnigan). Fully automated 10-step MudPIT runs were carried out on the electrosprayed peptides, as described in [43]. Tandem mass (MS/MS) spectra were interpreted using SEQUEST [44] against a database consisting of 17,348 Drosophila melanogaster proteins (non-redundant entries downloaded from NCBI, 2006 Nov. 28 release), and 177 usual contaminants (such as human keratins, IgGs, and proteolytic enzymes). To estimate false discovery rates (FDR), each non-redundant protein entry was randomized, keeping the same amino acid composition and length, doubling the search space to a total of 35,050 amino acid sequences (17,525 forward+17,525 shuffled sequences). Peptide/spectrum matches were selected and compared using DTASelect/CONTRAST [45] with the following criteria set: spectra/peptide matches were only retained if they had a DeltCn of at least 0.08, and a minimum XCorr of 1.8 for singly-, 2.0 for doubly-, and 3.0 for triply-charged spectra. In addition, peptides had to be fully-tryptic and at least 7 amino acids long. Combining all runs, proteins had to be detected by at least 2 such peptides or 1 peptide with 2 independent spectra. Under these criteria, the average FDR was 0.34\u00b10. To estimate relative protein levels, Normalized Spectral Abundance Factors (NSAFs) were calculated for each non-redundant protein, as described in Zybailov (2006) and Paoletti (2006) [16,17]. Log-transformed NSAF values for proteins reproducibly detected in all three analyses were subjected to a two-tailed t-test to highlight proteins significantly enriched in the Mtrm purifications as opposed to negative controls as in Zybailov (2006) [17]. A differential modification search was set up to query a protein database containing only the sequences for Mtrm and Polo for peptides containing phosphorylated serines, threonines, tyrosines and oxidized methionines, i.e. SEQUEST \u201cASFP\u201d (All Spectra against Few Proteins). The maximum number of modified amino acids per differential modification in a peptide was limited to four. After this search, an in-house developed script, sqt-merge [46] was used to combine the sets of SEQUEST output files (sqt files) generated from the normal \u201cASAP\u201d search (All Spectra All Proteins, i.e. without modifications) and the phosphorylation \u201cASFP\u201d search described above into one set. This merging step allowed only the best matches to be ranked first. The peptide matches contained in the merged sqt files were compiled and sorted using DTASelect [45]. For the third round of searches, spectra matching modified peptides were selected if they passed the conservative filtering criteria: minimum XCorr of 1.8 for +1, 2.0 for +2, and 3.0 for +3 spectra, with a maximum Sp rank of ten, and fully tryptic peptides with a minimum length of seven amino acids. Xcorr scores for isopeptides, in which any of several adjacent residues could be modified, tend to close resulting in low normalized differences in Xcorrs. The DeltaCn cut-off was hence set at 0.01 to allow such peptides to be further examined (\u201c\u2212m 0\u2212t 0\u2212Smn 7\u2212y 2\u2212s 10\u22122 2\u22123 3\u2212d 0.01\u201d DTASelect parameters). The coordinates for these spectra were written out into smaller ms2 files using the \u201c\u2014copy\u201d utility of DTASelect. Because these subsetted ms2 files contained, at best, a few hundreds MS/MS spectra, they can be subjected to the same phosphorylation differential search against the complete Drosophila database (SEQUEST \u201cMSAP\u201d, Modified Spectra against All Proteins). This step allowed us to check that spectra matching modified peptides from Polo and Mtrm sequences did not find a better match against the larger protein database. Again, sqt-merge was used to bring together the results generated by these different searches. DTASelect was used to create reports listing all detected proteins and modified residues on Polo and Mtrm. All spectra matching modified peptides were visually assessed and given an evaluation flag (Y/M/N, for yes/maybe/no). The \u201cno\u201d matches were removed from the final data (\u2212v 2 parameter in DTASelect). Results from different immunoprecipitations were compared using CONTRAST. NSAF5 (an in-house software by Tim Wen) was used to create the final report on all detected proteins across the different runs, calculate their respective NSAF values, and estimate false discovery rates (FDR). U_SPC6 software (in-house by Tim Wen) was used to extract total and modified spectral counts for each amino acid within the proteins of interest and calculate modification levels based on local spectral counts."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "prepare protein samples for MudPIT",
+                                "perform MudPIT analysis",
+                                "interpret MS/MS spectra",
+                                "estimate false discovery rates",
+                                "calculate NSAF values",
+                                "perform differential modification search",
+                                "merge search results",
+                                "filter and sort peptide matches",
+                                "perform phosphorylation search",
+                                "create final report on detected proteins"
+                            ],
+                            "num_characters": 5135,
+                            "outline_medium": [
+                                "describe protein extraction and purification",
+                                "describe MudPIT analysis protocol",
+                                "describe peptide identification and filtering",
+                                "describe protein quantification and statistical analysis",
+                                "describe phosphorylation site analysis"
+                            ],
+                            "outline_short": [
+                                "describe MudPIT analysis protocol",
+                                "describe data analysis and protein identification"
+                            ]
+                        },
+                        {
+                            "title": "Determining the Timing of NEB",
+                            "paragraphs": [
+                                "To investigate the timing of NEB, 3 day old females were collected and fed on yeast for two days. Ovaries were dissected in halocarbon oil 700 (Sigma) on a slide and egg chambers were separated by mixing using a metal rod. Then, a coverslip was gently put on without pressing and mounting. After waiting for 20-30 minutes, the egg chambers were observed by phase contrast microscopy in dark view.",
+                                "Examining Karyosome Structure Before and after NEB",
+                                "To facilitate live imaging of the karyosome before and during NEB, stage 11-12 oocytes from well-fed females were dissected in halocarbon oil and then co-injected with Oli-Green Dye (Molecular Probes) to visualize DNA and Rhodamine-conjugated tubulin (Cytoskeleton) to visualize the spindle and to determine timing of the NEB. Oocytes with germinal vesicles were imaged using a LSM 510 META microscope (Zeiss). Images were acquired using the AIM software v 4 by taking a 10 series Z-stack at 1 micron intervals."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate timing of NEB"
+                            ],
+                            "num_characters": 961,
+                            "outline_medium": [
+                                "describe protocol for determining timing of nuclear envelope breakdown"
+                            ],
+                            "outline_short": [
+                                "describe protocol for determining timing of NEB"
+                            ]
+                        },
+                        {
+                            "title": "In Situ Hybridization",
+                            "paragraphs": [
+                                "The 1.686 satellite sequences (also known as the 359-bp repeats) on the X chromosome and AATAT repeats on the 4th chromosome were chosen as probes for in situ hybridization [29,30,47]. The 359-bp sequence of the 1.686 satellite sequences and (AATAT)6 repeats were used for probe preparation. Alexa Fluor 488 dye was used for probes of 359-bp sequence on the X chromosome. For probes (AATAT)6 on the 4th chromosome, Alexa Fluor 647 dye was used. The details of probe generation and labeling, egg chamber dissection and fixation, fluorescent in situ hybridization and microscopy observation were described previously [30]. In all oocytes examined for centromere co-orientation, 4th chromosomes were observed as red masses of hybridization while the X chromosomes were observed as single bright green masses of hybridization. The FM7 balancer chromosome displays two green blocks of hybridization because of multiple inversions [30]. The AATAT probe is slightly hybridized with an X and FM7 balancer around the centromere region, and therefore both X and FM7 have a slight red signal at the centromere location.",
+                                "**Matrimony Requires Two Evolutionarily Conserved Serines for Binding to Polo**",
+                                "Female meiosis differs from other forms of cell division by the incorporation of two cell cycle arrests\u2014the first of which occurs prior to the G2/M transition. In many organisms, Polo like kinase-1 (Plk1) has been implicated in the control of this first arrest to varying degrees; from acting as the \u201ctrigger\u201d kinase that results in the activation of cyclin B-Cdk1 and subsequent nuclear envelope breakdown (NEB) to participating in the auto-amplification loop upon previous cyclin B-Cdk1 activation. Our work demonstrates that the regulation of this first meiotic arrest in Drosophila oocytes is also controlled by Polo (FIG. 13). Through a series of genetic, biochemical (FIG. 4D, E) and cytological analyses, we find Polo kinase to be regulated by a small inhibitory protein, Matrimony (Mtrm), during this phenomenal period of dormancy in female meiosis. Disruption of the careful balance of these two proteins in the oocyte results in meiotic defects including improper segregation of achiasmaste (nonexchange) homologous chromosomes and precocious NEB.1 Given Polo's key role in many cell cycle events, the question then arises as to how Mtrm precisely achieves such a feat. Recent work suggests that Mtrm inhibits Polo via direct binding to the Polo-box domain (PBD) of Polo (FIG. 14). We have shown previously that mutation of the central residue within a highly conserved PBD-binding consensus motif in Mtrm (MtrmT40) to alanine results in a complete loss of mtrm function. Here, both yeast two-hybrid (Y2H) analysis and site-specific mutagenesis of Drosophila transgenes suggest that two other evolutionarily conserved serines located near the PBD-binding motif (MtrmS48 and MtrmS52) are also critical for Mtrm function and direct binding to Polo.",
+                                "Our preliminary results indicate that in addition to MtrmT40, MtrmS48 and/or MtrmS52 are critical for Mtrm binding to Polo and for Mtrm function in Drosophila oocytes. We found that Mtrm mutants containing MtrmS48A and/or MtrmS52A ablated the interaction with Polo in the Y2H system (FIG. 17). We note that the MtrmT40A mutant only weakly bound Polo in the Y2H system, as evidenced by the growth of only 7 colonies following the first serial dilution and one colony at the third serial dilution (FIG. 17). Interestingly, the Y2H results correlate with an ongoing analysis of flies expressing mutant Mtrm proteins in a mtrm-compromised background.",
+                                "Similar to the MtrmT40A mutant, we found that expression of mutants containing MtrmS48A and MtrmS52A does not rescue the defects in achiasmate (nonexchange) segregation (Table 1).",
+                                "The highly conserved phosphorylatable residues, MtrmS48 and MtrmS52, in addition to the central residue of the PBD-binding site, MtrmT40, appear to be important for both the binding of Mtrm to Polo and the function of Mtrm in Drosophila. These observations call for further exploration and highlight important questions related to the preference of Polo's PBD to bind one PBD-binding site over another. Indeed, Mtrm contains one other putative PBD-binding motif (with the central residue: MtrmS124), however, previous work has demonstrated that site to be non-critical for Mtrm function and Mtrm-Polo binding (48).",
+                                "It is worthy of note that MtrmS48 and MtrmS52 fall within a consensus motif for phosphorylation by GSK-3. It will be interesting to see whether GSK-3 phosphorylation at MtrmS48 is required for subsequent priming at MtrmT40, for sustained Polo PBD-binding, or for Mtrm degradation, as GSK-3 has been increasingly implicated in the process that mediates ubiquitin-mediated proteolysis.",
+                                "Intriguingly, the Mtrm SAM domain appears to be important for Mtrm to efficiently bind Polo. Future work characterizing this C-terminal truncation in transgenic flies will provide further insight into this particular Y2H result.",
+                                "**Protein Expression**",
+                                "mtrm and polo were cloned into pBacPAK8 with a Flag tag and 2XHA tag, respectively, at the N-terminus. The proteins were expressed using the BacPAK baculovirus expression system (Clontech) in Spodoptera frugiperda Sf9 cells. Sf9 cells were cultured at 27\u00b0 C. in Sf-900 II SFM (Invitrogen) with 10% FBS. When cell density reached 1.5\u00d7106/ml, the cells were infected with baculoviruses for 48 h. For single protein expression, baculoviruses containing either mtrm or polo was used to infect cells. For co-expression of Mtrm and Polo, two types of the baculoviruses were used together to infect cells. The cells were then harvested and lysed in buffer containing 20 mM HEPES pH 7.9, 1.5 mM MgCl2, 100 mM NaCl; 0.2% Triton X-100 and 10% Glycerol with protease inhibitors. Cell lysates were ultra-centrifuged at 40,000 rpm for 40 min at 4\u00b0 C. The supernatant was used for affinity purification.",
+                                "**Affinity Purification**",
+                                "Anti-Flag and anti-HA agarose beads were obtained from Sigma. The agarose beads were pre-washed twice with 1\u00d7PBS and one wash with the above buffer. Anti-Flag and anti-HA affinity purifications were performed by incubating the prepared agarose beads with the lysates from Sf9 insect cells for 60 min with gently shaking at 4\u00b0 C. After incubation, the agarose was washed 6 times with the above buffer for 6 min for each wash. After washing, the protein pulled down by anti-Flag was eluted using 200 \u03bcg/ml Flag peptide and the protein pulled down by anti-HA was eluted by 200 \u03bcg/ml 2\u00d7HA peptide. A part of each eluted protein sample was used for PAGE gel running. (FIG. 19).",
+                                "**Protein In-Vitro Binding and Western Blotting**",
+                                "Protein from affinity-purified Flag-Mtrm and HA-Polo was used for an in vitro binding experiment. 50 \u03bcg Flag-Mtrm was mixed with the same amount of HA-Polo in 60 \u03bcl of the above buffer and incubated for 1 hr at 30\u00b0 C. As a control, 50 \u03bcg HA-Polo in 60 \u03bcl was also incubated. After incubation, both protein samples were immunoprecipitated using 50 \u03bcl protein A agarose beads coated with anti-Mtrm antibody (from guinea pig) for 1 hr at 4\u00b0 C. The agarose beads were washed 6 times with the above protein buffer.",
+                                "For Western blotting, the beads were suspended in 40 \u03bcl of SDS loading buffer (50 mM Tris-HCl (pH 6.8), 100 mM DTT, 2% SDS, 0.1% bromophenol blue, 10% glycerol) and heated for 3 min at 95\u00b0 C. before being loaded on a PAGE gel. Western blotting for HA-Polo was conducted using anti-HA antibody from mouse and an Alkaline Phosphatase chromogen kit (BCIP/NBT) (Roche). (FIG. 18).",
+                                "The present invention is not to be limited in scope by the specific embodiments described herein. Indeed, various modifications of the invention in addition to those described herein will become apparent to those skilled in the art from the foregoing description and the accompanying figures. Such modifications are intended to fall within the scope of the appended claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "choose satellite sequences as probes",
+                                "prepare probes with Alexa Fluor dyes",
+                                "describe fluorescent in situ hybridization",
+                                "observe centromere co-orientation in oocytes",
+                                "describe FM7 balancer chromosome hybridization",
+                                "note AATAT probe hybridization with X and FM7",
+                                "introduce Matrimony and Polo in female meiosis",
+                                "describe Polo's role in cell cycle arrests",
+                                "summarize genetic, biochemical, and cytological analyses",
+                                "describe Mtrm's regulation of Polo",
+                                "introduce evolutionarily conserved serines in Mtrm",
+                                "describe yeast two-hybrid analysis and site-specific mutagenesis",
+                                "express mtrm and polo in pBacPAK8 with tags",
+                                "describe affinity purification using anti-Flag and anti-HA agarose beads",
+                                "perform in vitro binding and Western blotting"
+                            ],
+                            "num_characters": 7938,
+                            "outline_medium": [
+                                "choose probes for in situ hybridization",
+                                "prepare probes",
+                                "describe fluorescent in situ hybridization",
+                                "motivate Matrimony Requires Two Evolutionarily Conserved Serines for Binding to Polo",
+                                "describe protein expression",
+                                "describe affinity purification",
+                                "describe protein in-vitro binding and Western blotting"
+                            ],
+                            "outline_short": [
+                                "prepare probes for in situ hybridization",
+                                "perform fluorescent in situ hybridization",
+                                "observe centromere co-orientation"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for modulating oocyte maturation comprising contacting an oocyte with an amount of a molecule selected from the group consisting of Polo kinase (Polo), an ortholog of Polo, a modulator of Polo or its ortholog, and combinations thereof, which amount is sufficient to achieve modulation of oocyte maturation.",
+        "2. The method according to claim 1, wherein the Polo ortholog is a human ortholog.",
+        "3. The method according to claim 1, wherein the modulator of Polo is a human ortholog of a Matrimony (Mtrm) polypeptide.",
+        "4. The method according to claim 1, wherein modulation of oocyte maturation comprises activating oocyte maturation.",
+        "5. The method according to claim 4, wherein activating oocyte maturation comprises contacting the oocyte with an amount of Polo or an ortholog thereof sufficient to initiate nuclear envelope breakdown.",
+        "6. The method according to claim 4, wherein activating oocyte maturation comprises contacting the oocyte with an amount of an inhibitor of Mtrm or an ortholog thereof, which is sufficient to initiate nuclear envelope breakdown.",
+        "7. The method according to claim 1, wherein modulation of oocyte maturation comprises inhibiting initiation of nuclear envelope breakdown.",
+        "8. The method according to claim 7, wherein inhibiting oocyte maturation comprises contacting the oocyte with an amount of Mtrm or an ortholog thereof sufficient to inhibit initiation of nuclear envelope breakdown.",
+        "9. The method according to claim 7, wherein inhibiting oocyte maturation comprises contacting the oocyte with an amount of an inhibitor of Polo or an ortholog thereof, which is sufficient to inhibit initiation of nuclear envelope breakdown.",
+        "10. The method according to claim 9, wherein the inhibitor is selected from the group consisting of HMN-214 ((E)-4-[2-[2-(p-methoxybenzenesulfonamide)-phenyl]ethenyl]pyridine-1-oxide, Nippon Shinyaku), ON-01910 (a small-molecule benzyl styryl sulfone polo-like kinase 1 inhibitor, Onconova), CYC800 (a small-molecule polo-like kinase-1 (Plk-1) inhibitor, Cyclacel), a signal inhibitor against Plk-1 (Rexahn), BI-2536 (a polo-like kinase 1 inhibitor, Boehringer Ingelheim), GSK-461364A (a thiophene amide polo-like kinase-1 (Plk) inhibitor, GlaxoSmithKline), PIKT inhibitors (Kiadis), PLK-1 inhibitors (Onconova), PLK-1 inhibitors (Sareum), and combinations thereof.",
+        "11. A method for identifying a candidate compound that modulates the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof, comprising the steps of:\n(a) contacting Matrimony or an ortholog thereof with Polo or an ortholog thereof under conditions suitable to form a Matrimony-Polo complex;\n(b) contacting the Matrimony-Polo complex with a candidate compound; and\n(c) determining the ability of the candidate compound to modulate binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof, wherein modulation of the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof indicates that the candidate compound is effective to modulate the binding of Matrimony or ortholog thereof to Polo or an ortholog thereof.",
+        "12. The method according to claim 11, wherein the candidate compound increases the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof.",
+        "13. The method of claim 11, wherein the candidate compound decreases the binding of Matrimony or an ortholog thereof to Polo or an ortholog thereof.",
+        "14. The method according to claim 11, wherein the candidate compound is selected from the group consisting of a nucleic acid, a polypeptide, a polysaccharide, a small organic or inorganic molecule, and combinations thereof.",
+        "15. The method according to claim 11, wherein the candidate compound is selected from the group consisting of a fusion protein, an antibody, an antibody mimetic, a domain antibody, a targeted aptamer, a RNAi, a siRNA, a shRNA, an antisense sequence, a small molecule, and combinations thereof.",
+        "16. The method according to claim 11, wherein the binding is determined using a method selected from the group consisting of a yeast two-hybrid (Y2H) assay, a fluorescence resonance energy transfer (FRET) assay, a bioluminescence resonance energy transfer (BRET) assay, a co-immunoprecipitation assay, a label transfer assay, a pull down assay, a tandem affinity purification (TAP) assay, an in vivo crosslinking assay, a chemical crosslinking assay, and a quantitative immunoprecipitation combined with knockdown (QUICK) assay.",
+        "17. The method according to claim 11, wherein the binding is determined using a yeast two-hybrid assay.",
+        "18. A method for identifying a functional ortholog of a Drosophila Matrimony polypeptide comprising:\n(a) screening polypeptides from an oocyte preparation for their ability to interact with Polo kinase (Polo) or an ortholog thereof; and\n(b) identifying which, if any, of the polypeptides screened in step (a) act as an inhibitor of Polo or an ortholog thereof.",
+        "19. The method according to claim 18, wherein the oocyte preparation is obtained from a human.",
+        "20. The method according to claim 18, wherein a polypeptide identified in step (b) comprises a Polo binding domain (PBD) having amino acids STP, SSP, or both STP and SSP."
+    ]
+}

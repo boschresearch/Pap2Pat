@@ -1,0 +1,122 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate online shopping interfaces
+
+## SUMMARY
+
+- outline method for product variant determination
+- outline computer-readable medium for product variant determination
+- summarize product variant determination process
+
+## DETAILED DESCRIPTION
+
+- introduce e-commerce websites
+- describe consumer behavior on e-commerce websites
+- motivate need for efficient website design
+- describe product information database
+- explain problems with disparate product information
+- introduce product groupings and family names
+- describe embodiments for identifying product variants
+- extract product family names from unstructured titles
+- determine products with similar model numbers
+- describe benefits of identifying product variants
+- improve customer experience and sales
+- reduce load on retailer's servers
+- increase customer loyalty
+- provide product variants on a single webpage
+- show product variants of a product family on a single webpage
+- provide graphical control elements for selection and purchase
+- improve user experience by reducing time and effort
+- solve internet-centric problem of displaying product variants
+- improve functionality of a website
+- build database or lookup table of product variants
+- build webpages associated with product families
+- provide improved graphical user interface
+- display relevant product variant information
+- prevent multiple searches for product variants
+- apply embodiments to brick and mortar retail stores
+- apply embodiments to inventory management
+- apply embodiments to intangible products and services
+- describe illustrative methods and systems for identifying product variants
+- describe method 10
+- build lookup table of product variants
+- receive webpage request from user device
+- send webpage to user device with product variant information
+- determine product variants using lookup tables
+- store product variant information in lookup tables and product information database
+- describe advantages of method 10
+- define user and user device
+- describe example products and product family
+- show product variant options on webpage
+- describe method 48 for using query rewrite model to build lookup table
+- extract product family name from unstructured product titles
+- store extracted product family names in lookup tables and product information database
+- describe language processing steps for extracting product family names
+- determine degree of similarity between model numbers of products
+- store information about model number processing in lookup tables and product information database
+- analyze model numbers for degree of similarity to identify product variants
+- describe example of model numbers for product variants
+- describe correspondence between model number portions and product variant properties
+- illustrate method 48 in FIG. 5
+- describe step 50 of extracting product family name
+- describe step 52 of determining degree of similarity between model numbers
+- illustrate product variant options in FIG. 4
+- describe display elements of FIG. 4
+- illustrate example of product family name extraction in FIG. 6
+- illustrate example of model number analysis in FIG. 7
+- describe product information database
+- describe server and user device interactions
+- describe electronic user interface
+- describe determining degree of similarity between model numbers
+- introduce edit distance, Levinshtein distance, and/or Hamming distance
+- calculate edit distance scores
+- compare edit distance scores to known product variant information
+- determine product variants based on edit distance scores
+- vary threshold for determining similarity based on product characteristics
+- extract product family names
+- compare extracted product family names for identical matches
+- determine product variants based on extracted product family names
+- use edit distance scores to determine product variants
+- extract base model numbers
+- compare base model numbers for exact matches
+- determine product variant type
+- determine product variant property
+- store product variant information in a database
+- use brand name to determine product variants
+- use product category to determine product variants
+- use product price to determine product variants
+- describe Algorithm 1 for identifying product variants
+- test method 48 against other methods
+- measure precision and recall of method 48
+- measure accuracy of method 48 by product category
+- describe computing system environment
+- describe processing unit
+- describe memory
+- describe bus
+- describe storage devices
+- describe drive interfaces
+- describe computer-readable media
+- describe program modules
+- describe BIOS
+- describe operating system
+- describe applications programs
+- describe input devices
+- describe output devices
+- describe network connections
+- describe localization hardware
+- describe GPS antenna
+- describe RFID chip or reader
+- describe WiFi antenna
+- describe other computing hardware
+- describe capturing or transmitting signals
+- describe determining location of computing system environment
+- describe limitations of embodiments
+- describe alternatives to embodiments
+- describe modifications to embodiments
+- describe equivalents to embodiments
+- describe procedures and logic blocks
+- describe physical manipulations of physical quantities
+- describe data representation in computer systems
+

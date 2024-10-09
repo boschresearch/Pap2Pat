@@ -1,0 +1,216 @@
+# DESCRIPTION
+
+## INTRODUCTION
+
+- introduce protein translation
+- describe error rates in translation
+- motivate BMAA misincorporation
+- describe protein synthesis fidelity
+- introduce nonprotein amino acids
+- describe BMAA association with proteins
+- summarize BMAA misincorporation
+
+## SUMMARY
+
+- summarize L-serine blocking BMAA insertion
+- describe Alzheimer's disease
+- introduce Aβ protein
+- describe APP cleavage
+- motivate L-serine as drug candidate
+- describe methods for preventing BMAA incorporation
+- describe methods for preventing protein misfolding
+- describe methods for treating neurological diseases
+- introduce L-serine precursors, derivatives, and conjugates
+- describe formulations for L-serine
+- introduce derivatives and isomers of BMAA
+- describe neurological diseases and disorders
+- introduce symptoms of neurological diseases
+- describe methods for improving symptoms
+- describe administration routes for L-serine
+- describe dosing regimens for L-serine
+- introduce methods for identifying agents
+- describe serine racemase assay
+- introduce methods for identifying candidate agents
+- describe screening methods for agents
+- describe L-serine polymer
+- describe salts of L-serine
+- describe alkylated L-serine
+- describe L-serine ester
+- describe pegylated L-serine
+- describe lipidated L-serine
+
+## DETAILED DESCRIPTION
+
+- introduce BMAA and its effects on proteins
+- introduce L-serine as a treatment for neuronal disorders
+- describe methods for preventing BMAA incorporation into proteins
+- describe methods for preventing protein misfolding and aggregation
+- introduce L-serine precursors, derivatives, and conjugates
+- describe methods for reducing risk of neurological diseases
+- describe methods for stabilizing neurological diseases
+- describe methods for treating neurological diseases
+- define neurological disorders and diseases
+- describe characteristics of nerve and neuron cells
+- introduce therapeutic benefits of L-serine
+- define therapeutic benefits and improvements
+- describe treatment outcomes
+- define ameliorate
+- describe stabilizing a disease or disorder
+- list non-limiting symptoms of neurological disorders and diseases
+- describe motor and cognitive deficiencies
+- describe speech and language difficulties
+- describe vision and perception difficulties
+- describe mood and behavioral changes
+- describe physical and motor difficulties
+- describe sleep and psychiatric abnormalities
+- describe cognitive and mental difficulties
+- describe social and emotional difficulties
+- describe treatment methods and uses
+- describe affecting underlying causes of diseases
+- introduce Amyotrophic Lateral Sclerosis Functional Rating Scale
+- describe effective amounts of L-serine
+- describe treatment outcomes and benefits
+- describe inhibiting or reducing disease progression
+- describe stabilizing or improving symptoms
+- describe partial reduction of symptoms
+- describe therapeutic benefit or improvement
+- describe measurement of treatment efficacy
+- describe imaging techniques for assessing disease severity
+- describe Alzheimer's disease diagnosis
+- describe Alzheimer's disease symptoms
+- describe PET scan results for Alzheimer's disease
+- describe ALS diagnosis
+- describe ALS symptoms
+- describe EMG and NCV tests for ALS
+- describe MRI scan results for ALS
+- describe Parkinson's disease diagnosis
+- describe Parkinson's disease symptoms
+- describe Huntington's disease diagnosis
+- describe Huntington's disease symptoms
+- describe genetic testing for Huntington's disease
+- describe Pick's disease diagnosis
+- describe Pick's disease symptoms
+- describe Frontotemporal dementia diagnosis
+- describe Frontotemporal dementia symptoms
+- describe MRI scan results for Frontotemporal dementia
+- define amount sufficient or effective
+- describe administration of amount sufficient or effective
+- describe therapeutic effect of amount sufficient or effective
+- describe individual variability in response to treatment
+- list possible amounts of L-serine for treatment
+- describe methods and uses of the invention
+- define contacting
+- define subject
+- describe compositions of the invention
+- describe amounts of L-serine for compositions
+- introduce L-serine derivatives and conjugates
+- describe hydroxyl protection groups
+- describe amino protection groups
+- describe acid protection groups
+- describe hydroxyl-protected L-serine compounds
+- describe L-serine derivatives and conjugates with derivatized amino moiety
+- describe L-serine derivatives and conjugates with derivatized acid moiety
+- describe L-serine conjugates with polymers
+- describe starting materials for preparing L-serine derivatives and conjugates
+- describe methods for synthesizing hydroxyl-protected serine compounds
+- describe administration routes for L-serine and derivatives
+- describe pharmaceutical formulations for L-serine and derivatives
+- describe carriers and excipients for pharmaceutical formulations
+- describe antibacterial and antifungal agents for pharmaceutical formulations
+- describe isotonic and absorption delaying agents for pharmaceutical formulations
+- describe controlled release formulations
+- describe biodegradable or biocompatible particles or polymeric substances
+- describe methods for preparing pharmaceutical formulations
+- describe kits for administering L-serine and derivatives
+- describe instructions for using kits
+- describe packaging materials for kits
+- describe labels and packaging inserts for kits
+- describe computer readable media for instructions
+- describe kits with multiple unit doses
+- describe cell-free and cell-based methods for screening agents
+- describe methods for identifying agents that modulate serine racemase activity
+- describe methods for identifying agents that modulate incorporation of BMAA into proteins
+- describe methods for screening agents that reduce or inhibit incorporation of BMAA into proteins
+- describe methods for measuring activity of agents
+- describe definitions for technical and scientific terms
+- describe incorporated references
+- describe singular and plural forms
+- describe numerical values and ranges
+- describe subranges within ranges
+- describe series of ranges
+- describe affirmative language for embodiments
+- describe excluded subject matter
+- describe modifications to embodiments
+- describe examples of embodiments
+- describe scope of invention
+- describe claims
+- describe L-serine derivatives and conjugates with various moieties
+- describe pharmaceutical formulations with various carriers and excipients
+- describe kits with various components and instructions
+- describe methods for screening and identifying agents with various activities
+
+### EXAMPLES
+
+- introduce example 1
+- describe materials and methods
+- list cell culture materials
+- describe cell culture conditions
+- outline studies on BMAA incorporation into proteins
+- describe cycloheximide inhibition of BMAA incorporation
+- examine effect of amino acids on BMAA incorporation
+- analyze removal of radiolabel from cell proteins
+- describe recovery of incorporated BMAA from proteins
+- outline autofluorescence imaging of cells
+- describe lactate dehydrogenase assay
+- outline acridine orange/ethidium bromide dual-staining
+- describe binding of annexin V to phosphatidylserine
+- outline extraction methods for fruit fly BMAA analysis
+- describe analytical methods for fruit fly BMAA
+- introduce example 2
+- describe data on BMAA incorporation into proteins
+- outline protein misfolding/aggregation
+- describe inhibition of BMAA incorporation by L-serine
+- analyze time-dependent increase in radiolabel in cell lysates
+- examine association of radiolabel with cell proteins
+- describe inhibition of BMAA incorporation by CHX
+- analyze release of radiolabel from cell proteins
+- examine competition between amino acids and BMAA
+- describe inhibition of BMAA incorporation by L-serine
+- analyze incorporation of BMAA into proteins in presence of amino acids
+- confirm presence of BMAA in cell proteins
+- describe inhibition of BMAA incorporation by L-serine and CHX
+- analyze recovery of BMAA from hydrolyzed proteins
+- describe autofluorescent bodies in cells incubated with BMAA
+- introduce examples
+- describe BMAA incorporation into proteins
+- motivate protein misfolding
+- describe Drosophila model
+- describe L-Serine rescue of Drosophila
+- describe additional models
+- describe neurotoxicity of BMAA
+- describe zebrafish model
+- describe BMAA toxicity
+- describe swimming performance
+- describe neuronal development
+- describe Example 4
+- describe L-Serine prevention of BMAA misincorporation
+- describe rodent neuroproteins
+- describe Example 5
+- describe Vervet model
+- describe protective effect of L-Serine
+- describe Example 6
+- describe analysis of L-Serine prevention
+- describe protein misfolding and aggregation
+- describe Example 7
+- describe studies of Alzheimer's brains
+- describe protein extraction and analysis
+- describe antibody affinity columns
+- describe protein purification
+- describe mass spectrometry analysis
+- describe Example 8
+- describe human clinical trials
+- describe Phase I trial design
+- describe ALS inclusion and exclusion criteria
+- describe trial endpoints
+- describe trial analysis
+

@@ -1,0 +1,223 @@
+{
+    "id": "US20210002700",
+    "authors": [
+        "Heng Li",
+        "Gavin Kurgan",
+        "Matthew McNeill",
+        "Yu Wang"
+    ],
+    "title": "IDENTIFICATION, CHARACTERIZATION, AND QUANTITATION OF CRISPR-INTRODUCED DOUBLE-STRANDED DNA BREAK REPAIRS",
+    "date": "2020-07-02 00:00:00",
+    "abstract": "Described herein is a system and process for identifying and characterizing double-stranded DNA break repair sites that are based on biological information and have improved accuracy. Also described is a sequence alignment process that uses biological data to inform the alignment matrix for position specific alignment scoring, resulting in the identification of noncanonical target sites.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "Described herein is a system and process for identifying and characterizing double-stranded DNA break repair sites that are based on biological information and have improved accuracy. Also described is a sequence alignment process that uses biological data to inform the alignment matrix for position specific alignment scoring, resulting in the accurate identification of noncanonical target sites."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe system and process for identifying and characterizing double-stranded DNA break repair sites"
+                    ],
+                    "num_characters": 399,
+                    "outline_medium": [
+                        "describe system and process for identifying and characterizing double-stranded DNA break repair sites"
+                    ],
+                    "outline_short": [
+                        "describe system and process for identifying and characterizing double-stranded DNA break repair sites"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The use of targeted nucleases, such as CRISPR proteins, has transformed genome editing. CRISPR enzymes form ribonucleoproteins (RNPs) when hybridized with either 2-part crRNA and tracrRNA or single guide RNAs (sgRNAs). With either approach, a short protospacer sequence (a guide RNA or \u201cgRNA\u201d) targets a specific sequence in a complementary molecule. Upon finding a match, these enzymes introduce a break in one or both DNA (or RNA) strands. CRISPR enzymes targeting DNA (e.g., Cas9, Cas12a/Cpf1) introduce double stranded breaks (DSBs) at predictable genomic positions relative to the gRNA's hybridization target. DNA DSBs are repaired by intracellular machinery, but the repair process often results in insertions and deletions (indels), substitutions, and other suboptimal allelic variants.",
+                        "Because each cell in an affected population must repair itself independent of adjacent cells, and the specific outcome can contain different resulting alleles, the population of cells is likely to contain a plurality of alleles at the targeted location. Additionally, the targeting capability of these nucleases is often somewhat non-specific, which results in undesired mutations at other, off-target, genomic locations.",
+                        "It is highly desirable to characterize and quantify the plurality of alleles at both on-target and off-target locations. Researchers often use DNA sequencing (such as Illumina next generation sequencing; NGS) to observe the resulting allelic diversity. Multiplexed polymerase chain reaction (PCR) can be performed to amplify and enrich all targeted locations. The resulting amplicons can be sequenced. The plurality of alleles can be characterized and counted using specialized software.",
+                        "Many specialized software tools have been developed to characterize the allelic variants resulting from DSBs. Prior tools include CRISPResso [1], crispRvariants [2], and Amplican [3]. These tools generally work by aligning each sequence read against expected amplicon targets using the Needleman-Wunsch, bwa, or custom alignment algorithms. The algorithm generates a list of possible read:target alignments. Each alignment is scored based on the number of matching, mismatching, and missing nucleotides (gaps). The best scoring alignment is used for downstream data processing.",
+                        "Alignment algorithms sometimes generate equally valued query:target alignments, which are most likely to occur when the query contains an insertion or deletion. From the equally valued options, alignment methods will return all or select one option. When selecting, some methods make the selection at random. Without a good predictive model or set of heuristic rules to make the selection, the alignment choice is variable, which can lead to incorrect indel annotations and lower accuracy results.",
+                        "What is needed is an algorithm and process for identifying and characterizing double-stranded DNA break repair sites that are based on biological information and have improved accuracy."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce CRISPR proteins and their function",
+                        "describe DNA DSBs and repair process",
+                        "discuss limitations of current methods",
+                        "motivate need for improved method",
+                        "summarize current state of the art"
+                    ],
+                    "num_characters": 2970,
+                    "outline_medium": [
+                        "describe use of targeted nucleases in genome editing",
+                        "describe limitations of current methods for characterizing allelic variants"
+                    ],
+                    "outline_short": [
+                        "describe use of targeted nucleases and limitations of current methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "One embodiment described herein is a computer implemented process for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising executing on a processor the steps of: receiving sample sequence data comprising a plurality of sequences; analyzing and merging of the sample sequence data and outputting merged sequences; developing target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes; binning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments; re-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment; analyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites; outputting the final alignment, analysis, and quantification results data as tables or graphics. In one aspect, the sequence data comprises sequences from a population of cells or subjects. In another aspect, the enzyme-specific cut site comprises one or more of Cas9, Cas12a, or other Cas enzymes. In another aspect, the pre-defined sequence distance window is enzyme specific and comprises between 1 nt to about 15 nt. In another aspect, the results show the percent editing, percent insertion, percent deletion, or a combination thereof. In another aspect, the accuracy of identifying variant target sites is improved by about 15 to about 20% as compared to comparable processes.",
+                        "Another embodiment described herein is a computer implemented process for aligning biological sequences, the process comprising executing on a processor the steps of: receiving sample sequence data comprising a plurality of sequences; aligning the sequence data to a predicted target sequence using a matrix based on an enzyme specific position-specific scoring of a specific nuclease target site; outputting the alignment results as tables or graphics. In one aspect, the sequence data comprises sequences from a population of cells or subjects. In another aspect, the specific nuclease target sequence comprises a target site for one or more of Cas9, Cas12a, or other Cas enzymes. In another aspect, the matrix uses position-specific gap open and extension penalties.",
+                        "Another embodiment described herein is a method for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising: extracting genomic DNA from a population of cells or tissue from a subject; amplifying the genomic DNA using multiplex PCR to produce amplicons enriched for target-site sequences; sequencing the amplicons and obtaining sample sequence data; subsequently executing on a processor, the steps of: receiving sample sequence data comprising a plurality of sequences; analyzing and merging of the sample sequence data and outputting merged sequences; developing target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes; binning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments; re-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment; analyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites; outputting the final alignment, analysis, and quantification results data as tables or graphics. In one aspect, the enzyme-specific cut site comprises one or more of Cas9, Cas12a, or other Cas enzymes. In another aspect, the pre-defined sequence distance window is enzyme specific and comprises between 1 nt to about 15 nt. In another aspect, the results show the percent editing, percent insertion, percent deletion, or a combination thereof. In another aspect, the accuracy of identifying variant target sites is improved by about 15 to about 20% as compared to comparable processes."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce computer implemented process for identifying and characterizing double-stranded DNA break repair sites",
+                        "describe receiving sample sequence data",
+                        "analyze and merge sample sequence data",
+                        "develop target-site sequences",
+                        "bin merged sequences with target-site sequences",
+                        "re-align binned target-read alignments",
+                        "analyze final alignment and identify mutations",
+                        "output final alignment, analysis, and quantification results",
+                        "describe various aspects of the process"
+                    ],
+                    "num_characters": 4656,
+                    "outline_medium": [
+                        "describe computer implemented process for identifying and characterizing double-stranded DNA break repair sites",
+                        "describe process for aligning biological sequences",
+                        "describe method for identifying and characterizing double-stranded DNA break repair sites",
+                        "describe advantages of the process"
+                    ],
+                    "outline_short": [
+                        "describe computer implemented process for identifying and characterizing double-stranded DNA break repair sites",
+                        "describe computer implemented process for aligning biological sequences"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "One embodiment described herein is an analytical pipeline called CRISPAltRations. See FIGS. 1-2. Briefly, this pipeline takes in FASTQ files, and builds a merged R1/R2 consensus using FLASH. Simultaneously, a target site reference is built, which describes the sequences for all expected on-target locations. Optionally, a target is built that contains an expected outcome of a homology directed repair (HDR) event. Next, the merged sequence reads are aligned to the target reference sequences using minimap2, (which was originally developed for rapid alignment of long reads (e.g., those generated by the Oxford Nanopore Technologies MinION). Reads aligning to each target are then re-aligned using a modified form of the Smith-Waterman aligner. The modified aligner allows us to improve detection of insertions and deletions resulting from DSB repair. All observed variants within a pre-defined distance of the DSB location are characterized and quantified. Finally, the results are summarized in tables and graphs. The various described programs, tools, and file types (as well as those mentioned below) are familiar to and readily accessible to those having ordinary skill in the art. It should be understood that these programs, tools, and file types are exemplary and are not intended to be limiting. Other tools and file types could be used to practice the described processing and analysis.",
+                        "In this analytical pipeline, the following improvements over prior methods are described. First, the use of minimap2 [4] enables alignment of reads generated from both short and long read sequencers. Second, by constructing the expected outcome of the homology directed repair event, the ability to characterize perfect (i.e., correctly occurring) HDR events is improved. Third, use of the modified Needleman-Wunsch aligner that can accept a Cas-specific bonus matrix enables significantly improved indel characterization and percent (%) editing quantification over prior methods. Fourth, graphical visualization of the introduced allelic variants is improved. Fifth, a predicted repair event, as described in a prior tool [5], is compared against the observed repair, and the molecular pathways involved in the repair can be described.",
+                        "In one embodiment, the processes described herein have the following advantageous uses:\n\n\n- - Accurate characterization of indel profiles resulting from DSBs.\n  - The fraction of reads containing an indel after a DSB is repaired is\n    used to calculate the percentage of editing. This metric (% editing)\n    is used to determine the effectiveness of a gRNA for use in\n    CRISPR-Cas gene editing.\n  - Accurate characterization of the resulting indel similarly improves\n    the ability to identify the percentage of cellular chromosomes in a\n    population of cells containing a frame-shifting mutation.\n    Frame-shifting mutations modify proteins encoded by affected genes.\n  - Accurate characterization of inserted sequences.\n  - Accurate characterization of multiple mutations resulting from\n    multiple gRNA/Cas9 (i.e., ribonucleoprotein complex) deliveries or\n    dual-guide region modifications.\n  - Analysis of indels sequenced on a long-read platform, such as\n    MinION. Additionally, it allows phased characterization of both ends\n    of large (\\>400 nt) insertion of deletion events, which occur after\n    DSB repair.\n  - Improved result visualization.",
+                        "One embodiment described herein is a computer implemented process for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising executing on a processor the steps of: receiving sample sequence data comprising a plurality of sequences; analyzing and merging of the sample sequence data and outputting merged sequences; developing target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes; binning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments; re-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment; analyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites; outputting the final alignment, analysis, and quantification results data as tables or graphics.",
+                        "In one embodiment, edited genomic DNA is extracted and amplified using targeted multiplex PCR to enrich for the on- and predicted off-target loci. Amplicons are sequenced on an Illumina MiSeq. Read pairs are merged into a single fragment (FLASH), mapped to the genome (minimap2) and binned by their alignment to expected amplicon positions. Reads in each bin are re-aligned to the expected amplicon sequence after finding the cut site and creating a position specific gap open/extension bonus matrix to preferentially align indels closer to the cut site/expected indel profiles for each enzyme (CRISPAltRations code+psnw). Indels that intersected with a window upstream or downstream of the cut site were annotated. Percent editing is the sum of reads containing indels/total observed.",
+                        "In some embodiments, the process described herein uses minimap2 [4], which enables alignment of reads generated from both short and long read sequencers. Prior tools typically only accept short read sequencing data, such as those that are generated by Illumina sequencers. Others have used long read sequencing data to examine large insertions or deletions [6-8], but no stand-alone publicly available tools are believed to exist. Long read data handling is partially enabled by use of the minimap2 aligner. For example, the alignment results can be visualized, which shows identification of a blunt molecular insertion in DNA after a DSB repair (FIG. 3). Another embodiment sorts between real and noise-derived indels using a method similar to a previously published tool [7] in which small indels are ignored.",
+                        "In another embodiment, by constructing the expected outcome of the HDR event, the ability to characterize perfect HDR events is improved. A reference file, in FASTA format, contains each expected sequence target and modified sequence targets as well. The first step toward constructing this file involves creating a reference sequence index that enables reads to be aligned to each expected structural variant. For example, if one interrogates a region targeted for a DSB and double stranded DNA donor oligo to enable HDR, there are multiple different likely biological repair outcomes:perfect repair (FIG. 4-1), HDR-mediated repair (FIG. 4-2), NHEJ repair (FIG. 4-3), and NHEJ repair with duplicate insertion (FIG. 4-4). Other outcomes, such as template fragment or triple template insertions, are also possible (not shown). A similar reference file construction approach has been used by other tools, such as UDiTaS\u2122[9].",
+                        "In another embodiment, a modified version of the Needleman-Wunsch algorithm is used to re-align reads against their expected target. The method described herein increases accuracy of alignments containing an indel (as annotated in alignment's CIGAR string). It significantly improves indel characterization and % editing quantification over prior methods. DNA sequence aligners such as minimap2 and Needleman-Wunsch approaches weigh indel alignments using fixed penalties for opening and extending gaps. This method is improved upon by re-aligning reads to their targets using position-specific gap open and extension penalties (enabled in a tool called \u201cpsnw\u201d) such that alignments with indels favor positioning them overlapping or near the predicted DSB. This position specific matrix is set to reflect the actual characterized indel profile of the specific Cas enzyme being used for editing (FIGS. 5-6). Thus, indel base alignments are most highly favored at or near the predicted target cut site (variable scoring strategy; FIG. 7). This method enables accurate realignment of indels, particularly those that occur in repetitive regions in the reference sequence. This approach improves the ability to identify the most biologically likely result.",
+                        "A recently developed tool (CRISPResso2 [11]), uses a cut-site aware alignment strategy. However, the processes described herein implements the cut-site aware alignment method using a full gap open/extension matrix during alignment that is tuned by actual editing data at Cas9/Cas12a sites and implemented in C++. In contrast, CRISPResso2 uses a method that only enables a single bonus at the cut site and is implemented in Python.",
+                        "In another embodiment, the processes described herein collect indels nearby the nuclease cut site and tag indels that intersect the cut site, or within a fixed distance. Some published accounts suggest a 1-2 nt fixed distance, but the data supporting those choices has been limited. In developing the embodiments described herein, the optimal distance (i.e., window size) around the cut site was studied using a set of Cas9-RNP treated and paired untreated control samples. It was observed that a 4-nt window for Cas9 or a 7-nt window for Cas12a provided the greatest sensitivity and provided an acceptable specificity (FIG. 4). The larger window requirement for Cas12a is likely due to the mechanism of action; Cas12a implements a double strand break by producing two single strand breaks 5-bp away (leaving \u201csticky\u201d ends) [12]. Thus, the process described herein can be expanded to other nucleases (e.g., CasX) [13] having biological data to inform the target window size and enzymatic mechanism of action.",
+                        "In another embodiment, graphical visualization of the allelic variation is improved. Downstream of the alignment step, several other analyses are performed that are unique to the described method. To generate an improved visualization, reads are deduplicated based on the identity of identified indel sequences within the CRISPR editing window post-alignment. Deduplicated reads are written back to a BAM file, and the frequency of each deduplicated read within the original population of reads is written to an associated BAM tag. After the file is indexed, indels in deduplicated reads and their associated frequencies can be visualized using the commonly available IGV tool [10] (FIG. 9).",
+                        "In another embodiment, a predicted repair event is compared, as described in a prior tool [5], against the observed repair, and can be used to determine the molecular pathways involved in the repair. The system described herein also adds the ability to compare the observed indel profile against expected indel profiles, which enables rapid discernment about whether an experimental treatment modified the intracellular mechanisms of DNA repair.",
+                        "The utility of the system and methods described herein is demonstrated by generating a synthetic set of 603 gRNA:amplicon pairs. At each target, 4000 read pairs (2\u00d7150 bp) are synthetically generated with a simulated Illumina MiSeq v3 platform error profile. In half of the reads, random indels are introduced based on a model generated off the observed editing profile for Cas9 and Cas12a (FIGS. 4-5). The synthetic data is analyzed using the CRISPRAltRations system described herein and the previously published CRISPResso1 and CRISPResso2 tools [11]. By implementing the method described herein, the ability to correctly characterize indels is improved by \u02dc15-20% (FIG. 10). The algorithm described herein has increased accuracy because it produces a biologically informed selection of the best alignment in targets where multiple equally scored alignments are possible. Additionally, the method described herein more accurately calculates the percentage of modified DNA molecules (FIG. 11). The process and strategy described herein is an important enhancement toward characterizing and quantifying indels introduced after DSB repair.",
+                        "Another embodiment described herein is a computer implemented process for aligning biological sequences, the process comprising executing on a processor the steps of: receiving sample sequence data comprising a plurality of sequences; aligning the sequence data to a predicted target sequence using a matrix based on an enzyme specific position-specific scoring of a specific nuclease target site; outputting the alignment results as tables or graphics. In one aspect, the sequence data comprises sequences from a population of cells or subjects. In another aspect, the specific nuclease target sequence comprises a target site for one or more of Cas9, Cas12a, or other Cas enzymes. In another aspect, the matrix uses position-specific gap open and extension penalties.",
+                        "Another embodiment described herein is a method for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising: extracting genomic DNA from a population of cells or tissue from a subject; amplifying the genomic DNA using multiplex PCR to produce amplicons enriched for target-site sequences; sequencing the amplicons and obtaining sample sequence data; subsequently executing on a processor, the steps of: receiving sample sequence data comprising a plurality of sequences; analyzing and merging of the sample sequence data and outputting merged sequences; developing target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes; binning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments; re-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment; analyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites; outputting the final alignment, analysis, and quantification results data as tables or graphics.",
+                        "Many different arrangements of the various components and processes described herein as well as components or processes not shown, are possible without departing from the spirit and scope of the present disclosure. It should be understood that embodiments or aspects may include and otherwise be implemented by a combination of various hardware, software, or electronic components. For example, various microprocessors and application specific integrated circuits (\u201cASICs\u201d) can be utilized, as can software of a variety of languages Also, servers and various computing devices can be used and can include one or more processing units, one or more computer-readable mediums, one or more input/output interfaces, and various connections (e.g., a system bus) connecting the components.",
+                        "It will be apparent to one of ordinary skill in the relevant art that suitable modifications and adaptations to the compositions, formulations, methods, processes, and applications described herein can be made without departing from the scope of any embodiments or aspects thereof. The compositions and methods provided are exemplary and are not intended to limit the scope of any of the specified embodiments. All the various embodiments, aspects, and options disclosed herein can be combined in any variations or iterations. The scope of the methods and processes described herein include all actual or potential combinations of embodiments, aspects, options, examples, and preferences herein described. The methods described herein may omit any component or step, substitute any component or step disclosed herein, or include any component or step disclosed elsewhere herein. Should the meaning of any terms in any of the patents or publications incorporated by reference conflict with the meaning of the terms used in this disclosure, the meanings of the terms or phrases in this disclosure are controlling.",
+                        "Furthermore, the specification discloses and describes merely exemplary embodiments. All patents and publications cited herein are incorporated by reference herein for the specific teachings thereof."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Computer Code",
+                            "paragraphs": [
+                                "Exemplary code used to generate a 1D scoring matrix for gap open bonus during alignment using psnw.",
+                                "Exemplary code used to generate 1D scoring matrix for gap extension bonus during alignment using psnw."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide exemplary code used to generate 1D scoring matrix for gap open bonus during alignment using psnw"
+                            ],
+                            "num_characters": 203,
+                            "outline_medium": [
+                                "provide exemplary code used to generate 1D scoring matrix for gap open and extension bonuses during alignment using psnw"
+                            ],
+                            "outline_short": [
+                                "provide exemplary code used to generate 1D scoring matrix for gap open and extension bonuses during alignment using psnw"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce CRISPAltRations analytical pipeline",
+                        "describe building merged R1/R2 consensus",
+                        "build target site reference",
+                        "optionally build target with expected outcome of HDR event",
+                        "align merged sequence reads to target reference sequences",
+                        "re-align reads using modified Smith-Waterman aligner",
+                        "characterize and quantify variants",
+                        "summarize results in tables and graphs",
+                        "describe improvements over prior methods",
+                        "describe use of minimap2",
+                        "describe constructing expected outcome of HDR event",
+                        "describe modified Needleman-Wunsch algorithm",
+                        "describe position-specific gap open and extension penalties",
+                        "describe collecting indels nearby nuclease cut site",
+                        "describe graphical visualization of allelic variation",
+                        "describe comparing predicted repair event to observed repair",
+                        "describe determining molecular pathways involved in repair",
+                        "describe utility of system and methods",
+                        "describe generating synthetic set of gRNA:amplicon pairs",
+                        "describe analyzing synthetic data using CRISPRAltRations system",
+                        "describe comparing results to CRISPResso1 and CRISPResso2 tools",
+                        "describe improved accuracy of CRISPRAltRations system",
+                        "describe another embodiment of computer implemented process",
+                        "describe receiving sample sequence data",
+                        "align sequence data to predicted target sequence",
+                        "output alignment results as tables or graphics",
+                        "describe another embodiment of method for identifying and characterizing double-stranded DNA break repair sites",
+                        "extract genomic DNA from population of cells or tissue",
+                        "amplify genomic DNA using multiplex PCR",
+                        "sequence amplicons and obtain sample sequence data",
+                        "execute on processor steps of receiving sample sequence data",
+                        "describe various arrangements of components and processes",
+                        "describe modifications and adaptations to compositions, formulations, methods, processes, and applications"
+                    ],
+                    "num_characters": 16583,
+                    "outline_medium": [
+                        "describe analytical pipeline called CRISPAltRations",
+                        "describe use of minimap2 for alignment",
+                        "describe construction of expected outcome of homology directed repair event",
+                        "describe re-alignment of reads using modified Needleman-Wunsch aligner",
+                        "describe analysis of final alignment and identification of mutations",
+                        "describe output of results",
+                        "describe improvements over prior methods",
+                        "describe use of minimap2 for alignment of reads from both short and long read sequencers",
+                        "describe construction of expected outcome of homology directed repair event",
+                        "describe modified Needleman-Wunsch aligner",
+                        "describe use of position-specific gap open and extension penalties",
+                        "describe sorting between real and noise-derived indels",
+                        "describe graphical visualization of allelic variation",
+                        "describe comparison of predicted repair event against observed repair",
+                        "describe utility of the system and methods",
+                        "describe alternative arrangements of components and processes"
+                    ],
+                    "outline_short": [
+                        "describe analytical pipeline called CRISPAltRations",
+                        "describe improvements over prior methods",
+                        "describe accurate characterization of indel profiles",
+                        "describe use of minimap2 for alignment of reads",
+                        "describe construction of expected outcome of HDR event",
+                        "describe modified Needleman-Wunsch algorithm for re-aligning reads",
+                        "describe graphical visualization of allelic variation",
+                        "describe comparison of predicted repair event against observed repair"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A computer implemented process for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising executing on a processor the steps of:\nreceiving sample sequence data comprising a plurality of sequences;\nanalyzing and merging of the sample sequence data and outputting merged sequences;\ndeveloping target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes;\nbinning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments;\nre-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment;\nanalyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites;\noutputting the final alignment, analysis, and quantification results data as tables or graphics.",
+        "2. The process of claim 1, wherein the sequence data comprises sequences from a population of cells or subjects.",
+        "3. The process of claim 1, wherein the enzyme-specific cut site comprises one or more of Cas9, Cas12a, or other Cas enzymes.",
+        "4. The process of claim 1, wherein the pre-defined sequence distance window is enzyme specific and comprises between 1 nt to about 15 nt.",
+        "5. The process of claim 1, wherein the results show the percent editing, percent insertion, percent deletion, or a combination thereof.",
+        "6. The process of claim 1, wherein the accuracy of identifying variant target sites is improved by about 15 to about 20% as compared to comparable processes.",
+        "7. A computer implemented process for aligning biological sequences, the process comprising executing on a processor the steps of:\nreceiving sample sequence data comprising a plurality of sequences;\naligning the sequence data to a predicted target sequence using a matrix based on an enzyme specific position-specific scoring of a specific nuclease target site;\noutputting the alignment results as tables or graphics.",
+        "8. The process of claim 7, wherein the sequence data comprises sequences from a population of cells or subjects.",
+        "9. The process of claim 7, wherein the specific nuclease target sequence comprises a target site for one or more of Cas9, Cas12a, or other Cas enzymes.",
+        "10. The process of claim 7, wherein the matrix uses position-specific gap open and extension penalties.",
+        "11. A method for identifying and characterizing double-stranded DNA break repair sites with improved accuracy, the process comprising:\nextracting genomic DNA from a population of cells or tissue from a subject;\namplifying the genomic DNA using multiplex PCR to produce amplicons enriched for target-site sequences;\nsequencing the amplicons and obtaining sample sequence data;\nsubsequently executing on a processor, the steps of:\nreceiving sample sequence data comprising a plurality of sequences;\nanalyzing and merging of the sample sequence data and outputting merged sequences;\ndeveloping target-site sequences containing predicted outcomes of repair events when a single-stranded or a double-stranded DNA oligonucleotide donor is provided and outputting the target predicted outcomes;\nbinning the merged sequences with the target-site sequences or the optional target predicted outcomes using a mapper and outputting target-read alignments;\nre-aligning the binned target-read alignments to the target-site using an enzyme specific position-specific scoring matrix derived from biological data that is applied based on the position of a guide sequence and a canonical enzyme-specific cut site and producing a final alignment;\nanalyzing the final alignment and identifying and quantifying mutations within a pre-defined sequence distance window from the canonical enzyme-specific cut sites;\noutputting the final alignment, analysis, and quantification results data as tables or graphics.",
+        "12. The process of claim 1, wherein the enzyme-specific cut site comprises one or more of Cas9, Cas12a, or other Cas enzymes.",
+        "13. The process of claim 1, wherein the pre-defined sequence distance window is enzyme specific and comprises between 1 nt to about 15 nt.",
+        "14. The process of claim 1, wherein the results show the percent editing, percent insertion, percent deletion, or a combination thereof.",
+        "15. The process of claim 1, wherein the accuracy of identifying variant target sites is improved by about 15 to about 20% as compared to comparable processes."
+    ]
+}

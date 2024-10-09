@@ -1,0 +1,241 @@
+# DESCRIPTION
+
+- acknowledge government support
+
+## BACKGROUND OF THE INVENTION
+
+- introduce lentiviruses
+- limitations of current treatments
+
+## SUMMARY OF THE INVENTION
+
+- introduce AGG motif
+- mutate AGG sequences
+- embodiment: mutated HIV nucleic acid
+- method for producing mutated virus nucleic acid
+- select non-AGG sequence
+- embodiment: mutant HIV virus
+- embodiment: recombinant virus
+- embodiment: virus protein expressed from mutant nucleic acid
+- embodiment: HIV vaccine
+- embodiment: virus vaccine with fewer AGG motifs
+- embodiment: HIV vaccine with fewer AGG motifs
+- embodiment: virus vaccine with higher protein expression
+- embodiment: HIV vaccine with higher protein expression
+- embodiment: composition with vaccine and additional component
+- method for immunizing against virus
+- method for identifying agents that inhibit or stimulate virus production
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce INS sequences
+
+### DEFINITIONS
+
+- define singular forms
+- define AGG motif
+- define mutant
+- define wild type
+- define homologue
+- define virus
+- list examples of viruses
+- define retrovirus
+- define lentivirus
+- define HIV
+- define protein and peptide
+- define vaccine and immunogenic composition
+- define protein vaccine
+- define agent
+- define host
+- define subject
+- define immunogenicity
+- introduce HIV biology
+- describe HIV genome
+- describe pr55 GAG protein
+- describe Pr160 GAG-POL precursor protein
+- describe Gp160 envelope protein
+- describe Tat and Rev proteins
+- describe accessory proteins
+- describe HIV attachment to T-cells and monocytes
+- describe co-receptor
+- describe reverse transcriptase
+- describe integrase
+- describe long terminal repeat
+- describe TAT-cycT1 complex
+- describe viral RNA transcription
+- describe unspliced RNAs
+- describe partially-spliced RNAs
+- describe small, spliced RNAs
+- describe inhibitory nucleotide signal sequences
+- define HIV virus and its replication cycle
+- describe advantage of low steady state level of viral RNA
+- introduce INS-containing region of gag/pol genes
+- describe mechanisms of lowering steady state levels of viral RNA
+- motivate poor immune response to Env and Gag
+- describe genome of HIV-1 and its open reading frames
+- introduce REV response elements and their role
+- describe nuclear confinement and its effects
+- introduce codon optimized strains and their effects
+- describe assembly of HIV virus particles
+- introduce INS sequences of the invention
+- describe method for identifying over- and under-represented sequence motifs
+- introduce AGG motif and its conservation
+- describe functional importance of AGG motif
+- introduce embodiments of the invention
+- describe lentiviral or viral nucleic acid with mutated AGG sequences
+- introduce methods of making mutations
+- describe mutating AGG motifs to non-AGG sequences
+- introduce changing AGG motifs in coding regions
+- describe changing AGG motifs to non-AGG trinucleotides
+- introduce mutagenesis methods
+- describe vaccines and their limitations
+- introduce mutant viruses as viral vaccines
+- describe DNA vaccines and their limitations
+- introduce mutant viral nucleic acid sequences as DNA vaccines
+- describe protein vaccines and their limitations
+- introduce mutant viral nucleic acid sequences as protein vaccines
+- describe prophylactic and therapeutic vaccines
+- introduce viral vaccines
+- describe attenuated viral vaccines
+- describe inactivated viral vaccines
+- describe viral vector vaccines
+- introduce DNA vaccines
+- describe proteinaceous or subunit vaccines
+- describe overlap among vaccine types
+- introduce applications of the invention
+- describe vaccine production
+- introduce recombinant viral proteins
+- describe identification of new drugs
+- introduce studying viral latency
+- describe advantages of the invention
+- introduce scope of the invention
+- conclude the invention
+- define immunogenic compositions
+- describe lentiviral or viral infection
+- introduce attenuated viral vaccines
+- describe attenuation methods
+- provide examples of attenuated viral vaccines
+- introduce killed viral vaccines
+- describe inactivation methods
+- provide examples of inactivated viral vaccines
+- introduce viral vector vaccines
+- describe viral vector construction
+- provide examples of viral vectors
+- describe promoter selection
+- provide examples of promoters
+- describe insertion of mutant nucleic acids
+- provide examples of viral vector vaccines
+- introduce DNA vaccines
+- describe DNA plasmid construction
+- provide examples of DNA plasmids
+- describe promoter selection
+- provide examples of promoters
+- describe insertion of mutant nucleic acids
+- provide examples of DNA vaccines
+- introduce protein vaccines
+- describe protein expression systems
+- provide examples of expression systems
+- describe protein purification
+- describe protein composition
+- provide examples of protein vaccines
+- describe expression vector selection
+- provide examples of expression vectors
+- describe promoter selection
+- provide examples of promoters
+- define proteinaceous vaccines
+- motivate subunit vaccines
+- describe nucleic acid vaccines
+- describe proteinaceous vaccines
+- summarize immunogenic compositions
+- describe vaccine compositions
+- list components of vaccine compositions
+- describe co-solvent systems
+- describe delivery systems for hydrophobic compounds
+- describe sustained-release systems
+- describe solid or gel phase carriers or excipients
+- describe immunogenically compatible counter ions
+- describe immunogenic composition as a complex
+- describe liposomal formulation
+- describe other additives in vaccine formulations
+- define immunologically effective amount
+- describe determination of immunologically effective amount
+- describe routes of delivery
+- describe administration regimens
+- describe viral purification methods
+- describe gradient centrifugation
+- describe ultracentrifugation
+- describe chromatography
+- describe ultrafiltration and dialfiltration
+- describe ion exchange chromatography
+- describe anion exchange resins
+- describe cation exchange resins
+- describe metal-binding affinity chromatography
+- describe column-based liquid affinity chromatography
+- describe Matrex Cellufine Sulfate resin
+- describe inactivated virus purification
+- describe additional purification methods
+- describe purified viral preparation
+
+### Other Embodiments of the Invention
+
+- introduce viral RNA production methods
+- describe lentiviral RNA production methods
+- specify HIV RNA production methods
+- outline high throughput screening methods
+- describe fusion protein engineering
+- introduce AGG motif binding agent identification
+- describe control and test nucleic acid preparation
+- outline agent binding detection methods
+- specify yeast one-hybrid and EMSA methods
+- introduce AGG motif binding agents
+- describe agents inhibiting AGG-binding agents
+
+### EXAMPLES
+
+- identify AGG motif in HIV-1 genome
+- describe biology of HIV agent
+- predict INS motifs in HIV genome
+- study 4000 human genes with A-contents comparable to HIV
+- identify AGG motif as under-represented in human genes
+- find AGG motif over-represented in gag and pol genes of HIV-1 genome
+- analyze conservation of AGG motif in different HIV-1 strains
+- suggest AGG motif as INS sequence
+- investigate presence of AGG motif in other lentiviruses
+- find AGG motif in HIV-2, SIV, FIV, and EIAV
+- find no AGG motif in HTLV-1 and human retrotransposon LINE-1
+- describe method for identification of other INS sequences
+- test function of AGG motif by mutating it
+- measure steady state levels of gag mRNAs
+- study effects of AGG motif on transcription, transport, and half-life of mRNA
+- use constructs containing GAG-POL and GFP
+- detect cells producing GAG-POL-GFP using fluorescence detection methods
+- test TAT and REV dependence of constructs
+- expect high levels of GAG-POL RNA in cells transfected with AGG mutant constructs
+- discuss difficulties in producing effective HIV vaccine
+- describe properties of HIV virus affecting vaccine generation
+- propose mutating AGG motifs to improve vaccine effectiveness
+- generate attenuated HIV viruses with mutated AGG motifs
+- study ability of mutated viruses to infect host cells and express HIV proteins
+- test ability of mutated viruses to generate immune response in hosts
+- apply approach to SIV and FIV viruses
+- generate attenuated SIV and FIV viruses with mutated AGG motifs
+- study ability of mutated viruses to infect host cells
+- test ability of mutated viruses to generate immune response
+- describe model for HIV latency and role of AGG motif
+- use wild type and mutant gag-pol constructs to study latency
+- expect low levels of GAG-POL RNA and protein due to AGG sequences
+- use GAG-POL-GFP expression construct to detect expressing cells
+- separate expressing and non-expressing clones using FACS
+- test clones to confirm integrated copy of nucleic acid encoding GAG-POL-GFP
+- study stochastic phenotypic switching model of HIV latency
+- measure frequency and rate of GAG-POL gene switching
+- identify agents that reverse HIV latency
+- investigate effect of AGG motif on latency
+- propose AGG binding proteins and agents
+- identify cellular AGG binding protein
+- isolate and characterize AGG binding protein
+- test effects of AGG binding protein on latency
+- screen for agents that block or disrupt AGG binding protein activity
+- test effects of agents on latency and HIV virus turnover
+- describe method for identifying multiple nucleotide motifs in HIV-1 genome and human genome
+

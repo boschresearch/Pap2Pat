@@ -1,0 +1,459 @@
+{
+    "id": "US20120191446",
+    "authors": [
+        "Henri Binsztok",
+        "Adam Koprowski"
+    ],
+    "title": "System and method for creating a parser generator and associated computer program",
+    "date": "2009-07-15 00:00:00",
+    "abstract": "A system is provided for building a parser generator. The system includes a grammar input module for inputting in the parser generator a grammar expressed in a given formalism. A checking module formally verifies that a given grammar belongs to a predetermined class of grammars for which a translation to a correct, terminating parser is feasible. A checking module formally verifies that a grammar expressed in the formalism is well-formed. A semantic action module defines a parsing result depending on semantic actions embedded in the grammar. The semantic action module ensures in a formal way that all semantic actions of the grammar are terminating semantic actions. A formal module generates a parser with total correctness guarantees, using the modules to verify that the grammar is well-formed, belongs to a certain class of feasible, terminating grammars and all its semantic actions are terminating.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "THE NAMES OF PARTIES TO A JOINT RESEARCH AGREEMENT",
+                    "paragraphs": [
+                        "None."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "no joint research agreement"
+                    ],
+                    "num_characters": 5,
+                    "outline_medium": [
+                        "state no joint research agreement"
+                    ],
+                    "outline_short": [
+                        "state no joint research agreement"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE DISCLOSURE",
+                    "paragraphs": [
+                        "The present disclosure relates to the parsing problem in computer science and electronics. More specifically, the disclosure relates to methods of generating formally-verified parsers from simple grammar description files.",
+                        "Parsing consists of taking a text, recognizing whether it is correct with respect to the description of the language used to write the text, given by means of a grammar and, if it is, pulling it apart with respect to the structure of the given grammar.",
+                        "Parsing is used extensively in a variety of computer science and electronics field including compilation, network security, data storage, etc.",
+                        "As a first example, during compilation, a source code is first parsed then compiled and assembled into an executable. Bugs and anomalies in executables can result in important loss of time, money, data and sometimes lives. Extensive testing is not considered sufficient in critical applications. A second example is dedicated to network security. A message arriving at a network node is parsed and depending on the results of said parsing it is either transmitted or blocked. Said network node in effect works as a kind of \u201cdigital diode\u201d. XML signatures and XML encryption are growingly used to secure transactions, in particular across mobile networks.",
+                        "A third example applies to data. Stored content is parsed in order to retrieve data of interest. Database queries expressed in query language e.g. SQL also need to be parsed before data are accessed.",
+                        "A fourth example is dedicated to data interpretation. Each web page code is parsed in order to be displayed in a web browser.",
+                        "A fifth example highlights on Domain Specific Languages (DSL). DSL are programming or specification languages dedicated to a particular solution technique e.g. insurance, finance, construction, combat simulation. Every time a new DSL is created to simplify programming in a given technical field, a new parser needs to be created at the same time.",
+                        "Other applications of parsers exist and are not detailed here (cryptography, compression, . . . )."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce parsing problem",
+                        "motivate parsing importance",
+                        "describe parsing applications",
+                        "highlight parsing limitations"
+                    ],
+                    "num_characters": 2053,
+                    "outline_medium": [
+                        "introduce parsing problem",
+                        "motivate formally-verified parsers"
+                    ],
+                    "outline_short": [
+                        "introduce parsing problem"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE DISCLOSURE",
+                    "paragraphs": [
+                        "The parsing process is usually broken up into two steps:\n\n\n- - A lexical analysis where the input text is decomposed into\n    individual tokens; and\n  - A syntax analysis where the sequence of tokens is analysed and the\n    parse tree is build, representing the structural decomposition of\n    the input text with respect to the grammar.\n  - Parsing is a crucial step in any interpreter/compiler, where the\n    source code of the program needs to be parsed before being\n    interpreted/transformed into the target language. But it is also an\n    important step in many other programs performing any kind of data\n    manipulation.\n  - Parsing technology is a well-studied and well-understood problem in\n    computer science or electronics component design. The typical\n    approach to parsing is to specify the input language using\n    context-free grammars and to use a parser generator. Parser\n    generators are programs that:\n  - take a description of a (context-free) grammar\n    from a file (in some format).\n  - if grammar\n    belongs to some sub-class of context-free grammars supported by the\n    parser generator, then it automatically constructs a source code for\n    a parser of\n    , in some programming language of choice,\n    .\n  - the resulting parser of\n    can then be used in another program.",
+                        "Indeed, parsers are usually used within some programs and rarely on their own; the source code obtained in the previous step allows to easily use the generated parser for  within some program written in .",
+                        "In formal language theory, a context-free grammar (CFG) is a grammar in which every production rule is of the form:",
+                        "V\u2192w",
+                        "where V is a single nonterminal symbol, and w is a string of terminals and/or nonterminals (possibly empty).",
+                        "The problem of these background techniques is that the formal check of the parser is not formally proven, i.e. it can't be proved that the generated parser will work correctly. Thus, it's not possible to prove that the parser obtained by prior art techniques is correct and will not lead to misinterpret the data in input (A program written by a programmer) and consequently will not lead to error in parsing, compiling or executing some resulting programs."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe parsing process",
+                        "explain parser generator",
+                        "discuss context-free grammars",
+                        "highlight formal verification limitations"
+                    ],
+                    "num_characters": 2207,
+                    "outline_medium": [
+                        "describe parsing process",
+                        "limitations of prior art techniques"
+                    ],
+                    "outline_short": [
+                        "describe parsing process"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "An embodiment of the invention concerns a system for creating a parser. The system for building a parser comprises:\n\n\n- - a grammar input module for inputting in said parser a grammar\n    expressed in a given formalism;\n  - a formalism module for expressing grammars used by said parser\n    generator, said formalism module proving that said grammar G is\n    well-formed;\n  - a semantic action module defining a parsing result depending on at\n    least some expression of said grammar, said semantic action module\n    ensuring that all semantic actions of said grammar are terminating\n  - a checking module for checking that a given grammar belongs to a\n    predetermined class of grammars for which a translation to a\n    correct, terminating parser is feasible; and, if checking module\n    concludes that said grammar belongs to said\n  - a proof assistant module for developing said parser with said\n    formalism module and said semantic action module.",
+                        "Thus, in the previous fields of technologies already presented, fields, employing parsers constructed using the system of an embodiment of the invention results in better quality thanks to increased security. Security issues in software and electronic components do clearly lead to technical problems that affect the physical world. Formal proof methods can be used to check the conformity of a program with the specifications. Certified compilers have also been described see e.g. Compcert (Xavier Leroy) but the correction of the first step, parsing, is not formally proven.",
+                        "Having a proven parser is therefore essential for network security. Parsing is also an important first step in security software's such as firewalls or antivirus.",
+                        "Having a proven parser brings guarantees on the ability to retrieve data and the quality of the parser of an embodiment of the invention impacts on that of the displayed page.",
+                        "According to one particular characteristic of an embodiment of the invention, said a formalism module forbids recursion in said grammar.",
+                        "According to one particular characteristic of an embodiment of the invention said grammar is a context-free grammar;",
+                        "According to one particular characteristic of an embodiment of the invention said grammar is a parsing expression grammar;",
+                        "An embodiment of the invention also concerns a method for building a formally verified parser generator.",
+                        "According to an embodiment of the invention, said method comprises:\n\n\n- - A step of formalizing an expression of a grammar G and its\n    semantics;\n  - A step of checking that said grammar G belongs to a predetermined\n    class of grammars for which a translation to a correct, terminating\n    parser is feasible;\n  - A step of defining a target language Q of said parser generator and\n    its formal semantics; A step of obtaining a library of basic\n    datatypes of Q and functions over them and proving that they are all\n    terminating;\n  - A step of obtaining a formally correct parser for Q;\n  - A step of obtaining a formally correct parser for a grammar in FPG\n    format, said including semantic actions in Q;\n  - A step of obtaining a termination checker for semantic actions in Q;\n  - A step of obtaining a parser generator, that will read a description\n    of some grammar G from a text file using said certified parser and,\n    after checking that the grammar belongs to a class for which parser\n    generation is feasible, it will generate a code of the parser in Q.\n  - A step of obtaining, from a proving module, that the code generated\n    in is correct with respect to the given grammar G, the semantics of\n    parsing grammars and the formal semantics of Q.\n  - A step of obtaining, from a proving module, that the code generated\n    in will always terminate.",
+                        "Another embodiment of the invention concerns a computer program product downloadable from a communications network and/or stored on a computer-readable medium and/or executable by a microprocessor.",
+                        "According to another embodiment of the invention, such a computer program product comprises program code instructions for the execution of the building method as described."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce parser creation system",
+                        "describe grammar input module",
+                        "explain formalism module",
+                        "summarize semantic action module",
+                        "describe checking module",
+                        "introduce proof assistant module",
+                        "highlight security benefits",
+                        "describe parser generator method"
+                    ],
+                    "num_characters": 4113,
+                    "outline_medium": [
+                        "introduce system for creating parser",
+                        "describe grammar input module",
+                        "describe formalism module",
+                        "describe proof assistant module"
+                    ],
+                    "outline_short": [
+                        "introduce parser system",
+                        "describe parser system components"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "1. Generals Principles of An Embodiment of the Invention",
+                            "paragraphs": [
+                                "An embodiment of the invention relates to a system for building a parser. According to an embodiment of the invention, such a system comprises of:\u2014a grammar input module for inputting in said parser generator a grammar expressed in a given formalism;\u2014a checking module for formally verifying that a given grammar belongs to a predetermined class of grammars for which a translation to a correct, terminating parser is feasible;\u2014a checking module for formally verifying that a grammar expressed in the said formalism is well-formed;\u2014a semantic action module defining a parsing result depending on semantic actions embedded in said grammar, said semantic action module ensuring in a formal way that all semantic actions of said grammar are terminating and\u2014a formal module generating a parser with total correctness guarantees, using said modules to verify that the grammar is well-formed, belongs to a certain class of feasible, terminating grammars and all its semantic actions are terminating.",
+                                "The system and method of an embodiment of the invention allows a user to build a parser generator which generates some parsers which are formally checked and verified. This means that, by using an embodiment of the invention, there's no need to formally verify a generated parser like in the prior art techniques. This is a great feature of an embodiment of the invention because it ensures that, when effectively used, the parser will always lead to a formally checked and verified program (after compilation).",
+                                "Such a result is achieved, in at least one embodiment of the invention, firstly by extending the grammar with semantic action, as shown above and secondly by proving the termination of the grammar, and in particular addressing the problems of left-recursive grammar. Then these rules are introduced in a Proof Assistant (PA) to develop a formally verified parser interpreter/generator.",
+                                "The proves of the theorems and lemma which are presented below aims at showing that the realization of embodiments are technically possible if the input grammar follows some requirements fixed.",
+                                "For the purposes of proves below, an embodiment of the invention is using, in at least one embodiments, some Parsing Expression Grammars (PEGS). A parsing expression grammar, or PEG, is a type of analytic formal grammar that describes a formal language in terms of a set of rules for recognizing strings in the language. A parsing expression grammar essentially represents a recursive descent parser in a pure schematic form that expresses only syntax and is independent of the way an actual parser might be implemented or what it might be used for. Parsing expression grammars look similar to regular expressions or context-free grammars (CFG) in Backus-Naur form (BNF) notation, but have a different interpretation.",
+                                "Unlike CFGs, PEGs cannot be ambiguous; if a string parses, it has exactly one valid parse tree, so PEGs are particularly well adapted for computer program languages.",
+                                "The parser generator of an embodiment of the invention, instead of context-free grammars is based on the formalism of parsing expression grammars (PEGs). Below we shortly summarize this formalism for the purposes of the disclosure.",
+                                "Let fix a finite set of non-terminals, N (sometimes we will also refer to them as productions), and a finite set of terminal symbols VT. We will denote the elements of N by p,q and elements of VT by x,y.",
+                                "By string, S, we mean a list of terminal symbols and we will be using a list notation where x::xs denotes an element x followed by a list xs and [ ] denotes an empty list. We will use a notation |x| to denote length of string/list x.",
+                                "Definition 1: Let define the set of parsing expressions, \u0394, over non-terminals N and terminals VT, as:",
+                                "D:=[epsilon]|[x]|VT|VN|D,D|D/D||!D",
+                                "More formally the set \u0394 is defined inductively as follow:\n\n\n- - \u0394:=\u03b5 empty expression\n    - \\|\\[\u2022\\]\u2022 any character\n    - \\|a a terminal symbol (a\u2208\u03c5_(T))\n    - \\|A a non-terminal (A\u2208\u03c5_(N))\n    - \\|e\u2081; e\u2082 a sequence (e\u2081,e\u2082\u2208\u0394)\n    - \\|e\u2081/e\u2082 a prioritized choice (e\u2081,e\u2082 \u2208\u0394)\n    - \\|e\\* a zero-or-more repetition (e\u2208\u0394)\n    - \\|!e a not-predicate (e\u2208\u0394)",
+                                "Definition 2: A parsing expressions grammar (PEG),  is a quadruple (\u03c5N, \u03c5T, Pexp, es), where:\n\n\n- - V_(T). is a finite set of terminals,\n  - _(N) is a finite set of non-terminals of the grammar,\n  - P_(exp) is the interpretation of the productions of the grammar,\n    i.e., P_(exp)\n    _(N)\u2192\u0394 and\n  - e_(s) is the start production of the grammar, e_(s)\u03b5\n    _(N)",
+                                "The informal semantics of parsing expressions is as follows:\n\n\n- - The empty expression \\[\u2208\\] always succeeds without consuming any\n    input.\n  - The any-character expression \\[\u2022\\] consumes arbitrary character and\n    succeeds; it fails on empty input.\n  - A terminal a checks the first character of the input string; if it\n    is equal to a then it is consumed and parsing succeeds, if it is\n    different than a or the input string is empty then parsing fails.\n  - Parsing of a non-terminal A amounts to parsing the expression\n    associated with A, i.e., P_(exp)(A).\n  - Parsing the sequence expression e\u2081;e\u2082 amounts to parsing e\u2081 on the\n    input string. If that fails then parsing of e\u2081;e\u2082 fails; otherwise\n    it is the result of parsing e\u2082 on the remaining input.\n  - Parsing the choice expression e\u2081/e\u2082 first parses e\u2081 on the input\n    string and if that succeeds then this is the final result. Otherwise\n    it is the result of parsing e\u2082 on the initial input string.\n  - Parsing the zero-or-more repetition expression e\\* tries to parse e;\n    if that fails then parsing of e\\* succeeds without consuming any\n    input; if it succeeds then we proceed with parsing e\\* on the\n    remaining input.\n  - Parsing the non-predicate expression !e parses e on the input\n    string; if that fails then !e succeeds without consuming any input;\n    otherwise !e fails.",
+                                "The formal description is as follows. The parsing of an expression e\u2208\u0394 on a string s\u2208S yields a result r\u2208 denoted by (e, s)r, where the set of results  is a set defined inductively as:\n\n\n- - \u22a5 indicating that parsing failed,\n  - \u221a_(s), for s\u2208S, indicating that parsing was successful and the\n    suffix that remains to be parsed is s.",
+                                "The formal semantics of parsing expressions is presented in annex A, which is fully included in the present disclosure.",
+                                "As an example let us present a very simple grammar for mathematical expressions with 5 non-terminals and the following productions:\n\n\n- - digit:=0/1/2/3/4/5/6/7/8/9\n  - term:=digit+/\\[(\\]expr\\[)\\]\n  - factor:=term\\[\\*\\]factor/term\n  - expr:=factor\\[+\\]exp/factor\n  - input:=expr"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce parser generator system",
+                                "describe grammar input module",
+                                "describe checking module for grammar verification",
+                                "describe checking module for well-formed grammar",
+                                "describe semantic action module",
+                                "describe formal module for parser generation",
+                                "motivate advantages of embodiment",
+                                "extend grammar with semantic actions",
+                                "prove termination of grammar",
+                                "introduce parsing expression grammars (PEGs)",
+                                "define parsing expressions",
+                                "define parsing expression grammar (PEG)",
+                                "provide example of simple grammar for mathematical expressions"
+                            ],
+                            "num_characters": 6606,
+                            "outline_medium": [
+                                "introduce parser generator system",
+                                "describe system components",
+                                "motivate formal verification",
+                                "introduce parsing expression grammars",
+                                "define parsing expressions",
+                                "provide example grammar"
+                            ],
+                            "outline_short": [
+                                "introduce parser generator system",
+                                "describe formal verification of grammar",
+                                "motivate advantages over prior art"
+                            ]
+                        },
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "As an example let us present a very simple grammar for mathematical expressions with 5 non-terminals and the following productions:",
+                                "ws::([]/[\\t])*",
+                                "number::=[0-9]30",
+                                "term::=ws number ws/ws [(]expr[)]ws",
+                                "factor::=term[*]factor/term",
+                                "expr::=factor[+]expr/factor",
+                                "Here has been described the formalism of PEG which is used as an input grammar in at least one embodiment of the invention. While such this formalism is not one part of the invention, it is important for the disclosure because it helps the skilled in the art to understand the following work which has been"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide example of simple grammar for mathematical expressions"
+                            ],
+                            "num_characters": 568,
+                            "outline_medium": [
+                                "provide simple grammar example"
+                            ],
+                            "outline_short": [
+                                "illustrate PEG grammar for mathematical expressions"
+                            ]
+                        },
+                        {
+                            "title": "2. Description of Some Embodiments",
+                            "paragraphs": [
+                                "In the present section a system/method for creating a parser generator of an embodiment of the invention is presented. Firstly a way to extend PEGs with semantics action is presented and secondly the demonstration for the termination of PEG is given on the basis of some hypothesis, then the use of such a grammar (extended and proved) is shown in an interpreter and in a parser generator.",
+                                "**2.1 Extending PEGs With Semantics Actions**",
+                                "The parsing expressions, as introduced previously can be used for specifying which strings belong to the grammar under consideration. However the role of a parser is not merely to recognize whether an input is correct or not but also, given a correct input, to compute its representation in one form or another.",
+                                "This is typically done by extending grammar expressions with semantic values, which are a representation of the result of parsing this expression on (some) input and by extending grammar with semantic actions, which are functions used to produce and manipulate the semantic values.",
+                                "Typically a semantic value associated with an expression will be its parse tree so that parsing a correct input will give a parse tree of this input. In order to deal with this extension the inventors had the idea to replace the simple type of parsing expressions \u0394 with a family of types \u0394\u03b1, where the index \u03b1 is the type of semantic values associated with an expression.",
+                                "The inventors also define default semantic actions for all types of expressions and to allow alerting from those default they introduced a new construction to convert semantic value.",
+                                "The inventors use the following types:\n\n\n- - Type is a universe of types.\n  - True is the singleton type with a single value I.\n  - char is a type of machine characters. It corresponds to the type of\n    terminals\n    , which in concrete parsers generated will always be instantiated by\n    char.\n  - list \u03b1 is a type of lists of elements of \u03b1 for any type \u03b1,\n  - \u03b1\\*\u03b2 is a type of pairs of elements (a,b) with a\u2208\u03b1, b\u2208\u03b2 for any\n    types \u03b1,\u03b2.",
+                                "Now it is shortly describe how the inventors extend the parsing expressions from definition 1 to incorporate semantic values.\n\n\n- - An empty expression \u03b5 has a semantic value of type I.\n  - Any character expression \\[\u2022\\] and a terminal expression a (a\u2208\n    _(N)) both have a semantic value of type char.\n  - For non-terminals the inventors use a function P_(type):\n    _(N)\u2192Type which gives types of semantic values of all productions.\n  - A sequence e\u2081;e\u2082 has semantic values of type \u03b1\\*\u03b2 where \u03b1 (resp. \u03b2)\n    is the type of semantic values of e\u2081 (resp. e\u2082).\n  - A prioritized choice e\u2081/e\u2082 has a semantic values of type a where\n    semantic values of both e\u2081 and e\u2082 are required to have type \u03b1.\n  - A repetition expression e\\* has a semantic value of type list \u03b1,\n    where \u03b1 is the type of semantic values of e.\n  - A not-predicate has a semantic value of type I.\n  - The inventors add a new expression e\\[\n    \\]\u0192 which takes an expression e with semantic values of type \u03b1 and a\n    function \u0192:\u03b1\u2192\u03b2 and gives an expression with semantic values of type\n    \u03b2 (obtained by applying \u0192 to the semantic value of e).",
+                                "This leads to the following formal definition.",
+                                "Definition 3: \u0394\u03b1 is the set of extended parsing expressions, where the index \u03b1 is the type of semantic values of an expression. We define it by induction in Annex B, where:\n\n\n- - T is the set of terminals,\n  - _(N) is the set of non-terminals,\n  - and PT:\n    _(N)\u2192Type is the function giving type of semantic values for every\n    non-terminal.",
+                                "The definition of an extended parsing expression grammar (EPEG) is as expected (compare with Definition 2):",
+                                "Definition 4: An extended parsing expressions grammar (EPEG),  is a tuple (\u03c5N, \u03c5T, Ptype, Pexp, es) where:\n\n\n- - _(T) is a finite set of terminals,\n  - _(N) is a finite set of non-terminals of the grammar,\n  - P_(type):\n    _(N)\u2192Type is a function that gives types of semantic values of all\n    productions.\n  - P_(exp) is the interpretation of the productions of the grammar,\n    i.e., P_(exp):\n    \u0394_(Ptypep) and\n  - e_(s) is the start production of the grammar, e_(s)\u2208\n    _(N)",
+                                "**2.2 Proving Termination For PEGs**",
+                                "Left-recursive PEGs (with direct or mutual left-recursion) lead to non-terminating parsers. In this section we will present a way to establish whether a PEG is well-formed, where well-formedness implies completeness of the grammar.",
+                                "Let us fix a PEG  We define the expression set of  as:",
+                                "E()={e\u2032|e\u2032c, c\u2208Pexp(A), A\u2208\u03c5N}",
+                                "where  is a (non-strict) subexpression relation on parsing expressions.",
+                                "The inventors define three groups of properties over parsing expressions:\n\n\n- - 0\u2033: parsing expression can succeed without consuming any input,\n  - \u201c\\>0\u201d: parsing expression can succeed after consuming some input,\n  - \u201c\u22a5\u201d: parsing expression can fail.",
+                                "We will write e\u2208P0 to indicate that the expression e has property \u201c0\u201d (similarly for P>0 and P\u22a5). The inventors have defined inference rules for deriving those properties in Annex C.",
+                                "Then one start with empty sets of properties and apply those inference rules until reaching a fixpoint. The existence of the fixpoint is ensured by the fact that we extend the property sets monotonously and they are bounded by the finite set E(). We summarize the semantics of those properties in the lemma below:",
+                                "Lemma 6: The semantics of property sets 0, >0 and \u22a5 is summarized as follows:",
+                                "if (e, s)\u221as then e\u22080,",
+                                "if (e, s)\u221as\u2032 and |s\u2032|<|s| then e\u2208>0 and",
+                                "if (e, s)\u22a5 then e\u2208\u22a5.",
+                                "Using the semantics of those properties of parsing expression we can perform the well-formedness analysis for G. We introduce a set of well-formed expressions WF and again iterate from an empty set by using derivation rules from Annex D until reaching a fixpoint.",
+                                "We say that G is well-formed if E(G)=WF. We have the following result:",
+                                "Theorem 7: If G is well-formed then it is complete.",
+                                "We conclude this section with an example:",
+                                "**Example 2**",
+                                "Let us extend the grammar from Example 1 with semantic actions. The grammar expressed mathematical expressions and we attach semantic actions evaluating those expressions, hence obtaining a very simple calculator.",
+                                "It often happens that we want to ignore the semantic value attached to an expression. This can be accomplished by coercing this value to I, i.e., e[] \u03bbx. I, which we will abbreviate with e[#].",
+                                "This grammar will associate, as expected, the semantic value 36 with the string \u201c(1+2)*(3*4)\u201d. Of course in practice instead of evaluating the expression we would usually write semantic actions to build a parse tree of the expression for later processing.",
+                                "**2.3 Interpretation of PEGs**",
+                                "In this section a method and system to obtain a certified parser interpreter using the formalism of PEGs (presented in previous sections) is presented. The schema of our approach is presented in FIG. 1.",
+                                "One way to obtain such a parser interpreter is to formally develop it in Coq and then extract a certified code from this development. In order to do that first one needs to develop a formalization of PEGs (Sections 5.1 and 5.2.1 along with their semantics (annex B2), and a procedure for checking their well-formedness (Section 5.2.2, Annex D).",
+                                "Then one needs to develop a generic interpreter for parsing input with an arbitrary, but well-formed, grammar, . Such an interpreting function along with the proof that it respects the semantics of PEGs can be developed rather easily as it is essentially just a straightforward realization of the semantics presented in annex B2. The only difficulty is the problem of termination which is addressed below.",
+                                "In the approach of an embodiment of the invention to develop a certified interpreter the inventor assumes that the grammar G in question (Definition 3) is expressed in Coq, . That means that all semantic actions e[]\u0192 used in the grammar are terminating, as all Coq functions are total.",
+                                "That leaves the inventors with proving that the process of parsing itself will terminate but for that the inventors use the (previously proved) fact that the grammar is well-formed and the analysis of Section 5.2.2, in particular Theorem 7.",
+                                "Having all those components in place we are ready to extract from Coq a PEG interpreter specialized to grammar G. As a result we obtain a source code of the parser for G in one of the languages supported by Coq's extraction mechanism (OCaml, Haskell and Scheme at the time of this writing).",
+                                "It is important to note that the fact that the parser interpreter of an embodiment of the invention is totally correct is provided by (a) the grammar G is well-formed and (b) all its semantic actions are terminating. These are some key features of an embodiment of the invention.",
+                                "In the approach of this embodiment of the invention those conditions are verified within Coq before extracting an interpreter for G, so that it's certain that those conditions are satisfied. In principle, a generic parser interpreter for PEGs can also be extracted from the development. Then the grammar G instead of being developed in Coq could be provided from within the language used for extraction. However then, if one of the conditions (a) or (b) is not meet the resulting parser may not be terminating.",
+                                "The main shortcoming of this approach is that in order to obtain a parser for G one needs to write the PEG for G, including its semantic actions; in Coq (unless we resort to the approach sketched in the preceding paragraph but then we cannot guarantee total correctness). That means that the use of our parser interpreter involves an expertise in Coq, hence making it much less accessible than traditional parser generators. We will show how to overcome this shortcoming in the following section.",
+                                "We conclude this section with an example:",
+                                "**Example 3**",
+                                "After defining appropriate notations and coercions, the transcription of Example 6 in Coq could look as follows:",
+                                "**Example 4**",
+                                "We present an alternative version of the grammar from Example 3, where the semantic actions are used to build an abstract syntax tree (AST) of mathematical expressions, instead of evaluating them.",
+                                "**2.4 Parser Generator For PEGs**",
+                                "In this section a method and system of developing TRX is presented: TRX is a parser generator that on top of the functionality offered by traditional parser generators will provide total correctness guarantees for all generated parsers. That makes it especially suitable for use in all types of critical software, where such strong correctness is called for.",
+                                "But as the use of this generator gives safety guarantees at no additional effort, it can be a very attractive alternative to traditional parser generators in essentially all applications. The schema of the approach of the inventors is presented in FIG. 2.",
+                                "The target language of our parser generator is Q. It will be mainly interested in functional programming languages, but most of the ideas presented below can be used for an arbitrary target language Q.",
+                                "A number of things changes compared with the approach from the previous section (interpreter). To begin with instead of extracting from Coq an interpreter for a particular PEG G, the approach wants to be able to extract a parser generator, , that will take as its input a description of a grammar G, , and will produce a parser for G as a source code in Q,",
+                                "In order to achieve that we need a parser for PEGs themselves, , as well as a parser for Q, , as the productions in the grammar will be expressed as a source code in Q. One way to obtain those parsers is by developing certified interpreters for them using the approach described in Section 5.2.3.",
+                                "The treatment of termination also changes. The grammar G now comes from an external file without any guarantees, so after parsing it with the certified parser , it is needed to check its well-formedeness. The inventors do this as before with the component , but now it will not be invoked in Coq but will become part of the extracted code, comprising the parser generator",
+                                "But the real difficulty lies in the fact that to establish termination of produced parsers it's not only needed to know that the grammar is well-formed, but also that all semantic actions used within it are terminating which involves termination analysis of Q programs, . In the approach of Section 5.2.3 one got termination of semantic actions for free as they were expressed in Coq (all Coq functions are total).",
+                                "One way to tackle this problem is to formally develop a termination checker for Q (necessarily incomplete as the termination problem is undecidable for any Turing-complete language).",
+                                "This is difficult and the inventors opt for an easier approach. They choose a language Qfin which is a subset of Q designed in such a way that all Qfin programs are terminating (which obviously is prove in Coq). For instance for an ML style pure functional programming language one can obtain this restricted language by forbidding recursion (which is the only source of non-termination). Now we only allow semantic actions to be expressed in Qfin.",
+                                "This is quite a restriction but the role of semantic actions in a grammar is to construct a parse tree of the input, which often involves little more than choosing parts of the parse trace and enclosing it in appropriate algebraic data-types. To somewhat ease this restriction we develop a very simple \u201cstandard library for parsing\u201d, , comprising of basic data-types (lists, trees, . . . ) and basic operations on them (map, fold, . . . ), which we prove terminating in Coq. Now we can allow semantic actions written in Qfin, but making use of this library and we still are able to prove termination of generated parsers.",
+                                "The next step is to write a parser generator in Coq. The process of generating a recursive descent parser for a PEG is relatively straightforward. The basic idea is that the set of productions of G is mapped one-to-one to a mutually recursive set of parse functions in Q. Parsing every PEG operand consists of turning operational semantics rules of Annex B2 into an executable code.",
+                                "Now we need to prove total correctness for such generated parsers. All the reasoning will be performed with the formal semantic of Q, . This semantics together with the semantics of PEGs, , will be used to prove that generated parsers are correct. As for their termination, termination analysis of Q, , will be used to ensure termination of semantic actions and combined with well-formedness analysis for PEG grammars,",
+                                "We will now present a few examples.",
+                                "**Example 5**",
+                                "In this example we illustrate a possible concent of the library , where Q is again taken to be OCaml. Such a library could consist of the following functions taken from the standard library of OCaml:",
+                                "All of those functions would need to be proven terminating in Coq.",
+                                "**Example 6**",
+                                "In this example we will present a PEG grammar , equivalent to that from Example 2 but rendered as an ASCII file to be processed by the parser generator. We again take OCaml as the target language Q, so semantic actions of the grammar are expressed as pieces of code in OCaml, where recursion is not allowed.",
+                                "We use the {. . . } annotation for semantic actions in place of the PEG operator e[]f.",
+                                "**Example 7**",
+                                "We present an alternative version of the grammar from Example 6, where the semantic actions are used to build an abstract syntax tree (AST) of mathematical expressions, instead of evaluating them.",
+                                "Let's conclude this section with a summary of the differences between TRX and any other (unverified) parser generator from the points of view of: the TRX end user and the TRX developer.",
+                                "**2.4.1 TRX From the Point of View of the End User**",
+                                "From the point of view of the user of our formally verified parser generator TRX the process of generating a parser will essentially be indistinguishable from this process with any other such (unverified) tool and will consist of the following steps:\n\n\n- - Writing a text file with a PEG grammar G, including its semantic\n    actions as a code in Q.\n  - Running our parser generator to generate a parser for G expressed as\n    a source code in Q.\n  - The parser generator will reject the grammar if it is syntactically\n    incorrect or incorrect with respect to Definition 4 (for instance if\n    it contains references to undefined non-terminals). It will also\n    reject the input if the grammar G is not well-formed, i.e., it is\n    left-recursive. This last check is also performed, though its\n    correctness cannot be guaranteed, by some of the existing parser\n    generators based on the PEG formalism.\n  - The parser generator will also reject the grammar if the semantic\n    actions contain recursion and hence may be potentially\n    non-terminating (we will only allow calls to a predefined library of\n    recursive functions with some basic combinators for basic\n    data-types, to improve expressivity of acceptable semantic actions).\n    This is the only difference with using TRX compared to other\n    unverified parser generators, which typically do not try to ensure\n    termination of the generated code (in fact they often do not even\n    check whether semantic actions are syntactically correct and just\n    copy it verbatim to the generated parser).\n  - If no errors are discovered TRX will produce a parser for G\n    expressed as a source code in Q, pretty much as any other parser\n    generator would do. The difference is that the parser generated by\n    TRX is formally proved to be totally correct, i.e., the parser is\n    terminating and correct with respect to the grammar G and the\n    semantics of PEGs.",
+                                "**2.4.2 TRX From the Point of View of Developing A Parser Generator**",
+                                "In contrast to the previous section, developing TRX involves substantially more effort, compared to an un-certified parser generator. The steps leading to generating a certified parser are as follows:\n\n\n- - Reading and parsing a text file with a PEG G including semantic\n    actions expressed in Q. The difference here is that TRX will use\n    certified parsers for parsing PEGs and the code in Q.\n  - Checking that the grammar G is well-formed. This check is often\n    performed by other PEG-based parser generators but in case of TRX\n    this procedure will be formally proved correct in Coq.\n  - Checking that the semantic actions are terminating, by disallowing\n    recursive calls. Calls to a predefined library of (recursive)\n    functions are allowed. This step is completely missing in typical\n    parser generators. It is necessary in TRX to ensure termination of\n    the generated parser and hence its total correctness. This step will\n    be formally proved correct in Coq.\n  - After ensuring that the grammar is correct it is transformed to a\n    recursive descent parser in Q. In TRX this step will be accompanied\n    by a proof that this transformation produces a terminating parser,\n    which is correct with respect to the grammar G and the semantics of\n    PEGs (Annex B2).\n  - Finally, TRX will be developed using dependent type programming in\n    the proof assistant Coq and then the executable TRX will be\n    extracted from this development using Coq's extraction mechanism."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce system/method for creating parser generator",
+                                "extend PEGs with semantics actions",
+                                "define default semantic actions",
+                                "introduce new construction to convert semantic value",
+                                "define types (Type, True, char, list \u03b1, \u03b1*\u03b2)",
+                                "extend parsing expressions to incorporate semantic values",
+                                "define \u0394\u03b1 (set of extended parsing expressions)",
+                                "define EPEG (extended parsing expressions grammar)",
+                                "prove termination for PEGs",
+                                "define expression set of PEG",
+                                "define three groups of properties over parsing expressions",
+                                "define inference rules for deriving properties",
+                                "summarize semantics of properties",
+                                "perform well-formedness analysis for G",
+                                "introduce set of well-formed expressions WF",
+                                "iterate to reach fixpoint",
+                                "say G is well-formed if E(G)=WF",
+                                "prove completeness of G",
+                                "provide example of extending grammar with semantic actions",
+                                "interpret PEGs",
+                                "develop formalization of PEGs in Coq",
+                                "develop procedure for checking well-formedness",
+                                "develop generic interpreter for parsing input",
+                                "prove termination of parsing process",
+                                "extract certified parser interpreter from Coq",
+                                "provide example of certified parser interpreter",
+                                "develop parser generator for PEGs",
+                                "extract parser generator from Coq",
+                                "develop parser for PEGs themselves",
+                                "develop parser for target language Q",
+                                "check well-formedness of grammar G",
+                                "check termination of semantic actions",
+                                "develop termination checker for Q",
+                                "choose language Qfin with terminating programs",
+                                "develop standard library for parsing",
+                                "prove total correctness of generated parsers",
+                                "summarize differences between TRX and other parser generators"
+                            ],
+                            "num_characters": 19131,
+                            "outline_medium": [
+                                "introduce system/method for creating parser generator",
+                                "extend PEGs with semantics actions",
+                                "define default semantic actions",
+                                "introduce new construction to convert semantic values",
+                                "define types for semantic values",
+                                "extend parsing expressions to incorporate semantic values",
+                                "define formal definition of extended parsing expressions",
+                                "prove termination for PEGs",
+                                "define expression set of PEG",
+                                "define three groups of properties over parsing expressions",
+                                "define inference rules for deriving properties",
+                                "summarize semantics of properties",
+                                "perform well-formedness analysis for PEG",
+                                "introduce certified parser interpreter",
+                                "develop generic interpreter for parsing input",
+                                "prove termination of parsing process",
+                                "develop parser generator for PEGs",
+                                "extract certified parser generator from Coq development"
+                            ],
+                            "outline_short": [
+                                "extend PEGs with semantics actions",
+                                "define default semantic actions and conversion",
+                                "prove termination for PEGs",
+                                "define well-formedness analysis for PEGs",
+                                "interpret PEGs and obtain certified parser interpreter",
+                                "develop generic interpreter for parsing input with arbitrary grammar",
+                                "develop parser generator for PEGs with total correctness guarantees",
+                                "extract parser generator from Coq development",
+                                "overcome shortcomings of parser generator approach"
+                            ]
+                        },
+                        {
+                            "title": "3. Summary of Three Embodiments of the Invention",
+                            "paragraphs": [
+                                "In this section we shortly summarize the three embodiments of this invention. The following notions are used:\n\n\n- - PA: a proof assistant used to develop a formally verified parser\n    interpreter/generator. Examples include: Coq, HOL4, HOL Lite,\n    Isabelle, PVS, . . . .\n  - FPG: a formalism for expressing grammars used by the parser\n    interpreter/generator. Examples include: context-free grammars\n    (CFGs) and parsing expression grammars (PEGS).\n  - Q: the target language of the parser generator.\n  - G: the grammar in FPG format which we want to interpret (parser\n    interpreter) or for which we want to generate a parser as a source\n    code in Q (parser generator).",
+                                "All the three embodiments use the approach of specifying and developing a parser interpreter/generator in the PA and then extracting a parser interpreter/generator with total correctness guarantees using the extraction mechanism of the PA, hence the parser interpreter/generator is obtained as a source code in a language supported by the extraction capabilities of the PA.",
+                                "**3.1 First Embodiment: Parser Interpreter With Semantic Actions**",
+                                "This embodiment describes a way to obtain a formally verified parser interpreter, with the following properties:\n\n\n- - Semantic actions are used to specify a parsing result.\n  - The grammar and its semantic actions need to be specified in the\n    specification language of the PA.",
+                                "This embodiment consists in:\n\n\n- 1. Defining FPG and its formal semantics.\n- 2. Developing a procedure for checking that a given grammar G belongs\n  to a certain class of grammars for which parsing is feasible.\n- 3. Developing a parser interpreter, that will take a grammar G with\n  semantic actions, both specified in the PA, and, after checking that G\n  belongs to a class for which parsing is feasible (A2), it will\n  interpret the grammar generating a parse tree, by invoking semantic\n  actions embedded in G.\n- 4. Proving that the parser interpreter (A3) is correct with respect to\n  the semantics of FPG (A1) and the grammar G with its semantic actions.\n- 5. Proving that the parser interpreter (A3) will always terminate.\n  This reasoning will use some properties of G (A2), which ensure\n  termination of its parsing.\n- 6. Extracting a certified parser interpreter based on the development\n  (A3). The interpreter is totally correct due to (A4) and (A5).",
+                                "**3.2 Second Embodiment: Parser Generator With Semantic Actions**",
+                                "This embodiment described a way to obtain a formally verified parser generator, with the following properties:\n\n\n- - The target language of the generator is any language Q.\n  - Semantic actions (in Q) are used to specify a parsing result.\n  - The grammar and its semantic actions can be specified in a simple\n    text file.",
+                                "This embodiment consists of:\n\n\n- 1. Defining FPG and its semantics.\n- 2. Developing a procedure for checking that a given grammar G belongs\n  to a certain class of grammars for which a translation to a correct,\n  terminating parser is feasible.\n- 3. Defining Q and its formal semantics.\n- 4. Developing a library of basic datatypes of Q and functions over\n  them and proving that they are all terminating.\n- 5. Developing a formally correct parser for Q (B3) (bootstrapping).\u00b9\n- 6. Developing a formally correct parser for a grammar in FPG format\n  (B1).\u00b2 The grammar will include semantic actions in Q, which will be\n  parsed with (B5).\n- 7. Developing a termination checker for semantic actions in Q (B3).\u00b3\n- 8. Developing a parser generator, that will read a description of some\n  grammar G from a text file using the certified parser (B6) and, after\n  checking that the grammar belongs to a class for which parser\n  generation is feasible (B2), it will generate a code of the parser in\n  Q.\n- 9. Proving that the code generated in (B8) is correct with respect to\n  the given grammar G, the semantics of parsing grammars (B1) and the\n  formal semantics of Q (B3).\n- 10. Proving that the code generated in (B8) will always terminate.\n  This reasoning will use the termination checker for semantic actions\n  (B7) and some properties of the grammar G (B2), which ensure\n  termination of its parser.\n- 11. Extracting a certified parser generator based on the development\n  (B8). Every parser generated with this parser generator is totally\n  correct due to (B9) and (B 10).",
+                                "**3.3 Third Embodiment: Parser Interpreter With Parsing Traces**",
+                                "This embodiment described a way to obtain a formally verified parser interpreter, with the following properties:\n\n\n- - Parsing tags, a simple extension to the parsing grammar formalism,\n    are used to annotate the parts of the grammar that should be\n    collected during parsing to form a parse trace (i.e., a simple parse\n    tree in a predefined XML-like format).\n  - The grammar and its parsing tags can be specified in a simple text\n    file.",
+                                "This embodiment consists of:\n\n\n- 1. Defining FPG extended with parsing tags indicating the information\n  that should be collected in the parsing trace. Defining formal\n  semantics for such extended FPGs.\n- 2. Developing a procedure for checking that a given grammar G belongs\n  to a certain class of grammars for which parsing is feasible.\n- 3. Developing a formally correct parser for a grammar in FPG format\n  (C1).\u2074 The grammar will include tags that indicate information (and\n  its structure) that should be pertained in the parse tree.\n- 4. Developing a parser interpreter, that will read a description of\n  some grammar G from a text file using the certified parser (C3) and,\n  after checking that the grammar belongs to a class for which parsing\n  is feasible (C2), it will interpret the grammar generating a parse\n  tree, according to the parse tags embedded in the grammar (C1).\n- 5. Proving that the parser interpreter (C4) is correct with respect to\n  the given grammar G (with its parsing tags) and the semantics of\n  parsing grammars (C1) (including the semantics of parsing tags).\n- 6. Proving that the parser interpreter (C4) will always terminate.\n  This reasoning will use some properties of the grammar G (C2), which\n  ensure termination of its parsing.\n- 7. Extracting a certified parser interpreter based on the development\n  (C4). The interpreter is totally correct due to (C5) and (C6).",
+                                "An exemplary aspect of the disclosure therefore provides a parser generator that is capable of performing both the lexical analysis and the syntax analysis in an uniform way and that additionally will be correct by construction, i.e., the generated parser will come with total correctness guarantees, as if the generated parser was subject to formal verification using a theorem proving technology.",
+                                "An exemplary aspect of the disclosure makes this process completely transparent to the end-user of the parser generator. That means that from the point of view of the user, the process of generation of a parser is equivalent to that sketched in the preceding section. In particular the parser generator will be a single executable, functionally equivalent to the traditional parser generator and no use of a theorem prover will be involved at all; and yet the generated parser will be provably correct by construction, allowing its use in critical systems, requiring strong correctness guarantees.",
+                                "3. The following annexes are fully included in the specifications.",
+                                "**3.1 ANNEX A: Formal Semantics of PEGS**",
+                                "\\(\\overset{\\_}{\\left( {\\varepsilon,s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s} \\right.}\\)\n\\(\\frac{\\left( {{P_{\\exp}\ue8a0(p)},s} \\right)\ue89e\ue89er}{\\left( {p,s} \\right)\ue89e\ue89er}\\)\n\\(\\overset{\\_}{\\left( {\\lbrack \\cdot \\rbrack,{x :: {xs}}} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{xs} \\right.}\\)\n\\(\\overset{\\_}{{\\left( {\\lbrack \\cdot \\rbrack,{\\lbrack\\rbrack}} \\right)\ue89e}\\bot}\\)\n\\(\\overset{\\_}{\\left( {x,{x :: {xs}}} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{xs} \\right.}\\)\n\\(\\overset{\\_}{{\\left( {x,{\\lbrack\\rbrack}} \\right)\ue89e}\\bot}\\)\n\\(\\frac{x \\neq y}{{\\left( {y,{x :: {xs}}} \\right)\ue89e}\\bot}\\)\n\\(\\frac{{\\left( {e_{1},s} \\right)\ue89e}\\bot}{{\\left( {{e_{1};e_{2}},s} \\right)\ue89e}\\bot}\\)\n\\(\\frac{\\left( {e_{1},s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{\\prime}}\ue89e\\left( {e_{2},s^{\\prime}} \\right) \\right.\ue89e\ue89er}{\\left( {e_{1};{e_{2}\ue89es}} \\right)\ue89e\ue89er}\\)\n\\(\\frac{\\left( {e_{1},s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{\\prime}} \\right.}{\\left( {{e_{1};e_{2}},s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{\\prime}} \\right.}\\)\n\\(\\frac{{\\left( {e_{1},s} \\right)\ue89e}\\bot{\\left( {e_{2},s} \\right)\ue89e\ue89er}}{\\left( {{e_{1}/e_{2}},s} \\right)\ue89e\ue89er}\\)\n\\(\\frac{\\left( {e,s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{\\prime}}\ue89e\\left( {e^{*},s^{\\prime}} \\right) \\right.\ue89e\ue89e\\left. \\sqrt{}{}_{s^{''}} \\right.}{\\left( {e^{*},s^{\\prime}} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{''}} \\right.}\\)\n\\(\\frac{{\\left( {e,s} \\right)\ue89e}\\bot}{\\left( {e^{*},s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s} \\right.}\\)\n\\(\\frac{{\\left( {e,s} \\right)\ue89e}\\bot}{\\left( {{!e},s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s} \\right.}\\)\n\\(\\frac{\\left( {e,s} \\right)\ue89e\ue89e\\left. \\sqrt{}{}_{s^{\\prime}} \\right.}{{\\left( {{!e},s} \\right)\ue89e}\\bot}\\)",
+                                "**3.2.1 ANNEX B: Parsing Expressions Extended To Incorporate Semantic Actions**",
+                                "\\(\\overset{\\_}{\\varepsilon \\in \\Delta_{True}}\\)\n\\(\\overset{\\_}{\\lbrack \\cdot \\rbrack \\in \\Delta_{{char}\ue89e\\;}}\\)\n\\(\\frac{a \\in V_{T}}{a \\in \\Delta_{{char}\ue89e\\;}}\\)\n\\(\\frac{A \\in V_{N}}{A \\in {\\Delta \ue89e\\; \ue89eP_{{type}\ue8a0{(A)}}}}\\)\n\\(\\frac{e_{1} \\in {\\Delta_{\\alpha}\ue89ee_{2}} \\in \\Delta_{\\beta}}{e_{1};{e_{2} \\in \\Delta_{\\alpha*\\beta}}}\\)\n\\(\\frac{e_{1} \\in {\\Delta_{\\alpha}\ue89ee_{2}} \\in \\Delta_{\\alpha}}{{e_{1}/e_{2}} \\in \\Delta_{\\alpha}}\\)\n\\(\\frac{e \\in \\Delta_{\\alpha}}{e^{*} \\in \\Delta_{{list}\ue89e\\; \ue89e\\alpha}}\\)\n\\(\\frac{e \\in \\Delta_{\\alpha}}{!{e \\in \\Delta_{True}}}\\)\n\\(\\frac{e \\in {\\Delta_{\\alpha}\ue89e{f:\\left. \\alpha\\rightarrow\\beta \\right.}}}{{{e\ue8a0\\left\\lbrack \\mapsto \\right\\rbrack}\ue89ef} \\in \\Delta_{\\beta}}\\)",
+                                "Parsing expressions extended to incorporate semantic actions.",
+                                "**3.2.2 ANNEX B2: Formal Semantics of PEGs With Semantic Actions**",
+                                "\\(\\overset{\\_}{\\left( {\\varepsilon,s} \\right)\ue89e\ue89e\\sqrt{}_{s}^{I}}\\)\n\\(\\frac{\\left( {{P_{\\exp}\ue8a0(p)},s} \\right)\ue89e\ue89er}{\\left( {p,s} \\right)\ue89e\ue89er}\\)\n\\(\\overset{\\_}{\\left( {\\lbrack \\cdot \\rbrack,{x :: {xs}}} \\right)\ue89e\ue89e\\sqrt{}_{xs}^{x}}\\)\n\\(\\overset{\\_}{{\\left( {\\lbrack \\cdot \\rbrack,{\\lbrack\\rbrack}} \\right)\ue89e}\\bot}\\)\n\\(\\overset{\\_}{\\left( {x,{x :: {xs}}} \\right)\ue89e\ue89e\\sqrt{}_{xs}^{x}}\\)\n\\(\\overset{\\_}{{\\left( {x,{\\lbrack\\rbrack}} \\right)\ue89e}\\bot}\\)\n\\(\\frac{x \\neq y}{{\\left( {y,{x :: {xs}}} \\right)\ue89e}\\bot}\\)\n\\(\\frac{{\\left( {e_{1},s} \\right)\ue89e}\\bot}{{\\left( {{e_{1}:e_{2}},s} \\right)\ue89e}\\bot}\\)\n\\(\\frac{{\\left( {e_{1},s} \\right)\ue89e\ue89e{\\sqrt{}_{s^{\\prime}}^{v_{1}}\ue89e\\left( {e_{2},s^{\\prime}} \\right)}\ue89e}\\bot}{{\\left( {{e_{1};e_{2}},s} \\right)\ue89e}\\bot}\\)\n\\(\\frac{\\left( {e_{1},s} \\right)\ue89e\ue89e{\\sqrt{}_{s^{\\prime}}^{v_{1}}\ue89e\\left( {e_{2} \\cdot s^{\\prime}} \\right)}\ue89e\ue89e\\sqrt{}_{s^{''}}^{v_{2}}}{\\left( {e_{1};{e_{2} \\cdot s}} \\right)\ue89e\ue89e\\sqrt{}_{s^{''}}^{({v_{1},v_{2}})}}\\)\n\\(\\frac{\\left( {e_{1} \\cdot s} \\right)\ue89e\ue89e\\sqrt{}_{s^{\\prime}}^{v}}{\\left( {{e_{1}/e_{2}},s} \\right)\ue89e\ue89e\\sqrt{}_{s^{\\prime}}^{v}}\\)\n\\(\\frac{{\\left( {e_{1},s} \\right)\ue89e}\\bot{\\left( {e_{2},s} \\right)\ue89e\ue89er}}{\\left( {{e_{1}/e_{2}},s} \\right)\ue89e\ue89er}\\)\n\\(\\frac{\\left( {e,s} \\right)\ue89e\ue89e{\\sqrt{}_{s^{\\prime}}^{v}\ue89e\\left( {e^{*},s^{\\prime}} \\right)}\ue89e\ue89e\\sqrt{}_{s^{''}}^{vs}}{\\left( {e^{*},s} \\right)\ue89e\ue89e\\sqrt{}_{s^{''}}^{v :: {vs}}}\\)\n\\(\\frac{{\\left( {e,s} \\right)\ue89e}\\bot}{\\left( {e^{*},s} \\right)\ue89e\ue89e\\sqrt{}_{s}^{\\lbrack\\rbrack}}\\)\n\\(\\frac{{\\left( {e,s} \\right)\ue89e}\\bot}{\\left( {{!e},s} \\right)\ue89e\ue89e\\sqrt{}_{s}^{I}}\\)\n\\(\\frac{\\left( {e,s} \\right)\ue89e\ue89e\\sqrt{}_{s^{\\prime}}^{v}}{{\\left( {{!e},s} \\right)\ue89e}\\bot}\\)\n\\(\\frac{{\\left( {e,s} \\right)\ue89e}\\bot}{{\\left( {{{e\ue8a0\\left\\lbrack \\mapsto \\right\\rbrack}\ue89ef},s} \\right)\ue89e}\\bot}\\)\n\\(\\frac{\\left( {e,s} \\right)\ue89e\ue89e\\sqrt{}_{s^{\\prime}}^{v}}{\\left( {{{e\ue8a0\\left\\lbrack \\mapsto \\right\\rbrack}\ue89ef},s} \\right)\ue89e\ue89e\\sqrt{}_{s^{\\prime}}^{f\ue8a0{(v)}}}\\)",
+                                "**3.3 ANNEX C: Deriving Grammar Properties**",
+                                "\\(\\overset{\\_}{\\varepsilon \\in {\\mathbb{P}}_{0}}\\)\n\\(\\overset{\\_}{\\lbrack \\cdot \\rbrack \\in {\\mathbb{P}}_{> 0}}\\)\n\\(\\overset{\\_}{\\lbrack \\cdot \\rbrack \\in {\\mathbb{P}}_{\\bot}}\\)\n\\(\\frac{a \\in V_{T}}{a \\in {\\mathbb{P}}_{> 0}}\\)\n\\(\\frac{a \\in V_{T}}{a \\in {\\mathbb{P}}_{\\bot}}\\)\n\\(\\frac{e \\in {\\mathbb{P}}_{\\bot}}{e^{*} \\in {\\mathbb{P}}_{0}}\\)\n\\(\\frac{e \\in {\\mathbb{P}}_{> 0}}{e^{*} \\in {\\mathbb{P}}_{> 0}}\\)\n\\(\\frac{e \\in {\\mathbb{P}}_{\\bot}}{!{e \\in {\\mathbb{P}}_{0}}}\\)\n\\(\\frac{e \\in {\\mathbb{P}}_{\\geq 0}}{!{e \\in {\\mathbb{P}}_{\\bot}}}\\)\n\\(\\frac{\\bigstar \\in {\\left\\{ {0,{> 0},\\bot} \\right\\} \ue89eA} \\in {V_{N}\ue89eP_{\\exp}\ue89e\\; \ue89e(A)} \\in {\\mathbb{P}}_{\\bigstar}}{\\; \ue89e{A \\in {\\mathbb{P}}_{\\bigstar}}}\\)\n\\(\\frac{{e_{1} \\in {\\mathbb{P}}_{\\bot}}\ue375\\left( {{e_{1} \\in {\\mathbb{P}}_{\\geq 0}}\ue374{e_{2} \\in {\\mathbb{P}}_{\\bot}}} \\right)}{e_{1};{e_{2} \\in {\\mathbb{P}}_{\\bot}}}\\)\n\\(\\frac{e_{1} \\in {{\\mathbb{P}}_{0}\ue89ee_{2}} \\in {\\mathbb{P}}_{0}}{e_{1};{e_{2} \\in {\\mathbb{P}}_{0}}}\\)\n\\(\\frac{\\left( {{e_{1} \\in {\\mathbb{P}}_{> 0}}\ue374{e_{2} \\in {\\mathbb{P}}_{\\geq 0}}} \\right)\ue375\\left( {{e_{1} \\in {\\mathbb{P}}_{\\geq 0}}\ue374{e_{2} \\in {\\mathbb{P}}_{> 0}}} \\right)}{e_{1};{e_{2} \\in {\\mathbb{P}}_{> 0}}}\\)\n\\(\\frac{{e_{1} \\in {\\mathbb{P}}_{0}}\ue375\\left( {{e_{1} \\in {\\mathbb{P}}_{\\bot}}\ue374{e_{2} \\in {\\mathbb{P}}_{0}}} \\right)}{{e_{1}/e_{2}} \\in {\\mathbb{P}}_{0}}\\)\n\\(\\frac{{e_{1} \\in {\\mathbb{P}}_{\\bot}},{e_{2} \\in {\\mathbb{P}}_{\\bot}}}{{e_{1}/e_{2}} \\in {\\mathbb{P}}_{\\bot}}\\)\n\\(\\frac{{e_{1} \\in {\\mathbb{P}}_{> 0}}\ue375\\left( {{e_{1} \\in {\\mathbb{P}}_{\\bot}}\ue374{e_{2} \\in {\\mathbb{P}}_{> 0}}} \\right)}{{e_{1}/e_{2}} \\in {\\mathbb{P}}_{> 0}}\\)",
+                                "**3.4 ANNEX D: Deriving Well-Formedness Property For A PEG**",
+                                "\\(\\overset{\\_}{\\varepsilon \\in {WF}}\\)\n\\(\\overset{\\_}{\\lbrack \\cdot \\rbrack \\in {WF}}\\)\n\\(\\frac{a \\in V_{T}}{a \\in {WF}}\\)\n\\(\\frac{A \\in {V_{N}\ue89e{P_{\\exp}\ue8a0(A)}} \\in {WF}}{A \\in {WF}}\\)\n\\(\\frac{e_{1} \\in {{WF}\ue89e\\; \ue89ee_{1}} \\in \\left. {\\mathbb{P}}_{0}\\Rightarrow e_{2} \\right. \\in {WF}}{e_{1};{e_{2} \\in {WF}}}\\)\n\\(\\frac{e_{1} \\in {{WF}\ue89e\\; \ue89ee_{2}} \\in {WF}}{{e_{1}/e_{2}} \\in {WF}}\\)\n\\(\\frac{{e \\in {WF}},\\; \ue89e{e \\notin {\\mathbb{P}}_{0}}}{e^{*} \\in {WF}}\\)\n\\(\\frac{e \\in {WF}}{!{e \\in {WF}}}\\)"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce three embodiments of the invention",
+                                "define PA, FPG, Q, and G",
+                                "describe approach of specifying and developing a parser interpreter/generator in PA",
+                                "extract parser interpreter/generator with total correctness guarantees",
+                                "motivate first embodiment: parser interpreter with semantic actions",
+                                "define FPG and its formal semantics",
+                                "develop procedure for checking grammar feasibility",
+                                "develop parser interpreter with semantic actions",
+                                "prove correctness of parser interpreter",
+                                "prove termination of parser interpreter",
+                                "extract certified parser interpreter",
+                                "motivate second embodiment: parser generator with semantic actions",
+                                "define FPG and its semantics",
+                                "develop procedure for checking grammar feasibility",
+                                "define Q and its formal semantics",
+                                "develop library of basic datatypes of Q",
+                                "develop formally correct parser for Q",
+                                "develop formally correct parser for grammar in FPG format",
+                                "develop termination checker for semantic actions in Q",
+                                "develop parser generator",
+                                "prove correctness of generated parser",
+                                "prove termination of generated parser",
+                                "extract certified parser generator",
+                                "motivate third embodiment: parser interpreter with parsing traces",
+                                "define FPG extended with parsing tags",
+                                "develop parser interpreter with parsing traces",
+                                "prove correctness and termination of parser interpreter"
+                            ],
+                            "num_characters": 13882,
+                            "outline_medium": [
+                                "introduce three embodiments of the invention",
+                                "define PA, FPG, Q, and G",
+                                "describe first embodiment: parser interpreter with semantic actions",
+                                "define FPG and its formal semantics",
+                                "develop parser interpreter with semantic actions",
+                                "prove correctness and termination of parser interpreter",
+                                "extract certified parser interpreter",
+                                "describe second embodiment: parser generator with semantic actions",
+                                "develop parser generator with semantic actions",
+                                "prove correctness and termination of parser generator",
+                                "extract certified parser generator",
+                                "describe third embodiment: parser interpreter with parsing traces",
+                                "develop parser interpreter with parsing traces"
+                            ],
+                            "outline_short": [
+                                "introduce three embodiments of parser generator/interpreter",
+                                "motivate parser interpreter with semantic actions",
+                                "describe parser generator with semantic actions",
+                                "motivate parser interpreter with parsing traces",
+                                "describe formal semantics of PEGs",
+                                "describe annexes for parsing expressions and grammar properties"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A system for building a parser generator, wherein the method comprises:\na grammar input module configured to input in said parser generator a grammar expressed in a given formalism;\na formalism module configured to express grammars used by said parser generator, said formalism module proving that said grammar G is well-formed;\na semantic action module configured to define a parsing result depending on at least some expression of said grammar, said semantic action module ensuring that all semantic actions of said grammar are terminating semantic actions;\na checking module configured to check that said grammar belongs to a predetermined class of grammars for which a translation to a correct and terminating parser is feasible; and\na proof assistant module configured to develop, if said checking module concludes that said grammar belongs to said predetermined class of grammar: said parser generator with said formalism and said semantic action module and produce mechanically-verifiable formal proofs of properties of said parser, including but not limited to total correctness properties.",
+        "2. The system for building a parser generator of claim 1, wherein said a formalism module forbids recursion in said grammar.",
+        "3. The system for building a parser generator of claim 1, wherein said grammar is a context-free grammar;",
+        "4. The system for building a parser generator of claim 1, wherein said grammar is a parsing expression grammar;",
+        "5. A method for building a formally verified parser generator, wherein the method comprises:\nformalizing an expression of a grammar G and its semantics;\nchecking that said grammar G belongs to a predetermined class of grammars for which a translation to a correct, terminating parser is feasible;\ndefining a target language Q of said parser generator and its formal semantics;\nobtaining a library of basic data types of Q and functions over them and proving that they are all terminating;\nobtaining a formally correct parser for Q;\nobtaining a formally correct parser for a grammar in FPG format, said including semantic actions in Q;\nobtaining a termination checker for semantic actions in Q;\nobtaining a parser generator, that will read a description of some grammar G from a text file using said certified parser and, after checking that the grammar belongs to a class for which parser generation is feasible, it will generate a code of the parser in Q;\nobtaining, from a proving module, that the code generated in is correct with respect to the given grammar G, the semantics of parsing grammars and the formal semantics of Q; and\nobtaining, from a proving module, that the code generated in will always terminate.",
+        "6. A non-transitory computer-readable medium comprising a computer program product wherein the program product comprises program code instructions for execution of a method of building a parser when the program is executed on a processor, wherein the method comprises:\nformalizing an expression of a grammar G and its semantics;\nchecking that said grammar G belongs to a predetermined class of grammars for which a translation to a correct, terminating parser is feasible;\ndefining a target language Q of said parser generator and its formal semantics;\nobtaining a library of basic data types of Q and functions over them and proving that they are all terminating;\nobtaining a formally correct parser for Q;\nobtaining a formally correct parser for a grammar in FPG format, said including semantic actions in Q;\nobtaining a termination checker for semantic actions in Q;\nobtaining a parser generator, that will read a description of some grammar G from a text file using said certified parser and, after checking that the grammar belongs to a class for which parser generation is feasible, it will generate a code of the parser in Q;\nobtaining, from a proving module, that the code generated in is correct with respect to the given grammar G, the semantics of parsing grammars and the formal semantics of Q; and\nobtaining, from a proving module, that the code generated in will always terminate."
+    ]
+}

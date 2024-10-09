@@ -1,0 +1,233 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce malaria
+- describe malaria statistics
+- discuss malaria impact on military
+- describe limitations of current prevention methods
+- motivate vaccine development
+- review current malaria vaccine development
+- discuss Phase 1/2 vaccine trials
+- describe limitations of current vaccine approaches
+- discuss development of immune-stimulatory conjugates
+- describe DNA and viral based vaccines
+- discuss immunogenicity of DNA vaccines
+- state need for improved methods
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce method of inducing immune response
+- describe composition and administration
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce multivalent vaccine
+- advantage over current vaccine methodologies
+- describe method of inducing immune response against malaria
+- describe adenoviral vector composition
+- describe adenovirus characteristics
+- describe deletion of E3 region
+- describe AAV-Ad chimeric vector
+- describe adenovirus sources
+- describe human adenovirus serotypes
+- describe adenoviral vector construction
+- describe chimeric adenoviral vector
+- describe adenoviral vector genome composition
+- define replication-deficient
+- describe replication-essential gene functions
+- describe E1-deficient adenoviral vector
+- describe E4-deficient adenoviral vector
+- describe E1/E3-deficient adenoviral vector
+- describe E1/E4-deficient adenoviral vector
+- describe multiply replication-deficient adenoviral vector
+- describe deletion endpoints
+- describe singly replication-deficient adenoviral vector
+- describe E1/E3/E4-deficient adenoviral vector
+- describe adenoviral vector genome modifications
+- describe immune response alteration
+- describe coat protein modification
+- describe spacer sequence
+- describe spacer sequence length
+- describe spacer sequence composition
+- describe polyadenylation sequence
+- describe promoter-variable expression cassette
+- describe passenger gene
+- describe E4 polyadenylation sequence
+- describe SV40 polyadenylation sequence
+- describe glucuronidase gene
+- describe trans-acting factor modulation
+- describe transgene expression modulation
+- describe adenoviral vector propagation
+- describe replication-deficient adenoviral vector
+- describe adenoviral vector modification
+- define replication-deficient adenoviral vectors
+- describe complementing cell lines
+- motivate E1 region complementation
+- describe E4 region complementation
+- explain construction of complementing cell lines
+- list examples of complementing cell lines
+- describe helper virus
+- motivate coat protein manipulation
+- describe fiber protein manipulation
+- describe penton base manipulation
+- describe short-shafted fiber
+- describe mutated nucleic acid residues
+- describe removal of native binding sites
+- describe addition of binding sequences
+- describe targeting of adenovirus
+- describe chimeric coat protein
+- motivate binding to immune cells
+- describe chimeric fiber protein
+- describe RGD motif
+- describe insertion of RGD motif
+- describe spacer sequence
+- describe target proteins on dendritic cells
+- describe CD40 recognition
+- describe target proteins on macrophages
+- describe examples of macrophage surface target proteins
+- conclude adenoviral vector design
+- list B-cell surface proteins
+- describe chimeric virus coat protein
+- explain binding of chimeric coat protein
+- discuss use of bi-specific molecule
+- describe conjugation of non-native amino acid sequence
+- list adenoviral coat proteins
+- explain generation of chimeric adenoviral coat protein
+- describe modification of coat protein portion
+- discuss incorporation of non-native amino acid sequence
+- explain use of spacer sequence
+- describe determination of binding affinity
+- discuss transduction levels of host cells
+- explain binding of non-native amino acid sequence to compound
+- list examples of compounds bound by non-native amino acid sequence
+- discuss disruption of native binding of adenoviral coat proteins
+- explain limitation of repeated administration of adenoviral vector
+- describe stimulation of humoral immunity
+- discuss cell-mediated immune functions
+- explain rapid clearance of virus
+- describe modification of adenoviral coat protein to evade host immunity
+- explain generation of diversity in coat protein
+- discuss use of directed evolution techniques
+- outline steps of directed evolution process
+- introduce coat protein diversity generation
+- describe mutated coat protein genes incorporation into adenoviral vectors
+- outline vector propagation and rescue under competitive conditions
+- summarize biological activity screening of coat protein variants
+- describe immunogenicity evaluation of Ad5 vectors with variant coat proteins
+- list suitable modifications to adenoviral vectors
+- define heterologous nucleic acid sequence
+- describe antigen and immune response
+- specify Plasmodium antigen and its origin
+- outline Plasmodium life cycle
+- describe blood-stage and pre-erythrocytic stage antigens
+- specify preferred P. falciparum antigens
+- describe signal sequence and glycosylation effects
+- outline signal sequence and glycosylation modifications
+- describe codon optimization for mammalian expression
+- specify codon-optimized nucleic acid sequences
+- describe expression cassette and adenoviral genome modification
+- outline E1 and E4 region modifications
+- describe promoter and enhancer elements
+- specify viral and cellular promoters
+- describe human CMV immediate-early promoter
+- outline ubiquitin promoter
+- describe other cellular promoters
+- specify nucleic acid sequence insertion orientation
+- describe E3 region deletion
+- outline adenoviral vector construction
+- describe heterologous nucleic acid sequence expression
+- specify antigen expression and immune response
+- describe Plasmodium antigen expression
+- outline blood-stage and pre-erythrocytic stage antigen expression
+- specify CSP and AMA-1 antigen expression
+- describe signal sequence and glycosylation effects on antigen expression
+- outline codon optimization for antigen expression
+- specify codon-optimized nucleic acid sequences for antigen expression
+- describe expression cassette and adenoviral genome modification for antigen expression
+- outline E1 and E4 region modifications for antigen expression
+- describe promoter and enhancer elements for antigen expression
+- specify viral and cellular promoters for antigen expression
+- describe human CMV immediate-early promoter for antigen expression
+- outline ubiquitin promoter for antigen expression
+- describe other cellular promoters for antigen expression
+- specify nucleic acid sequence insertion orientation for antigen expression
+- describe E3 region deletion for antigen expression
+- outline adenoviral vector construction for antigen expression
+- describe heterologous nucleic acid sequence expression for antigen expression
+- specify antigen expression and immune response
+- describe promoters
+- introduce inducible promoters
+- list examples of inducible promoter systems
+- describe tissue-specific promoters
+- introduce chimeric promoters
+- describe generation of chimeric promoters
+- explain selection of promoters
+- describe use of multiple promoters
+- introduce polyadenylation sites
+- list examples of polyadenylation sequences
+- describe arrangement of transcription signals
+- introduce administration of adenoviral vectors
+- describe composition of adenoviral vectors
+- explain immune response induced by inventive method
+- describe use of inventive method in prime and boost regimen
+- introduce priming composition
+- describe boosting composition
+- explain administration of priming and boosting compositions
+- describe use of different gene transfer vectors
+- introduce plasmid DNA as priming composition
+- describe administration of antigen itself
+- explain timing of boosting composition administration
+- describe use of multiple priming and boosting compositions
+- introduce administration of composition via intramuscular injection
+- describe other routes of administration
+- introduce use of devices for controlled release
+- describe sustained-release formulations
+- explain dose of adenoviral vectors
+- describe effective amount of adenoviral vectors
+- introduce multiple administrations of composition
+- describe timing of multiple administrations
+- introduce carrier for composition
+- describe formulation of composition
+- introduce sterile and non-sterile compositions
+- describe storage of composition
+- introduce extemporaneous solutions and suspensions
+- describe protection of adenoviral vectors from damage
+- introduce stabilizing agents
+- describe use of composition with other therapeutic agents
+
+### Example 1
+
+- generate adenoviral vectors
+- express CSP and AMA-1 genes
+- immunize mice with adenoviral vectors
+- collect sera and splenocytes
+- evaluate antibody responses by ELISA
+- evaluate T cell responses by IFN-γ ELIspot
+- compare immunogenicity of separate and cocktailed vectors
+- show immunogenicity of composition in mice
+- conclude composition is immunogenic in mammals
+
+### Example 2
+
+- investigate immunogenicity in rabbits
+- evaluate safety and tolerability
+- assess antibody responses by ELISA
+- conclude composition is well-tolerated and immunogenic in mammals
+
+### Example 3
+
+- describe Phase 1/2a clinical trial
+- outline dose escalation study
+- administer vaccine construct to human volunteers
+- evaluate safety and tolerability
+- assess immunogenicity by IFN-γ ELIspot and ELISA
+- compare effects of different dosing intervals
+- challenge with P. falciparum sporozoites
+- evaluate protective efficacy
+- assess immunogenicity and protective efficacy of individual components
+- compare immunogenicity and protective efficacy of different dosing regimens
+- outline further testing in Phase 1a and Phase 2a
+- outline further testing in Phase 1b and Phase 2b
+- conclude inventive method affords protection against sporozoite challenge
+

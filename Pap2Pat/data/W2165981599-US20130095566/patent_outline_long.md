@@ -1,0 +1,488 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERAL FUNDING
+
+- acknowledge government support
+- describe government rights
+
+## SUMMARY
+
+- motivate systems biology
+- introduce flux balance analysis
+- describe limitations of FBA
+- introduce optimization method
+- describe application of optimization method
+- calculate cell growth rates
+- calculate substrate utilization
+- calculate metabolic flux reorganization
+- calculate maximum metabolic rate
+- calculate optimal metabolite concentrations
+- calculate enzyme activities
+- describe computer-implemented methods
+- describe apparatus for implementing methods
+- optimize biological activities
+- calculate optimal cell culture parameters
+- initiate optimal cell culture parameters
+- calculate order of substrate usage
+- control order of substrate usage
+- calculate maximum metabolic rate
+- calculate optimal metabolite concentrations
+- calculate enzyme activities
+- achieve optimal function of biochemical reaction network
+- calculate optimal properties of biochemical reaction network
+- alter biochemical reactions
+- repeat calculation of optimal properties
+- culture cells under optimal conditions
+- construct genetic makeup of cells
+- place cells in culture
+- cultivate cells to achieve optimal function
+- describe computer-readable medium
+
+## DETAILED DESCRIPTION
+
+- define terms used in patent
+- introduce flux balance calculations for cell cultures
+- describe use of cytoplasmic molecular crowding in flux balance calculations
+- describe use of reaction kinetics parameters in flux balance calculations
+- outline applications of flux balance analysis
+- introduce flux balance model of cellular metabolism
+- define stoichiometric matrix
+- describe steady state assumption
+- introduce equation for flux balance analysis
+- describe enzyme concentration constraint
+- introduce crowding coefficient
+- outline method for optimizing biological activities
+- describe calculation of optimal cell culture parameter
+- describe initiation and maintenance of optimal cell culture parameter
+- provide example of implementation of method
+- describe use of computer for implementation of method
+- outline steps for determining optimal functions of biochemical reaction network
+- describe representation of biochemical reactions in computer
+- describe use of optimization methods
+- describe alteration of list of reactions and re-computation of optimal properties
+- describe repetition of altering step until desired performance is met
+- describe culturing of living cell and optimization of culture conditions
+- describe construction of genetic makeup of cell
+- describe placement of cell in culture and cultivation
+- describe evolution of cell to desired performance
+- define biochemical reaction network
+- describe types of biochemical reaction networks
+- describe implementation of methods using whole biochemical reaction network
+- describe reconstruction of biochemical reaction network
+- describe use of annotated genome sequences and biochemical and physiological data
+- describe analysis of reconstructed network
+- describe determination of optimal properties of biochemical reaction network
+- describe use of optimization methods
+- describe linear and non-linear optimization with linear constraints
+- describe use of simulated annealing
+- describe reconstruction of metabolic network
+- describe use of flux balance analysis
+- describe assessment of metabolic capabilities of reconstructed metabolic network
+- describe use of experimentally determined strain-specific parameters
+- describe calculation of flux distribution through reconstructed metabolic network
+- describe definition of factors leading to closed solution space
+- describe optimization procedure
+- describe comparison of calculated behavior to experimental data
+- describe addition of constraints relating to cytoplasmic molecular crowding and/or reaction kinetics
+- describe prediction of optimal uses of biochemical reaction network
+- describe limitations of natural organism with intact network
+- describe limitations of natural organism without growth competition and selection
+- describe need for design of biochemical reaction network
+- describe use of methods to achieve optimal performance
+- introduce wild type network perturbation
+- describe in silico methods for resolving optimality issues
+- explain culturing methods for resolving growth competition and selection issues
+- motivate altering cellular parameters for desired performance
+- describe iterative design procedure for optimizing performance
+- define desired performance as qualitative characteristic or quantitative value
+- provide examples of desired performances
+- describe optimization method using computer system
+- outline computer system components
+- describe database information regarding biochemical reaction networks
+- explain database information regarding biomolecular sequences
+- describe database information regarding genomic sequences
+- outline database annotations and sequence information
+- explain identifying biochemical genotype of an organism
+- describe database types and external databases
+- outline user interface for receiving selections and optimal performance
+- describe computer program product and processing unit
+- outline modules and processes for implementing computer program
+- describe interacting with database and altering biochemical reaction network
+- explain comparing biochemical reaction networks to identify differences
+- describe receiving data from cell culture and controlling external devices
+- outline generating computer-readable program code
+- describe adaptive evolution of cultured strain to achieve desired performance
+- explain using virtually any cell with the methods
+- describe biochemical reaction network characterization
+- outline genome sequencing and gene identification
+- describe genetic makeup of a cell
+- construct biochemical reactions to meet desired performance
+- add or subtract reactions from list using genetic manipulations
+- alter expression of regulatory components
+- place cell in culture under specified environment
+- determine optimal cultural parameters using optimization procedure
+- monitor culture conditions and adjust as necessary
+- use computer program to determine optimal conditions
+- configure computer system to automatically bring culture to optimal parameters
+- use continuous culture and computerized system to monitor culture parameters
+- control flow of new culture media and addition of culture constituents
+- configure and program computer system
+- allow cells to adapt to culture conditions through adaptive evolution
+- culture cells for sufficient period to allow evolution towards desired performance
+- use extended cultivation to optimize metabolic network
+- accelerate evolutionary process using chemical mutagens and/or radiation
+- genetically alter living cell to contain biochemical reactants
+- culture cells under specified environmental conditions
+- monitor growth and metabolic behavior during adaptive evolutionary process
+- measure oxygen uptake rate, substrate uptake rate, and growth rate
+- plot data points on phenotype phase plane
+- continue evolutionary process until optimal performance is achieved
+- monitor byproduct secretion using HPLC or other analytical methods
+- determine correlation of dry weight vs optical density for evolved strain
+- inspect cultures for signs of contamination or co-evolution with mutant subpopulation
+- log optical density, time of inoculation, inoculum volume, growth rate, and signs of contamination
+- freeze samples for further use
+- provide computer-implemented method for achieving optimal function of biochemical reaction network
+- calculate optimal cell culture parameters using flux balance analysis
+- apply computational optimization method to biochemical reactions
+- alter elements of biochemical reactions and re-compute optimal property
+- repeat optimization method until optimal function is reached
+- initiate or maintain optimal cell culture parameter in cell culture
+- calculate maximum metabolic rate, optimal metabolite concentration, and enzyme activity
+- apply computational optimization method to kinetic model of metabolic pathway
+- construct genetic makeup of cell to contain biochemical reactions
+- place cell in culture under specified environment to obtain population of cells
+- cultivate cells for sufficient period to allow evolution towards desired optimal function
+- account for ribosome density in cells as measure of ribosomal-, enzyme associated-, and non-metabolic proteins
+- account for mitochondria as subcellular compartment in cells
+- provide computer-readable medium having stored instructions for implementing computer model
+- provide device comprising computer-readable medium and processor for executing instructions
+- provide additional components for implementation of instructions
+- provide sensors, culture vessels, heating/cooling elements, and reservoirs for storing cell culture medium
+- provide mechanisms for dispensing cell culture medium and taking/analyzing samples
+- provide display, analytical devices, and communication subsystems
+- provide remote access to reaction parameters
+
+## EXAMPLES
+
+- list abbreviations
+
+### Example 1
+
+- study impact of limited solvent capacity on E. coli cell metabolism
+- demonstrate relevance of constraint for fast growing cells
+- predict metabolic switch between low and high nutrient abundance
+- carry out flux measurements of several reactions
+- observe partial agreement with model predictions
+- perform gene expression and enzyme activity measurements
+- find switch controlled at enzyme activity level
+- discuss potential relevance to experimental observations in other organisms
+- estimate crowding coefficients for E. coli proteins
+- obtain enzymes' turnover rates from BRENDAdatabase
+- implement Flux Balance analysis with Molecular Crowding
+- solve optimization problem to maximize biomass production rate
+- model crowding coefficients as noise
+- predict fluxes for all reactions
+- make predictions for E. coli metabolic fluxes on different carbon sources
+- model increase of carbon source concentration in growth medium
+- compute fluxes that maximize biomass production rate
+- analyze behavior of metabolic fluxes as function of growth rate
+- describe bacterial strain and general growth conditions
+- harvest biomass samples for flux measurements
+- perform metabolic enzyme activity assays
+- determine total protein concentration in enzyme samples
+- define units of enzyme activity
+- describe Bradford's assay for protein concentration
+- outline flux measurement and analysis procedure
+- explain GC-MS and NMR metabolome mapping platform
+- describe mass isotopomer analysis (MIDA)
+- outline statistical analysis using Student's t-test
+- describe glycogen glucose and RNA ribose stable isotope studies
+- outline acid hydrolysis of cellular RNA
+- describe derivatization of ribose and glycogen glucose
+- explain mass spectral analysis of ribose and glycogen glucose
+- describe lactate extraction and derivatization
+- outline mass spectral analysis of lactate
+- describe glutamate extraction and derivatization
+- explain mass spectral analysis of glutamate
+- describe fatty acid extraction and derivatization
+- outline mass spectral analysis of fatty acids
+- describe GC/MS and NMR settings
+- describe flux data analysis and statistical methods
+- detail RNA preparation for microarray analysis
+- outline STEM clustering analysis
+- describe querying expression data to identify specific expression profiles
+- detail querying gene expression of operons in the central carbon metabolism
+- state results of limited solvent capacity constraining metabolic rate
+- estimate crowding coefficients using data from experimental reports
+- compute crowding coefficients for E. coli enzymes
+- predict change of effective metabolic efficiency objective using FBAwMC
+- evaluate relevance of solvent capacity constraint at physiological growth conditions
+- predict metabolic switch characterized by change in effective criteria of metabolic efficiency
+- predict redistribution of metabolic fluxes
+- predict excretion of acetate at high growth rates
+- compare FBAwMC-predicted metabolic fluxes with experimental values
+- identify regulatory mechanism(s) controlling metabolic switch
+- measure in vitro activity of selected enzymes
+- correlate changes in enzyme activities with measured flux rates
+- analyze mRNA levels of enzyme-encoding genes
+- discuss lack of correlation between measured metabolic fluxes and mRNA levels
+- discuss control of metabolic switch by enzyme activities
+- discuss significance of solvent capacity constraint for systems biology
+- discuss incorporation of solvent capacity constraint into FBA modeling framework
+- discuss flux predictions for E. coli metabolism
+- discuss consideration of reaction kinetics via crowding coefficients
+- discuss interpretation of metabolic switch using solvent capacity constraint
+- discuss maximization of biomass production rate objective
+- discuss consistency with expectation of fastest growth rates
+- discuss explanation of acetate excretion by solvent capacity constraint
+- discuss possibility of acetate excretion due to limited oxygen availability
+- discuss significance of results for systems biology
+- discuss development of modeling framework for quantitative description of cellular metabolism
+- discuss uncovering physicochemical constraints influencing cellular metabolism
+- discuss significance of limited solvent capacity for fast growing E. coli cells
+- discuss incorporation of solvent capacity constraint into FBAwMC model
+- discuss predictions of FBAwMC model
+- discuss flux balance approximations
+- discuss reaction kinetics via crowding coefficients
+- discuss significance of results for understanding E. coli metabolism
+- discuss implications for systems biology and quantitative modeling
+
+### Example 2
+
+- develop modified FBA model
+- incorporate solvent capacity constraint
+- predict maximum growth rate
+- test model predictions
+- obtain good agreement between model and experiment
+- suggest macromolecular crowding constraint
+- implement FBAwMC modeling framework
+- define optimization problem
+- model crowding coefficients as noise
+- assign random value to crowding coefficients
+- use gamma distribution
+- obtain results for β=3
+- test sensitivity of results
+- obtain maximum growth rate for each carbon source
+- fit average crowding coefficient
+- model temporal order of substrate uptake
+- consider initial concentration of substrates
+- integrate differential equations
+- obtain maximum growth rate and fluxes
+- solve three FBAwMC problems
+- estimate crowding coefficients from experimental measurements
+- define crowding coefficients
+- decompose proportionality factor
+- estimate crowding coefficients from turnover rate
+- describe growth experiments
+- detail carbon substrate and microarray analyses
+- describe bacterial strains and growth conditions
+- detail growth experiments using M9 minimal medium
+- assess transcriptome state
+- determine maximum growth rates
+- describe method of continuous cultivation
+- calculate maximum growth rate
+- determine residual concentration of carbon sources
+- analyze microarray samples
+- identify genes with sequence-specific hybridization
+- analyze microarray data for individual carbon sources
+- examine top 150 genes
+- introduce querying expression data
+- identify specific expression profiles
+- hierarchical clustering of time-series gene expression data
+- probabilistic clustering of time-series data
+- stress response analysis
+- biological functions of various genes
+- results introduction
+- FBA with molecular crowding predicts relative maximum growth
+- substrate hierarchy utilization by E. coli cells
+- FBAwMC E. coli model on mixed-substrate conditions
+- surrogate markers of cellular metabolism
+- mode and sequence of substrate utilization correlate with gene expression
+- activation of stress programs upon switching metabolic phases
+- hierarchical clustering with optimal leaf ordering
+- principal component analysis
+- probabilistic clustering method based on hidden Markov models
+- discussion introduction
+- identification of principles that define growth and substrate utilization mode
+- experimental results indicate three major metabolic phases
+- global mRNA expression data indicate partial stress response
+- activation of foraging program upon exhaustion of substrates
+- FBAwMC model captures main features of metabolic activities
+- correlation between in vivo relative maximal growth rates and in silico predictions
+- FBAwMC model predicts three metabolic phases and hierarchical mode
+- solvent capacity of cytoplasm determines growth rate
+- cells preferentially consume carbon source resulting in highest growth rate
+- two discrepancies of FBAwMC model predictions
+- higher than predicted amount of secreted acetate
+- earlier uptake and consumption of substrates from medium
+- contribution of other cell components apart from metabolic enzymes
+- FBAwMC model may underestimate impact of macromolecular crowding
+- acetate secretion correlated with increased carbon source uptake rate
+- maximum enzyme concentration is key constraint shaping hierarchy of substrate utilization
+- regulatory mechanisms acting in E. coli and other organisms
+- constrained optimization approaches help understand regulatory mechanisms
+- results of FBAwMC model on single carbon-limited media
+- comparison of predicted and measured growth rates
+- FBAwMC model predicts maximal growth rate of E. coli MG1655 cells
+- substrate utilization of E. coli cells in mixed carbon-limited medium
+- FBAwMC model predicts substrate uptake and consumption
+- changes in pH and oxygen concentrations in growth medium
+- expression of genes participating in uptake modules
+- TimeSearcher identifies genes with similar expression patterns
+- genes displaying expression patterns similar to those of query genes
+- activation of stress programs upon switching metabolic phases
+- global state of E. coli transcriptome during metabolic phases
+- hierarchical clustering with optimal leaf ordering
+- principal component analysis
+- probabilistic clustering method based on hidden Markov models
+- discussion of results and implications
+
+### Example 3
+
+- introduce flux balance in S. cerevisiae with molecular crowding and kinetic modeling
+- motivate hypothesis of optimal use of intracellular resources
+- describe glycolysis pathway in S. cerevisiae
+- present kinetic model of glycolysis
+- illustrate glycolysis pathway with FIG. 21
+- define optimization objective of glycolysis rate
+- derive rate equation models for glycolysis reactions
+- describe glucose transport reaction model
+- describe hexokinase reaction model
+- describe phosphoglucoisomerase reaction model
+- describe phosphofructokinase-1 reaction model
+- describe aldolase reaction model
+- describe triosephosphate isomerase reaction model
+- describe glyceraldehyde 3-phosphate dehydrogenase reaction model
+- describe pyruvate kinase and glycerol 3-phosphate dehydrogenase reaction models
+- introduce catalytic constants
+- obtain experimental estimates
+- describe cell density and specific volume
+- obtain optimal metabolite concentrations
+- perform parameter sensitivity analysis
+- introduce limited solvent capacity constraint
+- derive equation for reaction rate
+- define crowding coefficients
+- analyze hypothetical three metabolites pathway
+- model reaction rates with Michaelis-Menten rate equations
+- compute maximum metabolic rate
+- apply model to S. cerevisiae glycolysis
+- investigate dependency of glycolysis rate on metabolite concentrations
+- perform global optimization of metabolite concentrations
+- predict optimal metabolite concentrations
+- predict enzyme activities
+- test optimal metabolite concentration hypothesis
+- explore alternative optimization objectives
+- compute maximum glycolysis rate
+- discuss implications of limited solvent capacity constraint
+- summarize previous work on E. coli
+- discuss advantages of modeling approach
+- discuss limitations of modeling approach
+- introduce full kinetic model of glycolysis
+- predict optimal intermediate metabolite concentrations
+- predict enzyme activities
+- compare predictions with experimental values
+- discuss discrepancies between predictions and experimental values
+- propose method for predicting metabolite concentrations and enzyme activities
+- discuss applicability of method
+- discuss physical constraint of total cell volume
+- discuss enzyme molar volumes and density
+- discuss advantages of modeling framework
+- discuss limitations of modeling framework
+- discuss steady state approximation
+- discuss inability to model dynamical processes
+- discuss observed metabolite concentration oscillations
+- conclude modeling framework
+
+### Example 4
+
+- introduce alternative glycolysis pathway
+- describe ATP generation in normal cells
+- describe Warburg effect
+- explain molecular crowding constraint
+- introduce genome-scale model of human cell metabolism
+- describe flux balance model
+- define nutrient import reactions
+- define reactions outside mitochondria
+- define reactions in mitochondria
+- define compartment densities
+- formulate optimization problem
+- describe metabolic constraints
+- describe flux balance constraints
+- describe minimum/maximum flux constraints
+- describe minimum/maximum volume fraction constraints
+- describe molecular crowding constraints
+- estimate model parameters
+- discuss cost of importing molecules
+- discuss effective turnover numbers
+- discuss enzyme crowding coefficients
+- discuss ribosome crowding coefficient
+- discuss mitochondrial crowding coefficient
+- formulate flux balance equation for proteins
+- describe protein synthesis
+- describe protein degradation
+- describe effective protein dilution/degradation
+- model alternative glycolysis pathway
+- describe changes in relative macromolecular densities
+- show predicted relative volume fraction occupied by enzymes
+- show predicted relative volume fraction occupied by mitochondria
+- show predicted relative volume fraction occupied by ribosomes
+- describe impact of altering model parameters
+- describe metabolic switch from low- to high proliferation rates
+- describe changes in glucose uptake
+- describe changes in glutamine uptake
+- describe changes in pyruvate decarboxylase activity
+- describe changes in pyruvate dehydrogenase activity
+- describe changes in lactate excretion
+- describe novel pathway for ATP generation
+- describe reactions in novel pathway
+- describe novel ATP-producing pathway
+- illustrate reaction cycle
+- motivate one-carbon metabolism cycle
+- derive kinetic model of reaction cycle
+- define reaction rates
+- specify kinetic parameters
+- analyze system behavior
+- focus on intermediate metabolite concentrations
+- formulate optimization problem
+- solve optimization problem
+- discuss results
+- relate to Myc regulation
+- identify transcription factors
+- analyze gene expression data
+- discuss Myc-induced tumorigenesis
+- challenge general notion of glycolysis
+- propose alternative hypothesis
+- discuss molecular crowding
+- describe competition for intracellular space
+- discuss upper bound for OxPhos capacity
+- motivate alternative glycolysis pathway
+- discuss in silico analysis results
+- support predictions with experimental observations
+- discuss PKM2 isoform
+- describe upregulation of serine and glycine biosynthesis
+- discuss correlation with Myc overexpression
+- describe novel ATP-producing pathway
+- discuss ATP yield
+- discuss co-factor balance
+- discuss potential evolutionary advantage
+- discuss hierarchy of ATP yield and molecular crowding
+- discuss lactate and alanine production
+- discuss fluctuating hypoxia levels
+- identify potential enzyme targets
+- conclude
+
+## Materials and Methods
+
+- download metabolic network reconstruction
+- calculate crowding coefficients
+- perform sensitivity analysis
+- estimate macromolecular composition
+- determine maintenance parameters
+- solve optimization problem
+- analyze microarray data
+- calculate model-predicted relative cell volume fraction
+- describe abbreviations
+- discuss variations of embodiments
+- claim priority of patent applications
+

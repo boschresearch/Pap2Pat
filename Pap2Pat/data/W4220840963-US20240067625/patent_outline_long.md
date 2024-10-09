@@ -1,0 +1,375 @@
+# DESCRIPTION
+
+## STATEMENT AS TO RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH AND DEVELOPMENT
+
+- disclose government rights in invention
+
+## BACKGROUND OF THE INVENTION
+
+- introduce nuclear receptors
+- describe TLX and its functions
+- discuss association with diseases
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce compounds according to Formula I
+- define R¹-R⁸
+- define R⁹
+- define R^(a)-R^(e)
+- define L¹
+- introduce compounds according to Formula II
+- define R¹-R⁷
+- define R⁸
+- define R⁹
+- define R^(a)-R^(e)
+- define L¹
+- describe optional substituents
+- introduce Formula IIa
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce compounds for TLX modulation
+- list potential therapeutic applications
+
+### I. DEFINITIONS
+
+- define technical terms
+- specify meaning of "a," "an," or "the"
+- define "about" and "around"
+- explain "comprising" and "comprises"
+- explain "consisting essentially of"
+- explain "consisting of"
+- define "alkyl"
+- define "alkenyl"
+- define "alkynyl"
+- define "alkoxy"
+- define "cycloalkyl"
+- explain saturated monocyclic cycloalkyl rings
+- explain partially unsaturated cycloalkyl rings
+- define "alkylene"
+- define heteroalkyl
+- define heteroalkylene
+- define halo
+- define haloalkyl
+- define aryl
+- define substituted aryl
+- define heteroaryl
+- define substituted heteroaryl
+- specify heteroaryl ring positions
+- define heteroaryl groups with specific ring members
+- define heteroaryl groups with specific heteroatoms
+- define heterocycloalkyl
+- define heterocycloalkyl groups with specific ring members
+- define heterocycloalkyl groups with specific heteroatoms
+- specify heterocycloalkyl ring positions
+- define heterocycloalkyl groups fused to aromatic ring systems
+- define substituted heterocycloalkyl
+- specify substituents for heterocycloalkyl
+- provide examples of heterocycloalkyl groups
+- provide examples of heterocycloalkyl groups fused to aromatic ring systems
+- define heterocycloalkyl
+- define hydroxy
+- define amino
+- define aminoalkyl
+- define amido
+- define carboxy
+- define oxo
+- define sulfonyl
+- define pharmaceutically acceptable excipient
+- define pharmaceutically acceptable salt
+- describe solvated forms
+- define neurogenesis
+- define nuclear receptor TLX
+- describe TLX structure
+- describe TLX function
+- define modulator
+- define agonist
+- describe amount sufficient to promote neurogenesis
+- define treat
+- define effective amount
+- define contacting
+- define subject
+
+### II. TLX MODULATORS
+
+- define compounds of Formula I
+- specify R¹, R², R³, R⁴, R⁵, R⁶, R⁷, and R⁸
+- specify R⁹
+- provide embodiments of compounds of Formula I
+- define compounds of Formula Ia
+- define compounds of Formula Ib
+- provide embodiments of compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify R¹, R², R⁵, R⁶, R⁷, and R⁸
+- specify R³ and R⁴
+- provide additional embodiments of compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify R¹, R², R⁵, R⁶, R⁷, and R⁸
+- specify R³ and R⁴
+- describe preparation of compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify R⁴
+- specify L¹ and Rc
+- specify R¹-R³ and R⁵-R⁸
+- provide additional embodiments of R⁴
+- provide additional embodiments of R¹-R³ and R⁵-R⁸
+- define TLX modulators
+- specify R4 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- describe L1 and Rb in R4
+- specify R1-R3 and R5-R8 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- describe alternative R4 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify Rd and Re in R4
+- describe R1-R3 and R5-R8 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify R9 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- describe Ra and Rb in R9
+- specify moieties of R9, Ra, and Rb
+- describe alternative R9 in compounds of Formula I, Formula Ia, and/or Formula Ib
+- specify R9 as C1-C8 alkyl
+- describe alternative R9 as C6-C14 aryl or 5- to 12-membered heteroaryl
+- specify R9 as -(L1)nC(═O)Rb
+- describe alternative compounds of Formula I, Formula Ia, and/or Formula Ib
+- provide additional embodiments of compounds of Formula I, Formula Ia, and/or Formula Ib
+- define TLX modulators
+- provide compound structure according to Formula II
+- provide compound structure according to Formula IIb
+- provide compound structure according to Formula IIc
+- specify R¹, R², R³, R⁴, R⁵, R⁶, R⁷, and R⁸
+- specify R^(a), R^(b), R^(c), R^(d), and R^(e)
+- specify L¹
+- specify R¹⁰
+- provide alternative compound structures
+- specify R10
+- specify R1, R2, R3, R4, R5, R6, R7, and R8
+- provide additional embodiments of compounds
+- define substituted
+- provide examples of suitable monovalent substituents
+- provide examples of Rα
+- provide examples of suitable monovalent substituents on Rα
+- specify divalent substituents on a saturated carbon atom of Rα
+- provide additional definitions
+- conclude TLX modulators section
+- define divalent substituents
+- list examples of divalent substituents
+- define substituents on alkyl group of Rγ
+- list examples of substituents on alkyl group of Rγ
+- define substituents on substitutable nitrogen
+- list examples of substituents on substitutable nitrogen
+- define tautomer
+- explain tautomerism
+- define stereoisomer
+- explain stereoisomers
+- define positional isomers
+- define stereochemically pure
+- explain stereochemically pure composition
+- introduce TLX modulators
+- define IC50
+
+### III. PHARMACEUTICAL COMPOSITIONS AND ADMINISTRATION OF TLX MODULATORS
+
+- define pharmaceutical composition
+- describe preparation methods
+- list excipients for tablets
+- describe coating techniques
+- formulate for oral administration
+- list forms for oral administration
+- describe composition for topical administration
+- describe composition for injectable administration
+- formulate with polymer for subcutaneous delivery
+- describe aqueous suspensions
+- list suspending agents
+- list dispersing agents
+- list preservatives
+- formulate oil-in-water emulsions
+- list emulsifying agents
+- describe use of hybrid molecules
+- describe physical techniques for delivery
+- combine with additional active agents
+- list additional active agents for neurological disorders
+- list additional active agents for Alzheimer's disease
+- describe Aβ-targeted therapies
+- describe ApoE-targeted therapies
+
+### IV. METHODS FOR MODULATING TLX AND TREATING CONDITIONS ASSOCIATED WITH NUCLEAR RECEPTOR TLX
+
+- modulate nuclear receptor TLX
+- describe TLX agonist activity
+- quantify TLX modulation
+- promote neurogenesis
+- quantify neurogenesis promotion
+- treat disease or condition associated with nuclear receptor TLX
+- list diseases or conditions associated with nuclear receptor TLX
+- administer TLX modulator
+- describe dosage ranges
+- describe dosing intervals
+- monitor subject response
+- adjust dosage based on response
+- administer with additional therapeutically active agents
+- list additional therapeutically active agents
+- describe combination therapy
+- administer in chronic fashion
+- describe treatment regimens
+- describe duration of treatment
+- describe frequency of administration
+- describe route of administration
+
+### V. EXAMPLES
+
+- introduce example 1
+- describe general procedures for preparing compounds 1-4
+- outline step 1: reductive alkylation
+- outline step 2: boc deprotection
+- outline step 3: coupling reaction
+- prepare (R)-(4-benzyl-3-methylpiperazin-1-yl)(2-(isopentylamino)
+- prepare (S)-(4-benzyl-3-methylpiperazin-1-yl)(2-(isopentylamino)
+- prepare (R)-(4-benzyl-2-methylpiperazin-1-yl)(2-(isopentylamino)
+- prepare (S)-(4-benzyl-2-methylpiperazin-1-yl)(2-(isopentylamino)
+- introduce example 2
+- prepare 2-((2R,6R)-1-benzyl-6-methyl-4-phenylpiperazin-2
+- outline steps 1-4: N4-Nosylation
+- outline step 1: nosylation
+- outline step 2: reduction
+- outline step 3: alkylation
+- outline step 4: deprotection
+- outline steps 5-8: N1-Benzylation, N4-Phenylation
+- outline step 5: benzylation
+- outline step 6: deprotection
+- outline step 7: phenylation
+- outline step 8: hydrolysis
+- introduce example 3
+- describe scaffold family
+- outline goals of current studies
+- describe piperazine scaffold family
+- outline synthetic sequences
+- describe target library
+- introduce examples
+- describe N-capping reactions
+- detail reductive methylation
+- detail acetylation and benzoylation
+- detail N-mesylation
+- detail benzylation
+- detail N-phenylation
+- detail Alloc protection
+- describe parallel platform compatible procedures
+- formulate synthetic sequences
+- describe workflow protocol
+- provide example of complete sequence
+- detail block operations
+- describe byproduct removal and solvent switching
+- provide example of detailed synthetic workflow
+- describe production of library compounds
+- provide NMR and HRMS data for example compounds
+- provide NMR and HRMS data for additional compounds
+- provide NMR and HRMS data for more compounds
+- provide final HRMS data
+- describe compound 7 {7,1}
+- describe compound 7 {1,2}
+- describe compound 7 {2,2}
+- describe compound 7 {3,2}
+- describe compound 7 {4,2}
+- describe compound 7 {5,2}
+- describe compound 7 {6,2}
+- describe compound 7 {7,2}
+- describe compound 7 {1,3}
+- describe compound 7 {2,3}
+- describe compound 7 {3,3}
+- describe compound 7 {4,3}
+- describe compound 7 {5,3}
+- describe compound 7 {6,3}
+- describe compound 7 {7,3}
+- describe compound 7 {1,4}
+- describe compound 7 {2,4}
+- describe compound 7 {3,4}
+- describe compound 7 {4,4}
+- describe compound 7 {5,4}
+- describe compound 7 {6,4}
+- describe compound 7 {7,4}
+- provide HRMS data for compound 7 {7,4}
+- describe compound 7 {1,5}
+- describe compound 7 {2,5}
+- describe compound 7 {3,5}
+- describe compound 7 {4,5}
+- describe compound 7 {5,5}
+- describe compound 7 {6,5}
+- describe compound 7 {7,5}
+- describe compound 7 {1,6}
+- describe compound 7 {2,6}
+- describe compound 7 {3,6}
+- describe compound 7 {4,6}
+- describe compound 7 {5,6}
+- describe compound 7 {6,6}
+- describe compound 7 {7,6}
+- describe compound 7 {1,7}
+- describe compound 7 {2,7}
+- describe compound 7 {3,7}
+- describe compound 7 {4,7}
+- describe compound 7 {5,7}
+- describe compound 7 {6,7}
+- describe compound {2,1}
+- introduce examples of TLX agonists
+- describe ALPHA screen assay for TLX-coactivator binding
+- provide data for compounds 2-10
+- describe in vivo neurogenesis studies in animals
+- detail small molecule oral gavage delivery and CldU injections
+- describe immunohistochemistry and confocal microscopy
+- quantify and characterize proliferating cell types
+- describe statistical analysis
+- show results of TLX agonist administration on cell proliferation
+- describe study of TLX agonist activity in human brain organoids
+- generate brain organoids using iPSCs
+- treat organoids with reference compound 29 and test compounds
+- examine expression of NSC genes and immature neuron genes
+- show relative RNA expression level graphs
+- describe TLX agonists increasing number of proliferating NSCs in young mice
+- treat mice with test compounds and vehicle
+- administer CldU to label dividing cells
+- sacrifice mice and isolate brains
+- immunostain with antibodies against CldU, GFAP, and Sox2
+- determine percentage of dividing NSCs
+- describe TLX agonists increasing number of proliferating EdU+ NSCs
+- treat 5xFAD mice with test compounds and vehicle
+- administer EdU to label dividing cells
+- sacrifice mice and isolate brains
+- immunostain with antibodies against EdU, GFAP, and Sox2
+- determine total number of dividing EdU+ cells
+- describe TLX agonists increasing number of newborn neurons
+- treat mice with test compounds and vehicle
+- administer CldU to label dividing cells
+- sacrifice mice and isolate brains
+- immunostain with antibodies against CldU, doublecortin, and NeuN
+- determine total number of newborn CldU+ neurons
+- describe TLX agonist treatment associated with more distance travel in old mice
+
+### VI. EXEMPLARY EMBODIMENTS
+
+- define compound according to Formula II
+- specify R¹, R², R³, R⁴, R⁵, R⁶, and R⁷
+- specify R⁸
+- specify R⁹
+- specify R^(a), R^(b), R^(c), R^(d), and R^(e)
+- specify aryl, heteroaryl, cycloalkyl in R¹-R⁹
+- specify L¹
+- specify R¹⁰
+- define compound of embodiment 1 or 2 with structure Formula IIa
+- define compound of embodiment 1 or 2 with R⁸ and R¹-R⁷
+- define compound of embodiment 1 or 2 with R¹ and R²-R⁸
+- define compound of embodiment 1 or 2 with R² and R¹, R³-R⁸
+- define compound of embodiment 1 or 2 with R⁴, R⁵, R⁶, R⁷, and R⁸
+- define exemplary embodiments
+- specify compound according to Formula I
+- provide conditions for R⁹
+- specify R⁹ groups
+- define R^(a), R^(b), R^(c), R^(d), and R^(e)
+- define L¹
+- specify embodiment 17
+- specify embodiment 18
+- specify embodiment 19
+- specify embodiment 20
+- specify embodiment 21
+- specify embodiment 22
+- specify embodiment 23
+- specify embodiment 24
+- specify embodiment 25
+- specify embodiment 26
+- specify embodiment 27
+- specify embodiment 28
+- specify embodiment 29
+- specify embodiment 30
+- specify pharmaceutical composition and method claims
+

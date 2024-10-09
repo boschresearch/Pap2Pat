@@ -1,0 +1,399 @@
+{
+    "id": "https://semopenalex.org/work/W2138449233",
+    "authors": [
+        "Kim L. Boyer",
+        "Quan Wang",
+        "Xinchi Zhang"
+    ],
+    "title": "Occupancy distribution estimation for smart light delivery with perturbation-modulated light sensing",
+    "date": "2014-10-14",
+    "abstract": "The advent of modern light-emitting diode (LED) techniques enables us to develop novel lighting systems with numerous previously unavailable features. Specifically, by using the fixtures for both illumination and to interrogate the space, source-to-sensor communication becomes possible at very low cost. In this paper, we present a novel framework to estimate the occupancy distribution in an indoor space using color-controllable LED fixtures (the same fixtures providing the illumination, simultaneously) and sparsely distributed non-imaging color sensors. By modulating randomly generated perturbation patterns onto the drive signals of the LED fixtures and measuring the changes in the color sensor responses, we are able to recover a light transport model for the room. Two approaches are proposed to estimate the spatial distribution of the occupancy, based on a light blockage model and a light reflection model, respectively. These two approaches, which can be combined, can faithfully reveal the occupancy scenario of the indoor space, while preserving the privacy of its occupants. An occupancy-sensitive lighting system can be designed based on this technique.",
+    "sections": [
+        {
+            "title": "Background",
+            "paragraphs": [
+                "As we move from incandescent bulbs to fluorescent bulbs, and on to modern LED fixtures, lighting solutions are becoming more and more energy efficient. A new direction in lighting research is to develop smart lighting systems -lighting systems that can \"think\" and deliver the right light where and when it is needed. Most such lighting systems have a set of sensors to capture the occupancy information in the space. With knowledge of the room's spatial occupancy distribution in (near) real time, a lighting system can adjust the spatial and spectral distribution to reduce energy consumption and enhance human comfort, well-being, and productivity.",
+                "In smart lighting systems, the sensors being used can be generally divided into two categories: imaging sensors and non-imaging sensors. The computer vision community usually employs imaging sensors such as cameras and depth sensors to capture images, videos, and depth maps of the scene. An image, whether gray-level, RGB, or depth, has http://www.journalofsolidstatelighting.com/content/1/1/17 a 2D structure, which describes the spatial distribution of objects or people in the space. A great deal of high-level information can be inferred from such data with computer vision and pattern recognition methods, which enable various applications such as object detection and tracking, event detection, and traffic surveillance.",
+                "However, in most lighting applications, human-readable high-resolution images are not only unnecessary, but also undesirable, as they present an information security concern. For example, when monitoring the occupancy of a room for the task of intelligent lighting control, we only need a very rough estimation about which part of the room is occupied. Using cameras will raise the concern of privacy -people just feel uncomfortable being monitored by a camera. If the security of the camera network is compromised, there is an even greater risk to privacy.",
+                "To ameliorate these concerns, non-imaging sensors offer a good alternative to cameras. In this paper, we propose using low-cost color sensors that are based on photodiodes and color filters. The output of a non-imaging color sensor is usually only a few numeric values measuring the local luminous flux of different colors, rather than a focused image. These sensors present no privacy concerns. However, due to the very limited information that can be obtained from such color sensors, it is very difficult to infer high-level information from the sensor readings. Estimating the 2D or 3D occupancy distribution in the space from a limited number of 1D sensor outputs is an ill-posed and extremely challenging problem.",
+                "Fortunately, the emergence of modern LEDs unlocks a new direction for us. Modern LED fixtures are controllable over each color channel, and allow rapidly changing input to drive these channels. The changes in the light can be sensed by photodiodes, which makes source-to-sensor communication possible, giving birth to new techniques such as visible light communication (VLC), or sometimes called light fidelity (Li-Fi) [1][2][3][4][5][6]. The idea of using visible light for both illumination and communication at the same time with the same fixture is often referred to as \"dual-use lighting\". In our work, we measure the color sensor output under different lighting conditions. With repeated measurements, we can construct a model to describe the spatial transport of the light. Such a model captures rich information about the 3D space, and can be used to roughly estimate the occupancy distribution. With the estimated occupancy distribution, we can produce the lighting condition that best suits this occupancy scenario, such that we can improve energy efficiency, enhance human comfort, wellbeing, and productivity, and even elongate the lifespan of the LEDs and delay fixture replacement.",
+                "The remainder of this paper is organized as follows: In Section \"Related work\", we review previous work related to our proposed technique. In Section \"Testbed setup\", we introduce our testbed for experiments. In Section \"Recovering the light transport matrix\", we describe how we solve for the light transport matrix in a lighting system. In Section \"Perturbation-modulated lighting\", we introduce the perturbation-modulated lighting method, which is necessary for light transport sensing. Section \"3D scene reconstruction with light blockage model\" and Section \"Floor-plane occupancy mapping with light reflection model\" introduce the two approaches that we use for occupancy distribution estimation, based on wall-mounted sensors and ceiling-mounted sensors, respectively. Section \"Results\" reports the experimental results. Discussions are provided in Section \"Discussions\", and Section \"Conclusion\" is the final conclusion. http://www.journalofsolidstatelighting.com/content/1/1/17"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Related work",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Occupancy-based lighting",
+                    "paragraphs": [
+                        "A number of smart lighting systems have been designed to adjust the lighting condition according to the occupancy in the space, and there are various options for the occupancy sensor, from imaging sensors to non-imaging sensors. For example, in 1987, Rea and Jaekel used video systems, infrared, ultrasonic, and electric eyes to assess energy efficiency in lighting a staff room (6.0\u00d78.8 m) [7]. In 1992, an imaging lighting control system called ImCon was proposed, which used a charge-coupled device (CCD) camera to monitor the occupancy in a test room (5.6 \u00d7 5.6 m) and control four fluorescent fixtures [8]. In 2009, Delaney et al. proposed using a network of passive infrared (PIR) sensors and light sensors to evaluate energy efficiency in lighting systems [9]. In 2010, Agarwal et al. proposed a smart building automation solution using a combination of PIR sensors and magnetic reed switch door sensors [10]. Recently, Aldrich et al. developed a lighting control application using networks of PIR sensors [11]. In 2010, Caicedo et al. looked into the problem of how to optimize the dimming levels of LED fixtures based on localized occupancy information [12]. A review paper by Guo et al. has comprehensively discussed different sensors that have been used in occupancy-based lighting control systems, including PIR sensors, ultrasonic sensors, audible sound sensors, microwave sensors, light barriers, video cameras, biometric systems, and pressure sensors [13]. Another review paper by Hassan et al. also discussed several occupancy detection techniques for lighting control applications, including PIR sensors, ultrasonic sensors, radio frequency identification (RFID), and cameras [14].",
+                        "However, to the best of our knowledge, no prior work exists using non-imaging color sensors that are based on photodiodes and color filters, together with modulated illumination from the existing fixtures simultaneously providing light for the space, to implement occupancy-sensitive lighting control systems. Such color sensors can be built at very low cost. And since one color sensor only outputs a few numeric values, there is no privacy concern of using color sensors. We provide a comparison between non-imaging color sensors and imaging sensors such as webcams or Kinect in Figure 1. Comparisons between PIR, ultrasonic, microwave, video, and several other sensors can be found in [13].",
+                        "The major difference between color sensors and other non-imaging occupancy sensors is that color sensors use visible light that is delivered by the fixtures, while PIR sensors use infrared, and ultrasonic sensors and audible sound sensors use sound waves. Also, a PIR sensor detects the infrared radiation emitted from an object, so it works well for detecting people or animals. The gradient of the change in the infrared field can be used to detect motions of people or animals, thus enabling applications such as burglar alarms and automatically-activated lighting systems. The color-sensor-based occupancy sensing technique proposed in this paper detects the change in the visible light field, which is often caused by blockage of light paths, or by changing reflection surfaces as people (etc.) move around the space. Thus, any object that affects the visible light field could be detected, rather than only objects that emit infrared radiation. Ultrasound sensors are active devices that emit ultrasonic sound waves and use the time interval between emitting and echoing to calculate the distance to objects. In contrast, color sensors cannot measure the distance, and they are passive sensors, although we actively add perturbations to the light from the existing fixtures. Ultrasonic sensors often suffer from false alarms while PIR sensors have more misses [13]. Audible sound sensors are seldom used in smart lighting http://www.journalofsolidstatelighting.com/content/1/1/17 systems because they are ill-suited to the problem. Environmental noise can cause a very high false alarm rate, and quiet occupants can cause a very high miss rate."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Light transport model",
+                    "paragraphs": [
+                        "In many multi-source multi-sensor systems such as sonar, ultrasound, and scanning electron microscopes, the process of the system follows an affine relationship:",
+                        "where vector x is the input signals to all sources, and vector y is the measurements from all sensors. The matrix A can be understood as the coefficients of the process, and vector b is the systematic bias. Specifically, the computer graphics community is very interested in visible light source and camera sensor systems, where it is often assumed that b = 0, and the matrix A is often referred to as the light transport matrix. The light transport matrix is an effective tool for relighting real-world scenes (illuminate the scene with a virtual pattern as a postprocess) [15][16][17][18][19], and can also be used to interchange the lights and cameras in a scene [20,21], or be used for radiometric compensation [22].",
+                        "In our smart lighting system, the vector x is the input to all LED fixtures, and the vector y is the measurements from all non-imaging color sensors. The lighting system may appear to be similar to a structured light system on first glance. However, we point out that there are several significant differences between the smart lighting problem as posed here and the structured light technique, which is often used to build models for computer graphics. First, in structured light, the source is usually a focused, high-resolution projector, projecting specific (sometimes complicated, but precise) structured light patterns onto the scene, and the sensor is usually a high-resolution camera [16,17,20]. However, in a smart lighting system, we usually only have a few fixtures and a few sensors due to the cost of hardware and installation. And the light itself is not structured at all, beyond the ordinary http://www.journalofsolidstatelighting.com/content/1/1/17 placement of fixtures in, for example, the ceiling. Thus, the light transport matrix A as used in, for example, computer graphics is usually very large, while in the smart lighting problem it is much smaller, and contains far less information about the space.",
+                        "Second, in structured light, different pixels of the projector usually illuminate different non-overlapping regions of the scene. In contrast, in a smart lighting system, any fixture could conceivably illuminate the entire space, although different fixtures installed at different locations will have different luminous intensity distributions over the space. Besides, in structured light, different pixels in the image captured by the camera correspond to different non-overlapping regions of the scene. But a color sensor receives luminous flux from a very wide field of view, although with a spatial distribution function.",
+                        "Further, unlike in computer graphics where people usually assume b = 0, in a smart lighting system, the vector b is usually non-zero because it represents the sensor response to ambient light, such as sunlight or other external (uncontrolled) light sources."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "3D reconstruction",
+                    "paragraphs": [
+                        "Based on the estimated light transport matrix A, in this paper we propose two approaches to estimate the occupancy distribution: the light blockage model (Section \"3D scene reconstruction with light blockage model\") and the light reflection model (Section \"Floor-plane occupancy mapping with light reflection model\"). The light blockage model is based on wall-mounted sensors, and results in 3D volumes. The light reflection model is based on ceiling-mounted sensors, and results in 2D maps (projections onto the floor plane).",
+                        "The first approach, 3D scene reconstruction with a light blockage model, is closely related to existing work in the medical imaging, computer vision, robotics, and wireless sensor network literature. In medical imaging, techniques for 3D volume data reconstruction from projections include Fourier Slice Theorem based methods [23,24], Algebraic Reconstruction Techniques (ART) [25], statistical methods [26], and total variation based methods [27]. In computer vision, people are interested in estimating the visual hull of a 3D object using 2D images [28,29]. In robotics, an interesting problem is obstacle/object mapping -computing a spatial map to represent the obstacles or objects in the environment [30]. In wireless sensor networks, a related technique is Radio Tomographic Imaging (RTI), which uses the attenuation in received signal strength (RSS) caused by physical objects to create an image [31].",
+                        "Reconstructing the 3D scene in a fixture-sensor smart lighting system is a very different problem from all the above mentioned work. In medical imaging (for example, computed tomography) multiple radiation sources (X-rays, for example) and sensors are typically rotated around the object to create numerous lines, and 3D images can be acquired slice by slice. In robotics, robots can move in the environment to sense at different locations. However, in a smart lighting system, all fixtures and sensors are firmly installed in the room and should not be moved during operation. Besides, the number of sensors is usually very small, unlike the visual hull problem in computer vision [28,29], where an image has many pixels. Further, as we have discussed, any fixture illuminates the entire space, albeit non-uniformly, and any sensor receives light from a wide field of view. Thus, the spatial information that is contained in the small light transport matrix in our problem is very limited. The 3D reconstruction from such little information is http://www.journalofsolidstatelighting.com/content/1/1/17 extremely ill-posed. We should expect very rough low-resolution reconstruction results in our problem. However, that's all we need. Since our goal is to control the lighting condition in the room, rough reconstruction suffices for this task."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Testbed setup",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "The smart space testbed",
+                            "paragraphs": [
+                                "To implement and validate our ideas, we have established a Smart Space Testbed (SST). This room has one window and two doors, and is 85.5 inches wide, 135.0 inches long, and 86.4 inches high (Figure 2a). This testbed is equipped with twelve color-controllable LED fixtures mounted in the ceiling (Figure 2c). For each fixture, we can independently specify the intensity of three color channels: red, green, and blue. The input to each channel is scaled to lie in the range [0, 1]. We use twelve Colorbug wireless optical light sensors by SeaChanger (Figure 2b) as the color sensors in these experiments. These sensors can be installed either on the walls (Figure 2d) or on the ceiling. The key component of this sensor is an array of color-filtered photodiodes. Each color sensor has four output channels: red, green, blue and white (unfiltered). We use the Robot Raconteur software [32] for communication: The software connects to the color sensors with Wi-Fi, and sends input signals to the fixtures via Bluetooth. This same testbed has been used for a number of other investigations, including lighting control algorithms [33][34][35][36] and visual tracking systems [37]."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "The occupancy-sensitive lighting system",
+                                    "paragraphs": [
+                                        "The final goal of our system is to achieve occupancy-sensitive smart lighting. In other words, when the occupancy distribution in the room changes, the system should produce the lighting condition that best suits this occupancy scenario to maximize comfort, wellbeing, and productivity, and minimize energy consumption. In most cases, by \"occupancy distribution\", we mean the number and spatial locations of people in the room. For this purpose, there should be a control strategy module and an occupancy sensing module, and they work in two alternating stages: the sensing stage and the adjustment stage (Figure 3). In the sensing stage, the occupancy sensing module collects the sensor readings to estimate the occupancy distribution; in the adjustment stage, the control strategy module decides what lighting condition should be produced based on the estimated occupancy distribution. The design of control strategies is beyond the scope of this paper. Here we focus on the occupancy sensing module."
+                                    ],
+                                    "subsections": [
+                                        {
+                                            "title": "Limitations of current testbed",
+                                            "paragraphs": [
+                                                "The twelve LED fixtures in the smart space are 7 LED Downlight Round RGB (Vivia 7DR3-RGB) products from Renaissance Lighting, and these fixtures exhibit approximately 0.3 seconds delay between the input signals being specified and the desired lighting condition being produced. The current Colorbug sensors are commercial products, which are easy to install, but they are expensive, slow, and not customizable. Each color measurement from the Colorbug sensors takes a few seconds. Thus, due to the very limited performance of our current fixtures and sensors, we are not able to fully implement a real-time occupancy-sensitive lighting system. However, we do emphasize that ultrafast LEDs and photodiodes have been used for visible light communication [38][39][40][41], and these LEDs and photodiodes can also be used for occupancy sensing. The experiments in this paper, using our current fixtures and sensors, suffice as proof of concept and validation of methods."
+                                            ],
+                                            "subsections": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Recovering the light transport matrix",
+                                    "paragraphs": [
+                                        "Since the current configuration of our testbed has twelve LED fixtures with three channels each, the input to the system is an m 1 = 36 dimensional signal x. Because we have twelve color sensors, each with four channels, the measurement is an m 2 = 48 dimensional signal y. We have performed experiments to confirm that the affine relationship in Eq. ( 1) holds for our fixture-sensor system, where the matrix A is called the light transport matrix, and the vector b is the sensor response to the ambient light. If the affine relationship does not hold for certain fixtures or sensors, we can usually calibrate the fixtures or sensors to linearize the responses and make Eq. ( 1) hold.",
+                                        "The light transport matrix A is a very good signature of the occupancy distribution in the space, since it is independent of the fixture input or the ambient light. Matrix A is only dependent on the light transport of the scene, such as diffuse reflection, specular reflection, interreflection, and refraction [22]. Thus, by analyzing matrix A, we can extract spatial information about the scene."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Light transport in projector-camera systems",
+                            "paragraphs": [
+                                "Efficient acquisition methods of the light transport matrix A have been extensively studied by the computer graphics community. This is because due to the high dimensionality of vector x and vector y, the light transport matrix A is usually very large in a projectorcamera system. Thus the process of taking sufficient photos to recover A would be very slow. Efficient light transport sensing methods based on compressed sensing techniques have been studied by Sen et al. [21] and Peers et al. [18]. Wang et al. proposed a kernel Nystr\u00f6m method to efficiently reconstruct a low rank approximation of matrix A. O'Toole et al. presented a low rank approximation solution using an optical implementation of Arnoldi iteration: project the photo captured by the camera to the scene iteratively [19]."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "Light transport in fixture-sensor systems",
+                                    "paragraphs": [
+                                        "The efficient methods mentioned above are interesting. However, a smart lighting system is very different from a projector-camera system. We cannot apply an arbitrary lighting condition onto the space to acquire light transport information: a smart lighting system is built for a space where people live and work, and we must ensure their comfort. The good news is that, we can still change the lighting condition, but with very small changes that are imperceptible to the room's occupants. Also, since a smart lighting system only has a few fixtures and a few sensors, the light transport matrix A is much smaller than in a projector-camera system. Since modern LEDs and photodiodes can operate very fast (so fast that they can be used for communication at megabit per second [38] or even gigabit per second [39][40][41] data rates), sufficient measurements can be acquired within a very short time period, during which we can assume both the occupancy distribution and the ambient light conditions are unchanged. We refer to this as the quasi-static assumption.",
+                                        "Eliminating b. To eliminate the ambient light response from Eq. ( 1), we proceed as follows. We first set the LED input to a reference level x 0 , and the output of the sensors is",
+                                        "( 2 ) http://www.journalofsolidstatelighting.com/content/1/1/17",
+                                        "Now if we add a small perturbation \u03b4x to the input, the new output becomes",
+                                        "By simple subtraction, we can eliminate b, and get",
+                                        "In our smart lighting system, we call x 0 the base light, which is determined by the control strategy module. We call \u03b4x a perturbation, which will be discussed in Section \"Perturbation-modulated lighting\". Depending on the desired lighting conditions and possible changes in the room occupancy, x 0 may be adjusted over time -but not during sensing."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Solve for A.",
+                    "paragraphs": [
+                        "If we can apply different perturbations to the fixtures very fast, and also read the sensor readings very fast, we can make many measurements within a very short time period, during which we can assume both matrix A and vector b do not change. Thus, if we measure y 0 once, and measure y 0 + \u03b4y multiple times with different \u03b4x, we get a linear system to solve for A. In other words, we perturb the input to the LED fixtures x 0 with different m 1 -dimensional signals \u03b4x 1 , \u03b4x 2 , . . . , \u03b4x n , and measure the m 2dimensional changes of the sensor readings \u03b4y 1 , \u03b4y 2 , . . . , \u03b4y n . Let X = [\u03b4x 1 , \u03b4x 2 , . . . , \u03b4x n ] and Y = \u03b4y 1 , \u03b4y 2 , . . . , \u03b4y n , where X \u2208 R m 1 \u00d7n and Y \u2208 R m 2 \u00d7n . Now the problem becomes a linear system Y = AX, which is very similar to the light transport problem in computer graphics.",
+                        "With modern LEDs and rapid-response color sensors, we can usually make many measurements in a short time period to ensure n > m 1 . Thus this overdetermined linear system can be simply solved by the Moore-Penrose pseudo-inverse:",
+                        "which corresponds to minimizing the Frobenius norm of the error:",
+                        "If under some circumstances n is smaller than m 1 , then Y = AX is an underdetermined system. Then other methods such as recursive least squares (RLS) [35,42], low rank approximation, or sparse approximation [43] can be used. In our problem, we can always make enough measurements to ensure n > m 1 and use the simple pseudo-inverse method."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Perturbation modulation",
+                            "paragraphs": [
+                                "As introduced in Section \"The occupancy-sensitive lighting system\", the smart lighting system works with two alternating stages: sensing and adjustment. During the sensing stage, perturbations \u03b4x are added to the base light x 0 , and \u03b4y is measured. Then in the adjustment stage, matrix A is computed, the occupancy distribution is estimated, and the control strategy module gradually changes the base light to a new one (if necessary), which is determined according to the estimated occupancy distribution. In such a system, the base light changes slowly over a large range, while the perturbation changes quickly, and ideally imperceptibly, within a small range (Figure 4). "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Requirements for perturbation patterns",
+                            "paragraphs": [
+                                "To accurately recover the light transport matrix while also ensuring the comfort of the occupants of the space, we specify three requirements on the perturbation patterns:",
+                                "1. The perturbation patterns must be rich enough in variation to capture sufficient information from the scene. 2. The magnitude of the perturbation must be small enough not to bother humans in the space. 3. The magnitude of the perturbation must be large enough to be accurately measured by the color sensors.",
+                                "To meet the first requirement, randomly generated patterns usually suffice [44]. If we define the magnitude of the perturbation patterns as the maximum deviation from the base light \u03c1 = max i ||\u03b4x i || \u221e , then the choice of \u03c1 is a trade-off. We have performed sensitivity analyses, and listed some of the results in Figures 5 and6. To study the sensor sensitivity, we add a sinusoid of a specific magnitude to one LED on one color channel, and we record the response of one sensor in the same color channel. Figure 5 shows the results of using the green channel. As we can see, based on a range of [0, 1], when \u03c1 is as small as 0.01, the sensor response is noticeably distorted; and as \u03c1 gets larger, the sensor response becomes well-behaved (more linear). In Figure 6, we show four images of the room taken by a camera at different times during the perturbation interval for each \u03c1. We have observed that when \u03c1 is large, the change of lighting can be very annoying a . In our work, we set \u03c1 = 0.025 such that perturbations are not easily noticed, but can be accurately sensed by our current color sensors. Improved sensors will allow a larger range of acceptable \u03c1 values."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Perturbation ordering",
+                            "paragraphs": [
+                                "Now assume that we have randomly generated n perturbation patterns \u03b4x 1 , \u03b4x 2 , . . . , \u03b4x n with magnitude \u03c1. In the sensing stage, we apply these patterns to measure the changes in sensor output, and recover the light transport matrix A. Here one question arises: In what order should we arrange these perturbation patterns to maximize human comfort?",
+                                "Studies on human visual systems have found thresholds needed to see flicker of different frequencies [45,46]. Intuitively, we would say that we wish the light to change gradually, thus less noticeably. For gradual changes, we wish the neighboring perturbation patterns to be as similar as possible. Let (i 1 , i 2 , . . . , i n ) be a permutation of (1, 2, . . . , n). Then \u03b4x i 1 , \u03b4x i 2 , . . . , \u03b4x i n is a re-ordering of the patterns (\u03b4x 1 , \u03b4x 2 , . . . , \u03b4x n ). We naturally come to the following optimization problem:",
+                                "where || \u2022 || is a chosen vector norm, usually the 2 norm. The optimization problem in Eq. ( 7) has a very straightforward graph-theoretical interpretation. We create a weighted complete undirected graph G with n + 1 vertices, where each perturbation pattern \u03b4x i is a vertex, plus one vertex corresponding to the base light. The weight of an edge between two vertices is just the norm of the difference between the two corresponding perturbation patterns, where the perturbation pattern corresponding to the base light is all zeros. Finding the solution to problem Eq. ( 7) is equivalent to finding the shortest Hamiltonian cycle of G, or solving the famous NP-hard Travelling Salesman Problem (TSP) that has been intensely studied [47]. Thus, any existing TSP algorithm (e.g. [48][49][50][51]) can be used to solve Eq. ( 7). In our work, we use a very simple genetic algorithm [52], where the mutation of a genome (a Hamiltonian cycle) is simply cross-linking two randomly selected non-incident edges, as shown in Figure 7."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "3D scene reconstruction with light blockage model",
+                                    "paragraphs": [
+                                        "In Section \"Light transport in fixture-sensor systems\", we discussed how to obtain the light transport matrix in a fixture-sensor system. In this section, we introduce the first approach for estimating the occupancy distribution using the light transport matrix A. This approach requires the color sensors to be installed on the walls of the room. In Section \"Floor-plane occupancy mapping with light reflection model\" we will introduce a second approach, which can use ceiling-mounted color sensors. "
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Light blockage model",
+                            "paragraphs": [
+                                "Let the light transport matrix of an empty room b be A 0 . At run time, the light transport matrix is A, and we call E = A 0 -A the difference matrix. Matrix E is also m 2 \u00d7 m 1 , and each entry of E corresponds to one fixture channel and one sensor channel. If one entry of matrix E has a large positive value, it means that the total flux is significantly attenuated, that is, many of the light paths from the corresponding fixture to the corresponding sensor are very likely blocked. With all sensors mounted on the walls, from any given fixture to any given sensor, there are numerous diffuse reflection paths and one direct path, which is the line segment connecting the fixture and the sensor (Figure 8a). Obviously, the direct path is the dominating path, if one exists. Thus, a large entry of E may most likely imply the corresponding direct path has been blocked due to the change of occupancy distribution."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "Aggregation of E",
+                                    "paragraphs": [
+                                        "Though each entry of E corresponds to one direct path, the opposite is not true, since each LED fixture or sensor has multiple channels. Assume the number of LED fixtures is N L , and the number of sensors is N S . We aggregate the m 1 \u00d7 m 2 matrix E to an N S \u00d7 N L matrix \u00ca, such that the mapping from the entries of \u00ca to all direct paths is a bijection. In our experiments, m 1 = 3N L = 36 and m 2 = 4N S = 48. The aggregation is performed on each fixture-sensor pair as a weighted summation over three color channels: red, green, and blue. This can be formulated as: where the weights w R , w G , and w B can be used to compensate for the different sensitivities of the sensors on different color channels."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Reconstruction algorithm",
+                            "paragraphs": [
+                                "After aggregation, if \u00ca has a large entry at (i, j), then we believe the direct path from fixture j to sensor i is very likely blocked, though we are still not sure where the blockage happens along this path. Making the reasonable assumption that any occupants will have large cross sections relative to the thickness of a light path, any position that is close to this direct path is also likely being occupied. If two or more such direct paths intersect or approximately intersect in the 3D space, then it is most likely that the blockage happens at their intersection, as shown in Figure 8b.",
+                                "Based on this assumption, we now describe our 3D reconstruction algorithm. For any point in the 3D space, we estimate the confidence that this point is being occupied. Let P be an arbitrary point in the 3D space, and d i,j (P) be the point-to-line distance from point P to the direct path from fixture j to sensor i. The confidence of point P being occupied is C(P), which is computed by:",
+                                "where G(\u2022, \u2022) is the Gaussian kernel:",
+                                "The denominator in Eq. ( 9) is a normalization term for the non-uniform spatial distribution of the LED fixtures and the sensors. The parameter \u03c3 is a measure of the continuity and smoothness of the occupancy, and should be related to the physical size of the occupants we expect. For simplicity, we assume \u03c3 is isotropic. If we discretize the 3D space and evaluate Eq. ( 9) at every position P (x, y, z), we can render a 3D volume V (x, y, z) = C (P (x, y, z)) of the scene, which can then be visualized."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Connection with Radon transform",
+                            "paragraphs": [
+                                "Our 3D reconstruction method is partially inspired by the well-known Radon transform, or more precisely, the inverse Radon transform, which has been successfully applied to the reconstruction of computed tomography (CT), magnetic resonance imaging (MRI), positron emission tomography (PET), single photon emission computer tomography (SPECT), and even radar astronomy [53,54]. Given a continuous function f (x, y) on R 2 , its Radon transform Rf is a function defined on each straight line L = {(x(t), y(t))} in R 2 :",
+                                "Since a straight line can be uniquely defined by two parameters, Rf is also a function on R 2 . The original function f can be reconstructed by the inverse Radon transform, which comprises a ramp filter and a back-projection. An example is shown in Figure 9. In our reconstruction algorithm Eq. ( 9), the denominator corresponds to the ramp filter, and the summation over all direct light paths corresponds to the back-projection. As discussed in Section \"3D reconstruction\", unlike a tomography problem where the sampled lines are very dense, in our smart lighting problem, with only twelve LED fixtures and twelve sensors that are fixed during the measurements, the direct light paths are very sparse (Figure 10), which makes reconstruction much more challenging than other problems that could be solved by a standard Radon transform. Thus, we can only expect very rough reconstruction results (but that's all we need or want), and a simple algorithm like Eq. ( 9) should suffice."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "Floor-plane occupancy mapping with light reflection model",
+                                    "paragraphs": [
+                                        "The 3D scene reconstruction approach introduced in Section \"3D scene reconstruction with light blockage model\" is based on a light blockage model, thus requiring that all sensors be installed such that direct light paths exist for all fixture-sensor pairs, and are easily blocked by occupants. Practically speaking, this means the sensors are mounted on the walls. If the sensors are installed on the ceiling, there will be no direct light path from fixture to sensor. In this case, we only have reflection paths. With all sensors and fixtures in the same plane, we no longer have any spatial information about the z-axis direction (see Figure 2a for the spatial coordinate system of the testbed). In this section, we introduce our second occupancy distribution estimation approach, which models the light transport for ceiling-mounted sensors using geometrical optics and photometry analysis."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Photometry for fixtures and sensors",
+                            "paragraphs": [
+                                "Before we describe our light reflection model, we need to revisit our fixtures and sensors. What physical quantities should we use to describe the fixture input and the sensor output? In photometry, we use luminous intensity to measure the power emitted by a light source in a particular direction per unit solid angle. A numeric value read from a sensor is luminous flux, which measures the perceived power of incident light.",
+                                "For a light fixture, the luminous intensity is non-isotropic. For example, the polar luminous intensity distribution graph of our Vivia 7DR3-RGB fixture is provided in Figure 11. Let the luminous intensity in the normal direction be I max . Then in the direction with angle \u03b8 to the normal direction, the luminous intensity can be written as I max \u2022 q(\u03b8)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Light reflection model",
+                            "paragraphs": [
+                                "With the color sensors installed on the ceiling, what does a large entry in the aggregated difference matrix \u00ca (see Section \"Aggregation of E\") signify? It still means that the light paths from the corresponding fixture to the corresponding sensor are affected. Though these light paths are all diffuse reflection paths, we can still have a rough estimation of areas in the room that are more likely being occupied than other regions. For this purpose, we consider a very small area ds 1 on the floor plane and one fixture-sensor pair. As shown in Figure 12, the fixtures are illuminating the room downward, and the color sensors are \"looking\" downward. We assume that the sensing area of the color sensor is ds 2 , the angle of the light path from the fixture to ds 1 is \u03b8 1 , the angle of the light path from ds 1 to ds 2 is \u03b8 2 , the distance from the fixture to ds 1 is D 1 , and the distance from ds 1 to ds 2 is D 2 . We also assume that ds 1 is an ideal matte Lambertian surface with albedo \u03b1.",
+                                "First, we consider the luminous flux arriving at ds 1 from the fixture. The luminous intensity along the light path from the fixture to ds 1 is I max \u2022 q (\u03b8 1 ), and the solid angle c is ds 1 cos \u03b8 1 4\u03c0D 2"
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "1",
+                                    "paragraphs": [
+                                        ". Thus the luminous flux arriving at ds 1 is the product of the luminous intensity and the solid angle: ",
+                                        "Since the albedo of ds 1 is \u03b1, the luminous intensity of the reflected light from ds 1 in the normal direction is proportional to \u03b1 1 . For simplicity, we just use \u03b1 1 to denote the luminous intensity in the normal direction. Since ds 1 is a Lambertian surface, the luminance of the surface is isotropic, and the luminous intensity obeys Lambert's cosine law. Thus the luminous intensity of the reflected light along the light path from ds 1 to ds 2 is \u03b1 1 cos \u03b8 2 . The solid angle from ds 1 to ds 2 is ds 2 cos \u03b8 2 4\u03c0D 2"
+                                    ],
+                                    "subsections": []
+                                },
+                                {
+                                    "title": "2",
+                                    "paragraphs": [
+                                        ". Thus finally, the luminous flux arriving at ds 2 from the fixture and reflected by ds 1 is:",
+                                        "For all fixtures, I max and the function q(\u2022) are the same. For all sensors, ds 2 is the same. For different positions on the floor plane, we assume the albedo \u03b1 is constant, and use a ds 1 of the same area. Then 2 is a function of the position (of ds 1 ) on the floor plane:",
+                                        "where K = \u03b1I max ds 1 ds 2 16\u03c0 2 is a constant independent of position, and all fixture-sensor pairs share the same K value. \u03b8 1 , \u03b8 2 , D 1 and D 2 are all dependent on the position."
+                                    ],
+                                    "subsections": [
+                                        {
+                                            "title": "2D confidence map",
+                                            "paragraphs": [
+                                                "Intuitively, if there is a large entry in matrix \u00ca, then we can find the corresponding fixturesensor pair, and compute 2 at all positions on the floor using Eq. ( 14). Larger 2 values indicate regions more likely to be occupied.",
+                                                "Based on this intuition, we can pre-compute 2 at all positions for all fixture-sensor pairs offline. We call the pre-computed 2 at all positions the reflection kernel of the http://www.journalofsolidstatelighting.com/content/1/1/17 corresponding fixture-sensor pair. Two reflection kernels are displayed in Figure 13 as examples.",
+                                                "Let the reflection kernel for fixture j and sensor i be R i,j . Then a 2D confidence map can be simply computed as a weighted sum of all these reflection kernels:",
+                                                "Unlike the light blockage model in Section \"3D scene reconstruction with light blockage model\", where a 3D volume is reconstructed, here we can only estimate a 2D confidence map. In this confidence map, a pixel represents the confidence that the corresponding point on the 2D floor plane is being affected by occupants. It can be either affected by a person standing at that point, or affected by the shadow of a person. We can also modify Eq. ( 15) to:",
+                                                "such that the parameter \u03bb 1 \u2265 1 will encourage large entries in \u00ca to sharpen the resulting confidence map, and the normalization parameter \u03bb 2 \u2265 0 can ameliorate distortions in the resulting condifence map caused by the non-uniform spatial distribution of fixtures and sensors. Eq. ( 15) is a special case of Eq. ( 16), where \u03bb 1 = 1 and \u03bb 2 = 0."
+                                            ],
+                                            "subsections": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "3D reconstruction results with light blockage model",
+                    "paragraphs": [
+                        "To validate the first approach introduced in Section \"3D scene reconstruction with light blockage model\", we divide the smart room into six regions, and create nine occupancy scenarios by occupying one or two regions with people and furniture. We discretize the 3D space to voxels of size 1 \u00d7 1 \u00d7 1 inch 3 , and render 3D volumes of size 87 \u00d7 136 \u00d7 88.",
+                        "For the Gaussian kernel, we set \u03c3 = 20.0 inches. In the sensing stage, n = 40 perturbation patterns are used. The spatial coordinates of the twelve LED fixtures and the twelve color sensors are listed in Table 1, and can be visualized in Figure 10."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Reconstructed volumes",
+                    "paragraphs": [
+                        "In Figure 14 we show the results for scenarios where only one region is occupied, and in Figure 15 we show the results where two regions are occupied. It is interesting to see Figure 13 The reflection kernels of two fixture-sensor pairs. http://www.journalofsolidstatelighting.com/content/1/1/17 that although the precision of the reconstructed volume is very low, the reconstruction quality is good enough for the lighting control module to determine which part of the room is occupied, and what kind of light should be delivered. If better reconstruction quality is required, one simple solution is to increase the number of color sensors. This becomes part of the system design process for an operational smart space. However, since our goal is only roughly estimating the occupancy distribution such that we can decide what lighting condition should be produced, we do not need high-resolution and highquality 3D volumes (further discussed in Section \"The quality of the estimation\"). "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Complexity analysis and accelerations",
+                    "paragraphs": [
+                        "Assume the number of voxels in one volume is N P . The number of direct light paths is N L \u2022 N S . To render one volume, we have to evaluate Eq. ( 9) for N P voxels, and the number of operations is need to perform N P \u2022 N L \u2022 N S operations, but each operation is simply one multiplication and one addition. In this way, on the same machine, pre-computation takes about 18 seconds, but rendering each volume takes only 2 seconds. One trade-off is that such a hashing-based optimization uses much more memory. If each Gaussian kernel is stored as a 64-bit double-precision floating point number, then it requires about 1 GB memory to keep 150 million Gaussian kernels. To further accelerate the rendering to achieve realtime performance, either parallel computing on a GPU could be used, or the number of voxels could be reduced by downsampling."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Floor-plane confidence maps with light reflection model",
+                            "paragraphs": [
+                                "For the second approach introduced in Section \"Floor-plane occupancy mapping with light reflection model\", we place all color sensors on the ceiling. Each sensor is installed close to one LED fixture. The spatial coordinates of the fixtures and the sensors can be found in Table 1. Again, we create nine occupancy scenarios by occupying one or two regions with human and furniture, and discretize the 2D floor plane to pixels of size 1 \u00d7 1 inch 2 . The confidence maps computed with Eq. ( 15) for the nine occupancy scenarios are shown in Figures 16 and17. We can see that the resulting 2D confidence maps are basically correct when compared to the ground truth -we can see which regions in the room are being occupied. When compared with the results in Figures 14 and15, we find that the 3D scene reconstruction approach introduced in Section \"3D scene reconstruction with light blockage model\" produces better estimations than the light reflection model here. This is because in the light blockage model based approach, the color sensors are installed on the walls, thus the z-coordinate information is well captured. But when the sensors are installed on the ceiling at the same height with the fixtures, the z-coordinate information is completely lost. Without such important information, the quality of estimation results is expected to drop. http://www.journalofsolidstatelighting.com/content/1/1/17 Since Eq. ( 15) is only a weighted summation of pre-computed reflection kernels, and both N L and N S are small, generating a 2D confidence map is very fast."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Quantitative evaluation",
+                            "paragraphs": [
+                                "Due to the complexity of a real 3D scene, it is difficult to assess the reconstructed 3D volume or the estimated floor-plane 2D confidence map quantitatively. The ground truth http://www.journalofsolidstatelighting.com/content/1/1/17 is also difficult to represent accurately. To roughly compare the two different approaches, we generate the floor-plane ground truth of occupancy distribution for the nine scenarios by assuming a person or a chair is a disk with radius 10 inches on this plane, as shown in Figure 18.",
+                                "Once we have a 2D ground truth map, we can stretch it into a vector, and compute the correlation coefficient between the ground truth and an estimated 2D map. For the light reflection model, we simply use the floor-plane 2D confidence map estimated using Eq. ( 15) or Eq. ( 16). For the light blockage model, we use the z-axis integral of the reconstructed 3D volume as the floor-plane confidence map. The correlation coefficient lies in the range [-1, 1]. The larger the correlation coefficient is, the better the estimated occupancy map is. For each of the nine scenarios and each of the two approaches, we create multiple instances, and compute the average correlation coefficient of all instances, using different parameters. The mean value of the average correlation coefficients over all nine scenarios can be used as a final score, which we call the mACC (mean average correlation coefficient). Results are reported in Table 2. From this table we observe that the light blockage model has much better performance than the light reflection model. This is expected, because we lose all z-coordinate information when we mount all sensors on the ceiling. Even for the light blockage model, the correlation coefficient values are still mostly smaller than 0.5. This is also expected, partially due to the difficulty of accurately representing the ground truth, partially due to the challenge of the problem itself. http://www.journalofsolidstatelighting.com/content/1/1/17 "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Discussions",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "What is being sensed?",
+                    "paragraphs": [
+                        "Regarding the novel color-sensor-based occupancy sensing technique introduced in this paper, the most significant question is: What is actually being sensed, compared to other techniques such as PIR or ultrasonic sensors? As we all know, PIR sensors are used to sense the infrared radiation, and ultrasonic sensors are used to measure distances. In our technique, our occupancy estimation is based on a difference matrix between the light transport of an empty room and the light transport of the current room, as"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Table 2 The average correlation coefficient between the manually generated ground truth and the estimated occupancy map: for each of the nine scenarios and each of the two approaches",
+                            "paragraphs": [],
+                            "subsections": [
+                                {
+                                    "title": "Approach",
+                                    "paragraphs": [
+                                        "Light blockage model Light reflection model described in Section \"3D scene reconstruction with light blockage model\". This difference can be caused by either people or furniture. The \"empty room\" is not necessarily really empty -it is the room condition when the matrix A 0 is acquired, so more precisely it is the \"reference room\". If the reference room is already being occupied, then either removing an occupant or adding a new occupant should produce a difference between the reference transport matrix A 0 and the current transport matrix A, and thus should be sensed. In a real application of this technique, there should be a calibration button for the user to manually set the present room condition as the reference room."
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Aggregation of the difference matrix",
+                    "paragraphs": [
+                        "In the two approaches introduced in Section \"3D scene reconstruction with light blockage model\" and Section \"Floor-plane occupancy mapping with light reflection model\", respectively, we aggregate the difference matrix E = A 0 -A to a smaller matrix \u00ca, as discussed in Section \"Aggregation of E\". When sensing the occupancy, we are only interested in where the occupant is; we are not concerned with which color channel the occupant affects more. However, this does not mean that the color information measured by the color sensors is not useful. The summation over all three color channels mitigates errors or noise in any single color channel. A system with only one single tunable channel, e.g. brightness-tunable white lighting system, will be much more vulnerable to inaccurate measurements."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Assumptions in the models",
+                    "paragraphs": [
+                        "The light blockage model introduced in Section \"3D scene reconstruction with light blockage model\" assumes that a direct light path exists for any fixture-sensor pair. Thus, we install all sensors on the walls to make this assumption true. Apart from this assumption, we also assume that the direct light path is the dominating path, such that any changes in the diffuse reflection paths can be ignored relative to the changes in the direct light path. This assumption is mostly true, but may fail in some special cases. For example, when there is a large mirror in the room, there will be specular reflection paths. These specular reflection paths should be as important as direct light paths, and cannot be ignored. The light reflection model also has several assumptions apart from assuming all sensors are mounted on the ceiling. First, since we did not consider any reflection by the walls, we are assuming the wall surface reflection can be ignored. Although the total surface area of the walls will almost always be larger than that of the floor, since all fixtures and all sensors are \"looking down\", this assumption is acceptable. The second assumption is that the floor surface is Lambertian. This assumption does not have to be true, since if we know the surface is non-Lambertian, we simply need to modify Eq. ( 13) according to the surface property. Another assumption is that we assume the floor plane has uniform albedo. If the floor comprises roughly the same material, the albedo should be similar. However, if half of the floor is wool carpet and half is marble tile, then this assumption does not hold."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "The quality of the estimation",
+                    "paragraphs": [
+                        "Are the occupancy distribution estimation results shown in Section \"Results\" good enough? The answer to this question depends on the problem being solved. A researcher http://www.journalofsolidstatelighting.com/content/1/1/17 from the computer graphics or the tomography community may think the results given in Figures 14, 15, 16 and 17 are unimpressive. However, we are working in a very different regime, under very challenging constraints. To reconstruct a highly accurate high-resolution volume reproducing every wrinkle on a T-shirt of an occupant is not our goal. We are controlling the LED fixtures of a smart lighting system, for the purpose of energy efficiency, productivity, and human comfort. We are not producing 3D animations, we are not identifying who is in the room, and we are not using a stage light to follow a dancer precisely. We are simply controlling luminaires that people use everyday, such as in an office, a conference room, or a living room. Thus what we need to know is this: What areas of the room are occupied? We do not need, and for legal reasons should take care not to obtain or use, any information beyond that. Knowing more than needed will raise privacy concerns. Thus, for our smart lighting problem, the occupancy distribution estimation results shown in Section \"Results\" suffice for the task. We can improve the precision by introducing more sensors, if the reconstruction is too rough."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Better hardware",
+                    "paragraphs": [
+                        "In Section \"Limitations of current testbed\", we have explained that the limited performance of our current fixtures and sensors impedes us from implementing a real-time smart lighting system with the testbed, although they suffice for the validation experiments in Section \"Results\". The current fixture has a delay between the input signals being specified and the desired lighting condition being produced. The current SeaChanger Colorbug sensors have an integration time during which color is measured, and a communication time for Wi-Fi handshaking and data transmission. In the future, faster LEDs will be installed to replace our current fixtures, and more customizable color sensors can be built using low-cost commercially available components. Instead of using Wi-Fi, directly wiring the sensors to the system should significantly reduce the communication delay. Also, we expect that in the future, the color sensor will often be built into the LED fixture circuit as a combined product. This will make it much easier to install, more aesthetically pleasing, and lead to a more affordable complete lighting solution."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Broader applications",
+                    "paragraphs": [
+                        "In this paper we have discussed controlling the lighting condition in a space such as an office or a living room. We also point out that in the future this technique may apply to the lighting control of any indoor space. For example, controlling the lighting condition in a barn could improve agricultural productivity. Controlling the lighting condition in a sickroom could accelerate the healing process. We can also control the lighting condition in a hallway, a warehouse, or a large vehicle."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "We have presented a novel technique to estimate the occupancy distribution in an indoor space using color-controllable LEDs and sparsely distributed color sensors. This technique can be used to implement occupancy-sensitive, privacy-preserving smart lighting systems. The key idea is to modulate imperceptible perturbations onto the light, and measure the changes in the sensor output to recover a light transport matrix. Two approaches, based on the light blockage model and the light reflection model, respectively, are http://www.journalofsolidstatelighting.com/content/1/1/17 proposed to estimate the occupancy distribution using the light transport matrix. Due to the small number of fixtures and sensors, and the largely overlapping light fields between different fixture-sensor pairs, the occupancy distribution estimation problem is ill-posed and extremely challenging. The two approaches both produce results that suffice to infer the occupancy scenario in the space, but at the same time are coarse enough to protect the privacy of human residents."
+            ],
+            "subsections": [
+                {
+                    "title": "Acknowledgments",
+                    "paragraphs": [
+                        "This work was supported primarily by the Engineering Research Centers Program (ERC) of the National Science Foundation under NSF Cooperative Agreement No. EEC-0812056 and in part by New York State under NYSTAR contract C090145. The authors would like to thank Prof. Robert Karlicek for his constructive suggestions. The authors would also like to thank Dr. Zhenhua Huang, Mr. Lawrence Fan, Mr. Sina Afshari, Dr. Li Jia, Mr. Cyril Acholo, Mr. Anqing Liu, Prof. Richard J. Radke, Prof. Sandipan Mishra and Mr. Charles Goodwin for the helpful discussions. Received: 14 April 2014 Accepted: 16 September 2014"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Endnotes",
+            "paragraphs": [
+                "a Figure 6 needs to be viewed in color to be fully appreciated. b The room may include furnishings. By \"empty\" we mean no occupants (humans, animals).",
+                "c The unit here is fraction of the sphere, not steradian."
+            ],
+            "subsections": [
+                {
+                    "title": "Competing interests",
+                    "paragraphs": [
+                        "The authors declare that they have no competing interests."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Authors' contributions",
+                            "paragraphs": [
+                                "QW conceived the basic idea of this work, implemented the methods, carried out the experiments, and wrote the manuscript. XZ helped with the data collection, and proposed the genetic algorithm for perturbation ordering. KB supervised the entire project. All authors read and approved the final manuscript."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

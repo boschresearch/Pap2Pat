@@ -1,0 +1,178 @@
+# DESCRIPTION
+
+- introduce invention relating to binding molecules and therapeutic uses
+
+## BACKGROUND OF THE INVENTION
+
+- describe Alzheimer disease and its characteristics
+- discuss Aβ peptides and their role in AD
+- summarize research on N-truncated Aβ peptides
+- describe transgenic mouse models of AD
+- discuss the role of Aβ oligomers in AD
+- highlight the need for new diagnostic and therapeutic tools
+
+## SUMMARY OF THE INVENTION
+
+- introduce antibody molecule capable of recognizing Aβ oligomers
+- describe diagnostic tools for differentiating healthy controls from AD patients
+- discuss N-terminal truncated Aβ starting with pyroglutamate (AβpE3)
+- summarize generation of new diagnostic and pharmaceutically useful tools
+- describe antibodies directed against oligomeric forms of Aβ
+- highlight importance of antibodies in diagnosis of dementia and/or amyloid-related disorders
+- introduce method of diagnosing a subject suspected of suffering from a disease associated with amyloidogenesis
+- describe method of monitoring the efficacy of a treatment of a disease associated with amyloidogenesis
+- introduce method of predicting the efficacy of a treatment of a disease associated with amyloidogenesis
+- discuss therapeutic methods and substances reducing oligomeric AβpE3
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- characterize antibodies in APP/PS1KI and 5xFAD mice
+- analyze staining patterns in sporadic and familial AD cases
+- observe intraneuronal staining in transgenic models
+- detect strong immunostaining in human AD cases
+- find negligible staining in healthy control specimens
+- observe intraneuronal staining during aging
+- recognize AβpE3-42 oligomers by antibodies
+- do not cross-react with Aβ1-42
+- use antibodies in diagnostic assays
+- diagnose AD by comparing oligomer levels
+- determine oligomer levels in biological samples
+- compare with reference amounts
+- diagnose disease when amounts differ
+- monitor treatment efficacy
+- predict treatment efficacy
+- define binding molecules
+- describe binding molecule properties
+- exemplify binding molecules
+- inhibit Aβ-oligomerization
+- recognize soluble AβpE3 oligomers
+- inhibit seeding effect of soluble AβpE3 oligomers
+- use binding molecules in treatment and prevention of amyloid-related disorders
+- define antibody
+- describe antibody isotypes
+- introduce antibody fragments
+- describe monoclonal antibodies
+- detail production of monoclonal antibodies
+- specify deposited hybridomas
+- describe CDRs and variable regions
+- provide nucleic acid sequences
+- describe identity of nucleic acid sequences
+- introduce binding molecules with CDRs
+- describe variants of variable regions
+- provide antibodies with specific variable regions
+- describe methods for preparing antibodies
+- specify host cells for antibody production
+- introduce hybridoma producing antibody molecule
+- describe immunoblotting analysis
+- describe immunoisolation methods
+- describe immunostaining methods
+- provide examples of immunoblotting
+- provide examples of immunostaining
+- describe ELISA test
+- describe immunostaining with different biological samples
+- characterize antibodies by immunohistochemistry
+- describe staining with antibodies of the invention
+- relate to a composition comprising a binding molecule
+- describe a diagnostic composition
+- describe a pharmaceutical composition
+- describe the choice of carrier
+- describe administration of the composition
+- describe a method of treating or preventing an amyloid-related disorder
+- describe preferred embodiments
+- specify binding molecule properties
+- define amyloid-related disorders
+- describe antibody molecule properties
+- outline pharmaceutical composition
+- specify administration methods
+- describe method of inhibiting oligomerization
+- outline characteristics of binding substance
+- describe method of treating or preventing amyloid-related disorder
+- describe method of determining inhibition of oligomerization
+- outline method for identifying agents useful in treatment and/or prevention of amyloid-related disorder
+- define AβpE3
+- describe thioflavin T aggregation assay
+- determine rate of oligomerization and aggregation
+- describe binding constant and inhibiting Aβ-oligomerization
+- introduce antibody produced by hybridoma
+- describe candidate agent
+- provide examples of candidate agents
+- describe nucleic acid molecules encoding antibody molecules
+- describe vectors containing nucleic acid molecules
+- provide examples of vectors
+- describe host cell comprising nucleic acid molecule and/or vector
+- describe transformation of host cell
+- introduce antibody molecules for diagnosis
+- describe diagnostic purposes
+- list diseases associated with amyloidogenesis
+- describe method of diagnosing disease
+- specify biological samples
+- describe method of diagnosing familial Alzheimer disease
+- describe method of diagnosing sporadic Alzheimer disease
+- describe in vitro samples
+- describe in vivo methods
+- describe method of monitoring treatment efficacy
+- specify diseases associated with amyloidogenesis
+- describe method of monitoring treatment efficacy for sporadic Alzheimer disease
+- describe method of monitoring treatment efficacy for familial Alzheimer disease
+- describe method of predicting treatment efficacy
+- specify biological samples for predicting treatment efficacy
+- describe method of predicting treatment efficacy for sporadic Alzheimer disease
+- describe method of predicting treatment efficacy for familial Alzheimer disease
+- define terms "subject" and "sample"
+- define terms "reference" and "control samples"
+- explain processing steps for samples
+- describe validation of methodology
+- describe kit composition
+
+### EXAMPLES
+
+- generate antibodies
+- describe Western blot protocol
+- perform statistical analysis
+- describe immunohistochemistry on paraffin sections
+- present dot blot results
+- analyze Western blot results
+- describe antibody 9D5H6 recognition
+- differentiate between non-demented controls and Alzheimer disease patients
+- present staining patterns in human brain samples
+- introduce 5XFAD mice model
+- describe antibody 9D5H6 staining in 5XFAD mice
+- show age-dependent accumulation of AβpE3 in 5XFAD mice
+- describe double-staining with 9D5H6 and GFAP/Iba-1
+- introduce sandwich ELISA for plasma samples
+- describe ELISA protocol
+- present results of ELISA pilot study
+- discuss significance of intraneuronal Aβ accumulation
+- summarize previous research on intraneuronal Aβ
+- describe inventors' previous work on AβpE3-42 toxicity
+- introduce dot blot competition and ELISA competition
+- describe dot blot competition protocol
+- describe ELISA competition protocol
+- present results of competition assays
+- describe immunostaining competition
+- describe epitope competition
+- perform size-exclusion chromatography
+- analyze binding properties
+- conduct thioflavin T aggregation assay
+- investigate antibody effects on aggregation
+- administer antibodies to mouse model
+- assess behavioral deficits
+- measure anxiety levels
+- discuss soluble oligomers in AD
+- describe therapeutic potential of 9D5
+- evaluate diagnostic properties of 9D5
+- perform passive immunization with antibodies
+- analyze extracellular Aβ load
+- present plaque-load quantification results
+- hypothesize therapeutic mechanism
+- describe 9D5 passive immunization method
+- present Aβ40 and Aβ42 plaque load reduction results
+- introduce non-human primate models for Alzheimer's disease
+- describe tissue preparation and staining methods
+- present AD-like pathology results in non-human primates
+- rule out cross-reactivity with other organs
+- present microglia cell visualization results
+- describe passive immunization with 2-48 antibody method
+- present plaque load reduction results with 2-48 antibody
+- discuss implications of results
+

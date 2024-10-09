@@ -1,0 +1,196 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to radiotherapy field
+
+## BACKGROUND OF THE INVENTION
+
+- motivate radiotherapy errors
+- describe geometric miss
+- explain patient setup challenges
+- introduce patient immobilization devices
+- describe image-guided radiotherapy
+- discuss limitations of IGRT systems
+- motivate need for accurate patient localization
+- describe non-radiographic image-guided technology systems
+- discuss limitations of commercial tracking systems
+- motivate need for general-purpose patient setup system
+- describe known method using fiducial marker
+- discuss limitations of known method
+
+## SUMMARY OF THE INVENTION
+
+- introduce method for tracking patient position
+- describe placement of computed tomography ball bearing
+- perform treatment-simulation computed tomography scan
+- calculate coordinates of computed tomography ball bearing
+- describe placement of infra-red reflecting marker
+- store predicted coordinates in database
+- compare real-time location with predicted location
+- display results in graphical user interface
+
+## DETAILED DESCRIPTION
+
+- introduce patient safety system
+- describe system components
+- detail optical tracking system
+- describe position sensor unit
+- describe control box
+- describe computer and software
+- describe radiation delivery system
+- describe treatment couch
+- describe infra-red reflective marker
+- describe real-time position capture
+- describe internal processing unit
+- describe triangulation
+- describe 3D coordinate determination
+- describe control box operation
+- describe calibration procedure
+- describe graphical user interface
+- describe record and verify system
+- describe seamless clinic workflow
+- describe advantages of system
+- describe computer components
+- describe processor
+- describe main memory
+- describe static memory
+- describe bus
+- describe display controller
+- describe display
+- describe input device
+- describe cursor control device
+- describe memory device
+- describe signal generation device
+- describe network interface device
+- describe tangible computer-readable storage medium
+- describe instructions
+- describe operating system
+- describe communication controller
+- describe network adapter hardware
+- describe treatment-simulation CT scan
+- describe CT ball bearing placement
+- describe coordinates of CT BB
+- describe replacement of CT BB with IRRM
+- describe evaluation of setup accuracy
+- describe synchronization with R&V system
+- describe automation of workflow
+- describe workflow of PSS 100
+- motivate need for efficient workflow
+- describe limitations of current workflow
+- introduce solution of transferring IRRM 160 to immobilization device
+- describe application of solution for face mask patients
+- describe application of solution for body mold patients
+- describe alternative workflow for abdominalpelvic patients
+- summarize advantages of PSS 100
+- describe information transfer from TPS to PSS 100
+- describe treatment stage workflow
+- describe daily QA procedure
+- evaluate short term stability of PSS 100
+- evaluate long term stability of PSS 100
+- describe end-to-end test with anthropomorphic head phantom
+- evaluate accuracy of PSS 100 with head phantom
+- describe test with couch shifts and rotations
+- evaluate performance of PSS 100 under non-coplanar treatment conditions
+- describe retrospective study on ten H&N patients
+- evaluate accuracy of PSS 100 with respect to CIS and CBCT system
+- describe couch shifts determined by CBCT system
+- describe residual errors of automatic couch motion
+- describe application of PSS 100 for patients with disease in thoracic or abdominalpelvic region
+- describe need for continuous monitoring of patient during treatment
+- describe effect of breathing motion on IRRM 160 placement
+- describe study on ten abdominalpelvic patients
+- evaluate motion range throughout entire treatment session
+- evaluate accuracy of PSS 100 when compared to CBCT system and CIS
+- describe results of study on abdominalpelvic patients
+- summarize advantages of PSS 100
+- describe limitations of current radiotherapy systems
+- motivate need for PSS 100
+- describe benefits of PSS 100
+- describe implementation of PSS 100 in treatment rooms
+- describe verification of setup accuracy with PSS 100
+- describe evaluation of PSS 100 with respect to CBCT system and CIS
+- summarize results of studies on PSS 100
+- evaluate system accuracy
+- show deviations with respect to CIS
+- show deviations with respect to CBCT system
+- show couch shifts determined by CBCT system
+- show residual errors of automatic couch motion
+- show patient motion range
+- demonstrate accuracy of PSS 100
+- show reproducibility of PSS 100
+- evaluate feasibility of placing IRRM 160 on abdominal area
+- discuss implications on ability to detect gross setup errors
+- propose methods to deal with false alarms
+- describe smooth clinic workflow
+- discuss importance of quality assurance and quality control systems
+- describe potential setup errors
+- demonstrate ability of PSS 100 to catch potential gross setup errors
+- describe advantages of PSS 100
+- discuss use of flat-surfaced, disposable IRRM 160
+- describe method to ensure reproducibility of patient lying in body mold
+- discuss limitations of using only one IRRM 160 for each patient
+- describe ability of PSS 100 to prevent gross setup errors
+- illustrate graphical user interface (GUI) 500
+- describe GUI components
+- explain couch shift information
+- describe alarm system
+- explain position sensor unit of optical tracking system
+- describe AP and lateral views of 3D objects
+- discuss GUI customization options
+- describe automatic treatment beam shutoff
+- explain vector (VECT) value
+- describe use of PSS 100 with breath hold techniques
+- describe use of portable display device for patient feedback
+- describe active breathing coordinator device
+- discuss reproducibility checks
+- describe use of PSS 100 for quality control of automatic couch shifts
+- describe mounting of single IRRM 160 on gantry head, CBCT system, or couch
+- describe use of PSS 100 to predict potential collisions
+- describe mounting of single IRRM 160 on patient's arms
+- discuss advantages of PSS 100 in ensuring patient safety
+- describe independence of PSS 100
+- discuss ability of PSS 100 to detect unusual errors
+- describe ability of PSS 100 to prevent treatment of wrong sites
+- summarize benefits of PSS 100
+- summarize radiotherapy treatment sessions
+- customize immobilization device
+- make marks on patient's skin
+- place CT BB on patient's skin
+- perform CT simulation scan
+- send CT image set to TPS
+- design treatment plan in TPS
+- send treatment plan to R&V system
+- finalize treatment plan
+- identify CT BB as POI
+- export treatment plan to network place
+- combine information from TPS and R&V system
+- import patient tracking information into PSS 100
+- receive radiotherapy treatment sessions
+- affix IRRM 160 to patient's skin
+- localize patient using skin mark or couch index system
+- load setup beam in R&V system
+- create local file for PSS 100
+- scan local folder for local file
+- load relevant tracking information
+- start optical tracking with position sensor unit
+- show difference between detected IRRM position and reference position
+- take corrective action if difference exceeds threshold
+- perform patient localization based on imaging
+- shift patient based on imaging and image registration
+- select new location for IRRM 160
+- capture new location of IRRM 160
+- perform radiotherapy treatment
+- describe aspects of the present invention
+- define computer-readable medium
+- describe computer-readable signal medium
+- define tangible computer-readable storage medium
+- describe computer program code
+- describe execution of computer program code
+- describe flowchart illustrations and block diagrams
+- describe implementation of functions
+- describe dedicated hardware implementations
+- describe software implementations
+- describe standards and protocols
+- provide abstract and claims
+

@@ -1,0 +1,163 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate pRNA 3WJ motifs
+
+## DETAILED DESCRIPTION
+
+- introduce RNA nanomotifs
+- describe limitations of pRNA 3WJs
+- disclose novel trifurcate pRNA 3WJ motifs
+- describe self-assembly properties of pRNA
+- measure thermodynamic parameters of pRNA 3WJs
+- show greater stability of certain 3WJs
+- describe effect of deletions on phi29 pRNA 3WJ stability
+- describe effect of metal ions on pRNA 3WJ stability
+- provide disclaimer on scope of disclosure
+- define terms used in disclosure
+- describe use of "a" and "an" in claims
+- define "or combinations thereof"
+- describe use of "about" and "approximately"
+- define "substantially"
+- describe use of "one embodiment"
+- define "pharmaceutically acceptable"
+- define "biologically active"
+- define "pure" and "substantially pure"
+- provide examples of animals
+- define "treatment" and "prevention"
+- define "therapeutic composition" and "pharmaceutical composition"
+- define "effective amount"
+- define "ameliorate"
+- describe therapeutic benefit
+- define "three-way junction" and "trifurcate" scaffold
+- describe pRNA 3WJ construction
+- describe branches of 3WJ domain
+- describe non-Watson-Crick nucleotide pairs
+- describe length of 3WJa, 3WJb, and 3WJc oligonucleotide sequences
+- describe mutant constructs
+- describe biophysical studies on deletion mutant constructs
+- describe enhanced stability of deletion mutant constructs
+- describe use of deletion mutant constructs as drug delivery scaffolds
+- describe functional RNAs designed using deletion mutant constructs
+- describe siRNA helix attached to 3WJ scaffold
+- describe ribozyme function
+- describe RNA aptamer function
+- describe riboswitch function
+- describe fusion of RNA moieties to 3WJ scaffolds
+- describe advantages of RNA nanoparticles
+- describe self-assembly of RNA nanoparticles
+- describe multivalency of RNA nanoparticles
+- describe targeted delivery of RNA nanoparticles
+- describe nanoscale size of RNA nanoparticles
+- describe controlled synthesis of RNA nanoparticles
+- describe combination of therapy and detection in RNA nanoparticles
+- describe protein-free nature of RNA nanoparticles
+- describe safety of RNA nanoparticles
+
+### Experimental
+
+- introduce pRNA 3WJ construct design
+- describe RNA oligomer assembly
+- specify RNA strand sequences
+- detail UV optical melting procedure
+- explain thermodynamic parameter determination
+- describe pRNA 3WJ secondary structure and free energy predictions
+- introduce RNA secondary structure prediction programs
+- detail free energy prediction methods
+- correct for hairpin penalties
+- discuss entropic penalties
+- introduce electrophoretic gel mobility shift assays
+- describe EMSA procedure
+- report pRNA 3WJ nanomotif stabilities
+- analyze melt curves
+- discuss thermodynamic stabilities
+- calculate free energies
+- compare free energies to binding constants
+- investigate uridine residue deletions
+- evaluate RNA secondary structure prediction programs
+- discuss metal ion binding effects
+- depict metal ion binding effects
+- analyze electrophoretic gel mobility shift assays
+- confirm pRNA 3WJ formation
+- introduce pRNA 3WJ constructs
+- describe thermodynamic stability
+- analyze loop-loop interaction stabilities
+- discuss 3WJ stabilities
+- explain structure-energetics relationships
+- describe phi29 pRNA 3WJ crystal structure
+- discuss base pairing and stacking
+- evaluate free energy outputs
+- compare predicted and measured stabilities
+- introduce serum stability
+- describe UV optical melting studies
+- analyze degradation in human blood serum
+- compare serum stability of 3WJ constructs
+- discuss time course analysis
+- determine melting temperatures
+- introduce examples
+- describe RNA junction scaffold
+- define 3WJ construct
+- describe branches of 3WJ construct
+- discuss helical regions
+- introduce embodiment with single unpaired nucleotide
+- introduce embodiment with two adjacent unpaired nucleotides
+- introduce embodiment with single unpaired nucleotide in second branch
+- introduce embodiment with absent unpaired nucleotide
+- describe 3WJa sequence
+- describe 3WJb sequence
+- describe 3WJc sequence
+- describe RNA junction scaffold
+- introduce phi29 pRNA 3WJ construct
+- describe 3WJa sequence
+- describe 3WJb sequence
+- describe 3WJc sequence
+- introduce M2 3WJ construct
+- describe 3WJa sequence
+- describe 3WJb sequence
+- describe 3WJc sequence
+- introduce SF5 3WJ construct
+- describe 3WJa sequence
+- describe 3WJb sequence
+- describe 3WJc sequence
+- introduce GA1 3WJ construct
+- describe 3WJa sequence
+- describe 3WJb sequence
+- describe 3WJc sequence
+- provide non-limiting examples of phi29 pRNA three-sequence sets
+- provide non-limiting examples of M2 pRNA three-sequence sets
+- provide non-limiting examples of SF5 pRNA three-sequence sets
+- provide non-limiting examples of GA1 pRNA three-sequence sets
+- describe generic phi29 pRNA 3WJ mutant constructs
+- describe generic M2 pRNA 3WJ mutant constructs
+- describe generic SF5 pRNA 3WJ mutant constructs
+- describe generic GA1 pRNA 3WJ mutant constructs
+- describe use of pRNA 3WJ constructs as scaffolds
+- describe linking biologically active moieties to pRNA 3WJ domains
+- describe conjugation of chemicals to RNA
+- describe linking methods and biologically-active moieties
+- claim RNA junction scaffold
+- define RNA junction scaffold
+- specify second branch absence
+- specify third branch absence
+- specify 3WJa sequence absence
+- specify 3WJb sequence absence
+- specify combined 3WJa and 3WJb sequence absence
+- describe three-way junction domain
+- describe modified three-way junction domain
+- specify absence of unpaired nucleotide
+- specify sequence IDs
+- specify additional absence of unpaired nucleotide
+- specify alternative sequence IDs
+- specify combined absence of unpaired nucleotides
+- specify alternative sequence IDs
+- describe modified three-way junction domain
+- specify sequence IDs
+- describe modified three-way junction domain
+- specify sequence IDs
+- describe modified three-way junction domain
+- describe conjugate composition
+- describe pharmaceutical composition
+- specify sequence length
+- provide general disclosure statement
+

@@ -1,0 +1,237 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate robot failures
+
+## DETAILED DESCRIPTION
+
+- introduce robot control model
+- describe environment for performing tasks
+- illustrate example environment with robot and objects
+- describe task to be performed by robot
+- introduce need for corrections to modify behavior
+- describe traditional methods of applying corrections
+- introduce natural language as expressive tool for corrections
+- map natural language to transformations of cost functions
+- illustrate example image of environment
+- describe limitations of physical training sequences
+- introduce simulation-based training and evaluation
+- describe framework for accurately simulating robot tasks
+- introduce learning and implementation framework
+- describe use of natural language inputs to modify planning objective
+- illustrate example of natural language correction
+- describe machine learning systems for training robot
+- illustrate cost map for determining revised path
+- formalize planning problems in Markov decision processes
+- describe cost function and user-specified costmap
+- introduce value alignment problem
+- describe minimizing value alignment problem
+- illustrate example system for modeling motion of robot
+- describe trained model for mapping human input to cost
+- describe motion planner module and cost analyzer
+- introduce natural language instructions for robots
+- describe trajectory modification based on user input
+- define costmap generation using generative model
+- factor costmap into continuous costmap and binary mask
+- describe learning process for costmap and mask models
+- explain partial supervision during training
+- describe inference process for costmap and mask
+- discuss different types of user corrections
+- explain constraint addition and goal specification
+- describe cost interface with optimized base controller
+- illustrate example environment for processing natural language correction
+- describe architecture of language parameterization cost correction module
+- explain two-stream architecture with CLIP and U-Net
+- describe output cost maps and their use in robot control
+- illustrate process for adjusting trajectory based on language correction
+- describe receiving natural language correction and image of environment
+- explain determining robot state and computing natural language correction cost
+- describe determining total cost and generating refinement
+- illustrate process for optimizing cost to perform task based on language correction
+- describe determining task cost and cumulative cost
+- explain optimizing updated cost across actions associated with task
+
+### Inference and Training Logic
+
+- illustrate inference and/or training logic
+- describe code and/or data storage for forward and/or output weight and/or input/output data
+- detail training logic for storing graph code or other software
+- explain code and/or data storage for backward and/or output weight and/or input/output data
+- describe training logic for storing graph code or other software
+- discuss separate or same storage structures for code and/or data storage
+- introduce arithmetic logic units (ALUs) for performing logical and/or mathematical operations
+- explain activation storage for storing output values from layers or neurons within a neural network
+- describe ALUs within one or more processors or other hardware logic devices or circuits
+- discuss activation storage as cache memory, DRAM, SRAM, non-volatile memory, or other storage
+- illustrate inference and/or training logic with dedicated computational resources
+- describe storage/computational pairs for different layers of a neural network
+
+### Data Center
+
+- illustrate data center architecture
+- define data center infrastructure layer
+- describe resource orchestrator
+- detail node computing resources
+- explain grouped computing resources
+- introduce framework layer
+- describe job scheduler
+- detail configuration manager
+- explain resource manager
+- introduce software layer
+- describe software used by node computing resources
+- introduce application layer
+- describe applications used by node computing resources
+- explain self-modifying actions
+- describe machine learning model training and inferencing
+- illustrate computer system architecture
+- introduce data center
+- describe electronic device components
+- illustrate system components
+- describe inference and/or training logic
+- introduce processing system
+- describe processing system components
+- describe processor cores
+- describe cache memory
+- describe interface bus
+- describe memory device
+- describe graphics processor
+- describe display device
+- describe platform controller hub
+- describe I/O peripherals
+- introduce processor
+- describe processor components
+- describe cache memory hierarchy
+- describe inference and/or training logic
+- introduce data center
+- describe virtualized computing platform
+- motivate machine learning models
+- summarize training pipeline
+- describe model registry
+- explain AI-assisted annotation
+- outline deployment system
+- describe software stack
+- define virtual instrument
+- outline data processing pipeline
+- describe containerization
+- summarize application development
+- introduce data center
+- describe application sharing and storage
+- explain request processing and pipeline execution
+- discuss services for application execution
+- describe hardware components for efficient processing
+- illustrate system diagram for imaging deployment pipeline
+- describe training and deployment systems
+- explain communication between system components
+- discuss training pipelines for machine learning models
+- describe output models and pre-trained models
+- explain AI-assisted annotation for labeled data
+- describe multi-layer platform for diagnostic applications
+- discuss system integration with PACS servers
+- explain software layer for secure API invocation
+- describe deployment pipelines for imaging data processing
+- introduce data center
+- describe deployment system
+- motivate user interface
+- explain pipeline manager
+- describe application orchestration system
+- discuss containerization
+- explain services
+- describe compute services
+- explain parallel computing platform
+- discuss AI services
+- describe inferencing
+- explain shared storage
+- discuss inference server
+- describe visualization services
+- explain hardware
+- conclude system architecture
+- describe data center architecture
+- introduce GPU-accelerated infrastructure
+- motivate cloud integration
+- describe application orchestration system
+- illustrate data flow diagram for machine learning model training
+- motivate model retraining
+- describe pre-trained model selection
+- illustrate AI-assisted annotation
+- describe client-server architecture for annotation tools
+- motivate annotation model registry
+- introduce data center architecture
+- describe bus architecture
+- motivate use of CAN bus
+- describe alternative bus options
+- describe system on chip (SoC) architecture
+- describe central processing unit (CPU) architecture
+- describe power management capabilities
+- describe graphics processing unit (GPU) architecture
+- describe GPU power optimization
+- describe high bandwidth memory (HBM) and synchronous graphics random-access memory (SGRAM)
+- describe unified memory technology
+- describe cache architecture
+- describe accelerator architecture
+- describe deep learning accelerator (DLA)
+- describe programmable vision accelerator (PVA)
+- describe vector processing subsystem
+- describe computer vision network on-chip and static random-access memory (SRAM)
+- describe real-time ray-tracing hardware accelerator
+- conclude data center architecture
+- introduce data center
+- describe PVA capabilities
+- motivate computer stereo vision
+- describe dense optical flow
+- describe DLA neural network
+- motivate confidence measure
+- describe neural network input
+- describe data store
+- describe processor capabilities
+- describe boot and power management
+- describe audio processing engine
+- describe always on processor engine
+- describe safety cluster engine
+- describe real-time camera engine
+- describe video image compositor
+- describe MIPI camera serial interface
+- describe peripheral interfaces
+- describe SoC advantages
+- describe autonomous driving functionality
+- introduce vehicle 1600
+- describe GNSS sensor(s) 1658
+- describe RADAR sensor(s) 1660
+- describe ultrasonic sensor(s) 1662
+- describe LIDAR sensor(s) 1664
+- describe IMU sensor(s) 1666
+- describe microphone(s) 1696
+- describe camera types
+- describe vibration sensor(s) 1642
+- introduce ADAS system 1638
+- describe ACC system
+- describe CACC system
+- describe FCW system
+- describe AEB system
+- describe LDW system
+- describe LKA system
+- describe BSW system
+- describe RCTW system
+- introduce data center
+- describe ADAS system
+- motivate secondary computer
+- describe output of ADAS system
+- introduce infotainment SoC
+- describe functionality of infotainment SoC
+- introduce instrument cluster
+- describe functionality of instrument cluster
+- introduce inference and/or training logic
+- describe system for communication between cloud-based server and autonomous vehicle
+- describe server architecture
+- describe functionality of server
+- motivate training of machine learning models
+- describe training data
+- describe use of trained models
+- describe real-time inferencing
+- describe evaluation of health of processors
+- describe fail-safe mechanism
+- describe variations of server architecture
+- provide definitions of terms
+- describe operations of processes
+- provide disclaimer
+

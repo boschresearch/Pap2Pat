@@ -1,0 +1,343 @@
+{
+    "id": "US20160048753",
+    "authors": [
+        "David Sussillo",
+        "Jonathan C. Kao",
+        "Sergey Stavisky",
+        "Krishna V. Shenoy"
+    ],
+    "title": "Multiplicative recurrent neural network for fast and robust intracortical brain machine interface decoders",
+    "date": "2015-08-14 00:00:00",
+    "abstract": "A brain machine interface (BMI) to control a device is provided. The BMI has a neural decoder, which is a neural to kinematic mapping function with neural signals as input to the neural decoder and kinematics to control the device as output of the neural decoder. The neural decoder is based on a continuous-time multiplicative recurrent neural network, which has been trained as a neural to kinematic mapping function. An advantage of the invention is the robustness of the decoder to perturbations in the neural data; its performance degrades less\u2014or not at all in some circumstances\u2014in comparison to the current state decoders. These perturbations make the current use of BMI in a clinical setting extremely challenging. This invention helps to ameliorate this problem. The robustness of the neural decoder does not come at the cost of some performance, in fact an improvement in performance is observed.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "STATEMENT OF GOVERNMENT SPONSORED SUPPORT",
+                    "paragraphs": [
+                        "This invention was made with Government support under contracts 8DP1HD075623-04, R01NS076460 awarded by the National Institutes of Health, and under contract N66001-10-C-2010 awarded by the Defense Advanced Research Projects Agency. The Government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "acknowledge government funding"
+                    ],
+                    "num_characters": 284,
+                    "outline_medium": [
+                        "acknowledge government funding"
+                    ],
+                    "outline_short": [
+                        "acknowledge government funding"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "This invention relates to decoders for brain machine interfaces."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to brain machine interfaces"
+                    ],
+                    "num_characters": 64,
+                    "outline_medium": [
+                        "relate to brain machine interfaces"
+                    ],
+                    "outline_short": [
+                        "relate to brain machine interfaces"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Brain-machine interface (BMI) systems convert neural signals from motor regions of the brain into control signals to guide prosthetic devices. The ultimate goal of BMIs is to improve the quality of life for people with paralysis by providing direct neural control of prosthetic arms or computer cursors. While considerable research over the past 15 years has led to compelling BMI demonstrations, there remain several challenges to achieving clinically viable BMI systems. In this invention, we focus on the challenge of increasing BMI performance and robustness."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce brain machine interface challenges"
+                    ],
+                    "num_characters": 563,
+                    "outline_medium": [
+                        "introduce brain machine interface challenges"
+                    ],
+                    "outline_short": [
+                        "introduce brain machine interface challenges"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention provides a brain machine interface (BMI) to control a device. The BMI has a neural decoder, which is a neural to kinematic mapping function with neural signals as the input to the neural decoder and kinematics to control the device as the output of the neural decoder. The neural decoder is based on a continuous-time multiplicative recurrent neural network, which has been trained as a neural to kinematic mapping function. The device to be controlled could be a robotic arm, a prosthetic device or a cursor on a computer screen.",
+                        "In one embodiment, the outputted kinematics could be normalized position over time and velocity over time.",
+                        "In another embodiment, the neural training data used for training of the neural to kinematic mapping function has been modified. The neural training data could, for example, be modified by randomly adding and removing spikes such that the mean number of spikes is preserved on average.",
+                        "In yet another embodiment, the neural decoder could have been trained with neural and kinematic data sets collected over multiple days.",
+                        "In yet another embodiment, the neural decoder could have been trained with neural and kinematic data sets collected over five or more days.",
+                        "Embodiments of the invention offer the following advantages:",
+                        "1. State of the art robustness to variations and perturbations in the day-to-day and moment-to-moment neural data. This robustness may help to enable the clinical use of BMIs.",
+                        "2. State of the art performance of the neural decoder.",
+                        "3. The ability to improve the decoder by using data from previous days, something the previous decoders were unable to do."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce brain machine interface decoder",
+                        "describe neural to kinematic mapping function",
+                        "highlight advantages of the invention"
+                    ],
+                    "num_characters": 1644,
+                    "outline_medium": [
+                        "describe brain machine interface with neural decoder"
+                    ],
+                    "outline_short": [
+                        "describe brain machine interface with neural decoder"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention also referred to as Big-Data Multiplicative Recurrent Neural Network (BD-MRNN) is a supervised neural network and training method for incorporating and modifying multiple previous days training datasets (historical data) to improve both raw performance and robustness in the daily operation of brain-machine interface (BMI) decoders."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "MRNN Definition",
+                            "paragraphs": [
+                                "The generic recurrent network model is defined by an N-dimensional vector of activation variables, x, and a vector of corresponding \u201cfiring rates\u201d, r=tan h(x). Both x and r are continuous in time and take continuous values. In a standard RNN model, the input affects the dynamics as an additive time-dependent bias in each dimension. In the MRNN model, the input instead directly parameterizes the weight matrix, allowing for multiplicative interactions between the input and the hidden state. One view of this multiplicative interation is that the hidden state of the recurrent network is selecting an appropriate decoder for the statistics of the current dataset. The equation governing the dynamics of the activation vector is of the form suggested in Suskever 2011, but adapted for this invention to continuous time",
+                                "\u03c4{dot over (x)}(t)=\u2212x(t)+Ju(t)r(t)+bx.\u2003\u2003(0.1)",
+                                "The N\u00d7N\u00d7F tensor Ju(t) defines the values of the recurrent connections of the network, which are dependent on the I-dimensional input, u(t). In the MRNN, Ju(t) is factorized such that the input is linearly combined into F factors. Specifically, Ju(t) is factorized according to",
+                                "Ju(t)=Jxf\u00b7diag(Jfuu(t))\u00b7Jfx,\u2003\u2003(0.2)",
+                                "where Jxf has dimension N\u00d7F, Jfu has dimension F\u00d7I, Jfx has dimension F\u00d7N, and diag(v) takes a vector, v, and returns a diagonal matrix with v along the diagonal. One directly controls the complexity of interactions by choosing the number of factors, F. If F=N2, we recover a full N\u00d7N\u00d7N tensor. If F=1, Ju(t) is a rank-one matrix whose singular value is function of u(t).",
+                                "Finally, the network has a constant bias, bx, and the neuronal time constant, T, sets the time scale of the network."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define recurrent network model",
+                                "describe multiplicative interaction",
+                                "introduce equation governing dynamics"
+                            ],
+                            "num_characters": 1673,
+                            "outline_medium": [
+                                "define MRNN model"
+                            ],
+                            "outline_short": [
+                                "define MRNN model equations"
+                            ]
+                        },
+                        {
+                            "title": "MRNN Output Definition",
+                            "paragraphs": [
+                                "The output of the network is a weighted sum of the network firing rates plus a bias, defined by",
+                                "z(t)=WOTr(t)+bz,\u2003\u2003(0.3)",
+                                "where WO is an N\u00d7M matrix and bz is an M-dimensional bias."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define output of the network"
+                            ],
+                            "num_characters": 180,
+                            "outline_medium": [
+                                "define MRNN output"
+                            ],
+                            "outline_short": [
+                                "define MRNN output equation"
+                            ]
+                        },
+                        {
+                            "title": "Network Construction for Cursor BMI Decoder",
+                            "paragraphs": [
+                                "The network equations defined above are used according to the following procedures and parameters in order to build the BD-MRNN BMI decoder."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe network construction"
+                            ],
+                            "num_characters": 140,
+                            "outline_medium": [
+                                "construct MRNN for cursor BMI decoder"
+                            ],
+                            "outline_short": [
+                                "describe network construction for cursor BMI decoder"
+                            ]
+                        },
+                        {
+                            "title": "MRNN Initialization",
+                            "paragraphs": [
+                                "For our online experiments, the size of the networks are set to N=100 and N=50 with F=N in both cases (see Table 1). One subject uses a single multi-unit electrode arrays (I=96), while the second uses two (I=192). The non-zero elements of the non-sparse matrices Jxf, Jfu, Jfx are drawn independently from a Gaussian distribution with zero mean and variance gxf/F, gfu/I, and gfx/N with gxf, gfu, and gfx defined in Table 1 for the specific BMI task. The elements of WO are initialized to zero, and the bias vectors bx and bz are also initialized to 0."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "initialize network parameters"
+                            ],
+                            "num_characters": 552,
+                            "outline_medium": [
+                                "initialize MRNN parameters"
+                            ],
+                            "outline_short": [
+                                "initialize MRNN parameters"
+                            ]
+                        },
+                        {
+                            "title": "Concatenating Neural Trials for Seeding the MRNN During Training",
+                            "paragraphs": [
+                                "The input u(t), to the MRNN, is the vector of binned spikes measured from neural data (see, for example, Sus sillo 2012 for details on standard preprocessing of neural signals, see \u0394t in Table 1 for bin sizes). By input to the MRNN, we mean in the sense of equation 0.1. This results in a data matrix, Uj, of binned spikes of size I\u00d7Tj for each actual trial, where Tj is the number of time steps for the jth trial. Five actual trials are then concatenated together to make one \u201ctraining\u201d trial. The first two actual trials in a training trial are used for seeding the hidden state of the MRNN, and are not used for learning, whereas the final 3 actual trials in the training trial are used for learning. In this way, excepting the first two actual trials in the day's dataset, the entire set of actual trials are used for learning, by incrementing the actual trial index that begins a training trial."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "concatenate neural trials"
+                            ],
+                            "num_characters": 900,
+                            "outline_medium": [
+                                "concatenate neural trials for training"
+                            ],
+                            "outline_short": [
+                                "describe trial concatenation for MRNN training"
+                            ]
+                        },
+                        {
+                            "title": "Perturbing the Neural Input During Training",
+                            "paragraphs": [
+                                "A key element of training robustness to nonstationarities in the neural code is the introduction of perturbations to the neural spike trains that are used to train the MRNN. The concatenated input in a given training trial, \u00db=[Ui, . . . , Ui+4] are perturbed by adding and removing spikes from each channel. We focus on channel c of the jth training trial, i.e., a row vector of data, \u00dbc,:j. Let the number of spikes in \u00dbc,:j be ncj before perturbation. This number is perturbed according to",
+                                "{circumflex over (n)}cj=\u03b7j\u03b7cncj,\u2003\u2003(0.4)",
+                                "where both \u03b7j and \u03b7c are Gaussian variables with a mean of one and standard deviations of \u03c3trial and \u03c3channel, respectively (see Table 1). Conceptually, \u03b7j models a global modulation in the array across all channels (e.g. changes in subject arousal), while \u03b7c models channel by channel perturbations, such as uncontrolled channel dropping or moving baselines in individual neurons. If ncj is less than zero or greater than 2ncj, it is resampled according to equation 0.4, which keeps the average number of perturbed spikes in a given channel and training trial the same as the average number of unperturbed spikes in the same channel and training trial. Otherwise, if {circumflex over (n)}cj is greater than ncj, then {circumflex over (n)}cj\u2212ncj spikes are added to random time bins of the training trial. If {circumflex over (n)}cj is less than ncj, then ncj\u2212{circumflex over (n)}cj spikes are randomly removed from time bins of the training trial that already had spikes. Finally, if {circumflex over (n)}cj=ncj, nothing is changed.",
+                                "The process of perturbing the binned spiking data occurs on every iteration of the optimization algorithm. For example, in a batch gradient descent algorithm, the perturbation described by equation 0.4 happens after each update of the network parameters."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce perturbations to neural spike trains",
+                                "describe global modulation",
+                                "describe channel by channel perturbations"
+                            ],
+                            "num_characters": 1824,
+                            "outline_medium": [
+                                "perturb neural input for robustness"
+                            ],
+                            "outline_short": [
+                                "describe perturbation of neural input during training"
+                            ]
+                        },
+                        {
+                            "title": "Using Many Days Training Data",
+                            "paragraphs": [
+                                "The typical methodology for training a closed-loop BMI decoder involves training on a session-by-session basis. This means that every day, the subject engages in a control task, for which both input (neural) and supervisory (kinematics) signals are collected. After this session-by-session training period, a BMI is optimized to perfrom well on this data exclusively.",
+                                "The second critical component to acheiving both performance and robustness in the BD-MRNN decoder is using many days of training data. In our laboratory experiments, we use multiple years of training data (see Table 1). Because of the extreme nonstationarities of the neural data, this aspect of the BD-MRNN training methodology is unintuitive. The nonlinear, multiplicative architecture of the MRNN utilizes the regularities that across many days do exist in a dataset comprising many days. In comparison, the (due to BD-MRNN, no longer) state-of-the-art linear Kalman Filter methods, including previous days data would result in potentially very poor decoders."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce using multiple days of training data",
+                                "describe nonlinear, multiplicative architecture"
+                            ],
+                            "num_characters": 1031,
+                            "outline_medium": [
+                                "use multiple days of training data"
+                            ],
+                            "outline_short": [
+                                "describe use of multiple days training data"
+                            ]
+                        },
+                        {
+                            "title": "Network Output",
+                            "paragraphs": [
+                                "We train two MRNN networks to each output a 2-dimensional signal. One network is trained to output the normalized position through time in both the horizontal (x) and vertical (y) spatial dimensions. The other MRNN is trained to output the velocity through time, also in the x and y dimensions. We calculate the hand velocities from the positions numerically using central differences.",
+                                "Since the MRNN decoder outputs both normalized position and velocity, we combine both for our final decoded position signal. The decode used during BMI mode, dx(t), dy(t) is a mix of both velocity and position, defined by",
+                                "dx(t)=\u03b2(dx(t\u2212\u0394t)+\u03b3v\u03bdx(t\u2212\u0394t)\u0394t)+(1\u2212\u03b2)\u03b3ppx(t)\u2003\u2003(0.5)",
+                                "dy(t)=\u03b2(dy(t\u2212\u0394t)+\u03b3v\u03bdy(t\u2212\u0394t)\u0394t)+(1\u2212\u03b2)\u03b3ppy(t)\u2003\u2003(0.6)",
+                                "where vx, vy, px, py are the normalized velocity and positions in the x and y dimensions and \u03b3v, \u03b3p are factors that convert from the normalized velocity and position, respectively, to the physical values associated with the workspace. The parameter \u03b2 sets the amount of velocity vs. position decoding (see Table 1)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "train two MRNN networks",
+                                "combine position and velocity outputs"
+                            ],
+                            "num_characters": 1030,
+                            "outline_medium": [
+                                "combine position and velocity outputs"
+                            ],
+                            "outline_short": [
+                                "describe network output calculation"
+                            ]
+                        },
+                        {
+                            "title": "Training and Running the Networks",
+                            "paragraphs": [
+                                "A network is simulated by integrating equation 0.1 using the Euler method at a time step of \u0394t=\u03c4/5 and then evaluating equation 0.3.",
+                                "The parameters of the network are trained offline to reduce the averaged squared error between the measured kinematic training data and the output of the network, z(t). Specifically, we use the Hessian-Free (HF) optimization method for RNNs (but adapted to the continuous-time MRNN architecture). HF is an exact 2nd order method that uses back-propagation-through-time to compute the gradient of the error with respect to the network parameters. The set of trained parameters is {Jxf, Jfu, Jfx, bx, bz}. The HF algorithm has some critical parameters, such as the minibatch size, the initial lambda setting, and the max number of CG iterations. We set these parameters to \u2155 times the total number of trials, 0.1, and 50, respectively.",
+                                "After training, the networks are copied into the embedded real-time environment (xPC), and run in closed-loop, to operate online in BMI mode. Specifically, at each time point the RNN module receives binned spikes and outputs the current estimate of the hand position, which is used to display the cursor position on the screen. During BMI mode the neural spikes are not perturbed in any way. The values vx(0) and vy(0) are initialized to 0, as is the MRNN hidden state.",
+                                "**Model Parameters**",
+                                "The parameters of the model of an exemplary embodiment are listed in Table 1.",
+                                "**Remark on the Use of Multiple Days of Training Data**",
+                                "One critical aspect of the invention is using multiple days of training data. At first glance, it may seem straightforward that more data should always improve the quality of performance on some supervised system, such as a neural network. However, this is only true under a very specific and very commonly met assumption. This assumption is *not* met in the BMI setting. The assumption is that the data used to optimize (\u201ctrain\u201d) the neural network comes from the same distribution as the data used in the network during operation (during so-called \u201cvalidation\u201d or \u201ctesting\u201d). When this assumption is met, indeed more training data leads to a better neural network that performs better on generalization testing. To reiterate, this assumption is *not* met in the neural data used to train BMIs.",
+                                "As an example analogous to the BMI setting, imagine that we are interested in building a neural network to classify hand written letters from different users. Specifically, we want to classify different users based on how they write the letter \u2018h\u2019 (e.g. user 1 wrote these \u2018h\u2019 letters, while user 2 wrote those \u2018h\u2019 letters.) If our dataset contained only handwritten \u2018h\u2019 letters, then adding more and more \u2018h\u2019 letters would definitely improve our classification of user 1 from user 2, as per common understanding. However, imagine that we had access to other letters that the users wrote, such as \u2018n\u2019, and \u2018x\u2019. If our job is only to classify different users based on the letter \u2018h\u2019, then it appears that including \u2018x\u2019 as training data to an \u2018h\u2019 classifier could only hurt the it's performance on classifying the letter \u2018h\u2019.",
+                                "However, you could also reason that if you included \u2018n\u2019 in your \u2018h\u2019 classifier, perhaps one could still improve the classifier because the letter \u2018n\u2019 shares some common features with the letter \u2018h\u2019. It's not at all clear what would happen if we threw in the letters from \u2018a\u2019 to \u2018z\u2019. We can summarize that adding more training data (letters different from \u2018h\u2019), when the data does not come from the test distribution (\u2018h\u2019 letters), will not obviously help improve the network's performance.",
+                                "The previous example is analogous to current situation in BMI research. We would like to classify different user intentions, such as moving a computer cursor up or down (analogous to classifying user 1 or user 2) based on neural data (the letters). However, each day the neural data upon which we classify changes dramatically (some days we have \u2018h\u2019 letters to classify user 1 vs user 2, some days we have \u2018x\u2019 letters). Further, the changes in neural data are not under our control. So we never know whether we are going to be looking at an \u2018h\u2019 or an \u2018x\u2019 or a \u2018n\u2019. If it's an \u2018h\u2019 day, than using a previous \u2018x\u2019 day seems like a bad idea.",
+                                "It is a fact, in the BMI setting, the neural data collected using modern devices (e.g., Utah multi electrode array) varies dramatically from day-to-day, even when the subject is requested to perform the exact same task, and the experimental conditions are reproduced to as exacting conditions as the experimental environment will allow. It is unclear why the neural data varies so dramatically, although many believe it is a combination of the underlying complexities of the neural code, combined with the inevitable limitations of reading biological electrical signals with limited silicon-based hardware.",
+                                "The variation in neural signals has led to the widely held view in the BMI field that using data from multiple days is in fact quite problematic. As a result, the standard\u2014and state of the art\u2014practice is to record training data each and every day, and perhaps more than once a day. This training data is then used to run a BMI decoder for some amount of time on that same day. Anecdotally, many researchers have tried to incorporate more data than just a single day, though it is widely held as a bad idea because it often fails to improve things. Sometimes using yesterday's data as well as today's data improves things, sometimes it does not. Surely using data from over 1 month ago is a bad idea to include in a training set for today's BMI decoder.",
+                                "These widely held views about which data to use for training a closed-loop BMI decoder are based primarily on using a linear decoding method, the Kalman filter. As a linear method, the Kalman filter can only give an average response to many days of training data, so if neural data from one month ago is indeed different from today's neural data, indeed the Kalman filter trained using the old data will result in a very poor decoder on new data from today. Thus the vast majority of experts (likely all) in the field would consider it non-straightfoward to devise a method whereby previous data from three to six months ago, as we have shown empirically, is helping to decode today's neural data.",
+                                "For our invention, we made a systematic study of how one day's neural data compares to another day's. We did this using an analysis technique called the principal subspace angle. The scientific result of this analysis is that some days are more similar to others, while some days are very different. Further, similar neural data tends to come in blocks of time, but oddly, data from many months ago can be quite similar to today's neural data (the exact similarity structure is beyond the scope of this introduction). Naturally, it would be desirable to use only training data from days that are similar to the day on which you were interested in running the decoder (use \u2018n\u2019s and not \u2018x\u2019s to help classify the users 1 and 2 based on how they write the letter \u2018h\u2019). However, it is very hard to know, a priori, which days will help.",
+                                "To sidestep this problem, we used a highly nonlinear decoder, a multiplicative recurrent neural network (MRNN). The MRNN is powerful enough to handle the varying neural data from many days, even when the neural data is significantly different from day to day. So long as there are some similarities in the neural data between days (e.g. a \u2018n\u2019 similar to an \u2018h\u2019), the MRNN is smart enough to use this data to improve the BMI decode. If the training data bears little similarity to today's neural data (\u2018x\u2019 letters are not similar to \u2018h\u2019 letters), the MRNN is smart enough to ignore it while decoding today's neural data.",
+                                "Embodiments of the invention could be envisioned as a brain machine interface controlling a device such as a robotic arm, a prosthetic device or a cursor on a computer screen. The brain machine interface receives neural signals from a subject's brain, which are processed by one or more neural decoders. The neural decoders are either functionalized with method steps to execute the signal processing steps and/or are hardware systems for processing the neural signals as described herein. The neural decoders could include computer hardware and software devices/technology for its operation(s). The neural decoders are interfaced with the device to control the kinematics of the device based on the processed neural signals."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "simulate network using Euler method",
+                                "evaluate network output",
+                                "train network offline",
+                                "use Hessian-Free optimization method",
+                                "set critical parameters",
+                                "copy network into embedded real-time environment",
+                                "run network in closed-loop",
+                                "receive binned spikes",
+                                "output hand position",
+                                "display cursor position",
+                                "initialize velocity values",
+                                "initialize MRNN hidden state",
+                                "describe model parameters",
+                                "remark on using multiple days of training data",
+                                "describe assumption of data distribution",
+                                "describe analogous example of handwritten letter classification"
+                            ],
+                            "num_characters": 8491,
+                            "outline_medium": [
+                                "simulate network using Euler method",
+                                "train network using Hessian-Free optimization",
+                                "set optimization parameters",
+                                "copy network to real-time environment",
+                                "run network in closed-loop",
+                                "initialize network state",
+                                "use binned spikes as input",
+                                "output hand position"
+                            ],
+                            "outline_short": [
+                                "simulate network using Euler method",
+                                "train network using Hessian-Free optimization",
+                                "copy trained network to real-time environment",
+                                "run network in closed-loop BMI mode"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce Big-Data Multiplicative Recurrent Neural Network (BD-MRNN)"
+                    ],
+                    "num_characters": 355,
+                    "outline_medium": [
+                        "define Big-Data Multiplicative Recurrent Neural Network (BD-MRNN)"
+                    ],
+                    "outline_short": [
+                        "define MRNN model and training method"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A brain machine interface to control a device, comprising: a neural decoder wherein a continuous-time multiplicative recurrent neural network has been trained as a neural to kinematic mapping function with neural signals as the input to the neural decoder and kinematics to control the device as the output of the neural decoder.",
+        "2. The brain machine interface as set forth in claim 1, wherein the outputted kinematics is normalized position over time and velocity over time.",
+        "3. The brain machine interface as set forth in claim 1, wherein the device to be controlled is a robotic arm, a prosthetic device or a cursor on a computer screen.",
+        "4. The brain machine interface as set forth in claim 1, wherein neural training data used for training of the neural to kinematic mapping function has been modified.",
+        "5. The brain machine interface as set forth in claim 4, wherein neural training data has been modified by randomly adding and removing spikes such that the mean number of spikes is preserved on average.",
+        "6. The brain machine interface as set forth in claim 1, wherein the neural decoder has been trained with neural and kinematic data sets collected over multiple days.",
+        "7. The brain machine interface as set forth in claim 1, wherein the neural decoder has been trained with neural and kinematic data sets collected over five or more days."
+    ]
+}

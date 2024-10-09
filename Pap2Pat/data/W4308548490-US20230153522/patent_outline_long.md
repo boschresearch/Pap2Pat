@@ -1,0 +1,148 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce natural language processing
+- motivate machine learning algorithms
+- describe search indexing
+- limitations of image captioning
+
+## SUMMARY
+
+- introduce image captioning network
+- describe training process
+- application of image captioning
+- embodiment of image captioning system
+- summarize image captioning method
+
+## DETAILED DESCRIPTION
+
+- introduce image captioning
+- limitations of conventional image captioning
+- motivate multi-modal reward function
+- describe machine learning model
+- describe training component
+- summarize advantages over conventional systems
+- describe grammar score-based training
+- describe negative training sample-based training
+- describe multi-modal text and image encoder neural networks
+- describe applications in image searching
+- reference figures for architecture and process examples
+
+### Image Search System
+
+- introduce image search system
+- describe user interface
+- define input component
+- describe user device
+- introduce image search apparatus
+- describe training component
+- describe search component
+- describe machine learning model
+- describe processor unit
+- describe memory unit
+- describe communication with user device and database
+- describe server implementation
+- describe encoding images and generating captions
+- describe storing encoded images and captions in database
+- describe receiving query from user device
+- describe retrieving images and captions based on query
+- describe presenting images and captions to user
+- introduce artificial neural network (ANN)
+- describe ANN nodes and edges
+- describe training process
+- describe loss function
+- describe hidden layers
+- describe hidden representations
+- introduce cloud computing
+- describe database
+- describe database schema
+- describe text-to-image searching
+- describe encoding images
+- describe generating captions
+- describe storing encoded images and captions in database
+- define image search system
+- introduce apparatus components
+- describe processor unit
+- describe memory unit
+- describe training component
+- introduce reinforcement learning
+- describe reward function computation
+- describe parameter update
+- describe attribute-specific caption selection
+- describe negative training sample generation
+- describe multi-modal encoder training
+- describe search component
+- describe search query processing
+- describe image retrieval
+- describe image presentation
+- introduce machine learning model
+- describe image captioning network
+- introduce convolutional neural networks
+- introduce recurrent neural networks
+- describe image encoding
+- describe caption generation
+- describe training process
+- introduce transformer model
+- describe attention mechanism
+- describe multi-modal encoder
+- introduce contrastive language-image pre-training
+- describe grammar network
+- describe grammar score computation
+- describe positive training sample selection
+- describe negative training sample generation
+- describe multi-modal encoder fine-tuning
+- describe augmented reward function computation
+- conclude grammar network
+- introduce image search system
+- describe image captioning
+- motivate image captioning network
+- describe image captioning process
+- encode image using image captioning network
+- decode hidden image representation
+- train image captioning network
+- describe training process
+- receive training image
+- generate training caption
+- encode training caption and image
+- compute reward function
+- update image captioning network parameters
+- describe fine-tuning multi-modal encoder
+- select text as positive training sample
+- generate negative training sample
+- train multi-modal encoder using contrastive learning loss
+- describe method for training neural network
+- generate training caption for training image
+- encode training caption and image
+- compute reward function
+- update image captioning network parameters
+- describe fine-tuning neural network based on grammar score
+- compute grammar score for output of multi-modal encoder
+- train multi-modal encoder based on grammar score
+- describe fine-tuning neural network based on negative training sample
+- select grammatically correct caption as positive training sample
+- generate negative training sample
+- train multi-modal encoder using contrastive learning loss
+- describe fine-tuning neural network based on specific attribute
+- select attribute-specific caption as positive training sample
+- generate negative training sample by removing words related to specific attribute
+- train multi-modal encoder based on negative training sample
+- describe system for training machine learning model
+- receive training image from database
+- generate training caption for training image
+- encode training caption and image
+- compute reward function
+- update image captioning network parameters
+- describe system for fine-tuning multi-modal encoder
+- select text as positive training sample
+- generate negative training sample
+- train multi-modal encoder using contrastive learning loss
+- describe system for training neural network
+- generate training caption for training image
+- encode training caption and image
+- compute reward function
+- update image captioning network parameters
+- describe system for fine-tuning neural network based on grammar score
+- compute grammar score for output of multi-modal encoder
+- train multi-modal encoder based on grammar score
+

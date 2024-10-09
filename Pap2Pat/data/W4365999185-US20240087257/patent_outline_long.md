@@ -1,0 +1,148 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical area
+
+## BACKGROUND
+
+- describe social media context
+
+## DETAILED DESCRIPTION
+
+- introduce system for online interactions
+- describe system operation with respect to examples
+- motivate generating personalized interactions
+- describe first example of system implementation
+- describe user manipulation of AR object
+- describe sending video with manipulated AR object
+- describe friend's interaction with received video
+- describe preservation of AR object state
+- describe second example of system implementation
+- describe capturing video of real-world object
+- describe scanning and storing 3D version of object
+- summarize system capabilities
+- describe generating object using drawing application
+- describe extracting object from image or video
+- describe capturing AR object
+- describe recording video showing object response
+- describe generating metadata relating to object response
+- describe sending video and metadata to second user
+- describe watching video and selecting object for presentation
+- describe preserving object state using metadata
+- describe converting 2D object to 3D object
+- describe applying technology to other mobile devices
+- introduce detailed description of systems and methods
+- describe systems, methods, techniques, and instruction sequences
+- define terms used in description
+- describe system components and their connections
+- introduce block diagram of networked system
+- describe system 100 components and their functions
+- describe client device and its components
+- describe media content processing server
+- describe messaging application server
+- describe user sharing media content
+- describe user editing media content
+- describe media content processing server identifying music
+- describe user selecting media content for sharing
+- describe user viewing media content
+- describe mobile device components
+- describe flash memory
+- describe camera
+- describe image display
+- describe mobile display driver
+- describe display controller
+- describe user input layer
+- describe digital transceiver
+- describe short-range transceivers
+- describe GPS receiver
+- describe network communication interface
+- describe CPU
+- describe memory system
+- describe flash memory
+- describe RAM
+- describe audio transceiver
+- describe messaging application
+- describe object capture and modification software
+- describe drawing software
+- describe system for generating objects
+- describe example of system operation
+- illustrate steps of receiving, displaying, modifying, and sending animated objects
+- receive notification of message from user 1
+- play video included in received message
+- display blob 300 jumping in response to facial expression
+- modify blob 300 using drawing application
+- record modified blob 300
+- send modified blob 300 back to user 1
+- illustrate extracting object from picture or video
+- capture AR object using messaging application
+- extract object from video using video segmentation software
+- capture video of object to send to friend
+- store 3D version of object in gallery
+- select AR balloon Lens
+- generate recording of user action
+- blow up AR balloon in response to facial expression
+- send video to friend
+- receive video from friend
+- play back video on display
+- select AR flower Lens
+- record video of plucking flowers
+- attach flowers to AR balloon
+- send recording back to user 1
+- illustrate playback of thank you video
+- generate object in video for sharing
+- extract object from image or video
+- capture AR object
+- manipulate object to change features
+- record video showing object responding to user action
+- send video to one or more users
+- receive notification of message with video
+- watch video with object from another user
+- select object in video
+- extract object from video along with metadata
+- present object in display environment
+- manipulate object to change features
+- record video showing object responding to user action
+- send video back to user who sent message
+- describe messaging application
+- describe functionality of messaging application
+- describe components of machine 600
+- describe processors 610
+- describe memory 630
+- describe storage unit 636
+- describe instructions 616
+- describe main memory 632
+- describe static memory 634
+- describe machine-readable medium 638
+- define memory
+- describe I/O components 650
+- describe output components 652
+- describe input components 654
+- describe biometric components 656
+- describe motion components 658
+- describe environmental components 660
+- describe position components 662
+- describe communication components 664
+- describe network 680
+- describe devices 670
+- describe coupling 682
+- describe coupling 672
+- describe transmission medium
+- describe non-transitory machine-readable medium
+- describe machine-readable device
+- describe concurrent operations
+- describe combined structures
+- describe separate components
+- describe variations and modifications
+- describe scope of system configurations
+- describe inclusive or exclusive sense of "or"
+- describe plural instances
+- describe boundaries between resources
+- describe allocations of functionality
+- describe ordinary meaning of terms
+- describe relational terms
+- describe non-exclusive inclusion
+- describe approximate measurements
+- describe grouping of features
+- describe claimed subject matter
+

@@ -1,0 +1,26 @@
+# DESCRIPTION
+
+## FIELD
+
+## BACKGROUND
+
+## SUMMARY
+
+## DESCRIPTION OF THE PREFERRED EMBODIMENTS OF THE INVENTION
+
+### Isolation of Clinical Strains
+
+### Example 2
+
+### Example 3
+
+### Example 4
+
+### Example 5
+
+### Example 6
+
+### Example 7
+
+### Example 8
+

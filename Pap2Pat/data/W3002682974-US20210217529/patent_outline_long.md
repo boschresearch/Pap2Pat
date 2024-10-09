@@ -1,0 +1,122 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce healthcare technology
+
+## SUMMARY
+
+- introduce clinical risk prediction
+- outline method for assessing reliability
+- describe embodiments and variations
+
+## DETAILED DESCRIPTION
+
+- introduce clinical decision support system
+- motivate need for reliability measure
+- describe conventional model-dependent methods
+- describe conventional model-independent methods
+- limitations of model-independent approaches
+- introduce trust score approach
+- limitations of trust score approach
+- motivate need for proactive reliability assessment
+- introduce clinical decision support system embodiment
+- describe system components
+- describe reliability assessment module
+- define clinical risk score
+- describe method for determining reliability
+- introduce generative models
+- derive expression for alternative risk score
+- describe Bayes' theorem application
+- estimate likelihoods using generative models
+- describe alternative formula for probability function
+- describe server and database components
+- describe clinician's prior decisions database
+- introduce neural network embodiment
+- describe neuromorphic systems
+- describe neural network functionality
+- introduce method for assessing reliability
+- describe segregating EMR data into positive and negative sets
+- train generative models
+- sample synthetic data
+- process samples through classifier
+- determine convergence of numerical distributions
+- calculate relative likelihoods
+- calculate alternative risk score
+- compute absolute difference between estimates
+- calculate reliability determinations
+- match patient features with reliability determinations
+- display reliability of clinical risk scores
+- modify clinician's user interface
+- alert clinician to unreliability
+- review patient's EMR
+- determine primary care physician
+- issue electronic communication
+- integrate unreliability score into decision making
+- test method using real-world data
+- compute unreliability metric
+- analyze effect of input parameters
+- consider limiting cases
+- compute unreliability for GRACE risk score
+- evaluate performance of GRACE score
+- compute Brier score
+- normalize Brier score
+- compute AUC
+- assess discriminatory ability
+- compute trust score
+- evaluate performance of trust score
+- generalize findings to other outcomes
+- generate model to predict in-hospital stroke
+- compute unreliability scores
+- evaluate performance of Stroke Risk model
+- describe cloud computing model
+- define cloud computing
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- describe infrastructure as a service (IaaS)
+- describe deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- illustrate cloud computing environment
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe resource provisioning
+- describe metering and pricing
+- describe security
+- describe user portal
+- describe service level management
+- describe service level agreement planning and fulfillment
+- describe workloads layer
+- describe mapping and navigation
+- describe software development and lifecycle management
+- describe virtual classroom education delivery
+- describe data analytics processing
+- describe transaction processing
+- describe clinical risk score evaluation
+- describe processing system
+- describe central processing units
+- describe system memory
+- describe mass storage
+- describe input/output adapter
+- describe network adapter
+- describe display adapter
+- describe graphics processing unit
+- describe operating system
+- describe various embodiments
+- describe alternative embodiments
+- describe connections and positional relationships
+- describe tasks and process steps
+- describe technologies
+- describe conventional techniques
+- describe functions or acts
+- describe terminology
+- describe computer program product
+

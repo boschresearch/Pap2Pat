@@ -1,0 +1,304 @@
+# DESCRIPTION
+
+## SUMMARY
+
+- introduce microphone system
+- describe maximum likelihood method
+- explain direction-of-arrival estimation
+- introduce dictionary of relative transfer functions
+- describe beamforming purposes
+- estimate signal-to-noise ratio
+- motivate microphone system
+- describe hearing device
+- introduce microphone array
+- describe signal processor
+- estimate direction-of-arrival
+- determine posterior probability
+- calculate log likelihood
+- describe database of relative transfer functions
+- introduce calibration procedure
+- describe advantages of microphone system
+- describe own voice problems
+- introduce signal model
+- describe additive noise
+- calculate log likelihood for two microphones
+- describe adaptive covariance smoothing
+- estimate signal-to-noise ratio
+- determine smoothing time constants
+- describe voice activity detector
+- estimate presence of speech
+- update covariance matrices
+- classify input signal
+- describe high, medium, and low SNR classes
+- update covariance matrices based on classification
+- change dictionary size based on input sound level
+- select dictionary elements based on calibration signal
+- individualize dictionary elements to user
+- estimate DOA based on limited frequency bandwidth
+- estimate posterior probability independently in each frequency band
+- estimate posterior probability jointly across frequency bands
+- utilize additional information
+- describe eye gaze information
+- describe head position and movement information
+- receive information from another device
+- describe own voice look vector
+- describe hearing aid
+- describe beamformer filtering unit
+- provide beamformed signal
+- describe post filter
+- calculate beamformer filtering weights
+- smooth estimated directions
+- perform smoothing over time, frequency, and angular direction
+- describe feedback detector
+- weight posterior probability based on feedback
+- describe hearing device components
+- introduce hearing device
+- describe portable device
+- introduce forward path
+- describe signal processor
+- introduce analysis path
+- describe frequency domain processing
+- describe time domain processing
+- introduce AD conversion
+- describe sampling rate
+- introduce time frame
+- describe frame length
+- introduce AD converter
+- introduce DA converter
+- introduce TF-conversion unit
+- describe time-frequency representation
+- introduce filter bank
+- introduce Fourier transformation unit
+- describe frequency range
+- introduce signal splitting
+- describe frequency bands
+- introduce detectors
+- describe status signals
+- introduce level detector
+- describe threshold value
+- introduce voice detector
+- describe voice detection
+- introduce own voice detector
+- describe movement detector
+- introduce classification unit
+- describe current situation
+- introduce other functionality
+- describe use of microphone system
+- introduce method of operating microphone system
+- describe providing electric input signals
+- estimate direction of target sound source
+- describe maximum likelihood methodology
+- introduce database of relative transfer functions
+- describe posterior probability
+- determine most likely directions
+- introduce computational complexity reduction
+- describe DOA estimation
+- introduce adaptive covariance smoothing
+- describe computer-readable medium
+
+## Definitions
+
+- define hearing device
+- describe types of hearing devices
+- specify components of hearing device
+- detail signal processing circuit
+- describe output unit
+- specify types of output transducers
+- describe implantable vibrators
+- describe output electrodes
+- define hearing system
+- define binaural hearing system
+- describe auxiliary devices
+- specify applications of hearing devices
+- describe figures
+- scope of applicability
+
+## DETAILED DESCRIPTION OF EMBODIMENTS
+
+- introduce hearing devices
+- define signal model
+- describe microphone signals
+- outline analysis filterbank
+- derive DFT coefficients
+- assume independence across time and frequency
+- collect DFT coefficients in a vector
+- define relative transfer function
+- decompose target vector
+- write inter-microphone CPSD matrix
+- assume model for noise covariance matrix
+- summarize covariance matrix
+- introduce maximum likelihood estimation
+- assume RTF dictionary available
+- describe probability distribution of X(l)
+- define likelihood function
+- derive log-likelihood function
+- compute log-likelihood for a particular dθ
+- derive ML estimates of λV(l) and λS(l)
+- define blocking matrix
+- derive ML estimate of λV(l)
+- derive ML estimate of λS(l)
+- find ML dθ* estimate of dθ
+- introduce ML estimate of RTF vector
+- derive efficient computation of log-likelihood
+- simplify expression for M=2 microphone situation
+- compute MVDR beamformers
+- compute output variances of beamformers
+- compute determinants
+- compute log-likelihoods
+- discuss updating CX and CV matrices
+- illustrate sound segment over time
+- discuss SNR-dependent smoothing coefficients
+- illustrate smoothing coefficients versus SNR
+- discuss constrained ML RTF estimators
+- estimate ML RTF vectors jointly across frequency bands
+- compute posterior DOA probabilities
+- discuss additional modalities
+- introduce variable for additional information
+- define total information available
+- define likelihood function
+- compute maximum likelihood estimate of dθ
+- discuss evaluating Eq. (26)
+- derive Eq. (13)
+- apply Eq. (14) to Eq. (13)
+- simplify expression for M=2 case
+- derive Eq. (17)
+- discuss target cancelling beamformer weights
+- compute output variances of beamformers
+- compute determinants
+- discuss updating CX and CV matrices
+- illustrate sound segment over time
+- discuss SNR-dependent smoothing coefficients
+- illustrate smoothing coefficients versus SNR
+- discuss constrained ML RTF estimators
+- estimate ML RTF vectors jointly across frequency bands
+
+### Example
+
+- introduce statistically independent X(l) and e(l)
+- derive equation for f_o(l) using independence assumption
+- define maximum a posteriori (MAP) estimates of dθ
+- derive equation for MAP estimates using likelihood and prior probability
+- discuss use of additional information signal e(n) in prior probability
+
+### Example
+
+- propose deriving prior probability P(dθ) from additional information signal e(n)
+- describe use of eye-gaze signal to build histogram of preferred directions
+- normalize histogram into probability mass function P(dθ)
+- discuss use of other sensor data in prior probability
+- illustrate scenario with two talkers and listener wearing hearing system
+- describe shift in speech activity and corresponding change in eye gaze
+- use eye gaze to resolve left-right confusions
+- illustrate distribution function for likely values of eye gaze angle
+- discuss use of distribution function to qualify likelihood estimate
+- illustrate joint likelihood function across frequency
+- define joint direction-of-arrival decision
+- discuss advantage of finding most likely direction directly from joint likelihood function
+- describe application of non-uniform prior probability
+- discuss computational advantage of maximizing logarithm of posteriori probability
+- define joint direction decision across both hearing instruments
+- discuss advantage of avoiding exchange of microphone signals
+- describe selection of local likelihood across instruments
+- illustrate user wearing binaural hearing system
+- describe geometrical setup of user and sound source
+- discuss direction-of-arrival of sound at left and right hearing devices
+- describe error in estimated look vector due to hearing aid tilt
+- discuss accounting for different directions of hearing instruments
+- describe use of movement sensor to detect head turn
+- discuss re-estimation of covariance matrices after head turn
+- describe use of accelerometer and magnetometer to determine instrument orientation
+
+## Examples of Implementation
+
+- show graphical representations of dictionaries
+- introduce uniformly distributed look vectors
+- discuss pruning dictionary elements
+- motivate arccos-scale distribution
+- illustrate distribution on arccos-scale
+- discuss saving computations and memory
+- introduce dictionary elements in frontal half plane
+- include single dictionary element for back direction
+- add "own voice" look vector to dictionary
+- discuss uniform prior in dictionary
+- compare dictionaries with different number of elements
+- motivate non-uniform prior probability
+- individualize or estimate dictionary elements
+- include relative transfer functions at different distances
+- discuss transfer functions from different elevation angles
+- minimize computational complexity
+- down sample to reduce complexity
+- reduce number of dictionary elements
+- reduce number of frequency channels
+- remove low-importance terms in likelihood function
+- evaluate likelihood function for different dictionary elements
+- introduce reference element for likelihood evaluation
+- compare likelihood values of dictionary elements and reference
+- determine if maximum among dictionary elements is global
+- estimate θ-value based on reference value
+- evaluate likelihood function with sparse dictionary elements
+- determine if dictionary element qualifies as global maximum
+- illustrate case with all dictionary elements evaluated
+- show coinciding symbols for elements in both dictionaries
+- illustrate angular distribution of dictionary elements
+- discuss limiting computations to "sunny" side of head
+- evaluate likelihood function with non-shadow side elements
+- combine likelihood functions from both instruments
+- normalize joint likelihood function
+- illustrate two-step procedure for evaluating likelihood function
+- evaluate likelihood function with uniformly distributed subset
+- evaluate likelihood function with subset close to most likely values
+- apply sequential evaluation to save computations
+- align subset of dictionary elements between instruments
+- discuss differences in likelihood values between instruments
+- apply log likelihood in fewer channels to reduce complexity
+- illustrate hearing device with directional microphone system
+- define MVDR beamformer
+- discuss estimate of Cv
+- implement MVDR beamformer via GSC structure
+- derive adaptive parameter β
+- store weights aθ and target canceling beamformer weights
+- recall likelihood function
+- optimize likelihood function
+- obtain stable estimate of direction
+- discuss smoothing time constants
+- assign prior probability
+- implement histogram for smoothing
+- fade between old and new look vector estimates
+- discuss feedback and weighting function
+- illustrate processing flow for beamformed signal
+- estimate covariance matrices
+- extract most likely direction
+- describe signal model
+- define signal model
+- introduce target signal and noise
+- define target power spectral density
+- define noise spectral power density
+- define inter-microphone cross-spectral covariance matrix
+- define inter-microphone cross-power spectral density matrix
+- estimate noisy covariance matrix
+- estimate noise covariance matrix
+- introduce adaptive smoothing scheme
+- define normalized covariance measure
+- propose log normalized covariance measure
+- calculate fast instance of normalized covariance measure
+- calculate instance with variable update rate
+- update fast covariance estimate
+- update variable covariance estimate
+- change smoothing factor based on deviation
+- illustrate covariance smoothing unit
+- illustrate pre-smoothing unit
+- illustrate variable smoothing unit
+- introduce target present input
+- introduce fast and slow attack and release times
+- store time constants in memory
+- update time constants during use
+- detect changes in acoustical sound scene
+- provide logarithmic domain implementation
+- provide mathematically correct implementation
+- combine structural features with method steps
+- define singular and plural forms
+- define "includes" and "comprises"
+- define "connected" and "coupled"
+- define "and/or"
+- provide scope of disclosure
+

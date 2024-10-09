@@ -1,0 +1,320 @@
+# DESCRIPTION
+
+## FEDERAL SPONSORSHIP
+
+- acknowledge government support
+
+## BACKGROUND
+
+- categorize cell separation methods
+- describe flow cytometer
+- limitations of FACS
+- limitations of MACS
+- motivate label-free methods
+- describe pinched flow fractionation
+- describe hydrodynamic filtration
+- describe other label-free methods
+
+## SUMMARY
+
+- introduce two-stage microfluidic device
+- describe particle focusing stage
+- describe particle separating stage
+
+## DETAILED DESCRIPTION
+
+- define scope of disclosure
+- explain terminology and limitations
+- describe range of values and intervening values
+- discuss incorporation of publications and patents by reference
+- outline structure of individual embodiments
+- describe techniques employed in embodiments
+- provide examples and accuracy of numbers
+- define singular and plural referents
+- define terms used in specification and claims
+
+### Discussion
+
+- introduce two-stage microfluidic devices and methods
+- motivate particle separation in biological and biomedical applications
+- describe limitations of current acoustic-based separation techniques
+- introduce sheathless flow focusing and separation
+- describe two-stage microfluidic device with non-sheath flow
+- outline first stage of particle focusing
+- outline second stage of particle separation
+- describe use of surface acoustic waves in first stage
+- describe use of surface acoustic waves in second stage
+- explain particle separation based on size and acoustic contrast factor
+- describe types of particles that can be separated
+- describe diameter range of particles
+- introduce FIG. 1.1 and two-stage microfluidic device
+- describe particle focusing stage
+- describe particle separating stage
+- outline surface acoustic wave generators and interference pattern
+- explain acoustic radiation forces and pressure fluctuations
+- describe material options for first channel
+- describe dimensions of first channel
+- describe interface between first and second channels
+- describe material options for second channel
+- describe dimensions of second channel
+- describe surface acoustic wave generators and transducers
+- describe wavelength, frequency, and power of surface acoustic waves
+- describe design and operation of two-stage microfluidic device
+- describe positioning of surface acoustic wave generators
+- outline independent generation of surface acoustic waves in each stage
+
+### Example 1
+
+- introduce label-free cell separation platform
+- motivate cell separation and sorting
+- describe current state of the art techniques
+- limitations of FACS and MACS
+- introduce label-free cell separation methods
+- limitations of each label-free method
+- motivate acoustic based separation methods
+- advantages of acoustic based methods
+- traditional bulk acoustic waves (BAW) devices
+- limitations of BAW devices
+- introduce standing surface acoustic wave (SSAW) devices
+- advantages of SSAW devices
+- current SSAW devices require two sheath flows
+- limitations of sheath flow
+- introduce novel SSAW based cell separation technique
+- describe two-stage microfluidic device
+- first stage aligns cells without sheath flow
+- second stage separates cells by size, density, compressibility, and acoustic contrast factor
+- describe operation of the device
+- embodiments of the present disclosure
+- motivate continuous separation and sorting of biological cells
+- describe acoustic force based separation
+- limitations of bulk acoustic wave devices
+- introduce standing surface acoustic waves (SSAW)
+- limitations of SSAW devices with sheath flow
+- motivate sheathless flow methods
+- introduce two-stage microfluidic channel
+- describe theoretical analysis and finite element simulation models
+- describe finite element model components
+- describe theoretical cell displacement analysis
+- derive cell migration time
+- motivate device design
+- introduce IDT finger pitch
+- select acoustic aperture
+- determine number of finger pairs
+- design channel width
+- determine channel lengths
+- calculate resonance frequency
+- fabricate IDTs on substrate
+- fabricate PDMS microchannel
+- bond PDMS microchannel to substrate
+- measure electrical impedance
+- conduct proof-of-concept experiment
+- capture particle distribution
+- separate particles based on size
+- discuss biomedical applications
+- separate leukocytes, red blood cells, and platelets
+- remove lipids from erythrocytes
+- detect and analyze circulating tumor cells
+- separate neural stem cells
+- discuss prior art
+- introduce microfluidic device
+- discuss label-free CD4+T cell counting
+- discuss microfluidic approaches to malaria detection
+- discuss tag-less method of sorting stem cells
+- discuss continuous particle separation
+- discuss pinched flow fractionation
+- discuss microfluidic devices for size-dependent separation
+- discuss hydrodynamic filtration
+- discuss deterministic lateral displacement
+- discuss gravity-driven microfluidic particle sorting
+- discuss microfluidic sorting in an optical lattice
+- discuss optically controlled cell discrimination
+- discuss experimental validation of structural health monitoring
+- discuss continuous high-throughput bioparticle sorter
+- discuss continuous particle size separation
+- discuss acoustic control of suspended particles
+- discuss focusing microparticles in a microfluidic channel
+- discuss ultrasonic standing wave manipulation
+- discuss advances in ultrasound biomicroscopy
+- discuss free flow acoustophoresis
+
+### Example 2
+
+- introduce particle separation
+- motivate flow-based methods
+- limitations of sheath flow
+- introduce microfluidic platform
+- describe sheathless particle separation
+- application of particle separation
+- motivate acoustic-based method
+- limitations of bulk acoustic waves
+- introduce surface acoustic wave (SAW) based techniques
+- describe SAW devices
+- motivate standing surface acoustic waves (SSAW)
+- limitations of current SSAW based particle separation
+- introduce sheathless SSAW based particle separation
+- describe two-stage design
+- illustrate design concept and working mechanism
+- describe first stage
+- describe second stage
+- derive acoustic radiation force
+- describe acoustic radiation force distribution
+- discuss particle displacement
+- discuss forces acting on particles
+- illustrate forces as a function of particle size
+- discuss time required for particle migration
+- illustrate time required for particle migration
+- describe device design and fabrication
+- specify SAW wavelength and IDT finger pitch
+- specify channel width and height
+- discuss resonance frequency
+- discuss channel aspect ratio
+- fabricate IDTs on substrate
+- fabricate PDMS microchannel
+- bond PDMS microchannel to substrate
+- describe IDT fabrication process
+- describe microchannel fabrication process
+- describe bonding process
+- set up experiment
+- describe experimental setup
+- study effect of parameters on separation efficiency
+- describe experimental conditions
+- present results of particle separation
+- discuss results of particle separation
+- show distribution of particle streams
+- discuss optimization of input power and flow rate
+- present results of optimized separation
+- describe image acquisition and analysis
+- quantify separation efficiency
+- introduce particle separation
+- describe experimental setup
+- present results of particle counting analysis
+- show separation efficiency as function of power applied
+- investigate effect of flow rate on separation efficiency
+- show experimental efficiency results with different particle concentrations
+- discuss limitations of current design
+- suggest modifications for future improvements
+- highlight advantages of sheathless SSAW based particle separation
+- conclude with summary of results
+- list references
+- reference 1
+- reference 2
+- reference 3
+- reference 4
+- reference 5
+- reference 6
+- reference 7
+- reference 8
+- reference 9
+- reference 10
+- reference 11
+- reference 12
+- reference 13
+- reference 14
+- reference 15
+- reference 16
+- reference 17
+- reference 51
+
+### Example 3
+
+- introduce microfluidic sensor for condition monitoring
+- goal of detecting metal wear debris in lubrication oil
+- importance of condition monitoring in industries
+- limitations of vibration analysis
+- significance of lubrication oil analysis
+- relationship between debris particles and machine wear
+- limitations of offline lubrication oil analysis methods
+- need for real-time online methods
+- limitations of existing online methods
+- propose inductive Coulter counting principle
+- introduce particle separator and detection sensors
+- advantages of standing surface acoustic waves
+- propose multiplexed multichannel detection array
+- propose micromachining process for fabrication
+- propose demonstration of sensor utility
+- introduce Coulter counting principle
+- limitations of Coulter counting in non-conductive lubrication oil
+- propose inductive Coulter counting for metal particle detection
+- illustrate device design and working mechanism
+- demonstrate detection of metal particles
+- introduce ferrous and non-ferrous particle differentiation
+- propose inductive Coulter counting for particle differentiation
+- illustrate device design and working mechanism
+- demonstrate ferrous and non-ferrous particle differentiation
+- introduce particle separation in microfluidics
+- discuss optical separation methods
+- discuss fluidic-only separation methods
+- discuss electric separation methods
+- introduce dielectrophoresis separation
+- discuss limitations of dielectrophoresis
+- introduce acoustic methods for particle manipulation
+- discuss bulk acoustic wave generation
+- introduce standing surface acoustic waves
+- illustrate SSAW focusing device and working mechanism
+- propose SSAW for particle separation
+- discuss advantages of SSAW
+- conclude proposed microfluidic sensor
+- define acoustic contrast factor
+- motivate particle separation using SSAW
+- propose SSAW for metal debris particle separation
+- introduce microfluidic device for condition monitoring
+- describe particle separation process
+- illustrate SSAW particle separator concept
+- explain Stage I of particle separator
+- explain Stage 2 of particle separator
+- describe advantages of SSAW particle separator
+- introduce multiplexed detection array concept
+- motivate inductive Coulter counting principle
+- propose planar coil sensing mechanism
+- describe inductive Coulter counting principle
+- illustrate single detector design
+- demonstrate feasibility of planar coil detection
+- propose signal multiplexing for parallel detection
+- illustrate multiplexing concept
+- describe instrumentation circuit design
+- discuss demodulation circuitry design
+- outline multiplexer implementation
+- discuss digital hardware and software requirements
+- envision data transmission and processing
+- outline micromachining process
+- fabricate IDT microelectrodes
+- fabricate microfluidic channels and planar detection coils
+- bond components together
+- list references
+- cite Roylance et al. on wear debris
+- cite Rao on condition monitoring
+- cite Tucker et al. on LASERNET fines optical wear debris monitor
+- cite Saba on wear metal detection
+- cite Lukas and Anderson on spectroscopy
+- cite Januszkiewicz and Sulek on UV-fluorescence spectroscopic method
+- cite Bierlein on particle-size analysis
+- cite Kauffman on particle size and composition analysis
+- cite Bartik on filtration
+- cite Leugner on sediment tests and wear metal analysis
+- cite Eleftherakis et al. on particle counts in liquids
+- cite Reintjes et al. on optical debris monitoring
+- cite Gupta et al. on high speed image processing
+- cite LASERNET optical oil debris sensor
+- cite Van de Hulst on light scattering
+- cite numerous other references
+- list prior art references
+- describe microfluidic devices for particle separation
+- discuss dielectrophoretic separation methods
+- describe acoustic separation methods
+- discuss other particle separation methods
+- describe micro-Coulter counter devices
+- discuss micromachining and microfabrication techniques
+- describe electrowetting-based microgrippers
+- discuss photopolymerization-induced phase separation
+- describe wavelet transform-based denoising methods
+- discuss polyelectrolyte brushes under external electric field
+- describe amplitude modulated micro-Coulter counters
+- discuss high throughput multiplexed micro-Coulter counters
+- describe micromachined high throughput bioparticle sensors
+- discuss persistent self-assembled monolayers for micro/nano device fabrications
+- describe droplet soft microgrippers using electrowetting
+- discuss microfluidic sensors for metal wear detection in lubricants
+- interpret range format
+- define "about"
+- emphasize disclosure scope
+

@@ -1,0 +1,491 @@
+{
+    "id": "US20190139568",
+    "authors": [
+        "Gang Xiao",
+        "Qiang Hao"
+    ],
+    "title": "Beta tungsten thin films with giant spin Hall effect for use in compositions and structures with perpendicular magnetic anisotropy",
+    "date": "2018-12-17 00:00:00",
+    "abstract": "Methods, devices, and compositions for use with spintronic devices such as magnetic random access memory (MRAM) and spin-logic devices are provided. Methods include manipulating magnetization states in spintronic devices and making a structure using spin transfer torque to induce magnetization reversal. A device described herein manipulates magnetization states in spintronic devices and includes a non-magnetic metal to generate spin current based on the giant spin Hall effect, a ferromagnetic thin film with perpendicular magnetic anisotropy, an oxide thin film, and an integrated magnetic sensor. The device does not require an insertion layer between a non-magnetic metal with giant spin Hall effect and a ferromagnetic thin film to achieve perpendicular magnetic anisotropy.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "Methods, devices, and compositions are provided for use with spintronic devices including magnetic random access memory (MRAM) and spin-logic devices (SLD)."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical area"
+                    ],
+                    "num_characters": 156,
+                    "outline_medium": [
+                        "define technical area"
+                    ],
+                    "outline_short": [
+                        "define technical area"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Spin Hall effect (SHE), particularly giant spin Hall effect (GSHE), in non-magnetic metals with strong spin-orbit coupling (SOC), has received much attention in development and improvement of MRAM and SLD. See, Dyakonovet et al., Phys. Lett. A35, 459 (1971); Hirsch, Phys. Rev. Lett. 83, 1834 (1999); Azevedo et al., Phys. Rev. B 83, 144402 (2011); Vlietstra et al., Appl. Phys. Lett. 103, 032401 (2013); Liu et al., Phys. Rev. Lett. 106, 036601 (2011); Lee et al., Phys. Rev. B 89, 024418 (2014); Ganguly et al., Appl. Phys. Lett. 104, 072405 (2014); Liu et al., Science 336, 555 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Pai et al., Appl. Phys. Lett. 101, 122404 (2012); Mellnik et al., Nature 511, 449 (2014); Fan et al., Nature Materials 13, 699 (2014); Zhang, Phys. Rev. Lett. 85, 393 (2000). Large spin Hall angles (0) have been discovered in solids ranging from the simple SOC solids: platinum (\u03b8=0.08), tantalum (\u03b8=0.15), and tungsten (\u03b8=0.30) to topological insulators: Bi2Se3 (\u03b8=2.0-3.5) and BiSbTe3. See, Azevedo et al., Phys. Rev. B 83, 144402 (2011); Vlietstra et al., Appl. Phys. Lett. 103, 032401 (2013); Liu et al., Phys. Rev. Lett. 106, 036601 (2011); Lee et al., Phys. Rev. B 89, 024418 (2014); Ganguly et al., Appl. Phys. Lett. 104, 072405 (2014); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Pai et al., Appl. Phys. Lett. 101, 122404 (2012); Mellnik et al., Nature 511,449 (2014); Fan et al., Nature Materials 13, 699 (2014); Liu et al., Science 336, 555 (2012). The spin Hall angle is used to manipulate magnetization states in spintronic devices. See, Liu et al., Phys. Rev. Lett. 106, 036601 (2011); Liu et al., Science 336, 555 (2012); Fan et al., Nature Materials 13, 699 (2014). A material with a larger spin Hall angle is more efficient at converting longitudinal electrical charge current (Jc) to a transverse spin current (Js) than a material with a smaller spin Hall angle.",
+                        "Tungsten (W) has the largest spin Hall angle (0.3) among transition metals. The preparation of W has been developed to be compatible with modern semiconductor fabrication processes. W metallization processing is widely used for very-large-scale-integration (VLSI) circuits, and the stable and conductive \u03b1-W is more commonly used in semiconductor processing than \u03b2-W. See, Petroff et al., Appl. Phys. Lett. 44, 2545 (1973). Structures of \u03b2-W/ferromagnetic thin film (FM) resulting in perpendicular magnetic anisotropy (PMA) have not previously been obtained. For MRAM and SLD applications, PMA is required for high performance. The common practice of inserting a hafnium layer (e.g. \u03b2-W/Hf/FM) to encourage PMA has the deleterious effects of lowering the effective spin Hall angle and increasing fabrication complexity. See, Pai et al., Appl. Phys. Lett. 104, 082407 (2014).",
+                        "\u03b2-W has not been well studied in the context of GSHE, for example, the intrinsic spin Hall angle and spin diffusion length in bulk \u03b2-W previously remained undefined. The spin Hall angle dependency on \u03b2-W thin film thickness has not previously been measured and studied. Further, much effort has previously been spent to stabilize \u03b2-W. There is a need to develop methods of fabrication of stable \u03b2-W thin films that have a broad range of thicknesses and which simultaneously exhibit GSHE."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce spin Hall effect",
+                        "discuss giant spin Hall effect",
+                        "summarize prior art",
+                        "highlight limitations of prior art",
+                        "motivate tungsten research",
+                        "identify need for \u03b2-W thin films"
+                    ],
+                    "num_characters": 3289,
+                    "outline_medium": [
+                        "introduce spin Hall effect",
+                        "discuss prior art",
+                        "identify limitations"
+                    ],
+                    "outline_short": [
+                        "summarize prior art"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "A non-limiting exemplary embodiment herein provides a device for manipulating magnetization states in spintronic devices which includes a non-magnetic metal having a spin Hall angle of sufficient size to convert a longitudinal electrical charge current to a traverse spin current; a ferromagnetic thin film with perpendicular magnetic anisotropy having an interface with the non-magnetic metal, such that the non-magnetic metal yields a spin-transfer torque (STT) within the thin film that causes magnetization switching; and an integrated magnetic sensor that senses magnetic states representing digital bits.",
+                        "In various embodiments, the spin Hall angle is at least about 0.08. In an embodiment, the spin Hall angle is about 0.49. In an embodiment, the ferromagnetic thin film is (CoxFe100\u2212x)100\u2212yBy, which is also expressed as CoFeB, in which x and y are each an atomic percent. Each of x and y are greater than 0 and less than 100.",
+                        "In certain embodiments, the magnetic sensor is a ferromagnetic thin film such as CoFeB which exhibits anomalous Hall effect (AHE). In certain embodiments, the magnetic sensor is a magnetic tunneling junction or a giant magnetoresistive (GMR) element. In certain embodiments, the non-magnetic metal is \u03b2-form tungsten. In certain embodiments, the tungsten has a thickness within the range of about 3.0 nm to about 30 nm, for example, about 1.0 nm to about 7.0 nm, about 1.0 nm to about 10 nm, or about 10 nm to about 30 nm. In an embodiment, the non-magnetic metal has a resistivity of at least about 40 \u03bc\u03a9-cm.",
+                        "A non-limiting exemplary embodiment herein provides a method of making a structure for spin-transfer torque (STT)-induced magnetization reversal including depositing sequentially layers of W, CoFeB, and MgO on a thermally oxidized Si wafer using a high vacuum magnetron sputtering system to form a stack, such that the CoFeB layer of the stack has a thickness in a range of from about 1.0 nm to about 30.0 nm; depositing a capping layer or overlayer that prevents oxidation of the stack; and patterning the stack into standard Hall bars or alternative device forms. In various embodiments, the capping layer or overlayer includes tantalum. In certain embodiments, a capping layer is an outermost layer of the multilayer composition provided herein. In certain embodiments, an overlayer is a layer between the multilayer composition provided herein and additional layers of the device incorporating the multilayer composition.",
+                        "In various embodiments, the CoFeB layer of the stack has a thickness in a range of about 1.0 nm to about 10 nm, about 2.0 nm to about 15 nm, about 5.0 nm to about 20 nm, or about 10 nm to about 30 nm.",
+                        "A non-limiting exemplary embodiment herein provides a method for manipulating magnetization states in spintronic devices including coupling a non-magnetic metal having a spin Hall angle of size sufficient to convert a longitudinal electrical charge current to a traverse spin current, to a ferromagnetic thin film with perpendicular magnetic anisotropy, such that the non-magnetic metal yields a spin-transfer torque (STT) within the thin film resulting in magnetization switching; and sensing, by an integrated magnetic sensor, magnetic states that represent digital bits. In certain embodiments, the method further including, prior to depositing, the step of measuring the resistivity of the non-magnetic metal to identify the phase.",
+                        "A non-limiting exemplary embodiment herein provides a multilayer composition for manipulating magnetization states in spintronic devices, which includes a non-magnetic metal layer having a spin Hall angle that converts an electrical charge to a traverse spin current, in which the non-magnetic metal layer has a thickness selected from the group consisting of: less than about 8 nm, less than about 6 nm, less than about 4 nm, less than about 2 nm, or in a range of about 0.25 nm to about 30 nm; a free layer having perpendicular magnetic anisotropy and an interface with the non-magnetic metal layer, in which the free layer is configured to accept the traverse spin current from the non-magnetic metal layer producing spin-transfer torque (STT) in the free layer and magnetization switching; and an oxide barrier layer with a crystalline structure having an interface with the ferromagnetic layer.",
+                        "In various embodiments, the non-magnetic metal layer has a thickness selected from the range of about 0.1 nm to about 5.0 nm, about 0.5 nm to about 10 nm, about 5 nm to about 20 nm, or about 10 nm to about 30 nm. In certain embodiments, the composition is arranged in a stacked structure, for example, a Hall bar. In certain embodiments, the composition does not have an insertion layer, for example, does not have an insertion layer with hafnium. In certain embodiments, the switching current in the non-magnetic metal that induces magnetization reversal is about 106 A/cm2 in the free layer. In various embodiments, the free layer has a coercivity of at least about 0.1 Oe, at least about 0.5 Oe, at least about 1 Oe, at least about 5 Oe, at least about 10 Oe, at least about 15 Oe, at least about 20 Oe, or at least about 100 Oe. In an embodiment, the free layer is a ferromagnetic thin film.",
+                        "In certain embodiments, the composition further includes a capping layer or overlayer having an interface with the oxide barrier layer. In various embodiments, the spin Hall angle of the non-magnetic metal layer is at least about 0.05, at least about 0.1, at least about 0.5, at least about 1, and at least about 2. In various embodiments, the non-magnetic metal has a resistivity selected from the group consisting of: at least about 100 \u03bc\u03a9-cm, at least about 150 \u03bc\u03a9-cm, at least about 200 \u03bc\u03a9-cm, and at least about 250 \u03bc\u03a9-cm, at least about 300 \u03bc\u03a9-cm, at least about 350 \u03bc\u03a9-cm, at least about 400 \u03bc\u03a9-cm, and at least about 450 \u03bc\u03a9-cm. In various embodiments, the non-magnetic metal layer has a spin diffusion length of at least about 0.1 nm, at least about 0.5 nm, at least about 1 nm, at least about 2 nm, at least about 4 nm, at least about 5 nm, at least about 6 nm, or at least about 7 nm. In various embodiments, the tungsten has a thickness of about 1 nm, about 3 nm, about 5 nm, or about 7 nm. In various embodiments, tungsten has a thickness within the range of about 5 nm to about 30 nm, for example, about 5 nm to about 15 nm, about 10 nm to about 25 nm, or about 15 nm to about 30 nm.",
+                        "A non-limiting exemplary embodiment herein provides a method of manipulating magnetization states in a spintronic device, the method including applying an electric charge to a multilayer composition having: a non-magnetic metal layer with a spin Hall angle of size sufficient to convert an electrical charge to a traverse spin current; a free layer with perpendicular magnetic anisotropy having an interface with the non-magnetic metal layer; and an oxide barrier layer with a crystalline structure having an interface with the ferromagnetic layer; and creating spin-transfer torque (STT) in the free layer by the traverse spin current from the non-magnetic metal layer yielding magnetization switching.",
+                        "In certain embodiments, the method further includes the step of measuring the resistivity of the non-magnetic metal to identify the phase. In certain embodiments, the method further includes detecting with a magnetic sensor, magnetic states representing digital bits. In an embodiment, the free layer is a ferromagnetic thin film. In certain embodiments, the STT current for magnetization reversal is selected from a range of from about 104 A/cm2 to about 107 A/cm2. For example, the STT current for magnetization reversal is about 106 A/cm2. For example, the STT current is in a range of from about 104 A/cm2 to about 105 A/cm2, about 105 A/cm2 to about 106 A/cm2, or about 106 A/cm2 to about 107 A/cm2. In an embodiment, the STT current for magnetization reversal is about 106 A/cm2.",
+                        "A non-limiting exemplary embodiment herein provides a method of making a structure for manipulating magnetization states in a spintronic device, the method including depositing sequentially each of layers of tungsten, CoFeB, and MgO on a thermally oxidized Si wafer using a high vacuum magnetron sputtering system, such that the tungsten layer of the stack has a thickness of about 1 nm, about 2 nm, about 3 nm, about 4 nm, about 5 nm, about 6 nm, about 7 nm, or within a range of about 7 nm to about 30 nm; and depositing a capping layer or overlayer that prevents oxidation of the stack.",
+                        "In various embodiments, the tungsten layer of the stack has a thickness in a range of about 1.0 nm to about 10 nm, about 2.0 nm to about 15 nm, about 5.0 nm to about 20 nm, or about 10 nm to about 30 nm.",
+                        "In various embodiments, the sputtering system has a base pressure of less than about 0.5\u00d710\u22128 Torr, less than about 1\u00d710\u22128 Torr, less than about 2\u00d710\u22128 Torr, less than about 3\u00d710\u22128 Torr, less than about 1\u00d710\u22127 Torr, less than about 3\u00d710\u22127 Torr, 1\u00d710\u22126, or 3\u00d710\u22126 Torr. In various embodiments, the sputtering system has a sputtering pressure of at least about 0.5 mTorr, at least about 1 mTorr, at least about 2 mTorr, at least about 3 mTorr, or at least about 4 mTorr, at least about 5 mTorr, at least about 10 mTorr, or at least about 15 mTorr.",
+                        "In certain embodiments, the method further includes the step of depositing the CoFeB layer of the stack to a thickness of about 0.25 nm, about 0.5 nm, about 1 nm, about 1.5 nm, about 2 nm, about 2.5 nm, about 3 nm, or in the range of about 3 nm to about 20 nm. In certain embodiments, depositing is performed at an intermittent DC sputtering power selected from the group consisting of: at least about 1 W, at least about 3 W, at least about 5 W, at least about 7 W, or within a range of about 5 W to about 200 W. In certain embodiments, the sputtering power is within a range of about 5 W to about 25 W, about 10 W to about 50 W, about 25 W to about 75 W, about 50 W to about 100 W, 75 W to about 125 W, about 100 W to about 150 W, about 125 W to about 175 W, or about 150 W to about 200 W. In certain embodiments, the DC sputtering power is applied intermittently. In certain embodiments, the DC sputtering power is applied continuously. In certain embodiments, the step of depositing is performed at a rate of less than about 0.005 nm/s, less than about 0.01 nm/s, less than about 0.05 nm/s, less than about 0.1 nm/s, less than about 0.5 nm/s, less than about 1 nm/s, and less than about 5 nm/s, or less than about 10 nm/s. In an embodiment, the capping layer or overlayer includes tantalum. In another embodiment, the free layer is CoFeB.",
+                        "A non-limiting exemplary embodiment herein provides a multilayer composition for manipulating magnetization states in spintronic devices, the composition includes a non-magnetic metal layer having a spin Hall angle that converts an electrical current to a traverse spin current, the non-magnetic metal layer having a thickness that is less than the critical thickness (tc) of the non-magnetic layer for the formation of the highly resistive phase, and the thickness is greater than the spin diffusion length (\u03bbsf) of the non-magnetic layer having a resistivity at a temperature range of from about 5 K to about 600 K; a free layer having perpendicular magnetic anisotropy and an interface with the non-magnetic metal layer, the free layer being configured to accept the traverse spin current from the non-magnetic metal layer producing spin-transfer torque (STT) in the free layer and magnetization switching; and an oxide barrier layer with a crystalline structure having an interface with the free layer. In non-limiting exemplary embodiments, the temperature range is about 5 K to about 550 K. For example, the temperature range is between 5-10 K, 5-25 K, 10-50 K, 25-100 K, 75-150 K, 200-300 K, 250-350 K, 300-400 K, 350-450 K, 400-500 K, and 450-550 K.",
+                        "In certain embodiments of the composition, the resistivity is constant to within about 15% throughout a temperature range. For example, the resistivity varies +/\u221215%. Alternatively, the resistivity is not constant at different temperatures. In certain embodiments, the free layer is a ferromagnetic thin film. In certain embodiments, the composition further includes a capping layer or overlayer having an interface with the oxide barrier layer. In various embodiments, the spin Hall angle is selected from the group consisting of at least about 0.01, at least about 0.1, at least about 1, and at least about 10. For example, the spin Hall angle is selected from a range of from about 0.05 to about 0.25, about 0.2 to about 1.0, about 1.0 to about 5.0, or about 5.0 to about 10. In certain embodiments, the spin Hall angle is selected from a range of from about 0.05 to about 0.5.",
+                        "In certain embodiments, the composition is arranged in a stacked structure. In various embodiments, the non-magnetic metal is a 3d, 4d, or 5d transition metal, or their alloys. For example, the metal or the component of an alloy is selected from the group of metals consisting of: scandium, yttrium, titanium, zirconium, vanadium, niobium, tungsten, platinum, hafnium, molybdenum, ruthenium, rhodium, palladium, osmium, iridium, platinum, gold, and tantalum. In various embodiments, the non-magnetic metal is one of the metalloids or their alloys. For examples, the metal or the component of the alloy is selected from the group of metals including: gallium, germanium, arsenic, selenium, indium, tin, antimony, tellurium, thallium, lead, and bismuth. Spin-orbit coupling (SOC) among these metals is not negligible. In certain embodiments, the composition does not have an insertion layer, for example, the composition lacks an insertion layer comprising hafnium.",
+                        "Non-limiting exemplary embodiments of the non-magnetic metal include or contain \u03b2-form tungsten. In certain embodiments, the tungsten has a thickness within a range of from about 0.5 nm to about 100 nm. In non-limiting exemplary embodiments, the thickness is selected from a range of from about 3 nm to about 22 nm. In certain embodiments, the non-magnetic metal has a resistivity at room temperature of at least about 75 \u03bc\u03a9cm, at least about 150 \u03bc\u03a9-cm, at least about 225 \u03bc\u03a9-cm, at least about 300 \u03bc\u03a9-cm, at least about 375 \u03bc\u03a9-cm, at least about 450 \u03bc\u03a9-cm, or at least about 525 \u03bc\u03a9-cm. In certain non-limiting exemplary embodiments, the non-magnetic metal has a resistivity in a range from about 75 \u03bc\u03a9-cm to about 450 \u03bc\u03a9-cm.",
+                        "In certain embodiments of the composition, the ferromagnetic thin film has the composition of Co40Fe40B20 (in units of atomic percent). In various non-limiting embodiments, the ferromagnetic thin film has the general composition of (CoxFe100\u2212x)100\u2212yBy, where 0<x<100 and 0<y<100. This general composition is to be referred to as CoFeB, which includes Co40Fe40B20.",
+                        "In certain embodiments, the non-magnetic metal layer has a spin diffusion length of at least about 0.1 nm, at least about 1 nm, at least about 5 nm, at least about 10 nm, or at least about 20 nm. In non-limiting exemplary embodiments, the spin diffusion length is within a range of from about 0.1 nm to about 20 nm. For example, the spin diffusion length is about 10 nm.",
+                        "In certain embodiments, the stacked structure is annealed in a vacuum environment and subjected to an applied magnetic field whose direction is perpendicular to the plane of the stacked structure to obtain the perpendicular magnetic anisotropy. For example, the stacked structure is annealed at a temperature of at least about 50\u00b0 C., at least about 100\u00b0 C., at least about 200\u00b0 C., at least about 300\u00b0 C., at least about 400\u00b0 C., or at least about 500\u00b0 C. The duration of the annealing process is within the range of about 1 second and about 24 hours. In non-limiting exemplary embodiments, the temperature is in a range of from about 50\u00b0 C. to about 400\u00b0 C. In various embodiments, the vacuum environment is within the range of about 1\u00d710\u221212 Torr and 100 Torr. In certain embodiments, the applied magnetic field is within the range of about 1\u00d710\u22123 T and 20 T. In certain embodiments, the \u03b2-form tungsten prior to being annealed is single phase having an A3B solid with A15 crystal structure.",
+                        "A non-limiting exemplary embodiment herein provides a method of manipulating magnetization states in a spintronic device, the method including applying an electric current to a multilayer composition having: a non-magnetic metal layer with a spin Hall angle of size sufficient to convert an electrical current to a traverse spin current; a free layer with perpendicular magnetic anisotropy having an interface with the non-magnetic metal layer; and an oxide barrier layer with a crystalline structure having an interface with the ferromagnetic layer; and creating spin-transfer torque (STT) in the free layer by the traverse spin current from the non-magnetic metal layer yielding magnetization switching.",
+                        "In certain embodiments, the method further includes the step of measuring the resistivity of the non-magnetic metal to identify the phase. In certain embodiments, the free layer is a ferromagnetic thin film. In certain embodiments, the method further includes after creating STT, detecting with a magnetic sensor, magnetic states representing digital bits.",
+                        "In certain embodiments, the tungsten has a thickness selected from a range of from about 1 nm to about 100 nm. In non-limiting exemplary embodiments, the thickness is selected from a range of from about 3 nm to about 30 nm. For example, the thickness is in a range of from 1 nm-10 nm, 5 nm-25 nm, 20 nm-50 nm, 30 nm-75 nm, or 50 nm-100 nm.",
+                        "In certain embodiments, the method further includes, prior to applying the electric current, annealing the multilayer composition. In certain embodiments, the annealing step is performed at a temperature of at least about 50\u00b0 C., at least about 100\u00b0 C., at least about 200\u00b0 C., at least about 300\u00b0 C., at least about 400\u00b0 C., or at least about 500\u00b0 C. In an embodiment, the temperature is in a range of from about 50\u00b0 C. to about 300\u00b0 C.",
+                        "A non-limiting exemplary embodiment herein provides a method of making a structure for manipulating magnetization states in a spintronic device including the steps of: depositing sequentially layers of W, CoFeB, and MgO on a thermally oxidized Si wafer to form a stacked structure using a high vacuum magnetron sputtering system, in which the W layer of the stacked structure has a thickness in a range of from about 1 nm to about 100 nm. For example, the thickness is in a range of from 1 nm-10 nm, 5 nm-25 nm, 20 nm-50 nm, 30 nm-75 nm, or 50-100 nm.",
+                        "In certain embodiments, the method further includes, after depositing tungsten, CoFeB, and MgO, a step of depositing a capping layer or overlayer that prevents oxidation of the stacked structure. In an embodiment, the capping layer or overlayer is tantalum. In various embodiments, the sputtering system has a base pressure of less than about 1\u00d710\u221211 Torr, less than about 1\u00d710\u221210 Torr, less than about 1\u00d710\u22129 Torr, less than about 1\u00d710\u22128 Torr, less than about 1\u00d710\u22127 Torr, or less than about 1\u00d710\u22126 Torr. In various embodiments, the sputtering system has a base pressure in a range of from about 0.5\u00d710\u22128 Torr to about 3\u00d710\u22128 Torr. In certain embodiments, the sputtering system has a sputtering pressure of at least about 0.1 mTorr, at least about 1 mTorr, at least about 10 mTorr, at least about 20 mTorr, or at least about 30 mTorr. In certain non-limiting exemplary embodiments, the sputtering system has a sputtering pressure in a range of from about 0.5 mTorr to about 10 mTorr. In certain embodiments, the method further includes depositing the CoFeB layer of the stack at a thickness of about 0.1 nm, about 0.5 nm, about 1 nm, about 5 nm, about 10 nm, about 50 nm, or about 100 nm. In an embodiment, the CoFeB layer has a thickness in a range of from about 0.25 nm to about 3 nm.",
+                        "In certain embodiments, the depositing step is performed at an intermittent or continuous DC and RF sputtering power of at least about 1 W, at least about 10 W, at least about 100 W, or at least about 1000 W. In certain non-limiting exemplary embodiments, the depositing step is performed at an intermittent DC and RF sputtering power in a range of from about 1 W to about 7 W. In certain embodiments, depositing is performed at a rate of less than about 0.005 nm/s, less than about 0.01 nm/s, less than about 0.05 nm/s, less than about 0.5 nm/s, or within the range of about 0.1 nm/s to about 5 nm/s. In certain non-limiting exemplary embodiments, depositing is performed at a rate in a range of from about 0.005 nm/s to about 0.1 nm/s.",
+                        "In certain embodiments, the non-magnetic metal layer is annealed prior to inclusion in the multilayer composition. In certain embodiments, the non-magnetic metal layer is annealed as a component of the multilayer composition. In certain embodiments, the stacked structure is deposited at a higher temperature than ambient temperature and/or under an applied magnetic field whose direction is perpendicular to the plane of the stacked structure.",
+                        "A non-limiting exemplary embodiment herein provides a method for fabricating a metastable thin film including cooling a substrate to a temperature of liquid nitrogen or to a temperature between 77 K and ambient temperature, for example, room temperature; combining argon and oxygen to form a sputtering gas; and depositing onto the substrate the metastable thin film using the sputtering gas at a sputtering power in the range of about 1 W to about 1000 W, and depositing at a rate in a range of from about 0.02 nm/s to about 10 nm/s. In various embodiments of the method, \u03b2-W thin films are deposited at a rate greater than about 0.02 nm/s. For example, the \u03b2-W thin films are deposited at a rate of greater than about 0.05 nm/s, greater than about 0.1 nm/s, greater than about 0.5 nm/s, greater than about 1 nm/s, greater than about 5 nm/s, or greater than about 10 nm/s. In non-limiting embodiments, the rate of deposition is in a range of from about 0.01 nm/s to about 0.1 nm/s, about 0.1 nm/s to about 1 nm/s, or about 1 nm/s to about 10 nm/s. In certain embodiments, a \u03b2-W thin film is deposited onto a substrate that is cooled to liquid nitrogen temperature or to a temperature between 77 K and ambient temperature, for example, room temperature. In an embodiment of the method, the substrate is cooled prior to deposition. In an embodiment, cooling the substrate assists in formation of thin films. For example, \u03b2-W thin films are formed.",
+                        "In certain embodiments, depositing of the \u03b2-W thin films is performed by sputtering. In certain embodiments, the sputtering occurs at a power of less than about 1000 W. For example, the sputtering power is at least about 1 W, at least about 5 W, at least about 10 W, at least about 50 W, at least about 100 W, at least about 500 W, or at least about 1000 W. In various embodiments, the sputtering power is in a range of from about 1 W to about 5 W, about 5 W to about 10 W, about 10 W to about 50 W, about 50 W to about 100 W, about 100 W to about 500, or about 500 W to about 1000 W. In certain embodiments, the sputtering is performed using pure argon (Ar) gas, for example, pure sputtering argon. In certain embodiments, the sputtering is performed using a combination of argon and oxygen including but not limited to 80% of Ar and 20% O2. In an embodiment, incorporation of oxygen into the sputtering gas stabilizes the metastable thin films. For example, \u03b2-W thin films are stabilized by the presence of the 02 during depositing."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce spintronic device",
+                        "describe device components",
+                        "explain spin Hall angle",
+                        "specify ferromagnetic thin film",
+                        "describe integrated magnetic sensor",
+                        "provide spin Hall angle values",
+                        "specify ferromagnetic thin film composition",
+                        "describe magnetic sensor options",
+                        "specify non-magnetic metal",
+                        "provide non-magnetic metal thickness ranges",
+                        "specify non-magnetic metal resistivity",
+                        "describe method of making structure",
+                        "deposit layers on thermally oxidized Si wafer",
+                        "specify CoFeB layer thickness ranges",
+                        "describe capping layer or overlayer",
+                        "describe method for manipulating magnetization states",
+                        "couple non-magnetic metal to ferromagnetic thin film",
+                        "sense magnetic states with integrated magnetic sensor",
+                        "describe multilayer composition",
+                        "specify non-magnetic metal layer thickness",
+                        "describe free layer and oxide barrier layer",
+                        "provide spin Hall angle values",
+                        "describe method of making structure with tungsten layer",
+                        "summarize composition",
+                        "describe resistivity",
+                        "introduce ferromagnetic thin film",
+                        "describe spin Hall angle",
+                        "describe non-magnetic metal",
+                        "describe stacked structure",
+                        "describe annealing process",
+                        "describe spin diffusion length",
+                        "describe perpendicular magnetic anisotropy",
+                        "introduce method of manipulating magnetization states",
+                        "describe applying electric current",
+                        "describe creating spin-transfer torque",
+                        "describe detecting magnetic states",
+                        "describe annealing step",
+                        "introduce method of making structure",
+                        "describe depositing layers",
+                        "describe depositing capping layer",
+                        "describe sputtering system",
+                        "describe depositing CoFeB layer",
+                        "describe depositing step",
+                        "describe annealing non-magnetic metal layer",
+                        "introduce method for fabricating metastable thin film",
+                        "describe depositing metastable thin film"
+                    ],
+                    "num_characters": 23508,
+                    "outline_medium": [
+                        "introduce spintronic device",
+                        "describe device components",
+                        "explain spin Hall angle",
+                        "detail ferromagnetic thin film",
+                        "describe integrated magnetic sensor",
+                        "outline method of making structure",
+                        "describe depositing layers",
+                        "explain patterning stack",
+                        "detail method for manipulating magnetization states",
+                        "describe multilayer composition",
+                        "outline method of making multilayer composition",
+                        "summarize composition",
+                        "describe ferromagnetic thin film",
+                        "specify non-magnetic metal layer",
+                        "detail spin diffusion length",
+                        "describe annealing process",
+                        "outline method of manipulating magnetization states",
+                        "describe method of making structure",
+                        "specify deposition conditions",
+                        "describe fabrication of metastable thin film",
+                        "detail sputtering conditions",
+                        "outline stabilization of metastable thin films"
+                    ],
+                    "outline_short": [
+                        "introduce spintronic device",
+                        "describe device components",
+                        "outline methods for manipulating magnetization states",
+                        "detail multilayer composition for spintronic devices",
+                        "provide variations of methods and compositions",
+                        "define composition",
+                        "describe properties of non-magnetic metal",
+                        "describe properties of ferromagnetic thin film",
+                        "describe method of manipulating magnetization states",
+                        "describe method of making structure for manipulating magnetization states"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "A magnetoresistive stack which includes a pinned layer, a non-magnetic spacer layer, and a magnetic free layer contacting a non-magnetic base layer with GSHE was developed by Buhrman et al., U.S. patent application publication 2014/0169088. The pinned layer and the free layer of the stack of Buhrman are ferromagnetic. Ibid. The base layer of the stack of Buhrman has a thickness no greater than about five times the spin diffusion length of the base layer, and more preferably has a thickness of about 1.5 times to 3 times the spin diffusion length. Ibid.",
+                        "Certain embodiments herein provide a stacked structure containing a non-magnetic layer, a free layer which is ferromagnetic, and an oxide barrier layer. The non-magnetic layer of the structures herein was a metastable \u03b2-W thin film. The stacked structure is illustrated in FIG. 1. The as-deposited W thin films were in the \u03b2-W phase for thicknesses from 3.0 to 26.7 nm. The \u03b2-W remains intact below a critical thickness (tc) of 22.1 nm, even after magnetic thermal annealing at 280\u00b0 C., which induces PMA in the stacked structure. Results of x-ray diffraction data herein are evidence of \u03b2-W structure after magnetic thermal annealing for the range of thicknesses from about 3.0 nm to about 22.1 nm. See, FIG. 6 and FIG. 7A. \u03b2-W with a thickness greater than the spin diffusion length (3.5 nm to 4.3 nm) and less than 22.1 nm was observed to remain in n-form after annealing. The crystalline grain size of the annealed 13-W thin films is larger than the spin diffusion length (3.5 nm to 4.3 nm). See, FIG. 7B. The resistivity of annealed \u03b2-W was observed to be nearly constant at a range of thicknesses and at temperatures in a range of 10 K and 300 K. See, FIG. 8A. The relatively constant resistivity over such a wide temperature range and thickness range is desirable for spintronics application, since the magnetic switching power from the GSHE would be less sensitive to temperature.",
+                        "Methods and data herein provide strategies to obtain giant spin Hall effect and STT induced switching in a layered stack of W/CoFeB/MgO with perpendicular magnetic anisotropy. Further, the data from examples herein show that giant spin Hall effect in \u03b2-W resulted in reduced the critical current density for STT induced magnetic switching in the free layer, CoFeB. An MRAM or SLD with PMA results in lower power consumption, higher reliability, higher durability, and reduced or eliminated volatility compared to the characteristics of earlier generations of MRAM.",
+                        "Robust PMA was observed in the Examples herein using a structure obtained by a simple fabrication technique, a \u03b2-W/CoFeB/MgO layered structure with W having a thickness in a range of 3.0 nm-22.1 nm without an insertion layer between W and CoFeB. As a result of GSHE in \u03b2-W, the critical current density for the STT induced magnetic switching in CoFeB was observed to have been reduced in the Examples herein. Therefore, the elemental \u03b2-W is a strong candidate for magnetic memory and spin-logic applications."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Example 1\u2014Analysis of the Interface Between a GSHE Solid and a Ferromagnetic (FM) Thin Film",
+                            "paragraphs": [
+                                "The layered structures herein contain an interface between a GSHE solid and a FM thin film with PMA, commonly referred to as a free layer. The injected spin current from the GSHE solid yielded STT inside the free layer to effect a magnetization switching. See, Slonczewski et al., Magn. Mater. 159, L1 (1996); Katine et al., Appl. Phys. Lett. 76, 354 (2000). The magnetic states representing the digital bits are sensed by an integrated magnetic sensor, such as an anomalous Hall effect sensor, a magnetic tunneling junction (MTJ), or a giant magnetoresistive (GMR) element. See, Liu et al., Science 336, 555 (2012); Cubukcu et al, Appl. Phys. Lett., 104, 042406 (2014). STT-MRAM with PMA has a number of advantages, including low power consumption, high reliability, durability, and data non-volatility compared to earlier generations of MRAM.",
+                                "Among the limited number of GSHE solids previously discovered, metastable \u03b2-W was observed to have high resistivity. The large SOC of \u03b2-W was observed to be useful in various applications. The spin Hall angle of \u03b2-W was observed to be 0.3, which is considered large among transition metals. See, Pai et al., Appl. Phys. Lett., 104, 082407 (2014). The preparation of \u03b2-W thin films is compatible with modern semiconductor fabrication processes.",
+                                "The range of thicknesses of \u03b2-W was extended to 26.7 nm for preparation of the structure herein to observe variation of spin Hall angle over a broad range of \u03b2-W thickness. FIG. 4A shows that spin Hall angle as a function of thickness between 3.0 nm and 7.0 nm. FIG. 4B shows the spin Hall angle as a function of thickness between 3 nm and 22.1 nm. From this analysis, the bulk-limit spin Hall angle was observed to be at least 0.49, which is the largest among transition metals, and the spin diffusion length was observed to be in the range of 3.1 nm to 4.3 nm for \u03b2-W. Both parameters are important for understanding the advantages of \u03b2-W in the context of GSHE, and for development of STT-MRAM and spin-logic devices incorporating \u03b2-W and FM thin films with PMA. Results herein show that the amount of STT-induced switching current for magnetization reversal was about 106 A/cm2, one order of magnitude smaller than what was previously observed with similar structures. See, Liu, Science 336, 555 (2012); Pai et al., Appl. Phys. Let. 104, 082407 (2014).",
+                                "GSHE was observed in the \u03b2-W/CoFeB/MgO system herein with PMA. The spin Hall angle was observed to be 0.49\u00b10.02 and spin diffusion length was observed to be 4.3\u00b10.4 nm in bulk \u03b2-W film at room temperature. This was the largest spin Hall angle that had been observed among elemental solids with a large spin-orbit coupling. See, Azevedo et al., Phys. Rev. B 83, 144402 (2011); Vlietstra et al., Appl. Phys. Lett. 103, 032401 (2013); Liu et al., Phys. Rev. Lett. 106, 036601 (2011); Lee et a., Phys. Rev. B 89, 024418 (2014); Ganguly et al., Appl. Phys. Lett. 104, 072405 (2014); Liu et al., Science 336, 555 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Pai et al., Appl. Phys. Lett. 101, 122404 (2012). Furthermore, PMA, which is critical for spintronics applications has not previously been obtained in 3-W/CoFeB/MgO."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce GSHE solid and FM thin film interface",
+                                "describe STT-induced magnetization switching",
+                                "motivate use of \u03b2-W for spintronics applications",
+                                "summarize advantages of STT-MRAM with PMA",
+                                "describe measurement of spin Hall angle",
+                                "compare results with previous studies"
+                            ],
+                            "num_characters": 3179,
+                            "outline_medium": [
+                                "describe interface between GSHE solid and FM thin film",
+                                "discuss STT-induced magnetization switching",
+                                "highlight advantages of STT-MRAM with PMA"
+                            ],
+                            "outline_short": [
+                                "analyze interface between GSHE solid and FM thin film"
+                            ]
+                        },
+                        {
+                            "title": "Example 2\u2014Preparation of Layered Structures",
+                            "paragraphs": [
+                                "The multilayered structures or compositions (stacks) herein were prepared on thermally oxidized Si wafers using a high vacuum magnetron sputtering system. During preparation, the base pressure was set at less than 2\u00d710\u22128 Torr and the Ar sputtering pressure was set at about 2.2 mTorr. For each sample, the stack was sequentially deposited in the order of W/CoFeB/MgO/Ta. The Ta layer which had a thickness of 1 nm was a capping layer or overlayer to prevent oxidation of the active layers by the atmosphere.",
+                                "The DC sputtering power for the CoFeB layer was 10 W. The thickness of the Co40Fe40B20 layer was fixed at 1 nm to allow CoFeB to develop PMA. For formation of \u03b2-W, a low DC sputtering power of 3 W was applied intermittently to keep the deposition rate less than 0.02 nm/s. Multiple stacks were prepared, each with W at a thickness in the range of the 2.5 to 26.7 nm. These stacks were patterned using photolithography into standard Hall bars with areas of 20\u00d755 \u03bcm2 for measurements of Hall Effect and resistivity. The stacks were annealed at 280\u00b0 C. for one minute with two hours of ramping up and six hours of natural cooling in a vacuum at 1\u00d710\u22126 Torr, and a magnetic field of 0.45 Tesla was applied perpendicular to the plane of the stacks. Magnetotransport measurements were performed on these stacks using an electromagnet at room temperature. The preparation parameters above can be further optimized. For example, the sputtering power is increased to reduce thin film deposition time. The annealing time including ramping up/down and duration at the fixed temperature can be reduced to increase the throughput of the annealing process. The magnetic field can be selected in a range including 0.45 Tesla, and the annealing temperature can be selected from a range including about 280\u00b0 C.",
+                                "The Quantum Design\u00ae Physical Property Measurement System (PPMS) was used to measure the saturated magnetization (Ms) of the stacks at room temperature. M, for CoFeB at a thickness of 1 nm in the stacks was observed to be about 1100 emu/cm3.",
+                                "To identify the phase of the W layer, sheet resistance (R\u25a1) of the stacks W(thickness, t)/CoFeB(1.0)/MgO(1.6)/Ta(1.0) was measured. FIG. 1 is a graph of the value of Rk as a function of W thickness in the range of 2.5 nm to 7.0 nm. The solid line is the best fit to the data based on resistivities of \u03c1W which was observed to be about 209 \u03bc\u03a9-cm and \u03b2FeCoB which was observed to be about 80 \u03bc\u03a9-cm. Typical resistivities for the stable \u03b1-W phase and the metastable \u03b2-W phase are less than 40 \u03bc\u03a9-cm and greater than 150 \u03bc\u03a9-cm, respectively. These high resistivity values indicate that \u03b2-W was present in the samples herein.",
+                                "Conditions for the magnetotransport measurement are illustrated in the schematic of FIG. 2A. A DC current was sent along the Y-axis of a Hall-bar sample, and the Hall voltage along the X-axis was measured. An external magnetic field (Bext) was applied in the YZ plane with an angle \u03b2 between the field and Y-axis. The resulting magnetization vector (M) was observed in the YZ plane at an angle \u03b8 from the Y-axis.",
+                                "FIG. 2B is a graph of the anomalous Hall resistance (RH) as a function of magnetic field applied perpendicularly to the sample plane (\u03b2=90\u00b0), W(t)/CoFeB(1.0)/MgO(1.6)/Ta(1.0), for a series of samples with W thicknesses in the range of 3 nm to 7 nm. The square hysteresis loops for each sample in FIG. 2B revealed PMA in the W/CoFeB without an insertion layer between W and CoFeB. The switching field, or coercivity Hc, was varied from 5 Oe to 22 Oe. The square-shaped loops for each W thickness indicate that CoFeB exhibited PMA for each sample at each W thickness. PMA in this structure has not previously been observed in the stacked structure."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe preparation of multilayered structures",
+                                "detail deposition conditions for each layer",
+                                "describe patterning and annealing processes",
+                                "measure saturated magnetization of stacks",
+                                "identify phase of W layer using sheet resistance",
+                                "describe conditions for magnetotransport measurement",
+                                "analyze anomalous Hall resistance"
+                            ],
+                            "num_characters": 3729,
+                            "outline_medium": [
+                                "describe preparation of multilayered structures",
+                                "discuss characterization of W layer and CoFeB layer",
+                                "highlight PMA in W/CoFeB without insertion layer"
+                            ],
+                            "outline_short": [
+                                "describe preparation of layered structures"
+                            ]
+                        },
+                        {
+                            "title": "Example 3\u2014Analysis of Magnetization Switching",
+                            "paragraphs": [
+                                "The anomalous Hall Effect (AHE) provides a sensing mechanism to measure the magnetization state of the CoFeB layer. This example illustrates the response of the magnetization state of the CoFeB layer to excitation current (I) in the W layer and Bext. FIG. 2C and FIG. 2D are graphs of current-induced magnetic switching behavior of a representative sample, W(7.0)/CoFeB(1.0), under a series of positive (\u03b2=0\u00b0) or negative (\u03b2=180\u00b0) in-plane fields at values of Bext equal to 0.2 mT, 0.4 mT, 0.7 mT, and 2 mT. The bi-stable states of M (up and down) are accessible by cycling current in both directions through a critical value (Ic), under either a positive or negative Bext. See, FIG. 2C and FIG. 2D. Critical current (Ic) was defined as the average of the positive and negative switching current. For W(7.0 nm)/CoFeB(1.0 nm), Ic was observed to be about 3.1 mA, corresponding to a critical current density (Jc) of about 1.5\u00d7106 A/cm2 in the W layer under an in-plane field of 2 mT. See, FIG. 2C. This value is about one order of magnitude smaller than those obtained in other PMA structures: Ta/CoFeB, Pt/Co, and W/Hf/CoFeB. See, Liu et al., Science 336, 555 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Zhang et al., J. Appl. Phys. 115, 17C714 (2014); Qiu et al., Scientific Reports 4, 4491 (2014); Liu et al., Phys. Rev. Lett. 109, 096602 (2012).",
+                                "The current-induced magnetic switching in PMA structures results from the STT mechanism due to the injected spin current density (JS) from the SOC solid with GSHE. See, Liu et al., Phys. Rev. Lett. 109, 096602 (2012). Under the measurement conditions of FIG. 2A, the equilibrium orientation (0) of M in the PMA CoFeB layer was calculated from the condition that the net torque on M is zero, using the following equation:",
+                                "\\(\\begin{matrix}\n{{{\\tau_{int} \\equiv {\\hat{x} \\cdot \\left( {{\\overset{r}{\\tau}}_{ST} + {\\overset{r}{\\tau}}_{ext} + {\\overset{r}{\\tau}}_{an}} \\right)}} = {{\\tau_{ST}^{0} + {B_{ext}\ue89e{\\sin \ue8a0\\left( {\\theta - \\beta} \\right)}} - {B_{an}^{0}\ue89e\\sin \ue89e\\; \ue89e\\theta \ue89e\\; \ue89e\\cos \ue89e\\; \ue89e\\theta}} = 0}},\ue89e\\mspace{79mu} \ue89e{{{where}\ue89e\\mspace{14mu} \ue89e\\tau_{ST}^{0}} = {\\frac{h}{2\ue89e{eM}_{x}\ue89et}\ue89eJ_{S}}}} & (1)\n\\end{matrix}\\)",
+                                "is the torque per unit moment, and Ban0 is the perpendicular anisotropy field. See, Liu et al., Phys. Rev. Lett. 109, 096602 (2012). This macrospin model was used to predict the current-induced magnetic switching in FIG. 2C, at sufficient current density greater than Jc, or corresponding ST, \u03c4ST0 per unit moment. In FIG. 2C, the lowest JC of about 1.5\u00d7106 A/cm2 was observed at 2 mT, an amount which was about 5 to 10 times less than that reported for other PMA systems. See, Liu et al., Science 336, 555 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Zhang, J. Appl. Phys. 115, 17C714 (2014); Qiu et al., Scientific Reports 4, 4491 (2014); Liu et al., Phys. Rev. Lett. 109, 096602 (2012).",
+                                "In the coherent spin rotation regime, Eq. (1) was also used as a method to measure r, hence, the converted spin current density JS from which the spin Hall angle can be derived using \u03b8=Js/Jc. See, Liu et al., Phys. Rev. Lett. 109, 096602 (2012). In Eq. (1), the spin Hall angle (\u03b8) was obtained from the anomalous Hall resistance, RH/R0=sin \u03b8, where R0 is the maximum Hall resistance when M is perpendicular to the sample plane.",
+                                "According to Eq. (1), as Bext approaches zero or infinity, \u03b8 reaches 0 or 90\u00b0, respectively. Under an intermediate Bext, and a positive or a negative current of 1 mA, \u03b8 was observed to be dependent on \u03c4ST0, Bext, and B0an which illustrates how the relationship between the RH and sin \u03b8 varies as a function of Be. See, FIG. 3A. At an arbitrary sin \u03b8, two Bext values exist, B+(\u03b8) and B\u2212(\u03b8), corresponding to the positive and negative current, respectively. See, FIG. 3A. From Eq. (1),",
+                                "\u03c4ST0(+JS)+B+(\u03b8)sin(\u03b8\u2212\u03b2)\u2212Ban0 sin \u03b8 cos \u03b8=0\u2003\u2003(2)",
+                                "\u03c4ST0(\u2212JS)+B\u2212(\u03b8)sin(\u03b8\u2212\u03b2)\u2212Ban0 sin \u03b8 cos \u03b8=0\u2003\u2003(3)",
+                                "By solving the simultaneous equations using combination of Eqs. (2)\u00b1(3), the following are obtained:",
+                                "[B+(\u03b8)\u2212B\u2212(\u03b8)]=\u0394\u03c4ST0/sin(\u03b8\u2212\u03b2)\u2003\u2003(4)",
+                                "[B+(\u03b8)+B\u2212(\u03b8)]=2Ban0 sin \u03b8 cos \u03b8/sin(\u03b8\u2212\u03b2)\u2003\u2003(5),",
+                                "where \u0394\u03c4ST0==\u03c4ST0 (+JS)\u2212\u03c4ST0 (\u2212JS)=2\u03c4ST0(|JS|). FIG. 3A is a graph of the quantities of B+(\u03b8), B.(\u03b8), and \u03b8 for W(6.5 nm)/CoFe(1.0 nm)/MgO(1.6 nm). Using Eq. (4) and (5), \u03c4ST0(|JS|) and Ban0 were calculated.",
+                                "FIG. 3B, a graph of [B+(\u03b8)\u2212B\u2212(\u03b8)] as a function of 1/sin(\u03b8\u2212\u03b2), uses the data obtained in FIG. 3A. As predicted by Eq. (4), linear relations were observed at various currents, and the slope was \u0394\u03c4ST0 for each current. See, FIG. 3B. Using this method, the STT, \u03c4ST0(|JS|) as a function of current was determined for samples with variable W thicknesses. See, FIG. 3C. Using the data in FIG. 3C, the spin Hall angle was calculated according to",
+                                "\\(\\theta = {{J_{s}/J_{c}} = {\\left( \\frac{2\ue89e{eM}_{s}\ue89et}{h} \\right)\ue89e{\\left( {\\tau_{ST}^{0}/J_{c}} \\right).}}}\\)",
+                                "FIG. 4A shows the relationship of the spin Hall angle as a function of W thickness (t) in the range of 3 nm to 7 nm for W(t)/CoFeB(1.0)/MgO(1.6)/Ta(1.0) stacked structure with PMA. At 7.0 nm, the spin Hall angle was observed to be \u03b8(7 nm)=0.33\u00b10.03. At the thinner limit, spin Hall angle was observed to decrease, as the W thickness approached the spin diffusion length (\u03bbsf). See, FIG. 4A and FIG. 4B. Variation of the Hall angle versus W thickness was evidence that \u03b8(\u221e)=0.49\u00b10.02 and \u03bbsf=4.3\u00b10.3 nm in the bulk \u03b2-W film, according to",
+                                "\\(\\frac{J_{s}\ue8a0(1)}{{Js}\ue8a0(\\infty)} = {\\frac{\\Theta \ue8a0(1)}{\\Theta \ue8a0(\\infty)} = {1 - {{sech}\ue8a0\\left( \\frac{t}{\\lambda_{sf}} \\right)}}}\\)",
+                                "which was used to fit the data in FIG. 4A and FIG. 4B. See also, Liu et al., Phys. Rev. Lett. 106, 036601 (2011). In comparison, \u03b8(5.2 nm)=0.33\u00b10.06 was observed for W/CoFeB/MgO with in-plane magnetic anisotropy, and effective \u03b8(4 nm)=0.34\u00b10.05 was observed in W/Hf/CoFeB/MgO with Hf-induced PMA. In certain embodiments, an insertion layer, Hf, is not needed between W and CoFeB to obtain PMA. See, FIG. 2A.",
+                                "Determination of the bulk \u03b8(\u221e) and \u03bbsf for \u03b2-W is beneficial to further theoretical understanding of this SOC solid and to designing spintronic devices by selecting appropriate \u03b2-W thickness. Moreover, PMA was achieved in W/CoFeB/MgO without an insertion layer which is known to reduce spin Hall angle. See, Pai et al., Appl. Phys. Lett. 104, 082407 (2014).",
+                                "As shown in FIG. 2C, with sufficient current, for example STT, M of the CoFeB layer undergoes the switching as described by Eq. (1). The largest Hall angle in the sample series herein was observed in the magnetic switching phase diagram for a representative sample W(7.0)/CoFeB(1.0)/MgO(1.6), each sample having an area of 20\u00d755 \u03bcm2. See, FIG. 5. The critical switching current density (JC) in the W layer was observed to decrease rapidly and linearly with increasing field (Bext) up to a characteristic field B0 of about 10 Oe, and at a slower rate when Bext was greater than B0. See, FIG. 5. As a comparison, B0 of about 150 Oe and 3000 Oe were observed for two other PMA systems: Ta(5 nm)/CoFe(0.6 nm)/MgO(1.8 nm) having an area of 1.2\u00d715 \u03bcm2 and Pt(2 nm)/Co(0.6 nm)/AlOx having an area of 20\u00d7200 \u03bcm2, respectively. See, Liu et al., Phys. Rev. Lett. 109, 096602 (2012); Perez et al., Appl. Phys. Lett. 104, 092403 (2014).",
+                                "The lower B0 observed in this PMA system led to reliable switching under a small external field. In STT-MRAM or spin-logic applications, a low biasing field is more easily implemented than a ten-time larger field. B0 was observed to have the magnitude of the nucleation field in the stacks herein (see coercivity values in FIG. 2B).",
+                                "The magnetic switching phase diagram of the PMA CoFeB driven by STT from the \u03b2-W was analyzed. Under an in-plane biasing field of only 20 Oe, the switching current density was observed to be about 1.6\u00d7106 A/cm2 which is the lowest among other PMA systems with GSHE. Thick \u03b2-W films integrated with CoFeB ferromagnetic film without an insertion layer were observed to achieve robust PMA. The large Hall angle and acquired PMA makes \u03b2-W a candidate for STT-MRAM and spin-logic applications, with the added advantage of its compatibility with modern semiconductor fabrication."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe current-induced magnetic switching behavior",
+                                "define critical current density",
+                                "analyze switching behavior under in-plane fields",
+                                "calculate critical current density",
+                                "compare results with previous studies",
+                                "describe macrospin model for current-induced switching",
+                                "derive equation for torque per unit moment",
+                                "analyze relationship between RH and sin \u03b8",
+                                "derive equations for B+(\u03b8) and B\u2212(\u03b8)",
+                                "calculate \u03c4ST0 and Ban0",
+                                "determine spin Hall angle",
+                                "analyze variation of spin Hall angle with W thickness",
+                                "determine bulk \u03b8(\u221e) and \u03bbsf for \u03b2-W",
+                                "describe benefits of determining \u03b8(\u221e) and \u03bbsf",
+                                "analyze magnetic switching phase diagram",
+                                "compare results with previous studies"
+                            ],
+                            "num_characters": 8118,
+                            "outline_medium": [
+                                "describe measurement of magnetization state of CoFeB layer",
+                                "discuss current-induced magnetic switching behavior",
+                                "define critical current density and switching current",
+                                "analyze current-induced magnetic switching using macrospin model",
+                                "discuss measurement of spin Hall angle",
+                                "describe calculation of STT and Ban0",
+                                "discuss variation of spin Hall angle with W thickness",
+                                "highlight determination of bulk \u03b8(\u221e) and \u03bbsf for \u03b2-W"
+                            ],
+                            "outline_short": [
+                                "analyze magnetization switching behavior",
+                                "calculate critical current density",
+                                "derive spin Hall angle from anomalous Hall resistance",
+                                "determine bulk spin Hall angle and spin diffusion length"
+                            ]
+                        },
+                        {
+                            "title": "Example 4\u2014Fabrication of Metastable Thin Films Using Sputtering",
+                            "paragraphs": [
+                                "Examples herein provide data which are evidence of structure, electron transport, and GSHE of \u03b2-W thin films. Thermal annealing of the \u03b2-W films resulted in a lower switch current density compared to the \u03b2-W films prior to annealing indicating thermal annealing is useful for materials used in spintronic MRAM and SLD. See, Hao et al., Applied Physics Letters 106, 182403 (2015), which is hereby incorporated by reference in its entirety. Results herein show that films having a thickness up to 22.1 nm remained in the \u03b2 phase through the annealing process, and films with a thickness greater than 22.1 nm were transformed into a phase by the annealing process. Therefore, the thickness of \u03b2-W films that were magnetic thermal annealed for use in spintronic devices was observed to have been greater than the spin diffusion length (\u03bbsf) of 3.5 nm to 4.3 nm and less than 22.1 nm to have maximized GSHE in \u03b2-W films.",
+                                "Spintronic MRAM and logic processors have exploited the physics of the spin Hall effect for switching bits, and the materials engineering for prior structures remains challenging. The large spin-orbit coupling in J-W yielded a very low critical current density for magnetization switching after annealing. Methods of fabrication of the technologically promising structures of the various embodiments of the invention herein are provided.",
+                                "The W films herein were prepared on thermally oxidized Si wafers under ambient conditions using a high vacuum magnetron sputtering system equipped with a cryopump. The fabrication conditions included a base pressure that was less than 2\u00d710\u22128 Torr and the Ar sputtering pressure that was about 2.2 mTorr. For the formation of \u03b2-W, a low DC sputtering power of 3 W was applied intermittently to keep the deposition rate constant at 0.02 nm/s. The films were patterned into standard Hall bars using photolithography for spin Hall effect and resistivity measurements, with the longitudinal dimensions of 20\u00d755 \u03bcm2 in area. In addition to these as-deposited samples, a corresponding set of samples was prepared that were annealed at 280\u00b0 C. for 1 minute with 2 hours of ramping up and 6 hours of natural cooling in vacuum (1\u00d710\u22126 Torr) and under a magnetic field (0.45 T) perpendicular to the films.",
+                                "In certain embodiments, the metastable thin films were fabricated by a method including depositing a metastable thin film onto a substrate using a sputtering system. For example, a \u03b2-W thin film was deposited using a sputtering power in the range of from about 3 W to about 1000 W and at a rate in the range of from about 0.02 nm/s to about 10 nm/s. Improved formation of metastable thin films is obtained by depositing the \u03b2-W thin film onto a substrate cooled to a temperature less than the ambient temperature, for example, the temperature of liquid nitrogen.",
+                                "Methods are provided herein of making the metastable thin films by sputtering a material onto a substrate. In these methods, the metastable thin film was stabilized prior to inclusion in the multilayered structures. The metastable thin film used was generally \u03b2-W thin film. The fabrication process was performed using pure argon as the sputtering gas. Improved stabilization of metastable thin films is expected by using a combination of argon and oxygen as the sputtering gas. For example, oxygen content is 2% to 60% of the total sputtering gas in the sputtering process.",
+                                "A magnetron sputtering process which generated giant spin Hall effect was used to fabricate \u03b2-W thin films. As-deposited thin films were observed to be in the metastable \u03b2-W phase at thicknesses from 3.0 nm to 26.7 nm. The \u03b2-W phase was observed to have remained intact below a critical thickness of 22.1 nm even after high vacuum magnetic thermal annealing at 280\u00b0 C., which induces perpendicular magnetic anisotropy in the layered structures herein of \u03b2-W/Co40Fe40B20/MgO. Intensive annealing was observed to have transformed the films with thicknesses greater than 22.1 nm into the stable \u03b1-W phase."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide data on structure, electron transport, and GSHE of \u03b2-W thin films",
+                                "describe thermal annealing of \u03b2-W films",
+                                "motivate spintronic MRAM and logic processors",
+                                "describe fabrication conditions of W films",
+                                "describe patterning of films into Hall bars",
+                                "describe annealing process of samples",
+                                "describe method of making metastable thin films by sputtering"
+                            ],
+                            "num_characters": 3994,
+                            "outline_medium": [
+                                "fabricate \u03b2-W thin films using sputtering",
+                                "describe thermal annealing process",
+                                "discuss results of annealing on film structure and GSHE"
+                            ],
+                            "outline_short": [
+                                "fabricate metastable thin films using sputtering"
+                            ]
+                        },
+                        {
+                            "title": "Example 5\u2014Analysis of Structure and Grain Size of Thin Films",
+                            "paragraphs": [
+                                "The structure and grain size of \u03b2-W and \u03b1-W thin films were analyzed by x-ray diffraction analysis with the Bruker D8 Discover X-Ray Diffraction (XRD) System. Electron transport in terms of resistivity and normal Hall effect was observed through a temperature range of as low as about 10 K to at least about 300 K on each sample. Low switching current density was observed in \u03b2-W/Co40Fe40B20/MgO, a result that indicates that the films are technologically promising for future generations of spintronic magnetic random access memories (MRAM) and spin-logic devices.",
+                                "Highly resistive \u03b2-W was observed to have strong SOC leading to GSHE in this metal. See, Pai et al., Appl. Phys. Lett. 101, 122404 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Hao et al., Phys. Rev. Appl. 3, 034009 (2015). The spin Hall angle of \u03b2-W was observed to approach 0.49, which is the largest among transition elements, and \u03b2-W was observed to convert charge current into spin current efficiently. See, Hao et al., Phys. Rev. Appl. 3, 034009 (2015), which is hereby incorporated by reference in its entirety. Robust PMA was observed in a layer structure combining metastable \u03b2-W and Co40Fe40B20 thin film. Ibid. The GSHE yielded, after suitable thermal magnetic annealing, a low critical current density for magnetization switching. Ibid.",
+                                "Future generations of spintronic MRAM and spin-logic devices will increasingly rely on GSHE in \u03b2-W films. See, Liu et al., Science 336, 555 (2012); Datta et al., Appl. Phys. Lett. 101, 252411 (2012).",
+                                "A series of \u03b2-W thin films with a broad range of thickness (3.0-26.7 nm) were prepared using a magnetron sputtering process. Based on this process, PMA and a large spin Hall angle (0.49) in the bulk \u03b2-W in a structure of \u03b2-W/Co40Fe40B20/MgO were achieved. See, Hao et al., Phys. Rev. Appl. 3, 034009 (2015). The effect of thermal annealing on the structure of the W films was examined. See, Hao et al., Appl. Phys. Lett. 106, 182403 (2015).",
+                                "FIG. 6 is a recording of the XRD patterns for as-deposited and annealed W films, each with a thickness up to 26.7 nm. The as-deposited films had single phase \u03b2-W, which is an A3B solid with the A15 type crystal structure. The annealed films remained in \u03b2-W phase up to a critical thickness (tc) of 22.1 nm. Above 22.1 nm, films were transformed into \u03b1-W phase, which had the bcc crystal structure.",
+                                "FIG. 7A is a graph of the lattice constant as a function of W film thickness, which revealed the effect of annealing. Up to a thickness of 26.7 nm, the lattice constant of the as-deposited \u03b2-W films were observed to be unchanged. See, FIG. 7A. Post-annealing and beyond to, the lattice constant becomes that of the a structure. Ibid. Therefore, the thickness of \u03b2-W which has been magnetically thermally annealed and has GSHE intended for spintronics devices, is smaller than t0. The spin diffusion length (\u03bbsf) in \u03b2-W film is in a range of 3.5 nm to 4.3 nm, which is also smaller than to. See, Hao et al., Phys. Rev. Appl. 3, 034009 (2015). Therefore, the full strength of the GSHE of \u03b2-W film is exploited at a thickness that is less than tc, and is larger than \u03bbsf.",
+                                "Based on XRD data, the grain size or size of crystallites was obtained using the Scherrer equation as a function of W film thickness for as-deposited and annealed samples. See, FIG. 7B. According to the Scherrer equation, which relates the grain size to the broadening of a diffraction peak, the average grain size was observed by K\u03bb/\u03b2 cos \u03b8, where K is a shape factor (typically about 0.9), \u03bb is the x-ray wavelength, \u03b2 is the width of a diffraction line at half maximum intensity, and \u03b8 is the Bragg angle. The Scherrer equation was observed to have remained valid, to the extent that the peak broadening is primarily due to grain size rather than other inhomogeneities. The grain size was observed to be smaller than, and increased with the film thickness. Annealing was observed to increase the grain size by about 50% to 70%. The grain size in all samples was larger than the \u03bbsf, which is 3.5 nm in \u03b2-W, by a factor of 2 to 4. See, Hao et al., Phys. Rev. Appl. 3, 034009 (2015). Therefore, \u03bbsf was observed not to be predominantly affected by the grain size, and was more dependent on the local structures within the \u03b2-W crystallites, such as atomic and lattice disorders."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze structure and grain size of \u03b2-W and \u03b1-W thin films",
+                                "describe electron transport in terms of resistivity and normal Hall effect",
+                                "describe low switching current density in \u03b2-W/Co40Fe40B20/MgO",
+                                "describe highly resistive \u03b2-W with strong SOC",
+                                "describe spin Hall angle of \u03b2-W",
+                                "describe robust PMA in layer structure combining metastable \u03b2-W and Co40Fe40B20 thin film",
+                                "describe GSHE yielding low critical current density for magnetization switching",
+                                "describe future generations of spintronic MRAM and spin-logic devices"
+                            ],
+                            "num_characters": 4319,
+                            "outline_medium": [
+                                "analyze structure and grain size using XRD",
+                                "discuss resistivity and normal Hall effect measurements",
+                                "describe GSHE and spin Hall angle in \u03b2-W films",
+                                "discuss implications for spintronic MRAM and spin-logic devices"
+                            ],
+                            "outline_short": [
+                                "analyze structure and grain size of \u03b2-W and \u03b1-W thin films",
+                                "measure resistivity and normal Hall effect"
+                            ]
+                        },
+                        {
+                            "title": "Example 6\u2014Analyzing Electron Transport Properties of the Films",
+                            "paragraphs": [
+                                "FIG. 8A is a graph of the resistivities of the W films as a function of temperature in the range of 5 K to 380 K. The as-deposited \u03b2-W films (3.0 to 24.1 nm) were observed to be characterized by very large resistivities of 185 to 210 \u03bc\u03a9-cm at 300 K. See, FIG. 8A. The temperature coefficient of resistivity, (1/\u03c1)\u0394\u03c1/\u0394T, was observed to be small for the \u03b2-W films through the temperature range of 5 K to 380 K. For example, for the 14.5 nm-thick \u03b2-W film, resistivity was observed to have remained nearly constant at 188 \u03bc\u03a9-cm from 5 K to 380 K. Ibid. This property is advantageous if \u03b2-W is used to generate spin current based on the GSHE because the magnetic switching power will not depend on temperature, facilitating a wide temperature range of operations for spintronic devices.",
+                                "For a continuous thin film with a thickness (t) larger than the effective electron mean free path (\u03bbeff), the thin film resistivity is expressed as:",
+                                "\u03c1(t)=\u03c1B+\u215c\u03c1B\u03bbeff/t,\u2003\u2003(6)",
+                                "where \u03c1B is the bulk resistivity.",
+                                "FIG. 8B is a graph of the resistivities of the \u03b2-W thin films as a function of the inverse thickness (1/t). In the range of 3.0 to 22.1 nm, Eq. (1) fits the observed resistivity data. From the fit, \u03c1B (300 K) was observed to be about 195 \u03bc\u03a9-cm, \u03bbeff(300 K) was observed to be about 0.45 nm, \u03c1B(10 K) was observed to be about 192 \u03bc\u03a9-cm, and \u03bbeff(10 K) was observed to be about 0.95 nm for the bulk \u03b2\u2212W film. The thermally induced resistivity, \u0394\u03c1=\u03c1B(300 K) \u2212\u03c1B(10 K) was observed to be about 3 i-cm, which indicates that electron-phonon inelastic scattering was relatively weak compared to disordered elastic scattering.",
+                                "The value of \u03bbeff was observed to be smaller than the thickness and the grain size of the film by a factor of 5 to 10. \u03b2-W phase is stabilized by small amounts of oxygen. See, Petroff et al., J. Appl. Phys. 44, 2545 (1973); Narasimham, AIP Advances 4, 117139 (2014). Therefore, the finite-size effect and the grain boundary scattering are not sufficient to account for the large resistivity of the \u03b2-W film. Further, the small amounts of oxygen which are responsible for electron disordered scattering are associated either with charge-dependent impurity scattering or spin-orbit scattering. Based on the large spin Hall angle observed in \u03b2-W films, the disordered spin-orbit scattering plays a significant role in the resistivity of the \u03b2-W films. See, Pai et al., Appl. Phys. Lest. 101, 122404 (2012); Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Hao et al., Phys. Rev. Appl. 3, 034009 (2015).",
+                                "Above 22.1 nm, as shown in FIG. 8B, the resistivities were observed to have decreased significantly as calculated by Eq. (1). These thicker films have a small mixture of \u03b1-W phase, which has a smaller resistivity than \u03b2-W phase. For the annealed films, resistivity was observed to be in the range of 100-260 \u03bc\u03a9-cm for films that remained 1-W phase."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe resistivities of W films as a function of temperature",
+                                "describe temperature coefficient of resistivity for \u03b2-W films",
+                                "describe resistivities of \u03b2-W thin films as a function of inverse thickness",
+                                "describe fit of resistivity data to Eq. (1)",
+                                "describe electron-phonon inelastic scattering and disordered elastic scattering"
+                            ],
+                            "num_characters": 2865,
+                            "outline_medium": [
+                                "measure and discuss resistivities of W films",
+                                "analyze electron transport properties using Eq. (6)"
+                            ],
+                            "outline_short": [
+                                "analyze electron transport properties of \u03b2-W thin films"
+                            ]
+                        },
+                        {
+                            "title": "Example 7\u2014Analysis of Temperature Dependence of Resistivity and Hall Effect",
+                            "paragraphs": [
+                                "An investigation of the temperature dependence of resistivity and Hall effect provided insight into the \u03b2-W solid with a strong SOC. The Quantum Design Physical Property Measurement System was used to measure resistivity and Hall effect as functions of temperature between about 10 K and about 360 K.",
+                                "FIG. 8A is a graph of the temperature dependence of the Hall effect in \u03b2-W and \u03b1-W thin films. After annealing, the 24.1 nm and 26.7 nm films were observed to have been transformed into \u03b1-W phase. For the 26.7 nm thick \u03b1-W thin film, \u03c1(300 K) was observed to have been about 40 \u03bc\u03a9-cm and \u03c1(10 K) was observed to be about 30 \u03bc\u03a9-cm. See, FIG. 8A. The resistivity of the \u03b1-W phase was observed to be more dependent on temperature compared with \u03b2-W. For example, the thermally induced resistivity, \u0394\u03c1=\u03c1B(300 K)\u2212\u03c1B(10 K) was observed to be 10 \u03bc\u03a9-cm for \u03b1-W film with a thickness of 26.7 nm, indicating a significant contribution from the electron-phonon scattering.",
+                                "The normal Hall effect was measured which is an integral part of the electron transport of a metal. An investigation of both the resistivity and Hall effect and their temperature dependence provides insight into the (\u03b2-W solid with a strong SOC. FIG. 9 shows the temperature dependence of the Hall effect of the \u03b2-W and \u03b1-W thin films. The Hall coefficient, RH(300 K), for \u03b2-W thin film was observed to be \u22121.62\u00d710\u22128 \u03a9-cm/T which is equal to \u22121.62\u00d710\u221210 m3/C. RH(T), carries a negative sign and is linearly dependent on temperature in the range of 10 K to 300 K. At 10 K, the magnitude of RH(10 K) was observed to be \u22121.14\u00d710\u22128 \u03a9-cm/T, and which was observed to have been reduced by 30% from the room temperature value. Charge carriers are predominantly electrons in the \u03b2-W thin film. RH was observed to be about 5 times smaller than the bulk value; for example RH(300 K) was observed to be +8.6\u00d710\u221211 m3/C compared to a bulk value of +11.8\u00d710\u221211 m3/C. See, Physical and Chemical Properties of the Elements, edited by G. V. Samsonov (Naukova Dumka, Kiev, 1965); AIP Handbook, 3rd Ed., edited by Dwight E. Gray (American Institute of Physics, New York, 1972).",
+                                "RH(T) for \u03b1-W thin films was observed to be linearly dependent on temperature. For \u03b1-W thin films, RH(300 K) was observed to be \u22121.91\u00d710\u22129 \u03a9-cm/T which is equal to \u22121.91\u00d710\u221211 m3/C, consistent with prior studies of \u03b1-W thin films. See, Bastl, Thin Solid Films 10, 311-313 (1972). RH(T) was observed to change signs from negative to positive as temperature was reduced below 130 K, indicating a competition between electron and hole carriers from multi-bands in \u03b1-W thin films. The spin Hall effect data presented in FIG. 9 is evidence of the effects of band structure, scattering mechanisms, and surface electronic states of \u03b2-W and \u03b1-W thin films incorporating the strong SOC. Small amounts of oxygen in \u03b2-W or \u03b1-W thin films were observed to affect temperature dependence of the spin Hall effect.",
+                                "Using sputtering methods herein, a layered structure in the form of W(t)/Co40Fe40B20 (1.0 nm)/MgO(1.6 nm)/Ta(1.0 nm) was made. After annealing, Co40Fe40B20 was observed to develop PMA as the W layer remained in \u03b2-phase. See, Hao et al., Phys. Rev. Appl. 3, 034009 (2015).",
+                                "FIG. 10 is a graph of the magnetic switching of the Co40Fe40B20 (1.0 nm) layer by the spin current generated in the \u03b2-W layer (6.0 nm). Switching was detected by measuring the anomalous Hall effect of the Co40Fe40B20 (1.0 nm) layer. Under an in-plane magnetic field of 2 mT, the sample W(6.0 nm)/Co40Fe40B20 (1.0 nm)/MgO(1.6 nm)/Ta(1.0 nm) was observed in FIG. 10 to be magnetically switched with a critical current (Ic) of 2.2 mA, corresponding to a critical current density (JC) of 1.2\u00d7106 A/cm2 in the W layer, about an order of magnitude smaller than those obtained in other similar structures. See, Pai et al., Appl. Phys. Lett. 104, 082407 (2014); Liu et al., Science 336, 555 (2012); Zhang et al., J Appl. Phys. 115, 17C714 (2014); Qiu et al., Scientific Reports 4, 4491 (2014); Liu et al., Phys. Rev. Lett. 109, 096602 (2012).",
+                                "In general, \u03b2-W thin films that are embodiments of the invention provided herein were fabricated using a magnetron sputtering process. The as-deposited films were observed to be in \u03b2-W phase from 3.0 nm to 26.7 nm. In order to obtain PMA in layered structures of \u03b2-W/Co40Fe40B20/MgO, high vacuum thermal magnetic annealing was performed at a temperature of 280\u00b0 C. After annealing, \u03b2-W phase was observed to have been transformed into \u03b1-W phase at a critical thickness of greater than 22.1 nm, which is larger than the spin diffusion length of 3.5 nm for \u03b2-W thin films. The stabilization of \u03b2-W up to 22.1 nm after annealing was observed to be capable of exploiting the full GSHE in 1-W thin films. In the films provided herein, the typical grain size was observed to be about one third to one half of the thin film thickness. The room temperature resistivity of the bulk \u03b2-W film was observed to be about 195 \u03bc\u03a9-cm and the electron mean free path was observed to be about 0.45 nm.",
+                                "The resistivity of \u03b2-W was observed to be nearly insensitive to factors of temperature and thickness. At 14.5 nm, the temperature coefficient of resistivity was observed to be almost zero in the range of 10 K to 360 K. This property is highly desirable for spintronics applications because the magnetic switching power from GSHE does not depend on temperature. The normal Hall coefficient for f-W thin films was measured between 10 K and 300 K. The Hall coefficient for the \u03b2-W thin films was observed to have the same magnitude as bulk \u03b1-W, and have a negative sign. Using the sputtering and magnetic thermally annealing process herein, PMA and low switching current density was observed in a layered structure of \u03b2-W/Co40Fe40B20/MgO."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate temperature dependence of resistivity and Hall effect",
+                                "describe temperature dependence of Hall effect in \u03b2-W and \u03b1-W thin films",
+                                "describe resistivity of \u03b1-W phase",
+                                "describe thermally induced resistivity of \u03b1-W film",
+                                "describe normal Hall effect",
+                                "describe Hall coefficient for \u03b2-W thin film",
+                                "describe temperature dependence of Hall coefficient for \u03b2-W thin film",
+                                "describe Hall coefficient for \u03b1-W thin film",
+                                "describe temperature dependence of Hall coefficient for \u03b1-W thin film",
+                                "describe layered structure of W(t)/Co40Fe40B20/MgO/Ta",
+                                "describe magnetic switching of Co40Fe40B20 layer by spin current generated in \u03b2-W layer"
+                            ],
+                            "num_characters": 5753,
+                            "outline_medium": [
+                                "investigate temperature dependence of resistivity and Hall effect",
+                                "discuss results of resistivity measurements",
+                                "analyze Hall effect data",
+                                "discuss implications for \u03b2-W solid with strong SOC",
+                                "describe layered structure and magnetic switching results"
+                            ],
+                            "outline_short": [
+                                "investigate temperature dependence of resistivity and Hall effect",
+                                "measure Hall coefficient and resistivity of \u03b2-W and \u03b1-W thin films"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce magnetoresistive stack with GSHE",
+                        "describe structure of stacked layers",
+                        "motivate use of \u03b2-W for spintronics applications",
+                        "summarize advantages of STT-MRAM with PMA",
+                        "describe preparation of layered structures",
+                        "introduce analysis of magnetization switching"
+                    ],
+                    "num_characters": 3023,
+                    "outline_medium": [
+                        "introduce magnetoresistive stack with GSHE",
+                        "describe structure and properties of \u03b2-W thin film",
+                        "discuss advantages of \u03b2-W for spintronics applications"
+                    ],
+                    "outline_short": [
+                        "describe magnetoresistive stack with GSHE"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1-24. (canceled)",
+        "25. A method of manipulating magnetization states in a spintronic device, the method comprising:\napplying an electric current to a multilayer composition having: a non-magnetic metal layer having a spin Hall angle of sufficient size to convert an electrical current to a traverse spin current, a free layer with perpendicular magnetic anisotropy having an interface with the non-magnetic metal layer, and an oxide barrier layer having an interface with the ferromagnetic layer; and\ncreating spin-transfer torque (STT) current in the free layer by the traverse spin current from the non-magnetic metal layer yielding magnetization switching.",
+        "26. The method according to claim 25, further comprising the step of measuring the resistivity of the non-magnetic metal to identify the phase.",
+        "27. The method according to claim 25, wherein creating the STT current for magnetization reversal further comprises selecting from a range of about 104 A/cm2 to about 107 A/cm2.",
+        "28-30. (canceled)",
+        "31. The method according to claim 25, further comprising detecting with a magnetic sensor, magnetic states representing digital bits, wherein the magnetic sensor is a magnetic tunneling junction or a giant magnetoresistive (GMR) element or an anomalous Hall effect sensor.",
+        "32. (canceled)",
+        "33. The method according to claim 25, further comprising, prior to applying the electric current, annealing the multilayer composition, the annealing performed at a temperature selected from the group consisting of: at least about 50\u00b0 C., at least about 100\u00b0 C., at least about 200\u00b0 C., at least about 300\u00b0 C., at least about 400\u00b0 C., at least about 500\u00b0 C., at least about 600\u00b0 C., and at least about 700\u00b0 C.",
+        "34-37. (canceled)",
+        "38. A method of making a structure for manipulating magnetization states in a spintronic device, the method comprising:\ndepositing sequentially layers of tungsten, (CoxFe100\u2212x)100\u2212yBy (CoFeB), wherein x and y are each an atomic percent and 0<x<100 and 0<y<100, and MgO on a thermally oxidized Si wafer to form a stacked structure using a high vacuum magnetron sputtering system, and the tungsten layer of the stacked structure has a thickness selected from the range of about 1 nm to about 100 nm.",
+        "39. The method according to claim 38, further comprising, after depositing tungsten, CoFeB, and MgO, depositing a capping layer or an overlayer having an interface with MgO that prevents oxidation of the stacked structure.",
+        "40. (canceled)",
+        "41. The method according to claim 38, wherein the sputtering system is characterized by at least one of the following properties:\na base pressure selected from the group consisting of: less than about 1\u00d710\u221210 Torr, less than about 1\u00d710\u22129 Torr, less than about 1\u00d710\u22128 Torr, less than about 1\u00d710\u22127 Torr, and less than about 1\u00d710\u22126; and\na sputtering pressure selected from the group consisting of: at least about 0.1 mTorr, at least about 1 mTorr, at least about 5 mTorr, at least about 10 mTorr, at least about 15 mTorr, and at least about 20 mTorr.",
+        "42. (canceled)",
+        "43. The method according to claim 38, wherein the tungsten is in \u03b2-form.",
+        "44. The method according to claim 38, wherein the CoFeB layer of the stack is deposited at a thickness selected from the group consisting of: at least about 0.1 nm, at least about 1.0 nm, at least about 10 nm, at least about 20 nm, at least about 30 nm, and at least about 40 nm.",
+        "45. The method according to claim 38, wherein depositing is performed at least one of the following:\nselecting a DC and RF sputtering power from the group consisting of: at least about 1 W, at least about 5 W, at least about 10 W, at least about 50 W, at least about 100 W, at least about 500 W, and at least about 1000 W;\nselecting a rate from the group consisting of: less than about 0.005 nm/s, less than about 0.01 nm/s, less than about 0.05 nm/s, less than about 0.1 nm/s, less than about 0.5 nm/s, less than about 1.0 nm/s, less than about 5 nm/s, and less than about 10 nm/s; and\ndepositing the CoFeB layer of the stack at a thickness selected from the group consisting of: at least about 0.1 nm, at least about 1.0 nm, at least about 10 nm, at least about 20 nm, at least about 30 nm, and at least about 40 nm.",
+        "46. (canceled)",
+        "47. The method according to claim 38, further comprising annealing the tungsten layer as a component of the multilayer composition.",
+        "48. The method according to claim 38, further comprising, after the depositing step, annealing the stacked structure at a temperature selected from the group consisting of: greater than about 50\u00b0 C., greater than about 100\u00b0 C., greater than about 200\u00b0 C., greater than about 400\u00b0 C., and greater than about 600\u00b0 C.",
+        "49. A method of fabricating a metastable thin film, the method comprising:\ncooling a substrate to a temperature less than ambient temperature for deposition;\ncombining argon and oxygen to form a sputtering gas; and\ndepositing onto the substrate the metastable thin film using the sputtering gas at a sputtering power up to 1000 W, and at a rate in a range of about 0.02 nm/s to about 10 nm/s.",
+        "50. The method according to claim 49, wherein the metastable thin film is \u03b2-form tungsten.",
+        "51. The method according to claim 49, wherein cooling the substrate is to the temperature of liquid nitrogen."
+    ]
+}

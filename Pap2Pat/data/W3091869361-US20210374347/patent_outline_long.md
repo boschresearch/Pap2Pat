@@ -1,0 +1,120 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate NER system improvement
+
+## DETAILED DESCRIPTION
+
+- introduce information extraction
+- define named entities
+- describe named-entity recognition (NER) system
+- explain training NER system using corpus of training text
+- illustrate example of named entities, training text, and input text
+- describe limitations of existing NER systems
+- introduce few-shot learning
+- illustrate example of named entities, support text, and input text for few-shot learning
+- describe computing embedding vectors for words
+- describe computing distances between embedding vectors
+- illustrate processing of NER system
+- describe tokenization component
+- describe classifier component
+- describe sequence processing component
+- describe entity assignment component
+- describe output of NER system
+- describe BIO tagging scheme
+- describe BILOU tagging scheme
+- describe using transition probabilities
+- illustrate tag transition probability matrix
+- describe computing transition probabilities
+- describe modifying NER system
+- describe splitting classifier component
+- describe token embedding component
+- describe output layer component
+- describe computing token embeddings
+- describe conceptual representation of token embeddings
+- describe non-contextual token embeddings
+- describe contextual token embeddings
+- describe adapting existing NER system
+- describe system for adapting NER system
+- describe inputs to system
+- describe tokenizing support text
+- describe computing support token embeddings
+- describe tokenizing input text
+- describe computing input token embeddings
+- describe nearest neighbor component
+- describe computing distances between token embeddings
+- describe determining closest support token
+- describe tagging input token
+- describe computing distance vector
+- describe output layer component
+- describe computing nearest neighbor score vector
+- describe softmax function
+- describe nearest neighbor score vector
+- compute nearest neighbor score vectors
+- assign tags to input tokens
+- motivate tag transition probabilities
+- describe limitations of tag transition probabilities
+- introduce abstract tag transition probabilities
+- define abstract tag transitions
+- provide examples of abstract tag transitions
+- describe computation of abstract tag transition probabilities
+- illustrate abstract tag transition probability matrix
+- describe sequence processing component
+- motivate emission and transition probabilities
+- describe entity assignment component
+- outline applications of NER
+- introduce method for adapting NER system
+- obtain classifier for first NER task
+- obtain support tokens for second NER task
+- compute support token embeddings
+- obtain abstract tag transition probabilities
+- obtain input tokens for second NER task
+- compute input token embeddings
+- describe flowchart of example method
+- define NER task
+- describe variations of NER tasks
+- describe named entity recognition (NER) system
+- introduce few-shot learning for NER
+- describe technical improvements for rapid and reliable recognition of new named entities
+- compute distances between input token embeddings and support token embeddings
+- assign tags to input tokens using distances and abstract tag transition probabilities
+- compute nearest neighbor score vector for input tokens
+- assign tags to input tokens using nearest neighbor score vectors and abstract tag transition probabilities
+- recognize named entity in input tokens using assigned tags
+- describe components of computing device for implementing NER system
+- describe tokenization component
+- describe classifier component
+- describe sequence model component
+- describe entity assignment component
+- describe token embedding component
+- describe output layer component
+- describe nearest neighbor component
+- describe data stores for NER system
+- describe training data store
+- describe support data store
+- describe deployment of NER system on machine
+- describe processor for executing computer software
+- describe memory for storing methods, codes, and instructions
+- describe storage medium for storing methods, codes, and instructions
+- describe server for deploying NER system
+- describe client for deploying NER system
+- describe network infrastructure for deploying NER system
+- describe cellular network for deploying NER system
+- describe mobile devices for deploying NER system
+- describe machine readable media for storing computer software
+- describe transformation of physical and/or intangible items
+- describe logical boundaries between elements
+- describe implementation on machines
+- describe variations and modifications of steps
+- describe hardware and software for implementing steps
+- describe computer executable code for implementing steps
+- describe systems that perform steps
+- describe means for performing steps
+- describe permutations and combinations of steps
+- describe modifications and improvements to embodiments
+- describe incorporation of referenced documents
+- describe broadest sense of invention
+- describe technical improvements for rapid and reliable recognition of new named entities
+- describe NER system with few-shot learning
+

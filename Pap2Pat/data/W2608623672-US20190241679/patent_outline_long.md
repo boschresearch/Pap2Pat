@@ -1,0 +1,99 @@
+# DESCRIPTION
+
+- introduce metal pollutants in wood
+- describe wood treatment with metal-based preservatives
+- mention toxicity of copper, arsenic, and chromium
+- describe limitations of wood disposal
+- introduce controlled landfill method
+- describe thermal treatment and disposal of metal-enriched ash
+- introduce leaching and disposal of chemically precipitated metal ions
+- describe acid leaching and metal recovery
+- mention electrodeposition of Cu(II) from aqueous solution
+- discuss techno-economic model for dilute acid-leaching
+- estimate operating cost of metal extraction
+- compare cost of virgin wood feedstock for biofuel production
+- introduce use of contaminated waste wood as feedstock for biorefinery
+- describe electrochemical recovery of metals
+- introduce lignocellulosic biomass composition
+- describe cellulose, hemicellulose, and lignin components
+- explain cellulosic biofuel production process
+- mention limitations of using preservative-treated biomass
+- introduce ionic liquid fractionation of cellulose and lignin
+- describe process of extracting metals from treated cellulosic biomass
+- define "extraction" and "cellulosic" or "lignocellulosic biomass"
+- describe metal pollutant removal efficiency
+- introduce treated cellulosic biomass and metal-based preservatives
+- define "metal pollutant" and its effects on downstream processes
+- describe preferred metal pollutants and their sources
+- introduce ionic liquid composition and properties
+- describe preferred anions and cations for ionic liquid
+- introduce protic cation ion and ammonium derivative
+- describe aliphatic, alkyl, alkenyl, and carbocycle groups
+- introduce lignin solubility in ionic liquid
+- describe solid residue or pulp production
+- mention hemicellulose solubility in ionic liquid
+- describe metal pollutant retention in ionic liquid
+- introduce heating and stirring conditions for reaction
+- describe reaction time and temperature ranges
+- define heteroaryl
+- define aryl or carbocycle group
+- define halogen atom
+- describe alkylammonium cations
+- describe trialkylammoniums
+- describe dialkylammoniums
+- describe monoalkylammoniums
+- describe preferred alkylammonium cations
+- describe nitrogen-containing heterocyclic moiety
+- describe cation ring
+- describe C2-6 alkoxy
+- describe C2-6 alkoxyalkyl group
+- describe preferred cations
+- describe ionic liquid composition
+- describe preparation of ionic liquids
+- describe excess base in ionic liquid
+- describe water in ionic liquid composition
+- describe excess acid in ionic liquid composition
+- describe contacting biomass with ionic liquid
+- describe lubrication properties of ionic liquid
+- describe metal extraction and lignin solubilization
+- describe electrodeposition of metal pollutant
+- describe recovery of metal pollutant
+- describe recycling of ionic liquid
+- describe separation of ionic liquid from cellulose
+- describe washing of cellulose containing solid residue
+- describe precipitation of lignin
+- describe removal of anti-solvent
+- describe drying of ionic liquid
+- describe saccharification of cellulose containing solid residue
+- describe enzymatic hydrolysis
+- describe glucose obtained by hydrolysis
+- summarize process of the invention
+
+## EXAMPLE 1. DECONSTRUCTION OF BIOMASS AND EXTRACTION OF METALS IN VARIOUS IONIC LIQUIDS
+
+- introduce deconstruction and extraction process
+- prepare ionic liquid/water mixture
+- add biomass to ionic liquid mixture
+- incubate mixture at 170° C.
+- transfer mixture to centrifuge tube
+- wash and centrifuge mixture
+- Soxhlet extract pulp with ethanol
+- evaporate ethanol and recover ionic liquid/lignin mixture
+- precipitate lignin with water
+- determine pulp and lignin yields
+- perform saccharification
+- determine glucose yields
+- analyse metal content by ICP-OES
+- discuss results and extraction efficiencies
+
+## EXAMPLE 2 COPPER SOLUBILITY AND ELECTRODEPOSITION OF COPPER FROM VARIOUS IONIC LIQUIDS COPPER SOLUBILITY
+
+- introduce copper solubility measurements
+- dissolve copper oxide in ionic liquid
+- filter and analyse solutions by ICP-OES
+- investigate effect of excess base on solubility
+- display solubility results in FIG. 3
+- discuss effect of water content on solubility
+- summarize maximum copper solubilities in table 7
+- discuss implications for biomass pre-treatment
+

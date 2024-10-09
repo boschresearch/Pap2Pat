@@ -1,0 +1,278 @@
+# DESCRIPTION
+
+## COPYRIGHT NOTICE
+
+- reserve copyright
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- introduce machine learning
+
+## SUMMARY
+
+- introduce method
+- convolve input qudits
+- pool input qudits
+- repeat convolving and pooling
+- apply fully connected quantum channel
+- perform final generalized measurement
+- specify pooling layer generalized measurement
+- specify final generalized measurement
+- specify subspace dimension
+- specify basis state
+- specify qudit type
+- specify quantum channel type
+- specify qudit proximity
+- specify convolving layer invariance
+- specify pooling layer invariance
+- parametrize quantum channels
+- optimize variational parameter
+- specify additional convolving layer
+- specify additional pooling layer
+- specify different convolving subgroups
+- specify different pooling subgroups
+- specify additional convolving layer
+- specify additional pooling layer
+- specify independent repetition
+- specify independent quantum channels
+- specify small convolving subgroup
+- specify small pooling subgroup
+- specify neutral atoms
+- determine phase of matter
+- determine class of states
+- introduce method
+- provide qudits susceptible to noise
+- enlarge set of qudits
+- apply fully connected unitary
+- initialize list of information
+- expand set of qudits
+- divide into expansion subgroups
+- form set of qudits
+- apply unitary
+- enlarge set of qudits
+- append information
+- convolve set of qudits
+- apply convolving layer
+- append information
+- repeat expanding and convolving
+- apply inverse layers
+- apply inverse convolving layer
+- apply inverse expansion layer
+- perform inverse expansion layer generalized measurement
+- apply unitary
+- remove expansion qudit
+- apply inverse fully connected unitary
+- perform final generalized measurement
+- determine class of classical or quantum states
+- introduce system
+- configure energy source
+- configure measurement device
+- control energy source and measurement device
+- convolve qudits
+- pool qudits
+- repeat convolving and pooling
+- apply fully connected quantum channel
+- perform final generalized measurement
+- determine phase of matter
+- determine class of classical or quantum states
+- introduce system
+- configure energy source
+- configure measurement device
+- control energy source and measurement device
+- convolve qudits
+- pool qudits
+- repeat convolving and pooling
+- apply fully connected quantum channel
+- perform generalized measurement
+- introduce system
+- configure energy source
+- configure measurement device
+- control energy source and measurement device
+- enlarge set of qudits
+- perform final generalized measurement
+
+## DETAILED DESCRIPTION
+
+- introduce quantum machine learning challenges
+- describe limitations of classical machine learning for quantum problems
+- introduce quantum convolutional neural network (QCNN) circuit model
+- describe QCNN training process
+- explain application of QCNN to new data
+- describe convolving and pooling qudits in QCNN
+- introduce quantum channels with tunable parameters
+- describe tuning parameters based on training set
+- explain application of QCNN to intrinsically quantum many-body problems
+- introduce quantum phase recognition (QPR) problem
+- describe QCNN solution to QPR problem
+- introduce quantum error correction (QEC) optimization problem
+- describe QCNN solution to QEC optimization problem
+- introduce classical convolutional neural network (CNN) architecture
+- describe CNN layers and feature maps
+- explain convolution and pooling operations in CNN
+- introduce activation functions in CNN
+- describe fully connected layer in CNN
+- explain training process for CNN
+- describe hyperparameters in CNN
+- introduce FIG. 1A, a simplified diagram of a classical CNN technique
+- describe convolution and pooling steps in CNN
+- explain output probability distribution in CNN
+- introduce FIG. 1B, a diagram of an example QCNN circuit
+- describe QCNN circuit structure
+- explain convolving and pooling layers in QCNN
+- describe fully connected layer and measurement in QCNN
+- introduce restrictions on QCNN circuit for efficiency and performance
+- describe gate depth and layer restrictions in QCNN
+- explain quasilocal unitary operations in QCNN
+- describe translationally invariant QCNN layers
+- introduce lattice arrangement of input qubits in QCNN
+- explain pooling layers and measurement in QCNN
+- describe nonlinearities in QCNN
+- explain repeated application of convolution and pooling layers in QCNN
+- describe fully connected layer and output measurement in QCNN
+- introduce extensions to QCNN technique
+- describe generalizations to quantum channels and measurements in QCNN
+- describe QCNN circuit system
+- introduce energy source
+- introduce measurement device
+- introduce controller
+- describe controller functionality
+- describe user interface
+- describe input port
+- describe computer as controller
+- describe memory and processor
+- describe QCNN to classify N-qubit input states
+- describe generic quantum circuit-based classifiers
+- introduce mean squared error equation
+- describe learning process
+- describe gradient descent method
+- describe other optimization techniques
+- relate QCNN to MERA and QEC
+- describe MERA framework
+- describe QCNN circuit operation
+- describe QCNN for input states other than |ψ
+- describe syndrome measurements in QEC
+- describe QCNN circuit with multiple pooling layers
+- describe structural similarity with MERA circuits
+- describe recognizing generic quantum phases
+- describe constructing QCNN circuit from MERA
+- describe matrix product state representation
+- describe MERA representation of state
+- describe fixed-point property of MERA
+- describe QCNN for quantum phase recognition
+- describe initializing QCNN with MERA representation
+- describe using QCNN for classifying input quantum states
+- introduce QCNN for QPR
+- motivate QCNN for SPT phase identification
+- describe Hamiltonian for 2x2 SPT phase
+- define 2x2 symmetry
+- introduce phase diagram
+- describe QCNN circuit for SPT phase recognition
+- explain controlled-phase gates
+- explain Toffoli gates
+- describe pooling layers
+- explain convolution-pooling unit
+- describe fully connected layer
+- simulate QCNN circuit
+- describe sample complexity
+- define SOPs
+- explain measurement of SOPs
+- describe sample complexity for QCNN
+- show sample complexity for QCNN and SOPs
+- compare sample complexity of QCNN and SOPs
+- explain reduction of sample complexity
+- describe MERA and QEC analogy
+- explain error correction in QCNN
+- describe physical implementation of QCNN
+- replace intermediate measurements with entangling gates
+- generalize replacement of intermediate measurements
+- describe Rydberg atom implementation
+- compute gate depth of cluster QCNN circuit
+- implement multi-qubit gates
+- describe CzZij gate
+- describe CxZij gate
+- describe CxCxXijk gate
+- count multi-qubit operations
+- count single-qubit rotations
+- count fully connected layer operations
+- calculate total number of multi-qubit operations
+- describe QCNN for other Hamiltonian models
+- discuss limitations of simulations
+- conclude QCNN for SPT phase identification
+- describe Rydberg interaction
+- introduce QCNN for distinguishing quantum states
+- explain learning procedure for QCNN
+- describe hyperparameters of QCNN circuit
+- detail convolution and pooling layers
+- explain fully connected layer
+- describe unitary parametrization
+- explain gradient descent implementation
+- update coefficients using gradient descent
+- describe physical application of unitary gates
+- explain training procedure for QCNN
+- show performance of numerically simulated QCNN
+- describe QCNN structure for avoiding overfitting
+- introduce Haldane phase and its Hamiltonian
+- describe symmetry protection of Haldane phase
+- explain quasilocal isometric map for Haldane phase
+- apply QCNN circuit to Haldane phase
+- show QCNN output for Haldane phase
+- describe final operator in Heisenberg picture
+- explain postponing measurements to the end
+- describe non-local observable
+- derive recursive relations for unitary-controlled gates
+- explain transformation of SOPs at different depths
+- describe measurement of sum of products of SOPs
+- introduce quantum convolutional neural networks (QCNN)
+- motivate QCNN for quantum error correction (QEC)
+- summarize QCNN structure
+- define fixed-point criterion
+- define QEC criterion
+- motivate MERA representation
+- introduce example Hamiltonian
+- treat ground state manifold as code space
+- specify QCNN convolution and pooling layers
+- motivate QCNN for QEC optimization
+- introduce inverse QCNN operation
+- describe encoding scheme
+- describe decoding scheme
+- introduce error channel
+- define recovery fidelity
+- motivate variational optimization
+- describe expansion and convolving layers
+- describe inverse expansion and convolving layers
+- introduce list L for book-keeping
+- describe decoding procedure
+- motivate parametrization of unitaries
+- describe optimization of unitaries
+- introduce example involving N=9 physical qubits
+- describe encoding circuit
+- describe decoding circuit
+- motivate evaluation of QCNN applied to QEC optimization
+- introduce example input error models
+- describe depolarization quantum channel
+- compare QCNN code to Shor code
+- introduce correlated error model
+- describe additional quantum channel
+- motivate optimization of U1 and U2
+- describe cost function C1 for U1
+- describe optimization of U2
+- introduce graph showing logical error rate
+- motivate generalization to higher dimensions
+- describe relaxation of translation-invariance constraints
+- introduce optimizations for fault-tolerant operations
+- describe alternative gradient computation schemes
+- motivate QCNN with classical input state
+- describe QCNN circuit model with classical input state
+- motivate application to classical machine learning tasks
+- describe FIG. 5A
+- describe FIG. 5B
+- describe FIG. 9
+- introduce anisotropic probabilities
+- describe two-qubit correlated errors
+- motivate sequential optimization of U1 and U2
+- describe efficient cost function C1 for U1
+

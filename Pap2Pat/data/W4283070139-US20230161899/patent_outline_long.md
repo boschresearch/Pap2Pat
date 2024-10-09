@@ -1,0 +1,154 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate data privacy
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- motivate open and public datasets
+- highlight privacy concerns in data sharing
+- introduce differential privacy (DP) as a solution
+- formally define DP
+- describe DP data release
+- highlight limitations of existing DP data release techniques
+- introduce multi-party setting
+- describe system 100 of FIG. 1
+- introduce data aggregator 110
+- describe data providers 102a-n and computing devices 116a-n
+- describe network 120
+- highlight limitations of existing approaches
+- introduce alternative approach
+- describe systems and methods described herein
+- introduce two DP algorithms
+- describe first DP algorithm
+- introduce system 200 of FIG. 2
+- describe data providers 102a-n and databases 104a-n
+- describe data 300 associated with three data providers
+- introduce differential privacy model 202a-n
+- describe Gaussian mechanism for DP
+- state first lemma
+- define σε,δ
+- state second lemma (JL Lemma)
+- state Bernoulli version of JL Lemma
+- state JL Lemma corollary
+- introduce first improved DP algorithm (DGM-OLS)
+- describe adding Gaussian noise and removing biases
+- introduce RMGM-OLS algorithm
+- describe data compression using Bernoulli projection matrix
+- define notations for data matrices and datasets
+- define privacy constraint for release algorithm
+- define utility target for linear regression task
+- introduce assumptions for DP algorithms
+- describe first improved DP algorithm (DGM-OLS)
+- describe dataset release stage of DGM-OLS
+- describe learning stage of DGM-OLS
+- derive private joint dataset for DGM-OLS
+- derive feature matrix and label vector for DGM-OLS
+- prove convergence of learned linear model for DGM-OLS
+- discuss limitations of DGM-OLS
+- introduce second improved DP algorithm (RMGM-OLS)
+- summarize first improved DP algorithm (DGM-OLS)
+- outline release and learning algorithms for DGM-OLS
+- introduce RMGM-OLS algorithm
+- limitations of A1dgm algorithm
+- motivate second improved DP algorithm
+- define dataset release stage A1rmgm
+- define learning stage A2rmgm
+- derive sensitivity of aTDj
+- apply JL Lemma to A1rmgm
+- guarantee privacy of Drmgm
+- decompose convergence of (Xrmgm)TXrmgm
+- analyze first term of decomposition
+- analyze second term of decomposition
+- analyze third term of decomposition
+- define A2rmgm and guarantee utility
+
+### If
+
+- state theorem
+- select k to balance terms
+- choose optimal k
+- state second improved DP algorithm
+- describe release algorithm A1rmgm
+- describe learning algorithm A2rmgm
+- compare with first improved DP algorithm
+- evaluate on synthetic and real-world datasets
+- set k for synthetic dataset experiments
+- set k for real-world dataset experiments
+- consider baselines
+- describe OLS
+- describe Biased Gaussian mechanism (BGM-OLS)
+- evaluate on synthetic datasets
+- simulate data
+- generate ground truth linear model w*
+- sample data
+- verify assumptions
+- experiment with different training set sizes
+- evaluate on real-world datasets
+- describe evaluation metrics
+- compare performances of first and second improved DP algorithms
+- analyze convergence of probability
+- analyze expected weight distance
+- show scatter plot of l2 distance vs. minimum absolute eigenvalue
+- evaluate on real-world datasets
+- describe datasets
+- show table of mean squared losses
+- conclude second improved DP algorithm is practical solution
+- introduce differential privacy model
+- describe first improved DP algorithm (DGM-OLS)
+- add Gaussian noise to data
+- remove bias from Hessian matrix
+- release processed dataset
+- describe second improved DP algorithm (RMGM-OLS)
+- compress dataset using Bernoulli projection matrix
+- add Gaussian noise to compressed data
+- release processed dataset
+- train linear model on complete data
+- discuss limitations of existing differentially private data release algorithms
+- discuss advantages of proposed algorithms
+- illustrate computing device architecture
+- describe CPU and chipset
+- describe GPU
+- describe RAM and ROM
+- describe network interface controller
+- describe mass storage device
+- describe storage controller
+- describe management component
+- describe transformation of physical state for data storage
+- describe reading information from mass storage device
+- discuss computer-readable storage media
+- describe operating system
+- describe mass storage device storing operating system
+- describe input/output controller
+- describe computing device with virtual machine host process
+- discuss interpretation and execution of instructions
+- discuss ranges and approximations
+- discuss "optional" and "optionally"
+- discuss "comprise" and variations
+- discuss "exemplary"
+- discuss "such as"
+- discuss components and combinations
+- discuss methods and systems
+- discuss computer program product
+- discuss web-implemented computer software
+- discuss block diagrams and flowchart illustrations
+- discuss computer-readable memory
+- discuss article of manufacture
+- discuss computer-implemented process
+- discuss independent use of features and processes
+- discuss omission of methods or process blocks
+- discuss sequence of blocks or states
+- discuss addition or removal of blocks or states
+- discuss configuration of systems and components
+- discuss memory management and data integrity
+- discuss firmware and hardware implementation
+- discuss computer-readable medium
+- discuss generated data signals
+- discuss transmission media
+- discuss computer program products
+- discuss scope of invention
+- discuss order of operations
+- discuss modifications and variations
+- discuss scope and spirit of disclosure
+

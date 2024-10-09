@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD OF INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### DEFINITIONS
+
+### EXAMPLES
+
+### The Algorithm Used for Screening Test Development
+
+### The Algorithm for Clinical Trial and Usage
+

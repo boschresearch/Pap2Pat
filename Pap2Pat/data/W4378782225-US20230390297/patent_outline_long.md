@@ -1,0 +1,185 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce MLL3 and MLL4
+- describe roles in enhancer activity regulation
+- discuss developmental processes
+- highlight emerging roles in diseases and cancers
+
+## SUMMARY
+
+- introduce MLL3/4 COMPASS mutation
+- describe method for treating MLL3/4 deficient cancer
+- specify nucleotide synthesis inhibitors
+- provide examples of de novo purine synthesis inhibitors
+- provide examples of de novo pyrimidine synthesis inhibitors
+- describe method for treating MLL3/4 loss of function mutation
+- specify cancers that can be treated
+- describe method for testing biomarker and administering treatment
+
+## DETAILED DESCRIPTION
+
+- introduce patent disclosure
+- provide context for disclosure
+- define MLL3/4 COMPASS deficient cancer
+- describe method for treating MLL3/4 COMPASS deficient cancer
+- administer nucleotide synthesis inhibitor
+- define subject in need of treatment
+- describe MLL3 and MLL4 functions
+- describe COMPASS family of histone H3 lysine 4 methyltransferases
+- describe MLL3 and MLL4 loss of function mutations
+- describe MLL3/4 COMPASS deficient cancers
+- describe de novo nucleotide synthesis
+- describe nucleotide synthesis inhibitors
+- describe de novo purine synthesis inhibitors
+- describe de novo pyrimidine synthesis inhibitors
+- describe GARFT inhibitor
+- describe PPAT, PFAS, PAICS, ADSL, AdSS, and GMPS inhibitors
+- describe lometrexol
+- describe pelitrexol and methotrexate
+- describe pyrimidine nucleotide synthesis inhibitors
+- describe CAD inhibitor
+- describe DHODH inhibitor
+- describe LIMPS inhibitor
+- describe Brequinar and Leflunomide
+- describe combinations of nucleotide synthesis inhibitors
+- describe method for treating subject with MLL3/4 COMPASS deficient cancer
+- obtain sample from subject
+- test sample for biomarker
+- administer nucleotide synthesis inhibitor
+- define biomarker
+- describe biological sample
+- describe pharmaceutical composition
+- describe effective amount of nucleotide synthesis inhibitor
+- describe pharmaceutically acceptable excipient, carrier, or diluent
+- describe suitable carrier or vehicle
+- describe water-containing liquid carrier
+- describe solid carrier
+- describe buffering agents
+- describe antioxidants
+- describe stabilizing delivery vehicle
+- describe biologically acceptable buffer
+- describe pH range
+- describe buffering agents
+- provide disclaimer
+- define "about", "approximately", "substantially", and "significantly"
+- define "include" and "including"
+- define "comprise" and "consisting of"
+- define "consisting essentially of"
+- describe recitation of ranges of values
+- provide final disclaimer
+
+### EXAMPLES
+
+- introduce synthetic lethal approach
+- describe Mll3/4 knockout mouse ES cell line generation
+- confirm knockout of Mll3 and Mll4 by Western blot analysis
+- perform H3K4me1 and H3K27Ac ChIP-seq
+- analyze log 2 fold change ChIP-seq signal of H3K4me1 and H3K27Ac
+- perform meta-analysis of Group2
+- demonstrate H3K4me1 and H3K27Ac reduction in Mll3/4 KO cells
+- analyze feature distribution of MLL4 peaks
+- perform KEGG pathway enrichment analysis of nearby genes
+- analyze pluripotency markers in WT and Mll3/4 KO cells
+- compare cellular growth rates of WT and MLL3/4K0 cells
+- perform dropout screen with Brie CRISPR knockout library
+- analyze enrichment of sgRNAs in live cells
+- identify top 300 negatively selected genes in Mll3/4 KO cells
+- analyze beta score of gene essentiality
+- examine log 2 fold change of sgRNA enrichment
+- validate CRISPR screening results
+- perform liquid-chromatography tandem mass spectrometry metabolite profiling
+- analyze steady-state levels of metabolites involved in methionine metabolism
+- analyze steady-state levels of metabolites involved in urea cycle
+- analyze steady-state levels of metabolites involved in nucleotide metabolism
+- describe nucleotide metabolism pathways
+- employ LC-MS-based isotope tracing
+- analyze flux through de novo purine synthesis
+- analyze flux through de novo pyrimidine synthesis
+- analyze flux through purine salvage pathway
+- treat WT and Mll3/4 KO cells with lometrexol and hypoxanthine
+- analyze gene expression change in response to LTX and/or HPX treatment
+- perform pathway analysis of differentially expressed genes
+- analyze gene expression signature changes in WT and KO cells
+- compare LTX treatment in WT, MLL3/4 ΔSET, and MLL3/4 KO cells
+- perform TMT proteomics profiling to identify purine metabolism upregulation
+- introduce MLL3/4 deficient cells
+- investigate chromatin structure and epigenetic alterations
+- perform Hi-C to explore chromatin structure
+- analyze compartment strength
+- correlate gene expression with AB compartment shifting
+- examine gene expression change in B-A and A-B shifted compartments
+- analyze eigenvector of top upregulated and downregulated genes
+- summarize higher order chromatin structure change
+- introduce MLL4 mutant colorectal cancer cells
+- analyze CCLE colorectal cancer cell line RNA-seq data
+- identify genes correlated with PC2
+- analyze GO terms of downregulated genes
+- examine differentially expressed genes in MLL4 truncation and WT patient samples
+- analyze key pathways of downregulated genes
+- examine immune response activation in patient samples
+- investigate sensitivity to lometrexol treatment
+- analyze cell lines with MLL4 mutations
+- treat cells with Piericidin A or Phenformin
+- employ 15 N-glutamine tracing
+- generate MLL4 truncation mutated or complete knockout cells
+- measure sensitivity to methotrexate
+- knock down GART and PAICS
+- analyze cellular growth and colony formation
+- investigate LTX induced cytotoxic effects
+- examine cell cycle and apoptosis markers
+- analyze gene expression change after LTX treatment
+- identify LTX downregulated genes
+- analyze mitotic cell cycle pathways
+- define lometrexol responsive mitotic gene signature
+- inhibit de novo purine synthesis by LTX
+- suppress MLL4 mutant tumor growth
+- analyze anti-tumor activity of LTX
+- discuss crosstalk between epigenetic alteration and metabolic dependency shift
+- discuss implications for patient stratification and treatment plan
+- describe CRISPR knockout of Mll3 and Mll4
+- list antibodies and Western Blot
+- describe Genome-Scale CRISPR-Cas9 Knockout (GeCKO) Screening
+- outline NGS Data Processing
+- perform RNA-Seq Analysis
+- perform ChIP-Seq Analysis
+- describe Hi-C and Data Processing
+- outline Metabolomics Study
+- describe Tandem Mass Tag (TMT) Proteomics Study
+- detail Western blot analysis
+- describe data visualization
+- introduce TMT study
+- describe sample preparation
+- outline protein quantification
+- detail peptide separation and detection
+- explain peptide sequencing and identification
+- describe protein quantification filtering
+- introduce xenograft studies
+- describe cell implantation
+- outline treatment groups
+- detail tumor size measurement
+- introduce statistical analysis
+- describe Kaplan-Meier estimator
+- outline log-rank test
+- introduce t-test
+- list references
+- introduce example 2
+- describe background
+- outline previous study
+- introduce BBN bladder cancer mouse model
+- state hypothesis
+- describe experiment design
+- outline BBN treatment
+- detail treatment groups
+- describe RNA isolation
+- outline mutation analysis
+- describe results
+- introduce discussion
+- interpret results
+- discuss implications
+- list references
+- introduce reference 1
+- introduce reference 2
+- conclude
+

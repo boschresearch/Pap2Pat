@@ -1,0 +1,111 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce neural networks
+
+## SUMMARY
+
+- motivate feature learning
+- define feature
+- describe method of training neural networks
+- introduce deep-metric learning system
+
+## DETAILED DESCRIPTION
+
+- introduce deep-metric learning (DML) system architecture
+- describe backbone neural network
+- explain feature engineering with pre-trained neural networks
+- motivate use of convolutional neural networks (CNNs)
+- describe machine-learning architecture for learning semantically meaningful representations
+- introduce Deep-Metric Learning (DML) based framework
+- explain embedding space and loss functions
+- describe global and local features in image retrieval
+- motivate hybrid approach combining global and local features
+- introduce self-attention or second-order attention in feature space
+- describe limitations of pairwise-based and proxy-based loss functions
+- introduce multi-head network with proxy-based and pairwise-based loss functions
+- describe descriptor module combining global and local descriptors
+- explain hybrid DML approach with second-order attention mechanism
+- describe processing pipeline using multi-headed network
+- explain image encoding and feature extraction
+- describe second-order attention blocks for refining features
+- explain learners computing concatenated feature set
+- describe loss functions and model training
+- explain generation of final feature representation
+- describe machine-learning model for object recognition
+- illustrate metric-learning architecture with feature-processing blocks
+- introduce system architecture
+- describe global and local feature aggregation
+- define proxy-anchor loss function
+- define multi-similarity loss function
+- describe multi-head module
+- explain advantages of multi-head network
+- describe proxy-based and pairwise-based losses
+- introduce enhancements on pairwise-based losses
+- describe ranked list loss
+- explain limitations of pairwise-based losses
+- introduce proxy-based metric learning
+- describe proxy-NCA loss
+- describe soft-triple loss
+- describe manifold proxy loss
+- explain limitations of proxy-based losses
+- describe multi-head network advantages
+- introduce joint local and global descriptors
+- describe combining global and local descriptors
+- explain deep global and local representations
+- describe training process for machine-learning model
+- describe system 100
+- introduce proxy-NCA
+- describe image processing
+- explain hyper-parameter setting
+- discuss final embeddings
+- describe error signal computation
+- discuss model training
+- summarize performance measurement
+- describe example trained model
+- illustrate property monitoring system 700
+- describe network 705
+- introduce control unit 710
+- describe controller 712
+- describe network module 714
+- discuss sensors 720
+- describe home automation controls 722
+- describe camera 730
+- discuss thermostat 734
+- describe module 737
+- introduce object recognition engine 757
+- describe robotic devices 790
+- discuss navigation within a home
+- describe data capture and recording devices
+- discuss output devices
+- describe communication module
+- discuss processor and storage capabilities
+- describe charging stations
+- introduce integrated security devices 780
+- introduce monitoring system components
+- describe monitoring server functionality
+- detail central alarm station server functionality
+- introduce authorized user devices
+- describe user device functionality
+- detail communication pathways between user devices and control unit
+- describe system configuration options
+- introduce camera functionality
+- detail image transmission and storage
+- describe system event triggering
+- introduce GPS-based communication pathway determination
+- describe status communication-based pathway determination
+- detail system implementation options
+- describe digital electronic circuitry implementation
+- describe computer software implementation
+- describe firmware implementation
+- describe hardware implementation
+- describe computer-readable storage medium
+- describe propagated signal implementation
+- describe data processing apparatus
+- describe special purpose logic circuitry
+- describe computer program structure
+- describe computer program deployment
+- describe computer program execution
+- describe interaction with user
+

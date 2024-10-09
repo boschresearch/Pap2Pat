@@ -1,0 +1,139 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce SNOM
+- explain s-SNOM technique
+- list s-SNOM applications
+- describe limitations of tapping mode s-SNOM
+- explain drawbacks of lock-in demodulation
+- note consistent reference numbers
+
+## DETAILED DESCRIPTION
+
+- introduce patent description
+- describe statutory requirements
+- discuss embodiments and variations
+- introduce PF-SNOM technique
+- describe advantages over conventional approaches
+- summarize PF-SNOM capabilities
+- introduce system diagram of PF-SNOM apparatus
+- describe AFM and diode laser components
+- discuss beam of light and sample stage components
+- describe piezoelectric oscillator and drive stage
+- discuss AFM cantilever and probe tip components
+- describe deflection measurement and processor components
+- introduce mid-infrared quantum cascade laser
+- describe beam splitter and parabolic mirror components
+- discuss scattered light and optical detector components
+- introduce asymmetric Michelson interferometer
+- describe detected optical signal and deflection signal
+- introduce graphical illustration of PF-SNOM technique
+- describe simultaneously recorded vertical deflection and scattering signal
+- discuss snap-in contact and peak force control
+- derive plot of detector signal versus tip-sample distance
+- describe procedure for converting waveforms into function for tomographic imaging
+- define tip-sample distance equation
+- introduce truncated sinusoidal shape
+- derive relationship between scattering signal and tip-sample distance
+- describe far-field background signal
+- explain removal of far-field background signal
+- obtain pure near-field response
+- describe fast background removal algorithm
+- explain trend fit of background
+- subtract far-field background from signal region
+- obtain pure near-field response
+- describe averaging of near-field response
+- explain synchronously averaged data
+- determine near-field response at specific tip-sample distance
+- describe tomographic image of sample
+- explain PF-SNOM imaging
+- describe homodyne phase dependence of PF-SNOM signals
+- explain interferometric detection of near-field signal
+- describe PF-SNOM signal dependence on homodyne phase
+- explain tip-sample interaction range
+- describe advantages of PF-SNOM over tapping mode s-SNOM
+- explain direct acquisition of near-field scattering signals
+- describe tomographic near-field images
+- explain linewidth broadening and resonant frequency shift
+- describe tip-induced relaxation of Phonon Polaritons
+- explain numerical modeling of PF-SNOM signals
+- describe limitations of tapping mode s-SNOM
+- explain vertical resolution of PF-SNOM
+- describe implications for scattering-type near-field optical microscopy
+- explain changes of near-field behaviors of samples
+- describe metallic tip as a damper
+- explain measurement of near-field responses
+- describe peak force tapping for nano-mechanical mapping
+- explain compatibility with simultaneous mechanical and electrical measurement
+- describe real-time measurement of near-field scattering signals
+- explain well-defined tip-sample contact in PFT mode
+- describe limitations of tapping mode AFM
+- explain advantages of PF-SNOM over tapping mode s-SNOM
+- describe retract curve analysis
+- explain complementary nature of PF-SNOM and PFIR microscopy
+- introduce PF-SNOM
+- advantages of PF-SNOM
+- example of valuable information accessible with PF-SNOM
+- describe FIG. 3A
+- describe FIG. 3B-C
+- describe FIG. 3D
+- describe FIG. 3E
+- describe FIG. 3F-G
+- describe spatial resolution of PF-SNOM
+- describe FIG. 3H
+- describe FIG. 3I
+- describe spectral response of BNNT
+- describe fitting parameters for PF-SNOM spectra
+- describe features involving tip-sample distance
+- describe image dipole model
+- describe advantages of PF-SNOM over conventional solutions
+- describe fast measurement of three-dimensional near-field responses
+- describe measurement of near-field signal at or below 2 nm tip-sample distance
+- describe gap-mode enhancement
+- describe synchronized data acquisition
+- describe peak force tapping mode
+- describe simultaneous measurement of near-field signal, mechanical responses, and electric signal
+- describe FIG. 3J
+- describe correlative measurement of sample topography, mechanical modulus, contact current, and near-field responses
+- describe near-field responses of phonon polaritons
+- describe advantages of PF-SNOM in nanoscale investigations
+- conclude advantages of PF-SNOM
+- describe PF-SNOM advantages
+- describe peak-force tapping-mode AFM applicability
+- illustrate PF-SNOM method flow chart
+- describe PF-SNOM scan cycle initiation
+- describe tip maneuvering
+- describe near field responses determination
+- describe background signal removal
+- describe wavelength adjustment
+- describe data collection and tomographic image generation
+- describe near-field mapping and spectroscopy
+- describe conventional s-SNOM limitations
+- describe PF-SNOM light source requirements
+- describe pulsing of light source benefits
+- describe synchronized PFT cycle and laser repetition rate
+- describe background signal determination
+- describe PF-SNOM benefits
+- describe alternative embodiment wavelength range
+- describe near-field spectroscopy using broadband light source
+- describe PF-SNOM near-field interferogram
+- describe Fourier Transform
+- describe PF-SNOM near-field spectrum
+- describe alternative embodiment tip position oscillation
+- describe correlative near-field signal and tip-sample distance measurements
+- describe computer device or system components
+- describe system bus interconnection
+- describe peripherals and I/O devices
+- describe processor and memory
+- describe AFM interface
+- describe onboard processor
+- describe data storage
+- describe software implementation
+- describe computer readable medium
+- describe incorporated references
+- describe term definitions
+- describe method performance
+- describe example language
+- describe alternative embodiments
+

@@ -1,0 +1,383 @@
+{
+    "id": "US20080195612",
+    "authors": [
+        "Sugoto Chakravarty",
+        "Dianhui Zhu",
+        "George E. Fox"
+    ],
+    "title": "Application package to automatically identify some single stranded RNA viruses from characteristic residues of capsid protein or nucleotide sequences",
+    "date": "2007-09-21 00:00:00",
+    "abstract": "A system implemented on a computer is disclosed for automatically identifying strains of partial or complete capsid sequences of picoma and caliciviruses, two of the most highly diverse ssRNA virus families.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "1. Field of the Invention",
+                        "The present invention relates to a software product that uses unique characterizing residues to automatically identify strains of partial or complete capsid sequences of picorna viruses and calici viruses, two of the most highly diverse single stranded RNA (ssRNA) virus families.",
+                        "More particularly, the present invention relates to a computer program product stored on a computer readable medium for predicting strains of some ssRNA viruses from their limited sequence data, said computer product including a graphical user interface (GUI) code operable to carry out all data input-output (I/O) operations; storage codes operable to store virus sequence databases in the form of multiple data arrays containing information about phylogenetic trees, sequence groups and characteristic residues of these groups; sequence comparison codes operable to compare input virus sequences with the stored database sequences on a residue-by-residue basis; identification codes operable to identify the strains of input virus sequences based on comparisons (iii) and subsequent decision making algorithms.",
+                        "2. Description of the Related Art",
+                        "Currently, no equipments or kits can unambiguously distinguish among a particularly important class of viruses that cause alarming epidemic outbreaks all over the world and consequently, pose high bio-terrorism related threats. This class comprises of the single-stranded RNA (ssRNA) viruses which include diverse virus families ranging from those that cause flu (including the cruise-ship flu and the bird flu) to the AIDS causing viruses. The main difficulty in distinguishing among these viruses and detecting them lies in their molecular details. As the name suggests, each of these viruses consists of a single genomic RNA strand enclosed within a protein shell called the capsid. This encapsidated RNA strand undergoes rapid sequence mutations to generate a large number of virus strains that are often associated with different epidemic outbreaks. Sequence differences among these strains are so subtle and intricate that they appear to be almost random. There are no reliable methods to unambiguously distinguish among the strains by systematically tracking these variations. Most often, the capsid sequences show the maximum variations relative to the other genomic regions for a given ssRNA virus families. This is mainly because the capsid residues undergo most mutations in response to host immunity. Consequently, capsid sequences provide the best regions to identify strains as they truly represent the diversity of ssRNA virus families. Thus, any reliable method to uniquely identify the ssRNA virus strains would be based on capsid sequences even though the problem of strain identification on the basis of these sequences may appear intractable.",
+                        "Two diagnostic methods are most widely used to detect ssRNA viruses. One of them relies on immuno-based techniques while the other is based on reverse transcriptase polymerase chain reaction (RT-PCR) assays. The immuno-based assays distinguish strains on the basis of epitope differences in the capsid protein while the RT-PCR based assays use nucleotide primers to amplify differences in the viral genome. However, experimental constraints limit the ability of both of these assays in distinguishing among the strains. Most often, these methods are useful in detecting only significant sequence differences but they fail to detect subtle sequence variations among the strains which occurs, for example, when the sequence identity falls to approximately 10% or below as in the case of noroviruses",
+                        "Accurate strain recognition in uncharacterized target capsid sequences is essential in understanding the epidemiology and diagnostics of these viruses and for efficient vaccine development. Experimental techniques to detect ssRNA virus strains are inadequate when the number of strains are very large as is the case with picornaviruses and caliciviruses, or, the strains are non-cultivable like those of the human caliciviruses. Additionally, existing homology comparison based computational methods to recognize strains are of limited use as they most often rely on similarity scores between target sequences and sequences of homology matched reference strains. Methods based on such scores are often time consuming and ambiguous especially if only partial target sequences are available or, if different ssRNA virus families are jointly analyzed. In such cases, knowledge of residues that uniquely distinguish among known reference strains is critical for rapid and unambiguous strain recognition of target capsid sequences. Conventional sequence comparisons are unable to identify such capsid residues due to high sequence divergence among the ssRNA virus reference strains. Consequently, automated general methods to predict strains from sequence data of such viruses on the basis of strain distinguishing residues are not available.",
+                        "One of the main challenges, therefore, in making efficient detection systems for ssRNA viruses is to devise methods to unambiguously distinguish subtle sequence variations among the different ssRNA virus strains using stain distinguishing residues. This challenge becomes significantly tough when only partial sequences of these viruses are available. The only feasible way to address this problem is through computational techniques. However, all such known techniques are based on criteria that allow them to distinguish only significantly different strains. In contrast, the intellectual property described here is a software product based on different computational criteria. The product successfully demonstrates a way to distinguish among very closely related virus strains of two important ssRNA virus families. The only requirements of the software are the availability of accurately known (complete or partial) genomic or protein capsid sequences of these viruses. Given the rapidly improving sequencing techniques, this should not be a major problem, and, it should therefore be possible to design and manufacture efficient ssRNA virus detection systems based on the described software. It is anticipated that the software will reduce both time and costs in identifying closely related ssRNA viruses from their sequences by substantially reducing the throughput time.",
+                        "Most non-bacterial epidemic outbreaks are caused by single stranded RNA (ssRNA) viruses. Typically, these viruses undergo rapid genetic mutations that result in a large and dynamic population diversity seen as different virus strains utilizing multiple hosts [1]. Caliciviruses and picornaviruses are two of the most highly divergent ssRNA virus families each containing several hundred reference strains showing very low sequence identity even within families [2-4]. The software determines relationships among the strains using a unique algorithm in contrast to existing methods. Relationships among the strains are usually inferred through conventional homology based comparisons using complete capsid sequences or other genomic regions. These comparisons seek to identify clusters of similar sequences that comprise the major sequence groups (genogroups or genera) and their sub-groups leading to various diagnostics [5-16] and classification schemes for these viruses.",
+                        "The four calicivirus genera (noroviruses, sapoviruses, lagoviruses and vesiviruses) [3, 4, 17] and the nine picornavirus genera (apthoviruses, cardioviruses, enteroviruses, erboviruses, hepatoviruses, kobuviruses, parechoviruses, rhinoviruses and teschoviruses) [2] are classified using such schemes [2, 4]. Further divisions of these genera reflect more detailed sequence relatedness among these viruses. For example, among the diverse caliciviruses [17], noroviruses are divided into two genogroups GI and GII [18-20] each of which contains seven sequence clusters (GI.1-GI.7 and GII.1-GII.7) [4], sapovirus sequences are grouped into 2-5 genogroups each of which contains several clusters [2]-23], vesivirus sequences are known to contain at least 40 immune response related antigenic serotypes and lagovirus sequences cluster into proposed sero-specific groups [24]. Similarly, classification of the 9 picornavirus genera into species, each of which consists of several serotypes [2, 25] reflects finer relations among these virus sequences (Table 1).",
+                        "The available crystal structures of several calici and picornavirus capsids [26-32] further help understand such sequence relationships including those among the four subunits (VP1-VP4) of the picornavirus capsids [2].",
+                        "Strain and genogroup predictions in uncharacterized target sequences of calici and picornaviruses depend critically on their sequence relationships. Most often, such predictions use conventional homology comparisons between the target and a large number of known reference sequences. However, there are difficulties in these approaches when applied to caliciviruses. Most prediction methods for these viruses are based on sequence similarity cut-off values that are arbitrarily derived from the homology based sequence comparisons [19]. Although recent reports indicate statistically significant estimation of such cut-off values in distinguishing the major norovirus genogroups [33], no uniform criteria exist to accurately estimate these values for the other caliciviruses. In addition, homology based sequence similarity cut-off values are even more difficult to estimate when different virus genera need to be analyzed together in situations for example, where the genus of the target sequences may not be known. These difficulties are compounded while determining the strains of partial sequences mainly because experimental considerations usually restrict these partial sequences to smaller and relatively more conserved regions [15, 19, 34-37] whose comparisons may often introduce ambiguities in strain identification.",
+                        "Even if complete sequences of target virus capsids are compared [33, 38], strain determination using homology based similarity scores is still computationally challenging. This is because comparisons of a large number of complete capsid sequences demands significant computation time which increases exponentially with increasing sequence lengths and the number of sequences that are compared together. Such limitations may severely reduce the number of usable reference capsid sequences thereby creating major computational bottlenecks.",
+                        "Recent methods to genotype sequences belonging to certain virus families [39] suggest ways to reduce such bottlenecks. These methods efficiently align sliding windows of target sequences with databases of reference sequences and genotype the target sequences essentially using highest overall alignment scores. However, such methods, primarily designed to detect recombination breakpoints within virus genomes, critically depend on parameters such as window sizes and choice of reference sequences. Smaller windows may significantly increase the computation time while larger windows may overlook fine sequence variations. Similarly, incorrect choices of reference sequences may introduce possible error inducing biases. Time consuming repetitive runs using different trial settings of these parameters may be necessary to correctly genotype virus strains in such cases [39].",
+                        "Thus, strain recognition methods using sequence identity based scores have not been easily amenable to reliable and robust automation across ssRNA virus families. Based on earlier analysis of noroviruses [40], we describe here the generalized implementation of a residue-wise comparison based approach to automate strain predictions in complete and partial amino acid capsid sequences of calici and picornaviruses."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce field of invention",
+                        "describe ssRNA viruses",
+                        "explain difficulty in distinguishing among ssRNA viruses",
+                        "discuss limitations of immuno-based and RT-PCR based assays",
+                        "highlight importance of accurate strain recognition",
+                        "describe existing homology comparison based methods",
+                        "explain limitations of existing methods",
+                        "introduce challenge of distinguishing subtle sequence variations",
+                        "discuss need for computational techniques",
+                        "describe existing methods for distinguishing strains",
+                        "explain classification of caliciviruses and picornaviruses",
+                        "discuss available crystal structures of calici and picornavirus capsids",
+                        "explain strain and genogroup predictions",
+                        "discuss difficulties in estimating sequence similarity cut-off values",
+                        "describe limitations of homology based sequence similarity cut-off values",
+                        "explain computational challenges in comparing large number of sequences",
+                        "discuss recent methods to genotype sequences",
+                        "explain limitations of recent methods",
+                        "highlight need for reliable and robust automation",
+                        "describe earlier analysis of noroviruses",
+                        "introduce residue-wise comparison based approach",
+                        "discuss automation of strain predictions",
+                        "summarize background of invention"
+                    ],
+                    "num_characters": 11748,
+                    "outline_medium": [
+                        "define field of invention",
+                        "describe limitations of current methods",
+                        "motivate need for new method",
+                        "describe ssRNA viruses",
+                        "discuss difficulties in distinguishing among ssRNA viruses",
+                        "describe current diagnostic methods",
+                        "discuss limitations of current diagnostic methods",
+                        "motivate need for automated strain recognition",
+                        "describe challenges in distinguishing among ssRNA virus strains",
+                        "discuss importance of capsid sequences",
+                        "describe current computational methods"
+                    ],
+                    "outline_short": [
+                        "define field of invention",
+                        "describe limitations of current diagnostic methods",
+                        "motivate need for automated strain recognition",
+                        "summarize existing computational methods",
+                        "highlight challenges in distinguishing ssRNA virus strains"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention provides a software product implemented on a computer or a distributed computer environment such as an intranet (e.g., secure institution, corporate, etc. network) or an internet (e.g., the world wide web) that uses unique characterizing residues to automatically identify strains of partial or complete sequences of pathogens or nonpathogens, where the sequences can be nucleic acid sequence (DNA, RNA, DNA/RNA hybrids, RNA/protein hybrids, DNA/protein hybrids or any other biomolecules that include a sequencable nucleotide moiety), proteins, or any other biomolecule that includes a sequence of monomers that is unique to an organism or virus, e.g., a pathogen. These residues are possible adaptive mutation sites in the pathogens considered.",
+                        "The present invention provides a software product implemented on a computer or a distributed computer environment such as an intranet (e.g., secure institution, corporate, etc. network) or an internet (e.g., the world wide web) that uses unique characterizing residues to automatically identify strains of partial or complete capsid sequences of picorna and caliciviruses, two of the most highly diverse ssRNA virus families.",
+                        "The present invention also provides a computer program product stored on a computer readable medium for predicting strains of some single stranded RNA viruses from their limited sequence data, the computer product including a graphical user interface (GUI) code operable to carry out all data input-output (I/O) operations; a storage code operable to store pathogen sequences such as viral sequences, in one sequence database or a plurality of sequence database in the form of multiple data arrays containing information about phylogenetic trees, sequence groups and characteristic residues of these groups; a sequence comparison code operable to compare input sequences such as viral sequences with the stored database sequences on a residue-by-residue basis; an identification code operable to identify the strains of the input sequences such as viral sequences based on comparisons (iii) and subsequent decision making algorithms.",
+                        "The present invention also provides a method of evaluating comparisons including the steps of identifying tree branches containing maximum number of characteristic residue matches obtained from comparisons; identifying tree branches to carry out further searches after identifying maximally matching tree branches; identifying tree branches to carry out further searches in case there are no unique maximally matching tree branches; and confirming that the chosen maximally matching tree branches do not lead to ambiguous comparisons."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce software product",
+                        "describe use of unique characterizing residues",
+                        "explain identification of strains of partial or complete sequences",
+                        "describe computer program product",
+                        "summarize invention"
+                    ],
+                    "num_characters": 2665,
+                    "outline_medium": [
+                        "summarize software product",
+                        "describe method of evaluating comparisons"
+                    ],
+                    "outline_short": [
+                        "summarize software product for strain prediction"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The inventors have found that a software product can be constructed and implemented on or in computer or a distributed computer network, where the software product encodes an unique method for characterizing residues constructed to automatically identify strains of partial or complete sequences of pathogens. The product includes databases of pathogen residues that uniquely characterize strains of the pathogens and were created by constructing partitioned phylogenetic trees of available complete capsid sequences of these viruses. Partition-wise comparisons of the database residues with the corresponding residues of complete and partial sequences of unknown pathogens results in correct strain identification for all pathogens for which data are stored in the software database. A Java based user-friendly graphical console interfaced with Perl-coded computational parts ensures high portability of the software. The package has been successfully tested on MS-Windows XP and the Linux and UNIX platforms. The code used in this implementation is attached as Appendix 1.",
+                        "The inventors have found that a software product that uses unique characterizing residues can be constructed to automatically identify strains of partial or complete capsid sequences of picoma and caliciviruses, two of the most highly diverse ssRNA virus families. The software is an efficient implementation of an algorithm outlined in earlier by on of the inventors in structure based phylogenic analysis of some human calicivirus sequences. Databases of capsid residues that uniquely characterize strains of picoma and caliciviruses were created by constructing partitioned phylogenetic trees of available complete capsid sequences of these viruses. Partition-wise comparisons of the database residues with the corresponding residues of more than 300 complete and partial sequences of these viruses resulted in correct strain identification for all of these sequences.",
+                        "In one embodiment, the present invention relates to creating databases of capsid residues uniquely distinguishing among virus reference strains and using these databases to automatically predict strains of other closely resembling target sequences. The method is demonstrated for complete and partial capsid sequences of calici and picornaviruses, which are two of the most highly divergent ssRNA virus families and therefore especially difficult to unambiguously identify using a uniform method."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Capsid Embodiment of the Invention",
+                            "paragraphs": [
+                                "**Basis**",
+                                "The method relies on creating databases of capsid residues that uniquely distinguish among the reference calici and picornavirus sequences. Residue-wise comparisons of the complete or partial input target sequences with the databases yield those reference sequences that are closest to the target sequences. Such reference sequences, in turn, yield the genogroup and other classification characteristics of the target sequences thereby identifying their strains.",
+                                "**Partitioned Phylogenetic Trees Yield Groups of Similar Sequences**",
+                                "Following the procedure described earlier [40], evolutionary trace [41] based partitioned phylogenetic trees were constructed for each of the 4 calicivirus genera and the 9 picornavirus genera using a large number of complete capsid sequences from public domain databases [25, 42]. These sequences will be called the \u201creference\u201d sequences and the corresponding trees will be called the \u201creference\u201d or the \u201cgenus\u201d trees as each such reference tree represents a calici or a picornavirus genus.",
+                                "By sieving the reference sequences of a genus tree through \u201csimilarity filters\u201d, sequence groups, each of which contains several similar reference sequences, were created in every partition of the tree. Examples of such sequence groups are illustrated for a hypothetical representative tree (FIG. 1A). Starting from the root node, the partition 1 contains all of the aligned sequences. Sequence comparisons in this partition, therefore, are equivalent to conventional sequence comparisons that consider all of the sequences together. Partitions 2 and 3 are identical and contain the sequence groups s1-s11 and s12 belonging to nodes A and B respectively. Similarly, the two nodes C and D belong to partition 4 while nodes E and F belong to partition 5. Node C of partition 4 contains sequence groups s1 and s2 while node D of the same partition contains nine (s3-s11) of the remaining groups. Similarly, the eight groups (s3-s10) in partition 5 belong to node E while group s11 belongs to node F in the same partition (FIG. 1A). Henceforth, sequence clusters or sequence groups will be referred to simply as groups.",
+                                "**Sequence Groups Comparisons Reveal Characteristic Residues Within Genus Trees**",
+                                "For each genus tree, partition-wise comparisons among the different groups identified \u201ccharacteristic residues\u201d that are conserved within each group but not among the different groups of the partition. For example, characteristic residue X1 at location 1 of partition 2 of a given tree may be a conserved Ala for Group A of node A in contrast to a conserved Gly (X1\u2032) for Group B of node B (FIG. 1A). Such residues were generated for each genus tree following the procedure described earlier [40].",
+                                "**Database Creation**",
+                                "Entire information about the genus trees including their partitions, all the sequence groups for each partition along with all characteristic residues taken group-wise, were stored in multiple 2-dimensional arrays that formed the calici and the picornavirus databases.",
+                                "**Strain Identification Through Partition-Wise Comparisons**",
+                                "To identify the strain of the input query (\u201ctarget\u201d) sequence whose genus is known, the program matches the target residues with the characteristic residues of each group of a given partition stored in the appropriate genus database. This is done by first aligning the target sequence with a reference sequence of the database. Then, starting with the second partition from the root (partition 2 in FIG. 1A), each characteristic residue of a given group in this partition is compared with the target residue at the corresponding location. Such comparisons are carried out for all the groups of this partition. The group showing the maximum number of matches is accepted by the program as the most probable sequence cluster resembling the input target sequence in that partition.",
+                                "The program proceeds to the next partition, where, instead of similarly testing all the groups present in the partition, the program tests only those groups that are directly tree-linked with the most recently accepted group. This considerably reduces the number of groups to be searched in the next partition. The process continues until all partitions have been searched. Testing only a limited number of connected groups per partition guarantees an optimal tree search time thereby making the program quite efficient.",
+                                "Within a given partition, input target sequence residues once matched are flagged as \u201cmarked\u201d and are never used again for residue matching in subsequent partitions. Exceptions to the flagging procedure are carried out only in case of ambiguities. For example, if all of the groups in a partition show an identical number of characteristic residue matches, an ambiguity is declared and no match is flagged. This ensures that all such matched residues of the input sequence are available again for matching purposes in subsequent partitions thereby helping resolve the ambiguity. Ambiguities may also occur when all groups within a given partition show no matches with the input sequence, or, if two successive partitions show identical numbers of characteristic residue matches. In both these cases, the program ignores the ambiguous partition(s) and proceeds to the next one without marking any residue at all. This allows all of the unmarked residues in the current partition to be compared again in subsequent partitions.",
+                                "To illustrate the method, let us assume that the input sequence corresponds to a known genus whose characteristic residues X1, X2 and X3 for partition 2 are Ala, Pro and Ser respectively for group A and the corresponding group B residues (X1\u2032, X2\u2032 and X3\u2032) are Gly, Thr and Met, respectively (FIG. 1A). If the aligned target sequence shows more matches for X1, X2 and X3 of group A in comparison with that of X1\u2032, X2\u2032 and X3\u2032 of group B, it implies that the input sequence belongs to group A in partition 2 and not to group B. Thus, residues X1, X2 and X3 are flagged and comparisons in subsequent partitions follow along those branches that are connected to group A (FIG. 1A). The program therefore proceeds to groups C and D in partition 4 ignoring partition 3 as it is identical to the previous partition 2 (FIG. 1A).",
+                                "In partition 4, if both groups C and D show equal number of matches i.e. say, X4 and X4\u2032 are both Trp and X5 and X5\u2032 are both Leu (FIG. 1A) and the aligned target sequence also contains Trp and Leu at these locations, then the program will not flag these characteristic residues but will instead carry them over to partition 5 where these residues will again be matched in groups E and F (FIG. 1A) to determine which of these two groups maximally matches the target sequence. Similar comparisons in subsequent partitions 6-10 unambiguously identify the database strain that most closely resembles the input target sequence thereby yielding its strain characteristics.",
+                                "In case the genus of the target sequence is not known, this sequence is first compared with groups of representative reference sequences (<3 sequences per group) from each of the genus trees in the database using ClustalW [43] and the alignment scores computed for each group. The highest alignment score indicates the genus of the input sequence which allows the appropriate genus tree to be selected from the databases for further strain identification using the earlier described procedure. A low number of sequences per group ensure rapid genus determination regardless of the number of reference sequences present in the genus tree.",
+                                "**Detecting Recombination and Spontaneous Mutations**",
+                                "Partition-wise comparisons allow RECOVIR to detect abrupt changes in phylogenetic sequence groupings among different trees. Assuming that absence of recombination creates similar phylogenetic relationships among sequences from different regions of multiple sequence alignments, these abrupt changes indicate nodes that may possibly contain recombination sites. Such abrupt changes are shown schematically using a pair of hypothetical trees (FIGS. 1C&D). These trees may represent, for example, two different genomic regions of the same virus strains. A simple example of incongruence has artificially been built in by interchanging sequence group s1 and s10 between the two trees. Consequently, sequence groups belonging to nodes A and B may be distinguished by the same set of residues (X1, X2, X3) and (X1\u2032, X2\u2032, X3\u2032) in both the trees. However, subsequent nodes C, D, E, and F have different strain distinguishing residues up to partition 5 of the two trees that correspond to the two genomic parts being compared (FIGS. 1C&D). For example, nodes C and D are distinguished by residues (X4, X5, X6) and (X4\u2032, X5\u2032 X6\u2032) in one part of the genome (FIG. 1C) and by (Y4, Y5, Y6) and (Y4\u2032, Y5\u2032, Y6\u2032) in the other genome part (FIG. 1D). Similarly, nodes E and F are distinguished by residues (X7, X8, X9) and (X7\u2032, X8\u2032, X9\u2032) in one part of the genome (FIG. 1C) and by (Y7, Y8, Y9) and (Y7\u2032, Y8\u2032, Y9\u2032) in the other genome part (FIG. 1D). Systematic node-wise comparisons of such strain distinguishing residues in all of the partitions P2-P10 clearly show the genomic regions that result in the incongruence between the two trees and thus, indicate parent strains along with their possible recombination or spontaneous mutation sites. Detection of these sites and the corresponding parent strains is done manually at present as an automated version of this feature has not yet been built into the software.",
+                                "**Program Testing and Validation**",
+                                "The program was initially validated by identifying the closest strains for five noro and five enteroviruses of known genera from their respective complete and partial amino acid sequences of the capsids (Table 2). These viruses were chosen because of their wide sequence divergence and their large number of strains or serotypes many of which have multiple sequences available in public databases. The enteroviruses included the complete VP1 sequences of Poliovirus-2 (serotype), human enterovirus (HEV)-B including the Coxsackie viruses, HEV-D (serotype) and the simian enteroviruses.",
+                                "The program was then further validated using more than 200 complete and partial sequences of different caliciviruses and more than 100 such picornavirus sequences. Among the calicivirus sequences, nearly 120 sequences were those of noroviruses with the remaining ones being those of other caliciviruses. Similarly, in the case of picornavirus sequences, nearly 50 were enterovirus partial sequences including those of echoviruses and of other HEV-B serotypes [25] while the remaining sequences were chosen from the other picornavirus genera and species (Table 1).",
+                                "Most of the partial sequences were randomly chosen from different regions of the capsid with the sequence lengths being only \u02dc20% of the sizes of the corresponding complete capsid sequences. All of the noro and enterovirus sequences were selected from the NCBI databases [42] taking care that possible errors due to biased choice of these sequences were minimized by ensuring that none of the selected sequences were included in the program databases.",
+                                "**Software Description**",
+                                "All functional modules of RECOVIR were written in the Perl programming language on Windows XP, Linux, and UNIX platforms. A Java based graphical user interface (GUI) has been designed to wrap all functionalities and allow user-friendly I/O options (FIG. 1B).",
+                                "**Program Input and Output**",
+                                "Input selections on the GUI have been divided into 3 categories: sequence, databases and options to control output (FIG. 1B). Any number of query sequences may be input by either pasting them on the white board area or by browsing one or more directories for single or multiple sequence files. A given sequence file may contain any number of complete and partial sequences. Only FASTA formatted sequence files are accepted and all white spaces and non-alphabet characters are ignored in input sequence files.",
+                                "A dropdown menu in the database section of the GUI allows the user to specify the input sequence genus, if known (FIG. 1B). A default reference sequence, used for aligning the input sequences and for assigning the aligned location numbers to the input sequence, then pops up in the \u201cSelect a reference\u201d box (FIG. 1B). This default reference may be changed if required. In case genus of the input sequence is not known, the \u201cunknown\u201d option in this box (FIG. 1B) allows the program to automatically determine the genus and an appropriate reference sequence from the built-in databases.",
+                                "The \u201cRun\u201d button activates the program, displays a progress bar indicating the percentage of input sequences processed and outputs results on the GUI's output section (FIG. 1B). Depending on the \u201cView results\u201d options chosen, the output may include a summary or the complete details of partition-wise matches between the database characteristic residues and the residues of the input target sequences. Many other details about the partitioned databases and run results may be viewed using various user-friendly options in GUI's output control section (FIG. 1B).",
+                                "**Strain Identification of Complete and Partial Norovirus Capsid Sequences**",
+                                "Databases",
+                                "Detailed strain identification results are described for only some norovirus strains among caliciviruses and some enterovirus strains among the picornaviruses. Complete details for the other calici and picornaviruses can be found at web site prion.bchs.uh.edu/recovir.",
+                                "Sequences belonging to the norovirus genus tree have been described elsewhere [40]. Briefly, these sequences form a single group in partition P1 (FIG. 2A). Partition P2 splits this sequence group into the 2 known major genogroups GI and GII of noroviruses (See additional file 1: Supplementary Table 1) [4, 40]. Group GI further divides into GIa and GIb in partition P3 while group GII divides into GIIa and GIIb in partition P4 (or P5 that is identical with P4) (FIG. 2A & See additional file 1: Supplementary Table 1). Partition 6 further splits both GI and GII groups. Group GIa is divided into GIa1 and GIa2 while the group GIa splits into 4 groups (GIIa1-a4). In partition 7, Group GIa splits into 4 groups GIa1-a4 while GIIa3 splits further into the GIIa3\u20141 and GIIa3\u20142 groups (FIG. 2A & See additional file 1: Supplementary Table 1). Groups GIb, GIIa4 and GIIb do not split up any further in this partition. Details of the remaining partitions P8-P10 are available at website prion.bchs.uh.edu/recovir.",
+                                "Norovirus strains in different sequence groups in partitions P2-P7. This distribution is based on norovirus capsid residues. Partition P2 entries show complete strain names along with their NCBI accession numbers enclosed within square brackets and strain codes that are indicated as \u201c_X\u201d where X refers to the 2 or 3 letter codes e.g X id 1IHM for Norwalk strain and it is Aic for the Aichi strain. These strain codes are used in all subsequent partitions P3-P7. The different GIa1 sequence groups in P7 are enclosed in different types of parentheses: GIa1\u20141: (( . . . )); GIa1\u20142: ( . . . ); GIa1\u20143: { . . . }; GIa1\u20144: [ . . . ]. The red boldfaced code in P7 indicates the minireovirus strain (NCBI accession no. U02030).",
+                                "Characteristic Residue Comparisons and Strain Identification for Complete Sequences",
+                                "The characteristic residues of the norovirus genus tree stored in the program databases unambiguously identified the closest strains of target norovirus complete capsid sequences (Table 2).",
+                                "Input target complete capsid sequences are shown in cols 1 and 2 while the input partial sequences are shown in cols 3 and 4. The corresponding closest database strains detected by the program are shown in the last 4 cols whose headers are color matched with those of the input sequence cols. The NCBI accession codes are enclosed within square brackets for all capsid sequences except for Norwalk virus whose PDB code is correspondingly shown. The enterovirus capsid sequences refer to those of VP1 subunits. Abbreviations used: HEV: Human enterovirus; Cox; Coxsackievirus.",
+                                "As an example, the results for norovirus \u201cSeacroft\u201d sequence (NCBI: AJ277620) are described here. Comparisons of the characteristic residue locations with the corresponding residues of this sequence showed that the maximum number of matches in partition P2 occurred in the aligned locations 70V and 203T of group GII and not for GI (FIG. 2A). The corresponding GI locations were 701 and 201V respectively when mapped to the unaligned reference Norwalk virus (PDB ID: 1IHM) sequence (FIG. 2B). Thus, the program searched only along the GII branch of the norovirus genus tree in subsequent partitions. In partition P3, the query sequence maximally matched the GII characteristic residues 4A, 5S, 36V, 44P, 104A, 106G, 205S, 446I, 455P, 508R, 511N and 519F while the corresponding GI residues in the reference Norwalk virus sequence are 4A, 5S, 36V, 44A, 104V, 106N, 203A, 405L, 414F, 460H, 463D and 471G respectively (FIGS. 2a & 2b). In partitions P4 and P5, the maximum number of matches (102G 206C 228S 482D 562A) occurred in GIIa, indicating that further database searches in subsequent partitions should be restricted only to those groups that originate from GIIa.",
+                                "Of the 4 possible GIIa choices (GIIa1-a4) in the following partition P6, the maximum number of characteristic residue matches occurred in group GIIa3 (FIG. 2A) corresponding to residues 11S, 13D, 82D, 83L, 103W, 181R, 185M, 227K, 250I, 306G, 329H, 397S, 409V, 436L, 492P, 516V and 519A of the unaligned reference sequence (FIG. 2B). Comparisons in partition P7 showed that of the 2 groups GIIa3\u20141 and GIIa3\u20142 originating from the GIIa3 group of the previous partition P6, the GIIa3\u20142 group maximally matched the characteristic residues (FIG. 2A). These matches occurred at 63A, 84S, 110R, 119T, 125V, 126S, 133G, 139I, 145F, 154T, 163E, 184C, 192T, 193G, 207M, 218F, 229R, 236L, 257P, 259N, 347T, 402A, 419V, 420F, 447S, 448E and 504V of the unaligned reference sequence (FIG. 2B). Similar comparisons in partitions P8-P10 conclusively showed that the query sequence is most similar to the minireovirus-like norovirus strain (FIG. 3)",
+                                "Similarly, the input Appalachicola Bay, the Baltimore \u2018a\u2019 and \u2018b\u2019 and the Boxer strain sequences most closely resembled the Chiba, minireovirus and the Potsdam strains of noroviruses (see Table 2). Strains were also correctly predicted after removing random stretches of 10-15 amino acids from these sequences indicating thereby that the strain prediction capability of the program is quite robust and is independent of the locations of the input target sequences.",
+                                "Strain Identification of Input Partial Amino Acid Target Sequences of Noroviruses",
+                                "Strains of five partial amino acid capsid sequences of noroviruses were consistently predicted using both the \u201cnoro\u201d and \u201cunknown\u201d database options of the GUI (FIG. 1B). Only one of the 5 input sequences (1UK1) explicitly included the N-terminus residues while the remaining sequences 2JP1, 3JP2, 4JP3 and 5TP1 were from different capsid regions (Table 3).",
+                                "In Table 3, part B above, the maximally matching sequence groups for each partition are shown within parentheses. Residues and sequence groups in Table 3, part B above use notations of FIGS. 2A & 2B. Residues are color matched in Table 3, parts A & B above.",
+                                "Despite the short sizes of the input partial sequences and the variations in their capsid locations, the program unambiguously recognized the strains of all of them from their matches with the characteristic location residues. Location 70 in partition P2 determined the major genogroup in all but one sequence. Sequences 1UK1 and 5TP1, both containing 70V, belonged to genogroup GII while 2JP1 and 3JP2 belonged to genogroup GI based on the corresponding 70I residue (Table 3; FIGS. 2A&B). All of the GI residues (2JP1 & 3JP2) contained 20Q in partition P2. However, the major genogroup of sequence 4JP3 appeared to be ambiguous as it showed features of both GI and GII groups in partition P2 (ambiguity shown as ** in Table 3). It contained not only 70V, typical of GII sequences, but also the GI-indicator 20Q. In addition, this sequence also presented the additional ambiguity of having an equal number of characteristic residue matches in both GI and GII groups for partition P2 (Table 3). To resolve this ambiguity, the program carried over the partition P2 matches of this sequence (4JP3) to partition P3.",
+                                "In partition P3, the program examined characteristic residue locations 4, 5, 26, 36 and 44 for all of the sequences (FIGS. 2A&B). Residue 44 unambiguously confirmed the distinction between the GI and the GII group sequences in this partition. Sequences 2JP1, 3JP2 and 4JP3, by virtue of 44A, were all characterized as GI sequences similar to the reference Norwalk virus sequence (FIG. 2B; Table 3). In contrast, sequences 1UK1 and 5TP1, containing 44P, are genogroup GII sequences. In addition, because 1UK1 has 4A and 5S and sequences 2JP1, 3JP2 and 4JP3 have 26N in partition P3, choices of their genogroups were unambiguously confirmed in this partition (FIGS. 2A&B; Table 3). Residue 36V, being conserved in all of the sequences in P3, was not of much help in determining the sequence groups in this partition (Table 3).",
+                                "The program ignored partitions P4 and P5 for the 1UK1 and 5TP1 sequences due to ambiguities in residue matches. The next partition P6 showed another ambiguity of having more than one group with the highest number of matches for both these sequences (Table 3). However, matches in partition P7 clearly indicated that sequence 1 UK1 belongs to GIIa1 while 5TP1 belongs to group GIIa3\u20142 (Table 3; FIGS. 2A&B). Further matches in partitions P8-P10 (Table 3) confirmed that 1UK1 and 5TP1 were most similar to the Beeskow and the Bitburg strains respectively (Tables 2, 3; See additional file 1: Supplementary Table 1).",
+                                "Thus, the identified strain of the partial sequence 1UK1 is consistent with its NCBI classification as a member of the GII.4 cluster. However, 5TP1 appears to belong to the GII.3 sequence cluster according to the present analysis and not to GII.4 as shown in the NCBI database. Similarly, partitions P6-P10 allowed the program to confirm that the remaining sequences 2JP1, 3JP2 and 4JP3 indeed belong to genogroup GI (Tables 2 & 3) which is consistent with the NCBI classification of these sequences. In addition, the program determined from residue comparisons that these sequences 2JP1, 3JP2 and 4JP3 are most similar to the norovirus GI Chiba, Norwalk and the Potsdam strains respectively (Tables 2 & 3). Such detailed strain information is seldom available for partial sequences in public domain databases.",
+                                "**Strain Detection Complete/Partial AA Sequences of Capsids**",
+                                "The program first correctly identified the strains for 5 complete and 5 partial enterovirus capsid sequences. The complete capsid sequences were those of the VP 1 subunits of poliovirus, simian enterovirus, echovirus and the coxsackievirus strains (one sequence per strain) (Table 2). Different reference sequences were tested for aligning the target sequences. The target sequence strains were all correctly identified regardless of the choice of the reference sequences (Tables 2 & 3). As an example, strain identification for the poliovirus strain (NCBI: DQ841140) using the porcine enterovirus-8 sequence (PEV-8: NCBI accession number AF406813) as reference is briefly described. The second partition P2 of enteroviruses contains only 2 reference groups 1 and 2 in the program database (Table 4). Of these, group 2 contains only the porcine enteroviruses (PEV) serotype 9 (PEV-9; NCBI: AF363453) indicating that the PEV-9 strains are distinct from the other enterovirus strains all of which (including the PEV-8 strain) belong to group 1. This group is characterized by nine residues 40P, 42L, 44A, 46E, 48G, 72E, 124T, 125Y, 127R, 150Q, 155P, 157G, 169W, 176S, 191P, 199Y, 202F and 203Y (reference sequence PEV-8 numbering) in the database (Table 4). Because all of these residues match the corresponding locations in the target poliovirus sequence, the program assigns group 1 to the target sequence in partition P2 and skips the next partition P3 as it is identical to P2 (Table 4).",
+                                "The complete capsid sequence of input PV-2 target sequence (NCBI accession: DQ841140) was used as input. Symbol Pn+: Indicates \u201cincluding all matching residues of the earlier partition Pn\u201d.",
+                                "The program detects the separation of group 1 into two groups 1a and 1b in partition P4. This creates a total of 3 groups (1a, 1b and 2) in this partition (Table 4). While group 1a contains only the PEV-8 sequences which have independently diverged from group 1 of partition P2/P3, group 1b contains the remaining group 1 sequences of these partitions. Group 2 of partition P2/P3 remains unaltered in partition P4. On comparing the characteristic residues of these three groups, the program determines that the target sequence most closely resemble group 2 in partition P4 because of the matches with residues 61L, 62Q, 78L, 106S, 115S, 131D, 152L, 170N and 174S (PEV-8 numbering) that characterize this group (Table 4). Similarly, matches with residues 43T 55G 64T 84L 156H in partition P5 allow the program to assign group 6 to the target sequence in this partition which contains nearly 60 other similar enterovirus sequences including those of polioviruses (Table 4). Similarly, residue 158G distinguishes group 7 as the maximally matching group out of the eight groups in partition P6. This group includes many similar strains in the program database including 12 strains of different coxsackievirus serotypes, one echovirus strain and strains of all 3 poliovirus serotypes (Table 4).",
+                                "The three poliovirus serotypes which remain clustered with several other human enteroviruses in partition P7 finally separate as an independent group in partition P8 (group details not shown). However, partitions P7 and P8 showed an ambiguity with reference to the input target sequence. Both of these partitions have more than one group having identical highest number of residue matches with the target. This ambiguity did not allow the program to decide the best group in these partitions. Consequently, all group information of these partitions was carried over to the subsequent partition P9 (Table 4).",
+                                "Partition P9 contains a total of 72 sequence groups including an independent group (#62) containing only the poliovirus-2 strains. The program detected this group to be the maximally matching group for the target sequence and this detection was confirmed in the next partition P10. Thus, the input target sequence was correctly detected as a poliovirus-2 strain (Table 4). Strains for the remaining picornaviruses (Tables 2 & 3) were also unambiguously detected regardless of the choice of the reference strains.",
+                                "Recombination and Spontaneous Mutations",
+                                "Only a few enterovirus strains could be analyzed for recombination and spontaneous mutations using RECOVIR due to the manual nature of such analysis in the present version of the software. Partition-wise comparisons of strain diversifying residues VP1-VP3 genes of the hepatitis-A (HAV) strains at the nucleotide and the amino acid levels indicated that the SLF88 (AY032861) and the MBB (M20273) strains may be putative parental strains that yield the recombinant product strain 9F94 (AJ519487) (data not shown). This is consistent with recent results obtained using conventional topology comparisons of phylogenetic trees by sliding windows across the corresponding multiple aligned sequences [44].",
+                                "Similarly, partition-wise matches in the norovirus partial sequence 6ST1 indicated spontaneous mutations. While residue 20Q in partition P2 indicates that 6ST1 belongs to GI, residue 70V in the same partition indicates that this sequence may belong to GII as seen for sequence 5TP1 (Table 3). The program, therefore, checks both these possibilities for maximum number of matches in subsequent partitions. Each subsequent partition confirms that this sequence indeed belongs to GI and is closest to the Potsdam strain (NCBI accession AF439267). Therefore, location 70, which is an iso-leucine for other GI sequences (Table 3), may be a spontaneous mutation site.",
+                                "Despite the limited results, it appears that the present software may provide a more efficient way to detect recombination sites than those provided by most of the current widely used methods. This is because such methods are inherently time consuming as their accuracy depends on multiple runs with different sequence window parameters In addition, the entire procedure must be repeated every time a new sequence needs to be analyzed. In contrast, the present method does not repeatedly compare phylogenetic trees using sliding sequence windows. Instead, it efficiently performs node-wise comparisons of the trees using a one-time created database of strain distinguishing residues.",
+                                "**Approximate Processing Times**",
+                                "The program rapidly identified the calici and the picornavirus strains. In typical runs on outbreak sequence data available from public databases, it took only 6 and 9 minutes of real time respectively to identify the strains of a number of norovirus sequences contained in 2 files. The first file had 71 complete norovirus capsid sequences while the second file had 117 norovirus capsid sequences of which 22 were complete sequences while the remaining 95 were partial sequences each of which was between 75 and 85 residues long. This indicates a real time (including I/O) of approximately 5 seconds per sequence. Comparable speeds were also observed in processing other calicivirus and picornavirus sequences processed separately in different files as well as in files containing sequences of these virus families together. The \u201cunknown\u201d database option (FIG. 1B) was selected in all of these runs. Selecting the known database type in the GUI reduced the processing times even further. Complete benchmark details of such strain identification runs are available at website prion.bchs.uh.edu/recovir."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define capsid residues",
+                                "create databases of capsid residues",
+                                "residue-wise comparisons of target sequences",
+                                "identify closest reference sequences",
+                                "yield genogroup and classification characteristics",
+                                "construct partitioned phylogenetic trees",
+                                "create sequence groups using similarity filters",
+                                "illustrate sequence groups for a hypothetical tree",
+                                "identify characteristic residues within genus trees",
+                                "generate characteristic residues for each genus tree",
+                                "store information in 2-dimensional arrays",
+                                "create calici and picornavirus databases",
+                                "identify strain through partition-wise comparisons",
+                                "match target residues with characteristic residues",
+                                "align target sequence with reference sequence",
+                                "compare characteristic residues with target residues",
+                                "accept most probable sequence cluster",
+                                "proceed to next partition",
+                                "test connected groups per partition",
+                                "flag matched residues",
+                                "handle ambiguities",
+                                "illustrate method using example",
+                                "detect recombination and spontaneous mutations",
+                                "identify nodes with recombination sites",
+                                "validate program using noro and enteroviruses",
+                                "describe software and program input/output",
+                                "introduce capsid embodiment of the invention",
+                                "describe databases",
+                                "summarize strain identification results",
+                                "describe norovirus genus tree",
+                                "detail partitions P2-P7",
+                                "describe characteristic residue comparisons",
+                                "identify closest strains",
+                                "describe input target complete capsid sequences",
+                                "describe input partial sequences",
+                                "identify strains of partial sequences",
+                                "describe ambiguity resolution",
+                                "describe partitions P8-P10",
+                                "identify strains of enterovirus capsid sequences",
+                                "describe strain detection for complete/partial AA sequences",
+                                "identify strains of poliovirus",
+                                "describe partitions P4-P7",
+                                "identify strains of coxsackievirus",
+                                "describe partitions P8-P10",
+                                "discuss recombination and spontaneous mutations",
+                                "analyze enterovirus strains for recombination",
+                                "analyze norovirus partial sequence for spontaneous mutations",
+                                "compare with conventional methods",
+                                "describe approximate processing times",
+                                "detail processing times for norovirus sequences",
+                                "detail processing times for calicivirus and picornavirus sequences",
+                                "describe GUI options",
+                                "provide benchmark details",
+                                "describe strain identification results",
+                                "describe capsid sequences",
+                                "describe VP1 subunits",
+                                "describe residue matches",
+                                "describe program capabilities",
+                                "conclude program efficiency"
+                            ],
+                            "num_characters": 30088,
+                            "outline_medium": [
+                                "define capsid residues databases",
+                                "create partitioned phylogenetic trees",
+                                "identify characteristic residues within genus trees",
+                                "create databases of characteristic residues",
+                                "identify strain through partition-wise comparisons",
+                                "resolve ambiguities in residue matching",
+                                "detect recombination and spontaneous mutations",
+                                "validate program using noro and enterovirus sequences",
+                                "describe software implementation in Perl and Java",
+                                "outline program input and output options",
+                                "specify input sequence formats and options",
+                                "describe output results and viewing options",
+                                "illustrate strain identification of norovirus capsid sequences",
+                                "introduce databases",
+                                "describe norovirus genus tree",
+                                "detail characteristic residue comparisons",
+                                "identify norovirus strains",
+                                "describe strain identification of partial sequences",
+                                "detail residue matches in partitions P2-P7",
+                                "resolve ambiguities in partition P2",
+                                "confirm genogroups in partition P3",
+                                "identify strains of partial sequences",
+                                "describe strain detection for enterovirus capsid sequences",
+                                "detail residue matches in partitions P2-P10",
+                                "identify strains of complete and partial enterovirus sequences",
+                                "discuss recombination and spontaneous mutations",
+                                "analyze recombination in enterovirus strains",
+                                "identify spontaneous mutations in norovirus sequences",
+                                "provide approximate processing times"
+                            ],
+                            "outline_short": [
+                                "create databases of capsid residues",
+                                "construct partitioned phylogenetic trees",
+                                "identify characteristic residues within genus trees",
+                                "create databases for strain identification",
+                                "identify strains through partition-wise comparisons",
+                                "detect recombination and spontaneous mutations",
+                                "describe databases",
+                                "summarize strain identification results",
+                                "motivate characteristic residue comparisons",
+                                "describe strain identification of input partial amino acid target sequences",
+                                "summarize strain detection for complete/partial AA sequences of capsids",
+                                "discuss recombination and spontaneous mutations",
+                                "describe approximate processing times",
+                                "provide benchmark details"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce software product",
+                        "application of software product",
+                        "embodiment of present invention",
+                        "demonstrate method"
+                    ],
+                    "num_characters": 2445,
+                    "outline_medium": [
+                        "introduce software product for strain identification",
+                        "embodiment of database creation and strain prediction"
+                    ],
+                    "outline_short": [
+                        "describe software product for strain identification"
+                    ]
+                },
+                {
+                    "title": "CONCLUSIONS",
+                    "paragraphs": [
+                        "A software package RECOVIR that can efficiently and accurately characterize strains of the highly divergent caliciviruses and picornaviruses is described here. In contrast to the currently existing techniques that mainly use sequence similarity scores to identify strains in these viruses, this package relies on capsid residues that unambiguously distinguish among a large number of calici and the picornavirus reference strains. Such strain distinguishing residues are stored in partitioned databases and compared with the residues of target capsid sequences using efficient tree based search techniques to rapidly identify strains of the target sequences. This method implements a generalized algorithm of a method outlined earlier for noroviruses [40]. Consequently, the program allows strain identification of not only norovirus sequences but of all other caliciviruses and of the picornavirus sequences as well. Strains were recognized for more than 300 complete and partial capsid sequences of calici and picornaviruses with the average strain identification time (real time including I/O) being approximately 5 seconds per sequence. The method is general enough to be applicable to the nucleotide sequences of calici and picornavirus capsids thereby providing powerful alternatives that complement current strain determination techniques."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce RECOVIR software package",
+                        "summarize method and advantages"
+                    ],
+                    "num_characters": 1346,
+                    "outline_medium": [
+                        "introduce RECOVIR software package"
+                    ],
+                    "outline_short": [
+                        "introduce RECOVIR software package"
+                    ]
+                },
+                {
+                    "title": "Availability and Requirements",
+                    "paragraphs": [
+                        "- - Project home pages: http://prion.bchs.uh.edu/recovir\n  - Operating systems: Windows-XP, Linux and UNIX\n  - Programming language: Perl and Java\n  - Other requirements: X-Windows support (such as Cygwin) is needed for\n    remotely running the program under Linux/UNIX environments."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "list system requirements"
+                    ],
+                    "num_characters": 283,
+                    "outline_medium": [
+                        "list system requirements"
+                    ],
+                    "outline_short": [
+                        "specify software requirements"
+                    ]
+                },
+                {
+                    "title": "Author Contributions",
+                    "paragraphs": [
+                        "Dianhui Zhu coded the software and designed the GUI. Sugoto Chakravarty developed the concept, designed the algorithm and its implementation and created the initial databases. Sugoto Chakravarty and Dianhui Zhu performed extensive troubleshooting with both synthetic and real data. Sugoto Chakravarty and George E. Fox wrote the paper. All authors suggested improvements at different stages of manuscript preparation and read and approved the final version of the manuscript."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe author roles"
+                    ],
+                    "num_characters": 475,
+                    "outline_medium": [
+                        "credit authors"
+                    ],
+                    "outline_short": [
+                        "acknowledge author roles"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A computer program product stored on a computer readable medium for predicting strains of some pathogens from their limited sequence data, the computer product comprising:\na graphical user interface (GUI) code operable to carry out all data input-output (I/O) operations;\nstorage codes operable to store virus sequence databases in the form of multiple data arrays containing information about phylogenetic trees, sequence groups and characteristic residues of these groups;\nsequence comparison codes operable to compare input pathogen sequences with the stored database sequences on a residue-by-residue basis;\nidentification codes operable to identify the strains of input pathogen sequences based on comparisons (iii) and subsequent decision making algorithms.",
+        "2. The product of claim 1, wherein the pathogens comprises single stranded RNA viruses.",
+        "3. The product of claim 2, wherein the GUI code divides the screen into 3 distinct categories including a sequence category, a database category and an output options category adapted to simplify data input/output (I/O).",
+        "4. The product of claim 3, wherein the GUI code uses the sequence category region of the screen to allow users to input sequence data in a specified format using a paste option or by reading in files containing the data.",
+        "5. The product of claim 3, wherein the GUI code uses the database category region of the screen to allow users to pre-select specific sequence databases that might contain close matches to the input sequence strain.",
+        "6. The product of claim 3, wherein the GUI code uses the database category region of the screen to allow users to specify \u201cUnknown\u201d in case sequence databases that might contain close matches to the input sequence strain are not known.",
+        "7. The product of claim 3, wherein the GUI code uses the database category region of the screen to use default reference sequences or allow users to pre-select specific reference sequence to facilitate sequence comparisons.",
+        "8. The product of claim 3, wherein the GUI code uses the database category region of the screen to allow users to select and display a particular sequence or all sequences from chosen databases in claim 4 using a drop down menu.",
+        "9. The product of claim 3, wherein the GUI code uses the database category region of the screen to allow users to view groups of similar sequences.",
+        "10. The product of claim 3, wherein the GUI code uses the database category region of the screen to allow users to activate execution of the program.",
+        "11. The product of claim 3, wherein the GUI code uses the output options category region of the screen to allow users to selectively display identifiers of each input sequence and the summary/details of matches of characteristic residues for an input query sequence specified by its identifier.",
+        "12. The product of claim 2, wherein the storage code identifies characteristic residues of individual virus sequences or their groups from program supplied external files and stores these residues, groups and other related information in tree-like multiple 2-dimensional arrays for efficient referencing and retrieval by the program.",
+        "13. The product of claim 2, wherein the storage code numbers the characteristic residues and the storage code identifies characteristic residues of individual virus sequences or their groups from program supplied external files and stores these residues, groups and other related information in tree-like multiple 2-dimensional arrays for efficient referencing and retrieval by the program with respect to the GUI code uses the database category region of the screen to use default reference sequences or allow users to pre-select specific reference sequence to facilitate sequence comparisons for sequence comparison purposes.",
+        "14. The product of claim 2, wherein the sequence comparison code selects individual residues of input sequences where the GUI code uses the sequence category region of the screen to allow users to input sequence data in a specified format using a paste option or by reading in files containing the data and compares these residues with the characteristic residues in the storage code numbers the characteristic residues and the storage code identifies characteristic residues of individual virus sequences or their groups from program supplied external files and stores these residues, groups and other related information in tree-like multiple 2-dimensional arrays for efficient referencing and retrieval by the program with respect to the GUI code uses the database category region of the screen to use default reference sequences or allow users to pre-select specific reference sequence to facilitate sequence comparisons for sequence comparison purposes using a tree-like search method.",
+        "15. A method of evaluating comparisons, the method comprising the steps of:\nidentifying tree branches where the storage code identifies characteristic residues of individual virus sequences or their groups from program supplied external files and stores these residues, groups and other related information in tree-like multiple 2-dimensional arrays for efficient referencing and retrieval by the program containing maximum number of characteristic residue matches obtained from comparisons, where wherein the sequence comparison code selects individual residues of input sequences where the GUI code uses the sequence category region of the screen to allow users to input sequence data in a specified format using a paste option or by reading in files containing the data and compares these residues with the characteristic residues in the storage code numbers the characteristic residues and the storage code identifies characteristic residues of individual virus sequences or their groups from program supplied external files and stores these residues, groups and other related information in tree-like multiple 2-dimensional arrays for efficient referencing and retrieval by the program with respect to the GUI code uses the database category region of the screen to use default reference sequences or allow users to pre-select specific reference sequence to facilitate sequence comparisons for sequence comparison purposes using a tree-like search method;\nidentifying tree branches to carry out further searches after identifying maximally matching tree branches in (i);\nidentifying tree branches 1 to carry out further searches in case there are no unique maximally matching tree branches in (I); and\nconfirming that the chosen maximally matching tree branches in (i) do not lead to ambiguous comparisons.",
+        "16. The product of claim 1, wherein identification code identifies the best strain matching the input sequences in claim 4 by using method in claim 15.",
+        "17. The product of claim 16 wherein said program found actions including correct strain identification of more than 200 input limited sequence data of 2 families of single stranded RNA viruses."
+    ]
+}

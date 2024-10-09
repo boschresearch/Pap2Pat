@@ -1,0 +1,150 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce masked autoencoders for computer vision
+
+## BACKGROUND
+
+- motivate deep learning
+- describe self-supervised pre-training in NLP
+- limitations of autoencoding methods in vision
+- differences between language and vision
+- need for masked autoencoders in computer vision
+
+## SUMMARY OF PARTICULAR EMBODIMENTS
+
+- pre-train first ML model with masked autoencoder approach
+- use pre-trained encoder in second ML model for computer vision task
+- pre-train first ML model with multiple images
+- divide image into patches
+- select visible and masked patches
+- define masking criteria
+- process visible patches to generate latent representations
+- generate full set of tokens with mask tokens and positional encodings
+- re-arrange tokens based on positional encodings
+- apply decoder to full set of tokens
+- generate reconstructed patches
+- update model parameters based on loss function
+- discard decoder and apply encoder to second ML model
+- refine encoder for particular computer vision task
+
+## DESCRIPTION OF EXAMPLE EMBODIMENTS
+
+- relate to pre-training ML model with unlabeled images
+- pre-train first ML model and use part of it in second ML model
+- discuss downstream tasks different from pre-training task
+- introduce masked autoencoder (MAE) approach
+- describe asymmetric encoder-decoder design
+- explain encoder mapping observed signal to latent representation
+- describe decoder reconstructing original image in pixels
+- discuss lightweight decoder reducing computation
+- highlight benefits of high masking ratio
+- discuss pre-training process achieving better results
+- illustrate masked autoencoder architecture
+- divide input image into grid of regular non-overlapping patches
+- select subset of patches to be visible and masked
+- discuss masking criteria including masking ratio
+- illustrate example input and output images based on different masking ratios
+- discuss random sampling technique with high masking ratio
+- describe generating token for every input patch
+- shuffle generated set of tokens and remove last portion based on masking ratio
+- input visible patches into encoder
+- describe transformer encoder architecture
+- discuss input embeddings with positional encoding
+- pass embeddings through multiple layers of transformer encoder
+- describe multi-head attention component
+- discuss feed forward network
+- describe residual connections and layer normalization
+- discuss output of transformer encoder
+- add mask tokens to latent representations
+- form full set of tokens corresponding to patches
+- unshuffle full set of tokens to align with targets
+- discuss decoder architecture
+- describe transformer decoder architecture
+- discuss output embedding with positional encoding
+- pass output embedding through multiple decoder layers
+- describe masked multi-head attention component
+- discuss multi-head attention component
+- describe feedforward network
+- discuss residual connections and layer normalization
+- describe final output of decoder
+- discuss reconstructing missing pixels corresponding to masked patches
+- update machine-learning model based on loss function
+- compute mean squared error between reconstructed and original images
+- update model parameters based on loss function
+- repeat pre-training process until stopping condition is reached
+- illustrate example input images and corresponding output images
+- discuss model's behavior at a high level
+- overlay output with visible patches to improve visual quality
+- discard decoder and apply pre-trained encoder to other models
+- use pre-trained encoder for recognition or downstream tasks
+- discuss advantages of using pre-trained encoder
+- highlight time and resource savings
+- discuss transfer learning
+- apply pre-trained encoder to another model for object detection
+- apply pre-trained encoder to another model for instance segmentation
+- apply pre-trained encoder to another model for semantic segmentation
+- introduce refinement techniques
+- define fine-tuning technique
+- describe fine-tuning process
+- introduce linear probing technique
+- compare fine-tuning and linear probing techniques
+- illustrate charts comparing accuracy
+- discuss masking ratios
+- discuss training schedules
+- introduce partial fine-tuning technique
+- describe partial fine-tuning process
+- illustrate chart depicting accuracy
+- compare partial fine-tuning and prior approach
+- illustrate example method for pre-training machine-learning model
+- access image for pre-training
+- divide image into patches
+- select visible and masked patches
+- generate mask tokens
+- process visible patches using encoder
+- generate full set of tokens
+- process full set of tokens using decoder
+- generate reconstructed patches
+- update machine-learning model
+- compute loss function
+- update model parameters
+- repeat pre-training process
+- apply pre-trained encoder to second machine-learning model
+- refine encoder for particular task
+- discuss fine-tuning technique for refinement
+- discuss linear probing technique for refinement
+- discuss partial fine-tuning technique for refinement
+- discuss advantages of pre-training and refinement
+- conclude pre-training and refinement process
+- illustrate computer system
+- describe functionality of computer system
+- contemplate number of computer systems
+- contemplate physical form of computer system
+- describe types of computer systems
+- contemplate distribution of computer systems
+- describe performance of computer systems
+- introduce processor
+- describe execution of instructions by processor
+- contemplate internal caches of processor
+- contemplate internal registers of processor
+- describe arithmetic logic units of processor
+- introduce memory
+- describe storage of instructions in memory
+- describe data access in memory
+- contemplate memory buses
+- introduce storage
+- describe mass storage of data
+- contemplate types of storage
+- introduce I/O interface
+- describe communication with I/O devices
+- contemplate types of I/O devices
+- introduce communication interface
+- describe communication with networks
+- contemplate types of networks
+- introduce bus
+- describe coupling of components by bus
+- contemplate types of buses
+- define computer-readable non-transitory storage medium
+- provide disclaimer for "or" and "and"
+

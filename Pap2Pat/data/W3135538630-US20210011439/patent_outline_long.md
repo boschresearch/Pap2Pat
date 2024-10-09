@@ -1,0 +1,156 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- relate to smart energy management systems
+
+## BACKGROUND
+
+- motivate smart energy management systems
+
+## SUMMARY
+
+- provide smart energy management systems
+- balance local power production and power consumption
+- accomplish by method and device
+- perform coarse-grained optimization
+- refine predicted schedule
+- use refined predicted schedule
+- provide inputs to first layer
+- generate predicted schedule
+- provide inputs to second layer
+- refine predicted schedule
+- iterate steps
+- transmit values of control variables
+- relate second planning interval to first timescale
+- relate time step of second timescale to first timescale
+- advance second planning interval
+- comprise energy storage system
+- obtain power reference curves
+- define power reference values
+- match power reference values
+- provide physically accurate model
+- obtain initial state of charge
+- apply initial state of charge
+- update state of charge
+- purchase energy from utility grid
+- sell energy to utility grid
+- take into account energy price
+- reduce energy purchased
+- extend lifetime of energy storage device
+- measure local environmental variable
+- apply forecasting model
+- provide short-term power generation profile
+
+## DETAILED DESCRIPTION
+
+- introduce example embodiments
+- describe non-limiting nature of embodiments
+- define "comprising" in claims
+- explain "one embodiment" phrase
+- describe grouping of features
+- note that claims reflect inventive aspects
+- describe combinations of features
+- note that terminology is not re-defined
+- omit specific details for clarity
+- define "localized" smart energy management system
+- define "smart" energy management system
+- describe first embodiment with reference to FIG. 1
+- introduce PV system as intermittent energy source
+- describe building with garden as residential unit
+- describe connection to electric utility grid
+- introduce plurality of selectively connectable loads
+- describe energy storage system with rechargeable batteries
+- describe solar tracking system as load
+- describe at least one processing unit for power balancing
+- describe charge regulator for battery
+- describe storing surplus power in energy storage system
+- describe releasing stored energy to balance power demand
+- describe connection to utility grid as dispatchable energy source
+- describe power generation by PV system
+- describe long-term variations in power generation
+- describe short-term variations in power generation
+- describe predicting long-term power generation profiles
+- describe predicting short-term power generation profiles
+- describe power demand of plurality of loads
+- describe long-term variations in power demand
+- describe short-term variations in power demand
+- describe monitoring number of occupants/users
+- describe generating long-term power demand profiles
+- describe flexible loads responsive to power supply-demand variations
+- describe shiftable loads
+- describe interruptible loads
+- describe real-time power balancing method
+- describe hierarchical power balancing method
+- describe first, upper optimization layer
+- describe long-term average power production and consumption
+- describe first optimality constraint
+- describe discrete, many-valued, or continuous control variables
+- describe upper and lower control limits
+- describe shiftable or interruptible character of loads
+- describe load profile for each of plurality of loads
+- describe power generation profile for each intermittent energy source
+- describe prediction models for power generation profiles
+- describe energy storage models
+- describe simulating state of charge of energy storage system
+- describe set of energy storage models
+- describe using simplified and complex storage models
+- conclude description of real-time power balancing method
+- introduce coarse-grained optimization
+- simplify energy storage system model
+- submit optimization problem to solver module
+- define solver module
+- extract power reference curves
+- receive power reference curves in lower layer
+- interpolate power reference values
+- receive short-term power generation profiles
+- forecast short-term power generation
+- measure local environmental variables
+- read out internal status data
+- update effectively generated power
+- detect short-term imbalances
+- react to imbalances
+- optimize decision taking
+- refine predicted schedule
+- relocate checkpoints
+- re-evaluate control variables
+- submit optimization problem to solver module
+- use nonlinear energy storage model
+- optimize with additional terms
+- forecast short-term power generation profiles
+- enable optimized decision taking
+- extend battery lifetime
+- evaluate dynamic charging and discharging behavior
+- improve utility grid connectivity schedule
+- determine time constants
+- use sliding horizons
+- perform optimization every 15 minutes
+- perform optimization every 10 seconds
+- provide feedback information
+- simulate state of charge evolution
+- use simulated state of charge value
+- communicate feedback to upper layer
+- provide additional feedback
+- use maximum power point tracking techniques
+- describe energy storage system
+- describe fuel cells
+- describe heat storing elements
+- describe compressed air and hydraulic energy storage
+- describe mechanical storage means
+- describe smart energy management systems
+- illustrate smart energy management system
+- describe wind turbine
+- describe electric cars
+- describe battery as energy storage system
+- describe dynamic wireless power transfer systems
+- describe fuel cell as dispatchable energy source
+- describe power-balancing methods
+- describe highway wind turbine
+- describe vehicle to home configuration
+- describe publicly available electric cars
+- describe computer program distribution
+- describe medium for computer program
+- describe Internet distribution
+- describe wired or wireless telecommunication systems
+- describe variations to disclosed embodiments
+

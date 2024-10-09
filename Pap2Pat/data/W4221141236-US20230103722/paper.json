@@ -1,0 +1,203 @@
+{
+    "id": "https://semopenalex.org/work/W4221141236",
+    "authors": [
+        "Andrew E. Rosenberg",
+        "Yu Zhang",
+        "Pedro R. Moreno",
+        "Bhuvana Ramabhadran",
+        "Murali Karthick Baskar"
+    ],
+    "title": "Ask2Mask: Guided Data Selection for Masked Speech Modeling",
+    "date": "2022-02-24",
+    "abstract": "Masked speech modeling (MSM) methods such as wav2vec2 or w2v-BERT learn representations over speech frames which are randomly masked within an utterance. While these methods improve performance of Automatic Speech Recognition (ASR) systems, they have one major limitation. They treat all unsupervised speech samples with equal weight, which hinders learning as not all samples have relevant information to learn meaningful representations. In this work, we address this limitation. We propose ask2mask (ATM), a novel approach to focus on specific samples during MSM pre-training. ATM employs an external ASR model or textit{scorer} to weight unsupervised input samples in two different ways: 1) A fine-grained data selection is performed by masking over the highly confident input frames as chosen by the scorer. This allows the model to learn meaningful representations. 2) ATM is further extended to focus at utterance-level by weighting the final MSM loss with the utterance-level confidence score. We conduct fine-tuning experiments on two well-benchmarked corpora: LibriSpeech (matching the pre-training data) and Commonvoice, TED-LIUM, AMI and CHiME-6 (not matching the pre-training data). The results substantiate the efficacy of ATM on significantly improving the recognition performance under mismatched conditions (up to 11.6% relative over published results and upto 4.46% relative over our internal baseline) while still yielding modest improvements under matched conditions.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "S ELF-TRAINING and self-supervised training techniques rely on huge amounts of unlabeled speech or text data for better generalization. The self-training techniques such as pseudo-labeling [1], [2] and student-teacher training [3] have shown promising improvements by incorporating the data selection process. This data selection step removes pseudolabels with less confidence as denoted by the teacher model before feeding the input to a student model. [4] shows that self-training and self-supervised training are complementary to each other and also show that self-supervised models act as good initialization for self-training techniques. Selfsupervised training [5] is a representation learning approach which implicitly learns patterns in the data without relying on explicit labels. Masked speech modeling (MSM) is the recent and successful self-supervised learning technique, thanks to the advent of BERT [6] in NLP which inspired learning speech representations from masked inputs. MSM techniques such as wav2vec2 [7], HuBERT [8] and w2v-BERT [9] have shown Murali Karthick Baskar is a PhD student at Faculty of information technology, Brno university of technology, Czechia (email: baskar@vutbr.cz). Andrew Rosenberg, Bhuvana Ramabhadran, Yu Zhang and Pedro Moreno are with Google. Inc., USA considerable gains across various down-stream speech tasks and have become the go-to models for ASR.",
+                "Unfortunately, MSM does not have a data selection scheme to discard the irrelevant input samples and instead imposes burden on the training criterion to learn the relevance of the input samples in learning meaningful representations. [10] noticed the impact of not selecting relevant data from the huge amounts of unsupervised data during pre-training by showing degradation in ASR performance when fine-tuned to a target dataset with limited data. To mitigate this constraint, [11] introduced substantially more fine-tuning data related to the target dataset but did not achieve satisfactory results. [10] attempted to solve this issue by heuristically selecting the data from a closed set of unsupervised speech databases or by pooling in data relevant to target dataset along with the existing pre-training dataset. However, this data selection approach is not done within the existing pre-training dataset and it is not completely empirically motivated.",
+                "In this study, in order to break the above limitation of the MSM techniques, we propose a simple strategy named ask2mask (ATM) to incorporate data selection within a chosen pretraining dataset.",
+                "\u2022 In ATM, the masking is done over the input samples or speech frames with higher confidence as determined by the scorer. This is contrary to the random selection of frames to be masked in conventional MSM models. We hypothesize that this guided selection of frames to be masked allows the model to focus on the frames which can provide meaningful representations. The scoring model used in this work is necessarily a speech recognition model trained on small amount of data and provides frame-level confidence for each input. sssss \u2022 The ATM technique is further extended to exploit the confidence values provided by the scorer by directly using them to re-weight the MSM loss. We denote this approach as ATM with loss scaling (ATM+S). It allows the model training to focus on certain utterances by down scaling the utterances with low-confidences.",
+                "Similar to our work based on masking with external guidance, there is work in NLP that also benefit by incorporating masking with knowledge. In [12], masking is done at phraselevel segments in BERT and has shown to learn semantic dependencies. In [13], phonetic knowledge is injected to mask over phonetic segments to perform spectral augmentation. Phonetically motivated masking scheme is proposed in [14] to improve multiple downstream speech tasks. PEGASUS [15] model masks the input text based on their ROUGE score provides better self-supervised representations for text summarization and is more closer to the idea behind our work.",
+                "Our ATM approach is primarily motivated based on the recent work by [16] on semi-supervised learning of conventional ASR systems which shows that performing data selection at frame-level or token-level on unsupervised data provides better performance. The importance of pruning out the input samples at frame-level has been studied in [17] to improve both classification and regression tasks. Few works on unsupervised learning also highlight the importance of weighting the data based on its confidence [18]- [20]. We hypothesize that ATM can leverage the effect of data selection within a particular training corpus to further enhance the recognition performance of MSM techniques.",
+                "To summarize, our contributions are listed as follows:",
+                "\u2022 Novelty: To the extent of our knowledge, ATM is the first approach to incorporate a within-corpus data selection strategy in MSM. We also show that data selection can be simply performed inside MSM by guided selection of frames to be masked using a scorer model. \u2022 Technical contributions: We provide two simple strategies to incorporate data selection into MSM pretraining by applying the confidence of the scorer: 1) choosing the data at frame-level by applying guided masking 2) soft weighting the data at utterance level by scaling the MSM loss of each utterance with its corresponding confidence score. ATM is designed to be compatible to all MSM based pre-training techniques. \u2022 Empirical study: Analysis is done to find an optimal masking percentage for ATM and we highlight the effectiveness of ATM across varying masking percentages.",
+                "The importance of masking frames with high confidence is substantiated by empirically comparing it with masking low confident frames and random frames respectively.",
+                "Experiments are performed on AMI data which is from a distinct condition compared to Libri-light corpus used for MSM based pretraining. The results confirm the importance of ATM by improving the recognition performance on evaluation sets of AMI by a significant margin."
+            ],
+            "subsections": [
+                {
+                    "title": "II. MASKED SPEECH MODELS (MSM)",
+                    "paragraphs": [
+                        "In this section, we formally define the masked speech modeling (MSM) technique and brief primary instantiations including wav2vec2 and w2v-BERT. The technique can be formulated by defining input speech sequence X = [x 1 , x 2 , ..., x T ], where x t is the log Mel-filterbank feature vector at time t. X is sent to the feature encoder \u03a6 to obtain the encoded representations E = \u03a6(X). The feature encoder contains convolutional layers performing subsampling at a factor of 4 and reducing the total number of frames of an utterance from T to T to get E = [e 1 , e 2 , ..., e T ]. E is then sent to two parallel modules: 1) masking component, and 2) quantizer."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Masking",
+                            "paragraphs": [
+                                "The idea behind masking input samples and predicting them was initially proposed in BERT [6] and later adopted to speech [7] with modifications to suit the characteristics of speech input. The masking is done over sets of frames or blocks b 1 , b 2 , ..., b K and accommodates overlap between blocks. Here K is the number of masked blocks in a randomly masked encoded sequence \u1ebc. The importance of block masking is motivated by the improvements observed in Span-BERT by [21] and ERNIE [12]. The block b k = [i k , c], where i k is the starting index of the masked block and c is the corresponding right context size denoting the number of consecutive speech frames. Here i k are randomly sampled from a uniform distribution. It has been empirically observed by [7] that 49% of the frames are masked and c = 10 is chosen as the golden ratio to attain best representation during pre-training."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "B. Quantizer",
+                            "paragraphs": [
+                                "Gumbel-softmax quantizer component \u03a8 is used to get quantized representations which act as targets for wav2vec2 and w2v-BERT models. These quantized representations align to phonetic units as described in [7]. Each quantized vector is of L dimensions which denote the number of targets or codes used in a codebook. Each incoming input E is projected to L dimensions within the quantizer before applying the Gumbelsoftmax."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "C. Context Network and MSM Loss",
+                            "paragraphs": [
+                                "Wav2vec2-conformer (w2v2-cfr): In this model type, the unmasked sequence E is sent to \u03a8 to get Q = \u03a8(E), where Q = [q 1 , q 2 , .., q T ] as described in [7]. The masked sequence \u1ebc is fed to the context network \u2126 which contains conformer blocks to learn contextual representations from the input. C = \u2126(E) denotes the output of the context network. The contrastive loss L ctr (c j , q j ) objective is computed between the quantized representation q j and context network output c j \u2208 C for all masked time instances j \u2208 J. Diversity loss L div is computed as an auxiliary objective in wav2vec2 to force the model to choose diverse codes in the quantization codebook. Detailed description of L div is in [7]. The final training objective is denoted as:",
+                                "where L ctr = J j=1 L ctr (c j , q j ). HuBERT-conformer: This is another variant of wav2vec2conformer model with two major differences: 1) Targets are kmeans cluster ids which are computed over a small portion of input 2) Cross-entropy loss L ce (\u0177 j , y j ) is computed between the prediction of the context network \u0177j and the k-means cluster id target y j .",
+                                "W2V-BERT: This model marries the concept of wav2vec2 and BERT model by including an additional context network \u039b containing conformer blocks in addition to \u2126 as in wav2vec2. The \u039b receives the output of the \u2126 and strives to further learn refined contextual information to get H = \u039b(C). The targets of w2v-BERT y j is computed by taking an argmax over the codebook dimensions L of quantized representations q j,l as:",
+                                "Finally, the cross-entropy loss L ce (\u0177 j , y j ) is computed between the prediction \u0177j = softmax(h j ) and the target y j over the masked time instances J. The final training objective L wb = L ce + L wv is a combination of cross-entropy loss and wav2vec2 loss."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "III. ASK2MASK (ATM)",
+            "paragraphs": [
+                "The primary reason to employ pre-training models is to exploit the abundantly available unsupervised data for improving ASR under limited availability of supervised data. While the MSM models such as wav2vec2 and w2v-BERT described in Section II exploit the unsupervised data, they treat each data with equal weight for computing the final objective. Instead, we generate a score s t for each encoded frame e t . This is used to select relevant data in a fine-grained manner during masking for computing the loss objective. Here, we hypothesize that pre-training with data that closely resembles the target domain leads to better recognition performance after fine-tuning."
+            ],
+            "subsections": [
+                {
+                    "title": "A. Methodology",
+                    "paragraphs": [
+                        "For each encoded feature frame e t \u2208 E, the scorer emits probabilities p(v t = l | E); l \u2208 L of the frame belonging to a particular label. The scorer model is a CTC based framesynchronous ASR model separately trained with a limited amount of data. Our initial intuition was to chose the scorer's training data to match the target data condition, however our empirical analysis in (cf. Section V-C) shows that the performance is agnostic to the scorer model's training data. Finally, the confidence score s t of the frame is defined as the maximum probability across all labels:",
+                        "We sample K masking start indices {i 1 , .., i k } with probabilities:",
+                        "That is, we sample beginning frames with probability proportional to the scores of each frame. The indicator function \u03b4 t / \u2208{i1.,,i k-1 } ensures that we sample without replacement. This is the key difference between ATM and the random masking in prior works as described in Section II-A. Prior works uniformly sample the start indices of each masking block b 1:K , while the ATM uses the probability distribution induced by the scorer. K is determined by the percentage of frames to be masked.",
+                        "We hypothesize that frames with maximum confidence from an external scoring model will be 1) easiest to learn using an MSM training criteria and 2) most informative in for pretraining to facilitate fine-tuning. Conversely, the lowest confidence frames, those more confusable to an external scoring model, will be the least reliably learned by MSM and least informative for pretraining.",
+                        "The resulting frames are sent as input to the MSM architecture and the final loss objective L is determined by either of the MSM objectives L wv or L wb described in Sections II-C. This modified training objective allows the model to focus on learning from gradients calculated from the frames with high confidences."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "B. ATM with MSM Loss Scaling (ATM+S)",
+                            "paragraphs": [
+                                "The ATM loss is computed over the frames with high confidence performing a fine-grained data selection within a u th speech sequence X u . Utterances with higher average frame confidence as measured by the scorer are accorded higher value than those with more confused frames. To perform data selection at a coarser utterance level, confidence scores s u are computed as:",
+                                "For simplicity, we denote s = s u and the MSM loss computed over each masked frame is scaled by s to impose the importance of a particular utterance u. The final training objective L atm of a particular speech sequence is denoted as:",
+                                "C. Probability as confidence measure in ATM",
+                                "The ATM uses probability as a simple form of confidence measure to each frame. The analysis of confidence measures for semi-supervision in ASR has been done in [16] and they show that posterior probability acts as a reliable confidence measure for frame, word and sentence based data selection. They also perform an extensive analysis on using the posteriors for hybrid ASR systems. Based on the motivation from this work we chose to use softmax probability directly as our confidence score. A similar observation has been noted in [17], where the usage of softmax probability directly as a confidence measure has been applied to select relevant data samples during training. We also experimented with Entropy and exponential scaling or log scaling on softmax probabilities as confidence measure, but it did not fetch advantage over simple usage of probability."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "IV. EXPERIMENTAL SETUP",
+                    "paragraphs": [
+                        "All experiments including pre-training and fine-tuning are performed using 80 dimensional log Mel-filterbank features computed over the sampled 16kHz audio. Datasets (such as AMI) contains wideband audio and are downsampled to 16kHz. We evaluate with the test-other (LibriSpeech partition) to show the importance of ATM on matched data conditions, while IHM-eval and SDM-eval (AMI partitions) is used to validate the model under mismatched conditions."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Datasets used",
+                            "paragraphs": [
+                                "Pretraining (PT): Libri-light (LL-60k) dataset contains 60k hours of unlabeled speech and is used to pre-train all MSM models. LL-60k is the most widely used large unsupervised speech corpus for various PT techniques. Each input speech sequence is constructed by first randomly selecting 32-64 seconds segments from the original utterance. From these segments, a contiguous 32 second region is extracted from a random starting point on-the-fly during MSM PT as described in [22].",
+                                "Finetuning (FT): Different target datasets including 1) 100 & 960 hours of Librispeech (LS-100 & LS-960) [23]. 2) 100 hours of AMI and 3) speechstew (approx. 5k hours) [11] are used to perform our FT experiments. Each dataset used is specific to a certain target data condition, for instance LS-960 is closely matches the LL-60k, AMI dataset is distinct from the LL-60k condition and it contains speech from two kinds of microphones (i) Independent head microphone (IHM). (ii) single distant microphone (SDM). SpeechStew is composed of datasets chosen from multiple conditions to create a mixed domain aggregate corpus. Processing details are described in [11].",
+                                "Evaluation: We hypothesize that evaluation over AMI using IHM-eval and SDM-eval reveals the effectiveness of ATM in providing informative samples for better representation learning. We also evaluate using evaluation sets from Tedlium and Common voice as their training counter parts are used in SpeechStew based FT. Finally, we also evaluate using CHiME-6 [24] without using any FT data from CHiME-6 training set to compare the performance of ATM on completely unseen target dataset.",
+                                "Scorer training data: A CTC [25] based conformer model with 100M parameters is trained on LS-100 (\"LS-scorer\"). A similar model is also trained on AMI (\"AMI-scorer\"). Wordpiece model (WPM) with 1024 tokens are used as labels for training the scorer models. All the results in this paper use \"LS-scorer\" besides the comparison Section V-C."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "B. MSM architecture",
+                            "paragraphs": [
+                                "W2v2-cfr: This is a wav2vec2 with conformer based context network which first encodes the filterbank features using two 2D convolutional layers with strides (2,2). Model has 100M/600M parameters and is denoted as \"w2v2-cfr-L/XL\". HuBERT-cfr-L/XL is similar to w2v2-cfr-L/XL -it differs in using the k-means based quantizer with 1024 targets and computes the cross-entropy loss as described in [8]. The \"L/XL\" size models contains context network \u2126 12/24 conformer layers with 8 attention heads and 1024 hidden dimensions.",
+                                "W2v-BERT: W2v-BERT is explored using two model sizes: one with 100M parameters denoted as \"w2v-BERT-L\" and containing 2 conformer layers in context net \u2126 and 4 conformer layers in \u039b. A 600M parameter model is denoted as \"w2v-BERT-XL\" contains 8 conformer layers in \u2126 and 24 conformer layers in \u039b. Each conformer block contains 1024 hidden dimensions with 8 attention heads, kernel size of 5 with local context of 128. The remaining architecture is identical to the configuration defined in [9]."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "C. PT and FT configuration",
+                            "paragraphs": [
+                                "The models L/XL are trained with a global batch size of 512/2048 on 64/256 Google TPU V3 cores for 2-4 days respectively. Adam optimizer is used with a learning rate schedule (Section 5.3 of [26]) with 2e-3 as peak learning rate and 25k warmup steps. The model training configuration follows similar procedure as described in [22].",
+                                "The FT is done by employing the context network from the PT model by adding a final layer with 1024 WPM units learnt using the RNN-T objective function [27]. The FT is done on w2v-BERT-XL, w2v2-cfr-XL and HuBERT-cfr-XL after 400k PT model updates. The w2v-BERT-L model is FT after 900k PT model updates. w2v-BERT-L is used to initially perform wide range of analysis and hyper-parameter optimization on ATM. w2v-BERT-XL is finally used to compare the results of ATM across existing works in literature. w2v2-cfr-XL and HuBERT-cfr-XL are also used in our experiments. All these models are trained with the same configuration as in [22]. "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "V. ATM ANALYSIS",
+                    "paragraphs": [
+                        "The empirical study on ATM is done primarily using w2v-BERT-L since this generates the best WER performance across similarly sized models (cf. Figure 5). The pre-trained models are fine-tuned with either LS-100 or AMI. The resulting finetuned models are evaluated on IHM and SDM evaluation sets to understand the domain generalization aspect of ATM. Librispeech evaluation sets are used in unison to study how ATM behaves under matching domain condition. These experiments are performed with using the loss scaling (it will be discussed in Section V-F)."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Masking percentages",
+                            "paragraphs": [
+                                "The number of masked frames within an utterance plays a key role in masked input learning and in this study, we vary the masking percentages from 30% to 50% to determine the best percentage for ATM approach. Previous works on wav2vec2 ( [7]) showed that masking 49% of the frames is ideal for 30 second utterance and this has been followed subsequent works such as HuBERT and w2v-BERT. In case of ATM, this can differ as the frames selected are of higher confidences. Figure 4 shows that ATM achieves its \"sweet spot\" with 40% masking for both IHM-eval and test-other set. Interestingly ATM's performance is stable across large variations in masking rates with relatively good performance with masking rate as low as 30%. This is a significant difference from the uniform sampling of prior work which suffers significant drop in performance as the masking rate goes below 40%. The result indicates that masking the right set of frames, which ATM aims to do, is able to promote more stable performance. For instance, ATM achieves a %WER of 12.65 with 33% masking and 12.52 with 40% masking on IHM-eval respectively as shown in Figure 4. The recognition performance on test-other and IHM-eval improves over baseline from 8.86% to 8.79% and 13.38% to 12.52% respectively by using ATM. "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "B. ATM masking strategies",
+                            "paragraphs": [
+                                "The default setting of ATM is chosen based on a hypothesis that those frames that are scored with high-confidence from an external scoring model will be most useful as candidates for MSM pretraining. This hypothesis is interrogated in this section by analysing the impact of choosing the frames with low confidences or equal mix of both high and low confidence frames (Mixed). For masking low confident frames, we modify the score in (3) as:",
+                                "We evaluated these three masking strategies of ATM on both IHM and SDM evaluation sets. Table I shows the comparison between these sampling strategies. We observe that masking high confident frames are consistently better than masking the low confidence counterparts. In fact, \"Low\" confident frames perform worse than the baseline with random masking. Finally, we observe that performance of \"Mixed\" falls between that of \"High\" and \"Low\". The \"Mixed\" strategy is similar to random masking, as both high and low confidence frames are selected. This similarity is also reflected in comparable performance between \"Mixed\" and random masking. These results provide support for our initial hypothesis that masking frames with high confidence leads to better pre-training. The scorer used in this work is a speech recognition model (100M parameters) trained in a supervised fashion. The scorer is chosen based on the target downstream task and in addition to this, the scorer needs to be frame-synchronous to provide confidence for every frame in a speech sequence. In this work, we use a frame-synchronous ASR system as the scorer by employing the connectionist temporal classification (CTC) objective. The CTC is preferred over the RNN-T by analysing the reliability of the frame-level predictions. To analyse the importance of the supervised data used to train the scorer, we trained two scorer models: LS-scorer and AMI-scorer are CTC models trained with LS-100 and AMI dataset respectively. The AMI-scorer outperforms on SDM-eval by improving the %WER from 27.34 to 27.00. Surprisingly, our results on Table II, shows that the results on IHM-eval using an LS-scorer are comparable to the AMI-scorer. Evaluation on test and testother shows that LS-scorer is better than AMI-scorer on both sets. Based on these observations, we choose the LS-scorer as the universal scoring model for all ATM based pre-trained models regardless of the target domain (eg: AMI) used in our experiments. Table II shows that although matching the scorer to the target domain improves the performance, the difference is not significant."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "D. Consistency across different architectures",
+                            "paragraphs": [
+                                "Fig. 5. Performance comparison of different MSM architectures with and without applying ATM on IHM-eval and SDM-eval in AMI. All these models are FT using AMI. Here \"cfr\" refers to conformer.",
+                                "Figure 5 shows that ATM consistently outperforms on both IHM-eval and SDM-eval across multiple MSM architectures including wav2vec2 and HuBERT. In the case of IHM-eval, ATM attains a relative improvement of 9% over w2v2-cfr-L, 4% relative improvement over HuBERT-cfr-L and 5% relative gain over w2v-BERT-L baseline models respectively. W2v2cfr-L using ATM obtained 6.2% relative improvement over its baseline counterpart and HuBERT-cfr-L with ATM attained 7.9% rel. improvement over HuBERT-L baseline on SDMeval respectively. On the other hand w2v-BERT-L baseline is better compared to w2v2-cfr-L and HuBERT-cfr-L on both IHM-eval and SDM-eval by achieving 12.52% and 27.34% WER respectively."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "E. Analysis of ATM on Librispeech",
+                            "paragraphs": [
+                                "Experimental analysis is conducted using different model architectures to validate the effect ATM on LS-100 and are present in table III. The impact of increasing the model parameters from \"L\" size to \"XL\" size, we FT on LS-100 using MSM models with XL size and the results are in table III. We did not find any consistency in the performance across the evaluation sets using any of the MSM architectures. Slight gains are observed on test or dev or dev-other using w2v2-cfr-XL. Once the baseline in w2v-BERT-XL gets better, ATM did not achieve gains on test-other. This scenario can be explained due to effectiveness of MSM pre-training under matched condition and can perform well without any necessary data selection approach."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "F. ATM with Loss scaling (ATM+S) Analysis",
+                            "paragraphs": [
+                                "ATM training can incorporate utterance-level weighting by scaling the MSM loss obtained using w2v-BERT-L models with the utterance-level confidence score according to (6). We evaluate the value of utterance-level loss scaling by reweighting utterances in the context of both baseline MSM (i.e., without ATM frame selection) and ATM (ATM+S). These  results are in Table IV. Re-weighting utterances by scaling the MSM loss with the confidence score on baseline model is denoted as \"Baseline+S\" and on ATM is labeled as \"ATM+S\". MSM loss scaling is effective even without ATM; baseline+S improves over baseline on both IHM-eval and SDM-eval. Moreover, ATM+S improves over ATM on SDM-eval by attaining 27.19% WER while showing degradation on IHM-eval. This shows that ATM+S is effective on very hard evaluation task such as SDM-eval compared to IHM-eval. On the IHMeval test set, the impact of MSM loss scaling is observed over the Baseline MSM without ATM. We hypothesize that ATM+S may not able to provide improvement on IHM-eval as ATM already incorporates optimally incorporates scorer information on this task. "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "G. ATM+S analysis on validation data during PT",
+                            "paragraphs": [
+                                "The effect of ATM and ATM+S is analysed by plotting the validation scores on dev-other during pre-training. The first plot in figure 6 shows that the contrastive loss improves over the baseline with the aid of ATM and is further enhanced with ATM+S. The second plot shows the number of unique codes used from the quantizer codebook. Analysing this plot helps us to understand if the validation loss or accuracy is improved by just using less % of unique codes which will affect the performance at FT. Among the 1024 codes, 94%-95% are used by both ATM and ATM+S. This is similar to the % unique codes used by the baseline model and confirms that improvement of ATM and ATM+S is not by choosing smaller set of unique codes. The third plot shows that the MSM accuracy of ATM and ATM+S improves over baseline model. ATM+S shows that re-weighting each utterance is complementary to the ATM."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "H. Comparison between frame-level and utterance-level Loss scaling",
+                            "paragraphs": [
+                                "ATM+S performs MSM loss scaling using the utterancelevel confidences which performs focus on each utterance at a coarse level. We also experimented with scaling with frame-level confidence scores. Our experiments showed that scaling all utterances with frame-level confidence hurts the model performance. To solve this issue, we randomly selected utterances which participate in frame scaling. Scaling 10% utterances resulted in better performance and the results are shown in Table V.    Table VIII presents the results of ATM on AMI by comparing it with w2v2-conformer-XL baseline and w2v-BERT-XL baselines. We include w2v2-conformer-XL to further test the consistency of ATM on XL models when evaluated on harder tasks. ATM+S and ATM observes consistent gains over baseline on both IHM-eval and SDM-eval when trained with XL models. However, ATM+S did not demonstrate improvement on IHM-eval using w2v-BERT-XL.",
+                                "Table IX analyses the effect of ATM and ATM+S on multiple evaluation sets such as Commonvoice, Tedlium, AMI and CHiME-6. These four sets are chosen based on the mismatch range from minimum to maximum and for instance, Commonvoice has the minimum mismatch with Libri-light data, while CHiME-6 has the maximum mismatch. The stateof-the-art results published in [11] are obtained by choosing the best Conformer model supervisedly trained with multiple datasets such as AMI, CommonVoice, Broadcast News, Librispeech, Switchboard/Fischer, TED-LIUM and Wall Street Journal. Note that the training data did not include the CHiME-6 data. The authors in [11] show that simply training an ASR with lots of data leads to best results compared to the wav2vec2 finetuned model. Their best results are denoted in table IX and will be used to compare with our best ATM results.",
+                                "Our baseline w2v-BERT-XL attained better results over the published w2v2-conformer-XL and Speechstew results. In Commonvoice and CHiME-6, the baseline attained 7.4% and 2.9% relative improvement over Speechstew respectively. However, by including our ATM and ATM+S with w2v-BERT-XL, there was consistent improvement across all range of mismatched domains. For instance, ATM+S attains 5.76% relative improvement on CHiME-6 over the Speechstew. This result clearly justifies that selection of reasonable input samples during pre-training reduces the necessity of having finetuning data from the same domain to improve performance. To further substantiate this, the results on AMI show a 4.6% relative improvement on AMI-SDM over Speechstew which is of different domain compared to pre-training domain. In case of minimal mismatch domain such as Commonvoice, the ATM attained 11.6% relative improvement over Speechstew. These observations show that ATM and ATM+S demonstrate their effectiveness to generalize to unseen and challenging speech recognition conditions."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "VII. CONCLUSION",
+                    "paragraphs": [
+                        "In this work, we introduce ask2mask (ATM) to perform data selection over unsupervised samples for MSM based pretraining to focus on relevant information and learn meaningful representations. ATM achieves 21.0% WER on mismatched AMI SDM set with guided masking and a 20.7% WER is obtained by including loss scaling (ATM+S). We empirically show that ATM is more robust to changes in masking percentage compared to random masking. as typically used in MSM. Our results substantiate the importance of learning from high confident frames by attaining improvements across multiple evaluation sets. An important aspect of ATM approach is its flexibility to incorporate into any MSM pretraining techniques and ATM+S can also be easily adopted into self-supervised pre-training methods. In our future work, we wish to apply ATM over pretraining data containing data from multiple domains [10], [28] to achieve further improvements. We also consider two future enhancements to ATM: "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "ACKNOWLEDGMENTS",
+                    "paragraphs": [
+                        "We would like to thank Luk\u00e1\u0161 Burget, Jan Honza \u010cernock\u00fd, Bolaji Yusuf and Zhehuai Chen for helping to review the paper and provide valuable suggestions."
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

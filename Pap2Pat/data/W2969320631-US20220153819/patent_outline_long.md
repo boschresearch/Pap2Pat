@@ -1,0 +1,792 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- define bispecific antigen binding molecules
+
+## BACKGROUND
+
+- motivate therapeutics
+- describe classical complement activation
+- limitations of therapeutic antibodies
+- identify need for compositions and methods
+
+## BRIEF SUMMARY OF THE DISCLOSURE
+
+- introduce bispecific antigen-binding molecules
+- define target antigen
+- describe classical complement components
+- specify C1q as complement component
+- describe target antigen on cell surface
+- describe target antigen as soluble antigen
+- specify target antigen on diseased cell
+- specify target antigen on non-diseased cell
+- describe target antigen as marker of disease state
+- specify target antigen on bacteria, virus, or infected cell
+- describe soluble multimer target antigen
+- specify EC50 of bispecific antigen-binding molecule
+- describe promotion of complement component deposition
+- specify target antigen from Staphylococcus species
+- specify target antigen from Pseudomonas species
+- specify target antigen from Influenza strain
+- specify target antigen from B cell or cancer cell
+- describe anti-IsdB x anti-C1q bispecific molecules
+- describe anti-protein A x anti-C1q bispecific molecules
+- describe anti-IsdA x anti-C1q bispecific molecules
+- describe anti-PNAG x anti-C1q bispecific molecules
+- describe anti-C1fA x anti-C1q bispecific molecules
+- specify target antigen from Gram-negative bacteria
+- specify target antigen from Pseudomonas aeruginosa
+- describe anti-Ps1 x anti-C1q bispecific molecules
+- specify target antigen from viral target antigen
+- specify target antigen from Influenza virus
+- describe anti-HA x anti-C1q bispecific molecules
+- specify target antigen from eukaryotic host
+- specify target antigen from cancer cell surface
+- specify target antigen from immune cell surface
+- describe anti-CD20 x anti-C1q bispecific molecules
+- describe anti-GITR x anti-C1q bispecific molecules
+- describe structure of bispecific antigen-binding molecules
+- specify antigen-binding domains
+- define antigen-binding molecule
+- define antigen-binding domains
+- describe second antigen-binding domain D2
+- specify HCVR CDRs of D2
+- specify LCVR CDRs of D2
+- provide anti-C1q bispecific molecules
+- describe first antigen-binding domain D1
+- specify HCVR CDRs of D1
+- specify LCVR CDRs of D1
+- provide anti-IsdB x anti-C1q bispecific molecules
+- describe first antigen-binding domain D1
+- specify HCVR CDRs of D1
+- specify LCVR CDRs of D1
+- provide anti-protein A x anti-C1q bispecific molecules
+- describe first antigen-binding domain D1
+- specify HCVR CDRs of D1
+- specify LCVR CDRs of D1
+- provide anti-IsdA x anti-C1q bispecific molecules
+- describe first antigen-binding domain D1
+- specify HCVR CDRs of D1
+- specify LCVR CDRs of D1
+- provide anti-C1fA x anti-C1q bispecific molecules
+- provide anti-PNAG x anti-C1q bispecific molecules
+- introduce bispecific antibodies
+- describe anti-Ps1 x anti-C1q bispecific antibodies
+- describe anti-CD20 x anti-C1q bispecific antibodies
+- describe anti-HA x anti-C1q bispecific antibodies
+- describe anti-GITR x anti-C1q bispecific antibodies
+- provide isolated bispecific antigen binding molecules
+- describe first antigen-binding domain
+- describe second antigen-binding domain
+- provide heavy chain variable region
+- provide light chain variable region
+- provide nucleic acid molecules encoding HCVR, LCVR or CDR sequences
+- provide recombinant expression vectors
+- provide host cells
+- describe methods of producing antibodies
+- describe anti-C1q bispecific antigen-binding molecules
+- describe modified glycosylation pattern
+- provide pharmaceutical composition
+- provide combination therapy
+- describe methods for activating or enhancing cell killing
+- describe therapeutic methods for inhibiting bacterial growth
+- describe therapeutic methods for treating Staphylococcus infection
+- describe therapeutic methods for treating Pseudomonas infection
+- describe therapeutic methods for treating Influenza infection
+- describe therapeutic methods for treating cancer
+- describe therapeutic methods for treating B cell cancer
+- describe therapeutic methods for treating T regulatory cell cancer
+- provide use of anti-C1q bispecific antigen-binding molecule
+- describe anti-C1q bispecific antigen-binding molecules with modified glycosylation
+- describe anti-C1q bispecific antigen-binding molecules with single chain Fv
+- describe anti-C1q bispecific antigen-binding molecules with VH or VL domain
+- describe anti-C1q bispecific antigen-binding molecules with VHH or VNAR
+- describe anti-C1q bispecific antigen-binding molecules with dual affinity retargeting proteins
+- describe anti-C1q bispecific antigen-binding molecules with tandem diabodies
+- describe anti-C1q bispecific antigen-binding molecules with knob and hole pairings
+- describe anti-C1q bispecific antigen-binding molecules with charge pairings
+- describe anti-C1q bispecific antigen-binding molecules with cross Mab
+- describe anti-C1q bispecific antigen-binding molecules with double variable domain Ig
+- describe anti-C1q bispecific antigen-binding molecules with s-Fab
+- describe anti-C1q bispecific antigen-binding molecules with Fv-Fc
+- describe anti-C1q bispecific antigen-binding molecules with Tandem Fabs
+- describe anti-C1q bispecific antigen-binding molecules with 2+1 N-Fab
+- describe anti-C1q bispecific antigen-binding molecules with 2+1 C-Fabs
+
+## DETAILED DESCRIPTION
+
+- set scope and terminology
+- define key terms and references
+
+### I. Definitions
+
+- define bispecific antigen-binding molecules
+- describe antigen-binding domains D1 and D2
+- specify target antigen on cell or organism surface
+- specify target antigen as soluble target antigen
+- define antigen-binding domain D1 binding to target antigen
+- define antigen-binding domain D2 binding to complement component
+- provide examples of target antigens on bacteria, virus, or cell surface
+- define anti-complement component antibody
+- specify anti-C1q antibody binding to C1q subunit or multimer
+- provide exemplary sequences of C1q subunits
+- define anti-C1q bispecific antibody
+- define antigen-binding molecule with binding affinity for antigen
+- specify antigen-binding molecule with CDR and/or framework regions
+- define bispecific antigen-binding molecule with two antigen-binding domains
+- define target antigen on organism or cell surface
+- specify target antigen as marker for cell type or disease state
+- provide examples of bacterial and viral pathogens
+- define Staphylococcus species
+- define Influenza virus
+- define Pseudomonas species
+- define tumor necrosis factor receptor antigen
+- define immune cell surface antigen
+- define B-cell surface antigen
+- define T-cell surface antigen
+- define cancer-cell surface antigen
+- define antibody that binds cancer-cell surface antigen
+- define anti-cancer cell surface antigen antibody
+- define antibody
+- describe structure of antibody
+- define antigen-binding domain
+- describe methods for determining specific binding
+- list non-limiting examples of antigen-binding fragments
+- describe antigen-binding fragments with variable and constant domains
+- describe multispecific antigen-binding fragments
+- describe functions of antibodies through CDC and ADCC
+- describe human antibodies
+- describe recombinant human antibodies
+- describe isolated antibodies
+- describe antibodies with hinge heterogeneity
+- describe mutations in hinge, CH2 or CH3 region
+- describe germline mutations
+- describe one-arm antibodies
+- define epitope
+- describe substantial identity of nucleic acids
+- describe substantial similarity of polypeptides
+- describe methods for determining sequence identity
+- describe FASTA algorithm
+- describe BLAST algorithm
+- describe GCG software
+- describe Gap and Bestfit programs
+- describe conservative amino acid substitutions
+- describe protein analysis software
+- describe sequence analysis software
+- describe default parameters for sequence analysis
+- describe recommended parameters for sequence analysis
+- describe FASTA2 and FASTA3 programs
+- describe BLASTP and TBLASTN programs
+- describe default parameters for BLAST
+- describe antibody-dependent cell-mediated cytotoxicity
+- describe complement-dependent cytotoxicity
+- describe antibody formats
+- describe bispecific antibody formats
+- describe antibody production
+- describe antibody purification
+- describe antibody characterization
+- describe antibody applications
+- describe antigen-binding molecules
+- describe antibody fragments
+- describe recombinant expression vectors
+- describe host cells for antibody production
+
+### II. Complement Component Binding Molecules
+
+- introduce anti-complement component binding molecules
+- describe C1q structure
+- provide exemplary sequences of C1q subunits
+- describe anti-C1q antibodies
+- incorporate by reference U.S. Ser. No. 16/143,901 and PCT/US2018/053064
+- describe bispecific antigen-binding molecule
+- specify IC50 values for bispecific antigen-binding molecule
+- describe inhibition of C1q binding to immunoglobulin molecules
+- describe inhibition of hemolysis and complement dependent cytotoxicity
+- describe deposition of human C1q
+- provide sequences of exemplary anti-C1q antibodies
+- describe heavy chain variable region CDRs
+- describe light chain variable region CDRs
+- provide sequences of HCVRs and LCVRs
+- describe HCDR1, HCDR2, and HCDR3
+- describe LCDR1, LCDR2, and LCDR3
+- provide sequences of HCDR1, HCDR2, and HCDR3
+- provide sequences of LCDR1, LCDR2, and LCDR3
+- describe HCDR3 and LCDR3 pair
+- describe set of six CDRs
+- provide methods for identifying CDRs
+- describe nucleic acid molecules encoding anti-C1q antibodies
+- provide sequences of nucleic acid molecules encoding HCVRs
+- provide sequences of nucleic acid molecules encoding LCVRs
+- provide sequences of nucleic acid molecules encoding HCDR1, HCDR2, and HCDR3
+- provide sequences of nucleic acid molecules encoding LCDR1, LCDR2, and LCDR3
+- describe nucleic acid molecules encoding HCVR and LCVR pairs
+- describe recombinant expression vectors
+- describe host cells for expression of anti-C1q antibodies
+- describe methods for producing anti-C1q antibodies
+- describe modified glycosylation patterns
+- describe applications of modified glycosylation patterns
+
+### III. Target Antigen Binding Molecules
+
+- introduce target antigen binding molecules
+- specify target antigen expression
+- describe soluble target antigen
+- introduce Staphylococcus target antigens
+- specify Staphylococcus species
+- list Staphylococcus species target antigens
+- introduce anti-IsdB antibodies
+- describe anti-IsdB antibody binding
+- specify anti-IsdB antibody sequences
+- introduce bispecific antigen-binding molecule
+- describe bispecific antigen-binding molecule binding
+- list exemplary anti-IsdB antibodies
+- describe HCVR and LCVR sequences
+- introduce antibodies with HCVR and LCVR sequences
+- describe HCDR1, HCDR2, and HCDR3 sequences
+- introduce antibodies with HCDR1, HCDR2, and HCDR3 sequences
+- describe LCDR1, LCDR2, and LCDR3 sequences
+- introduce antibodies with LCDR1, LCDR2, and LCDR3 sequences
+- describe HCDR3 and LCDR3 pair sequences
+- introduce antibodies with HCDR3 and LCDR3 pair sequences
+- describe nucleic acid molecules encoding HCVR sequences
+- describe nucleic acid molecules encoding LCVR sequences
+- describe nucleic acid molecules encoding HCDR1 sequences
+- describe nucleic acid molecules encoding HCDR2 sequences
+- describe nucleic acid molecules encoding HCDR3 sequences
+- describe nucleic acid molecules encoding LCDR1 sequences
+- describe nucleic acid molecules encoding LCDR2 and LCDR3 sequences
+- define target antigen binding molecules
+- provide nucleic acid molecules encoding HCVR
+- provide nucleic acid molecules encoding LCVR
+- provide nucleic acid molecules encoding both HCVR and LCVR
+- describe antibody or antigen binding fragment thereof
+- provide bispecific antigen-binding molecule
+- list exemplary anti-IsdA antibodies
+- provide antibodies or antigen-binding fragments thereof
+- describe HCVR and LCVR pair
+- provide antibodies or antigen-binding fragments thereof
+- describe HCDR1
+- describe HCDR2
+- describe HCDR3
+- describe LCDR1
+- describe LCDR2
+- describe LCDR3
+- provide HCDR3 and LCDR3 pair
+- describe antibodies or antigen-binding fragments thereof
+- provide nucleic acid molecules encoding HCVR, LCVR or CDR sequences
+- describe recombinant expression vectors
+- describe host cells
+- describe methods of producing antibodies
+- provide nucleic acid molecules encoding anti-IsdA antibodies
+- provide nucleic acid molecules encoding HCVR amino acid sequences
+- provide nucleic acid molecules encoding LCVR amino acid sequences
+- provide nucleic acid molecules encoding HCDR, LCDR amino acid sequences
+- provide nucleic acid molecules encoding HCVR
+- provide nucleic acid molecules encoding LCVR
+- provide nucleic acid molecules encoding both HCVR and LCVR
+- describe antibodies or antigen-binding fragments thereof that bind Protein A
+- provide exemplary anti-Protein A antibodies
+- describe bispecific antigen-binding molecules
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCVR CDRs
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific LCVR CDRs
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCVR/LCVR pairs
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCDR1
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCDR2
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCDR3
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific LCDR1
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific LCDR2
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific LCDR3
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCDR3/LCDR3 pairs
+- provide antibodies or antigen-binding fragments thereof that bind Protein A with specific HCVR and LCVR sequences
+- provide nucleic acid molecules encoding HCVR sequences
+- provide nucleic acid molecules encoding LCVR sequences
+- provide nucleic acid molecules encoding HCDR1 sequences
+- provide nucleic acid molecules encoding HCDR2 sequences
+- provide nucleic acid molecules encoding HCDR3 sequences
+- provide nucleic acid molecules encoding LCDR1 sequences
+- provide nucleic acid molecules encoding LCDR2 sequences
+- provide nucleic acid molecules encoding LCDR3 sequences
+- provide recombinant expression vectors and host cells
+- define target antigen binding molecules
+- provide nucleic acid molecules encoding HCVR
+- provide nucleic acid molecules encoding LCVR
+- provide nucleic acid molecules encoding both HCVR and LCVR
+- describe anti-PNAG antibodies
+- provide antibodies or antigen-binding fragments thereof that bind PNAG
+- describe exemplary anti-PNAG antibodies
+- provide nucleic acid molecules encoding anti-PNAG antibodies
+- describe anti-C1fA antibodies
+- provide antibodies or antigen-binding fragments thereof that bind C1fA
+- describe exemplary anti-C1fA antibodies
+- provide nucleic acid molecules encoding anti-C1fA antibodies
+- describe recombinant expression vectors
+- describe host cells
+- describe methods of producing antibodies
+- describe modified glycosylation pattern
+- introduce Pseudomonas target antigens
+- describe antibodies or antigen-binding fragments thereof that bind Pseudomonas species target antigen
+- describe exemplary anti-Ps1 antibodies
+- provide antibodies or antigen-binding fragments thereof that bind Ps1
+- describe HCVR CDRs
+- describe LCVR CDRs
+- provide antibodies or antigen-binding fragments thereof comprising HCVR/LCVR pair
+- describe HCDR1
+- describe HCDR2
+- describe HCDR3
+- provide nucleic acid molecules encoding anti-Ps1 antibodies
+- describe recombinant expression vectors
+- describe host cells
+- describe methods of producing antibodies
+- provide antibodies binding Ps1
+- specify LCDR1 sequences
+- specify LCDR2 sequences
+- specify LCDR3 sequences
+- specify HCDR3/LCDR3 pair sequences
+- specify HCDR1 sequences
+- specify HCDR2 sequences
+- specify HCDR3 sequences
+- specify LCDR1 sequences
+- specify LCDR2 sequences
+- specify LCDR3 sequences
+- provide nucleic acid molecules encoding antibodies
+- provide recombinant expression vectors
+- provide host cells
+- provide methods of producing antibodies
+- provide anti-Ps1 antibodies with modified glycosylation
+- provide binding molecules to virus target antigens
+- specify Influenza virus target antigens
+- provide antibodies binding Influenza HA
+- specify HCVR and LCVR sequences
+- specify HCDR1, HCDR2, and HCDR3 sequences
+- specify LCDR1, LCDR2, and LCDR3 sequences
+- provide bispecific antigen-binding molecules
+- provide exemplary anti-Influenza HA antibodies
+- provide nucleic acid molecules encoding HCVR and LCVR
+- provide antibodies with HCVR and LCVR pairs
+- provide antibodies with HCDR1, HCDR2, and HCDR3 sequences
+- provide antibodies with LCDR1, LCDR2, and LCDR3 sequences
+- provide antibodies with HCDR3/LCDR3 pairs
+- define target antigen binding molecules
+- provide nucleic acid molecules encoding antibodies
+- describe recombinant expression vectors
+- provide host cells and methods of producing antibodies
+- describe modified glycosylation pattern
+- introduce cancer cell target antigens
+- describe anti-CD20 antibodies
+- provide exemplary anti-CD20 antibodies
+- describe HCVR and LCVR of anti-CD20 antibodies
+- provide nucleic acid molecules encoding HCVR and LCVR
+- describe antibodies with HCVR and LCVR pairs
+- provide antibodies with specific HCVR and LCVR sequences
+- describe antibodies with HCDR1 sequences
+- describe antibodies with HCDR2 sequences
+- describe antibodies with HCDR3 sequences
+- describe antibodies with LCDR1 sequences
+- describe antibodies with LCDR2 sequences
+- describe antibodies with LCDR3 sequences
+- provide antibodies with specific HCDR and LCDR sequences
+- describe bispecific antigen-binding molecules
+- provide antibodies with specific IC50 values
+- describe antibodies with specific heavy and light chain sequences
+- provide nucleic acid molecules encoding antibodies
+- describe methods of producing antibodies
+- provide antibodies binding CD20
+- specify LCDR2 amino acid sequences
+- specify LCDR3 amino acid sequences
+- specify HCDR3/LCDR3 pair
+- specify HCDR1 amino acid sequence
+- specify HCDR2 amino acid sequence
+- specify HCDR3 amino acid sequence
+- specify LCDR1 amino acid sequence
+- specify LCDR2 amino acid sequence
+- specify LCDR3 amino acid sequence
+- provide nucleic acid molecules encoding HCVR
+- provide nucleic acid molecules encoding LCVR
+- provide nucleic acid molecules encoding HCDR1
+- provide nucleic acid molecules encoding HCDR2
+- provide nucleic acid molecules encoding HCDR3
+- provide nucleic acid molecules encoding LCDR1
+- provide nucleic acid molecules encoding LCDR2
+- provide nucleic acid molecules encoding LCDR3
+- provide nucleic acid molecules encoding HCVR and LCVR
+- provide recombinant expression vectors
+- provide host cells and methods of producing antibodies
+- provide anti-CD20 antibodies with modified glycosylation pattern
+- introduce immune cell target antigens
+- provide binding molecules targeting immune cell antigens
+- specify GITR antigen
+- provide anti-GITR antibodies
+- provide exemplary anti-GITR antibodies
+- provide antibodies
+- define HCVR/LCVR pair
+- specify HCDR1 sequence
+- specify HCDR2 sequence
+- specify HCDR3 sequence
+- specify LCDR1 sequence
+- specify LCDR2 sequence
+- specify LCDR3 sequence
+- define HCDR3/LCDR3 pair
+- specify HCDR1-HCDR2-HCDR3 sequence
+- specify LCDR1-LCDR2-LCDR3 sequence
+- provide nucleic acid molecules encoding HCVR
+- provide nucleic acid molecules encoding LCVR
+- provide nucleic acid molecules encoding HCDR1
+- provide nucleic acid molecules encoding HCDR2
+- provide nucleic acid molecules encoding HCDR3
+- provide nucleic acid molecules encoding LCDR1
+- provide nucleic acid molecules encoding LCDR2
+- provide nucleic acid molecules encoding LCDR3
+- provide nucleic acid molecules encoding HCVR and LCVR
+- provide recombinant expression vectors
+- provide host cells
+- provide methods of producing antibodies
+- provide anti-GITR antibodies with modified glycosylation
+- provide binding molecules for antigen receptor-expressing cells
+- specify target antigen on B-cell or T-cell
+- provide antigen binding domain
+
+### IV. Bispecific Antigen-Binding Molecules
+
+- introduce bispecific antigen-binding molecules
+- describe two separate antigen-binding domains (D1 and D2)
+- specify D1 binds to target antigen
+- specify D2 binds to complement component, e.g., C1q
+- describe target antigen on cell or organism surface
+- describe target antigen as soluble antigen
+- specify target antigen as marker of disease state
+- describe D1 binding to bacterial target antigen
+- specify bacterial target antigen from Staphylococcus species
+- specify bacterial target antigen from species other than Staphylococcus
+- describe D1 binding to Gram-positive bacterial target antigen
+- describe D1 binding to Gram-negative bacterial target antigen
+- specify Pseudomonas species target antigen
+- describe D1 binding to viral target antigen
+- specify Influenza virus target antigen
+- describe D1 binding to eukaryotic cell or organism target antigen
+- specify target antigen on immune cell
+- describe D1 binding to B-cell receptor
+- describe D1 binding to T-cell receptor
+- specify glucocorticoid induced tumor necrosis factor receptor target antigen
+- specify cancer-cell surface target antigen
+- describe D2 binding to complement component
+- specify C1q as complement component
+- describe Classical Pathway of complement activation
+- describe Alternative Pathway of complement activation
+- describe Mannose Binding Lectin pathway of complement activation
+- specify KD of antigen-binding domain
+- describe antigen-binding domain binding to IsdB
+- describe antigen-binding domain binding to Influenza HA
+- describe antigen-binding domain binding to Ps1
+- describe antigen-binding domain binding to GITR
+- describe antigen-binding domain binding to CD20
+- describe antigen-binding domain binding to C1q
+- specify EC50 of bispecific antigen binding molecule
+- describe bispecific antigen binding molecule promoting human C1q deposition
+- specify bispecific antigen binding molecule binding to Staphylococcus species target antigen
+- specify bispecific antigen binding molecule binding to Pseudomonas species target antigen
+- specify bispecific antigen binding molecule binding to Influenza virus target antigen
+- specify bispecific antigen binding molecule binding to glucocorticoid induced tumor necrosis factor receptor target antigen
+- specify bispecific antigen binding molecule binding to cancer-cell surface target antigen
+- describe bispecific antigen binding molecule comprising first antigen-binding domain and second antigen-binding domain
+- specify second antigen-binding domain binding to human C1q
+- describe HCDR1, HCDR2, HCDR3, LCDR1, LCDR2, and LCDR3 sequences
+- describe HCVR and LCVR sequences
+- describe bispecific antigen binding molecule comprising first antigen-binding domain and second antigen-binding domain with specific sequences
+- define bispecific antigen-binding molecules
+- describe first antigen-binding domain
+- describe second antigen-binding domain
+- describe multimerizing domains
+- describe Fc fragment
+- describe cysteine residue
+- describe leucine zipper
+- describe helix-loop motif
+- describe coiled-coil motif
+- describe knob-into-holes
+- describe charge pairing
+- describe hinge region modifications
+- describe EU numbering
+- describe human IgG1 isotype
+- describe human IgG4 isotype
+- describe hybrid isotypes
+- describe bispecific formats
+- describe scFv-based formats
+- describe diabody formats
+- describe VH or VL domain antibodies
+- describe VHH
+- describe IgG-scFv fusions
+- describe Tandem Fabs
+- describe trivalent or tetravalent formats
+- describe dual variable domain (DVD)-Ig
+- describe Quadroma
+- describe common light chain
+- describe CrossMab
+- describe CrossFab
+- describe (SEED) body
+- describe leucine zipper
+- describe Duobody
+- describe IgG1/IgG2
+- describe dual acting Fab (DAF)-IgG
+- describe VNAR based nanobody
+- describe Mab2 bispecific formats
+
+### Sequence Variants
+
+- describe sequence variants of antibodies and bispecific antigen-binding molecules
+- provide examples of conservative substitutions and deletions
+
+### Bioequivalents
+
+- define bioequivalents of antigen-binding molecules
+- describe bioequivalence in terms of pharmaceutical equivalents or alternatives
+- provide examples of bioequivalence criteria
+- describe in vivo and in vitro methods for demonstrating bioequivalence
+- provide examples of bioequivalence measures
+- describe construction of bioequivalent variants
+- provide examples of modifications to prevent incorrect disulfide bridges
+
+### V. Therapeutic Formulation and Administration
+
+- describe pharmaceutical compositions comprising antigen-binding molecules
+- provide examples of formulations and carriers
+- describe administration routes and methods
+- provide examples of delivery systems
+- describe injectable preparations
+- provide examples of dosage forms
+- describe unit dose formulations
+- provide examples of dosage ranges
+- describe controlled release systems
+- provide examples of pumps and polymeric materials
+- describe injectable preparations for intravenous, subcutaneous, intracutaneous, and intramuscular injections
+- provide examples of solubilizing agents and surfactants
+- describe filling of ampoules
+
+### VI. Therapeutic Uses of the Antigen-Binding Molecules
+
+- describe methods of using bispecific antigen-binding molecules
+- provide examples of cell types targeted for activation or killing
+- describe methods of reducing or depleting cell populations
+- provide examples of target antigens and diseases
+- describe methods of inhibiting bacterial growth
+- provide examples of bacterial species targeted
+- describe methods of treating diseases associated with bacterial infections
+- provide examples of diseases and disorders targeted
+- describe methods of treating diseases associated with viral infections
+- provide examples of viral species targeted
+- describe methods of killing or inhibiting growth of diseased cells
+- provide examples of cancer cells targeted
+- describe methods of treating diseases associated with immune cells
+- provide examples of immune cells targeted
+- describe methods of treating diseases associated with regulatory T cells
+- provide examples of combination therapies
+- describe administration of bispecific antigen-binding molecules with additional therapeutic agents
+- provide examples of additional therapeutic agents
+- describe methods of treating diseases associated with cancer
+- provide examples of cancer targets
+- describe methods of treating diseases associated with glucocorticoid induced tumor necrosis factor receptor
+- provide examples of additional therapeutic agents for combination therapy
+- describe methods of treating diseases associated with immune cells and cancer
+- provide examples of additional therapeutic agents for combination therapy
+
+## EXAMPLES
+
+- provide examples of methods and compositions
+
+### Example 1. Preparation of Anti-C1q Antibodies
+
+- immunize VELOCIMMUNE mouse with human C1q
+- isolate anti-C1q antibodies from mouse
+- obtain nucleic acid and amino acid sequences
+- describe exemplary anti-C1q antibodies
+- provide sequence identifiers in tables
+
+### Example 2. Preparation of Anti-IsdB Antibodies
+
+- immunize VELOCIMMUNE mouse with IsdB antigen
+- isolate anti-IsdB antibodies from mouse
+- obtain nucleic acid and amino acid sequences
+
+### Example 3. Preparation of Anti-CD20 Antibodies
+
+- immunize VELOCIMMUNE mouse with CD20 antigen
+- isolate anti-CD20 antibodies from mouse
+- obtain nucleic acid and amino acid sequences
+
+### Example 4. Preparation of Anti-Influenza HA Antibodies
+
+- immunize VELOCIMMUNE mouse with Influenza HA antigen
+- isolate anti-Influenza HA antibodies from mouse
+- obtain nucleic acid and amino acid sequences
+
+### Example 5. Preparation of Anti-GITR Antibodies
+
+- immunize VELOCIMMUNE mouse with GITR antigen
+- isolate anti-GITR antibodies from mouse
+- obtain nucleic acid and amino acid sequences
+
+### Example 6. Preparation of Anti-Ps1 Antibodies
+
+- produce recombinant C1q bispecific REGN 5409
+- obtain nucleic acid and amino acid sequences
+
+### Example 7: Preparation of Anti-Protein A Antibodies
+
+- immunize VELOCIMMUNE mouse with protein A antigen
+- obtain nucleic acid and amino acid sequences
+
+### Example 8: Preparation of Anti-IsdA Antibodies
+
+- immunize VELOCIMMUNE mouse with IsdA antigen
+- obtain nucleic acid and amino acid sequences
+
+### Example 9. Preparation of Anti-Poly-N-Acetylglucosamine (PNAG)
+
+- produce recombinant C1q bispecific antibody REGN5536
+- construct C1q binding scFv-Fc*
+- describe purification of scFv containing bispecific molecules
+- show amino acid sequence identifiers of anti-PNAG antibody
+- describe heavy chain variable region (HCVR)
+- describe heavy chain complementarity determining region 1 (HCDR1)
+- describe heavy chain complementarity determining region 2 (HCDR2)
+- describe heavy chain complementarity determining region 3 (HCDR3)
+- describe light chain variable region (LCVR)
+- describe light chain complementarity determining region 1 (LCDR1)
+- describe light chain complementarity determining region 2 (LCDR2)
+- describe light chain complementarity determining region 3 (LCDR3)
+- describe heavy chain (HC)
+- describe light chain (LC)
+- show sequence identification numbers in Table 16
+- produce recombinant C1q bispecific antibody REGN5738
+- construct C1q binding scFv-Fc*
+- describe purification of scFv containing bispecific molecules
+- show amino acid sequence identifiers of anti-C1fA antibody
+- describe heavy chain variable region (HCVR)
+- describe heavy chain complementarity determining region 1 (HCDR1)
+- describe heavy chain complementarity determining region 2 (HCDR2)
+- describe heavy chain complementarity determining region 3 (HCDR3)
+- describe light chain variable region (LCVR)
+- describe light chain complementarity determining region 1 (LCDR1)
+- describe light chain complementarity determining region 2 (LCDR2)
+- describe light chain complementarity determining region 3 (LCDR3)
+- show sequence identification numbers in Table 17
+- prepare S. aureus Newman
+- assess bactericidal activity
+- generate standard curves
+- determine copy number
+- develop strategy
+- design bsAb
+- immunize mice
+- select bsAbs
+- characterize binding properties
+- measure affinity
+- increase recruitment
+- measure C1q deposition
+- bind to S. aureus
+- show functional consequence
+- assess role of antigen density
+- pair C1q-targeting arm
+- determine binding affinity
+- increase S. aureus killing
+- quantify C1q concentration
+- denature and digest protein
+- separate peptide mixture
+- quantify total C1q
+- introduce disseminated S. aureus infection model
+- describe infection procedure
+- describe treatment with antibiotics
+- describe treatment with anti-IsdB x anti-C1q bsAb
+- report weight loss and weight gain results
+- report bacterial burden results
+- compare results with standard of care antibiotics
+- discuss significance of results
+- introduce bispecific antibody platform
+- discuss complement system and MAC-mediated lysis
+- discuss Gram-positive bacteria susceptibility
+- introduce Example 15
+- describe binding kinetics experiment
+- describe materials and methods
+- report binding kinetics results
+- calculate KD values and dissociative half-lives
+- report KD values at 25°C
+- report KD values at 37°C
+- report binding results for anti-IsdB x anti-C1q antibodies
+- report binding results for anti-IsdB x anti-C1q antibodies at 37°C
+- conclude binding results
+- introduce Example 9
+- describe binding of anti-GITR x anti-C1q antibodies
+- describe binding of anti-HA x anti-C1q antibody
+- describe binding of isotype control antibody
+- introduce Example 16
+- describe equilibrium dissociation constants
+- describe Biacore binding studies
+- describe calculation of KD values
+- introduce Results and Conclusions
+- describe binding of anti-C1q bispecific antibodies
+- describe binding of IsdB arm
+- describe binding of HA arm
+- describe binding of hGITR arm
+- introduce Example 17
+- describe flow cytometric analysis
+- describe determination of membrane complement inhibitor levels
+- introduce Example 18
+- describe binding of anti-Ps1 x anti-C1q bispecific antibodies
+- describe experimental procedure
+- describe ELISA-based binding assay
+- describe C1q deposition assay
+- describe bactericidal activity assay
+- present results and conclusion
+- compare binding of bivalent anti-Ps1 mAb and anti-Ps1 x anti-C1q bispecific antibody
+- show EC50 binding concentration for antibodies
+- demonstrate C1q deposition on P. aeruginosa PAO1 surface
+- assess P. aeruginosa survival in human whole blood
+- present results of P. aeruginosa survival assay
+- introduce influenza infection and HA protein
+- discuss role of complement in influenza infection
+- describe bispecific antibodies as emerging strategy
+- outline experimental procedure for ELISA and CDC assay
+- describe binding of broadly-neutralizing anti-HA x anti-C1q bispecific antibody
+- present results of binding assay
+- describe CDC assay for influenza-infected cells
+- present results of CDC assay
+- compare EC50s and maximum binding of antibodies
+- show specific lysis of H1N1-infected cells
+- conclude on ability of bispecific antibodies to induce complement-dependent lysis
+- introduce Example 9
+- prepare anti-PNAG
+- introduce Example 20
+- describe experimental procedure
+- detail binding of anti-CD20 x anti-C1q bispecific antibody
+- describe complement deposition
+- detail CDC bioassay
+- summarize results
+- analyze binding results
+- analyze C1q deposition results
+- analyze CDC results
+- introduce Example 21
+- describe experimental procedure
+- detail binding of anti-GITR x anti-C1q bispecific antibodies
+- describe CDC bioassay
+- summarize results
+- analyze binding results
+- analyze CDC results
+- introduce summary
+- summarize C1q-bispecific platform approach
+- discuss advantages
+- introduce Example 22
+- describe experimental procedure
+- detail effect of Fc region on C1q levels
+- summarize results
+- analyze results
+- conclude on reduced C1q depletion
+- discuss implications
+- introduce conclusion
+- summarize disclosure
+- discuss modifications
+- discuss scope
+- introduce appended claims
+- incorporate references
+- discuss patent applications
+- discuss publications
+- discuss patents
+- conclude disclosure
+

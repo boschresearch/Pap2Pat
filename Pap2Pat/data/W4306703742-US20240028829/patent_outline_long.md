@@ -1,0 +1,175 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to joint speech and text streaming model
+
+## BACKGROUND
+
+- introduce ASR
+- limitations of ASR models
+
+## SUMMARY
+
+- provide joint speech and text streaming model
+- receive unspoken textual utterances
+- tokenize unspoken textual utterances
+- generate textual feature representation
+- receive input to first-pass decoder
+- generate probability distribution over text units
+- train encoder
+- optional: receive input to non-causal audio-text encoder
+- optional: generate second textual feature representation
+- optional: receive input to second-pass decoder
+- optional: generate second probability distribution over text units
+- optional: train encoder further
+- optional: include same decoder
+- optional: include unidirectional LSTM layers
+- optional: include conformer layers
+- optional: include transformer layers
+- optional: receive transcribed speech utterances
+- optional: generate audio feature representation
+- optional: receive input to first-pass decoder
+- optional: generate probability distribution over speech recognition hypotheses
+- optional: train encoder further
+- optional: include causal speech encoder
+- optional: include non-causal audio-text encoder
+- optional: train using Hybrid Autoregressive Transducer Factorization
+- optional: generate second audio feature representation
+- optional: receive input to second-pass decoder
+- optional: generate second probability distribution over speech recognition hypotheses
+- optional: train encoder using minimum word error loss function
+
+## DETAILED DESCRIPTION
+
+- introduce automated speech recognition
+- describe Seq2Seq models
+- discuss challenges in developing deep learning-based ASR models
+- explain overfitting and generalization issues
+- describe the importance of large training datasets
+- highlight domain mismatch issues
+- introduce unpaired text data
+- discuss combining speech and text modalities
+- describe multi-task training approach
+- discuss limitations of multi-task training
+- introduce TTS systems
+- describe modality conversion
+- discuss limitations of synthesized speech
+- highlight the gap between synthesized and human speech
+- introduce joint speech and text streaming model
+- describe training process
+- explain tokenization
+- generate higher-order textual feature representation
+- generate probability distribution over possible text units
+- train encoder using first-pass decoder
+- describe FIG. 1
+- introduce speech environment
+- describe user device
+- explain audio system
+- introduce ASR system
+- describe ASR model
+- explain audio subsystem
+- describe speech recognition process
+- introduce user interface generator
+- describe displaying transcription
+- introduce digital assistant application
+- describe user interaction
+- introduce FIG. 2
+- describe RNN-T model architecture
+- explain encoder network
+- describe prediction network
+- explain joint network
+- describe RNN-T model architecture
+- detail encoder network structure
+- explain prediction network structure
+- describe joint network structure
+- illustrate Softmax layer composition
+- introduce training process for ASR model
+- describe unspoken textual utterances
+- explain transcribed non-synthetic speech utterances
+- detail semi-supervised loss part
+- describe supervised loss part
+- explain joint training of encoder
+- introduce alignment model
+- describe alignment model configuration
+- detail embedding extractor function
+- explain duration predictor function
+- describe upsampler function
+- detail alignment output generation
+- explain parameter-free duration model
+- describe fixed-repetition model
+- detail random repetition model
+- explain sub-word distribution model
+- describe alignment sub-word distribution model
+- detail augmentation approach
+- explain up-sampling of unspoken textual utterances
+- describe masking of upsampled distribution
+- explain advantages of parameter-free duration models
+- describe limitations of TTS systems
+- explain benefits of alignment model
+- detail training process without TTS system
+- summarize alignment model functionality
+- define semi-supervised loss part
+- inject lexical information into encoder
+- configure text encoder
+- generate higher order textual feature representations
+- employ first-pass decoder
+- determine unpaired causal loss term
+- configure non-causal audio-text encoder
+- generate second higher order textual feature representations
+- employ second-pass decoder
+- determine unpaired non-causal loss term
+- train encoder based on unpaired loss terms
+- define supervised loss part
+- inject lexical information into encoder
+- configure causal speech encoder
+- generate higher order audio feature representations
+- employ first-pass decoder
+- determine paired causal loss term
+- configure non-causal audio-text encoder
+- generate second higher order audio feature representations
+- employ second-pass decoder
+- determine paired non-causal loss term
+- train encoder based on paired loss terms
+- jointly train encoder on unpaired and paired losses
+- define overall training loss
+- train encoder using hybrid autoregressive transducer factorization
+- train encoder using minimum word error rate loss
+- derive MWER loss
+- incorporate unspoken textual utterances into MWER loss
+- describe advantages of joint training approach
+- describe compatibility of encoder with text and speech modalities
+- describe training in both streaming and non-streaming fashions
+- describe use of shared latent space representations
+- describe training process
+- describe updating parameters of ASR model
+- describe training encoder jointly based on unpaired and paired losses
+- describe determining unpaired causal loss term
+- describe determining paired causal loss term
+- describe determining unpaired and paired non-causal loss terms
+- define equation 5
+- explain components of equation 5
+- describe training process 300
+- outline alternative uses of training process 300
+- introduce method 500
+- describe operation 502
+- describe operation 504
+- describe operation 506
+- describe operation 508
+- describe operation 510
+- describe operation 512
+- introduce computing device 600
+- describe components of computing device 600
+- describe processor 610
+- describe memory 620
+- describe storage device 630
+- describe high-speed interface/controller 640
+- describe low-speed interface/controller 660
+- describe display 680
+- describe alternative implementations of computing device 600
+- describe computer program product
+- describe machine-readable medium
+- describe programmable processor
+- describe special purpose logic circuitry
+- outline scope of disclosure
+

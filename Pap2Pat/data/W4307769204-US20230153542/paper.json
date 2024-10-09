@@ -1,0 +1,193 @@
+{
+    "id": "https://semopenalex.org/work/W4307769204",
+    "authors": [
+        "Yingbo Zhou",
+        "Kazuma Hashimoto",
+        "Tong Niu",
+        "Caiming Xiong"
+    ],
+    "title": "OneAligner: Zero-shot Cross-lingual Transfer with One Rich-Resource  Language Pair for Low-Resource Sentence Retrieval",
+    "date": "2022-05-17",
+    "abstract": "Aligning parallel sentences in multilingual corpora is essential to curating data for downstream applications such as Machine Translation. In this work, we present OneAligner, an alignment model specially designed for sentence retrieval tasks. This model is able to train on only one language pair and transfers, in a cross-lingual fashion, to low-resource language pairs with negligible degradation in performance. When trained with all language pairs of a large-scale parallel multilingual corpus (OPUS-100), this model achieves the state-of-the-art result on the Tateoba dataset, outperforming an equally-sized previous model by 8.0 points in accuracy while using less than 0.6% of their parallel data. When finetuned on a single rich-resource language pair, be it English-centered or not, our model is able to match the performance of the ones finetuned on all language pairs under the same data budget with less than 2.0 points decrease in accuracy. Furthermore, with the same setup, scaling up the number of rich-resource language pairs monotonically improves the performance, reaching a minimum of 0.4 points discrepancy in accuracy, making it less mandatory to collect any low-resource parallel data. Finally, we conclude through empirical results and analyses that the performance of the sentence alignment task depends mostly on the monolingual and parallel data size, up to a certain size threshold, rather than on what language pairs are used for training or evaluation.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Cross-lingual sentence retrieval aims at aligning parallel sentence pairs that are translations of each other from unlabeled multilingual documents. Such mined data can be used in multiple downstream applications such as Machine Translation and cross-lingual Word Sense Disambiguation (Fan et al., 2020;Tran et al., 2020;Schwenk et al., 2021a,b). Even under a half-automated setting with human-in-the-loop, a faithful aligner can help narrow down the candidate pool so that humans do not need to deal with an enormous search space such as cross-lingual web-document pairs (El-Kishky et al., 2020) or the entire internet. A retrieval model has also been used to filter existing parallel corpora to improve their quality (Schwenk, 2018) or to perform Quality Estimation (Fomicheva et al., 2020) where the reference translations are not available.",
+                "For sentence retrieval tasks, a majority of recent work is either completely unsupervised (Hu et al., 2020;Tran et al., 2020;Lewis et al., 2020) or leverages all parallel data available (Artetxe and Schwenk, 2019;Ouyang et al., 2021), sometimes to the extent of 879 language pairs (Luo et al., 2021). The unsupervised approach has the benefit of not collecting any parallel data; yet it usually achieves relatively low accuracies on standard benchmark datasets such as Tatoeba (Artetxe and Schwenk, 2019), which evaluates on 36 language pairs including multiple low-resource ones. The supervised approach, on the other hand, assumes data access to a plethora of low-resource language pairs, which by definition is difficult to acquire and to ensure their quality. This all-or-nothing choice between the unsupervised and supervised approaches leaves a significant gap on whether zero-shot crosslingual transfer works for such tasks. Our work aims to shed light on a recipe of how to distribute the efforts for cross-lingual parallel data collection: (1) How much monolingual data is enough for each language? (2) How many finetuning language pairs are enough? (3) Is it necessary to collect low-resource language pairs? (4) To what extent does the amount of parallel data matter? (5) Should these language pairs be centered around English?",
+                "To have a strong enough model to perform analyses that address the above questions, we propose OneAligner, a classifier that is able to align crosslingual sentences by training on parallel examples of only one language pair. OneAligner is built on top of XLM-RoBERTa (XLM-R) (Conneau et al., 2020a) with its architecture tailored to the alignment task: the model leverages a supervised version of BERT-score (Zhang et al., 2020) to compute semantic similarity and builds a normalization layer into its architecture to counteract the popular sentence effect, where some sentences in the source language tend to have a high similarity score with any sentence in the target language. Though not our main contribution, these additions lead to the state-of-the-art accuracy 94.9 1 on the Tatoeba dataset when trained on all language pairs from OPUS-100 (Tiedemann, 2012), outperforming models that are trained with 180 times more parallel examples (Luo et al., 2021) by 8.0 points. When trained on any single rich-resource language pair, this model is able to match the performance of a model (within a 2.0 gap in accuracy) trained on all language pairs under the same data budget.",
+                "To further close the already-narrow gap between using one language pair and all pairs while adhering to the rich-resource-only constraint, we scale up the number of language pairs with the top-k rich-resource ones, reaching a 94.0 accuracy on Tatoeba, only 0.4 off as compared to training on all language pairs under the same data budget.",
+                "We also explore either training or evaluating on language pairs that are not centered around English. We find that whether to train on an Englishcentered language pair and whether the training pair overlaps with the evaluation pair do not influence model performance -the model will perform similarly as long as two conditions are met: (1) the amount of parallel data size crosses a certain threshold; and (2) the pretraining monolingual data that corresponds to the evaluation languages also surpasses a size threshold."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Model",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Base Model",
+                    "paragraphs": [
+                        "To align sentences in different languages, it is beneficial to start with a model that has already learned cross-lingual representations to some extent. Our OneAligner thus builds on top of XLM-R (Conneau et al., 2020a), a Transformer-based model (Vaswani et al., 2017) pre-trained on the monolingual CC-100 dataset (Wenzek et al., 2020) covering 100 languages. This model obtained state-of-the-art performance on cross-lingual classification, sequence 1 Throughout the paper we will omit the \"%\" for accuracy. Hence 94.9 means 94.9% in accuracy. labeling, and question answering."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Calculation of Semantic Similarity",
+                    "paragraphs": [
+                        "Cross-lingual BERT-score The de facto way of calculating semantic similarity adopts a Siamese architecture, which separately encodes the source and target sentences with the same encoder to obtain two outputs. These outputs go through a mean pooling layer along the sequence length dimension, and the similarity is obtained by computing the cosine distance between the two pooled vectors (Reimers and Gurevych, 2019). This approach is fast and agnostic to the order of source and target sentences but lacks cross-attention which is crucial for alignment tasks. On the other hand, encoding both sequences with a [sep] token in-between implies full cross-attention, which runs slow due to the extra computation. Such a method is only suitable for filtering existing parallel corpora for better data quality (Schwenk, 2018). Besides, due to positional encoding, this method is not agnostic to the order of the two sentences such that during inference, one needs to pay special attention to which sentence comes first.",
+                        "Our similarity calculation marries the strengths of both methods and builds on top of BERTscore (Zhang et al., 2020), an unsupervised automatic evaluation metric originally designed to compute the similarity between two sentences of the same language. We re-purpose this metric to compute cross-lingual semantic similarity.",
+                        "More specifically, let s = {s 1 , s 2 , ..., s M } and t = {t 1 , t 2 , ..., t N } be two sequences, each consisting of a list of tokens in the source and target language, respectively. BERT-score computes the pairwise token-level cosine distance between s and t as follows:",
+                        "We use F as the similarity. From the equations we can see that because BERT-score is only applied after the last encoding layer of the Transformer model, this metric serves as a shallow crossattention layer that is much faster than full crossattention. The resulting model also remains agnostic to the order of the input sentences.",
+                        "In-Batch Normalization In bitext alignment, we observe that some sentences in one language tend to have a high similarity score with any sentence in the other language. This phenomenon, which we name the \"popular sentence effect\",2 causes the ranking of candidates in the target language to be inaccurate. To offset this bias, we subtract a scaled average of similarity scores between each sentence in one language and all sentences in the other. More specifically, let S = {S 1 , S 2 , ..., S M } and T = {T 1 , T 2 , ..., T N } be a batch of sequences in the source and target language, respectively. We compute the pairwise similarity between S i and T j as follows:",
+                        "where f stands for the function that computes semantic similarity (BERT-score in our case) and \u03b1 is a hyperparameter that determines the normalization strength. We tuned this parameter on the OPUS-100 development set and found that \u03b1 = 0.75 on average gives the best results.3 Note that this normalization step is built into the model architecture rather than serving only as a post hoc manipulation during inference. In practice, the number of sentences M and N could be quite large during inference, significantly slowing down the normalization step, not to mention that the evaluation data is not guaranteed be served in an offline fashion.",
+                        "Hence we instead perform in-batch normalization for each similarity score so that M and N only depend on the batch size during inference. In our early experiments (not presented in the paper), we found that this in-batch normalization incurs no performance loss as long as we maintain a reasonable evaluation batch size."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Justification of Model Design",
+                    "paragraphs": [
+                        "We perform an ablation study on how similarity is calculated and on whether to include a normalization step. We conduct the comparison with three model variances (without finetuning on any parallel data), namely mBERT (Devlin et al., 2019), XLM-R-base, and XLM-R-large (Conneau et al., 2020a). Following Hu et al. (2020), who find that certain early layers of Transform perform better on cross-lingual tasks than the last layer,4 we use the 8th layer for mBERT and XLM-R-base, and 17th layer for XLM-R-large. 5 Table 1 shows that the combination of BERT-score and normalization step leads to consistently and significantly higher performance, indicating that these modifications build a beneficial inductive bias into the model."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Classification with In-Batch Negatives",
+                    "paragraphs": [
+                        "One challenge in training an aligner with only positive parallel data is that there are no carefullydesigned negative examples. To address this challenge, our aligner adopts a contrastive learning approach and trains on a classification task with inbatch negatives (Chen et al., 2020). The intuition behind this approach is that a pair of sentences that are translations of each other can be interpreted as two \"views\" of the same underlying semantics. More specifically, let S = {S 1 , S 2 , ..., S N } and T = {T 1 , T 2 , ..., T N } be a batch of sentences in the source and target language, respectively, where S i is aligned with T i for each i. We compute the pairwise BERT-score between S and T and apply the in-batch normalization (as introduced in Section 2.2) to obtain N 2 similarity scores, including N scores for the positive alignments and N 2 -N for the negative ones. During training, we treat these scores as logits and pair each positive logit with all negative logits. We use these logits to compute the cross-entropy loss. Note that standard contrastive learning employs one-dimensional inbatch negatives where each positive logit is paired with N -1 negative logits (Chen et al., 2020) (i.e., only the ones that are relevant to the positive example). However, we found that by adopting global in-batch negatives, which include all N 2 -N negative logits for each positive logit, it is much easier for the model to establish a global score threshold to align cross-lingual sentences. This is especially important for alignment tasks where a sentence in one language is not guaranteed to have a translation in the other language (e.g., the BUCC 2018 dataset to be introduced in Section 3.1).",
+                        "3 Experimental Setup  (Tiedemann, 2020), 7 which we refer to as the New-Tatoeba (since it is new). This is a challenge set that contains 29G translation units in 3, 708 bitexts covering 557 languages.",
+                        "The package includes a release of 631 test sets that cover 134 languages. Note that for training purposes, we only keep language pairs where both the source and the target language are present in CC-100 (Wenzek et al., 2020),8 the corpus used to pretrain XLM-R. This is because the tokenization of XLM-R is accustomed to these languages by design.",
+                        "Following OPUS-100, all experiments are performed under a fixed 1M examples budget (unless otherwise specified), regardless of how many language pairs are used. This constant data size cap makes it easier to compare among different settings. To remove noisy and uninformative data, we also aggressively remove any examples that contain less than 5 tokens in either the source or the target language. Note that this step is done after we sam-ple the 1M examples, since when the number of language pairs piles up, it becomes too expensive to tokenize the entire corpus to count how many tokens there are in each sentence. 9",
+                        "Evaluation Data We evaluate on three datasets. The first one is the Tatoeba dataset from the XTREME benchmark (Hu et al., 2020), which we refer to as Tatoeba-36 since it contains 36 language pairs, including multiple low-resource ones such as sv-en and jv-en. We keep this historical version to make it easier to compare with previous work.",
+                        "The second dataset is the combination of development and test sets in New-Tatoeba. We only keep language pairs that have \u2265 1K examples in the development and test sets combined, because the smaller the evaluation set is, the easier it is to rank among candidates. When we have a collection of evaluation data that do not share roughly the same difficulty, averaging their accuracies makes less sense. Following Tatoeba-36, where most language pairs have 1K test examples, we randomly sample 1K for each language pair from New-Tatoeba. 10  The resulting evaluation set covers 223 language pairs, including 49 pairs that are English-centered, 174 pairs that are not, and 58 pairs considered lowresource by the Tatoeba Challenge. To our best knowledge, we are the first to evaluate sentence alignment models on this dataset.",
+                        "The third dataset is BUCC 2018 (Zweigenbaum et al., 2018) in the XTREME benchmark (Hu et al., 2020). This is a cross-lingual bitext mining task. We include this task because the two Tatoeba datasets are both ranking tasks, while BUCC requires a universal similarity score to serve as a decision boundary to either accept or reject an alignment of sentences. This is a more realistic scenario for web mining because a sentence in the source language does not necessarily have a translation 9 Resorting to counting the number of spaces will not work because quite a few languages do not have spaces between words. 10 We will release the test example indices with respect to the original dataset along with the code.  in the target language. Hence this dataset contains way more distraction sentences than the ones that actually align with some other sentences in the other language. That said, the drawback of BUCC is that it only involves 4 language pairs, all of which are highly rich-resource. Since our work focuses more on low-resource languages, this dataset only serves as a sanity check for our models. Note that since both training corpora were created without Tatoeba-36 and BUCC evaluation data in mind, we remove any examples from the training set where either the source or the target is in any of the test sets. This process gets rid of less than 2.5k examples from each training set."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Hyperparameters",
+                    "paragraphs": [
+                        "We perform all experiments with a single A100 GPU. The number of training epochs is 3, the training batch size is 64, and the evaluation batch size is 256. These are the largest number of examples we can fit in a batch with A100. Not surprisingly, having a smaller training batch size will lead to lower performance not only because previous work has found that large batch size benefit training due to its more stable gradients (Devlin et al., 2019), but also that a larger batch size enables a more accurate estimation of the in-batch normalization term and allows more in-batch negatives to pair with each positive example, making the model converge faster with additional contrastive learning signals. We set the softmax temperature to 5.0 and the learning rate to 3e-6 for all experiments. 11The maximum sequence length for both source and target languages is set to 100."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Dot Product vs. Cosine Similarity",
+                    "paragraphs": [
+                        "When computing the semantic distance between sentences, Sentence-BERT (Reimers and Gurevych, 2019) applies a Siamese encoding scheme to each sentence followed by mean pooling and computation of cosine distance between the two pooled vectors. However, during training they do not normalize the sentence vectors before taking the dot product, while during evaluation they do. We also observed that this different handling of training and evaluation phase led to better performance. Hence when computing the BERT-score during training, we also do not pre-normalize the vectors before taking the dot product."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Baseline Models",
+                    "paragraphs": [
+                        "We compare with VECO (Luo et al., 2021) and ERNIE-M (Ouyang et al., 2021), the strongest models at the time of submission on the XTREME benchmark leaderboard (Hu et al., 2020) sentence retrieval tasks.12 Like OneAligner, ERNIE-M is built on top of XLM-R and is trained on 96 languages. The monolingual corpus is extracted from CC-100 (Wenzek et al., 2020), while the bilingual corpora include MultiUN (Ziemski et al., 2016), IIT Bombay (Kunchukuttan et al., 2018), OPUS (Tiedemann, 2012), and WikiMatrix (Schwenk et al., 2021a). VECO shares the same model size as ours 13 and is trained on 50 languages (possibly to avoid capacity dilution). The monolingual data is extracted from CC-100, while the bilingual data is collected from the OPUS website.14 There are 6.4G parallel examples covering 879 language pairs. We summarize the basic statistics of each model in Table 2."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Results and Analysis",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "All Language Pair Performance",
+                    "paragraphs": [
+                        "To justify our model design and obtain a performance upper bound with which single-pair models can compare, we first train OneAligner on the entire OPUS-100 dataset, either with or without the 1M budget. Table 3 shows that both models achieve state-of-the-art results on the Tatoeba-36 dataset. Because there is only a 0.5 difference in accuracy between the two settings, it is reasonable to apply  the fixed budget to save computational cost. When we put Table 2 and 3 side-by-side, we can also see that OneAligner is more data-efficient as compared to the other two models."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Single Language Pair Performance",
+                    "paragraphs": [
+                        "English-centered Language Pairs Table 4 shows Tatoeba-36 performance for models trained on the OPUS-100 dataset for each of the top-16 rich-resource language pairs in the intersection of OPUS-100 and CC-100 languages. 15 We can see that the performance is consistent across language pairs, which suggests that one can finetune OneAligner with almost any rich-resource language pair at hand and arrive at a similar performance. Figure 1 presents a scatter plot of Table 4 against the data availability of each language pair. We observe that after reaching a certain data size threshold (somewhere between 10k and 20k), all language pairs perform similarly. This is partially expected because our model design does not introduce any new parameters to XLM-R, obviating the need to train any randomly initialized layers."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Language Pairs Not Centered around English",
+            "paragraphs": [
+                "English is with no doubt the most widely adopted language. However, in a real-world scenario, we cannot always assume that the parallel data contains English. Similar to Table 4, we present in Table 5 the accuracies of OneAligner trained on each 15 Results of all language pairs are presented in Appendix A. Table 5: Tatoeba-36 performance for models trained on the New-Tatoeba top-16 rich-resource language pairs (in descending order) that are not centered around English.",
+                "of the Top-16 rich-resource non-English-centered pairs from the New-Tatoeba dataset. We can see that the performance is again consistent across language pairs, indicating that we can train on a non-English language pair and still obtain similar performance on an evaluation set centered around English. This raises a natural follow-up question: is the reverse true? In other words, does a model trained on English-centered data perform just as well on non-English evaluation data? Table 6 addresses this question and we make two observations from it. When comparing columnwise, OneAligner performs similarly regardless of whether it is trained on an English-centered lan-  guage pair or whether there is an overlap between finetuning and evaluation languages. When comparing each model evaluated on either Englishcentered or non-English-centered language pairs, we can see that both models perform better on English-centered language pairs. 16 We hypothesize that this is because English dominates the monolingual data during the pretraining of XLM-R. Before diving into an analysis that verifies this hypothesis, we need to \"expand our vocabulary\": rather than dividing in a bipolar fashion between \"English-centered\" and \"non-English-centered\", we describe the setting with a spectrum and explore X-centered, where X could be any language. We define the accuracy for language X as the average of accuracies of all language pairs that involve X. Figure 2 shows the scatter plot of Top-1-Eng New-Tatoeba performance against monolingual data size for each language in the CC-100 dataset. Similar to Figure 1, the New-Tatoeba performance is positively correlated with the monolingual data size up to a certain size threshold."
+            ],
+            "subsections": [
+                {
+                    "title": "Scaling up the Number of Language Pairs",
+                    "paragraphs": [
+                        "The single-pair Tatoeba results are already promising. However, what if we aim for even better perfor- 16 Interested readers can refer to Table 10 in the Appendix for a comprehensive list of accuracies for each language pair in the New-Tatoeba test set. Language Top1 Top2 Top4 Top8 Top16 Top32 All Avg. Acc. 92.4 92.5 92.9 93.2 93.4 94.0 94.4 Table 7: Tatoeba-36 performance when the model is trained on Top-k rich-resource, English-centered language pairs. \"All\" stands for all language pairs combined. All results are under a fixed 1M data budget.",
+                        "mance without violating the rich-resource-only assumption? We find that adding other rich-resource pairs can help. Unfortunately, OPUS-100 does not provide us with a ranking on the data availability of language pairs. 17 Hence we resort to the New-Tatoeba dataset and rank based on the availability of each English-centered pair. 18 In Table 7 we present performance of combined top-1 through top-32 rich-resource language pairs on Tatoeba-36. 19 We can see that the performance monotonically increases as we include more language pairs, until reaching an accuracy of 94.0 -only 0.4 point off of the best performance when training with all language pairs under the 1M data budget. Note that the least rich-resource language uk in the top-32 list is still in the \"highest\"-resource range as defined in the Tateoba Challenge 20 and contains around 34M training examples, so we are still far from violating the rich-resource restrictions. Hence at least given the sentence alignment task and the current models, the marginal cost of improving for that 0.4 point in accuracy does not seem to justify the effort of extensively collecting more parallel data for the low-resource language pairs. This observation motivates future work to develop new approaches that leverage low-resource data more effectively."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "BUCC Results",
+                    "paragraphs": [
+                        "As a sanity check, we report BUCC F1 scores of the two top-1 models as compared to previous work in Table 8. We can see that both models outperform VECO by 1.2 points. Recall that the two models are trained on en-es and fr-es, respectively. In other words, neither model has seen a single parallel example between en and each of the BUCC 17 The size of each language pair in OPUS-100 is capped at 1M, and the original paper did not include the data statistics before sampling. 18 The training data size for each language pair is listed in the table at https://github.com/Helsinki-NLP/ Tatoeba-Challenge/tree/master/data. 19 The top-32 languages are es, fr, de, pt, it, nl, ru, pl, cs, sv, sh, el, ro, da, zh, no, ar, ms, hu, bg, tr, fi, sl, vi, he, ja, et, lt, lv, fa, ko, uk, in  target languages {de, fr, ru, zh}, while VECO is trained extensively on each of the language pairs. This result is consistent with the observation that OneAligner is able to perform cross-lingual transfer with performance on par with in-language models regardless of whether the finetuning language pair is English-centered.",
+                        "5 Related work"
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Multilingual Representation Learning",
+                    "paragraphs": [
+                        "There have been extensive effort in learning massive cross-lingual representations. Such models are pretrained with a large amount of unlabeled data from multiple languages with the intention to benefit low-resource languages with the richresource languages through shared vocabulary, genetic relatedness (Nguyen and Chiang, 2017) or contact relatedness (Goyal et al., 2020). Some of the widely adopted models are mBERT (Devlin et al., 2019), XLM (Conneau and Lample, 2019), mBART (Liu et al., 2020), MARGE (Lewis et al., 2020), XLM-R (Conneau et al., 2020a), and mT5 (Xue et al., 2021). Other models also leverage cross-lingual signals (large-scale parallel data) with a translation language model objective, including LASER (Artetxe and Schwenk, 2019), VECO (Luo et al., 2021) and ERNIE-M (Ouyang et al., 2021)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Parallel Corpus Mining",
+                    "paragraphs": [
+                        "A major downstream application of a massively multilingual model is parallel corpus mining. There have been efforts to mine parallel sentences from the entire web (Ba\u00f1\u00f3n et al., 2020;Wenzek et al., 2020;Tran et al., 2020). Such approaches are inadvertently forced to handle an enormous search space. Consequently, some models adopt the mean pooling followed by the cosine distance approach and leverage approximation algorithms like FAISS (Johnson et al., 2019) to compute cosine distance faster. There have also been efforts such as WikiMatrix (Schwenk et al., 2021a) and CCAligned (El-Kishky et al., 2019) that divide the mining process into two steps. The first step is to align text on the document level, which significantly reduces the search space, while the second step is to deploy a sentence retrieval model as usual.",
+                        "Apart from aligning text at the document and sentence level, there has also been models that focus on a higher level of granularity and target word alignment (Dou and Neubig, 2021). Such work can be used for downstream tasks such as automatically building preliminary bilingual dictionaries."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Zero-Shot Cross-lingual Transfer",
+                    "paragraphs": [
+                        "The standard zero-shot cross-lingual transfer assumes no in-language data and consists of two steps: (1) finetune a multi-lingual pretrained model on task-specific data in the source language; and (2) evaluate it on the test data in the target language.",
+                        "Another alternative to the implicit transfer requires a Machine Translation system (Hu et al., 2020;Luo et al., 2021), which itself demands parallel data to train in the first place. There are two settings: (1) translate-train: machine translate the task-specific training data from the source to the target language and train on that noisy data; and",
+                        "(2) translate-test: train on task-specific data in the source language and evaluate on data translated from the target to the source language.",
+                        "Several benchmark datasets have been released to test cross-lingual transfer capability, including XGLUE (Liang et al., 2020), XTREME (Hu et al., 2020), and XTREME-R (Ruder et al., 2021). They include diverse tasks such as Natural Language Inference, Relation Extraction, Named Entity Recognition, Part of Speech Tagging, Question Answering, and Sentence Retrieval.",
+                        "There has been extensive work devoted to analyzing the mechanism behind cross-lingual transfer (K et al., 2020;Muller et al., 2021). For example, Pires et al. (2019) and Wu and Dredze (2020) show that the amount of shared vocabulary between the source and target language plays an important role in the transfer. However, some other works suggest the opposite. For instance, Conneau et al. (2020b) show that the transfer happens even if there is no shared vocabulary while the training and evaluation data can also come from distinct domains."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "We present OneAligner, an alignment model tailored to sentence retrieval tasks. We show that this model transfers well under a cross-lingual setting even when trained on a single language pair. Through experiments and analyses, our work helps uncover what factors influence sentence alignment performance and identifies monolingual data size, parallel data size, and the number of richresource language pairs as the top priorities to which one should distribute their data collection efforts. Though having covered a broad range of languages and settings, this work still leaves many unexplored territories: (1) How do we deal with languages not present in the pretraining phase given that the vocabulary is not constructed toward them?",
+                "(2) Why is the cross-lingual transfer successful in the first place? What has the model learned during finetuning? (3) Does OneAligner generalize to other retrieval tasks other than cross-lingual sentence alignment? We leave these as future work."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Acknowledgment",
+            "paragraphs": [
+                "We thank Nitish Shirish Keskar who provided constructive feedback for writing the paper. We thank all reviewers and the meta-reviewer for their helpful comments and suggestions."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Tatoeba-36 Results in Detail",
+            "paragraphs": [
+                "Table 9 shows Tatoeba-36 performance for models trained on the OPUS-100 dataset for each language pair in the intersection of OPUS-100 and CC-100 languages."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B New-Tatoeba Results in Detail",
+            "paragraphs": [
+                "Table 10 shows the detailed performance on each language pair in the New-Tatoeba dataset.",
+                "Language af am ar as az be bg bn br bs ca cs cy da de el eo es et eu fa Avg. Acc. 92.2 90.9 92.9 90.8 92. Table 9: Tatoeba-36 performance for models trained on the OPUS-100 dataset for each language pair (the intersection between OPUS-100 and CC-100 languages) centered around English."
+            ],
+            "subsections": []
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to influenza virus screening methods
+
+## BACKGROUND OF THE INVENTION
+
+- introduce influenza viruses
+- describe influenza virus structure
+- explain antigenic specificity
+- discuss genome and replication
+- describe viral proteins
+- highlight lack of knowledge on host cell functions
+
+## SUMMARY OF THE INVENTION
+
+- outline method for screening substances
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce influenza viral proteins and human host cell proteins interaction
+- describe host cell proteins as accessory proteins for replication of influenza virus
+- motivate use of influenza cellular interactors to drive discovery of new potential influenza replication modulators
+- define modulator of replication
+- describe high throughput assays to identify substances that interfere with specific interaction between viral and host cell protein
+- motivate use of interfering substances that inhibit viral replication for therapeutic treatment
+- motivate use of interfering substances that enhance viral replication for production of influenza virus vaccines
+- state that human and influenza genes and proteins are known per se by the skilled man in the art
+- describe various biological assays for screening substances that can modulate influenza virus replication
+- describe method for screening a plurality of substances capable of modulating replication of influenza virus
+- identify substance that modulates specific interaction of host cell protein with viral protein
+- identify substance that modulates specific interaction of first host cell protein with second host cell protein
+- identify substance that modulates expression of host cell protein
+- identify substance that modulates activity of host cell protein
+- describe biological assay for identifying substance that modulates specific interaction of host cell protein with viral protein
+- contact protein or peptide with test substance and detect complex formation
+- describe ability of test substance to modulate interaction between host cell protein and viral protein
+- generate physical values to illustrate ability of test substance to modulate interaction
+- compare physical values with standard physical values
+- select test substance that modulates binding between influenza virus protein and host cell protein
+- describe substances that modulate interaction between influenza virus protein and host cell protein
+- label protein or peptide with detectable molecule
+- describe detectable molecule
+- locate detectable molecule outside amino acid sequence of interest
+- fuse polypeptides with GST tag
+- use GST moiety as detectable molecule
+- fuse proteins with poly-histidine tag
+- detect poly-histidine tag with anti-poly-histidine antibody
+- fuse proteins with protein moiety consisting of DNA binding domain or activator domain of transcription factor
+- describe two-hybrid assay
+- provide host cell expressing first and second fusion polypeptides
+- bring host cell into contact with test substance
+- determine expression level of DNA reporter sequence
+- compare expression level of DNA reporter sequence with and without test substance
+- select test substance that modulates binding between influenza virus protein and host cell protein
+- describe immunoaffinity chromatography technique
+- attach influenza virus protein or host cell protein to column
+- bring test substance into contact with chromatographic substrate
+- wash and elute chromatography substrate
+- analyse elution liquid to determine binding impairment
+- label proteins with fluorescent molecule or substrate
+- determine alteration effect of test substance by fluorescence quantification
+- fuse proteins with auto-fluorescent polypeptides
+- label proteins with fluorescent molecules for FRET assay
+- describe HTRF assay
+- describe TRACE technology
+- outline steps of HTRF assay
+- describe alternative embodiment using ITC
+- perform ITC experiments
+- obtain enthalpy change from calorimetric signal
+- describe assay for identifying substance modulating interaction
+- contact proteins or peptides with test substance
+- detect complex formation
+- identify test substance modulating interaction
+- describe alternative embodiment using two-hybrid assay
+- describe assay for identifying substance modulating expression
+- contact test substance with cell transfected with reporter gene
+- assess level of expression of reporter gene
+- identify test substance modulating expression
+- describe host-expression vector systems
+- express genes in mammalian cell systems
+- express genes in microorganisms
+- express genes in yeast
+- express genes in insect cell systems
+- express genes in amphibian cells
+- express genes in plant cell systems
+- describe DNA delivery methods
+- describe native cell lines
+- assess level of expression of gene
+- identify test substance modulating expression
+- describe determination of expression level
+- contact sample with selective reagents
+- detect presence or measure amount of polypeptide or nucleic acids
+- describe methods for determining quantity of mRNA
+- describe DNA chip analysis
+- introduce solid supports for ELISA method
+- describe ELISA method steps
+- introduce assays for identifying substances that modulate host cell protein activity
+- describe steps for determining modulation of host cell protein activity
+- introduce test substances
+- describe sources of test substances
+- introduce methods for screening substances for inhibiting influenza virus replication
+- describe steps for screening substances for inhibiting influenza virus replication
+- define decrease in replication capacity
+- introduce methods for screening substances for increasing influenza virus replication
+- describe steps for screening substances for increasing influenza virus replication
+- define increase in replication capacity
+- introduce influenza virus strains used in screening methods
+- describe characteristics of influenza virus strains
+- introduce host cells for viral replication
+- describe characteristics of host cells
+- introduce cell culture conditions
+- describe cell culture medium
+- introduce bioreactors for commercial production
+- describe cell culture temperature
+- describe cell culture pH
+- describe cell culture pO2 value
+- introduce protease addition to culture medium
+- describe protease concentration
+- introduce methods for treatment or prevention of influenza virus infections
+- describe therapeutic treatments
+- describe prophylactic treatments
+- introduce subjects for treatment or prevention
+- describe characteristics of subjects
+- introduce effective amount of substances
+- describe dosage regimens
+- describe administration methods
+- introduce combination therapy
+- describe co-administration with antiviral agents or vaccines
+- describe co-administration with other therapies
+- introduce duration of treatment
+- describe therapeutic treatment duration
+- describe prophylactic treatment duration
+- introduce administration timing
+- describe administration timing for therapeutic treatment
+- describe administration timing for prophylactic treatment
+- introduce dosage forms
+- describe oral dosage forms
+- describe parenteral dosage forms
+- describe other dosage forms
+- define coadministration
+- describe coadministration methods
+- list neuraminidase inhibitors
+- list M2 inhibitors
+- list RNA polymerase inhibitors
+- list influenza-specific interfering oligonucleotides
+- list interferons
+- describe interferon-alpha
+- describe influenza vaccine
+- describe combination therapy
+- formulate pharmaceutical compositions
+- describe pharmaceutically acceptable carriers
+- list examples of carriers
+- describe pharmaceutical formulation techniques
+- describe pharmaceutically acceptable vehicles
+- list examples of vehicles
+- describe administration methods
+- describe oral administration
+- describe parenteral administration
+- describe topical administration
+- describe rectal administration
+- describe suppository formulation
+- describe topical application for lower intestinal tract
+- describe topical application for skin
+- describe ointment formulation
+- describe lotion or cream formulation
+- describe ophthalmic use
+- describe micronized suspensions
+- describe ointment formulation for ophthalmic use
+- describe pulmonary delivery
+- describe inhalation administration
+- describe pharmaceutical devices for aerosol delivery
+- define unit dosage form
+- describe methods for vaccine production
+- outline steps for producing vaccines
+- clarify medium from infected cultures
+- describe centrifugation and filtration methods
+- outline density gradient centrifugation
+- provide additional details for influenza virus preparation
+- describe inactivation or attenuation of replicated virus
+- outline inactivated influenza virus vaccines
+- describe whole-virus and subvirion vaccines
+- outline surface antigen vaccines
+- describe live, attenuated influenza virus vaccines
+- outline attenuation methods
+- describe reassortant virus vaccines
+- outline evaluation of donor viruses
+- describe site-directed mutagenesis
+- outline introduction of attenuating mutations
+- describe formulation of vaccine composition
+- outline auxiliary agents or excipients
+- describe preparations for parenteral administration
+- outline liquid dosage forms for oral administration
+- describe adjuvants and their use
+- outline heterogeneity in vaccine composition
+- describe administration of vaccine composition
+- outline effective amount of vaccine composition
+- provide additional information and examples
+
+### Example
+
+- construct influenza ORFeome
+- perform yeast two hybrid library screens
+- perform yeast two hybrid matrix
+- perform pairwise yeast two hybrid interaction analyses
+- report results
+

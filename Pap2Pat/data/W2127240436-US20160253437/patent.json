@@ -1,0 +1,745 @@
+{
+    "id": "US20160253437",
+    "authors": [
+        "Andr\u00e9 Platzer",
+        "Stefan Mitsch"
+    ],
+    "title": "Verified Runtime Validation of Verified Cyber-Physical System Models",
+    "date": "2014-10-10 00:00:00",
+    "abstract": "A method for ensuring that verification results about models apply to cyber-physical systems (CPS) implementations is presented. The invention provides correctness guarantees for CPS executions at runtime. Offline verification of CPS models are combined with runtime validation of system executions for compliance with the model. The invention ensures that the verification results obtained for the model apply to the actual system runs by monitoring the behavior of the world for compliance with the model, assuming the system dynamics deviation is bounded. If, at some point, the observed behavior no longer complies with the model, such that offline verification results no longer apply, provably safe fallback actions are initiated. The invention includes a systematic technique to synthesize provably correct monitors automatically from CPS proofs in differential dynamic logic.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "This invention pertains to the field of cyber-physical systems (CPS), and, in particular to models approximating the behavior of CPS and methods for monitoring the actual CPS that are based on the models."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field of cyber-physical systems"
+                    ],
+                    "num_characters": 204,
+                    "outline_medium": [
+                        "define field of cyber-physical systems"
+                    ],
+                    "outline_short": [
+                        "define field of cyber-physical systems"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Formal verification and validation play a crucial role in making cyber-physical systems (CPS) safe. Formal methods make strong guarantees about the system behavior if accurate models of the system can be obtained, including models of the controller and of the physical dynamics. In CPS, models are essential; but any model that can be built necessarily deviates from the real world. If the real system fits to the model, the behavior of the real system can be guaranteed to satisfy the correctness properties verified with respect to the model. If not, then this verification is impossible.",
+                        "Cyber-physical systems (\u201cCPS\u201d) span controllers and the relevant dynamics of the environment. Since safety is crucial for CPS, their models (e. g., hybrid system models) need to be verified formally. Formal verification guarantees that a model is safe with respect to a safety property. The remaining task is to validate whether the models are adequate, such that the verification results transfer to the system implementation.",
+                        "Actual system execution, however, provides many opportunities for surprising deviations from the model. Faults may cause the system to function improperly, sensors may deliver uncertain values and actuators may suffer from disturbance. The formal verification may have assumed simpler ideal-world dynamics for tractability reasons or made un-realistically strong assumptions about the behavior of other agents in the environment. Simpler models are often better for real-time decisions and optimizations, because they make predictions feasible to compute at the required rate. The same phenomenon of simplicity for predictability is often exploited for the models in formal verification and validation. As a consequence, the verification results obtained about models of a CPS only apply to the actual CPS at runtime to the extent that the system fits to the model.",
+                        "Validation, i.e., checking whether a CPS implementation fits to a model, is an interesting but difficult problem. CPS models are more difficult to analyze than ordinary (discrete) programs because of the physical plant, the environment, sensor inaccuracies, and actuator disturbance. In CPS, models are essential; but any model necessarily deviates from the real world. Still, good models can be correct within certain error margins."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate formal verification",
+                        "describe limitations of formal verification",
+                        "discuss importance of validation",
+                        "highlight challenges of validation"
+                    ],
+                    "num_characters": 2321,
+                    "outline_medium": [
+                        "motivate formal verification",
+                        "discuss limitations of models"
+                    ],
+                    "outline_short": [
+                        "motivate formal verification and validation"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "Herein we introduce a method (referred to herein as \u201cModelPlex\u201d) to synthesize monitors by theorem proving. The method uses sound proof rules to formally verify that a model is safe and to synthesize provably correct monitors that validate compliance of system executions with the model.",
+                        "This invention performs runtime model validation. That is, validating whether a model, shown for example, in FIG. 3 as reference number 100, which is assumed for verification purposes is adequate for a particular system execution to ensure that the verification results apply to the current execution. The invention checks system execution with respect to a monitor specification 104, and thus, belongs to the field of runtime verification. Herein, the term runtime validation is used to clearly convey the purpose of monitoring. While \u201cruntime verification\u201d monitors properties without offline verification, \u201cruntime validation\u201d monitors model adequacy to transfer offline verification results. The focus of the invention is on verifiably correct runtime validation to ensure that verified properties of models provably apply, which is important for safety and certification of CPS.",
+                        "If an observed system execution fits to the verified model 12, then this execution is safe according to the offline verification result about the model. If it does not fit, then the system is potentially unsafe because it no longer has an applicable safety proof, so a verified fail-safe action to avoid safety risks is initiated. Checking whether a system execution fits to a verified model 12 includes checking that the actions chosen by the (unverified) controller implementation fit to one of the choices and requirements of the verified controller model. It also includes checking that the observed states can be explained by the plant model. The crucial questions are: How can a compliance monitor be synthesized that provably represents the verified model? How much safety margin does a system need to ensure that fail-safe actions are initiated early enough for the system to remain safe even if its behavior ceases to comply with the model?",
+                        "The second question is related to feedback control and can only be answered when assuming constraints on the deviation of the real system dynamics from the plant model. Otherwise, if the real system can be infinitely far off from the model, safety guarantees are impossible. By the sampling theorem in signal processing, such constraints further enable compliance monitoring solely on the basis of sample points instead of the unobservable intermediate states about which no sensor data exists. When such constraints are not available, the method of the present invention still generates verifiably correct runtime tests, which detect deviation from the model at the sampling points, not just between them. A fail-safe action will then lead to best-effort mitigation of safety risks (rather than guaranteed safety).",
+                        "As presented herein, the present invention is a method to synthesize verifiably correct runtime validation monitors automatically. ModelPlex uses theorem proving with sound proof rules to turn hybrid system models into monitors in a verifiably correct way. Upon non-compliance with the model, ModelPlex initiates provably safe fail-safe actions.",
+                        "ModelPlex is a principle to build and verify high-assurance controllers for safety-critical computerized systems that interact physically with their environment. It guarantees that verification results about CPS models transfer to the real system by safeguarding against deviations from the verified model. Monitors created by ModelPlex are provably correct and check at runtime whether or not the actual behavior of a CPS complies with the verified model and its assumptions. Upon non-compliance, ModelPlex initiates fail-safe fallback strategies. To initiate the fallback strategies early enough, ModelPlex uses prediction on the basis of disturbed plant models to check safety for the next control cycle. This way, ModelPlex ensures that verification results about a model of a CPS transfer to the actual system behavior at runtime."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce ModelPlex method",
+                        "describe runtime model validation",
+                        "define runtime validation",
+                        "explain safety implications",
+                        "describe monitor synthesis",
+                        "discuss safety margins",
+                        "explain feedback control constraints",
+                        "summarize ModelPlex benefits"
+                    ],
+                    "num_characters": 4124,
+                    "outline_medium": [
+                        "introduce ModelPlex method",
+                        "describe runtime model validation",
+                        "explain monitor synthesis",
+                        "outline fail-safe actions"
+                    ],
+                    "outline_short": [
+                        "introduce ModelPlex method",
+                        "describe runtime model validation"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Preliminaries: Differential Dynamic Logic",
+                            "paragraphs": [
+                                "For hybrid systems verification differential dynamic logic  is used, which has a notation for hybrid systems as hybrid programs.  allows us to make statements that we want to be true for all runs of a hybrid program ([\u03b1]\u00f8) or for at least one run \u03b1\u00f8) of a hybrid program.",
+                                "Both constructs are necessary to derive safe monitors: [\u03b1]\u00f8 proofs are needed to ensure that all behavior of a model (including controllers) is safe; \u03b1\u00f8 proofs are needed to find monitor specifications that detect whether or not system execution fits to the verified model.",
+                                "Table 1 summarizes the relevant syntax fragment of hybrid programs together with an informal semantics. The semantics \u03c1(\u03b1) of hybrid program \u03b1 is a relation on initial and final states of running \u03b1. The set of  formulas is generated by the following grammar (<\u2208{<, <, =, \u2267, >}, and \u03b81, \u03b82 are arithmetic expressions in +, \u2212, \u00b7, / over the reals):",
+                                "\u03a6::=\u03b81\u02dc\u03b82|\u03a6|\u03a6\u03c8|\u03a6\u03c8|\u03a6\u2192\u03c8|\u2200x\u03a6|\u2203x\u03a6|[\u03b1]\u03a6|\u03b1\u03a6",
+                                "Differential dynamic logic comes uses a theorem prover with a verification technique to prove correctness properties of hybrid programs. One example of a theorem prover and the one that is used in the preferred embodiment of the invention is KeYmaera."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce differential dynamic logic",
+                                "define syntax and semantics of hybrid programs"
+                            ],
+                            "num_characters": 1186,
+                            "outline_medium": [
+                                "introduce differential dynamic logic"
+                            ],
+                            "outline_short": [
+                                "introduce differential dynamic logic"
+                            ]
+                        },
+                        {
+                            "title": "ModelPlex Approach for Verified Runtime Validation",
+                            "paragraphs": [
+                                "CPS are almost impossible to get right without sufficient attention to prior analysis, for instance by formal verification and formal validation techniques. We assume to be given a verified model of a CPS, i.e. formula (1) is proved valid. Note that differential dynamic logic () and KeYmaera as a theorem prover are used to illustrate the concepts herein. The concept of ModelPlex is not predicated on the use of KeYmaera to prove (1). Other verification techniques could be used to establish validity of this formula. The flexibility of the underlying logic , its support for both [\u03b1]\u03a6 and \u03b1\u03a6, and its proof calculus, however, are exploited for systematically constructing monitors from proofs in the sequel.",
+                                "\u03a6\u2192[\u03b1*]\u03c8 with invariant \u03c6\u2192[\u03b1]\u03c6s.t.\u03a6\u2192\u03c6 and \u03c6\u2192\u03c8\u2003\u2003(1)",
+                                "Formula (1) expresses that all runs of the hybrid system \u03b1*, which start in states that satisfy the precondition \u00f8 and repeat the model \u03b1 arbitrarily many times, must end in states that satisfy the post condition \u03c8. Formula (1) is proved using some form of induction, which shows that a loop invariant \u03c6 holds after every run of \u03b1 if it was true before. The model \u03b1 is a hybrid system model 100 of a CPS, which means that it describes both the discrete control actions of the controllers in the system and the continuous physics of the plant and the system's environment.",
+                                "The safety guarantees obtained by proving formula (1) about the model \u03b1* transfer to the real system, if the actual CPS execution fits to \u03b1*. Because safety properties should be preserved, a CPS \u03b3 fits to a model \u03b1*, if the CPS reaches at most those states that are reachable by the model, i.e., \u03c1(\u03b3)\u03c1(\u03b1*). However, we do not know \u03b3 and therefore need to find a condition based on \u03b1* that can be checked at runtime to see if concrete runs of \u03b3 behave like \u03b1*.",
+                                "Checking the post condition \u03c8 is not sufficient because, if \u03c8 does not hold, the system is already unsafe. Checking the invariant \u03c6 is insufficient as well, because if \u03c6 does not hold, the controller can no longer guarantee safety, even though the system may not yet be unsafe. But if we detect when a CPS is about to deviate from \u03b1* before leaving \u03c6, we can still switch to a fail-safe controller to avoid \u03c8 from happening.",
+                                "As shown in FIG. 1, ModelPlex derives three kinds of monitors, a model monitor 20, a controller monitor 22, and a prediction monitor 24. Reachability between consecutive states in \u03b1, \u03b1ctrl, and \u03b1\u03b4plant are checked by verifying states during execution against the corresponding monitor.",
+                                "Model monitor 20\u2014In each state vi the sample point vi\u22121 from the previous execution \u03b3i\u22121 is tested for deviation from the single \u03b1, not \u03b1* i. e., test (vi\u22121, vi) \u2208\u03c1(\u03b1). If violated, other verified properties may no longer hold for the system. The system, however, is still safe if a prediction monitor 24 was satisfied on vi\u22121.Frequent violations indicate an inadequate model that should be revised to better reflect reality.",
+                                "Controller monitor 22\u2014In intermediate state {tilde over (v)}i the current controller decisions of the implementation \u03b3ctrl are tested for compliance with the model, i.e., test (vi, {tilde over (v)}i) \u2208\u03c1(\u03b1ctrl). Controller monitors 22 are designed for switching between controllers similar to Simplex. If violated, the commands from a fail-safe controller replace the current controller's decisions to ensure that no unsafe commands are ever actuated.",
+                                "Prediction monitor 24\u2014In intermediate state {tilde over (v)}i the worst-case safety impact of the current controller decisions are tested with respect to the predictions of a bounded deviation plant model \u03b1\u03b4plant, which has a tolerance around the model plant \u03b1plant, i.e., check vi+1|=\u03c6 for all vi+1 such that ({tilde over (v)}i, vi+1) \u2208\u03c1(\u03b1\u03b4plant). Note, that all vi+1 are simultaneously checked by checking {tilde over (v)}i for a characterizing condition of \u03b1\u03b4plant. If violated, the current control choice is not guaranteed to keep the system safe until the next control cycle and, thus, a fail-safe controller takes over.",
+                                "The assumption for the prediction monitor 24 is that the real execution is not arbitrarily far off the plant models used for safety verification, because otherwise guarantees can neither be made on unobservable intermediate states nor on safety of the future system evolution. A separation of disturbance causes in the models can be used: ideal plant models \u03b1plant for correctness verification purposes, implementation deviation plant models \u03b1\u03b4plant for monitoring purposes. Any deviation model (e.g., piecewise constant disturbance, differential inclusion models of disturbance) is supported, as long as the deviation is bounded and differential invariants can be found. It is assumed that monitor evaluations are at most some s time units apart (e.g., along with a recurring controller execution). Note that disturbance in \u03b1\u03b4plant is more manageable compared to \u03b1*, as single runs \u03b1 can be focused on instead of repetitions for monitoring."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate CPS verification",
+                                "introduce ModelPlex approach",
+                                "define formula (1) for CPS verification",
+                                "derive monitors from proofs",
+                                "introduce model monitor, controller monitor, and prediction monitor",
+                                "define prediction monitor 24",
+                                "assume bounded deviation plant model \u03b1\u03b4plant",
+                                "separate disturbance causes in models",
+                                "assume monitor evaluations are at most s time units apart"
+                            ],
+                            "num_characters": 4957,
+                            "outline_medium": [
+                                "motivate CPS verification",
+                                "introduce ModelPlex concept",
+                                "derive three kinds of monitors",
+                                "explain monitor functionality"
+                            ],
+                            "outline_short": [
+                                "motivate model-based verification",
+                                "introduce ModelPlex approach"
+                            ]
+                        },
+                        {
+                            "title": "Relation Between States",
+                            "paragraphs": [
+                                "A check that inspects states of the actual CPS to detect deviation from the model \u03b1* is systematically derived. First, a notion of state recall is established and shows that, when all previous state pairs comply with the model, compliance of the entire execution can be checked by checking the latest two states (vi\u22121, vi).",
+                                "Definition 1 (State recall). V is used to denote the set of variables whose state we want to recall. YV\u2212\u2261x\u2208Vx=x\u2212 are used to express a characterization of the values of variables in a state prior to a run of \u03b1, where the fresh variables x\u2212 to are always presumed to occur solely in YV\u2212. The variables in x\u2212 can be used to recall this state. Likewise, YV+\u2261x\u2208Vx=x+ is used to characterize the posterior states and expect fresh x+.",
+                                "With this notation, the following lemma states that an interconnected sequence of \u03b1 transitions forms a transition of \u03b1*.",
+                                "Lemma 1 (Loop prior and posterior state). Let a be a hybrid program and \u03b1* be the program that repeats arbitrarily many times. Assume that all consecutive pairs of states (vi\u22121, vi) \u2208\u03c1(\u03b1) of n \u2208+ executions, whose valuations are recalled with YVi\u2261x\u2208Vx=xi and YVi\u22121 are plausible with respect to the model \u03b1, i.e., . \u2266i\u2266n (YVi\u22121\u2192\u03b1YVi) with YV\u2212=YV0 and YV+=YVn. Then, the sequence of states originates from an \u03b1* execution from YV0 to YVn, i.e., YV\u2212\u2192\u03b1*YV+.",
+                                "Lemma 1 enables us to check compliance with the model \u03b1* up to the current state by checking reachability of a posterior state from a prior state on each execution of \u03b1 (i.e., online monitoring, which is easier because the loop was eliminated). To find compliance checks systematically, we construct formula (2), which relates a prior state of a CPS to its posterior state through at least one path through the model \u03b1. Consecutive states for \u03b1* mean before and after executions of \u03b1 (i.e., \u03b1;\u2193\u03b1;\u2193\u03b1, not within \u03b1).",
+                                "YV\u2212\u2192(\u03b1)YV+\u2003\u2003(2)",
+                                "Formula (2) is satisfied in a state v, if there is at least one run of the model \u03b1 starting in the state v recalled by YV\u2212 and which results in a state w recalled using YV+. In other words, at least one path through \u03b1 explains how the prior state v got transformed into the posterior state w. The dL formula (2) characterizes the state transition relation of the model \u03b1 directly. Its violation witnesses compliance violation. Compliance at all intermediate states cannot be observed by real-world sensors. (See Section \u2018Monitoring Compliance Guarantees for Unobservable Intermediate States\u2019 herein).",
+                                "In principle, formula (2) would be a monitor, because it relates a prior state to a posterior state through the model of a CPS, but the formula is difficult, if not impossible, to evaluate at runtime, because it refers to a hybrid system \u03b1, which includes non-determinism and differential equations. The basic observation is that any formula that is equivalent to (2) but conceptually easier to evaluate in a state would be a correct monitor 112. We use theorem proving for simplifying formula (2) into quantifier-free first-order real arithmetic form so that it can be evaluated efficiently at runtime. The resulting first-order real arithmetic formula can be easily implemented in a runtime monitor and executed along with the actual controller. A monitor 112 is executable code that only returns true if the transition from the prior system state to the posterior state is compliant with the model 100. Thus, deviations from the model 100 can be detected at runtime, so that appropriate fallback and mitigation strategies can be initiated.",
+                                "Remark 1. The complexity for evaluating an arithmetic formula over the reals for concrete numbers is linear in the formula size, as opposed to deciding the validity of such formulas, which is doubly exponential. Evaluating the same formula on floating point numbers is inexpensive, but may yield wrong results due to rounding errors; on exact rationals, the bit-complexity can be non-negligible. Interval arithmetic is used to obtain reliable results efficiently."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define state recall",
+                                "introduce lemma 1 for loop prior and posterior state",
+                                "construct formula (2) for state transition relation",
+                                "simplify formula (2) using theorem proving",
+                                "evaluate resulting first-order real arithmetic formula",
+                                "remark on complexity of evaluating arithmetic formulas",
+                                "use interval arithmetic for reliable results"
+                            ],
+                            "num_characters": 3976,
+                            "outline_medium": [
+                                "define state recall",
+                                "prove lemma on loop prior and posterior state",
+                                "construct formula for compliance check"
+                            ],
+                            "outline_short": [
+                                "define state recall and lemma for loop prior and posterior state"
+                            ]
+                        },
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "A simple water tank is used as a running example to illustrate the concepts throughout this section. The water tank has a current level x and a maximum level m. The water tank controller, which runs at least every \u03b5 time units, non-deterministically chooses any flow f between a maximum outflow \u22121 and a maximum",
+                                "\\(\\frac{m - x}{\u025b}.\\)",
+                                "This water tank never overflows, as witnessed by a proof for the following dL formula.",
+                                "\\(\\left. \\underset{\\begin{matrix}\n\uf613 \\\\\n\\varphi\n\\end{matrix}}{0 \\leq x \\leq {m\\bigwedge \u025b} > 0}\\rightarrow{\\left\\lbrack \\left( {{f\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*};{?\\left( {{- 1} \\leq f \\leq \\frac{m - x}{\u025b}} \\right)};{t\ue89e\\mspace{20mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e0};\\left( {{x^{\\prime} = f},{t^{\\prime} = {{{1\\&}\ue89ex} \\geq {0\\bigwedge t} \\leq \u025b}}} \\right)} \\right)^{*} \\right\\rbrack \ue89e\\overset{\\underset{\uf612}{\\varphi}}{\\left( {0 \\leq x \\leq m} \\right)}} \\right.\\)"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "illustrate concepts with a simple water tank example"
+                            ],
+                            "num_characters": 886,
+                            "outline_medium": [
+                                "illustrate water tank example"
+                            ],
+                            "outline_short": [
+                                "illustrate water tank example"
+                            ]
+                        },
+                        {
+                            "title": "ModelPlex Monitor Synthesis",
+                            "paragraphs": [
+                                "This section introduces the nature of ModelPlex monitor specifications, the approach in this invention for generating such specifications from hybrid system models, and how to turn those specifications into monitor code that can be executed at runtime along with the controller.",
+                                "A ModelPlex specification 104 corresponds to the  formula (2). If the current state of a system does not satisfy a ModelPlex specification 104, some behavior that is not reflected in the model 100 occurred (e.g., the wrong control action was taken, unanticipated dynamics in the environment occurred, sensor uncertainty led to unexpected values, or the system was applied outside the specified operating environment).",
+                                "A model monitor Xm checks that two consecutive states  and  can be explained by an execution of the model \u03b1, i.e., (, ) \u2208\u03c1(\u03b1). In the sequel, BV(\u03b1) are bound variables in \u03b1, FV (\u03c6) are free variables in \u03c6, \u03a3 is the set of all variables, and A\\B denotes the set of variables being in some set A but not in some other set B. Furthermore, we use v|A to denote v projected onto the variables in A.",
+                                "Theorem 1 (Model monitor correctness). Let \u03b1* be provably safe, so \u03a6\u2192[\u03b1*]\u03c8. Let Vm= BV (\u03b1) \u222a FV (\u03c8). Let v0, v1, v2, v3 . . . \u2208n be a sequence of states, with v0  \u03a6 and that agree on \u03a3\\Vm, i.e., v0|\u03a3\\v=vk|\u03a3\\Vfor all k. We define (v, vi+1) xm as xm evaluated in the state resulting from v by interpreting x+ as vi+1(x) for all x \u2208Vm, i.e., vxvxm. If vi, vi+1)xm for all i<n then we have vn\u03c8 where",
+                                "Xm\u2261(\u03a6|const\u2192\u03b1Yv+)\u2003\u2003(3)",
+                                "and \u03a6|const denotes the conditions of \u03a6 that involve only constants that do not change in \u03b1, i. e., FV (\u03c6|const) \u2229 BV (\u03b1)=\u00f8.",
+                                "The approach shown herein to generate monitor specifications from hybrid system models 102 takes a verified  formula (1) as input 100 and produces a monitor xm in quantifier-free first-order form as output. The algorithm involves the following steps:\n\n\n- - 1. A\n    formula (1) about a model \u03b1 of the form \u03a6\u2192\\[\u03b1\\*\\]\u03c8 is turned into a\n    specification conjecture (3) of the form \u03a6\\|_(const)\u2192\n    \u03b1\n    Y_(vm)\u207a. See process **102**, resulting in monitor specification\n    **104** in FIG. 3.\n  - 2.Theorem proving on the specification conjecture (3) is applied\n    until no further proof rules are applicable and only first-order\n    real arithmetic formulas remain open. See process **106**, resulting\n    in monitor conditions **108**, containing only first-order logic\n    (FOL) in FIG. 3. Process **106** is also shown in more detail in\n    FIG. 4, and an algorithmic representation of process **106** is\n    shown in Section D herein.\n  - 3. The monitor specification x_(m) is the conjunction of the\n    unprovable first-order real arithmetic formulas from open sub-goals.",
+                                "Generate the monitor conjecture.  formula (1) is mapped syntactically to a specification conjecture of the form (3). By design, this conjecture will not be provable. But the unprovable branches of a proof attempt will reveal information that, had it been in the premises, would make (3) provable. Through Yv+, those unprovable conditions collect the relations of the posterior state of model \u03b1 characterized by x+ to the prior state x, i.e., the conditions are a representation of (2) in quantifier-free first-order real arithmetic."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce ModelPlex monitor specifications",
+                                "generate monitor specifications from hybrid system models",
+                                "define model monitor Xm",
+                                "prove theorem 1 for model monitor correctness",
+                                "outline approach to generate monitor specifications",
+                                "describe process of generating monitor conditions"
+                            ],
+                            "num_characters": 3250,
+                            "outline_medium": [
+                                "introduce ModelPlex monitor specifications",
+                                "generate monitor specifications from hybrid system models",
+                                "turn specifications into monitor code"
+                            ],
+                            "outline_short": [
+                                "introduce ModelPlex monitor synthesis"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "The specification conjecture for the water tank model is given below. It is constructed from the model by removing the loop, flipping the modality, and formulating the specification requirement as a property, since we are interested in a relation between two consecutive states v and w (recalled by x+, f+ and t+). Using theorem proving, we analyze the conjecture to reveal the actual monitor specification 104.",
+                                "\\(\\left. \\underset{\\begin{matrix}\n\uf613 \\\\\n{\\varphi \ue89e\\; \ue89e{lowest}}\n\\end{matrix}}{\u025b > 0}\\rightarrow{{\\langle{{f\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*};{?\\left( {{- 1} \\leq f \\leq \\frac{m - x}{\u025b}} \\right)};{t\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e0};\\left( {{x^{\\prime} = f},{t^{\\prime} = {{{1\\&}\ue89ex} \\geq {0\\bigwedge t} \\leq \u025b}}} \\right)}\\rangle}\ue89e\\overset{\\underset{\uf612}{\\mathrm{\\Upsilon}_{V_{m}}^{+}}}{\\left( {x = {{x^{*}\\bigwedge f} = {{f^{*}\\bigwedge t} = t^{*}}}} \\right)}} \\right.\\)",
+                                "Use theorem proving to analyze the specification conjecture. The proof rules of dL are used to analyze the specification conjecture xm. These proof rules syntactically decompose a hybrid model 100 into easier-to-handle parts, which leads to sequents with first-order real arithmetic formulas towards the leaves of a proof. Using real arithmetic quantifier elimination we close sequents with logical tautologies, which do not need to be checked at runtime since they always evaluate to true for any input. The conjunction of the remaining open sequents is the monitor specification 104, which implies (2).",
+                                "A complete sequence of proof rules applied to the monitor conjecture of the water tank is described in below in Section B. Most steps are simple when analyzing specification conjectures: sequential composition (;), nondeterministic choice (\u222a), deterministic assignment (:=) and logical connectives (r etc.) replace current facts with simpler ones or branch the proof. Challenges arise from handling nondeterministic assignment and differential equations in hybrid programs.",
+                                "First, consider nondeterministic assignment x :=*. The proof rule for non-deterministic assignment (*) results in a new existentially quantified variable. By sequent proof rule \u2203r, this existentially quantified variable is instantiated with an arbitrary term \u03b8, which is often a new logical variable that is implicitly existentially quantified. Weakening (Wr) removes facts that are no longer necessary.",
+                                "\\(\\left( {\\langle*\\rangle} \\right)\ue89e\\frac{\\exists{X\ue89e{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89eX}\\rangle}\ue89e\\varphi_{1}}}{{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*}\\rangle}\ue89e\\varphi}\ue89e\\mspace{14mu} \ue89e\\left( {\\exists r} \\right)\ue89e\\frac{{\\Gamma \\vdash {\\varphi \ue8a0(\\theta)}},{\\exists{x\ue89e\\; \ue89e{\\varphi \ue8a0(x)}}},\\Delta_{2}}{{\\Gamma \\vdash {\\exists{x\ue89e\\; \ue89e{\\varphi \ue8a0(x)}}}},\\Delta}\ue89e({Wr})\ue89e\\frac{\\Gamma \\vdash \\Delta}{{\\Gamma \\vdash \\varphi},\\Delta}\\)",
+                                "1 X is a new logical variable",
+                                "2 \u03b8 is an arbitrary term, often a new (existential) logical variable X.",
+                                "Optimization 1 (Instantiation Trigger). If the variable is not changed in the remaining \u03b1, xi=xi+ is YV+ and X is not bound in YV+, then instantiate the existential quantifier by rule \u2203r with the corresponding xi+ that is part of the specification conjecture (i.e., \u03b8=xi+), since subsequent proof steps are going to reveal \u03b8=xi+ anyway.",
+                                "Otherwise, a new logical variable is introduced which may result in an existential quantifier in the monitor specification if no further constraints can be found later in the proof."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "construct specification conjecture for water tank model",
+                                "analyze conjecture using theorem proving",
+                                "reveal monitor specification 104",
+                                "describe process of generating monitor conditions",
+                                "illustrate proof rules for nondeterministic assignment",
+                                "illustrate optimization 1 for instantiation trigger"
+                            ],
+                            "num_characters": 3457,
+                            "outline_medium": [
+                                "construct specification conjecture for water tank model",
+                                "analyze conjecture using theorem proving",
+                                "reveal actual monitor specification"
+                            ],
+                            "outline_short": [
+                                "illustrate water tank monitor synthesis"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "The corresponding steps in the water tank proof use * for the nondeterministic flow assignment (f:=*) and \u2203r to instantiate the resulting existential quantifier \u2203F with a new logical variable F (plant is an abbreviation for x\u2032=f, t\u2032=1&0\u2266xt\u2266\u03b5). The proof without and with application of Opt. 1 is given as.",
+                                "Next, differential equations are handled. Even when the differential equation can be solved, existentially and universally quantified variables remain. Inspect the corresponding proof rule from the dL calculus. For differential equations it must be proven that there exists a duration t, such that the differential equation stays within the evolution domain H throughout all intermediate times {tilde over (t)} and the result satisfies \u03c6 at the end. At this point there are three options:",
+                                "i. Option 1: instantiate the existential quantifier, if it is known that the duration will be t+;",
+                                "ii. Option 2: introduce a new logical variable, which is the generic case that always yields correct results, but may discover monitor specifications that are harder to evaluate;",
+                                "\\(\\left( {\\langle^{\\prime}\\rangle} \\right)\ue89e\\frac{\\exists{T \\geq {0\ue89e\\left( {{\\left( {\\forall{0 \\leq \\overset{\\_}{t} \\leq {T\ue89e\\mspace{14mu} \ue89e{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e{y\ue8a0\\left( \\overset{\\_}{t} \\right)}}\\rangle}\ue89eH}}} \\right)\\bigwedge{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e{y\ue8a0(T)}}\\rangle}}\ue89e\\varphi} \\right)_{1}}}}{{\\langle{x^{\\prime} = {{\\theta\\&}\ue89e\\mspace{14mu} \ue89eH}}\\rangle}\ue89e\\varphi}\ue89e({QE})\ue89e\\frac{{{QE}\ue8a0(\\varphi)}_{2}}{\\varphi}\\)",
+                                "1 T and {tilde over (t)} are fresh logical variables and x :=y(T) is the discrete assignment belonging to the solution y of the differential equation with constant symbol x as symbolic initial value",
+                                "2 iff \u03a6\u2261QE (\u03a6), \u03a6 is a first-order real arithmetic formula, QE(\u03a6) is an equivalent quantifier-free formula computable by [7]",
+                                "iii. Option 3: use quantifier elimination (QE) to obtain an equivalent quantifier-free result (a possible optimization could inspect the size of the resulting formula)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "illustrate proof steps for water tank example",
+                                "handle differential equations",
+                                "introduce options for instantiating existential quantifier",
+                                "use quantifier elimination for equivalent quantifier-free result"
+                            ],
+                            "num_characters": 2034,
+                            "outline_medium": [
+                                "handle nondeterministic assignment",
+                                "handle differential equations"
+                            ],
+                            "outline_short": [
+                                "illustrate proof steps for water tank monitor synthesis"
+                            ]
+                        },
+                        {
+                            "title": "Example 4",
+                            "paragraphs": [
+                                "In the analysis of the water tank example, the differential equation are solved (see \u2032 and the substitutions f :=F and t :=0 are applied. In the next step (see \u2203r,Wr), the existential quantifier \u2203T is instantiated with t+ (i.e., T=t+ using Option 1 with the last conjunct) and uses weakening right (Wr) to systematically get rid of the existential quantifier that would otherwise still be left around by rule \u2203r. Finally, quantifier elimination (QE) is used to reveal an equivalent quantifier-free formula, shown as reference number 108 in FIG. 3.",
+                                "The analysis of the specification conjecture finishes with collecting the open sequents from the proof to create the monitor specification xmdef (open sequent) 104. The collected open sequents may include new logical variables and new (Skolem) function symbols that were introduced for nondeterministic assignments and differential equations when handling existential or universal quantifiers. The invertible quantifier rule i\u2203 is used to re-introduce existential quantifiers for the new logical variables. Often, the now quantified logical variables are discovered to be equal to one of the post-state variables later in the proof, because those variables did not change in the model after the assignment. If this is the case, proof rule \u2203\u03c3 can be used to further simplify the monitor specification by substituting the corresponding logical variable x with its equal term \u03b8.",
+                                "\\(\\left( {i\\exists} \\right)\ue89e\\frac{{\\Gamma \\vdash {\\exists{\\vdash {{\\langle\\rangle}\ue89e{X\ue8a0\\left( {\\Lambda_{i}\ue8a0\\left( {\\Phi_{i} \\vdash \\psi_{i}} \\right)} \\right)}}}}},\\Delta_{1}}{\\Gamma,{\\Phi_{1} \\vdash \\psi_{2}},{\\Delta\\cdots\\Gamma},{\\Phi_{1} \\vdash \\psi_{2}},\\Delta}\ue89e\\left( {\\exists o} \\right)\ue89e\\frac{{\\varphi \ue8a0(\\theta)}_{2}}{\\exists{x\ue8a0\\left( {x = {\\theta\\bigwedge{\\varphi \ue8a0(x)}}} \\right)}}\\)",
+                                "1 Among all open branches, free logical variable X only occurs in the branches \u0393, \u03a6, , \u03c8, \u0394",
+                                "2 Logical variable x does not appear in term \u03b8"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "solve differential equations",
+                                "instantiate existential quantifier",
+                                "apply quantifier elimination"
+                            ],
+                            "num_characters": 1955,
+                            "outline_medium": [
+                                "apply quantifier elimination"
+                            ],
+                            "outline_short": [
+                                "apply quantifier elimination"
+                            ]
+                        },
+                        {
+                            "title": "Example 5",
+                            "paragraphs": [
+                                "The two open sequents of Examples 3 and 4 use a new logical variable F for the nondeterministic flow assignment f := *. After further steps in the proof, the assumptions reveal additional information F=f+. Thus, the existential quantifier is re-introduced over all the open branches (i\u2203) and substitute f+ for F (\u2203\u03c3). The sole open sequent of this proof attempt is the monitor specification xm of the water tank model.",
+                                "**Controller Monitor Synthesis**",
+                                "A controller monitor xc, shown as reference number 112 in FIG. 3, checks that two consecutive states v and w are reachable with one controller execution \u03b1ctrl, i. e., (v,w) \u2208 \u03c1(\u03b1ctrl) with Vc, =BV (\u03b1ctrl) \u222a FV (\u03c8). Controller monitors 112 are systematically derived in processes 106 and 110 from formulas 104: \u03c6|const\u2192\u03b1ctrlYV+. A controller monitor 112 can be used to initiate controller switching similar to Simplex.",
+                                "Theorem 2 (Controller monitor correctness). Let \u03b1 of the canonical form \u03b1ctrl; \u03b1plant Assume |=\u03a6\u2192[\u03b1*]\u03c6 has been proven with invariant \u03c6 as in (1). Let v \u03a6|const\u0302\u03a6, as checked by xm(Theorem 1). Furthermore, let {tilde over (v)} be a post-controller state. If (v, {tilde over (v)})  xc with xc \u2261\u03a6|const\u2192\u03b1ctrlYV+ then we have that (v, {tilde over (v)}) \u2208\u03c1(\u03b1ctrl) and {tilde over (v)}|=\u03c6.",
+                                "**Monitoring in the Presence of Expected Uncertainty and Disturbance**",
+                                "Up to now exact ideal-world models have been considered. However, real-world clocks drift, sensors measure with some uncertainty, and actuators are subject to disturbance. This makes the exact models safe but too conservative, which means that monitors for exact models are likely to fall back to a fail-safe controller unnecessarily often. This section is a discussion of how ModelPlex specifications are found such that the safety property (1) and the monitor specification become more robust to expected uncertainty and disturbance. That way, only unexpected deviations beyond those captured in the normal operational uncertainty and disturbance of a* cause the monitor to initiate fail-safe actions.",
+                                "In dL we can, for example, use nondeterministic assignment from an interval to model sensor uncertainty and piecewise constant actuator disturbance, or differential inequalities for actuator disturbance. Such models include non-determinism about sensed values in the controller model and often need more complex physics models than differential equations with polynomial solutions.",
+                                "**Example 6**",
+                                "Clock drift, sensor uncertainty and actuator disturbance are incorporated into the water tank model to express expected deviation. The measured level x, is within a known sensor uncertainty u of the real level x (i.e. x \u2208[x\u2212u, x+ u]). Differential inequalities are used to model clock drift and actuator disturbance. The clock, which wakes the controller, is slower than the real time by at most a time drift of c; it can be arbitrarily fast. The water flow disturbance is at most d, but the water tank is allowed to drain arbitrarily fast (even leaks when the pump is on). To illustrate different modeling possibilities, we use additive clock drift and multiplicative actuator disturbance.",
+                                "\\(\\left. {0 \\leq x \\leq {m\\bigwedge \u025b} > {0\\bigwedge c} < {1\\bigwedge 0} \\leq {u\\bigwedge 0} < d}\\rightarrow{\\quad{\\left\\lbrack \\left( {{x_{s}\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*};{?\\left( {{x - u} \\leq x_{s} \\leq {x + u}} \\right)};{f\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*};{?\\left( {{- 1} \\leq f \\leq {\\frac{m - x_{s} - u}{\uf74c\u025b}\ue89e\\left( {1 - c} \\right)}} \\right)};{t\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e0};\\left\\{ {{x^{\\prime} \\leq {fd}},{{1 - c} \\leq {t^{\\prime}\ue89ex} \\geq {0\\bigwedge t} \\leq \u025b}} \\right\\}} \\right)^{*} \\right\\rbrack \ue89e\\left( {0 \\leq x \\leq m} \\right)}} \\right.\\)",
+                                "Example6 can be analyzed in the same way as the previous examples, with the crucial exception of the differential inequalities. The proof rule (\u2032) cannot be used to analyze this model, because differential inequalities do not have polynomial solutions. Instead, the DR and DE proof rules of  are used to turn differential inequalities into a differential- algebraic constraint form that lets us proceed with the proof. Rule DE turns a differential inequality x\u2032\u2266\u03b8 into a quantified differential equation \u2203{tilde over (d)}(x\u2032={tilde over (d)}&{tilde over (d)}\u2266\u03b8) with an equivalent differential-algebraic constraint. Rule DR turns a differential-algebraic constraint E into another differential-algebraic constraint , which implies , written \u2192.",
+                                "\\(({DR})\ue89e\\frac{\\left. \ue523\\rightarrow{{\\delta \ue8a0(\ue523)}\ue89e\\varphi_{1}} \\right.}{(\\delta)\ue89e\\varphi}\ue89e({DE})\ue89e\\frac{\\forall{{X\ue8a0\\left( {\\exists\\left. {\\overset{\\_}{d}\ue8a0\\left( {X = {{\\overset{\\_}{d}\\bigwedge\\overset{\\_}{d}} \\leq {\\theta\\bigwedge H}}} \\right)}\\rightarrow{X \\leq {\\theta\\bigwedge H}} \\right.} \\right)}\ue89e\\left( {\\exists{\\overset{\\_}{d}\ue8a0\\left( {x^{\\prime} = {{{\\overset{\\_}{d}\\&}\ue89e\\mspace{14mu} \ue89e\\overset{\\_}{d}} \\leq {\\theta\\bigwedge H}}} \\right)}} \\right)\ue89e\\varphi_{2}}}{\\left( {{{x^{\\prime} \\leq \\theta}\\&}\ue89e\\mspace{14mu} \ue89eH} \\right)\ue89e\\varphi}\\)",
+                                "1 differential refinement: differential-algebraic constraints ,  have the same changed variables",
+                                "2 differential inequality elimination: special case of DR, which rephrases the differential inequalities \u2266as differential-algebraic constraints (accordingly for other or mixed inequalities systems).",
+                                "Currently, for finding model monitors, our prototype tool solves differential equations by the proof rule (\u2032). Thus, it finds model monitor specifications for differential algebraic equations with polynomial solutions and for differential algebraic inequalities, which can be refined into solvable differential algebraic equations as in Example 6. For prediction monitors (discussed in Section below)  techniques are used for finding differential variants and invariants, differential cuts, and differential auxiliaries to handle differential equations and inequalities without polynomial solutions.",
+                                "**Monitoring Compliance Guarantees for Unobservable Intermediate States**",
+                                "With controller monitors, non-compliance of a controller implementation with respect to the modeled controller can be detected right away. With model monitors, non-compliance of the actual system dynamics with respect to the modeled dynamics can be detected when they first occur. In such cases, a fail-safe action is switched to, which is verified using standard techniques, in both non-compliance cases. The crucial question is: can such a method always guarantee safety? The answer is linked to the image computation problem in model checking (i. e., approximation of states reachable from a current state), which is known to be not semi-decidable by numerical evaluation at points; approximation with uniform error is only possible if a bound is known for the continuous derivatives. This implies that additional assumptions are needed about the deviation between the actual and the modeled continuous dynamics to guarantee compliance for unobservable intermediate states. Unbounded deviation from the model between sample points just is unsafe, no matter how hard a controller tries. Hence, worst-case bounds capture how well reality is reflected in the model.",
+                                "A prediction monitor is derived to check whether a current control decision will be able to keep the system safe for time s even if the actual continuous dynamics deviate from the model. A prediction monitor checks the current state, because all previous states are ensured by a model monitor and subsequent states are then safe by (1).",
+                                "Definition 2 (\u03b5-bounded plant with disturbance \u03b4). Let \u03b1plant be a model of the form x\u2032=\u03b8& H. An \u03b5-bounded plant with disturbance \u03b4, written \u03b1\u03b4plant, is a plant model of the form xo :=0; (f(\u03b8, \u03b4) \u2266x\u2032\u2266g(\u03b8, \u03b4) & H xo\u2266\u03b5) for some f, g with fresh variable \u03b5>0 and assuming xo\u2032=1. That disturbance \u03b4 is constant if x \u2208\u03b4; it is additive if f(\u03b8, \u03b4)=\u03b8\u2212\u03b4 and g(\u03b8, \u03b4) =\u03b8+\u03b4.",
+                                "Theorem 3 (Prediction monitor correctness). Let \u03b1* be provably safe, i. e., \u03a6\u2192[\u03b1*]\u03c8 has been proved using invariant \u03c6 as in (1). Let Vp=BV (\u03b1) \u222a FV ([\u03b1]\u03c6]). Let v\u03a6|const\u03c6, as checked by Xm from Theorem 1. Further assume {tilde over (v)} such that (v, {tilde over (v)}) \u2208\u03c1(\u03b1ctrl), as checked by Xc from Theorem 2. If (v, {tilde over (v)}) Xp with Xp\u2261(\u03a6|const\u03c6)\u2192\u03b1ctrl(YV+[\u03b1\u03b4plant]\u03c6), then we have for all ({tilde over (v)}, \u03c9) \u2208\u03c1(\u03b1\u03b4plant) that \u03c9|=\u03c6.",
+                                "Remark 2. By adding a controller execution \u03b1ctrl prior to the disturbed plant model, we synthesize prediction monitors that take the actual controller decisions into account. For safety purposes, a monitor definition without controller Xp\u2261(\u03a6|const\u03c6)\u2192[\u03b1\u03b4plant]\u03c6 could be used, but doing so results in a conservative monitor, which has to keep the CPS safe without knowledge of the actual controller decision.",
+                                "**Decidability and Computability**",
+                                "One useful characteristic of ModelPlex beyond soundness is that monitor synthesis is computable, which yields a synthesis algorithm, and that the correctness of those synthesized monitors with respect to their specification is decidable. See Theorem 4.",
+                                "Theorem 4 (Monitor correctness is decidable and monitor synthesis computable). Assume canonical models of the form \u03b1\u2261\u25a1\u03b1ctrl; \u03b1plant without nested loops, with solvable differential equations in \u03b1plant and disturbed plants \u03b1\u03b4plant with constant additive disturbance \u03b4 (see Definition. 2). Then, monitor correctness is decidable, i. e., the formulas Xm\u2192\u03b1YV+, Xc\u2192\u03b1ctrlYV+ \u03b3V+, and Xp\u2192\u03b1ctrl(YV+[\u03b1\u03b4plant]\u03c6) are decidable. Also, monitor synthesis is computable, i. e., the functions synthm: \u03b1>YV+\u2192Xm. synthc: <\u03b1ctrl>YV+\u2192Xc and synthp: <\u03b1ctrl>(YV+[\u03b1\u03b4plant]\u03c6)\u2192Xp are computable.",
+                                "**Evaluation**",
+                                "A software prototype was developed and integrated into the modeling tool Sphinx to automate many of the described steps. The prototype generates Xm, Xc, and Xp conjectures from hybrid programs, collects open sequents, and interacts with KeYmaera.",
+                                "To evaluate the method, we created monitors for prior case studies of non-deterministic hybrid models of autonomous cars, train control systems, and robots, for example, adaptive cruise control, intelligent speed adaptation, the European train control system, and ground robot collision avoidance. Table 2 summarizes the evaluation. For the model, the dimension in terms of the number of function symbols and state variables is listed, as is the size of the safety proof (i. e., number of proof steps and branches).",
+                                "For the monitor, the dimension of the monitor conjecture is listed in terms of the number of variables. The number of steps and open sequents are compared when deriving the monitor using manual proof steps to apply Option 1 and fully automated w/o Option 1, and the number of steps in the monitor correctness proof. Finally, the monitor size in terms of arithmetic, comparison, and logical operators in the monitor formula is listed.",
+                                "Although the number of steps and open sequents differ significantly between manual interaction for Option 1 and fully automated synthesis, the synthesized monitors are logically equivalent. But applying Option 1 usually results in structurally simpler monitors, because the conjunction over a smaller number of open sequents (See Table 2) can still be simplified automatically. The model monitors for cruise control and speed limit control are significantly larger than the other monitors, because their size already prevents automated simplification by Mathematica. As future work, KeYmaera will be adapted to allow user-defined tactics to apply Option 1 automatically."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce new logical variable",
+                                "re-introduce existential quantifier",
+                                "substitute logical variable",
+                                "derive controller monitor",
+                                "check controller monitor correctness",
+                                "assume canonical form",
+                                "prove invariant",
+                                "check post-controller state",
+                                "apply theorem 2",
+                                "discuss monitoring in presence of uncertainty",
+                                "model sensor uncertainty",
+                                "model actuator disturbance",
+                                "incorporate clock drift",
+                                "express expected deviation",
+                                "use differential inequalities",
+                                "analyze example 6",
+                                "apply proof rules",
+                                "turn differential inequalities into differential-algebraic constraints",
+                                "proceed with proof",
+                                "discuss finding model monitors",
+                                "use techniques for differential equations",
+                                "handle differential inequalities without polynomial solutions"
+                            ],
+                            "num_characters": 11449,
+                            "outline_medium": [
+                                "introduce new logical variable",
+                                "re-introduce existential quantifier",
+                                "substitute logical variable",
+                                "derive controller monitor",
+                                "prove controller monitor correctness",
+                                "define controller monitor",
+                                "discuss monitoring in presence of uncertainty",
+                                "model sensor uncertainty and actuator disturbance",
+                                "incorporate clock drift and actuator disturbance",
+                                "analyze model with differential inequalities",
+                                "use proof rules to turn differential inequalities into differential-algebraic constraints"
+                            ],
+                            "outline_short": [
+                                "re-introduce existential quantifier",
+                                "substitute logical variable",
+                                "derive controller monitor",
+                                "prove controller monitor correctness",
+                                "discuss controller switching"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "A. Proofs",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "A.1 Formal Semantics of",
+                            "paragraphs": [
+                                "ModelPlex bases on a reachability relation semantics instead of trace semantics, since it is easier to handle and suffices for checking at sample points.",
+                                "The semantics of , as defined in [27], is a Kripke semantics in which states of the Kripke model are states of the hybrid system. Let  denote the set of real numbers. A state is a map v:V\u2192; the set of all states is denoted by Sta. We write v|=\u03a6 if formula \u03a6 is true at state v (Def. 4). Likewise, \u03b8, denotes the real value of term \u03b8 at state v. The semantics of HP \u03b1 is captured by the state transitions that are possible by running \u03b1. For continuous evolutions, the transition relation holds for pairs of states that can be interconnected by a continuous flow respecting the differential equation and invariant region. That is, there is a continuous transition along xI=\u03b8 & H from state v to state w, if there is a solution of the differential equation xI=\u03b8 that starts in state v and ends in w and that always remains within the region H during its evolution.",
+                                "Definition 3 (Transition semantics of hybrid programs). The transition relation \u03c1 specifies which state w is reachable from a state v by operations of \u03b1. It is defined as follows.\n\n\n- - 1. (\u03bd,\u03c9)\u2208\u03c1(x:=\u03b8) iff\n    z\n    _(\u03bd)=\n    z\n    _(\u03c9)f\u00b7a\u00b7z\u2260x and\n    x\n    _(\u03c9)=\n    \u03b8\n    _(\u03bd).\n  - 2. (\u03bd,\u03c9)\u2208\u03c1(x:=\\*) iff\n    z\n    _(\u03bd)=\n    z\n    _(\u03c9)f\u00b7a\u00b7z\u2260x.\n  - 3. (\u03bd,\u03c9)\u2208\u03c1(?\u03c6) iff \u03bd=\u03c9 and \u03bd\n    \u03c6.\n  - 4. (\u03bd,\u03c9)\u2208\u03c1(x\u2032\u2081=\u03b8\u2081, . . . ,x\u2032_(n)=\u03b8_(n)&H) iff for some r\u22660, there is\n    a (flow) function \u03c6:\\[0,r\\]\u2192Sta with \u03c6(0)=\u03bd,\u03c6(r)=\u03c9, such that for\n    each time \u03b6\u2208\\[0, r\\]:\n    - (i) The differential equation holds, i.e.,",
+                                "\\({\\frac{\uf74c\\lbrack x\\rbrack_{w}}{\uf74ct}\ue89e(\\zeta)} = \\left. ||\\theta_{i}\ue89e \\right.||_{\\psi \ue8a0{(\\zeta)}}\\)\n\n\n- - - for each x_(i),. (ii) For other variables y\u2209{x\u2081, . . . ,x_(n), }\n      the value remains constant, i.e.,\n      y\n      _(\u03c6(\u03b6))=\n      y\n      _(\u03c6(0)).\n    - (iii) The invariant is always respected, i.e., \u03c6(\u03b6)\n      H.\n\n  - 5. \u03c1(\u03b1\u222a\u03b2)=\u03c1(\u03b1)\u222a\u03c1(\u03b2)\n\n  - 6. \u03c1(\u03b1;\u03b2)={(\u03bd,\u03c9):(\u03bd,z)\u2208\u03c1(\u03b1),(z,\u03c9)\u2208\u03c1(\u03b2) for a state z}\n\n  - 7. \u03c1(\u03b1\\*)=\u222a_(n\u2208N)\u03c1(\u03b1^(n)) where \u03b1^(i+1){circumflex over\n    (=)}(\u03b1;\u03b1^(i))and \u03b1\u2070 {circumflex over (=)}?true.",
+                                "Definition 4 (Interpretation of dL formulas). The interpretation  of a dL formula with respect to state v is defined as follows.",
+                                "1. v\u03b81\u02dc\u03b82iff[\u03b81]\u02dc[\u03b82for \u02dc\u2208]{=\u2266, <, \u2267, >}",
+                                "2. v\u03c6\u039b\u03a6iff v \u03a6 and v \u03c8, accordingly for \u2014, V,\u2192\u21c4",
+                                "3. v\u2200x \u03c6 iff w\u03a6 for all w that agree with v except for the value of x",
+                                "4. v|=\u2203x\u03a6iff w\u03a6 for some w that agrees with v except for the value of x",
+                                "5. v[\u03b1]\u03a6 iff w\u03a6\u2200w with (v, w) \u2208\u03c1(\u03b1)",
+                                "6. v[\u03b1]\u03a6 iff w\u2203w with (v, w)\u2208\u03c1(\u03b1)",
+                                "We write |= \u03a6 to denote that \u03a6 is valid, i.e., that v |=\u03a6\u2200v."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define transition semantics of hybrid programs",
+                                "define interpretation of dL formulas",
+                                "specify transition relation \u03c1",
+                                "define semantics of HP \u03b1",
+                                "define validity of dL formulas"
+                            ],
+                            "num_characters": 2642,
+                            "outline_medium": [
+                                "define transition semantics of hybrid programs",
+                                "define interpretation of dL formulas"
+                            ],
+                            "outline_short": [
+                                "define transition semantics of hybrid programs"
+                            ]
+                        },
+                        {
+                            "title": "A.2 Soundness",
+                            "paragraphs": [
+                                "We recall Lemma 1.",
+                                "Lemma 1 (Loop prior and posterior state). Let \u03b1 be a hybrid program and \u03b1* be the program that repeats \u03b1 arbitrarily many times. Assume that all consecutive pairs of states (vi\u22121, Vi) \u2208\u03c1(\u03b1) of n \u2208+ executions, whose valuations are recalled with YVi\u2261x\u2208Vx=xi and YVi\u22121 are plausible w.r.t. the model \u03b1, i.e., |=1\u2266i\u2266n(YVi\u22121\u2192\u03b1YVi) with YV\u2212=YV0 and YV+=YVn. Then, the sequence of states originates from an \u03b1* execution from YV0 to YVn, i.e., |=YV\u2212\u2192\u03b1*YV+.",
+                                "Proof. Follows directly from the transition semantics of \u03b1*: \u03c1(\u03b1*) =where \u03b1i+1\u2245(\u03b1; \u03b1i) and \u03b10 \u2245? true.",
+                                "We recall Theorem 1.",
+                                "Theorem 1 (Model monitor correctness). Let \u03b1* be provably safe, so |=\u03a6\u2192[\u03b1*]\u03c8. Let Vm=BV (\u03b1) \u222a FV (\u03c8). Let v0, v1, v2, v3 . . . \u2208n be a sequence of states, with v0\u03a6 and that agree on \u03a3/Vm, i.e., 0|\u03a3/V=k|\u03a3/Vfor all k. We define (, i+1) xm as xm evaluated in the state resulting from v by interpreting x+ as i+1(x) for all x \u2208 Vm, i.e., xvxm. If i, i+1) xm for all i < n then we have n  where",
+                                "Xm\u2261(\u03a6|const\u2192\u03b1YV+)\u2003\u2003(3)",
+                                "and \u03a6|const denotes the conditions of \u03a6 that involve only constants that do not change in \u03b1, i.e., FV (\u03a6|const) \u2229BV(\u03b1)=\u00f8.",
+                                "Proof. By induction over n. If n=0 then (0, 0) \u2208\u03c1(\u03b1*)trivially by definition of \u03c1 and \u03a6\u2192[\u03b1*]\u03c8 implies 0 \u03c8. For n>0 assume (0, n) |\u03c1(\u03b1*) and (n, n+1)  (\u03b1) \u039bx\u2208Vx=x+. Then there exists \u03bc such that (vn+v, \u03bc) \u2208\u03c1(\u03b1) and the two states agree on all variables except the ones modified by \u03b1, i.e., vn+v|\u03a3/BV(\u03b1=\u03bc|\u03a3/BB(\u03b1). Thus, \u03bc YV+, i.e. \u03bcx\u2208Vx=x+, which in turn yields \u03bc(x)=\u03bc(x+)=(vn+v(x+)=vn+1(x) (in other words, \u03bc|Vm=vn+1|Vm). Since also vn|\u03a3/Vwe get \u03bc=n+1 and (n, n+1) \u2208\u03c1(\u03b1). Hence (0, n+1) \u2208\u03c1(\u03b1*) because by induction hypothesis (0, n) \u2208\u03c1(\u03b1*) and we conclude n+1\u03c8 by assumption \u03a6\u2192[\u03b1]\u03c8 using 0\u03a6.",
+                                "We recall Theorem 2.",
+                                "Theorem 2 (Controller monitor correctness). Let \u03b1 of the canonical form \u03b1ctrl; \u03b1plant. Assume \u03a6\u2192[\u03b1*]\u03c8 has been proven with invariant \u03c6 as in (1). Let \u03a6|const\u03c8, as checked by xm (Theorem 1). Furthermore, let  be a post-controller state. If (v,) Xc with Xc\u2261\u03a6|const\u2192\u03b1ctrlYV+ = then we have that (v,) \u2208\u03c1(\u03b1ctrl) and \u03c6.",
+                                "Proof. Consider a state \u03a6|const\u03c6. Assume (v, ) Xc, i.e., Xc. Then there exists \u03bc such that , \u03bc) \u2208\u03c1(\u03b1ctrl) and the two states agree on all variables except the ones modified by \u03b1ctrl, i.e., |\u03a3/BV(\u03b1ctrl))=\u03bc|\u03a3/BV(\u03b1ctrl). Thus YV+, i.e., \u03bc|=xeVx=x+, which in turn yields \u03bc(x)=\u03bc(x+)=(x+)=(x) (in other words, \u03bc|Vc=Vc). Since also \u03bc|\u03a3.V=\u03a3/Vwe get \u03bc= and (v,) \u2208\u03c1(\u03b1ctrl). Then we have  \u03c6 because by assumption \u03c6\u2192[\u03b1ctrl;\u03b1plant]\u03c6 \u03c1(\u03b1plant) is reflexive as ODE can evolve for time 0.",
+                                "We recall Theorem 3.",
+                                "Theorem 3 (Prediction monitor correctness). Let \u03b1* be provably safe, i.e., \u03a6\u2192[\u03b1*]\u03c8 has been proved using invariant \u03c6 as in (1.) Let Vp=BV(\u03b1) \u222aFV([\u03b1]\u03c6). Let \u03a6|const \u03c6, as checked by Xm from Theorem 1. Further assume  such that (, ) \u2208\u03c1(\u03b1ctrl), as checked by Xc from Theorem 2. If (, ) Xp with Xp\u2261(\u03a6|const\u03c6) \u2192\u03b1ctrlYV+[\u03b1\u03b4plant]\u03c6), then we have for all (,w) \u2208\u03c1(\u03b1\u03b4plant) that w \u03c6.",
+                                "Proof. Consider a state  such that \u03a6|xonst\u03c6. Let  be some state such that (,) \u2208\u03c1(\u03b1ctrl). Then we have \u03c6 because by assumption \u03c6\u2192[\u03b1ctrl; \u03b1plant]\u03c6 and \u03c1(\u03b1\u03b4plant) is reflexive as ODE can evolve for time 0. Furthermore \u03a6|const since |\u03a3/BV(\u03b1ctrl)=|\u03a3/BV(\u03b1ctrl) and FV(\u03a6|const) \u2229BV(\u03b1ctrl) =\u00f8. Assume (,) Xp, i.e., Xp. Then there exists \u03bc such that \u03bcYV+[\u03b1\u03b4plant]\u03c6 with (, \u03bc) \u2208\u03c1(\u03b1ctrl) and the two states agree on all variables except the ones modified by \u03b1ctrl, i.e., |\u03a3/BV(\u03b1ctrl)=\u03bc|\u03a3/BV(\u03b1ctrl). Thus \u03bc(x)=\u03bc(x+)=(x+)=(x). (in other words, \u03bc|Vp=|Vp). However, from Xp we know that \u03bc[\u03b1\u03b4plant]\u03c6. Thus, by the coincidence lemma, [\u03b1\u03b4plant]\u03c6 since FV ([\u03b1\u03b4plant]\u03c6)  Vp and hence we have w  \u03c6 for all (,w) \u2208\u03c1(\u03b1\u03b4plant).",
+                                "Observe that this is also true for all intermediate times \u00e7\u2208[0,w(t)] by the transition semantics of differential equations, where w(t)\u2266\u2208 because \u03b1\u03b4plant is bounded by \u2208."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "recall Lemma 1",
+                                "prove Theorem 1 (Model monitor correctness)",
+                                "prove Theorem 2 (Controller monitor correctness)",
+                                "prove Theorem 3 (Prediction monitor correctness)",
+                                "state assumptions for Theorem 1",
+                                "state assumptions for Theorem 2",
+                                "state assumptions for Theorem 3"
+                            ],
+                            "num_characters": 3810,
+                            "outline_medium": [
+                                "recall lemma 1 (loop prior and posterior state)",
+                                "recall theorem 1 (model monitor correctness)",
+                                "recall theorem 2 (controller monitor correctness) and theorem 3 (prediction monitor correctness)"
+                            ],
+                            "outline_short": [
+                                "prove soundness of model, controller, and prediction monitors"
+                            ]
+                        },
+                        {
+                            "title": "A.3 Decidability and Computability",
+                            "paragraphs": [
+                                "From Lemma 1 it follows that online monitoring (i.e., monitoring the last two consecutive states) is permissible. So, ModelPlex turns questions [\u03b1*]\u03a6 and a*\u03a6 into [\u03b1]\u03a6 and \u03b1\u03a6, respectively. For decidability, we first consider canonical hybrid programs \u03b1 of the form \u03b1\u2261\u03b1ctrl; \u03b1plant where \u03b1ctrl and \u03b1plant are free of further nested loops.",
+                                "We split Theorem 4 (decidability and computability) into Theorem 5 (decidability) and Theorem 6 (computability) and prove them separately. To handle differential inequalities in dL formulas of the form [\u03b1\u03b4plant]\u03a6, the subsequent proofs additionally assume the rules for handling differential-algebraic equations in the dL calculus.",
+                                "Theorem 5 (Monitor correctness is decidable). Monitor correctness is decidable for canonical models of the form \u03b1\u2261\u03b1ctrl; \u03b1plant without nested loops, with solvable differential equations in \u03b1plant and disturbed plans \u03b1\u03b4plant with constant additive disturbance \u03b4 i.e., Xm\u2192\u03b1YV+,Xc\u2192\u03b1ctrlYV+, and Xp\u2192\u03b1YV+[\u03b1\u03b4plant]\u03a6) are decidable.",
+                                "Proof. From relative decidability of  (i.e.,  formulas without free variables) are decidable relative to an oracle for discrete loop invariants/variants and continuous differential invariants/variants. Since neither \u03b1ctrl nor \u03b1plant contain nested loops, we manage without an oracle for loop invariants/variants. Further, since the differential equation systems in \u03b1plant are solvable, we have an effective oracle for differential invariants/variants. Let Cl\u2200(\u03a6) denote the universal closure of  formula \u03a6 (i.e., Cl\u2200(\u03a6)\u2261\u2200z\u2208FV(\u03a6)z. \u03a6). Note that when F then also Cl\u2200(F) by a standard argument.",
+                                "Model monitor Xm\u2192\u03b1YV+: Follows from relative decidability of , because Cl\u2200(Xm\u03b1YV+) contains no free variables.",
+                                "Controller monitor Xc\u2192\u03b1ctrlYV+: Follows from relative decidability of , because Cl\u2200(Xc\u2192\u03b1ctrlYV+) contains no free variables.",
+                                "Prediction monitor Xp\u03b1ctrl(YV+[\u03b1\u03b4plant]\u03a6):-Decidability for \u03b1ctrl follows from case Xc\u2192\u03b1ctrlYV+ (controller monitor) above. It remains to show decidability of Xp\u2192\u03b1ctrl[\u03b1\u03b4plant]\u03a6, which by decidability of the controller monitor is (XpYV+)\u2192[\u03b1plant]\u03a6. Since the disturbance \u03b4 in \u03b1\u03b4plant is constant additive and the differential equations in \u03b1plant are solvable, we have the disturbance functions f(\u03b8,\u03b4) and g(\u03b8,\u03b4) applied to the solution as an oracle (By design, the disturbed plant \u03b1\u03b4plant also includes a clock x0, so the oracle additionally includes the trivial differential invariant x0\u22670) for differential invariants (i. e., the differential invariant is a pipe around the solution without disturbance). Specifically, to show (XpYV+)\u2192[\u03b1\u03b4plant]\u03a6 by Def. 2 we have to show (Xp\u039bYV+)\u2192[x0:=0; {\u03b8\u2212\u03b4\u2266x\u2032\u2266\u03b8+\u03b4&H \u039bx0 \u2266\u03b5}]\u03a6 We proceed with only (Xp\u039bYV+) \u2192[x0:=0{x\u2032\u2266\u03b8+\u03b4&H \u039bx0\u2266\u03b5}]\u03a6 p since the case \u03b8\u2212\u03b4\u2266x\u2032 follows in a similar manner. By definition of \u03b1\u03b4plant we know 0\u2266x0, and hence continue with (Xp\u039bYV+)\u2192[{x\u2032\u2266\u03b8+\u03b4&H\u039b0\u2266x0\u2266\u03b5}]\u03a6 by differential cut 0\u2266x0. Using the differential cut rule, we further supply the oracle solx+\u03b4x0, where solx denotes the solution of x\u2032=\u03b8 in \u03b1plant and \u03b4x0 the solution for the disturbance since \u03b4 is constant additive. This leads to two proof obligations:",
+                                "Prove oracle (Xp\u039bYV+)\u2192[x\u2032\u2266\u03b8+\u03b4&0\u2266x0\u2266\u03b5]x\u2266solx+\u03b4x0, which by rule differential invariant is valid if we can show 0\u2266x0\u2266\u03b5\u2192x\u2032\u2266sol\u2032x+(\u03b4x0)\u2032 where the primed variables are replaced with the respective right-hand side of the differential equation system. From Def. 2 we know that x\u20320=1 and \u03b4\u2032=0 and since solx is the solution of x\u2032=\u03b8 in \u03b1plant we further know that sol\u2032x=\u03b8; hence we have to show 0\u2266x0\u2266\u03b5\u2192\u03b8+\u03b4\u2266\u03b8+\u03b4, which is trivially true.",
+                                "Use oracle (Xp\u039bYV+)\u2192[x\u2032\u2266\u03b8+\u03b4&H\u039b0\u2266x0\u2266\u03b5\u039bx\u2266solx+\u03b4x0]\u03c6, which by rule differential weaken is valid if we can show",
+                                "(Xp\u039bYV+)\u2192\u2200\u03b1((H\u039b0\u2266x0\u2266\u03b5\u039bx\u2266solx+\u03b4x0)\u2192\u03a6)",
+                                "where \u2200\u03b1 denotes the universal closure w.r.t. x, i. e., \u2200x. But, if Xp is a correct monitor, this is provable by quantifier elimination. Furthermore, we cannot get a better result than differential weaken, because the evolution domain constraint contains the oracle's answer for the differential equation system, which characterizes exactly the reachable set of the differential equation system.",
+                                "We conclude that the oracle is proven correct and its usage is decidable.",
+                                "For computability, we start with a theoretical proof on the basis of decidability, before we give a constructive proof, which is more useful in practice.",
+                                "Theorem 6 (Monitor synthesis is computable). Synthesis of Xm, Xc, and Xp monitors is computable for canonical models of the form \u03b1\u2261\u03b1ctrl; \u03b1plant without nested loops, with solvable differential equations in \u03b1plant and plants \u03b1\u03b4plant with constant additive disturbance \u03b4, i. e., synthm: \u03b1YV+\u2192Xm, synthc: \u03b1ctrlYV+\u2192Xc, and synthp: \u03b1(YV+[\u03b1plant]\u03a6)\u2192Xp are computable.",
+                                "Proof. Follows immediately from Theorem 5 with recursive enumeration of monitors.",
+                                "We give a constructive proof of Theorem 6. The proof is based on the observation that, except for loop and differential invariants/variants, rule application in the  calculus is deterministic: we know that, relative to an oracle for first-order invariants and variants, the  calculus gives a semidecision-procedure for  formulas with differential equations having first-order definable flows.",
+                                "Proof. For the sake of a contradiction, suppose that monitor synthesis stopped with some open sequent not being a first-order quantifier-free formula. Then, the open sequent either contains a hybrid program with nondeterministic repetition or a differential equation at top level, or it is not quantifier-free. But this contradicts our assumption that both \u03b1ctrl and \u03b1plant are free from loops and that the differential equations are solvable and disturbance is constant, in which case for",
+                                "Model monitor synthesis Xm: the solution rule \u2032 would make progress, because the differential equations in \u03b1plant are solvable; and for",
+                                "Prediction monitor synthesis Xp: the disturbance functions f(\u03b8,\u03b4) and g(\u03b8,\u03b4) applied to the solution provide differential invariants (see proof of Theorem 5) so that the differential cut rule, the differential invariant rule, and the differential weakening rule would make progress.",
+                                "In the case of the open sequent not being quantifier-free, the quantifier elimination rule QE would be applicable and turn the formula including quantifiers into an equivalent quantifier-free formula. Hence, the open sequent neither contains nondeterministic repetition, nor a differential equation, nor a quantifier. Thus we conclude that the open sequent is a first-order quantifier-free formula."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "state decidability and computability problem",
+                                "split Theorem 4 into Theorem 5 and Theorem 6",
+                                "prove Theorem 5 (Monitor correctness is decidable)",
+                                "prove decidability of Xm, Xc, and Xp monitors",
+                                "prove Theorem 6 (Monitor synthesis is computable)",
+                                "give constructive proof of Theorem 6",
+                                "handle differential equations in \u03b1plant",
+                                "handle disturbance functions f(\u03b8,\u03b4) and g(\u03b8,\u03b4)",
+                                "use differential cut rule and differential invariant rule",
+                                "use differential weakening rule",
+                                "use quantifier elimination rule",
+                                "conclude decidability and computability"
+                            ],
+                            "num_characters": 6462,
+                            "outline_medium": [
+                                "state decidability and computability problem",
+                                "split theorem 4 into theorem 5 (decidability) and theorem 6 (computability)",
+                                "prove theorem 5 (decidability)",
+                                "prove theorem 6 (computability) using decidability",
+                                "give constructive proof of theorem 6",
+                                "conclude decidability and computability of Xm, Xc, and Xp monitors"
+                            ],
+                            "outline_short": [
+                                "prove decidability of monitor correctness",
+                                "prove computability of monitor synthesis",
+                                "provide constructive proof of monitor synthesis"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "B. Water Tank Monitor Specification Conjecture Analysis",
+                    "paragraphs": [
+                        "Proof 1 shows a complete sequence of proof rules applied to the water tank specification conjecture of Example 2 on page 7, with \u03a6\u2261\u03b5>0 and Y+\u2261x=x+\u039bf =f+\u039bt =t+.",
+                        "\\(\\left( {\\Lambda \ue89e\\; \ue89er} \\right)\ue89e\\frac{{\\Gamma \\vdash \\varphi},{\\Gamma \\vdash \\psi},\\Delta}{{\\Gamma \\vdash {\\varphi\\bigwedge\\psi}},\\Delta}\ue89e({Wr})\ue89e\\frac{\\Gamma \\vdash \\Delta}{{\\Gamma \\vdash \\varphi},\\Delta}\ue89e({QE})\ue89e\\frac{{{QE}\ue8a0(\\varphi)}_{1}}{\\varphi}\\)\n\\(\\left( {\\langle;\\rangle} \\right)\ue89e\\frac{{\\langle\\alpha\\rangle}\ue89e{\\langle\\beta\\rangle}\ue89e\\varphi}{{\\langle{\\alpha;\\beta}\\rangle}\ue89e\\varphi}\ue89e\\left( {\\langle?\\rangle} \\right)\ue89e\\frac{H\\bigwedge\\psi}{\\langle{?{{H\\rangle}\ue89e\\psi}}}\ue89e\\left( {\\langle\\text{:=}\\rangle} \\right)\ue89e\\frac{\\varphi_{x}^{\\theta}}{{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e\\theta}\\rangle}\ue89e\\varphi}\ue89e\\left( {\\langle*\\rangle} \\right)\ue89e\\frac{\\exists{X\ue89e{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89eX}\\rangle}\ue89e\\varphi_{2}}}{{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu}*}\\rangle}\ue89e\\varphi}\\)\n\\(\\left( {\\langle^{\\prime}\\rangle} \\right)\ue89e\\frac{\\exists{t \\geq {0\ue89e\\left( {{\\left( {\\forall{0 \\leq \\overset{\\_}{t} \\leq {t\ue89e{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89e{y\ue8a0\\left( \\overset{\\_}{t} \\right)}}\\rangle}\ue89eH}}} \\right)\\bigwedge{\\langle{x\ue89e\\mspace{14mu} \ue89e\\text{:=}\ue89e\\mspace{14mu} \ue89ey*(t)}\\rangle}}\ue89e\\varphi} \\right)_{3}}}}{{\\langle{x^{\\prime} = {{\\theta\\&}\ue89e\\mspace{14mu} \ue89eH}}\\rangle}\ue89e\\varphi}\ue89e\\left( {\\exists r} \\right)\ue89e\\frac{{\\Gamma \\vdash {\\varphi \ue8a0(\\theta)}},{\\exists{x\ue89e\\; \ue89e{\\varphi \ue8a0(x)}}},\\Delta_{4}}{{\\Gamma \\vdash {\\exists{x\ue89e\\; \ue89e{\\varphi \ue8a0(x)}}}},\\Delta}\\)\n\\(\\left( {i\\exists} \\right)\ue89e\\frac{{\\Gamma \\vdash {\\exists{\\vdash {{\\langle\\rangle}\ue89e{X\ue8a0\\left( {\\Lambda_{i}\ue8a0\\left( {\\Phi_{i} \\vdash \\psi_{i}} \\right)} \\right)}}}}},\\Delta_{5}}{\\Gamma,{\\Phi_{1} \\vdash \\psi_{1}},{\\Delta\\cdots\\Gamma},{\\Phi_{n} \\vdash \\psi_{n}},\\Delta}\ue89e\\left( {\\exists\\sigma} \\right)\ue89e\\frac{\\varphi_{x}^{\\theta}}{\\exists{x\ue8a0\\left( {x = {\\theta\\bigwedge{\\varphi \ue8a0(x)}}} \\right)}}\\)",
+                        "1 iff \u03a6\u2261QE(\u03a6), \u03a6 is a first order real arithmetic formula, QE)(\u03a6) is a quantifier free formula",
+                        "2 X is a new logical variable p 3 t and {tilde over (t)} are fresh logical variables and x:=y(t) is the discrete assignment belonging to the solution y of the differential equation with constant symbol x as symbolic initial value",
+                        "4 \u03b8 is an arbitrary term, often a new (existential) logistical variable X.",
+                        "5 Among all open branches, free logical variable X only occurs in the branches \u0393, \u03a6, \u251c\u03c8, \u0394",
+                        "Proof 1. Analysis of the water tank monitor specification conjecture (plant is an abbreviation for x\u2032=f, t\u2032=1 & x\u22670 t\u2266\u03b5)",
+                        "[00116] Proof 1: Analysis of the water tank monitor specification conjecture (plant is an abbreviation for x\u2032=f, t\u2032=1 & x \u22670t\u2266 \u03b5)"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Example 7",
+                            "paragraphs": [
+                                "We start at the point where we have to handle the differential inequalities. First, we eliminate the differential inequalities by rephrasing them as differential-algebraic constraints in step (DE). Then, we refine by instantiating the existential quantifiers with the worst-case evolution in step (DR). The resulting differential equation has polynomial solutions and, thus, we can use \u2032 and proceed with the proof as before.",
+                                "As expected, we get a more permissive monitor specification. One conjunct of the monitor specification is shown in (Xm1) Such a monitor specification says that there exists a real flow F, a real time T, and a real level Xs, such that the measured flow f+, the clock t+, and the measured level x+ can be explained with the model."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze water tank monitor specification conjecture using differential-algebraic constraints"
+                            ],
+                            "num_characters": 755,
+                            "outline_medium": [
+                                "illustrate handling of differential inequalities"
+                            ],
+                            "outline_short": [
+                                "handle differential inequalities in water tank monitor specification"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "show proof rules applied to water tank specification conjecture",
+                        "define proof rules for hybrid programs",
+                        "define proof rules for differential equations",
+                        "analyze water tank monitor specification conjecture",
+                        "give example of monitor specification"
+                    ],
+                    "num_characters": 2682,
+                    "outline_medium": [
+                        "show proof 1 (analysis of water tank monitor specification conjecture)",
+                        "illustrate example 7 (handling differential inequalities)"
+                    ],
+                    "outline_short": [
+                        "analyze water tank monitor specification conjecture"
+                    ]
+                },
+                {
+                    "title": "C. Monitor Synthesis and Fallback Controller Design",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "C.1 Design-By-Contract Monitoring",
+                            "paragraphs": [
+                                "Preconditions, postconditions and invariants are crucial conditions in CPS design. Monitors for these conditions can check (i) whether or not it is safe to start a particular controller (i. e., check that the precondition of a controller is satisfied), (ii) whether or not a controller complies with its specification (i. e., check that a controller delivers set values that satisfy its post condition), and (iii) whether or not the system is still within its safety bounds (i. e., check that the loop invariant of \u03b1* is satisfied).",
+                                "Precondition and post condition monitors are useful to decide whether or not it is safe to invoke a controller in the current state, and whether or not to trust a controller output. An invariant monitor of a CPS \u03b1* captures the main assumptions that have to be true throughout system execution. When an invariant monitor is unsatisfied, it may no longer be safe to run the CPS; a fail-safe controller can act as a mitigation strategy.",
+                                "Design-by-contract monitors are useful to monitor specific design decisions, which are explicitly marked in the model. Our approach systematically creates monitors for a complete specification of the behavior of the model."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate monitors for CPS design",
+                                "describe monitor types and usage"
+                            ],
+                            "num_characters": 1192,
+                            "outline_medium": [
+                                "motivate monitors for CPS design"
+                            ],
+                            "outline_short": [
+                                "motivate monitors for CPS design"
+                            ]
+                        },
+                        {
+                            "title": "C.2 Monitor Synthesis",
+                            "paragraphs": [
+                                "Once we found a model monitor, controller monitor, or prediction monitor specification, we want to turn it into an actual monitor implementation (e. g., in C). The main challenge is to reliably transfer the monitor specification, which is evaluated on , into executable code that uses floating point representations. We use the interval arithmetic library Apron to represent each real arithmetic value with an interval of a pair of floating point numbers. The interval reliably contains the real.",
+                                "For certification purposes one still has to argue for the correctness of the actual machine code of the synthesized monitor. This entails that the transformation from the monitor specification as a first-order formula into actual code that evaluates the formula must be formally verified. If the synthesized code is still a high-level language, a certified compiler, can be used to produce machine code. Such a comprehensive proof chain suitable for certification is part of our ongoing research."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe monitor synthesis approach"
+                            ],
+                            "num_characters": 994,
+                            "outline_medium": [
+                                "synthesize monitor implementation"
+                            ],
+                            "outline_short": [
+                                "synthesize monitor implementation"
+                            ]
+                        },
+                        {
+                            "title": "C.3 Designing for a Fail-Safe Fallback Controller",
+                            "paragraphs": [
+                                "When we design a system for a fail-safe fallback controller ctrlsafe, it is important to know within which bounds the fail-safe controller can still keep our CPS safe, and which design limits we want a controller implementation to obey. The invariant of a CPS with the fail-safe fallback controller describes the safety bounds. When we start the fail-safe fallback controller ctrlsafe in a state where its invariant G is satisfied, it will guarantee to keep the CPS in a state that satisfies the safety property \u03c8.",
+                                "So, to safely operate an experimental controller ctrlexp, we want a monitor that informs us when the experimental controller can no longer guarantee the invariant of the fail-safe controller or when it is about to violate the design limits.",
+                                "A design for a CPS with a fail-safe fallback controller, therefore, involves proving two properties. First, we prove that the fail-safe controller ctrlsafe ensures the safety property \u03c8 as in formula (4) below. This property is only provable if we discover an invariant G for the CPS with the fail-safe controller. Then we use G as the safety condition for generating a prediction monitor.",
+                                "\u00f8\u2192[(ctrlsafe;plant)*@inv(G)]\u03c8",
+                                "With this generic structure in mind, we can design for a fallback controller invoked by a model monitor Xm, controller monitor Xc, or prediction monitor Xp. Upon violation of either Xm, Xc, or Xp by the actual system execution, the set values of a fail-safe controller are used instead."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate fail-safe fallback controller",
+                                "describe design requirements and properties"
+                            ],
+                            "num_characters": 1466,
+                            "outline_medium": [
+                                "design fail-safe fallback controller"
+                            ],
+                            "outline_short": [
+                                "design fail-safe fallback controller"
+                            ]
+                        },
+                        {
+                            "title": "D. Monitor Synthesis Algorithm",
+                            "paragraphs": [
+                                "Algorithm 1 lists the ModelPlex specification conjecture analysis algorithm 106, which turns a specification conjecture into an actual monitor, and is shown in flow-chart form in FIG. 4. The algorithm takes a hybrid system model \u03b1, a set of variables V that we want to monitor, and an initial condition \u00f8 including constraints on the variables not changed in \u03b1. (Usually, we want a monitor for all the bound variables of the hybrid system model, i.e., V=BV (\u03b1)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "outline monitor synthesis algorithm"
+                            ],
+                            "num_characters": 461,
+                            "outline_medium": [
+                                "outline monitor synthesis algorithm"
+                            ],
+                            "outline_short": [
+                                "outline monitor synthesis algorithm"
+                            ]
+                        },
+                        {
+                            "title": "E. Simulation",
+                            "paragraphs": [
+                                "To illustrate the behavior of the water tank model with a fallback controller, we created two monitors: Monitor Xm validates the complete model (as in the examples throughout this work) and is executed at the beginning of each control cycle (before the controller runs). Monitor Xc validates only the controller of the model \u03b1 (compares prior and post state of f:=*; ?",
+                                "\\(\\left. {{- 1} \\leq f \\leq \\frac{m - x}{\u025b}} \\right)\\)",
+                                "the controiier but before control actions are issued. Thus, monitor Xc resembles conventional runtime verification approaches, which do not check CPS behavior for compliance with the complete hybrid model. This way, we detect unexpected deviations from the model at the beginning of each control cycle, while we detect unsafe control actions immediately before they are taken. With only monitor Xm in place we would require an additional control cycle to detect unsafe control action, whereas with only monitor Xc in place we would miss deviations from the model. Note that we could run monitor Xm in place of Xc to achieve the same effect. But monitor Xm implements a more complicated formula, which is unnecessary when only the controller output should be validated.",
+                                "FIG. 2 shows a plot of the variable traces of one simulation run. In the simulation, we ran the pump controller every 2 s (\u03b5=2 s, indicated by the grid for the abscissa and the marks on sensor and actuator plots). The controller was set to pump with",
+                                "\\(\\frac{5\ue89e\\left( {m - x_{0}} \\right)}{\u025b} = \\frac{5}{2}\\)",
+                                "for the first three controller cycles, which is unsafe on the third controller cycle. Monitor B immediately detects this violation at t=4, because on the third controller cycle setting",
+                                "\\(f = \\frac{5}{2}\\)",
+                                "violates",
+                                "\\(f \\leq {\\frac{m - x_{1}}{\u025b}.}\\)",
+                                "The fail-safe action at t=4 drains the tank and, after that, normal operation continues until t=12. Unexpected disturbance",
+                                "\\(x^{\\prime} = {f + \\frac{1}{20}}\\)",
+                                "occurs throughout t=[12,14], which is detected by monitor Xm. Note, that such a deviation would remain undetected with conventional approaches (monitor Xc is completely unaware of the deviation). In this simulation run, the disturbance is small enough to let the fail-safe action at t=14 keep the water tank in a safe state."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce simulation setup",
+                                "describe monitor Xm and Xc",
+                                "present simulation results",
+                                "discuss benefits of approach"
+                            ],
+                            "num_characters": 2242,
+                            "outline_medium": [
+                                "illustrate monitor behavior",
+                                "demonstrate simulation results"
+                            ],
+                            "outline_short": [
+                                "illustrate fallback controller behavior"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A process of synthesizing a monitor for a cyber-physical system (CPS) from a proven hybrid model, comprising the steps of:\na. deriving a monitor specification from said hybrid model;\nb. transforming said model and said monitor specification into a set of monitor conditions; and\nc. generating code implementing said set of monitor conditions to create said monitor.",
+        "2. The process of claim 1 wherein said CPS includes a controller running control software, said controller reading sensors and controlling actuators, and wherein said hybrid model models both the actions of said controller and the resulting changes in state of said CPS.",
+        "3. The process of claim 2 further comprising the step of executing said monitor in conjunction with said control software, to guarantee compliance of said CPS with said proven hybrid model.",
+        "4. The process of claim 2 wherein said step of transforming said model and monitor specification into a set of monitor conditions further comprises applying a theorem prover to said model and said monitor specification.",
+        "5. The process of claim 2 wherein said step of deriving a set of monitor conditions further comprises analyzing said monitor specification and applying proof rules to remove any differential equations to produce said set of monitor conditions containing only first-order logic.",
+        "6. The process of claim 2 where said monitor consists of a model monitor, a controller monitor and a prediction monitor.",
+        "7. The process of claim 6 wherein said model monitor compares a current state of said CPS with a previous state of said CPS and determines if the difference between said current state and said previous state is in compliance with said proven hybrid model.",
+        "8. The process of claim 6 wherein said controller monitor monitors said controller to check compliance with said proven hybrid model.",
+        "9. The process of claim 6 wherein said prediction monitor allows deviations of said cyber-physical system from said hybrid model to account for real-world imperfections.",
+        "10. The process of claim 7 wherein said model monitor, said controller monitor an said prediction monitor read said sensors to determine the current state of said CPS.",
+        "11. The process of claim 10 wherein said model monitor runs prior to said control software and determines if physical behavior which occurred between said previous state of said CPS and said current state of said CPS is in compliance with said proven hybrid model.",
+        "12. The process of claim 11 wherein said model monitor will raise an error if the difference between said current state and said previous state is not in compliance with said proven hybrid model.",
+        "13. The process of claim 8 wherein said controller monitor runs after said controller software and determines if physical actions to be taken by said controller will result in a said CPS being in compliance with said proven hybrid model.",
+        "14. The process of claim 13 wherein said controller monitor will raise an error if said physical actions to be taken by said controller will result in a said CPS not being in compliance with said proven hybrid model.",
+        "15. The process of claim 9 wherein said prediction monitor runs after said control software and determines if physical actions to be taken by said controller will result in a said CPS being in compliance with said proven hybrid model in the presence of bounded deviations between said CPS and said proven hybrid model.",
+        "16. The process of claim 15 wherein said prediction monitor will raise an error if said physical actions to be taken by said controller will result in a said CPS not being in compliance with said proven hybrid model.",
+        "17. The process of claim 1 wherein said proven hybrid model is expressed in differential dynamic logic.",
+        "18. The process of claim 17 wherein said proven hybrid model comprises a set of formulas of the form:\n\n\n\u03a6\u2192[\u03b1*]\u03c8 with invariant \u03c8\u2192[\u03b1]\u03c8 s.t \u03a6\u2192\u03c6 and \u03c6\u2192\u03c8\u2003\u2003(1)",
+        "19. The process of claim 1 wherein said monitor specification comprises a set of specification conjectures for model monitors of the form:\n\n\n\u00f8|constant\u2192\u03b1YV+.",
+        "20. The process of claim 1 wherein said monitor specification comprises a set of specification conjectures for controller monitors of the form:\n\n\n\u00f8|const\u2192\u03b1ctrlYV+.",
+        "21. The process of claim 1 wherein said monitor specification comprises a set of specification conjectures for prediction monitors of the form:\n\n\n\u00f8|const\u03c6)\u2192\u03b1ctrl(YV+[\u03b1\u03b4plant]\u03c6).",
+        "22. The process of claim 1 wherein said steps are automated if said proven hybrid model is of the form (\u03b1ctrl;\u03b1plant) without nested loops, with solvable differential equations in \u03b1plant and a disturbed plant \u03b1\u03b4plant with constant additive disturbance \u03b4.",
+        "23. The process of claim 11 wherein compliance with said model monitor guarantees that the properties of said proven hybrid model are present in said CPS before said controller software is executed.",
+        "24. The process of claim 13 wherein said compliance with said controller monitor guarantees that the properties of said proven hybrid model are present in said CPS after said controller software was executed.",
+        "25. The process of claim 15 wherein compliance with said prediction monitor guarantees that the properties of said proven hybrid model will still be present in future states of said CPS.",
+        "26. The process of claim 1 wherein said steps of said process are automated in accordance with an algorithm."
+    ]
+}

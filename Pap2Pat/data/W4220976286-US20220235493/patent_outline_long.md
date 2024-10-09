@@ -1,0 +1,247 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND OF THE INVENTION
+
+- motivate carbon fiber
+- describe applications
+- summarize properties
+- describe production process
+- limitations of wet spinning
+- limitations of melt spinning
+- motivate need for improvement
+- summarize industry challenges
+
+## SUMMARY OF THE INVENTION
+
+- introduce plasticized melt spinning
+- summarize advantages
+- describe PAN fiber production
+- describe washing step
+- describe ionic liquid properties
+- describe washing step advantages
+- describe carbon fiber production
+- describe stabilization process
+- summarize benefits
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce polyacrylonitrile (PAN) fiber production method
+- advantages of method over conventional methods
+- define PAN
+- describe PAN polymer composition
+- describe PAN copolymer composition
+- describe non-PAN copolymer units
+- provide examples of unsaturated carboxylate precursor molecules
+- provide examples of unsaturated amide precursor molecules
+- describe PAN-acrylic acid copolymers
+- describe other copolymers of PAN
+- specify PAN composition ranges
+- describe mixing PAN with ionic liquid
+- describe methods for producing homogeneous mixture
+- specify temperature ranges for mixing
+- describe inert atmosphere for mixing
+- specify PAN:IL weight ratios
+- describe ionic liquid properties
+- describe ionic liquid formula
+- describe anionic component of ionic liquid
+- describe cationic component of ionic liquid
+- specify ionic liquid purity levels
+- describe ionic liquid thermal resilience
+- describe counteranion of ionic liquid
+- describe inorganic counteranions
+- describe organic counteranions
+- specify excluded counteranions
+- describe cation of ionic liquid
+- describe ammonium cation
+- describe heterocyclic ring having positively-charged ring nitrogen atom
+- provide examples of heterocyclic rings
+- describe fused charged rings
+- describe substituted cationic rings
+- describe imidazolium-based ionic liquid
+- provide general formula for imidazolium-based ionic liquid
+- describe R1, R2, and R3 in imidazolium-based ionic liquid
+- specify minimum and maximum carbon atoms in R1, R2, and R3
+- describe delocalized double bonds in imidazolium ring
+- define ionic liquid formula
+- describe counteranion options
+- describe imidazolium portion options
+- describe R1, R2, and R3 options
+- describe saturated straight-chained hydrocarbon groups
+- describe saturated branched hydrocarbon groups
+- describe saturated cyclic hydrocarbon groups
+- describe unsaturated straight-chained hydrocarbon groups
+- describe unsaturated branched hydrocarbon groups
+- describe unsaturated cyclic hydrocarbon groups
+- describe hydrocarbon groups with heteroatoms
+- describe oxygen-containing hydrocarbon groups
+- describe nitrogen-containing hydrocarbon groups
+- describe fluorine-containing hydrocarbon groups
+- describe ionic liquids with imidazolium-based cationic components
+- list examples of imidazolium-based ionic liquids
+- describe substitution options for hydrogen atoms at 4- and 5-positions
+- describe substitution options for R3 at the 2-position
+- describe bi-imidazolium, tri-imidazolium, or tetra-imidazolium cationic portions
+- describe nitrile group substitutions
+- introduce imidazolyl-containing bicyclic ring systems
+- describe formulas (1a) and (1b)
+- specify R9 and R10 groups
+- describe substituting groups
+- introduce N-hydrocarbylpyridinium-based ionic liquids
+- describe formula (2)
+- specify R4 groups
+- describe substituting groups
+- introduce quaternary ammonium ionic liquids
+- describe formula (3)
+- specify R5, R6, R7, and R8 groups
+- describe substituting groups
+- introduce cyclic guanidinium-based ionic liquids
+- describe formula (4)
+- specify R11, R12, R13, R14, R15, and R16 groups
+- describe interconnections of R11, R12, R13, R14, R15, and R16 groups
+- describe substituting groups
+- describe counteranion (X−)
+- summarize embodiments of anion (X−)
+- define cyclic guanidinium-based ionic liquid structure
+- describe ring carbon atom replacement with heteroatom
+- describe hydrogen atom substitution with other groups
+- introduce piperidinium-based ionic liquid structure
+- describe ring carbon atom replacement with heteroatom
+- describe hydrogen atom substitution with other groups
+- introduce pyrrolidinium-based ionic liquid structure
+- describe ring carbon atom replacement with heteroatom
+- describe hydrogen atom substitution with other groups
+- introduce phosphonium-based ionic liquid structure
+- describe R groups with or without heteroatom substitution
+- provide examples of phosphonium-based ionic liquids
+- describe counteranion options
+- describe anion options
+- describe phosphonium ring formation
+- describe ring carbon atom replacement with heteroatom
+- describe hydrogen atom substitution with other groups
+- introduce sulfonium-based ionic liquid structure
+- describe R groups with or without heteroatom substitution
+- provide examples of sulfonium-based ionic liquids
+- describe counteranion options
+- describe anion options
+- describe sulfonium ring formation
+- describe ring carbon atom replacement with heteroatom
+- describe hydrogen atom substitution with other groups
+- exclude certain ionic liquid combinations
+- describe melt spinning process
+- describe washing step to remove ionic liquid
+- describe washing solvent options
+- describe ionic liquid recovery
+- introduce carbon fiber production method
+- describe thermal oxidative stabilization process
+- describe carbonization process
+- describe PAN fiber stabilization process
+- apply tension and/or magnetic field
+- control temperature and rate of temperature increase
+- specify magnetic field strength and frequency
+- position magnet relative to PAN fiber
+- vary magnetic field strength over time
+- apply axial tension
+- specify axial tension strength
+- apply electromagnetic, plasma, or particle beam radiation
+- describe carbonization process
+- specify carbonization temperature
+- specify carbonization time
+- describe low temperature carbonization step
+- describe high temperature carbonization step
+- specify temperature ranges for carbonization steps
+- describe graphitization process
+- specify graphitization temperature
+- describe atmosphere for carbonization and graphitization
+- specify inert gas flow rate
+- include reactive functionalizing species
+- describe functionalized groups on carbonized fiber
+- specify pressure for carbonization and graphitization
+- apply stress during carbonization and/or graphitization
+- specify stress strength
+- apply electromagnetic, plasma, or particle beam radiation
+- describe properties of carbonized fiber
+- specify tensile strength
+- specify elastic modulus
+- specify elongation
+- specify thermal conductivity
+- describe crystallinity of carbonized fiber
+- specify nitrogen content
+- include additional elements in carbonized fiber
+- specify form of carbonized fiber
+- specify thickness of carbonized fiber
+- describe construction of yarn, fabric, mesh, or felt
+- specify non-porous and defect-free properties
+- provide examples of invention
+- describe scope of invention
+- conclude description of invention
+
+## EXAMPLES
+
+- introduce experiments on PAN fibers
+- list materials used
+- describe synthesis of ionic liquids
+- depict structures of ionic liquids
+- prepare PAN composite melts
+- perform plasticized melt spinning of PAN fibers
+- recover ionic liquids
+- measure surface morphologies using SEM
+- determine thermal performance using DSC
+- calculate carbon yield using TGA
+- measure viscosity of PAN-IL composites
+- analyze mechanical properties of PAN fibers
+
+### Results and Discussion
+
+- thermophysical characterization of ILs, PAN, and PAN-IL composites
+- introduce DSC experiments
+- describe water removal from samples
+- show DSC thermograms of neat PAN and ILs
+- explain endothermic phase transition peak
+- describe PAN melting behavior
+- motivate understanding of plasticization effects
+- show DSC curves of PAN composite melts
+- explain glass transition and melting behavior
+- describe effect of IL structure on Tg and Tm
+- compare carbon yields of composites
+- explain role of ILs in aligning polymer chains
+- introduce rheology experiments
+- describe rheology measurements
+- explain viscosity profile
+- show effect of PAN concentration on viscosity
+- explain increase in viscosity with PAN concentration
+- select temperature and PAN concentration for melt spinning
+- introduce melt spinning experiments
+- describe melt spinning apparatus
+- show spinner head and spun fibers
+- describe fiber formation process
+- select ILs for fiber formation experiments
+- characterize melt spun PAN fibers
+- show SEM images of fibers
+- describe surface morphology and cross-section of fibers
+- analyze surface morphology after IL removal
+- show DSC curves of PAN fibers
+- explain exothermic performances of fibers
+- describe thermal stability of fibers
+- show TGA plots of fibers
+- explain weight loss and carbon yield
+- compare carbon yields of fibers
+- introduce FTIR experiments
+- show FTIR spectra of fibers
+- explain evolution of PAN structure
+- describe IR bands of ILs and PAN
+- analyze C≡N stretching band
+- explain cyclization and dehydrogenation reactions
+- show XRD patterns of fibers
+- describe crystallinity and crystal size of fibers
+- compare crystallinity and crystal size of fibers
+- introduce mechanical testing of fibers
+- describe single fiber tensile testing
+- show mechanical properties of fibers
+- compare mechanical properties of as-spun and washed fibers
+- explain increase in elastic modulus and tensile strength
+- conclude favorable structure transformation during fiber washing
+

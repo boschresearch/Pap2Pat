@@ -1,0 +1,209 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce heart transplantation
+- describe primary graft dysfunction
+- discuss limitations of current methods
+- motivate need for improved techniques
+
+## SUMMARY
+
+- introduce PGD risk identification method
+- describe collecting sample and measuring PGD marker
+- quantify PGD risk value using MCCV model
+- identify PGD risk based on PGD risk value
+- introduce additional markers for PGD risk value
+- describe assessing therapy effect on heart transplant
+- identify clinical variables of subject
+- introduce post-transplant survival prediction method
+- describe collecting sample and measuring marker
+- quantify transplant risk value using MCCV model
+- predict post-transplant survival based on transplant risk value
+- introduce additional markers for transplant risk value
+- describe providing therapy based on transplant risk value
+
+## DETAILED DESCRIPTION
+
+- define terms used in the patent
+- provide open-ended transitional phrases
+- define "about" or "approximately"
+- define "coupled"
+- define "subject"
+- introduce method for identifying PGD risk
+- collect sample from subject
+- measure PGD marker level from sample
+- provide PGD risk value
+- identify PGD risk based on PGD risk value
+- specify sample types
+- obtain subject characteristics
+- specify characteristics
+- calculate MELD score
+- specify clinical risk scores
+- measure PGD marker level
+- specify PGD markers
+- measure additional marker level
+- specify additional markers
+- describe mass spectrometry analysis
+- describe ELISA assay
+- compare ELISA and mass spectrometry results
+- perform protein expression analysis
+- evaluate protein expression distributions
+- calculate differential protein expression signature
+- estimate protein expression association to PGD
+- perform pathway analysis using GSEA
+- calculate NES and p-value
+- assess protein prediction contribution
+- provide PGD risk value using adaptive MCCV model
+- specify features used in MCCV model
+- estimate prediction variance and PGD risk value
+- perform bootstrapping analysis
+- perform permutation analysis
+- evaluate differences in bootstrap and permutation distributions
+- use machine learning models for prediction
+- sample patient probabilities to derive AUROC performance metric
+- calculate marker performances
+- use MCCV technique for predicting PGD risk
+- provide training set for machine learning
+- generate putative PGD classifiers
+- apply average marker importance to provide PGD risk
+- identify PGD risk based on PGD risk value
+- evaluate effect of therapy on heart transplant
+- provide system for predicting PGD and/or treating/preventing PGD
+- specify system components
+- configure processor to collect sample, measure PGD marker level, and provide PGD risk value
+- introduce method for predicting post-transplant survival
+- obtain characteristics of subject
+- define cardiomyopathy factors
+- define transplant factors
+- define hemodynamics
+- define lab values
+- define medications
+- define clinical variables
+- calculate RADIAL score
+- calculate MELD score
+- measure post-transplant survival marker
+- describe mass spectrometry analysis
+- generate reference sample
+- perform protein expression analysis
+- evaluate protein expression distributions
+- calculate differential protein expression signature
+- perform pathway analysis using GSEA
+- assess protein prediction contribution
+- provide transplant risk value
+- describe adaptive MCCV model
+- perform bootstrapping analysis
+- perform permutation analysis
+- evaluate differences in bootstrap and permutation distributions
+- describe machine learning model
+- perform prediction of risk to survival
+- describe MCCV technique
+- provide training set for machine learning
+- optimize machine learning model hyperparameters
+- generate putative transplant risk classifiers
+- apply logistic equation to risk score
+- identify likelihood of post-transplant survival
+- evaluate characteristic of subject
+- evaluate level of LK
+- evaluate combination of LK and other markers
+- compare classification power
+- assess effect of therapy on heart transplant
+- estimate transplant risk value before/after therapy
+- cancel heart transplant surgery
+- administer additional therapy
+- describe system for predicting post-transplant survival
+- collect sample from subject
+- identify transplant risk based on level of post-transplant survival marker
+
+### EXAMPLES
+
+- introduce primary graft dysfunction (PGD) after heart transplant
+- define PGD
+- motivate predictive factors of PGD
+- introduce molecular biomarkers
+- describe extracellular vesicles
+- introduce machine learning for PGD prediction
+- describe patient cohorts
+- collect patient blood samples
+- process patient samples
+- perform mass spectrometry analysis
+- analyze protein expression
+- calculate differential protein expression signature
+- perform gene set enrichment analysis (GSEA)
+- show clinical diagnostic ELISA tests
+- predict PGD using logistic regression model
+- estimate prediction variance using Monte Carlo cross-validation (MCCV)
+- evaluate model performance
+- generate confidence intervals
+- compare to random prediction distribution
+- perform permutation analysis
+- evaluate differences in bootstrap and permutation distributions
+- report statistics
+- describe KLKB1 ELISA assay
+- normalize patient cohort data
+- apply MCCV strategy
+- describe patient clinical characteristics
+- analyze recipient characteristics
+- identify pre-transplant clinical characteristics
+- perform multivariate model
+- analyze serum microvesicle protein spectra
+- identify proteins enriched in micro-vesicle and extracellular components
+- show protein expression distributions
+- compare protein expression between cohorts
+- identify unique proteins
+- predict post-transplant PGD using clinical and protein markers
+- employ MCCV and permutation analysis
+- evaluate prediction performance
+- identify significantly predictive markers
+- analyze two marker panel PGD predictions
+- evaluate panel performance
+- describe biological pathways
+- analyze PGD classifier performance
+- compare to existing PGD predictors
+- validate KLKB1 ELISA in PGD
+- analyze primary graft dysfunction pathway
+- perform gene set enrichment analysis
+- evaluate protein predictions within pathways
+- introduce example 1
+- integrate proteomic and clinical variables
+- demonstrate increased classification power
+- test specific microvesicular process
+- generate classifier using KLKB1 and inotrope therapy
+- evaluate classifier performance
+- discuss clinical utility
+- introduce example 2
+- describe patient cohorts
+- outline study design
+- collect and analyze patient serum samples
+- perform mass spectrometry analysis
+- prepare samples for analysis
+- analyze protein expression
+- perform pathway analysis
+- calculate differential protein expression signature
+- estimate association of individual protein levels to survival
+- perform survival prediction
+- describe Monte Carlo Cross Validation methodology
+- perform permutation analysis
+- evaluate prediction results
+- describe patient clinical characteristics
+- analyze microvesicle proteomics
+- predict post-transplant survival
+- identify predictive clinical and protein markers
+- analyze predictive profiles between near term and long term survival
+- evaluate predictive performance of proteins accounting for PGD
+- investigate biological pathways associated with patient survival
+- compute differential protein signature
+- perform gene set enrichment analysis
+- identify enriched pathways associated with survival
+- discuss kallikrein-kinin pathway
+- provide definitions for technical and scientific terms
+- describe materials and methods
+- discuss scope of the invention
+- provide disclaimer
+- discuss equivalents to specific embodiments
+- provide notice of incorporation by reference
+- discuss patent applications and patents
+- provide notice of modification and variation
+- discuss spirit of the invention
+- provide notice of equivalents
+

@@ -1,0 +1,453 @@
+{
+    "id": "US20180059412",
+    "authors": [
+        "Ivan Favero",
+        "Christopher Baker",
+        "Eduardo Gil Santos"
+    ],
+    "title": "METHOD FOR TUNING ONE OR MORE RESONATOR(S)",
+    "date": "2016-03-04 00:00:00",
+    "abstract": "The invention concerns a method for tuning at a targeted resonance wavelength at least one micro and/or nanophotonic resonator, the resonator having dimensions defining resonance wavelength of said resonator, the resonator being immersed in a fluid containing ions so that the resonator is surrounded by said fluid, wherein the method comprises a step of injecting light, having a light wavelength equal to the resonance wavelength, into the resonator, so that the injected light resonates within the resonator and triggers a photo-electrochemical etching process enabled by the surrounding fluid containing ions, said etching process being enhanced by the optical resonance which amplifies light intensity in the photonic resonator, the etching decreasing dimensions of the photonic resonator, hereby lowering and tuning the resonance wavelength of the photonic resonator.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The invention relates to the field of micro- and nano-photonic resonators and in particular to the tuning of such resonators to a desired wavelength.",
+                        "Optical resonators, which are part of a photonic device, generally consist in a cavity in which light can enter and resonate, hereby amplifying the signal."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce micro- and nano-photonic resonators"
+                    ],
+                    "num_characters": 306,
+                    "outline_medium": [
+                        "introduce micro- and nano-photonic resonators"
+                    ],
+                    "outline_short": [
+                        "introduce micro- and nano-photonic resonators"
+                    ]
+                },
+                {
+                    "title": "PRIOR ART",
+                    "paragraphs": [
+                        "Micro- and nanoresonators are small devices, which are difficult to build with a high precision. Industrials have developed clean room fabrication techniques (such as photolithography and plasma etching) that typically result in a precision no better than a few nanometers. These reproducibility constraints due to the manufacturing-related imprecisions ultimately affect the ultimate resonance wavelength of the fabricated optical resonators.",
+                        "As a result, fabricating several high Q, wavelength-sized optical resonators sharing exactly the same resonance wavelength is not currently achievable, even through state-of-the art fabrication means.",
+                        "Those resonators have several applications, either in academic research or in industrial development for improved technology.",
+                        "Light-matter interaction (lasers, cavity electrodynamics, optomechanics, non-linear optics, . . . ) is a major topic of current research. Obtaining optical resonators with precise resonance frequencies, which can couple to given atomic transitions or molecular excitations is of interest. Moreover, arrays of resonators and their collective behavior are also a subject of interest.",
+                        "Miniaturized optical resonators are currently the focus of important research and development, with applications in optical delays, optical routing with micro-nanoscale devices, photonic force and gas sensing, optical gyroscopes, Silicon On Insulator optical devices, semiconductor lasers, optical computers, optical metamaterials.",
+                        "Resonators can be also used as:\n\n\n- - Sensors, as shown in document US 2014/03211502, where acquiring the\n    wavelength of the resonator enables to obtain the temperature. In\n    this case, the best the resonance wavelength control, the more\n    accurate the obtained temperature value,\n  - Display devices, as show in document EP 1 585 087, where light is\n    guided in a plane comprising fluorophores which reemit light when\n    excited. As fluorophores are highly selective optically, the\n    resonance wavelength must be well known,\n  - Transistors for logical connections in order to achieve photonic\n    bits process for optical computers. The development of such\n    computers where information is transmitted through photons instead\n    of electrons is accelerating in the silicon industry.",
+                        "Several techniques have been developed in the past years in order to tune and control the resonance of the resonators. We present below an exhaustive overview of the state of art:\n\n\n- - K. Srinivasan and O. Painter, \u201cOptical fiber taper coupling and high\n    resolution wavelength tuning of microdisk resonators at cryogenic\n    temperatures\u201d, *Applied physics letters*, vol. 90, no. 3, p. 031114,\n    2007.\n  - In this document, nitrogen is deposited on the optical resonator to\n    shift its resonance wavelength.\n  - Such a technique is non-permanent and requires the sample to be in\n    high-vacuum and at cryogenic temperature.\n  - Reversible tuning of photonic crystal cavities using photochromic\n    thin films. D. Sridharan, E. Waks, G. Solomon, and J. T. Fourkas,\n    \u201cReversible tuning of photonic crystal cavities using photochromic\n    thin films\u201d, *Applied Physics Letters*, vol. 96, no. 15, p. 153303,\n    2010.\n  - In this document, a thin photochromic layer is deposited on the\n    resonator.\n  - This technique has a limited tuning range, the layer can degrade\n    optical and mechanical properties of the device, and is\n    non-applicable for a plurality of resonators.\n  - M. Shainline, G. Fernandes, Z. Liu, and J. Xu, \u201cBroad tuning of\n    whispering-gallery modes in silicon microdisks\u201d, *Optics express*,\n    vol. 18, no. 14, pp. 14345-14352, 2010.\n  - In this document, a tension is applied to the optical resonator,\n    thereby changing its refractive index (through the electro-optic\n    effect) and thus its resonance frequency.\n  - Such a technique requires electric tuning with metallic electrodes\n    in contact with the resonator, which degrade the optical properties\n    and is non-scalable.\n  - K. Piegdon, M. Lexow, G. Grundmeier, H.-S. Kitzerow, K. Parschke, D.\n    Mergel, D. Reuter, A. Wieck, and C. Meier, \u201cAll-optical tenability\n    of microdisk lasers via photo-addressable polyelectrolyte\n    functionalization\u201d, *Optics express*, vol. 20, no. 6, pp. 6060-6067,\n    2012.\n  - In this document, the technique is applied to the whole sample,\n    therefore showing a lack of selectivity. The precision is of the\n    order of nanometers and the reproducibility has not been achieved.\n  - W. von Klitzing, R. Long, V. S. Ilchenko, J. Hare, and V.\n    Lefevre-Seguin, \u201cFrequency tuning of the whispering-gallery modes of\n    silica microspheres for cavity quantum electro-dynamics and\n    spectroscopy\u201d, *Optics letters*, vol. 26, no. 3, pp. 166-168, 2001.\n  - In this document, a mechanical action is exerted on the resonator,\n    consisting in compressing and stretching a microsphere.\n  - Such a technique is non-scalable and non-compatible with micro- and\n    nano-photonic devices, is non-permanent and is technically\n    impractical.\n  - N. Niu, T.-L. Liu, I. Aharonovich, K. J. Russell, A. Woolf, T. C.\n    Sadler, H. A. El-Ella, M. J. Kappers, R. A. Oliver, and E. L. Hu, \u201cA\n    full free spectral range tuning of pin doped gallium nitride\n    microdisk cavity\u201d, *Applied Physics Letters*, vol. 101, no. 16, p.\n    161105, 2012.\n  - In this document, the whole sample containing resonators is tuned\n    with photoelectrical etching by UV light. The UV light is absorbed\n    by the whole sample. Such a technique lacks spectral precision, is\n    not site-specific, is non-scalable to a large number of resonators,\n    and does not allow real time in-situ monitoring of the resonance\n    wavelength.\n  - Y. Shen, I. B. Divliansky, D. N. Basov, and S. Mookherjea,\n    \u201cElectric-field-driven nano-oxidation trimming of silicon microrings\n    and interferometers\u201d, *Optics letters*, vol. 36, no. 14, pp.\n    2668-2670, 2011.\n  - In this document, oxidation through peak effect is applied, which\n    changes the resonance wavelength of the resonator through refractive\n    index changes in the resonator material.\n  - Such a technique is slow, non-scalable to arrays of resonators, and\n    has not been proven to be applicable to nano-resonators with the\n    same accuracy.\n  - M. Zhang, G. S. Wiederhecker, S. Manipatruni, A. Barnard, P. McEuen\n    and M. Lipson, \u201cSynchronization of micromechanical oscillators using\n    light\u201d, *Physical review letters*, vol. 109, no. 23, p. 233906,\n    2012.\n  - In this document, a laser light is used to heat a resonator to\n    change its resonance wavelength.\n  - Such a technique is non-permanent, non-scalable to large numbers of\n    resonators, and complex, involving several feedback loops.\n  - P. Dong, W. Qian, H. Liang, R. Shafiiha, D. Feng, G. Li, J. E.\n    Cunningham, A. V. Krishnamoorthy, and M. Asghari, \u201cThermally tunable\n    silicon racetrack resonators with ultralow tuning power,\u201d *Optics\n    express*, vol. 18, no. 19, pp. 20298-20304, 2010.\n  - In this document, the resonator is thermo-electrically tuned.\n  - Such a technique is non-permanent and has only been demonstrated on\n    micro-resonators.",
+                        "No one of the cited papers disclose an efficient technique which would be permanent, scalable, addressable, site-specific, and accurate at different orders of magnitude.",
+                        "But all the above-mentioned applications require a cost-effective, precise and simple technique to:\n\n\n- - Tune a single optical resonator to a targeted wavelength,\n    - Tune multiple resonators to a common targeted wavelength."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe limitations of clean room fabrication techniques",
+                        "describe reproducibility constraints of manufacturing",
+                        "describe applications of optical resonators",
+                        "describe light-matter interaction research",
+                        "describe miniaturized optical resonators research",
+                        "describe resonators as sensors",
+                        "describe resonators as display devices",
+                        "describe resonators as transistors",
+                        "introduce prior art techniques for tuning resonators",
+                        "describe nitrogen deposition technique",
+                        "describe photochromic thin films technique",
+                        "describe tension application technique",
+                        "describe photo-addressable polyelectrolyte functionalization technique",
+                        "describe mechanical action technique",
+                        "describe limitations of prior art techniques"
+                    ],
+                    "num_characters": 7586,
+                    "outline_medium": [
+                        "describe limitations of current fabrication techniques",
+                        "motivate need for precise resonance wavelength control",
+                        "summarize applications of optical resonators",
+                        "list prior art techniques for tuning resonators",
+                        "describe limitations of prior art techniques",
+                        "highlight lack of efficient tuning technique",
+                        "emphasize need for cost-effective, precise, and simple technique"
+                    ],
+                    "outline_short": [
+                        "describe limitations of current fabrication techniques",
+                        "summarize applications of optical resonators",
+                        "review existing techniques for tuning optical resonators"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "It is an object of the invention to propose an improved method for tuning a resonator at a targeted resonance wavelength at least one micro and/or nanophotonic resonator, the resonator having dimensions defining resonance wavelength of said resonator, the resonator being immersed in a fluid containing ions so that the resonator is surrounded by said fluid, wherein the method comprises a step of injecting light, having a light wavelength equal to the resonance wavelength, into the resonator, so that the injected light resonates within the resonator and triggers a photo-electrochemical etching process enabled by the surrounding fluid containing ions, said etching process being enhanced by the optical resonance which amplifies light intensity in the photonic resonator, the etching decreasing dimensions of the photonic resonator, hereby lowering and tuning the resonance wavelength of the photonic resonator.",
+                        "The method of the invention may comprise the following features in combination or not. The photonic resonator has a bandgap wavelength set by its constitutive material and the wavelength of the injected light is above the resonator bandgap wavelength.\n\n\n- - The injected light is monochromatic.\n  - The method comprises the steps of:\n    - Starting the step of injecting the light,\n    - Adjusting the light wavelength of the injected light so as to\n      attain the resonance wavelength of the resonator,\n    - Lowering the light wavelength so as to follow the resonance\n      wavelength during the etching process until a targeted resonance\n      wavelength is reached,\n    - Stopping the light injection at the targeted resonance wavelength.",
+                        "The tuning procedure consists in lowering the resonance wavelength of the photonic resonator by consecutive sweeps, each sweep consisting in sweeping the light wavelength of the injected light between values which comprise the resonance wavelength of the photonic resonator.",
+                        "The step of injecting light is realized by far-field or near-field optical coupling technique, and where light is injected into one or several resonators.",
+                        "The step of injecting light is implemented by a waveguide which is on a substrate onto which the photonic resonator is positioned, the waveguide being in the vicinity of the photonic resonator in order to allow near-field optical coupling between the two, the light wavelength of the injected light being larger than a material bandgap wavelength.",
+                        "The light wavelength of the injected light is comprised amongst visible and infrared spectrum.",
+                        "The coupling between the photonic resonator and the waveguide is achieved by evanescent waves.",
+                        "The fluid is a liquid containing ions.",
+                        "The fluid can be ambient air or a controlled humid atmosphere. In these cases, the photo-assisted etching becomes slower and the precision of the tuning can be made larger.",
+                        "The method presented here allows for three orders of magnitude higher precision, both in controlling the effective optical device size and in its spectral resonance, reaching picometer precision for these two aspects.",
+                        "The method is applicable to an industrial setting: it is permanent, scalable and fast, requires little equipment.",
+                        "The permanence of the tuning is a major advantage for an industrial application, and the method allows for a broad range of wavelength tuning, from picometers to hundreds of nanometers.",
+                        "Over the prior art, moreover the method does not require any additional component on the photonic device (polymer coating, electrical connects, thermal controls, as explained before), making it simple and non-degrading.",
+                        "The surrounding fluid can easily be removed after the tuning step without damaging the characteristics of the resonator.",
+                        "According to a second aspect, the method of the invention allows tuning several resonators, each one having a different resonance wavelength. In that case, this method comprises the following steps:\n\n\n- - Setting a light wavelength of the injected light to a value larger\n    than the resonance wavelength of either resonator,\n  - Lowering light wavelength of the injected light so as to attain a\n    first resonance wavelength of a first photonic resonator and start\n    the etching process, while a second photonic resonator having a\n    second resonance wavelength inferior to the first resonance\n    wavelength remains intact,\n  - Lowering light wavelength of the injected light so as to follow the\n    first resonance wavelength, which decreases until the first\n    resonance wavelength of the first photonic resonator that is being\n    etched overlaps with the resonance of the second photonic resonator,\n    the photonic resonators being hereby tuned.\n  - The method according to the second aspect may comprise:\n    - the step of lowering light wavelength so as to etch both photonic\n      resonators at the same time and the same rate, such that both\n      photonic resonators can be tuned at a common targeted resonance\n      wavelength value and have the same dimensions and optical\n      resonance wavelength;\n    - the repetition of the step of lowering light wavelength, so as to\n      tune all the resonators at a common targeted resonance wavelength\n      value.",
+                        "This method is thus scalable to a large number of photonic devices and still requires a single tuning step and a short amount of time (order of the minute), therefore overwhelming the drawbacks of the prior art.",
+                        "The fact that the tuning step automatically etches the photonic devices of largest size, and then automatically etches all the cavities of identical size at identical speed, provides a fast tuning mechanism and does not require the one-by-one identification of the numerous resonators involved in a collective architecture.",
+                        "Indeed, the spectral misalignment that arises in arrays of nominally identical photonic resonator due to fabrication variability is solved by the method.",
+                        "According to a third aspect, the invention concerns a photonic device comprising at least one micro and/or nanophotonic resonator (10) on the substrate (30), obtainable by a method according to the first aspect or the second aspect of the invention.",
+                        "The photonic device may be tuned with a physical precision of dimensions of the photonic resonator less than 10 pm.",
+                        "The photonic device may be tuned at the same value with a physical precision of dimensions of the photonic resonators less than 10 pm.",
+                        "The photonic device may comprise a waveguide which enables transmission of the light to each photonic resonator, by being on the substrate in the vicinity of the at least one resonator.",
+                        "Each photonic resonator is a disk, a photonic crystal resonator, a ring or racetrack resonator, a Bragg resonator, a distributed feedback grating resonator, a Fabry-Perot resonator or a plasmonic resonator.",
+                        "The photonic resonator, the substrate and the waveguide are made of GaAs, Silicon, and/or any other semi-conductor and dielectric material where photoelectrochemical etching operates."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce improved method for tuning resonators",
+                        "describe method of injecting light into resonator",
+                        "describe photo-electrochemical etching process",
+                        "describe etching process decreasing dimensions of resonator",
+                        "describe tuning procedure by consecutive sweeps",
+                        "describe far-field or near-field optical coupling technique",
+                        "describe waveguide implementation",
+                        "describe evanescent waves coupling",
+                        "describe fluid containing ions",
+                        "describe advantages of method (permanent, scalable, fast)",
+                        "describe applicability to industrial setting",
+                        "describe tuning of multiple resonators",
+                        "describe photonic device obtainable by method"
+                    ],
+                    "num_characters": 6969,
+                    "outline_medium": [
+                        "propose improved method for tuning resonator",
+                        "describe photo-electrochemical etching process",
+                        "outline steps of tuning procedure",
+                        "highlight advantages of method (permanent, scalable, fast)",
+                        "describe applicability to industrial setting",
+                        "emphasize precision and simplicity of method"
+                    ],
+                    "outline_short": [
+                        "propose improved method for tuning optical resonators",
+                        "describe steps of the tuning method",
+                        "highlight advantages of the method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "In order to give a detailed view of the method, the specification will be based on a special type of resonator. This shall not be limitative, in so far as the method can be applied to any optical resonator. By resonator, it is meant any kind, or any shape, or any material that would enable a photonic resonance and the confinement of light in a given volume."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "The Photonic Device",
+                            "paragraphs": [
+                                "The nano- or micro-photonic resonant cavities, or photonic resonators 10, hereby referred as the resonator 10, employed here for proof of principle experiments consist of disks 11 (see FIG. 1), made from a semi-conductor such as Gallium Arsenide (GaAs). A disk is typically micrometer-sized in lateral dimensions and few hundreds of nanometers thick. The resonator 10 is coupled to an integrated optical waveguide 20, whose central region 21 is tapered in the vicinity of the resonator 10 to allow optical coupling. Typically, and not only in the disk case, said coupling is achieved by evanescent waves. The waveguide 20 enables transmission of the light from an external light source to the resonator 10.",
+                                "For instance, the distance between the waveguide 20 and the disk 11 is between 100 to 800 nm (hundred to eight hundred nanometers).",
+                                "An Aluminium Gallium Arsenide pedestal 12 isolates the disk 11 from a sample substrate 30 onto which the waveguide 20 is positioned.",
+                                "Resonators 10, waveguides 20 and the substrate 30 will be referred as the photonic device.",
+                                "The photonic resonator 10 has an energy bandgap set by its constitutive material. A bandgap wavelength lambda_B is associated to said bandgap set. Light whose energy is below the energy bandgap is generally not absorbed. In the present case of GaAs, the bandgap wavelength lambda_B is around 870 nm, and GaAs becomes transparent to wavelengths above that.",
+                                "The GaAs disk 11 supports high quality optical Whispering Gallery Modes (WGMs), which correspond to a type of wave that can travel around a concave surface (see FIG. 2). As shown in FIG. 3, the resonance associated to WGMs appear as dips in an optical spectrum. Such disk resonator 10 typically presents an optical resonance doublet. For clarity reasons in the description, this doublet will sometimes be considered as a single resonance value \u03bbr.",
+                                "One major criterion for a resonator is its quality factor Q, which can be defined as:",
+                                "\\(Q = \\frac{\\lambda_{r}}{\\Delta \ue89e\\; \ue89e\\lambda}\\)",
+                                "Where \u03bbr is a resonance wavelength of the resonator and \u0394\u03bb is the mode resonance full width at half maximum (FWHM). The higher the Q, the narrower the dip in the spectrum."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe resonator structure and materials",
+                                "explain optical coupling with waveguide",
+                                "describe resonator dimensions and properties",
+                                "introduce photonic device components"
+                            ],
+                            "num_characters": 2180,
+                            "outline_medium": [
+                                "describe resonator structure and components",
+                                "explain optical coupling and transmission"
+                            ],
+                            "outline_short": [
+                                "describe resonator and waveguide components"
+                            ]
+                        },
+                        {
+                            "title": "Installation Set-Up",
+                            "paragraphs": [
+                                "Light at a wavelength \u03bb is injected into the resonator through the waveguide 20 by a laser source 40. Wavelength \u03bb is variable and the laser source 40 delivers preferably monochromatic light.",
+                                "The optical spectroscopy of the resonator 10 and waveguide 20 is performed in the present case in the 1260-1350 nanometers wavelength range (infrared) using the laser source 40 which is in the present case a continuous wave external cavity diode laser. The beam of laser light is focused onto the coupling waveguide input facet 22 using a micro-lensed fiber 41. Output light at the waveguide output facet 23 is collected by a microscope objective 42 and sent on a photodetector 43 (see path on FIG. 4).",
+                                "For example, as shown in FIG. 3, when scanning the laser wavelength, the several dips appearing in the transmission spectrum correspond to the WGMs of the disk 11 of the resonator 10. Linewidths are about 20 to 50 pm. The optical quality factor Q is about 70 000 to 25000.",
+                                "On FIG. 5 is represented a plurality of resonators 10 and waveguides 20 on the sample substrate 30. There is only one resonator 10 per waveguide 20.",
+                                "On FIG. 6 is represented a collective architecture of resonators 10 and waveguides 20 on the sample substrate. As it can be observed, three resonators 10a, 10b, 10c are located in the tapered central region 21 of each waveguide 20, said three resonators 10 being thus optically fed by the same waveguide 20.",
+                                "For a typical optical tuning application, each resonator 10 has its resonance wavelengths \u03bbr, which are to be tuned at a targeted resonance wavelength \u03bbt. Each resonance wavelength \u03bbr depends on the dimension of the resonator 10. In the present case, we remind that each resonator 10 has in fact two resonance wavelength \u03bbr corresponding to the doublet, but as the two values are bound, we can refer to a single one.",
+                                "The method for tuning resonator(s) relies upon photoelectrochemical (PEC) etching. PEC is a light activated chemical etching.",
+                                "To enable such an etching, the resonator 10 has to be immersed in a fluid 60 containing ions (see FIG. 6)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe light injection into resonator",
+                                "explain optical spectroscopy setup",
+                                "describe light transmission and detection",
+                                "illustrate resonator transmission spectrum"
+                            ],
+                            "num_characters": 2081,
+                            "outline_medium": [
+                                "describe light injection and spectroscopy setup",
+                                "explain measurement of resonance wavelengths"
+                            ],
+                            "outline_short": [
+                                "describe light injection and spectroscopy setup"
+                            ]
+                        },
+                        {
+                            "title": "Method for Tuning an Optical Resonator (FIG. 7)",
+                            "paragraphs": [
+                                "First of all, the photonic device, in particular the resonators 10a, 10b are immersed in the fluid 60 containing ions. A preliminary step E0 is thus to deposit a droplet of said fluid 60 onto the resonator 10, or more generally to immerse resonators in the said fluid. The resonators 10 are thus surrounded by said fluid 60.",
+                                "The method comprises a step of injecting light into the resonator 10 at the resonance, that is to say the wavelength \u03bb of the injected light is equal or sensibly equal to the resonator wavelength \u03bbr, such that the injected light \u03bb resonates within the resonator 10 and triggers a photoelectrochemical etching (PEC) process.",
+                                "As it will be explained below, the resonance amplifies light intensity in the resonator 10 and in particular in the disk 11, hereby enhancing the etching process.",
+                                "The presence of surrounding fluid 60 containing ions enables such process.",
+                                "Thus, as the disk is etched, its dimensions decrease, hereby lowering the resonance wavelength \u03bbr of the resonator 10.",
+                                "When no more light is injected, the etching process stops.",
+                                "The previous step is part of the following ones:\n\n\n- - Starting the step E**1** of injecting the light,\n  - Adjusting E**2** the light wavelength \u03bb of the injected light so as\n    to attain the resonance wavelength \u03bbr of the resonator **10**,\n  - Lowering E**3** the light wavelength \u03bb so as to follow the resonance\n    wavelength \u03bbr during the etching process until a targeted resonance\n    \u03bbt wavelength is reached,\n  - Stopping E**4** the light injection at the targeted resonance\n    wavelength \u03bbt.",
+                                "**Preferred Embodiment of the Method**",
+                                "In a preferred embodiment, the wavelength \u03bb of the injected light is above the resonator bandgap wavelength lambda_B. This means that the light energy is below the bandgap energy of the material.",
+                                "Indeed, standard PEC etching technique consists in illuminating a semiconductor immersed in an electrically conductive liquid, such as the fluid 60 containing ions, with light whose energy is above the bandgap. This generates electrons and holes within the material and these photogenerated free carriers lead to the formation of ionic species at the surface of the semiconductor that are dissolved in the presence of ions provided by the fluid 60.",
+                                "In GaAs this process is described by the following chemical reaction:\n\n\n- - Absorption of light generates electron and holes,",
+                                "GaAs+6h+\u2192Ga3++As3+,\n\n\n- - The generated ions are dissolved in the surrounding fluid **60**,\n    terminating the etching.",
+                                "In standard PEC technique, UV light, that is to say light with a wavelength below 400 nm, is often used because it is absorbed by the semi-conductor thanks to its energy above the energy bandgap of the resonator. In some cases, visible light with energy above the bandgap can be used as well. The optical absorption, coupled to the presence of ions in the fluid 60, leads to the etching of the semiconductor material.",
+                                "In the preferred embodiment described here, light whose wavelength \u03bb is above the wavelength bandgap lambda B (i.e. light whose energy is below the energy bandgap) is used. Infrared light is preferably used (light wavelength above 800 nanometers), but visible light (light wavelength between 400 and 800 nanometers) can be used as well, depending on the characteristics of the material of the resonator(s) to be etched and tuned.",
+                                "Semi-conductor resonator 10, in the present case GaAs disk 11, absorbs a residual fraction of the confined infrared light even at energy below the energy bandgap due to various mechanisms.",
+                                "Among those mechanisms are mid-gap levels present at the semi-conductor surface, as well as two-photon absorption at higher light intensity.",
+                                "Therefore, by using light wavelength above the bandgap wavelength, light can be injected and highly intensity-amplified within the resonator 10 thanks to the resonance. The circulating power in the disk is enhanced over the power circulating in the waveguide by a factor proportional to the resonator finesse, which in these devices is of the order of 1000. The resonance increases the intensity of the injected light at the level of the resonator 10 and enables the etching process described above, even though the injected light wavelength \u03bb has its energy below the energy bandgap of the material. Indeed, the etching process is enabled thanks to the resonance of the resonator 10.",
+                                "This directly leads to a high selectivity in etching only the resonator 10, where the light intensity is enhanced at most, over the surroundings (waveguide 20, substrate 30). Besides, the technique provides both an extremely high control in the etch speed and the possibility to monitor in real time with high spatial and spectral resolution."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce photoelectrochemical etching process",
+                                "describe preliminary step of immersing resonator in fluid",
+                                "explain injecting light at resonance wavelength",
+                                "describe amplification of light intensity in resonator",
+                                "explain etching process and resonance wavelength shift",
+                                "describe stopping etching process",
+                                "introduce preferred embodiment using infrared light",
+                                "explain etching mechanism with mid-gap levels and two-photon absorption",
+                                "highlight selectivity and control of etching process"
+                            ],
+                            "num_characters": 4721,
+                            "outline_medium": [
+                                "introduce photoelectrochemical etching process",
+                                "describe light injection and resonance amplification",
+                                "explain etching process and resonance wavelength shift",
+                                "outline steps for tuning resonator wavelength"
+                            ],
+                            "outline_short": [
+                                "introduce photoelectrochemical etching process",
+                                "describe tuning steps with light injection and wavelength adjustment"
+                            ]
+                        },
+                        {
+                            "title": "Method for Tuning Several Resonators at a Targeted Value (FIG. 8)",
+                            "paragraphs": [
+                                "A second aspect of the method is to tune several resonators 10a, 10b, 10c at a common targeted wavelength \u03bbt. The resonators 10a, 10b, 10c are typically coupled to a waveguide 20 (see FIG. 6 for instance)",
+                                "FIGS. 9a to 11b show the principle of the method applied to a plurality of resonators. After micro-nanofabrication, the photonic resonators 10a, 10b have different size due to fabrication variability (see FIG. 9a), and therefore express different resonance wavelength \u03bbra and \u03bbrb (see FIG. 9b), one being higher than the other one (for instance in this example resonator 10b is initially slightly larger than resonator 10a, hence \u03bbrb>\u03bbra).",
+                                "This method is based on the first method previously described, that is to say a photoelectrical etching process triggered by optical resonance and a progressive decrease of the injected light wavelength \u03bb so as to shift the resonance wavelength \u03bbr to the targeted wavelength \u03bbt.",
+                                "The photonic device, in particular the resonators 10a and 10b, are immersed in the fluid 60 containing ions (see FIG. 10a). The same preliminary step E0 (deposit a droplet of said fluid onto the resonator 10, or more generally immersing in the ionic fluid) is achieved.",
+                                "The next step consists in setting (E1\u2032) a light wavelength \u03bb of the injected light to a value larger than the resonance wavelengths \u03bbra, \u03bbrb of the resonators 10.",
+                                "In a similar way as before, the laser source 40 is coupled to the waveguide 20.",
+                                "Then, the light wavelength \u03bb is lowered (E2\u2032) so as to reach the first resonance wavelength \u03bbrb of the photonic resonator 10b. The etching process starts on this latter resonator. Due to the site-specific character of the method, the other resonator 10a, whose resonance wavelength \u03bbra is lower, is not etched and remains intact.",
+                                "Indeed, the injected light naturally enters first the resonance of resonator 10b and shifts its resonance wavelength \u03bbrb towards lower values (see arrow in FIG. 10b).",
+                                "The next step consists in lowering (E31\u2032) the wavelength \u03bb of the injected light, so as to follow resonance wavelength \u03bbrb of the resonator 10b, which is decreasing because of the etching. The wavelength \u03bb is lowered until the resonance wavelength \u03bbrb of the resonator 10b reaches the resonance wavelength \u03bbra of the other resonator 10a (see FIGS. 11a, 11b).",
+                                "Once it is achieved, both resonators 10a, 10b share a common resonance wavelength and the same dimensions, meaning that they are tuned.",
+                                "The process can be completed by lowering (E32\u2032) again the wavelength \u03bb of the injected light, which triggers the etching of both photonic resonators 10a, 10b at the same time and the same speed. It is therefore possible to reach the targeted resonance wavelength \u03bbt for both resonators 10a, 10b.",
+                                "Indeed, when the two resonances overlap, any further decrease of the injected light wavelength \u03bb simultaneously etches both resonators 10a, 10b and maintains them with exactly the same effective dimensions and optical resonance values.",
+                                "This method can be applied for tuning any number of resonators 10 coupled to a waveguide 20, as long as the value of the wavelength \u03bb of the injected light is above the highest resonance value \u03bbr of said resonators. Note that the order in which the resonators 10 are positioned along the waveguide (for example with the largest resonator first, last or in the middle) is not important, thanks to the wavelength selective nature of the tuning.",
+                                "FIG. 12 shows the spectrum of resonance of resonators 10a, 10b, 10c being tuned. Each resonator 10 is associated to a resonant doublet. For clarity reason, we will refer to a single value of resonance \u03bbra, \u03bbrb, \u03bbrc for each resonator 10.",
+                                "As it can be observed in curve 1 of FIG. 12, the three resonators 10 have distinct resonance wavelengths \u03bbra<\u03bbrb<\u03bbrc. Thanks to the etching, those wavelengths have been grouped (see the evolution in curves 2 to 9) \u03bbra=\u03bbrb=\u03bbrc.",
+                                "FIG. 13 shows the convergence of said resonant doublet wavelength towards a unique value, which is the targeted wavelength \u03bbt (again, the two close curves represent the resonant doublet)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method for tuning multiple resonators",
+                                "describe initial resonator size and resonance wavelength variability",
+                                "explain immersing resonators in fluid and setting initial light wavelength",
+                                "describe etching process and resonance wavelength shift",
+                                "explain tuning multiple resonators simultaneously",
+                                "describe convergence of resonance wavelengths",
+                                "illustrate spectrum of resonance wavelengths",
+                                "highlight applicability to any number of resonators"
+                            ],
+                            "num_characters": 4071,
+                            "outline_medium": [
+                                "introduce method for tuning multiple resonators",
+                                "describe initial resonance wavelengths and etching process",
+                                "explain wavelength adjustment and resonance overlap",
+                                "outline steps for tuning multiple resonators"
+                            ],
+                            "outline_short": [
+                                "describe tuning multiple resonators with common targeted wavelength",
+                                "outline etching process for multiple resonators"
+                            ]
+                        },
+                        {
+                            "title": "Different Embodiments for Varying the Laser Wavelength in Order to Tune Optical Resonators",
+                            "paragraphs": [
+                                "Different techniques have been employed to vary the laser source wavelength \u03bb in order to control the tuning method. A first one is using discrete sweeps, and a second one is using a continuous shift.",
+                                "The first technique for tuning at a targeted wavelength \u03bbt with successive sweeps of laser \u03bb can be the following one:\n\n\n- - Lowering the resonance wavelength \u03bbr of the photonic resonator\n    **10** by consecutive sweeps, each sweep consisting in sweeping the\n    injected laser light wavelength \u03bb over a range that contains the\n    resonance wavelength \u03bbr of the photonic resonator **10**, thereby at\n    each sweep injecting short bursts of light (with a fixed amount of\n    energy depending on the sweep speed) into the resonator **10**.",
+                                "Instead of using discrete successive sweeps, the second technique for tuning at a targeted wavelength \u03bbt can use a continuous shift of the laser source wavelength \u03bb. In this respect, a laser source 40 must be chosen whose wavelength is continuously adjustable.",
+                                "The process consists in a unique and slow sweep.",
+                                "A control unit 50 can be connected to the laser source 40 so as to control the wavelength of the laser source 40 in order to precisely follow the resonance wavelength \u03bbr.",
+                                "The adjustment of the light wavelength typically consists in lowering the wavelength \u03bb, as long as the starting wavelength has been chosen above the highest resonance wavelength \u03bbr of the resonators 10.",
+                                "Those two techniques apply for tuning one resonator 10 as well as for tuning several resonators 10a, 10b, 10c, or more."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe discrete sweeps technique",
+                                "describe continuous shift technique",
+                                "highlight applicability to tuning one or multiple resonators"
+                            ],
+                            "num_characters": 1551,
+                            "outline_medium": [
+                                "describe techniques for varying laser wavelength"
+                            ],
+                            "outline_short": [
+                                "describe techniques for varying laser wavelength"
+                            ]
+                        },
+                        {
+                            "title": "Parameters and Experimental Data",
+                            "paragraphs": [
+                                "**Fluid**",
+                                "The fluid 60 is typically deposited as a microliter droplet of water on the sample substrate with a micro-pipette. This droplet covers several adjacent resonator and waveguides (see FIG. 6, 10a). Besides, such a fluid 60 leaves the overall optical transmission through waveguides unaltered in average power.",
+                                "The fluid 60 can be, as non-limitative example, a liquid containing a few ions, such as deionized water or ammoniac, or a gas containing ions, such as a chemical vapor or steam.",
+                                "In case the fluid is ambient air or a controlled humid atmosphere or a gas containing ions, the photo-assisted etching becomes slower and the precision of the tuning can be made larger.",
+                                "When the resonator material is silicon, the fluid 60 can be a fluor-based liquid or gas.",
+                                "When the resonator material is gallium-based, the fluid 60 can be water, ambient air or a controlled humid atmosphere.",
+                                "In order to be efficient, the fluid 60 must have a non-zero conductivity, that is to say an ability to conduct an electric current. As explained below, the value of said conductivity is not of a major importance.",
+                                "Several experiments (not reported here) have been run with higher conductivity liquids to non-conductive ones. By reducing by orders of magnitude the conductivity of the liquid 60, the etching process is completely suppressed due to the absence of ions. Conversely the etching speed is not highly modified if the concentration of ions is increased. Those experiments suggest that the etching rate is limited by the electrons and holes generation in the disk 11, and not by the dissolution of the ionic compounds in the liquid 60.",
+                                "The fluid 60, especially in the case of a liquid, can be easily removed after the tuning procedure by blowing air or nitrogen, without any damage to the photonic device.",
+                                "**Material and Resonator Geometry**",
+                                "The resonant PEC tuning of optical resonators is not restricted to GaAs resonators shown above as example. Indeed the PEC process operates on all semiconductor materials in the standard configuration of light wavelength \u03bb below the material bandgap wavelength lambda B. Hence the technique presented here of PEC-assisted optical tuning applies to optical resonators fabricated out of any semiconductor material, with the specificity of now having the laser light wavelength \u03bb larger than the bandgap wavelength lambda B.",
+                                "The technique extends as well to dielectric optical resonators, even if PEC processes are less trivial to use in such materials, because of constraints due to the high bandgap energy of these materials.",
+                                "The technique also operates on different geometries of optical resonators, and not only on disk resonators sustaining WGMs like discussed above. Of technological relevance are photonic crystal micro and nano-resonators, race-track and ring optical resonators, plasmonic resonators, Fabry-Perot resonators, Bragg mirror resonators and distributed feedback grating resonators. Any micro or nano-optical resonator providing optical resonance, with the associated light confinement and amplification, is suited for the technique.",
+                                "Note that the photonic resonator illustrated on FIG. 2 is also a mechanical resonator.",
+                                "This invention can thus be generalized to all mechanical resonators whose mechanical resonant frequencies can be tuned by the method, provided these mechanical resonators are functionalized for being photonic resonators as well. This invention can hence be used for realizing MEMS devices with targeted mechanical resonant frequencies, with a superior precision (mechanical resonators trimming).",
+                                "**Sweeping Rate**",
+                                "In an experiment, the injected light has been injected discontinuously, by sweeping the laser source 40 several times back and forth across one optical resonance of the resonator 10. This way, at each sweep, a small and reproducible amount of energy was injected inside the resonator 10 (nano Joule range).",
+                                "In FIG. 14 the WGM resonance wavelength \u03bbr has been represented as a function of the sweep count. The power of the laser source 40 was low, at 0.2 mW at the display of the laser source controller.",
+                                "It has been estimated that a rate of 7 pm per round-trip sweep, i.e. 3.5 pm per single sweep has been achieved. This corresponds to the removal of the order of 10\u22122 monolayer of material per sweep (for instance, one monolayer of GaAs is approximately 300 pm). The error bar represents the 20 pm relative wavelength accuracy of the employed laser source 40 over repeated wavelength sweeps.",
+                                "**Etching and Laser Source Power**",
+                                "In FIG. 15, the wavelength shift per sweep has been represented as a function of the laser power. A linear dependence can be observed; therefore the etching speed can be precisely controlled by controlling the power of the laser source 40.",
+                                "Several orders of magnitude in the etching speed are possible."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe fluid properties and deposition",
+                                "explain fluid conductivity and etching rate",
+                                "describe material and resonator geometry flexibility",
+                                "highlight applicability to various semiconductor materials",
+                                "describe sweeping rate and etching speed control",
+                                "explain laser source power and etching speed relationship",
+                                "describe characteristics of tuned optical resonator",
+                                "highlight precision and quality factor of tuned resonators",
+                                "emphasize scalability and applicability to various resonator types"
+                            ],
+                            "num_characters": 4841,
+                            "outline_medium": [
+                                "describe fluid properties and conductivity",
+                                "discuss material and resonator geometry",
+                                "explain sweeping rate and etching speed",
+                                "present experimental results and data"
+                            ],
+                            "outline_short": [
+                                "describe fluid properties and experimental setup",
+                                "discuss material and resonator geometry considerations"
+                            ]
+                        },
+                        {
+                            "title": "Characteristics of the Tuned Optical Resonator",
+                            "paragraphs": [
+                                "When tuning a resonator, it is crucial to check that no degradation occurs, especially when a significant amount of material is removed.",
+                                "The spectrums (measured in air) of a resonator 10 in FIGS. 16 (before tuning) and 17 (after tuning) show an optical resonance doublet corresponding to the fine structure of each resonator 10. This is partly due to the fact that the disk is not perfectly round-shaped. Between spectrum of FIG. 16 and the one of FIG. 17, a shift in the resonance wavelengths \u03bbr is observed (around 4 nm), corresponding to the result of the etching process. But the quality factors of the doublet of resonator 10 before the tuning are around 42 000/42 000 (\u03bbr\u22481334 nm and \u0394\u03bb \u224832 pm for both dips of the doublet) and the quality factors afterwards are around 53 000/70 000 (\u03bbr\u22481330 nm and \u0394\u03bb \u224825 pm and 19 pm for the dips of the doublet). As a result, it turns out that the method does not damage the properties of the resonators 10, and would even improve their optical quality factor Q.",
+                                "It is important to note that after the tuning procedure, the resonators are permanently tuned, even when the tuning laser is switched off and the fluid removed.",
+                                "The photonic devices, especially the resonators 10, are thus permanently tuned with an error on the dimensions inferior to 10 pm. This means that, for each resonator, an absolute precision better than 10 pm can be reached. For several resonators, a relative precision of few tens of pm is demonstrated and better than 10 pm can be reached.",
+                                "In other words, the resonators are tuned collectively at the same value, which is a common targeted resonance wavelength value \u03bbt, with a resonance wavelength (lambda \u03bbi) of each resonator i conforming to the targeted resonance wavelength value \u03bbt with a precision better than 10 pm.",
+                                "In the experimental results shown in this document, this precision level of 10 pm is set by the finite wavelength precision of the employed laser. Finer precision can be reached in principle. For instance, precision inferior to 10 pm or even 1 pm can be reached. The rate of the etching is a condition for such precision. As an illustration, when the fluid is ambient air, the etching rate is largely decreased, and the wavelength error can fall below 1 pm between the wavelength of each resonator and the targeted resonance wavelength value.",
+                                "The same precision is also found for the value of the optical resonance wavelength. These tuning precisions are given here for the specific GaAs disk resonators presented above, but finer spectral precision can be reached by resonators of larger dimensions or by employing a more stable laser source for controlling the etching.",
+                                "The methods presented here allows for three orders of magnitude higher precision over prior art, both in controlling the effective optical device size and in its spectral optical resonance, reaching picometer precision for these two aspects.",
+                                "As the etching is triggered when the optical resonance is reached, the methods provide a high spatial selectivity: the resonator 10 is selectively etched while its nearby environment, such as the waveguide 20, the substrate 30, or other resonator of different resonance wavelength remain intact.",
+                                "By adjusting the etching rate (with laser source intensity for example) and spectrally monitoring the etch progress, a high quality factor resonator 10 can be tuned to resonance with a high precision. Similarly, several resonators of high quality factor Q can be tuned to resonance as well. Thanks to the scalability of the method, hundreds of resonators can be rapidly tuned using a single sweep of laser wavelength \u03bb.",
+                                "Indeed, as described above, there is no need to identify and to act individually on each resonator; instead, the method automatically brings optical resonances at a common targeted wavelength \u03bbt, with a precision less that 10 pm.",
+                                "It is therefore now possible to manufacture networks or arrays of high quality factor optical resonators, which are resonantly coupled.",
+                                "Amongst the resonators 10 that can be tuned with those methods, one can cite photonic crystal resonators, Bragg resonators or plasmonic resonators.",
+                                "The resonator 10, the waveguide 20 and the substrate 30 can be also made of Silicon, or any other semi-conductor or dielectric material with a bandgap where photoelectrochemical (PEC) etching operates."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe tuned resonator spectrum and quality factor",
+                                "explain precision and error of tuned resonators",
+                                "highlight permanent tuning of resonators",
+                                "describe collective tuning of multiple resonators",
+                                "explain precision and error of collective tuning",
+                                "highlight spatial selectivity of etching process",
+                                "describe applicability to various resonator types and materials",
+                                "emphasize precision and quality factor of tuned resonators"
+                            ],
+                            "num_characters": 4349,
+                            "outline_medium": [
+                                "describe resonator properties before and after tuning",
+                                "explain quality factor and optical resonance",
+                                "discuss precision and accuracy of tuning method",
+                                "outline advantages and applications of the method"
+                            ],
+                            "outline_short": [
+                                "describe spectral characteristics of tuned resonator",
+                                "highlight precision and quality factor of tuned resonator"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce photonic device and resonator"
+                    ],
+                    "num_characters": 359,
+                    "outline_medium": [
+                        "introduce photonic device and resonator"
+                    ],
+                    "outline_short": [
+                        "introduce photonic device and resonator structure"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. Method for tuning at a targeted resonance wavelength (\u03bbt) at least one micro and/or nanophotonic resonator,\nthe resonator having dimensions defining resonance wavelength (\u03bbr) of said resonator,\nthe resonator being immersed in a fluid containing ions so that the resonator is surrounded by said fluid,\nwherein the method comprises a step of injecting light, having a light wavelength equal to the resonance wavelength (\u03bbr), into the resonator,\nso that the injected light (\u03bb) resonates within the resonator and triggers a photo-electrochemical etching process enabled by the surrounding fluid containing ions, said etching process being enhanced by the optical resonance which amplifies light intensity in the photonic resonator,\nthe etching decreasing dimensions of the photonic resonator, hereby lowering and tuning the resonance wavelength (\u03bbr) of the photonic resonator.",
+        "2. Method according to claim 1, wherein the photonic resonator has a bandgap wavelength (lambda B) set by its constitutive material and the wavelength (\u03bb) of the injected light is above the resonator bandgap wavelength (lambda B)",
+        "3. Method according to any one of claims 1 to 2, wherein the injected light is monochromatic.",
+        "4. Method according to claim 1, comprising the steps of:\nStarting the step (E1) of injecting the light,\nAdjusting (E2) the light wavelength (\u03bb) of the injected light so as to attain the resonance wavelength (\u03bbr) of the resonator,\nLowering (E3) the light wavelength (\u03bb) so as to follow the resonance wavelength (\u03bbr) during the etching process until a targeted resonance (\u03bbt) wavelength is reached,\nStopping the light injection at the targeted resonance wavelength (\u03bbt).",
+        "5. Method according to claim 4, wherein the tuning procedure consists in lowering (E2) the resonance wavelength (\u03bbr) of the photonic resonator (10) by consecutive sweeps, each sweep consisting in sweeping the light wavelength (\u03bb) of the injected light between values which comprise the resonance wavelength (\u03bbr) of the photonic resonator.",
+        "6. Method according to claim 1, wherein the step of injecting light is realized by far-field or near-field optical coupling technique, and where light is injected into one or several resonators.",
+        "7. Method according to claim 1, wherein the light wavelength (\u03bb) of the injected light is comprised amongst visible and infrared spectrum.",
+        "8. Method according to claim 6, wherein the coupling between the photonic resonator and an optical waveguide placed in the resonator's vicinity is achieved by evanescent waves.",
+        "9. Method according to claim 1, wherein the fluid is a liquid containing ions.",
+        "10. Method according to claim 1, wherein the fluid is ambient air or a controlled humid atmosphere or a gas containing ions.",
+        "11. Method according to claim 1, wherein the resonator material is silicon and the fluid is a fluor-based liquid or gas.",
+        "12. Method according to claim 1, wherein the resonator material is gallium-based and the fluid is water, ambient air or a controlled humid atmosphere.",
+        "13. Method according to claim 1, for tuning two photonic resonators (10a, 10b), each one having a different resonance wavelength (\u03bbra, \u03bbrb), the method comprising the following steps:\nSetting (E1\u2032) a light wavelength (\u03bb) of the injected light to a value larger than the resonance wavelength (\u03bbra, \u03bbrb) of either resonator,\nLowering (E2\u2032) light wavelength of the injected light so as to attain a first resonance wavelength (\u03bbrb) of a first photonic resonator and start the etching process, while a second photonic resonator having a second resonance wavelength (\u03bbra) inferior to the first resonance wavelength (\u03bbrb) remains intact,\nLowering (E31\u2032) light wavelength (\u03bb) of the injected light so as to follow the first resonance wavelength (\u03bbrb), which decreases until the first resonance wavelength (\u03bbrb) of the first photonic resonator that is being etched overlaps with the resonance (\u03bbra) of the second photonic resonator, the photonic resonators being hereby tuned.",
+        "14. Method according to claim 13, comprising the following step of lowering (E32\u2032) light wavelength (\u03bb) so as to etch both photonic resonators at the same time and the same rate, such that both photonic resonators can be tuned at a common targeted resonance wavelength value (\u03bbt) and have the same dimensions and optical resonance wavelength.",
+        "15. Method according to claim 1, wherein each photonic resonator is a disk, a photonic crystal resonator, a ring or racetrack resonator, a Bragg resonator, a distributed feedback grating resonator, a Fabry-Perot resonator or a plasmonic resonator.",
+        "16. Method according to claim 1, wherein the photonic resonator and the substrate are made of GaAs, Silicon, and/or any other semi-conductor and dielectric material where photoelectrochemical etching operates.",
+        "17. Method according to claim 1, wherein the photonic resonator is also a mechanical resonator, whose mechanical resonant frequencies can be tuned by the method.",
+        "18. Photonic device with several photonic resonators on a substrate, obtainable by a method according to claim 1, all resonators being tuned to a common targeted resonance wavelength value (\u03bbt), with a wavelength error for each resonance wavelength (\u03bbi) of each photonic resonator (i) relative to the common targeted resonance wavelength value (\u03bbt) which is inferior to 100 pm.",
+        "19. Photonic device with several photonic resonators according to claim 18, all resonators being tuned to a common targeted resonance wavelength value (\u03bbt), with a wavelength error for each resonance wavelength (\u03bbi) of each photonic resonator (i) relative to the common targeted resonance wavelength value (\u03bbt) which is inferior to 10 pm.",
+        "20. Photonic device with several photonic resonators (10) according to claim 18, all resonators being tuned to a common targeted resonance wavelength value (\u03bbt), with a wavelength error for each resonance wavelength (\u03bbi) of each photonic resonator (i) relative to the common targeted resonance wavelength value (\u03bbt) which is inferior to 1 pm.",
+        "21. Photonic device according to claim 18, comprising a waveguide which enables transmission of the light to each photonic resonator, by being on the substrate in the vicinity of the at least one resonator.",
+        "22. Photonic device according to claim 18, wherein each photonic resonator is a disk, a photonic crystal resonator, a ring or racetrack resonator, a Bragg resonator, a distributed feedback grating resonator, a Fabry-Perot resonator or a plasmonic resonator.",
+        "23. Photonic device according to claim 18, wherein the photonic resonator is also a mechanical resonator, whose mechanical resonant frequencies can be tuned by a method according to claim 1.",
+        "24. Photonic device according to claim 18, wherein the photonic resonator and the substrate are made of GaAs, Silicon, and/or any other semi-conductor and dielectric material where photoelectrochemical etching operates."
+    ]
+}

@@ -1,0 +1,582 @@
+# Introduction and formalism
+
+Scalable quantum computers are expected to require some form of error correction (EC) to function reliably. Unfortunately, no practical model for a self-correcting quantum memory has been proposed to date, despite considerable effort [1]. The models that come closest to this goal involve topological protection in the presence of physically imposed symmetries [2,3], but even these are not expected to reduce error rates sufficiently for large computations. Therefore active protocols that require measuring the check operators of an error correcting code are probably necessary to realize scalable quantum computing.
+
+There are three general approaches of fault-tolerant error correction (FTEC) applicable to a wide range of stabilizer codes due to Shor [4], Steane [5], and Knill [6]. There are also a number of promising code-specific FTEC schemes, most notably the surface code with a minimum weight matching error correction scheme [7][8][9]. This approach gives the best fault-tolerant thresholds to date and only requires geometrically local measurements. A high threshold [4,[10][11][12] implies that relatively imperfect hardware could be used to reliably implement long quantum computations. Despite this, the hardware and overhead requirements for the surface code are sufficiently demanding that it remains extremely challenging to implement in the lab.
+
+Fortunately, there are reasons to believe that there could be better alternatives to the surface code. For example, dramatically improved thresholds could be possible using concatenated codes if they enjoyed the same level of optimization as the surface code has in recent years [13,14]. Another enticing alternative is to find and use efficiently-decodable low density parity check (LDPC) codes with high rate [15][16][17] in a low-overhead FTEC protocol [18]. For these and other reasons, it is important to have general FTEC schemes applicable to a wide range of codes and to develop new schemes.
+
+Shor EC can be applied to any stabilizer code, but typically requires more syndrome measurement repetitions than Steane and Knill EC. Furthermore, all weight-w stabilizer generators are measured sequentially using w-qubit verified cat states. On the other hand, Steane EC has higher thresholds than Shor EC and has the advantage that all Clifford gates are applied transversally during the protocol. However, Steane EC is only applicable to CSS [5,19] codes and uses a verified logical |+ state encoded in the same code to simultaneously obtain all X-type syndromes, using transversal measurement (similarly for Z). Knill EC can also be applied to any stabilizer code but requires two additional ancilla code blocks (encoded in the same code that protects the data) prepared in a logical Bell state. The Bell state teleports the encoded information to one of the ancilla code blocks and the extra information from the transversal Bell measurement gives the error syndrome. Knill EC typically achieves higher thresholds than Shor and Steane EC but often uses more qubits [20,21]. It is noteworthy that for large LDPC codes, in which low weight generators are required be faulttolerantly measured, Shor EC is much more favourable than Steane or Knill EC. Many improvements in these schemes have been made. For examples, in [22], ancilla decoding was introduced to correct errors arising during state preparation in Shor and Steane EC rather than simply rejecting all states which fail the verification procedure.
+
+In this work, we build on a number of recent papers [23][24][25] that demonstrate flag error correction for particular distance-three and error detecting codes and present a general protocol for arbitrary distance codes. Flag error correction uses extra ancilla qubits to detect potentially problematic high weight errors that arise during the measurement of a stabilizer. We provide a set of requirements for a stabilizer code (along with the circuits used to measure the stabilizers) which, if satisfied, can be used for flag error correction. We are primarily concerned with extending the lifetime of encoded information using fault-tolerant error correction and defer the study of implementing gates faulttolerantly to future work. Our approach can be applied to a broad class of codes (including but not limited to surface codes, color codes and quantum Reed-Muller codes). Of the three general schemes described above, flag EC has most in common with Shor EC. Further, flag EC does not require verified state preparation, and for all codes considered to date, requires fewer ancilla qubits. Lastly, we note that in order to satisfy the fault-tolerant error correction definition presented in Section 1.1, our protocol applied to distance-three codes differs from [23].
+
+We foresee a number of potential applications of these results. Firstly we believe it is advantageous to have new EC schemes with different properties that can be used in various settings. Secondly, flag EC involves small qubit overhead, hence possibly the schemes presented here and in other flag approaches [23][24][25] will find applications in early qubit-limited experiments. Thirdly, we expect the flag EC protocol presented here could potentially be useful for LDPC codes as described in [18].
+
+In Sections 2.1 and 2.2 we provide important definitions and introduce flag FTEC for distance-three and -five codes. In Section 2.3 we apply the protocol to two examples: the [ [19,1,5]] and [ [17,1,5]] color codes, which importantly have a variety of different weight stabilizers. The general flag FTEC protocol for arbitrary distance codes is given in Section 3.1. A proof that the general protocol satisfies the fault-tolerance criteria is given in Appendix A. In Section 3.2 we provide examples of codes that satisfy the conditions that we required for flag FTEC. Flag circuit constructions for measuring stabilizers of the codes in Section 3.2 are given Section 3.3. We also provide a candidate circuit construction for measuring arbitrary weight stabilizers in Appendix C. In Section 4, we analyze numerically a number of flag EC schemes and compare with other FTEC schemes under various types of circuit level noise. We find that flag EC schemes, which have large numbers of idle qubit locations, behave best in error models in which idle qubit errors occur with a lower probability than CNOT errors. The remainder of this section is devoted to FTEC and noise model/simulation methods.
+
+## Fault-tolerant error correction
+
+Throughout this paper, we assume a simple depolarizing noise model in which idle qubits fail with probability p and all other circuit operations (gates, preparations and measurements) fail with probability p, which recovers standard circuit noise when p = p. A detailed description is given in Section 1.2.
+
+The weight of a Pauli operator E (wt(E)) is the number of qubits on which it has non-trivial support. We first make some definitions, Definition 1. Weight-t Pauli operators
+
+where P n is the n-qubit Pauli group.
+
+# Definition 2. Stabilizer error correction
+
+Given a stabilizer group S = g 1 , • • • , g m , we define the syndrome s(E) to be a bit string, with i'th bit equal to zero if g i and E commute, and one otherwise. Let E min (s) be a minimal weight correction E where s(E) = s. We say operators E and E are logically equivalent, written as E ∼ E , iff E ∝ gE for g ∈ S.
+
+An error correction protocol typically consists of a sequence of basic operations to infer syndrome measurements of a stabilizer code C, followed by the application of a Pauli operator (either directly or through Pauli frame tracking [22,26,27]) intended to correct errors in the system. Roughly speaking, a given protocol is faulttolerant if for sufficiently weak noise, the effective noise on the logical qubits is even weaker. More precisely, we say that an error correction protocol is a t-FTEC if the following is satisfied:
+
+# Definition 3. Fault-tolerant error correction
+
+For t = (d-1)/2 , an error correction protocol using a distance-d stabilizer code C is t-fault-tolerant if the following two conditions are satisfied:
+
+1. For an input codeword with error of weight s 1 , if s 2 faults occur during the protocol with s 1 + s 2 ≤ t, ideally decoding the output state gives the same codeword as ideally decoding the input state.
+
+2. For s faults during the protocol with s ≤ t, no matter how many errors are present in the input state, the output state differs from a codeword by an error of at most weight s.
+
+Here ideally decoding is equivalent to performing fault-free error correction. By codeword, we mean any state |ψ ∈ C such that g|ψ = |ψ ∀ g ∈ S where S is the stabilizer group for the code C. Note that for the second criteria in Definition 3, the output and input codeword can differ by a logical operator.
+
+The first criteria in Definition 3 ensures that correctable errors don't spread to uncorrectable errors during the error correction protocol. Note however that the first condition alone isn't sufficient. For instance, the trivial protocol where no correction is ever applied at the end of the EC round also satisfies the first condition, but clearly is not fault-tolerant.
+
+The second condition is not always checked for protocols in the literature, but it is important as it ensures that errors do not accumulate uncontrollably in consecutive rounds of error correction (see [28] for a rigorous proof and [29] for an analysis of the role of input errors in an extended rectangle). To give further motivation as to why the second condition is important, consider a scenario with s faults introduced during each round of error correction, and assume that t/n < s < (2t + 1)/3 for some integer n (see Fig. 1). Consider an error correction protocol in which r input errors and s faults in an EC block leads to an output state with at most r + s errors1 . Clearly condition 1 is satisfied.
+
+With the above considerations, an input state E 1 | ψ with wt(E 1 ) ≤ s is taken to E 2 | ψ , with wt(E 2 ) ≤ 2s by one error correction round with s faults. After the jth round, the state will be E j | ψ with the first condition implying wt(E j ) ≤ j • s provided that j ≤ n. However, when j > n, the requirement of the first condition is no longer satisfied so we cannot use it to upper bound wt(E j ). Now consider the same scenario but assuming both conditions hold. The second condition implies that after the first round, the input state
+
+and where | φ is a codeword. Therefore the codewords are related by: weight at most 3s, since wt(E 2 ) + wt(E 2 ) ≤ 3s. However, the minimum non-trivial logical operator of the code has weight (2t + 1) > 3s, implying that | ψ = | φ , and therefore that wt(E 2 ) = wt(E 2 ) ≤ s. Hence, for the jth round, wt(E j ) ≤ s for all j, i.e. the distance from the codeword is not increased by consecutive error correction rounds with s faults, provided s < (2t+1)/3.
+
+## Noise model and pseudo-threshold calculations
+
+In Section 4, we perform a full circuit level noise analysis of various error correction protocols. Unless otherwise stated, we use the following depolarizing noise model:
+
+1. With probability p, each two-qubit gate is followed by a two-qubit Pauli error drawn uniformly and independently from {I, X, Y, Z} ⊗2 \ {I ⊗ I}.
+
+# With probability 2p
+
+3 , the preparation of the |0 state is replaced by |1 = X|0 . Similarly, with probability 2p 3 , the preparation of the |+ state is replaced by |-= Z|+ .
+
+# With probability 2p
+
+3 , any single qubit measurement has its outcome flipped. 4. Lastly, with probability p, each resting qubit location is followed by a Pauli error drawn uniformly and independently from {X, Y, Z}.
+
+Some error correction schemes that we analyze contain a significant number of idle qubit locations. Consequently, most schemes will be analyzed using three ratios (p = p, p = p/10 and p = p/100) to highlight the impact of idle qubit locations on the logical failure rate.
+
+The two-qubit gates we consider are: CNOT, XNOT= H 1 (CNOT)H 1 , and CZ= H 2 (CNOT)H 2 .
+
+Logical failure rates are estimated using an N -run Monte Carlo simulation. During a particular run, errors are added at each location following the noise model described above. Once the error locations are fixed, the errors are propagated through a fault-tolerant error correction circuit and a recovery operation is applied. After performing a correction, the output is ideally decoded to verify if a logical fault occurred. For an error correction protocol implemented using a stabilizer code C and a fixed value of p, we define the logical failure rate
+
+where
+
+fail (p) is the number of times a logical X or logical Z error occurred during the N rounds. In practice we take N sufficiently large to estimate p (C) L (p), and provide error bars [30,31].
+
+In this paper we are concerned with evaluating the performance of FTEC protocols (i.e. we do not consider performing logical gates fault-tolerantly). We define the pseudo-threshold of an error correction protocol to be the value of p such that
+
+Note that it is important to have p on the left of Eq. ( 3) instead of p since we want an encoded qubit to have a lower logical failure rate than an unencoded idle qubit.
+
+From the above noise model, a resting qubit will fail with probability p.
+
+# Flag error correction for small distance codes
+
+In this and the next section, we present a t-fault-tolerant flag error correction protocol with distance-(2t + 1) codes satisfying a certain condition. Our approach extends that introduced by Chao and Reichardt [23] for distance three codes, which we first review using our terminology in Section 2.1. In Section 2.2 we present the protocol for distance five CSS codes which contains most of the main ideas of the general case (which is provided in Section 3). Lastly, in section Section 2.3 we provide examples of how the protocol is applied to the [ [19,1,5]] and [ [17,1,5]] color codes.
+
+## Definitions and Flag 1-FTEC with distance-3 codes
+
+In what follows, we use the term location to refer to a gate, state preparation, measurement or idle qubit where a fault may occur. Note also that a two-qubit Pauli error P 1 ⊗ P 2 arising at a two-qubit gate location counts as a single fault.
+
+It is well known that with only a single measurement ancilla, a single fault in a blue CNOT of the stabilizer measurement circuit shown in Fig. 2a can result in a multi-weight error on the data block. This could cause a distance-3 code to fail, or more generally could cause a distance-d code to fail due to fewer than (d -1)/2 total faults. We therefore say the blue CNOTs are bad according to the following definition:
+
+# Definition 4. Bad locations
+
+A circuit location in which a single fault can result in a Pauli error E on the data block with wt(E) ≥ 2 will be referred to as a bad location.
+
+As shown in Fig. 2b, the circuit can be modified by including an additional ancilla (flag) qubit, and two extra CNOT gates. This modification leaves the bad locations and the fault-free action of the circuit unchanged. However, any single fault leading to an error E with wt(E) ≥ 2 will also cause the measurement outcome of the flag qubit to flip [23]. The following definitions will be useful:
+
+# Definition 5. Flags and measurements
+
+Consider a circuit for measuring a stabilizer generator that includes at least one flag ancilla. The ancilla used to infer the stabilizer outcome is referred to as the measurement qubit. We say the circuit has flagged if the eigenvalue of a flag qubit is measured as -1. If the eigenvalue of a measurement qubit is measured as -1, we will say that the measurement qubit flipped.
+
+The purpose of flag qubits is to signal when high weight data qubit errors result from few fault locations during a stabilizer measurement. Two key definitions are:
+
+# Definition 6. t-flag circuit
+
+A circuit2 C(P ) which, when fault-free, implements a projective measurement of a weight-w Pauli P without flagging is a t-flag circuit if the following holds: For any set of v faults at up to t locations in C(P ) resulting in an error E with min(wt(E), wt(EP )) > v, the circuit flags.
+
+Note that a t-flag circuit for measuring a weight-t stabilizer P is also a k-flag circuit for any k > t. In Section 3.3 we give constructions for some t-flag circuits.
+
+# Definition 7. Flag error set
+
+Let E(g i ) be the set of all errors caused by one fault which caused the circuit C(g i ) to flag.
+
+Note that the flag error set can contain the identity as well as weight one errors. Suppose all errors in a flag error set E(g) for a 1flag circuit C(g) have distinct syndromes. As C(g) is a 1-flag circuit, a single fault that leads to an error of weight greater than one will cause the circuit C(g) to flag. Moreover, when a flag has occurred due to at most one fault, a complete set of fault-free stabilizer measurements will infer the resulting element of the flag error set which has been applied to the data qubits. In fact, one would only require distinct syndromes for errors in the flag error set that are logically inequivalent, as defined in Definition 2.
+
+As an example, consider the 1-flag circuit in Fig. 2b. A single fault at any of the blue CNOT gates can lead to an error E b with wt(E b ) ≤ 2 on the data.
+
+The set E(Z ⊗4 ) contains all errors E b which resulted from a fault at a blue CNOT gate causing the circuit C(Z ⊗4 ) of Fig. 2b to flag, i.e., E(g
+
+With the above definitions, we can construct a faulttolerant flag error correction protocol for d = 3 stabilizer codes satisfying the following condition.
+
+# Definition 8. Flag 1-FTEC condition:
+
+Consider a stabilizer code S = g 1 , g 2 , • • • , g r and 1flag circuits {C(g 1 ), C(g 2 ), • • • , C(g r )}. For every generator g i , all pairs of elements E, E ∈ E(g i ) satisfy
+
+In other words, we require that any two errors that arise when a circuit C(g i ) flags due to a single fault must be either distinguishable or logically equivalent. For the following protocol to satisfy the FTEC conditions in Definition 3, one can assume there is at most 1 fault. If the Flag 1-FTEC condition is satisfied, the protocol is implemented as follows:
+
+Flag 1-FTEC Protocol: Repeat the syndrome measurement using flag circuits until one of the following is satisfied:
+
+1. If the syndrome s is repeated twice in a row and there were no flags, apply the correction E min (s).
+
+2. If there were no flags and the syndromes s 1 and s 2 from two consecutive rounds differ, repeat the syndrome measurement using non-flag circuits yielding syndrome s. Apply the correction E min (s).
+
+3. If a circuit C(g i ) flags, stop and repeat the syndrome measurement using non-flag circuits yielding syndrome s. If there is an element E ∈ E(g i ) which satisfies s(E) = s, then apply E, otherwise apply E min (s). A tree diagram for the flag 1-FTEC Protocol is illustrated in Fig. 3. We now outline the proof that the flag 1-FTEC protocol satisfies the fault-tolerance criteria of Definition 3 (a more rigorous proof of the general case is presented in Appendix A). To show that Flag 1-FTEC Protocol satisfies the criteria of Definition 3, we can assume there is at most one fault during the protocol. If a single fault occurs in either the first or second round leading to a flag, repeating the syndrome measurement will correctly diagnose the error. If there are no flags and a fault occurs which causes the syndromes in the first two rounds to change, then the syndrome during the third round will correctly diagnose the error. There could also be a fault during either the first or second round that goes undetected. But since there were no flags it cannot spread to an error of weight-2. In this case applying a minimum weight correction based on the measured syndrome of the second round will guarantee that the output codeword differs from a valid codeword by an error of weight at most one. Note that the above argument applies irrespective of any errors on the input state, hence the second criteria of Definition 3 is satisfied. It is worth pointing out that up to three repetitions are required in order to guarantee that the second criteria of Definition 3 is satisfied (unless the code has the property that all states are at most a weight-one error away from a valid codeword, as in [23]).
+
+The Steane code is an example which satisfies the Flag 1-FTEC condition with a simple choice of circuits. To verify this, the representation of the Steane code given in Fig. 4b is useful. There is an X-and a Ztype stabilizer generator supported on the four qubits of each of the three faces. First let us specify all six stabilizer measurement circuits. The circuit that measures Z q1 Z q2 Z q3 Z q4 is specified by taking qubits q 1 , q 2 , q 3 , and q 4 to be the four data qubits in descending order in the 1-flag circuit in Fig. 2b. The other two Zstabilizer measurement circuits are obtained by first rotating Fig. 4b by 120 • and 240 • and then using Fig. 2b. The X-stabilizer circuit for each face is the same as the Z-stabilizer circuit for that face, replacing CNOT gates acting on data qubits by XNOT gates. The Z component of the flag error set of the circuit in Fig. 2b is
+
+As can be seen from Fig. 4b, each of these has a distinct syndrome, thus the measurement circuit for Z q1 Z q2 Z q3 Z q4 satisfies the flag 1-FTEC condition, as do the remaining five measurement circuits by symmetry.
+
+## Flag 2-FTEC with distance-5 codes
+
+Before explicitly describing the conditions and protocol, we discuss some of the complications that arise for codes with d > 3.
+
+For distance-5 codes, we must ensure that if two faults occur during the error correction protocol, the output state will differ from a codeword by an error of at most weight-two. For instance, if two faults occur in a circuit for measuring a stabilizer of weight greater than four, the resulting error E on the data should satisfy wt(E) ≤ 2 unless there is a flag. In other words, all stabilizer generators should be measured using 2-flag circuits.
+
+In another case, two faults could occur during the measurement of different stabilizer generators g i and g j . If two bad locations fail and are both flagged, and assuming there are no more faults, the measured syndrome will correspond to the product of the error caused in each circuit (which could have weight greater than two). Consequently, one should modify Definition 7 of the flag error set to include these types of errors. One then decodes based on the pair of errors that resulted in the measured syndrome, provided logically inequivalent errors have distinct syndromes.
+
+Before stating the protocol, we extend some definitions from Section 2.1.
+
+Consider a stabilizer code S = g 1 , g 2 , • • • , g r and t-flag circuits C(g i ) for measuring the generator g i .
+
+# Definition 9. Flag error set
+
+Let E m (g i1 , • • • , g i k ) be the set of all errors caused by precisely m faults spread amongst the circuits
+
+Note that there could be more than one fault in a single circuit C(g i k ). Examples of flag error sets are given in Table 1 where only contributions from Z errors are included (since the considered code is a CSS code). We also define a general t-fault correction set:
+
+)
+
+, we are considering the set consisting of products between errors caused by k flags and any error of weight t -m.
+
+As will be seen below, the correction set will form a critical part of the protocol by specifying the correction applied based on the measured syndrome and flag outcomes over multiple syndrome measurement rounds. In the case where k t-flag circuits flagged caused by k ≤ m ≤ t faults, the correction applied to the data block will correspond to an element of E m (g i1 , • • • , g i k )×E t-m if the measured syndrome corresponds to an element in this set (there could also be t -m faults which did not give rise to a flag). However in practice, there could be more than t faults and so the measured syndrome may not be consistent with any element of the set
+
+In this case, and for the error correction protocol to satisfy the second criteria of Definition 3, the correction will correspond to E min (s). These features are all included in the set
+
+For any choice of generators {g i , g j }:
+
+In order to state the protocol, we define an update rule given a sequence of syndrome measurements using t-flag circuits for the counters 3 n diff and n same as follows:
+
+Flag 2-FTEC protocol -update rules: Given a sequence of consecutive syndrome measurement outcomes s k and s k+1 :
+
+1. If n diff didn't increase in the previous round, and s k = s k+1 , increase n diff by one.
+
+2. If a flag occurs, reset n same to zero.
+
+# 3.
+
+If s k = s k+1 , increase n same by one.
+
+For the following protocol to satisfy Definition 3, one can assume there are at most 2 faults. If the Flag 2-FTEC condition is satisfied, the protocol is implemented as follows:
+
+Flag 2-FTEC protocol -corrections: Set n diff = 0 and n same = 0. Repeat the syndrome measurement using flag circuits until one of the following is satisfied:
+
+1. The same syndrome s is repeated 3 -n diff times in a row and there were no flags, apply the correction E min (s).
+
+2. There were no flags and n diff = 2. Repeat the syndrome measurement using non-flag circuits yielding syndrome s. Apply the correction E min (s).
+
+3. Some set of two circuits C(g i ) and C(g j ) have flagged. Repeat the syndrome measurement using non-flag circuits yielding syndrome s. Apply any correction from the set Ẽ2 2 (g i , g j , s).
+
+4. Any circuit C(g i ) has flagged and n diff = 1. Repeat the syndrome measurement using non-flag circuits yielding syndrome s. Apply any correction from the set Ẽ1 2 (g i , s).
+
+# Any circuit C(g i
+
+) has flagged and n diff = 0 and n same = 1. Use the measured syndrome s from the last round. Apply any correction from the set Ẽ1 2 (g i , s) ∪ Ẽ2 2 (g i , s).
+
+Note that when computing the update rules, if a
+
+3 n diff tracks the minimum number of faults that could have caused the observed syndrome outcomes. For example, if the sequence s 1 , s 2 , s 1 was measured, n diff would increase by one since a single measurement fault could give rise to the given sequence (for example, this could be caused by a single CNOT failure which resulted in a data qubit and measurement error). However for the sequence s 1 , s 2 , s 1 , s 2 , n diff would increase by two. flag occurs during the j'th round of syndrome measurements, the syndrome is not recorded for that round since all stabilizers must be measured. Thus when computing n diff and n same using consecutive syndromes s k and s k+1 , we are assuming that no flags occurred during rounds k and k + 1.
+
+In each case of the protocol, the correction sets correspond to those data errors which could arise from up to two faults which are consistent with the conditions of the case. As the elements are logically equivalent (by Eq. ( 4) and Definition 10), which element is applied is unimportant.
+
+The general protocol for codes of arbitrary distance is given in Section 3.
+
+## Examples of flag 2-FTEC applied to d = 5 codes
+
+In this section we give examples of the flag 2-FTEC protocol applied to the 2-dimensional [ [19,1,5]] and [ [17,1,5]] color codes, (see Figs. 6a and6b). We first find 2-flag circuits for all generators (weight-4 and -6 for the 19-qubit code and weight-4 and -8 for the 17-qubit code). We also show that the flag 2-FTEC condition is satisfied for both codes.
+
+For a 2-flag circuit, two faults leading to an error of Table 1: Z part of the flag error set of Definition 9 for flag circuits used to measure the stabilizers g1 = Z1Z2Z3Z4 and g3 = Z1Z2Z3Z4Z5Z6 (we removed errors equivalent up to the stabilizer being measured).
+
+weight greater or equal to 3 (up to multiplication by the stabilizer) must always cause at least one of the flag qubits to flag. As shown in Section 3.3, a 2-flag circuit satisfying these properties can always be constructed using at most four flag qubits. We show 2-flag circuits for measuring weight six and eight generators in Fig. 7. In Section 3.2, it will be shown that the family of color codes with a hexagonal lattice satisfy a sufficient condition which guarantees that the flag 2-FTEC condition is satisfied. However, there are codes that do not satisfy the sufficient condition but which nonetheless satisfy the 2-Flag FTEC condition. For the 19-qubit and 17-qubit color codes, we verified that the flag 2-FTEC condition was satisfied by enumerating all errors as one would have to for a generic code. In particular, in the case where the 2-flag circuits C(g i ) and C(g j ) flag, the resulting errors belonging to the set E 2 (g i , g j ) must be logically equivalent or have distinct syndromes (which we verified to be true). If a single circuit C(g i ) flags, there could either have been two faults in the circuit or a single fault along with another error that did not cause a flag. If the same syndrome is measured twice in a row after a flag, then errors in the set E 2 (g i ) ∪ (E 1 (g i ) × E 1 ) must be logically equivalent or have distinct syndromes (which we verified). If there is a flag but two different syndromes are measured in a row, errors belonging to the set E 1 (g i ) × E 1 must be logically equivalent or have distinct syndromes (as was already checked). The flag error sets (see Definition 9) for the 19-qubit code can be obtained using the Pauli's shown in Table 1.
+
+Given that the flag 2-FTEC condition is satisfied, the flag 2-FTEC protocol can be implemented following the steps of Section 2.2 and the tree diagram illustrated in Fig. 5.
+
+# Flag error correction protocol for arbitrary distance codes
+
+In this section we first provide the general flag t-FTEC protocol in Section 3.1. In Section 3.2 we give a sufficient condition for stabilizer codes that allow us to easily prove that flag FTEC can be applied to a number of infinite code families. We show that the families of surface codes, hexagonal lattice color codes and quantum Reed-Muller codes satisfy the sufficient condition. Lastly, in Section 3.3, we give general t-flag circuit constructions which are applicable to the code families described in Section 3.2.
+
+We assume the reader is familiar with all previous definitions. However, to make this section reasonably self contained, we repeat some key definitions below.
+
+# Definition 6. t-flag ciruit A circuit C(P ) which, when fault-free, implements a projective measurement of a
+
+weight-w Pauli P without flagging is a t-flag circuit if the following holds: For any set of v faults at up to t locations in C(P ) resulting in an error E with min(wt(E), wt(EP )) > v, the circuit flags.
+
+# Definition 9. Flag error set
+
+Let
+
+be the set of all errors caused by precisely m faults spread amongst the circuits
+
+We also remind the reader of the correction set
+
+(5)
+
+## Conditions and protocol
+
+In what follows we generalize the fault-tolerant error correction protocol presented in Section 2.2 to stabilizer codes of arbitrary distance.
+
+# Definition 11. Flag t-FTEC condition:
+
+Consider a stabilizer code
+
+The above conditions ensure that if there are at most t = (d -1)/2 faults, the protocol described below will satisfy the fault-tolerance conditions of Definition 3.
+
+In order to state the protocol, we define an update rule given a sequence of syndrome measurements using t-flag circuits for the counters n diff and n same as follows (see also Section 2.2 and the associated footnote):
+
+Flag t-FTEC protocol -update rules: Given a sequence of consecutive syndrome measurement outcomes s k and s k+1 :
+
+1. If n diff didn't increase in the previous round, and s k = s k+1 , increase n diff by one.
+
+2. If a flag occurs, reset n same to zero.
+
+# 3.
+
+If s k = s k+1 , increase n same by one.
+
+Flag t-FTEC protocol -corrections:
+
+Set n diff = 0 and n same = 0. Repeat the syndrome measurement using flag circuits until one of the following is satisfied:
+
+1. The same syndrome s is repeated t -n diff + 1 times in a row and there are no flags, apply the correction E min (s).
+
+2. There were no flags and n diff = t. Repeat the syndrome measurement using non-flag circuits yielding the syndrome s. Apply the correction E min (s).
+
+3. Some set of t circuits {C(g i1 ), 
+
+Use the syndrome s obtained during the last round and apply any correction from the set
+
+In each case of the protocol, the correction sets correspond to those data errors which could arise from up to t faults which are consistent with the conditions of the case. As the elements are logically equivalent (by Eq. ( 5) and Definition 11), which element is applied is unimportant.
+
+For the protocol to satisfy the fault-tolerance criteria, the syndrome measurement needs to be repeated a minimum of t + 1 times. In the scenario where the most syndrome measurement rounds are performed, t identical syndromes are obtained before a fault causes the t + 1'th syndrome to change (in which case n diff would increase by one). Afterwords, one measures the same syndrome t -1 times in a row until another fault causes the syndrome to change. This continues until all of the t possible faults have been exhausted. At this stage, n diff = t so an extra syndrome measurement round will be performed using non-flag circuits. Thus the maximum number of syndrome measurement rounds n max is given by
+
+Note that a similar approach by repeating syndrome measurements is used for Shor error correction [28,32]. However, our scheme requires fewer syndrome measurement repetitions than is often described for Shor error correction and does not require the preparation and verification of a w-qubit cat state when measuring a stabilizer of weight-w. 4For codes that satisfy the flag t-FTEC condition, we also show in Appendix B how to fault-tolerantly prepare and measure logical states using the flag t-FTEC protocol.
+
+## Sufficient condition and satisfying code families
+
+The general flag t-FTEC condition can be difficult to verify for a given code since it depends on precisely which t-flag circuits are used. A sufficient (but not necessary) condition that implies the flag t-FTEC condition is as follows:
+
+Sufficient flag t-FTEC condition: Given a stabilizer code with distance d > 1, and
+
+where N (S) is the normalizer of the stabilizer group. If this condition holds, then the flag t-FTEC condition is implied for any choice of t-flag circuits {C(g 1 ), C(g 2 ), • • • , C(g r )}.
+
+To prove this, we must show that it implies that none of the sets appearing in the t-FTEC condition contain elements that differ by a logical operator. Consider the set
+
+An error E from this set will have support in the union of the support of the m stabilizer generators {g i1 , • • • , g im }, along with up to t -m other single qubits. Another error E from this set will have support in the union of support of the same m stabilizer generators {g i1 , • • • , g im }, along with up to t-m other potentially different single qubits. If the sufficient condition holds, then supp(EE ) cannot contain a logical operator.
+
+The sufficient flag t-FTEC condition is straightforward to verify for a number of code families with a lot of structure in their stabilizer generators and logical operators. We briefly provide a few examples. 
+
+# Surface codes flag t-FTEC:
+
+The rotated surface code [7,[33][34][35] family
+
+for all odd d = 2t + 1 (see Fig. 8) satisfies the flag t-FTEC condition using any 4-flag circuits.
+
+Firstly, by performing an exhaustive search, we verified that the circuit of Fig. 2b is a 4-flag circuit.
+
+As a CSS code, we can restrict our attention to purely X-type and Z-type logical operators. An X type logical operator must have at least one qubit in each of the 2t+1 rows of the lattice shown. However, each stabilizer only contains qubits in two different rows. Therefore, with v stabilizer generators, at most 2v of the rows could have support. With an additional 2(t -v) qubits, at most 2t rows can be covered, which is fewer than the number of rows, and therefore no logical X operator is supported on the union of the support of v stabilizers and 2(t-v) qubits. An analogous argument holds for Ztype logical operators, therefore the sufficient t-FTEC condition is satisfied.
+
+# Color codes flag t-FTEC:
+
+Here we show that any distance d = (2t + 1) self-dual CSS code with at most weight-6 stabilizer generators satisfies the flag t-FTEC condition using any 6-flag circuits (see Fig. 10a for an example). Examples include the hexagonal color code [36] family [[(3d 2 + 1)/4, 1, d]] (see Fig. 6a).
+
+As a self-dual CSS code, X and Z type stabilizer generators are identically supported and we can consider a pure X-type logical operator without loss of generality.
+
+Consider an X type logical operator l such that
+
+for some set of v stabilizer generators {g i1 , . . . ,
+
+Restricted to the support of any of the v stabilizers g i , l| gi must have weight 0, 2, 4, or 6 (otherwise it would anticommute with the corresponding Z type stabilizer). If the restricted weight is 4 or 6, we can produce an equivalent lower weight logical operator l = g i l, which still satisfies Eq. (8). Repeating this procedure until the weight of the logical operator can no longer be reduced yields a logical operator l min which has weight either 0 or 2 when restricted to the support of any of the v stabilizer generators. The total weight of l min is then at most 2v + 2(t -v) = 2t, which is less than the distance of the code, giving a contradiction which therefore implies that l could not have been a logical operator. An analogous arguments holds for Z-type logical operators, therefore the sufficient t-FTEC condition is satisfied. This proof can be easily extended to show that any distance d = (2t + 1) self-dual CSS code with at most weight-2v stabilizer generators for some integer v satisfies the flag t -FTEC condition using any (v -1)-flag circuits, where t = t/ v/2 .
+
+Quantum Reed-Muller codes flag 1-FTEC:
+
+The
+
+] quantum Reed-Muller code family for every integer m ≥ 3 satisfies the flag 1-FTEC condition using any 1-flag circuits for the standard choice of generators.
+
+We use the following facts about the Quantum Reed-Muller code family (see Appendix D and [37] for proofs of these facts): (1) The code is CSS, allowing us to restrict to pure X type and pure Z type logical operators, (2) all pure X or Z type logical operators have odd support, (3) every X-type stabilizer generator has the same support as some Z-type stabilizer generator, and (4) every Z-type stabilizer generator is contained within the support of an X type generator.
+
+We only need to prove the sufficient condition for v = 0, 1 in this case. For v = 0, no two qubits can support a logical operator, as any logical operator has weight at least three. For v = 1, assume the support of an X-type stabilizer generator contains a logical operator l. That logical operator l cannot be Z type or it would anti-commute with the X-stabilizer due to its odd support. However, by fact (3), there is a Z type stabilizer with the same support as the X type stabilizer, therefore implying l cannot be X type either. Therefore, by contradiction we conclude that no logical operator can be contained in the support of an X stabilizer generator. Since every other stabilizer generator is contained within the support of an X-type stabilizer generator, a logical operator cannot be contained in the support of any stabilizer generator.
+
+Note that the Hamming code family has a stabilizer group which is a proper subgroup of that of the quantum Reed-Muller codes described here. The X-type generators of each Hamming code are the same as for a quantum Reed-Muller code, and the Hamming codes are self-dual CSS codes. It is clear that the sufficient condition cannot be applied to the Hamming code since it has even-weight Z-type logical operators (which are stabilizers for the quantum Reed-Muller code) supported within the support of some stabilizer generators.
+
+Codes which satisfy flag t-FTEC condition but not the sufficient flag t-FTEC condition:
+
+Note that there are codes which satisfy the general flag t-FTEC condition but not the sufficient condition presented in this section. An example of such a code is the [ [5,1,3]] code (see Table 7 for the codes stabilizer generators and logical operators). Another example includes the Hamming codes as was explained in the discussion on quantum Reed-Muller codes. For instance, consider the [ [15,7,3]] Hamming code. Using the 1-flag circuit shown in Fig. 9a, the [ [15,7,3]] will not satisfy the general flag 1-FTEC condition since a single fault can lead to a logical error on the data. As was shown in [23], by permuting the CNOT gates resulting in the circuit illustrated in Fig. 9b, the flag 1-FTEC condition is satisfied.
+
+## Circuits
+
+In Section 3.2 we showed that the family of surface codes, color codes with a hexagonal lattice and quantum Reed-Muller codes satisfied a sufficient condition allowing them to be used in the flag t-FTEC protocol. Along with the general 1-flag circuit construction of Fig. 11a, the 6-flag circuit for measuring Z ⊗6 of Fig. 10a can be used as t-flag circuits for all of the codes in Section 3.2. Note that the circuit in Fig. 2b (which is a special case of Fig. 11a when w = 4) is a 4-flag circuit which is used for measuring Z ⊗4 .
+
+Before describing general 1-and 2-flag circuit constructions, we give the following two definitions which we will frequently use: Any CNOT that couples a data qubit to the measurement qubit will be referred to as CNOT dm and any CNOT coupling a measurement qubit to a flag qubit will be referred to as CNOT f m . In both cases the target qubit will always be the measurement qubit.
+
+1-and 2-flag circuits for weight w stabilizer measurements:
+
+We provide 1-and 2-flag circuit constructions for measuring a weight-w stabilizer. The 1-flag circuit re- quires a single flag qubit, and the 2-flag circuit requires at most four flag qubits.
+
+Without loss of generality, in proving that the circuit constructions described below are 1-and 2-flag circuits, we can assume that all faults occurred on CNOT gates. This is because any set of v faults (including those at idle, preparation or measurement locations) will have the same output Pauli operator and flag measurement results as some set of at most v faults on CNOT gates (since every qubit is involved in at least one CNOT).
+
+As was shown in Ref. [23], Fig. 11a illustrates a general 1-flag circuit construction for measuring the stabilizer Z ⊗w which requires only two CNOT fm gates. To see that the first construction is a 1-flag circuit, note that an IZ error occurring on any CNOT will give rise to a flag unless it occurs on the first or last CNOT dm gates or the last CNOT fm gate. However, such a fault on any of these three gates can give rise to an error of weight at most one (after multiplying by the stabilizer Z ⊗w ). One can also verify that if there are no faults, the circuit in Fig. 11a implements a projective measurement of Z ⊗w without flagging. Following the approach in [38], one simply needs to check that the circuit preserves the stabilizer group generated by Z ⊗w and X on each ancilla prepared in the |+ state and Z on each ancilla prepared in the |0 state. By using pairs of CNOT fm gates, this construction satisfies the requirement.
+
+We now give a general 2-flag circuit construction for measuring Z ⊗w for arbitrary w (see Fig. 11b for an example). The circuit consists of pairs of CNOT fm gates each connected to a different flag qubit prepared in the |+ state and measured in the X basis. The general 2-flag circuit construction involves the following placement of w/2 -1 pairs of CNOT fm gates:
+
+1. Place a CNOT fm pair between the first and second last CNOT dm gates.
+
+2. Place a CNOT fm pair between the second and last CNOT dm gates.
+
+3. After the second CNOT fm gate, place the first CNOT fm gate of the remaining pairs after every two CNOT dm gates. The second CNOT fm gate of a pair is placed after every three CNOT dm gates.
+
+As shown in Fig. 11c, it is possible to reuse some flag qubits to measure multiple pairs of CNOT fm gates at the cost of introducing extra time steps into the circuit. For this reason, at most four flag qubits will be needed, however, if w ≤ 8, then w/2-1 flag qubits are sufficient. We now show that the above construction satisfies the requirements of a 2-flag circuit. If one CNOT gate fails, by an argument analogous to that used for the 1flag circuit, there will be a flag or an error of at most weight-one on the data. If the first pair of CNOT fm gates fail causing no flag qubits to flag, after multiplying the data qubits by Z ⊗w , the resulting error E r will have wt(E r ) ≤ 2. For any other pair of CNOT fm gates that fail causing an error of weight greater than two on the data, by construction there will always be another CNOT fm gate between the two that fail which will propagate a Z error to a flag qubit causing it to flag. Similarly, if pairs of CNOT dm gates fail resulting in the data error E r with wt(E r ) ≥ 2, by construction there will always be an odd number of Z errors propagating to a flag qubit due to the CNOT fm gates in between the CNOT dm gates that failed causing a flag qubit to flag. The same argument applies if a failure occurs between a CNOT dm and CNOT fm gate.
+
+Lastly, a proposed general w-flag circuit construction for arbitrary w is provided in Appendix C.
+
+# Use of flag information:
+
+As seen in Figs. 10a, 10b, 11b and 11c, in general t-flag circuits require more than one flag qubit. Apart from their use in satisfying the t-flag circuit properties, the extra flag qubits could be used to reduce the size of the flag error sets (defined in Definition 9) when verifying the Flag t-FTEC condition of Section 3. To do so, we first define f , where f is a bit string of length u (here u is the number of flag qubits) with f i = 1 if the i'th flag qubit flagged and 0 otherwise. In this case, the correction set of Eq. ( 5) can be modified to include flag information as follows:
+
+where
+
+is the new flag error set containing only errors caused by precisely m faults spread amongst the circuits
+
+which each gave rise to the flag outcomes
+
+Hence only errors which result from the measured flag outcome would be stored in the correction set. With enough flag qubits, this could potentially broaden the family of codes which satisfy the Flag t-FTEC condition.
+
+# Circuit level noise analysis
+
+The purpose of this section is to demonstrate explicitly the flag 2-FTEC protocol, and to identify parameter regimes in which flag FTEC presented both here and in other works offers advantages over other existing FTEC schemes. In Section 4.1 we analyze the logical failure rates of the [ [19,1,5]] color code and compute it's pseudo-threshold for the three choices of p. In Section 4.2 we compare logical failure rates of several fault-tolerant error correction schemes applied to distance-three and distance-five stabilizer codes. The stabilizers for all of the studied codes are given in Table 7. Logical failure rates are computed using the full circuit level noise model and simulation methods described in Section 1.2.
+
+## Numerical analysis of the [[19, 1, 5]] color code
+
+The full circuit-level noise analysis of the flag 2-FTEC protocol applied to the [ [19,1,5]] color code was performed using the stabilizer measurement circuits of Figs. 2b and7a.  In the weight-six stabilizer measurement circuit of Fig. 7a, there are 10 CNOT gates, three measurement and state-preparation locations, and 230 resting qubit locations. When measuring all stabilizer generators using non-flag circuits, there are 42 CNOT and 42 XNOT gates, 18 measurement and state-preparation locations, and 2196 resting qubit locations. Consequently, we expect the error suppression capabilities of the flag EC scheme to depend strongly on the number of idle qubit locations.
+
+Pseudo-thresholds of the [ [19,1,5]] code were obtained using the methods of Section 1.2. Recall that for extending the lifetime of a qubit (when idle qubit locations fail with probability p), the probability of failure after implementing an FTEC protocol should be smaller than p. We calculated the pseudo-threshold using Eq. (3) for the three cases were idle qubits failed with probability p = p, p = p/10 and p = p/100. The results are shown in Table 2.
+
+The logical failure rates for the three noise models are shown in Fig. 12. It can be seen that when the probability of error on a resting qubit decreases from p to p/10, the pseudo-threshold improves by nearly a factor of six showing the strong dependence of the scheme on the probability of failure of idle qubits.
+
+## Comparison of flag 1-and 2-FTEC with other FTEC schemes
+
+The most promising schemes for testing fault-tolerance in near term quantum devices are those which achieve high pseudo-thresholds while maintaining a low qubit overhead. The flag FTEC protocol presented in this paper uses fewer qubits compared to other well known fault-tolerance schemes but typically has increased circuit depth. In this section we apply the flag FTEC protocol of Sections 2.1 and 2.2 to the [ [5,1,3]], [ [7,1,3]] and [ [19,1,5]] codes. We compare logical failure rates for three values of p with Steane error correction applied to the [ [7,1,3]] and [ [19,1,5]] codes and with the d = 3 and d = 5 rotated surface code. More details on Steane error correction and surface codes are provided in Appendices E and F. Note that recent work by Goto has provided optimizations to prepare Steane ancillas [39]. However, our numerical results for Steane-EC were produced using the methods presented in Appendix E.
+
+Results of the logical failure rates for p = p, p = p/10 and p = p/100 are shown in Fig. 13. Various pseudothresholds and required time-steps for the considered fault-tolerant error correction methods are given in Tables 3 and 4.
+
+The circuits for measuring the stabilizers of the 5qubit code were similar to the ones used in Fig. 2b (for an X Pauli replace the CNOT by an XNOT). For flag-FTEC methods, it can be seen that the [ [5,1,3]] code always achieves lower logical failure rates compared to the [[7, 1, 3]] code. However, when p = p, both the d = 3 surface code as well as Steane-EC achieves lower logical failure rates (with Steane-EC achieving the best performance). For p = p/10, flag-EC applied to the [ [5,1,3]] code achieves nearly identical logical failure rates compared to the d = 3 surface code. For p = p/100, flag 1-FTEC applied to the [ [5,1,3]] code achieves lower logical failure rates than the d = 3 surface code but still has higher logical failure rates compared to Steane-EC.
+
+We also note that the pseudo-threshold increases when p goes from p to p/10 for both the [ [5,1,3]] and [ [7,1,3]] codes when implemented using the flag 1-FTEC protocol. This is primarily due to the large circuit depth in flag-EC protocols since idle qubits locations significantly outnumber other gate locations. For the surface code, the opposite behaviour is observed. As was shown in [9], CNOT gate failures have the largest impact on the pseudo-threshold of the surface code. Thus, when idle qubits have lower failure probability, lower physical error rates will be required in order to achieve better logical failure rates. For instance, if idle qubits never failed, then performing error correction would be guar-anteed to increase the probability of failure due to the non-zero failure probability of other types of locations (CNOT, measurements and state-preparation). Lastly, the pseudo-threshold for Steane-EC also decreases with lower idle qubit failure rates, but the change in pseudothreshold is not as large as the surface code. This is primarily due to the fact that all CNOT gates are applied transversally in Steane-EC, so that the pseudothreshold is not as sensitive to CNOT errors compared to the surface code. Furthermore, most high-weight errors arising during the state-preparation of the logical ancilla's will be detected (see Appendix E). Hence, idle qubit errors play a larger role than in the surface code, but Steane-EC has fewer idle qubit locations compared to flag-EC (see Table 3 for the circuit depths of all schemes).
+
+Although Steane-EC achieves the lowest logical failure rates compared to the other fault-tolerant error correction schemes, it requires a minimum of 35 qubits (more details are provided in Appendix E). In contrast, the d = 3 surface code requires 17 qubits, and flag 1-FTEC applied to the [ [5,1,3]] code requires only 7 qubits. Therefore, if the probability of idle qubit errors is much lower than gate, state preparation and measurement errors, flag-FTEC methods could be good candidates for early fault-tolerant experiments.
+
+It is important to keep in mind that for the flag 1-FTEC protocol applied to the distance-three codes considered in this section, the same ancilla qubits are used to measure all stabilizers. A more parallelized version of flag-FTEC applied to the [ [7,1,3]] code using four ancilla qubits instead of two is considered in Appendix G.
+
+In computing the number of time steps required by the flag t-FTEC protocols, a lower bound is given in the case where there are no flags and the same syndrome is repeated t + 1 times. In Section 3 it was shown that the full syndrome measurement for flag-FTEC is repeated at most 1 2 (t 2 + 3t + 2) times where t = (d -1)/2 . An upper bound on the total number of required time steps is thus obtained from a worst case scenario where syndrome measurements are repeated 1 2 (t 2 + 3t + 2) times. For distance-five codes, the first thing to notice from Fig. 13 is that the slopes of the logical failure rate curves of flag-EC applied to the [ [19,1,5]] code and d = 5 surface code are different from the slopes of Steane-EC applied to the [ [19,1,5]] code. In particular, p L = cp 3 + O(p 4 ) for flag-EC and the surface code whereas p L = c 1 p 2 + c 2 p 3 + O(p 4 ) for Steane-EC (c, c 1 and c 2 are constants that depend on the code and FTEC method). The reason that Steane-EC has nonzero O(p 2 ) contributions to the logical failure rates is that there are instances where errors occurring at two different locations can lead to a logical fault. Consequently, the Steane-EC method that was used is not Table 3: Distance-three pseudo-threshold results for various FTEC protocols and noise models applied to the [ [5,1,3]], [ [7,1,3]] and d = 3 rotated surface code. We also include the number of time steps required to implement the protocols.
+
+strictly fault-tolerant according to Definition 3  of Steane-EC are provided and a fully fault-tolerant implementation of Steane-EC is analyzed (at the cost of using more qubits). For d = 5, the surface code achieves significantly lower logical failure rates compared to all other distance 5 schemes but uses 49 qubits instead of 22 for the [ [19,1,5]] code. Furthermore, due the differences in the slopes of flag-2 FTEC protocol compared with Steane-EC applied to the [ [19,1,5]] code, there is a regime where flag-2 FTEC achieves lower logical failure rates compared to Steane-EC. For p = p/100, it can be seen in Fig. 13 that this regime occurs when p 10 -4 . We also note that the pseudo-threshold of flag-EC applied to the [ [19,1,5]] color code increases for all noise models whereas the pseudo-threshold decreases for the other FTEC schemes. Again, this is due to the fact that flag-EC has a larger circuit depth compared to the other FTEC methods and is thus more sensitive to idle qubit errors.
+
+Comparing the flag 2-FTEC protocol (applied to the [ [19,1,5]] color code) to all the d = 3 schemes that were considered in this section, due to the higher distance of the 19-qubit code, there will always be a parameter regime where the 19-qubit color code acheives lower logical failure rates than both the d = 3 surface code and Steane-EC applied to the [ [7,1,3]] code. In the case where p = p/100 and with p 1.5 × 10 -4 , using flag error correction with only 22 qubits outperforms Steane error correction (which uses a minimum of 35 qubits) and the d = 3 rotated surface code (which uses 17 qubits).
+
+Note the considerable number of time steps involved in a round of flag-EC, particularly in the d = 5 case (see Table 4). For many applications, this is a major drawback, for example for quantum computation when the time of an error correction round dictates the time of a logical gate. However there are some cases in which having a larger number of time-steps in an EC round while holding the logical error rate fixed is advantageous as it corresponds to a longer physical lifetime of the encoded information. Such schemes could be useful for example in demonstrating that encoded logical quantum information can be stored for longer time scales in the lab using repeated rounds of FTEC.
+
+# Conclusion
+
+Building on definitions and a new flag FTEC protocol applied to distance-three and -five codes presented in Section 2, in Section 3.1 we presented a general flag FTEC protocol, which we called flag t-FTEC, and which is applicable to stabilizer codes of distance d = 2t + 1 that satisfy the flag t-FTEC condition. The protocol makes use of flag ancilla qubits which signal when v faults lead to errors of weight greater than v on the data when performing stabilizer measurements. In Sections 2.3 and 3.3 we gave explicit circuit constructions, including those needed for distance 3 and 5 codes measuring stabilizers of weight 4, 6 and 8. In Section 3.2 we gave a sufficient condition for codes to satisfy the requirements for flag t-FTEC. Quantum Reed-Muller codes, Surface codes and hexagonal lattice color codes were shown to be families of codes that satisfy the sufficient condition.
+
+The flag t-FTEC protocol could be useful for faulttolerant experiments performed in near term quantum devices since it tends to use fewer qubits than other FTEC schemes such as Steane, Knill and Shor EC. In Section 4.2 we provided numerical evidence that with only 22 qubits, the flag 2-FTEC protocol applied to the [ [19,1,5]] color code can achieve lower logical failure rates than other codes using similar numbers of qubits such as the rotated distance-3 surface code and Steane-EC applied to the Steane code.
+
+A clear direction of future work would be to find optimal general constructions of t-flag circuits for stabiliz-ers of arbitrary weight that improve upon the general construction given in Appendix C. Of particular interest would be circuits using few flag qubits and CNOT gates while minimizing the probability of false-positives (i.e. when the circuit flags without a high-weight error occurring). Finding other families of stabilizer codes which satisfy the sufficient or more general condition for flag t-FTEC would also be of great interest. One could also envisage hybrid schemes combining flag EC with other FTEC approaches.
+
+Another direction of future research would be to find general circuit constructions for simultaneously measuring multiple stabilizers while minimizing the number of required ancilla qubits. Further, we believe performing a rigorous numerical analysis to understand the impact of more compact circuit constructions on the codes threshold is of great interest.
+
+Lastly, the decoding complexity (i.e. generating the flag error set lookup tables) is limited by the decoding complexity of the code. In some cases, for example concatenated codes, it may be possible to exploit some structure to generate the flag error sets more efficiently. In the case of concatenated code, the decoding complexity would be reduced to the decoding complexity of the codes used at every level. Finding other scalable constructions for efficient decoding schemes using flag error correction remains an open problem.
+
+A Proof that the flag t-FTEC protocol satisfies the fault-tolerance criteria of Definition 3
+
+Consider the flag t-FTEC protocol described in Section 3.1.
+
+# Claim 1.
+
+If the flag t-FTEC condition is satisfied, then both fault-tolerance criteria of Definition 3 will be satisfied.
+
+Proof. First note that the protocol always terminates. As was shown in the arguments leading to Eq. ( 6) presented in Section 3.1, the maximum number of syndrome measurement rounds is 1 2 (t 2 + 3t + 2). To prove fault-tolerance, in what follows we assume that there are at most t-faults during the protocol. Also, we define a benign fault to be a fault that either leaves all syndrome measurements in the protocol unchanged.
+
+By repeating the syndrome measurement using t-flag circuits, the following cases exhaust all possible errors for the occurrence of at most t faults.
+
+Case 1: The same syndrome is measured t -n diff + 1 times in a row and there are no flags.
+
+At any time during the protocol, if there are no flags, there can be at most t -n diff remaining faults that occur (since it is guaranteed that there were at least n diff faults). Therefore, if the same syndrome was measured t -n diff + 1 times in a row, at least one round (say r) had to have been fault-free yielding the correct syndrome corresponding to the data qubit errors present at that time. Applying E min (s) will remove those errors. Furthermore, since all syndrome measurements are identical and there are no flags, there can be at most t -n diff errors which are introduced on the data blocks from faults during the t -n diff + 1 syndrome measurement rounds (excluding round r). Since none of the errors change the syndrome, after applying the correction, the output state can differ from the input codeword by an error of weight at most t -n diff (if the total number of faults and input errors was t). For input states afflicted by an error of arbitrary weight, the output state will differ from a valid codeword (but not necessarily the input codeword) by an error of weight at most t -n diff . Thus both conditions of Definition 3 are satisfied.
+
+Case 2: There are no flags and n diff = t. The only way that n diff = t is if there were t-faults that each changed the syndrome measurement outcome. Further since there were no flags, an error E afflicting the data qubits must satisfy wt(E) ≤ t. Thus repeating the syndrome measurement using non-flag circuits will correctly identify and remove the error in the case where the number of input errors and faults is t or project the system back to the code space (to a possibly differ codeword) if there were t faults and the input state was afflicted by an error of arbitrary weight .
+
+Case 3: A set of t circuits {C(g i1 ),
+
+Since t circuits {C(g i1 ), • • • , C(g it )} flagged, then no other faults can occur during the protocol. Hence, when repeating the syndrome measurement using non-flag circuits, the measured syndrome will correspond to an error E r ∈ Ẽt t (g i1 , • • • g it , s). Since from the flag t-FTEC condition all elements of Ẽt t (g i1 , • • • g it , s) are logically equivalent, the product of errors resulting from the flag circuits {C(g i1 ), • • • , C(g it )} will be corrected.
+
+Note that for an input error E in of arbitrary weight and since the final round must be error free, applying a correction a correction from the set Ẽt
+
+) is guaranteed to return the system to the codespace. Thus both conditions of Definition 3 are satisfied.
+
+Case 4: The m circuits {C(g i1 ),
+
+Here we can assume that at any point during the protocol and after the j'th flag, the syndrome never repeated more than t -j -n diff times. Otherwise case 5 of the protocol would already have occurred.
+
+As m circuits {C(g i1 ), • • • , C(g im )} have flagged and n diff = t -m, then there can be no more faults. The final syndrome measurement using non-flag circuits will yield a syndrome corresponding to an error in the set Ẽm t (g i1 , • • • g im , s) (and all elements are logically equivalent from the flag t-FTEC condition). Applying a recovery operator chosen from this set will thus remove the errors afflicting the data. If the input state differs from a valid codeword by an error of arbitrary weight, by definition of Ẽm t (g i1 , • • • g im , s) the output state will be a valid codeword.
+
+Case 5: The m circuits {C(g i1 ),
+
+Given that m circuits {C(g i1 ), • • • , C(g im )} flagged, there are r remaining faults that don't result in a flag with n diff ≤ r ≤ t -m. In this case, after the m'th flag, the syndrome measurement was repeated using t-flag circuits t -m -n diff + 1 times in a row and all syndromes were the same. It is thus guaranteed that at least one of the syndrome measurements s was fault-free and correctly identified the errors arising from the flags and errors causing the syndrome to change giving n diff (along with some error E which did not cause the circuits to flag with wt(E) ≤ t-m-n diff ). Consequently, if there are no errors on the input state, the overall error on the data will be EE r with
+
+) are logically equivalent from the flag t-FTEC condition, by choosing a correction from this set, the output state can differ from the input codeword by an error of at most weight t -m -n diff .
+
+If there is an input error of arbitrary weight, then again one of the t -m -n diff + 1 rounds will have the correct syndrome s. The actual state of the data qubits after the protocol can differ from the state which had the correct syndrome by an error of weight at most t -m -n diff . Therefore applying any correction with syndrome s will return the system to the code space up to an error of weight at most t -m -n diff .
+
+# B Fault-tolerant state preparation and measurement using flag t-FTEC
+
+In this section we show how to fault-tolerantly prepare a logical |0 state and how to perform fault-tolerant measurements for codes that satisfy the flag t-FTEC condition of Section 3. Note that there are several methods that can be used for doing so. Here we follow a procedure similar to that shown in [32] when performing Shor EC. However, compared to Shor EC, the flag t-FTEC protocol requires fewer qubits. Furthermore, postselection is not necessary.
+
+Consider an n-qubit stabilizer code C with stabilizer group S = g 1 , • • • , g n-k that can correct up to t errors. Notice that the encoded |0 state is a +1 eigenstate of the logical Z operator and all of the codes stabilizer generators. For k encoded qubits, |0 would be +1 eigenstate of {Z 1 , • • • Z k } and all of the codes stabilizers. For notational simplicity, in what follows we assume k = 1.
+
+The state |0 is a stabilizer state completely specified by the full stabilizer generators of S and Z. We can think of S = g 1 , • • • g n-1 , Z as a stabilizer code with zero encoded qubits and a 2 0 = 1 dimensional Hilbert space. Thus any state which is a +1 eigenstate of all operators in S will correspond to the encoded |0 state. Now, suppose we prepare |0 in using a non-faulttolerant encoding and perform a round of flag t-FTEC using the extended stabilizers g 1 , • • • g n-1 , Z . Then by the second criteria of Definition 3, the output state |0 out is guaranteed to be a valid codeword with at most t single-qubit errors. But for the extended stabilizers g 1 , • • • g n-1 , Z there is only one valid codeword which corresponds to the encoded |0 state. In fact, by the second criteria of Definition 3, any n-qubit input state prepared using non-fault-tolerant circuits is guaranteed to be an encoded |0 state if there are no more than t faults in the EC round.
+
+We point out that the flag t-FTEC condition of Section 3.1 is trivially satisfied for S since the codes logical operators are now stabilizers. In other words, if two errors belong to the set Ẽm t (g i1 , • • • , g i k , s), then their product will always be a stabilizer. Therefore, the flag t-FTEC protocol can always be applied for the code S .
+
+To summarize, the encoded |0 state can be prepared by first preparing any n-qubit state using non-faulttolerant circuits followed by applying a round of flag t-FTEC using the extended stabilizers g 1 , • • • g n-1 , Z . This guarantees that the output state will be the encoded |0 state with at most t single-qubit errors. Now suppose we want to measure the eigenvalue of a logical operator P where P is a Pauli. If C is a CSS code and the logical operator being measured is X or Z, one could measure the eigenvalue by performing the measurement transversally. So suppose C is not a CSS code. From [32] we require that performing a measurement with s faults on an input state with r errors (r + s ≤ t) is equivalent to correcting the r errors and performing the measurement perfectly. The protocol for fault-tolerantly measuring the eigenvalue of P is described as follows:
+
+1. Perform flag t-FTEC.
+
+2. Use a t-flag circuit to measure the eigenvalue of P .
+
+3. Repeat steps 1 and 2 2t + 1 times and take the majority of the eigenvalue of P .
+
+Step 1 is used to remove input errors to the measurement procedure. However during error correction, a fault can occur which could cause a new error on the data. Thus by repeating the measurement without performing error correction, the wrong state would be measured each time if there were no more faults. But repeating the syndrome 2t + 1 times, it is guaranteed that at least t + 1 of the syndrome measurements had no faults and that the correct eigenvalue of P was measured. Thus taking the majority of the measured eigenvalues will give the correct answer.
+
+Note that during the fault-tolerant measurement procedure, if there is a flag either during the error correction round or during the measurement of P , when error correction is performed one corrects based on the possible set of errors resulting from the flag.
+
+# C Candidate general w-flag circuit construction
+
+In this section we provide a candidate general w-flag circuit construction for measuring the stabilizer Z ⊗w . Although we do not provide a rigorous proof that our construction results in a w-flag circuit, we give several arguments as evidence that it satisfies all the criteria of a w-flag circuit. An illustration of the circuit construction (for w = 12) is given in Fig. 14  In general, the circuit requires w -1 flag qubits and is implemented using 7w -8 time steps. The circuit consists of two families of CNOT fm gates. For the first family, with the first set of CNOT fm gates located before the first CNOT dm gate, the partnering CNOT fm gates are divided into three sets s1, s2 and s3 which are enclosed in the green, red and blue dashed boxes. In general, s1 and s3 both contain (w -4)/2 CNOT fm gates. In s1, the j'th control qubit is at position w + 2(j + 1) and in s3 it is at position w + 2j + 1 with j ∈ {1, 2, • • • , (w -4)/2} In s2, the control qubits are always located at the w + 2'th and 2w -1'th qubits. Lastly, note that qubits are reused for implementing the second family of CNOT fm gates. The partnering CNOT fm gates are located in between the w -1 and w'th CNOT dm gates following an identical pattern as in s1, s2 and s3 (in s1 and s3 the CNOT's are implemented in reverse order).
+
+# and the description
+
+for how the circuit is constructed for arbitrary w is provided in the caption.
+
+In what follows, we can restrict our attention to the case in which all v faults occur on CNOT gates in the circuit. The effect on the measurement outcomes and data qubits due to a set of v faults that include faults at idle and measurement locations can always occur due to at most v faults at CNOT locations only (as every qubit is involved in at least one CNOT). Moreover, we can assume that for CNOT fm gates, the faults belong to the set {IZ, ZI, ZZ} since X errors would never propagate to the data or affect the measurement outcome of a flag qubit. For CNOT dm gates, we can assume that faults belong to the set {XZ, XI}. We only consider Z errors on the target qubit of a CNOT dm for the same reason that was given for CNOT fm gates. For the control qubit, an X errors guarantees that the weight of the data qubit error increases even after the application of a satbilizer (since we are measuring Z ⊗w ).
+
+We will use the following useful terminology: we say that a single-qubit Pauli at a time step in the circuit propagates to a qubit at a particular time-step if it would do so in the fault-free circuit. Given a singlequbit Pauli at a time step in the circuit, we say that another qubit is affected by the Pauli if it propagates to that qubit in any time step.
+
+We now provide arguments for why the circuit is a wflag circuit. First, note that every CNOT fm gate comes as part of a pair with the measurement qubit being the target qubit. This ensures that when the circuit is fault-free, it implements a projective measurement of Z ⊗w without flagging. Next, notice that apart from the last two CNOT dm gates, each CNOT dm gate is followed by two CNOT fm gates, one with its partnering CNOT fm located before the first CNOT dm and the other partner is located in between the last two CNOT dm gates. Thus if there is a single Z error on the measurement qubit which propagates to any of the data qubits, the circuit will flag.
+
+In all circuits considered in this section, s 0 will correspond to the sequence of CNOT fm gates that come before the first CNOT dm gate. First consider the shorter circuit construction using only the first family of CNOT fm gates from the construction in Fig. 14 (see the example in Fig. 15). We can separate the set of all locations into subsets including two CNOT fm gates and one CNOT dm gate as shown in Fig. 16 (apart from the last CNOT dm ). This circuit segment can increase the weight of the data error by at most one. There are four cases with inputs on the measurement qubit before the first CNOT fm and CNOT dm being {(I, I), (I, Z), (Z, I), (Z, Z)}. Note that if the following property held for each segment, then the circuit would be w-flag: for all inputs to the segment, if the weight of the data error increases and there are no faults in the segment, the segment flags. Unfortunately, for the input (Z, Z), this is not the case. Both input Z must come from at least two faults.
+
+Note that if v faults results in a data qubit error of weight greater than v without causing the circuit in Fig. 15 to flag, there must be either an IZ fault followed by no fault in a consecutive pair of CNOT fm gates belonging to s 0 or a ZZ fault followed by two CNOT fm gates that don't fail in s 0 .
+
+Moreover, a poor choice of ordering of the CNOT fm gates in s 1 , s 2 and s 3 can result in four faults causing a weight w 2 + 1 error on the data without causing the circuit to flag. Therefore, the ordering of the CNOT fm gates in the sets s 1 , s 2 and s 3 is chosen such that most Z errors in s 0 that first propagate to flag qubits connected to gates in s 1 , will then propagate to flag qubits in s 3 and vice-versa. Typically, if a Z error propagates through multiple CNOT dm gates in s 1 , then unless CNOT fm gates in s 3 fail, the flag qubits affected by the Z error would flag. Furthermore, the total number of required failures for gates in s 3 to cancel the Z errors will typically be equal to the number of times the Z error propagated to the data.
+
+There are however cases which don't flag in which v faults in the circuit construction presented in Fig. 15 lead to more than v errors on the data qubit, such as the example given in the figure. All such problematic cases that we found had a Z error on the target qubit in one of the last few CNOT fm gates in s 0 , followed by a Z error on the target qubit in one of the first few CNOT dm gates in s 1 . Then further Z errors occur throughout the remainder of the circuit which propagate to the data while preventing the flag qubits affected by the previous errors from flagging. Further, a Z error on the control qubit of the second CNOT fm in s 2 cancels the Z which propagates to the flag qubit coupled to that CNOT fm 
+
+# gate.
+
+This particular problematic fault pattern would lead to flags if it occurred within the full circuit construction of Fig. 14 (if the additional locations of the larger circuit do not fail). As this was the only type of problematic fault pattern that we found, one would hope that all problematic fault patterns are rendered non problematic provided no additional locations fail. Since the additional CNOT fm gates always occur immediately after one of the original CNOT fm gates (or after the last CNOT fm gate), as far as the flag properties of the original circuit are concerned, no new problematic fault patterns are introduced.
+
+We conclude this section by noting that our candidate general w-flag circuit construction requires w -1 flag qubits and is implemented in 7w -8 time steps. This is clearly not optimal in general since for example, as shown in Fig. 10a, a w-flag circuit was found (for w = 6) which requires only three flag qubits instead of five and the circuit is implemented in 14 time steps instead of 34. It is thus still an open problem to find optimal w-flag circuits for arbitrary w.
+
+# D Quantum Reed-Muller codes
+
+In this section we first describe how to construct the family of quantum Reed-Muller codes QRM(m) with code parameters [[2 m -1, k = 1, d = 3]] following [37]. We then show that the family of QRM(m) codes satisfy the sufficient flag 1-FTEC condition of Section 3.2.
+
+Reed-Muller codes of order m (RM(1, m)) are defined recursively from the following generator matrices: First, RM(1, 1) has generator matrix
+
+and RM(1, m + 1) has generator matrix
+
+where 0 and 1 are vectors of zeros and ones in Eq. ( 11). The dual of RM(1, m + 1) is given by the higher order Reed-Muller code RM(m -2, m). In general, the generator matrices for higher-order Reed-Muller codes RM(r, m) are given by
+
+with
+
+The X stabilizer generators of QRM(m) are derived from shortened Reed-Muller codes where the first row and column of G m are deleted. We define the resulting generator matrix as G m . The Z stabilizer generators are obtained by deleting the first row and column of H m-2,m . Similarly, we define the resulting generator matrix as H m-2,m .
+
+As was shown in [37], rows(G m ) ⊂ rows(H m-2,m ) and each row has weight 2 m-1 . Therefore, all the Xtype stabilizer generators of QRM(m) have corresponding Z-type stabilizers. By construction, the remaining rows of H m-2,m will have weight 2 m-2 . Furthermore, every weight 2 m-2 row has support contained within some weight 2 m-1 row of the generator matrix H m-2,m . Therefore, every Z-type stabilizer generator has support within the support of an X generator.
+
+# E Implementation of Steane error correction
+
+In this section we describe how to implement Steane error correction and discuss its fault-tolerant properties. We also provide a comparison of a version of Steane error correction with flag 2-FTEC protocol described in Section 2.2 applied to the [ [19,1,5]] code.
+
+Steane error correction is a fault-tolerant scheme that applies to the Calderbank-Shor-Steane (CSS) family of stabilizer codes [5]  There are a total of eight encoded ancilla qubits instead of four. The dark bold lines represent resting qubits. Note that the circuit in Fig. 17b could in some cases be used for higher distance CSS codes with appropriately chosen circuits for |0 and |+ ancilla states (see [40]).
+
+ancilla and the data, with the ancilla acting as the control qubits and the data acting as the target qubits. After applying the transversal CNOT gates, the syndrome is obtained by measuring |0 transversally in the X-basis. The code construction for CSS codes is what guarantees that the correct syndrome is obtained after applying a transversal measurement (see [32] for more details).
+
+Similarly, the Z-stabilizer generators are measured by preparing the encoded |+ , applying CNOT gates transversally between the ancilla and the data with the data acting as the control qubits and the ancilla's acting as the target qubits. The syndrome is then obtained by measuring |+ transversally in the Z-basis.
+
+The above protocol as stated is not sufficient in order to be fault-tolerant. The reason is that in general the circuits for preparing the encoded |0 and |+ are not fault-tolerant in the sense that a single error can spread For low error rates, the states are accepted with high probability so that the average number of qubits is ≈ 171. Our three qubit flag error correction protocol requires at most six rounds of syndrome measurements, with each round using flag circuits requiring 168 time steps and the round using non-flag circuits requiring 120 time steps. However, for low noise rates, the average number of time steps will be close to 504 (since at least three rounds are required for the protocol to be fault-tolerant). to a multi-weight error which could then spread to the data block when applying the transversal CNOT gates.
+
+To make the protocol fault-tolerant, extra |0 and |+ ancilla states (which we call verifier qubits) are needed to check for multi-weight errors at the output of the ancilla states.
+
+For the |0 ancilla, multiple X errors can spread to the data if left unchecked. Therefore, another encoded |0 ancilla is prepared and a transversal CNOT gate is applied between the two states with the ancilla acting as the control and the verifier state acting as target. Anytime X errors are detected the state is rejected and the error correction protocol start over. Further, if the verifier qubit measures a -1 eigenvalue of the logical Z operator, the ancilla qubit is also rejected. A similar technique is used for verifying the |+ state (see Fig. 17a).
+
+For the [[7, 1, 3]] Steane code, an error E = Z i Z j can always be written as E = ZZ k where Z is the logical Z operator (this is not true for general CSS codes). But |0 is a +1 eigenstate of Z. Therefore, we don't need to worry about Z errors of weight greater than one occurring during the preparation of the |0 state.
+
+In [28] it was shown that unlike for the [[7, 1, 3]] code, for general CSS codes, the encoded ancilla states need to be verified for both X and Z errors in order for Steane error correction to satisfy the fault-tolerant properties of Definition 3. We show the general distance-three fault-tolerant scheme in Fig. 17b. Note that the circuit in Fig. 17a will only satisfy the fault-tolerant criteria of Definition 3 for perfect distance-three CSS codes (see [28] for more details).
+
+In Section 4.2 we computed logical failure rates for Steane error correction applied to the [ [19,1,5]] code using the circuit of figure Fig. 17a in order to minimize the number of physical qubits. However, since the [ [19,1,5]] code is not a perfect CSS code, only the circuit in Fig. 17b satisfies all the criteria of Definition 3. This explains why the leading order contributions to the logical failure was of the form p L = c 1 p 2 + c 2 p 3 + O(p 4 ) instead of p L = cp 3 + O(p 4 ) (which would be the case for a distance-5 code).
+
+In Fig. 18 we applied Steane error correction using the circuit of Fig. 17b to achieve the full error correcting capabilities of the [ [19,1,5]] code. We used methods presented in [31,40] in order to obtain the encoded |0 state (since the [ [19,1,5]] code is self-dual, the |+ state is obtain by interchanging all physical |0 and |+ states and reversing the direction of the CNOT gates). Note that not all |0 and |+ circuits had the same sequence of CNOT gates. This was to ensure that a single fault in two different preparation circuits, i.e. for |0 and for In this example, a two qubit X error has occurred causing three stabilizers to be violated (red nodes). A boundary node is also highlighted and a minimum weight correction (red edges) which terminates on highlighted nodes is found. The algorithm succeeds as the error plus correction is a stabilizer.
+
+|+ , would not lead to uncorrectable X or Z errors that would go undetected by the verifier ancillas and at the same time propagate to the data block. The results are compared with the flag 2-FTEC protocol of Section 2.2 applied to the [ [19,1,5]] for the noise models where idle qubits fail with probability p = p and p = p/100. In both cases the logical failure rates have a leading order p 3 contribution (which is determined from finding the best fit curve to the data). The pseudo-threshold results are given in Table 5.
+
+As can be seen, the full Steane-EC protocol using the circuit of Fig. 17b achieves significantly lower logical failure rates compared to Steane-EC using the circuit in Fig. 17a at the cost of using a minimum of 171 qubits compared to a minimum of 95 qubits. In contrast, the flag 2-FTEC scheme of Section 2.2 has a pseudothreshold that is one to two orders of magnitude lower than than the full Steane-EC scheme but requires only 22 qubits.
+
+# F Implementation of Surface code error correction
+
+We consider the rotated surface code [7][8][9][33][34][35] as shown in Fig. 19a, which has n = d 2 data qubits for distance d. Although we are concerned with error correction under the circuit level noise model described in Section 1.2, it is useful to build intuition by first considering the idealized noise model in which stabilizer mea- Identity gates (black rectangles) are inserted in the Z-type stabilizer measurement circuits to ensure that all measurements are synchronized. Note that unlike in [9], to be consistent with the other schemes in this paper, we assume that we can prepare and measure in both the X and Z basis.
+
+surements are perfect, and single qubit X errors occur with probability 2p/3 (Z errors can be treated in the same way). An X type error E occurs with probability O(p wt(E) ), and has syndrome s(E).
+
+The minimum weight X-type correction can be found efficiently for the surface code in terms of the graph G 2D shown in Fig. 19b. The graph G 2D has a bulk node (black circle) for each Z stabilizer generator, and a bulk edge (black) for each data qubit. A bulk edge coming from a bulk node corresponds to the edge's data qubit being in the support of the node's stabilizer. The graph also contains boundary nodes (white boxes) and boundary edges (blue), which do not correspond to stabilizers or data qubits. Each bulk and boundary edge is assigned weight one and zero respectively. The minimum weight decoder is then implemented as follows. After the error E is applied, the nodes corresponding to unsatisfied stabilizers are highlighted. If an odd number of stabilizers was unsatisfied, one of the boundary nodes is also highlighted. Highlighted nodes are then efficiently paired together by the minimum weight connections in the graph, by Edmonds' algorithm [41,42]. The correction C is applied to the edges in the connection. Note that any single O(p) fault in this noise model corresponds to a weight one edge on the graph.
+
+For circuit noise, we introduce a measurement qubit for each stabilizer generator, as represented by gray circles in Fig. 19a, and circuits must be specified to implement the measurements, such as those in Fig. 20. The performance of the code is sensitive to the choice of circuit [34], for example a poor choice could allow a single fault to cause a logical failure for d = 3 for any choice of decoder.
+
+To implement the decoder, first construct a new three dimensional graph G 3D by stacking d copies of the planar graph G 2D that was shown in Fig. 19b, and adding new bulk (boudnary) edges to connect bulk (boudnary) nodes in neighboring layers. We also add additional diagonal edges such that any single O(p) fault in the measurement circuits corresponds to a weight-one edge in G 3D (see Fig. 21). For simplicity, we do not involve further possible optimizations such as setting edge weights based on precise probabilities and including X-Z correlations [14].
+
+All simulations of the surface code are performed using the circuit noise model in Section 1.2, with the graph G 3D described above as follows (to correct X errors):
+
+1. Data acquisition: Stabilizer outcomes are stored over d rounds of noisy error correction, followed by one round of perfect error correction. The net error E applied over all d rounds is recorded.
+
+2. Highlight nodes: Nodes in the graph G 3D are highlighted if the corresponding Z-type stabilizer outcome changes in two consecutive rounds. 53. Minimum weight matching: Find a minimal edge set forming paths that terminate on highlighted nodes. Highlight the edge set.
+
+4. Vertical collapse: The highlighted edges in G 3D are mapped edges in the planar graph G 2D , and are then added modulo 2.
+
+5. Correction: The X-type correction C X is applied to highlighted edges in G 2D .
+
+The Z correction C Z is found analogously. Finally, if the residual Pauli R = EC X C Z is a logical operator, we say the protocol succeeded, otherwise we say it failed. In [23], it was shown that by using extra ancilla qubits in the flag-EC protocol, it is possible to measure multiple stabilizer generators during one measurement cycle which could reduce the circuit depth. Note that for the Steane code, measuring the Z stabilizers using Fig. 2b requires only one extra time step. In this section we compare logical failure rates of the [ [7,1,3]] code using the flag-EC method of Section 2.1 which requires only
+
+# Acknowledgements
+
+The authors would like to thank Krysta Svore, Tomas Jochym-O'Connor, Nicolas Delfosse and Jeongwan Haah for useful discussions. We also thank Steve Weiss for providing the necessary computational tools that allowed us to complete our work in a timely manner. C. C. would like to acknowledge the support of QEII-GSST and thank Microsoft and the QuArC group for its hospitality where all of this work was completed.
+
+# FTEC scheme
+
+Noise model Number of qubits Time steps (T time )
+
+Pseudo-threshold Flag-EC [ [7,1,3]] p = p 9 36 ≤ T time ≤ 108 p pseudo = (3.39 ± 0.10) × 10 -5 Flag-EC [ [7,1,3]] 11 34 ≤ T time ≤ 104 p pseudo = (2.97 ± 0.01) × 10 -5
+
+Table 6: Pseudo-thresholds and circuit depth for flag-EC protocols using two and four ancilla qubits applied to the [ [7,1,3]] code. The results are presented for the noise models where p = p and p = p/100.
+
+[ [5,1,3]] [ [7,1,3]] [ [19,1,5]] code [ [17,1,5]] code  two ancilla qubits and a flag-EC method which uses four ancilla qubits but that can measure all Z stabilizer generators in one cycle (see Fig. 22). All X stabilizers are measured in a separate cycle. Logical failure rates for p = p are shown in Fig. 23. Pseudo-thresholds and the number of time steps required to implement the protocols are given in Table 6. Note that measuring stabilizers using two ancilla's requires at most two extra time steps. Furthermore, the extra ancilla's for measuring multiple stabilizers result in more idle qubit locations compared to using only two ancilla qubits. With the added locations for errors to be introduced, the flag error correction protocol using only two ancilla's achieves a higher pseudo-threshold compared to the protocol using more ancilla's. Thus assuming that reinitializing qubits can be done without introducing many errors into the system, FTEC using fewer qubits could achieve lower logical failure rates compared to certain schemes using more qubits.
+
+# H Stabilizer generators of various codes.
+
+In Table 7 we provide stabilizer generators for the [ [5,1,3]] code, [ [7,1,3]] Steane code, [ [19,1,5]] and [ [17,1,5]] color codes.
+

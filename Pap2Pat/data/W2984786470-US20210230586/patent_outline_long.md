@@ -1,0 +1,357 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce genetic code reprogramming
+- limitations of flexizyme-catalyzed acylation reactions
+- demonstrate novel substrates incorporation
+
+## SUMMARY
+
+- disclose methods for sequence defined polymers synthesis
+- define acylated tRNA molecules and donor molecules
+- describe acylated tRNA molecules formula
+- outline preparation method of acylated tRNA molecules
+- summarize applications of disclosed methods
+
+## DETAILED DESCRIPTION
+
+- define terms
+
+### Definitions
+
+- define technical terms
+- specify meaning of "a", "an", and "the"
+- define "about", "approximately", "substantially", and "significantly"
+- explain "include" and "comprising"
+- explain "consisting of" and "consisting essentially of"
+- define ranges and sub-ranges
+- introduce chemical entities
+- explain use of asterisk and plus sign
+- define "alkyl"
+- define "alkylene"
+- define "haloalkyl"
+- define "heteroalkyl"
+- define "alkenyl"
+- define "alkynyl"
+- define "cycloalkyl"
+- define "cycloheteroalkyl"
+- define "cycloalkylene"
+- define "partially unsaturated carbocyclyl"
+- define "aryl" and "heterocyclyl"
+- define carboxamido
+- define carboxy
+- define amide
+- describe stereoisomers
+- introduce nucleic acids
+- describe oligonucleotide preparation
+- define amplification reaction
+- describe amplification conditions
+- define target sequence
+- describe hybridization
+- define primer
+- describe primer design
+- describe primer specificity
+- define polymerase
+- describe DNA polymerase
+- describe RNA polymerase
+- define promoter
+- define sequence defined biopolymer
+- define expression template
+- define translation template
+- describe coupled transcription/translation
+- define reaction mixture
+- describe cell-free protein synthesis
+- describe CFPS reaction mixture
+- describe platforms for preparing sequence defined biopolymers
+- introduce GRO organism
+- describe cell extract preparation
+- describe CFPS reaction components
+- describe commercial kits
+- describe extract-based CFPS reactions
+- describe methods for preparing cell extract
+- describe methods for improved in vitro protein synthesis
+- describe non-standard amino acids
+- conclude platforms for preparing sequence defined biopolymers
+- define platform components
+- describe expression template
+- describe translation template
+- describe polymerases
+- describe orthogonal translation system
+- describe orthogonal components
+- describe preparation of orthogonal components
+- discuss altering physicochemical environment
+- describe temperature parameters
+- describe organic anion parameters
+- describe halide anion parameters
+- describe organic cation parameters
+- describe inorganic cation parameters
+- describe NTP parameters
+- describe alcohol parameters
+- introduce methods for preparing proteins
+- describe cell-free protein synthesis
+- describe sequence-defined biopolymer or protein
+- describe unnatural amino acids
+- describe examples of unnatural amino acids
+- describe methods for preparing sequence-defined biopolymers
+- describe high fidelity to RNA template
+- describe preparation of plurality of products
+- describe therapeutic, diagnostic, biomaterial, adhesive, biocomposite, or agricultural products
+- discuss miscellaneous aspects
+- describe expanding chemical substrates for genetic code reprogramming
+- describe methods, systems, components, and compositions
+- describe novel substrates for acylation of tRNA
+- describe acylated tRNA molecules and donor molecules
+- define tRNA and R
+- list R options
+- specify R as substituted alkylaryl
+- specify R as substituted phenyl
+- specify R as heteroaryl or substituted heteroaryl
+- specify R with primary or secondary amine group
+- specify R with cycloalkyl group
+- specify R with cyclic secondary amine
+- specify R with alkyl, alkenyl, cyanoalkyl, or alkylcarboxylalkyl ester
+- describe suitable R moieties
+- describe suitable tRNA molecules
+- describe preparation method
+- describe reaction mixture
+- describe donor molecule
+- describe Fx catalysis
+- describe suitable Fx's
+- describe suitable tRNA molecules
+- describe leaving group
+- describe reaction conditions
+- describe application to sequence defined polymers
+- describe incorporation of R group
+- describe novel donor molecules or monomers
+
+### Illustrative Embodiments
+
+- introduce ester or thioester substrates
+- describe flexizyme system for acylation
+- acylate microhelix or tRNA with non-canonical substrates
+- incorporate non-canonical substrates into sequence defined polymer
+- identify compatibility criteria for donor molecules and flexizymes
+- reassign tRNA with non-canonical synthetic substrates
+- use reprogrammed tRNAs for incorporation of non-canonical substrates
+
+### EXAMPLES
+
+- introduce example 1
+- expand chemical substrates for genetic code reprogramming
+- abstract of example 1
+- applications of disclosed technology
+- advantages of disclosed technology
+- describe technology limitations
+- describe flexizyme system
+- describe mis-acylated tRNA synthesis
+- describe engineered translational machinery
+- describe computational modeling
+- introduce example 2
+- reference presentation on expanding chemical substrates
+- abstract of example 2
+- introduce protein synthesis by ribosomes
+- describe aminoacylation of tRNA
+- describe flexizyme system
+- illustrate flexizyme system
+- describe chemical substrate preparation
+- optimize flexizyme catalyzed aminoacylation
+- describe microhelix experiment
+- describe tRNA acylation
+- describe cell-free synthesis platform
+- describe non-natural amino acid incorporation
+- observe optimal codon orders
+- design monomers for novel covalent chemical bonds
+- synthesize sequence-defined polymers
+- describe proof of concept
+- conclude example 2
+- introduce genetic code reprogramming
+- motivate expanding chemical substrates in ribosome-mediated polymerization
+- describe translation apparatus
+- summarize limitations of natural ribosome
+- introduce flexizyme approach
+- describe design rules for flexizyme-mediated charging
+- motivate expanding substrate scope for flexizyme-catalyzed RNA acylation
+- introduce compatible substrate scaffolds
+- benchmark molecular structure of CME-activated phenylalanine
+- screen substrate-eFx compatibility
+- determine acylation efficiency of eFx with various substrates
+- expand substrate scope by elaborating scaffolds
+- investigate saturated and unsaturated aliphatic scaffolds
+- explore benzoic acid derivatives with varying electronic character
+- test electronic effect hypothesis
+- investigate heteroaromatic scaffolds with different electronic properties
+- explore aliphatic scaffolds with various steric hindrances
+- summarize design rules for potential Fx substrates
+- use computational modeling to understand substrate-Fx interactions
+- generate models of tetrahedral intermediates formed with tRNA
+- investigate incorporation of novel Fx substrates into peptides
+- perform Fx-catalyzed acylation reactions using Fx-optimized tRNAs
+- purify tRNA-monomers and add to cell-free protein synthesis reaction
+- determine incorporation of new substrates into reporter peptide
+- use PURExpress system for peptide synthesis
+- design reporter peptide with T7 promoter-controlled DNA template
+- perform peptide synthesis using only 9 amino acids
+- purify synthesized peptides using Strep-Tactin-coated magnetic beads
+- characterize peptides by MALDI-TOF mass spectroscopy
+- perform positive control experiment with all 20 natural amino acids
+- perform negative control experiment without Met or mis-acylated tRNAfMet
+- incorporate noncanonical substrates at the start codon
+- add tRNAfMet containing CAU anticodon to PURExpress reaction
+- discover peaks corresponding to theoretical mass of peptide with substrate on N-terminus
+- note formylation of N-terminal residues
+- discuss implications of results
+- summarize expanded substrate scope for flexizyme-catalyzed RNA acylation
+- discuss potential applications of expanded substrate scope
+- conclude genetic code reprogramming
+- discuss future directions for flexizyme-mediated charging
+- discuss potential for novel therapeutics and materials
+- discuss potential for novel A-B polycondensation reactions
+- conclude expanded substrate scope for flexizyme-catalyzed RNA acylation
+- introduce acylation reaction
+- describe experimental setup
+- summarize results of acylation reaction
+- discuss limitations of mis-acylated tRNA
+- test incorporation of substrates at C-terminus
+- conclude on limitations of biopolymer production
+- summarize design rules for flexizyme-mediated charging
+- discuss molecular interaction of key substrates
+- describe genetic code reprogramming
+- discuss potential applications of N-functionalized peptides
+- look forward to future work on genetic code expansion
+- introduce references
+- list reference 1
+- list reference 2
+- list reference 3
+- list reference 4
+- list reference 5
+- list reference 6
+- list reference 7
+- list reference 8
+- list reference 9
+- list reference 10
+- list reference 11
+- list reference 12
+- list reference 13
+- list reference 14
+- list reference 15
+- list reference 16
+- list reference 17
+- list reference 18
+- list reference 19
+- list reference 73
+- describe experimental conditions
+- outline general procedure for cyanomethyl ester formation
+- provide example of cyanomethyl 3-phenylpropanoate preparation
+- provide example of cyanomethyl trans-cinnamate preparation
+- report NMR and mass spectra data
+- describe compound D
+- describe compound E
+- describe compound F
+- describe compound 1
+- describe compound 2
+- describe compound 3
+- describe compound 4
+- describe compound 5
+- describe compound 5
+- describe compound 6
+- describe compound 7
+- describe compound 8
+- describe compound 9
+- describe compound 10
+- describe compound 11
+- describe compound 11 (continued)
+- describe compound 12
+- describe compound 13
+- describe compound 14
+- describe compound 15
+- describe compound 16
+- describe compound 17
+- describe compound 18
+- describe compound 19
+- provide NMR data for compound 5
+- provide NMR data for compound 6
+- provide NMR data for remaining compounds
+- describe compound 20
+- describe compound 21
+- describe compound 22
+- describe compound 23
+- describe compound 24
+- describe compound 25
+- describe compound 26
+- outline general procedure for formation of ABT ester
+- describe compound 25a
+- describe compound 26a
+- describe compound G
+- describe compound 27
+- describe compound 28
+- describe compound 29
+- describe compound 30
+- provide NMR data for compound 25a
+- provide NMR data for compound 26a
+- provide NMR data for compound G
+- provide NMR data for compound 27
+- provide NMR data for compound 28
+- provide NMR data for compound 29
+- provide NMR data for compound 30
+- describe synthesis of compounds 30-32
+- provide NMR and HRMS data for compounds 30-32
+- describe preparation of DNA templates for RNAs
+- outline extension protocol for generating Fx derivatives
+- outline PCR amplification protocol for Fx derivatives
+- provide sequence of final DNA templates produced by PCR reactions
+- describe DNA precipitation protocol
+- outline in-vitro transcription protocol
+- describe digestion of DNA templates
+- outline purification of in-vitro transcribed RNA
+- describe acylation of microhelix
+- outline acidic PAGE analysis protocol
+- describe coupling reaction of activated ester with microhelix
+- provide conditions for incubation of reaction mixture
+- describe quenching of reaction mixture
+- outline loading of crude mixture on polyacrylamide gel
+- describe electrophoresis and staining of gel
+- outline determination of acylation yield
+- acylation of tRNA
+- precipitation of tRNA
+- in-vitro translation
+- peptide purification
+- characterization of peptides
+- introduce example 4
+- describe materials and method
+- prepare tert-butyl (2-(4-(mercaptomethyl)benzamido)ethyl) carbamate
+- describe general procedure A
+- describe general procedure B
+- describe general procedure C
+- prepare 3,5-dinitrobenzyl-amino-4-butanoate
+- characterize 3,5-dinitrobenzyl-amino-4-butanoate
+- prepare 3,5-dinitrobenzyl 5-aminopentanoate
+- characterize 3,5-dinitrobenzyl 5-aminopentanoate
+- prepare 3,5-dinitrobenzyl 6-aminohexanoate
+- characterize 3,5-dinitrobenzyl 6-aminohexanoate
+- provide NMR data
+- provide mass spectra data
+- conclude example 4
+- describe examples
+- prepare 3,5-dinitrobenzyl 5-Ahx-OH
+- prepare 3,5-dinitrobenzyl 4-(methylamino)butanoate
+- prepare 3,5-dinitrobenzyl piperidine-4-carboxylate
+- prepare 3,5-dinitrobenzyl 2-(piperidin-4-yl)acetate
+- prepare 3,5-dinitrobenzyl 2-(piperazin-1-yl)acetate
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) 4-aminobutanethioate
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) 4-amino-2,2-dim
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) 7-aminoheptanethioate
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) (1s,3s)-3-amin
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) (1r,3r)-3-amin
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) (1S,3R)-3-amin
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) (1S,3R)-3-amin
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) (1S,3S)-3-amin
+- prepare S-(4-((2-aminoethyl)carbamoyl)benzyl) 5-(aminomethyl)furan-3
+- discuss scope of invention
+- discuss modifications and variations
+- discuss cited references
+- discuss inconsistencies in definitions
+- provide general description
+- provide disclaimer
+- end of description
+

@@ -1,0 +1,137 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate DCIS diagnosis
+
+## SUMMARY
+
+- introduce machine learning model
+- describe test and validation results
+- compare to clinicopathological variables
+- outline treatment stratification
+- describe computer-implemented method
+- detail image annotation process
+- describe feature extraction and classification
+- outline system and computer program product embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce DCIS and its recurrence prediction challenges
+- motivate whole slide image analysis for DCIS recurrence prediction
+- describe limitations of current clinicopathological variables
+- highlight need for novel biomarkers for DCIS recurrence risk stratification
+- introduce computational pathology and its applications
+- describe human limitations in pathological grading of DCIS
+- motivate whole slide image analysis for mitigating human limitations
+- introduce embodiments of present systems and methods
+- describe two-step classification approach for predicting 10-year recurrence rates
+- illustrate flow diagram of first portion of process
+- describe preprocessing of image slide
+- extract patches from preprocessed slide
+- color deconvolute patches to hematoxylin layer
+- extract features from patches
+- input features into random forest for patch classification
+- combine patch probabilities to produce whole slide annotation
+- illustrate flow diagram of second portion of process
+- analyze annotations through feature distributions and spatial features
+- select final feature list
+- train machine learning classifier to predict high- versus low-risk of recurrence
+- describe methodology of exemplary study
+- describe study population and data collection
+- describe tumor slide selection and scanning
+- describe automated full slide annotation using GUI
+- extract texture features from deconvoluted hematoxylin channel
+- describe use of deep learning features from CNN
+- describe slide-based leave-one-out cross-validation
+- describe augmentation of training tiles
+- describe development of slide annotation classifier
+- describe post-processing for spatial feature analysis
+- extract full slide features
+- compute texture feature distribution statistics
+- derive spatial features
+- calculate annotation proportions and confidence metric
+- perform feature reduction
+- select maximum follow-up time point
+- filter features using t-tests
+- perform sequential forward feature selection
+- evaluate classifier performance using 5-fold cross-validation
+- select final feature set and classifier
+- examine final model using Kaplan-Meier curves and Cox regression
+- develop patient-based model
+- test patient-based model on high-grade cohort
+- validate recurrence classifier model
+- apply model to independent cohort
+- compare predicted high-risk group with low-risk group
+- describe training data cohort
+- show patient characteristics
+- illustrate recurrence distributions
+- develop pipeline for automated annotation
+- augment ground truth regions
+- develop final annotation classifier
+- evaluate annotation classifier performance
+- perform whole slide analysis and recurrence prediction
+- threshold at 10-year follow-up
+- select significant whole slide features
+- illustrate full slide feature selection
+- show feature characteristics of final model
+- compare multiple machine learning algorithms
+- choose most prognostic variables
+- introduce DCIS recurrence risk model
+- describe Kaplan-Meier survival curve
+- show significance of log-rank test
+- illustrate univariate HR of selected features
+- describe dichotomizing patients into groups
+- show example of feature 1 separating patients
+- show example of feature 3 not retaining significance
+- illustrate combination of features for optimal stratification
+- describe interpretation of top predictive feature
+- illustrate example of cribriform architecture in H&E
+- describe adaptive Otsu thresholds
+- show Kaplan-Meier curves of training cohort
+- describe univariate and multivariate Cox regression analysis
+- illustrate stratification of patients in training cohort
+- show Kaplan-Meier curves of patient outcomes
+- describe significance of log-rank test
+- illustrate impact of clinical features on model performance
+- show Kaplan-Meier curves of patients in validation cohort
+- describe univariate and multivariate Cox regression analysis
+- illustrate model validation
+- describe limitations of current DCIS treatment
+- introduce 2-part image analysis pipeline
+- describe first portion of pipeline
+- describe second portion of pipeline
+- illustrate block diagram of computer system
+- describe scanning/input routines
+- describe preprocessing routines
+- describe patch extraction routines
+- describe color deconvolution routines
+- describe texture feature extraction routines
+- describe random forest routines
+- describe whole slide annotation routines
+- describe annotation analysis routines
+- describe feature selection routines
+- describe recurrence prediction routines
+- describe operating system
+- describe multi-processor computing
+- describe multi-tasking computing
+- describe multi-process computing
+- describe computer readable storage medium
+- describe computer readable program instructions
+- describe network adapter card
+- describe external computer or external storage device
+- describe computer readable program instructions for carrying out operations
+- describe assembler instructions
+- describe ISA instructions
+- describe machine instructions
+- describe machine dependent instructions
+- describe microcode
+- describe firmware instructions
+- describe state-setting data
+- describe configuration data for integrated circuitry
+- describe source code or object code
+- describe object oriented programming language
+- describe procedural programming languages
+- describe electronic circuitry
+- describe programmable logic circuitry
+

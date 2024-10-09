@@ -1,0 +1,314 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce media viewing platforms
+
+## SUMMARY
+
+- receive bid request
+- determine shaded bid value
+- submit shaded bid value to auction module
+- receive minimum bid to win indication
+- store auction information
+- train machine learning model
+- receive second bid request
+- determine second shaded bid value
+- submit second shaded bid value to auction module
+- receive first bid request
+- determine first shaded bid value
+- submit first shaded bid value to auction module
+- receive minimum bid to win indication
+- store auction information
+- determine plurality of values
+- determine plurality of differences
+- generate feature parameters
+- receive second bid request
+- determine second shaded bid value
+- submit second shaded bid value to auction module
+- receive first bid request
+- determine first shaded bid value
+- submit first shaded bid value to auction module
+- receive impression indication
+- store auction information
+- train machine learning model
+- determine win probabilities
+- determine third shaded bid value
+- submit third shaded bid value to auction module
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+
+### 1. Computing Scenario
+
+- describe computing scenario
+- introduce networking
+- describe service 102
+- describe servers 104
+- describe local area network 106
+- describe physical networking protocols
+- describe logical networking protocols
+- describe local area network 106 architecture
+- describe wide area network 108
+- describe client devices 110
+- describe user 112
+- describe connections to wide area network 108
+- describe cellular communicator
+- describe wireless local area network 106
+- describe wired network
+- describe mass storage
+- introduce server configuration
+- describe server 104 architecture
+- describe processors 210
+- describe memory 202
+- describe peripheral components
+- introduce client device configuration
+- describe client device 110 architecture
+- describe processors 310
+- describe peripheral components
+
+### 2. Presented Techniques
+
+- introduce computing devices and/or techniques for determining bid values
+- describe content items and associated information
+- explain platform for uploading content
+- motivate determining bid values for participation in auctions
+- describe first bid value determination
+- explain auction participation and winner determination
+- introduce shaded bid values and bid surplus
+- define bid surplus equation
+- illustrate embodiment of determining bid values
+- describe content system and associated entities
+- explain content item presentation
+- describe first content item and associated information
+- receive content information and budget
+- describe first user and associated client device
+- explain user profile and interests
+- receive first bid request
+- describe first request for content and associated features
+- transmit first bid request to demand-side platform
+- determine first bid value based on content information
+- determine first bid value based on click probability
+- determine first bid value based on conversion probability
+- analyze user profile database
+- identify first user profile
+- determine first bid value based on revenue
+- explain unshaded bid value
+- explain first-price auction and second-price auction
+- describe supply-side server and content exchange
+- transmit first request for content to content system
+- receive first resource information
+- transmit first bid request to demand-side platform
+- describe first internet resource and associated features
+- explain first client device and associated information
+- conclude presented techniques
+- present techniques
+- determine shaded bid value
+- apply bid reduction factor
+- submit shaded bid value
+- receive messages
+- receive impression indication
+- receive minimum bid to win indication
+- store auction information
+- train machine learning model
+- generate feature parameters
+- determine optimal bid reduction factor
+- determine shaded bid value
+- determine minimum bid value to win
+- store auction information database
+- retrieve auction information
+- determine plurality of values
+- determine optimal bid reduction factors
+- determine shaded bid values
+- determine bid reduction factors
+- calculate differences
+- generate feature parameters
+- generate bias parameter
+- perform machine learning model training
+- determine loss values
+- determine first loss value
+- define first loss function
+- calculate first difference
+- generate first loss value
+- introduce presented techniques
+- asymmetrical loss function
+- first loss value determination
+- first loss function composition
+- combined loss value determination
+- combined loss value composition
+- first machine learning model usage
+- bid reduction factor and/or shaded bid value output
+- optimizing first machine learning model
+- feature parameters and/or bias parameter generation
+- first plurality of feature parameters composition
+- first machine learning model training
+- bid reduction factor model composition
+- system for determining bid values illustration
+- second user interaction with service
+- content system usage
+- first web page presentation
+- search interface composition
+- search field composition
+- search selectable input composition
+- search results presentation
+- search result composition
+- request transmission
+- resource access request transmission
+- second resource information transmission
+- second request for content transmission
+- second bid request reception
+- second bid request composition
+- second set of features composition
+- second bid value determination
+- second content information usage
+- second entity information usage
+- second budget and/or target audience usage
+- second click probability and/or conversion probability usage
+- second user profile analysis
+- second bid value determination
+- second shaded bid value determination
+- first machine learning model usage
+- bias parameter and/or feature parameters usage
+- second bid reduction factor determination
+- one or more first feature parameters analysis
+- second bid reduction factor model usage
+- linear regression performance
+- third value determination
+- one or more interactions determination
+- first interaction determination
+- second vector representation and/or third vector representation usage
+- dot product determination
+- fourth value determination
+- one or more interactions combination
+- second bid reduction factor determination
+- third value and/or fourth value usage
+- second shaded bid value determination
+- bid reduction factor model usage
+- present techniques
+- determine second bid reduction factor
+- apply second bid reduction value
+- illustrate second shaded bid value
+- submit second shaded bid value
+- analyze bid values
+- determine winner
+- transmit content item
+- illustrate system for determining bid values
+- receive request for content
+- transmit bid request
+- submit bid response
+- determine winner
+- transmit response
+- store auction information
+- extract features
+- generate machine learning model
+- load machine learning model
+- determine shaded bid value
+- access service
+- receive content item
+- receive content information
+- access platform
+- receive bid request
+- determine first bid value
+- determine first click probability
+- transmit first request for content
+- transmit first bid request
+- present techniques
+- determine first bid value
+- determine first conversion probability
+- determine first click probability
+- determine first shaded bid value
+- submit first shaded bid value
+- receive first impression indication
+- store first set of auction information
+- train machine learning model
+- generate first machine learning model
+- define win probability model
+- train win probability model
+- analyze plurality of sets of auction information
+- determine plurality of win-rates
+- generate first plurality of feature parameters
+- generate bias parameter
+- generate one or more bid parameters
+- output shaded bid value
+- optimize first machine learning model
+- receive second bid request
+- associate second bid request with second request for content
+- receive second bid request by second supply-side server
+- transmit second bid request to second DSP
+- indicate second set of features
+- associate second set of features with second request for content
+- associate second set of features with second internet resource
+- associate second set of features with second client device
+- include second time of day in second set of features
+- include second day of week in second set of features
+- include second location in second set of features
+- include information associated with second client device
+- receive second request for content
+- associate second request for content with second internet resource
+- associate second request for content with second client device
+- transmit second bid request
+- present techniques
+- determine second bid value
+- determine second bid value based on second content information
+- determine second bid value based on second entity
+- determine second bid value based on second budget
+- determine second bid value based on second target audience
+- determine second bid value based on second advertisement campaign goals
+- determine second bid value based on second click probability
+- determine second bid value based on second conversion probability
+- determine second bid value based on second user profile
+- determine plurality of win probabilities
+- determine win probability using first machine learning model
+- determine win probability based on second set of features
+- determine win probability based on first feature parameters
+- determine win probability based on bias parameter
+- determine win probability based on first bid parameter
+- determine win probability using non-machine learning function
+- determine first win probability associated with second shaded bid value
+- determine first win probability based on one or more first feature parameters
+- determine first win probability based on first bid parameter
+- determine first win probability based on bias parameter
+- determine plurality of win probabilities associated with second plurality of shaded bid values
+- determine third shaded bid value for participation in second auction
+- determine third shaded bid value based on second plurality of shaded bid values
+- determine third shaded bid value based on plurality of win probabilities
+- determine third shaded bid value based on second win probability
+- determine plurality of expected bid surpluses
+- determine expected bid surplus based on one or more first feature parameters
+- determine expected bid surplus based on bias parameter
+- determine expected bid surplus based on first bid parameter
+- determine third shaded bid value based on plurality of expected bid surpluses
+- determine third shaded bid value based on first expected bid surplus
+- submit third shaded bid value for participation in second auction
+- submit third shaded bid value to second auction module
+- illustrate win probability chart
+- illustrate expected bid surplus chart
+- describe system for determining bid values
+- receive request for content
+- transmit bid request
+- submit bid response
+- determine winner of auction
+- transmit response to client device
+- store auction information
+- extract features from data
+- generate machine learning model
+- load machine learning model onto bid shading module
+- determine bid value using machine learning model
+- describe benefits of implementation
+- increase total bid surplus
+- increase generalized revenue
+- increase total win-rate
+
+### 3. Usage of Terms
+
+- define computer-related entities
+- clarify term usage for "first", "second", etc.
+- explain meaning of "example"
+- define "or" and "a"/"an"
+- clarify "includes", "having", "has", "with"
+- disclaim limitations of description
+- describe implementation options
+- outline operations of embodiments
+- acknowledge equivalent alterations
+

@@ -1,0 +1,256 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce antibodies and affinity levels
+
+## SUMMARY
+
+- provide method for identifying antibody amino acid sequence
+- receive initial amino acid sequence
+- query machine learning engine
+- receive proposed amino acid sequence
+- identify proposed amino acid sequence
+- query machine learning engine successively
+- train machine learning engine
+- predict affinity level
+- compare predicted affinity level
+- train machine learning engine
+- identify binding region
+- provide method for identifying series of discrete attributes
+- receive initial series of discrete attributes
+- query machine learning engine
+- receive output series
+- identify discrete version of output series
+- perform iterative process
+- stop iterative process
+- provide method for identifying amino acid sequence for protein
+- receive initial amino acid sequence
+- query machine learning engine
+- receive proposed amino acid sequence
+- identify proposed amino acid sequence
+- provide method for identifying antibody amino acid sequence
+- receive initial amino acid sequences
+- train machine learning engine
+
+## DETAILED DESCRIPTION
+
+- introduce techniques for identifying antibodies with high affinity to an antigen
+- describe machine learning engine for predicting antibody affinity
+- train machine learning engine using affinity information
+- query machine learning engine to identify antibody with high affinity
+- output proposed antibody amino acid sequence
+- describe limitations of conventional antibody development techniques
+- introduce advantages of targeted antibody synthesis
+- describe machine learning engine for predicting antibody quality metrics
+- train machine learning engine using quality metric data
+- query machine learning engine to identify antibody with high quality metrics
+- output proposed antibody amino acid sequence
+- describe iterative process for discretization of optimized values
+- convert continuous representation to discrete representation
+- input discrete representation into machine learning engine
+- repeat iterative process until convergence
+- describe advantages of iterative optimization and discretization process
+- introduce random sequence input to machine learning engine
+- optimize random sequence to high-affinity antibody
+- describe multiple iterations of optimization
+- generate multiple antibody candidates with high affinity
+- describe continuous representation of amino acid sequence
+- associate values with different amino acids for each residue
+- select highest-value amino acid for each residue
+- convert continuous representation to discrete representation
+- input discrete representation into machine learning engine
+- repeat iterative process until convergence
+- describe advantages of iterative optimization and discretization process
+- update machine learning engine using affinity information
+- improve ability of machine learning engine to propose high-affinity antibodies
+- describe general applicability of techniques to other protein-protein interactions
+- train machine learning engine using protein interaction information
+- query machine learning engine to identify protein with high interaction
+- output proposed protein amino acid sequence
+- describe iterative process for identifying discrete attributes
+- receive output series of discrete attributes
+- identify discrete version of output series
+- input discrete version into machine learning engine
+- repeat iterative process until convergence
+- describe advantages of iterative process for identifying discrete attributes
+- identify proposed amino acid sequence with multiple quality metrics
+- train machine learning engine using data associated with multiple quality metrics
+- generate model with parameters representing relationships between quality metrics
+- estimate values for parameters using scores
+- describe model with convolutional neural network (CNN)
+- generate model with parameter representing weight between quality metrics
+- estimate value for parameter using scores
+- describe optimization facility for estimating parameter values
+- apply gradient ascent optimization algorithm
+- describe model with multiple parameters representing relationships between quality metrics
+- estimate values for parameters using scores
+- describe amino acid identification system
+- illustrate machine learning engine with training facility, optimization facility, and identification facility
+- describe training facility for generating model
+- describe optimization facility for estimating parameter values
+- describe identification facility for querying machine learning engine
+- input initial amino acid sequence and quality metric information
+- receive output data with proposed amino acid sequence and quality metric information
+- describe quality metric analysis for generating training data
+- perform assays to assess quality metrics of proteins
+- generate training data with estimated quality metric information
+- define denoising of training data
+- motivate replicates of assay
+- describe quality metric information
+- introduce quality floor
+- describe training of machine learning engine
+- motivate updating machine learning engine
+- describe proposed amino acid sequences
+- introduce continuous representation
+- describe discretization process
+- motivate selecting amino acid
+- describe autoencoder
+- introduce iterative process
+- describe subsequent training
+- motivate protein synthesis
+- describe protein interaction data
+- introduce affinity data
+- describe querying machine learning engine
+- motivate identifying proposed amino acid sequence
+- describe receiving proposed amino acid sequence
+- introduce process 200
+- describe receiving training data
+- motivate training machine learning engine
+- describe receiving input data
+- introduce querying machine learning engine
+- describe receiving proposed amino acid sequence
+- motivate identifying proposed amino acid sequence
+- describe process 300
+- introduce querying machine learning engine
+- describe receiving values
+- motivate selecting amino acid
+- describe identifying proposed amino acid sequence
+- introduce process 400
+- describe querying machine learning engine
+- motivate predicting quality metric
+- describe comparing predicted quality metric
+- introduce training machine learning engine
+- describe process 500
+- introduce generating model
+- describe receiving initial series
+- motivate querying machine learning engine
+- describe receiving output series
+- introduce identifying discrete version
+- describe iterative process
+- motivate identifying proposed series
+- describe process 600
+- introduce receiving training data
+- motivate training machine learning engine
+- describe receiving initial amino acid sequence
+- introduce querying machine learning engine
+- describe receiving proposed amino acid sequence
+- motivate identifying proposed amino acid sequence
+- describe affinity specificity
+
+### Illustrative Embodiments
+
+- introduce high-throughput methodology for designing antibodies
+- motivate computational methods for antibody design
+- describe phage display for testing antibodies
+- train machine learning models from observed affinity data
+- propose iterative framework for identifying effective antibodies
+- summarize benefits of computational methods
+- describe training machine learning models from sequencing data
+- predict antibody sequences with improved binding affinity
+- test predicted sequences using phage display
+- improve models using observed affinity data
+- enable prediction of high-affinity and highly-specific binders
+- describe commercialization of array-based oligonucleotide synthesis
+- synthesize predicted antibody sequences using oligonucleotide services
+- express sequences on high-throughput display platforms
+- perform affinity experiments and sequencing
+- improve models using resulting affinity data
+- enable prediction of therapeutic antibodies
+- predict affinity and other indicators of therapeutic efficacy
+- select appropriate candidates for in vivo therapeutic studies
+- refine antibody designs using training data
+- include deep learning models of antibody affinity
+- propose new experiments to test antibody sequences
+- create and test millions of new antibody candidates
+- refine models and characterize their accuracy
+- train models to recognize other properties of effective therapeutic antibodies
+- design antibodies with high affinity and high specificity
+- integrate disruptive technologies for antibody design
+- describe framework for developing computational models
+- apply deep learning approaches to antibody engineering
+
+## EXAMPLES
+
+- introduce phage display affinity experiments
+- describe antibody library derivation
+- sequence antibody repertoire
+- parse DNA sequencing reads
+- analyze frequency of observed complete CDR sequences
+- demonstrate consistency of panning results
+- motivate use of CDR3 sequences for training and validation
+- describe CDR3 sequence characteristics
+- preprocess CDR3 sequences for modeling
+- combine replicates and examine frequency ratios
+- label sequences as non-binders or binders
+- train CNN using non-binders and mid-binders
+- evaluate CNN performance in classifying weak-binders from strong-binders
+- compare performance of different CNN architectures
+- analyze effect of randomizing input labels
+- demonstrate monotonic increase in performance with additional training data
+- analyze published dataset of HB80.3 variants
+- apply CNN-based models to predict binding affinity
+- evaluate CNN's ability to generalize to new data
+- train new CNN to identify sequences with higher scores than training set
+- demonstrate CNN's ability to extrapolate predictions for unseen sequences
+- verify production of novel antibody sequences with higher predicted affinity
+- suggest alternative residues to improve sequence affinity
+- demonstrate optimization of sequences for high affinity to first target and low affinity to second target
+- create multi-label dataset for Lucentis and Enbrel targets
+- train multi-class CNN to predict labels for Lucentis and Enbrel
+- train multi-output regression CNN to predict observed affinity scores
+- validate method's potential to propose novel antibody sequences with high affinity and specificity
+- optimize sequences using gradient ascent based method
+
+### Example Computer-Implemented Embodiments
+
+- introduce computing device
+- describe components of computing device
+- explain network adapter
+- describe computer-readable storage media
+- explain processor
+- describe data and instructions
+- illustrate computing device 1900
+- describe processor 1902
+- explain network adapter 1904
+- describe computer-readable storage media 1906
+- explain data and instructions
+- describe variant facility 1908
+- describe reference sequence facility 1910
+- describe sequence alignment facility 1912
+- describe sequence analysis facility 1914
+- describe input and output devices
+- explain user interface
+- describe speech recognition
+- describe haptic input
+- explain implementation in hardware and software
+- describe controller
+- explain interconnection of processors
+- describe networks
+- explain algorithms for controlling methods
+- describe readable storage medium
+- explain non-transitory form
+- describe computer-readable medium
+- explain program or software
+- describe executable instructions
+- explain program modules
+- describe data structures
+- explain protocols for communicating data
+- describe relationships between data elements
+- explain variations and modifications
+- describe parameters, dimensions, materials, and configurations
+- explain equivalents to specific embodiments
+- describe individual features, systems, articles, materials, kits, and/or methods
+- explain combinations of features, systems, articles, materials, kits, and/or methods
+- describe indefinite articles and transitional phrases
+

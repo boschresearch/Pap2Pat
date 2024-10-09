@@ -1,0 +1,253 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+- introduce expression system for transgene in plants
+
+## BACKGROUND OF THE INVENTION AND PRIOR ART
+
+- introduce hybrid vigor
+- describe benefits of hybrid crops
+- discuss history of hybrid breeding
+- explain emasculation in hybrid seed production
+- introduce male sterility
+- describe types of male sterility
+- discuss genetic male sterility
+- discuss limitations of genetic male sterility
+- describe cytoplasmic male sterility
+- discuss cytoplasmic genetic male sterility
+- introduce transgenic male sterility
+- describe tapetum ablation
+- discuss genes used for male sterility
+- describe BARNASE
+- describe RNase T-I
+- describe Mammalian uncoupling protein
+- describe Diptheria toxin A-chain
+- describe BAX
+- describe AtBECLIN1
+- describe melon ethylene receptor genes
+- describe apoptotic protein inhibitor
+- describe cysteine proteases
+- discuss restoration of fertility
+
+### LIMITATIONS OF PRIOR ART
+
+- limitations of prior art systems
+
+### Objectives of the Present Invention
+
+- develop tightly regulated reversible expression system
+- develop tapetum specific expression system
+- use TA29 promoter for tapetum specific expression
+- develop regulatory component for stringent expression
+
+## SUMMARY OF THE INVENTION
+
+- provide MS DNA construct
+- provide ES DNA construct
+- provide RS DNA construct
+- provide reversible expression system for modulating male sterility
+- provide reversible expression system for modulating transgene expression
+- provide DNA vector comprising MS DNA construct
+- provide DNA vector comprising ES DNA construct
+- provide DNA vector comprising RS DNA construct
+- provide recombinant host cell comprising MS DNA construct
+- provide recombinant host cell comprising ES DNA construct
+- provide recombinant host cell comprising RS DNA construct
+- provide recombinant host cell comprising DNA vector
+- provide transgenic plant or parts thereof, including seeds
+- provide method of obtaining transgenic plant or parts thereof, including seeds
+- provide transgenic plant or parts thereof, including seeds, capable of restoring male sterility
+- provide method of obtaining transgenic plant or parts thereof, including seeds, capable of restoring male sterility
+- provide hybrid plant or parts thereof, including seeds
+- provide method of obtaining hybrid plant or parts thereof, including seeds
+- provide transgenic plant or parts thereof, including seeds, capable of expressing gene of interest
+- provide method of obtaining transgenic plant or parts thereof, including seeds, capable of expressing gene of interest
+- provide transgenic plant or parts thereof, including seeds, capable of inhibiting expression of gene of interest
+- provide method of obtaining transgenic plant or parts thereof, including seeds, capable of inhibiting expression of gene of interest
+- provide method of switching off expression of gene of interest in F1 population
+- provide MS DNA construct for use in making transgenic plants
+- provide ES DNA construct for use in making transgenic plants
+- provide RS DNA construct for use in making transgenic plants
+- describe MS DNA construct
+- describe ES DNA construct
+- describe RS DNA construct
+- describe reversible expression system
+- describe DNA vector
+- describe recombinant host cell
+- describe transgenic plant or parts thereof, including seeds
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define invention scope
+- introduce expression subsystem (ES) construction
+- describe ES expression mechanism
+- introduce restoration subsystem (RS) construction
+- describe RS expression mechanism
+- outline F1 plant generation
+- describe gusA reporter gene expression
+- define cloning vector
+- define reporter gene
+- define promoter
+- define constitutive promoter
+- define tapetum-specific promoter
+- define expression
+- define expression cassette
+- define transcription factor
+- define recombinant vector
+- define expression vector
+- define binary vector
+- describe suitable promoter
+- describe anther-specific promoter
+- define program cell death (PCD)/apoptosis
+- define autophagy
+- define explants
+- define photo-morphogenesis
+- outline invention objectives
+- describe ES construct components
+- describe TA29(TGTA) promoter
+- describe gusA reporter gene
+- describe nosT transcriptional terminator
+- describe HFR1n-131-TBPm3 fusion protein
+- describe MS module construct
+- describe BECLIN1 gene expression
+- describe RS module construct
+- describe COP1L105A gene expression
+- outline method for reversible gene expression
+- describe MS construct transformation
+- describe RS construct transformation
+- outline F1 hybrid development
+- describe COP1L105A protein function
+- describe HFR1n-131aa-TBPm3 fusion protein function
+- outline Agrobacterium-mediated transformation method
+- describe plant transformation
+- describe transgenic plant selection
+- outline invention applications
+- describe ms transgenic plants
+- describe rs transgenic plants
+- describe crossing of ms and rs transgenic plants
+- analyze f1 plants
+- describe expression of beclin1
+- describe hybrid crops
+- describe ms dna construct
+- describe first expression cassette
+- describe second regulatory cassette
+- specify first tissue specific promoter
+- specify desired gene of interest
+- specify second promoter
+- specify terminator
+- specify n-terminal fragment of transcription factor
+- provide ms dna construct example
+- describe es dna construct
+- describe first expression cassette
+- describe second regulatory cassette
+- specify first tissue specific promoter
+- specify gene of interest
+- specify terminator
+- specify second promoter
+- specify n-terminal fragment of transcription factor
+- provide es dna construct example
+- describe rs dna construct
+- specify third tissue specific promoter
+- specify restorer gene
+- provide rs dna construct example
+- describe reversible expression system
+- provide DNA vector with MS DNA construct
+- provide DNA vector with ES DNA construct
+- provide DNA vector with RS DNA construct
+- specify first tissue specific promoter
+- specify desired gene of interest
+- specify second promoter
+- specify terminator
+- specify N-terminal fragment of transcription factor
+- specify gene of interest
+- specify third tissue specific promoter
+- specify restorer gene
+- provide DNA vector with MS DNA construct
+- provide DNA vector with ES DNA construct
+- provide DNA vector with RS DNA construct
+- provide recombinant host cell with MS DNA construct
+- provide recombinant host cell with ES DNA construct
+- provide recombinant host cell with RS DNA construct
+- specify first tissue specific promoter
+- specify desired gene of interest
+- specify second promoter
+- specify terminator
+- specify N-terminal fragment of transcription factor
+- specify gene of interest
+- specify third tissue specific promoter
+- specify restorer gene
+- specify recombinant host cell
+- provide recombinant host cell with MS DNA construct
+- provide recombinant host cell with ES DNA construct
+- provide recombinant host cell with RS DNA construct
+- provide transgenic plant or parts thereof
+- describe transgenic plant
+- specify RS DNA construct
+- specify first tissue specific promoter
+- specify desired gene of interest
+- specify second promoter
+- specify terminator
+- specify N-terminal fragment of transcription factor
+- specify application of transgenic plant
+- describe MS DNA construct
+- specify restorer gene
+- describe ES DNA construct
+- specify method of obtaining transgenic plant
+- specify transformation of plant cells
+- describe hybrid plant
+- specify MS DNA construct in hybrid plant
+- specify RS DNA construct in hybrid plant
+- describe method of obtaining hybrid plant
+- specify crossing of transgenic plants
+- specify development of hybrid seeds
+- describe method of switching off gene expression
+- specify crossing of transgenic plants for switching off
+- specify development of hybrid seeds for switching off
+- describe MS DNA construct for use
+- describe ES DNA construct for use
+- describe RS DNA construct for use
+- describe reversible expression system for use
+- specify alternative embodiments
+- specify alternative embodiments of transgenic plant
+- specify alternative embodiments of MS DNA construct
+- specify alternative embodiments of ES DNA construct
+- specify alternative embodiments of RS DNA construct
+- specify alternative embodiments of hybrid plant
+
+### EXAMPLES
+
+- introduce working examples
+- define scope of disclosure
+- describe primer details
+- describe DNA sequence details
+- describe experimental conditions
+- isolate cDNA encoding Beclin1 from Arabidopsis
+- extract total RNA from Arabidopsis leaves
+- generate cDNA using SuperScript Reverse Transcriptase kit
+- amplify plant Beclin 1 gene using PCR
+- clone PCR product in pBluescript SK+ vector
+- determine nucleotide sequence of cloned PCR product
+- analyze sequence homology using BLAST program
+- isolate cDNA encoding COP1 from Arabidopsis
+- extract total RNA from Arabidopsis seedlings
+- generate cDNA using SuperScript Reverse Transcriptase kit
+- amplify plant COP1 gene using PCR
+- clone PCR product in pBluescript SK+ vector
+- determine nucleotide sequence of cloned PCR product
+- analyze sequence homology using BLAST program
+- perform site-directed mutagenesis in COP1
+- isolate cDNA encoding HFR1n-131 from Arabidopsis
+- extract total RNA from Arabidopsis seedlings
+- generate cDNA using SuperScript Reverse Transcriptase kit
+- amplify 131 amino acid N-terminus fragment of plant HFR1 coding gene
+- clone PCR product in pBluescript SK+ vector
+- determine nucleotide sequence of cloned PCR product
+- analyze sequence homology using BLAST program
+- construct chimeric gene fusions
+- transform tobacco plants with Agrobacterium tumefaciens
+- analyze transgenic lines for transgene integration
+- analyze expression module transgenics
+- analyze male sterility and restored fertility of F1 hybrid
+- perform real-time PCR analysis
+

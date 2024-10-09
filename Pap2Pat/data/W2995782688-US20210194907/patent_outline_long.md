@@ -1,0 +1,224 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- define link prediction
+- application of link prediction
+
+## DETAILED DESCRIPTION
+
+- introduce temporal link prediction
+- describe application to network anomaly detection
+- define network communication
+- represent communication data as network graph
+- track temporal behavior of network
+- generate time series of adjacency matrices
+- compute estimated link probabilities
+- define link probability (link score)
+- convert adjacency matrix to probabilistic representation
+- introduce GRDPG
+- compute latent positions of nodes
+- derive link probabilities from latent positions
+- describe three approaches to link prediction
+- average adjacency matrices
+- compute spectral embedding
+- estimate link probabilities from spectral embedding
+- process individual adjacency matrices
+- compute link score matrices
+- average link score matrices
+- estimate link probabilities from averaged link score matrices
+- individually spectrally embed adjacency matrices
+- average spectral-embedding vectors
+- compute predicted spectral embedding vectors
+- estimate link probabilities from predicted spectral embedding vectors
+- introduce COSIE network model
+- compute joint spectral embedding
+- predict COSIE correction matrix
+- compute link score matrix from predicted COSIE correction matrix
+- compare estimated link probabilities with observed network links
+- detect anomalies based on comparison
+- identify nodes associated with anomalies
+- generate subgraph of anomalous nodes
+- take remedial action based on anomalies
+- describe use of GRDPGs for efficient prediction
+- discuss advantages of GRDPG-based methods
+- introduce FIG. 1
+- describe enterprise network
+- show devices within and outside enterprise network
+- illustrate communication between devices
+- describe access control by firewall
+- introduce network security system
+- describe collection of communication information
+- introduce FIG. 2
+- describe process for anomaly detection
+- monitor network activity
+- generate adjacency matrices
+- estimate link probabilities
+- compare estimated probabilities with observed network links
+- identify anomalous nodes
+- generate subgraph of anomalous nodes
+- take remedial action based on anomalies
+- describe hardware processing circuitry
+- discuss instructions stored in memory
+- conclude process for anomaly detection
+- define GRDPG
+- introduce spectral embedding techniques
+- derive ASE
+- derive LSE
+- derive DASE
+- extend DASE to bipartite graphs
+- motivate link prediction
+- introduce averaging adjacency matrices
+- define collapsed adjacency matrix
+- compute latent positions
+- compute link score matrix
+- discuss limitations of simple model
+- introduce limitations of model
+- motivate edge-specific dynamic
+- define weighting matrices
+- compute extended collapsed matrix
+- illustrate link prediction process
+- compute time series of weighting matrices
+- compute weighted average of adjacency matrices
+- spectrally embed average adjacency matrix
+- compute link score matrix
+- predict links
+- introduce alternative link prediction approach
+- process adjacency matrices individually
+- compute time series of link score matrices
+- compute weighted average of link score matrices
+- illustrate alternative link prediction process
+- introduce yet another approach
+- spectrally embed individual adjacency matrices
+- align spectral embeddings
+- compute predicted embedding
+- introduce Procrustes analysis
+- define minimization criterion
+- describe generalized Procrustes analysis algorithm
+- define optimization routine
+- motivate GPA algorithm
+- describe DASE for directed and bipartite graphs
+- illustrate joint optimization procedure
+- describe iterative optimization steps
+- illustrate flowchart for link prediction
+- describe processing of adjacency matrices
+- compute predicted spectral embedding
+- describe alignment of spectral embeddings
+- compute link score matrix
+- describe COSIE model for dynamic networks
+- estimate latent positions and COSIE matrices
+- describe MASE for undirected graphs
+- extend COSIE model to directed and bipartite graphs
+- illustrate flowchart for COSIE-based link prediction
+- describe processing of adjacency matrices by MASE
+- model time series of COSIE matrices
+- compute link score matrix from COSIE model
+- describe use of edge-specific weights and models
+- describe time series modeling using seasonal ARIMA models
+- introduce forecasting equation
+- derive k-steps ahead forecasts
+- model average over adjacency matrices
+- model average over link score matrices
+- introduce SARIMA model
+- introduce dynamic binary response model
+- introduce GARMA model
+- describe simulation setup
+- generate adjacency matrices
+- compute link prediction
+- show results of link prediction
+- describe improvement of time-series models
+- illustrate block diagram of machine
+- describe machine components
+- describe storage device
+- describe instructions
+- describe machine-readable medium
+- describe network interface device
+- describe communication networks
+- describe modules
+- describe computer-implemented method
+- monitor network communications
+- generate time series of adjacency matrices
+- compute time series of spectral embeddings
+- compute predicted spectral embedding
+- compute estimated probabilities
+- compare estimated probabilities
+- identify anomalous network behavior
+- generate output
+- describe system
+- describe hardware processing circuitry
+- describe hardware memories
+- describe instructions
+- generate time series of adjacency matrices
+- compute time series of spectral embeddings
+- compute predicted spectral embedding
+- compute estimated probabilities
+- compare estimated probabilities
+- identify anomalous network behavior
+- generate output
+- describe reconfiguring access control device
+- describe enhancing communication logging
+- describe allocating additional resources
+- describe aligning spectral-embedding vectors
+- describe computing predicted spectral embedding vectors
+- describe elementwise prediction models
+- describe anomaly criterion
+- define network graph
+- generate time series of adjacency matrices
+- compute spectral embeddings
+- compute estimated probabilities of network communication
+- compare against anomaly criterion
+- identify anomalous network behavior
+- identify subset of devices
+- generate output
+- compute weighting matrices using ARIMA model
+- compute spectral embeddings using adjacency spectral embedding
+- compute spectral embeddings using directed adjacency spectral embedding
+- compute spectral embeddings using Laplacian spectral embedding
+- apply threshold to estimated probabilities
+- determine subgraph
+- output subgraphs
+- reconfigure access control device
+- enhance communication logging
+- revoke or suspend user account
+- notify user
+- allocate additional computational resources
+- compute time series of weighting matrices
+- compute weighted average of adjacency matrices
+- compute time series of link score matrices
+- compute weighted average of link score matrices
+- compare against anomaly criterion
+- identify anomalous network behavior
+- identify subset of devices
+- generate output
+- compute spectral embeddings using adjacency spectral embedding
+- compute spectral embeddings using directed adjacency spectral embedding
+- compute spectral embeddings using Laplacian spectral embedding
+- apply threshold to estimated probabilities
+- determine subgraph
+- output subgraphs
+- reconfigure access control device
+- enhance communication logging
+- revoke or suspend user account
+- notify user
+- allocate additional computational resources
+- compute time series of COSIE correction matrices
+- compute predicted COSIE correction matrix
+- compute estimated probabilities of network communication
+- compare against anomaly criterion
+- identify anomalous network behavior
+- identify subset of devices
+- generate output
+- compute spectral embeddings using adjacency spectral embedding
+- compute spectral embeddings using directed adjacency spectral embedding
+- compute spectral embeddings using Laplacian spectral embedding
+- apply threshold to estimated probabilities
+- determine subgraph
+- output subgraphs
+- reconfigure access control device
+- enhance communication logging
+- revoke or suspend user account
+- notify user
+- allocate additional computational resources
+- compute time series of COSIE correction matrices using ARIMA model
+- generate output
+

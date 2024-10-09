@@ -1,0 +1,240 @@
+# 0 Background
+
+## 1 Cardiac Auscultation
+
+Cardiac auscultation is a difficult skill to acquire and today most medical students graduate without the ability to determine whether a heart sound or murmur is normal or abnormal [1,2]. Evidence also indicates that this skill is not acquired later in practice [3,4]. There is question that despite improved heart sound teaching methods [5] whether improvement in this clinical skill has occurred. This diagnostic deficit results in, (a) certain patients with an undiagnosed organic cardiac lesion will suffer ill health or possible death at a later date, or (b) in the case of the innocent murmur, present in at least 72% of normal children [6,7], expensive cardiac investigation must be carried out to reach this diagnosis. The availability of a new quantitative digitally based computer method, such as herein described, and which with high accuracy can determine and quantify key heart sound variations (i.e. frequency/pitch, intensity, timing, energy, sound split and ejection click), will present a valuable asset to the delivery of health care.
+
+The approach used is based on spectrograms representing a dynamic graphic image of heart sound intensity in time and frequency. At present, current methods of spectral display are not generally understood or even employed in clinical medicine. We propose new method and format that will enable better characterization of heart sounds and hopefully will present a new foundation for subsequent clinical implementation and testing.
+
+## 2 Phonocardiograms (Pcg)
+
+The PCG is a display of the heart sound signal showing that heart sounds and murmurs can provide useful information to the physician by complementing cardiac auscultation. Basic methodology of distinguishing cardiac murmurs from the PCG is the same as interpreting murmurs from auscultation. However, it provides additional information about timing of cardiac phases and events as well as serving as a digital record that can be utilized to characterize dynamic changes associated with therapy and course of the disease. PCG complements auscultation.
+
+The major PCG clinical drawback is that it does not present information on frequency (pitch) of heart sounds and their components, one of the major deciding factors for murmur clinical interpretation. It does not have the ability to differentiate separate multiple (folded) frequencies of various sounds and presents no information concerning dynamic changes of energy (power) stored in the sound. Other deficiencies arguably include signal filtration effects (change of visual representation due to filtration) and presence of artifacts and noises that can visually mask weak sounds. Challenges in pinpointing start and end points of certain sounds have been reported. End point positions will also depend on the applied filter, which add additional uncertainty. Manual segmentation (separation of heart sound components) may be another problem as well.
+
+PCG never achieved acceptance as a routine clinical investigative method [8], but did find a valuable place in clinical investigation and research. However current newly developed "system science" [9] and signal processing computational technologies in combination with a digital sound recording technologies, electronic recording stethoscopes, advanced new vibration sensors [10] and finally extraordinary computing power now afforded to PDA's, tablet PCs, palm PCs, laptops and MP3 players/recorders make it now possible to completely revitalize old PCG-based approaches.
+
+## 3 Heart Sound Spectrography
+
+The concept of heart sound spectral display was first introduced by McKusick in 1955 [11] and in a subsequent series of his clinical publications [12-14]. (Victor A. McKusick, M.D., Professor of Medical Genetics and Cardiologist by training, The Johns Hopkins University School of Medicine and a physician-scientist widely acknowledged as the father of genetic medicine, is a recipient of the National Medal of Science, 2002.) This display provides added frequency (pitch) dimension to the PCG signal display. While this work did not receive significant reception by clinicians, there is now a renewed interest in this approach both in clinical medicine and in biomedical engineering research. Using spectrograms obtained by McKusick, Don Michael [15] illustrated the intrinsic properties of various heart lesions in his monograph "Auscultation of the Heart". Similar works has been recently reported by Balster et al. [16], Nopponen and Lukkarinen [18,19]. Tovar-Corona et al. [20,21], Bhatikar et al. [22], Tuchinda and Thompson [26,27] utilized wavelet-based transform to obtain time varying scalogram maps. The spectrogram offers additional insight into time dependent change of murmur frequency. Donnerstein [17] correlated spectrogram frequency characteristics with Doppler echo velocity. Tavel & Katz [23,24] reported a method of clinical differentiation of aortic stenosis from innocent murmur using spectrogram measurements. Finally, Tavel [25] indicated great promise for this approach for clinical diagnosis.
+
+Unfortunately methods presented in [9-19,23-25] use various forms of the Short Term Fast Fourier Transform (STFT) to obtain instantaneous frequency characteristics of signals, and all these methods are subject to the "quantum uncertainty" theorem, which states that a signal and its Fourier transform can not both have small support [32], and that frequency and time and both can not be determined to arbitrary precision [45,47]. The resulting outcome of this drawback is a non-unique, low fidelity image, which changes depending on its frequency resolution [29,30]. Also, heart sounds are nonlinear, non-sinusoidal and exponential signals, and it has been demonstrated in signal processing literature [43] that Fourier transform is not mathematically appropriate method to study such signals.
+
+Tuchinda and Thompson [26], Tovar-Corona et al. [20,21], Bhatikar et al. [22] utilized continuous wavelet based transformation (CWT) to develop spectrogram looking maps that present wavelet scale variation in time (scaleograms). CWT approach is not as well established in clinical studies as traditional spectrogram approach [8-19] and is presently emerging. Unlike for STFT spectrograms, time and frequency resolution of the CWT is non-uniform in the entire time-frequency domain [31]. At high frequencies, there is good time resolution and bad frequency resolution. At low frequencies, we have better frequency resolution and bad time resolution. Accordingly, this results in smearing the time-frequency representation of the signal in time at low frequencies. The speed of wavelet transform computation and improved resolution over the STFT are the primary reasons that the wavelet transforms have become a popular analysis tool [32]. Graphic results presented by Tuchinda and Thompson [26] also fail to provide sufficient qualitative resolution and have a strong visual "skewness" as compared to traditional spectrograms.
+
+There are numerous recent publications on the subject of digital recording and analysis of heart sounds. Green et al. [33] discuss optimal ways of recording heart murmur findings using SNOMED templates, DeGroff et al. [22] suggest a potential for computerized frequency analysis to further improve the accuracy of murmur assessment and Nigam et al. [34,35] introduce new ways of segmenting heart sound signal. Finley et al. [36] demonstrated that email digital recordings of children's heart sounds are of diagnostic quality and allow accurate distinction between innocent and pathologic murmurs in >90% of cases. Marcus et al. [37] and Collins et al. [38] use heart sound recordings to correlate S3 estimates, BNP levels and CHF diagnosis, demonstrating very high specificity (85–90%) of digital heart sound recordings for CHF diagnosis in patients over 50 years old. Kudriavtsev et al. [39] demonstrated that Still's murmurs have narrow spectral bandwidth, with this being a significant feature differentiating them from abnormal murmurs.
+
+We conclude that there is a clear upsurge of clinical interest in spectrographic representation of heart sounds. However existing signal processing methods lack in accuracy and resolution. Unlike other short term Fourier transform based approaches [15-19] and Gabor's transformation [32,48,49], which offer approximation to instantaneous energy distribution of a signal, the Wigner-Ville distribution [45,46] has been derived to compute the signal energy at each time instant, exactly utilizing knowledge of the entire signal to compute time-frequency properties for each moment in time. The method used in this study is based on the Wigner-Ville distribution and is called Heart Energy Signature (HES).
+
+HES represents a unique state of dynamically changing multi-component signal of the heart beat. It can be visualized as an image of the instantaneous heart pulsation energy distribution in both frequency and time domains. It is intended for use as an individual biometric characteristic for heart sound interpretation.
+
+# 0 Methods
+
+## 1 Wigner-Ville Distribution Function
+
+The pseudo Wigner Ville Distribution [40-42] is a form of the spectrogram, which is based on joint time-frequency distribution (Eugene Paul Wigner (1902–1995), Nobel prize laureate in Physics, introduced quasi-probability distribution in 1932 study quantum corrections to classical statistical mechanics). Wigner's probability function [44,45] addresses a question of the Heisenberg quantum uncertainty [47] – that momentum and position of the particle can not be determined to arbitrary precision (quantum physics theory). For a quantum particle described by its probability function of coordinates, Wigner has developed a probability distribution of the particle to simultaneously have particular coordinates and momentum [45]. Ville [46] further developed Wigner's function to compute the instantaneous frequency of the signal at each time instant. The resulting Wigner-Ville distribution of time and frequency [32,40,41] attempts to express frequency as a function of time. Since signal frequency is related to signal energy, one can interpret Wigner-Ville distribution as the energy map of a signal in time and frequency.
+
+## 2 Heart Energy Signature (Hes)
+
+A Heart Energy Signature is essentially a high-resolution 2D spectrographic image of the heart sound signal that is based on the Wigner-Ville joint time frequency distribution [40] of recorded heart sound signal. Schematic details are shown in Fig. 1, where the corresponding heart sound components (Fig. 1A) and matching elements on the energy signature map (Fig. 1B) are identified. This image stores comprehensive information concerning time averaged and instantaneous changes in mechanical energy of the heart beat. These changes are characterized by frequency and intensity. Unlike previous attempts to characterize heart sounds in this manner (based on Short Term Fourier Transform) STFT (and/or Gabor transform) the HES method is unique in its ability to resolve heart energy accurately in both time and frequency simultaneously. STFT spectrogram can only resolve accurately in time or frequency, but not both time and frequency [28]. Figs. 2(A,B) presents a typical example of a HES obtained from a patient (showing two heart beats) and can be compared with spectrograms obtained using traditional short term window Fourier transform (Figs. 9(A,B), 10(A–D)) and Table 2. This is of a pediatric patient with innocent heart murmur recorded at the apex, sampling frequency of 11 kHz. Binary wave file with the sound is attached [see Additional file 1]. Other comparisons are shown on Figs. 5(A–E), 6(A–E), 7(A–C), 8(A–D) and Table 1. We have thus a method having accurate time-frequency resolution and which satisfies the many mathematical properties, including energy, time and frequency marginals and instantaneous frequency [32,49,53].
+
+Tovar-Corona et al. [20,21] described similarly appearing contour graphs obtained using the continuous wavelet (CWT) based method. This method is now gaining acceptance in signal processing and mathematical details of this method are discussed elsewhere [30-32]. The CWT method presents results in wavelet scale – time map, and not on frequency (pitch) time map. Thus, accurately correlating wavelet scales with frequencies is difficult and for this reason is beyond the scope of this study.
+
+## 3 Mathematical Method And Computational Implementation
+
+### 3.1 Preprocessing
+
+The flowchart for computation of Heart Energy Signature (HES) is shown in the Appendix A [see Figure 15]. The first step in pre-processing heart sounds is normalization of the data. By doing so, the heart sounds obtained from different instruments and measurements may be compared. That is, normalization makes data instrument and measurement independent. The amplitude of heart sounds may vary widely, depending upon the location of the sensor used and the measurement system, e.g. phonocardiograph (PCG) vs. electronic stethoscope. To standardize the comparison of heart sounds in the time domain, they are normalized to have their amplitude vary between [-1,+1]. The process of normalization of the signal x(t) to [-1,+1] amplitude range is well known in signal processing. The basic steps include:
+
+1. find the minimum xmin and the maximum xmax values of the signal
+
+2. divide the signal by 0.5*|xmax - xmin|
+
+Presentation of the time signal in the normalized form is important, since the same signal can appear differently at different amplitude scales. Furthermore, normalization of the heart signal creates the signal presentation with easily computed proportionality relationships between the amplitudes of the signal at various time instances.
+
+After normalization, the next step in the heart sound processing is computation of heart sound energy, as described in the following section.
+
+### 3.3 Hes Derivation Using Joint Time Frequency Transformation
+
+The energy of a signal x(t), including both acoustic and PCG signals, is proportional to the squared amplitude of the signal. The signal energy E, contained at the time interval [t, t+T] is computed as
+
+\(E = {\int\limits_{t}^{t + T}\left| x(t) \middle| {}_{2}dt \right.}\)
+
+The time plot of the heart sound PCG displays the amplitude of the sound at each instant, i.e. no information about the energy is displayed. An accepted principle in acoustics is that the energy of the single frequency acoustic signal at each instant is proportional to the squared amplitude of the signal and the squared frequency of the signal. Computation of the acoustic energy is particularly difficult where the acoustic signal consists of many signals with fast changing frequency components. In this case, the acoustic energy must be presented in the form reflecting its energy content at each instant at the various frequencies contained in the signal. Thus, one must compute acoustic energy as a function of both time and frequency: E = E(t, f).
+
+The best method to compute heart sound energy is to utilize joint time-frequency distribution (JTFD). JTFD reflects the distribution of the signal energy in the time-frequency plane [51,52]. However, JTFD may not mathematically satisfy energy properties, i.e. to be positive throughout time-frequency plane. In order for distribution to have the same properties as energy, the chosen distribution has been modified to be a real positive value at each point of the time-frequency plane. Steps to obtain such distribution are outlined below.
+
+A large number of time-frequency distributions of a signal x(t) are given by Cohen's class as
+
+\(C(t,f) = \frac{1}{2\pi}{\iiint{\varphi(\theta,\tau)}}x(t + \frac{\tau}{2})x^{*}(t - \frac{\tau}{2})e^{- j\theta t - j2\pi f\tau - j\theta u}d\tau dud\theta,\)
+
+where t is time, f is frequency and τ is the running time. The function φ(θ, τ) is the kernel defining distribution properties. If the kernel φ(θ, τ) = 1, we obtain the Wigner-Ville Distribution (WVD):
+
+\(WVD_{xx}(t,f) = \frac{1}{2\pi}{\int\limits_{- \infty}^{\infty}{x(t + \frac{\tau}{2})x^{*}\ (t - \frac{\tau}{2})e^{- j2\pi f\tau}\ d\tau,}}\)
+
+The WVD can be regarded as theoretically optimal in that a maximum number of desirable mathematical properties are satisfied [51]. In the field of the signal processing all time-frequency distributions of Cohen's class can be computed by means of convolution of the Wigner distribution with a two-dimensional impulse response function [52].
+
+For the kernel φ(θ, τ) = μ(τ), we obtain the pseudo WVD (PWVD). The Gaussian sliding window function μ(τ) is used having an optimal time-frequency concentration:
+
+\(PWVD_{xx}(t,f) = \frac{1}{2\pi}{\int\limits_{- \infty}^{\infty}{x(t + \frac{\tau}{2})x^{*}(t - \frac{\tau}{2})\mu(\tau)e^{- j2\pi f\tau}d\tau,}}\)
+
+\(\mu(\tau) = h(\frac{\tau}{2})h^{*}( - \frac{\tau}{2}),\)
+
+h(τ) = A exp(-σ2τ2),
+
+where A and σ are real positive constants.
+
+The WVD and PWVD may not necessary be positive functions at each point on the time-frequency domain for general signals. From the energy concept, it would be more convenient to work with a positive function, as in the case of magnitude of FFT. The WVD can artificially be made positive by simply calculating its absolute value at each point. The common interpretation of WVD as an energy density can thus be allowed, or the intensity of a signal, to be simultaneous in time and frequency.
+
+Since for general signals, the WVD takes on negative values, the absolute positive form |PWVDxx(t,f)| of the PWVD is used in the format for the HES. This guarantees the distribution to be positive in the time-frequency plane and makes straightforward interpretation of the distribution as the signal energy in the time-frequency.
+
+The absolute positive form of the PWVD is used for computation of the HES. Thus, the preferred method to compute heart sound energy distribution is as follows:
+
+E(t, f) = |PWVDxx(t, f, A, σ)|,
+
+where A = 1.0, σ2 = 10-5, t ∈ [τ, τ + T], f ∈ [f1, f2].
+
+The description of PWVD implementation is given in [42] and is implemented in a commercial software package BSIGNAL [56], both being developed by the present authors. Computational flowchart is given in the Appendix A [see Figure 15]. The WVD distribution satisfies the frequency marginal condition [52,54])
+
+\(\left| X(\omega) \middle| {}_{2} = \frac{1}{2\pi}{\int\limits_{- \infty}^{+ \infty}{WVD_{xx}(t,\omega)dt}}, \right.\)
+
+where |X (ω)|2 is the energy density spectrum, and ω = 2πf is the angular frequency. This equation means that the integral of the WVD over the time variable at a certain frequency ω yields the energy density spectrum of x(t) at this frequency. This property of the WVD is expanded here to compute the energy density spectrum for the HES format (part E1 of the format, outlined in Sect. 2.4).
+
+\(\left. D = \middle| X(f) \middle| {}_{2} = {\int\limits_{\tau}^{\tau + T}\left| PWVD_{xx}(t,f) \middle| dt \right.} \right.\)
+
+The WVD also satisfies the time marginal condition [5]
+
+\(\left| x(t) \middle| {}_{2} = \frac{1}{2\pi}{\int\limits_{- \infty}^{+ \infty}{WVD_{xx}(t,\omega)d\omega}}. \right.\)
+
+Accordingly the integral of the WVD over the frequency variable at a certain time t yields the instantaneous signal power at that time. Using the energy density interpretation of the PWVD, the signal energy at time t and frequency f contained in a cell dt by df can be found as |PWVDxx(t, f)|dtdf [42]. Other important signal characteristics that can be defined from the PWVD include the instantaneous energy of the signal, or signal power [42]
+
+P(t) = ∫|PWVDxx(t, f)|df.
+
+Thus, the instantaneous energy of the heart sound signal, or the heart sound signal power, is computed for the HES format (part C1 of the format, outlined in Sect. 2.4) as
+
+\(P(t) = {\int\limits_{f_{1}}^{f_{2}}\left| PWVD_{xx}(t,f) \middle| df \right.},\ t \in \lbrack\tau,\tau + T\rbrack\)
+
+The equation for Short Term Fourier Transform STFT is given by
+
+\(STFT_{x}(t,f) = {\int\limits_{- \infty}^{+ \infty}{x(t)h(t - \tau)e^{- j2\pi ft}dt}}\)
+
+where h(t) is the analysis window function. The transform given by the Equation (18) with the Gaussian window function is called Gabor Transform. Since the STFT is complex-valued in general, the spectrogram is used for display purposes. The spectrogram is computed as the squared magnitude of the STFT:
+
+\(\left. S_{x}(t,f) = \middle| STFT_{x}(t,f) \middle| {}_{2} = \middle| {\int\limits_{- \infty}^{+ \infty}{x(t)h(t - \tau)e^{- j2\pi ft}dt}} \right|^{2}\)
+
+## 4 Heart Energy Signature (Hes) Format
+
+The HES format utilizes several additional averaged and instantaneous characteristics which may be extracted from the HES image and source signal. The components of the format to present heart sound energy are schematically illustrated in Figs. 1(A,B) and in the graphic form of Figs. 2(A,B). Figs. 1(A,B) illustrate schematically generic PCG (oscillographic heart sound display) of two heart beats and its HES spectrogram reflection. It includes S1, S2, S3 sounds and also illustrate S2 split as well as systolic and diastolic intervals. Fig. 1B demonstrates (maps) heart sound components as energy contours, with shape depending upon energy distribution in time and frequency. Thus, additional heart sounds or murmurs as well as normal S1 and S2 will be manifested as additional energy contours and missing sounds will lead to significant reduction or complete disappearance of these contours. Contour values inside the dark zones always exceed certain predefined energy threshold, for example 20% of maximum energy or 50% of maximum energy.
+
+In the majority of heart conditions a single heart beat is sufficient to define format. Let us assume that the heart beat is recorded during the time interval [τ, τ + T] with measurement instrument capable of capturing frequency range [f1, f2]. Thus, HES format includes (see also Figs. 3(A–E) and Figs. 4(A–B)):
+
+A1. The distribution of the heart sound energy simultaneously in time and frequency
+
+E = E(t, f), t ∈ [τ, τ + T], f ∈ [f1, f2]
+
+where E is heart sound energy distribution, t is time, f is frequency.
+
+B1. The normalized heart sound corresponding to the heart sound energy
+
+x = x(t), t ∈ [τ, τ + T], x(t) ∈ [-1, +1]
+
+C1. The instantaneous energy of the heart sound signal, or heart sound power, corresponding to x(t)
+
+P = P(t) t ∈ [τ, τ + T]
+
+D1. Instantaneous heart sound power, corresponding to x(t) at a particular frequency f
+
+P = P(t) t ∈ [τ, τ + T]
+
+E1. The energy density spectrum of the heart sound, corresponding to x(t)
+
+D = |X(f)|2, f ∈ [f1, f2]
+
+F1. Instantaneous mean and peak frequency of the heart sound signal, corresponding to E(t,f). Instant peak frequency (IPF) = frequency f* for given t*, for which
+
+E(t*,f*) = Max(E(t*,f))
+
+Instant mean frequency, or IMF, defined as
+
+\(f^{*} = \frac{\int\limits_{f0}^{f1}{E(t^{*},f)*fdf}}{\int\limits_{f0}^{f1}{E(t^{*},f)df}}\)
+
+The HES can be stored as a digital file and displayed visually. Its visual representation consists of a following set of quantitative plots and images (Figs. 3(A–E), Figs. 4(A,B)):
+
+• a two-dimensional image (2D) representing the distribution of the heart sound energy simultaneously in time and frequency as defined in A1 (Fig. 3A)
+
+• a time plot of the normalized heart sound corresponding to the heart sound energy as defined in B1 (Fig. 3B)
+
+• a plot of the instantaneous energy of the heart sound, or heart sound power, as defined in C1 (Fig. 3C)
+
+• a plot of the instantaneous energy of the heart sound at a given frequency, or heart sound power at a given frequency, as defined in D1 (Fig. 3D)
+
+• a plot of the energy density spectrum of the heart sound, as defined in E1 (Fig. 3E).
+
+• a plot of the time averaged energy density spectrum computed by Fast Fourier Transform FFT (Fig. 3E2)
+
+• a plot of the instantaneous peak (Fig. 4A) and mean (Fig. 4B) frequencies, as defined in F1
+
+These plots help to provide a comprehensive description and quantitative differentiation of heart abnormalities. For example, Fig. 3A provides qualitative visualization of every cardiac sound event, including S2 split and gives instantly visual ranges of change in frequency and time. Fig. 3C provides us with precise estimation of S2 split duration (time distance between peaks is equal to 30 ms) and S2 duration (75 ms) and provides relative scale of intensity for systolic murmur (30% of maximum power). Fig. 3D provides the same measure, but at the dominant murmur frequency of 125 Hz (horizontal line on Fig. 3A). On that frequency murmur power is increased to 45% of maximum. Fig. 3E1 shows the energy density spectrum of murmur obtained from HES for entire murmur time duration (murmur peak is at 125 Hz and half-bandwidth at 50% magnitude is 21 Hz), same spectrum obtained by FFT is shown on Fig. 3E2 (peak frequency 124 Hz, half-bandwidth 11 Hz and on Fig. 3E3 we show instant energy density spectrum obtained at murmur intensity peak (vertical line on Fig. 3A), showing peak at 128 Hz and half-bandwidth of 23 Hz. This instantaneous frequency distribution can be obtained at any time instant for murmur or any other sound component. We also measure effective frequency bandwidth (lower frequency LF and high frequency HF) at 50% of the magnitude on the spectrum distribution. Instantaneous peak and mean frequencies extracted from HES are shown on Figs. 4(A,B) where we can clearly see dominant frequencies of S1, S2 and murmur. Murmur frequency varies in time between 100 to 150 Hz; S2 frequency varies between 160 to 100 Hz and S1 changes between 70 to 145 Hz. Instantaneous jumps in frequency can be visualized, measured and correlated with extra sounds(clicks, snaps, splits, etc). To further illustrate HES format ability to characterize heart sound we extracted murmur signal from the heart sound (Fig. 4C) and analyzed it separately. Murmur energy signature is depicted in Fig. 4D showing narrow frequency width, with data extraction performed at vertical and horizontal lines. From this image mean frequency of 125 Hz, frequency half-bandwidth 20 Hz, lower frequency 102 Hz and high frequency 142 Hz are measured. On Fig. 4E the murmur instantaneous power change at dominant frequency is shown. The horizontal line drawn at 10% power threshold shows murmur start, end points and timing of murmur energy peak (0.262 sec). Fig. 4F shows instantaneous murmur frequency variation, with frequency being 125 Hz at murmur energy peak.
+
+## 5 Heart Sound Data
+
+In developing this method heart sounds that were recorded between 1980–91 by one of the authors at the Department of Pediatric Cardiology, IWK Center at Dalhousie University, Canada were utilized. Heart sounds were collected at four major auscultation positions, and subsequently documented as a database which included auscultation position, binary wave sound track (recorded at 11 kHz sampling rate), clinical diagnosis and auscultatory diagnosis. Most of this data was subsequently included in the educational teaching system, EarsOn [50] which included 260 clinical recordings and which was successfully utilized in the teaching of medical students and physicians [3]. All heart sound recordings used in this paper are from that database (see Additional files 1, 2, 5, 6, 7, 8, 9), and no artificial or simulated sounds have been used.
+
+# 0 Results And Discussion
+
+## 1 Overview – What Can We Do With Hes
+
+New hardware and digital sound recording technologies can not completely revitalize old approaches (i.e. PCG or spectrograms) unless new methods present new advantages. The HES spectrogram offers a variety of new tools that may greatly reduce all existing disadvantages of PCG (see Sect. 1.2). By allowing dynamic separation of signal contributions (tones) in frequency and space intrinsic details of signal morphology are demonstrated. The HES spectrogram does not require special filtration. Background and line noise equally contribute to the entire spectrogram and thus are effectively eliminated from the visual image. The time dependent heart power plot deciphered from the HES spectrogram allows easy identification of start and end points of various heart sound components, showing as well separate peak components when signals are split. The method allows objective characterization of both time-averaged and instantaneous murmur's mean and peak frequencies and effective bandwidth, thus aiding in subsequent murmur classification. Folded multi-component frequencies are immediately visualized and documented on the HES image (Eq. 13). Integral HES energy (power plot, Eq. 15a) allows provision of a very detailed characterization of murmur and heart sound intensity (as it changes with time), offering unlimited possibilities to introduce precise digital scores to replace subjective Freeman-Levine system [59] of murmur intensity grades. Finally, the combination of PCG, HES image, power and frequency plots (Eqs. 13–18), allow much easier separation and identification of heart sounds, without the necessity of additional synchronized ECG tracings. These data plots also offer precise ability to measure timing of cardiac sound events, durations, delays and documentation of arrhythmias (variation in distances between energy peaks) if present. Additionally, HES offers the possibility of correlating time varying frequency (Eqs. 17–18) and intensity (Eqs. 15 (a,b)) of heart sounds with time dependent C-Doppler velocity profiles or M-mode ultrasound. This is done by a virtue of providing precisely calculated time varying mean frequency, instantaneous frequency and signal energy derived from the HES image. Rabin [63] directly correlates murmur intensity and murmur frequency with velocity and pressure gradient through an obstruction.
+
+## 2 Examples Of Innocent Murmurs Using Hes Spectrograms
+
+An example of a HES spectrogram for the innocent Still's murmur is presented in Fig. 2A with additional details shown in Figs. 2(B,C). The key characteristic of this image is the sharp resolution, making it possible to visually identify every component of the heart sound in a manner schematically described in Figs. 1(A,B). This heart sound is recorded at the apex. S1 is followed shortly by a 2+/6 systolic murmur of distinct musical quality. S1, S2 and S3 sounds are easily heard, and S2 sound is single to the experienced auscultator. However HES indicates narrow splitting of A2 and P2, illustrating the capability of the method. To illustrate the quantitative side of this method, instantaneous mean frequency characteristics were measured for murmur at times t = 0.4 s; 0.43 s; 0.45 s and 0.47 s. Murmur mean frequency and half-bandwidth were correspondingly 112.9/13.4; 106.2/14.8; 99.5/10.7; 94/13.4 (all measured in Hz) all consistently demonstrating narrow frequency bandwidth.
+
+A second example of an innocent murmur recording of a pediatric patient is shown in Figs. 3(A–E) and 4(A–F). Sound recorded at 2nd LSB. These figures contain 13 components and demonstrates full graphic representation of HES image and format. The first five key elements are shown one below the other. The HES image shows corresponding flooded energy contours (Fig. 3A). The PCG of a single heart beat shows S1, murmur and split S2 sounds in a consecutive order (Fig. 3B). Power plots of Figs. 3C and 3D illustrate the most significant energy components and their gradients. Fig. 3C demonstrates the integral power plot (energy integrated across all frequencies) and in Fig. 3D power is extracted at a pre-selected murmur frequency (shown as a horizontal line at the cross-hair, Fig. 3D), The power plot clearly shows the maximum ratio of murmur to S2 intensity to be equal to 32%, which is consistent with clinical impression of the murmur being of 2+/6 intensity [50]. The instantaneous frequency plot (Figs. 4A and 4B) illustrates the start and end of each heart sound. The variation of frequency of these components is also seen. Clearly demonstrated is that the murmur frequency decreases, that S3 frequency is the lowest; and that S2 has two frequency components separated in time.
+
+The following three components are presented in Fig. 3E and represent:
+
+1) energy density spectrum of the heart murmur (E1),
+
+2) murmur time averaged frequency spectrum, obtained using FFT (E2), and
+
+3) instantaneous energy density spectrum of heart murmur at its peak intensity (vertical cross-hair at the Fig. 3A).
+
+Statistical characteristics of murmur frequency spectrum (peak frequency, mean value, bandwidth around mean value) and all numerical frequency criteria are obtained using equations (17–18) by integrating the energy signature image. Corresponding murmur detail and its HES are shown in Figs. 4C and 4D. Murmur oscillations are evident (basically non-musical), the frequency band of which is shown in detail, confirming the clinical diagnosis of innocent flow murmur [39,50].
+
+In Figs. 4D and 4E, "zoomed in" details of the HES are demonstrated, as well as detail of Doppler echo-like murmur intensity variation plot. The detail of the instantaneous murmur frequency plot (Fig. 4F), showing the murmur gradually increasing its frequency from 80 Hz to 125 Hz and then reducing it to 70 Hz, is also shown. Easily seen is that while time averaged frequency and instantaneous time frequency bands are narrow, the time dependent variation of the frequency spectrum of the murmur is significant. Abrupt start and end points of the murmur are clearly evident in these plots.
+
+## 3 Stft Spectrogram Accuracy Vs. New Method
+
+Classic spectrograms display frequency on the vertical axis and time on the horizontal, and plot sound intensity (measured in decibel) as a color map. They utilize Short Term Window Fourier Transform (STFT), which is a first order method and is subject to the uncertainty principle, whereby one cannot achieve simultaneous resolution in both frequency and time [32]. Publications concerning signal processing also point to the inadequacy of the STFT method [28-30].
+
+### 3.1 Comparison Using Model Signals
+
+In Figs. 5(A–E) comparison of the accuracy of newly developed HES method vs. STFT spectrogram method (Eqs. 12a and 12b) is shown. Labview V7.0 (National Instruments, Austin, TX) was utilized for STFT analysis with Hanning time window (w). In all cases frequency resolution window was set to be 2048 points. On Fig. 5A we present our test signal – basic chirp (6 kHz sampling rate) that emulates linear change in frequency between 60 Hz and 110 Hz (Eq.19). Similar test results are also presented in [58]. Shown also are: HES energy signature spectrogram in Fig. 5B; two examples of STFT spectrograms with time windows w = 32 and 16 data points in Figs. 5(C,D) and quantitative frequency resolution comparison in Fig. 5E. We conclude that HES frequency resolution at signal peak is +-9.5 Hz and is 3.7 to 6.78 times better than STFT resolution. At signal peak HES mean frequency estimate 82.11 Hz matches very well (3%) with analytical chirp frequency of 84.9 Hz. Accuracy of temporal resolution was studied using model function derived from real heart sounds (Fig. 6A, sampling frequency 11 kHz). This function [see Additional file 3] includes two events (DTS1 and DTS2), each event presenting a narrow time split cardiac sound. DTS1 has 20 ms split and DTS2 has 41 ms split. HES results are presented on Fig. 6B and STFT (w = 256) results are presented on Fig. 6C. Matching power plots are presented on Figs. 6D(HES) and 6E (STFT). Clearly seen is that HES provides excellent visual separation of both temporal events, and time split is evident and measurable on energy contour plots and integral power plot. STFT spectrogram images are smeared, there is no visual separation and split is lost on the power plot. HES temporal accuracy at split mid point is 14.6% for DTS1 and 2.9% for DTS2, while correspondingly STFT temporal error is 78.5% and 66%.
+
+In Figs. 7(A,B,C) STFT spectrograms that correspond to the HES image of Fig. 3A are shown. Clearly seen is that short window (Fig. 7A) overstretches frequency range, medium size window (Fig. 7B) provides very crude visual resolution and large size time window (Fig. 7C) completely smears all important components of the heart sound. Matching integral power plots obtained using Eq. 15a are presented in Figs. 8(A,B,C,D). Shown also is the excellent HES resolution of S2 time split (Fig. 8A), excellent time resolution of short window STFT (Fig. 8B), the bad time resolution for medium size STFT window (S2 split is lost, Fig. 8C) and the poor time resolution for large size STFT window (S1,S2 and murmur are smeared together, Fig. 8D). Corresponding quantitative frequency resolution measures are presented in Table 1. Again seen is that frequency resolution for STFT time windows w = 256 & 1024 is good, but image quality is pixilated, and time resolution for these windows is grossly insufficient (Figs. 8C and 8D). Time resolution for STFT window w = 16 is excellent, but frequency resolution is grossly overestimated, lower bound of frequency is completely lost (zero Hz), upper bound is exaggerated by 41% and frequency bandwidth is exaggerated by 215%.
+
+### 3.2. Comparison Using Clinical Heart Sound And Third Party Software
+
+In this section comparison of the STFT spectrogram method with our newly developed method using example of a clinical heart sound is carried out. The original recording is also presented in Figs. 3(A–E) and 4(A–F) (using new method), the heart sound recording being that of an innocent murmur (musical) of a child, the sound track being recorded with 11 kHz sampling rate. To enable further research and comparisons the sound track is attached [see Additional file 2]. The STFT spectrograms shown were obtained using state-of-the art Meditron Analyzer software (FDA cleared clinical product distributed by Welch Allyn, NY) using its default (best) transformation option – Hanning window with 1024, 2048, 4096 data points correspondingly. A typical clinical complaint concerning this method is that clear separation of heart sounds is not allowed, and that precise identification of A2 and P2 components and their split is difficult. In Figs. 9(A,B) and 10(A,B,C), spectrograms obtained using STFT are shown, which currently have been the only means of obtaining dynamic content of the heart sound spectral signal. Quantitative data extraction is not possible as it is not possible using current third party software.
+
+Recent studies [16-19,23-25] show similar spectrograms, also without presenting quantitative details. Certain researchers (i.e. Bentley et al [55]) simply select window function and its parameters (i.e. length) for a particular heart signal by trial and error. This leads to ambiguity in time-frequency resolution to the point that two STFT computed for the same signal, but with different window function parameters, could hardly be identified as computed for the same signal This is clearly demonstrated by comparison of Fig. 7A and Fig. 7C). Results presented in Figs. 10(A,B,C) illustrate this ambiguity as it is not clear which resolution is correct. Window sizes w = 1024, 2048, 4096 data points with sampling rate of 11 kHz were employed. Small size window will improve time resolution, but will have poor frequency resolution and vise versa.
+
+A recording of an innocent murmur of a child (Fig. 9A) is used to demonstrate the drawbacks of the wavelet method. The spectrogram detail is shown in Fig. 9B, while Fig. 9C illustrates the wavelet transform based scaleogram approach similar to one used by Kim and Tavel [24]. Wavelet results were obtained using commercial music editing software Nero Wave Editor and are presented here for illustration purposes. While some correspondence between waveforms and wavelet scaleogram "splashes" is seen, detailed resolution remains insufficient and the image becomes highly smeared, especially at lower frequency range. This behavior is typical for wavelet transform and similar appearing visual images have been reported [27,30]. It has been indicated [62] that STFT and wavelet transform have similar resolution and that improved localization of acoustic events will be useful. Wavelet based visual images (contours) were also reported by Tovar Corona et al. [20,21], however the article presents very sketchy results and method description. It is well established in the signal processing literature [28,30,54] that the STFT spectrogram image is window size dependent, as is clearly seen in the Figs. 10A,B, and 10C. As window size (number of computational points in the sample) increases, the time resolution of the spectrogram decreases (increased horizontal smearing), resulting in improved frequency resolution. These trends are mutually exclusive. Separating the murmur from S1 is very difficult, and detecting S3 with certainty is virtually impossible, as in Fig. 10A, which initially appeared satisfactory, Figs. 10B and 10C become unusable. Close analysis of spectrograms (Figs. 10A, 10B, 10C)) also indicates the tendency to overestimate the upper frequency bound of the signal, especially when improved time resolution is sought. This in turn leads to unrealistic and significantly overestimated conclusions about murmur frequencies. The HES method based spectrogram of the same recording is shown in Fig. 10D and in greater detail in Figs. 2A and 2B. HES is the second order method and simultaneously resolves both time and frequency and separate all key components of the heart sound. This can be seen from Fig. 2A. Fig. 2B clearly demonstrates the detail of Fig. 2A, focusing on the murmur at the end of S1, and on S2 and S3 sounds. Note a clear separation of the heart murmur, and that aortic and pulmonary components of P2 are clearly visible. One also sees in S1 clear separation of mitral and tricuspid components in the power (energy) vs. time plot (Fig. 2C). We can also identify from the plot time the delay between S2 and S3 as well as their duration. In Table 2 we provide further quantitative comparison of murmur, S1 and S2 time averaged frequency resolution using HES and STFT (obtained by the authors using method described in Sect 3.3.1 and Eqs. 12a and 12b, time window w = 16 data points, frequency window 2048 data points). STFT exceeds upper frequency estimation by 60 to 66% and frequency bandwidth estimation between 2.2 to 5 times.
+
+Several other relevant issues and especially end point detection using HES, PCG, STFT and effects of filtration are discussed in the Additional file 4.
+
+## 4 Analyzing Heart Energy Signature
+
+One common and distinctive feature for most heart abnormalities is the appearance of additional energy contours, as depicted in Fig. 1B. Here S1 and S2 contours are "normal" (responsible for typical lub-dup sound) and additional contours may indicate murmurs, and extra sounds. For most of these circumstances (additional dark contours) evaluation by the cardiologist will be required. Figs. 11(A,B), 12(A,B), 13(A,B) and 14(A,B) show PCGs and corresponding HES for cases of heart disorders demonstrating systolic clicks and murmurs. Figs. 11(A,B) illustrate mitral valve prolapse (MVP) with three clicks being elicited on cardiac auscultation. The HES figure shown in Fig. 7B clearly indicates 3 extra energy contours located between S1 and S2 in late systole and which are on the left and right hand side correspondingly. Detecting the exact number of clicks by auscultation is a challenging task. Figs. 12A and 12B present the case of aortic stenosis of moderate severity. Fig. 12B illustrates the appearance of a complex energy contour (consisting of 3 components) between S1 and S2, with S1 having two components, the second of which represents an aortic ejection click. Note that the S2 energy contour shows higher frequency at first (A2 component), followed by lower frequency P2 component. The murmur occurs in the middle of the systolic interval, with high frequency not exceeding 150 Hz. Note, that PCG (Fig. 12A) does not show clear separation of S1 from the murmur, while HES demonstrates a clear time border. In the murmur of pulmonary stenosis, as displayed in Figs. 13A, S1 is not seen. This becomes more evident in Fig. 13B. The murmur is represented by a long and wide energy contour, with high frequencies reaching 230 Hz, correlating with the high degree of obstruction that was clinically diagnosed for that patient [50]. The murmur begins early in systole, ending before S2. Strong correspondence between the pressure gradient (obstruction) and murmur frequency was also demonstrated clinically by other authors [60,61,63]. Figs. 14(A,B) demonstrate an example of Tetralogy of Fallot. This murmur is not associated with post-stenotic valvar dilatation. The murmur has a similar appearance with pulmonary stenosis (Figs. 13(A,B)), but is longer and occupies entire systole, with frequencies reaching 250 Hz. S1 sound is also clearly seen.
+
+We conclude that abnormalities may be detected using overall and immediate visual contrast i.e. self-referencing property of HES image. By also utilizing the quantitative nature of the above displays, the ability to demonstrate murmur pitch, for example, is shown.
+
+# 0 Future Work
+
+Future work will focus on documenting various important characteristics of HES spectrograms and specifically on their ability to characterize heart murmur frequency, S2 heart sound frequency and its split, murmur timing and duration, murmur intensity, S3 sound presence and intensity, S1 presence and intensity, presence of ejection sounds and arrhythmias. The library of heart sounds of one of the authors [3,50] will be utilized to conduct these studies. The systolic ejection click is a very difficult auscultatory event for the physician to elicit, yet may be the single abnormal finding. One study currently in progress is to study a cohort of patients with a heart murmur to determine blindly whether the murmur is innocent or abnormal. A study of patients with systolic ejection clicks by HES is in process. The ultimate goal is to have available a low price bedside automated diagnostic tool to supplement the existing problem of low auscultatory skill of the family physician.
+
+# Conclusion
+
+In this paper a new method and format of analyzing heart sounds using Cohen class joint time-frequency transformation is presented. Initial results of applying these methods to normal and abnormal heart sounds are demonstrated. This method allows detailed quantitative characterization of heart sounds and uses both visual images and a system of integral plots that characterize time averaged and instantaneous sound intensity and frequency variations. Examples of the innocent murmur, mitral valve prolapse, pulmonary and aortic stenosis, and Tetralogy of Fallot are presented. All heart sound components, i.e. S1, S2, S3, murmurs and sound splits, were clearly separated in time and frequency. High resolution of generated heart sound images, in both time and pitch, are demonstrated, presenting a distinctly improved quality to traditional spectrogram images (based on SFFT). The resulting visual images have self-referencing quality, whereby individual features and their changes become immediately obvious.The procedure also offers a new parameter for cardiac research, which, for example by virtue of its ability to portray third heart sounds [58], may well play a valuable part in the management of patients with coronary artery disease. Current ACC/AHA Guidelines recommend that patients with unstable angina and a concurrent auscultated S3 be classified in the group at highest risk for adverse outcomes and considered candidates for an early invasive strategy [58].
+

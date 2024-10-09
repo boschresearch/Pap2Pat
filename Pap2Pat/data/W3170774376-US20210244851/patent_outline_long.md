@@ -1,0 +1,198 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- define field of disclosure
+
+## BACKGROUND
+
+- introduce fracture nonunions
+- describe types of fracture nonunions
+- discuss treatment challenges
+- highlight impact of chronic inflammation
+- discuss pre-clinical studies
+- emphasize need for molecular-based therapies
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce formulation for treating fracture nonunions
+- describe biodegradable scaffold
+- specify therapeutically effective amounts of CXCL12 and SPPI
+- describe biodegradable microspheres
+- outline method for treating fracture nonunions
+- describe application of biodegradable scaffold
+- discuss sustained release of CXCL12 and SPPI
+
+## DETAILED DESCRIPTION
+
+- introduce fracture nonunion treatment
+- highlight local delivery of SPP1 and CXCL12
+- describe normal fracture repair process
+- explain insufficient re-vascularization under inflammatory conditions
+- identify SPP1 and CXCL12 as potential targets of inflammation
+- describe biodegradable scaffolds for sustained release of SPP1 and CXCL12
+- summarize results of RA mouse model study
+- highlight therapeutic potential of SPP1 and CXCL12 supplementation
+- describe role of SPP1 and CXCL12 in angiogenesis
+- explain expression of SPP1 and CXCL12 in various tissues
+- highlight reduction of SPP1 and CXCL12 expression in chondrocytes under inflammatory conditions
+- describe controlled release of SPP1 and CXCL12 via PCL scaffold
+- introduce formulation for treating fracture non-union
+- describe biodegradable scaffold composition
+- explain functional properties of biodegradable scaffold
+- describe mechanical properties of biodegradable scaffold
+- provide examples of biodegradable scaffold dimensions
+- describe loading of active compounds into biodegradable scaffold
+- explain modulation of biodegradable microspheres for sustained release
+- describe composition of biodegradable microspheres
+- provide examples of biodegradable microsphere diameters
+- describe composition of active compounds and excipients in microspheres
+- explain loading density of SPP1 in microspheres
+- explain loading density of CXCL12 in microspheres
+- describe uniform distribution of microspheres in scaffold
+- highlight flexibility of biodegradable polymer fibers
+- describe selection of biodegradable polymer for scaffold formation
+- summarize formulation for treating fracture non-union
+- describe sustained release profile
+- specify duration of sustained release
+- introduce electrospray method
+- formulate agents and compositions
+- define pharmaceutically acceptable carriers
+- explain term "formulation"
+- describe pharmaceutically acceptable excipients
+- define stable formulation
+- discuss mode of administration
+- introduce controlled-release preparations
+- describe modulation agents
+- explain CXCL12 and/or SPP1 modulation
+- introduce CXCL12 and/or SPP1 modulation agents
+- describe therapeutic methods
+- outline process of treating fracture nonunions
+- apply formulation to fracture non-union
+- release CXCL12 and SPP1 according to release profile
+- define therapeutic methods
+- identify subjects in need of treatment
+- determine safe and effective amount of CXCL12 and/or SPP1
+- describe administration methods
+- discuss therapeutically effective amount
+- explain toxicity and therapeutic efficacy determination
+- describe specific therapeutically effective dose level
+- discuss treatment time course
+- describe simultaneous or sequential administration
+- discuss exogenous and endogenous agents
+- describe administration methods
+- discuss delivery systems
+- describe carrier delivery systems
+- discuss screening methods
+- identify candidate molecules
+- describe characteristics of candidate molecules
+- discuss databases and search engines
+- describe lead-like and drug-like compounds
+- discuss "rules of five"
+- describe kits
+- discuss kit components
+- describe instructional materials
+- define terms
+- discuss numerical parameters
+- discuss singular and plural terms
+- discuss open-ended linking verbs
+- discuss method steps
+- discuss examples and exemplary language
+- discuss groupings of alternative elements
+- discuss incorporation of references
+- discuss modifications and variations
+- describe CXCL12 and/or SPP1 administration
+- discuss treatment of acute conditions
+- describe treatment of chronic conditions
+- discuss simultaneous administration
+- discuss sequential administration
+- describe polymeric materials
+- discuss controlled release systems
+- describe infusion pumps
+- discuss biodegradable implants
+- describe microspheres and hydrogels
+- discuss liposomes and smart polymeric carriers
+- describe screening of candidate molecules
+- discuss spatial orientation data
+- discuss drug-like characteristics
+
+### Examples
+
+- introduce non-limiting examples
+- appreciate techniques disclosed in examples
+- develop atrophic fracture nonunion model
+- use serum transfer-induced rheumatoid arthritis (RA) in mice
+- demonstrate angiogenesis defect in RA mice
+- restore angiogenesis upon SPP1 and CXCL12 treatment in vitro
+- describe animal model
+- induce systemic inflammation in mice
+- perform bony fracture procedures
+- conduct bioluminescence imaging
+- analyze luminescent intensities
+- perform histological analyses of fracture callus
+- measure cartilage and bone area
+- calculate osteoclast surface per bone surface
+- perform IHC staining for type III collagen, SPP1, and CXCL12
+- perform immunofluorescence staining for Endomucin
+- quantify vessel number
+- perform microCT analyses
+- quantify bone volume and bone volume to total volume
+- perform in vivo angiogenesis analysis
+- quantify vessel number
+- perform biomechanical torsion testing
+- isolate and culture primary chondrocytes
+- isolate and culture primary osteoblasts
+- perform angiogenic protein array
+- perform in vitro angiogenesis assay
+- assess HUVEC cell proliferation and apoptosis
+- fabricate PCL scaffold with growth factors
+- characterize scaffold
+- examine mechanical properties of PCL scaffold
+- determine release profile of growth factors from PCL scaffolds
+- perform in vitro bioactivity assay of PCL scaffolds
+- perform real-time qPCR
+- perform Western blot
+- perform statistical analysis
+- summarize results of Example 1
+- introduce example 2
+- study inflammation's impact on angiogenesis
+- describe mouse RA nonunion model
+- observe angiogenesis in control and RA mice
+- quantify blood vessels in fracture callus
+- perform immunohistochemistry
+- examine angiogenic factors in chondrocytes and osteoblasts
+- analyze protein array results
+- highlight key findings on angiogenic defect
+- discuss translational implications
+- introduce example 3
+- examine SPP1 and CXCL12 expression
+- perform in vitro angiogenesis assays
+- confirm physiological effect of inflammation
+- analyze HUVEC migration and tube formation
+- discuss restoration of angiogenic capacity
+- introduce example 4
+- develop sustained release formulation
+- fabricate PCL scaffolds
+- characterize scaffold structure and microsphere distribution
+- analyze mechanical testing results
+- monitor release profiles of SPP1 and CXCL12
+- introduce example 5
+- mimic inflammatory conditions
+- examine HUVEC migration and tube formation
+- analyze lumen formation in collagen gel
+- discuss promotion of angiogenesis
+- introduce example 6
+- apply scaffolds to treat fracture nonunion
+- evaluate vascular structure and fracture healing
+- perform immunohistochemistry
+- analyze bone biomechanical properties
+- discuss therapeutic approach
+- highlight benefits of sustained release
+- discuss potential side effects
+- describe PCL scaffold fabrication
+- analyze scaffold properties
+- discuss in vivo findings
+- analyze synergistic effect of SPP1 and CXCL12
+- discuss potential mechanisms
+- conclude therapeutic approach
+

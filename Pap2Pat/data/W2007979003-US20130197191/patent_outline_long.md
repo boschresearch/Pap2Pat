@@ -1,0 +1,701 @@
+# DESCRIPTION
+
+- claim benefit of provisional applications
+
+## BACKGROUND OF THE INVENTION
+
+- introduce FGF21
+- describe FGF21 function
+- discuss FGF21 expression
+- describe FGF21 receptor
+- discuss FGF21 signaling
+- describe FGF21 therapeutic potential
+- motivate need for FGF21 agonists
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce binding proteins
+- describe β-Klotho binding proteins
+- describe FGFR1c binding proteins
+- describe bispecific binding proteins
+- describe β-Klotho binding domain
+- describe FGFR1c binding domain
+- describe linker sequences
+- describe β-Klotho binding protein embodiments
+- describe FGFR1c binding protein embodiments
+- describe bispecific binding protein embodiments
+- describe β-Klotho binding domain embodiments
+- describe FGFR1c binding domain embodiments
+- describe linker sequence embodiments
+- describe β-Klotho binding protein variants
+- describe FGFR1c binding protein variants
+- describe bispecific binding protein variants
+- describe β-Klotho binding domain variants
+- describe FGFR1c binding domain variants
+- describe linker sequence variants
+- describe β-Klotho and FGFR1c binding protein
+- describe β-Klotho and FGFR1c binding protein variants
+- describe β-Klotho and FGFR1c binding domain
+- describe β-Klotho and FGFR1c binding domain variants
+- describe linker sequence
+- describe linker sequence variants
+- describe half-life extending moieties
+- describe pharmaceutical compositions
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Definitions
+
+- define section headings
+- define scientific and technical terms
+- define "a" and "an"
+- define use of parentheses in sequence motifs
+- define "FGF21-like signaling activity"
+- define "binding protein"
+- define "specifically binds"
+- define "monomer domain" or "monomer"
+- define "monomer domain variant"
+- define "loop"
+- define "cysteine-defined loop sequence"
+- define "B-factor-defined loop sequence"
+- define "multimer"
+- define "family" and "family class"
+- define "ligand" or "target molecule"
+- define "linker"
+- provide examples of linkers
+- define "separate"
+- define "directed evolution"
+- describe directed evolution process
+- define "shuffling"
+- describe shuffling formats
+- define "random"
+- describe random polynucleotide sequence or amino acid sequence
+- define "pseudorandom"
+- describe pseudorandom polynucleotide or polypeptide sequences
+- provide examples of target molecules
+- provide examples of families
+- provide examples of monomer domains
+- provide examples of linkers
+- conclude definitions section
+- define polypeptide, peptide, and protein terms
+- define amino acid terms
+- define conservative amino acid substitution
+- define recombinant and non-recombinant terms
+- define nucleic acid sequence
+- define encoding
+- define promoter
+- define vector
+- define identical and percent identity
+- describe method for calculating percent identity
+- define substantially identical
+- describe alignment schemes
+- define heterologous to
+- define heterologous linker
+- describe percentage of sequence identity
+- define comparison window
+- describe methods of alignment
+- describe BLAST 2.0 algorithm
+- describe parameters for BLASTN program
+- describe parameters for BLASTP program
+- describe statistical analysis of similarity
+- define smallest sum probability
+- describe threshold for similarity
+- provide examples of amino acids
+- provide examples of conservative amino acid substitution groups
+- describe recombinant cells
+- describe non-recombinant cells
+- describe vectors
+- describe promoters
+- describe nucleic acid sequences
+- describe encoding
+- describe substantially identical sequences
+- describe heterologous linkers
+- describe percentage of sequence identity
+
+### I. INTRODUCTION
+
+- introduce FGF21-mediated signaling
+- provide nucleotide and amino acid sequences
+- describe binding proteins and their function
+- outline methods for selecting binding proteins
+- discuss applications of binding proteins
+
+### II. GENERAL DISCUSSION OF MONOMER DOMAINS
+
+- introduce monomer domains
+- describe cysteine-rich domains
+- explain disulfide bonds
+- discuss characteristics of monomer domains
+- list examples of monomer domains
+- describe EGF-like domain
+- describe Kringle-domain
+- describe fibronectin type I domain
+- describe fibronectin type II domain
+- describe fibronectin type III domain
+- describe PAN domain
+- describe Gla domain
+- describe SRCR domain
+- describe Kunitz/Bovine pancreatic trypsin Inhibitor domain
+- describe Kazal-type serine protease inhibitor domain
+- describe Trefoil (P-type) domain
+- describe von Willebrand factor type C domain
+- describe Anaphylatoxin-like domain
+- describe CUB domain
+- describe thyroglobulin type I repeat
+- describe LDL-receptor class A domain
+- describe Sushi domain
+- describe Link domain
+- describe Thrombospondin type I domain
+- describe Immunoglobulin-like domain
+- describe C-type lectin domain
+- describe MAM domain
+- describe von Willebrand factor type A domain
+- describe Somatomedin B domain
+- describe WAP-type four disulfide core domain
+- define monomer domains
+- list exemplary sequences
+- describe Ca-EGF monomer domain
+- describe Notch/LNR monomer domain
+- describe DSL monomer domain
+- describe Anato monomer domain
+- describe integrin beta monomer domain
+- describe disulfide bonds
+- describe polynucleotides encoding monomer domains
+- describe libraries of monomer domains
+- describe methods of identifying monomer domains
+- describe non-recombinant monomer domains
+- describe altered monomer domains
+- describe monomer domain variants
+- describe chimeric domains
+- describe randomized domains
+- describe recombinant nucleic acids encoding binding proteins
+- describe optional binding to affinity material
+
+### III. MONOMERS OF THE PRESENT DISCLOSURE
+
+- introduce monomer domains
+- describe monomer domain size
+- describe monomer domain stability
+- describe monomer domain folding
+- describe monomer domain structure conservation
+- describe cysteine rich monomer domains
+- describe A-domain monomer domains
+- describe EGF-like domain monomer domains
+- describe ion binding monomer domains
+- describe cell adhesion monomer domains
+- introduce FGFR1c binding proteins
+- describe FGFR1c binding affinity
+- introduce Family 1 sequences
+- introduce Family 2 sequences
+- introduce Family 3 sequences
+- describe multimer formation
+- introduce β-Klotho binding proteins
+- describe β-Klotho binding affinity
+- introduce Family 4 sequences
+- introduce Family 5 sequences
+- introduce Family 6 sequences
+- introduce Family 7 sequences
+- introduce Family 8 sequences
+- introduce Family 9 sequences
+- introduce β-Klotho dimer binding proteins
+- describe β-Klotho dimer binding affinity
+- introduce Family 10 sequences
+- introduce Family 11 sequences
+- introduce Family 12 sequences
+- introduce Family 13 sequences
+- introduce Family 14 sequences
+- introduce Family 15 sequences
+- introduce Family 16-20 sequences
+
+### IV. IMPROVING SERUM HALF-LIFE
+
+- introduce serum half-life extension
+- describe monomer domains binding to blood factors
+- describe immunoglobulin binding monomer domains
+- describe half-life extender-binding multimers
+- describe serum half-life extension methods
+- describe linking half-life extender-binding monomer domains
+- describe PEGylation for serum half-life extension
+
+### V. MULTIMERS
+
+- define multimers
+- multimers comprise at least two monomer domains
+- multimers have various monomer domain sizes
+- multimers have various monomer domain numbers
+- multimers bind to FGFR1c, β-Klotho or both
+- affinity of multimers for target molecules
+- avidity effect of multimers
+- multimers with different monomer domain specificities
+- multimers with identical monomer domains
+- multimers with different monomer domain classes
+- multimers with monomer domains from different families
+- multimers with immuno-domains and monomer domains
+- multimers with various domain lengths
+- multimers with various disulfide bonds
+- multimers with recombinant monomer domains
+- multimers with extracellular protein-derived monomer domains
+- multimers with protein target-binding monomer domains
+- multimers with calcium-binding monomer domains
+- multimers with multiple monomer domains
+- multimers with multiple binding sites
+- multimers with aggregates
+- multimers with affinity for cell surface targets
+- multimers with affinity for multiple targets
+- multimers with membrane fluidity
+- multimers with self-assembly
+- multimers with fusion proteins
+- multimers with pharmaceutical proteins
+- multimers with small molecule pharmaceuticals
+- multimers with metal binding
+- multimers with Human Serum Albumin (HSA) fusion
+- multimers with linker or adapter molecules
+- multimers with tissue- or disease-specific targets
+- multimers with pharmaceutical proteins or small molecules
+- multimers with linker peptides
+- multimers with expression in E. coli
+- multimers with purification methods
+- multimers with heat lysis purification
+- multimers with storage in iodoacetic acid solution
+
+### VI. LINKERS
+
+- define linkers
+- linkers join monomer domains
+- linkers can be naturally-occurring or synthetic
+- linkers can be rigid or flexible
+- linkers can interact with ligands
+
+### VII. IDENTIFYING MONOMERS OR MULTIMERS WITH AFFINITY FOR A TARGET MOLECULE
+
+- identify monomer domains with desired property
+- provide plurality of different nucleic acids
+- translate nucleic acids to monomer domains
+- screen monomer domains for binding
+- identify monomer domains that bind ligand
+- use mutagenesis to produce monomer domains
+- use error-prone PCR to create variants
+- align naturally occurring monomer domains
+- design recombinant monomer domain
+- maintain conserved amino acids
+- insert, delete, or alter amino acids
+- use random amino acids or portions of naturally occurring monomer domains
+- use synthetic oligonucleotides or shuffling
+- employ human chimeric domains in therapeutic applications
+- generate libraries of human chimeric domains
+- combine loop sequences from different variants
+- modify naturally-occurring human monomer domains
+- minimize potential for immunogenicity
+- provide sequence alignment of human monomer domains
+- identify amino acid residues that differ
+- generate human chimeric monomer domains
+- screen library for binding to target molecule
+- identify human chimeric monomer domain that binds
+- prepare domains of human monomer variant libraries
+- screen for potential immunogenicity
+- provide candidate protein sequence
+- compare to database of human protein sequences
+- identify portions of candidate sequence
+- determine extent of correspondence
+- generate library of human-like chimeric proteins
+- identify human protein sequences from same family
+- align human protein sequences to reference sequence
+- identify subsequences derived from different human protein sequences
+- identify chimeric junction
+- generate human-like chimeric protein molecules
+- recombine oligonucleotides to generate chimeric protein
+- mix and recombine nucleic acids to generate full-length monomer domains
+- generate altered monomer domains by mutating monomer domains
+
+### VIII. SELECTION OF MONOMER DOMAINS THAT BIND FGFR1c OR β-KLOTHO
+
+- introduce preliminary screens for agents capable of binding to FGFR1c or β-Klotho
+- describe binding assays involving contacting FGFR1c or β-Klotho protein with test agents
+- detect formed binding complexes using analytical techniques
+- utilize naturally expressed, cloned or synthesized FGFR1c and β-Klotho proteins
+- perform screening methods as in vitro or cell-based assays
+- use cell-based assays in cells expressing FGFR1c, β-Klotho or both
+- identify modulators of FGFR1c or β-Klotho activity
+- employ activity assays to identify modulators of FGF21-mediated activity
+- determine β-Klotho dependent activity
+- describe exemplary FGFR1c-mediated activities
+- describe exemplary FGF21-mediated activities
+- monitor downstream molecular events to determine signaling activity
+- use activity assays to confirm agonist monomers or multimers lack antagonist activity
+- validate apparent activity using animal models
+- administer agents to animals and determine modulation of FGF21-mediated signaling
+- observe desired physiological effects or disease amelioration
+- use mammalian animals as models
+- select monomer domains that bind FGFR1c or β-Klotho from a library of domains
+- translate nucleic acids encoding monomer domains
+- screen polypeptides for binding to a desired ligand
+- identify monomer domains that bind to a desired ligand
+- use phage display systems to express and test monomer domains
+- display monomer domains on phage particles
+- incubate phage library with a predetermined ligand
+- partition phage particles that bind to the ligand
+- recover and replicate selected phage particles
+- determine nucleotide sequence encoding displayed polypeptide sequences
+- use other display systems, such as ribosome displays or cell surface displays
+- introduce nucleic acids into cells and translate
+- screen monomer and multimer libraries for desired properties
+- prescreen for binding to a known or unknown ligand or mixture of ligands
+- mutagenize or alter monomer domains and rescreen
+- combine selected monomer domains to form multimers
+- screen multimers for improved affinity or avidity or altered specificity
+- calculate avidity
+- repeat steps of generating variation and screening for desired properties
+- bind compositions to a matrix of an affinity material
+- generate multimers capable of binding large targets using a "walking" selection method
+- assemble multimers that bind large target proteins with high affinity
+- evolve monomers or multimers using intra-domain recombination or interdomain recombination
+- introduce multimer selection method
+- display multimers on various systems
+- screen for target binding activity
+- use two-hybrid screening assay
+- describe yeast two-hybrid system
+- describe E. coli/BCCP interactive screening system
+- use multiple binding compounds
+- screen for multiple ligands simultaneously
+- use beads with multiple ligands
+- identify affinity agent-ligand pairs
+- determine identity of affinity agent-ligand pairs
+- amplify polynucleotides specific for ligand and affinity agent
+- use "walking" to generate multiple multimers
+- recombine or shuffle selected multimers
+- mutate selected multimers
+- screen for altered multimers with enhanced properties
+- recombine or form variants of monomer domains
+- select for sequences less likely to be immunogenic
+- pan phage library for desired affinity
+- screen for IC50 for target
+- select for hetero- or homo-meric multimers
+- select for affinity to any target
+- describe linkers, multimers, and selected multimers
+- describe libraries of multimers and recombinant polypeptides
+- describe compositions comprising polypeptides bound to affinity material
+- introduce therapeutic and prophylactic treatment methods
+- administer nucleic acids or binding proteins to treat disease
+- describe binding proteins that activate FGF21-mediated signaling
+- treat human diseases with binding proteins
+- administer binding proteins with other molecules for treatment
+- treat diabetes with therapeutic monomers or multimers
+- use binding proteins to decrease blood glucose levels
+- use binding proteins to reduce inflammatory damage
+- administer binding proteins in combination with other drugs
+- describe ex vivo and in vivo methods for treating disease
+- introduce transepithelial delivery mechanisms
+- list primary mechanisms for transepithelial delivery
+- describe transcellular mechanism
+- describe paracellular mechanism
+- describe transcytosis mechanism
+- describe carrier- or transporter-mediated mechanism
+- introduce binding protein design for receptor binding
+- describe FcRn receptor for pulmonary and intestinal delivery
+- describe Transferrin receptor for blood-brain barrier transport
+- introduce engineering for pH sensitive release
+- identify binding proteins for known transporters
+- identify useful binders using Caco2 cells
+- introduce phage library approach for oral cavity delivery
+- introduce natural domains or peptides for oral transport
+- introduce phage displayed domains for resistance to body fluids
+- introduce in vivo indirect contact/administration formats
+- describe administration to cells or tissue sites
+- introduce ex vivo methods for cell transformation
+- describe polynucleotide construct for cell transformation
+- describe promoter sequence for expression control
+- introduce in vivo methods for cell transformation
+- describe direct administration of polynucleotide construct
+- describe indirect administration of polynucleotide construct
+- introduce composition comprising excipient and binding protein
+- describe administration of composition for disease treatment
+- introduce amount of polynucleotide for immune response enhancement
+- introduce amount of binding protein for immune response enhancement
+- introduce inducible on- and off-gene expression systems
+- introduce multimer uses for affinity agents
+- describe selection of matched monomer or multimer pairs
+- introduce replacement of antibodies in detection assays
+- describe potential uses of monomer domains and multimers
+- introduce monomer domains and multimers
+- describe cloning and expression of monomer domains
+- describe introduction of vectors into host cells
+- describe production of monomer domains and multimers by recombinant techniques
+- describe culture conditions for host cells
+- describe production of binding proteins in non-animal cells
+- describe alterations of monomer domains and multimers
+- describe addition of components to multimers and monomer domains
+- introduce animal models
+- describe development of non-human animal models
+- describe method of producing non-human animal models
+- describe suitable non-human animals
+- describe genes that can be used
+- describe non-human animal models for screening
+- describe example of mouse model
+- introduce kits
+- describe kits comprising components
+- describe packaging materials and instructions
+- describe containers for holding components
+- describe kits comprising multimer libraries
+- describe kits comprising binding proteins
+- describe reagents for promoting target molecule binding
+- describe standards for calibrating ligand binding
+- introduce binding assays and kits
+- describe assays based on known methods
+- describe kits based on disclosed assays
+- describe directions for performing assays
+- describe additional detection reagents and buffers
+- introduce integrated systems
+- describe computers and computer readable media
+- describe character strings corresponding to monomer domains and multimers
+- describe in silico recombination methods
+- describe sequence alignment software
+- describe BLAST algorithm
+- describe PILEUP algorithm
+- describe digital system for controlling nucleic acid synthesis
+- describe output elements for controlling nucleic acid synthesis
+
+## EXAMPLES
+
+- describe various examples of techniques and methods
+
+### Example 1
+
+- select monomer domains and create multimers
+- obtain nucleic acid sequences encoding monomer domains
+- clone into cell surface display format
+- express and screen for binding to desired ligand
+- recover selected monomer domain encoding genes
+- recombine to create multimers
+- clone into cell surface display format
+- express and screen for binding to desired ligand
+
+### Example 2
+
+- describe in vivo intra-protein recombination to generate libraries
+
+### Reagents and Experimental Procedures
+
+- describe pCK-cre-lox-Monomer-loxP vector
+- construct pCK-cre-lox-Monomer-loxP vector
+- describe fUSE5HA-Monomer-lox-lox vector
+- construct fUSE5HA-Monomer-lox-lox vector
+- describe pCK-gIII plasmid
+- construct pCK-gIII plasmid
+- rescue fUSE5HA-Monomer-lox-lox phage vector
+- clone 2nd library and transform into E. coli host
+- infect culture carrying 2nd library with rescued phage library
+- describe in vivo recombination procedure
+- rescue phage vector
+- infect culture carrying 2nd library with rescued phage library
+
+### Example 3
+
+- construct EGF-based monomer library
+- describe library design
+- create library by assembly PCR
+
+### Example 4
+
+- describe in vitro intra-protein recombination
+- recombine two or more segments of a single domain
+- use fixed site approach
+- recombine pool of sequence-related monomer domains
+- create multiple separate libraries
+- randomize a different loop in each library
+- pann and/or screen for increased potency
+- shuffle a small number of clones of known sequence
+- determine optimal crossover sites
+- generate libraries with randomized inter-cysteine loops
+
+### Example 5
+
+- optimize multimers by optimizing monomers and/or linkers
+- create and screen library of homo- or heterotrimers
+- optimize monomeric domain(s) of best trimer
+
+### Example 6
+
+- describe structural analysis of A domains
+- identify structural categories for library design
+
+### Structural Classification of A-domain Positions
+
+- describe structural classification of A-domain positions
+
+### Example 7
+
+- describe phage libraries screening
+- introduce target huFGFR1c or rhβ-klotho
+- motivate panning rounds
+- define coating target huFGFR1c-Fc
+- describe coating plates with huFGFR1c-Fc
+- describe coating beads with huFGFR1c-Fc
+- define coating target rhβ-klotho
+- describe coating plates with rhβ-klotho
+- describe coating beads with rhβ-klotho
+- motivate blocking
+- describe phage addition
+- describe washes
+- describe phage elution
+- describe phage elution
+- recover phage using E. coli cells
+- infect E. coli cells with phage
+- titer input phage
+- harvest phage
+- describe Round 2 and Round 3 panning
+- optimize anti-FGFR1c monomers through mutagenesis
+- construct mutagenesis libraries
+- describe panning protocol for FGFR1c
+- optimize anti-β-Klotho monomers through mutagenesis
+- construct mutagenesis libraries for β-Klotho
+- describe panning protocol for β-Klotho
+- optimize anti-rhf-3-Klotho monomers through domain walking
+- construct walked dimer libraries
+- describe panning protocol for rhf-3-Klotho
+- analyze panning output
+- perform phage ELISAs
+- coat target proteins onto plates
+- block plates with BSA
+- add phage supernatant to wells
+- add α-M13-HRP monoclonal antibody
+- develop ELISA
+- stop ELISA reaction
+- read ELISA results
+- subclone phage pools into expression vector
+- describe PCR products
+- analyze PCR products
+- purify PCR products
+- ligate PCR products
+- transform ligation products
+- screen thousands of monomer proteins
+- produce protein in 1 mL cell lysates
+- induce protein production
+- prepare protein lysates
+- characterize protein lysates
+- perform FGFR1c and β-Klotho protein ELISA
+- coat ELISA plates
+- block ELISA plates
+- add protein to ELISA plates
+- detect protein binding
+- perform receptor-Fc protein AlphaScreen binding assay
+- prepare AlphaScreen assay components
+- add assay components to plate
+- incubate and read AlphaScreen plate
+- perform biotin-target protein AlphaScreen binding assay
+- perform AlphaScreen ligand independent inhibition assay
+- perform AlphaScreen ligand dependent inhibition assay
+- perform AlphaScreen ligand dependent inhibition assay for binding proteins
+- describe multimerization and recombination of phage display-selected monomers
+- conclude protein screening and characterization
+- multimerize monomers
+- generate multimers using two methods
+- create dimers comprised of different combinations of monomers
+- generate trimers
+- generate multimers using molecular biology procedure
+- express, purify, and screen proteins
+- generate walking libraries
+- ligate phage display-selected monomers with naive monomer library
+- construct walking libraries
+- generate walking dimer library
+- generate walking trimer library
+- pan against β-Klotho and screen
+- characterize purified monomers in binding and competition assays
+- purify monomers via Ni-NTA resin
+- assay in binding ELISAs and AlphaScreen competition assay
+- purify proteins from 500 mL cultures for NiNTA
+- elute off protein into collection tube
+- dialyze eluted proteins
+- further purify proteins by Q-Sepharose anion exchange
+- identify FGFR1c-binding monomers
+- introduce FGFR1c monomers
+- summarize M23 mutant monomer library
+- introduce βKlotho binding monomers and dimers
+- summarize βKlotho monomers from naïve A1 library
+- summarize βKlotho monomers from naïve LNR library
+- summarize βKlotho monomers from mutagenesis library M01
+- summarize βKlotho monomers from mutagenesis library M25
+- summarize βKlotho monomers from mutagenesis library M42
+- summarize βKlotho monomers from mutagenesis library M50
+- summarize βKlotho walked dimers from M01 N-terminal walked dimer library
+- summarize βKlotho walked dimers from M01 C-terminal walked dimer library
+- summarize βKlotho walked dimers from M06 N-terminal walked dimer library
+- summarize βKlotho walked dimers from M06 C-terminal walked dimer library
+- conclude βKlotho walked dimers
+- introduce example 7
+- summarize β-Klotho walked dimers
+- describe consensus sequences
+- list linkers
+- summarize additional seed sequence
+- introduce example 8
+- describe generating binding proteins
+- detail PCR-based method
+- describe ligation and subcloning
+- summarize FGFR1c/βKlotho binding proteins
+- describe testing binding proteins
+- detail protein production
+- describe initial screening
+- introduce example 9
+- describe reporter cell lines
+- detail cell maintenance
+- describe transfection and assay
+- introduce example 10
+- describe identifying FGF receptor and klotho protein co-receptor pairs
+- detail transfection and treatment
+- describe measuring ERK phosphorylation
+- introduce example 11
+- describe primary human adipocyte cell culture
+- detail cell differentiation
+- describe adipocyte treatment for pERK
+- summarize β-Klotho walked dimers
+- describe consensus sequences
+- list linkers
+- summarize additional seed sequence
+- describe generating binding proteins
+- detail PCR-based method
+- describe ligation and subcloning
+- summarize FGFR1c/βKlotho binding proteins
+- describe testing binding proteins
+- detail protein production
+- describe initial screening
+- conclude examples
+- describe adipocyte treatment protocol
+- lyse cells and prepare lysates
+- quantify lysates with DC Protein assay
+- perform ERK Phospho/Total MSD Assay
+- summarize binding proteins with agonist activity
+- describe methods for extending half-life of binding proteins
+- introduce IgG binders and serum half-life extension
+- describe monomer domains that bind to blood factors
+- provide consensus motifs for IgG Family 2 and 3
+- describe monomer domains that bind to red blood cells or serum albumin
+- outline method for extending serum half-life of a protein
+- describe half-life extender-binding multimers
+- introduce human serum albumin fusions
+- describe binding protein-human serum albumin fusions
+- provide exemplary sequences of binding protein-human serum albumin fusions
+- describe fusion to a monovalent IgG-Fc domain
+- outline benefits of monovalent human IgG-Fc fusion
+- describe binding protein-monovalent human IgG-Fc fusions
+- provide exemplary sequences of binding protein-monovalent human IgG-Fc fusions
+- introduce PEGylation
+- describe addition of PEG molecules to binding protein
+- provide exemplary sequences for PEGylation
+- introduce cynomolgous monkey study
+- describe study design
+- outline treatment groups and dosing
+- describe food intake monitoring
+- summarize food intake results
+- describe body weight monitoring
+- summarize body weight results
+- describe body mass index, abdominal circumference, and skin fold thickness monitoring
+- summarize body mass index, abdominal circumference, and skin fold thickness results
+- describe oral glucose tolerance test
+- summarize oral glucose tolerance test results
+- describe fasting and fed blood glucose and insulin levels monitoring
+- summarize fasting and fed blood glucose and insulin levels results
+- describe triglyceride levels monitoring
+- summarize triglyceride levels results
+- conclude cynomolgous monkey study
+- summarize metabolic parameter improvements
+- summarize study conclusions
+

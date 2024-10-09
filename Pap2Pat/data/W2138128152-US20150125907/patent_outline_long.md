@@ -1,0 +1,194 @@
+# DESCRIPTION
+
+- claim benefit of prior application
+
+## BACKGROUND
+
+- motivate biofuels
+
+## SUMMARY
+
+- introduce size-adjusting method
+- describe embodiments of LCB particles
+- outline ammonia pretreatment method
+
+## DETAILED DESCRIPTION
+
+- define biomass
+- describe renewable biological resources
+- define plant biomass
+- list examples of plant biomass
+- define biofuel
+- describe types of biofuels
+- define agricultural biofuel
+- list examples of agricultural biofuels
+- define pretreatment step
+- describe pretreatment methods
+- define AFEX pretreatment
+- describe AFEX pretreatment process
+- define Klason lignin
+- describe glass transition temperature
+- define low severity pretreatment conditions
+- define high severity pretreatment conditions
+- define moisture content
+- define particle
+- define substrate
+- describe major structural components of biomass
+- describe non-structural components of LCB
+- describe hemicellulose structure
+- describe cellulose structure
+- describe lignin structure
+- describe hemicellulose hydrolysis
+- describe cellulose hydrolysis
+- describe conventional methods for converting biomass to alcohol
+- describe advantages of ammonia treatments
+- list examples of LCB
+- describe challenges of converting LCB to biofuel
+- describe need for alternative ways to remove rice straw
+- describe conventional wisdom on size reduction of LCB particles
+- describe inventors' surprising discovery on LCB particle size
+- describe trend of increasing sugar yield with larger LCB particles
+- describe suitable pretreatment process for LCB substrate
+- describe calculation of total possible theoretical sugar yield
+- describe conversion of polymeric sugars to monomeric sugars
+- provide example of maximum theoretical sugar yield for rice straw
+- describe sugar conversion
+- compare sugar yield
+- describe xylose yield
+- describe low severity pretreatment conditions
+- describe high severity pretreatment conditions
+- describe temperature and residence time
+- describe glass transition temperature
+- describe operating under low and high severity conditions
+- describe LCB composition
+- describe average LCB particle size
+- describe severe ammonia pretreatment conditions
+- describe glucose yield
+- describe sugar yield improvement
+- describe sugar yield increase
+- describe GL
+- describe size-adjusting LCB
+- describe resulting particle size
+- describe LCB shape
+- describe LCB composition variation
+- describe pretreatment process
+- describe AFEX pretreatment
+- describe modified AFEX pretreatment
+- describe downstream sugar yield dependence
+- describe high severity pretreatment conditions
+- describe AC2RS conditions
+- describe sugar yield comparison
+- describe LCB sizing and pretreatment
+- describe temperature range
+- describe ammonia to biomass ratio
+- describe moisture content and residence time
+
+### EXAMPLE 1
+
+- introduce AFEX pretreatment conditions
+- describe Chrastil kinetic model
+- define parameters of Chrastil model
+- describe limitations of Chrastil model
+- introduce starting materials
+- describe rice straw harvesting
+- describe rice straw processing
+- label rice straw samples
+- introduce AFEX pretreatment
+- define logarithm of reaction ordinate
+- describe AFEX pretreatment conditions C1 and C2
+- describe deionized water addition
+- describe ammonia loading
+- describe reactor temperature control
+- describe AFEX pretreatment process
+- introduce composition analysis
+- describe water and ethanol extraction
+- describe acid hydrolysis step
+- describe protein content calculation
+- introduce enzymatic hydrolysis
+- describe hydrolysis reaction conditions
+- describe enzyme mixture composition
+- describe hydrolysis reaction setup
+- describe antibiotics addition
+- describe hydrolysate sampling
+- describe heat treatment of hydrolysate
+- describe centrifugation and filtration
+- introduce HPLC analysis
+- describe HPLC system components
+- describe mobile phase composition
+- describe column temperature control
+- introduce sugar conversion and yield
+- describe sugar conversion calculation
+- describe sugar yield calculation
+- introduce kinetic modeling and parameter estimation
+- introduce extractable materials
+- classify other extractives
+- observe fraction of other extractives
+- describe enzymatic hydrolysis
+- show monomeric sugar concentration profiles
+- analyze sugar generation rate
+- simplify model of enzymatic hydrolysis
+- describe hydrolysis of AC1RS substrates
+- analyze glucose and xylose concentrations
+- compare sugar production trends
+- describe hydrolysis of AC2RS substrates
+- analyze glucose and xylose concentrations
+- show glucan and xylan conversion
+- analyze sugar conversion trends
+- describe digestion patterns
+- show oligomeric sugar release
+- analyze oligomeric sugar concentrations
+- describe kinetic modeling of AFEX pretreated rice straw
+- fit enzymatic hydrolysis data into Chrastil diffusion-limited kinetic model
+- estimate kinetic parameters
+- analyze changes in structural diffusion resistance coefficient
+- evaluate extent of structural modifications
+- compare n values for different particle sizes
+- introduce SEM histological changes of URS and AFEX pretreated rice straw epidermal
+- describe SEM images of URS at small particle size
+- describe SEM images of AC1RS at small particle size
+- describe SEM images of AC2RS at small particle size
+- describe SEM images of large particle size URS
+- describe SEM images of AC1RS at large particle size
+- describe SEM images of AC2RS at large particle size
+- compare glucan and xylan conversions at different GL
+- describe hydrolysis of AC1RS and AC2RS substrates at high GL
+- explain effect of mass transfer limitation and pretreatment severity
+- describe hydrolysis of smaller-sized AC1RS substrates at 3% GL
+- describe hydrolysis of smaller-sized AC2RS substrates at 3% GL
+- compare hydrolysis of AC1RS and AC2RS substrates at 3% GL
+- describe hydrolysis of larger-sized AC1RS and AC2RS substrates at 3% GL
+- describe Chrastil kinetic model for hydrolysis at 3% GL
+- compare glucan and xylan conversions at different GL
+- describe hydrolysis of AC1RS and AC2RS substrates at 6% GL
+- describe hydrolysis of smaller-sized AC2RS substrates at 6% GL
+- describe sugar yield for hydrolysis at different GL
+- compare sugar yield of AC1RS and AC2RS substrates
+- describe optimized AFEX pretreatment conditions
+- compare sugar yields of AC1RS and AC2RS substrates
+- describe digestion patterns of larger particle size AC2RS substrates
+- describe Chrastil diffusion-limited kinetic model
+- analyze SEM imaging
+- interpret experimental hydrolysis behavior and kinetic data
+- summarize results of SEM analysis and hydrolysis experiments
+
+### EXAMPLE 2
+
+- introduce additional testing
+- motivate AFEX pretreatment methods
+- describe testing parameters
+- summarize method of increasing sugar yield
+- define ammonia pretreatment process
+- describe high severity ammonia pretreatment process
+- specify ammonia to lignocellulosic biomass ratio
+- specify moisture content of lignocellulosic biomass
+- describe average particle size in substrate
+- compare downstream xylose concentration
+- describe increase in downstream sugar yield
+- motivate other pretreatment processes
+- describe LCB particles
+- describe method of using substrate
+- describe system for increasing sugar yield
+- contrast with conventional methods
+- explain benefits of larger particles
+- conclude with scope of invention
+

@@ -1,0 +1,544 @@
+{
+    "id": "US20150072876",
+    "authors": [
+        "Neta Zuckerman",
+        "Yair Noam",
+        "Andrea Goldsmith",
+        "Peter P. Lee"
+    ],
+    "title": "SELF-DIRECTED METHOD FOR CELL-TYPE IDENTIFICATION AND SEPARATION OF GENE EXPRESSION MICROARRAYS",
+    "date": "2014-07-21 00:00:00",
+    "abstract": "Gene expression analysis is generally performed on heterogeneous tissue samples consisting of multiple cell types. Current methods developed to separate heterogeneous gene expression rely on prior knowledge of the cell-type composition and/or signatures\u2014these are not available in most public datasets. We present a novel method to identify the cell-type composition, signatures and proportions per sample without need for a priori information. The method was successfully tested on controlled and semi-controlled datasets and performed as accurately as current methods that do require additional information. As such, this method enables the analysis of cell-type specific gene expression using existing large pools of publically available microarray datasets.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "CONTINUITY INFORMATION",
+                    "paragraphs": [
+                        "This application claims priority from provisional application 61/856,271, filed Jul. 19, 2013, the contents of which are incorporated herein by reference in their entirety."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "claim priority"
+                    ],
+                    "num_characters": 172,
+                    "outline_medium": [
+                        "claim priority"
+                    ],
+                    "outline_short": [
+                        "claim priority"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Gene-expression profiling of whole tissues is affected by the different cell types that exist in the tissue and their relative proportions. Thus, changes detected by differential expression analysis may reflect differences in the proportions of the cell-types between samples rather than an important mechanistic change in gene expression. For example, the proportion of tumor cells in breast cancer biopsies was found to significantly affect expression profiles, where consideration of these proportions improved response prediction. Therefore, profiling of heterogeneous tissues rather than sorted cell-types can greatly limit the conclusions derived from such analyses.",
+                        "Solutions for experimentally separating cell-types from heterogeneous tissues include laser-capture microdissection to isolate morphologically distinguishable cells and flow cell sorting to purify cell-types from a tissue. However, in addition to the time-consuming nature of these methods, they may result in insufficient quantities of RNA, where amplification steps may introduce artifacts to the gene expression data. Single cell RNA sequencing is becoming feasible; however, experimental costs are high and few studies utilize this method on a large patient pool. To address this issue, several approaches to computationally separate expression profiles of heterogeneous tissues into their constituent cell-types along with their relative proportions per sample have been developed. Most approaches utilize a linear model that has been demonstrated to yield accurate expression estimates; in such a model the gene-expressions of each cell-type are added up to form a mixed expression, where each cell-type is weighted according to its relative proportion in the tissue.",
+                        "All currently existing separation methods require some a priori information about the tissue analyzed, such as the number of cell-types and their relative proportions in the tissue, or the number of cell-types, their identity and their purified gene expression, or just the number of cell-types in the tissue. A preliminary attempt to estimate the number of cell-types in the mixed data, but not their identities, has also been proposed. However, most studies do not purify the different cell populations in the tissue, enumerate their proportions or verify their identity, rendering these methods inapplicable to separation of such heterogeneous gene-expression datasets."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate gene-expression profiling",
+                        "limitations of current methods",
+                        "describe existing solutions",
+                        "summarize current approaches"
+                    ],
+                    "num_characters": 2421,
+                    "outline_medium": [
+                        "motivate cell-type separation",
+                        "limitations of existing methods"
+                    ],
+                    "outline_short": [
+                        "motivate cell-type separation"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "We have developed a novel approach to blindly separate heterogeneous gene-expression data, i.e., without using any specific prior information regarding the analyzed dataset. In addition to separating the heterogeneous tissue to the individual gene expression profiles of its constituent cell-types and their relative proportions per sample, the algorithm described here performs an extra step of identifying the number of cell-types in the tissue and their identities. Compared to existing methods, the only a priori information the algorithm requires is an initial guess of the cell-types that may exist in the analyzed tissue and purified reference signatures of these cell-types, which may be found in abundance in publically available databases. We have successfully tested our algorithm on three publically available databases in which all the conditions are controlled and on a publically available semi-controlled dataset with estimated cell-type proportions.",
+                        "This method is the first that can practically be applied, in a \u201cplug and play\u201d fashion, to any existing dataset of heterogeneous tissue samples, in order to identify the cell-types in the samples, their identities, their proportions per sample and their separated gene-expression signatures without requiring any prior knowledge."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce novel approach",
+                        "summarize algorithm capabilities"
+                    ],
+                    "num_characters": 1297,
+                    "outline_medium": [
+                        "introduce novel approach"
+                    ],
+                    "outline_short": [
+                        "introduce blind separation approach"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The algorithm disclosed herein is designed to identify the number of cell-types in heterogeneous tissue samples, their identities, their relative proportions per sample and separate their individual gene expression signatures. The proposed algorithm includes three parts. In the first part, non-negative matrix factorization is used to obtain an initial estimate of expression profiles for each cell-type. A rough initial estimate of the numbers and identities of the cell-types in the tissue is required. This estimate can include cell-types that may not exist in the tissue. However, if a true cell-type is not included in the initial estimate, then the algorithm will not detect this cell-type and there may be ambiguities in the resulting cell-type signatures and proportions. In addition, purified reference signatures are required for each of the cell-types included in the initial estimate. Such reference signatures may be found in abundance in the Gene Expression Omnibus (GEO; Barrett T, et al. (2009) Nucleic Acids Res 37: D88S-890, the contents of which are incorporated herein by reference) and may be general, i.e., not disease, tissue, experiment or study-specific. In the second part of the algorithm, the true number of cell-types is estimated using the symmetric Kullback-Leibler divergence (SKLD) between each of the estimated cell-type profiles and the initial cell-type reference signatures, where the closest estimated profiles are then chosen as the final cell-types. SKLD, a measure used to calculate the difference between two probability distributions, is used here as a measure of distance, as we describe below under equation (5). In the final part, the cell-type proportions are computed per sample, using the method of non-negative least squares (NNLS), a method that solves matrix equations algebraically with an added constraint for non-negative elements, as we describe in the methods section under equation (3). Additional adjustments, motivated by the application of the algorithm to gene-expression data include: (a) majority voting, where the final identity of the cell-types is chosen from the results of several algorithm runs with random initializations, and (b) usage of classes, where several input reference signatures may be grouped into one \u201cclass\u201d of cell-type. These adjustments were added to the algorithm to improve separation capabilities of cell-types with similar signatures and increase the algorithm's robustness to noisy reference signatures."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Linear Model for Separation of Gene-Expression",
+                            "paragraphs": [
+                                "The following linear model is widely used for separation of gene expression:",
+                                "Mij=\u03a3k=1kGikCkj, i=1, . . . m, j=1, . . . n\u2003\u2003(1)",
+                                "where Mij is the mixed expression matrix of gene i in sample j, Gik is the separated cell-type specific gene-expression matrix of gene i in cell type k and Ckj is the matrix of relative proportion of cell type k in sample j; kCT is the total number of cell-types in the tissue, m and n are the total number of genes and samples, respectively. Studies based on the model in (1) have shown that separation of mixed data with known proportions yielded cell-type specific expression estimates that were highly correlated with the corresponding purified cell gene-expression, rendering the linearity assumption acceptable. All currently existing approaches, whether they use the linear model or not, require some a priori information about the tissue analyzed, such as the number of cell types, their identity or their relative proportions in each sample. We are interested in estimating G and C, from the observation M, without explicit a priori knowledge of the number of cell-types in the tissue, kCT, or their identities (note that we will use upper-case boldface letters to denote matrices and lower-case boldface letters to denote vectors). Rather, we consider a collection of kmax cell-types representing all possible cell-types assumed to comprise the analyzed tissue. This is a hypothesis-testing problem, where each possible combination of cell-types is a hypothesis. Our objective is to choose the correct hypothesis, i.e., to determine which cell-types exist in the analyzed tissue. Assume that T is a label of a cell-type. We begin with a collection of labels {T\u20321, T\u2032k} that contains the true composition of cell-types. Specifically, if the true composition of cell-types in a given tissue sample are labeled by {T1, . . . , Tk}, we require that for each Ti, 1\u2266i\u2266kCT, there exists T\u2032j, 1\u2266j\u2266kmax, such that Ti=T\u2032j. This is a reasonable assumption from a biological point of view, since if the tissue type is known then in most cases the cell-types that may exist in that tissue are also known. Note that if the initial collection of kmax cell-types does not include one of the true cell-types, then this specific cell-type, its expression signature and relative proportions per sample will not be detected by the algorithm and there may be ambiguities in the resulting cell-type signatures and proportions. After estimating the true hypothesis, we estimate the parameters under that hypothesis, i.e. the specific cell-type expression (G) and the relative proportion of each cell-type per sample (C). The algorithm that we propose requires as input purified gene-expression reference signatures Ii for each cell-type label T\u20321=1, . . . , k, where kmax\u2266min (m, n). The latter constraint is necessary to have a unique solution to (1), i.e. unique matrices G and C, up to normalization and permutation, which satisfies the decomposition in (1). These reference signatures need not be identical to the purified signatures that comprise the original columns of the matrix G but only need to be taken from the same cell-type. Note that these reference signatures may be acquired from a different experiment, lab or tissue and are found in abundance in gene expression repositories such as GEO."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce linear model for separation of gene expression",
+                                "define mixed expression matrix M and separated cell-type specific gene-expression matrix G",
+                                "explain assumption of linearity and its limitations",
+                                "discuss requirement for a priori knowledge of number of cell-types and their identities",
+                                "introduce hypothesis-testing problem and objective of algorithm",
+                                "explain importance of purified gene-expression reference signatures"
+                            ],
+                            "num_characters": 3322,
+                            "outline_medium": [
+                                "introduce linear model for separation of gene expression",
+                                "describe assumptions and limitations of linear model",
+                                "explain relation to nonnegative matrix factorization problems"
+                            ],
+                            "outline_short": [
+                                "define linear model for separation of gene expression"
+                            ]
+                        },
+                        {
+                            "title": "The Relation to Hyper Spectral Imaging",
+                            "paragraphs": [
+                                "Separation of gene-expression can be viewed as a special case of a more general class of problems known as Nonnegative Matrix Factorization (NMF) problems, defined as follows: given a nonnegative data matrix M, find the smallest dimension matrices G and C with non-negative entries such that",
+                                "M\u2248GC\u2003\u2003(2)",
+                                "where G is referred to as an end-members matrix (where end-members are classes of composing materials that make up the object M), and C represents the relative proportions in which the end-members are mixed in M, G's ith column represents the signature of the ith end-member, and C's kjth entry represent the relative proportion of the kth end-member in the jth data vector mj. This is equivalent to writing (1) in a matrix form, where each data vector mj represents microarray measurements of sample j. Each cell type is an end-member, where G's ith column represents the gene signature of the ith cell-type. The jth column of C represents the relative proportions of the cell types (whose signatures comprise the columns of G) in sample j. If the number of cell types is smaller than the number of samples, the dimensions of G and C are smaller than the dimension of M, and the problem in (1) is a special case of the problem in (2).",
+                                "The algorithm proposed herein is an adaptation of an NMF algorithm by Piper et al. (Object Characterization from spectral data using nonnegative factorization and information theory; 2004; Maui, Hi.) that was designed for spectral analysis of space objects. Piper et al. studied the problem of identification and classification of space objects whose orbits are significantly distant (e.g., geosynchronous satellites) or whose dimensions are small (e.g., nanosatellites) from ground-based telescope spectral measurements. In their problem, an object is classified by determining the characteristics of the material that make up its spectral trace. Each data vector mj represents a spectral trace (i.e. the spectral image) of the jth object. G's ith column represents the spectral signature of the ith material in the object (end-member). Piper et al.'s hyper-spectral analysis approach is useful for analysis of gene-expression microarrays due to the use of prior knowledge. Their method uses a stored set of laboratory-obtained spectral signatures of space object materials obtained in a different experiment to determine the number of end-members. These stored signatures are not necessarily identical to the underline signatures but are only close to them. This approach is very appealing for separation of gene-expression, since in most cases the purified cell-types are not separated and profiled separately in the same experiment. Furthermore, it is possible to obtain cell-type specific reference signatures and use them for any analysis involving similar cell types. Despite the similarity between the two NMF applications, i.e. gene-expression analysis and spectral analysis, extensions to Piper et al.'s algorithm designed for spectral analysis were needed for the gene-expression analysis, as described in the following section."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce nonnegative matrix factorization (NMF) problems",
+                                "define end-members matrix G and relative proportions matrix C",
+                                "explain equivalence of NMF problem to linear model for separation of gene-expression",
+                                "discuss adaptation of NMF algorithm for spectral analysis to gene-expression analysis",
+                                "explain importance of prior knowledge in NMF algorithm",
+                                "discuss extensions to Piper et al.'s algorithm for gene-expression analysis"
+                            ],
+                            "num_characters": 3080,
+                            "outline_medium": [
+                                "introduce nonnegative matrix factorization problems",
+                                "describe application to hyper spectral imaging",
+                                "explain adaptation of NMF algorithm for gene-expression analysis"
+                            ],
+                            "outline_short": [
+                                "relate gene-expression separation to nonnegative matrix factorization problems"
+                            ]
+                        },
+                        {
+                            "title": "Algorithm",
+                            "paragraphs": [
+                                "Our algorithm includes three major parts. In the first part, we obtain an initial estimate of the matrix G using kmax as the number of columns. In the second part we estimate the true number of cell-types, {circumflex over (k)}CT their identities, and the cell-type expression signatures matrix \u011c. In the final part we compute the cell-type proportions matrix C.",
+                                "Initialization: The algorithm receives as input: (a) an m\u00d7n matrix M, and (b) an m\u00d7kmax matrix L, where M is the mixed matrix to be separated with m genes and n samples and L is the reference signatures matrix with m genes and kmax columns. Both M and L have non-negative entries and are normalized such that each column sums to its mean. The matrices H and W, which represent intermediate estimates of the C and G matrices, are initialized as follows. The entries Hkj 1\u2266k\u2266kmax, 1\u2266j\u2266n are realized values of independent random variables, uniformly distributed from zero to one. The matrix W is initialized with the reference signatures matrix L and the columns of W are scaled to sum to one.",
+                                "Evaluation of H and W: In the first stage, the algorithm receives the matrix M and the integer kmax as inputs and outputs H and W such that",
+                                "M\u2248WH,\u2003\u2003(3)",
+                                "using NMF [13]; i.e., H, W minimizes \u2225M\u2212WH\u2225F where \u2225\u2212\u2225F is the Frobenius norm (the root sum of squares of the entries of the matrix), under the constraint that H and W have positive entries and the columns of W sum to one. The matrices W and H serve as intermediate representations of the matrices G and C, respectively.",
+                                "Estimation of kCT and G: The true number of cell-types in M, kCT, is estimated by:",
+                                "{circumflex over (k)}CT=|{arg minw,i\u03b5{1, . . . ,k}D(wi,Ij),j=1, . . . ,kmax}|\u2003\u2003(4)",
+                                "Recall that kmax is greater than the true number of cell-types kCT thus some of the columns of the matrix W are redundant. Each column in L, Ii, is associated with a column in W, wi, to which it has the minimal distance, D. Here, SKLD is used, as in Piper et al. The SKLD is defined as follows, let w and d be two signatures and let p=w/\u03a3iwi, q=d/\u03a3idi, the SKLD is defined as",
+                                "Ds(w,d)=D(w,d)+D(w,d),\u2003\u2003(5)",
+                                "where D(w, d)=\u03a3ipi log pi/qi. We have also run the algorithm using Euclidean distance and correlation as the distance measures; however the results were not as accurate as using SKLD. This may be explained by the fact that the SKLD is most suitable with the NMF used in our algorithm, as it only considers arguments with positive values. The estimated number of cell types, {circumflex over (k)}CT is set to the number of chosen columns in W. Note that it is possible that some of the columns in W will not be chosen. The cell type identity of each of the chosen wi columns is determined according to its corresponding Ii column. In cases where more than one column in L is associated with a certain wi, the identity of that wi is determined according to the Ii it has the minimal SKLD from. The estimated G matrix, \u011c, is then constituted from the chosen columns of W.",
+                                "Estimation of C: The estimate of the matrix C, \u0108, is obtained by using NNLS using \u011c and M, such that",
+                                "M\u2248\u011c\u0108,\u2003\u2003(6)",
+                                "under the constraint that the entries of \u0108 are greater than or equal to zero. Finally, the rows of \u0108 are normalized to 1 to represent cell-type proportions. The output of the algorithm is the matrices \u0108 and \u011c, representing the proportions of each cell type in each sample and the specific gene expression for each separated cell type, respectively. Pseudo code of the algorithm is given in Example 1.",
+                                "Majority voting: The NMF algorithm used to evaluate H and W is not guaranteed to converge to a global minimum, as the NMF is not a convex optimization problem. This problem is most significant in cases where the cell-types have similar signatures (e.g., immune cell subsets as in the T-B-Monocytes dataset). To overcome this problem, we have initialized the W matrix with the input signatures matrix L and, in addition, set an option to run the algorithm several times using random initializations of H. Each run yields the estimate \u011c in which each column represents a cell-type that was chosen by the algorithm. The algorithm decides whether a certain cell-type is chosen for the final estimate of G, \u011c, if it is chosen more than a certain threshold, defined as the percentage of the number of times this cell-type was chosen out of the number of total runs. The estimated gene expression of each chosen cell-type is set to the average of the gene-expression of all corresponding estimates of this cell-type in each run it was chosen. The final estimate of the number of cell-types {circumflex over (k)}CT is set to the number of columns of the final \u011c matrix.",
+                                "Classes: The algorithm utilizes the reference signatures matrix L. As such, it is sensitive to the signatures provided by the user and may fail to accurately separate cell-types in cases where the cell-types are very similar or if the user is missing a priori information regarding the tissue to be separated, e.g. the exact nature of the cell type, tissue or experimental conditions. To improve performance in such cases, we have allowed for reference signatures to be grouped into classes with a single label. For example, to separate colorectal tumor cells of an unknown subtype from a mixed tissue, reference signatures for several colorectal tumor types representing different tumor subtypes may be provided and will constitute the class \u201ccolorectal tumor.\u201d An additional example for using classes includes unifying several signatures for one cell type taken from different studies, e.g. purified heart cells from two different studies, under the class \u201cheart.\u201d This allows us to use more than one signature for each cell-type, which increases the robustness of the algorithm in cases where the reference signatures are noisy. The algorithm first estimates \u011c as if there are no classes. Then, all W columns associated with the same class are averaged and labeled according to that class."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce three major parts of algorithm: initialization, estimation of true number of cell-types, and computation of cell-type proportions",
+                                "describe initialization of matrices H and W",
+                                "explain evaluation of H and W using NMF",
+                                "define estimation of true number of cell-types kCT",
+                                "explain use of symmetric Kullback-Leibler divergence (SKLD) as distance measure",
+                                "discuss estimation of cell-type expression signatures matrix G",
+                                "explain computation of cell-type proportions matrix C using NNLS",
+                                "introduce majority voting to improve robustness of algorithm",
+                                "explain use of classes to group reference signatures",
+                                "discuss pseudo code of algorithm",
+                                "explain output of algorithm: matrices C and G"
+                            ],
+                            "num_characters": 5947,
+                            "outline_medium": [
+                                "introduce initialization of algorithm",
+                                "describe evaluation of H and W matrices",
+                                "estimate true number of cell-types and cell-type expression signatures",
+                                "compute cell-type proportions matrix C",
+                                "describe majority voting and classes adjustments"
+                            ],
+                            "outline_short": [
+                                "outline three-part algorithm for estimating cell-type expression signatures and proportions",
+                                "describe initialization, evaluation, and estimation of matrices G and C"
+                            ]
+                        },
+                        {
+                            "title": "Mining Purified Signatures",
+                            "paragraphs": [
+                                "To separate a heterogeneous tissue, the user should have some knowledge regarding the nature of the tissue that is being separated and its possible cell-type constituents. Purified signatures of the candidate cell-types may be found in public repositories such as GEO via a simple search for the required cell-type and species. The chosen signatures need not be from the same disease, tissue study or experiment as the heterogeneous tissue to be separated. In case there are many possible relevant options from different studies for a cell-type, one can input several signatures of the same cell-type to the algorithm and gather them under the same class. This was demonstrated in the heart-brain and T-B-Monocyte dataset examples. The limit in the total number of signatures used for all cell-types is the number of samples of the mixed tissue that is being separated, as explained under \u201cLinear model for separation of gene-expression.\u201d In case of uncertainty as to what cell-types constitute the tissue, one does not have to be precise and can over-guess by inputting many, even un-related, cell-types into the algorithm. Note that underguessing the number of cell-types may cause ambiguities in the algorithm results, as explained above.",
+                                "Parameters Setting.",
+                                "Parameters concerning majority voting (threshold, number of majority voting runs) and classes were set according to the nature of the cell-type signatures in each dataset, based on trial and error and common sense. In the case of majority voting, the more the input reference signatures are similar (such as in the T-B-Monocyte dataset (Abbas A R, et al. (2009) PLoS One 4: e6098), see also FIG. 5A), the more likely that the algorithm will be farther away from the global minimum and therefore it will be harder to converge to a minimum that is close to the global minimum. Indeed, we noticed that the algorithm performs better with a lower threshold (i.e., a lower percentage of the number of times this cell-type is chosen out of the number of total runs) and a higher number of majority voting runs in such cases. In cases where the input reference signatures are less similar to each other (such as in the liver-brain-lung dataset (Shen-Orr S S, et al. (2010) Nat Methods 7: 287-289), see also FIG. 3A), less majority voting runs are needed to yield accurate results.",
+                                "For classes' parameters, we observed that the algorithm encounters difficulties in separating cell-types for which the input reference signatures are very similar. In such instances, one might consider unifying these signatures under one class (where biologically relevant) or seek reference signatures from a different source. Observation of the input reference signatures, e.g., by drawing their heatmaps (FIGS. 3-6A), can provide an indication regarding which reference signatures are similar."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "explain importance of purified signatures for algorithm",
+                                "discuss sources of purified signatures, such as GEO",
+                                "explain how to choose signatures for input to algorithm",
+                                "discuss limitations of algorithm, including requirement for a priori knowledge of tissue composition",
+                                "explain how to set parameters for majority voting and classes"
+                            ],
+                            "num_characters": 2834,
+                            "outline_medium": [
+                                "describe search for purified signatures in public repositories",
+                                "explain usage of classes and majority voting parameters"
+                            ],
+                            "outline_short": [
+                                "discuss sourcing purified signatures from public repositories for algorithm input"
+                            ]
+                        },
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Application of the Algorithm to Controlled Datasets**",
+                                "We tested the algorithm on three publically available datasets in which known proportions of known cell types were mixed and their gene-expression was measured.",
+                                "The algorithm was run with the following parameters for each dataset: (1) liver-brain-lung dataset (Shen-Orr S S, et al. (2010) Nat Methods 7: 287-289): majority voting threshold=70%, majority voting runs=10, classes=none. (2) Heart-brain dataset (http://www.affymetrix.com/support/technical/sample_data/gene\u20141\u20140_array_data.affx): majority voting threshold=70%, majority voting runs=10, classes=unifying the two brain and two heart cell types to the classes \u201cbrain\u201d and \u201cheart,\u201d respectively. (3) T-B-Monocytes dataset (Abbas A R, et al. (2009) PLoS One 4:e6098): majority voting threshold=70%, majority voting runs=20, classes=unifying the two B cell line types to the class \u201cB cells.\u201d",
+                                "Microarray Data.",
+                                "All microarray data were downloaded from GEO (Barrett T, et al. (2009) Nucleic Acids Res 37: D885-890) as raw .CEL files and RMA normalized using R\u00a9 package \u201caffy.\u201d The datasets and reference signatures for each analysis were jointly normalized using quantile normalization using R\u00a9 package \u201climma.\u201d The following accession numbers were used for each dataset: (1) Liver-brain lung dataset (Shen-Orr S S, et al. (2010) Nat Methods 7: 287-289) (GSE19830), with reference signatures of purified rat liver (GSE8252), brain (GSE3428), lung (GSE16849), intestine (GSE16849), heart (GSE5085) and granulosa (GSE13883) cells. All reference signatures were chosen from the same platform as the analyzed data\u2014Affymetrix Rat Genome 230 2.0 Array. (2) Heart-brain dataset (http://www.affymetrix.com/support/technical/sample_data/gene\u20141\u20140_array_data.affx) with reference signatures of purified human myocardial (heart) cells from two different studies (GSE21610, GSE29819), brain cells from the entorhinal cortex (GSE4757) grey matter (GSE28146), oocytes (GSE12034) and hepatocyte (GSE31264). All reference signatures were from the same platform as the analyzed data\u2014Human Genome U133 Plus 2.0 Array. (3) T-B-Monocytes dataset (Abbas A R, et al. (2009) PLoS One 4: e6098) (GSEII058), with reference signatures of purified T cell Jurkat (GSE7508, GSE30678), Monocyte THP-1 (GSE26868), B cell Raji (GSE12278, GSE13210) and IM-9 (GSE24147), IMC-1 NK (GSE19067) and MCF-10A epithelial (GSE10196) cell-lines. All reference signatures were from the same platform as the analyzed data\u2014Affymetrix Human Genome U133 Plus 2.0 Array.",
+                                "**Blind Separation of the Liver-Brain-Lung Dataset**",
+                                "The liver-brain-lung dataset includes samples of rat liver, brain and lung cell mixtures (Shen-Orr S S, et al. (2010) Nat Methods 7: 287-289). The purified cell-type reference signatures were collected from GEO and included rat liver, brain, lung, intestine, heart and granulosa cell gene-expression profiles from different studies (see \u201cmicroarray data\u201d below; FIG. 3A). Although the mixed samples included only three cell-types, more than three cell-types were inputted to the algorithm as the initial number of cell-types to test the algorithm's ability to discern the correct number. The algorithm successfully identified three cell-types in the mixed samples and their correct identities, i.e., liver, brain and lung. High correlations were found between the gene-expression profiles of each estimated cell-type to the profile of its corresponding purified cell-type taken from the same study (FIG. 1A), in addition to shortest SKLD distances (FIG. 3B). These correlations, obtained by our blind separation method, were in the range of the correlations reported in the Shen Orr et al. study where the number of cell-types, their identities and their proportions per sample were input to the algorithm, and even higher in the case of the lung cell-type (Shen-Orr S S, et al. (2010) Nat Methods 7: 287-289). High correlations were also obtained between the actual and estimated cell-type proportions (FIG. 2A), in addition to shortest SKLD distances (FIG. 3C). Sample-by-sample comparison of the estimated proportions of each cell-type shows that our algorithm is successful in reconstructing accurate proportions per cell-type per sample, with an average absolute error of 3.4%\u00b12.3 (Table 1A). In addition, the resulting expression signatures had shorter SKLD distances and thus were closer to the original purified expression profiles compared to the input profiles, demonstrating that the algorithm successfully advanced the input signatures (FIG. 3D). Note that we use SKLD distances as the distance measure in results testing, as it is the measure used in the algorithm itself.",
+                                "FIG. 3 (A) shows a heatmap of the gene-expression signatures used in the liver-brain-lung dataset (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). Top 10% variable probes (3,110) are shown. Publically available datasets mined from GEO were used for the signatures, as follows: liver\u2014GSE8252, heart\u2014GSE5085, granulosa\u2014GSE13883, brain\u2014GSE3428, lung\u2014GSE16849, intestine\u2014GSE16849. Gene expression from each dataset was averaged to yield a signature representative of that cell-type. Heatmap was generated in R\u00a9 BioConductor using the gplots package. FIG. 3(B) shows the Kullback-Leibler distances between the gene expression of each separated cell type (CT1-CT3) to the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). The distance is calculated between gene expression vectors; i.e. each vector represents a different cell-type and each entry of the vector represents the gene expression of a particular gene. The shortest distances between each separated cell-type and its corresponding purified cell-type are circled. FIG. 3(C) shows the Kullback-Leibler distances between the known cell-type proportions and the estimated cell-type proportions (CT1-CT3) for all samples. The distance is calculated between vectors, such that each vector represents a different cell-type and each entry of the vector represents the relative proportion in a particular sample. The shortest distances between the estimated and known cell-type proportions are circled. FIG. 3(D) shows the Kullback-Leibler distances between the purified gene-expression signatures taken from the same study (Shen-Orr S S, et al. (2010) Nat Methods 7:287-289), denoted as \u201creal,\u201d the estimated cell-type signatures inferred by the algorithm and the input cell-type reference signatures mined from GEO. The shortest distances are circled.",
+                                "**Blind Separation of the Heart-Brain Dataset**",
+                                "The Heart-Brain dataset includes samples of heart and brain human cell mixtures (http://www.affymetrix.com/support/technical/sample_data/gene\u20141\u20140_array_data.affx). Purified cell reference signatures were collected from GEO and included myocardial (heart) cells, brain cells from the entorhinal cortex and grey matter, oocytes and hepatocytes from different studies (see \u201cmicro array data\u201d in methods section; FIG. 4A). We unified the two heart signatures obtained from different studies under the class \u201cheart\u201d and the two brain signatures obtained from different brain tissues under the class \u201cbrain.\u201d The algorithm successfully identified the true cell-types, i.e., heart and brain. The cortex brain cell-type was identified in all algorithm majority voting runs whereas the brain grey-matter cell-type was identified in only 20% of the majority voting runs, suggesting that the cells in the mixtures are most probably cortex cells or cells with a similar signature. The estimated cell-type expression profiles showed the highest correlations (FIG. 1B) and shortest SKLD distances (FIG. 4B) to their corresponding purified cell-types taken from the same study. High correlations (FIG. 2B) and shortest SKLD distances (FIG. 4C) between the estimated and known cell-type proportions were obtained, with a low average absolute error of 1.7%\u00b11.85 (Table 1B). Finally, the resulting expression signatures were closer to the original purified expression profiles compared to the input profiles (FIG. 4D).",
+                                "FIG. 4(A) shows a heatmap of the gene-expression signatures used in the heart-brain dataset [15]. Top 10% variable probes (5,468) are shown. Publically available datasets mined from GEO were used for the signatures, as follows: Brain cortex\u2014GSE4757, Brain GM (grey matter)\u2014GSE28146, ooctyes\u2014GSE12034, hepatocytes\u2014GSE31264, Heart 1\u2014GSE21610, Heart 2\u2014GSE29819. Gene expression from each dataset was averaged to yield a signature representative of that cell-type. Heatmap was generated in R\u00a9 BioConductor using the gplots package. FIG. 4(B) shows Kullback-Leibler distances between the gene-expression of each separated cell type (CT1, CT2) to the gene-expression of each of the purified cell-types taken from the same study [15]. The distance is calculated between gene expression vectors; i.e. each vector represents a different cell-type and each entry of the vector represents the gene expression of a particular gene. The shortest distances between each separated cell-type and its corresponding purified cell-type are circled. FIG. 4(C) shows Kullback-Leibler distances between the known cell-type proportions and the estimated cell-type proportions (CT1, CT2) for all samples. The distance is calculated between vectors, such that each vector represents a different cell-type and each entry of the vector represents the relative proportion in a particular sample. The shortest distances between the estimated and known cell-type proportions are circled. FIG. 4(D) shows Kullback-Leibler distances between the purified gene expression signatures taken from the same study [15], denoted as \u201creal,\u201d the estimated cell-type signatures inferred by the algorithm and the input reference cell-type signatures mined from GEO. The shortest distances are circled. The GEO accession numbers of the two signatures taken from different studies for both the heart and brain cell-types are denoted next to each comparison.",
+                                "**Blind Separation of the T-B-Monocytes Dataset**",
+                                "To test separation of cell-types with similar signatures, we chose the T-B-Monocytes dataset, containing mixtures of T, Monocyte and two types of B cell lines (Abbas A R, et al. (2009) PLoS One 4: e6098). Purified cell reference signatures collected from GEO included human immune cell lines of T-cells, B-cells, Monocytes, NK cells and epithelial cells (see \u201cmicroarray data\u201d below; FIG. 5A). The algorithm successfully identified all three cell-types (T, B, Monocytes) and also successfully discerned between the two types of B cell-lines, yielding a total of four resulting cell-types\u2014T Jurkat, B Raji, B IM-9 and Monocyte THP-1 cell lines. High correlations were obtained between the gene-expression profiles of each estimated cell-type to the profile of its corresponding purified cell-type taken from the same study (FIG. 1C) and between the estimated and known cell-type proportions (FIG. 2C), in addition to shortest SKLD distances (FIGS. 5B-C). The average error in cell-type proportions per-sample obtained by our blind separation method was 5.7%\u00b13.3 (Table 1C), which is close to the error reported by the original study separating these same samples, where the number of cell-types, their identity and their gene expression profiles were given as an input (Abbas A R, et al. (2009) PLoS One 4: e6098). In addition, the resulting expression signatures were closer to the original purified expression profiles compared to the input profiles (FIG. 5D). A lower average error in cell-type proportions per sample (3.67%\u00b13.04) and higher correlations between the estimated and known cell-type specific gene-expression profiles were obtained in an algorithm run where the two B cell-line types were unified under the \u201cB cells\u201d class (FIGS. 5E-1). In this run, where the goal was to separate between the different immune cell-types in the mixed samples, the algorithm successfully identified the three cell-types\u2014T-cells, B-cells and Monocytes.",
+                                "FIG. 5 (A) is a heatmap of the gene-expression signatures used in the T-B-Monocytes dataset [4]. Top 10% variable probes (2,734) are shown. Publically available datasets mined from GEO were used for the signatures, as follows: B IM9 cell line\u2014GSE24147, B Raji cell line 1\u2014GSE12278, B Raji cell line 2\u2014GSE13210, Epithelial MCF10A cell line\u2014GSE10196, Monocyte THP-1 cell-line\u2014GSE26868, NK IMC-1 cell line\u2014GSE19067, T Jurkat cell line 1\u2014GSE7508, T Jurkat cell line 2\u2014GSE30678. Gene expression from each dataset was averaged to yield a signature representative of that cell-type/dataset. Heatmap was generated in R\u00a9 BioConductor using the gplots package. FIG. 5 (8) shows the Kullback-Leibler distances between the gene expressions of each separated cell-type (CT1-CT4) to the gene-expression of each of the purified cell-types taken from the same study2. The distance is calculated between gene expression vectors; i.e. each vector represents a different cell-type and each entry of the vector represents the gene expression of a particular gene. The shortest distances between each separated cell-type and its corresponding purified cell-type are circled. FIG. 5 (C) shows the Kullback-Leibler distances between the known cell-type proportions and the estimated cell-type proportions (CT1-CT4) for all samples. The distance is calculated between vectors, such that each vector represents a different cell-type and each entry of the vector represents the relative proportion in a particular sample. The shortest distances between the estimated and known cell-type proportions are circled. FIG. 5 (D) shows the Kullback-Leibler distances between the purified gene-expression signatures taken from the same study [4], denoted as \u201creal,\u201d the estimated cell-type signatures inferred by the algorithm and the input reference cell-type signatures mined from GEO. The shortest distances are circled. The GEO accession numbers of the two signatures taken from different studies for both the T (Jurkat) and B (Raji) cell lines are denoted next to each comparison. FIG. 5 (E) illustrates gene expression measurements of each separated cell-type (the two B cell-types were unified under the same class\u2014\u201cB cells\u201d) plotted against the gene expression of its corresponding purified cell type from the same study. The known purified gene expression of the two B cell-types was averaged. FIG. 5 (F) shows the Kullback-Leibler distances between the gene expressions of each separated cell-type (CT1-CT3; the two B cell-types were unified under the same class\u2014\u201cB cells\u201d) to the gene-expression of each of the purified cell-types taken from the same study\u2032. The known purified gene expression of the two B cell-types was averaged. The distance is calculated between gene expression vectors; i.e. each vector represents a different cell-type and each entry of the vector represents the gene expression of a particular gene. The shortest distances between each separated cell-type and its corresponding purified cell-type are circled. FIG. 5 (G) shows the Kullback-Leibler distances between the known cell-type proportions and the estimated cell-type proportions (CT1-CT3) for all samples. The unified B cell-types (\u201cB cells\u201d) were compared to the sum of the proportions of the two B cell-types. The distance is calculated between vectors, such that each vector represents a different cell-type and each entry of the vector represents the relative proportion in a particular sample. The shortest distances between the estimated and known cell-type proportions are circled. FIG. 5 (H) illustrates comparisons between the known cell-type proportions and the estimated proportions per-sample for cell-types in the controlled datasets. Known proportions are shown in the grey columns, denoted by \u201cS\u201d and were measured as triplicates; estimates yielded by the blind separation algorithm are shown in the white columns and are denoted by \u201ce.\u201d FIG. 5 (I) illustrates known cell-type proportions plotted against the estimated cell-type proportions for all samples. The unified B cell-types (\u201cB cells\u201d) were compared to the sum of the proportions of the two B cell-types. Correlation coefficients between the known and estimated proportions are denoted for each cell-type."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce application of algorithm to controlled datasets",
+                                "describe liver-brain-lung dataset",
+                                "specify parameters for algorithm run",
+                                "describe microarray data",
+                                "introduce blind separation of liver-brain-lung dataset",
+                                "describe purified cell-type reference signatures",
+                                "show heatmap of gene-expression signatures",
+                                "describe algorithm's success in identifying cell-types",
+                                "show correlations between estimated and purified cell-types",
+                                "show SKLD distances between estimated and purified cell-types",
+                                "describe algorithm's success in estimating cell-type proportions",
+                                "show correlations between estimated and known cell-type proportions",
+                                "show SKLD distances between estimated and known cell-type proportions",
+                                "describe advancement of input signatures",
+                                "introduce blind separation of heart-brain dataset",
+                                "describe heart-brain dataset",
+                                "specify parameters for algorithm run",
+                                "describe microarray data",
+                                "describe purified cell-type reference signatures",
+                                "show heatmap of gene-expression signatures",
+                                "describe algorithm's success in identifying cell-types",
+                                "show correlations between estimated and purified cell-types",
+                                "show SKLD distances between estimated and purified cell-types",
+                                "describe algorithm's success in estimating cell-type proportions",
+                                "show correlations between estimated and known cell-type proportions",
+                                "show SKLD distances between estimated and known cell-type proportions",
+                                "describe advancement of input signatures",
+                                "introduce blind separation of T-B-Monocytes dataset",
+                                "describe T-B-Monocytes dataset",
+                                "specify parameters for algorithm run",
+                                "describe microarray data",
+                                "describe algorithm's success in identifying cell-types and estimating proportions"
+                            ],
+                            "num_characters": 16267,
+                            "outline_medium": [
+                                "introduce controlled datasets",
+                                "describe liver-brain-lung dataset",
+                                "specify algorithm parameters for liver-brain-lung dataset",
+                                "analyze blind separation of liver-brain-lung dataset",
+                                "show correlations between estimated and purified cell-types",
+                                "show correlations between estimated and known cell-type proportions",
+                                "describe heart-brain dataset",
+                                "specify algorithm parameters for heart-brain dataset",
+                                "analyze blind separation of heart-brain dataset",
+                                "show correlations between estimated and purified cell-types",
+                                "show correlations between estimated and known cell-type proportions",
+                                "describe T-B-Monocytes dataset",
+                                "specify algorithm parameters for T-B-Monocytes dataset",
+                                "analyze blind separation of T-B-Monocytes dataset",
+                                "show correlations between estimated and purified cell-types",
+                                "show correlations between estimated and known cell-type proportions"
+                            ],
+                            "outline_short": [
+                                "apply algorithm to controlled datasets",
+                                "describe liver-brain-lung dataset",
+                                "perform blind separation of liver-brain-lung dataset",
+                                "describe heart-brain dataset",
+                                "perform blind separation of heart-brain dataset",
+                                "describe T-B-Monocytes dataset",
+                                "perform blind separation of T-B-Monocytes dataset",
+                                "summarize results of blind separation on controlled datasets"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Application of the Algorithm to a Semi-Controlled Dataset Blind Separation of the Prostate Tumor Dataset**",
+                                "We tested the algorithm on a semi-controlled dataset of prostate cancer in which cell-type proportions were estimated by a pathologist (Wang Y, et al. (2010) Cancer Res 70: 6448-6455). The cell-types in the analyzed tissue were carcinoma, benign (BPHE) and dilated (DCAE) epithelial and stromal cells. Purified cell signatures of prostate tumor cell lines, benign prostate cells, normal prostate epithelial cells, stroma surrounding invasive prostate tumors and normal stroma were collected from GEO (see \u201cmicroarray data\u201d below; FIG. 6A). Data were available for the percentage of tumor cells in each sample, thus classes unifying the prostate cell-lines and the other cell-types under \u201ctumor\u201d and \u201cother,\u201d respectively, were used. High correlations were obtained between the pathologist's estimated cell-type proportions and the cell-type proportions estimated by the algorithm (FIG. 2D), with an average error per sample of 12.44%\u00b112.41 (FIGS. 6B-C). Compared to the results obtained in the controlled datasets, the cell-type proportions prediction error was higher in this case. This could be due to the fact that no specific signatures for BPHE and DCAE cells were found within the same/similar microarray platforms. Therefore, general signatures for stromal and epithelial cells were used, which may have decreased the prediction accuracy. However, it is more likely that the pathologist's estimations of cell-type proportions were not fully accurate. Indeed, the lowest error calculated between the actual and estimated cell-type proportions in that study was: 9.5% and 12.5% for tumor and stromal cells, respectively (Wang Y, et al. (2010) Cancer Res 70: 6448-6455), where our blind separation algorithm reached similar error rates with non-specific signatures. The algorithm was run with the following parameters: Prostate cancer dataset (Wang Y, et al. (2010) Cancer Res 70: 6448-6455): majority voting threshold=70%, majority voting runs=10, classes=unifying the 6 different prostate tumor cell lines to the class \u201ctumor\u201d and the epithelial and stromal cells to the class \u201cother.\u201d",
+                                "Microarray Data.",
+                                "All micro array data were downloaded from GEO (Barrett T, et al. (2009) Nucleic Acids Res 37: D885-890) as raw .CEL files and RMA normalized using R\u00a9 package \u201caffy.\u201d The datasets and reference signatures for each analysis were jointly normalized using quantile normalization using R\u00a9 package \u201climma.\u201d The prostate cancer dataset (Wang Y, et al. (2010) Cancer Res 70: 6448-6455) (GSE17951) included 154 patient samples with proportions of the tumor cells available for 137 samples. Reference signatures included purified prostate tumor cell lines\u2014DU145, PC3, CWR22Rv, LAPC4, C42B, LNCaP (GSE12348), benign prostate cells (GSE3325), normal prostate epithelial cells (GSE9951), stroma surrounding invasive prostate primary tumors and normal stroma (GSE26910). All reference signatures and analyzed data were taken from two similar platforms\u2014Affymetrix Human Genome U133A Array and U133 Plus 2.0 Array.",
+                                "FIG. 6(A) is a heatmap of the gene-expression signatures used in the heart-brain dataset [7]. Top 10% variable probes (2,228) are shown. Publically available datasets mined from GEO were used for the signatures, as follows: normal prostate epithelial cells (epithelial)\u2014GSE9951, benign prostate tissue (benign)\u2014GSE3325, stroma surrounding invasive prostate tumors (stromal surround) and normal stroma (stromal normal)\u2014GSE26910, 6 prostate tumor cell-lines (DU145, PC3, CWR22Rv, LAPC4, C42B, LNCaP)\u2014GSE12348. Gene expression from each dataset was averaged to yield a signature representative of that cell-type. Heatmap was generated in R\u00a9 BioConductor using the gplots package. FIG. 6(8) shows the Kullback-Leibler distances between the known cell-type proportions and the estimated cell-type proportions (CT1, CT2) for all samples. The distance is calculated between vectors, such that each vector represents a different cell-type and each entry of the vector represents the relative proportion in a particular sample. The shortest distances between the estimated and known cell-type proportions are circled. Figure S4 (C) illustrates a comparison of the known and estimated cell-type proportions per sample in the prostate cancer dataset. The average absolute error per sample is 12.44\u00b112.41. Highlighted cells show the samples in which the absolute error was lower or equal to the average absolute error."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce application of algorithm to semi-controlled dataset",
+                                "describe prostate tumor dataset",
+                                "specify parameters for algorithm run",
+                                "describe microarray data",
+                                "describe purified cell-type reference signatures",
+                                "show heatmap of gene-expression signatures",
+                                "describe algorithm's success in estimating cell-type proportions",
+                                "show correlations between estimated and known cell-type proportions",
+                                "discuss limitations of algorithm's performance"
+                            ],
+                            "num_characters": 4527,
+                            "outline_medium": [
+                                "introduce semi-controlled prostate tumor dataset",
+                                "specify algorithm parameters for prostate tumor dataset",
+                                "analyze blind separation of prostate tumor dataset",
+                                "show correlations between estimated and pathologist's cell-type proportions"
+                            ],
+                            "outline_short": [
+                                "apply algorithm to semi-controlled prostate tumor dataset",
+                                "evaluate performance of algorithm on prostate tumor dataset"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Algorithm without the Cell-Type Determination Step\u2014Liver Brain Lung Dataset**",
+                                "A modified version of the separation algorithm without the cell-type determination step was run on the three cell-types liver-brain-lung dataset, using six, five and four reference cell-type signatures mined from GEO. The results show that in the case of algorithms that do not have a cell-type determination mechanism, such an over-fit (addition of extra cell-types) is insignificant if the resulting proportions of the additional cell-types are close to zero. However, this example clearly shows that this is not the case and that the over-fit significantly degraded the performance of the algorithm. Hence the cell-type determination step is crucial. FIG. 7(A) shows the results of a run using all six input cell-types mined from GEO (liver, brain, lung, heart, intestine, granulosa). Correlations were calculated between the gene-expression of each separated cell type (CT1-CT6) to the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, thus pointing to the correct cell-types, i.e., liver=CT1, brain=CT3, lung=CT5. FIG. 7(B) shows the estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT3 and CT5 is 26.5\u00b17.8. This is a much higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT3, lung=CT5); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 7 (C) illustrates correlations between the gene-expression of five input cell-types\u2014liver, brain, lung, intestine and heart (CT1-CT5) and the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., liver=CT1, brain=CT2, lung=CT4. FIG. 7 (D) shows the estimated cell-type proportions for five cell-types. The average absolute error per sample for cell-types CT1,CT2 and CT4 is 22.3\u00b111.9. This is a much higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT2, lung=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 7 (E) illustrates correlations between the gene-expression of four input cell-types\u2014liver, brain, lung and intestine (CT1-CT4) and the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., liver=CT1, brain=CT2, lung=CT3. FIG. 7 (F) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1,CT2 and CT3 is 11.7\u00b14.75. This is a higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT2, lung=CT3); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "run algorithm without cell-type determination",
+                                "show results of run using six input cell-types",
+                                "calculate correlations between gene-expression",
+                                "determine identity of resulting cell-types",
+                                "show estimated cell-type proportions",
+                                "calculate average absolute error per sample",
+                                "compare error to complete algorithm",
+                                "highlight real proportions and mistakenly assumed cell-types",
+                                "illustrate correlations between gene-expression"
+                            ],
+                            "num_characters": 4556,
+                            "outline_medium": [
+                                "run algorithm without cell-type determination",
+                                "show results with six input cell-types",
+                                "show results with five input cell-types",
+                                "show results with four input cell-types"
+                            ],
+                            "outline_short": [
+                                "demonstrate algorithm without cell-type determination",
+                                "show performance degradation without cell-type determination"
+                            ]
+                        },
+                        {
+                            "title": "Example 4",
+                            "paragraphs": [
+                                "**Algorithm without the Cell-Type Determination Step\u2014T-B-Monocytes Dataset**",
+                                "A modified version of the separation algorithm without the cell-type determination step was run on the four cell-types T-B-Monocytes dataset (which includes two different B cell line types), using six and five reference cell-type signatures mined from GEO. The results show that in the case of algorithms that do not have a cell-type determination mechanism, such an over-fit (addition of extra cell-types) is insignificant if the resulting proportions of the additional cell-types are close to zero. However, this example clearly shows that this is not the case and that the over-fit significantly degraded the performance of the algorithm. Hence the cell-type determination step is crucial. FIG. 8 (A) shows the results of a run using all six input cell-types mined from GEO (T-Jurkat, B-Raji, B-IM9, Monocytes, NK cells and epithelial cells). Correlations were calculated between the gene-expression of each separated cell type (CT1-CT6) to the gene-expression of each of the purified cell-types taken from the same study [4]. As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., T-Jurkat=CT1, B-Raji/IM9=CT2, Monocytes=CT4. CT2 was identified as both B cell lines. FIG. 8 (B) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT3 and CT4 is 21.2\u00b16.7. This is a much higher error compared to the error produced by our complete algorithm, which was 5.7%\u00b13.3 (Table 1C). Cells highlighted in orange show the real proportions (where T-Jurkat=CT1, B-Raji/IM9=CT2, Monocytes=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 8 (C) illustrates correlations between the gene-expression of five input cell-types\u2014T-Jurkat, B-Raji, B-IM9, Monocytes and epithelial cells (CT1-CT5) and the gene-expression of each of the purified cell-types taken from the same study [4]. As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., T-Jurkat=CT1, B-Raji=CT2, B-IM9=CT3, Monocytes=CT4. FIG. 8 (D) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1-CT4 is 13.7\u00b14.9. This is a much higher error compared to the error produced by our complete algorithm, which was 5.7%\u00b13.3 (Table 1C). Cells highlighted in orange show the real proportions (where T-Jurkat=CT1, B-Raji=CT2, B-IM9=CT3, Monocytes=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "run algorithm without cell-type determination",
+                                "show results of run using six input cell-types",
+                                "calculate correlations between gene-expression",
+                                "determine identity of resulting cell-types",
+                                "show estimated cell-type proportions",
+                                "calculate average absolute error per sample"
+                            ],
+                            "num_characters": 3382,
+                            "outline_medium": [
+                                "run algorithm without cell-type determination",
+                                "show results with six input cell-types",
+                                "show results with five input cell-types"
+                            ],
+                            "outline_short": [
+                                "demonstrate algorithm without cell-type determination on T-B-Monocytes dataset"
+                            ]
+                        },
+                        {
+                            "title": "Example 5",
+                            "paragraphs": [
+                                "**NNLS-Based Algorithm\u2014Liver Brain Lung Dataset**",
+                                "In this example we used a NNLS (non-negative least squares)-based algorithm, which was used as a benchmark to most NNLS-based separation algorithms. The reference signatures were used to extract the proportions matrix. This algorithm was run on the three cell-types liver-brain-lung dataset, using six, five and four reference cell-type signatures mined from GEO. For NNLS-based algorithms which do not require any prior information, an over-fit (i.e., assume that there are more cell-types than actually exist) is insignificant if the resulting proportions of the additional cell-types are close to zero. However, this example clearly shows that this is not the case and that the over-fit significantly degraded the performance of the algorithm. Hence the cell-type determination step and the usage of NNMF (non-negative matrix factorization) are crucial. FIG. 9(A) shows the results of a run using all six input cell-types mined from GEO (liver, brain, lung, heart, intestine, granulosa). Correlations were calculated between the gene-expression of each separated cell type (CT1-CT6) to the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., liver=CT1, brain=CT2, lung=CT4. FIG. 9 (8) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT2 and CT4 is 24.2\u00b18.72. This is a much higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT2, lung=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 9 (C) illustrates correlations between the gene-expression of five input cell-types\u2014liver, brain, lung, intestine and heart (CT1-CT5) and the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289)]. As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., liver=CT1, brain=CT2, lung=CT4. FIG. 9 (D) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT2 and CT4 is 18.4\u00b15.81. This is a much higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT2, lung=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 9 (E) illustrates correlations between the gene-expression of four input cell-types\u2014liver, brain, lung, and intestine (CT1-CT4) and the gene-expression of each of the purified cell-types taken from the same study (Shen-Orr S S, et al., (2010) Nat Methods 7:287-289). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., liver=CT1, brain=CT2, lung=CT4. FIG. 9 (F) illustrates estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT2 and CT4 is 12.3\u00b14.78. This is a higher error compared to the error produced by our complete algorithm, which was 3.4%\u00b12.3 (Table 1A). Cells highlighted in orange show the real proportions (where liver=CT1, brain=CT2, lung=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm.",
+                                "**Example 6**",
+                                "**NNLS-Based Algorithm\u2014T-B-Monocytes Dataset**",
+                                "In this example we used a NNLS (non-negative least squares)-based algorithm, which was used as a benchmark to most NNLS-based separation algorithms. The reference signatures were used to extract the proportions matrix. This algorithm was run on the four cell-types T-B-Monocytes dataset (which includes two different B cell line types), using six and five reference cell-type signatures mined from GEO. For NNLS-based algorithms that do not require any prior information, an over-fit (i.e., assume that there are more cell-types than actually exist) is insignificant if the resulting proportions of the additional cell-types are close to zero. However, this example clearly shows that this is not the case and that the over-fit significantly degraded the performance of the algorithm. Hence the cell-type determination step and the usage of NNMF (non-negative matrix factorization) are crucial. FIG. 10 (A) shows the results of a run using six input cell-type signatures mined from GEO (T-Jurkat, B-Raji, B-IM9, Monocytes, NK cells and epithelial cells). Correlations were calculated between the gene-expression of each separated cell type (CT1-CT6) to the gene-expression of each of the purified cell-types taken from the same study (Abbas et al. (2009) PLoS One 4:e6098). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., T-Jurkat=CT1, B-Raji/IM9=CT2, Monocytes=CT4. CT2 was identified as both B cell lines. FIG. 10 (B) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT2 and CT4 is 14.2\u00b13.8. This is a much higher error compared to the error produced by our complete algorithm, which was 5.7%\u00b13.3 (Table 1C). Cells highlighted in orange show the real proportions (where T-Jurkat=CT1, B-Raji/IM9=CT2, Monocytes=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm. FIG. 10 (C) illustrates correlations between the separated cell-types (CT1-CT5) and the gene-expression of each of the purified cell-types taken from the same study (Abbas et al. (2009) PLoS One 4:e6098). As the cell-type determination step was not performed, correlations between the purified signatures from the same study and the resulting cell-types were used to determine the identity of the resulting cell-types. The highest correlation between each separated cell-type and its corresponding purified cell-type are circled, pointing to the correct cell-types, i.e., T-Jurkat=CT1, B-Raji/IM9=CT2, Monocytes=CT4. FIG. 10 (D) shows estimated cell-type proportions for all cell-types. The average absolute error per sample for cell-types CT1, CT2 and CT4 is 11.5\u00b13.4. This is a much higher error compared to the error produced by our complete algorithm, which was 5.7%\u00b13.3 (Table 1C).",
+                                "Cells highlighted in orange show the real proportions (where T-Jurkat=CT1, BRaji/IM9=CT2, Monocytes=CT4); cells highlighted in grey are the cell-types which were mistakenly assumed to be present but were not removed because the cell-type determination step was not included here, as in our complete algorithm."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "run NNLS-based algorithm",
+                                "show results of run using six input cell-types",
+                                "calculate correlations between gene-expression",
+                                "determine identity of resulting cell-types",
+                                "show estimated cell-type proportions",
+                                "calculate average absolute error per sample",
+                                "compare error to complete algorithm",
+                                "highlight real proportions and mistakenly assumed cell-types",
+                                "illustrate correlations between gene-expression",
+                                "show results of run using five input cell-types",
+                                "calculate correlations between gene-expression",
+                                "determine identity of resulting cell-types",
+                                "show estimated cell-type proportions",
+                                "calculate average absolute error per sample",
+                                "compare error to complete algorithm",
+                                "highlight real proportions and mistakenly assumed cell-types"
+                            ],
+                            "num_characters": 8297,
+                            "outline_medium": [
+                                "introduce NNLS-based algorithm",
+                                "run algorithm with six input cell-types",
+                                "show results with six input cell-types",
+                                "run algorithm with five input cell-types",
+                                "show results with five input cell-types",
+                                "run algorithm with four input cell-types",
+                                "show results with four input cell-types",
+                                "compare errors with complete algorithm"
+                            ],
+                            "outline_short": [
+                                "introduce NNLS-based algorithm",
+                                "demonstrate algorithm without cell-type determination on liver-brain-lung dataset",
+                                "show performance degradation without cell-type determination",
+                                "highlight importance of cell-type determination step"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce algorithm for identifying cell-types in heterogeneous tissue samples",
+                        "describe three parts of algorithm: non-negative matrix factorization, estimation of true number of cell-types, and computation of cell-type proportions",
+                        "explain limitations of algorithm, including requirement for purified reference signatures and potential ambiguities in results",
+                        "discuss importance of a priori knowledge of tissue composition and potential for algorithm to detect unknown cell-types"
+                    ],
+                    "num_characters": 2497,
+                    "outline_medium": [
+                        "introduce algorithm for identifying cell-types in heterogeneous tissue samples",
+                        "describe three parts of algorithm: non-negative matrix factorization, estimation of true number of cell-types, and computation of cell-type proportions"
+                    ],
+                    "outline_short": [
+                        "introduce algorithm for identifying cell-types in heterogeneous tissue samples"
+                    ]
+                },
+                {
+                    "title": "Discussion",
+                    "paragraphs": [
+                        "Gene-expression analysis of whole tissues, which are heterogeneous in nature and consist of a mixture of several cell-types, are utilized extensively and are highly abundant in public repositories such as GEO (Barrett T, et al. (2009) Nucleic Acids Res 37: D885-890). However, it is now becoming clear that the identity, composition and profiles of individual cell-types are extremely important to the process of unraveling the biology of each cell-type population and the interplay between the populations in both healthy and disease states. Due to the expense and difficulties of separating them, only a limited amount of studies profile and analyze individual cell-types. More importantly, public repositories are replete with existing data of whole tissues including thousands of patients, treatments, tissues and cell-types. This rich trove of data is from experiments that may never be repeated using such large patient pool or experimental conditions. Our techniques can realize the great potential of these data, which contains much information about the constituent individual cell-types in heterogeneous tissues that, to date, have not been fully interrogated.",
+                        "Computational methods have been developed to allow the separation of heterogeneous tissues into their cell-type constituent profiles and/or relative proportions. However, all currently existing separation methods require that the number of cell-types in the tissue, their identity, or their relative proportions in the analyzed tissue are known. Such information rarely exists, as most profiling studies do not purify the cell-types in the tissue, extract their proportions or verify their identity, rendering the existing separation methods non-usable for most existing datasets; rather, these datasets are usable only in experiments designed in advance to allow for the separation technique.",
+                        "We have developed a separation method that requires no a priori information about the tissue analyzed other than an initial rough estimate of the cell-types that may exist in the tissue samples analyzed. This is a reasonable input to ask for and relatively easy to find, as information regarding the composition of most tissues is readily available in the literature and public databases such as GEO are replete with many types of purified cell-types from various experiments. As our algorithm does not require the purified cell-type profiles to be disease, tissue or even study-specific, one can simply use any relevant purified profile as an input to the algorithm. These properties render our algorithm the only useful method to separate most publically available heterogeneous micro array datasets.",
+                        "We successfully applied our separation technique to three controlled datasets with known proportions and cell types in addition to a semi-controlled dataset where cell-type proportions per sample were estimated by a pathologist, to test the method on a dataset that resembles the heterogeneous datasets available in the literature rather than on datasets specifically engineered for separation. Our blind separation technique accurately extracted the relative cell-type proportions per sample and their separated gene-expression signatures and performed just as well, and in some cell-types even better, than other reported separation techniques that require different types of input information about the dataset analyzed to be available. Most importantly, our technique successfully identified the number of cell-types in the tissues analyzed and their identities. These features are not included in any of the reported separation techniques, and are in fact considered as an integral input for the usage of these techniques. It is these features that are mostly unavailable for publically available datasets, or any dataset in which they have not been experimentally identified. In addition, the cell-type populations and proportions in a tissue are not always consistent amongst different individuals, which renders the identification of those populations and their identities crucial.",
+                        "The algorithm's robustness to varying input signatures was demonstrated by using additional cell-type signatures that were not related to the analyzed tissue as input to each controlled dataset (e.g., the intestine, heart and granulosa cell-types were input to the liver-brain-lung dataset). To address the algorithm's robustness to signatures of different qualities, signatures from different studies were used for the same cell-type and gathered under the same class (e.g., two T-cell Jurkat and B-cell Raji cell-lines from different studies were input to the T-B-Monocytes dataset). The algorithm identified the correct number of cell-types and their correct identities in all examples. In general, the algorithm performed better when separating cell-types that were very different from one another as in the heart-brain dataset, compared to cell-types that were very similar to each other such as in the T-B-monocyte dataset. However, in the latter example, given that no a priori data about the mixed tissue was provided, the algorithm still yielded accurate results. In particular, the algorithm identified all three cell-types (T, Band Monocytes) with an error that was close to that reported by the original study where the number of cell-types, their identity and their true gene-expression profiles were given as an input. Moreover, the algorithm also successfully separated the two B cell-lines, cell-types with an almost identical gene expression. A comparison between the true purified signatures from the same study to the input signatures mined from GEO and the resulting signatures inferred by our algorithm showed that, in each of the datasets explored, the resulting signatures were always closer to the true signatures than the signatures from GEO, demonstrating that our algorithm successfully identifies the input signatures close to the true ones.",
+                        "Compared to existing algorithms, our algorithm yielded at least comparable results, and in some cases better results (such as predicting the lung cell-type in the liver-brain-lung dataset). An important distinction is that our algorithm does not require the a priori information required in existing algorithms and, in contrast with those algorithms, it is able to determine the number of cell-types in the heterogeneous tissue and their identities. To demonstrate the importance of this added capability, we compared the performance of our algorithm to an NNMF approach, without the cell-type determination step, which is initialized in the same manner as our algorithm (FIG. 5-6). We also compared our algorithm's performance to that of a simple NNLS-based algorithm, used here as a benchmark due to the fact that most existing algorithms are based on NNLS (FIG. 7-8). In both cases, even a small error in the guess of the number of cell-types (e.g., guessing 4 cell-types instead of 3) deteriorates the performance of these existing algorithms, demonstrating that the cell-type determination step is crucial for good separation. This emphasizes the usefulness of our algorithm not only in situations where no a priori information exists, but also in the more common scenarios where one has a good but not perfect guess of the cell composition with an error of at most one or two cell-types.",
+                        "In summary, our blind separation technique successfully identifies the cell-type composition in heterogeneous gene-expression data, and provides high accuracy estimates of cell-type specific signatures and their relative proportions per sample. The only information the algorithm requires is an initial estimate of the cell-types that may exist in the tissue analyzed and their signatures, which can be easily found in public databases such as GEO. This method is especially advantageous for re-analyzing existing microarray data for which no additional information is available, allowing re-examination and extraction of information for individual cell-type populations while taking advantage of already-existing, large-scale microarray datasets."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce gene-expression analysis",
+                        "limitations of whole tissue analysis",
+                        "importance of individual cell-type profiles",
+                        "difficulties of separating cell-types",
+                        "existing separation methods",
+                        "limitations of existing methods",
+                        "introduce new separation method",
+                        "advantages of new method",
+                        "test new method on controlled datasets",
+                        "test new method on semi-controlled dataset",
+                        "demonstrate robustness to varying input signatures",
+                        "compare to existing algorithms",
+                        "emphasize importance of cell-type determination",
+                        "summarize new method's capabilities",
+                        "highlight advantages for re-analyzing existing data",
+                        "conclude new method's usefulness"
+                    ],
+                    "num_characters": 8075,
+                    "outline_medium": [
+                        "motivate gene-expression analysis",
+                        "limitations of existing separation methods",
+                        "introduce novel separation method",
+                        "describe advantages of novel method",
+                        "demonstrate method's accuracy",
+                        "show method's robustness to varying inputs",
+                        "compare method to existing algorithms",
+                        "summarize method's benefits"
+                    ],
+                    "outline_short": [
+                        "motivate gene-expression analysis",
+                        "limitations of existing separation methods",
+                        "introduce novel separation method",
+                        "demonstrate method's robustness and accuracy"
+                    ]
+                },
+                {
+                    "title": "Example 7",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Application to Breast Cancer Microarrays",
+                            "paragraphs": [
+                                "The separation algorithm was applied to publically available datasets collected from the Gene Expression Omnibus (GEO), described and exemplified as follows.",
+                                "Application of Separation Algorithm:",
+                                "1) Download heterogeneous tissues dataset from GEO, normalize and annotate. This will be referred to as \u201cMix.\u201d In this example, 26 different datasets of patients' primary breast cancer heterogeneous tumor tissue were downloaded, with a total of 4,505 samples with various clinical parameters (Table 2).",
+                                "2) Collect relevant reference signatures (purified cell types of cells suspected to exist in analyzed tissue) from GEO, normalize and annotate. This will be referred to as \u201cSignatures.\u201d In this example, 47 difference purified cell type reference signatures from 30 different datasets were used. Reference signatures underwent quality control to check whether similar cell types cluster together (via hierarchical clustering of the correlations of the input reference signatures, FIG. 11).",
+                                "3) Prepare input files for separation algorithm: normalize Mix and Signatures together (e.g. using quantile normalization) and print to input files; prepare additional input files such as cell type class annotations. In this example, the class annotation was set such that the algorithm will aim to separate the heterogeneous tissues into 5 main cell type classes: tumor cells, T cells, B cells, Myeloid cells (including Macrophages, Dendritic cells, Monocytes and Neutrophils) and non-immune stromal cells (NIS, including fibroblasts, mesenchymal stem cells and adipocytes).",
+                                "4) Run separation algorithm. The output of the algorithm includes the following files: CT\u2014cell types identified, Gres\u2014estimated separated cell type gene expression signatures, Cres\u2014estimated cell type proportions per sample. In this example, the algorithm was applied separately to each dataset. Thus, the outputs CT, Gres and Cres were generated for each of the 26 datasets, but analyzed collectively.",
+                                "5) Analyze algorithm output. For example, correlation of Cres to patient clinical parameters and gene expression and pathway analysis of Gres. In this example, we calculated overall average numbers of cell types in breast cancer primary tumors (FIG. 12) and performed correlations of Cres outputs with patients' clinical parameters (FIG. 13)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "download and prepare heterogeneous tissues dataset",
+                                "collect and prepare reference signatures",
+                                "prepare input files for separation algorithm",
+                                "run separation algorithm and analyze output"
+                            ],
+                            "num_characters": 2314,
+                            "outline_medium": [
+                                "describe application of separation algorithm",
+                                "analyze algorithm output"
+                            ],
+                            "outline_short": [
+                                "apply separation algorithm to breast cancer microarrays"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of identifying cell-type, signatures and proportions in a heterogeneous tissue sample that includes multiple cell types, comprising the steps of:\nproviding purified reference signatures for each of the cell types suspected to exist in the sample;\nobtaining an initial estimate of expression profiles for each cell-type;\nestimating the true number of cell types using the symmetric Kullback-Leibler divergence (SKLD) between each of the estimated cell-type profiles and the initial cell-type reference signatures, where the closest estimated profiles are then chosen as the final cell-type specific separated signatures; and\ncomputing the cell-type proportions per sample, using the method of non-negative least squares (NNLS).",
+        "2. The method of claim 1, wherein the initial estimate of expression profiles is obtained using non-negative matrix factorization.",
+        "3. The method of claim 1, further comprising, prior to providing purified reference signatures, the step of estimating of the numbers and identities of the cell types in the tissue sample.",
+        "4. The method of claim 1, wherein the purified reference signatures are collected from a public database for those cell types suspected to exist in the tissue sample.",
+        "5. The method of claim 4, wherein the public database is the Gene Expression Omnibus.",
+        "6. The method of claim 1, wherein the steps are repeated with random initializations, and the results are pooled.",
+        "7. The method of claim 1, wherein input reference signatures are grouped into one or more classes of cell type.",
+        "8. A method of identifying components in a mixture from gene expression microarrays, their signatures and proportions in a heterogeneous sample that includes multiple cell types in a tissue, multiple tissues in a mixture of tissues and more, comprising the steps of:\nproviding purified reference signatures for each of the cell types suspected to exist in the sample;\nobtaining an initial estimate of expression profiles for each cell-type by using non-negative matrix factorization;\nestimating the true number of cell types by measuring the distance between each of the estimated cell-type profiles and the initial input cell-type reference signatures, where the closest estimated profiles are then chosen as the final cell-types;\ncomputing the cell-type proportions per sample, using the method of non-negative least squares (NNLS);\nrepeating the preceding steps at least once and averaging the results obtained thereby.",
+        "9. The method of claim 8, wherein the initial estimate is obtained by using non-negative matrix factorization.",
+        "10. The method of claim 8, further comprising, prior to providing purified reference signatures, the step of estimating of the numbers and identities of the cell types in the tissue sample."
+    ]
+}

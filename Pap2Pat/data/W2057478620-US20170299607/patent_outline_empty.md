@@ -1,0 +1,64 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+### Gestational Trophoblastic Diseases
+
+### Hyperemesis Gravidarum
+
+### Pre-Eclampsia
+
+### Multiple Pregnancy.
+
+### Spontaneous Abortion or Miscarriage
+
+### Embryo/Early Pregnancy
+
+## EXAMPLE 1 GESTATIONAL TROPHOBLASTIC DISEASE
+
+### Results
+
+## EXAMPLE 2 HYPEREMESIS GRAVIDARUM
+
+### Results
+
+## EXAMPLE 3 PRE-ECLAMPSIA
+
+## EXAMPLE 4 EMBRYO/EARLY PREGNANCY
+
+### Results
+
+## EXAMPLE 5 PREDICTING PREGNANCY OUTCOMES USING A NON-INVASIVE ANALYSIS OF SECRETOME PARAMETERS IN SPENT BLASTOCYST CULTURE MEDIA USING MALDI-TOF MS
+
+### Study Design, Size, Duration:
+
+### Materials, Settings and Methods:
+
+### Main Results and the Role of Chance:
+
+## EXAMPLE 6 SPONTANEOUS ABORTION/MISCARRIAGE
+
+### Materials, Settings and Methods:
+
+### Main Results and the Role of Chance:
+
+## EXAMPLE 7 MULTIPLE VS SINGLETON PREGNANCIES
+
+### Study Design, Size, Duration:
+
+### Materials, Settings and Methods:
+
+## EXAMPLE 8 NON-INVASIVE ANALYSIS OF SECRETOME PARAMETERS IN SPENT BLASTOCYST CULTURE MEDIA USING MALDI-TOF MS TO IDENTIFY ANEUPLOIDY: POTENTIAL ALTERNATIVE TO PREIMPLANTATION GENETIC SCREENING
+
+### Objective:
+
+### Design:
+
+### Materials and Methods:
+
+### Results:
+
+### Conclusion:
+
+### EXAMPLE 9 NON-INVASIVE ANALYSIS OF SECRETOME PARAMETERS IN SPENT BLASTOCYST CULTURE MEDIA USING MALDI-TOF MS CORRELATES WITH BLASTOCYST GRADING AND PREGNANCY OUTCOME
+

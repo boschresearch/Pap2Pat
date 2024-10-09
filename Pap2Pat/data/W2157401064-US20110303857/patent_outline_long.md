@@ -1,0 +1,66 @@
+# DESCRIPTION
+
+- introduce beam scanning
+- advantage of particle beams
+- describe volumetric scanning
+- define spot-scan method
+- define pixel-scan method
+- define grid scanning
+- define continuous scanning methods
+- define uniform scanning
+- describe beam path
+- measure beam position
+- measure beam intensity
+- use measurements for control
+- make corrections during irradiation
+- interrupt irradiation if necessary
+- adjust beam intensity for measurements
+- state objective of the invention
+- describe method of the invention
+- measure parameters once per target point
+- change beam as a function of measured parameters
+- describe dependent claims
+- observe measurement time
+- limit scanning velocity
+- describe preferred embodiments
+- measure intensity faster than position
+- determine scanning velocity based on intensity
+- describe rescanning method
+- use rescanning for moved targets
+- measure parameters for multiple target points
+- describe asynchronous measurement of beam position and intensity
+- motivate time control for applying specific dose
+- describe consideration of extraction profile for beam source
+- describe scanning velocity selection based on extraction profile
+- describe position measurement with detector types
+- describe beam width determination by separate module
+- describe irradiation device with measuring device and sequence control system
+- describe sequence control system functions
+- describe irradiation device components
+- describe position and intensity measurement devices
+- describe control system for irradiation device
+- describe modification of position measuring device
+- describe target volume and irradiation device components
+- describe grid scanning method
+- describe particle beam lateral and longitudinal impact
+- describe sequence control system functions
+- describe particle counter and position detector functions
+- describe measurement timing and redundancy
+- describe rescanning method
+- describe layer-by-layer approach of screen dots
+- describe measures for determining beam position or intensity
+- describe at most one position measurement per screen dot
+- describe at most one intensity measurement per screen dot
+- describe control of irradiation procedure according to beam intensity
+- describe performance of measurements according to fixed intervals
+- describe coordination of intervals for screen dots
+- describe averaging measurement over several screen dots
+- describe taking into consideration ionization in detector gas
+- describe timing of irradiation with position measurement
+- describe taking into consideration extraction profile in timing
+- describe measuring beam position near beam source
+- describe measuring beam width with separate module
+- describe connecting measuring devices in series
+- describe measures concerning changes of beam resulting from position or intensity determination
+- describe interrupting or correcting irradiation process based on measured position or intensity
+

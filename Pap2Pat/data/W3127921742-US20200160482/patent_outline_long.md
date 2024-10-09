@@ -1,0 +1,147 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- define field of disclosure
+
+## BACKGROUND
+
+- introduce imaging and vision systems
+- describe traditional vision system limitations
+- motivate near-sensor processing
+- describe near-sensor vision system
+- highlight temperature sensitivity limitations
+
+## SUMMARY
+
+- introduce fidelity-driven runtime thermal management
+- motivate near-sensor processing
+- describe thermal implications of near-sensor processing
+- propose thermal management control policies
+- describe runtime controller functionality
+- introduce vision system embodiment
+- introduce method for thermally managing vision system
+- introduce vision circuitry embodiment
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments of the disclosure
+- define terms used in the disclosure
+- describe the structure of the document
+- motivate near-sensor processing
+- describe limitations of traditional vision processing
+- introduce 3D stacked image sensors with near-sensor VPUs
+- characterize thermal implications of near-sensor processing
+- describe the relationship between near-sensor processing power and sensor temperature
+- relate near-sensor processing power to image fidelity through temperature simulation
+- observe the effect of removing near-sensor processing power on sensor temperature
+- describe the application of near-sensor processing to vision/imaging applications
+- introduce a lifelogger case study
+- describe the thermal implications of using 3D stacked vision sensors with near-sensor VPUs
+- study the relationship of near-sensor processing with system energy, sensor element temperature, and image noise
+- confirm that near-sensor processing minimizes off-chip data movements
+- relate near-sensor processing power to image fidelity through temperature simulation
+- observe the effect of removing near-sensor processing power on sensor temperature
+- describe the construction of a coarse energy profile model
+- motivate the need for near-sensor processing
+- describe sensing, processing, and storage energy consumption
+- describe communication interface energy consumption
+- construct a linear-regression model to estimate energy per pixel
+- describe the energy model for traditional vision systems
+- compare power estimates of several example systems
+- describe the near-sensor vision system
+- describe the 3D stacked vision sensor package
+- describe the thermal RC model of the 3D stacked vision sensor package
+- derive RC component values for the thermal RC model
+- describe the thermal behavior of near-sensor processing architectures
+- simulate temperature profiles of the sensor element junction and the 3D stacked vision sensor package
+- evaluate the thermal behavior of near-sensor processing architectures
+- describe the application of thermal management control policies
+- introduce stop-capture-go and seasonal migration control policies
+- describe the runtime controller (Stagioni)
+- evaluate the effectiveness of the control policies
+- demonstrate the robustness of the embodiments
+- describe the implications of near-sensor processing for vision/imaging applications
+- introduce a lifelogger case study
+- describe the thermal implications of using 3D stacked vision sensors with near-sensor VPUs
+- relate near-sensor processing power to image fidelity through temperature simulation
+- conclude the detailed description
+- introduce thermal management for 3D stacked vision sensor
+- describe inter-layer resistances and power consumption
+- explain steady-state temperature and transient temperature
+- illustrate transient temperature with FIG. 3A
+- expand on transient temperature with FIG. 3B
+- discuss thermal characterization of sensor element
+- illustrate noise sensitivity to temperature, exposure, and ISO with FIG. 4
+- explain influence of noise on vision tasks
+- discuss need for high fidelity images
+- describe thermal characterization experiment
+- illustrate thermal noise with FIG. 5A and FIG. 5B
+- analyze histograms of images with FIG. 5C
+- summarize insights for near-sensor processing
+- motivate need for novel dynamic thermal management strategies
+- introduce imaging-specific control policies for thermal management
+- discuss limitations of traditional DTM mechanisms
+- introduce two potential control policies: stop-capture-go and seasonal migration
+- outline principles for managing sensor temperature
+- explain situational temperature regulation
+- explain on-demand fidelity
+- explain system power minimization through duty cycle
+- discuss vision task requirements and temperature management
+- illustrate power consumption at various duty cycles with FIG. 6
+- model average system power
+- discuss tradeoff between duty cycle and frequency of switches
+- introduce stop-capture-go technique for near-sensor processing
+- explain temporal slack and capture fidelity regulation
+- conclude stop-go techniques are architecturally simple
+- introduce stop-capture-go policy
+- motivate temperature regulation
+- describe policy parameters
+- discuss limitations of stop-capture-go
+- introduce seasonal migration policy
+- describe policy parameters
+- discuss thermal isolation
+- derive duty cycle and frequency of migration
+- discuss implementation considerations
+- introduce Stagioni runtime controller
+- describe API for application-specific fidelity needs
+- discuss runtime controller operation
+- describe message passing scheme
+- illustrate process for thermally managing vision system
+- introduce simulation framework
+- describe emulation framework
+- evaluate control policies
+- discuss vision tasks
+- describe metrics and policies
+- discuss environment conditions
+- illustrate power impact of policies
+- discuss power savings
+- discuss latency overhead
+- illustrate situational awareness features
+- discuss ambient temperature effects
+- discuss lighting condition effects
+- list power profile of VPU choices
+- discuss fine-grained temperature management
+- discuss enhancing near-sensor burst performance
+- discuss stacked sensor architecture design/validation
+- motivate near-sensor processing
+- discuss characterization of temperature drop
+- introduce design principles for thermal management
+- discuss Stagioni runtime controller implementation
+- discuss significance of work
+- discuss future directions
+- describe FIG. 7
+- describe FIG. 8A
+- describe FIG. 8B
+- describe FIG. 9A
+- describe FIG. 9B
+- describe FIG. 10A
+- describe FIG. 10B
+- discuss Table 3
+- discuss extensions to preferred embodiments
+- discuss improvements and modifications
+- discuss scope of concepts disclosed
+- discuss claims
+- discuss significance of disclosure
+- conclude disclosure
+

@@ -1,0 +1,142 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+- introduce Brachyspira hyodysenteriae genes and proteins
+
+## BACKGROUND OF INVENTION
+
+- describe swine dysentery disease
+- discuss economic impact of swine dysentery
+- introduce Brachyspira hyodysenteriae as causative agent
+- describe disease spectrum and transmission
+- discuss limitations of current diagnostic tests
+- motivate need for new diagnostic tools
+- discuss limitations of current vaccines
+- introduce recombinant subunit vaccines as alternative
+- summarize previous attempts at vaccine development
+
+## BRIEF SUMMARY OF INVENTION
+
+- state objects of invention
+- describe novel genes and proteins
+- outline therapeutic and diagnostic uses
+- specify nucleotide sequences
+- describe plasmids and expression vectors
+- outline proteins and homologous sequences
+- describe diagnostic kits and monoclonal antibodies
+- outline methods of preventing or treating infections
+- describe methods of generating immune responses
+
+## DETAILED SUMMARY OF INVENTION
+
+- define articles
+- define amino acid
+- define animal
+- define conserved residue
+- define fusion protein
+- define isolated polypeptide
+- define isolated nucleic acid
+- define nucleic acid
+- define nucleic acid of the invention
+- define operably linked
+- define polypeptide
+- define polypeptide fragment
+- define polypeptide of the invention
+- define functional equivalents
+- define purified
+- define recombinant protein
+- define regulatory sequence
+- define sequence homology and solubility
+- define specifically hybridizes
+- motivate stringent conditions
+- describe Tm calculation
+- explain hybridization procedure
+- detail wash steps
+- define vector
+- describe expression vectors
+- outline diagnostic reagent use
+- detail detection method
+- describe expression vector design
+- outline pharmaceutical agent use
+- describe nucleic acid vaccine technology
+- detail bacterial expression vectors
+- describe viral vectors
+- outline polypeptide expression
+- describe host cell transfection
+- detail polypeptide production
+- describe fusion proteins
+- motivate purification methods
+- describe fusion gene construction
+- describe nucleic acid immobilization
+- describe isolated polypeptides
+- describe biological properties of polypeptides
+- describe polypeptide preparation methods
+- describe polypeptide analogues
+- describe immunogen use
+- define antigenic molecules
+- define antibodies
+- describe antibody preparation methods
+- describe adjuvants
+- describe diagnostic methods
+- describe diagnostic kits
+- define antibody types
+- describe detection methods
+- outline procedures A, B, and C
+- explain complex formation and detection
+- define Ab1 and Ab2
+- list detectable labels
+- describe method for detecting antibodies
+- outline in vitro methods for evaluating antibody levels
+- describe methods for detecting B. hyodysenteriae
+- outline probe technology for detecting polynucleotide sequences
+- describe immobilization of polynucleotide sequences on solid phase support
+- describe solid substrate
+- specify substrate material
+- detail substrate surface
+- divide substrate into sections
+- attach polynucleotide sequences
+- bind complementary sequences
+- provide prophylactic or therapeutic
+- formulate pharmaceutical composition
+- administer pharmaceutical composition
+- optimize polynucleotides for plant expression
+- use polynucleotide sequences for disease modulation
+- provide kits for screening animals
+- describe diagnostic test kit components
+- describe preparation of genomic library
+- describe genomic sequencing
+- describe annotation
+- describe bioinformatics results
+- describe vaccine candidates
+- describe DNA and amino acid sequences
+- describe analysis of gene distribution using PCR
+- describe primer design and optimization
+- describe PCR conditions and cycling
+- describe PCR product analysis
+- describe gene distribution analysis
+- describe results of gene distribution analysis
+- summarize gene distribution
+- extract plasmid DNA
+- prepare vector
+- design primers
+- amplify gene inserts
+- digest gene inserts
+- ligate gene inserts into vector
+- transform E. coli cells
+- detect recombinant constructs
+- express recombinant proteins
+- analyze proteins by SDS-PAGE and Western blot
+- describe electrophoretic transfer of proteins
+- verify reading frame of recombinant constructs
+- express and purify recombinant his-tagged proteins
+- dialyze and lyophilize purified proteins
+- perform serology using purified recombinant protein
+- vaccinate mice using purified recombinant proteins
+- perform western blot analysis
+- vaccinate pigs using purified recombinant proteins
+- develop diagnostic kit
+- describe experimental results
+- discuss implications of results
+- provide general statement on scope of invention
+

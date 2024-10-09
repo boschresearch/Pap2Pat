@@ -1,0 +1,167 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- limitations of sintering techniques
+
+## SUMMARY
+
+- motivate nanocrystalline alloy
+- introduce sintering method
+- embodiment of sintering method
+- embodiment of sintered alloy
+- summarize combinations
+
+## DETAILED DESCRIPTION
+
+- introduce nanocrystalline metals
+- describe desirable properties
+- present mechanical test data on nanocrystalline Ni—W alloys
+- discuss grain size effect on hardness and activation volume
+- motivate control over grain size
+- define nanocrystalline materials
+- describe grain size regimes
+- introduce ultra-fine grain and nanocrystalline grain terms
+- describe grain geometry
+- describe particulate shape
+- introduce nanocrystalline alloy composition
+- describe metal element selection
+- introduce activator and stabilizer materials
+- describe relative density
+- define bulk nanocrystalline alloy
+- discuss instability of nanocrystalline microstructure
+- introduce Gibbs free energy equation
+- discuss grain growth limitation
+- introduce kinetic and thermodynamic approaches
+- describe kinetic approach limitations
+- introduce thermodynamic approach
+- describe Gibbs adsorption equation
+- discuss grain boundary energy reduction
+- introduce nanocrystalline tungsten
+- describe localized shearing under high rate loading
+- introduce bottom-up and top-down methodologies
+- describe severe plastic deformation techniques
+- discuss limitations of SPD techniques
+- introduce two-step bottom-up method
+- discuss volume defects in bottom-up method
+- introduce additive elements for stabilization
+- discuss ΔHseg importance
+- describe atomic radius mismatch effect
+- introduce segregation strength consideration
+- discuss thermal stability determination
+- introduce activated sintering of tungsten
+- describe additive element effect on sintering kinetics
+- discuss dislocation climb mechanism
+- introduce electron transfer mechanism
+- describe grain boundary diffusion enhancement
+- discuss sintering kinetics
+- introduce generalized sintering equation
+- describe instantaneous densification rate
+- discuss thermodynamic stabilization of tungsten alloys
+- introduce stabilizer and activator elements
+- describe thermodynamic stability at high temperatures
+- discuss sintering temperature reduction
+- define stabilizer element
+- describe properties of stabilizer element
+- specify amount of stabilizer element
+- introduce activator elements
+- describe properties of activator elements
+- specify amount of activator elements
+- describe selection of activator elements
+- describe role of activator elements in sintering
+- describe interaction between activator and stabilizer elements
+- specify conditions for activator and stabilizer elements
+- describe use of single element as both activator and stabilizer
+- specify metal elements as activator and stabilizer
+- describe phase diagrams for activator and stabilizer elements
+- analyze interaction between activator and stabilizer elements
+- describe importance of amount of additives
+- illustrate embodiments of activator and stabilizer elements
+- describe phase diagrams for activator and stabilizer elements
+- analyze formation of intermetallic compounds
+- describe liquid phase sintering
+- specify conditions for liquid phase sintering
+- describe advantages of liquid phase sintering
+- specify alloy systems for liquid phase sintering
+- describe microstructural coarsening
+- specify role of stabilizer in preventing coarsening
+- describe detection of liquid phase sintering
+- illustrate pore filling mechanism
+- introduce sintered nanocrystalline alloys
+- describe production process
+- define non-equilibrium phase
+- describe decomposition of non-equilibrium phase
+- describe formation of phase rich in second metal material
+- describe effect of second metal material on sintering kinetics
+- describe properties of sintered nanocrystalline alloy
+- describe relative density of sintered material
+- describe grain size of sintered nanocrystalline alloy
+- describe sintering conditions
+- describe process for making nanocrystalline particulates
+- describe mechanical working of powder
+- describe ball-milling process
+- describe calculation of average grain size
+- describe XRD patterns
+- describe ball-milling time
+- describe contamination of tungsten powder
+- describe grain size of produced nanocrystalline particulates
+- describe polycrystalline and single crystalline materials
+- describe non-equilibrium phase and supersaturated phase
+- describe sintering behavior of particulate material
+- describe liquid phase sintering mechanism
+- introduce master sintering curve
+- describe integral of instantaneous linear shrinkage rate
+- describe surface energy and atomic volume
+- describe volume diffusion and grain-boundary diffusion
+- describe rearrangement of equation
+- describe estimation of activation energy
+
+### Non-Limiting Working Examples
+
+- introduce tungsten powder
+- describe ball milling process
+- form nanocrystalline tungsten
+- compact into green cylindrical disk compacts
+- measure change in dimensions using thermodilatometer
+- describe sintering atmosphere
+- discuss effect of hydrogen-containing atmospheres
+- discuss effect of vacuum atmospheres
+- discuss effect of argon atmosphere
+- propose volatile vapor phase oxide hydrate theory
+- introduce non-isothermal heating techniques
+- describe constant rate of heating technique
+- list various heating rates
+- introduce isothermal heating method
+- introduce Example 1
+- ball mill tungsten powder with 20 at % Cr
+- analyze XRD peaks
+- measure grain size and Cr dissolution
+- show sintering temperature reduction
+- achieve densification of 91%
+- measure grain size at various temperatures
+- show structure of material after sintering
+- observe transition in sintering mechanism
+- determine sintering activation energy
+- introduce Example 2
+- ball mill tungsten powder with 15 at % Cr
+- analyze XRD peaks and peak shift
+- measure Cr dissolution and densification
+- determine sintering activation energy
+- introduce Example 3
+- ball mill tungsten powder with 20 at % Ti
+- show inferior sintering behavior
+- introduce Example 4
+- ball mill tungsten powder with various Cr contents
+- show optimal Cr content for sintering
+- introduce Example 5
+- ball mill W-Ti-Cr powder mixture
+- show sintering behavior and nanostructure
+- introduce Example 6
+- ball mill W-Cr powder mixture
+- show Cr-rich phase precipitation
+- show neck formation between particles
+- introduce Example 7
+- ball mill Cr-Ni powder mixture
+- show relative density changes and microstructure
+- determine sintering activation energy
+

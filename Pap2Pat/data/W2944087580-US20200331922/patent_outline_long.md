@@ -1,0 +1,604 @@
+# DESCRIPTION
+
+- introduce compounds as LOX and LOXL family members inhibitors
+
+## BACKGROUND
+
+- define LOX and its role in ECM
+- describe LOX catalytic mechanism
+- introduce LOX family members
+- discuss LOX role in tissue remodelling
+- discuss LOX role in primary cancer and metastasis
+- describe LOX expression in various cancers
+- discuss LOX association with metastasis and patient survival
+- introduce LOXL2 and its role in cross-linking
+- describe LOXL2 expression in various cancers
+- discuss LOXL1 and its role in metastatic NSCLC
+- describe LOXL3 and its role in EMT process
+- introduce LOXL4 and its role in metastasis
+- discuss LOX and LOXL implication in fibrotic diseases
+- discuss LOX implication in cardiovascular disease
+- discuss LOX association with Alzheimer's disease
+- discuss LOXLs implication in pulmonary diseases
+- discuss LOX inhibition in ocular conditions
+- discuss LOX implication in inflammatory conditions
+- discuss LOX implication in obesity and endometriosis
+
+## BRIEF SUMMARY OF THE DISCLOSURE
+
+- define compound of formula I
+- specify ring A
+- define R1
+- specify o
+- define RA1 and RA2
+- define RA3 and RA4
+- specify n
+- define group
+- specify Z
+- define L1
+- define R2
+- define R3
+- specify embodiments of R1
+- specify embodiments of group
+- specify embodiments of R3
+- specify embodiments of ring A
+- specify embodiments of compound of formula I
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define n options
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define R1 options
+- define RA1 options
+- define RA1 options
+- define RA1 options
+- define R1 position
+- define R1 substitution
+- define RA1 and RA2 options
+- define Z options
+- define L1 options
+- define compounds of formula (I)
+- specify R1 in embodiments
+- specify R1 in more embodiments
+- specify R1 in even more embodiments
+- specify R2 in embodiments
+- specify RB1 and RB2 in embodiments
+- specify RB1 and RB2 in more embodiments
+- specify R2 in more embodiments
+- specify R2 in even more embodiments
+- specify R2 in additional embodiments
+- specify R2 in further embodiments
+- specify R2 in other embodiments
+- specify R2 in more embodiments
+- specify R2 in additional embodiments
+- specify R2 in further embodiments
+- specify R2 in other embodiments
+- specify R2 in more embodiments
+- specify R2 in additional embodiments
+- specify R2 in further embodiments
+- specify R2 in other embodiments
+- define R2
+- define R2 with heteroatoms
+- define R2 with heteroaryl
+- define R2 with unsubstituted heteroaryl
+- define R2 with unsubstituted pyridyl
+- define R2 with C1-6 alkyl and heterocyclyl
+- define R2 with C1-6 alkyl and 6-membered heterocyclyl
+- define R2 with ethyl and 6-membered heterocyclyl
+- define R2 with ethyl and pyridyl
+- define R2 with ethyl and imidazole
+- define R2 with optionally substituted aryl
+- define R2 with unsubstituted aryl
+- define R2 with substituted aryl
+- define R2 with phenyl
+- define R2 with phenyl and ORA1
+- define R2 with phenyl and OCH3
+- define R2 with phenyl and halo
+- define R2 with phenyl and F
+- define R2 with thiomorpholinedioxide
+- define compound of formula (I) with formula (XIIIa) or (XIIIb)
+- define compound of formula (I) with formula (XIVa), (XIVb), (XIVc) or (XIVd)
+- define R3 with homopiperazine ring
+- define R3 as H
+- define R3 with substituents
+- define ring A with substituents
+- define ring A with R1 and substituents
+- define ring A with R1 and substituents
+- define ring A with R1 and substituents
+- define Z with substituents
+- define Z with substituents and L1
+- define Z with substituents and L1
+- define compound of formula (I) with specific groups
+
+## DETAILED DESCRIPTION
+
+### Definitions
+
+- define treating and treatment
+- define therapeutically effective amount
+- define halo and halogen
+- define Cm-n
+- define C1-6 alkyl
+- define alkylene groups
+- define C1-6 haloalkyl
+- define C2-6 alkenyl
+- define C2-6 alkynyl
+- define C3-6 cycloalkyl
+- define heterocyclyl, heterocyclic, and heterocycle
+- describe monocyclic heterocyclic rings
+- describe bicyclic heterocycles
+- describe bridged ring systems
+- describe spiro bi-cyclic ring systems
+- define heterocyclyl-Cm-n alkyl
+- define aromatic
+- define aryl
+- define heteroaryl
+- describe monocyclic and bicyclic heteroaryl groups
+- describe partially aromatic heteroaryl groups
+- describe five-membered heteroaryl groups
+- describe six-membered heteroaryl groups
+- describe bicyclic heteroaryl groups with a six-membered ring fused to a five-membered ring
+- describe bicyclic heteroaryl groups with two fused six-membered rings
+- define heteroaryl-Cm-n alkyl-
+- define optionally substituted
+- describe optional substituents
+- describe bond notation
+- define ortho, meta, and para substitution
+- define acyl group
+- clarify meaning of "comprise" and "contain"
+- clarify meaning of singular and plural
+- describe applicability of features to other aspects
+- describe combination of features and steps
+- incorporate contents of concurrently filed papers
+- describe molecular weight of compounds
+- describe suitable features of compounds
+- contemplate pharmaceutically acceptable salts
+- list examples of acid addition salts
+- list examples of base salts
+- describe preparation of pharmaceutically acceptable salts
+- describe methods for preparing salts
+- describe degree of ionisation in salts
+- define isomers, stereoisomers, diastereomers, and enantiomers
+- describe chiral compounds and stereoisomers
+- describe enantiomeric excess
+- describe determination of stereochemistry
+- describe isotopically-labelled compounds
+- describe solvated and unsolvated forms
+- describe polymorphism
+- describe tautomeric forms
+- describe in vivo effects of compounds
+- describe metabolites
+- incorporate contents of concurrently filed papers
+- describe preparation of compounds
+- describe isolation and purification of compounds
+- describe crystalline and amorphous forms
+
+### Pharmaceutical Compositions
+
+- define pharmaceutical formulation
+- reference conventional procedures
+- list forms for administration
+- describe composition preparation
+- define effective amount for therapy
+- specify dosage form amounts
+- outline administration guidelines
+
+### Therapeutic Uses and Applications
+
+- provide compound for use as medicament
+- provide compound for treatment of disease mediated by LOX
+- provide use of compound in manufacture of medicament
+- provide method of treating disease mediated by LOX
+- clarify reference to treatment of disease mediated by LOX
+- provide compound for use in treatment of certain diseases or conditions
+- provide compound for selective inhibition of LOX
+- provide compound for inhibition of two or more members of LOX family
+- provide compound for treatment of proliferative disease
+- discuss role of LOX in primary cancer and metastasis
+- summarize evidence supporting role of LOX in primary tumour growth and metastasis
+- discuss LOXL2 and its involvement in cross-linking of extracellular collagens and elastin
+- summarize LOXL2 expression in various carcinomas
+- discuss association of LOXL2 with poor prognosis and metastases
+- discuss LOXL2 up-regulation and invasiveness of breast cancer cells
+- discuss LOXL2 and LOXL4 in metastatic niche formation
+- discuss LOXL2 expression in cholangiocarcinoma and HCC
+- discuss regulation of LOXL2 transcription by HIF-1
+- discuss LOXL2 and EMT
+- discuss LOXL2 and Src/FAK pathway activation
+- discuss LOXL2 as therapeutic target for treatment of primary and metastatic cancer
+- discuss role of LOX in cancer metastasis
+- summarize evidence supporting association of LOX with metastasis and poor survival
+- discuss inhibition of LOX and its effect on metastasis
+- discuss LOX regulation of invasion of cancer cells in vitro
+- introduce LOX function
+- LOX in tumour cell metastasis
+- LOX in niche conditioning
+- LOX in metastatic growth
+- LOX in cancer cell survival
+- LOX in phosphorylation of FAK
+- LOX in collagen cross-linking
+- LOX in cell proliferation and invasion
+- LOX in host response to tumour surgery
+- LOX inhibitor for cancer treatment
+- LOX inhibitor for motility of tumour cells
+- LOX inhibitor for dissemination and invasiveness
+- LOX inhibitor for anti-invasive agent
+- LOX inhibitor for prevention of cancer metastasis
+- introduce LOX family and fibroblasts
+- LOX family in extracellular matrix remodelling
+- LOX family in desmoplasia
+- LOX family in tumour ECM and stroma
+- LOX family in tumour progression and metastasis
+- LOX inhibitor for desmoplasia treatment
+- LOX inhibitor for cancer treatment (various types)
+- LOX inhibitor for myeloma and multiple myeloma
+- LOX inhibitor for hematopoietic tumours
+- LOX inhibitor for lymphomas
+- LOX inhibitor for solid tumours of nervous system
+- LOX inhibitor for melanoma and uveal melanoma
+- LOX inhibitor for mixed types of cancer
+- LOX inhibitor for benign proliferative disease
+- LOX inhibitor for fibrotic diseases
+- LOX in renal fibrosis
+- LOX in lung fibrosis
+- LOX in liver fibrosis
+- LOX in fibrotic disorders (various types)
+- LOX inhibitor for fibrotic disorders (various types)
+- LOX in angiogenesis and vasculature permeability
+- LOX in tumour angiogenesis
+- LOX inhibitor for anti-angiogenic agent and vascular normalisation
+- introduce therapeutic uses and applications
+- describe treatment of ischemia and related diseases
+- describe treatment of age-related macular degeneration
+- describe treatment of inflammatory disorders
+- describe treatment of acute inflammation
+- describe treatment of chronic inflammatory disease
+- describe treatment of rheumatoid arthritis and related diseases
+- describe treatment of psoriasis and related diseases
+- describe treatment of cardiovascular disease
+- describe treatment of atherosclerosis
+- describe treatment of myocardial fibrosis
+- describe treatment of neurological conditions
+- describe treatment of Alzheimer's disease
+- describe treatment of nerve damage
+- describe treatment of pulmonary diseases
+- describe treatment of primary alveolar proteinosis
+- describe treatment of bronchopulmonary dysplasia
+- describe treatment of eye diseases
+- describe treatment of glaucoma
+- describe treatment of age-related macular degeneration
+- describe treatment of other diseases
+- describe treatment of obesity
+- describe treatment of bacterial infections
+- describe treatment of parasitic infections
+- describe treatment of EGFR mediated conditions
+- describe treatment of cancer
+- describe treatment of viral infections
+- describe treatment of Chlamydia infection
+- describe treatment of genetic skin disorders
+- relate LOX to EGFR
+- describe use of LOX inhibitor in cancer treatment
+- describe method of treating cancer with LOX inhibitor
+- describe determining EGFR level in biological sample
+- describe determining MATN2, pSMAD2, or HTRA1 level in biological sample
+- describe method of increasing sensitivity rate of LOX inhibitor
+- describe method of identifying subject with increased likelihood of responsiveness
+- describe method of identifying subject with responsiveness
+- describe method of determining treatment regimen
+- describe LOX inhibitor downregulating MATN2 and/or activating SMAD2
+- describe LOX inhibitor downregulating HTRA1
+- describe LOX inhibitor inhibiting maturation of lysyl oxidase
+- describe LOX inhibitor not inhibiting MAO-A and/or MAO-B
+
+### Biomarkers
+
+- introduce LOX inhibition therapy
+- advantage of targeted therapy
+- define LOX inhibitor
+- source of lysyl oxidase
+- assess enzymatic activity
+- detect lysyl oxidase byproducts
+- define inhibitor of lysyl oxidase
+- quantify tumor inhibition
+- assess lysyl oxidase expression
+- use promoter analysis
+- inhibit LOX by mRNA degradation
+- use LOX inhibitor compounds
+- predict response to LOX inhibition therapy
+- define biomarker
+- use biomarkers for diagnosis and prognosis
+- define target molecule
+- measure target molecule level
+- define elevated level
+- assess target molecule level
+- use control samples
+- define favourable response
+- treat or prophylaxis
+- relieve or attenuate disease
+- define target molecule types
+- use binding partners
+- select specific binding partners
+- use multiple target molecules
+- use EGFR biomarker
+- use MATN2 biomarker
+- use HTRA1 biomarker
+- use pSMAD2 biomarker
+- identify expression signature
+- increase sensitivity rate
+- investigate target molecule level
+- use immunological methods
+- use labelled binding partners
+- use nucleic acid binding partners
+- use transcriptome analysis
+- provide kits for biomarker methods
+- define biomarkers
+- specify elevated levels of biomarkers
+- describe quantitative and qualitative outputs
+- involve physiological measurements
+- treat cancer with LOX inhibitor
+- treat cancer with LOX inhibitor (alternative)
+- treat cancer with LOX inhibitor (alternative)
+- treat cancer with LOX inhibitor (alternative)
+- describe LOX inhibitors' utility
+- relate to lysyl oxidase inhibitor for cancer treatment
+- relate to use of lysyl oxidase inhibitor for cancer treatment
+- relate to method of treating or preventing cancer
+- optionally determine EGFR level
+- define EGFR overexpression
+- describe EGFR overexpression measurement
+- classify EGFR expression levels
+- determine EGFR overexpression using IHC assay
+- optionally determine MATN2 and pSMAD2 levels
+- select cancer types
+- inhibit maturation and catalytic activity of lysyl oxidase
+- not inhibit MAO-A and/or MAO-B
+- not inhibit DAO and/or hERG
+- increase sensitivity rate of LOX inhibitor
+- determine treatment regimen
+- define MATN2
+- describe MATN2's effect on EGFR
+- downregulate MATN2 expression
+- use MATN2 as biomarker
+- identify subject with responsiveness to LOX inhibitor
+- determine treatment regimen using MATN2
+- describe SMAD2 and HTRA1
+
+### In Vitro Methods
+
+- describe in vitro methods for internalising EGFR or reducing EGFR expression
+
+### Combination Therapies e.g. for the Treatment of Cancer
+
+- motivate LOX inhibition for improving efficacy of other drugs
+- describe LOX inhibition with siRNA
+- describe LOX inhibition with chemotherapeutic drugs
+- describe LOX inhibition with radiation
+- describe LOX inhibition for reducing side effects
+- describe LOX and LOXL2 inhibition for altering vascular permeability
+- describe LOX inhibition for improving drug delivery
+- describe LOX inhibition for reversing resistance to chemotherapeutics
+- describe LOX inhibition for improving therapeutic response
+- describe LOX inhibition for synergizing with gemcitabine
+- describe LOX inhibition for improving outcome in surgically resectable disease
+- describe compounds of the invention for use alone or in combination
+- list categories of anti-cancer agents
+- describe antiproliferative/antineoplastic drugs
+- describe antimetabolites
+- describe antibiotics
+- describe antimitotic agents
+- describe proteasome inhibitors
+- describe interferon therapy
+- describe topoisomerase inhibitors
+- describe cytostatic agents
+- describe anti-invasion agents
+- describe inhibitors of growth factor function
+- describe inhibitors of fibroblasts growth factor receptor family
+- describe inhibitors of the hepatocyte growth factor family
+- describe inhibitors of the insulin growth factor family
+- describe modulators of protein regulators of cell apoptosis
+- describe inhibitors of the platelet-derived growth factor family
+- describe inhibitors of serine/threonine kinases
+- describe combination treatment with radiotherapy
+
+### Synthesis
+
+- introduce synthetic methods
+- discuss reaction conditions
+- describe necessary starting materials
+- discuss protecting groups
+- provide examples of protecting groups
+- describe deprotection conditions
+- introduce general method for bridged piperidin-4-ones derivatives
+- describe method A
+- provide example of method A
+- describe general methods for bridged homopiperazinone derivatives
+- describe method B (Schmidt reaction)
+- provide example of method B
+- describe purification of resulting residue
+- discuss regioisomers
+- provide example of regioisomers
+- conclude synthesis
+- describe synthesis of compounds B1 and B1b
+- provide NMR and HRMS data for compounds B1 and B1b
+- describe synthesis of intermediate compound using method B
+- provide NMR and HRMS data for intermediate compound
+- describe method C (Beckmann reaction)
+- describe synthesis of compounds using method C
+- provide NMR data for compounds
+- describe synthesis of intermediate compounds using method C
+- describe method D (photochemical rearrangement of oxaziridines using continuous flow chemistry)
+- describe synthesis of oxaziridine using method D
+- describe photochemical rearrangement of oxaziridine using continuous flow chemistry
+- describe synthesis of compound using method D
+- provide NMR data for major isomer of oxaziridine
+- provide HRMS data for major isomer of oxaziridine
+- provide NMR data for minor isomer of oxaziridine
+- provide HRMS data for minor isomer of oxaziridine
+- conclude synthesis of compounds
+- perform photochemical rearrangement
+- describe resulting compounds
+- outline general methods for reduction
+- describe method E
+- apply method E to specific compound
+- describe resulting compound
+- apply method E to another compound
+- describe resulting compound
+- outline alternative method for intermediate
+- describe reduction of bridged homopiperazinone
+- describe resulting compound
+- describe debenzylation reaction
+- describe resulting compound
+- describe intermediate compound
+- describe demethylation reaction
+- describe resulting compound
+- describe alkylation reaction
+- describe synthesis
+- provide NMR data
+- describe synthesis of E11
+- provide NMR data for E11
+- describe synthesis of E12
+- provide NMR data for E12
+- describe method F
+- describe synthesis of F1
+- provide NMR data for F1
+- describe synthesis of F2
+- provide NMR data for F2
+- describe method G
+- describe synthesis of urea compound
+- provide NMR data for urea compound
+- describe synthesis of another urea compound
+- provide NMR data for another urea compound
+- synthesize compound
+- synthesize intermediate
+- synthesize intermediate
+- synthesize target compound
+- describe method H
+- apply method H
+- apply method H
+- synthesize intermediate
+- synthesize intermediate
+- synthesize target compound
+- describe method I
+- apply method I
+- synthesize intermediate
+- synthesize target compound
+- describe method E
+- apply method E
+- synthesize intermediate
+- synthesize target compound
+- describe method G
+- apply method G
+- synthesize intermediate F-6
+- synthesize intermediate F-7
+- describe method J for Boc deprotection and urea formation
+- apply method J to form urea
+- synthesize example 37
+- form acetate
+- oxidize to form aldehyde
+- synthesize example 2
+- form mesylate
+- form oxazole
+- describe general method K for N-alkyl linker synthesis
+- apply method K to form nitrile
+- form hydrochloric acid salt
+- synthesize example 4
+- form nitrile
+- form hydrochloric acid salt
+- synthesize example 5
+- form nitrile
+- form hydrochloric acid salt
+- synthesize example 6
+- form nitrile
+- form hydrochloric acid salt
+- synthesize example 7
+- synthesize compound
+- synthesize compound
+- synthesize compound
+- synthesize compound
+- synthesize compound
+- describe NMR data
+- describe NMR data
+- describe NMR data
+- describe NMR data
+- describe NMR data
+- describe general method for synthesis
+- describe method L
+- synthesize compound using method L
+- describe NMR data
+- describe method M
+- synthesize compound using method M
+- describe NMR data
+- describe synthesis of example compounds
+- describe synthesis of example compounds
+- describe synthesis of example compounds
+- synthesize compound 411
+- synthesize compound 620
+- synthesize compound 320
+- synthesize compound 95
+- synthesize compound 62
+- outline general method N
+- synthesize compound with propylsulfonyl linker
+- describe NMR and HRMS data
+- introduce synthesis of compounds with N-aryl linker
+- describe general method for synthesis
+- outline synthesis of example compounds
+- Synthesize compound 8721
+- Synthesize intermediate compound
+- Synthesize compound 8721 from intermediate
+- Synthesize tert-butyl (1R,5S)-3-(1,1-dioxidothiomorpholine-4-carbonyl
+- Describe method O
+- Synthesize ((1S,5S)-6-(2,3-dihydrobenzo[b][1,4]dioxin-6
+- Synthesize ((1S,5S)-6-(2,3-dihydrobenzo[b][1,4]dioxin-6
+- Describe general methodology
+- Synthesize (1,1-Dioxidothiomorpholino)((1S,5S)-6-(4-methoxycyclo
+- Synthesize intermediate compound
+- Synthesize (1,1-Dioxidothiomorpholino)((1S,5S)-6-(4-methoxycyclo
+- Describe reaction conditions
+- Describe workup and purification
+- Provide NMR data
+- Provide HRMS data
+- Describe general applicability
+- Provide additional examples
+
+## Materials and Methods
+
+### Cell Culture and Transfection
+
+- describe cell culture conditions
+- introduce transfection method
+- detail cloning of LOX expression constructs
+
+### Confocal Imaging and Imaging Analysis
+
+- describe confocal imaging and analysis
+
+### Animal Procedures
+
+- outline animal procedures and regulations
+
+### Oral Tolerability of LOX Inhibitors
+
+- describe oral tolerability study
+
+### In Vivo Tumour Models Studies
+
+- introduce PDAC allografts
+- describe SW620 xenografts
+- detail MDA-MB-231 xenografts
+- outline dosing and measurement procedures
+- summarize tumour model studies
+
+### LOX Inhibitor Treatment of a Transgenic Mouse Breast Cancer Model
+
+- introduce MMTV-PyMT transgenic mouse model
+- describe LOX inhibitor treatment
+- detail tumour size measurement and calculation
+- outline therapeutic efficacy assessment
+

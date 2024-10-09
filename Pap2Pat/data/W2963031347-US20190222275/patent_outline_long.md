@@ -1,0 +1,191 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field of beam management
+
+## BACKGROUND
+
+- describe wireless communication network
+- motivate efficient radio resource acquisition
+
+## SUMMARY
+
+- introduce beam codebook generation
+- describe user equipment embodiment
+- identify E-field data
+- generate codewords
+- select codewords
+- configure codebook
+- determine codebook condition
+- apply configured codebook
+- describe method embodiment
+- describe non-transitory computer readable medium embodiment
+- mention other technical features
+- define certain words and phrases
+
+## DETAILED DESCRIPTION
+
+- introduce 5G communication system
+- motivate development of 5G system
+- describe beamforming and massive MIMO techniques
+- describe system network improvement techniques
+- describe hybrid FQAM and SWSC techniques
+- describe FBMC, NOMA, and SCMA techniques
+- introduce FIGS. 1-4B
+- describe wireless network embodiment
+- describe gNB and UE components
+- describe communication between gNBs and UEs
+- define base station and user equipment terms
+- describe coverage areas and gNB configurations
+- introduce FIG. 2
+- describe gNB embodiment
+- describe RF transceivers and processing circuitry
+- describe controller/processor and memory components
+- describe backhaul or network interface
+- describe memory and RAM/Flash components
+- describe variations of gNB components
+- introduce FIG. 3
+- describe UE embodiment
+- describe UE components and configurations
+- describe variations of UE components
+- conclude detailed description
+- describe UE components
+- explain RF transceiver functionality
+- detail TX processing circuitry operation
+- describe RX processing circuitry operation
+- explain processor functionality
+- describe memory components
+- illustrate UE configuration variations
+- introduce transmit path circuitry
+- describe channel coding and modulation
+- explain serial-to-parallel conversion
+- detail IFFT operation
+- describe parallel-to-serial conversion
+- explain cyclic prefix addition
+- detail up-converter operation
+- introduce receive path circuitry
+- describe down-converter operation
+- explain remove cyclic prefix operation
+- detail serial-to-parallel conversion
+- describe FFT operation
+- explain parallel-to-serial conversion
+- describe channel decoding and demodulation
+- categorize 5G communication system use cases
+- describe eMBB use case
+- describe URLL use case
+- describe mMTC use case
+- introduce communication system components
+- describe DL signal components
+- explain UL signal components
+- describe UL resource allocation
+- illustrate transmitter block diagram for PDSCH
+- describe transmitter block diagram for PDSCH
+- illustrate receiver block diagram for PDSCH
+- describe transmitter block diagram for PUSCH
+- illustrate receiver block diagram for PUSCH
+- introduce network slicing
+- describe antenna blocks
+- illustrate limitations of CSI reporting modes
+- propose unified CSI measurement and reporting framework
+- describe beam sweeping procedure
+- illustrate user equipment architecture
+- describe RF transceiver functionality
+- describe RX processing circuitry functionality
+- describe TX processing circuitry functionality
+- describe processor functionality
+- describe memory functionality
+- describe I/O interface functionality
+- describe touchscreen and display functionality
+- introduce beamforming
+- describe beam codebook generation procedure
+- introduce upper bound of spherical coverage
+- describe computation of upper bound
+- formulate upper bound with sum power constraint
+- formulate upper bound with per-element power constraint
+- describe initialization of complex-number weights
+- describe weight update step
+- describe iteration stopping condition
+- illustrate upper bound for single and multi-array
+- compare upper bounds in EIRP CDF
+- describe factors affecting beam codebook design
+- propose heuristic scheme for codebook generation
+- illustrate overall procedure for codebook generation
+- describe importance of analog beam sweeping
+- describe importance of beam codebook design
+- describe limitations of current CSI reporting modes
+- propose benefits of unified CSI measurement and reporting framework
+- summarize importance of beamforming and codebook design
+- illustrate automatic codebook generation
+- send module-level EM data to algorithm
+- send codebook design requirements to algorithm
+- send prior knowledge to algorithm
+- output codebook and performance results
+- illustrate heuristic scheme
+- import E-field data
+- generate candidate beam codewords
+- select beams according to performance criterion
+- stop if stopping criterion is met
+- import E-field data of each antenna
+- generate set of candidate beams
+- set current codebook as empty set
+- select beam and add to current codebook
+- determine if current codebook satisfies stopping condition
+- export current codebook as final codebook
+- describe candidate codeword set options
+- list hardware implementation requirements
+- list beam codebook requirements
+- illustrate coordinate system
+- define optimization criteria
+- define performance optimization criterion
+- define stopping condition criterion
+- compare performance of generated codebook
+- illustrate EIRP CDF and key metrics
+- illustrate 2-D heat map of radiation pattern
+- illustrate difference between radiations of upper bound and codebook
+- describe greedy algorithm
+- select beam that maximizes EIRP-related metric
+- illustrate EIRP CDF of composite pattern
+- describe performance criterion for greedy algorithm
+- describe stopping condition for greedy algorithm
+- illustrate partitioning of set of directions
+- define α which determines beamwidth
+- describe Lloyd-Max algorithm
+- describe iterative Eigen-based codebook
+- describe DFT codebook
+- describe uniform grid codebook
+- describe random phase codebook
+- motivate Tx and/or Rx RF beam codebook system
+- describe beam codebook design factors
+- illustrate impact of LCD on UE EIRP pattern
+- illustrate antenna modules activation based on device handling
+- describe heuristic approach to beam codebook design
+- describe measurement data collection procedure
+- illustrate beam codebook design methodology
+- describe maximum power exhaustive search beamforming algorithm
+- motivate adapting beam codebook to changing scenario
+- describe multi-beam codebook management system
+- illustrate multi-beam codebook management system
+- illustrate beam codebook adaptation over time
+- describe triggering alternative connectivity technology
+- describe on-line beam codebook learning framework
+- illustrate UE beam codebook learning based on data analytics
+- describe UE beam data analytics module
+- illustrate UE beam data analytics module
+- describe UE beam data analytics module with scenario detection
+- illustrate UE beam data analytics module with scenario detection
+- describe UE beam data analytics circuit with other beam management blocks
+- illustrate UE beam data analytics circuit with other beam management blocks
+- describe procedure with UE beam data analytics module
+- illustrate procedure with UE beam data analytics module
+- describe UE beam data analytics circuit
+- illustrate UE beam data analytics circuit
+- describe flow chart of method for UE beam data analytics module
+- illustrate flow chart of method for UE beam data analytics module
+- describe user consent for beam learning and update
+- describe user interface for beam learning and update
+- describe scope of patented subject matter
+- describe essential elements of claims scope
+- describe 35 U.S.C. § 112(f) invocation
+- conclude patent application
+

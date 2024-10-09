@@ -1,0 +1,396 @@
+# DESCRIPTION
+
+## STATEMENT OF U.S. FEDERALLY FUNDED RESEARCH
+
+- disclose government funding
+
+## BACKGROUND
+
+- introduce epigenetics
+- describe epigenetic modifications
+- explain role of epigenetics in development and disease
+- highlight need for targeted epigenetic approaches
+- provide background on XCI and gene reactivation
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce XCI and dosage compensation
+- describe XCI mechanism
+- explain gene expression on inactive X chromosome
+- highlight escape from XCI
+- describe epigenetic signature of X-escapees
+- discuss DNA methylation and XCI
+- introduce CRISPR system for epigenetic editing
+- describe dCas9-TET1 fusion protein
+- provide background on CDKL5 deficiency disorder
+- introduce gene editing system
+- describe components of gene editing system
+- provide examples of target sequences
+- describe integration of nucleotide molecules into vectors
+- provide examples of viral vectors
+- introduce kit comprising gene editing system
+- describe host cell comprising gene editing system
+- provide examples of host cells
+- describe pharmaceutical composition
+- provide examples of carriers
+- introduce method for increasing CDKL5 gene expression
+- describe administration of gene editing system
+- provide examples of routes of administration
+- describe analysis of CDKL5 gene expression
+- introduce method for treating CDD
+- describe analysis of targeted DNA methylation
+- provide examples of primers for bisulfite-sequencing PCR
+- introduce vector encoding sgRNA
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments
+- define terminology
+- describe scope of invention
+- provide definitions
+- discuss interpretation of terms
+- incorporate references
+- describe conventional techniques
+- discuss combinations of features
+- provide numerical designations
+- describe reagents
+- cite conventional techniques sources
+
+### Definitions
+
+- define singular forms
+- define "about"
+- define "acceptable"
+- define "adeno-associated virus"
+- describe AAV structure
+- define "administering"
+- describe administration methods
+- define "ameliorate"
+- define "and/or"
+- define "aptamer"
+- define "Cas9"
+- describe Cas9 variants
+- define "cell"
+- define "CRISPR"
+- describe CRISPR system
+- define "comprising"
+- define "consisting essentially of"
+- define endonuclease variants
+- list endonuclease sources
+- define biological equivalent
+- define expression
+- define functional
+- define guide polynucleotide
+- define homology
+- define hybridization
+- describe hybridization conditions
+- define isolated
+- define lentivirus
+- define nucleic acid sequence
+- define organ
+- define ortholog
+- define prevention
+- define promoter
+- describe promoter types
+- list exemplary promoters
+- provide CMV promoter sequence
+- provide U6 promoter sequence
+- continue listing definitions
+- continue listing definitions
+- continue listing definitions
+- continue listing definitions
+- continue listing definitions
+- continue listing definitions
+- continue listing definitions
+- conclude definitions
+- define GAGGGCCTATTTCCCATGATTCCTTCATATTTGCATATACGATACAAGGCT
+- introduce effector elements
+- define protein, peptide, and polypeptide
+- define protospacer adjacent motif (PAM)
+- define recombinant expression system
+- define sgRNA
+- define subject, individual, or patient
+- define target sequence
+- define target site
+- define tissue
+- define treating or treatment
+- define stem cell
+- define population of cells
+- define embryonic stem cells
+- define neural stem cell
+- define differentiation
+- define directed differentiation
+- define dedifferentiated
+- define lineage
+- define multi-lineage stem cell
+- define precursor or progenitor cell
+- define parthenogenetic stem cell
+- provide examples of effector elements
+- provide examples of sgRNA
+- provide examples of target sites
+- provide examples of stem cells
+- define pluripotent cell
+- define induced pluripotent stem cell
+- list stem cell specific genes
+- define vector
+- describe types of vectors
+- define plasmid
+- define viral vector
+- describe autonomous replication
+- describe integrated vectors
+- define expression vector
+- describe regulatory elements
+- define operably linked
+- describe viral expression vectors
+- define biological equivalent
+- describe homology requirements
+- describe hybridization conditions
+- define pharmaceutically acceptable salts
+- list inorganic acids
+- list organic acids
+- list acidic amino acids
+- describe metal salts
+- describe basic amino acids
+- introduce gene editing systems
+- describe dCas9-TET1CD fusion protein
+- describe sgRNA
+- describe scaffold region
+- describe spacer region
+- describe target sequence
+- describe PAM
+- describe transcriptional start site
+- describe DNA demethylation
+- describe gene reprogramming
+- describe TET1 protein
+- describe dCas9-TET1 fusion protein
+- describe targeted demethylation
+- describe dCas9 protein
+- describe guide RNA
+- describe CHOPCHOP tool
+- describe targeted sequence
+- describe gRNA design
+- describe transcriptional activator
+- define gene editing system
+- describe dCas9-TET1 fusion protein
+- describe sgRNA composition
+- specify target sequences
+- describe optional transcriptional activator
+- describe sgRNA embodiments
+- describe vector integration
+- describe kit composition
+- describe host cell composition
+- describe pharmaceutical composition
+- describe vector composition
+- describe vector embodiments
+- describe viral vector options
+- describe lentiviral vector
+- describe sgRNA vector
+- describe spacer region hybridization
+- describe multiple sgRNA vector
+- describe multiple sgRNA embodiments
+- define sgRNA
+- describe sgRNA components
+- specify target sequences
+- describe vector encoding sgRNA
+- describe vector encoding multiple sgRNAs
+- specify transcriptional activator
+- describe dCas9-TET1CD fusion protein
+- describe dCas9 protein fused to transcriptional activator
+- specify VP64 fragment
+- describe recombinant tetrameric repeat of VP16
+- specify amino acid sequence of VP16
+- describe vector encoding dCas9-TET1CD fusion protein
+- describe vector encoding dCas9 protein fused to transcriptional activator
+- specify viral vector
+- specify lentiviral vector
+- specify AAV vector
+- specify adenoviral vector
+- describe host cell
+- specify isolated or engineered host cell
+- describe host cell producing gene editing system
+- specify insect cell
+- specify mammalian cell
+- specify bacterial cell
+- specify stem cell
+- specify embryonic stem cell
+- specify progenitor cell
+- specify IPSC
+- specify neuronal progenitor cell
+- specify neuronal stem cell
+- describe host cell with genetic correction
+- describe host cell with dysfunctional gene expression
+- describe engineered host cell
+- specify host cell with homozygous polynucleotides
+- specify host cell with heterozygous polynucleotide
+- describe gene editing system
+- specify gene editing system components
+- describe synergistic effect of dCas9-VP64 fusion protein and dCas9-TET1CD
+- define host cell
+- describe sgRNA
+- describe dCas9-TET1CD fusion protein
+- describe dCas9 protein with transcriptional activator
+- describe VP64
+- describe VP16
+- describe pharmaceutical composition
+- describe host cell with gene editing system
+- describe sgRNA with scaffold and spacer regions
+- describe target sequence
+- describe PAM
+- describe DNA demethylation
+- describe transcriptional activator
+- describe VP64 with transcriptional activator
+- describe host cell with multiple sgRNAs
+- describe target sequences for multiple sgRNAs
+- describe vector with multiple nucleotide molecules
+- describe viral or plasmid vectors
+- describe adenovirus vectors
+- describe adeno-associated virus vectors
+- describe alphavirus vectors
+- describe host cell with sgRNA expression vector
+- describe host cell with viral vector
+- describe composition with host cell and vector
+- describe sgRNA with scaffold and spacer regions
+- describe target sequences for sgRNA
+- describe host cell with multiple sgRNAs
+- describe composition with host cell and multiple sgRNAs
+- describe host cell with vector and dCas9-TET1CD fusion protein
+- describe host cell with vector and dCas9 protein with transcriptional activator
+- describe composition with host cell and vector
+- describe carrier for pharmaceutical composition
+- describe pharmaceutically acceptable carrier or excipient
+- describe composition with host cell and vector
+- define cell assay systems
+- describe vectors and gene editing systems
+- introduce host cells
+- explain insertion of vectors and/or gene editing systems
+- describe therapeutic and diagnostic methods
+- introduce gene editing system
+- describe dCas9-TET1 fusion protein
+- explain artificial escape system
+- describe reactivation of inactive CDKL5 allele
+- introduce multi-omics assessment
+- describe off-targets on transcriptome and methylome
+- explain synergistic delivery of dCas9 effectors
+- describe causal role for reduced DNA methylation
+- introduce Rett syndrome and CDKL5 deficiency disorder
+- describe neurodevelopmental disorder CDKL5 deficiency
+- explain synthetic induction of CDKL5 escape
+- describe dCas9-TET1 fusion protein and dCas9-VP64
+- introduce whole-transcriptomic and genome-wide methylation data
+- describe method for increasing CDKL5 gene expression
+- explain administration of gene editing system
+- describe sgRNA and target sequence
+- introduce pharmaceutical composition
+- describe administration routes
+- introduce method for treating or preventing CDD
+- describe kit composition
+- provide examples
+
+### EXAMPLES
+
+- introduce examples
+- describe purpose of examples
+- explain non-limiting nature of examples
+- describe incorporation of variations
+- motivate cloning of sgRNAs
+- select spacer sequences
+- clone sgRNAs into expression vector
+- describe transfection experiments
+- prepare cells for transfection
+- perform transfection
+- replace transfection medium
+- extract total RNA
+- perform reverse transcription
+- perform real-time PCR
+- analyze gene expression
+- determine XCI status of CDKL5
+- use publicly available data
+- identify SNP in CDKL5 gene
+- isolate genomic DNA
+- extract total RNA
+- perform reverse transcription
+- confirm presence of SNPs
+- produce lentiviral particles
+- purify lentiviral particles
+- transduce cells
+- sort cells
+- analyze targeted X-reactivation
+- extract total RNA
+- perform reverse transcription
+- perform PCR amplification
+- analyze targeted DNA demethylation
+- perform bisulfite conversion
+- perform PCR amplification
+- analyze chromatin immunoprecipitation
+- perform ChIP-qPCR
+- analyze whole-genome methylation
+- introduce CDKL5 gene
+- motivate transcriptional reprogramming
+- describe dCas9 effector domains
+- introduce U87MG cells
+- describe plasmid constructs
+- introduce guide RNAs
+- perform RT-qPCR
+- analyze CDKL5 expression
+- introduce BE2C and HEK293 cells
+- analyze CDKL5 expression in BE2C and HEK293 cells
+- introduce SH-SY5Y cells
+- analyze XCI status
+- introduce dCas9-TET1CD fusion protein
+- describe lentiviral transduction
+- perform FACS selection
+- perform amplicon-based targeted RNA-sequencing
+- analyze reactivation of silenced CDKL5 allele
+- perform allele-specific RT-qPCR
+- analyze reactivation levels
+- introduce dC-V+dC-T co-transduction
+- analyze synergistic effect
+- analyze active CDKL5 allele expression
+- introduce targeted bisulfite amplicon sequencing
+- analyze DNA methylation levels
+- introduce catalytically inactive TET1 mutant
+- analyze combinatorial treatment
+- introduce ChIP-qPCR
+- analyze H3K27me3 mark
+- analyze histone-based feedback
+- introduce Illumina Infinium HumanMethylationEPIC array
+- analyze global promoter hypomethylation
+- validate DM positions
+- analyze differentially hypomethylated genes
+- analyze specificity of CDKL5 sgRNAs and dCas9 effector domains
+
+### Experimental Discussion
+
+- introduce XCI and escape genes
+- motivate epigenetic signature of escapees
+- describe removal of CGI methylation
+- demonstrate reactivation of CDKL5 expression
+- show synergistic effect of transcriptional activator
+- motivate programmable transcription
+- demonstrate CDKL5 upregulation
+- describe effect of VP64 transactivator
+- motivate binding of dCas9
+- demonstrate reactivation of CDKL5 expression
+- describe loss of repressive histone mark
+- motivate nucleosome rearrangement
+- describe previous findings on dCas9 binding
+- demonstrate targetability of dCas9
+- motivate chromosomal location of CDKL5
+- describe fusion of VP64 to dCas9
+- demonstrate introduction of TET1CD
+- describe decrease of DNA methylation
+- motivate global DNA methylome changes
+- demonstrate synergistic effect of TET1CD and VP64
+- discuss future studies and implications
+
+## EQUIVALENTS
+
+- disclaim limitations
+- define scope of technology
+- describe modifications and variations
+- interpret terminology expansively
+- exclude limitations on features
+- describe materials and methods as exemplary
+- define generic disclosure and sub-generic groupings
+- incorporate references by citation
+

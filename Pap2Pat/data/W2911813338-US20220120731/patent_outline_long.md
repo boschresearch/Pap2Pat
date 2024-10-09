@@ -1,0 +1,241 @@
+# DESCRIPTION
+
+## CROSS REFERENCE
+
+- claim benefit of prior applications
+
+## BACKGROUND
+
+- introduce CD8+ cytolytic T lymphocytes
+- describe immune system control mechanisms
+- explain T cell exhaustion
+- discuss T cell exhaustion in chronic infections
+- relate T cell exhaustion to cancer immunotherapy
+
+## SUMMARY
+
+- define T cell exhaustion
+- identify functional CD8+ T cells by SIRPα expression
+- describe SIRP+CD8+ T cells in chronic infections
+- propose therapeutic blockade of PD-L1
+- outline methods for identifying functional CD8+ T cells
+- specify inhibitory receptors for blockade
+- describe patient treatment regimens
+- outline method for isolating functional CD8+ T cells
+- propose stimulating and expanding isolated T cells
+- specify diseases for which the methods can be applied
+
+## DETAILED DESCRIPTION OF EMBODIMENTS
+
+- introduce functional CD8+ T cells identification method
+- specify T cell exhaustion context
+- describe inhibitory receptors on exhausted T cells
+- explain T cell dysfunction in chronic environment
+- define complete activation of T cells
+- describe co-inhibitory signals and T-cell hyporesponsiveness
+- explain exhausted T cells in cancer
+- describe functional capacities of exhausted CD8+ T cells
+- introduce targeted immunotherapies
+- describe immune checkpoint blockade
+- list combination therapies
+- introduce SIRPα protein
+- describe SIRPα variants
+- provide SIRPα sequence references
+- define biological sample
+- describe sample manipulation
+- define sample enrichment
+- describe biological sample types
+- define assaying a sample
+- describe obtaining a biological sample
+- explain extracting or isolating a biological sample
+- describe transferring a biological sample
+- specify obtaining a biological sample without isolating
+- describe isolating a biological sample
+- provide methods for isolating biological samples
+- conclude detailed description of embodiments
+- define terms
+- introduce immune responsiveness modulators
+- describe immune checkpoint proteins
+- explain PD-1 and PD-L1
+- describe function of PD1 and PDL1
+- introduce CTLA4
+- describe function of CTLA4
+- introduce LAG3
+- describe function of LAG3
+- introduce TIM3
+- describe function of TIM3
+- define infection and infectious agent
+- describe infectious diseases
+- define recipient and mammal
+- define therapeutically effective dose
+- introduce anti-CD47 agent
+- describe function of anti-CD47 agent
+- introduce SIRPα polypeptide
+- describe function of SIRPα polypeptide
+- introduce high-affinity SIRPα reagents
+- describe function of high-affinity SIRPα reagents
+- introduce anti-CD47 antibodies
+- describe function of anti-CD47 antibodies
+- introduce non-blocking anti-CD47 antibodies
+- introduce CD47-blocking antibodies
+- describe humanized and chimeric antibodies
+- introduce anti-SIRPα antibodies
+- describe function of anti-SIRPα antibodies
+- introduce pan-specific anti-SIRPα antibodies
+- introduce isoform-specific anti-SIRPα antibodies
+- describe specificity of anti-SIRPα antibodies
+- introduce anti-SIRPα antibodies with respect to SIRPβ and SIRPγ
+- conclude description of immune responsiveness modulators
+- introduce anti-SIRPα antibodies
+- describe suitable anti-SIRPα antibodies
+- describe humanized antibodies
+- describe caninized, felinized, etc. antibodies
+- introduce soluble CD47 polypeptides
+- describe suitable soluble CD47 polypeptides
+- describe fusion proteins
+- describe extracellular domain of CD47
+- describe CD47 extracellular domain variants
+- define treatment
+- describe prophylactic treatment
+- describe therapeutic treatment
+- describe inflicted cells
+- describe symptoms, illnesses, and/or diseases
+- define specific binding
+- describe affinity
+- define specific binding member
+- describe antibodies
+- describe immunoglobulins
+- describe antibody fragments
+- define epitope
+- describe providing an analysis
+- introduce methods
+- describe determining functional T cells
+- describe identifying functional CD8+ T cells
+- describe exhausted T cells
+- describe storing biological samples
+- describe assaying biological samples
+- describe determining expression level
+- describe gene product
+- describe determining expression level
+- describe assaying to determine expression level
+- describe normalized value
+- define RNA levels measurement
+- introduce methods for measuring RNA expression levels
+- describe hybridization-based methods
+- describe RNAse protection assays
+- describe PCR-based methods
+- describe nucleic acid sequencing methods
+- describe amplification of nucleic acid
+- introduce protein levels measurement
+- describe methods for measuring protein levels
+- describe concentration measurement
+- describe cell removal and protein measurement
+- introduce clinical sample preparation
+- describe sample separation methods
+- describe sample maintenance
+- describe cell dispersion and suspension
+- introduce cell staining analysis
+- describe fluorescence activated cell sorters
+- introduce affinity reagents
+- describe antibody preparation and conjugation
+- describe antibody incubation and separation
+- introduce comparison of differential analysis
+- describe deduction protocols and AI systems
+- introduce infection types
+- describe treatment of infection
+- describe monitoring and altering therapy
+
+### Kits
+
+- define kit components
+- provide kit instructions
+
+## EXPERIMENTAL
+
+- provide experimental examples
+- incorporate prior art references
+- discuss scope of invention
+
+### Example 1
+
+- introduce CD8+ T cells during chronic exhaustion
+- define SIRPα expression on CD8+ T cells
+- motivate SIRPα as a novel cell surface marker
+- analyze microarray database for SIRPα expression
+- describe SIRPα function on myeloid cells
+- summarize SIRPα's role in innate immunity
+- introduce LCMV infection model
+- analyze SIRPα expression on CD8+ T cells during LCMV infection
+- verify protein expression by flow cytometry
+- describe SIRPα upregulation during acute and chronic Friend virus infection
+- analyze SIRPα expression on CD8+ T cells during FV infection
+- examine SIRPα upregulation after cell division
+- correlate SIRPα expression with PD-1 expression
+- describe distinct phenotype of SIRPα+ CD8+ T cells
+- analyze expression of co-inhibitory and co-stimulatory molecules
+- examine SIRPα+ CD8+ T cells for functional memory phenotype
+- perform RNA-SEQ analysis on SIRPα− and SIRPα+ CD8+ T cells
+- identify differentially expressed transcripts between SIRPα− and SIRPα+ subsets
+- analyze upregulated genes in SIRPα+ subset
+- identify biological processes upregulated in SIRPα+ subset
+- compare genes correlated with SIRPα expression in LCMV-specific CD8+ T cells
+- describe downregulated genes in SIRPα+ subset
+- associate SIRPα expression with in vivo effector function
+- analyze granzyme B and CD107a expression in SIRPα+ and SIRPα− subsets
+- examine proliferative capacity of SIRPα+ and SIRPα− subsets
+- perform in vitro CTL killing assay
+- compare cytolytic activity of SIRPα+ and SIRPα− subsets
+- examine TCF-1 expression in SIRPα+ and SIRPα− subsets
+- perform in vivo CTL killing experiment
+- analyze CD47 expression on target cells
+- examine CD47+ target cells for susceptibility to killing
+- quantify virus-specific killing in chronically infected mice
+- analyze CD8+ T cells from human HCV patients
+- examine SIRPα expression on human CD8+ T cells
+- analyze CD57 and CD28 markers on human CD8+ T cells
+- examine phosphorylated STAT3, CD244/264, and HLA-DR on SIRPα+ cells
+- stimulate human PBMCs and analyze SIRPα expression
+- treat FV-chronically infected mice with anti-PD-L1
+- analyze expansion of FV-specific CD8+ T cells
+- associate SIRPα expression with functional CD8+ T cells
+- introduce SIRPα expression on CD8+ T cells
+- describe SIRPα+ CD8+ T cell subset characteristics
+- show SIRPα+ CD8+ T cells are cytolytically active
+- discuss SIRPα-CD47 interactions in cytolytic process
+- describe SIRPα+ CD8+ T cell heterogeneity
+- discuss implications for immunotherapy
+- introduce Materials and Methods section
+- describe mouse and virus strains used
+- outline infection and tissue harvest procedures
+- describe Affymetrix array analysis
+- outline flow cytometry procedures
+- describe T cell adoptive transfers for proliferation
+- outline in vitro CTL assay procedures
+- describe in vivo killing assay procedures
+- outline in vivo anti-PD-L1 blockade procedures
+- describe RNAseq analysis
+- introduce HCV cohort
+- describe HCV patient characteristics
+- outline phospho-CyTOF sample processing and staining
+- describe in vitro stimulation of human CD8 T cells
+- outline linear regression modeling procedures
+- describe LCMV studies
+- outline FV-specific Thy1.1+ CD8.TCR transgenic mice studies
+- describe SIRPα+ CD8+ T cell functional memory phenotype
+- discuss SIRPα+ CD8+ T cell exhaustion
+- describe CD47 blockade effects on CD8+ T cell antitumor activity
+- discuss PD-1 blockade effects on CD8+ T cell antitumor activity
+- describe tumor-associated macrophages expressing PD-1
+- discuss combination therapy with PD-1 and CD47 blockade
+- outline cell staining procedures
+- describe antibodies used for cell staining
+- outline intracellular staining procedures
+- describe in vitro CTL assay data analysis
+- outline in vivo killing assay data analysis
+- describe RNAseq data analysis
+- outline phospho-CyTOF data analysis
+- describe in vitro stimulation of human CD8 T cells data analysis
+- outline linear regression modeling data analysis
+- discuss implications for cancer immunotherapy
+- conclude SIRPα+ CD8+ T cells as targets for immunotherapy
+

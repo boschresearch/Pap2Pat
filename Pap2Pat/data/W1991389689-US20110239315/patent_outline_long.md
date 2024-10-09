@@ -1,0 +1,373 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD OF THE INVENTION
+
+- define technical field
+
+## BACKGROUND OF THE INVENTION
+
+- introduce phytopathogenic bacteria
+- describe TAL effectors
+- explain DNA-binding domain
+- discuss selective gene expression
+- motivate custom DNA-binding domains
+- describe current methods for identifying custom zinc finger DNA-binding domains
+- limitations of current methods
+- motivate invention
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce method for producing polypeptide
+- describe repeat domain
+- explain hypervariable region
+- describe modular approach
+- introduce method for selectively recognizing base pair
+- describe polypeptide produced by method
+- introduce DNA sequences encoding polypeptides
+- introduce host organisms and cells
+- describe method for constructing polypeptides
+- introduce method for targeted modulation of gene expression
+- introduce method for directed modification of target DNA sequence
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention with reference to accompanying drawings
+- describe embodiments of inventions
+- define "repeat domain"
+- define "repeat unit"
+- define "recognition code"
+- list recognition codes for amino acids and corresponding DNA base pairs
+- define "effector"
+- describe effector protein and its components
+- define "naturally occurring"
+- define "modulating expression", "inhibiting expression", and "activating expression" of a gene
+- describe methods for assaying modulation of gene expression
+- define "regulatory domain"
+- describe sources of regulatory domains
+- list examples of transcription factors and their associated factors and modifiers
+- describe kinases, phosphatases, and other proteins that modify polypeptides involved in gene regulation
+- describe oncogenes and their associated factors and modifiers
+- describe DNA repair enzymes and their associated factors and modifiers
+- describe DNA rearrangement enzymes and their associated factors and modifiers
+- describe DNA modifying enzymes and their associated factors and modifiers
+- describe chromatin-associated proteins and their modifiers
+- describe histone deacetylase as a transcriptional repressor
+- describe histone acetyltransferase as a transcriptional activator
+- define "gene"
+- describe components of a gene
+- define "target gene"
+- define "plant"
+- describe plant tissues and cells
+- define "modulate the expression of a target gene in plant cells"
+- describe target DNA sequences
+- describe transcriptional control elements
+- describe downstream or upstream sequences that can bind proteins and modulate transcription
+- describe polynucleotide molecules encompassed by the invention
+- describe analogs and modified backbone residues or linkages
+- describe forms of polynucleotide molecules
+- define "specifically binds to a target DNA sequence"
+- define target DNA sequence
+- define endogenous
+- define exogenous
+- define genetically modified plant
+- define minimal promoter
+- define repressor protein
+- define repression
+- define activator protein
+- define activation
+- define derivative
+- define repeat unit derived from TAL effector
+- introduce TAL effector family
+- describe structure of TAL effectors
+- describe DNA-binding specificity of TAL effectors
+- describe repeat units and hypervariable regions
+- describe recognition code for DNA-target specificities
+- describe application of recognition code
+- describe modular architecture of repeat domain
+- describe use of repeat domains in transcription factors
+- describe use of repeat domains in other proteins
+- summarize invention
+- introduce repeat units
+- combine repeat units for DNA recognition
+- cite prior art for mutagenesis and polynucleotide alterations
+- provide examples for constructing new repeat units
+- describe testing specific binding activities
+- determine number of repeat units in a repeat domain
+- specify range of repeat units
+- provide consensus sequences for repeat units
+- describe modifying repeat unit sequences
+- specify identity with consensus sequences
+- correlate recognition specificity with amino acids
+- describe hypervariable region in a repeat unit
+- specify recognition of base pairs
+- describe making a repeat unit for recognition
+- describe N-terminal domain of AvrBs3-like proteins
+- specify protein family AvrBs3
+- describe amino acid homology
+- deduce hypervariable region
+- summarize correlation of repeat units and base pairs
+- describe designing polypeptides with repeat domains
+- introduce modularly designed repeat units
+- combine with endonuclease domain
+- stimulate homologous recombination
+- describe endonucleolytic breaks
+- explain repair of breaks by cellular machinery
+- motivate use of Fok I endonuclease
+- describe Fok I endonuclease domain
+- introduce I-Sce I endonuclease
+- describe recognition site for I-Sce I
+- enhance homologous recombination with I-Sce I
+- introduce other endonuclease domains
+- design and synthesize novel endonucleases
+- engineer endonuclease domains
+- introduce effector with repeat domain
+- bind to specific target DNA sequence
+- generate modified plant with desired addition
+- introduce exogenous nucleic acid
+- generate plant from modified plant cell
+- describe genetically modified cells and plants
+- introduce domains for modulation of gene expression
+- modify gene expression by generating DNA-binding polypeptides
+- describe AvrBs3-like family effectors
+- modify target DNA sequences
+- construct secondary inducible systems
+- introduce disease-resistant plants
+- construct custom DNA-binding polypeptides
+- assemble polypeptides with novel repeat types
+- improve cloning versatility
+- modify any DNA sequence for binding
+- design polypeptide capable of binding to target DNA sequence
+- select repeat units with high affinity and specificity
+- regulate expression of endogenous genes
+- introduce polypeptide into cell
+- modulate expression of target gene
+- facilitate uptake of effectors into cells
+- introduce toxin molecules for transport
+- introduce liposomes for delivery of effectors
+- introduce plant and agricultural technology
+- describe method to modulate gene expression
+- provide polypeptide to plant cells
+- express polypeptide in plant cells
+- modulate target gene expression
+- describe target nucleotide sequence
+- describe target gene
+- engineer plants for traits
+- determine DNA sequence
+- design polypeptide
+- cause polypeptide to be present in target cell
+- describe functional domains
+- synthesize polypeptide in situ
+- deliver DNA to cell
+- deliver polypeptide to cell
+- describe therapeutic and prophylactic use
+- describe genome engineering
+- generate effector polypeptide
+- describe hypervariable region
+- describe DNA encoding polypeptide
+- describe modified DNA
+- define modifying nucleic acid sequence
+- describe binding of polypeptide to nucleic acid sequence
+- explain detection of modification
+- describe separation of polypeptide-DNA complex
+- introduce repeat domain comprising repeat units
+- describe insertion of repeat domain into polypeptide
+- define isolated or substantially purified polynucleotide or protein
+- describe characteristics of isolated polynucleotide
+- describe characteristics of isolated protein
+- introduce fragments and variants of DNA sequences and proteins
+- define fragment of DNA sequence
+- describe biological activity of fragments
+- define variant of DNA sequence
+- describe deletions, insertions, and substitutions of DNA sequence
+- describe evaluation of variants by sequence alignment
+- define variant protein
+- describe biological activity of variant proteins
+- describe alterations of proteins
+- introduce mutagenic and recombinogenic procedures
+- describe DNA shuffling
+- introduce PCR approaches
+- describe design of PCR primers
+- describe PCR cloning
+- introduce hybridization techniques
+- describe preparation of probes for hybridization
+- describe construction of cDNA and genomic libraries
+- define stringent conditions
+- describe low stringency conditions
+- describe moderate stringency conditions
+- describe high stringency conditions
+- describe specificity of post-hybridization washes
+- introduce Tm equation
+- describe adjustment of Tm
+- describe variations in stringency of hybridization and wash solutions
+- define sufficiently identical sequences
+- define percent identity of amino acid sequences or nucleic acids
+- describe method for determining percent identity
+- introduce mathematical algorithm for sequence comparison
+- describe BLAST and PSI-Blast programs
+- introduce Clustal W algorithm
+- describe expression cassettes for gene expression
+- define operably linked elements
+- describe transcriptional and translational initiation regions
+- describe termination regions
+- introduce heterologous sequences
+- describe chimeric genes
+- introduce optimized polynucleotides for expression
+- describe elimination of deleterious sequences
+- introduce G-C content adjustment
+- describe translation leaders
+- introduce picornavirus leaders
+- describe potyvirus leaders
+- introduce MDMV leader
+- describe human immunoglobulin heavy-chain binding protein leader
+- introduce alfalfa mosaic virus leader
+- describe tobacco mosaic virus leader
+- introduce maize chlorotic mottle virus leader
+- describe in vitro mutagenesis
+- introduce constitutive promoters
+- describe tissue-preferred promoters
+- introduce inducible promoters
+- describe pathogen-inducible promoters
+- introduce chemical-regulated promoters
+- describe steroid-responsive promoters
+- introduce tetracycline-inducible and tetracycline-repressible promoters
+- describe selectable marker genes
+- introduce antibiotic resistance genes
+- describe herbicide resistance genes
+- introduce phenotypic markers
+- describe fluorescent proteins
+- introduce plant transformation vectors
+- describe methods for transforming plants
+- introduce various transformation methods
+- define stable and transient transformation
+- introduce DNA sequences into plant cells
+- select vector for transformation
+- describe methodologies for constructing plant expression cassettes
+- introduce foreign DNA into plants
+- describe transformation methods
+- introduce DNA sequences into plants using viral DNA or RNA
+- describe methods for introducing polynucleotide constructs into plants
+- provide transient transformation methods
+- introduce protein or variants and fragments into plant
+- describe microinjection or particle bombardment
+- describe Agrobacterium tumefaciens-mediated transient expression
+- grow transformed cells into plants
+- pollinate and harvest seeds
+- describe transformation of various plant species
+- define plant
+- introduce DNA sequences into non-plant host cells
+- describe expression in eukaryotic systems
+- describe synthesis of heterologous polynucleotides in yeast
+- describe expression vectors for mammalian or insect cells
+- describe insect cell lines
+- describe gene sequences to control replication
+- describe methods of introducing DNA into animal cells
+- describe prokaryotic control sequences
+
+## EXAMPLES
+
+### Example 1
+
+- identify basis for DNA specificity of TAL effectors
+- describe AvrBs3 repeat units and hypervariable amino acids
+- correlate repeat types with specific base pairs in target DNA
+- propose model of recognition specificity
+- support model with AvrBs3 repeat deletion derivative
+- analyze UPA-boxes of AvrBs3-induced pepper genes
+- predict target DNA sequences of Xanthomonas TAL effectors
+- inspect promoters of known TAL target genes and alleles
+- identify sequences matching predicted specificity
+- deduce code for DNA target specificity of certain repeat types
+- experimentally validate model with Hax3 and Hax4
+- derive target DNA boxes for Hax3 and Hax4
+- analyze reporter gene activation with Hax3 and Hax4
+- address importance of first nucleotide in predicted target DNA sequence
+- permutate Hax4-box and analyze reporter gene activation
+- analyze NI-, HD-, and NG-repeat units in Hax4
+- generate ArtX1 and deduce corresponding DNA recognition sequence
+- analyze ArtX1-box derivatives
+- analyze Hax2-box and IG repeat unit
+- analyze Hax2-box with permuted third base
+- demonstrate Hax2-box specificity for T
+- analyze AvrHah1 and Bs3 promoter
+- identify Hax2 target genes in Arabidopsis thaliana
+- analyze PAP1 transcript level and promoter region
+- predict putative target DNA sequences for additional TAL effectors
+- analyze influence of repeat unit number on target gene expression
+- construct artificial effectors with 0.5 to 15.5 HD-repeat units
+- analyze promoter activation by artificial effectors
+- generate artificial effectors with novel DNA-binding specificities
+- describe further embodiments of the invention
+- introduce AvrBs3-family effectors
+- describe DNA binding domain
+- motivate targeted adaptation of DNA-binding specificity
+- introduce transcriptional activators for inducible gene expression
+- describe C-terminus modification for expression in other organisms
+- introduce effectors as transcriptional repressors
+- describe DNA binding specificity for repression
+- introduce use of repeat domains for labelling and isolation
+- describe fusion of repeat domains with other domains
+- introduce use of repeat domains for endonucleolytic cleavage
+- describe fusion of repeat domains with restriction endonucleases
+- introduce construction of repeat domains with custom-designed repeat order
+- describe "Golden gate" cloning method
+- introduce use of effectors as viral repressors
+- describe nucleotide binding specificity for viral repression
+- summarize invention coverage
+- describe isolated nucleic acid molecules
+- describe transformed plants and seeds
+- describe human and non-human host cells
+- describe promoters used in invention
+- introduce materials and methods
+- describe bacterial strains and growth conditions
+- describe plant material and inoculations
+- describe construction of artificial effectors
+- describe GATEWAY-compatible ENTRY-vector generation
+- describe construction of GUS reporter constructs
+- describe construction of hax2-transgenic A. thaliana
+- describe construction of ARTBs4 artificial effector
+- describe β-Glucuronidase (GUS) assays
+- describe expression of hax2, hax3, and hax4
+- describe DNaseI footprinting
+- describe fluorescently labeled PCR products
+- describe sequencing of plasmids
+
+### Example 2
+
+- identify TAL repeat unit that binds to G nucleotides
+- describe functional analysis of HVR motifs
+- perform bioinformatic analysis of HVRs
+- test target specificity of HVRs with unknown specificity
+
+### Example 3
+
+- describe DNA binding domain of TAL effectors
+- explain HVRs that define DNA target specificity
+- discuss limitations of chemical synthesis for generating effectors
+- introduce Golden Gate cloning as alternative approach
+- describe type IIS restriction enzymes and BsaI
+- explain two-stage ligation process
+- define insert plasmids, intermediate vectors, and acceptor vector
+- describe design of repeat units with BsaI recognition sites
+- explain cut-ligation reaction and simultaneous action of BsaI and ligase
+- discuss generation of effectors with specific base sequence recognition
+- describe ligation of 10 repeat units into intermediate vector
+- explain release of assembled 10-mers using BpiI
+- describe ligation of 10-mers into acceptor vector
+- discuss final assembly of repeat unit array
+- explain recombination-based transfer of effector into expression construct
+- provide schematic of method in FIG. 19A-D
+
+### Example 4
+
+- produce and test target DNA-specific nucleases
+- describe in vitro generation of repeat domain-FokI nuclease fusion proteins
+- analyze products using agarose gel electrophoresis
+
+### Example 5
+
+- determine recognition specificities of additional amino acid pairs
+- construct DNA binding domains using Golden Gate Cloning
+- conduct experiments to determine recognition specificities
+- provide experimental results in FIGS. 20-27
+- discuss use of recognition specificities in methods and compositions
+

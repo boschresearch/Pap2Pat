@@ -1,0 +1,148 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce Dzyaloshinskii-Moriya interaction
+- explain DMI mechanism
+- discuss experimental efforts
+- highlight limitations of current approaches
+- identify need for improved techniques
+
+## SUMMARY
+
+- introduce embodiments
+- describe oxygen-induced DMI
+- explain oxygen coverage dependent evolution
+- discuss DMI magnitude
+- describe apparatus for generating DMI
+- specify ferromagnet materials
+- specify substance chemisorbed on surface
+- control DMI based on metal layer thickness
+- control DMI based on substance chemisorbed
+- control DMI based on substance thickness
+- generate skyrmion by changing coverage
+- describe specific apparatus embodiment
+- control DMI based on Pd or W layer thickness
+- introduce perpendicular magnetic anisotropy
+- control PMA based on substance chemisorbed
+- control PMA based on substance thickness
+- describe method for generating PMA
+
+## DETAILED DESCRIPTION
+
+- introduce DMI and PMA induced by chemisorbed species on ferromagnets
+- describe oxygen coverage dependent evolution of DW chirality
+- motivate tuning of effective DMI by controlling Pd spacer layer thickness
+- summarize DMI induced by chemisorbed oxygen
+- highlight application of oxygen induced DMI in spintronics
+- introduce experimental approach to measure unknown DMI contributions
+- describe measurement of DW spin texture as a function of layer thickness
+- motivate development of DMI-tuneable platforms
+- choose tungsten and palladium for opposite DMI and epitaxial film growth
+- describe Ni/Co bilayers grown on top for perpendicular magnetic anisotropy
+- show Pd thickness dependent switching of DW chirality
+- define parameter α for domain wall chirality analysis
+- show histograms of angle α for different Pd thicknesses
+- describe compound SPLEEM images and DW magnetization orientation
+- examine chemisorbed oxygen induced DW chirality on Ni(111)
+- describe phase diagram of oxygen chemisorbed on Ni(111)
+- show oxygen coverage dependent chirality evolution
+- illustrate oxygen coverage dependent evolution of Néel-type chirality
+- quantify chemisorbed oxygen induced DMI
+- show phase diagram of magnetic chirality in dO-dPd space
+- compare Pd-induced DMI and chemisorbed oxygen-induced DMI
+- model film thickness dependence of chirality transition
+- determine DMI strength of the system
+- summarize magnitude of DM vector at Ni/[non-magnetic material] interfaces
+- summarize magnitude of DM vector at Co/[non-magnetic material] interfaces
+- discuss quantitative extraction of DMI strengths
+- introduce DMI values
+- compare DMI values
+- motivate tailoring chirality
+- describe oxygen-induced DMI
+- illustrate manipulation of chirality
+- describe role of oxygen-induced DMI
+- motivate reversible chemisorption/desorption
+- describe LEEM IV spectra
+- illustrate work function response
+- describe hydrogen chemisorption on Ni(111)
+- describe hydrogen chemisorption on Co(0001)
+- describe hydrogen chemisorption on Ni/Co/Pd/W(110)
+- motivate exploring interfacial DMI
+- describe direct measurement of magnetic chirality
+- illustrate exploring chemisorbed hydrogen-induced DMI
+- describe chirality switching
+- illustrate α histograms
+- describe hydrogen exposure dependent evolution
+- summarize values of Dij
+- motivate quantifying DMI contributions
+- describe tracking magnetic chirality evolution
+- illustrate chirality transition
+- describe statistical approach
+- illustrate average domain wall chirality
+- describe estimation of strength of chemisorbed hydrogen-induced DMI
+- describe systematic dPd spacer layer thickness-dependent chirality studies
+- describe achiral state of domain walls
+- describe relative change of DMI
+- describe change of effective DMI
+- estimate DMI induced by chemisorbed hydrogen
+- describe limitations of DMI measurement
+- describe potential applications of DMI
+- describe future directions for DMI research
+- conclude DMI measurement
+- present DMI values for various elements adjacent to Ni
+- compare DMI strengths
+- introduce hydrogen-assisted reversible control of chirality
+- describe SPLEEM experiment setup
+- illustrate reversible switching of magnetic chirality via hydrogen
+- analyze domain wall chirality evolution
+- discuss origin of hydrogen-induced DMI
+- explain electric surface dipole moment induced by charge transfer
+- describe work function change induced by hydrogen adlayer
+- discuss theoretical prediction of DMI and electronegativity
+- introduce writing/deleting magnetic skyrmions via hydrogen chemisorption
+- describe SPLEEM observation of skyrmion creation/annihilation
+- analyze real-time SPLEEM image sequence
+- discuss reversibility of skyrmion creation/annihilation
+- introduce significant DMI and PMA induced by chemisorbed organic molecules
+- describe chemisorption of BCP on Ni(111) surface
+- illustrate SPLEEM observation of BCP-induced magnetic chirality switching
+- analyze domain structure and DMI change due to BCP layer
+- discuss role of BCP on PMA
+- describe measurement of critical ferromagnetic layer thickness at SRT
+- illustrate SPLEEM observation of BCP-induced enhancement of PMA
+- analyze Ni-thickness dependent domain structure
+- discuss SRT shift due to presence of BCP layer
+- introduce Ni/Co/Pd/W system
+- describe SRT and PMA
+- discuss BCP advantages
+- motivate novel device functionality
+- discuss DMI induced by materials
+- describe charge transfer and hybridization
+- discuss writing of magnetic skyrmions
+- discuss switching of domain wall chirality
+- list potential DMI and PMA materials
+- discuss sign change of DMI
+- describe chirality switching of domain walls
+- discuss 180° magnetization switching
+- motivate spintronics memory/logic devices
+- describe "racetrack" type of magnetic memories
+- discuss chemisorption species manipulation
+- describe gas-sensing applications
+- discuss magneto-ionics
+- describe hydrogen-based magneto-ionics
+- discuss multilayer heterostructures
+- describe device embodiment
+- discuss reservoir layer and ferromagnet layer
+- describe ionization and chemisorption process
+- discuss switching of domain wall chirality
+- describe artificial synapses
+- summarize DMI and PMA induced by chemisorbed species
+- describe sample preparation
+- discuss oxygen exposures
+- discuss hydrogen exposures
+- describe time-dependent work function measurement
+- describe time-dependent in-plane domain wall analysis
+- discuss image denoising methods
+- discuss scope of the invention
+

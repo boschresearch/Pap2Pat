@@ -1,0 +1,1019 @@
+{
+    "id": "US20140230083",
+    "authors": [
+        "Claudia Bertonati",
+        "Philippe Duchateau",
+        "Alexandre Juillerat",
+        "George Silva",
+        "Julien Valton"
+    ],
+    "title": "MODULAR BASE-SPECIFIC NUCLEIC ACID BINDING DOMAINS FROM BURKHOLDERIA RHIZOXINICA PROTEINS",
+    "date": "2013-07-24 00:00:00",
+    "abstract": "The present invention concerns new modular base-per-base specific nucleic acid binding domains (MBBBD) derived from newly identified proteins from the bacterial endosymbiont Burkholderia Rhizoxinica and their use for engineering nucleic acid processing enzymes, such as specific endonucleases or transcription activators.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention concerns the field of genetic engineering and the reprogramming of cells functions using protein fusions involving new modular specific nucleic acid binding domains.",
+                        "These modular nucleic acid binding domains result from the rearrangement of genomic sequences coming from Burkholderia rhizoxinica, a bacterial endosymbiont of the fungus Rhizopus microsporus.",
+                        "Fusion proteins of these new engineered binding domains with catalytic domains of different nucleic acid processing enzymes, in particular catalytic domains having endonuclease activity, permit the processing of genomes at desired targeted loci."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce genetic engineering and protein fusions"
+                    ],
+                    "num_characters": 628,
+                    "outline_medium": [
+                        "introduce genetic engineering and protein fusions"
+                    ],
+                    "outline_short": [
+                        "introduce genetic engineering and protein fusions"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Significant progress has been made over the last years in the way genomes can be investigated and modified in living cells. The main challenge in this matter is to transfect the living cells with enzyme molecules that are able to process targeted genetic sequences in a sequence specific manner, without inducing toxicity. This goal has been reached using enzymes derived from natural proteins, for instance by creating variants of homing endonucleases, also called meganucleases (Stoddard, Monnat et al. 2007; Arnould, Delenda et al. 2011), but also by creating fusion proteins, such as for instance the fusion of TALE DNA binding domain with a catalytic domain (Christian, Cermak et al. 2010; Li, Huang et al. 2011).",
+                        "Transcription Activator Like Effectors (TALE) has been widely used for several applications in the field of genome engineering. The sequence specificity, of this family of proteins used in the infection process by plant pathogens of the Xanthomonas genus, is driven by an array of motifs of 33 to 35 amino acids repeats, differing essentially by the two positions 12 and 13 (Boch, Scholze et al. 2009; Moscou and Bogdanove 2009). The recent achievement of the high resolution structure of TAL effectors bound to DNA showed that each single base of the same strand in the DNA target is contacted by a single repeat (Deng, Yan et al. 2012; Mak, Bradley et al. 2012), with the specificity resulting from the two polymorphic amino acids of the repeat; the so-called RVDs (repeat variable dipeptides). The modularity of these DNA binding domains has been confirmed by assembly of repeats designing TALE-derived protein with new sequence specificities.",
+                        "TALE proteins has so far been described as containing: (i) an N-terminal domain including a translocation signal, (ii) a central DNA-binding domain, and (iii) a C-terminal domain including a nuclear localization signal (NLS) and an acidic activation domain (AD). A representative member of this family is AvrBs3 from Xanthomonas vesicatoria (SWISSPROT P14727) that has a 1164 amino acid sequence comprising a N-terminal domain of 288 amino acids (position 1 to 288), a central domain of 593 amino acids (positions 289 to 881), and a C-terminal domain of 283 amino acids (positions 882 to 1164) comprising a NLS and AD (transcription activation domain). The DNA-binding domain which determines the target specificity of each TALE consists of a variable number (generally 12 to 27) of tandem, nearly identical, 33-35 amino acid repeats, followed by a single truncated repeat. For example, AvrBs3 DNA-binding domain (SEQ ID NO. 1) comprises 17 repeats of 34 amino acids and a truncated repeat of 15 amino acids. The \u201crepeat-variable di-residue\u201d (RVD), which represents the variable residues in the repeat determines the specificity of interaction with the nucleotide base of the DNA target, in a code-like fashion with some degeneracy. The four most common RVDs are HD with respect to c, NI with respect to a, NG with respect to t and NN with respect to g ((Boch, Scholze et al. 2009; Moscou and Bogdanove 2009; Bogdanove and Voytas 2011), WO 2011/072246).",
+                        "This straightforward sequence relationship between RVDs and nucleotide bases allows the production of custom TAL effectors that bind DNA sequences of interest by assembling an array of repeats that corresponds to the intended target site. Such engineered TALE proteins have improved gene-editing technology (Baker 2012). A variety of rapid construction methods for custom TALE fusion proteins have recently been developed based on the protein scaffold of AvrBs3-like proteins by adding catalytic protein domains to the C-terminal. (US 2011/0145940; Cermak, Doyle et al. 2010; Weber, Gruetzner et al. 2011; Zhang, Cong et al. 2011; Doyle, Booher et al. 2012). TAL effectors have been, for instance fused to a nuclease catalytic head to form specific nucleases (TALE-Nuclease) creating thereby new tools, especially for genome engineering applications, that have proven efficiency in cellbased assays in yeast, mammalian cells and plants (Cermak, Doyle et al. 2010; Christian, Cermak et al. 2010; Geissler, Scholze et al. 2011; Huang, Xiao et al. 2011; Li, Huang et al. 2011; Mahfouz, Li et al. 2011; Miller, Tan et al. 2011; Morbitzer, Elsaesser et al. 2011; Mussolino, Morbitzer et al. 2011; Sander, Cade et al. 2011; Tesson, Usal et al. 2011; Weber, Gruetzner et al. 2011; Zhang, Cong et al. 2011; Li, Piatek et al. 2012; Mahfouz, Li et al. 2012).",
+                        "Meanwhile, the Transcription Activator Like Effectors so far described in the literature (AvrXa7, Hax, PthXo1, . . . ) are highly similar to the protein AvrBs3 and all originate from Xanthomonas or its closely related Ralstonia bacterial genus.",
+                        "One of the drawbacks of the Transcription Activator Like Effectors from Xanthomonas lies in the fact that they mostly consists of highly repetitive motifs, nearly identical to each other. The high identity of these repeats is prompted to create genetic recombination or instability when the repeats are assembled to form engineered nucleic acid binding domains.",
+                        "A first level of difficulty occurs at the polynucleotide level to clone the repeat sequences due to the fact that restriction sites and PCR primers are basically the same for each repeat. Under these conditions, it gets difficult to perform routine lab procedures to check that the repeats have been cloned properly, in the good number and in the right order. This is although essential to achieve proper expression of a DNA binding protein that is expected to show specificity with a desired nucleic acid sequence.",
+                        "A second level of difficulty occurs when the polynucleotide sequences are included in vectors for heterologous expression, in particular when using viral vectors. As recently reported by Holkers et al. (2012), it appears that DNA tandem repeat motifs from TALE scaffold are generally incompatible with lentiviral vector system due to some internal sequence recombinations. This particularly limits the current use of TALE proteins into primary cells, which are generally not permissive towards classical gene transfer technologies.",
+                        "Lower efficiencies of TALE derived proteins have also been reported in certain cell types, like for instance in mice, or in relation with epigenetic modifications, so that alternative or complementary solutions to improve TALE derived protein are still actively sought.",
+                        "Unexpectedly, the present inventors have identified putative proteins from the bacterial endosymbiont Burkholderia rhizoxinica and others from a marine organism, displaying highly polymorphic modules having specific DNA binding activity, while having very different sequence (less than 40% identity) in comparison with TALE repeats. These proteins have also completely different N and C terminal domains. The modules found in these proteins have higher sequence variability than TALE repeats and can although be assembled to engineer new base per base specific binding domains (MBBBD) to target nucleic acid sequences in genomes. These modules confer better sequence stability when they are assembled and expressed in living cells as nucleic acid binding domains."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "summarize genome modification challenges",
+                        "describe TALE proteins and their applications",
+                        "detail TALE protein structure and function",
+                        "explain RVD code and base specificity",
+                        "discuss TALE protein engineering and construction",
+                        "highlight limitations of TALE proteins",
+                        "describe difficulties in cloning and expressing TALE proteins",
+                        "mention incompatibility with lentiviral vectors",
+                        "discuss lower efficiencies in certain cell types",
+                        "introduce need for alternative solutions",
+                        "describe prior art in genome engineering",
+                        "summarize TALE protein features and limitations",
+                        "highlight importance of new solutions",
+                        "introduce new modular proteins"
+                    ],
+                    "num_characters": 7166,
+                    "outline_medium": [
+                        "summarize genome modification challenges",
+                        "describe TALE proteins and their limitations",
+                        "explain TALE protein structure and function",
+                        "discuss TALE protein applications",
+                        "highlight difficulties with TALE protein design",
+                        "mention alternative solutions sought",
+                        "introduce Burkholderia rhizoxinica proteins"
+                    ],
+                    "outline_short": [
+                        "summarize genome modification challenges",
+                        "describe TALE proteins and their limitations",
+                        "motivate alternative solutions"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention concerns new modular base-per-base specific nucleic acid binding domains (MBBBD) derived from newly identified proteins from the bacterial endosymbiont Burkholderia Rhizoxinica, namely EAV36_BURRH, E5AW43_BURRH, E5AW45_BURRH and E5AW46_BURRH proteins and from other similar proteins identified from marine organisms metagenomic database referred to as JCVI_A and JCVI_B and ECR81667.",
+                        "These proteins comprise modules of about 31 to 33 amino acids that, when assembled together, form modular base-per-base binding domains (MBBBD). A Parallel may be made with the repeat domains of TALE proteins from Xanthomonas. However the modules in these binding domains display less than 40% sequence identity with TALE common repeats and much more sequence variability. In addition, most modules from these proteins display amino acid variability only in position 13, and not in position 12, whereas variability is observed both in positions 12 and 13 in the variable di-residues (RVDs) of TALE proteins. As a result, into the engineered MBBBDs according to the invention, base specificity may rely only on position 13 of the modules by merely following a one base/one amino acid code. These proteins display also different N and C-terminal domains, which are much shorter than in TALE proteins.",
+                        "The different domains from said proteins (modules, N and C terminals) are useful to engineer new proteins or scaffolds having binding properties to specific nucleic acid sequences. Assembling the different modules into new MBBBDs allows targeting almost any nucleic acid sequence in a genome. The MBBBDs can thereby be fused to different catalytic domains to process DNA at the locus of a target nucleic acid sequence, especially nuclease and transcriptional activators. In particular, new rare-cutting endonucleases can be derived from these polypeptides with improved specificity or cleavage activity towards a specific locus. The invention also provides chimeric proteins resulting from the assembly of the different domains from said new modular proteins with functional domains of TALE-like proteins.",
+                        "The inventors have conceived different fusion or hybrid proteins deriving from the above polypeptides and polynucleotides and methods to use same.",
+                        "E5AV36_BURRH E5AW43, E5AW45 JCVI_A, JCVI_B and/or ECR81667 modules can be assembled to form modular base-per-base binding domains (MBBBD). By modular baseper-base binding domains is meant a succession of polypeptide modules assembled in order to respectively target a nucleic acid base in a given nucleic acid target sequence.",
+                        "Such MBBBD can be fused to catalytic domains in order to process DNA at a locus defined by a nucleic acid target sequence, especially to a transcription activator, such as VP16 or VP64 or to some repression factors such as for example KRAB (kruppel-associated box) domain.",
+                        "The MBBBD of the invention can be more particularly fused to a nuclease catalytic head, especially catalytic domains from Fok-I, to form specific endonucleases, which allow dimerization of Fok-1. The MBBBDs have several advantages over TALE-repeats. In particular, the fact that the modules can display non repeated sequences provides the MBBBDs with improved modularity. MBBBD are likely to be processed more easily using PCR, cloning methods and viral delivery methods because polynucleotide sequences encoding the modules are not identical to each other. As a further advantage, MBBBDs allow fusions with further nuclease domains such as I-TevI, making them active under monomeric form as well.",
+                        "The resulting fusion proteins therefore form a new class of engineered endonucleases useful for gene targeting and edition of genomes.",
+                        "Hybrid TALE-like proteins can be also created by combining polypeptide domains (modules, N or C terminals) from the above E5AV36, E5AW43, E5AW45, E5AW46, JCVI_A, JCVI_B and ECR81667 proteins with those of currently existing, natural or engineered TALEs of AvrBs3-like proteins. Such new chimeric TALE-like proteins can be assembled using the methods already well-established in the art for engineering TALE domains, in particular by sub-cloning the sequences encoding modules or repeats in polynucleotide vectors, for instance, by using Golden Gate cloning method. Preferably, the protein domains from the E5AV36, E5AW43, E5AW45, E5AW46, JCVI_A, JCVI_B and ECR81667 proteins (module domain, N-terminal domain, C-terminal domain) will be used in combination with the complementary domains of classical TAL effectors.",
+                        "Fusions of catalytic domains to the BURRH polypeptides according to the invention may be N-terminal or C-terminal fusions, with any appropriate linkers or truncations.",
+                        "E5AV36_BURRH E5AW43, E5AW45 JCVI_A, JCVI_B and/or ECR81667 modules can also be used as template to build new artificial repeats for TALE-like proteins. Such artificial repeat arrays can be created by introducing mutations into their sequences or by introducing new RVDs into repeats or modules. Key positions at the N/C-terminal domains of the protein can be partially or totally degenerated to modulate DNA affinity as well as interactions with other cofactors. An extensive screening may be also carried out to identify new modules and new RVD-like structures throughout the genomes diversity."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce new modular base-per-base specific binding domains",
+                        "describe protein sources and characteristics",
+                        "detail module structure and variability",
+                        "explain base specificity and code",
+                        "discuss advantages over TALE proteins",
+                        "introduce fusion proteins and applications",
+                        "describe nuclease and transcriptional activator fusions",
+                        "highlight improved modularity and processing",
+                        "discuss hybrid TALE-like proteins",
+                        "summarize invention and its benefits"
+                    ],
+                    "num_characters": 5280,
+                    "outline_medium": [
+                        "introduce modular base-per-base specific nucleic acid binding domains",
+                        "describe protein domains and their assembly",
+                        "explain base specificity and code-like fashion",
+                        "discuss advantages over TALE proteins",
+                        "introduce fusion proteins and their applications"
+                    ],
+                    "outline_short": [
+                        "introduce modular base-per-base specific nucleic acid binding domains",
+                        "describe applications of MBBBDs"
+                    ]
+                },
+                {
+                    "title": "DISCLOSURE OF THE INVENTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "1/BURRH Polypeptides Displaying Modular Base-Specific Binding Domains",
+                            "paragraphs": [
+                                "Upon an extensive search for proteins that may display DNA binding properties throughout a selection of genomes, the present inventors have unexpectedly identified 4 proteins from the microorganism Burkholderia rhizoxinica displaying a modular structure. These modules share a low identity with TALE proteins and have completely different N and C-terminals. Interestingly, the modules of these proteins display more variability than AvrBs3-like repeats and their amino acids in position 12 and 13 significantly differ from those at play in Xanthomonas.",
+                                "Burkholderia rhizoxinica is an intracellular symbiont of the phytopathogenic zygomycete Rhizopus microsporus, the causative agent of rice seedling blight. The endosymbiont produces the antimitotic macrolide rhizoxin for its host. It is vertically transmitted within vegetative spores and is essential for spore formation of the fungus. Its 3.75 Mb genome, which consists of a chromosome and two strain-specific plasmids, was recently sequenced by Lackner, Moebius et al. 2011. Unlike TALE proteins, the DNA binding protein derived from Burkholderia rhizoxinica do not display a transactivator domain and very few is known about the biology of this microorganism.",
+                                "In a general aspect, the present invention relates to the discovery and identification of new modular proteins obtainable from the different domains of these four proteins:\n\n\n- - EAV36_BURRH (SEQ ID NO.2);\n  - E5AW43_BURRH (SEQ ID NO.3);\n  - E5AW45_BURRH (SEQ ID NO.4), and\n  - E5AW46_BURRH (SEQ ID NO.5),",
+                                "The modular arrays of EAV36_BURRH, E5AW43_BURRH and E5AW45_BURRH proteins are flanked by short C and N terminal domains, which do not appear to contain either an acidic domain or a NLS.",
+                                "The alignment of the proteins sequences E5AV36, E5AW43, E5AW45, E5AW46 (SEQ ID NO. 2 to SEQ ID NO. 5) from BURRH and of AvrBs3 (SEQ ID NO.1) are presented in FIG. 1.",
+                                "EAV36_BURRH appears to contain 20 modules and a shorter N- and C-termini.",
+                                "E5AW45_BURRH numbers 27 modules and has N- and C-termini very similar to EAV36_BURRH.",
+                                "E5AW43_BURRH and E5AW46_BURRH are much shorter polypeptides. E5AW43_BURRH has only 6 modules, whereas E5AW46_BURRH does not appear to have any. However, the N- and C-termini of E5AW43_BURRH and E5AW46_BURRH are very similar to EAV36BURRH.",
+                                "EAV36_BURRH, E5AW43_BURRH and E5AW45_BURRH proteins are currently annotated in Cog database [http://www.ncbi.nlm.nih.gov/COG] as being: \u201cAraC-type DNA-binding domain-containing proteins\u201d. Thus, in one aspect, the invention relates to the use of these proteins, and more generally of AraC-type DNA binding domains, and more especially modules thereof, for engineering fusion proteins having modular base per base sequence specific binding domains.",
+                                "The alignments of the modules and of the \u2014N and \u2014C terminal sequences of the above BURRH proteins are presented in Table 23 and 24 as follows:",
+                                "The alignments have been made using standard alignment software using a segment to segment approach (Burkhard Morgenstern (1999). DIALIGN 2: improvement of the segmentto-segment approach to multiple sequence alignment. Bioinformatics 15, 211-218).",
+                                "The different module sequences are listed in Table 27 and aligned in FIG. 2.",
+                                "By contrast with what has been already published for classical TAL effectors repeats these modules show a higher degree of polymorphism. Nevertheless, as shown in logotype and occurrence matrix in FIGS. 3 and 4, it is interesting to observe that a stretch of 15 amino acids, from position 5 to 19 represented below, is highly conserved among the different modules:",
+                                "where X1 in position 12 is mostly represented by N, but can also be represented in some instances by K, and\n\nwhere X2 in position 13 varies between different amino acids, more particularly: G, I, N, S, D, T, A, K and R.",
+                                "The amino acids X1 and X2 found in positions 12 and 13 of these modules are more particularly: NI, ND, NG, NA, **, NT, NS, NR, NK, KG and N* (where * means that a deletion appears in the alignment made of the different module sequences as shown in Table 27). Position 12 is mainly represented by N, whereas position 13 is more variable, which suggests that the specificity with respect to nucleobases could rely more particularly on position 13. In such an event, NT, **, KG, and NR appear to be additional di-residues not occurring in Xanthomonas TALE proteins.",
+                                "Interestingly, the data presented in the present application, in particular with respect to E5AV36_BURRH target specificity (see FIG. 8) suggests that the nucleotide base specificity could even be determined only by X2 (position 13) of each module, position 12 (X1) being preferably N, thereby defining a one amino-acid/base code recognition. This would form the first code ever linking one amino acid to one base for specific recognition. This code appears to be primarily based on the following correspondences (AA: amino acid preferably in position 13 of the module):",
+                                "Possible alternative recognition also appears between the following amino acids and nucleotide bases as follows:",
+                                "It is also interesting to observe that most modules start with F and generally with FS, and end with G, generally RG.",
+                                "Some modules from the above proteins also comprise less than 33 amino acids.",
+                                "When considering amino acids that are present in more than 50% of the modules, the following consensus sequence can be drawn:",
+                                "where the symbol \u201c-\u201d means a standard amino acid which is more variable.",
+                                "The above consensus sequences are fully distinct from that of AvrBs3 repeats.",
+                                "The matrix in Table 28 details the percentages of identity found between each of the different modules of the BURRH proteins and the following representative AvrBs3 repeat sequence:",
+                                "The percentages of sequence identities for the different modules with respect to the above AvrBs3 repeat are indicated in bold in this matrix. The identity is comprised between 23% (E5AV36\u20142) and 47% (E5AW45\u201424 and E5AW45\u201427).",
+                                "Polynucleotide sequences encoding the BURRH proteins E5AV36, E5AW43, E5AW45 and E5AW46 are also part of the invention. They are respectively referred to as SEQ ID NO.113 (E5AV36), SEQ ID NO.114 (E5AW43), SEQ ID NO.112 (E5AW45) and SEQ ID NO.115 (E5AW46)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce BURRH proteins and their discovery",
+                                "describe protein structure and modules",
+                                "detail module alignment and variability",
+                                "explain base specificity and code",
+                                "discuss advantages over TALE proteins",
+                                "introduce EAV36_BURRH protein and its modules",
+                                "describe E5AW43_BURRH and E5AW45_BURRH proteins",
+                                "detail module sequences and alignments",
+                                "explain conservation of certain amino acids",
+                                "discuss recognition code and its implications",
+                                "introduce consensus sequence and its features",
+                                "summarize BURRH protein characteristics"
+                            ],
+                            "num_characters": 6179,
+                            "outline_medium": [
+                                "introduce BURRH proteins and their modular structure",
+                                "describe protein domains and their differences from TALE proteins",
+                                "explain module variability and amino acid positions",
+                                "discuss alignments and sequence identities",
+                                "introduce polynucleotide sequences encoding BURRH proteins",
+                                "summarize BURRH protein characteristics"
+                            ],
+                            "outline_short": [
+                                "identify BURRH proteins with modular structure",
+                                "describe modules and their variability",
+                                "align modules and identify conserved regions"
+                            ]
+                        },
+                        {
+                            "title": "2/Metagenomic Polypeptides with Similarity to the BURRH Polypeptides",
+                            "paragraphs": [
+                                "Further search in genome databases were performed to identify further proteins having sequence similarity with the above BURRH proteins.",
+                                "This search has permitted to identify the following polynucleotide sequence of so far unreported function encoded by genomic DNA isolated from marine organism sample.",
+                                "The exact organism from which these metagenomic DNA sequences have been extracted has not been yet established. The DNA sequences might comprise some uncertainties due to the sequencing method. Thus, as a preliminary step, the inventors have reconstructed the original polynucleotide sequences (SEQ ID NO. 67 to SEQ ID NO. 70) to obtain the following full length protein sequences:\n\n\n- - JCVI_A (SEQ ID NO.72) (Table 29);\n  - JCVI_B (SEQ ID NO.73) (Table 30); and\n  - ECR81667 (SEQ ID NO.71) (Table 31).",
+                                "Initially, the primary polypeptide sequences were derived from polynucleotide sequences from different open reading frames that had to be assembled: JCVI_ORF\u20141096675837214 (SEQ ID NO.116), JCVI_ORF\u20141096688227496 (SEQ ID NO.117), JCVI_ORF\u20141096688227494 (SEQ ID NO.118), JCVI_ORF\u20141096675837216 (SEQ ID NO.119) and JCVI_ORF\u20141096688327480 (SEQ ID NO.120), data extracted from http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?Iv|=0&id=408172.",
+                                "The N-terminal and C-terminal of these proteins have been aligned with those from the BURRH proteins:\n\n\n- - Aligned N-ter sequences of the following sequences are presented in\n    Table 32:",
+                                "- - Aligned C-ter sequences of the following sequences are presented in\n    Table 33:",
+                                "It can be observed from the above alignments a significant variability between the C- and N-terminal domains from BURRH and the metagenomic proteins, which are also much shorter than those from AvrBs3.",
+                                "The module polypeptides of 33 amino acids from the three metagenomic proteins have been aligned using Clustal multiple alignment (FIG. 5). These modules also display a higher degree of polymorphism than what can be found among Xanthomonas TALEs. It is although interesting to observe from the logotype and occurrence matrix of FIGS. 6 and 7, that a stretch of 10 amino acids, from position 5 to 14, is highly conserved:",
+                                "where X\u20321 in position 12 is mostly represented by H, but can also be represented by N or R, and where X\u20322 in position 13 varies between different amino acids, more particularly: D, G, N, I, H, K S and T.",
+                                "It is also noteworthy that most modules start with L or F and generally finish with G or E.",
+                                "Amino acids X\u20321 and X\u20322 found in positions 12 and 13 of these modules are more particularly: HI, HD, HG, HS, HA, HH, HN, NN, NT and RN. The di-residues HH, HS, NT, HK and RN do not appear to occur in Xanthomonas TALE proteins Position 12 mostly displays H, whereas position 13 is more variable, which suggests that the specificity with respect to the different nucleobases could also rely more particularly on position 13.",
+                                "When considering amino acids that are present in more than 50% of the modules, the following consensus sequence can be drawn:",
+                                "where the symbol \u201c-\u201d means a standard amino acid which is more variable.",
+                                "The above consensus sequences are fully distinct from that of AvrBs3 repeats.",
+                                "It has the following common characteristics with the previous BURRH consensus:"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce metagenomic DNA sequences and their sources",
+                                "describe protein reconstruction and sequences",
+                                "detail module alignment and variability",
+                                "explain base specificity and code",
+                                "discuss similarities and differences with BURRH proteins",
+                                "summarize metagenomic protein characteristics"
+                            ],
+                            "num_characters": 3239,
+                            "outline_medium": [
+                                "introduce metagenomic DNA sequences and protein reconstruction",
+                                "describe protein domains and their differences from BURRH proteins",
+                                "explain module variability and amino acid positions"
+                            ],
+                            "outline_short": [
+                                "identify metagenomic proteins with similar modules"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "BRIEF DESCRIPTION OF THE TABLES",
+                    "paragraphs": [
+                        "Table 1: List of all pseudo-palindromic sequences targets (two identical recognition sequences are placed facing each other on both DNA strands\u2014minuscule letters represent spacers) used in yeast SSA assay.",
+                        "Table 2: Activity of BurrH\u201436 derived nuclease on pseudo-palindromic sequences targets (two identical recognition sequences are placed facing each other on both DNA strands) in yeast SSA assay.",
+                        "Table 3: List of all pseudo-palindromic (two identical recognition sequences are placed facing each other on both DNA strands) sequences targets, with various nucleotides in position 0, \u22121 and \u22122 used in yeast SSA assay.",
+                        "Table 4: Activity of BurrH\u201436 derived nuclease on pseudo-palindromic sequences targets listed in Table 3 in yeast SSA assay.",
+                        "Table 5: Sequences of the module domains of BurrH\u201436 based constructs containing 18 DNA binding modules (Example 3).",
+                        "Table 6: List of all pseudo-palindromic (two identical recognition sequences are placed facing each other on both DNA strands) sequences targets, with various spacer length (ranging from 5 to 40 bp) used in yeast SSA assay.",
+                        "Table 7: Activity of BurrH\u201436 derived nuclease on pseudo-palindromic sequences targets listed in Table 6 in yeast SSA assay.",
+                        "Table 8: Sequences of the module domains of BurrH\u201436 based constructs containing 16 DNA binding modules (Example 4).",
+                        "Table 9: List of the 2 pseudo-palindromic (two recognition sequences are placed facing each other on both DNA strands) sequences targets, used in yeast and mammalian SSA assay.",
+                        "Table 10: Activity of BurrH\u201436 derived nuclease on pseudo-palindromic sequences targets listed in Table 9 in yeast SSA assay.",
+                        "Table 11: Sequences of the 16 module domains of pCLS18477 construct derived from the alignment of the first 5 modules of E5AV36.",
+                        "Table 12: Sequences of the 16 module domains of pCLS18478 construct derived from the alignment of all the E5AV36 modules.",
+                        "Table 13: Sequences of the 16 module domains of pCLS18479 construct derived from the alignment of all the E5AV36 modules (Example 5).",
+                        "Table 14: Activity of BurrH\u201436 derived nuclease on one of the pseudo-palindromic sequences targets listed in Table 9 in yeast SSA assay.",
+                        "Table 15: Activity of BurrH\u201436 derived nuclease on AVR15 sequences targets in yeast SSA assay at 37\u00b0 C. +++ indicates a high activity.",
+                        "Table 16: List of all pseudo-palindromic (two identical recognition sequences are placed facing each other in the 5\u2032/5\u2032 (or N/N) orientation on both DNA strands) sequences targets, with various spacer sizes used in our yeast SSA assay previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006).",
+                        "Table 17: List of all targets having a single RAGT2.4 DNA target sequences preceding a single AvrBs3 (on the same DNA strand), with various spacer sizes used in our yeast SSA assay previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006)",
+                        "Table 18: Activity of BurrH\u201436 derived nuclease on one of the pseudo-palindromic sequences targets listed in Table 16 and 17 in yeast SSA assay at 37\u00b0 C. \u2212 indicates no detectable activity, + indicates a low activity, ++ a medium activity and +++ a high activity",
+                        "Table 19: Activity of BurrH\u201436 derived nuclease on RAGT2.3 and RAGT2.4 sequences targets in yeast SSA assay at 37\u00b0 C. \u2212 indicates no detectable activity, + indicates a low activity, and +++ a high activity.",
+                        "Table 20: Activity of BurrH\u201436 derived chimera nuclease on RAGT2.3 and RAGT2.4 sequences targets in yeast SSA assay at 37\u00b0 C. \u2212 indicates no detectable activity, and +++ a high activity.",
+                        "Table 21: Activity of BurrH\u201436 derived nuclease containing mutations in the N-terminal domain on Avr15 sequence target in yeast SSA assay at 37\u00b0 C. \u2212 indicates no detectable activity, and +++ a high activity.",
+                        "Table 22: Activity of monomeric MBBBD nuclease in yeast (37\u00b0 C.). Activity of TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 on DNA target containing natural I-TevI cleavage site (CAAGC) wherein the terminal G base of the I-TevI cleavage site is spaced away of 10 bp from the residue preceded the single AvrBs3 recognition site (SEQ ID NO. 425).",
+                        "Table 23: Alignment of the N-terminal sequences of E5AV36, E5AW45 and E5AW46 BURRH proteins with N-terminal sequence of AvrBs3 (DIALIGN format).",
+                        "Table 24: Alignment of the C-terminal sequences of E5AV36, E5AW45 and E5AW46 BURRH proteins with C-terminal sequence of AvrBs3 (DIALIGN format).",
+                        "Table 25: Sequence identity matrix showing percentages of identity between the N-terminal amino acids sequences of E5AV36, E5AW45 and E5AW46 and AvrBs3.",
+                        "Table 26: Sequence identity matrix showing percentages of identity between the C-terminal amino acids sequences of E5AV36, E5AW45 and E5AW46 and AvrBs3.",
+                        "Table 27: Amino acid sequences of the modules of E5AV36, E5AW43 and E5AW45.",
+                        "Table 28: Matrix comparing the identity of the amino acid sequences of the different modules from E5AV36, EAW45, E5AW43 and AvrBs3.",
+                        "Table 29: Amino acid sequences of the putative protein JCVI_A (SEQ ID NO.72) resulting from the fusion of ECG96325 (SEQ ID NO.68) and ECG96326 (SEQ ID NO. 69).",
+                        "Table 30: Amino acid sequences of the putative protein JCVI_B (SEQ ID NO.73), resulting from the fusion of EBN19408 (SEQ ID NO.70) and EBN19409 (SEQ ID NO.67)",
+                        "Table 31: Amino acid sequences of the putative protein JCVI_ORF\u20141096688327480 (ECR81667) (SEQ ID NO.71).",
+                        "Table 32: Alignment of the N-terminal sequences of JCVIA and JVCIB with those of E5AV36, E5AW45, E5AW43 and AvrBS3 (DIALIGN format).",
+                        "Table 33: Alignment of the C-terminal sequences of JCVIA and JVCIB with those of E5AV36, E5AW45, E5AW43 and AvrBS3 (DIALIGN format).",
+                        "Table 34: List of peptide linkers that can be used in MBBBD proteins."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "list tables",
+                        "describe table 1",
+                        "describe table 2",
+                        "describe table 3",
+                        "describe table 4",
+                        "describe table 5",
+                        "describe tables 6-15",
+                        "describe tables 16-20",
+                        "describe tables 21-23",
+                        "describe tables 24-28",
+                        "describe tables 29-34"
+                    ],
+                    "num_characters": 5887,
+                    "outline_medium": [
+                        "list tables of pseudo-palindromic sequences targets",
+                        "describe activity of BurrH\u201436 derived nuclease",
+                        "provide sequences of module domains of BurrH\u201436 based constructs",
+                        "show alignments and identities of BURRH proteins and AvrBs3",
+                        "list peptide linkers for MBBBD proteins"
+                    ],
+                    "outline_short": [
+                        "list tables of pseudo-palindromic sequences targets and nuclease activity",
+                        "list tables of amino acid sequences and alignments"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "General Method for Identifying Genomic Members as a Source of Module Domains",
+                            "paragraphs": [
+                                "As a primary embodiment of the invention is a method to identify putative genomic sequences that may encode modules having specificity to nucleic acid bases. In the present situation, the identification of module sequences according to the invention has come across the following difficulties:\n\n\n- - Lack of identity with any known repeat sequences, especially with\n    *Xanthomonas* TALEs;\n  - Degeneration of the genetic code to pass from polypeptide to\n    polynucleotides;\n  - Different codon usage depending of the different genomes of\n    organisms;\n  - Higher sequence variability between the module sequences; and\n  - High number of genomic sequences in database to process.",
+                                "In order to overcome these difficulties, the invention provides with an approach based on occurrence of repeated structures in putative proteins without taking into account the Xanthomonas TALEs known amino acid sequences. The method is based, as a first screening, on the identification of aminoacidic sequences containing module motifs of variable length (between 20 and 50 aa) using a large variety of computational techniques. Then the candidate sequences are submitted to secondary structure predictions. All the candidates whose module motifs display a high content of alpha helices joined by small loops (whose primary sequence is highly polymorphic) are kept. Finally the entire sequences of the candidates (not only their module motives) are modelled on the available 3D structures. This step allows the identification of the correct number of domains constituting the entire candidate sequences as well as a first functional identification of the key residues regulating the activity of the new putative DNA binding proteins.",
+                                "As a first result, said method has permitted the identification of proteins referred to as being related to the AraC protein family. Interestingly, some proteins of the AraC family have been described as containing DNA-binding domains having the ability of establishing DNAbase contacts (Bustos and Schleif 1993). However, to the inventor's knowledge, modular sequences have not been yet reported in connection with AraC DNA binding domains.",
+                                "Thus, one aspect of the present invention concerns the use of polypeptide sequences referred to in databases as belonging to the AraC protein family as a source of new modules for engineer base per base specific DNA binding domain. In particular, the present invention has for object the use of DNA binding domains from protein referred to as AraC proteins in genomic databases, especially those domains having nucleic acid base specificity, to form fusion proteins for recognition of specific nucleic acid target sequences. As a result, DNA recognition protein domains may be assembled in order to pair off with a specific nucleic acid base sequence and be fused to catalytic domains to form a new generation of binding proteins.",
+                                "New Polypeptides Derived from Metagenomic JCVI_A, JCVI_B and ECR81667 Proteins and from the BURRH Proteins E5AV36, E5AW43, E5AW45 and E5AW4, and their Use to Engineer Base Per Base Binding Domains (MBBBD)",
+                                "As a further embodiment of the invention are the polypeptides derived from the BURRH proteins E5AV36, E5AW43, E5AW45 and E5AW46 and from the metagenomic JCVI_A, JCVI_B and ECR81667 proteins. These polypeptides may consist of the whole proteins or of their different domains as previously described especially the different modules, N and C-terminal domains of these proteins.",
+                                "Because some variability may arise from the genomic data from which these polypeptides derive, and also to take into account the possibility to substitute some of the amino acids present in these polypeptides without significant loss of activity (functional variants) and also because the modules have a significant variability (some share less than 50% identity), the invention encompasses polypeptides variants of the above polypeptides that share at least 70%, preferably at least 80%, more preferably at least 90% and even more preferably at least 95% identity with the sequences provided in this patent application.",
+                                "The present invention is thus drawn to polypeptides comprising a polypeptide sequence that has at least 60%, preferably 70%, more preferably at least 80%, again more preferably at least 90%, 95% 97% or 99% sequence identity with any of the above disclosed polypeptide sequences encoding modules, N or C-terminals. The invention more particularly relates to the use any polypeptide of sequence SEQ ID NO.11 to 63 and SEQ ID NO.77 to 108 as a new or alternative module, and/or any of said polypeptides of sequence SEQ ID NO.7 to 9 or SEQ ID NO. 74 to 76 as new or alternative N-terminal domain, and/or any of said polypeptides of sequence SEQ ID NO.64 to 66 or SEQ ID NO. 109 to 111 as a new or alternative C-terminal, in particular for introduction into existing AvrBs3-like TALE proteins (chimeric proteins).",
+                                "The invention also relates to a polypeptide module or modular binding domain of an engineered protein that comprises a module sequence from a protein of the AraC family, especially a module sequence of 30 to 40 amino acids, preferably from 30 to 33 amino acids.",
+                                "The polypeptide modules according to the invention are particularly useful to engineer \u201cartificial\u201d nucleic acid binding domains. By \u201cartificial\u201d is meant that they are assembled or modified to bind a desired nucleic acid sequence, said desired target sequence being different from that initially recognized by the proteins JCVI_A, JCVI_B, ECR81667 and BURRH proteins E5AV36, E5AW43, E5AW45 and E5AW4 in the wild.",
+                                "The assembly is generally made by selecting the modules in respect of the affinity of each module to a given nucleic acid base, preferably on a base per base basis. The selection can be made in particular by reference to said one amino-acid/one base code recognition established by the inventors, but can also be made according to other criteria of specificity. Said one amino-acid/one base code recognition can be based on the following correspondences (AA: amino acid preferably in position 13 of the module):",
+                                "Possible alternative recognition may be implemented using the following correspondences:",
+                                "This straightforward code according to the present invention may also be used to modify the specificity of the polypeptide modules by directly introducing mutations in any of the module polypeptides described previously, especially in position 13.",
+                                "The polynucleotide encoding the artificial nucleic acid binding domains of the invention can be assembled by cloning the polynucleotide sequences encoding the different polypeptides by the methods known in the art or by using a solid phase and Type IIS restriction enzymes as described in WO2013/017950 with respect to repeats from TAL binding domains, or even by automated polynucleotide synthesis. The produced polynucleotides can then be cloned into various expression or replication vectors to be transfected into living cells.",
+                                "In one embodiment of the invention, modules of 32, 31 or less amino acids, such as those having identity to SEQ ID NO. 30, 38, 41, 50 and 63 can be used into such artificial nucleic acid binding domains. All the polypeptide modules or mutations according to the present invention can also be introduced into, or assembled with, TAL repeats, to form chimeric MBBBDs (see chimeric proteins).",
+                                "\u201cIdentity\u201d refers to sequence identity between two nucleic acid molecules or polypeptides. Identity can be determined by comparing a position in each sequence which may be aligned for purposes of comparison. When a position in the compared sequence is occupied by the same base, then the molecules are identical at that position. A degree of similarity or identity between nucleic acid or amino acid sequences is a function of the number of identical or matching nucleotides at positions shared by the nucleic acid sequences. Various alignment algorithms and/or programs may be used to calculate the identity between two sequences, including FASTA, or BLAST which are available as a part of the GCG sequence analysis package (University of Wisconsin, Madison, Wis.), and can be used with, e.g., default setting. BLASTP may also be used to identify an amino acid sequence having at least 80%, 85%, 87.5%, 90%, 92.5%, 95%, 97.5%, 98%, 99% sequence similarity to a reference amino acid sequence using a similarity matrix such as BLOSUM45, BLOSUM62 or BLOSUM80. Unless otherwise indicated a similarity score will be based on use of BLOSUM62. When BLASTP is used, the percent similarity is based on the BLASTP positives score and the percent sequence identity is based on the BLASTP identities score. BLASTP \u201cIdentities\u201d shows the number and fraction of total residues in the high scoring sequence pairs which are identical; and BLASTP \u201cPositives\u201d shows the number and fraction of residues for which the alignment scores have positive values and which are similar to each other. Amino acid sequences having these degrees of identity or similarity or any intermediate degree of identity of similarity to the amino acid sequences disclosed herein are contemplated and encompassed by this disclosure. The same applies with respect to polynucleotide sequences using BLASTN.",
+                                "By \u201cTALE-like polypeptide\u201d is intended any polypeptide or protein comprising a binding domain formed by at least two repeats, preferably at least 5, more preferably at least 10, even more preferably at least 14 repeats from a TALE protein having more than 80% identity with AvrBs3 from Xanthomonas, each of said repeat having specificity for a nucleic acid base. In general the repeats do not overlap and form a succession of repeats comprising RVDs. This succession and order of the RVDs, so-called \u201cRVD sequence\u201d may be modified by assembling repeats together to form engineered TALE-like binding domains, thereby allowing targeting any desired sequence in-vivo or in-vitro. According to the invention, modules as disclosed herein may replace some of the AvrBs3-like repeats in such proteins to form new TALE-like chimeric polypeptides.",
+                                "Some modules from the polypeptides according to the invention comprise variable residues in position 12 and 13, in particular NT, **, KG, NR, RN, HS, HH and/or HK which may be independently introduced in any existing TALE repeats or in any TALE-like polypeptide as described herein, to improve or modulate their specificity with respect to their cognate nucleic acid bases."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method for identifying genomic sequences",
+                                "limitations of current methods",
+                                "overcome difficulties with new approach",
+                                "identify aminoacidic sequences with module motifs",
+                                "submit candidates to secondary structure predictions",
+                                "model entire sequences on available 3D structures",
+                                "identify correct number of domains and key residues",
+                                "result: identification of proteins related to AraC protein family",
+                                "use of AraC DNA binding domains as a source of new modules",
+                                "form fusion proteins for recognition of specific nucleic acid target sequences",
+                                "introduce new polypeptides derived from metagenomic proteins",
+                                "describe polypeptides derived from BURRH proteins",
+                                "define polypeptide variants with at least 70% identity",
+                                "relate to polypeptides with at least 60% sequence identity",
+                                "use polypeptides as new or alternative modules, N or C-terminals",
+                                "engineer \"artificial\" nucleic acid binding domains",
+                                "assemble modules based on affinity to nucleic acid bases",
+                                "introduce mutations in module polypeptides",
+                                "assemble polynucleotides encoding artificial nucleic acid binding domains",
+                                "introduce modules into TAL repeats to form chimeric MBBBDs"
+                            ],
+                            "num_characters": 10444,
+                            "outline_medium": [
+                                "motivate genomic sequence identification",
+                                "describe difficulties in identifying module sequences",
+                                "introduce approach to overcome difficulties",
+                                "describe method for identifying module motifs",
+                                "summarize secondary structure predictions",
+                                "describe 3D structure modeling",
+                                "introduce AraC protein family as source of modules",
+                                "describe use of DNA binding domains from AraC proteins",
+                                "introduce polypeptides derived from metagenomic proteins",
+                                "describe use of polypeptide modules to engineer base per base binding domains"
+                            ],
+                            "outline_short": [
+                                "overcome difficulties in identifying module sequences",
+                                "introduce computational approach for identifying module motifs",
+                                "describe method for identifying correct number of domains",
+                                "motivate use of AraC protein family as source of new modules",
+                                "introduce polypeptides derived from metagenomic proteins"
+                            ]
+                        },
+                        {
+                            "title": "Fusion Proteins",
+                            "paragraphs": [
+                                "The polypeptides according to the invention previously described may be fused with any other polypeptides to form single chain, monomer or multimer proteins.",
+                                "In particular, the above polypeptides can be fused with catalytic domains in order to activate or inactivate transcription or translation activity or process genetic material, within or adjacent to the nucleic acid sequence targeted by the MBBBD. Said catalytic domain can have cleavage activity, either a cleavase activity either a nickase activity, more broadly a nuclease activity but also a polymerase activity, a kinase activity, a phosphatase activity, a methylase activity, a topoisomerase activity, an integrase activity, a transposase activity, a ligase, a helicase or recombinase activity as non-limiting examples.",
+                                "Suitable domains for achieving activation include the HSV VP16 activation domain (see, e.g., Hagmann et al., J. Virol. 71, 5952-5962 (1997)) nuclear hormone receptors (see, e.g., Torchia et al., Curr. Opin. Cell. Biol. 10:373-383 (1998)); the p65 subunit of nuclear factor kappa B (Bitko & Barik, J. Virol. 72:5610-5618 (1998) and Doyle & Hunt, Neuroreport 8:2937-2942 (1997)); Liu et al., Cancer Gene Ther. 5:3-28 (1998)), or artificial chimeric functional domains such as VP64 (Beerli et al., (1998) Proc. Natl. Acad. Sci. USA 95:14623-33), and degron (Molinari et al., (1999) EMBO J. 18, 6439-6447). Additional exemplary activation domains include, Oct 1, Oct-2A, Sp1, AP-2, and CTF1 (Seipel et al., EMBO J. 11, 4961-4968 (1992) as well as p300, CBP, PCAF, SRC1 PvALF, AtHD2A and ERF-2. See, for example, Robyr et al. (2000) Mol. Endocrinol. 14:329-347; Collingwood et al. (1999) J. Mol. Endocrinol. 23:255-275; Leo et al. (2000) Gene 245:1-11; Manteuffel-Cymborowska (1999) Acta Biochim. Pol. 46:77-89; McKenna et al. (1999) J. Steroid Biochem. Mol. Biol. 69:3-12; Malik et al. (2000) Trends Biochem. Sci. 25:277-283; and Lemon et al. (1999) Curr. Opin. Genet. Dev. 9:499-504. Additional exemplary activation domains include, but are not limited to, OsGAI, HALF-1, C1, AP1, ARF-5, -6, -7, and -8, CPRF1, CPRF4, MYC-RP/GP, and TRAB1. See, for example, Ogawa et al. (2000) Gene 245:21-29; Okanami et al. (1996) Genes Cells 1:87-99; Goff et al. (1991) Genes Dev. 5:298-309; Cho et al. (1999) Plant Mol. Biol. 40:419-429; Ulmason et al. (1999) Proc. Natl. Acad. Sci. USA 96:5844-5849; Sprenger-Haussels et al. (2000) Plant J. 22:1-8; Gong et al. (1999) Plant Mol. Biol. 41:33-44; and Hobo et al. (1999) Proc. Natl. Acad. Sci. USA 96:15,348-15, 353.",
+                                "Exemplary repression domains include, but are not limited to, KRAB A/B, KOX, TGFbeta-inducible early gene (TIEG), v-erbA, SID, MBD2, MBD3, members of the DNMT family (e.g., DNMT1, DNMT3A, DNMT3B), Rb, and MeCP2. See, for example, Bird et al. (1999) Cell 99:451-454; Tyler et al. (1999) Cell 99:443-446; Knoepfler et al. (1999) Cell 99:447-450; and Robertson et al. (2000) Nature Genet. 25:338-342. Additional exemplary repression domains include, but are not limited to, ROM2 and AtHD2A. See, for example, Chem et al. (1996) Plant Cell 8:305-321; and Wu et al. (2000) Plant J. 22:19-27.",
+                                "The above polypeptides may also be fused with reporter or selection markers such as GFP and GUS as non limiting examples.\n\n\n- - By \u201ccatalytic domain\u201d is intended the protein domain or module of an\n    enzyme containing the active site of said enzyme; by active site is\n    intended the part of said enzyme at which catalysis of the substrate\n    occurs. Enzymes, but also their catalytic domains, are classified\n    and named according to the reaction they catalyze. The Enzyme\n    Commission number (EC number) is a numerical classification scheme\n    for enzymes, based on the chemical reactions they catalyze\n    (http://www.chem.qmul.ac.uk/iubmb/enzyme/).",
+                                "Said catalytic domain has preferably an enzymatic activity selected from the group consisting of nuclease activity, polymerase activity, kinase activity, phosphatase activity, methylase activity, topoisomerase activity, integrase activity, transposase activity or ligase activity. In another preferred embodiment, the catalytic domain fused to the MBBBD polypeptides of the present invention can be a transcription activator or repressor (i.e. a transcription regulator), or a protein that interacts with or modifies other proteins such as histones. Non-limiting examples of nucleic acid processing activities of said fusion MBBBD polypeptides of the present invention include, for example, creating or modifying epigenetic regulatory elements, making site-specific insertions, deletions, or repairs in DNA, controlling gene expression, and modifying chromatin structure.",
+                                "Catalytic domains that may be fused to the MBBBD polypeptides can be selected, for instance, from the group consisting of proteins Mmel, Colicin-E7 (CEA7_ECOLX), EndA, Endo I (END1_ECOLI), Human Endo G (NUCG_HUMAN), Bovine Endo G (NUCG_BOVIN), R.HinP1I, I-BasI, I-BmoI, I-HmuI, I-Tev-I, I-TevII, I-TevIII, I-TwoI, R.MspI, R.MvaI, NucA, NucM, Vvn, Vvn_CLS, Staphylococcal nuclease (NUC_STAAU), Staphylococcal nuclease (NUC_STAHY), Micrococcal nuclease (NUC_SHIFL), Endonuclease yncB, Endodeoxyribonuclease I (ENRN_BPT7), Metnase, Nb.BsrDI, BsrDI A, Nt.BspD6I (R.BspD6I large subunit), ss.BspD6I (R.BspD6I small subunit), R.PleI, MlyI, AlwI, Mva1269I, BsrI, BsmI, Nb.BtsCI, Nt.BtsCI, R1.BtsI, R2.BtsI, BbvCI subunit 1, BbvCI subunit 2, Bpu10I alpha subunit, Bpu10I beta subunit, BmrI, BfiI, I-CreI, hExoI (EXO1_HUMAN), Yeast ExoI (EXO1_YEAST), E. coli ExoI, Human TREX2, Mouse TREX1, Human TREX1, Bovine TREX1, Rat TREX1, Human DNA2, Yeast DNA2 (DNA2_YEAST), VP16, RBBP8 and Type IIS nucleases like Fok-I and functional variants thereof.",
+                                "By \u201cfunctional variants\u201d is intended a catalytically active variant of a protein, such variant can have additional properties compared to its parent protein. Amino acid sequence variants of the peptide can be prepared by mutations in the DNA which encodes the peptide. Such variant comprise, for example, deletions from, or insertions or substitutions of residues within the amino acid sequence. Any combination of deletion, insertion or substitutions may also be made to arrive at the final construct, provided that the final construct possesses the desired activity.",
+                                "The catalytic domain is preferably a nuclease domain and more preferably a domain having nuclease activity, like for instance I-Tev-I, Col E7, NucA and Fok-I.",
+                                "In a particular embodiment, said polypeptides that specifically target nucleic acid sequence of interest may be fused to any catalytic domains that require dimerization for activity. As non limiting example, said polypeptide may be fused to the type IIS FokI endonuclease domain or functional variant thereof which functions independently of the DNA binding domain and induces nucleic acid double-stranded cleavage as a dimer (Li, Wu et al. 1992; Kim, Cha et al. 1996). Amino acid sequence of FokI variants can be prepared by mutations in the DNA, which encodes the catalytic domain. Such variants include, for example, deletions from, or insertions or substitutions of, residues within the amino acid sequence. Any combination of deletion, insertion, and substitution may also be made to arrive at the final construct, provided that the final construct possesses the desired activity. Said nuclease domain of FokI variant according to the present invention comprises a fragment of a protein sequence having at least 80%, more preferably 90%, again more preferably 95% amino acid sequence identity with the protein sequence of FokI (SEQ ID NO.123).",
+                                "The targeted nucleic acid sequence of interest are preferably selected with respect to each other, such that the binding of the two fusion polypeptides to their respective target sites places each monomers of the endonuclease in a spatial orientation that allows the formation of a functional cleavage domain by dimerizing. In some embodiments, the spacer of the targeted nucleic acid sequences can be selected or varied to modulate MBBD nuclease specificity and activity. Thus in certain embodiment, the near edge of the target sites are separated by 5 to 50 nucleotides, preferably by 10-30 nucleotides or 25-40 nucleotides.",
+                                "In another particular embodiment, said fusion protein is a monomeric MBBBD-nuclease.",
+                                "A monomeric MBBBD-nuclease is a MBBBD that does not require dimerization for specific recognition and cleavage, such as the fusions of engineered MBBBD modules with the catalytic domain of I-TevI.",
+                                "I-TevI catalytic domain corresponds to the protein domain or module of an enzyme containing the active site of said enzyme; by active site is intended the part of said enzyme at which catalysis of the substrate occurs. In the scope of the present invention, I-TevI catalytic domain can provide nuclease activity.",
+                                "By \u201cnuclease catalytic domain\u201d is intended the protein domain comprising the active site of an endonuclease enzyme. Such nuclease catalytic domain may generate a cleavage in a nucleic acid target sequence that corresponds to either Double Strand Break (DSB) (cleavase activity) in a nucleic acid target or a single strand break in a nucleic acid target sequence (nickase activity).",
+                                "Said catalytic domain can be I-TevI or a variant thereof. In a preferred embodiment, said catalytic domain is a variant of catalytic domain of I-TevI designed from the N-terminal region of I-TevI. Said catalytic domain comprises a part of the protein sequence SEQ ID NO. 413. In a preferred embodiment, said I-TevI catalytic domain corresponds to the amino acid sequence of SEQ ID NO. 416 or SEQ ID NO: 417. Alternatively, amino acid sequence variants of the catalytic domain I-TevI can be prepared by mutations in the DNA, which encodes the catalytic domain. Such variants include, for example, deletions from, or insertions or substitutions of, residues within the amino acid sequence. Any combination of deletion, insertion, and substitution may also be made to arrive at the final construct, provided that the final construct possesses the desired activity.",
+                                "In a particular embodiment, said catalytic domain of I-TevI according to the present invention comprises a fragment of a protein sequence having at least 80%, more preferably 90%, again more preferably 95% amino acid sequence identity with the protein sequence SEQ ID NO. 413. In a preferred embodiment, said catalytic domain of I-TevI comprises a protein sequence having at least 80%, more preferably 90%, again more preferably 95% amino acid sequence identity with the protein sequence SEQ ID NO. 416 or SEQ ID NO. 417.",
+                                "TevI fused MBBBD nuclease interacts with two regions in target nucleic acid sequence: the recognition site and the cleavage site. Optimal distances in the target nucleic acid sequence for the relative positioning of the binding and cleavage modules in the TevI fused MBBBD polypeptide have been determined. Thus, the present invention relates to a MBBBD polypeptide capable of targeting a nucleic acid sequence that comprises a recognition site spaced away from said I-TevI cleavage site by an optimal distance to increase DNA processing activity.",
+                                "Increased DNA processing activity refers to an increase in the detected level of MBBBD nuclease processing activity against a target nucleic acid sequence. In the present invention, nucleic acid processing activity refers to a cleavage, either a cleavase activity or a nickase activity. By optimal distance is intended the distance between said recognition site and I-TevI cleavage site allowing an increase in DNA processing activity of the TevI chimeric endonuclease. An optimal distance is considered when it provides at least a 5% increase efficiency of DNA processing activity, more preferably 10%, again more preferably 15%, again more preferably 20%, again more preferably 25%, again more preferably 50%, again more preferably greater than 50%.",
+                                "In particular embodiment, DNA binding recognition site is also chosen based upon its optimal spacer between the residue preceded the first nucleic acid base of DNA binding recognition site and the terminal G base of the I-TevI cleavage site. In a preferred embodiment, the optimal spacer distance is between 1 to 50 bp, more preferably between 4 to 12 bp, again more preferably is 4, 5, 6, 7, 8, 9, 10, 11 or 12 bp.",
+                                "In certain embodiment, the nuclease is a meganuclease (homing endonuclease) or variant thereof. Naturally-occurring meganucleases recognize 15-40 base-pair cleavage sites and are commonly grouped into four families: the LAGLIDADG family, the GIY-YIG family, the His-Cyst box family and the HNH family. Exemplary homing endonucleases include I-Sce I, I-Chu I, I-Cre I, I-Csm I, PI-Sce I, PI-Tli I, PI-Mtu I, I-Ceu I, I-Sce II, I-Sce III, HO, PI-Civ I, PI-Ctr I, PI-Aae I, PI-Bsu I, PI-Dha I, PI-Dra I, PI-May I, PI-Mch I, PI-Mfu I, PI-Mfl I, PI-Mga I, PI-Mgo I, PI-Min I, PI-Mka I, PI-Mle I, PI-Mma I, PI-Msh I, PI-Msm I, PI-Mth I, PI-Mtu I, PIMxe I, PI-Npu I, PI-Pfu I, PI-Rma I, PI-Spb I, PI-Ssp I, PI-Fac I, PI-Mja I, PI-Pho I, PI-Tag I, PI-Thy I, PI-Tko I, PI-Tsp I or I-MsoI, PI-PspI, I-SceIV, I-Pant, I-OnuI, I-PpoI, I-TevI, I-TevII and I-TevIII. In a preferred embodiment, the homing endonuclease according to the invention is a LAGLIDADG endonuclease such as I-SceI, I-CreI, I-CeuI, I-OnuI, I-MsoI, and I-Drool. In a most preferred embodiment, said LAGLIDADG endonuclease is I-CreI. Wild-type I-CreI is a homodimeric homing endonuclease that is capable of cleaving a 22 to 24 bp double-stranded target sequence.",
+                                "In the present application, homing endonuclease variants such as I-CreI may be homodimers (meganuclease comprising two identical monomers) or heterodimers (meganuclease comprising two non-identical monomers). It is understood that the scope of the present invention also encompasses the homing endonuclease variants per se, including heterodimers (WO2006097854), obligate heterodimers (WO2008093249) and single chain meganucleases (WO03078619 and WO2009095793) as non limiting examples, able to cleave one of the sequence targets in the cell genome. The invention also encompasses hybrid variant per se composed of two monomers from different origins (WO03078619).",
+                                "The invention encompasses both wild-type and variant endonucleases. In a preferred embodiment, the endonuclease according to the invention is a \u201cvariant\u201d endonuclease, i.e. an endonuclease that does not naturally exist in nature and that is obtained by genetic engineering or by random mutagenesis. The variant endonuclease according to the invention can for example be obtained by substitution of at least one residue in the amino acid sequence of a wild-type, endonuclease with a different amino acid. Said substitution(s) can for example be introduced by site-directed mutagenesis and/or by random mutagenesis. In the frame of the present invention, such variant endonucleases remain functional, i.e. they retain the capacity of recognizing and specifically cleaving a target sequence. The variant endonuclease according to the invention cleaves a target sequence that is different from the target sequence of the corresponding wild-type endonuclease. Methods for obtaining such variant endonucleases with novel specificities are well-known in the art.",
+                                "Said catalytic domain might be at the N-terminal part or C-terminal part of said MBBBD. In a particular embodiment, Said catalytic domain is fused to MBBBD by a peptide linker. Peptide linker acts as a communication device between the MBBBD polypeptide and catalytic domain to act in concert for nucleic acid cleavage. Said peptide linkers can be of various sizes, preferably from 2 to 50 amino acids, more preferably from 3 to 10 amino acids and can be selected from the group consisting of NFS1, NFS2, CFS1, RM2, BQY, QGPSG, LGPDGRKA, 1a8h\u20141, 1dnpA\u20141, 1d8cA\u20142, 1ckqA\u20143, 1sbp\u20141, 1ev7A\u20141, 1alo\u20143, 1amf\u20141, 1adjA\u20143, 1fcdC\u20141, 1al3\u20142, 1g3p\u20141, 1acc\u20143, 1ahjB\u20141, 1acc\u20141, 1af7\u20141, 1heiA\u20141, 1bia\u20142, 1igtB\u20141, 1nfkA\u20141, 1au7A\u20141, 1 bpoB\u20141, 1b0pA\u20142, 1c05A\u20142, 1gcb\u20141, 1bt3A\u20141, 1b3oB\u20142, 16vpA\u20146, 1dhx\u20141, 1b8aA\u20141 and 1qu6A\u20141 and peptide linkers listed in Table 34 (SEQ ID NO.451 to SEQ ID NO.535).",
+                                "In a more preferred embodiment, the peptide linker that can link said catalytic domain to the MBBBD polypeptide according to the method of the present invention can be selected from the group consisting of GRSGSDP (SEQ ID NO: 489), QGPSG (SEQ ID NO: 487), IA (SEQ ID NO.90) or SG (SEQ ID NO: 491). Peptide linkers between the MBBBD polypeptide and the catalytic domain can be constructed to be either flexible or positionally constrained to allow for the most efficient activity targeted nucleic acid processing.",
+                                "Example 1 below shows that the above polypeptides have the ability to dimerize when fused to the catalytic domain of the nuclease Fok-I. A fusion of BurrH\u201436 with Fok-I has been achieved to form a sequence specific nuclease being able to cut a putative artificial nucleic acid target. Interestingly, this fusion experiment revealed that, contrary to TALE-Nucleases, there was no requirement for T in the target DNA sequence for the first module to bind said nucleic acid target. It is unclear at the moment whether it is due to the N-terminus (SEQ ID NO.7) or to the first module (SEQ ID NO.11) of the BurrH protein. However, these polypeptides provide a significant advantage over the TALE-Nuclease of the prior art in this regard.",
+                                "Accordingly, the invention also provides modular polypeptides or N-terminal sequences to alleviate the requirement of a T in sequences to be targeted by a TALE or TALE-like binding domain. Such module or N-terminal domain according to the invention may thus be introduced in TALE or TALE-like repeat binding domains to overcome the requisite T nucleotide at position \u22121 in nucleic acid target sequences.",
+                                "Truncations, spacers and linkers may be added by one skilled in the art to the polypeptides according to the invention to optimize their binding activity or the catalytic activity conferred by their catalytic domains. The catalytic domain that is capable of processing genetic material withinin or adjacent the nucleic acid target sequence of interest can be fused to the N- or C-terminus part of said binding domains of the invention. In a preferred embodiment two catalytic domains having complementary or distinct activities are fused to both N-terminus and C-terminus parts of said binding domains."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define fusion proteins",
+                                "introduce catalytic domains",
+                                "list examples of catalytic domains",
+                                "describe nuclease activity",
+                                "introduce transcription activator or repressor domains",
+                                "describe non-limiting examples of nucleic acid processing activities",
+                                "list examples of catalytic domains that may be fused",
+                                "describe functional variants of catalytic domains",
+                                "introduce type IIS FokI endonuclease domain",
+                                "describe dimerization requirement for activity",
+                                "introduce FokI variant preparation",
+                                "describe targeted nucleic acid sequence selection",
+                                "introduce monomeric MBBBD-nuclease",
+                                "describe I-TevI catalytic domain",
+                                "introduce nuclease catalytic domain",
+                                "describe I-TevI variant preparation",
+                                "introduce optimal distance for DNA processing activity",
+                                "describe DNA binding recognition site selection",
+                                "introduce optimal spacer distance",
+                                "describe meganuclease or variant thereof",
+                                "list examples of homing endonucleases",
+                                "introduce LAGLIDADG endonuclease",
+                                "describe I-CreI homing endonuclease",
+                                "introduce homing endonuclease variants",
+                                "describe hybrid variant endonucleases",
+                                "introduce variant endonuclease preparation",
+                                "describe catalytic domain fusion to MBBBD",
+                                "introduce peptide linker",
+                                "list examples of peptide linkers",
+                                "describe peptide linker construction",
+                                "introduce example of polypeptide dimerization",
+                                "describe BurrH\u201436 fusion with Fok-I",
+                                "introduce advantage over TALE-Nuclease",
+                                "describe modular polypeptides or N-terminal sequences",
+                                "introduce truncations, spacers, and linkers",
+                                "describe catalytic domain fusion to binding domains"
+                            ],
+                            "num_characters": 18367,
+                            "outline_medium": [
+                                "define fusion proteins",
+                                "describe catalytic domains",
+                                "list examples of catalytic domains",
+                                "describe nuclease activity",
+                                "describe polymerase activity",
+                                "describe kinase activity",
+                                "describe phosphatase activity",
+                                "describe methylase activity",
+                                "describe topoisomerase activity",
+                                "describe integrase activity",
+                                "describe transposase activity",
+                                "describe ligase activity",
+                                "describe repression domains",
+                                "list examples of repression domains",
+                                "describe functional variants",
+                                "describe dimerization for activity",
+                                "describe monomeric MBBBD-nuclease",
+                                "describe optimal distances for DNA processing activity"
+                            ],
+                            "outline_short": [
+                                "define fusion proteins",
+                                "list catalytic domains for fusion",
+                                "describe nuclease activity",
+                                "introduce transcription activator or repressor domains",
+                                "describe dimerization for activity",
+                                "introduce monomeric MBBBD-nuclease",
+                                "describe I-TevI catalytic domain",
+                                "introduce meganuclease or variant thereof",
+                                "describe peptide linkers for fusion"
+                            ]
+                        },
+                        {
+                            "title": "Chimeric Proteins",
+                            "paragraphs": [
+                                "According to a further aspect of the invention, the polypeptides and fusion proteins previously described can be used to create chimeric proteins, which incorporate sequences from AvrBs3-like proteins, in particular repeats, N-terminal or C-terminal sequences thereof.",
+                                "Accordingly, the invention provides engineered TALE-like proteins with a binding domain comprising a mix of the modules according to the invention and of AvrBs3-like repeats. By providing a larger choice of modules of various affinities with the nucleic acid bases, it is intended to increase the modularity and the various possibilities of assembly within MBBBDs to create customized nucleic acid binding domains.",
+                                "Meanwhile, new scaffolds can be derived from AvrBs3-like proteins comprising a module, N or C terminals, or any functional part of the polypeptides from E5AV36, E5AW43, E5AW45, E5AW46, JCVI_A, JCVI_B and ECR81667 previously described. More generally, the chimeric protein of the present invention can be derived from any naturally occurring TAL effectors, such as those described by (Moscou and Bogdanove 2009) and in WO 2011072246, that comprise repeats of 33 to 35 amino acids, wherein two critical amino acids located at positions 12 and 13 (RVD) mediate specific nucleic acid base recognition. In such chimeric proteins, the following RVDs can be used: HD for recognizing C, NG for recognizing T, NI for recognizing A, NN for recognizing G or A, NS for recognizing A, C, G or T, HG for recognizing T, IG for recognizing T, NK for recognizing G, HA for recognizing C, ND for recognizing C, HI for recognizing C, HN for recognizing G, NA for recognizing G, SN for recognizing G or A and YG for recognizing T, TL for recognizing A, VT for recognizing A or G and SW for recognizing A. More preferably, RVDs associated with recognition of the nucleotides C, T, A, G/A and G respectively are selected from the group consisting of NN or NK for recognizing G, HD for recognizing C, NG for recognizing T and NI for recognizing A, TL for recognizing A, VT for recognizing A or G and SW for recognizing A. In another embodiment, RVDs associated with recognition of the nucleotide C are selected from the group consisting of N* and RVDS associated with recognition of the nucleotide T are selected from the group consisting of N* and H*, where * denotes a gap in the repeat sequence that corresponds to a lack of amino acid residue at the second position of the RVD. In another embodiment, critical amino acids 12 and 13 can be mutated towards other amino acid residues in order to modulate their specificity towards nucleotides A, T, C and G and in particular to enhance this specificity. By other amino acid residues is intended any of the twenty natural amino acid residues or unnatural amino acids derivatives. All these RVDs can be used in addition to those with respect to the present invention, especially: NT, **, KG, NR, RN, HS, HH and/or HK.",
+                                "As non limiting examples, chimeric MBBBD protein may be created by combining modules domains from E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 proteins with repeat domain of AvrBs3-like proteins, by combining modules domains from E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 proteins with the N- and C-terminal domains of AvrBs3-like proteins, by combining N and C-terminal domains of E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 proteins with repeat domain of AvrBs3-like proteins, by combining the N-terminal domain of AvrBs3-like proteins with modules domain and C-terminal from E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667, by combining part of C-terminal domain of E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 with part of C-terminal domain of AvrBs3-like protein or other protein sequences as nuclear export signal sequence (see example 9, SEQ ID NO: 259 to SEQ ID NO. 261 and SEQ ID NO; 271 to 274), by combining part of N-terminal domain of E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 with part of N-terminal domain of AvrBs3-like protein, or by combining part of DNA binding modules of E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI_B and ECR81667 with part of repeat domain of AvrBs3-like protein More generally, the protein domains from the E5AV36, E5AW43, E5AW45, E5AW46, JCVI_A, JCVI_B and ECR81667 proteins (module domain, N-terminal domain, C-terminal domain) may be used in combination with the complementary domains of classical TAL effectors. A most preferred chimeric protein comprises modules from E5AV36 with a N-terminal from AvrBs3 (see example 12, SEQ ID NO. 370 and SEQ ID NO. 372)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "create chimeric proteins with AvrBs3-like repeats",
+                                "engineer TALE-like proteins with mixed modules",
+                                "derive new scaffolds from AvrBs3-like proteins",
+                                "use naturally occurring TAL effectors as templates",
+                                "select RVDs for nucleic acid base recognition",
+                                "mutate critical amino acids for modulated specificity",
+                                "create chimeric MBBBD proteins with various domains",
+                                "combine modules from different proteins",
+                                "design chimeric proteins with nuclear export signal sequences"
+                            ],
+                            "num_characters": 4620,
+                            "outline_medium": [
+                                "create chimeric proteins with AvrBs3-like repeats",
+                                "derive new scaffolds from AvrBs3-like proteins",
+                                "combine modules from E5AV36, E5AW43, E5AW45, EAW46, JCVI_A, JCVI",
+                                "create chimeric MBBBD protein with repeat domain of AvrBs3-like proteins"
+                            ],
+                            "outline_short": [
+                                "create chimeric proteins with AvrBs3-like repeats",
+                                "derive new scaffolds from AvrBs3-like proteins"
+                            ]
+                        },
+                        {
+                            "title": "Polynucleotides",
+                            "paragraphs": [
+                                "The invention also concerns the polynucleotides, in particular DNA or RNA encoding the polypeptides and proteins previously described. These polynucleotides may be included in vectors, more particularly plasmids or virus, in view of being expressed in prokaryotic or eukaryotic cells. The polynucleotides of SEQ ID NO.112 to 120 correspond to the sequences that have been identified according to the invention in the genomic databases. Polynucleotides according to the invention encompass polynucleotides having at least 80%, preferably at least 90%, more preferably at least 95 and even more preferably 99% identity with the above polynucleotide sequences.",
+                                "The terms \u201cvector\u201d or \u201cvectors\u201d refer to a nucleic acid molecule capable of transporting another nucleic acid to which it has been linked. A \u201cvector\u201d in the present invention includes, but is not limited to, a viral vector, a plasmid, a RNA vector or a linear or circular DNA or RNA molecule which may consists of a chromosomal, non-chromosomal, semi-synthetic or synthetic nucleic acids. Preferred vectors are those capable of autonomous replication (episomal vector) and/or expression of nucleic acids to which they are linked (expression vectors). Large numbers of suitable vectors are known to those of skill in the art and commercially available. Viral vectors include retrovirus, adenovirus, parvovirus (e.g. adenoassociated viruses), coronavirus, negative strand RNA viruses such as orthomyxovirus (e.g., influenza virus), rhabdovirus (e.g., rabies and vesicular stomatitis virus), paramyxovirus (e.g. measles and Sendai), positive strand RNA viruses such as picornavirus and alphavirus, and double-stranded DNA viruses including adenovirus, herpesvirus (e.g., Herpes Simplex virus types 1 and 2, Epstein-Barr virus, cytomegalovirus), and poxvirus (e.g., vaccinia, fowlpox and canarypox). Other viruses include Norwalk virus, togavirus, flavivirus, reoviruses, papovavirus, hepadnavirus, and hepatitis virus, for example. Examples of retroviruses include: avian leukosis-sarcoma, mammalian C-type, B-type viruses, D type viruses, HTLV-BLV group, lentivirus, spumavirus (Coffin, J. M., Retroviridae: The viruses and their replication, In Fundamental Virology, Third Edition, B. N. Fields, et al., Eds., Lippincott-Raven Publishers, Philadelphia, 1996).",
+                                "Preferred vectors are viral vectors, more particularly lentiviral vectors. \u201cviral vector\u201d refers to a nucleic acid construct which carries, and within certain embodiments, is capable of directing the expression of a nucleic acid molecule of interest. The lentiviral vector can include at least one transcriptional promoter/enhancer or locus defining element(s), or other elements which control gene expression by other means such as alternate splicing, nuclear RNA export, post-translational modification of messenger, or post-transcriptional modification of protein. Such vector constructs can also include a packaging signal, long terminal repeats (LTRs) or portion thereof, and positive and negative strand primer binding sites appropriate to the retrovirus used (if these are not already present in the retroviral vector). Optionally, the recombinant lentiviral vector may also include a signal which directs polyadenylation, selectable markers such as Neo, TK, hygromycin, phleomycin, histidinol, or DHFR, as well as one or more restriction sites and a translation termination sequence. By way of example, such vectors typically include a 5\u2032 LTR, a tRNA binding site, a packaging signal, an origin of second strand DNA synthesis, and a 3\u2032 LTR or a portion thereof. Viral vectors include retrovirus, adenovirus, parvovirus (e.g. adenoassociated viruses), coronavirus, negative strand RNA viruses such as orthomyxovirus (e.g., influenza virus), rhabdovirus (e.g., rabies and vesicular stomatitis virus), paramyxovirus (e.g. measles and Sendai), positive strand RNA viruses such as picornavirus and alphavirus, and double-stranded DNA viruses including adenovirus, herpesvirus (e.g., Herpes Simplex virus types 1 and 2, Epstein-Barr virus, cytomegalovirus), and poxvirus (e.g., vaccinia, fowlpox and canarypox). Other viruses include Norwalk virus, togavirus, flavivirus, reoviruses, papovavirus, hepadnavirus, and hepatitis virus, for example. Examples of retroviruses include: avian leukosis-sarcoma, mammalian C-type, B-type viruses, D type viruses, HTLV-BLV group, lentivirus, spumavirus (Coffin, J. M., Retroviridae: The viruses and their replication, In Fundamental Virology, Third Edition, B. N. Fields, et al., Eds., Lippincott-Raven Publishers, Philadelphia, 1996). More preferably, the present invention relates to a viral vector, preferably a lentiviral vector which comprises polynucleotide encoding MBBBD or MBBBD-fusion protein as described above. Any of these vectors can comprise one or more polynucleotide encoding MBBBD or MBBBD-fusion proteins. As non limiting example, one vector can comprise two sequences encoding two MBBBD monomers which can recognize different adjacent nucleic acid target sequences and the two protein domains function as subdomains that need to interact in order to process the genetic sequence. One vector can also comprise two sequences encoding two monomeric MBBBD which recognize and process two different nucleic acid target sequences.",
+                                "\u201cViral particle\u201d as utilized within the present invention refers to a virus which carries at least one gene of interest. The virus may also contain a selectable marker. For instance, HIV type 1 (HIV-1) based vector particles may be generated by co-expressing the virion packaging elements and the vector genome in a so-called producer cell, e.g. 293T human embryonic kidney cells. These cells may be transiently transfected with a number of plasmids. Typically from three to four plasmids are employed, but the number may be greater depending upon the degree to which the lentiviral components are broken up into separate units. Generally, one plasmid encodes the core and enzymatic components of the virion, derived from HIV-1. This plasmid is termed the packaging plasmid. Another plasmid encodes the envelope protein(s), most commonly the G protein of vesicular stomatitis virus (VSV G) because of its high stability and broad tropism. This plasmid may be termed the envelope expression plasmid. Yet another plasmid encodes the genome to be transferred to the target cell, that is, the vector itself, and is called the transfer vector. Recombinant viruses with titers of several millions of transducing units per milliliter (TU/ml) can be generated by this technique and variants thereof. After ultracentrifugation concentrated stocks of approximately 109 TU/ml can be obtained. The lentivirus is capable of reverse transcribing its genetic material into DNA and incorporating this genetic material into a host cell's DNA upon infection. Lentiviral vector particles may have a lentiviral envelope, a non-lentiviral envelope (e.g., an ampho or VSV-G envelope), or a chimeric envelope. The present invention relates to a viral, preferably a lentiviral particle which comprises polynucleotides encoding MBBBD or MBBBD-fusion protein as described above."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "encode polypeptides and proteins with polynucleotides",
+                                "include polynucleotides in vectors for expression",
+                                "define vectors as nucleic acid molecules",
+                                "describe viral vectors, including retrovirus and lentivirus",
+                                "list examples of viral vectors",
+                                "describe lentiviral vectors with polynucleotides",
+                                "include packaging signal, LTRs, and primer binding sites",
+                                "add signal for polyadenylation and selectable markers",
+                                "define viral particles with genes of interest",
+                                "generate recombinant viruses with high titers",
+                                "concentrate viral stocks through ultracentrifugation",
+                                "describe lentiviral particles with MBBBD or fusion proteins",
+                                "provide examples of viral envelopes",
+                                "relate to viral particles with polynucleotides encoding MBBBD"
+                            ],
+                            "num_characters": 7158,
+                            "outline_medium": [
+                                "concern polynucleotides encoding polypeptides and proteins",
+                                "include polynucleotides in vectors for expression in prokaryotic or eukaryotic cells",
+                                "define vectors and viral vectors",
+                                "describe lentiviral vectors and their components",
+                                "provide examples of viral vectors and their uses",
+                                "define viral particles and their generation",
+                                "relate to viral particles with polynucleotides encoding MBBBD or MBBBD-fusion proteins"
+                            ],
+                            "outline_short": [
+                                "describe polynucleotides encoding polypeptides and proteins",
+                                "discuss vectors for expressing polynucleotides",
+                                "define viral vectors, including lentiviral vectors"
+                            ]
+                        },
+                        {
+                            "title": "Methods for Processing the Genetic Material of a Cell",
+                            "paragraphs": [
+                                "The present invention relates to a method of processing a nucleic acid target sequence of a cell, comprising: (a) providing a cell containing a target nucleic acid sequence; and (b) introducing into the cell a nucleic acid binding polypeptide such that said polypeptide processes the nucleic acid target sequence. Said nucleic acid binding polypeptide can be designed to recognize any suitable nucleic acid target sequence.",
+                                "The term \u201cprocessing\u201d as used herein means that the sequence is considered modified simply by the binding of the polypeptide. Any nucleic acid target sequence can be processed by the present methods. For example, the nucleic acid target sequence can be chromosomal, mitochondrial or chloroplast sequences.",
+                                "In another aspect, a method of processing the genetic material of a cell within or adjacent to a nucleic acid target sequence is provided by introducing into the cell fusion MBBBD polypeptides. Catalytic domain of the fusion protein of the present invention can be a transcription activator or repressor (i.e. a transcription regulator), or a protein that interacts with or modifies other proteins implicated in nucleic acid processing. Non-limiting examples of nucleic acid processing activities of said fusion polypeptides of the present invention include, for example, creating or modifying epigenetic regulatory elements, making site-specific insertions, deletions, or repairs in DNA, controlling gene expression, and modifying chromatin structure. Said nucleic acid processing activity can refer to a cleavage activity, either a cleavase activity either a nickase activity, more broadly a nuclease activity but also a polymerase activity, a kinase activity, a phosphatase activity, a methylase activity, a topoisomerase activity, an integrase activity, a transposase activity, a ligase, a helicase or recombinase activity as non-limiting examples.",
+                                "By cell or cells is intended any prokaryotic or eukaryotic living cells, cell lines derived from these organisms for in vitro cultures, primary cells from animal or plant origin.",
+                                "By \u201cprimary cell\u201d or \u201cprimary cells\u201d are intended cells taken directly from living tissue (i.e. biopsy material) and established for growth in vitro, that have undergone very few population doublings and are therefore more representative of the main functional components and characteristics of tissues from which they are derived from, in comparison to continuous tumorigenic or artificially immortalized cell lines. These cells thus represent a more valuable model to the in vivo state they refer to.",
+                                "In the frame of the present invention, \u201ceukaryotic cells\u201d refer to a yeast, fungal, plant or animal cell or a cell line derived from the organisms listed below and established for in vitro culture. More preferably, the fungus is of the genus Aspergillus, Penicillium, Acremonium, Trichoderma, Chrysoporium, Mortierella, Kluyveromyces or Pichia. More preferably the plant is of the genus Arabidospis, Nicotiana, Solanum, lactuca, Brassica, Glycine, Oryza, Asparagus, Pisum, Medicago, Zea, Hordeum, Secale, Triticum, Capsicum, Cucumis, Cucurbita, Citrullis, Citrus, or Sorghum.",
+                                "More preferably the animal cell is of the genus Homo, Rattus, Mus, Sus, Bos, Danio, Canis, Felis, Equus, Salmo, Oncorhynchus, Gallus, Meleagris, Drosophila, or Caenorhabditis;",
+                                "In the present invention, the cell can be a plant cell, a mammalian cell, a fish cell, an insect cell or cell lines derived from these organisms for in vitro cultures or primary cells taken directly from living tissue and established for in vitro culture. As non-limiting examples, cell can be protoplasts obtained from plant organisms listed above. As non-limiting examples cell lines can be selected from the group consisting of CHO-K1 cells; HEK293 cells; Caco2 cells; U2-OS cells; NIH 3T3 cells; NSO cells; SP2 cells; CHO-S cells; DG44 cells; K-562 cells, U-937 cells; MRC5 cells; IMR90 cells; Jurkat cells; HepG2 cells; HeLa cells; HT-1080 cells; HCT-116 cells; Hu-h7 cells; Huvec cells; Molt 4 cells.",
+                                "All these cell lines can be modified by the method of the present invention to provide cell line models to produce, express, quantify, detect, study a gene or a protein of interest; these models can also be used to screen biologically active molecules of interest in research and production and various fields such as chemical, biofuels, therapeutics and agronomy as non-limiting examples. Adoptive immunotherapy using genetically engineered T cells is a promising approach for the treatment of malignancies and infectious diseases. Most current approaches rely on gene transfer by random integration of an appropriate T Cell Receptor (TCR) or Chimeric Antigen Receptor (CAR). Targeted approach using rare-cutting endonucleases is an efficient and safe alternative method to transfer genes into T cells and generate genetically engineered T cells."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide cells with target nucleic acid sequences",
+                                "introduce nucleic acid binding polypeptides into cells",
+                                "process nucleic acid target sequences through binding",
+                                "introduce fusion MBBBD polypeptides into cells",
+                                "describe catalytic domains of fusion proteins",
+                                "list examples of nucleic acid processing activities",
+                                "define cells as prokaryotic or eukaryotic living cells",
+                                "describe primary cells and cell lines",
+                                "provide examples of eukaryotic cells and organisms"
+                            ],
+                            "num_characters": 4879,
+                            "outline_medium": [
+                                "provide method of processing nucleic acid target sequence",
+                                "introduce nucleic acid binding polypeptide into cell",
+                                "describe fusion MBBBD polypeptides and their activities",
+                                "define cells and cell lines that can be used in the method"
+                            ],
+                            "outline_short": [
+                                "introduce nucleic acid binding polypeptides into cells",
+                                "process genetic material using fusion MBBBD polypeptides"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Genetic Engineering/Gene Editing/Mutagenesis",
+                            "paragraphs": [
+                                "The present invention also relates to methods for use of said polypeptides polynucleotides and proteins previously described for various applications ranging from targeted nucleic acid cleavage to targeted gene regulation. In genome engineering experiments, the efficiency of nuclease fusion protein or chimeric protein as referred to in the present patent application, e.g. their ability to induce a desired event (Homologous gene targeting, targeted mutagenesis, sequence removal or excision) at a locus, depends on several parameters, including the specific activity of the nuclease, probably the accessibility of the target, and the efficacy and outcome of the repair pathway(s) resulting in the desired event (homologous repair for gene targeting, NHEJ pathways for targeted mutagenesis). The present invention more particularly relates to a method for modifying the genetic material of a cell within or adjacent to a nucleic acid target sequence. The double strand breaks caused by endonucleases are commonly repaired through non-homologous end joining (NHEJ). NHEJ comprises at least two different processes. Mechanisms involve rejoining of what remains of the two DNA ends through direct re-ligation (Critchlow and Jackson 1998) or via the so-called microhomology-mediated end joining (Ma, Kim et al. 2003). Repair via non-homologous end joining (NHEJ) often results in small insertions or deletions and can be used for the creation of specific gene knockouts. The present invention related to a method for modifying the genetic material of a cell within or adjacent to a nucleic acid target sequence by using nuclease MBBBD fusion protein or chimeric protein according to the invention that allows nucleic acid cleavage that will lead to the loss of genetic information and any NHEJ pathway will produce targeted mutagenesis. In a preferred embodiment, the present invention related to a method for modifying the genetic material of a cell within or adjacent to a nucleic acid target sequence by generating at least one nucleic acid cleavage and a loss of genetic information around said target nucleic acid sequence thus preventing any scarless re-ligation by NHEJ. Said modification may be a deletion of the genetic material, insertion of nucleotides in the genetic material or a combination of both deletion and insertion of nucleotides.",
+                                "By \u201chomologous\u201d is intended a sequence with enough identity to another one to lead to homologous recombination between sequences, more particularly having at least 95% identity, preferably 97% identity and more preferably 99%.",
+                                "The present invention also relates to a method for modifying target nucleic acid sequence further comprising the step of expressing an additional catalytic domain into a host cell. In a more preferred embodiment, the present invention relates to a method to increase mutagenesis wherein said additional catalytic domain is a DNA end-processing enzyme. Non limiting examples of DNA end-processing enzymes include 5-3\u2032 exonucleases, 3-5\u2032 exonucleases, 5-3\u2032 alkaline exonucleases, 5\u2032 flap endonucleases, helicases, hosphatase, hydrolases and template-independent DNA polymerases. Non limiting examples of such catalytic domain comprise of a protein domain or catalytically active derivate of the protein domain seleced from the group consisting of hExoI (EXO1_HUMAN), Yeast ExoI (EXO1_YEAST), E. coli ExoI, Human TREX2, Mouse TREX1, Human TREX1, Bovine TREX1, Rat TREX1, TdT (terminal deoxynucleotidyl transferase) Human DNA2, Yeast DNA2 (DNA2_YEAST). In a preferred embodiment, said additional catalytic domain has a 3\u2032-5\u2032-exonuclease activity, and in a more preferred embodiment, said additional catalytic domain has TREX exonuclease activity, more preferably TREX2 activity (WO2012058458). In another preferred embodiment, said catalytic domain is encoded by a single chain TREX polypeptide (WO2013009525). Said additional catalytic domain may be fused to a nuclease fusion protein or chimeric protein according to the invention optionally by a peptide linker.",
+                                "Endonucleolytic breaks are known to stimulate the rate of homologous recombination. Therefore, in another preferred embodiment, the present invention relates to a method for inducing homologous gene targeting in the target nucleic acid sequence further comprising providing to the cell an exogeneous nucleic acid comprising at least a sequence homologous to a portion of the target nucleic acid sequence, such that homologous recombination occurs between the target nucleic acid sequence and the exogeneous nucleic acid.",
+                                "Said exogenous nucleic acid usually comprises a sequence homologous to at least a portion of the target nucleic acid sequence, such that homologous recombination occurs between the target nucleic acid sequence and the exogenous nucleic acid. In particular embodiments, said exogenous nucleic acid comprises first and second portions which are homologous to region 5\u2032 and 3\u2032 of the target nucleic acid, respectively. Said exogenous nucleic acid in these embodiments also comprises a third portion positioned between the first and the second portion which comprises no homology with the regions 5\u2032 and 3\u2032 of the target nucleic acid sequence. Following cleavage of the target nucleic acid sequence, a homologous recombination event is stimulated between the genome containing the target nucleic acid sequence and the exogenous nucleic acid. Preferably, homologous sequences of at least 50 bp, preferably more than 100 bp and more preferably more than 200 bp are used within said donor matrix. Therefore, the exogenous nucleic acid is preferably from 200 bp to 6000 bp, more preferably from 1000 bp to 2000 bp. Indeed, shared nucleic acid homologies are located in regions flanking upstream and downstream the site of the break and the nucleic acid sequence to be introduced should be located between the two arms.",
+                                "In particular embodiments, said exogenous nucleic acid can comprise a positive selection marker between the two homology arms and eventually a negative selection marker upstream of the first homology arm or downstream of the second homology arm. The marker(s) allow(s) the selection of the cells having inserted the sequence of interest by homologous recombination at the target site. Depending on the location of the targeted genome sequence wherein break event has occurred, such exogenous nucleic acid can be used to knock-out a gene, e.g. when exogenous nucleic acid is located within the open reading frame of said gene, or to introduce new sequences or genes of interest. Sequence insertions by using such exogenous nucleic acid can be used to modify a targeted existing gene, by correction or replacement of said gene (allele swap as a non-limiting example), or to up- or down-regulate the expression of the targeted gene (promoter swap as non-limiting example), said targeted gene correction or replacement.",
+                                "The methods of the invention involve introducing a polynucleotide encoding MBBBD polypeptide into a cell. Methods for introducing a polynucleotide construct into bacteria, plants, fungi and animals are known in the art and including as non limiting examples stable transformation methods wherein the polynucleotide construct is integrated into the genome of the cell, transient transformation methods wherein the polynucleotide construct is not integrated into the genome of the cell and virus mediated methods. Said polynucleotides encoding MBBBD polypeptide may be introduced into a cell by for example, recombinant viral vectors (e.g. retroviruses, adenoviruses), liposomes and the like. For example, transient transformation methods include for example microinjection, electroporation, particle bombardment The MBBD polypeptide may be synthesized in situ in the cell as a result of the introduction of polynucleotide encoding polypeptide into the cell. Alternatively, the MBBBD polypeptide could be produced outside the cell and then introduced thereto.",
+                                "In a preferred embodiment of the invention, the method for targeting genetic material of a cell comprises providing a cell comprising a nucleic acid target and introducing the polynucleotide encoding MBBBD or MBBBD fusion protein as described above into the cell via a viral particle, and expressing said polynucleotide within the cell. In particular, the viral particle comprises the polynucleotide and said polynucleotide is introduced into the cell by contacting said cell with the viral particle under condition that permits infection.",
+                                "Engineered MBBBD polypeptides can be produced by rearranging modules thus allowing the generation of modular domain with novel target nucleic acid specificity. Each different MBBBD modules can be engineered following the recognition code according to the present invention. The present invention relates to a method to produce MBBBD polypeptides capable of binding to any desired nucleic acid target sequence by assembling the different engineered MBBBD modules in the appropriate order."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe genome engineering experiments",
+                                "define parameters for nuclease fusion protein efficiency",
+                                "explain non-homologous end joining (NHEJ) repair pathway",
+                                "describe microhomology-mediated end joining",
+                                "outline method for modifying genetic material using nuclease MBBBD fusion protein",
+                                "define homologous recombination",
+                                "describe method for modifying target nucleic acid sequence",
+                                "introduce additional catalytic domain for increasing mutagenesis",
+                                "list examples of DNA end-processing enzymes",
+                                "describe method for inducing homologous gene targeting",
+                                "outline structure of exogenous nucleic acid",
+                                "describe homologous recombination event",
+                                "explain use of positive and negative selection markers",
+                                "describe gene knockout, correction, and regulation",
+                                "outline methods for introducing polynucleotide construct into cells",
+                                "describe production of MBBBD polypeptide in situ or ex vivo",
+                                "explain generation of modular domain with novel target nucleic acid specificity"
+                            ],
+                            "num_characters": 8979,
+                            "outline_medium": [
+                                "describe genome engineering experiments",
+                                "explain nuclease fusion protein parameters",
+                                "detail non-homologous end joining (NHEJ) repair",
+                                "introduce method for modifying genetic material",
+                                "describe additional catalytic domain for mutagenesis",
+                                "explain homologous gene targeting method",
+                                "detail exogenous nucleic acid design",
+                                "outline polynucleotide introduction methods"
+                            ],
+                            "outline_short": [
+                                "describe genome engineering experiments",
+                                "explain nuclease fusion protein or chimeric protein",
+                                "outline method for modifying genetic material",
+                                "discuss additional catalytic domain"
+                            ]
+                        },
+                        {
+                            "title": "Method for Generating an Animal/a Plant",
+                            "paragraphs": [
+                                "Animals may be generated by introducing MBBBD polypeptide into a cell or an embryo. In particular, the present invention relates to a method for generating an animal, comprising providing an eukaryotic cell comprising a nucleic acid target sequence into which it is desired to introduce a genetic modification; generating a cleavage within or adjacent to the nucleic acid target sequence by introducing a MBBBD polypeptide according to the present invention; and generating an animal from the cell or progeny thereof, in which cleavage has occurred. Typically, the embryo is a fertilized one cell stage embryo. Polynucleotides encoding said MBBBD polypeptides may be introduced into the cell by any of the methods known in the art including micro injection into the nucleus or cytoplasm of the embryo. In a particular embodiment, the method for generating an animal, further comprise introducing an exogenous nucleic acid as desired. Said exogenous nucleic acid comprises a sequence homologous to at least a portion of the nucleic acid target sequence, such that homologous recombination occurs between said exogenous nucleic acid and the nucleic acid target sequence in the cell or progeny thereof. The exogenous nucleic acid can include for example a nucleic acid sequence that disrupts a gene after homologous recombination, a nucleic acid sequence that replaces a gene after homologous recombination, a nucleic acid sequence that introduces a mutation into a gene after homologous recombination or a nucleic acid sequence that introduce a regulatory site after homologous recombination. The embryos are then cultures to develop an animal. In one aspect of the invention, an animal in which at least a nucleic acid target sequence of interest has been engineered is provided. For example, an engineered gene may become inactivated such that it is not transcribed or properly translated, or an alternate form of the gene is expressed. The animal may be homozygous or heterozygous for the engineered gene.",
+                                "The present invention also related to a method for generating a plant comprising providing a plant cell comprising a nucleic acid target sequence into which it is desired to introduce a genetic modification; generating a cleavage within or adjacent to the nucleic acid target sequence by introducing a MBBD polypeptide according to the present invention; and generating a plant from the cell or progeny thereof, in which cleavage has occurred. Progeny includes descendants of a particular plant or plant line. In a particular embodiment, the method for generating a plant, further comprise introducing an exogenous nucleic acid as desired. Said exogenous nucleic acid comprises a sequence homologous to at least a portion of the nucleic acid target sequence, such that homologous recombination occurs between said exogenous nucleic acid and the nucleic acid target sequence in the cell or progeny thereof. Plant cells produced using methods can be grown to generate plants having in their genome a modified nucleic acid target sequence. Seeds from such plants can be used to generate plants having a phenotype such as, for example, an altered growth characteristic, altered appearance, or altered compositions with respect to unmodified plants.",
+                                "The polypeptides of the invention are useful to engineer genomes and to reprogram cells, especially iPS cells and ES cells.",
+                                "Therapeutic Applications",
+                                "From the above, the polypeptides according to the invention can be used as a medicament, especially for modulating, activating or inhibiting gene transcription, at the promoter level or through their catalytic domains.",
+                                "Fusion proteins composed of a binding domain according to the invention and of a catalytic domain with nuclease activity can be used for the treatment of a genetic disease to correct a mutation at a specific locus or to inactivate a gene the expression of which is deleterious. Such proteins can also be used to genetically modify iPS or primary cells, for instance T-cells, in view of injected such cells into a patient for treating a disease or infection. Such cell therapy schemes are more particularly developed for treating cancer, viral infection such as caused by CMV or HIV or self-immune diseases.",
+                                "Having generally described this invention, a further understanding can be obtained by reference to certain specific examples, which are provided herein for purposes of illustration only, and are not intended to be limiting unless otherwise specified."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe method for generating an animal",
+                                "introduce MBBBD polypeptide into a cell or embryo",
+                                "generate cleavage within or adjacent to nucleic acid target sequence",
+                                "generate an animal from the cell or progeny thereof",
+                                "introduce exogenous nucleic acid for homologous recombination",
+                                "describe method for generating a plant",
+                                "generate a plant from the cell or progeny thereof",
+                                "explain use of seeds from modified plants"
+                            ],
+                            "num_characters": 4483,
+                            "outline_medium": [
+                                "describe method for generating an animal",
+                                "outline embryo modification process",
+                                "explain exogenous nucleic acid introduction",
+                                "describe plant generation method"
+                            ],
+                            "outline_short": [
+                                "describe method for generating an animal",
+                                "describe method for generating a plant"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Nuclease Activity of BurrH\u201436 Based Constructs",
+                            "paragraphs": [
+                                "BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new specific nuclease. The DNA coding for the N-terminal (SEQ ID NO.7) and C-terminal (SEQ ID NO.64) domains was synthesized according to the human genetic code and cloned in the pUC57 plasmid, by Genecust. In addition, the two domains were separated by a small DNA sequence containing two BsmBI sites allowing further cloning of the DNA coding for the DNA binding array, a Nuclear Localization Sequence (NLS) and HA tag were added in front of the N-terminal domain and short sequences were added between the different pieces for cloning purpose or to create linkers at the protein level, leading to BurrH\u201436 scaffold pCLS17028 (SEQ ID NO.121). In parallel, the DNA coding for the DNA binding array (BurrH_RVD_array1, SEQ ID NO.122) was synthesized according to the human genetic code and cloned in the pUC57 plasmid, by Genecust, leading to pCLS17030. The BurrH\u201436 scaffold was then sublconed, from pCLS17028, into a yeast expression vector containing a FokI catalytic head (SEQ ID NO.123) preceded by a short linker sequence, using NcoI and BamHI, leading to pCLS17419 (SEQ ID NO.124). The DNA binding array insert was then subcloned, from pCLS17030 into pCLS17419 using the two BsmBI sites, leading to pCLS17421 (SEQ ID NO.125). All molecular biology steps were done according to standard procedures.",
+                                "All the yeast target reporter plasmids containing the DNA target collection sequences (SEQ ID NO.126 to 138, Table 1) were constructed as previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). The BurrH\u201436 based nucleases were tested at 37\u00b0 C. and 30\u00b0 C. in yeast SSA assay as previously described in WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006), as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands) on the target collection. BurrH\u201436 based nucleases cleavage activity levels on the complete collection of targets in yeast are shown in Table 2.",
+                                "FIG. 8 shows the correspondence between the different modules of BurrH\u201436 with respect to the different DNA targets. Target A is common to the target sequences BURRH_v01, BURRH_v02, BURRH_v03 et BURRH_v04 presented in Table 1, Target B is common to the target sequences BURRH_v05, BURRH_v06, BURRH_v07 et BURRH_v08. Target C is common to the target sequences BURRH_v09, BURRH_v10, BURRH_v11 et BURRH_v12.",
+                                "It is observed, when comparing activity data obtained on BURRH_v01 to v04 targets (SEQ ID: 126 to 129) or BURRH_v05 to v08 targets (SEQ ID: 130 to 133) or BURRH_v09 to v12 targets (SEQ ID: 134 to 137), that the nature (A, T, C or G) of the first base (so-called base 0 in the context of TALE-Nuclease) has here no impact on cleavage activity, which is not the case with classical AvrBS3 based TALE-Nuclease design. TALE-Nuclease have a strong preference for a thymine (T). The so-called TO requirement thus does seem to exist for such EAV36_BURRH based fusion proteins.",
+                                "It also observed, when comparing activity data obtained on BURRH_v01, v05 and v09 targets (SEQ ID: 126, 130 and 134) that modules containing NT at positions 12 and 13 result into a similar activity on targets containing either an adenine (A) or a thymine (T) and that NR results into a similar activity on targets containing either a guanine (G) or a thymine (T)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design BurrH\u201436 based nuclease",
+                                "synthesize DNA coding for N-terminal and C-terminal domains",
+                                "clone DNA coding for DNA binding array and NLS",
+                                "subclone BurrH\u201436 scaffold into yeast expression vector",
+                                "test nuclease activity in yeast SSA assay",
+                                "analyze cleavage activity on target collection",
+                                "observe TO requirement"
+                            ],
+                            "num_characters": 3553,
+                            "outline_medium": [
+                                "construct BurrH\u201436 based nucleases",
+                                "test nuclease activity in yeast",
+                                "analyze activity data"
+                            ],
+                            "outline_short": [
+                                "construct and test BurrH\u201436 based nucleases"
+                            ]
+                        },
+                        {
+                            "title": "Nuclease Activity of BurrH\u201436 Based Constructs in Function of Target Nucleotides in Position 0, \u22121 and \u22122",
+                            "paragraphs": [
+                                "Nuclease activity of BurrH\u201436 based nuclease encoded in plasmid pCLS17421 (SEQ ID NO. 125) was monitored on a set of 21 targets differing only by their nucleotidic sequences in position 0, \u22121 and \u22122 (SEQ ID NO. 139 to 159, see Table 3) as described in Example 1. Similar activities were obtained on all targets (Table 4) indicating an absence of specific sequence requirement for position 0, \u22121 and \u22122."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "monitor nuclease activity on targets with different nucleotides"
+                            ],
+                            "num_characters": 402,
+                            "outline_medium": [
+                                "monitor nuclease activity on targets with varying nucleotides"
+                            ],
+                            "outline_short": [
+                                "test nuclease activity on targets with varying nucleotides"
+                            ]
+                        },
+                        {
+                            "title": "Nuclease Activity of Engineered BurrH\u201436 Based Constructs Containing 18 DNA Binding Modules",
+                            "paragraphs": [
+                                "To create shorter array of natural modules of EAV36, the original array of 20 modules has been shrunk in 18 modules to target AvrBs3. A 18 module array has been designed following this proceeding:\n\n\n- - 1. From 1st to 12th the wild type order and nature of the modules\n    has been preserved.\n  - 2. In position 13th has been inserted the 15th module followed by\n    the 16th and 17th modules.\n  - 3. Then the 16th module has been preserved and the 19th and 20th\n    modules have been added in position 17th and 18th.",
+                                "The BurrH\u201436 scaffold in a yeast expression vector, described in example 1 (pCLS17419 (SEQ ID NO. 124)) was chosen as receiving scaffold plasmid. The DNA binding array insert was then subcloned, from pCLS18120 (SEQ ID NO. 160) into pCLS17419 using the two BsmBI sites, leading to pCLS18473 (SEQ ID NO. 161). All molecular biology steps were done according to standard procedures. The sequences of the DNA binding array insert are represented in Table 5 below.",
+                                "The yeast target reporter plasmids containing the DNA target sequences (SEQ ID NO. 182 to 217 shown in Table 6) were constructed as previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). The BurrH\u201436 based nucleases were tested on the target collection at 37\u00b0 C. in yeast SSA assay as previously described (WO 2004/067736 and (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on the complete collection of targets in yeast are shown on Table 7."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design 18 module array",
+                                "subclone DNA binding array insert into yeast expression vector",
+                                "test nuclease activity on target collection"
+                            ],
+                            "num_characters": 1815,
+                            "outline_medium": [
+                                "design and test 18-module array"
+                            ],
+                            "outline_short": [
+                                "design and test 18-module array"
+                            ]
+                        },
+                        {
+                            "title": "Nuclease Activity of Engineered BurrH\u201436 Based Constructs Containing 16 DNA Binding Modules",
+                            "paragraphs": [
+                                "To create shorter array of natural modules of EAV36, the original array of 20 modules has been shrunk in 16 modules to target RAGT2. Analogously to 18 module array, a 16 module array has been designed following this proceeding:\n\n\n- - 1. From 1st to 12th the wt order and nature of the modules has been\n    preserved.\n  - 2. In position 13th has been inserted the 15th module followed by\n    the 16th module.\n  - 3. Then 19th and 20th modules have been added in position 15th and\n    16th.",
+                                "The BurrH\u201436 scaffold in a yeast expression vector, described in example 1 (pCLS17419 (SEQ ID NO. 124)) was chosen as receiving scaffold plasmid. The DNA binding array inserts were then subcloned, from pCLS18123 and pCLS18127 (SEQ ID NO. 218 and SEQ ID NO. 219) into pCLS17419 using the two BsmBI sites, leading to respectively pCLS18476 (SEQ ID NO. 220) and pCLS18480 (SEQ ID NO. 221). All molecular biology steps were done according to standard procedures. The sequences of the DNA binding array insert are represented in Table 8 below.",
+                                "The yeast target reporter plasmids containing the RAGT2.4 and RAGT2.3 DNA target sequences (SEQ ID NO. 222 and SEQ ID NO. 223, Table 9) were constructed as previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). The BurrH\u201436 based nucleases were tested on their respective target at 37\u00b0 C. in the yeast SSA assay as previously described. Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on their respective targets in yeast are shown in Table 10."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design 16 module array",
+                                "subclone DNA binding array inserts into yeast expression vector",
+                                "test nuclease activity on respective targets"
+                            ],
+                            "num_characters": 1752,
+                            "outline_medium": [
+                                "design and test 16-module array"
+                            ],
+                            "outline_short": [
+                                "design and test 16-module array"
+                            ]
+                        },
+                        {
+                            "title": "Example 5",
+                            "paragraphs": [
+                                "**Nuclease Activity of Engineered BurrH\u201436 Based Constructs Containing 16 Engineered Alternative DNA Binding Modules**",
+                                "To test the possibility to use only one module to build a new engineered array of 16 modules, consensus sequences derived from the alignment of only the first 5 modules of E5AV36 or of all the E5AV36 modules have been determined.",
+                                "The BurrH\u201436 scaffold in a yeast expression vector, described in example 1 (pCLS17419 (SEQ ID NO. 124)) was chosen as receiving scaffold plasmid. The DNA binding array inserts were then subcloned, from pCLS18124 to pCLS18126 (SEQ ID NO. 224 to SEQ ID NO. 226) into pCLS17419 using the two BsmBI sites, leading to pCLS18477 to pCLS18479 respectively (SEQ ID NO. 227 to SEQ ID NO. 229). All molecular biology steps were done according to standard procedures. The sequences of DNA binding array insert of pCLS18477 to pCLS18479 are represented in Tables 11 to 13 respectively.",
+                                "The yeast target reporter plasmids containing the DNA target sequence (SEQ ID NO. 222, Table 9) were constructed as previously described. The BurrH\u201436 based nucleases were tested on their respective target at 37\u00b0 C. in the yeast SSA assay as previously described. Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on their respective targets in yeast are shown in Table 14.",
+                                "**Nuclease Activity of Engineered BurrH\u201436 Based Constructs in Mammalian Cells (CHO-K1) on an Extrachromosomal Target**",
+                                "To create the first BurrH\u201436 scaffold, DNA encoding burrH\u201436 based nuclease scaffold was extracted from yeast plasmid pCLS17028 using NcoI and BamHI. The DNA insert was further ligated in NcoI/BamHI opened mammalian expression plasmids leading to BurrH\u201436 backbone plasmid pCLS18645 (SEQ ID NO. 232). This mammalian expression plasmid encodes a Nuclear Localization Sequence (NLS) followed by HA tag, the BurrH\u201436 backbone and a FokI catalytic head under an EF1a promoter.",
+                                "To create the second BurrH\u201436 scaffold, DNA encoding burrH\u201436 based nuclease scaffold was extracted from yeast plasmid pCLS17028 (SEQ ID NO. 121) using EcoRV and BamHI. The final BurrH\u201436 backbone plasmid pCLS18646 (SEQ ID NO. 233) was obtained by ligation of 3 fragments: the NcoI/BamHI opened mammalian expression plasmids, the EcoRV/BamHI digested burrH\u201436 based nuclease scaffold and a NcoI/EcoRV digested fragment encoding a Nuclear Localization Sequence (NLS) followed by S tag (SEQ ID NO. 234). This mammalian expression plasmid encodes a Nuclear Localization Sequence (NLS) followed by S tag, the BurrH\u201436 backbone and a FokI catalytic head under an EF1a promoter.",
+                                "The DNA binding array inserts were then subcloned, from pCLS18123 and pCLS18127 (SEQ ID NO. 218 and SEQ ID NO.219) into pCLS18646 and pCLS18645 respectively (SEQ ID NO. 233 and SEQ ID NO. 232) using the two BsmBI sites, leading to respectively pCLS19041 (SEQ ID NO. 235) and pCLS19042 (SEQ ID NO. 236).",
+                                "All the mammalian target reporter plasmids containing the DNA target sequences were constructed using standard gateway Gateway protocol (INVITROGEN) into a CHO reporter vector (Grizot, Epinat et al.; Arnould, Chames et al. 2006). Activity of BurrH\u201436 based nucleases were tested in our extrachromosomal assay in mammalian cells (CHO K1) as homodimer (two identical recognition sequences are placed facing each other on both DNA strands) on the sequence target RAGT2.4 and RAGT2.3 (SEQ ID NO. 222 and SEQ ID NO. 223, Table 9). For this assay, CHO K1 cells were transfected in a 96-well plate format with 75 ng of target vector and an increasing quantity of each variant DNA from 0.02 to 25 ng, in the presence of PolyFect reagent (1 \u03bcL per well). The total amount of transfected DNA was completed to 100 ng (target DNA, variant DNA, carrier DNA) using an empty vector. 72 hours after transfection, culture medium was removed and 150 \u03bcl of lysis/revelation buffer for \u03b2-galactosidase liquid assay was added. After incubation at 37\u00b0 C., OD was measured at 420 nm. The entire process is performed on an automated Velocityll BioCel platform (Grizot, Epinat et al.).",
+                                "Nuclease cleavage activity levels on their respective targets in mammalian cells are shown in FIG. 9.",
+                                "**Nuclease Activity of Engineered BurrH\u201436 Based Constructs Containing 18 DNA Binding Modules in Mammalian Cells (293H) at an Endogenous Locus**",
+                                "BurrH\u201436 Target Endogenous Locus",
+                                "To monitor the ability of burrH\u201436 based nucleases to induce Targeted Mutagenesis (TM) at burrH\u201436 target endogenous loci (SEQ ID NO.237), the DNA binding array inserts pCLS19087 and pCLS20851 (SEQ ID NO. 238 and SEQ ID NO. 239) were subcloned in mammalian expression plasmids pCLS18645 and pCLS18646 (SEQ ID NO. 232 and SEQ ID NO. 233) as described in example 6 leading to pCLS19638 and pCLS19679 respectively (SEQ ID NO. 240 and SEQ ID NO. 241). 293H cells were first plated at a density of 1.2\u00d7106 cells per 10 cm dish. The next day (day 0) cells were transfected with a total amount of 5 \u03bcg of pCLS19638 and pCLS19679 (SEQ ID NO. 240 and SEQ ID NO. 241) or control empty vector using Lipofectamine 2000 transfection reagent (Life Technologies) according to the manufacturer's protocol. Three days post-transfection (day 3), genomic DNA was extracted and the locus of interest was amplified with locus primers 1 and 2 (SEQ ID NO. 242 and SEQ ID NO. 243). Primer 1 containing an adaptor sequences required for deep sequencing method using the GS Junior 454 (Roche). Examples of targeted mutagenesis (indels) at the desired locus (wt; SEQ ID NO. 237) are provided in FIG. 10.",
+                                "CAPSN1 Endogenous Locus",
+                                "To monitor the ability of burrH\u201436 based nucleases construct to induce Targeted Mutagenesis (TM) at CAPSN1 endogenous locus (SEQ ID NO. 244), the DNA binding array inserts pCLS20311 and pCLS20312 (SEQ ID NO. 245 and SEQ ID NO. 246) were subcloned in mammalian expression plasmids pCLS18645 and pCLS18646 (SEQ ID NO. 232 and SEQ ID NO. 233) as described in example 6 leading to pCLS21603 and pCLS21607 respectively (SEQ ID NO. 247 and SEQ ID NO. 248). 293H cells were first plated at a density of 1.2\u00d7106 cells per 10 cm dish. The next day (day 0) cells were transfected with a total amount of 5 \u03bcg of pCLS21603 and pCLS21607 (SEQ ID NO. 247 and SEQ ID NO. 248) or control empty vector using Lipofectamine 2000 transfection reagent (Life Technologies) according to the manufacturer's protocol. Three days post-transfection (day 3), genomic DNA was extracted and the locus of interest was amplified with locus primers 1 and 2 (SEQ ID NO. 242 and SEQ ID NO. 243). Primer 1 containing an adaptor sequences required for deep sequencing method using the GS Junior 454 (Roche). Examples of targeted mutagenesis (indels) at the desired locus (wt; SEQ ID NO. 244) are provided in FIG. 11.",
+                                "**Nuclease Activity of Engineered BurrH\u201436 Based Constructs Containing 20 DNA Binding Modules in Mammalian Cells (293H) at an Endogenous Locus**",
+                                "To monitor the ability of burrH\u201436 based nucleases comprising 20 DNA binding modules (SEQ ID NO: 162 to SEQ ID NO: 181) to induce Targeted Mutagenesis (TM) at their endogenous loci (SEQ ID NO.249), the DNA binding array inserts pCLS20313 and pCLS20314 (SEQ ID NO. 250 and SEQ ID NO. 251) were subcloned in mammalian expression plasmids pCLS18645 and pCLS18646 (SEQ ID NO. 232 and SEQ ID NO. 233) as described in example 6 leading to pCLS21604 and pCLS21608 respectively (SEQ ID NO. 252 and SEQ ID NO. 253). 293H cells were first plated at a density of 1.2\u00d7106 cells per 10 cm dish. The next day (day 0) cells were transfected with a total amount of 5 \u03bcg of pCLS21604 and pCLS21608 (SEQ ID NO. 252 and SEQ ID NO. 253) or control empty vector using Lipofectamine 2000 transfection reagent (Life Technologies) according to the manufacturer's protocol. Three days post-transfection (day 3), genomic DNA was extracted and the locus of interest was amplified with locus primers 1 and 2 (SEQ ID NO. 242 and SEQ ID NO. 243). Primer 1 containing an adaptor sequences required for deep sequencing method using the GS Junior 454 (Roche). Examples of targeted mutagenesis (indels) at the desired locus (wt; SEQ ID NO. 357) are provided in FIG. 12.",
+                                "**Homologous Gene Insertion Induced by Engineered BurrH\u201436 Based Constructs (20 DNA Binding Modules) in Mammalian Cells (293H) at Endogenous Locus**",
+                                "To monitor the ability of burrH\u201436 based nucleases containing 20 DNA binding modules to induce knock-in at their endogenous loci (SEQ ID NO. 249), the DNA binding array inserts pCLS20313 and pCLS20314 (SEQ ID NO. 250 and SEQ ID NO. 251) were subcloned in mammalian expression plasmids pCLS18645 and pCLS18646 (SEQ ID NO. 232 and SEQ ID NO. 233) as described in example 6 leading to pCLS21604 and pCLS21608 respectively (SEQ ID NO. 252 and SEQ ID NO. 253). 293H cells were first plated at a density of 1.2\u00d7106 cells per 10 cm dish. The next day (day 0) cells were transfected with a total amount of 2.5 \u03bcg of pCLS21604 (SEQ ID NO. 252), 2.5 \u03bcg pCLS21608 (SEQ ID NO. 253), 5 \u03bcg of insertion matrix pCLS9893 (SEQ ID NO. 254), 250 ng of GFP expression vector and completed to 15 \u03bcg with a control empty vector using Lipofectamine 2000 transfection reagent (Life Technologies) according to the manufacturer's protocol. Three days post-transfection (day 3), cells were re-seeded in three 96 well plates at 10 cells per well and let at 37\u00b0 C. for 15 more days 5% CO2 in DMEM complete medium. Homologous Gene Insertion positive clones were monitored 18 days post transfection by PCRs using the Herculase II Fusion kit (Invitrogen) with oligonucleotides KI-1F, KI1-R, KI2-F and KI2-R (SEQ ID NO. 255, 256, 257 and 258 respectively). Targeted Gene Insertion (TGI) frequency at the desired locus (wt; SEQ ID NO. 249) is provided in FIG. 13.",
+                                "**Activity in Yeast**",
+                                "BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new specific nuclease. Three hybrid C-terminal domains were constructed by the fusion of the C-terminal domain of BurrH36 to different fragments of C-terminal domain of AvrBs3 (SEQ ID NO. 259 to SEQ ID NO. 261). The DNA coding for hybrid C-terminal domains (SEQ ID NO. 262 to 264) was synthesized according to the human genetic code and cloned in the pUC57 plasmid. Inserts were obtained by standard molecular biology techniques (PmII and BamHI restriction) and further subcloned in pCLS17419 (SEQ ID NO.124), leading to pCLS19785, pCLS19787 and pCLS19788 (SEQ ID NO. 265 to 267). The DNA binding array insert was then subcloned from pCLS18120 (SEQ ID NO. 160) as described in example 3, into pCLS19785 and pCLS19787 to pCLS19788 leading to pCLS19815 to pCLS19817 (SEQ ID NO. 268 to 269). All molecular biology steps were done according to standard procedures.",
+                                "The BurrH\u201436 based nucleases were tested, as described in example 3, on the Avr15 target (SEQ ID NO. 192 shown in Table 6) at 37\u00b0 C. in yeast SSA assay as previously described (WO 2004/067736 and (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). BurrH\u201436 based nucleases cleavage activity levels in yeast are shown on Table 15.",
+                                "**Activity in CHO**",
+                                "BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new specific nuclease. Two hybrid C-terminal domains were constructed by the fusion of C-terminal domain of burrH36 to nuclear export signal sequence to regulate the quantity of burrH 36 in the nucleus (SEQ ID NO. 271 and SEQ ID NO. 272). The DNA coding for hybrid C-terminal domains (SEQ ID NO. 273 and SEQ ID NO. 274) was synthesized according to the human genetic code and cloned in the pUC57 plasmid. Inserts were obtained by standard molecular biology techniques (Xmal and BamHI restriction) and further subcloned in pCLS18645 and pCLS18646 (SEQ ID NO. 232 and SEQ ID NO. 233) leading to pCLS22405. pCLS22406, pCLS22420 and pCLS22421 respectively (SEQ ID NO. 275 to SEQ ID NO. 278). A DNA binding array insert was then subcloned from pCLS19087 (SEQ ID NO. 238) as described in example 3, into pCLS22405 and pCLS22406 leading to pCLS23511 and pCLS23513 (SEQ ID NO. 280 to 281). A DNA binding array insert was then subcloned from pCLS19088 (SEQ ID NO. 279) as described in example 3, into pCLS22420 and pCLS22421 leading to pCLS23531 and pCLS23533 (SEQ ID NO. 282 and SEQ ID NO. 283). All molecular biology steps were done according to standard procedures.",
+                                "Nuclease pairs, respectively pCLS23511/pCLS23531 and pCLS23513/pCLS23533 were tested in CHO as described in example 6 on the CAPT1 target (SEQ ID NO. 284), constructed as reported in example 6. Nuclease cleavage activity levels on their respective targets in mammalian cells are shown in FIG. 14.",
+                                "**N-Terminal Fusion of the FokI Nuclease Calalytic Domain and Activity of the N/N and C/N Architectures**",
+                                "All the BurrH\u201436 nuclease described in the preceding examples comprise the catalytic domain FokI fused to the C-terminal domain of the DNA binding domain. The two others architectures of burrH\u201436 nuclease (see FIG. 15) were evaluate for their ability to cleave DNA target. BurrH\u201436 nuclease with N-terminal fusion of FokI nuclease catalytic domain was engineered and activity of the N/N and C/N architectures was determined. BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new specific burrH\u201436 nuclease with N-terminal fusion of FokI nuclease catalytic domain. The DNA coding for the FokI catalytic domain, BurrH\u201436 N-terminal (SEQ ID NO.7) and hybrid C-terminal domains (SEQ ID NO. 262) was synthesized according to the human genetic code and cloned in the pUC57 plasmid, by Genecust (SEQ ID NO. 285). In addition, the two N-terminal and C-terminal domains were separated by a small DNA sequence containing two BsmBI sites allowing further cloning of the DNA coding for the DNA binding array, a Nuclear Localization Sequence (NLS) was added at the C-terminal domain and short sequences were added between the different pieces for cloning purpose or to create linkers at the protein level, leading to BurrH\u201436 scaffold pCLS21170 (SEQ ID NO. 286). The DNA binding array insert targeted AvBrs3 sequence was then subcloned from pCLS18120 (SEQ ID NO. 160) as described in example 3, into pCLS21170, leading to pCLS21226 (SEQ ID NO. 287).",
+                                "In parallel the BurrH_Scaffold described in example 1 pCLS17419 (SEQ ID NO. 124)) with C-terminal fusion of the FokI catalytic domain was subcloned in a yeast plasmid containing a kanamycin resistance gene, leading to pCLS20474 (SEQ ID NO. 288). The DNA binding array insert targeted RAGT2.4 sequence was then subcloned from pCLS18123 (SEQ ID NO. 218) as described in example 4, into pCLS20474, leading to pCLS23060 (SEQ ID NO. 289). All molecular biology steps were done according to standard procedures.",
+                                "The yeast target reporter plasmid collections containing, either two AvrBs3 (SEQ ID NO. 290) sequence facing each other in the 5\u2032/5\u2032 (or N/N) orientation on both DNA strand (SEQ ID NO. 291 to SEQ ID NO. 321, Table 16) or a single RAGT2.4 DNA target sequences (SEQ ID NO. 322) preceding a single AvrBs3 (SEQ ID NO. 290) target sequence on the same DNA strand (SEQ ID NO. 323 to SEQ ID NO. 358, Table 17) were constructed as previously described (International PCT Applications WO 2004/067736 and in (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). The BurrH\u201436 based nucleases were tested on the target collections 37\u00b0 C. in the yeast SSA assay as previously described by cotransformation of both pCLS23060 (SEQ ID NO. 289) and pCLS21226 (SEQ ID NO. 287).",
+                                "BurrH\u201436 based nucleases cleavage activity levels on the collection of targets in yeast are shown in Table 18.",
+                                "**DNA Targeting Using Polymorphism in Position 13 while Preceding Position is Constantly Occupied by Asparagines**",
+                                "**I to Target A, N to Target G, G to Target T and D to Target C**",
+                                "The DNA coding for the DNA binding domain was synthesized according to the human genetic code and cloned in the pUC57 plasmid (SEQ ID NO. 359). DNA binding domain was engineered to target the RAGT2.3 sequence (SEQ ID NO. 360) using in position 13 the following code: I to target A, N to target G, G to target T and D to target C. Insert was obtained by standard molecular biology techniques (BsmBI restriction) and further subcloned in pCLS17419 (SEQ ID NO.124), leading to pCLS21549 (SEQ ID NO. 361). The BurrH\u201436 based nucleases was tested on the RAGT2.3 and RAGT2.4 targets (SEQ ID NO.222 and SEQ ID NO 223) at 37\u00b0 C. in the yeast SSA assay as previously described. Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on the targets in yeast are shown in Table 19.",
+                                "**S to Target A, N to Target G, G to Target T and D to Target C**",
+                                "The DNA coding for the DNA binding domain was synthesized according to the human genetic code and cloned in the pUC57 plasmid (SEQ ID NO. 359). DNA binding domain was engineered to target the RAGT2.4 sequence (SEQ ID NO. 322) using the following code in position 13: S to target A, N to target G, G to target T and D to target C. Insert was obtained by standard molecular biology techniques (BsmBI restriction) and further subcloned in pCLS20474 (SEQ ID NO. 288), leading to pCLS21558 (SEQ ID NO. 363). The BurrH\u201436 based nucleases was tested on the RAGT2.3 and RAGT2.4 targets (SEQ ID NO.222 and SEQ ID NO.223) at 37\u00b0 C. in the yeast SSA assay as previously described. Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on the targets in yeast are shown in Table 19.",
+                                "**I to Target A, R to Target G, G to Target T and D to Target C**",
+                                "The DNA coding for the DNA binding domain was synthesized according to the human genetic code and cloned in the pUC57 plasmid (SEQ ID NO. 364). DNA binding domain was engineered to target the RAGT2.4 sequence (SEQ ID NO. 322) using the following code in position 13: Ito target A, R to target G, G to target T and D to target C. Insert was obtained by standard molecular biology techniques (BsmBI restriction) and further subcloned in pCLS20474 (SEQ ID NO. 288), leading to pCLS21559 (SEQ ID NO. 365). The BurrH\u201436 based nucleases was tested on the RAGT2.3 and RAGT2.4 targets (SEQ ID NO.223 and SEQ ID NO.222) at 37\u00b0 C. in the yeast SSA assay as previously described. Targets are designed as pseudo-palindromic sequences (two identical recognition sequences are placed facing each other on both DNA strands). BurrH\u201436 based nucleases cleavage activity levels on the targets in yeast are shown in Table 19.",
+                                "**Activity of Hybrid Nuclease (TALE-BurrH) Created by Replacing the N-Terminal Domain of BurrH by the N-Terminal Domain of AvrBs3**",
+                                "BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new specific nuclease. Based on 3D model of burrH\u201436 and PthXo1-derived TALE structure, point of mutations have been designed in order to minimize the possible steric hindrance between N-terminal domain of AvrBs3 and the first module of BurrH\u201436. The point mutations have been applied separately on the first module of BurrH36 (Architecture 1) or on the AvrBs3 N-terminal domain (Architecture 2).",
+                                "**Architecture 1**",
+                                "Hybrid TALE-BurrH nuclease was constructed by the fusion of the truncated \u0394152 N-terminal domain of AvrBs3 (SEQ ID NO. 366) to the BurrH DNA targeting core. Four amino acid residues of the first DNA binding module of BurrH were mutated (Q3P, V7A, A10T and A16T). The constructs containing an NLS, either a HA or S tag, truncated \u0394152 N-terminal domain of AvrBS3 (SEQ ID NO. 366), the BurrH DNA targeting core (targeting either RAGT2.3 (SEQ ID NO. 223) or RAGT2.4 (SEQ ID NO. 222)) containing four point mutations and the BurrH C-terminal domain were synthesized according to the human genetic code and cloned in the pUC57 plasmid leading to respectively pCLS20720 (SEQ ID NO. 367) and pCLS20721 (SEQ ID NO. 368). Inserts were obtained by standard molecular biology techniques (NcoI and BamHI restriction) and further subcloned in pCLS17419 (SEQ ID NO.124), leading to respectively pCLS22251 (SEQ ID NO. 369 encoding for SEQ ID NO. 370) and pCLS22247 (SEQ ID NO. 371 encoding SEQ ID NO. 372).",
+                                "**Architecture 2**",
+                                "In a second TALE-BurrH nuclease architecture, mutations were incorporated in the \u0394152 N-terminal domain of avrBs3 (L255A, Q259N, I263M, R266K, A271G, and V275A, (numbering based on the AvrBs3 N-ter (SEQ ID NO.6). The constructs containing an NLS, either a HA or S tag, the \u0394152 N-terminal domain of AvrBS3 (SEQ ID NO. 366) containing the six point mutations were synthesized according to the human genetic code and cloned in the pUC57 plasmid leading to respectively pCLS20716 (SEQ ID NO.373) and pCLS20717 (SEQ ID NO. 374). Inserts were obtained by standard molecular biology techniques (NcoI and Xmal restriction) and further subcloned in pCLS17419 (SEQ ID NO.124), leading to respectively pCLS22244 SEQ ID NO. 375) and pCLS22245 (SEQ ID NO. 376). The DNA binding array inserts were then subcloned, from pCLS18127 and pCLS18123 (SEQ ID NO. 219 and SEQ ID NO. 218) into pCLS22244 and pCLS22245 using the two BsmBI sites, leading to respectively pCLS23592 (SEQ ID NO. 377) and pCLS23591 (SEQ ID NO. 378). All molecular biology steps were done according to standard procedures.",
+                                "All BurrH\u201436 chimera based nuclease activity were tested as described in example 4, Activity levels on their respective targets in yeast are shown in Table 20.",
+                                "**Activity of BurrH-Based Nuclease Containing Mutations in the N-Terminal Domain**",
+                                "N-terminal domain of BurrH\u201436 (SEQ ID NO.2) was chosen as a starting polypeptide to create new N-terminal domains. Amino acid residues were mutated and/or inserted in the N-terminal domain of BurrH\u201436 to enhance the activity of the BurrH nuclease (see FIG. 16). The constructs containing an NLS a HA tag and various BurrH N-terminal domains containing mutations and or insertion were synthesized according to the human genetic code and cloned in the pUC57 plasmid leading to respectively pCLS20653 to pCLS20662 (SEQ ID NO. 379 to 388). Inserts were obtained by standard molecular biology techniques (NcoI and Xmal restriction) and further subcloned in pCLS17419 (SEQ ID NO.124), leading to respectively pCLS21492 to pCLS21501 (SEQ ID NO. 389 to 398). The DNA binding array inserts were then subcloned, pCLS18120 (SEQ ID NO. 160) into pCLS21492 to pCLS21501 using the two BsmBI sites (as described in Example 3), leading to respectively pCLS21512 to pCLS21521 (SEQ ID NO. 399 to 408). All molecular biology steps were done according to standard procedures.",
+                                "The BurrH\u201436 based nucleases were tested, as described in example 3, on the Avr15 target (SEQ ID NO. 192 shown in Table 6) at 37\u00b0 C. in yeast SSA assay as previously described (WO 2004/067736 and (Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006). BurrH\u201436 based nucleases cleavage activity levels in yeast are shown on Table 21.",
+                                "**BurrH-Based Sequence-Specific Nucleases Create Mutations at an Endogenous Locus in Plants**",
+                                "A BurrH-based nuclease (SEQ ID NO: 409 and SEQ ID NO: 410) was engineered to recognize a site within the first 90 bp of the coding sequence of the \u03b21,2-xylosyltransferase (XylT1) gene of Nicotiana benthamiana. N. benthamiana seeds were surface sterilized and plated on agarose medium containing Murashige and Skoog salts with an iron supplement. Protoplasts were isolated from young expanded leaves using the protocol described by Wright et al, 2005. Plasmids were introduced separately into aliquots of protoplasts through PEG-mediated transformation (Yoo et al 2007). One plasmid YFP (SEQ ID NO: 411), another encodes the BurrH-based nuclease (SEQ ID NO: 409 and SEQ ID NO: 410). Protoplasts were transformed with 12 \u03bcg of each plasmid. Twenty-four hours after transformation, the protoplasts that had been transformed with the YFP-encoding plasmid were subjected to fluorescence microscopy to assess transformation efficiency. More than 90% of the protoplasts expressed YFP. Genomic DNA was then prepared from each of the three aliquots of transformed protoplasts.",
+                                "Using genomic DNA as a template, an approximately 300-bp fragment was amplified by PCR that encompasses the recognition site of both the BurrH-based nuclease. The PCR product was then subjected to 454 pyro-sequencing. Sequencing reads with insertion/deletion (indel) mutations in the spacer region between the two DNA binding domains were considered as having been derived from imprecise repair of a cleaved recognition site by non-homologous end-joining (NHEJ). Mutagenesis frequency was estimated as the percentage of sequencing reads with NHEJ mutations out of the total number of sequencing reads. The average mutagenesis frequencies determined for three different transformations are shown in FIG. 17. Of the sequencing reads obtained using the BurrH-based nuclease, 2.2% had indel mutations. No mutagenesis was observed for the negative control (protoplasts transformed with YFP). The 454 pyro-sequencing data demonstrate that BurrH-based nucleases can induce double-strand breaks at an endogenous locus in plant cells.",
+                                "**Monomeric MBBBD Nuclease**",
+                                "The catalytic domain of I-TevI (SEQ ID NO. 413), a member of the GIY-YIG endonuclease family was fused to BurrH-36 backbone derived from E5AV36 BURRH protein. I-TevI is a tripartite protein composed of a C-terminal domain responsible for binding specificity, linked to N-terminal catalytic domain by a long flexible linker. The N-terminal catalytic domain contributes to specificity via DNA cleavage selectivity, characterized biochemically and defined by the degenerate CNNNG motif (with CAACGC as the natural cleavage sequence).",
+                                "The BurrH\u201436 core scaffold (SEQ ID NO. 414) derived from E5AV36 BURRH protein was composed of a N-terminal domain and a C-terminal domain separated by a small DNA sequence containing two BsmBI sites allowing further cloning of the nucleic acid sequence coding for the DNA binding array. Short sequences were added between the different pieces for cloning purpose or to create linkers at the protein level. The BurrH\u201436 scaffold was then cloned into vector pCLS7865 (SEQ ID NO. 415) to generate pCLS7865-BurrH\u201436.",
+                                "Variants of the I-TevI catalytic domain named TevD02 (SEQ ID NO. 416) and TevM01 (SEQ ID NO. 417) consisting of the N-terminal 183 and 137 residues respectively of the wild-type catalytic domain of I-TevI (SEQ ID NO. 413) was amplified by PCR on template TevCreD02 (SEQ ID NO. 418) protein in plasmid pCLS6615 (SEQ ID NO.419).",
+                                "TevD02 and TevM01 were fused to the N-terminal part of the BurrH\u201436 scaffold into the pCLS7865-BurrH\u201436 by restriction and ligation using standard biological tools, yielding pCLS7865-TevD02::b36 and pCLS7865-TevM01::b36. The TevD02::b36 fusion contains the sequence-QGPSG-linking the BurrH\u201436-derived DNA binding domain and TevD02 catalytic domain and the TevM01::b36 fusion contains the dipeptide-IA-linking the BurrH\u201436-derived DNA binding domain and TevM01 catalytic domain.",
+                                "The nucleic acid sequence coding for the DNA binding array to target the AvrBs3 site (SEQ ID NO.420) was subcloned into the plasmid pCLS7865-TevD02::b36 and pCLS7865-TevM01::b36 by restriction and ligation using standard biological tools to create the subsequent TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs respectively.",
+                                "The final TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 yeast expression plasmids encoding TevD02-burrH and TevM01-burrH chimeric endonucleases (SEQ ID NO.421 and SEQ ID NO. 422) were prepared by yeast in vivo cloning using TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs. To generate an intact coding sequence by in vivo homologous recombination, approximately 40 ng of TevD02::b36-AvrBs3 or TevM01::b36-AvrBs3 plasmid linearized and 1 ng of the pCLS0542 (SEQ ID NO.423) plasmid linearized were used to transform the yeast S. cerevisiae strain FYC2-6A (MAT\u03b1, trp1\u039463, leu2\u03941, his 3\u0394200) using a high efficiency LiAc transformation protocol (Arnould, 2007).",
+                                "All the yeast target reporter plasmids containing the MBBBD DNA target sequence were constructed as previously described (WO 2004/067736; Epinat, Arnould et al. 2003; Chames, Epinat et al. 2005; Arnould, Chames et al. 2006; Smith, Grizot et al. 2006).",
+                                "The TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs were tested in a yeast SSA Assay as previously described on the DNA target containing the terminal G base of I-TevI cleavage sequence CAACGC (SEQ ID NO.424) spaced away of 10 bp from the residue preceded the AvrBs3 recognition site (SEQ ID NO. 425) (CAACGC-10N-AvrBs3 recognition site). TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 activity levels on the DNA target sequence in yeast cell are shown in Table 22.",
+                                "**Activity of TevI::b36 and TevI::cT11 in Mammalian Cells (CHO-K1) on a Chromosomal Target**",
+                                "Construction of TevI::b36EGfpT3q6 Construct",
+                                "The ability of TevI::b36 based nucleases to induce targeted mutagenesis on a chromosomal target was monitored using an engineered cell line (CHOpi-10, ref: patent US20120272348 A1) having a single integrated copy of a GFP-encoding sequence under the control of a CMV promoter. A DNA binding array was synthesized (RVD_bhEGFP_T03g06; SEQ ID NO. 426) to target a unique sequence within the encoded GFP gene (SEQ ID NO. 427), thus allowing for measuring in vivo mutagenic activity using two complimentary methods: (i) via a reduction in GFP-positive cells as determined by flow cytometry, and; (ii) via direct amplicon sequencing of the targeted region.",
+                                "To prepare a suitable vector for expression in mammalian cells, the core TevM01::b36 scaffold insert was first transferred from pCLS7865-TevM01::b36 to pCLS1853 (SEQ ID NO. 428) to create plasmid pCLS21536. The DNA binding array insert from RVD_bhEGFP_T03g06 was subcloned into pCLS21536, yielding plasmid pCLS20293. The final pCLS20293 vector contains the coding sequence for the TevI::b36EGfpT3g6 construct (SEQ ID NO. 429) which targets GFP and whose expression is controlled by a CMV promoter.",
+                                "Construction of TevI::cT11EGfpT3q12 Construct",
+                                "The sT2 (SEQ ID NO: 433) core TALE scaffold was selected to generate pCLS7865-cTAL11_NFS1 (pCLS9008, SEQ ID NO: 434), where NFS1 designates the amino acid sequence-GSSG-(with underlying restriction sites BamHI and Kpn2I in the coding DNA to facilitate cloning). TevM01 was subcloned into the pCLS9008 backbone, yielding pCLS7865-TevM01::cT11. The fusion contains the sequence-SG-linking the TALE-derived DNA binding domain and I-TevI-derived catalytic domain.",
+                                "The ability of TevI::cT11 based nucleases to induce targeted mutagenesis on a chromosomal target was monitored using an engineered cell line (CHOpi-10, ref: patent US20120272348 A1) having a single integrated copy of a GFP-encoding sequence under the control of a CMV promoter. A DNA binding array was synthesized (RVD_ctEGFP_T03g12-L1; SEQ ID NO. 435) to target a unique sequence within the encoded GFP gene (SEQ ID NO.436), thus allowing for measuring in vivo mutagenic activity using two complementary methods: (i) via a reduction in GFP-positive cells as determined by flow cytometry, and; (ii) via direct amplicon sequencing of the targeted region.",
+                                "To prepare a suitable vector for expression in mammalian cells, the core TevM01::cT11 scaffold insert was first transferred from pCLS7865-TevM01::cT11 to pCLS1853 (SEQ ID NO. 428) to create plasmid pCLS20650 (SEQ ID NO. 437). The DNA binding array insert from RVD_ctEGFP_T03g12-L1 was subcloned into pCLS20650, yielding plasmid pCLS20790. The final pCLS20790 vector contains the coding sequence for the TevI::cT11EGfpT3g12 construct (SEQ ID NO. 438), which targets GFP and whose expression is controlled by a CMV promoter.",
+                                "Activity of TevI::b36 and TevI::cT11 in Mammalian Cells (CHO-K1) on a Chromosomal Target",
+                                "Transfection into the CHOpi-10 cell line was carried out using the Amaxa Nucleofector Kit T (Lonza) with a slightly modified protocol: 1 \u03bcg of sample plasmid was used in 1\u00d7106 cells, in total of 7.25 \u03bcg DNA, complemented with pCLS0003 (SEQ ID NO. 430). Samples were additionally assayed with 2 \u03bcg of the enhancer reagent scTrex2 (pCLS8982; SEQ ID NO. 431). For baseline controls, plasmids pCLS0003 and pCLS8982 were individually tested in the absence of pCLS20293. Plasmid pCLS2198 containing blue fluorescent protein (BFP) (pCLS2198, SEQ ID NO. 432) was added (250 ng) to all samples to monitor uniformity of transfection. Upon transfection, cells were grown for three days (\u201cDay3\u201d samples) at 37\u00b0 C. (5% CO2) before being harvested in a volume of 5 ml each. A sample volume (150 \u03bcl) was transferred to a 96-well assay block and measured via flow cytometry using a MACSQuant Analyzer (Miltenyi Biotec). FIGS. 18 and 19 illustrate the activity of the TevM01::b36 construct and TevM01::cT11 construct respectively. The activity was measured as a reduction in GFP fluorescence.",
+                                "**Transcription Activation Activity of Engineered dBurrH\u201436 Effector in Mammalian Cells (293H)**",
+                                "To evaluate the ability of BurrH\u201436 scaffold to specifically activate the transcription of a given gene, a Burrh\u201436 Effector scaffold was engineered. This scaffold consisted in a regular Burrh\u201436 scaffold (pCLS23330, SEQ ID NO. 439) fused via its C terminal end, to the VP64 transcription activator domain. To allow quantitative assessment of transfection efficiency of Burrh\u201436 Effector plasmid, a self cleaving Green Fluorescent Protein (GFP) was fused to the C terminal domain of the VP64 via a 2A self-cleavage peptide. This construction, named pCLS23453 (SEQ ID NO. 440), was used as recipient backbone for the subcloning of two different Burrh\u201436 DNA binding arrays. The BurrH\u201436 WT and BurrH\u201436 HBB DNA binding arrays, containing respectively 20 and 16 DNA binding modules and targeting respectively the DNA binding sites SEQ ID NO. 443 and SEQ ID NO. 444, were subcloned in pCLS23453 using BsmBI insertion sites. The activities of the resulting Burrh\u201436 effectors (pCLS23638 and pCLS23636; respectively SEQ ID NO. 441 and SEQ ID NO. 442) were then assayed using a transcription activation reporter plasmid. This ectopic reporter plasmid contained one of the DNA binding sites mentioned above (SEQ ID NO. 443 and SEQ ID NO. 444) located upstream from a minimal cytomegalovirus (CMV) promoter driving the Blue Fluorescent Protein (BFP, SEQ ID NO. 449) reporter gene. For quantitative assessment and normalisation of BFP signal induction from one experiment to another, the reporter plasmid also contained a Red Fluorescent Protein (DsRed, SEQ ID NO. 450) constitutively driven by a chimeric promoter encompassing a SV40 early promoter fused to an EM7 promoter. According to this architecture, two ectopic reporter plasmid were generated and named pCLS23601 and pCLS23598, (SEQ ID NO 446 and SEQ ID NO. 448). To assess the specificity of transcription activation by both Effectors, two reporter plasmids (pCLS23598, SEQ ID NO. 448 and pCLS20585, SEQ ID NO. 447) containing non-specific DNA binding site with respect to BurrH\u201436WT and HBB Effector respectively were used as a negative controls.",
+                                "Burrh\u201436 Effector-dependent induction of BFP signal was determined in 293H cells by flow cytometry, according to the procedure described in the following. Briefly, 293H cells were transfected in 10 cm plate format (1.2 106 cells/well), using 3000 ng of reporter plasmid and increasing amount of Effector plasmid (0, 500 or 1000 ng), using Lipofectamine as a transfection agent (25 \u03bcL/plate). For each experiment, the total DNA content was adjusted 4000 ng/plate with an empty vector (pCLS0003, SEQ ID NO 430). 2 days post transfection, living 293H cells displaying red fluorescence signal were first selected by an appropriated gating analysis and GFP/BFP median signals emitted by these cells were then determined using a MACS Quant flow cytometer. The BFP signals, obtained when a given target was transfected in the absence or in the presence of increasing amounts of Effector, are shown in FIG. 20.",
+                                "Our results showed that co-transfection of Burrh\u201436 WT and HBB Effector plasmids along with their respective specific reporter plasmids in 293H cells, led to a significant induction of BFP signal. We obtained 19 and 4 times more BFP signal than for the experiments performed in the absence of Burrh\u201436 WT and HBB Effectors respectively. Interestingly, a significantly lower increase of BFP signal was observed when a non-specific target was co-transfected with Burrh\u201436 WT or HBB Effectors (fold enhancement \u02dc10 and 1 respectively). Together, our data show that the Burrh\u201436 WT and HBB Effectors reported here, enables proficient and specific activation of gene transcription in mammalian cells."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce nuclease activity of engineered BurrH\u201436 based constructs",
+                                "describe DNA binding array inserts",
+                                "subclone DNA binding array inserts into pCLS17419",
+                                "construct yeast target reporter plasmids",
+                                "test BurrH\u201436 based nucleases in yeast SSA assay",
+                                "show nuclease cleavage activity levels in yeast",
+                                "introduce nuclease activity in mammalian cells",
+                                "create mammalian expression plasmids",
+                                "subclone DNA binding array inserts into mammalian expression plasmids",
+                                "construct mammalian target reporter plasmids",
+                                "test BurrH\u201436 based nucleases in mammalian cells",
+                                "show nuclease cleavage activity levels in mammalian cells",
+                                "introduce nuclease activity at endogenous locus",
+                                "subclone DNA binding array inserts into mammalian expression plasmids",
+                                "transfect 293H cells",
+                                "extract genomic DNA",
+                                "amplify locus of interest",
+                                "show examples of targeted mutagenesis",
+                                "introduce nuclease activity at CAPSN1 endogenous locus",
+                                "subclone DNA binding array inserts into mammalian expression plasmids",
+                                "transfect 293H cells",
+                                "extract genomic DNA",
+                                "amplify locus of interest",
+                                "show examples of targeted mutagenesis",
+                                "introduce nuclease activity at endogenous locus with 20 DNA binding modules",
+                                "subclone DNA binding array inserts into mammalian expression plasmids",
+                                "transfect 293H cells",
+                                "extract genomic DNA",
+                                "amplify locus of interest",
+                                "show examples of targeted mutagenesis",
+                                "introduce homologous gene insertion",
+                                "transfect 293H cells",
+                                "monitor homologous gene insertion",
+                                "show targeted gene insertion frequency",
+                                "conclude nuclease activity",
+                                "introduce DNA coding for DNA binding domain",
+                                "engineer DNA binding domain to target RAGT2.4 sequence",
+                                "obtain insert using standard molecular biology techniques",
+                                "subclone insert into pCLS20474",
+                                "test BurrH-36 based nucleases on RAGT2.3 and RAGT2.4 targets",
+                                "create hybrid TALE-BurrH nuclease by replacing N-terminal domain of BurrH with N-terminal domain of AvrBs3",
+                                "mutate amino acid residues in first DNA binding module of BurrH",
+                                "synthesize constructs containing NLS, HA or S tag, truncated \u0394152 N-terminal domain of AvrBS3, and BurrH DNA targeting core",
+                                "clone constructs into pUC57 plasmid",
+                                "obtain inserts using standard molecular biology techniques",
+                                "subclone inserts into pCLS17419",
+                                "test BurrH-36 based nucleases on respective targets in yeast SSA assay",
+                                "mutate N-terminal domain of AvrBs3",
+                                "synthesize constructs containing NLS, HA or S tag, \u0394152 N-terminal domain of AvrBS3 containing mutations, and BurrH DNA targeting",
+                                "clone constructs into pUC57 plasmid",
+                                "obtain inserts using standard molecular biology techniques",
+                                "subclone inserts into pCLS17419",
+                                "test BurrH-36 based nucleases on respective targets in yeast SSA assay",
+                                "mutate N-terminal domain of BurrH-36 to enhance activity",
+                                "synthesize constructs containing NLS, HA tag, and various BurrH N-terminal domains containing mutations",
+                                "clone constructs into pUC57 plasmid",
+                                "obtain inserts using standard molecular biology techniques",
+                                "subclone inserts into pCLS17419",
+                                "test BurrH-36 based nucleases on Avr15 target in yeast SSA assay",
+                                "engineer BurrH-based nuclease to recognize site within \u03b21,2-xylosyltransferase gene of Nicotiana benthamiana",
+                                "transform protoplasts with plasmids encoding BurrH-based nuclease and YFP",
+                                "assess transformation efficiency using fluorescence microscopy",
+                                "prepare genomic DNA from transformed protoplasts",
+                                "amplify fragment encompassing recognition site of BurrH-based nuclease using PCR",
+                                "subject PCR product to 454 pyro-sequencing",
+                                "estimate mutagenesis frequency as percentage of sequencing reads with NHEJ mutations",
+                                "fuse catalytic domain of I-TevI to BurrH-36 backbone",
+                                "clone BurrH-36 scaffold into vector pCLS7865",
+                                "amplify variants of I-TevI catalytic domain using PCR",
+                                "fuse variants to N-terminal part of BurrH-36 scaffold",
+                                "subclone nucleic acid sequence coding for DNA binding array into plasmid",
+                                "test TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs in yeast SSA assay"
+                            ],
+                            "num_characters": 36889,
+                            "outline_medium": [
+                                "test nuclease activity of engineered BurrH\u201436 based constructs",
+                                "choose BurrH\u201436 scaffold in yeast expression vector",
+                                "subclone DNA binding array inserts into pCLS17419",
+                                "construct yeast target reporter plasmids",
+                                "test BurrH\u201436 based nucleases in yeast SSA assay",
+                                "create mammalian expression plasmids",
+                                "subclone DNA binding array inserts into mammalian expression plasmids",
+                                "construct mammalian target reporter plasmids",
+                                "test BurrH\u201436 based nucleases in mammalian cells",
+                                "monitor targeted mutagenesis at endogenous loci",
+                                "test nuclease activity of engineered BurrH\u201436 based constructs containing 18 DNA binding modules",
+                                "test nuclease activity of engineered BurrH\u201436 based constructs containing 20 DNA binding modules",
+                                "monitor homologous gene insertion induced by engineered BurrH\u201436 based constructs",
+                                "test activity of engineered BurrH\u201436 based constructs in yeast",
+                                "test activity of engineered BurrH\u201436 based constructs in CHO",
+                                "evaluate N-terminal fusion of FokI nuclease catalytic domain",
+                                "test DNA targeting using polymorphism in position 13",
+                                "introduce DNA coding for DNA binding domain",
+                                "engineer DNA binding domain to target RAGT2.4 sequence",
+                                "obtain insert using standard molecular biology techniques",
+                                "subclone insert into pCLS20474",
+                                "test BurrH-36 based nucleases on RAGT2.3 and RAGT2.4 targets",
+                                "create hybrid TALE-BurrH nuclease by replacing N-terminal domain of BurrH with N-terminal domain of AvrBs3",
+                                "mutate amino acid residues in N-terminal domain of BurrH to enhance activity",
+                                "synthesize constructs containing NLS, HA tag, and various BurrH N-terminal domains",
+                                "subclone DNA binding array inserts into pCLS21492 to pCLS21501",
+                                "test BurrH-36 based nucleases on Avr15 target",
+                                "engineer BurrH-based nuclease to recognize site within \u03b21,2-xylosyltransferase gene of Nicotiana benthamiana",
+                                "fuse catalytic domain of I-TevI to BurrH-36 backbone",
+                                "clone BurrH-36 scaffold into vector pCLS7865",
+                                "amplify variants of I-TevI catalytic domain by PCR",
+                                "fuse TevD02 and TevM01 to N-terminal part of BurrH-36 scaffold",
+                                "subclone nucleic acid sequence coding for DNA binding array into pCLS7865-TevD02::b36 and pCLS7865-Tev",
+                                "test TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs in yeast SSA assay",
+                                "construct TevI::b36 and TevI::cT11 in mammalian cells and test activity on chromosomal target"
+                            ],
+                            "outline_short": [
+                                "design BurrH\u201436 based constructs with 16 DNA binding modules",
+                                "test nuclease activity in yeast SSA assay",
+                                "create mammalian expression plasmids with BurrH\u201436 backbone",
+                                "test nuclease activity in mammalian cells (CHO-K1) on extrachromosomal target",
+                                "test nuclease activity in mammalian cells (293H) at endogenous locus",
+                                "induce targeted mutagenesis at endogenous loci",
+                                "induce homologous gene insertion at endogenous locus",
+                                "test activity in yeast and CHO cells with different architectures",
+                                "describe DNA coding for DNA binding domain",
+                                "engineer hybrid TALE-BurrH nuclease",
+                                "test BurrH-based nuclease activity",
+                                "create mutations at endogenous locus in plants",
+                                "design monomeric MBBBD nuclease",
+                                "test TevD02::b36-AvrBs3 and TevM01::b36-AvrBs3 constructs",
+                                "construct TevI::b36 and TevI::cT11 for mammalian cells",
+                                "test TevI::b36 and TevI::cT11 in mammalian cells",
+                                "evaluate transcription activation activity of engineered dBurrH\u201436 effector"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A nucleic acid binding polypeptide that comprises a succession of modules from 30 to 35 amino acids, said succession of modules displaying a base per base specificity towards a nucleic acid target sequence, wherein at least one of said modules has at least 70% sequence identity with one of the module polypeptide sequences from the proteins E5AV36, E5AW43 and E5AW45 of Burkholderia rhizoxinica.",
+        "2. A nucleic acid binding polypeptide according to claim 1, wherein said module polypeptide sequence has at least 90% sequence identity with a polypeptide sequence selected from the group consisting of: SEQ ID NO: 162 to 181, SEQ ID NO: 31 to SEQ ID NO: 36 and SEQ ID NO: 37 to SEQ ID NO: 63.",
+        "3. A nucleic acid binding polypeptide according to claim 1 wherein at least one of said modules coming from the proteins E5AV36, E5AW43, and E5AW45, comprise a unique variable amino acid residue that determines the specificity of each module towards a nucleotide base.",
+        "4. A nucleic acid binding polypeptide according to claim 3, wherein said unique variable residue determines the following nucleic acid base:",
+        "5. A nucleic acid binding polypeptide according to claim 4, wherein said variable residue is located in position 13 of each module.",
+        "6. A nucleic acid polypeptide according to claim 1 wherein at least one of said modules coming from the proteins E5AV36, E5AW43, and E5AW45, comprise(s) variable residues in position 12 and 13 NT, **, KG, NR, HH, HS, RN, which determine the specificity of said module towards a nucleotide base.",
+        "7. A nucleic acid binding polypeptide according to claim 1 wherein said target nucleic acid sequence does not comprise a thymidine nucleotide at position \u22121.",
+        "8. A nucleic acid binding polypeptide according to claim 1, wherein said polypeptide further comprises a module that has at least 80% amino acid identity with an AvrBs3 repeat of SEQ ID NO. 10.",
+        "9. A polypeptide comprising a nucleic acid binding polypeptide according to claim 1, wherein said nucleic acid binding polypeptide is fused to a catalytic domain.",
+        "10. The polypeptide according to claim 9, wherein said catalytic domain has an activity of transcriptional activation or inhibition.",
+        "11. The polypeptide according to claim 9, wherein said catalytic domain has a nuclease activity.",
+        "12. The polypeptide according to claim 11, wherein said catalytic domain has an endonuclease activity.",
+        "13. The polypeptide according to claim 12, wherein said polypeptide has cleavage activity under dimeric form.",
+        "14. The polypeptide according to claim 13, wherein said catalytic domain comes from the endonuclease FokI.",
+        "15. The polypeptide according to claim 12, wherein said polypeptide has cleavage activity under monomeric form.",
+        "16. The polypeptide according to claim 15, wherein said catalytic domain comes from the endonuclease I-TevI.",
+        "17. The polypeptide according to claim 9, wherein said catalytic domain is from a homing endonuclease.",
+        "18. The polypeptide according to claim 9, for use to process the genetic material of a cell within or adjacent to said nucleic acid target sequence.",
+        "19. The polypeptide according to claim 1 further comprising a polypeptide sequence having at least 80% amino acid identity with the C-terminal or N-terminal polypeptide from AvrBs3 (SEQ ID NO.6 and SEQ ID NO.111).",
+        "20. The polypeptide according to claim 1 for use as a therapeutic molecule.",
+        "21. A polynucleotide, DNA or RNA vector, plasmid or virus encoding a polypeptide according to claim 1.",
+        "22. A method for targeting the genetic material of a cell, comprising:\n(a) providing a cell comprising a nucleic acid target sequence; and\n(b) introducing into the cell a polypeptide according to claim 9;\nsuch that said polypeptide processes the genetic material of the cell within or adjacent to said target nucleic acid sequence.",
+        "23. The method for modifying the genetic material of a cell according to claim 22, wherein said polypeptide cleaves genetic material within or adjacent to said target nucleic acid sequence.",
+        "24. The method according to claim 23, further comprising introducing into the cell an exogenous nucleic acid comprising a sequence homologous to at least a portion of the target nucleic acid sequence, such that homologous recombination occurs between said exogenous nucleic acid and the target nucleic acid sequence.",
+        "25. The method according to claim 22, wherein the cell is a plant cell.",
+        "26. The method according to claim 22, wherein the cell is a mammalian cell.",
+        "27. A method for generating an animal comprising:\n(a) providing a eukaryotic cell comprising a nucleic acid target sequence into which it is desired to introduce a genetic modification;\n(b) generating a cleavage within or adjacent to said target nucleic acid sequence by introducing a polypeptide according to claim 11 into said cell; and\n(c) generating an animal from the cell or progeny thereof, in which a cleavage has occurred.",
+        "28. A method according to claim 27, further comprising: introducing into the cell an exogenous nucleic acid comprising a sequence homologous to at least a portion of the nucleic acid target sequence, such that homologous recombination occurs between said exogenous nucleic acid and the nucleic acid target sequence in the cell or progeny thereof; and generating an animal from the cell or progeny thereof in which homologous recombination has occurred.",
+        "29. A method for generating a plant comprising:\n(a) providing a plant cell comprising a nucleic acid target sequence into which it is desired to introduce a genetic modification;\n(b) generating a cleavage within or adjacent to said nucleic acid target sequence by introducing a polypeptide according to claim 11; and\n(c) generating a plant from the cell or progeny thereof in which a cleavage has occurred.",
+        "30. The method according to claim 29, further comprising: introducing into the plant cell an exogenous nucleic acid comprising a sequence homologous to at least a portion of the target nucleic acid sequence, such that homologous recombination occurs between said exogenous nucleic acid and the target nucleic acid sequence in the cell or progeny thereof; and generating a plant from the cell or progeny thereof in which homologous recombination has occurred."
+    ]
+}

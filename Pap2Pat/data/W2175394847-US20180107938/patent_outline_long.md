@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to quantum processing element operation
+
+## BACKGROUND OF THE INVENTION
+
+- introduce computing component limitations
+- describe conventional silicon integrated circuits
+- introduce quantum computing and qubits
+- describe semiconductor based qubits
+- discuss limitations of semiconductor based qubits
+- introduce quantum dots and their limitations
+- introduce superconducting qubits and their limitations
+
+## SUMMARY OF THE INVENTION
+
+- introduce flip-flop qubit
+- describe method of operation
+- apply magnetic field to separate spin states
+- apply electric field to modulate hyperfine interaction
+- describe electrode configuration
+- apply oscillating electric signal
+- select frequency based on magnetic field amplitude
+- prevent orbital excitation of electron
+- apply oscillating magnetic field and electric field simultaneously
+- transfer quantum state to nuclear spin
+- introduce nuclear-spin qubit
+- apply continuous magnetic field
+- apply oscillating magnetic field
+- apply electric field to modulate hyperfine interaction
+- select frequency based on oscillating electric signal
+- prevent flipping of electron spin
+- apply oscillating magnetic field and electric field simultaneously
+- select frequency based on nuclear spin Zeeman frequency
+- apply biasing DC electric signal
+- bias electron in region of high hyperfine interaction
+- apply biasing electric signal to minimize interaction with external environment
+- create electric dipole associated with processing element
+- interact with another electric dipole via dipole-dipole interaction
+- confine electromagnetic field modes
+- quantize electromagnetic field modes
+- interact with electron to enable coupling
+- read-out quantum state by measuring resonance frequency shift
+- spatially extend electromagnetic fields
+- enable long distance quantum bit coupling
+- detune processing element from resonator modes
+- couple quantum states of two processing elements
+- apply continuous magnetic field
+- apply electric signal to displace electrons
+- create two electric dipoles
+- enable coupling of quantum states
+- confine electromagnetic field modes
+- induce quantized electric field
+- couple quantum states of two processing elements via virtual photons
+
+## DETAILED DESCRIPTION OF EMBODIMENTS
+
+- describe processing element 10
+- introduce donor atom 18
+- describe gate electrode 16
+- explain hyperfine interaction control
+- describe flip-flop qubit
+- introduce nuclear-spin qubit
+- describe electric field effect on hyperfine interaction
+- show plot 25 of hyperfine interaction
+- describe electron wavefunction control
+- explain biasing electric signal
+- describe electrode 16 usage
+- introduce phosphorous atom as donor
+- describe orbital wave-function W control
+- explain hyperfine interaction A(Ez)
+- describe flip-flop qubit subspace
+- introduce electric dipole spin resonance (EDSR)
+- describe FIG. 4 schematic
+- explain orbital wave function approximation
+- describe Hamiltonian in |d, |i basis
+- introduce hyperfine coupling dependence
+- describe 'flip-flop' qubit drive
+- explain total Hamiltonian
+- describe energy level diagram of 'flip-flop' qubit
+- explain Rabi frequency
+- describe FIG. 5(a) plot
+- explain qubit operation at bias points
+- describe FIG. 6 flow-diagram
+- introduce nuclear-spin qubit drive
+- describe energy level diagram of nuclear-spin qubit
+- explain ESR drive Hamiltonian
+- describe total Hamiltonian for nuclear spin drive
+- explain nuclear spin drive rate
+- describe FIG. 7(b) energy level diagram
+- explain Raman drive process
+- describe FIG. 8 plot
+- explain nuclear spin qubit transition frequency
+- describe energy level diagram 85
+- explain qubit precession frequency insensitivity
+- introduce dipole-dipole interaction
+- describe flow-diagram for coupling flip-flop qubits
+- explain electric dipole-dipole interaction
+- derive dipole-dipole interaction Hamiltonian
+- describe energy level diagram for flip-flop qubits
+- introduce nuclear-spin qubits
+- describe flow-diagram for coupling nuclear-spin qubits
+- explain electric dipole-dipole interaction for nuclear-spin qubits
+- derive nuclear-spin qubit Hamiltonian
+- describe energy level diagram for nuclear-spin qubits
+- introduce photonic link for qubit coupling
+- describe structure for coupling qubits via photonic link
+- explain electron-photon coupling Hamiltonian
+- derive flip-flop-photon coupling rate
+- describe energy level diagram for flip-flop qubit coupled to photon
+- introduce nuclear-spin qubit coupled to photon
+- describe energy level diagram for nuclear-spin qubit coupled to photon
+- explain nuclear-spin-photon coupling Hamiltonian
+- derive nuclear-spin-photon coupling rate
+- describe flow-diagram for coupling flip-flop qubits via photonic link
+- describe flow-diagram for coupling nuclear-spin qubits via photonic link
+- introduce read-out of qubit states
+- describe qubit gate time and figures of merit
+- introduce quantum computer architecture
+- describe single electron transistor
+- explain donor placement and qubit operation
+- introduce counted ion implantation
+- describe tuning tunnel coupling to interface
+- explain increasing tunnel coupling
+- introduce multiple donors per processing element
+- describe quantum processing sequence
+- explain storing information in nuclear spin
+- introduce loading electron into donor-interface system
+- describe read-out of qubit spin states
+- introduce adiabatic pulling of electron wavefunction
+- describe operation of flip-flop qubit
+- introduce quantum processor architecture
+- describe qubit cell architecture
+- explain CPW resonator coupling
+- describe applications of quantum processor
+- introduce encryption and decryption
+- introduce advanced chemistry simulation
+- introduce optimization
+- introduce machine learning
+- introduce pattern recognition
+

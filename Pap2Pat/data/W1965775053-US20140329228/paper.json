@@ -1,0 +1,219 @@
+{
+    "id": "https://semopenalex.org/work/W1965775053",
+    "authors": [
+        "Hiroshi Ueda",
+        "Jinhua Dong",
+        "Hiroyuki Ohashi",
+        "Ryoji Abe",
+        "Hiroaki Takagi",
+        "Hee Jin Jeong",
+        "Kyosuke Yamane",
+        "Rena Kaigome",
+        "Fujio Saiki",
+        "Dai Arakawa"
+    ],
+    "title": "Ultra Q-bodies: quench-based antibody probes that utilize dye-dye interactions with enhanced antigen-dependent fluorescence",
+    "date": "2014-04-11",
+    "abstract": "Recently, we described a novel reagentless fluorescent biosensor strategy named Quenchbody, which functions via the antigen-dependent removal of the quenching effect on a fluorophore that is attached to a single-chain antibody variable region. To explore the practical utility of Quenchbodies, we prepared antibody Fab fragments that were fluorolabeled at either one or two of the N-terminal regions, using a cell-free translation-mediated position-specific protein labeling system. Unexpectedly, the Fab fragment labeled at the heavy chain N-terminal region demonstrated a deeper quenching and antigen-dependent release compared to that observed using scFv. Moreover, when the Fab was fluorolabeled at the two N-termini with either the same dye or with two different dyes, an improved response due to enhanced quenching via dye-dye interactions was observed. On the basis of this approach, several targets, including peptides, proteins and haptens, as well as narcotics, were quantified with a higher response up to 50-fold. In addition, differentiation of osteosarcoma to osteoblasts was successfully imaged using a similarly fluorolabeled recombinant Fab protein prepared from E. coli . Due to its versatility, this \u201cUltra-Quenchbody\u201d is expected to exhibit a range of applications from in vitro diagnostics to the live imaging of various targets in situ .",
+    "sections": [
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Generation Of Fab-Type Q-Bodies",
+                    "paragraphs": [
+                        "Because Fab fragments are considered more thermostable compared to the single chain variable region (scFv), which had been successfully converted to a Q-body, we tried to synthesize Q-bodies based on Fab fragments. As a model antibody, we selected anti-human osteocalcin (bone gla protein, BGP) KTM219 as the recognition unit for the bone-related disease marker7. TAMRA was the dye used to conjugate with the Fab as previously described.",
+                        "To synthesize Fab-type Q-bodies, we employed two plasmids encoding either VH-CH1 (Fd chain) or CL-C\u03ba (L chain) cDNAs, and incorporated TAMRA into the N-terminal ProX tag region of the Fd during cell-free co-transcription-translation. In addition, Flag- and His-tags were fused at the C-terminus of the Fd and L chains, respectively, to enable their detection and tandem purification (Fig. 1a). After running the translated products on a 15% SDS-PAGE gel, the synthesized anti-BGP Fab protein was detected using gel fluorescence imaging (Fig. 1b). A clear fluorescent band reflecting TAMRA fluorescence was observed at the expected molecular weight (26\u2005kDa) of the Fd chain in the reduced sample, and the heterodimeric Fab (Fd/L) was observed at 53\u2005kDa in the non-reduced, denatured sample. This result indicated that a heterodimeric Fab fragment incorporated with TAMRA at the N-terminal region of Fd was successfully generated. The Fab was also detected using Western blotting analyses with anti-Flag and anti-His antibodies. Heterodimeric Fab was observed in the presence of TAMRA-C6-AF-tRNA, although a negligible amount of protein was observed in the absence of suppressor tRNA (Fig. 1c). Taken together, these results indicated that TAMRA-C6-AF-tRNA specifically decoded the amber codon. Furthermore, the anti-BGP Fab was site-specifically and quantitatively labeled with TAMRA."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Antigen-Dependent Fluorescence Of Tamra-Labeled Anti-Bgp Fab",
+                    "paragraphs": [
+                        "The labeled Fab was purified using tandem affinity purification with anti-Flag and Ni-NTA resins. Its fluorescence spectra were measured in the presence of various concentrations of antigen BGP-C7 peptide (NH2-RRFYGPV-COOH) (Fig. 2, a\u2013c), resulting in a remarkable dose-dependent increase (9.6-fold) in the intensity of the fluorescence spectra upon the addition of BGP-C7. This increase exceeded that of the scFv Q-body (5.6-fold). To investigate the reason of increased response, the effect of denaturant 7\u2005M guanidium hydrochloride (GdnHCl) added with 100\u2005mM DTT was investigated. Indeed, the labeled Fab showed higher fluorescence enhancement (9.5-fold) than the scFv (5.5-fold), indicating deeper quenching of Fab Q-body in the absence of antigen. A standard curve of the fluorescence intensity at 580\u2005nm suggested that the fluorescence increased in the BGP-C7 peptide concentration occurred in a dose-dependent manner (Fig. 2b). Using curve fitting, the EC50 value of 2.1 \u00d7 10\u22128\u2005M was obtained, which was lower compared to scFv (2.5 \u00d7 10\u22128\u2005M). Both the deeper quenching and lower EC50 most likely reflected the enhanced stability of the Fab fragment, while maintaining similarly efficient antigen-dependent de-quenching property."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescence-Based Thermal Shift Assay",
+                    "paragraphs": [
+                        "In general, the Fab fragment retains a higher thermostability compared to the scFv6. To compare the thermostability properties of the scFv- and Fab-type Q-bodies, a fluorescence-based thermal shift assay was performed using a real-time thermal cycler8. Instead of using an external environmentally sensitive dye, we took advantage of the temperature-dependent denaturation and de-quenching (fluorescence recovery) properties of Q-bodies, as previously demonstrated in its urea-induced denaturation. As a result, melting temperature (Tm) values of 73\u00b0C and 61\u00b0C were obtained for the Fab- and scFv-type Q-bodies, respectively (Supplementary Fig. S1). The observed higher thermostability of Fab-type Q-body was most likely due to the tighter association of CH1 and CL, which are connected by a C-terminal disulfide bond."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Tamra Double-Labeled Q-Body Demonstrates A Reduced Sensitivity Due To The H-Dimer",
+                    "paragraphs": [
+                        "Unlike the scFv fragment, the Fab fragment has two N-termini, each at the Fd and L chains, respectively. To investigate whether a higher fluorescent response can be attained with dye-dye quenching, an expression construct was generated in which an additional amber codon was incorporated into the ProX tag region of the L chain, to attach two TAMRA molecules per Fab. The obtained doubly TAMRA-labeled Q-body, shown as H-TAMRA/L-TAMRA (HTLT), demonstrated antigen-dependent fluorescence intensity increases with a maximum of 25-fold under the same conditions, suggesting deeper fluorescence quenching in the absence of antigen (Fig. 2, d\u2013f). However, the detection sensitivity of this Q-body was very modest with an EC50 of 1.0 \u00d7 10\u22124\u2005M, which is a value that well exceeded that of single TAMRA-labeled Q-bodies. Indeed, the sensitivities of the H-TAMRA/L-nonlabel (HTLn) and H-nonlabel/L-TAMRA (HnLT) were both higher with an EC50 of 2.1 \u00d7 10\u22128\u2005M and 7.1 \u00d7 10\u22129\u2005M, respectively. Thus, we postulated that the strong interaction, known as H-dimer formation9, between the two TAMRA dyes competes with the antigen binding and subsequent closure of the VH/VL interface, thereby resulting in markedly reduced sensitivity. As fluorescent dyes that are potentially more resistant to H-dimer formation, we attempted to incorporate two other fluorescent dyes, rhodamine 110 (R110) and ATTO655. We found that the fluorescence spectra of double R110- and ATTO655-labeled Fab Q-bodies, namely, H-R110/L-R110 (HRLR) and H-ATTO655/L-ATTO655 (HALA), demonstrated enhanced BGP-C7 dose-dependent fluorescence increases (Supplementary Fig. S2). The maximal fluorescence responses of the HRLR and HALA Q-bodies were 2.4- and 11-fold, respectively, which were greater than that of single dye-labeled Fab Q-bodies and the corresponding scFv Q-bodies (Table 1). Responses of the HRLR and HALA Q-bodies were observed with an estimated EC50 of 7.6 \u00d7 10\u22129\u2005M and 4.4 \u00d7 10\u22128\u2005M, respectively, which were closer to that of single dye-labeled Fab proteins. The lower EC50 values than TAMRA double-labeled Fab probably reflected their lower dimerization/self-quenching behaviors.",
+                        "Taken together, these results suggested that the doubly labeled Fab Q-bodies, in which the same dye was incorporated to both the H and L chains, resulted in deeper quenching and a greater antigen-dependent release, due to H-dimer formation and Trp-mediated PET. Because the performances of these Fab Q-bodies far exceeded those of conventional Q-bodies, these position-specific fluorolabeled Fabs were named \u201cUltra-Quenchbodies (UQ-bodies)\u201d."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Hetero Double-Labeled Fab Q-Bodies Demonstrate A Higher Response",
+                    "paragraphs": [
+                        "Studies performed by Kajihara et al.10 have demonstrated the use of a position-specific labeling system, where two different dyes may be incorporated into two designated positions of a protein, using two types of specific codons, such as a four-base codon and an additional four-base or amber codon. As a result, a hetero double-labeled maltose binding protein can be successfully used to monitor changes in FRET that are dependent on a conformational change that occurs upon the binding of the substrate maltose.",
+                        "As an extension of this approach, we incorporated two different dyes into one Fab molecule to further improve the FRET response between the dyes. To achieve this, we generated another pair of expression constructs in which the amber codon at the N-terminal ProX tag region was replaced with a CGGG codon, to incorporate two different fluorophores into a Fab during the translation reaction (Fig. 3a). We found that the fluorescence spectra of the FRET pair-labeled Q-bodies with the combination of TAMRA as a donor and ATTO655 as an acceptor produced high antigen responses (Fig. 3, b\u2013d, Table 2). The maximum fluorescence responses of the HTLA and HALT Q-bodies at the donor emission wavelength (580\u2005nm) were 50- and 35-fold, respectively, and maintained a high sensitivity. Since these values well exceed the Trp-mediated quenching of TAMRA measured by denaturation (9.5-fold), additional quenching by FRET is a plausible mechanism of the obtained high responses.",
+                        "In addition, H-R110/L-TAMRA (HRLT) and H-TAMRA/L-R110 (HTLR) Q-bodies showed that the fluorescence derived from TAMRA increased in a dose-dependent manner upon the addition of BGP-C7 with an excitation of 480\u2005nm. The maximum fluorescence responses of the HRLT and HTLR Q-bodies were 19- and 2.5-fold, respectively (Supplementary Fig. S3, Table 2). Probably, these values reflect the product of Trp- and FRET-mediated quenching of these dyes. After curve fitting, the EC50 values were 1.1 \u00d7 10\u22127\u2005M and 9.7 \u00d7 10\u22129\u2005M, respectively. In addition, fluorescence intensity ratios of 530\u2005nm and 580\u2005nm increased from 1.2 to 2.8, depending on the BGP-C7 concentration, with an EC50 value of 2.5 \u00d7 10\u22128\u2005M."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Application Of The Ultra Q-Body Strategy Using Other Fab Fragments",
+                    "paragraphs": [
+                        "With the expectation of a broader application of the UQ-body strategy to other antibody/antigen pairs, we prepared UQ-bodies for other antigens. First, serum albumin (SA) was used as a model protein. To compare the performance of UQ-bodies to the conventional Q-body under the same conditions, UQ-bodies containing the (Gly3Ser)2 linker between the ProX tag and Fab were prepared as previously described1. As shown in Fig. 3, e\u2013g, anti-SA UQ-bodies heterolabeled with TAMRA and ATTO655 showed a higher response of 6.5- to 7.8-fold while maintaining a similar sensitivity compared with previous scFv-type Q-bodies, which showed a modest response of up to 1.5-fold. The UQ-bodies labeled with R110 and TAMRA also demonstrated 3.5- to 8.3-fold maximum responses (Supplementary Fig. S3, d\u2013f).",
+                        "Next, the hemagglutinin (HA) protein of the influenza virus was selected as a target. We selected the human anti-influenza A HA antibody Fi6V3 due to its known structure as well as its high affinity to a broad range of influenza A viruses11. The heterolabeled UQ-bodies were constructed on the basis of synthetic V region genes, and we found 7-fold fluorescence increases upon the addition of H1N1 or H5N1 HA proteins (Supplementary Table S1, Supplementary Fig. S4)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Application Of The Uq-Body Strategy In Drug Detection",
+                    "paragraphs": [
+                        "Previously, we have shown that the anti-morphine scFv Q-body could detect opiates in the ppb range by merely mixing the sample and measuring its fluorescence1. However, the maximum fluorescence increase was relatively modest (~1.5-fold). To obtain a more enhanced response, we generated UQ-bodies for morphine. In addition, the UQ-bodies for methamphetamine and cocaine were similarly prepared.",
+                        "The fluorescence intensity for the purified proteins in the presence and absence of their respective antigen were evaluated using fluorescence spectral measurements. As shown in Fig. 4, all Fab Q-bodies showed an enhancement in antigen-dependent fluorescence. Among these enhancements, anti-morphine (HTLT), anti-methamphetamine (HTLn) and anti-cocaine (HTLT) showed the best antigen-dependent fluorescence responses (7.2-, 7.2- and 3.5-fold, respectively)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Preparation Of Uq-Bodies Using Recombinant Fab Fragments",
+                    "paragraphs": [
+                        "Although the UQ-bodies prepared using the in vitro translation system performed well, its relatively high cost and low yield prevents further applications, which require larger quantities of probe, such as cellular imaging (which needs sub-milligram amounts of probe). To resolve this issue, we prepared UQ-bodies using a combination of E. coli expression and thiol-based fluorescence labeling techniques (post-labeling method). To express the anti-BGP Fab fragment with one or two Cys-containing ProX tag(s) at the N-terminal region, bicistronic expression vectors encoding the tagged Fd and L chains were produced. To obtain soluble disulfide-bonded Ig domains in the E. coli cytoplasm, E. coli Shuffle (DE3) cells with an oxidized cytoplasm were transformed with the vector, and the cytoplasmic fraction was recovered after culture. After IMAC, mild reduction and fluorescence labeling were performed, followed by anti-Flag affinity purification, and sufficient amounts of UQ-bodies with high purity were obtained (Fig. 5a). In addition to TAMRA-C5-Maleimide, a shorter wavelength derivative ATTO520-C2-Maleimide was used for labeling, which exhibited less propensity for H-dimer formation. First, the antigen-binding activity of the double-labeled UQ-bodies was confirmed using ELISA with immobilized antigen (Supplementary Fig. S5a). We found that both TAMRA and ATTO520 double-labeled UQ-bodies showed high antigen-binding activity with similar Fab dose-dependency. In addition, each chain of the UQ-bodies showed sufficient purity and fluorescence, as assessed using SDS-PAGE (Supplementary Fig. S5b). It is worth noting that in the cases of single-labeled UQ-body, only a fluorescent band for heavy chain (Fd chain) was observed, ruling out the possibility of off-target labeling of intradomain Cys residues. When the fluorescence was evaluated using a fluorescence spectrometer, a significant antigen-dependent fluorescence increase was observed for single TAMRA- and double ATTO520-labeled UQ-bodies (Fig. 5, b and c). Specifically, double ATTO520-labeled UQ-body showed an 11-fold increase, and retained a low EC50 of 7.7 \u00d7 10\u22128\u2005M. Also, single TAMRA-labeled UQ body showed a 7.0-fold increase with a lower EC50 of 1.9 \u00d7 10\u22128\u2005M. In contrast, single ATTO520- and double TAMRA-labeled UQ-bodies showed a relatively modest antigen-dependent response of up to 3.6- and 2.4-fold, respectively. The contrasting responses of these two dyes probably reflect the differences in their quenching and dimerization behaviors (see discussion)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Live Imaging Of Bgp-Producing Osteoblasts Using A Uq-Body",
+                    "paragraphs": [
+                        "Because UQ-bodies with a sufficient fluorescence response were obtained using the post-labeling method, microscopic antigen detection was performed. To achieve this, the most responsive double ATTO520-labeled UQ-body was applied to anti-Flag M2 beads, and its fluorescence was observed using a fluorescence microscope (Fig. 5d). We found that upon the addition of BGP-C7 peptide, the beads began to fluoresce, which was readily observed with visual inspection. Next, detection of the antigen on agarose beads was performed. When streptavidin-agarose beads were immobilized with or without biotinylated antigen (bioBGP-C11) peptide, and added with or without UQ-bodies, only the beads with both the antigen peptide and UQ-bodies showed intense fluorescence (Supplementary Fig. S6b).",
+                        "Bone homeostasis is dependent on the balance of deposition by osteoblast and resorption by osteoclasts. This dynamic process is responsible for the continuous remodeling of bone tissue and is crucial for maintenance of bone size, shape, and integrity12. To identify osteoblasts in the tissue, markers such as bone-type alkaline phosphatase (BAP) are often used. However, conventional enzymatic assay for BAP was not specific enough, while typical immunoassay needs multiple steps for the detection. Since BGP represents a more specific mature osteoblast marker, imaging of BGPs produced by differentiated osteosarcoma cells was performed. Human osteosarcoma U2O2 cells were induced for differentiation to osteoblasts using 100\u2005nM vitamin D3 (VD3). After incubation for 36\u2005h, UQ-bodies were added to the cells, and directly observed using microscopy without washing. As shown in Fig. 5, e and f, a clear UQ-body-dependent fluorescence of VD3-treated cells was observed inside and/or around individual cells. Since most BGP secreted by normal osteoblast is deposited in extracellular bone matrix13, the observed intracellular fluorescence might represent internalized BGP due to added UQ-body. On the contrary, the U2OS cells not treated with VD3 showed lower fluorescence, probably reflecting lower production of BGP as reported14. Collectively, the result demonstrated the utility of the UQ-body as a handy live cell imaging/assay tool."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Discussion",
+            "paragraphs": [
+                "Our results suggested that the Fab demonstrated an enhanced response compared to the corresponding scFv in single TAMRA-labeled Q-bodies. This result reflected the more stable variable region structure of the Fab fragment. However, it was also equally possible that if the stability was too high, TAMRA could not penetrate into the VH/VL interface where the Trp-mediated quenching occurs. Because the primary structure of our recombinant Fab is very close to its native counterpart, this result suggested that in natural antibodies, the transient opening and closing of the VH/VL interface also occurs, which allows the entry of hydrophobic small molecules.",
+                "Compared with single labeled UQ-bodies, double-labeled UQ-bodies showed generally higher responses; however, TAMRA-labeled BGP UQ-bodies show a reduced sensitivity. In contrast, double ATTO520-labeled UQ-body demonstrated a higher sensitivity and response (Fig. 5b). This difference most likely reflected the dyes' similar yet distinct chemical structures (Supplementary Fig. S7). Compared with TAMRA, ATTO520 is less hydrophobic due to its smaller size and positive charge, and this resulted in its lower H dimer propensity. Conversely, double TAMRA-labeled UQ-bodies with different linker lengths (C0, C2 and C5) showed absorption peaks at a shorter wavelength, which indicated the presence of an H dimer (Supplementary Fig. S8). This result strongly supported a higher but difficult-to-release quenching of these UQ-bodies in the absence of antigen.",
+                "As a cellular imaging probe, we showed its utility in the extracellular imaging of live cells. However, if we inject the UQ-bodies into the cells by an appropriate method, clearer visualization of various intracellular targets and their modifications than previously reported with conventional fluorescence-labeled antibodies15 will be possible. Although optimization of the dye and its number might improve its performance, the observed potential to convert many antibody clones to UQ-bodies will innovate and redefine future immunodiagnostics, biosensing, and bioimaging studies."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Materials",
+                    "paragraphs": [
+                        "The KOD-FX DNA polymerase was obtained from Toyobo, Osaka, Japan. The In-Fusion Advantage PCR Cloning Kit was obtained from Takara Bio (Otsu, Japan). Restriction enzymes and E. coli SHuffle T7 Express LysY were purchased from New England Biolabs (Ipswich, MA). The pIVEX2.3d vector was obtained from 5-Prime GmbH (Hamburg, Germany). The RYTS kit was purchased from ProteinExpress (Chiba, Japan). C-terminal peptides from BGP (BGP-C7, NH2-RRFYGPV-COOH, MW = 894) and biotinylated C-terminal peptides from BGP (BGP-C11, bio-NH2-QEAYRRFYGPV-COOH) were obtained from Genscript (Piscaway, NJ).",
+                        "Ni Sepharose High Performance His beads were purchased from GE Healthcare (Piscataway, NJ). The Nanosep Centrifugal-10\u2005k Ultrafiltration Device was obtained from Pall (Port Washington, NY). Immobilized TCEP Disulfide Reducing Gel and Streptavidin beads were purchased from Thermo Pierce (Rockford, IL). 5(6)-Carboxytetramethylrhodamine-C5-maleimide (TAMRA-C5-maleimide) and ATTO520-C2-maleimide were obtained from Biotium (Hayward, CA). TAMRA-C2-maleimide and TAMRA-C0-maleimide were obtained from Anaspec (Fremont, CA) and Life Technologies (Carlsbad, CA), respectively. Immunoblock was purchased from DS Pharma (Osaka, Japan). Anti-His-HRP antibody was purchased from Qiagen (Hilden, Germany). 3,3\u2032,5,5\u2032-Tetramethylbenzidine (TMBZ), anti-Flag M2 affinity gel, bovine and human serum albumins were obtained from Sigma (St. Louis, MO). A 35-mm glass bottom dish was obtained from Matsunami (Osaka, Japan). Dulbecco's Modified Eagle Medium (DMEM) and Vitamin D3 were purchased from Wako (Osaka, Japan). Fetal bovine serum (FBS) and Penicillin/streptomycin were obtained from Life Technologies. All water used was purified using Milli-Q (Millipore, UK). Other chemicals and reagents, unless otherwise indicated, were obtained from Sigma or Wako. The mouse IgG1 constant region gene was obtained from the HSRRB gene bank (Osaka, Japan). The mouse Ck gene derived of myeloma MOPC 41 was a kind gift from Klaus Rajewsky."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Vector Construction",
+                    "paragraphs": [
+                        "An expression vector pROX-BGP-VH-CH1 harboring a T7 promoter-controlled heavy-chain Fd (VH-CH1) gene of anti-BGP C-terminal fragment KTM-2197 fused with an N-terminal ProX tag containing an amber codon (ATG TCT AAA CAA ATC GAA GTA AAC TAG TCT AAT GAG) and a C-terminal FLAG tag, was generated by splice-overlap-extension (SOE) PCR. The VH chain was amplified using the 5\u2032-primer (CTTTAAGAAGGAGATATACCATGTCTAAACAAATCGAAGTAAACTAGTCTAATGAGACCCAAGTAAAGCTGCAGCAGTC) and 3\u2032-primer (GATGGGGGTGTCGTTTTGGCGCTCGAGACGGTGAC), and the mouse IgG1 CH1 gene was amplified using the 5\u2032-primer (GCCAAAACGACACCCCCATC) and 3\u2032-primer (CTTTGTTAGCAGCCGGATCCTTATTACTTGTCATCGTCGTCCTTGTAGTCAGAACCCCCCCCACAATCCCTGGGCAC). The amplified VH and CH1 genes were linked by SOEPCR using the VH 5\u2032-primer and CH1 3\u2032-primer, and the construct was cloned into the NcoI- and BamHI-digested pIVEX2.3d using the In-Fusion PCR cloning kit.",
+                        "In addition, an expression vector pROX-BGP-VL-C\u03ba harboring a T7 promoter-controlled light-chain (VL-C\u03ba) gene of the KTM-219 fused with an N-terminal ProX tag containing an TTT codon and C-terminal His tag, was constructed by SOE PCR. The VL chain was amplified using the 5\u2032-primer (CTTTAAGAAGGAGATATACCATGTCTAAACAAATCGAAGTAAACTTTTCTAATGAGACCGACATTGAGCTCACCC) and 3\u2032-primer (GTTGGTGCAGCATCAGCCCGTTTTATTTCC), and the mouse C\u03ba gene was amplified using the 5\u2032-primer (GCTGATGCTGCACCAAC) and 3\u2032-primer (TGATGATGAGAACCCCCCCCACACTCATTCCTGTTG). The amplified VL and C\u03ba genes were linked by SOE PCR using the VL 5\u2032-primer and the C\u03ba 3\u2032-primer, and the construct was then cloned into NcoI- and SmaI-digested pIVEX2.3d using the In-Fusion PCR cloning kit.",
+                        "The wild-type (non-labeled) Fab gene was constructed by replacing the TAG codon with a TTT codon in the ProX tag of VH-CH1. For doubly and FRET pair-labeled Fabs, the corresponding expression vectors were constructed by replacing the TAG with a TAG and CGGG codon, respectively, in the ProX tag preceding the VL-C\u03ba gene.",
+                        "For Fab genes encoding anti-SA(29IJ6)16, morphine17, methamphetamine18, cocaine19 and influenza virus hemagglutinin (HA)11, the corresponding genes were cloned in place of the anti-BGP Fab, with an additional sequence encoding N-terminal (G3S)2 linker. The codon-optimized VH/VL genes for anti-methamphetamine, cocaine and influenza HA were synthesized by Genscript (Piscaway, NJ, USA)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Preparation Of Aminoacyl Trnas",
+                    "paragraphs": [
+                        "5-R110-C6-AF-pdCpA, 5(6-)TAMRA-C6-AF-pdCpA and ATTO655-C6-AF-pdCpA were synthesized as previously described20. The aminoacylated pdCpAs were ligated to an amber suppressor tRNA derived from Mycoplasma capricolum Trp1 tRNA or a four-base CGGG suppressor tRNA derived from yeast phenylalanine tRNA without the 3\u2032 dinucleotide using chemical ligation method as previously described2122. The aminoacyl-tRNAs can be obtained as commercially available reagents (CoverDirect tRNA reagents for site-directed protein labeling, ProteinExpress, Chiba, Japan)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cell-Free Co-Transcription/Translation",
+                    "paragraphs": [
+                        "The incorporation of TAMRA-C6-AF into the N-terminal region of Fab was performed using a cell-free transcription/translation system. The reaction mixture (60\u2005\u03bcL) consisted of 30\u2005\u03bcL of the Reaction Mix (\u00d72), 0.6\u2005\u03bcL methionine, 3\u2005\u03bcL Enzyme Mix, 20\u2005\u03bcL E. coli lysate, each 2\u2005\u03bcL plasmid DNAs (200\u2005ng) and 3\u2005\u03bcL aminoacyl-tRNA (480\u2005pmol). All the reagents used, with the exception of the plasmid and tRNA, were provided in the RYTS kit. The reaction mixture was incubated at 37\u00b0C for 2\u2005h, and subsequently at 4\u00b0C for 16\u2005h. To obtain the FRET-pairs of labeled Q-body (HRLT), for example, a FRET-pair containing two fluorescent amino acids, TAMRA-tRNACUA and R110-tRNACGGG were added to the cell-free translation system combined with two expression vectors with a TAG codon in the ProX tag of the VH-CH1 gene and CGGG codon in the ProX tag of VL-C\u03ba gene.",
+                        "An aliquot of the reaction mixture (0.5\u2005\u03bcL) was applied to 15% SDS-PAGE and the gel was visualized using a fluorescence scanner FMBIO-III (Hitachi, Tokyo, Japan). The gel was also evaluated using Western blot analysis with anti-Flag M2 and alkaline phosphatase-labeled anti-mouse IgG (Promega, Madison, WI, USA) or anti-His tag (Novagen, La Jolla, CA, USA) and alkaline phosphatase-labeled anti-mouse IgG (Promega, Madison, WI, USA)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Tandem Affinity Purification With Anti-Flag- And Nickel-Affinity Chromatography",
+                    "paragraphs": [
+                        "First, the reaction mixture (60\u2005\u03bcL) was incubated with 20\u2005\u03bcL of Flag M2 affinity gel. After incubation at room temperature for 15\u2005min, the column was washed three times with wash buffer (20\u2005mM phosphate, 0.5\u2005M NaCl, 0.1% polyoxyethylene(23)lauryl ether, pH 7.4). The bound proteins were subsequently eluted with two 200-\u03bcL volumes of wash buffer containing 100\u2005\u03bcg/mL of Flag peptide. The eluted proteins were then applied to a His Spin Trap Column (GE Healthcare, Piscataway, NJ, USA). After incubation at room temperature for 15\u2005min, the column was washed three times with wash buffer containing 60\u2005mM imidazole. The bound proteins were then eluted with two 200-\u03bcL volumes of wash buffer containing 0.5\u2005M imidazole. The eluate was subsequently passed through an UltraFree-0.5 centrifugal device (Millipore, Billerica, MA) and equilibrated with phosphate buffered saline supplemented with Tween-20 (PBST, 10\u2005mM phosphate, 137\u2005mM NaCl, 2.7\u2005mM KCl, 0.05% Tween-20, pH 7.4) to concentrate the protein in the buffer. The concentration of the labeled Fab protein was determined by comparing the fluorescence intensities of a known concentration of free TAMRA- (Anaspec) and the sample under denaturing conditions in 7\u2005M GdnHCl, 100\u2005mM DTT, pH 7.4."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescence Measurements",
+                    "paragraphs": [
+                        "For fluorescence spectral measurements of anti-BGP Fab, the purified Fab (70\u2005nM, 6.25\u2005\u03bcL) was mixed with various concentrations of the antigen in PBST (50\u2005\u03bcL) containing 1% BSA. After incubation at 25\u00b0C for 70\u2005min, the fluorescence spectra were measured in a 2 \u00d7 2 \u00d7 15\u2005mm quartz cell (Starna, Atascadero, CA).",
+                        "Anti-bovine SA, anti-morphine, anti-methamphetamine, anti-cocaine or anti-influenza virus HA Fab was mixed with various concentrations of antigen in PBST (50\u2005\u03bcL) containing 1% BSA. The fluorescence spectra were immediately measured in a cuvette.",
+                        "Fluorescence spectra for single or double TAMRA-labeled Q-bodies were measured from 565 to 700\u2005nm with excitation at 550\u2005nm, for R110-labed Q-bodies, from 515 to 650\u2005nm with excitation at 480\u2005nm, and for ATTO655-labed Q-bodies, from 655 to 800\u2005nm with excitation at 640\u2005nm at 25\u00b0C on a FluoroMax-4 (Horiba Jobin-Yvon, Kyoto, Japan). Fluorescence spectra for UQ-bodies hetero-labeled with R110 and TAMRA, or with TAMRA and ATTO655, were measured from 515 to 700\u2005nm or from 565 to 800\u2005nm, with excitation at 480\u2005nm or 530\u2005nm, respectively. The excitation and emission slit widths were set to 15.0\u2005nm. The EC50 values were calculated using curve fitting of the observed fluorescence intensities at the maximum emission wavelength, and employing a sigmoidal dose-response model based on ImageJ software (http://rsbweb.nih.gov/ij/). All the fluorescence intensities were normalized taking the intensity of each sample at zero dose (without antigen) as one, at the maximum emission wavelength unless otherwise stated."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescence-Based Thermal Shift Assay",
+                    "paragraphs": [
+                        "The thermal shift assay was performed using the StepOne real-time PCR system (Applied Biosystems). For the thermal shift assay of the Q-body, the purified Fab was added to a final concentration of 70\u2005nM in a 30\u2005\u03bcL PBST containing 1% BSA. The change in fluorescence was monitored using the ROX filter. The temperature was increased from 25 to 98\u00b0C in 1\u00b0C intervals over the course of 1\u2005min, with fluorescence readings taken at each interval. The fluorescence data were plotted, normalized, and the first derivative of the curve was calculated to provide the melting temperature Tm."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "E. Coli Expression And Purification Of Fab Fragment",
+                    "paragraphs": [
+                        "Details for constructing the single and double Cys-tagged Fab expression plasmids pUQ1H(KTM219) and pUQ2(KTM219) will be described elsewhere. SHuffle T7 Express LysY cells were transformed with either pUQ1H(KTM219) or pUQ2(KTM219), and the transformed cells were cultured at 30\u00b0C for 16\u2005h in LB medium containing antibiotics (100\u2005\u03bcg/mL ampicillin) (LBA) and 1.5% agar. A single colony was picked and grown at 30\u00b0C in 4\u2005mL of LBA medium until the OD600 reached 0.9, from which 1.6\u2005mL was used to inoculate 100\u2005mL of LBA medium. The cells were cultured at 30\u00b0C until the OD600 reached 0.6, when 0.4\u2005mM isopropylthio-\u03b2-galactopyranoside was added and the solution was further incubated for an additional 16\u2005h at 16\u00b0C. The solution was centrifuged (6,000 \u00d7 g, 15\u2005min, 4\u00b0C) and the pellet was resuspended in 5\u2005mL HS buffer (20\u2005mM phosphate, 0.5\u2005M sodium chloride (NaCl), 60\u2005mM imidazole, 0.1% polyoxyethylene(23)lauryl ether, pH 7.4) and then sonicated. After centrifugation (11\u2005kg, 20\u2005min, 4\u00b0C), the supernatant was subsequently purified as described below."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Preparation Of The Uq-Body From Recombinant Fab Fragment",
+                    "paragraphs": [
+                        "The Poly-Prep column (Bio-Rad) packed with 0.4\u2005mL of Ni Sepharose High Performance His beads was primed with 2\u2005mL of HS buffer. The synthesized protein was then applied to the column and washed five times with 2\u2005mL of HS buffer. Finally, the proteins were eluted twice with 2\u2005mL of elution buffer (20\u2005mM phosphate, 0.5\u2005M NaCl, 0.5\u2005M imidazole, 0.1% polyoxyethylene(23)lauryl ether, pH 7.4). The eluent was subjected to a Nanosep Centrifugal-10\u2005k Ultrafiltration Device and equilibrated with TCEP buffer (50\u2005mM sodium phosphate, 100\u2005mM NaCl, 10\u2005mM EDTA, pH 7) to exchange buffers. The expression and purification of the protein were confirmed using SDS-PAGE analysis. The protein concentration was determined using the Bradford assay with BSA as a standard.",
+                        "A volume of immobilized TCEP Disulfide Reducing Gel slurry (Thermo) equal to the volume of purified protein was added to a microtube and centrifuged at 50 \u00d7 g for 1\u2005min. After removing the supernatant, 1\u2005mg of purified protein was added and incubated for 1\u2005h at room temperature on a rotating wheel. After centrifuging for 1\u2005min, the supernatant was recovered and its concentration was determined using the Bradford assay (Bio-Rad) with BSA as a standard.",
+                        "The reduced protein was labeled with TAMRA-maleimide or ATTO520-maleimide in the dark for 2\u2005h at 25\u00b0C. The molar ratio of protein to dye was one to two. The product was subsequently subjected to a Nanosep Centrifugal-10\u2005k Ultrafiltration Device and equilibrated with PBST (0.05% Tween 20 in phosphate buffered saline, 10\u2005mM phosphate, 137\u2005mM NaCl, 2.7\u2005mM potassium chloride, 0.05% Tween 20, pH 7.4) to exchange buffers and to remove unbound dye, which was confirmed using SDS-PAGE."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Antigen Binding Elisa",
+                    "paragraphs": [
+                        "After 100\u2005\u03bcL of streptavidin (10\u2005\u03bcg/mL in PBS) was immobilized on a Falcon 3912 microplate (BD Bioscience, Tokyo, Japan) for 2\u2005h at 25\u00b0C, the well was filled with PBS containing 20% Immunoblock for 2\u2005h at 25\u00b0C, and washed three times with PBST. Subsequently, 100\u2005\u03bcL of biotinylated BGP-C11 (4\u2005ng/mL in PBST containing 20% Immunoblock) was added and incubated for 1\u2005h at 25\u00b0C. After washing three times with PBST, each of the concentrations of fluorolabeled protein, \u201cUQ-body\u201d, in 100\u2005\u03bcL of PBST containing 5% Immunoblock was added and incubated for 2\u2005h at 25\u00b0C. The well was washed three times with PBST and bound UQ-body was probed with 100\u2005\u03bcL of 2,000-fold diluted Anti-His-HRP antibody in PBST containing 5% Immunoblock for 1\u2005h at 25\u00b0C. The well was washed three times with PBST, and developed with 100\u2005\u03bcL of substrate solution (100\u2005\u03bcg/mL TMBZ and 0.04\u2005\u03bcL/mL hydrogen peroxide, in 100\u2005mM sodium acetate, pH 6.0). After incubation for 5\u2005min, the reaction was stopped with 50\u2005\u03bcL of 1\u2005M sulfuric acid, and the absorbance was determined at 450\u2005nm with a reference at 655\u2005nm using a microplate reader Model 680 (Bio-Rad, Tokyo, Japan)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescence Measurement",
+                    "paragraphs": [
+                        "To measure the fluorescence spectra, 100\u2005ng of UQ-body was diluted in 250\u2005\u03bcL of PBST containing 1% BSA, and antigen BGP-C7 peptide was added by titration in a 5 \u00d7 5\u2005mm quarts cell (GL Sciences, Tokyo, Japan). After each addition, the solution was incubated for 5\u2005min at 25\u00b0C prior to the spectral measurements. As a control, the same procedure was performed with the exception that PBST was added instead of BGP-C7 peptide in the cell. The fluorescence spectra were obtained at 25\u00b0C using a fluorescence spectrophotometer Model FP-8500 (JASCO, Tokyo, Japan) with the excitation at 546 and 524\u2005nm for TAMRA- and ATTO520- UQ-body, respectively. The excitation and emission slit widths were set to 5.0\u2005nm. The dose-response curves were fitted at the maximum emission wavelength using Kaleida Graph 4.1 (Synergy Software, Reading, PA)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Imaging Of Agarose Beads With Uq-Body",
+                    "paragraphs": [
+                        "To image the immobilized UQ-body on the beads, 10\u2005\u03bcL of Anti-Flag M2 affinity gel and 100\u2005ng of double ATTO520-labeled UQ-body were incubated for 30\u2005min at room temperature on a rotating wheel. After washing with PBS to remove unbound UQ-body, 0\u20131\u2005\u03bcg of BGP-C7 was added. The sample was subsequently placed on a 35-mm glass bottom dish, and imaged using a fluorescence microscope IX71 (Olympus, Tokyo, Japan) equipped with 470 \u00b1 20\u2005nm excitation and 520 \u00b1 20\u2005nm emission filters. The images were obtained using the HCImage system equipped with an ImagEM EM-CCD camera (Hamamatsu Photonics, Japan).",
+                        "To image the antigen on the beads, streptavidin agarose beads (10\u2005\u03bcL) and 1\u2005\u03bcg of biotinylated BGP-C11 peptide were incubated for 30\u2005min at 25\u00b0C on a rotating wheel. After washing by centrifugation (1,000 \u00d7 g, 1\u2005min, 4\u00b0C) to remove unbound peptide, 100\u2005ng of double ATTO520 labeled UQ-body was added, followed by washing with PBST. After the addition of 250\u2005\u03bcL PBST, the sample was placed on a 3.5-cm dish, and imaged. Controls without biotinylated BGP-C11 peptide or UQ-body were employed."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Imaging Of Osteocalcin Produced By Human Osteoblasts",
+                    "paragraphs": [
+                        "U2OS cells were seeded onto 35-mm glass bottom dishes and cultured to 70% confluency in DMEM supplemented with 10% FBS and 1% P/S at 37\u00b0C with 5% CO2. The cells were washed three times with PBS and incubated in serum-free DMEM for 24\u2005h and then incubated for 36\u2005h in DMEM containing 0.1% FBS and 10\u22127\u2005M vitamin D3. Double ATTO520-labeled UQ-body (100\u2005ng) was added and was imaged. The exposure time was 1\u2005s. As a control, the same procedures without the addition of vitamin D3 and/or UQ-body were used."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Author Contributions",
+            "paragraphs": [
+                "R.A. and H.U. conceived of the study; R.A., H.T. and H.U. designed the experiments; H.J.J., D.A., K.Y. and J.D. performed the experiments in E. coli; R.A., R.K. and H.O. performed the experiments in vitro; F.S. performed the narcotics measurement; R.A. and H.J.J. analyzed the results; and R.A. and H.U. wrote the manuscript with input from H.T."
+            ],
+            "subsections": []
+        }
+    ]
+}

@@ -1,0 +1,597 @@
+{
+    "id": "https://semopenalex.org/work/W3203934118",
+    "authors": [
+        "Guo\u2010Ming Wang",
+        "Ruizhe Zhang",
+        "Peter D. Johnson"
+    ],
+    "title": "Computing Ground State Properties with Early Fault-Tolerant Quantum Computers",
+    "date": "2022-07-11",
+    "abstract": "Significant effort in applied quantum computing has been devoted to the problem of ground state energy estimation for molecules and materials. Yet, for many applications of practical value, additional properties of the ground state must be estimated. These include Green's functions used to compute electron transport in materials and the one-particle reduced density matrices used to compute electric dipoles of molecules. In this paper, we propose a quantum-classical hybrid algorithm to efficiently estimate such ground state properties with high accuracy using low-depth quantum circuits. We provide an analysis of various costs (circuit repetitions, maximal evolution time, and expected total runtime) as a function of target accuracy, spectral gap, and initial ground state overlap. This algorithm suggests a concrete approach to using early fault tolerant quantum computers for carrying out industry-relevant molecular and materials calculations.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "One of the primary applications of quantum computing is the simulation of materials and molecules, which are inherently quantum mechanical. It is hoped that future powerful quantum computers will be used in the development of materials and drug discovery [1]. Although they have yet to realize commercial application, quantum computers have been improving at a rapid rate, increasing the demand for quantum algorithms with highimpact use cases. To date, the main focus of quantum algorithm development for quantum chemistry and materials has been on ground state energy estimation [2]. This problem is mathematically formulated as estimating the lowest eigenvalue of the Hamiltonian matrix that characterizes the physical system. One of the first quantum chemistry applications of quantum computers was to use quantum phase estimation for estimating the ground state energy of small molecules [3]. More recently, the variational quantum eigensolver algorithm [4] was developed to use near-term intermediate-scale quantum (NISQ) computers to solve the ground state energy estimation problem.",
+                "However, in characterizing materials or analyzing small molecules for drug discovery, one often needs to estimate properties of the ground state beyond just the energy. These include transport properties [5], electric dipole moments [6], and molecular forces [7]. Such properties depend on expectation values of observables O with respect to the ground state of a Hamiltonian H. The problem of estimating such quantities was studied in [8,9,10], showing that it is even harder, in a complexity theoretic sense, than the ground state energy estimation problem in general. A straightforward approach to estimating ground state properties is to first (approximately) prepare the ground state, from which properties can be estimated. Many algorithms (e.g. [11,12,13]) have been developed for ground state preparation. However, these algorithms only work for idealistic quantum computers, and the quantum circuit depths involved in these methods are too deep to even be implemented on early fault-tolerant quantum computers. Another approach to preparing ground states that is more amenable to near-term quantum computers is to use the variational quantum eigensolver algorithm [14,7]. However, recent work has suggested that VQE alone is not practical for solving problems of industrial relevance [15]; estimation methods which are more efficient (e.g. [16]) than prepare and measure estimation, as used in VQE, seem necessary in order for quantum computers to compete with state-of-the-art methods in quantum chemistry and materials. Further issues with the variational quantum eigensolver and its variants are that there are no guarantees on the quality of the output ground state and that heuristic optimization methods struggle to prepare high-fidelity ground states.",
+                "This motivates the development of quantum algorithms for ground state property estimation (GSPE) which are both reliable and able to be run on near-term quantum computers (e.g. early fault-tolerant quantum devices) with the following characteristics: (1) The circuit depth (or the maximal Hamiltonian evolution time) is small even with the price of increasing the total circuit size (or evolution time). (2) The number of logical qubits is limited. The early fault-tolerant model captures the challenges of building a large-scale long-time coherent quantum device, while also being able to solve many important problems with provable performance guarantees [17,18,19,20,21]. The central question that this paper addresses is then:",
+                "Is it possible to estimate ground state properties of a Hamiltonian reliably using early fault-tolerant quantum computers?",
+                "In this paper, we provide an affirmative answer to this question. Furthermore, we propose an algorithm for the ground state property estimation using low-depth quantum circuits. The main theorem is stated as follows: Theorem 1.1 (Main theorem, informal). Given a Hamiltonian H and an observable O. Suppose we have access to a unitary U I that prepares a state |\u03c6 0 that has non-trivial overlap with the ground state |\u03c8 0 of H. Then, there exists an algorithm to estimate \u03c8 0 | O |\u03c8 0 with high accuracy and low-depth: the maximal Hamiltonian evolution time is O(\u03b3 -1 ), where \u03b3 is the spectral gap of H.",
+                "We make a few remarks about our main result. First, we note that the maximal evolution time, which is the maximal length of time we need to perform coherent time evolution, can roughly determine the depth of the quantum circuit. Our result achieves a nearly-linear dependence on \u03b3 -1 and only poly-logarithmic on the accuracy -1 , which improves the O( -1 ) maximal evolution time in the ground state energy estimation algorithms [22,20,23,24]. Second, our result does not violate the Heisenberg limit because the total evolution time still depends on poly( -1 ). Third, similar to almost all prior works in ground state preparation and energy estimation (e.g. [22,13,20]), we need the assumption that the initial state has some nontrivial overlap with the ground state, as otherwise the problem will become computationally intractable. Last, we consider the Hamiltonian as a black-box, which is a common model in this field. To implement our algorithm, for sparse local Hamiltonian, we can use the current state-of-the-art Hamiltonian simulation methods [25,26,27,28] with gate complexity depending linearly in the evolution time and logarithmically in the accuracy.",
+                "Comparison to the straightforward method. We can compare our algorithm with the straightforward approach of GSPE that first prepares the ground state and then applies quantum phase estimation (QPE) to estimate the ground state property.",
+                "\u2022 In the first step, to achieve an -accuracy for the estimation, the ground state need to be prepared with fidelity at least 1 -using the methods in [12,13], which have circuit depth O(\u03b3 -1 \u03b7 -1 ) where \u03b7 is the overlap between the initial state and the ground state.",
+                "\u2022 In the second step, QPE [29,24] requires circuit depth O( -1 ) for an -accuracy estimation for the ground state property.",
+                "Therefore, this straightforward approach has circuit depth O(\u03b3 -1 \u03b7 -1 + -1 ), while our algorithm has circuit depth O(\u03b3 -1 ). Furthermore, they also need many (i.e., \u03c9(1)) additional ancilla qubits for preparing the ground state, while we only use one ancilla qubit.",
+                "Our algorithm has a great advantage when the Hamiltonian's spectral gap is much larger than the estimation accuracy, making it easier to be implemented in the early fault-tolerant devices.",
+                "Organization. In Section 2 we formally state the problem of ground state property estimation. In Section 3 we review the method developed in [20] for estimating ground state energies. In the next three sections we explain our main algorithms and give an analysis for their performances starting from the simplest case and building to the mostinvolved, general case. Section 4 presents the case of a unitary observable which commutes with the Hamiltonian. Section 5 presents the case of a unitary observable which does not necessarily commute with the Hamiltonian. Section 6 describes the case of a general observable. Then, Section 7 gives two applications of the ground state property estimation algorithm. Section 8 gives a discussion of the results and presents some open questions."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Ground State Property Estimation Problem",
+            "paragraphs": [
+                "In this section, we will formally define the ground state property estimation problem. This problem was initially studied by Ambainis [8] as the approximate simulation problem (APX-SIM), and he proved that APX-SIM is P QMA[log] -complete i .",
+                "Problem 2.1 (Approximate simulation (APX-SIM), [8]). ",
+                "In the follow-up works, APX-SIM was shown to be P QMA[log] -complete even for 5-local Hamiltonian and 1-local observable [9], and also for some physics models like 2D Heisenberg model and 1D nearest-neighbor, translationally invariant model [10,30]. However, these previous studies only focused on the decision version of this problem. For the purpose of designing efficient algorithms, we first define the \"search version\" of APX-SIM as follows:"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Problem 2.2 (Search version of APX-SIM). Given a Hamiltonian H, an (local) observable",
+            "paragraphs": [
+                "O, and \u2208 (0, 1), with \u2126(1) probability, estimate \u03c8 0 | O |\u03c8 0 with an additive/multiplicative error at most .",
+                "In general, Problem 2.2 will not be more tractable than Problem 2.1. Thus, we may need some prior information about the Hamiltonian H and its ground state. Motivated by the widely used variational quantum eigensolver (VQE) [31,32] and the Hartree-Fock method [33] in quantum chemistry, it is often the case that for many real-world Hamiltonians, we are able to efficiently prepare an initial state |\u03c6 0 that has a nontrivial overlap with the ground state. Moreover, we assume that the Hamiltonian H has a nontrivial spectral gap, where a large family of Hamiltonians in practice satisfy this condition. With these assumptions, we formally define the ground state property estimation problem as follows: Problem 2.3 (Ground state property estimation (GSPE)). Given a Hamiltonian H with spectral gap \u03b3 and ground state |\u03c8 0 , an observable O, a unitary U I such that it prepares an initial state |\u03c6 0 with | \u03c6 0 |\u03c8 0 | 2 \u2265 \u03b7, and \u2208 (0, 1), estimate \u03c8 0 | O |\u03c8 0 with an additive/multiplicative error at most with \u2126(1) probability. Remark 2.4. We notice that when O = H, Problem 2.3 becomes the ground state energy estimation problem. Moreover, the prior knowledge of a large overlap for the initial state is required for all quantum algorithms with provable performance guarantees (e.g. [12,13,20]). It is also worth noting that even with these assumptions, it is unlikely to use a purely classical algorithm to estimate the ground state energy or property to high precision (unless P = BQP) [34].",
+                "We propose a high-accuracy, early fault-tolerant quantum algorithm for GSPE that satisfies the following properties:",
+                "\u2022 The maximal evolution time depends logarithmically on the accuracy and overlap \u03b7.",
+                "\u2022 In addition to the Hamiltonian evolution and observable implementation, it only uses one additional ancilla qubit."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "An Overview of the Low-Depth Ground State Energy Estimation",
+            "paragraphs": [
+                "In this section, we provide a brief overview of the low-depth ground state energy estimation algorithm proposed by Lin and Tong [20]. Our algorithms are inspired by this algorithm and use it as a subroutine. More specifically, they showed that: 20]). Given a Hamiltonian H with eigenvalues in the interval [-\u03c0/3, \u03c0/3] and its ground state |\u03c8 0 has energy \u03bb 0 . And suppose we can prepare an initial state |\u03c6 0 such that p 0 \u2265 \u03b7 for some known \u03b7, where p 0 := | \u03c6 0 |\u03c8 0 | 2 . Then, for any , \u03bd \u2208 (0, 1), there exists an algorithm that estimates \u03bb 0 with an additive error with probability 1 -\u03bd, by running a parameterized quantum circuit with the maximum quantum evolution time O( -1 ) and the expected total quantum evolution time O( -1 \u03b7 -2 ).",
+                "The pseudo-code of their algorithm is given in Algorithm 1. "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Algorithm 1 Ground State Energy Estimation",
+            "paragraphs": [
+                "for i \u2190 -d, . . . , d do 5:",
+                "Compute \u03b8 i , the phase angle of F i 7:",
+                "end for 8:",
+                "Sampling from the quantum circuit ",
+                "Measure (X k , Y k ) by running the quantum circuit with (Figure . 1) parameter k 14:",
+                "end for"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "16:",
+            "paragraphs": [
+                "Classical post-processing 17:",
+                "x L \u2190 -\u03c0/3, X R \u2190 \u03c0/3 ",
+                "end for 23:",
+                "else 26:",
+                "end if"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "28:",
+            "paragraphs": [
+                "end while 29:",
+                "The main technique of their algorithm is a classical post-processing procedure that extracts information from the following Hadamard test circuit (Figure 1). Let the initial state |\u03c6 0 be expanded as |\u03c6 0 = k \u03b1 k |\u03c8 k in the eigen-basis of H and let p k := |\u03b1 k | 2 be the overlap with the k-th eigenstate. They considered the overlaps p 0 , p 1 , . . . as a density function:",
+                "(1)",
+                "Then, the cumulative distribution function (CDF) C(x) := x -\u03c0 p(t)dt can be expressed as a convolution of p(x) and the 2\u03c0-periodic Heaviside function H(x), which is 0 in [(2k -1)\u03c0, 2k\u03c0) and 1 in [2k\u03c0, (2k + 1)\u03c0) for any k \u2208 Z. Thus, C(x) is also a periodic function, which makes it convenient to apply the Fourier approximation. They showed that H(x) can be approximated by a low-Fourier degree function F (x) in the intervals [-\u03c0+\u03b4, -\u03b4] and [\u03b4, \u03c0 -\u03b4]. Then, they defined the approximated cumulative distribution function (ACDF) as C(x) := (F p)(x) and proved that",
+                "Moreover, for each x, we have",
+                "where F j is the Fourier coefficient of F (x). Note that \u03c6 0 | e -ijH |\u03c6 0 can be estimated via the parameterized quantum circuit (Figure 1). Hence, we can estimate the ACDF at every point in [-\u03c0/3, \u03c0/3]. Moreover, they showed that the multi-level Monte Carlo method can be applied here to save the number of samples needed to achieve a high-accuracy estimation (Line 21). Therefore, we can estimate the ground state energy \u03bb 0 by locating the first non-zero point of the CDF C(x), which is \u03b7/8-approximated by the ACDF C(x). Since we assume that p 0 \u2265 \u03b7, the approximation error and the estimation error of C(x) can be tolerated, and we can find \u03bb 0 via a robust binary search (Line 18).",
+                "We note that the maximal evolution time of this algorithm corresponds to the Fourier degree of F (x), which is O( -1 ) by the construction, making their algorithm suitable for early fault-tolerant quantum devices. More details of this algorithm and the proofs are given in Appendix A."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Algorithm for Commutative Case",
+            "paragraphs": [
+                "In this section, we consider a easier case that O is unitary and commutes with the Hamiltonian H, and give a two-step quantum-classical hybrid algorithm for Problem 2.3. More specifically, suppose the initial state can be expanded in the eigenbasis as follows:",
+                "We note that {|\u03c8 k } is also an eigenbasis of O since O and H commute. In Step 1, we run [20]'s algorithm to estimate the ground state energy \u03bb 0 and the overlap between the initial state and the ground state p 0 . In Step 2, we construct a similar CDF function for the density k O k p k \u03b4(x -\u03bb k ), where O k := \u03c8 k | O |\u03c8 k . If we evaluate the CDF at \u03bb 0 , we can obtain an estimate of O 0 ."
+            ],
+            "subsections": [
+                {
+                    "title": "Step 1: estimate the initial overlap",
+                    "paragraphs": [
+                        "We first run the procedure EstimateGSE (Algorithm 1) to estimate the ground state energy \u03bb 0 with an additive error . Let x be the output. We remark that x satisfy C(x + \u03c4 ) \u2265 p 0 and C(x -\u03c4 ) = 0. However, we can only extract p 0 from the ACDF C(x), which satisfies:",
+                        "If [x -\u03c4 , x + \u03c4 ] contains a \"jump\" of C(x), i.e., an eigenvalue \u03bb k , then the approximation error of C(x) will be large. Hence, we say a point x is \"good\" for",
+                        "It is easy to see that C(x) will be an \u03b7/8-additive approximation of j\u2264k p k if x is good. Our goal is to find an x good that is good for \u03bb 0 , and estimating C(x good ) gives the overlap p 0 . The following claim gives a way to construct x good using the spectral gap of H. Claim 4.1 (Construct x good ). Let \u03b3 be the spectral gap of the Hamiltonian H. For any \u2208 (0, \u03b3/4), x + \u03c4 \u03b3/2 is good for \u03bb 0 , where x is the output of EstimateGSE( , \u03b7) (Algorithm 1).",
+                        "Proof. We know that x satisfies:",
+                        "x -\u03c4 < \u03c4 \u03bb 0 \u2264 x + \u03c4 .",
+                        "(5)",
+                        "Then, we have",
+                        "We also have",
+                        "Therefore, x is good for \u03bb 0 .",
+                        "We note that in [20], the ACDF's approximation error is chosen to be \u03b7/8. We may directly change it to \u03b7/8 without significantly changing the circuit depth, since by Lemma A.8 the degree of F can only blowup by a log factor of . Lemma 4.2 (Estimating the overlap). For any 0 , \u03bd \u2208 (0, 1), the overlap p 0 := | \u03c6 0 |\u03c8 0 | 2 can be estimated with multiplicative error 1 \u00b1 O( 0 ) with probability 1 -\u03bd by running the quantum circuit (Figure 1) O( -2 0 \u03b7 -2 ) times with expected total evolution time O(\u03b3 -1 -2 \u03b7 -2 ) and maximal evolution time O(\u03b3 -1 ).",
+                        "Proof. By Claim 4.1, if we set the additive error of ground state energy \u03bb 0 to be O(\u03b3), then we can construct an x good that is good for \u03bb 0 . By Theorem 3.1, it can be done with maximum quantum evolution time O(\u03b3 -1 ) and the expected total quantum evolution time O(\u03b3 -1 \u03b7 -2 ). Notice that we need to take d = O(\u03b4 -1 log(\u03b4 -1 -1 0 \u03b7 -1 )) (Line 3 in Algorithm 1) to make C(x good ) be an O( 0 \u03b7)-approximation of p 0 , where \u03b4 = \u03c4 \u03b3.",
+                        "Next, we estimate C(x good ) with additive error \u03b7 with probability 1 -\u03bd. We have an unbiased estimator",
+                        "for C(x), where Z := X + iY is measured from the Hadamard test, and J is a random variable for the Hamiltonian evolution time sampled proportional to the Fourier weight of",
+                        "We can show that G(x; Z, J) has variance O(log 2 (d)), and one estimate can be obtained with evolution time O(\u03c4 d/ log(d)) in expectation. If we repeatedly sample G(x; Z, J) and take the mean of them, then by Chebyshev's inequality, the sample complexity is O( -2 0 \u03b7 -2 \u03bd -2 ) to have an additive error O( 0 \u03b7) with probability 1 -\u03bd. Instead, we can use the so-called \"median-of-means\" trick to reduce the sample complexity. More specifically, let N g = O(log(1/\u03bd)) and K = O( -2 0 ). We first partition m = N g K samples (Z 1 , J 1 ), . . . , (Z m , J m ) into N g groups of size K. Then, for any i \u2208 [N g ], the i-th group mean is",
+                        "The final estimator is given by the median of these group means, i.e.,"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "G(x)",
+            "paragraphs": [
+                "By Chernoff bound, it is easy to see that G(x) has an additive error at most (\u03b7 0 ) with probability 1-\u03bd. It will imply that multiplicative error is at most 1\u00b1O( 0 ) since p 0 = \u0398(\u03b7).",
+                "And the sample complexity of G(x) is O( -2 0 \u03b7 -2 ). Hence, the expected total evolution time is O(\u03b3 -1 -2 0 \u03b7 -2 ). Since we run the same quantum circuit to estimate G(x), the maximal evolution time is still O(\u03b3 -1 )."
+            ],
+            "subsections": [
+                {
+                    "title": "Step 2: estimate the O-weighted CDF",
+                    "paragraphs": [
+                        "To estimate the expectation value of O, consider the following quantum circuit: Define the random variables X j , Y j be as follows: for W = I, X j := 1 if the outcome is 0, and X j := -1 if the outcome is 1. For W = S, Y j := -1 if the outcome is 0, and Y j := 1 if the outcome is 1.",
+                        "Then, we have the following claim on the expectation of the random variables X j , Y j :"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Claim 4.3 (A variant of Hadamard test).",
+            "paragraphs": [
+                "For any j \u2208 Z, the random variable X j + iY j is an un-biased estimator for \u03c6 0 | Oe -ij\u03c4 H |\u03c6 0 .",
+                "The proof is deferred to Appendix A.1. We can expand \u03c6 0 | Oe -ij\u03c4 H |\u03c6 0 in the eigenbasis of H (which is also an eigenbasis of O):",
+                "where the last step follows from the simultaneous diagonalization of O and H, and",
+                "Inspired by the ground state energy estimation algorithm in [20], we define the Oweighted \"density function\" for the observable as follows:",
+                "Note that p O (x) can be negative at some points. Suppose the eigenvalues of \u03c4 H is within [-\u03c0/3, \u03c0/3]. Then, we define the O-weighted CDF and ACDF for p O (x) similar to [20]:",
+                "where H is the 2\u03c0-periodic Heaviside function and",
+                "The following lemma gives an unbiased estimator for the O-weighted ACDF. Proof. C O (x) can be expanded in the following way:",
+                "where the third step follows from the Fourier expansion of F (x -y), the fifth step follows from the property of Dirac's delta function, and the last step follows from the definition of p k and the eigenvalues of matrix exponential.",
+                "Define an estimator G(x; J, Z) as follows:",
+                "where \u03b8 j is defined by F j = | F j |e i\u03b8 j , Z = X + iY measured from the quantum circuit (Figure 2) with parameter j = J, and",
+                "Then, we show that G(x; J, Z) is un-biased:",
+                "where the third step follows from Claim 4.3. Moreover, the variance of G can be upperbounded by:",
+                "where the third step follows from |e i(\u03b8 J +Jx) | = 1, and the last step follows from X j , Y j \u2208 {\u00b11}. By Lemma A.8, we know that",
+                "The expected total evolution time is",
+                "The lemma is then proved.",
+                "The following lemma shows that the O-weighted CDF C O (x) can be approximated by the O-weighted ACDF C O (x): Lemma 4.5 (Approximating the O-weighted CDF). For any > 0, 0 < \u03b4 < \u03c0/6, let F (x) := F d,\u03b4 (x) constructed by Lemma A.8 with approximation error \u03b7 /8. Then, for any x \u2208 [-\u03c0/3, \u03c0/3], it holds that:",
+                "The proof is very similar to Lemma A.9, so we omit it here. We can take \u03b4 := \u03c4 \u03b3/5 and let x good := x + \u03c4 \u03b3/2. Then, by Claim 4.1, we know that x good is good for \u03bb 0 , i.e., [x good -\u03c4 \u03b3, x good + \u03c4 \u03b3] \u2282 (\u03c4 \u03bb 0 , \u03c4 \u03bb 1 ). Hence, C O (x good ) satisfies",
+                "The following lemma shows how to estimate C O (x good ), which is very similar to Lemma 4.2.",
+                "Lemma 4.6 (Estimating p 0 O 0 ). For any 1 , \u03bd \u2208 (0, 1), p 0 O 0 can be estimated with multiplicative error 1 \u00b1 O( 1) with probability 1 -\u03bd by runs the quantum circuit (Figure 1)",
+                ") and maximal evolution time O(\u03b3 -1 )."
+            ],
+            "subsections": [
+                {
+                    "title": "Putting it all together",
+                    "paragraphs": [
+                        "In this section, we will put the components together and prove the following main theorem, which gives an algorithm for the ground state property estimation. Theorem 4.7 (Ground state property estimation with commutative observable, restate). Suppose p 0 \u2265 \u03b7 for some known \u03b7, and let \u03b3 > 0 be the spectral gap of the Hamiltonian. Then, for any , \u03bd \u2208 (0, 1), the ground state property \u03c8 0 | O |\u03c8 0 can be estimated within additive error at most with probability 1 -\u03bd, such that:",
+                        "1. the number of times running the quantum circuits (Figure 1 and2"
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "the maximal evolution time is O(\u03b3 -1 ).",
+            "paragraphs": [
+                "Proof. By Lemma 4.2, we obtain an estimate p 0 for p 0 with the guarantee that",
+                "where 0 will be chosen shortly. By Lemma 4.6, we obtain an estimate p 0 O 0 for p 0 O 0 with the guarantee that",
+                "where 1 will be chosen shortly. Then, we have",
+                "where the second step follows from the triangle inequality, the third step follows from Eqs. ( 25) and ( 26), the third step follows from p 0 \u2265 \u03b7, the fifth step follows from",
+                "Hence, if we take 0 = 1 = O( ), we will achieve additive error at most . For the success probability, we can make Eq.( 25) hold with probability 1 -\u03bd/2 in Lemma 4.2 and Eq.( 26) hold with probability 1 -\u03bd/2 in Lemma 4.6. Then, by the union bound, we get a good estimate with probability at least 1 -\u03bd.",
+                "The computation costs follow directly from Lemma 4.2 and Lemma 4.6. And the proof of the theorem is then completed."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Algorithm 2 Ground State Property Estimation (Commutative Case)",
+            "paragraphs": [
+                "1: procedure EstimateGSProp( , \u03c4, \u03b7, \u03b3, \u03bd)",
+                "Compute F j := F d,\u03b4,j and \u03b8 j 5:",
+                "end for"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "6:",
+            "paragraphs": [
+                "Estimate the ground state energy 7:",
+                "x \u2190 EstimateGSE(\u03b3/8, \u03c4, \u03b7, \u03bd/10) 8:",
+                "Generate samples from the Hadamard test circuits 10:",
+                "Sample (Z k , J k ) from the quantum circuit (Figure 1)",
+                "Sample (Z k , J k ) from the quantum circuit (Figure 2) ",
+                "end for 19:",
+                "end for 24:",
+                "return p 0 O 0 /p 0 26: end procedure 5 "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Algorithm for General Unitary Observables",
+            "paragraphs": [
+                "In this section, we will prove the following theorem for unitary observables in the general case: Theorem 5.1 (Ground state property estimation with general unitary observable). Suppose p 0 \u2265 \u03b7 for some known \u03b7 and the spectral gap of the Hamiltonian H is at least \u03b3. For any , \u03bd \u2208 (0, 1), there exists an algorithm for estimating the ground state property \u03c8 0 | O |\u03c8 0 within additive error at most with probability at least 1 -\u03bd, such that:"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "the maximal evolution time is O(\u03b3 -1 ).",
+            "paragraphs": [
+                "In the following parts, we will first introduce the 2-d O-weighted density function and CDF, which extend the commuting observables to the general case. Then, we will show how to combine them with the overlap estimation in Section 4.1 for proving Theorem 5.1."
+            ],
+            "subsections": [
+                {
+                    "title": "2-d O-weighted density function and CDF",
+                    "paragraphs": [
+                        "In general, O and H may not commute. Hence, we consider a more symmetric form of expectation: \u03c6 0 | e -ij\u03c4 H Oe -ij \u03c4 H |\u03c6 0 , which can be expanded in the eigenbasis of H as follows:",
+                        "Similar to the commutative case, we define a 2-d O-weighted density function:",
+                        "where",
+                        "Then, define the corresponding 2-d O-weighted CDF function as follows:",
+                        "where",
+                        "Hence, the definition of C O,2 is reasonable. Then, we show that C O,2 can be approximated similar to the 1-d case. Let F 2 (x) be the 2-d approximated Heaviside function, i.e.,",
+                        "The 2-d O-weighted approximated CDF (ACDF) is defined to be",
+                        "The following lemma shows that C O,2 (x, y) is close to C O,2 (x , y ) for some (x , y ) close to (x, y)."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Lemma 5.2 (Approximation ratio of the 2-d O-weighted ACDF). For any",
+            "paragraphs": [
+                "Proof. By (2) in Lemma A.8, we have",
+                "which implies that for all x, y \u2208",
+                "where the last step follows from F (x) \u2208 [0, 1] by (1) in Lemma A.8. Furthermore, we also have for",
+                "Let p 2 := p O,2 . Then, for any x, y \u2208 [-\u03c0/3, \u03c0/3], we have",
+                "where the second step follows from Cauchy-Schwarz inequality, the third step follows from partitioning the integration region, the forth step follows from Eq. ( 43) and the fact that p(x, y) is supported in [-\u03c0/3, \u03c0/3] \u00d7 [-\u03c0/3, \u03c0/3] and \u03b4 < \u03c0/6 (see Figure 3   Hence, we have",
+                "which proves the first inequality:",
+                "Similarly, we can define F R,2 := F 2 (x + \u03b4, y + \u03b4) and C R,2 (x, y) := (F R,2 * p 2 )(x, y). We can show that",
+                "which gives",
+                "The lemma is then proved."
+            ],
+            "subsections": [
+                {
+                    "title": "Estimating the 2-d ACDF",
+                    "paragraphs": [
+                        "We use the following parameterized quantum circuit to estimate the 2  4) O( -2 \u03b7 -2 log(1/\u03bd)) times with maximal evolution time O(\u03b3 -1 ) and total expected evolution time O(\u03b3 -1 -1 \u03b7 -1 ).",
+                        "Proof. C O,2 (x, y) can be expanded in the following way:",
+                        "To estimate \u03c6 0 | e -ij\u03c4 H Oe -ij \u03c4 H |\u03c6 0 , we use the multi-level Monte Carlo method. Define a random variables J, J with support",
+                        "where",
+                        "Then, let Z := X J,J + iY J,J \u2208 {\u00b11 \u00b1 i}. Define an estimator G 2 (x; J, J , Z) as follows:",
+                        "where \u03b8 j is defined by F j = | F j |e i\u03b8 j , and similar definition for \u03b8 j . Then, we show that G 2 (x, y; J, Z) is un-biased:",
+                        "= |j|\u2264d,|j |\u2264d",
+                        "where the third step follows from Claim A.1. Moreover, the variance of G 2 can be upperbounded by:",
+                        "where the third step follows from |e i(\u03b8 J +Jx) | = |e i(\u03b8 J +J y) | = 1, and the last step follows from X j,j , Y j,j \u2208 {\u00b11}. By Lemma A.8, we know that F = O(1). Hence, we have for all x, y \u2208 [-\u03c0/3, \u03c0/3],",
+                        "Then, using median-of-means estimator, we can obtain an -additive error estimate of",
+                        "The maximal evolution time is 2d = O(\u03b3 -1 ). And the expected evolution time for one trial is",
+                        "Hence, the total expected evolution time is",
+                        "The lemma is then proved.",
+                        "Similar to the 1-d case, we can construct a \"good\" point for (\u03bb 0 , \u03bb 0 ) via the following claim. And the blue square is the approximation region of (x good , y good ) such that C O,2 (x good , y good ) is close to some C O,2 (x, y) in this region.",
+                        "Claim 5.4 (Construct 2-d good point). Let \u03b3 be the spectral gap of the Hamiltonian H. Let x good := x + \u03c4 \u03b3/2 where x is the output of EstimateGSE(\u03b3/8, \u03c4, \u03b7, \u03bd/10) (Algorithm 1). Then, (x good , x good ) is good for (\u03bb 0 , \u03bb 0 ). In particular, for any \u2208 (0, 1), if the approximation error of F (x) is set to be \u03b7, then",
+                        "Proof. By Claim 4.1, we know that x good is good for \u03bb 0 , i.e., [x good -\u03b4, x good + \u03b4] is contained in [\u03bb 0 , \u03bb 1 ). It also holds in the 2-d case for (x good , x good ). Then, by Lemma 5.3, we have",
+                        "The claim then follows from C O,2 (x, y) = C O,2 (\u03bb 0 , \u03bb 0 ) for any (x, y) \u2208 [\u03bb 0 , \u03bb 1 ) \u00d7 [\u03bb 0 , \u03bb 1 )."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Putting it all together",
+                    "paragraphs": [
+                        "The main algorithm for the ground state property estimation will first estimate the ground state energy \u03bb 0 and the overlap p 0 , which are described in Section 4.1. Then, by Lemma 5.3 and Claim 5.4, the weighted expectation p 0 O 0 can also be estimated. Hence, we will obtain an estimate for O 0 = \u03c8 0 | O |\u03c8 0 ."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Algorithm 3 Ground State Property Estimation (General Case)",
+            "paragraphs": [
+                "1: procedure EstimateGSProp( , \u03c4, \u03b7, \u03b3, \u03bd)",
+                "))",
+                "3:",
+                "for j \u2190 -d, . . . , d do"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "4:",
+            "paragraphs": [
+                "Compute F j := F d,\u03b4,j and \u03b8 j 5:",
+                "end for"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "6:",
+            "paragraphs": [
+                "Estimate the ground state energy 7:",
+                "x \u2190 EstimateGSE(\u03b3/8, \u03c4, \u03b7, \u03bd/10) 8:",
+                "Generate samples from the Hadamard test circuits 10:",
+                "11:",
+                "for k \u2190 1, . . . , BK do 12:",
+                "Sample (Z k , J k ) from the quantum circuit (Figure 1)",
+                ") from the quantum circuit (Figure 4)",
+                "end for 15:",
+                "Estimate p 0 16:",
+                "end for 19:",
+                "Estimate p 0 O 0 21:",
+                "x good , x good ; Z (i-1)K+j , J (i-1)K+j,1 , J (i-1)K+j,2 ) Eq. ( 53) ",
+                "For the success probability, Algorithm 3 has three components: estimate ground state energy, estimate p 0 , and estimate p 0 O 0 . By our choice of parameters, each of them will fail with probability at most \u03bd/3. Hence, Algorithm 3 will succeed with probability at least 1 -\u03bd.",
+                "The maximal evolution time and the total expected evolution time follows from Theorem 3.1, Lemma 4.2, and Lemma 5.3."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Handling non-unitary observables",
+            "paragraphs": [
+                "One may notice that Algorithm 3 works only for unitary observables because it needs to use the circuit in Figure 4 to estimate \u03c6 0 | e -it 2 H Oe -it 1 H |\u03c6 0 for certain t 1 , t 2 \u2208 R, in which controlled-O must be a unitary operation. In this section, we show that under reasonable assumptions this algorithm can be modified to estimate the ground state property \u03c8 0 | O |\u03c8 0 where O is a general observable.",
+                "Before we present this result, one may wonder why it is necessary. After all, we can always decompose O into a linear combination of Pauli strings O = s w s P s , and use Algorithm 3 to estimate each term \u00b5 s := \u03c8 0 | P s |\u03c8 0 individually, and return s w s \u00b5 s as the result. While this strategy works in principle, it might be not efficient enough to be practical, depending on the weights w s 's of Pauli strings in the linear expansion of O.",
+                "Alternatively, one can fix the issue of Algorithm 3 by designing a procedure for estimating \u03c6 0 | e -it 2 H Oe -it 1 H |\u03c6 0 for arbitrary non-unitary O. Such quantities are utilized in the same way as before. We have followed this approach and found that it is possible when there is a block-encoding of O. Namely, suppose O is an n-qubit observable with O \u2264 1 and U is an (n + m)-qubit unitary operator such that",
+                "for some \u03b1 \u2265 O . More details about the block-encoding model can be found in [35,28,36,37]. Then we can still perform Hadamard test for U to estimate \u03c6 0 | e -it 2 H Oe -it 1 H |\u03c6 0 for arbitrary t 1 , t 2 \u2208 R. The main theorem of this section is stated below: Theorem 6.1 (Ground state property estimation with block-encoded observable). Suppose p 0 \u2265 \u03b7 for some known \u03b7 and the spectral gap of the Hamiltonian H is at least \u03b3. Suppose we have access to the \u03b1-block-encoding of the observable O. For any , \u03bd \u2208 (0, 1), there exists an algorithm for estimating the ground state property \u03c8 0 | O |\u03c8 0 within additive error at most with probability at least 1 -\u03bd, such that:"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "the maximal evolution time is O(\u03b3 -1 ).",
+            "paragraphs": [
+                "Proof sketch of Theorem 6.1. The algorithm for handling non-unitary block-encoded observables is quite similar to Algorithm 3 for handling unitary observables, except that it relies on a different procedure to estimate \u03c6 0 | e -it 2 H Oe -it 1 H |\u03c6 0 for arbitrary t 1 , t 2 \u2208 R.",
+                "Here we briefly describe this procedure and defer the detailed analysis to Appendix B. Let C-V := |0 0| \u2297 I + |1 1| \u2297 V be the controlled-V operation for arbitrary unitary operator V . Let |\u03c6 0 be an arbitrary n-qubit state. Consider the following procedure (as illustrated in Figure 6: 2. Apply a Hadamard gate on the first register.",
+                "3. Apply a C-e -iHt 1 on the first and third registers.",
+                "4. Apply C-U on the current state, obtaining",
+                "5. Measure the second register in the standard basis. If the outcome is not 0 m , then this procedure fails; otherwise, continue. The probability of this step succeeding is",
+                "and when this event happens, the state becomes",
+                "6. Apply a C-e -iHt 2 on the first and third registers. The state becomes",
+                "7. Apply W = I or phase gate S on the first register.",
+                "8. Apply a Hadamard gate on the first register. 9. Measure the first register in the standard basis. Then if W = I, the (conditional) probability of getting outcome 0 is",
+                "if W = S, this probability is",
+                "Now we define two random variables X and Y as follows. First, we run the above procedure with W = I in step 7. If step 5 fails, X = 0; otherwise, if the measurement outcome is 0 or 1 in step 9, then X = \u03b1 or -\u03b1, respectively. One can show that X is an unbiased estimator of Re[",
+                "Y is defined similarly. We run the above procedure with W = S in step 7. If step 5 fails, Y = 0; otherwise, if the measurement outcome is 1 or 0 in step 9, then Y = \u03b1 or -\u03b1, respectively. Then Y is an unbiased estimator of Im[ \u03c6 0 | e -iHt 2 Oe -iHt 1 |\u03c6 0 ], i.e.",
+                "It follows that Z := X + iY is an unbiased estimator of \u03c6 0 | e -iHt 2 Oe -iHt 1 |\u03c6 0 , i.e.",
+                "Equipped with the above method for estimating \u03c6 0 | e -iHt 2 Oe -iHt 1 |\u03c6 0 for arbitrary t 1 , t 2 \u2208 R, we can now use the same strategy as in Lemma 5.3 to estimate C O,2 (x, y). The other components of Algorithm 3 remain intact. The analysis of this modified algorithm is almost the same as before, except that now we have",
+                "As a consequence, compared to Theorem 5.1, the total evolution time of this modified algorithm is larger by a factor of O(\u03b1 2 ), while its maximal evolution time is of the same order."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Applications",
+            "paragraphs": [
+                "In this section, we discuss some applications of our ground state property estimation algorithm. To define an application of the ground state property estimation algorithm, we must specify a Hamiltonian of interest H and an observable of interest O. An example application used in quantum chemistry and materials is the Green's function (see, e.g. [38]), where O = a i (z -(H -E 0 ) -1 )a \u2020 j . In the following two sections we describe another example from quantum chemistry and materials as well as an example of a linear algebraic subroutine."
+            ],
+            "subsections": [
+                {
+                    "title": "Charge density",
+                    "paragraphs": [
+                        "The primary application of the technique is the estimation of ground state properties of physical systems. Here we describe how to compute the charge density of a molecule, which can be used to compute properties like electric dipole moments of a molecule [39]. From a second-quantized representation of the electronic system (assuming fixed positions of the nuclear positions), the charge density is determined from the one-particle reduced density matrix as,",
+                        "where e is the electric constant, D p,q is the one-electron reduced density matrix (1RDM) of the ground state, and \u03c6 q ( r) are the basis wave functions chosen for the second-quantized representation of the electronic system [40]. The 1RDM of the ground state is a matrix of properties of the ground state with each entry defined as",
+                        "where a p are annihilation operators. The operators involved in the 1RDM can each be expressed as a linear combination of unitary operators using the Majorana representation a p = 1 2 (\u03b3 2p + i\u03b3 2p+1 ), where the \u03b3 k are hermitian and unitary ii ,",
+                        "ii To implement this application on a quantum computer we must represent the unitaries as operations on qubits. For an n-electron system, using the Jordan-Wigner or Bravyi-Kitaev transformation [41], each Majorana operator, and products thereof, can be represented as a Pauli string.",
+                        "Accordingly, we may use the method of Section 5 to estimate each entry of the 1RDM and then obtain the charge density function of the ground state. As a point of comparison, we could alternatively use the variational quantum eigensolver algorithm to prepare an approximation to the ground state and then directly estimate each of the Pauli expectation values. However, there is no guarantee on whether a target accuracy for the ground state approximation can be achieved. Remarkably, the methods introduced in this paper can be used to ensure a target accuracy in the estimation regardless of the quality of ground state approximation, though possibly at the cost of an increase in runtime."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Quantum linear system solver",
+                    "paragraphs": [
+                        "In the seminal [42] paper, a quantum algorithm is proposed to generate a quantum state approximately proportional to the solution of a linear system of equations. Namely, given a linear system A x = b, the algorithm produces a quantum state close to |x :=",
+                        ", where x j 's are the entries of x = A -1 b. In fact, in many cases, we only need to know x| M |x , where M is a linear operator. For example, in quantum mechanics, many features of |x can be extracted in this way, including normalization, moments, etc. One approach to solve this problem is first solving the linear system using any quantum linear system solver [42,43,35,36] to obtain the state |x and then performing the measurement of M . However, a shortcoming of this method is that most of the quantum linear system solvers require deep quantum circuits. And hence, the needed quantum resources may not be accessible in the near future.",
+                        "Recently, a few quantum algorithms [44,45,46] were developed to solve linear systems of equations by encoding such a system into an effective Hamiltonian",
+                        "whose ground state corresponds to the solution vector |x . We can combine this idea with our ground state property estimation algorithm to get a low-depth algorithm for estimating the properties of linear system solution. More specifically, suppose we can simulate the Hamiltonian H G for some specified time and we know the normalization factor \u03c4 such that the eigenvalues of \u03c4 H G are in [-\u03c0/3, \u03c0/3]. For the operator M , we can assume that M can be decomposed into a linear combination of Pauli operators M = L =1 c \u03c3 , or we assume that M is given in the block-encoding form. The estimation algorithm has two steps:",
+                        "1. Run a quantum linear system algorithm (e.g. [46], [47], or [48]) with constant precision to prepare an initial state |\u03c6 0 such that",
+                        "2. Using |\u03c6 0 from step 1 as the initial state, run Algorithm 3 to estimate x| M |x within -additive error for any \u2208 (0, 1).",
+                        "Step 1 takes O(\u03ba) time, where \u03ba is the condition number of A. To analyze the computation cost of the second step, we need a lower-bound on the spectral gap of H G . Since x| A \u2020 (I -|b b|)A |x = 0, we have \u03bb 0 (H G ) = 0. For the second smallest eigenvalue, since H G = A \u2020 A -A \u2020 |b b| A, by Weyl's inequality, we have",
+                        "where the second step follows from A \u2020 |b b| A is rank-1. Due to the normalization, the smallest (normalized) singular value of A is \u2126(\u03ba -1 ). Hence, we have \u03b3 = \u2126(\u03ba -2 ).",
+                        "By Theorem 5.1, the maximal evolution time of the Hamiltonian will be O(\u03ba 2 ). To further improve the circuit depth, we may apply the gap amplification technique [49,46] to quadratically increase the spectral gap of H G . Specifically, consider the following family of Hamiltonians:",
+                        "where",
+                        "Note that these Hamiltonians act on the original system and two ancilla qubits. Then we have",
+                        "where",
+                        "As shown in [46], the eigenvalues of H G (s) are",
+                        "where \u03bb j (s)'s are the nonzero eigenvalues of HG (s). In addition, for s = 1, one can use Weyl's ineqality to show that \u03bb 1 (1) \u2265 \u03ba -2 , which implies that the smallest nonzero eigenvalue of H G (1) is \u2126(\u03ba -1 ), as desired.",
+                        "We can use the algorithm in [46] to prepare a state that has \u2126( 1 G (1) is zero, we do not need to first estimate the ground state energy using Algorithm 1. Instead, we directly evaluate the O-weighted CDF at zero. Therefore, by Theorem 6.1, we get the following result: Corollary 7.1 (Quantum linear system solution property estimation). For a linear system",
+                        "Then, for any linear operator M given by its \u03b1-block encoding unitary U M , and for any \u2208 (0, 1), the expectation value x| M |x can be estimated with -additive error with high probability such that:",
+                        "\u2022 the depth of each circuit is O(\u03ba).",
+                        "\u2022 the expected total runtime is O(\u03ba -2 \u03b1 2 ).",
+                        "For comparison, the algorithm in [46] needs O(\u03ba -1 ) circuit depth to obtain a state that is -close to |x , which is larger than ours. Moreover, to estimate x| M |x , even with amplitude estimation, it still needs \u2126( -1 ) copies of the state to achieve -additive error. Hence, its total runtime will be O(\u03ba -2 ), nearly matching our result (ignoring the dependence on the \u03b1 factor)."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Discussion and Outlook",
+            "paragraphs": [
+                "We have shown a quantum-classical hybrid algorithm for estimating properties of the ground state of a Hamiltonian, such that the quantum circuit depth is relatively small and only poly-logarithmically depends on -1 . Therefore, the algorithm has a significant advantage in high-accuracy estimation, and it is possible to be implemented in early faulttolerant devices. In practice, our algorithm can solve many important tasks by combining with some initial state preparation methods (e.g., VQE or QAOA). In this paper, we provide two examples, one in quantum chemistry and another in solving linear systems. And we believe more applications will be explored in the future.",
+                "Another important direction is to improve the total evolution time of our algorithm which quadratically depends on -1 . The blowup comes from evaluating the O-weighted CDF in high precision and a trade-off between maximal evolution time and total evolution time. However, this does not meet the Heisenberg-limit of linear dependence on -1 for generic Hamiltonians [50]. In our main result (Theorem 5.1), the -2 \u03b7 -2 factor comes from the number of samples needed to reduce the estimator's error to O( \u03b7). Amplitude estimation can be used to reduce this number of samples and the total evolution time. However, this comes at the cost of significantly increasing the maximal evolution time, which could require large fault-tolerant overheads for reliable implementation. A strategy to achieve improved performance that is more amenable to early fault tolerant quantum computers is to use recently introduced \"enhanced sampling\" techniques [16]. If \u03bb characterizes the fidelity decay rate of the circuit as deeper circuits are used, then we would expect to need a maximal evolution time of O(\u03bb -1 \u03b3 -1 ) and an total evolution time of O(\u03bb\u03b3 -1 -2 \u03b7 -2 ). Note that because this approach incorporates the impact of error into the algorithm, the maximal evolution time is of no concern. Rather than being a cost that needs monitoring, the maximal evolution time is chosen by the algorithm to minimize the total evolution time. With this, we expect that as the quality of devices is improved, the performance of the algorithm improves proportionally. We note that a similar approach can also be applied to improve the total evolution time in [20] ",
+                "This work fits into the paradigm of \"beyond the ground state energy\" and studies more general properties of the ground state. Can we go further beyond the ground state? Some prior works have explored the estimation of such kind of properties of Hamiltonian. For example, Brown, Flammia, and Schuch [51] studied the density of states. Jordan, Gosset, and Love [52] focused on the energy of excited states. Gharibian and Sikora [53] identified the energy barriers. Watson and Bausch [54] explored detecting phase transitions via order parameters. In general, for an unknown Hamiltonian, these estimation problems will be hard. An interesting open problem is, given some prior knowledge of the Hamiltonian, can we design efficient or low-depth quantum algorithms for estimating Hamiltonian properties beyond ground state?",
+                "we have",
+                "For the imaginary part ( \u03c6 0 | e -ij\u03c4 H |\u03c6 0 ), we can set W to be the phase gate 1 0 0 -i and define the random variable Y j similarly. Then, we have",
+                "Therefore, Eqs. (84) and (85) implies the following claim:",
+                "Claim A.1 (Estimator of the Hamiltonian expectation). For any j \u2208 Z, the random variable X j + iY j is an un-biased estimator for \u03c6 0 | e -ij\u03c4 H |\u03c6 0 ."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.2 Classical part of the algorithm",
+            "paragraphs": [
+                "Let \u03c4 be a normalization factor such that \u03c4 H \u2264 \u03c0/3. Suppose the initial state |\u03c6 0 can be decomposed in the eigenspace of H as |\u03c6 0 = k \u221a p k |\u03c8 k . Let p(x) be the following density function (spectral measure):",
+                "That is, p(x) is the distribution of the state energy with respect to \u03c4 H after we measure |\u03c6 0 in the eigenbasis of H. Define the 2\u03c0-periodic Heaviside function by",
+                "Then, we define the 2\u03c0-periodic CDF of p as the convolution of H and p:",
+                "For any x \u2208 [-\u03c0/3, \u03c0/3], for any w \u2208 Z, we have",
+                "where the first step follows from the definition of convolution, the second step follows from Dirac delta function's property, and the third step follows from H has period 2\u03c0. We note that C(x) is right continuous and non-decreasing in [-\u03c0/3, \u03c0/3]. However, we cannot directly evaluate C(x), but we can approximate it! Define the approximate CDF (ACDF) as",
+                "where F (x) = |j|\u2264d F j e ijx is a low Fourier-degree approximation of the Heaviside function",
+                "The construction of F is given by Lemma A.8. Furthermore, the approximation error of C(x) is bounded by",
+                "for any x \u2208 [-\u03c0/3, \u03c0/3], \u03b4 \u2208 (0, \u03c0/6) and > 0."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.2.1 Estimating the ACDF",
+            "paragraphs": [
+                "The goal of this section is to prove Lemma A.2, which constructs an estimator for C(x) (defined by Eq. (91))."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Lemma A.2 (Estimating the ACDF).",
+            "paragraphs": [
+                "For any \u03c3 > 0, for any x \u2208 [-\u03c0, \u03c0], there exists an un-biased estimator G(x) for the ACDF C(x) with variance at most \u03c3 2 . Furthermore, G(x) runs the quantum circuit (Figure 1) O( log 2 d \u03c3 2 ) times with expected total evolution time O( \u03c4 d log d \u03c3 2 ).",
+                "Proof. C(x) can be expanded in the following way:",
+                "F j e ij(x-y) p(y)dy",
+                "where the third step follows from the Fourier expansion of F (x -y), the fifth step follows from the property of Dirac's delta function, and the last step follows from the definition of p k and the eigenvalues of matrix exponential.",
+                "To estimate \u03c6 0 | e -ij\u03c4 H |\u03c6 0 , we use the multi-level Monte Carlo method. Define a random variable J with support {-d, \u2022 \u2022 \u2022 , d} such that",
+                "where F := |j|\u2264d | F j |. Then, let Z := X J + iY J \u2208 {\u00b11 \u00b1 i}. Define an estimator G(x; J, Z) as follows:",
+                "where \u03b8 j is defined by F j = | F j |e i\u03b8 j . Then, we show that G(x; J, Z) is un-biased:",
+                "where the third step follows from Claim A.1. Moreover, the variance of G can be upperbounded by:",
+                "where the third step follows from |e i(\u03b8 J +Jx) | = 1, and the last step follows from X j , Y j \u2208 {\u00b11}.",
+                "Hence, we can take N s := 2F 2 \u03c3 2 independent samples of (J, Z), denoted by {(J k , Z k )} k\u2208[Ns] and compute",
+                "Then, we have",
+                "The expected total evolution time is",
+                "By Lemma A.8, we know that",
+                "Thus, the number of samples is",
+                "And the expected total evolution time is",
+                "The lemma is then proved."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.2.2 Inverting the CDF",
+            "paragraphs": [
+                "We first define the CDF inversion problem:",
+                "Definition A.3 (The CDF inversion problem). For 0 < \u03b4 < \u03c0/6, 0 < \u03b7 < 1, find x \u2208 (-\u03c0/3, \u03c0/3) such that Then, we give an algorithm that solves the CDF inversion problem.",
+                "Lemma A.5 (Inverting the CDF, Theorem 2 in [20]). There exists an algorithm that solves the CDF inversion problem (Definition A.3) with probability at least 1 -\u03bd such that:",
+                "1. the number of independent samples of (J, Z) is"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "the expected total evolution time is",
+            "paragraphs": [
+                ")) \u2022 (log(\u03bd -1 ) + log log(\u03b4 -1 ))"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "the classical running time is",
+            "paragraphs": [
+                "O \u03b7 -2 log(\u03b4 -1 ) \u2022 (log(\u03bd -1 ) + log log(\u03b4 -1 )) \u2022 (log(\u03b4 -1 ) + log log(\u03b4 -1 \u03b7 -1 )) 2 .",
+                "Proof. For any x \u2208 [-\u03c0/3, \u03c0/3], at least one of the following conditions will hold:",
+                "Suppose we have a sub-routine Certify(x, \u03b4, \u03b7, {J k , Z k }) such that if C(x + \u03b4) > \u03b7/2, it returns 0; otherwise, it returns 1. Then, we can solve the CDF inversion problem via the binary search (Algorithm 4). In Line 3, x L and x R always satisfy the following conditions:",
+                "which is guaranteed by Certify(x M , (2/3)\u03b4, \u03b7, {J k , Z k }). Then, when the while-loop ends, we have x R -x L \u2264 2\u03b4. Let x := (x L + x R )/2 be the output of Algorithm 4. Then, we get that",
+                "Algorithm 4 Inverting the CDF",
+                "x L \u2190 -\u03c0/3, X R \u2190 \u03c0/3",
+                "3:",
+                "if u = 0 then 7:",
+                "x R \u2190 x M + (2/3)\u03b4 8: else 9:",
+                "x L \u2190 x M -(2/3)\u03b4 return (x L + x R )/2 13: end procedure And it is easy to see that Algorithm 4 will call Certify L := O(log(1/\u03b4)) times. Then, by Lemma A.6 and union bound, Algorithm 4 will be correct with probability at least 1 -\u03bd. We note that different runs of Certify can share a same set of samples {J k , Z k }, which does not affect the union bound. Hence, the number of samples and the total evolution time follows directly from Lemma A.6 and d = O(\u03b4 -1 log(\u03b4 -1 \u03b7 -1 )). Proof. To decide which one of the conditions holds for x, we can estimate the ACDF C(x). If we take = \u03b7/8 in Lemma A.8, then the constructed ACDF satisfies",
+                "Then, we can distinguish C(x) > (5/8)\u03b7 or C(x) < (7/8)\u03b7 by the estimator in Lemma A.2.",
+                "In Algorithm 5, we compute the estimator G(x) N b times independently, where each time we use N s samples of (J, Z). We note that an error occurs when C(x) > (7/8)\u03b7 but G(x) < (3/4)\u03b7, or C(x) < (5/8)\u03b7 but G(x) > (3/4)\u03b7 (when (5/8)\u03b7 \u2264 C(x) \u2264 (7/8)\u03b7, any Algorithm 5 Distinguish the two cases in Eq. ( 97)",
+                "Lemma A.   "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.2.3 Estimating the ground state energy",
+            "paragraphs": [
+                "Corollary A.7 (Ground state energy estimation, Corollary 3 in [20]). If p 0 \u2265 \u03b7 for some known \u03b7, then with probability at least 1 -\u03bd, the ground state energy \u03bb 0 can be estimated within additive error , such that:",
+                "1. the number of times running the quantum circuit (Figure 1) is O(\u03b7 -2 ).",
+                "2. the expected total evolution time is O( -1 \u03b7 -2 ). -1 )."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "the classical running time is",
+            "paragraphs": [
+                "Proof. Suppose we can solve the CDF inversion problem (Definition A.3) for \u03b4 = \u03c4 and \u03b7, i.e., we find an x such that",
+                "Since C(x) cannot take value between 0 and p 0 , we have",
+                "The costs of this algorithm follows from Lemma A.5."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.3 Low Fourier degree approximation of the Heaviside function",
+            "paragraphs": [
+                "We construct the low degree approximation of the Heaviside function in this section. iv Lemma A.8 (Constructing low degree approximation of H). Let H(x) be the 2\u03c0-period Heaviside function (Eq. (87)). For any \u03b4 \u2208 (0, \u03c0/2) such that tan(\u03b4/2) \u2264 1 -1/ \u221a 2, there exists a d = O(\u03b4 -1 log(\u03b4 -1 -1 )) and a 2\u03c0-period function F d,\u03b4 (x) of the form:",
+                "Proof. We first construct F d,\u03b4 (x) by mollifying the Heaviside function with M d,\u03b4 (x) in Lemma A.10:",
+                "We can verify that F d,\u03b4 has Fourier degree at most d. It follows from the Chebyshev polynomial T d (x) is of degree d. Hence, the Fourier coefficients of M d,\u03b4 (x):",
+                "and H, we have",
+                "Then, we define",
+                "iv The construction in [20] is not enough to prove Lemma A.9 because the range of F d,\u03b4 is [-/2, 1 + ] while Lemma A.9 requires the range to be [0, 1]. We fix this issue in Lemma A.8.",
+                "where",
+                "It is easy see that",
+                "Then, we will show that taking d = O(\u03b4 -1 log(\u03b4 -1 -1 )) is enough to satisfy (1)-(3)."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Part (1):",
+            "paragraphs": [
+                "We first compute the range of F d,\u03b4 (x):",
+                "where the second step follows from (2) in Lemma A.10. On the other hand,",
+                "holds, we will have",
+                "Therefore, for all x \u2208 R,",
+                "where the first step follows from (2) in Lemma A.10, and the second step follows from the triangle inequality.",
+                "where the last step follows from Eq. (106). Therefore,",
+                "where the second step follows from the triangle inequality, the third step follows from Eq. (107). By scaling for , we can make the approximation error at most ."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Part (3): Since",
+            "paragraphs": [
+                "where the second step follows from (2) in Lemma A.10 and the last step follows from Eq. ( 106).",
+                "For | H j |, if j = 0, we have",
+                "Hence, for j = 0,",
+                "Then, by definition, we get that",
+                "The proof of the lemma is completed.",
+                "The following lemma shows the approximation ratio of the ACDF C(x) constructed from the low degree approximated Heaviside function F (x) by Lemma A.8. Lemma A.9 (Approximation ratio of the ACDF). For any > 0, 0 < \u03b4 < \u03c0/6, let F (x) := F d,\u03b4 (x) constructed by Lemma A.8. Then, for any x \u2208 [-\u03c0/3, \u03c0/3], the ACDF C(x) = (F * p)(x) satisfies: ",
+                "where the second step follows from Cauchy-Schwarz inequality, the forth step follows from Eq. (120), the fifth step follows from p(x) is a density function, the sixth step follows from H(y) = 1 and F L (y) \u2208 [0, 1] for y \u2208 [0, 2\u03b4], the last step follows from C(x) is the CDF of p(x) in [-\u03c0, \u03c0]. Hence, we have",
+                "which proves the first inequality:",
+                "Similarly, we can define",
+                "which gives",
+                "The lemma is then proved."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.3.1 Technical lemma",
+            "paragraphs": [
+                "Lemma A.10 (Mollifier, Lemma 5 in [20]). Define M d,\u03b4 (x) to be",
+                "where T d (x) is the d-th Chebyshev polynomial of the first kind, and",
+                "The proof can be found in Appendix A in [20], and we omit it here."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B Technical details of the Hadamard test of block-encoded observable",
+            "paragraphs": [
+                "In this section, we give detailed analysis of the Hadamard test for block-encodings which plays a crucial role in the proof of Theorem 6.1. We first note that the quantum state before the final measurements is as follows: Notice that to make the Hadamard test work, we need the coefficient 4e i\u03b8 abpq \u03b1 to be a real or an imaginary number. Now, we show how to choose the parameters to minimize the variance. Without loss of generality, we may assume a, b \u2208 (0, 1) such that a 2 + b 2 = 1 and use p, q to cancel the phase factor, i.e., e i\u03b8 abpq = Now, define the random variable as follows:",
+                "if the outcome is (1, 0 m ),",
+                "if the outcome is (0, 0 m ), 0 otherwise.",
+                "(154)",
+                "Then, we have",
+                "And we have",
+                "The second term is fixed for any parameters. And for the first term, we have",
+                "where the minimizer is at a := Oe -iHt 1 |\u03c6 0 \u03b1+ Oe -iHt 1 |\u03c6 0 . However, since we do not know the value of Oe -iHt 1 |\u03c6 0 , there are two approaches to resolve this issue: (1) use another quantum circuit to estimate Oe -iHt 1 |\u03c6 0 and then set the parameters; (2) just take a := ",
+                "where the last step follows from \u03b1 \u2265 1 and Oe -iHt 1 |\u03c6 0 2 \u2264 1. Therefore, we can reduce the estimator's variance by choosing a = 1 \u03b1 . Moreover, if \u03b1 is large, the new variance is about half of the variance using the Hadamard gate.",
+                "Similar strategy can also be used to reduce the variance of the random variable Y ."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Ground State Energy Estimation",
+            "paragraphs": [
+                "In this section, we review the techniques in [20], which proposed a hybrid quantum/classical algorithm for estimating the ground state energy of a Hamiltonian. Compared with the algorithms in previous works, the algorithm in [20] uses fewer quantum resources and does not need to access the block-encoding of the Hamiltonian.",
+                "First of all, they assumed that the given initial state |\u03c6 0 iii has a nontrivial overlap with the ground state of H."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.1 Quantum part of the algorithm",
+            "paragraphs": [
+                "Fix j \u2208 Z. Suppose we want to estimate ( \u03c6 0 | e -ij\u03c4 H |\u03c6 0 ). Then, we set W = I and define a random variable X j as follows:",
+                "Since the state before the measurement is",
+                "iii In [20], they allowed the initial state to be a mixed state. For simplicity, we still denote it as |\u03c60 ."
+            ],
+            "subsections": []
+        }
+    ]
+}

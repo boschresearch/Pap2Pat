@@ -1,0 +1,290 @@
+# DESCRIPTION
+
+## FIELD AND BACKGROUND OF THE INVENTION
+
+- introduce beta-cell replacement
+- describe limitations of beta-cell replacement
+- discuss beta-cell expansion in cultures
+- motivate NOTCH pathway regulation
+- describe NOTCH pathway function
+- discuss NOTCH pathway in pancreas development
+- reference prior art
+
+## SUMMARY OF THE INVENTION
+
+- introduce method of generating adult islet beta cells
+- describe contacting with NOTCH pathway inhibitor
+- specify serum-free medium
+- describe incubation in culturing medium
+- introduce method of treating diabetes
+- describe contacting with NOTCH pathway inhibitor
+- describe transplantation
+- introduce method of purifying dedifferentiated B cells
+- describe tagging primary B cells
+- describe culturing and isolating dedifferentiated B cells
+- introduce isolated populations of B cells
+- introduce method of identifying agents affecting proliferation/redifferentiation
+
+## DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce redifferentiated populations of expanded adult islet beta cells
+- describe cell replacement therapy for insulin dependant diabetes
+- explain principles of expanded and re-differentiated isolated population of adult beta cells
+- describe limitations of prior art
+- motivate need for alternatives to human pancreas donors
+- introduce novel conditions for increasing insulin content in dedifferentiated expanded beta cells
+- describe purification of dedifferentiated beta cells from cultured islets
+- illustrate down-regulating components of the NOTCH pathway
+- describe genetic recombination approach for cell-specific labeling of cultured primary human cells
+- isolate pure populations of dedifferentiated B cells
+- show upregulation of Hairy and Enhancer of Split 1 (HES1), NOTCH1, NOTCH 2 and NOTCH
+- inhibit expression of NOTCH pathway components during beta cell dedifferentiation
+- demonstrate differentiating effect of HES1 shRNA in dedifferentiated human islet cells
+- conclude that agents capable of downregulating NOTCH pathway components can be used for redifferentiation
+- provide method of ex-vivo expanding and re-differentiating adult islet beta cells
+- define adult islet beta cells
+- describe isolated adult islet beta cells
+- explain methods of isolating islets
+- describe purification of beta cells from islet
+- disperse adult islet beta cells into a single cell suspension
+- isolate adult islet beta cells from autologous or non-autologous mammalian donor
+- define expanded adult islet beta cells
+- describe culturing of adult islet beta cells
+- provide supplementary constituents for growth and/or viability
+- describe non-apoptotic culturing conditions
+- re-differentiate expanded adult islet beta cells
+- define re-differentiating
+- describe NOTCH signaling pathway
+- contemplate down-regulating any component of the NOTCH pathway
+- describe downregulation of NOTCH pathway components
+- list agents capable of downregulating NOTCH pathway components
+- define antibody and antibody fragments
+- describe downregulation of NOTCH pathway components by RNA silencing
+- define RNA silencing and RNA silencing agents
+- describe RNA interference
+- describe post-transcriptional gene silencing
+- describe dicer and RNA-induced silencing complex (RISC)
+- contemplate use of dsRNA to downregulate protein expression from mRNA
+- describe advantages of using long dsRNAs
+- cite studies demonstrating use of long dsRNAs for gene silencing
+- contemplate introduction of long dsRNA for gene silencing in certain cells
+- contemplate introduction of long dsRNA specifically designed not to induce interferon and PKR pathways
+- describe method of evading interferon and PKR pathways using siRNAs
+- define siRNA
+- describe characteristics of siRNAs
+- describe potency of siRNAs
+- describe shRNA
+- define shRNA
+- describe loop region of shRNA
+- contemplate RNA silencing agent as miRNA
+- describe miRNA processing
+- describe miRNA function
+- describe differences between miRNAs and siRNAs
+- describe synthesis of RNA silencing agents
+- describe selection of siRNA target sites
+- compare target sites to genomic database
+- filter out putative target sites with significant homology
+- select qualifying target sequences for siRNA synthesis
+- describe preferred sequences with low G/C content
+- select multiple target sites for evaluation
+- use negative control siRNA for evaluation
+- provide examples of siRNAs capable of downregulating HES1
+- describe RNA silencing agents with chemically-modified nucleotides
+- describe RNA silencing agents functionally associated with cell-penetrating peptides
+- define cell-penetrating peptides
+- list representative amino acid motifs conferring translocation properties
+- describe DNAzymes capable of cleaving mRNA transcripts or DNA sequences
+- describe the "10-23" model for DNAzymes
+- provide examples of DNAzymes recognizing single and double-stranded target cleavage sites
+- describe antisense polynucleotides capable of hybridizing with mRNA transcripts
+- discuss delivery strategies for antisense oligonucleotides
+- describe algorithms for identifying sequences with high predicted binding affinity
+- provide examples of successful antisense approaches
+- describe ribozymes capable of cleaving mRNA transcripts
+- discuss the use of ribozymes in gene therapy and research
+- describe triplex-forming oligonucleotides (TFOs) capable of regulating gene expression
+- discuss the design and optimization of TFOs
+- provide examples of TFOs inducing specific downregulation of gene expression
+- describe other agents capable of downregulating NOTCH pathway components
+- describe NOTCH pathway component downregulation agents
+- introduce polypeptide agents for beta cell differentiation
+- introduce polynucleotide agents for beta cell differentiation
+- describe gene delivery vehicle/method
+- describe expression system
+- list suitable constructs
+- describe lipid-based delivery systems
+- describe non-lipid based vectors
+- describe viral constructs
+- describe retroviral construct components
+- describe signal sequence for secretion
+- describe viral dose for infection
+- introduce gamma secretase inhibitors
+- describe gamma secretase inhibitors
+- describe insulin content measurement
+- describe medium for incubating adult islet beta cells
+- describe genetic modification of adult islet beta cells
+- describe therapeutic agents
+- describe uteroglobin gene
+- describe methods of genetically modifying adult islet beta cells
+- describe treating diabetes with redifferentiated adult islet beta cells
+- define diabetes
+- define treating
+- define transplanting
+- describe source of adult islet beta cells
+- describe approaches to reduce rejection of non-autologous cells
+- describe encapsulation techniques
+- describe microcapsule preparation methods
+- describe microcapsule properties
+- describe immunosuppressive agents
+- describe in vivo treatment with NOTCH pathway downregulation agents
+- describe pharmaceutical composition
+- define active ingredient
+- define physiologically acceptable carrier
+- define excipient
+- describe pharmaceutical composition manufacturing
+- describe routes of administration
+- describe formulation for injection
+- describe formulation for transmucosal administration
+- describe formulation for oral administration
+- describe formulation for buccal administration
+- formulate pharmaceutical compositions
+- define therapeutically effective amount
+- determine dosage
+- describe toxicity and therapeutic efficacy
+- discuss dosage amount and interval
+- describe composition presentation
+- purify dedifferentiated beta cells
+- permanently tag primary B cells
+- culture permanently tagged B cells
+- isolate dedifferentiated tagged B cells
+- define purifying a population of dedifferentiated B cells
+- describe permanently tagging
+- exemplify method for permanently tagging cells
+- describe expression constructs
+- exemplify expression constructs
+- describe enhancer elements
+- describe polyadenylation sequences
+- describe eukaryotic replicon
+- exemplify mammalian expression vectors
+- describe retroviral vectors
+- describe lentiviral vectors
+- exemplify lentiviral vector
+- describe adenovirus vector
+- describe chimeric adenovirus/retrovirus vector
+- introduce expression vectors into human embryonic stem cells
+- describe methods of introducing expression vectors
+- describe advantages of viral infection
+- describe detectable moiety
+- exemplify tags
+- define primary B cells of cultured human islets
+- culture primary B cells
+- isolate tagged cells
+- use purified populations of dedifferentiated B cells
+- screen candidate agents
+
+### Examples
+
+- introduce examples
+- describe islet cell culture
+- detail HES1 inhibition and lineage tracing
+- outline RNA analyses
+- describe immunofluorescence
+- detail immunoblotting
+- perform statistical analysis
+- present results of up-regulation of HES1 in cultured beta cells
+- describe changes in expression of components of the NOTCH pathway
+- detail changes in expression of cell cycle inhibitors
+- inhibit HES1 expression to prevent induction of beta-cell replication
+- analyze effect of HES1 inhibition on cell proliferation
+- analyze effect of HES1 inhibition on cell apoptosis
+- analyze effect of HES1 inhibition on p57 transcripts
+- analyze effect of HES1 inhibition on NOTCH transcripts
+- inhibit HES1 expression to reduce beta-cell dedifferentiation
+- analyze effect of HES1 inhibition on insulin transcripts
+- analyze effect of HES1 inhibition on PDX1 and NEUROD1 transcripts
+- analyze effect of HES1 inhibition on insulin immunostaining
+- analyze effect of HES1 inhibition on fraction of insulin-positive cells
+- discuss results of HES1 inhibition on beta-cell replication
+- discuss results of HES1 inhibition on beta-cell dedifferentiation
+- discuss implications of HES1 in beta-cell adaptation
+- discuss potential applications of HES1 inhibition
+- discuss limitations of the study
+- discuss future directions for research
+- summarize key findings
+- highlight significance of the study
+- provide conclusions
+- finalize discussion
+- introduce NOTCH pathway in islet cell cultures
+- upregulate NOTCH1-3 and HES1 transcripts
+- downregulate NOTCH4 and NOTCH ligands
+- correlate NOTCH pathway with cell dedifferentiation
+- demonstrate negative correlation between HES1 and insulin expression
+- inhibit HES1 upregulation with shRNA
+- prevent decrease in p57 and cell proliferation
+- suggest partial cell dedifferentiation independent of HES1
+- propose HES1 upregulation as a precondition for beta-cell entrance into cell cycle
+- discuss NOTCH pathway activation in response to soluble serum components
+- analyze NOTCH family members
+- describe wave of HES1 upregulation and its effects
+- introduce Example 2
+- describe Materials and Methods for Example 2
+- present Results for Example 2
+- demonstrate differentiating effect of HES1 shRNA
+- introduce Example 3
+- describe Materials and Methods for Example 3
+- present lentivirus vector construction and virus production
+- describe islet cell culture and infection with viruses
+- outline cell sorting and immunofluorescence procedures
+- conclude with cell-lineage tracing results
+- describe DNA analysis
+- perform PCR analysis
+- analyze RNA expression
+- describe immunoblotting
+- describe results
+- introduce cell infection
+- describe reporter vector
+- describe labeling approach
+- evaluate specificity
+- describe infection efficiency
+- analyze eGFP+ cells
+- describe insulin expression
+- analyze eGFP+ cells further
+- describe labeling efficiency
+- analyze unlabeled cells
+- describe immunostaining
+- analyze insulin-negative eGFP+ cells
+- describe diazoxide treatment
+- analyze eGFP+ cells after treatment
+- describe Cre expression
+- analyze Cre+ cells
+- describe labeling efficiency
+- analyze non-specific labeling
+- describe staining for other hormones
+- analyze eGFP+ cells co-expressing hormones
+- describe staining for amylase and CK19
+- analyze eGFP+ cells co-expressing amylase and CK19
+- describe cell replication
+- analyze eGFP+ cells during expansion
+- describe mouse beta-cell labeling
+- analyze mouse eGFP+ cells
+- describe species difference
+- sort eGFP+ and DsRed2+ cells
+- analyze transgene recombination
+- analyze gene expression
+- describe replication capacity
+- analyze growth arrest
+- describe conditioned medium
+- analyze eGFP+ cells in conditioned medium
+- discuss dedifferentiation and proliferation
+- discuss cell-specific labeling
+- discuss future research directions
+- describe islet cell culture
+- outline HES1 inhibition and lineage tracing
+- detail RNA analyses
+- describe immunofluorescence
+- outline statistical analysis
+- present results of beta-cell labeling
+- describe effect of NOTCH-1 down-regulation
+- discuss scope of invention
+- provide reference incorporation disclaimer
+

@@ -1,0 +1,246 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERAL FUNDING
+
+- disclose government funding
+
+## SUMMARY
+
+- introduce method for managing trauma patients
+- determine risk of multiple organ dysfunction
+- provide system for performing method
+
+## DETAILED DESCRIPTION
+
+- introduce patent application scope
+- define invention limitations
+- describe numerical value ranges
+- define "patient" and "subject"
+- define "treatment" and "treating"
+- describe intensive care unit (ICU)
+- define MOD Score
+- describe Marshall MOD Score
+- describe Denver score and SOFA score
+- define blunt trauma
+- describe Injury Severity Score (ISS)
+- define allele and allelic variation
+- describe single-nucleotide polymorphism (SNP)
+- describe linkage disequilibrium
+- identify relevant SNPs for patient survival
+- describe methods for determining MODS risk
+- describe computer processing speed and memory usage
+- describe patient information collection
+- describe statistical or mathematical models
+- describe ranking algorithm
+- define statistically significant result
+- describe panel of biomarkers and clinical variables
+- describe window of time for data collection
+- describe stored dataset and endpoint predictive of MODS
+- identify panel of biomarkers and clinical variables
+- describe ranking algorithm for patient classification
+- describe enlarging dataset through additional patient data
+- describe genetic polymorphisms
+- motivate statistical optimization methods
+- introduce ranking method
+- explain ranking generation
+- describe threshold value selection
+- discuss alternative ranking methods
+- explain classification of patients
+- describe output generation
+- discuss uses of classification results
+- introduce anti-inflammatory compounds
+- describe therapeutic agents
+- list anti-inflammatory agents
+- list antibiotics
+- describe glucocorticoids
+- introduce computer implementation
+- describe device components
+- explain bus function
+- describe processor function
+- explain memory function
+- describe storage component function
+- explain input component function
+- describe output component function
+- explain communication interface function
+- describe software instructions
+- introduce method for obtaining values
+- describe obtaining genetics data
+- explain obtaining clinical variables
+- describe assays for biomarkers
+
+### EXAMPLE 1
+
+- design time window-based construct
+- gather information for patient stratification
+- define primary outcome and secondary outcomes
+- develop statistical methods for identifying variables
+- establish threshold value for MODS-based outcome
+- segregate High MODS patients
+- identify variables that prognosticate for High MODS
+- develop statistical methods for identifying variables
+- enroll patients and collect clinical data
+- collect blood samples and analyze inflammation biomarkers
+- optimize MOD score-related parameter
+- calculate MOD scores using different methods
+- analyze correlation with nosocomial infection rates
+- identify optimal MOD score threshold value
+- perform decision list analysis
+- generate high response segments
+- validate segments
+- extend segments
+- perform dynamic network analysis
+- create inflammatory mediator networks
+- analyze correlation among variables
+- develop statistical prediction models
+- develop inflammation biomarker model
+- develop clinical variables model
+- develop combined biomarkers and clinical variables model
+- perform internal cross-validation
+- select optimal model
+- develop LASSO sparse logistic model
+- log-transform and standardize data
+- perform 5-fold cross-validation
+- run LASSO sparse logistic regression model
+- obtain predicted beta coefficients
+- perform CART decision tree analysis
+- train and test decision tree model
+- calculate feature importance
+- define MODS-based primary outcome
+- correlate MOD score with clinical and inflammation variables
+- identify top-ranked metrics for MOD score
+- perform decision list analysis
+- define MOD score threshold
+- compare High and Low aMODD2-D5 groups
+- analyze inflammatory mediators
+- calculate AUC for biomarkers
+- perform DyNA analysis
+- establish statistical methods for prediction
+- identify clinical and biomarker variables for prediction
+- perform Lasso Sparse Logistic modeling
+- eliminate highly correlated covariates
+- perform Wilcoxon rank tests
+- identify final model variables
+- perform sparse regression
+- establish model threshold
+- perform internal validation
+- apply model to excluded patients
+- analyze impact of individual variables
+- compare model with NI as primary outcome
+- identify optimal prognostic variables for NI
+- compare performance with LASSO and decision trees models
+- validate stratification strategy using separate patient data set
+- modify prediction model for validation data set
+- apply modified model to validation data set
+- discuss customization of time-window model
+- discuss adaptation to different primary outcomes
+- discuss importance of combining data with normal and non-normal distributions
+- discuss potential inclusion of additional variables
+- analyze inflammation biomarker patterns
+- discuss differences in inflammation biomarker patterns
+- discuss dynamic network analysis
+- discuss coordination of immune network
+- discuss variability and levels of inflammation biomarkers
+- discuss formation of persistent inflammatory networks
+- discuss implications for patient stratification
+- conclude on development of predictive model
+
+### EXAMPLE 2—SNP ANALYSIS
+
+- introduce SNP analysis
+- motivate SNP analysis in trauma patients
+- describe Schmunek et al. study
+- introduce MPPED2 rs2065418 SNP
+- describe patient enrollment
+- describe DNA sampling and genotyping
+- validate Illumina-derived MPPED2 genotype
+- describe analysis of linkage disequilibrium
+- define linkage disequilibrium
+- describe coefficient D
+- describe D′ and R2
+- analyze serial inflammatory mediators
+- describe inflammatory mediators measured
+- describe statistical analyses
+- describe normality test
+- describe Student's-t test
+- describe Mann-Whitney U test
+- describe One-Way ANOVA
+- describe Tukey's multiple comparisons post hoc test
+- describe Kruskal-Wallis test
+- describe Dunn's multiple comparisons post hoc test
+- describe Fisher's Exact test
+- describe Two-Way ANOVA
+- describe dynamic network analysis
+- describe network complexity scores
+- describe heat maps
+- analyze individual SNPs associated with trauma non-survivors
+- describe single-SNP groups
+- analyze severely injured blunt trauma survivors with rs2065418 AA genotype
+- describe clinical outcomes
+- describe inflammatory responses
+- describe network complexity scores
+- describe network connectivity
+- summarize results
+
+### EXAMPLE 3
+
+- introduce clinical data collection
+- describe patient enrollment criteria
+- summarize data collection methods
+- define Marshall MOD score
+- calculate MOD score
+- select patient subset for analysis
+- introduce Fuzzy C-means Clustering
+- explain FCM algorithm
+- determine optimal number of clusters
+- apply Clustering Validation Indices
+- analyze inflammation biomarkers
+- describe biomarker measurement methods
+- perform statistical analysis
+- apply Two-Way ANOVA
+- introduce Dynamic Network Analysis
+- create inflammatory mediator networks
+- conclude organ failure patterns
+- introduce clustering validation indices
+- define number of MODS clusters
+- describe patient demographics
+- compare injury patterns among clusters
+- analyze physiologic and biochemical data
+- describe clinical outcomes among clusters
+- analyze organ failure patterns
+- describe inflammatory patterns among clusters
+- perform dynamic network analysis
+- describe characteristics of excluded patient cohorts
+- introduce method of managing trauma injury patients
+- obtain patient values for biomarkers and clinical variables
+- determine panel value for patient
+- determine risk of multiple organ dysfunction
+- produce output indicating risk
+- describe alternative method using statistical ranking
+- obtain patient values for biomarkers and clinical variables
+- determine rank value for patient
+- determine risk of multiple organ dysfunction
+- produce output indicating risk
+- describe alternative method using panel rank sum value
+- describe window of time for obtaining patient values
+- describe patient population
+- describe trauma type
+- describe multiple organ dysfunction score
+- add patient values and outcome to stored data set
+- describe size of stored data set
+- describe genetic polymorphisms
+- describe biomarkers and clinical variables
+- describe panel of biomarkers and clinical variables
+- describe alternative panel of biomarkers and clinical variables
+- describe method of treating patients
+- describe system for performing method
+- describe scope of invention
+- describe combination of features
+- describe alternative embodiments
+- describe modifications to embodiments
+- describe equivalent arrangements
+- describe spirit and scope of claims
+- describe illustrative aspects of invention
+- describe practical aspects of invention
+- describe detail of invention
+- describe purpose of invention
+

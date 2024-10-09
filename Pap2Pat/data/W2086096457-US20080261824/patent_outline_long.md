@@ -1,0 +1,361 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- identify novel taste-specific genes
+- genes involved in taste detection and modulation
+- genes involved in biological functions not directly related to taste
+- provide novel set of genes for screening assays
+- identify compounds that modulate different taste modalities
+- identify compounds useful for treating digestive system disorders
+- identify compounds useful for modulating taste cell apoptosis or turnover
+- identify compounds useful for inducing taste cell regeneration
+- identify compounds useful for affecting immunity in the oral cavity
+- identify compounds useful for regulating metabolism
+- isolate and enrich specific types or lineages of taste cells
+- use isolated taste cells in screening assays
+
+## BACKGROUND OF THE INVENTION
+
+- describe epithelial sodium channels (ENaC)
+- describe ENaC's role in human salty taste perception
+- describe previous assays using ENaC sequences
+- describe limitations of amiloride in reducing sodium chloride taste
+- hypothesize involvement of non-ENaC genes in human salt taste
+- describe expression of taste receptors in non-oral tissues
+
+## BRIEF DESCRIPTION AND OBJECTS OF THE INVENTION
+
+- relate to identification of novel genes expressed in chemosensory or taste cells
+- identify genes involved in detecting specific taste modalities
+- identify genes involved in modulating taste intensity and duration
+- relate to identification of genes involved in other taste cell functions
+- identify genes used as markers for identification, isolation, or enrichment of specific taste cell subtypes
+- use of taste cell specific genes or gene products in screening assays
+- identify compounds that elicit or modulate sweet, sour, umami, salty, bitter, fatty or metallic taste
+- identify therapeutic compounds for treatment of various digestive system disorders
+- modulate taste cell turnover or apoptosis
+- regulate taste cell differentiation and regeneration
+- modulate the immune system of the oral cavity
+- regulate digestion and metabolism
+- treat diabetes, eating disorders, cachexia, and other metabolic disorders
+- provide methods of isolating, purifying and marking desired taste cell types
+- use of markers specific to one or more of the subject taste specific genes
+- map regions of the tongue and oral cavity involved in specific taste functions
+- map regions of the gastrointestinal tract and associated organs
+- use of the subject genes in taste cell differentiation studies
+- identify compounds that induce differentiation of taste stem cells
+- relate to novel rationale and methods for identification of novel taste-specific genes
+- identify novel salt receptor targets
+- use gene chips and PCR screens to identify novel salt receptor target genes
+- confirm taste-specific expression of genes using histological methods
+- identify novel taste-specific genes involved in non-taste biological functions
+- use of these genes in therapeutic screening assays
+- treat or prevent pathological conditions involving digestive function
+- modulate gastric reflux and diseases associated therewith
+- treat or prevent cancers or malignancies associated with the digestive system
+- treat or prevent appetite dysfunction and conditions associated therewith
+- isolate or enrich specific taste cell lineages or subtypes
+- identify compounds that bind to or modulate the activity of these genes
+- treat or prevent pathological conditions involving digestive function
+- modulate gastric reflux and diseases associated therewith
+- treat or prevent cancers or malignancies associated with the digestive system
+- treat or prevent appetite dysfunction and conditions associated therewith
+- identify genes specifically expressed in taste cells
+- use of these genes in screening assays to identify compounds
+- treat or prevent pathological conditions involving digestive function
+- modulate gastric reflux and diseases associated therewith
+- treat or prevent cancers or malignancies associated with the digestive system
+- treat or prevent appetite dysfunction and conditions associated therewith
+- identify genes involved in sodium transport
+- use of these genes in screening assays to identify compounds
+- modulate blood pressure and fluid retention
+- treat or prevent diseases involving aberrant sodium absorption, excretion and transport
+- identify genes involved in selective apoptosis of taste cells
+- modulate transcription factors that control taste receptor expression
+- autocrine/paracrine modulation of taste cell development
+- taste bud lifetime
+- screens using genes that result in supertaster phenotypes
+- compounds that activate taste stem cells
+- compounds that affect trafficking of taste cell receptors
+- compounds that affect taste intensity by modulating regulation of taste cell action
+- compounds that regulate neurotransmitter release to afferent nerves
+- autocrine/paracrine modulation of taste receptor function
+- identify genes involved in regeneration of taste cells or taste buds
+- modulate drug-induced dysgeusia, ageusia, taste bud loss, dry mouth or xerostomia
+- maintain oral hygiene, treat or prevent halitosis, noxious oral microbia
+
+## SUMMARY OF THE INVENTION
+
+- identify genes specifically expressed in chemosensory taste cells
+- relate to taste detection and modulation
+- relate to functions not directly related to taste detection
+- provide novel set of genes for screening assays
+- relate to identifying compounds modulating different taste modalities
+- relate to therapeutics for digestive system disorders
+- relate to modulating taste cell apoptosis or turnover
+- relate to inducing taste cell regeneration
+- relate to regulating immunity in oral cavity or digestive system
+- relate to treatment of diabetes, obesity, eating disorders
+- provide novel set of genes for identification and isolation of taste cells
+- relate to use of isolated taste cells in screening assays
+- relate to methods of isolating, purifying, and marking desired taste cell types
+- relate to positive and negative cell separation methods
+- relate to use of markers or probes for mapping regions of tongue and oral cavity
+- relate to use of markers or probes for mapping regions of gastrointestinal tract
+- relate to use of genes in taste cell differentiation studies
+- relate to novel rationale, methods, and assays for identifying taste-specific genes
+- relate to methods for identifying genes encoding polypeptides in taste cells
+- relate to identifying genes involved in salty taste perception
+- relate to identifying genes involved in other taste modalities
+- relate to identifying genes involved in taste cell mediated functions and phenotypes
+- relate to use of gene chip and PCR methodologies
+- relate to identifying compounds modulating activity of target genes
+- relate to use of compounds in therapeutic screening assays
+- relate to identifying genes encoding polypeptides involved in salty taste perception
+- relate to identifying genes involved in other taste cell related functions and phenotypes
+- relate to use of antibodies to inhibit gene function
+- relate to selecting cells which do not express TRPM5 and PKD2L1/PKD1L3
+- relate to identifying compounds having potential in vivo application for modulating human salty taste
+- relate to identifying compounds having potential in vivo application for modulating human sweet, bitter, umami, or sour taste
+- relate to identifying compounds having potential in vivo application as therapeutics
+- relate to use of assays for identifying compounds having potential in vivo application
+
+## DETAILS OF THE INVENTION
+
+- introduce invention
+- describe taste tissues and genes involved
+- outline methodologies for identifying novel taste-specific genes
+- describe laser capture microdissection (LCM) and RNA amplification
+- explain gene chips and hybridization
+- describe PCR and high-throughput PCR
+- outline in situ hybridization
+- describe immunohistochemistry
+- discuss RNA quality control
+- describe RNA integrity and quality assessment
+- outline RNA quantity determination
+- describe gene chip experiments
+- discuss PCR quality control
+- outline PCR product analysis
+- describe in situ hybridization protocol
+- outline immunohistochemistry protocol
+- discuss identification of taste-specific genes
+- describe Tables 1-3
+- outline methods for identifying taste genes
+- describe cell-based assays for identifying taste modulators
+- discuss electrophysiological assays
+- outline ion flux assays
+- describe mutant nucleic acid sequences
+- discuss expression of mutant sequences in cells
+- outline advantages of oocyte system
+- discuss limitations of oocyte system
+- describe assays using mammalian cells
+- outline high throughput screening assays
+- discuss ENaC proteins and subunits
+- describe heterotrimeric channel formation
+- outline methods for screening modulators
+- discuss modulation of ion channel activity
+- describe methods for isolating and purifying taste cells
+- outline positive cell selection methods
+- discuss negative cell purification methods
+- describe use of antibodies and markers
+- outline methods for mapping taste cell regions
+- discuss use of taste specific genes in differentiation studies
+- describe novel rationale and methods for identifying taste-specific genes
+- outline electrophysiological assays for identifying taste-specific genes
+- discuss human salt taste and ion channels
+- describe methods for identifying taste-specific genes using gene chip and PCR
+- outline compounds identified as taste modulators and therapeutics
+- discuss potential applications of invention
+
+### Definitions
+
+- define putative salty taste receptor or ion channel gene
+- define taste cell
+- describe characteristics of mature taste receptor cells
+- describe characteristics of immature taste cells
+- define chemosensory cells
+- describe gastrointestinal chemosensory cells
+- describe urinary tract chemosensory cells
+- define taste-cell specific gene
+- describe genes involved in taste and non-taste related functions
+- define cation channels
+- describe homomeric channel
+- describe heteromeric channel
+- define beta subunit
+- describe function of beta subunits
+- define authentic or wild-type nucleic acid sequences
+- define authentic or wild-type polypeptides
+- define modified enhance receptor nucleic acid sequence
+- describe mutations in modified nucleic acid sequence
+- define receptor or ion channel protein or transporter
+- describe nucleic acids and polypeptide polymorphic variants
+- describe alleles, mutants, and interspecies homologs
+- define inhibitors, activators, and modulators
+- describe assays for inhibitors and activators
+- describe control samples
+- define test compound or drug candidate or modulator
+- describe small organic molecule
+- define biological sample
+- describe sections of tissues
+- describe cultured cells
+- define identical or percent identity
+- describe sequence comparison algorithms
+- describe comparison window
+- describe optimal alignment of sequences
+- describe BLAST and BLAST 2.0 algorithms
+- describe parameters for BLAST analyses
+- describe high scoring sequence pairs (HSPs)
+- describe word hits and extension
+- describe cumulative alignment score
+- describe default parameters for BLASTN program
+- describe default parameters for BLASTP program
+- describe BLOSUM62 scoring matrix
+- define nucleic acid
+- define conservatively modified variants
+- define polypeptide, peptide, and protein
+- define amino acid
+- define conservatively modified variants of amino acid sequences
+- describe macromolecular structures
+- define label or detectable moiety
+- define recombinant
+- define heterologous
+- define stringent hybridization conditions
+- describe hybridization conditions
+- define moderately stringent hybridization conditions
+- describe PCR conditions
+- define antibody
+- describe antibody fragments
+- describe preparation of antibodies
+- define specifically binds
+- describe immunoassay formats
+- define therapeutically effective dose
+- describe recombinant expression of taste gene
+- describe bacterial expression systems
+- describe eukaryotic expression systems
+- describe retroviral expression systems
+- describe selection of promoter
+- describe transcription unit or expression cassette
+- describe elements of expression cassette
+- describe enhancers
+- describe introns
+- describe functional splice donor and acceptor sites
+- describe nucleic acid sequence encoding identified gene
+- describe signals for efficient polyadenylation
+- describe ribosome binding sites
+- describe translation termination
+- describe additional elements of cassette
+- describe host cells
+- describe HEK-293 cells
+- describe high throughput screening
+- define expression cassette components
+- describe transcription termination region
+- introduce expression vectors
+- list bacterial expression vectors
+- describe eukaryotic expression vectors
+- explain inducible promoters
+- introduce regulatable promoters
+- describe markers for gene amplification
+- introduce high yield expression systems
+- describe replicon function
+- explain antibiotic resistance genes
+- introduce standard transfection methods
+- describe transformation of eukaryotic and prokaryotic cells
+- introduce methods for introducing foreign nucleotide sequences
+- describe culturing transfected cells
+- introduce assays for modulators of putative taste cell specific gene products
+- describe cell-based models
+- introduce in vitro and in vivo assays
+- describe assays using cells expressing taste specific proteins
+- introduce channel activity assays
+- describe patch clamp techniques
+- introduce radiolabeled ion flux assays
+- describe fluorescence assays
+- introduce in vitro assays
+- describe high throughput binding assays
+- introduce ligand binding or ligand affinity assays
+- describe competitive binding assays
+- introduce high throughput functional genomics assays
+- describe cell-based in vivo assays
+- introduce yeast two-hybrid system and phage display screen
+- define cellular polypeptide levels
+- measure protein or mRNA levels
+- describe immunoassays
+- describe mRNA measurement methods
+- describe reporter gene system
+- describe functional effect measurement
+- describe ion channel activity assays
+- describe receptor activity assays
+- describe animal models
+- describe transgenic animal technology
+- describe knock-out cells and transgenic mice
+- describe DNA construct introduction
+- describe chimeric mice generation
+- describe candidate modulators
+- describe small organic molecules
+- describe biological entities
+- describe genetically altered proteins
+- describe high throughput screening methods
+- describe combinatorial chemical libraries
+- describe library preparation and screening
+- describe peptoids and encoded peptides
+- describe random bio-oligomers and diversomers
+- describe vinylogous polypeptides and nonpeptidal peptidomimetics
+- describe oligocarbamates and peptidyl phosphonates
+- describe nucleic acid libraries and antibody libraries
+- describe carbohydrate libraries and small organic molecule libraries
+- describe devices for library preparation
+- describe commercially available libraries
+- describe soluble and solid state high throughput assays
+- describe target taste specific protein assays
+- describe solid phase based in vitro assays
+- describe high throughput screening methodology
+- describe tag and tag binder pairs
+
+### PRACTICAL APPLICATIONS OF THE INVENTION
+
+- modulate human salty taste
+- enhance salt sensation
+- identify markers for taste cell types
+- modulate apoptosis of taste cells
+- modulate transcription factors
+- modulate bitter receptor expression
+- identify compounds affecting digestive function
+- screen for compounds affecting oral hygiene
+
+### EXAMPLES
+
+- perform LCM on human taste tissue
+- perform PCR quality control
+- identify taste-specific ion channels
+- perform in situ hybridization
+- visualize TRPM5 taste gene expression
+- perform immunohistochemistry
+- visualize SCN3A/Nav1.3 sodium channel gene expression
+- perform double labeling immunohistochemistry
+- visualize PKD2L1 taste gene expression
+- perform double labeling immunohistochemistry
+- determine HCN4 and TRPM5 colocalization
+- determine HCN4 and PKD2L1 colocalization
+- visualize HCN4 exclusion from taste pore
+- summarize mouse taste gene expression
+- identify taste-specific genes using Affymetrix MAS5
+- identify taste-specific genes using Affymetrix GC-RMA
+- identify taste-specific genes using GeneSpring clustering
+- list genes encoding proteins with multiple transmembrane domains
+- use taste-specific genes in assays for taste modulatory compounds
+- use taste-specific genes in therapeutic screening assays
+- screen for compounds affecting digestive system disorders
+- screen for compounds affecting taste cell turnover
+- identify signals accelerating taste cell development
+- isolate ligands from saliva
+- study gene expression in salivary glands
+- identify therapeutics for modulating oral cavity immunity
+- identify compounds for treating diabetes
+- identify compounds for treating eating disorders
+- identify compounds for treating metabolic disorders
+- study expression of taste receptors in digestive system
+- regulate production of molecules in digestive system
+- study molecules produced by enteroendocrine cells
+- use gene arrays to study molecules produced by cells
+

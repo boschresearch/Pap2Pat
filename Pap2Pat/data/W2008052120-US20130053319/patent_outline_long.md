@@ -1,0 +1,172 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to angiogenesis inhibition peptides
+
+## BACKGROUND OF THE INVENTION
+
+- define angiogenesis and vasculogenesis
+- describe role of angiogenesis in tumor growth
+- explain regulation of angiogenesis
+- introduce chemokines and their function
+- describe CXC chemokine family
+- explain ELR motif in CXC chemokines
+- introduce CXCL10 and its properties
+- describe CXCR3 receptor and its isoforms
+- explain CXCR3 signaling pathways
+- discuss CXCL10's angiostatic and antitumor activity
+- describe CXCL10's role in wound healing
+- explain CXCL10's structure
+- discuss N-loop region's role in receptor binding
+- describe need for understanding CXCL10's mechanism
+- explain need for improved therapeutics
+- discuss CXCL10's pleiotrophic effects
+- describe CXCL10's presence in dermal wounds
+- explain IP-9's role in wound repair
+- describe IP-10's production in late healing state dermis
+- discuss timing and expression of IP-9 and IP-10
+- explain cellular effects of IP-9 and IP-10
+- describe need for understanding CXCL10's role in wound repair
+- summarize need for improved therapeutics
+
+## SUMMARY OF THE INVENTION
+
+- identify peptides with potency associated with CXCR3
+- provide new treatments for tumorogenic diseases
+- provide treatment formulations that are non-toxic
+- describe compounds that exhibit wound healing and angiogenesis inhibition activity
+- introduce IP-10dp peptide
+- describe IP-10dp's ability to modulate endothelial cell function
+- explain IP-10dp's inhibition of endothelial cell motility and vessel formation
+- describe IP-10dp's induction of vessel dissociation
+- discuss IP-10dp's binding and activation of CXCR3-B receptor
+- explain use of IP-10dp in treatment of cancers and chronic wounds
+- describe synthetic peptides derived from IP-10
+- introduce compounds with a sequence at least 86% identical to SEQ. ID NO. 1
+- describe methods of treating chronic wounds using formulations
+- summarize methods for inhibiting tumor growth or metastases
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- define effective amount of composition
+- describe polynucleotides of the invention
+- specify vectors used in libraries
+- outline amplification by reverse transcription polymerase chain reaction
+- define hybridizable polynucleotides
+- describe method for determining identity of amino acid sequence
+- outline obtaining recombinant vectors
+- specify vectors for inserting polynucleotides
+- describe transformation of hosts
+- outline methods for introducing recombinant vector into host
+- describe transformants of the invention
+- outline culturing transformants
+- describe production of peptides by culturing transformants
+- outline isolation and purification of peptides
+- describe design of chemokine-derived peptides
+- outline molecular modeling of IP-10 and IP-10dp
+- describe epitopes of CXCL10 responsible for inhibition of chemotaxis
+- outline structure of IP-10
+- describe discovery of inhibitory function in endothelial cells
+- outline analysis of IP-10 full length sequence
+- describe investigation of α-helical region of IP-10
+- outline experimental design for evaluating efficacy of peptides
+- describe synthesis and purification of IP-10dp
+- outline cell culture conditions
+- describe siRNA down regulation of CXCR3
+- outline biotin labeling procedure
+- describe CXCR3 siRNA transfection procedure
+- outline real-time imaging of cell cultures
+- describe statistical analysis of results
+- outline experiment 1: binding of IP-10dp to CXCR3
+- describe results of experiment 1
+- outline experiment 2: inhibition of endothelial cell motility
+- describe results of experiment 2
+- describe experimental setup for scratch assays
+- report results of scratch assays
+- describe experimental setup for tube formation assays
+- report results of tube formation assays
+- describe experimental setup for tube dissociation assays
+- report results of tube dissociation assays
+- describe experimental setup for CXCR3 signaling assays
+- report results of CXCR3 signaling assays
+- describe experimental setup for CXCR3 siRNA assays
+- report results of CXCR3 siRNA assays
+- describe experimental setup for scratch assays with CXCR3 siRNA
+- report results of scratch assays with CXCR3 siRNA
+- describe experimental setup for cAMP production assays
+- report results of cAMP production assays
+- describe experimental setup for PKA activity assays
+- report results of PKA activity assays
+- describe experimental setup for tube formation assays with CXCR3 Ab
+- report results of tube formation assays with CXCR3 Ab
+- describe experimental setup for tube dissociation assays with CXCR3 Ab
+- report results of tube dissociation assays with CXCR3 Ab
+- describe experimental setup for CXCR3 signaling assays with CXCR3 Ab
+- report results of CXCR3 signaling assays with CXCR3 Ab
+- describe experimental setup for CXCR3 siRNA assays with CXCR3 Ab
+- report results of CXCR3 siRNA assays with CXCR3 Ab
+- summarize results of all experiments
+- describe prior research on CXCR3-activation of PKA
+- study IP-10dp effect on m-calpain
+- describe experimental design
+- describe cell culture and treatment
+- analyze calpain activity
+- interpret results
+- introduce experiment 11
+- describe in vivo Matrigel assay
+- describe experimental design
+- describe injection and staining procedures
+- analyze vessel development and regression
+- interpret results
+- introduce experiment 12
+- describe wounding assay
+- describe wound contraction measurement
+- describe tissue collection and staining
+- analyze wound healing
+- interpret results
+- introduce experiment 13
+- describe tensile strength measurement
+- analyze tensile strength results
+- describe histological analysis
+- interpret results
+- introduce experiment 14
+- describe full thickness wound healing assay
+- analyze wound closure rate
+- describe histological examination
+- interpret results
+- describe TUNEL staining
+- analyze apoptotic cell death
+- interpret results
+- summarize anti-angiogenic activity of IP-10dp
+- conclude efficacy of IP-10dp as therapeutic
+- describe skin maturation
+- describe experiment 15
+- describe human subject experiment
+- describe staining methods
+- describe primary antibodies used
+- describe analysis of IP-9 and IP-10 expression
+- describe experiment 16
+- describe generation of IP-9AS mice
+- describe wound creation and treatment
+- describe histological scoring system
+- describe epidermal and dermal maturation assessment
+- describe collagen content assessment
+- describe collagen alignment assessment
+- describe immunohistochemical analysis
+- describe results of experiment 16
+- describe delay in healing in IP-9AS mice
+- describe histological analysis of wounds
+- describe epidermal maturation deficiency
+- describe dermal maturation deficiency
+- describe collagen content and alignment deficiency
+- describe experiment 17
+- describe tensile strength measurement
+- describe results of experiment 17
+- describe significance of IP-9 in wound healing
+- describe potential therapeutic applications
+- describe advantages of IP-10dp
+- describe potential uses of IP-10dp
+- describe scope of invention
+- describe flexibility of invention
+

@@ -1,0 +1,46 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+## BRIEF SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Definitions
+
+### I. INTRODUCTION
+
+### II. GENERAL DISCUSSION OF MONOMER DOMAINS
+
+### III. MONOMERS OF THE PRESENT DISCLOSURE
+
+### IV. IMPROVING SERUM HALF-LIFE
+
+### V. MULTIMERS
+
+### VI. LINKERS
+
+### VII. IDENTIFYING MONOMERS OR MULTIMERS WITH AFFINITY FOR A TARGET MOLECULE
+
+### VIII. SELECTION OF MONOMER DOMAINS THAT BIND FGFR1c OR β-KLOTHO
+
+## EXAMPLES
+
+### Example 1
+
+### Example 2
+
+### Reagents and Experimental Procedures
+
+### Example 3
+
+### Example 4
+
+### Example 5
+
+### Example 6
+
+### Structural Classification of A-domain Positions
+
+### Example 7
+

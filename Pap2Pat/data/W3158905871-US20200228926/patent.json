@@ -1,0 +1,335 @@
+{
+    "id": "US20200228926",
+    "authors": [
+        "Mahesh K. Banavar",
+        "Jie Sun",
+        "Shandeepa Wickramasinghe"
+    ],
+    "title": "Determining Localization from Ordinal Comparison Data",
+    "date": "2019-09-03 00:00:00",
+    "abstract": "A method for determining location of a target within an indoor environment, including the steps of: classifying a set of anchors having known locations within the indoor environment and a set of targets having unknown locations within the indoor environment, wherein each of the anchors and targets comprise hardware having sensors and wireless communication capabilities; creating a set of ordinal pair data sets comprising relative distances between each target and all anchors; ranking and aggregating the ordinal pair data sets to produce a set of dissimilarities that approximate distances; transforming the dissimilarities into estimated distances between each anchor and target using the known distances between the anchors as calibration; and inferring location of targets by formulating and solving a multidimensional unfolding optimization.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "GOVERNMENT FUNDING",
+                    "paragraphs": [
+                        "N/A"
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "state no government funding"
+                    ],
+                    "num_characters": 3,
+                    "outline_medium": [
+                        "state no government funding"
+                    ],
+                    "outline_short": [
+                        "state no government funding"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present disclosure is directed generally to a computer program product and method for determining localization from ordinal comparison data."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field of invention"
+                    ],
+                    "num_characters": 144,
+                    "outline_medium": [
+                        "define field of invention"
+                    ],
+                    "outline_short": [
+                        "define field of invention"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "A main challenge in indoor localization arises from the lack of reliable distance measures due to the presence of walls, floors, furniture, and other dynamically changing conditions such as the movement of people and goods, varying temperature, and air flows. In this work, instead of direct use of unreliably measured distances, ordinal data that are obtained from pairwise distance comparisons is used. Such ordinal data are generally more reliable than direct distance measures. A computational framework, referred to as Ordinal UNLOC, estimates the location of target(s) based on ordinal data. The accuracy of location estimation using the framework is illustrated using numerical simulations.",
+                        "A recent FCC document highlights the need for increasing the accuracy of localization when users call from mobile devices from indoor environments [1]. While the FCC recommends accurate localization to within 3 meters within 30 seconds, reports show that 90 percent of test calls have localization error greater than 100 meters. With a majority of 911 calls now being made from wireless devices, over 56 percent of which from indoor locations, the need for accurate indoor localization is paramount. A poor localization scheme can cause incorrect estimation of the room, the floor or even the actual building from which the call originates. In practice, despite being recognized as an important problem whose satisfactory solution can greatly improve safety, user experience, and be of critical importance in emergency situations such as rescuing people from collapsed and/or burning buildings, accurate indoor localization remains an open problem. In most buildings including the majority of schools, hospitals and shopping malls, there is generally no existing infrastructure (serving as \u201cindoor GPS system\u201d) to facilitate localization. While in most cases it is possible to set up such an infrastructure with WiFi routers or Bluetooth beacons, the indoor setting poses a challenge. This is because indoor environments generally feature complex mutlipaths due to the presence of physical obstacles and barriers (e.g., walls, furniture, and people) and other factors that makes the accurate measurement of distance, either directly or indirectly, unreliable. Without reliable distance information, accurate localization seems to be a hopeless task.",
+                        "Predominant research on indoor localization focuses on addressing the lack of infrastructure, by utilizing wireless sensor networks (WSN). The main idea is to place set of (low-cost, mobile) wireless sensors (called anchors) in a given environment where localization is to be performed. These sensors, together with the target node that is to be localized, form a sensor network via wireless communications. Assuming that the communication between the anchors and the target produces reasonable estimate of the distance between those, such approximate anchor-to-target distances together with the known location of the anchors are used to estimate the location of the target. Under this framework, many methods have been developed for target localization based on noisy distance measures, including multilateration and triangulation, linear and nonlinear optimization. However, as noted earlier, these types of methods are not suitable for practical indoor localization since the distances measured between the sensors, typically inferred from proxies such as time and power signals, are generally unreliable in indoor environments.",
+                        "Accordingly, there is a need in the art for localization methods and systems that work in indoor environments."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate indoor localization",
+                        "highlight FCC document",
+                        "describe limitations of current localization methods",
+                        "discuss challenges of indoor environments",
+                        "summarize research on wireless sensor networks",
+                        "highlight need for new localization methods",
+                        "introduce Ordinal UNLOC framework"
+                    ],
+                    "num_characters": 3594,
+                    "outline_medium": [
+                        "motivate indoor localization",
+                        "highlight limitations of current methods",
+                        "emphasize need for accurate indoor localization"
+                    ],
+                    "outline_short": [
+                        "motivate indoor localization problem"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "The present disclosure is directed to an estimation framework, referred to as Ordinal UNLOC, for indoor localization from possibly incomplete and noisy ordinal data. In this framework, direct measurement of distances is no longer required. Instead, comparative distances between pairs of devices are obtained, using (for example) signal strength measures or receive clock times in the case of time delay techniques, producing reliable ordinal distance comparisons. Thus, the crucial difference between the proposed approach and conventional localization methods is that in the Ordinal UNLOC approach, accurate sensor-to-sensor distance information is not required. Instead, all that is needed is to determine, between any pair sensors, which one is closer to a given reference sensor. The objective is to use these ordinal data in order to estimate the location of the target. The first step involves solving a \u201crank aggregation\u201d problem, which, from the ordinal pairwise comparisons, produces a set of dissimilarities which serve as proximities for distances. Next, since the dissimilarities generally differ from actual distances, a set of functions are learned that transforms dissimilarities into distances, using available distance data measured among the anchorsthose sensors for which the locations are known a priori. Finally, using the anchor-to-target distances estimated in the previous step, the location of the target is inferred by formulating and solving a multidimensional \u201cunfolding\u201d optimization. Thus, the Ordinal UNLOC approach takes special advantage of established techniques from machine learning, statistics, and optimization, to solve an outstanding practical engineering problem in signal processing.",
+                        "According to an aspect is a method for determining location of a target within an indoor environment, comprising the steps of: classifying a set of anchors having known locations within the indoor environment and a set of targets having unknown locations within the indoor environment, wherein each of the anchors and targets comprise hardware having sensors and wireless communication capabilities; creating a set of ordinal pair data sets comprising relative distances between each target and all anchors; ranking and aggregating the ordinal pair data sets to produce a set of dissimilarities that approximate distances; transforming the dissimilarities into estimated distances between each anchor and target using the known distances between the anchors as calibration; and inferring location of targets by formulating and solving a multidimensional unfolding optimization.",
+                        "According to an aspect is a system for determining location of a target within an indoor environment, comprising: a plurality of anchors each having known locations within the indoor environment and configured to sense an external stimulus and transmit a wireless signal; a plurality of targets positioned at unknown locations within the indoor environment, each target configured to sense an external stimulus and transmit a wireless signal; and a computer processor programmed, configured, and/or structured to: (i) classify the plurality of anchors having known locations within the indoor environment and the plurality of targets having unknown locations within the indoor environment; (ii) create a set of ordinal pair data sets comprising relative distances between each target and all anchors; (iii) rank and aggregate the ordinal pair data sets to produce a set of dissimilarities that approximate distances; (iv)transform the dissimilarities into estimated distances between each anchor and target using the known distances between the anchors as calibration; and (v) infer location of the targets by formulating and solving a multidimensional unfolding optimization.",
+                        "These and other aspects of the invention will be apparent from the embodiments described below."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce Ordinal UNLOC framework",
+                        "describe use of ordinal data",
+                        "summarize rank aggregation step",
+                        "describe learning functions to transform dissimilarities",
+                        "summarize multidimensional unfolding optimization",
+                        "describe method for determining target location",
+                        "describe system for determining target location"
+                    ],
+                    "num_characters": 3880,
+                    "outline_medium": [
+                        "introduce Ordinal UNLOC framework",
+                        "describe advantages of Ordinal UNLOC",
+                        "outline steps of Ordinal UNLOC method"
+                    ],
+                    "outline_short": [
+                        "summarize Ordinal UNLOC approach"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF EMBODIMENTS",
+                    "paragraphs": [
+                        "The present disclosure describes a manner of determining localization from ordinal comparison data in in rich scattering environments such as indoor malls, hospitals, etc. (for simplicity, referred to as \u201cindoor environments\u201d).",
+                        "Referring to FIG. 1, in one embodiment, is a sensor field 100 in an indoor environment. Sensors are classified based on whether their locations are known or unknown: sensors at known locations are referred to as anchors 102 and those at unknown locations as target nodes or simply targets (or nodes) 104. Sensors 102/104 are any hardware device configured with sensing and wireless communications capabilities, such as smart phones, for example. As an example, the sensor could be a sound sensor (microphone), such that audio inputs can be sensed and the methodology employed for localizing audio signals, such as in shooter localization, and tracking pests such as mice based on their squeaks. An aspect of the invention is to focus on the challenging problem of localization where direct distance measures are not available, but only ordinal data that come from comparative anchor-to-target distances, as describe by the system model below. The system contains m anchors 102 at known locations and n target nodes 104 at unknown locations within the indoor environment. The total number of sensors is denoted as:\n\n\n- - N=m+n. We use y_(i)=\\[y_(1i), . . . , y_(di)\\]^(T)\u2208\n    ^(q) and x_(j)=\\[x_(1j), . . . , x_(qj)\\]^(T)\u2208\n    ^(q) to represent the coordinates of the i-th anchor (i=1, . . .\n    , m) and those of the j-th target (j=1, . . . , n) in a\n    q-dimensional space, respectively. Typically q=2 or q=3 in practical\n    applications. We classify the distances between sensor pairs into\n    three types: anchor-to-anchor, anchor-to-target, and\n    target-to-target, which we represent using three matrices:\n    D^(Y)=\\[d_(ij)^(Y)\\]_(m\u00d7m), D^(X)=\\[d_(ij)^(X)\\]_(n\u00d7n), and\n    D^(YX)=\\[d_(ij)^(YX)\\]_(m\u00d7n), respectively, where",
+                        "\\(\\begin{matrix}\n\\left\\{ \\begin{matrix}\n{{d_{i,j}^{Y} = {\uf605{y_{i} - y_{j}}\uf606}},} \\\\\n{{d_{i,j}^{X} = {\uf605{x_{i} - x_{j}}\uf606}},} \\\\\n{d_{i,j}^{YX} = {{\uf605{y_{i} - x_{j}}\uf606}.}}\n\\end{matrix} \\right. & (1)\n\\end{matrix}\\)\n\n\n- - We also define an aggregated distance matrix D=\\[d_(ij)\\]_(N\u00d7N) as",
+                        "\\(\\begin{matrix}\n{{D = \\begin{pmatrix}\nD^{Y} & D^{Y\ue89eX} \\\\\nD^{XY} & D^{X}\n\\end{pmatrix}},} & (2)\n\\end{matrix}\\)\n\n\n- - where D^(XY), is the transpose of D^(XY). When we refer to the\n    sensors without specifying their type, the first m sensors are the\n    anchors and the last n sensors correspond to the targets, so sensor\n    i for 1\u2264i\u2264m refers to the i-th anchor, whereas sensor m+j refers to\n    the j-th target node (j=1, . . . , n).",
+                        "Since the anchors' 102 locations are known, the matrix DY can be directly obtained. However, none of DX, DYX, and DXY is available. The unavailability of the anchor-to-target distances (as encoded in DYX and DXY) is in contrast to most localization setups. Instead, the only reliable information are ordinal comparisons between anchor-sensor distance measurements (we use ordinal comparisons since the actual distance measurements, especially in indoor environments are unreliable [16]-[18], [36]-[38]). In particular, for each sensor triplet (i, j, k), compare the \u201csignal strengths\u201d from sensor i and from sensor j can be compared to the reference sensor k, respectively, to determine which sensor (between i and j) is closer to k.",
+                        "We denote the binary outcome of such a pairwise comparison as zij(k), which generally depends on some unknown function f of the actual distances dik and djk, as:",
+                        "zij(k)=\u0192(dik:djk,\u03beij(k)),\u2003\u2003(3)\n\n\n- - where \u03be_(ij)^((k)) represents noise in such a comparison. Due to\n    skew symmetry constraints (i being closer to k than j is the same as\n    j being farther away from k than i, and vice versa), we assume that\n    \u03be_(ij)^((k))=\u2212\u03be_(ji)^((k)) and require that \u0192(d, d\u2032, \u03be)=\u2212\u0192(d\u2032, d,\n    \u2212\u03be), which ensures that z_(ij)^((k))=\u2212z_(ji)^((k)) (\u2200i, j, k). Here,\n    we focus on the most basic form of comparisons, namely ordinal\n    comparisons, together with the simple \u201cthresholding\u201d comparison\n    function",
+                        "\u0192(d,d\u2032,\u03be)=sgn(d\u2212d\u2032+\u03be)\u2208{\u22121,1},\u2003\u2003(4)\n\n\n- - where sgn(\u22c5) is the signum function \\[39\\]. Note that this is in\n    fact a special case of the logistic function \u0192(d, d\u2032,\n    \u03be)=1/\\[1+c^(\u2212\u03b2(d\u2212d\u2032+\u03be))\\] in the limit of the parameter \u03b2\u2192\u221e.\n    - The collection of all pairwise comparisons form N square matrices:\n      {Z^((k))}, where Z^((k))=\\[z_(ij)^((k))\\]_(N\u00d7N) (k=1, . . . , N),\n      which we refer to as pairwise comparison matrices.\n    - We now summarize the problem of localization from ordinal data\n      below.",
+                        "The present computational estimation approach, referred to as Ordinal Unfolding-based Localization (Ordinal UNLOC), consists of three main steps (see FIG. 1(b)). First, from the ordinal comparison data, we apply rank aggregation to obtain a set of \u201cdissimilarities\u201d, which, for a given reference sensor k, assigns a score to each sensor that serves as proximity to its distance to k according to the ordinal data and rankings. Such set of spatial proximities (scores) are not unique, as any shifting and (positive) scaling preserves the ranking of the scores. Consequently, the scores obtained in this step cannot be directly used as (approximate) anchor-to-target distances for localization. Next, the estimated distance proximities among the anchors together with the (known) anchor-to-anchor distances are used to fit functions that best transform proximities into distances, and such functions are then applied to obtain an estimation of anchor-to-target distances. Finally, given the location of anchors and (estimated) anchor-to-target distances, we formulate a multidimensional unfolding optimization for each target, whose solution represents a (best) estimation of the location of that target. Below the details of each of these main steps are described, along with brief discussion of their effects."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Rank Aggregation from Ordinal Data",
+                            "paragraphs": [
+                                "The first step in Ordinal UNLOC is to use a rank aggregation method to infer spatial proximities",
+                                "from the ordinal data. For each reference sensor k, we seek a sot of scores, denoted by \u03c8(k)=[\u03c81k, . . . , \u03c8m+n,k]T, that serve as proximities and ideally preserves the ordinal data as constraints, such that the \u03c8ik>\u03c8jk if and only if dik>djk (or in other words, zij(k)=1). Note that this is equivalent to requiring the ranking of the entries in each \u03c8(k) be identical (or as close as possible) to the ranking of the entries of the k-th column of D, which we denote as",
+                                "d(k)=[d1k, . . . ,dNk]T.\u2003\u2003(5)",
+                                "The problem of inferring the ranking or scoring of a set of items from their pairwise comparisons is commonly known as \u201crank aggregation\u201d, interpreting each pairwise comparison as assigning a local ranking between two items, with the goal of obtaining an aggregated global ranking that preserves these local rankings as much as possible. Several methods are available for solving a rank aggregation problem, most of which computes a score for each item based on collection of ordinal data.",
+                                "For the present invention, a common, easy-to-implement, and effective method, referred to as HodgeRank or simply least squares (LS) ranking is preferably used. The idea is to formulate a (linear) least squares problem using the ordinal data as inputs, the solution of which gives the estimated spatial proximities (which approximately preserves distance orderings from the comparison data). To formulate the problem, we consider an arbitrary enumeration of the set of all ordered pairs of sensors, where the l-pair is denoted by (il, jl), defining a set:",
+                                "\\(\\begin{matrix}\n\\begin{matrix}\n{E = \\left\\{ {{{\\left( {i_{\ue54b},j_{\ue54b}} \\right):\ue54b} = 1},\\ldots \ue89e\\mspace{14mu},M} \\right\\}} \\\\\n{{= \\left\\{ {\\left( {i,j} \\right) \\in {{\\mathbb{N}}^{2}:{1 \\leq i < j \\leq N}}} \\right\\}},}\n\\end{matrix} & (6)\n\\end{matrix}\\)\n\n\n- - where M=N(N\u22121)/2, Thus, E can be interpreted as the edge set of a\n    complete graph of N nodes, and {(i_(l), j_(l)} is an ordered list of\n    all the edges. From this, we define the corresponding incidence\n    matrix B=\\[b_(l,q)\\]_(M\u00d7N) \\[44\\], when",
+                                "\\(\\begin{matrix}\n{b_{\ue54b,q} = \\left\\{ \\begin{matrix}\n{1,} & {{{{if}\ue89e\\mspace{14mu} \ue89eq} = i_{\ue54b}},} \\\\\n{{- 1},} & {{{{if}\ue89e\\mspace{14mu} \ue89eq} = j_{\ue54b}},} \\\\\n{0,} & {{otherwise}.}\n\\end{matrix} \\right.} & (7)\n\\end{matrix}\\)",
+                                "For each sensor k, the ordinal data in matrix Z(k) can be effectively represented by a column vector",
+                                "z(k)=[zi,j(k), . . . ,zi,j(k)]T\u2208M,\u2003\u2003(8)",
+                                "(again) following the same enumeration of pairs as in the incidence matrix. Then, the LS ranking method solves a linear least squares problem, to yield",
+                                "\\(\\begin{matrix}\n{\\psi^{(k)} = {\\underset{{\\psi \\in {\\mathbb{R}}^{N}},{{1^{T}\ue89e\\psi} = 0}}{\\arg \ue89e\\; \ue89e\\min}\ue89e{{\uf605{{B\ue89e\\; \ue89e\\psi} - z^{(k)}}\uf606}.}}} & (9)\n\\end{matrix}\\)",
+                                "Such a solution can be computed in several ways, for example, using normal equations [45], to produce",
+                                "\u03c8(k)=(BTB)\u2020BTz(k)+c1,\u2003\u2003(10)",
+                                "where (\u22c5)\u2020 denotes the pseudoinverse of a matrix [45] (the matrix BTB is also known as the graph Laplacian, which is generally noninvertible), and the constant c is chosen such that the condition IT\u03c8(k)=0 is satisfied. Finally, we collect the vectors \u03c8(k) into a matrix of proximities",
+                                "\u03a8=[\u03c8(1), . . . ,\u03c8(N)].\u2003\u2003(11)",
+                                "We partition this matrix in the same way as the aggregated distance matrix D, so that",
+                                "\\(\\begin{matrix}\n{{\\Psi_{N \\times N} = \\begin{pmatrix}\n\\Psi_{m \\times m}^{Y} & \\Psi_{m \\times n}^{YX} \\\\\n\\Psi_{n \\times m}^{XY} & \\Psi_{n \\times n}^{X}\n\\end{pmatrix}},} & (12)\n\\end{matrix}\\)",
+                                "where \u03a8XY is the transpose of \u03a8YX."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce rank aggregation problem",
+                                "describe HodgeRank or least squares (LS) ranking method",
+                                "formulate linear least squares problem",
+                                "solve for spatial proximities",
+                                "collect proximities into matrix",
+                                "partition proximity matrix",
+                                "describe LS ranking method"
+                            ],
+                            "num_characters": 3587,
+                            "outline_medium": [
+                                "introduce rank aggregation method for inferring spatial proximities",
+                                "describe HodgeRank or least squares (LS) ranking method",
+                                "formulate linear least squares problem to obtain spatial proximities"
+                            ],
+                            "outline_short": [
+                                "describe rank aggregation method for inferring spatial proximities"
+                            ]
+                        },
+                        {
+                            "title": "Function Learning: Estimating Distances from Spatial Proximities",
+                            "paragraphs": [
+                                "The second step of is to estimate the (unknown) anchor-to-target distances from the matrix of spatial proximities \u03a8 obtained by rank aggregation in the previous step together with the known anchor-to-anchor distances. In particular, for each sensor k that is an anchor (so 1\u2264k\u2264m)",
+                                "we learn a function gk that maps the (estimated) proximities with respect to anchor k into (known) distances dik, so that dik\u2248gk(\u03c8i(k)) (i=1, . . . , m). Since dik is only known for 1\u2264i\u2264m (i.e., distance between pairs of anchors), the function gk needs to be inferred from the k-th column of the anchor-to-anchor distance matrix DY and that of the dissimilarity matrix \u03a8Y, which we denote as dkY and \u03c8kY, respectively.",
+                                "We express gk using a basis expansion. For example, under the standard polynomial basis, we have the representation",
+                                "\\(\\begin{matrix}\n{{g_{k}\ue8a0(\\psi)} = {\\sum\\limits_{i = 0}^{\\infty}\ue89e{c_{l}^{(k)}\ue89e{\\psi.}}}} & (13)\n\\end{matrix}\\)",
+                                "To preserve the ordering among the dissimilarities, gk must be a monotonic function. Under this additional constraint, a truncated series to the first order is achieved and so gk becomes just a linear function:",
+                                "gk(\u03c8)=c0(k)+c1(k)\u03c8,",
+                                "where the coefficients c0(k) and c1(k) are to be determined from the vectors dkY and \u03c8kY. This can be done via solving a linear regression problem, for example, using standard least squares, producing",
+                                "\\(\\begin{matrix}\n{{c^{(k)} = {\\left\\lbrack {c_{0}^{(k)},c_{1}^{(k)}} \\right\\rbrack^{T} = {\\underset{{c \\in {\\mathbb{R}}^{2}},{c_{1} > 0}}{\\arg \ue89e\\; \ue89e\\min}\ue89e{\uf605{{\\left\\lbrack {1,\\psi_{k}^{Y}} \\right\\rbrack \ue89ec} - d_{k}^{Y}}\uf606}}}},} & (15)\n\\end{matrix}\\)",
+                                "for k=1, . . . , m, (every anchor). From these coefficients, we compute a preliminary estimate of the distance from the k-th anchor to the targets, using the formula",
+                                "kXY=[1kXY, . . . ,nkXY]T=c0(k)+c1(k)\u03c8kXY.\u2003\u2003(16)",
+                                "Thus, repeat the procedure for all the anchors (k=1, . . . , m) produces a preliminary estimate of the anchor-to-target distance matrix, XY (or equivalently, {tilde over (D)}YX, by transposing XY).",
+                                "Before moving on to the next step of localization, it is important to recalibrate the estimated anchor-to-target distances, for the following reason.",
+                                "Consider the j-th target node (j\u2208{1, . . . , n}), whose distances to the anchors are preliminarily estimated to form the j-th column of {tilde over (D)}YX, denoted by",
+                                "jYX=[1jYX, . . . ,{tilde over (d)}mjYX].\u2003\u2003(17)\n\n\n- - for each j=1, . . . , n, thus forming the estimated anchor-to-target\n    distance matrix {tilde over (D)}^(YX) and also its transpose\n    {circumflex over (D)}^(XY).  \n    For each anchor k\u2208{1, . . . , m}, the entry {tilde over\n    (d)}_(kj)^(YX) is obtained from its corresponding function g_(k),\n    which generally differs from anchor to anchor. The error in fitting\n    g_(k) can cause the ordering of {tilde over (d)}_(kj)^(YX)'s to\n    differ from the ordering of the true distances d_(kj)^(YX), or even\n    different from the estimated proximities \u03c8_(kj)^(YX). For each\n    target node j, to best ensure that the estimated anchor-to-target\n    distances preserves the ordering of estimated proximities, we re-fit\n    a linear function g_(m+j), in the same form as Eq. (14), but now\n    intended to learn a monotonic function that transforms the\n    anchor-to-target proximities to the preliminary estimate, of\n    anchor-to-target distances (in place of the unknown distances),\n    giving",
+                                "\\(\\begin{matrix}\n{{c^{({m + j})} = {\\left\\lbrack {c_{0}^{({m + j})},c_{1}^{({m + j})}} \\right\\rbrack^{T} = {\\underset{{c \\in {\\mathbb{R}}^{2}},{c_{1} > 0}}{\\arg \ue89e\\; \ue89e\\min}\ue89e{\uf605{{\\left\\lbrack {1,\\psi_{j}^{YX}} \\right\\rbrack \ue89ec} - {\\overset{\\_}{d}}_{j}^{YX}}\uf606}}}},} & (18)\n\\end{matrix}\\)",
+                                "for j=1, . . . n, where \u03c8jYX=[\u03c81jYX, . . . , \u03c8mjYX]. Finally, we use the function gm+j to recalibrate the estimated anchor-to-target distances, as",
+                                "{circumflex over (d)}jYX=c0(m+j)+c1(m+j)\u03c8jYX,\u2003\u2003(19)"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce function learning problem",
+                                "describe basis expansion for function",
+                                "truncate series to first order",
+                                "solve for coefficients via linear regression",
+                                "compute preliminary estimate of anchor-to-target distances",
+                                "recalibrate estimated distances",
+                                "describe recalibration process"
+                            ],
+                            "num_characters": 3882,
+                            "outline_medium": [
+                                "introduce function learning to estimate anchor-to-target distances",
+                                "describe basis expansion and linear function representation",
+                                "formulate linear regression problem to determine function coefficients"
+                            ],
+                            "outline_short": [
+                                "describe function learning method for estimating anchor-to-target distances"
+                            ]
+                        },
+                        {
+                            "title": "Unfolding Localization from Distance Measures",
+                            "paragraphs": [
+                                "For each of target node j (i.e., sensor m+j where 1\u2264j\u2264n), the estimated anchor-to-target distances together with the location of the anchors can be used to infer the location of the target xj. We achieve this by formulating an unfolding optimization, with cost function",
+                                "\\({{J\ue8a0\\left( {x,{Y;\\delta}} \\right)} = {\\sum\\limits_{i = 1}^{m}\ue89e\\left( {{\uf605{x - y_{i}}\uf606}^{2} - \\delta_{i}} \\right)^{2}}},\\)\n\n\n- - where the matrix Y=\\[y\u2081, . . . , y_(m)\\] and \u03b4=\\[\u03b4\u2081, . . . ,\n    \u03b4_(m)\\]^(T). UNLOC computes x as a global minimizer of J for fixed Y\n    (representing anchor locations) and \u03b4 (representing approximate\n    anchor-to-target distances). Applying UNLOC to each column of the\n    estimated distance matrix {circumflex over (D)}^(YX) leads to the\n    estimated location of all the targets, that is, we compute, for each\n    j=1, . . . , n,",
+                                "\\({{\\hat{x}}_{j} = {\\underset{x}{\\arg \ue89e\\; \ue89e\\min}\ue89e{J\ue8a0\\left( {x,{Y;{\\hat{d}}_{j}^{YX}}} \\right)}}},\\)\n\n\n- - using a (global) optimization routine (see Ref. \\[46\\]).",
+                                "In this section, the performance of Ordinal UNLOC using simulated sensor fields and ordinal comparison data is benchmarked, and Ordinal UNLOC is applied to real-world data collected by field experiments for target localization."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "formulate unfolding optimization problem",
+                                "compute estimated location of targets"
+                            ],
+                            "num_characters": 1227,
+                            "outline_medium": [
+                                "formulate unfolding optimization to infer target locations from estimated distances"
+                            ],
+                            "outline_short": [
+                                "describe unfolding optimization method for localizing target nodes"
+                            ]
+                        },
+                        {
+                            "title": "Simulation Tests",
+                            "paragraphs": [
+                                "To test the validity of Ordinal UNLOC for target localization, synthetic datasets are constructed via numerical simulations, described as follows. In each simulation test, a set of N sensors m anchors and n targets where N=m+n) are placed randomly inside the unit square [0,1]2.",
+                                "Simulation test 1: Demonstration of typical localization outcome. A typical localization example, as in FIG. 2(a), where m=10 anchors are used with n=2 target to be localized, all placed in [0, 1]2. The ordinal distance comparison data are generated under the noisy threshold model (4), where the noise is Gaussian with mean 0 and standard deviation \u03c3=0.1. The estimated target locations obtained from Ordinal UNLOC are very close to the actual locations.",
+                                "With reference to FIG. 2. (a) An example of Ordinal UNLOC localization with m=10 anchors (circles) and n=2 targets (diamonds). Ordinal distance comparisons are generated using the noisy threshold model (3)-(4) with and Gaussian noise (mean 0, standard deviation 0.1). The estimated target locations using Ordinal UNLOC are marked by blue crosses, which are very close to the actual targets. FIG. 2(b) shows actual distances between the anchors 102 and the target 104 versus those obtained from the estimated target locations.",
+                                "Simulation test 2: Dependence of localization error on the number of anchors 102. Next, it is determined how the localization accuracy changes as more anchors become available; in particular, in the case of a single target node (n=1), where ordinal comparisons are made in the absence of noise. The number of anchors m 102 are varied from 5 to 50. For each m, 5000 independent numerical localization experiments are performed where in each simulation test the sensors are randomly placed in [0,1]2 and the target location is estimated using Ordinal UNLOC. Localization error is computed as the distance between the true and the estimated target locations, and plot the root mean squared error (RMSE) of localization as a function of the number of anchors in FIG. 3. It is evident that the localization error rapidly decreases as more anchors are used.",
+                                "Simulation test 3. Dependence of localization error on the level of noise. Next, the impact of noise in ordinal comparisons is determined with a particular focus on fixed number of anchors m=10 and target nodes n=1.",
+                                "For each (i, j, k) triplet with i<j, the value of noise is drawn independently from a normal distribution (0,\u03c32) (recall that we enforce the constraint \u03beji(k)=\u2212\u03beij(k) for all pairs.)",
+                                "In FIG. 4, the localization RMSE as a function of the noise std a is plotted, finding that RMSE increases gradually as noise level becomes higher as is expected. The tests are repeated but with double number of anchors m=20, and plot the RMSE curve in the same figure, which is (again, expectedly) lower than that corresponding to m=10. These results suggest that increase of the number of available anchors can be used to compensate the impact of noise in localization.",
+                                "While various embodiments have been described and illustrated herein, those of ordinary skill in the art will readily envision a variety of other means and/or structures for performing the function and/or obtaining the results and/or one or more of the advantages described herein, and each of such variations and/or modifications is deemed to be within the scope of the embodiments described herein. More generally, those skilled in the art will readily appreciate that all parameters, dimensions, materials, and configurations described herein are meant to be exemplary and that the actual parameters, dimensions, materials, and/or configurations will depend upon the specific application or applications for which the teachings is/are used. Those skilled in the art will recognize, or be able to ascertain using no more than routine experimentation, many equivalents to the specific embodiments described herein. It is, therefore, to be understood that the foregoing embodiments are presented by way of example only and that, within the scope of the appended claims and equivalents thereto, embodiments may be practiced otherwise than as specifically described and claimed. Embodiments of the present disclosure are directed to each individual feature, system, article, material, kit, and/or method described herein. In addition, any combination of two or more such features, systems, articles, materials, kits, and/or methods, if such features, systems, articles, materials, kits, and/or methods are not mutually inconsistent, is included within the scope of the present disclosure.",
+                                "The above-described embodiments of the described subject matter can be implemented in any of numerous ways. For example, some embodiments may be implemented using hardware, software or a combination thereof. When any aspect of an embodiment is implemented at least in part in software, the software code can be executed on any suitable processor or collection of processors, whether provided in a single device or computer or distributed among multiple devices/computers.",
+                                "The following references are incorporated herein by reference (and referred to elsewhere herein by reference number):\n\n\n- \\[1\\] \u201cFederal communications commission, wireless e911 location\n  accuracy requirements,\u201d 2014.\n- \\[2\\] Working Group 3, \u201cE9-1-1 location accuracy: Indoor localization\n  test bed report,\u201d *The Communications Security, Reliability and\n  Interoperaability Council*, March 2013.\n- \\[3\\] \u201cConsumer reports magazine, \u201cfor 911, is a cell phone as safe as\n  a landline\u201d?\u201d, Available Online at\n  http://www.consumerreports.org/cro/magazine-archive/2011/january/electronics/best-cell-phones/911-from-cell-phone/index.htm\n  (Jul. 15, 2016).\n- \\[4\\] C. Carle, \u201cIndoor location: The mobile revolution starts now\u201d\n  directions magazine, Available Online at\n  http://www.directionsmag.com/articles/indoor-location-the-mobile-revolution-starts-now/334122\n  (Jul. 15, 2016).\n- \\[5\\] P. Tragas, A. Kalis, C. Papadias, F. Ellinger, R. Eickhoff, T.\n  Ussmuller, R. Mosshammer, M. Huemer, A. Dabek, D. Doumenis, and A.\n  Kounoudes, \u201cResolution: Reconfigurable systems for mobile local\n  communication and positioning.\u201d in 2007 16*th* 1*ST Mobile and\n  Wireless Communications Summit*, July 2007, pp. 1-5.\n- \\[6\\] A. Matic, A. Popleteev, V. Osmani, and O. Mayora-Ibarra, \u201cAn\n  indoor positioning system based on a WiFi router and FM beacons,\u201d In\n  *Proc.* 18*th Telecommunications forum TELFOR* 2010, 2010.\n- \\[7\\] Krishna Chintalapudi, Anand Padmanabha Iyer, and Venkata N.\n  Padmanabhan, \u201cIndoor localization without the pain,\u201d *Proceedings of\n  the sixteenth annual international conference on Mobile computing and\n  networking\u2014MobiCom,* 2010.\n- \\[8\\] Ramsey Faragher and Robert Harle, \u201cLocation fingerprinting with\n  bluetooth low energy beacons,\u201d *IEEE Journal On Selected Areas in\n  Communications*, vol. 33, no. 11, pp. 2418-2428, November 2015.\n- \\[9\\] Mohamed Er Rida, Fuqiang Liu, Yassine Jadi, Amgad Ali Abdullah\n  Algawhari, and Ahmed Askourih, \u201cIndoor location position based on\n  bluetooth signal strength,\u201d 2*nd International Conference on\n  Information Science and Control Engineering,* 2015.\n- \\[10\\] R. K. Diwate and D. N. Rewadkar, \u201cIndoor tracking using Wi-Fi\n  routers on a smartphone,\u201d *International Journal of Science and\n  Research* (*IJSR*), vol. 4, no. 7, pp. 2319-2322, 7 2015.\n- \\[11\\] Song Chai, Renbo An, and Zhengzhong Du, \u201cAn indoor positioning\n  algorithm using bluetooth low energy RSSI,\u201d in *International\n  Conference on Advanced Material Science and Environmental Engineering*\n  (*AMSEE* 2016), *Thailand*, June 2016.\n- \\[12\\] Pavel Kriz, Filip Maly, and Tomas Kozel, \u201cImproving indoor\n  localization using bluetooth low energy beacons,\u201d *Mobile Information\n  Systems*, vol. 2016, pp. 1-11, 2016.\n- \\[13\\] Neal Patwari, Alfred O Hero, Matt Perkins, Neiyer S Correal,\n  and Robert J O'dea, \u201cRelative location estimation in wireless sensor\n  networks,\u201d *IEEE Transactions on signal processing*, vol. 51, no. 8,\n  pp. 2137-2148, 2003.\n- \\[14\\] Neal Patwari, Joshua N Ash, Spyros Kyperountas, Alfred O Hero,\n  Randolph L Moses, and Neiyer S Correal, \u201cLocating the nodes:\n  cooperative localization in wireless sensor networks,\u201d *IEEE Signal\n  processing magazine*, vol. 22, pp. 54-69, 2005.\n- \\[15\\] H. Wymeersch, J. Lien, and M. Z. Win, \u201cCooperative localization\n  in wireless networks,\u201d *Proceedings of the IEEE*, vol. 97, pp.\n  427-450, February 2009.\n- \\[16\\] Marc Willerton, M Banavar, Xue Zhang, Athanassios Manikas,\n  Cihan Tepedelenlioglu, Andreas Spanias, Trevor Thornton, E Yeatman,\n  and A Constantinides, \u201cSequential wireless sensor network discovery\n  using wide aperture array signal processing,\u201d in *Signal Processing\n  Conference* (*EUSIPCO*). 2012 *Proceedings of the* 20117 *European*.\n  IEEE, 2012.\n- \\[17\\] X. Zhang, M. K. Banavar, M. Willerton, A. Manikas, C.\n  Tepedelenlioglu, A. Spanias, T. Thornton, E. Yeatman, and A. G.\n  Constantinides, \u201cPerformance comparison of localization techniques for\n  sequential wsn discovery,\u201d in *Sensor Signal Processing for Defense*.\n  IEEE, 2012.\n- \\[18\\] X. Zhang, M. K. Banavar, M. Willerton, A. Manikas, C.\n  Tepedelenlioglu, A. Spanias, T. Thornton, E. Yeatman, and A. G.\n  Constantinides, \u201cPerformance comparison of localization techniques for\n  sequential wsn discovery,\u201d in *Sensor Signal Processing for Defence*\n  (*SSPD* 2012), September 2012, pp. 1-5.\n- \\[19\\] Xue Zhang, Cihan Tepedelenlioglu, Mahesh Banavar, and Andreas\n  Spanias, \u201cCrlb for the localization error in the presence of fading,\u201d\n  in *Acoustics, Speech and Signal Processing* (*ICASSP*), 2013 *IEEE\n  International Conference on*. IEEE, 2013.\n- \\[20\\] X. Zhang, C. Tepedelenlioglu, M. Banavar, and A. Spanias, *Node\n  Localization in Wireless Sensor Networks*, Morgan and Claypool, 2016.\n- \\[21\\] A. Beck, P. Stoica, and Jian Li, \u201cExact and approximate\n  solutions of source localization problems,\u201d *IEEE Transactions on\n  Signal Processing*, vol. 56, no. 5, pp. 1770-1778, May 2008.\n- \\[22\\] F. K. W. Chan and H. C. So, \u201cEfficient weighted\n  multidimensional scaling for wireless sensor network localization,\u201d\n  *IEEE Transactions on Signal Processing*, vol. 57, no. 11, pp.\n  4548-4553, November 2009.\n- \\[23\\] G. Wang and K. Yang, \u201cEfficient semidefinite relaxation for\n  energy-based source localization in sensor networks,\u201d in 2009 *IEEE\n  International Conference on Acoustics, Speech and Signal Processing*,\n  April 2009, pp. 2257-2260.\n- \\[24\\] Mohammad Reza Gholami, Henk Wymeersch, Erik G Strom, and Mats\n  Rydstrom, \u201cWireless network positioning as a convex feasibility\n  problem,\u201d *EURSIP* 2011, January 2011.\n- \\[25\\] Adrian Ozer and Eugene John, \u201cImproving the accuracy of\n  bluetooth low energy indoor positioning system using kalman\n  filtering,\u201d *International Conference on Computational Science and\n  Computational Intelligence* (*CSCI*), 2016.\n- \\[26\\] Marco Altini, Davide Brunelli, Elisabetta Farella, and Luca\n  Benini, \u201cBluetooth indoor localization with multiple neural networks,\u201d\n  *IEEE* 5*th International Symposium on Wireless Pervasive Computing,*\n  2010.\n- \\[27\\] Filippo Palumbo, Paolo Barsocchi, Stefano Chessa, and Juan\n  Carlos Augusto, \u201cA stigmergic approach to indoor localization using\n  bluetooth low energy beacons,\u201d 12*th IEEE International Conference on\n  Advanced Video and Signal Based Surveillance* (*AVSS*), 2015.\n- \\[28\\] M. R. Gholami, R. M. Vaghefi, and E. G. Strom, \u201cRss-based\n  sensor localization in the presence of unknown channel parameters,\u201d\n  *IEEE Transactions on Signal Processing*, vol. 61, no. 15, pp.\n  3752-3759, August 2013.\n- \\[29\\] Haojian Jin, Cheng Xu, and Kent Lyons, \u201cCorona: Positioning\n  adjacent device with asymmetric bluetooth low energy RSSI\n  distributions,\u201d *Proceedings of the* 28*th Annual ACM Symposium on\n  User Interface Software and Technology\u2014UIST,* 2015.\n- \\[30\\] F. Benedetto, G. Giunta, and E. Guzzon, \u201cA novel \u201csingle-path\u201d\n  vs. \u201cfew-path\u201d test based on higher order statistics to possibly\n  start-up coherent combining,\u201d *Journal of Applied Research and\n  Technology*, vol. 13, no. 1, pp. 7-19, 2015.\n- \\[31\\] Yankai Wang, Qingyu Yang, Guangrui Zhang, and Peng Zhang,\n  \u201cIndoor positioning system using euclidean distance correction\n  algorithm with bluetooth low energy beacon,\u201d 2016 *International\n  Conference on Internet of Things and Applications* (*IOTA*), 2016.\n- \\[32\\] A Juri, T Arslan, and F Wang, \u201cObstruction-aware bluetooth low\n  energy indoor positioning,\u201d *Proceedings of the* 29*th International\n  Technical Meeting of The Satellite Division of the Institute of\n  Navigation* (*ION GNSS+*2016), 2016.\n- \\[33\\] Gale Young and Alston S Householder, \u201cDiscussion of a set of\n  points in terms of their mutual distances,\u201d *Psychometrika*, vol. 3,\n  no. 1, 1938.\n- \\[34\\] Warren S Torgerson, \u201cMultidimensional scaling of similarity,\u201d\n  *Psychometrika*, vol. 30, no. 4, 1965.\n- \\[35\\] Valen E Johnson and J Albert, *Ordinal Data Modeling\n  {Statistics for Social Science and Public Policy*}, Springer-Verlag\n  New York Incorporated, 1999.\n- \\[36\\] K. Mack and M. K. Banavar, \u201cBluetooth localization on android,\u201d\n  in *SURE Conference,* 2015.\n- \\[37\\] M. Banavar and K. Mack, \u201cLocalization using wireless signals,\u201d\n  2017, U.S. patent application Ser. No. 15/419,390.\n- \\[38\\] Kevin V. Mack, Mahesh K. Banavar, and Sumona Mondal,\n  \u201cStatistical methods for improving bluetooth low energy ranging and\n  localization,\u201d *IEEE International Conference on Acoustics, Speech,\n  and Signal Processing* (*ICASSP*) 2017 (submitted), 2017.\n- \\[39\\] J. Spanier and K. B. Oldham, *An Atlas of Functions*,\n  Hemisphere Publishing Corporation, 1987.\n- \\[40\\] Xi Chen, Paul N Bennett, Kevyn Collins-Thompson, and Eric\n  Horvitz, \u201cPairwise ranking aggregation in a crowdsourced setting,\u201d in\n  *Proceedings of the sixth ACM international conference on Web search\n  and data mining*. ACM, 2013, pp. 193-202.\n- \\[41\\] Ammar Ammar and Devavrat Shah, \u201cEfficient rank aggregation\n  using partial data,\u201d in *ACM SIGMETRICS Performance Evaluation\n  Review*. ACM, 2012, vol. 40, pp. 355-366.\n- \\[42\\] Sahand Negahban, Sewoong Oh, and Devavrat Shah, \u201cRank\n  centrality: Ranking from pairwise comparisons,\u201d *Operations Research*,\n  vol. 65, no. 1, pp. 266-287, 2016.\n- \\[43\\] Xiaoye Jiang, Lek-Hong Lim, Yuan Yao, and Yinyu Ye,\n  \u201cStatistical ranking and combinatorial hodge theory,\u201d *Mathematical\n  Programming*, vol. 127, no. 1, pp. 203-244, 2011.\n- \\[44\\] John Adrian Bondy, Uppaluri Siva Ramachandra Murty, et al.,\n  *Graph theory with applications*, vol. 290, Citeseer, 1976.\n- \\[45\\] G. H. Golub and C. F. Van Loan, *Matrix computations*, vol. 3,\n  JHU Press, 2012.\n- \\[46\\] Sun J., Yang T., Mack K. V., and Banavar M. K., \u201cUnloc: Optimal\n  unfolding localization from noisy distance data,\u201d *under review in\n  Sampling Theory in Signam and Image Processing,* 2018."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "construct synthetic datasets via numerical simulations",
+                                "describe simulation test 1: typical localization outcome",
+                                "generate ordinal distance comparison data under noisy threshold model",
+                                "estimate target locations using Ordinal UNLOC",
+                                "describe simulation test 2: dependence of localization error on number of anchors",
+                                "vary number of anchors and perform independent numerical localization experiments",
+                                "compute localization error as distance between true and estimated target locations",
+                                "plot root mean squared error (RMSE) of localization as function of number of anchors",
+                                "describe simulation test 3: dependence of localization error on level of noise",
+                                "draw noise values independently from normal distribution",
+                                "plot RMSE of localization as function of noise standard deviation",
+                                "repeat simulation test 3 with double number of anchors",
+                                "discuss results of simulation tests",
+                                "introduce embodiments of the present disclosure",
+                                "describe scope of embodiments",
+                                "discuss equivalents to specific embodiments",
+                                "introduce Ordinal UNLOC implementation",
+                                "describe hardware and software implementation options",
+                                "list incorporated references",
+                                "introduce reference 1: Federal Communications Commission",
+                                "introduce reference 2: E9-1-1 location accuracy test bed report",
+                                "introduce reference 3: Consumer Reports Magazine",
+                                "introduce reference 4: Indoor location article",
+                                "introduce reference 5: Resolution reconfigurable systems",
+                                "introduce reference 6: Indoor positioning system based on WiFi router and FM beacons",
+                                "introduce reference 7: Indoor localization without pain",
+                                "introduce reference 8: Location fingerprinting with Bluetooth low energy beacons",
+                                "introduce reference 9: Indoor location position based on Bluetooth signal strength",
+                                "introduce remaining references"
+                            ],
+                            "num_characters": 14863,
+                            "outline_medium": [
+                                "describe simulation test setup",
+                                "demonstrate typical localization outcome",
+                                "generate ordinal distance comparison data",
+                                "estimate target locations using Ordinal UNLOC",
+                                "vary number of anchors to test localization accuracy",
+                                "perform 5000 independent numerical localization experiments",
+                                "compute localization error as RMSE",
+                                "plot RMSE as a function of number of anchors",
+                                "test dependence of localization error on noise level",
+                                "vary noise level to test impact on localization",
+                                "plot RMSE as a function of noise level",
+                                "compare results with double number of anchors",
+                                "discuss results and implications",
+                                "conclude on effectiveness of Ordinal UNLOC"
+                            ],
+                            "outline_short": [
+                                "describe simulation test setup",
+                                "demonstrate typical localization outcome",
+                                "analyze dependence of localization error on number of anchors",
+                                "analyze dependence of localization error on noise level",
+                                "discuss results and implications",
+                                "generalize to other embodiments",
+                                "incorporate prior art references"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce indoor environments",
+                        "define sensor field and sensor types",
+                        "describe system model and notation",
+                        "introduce ordinal comparisons and binary outcomes",
+                        "define comparison function and thresholding",
+                        "summarize problem of localization from ordinal data",
+                        "outline Ordinal Unfolding-based Localization (Ordinal UNLOC) approach",
+                        "describe rank aggregation from ordinal data",
+                        "formulate least squares problem for spatial proximities",
+                        "partition proximity matrix",
+                        "outline function learning and distance estimation"
+                    ],
+                    "num_characters": 5942,
+                    "outline_medium": [
+                        "introduce indoor environments and sensor fields",
+                        "define system model and notation",
+                        "describe ordinal comparison data and its representation",
+                        "formulate problem of localization from ordinal data",
+                        "outline Ordinal Unfolding-based Localization (Ordinal UNLOC) approach"
+                    ],
+                    "outline_short": [
+                        "introduce indoor localization problem",
+                        "describe system model and notation"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for determining location of a target within an indoor environment, comprising the steps of:\na. classifying a set of anchors having known locations within the indoor environment and a set of targets having unknown locations within the indoor environment, wherein each of the anchors and targets comprise hardware having sensors and wireless communication capabilities;\nb. creating a set of ordinal pair data sets comprising relative distances between each target and all anchors;\nc. ranking and aggregating the ordinal pair data sets to produce a set of dissimilarities that approximate distances;\nd. transforming the dissimilarities into estimated distances between each anchor and target using the known distances between the anchors as calibration; and\ne. inferring location of targets by formulating and solving a multidimensional unfolding optimization.",
+        "2. A system for determining location of a target within an indoor environment, comprising:\na. a plurality of anchors each having known locations within the indoor environment and configured to sense an external stimulus and transmit a wireless signal;\nb. a plurality of targets positioned at unknown locations within the indoor environment, each target configured to sense an external stimulus and transmit a wireless signal;\nc. a computer processor programmed, configured, and/or structured to:\ni. classify the plurality of anchors having known locations within the indoor environment and the plurality of targets having unknown locations within the indoor environment;\nii. create a set of ordinal pair data sets comprising relative distances between each target and all anchors;\niii. rank and aggregate the ordinal pair data sets to produce a set of dissimilarities that approximate distances;\niv. transform the dissimilarities into estimated distances between each anchor and target using the known distances between the anchors as calibration; and\nv. infer location of the targets by formulating and solving a multidimensional unfolding optimization."
+    ]
+}

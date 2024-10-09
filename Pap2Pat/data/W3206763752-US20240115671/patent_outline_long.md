@@ -1,0 +1,435 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- describe cancer and its treatment challenges
+- introduce bacteria as anticancer agents
+
+## SUMMARY OF THE INVENTION
+
+- introduce engineered Salmonella for cancer therapy
+- describe selective tumor colonization
+- explain flagellar expression control
+- detail inducible flhDC expression system
+- describe tumor cell invasion and protein delivery
+- introduce SseJ gene deletion
+- describe bacterial cell with inducible flagella and lysis gene
+- specify lysis cassette options
+- describe intracellularly induced Salmonella promoter
+- detail exogenous inducible promoter options
+- describe bacterial cell without endogenous flhDC
+- introduce plasmid-expressed therapeutic peptide
+- describe composition with bacterial cells and carrier
+- outline method for selective tumor colonization
+- describe method for cancer treatment
+- outline method for inhibiting tumor growth
+- describe method for treating metastases
+- specify tumor types
+- describe therapeutic peptide delivery
+- detail inducible flhDC expression
+- introduce SseJ deletion or reduced expression
+- describe bacterial cell with SseJ deletion and lysis gene
+- describe composition with bacterial cells and carrier
+- outline method for colonizing tumor and/or tumor associated cells
+- describe method for cancer treatment
+- outline method for inhibiting tumor growth
+- describe method for treating metastases
+- specify tumor types
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- motivate intracellular targeting
+- limitations of macromolecular therapies
+- introduce Salmonella delivery platform
+- application of platform in cancer treatment
+
+### Definitions
+
+- define technical terms
+- clarify meaning of terms
+- introduce embodiment terminology
+- explain indefinite articles
+- define "and/or" and "or"
+- clarify inclusive terms
+- define "about"
+- explain numerical ranges
+- define "individual", "subject", and "patient"
+- explain "treatment" and related terms
+- define "inhibit" and related terms
+- explain "expression"
+- define "exogenous"
+- explain "endogenous"
+- describe flagella
+- introduce engineered Salmonella
+- define "contacting"
+- explain "effective amount"
+- define "disorder"
+- explain "cell", "cell line", and "cell culture"
+- define "coding region"
+- explain "complementary"
+- define "encoding"
+- explain "essentially pure"
+- define "fragment" and "segment"
+- explain "functional"
+- define "homologous"
+- explain homology between sequences
+- provide examples of homology
+- clarify homology percentage
+- explain homology in DNA sequences
+- provide example of DNA sequence homology
+- conclude definitions
+- define homology
+- describe algorithm for determining percent identity
+- specify parameters for BLAST searches
+- define hybridization
+- describe instructional material
+- define nucleic acid
+- specify types of nucleic acids
+- define nucleic acid construct
+- describe degenerate nucleotide sequences
+- define oligonucleotide
+- describe substantially homologous nucleic acid sequence
+- specify hybridization conditions
+- describe computer algorithms for determining substantial similarity
+- define operably linked
+- describe pharmaceutically acceptable carrier
+- define purified
+- describe recombinant polynucleotide
+- define recombinant host cell
+- describe recombinant polypeptide
+- define recombinant cell
+- describe regulation of function or activity
+- define small interfering RNAs (siRNAs)
+- describe specific binding
+- define standard
+- describe conventional molecular biology techniques
+- describe chemical synthesis of nucleic acids
+- define including and comprising
+- describe use of including and comprising
+- specify meaning of including and comprising
+- describe use of comprises and comprising
+- specify meaning of comprises and comprising
+- describe use of including, includes, and like terms
+
+### I. Bacteria/Flagella
+
+- introduce bacteria useful in the invention
+- describe Salmonella strains
+- list attenuated Salmonella strains
+- describe mutations in Salmonella strains
+- introduce flhDC sequence
+- provide accession numbers for flhDC sequence
+- list other sequences controlling flagella activity
+- describe attenuated Salmonella strain VNP20009
+- introduce failsafe circuit in bacterial vector
+- describe deletion of msbB and purI genes
+- describe dependence on external sources of purine
+- describe inability to replicate in normal tissue
+
+### II. Vectors/Plasmids
+
+- introduce recombinant methods
+- describe components of replicable vector
+- introduce selection gene
+- describe types of selection genes
+- introduce promoter
+- describe types of promoters
+- introduce nucleic acid sequence
+- describe construction of suitable vectors
+- introduce plasmid or bacteriophage vector
+- describe DNA, RNA, and/or protein production
+- introduce lysis gene or cassette
+- describe promoter for SPI2-T3SS genes
+
+### III. Therapeutic DNA, RNA and Peptides
+
+- introduce therapeutic DNA, RNA, and/or peptides
+- describe gene silencing through RNAi
+- introduce siRNA and shRNA
+- describe RNAi agents
+- introduce ribozyme
+- describe target genes
+- introduce epigenetic targets
+- describe therapeutic peptides
+- introduce caspase and NIPP1
+
+### IV. Cancer Treatment
+
+- introduce bacteria with natural tropism for cancers
+- describe types of cancer that can be treated
+
+### V. Administration
+
+- formulate pharmaceutical composition
+- describe parenteral preparation
+- list components for parenteral preparation
+- describe intravenous administration
+- list carriers for intravenous administration
+- describe oral compositions
+- list ingredients for oral compositions
+- describe administration by inhalation
+- describe transmucosal or transdermal administration
+- formulate compositions in dosage unit form
+- describe dosage unit forms
+- specify dosage ranges
+
+## EXAMPLES
+
+- provide examples
+
+### Example I
+
+- introduce protein drug delivery
+- highlight intracellular pathways
+- describe protein biologics
+- outline technical challenges
+- propose intracellular delivery solution
+- describe bacterial cultures
+- specify bacterial strains
+- outline plasmid construction
+- describe transformation process
+- detail electroporation protocol
+- create parental control strain
+- generate ΔflhD strain
+- create intracellular reporting strain
+- construct plasmid P1
+- create flhDC re-expression strain
+- construct plasmid P2
+- create PsseJ reporter strain
+- generate PsifA reporter strain
+- investigate lysis in Salmonella
+- create intracellular delivering Salmonella
+- create genomic knockouts
+- create ID Salmonella re-expressing flhDC
+- create ID Salmonella expressing luciferase
+- create ID Salmonella expressing anti-b-actin nanobody
+- create ID Salmonella expressing NIPP1-CD
+- create ID Salmonella delivering CT caspase-3
+- describe cell culture
+- outline invasion assays
+- describe staining protocol
+- describe staining combinations
+- describe Salmonella alone staining
+- describe Salmonella, released GFP and actin staining
+- describe Salmonella, released GFP and vacuole staining
+- describe microscopy setup
+- describe image acquisition
+- describe image processing
+- describe determining intracellular Salmonella fraction
+- describe immunohistochemistry protocol
+- describe deparaffinization
+- describe antigen retrieval
+- describe blocking and staining
+- describe mounting and imaging
+- describe flow cytometry analysis
+- describe cell isolation and staining
+- describe gating and compensation
+- describe identifying invaded cells
+- describe effect of flhDC induction on invasion
+- describe infection assay
+- describe staining and imaging
+- describe quantifying invasion
+- describe tumor-on-a-chip device fabrication
+- describe device setup and sterilization
+- describe bacterial administration
+- describe imaging and quantifying invasion
+- describe intracellular activation of promoters
+- describe bacterial growth and imaging
+- describe promoter activity analysis
+- describe bacterial death assay
+- describe growth and death rate analysis
+- describe intracellular lysis and GFP delivery
+- introduce ID Salmonella
+- quantify lysis fraction
+- compare growth and death rates
+- generate images of bacterial lysis and GFP delivery
+- quantify bacterial protein content
+- quantify lysis and GFP release in cells and SCVs
+- measure dynamic GFP release and diffusion
+- quantify location of GFP release
+- determine dependence of protein release on residence in SCVs
+- determine dependence of protein delivery on invasion and intracellular lysis
+- quantify intracellular delivery of GFP to cells in tumors with ID Salmonella
+- quantify amount of delivered protein
+- effect of flhDC on protein delivery in mice
+- quantify delivery fraction
+- describe temporal colonization of ID Salmonella in tumors
+- follow bacterial colonization in real time
+- determine bacterial density in tumors
+- quantify biodistribution and toxicity of ID Salmonella
+- describe bacterial protein content analysis
+- describe lysis and GFP release in cells and SCVs analysis
+- describe dynamic GFP release and diffusion analysis
+- describe location of GFP release analysis
+- describe dependence of protein release on residence in SCVs analysis
+- describe dependence of protein delivery on invasion and intracellular lysis analysis
+- describe intracellular delivery of GFP to cells in tumors with ID Salmonella analysis
+- describe amount of delivered protein analysis
+- describe effect of flhDC on protein delivery in mice analysis
+- describe delivery fraction analysis
+- describe temporal colonization of ID Salmonella in tumors analysis
+- describe biodistribution and toxicity of ID Salmonella analysis
+- summarize results
+- conclude
+- introduce biodistribution of Salmonella
+- measure toxicity of ID Salmonella
+- deliver nanobodies with ID Salmonella
+- measure cytotoxicity of delivering CT-Casp-3 and NIPP1-CD
+- deliver CT-Casp-3 and NIPP1-CD to tumor masses
+- determine final fraction of death
+- measure tumor response to delivering CT-Casp-3 in mice
+- describe statistics used
+- cite references
+- introduce creation of intracellular protein delivery system
+- describe Salmonella invasion into cells
+- determine location of Salmonella in tumors
+- develop therapeutic Salmonella into intracellular protein delivery system
+- control invasion of ID Salmonella into cells
+- control release of protein into cells
+- develop system to trigger autonomous lysis after cell invasion
+- identify Salmonella promoter triggered intracellularly
+- couple PsseJ promoter to LysE gene
+- demonstrate protein delivery after bacterial lysis
+- show protein escapes SCVs and fills cytoplasm
+- demonstrate dependence of bacterial lysis on SCV localization
+- show protein delivery dependent on two engineered systems
+- administer ID Salmonella systemically to tumor-bearing mice
+- demonstrate safety and self-limiting nature of ID Salmonella
+- engineer ID Salmonella to make different proteins
+- demonstrate delivery of anti-actin nanobody
+- demonstrate delivery of NIPP1-CD and CT Casp-3
+- administer ID Salmonella to microfluidic tumor devices
+- demonstrate effectiveness of CT Casp-3 against liver cancer and breast cancer
+- conclude ID Salmonella is an autonomous intracellular protein delivery system
+- highlight advantages of ID Salmonella
+- discuss potential of ID Salmonella to deliver protein drugs
+- discuss potential of ID Salmonella to treat hepatocellular carcinoma
+- discuss potential of ID Salmonella to accelerate generation of new cancer therapies
+- discuss potential of ID Salmonella to target inaccessible cancer pathways
+- discuss potential of ID Salmonella to increase efficacy and safety of cancer treatment
+- describe Figure 1A
+- describe Figure 1B
+- describe Figure 1C
+- describe Figure 1D
+- describe Figure 1E-G
+- describe Figure 2-4
+
+### Example II
+
+- introduce cancer treatment
+- limitations of macromolecular therapies
+- Salmonella as delivery system
+- flhDC expression importance
+- typhoidal strains of Salmonella
+- flagellin as TLR5/NLRC4 agonist
+- modulation of flhDC activity
+- liver as immune mediated clearance site
+- pyroptosis in macrophages
+- flagellated Salmonella in liver
+- tumor colonization and therapeutic delivery
+- mechanisms of therapy delivery
+- cytosolic bacteria and therapeutic delivery
+- Salmonella and tumor cells
+- flhDC expression and tumor colonization
+- hypotheses of flhDC expression
+- experimental design
+- bacterial cultures
+- cloning of plasmids
+- creation of plasmid P1
+- creation of plasmid P2
+- creation of plasmid P3
+- strains used
+- genetic knockouts
+- lambda red recombination procedure
+- creation of knockout strains
+- mouse models
+- tumor and liver colonization
+- immunohistochemistry
+- antigen retrieval
+- tissue sectioning
+- staining for Salmonella and GFP
+- in vivo tumor and liver colonization
+- quantification of colonization
+- immunohistochemistry
+- cell culture
+- tumor spheroids
+- microfluidic system
+- tumor-on-a-chip device
+- device fabrication
+- valve actuation
+- device sterilization
+- bacterial administration
+- microscopy and image analysis
+- image processing and quantification
+- introduce infection assays
+- describe cancer cell preparation
+- detail Salmonella growth and infection procedure
+- outline immunocytochemistry protocol
+- summarize staining combinations
+- describe coverslip mounting and curing
+- introduce quantification of vacuolar fraction
+- detail image analysis
+- summarize results of controlling flhD expression
+- describe tumor colonization and liver colonization results
+- introduce flhDC expression and intratumoral dispersion
+- detail tumor necrosis and viable tissue colonization
+- summarize bacterial growth rates
+- introduce in situ expression of flhDC
+- describe tumor-on-a-chip device
+- detail spatial distribution of intracellular Salmonella
+- summarize results of flhDC induction
+- introduce engineered Salmonella superiority
+- compare tumor colonization and protein delivery
+- describe ΔsifA Salmonella limitations
+- introduce flhDC expression and lysis efficiency
+- detail cancer cell infection and invasion
+- summarize lysis efficiency results
+- introduce vacuolar retention and lysis rescue
+- describe ΔsseJ FID Sal strain
+- summarize invasion and lysis efficiency results
+- introduce conclusions
+- summarize implications of modulating flhDC expression
+- introduce discussion
+- discuss tumor colonization and protein delivery
+- discuss flhDC expression and tumor specificity
+- discuss bacterial infiltration and tumor necrosis
+- discuss co-administration of bacteria and TNF-alpha inducer
+- discuss genetic modification of Salmonella
+- discuss wild-type Salmonella limitations
+- discuss flhDC uninduced bacteria colonization
+- discuss vacuolar residence and lysis
+- discuss cytosolic therapeutic delivery limitations
+- discuss engineered bacterial system similarities with Salmonella Typhi
+- discuss TviA and Vi capsule
+- discuss flhDC and HiLA expression
+- discuss LPS modification and innate immune evasion
+- discuss intracellular vacuole residence
+- discuss genetic modifications and systemic persistence
+- conclude discussion
+
+### Example III
+
+- introduce chromosomal integration of flhD in EBV-002
+- motivate creation of master delivery vehicle
+- describe chromosomal integration of PBAD-flhDC
+- summarize results of chromosomal integration
+- introduce development of clinical strain of EBV-002
+- motivate controlling activation of flhDC
+- describe creation of four different flhDC inducible EBV-002 strains
+- summarize results of invasion rates of each strain
+- characterize sample (2)
+- describe salicylic acid inducible genetic circuit
+- summarize results of invasion of cancer cells
+- determine lowest amount of salicylic acid needed
+- introduce incorporation of ΔsseJ mutation into EBV-002
+- describe creation of EBV-003
+- introduce in vivo efficacy of EBV-003
+- describe biodistribution and tumor selective protein delivery
+- summarize results of colonization and protein delivery
+- determine intracellular invasion of cancer cells after salicylic acid induction
+- evaluate intracellular protein delivery with and without salicylate induction
+- describe in vivo colonization, invasion, and protein delivery in spontaneous breast cancer metastasis
+- summarize results of colonization and protein delivery in metastatic breast cancer
+- describe intracellular invasion of cancer cells within liver metastases
+- incorporate references by reference
+

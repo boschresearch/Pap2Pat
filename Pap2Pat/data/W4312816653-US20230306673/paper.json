@@ -1,0 +1,302 @@
+{
+    "id": "https://semopenalex.org/work/W4312816653",
+    "authors": [
+        "Xingwei Liang",
+        "Shengcai Liao",
+        "Yanan Wang"
+    ],
+    "title": "Cloning Outfits from Real-World Images to 3D Characters for Generalizable Person Re-Identification",
+    "date": "2022-06-01",
+    "abstract": "Recently, large-scale synthetic datasets are shown to be very useful for generalizable person re-identification. However, synthesized persons in existing datasets are mostly cartoon-like and in random dress collocation, which limits their performance. To address this, in this work, an automatic approach is proposed to directly clone the whole outfits from real-world person images to virtual 3D characters, such that any virtual person thus created will appear very similar to its real-world counterpart. Specifically, based on UV texture mapping, two cloning methods are designed, namely registered clothes mapping and homogeneous cloth expansion. Given clothes keypoints detected on person images and labeled on regular UV maps with clear clothes structures, registered mapping applies perspective homography to warp real-world clothes to the counterparts on the UV map. As for invisible clothes parts and irregular UV maps, homogeneous expansion segments a homogeneous area on clothes as a realistic cloth pattern or cell, and expand the cell to fill the UV map. Furthermore, a similarity-diversity expansion strategy is proposed, by clustering person images, sampling images per cluster, and cloning outfits for 3D character generation. This way, virtual persons can be scaled up densely in visual similarity to challenge model learning, and diversely in population to enrich sample distribution. Finally, by rendering the cloned characters in Unity3D scenes, a more realistic virtual dataset called ClonedPerson is created, with 5,621 identities and 887,766 images. Experimental results show that the model trained on ClonedPerson has a better generalization performance, superior to that trained on other popular real-world and synthetic person re-identification datasets. The ClonedPerson project is available at https://github.com/Yanan-Wang-cs/ClonedPerson.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "The generalization of person re-identification has gained increasing attention in recent years. One way to improve generalization is to develop large-scale and diverse training datasets. However, collecting person images from surveillance videos is privacy sensitive, and the further data annotation is expensive. Therefore, recently, synthetic person re-identification datasets have been actively developed due to their advantages of no privacy concern and no annotation cost [3,4,25]. For example, RandPerson [29] automatically creates large-scale random 3D characters with 8,000 identities, rendered from simulation of surveillance environments in Unity3D [27]. It is also proved in [29] that large-scale synthetic datasets are very useful to improve generalization. Similar findings are also observed in the following work UnrealPerson [33]. However, synthesized persons in existing datasets are quite different from realistic persons, because synthesized persons are mostly cartoon-like and dress in random collocation. This clear domain gap limits the performance of models trained on such synthetic datasets.",
+                "On the other hand, some researchers proposed to generate 3D human body models from real-world person images [13,28,34], targeting at high-fidelity reconstruction. These methods try to generate 3D body shapes and the associated textures simultaneously, through deep neural networks. They can help reduce the gap between synthetic and realistic person images to some extent due to the input of real-world clothes textures. However, current methods are still not satisfactory as the results are usually blur, and there are many artifacts, e.g. in back views (see Fig. 8c).",
+                "Considering the above, in this work, an automatic approach is proposed to directly clone the whole outfits from real-world person images to virtual 3D characters. By doing so, we would like to achieve two goals1 : (1) the directly (2) by cloning the whole outfit, the virtual person thus created will appear very similar to its real-world counterpart, in similar clothes and dress collocation. Specifically, inspired from the UV texture mapping [5] method developed in RandPerson [29], in this work, two cloning methods for UV maps are designed, namely registered clothes mapping and homogeneous cloth expansion. Registered mapping targets at regular UV maps where clothes appear in regular shapes and structures. Based on clothes keypoints detected on real-world person images and labeled on UV maps, registered mapping applies perspective homography [26] to warp real-world clothes to the counterparts on the UV map. Homogeneous expansion is for invisible clothes parts and irregular UV maps. An optimization algorithm is proposed to find a large homogeneous area on clothes, use it as a realistic cloth pattern or cell, and expand the cell to fill the UV map. Fig. 1 shows the pipeline of the proposed method.",
+                "Furthermore, a general principle is established to scale up virtual 3D character creation, that is, it should expand both densely in similarity and diversely in population. The former one is to challenge discriminative model learning by providing similar persons, while the latter is to enrich the diversity in sample space. A similarity-diversity expansion strategy is thus proposed. Thanks to the proposed clothes cloning method, this can conveniently be achieved by clustering real-world person images and a controlled sampling of the clustered images for 3D character generation.",
+                "Eventually, the generated 3D characters are imported into Unity3D virtual environments to render a more realistic virtual dataset, called ClonedPerson, with 763,953 images from 4,826 characters for training, and 123,813 images of 795 characters for testing. Experimental results show that the similarity-diversity expansion strategy is effective, and the model trained on the ClonedPerson dataset has a better generalization performance, surpassing the models trained on various real-world and synthetic datasets.",
+                "In summary, our main contributions are: (1) We propose fidelity reconstruction of identifiable biometric signatures, e.g. faces, may also raise privacy concerns.",
+                "Dataset #ID #Cam #BBox Sur RealOutfit SOMAset [4] 50 250 100,000 No No No SyRI [3] 100 280 56,000 No No No PersonX [25] 1,266 "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "RELATED WORK",
+            "paragraphs": [
+                "Collecting and manually labeling real-world person reidentification datasets are expensive and privacy-sensitive. In contrast, the use of synthetic data can reduce the cost of manual labeling, and synthetic datasets do not have privacy issues. For synthetic datasets, SyRI [3] and PersonX [25] used limited hand-made characters to generate data. In contrast, RandPerson [29] proposed a clever way to generate new-looking clothes models by replacing UV maps of exist-ing 3D clothes models with neutral images or random color and texture patterns, and designed an automatic pipeline in MakeHuman [6] to scale up character generation. Besides, similar to real-world environments, [29] simulated camera networks in Unity3D to render and record moving person videos. Moreover, [29] proved that models trained on synthetic data generalize well on real-world datasets. Following RandPerson, UnrealPerson [33] improved the accuracy by using real-world person images to create virtual characters, and rendering with the powerful Unreal Engine 4 (UE4) [1] with four large and realistic scenes. Specifically, it cropped blocks from segmented clothing images to directly replace UV maps of existing 3D clothes models. However, as shown in Fig. 7, this way still results in unrealistic-looking characters due to scale alignment issue. Statistics of some synthetic datasets are shown in Table 1.",
+                "On the other hand, one may consider using virtual tryon methods to generate synthesized persons. These methods aim to transfer a target clothing onto a reference person. However, existing virtual try-on methods [11,31] are mostly in 2D, which cannot generate 3D clothed human models, and thus cannot import them into virtual environments for comprehensive rendering. On the other hand, some existing methods, e.g. PIFu [23], targets at high-fidelity reconstruction of 3D persons from 2D images. However, such methods require ground-truth of 3D shapes and textures for training, which is quite expensive and limited in scale. Recently, some methods, e.g. HPBTT [34] tried training 3D reconstruction models from only 2D images. However, they are based on generative models, which usually result in blurred textures and artifacts. Besides, Pix2Surf [21] proposed to transfer texture from clothing images to 3D humans by neural networks. It achieved a good quality by training a specific model for every category of clothes. However, extending to other categories is costly. Furthermore, since HPBTT and Pix2Surf are both based on SMPL [20], they are not able to handle long skirts, as shown in Fig. 8.",
+                "Therefore, to further reduce the gap between virtual characters and realistic persons, we follow the way of Rand-Person in repainting UV maps of existing 3D clothing models. However, different from RandPerson and UnrealPerson which directly replace existing UV maps by other images, we design two cloning methods for structure-aware, finegrained repainting of UV maps.  Several pre-processing steps are implemented to fulfill our target. For example, to clone the full-body outfits from real-world person images to virtual 3D characters, we apply person detection to localize full-body person images, and remove standalone and occluded clothes. Besides, we design a number of rules based on pose detection to cherrypick 4 non-occluded frontal-view person images, since they best show clothing patterns and collocations. Due to space limits, pre-processing steps are introduced in Appendix B."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "3D Virtual Character Generation",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Registered Clothes Mapping",
+                    "paragraphs": [
+                        "With 3D clothes models available in the MakeHuman community, we obtain some clothes models with regular UV maps, where clothes appear in regular shapes and structures, as Fig. 2b shows. With these regular UV maps, we apply perspective homography [26] to map real-world clothes textures to UV maps of 3D characters, so that the original texture structures in the clothes can be well kept, and will appear to be clear and sharp."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Perspective homography",
+                            "paragraphs": [
+                                "Perspective homography is also known as perspective transformation [2,26]. Given a set of 2D points {p i } and a corresponding set of points {p i }, augmented with homogeneous coordinates (appending 1 as the z coordinate), perspective homography maps each p i to p i by a homography matrix H \u2208 R 3\u00d73 , that is, p = Hp.",
+                                "Then, we can compute the homography matrix H by solving the following optimization problem:",
+                                "where n is the number of the corresponding points. Eq.",
+                                "(1) defines a least squares problem and thus can be easily solved. In addition, the computed homography matrix H can be refined with the Levenberg-Marquardt method [14] to further reduce the re-projection error."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Perspective warping",
+                            "paragraphs": [
+                                "In our task, given labeled clothes keypoints p i on regular UV texture maps (e.g. Fig. 2b), and the corresponding detected clothes keypoints p i on real-world person images (e.g. Fig. 2a), we can solve Eq. ( 1) and get the homography matrix H. Then, each pixel location p on the UV map will have a corresponding pixel location on the input image, by [x, y, z] T = Hp. Besides, we need to set the z coordinate of all the resulting points to 1 before the warping process, as the transformation operates on homograph coordinates. That is, p = x z , y z , where p represents the corresponding point on the clothes image. Finally, the perspective warping can be done by bilinear interpolation on the clothes image and use the resulting pixel values to fill the UV map [26]. Specifically, by traversing p on UV map in turn, a corresponding point p =Hp with float numbers of coordinates on the clothing image will be determined. Then, four pixels around p will be bilinearly interpreted into p. An example is shown in Fig. 3, where the red dots represent the corresponding keypoints. To reduce background influence, we set the outer part of the clothes in black.",
+                                "In this paper, with most regular UV maps we directly calculate perspective homography through all the clothes keypoints. However, as shown in Fig. 2b, the shapes of the long-sleeved and trousers on the UV map are quite different from those usually appear in person images. In these cases, we calculate the perspective homography on each part of them separately, then warp the clothes parts to the UV texture map and combine the results. For example, pants could be split into left and right sides."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Homogeneous Cloth Expansion",
+                    "paragraphs": [
+                        "Registered clothes mapping can handle the clothes texture of the frontal side very well. However, the back side is usually different from the frontal side but invisible. Therefore, we further design the homogeneous cloth expansion method to find a homogeneous area on clothes as a realistic cloth cell, and expand the cell to fill the UV map. Besides, as Fig. 2c shows, the UV texture maps of some 3D clothes models are irregular, with unclear clothes structures. This also prevents the application of the registered clothes mapping. Therefore, we use the homogeneous cloth expansion to handle irregular UV maps, and enable more clothes models and styles. In our experiments, we have 161 3D clothes models with regular UV maps, and 17 models with irregular UV maps, as illustrated in Fig. 2."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Cloth segmentation",
+                            "paragraphs": [
+                                "The homogeneous cloth expansion includes two steps, cloth segmentation and cloth expansion. For cloth segmentation, an optimization algorithm is proposed to find a large homogeneous area on clothes, and use it as a realistic cloth cell. As shown in Fig. 3, we first crop the clothes area, and use a model trained on MSMT17 [30] by QAConv 2.0 [18] to extract the layer2 feature map (48 \u00d7 16) of this clothes image. The purpose of the QAConv model is to extract discriminant feature maps to find homogeneous cells, so as to reduce the influence of image noises. Then, square blocks of various scales are defined on the feature map. Within each block, the average and standard deviation of the feature values are computed, as follows:",
+                                "where k denotes the kth block, n k is the number of elements in that block, x k i \u2208 R d is the feature vector of the ith element in block k, with d = 512 dimensions, and j denotes the jth dimension. Note that the standard deviation is computed per feature channel. This value estimates the variations within each block, and thus reflects how homogeneous the cloth is within that block. Furthermore, we would also like the selected block to be as large as possible. Therefore, we further compute the area A k of each block k, and define a ratio R as our objective function for the optimization problem, as follows:",
+                                "where K denotes the number of blocks. By optimizing the above objective, we obtain a cloth area, with textures within it as homogeneous as possible, and with the area as large as possible. Then, we locate this block on the input clothes image and crop it, resulting in a patch which we call cloth cell. Appendix Fig. I shows some cloth cells thus obtained."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Cloth Expansion",
+                            "paragraphs": [
+                                "As described above, the homogeneous cloth expansion is applied for both regular UV maps and irregular UV maps. For regular UV maps, it is used to fill the back side of the clothes area, as well as the background. Since we already apply the registered clothes mapping for the frontal side of the clothes on regular UV maps, there exists a scale alignment problem for the cloth cell to be filled on the same UV map. Therefore, to maintain the consistency of the texture of the clothes, we need to scale the homogeneous cloth cell.",
+                                "As shown in Fig. 3, let W c and H c be the width and height, respectively, of the clothes image, W a and H a be the width and height, respectively, of the cropped cloth cell from the clothes image, W t and H t be the width and height, respectively, of the target area of the clothes after registered mapping, then, W s and H s , the width and height, respectively, of the cell to be scaled can be computed as follows:",
+                                "Then, the scaled cloth cell is expanded on the whole UV map besides the registered clothes mapping area, by alternating flipping and tiling. As for irregular UV maps, since there is no reference of the scale, we simply use the original shape of the homogeneous cloth cell to flip and tile until fully fill the whole UV map, as shown in Fig. 3.",
+                                "Note that besides the homogeneous cloth expansion , a simple way is to resize the cloth cell directly as a UV map, as done in RandPerson and UnrealPerson. However, simply resizing the cloth cells may result in blur textures and unrealistic patterns, as compared in Appendix D."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Similarity-Diversity Expansion",
+            "paragraphs": [
+                "We use both DeepFashion (Apache License 2.0) [19] and DeepFashion2 [9] images for our virtual data creation. Through the pre-processing steps, there are still tens of thousands of images that are qualified and can be cloned to virtual characters. However, because of the enormous volume of images and repeating images of the same person, using these images directly to create characters is not efficient. To address this, two principles are considered. First, the more diverse samples, the better generalization performance should be. Second, similar person images are able to make the model training pay more attention to subtle differences. According to [33], similar characters as hard samples take a positive effect for person re-identification with large number of identities and cameras. Therefore, we propose a similarity-diversity expansion strategy to scale up virtual character creation while improving along both the similarity and diversity aspects, as illustrated in Fig. 4. By clustering person images, we can create similar characters from the same cluster, while increase diversity by including more and more clusters. This way, the created characters can expand densely in similarity and diversely in population. Specifically, this strategy first applies DBSCAN [7] to cluster person images, then it samples a certain number of images per cluster, and finally clones outfits from these images for 3D character generation. In this way, we can generate similar characters in the same cluster and diverse characters with different clusters 5 .",
+                "For the clustering, we use the same model trained on MSMT17 [30] by QAConv 2.0 [18] to extract feature maps and compute similarity scores between person images. Then, DBSCAN is applied, with different parameters to control the degree of similarity. Specifically, to remove repeating persons, we set =0.4 to cluster the same person with the same outfits. Fig. 5a shows two examples where images from the same cluster are with the same person. Next, we select one image per cluster (closest to the cluster center) and remove other redundant images. Together with other images failed to be clustered (with label -1), the second round of clustering is performed, with =0.5. As shown in Fig. 5b, this time images from the same cluster are visually similar but generally from different persons.",
+                "Finally, we select seven images (five for training and two for testing) per cluster to generate characters. Following RandPerson [29], these characters are imported into Unity3D to render synthesized person images. We implement some adjustments to improve the rendering, as detailed in Appendix E. Accordingly, we create 5,621 characters with 887,766 images, as the ClonedPerson dataset, with 763,953 images from 4,826 characters for training, and 123,813 images from 795 characters for testing. The Statistics of the dataset are shown in Table 1. We summarize the details and statistics of each step in our pipeline in Appendix F. Fig. 4 and Fig. 7c (more in the Appendix) show some characters created in ClonedPerson."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "EXPERIMENTS",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Datasets",
+                    "paragraphs": [
+                        "Three real-world person re-identification datasets, CUHK03 [15], Market-1501 [35], and MSMT17 [30] "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Methods",
+                    "paragraphs": [
+                        "The validation of the proposed ClonedPerson is through person re-identification experiments. We mainly consider two tasks, generalizable person re-identification [12,16,32], and unsupervised domain adaptation (UDA). We apply QA-Conv 2.0 [18] and TransMatcher [17] for the former, and SpCL [10] for the latter. All of them are under the MIT License. We keep the same settings for each method.",
+                        "All evaluations follow the single-query evaluation protocol [8]. We use the Cumulative Matching Characteristic (CMC) [22], especially the Rank-1 accuracy, and the mean Average Precision (mAP) [24] as the performance metrics."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Generalizable Person Re-Identification",
+                    "paragraphs": [
+                        "The mAP results of direct cross-dataset evaluation are shown in Table 2 comparing real-world datasets with QA-Conv 2.0, and Table 4 comparing synthetic datasets with QAConv 2.0 and TransMatcher. Rank-1 results are reported in Appendix Table C. In overall, ClonedPerson achieves the best performance, surpassing existing datasets of both synthetic and real-world. The better performance over existing real-world datasets further confirms the findings in [29] and [33]. Besides, ClonedPerson is much better than Un-realPerson on CUHK03 and Market-1501, while they are comparable on MSMT17. Note that scenes used by Unre-alPerson are more large and realistic than ours, due to the powerful UE4 engine. Besides, UnrealPerson has ten more cameras than ClonedPerson. Note also that, by comparing to both full set and subset results of RandPerson and Unre-alPerson, it is clear that ClonedPerson's better performance is not because it is larger, but because of its capability of cloning the whole outfits from person images.",
+                        "Moreover, by comparing RandPerson * to RandPerson, the new rendering settings are more effective. Besides, compared to RandPerson * with the same rendering setting, ClonedPerson has gained an averaged improvement of about 2% in mAP. This is encouraging since ClonedPerson has only 4,826 identities, compared to 8,000 in RandPerson.",
+                        "Furthermore, with the same learned QAConv models in Tables 2 and4, we also evaluate their performances on  the ClonedPerson testing set, with results shown in Table 3. First, with within-dataset evaluation, QAConv achieves 91.1% in Rank-1 and 68.9% in mAP, indicating that this synthetic domain can be reasonably fitted by a representative method. Second, with cross-dataset evaluation, it can be seen that all models trained on real-world datasets perform not satisfactory on ClonedPerson, indicating that ClonedPerson is quite different and challenging. Nevertheless, it can still be observed that MSMT17 and Market-1501 are more diverse for generalization than CUHK03."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Unsupervised Domain Adaptation",
+                    "paragraphs": [
+                        "As With ClonedPerson as target dataset, the results are shown in Table 3. Similar as cross-dataset evaulation, the UDA results on ClonedPerson are also poor. Furthermore, we also conduct an unsupervised learning task on Cloned-Person by SpCL, as shown in Table 3. Again, the results are poor. Therefore, it appears that, for SpCL, realworld source training data does not help much in domain adaptation to ClonedPerson, and thus the poor performance  is mainly due to the unique challenges in ClonedPerson for clustering-based identity label reasoning. For example, there are a large number of diverse cameras and a lot of similar persons created by the proposed similarity-diversity expansion strategy. Consequently, though ClonedPerson is a synthesized dataset, it may provide a good test bed for both domain generalization and domain adaptation, and challenge researchers in developing more effective algorithms."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Comparison of Different Generation Settings",
+                    "paragraphs": [
+                        "Fig. 6 shows performance (averaged Rank-1 and mAP of the three real-world testing datasets) with different character scaling up methods, including different settings of the proposed similarity-diversity expansion strategy, and a straightforward random scaling up strategy.",
+                        "After the clustering procedure described in Sec. 4, we obtain 968 clusters. Then, first, we use all the clusters for maximum diversity, and select different numbers of images per cluster for experiments, indicating increasing similarity. Fig. 6a shows the performance. As the number of selected images increases, the performance clearly increases. Therefore, it proves that creating similar persons is indeed important for discriminant model learning, since it has to pay more attention to fine details of characters. However, it is saturating when the number of images per cluster reaches five. Therefore, to avoid data redundancy and improve efficiency, we select five images per cluster for the training set, and treat the remaining as a separate testing set.",
+                        "Next, we keep the similarity level consistent, with five images per cluster, and select different numbers of clusters for experiments, indicating increasing diversity. As Fig. 6b shows, the performance increases as the number of clusters increases, which aligns with our expectations that performance raises as the diversity increases.",
+                        "However, the adjustment of diversity and similarity will inevitably cause changes in identities, which might influence performance. Therefore, we keep the number of identities consistent by balancing the variation of similarity and diversity. That is, the selected clusters are gradually reduced when the number of images per cluster increases. The results are shown in Fig. 6c. The performance fluctuates in a small range within 0.3%, indicating that both similarity and diversity are important in our virtual data creation.",
+                        "Finally, we also compare the random creation method that randomly selects person images for texture cloning and character creation before our clustering step. Fig. 6d shows the comparison of this random creation method to our strategies in Fig. 6a and Fig. 6b. From the results it is clear that with random creation after 3,000 characters the performance is saturating. In contrast, the proposed similarity-diversity expansion strategy is much more efficient in scaling up the virtual character creation, especially with larger number of identities.",
+                        "Therefore, the above analysis proved that the similaritydiversity expansion is effective and efficient in scaling up the virtual character creation, and is potentially useful in creating an even larger and effective dataset when more person image sources are considered, considering the trend in Fig. 6b. In contrast, in UnrealPerson [33] the conclusion is that it can only achieve the best performance with 3,000 characters, but more characters do not help. This is also verified in our experiments with UnrealPerson in Tab. 4. real clothes textures, most of its created characters do not match real-life clothes due to the scale alignment issue of cloth patterns. In contrast, thanks to the designed cloning pipeline, the ClonedPerson characters are more realistic and dressed more like real-life persons. Furthermore, Fig. 8 shows a qualitative comparison between models created by our method and HPBTT [34]. It can be observed that characters created by the proposed method have clearer and sharper clothes textures, and better back-view looking of the clothes, than that generated by HPBTT. Besides, from the results shown in the first row, it can be seen that in ClonedPerson the clothes category is preserved, while HPBTT fails to deal with long skirts."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "CONCLUSION",
+            "paragraphs": [
+                "This paper contributes an automatic approach to clone the whole outfits from real-world person images to virtual 3D characters. Two critical cloning methods are proposed, registered clothes mapping and homogeneous cloth expansion. As a result, these characters bridge the gap between synthesized and realistic persons, and so models trained by our synthesized persons have better generalization ability for person re-identification. In addition, a similarity-diversity expansion strategy is proposed to scale up virtual characters. We show that similarity can help improve model's discrimination, while diversity can improve the generalization ability of the model. In the future, we could exploit more in developing different types of clothes models and exploit more data sources. Moreover, we show some limitations of this research in the Appendix."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A. Introduction",
+            "paragraphs": [
+                "Due to space limits, we are not able to explain everything in detail in the main paper. In this Appendix, we further present more details of our implementations, and demonstrate more illustrations to explain our design choices. Besides, we present more experimental results for further understanding.",
+                "All methods used and designed in the project are listed in Tab. A, including existing methods, adapted methods, and the proposed methods. For example, we adapted some existing methods in the person image pre-processing stage to help cherry-pick best-viewing person images and determine clothes positions, categories and clothes keypoint locations. At the same time, we also propose some new methods, such as Registered Clothes Mapping, Homogeneous cloth Expansion and Similarity-Diversity Expansion, to achieve the goal of mapping real clothes to virtual people. Finally, we create the ClonedPerson dataset that can improve the generalization performance of person re-identification."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.1. Pedestrian detection",
+            "paragraphs": [
+                "Our target is to clone the full-body outfits from realworld person images to virtual 3D characters. However, considering the variety of clothing images in real life, we need to avoid images of standalone clothes and incomplete person images. Therefore, we apply a person detection model, Pedestron [3], to detect qualified person images. We keep the original configuration of the Pedestron [3] and set the detection threshold to be 0.8 to avoid images of standalone clothes and incomplete person images. Different situations of person images are shown in Fig . A. Furthermore, we set the area of the detected bounding boxes to be at least 20% of the input image to remove low-resolution persons and some false positives. The detected person images are cropped for the following pose detection procedure.",
+                "Characters in some existing synthetic datasets are dressed in random collocation, such as in RandPerson [11] and UnrealPerson [12]. However, random collocation sometimes creates incongruous characters, as shown in Fig. B. The left side shows person images and characters created by the proposed cloning method. The right side shows characters created by randomly combining some upper-body and lower-body clothes. We can see that the collocation on the right is inconsistent. Therefore, the use of person detection in localizing full-body person images is also for the purpose of cloning the full-body outfits from real-world person images to virtual 3D characters. As a result, the proposed method follows the original collocations of real-life persons, and so the sample distributions of our data would be more consistent with real-life persons."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.2. Person view qualification by pose detection",
+            "paragraphs": [
+                "After person detection, another problem is that person images may have different viewpoints, such as frontal view, back view, and side view. Furthermore, the frontal view images are divided into two situations: occluded and nonoccluded. For our purpose, back-view, side-view, and occluded front-view images are all incomplete displays of clothes, so they are regarded as noisy data. To reduce these noisy data, we use person pose estimation model for automatic judgment. Specifically, we apply the HRNet [9] model from MMDetection [1] to do person pose estimation. It is trained on the COCO dataset [6]. HRNet predicts 17 body keypoints and their visibility probabilities, from which we use 12 keypoints on the body, including shoulders, elbows, hands, hips, knees, and feet. According to the positions of the shoulders, back-view images could be classified. With the width-to-height aspect ratio of the upper body, side-view images could be distinguished. Based on the position of hands and elbows, we can identify occluded images. The definition and locations of the specific keypoints used in our pipeline are shown in Fig. C(1). Then, we can classify different situations according to the following rules:",
+                "1) Back view. The right shoulder (P 6) is on the right side of the left shoulder (P 5) on the image.",
+                "2) Side view. The width to height aspect ratio W/H of the person's upper body is less than 0.3.",
+                "3) Occluded6 . Any hand or elbow point (P 7, P 8, P 9, P 10) is in the upper body area (the area surrounded by P 6, P 5, P 11, and P 12) or the lower body area (the area enclosed by P 12, P 11, P 13, and P 14).",
+                "For the width-to-height aspect ratio of the upper body (Rule 2), as shown in Fig. C(1) and Fig. C(3), we consider the Euclidean distance between shoulders (P 5 and P 6) as the upper-body width W , and that between the center of the shoulder (the middle point of P 5 and P 6) and the center of (1) Qualified.",
+                "(2) Back-view.",
+                "(3) Side-view.  "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "C. Registered Clothes Mapping",
+            "paragraphs": [
+                "With 3D clothes models available in the MakeHuman community, we obtain some clothes models with regular UV maps, where clothes appear in regular shapes and structures, as Fig. E(2) shows. With these regular UV maps, it is possible to apply Registered Clothes Mapping to map real-world clothes textures to virtual models. However, the structure of some UV maps is not clear, so we need a way to find out its structure.",
+                "Changing the UV map will change the appearance of the 3D model because there is a correspondence between the UV map and the model. As Fig. F shows, firstly, we use a pure black image as the UV map, and get the model's frontview image as a reference image. Next, a 50 \u00d7 50 white square is used to traverse the UV texture map and get many corresponding front-view images as response images. Then, by comparing these response images and the reference image, we could find out which area in UV maps would be mapped to the front of the model. Finally, by stacking these squares, we can get the approximate area of the texture on the front of the model. Fig. F shows some frontal areas founded by this method. Accordingly, different region division and keypoint labeling and mapping rules are designed according to different structures of the UV maps.",
+                "Multi-view strategy. Note that We aim at developing a general system that requires only one single image, as multi-view images are not always available. However, when multi-view images are available as inputs, it is quite straightforward to integrate them into different parts of regular UV maps. An example is shown in  (1) Eight clothes types with labeled keypoints.",
+                "(2) Regular UV maps where clothes appear in regular shapes and structures.",
+                "(3) Irregular UV maps. "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "D. Homogeneous Cloth Expansion",
+            "paragraphs": [
+                "As discussed in the main paper, to generate clothes textures for irregular UV maps, and textures on regular UV maps corresponding to invisible person parts, we further design a homogeneous cloth expansion method to find a homogeneous area on clothes as a realistic cloth cell, and expand the cell to fill the UV map. Fig. I shows some examples of the optimized cloth cells by the proposed algorithm. From these examples, we can see that the proposed method is able to find a homogeneous cloth patch as large as possible.",
+                "Besides the proposed homogeneous cloth expansion method, given a cropped cloth cell, a simple way to create a UV map is to resize the cloth cell directly as a UV map, as proposed in RandPerson [11], and also used in UnrealPerson [12]. However, simply resizing the cloth cells may result in blur textures and unrealistic patterns. For example, Fig. J shows a comparison between resizing and the proposed expansion methods. As can be seen, characters created by the proposed expansion method have more realistic textures, while those created by resizing are usually blur. Besides, textures created by resizing usually do not match the pattern scale of the original clothes, and thus are not able to represent the original clothes. This can also be observed from synthesized images of UnrealPerson . In contrast, the proposed expansion method usually has a better consistency of pattern scales.   "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "E. Unity3D Simulation and Rendering",
+            "paragraphs": [
+                "As for the rendering process, we follow RandPerson [11] for the Unity3D environment settings, including the scenes, the configuration of camera networks and character movements, video capturing, and image cropping. In addition, we implement some adjustments to improve the rendering: Camera filter. We set post-processing effects for some cameras to increase the imaging variations and make the data more diverse. Post-processing effects include color grading, bloom, grain, and vignette provided in Unity3D.",
+                "Actions. To make the generated data closer to the realworld data, we remove the running and uncommon walking actions in RandPerson. Instead, we include the situation of hanging out in place, allowing the character to stand in place and move hands or turn around, enriching the data diversity.",
+                "Scenes and cameras. The number of cameras in each scene should be expanded to increase rendering efficiency and viewpoint diversity. Since some scenes in RandPerson are too small to expand cameras, we select five out of 11 scenes in RandPerson (scene2, 3, 5, 6, and 10) and create a new scene ourselves to get more complex lighting. We expand the number of cameras in each scene to four, making each scene's proportion in the database more balanced. In total, RandPerson uses 19 cameras in 11 scenes, while we use six scenes with 24 cameras. Fig. K shows the six scenes with 24 cameras we use.",
+                "Image cropping. We make further improvements with RandPerson's image cropping strategy by introducing random disturbances to the cropping. Cropped persons in RandPerson are mostly complete and well-aligned. However, there are many incomplete and misaligned person images in real-world datasets. Therefore, we make random disturbances to the cropping to simulate partially visible and misaligned person images. Specifically, let the width and height of the original image be W and H, respectively. For each image, with a probability \u03c1=30% we randomly choose to further crop the image. Then, for the selected image with further cropping, we remove the top 0-0.1H part of  With the above setup, the generated 3D characters are imported into Unity3D environments to render and crop person images."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "F. ClonedPerson Dataset",
+            "paragraphs": [
+                "An automatic pipeline is described in the main paper to directly clone the whole outfits from real-world person images to virtual 3D characters. Fig. M shows some examples of 3D characters in ClonedPerson. For the whole process of creating the ClonedPerson dataset, the specific information in each step is detailed as follows. For each image, person detection needs 0.28s, pose detection needs 0.15s, clothes and keypoint detection needs 0.23s, clothes mapping and 3D creation needs 27.65s, and Unity3D rendering needs 16.5s. Therefore, for the whole pipeline each image costs 44.8s in total.",
+                "For training clothes detection, we use 191k diverse images of 13 popular clothing categories from DeepFash-ion2 [2]. The clothes keypoint detection training data is composed of DeepFashion2 and crawled clothes images, in which we annotate 17k images manually. After removing the invalid images, we finally select about 10k images of eight clothing categories that we use in this paper to train the clothes detection and clothes keypoint detection models.",
+                "For cloning clothes from real-world person images to virtual characters, we use images from both DeepFashion [7] and DeepFashion2, with a total of 409k images as our source data. By employing person detection, 146k person images are selected which contain detected persons. Then, 83k images are qualified by viewpoint judgment employing pose detection. Among them, 65k images are successfully detected with clothes bounding boxes and categories, as well as clothes keypoint positions.",
+                "In the clustering stage, we use eps=0.4 to remove 29k images due to repeating persons with the same outfits. Then, we set eps=0.5, and obtain 968 clusters with 6,340 images to create characters. Among the valid 968 clusters, we use all of the clusters and select seven images in each cluster to create our 3D characters. Since some clusters are less than seven images, finally, we get 5,621 person images as inputs and create 5,621 characters accordingly by the proposed method. After rendering and cropping, we obtain 887,766 images for the 5,621 virtual persons, and this forms our ClonedPerson dataset. Among them, we use 763,953 images from 4,826 characters for training, and 123,813 im-ages of 795 characters for testing.",
+                "Besides person re-identification, our data can also be used for other tasks e.g. person detection, person keypoint detection, multi object tracking (with videos), multi-camera multi object tracking, etc. Fig. N shows some examples of person keypoint detection on real-world images with a model trained on the ClonedPerson dataset, with automatically recorded keypoint annotations."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "G. EXPERIMENTS G.1. Comparison of Different Cropping Strategies",
+            "paragraphs": [
+                "Tab. B shows the performance of different cropping strategies with the cropping probability \u03c1 and side rate \u03c4 as introduced in Appendix E. Firstly, we only change the cropping probability \u03c1. From the results shown in Tab. B, it can be observed that the best result is achieved with \u03c1=30%. Then, we keep \u03c1=30%, and change the side rate \u03c4 . Finally, from Tab. B it can be observed that it achieves the best performance with the cropping probability \u03c1=30% and the side rate \u03c4 =30%. Therefore, the two values are kept as default values."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "G.2. Comparison to Existing Datasets",
+            "paragraphs": [
+                "Due to space limits of the main paper, we report the detailed results of different datasets for different tasks in Tab. C."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "H. Limitations",
+            "paragraphs": [
+                "As summarized below, this research leaves some aspects for improvements.",
+                "(1) Limited virtual character clothes models. The models we used are from the MakeHuman community, where the available models are limited. Because of the limited models, the categories of clothes can be applied are thus limited.",
+                "Prob (2) Limited data source. We mainly use images from DeepFashion and DeepFashion2 datasets to create our virtual characters. This makes the data source not diversified enough. We show a distribution of the DeepFashion and DeepFashion2 images in Fig. O. We use the same model trained on MSMT17 by QAConv 2.0 to compute similarity scores between images, and draw a sample distribution by t-SNE [10]. By this plot, we can find that clothes in DeepFashion datasets are not diversified enough. For example, most of the images are summer clothes in white or black. Therefore, we need to exploit more data sources in the future.",
+                "(3) Only clothes considered. The proposed method only   clones clothes from person images, but is not capable of high-fidelity reconstruction of 3D models from person images. However, our motivation is to create diversified characters with realistic clothing and create a dataset for improved generalization. High-fidelity reconstruction is challenging and not efficient for our purpose. On the other hand, high-fidelity reconstruction of identifiable biometric signatures, e.g. faces, may also raise privacy concerns."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Category Notes Person Detection",
+            "paragraphs": [
+                "Existing Pedestron [3] Pose Detection Adapted",
+                "We used the existing HRNet [9] model from MMDetection [1]. Specific rules are designed based on the detected keypoints to cherry-pick best-viewing person images."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Clothes Detection and Classification Adapted",
+            "paragraphs": [
+                "We trained a model based on Faster-RCNN [8] with the annotated clothes bounding boxes and categories in DeepFashion2 [2]."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Clothes Keypoint Detection Adapted",
+            "paragraphs": [
+                "We annotated clothes keypoints and trained a model based on PIPNet [4]."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Registered Clothes Mapping Proposed",
+            "paragraphs": [
+                "We annotated clothes keypoints on regular UV maps, detected clothes keypoints on person images, and applied the perspective homography method to warp real clothes texture to UV maps."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Homogeneous Cloth Expansion",
+            "paragraphs": [
+                "Proposed A new method is proposed to find a homogeneous area as large as possible on clothes images."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Similarity-Diversity Expansion",
+            "paragraphs": [
+                "Proposed A new method is proposed to scale up virtual character creation.  "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.3. Clothes and keypoint detection",
+            "paragraphs": [
+                "Through Appendix B.1 and Appendix B.2, we obtained images that contain persons' entire bodies and are completely visible. To achieve the mapping from real-world image to virtual character, we need to get the clothes position and type, and positions of the clothing keypoints in the image. Therefore, we further train two models: the clothes detection model and their corresponding key points detection model. "
+            ],
+            "subsections": []
+        }
+    ]
+}

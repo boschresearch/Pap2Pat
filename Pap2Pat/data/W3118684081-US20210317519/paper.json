@@ -1,0 +1,210 @@
+{
+    "id": "https://semopenalex.org/work/W3118684081",
+    "authors": [
+        "Jinfeng Chen",
+        "Yibin Liu",
+        "Ahmed A. Ahmed",
+        "Miyako Inoue",
+        "Jingfei Cheng",
+        "Zhiyuan Hu",
+        "Chun-Xiao Song",
+        "Paulina Siejka-Zieli\u0144ska"
+    ],
+    "title": "Subtraction-free and bisulfite-free specific sequencing of 5-methylcytosine and its oxidized derivatives at base resolution",
+    "date": "2021-01-27",
+    "abstract": "Although various methods have been developed for sequencing cytosine modifications, it is still challenging for specific and quantitative sequencing of individual modification at base-resolution. For example, to obtain both true 5-methylcytosine (5mC) and true 5-hydroxymethylcytosine (5hmC) information, the two major epigenetic modifications, it usually requires subtraction of two methods, which increases noise and requires high sequencing depth. Recently, we developed TET-assisted pyridine borane sequencing (TAPS) for bisulfite-free direct sequencing of 5mC and 5hmC. Here we demonstrate that two sister methods, TAPS\u03b2 and chemical-assisted pyridine borane sequencing (CAPS), can be effectively used for subtraction-free and specific whole-genome sequencing of 5mC and 5hmC, respectively. We also demonstrate pyridine borane sequencing (PS) for whole-genome profiling of 5-formylcytosine and 5-carboxylcytosine, the further oxidized derivatives of 5mC and 5hmC. This work completes the set of versatile borane reduction chemistry-based methods as a comprehensive toolkit for direct and quantitative sequencing of all four cytosine epigenetic modifications.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "The primary DNA sequence of the four-letter alphabets G, C, A, and T forms the genetic information of life on earth. Chemical modifications of DNA bases do not change the underlying sequence, but instead carry an extra layer of information. The first discovered 5-methylcytosine (5mC) is the most studied modified base, and it plays crucial roles in a broad range of biological processes from gene regulation to normal development1 and is regarded as the fifth base. 5-Hydroxymethylcytosine (5hmC) is converted from 5mC by the ten-eleven translocation (TET) family of dioxygenases2; it is enriched in neuronal cells3 and regarded as the sixth base. Further successive TET oxidation results in 5-formylcytosine (5fC) and 5-carboxylcytosine (5caC)4,5, which exist at much lower abundances in the mammalian genome and are regarded as intermediates in the thymine DNA glycosylase (TDG)-base excision repair (BER) active demethylation pathway5. Emerging evidence indicates the stability of these DNA demethylation intermediates6 as well as potential functional roles7.",
+                "Detection and analysis of cytosine modifications has been an intriguing challenge for chemists as well as other scientists. Traditionally, bisulfite sequencing (BS) has been the gold standard for base-resolution and quantitative analysis of 5mC and 5hmC8. Modified BS has also been developed for specific sequencing of 5mC (oxidative bisulfite sequencing, oxBS-seq)9 or 5hmC (TET-assisted bisulfite sequencing, TAB-seq)10. These methods, however, all involve harsh bisulfite treatment, which degrades up to 99% of the DNA11, and reduces sequence complexity by converting unmodified cytosine (~95% of the total cytosine in the human genome) to thymine (T). Recently, bisulfite-free quantitative base-resolution methods have emerged and showed significant advantages over BS12. Among them, APOBEC-coupled epigenetic sequencing (ACE-seq, which detects 5hmC)13 and Enzymatic Methyl-seq (EM-seq, which detects 5mC\u2009+\u20095hmC)14 use an enzymatic deamination step to replace the bisulfite deamination step. While these methods solve the DNA damage issue, they still suffer from the indirect detection issue of BS by converting unmodified cytosine to T. Recently, we developed TET-assisted pyridine borane sequencing (TAPS) based on a pyridine borane reductive decarboxylation and deamination chemistry15,16. In TAPS, 5mC and 5hmC are oxidized by TET proteins to 5caC and reduced to dihydrouracil (DHU) by pyridine borane. DHU is then amplified and sequenced as T during sequencing. TAPS is nondestructive and detects 5mC\u2009+\u20095hmC directly, and it shows improved sequence quality, mapping rate, and coverage compared to BS15.",
+                "5mC and 5hmC provide distinct and antagonistic epigenetic information: 5mC usually marks repressed genes and 5hmC generally marks expressed genes17. To elucidate the interplay between 5mC and 5hmC in various biological processes, it is necessary to distinguish the two modifications. To do that, two assays (e.g. BS and oxBS-seq, BS and TAB-seq, or EM-Seq and ACE-seq) need to be performed and a subtraction between the two assays is usually required to obtain both the true 5mC and true 5hmC information (e.g. BS minus oxBS-seq to get 5hmC, BS minus TAB-seq to get 5mC, or EM-Seq minus ACE-seq to get 5mC)9,10,13. However, subtraction may introduce negative values because of random sampling or systematic error in each experiment and suffer from accumulation of noise from multiple assays, which increases the need for higher sequencing depth18 as well as more effort to perform read filtering and apply statistical tests19. A subtraction-free approach where two assays (e.g. oxBS-seq and TAB-seq) can read out the true 5mC and true 5hmC information directly is desirable. However, so far, no bisulfite-free methods have been shown to deliver that. Previously, we demonstrated the proof-of-principle that the versatility of the borane reduction chemistry for direct and quantitative sequencing of individual cytosine modification on model DNA with Sanger sequencing15. In this study, we further optimize and demonstrate these methods for whole-genome applications, including TAPS with \u03b2-glucosyltransferase (\u03b2GT) blocking (TAPS\u03b2) and chemical-assisted pyridine borane sequencing (CAPS) for whole-genome subtraction-free 5mC-specific and 5hmC-specific sequencing, respectively; and pyridine borane sequencing (PS) for whole-genome sequencing of 5fC and 5caC."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Taps\u03b2 For Bisulfite-Free 5Mc-Specific Sequencing",
+                    "paragraphs": [
+                        "To realize 5mC-specific sequencing, we used \u03b2GT, which is widely used for selective labeling of 5hmC with glucose that enables 5hmC pull-down20 and protection from TET oxidation10 or APOBEC deamination13. We utilized this simple and robust reaction to block 5hmC and then performed TET oxidation and borane reduction on 5mC (Fig.\u00a01a)15. We applied TAPS\u03b2 on mouse embryonic stem cells (mESCs) genomic DNA (gDNA) and validated with spike-in controls with known modifications by high-throughput sequencing. High 5mC conversion rate (97.6% in CpG-methylated lambda DNA, Fig.\u00a01b) and low false-positive rate (0.24% conversion rate on unmodified C, Fig.\u00a01c) were achieved in TAPS\u03b2, which are close to previous TAPS results (96.5% and 0.23%, respectively)15. 5hmC showed only 1.9% conversion rate in TAPS\u03b2 (Fig.\u00a01b) compared to 89.1% in TAPS15. The other two minor cytosine modifications 5fC and 5caC also showed high conversion rate (84.9% and 94.4% respectively, Supplementary Table\u00a01); however, they were ignored in following data analysis due to the negligible amounts existed in the mammalian genome (<0.002% of total cytosine)4. Similar to TAPS15, TAPS\u03b2 showed excellent sequencing quality scores at cytosine/guanine (Supplementary Fig.\u00a01). We observed good correlation between TAPS\u03b2 and published 5mC data of mESCs by reduced representation oxBS-seq (RRoxBS-seq)21 (Pearson\u2019s r\u2009=\u20090.77, Fig.\u00a01d) and whole-genome oxBS-seq22 (Pearson\u2019s r\u2009=\u20090.72, Fig.\u00a01e). In comparison, Pearson correlation coefficients between the reported four RRoxBS-seq replicates were 0.79\u20130.80 (ref. 21). The discrepancy between TAPS\u03b2 and oxBS-seq is likely caused by biological differences, e.g. cell line passages9, rather than systematic bias, given the high correlation between TAPS and TAPS\u03b2 using the same biological sample (Supplementary Fig.\u00a02). TAPS\u03b2 showed much improved sequencing quality evidenced by higher mapping rate (90.7%, Supplementary Table\u00a02) than RRoxBS-seq21 (66.2\u201368.2%) and oxBS-seq22 (21.4\u201326.1%). Notably, TAPS\u03b2 is the first and only bisulfite-free, base-resolution, and quantitative 5mC-specific sequencing method.Fig. 1TAPS\u03b2 for bisulfite-free 5mC-specific sequencing.a Schematic demonstration of TAPS\u03b2. b Conversion rates of TAPS\u03b2 at known 5mCG or 5hmCG positions from CpG-methylated lambda DNA or synthetic spike-in. c False-positive rate of TAPS\u03b2 from 2-kb-unmodified spike-in. d Correlation analysis between TAPS\u03b2 and published RRoxBS-seq dataset at CpGs with the minimal depth of 10. The color scale represents density. e Correlation analysis between TAPS\u03b2 and published oxBS-seq dataset at CpGs with the minimal depth of 10. The Pearson\u2019s r is shown at the top. The raw signal for each CpG was calculated as the ratio between C and the sum of C and T."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Caps For Bisulfite-Free 5Hmc-Specific Sequencing",
+                    "paragraphs": [
+                        "To enable 5hmC-specific sequencing, we turned to chemical oxidization of 5hmC to 5fC, which can also be converted to DHU by borane reduction (Fig.\u00a02a). In our proof-of-principle study, we used potassium perruthenate (KRuO4) previously used in oxBS-seq as the oxidant, which is known to cause DNA damage9. In this study, we utilized potassium ruthenate (K2RuO4), which was used in chemical-assisted C-to-T conversion of 5hmC sequencing (hmC-CATCH) and reported to be more oxidative and less DNA damaging than KRuO4 (ref. 23). We optimized the K2RuO4 oxidation protocol for CAPS as follows: (1) Commonly used double-strand DNA library preparation method was applied instead of the complicated single-strand protocol. (2) A uracil-containing loop-structured NEBNext Adaptor was used in the DNA ligation. Subsequent treatment with USER enzyme (a mix of UDG and Endo VIII) opened the loop, leaving 3\u02b9 and 5\u02b9 phosphate ends that could protect the ligated DNA from oxidative damaging24. (3) Double oxidation was performed on the ligated DNA by adding additional oxidant to the original oxidation reaction, improving the conversion rate of 5hmC to 5fC from 82.8% to 97.2% measured by HPLC-MS/MS (Supplementary Fig.\u00a03). A limitation of both KRuO4 and K2RuO4 oxidation is that they only work on single-strand DNA. Pyridine borane used in TAPS, which is optimized based on double-strand DNA, only showed 65.8% 5hmC-to-T conversion rate on single-strand DNA while 1.3% C-to-T false-positive rate was observed (Supplementary Fig.\u00a04). Instead, we found that another compound, 2-methylpyridine borane (pic-borane), achieved 83.1% 5hmC-to-T conversion rate (Fig.\u00a02b) and 0.72% false-positive rate on single-strand DNA (Fig.\u00a02c), and therefore was chosen as the reducing agent for CAPS. These numbers are similar to the 5hmC-to-T conversion rate and false-positive rate reported in hmC-CATCH (~80% (without pull-down) and 0.6\u20131%, respectively)23.Fig. 2CAPS for bisulfite-free 5hmC-specific sequencing.a Schematic demonstration of CAPS. b Conversion rates of CAPS at known 5mCG or 5hmCG positions from CpG-methylated lambda DNA or synthetic spike-in. c False-positive rate of CAPS from 2-kb-unmodified spike-in. d Fraction of all sequenced read pairs in CAPS and ACE-seq mapped to the reference mouse genome. e Correlation density plot between CAPS, TAB-seq, and ACE-seq in 10-kb bins. The color scale represents density. f Correlation density plot between TAPS\u2212TAPS\u03b2 subtraction and TAB-seq or ACE-seq in 10-kb bins.",
+                        "Next, we applied CAPS on mESCs and detected 1,762,287 5hmC-modified sites. We compared CAPS with the other two whole-genome base-resolution 5hmC sequencing methods: TAB-seq10 and ACE-seq13, using published sequencing data from mESCs. Both TAB-seq and ACE-seq utilize \u03b2GT to protect 5hmC with a glucose from bisulfite or enzymatic deamination and read it\u00a0as C after PCR amplification, while converting both unmodified C and 5mC to T. Bisulfite-based TAB-seq shares the same drawbacks as BS, while ACE-seq partially solves the problem by replacing the harsh chemical reaction with mild APOBEC3A enzymatic deamination. However, ACE-seq still suffers from reduced sequence complexity in the converted genome, which results in low mapping rate (Fig.\u00a02d and Supplementary Table\u00a02), low base quality (Supplementary Fig.\u00a05), and uneven coverage (Supplementary Fig.\u00a06). The low base quality in ACE-seq is caused by the unbalanced CG content in the sequencing libraries similar to WGBS15, while CAPS avoids depletion of cytosines leading to optimal data quality similar to TAPS and TAPS\u03b2. CAPS outperformed TAB-seq and ACE-seq in these sequencing metrics (Fig.\u00a02d and Supplementary Table\u00a02), while showing good correlation with published dataset (Pearson\u2019s r\u2009=\u20090.79 with TAB-seq and 0.67 with ACE-seq, Fig.\u00a02e). On the other hand, 5hmC obtained from TAPS\u2212TAPS\u03b2 subtraction showed an abnormal distribution of modification levels with lower correlation (Pearson\u2019s r\u2009=\u20090.54 with TAB-seq and 0.40 with ACE-seq, Fig.\u00a02f), demonstrating that the subtraction-free method is superior for 5hmC profiling, especially given that 5hmC exists in much lower abundance than 5mC in most non-neuronal tissues and cell lines4, including mESCs (Supplementary Fig.\u00a03a).",
+                        "To globally benchmark different methods by accounting for 5mC and 5hmC states in mESCs, we established the abundance of both modifications (Fig.\u00a03a). Combination of TAPS\u03b2 and CAPS showed a similar pattern to whole-genome BS (WGBS) with TAB-seq or ACE-seq while TAPS\u2212TAPS\u03b2 subtraction overestimated 5hmC sites. Examples were plotted to show results from different approaches, demonstrating that CAPS detected consistent 5hmC sites with TAB-seq and ACE-seq (Fig.\u00a03b and Supplementary Fig.\u00a07). The distribution of 5hmC varied across genomic regulatory elements (Fig.\u00a03c)25\u201327, with particular enrichment at enhancers and insulators28, where CTCF-binding sites were enriched (Fig.\u00a03d). This result is consistent with previous findings that 5hmCs are enriched in enhancers and CTCF-binding sites10,23.Fig. 3Comparison of CAPS with other methods.a Comparison of 5mC and 5hmC levels tiled by 1-kb bins for TAPS\u03b2, CAPS, ACE-seq, and TAB-seq. The levels of unmodified and modified cytosines were estimated by MLML using the direct readout from the method combination shown at the title of each subfigure. b Example of genome browser view on chromosome 4 showing CAPS-detected consistent 5hmC sites when compared with ACE-seq and TAB-seq. c Pie chart shows the overlap of called 5hmCGs with putative genomic regulatory elements. d The relative enrichment of 5hmCG (blue) and random sites (white) at genomic regulatory elements. \u2018Random\u2019 consists of ten random samplings. The mean is shown as the bar height and the error bars denote standard deviation (n\u2009=\u200910 random sampling events). Each dot denotes one random sampling event. The ratios between observed and random are shown at the top."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Ps For Bisulfite-Free 5Fc/5Cac-Specific Sequencing",
+                    "paragraphs": [
+                        "To study the active demethylation pathway, various BS-based21,29\u201331 and bisulfite-free32 methods have also been developed to profile 5fC and/or 5caC modifications. The borane reduction chemistry can be used for direct sequencing of 5fC and 5caC, where 5fC and 5caC are converted to DHU by pyridine borane and read as T after PCR amplification (PS, Fig.\u00a04a). We applied this simple approach to the same mESCs gDNA and demonstrated high conversion rate in 5caC spike-in (93.8%, Fig.\u00a04b) and good conversion rate in 5fC spike-in (76.8%). The low false-positive rate (0.27%, Fig.\u00a04c) in PS lowered the requirement for sequencing depth to distinguish the low abundant 5fC/5caC signals from the background33. We also developed a method for 5caC-specific sequencing in which 5fC was blocked by O-ethylhydroxylamine29 before borane reduction reaction, which we termed pyridine borane sequencing for 5caC (PS-c, Fig.\u00a04a). PS-c achieved a low conversion rate of 15.2% on 5fC (Fig.\u00a04d) while the high conversion rate on 5caC (95.3%) and the low false-positive rate (0.22%, Fig.\u00a04e) were not affected. Even with the low false-positive rates of PS and PS-c, it remains challenging to detect 5fC and 5caC in whole-genome sequencing due to their low level. Instead, we focused on regulatory regions27,34 and found that 5fC/5caC signals were enriched at H3K4me1, H3K4me3 regions (Fig.\u00a04f, g), promoters and enhancers compared to repressed regions or heterochromatin (Supplementary Fig.\u00a08), which is consistent with previous enrichment-based 5fC sequencing result29. Our base-resolution data also revealed the 5fC/5caC modification on Nanog, a pluripotency regulator (Supplementary Fig.\u00a09), which was previously reported based on an enrichment-based method32. These results suggest that PS can capture the genuine 5fC/5caC signals even in a low 5fC level sample.Fig. 4PS for bisulfite-free 5fC/5caC-specific sequencing.a Schematic demonstration of PS and PS-c. b Conversion rate of PS at known 5mC, 5hmC, 5fC, and 5caC positions in spike-in controls. c False-positive rate of PS from 2-kb-unmodified spike-in. d Conversion rate of PS-c at known 5mC, 5hmC, 5fC, and 5caC positions in spike-in controls. e False-positive rate of PS-c from 2-kb-unmodified spike-in. f, g Average 5fC/5caC signal in\u00a0the\u00a06-kb regions flanking the centers of H3K4me3 (f) and H3K4me1 (g) peaks\u00a0produced by the ENCODE Project Consortium.\u00a0On the x-axis, 0 denotes the peak center.",
+                        "Bisulfite and various bisulfite-free methods are known to have systematic differences in sequencing due to different chemistries and detection mode (indirect vs direct)14,15. When comparing various modifications, it is therefore ideal to have them derived from the same family of methods to minimize bias. In this study, we present a suite of borane reduction chemistry-based methods for direct and quantitative sequencing of all four cytosine modifications in mESCs, providing a valuable resource for studying DNA modifications in the popular epigenetics model (Table\u00a01). By replacing harsh bisulfite treatment with mild borane reduction reaction, we achieved higher sequencing quality and more comprehensive methylome analysis. Independent identification of 5mC and 5hmC by subtraction-free TAPS\u03b2 and CAPS methods could provide insight into the distribution and function of the two modifications. The simple and mild borane reduction sequencing methods PS and PS-c could facilitate studies of the dynamics of active DNA demethylation processes. Together, they offer the most comprehensive solution for epigenetic sequencing of cytosine modifications.Table 1Base changes in borane reduction chemistry-based methods.BaseTAPSTAPS\u03b2CAPSPSPS-cCCCCCC5mCTTCCC5hmCTCTCC5fCTTTTC5caCTTTTTC-to-T transitions marked in bold were recognized as modified sites."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Preparation Of Spike-In Dna",
+                    "paragraphs": [
+                        "CpG-methylated lambda DNA was produced from unmethylated lambda DNA (Promega) with M.SssI enzyme (NEB) treatment. 2-kb-unmodified spike-in was produced by PCR amplification from the pNIC28-Bsa4 plasmid (Addgene, cat no. 26103). Synthetic spike-in with 5mC and 5hmC modifications was produced by annealing and extension of one oligo containing 5mC and another oligo containing 5hmC (IDT). 5fC spike-in was produced by an annealing and extension method with 5-formylcytidine-5\u02b9-triphosphate (5-fCTP, TriLink BioTechnologies). 5caC spike-in was produced by PCR amplification from the pNIC28-Bsa4 plasmid, then methylated with M.SssI enzyme (NEB) and oxidized with two rounds of mTet1CD treatment. Detailed preparation protocols and sequences of the spike-in DNA can be found in previous publication15 and Supplementary Table\u00a03."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Mescs Culture And Gdna Extraction",
+                    "paragraphs": [
+                        "E14 mESCs were gifted from Professor Skirmantas Kriaucionis and cultured on gelatin-coated plates in Dulbecco\u2019s Modified Eagle Medium (DMEM) (Invitrogen) supplemented with 15% FBS (GIBCO), 2\u2009mM l-glutamine (Gibco), 1% non-essential amino acids (Gibco), 1% penicillin/streptavidin (Gibco), 0.1\u2009mM \u03b2-mercaptoethanol (Sigma), 1000\u2009units/mL LIF (Millipore), 1\u2009\u00b5M PD0325901 (Stemgent), and 3\u2009\u00b5M CHIR99021 (Stemgent). mESCs were maintained at 37\u2009\u00b0C and 5% CO2 and passaged every 2 days. The gDNA was prepared by cell harvesting with centrifugation for 5\u2009min at 1000\u2009\u00d7\u2009g and room temperature, and DNA extraction with Quick-DNA Plus kit (Zymo Research) according to the manufacturer\u2019s protocol."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Expression And Purification Of Mtet1Cd",
+                    "paragraphs": [
+                        "mTet1CD was expressed in Expi293F cells from mTet1CD insert (NM_001253857.2, 4371-6392) with N-terminal Flag-tag cloned into pcDNA3-Flag between KpnI and BamH1 restriction sites15. The cells were grown for 48\u2009h at 37\u2009\u00b0C, 170 r.p.m., and 5% CO2, then harvested by centrifugation, re-suspended in the lysis buffer containing 50\u2009mM Tris\u2013Cl pH 7.5, 500\u2009mM NaCl, 1\u00d7 cOmplete Protease Inhibitor Cocktail, 1\u2009mM PMSF, 1% Triton X-100, and incubated on ice for 20\u2009min. The cell lysate was then clarified by centrifugation for 30\u2009min at 30,000\u2009\u00d7\u2009g and 4\u2009\u00b0C. ANTI-FLAG M2 Affinity Gel was used to purify the supernatant and eluted with buffer containing 20\u2009mM HEPES pH 8.0, 150\u2009mM NaCl, 0.1\u2009mg/mL 3\u00d7 Flag peptide, 1\u00d7 cOmplete Protease Inhibitor Cocktail, 1\u2009mM PMSF. The collected fractions were concentrated and buffer exchanged to the final buffer containing 20\u2009mM HEPES pH 8.0, 150\u2009mM NaCl, and 1\u2009mM dithiothreitol, then mixed with glycerol (30% v/v) for storage at \u221280\u2009\u00b0C."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Preparation Of Mescs Gdna And Sequencing Library Construction",
+                    "paragraphs": [
+                        "mESCs gDNA was spiked with 0.5% of methylated lambda DNA, 0.025% of 2-kb-unmodified and 0.025% of 2-kb-caC spike-in controls. For CAPS approach, gDNA was fragmented by Covaris M220 instrument and size-selected to 200\u2013400\u2009bp using Ampure XP beads (Beckman Coulter). For other approaches, gDNA was fragmented and size-selected to 300\u2013500\u2009bp; 0.01% of synthetic oligo with N5mCNN/N5hmCNN sequences and 0.01% of synthetic oligo with 5fC modifications were added after size-selection. One-hundred nanograms of fragmented DNA was used for end-repair/A-tailing and ligation of NEBNext Adaptor (NEB) with KAPA Hyper kit (KAPA) according to the manufacturer\u2019s protocol. The uracil in the loop of NEBNext Adaptor was removed by adding 3\u2009\u03bcL of USER enzyme (NEB) to the ligation reaction and incubating for 15\u2009min at 37\u2009\u00b0C. Then the reaction was purified with 0.8\u00d7 Ampure XP beads according to the manufacturer\u2019s protocol. For CAPS approach, 80% acetonitrile:H2O was used instead of 80% ethanol:H2O during the beads purification step."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Taps With \u0392gt Blocking (Taps\u03b2)",
+                    "paragraphs": [
+                        "Ligated DNA was added to a 50-\u03bcL reaction containing 50\u2009mM HEPES buffer (pH 8), 25\u2009mM MgCl2, 200\u2009\u03bcM UDP-Glc (NEB), and 10\u2009U of \u03b2GT (Thermo Fisher) for 1\u2009h at 37\u2009\u00b0C. 5hmC-blocked DNA was purified with Ampure XP and then incubated in 50\u2009\u00b5L oxidation reaction containing 50\u2009mM HEPES buffer (pH 8.0), 100\u2009\u00b5M ammonium iron (II) sulfate, 1\u2009mM \u03b1-ketoglutarate, 2\u2009mM ascorbic acid, 1\u2009mM dithiothreitol, 100\u2009mM NaCl, 1.2\u2009mM ATP, and 4\u2009\u03bcM mTet1CD for 80\u2009min at 37\u2009\u00b0C. Then 0.8\u2009U of Proteinase K (NEB) was added to the reaction and incubated for 1\u2009h at 50\u2009\u00b0C. Oxidized DNA was purified with Ampure XP beads and then input into another round of TET oxidation in order to achieve complete oxidation. The double-oxidized DNA was added to a 50-\u03bcL reaction containing 600\u2009mM NaAc (pH\u2009=\u20094.3) and 1\u2009M pyridine borane (Alfa Aesar). The reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer (Eppendorf) for 16\u2009h and purified by Zymo-IC column (Zymo Research) with Oligo Binding Buffer (Zymo Research)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Chemical-Assisted Pyridine Borane Sequencing (Caps)",
+                    "paragraphs": [
+                        "Potassium ruthenate (K2RuO4) was prepared as previously described by Zeng et al.23 and stored at \u221220\u2009\u00b0C in a refrigerator as 10\u00d7 oxidant; 2\u2009M pic-borane (Sigma) was prepared by dissolving the solid in EtOH. Before 5hmC oxidation, ligated DNA was purified with Micro Bio-Spin P-6 SSC column (Bio-Rad, washed five times with water before use). The purified DNA was denatured in 20\u2009\u03bcL solution containing 0.05\u2009M NaOH for 30\u2009min at 37\u2009\u00b0C; 10\u00d7 oxidant was diluted to 1\u00d7 with distilled water and 2.5\u2009\u03bcL of 1\u00d7 oxidant was added to the denatured DNA. The oxidation reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer for 1\u2009h. Then additional 2.5\u2009\u03bcL of 1\u00d7 oxidant was added to the same reaction and incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer for another hour. The oxidized DNA was purified by a Bio-Rad Micro Bio-Spin P-6 SSC column, and added to a reaction containing 0.6\u2009M MES (Sigma, pH 5.2) and 0.2\u2009M pic-borane. The reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer for 2\u2009h and purified by Zymo-IC column with Oligo Binding Buffer."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Quantification Of 5Mc, 5Hmc, And 5Fc Level By Hplc-Ms/Ms",
+                    "paragraphs": [
+                        "Control and oxidized gDNA samples were digested into nucleosides by 2\u2009U of Nuclease P1 (Sigma-Aldrich) and 10\u2009nM deaminase inhibitor erythro-9-amino-\u03b2-hexyl-\u03b1-methyl-9H-purine-9-ethanol hydrochloride (Sigma-Aldrich) at 37\u2009\u00b0C for overnight and then 6\u2009U of alkaline phosphatase (Sigma-Aldrich) and 0.5\u2009U of phosphodiesterase I (Sigma-Aldrich) at 37\u2009\u00b0C for 3\u2009h. After filtering with Amicon Ultra-0.5\u2009mL 10K centrifugal filters (Merck Millipore), the digested samples were subjected to a ZORBAX Eclipse Plus C18 column (2.1\u2009\u00d7\u2009150\u2009mm2, 1.8-\u03bcm, Agilent). HPLC\u2013MS/MS analysis was carried out with 1290 Infinity LC Systems (Agilent) coupled with a 6495B Triple Quadrupole Mass Spectrometer (Agilent). Detailed HPLC-MS/MS program could be found in previous publication15."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Pyridine Borane Sequencing (Ps)",
+                    "paragraphs": [
+                        "Ligated DNA was added to a 50-\u03bcL reaction containing 0.6\u2009M NaAc (pH\u2009=\u20094.3) and 1\u2009M pyridine borane. The reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer for 16\u2009h and purified by Zymo-IC column with Oligo Binding Buffer."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Pyridine Borane Sequencing For Carboxylcytosine (Ps-C)",
+                    "paragraphs": [
+                        "Ligated DNA was added to a 50-\u03bcL reaction containing 10\u2009mM O-ethylhydroxylamine (Aldrich) and 100\u2009mM MES buffer (pH 5.0). The reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. for 4\u2009h in a ThermoMixer and purified with Ampure XP beads. 5fC-blocked DNA was then added to a 50-\u03bcL reaction containing 0.6\u2009M NaAc (pH\u2009=\u20094.3) and 1\u2009M pyridine borane. The reaction was incubated at 37\u2009\u00b0C and 850\u2009r.p.m. in a ThermoMixer for 16\u2009h and purified by Zymo-IC column with Oligo Binding Buffer."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Pcr Amplification Of Converted Dna And Sequencing",
+                    "paragraphs": [
+                        "Converted DNA was amplified with KAPA HiFi HotStart Uracil+ ReadyMix PCR Kit (KAPA) for 4 cycles according to the manufacturer\u2019s protocol with minor modification. Dual index primers in NEBNext Multiplex Oligos for Illumina were used instead of the Library Amplification Primer Mix. The PCR product was purified with 1\u00d7 Ampure XP beads and quantified with Qubit dsDNA HS Assay Kit (ThermoFisher). When starting with 100\u2009ng of fragmented DNA for library construction, typical final library yield should be >30\u2009nM after 4 cycles of PCR amplification. Libraries were sequenced on NovaSeq 6000 (150\u2009bp paired end) with no PhiX added."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Data Preprocessing",
+                    "paragraphs": [
+                        "Sequencing reads were trimmed with Trim Galore! v0.3.1 (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) to remove adaptors and low-quality bases. Trimmed reads were mapped to a genome combining spike-in sequences and the mm9 mouse genome using BWA mem v.0.7.12 (ref. 35). PCR duplicates were removed using MarkDuplicate function of Picard v2.3.0 (http://broadinstitute.github.io/picard/). Reads with MAPQ\u2009<\u200910 were excluded from methylated site calling. Modified bases were called by asTair v3.3.1 (ref. 15). Raw signals were calculated as the ratio between C and C+T at each site. Regions known to be prone to mapping artifacts (https://sites.google.com/site/anshulkundaje/projects/blacklists)36,37 and known single nucleotide variants (http://epigenetics.hugef-research.org/data.php)38 of the E14 cell line were used to exclude those overlapping sites from subsequent analysis. The mapping rate was calculated as the ratio between the number of properly mapped read pairs (MAPQ\u2009>\u200910) and the number of trimmed read pairs by Samtools39. The base quality was visualized by the phred function of asTair15."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Published Datasets",
+                    "paragraphs": [
+                        "We used the following published datasets: TAPS data and WGBS data (GSE112520)15, RRoxBS-seq data (GSM1364069)21, oxBS-seq data (GSE112875)22, TAB-seq data (GSE36173)10, and ACE-seq data (GSE116016)13. The TAB-seq data were reprocessed to obtain the full list of modified and unmodified sites. The sequencing reads were downloaded and trimmed by Trim Galore! v0.3.1 (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). The trimmed reads were aligned to mm9 using Bismark v0.18.1 (ref. 40) and Bowtie v2.2.1 (ref. 41). PCR duplicates were removed from the mapped bam file using MarkDuplicate function of Picard v2.3.0 (http://broadinstitute.github.io/picard/). The reads with over three non-conversion sites were filtered using the filter_non_conversion function of bismark as previously described10. The methylation sites were called by bismark_methylation_extractor and masked by intersectBed (Bedtools v2.25.0)42 to remove sites in regions known to be prone to mapping artifacts."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Pairwise Comparisons Of Taps\u03b2",
+                    "paragraphs": [
+                        "Replicate one of RRoxBS-seq data was used due to the highest number of reads among the four replicates21. The three replicates of whole-genome oxBS-seq22 results were pooled together for the correlation analysis. Sites with a minimal coverage of ten reads were used for the correlation analysis between TAPS\u03b2 and oxBS-seq. The Pearson correlation coefficient (Pearson\u2019s r) was calculated by using R function cor. The scatterplots with smoothed densities color representation were visualized using function smoothScatter in R."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Coverage Analysis Of Caps And Ace-Seq",
+                    "paragraphs": [
+                        "The CpG island annotation was downloaded from UCSC43. Each CpG island was evenly binned into ten windows. The 4-kb flanking regions were binned into 20 windows. The coverage was defined as the sum of modified and unmodified reads at each site. The average coverage was calculated by Bedtools map42. Given that the overall coverage of CAPS was higher than ACE-seq, the coverage at each site was normalized by the ratio of overall coverage between the two datasets."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Pairwise Comparisons Of Caps",
+                    "paragraphs": [
+                        "To compare CAPS with ACE-seq and TAB-seq, the raw 5hmCG signals, i.e. C/(C+T), were calculated within 10-kb genomic bins (Fig.\u00a02f) as previously defined13. The 10-kb raw signal of TAPS\u2212TAPS\u03b2 subtraction was calculated as the average estimated 5hmC levels from the maximum likelihood methylation levels (MLML) output."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Estimation Of 5Hmc Using Maximum Likelihood",
+                    "paragraphs": [
+                        "To estimate 5hmC levels from TAPS and TAPS\u03b2, the MLML estimation method19 was applied on sites with a minimum coverage of 5. The sites with at least one conflict were excluded from subsequent analysis. The average levels of 5mC and 5hmC estimated by MLML were tiled by 1-kb bins (Fig.\u00a03a)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Genomic View",
+                    "paragraphs": [
+                        "To view the methylation levels on genomes, the methylation calling output was transferred to the bigwig format by bedGraphToBigWig44 and visualized by the Integrative Genomics Viewer45 on the mm9 genome."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Statistical Test Of 5Hmc",
+                    "paragraphs": [
+                        "We used the binomial test10 to call 5hmC at sites with the minimal coverage of five reads. The probability p of the binomial distribution was the false-positive rate (0.0072) of CAPS, calculated from the unmodified control DNA (Fig.\u00a02c). Cytosines with Benjamini\u2013Hochberg (BH) adjusted p-value <0.05 were used for downstream analysis."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Quantifying Enrichment Of 5Hmcgs In Regulatory Elements",
+                    "paragraphs": [
+                        "The list of putative genomic regulatory elements was downloaded (https://github.com/gireeshkbogu/chromatin_states_chromHMM_mm9)27. This list was predicted based on the ENCODE data26 by ChromHMM25. The high-confidence 5hmCG sites (BH-adjusted p-value < 0.05 and coverage \u22655 reads) were annotated using bedtools intersect. The number of 5hmCG sites falling into each category was counted (Fig.\u00a03c). To investigate the enrichment of 5hmCG in each element class, a set of CG sites was sampled for ten times to generate a background distribution of CG sites across element categories. The number of 5hmCGs or random CGs was normalized by the genomic coverage of corresponding regulatory elements."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Genome-Wide Analysis Of Ps And Ps-C",
+                    "paragraphs": [
+                        "The histone modification ChIP-seq data were downloaded from the ENCODE project34: H3K4me1 (GSM1000121) and H3K4me3 (GSM1000124). The prediction result of genomic regulatory elements27 was downloaded as described above. The centers of broad peaks or predicted regions were used. Average modification levels were calculated by tiling the left and right flanking 3\u2009kb regions into 100-bp bins. The profiles were visualized by deepTools 3.3.0 (ref. 46)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Reporting Summary",
+                    "paragraphs": [
+                        "Further information on research design is available in the\u00a0Nature Research Reporting Summary linked to this article."
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

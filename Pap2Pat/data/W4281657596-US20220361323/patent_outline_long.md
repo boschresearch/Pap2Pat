@@ -1,0 +1,258 @@
+# DESCRIPTION
+
+## ACKNOWLEDGEMENT OF GOVERNMENT SUPPORT
+
+- acknowledge government support
+
+## FIELD
+
+- define field of invention
+
+## BACKGROUND
+
+- discuss limitations of prior art
+
+## SUMMARY
+
+- introduce 3D multielectrode arrays
+- describe 3D electrodes with photopolymer and metal coating
+- describe electrical connection to electrical traces
+- describe aspect ratio of 3D electrodes
+- describe conical shape of 3D electrodes
+- describe base and shaft portion of 3D electrodes
+- describe tip portion of 3D electrodes
+- describe exposed metal at tip portion
+- describe spacing between 3D electrodes
+- describe 3D printing of 3D electrodes
+- describe height of 3D electrodes
+- describe substrate material
+- introduce method of forming 3D multielectrode array
+- describe defining electrical contacts and traces
+- describe applying sacrificial metal layer
+- describe etching sacrificial metal layer
+- describe 3D printing of 3D structures
+- describe applying metal layer
+- describe lifting off sacrificial metal layer
+- describe coating with insulating layer
+- describe removing insulating material from tips
+- describe aspect ratio of 3D structures
+- describe metal and substrate materials
+
+## DETAILED DESCRIPTION
+
+- introduce multielectrode arrays
+- describe applications of multielectrode arrays
+- motivate limitations of traditional thin film lithography
+- describe limitations of planar multielectrode arrays
+- illustrate planar multielectrode array
+- describe limitations of planar multielectrode arrays in tissue applications
+- describe scar tissue ingrowth
+- describe limitations of planar multielectrode arrays in stimulation and recording
+- describe limitations of planar multielectrode arrays in terms of surface area and footprint ratio
+- introduce 3D multielectrode arrays
+- describe 3D multielectrode arrays with raised electrode structures
+- describe 3D printing of electrode structures
+- describe advantages of 3D multielectrode arrays
+- describe customization of 3D multielectrode arrays
+- define photolithography
+- define 3D electronic device
+- define surface area to footprint ratio
+- define aspect ratio
+- illustrate process for integrating 3D printing and photolithography
+- describe combining prepared substrate with 3D printed structures
+- describe selective metallization of 3D printed structure via photolithography
+- describe advantages of 3D electronic device
+- describe prepared substrate
+- describe metal traces and windows on prepared substrate
+- describe 3D printing technique
+- describe raster-scanning direct laser writing lithography
+- describe advantages of rDLW printer
+- describe spacing between adjacent 3D electrodes
+- describe selective metallization of 3D printed structure via lithography
+- describe 3D electronic device
+- introduce 3D multielectrode array
+- detail substrate and electrical connections
+- describe electrodes and electrical contacts
+- introduce pores and geometric features
+- describe different embodiments of 3D printed structures
+- introduce method for manufacturing 3D electronic component
+- prepare substrate
+- pattern electrical contacts and traces
+- create windows for electrical contacts and traces
+- describe photolithography techniques
+- open windows through insulating layer
+- sputter sacrificial metal layer
+- etch sacrificial metal layer
+- describe etching process using photoresist
+- introduce 3D printing of 3D structure
+- describe raster-scanning direct laser writing
+- introduce rDLW printer
+- describe build volume and laser beam
+- detail Cartesian coordinates and microscope
+- describe resonant raster scanner and galvanometer
+- detail build stack plate and immersion objective lens
+- describe rDLW printer components
+- introduce imaging device
+- describe laser source
+- describe beam intensity modulation
+- describe beam expander
+- introduce control system
+- describe data acquisition system
+- describe CAD model conversion
+- describe 3D printing process
+- describe advantages of rDLW printer
+- introduce alternative 3D printing device
+- describe receiving CAD model
+- describe actuating 3D printer
+- describe 3D printing with rDLW printer
+- describe customization of electrodes
+- introduce examples of 3D structures
+- describe resulting 3D printed structures
+- describe selectively metalizing 3D printed structure
+- describe photolithography techniques
+- introduce positive photoresist lithography process
+- describe applying positive photoresist
+- describe exposing to light source
+- describe developing and metalizing
+- describe resulting 3D electronic device
+- describe 3D structure printing
+- describe metal trace on substrate
+- describe negative photoresist application
+- describe proximity mask positioning
+- describe light source exposure
+- describe negative photoresist development
+- describe metal layer application
+- describe metal layer removal
+- describe resulting 3D electronic device
+- introduce sacrificial metal layer process
+- describe sacrificial metal layer application
+- describe positive photoresist application
+- describe UV light source exposure
+- describe positive photoresist development
+- describe sacrificial metal layer etching
+- describe 3D structure printing
+- describe metal layer application
+- describe sacrificial metal layer removal
+- describe resulting 3D electronic device
+- describe electrical contact connection
+- describe 3D multielectrode array production
+- describe insulating layer application
+- describe insulating layer removal
+- describe final device configuration
+- describe device configuration options
+- describe multielectrode array embodiments
+- describe multielectrode array fabrication
+- introduce insulated multielectrode array
+- describe electrical traces on substrate
+- explain photopatterning of traces
+- show exemplary 3D structures
+- describe 3D printing of structures
+- discuss applications of 3D structures
+- introduce implantable 3D electrodes
+- describe 3D structures for computer chips
+- explain surface area to footprint ratio
+- define high surface area
+- describe aspect ratio
+- introduce 3D structures with high aspect ratio
+- describe exemplary 3D structures with mesh-like structure
+- show zoomed-in view of mesh structure
+- describe spaces in mesh structure
+- introduce conical 3D structures
+- describe pores in conical 3D structure
+- explain spacing and geometry of pores
+- discuss applications of conical 3D structures
+- introduce 3D printed extension members
+- describe exemplary conical 3D structure with extension members
+- show zoomed-in view of conical 3D structure
+- describe pores in conical 3D structure with extension members
+- explain size and geometry of pores
+- discuss high-resolution 3D printing
+- describe conical 3D structure
+- extension member of conical 3D structure
+- hook mechanism of extension member
+- internal channels of conical 3D structure
+- apertures of internal channels
+- electrodeposition on internal channels
+- tissue ingrowth on internal channels
+- 3D spike electrodes
+- tapered geometry of 3D spike electrodes
+- base of 3D spike electrodes
+- tip of 3D spike electrodes
+- aspect ratio of 3D spike electrodes
+- pyramidal 3D structures
+- conical 3D structures
+- pores of different sizes
+- metallization of 3D structures
+- print pads of substrate
+- electrical traces of substrate
+- insulating layer of substrate
+- customization of 3D structures
+- computer models of 3D structures
+- 3D printing of 3D structures
+- limitations of photolithography
+- high resolution printing
+- pitch or spacing between 3D electrodes
+- surface area of 3D electrodes
+- roughening surface of 3D electrodes
+- introduce 3D printed structures
+- plasma treatment for surface roughness
+- iridium oxide application for surface roughness
+- combination of plasma and iridium oxide treatments
+- tapered or spike-shaped 3D electrodes for scar tissue penetration
+- selectively metallizing 3D structures for various devices
+- implantable 3D electrodes for neurostimulation and/or recording
+- 3D multielectrode arrays for neural stimulation and/or recording
+- high surface area 3D scaffold multielectrode arrays
+- tissue integration with 3D electrodes
+- porous or internal channel structure for growth factors
+- seeding neurotrophic factors for cell ingrowth
+- selecting growth factors for specific implantation sites
+- 3D neurostimulation electrodes with lower power consumption
+- 3D recording electrodes with long-term recording capabilities
+- incorporating extension members for anchoring
+- 3D printed structures with higher aspect ratios
+- reducing immune response and improving anchoring
+- shank or spike-shaped structures for 3D electrodes
+- insulating 3D recording or stimulation electrodes
+- applying insulating material coating
+- exposing metal tip for electrical recording or stimulation
+- creating insulated recording or stimulation electrodes
+- 3D printing conical, pyramidal, or spike-shaped structures
+- applying metal layer and removing sacrificial metal layer
+- depositing insulating material
+- electrodepositing iridium oxide for surface roughness
+- removing insulating layer from metal tip
+- exposing conductive metal surface for recording or stimulation
+- creating multielectrode arrays with insulated 3D electrodes
+- applying sacrificial metal layer
+- photopatterning openings in positive photoresist
+- etching sacrificial metal layer to form mask for electrical traces
+- describe 3D structure printing
+- motivate metal layer formation
+- describe sputtering process
+- explain sacrificial metal layer removal
+- describe metallized 3D printed structure formation
+- motivate insulating material coating
+- describe insulating layer formation
+- explain metallized tip exposure
+- describe final device formation
+- motivate tapered 3D structure
+- describe spike-shaped 3D structure
+- explain tip portion configuration
+- describe barb configuration
+- motivate base width variation
+- describe height variation
+- explain 3D electrode structure formation
+- describe multielectrode array formation
+- motivate flexible substrate use
+- describe 2D photolithography-based device platform integration
+- explain 3D electrode array formation on existing device platform
+- describe flexible polymer substrate use
+- motivate 3D electronic device formation
+- explain 3D printing and photolithography integration
+- describe high aspect ratio 3D electronic component formation
+- motivate specific geometric feature formation
+- describe densely packed array formation
+- explain device customization
+- describe general considerations
+

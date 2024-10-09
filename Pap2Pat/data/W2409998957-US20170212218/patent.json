@@ -1,0 +1,227 @@
+{
+    "id": "US20170212218",
+    "authors": [
+        "Scott Spuler",
+        "Matthew Hayman",
+        "Bruce Morley",
+        "Edwin W. Eloranta"
+    ],
+    "title": "DIODE LASER BASED HIGH SPECTRAL RESOLUTION LIDAR",
+    "date": "2016-04-04 00:00:00",
+    "abstract": "Lidar is an acronym for Light Detection And Ranging. The technology may be used to measure distance by illuminating a target with a laser beam and performing analysis on the reflected laser beam light. In the atmospheric sciences, Lidar may be used to study the optical depth of clouds, the impact of aerosols on clouds, and the interactions between aerosols and clouds on the climate. The present application proposes a lidar-based technology using a diode laser (101) beam sent through a tapered semiconductor optical amplifier (106) and an axicon pair expander (108) wherein the laser light may be transmitted through a telescope (110) at an object to be studied. Upon striking the object to be studied, the laser (101) is reflected and recovered by the telescope (110). The reflected laser is then sent through a heated rubidium vapor cell (115) and a total detection channel (116) for analysis.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "GOVERNMENT LICENSE RIGHTS",
+                    "paragraphs": [
+                        "The U.S. Government has a paid-up license in this invention and the right in limited circumstances to require the patent owner to license others on reasonable terms as provided for by the terms of Agreement No. AGS-0753581, awarded by a National Science Foundation and National Center for Atmospheric Research cooperative agreement."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe government license rights"
+                    ],
+                    "num_characters": 332,
+                    "outline_medium": [
+                        "describe government license rights"
+                    ],
+                    "outline_short": [
+                        "describe government license rights"
+                    ]
+                },
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present application is related to the field of remote sensing, and in particular, to the study of cloud and aerosol interactions in climate atmospheric research."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field of remote sensing"
+                    ],
+                    "num_characters": 165,
+                    "outline_medium": [
+                        "define technical field of remote sensing"
+                    ],
+                    "outline_short": [
+                        "define technical field of remote sensing"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Lidar is an acronym for Light Detection And Ranging. In the atmospheric sciences, it is a technology that may be used to measure range resolved atmospheric constituents such as wind, aerosol particles, water vapor, and others. Lidar measurements may be used in the study of cloud and aerosol interactions and their influence on the climate. Several lidar based technologies are currently used in the climate study field.",
+                        "Networks of autonomous low-power, or micropulse lidars, for example MPLNet hereinafter referred to as MPL, use elastic backscatter for cloud and aerosol observation. This technology is capable of supplying qualitative observational data, but does not provide accurate quantitative data. The MPL performs two backscatter-polarization measurements, with three unknowns of polarization, backscatter and extinction. Similarly, Vaisala ceilometers perform backscatter measurements with one measurement and two unknowns (backscatter and extinction) so the two atmospheric optical parameters cannot be retrieved. This requires making certain a priori assumptions regarding the relationship between backscatter and extinction in order for atmospheric optical parameters to be determined.",
+                        "Raman lidar is currently used to provide quantitative atmospheric backscatter and extinction by measuring the Raman shifted backscatter intensity of nitrogen in the atmosphere. The total backscatter and molecular backscatter measurement are used to determine calibrated backscatter and extinction. The backscatter of molecules is relatively stable and provides an optical constant employed to compare total backscattered signals. The backscatter coefficient of the target volume can be determined and deviations in the expected molecular backscatter from that actually measured provide atmospheric extinction or transmission data. Raman scattering is several orders of magnitude weaker than elastic backscatter Implementation of Raman lidar instruments therefore require powerful lasers, which, in turn are poorly suited network operation since these are generally expensive, require cooling, may not produce an eye-safe beam, and require routine maintenance such as flash lamp changes and cavity alignment.",
+                        "Lidar systems that rely on elastic backscatter signals, allow the laser pulse energy to be significantly reduced, and are simpler to make into an eye-safe system. To make a quantitative measurement of aerosol properties with an elastic backscatter lidar the high spectral resolution lidar (HSRL) technique can be used. The elastic backscatter from molecules is significantly spectrally broadened compared to elastic backscatter from aerosols and clouds. The molecular backscatter can be separated from the aerosol/cloud backscatter by using a narrow band filter to block the spectrally narrow cloud and aerosol backscatter, only allowing the wings of the much broader molecular backscatter to pass. Some HSRL systems have relied on etalons to create these narrow spectral filters but they only offer a limited optical depth and restrict the etendu of the receiver system.",
+                        "Etendue is defined as a property of light in an optical system, which characterizes how \u201cspread out\u201d the light is in area and angle. Etendue never decreases in any optical system and a perfect optical system produces an image with the same etendue as the source.",
+                        "Iodine absorption cells have been used as spectral filters for frequency doubled Nd:YAG lasers operating at 532 nm, but finding lasers that are small, low maintenance and operate with sufficiently narrow line widths at 532 nm presents a significant cost and reliability challenge.",
+                        "What is needed is a network of deployable cloud aerosol lidars that are low-cost, eye-safe, reliable enough to run continuously for years without maintenance, and must provide both qualitative and quantitative optical data without applying a priori assumptions.",
+                        "A potential solution is to develop a diode-laser-based high-spectral-resolution-lidar (DLB-HSRL.) This option requires sufficient transmit power, proper wavelength, system reliability, component reliability and a low enough cost in order to make remote network deployment a practical option. However, to achieve the improved data products over existing commercial systems, the DLB-HSRL needs lasers with stable and narrow line-widths and a matching receiver filter with similarly narrow rejection spectra but high optical depth. This must be accomplished without significantly increasing the cost, size, or maintenance requirements of the system."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce lidar technology",
+                        "describe limitations of MPLNet",
+                        "describe limitations of Vaisala ceilometers",
+                        "introduce Raman lidar",
+                        "describe limitations of Raman lidar",
+                        "introduce HSRL technique",
+                        "describe limitations of HSRL systems",
+                        "describe need for low-cost, eye-safe, reliable lidar",
+                        "introduce DLB-HSRL as potential solution"
+                    ],
+                    "num_characters": 4540,
+                    "outline_medium": [
+                        "introduce lidar technology",
+                        "describe limitations of current lidar systems",
+                        "motivate need for new lidar system",
+                        "describe challenges of implementing Raman lidar"
+                    ],
+                    "outline_short": [
+                        "describe lidar technology",
+                        "discuss limitations of existing lidar systems"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present application is designed to improve understanding of clouds and aerosols by providing quantitative data products. The present application describes a diode laser-based high spectral resolution lidar (DLB-HSRL) featuring low power consumption and electrically pumped semiconductor transmitters capable of operation for tens of thousands of hours without the requirement for water cooling. A benefit is lower operation and maintenance costs when compared to traditional quantitative lidar systems. The DLB-HSRL provides data products similar to current Raman lidar and HSRL systems but at a cost, size and complexity competitive with current commercial non-quantitative elastic backscatter lidar systems."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "summarize DLB-HSRL invention"
+                    ],
+                    "num_characters": 713,
+                    "outline_medium": [
+                        "summarize diode-laser-based high spectral resolution lidar"
+                    ],
+                    "outline_short": [
+                        "summarize diode-laser-based high spectral resolution lidar"
+                    ]
+                },
+                {
+                    "title": "ASPECTS OF THE INVENTION",
+                    "paragraphs": [
+                        "In one aspect of the invention, a diode laser based high spectral resolution lidar comprises:",
+                        "a diode laser emitting a laser beam, a splitter which separates the laser beam, an inline fiber isolator and a tapered semiconductor optical amplifier which receives a portion of the laser beam and amplifies it into pulses which are transmitted.",
+                        "Preferably the device further comprises:",
+                        "a telescope to receive reflected laser light, an interference filter to receive the reflected laser light and filter the reflected laser light, a narrow band etalon to receive the filtered reflected laser light and reduce background light, a beam splitter for splitting the reduced background light into a first portion and a second portion, a total detection channel which receives at least one of the first portion of the reduced background light and the combined molecular collected backscatter and the aerosol and cloud collected backscatter, a heated rubidium vapor cell which receives the second portion of the reduced background light and blocks a spectrally narrow cloud and aerosol collected backscatter and passes wings of molecular collected backscatter, a molecular channel detector for receiving the wings of molecular signal.",
+                        "Preferably the laser uses at least one of a distributed Bragg reflector (DBR), or a distributed feedback (DFB) laser.",
+                        "Preferably the laser has a wavelength of approximately 780 nanometers.",
+                        "Preferably the laser beam is split into a portion that is received by the inline fiber isolator and the tapered semiconductor optical amplifier which receives a portion of the laser beam.",
+                        "Preferably the portion of the laser beam not received by the inline fiber isolator and the tapered semiconductor optical amplifier is sampled and directed to at least one of a wavelength meter or a device for monitoring and controlling the wavelength of the laser.",
+                        "Preferably the total detection channel further comprises a depolarization channel.",
+                        "A diode laser based high spectral resolution lidar method of analysis comprises:",
+                        "generate a laser beam, split a laser beam into a first portion and a second portions, generate high energy pulses from the first portion of the laser beam, expand the first portion of the laser beam, transmit the filtered portion of the laser beam, reflect the transmitted laser beam, receive the reflected laser beam; and analyze the reflected laser beam.",
+                        "Preferably the laser beam is performed using at least one of a distributed Bragg reflector (DBR), or a distributed feedback (DFB) laser.",
+                        "Preferably the generating high energy pulses is performed using tapered semiconductor optical amplifier.",
+                        "Preferably the expanding of the laser beam is performed using an axicon pair.",
+                        "Preferably transmitting the expanded portion of the laser beam is performed using the inner portion of a telescope.",
+                        "Preferably the receiving the reflected laser beam is performed using the outer portion of a telescope.",
+                        "Preferably the received reflected laser beam is passed through an interference filter and a narrow band etalon.",
+                        "Preferably the analysis further comprises passing the reflected laser beam through a heated rubidium vapor cell.",
+                        "In one aspect of the invention, a diode base high spectral resolution lidar comprises:",
+                        "a laser emitting a laser beam, a splitter which separates the laser beam, an amplifier which receives a portion of the laser beam, prisms which receive and expand the laser beam; and a telescope which transmits the laser beam.",
+                        "Preferably the device further comprising:",
+                        "a device which receives reflected laser light, a filter to receive the reflected laser light, an etalon for receiving the filtered reflected laser light, a device for analyzing the filtered reflected laser light.",
+                        "Preferably the amplifier comprises a tapered semiconductor optical amplifier.",
+                        "Preferably the telescope comprises an inner portion that transmits laser light and an outer portion that receives reflected laser light.",
+                        "Preferably the reflected light is analyzed using at least one of a heated rubidium vapor cell and a depolarization channel."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe diode laser based HSRL",
+                        "describe components of diode laser based HSRL",
+                        "describe laser beam splitting",
+                        "describe total detection channel",
+                        "describe molecular channel detector",
+                        "describe laser wavelength and type",
+                        "describe method of analysis",
+                        "describe alternative embodiment of diode base HSRL"
+                    ],
+                    "num_characters": 4079,
+                    "outline_medium": [
+                        "describe diode laser based high spectral resolution lidar",
+                        "describe laser and amplifier components",
+                        "describe telescope and receiver components",
+                        "describe analysis method"
+                    ],
+                    "outline_short": [
+                        "describe diode laser based high spectral resolution lidar device",
+                        "describe diode laser based high spectral resolution lidar method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "FIG. 1 and the following description depict specific examples to teach those skilled in the art how to make and use the best mode of the Application. For the purpose of teaching inventive principles, some conventional aspects have been simplified or omitted. Those skilled in the art will appreciate variations from these examples that fall within the scope of the Application. Those skilled in the art will appreciate that the features described below can be combined in various ways to form multiple variations of the Application. As a result, the Application is not limited to the specific examples described below, but only by the claims and their equivalents.",
+                        "FIG. 1 depicts a conceptual layout of the DLB-HSRL system. The DLB-HSRL uses a distributed Bragg reflector (DBR) 780 nm laser (101) which provides a source with power and frequency stability needed for accurate filtering of molecular and aerosol backscatter in an DLB-HSRL receiver.",
+                        "A computer operable (118) standard diode laser controller (117) operates the DBR laser (101) at constant temperature. Approximately ten percent of the laser output (102) is sampled and directed to a wavelength meter (103) or rubidium vapor cell to monitor and lock the laser output wavelength.",
+                        "The remaining \u02dc90 percent of the laser output (104) passes through an inline fiber isolator (105) and thereafter into a tapered semiconductor optical amplifier, hereinafter TSOA (106). The laser source is then amplified by the TSOA (106) to produce a transmitted laser pulse and to achieve high enough output power for daytime operation. The current to the TSOA (106) is modulated to produce an output pulse or output pulse encoding where higher energy pulses are generated based on the current pulses supplied by a current pulser component (119).",
+                        "The output energy is monitored (107) for later signal processing. The beam is expanded through a pair of axicon prisms (108), then passes through a splitter (121) and a lens (120) to reduce energy lost from the telescope spider (109) and finally transmitted through the inner portion of the telescope (110). This design uses a shared telescope design where the inner portion is dedicated to the transmitter and the outer portion is dedicated to the receiver.",
+                        "This laser-amplifier combination does not require a cooling unit and occupies a volume that is a fraction of the size of a neodymium-doped yttrium aluminum garnet lasers, also known as Nd:YAG lasers, commonly employed in Raman and HSRL systems. The semiconductor lasers used in the DLB-HSRL are lower cost and longer lifetime than the Nd:YAG. Because these lasers require no cavity alignment, or realignment, or consumables such as flash lamps, they are zero maintenance and are therefore suitable for use in a lidar network. This is a significant contrast to Nd:YAG lasers.",
+                        "The received light (111) is collected by the outer portion of the telescope and reflected by a mirror (112), a beamsplitter (121), then through an interference filter (113) and a narrow band etalon for reducing background light. An etalon is an optical device which reflects incoming light repeatedly between two or more reflective surfaces. Etalons may serve as a narrow band optical filter by means of interference effects. The light then passes through a beam splitter (114) where part is coupled into the fiber for the total detection channel. The other light passes through a heated rubidium vapor cell (115) which blocks spectrally narrow cloud and aerosol returns, passing only the wings of molecular returns into the fiber for the molecular channel detector (116).",
+                        "A depolarization channel is not shown in the schematic but is easily added by splitting the light on the total channel with a polarizing beam splitter. Light exiting each port is then directed onto to detectors corresponding to the total parallel and total perpendicular backscatter.",
+                        "To perform the HSRL technique, a rubidium (Rb) cell of isotropic Rb 87 is heated to approximately 320 K, where the optical depth is sufficient to block strong backscatter from liquid water clouds. Optical depth is a measure of how much light is transmitted through a medium or device. It is the natural logarithm of the ratio of initial to the transmitted optical power and describes the ability of the medium or device to extinguish incident light.",
+                        "Operation of the laser occurs at 780 nm wavelength, where the D2 line of rubidium is strongly absorbing. This wavelength overlaps with a well-developed line of necessary commercial components such as the DBR lasers (101), TSOA (106) and silicon-based single-photon-counting detectors. These components are available as fiber-coupled devices, an essential ingredient to maintain instrument alignment in an unattended network deployment. Thus, the rubidium filter in the lidar receiver, coupled with a fiber-coupled diode-laser-based transmitter, enables a low-cost and low-maintenance HSRL technique capable of providing quantitative lidar data products.",
+                        "The detailed descriptions of the above embodiments are not exhaustive descriptions of all embodiments contemplated by the inventors to be within the scope of the Application. Indeed, persons skilled in the art will recognize that certain elements of the above-described embodiments may variously be combined or eliminated to create further embodiments, and such further embodiments fall within the scope and teachings of the Application. It will also be apparent to those of ordinary skill in the art that the above-described embodiments may be combined in whole or in part to create additional embodiments within the scope and teachings of the Application."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe conceptual layout of DLB-HSRL system",
+                        "describe DBR laser and controller",
+                        "describe laser output sampling and monitoring",
+                        "describe tapered semiconductor optical amplifier",
+                        "describe output energy monitoring",
+                        "describe beam expansion and transmission",
+                        "describe received light collection and filtering",
+                        "describe beam splitter and heated rubidium vapor cell",
+                        "describe molecular channel detector",
+                        "describe depolarization channel",
+                        "describe operation of laser and rubidium filter"
+                    ],
+                    "num_characters": 5652,
+                    "outline_medium": [
+                        "describe conceptual layout of DLB-HSRL system",
+                        "describe laser source and amplifier",
+                        "describe beam expansion and transmission",
+                        "describe receiver and detection components",
+                        "describe operation of rubidium vapor cell"
+                    ],
+                    "outline_short": [
+                        "describe conceptual layout of DLB-HSRL system",
+                        "explain operation of DLB-HSRL system"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A device comprising:\na diode laser (101) emitting a laser beam;\na splitter (102) which separates the laser beam;\nan inline fiber isolator (105) and a tapered semiconductor optical amplifier (106) which receives a portion of the laser beam;\nat least one pair of axicon prisms (108) which receives and creates an annular laser beam; and\na telescope (110) containing an inner portion through which the laser beam is transmitted.",
+        "2. The device of claim 1 further comprising:\nan outer portion of the telescope to receive reflected laser light;\nan interference filter (113) to receive the reflected laser light and filter the reflected laser light;\na narrow band etalon to receive the filtered reflected laser light and reduce background light;\na beam splitter (114) for splitting the reduced background light into a first portion and a second portion;\na total detection channel which receives at least one of the first portion of the reduced background light and the combined molecular collected backscatter and the aerosol and cloud collected backscatter;\na heated rubidium vapor cell (115) which receives the second portion of the reduced background light and blocks a spectrally narrow cloud and aerosol collected backscatter and passes wings of molecular collected backscatter; and\na molecular channel detector (116) for receiving the wings of molecular signal.",
+        "3. The device of claim 1 wherein the laser (101) uses at least one of a distributed Bragg reflector (DBR), or a distributed feedback (DFB) laser.",
+        "4. The device of claim 1 wherein the laser (101) has a wavelength of approximately 780 nanometers.",
+        "5. The device of claim 1 wherein the laser (101) beam is split into a portion (104) that is received by the inline fiber isolator (105) and the tapered semiconductor optical amplifier (106) which receives a portion of the laser beam",
+        "6. The device of claim 1 wherein the portion of the laser (101) beam not received by the inline fiber isolator (105) and the tapered semiconductor optical amplifier (106) is sampled and directed to at least one of a wavelength meter or a device for monitoring and controlling the wavelength of the laser.",
+        "7. The device of claim 2 wherein the total detection channel further comprises a depolarization channel.",
+        "8. A method of analysis comprising:\ngenerating a laser beam;\nsplitting a laser beam into a first portion and a second portions;\ngenerating high energy pulses from the first portion of the laser beam;\nexpanding the first portion of the laser beam;\ntransmitting the expanded portion of the laser beam;\nreflecting the transmitted laser beam;\nreceiving the reflected laser beam; and\nanalyzing the reflected laser beam.",
+        "9. The method of claim 8 wherein generating the laser beam is performed using at least one of a distributed Bragg reflector (DBR), or a distributed feedback (DFB) laser.",
+        "10. The method of claim 8 wherein the generating high energy pulses is performed using tapered semiconductor optical amplifier.",
+        "11. The method of claim 8 wherein the expanding of the laser beam is performed using an axicon pair.",
+        "12. The method of claim 8 wherein the transmitting the expanded portion of the laser beam is performed using the inter portion of a telescope.",
+        "13. The method of claim 8 wherein the receiving the reflected laser beam is performed using the outer portion of a telescope.",
+        "14. The method of claim 8 wherein the received reflected laser beam is passed through an interference filter and a narrow band etalon.",
+        "15. The method of claim 8 wherein the analysis further comprises passing the reflected laser beam through a heated rubidium vapor cell.",
+        "16. A device comprising:\na laser (101) emitting a laser beam;\na splitter (102) which separates the laser (101) beam;\nan amplifier which receives a portion of the laser (101) beam;\nprisms (108) which receives and expands the laser (101) beam; and\na telescope (110) which transmits the laser beam.",
+        "17. The device of claim 16 further comprising:\na device which receives reflected laser light;\na filter (113) to receive the reflected laser light;\nan etalon for receiving the filtered reflected laser light; and\na device for analyzing (116) the filtered reflected laser light.",
+        "18. The device of claim 16 wherein the amplifier comprises a tapered semiconductor optical amplifier.",
+        "19. The device of claim 17 wherein the telescope (110) comprises an inner portion that transmits laser light and an outer portion that receives reflected laser light.",
+        "20. The device of claim 17 wherein the reflected light is analyzed using at least one of a heated rubidium cell and a depolarization channel (116)."
+    ]
+}

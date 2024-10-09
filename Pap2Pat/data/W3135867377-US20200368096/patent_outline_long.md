@@ -1,0 +1,148 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- define proprioception
+- describe importance of proprioception
+- discuss clinical conditions with proprioceptive impairment
+- limitations of current proprioceptive assessment methods
+- introduce psychophysical threshold methods
+- describe joint matching methods
+- discuss haptic technology and robotic devices
+- limitations of current robotic devices
+- need for proprioceptive function assessment systems
+- need for integrated assessment and training systems
+
+## SUMMARY
+
+- introduce wrist joint proprioception system
+- describe manipulandum unit
+- describe controller and its functions
+- describe proprioception assessment operation
+- describe position sense routine
+- describe additional embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce manipulandum unit 22
+- describe manipulandum unit components
+- detail manipulandum unit 22 operation
+- describe base 42
+- detail base 42 features
+- describe handle 44
+- detail handle 44 features
+- describe linkage assembly 46
+- detail PS transmission sub-assembly 70
+- describe track 80
+- detail track 80 features
+- describe arms 82, 84
+- detail arm features
+- describe FE transmission sub-assembly 72
+- detail guide track 120
+- describe carriage 122
+- detail carriage 122 features
+- describe legs 124, 126
+- detail leg features
+- describe AA axis establishment
+- detail FE axis establishment
+- describe PS axis establishment
+- detail motor M2 operation
+- describe motor M3, M4 operation
+- detail motor M1 operation
+- describe motor M1/track 80 interface
+- detail motor M2/guide track 120 interface
+- describe motor M3, M4/arm interface
+- detail motor operation in PS plane
+- describe motor operation in FE plane
+- detail motor operation in AA plane
+- describe three DOF of manipulandum unit 22
+- detail AA axis movement
+- describe FE axis movement
+- detail PS axis movement
+- describe range of motion (ROM) of manipulandum unit 22
+- compare ROM of manipulandum unit 22 with human wrist joint
+- summarize manipulandum unit 22 operation
+- describe second motor M2
+- describe operation of second motor M2
+- describe third motor M3
+- describe operation of third motor M3
+- describe fourth motor M4
+- describe operation of fourth motor M4
+- describe motor selection
+- describe motor configuration
+- describe controller 24
+- describe memory used by controller 24
+- describe computer storage media
+- describe operation of controller 24
+- describe motor control
+- describe rotary encoders
+- describe input/output modules
+- describe interface formats
+- describe control architecture
+- describe proprioception-related operations
+- describe assessment program 300
+- describe Position Sense category 302
+- describe Position Sense Detection Module S.1
+- describe operation of Position Sense Detection Module S.1
+- describe Position Sense Discrimination Module S.2
+- describe operation of Position Sense Discrimination Module S.2
+- describe Motion Sense category 304
+- describe Motion Sense Detection Module S.3
+- describe operation of Motion Sense Detection Module S.3
+- describe Motion Sense Discrimination Module S.4
+- describe operation of Motion Sense Discrimination Module S.4
+- describe other sensory assessment modules
+- describe rehabilitation training program 400
+- describe Discrete category 402
+- describe Center-Out Task module T.1
+- describe operation of Center-Out Task module T.1
+- describe Follow the Target module T.2
+- describe operation of Follow the Target module T.2
+- describe Continuous Sensorimotor Training category 404
+- describe Virtual Object Balancing module T.3
+- describe operation of Virtual Object Balancing module T.3
+- describe Figure Eight Tracking module T.4
+- describe operation of Figure Eight Tracking module T.4
+- describe other sensory rehabilitation training modules
+- describe integration of assessment and training
+- describe benefits of system
+
+### Examples
+
+- introduce experiment setup
+- describe manipulandum unit
+- detail controller architecture
+- explain PID controller tuning
+- introduce subjects and handedness
+- describe experimental procedure
+- explain 2-alternative-forced-choice paradigm
+- detail stimulus presentation
+- describe response collection
+- explain adaptive QUEST algorithm
+- introduce random Gaussian noise
+- describe trial structure
+- explain rest periods
+- introduce first trial intensity
+- compute proprioceptive threshold
+- fit response data with cumulative Gaussian function
+- compute psychometric acuity function
+- define discrimination threshold
+- show exemplar response data
+- inspect for lapsing errors
+- show psychometric functions for FE and AA
+- compare FE and AA thresholds
+- analyze complete sample
+- perform one-way Analysis of Variance
+- summarize thresholds for all subjects
+- retest subset of subjects
+- evaluate test-retest reliability
+- establish data validity
+- show sensitivity to detect small differences
+- establish test-retest reliability
+- compare to previous studies
+- discuss neuroanatomy of wrist joint
+- discuss limitations of robotic technology
+- discuss experimental paradigm bias
+- evaluate test-retest reliability coefficients
+- discuss implications for rehabilitation and diagnostics
+

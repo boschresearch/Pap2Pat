@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Terms
+
+### Treatment
+
+## EXAMPLES
+
+### Example 1—the Microbial MR1 Ligandome
+

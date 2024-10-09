@@ -1,0 +1,575 @@
+{
+    "id": "US20170128554",
+    "authors": [
+        "Minyong Chen",
+        "Xiaofeng Shi",
+        "James C. Samuelson",
+        "Christopher H. Taron"
+    ],
+    "title": "Universal N-Glycan Binding Reagent",
+    "date": "2015-06-26 00:00:00",
+    "abstract": "Methods of capturing N-glycan linked glycomolecules including N-glycans, N-glycopeptides and N-glycoproteins are described. The methods provide substantially unbiased capture of charged and uncharged N-glycans and/or N-glycan linked glycomolecules. Binding reagents for substantially unbiased binding of N-glycans and/or N-glycan linked glycomolecules are also described.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Glycosylation is one of the most common and structurally diverse forms of protein post-translational modification. Glycans can be N-linked to an asparagine residue, or O-linked to either a serine or a threonine residue. Glycans on any given protein can vary widely in structure, composition and the site of attachment on a protein. Individual sites within one protein type may even contain a heterogeneous population of glycan modifications. This complexity interferes with readily analyzing and characterizing glycosylated proteins. Separating glycans from a glycosylated protein is a common first step in characterizing the glycans present on a glycoprotein. However, this method yields no information about the glycan attachment site on the protein.",
+                        "Chemical methods exist for capturing glycans, glycopeptides and glycoproteins. For example, hydrazide chemistry (see for example Zhang, et al., Nat. Biotechnol., 21, 660-666 (2003)) involves periodate oxidation of carbohydrate cis-diol groups to dialdehydes and covalent coupling between aldehyde and hydrazide groups to form hydrazine bonds on a solid support. Alternatively, mild periodate treatment can oxidize sialic acids on glycans allowing capture of the oxidized glycoproteins by covalent bonding with hydrazide (see for example, Nilsson, et al., Nature Methods, 6, 809-813 (2009)). However, this method is selective for only glycans with sialic acids and the glycans are also chemically altered by the oxidation process. Ideally, glycomolecule composition is analyzed without chemical modification. Boronic acid reacts with cis-diol-containing saccharides or polyols to form five- or six-membered cyclic esters and this property has been exploited to isolate glycoproteins and glycopeptides. Importantly, the covalent linkage is easily reversible in an acidic pH (Chen, et al., Analyst, 139, 688 (2014)). However, these aforementioned chemical methods unfortunately do not discriminate between N-linked and O-linked glycomolecules.",
+                        "In titanium dioxide chromatography enrichment, negatively charged sialic acid residues coordinate with the titanium metal ion (for example Larsen, et al., Mol. Cell. Proteomics, 6, 1778-1787 (2007)). However, metal ion affinity chromatography (using titanium, zirconium or silver) is not selective for glycans since negatively charged phosphopeptides or peptides with acidic amino acids, such as glutamic acid and aspartic acid may compete for binding.",
+                        "HILIC enrichment is a common approach for enriching glycans whereby a water-miscible organic solvent (typically acetonitrile) achieves separation of glycans via a partitioning mechanism. Hydrophilic sugar residues partition into the aqueous phase and are attracted to the hydrophilic groups on a solid support (typically silica or derivatized silica). HILIC materials show broad specificity for glycans but do not discriminate between O-glycan linked and N-glycan linked glycomolecules (Chen, et al., Analyst, 139, 688 (2014)).",
+                        "Finally, lectins are proteins with natural carbohydrate binding properties. Many lectins have been characterized and several have been employed for glycopeptide/glycoprotein enrichment or detection. Lectins recognize the variable region of N-linked glycans and the specificity of a lectin may be quite narrow (L-phytohemagglutinin (L-PHA) for the targeted beta-1,6-branched N-linked glycan (see for example, Ahn, et al., Anal. Chem., 82, 4441-4447 (2010)) or relatively broad in the case of Concanavalin A, which recognizes a high mannose structure. Nevertheless, a diverse set of lectins with selective affinities for specific carbohydrate epitopes has been used to investigate the human glycoproteome. However, to this date no single lectin has been shown to possess sufficient selectivity to analyze the entire N-glycan linked glycoproteome. Another major drawback of existing lectin based enrichment methods is low affinity of most natural lectins for their substrates (Kd ranging from 10 mM to 1 \u03bcM, (see for example, Fanayan, et al., Electrophoresis, 33, 1746-1754 (2012)). Elution of bound glycomolecules from lectins may be achieved by low pH, for example glycine-HCl buffer (at pH 2-2.8) or 100 mM acetic acid; yet low pH exposure can potentially alter glycan structure. Alternatively, glycomolecule elution from lectins can be accomplished using the appropriate sugar to displace the bound glycomolecule from the immobilized lectin but the added sugar will complicate most downstream analyses.",
+                        "Typically mass spectrometry analysis of a sample having a mixture of peptides and glycopeptides (both O-linked and N-linked) reveals a highly complex pattern of peaks. The primary problem is that this complex pattern cannot be interpreted to identify and characterize the individual glycomolecules in the sample. Therefore, a need exists for an enrichment reagent that is able to selectively isolate an individual class of glycomolecule, for example either N-glycan linked glycomolecules or O-glycan linked glycomolecules. Upon fractionation of a complex sample, the results of the mass spectrometry analysis might be more easily interpreted.",
+                        "Many important biological activities are affected by protein glycosylation, including protein folding, protein metabolism, protein-protein interactions, immune cell recognition and intercellular signaling. Given the emerging interest in glycoproteins as biomarkers, a need exists for readily analyzing and characterizing protein glycosylation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce glycosylation",
+                        "describe glycan structure and attachment",
+                        "discuss limitations of current glycan analysis methods",
+                        "motivate hydrazide chemistry",
+                        "describe boronic acid method",
+                        "discuss titanium dioxide chromatography",
+                        "introduce HILIC enrichment",
+                        "motivate lectin-based enrichment",
+                        "discuss limitations of lectin-based methods",
+                        "highlight need for selective glycomolecule enrichment"
+                    ],
+                    "num_characters": 5471,
+                    "outline_medium": [
+                        "introduce glycosylation",
+                        "limitations of current methods",
+                        "chemical methods for capturing glycans",
+                        "limitations of metal ion affinity chromatography",
+                        "limitations of lectin-based enrichment methods"
+                    ],
+                    "outline_short": [
+                        "describe glycosylation complexity",
+                        "limitations of existing glycomolecule analysis methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "In general, a fusion protein is provided having an amino acid sequence with at least 90% identity to SEQ ID NO: 1 and linked to an immobilization module. A protein having an amino sequence with at least 90% sequence identity with SEQ ID NO: 1 is exemplified by a protein having at least at least 90% identical to SEQ ID NO: 2.",
+                        "In a further example of the fusion protein described above, the immobilization module may be a variant of O6-alkylguanine-DNA alkyltransferase (AGT). Also see SEQ ID NOs: 3 and 4.",
+                        "In general a protein is provided that is a sequence variant of SEQ ID NO: 2, having one or more mutations, wherein a mutation is positioned at one or more positions selected from position 154, 155, 156, 173, and 174 for example wherein the mutation at position 154 is a P, at position 155 is an A, G or P at position 156 is an S or an R, at 173 is a Y or at position 174 is an R. In one aspect, the protein is fused to an immobilization module. In one aspect, the immobilization module is a variant of AGT.",
+                        "In general, a method is provided that includes the steps of a) combining a binding reagent capable of selectively binding charged and/or uncharged N-glycans or N-glycan linked glycomolecules and not binding any O-glycans; b) binding with substantially no bias, the charged or uncharged N-glycan glycomolecule to the binding reagent in a first buffer; and c) releasing the N-glycan glycomolecules from the binding reagent with a second buffer which does not comprise SDS or an oligosaccharide. The first and second buffers can be volatile for mass spec. High salt conditions may be preferred depending on the binding reagent. The methods and reagents need not chemically alter the N-glycans before capture. The captured N-glycans and/or N-glycan linked glycomolecules can be readily analyzed for glycan structure and/or glycan attachment site information.",
+                        "In one aspect a method is provided that includes: a) combining a complex mixture comprising N-glycans and/or N-glycan linked glycomolecules with a binding reagent that selectively binds a core pentasaccharide, Man(\u03b11-3)(Man(\u03b11-6))Man(\u03b21-4)GlcNAc(\u03b21-4)GlcNAc (abbreviated as Man3GlcNAc2 or M3N2), in N-glycans; b) capturing the core pentasaccharide in N-glycans and/or N-glycan linked glycomolecules by the binding reagent in a first buffer for substantially unbiased binding of charged and uncharged N-glycans in the glycomolecules; and c) releasing the bound N-glycans and/or N-glycan linked glycomolecules from the binding reagent with a second buffer which does not comprise SDS or an oligosaccharide.",
+                        "In one aspect of the method, the binding reagent comprises an amino acid sequence with at least 90% identical to SEQ ID NO: 1. In another aspect of the method, the binding reagent comprises an amino acid sequence with at least 90% sequence identity to SEQ ID NO: 2. In another aspect, the binding reagent comprises an amino acid sequence with at least 90% sequence identity to SEQ ID NO: 2 and a mutation positioned at one or more positions selected from position 154, 155, 156, 173, and 174. In another aspect, the binding reagent further comprises an immobilization module.",
+                        "In another aspect, the immobilization module is an AGT. In another aspect, the binding reagent is immobilized.",
+                        "In some embodiments, the binding reagent is free in solution. In some embodiments, the binding reagent bound with N-glycans or N-glycan linked glycopeptides is separated from other glycans or non-N-glycan linked glycopeptides or peptides or other small molecules using a filter or membrane having a discriminating pore size. In other aspects the binding reagent is immobilized on a matrix.",
+                        "In one aspect, the glycomolecule is a product of enzyme cleavage, wherein the enzyme is selected from the group consisting of a glycosidase, a sialidase, a DNase, an RNase, or a combination thereof. In one aspect, the cleavage enzyme is selected from the group consisting of is trypsin, endoproteinase GluC, endo proteinase AspN, proteinase K, Factor Xa protease, IdeS, IdeE, enterokinase, furin, endonuclease S, neuraminidase, peptide-N-glycosidase Ar (PNGase Ar), peptide-N-glycosidase A (PNGase A), peptide-N-glycosidase F (PNGase F), O-glycosidase, endoglycosidase D (endo D), endoglycosidase F (endo F), endoglycosidase F1 (endo F1), endoglycosidase F2 (endo F2), endoglycosidase F3 (endo F3), endoglycosidase H (endo H), endoglycosidase S (endo S), beta1-3 galactosidase, beta1-4 galactosidase, alpha1-3,6 galactosidase, beta-N-acetylglucosaminidase, alpha-N-acetylgalactosamindiase, beta-N-acetylhexosaminidase, alpha1-2,3 mannosidase, alpha1-6 mannosidase, neuraminidase, alpha2-3 neuraminidase, alpha1-2 fucosidase, DNase, RNase H, or a combination thereof. In another aspect, the glycomolecule is a polypeptide which may be a product of protease digestion.",
+                        "In one aspect of the compositions and/or methods, the N-glycan linked glycomolecule is an N-glycan, an N-glycan linked glycopeptide, an N-glycan linked glycoprotein, or a combination thereof. In some embodiments, the N-glycan moiety is labeled, unlabeled, or a mixture thereof. In some embodiments, the N-glycan linked glycomolecule is native or denatured.",
+                        "In some embodiments, the N-glycan and/or N-glycan linked glycomolecules may be in or from a sample of an in vitro cell culture, a bodily fluid, a bodily secretion, a cell, a tissue, an environmental sample, or a combination thereof. Such samples can be from a human, animal, plant, bacteria, soil sample.",
+                        "In one aspect, the second buffer for eluting immobilized N-glycans and/or N-glycan linked glycomolecules includes one or more reagents selected from acetonitrile, water, dichloromethane, dichloroethane, pentahydrofuran, ethanol, propanol, isopropanol, methanol, nitromethane, toluene, DMSO, acetic acid, formic acid or a mixture thereof. In some embodiments, the second buffer comprises acetic acid, formic acid or other acidic solutions. In some embodiments, the second buffer is volatile. In one aspect, the second buffer includes acetonitrile.",
+                        "In some embodiments, the buffer for unbiased binding of charged and uncharged N-glycans comprises a high salt concentration. For example, in some embodiments, the high salt concentration is at least 500 mM, 750 mM, 1 M, 1.5 M, 2 M, 2.5 M, or 3 M. In some embodiments, the salt is selected from ammonium acetate, ammonium chloride, ammonium sulfate, calcium acetate, calcium chloride, magnesium acetate, magnesium chloride, magnesium sulfate, potassium acetate, potassium chloride, potassium sulfate, sodium acetate, sodium chloride, and sodium sulfate or a mixture thereof. Volatile reagents in the first and second buffers are preferred for mass spectrometry.",
+                        "In one aspect, the method includes analyzing the composition of the N-glycan and/or N-glycan linked glycomolecules using an analytical test selected from mass spectrometry, chromatography, electrophoresis, nuclear magnetic resonance spectrometry and fluorescence-mediated detection, or a combination thereof.",
+                        "In another aspect, the method includes characterizing at least one of: the structure of the N-glycans, the linkage site of the N-glycan on the N-glycan linked glycomolecule, and/or an amount of one or more different N-glycans, or a combination thereof.",
+                        "In general a method is provided for treating a patient with a hearing loss, neurofibrillary tangles and/or virus infection; comprising administering an effective dose of a truncated ubiquitin ligase that has enhanced binding to N-glycans on glycomolecules.",
+                        "In one aspect, the truncated ubiquitin ligase has a sequence of at least 90% sequence identity with SEQ ID NO: 2. In another aspect, the truncated ubiquitin ligase has one or more mutations at positions corresponding to any of 154, 155, 156, 173, or 174 of SEQ ID NO: 2."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce fusion protein",
+                        "describe immobilization module",
+                        "motivate protein sequence variants",
+                        "introduce method for selective N-glycan binding",
+                        "describe binding reagent properties",
+                        "discuss method for releasing bound N-glycans",
+                        "introduce core pentasaccharide binding",
+                        "describe binding reagent sequence variants",
+                        "motivate immobilization module variants",
+                        "discuss filter or membrane separation",
+                        "introduce enzyme cleavage",
+                        "describe glycomolecule types",
+                        "discuss sample sources",
+                        "introduce elution buffer compositions",
+                        "motivate analytical tests for N-glycan characterization"
+                    ],
+                    "num_characters": 7793,
+                    "outline_medium": [
+                        "introduce fusion protein",
+                        "describe immobilization module",
+                        "introduce method for selectively binding N-glycans",
+                        "describe binding reagent",
+                        "describe method for releasing N-glycans",
+                        "describe various aspects of the method",
+                        "describe applications of the method"
+                    ],
+                    "outline_short": [
+                        "introduce fusion protein with immobilization module",
+                        "describe method for selectively binding N-glycans",
+                        "outline various aspects of the method and reagents"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Described herein are methods and compositions described for specifically capturing N-glycan and/or N-glycan linked glycomolecules in a substantially unbiased manner without the need for irreversible changes to the N-glycan composition or structure and without the need for multiple binding reagents. Advantageously, the captured N-glycan linked glycomolecules can be released under conditions that are compatible with standard downstream analytical protocols.",
+                        "Unless defined otherwise, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the pertinent art. Embodiments described herein may include one or more ranges of values (e.g., size, concentration, time, temperature). A range of values will be understood to include all values within the range, including subset(s) of values in the recited range, to a tenth of the unit of the lower limit unless the context clearly dictates otherwise.",
+                        "As used herein, the articles \u201ca\u201d, \u201can\u201d, and \u201cthe\u201d relate equivalently to a meaning as singular or plural unless the context dictates otherwise.",
+                        "A \u201cglycomolecule\u201d here refers to a non-carbohydrate entity such as lipids, proteins or other biological or non-biological molecules to which is attached one or more carbohydrate moieties.",
+                        "Examples of glycomolecules are glycoproteins which include proteins, polypeptides or peptides to which is linked one or more glycans. The protein or a proteolytically cleaved glycoprotein may have a size suitable for mass spectrometry analysis. For example, a proteolytically cleaved glycoprotein may have an amino acid composition of less than 500 amino acids for example, less than 400 amino acids, for example, less than 300 amino acids, for example, less than 200 amino acids. In one embodiment, the proteolytically cleaved glycoprotein has less than 150 amino acids.",
+                        "Glycosylation refers to the covalent attachment of a glycan to a polypeptide, lipid, polynucleotide or another glycan. The terms \u201cglycosylated peptide\u201d \u201cglycosylated polypeptide\u201d or \u201cglycosylated protein\u201d can be used interchangeably with \u201cglycopeptide,\u201d \u201cglycopolypeptide\u201d or \u201cglycoprotein.\u201d",
+                        "Wherever N-glycan linked glycomolecules react with the binding reagent, it is expected that the binding reagent will react in a similar manner with N-glycans that have been cleaved from the N-glycan linked glycomolecules.",
+                        "A \u201cglycan\u201d refers to a carbohydrate entity that has (a) a pentasaccharide core structure with a GlcNAc at its reducing end capable of covalent linkage to the amine group on the side chain of asparagine in a protein, polypeptide or peptide (N-glycan); (b) an oligosaccharide with a GalNAc capable of forming a covalent bond with a hydroxyl group on the side chain of a serine or threonine (O-glycan); or (c) other carbohydrate entities capable of covalent linkage to a protein or lipid.",
+                        "An N-glycan may have a fucose at the reducing end, linked to the GlcNAc. In one embodiment, N-glycans may have one or more sialic acids at the non-reducing ends of the pentasaccharide core. In another embodiment, the pentasaccharide core may have alternative branches of saccharides or additional saccharides extensions on the core branches. One or more sialic acids may be found on these alternative branches or extensions of the glycan.",
+                        "The sialic acids including variants thereof impart charge to the glycans hence the term \u201ccharged\u201d.",
+                        "The attachment of glycans to proteins, polypeptides or peptides is referred to herein as glycan-linked glycomolecules. Those glycomolecules that are enriched by embodiments described herein contain N-linked glycans but may also contain O-linked glycans and/or other carbohydrate entities. These are \u201cN-glycan linked glycomolecules\u201d.",
+                        "The terms \u201cenriched\u201d or \u201cenriching\u201d refers to a reduction in complexity of a mixture. Here the representation of N-glycan linked glycomolecules may be increased by more than 50%, 60%, 70%, 80%, 90%, 100%, 150%, 200%, or more compared to an un-enriched solution.",
+                        "The terms \u201csubstantially unbiased\u201d refer the capacity of the binding reagent to bind to an N-glycan either alone or linked to a protein, peptide or polypeptide regardless of its composition or linkage position. The term \u201csubstantially\u201d refers to at least 50%, 60%, 70%, 80%, 85%, or 90%. One example shows substantially unbiased binding resulting in 65% recovery and a second example shows about 90% recovery of a charged N-glycan linked glycoprotein based on a comparison with recovery of an uncharged N-glycan linked glycoprotein.",
+                        "The term \u201ccleavage enzyme\u201d refers to enzymes for cleaving proteins, polypeptides or peptides such as proteases; enzymes that cleave glycans from glycomolecules such as amidases such as PNGase; enzymes that cleave between adjacent sugar residues such as exoglycosidases or endoglycosidases and enzymes that cleave contaminating nucleic acids from cell lysates such as DNAases and RNases. Further examples of cleavage enzymes include trypsin, endoproteinase GluC, endo proteinase AspN, proteinase K, Factor Xa protease, IdeS, IdeE, enterokinase, furin, endonuclease S, neuraminidase, PNGase Ar, PNGase A, PNGase F, O-glycosidase, endo D, endo F, endo F1, endo F2, endo F3, endo H, endo S, beta1-3 galactosidase, beta1-4 galactosidase, alpha1-3,6 galactosidase, beta-N-acetylglucosaminidase, alpha-N-acetylgalactosamindiase, beta-N-acetylhexosaminidase, alpha1-2,3 mannosidase, alpha1-6 mannosidase, neuraminidase, alpha2-3 neuraminidase, alpha1-2 fucosidase, DNase, RNase H, or a combination thereof.",
+                        "An \u201cimmobilization module\u201d refers to a protein, nucleic acid, synthetic molecule or other chemicals capable of coupling with a binding reagent for purposes of immobilizing the N-glycan linked glycoproteins by affinity binding. Examples of immobilization modules are known in the art and include: maltose-binding proteins (MBPs) (U.S. Pat. Nos. 5,643,758 and 7,825,218; 7,883,867, and 8,623,615), SNAP-TAG\u00ae(New England Biolabs, Ipswich, Mass.) (utilizing AGT, see U.S. Pat. Nos. 7,939,284, 8,367,361, 7,799,524, 7,888,090, 8,163,479, and 8,178,314), CLIP-TAG\u2122 (utilizing ACT, see U.S. Pat. Nos. 8,227,602 and 8,623,627), inteins (U.S. Pat. Nos. 5,496,714, 5,834,247, 6,521,425, 7,157,224, 6,849,428, 7,001,745, 6,858,775, and 7,271,256), chitin-binding proteins (U.S. Pat. Nos. 6,897,285, 7,060,465, 6,984,505, and 6,987,007), biotin, streptavidin, antibodies, or Flag-tags.",
+                        "\u201cLabeling\u201d of N-glycans or N-glycan linked glycomolecules includes labeling the N-glycans and/or labeling the non-carbohydrate entity. Labeling of glycans can be achieved using any label known in the art including: 2-AB, (Anthranilamide, Anthranilic acid amide), Anthranilic acid (2AA) (2-Aminobenzoic acid), 2-Aminopyridine (2-AP) (2-Pyridinamine, 2-Pyridylamine), 2-aminonaphthalene trisulfonic acid (ANTS), 1-aminopyrene-3,6,8-trisulfonic acid (APTS), 1-phenyl-3-methyl-5-pyrazolone (PMP), 2,6-Diaminopyridine (DAP), 4-Aminobenzamidine (4AB), 7-Amino-4-methylcoumarin (AMC), procainamide, RapiFluor-MS\u2122 (Waters, Milford, Mass.), aminoxyTMT\u2122 (Life Technologies, Carlsbad, Calif.), and IMS (Prozyme, Hayward, Calif.) (also see Ruhaak, et al., Anal Bioanal Chem. 397, 8, 3457-3481 (2010); Kalay, et al., Anal Biochem., 423, 1, 153-62 (2012); and Radoslaw, et al., Analytical Biochemistry, Available online 12 Jun. 2015). Labeling of non-carbohydrate entities may occur for fusion molecules through labeling an immobilization module (for example, modified benzyl guanine substrate for AGT) or by direct labeling of the non-carbohydrate entity or by utilizing a nucleic acid aptamer labeled with a tag and capable of associating with the non-carbohydrate entity.",
+                        "A \u201cbinding reagent\u201d is described in more detail below and refers to a reagent that specifically and selectively binds N-glycan linked glycomolecules. In one embodiment, the binding reagent includes a SBD of a polypeptide such as for example, the SBD of F-box sugar domain (Fbs). In one aspect, the binding reagent comprises a consensus sequence of a polypeptide that has 70%, 75%, 80%, 85%, 90%, 95%, 99% or 100% sequence identity to SEQ ID NO: 1.",
+                        "wherein X is any amino acid.",
+                        "X may be selected from the following amino acids in Table 1:",
+                        "In some embodiments, one example of SEQ ID NO: 1 is a polypeptide comprises an amino acid sequence at least 70%, 75%, 80%, 85%, 90%, 95%, 99% or 100% sequence identity to:",
+                        "This truncated protein corresponds to the SBD of an N-glycan binding ubiquitin ligase.",
+                        "Sequence identity can be determined by those of skill in the art using standard techniques, including sequence algorithms like BLAST (Altschul, et al., J. Mol. Biol. 215, 403-410 (1990); Altschul, et al., Nuc. Ac. Res. 25, 3389-3402 (1997) and FASTA, Pearson and Lipman, PNAS 85, 8, 2444-2448 (1988)).",
+                        "Variants of SEQ ID NO: 2 have been generated to obtain greater binding affinity to N-linked glycan glycomolecules or N-glycans than the truncated non mutated Fbs protein. An added benefit is that the variants do not rely on a high salt binding buffer for optimal binding to N-glycans and N-linked glycan glycomolecules which is the preferable option for the wild type protein. Examples of advantageous mutation sites are provided in Table 2. Table 2 describes 5 different mutation positions: 154, 155, 156, 173 and 174 where the numbering corresponds to SEQ ID NO: 2. As shown in the table, mutations assigned to these positions are for D154P, S155A, S155G, S155P, G156S, G156R, F173Y and E174R. It was shown that the mutations individually or in various combinations were capable of improving binding. The combinations may include single mutations, double mutations, triple mutations, 4 mutations, or 5 mutations selected from those in table 2. The benefits of single mutations and a plurality of mutations are illustrated in FIGS. 9A-9C and FIG. 10A-10C and FIG. 11.",
+                        "Binding reagents exemplified by SEQ ID NO: 1 and SEQ ID NO: 2 may be fused to an immobilization module (see for example SEQ ID NO: 4) to form a fusion protein (SEQ ID NO: 3). Other examples of immobilization modules include peptides with at least 80%, 85%, 90%, 95%, 98% or 99% sequence identity with SEQ ID NO: 4.",
+                        "The improved binding of mutant Fbs to N-glycans and N-glycan linked glycomolecules suggests that the mutants may be used to reduce BACE1 levels and reduced synaptic deficits in Alzheimer patients (see Ohtsubo, et al., Sugar Chains: Decoding the function of Glycans, p. 9 (2015)). Another glycoprotein that is involved in Alzheimer's disease is the amyloid precursor protein (APP) whose cleavage products, particularly amyloid-\u03b2, accumulate in Alzheimer disease (AD). APP is present at synapses and is thought to play a role in both the formation and plasticity of these critical neuronal structures. Wild type Ubiquitin ligase Fbxo2 is believed to regulate APP levels and processing in the brain and may be a therapeutic approach to modulating AD pathogenesis and associated symptoms. It is proposed here that Fbs variants described herein would improve the efficacy of this beneficial effect.",
+                        "Another use for Fbs variants is as an antiviral agent. Many viruses have glycomolecules on their surface such as Ebola virus, herpes virus and influenza virus and many others. Fbs variants are expected to efficiently interact with envelope glycoproteins to prevent infection of new cells.",
+                        "Another use for Fbs variants is for counteracting hearing loss associated with aging and deterioration of inner ear homeostasis.",
+                        "The role of glycoproteins in health and disease is extensive although not yet well understood. Fbs variants that bind to glycomolecules in membranes of cells may prove to be very useful therapeutic agents and may further increase the understanding of the role of glycoproteins for diseases where glycomolecules from host and/or pathogen are incorrectly folded in viva Fbs variants may be substituted for other variants having a consensus sequence (SEQ ID NO: 1) or binding reagents that mimic the function of these variants.",
+                        "In some embodiments, the binding reagent is a fusion protein. For example, any of the above polypeptide can be fused to one or more reagents that can serve as a label, tag, or immobilization module. Examples of labels include fluorescent, chemiluminescent, or radioactive labels.",
+                        "The fusion protein may be immobilized on a two dimensional matrix such as filter paper or a three dimensional matrix such as a polymer that forms a fabric or a polymer or a surface of a device such as a microfluidic device.",
+                        "FIG. 1 shows the work flow that results in an enriched N-glycan linked peptide that can be analyzed by mass spectrometry or by other analytical techniques such as chromatography, electrophoresis, nuclear magnetic resonance spectrometry and fluorescence-mediated detection, or a combination thereof.",
+                        "A glycomolecule sample can be derived from any source such as for example, a biological fluid such as blood, serum, urine or mucose, a fermentation media containing secreted cell products, cell lysate from a biopsy or fermentation may be analyzed by a workflow as demonstrated in FIG. 1. N-glycan linked glycomolecules can be in or from a sample of a recombinantly synthesized, chemically synthesized, an environmental sample (e.g., soil, water, air, surface swab). Such sources include animals (including humans, domesticated and non-domesticated animals), avian, insect, aquatic, bacteria, viruses and plants.",
+                        "In some embodiments, the N-glycan linked glycomolecule sample is a complex mixture. For example, the complex mixture may contain multiple N-linked glycan glycomolecules as well as other non-N-glycan linked glycomolecules. For example, when the sample is a body fluid such as serum or plasma, the sample contains not only many different N-linked glycan glycomolecules, but also non-carbohydrate entities that do not have N-glycans such as lipids, DNA, RNA, organelles, whole cells and fragments of cells.",
+                        "In some embodiments, the N-linked glycan glycomolecules can be native or denatured. For example, the N-linked glycan glycomolecules can be denatured by heat treatment, exposure to a reducing agent or other agents that tend to disrupt the native conformation.",
+                        "Embodiments of the binding reagents provided herein selectively and reversibly binds to all N-linked glycan glycomolecules, because the binding reagents target a core pentasaccharide N-glycan structure at the reducing end of the glycan irrespective of whether the N-glycan is charged or uncharged. Charged N-glycans may contain a sialic acid linked to the terminal mannose on the forked structure shown in FIGS. 1, 5, 7C. Examples of N-glycans, include high mannose, hybrid, and complex-type N-glycans. More specifically, the pentasaccharide is Man(\u03b11-3)(Man(\u03b11-6))Man(\u03b21-4)GlcNAc(\u03b21-4)GlcNAc. In some cases, a fucose may also be found attached to the ultimate GlcNAc.",
+                        "Surprisingly, as described in Example 5 and shown in FIG. 3, that binding of the binding reagent to the core structure is not affected by the presence of fucose on the core structure. Embodiments of the binding reagents are capable of binding N-glycans and/or N-glycan linked glycomolecules in a substantially unbiased manner. This is an important feature as it avoids under-representing or even missing N-linked glycan glycomolecules in a mixture. The Examples illustrate effective binding of charged N-linked glycan glycomolecules (see Examples 7, 9, 10, 11) under suitable salt conditions and this binding is substantially unbiased (see Examples 8, 12, 13). Prior art methods preferentially capture either charged or uncharged N-glycans, but not both.",
+                        "The binding reagents described herein do not include lectins that bind GlcNAc in any position of the glycan, including the branched antennae of complex and hybrid glycans and does not target the core structure.",
+                        "For cell lysates, it may be desirable to degrade DNAs and RNAs and to utilize detergents to liberate glycomolecules. If the glycomolecule of interest is an antibody, it may be desirable to bind the sample to protein A in order to obtain an enriched antibody sample. For soluble enzymes, it may be desirable to precipitate cellular material leaving the glycomolecules in the supernatant.",
+                        "This step may be followed by an enzyme cleavage step. In FIG. 1, the enzyme cleavage step is accomplished by a protease which cleaves proteins into peptides. Some of peptides will have N-linked glycans.",
+                        "At this stage, an attempt to perform mass spectrometry will generate a very complex profile as illustrated in FIG. 1. However, enrichment can be achieved if the cleavage products are reacted to a binding reagent that selectively binds all N-glycan linked glycopeptides. To achieve this, it was found that a high salt binding buffer substantially eliminated bias when a SBD of a binding protein (Fbs) was utilized as a binding reagent to selectively bind N-glycans linked to the glycomolecules. It was subsequently found that synthetic variants of this binding protein did not require high salt conditions in the binding reaction.",
+                        "In some embodiments, the high salt concentration in a buffer, sometimes referred to herein as a first buffer, is at least or about 500 mM, 750 mM, 1 M, 1.5 M, 2 M, 2.5 M, or 3 M. Suitable salts include ammonium acetate, ammonium chloride, ammonium sulfate, calcium acetate, calcium chloride, magnesium acetate, magnesium chloride, magnesium sulfate, potassium acetate, potassium chloride, potassium sulfate, sodium acetate, sodium chloride, sodium sulfate. The Examples describe the use of such suitable salts, including sodium chloride and ammonium acetate. Unexpectedly, high salt does not disrupt the binding between the binding reagent and N-glycan linked glycomolecules.",
+                        "High salt conditions are generally accepted in the prior art for use in disrupting the binding interaction between binding partners. In contrast, high salt conditions are shown herein to not disrupt the binding and instead improve binding of the binding reagent to N-glycan linked glycomolecules. Example 6 details a titration curve showing increased binding with increasing ionic strength of the buffer. Without wishing to be bound by theory, the high salt conditions may neutralize any charged N-glycan linked glycomolecules. This facilitates substantially unbiased binding of the reagent to both charged and uncharged N-glycan linked glycomolecules.",
+                        "It was also shown that the binding reagents could effectively bind N-glycan linked glycoproteins when immobilized. Immobilization shown in FIG. 1 results from forming a fusion protein between the SBD of Fbs or variants thereof and a modified DNA repair enzyme called AGT. Optionally, the fusion protein may form covalent linkages with benzyl guanine derivatives that may be present in solution or form coatings on a solid, semi-solid or porous surface such as a bead or other polymer matrix such as a well, column, plate or a microfluidic device. Example 1 illustrates the use of a binding protein that is a fusion protein between SNAP-tag and Fbs and immobilization of the binding reagent on beads.",
+                        "Example 1 and FIG. 1 show how the methodology is efficient for improving mass spectrometry results for purposes of identifying the site of attachment of an N-glycan on a protein, the composition of the N-glycan and/or the properties of the peptide to which the N-glycan is attached. Once the N-glycan linked glycopeptides are bound to the binding reagent and the non-binding material washed away, the N-glycan linked glycopeptides can be efficiently eluted using a second buffer. This buffer utilizes an organic solvent, acidic pH or low ionic strength for efficient release of bound N-glycan linked glycomolecules. Example 14 demonstrates suitable examples of different reagents for releasing captured N-glycan linked glycomolecules. In some embodiments, the buffer is volatile preferably comprising 50% v/v acetonitrile in water or the buffer is 1% acetic acid. Other reagents may be used such as water, dichloromethane, dichloroethane, pentahydrofuran, ethanol, propanol, isopropanol, methanol, nitromethane, toluene, DMSO, acetic acid, formic acid or a mixture thereof. Preferably SDS is not used as it interferes with mass spectrometry.",
+                        "The N-glycan linked glycomolecules can be readily analyzed. For example, the N-glycan linked glycomolecules can be analyzed by mass spectrometry, chromatography, electrophoresis, nuclear magnetic resonance spectrometry and fluorescence-mediated detection, or a combination thereof. See any one of Examples 2-4, 6, 8, 9, 11-17 for examples of such analyses. The analysis of the N-glycan linked glycomolecules can characterize the structure of one or more N-glycans, identify the N-glycosylation linkage site on an N-glycan linked glycopeptide or N-glycan linked glycoprotein, quantify the amount of one or more different N-glycans, or any combination thereof. Such analyses are useful in the identification of N-glycan linked glycomolecule biomarkers, may assist in disease diagnosis, or be used to monitor disease progression or treatment.",
+                        "The workflow shown in FIG. 1 is also suited for the analysis of N-glycans that may have been cleaved from proteins using a PNGase. However, such an analysis cannot provide information directly about the linkage site of N-glycan on a peptide although it can provide information on the amount and composition of the N-glycans.",
+                        "The enrichment of N-glycans by binding to an immobilized binding reagent is not limited to the use of Fbs or to the use of AGT. Advantageously, the methods and reagents described herein are substantially unbiased in capturing all N-glycan linked glycomolecules, whether an N-glycan or an N-glycan linked glycopeptide or N-glycan linked glycoprotein, and whether the N-glycans are charged or uncharged. Furthermore, the methods are readily compatible with downstream analytically methods, such as mass spectrometry, which are sensitive to interference by reagents like detergents.",
+                        "The methods and compositions described herein are non-natural. For example, the binding reagent is non-natural. Where the term \u201cwild type\u201d is used with respect to the binding agent, it refers to an isolated domain derived from a wild type protein, namely the SBD that does not itself occur naturally. Hence the wt ubiquitin ligase SBD of SEQ ID NO: 1 and 2 are non-natural. Any variant of this polypeptide is also unnatural. The variants were identified by experimentation in vitro and are not known to occur in nature either as an isolated domain or as part of a larger protein. Where the wild type is fused to an immobilization module, this is also an unnatural construction and is not known to occur in nature. The methods described herein do not mimic and cannot be construed as natural.",
+                        "SEQ ID NO: 1 has been given an amino acid number of 1 for the first amino acid in the consensus polypeptide sequence. In SEQ ID NO: 2, the first amino acid is labeled as 113 which corresponds to amino acid 1 in SEQ ID NO: 1. In fact it is a truncated version of the human fbs1 protein in which the first 112 amino acids have been removed. SEQ ID NO: 2 is one example of the consensus sequence described by SEQ ID NO: 1 and is not intended to be limiting.",
+                        "The sequence in bold is a linker sequence. The sequence preceding the linker sequence is AGT variant (immobilization module). The sequence following the linker sequence is SEQ ID NO: 2 and could be a variant thereof.",
+                        "SEQ ID NO: 4 is the immobilization module (AGT variant) as used for the fusion protein in SEQ ID NO: 3.",
+                        "All references cited herein including U.S. Provisional Ser. No. 62/020,335 filed Jul. 2, 2014 are incorporated by reference."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical terms",
+                        "explain embodiment ranges",
+                        "define articles",
+                        "define glycomolecule",
+                        "provide examples of glycomolecules",
+                        "define glycosylation",
+                        "explain glycan reaction with binding reagent",
+                        "define glycan",
+                        "describe N-glycan structure",
+                        "explain sialic acid and charged glycans",
+                        "define glycan-linked glycomolecules",
+                        "explain enriched and enriching",
+                        "define substantially unbiased",
+                        "explain cleavage enzyme",
+                        "provide examples of cleavage enzymes",
+                        "define immobilization module",
+                        "provide examples of immobilization modules",
+                        "define labeling",
+                        "provide examples of labeling methods",
+                        "define binding reagent",
+                        "describe SBD of F-box sugar domain",
+                        "explain variants of SEQ ID NO: 1 and SEQ ID NO: 2",
+                        "introduce Fbs variants for counteracting hearing loss",
+                        "discuss role of glycoproteins in health and disease",
+                        "describe therapeutic agents and binding reagents",
+                        "introduce fusion protein as binding reagent",
+                        "describe immobilization of fusion protein",
+                        "illustrate workflow for enriched N-glycan linked peptide",
+                        "discuss sources of glycomolecule samples",
+                        "describe complex mixture of N-glycan linked glycomolecules",
+                        "discuss native or denatured N-linked glycan glycomolecules",
+                        "introduce binding reagents that selectively bind N-glycan glycomolecules",
+                        "describe pentasaccharide N-glycan structure",
+                        "discuss unbiased binding of binding reagents",
+                        "compare to prior art methods",
+                        "describe degradation of DNAs and RNAs",
+                        "introduce enzyme cleavage step",
+                        "discuss high salt binding buffer",
+                        "describe binding reagents that do not require high salt conditions",
+                        "discuss immobilization of binding reagents",
+                        "describe elution of N-glycan linked glycopeptides",
+                        "discuss analysis of N-glycan linked glycomolecules",
+                        "describe characterization of N-glycans",
+                        "discuss identification of N-glycan linked glycomolecule biomarkers",
+                        "describe advantages of methods and reagents",
+                        "discuss non-natural methods and compositions"
+                    ],
+                    "num_characters": 23677,
+                    "outline_medium": [
+                        "define technical terms",
+                        "explain embodiment ranges",
+                        "define glycomolecule and glycoproteins",
+                        "describe glycosylation and glycans",
+                        "explain N-glycan linked glycomolecules and enrichment",
+                        "define substantially unbiased binding",
+                        "describe cleavage enzymes",
+                        "explain immobilization modules",
+                        "describe labeling of N-glycans and non-carbohydrate entities",
+                        "define binding reagent and its variants",
+                        "propose applications of Fbs variants",
+                        "introduce Fbs variants for counteracting hearing loss",
+                        "describe role of glycoproteins in health and disease",
+                        "motivate Fbs variants as therapeutic agents",
+                        "describe fusion protein as binding reagent",
+                        "illustrate workflow for enriched N-glycan linked peptide analysis",
+                        "describe sources of glycomolecule samples",
+                        "describe complex mixture of N-glycan linked glycomolecules",
+                        "motivate binding reagents for selective and reversible binding",
+                        "describe high salt binding buffer for unbiased binding",
+                        "illustrate immobilization of binding reagent",
+                        "describe elution of bound N-glycan linked glycomolecules",
+                        "summarize analysis of N-glycan linked glycomolecules"
+                    ],
+                    "outline_short": [
+                        "define key terms",
+                        "describe glycomolecules and glycans",
+                        "explain binding reagents and immobilization modules",
+                        "detail variants of SEQ ID NO: 2 and their benefits",
+                        "propose applications of Fbs variants",
+                        "introduce Fbs variants for counteracting hearing loss",
+                        "describe binding reagents and their applications",
+                        "illustrate workflow for enriching N-glycan linked peptides",
+                        "detail binding reagents' properties and advantages",
+                        "describe immobilization and elution of N-glycan linked glycomolecules",
+                        "summarize methods and compositions as non-natural and unbiased"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [
+                        "The following experiments refer to various buffers. These are as follows:",
+                        "Trypsin digestion buffer: 50 mM ammonium bicarbonate.",
+                        "The first buffer or binding buffer may be a high salt buffer, high salt volatile buffer, a low salt buffer or a low salt volatile buffer. Volatile buffers are preferred for mass spectrometry.",
+                        "High salt buffer: 2 M NaCl, 20 mM Tris-HCl, 1 mM EDTA, pH 7.5;",
+                        "High salt volatile buffer: 2 M ammonium acetate, pH 7.5 (for use in mass spectrometry);",
+                        "Low salt buffer: 50 mM NaCl, 20 mM Tris-HCl, 1 mM EDTA, pH 7.5;",
+                        "Low salt volatile buffer: 50 mM ammonium acetate, pH 7.5 (for use in mass spectrometry);",
+                        "Dialysis buffer: may be the same as the first buffer;",
+                        "The second buffer is 50% acetonitrile v/v in water."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Enrichment of N-Glycan Linked Glycomolecules from a Complex Mixture (FIG. 1)**",
+                                "Protein or peptide based glycomolecules within a complex sample may be characterized using Fbs to accomplish enrichment of N-glycan linked glycopeptides. For example, the method may applied to biological samples such as serum, urine, cell lysates, or other body fluids. The complex mixture containing N-glycan linked glycoprotein, non-glycosylated protein and other biomolecules is first digested with a protease such as trypsin in 50 mM ammonium bicarbonate. The protease is optionally removed by filtration or other means such as immobilization. A protease inhibitor such as phenylmethanesulfonyl fluoride (PMSF) or trypsin inhibitor is added to inhibit proteolysis. The glycopeptide and peptide mixture is then incubated with Fbs immobilized on beads or immobilized on another surface in either a low salt or high salt buffer. While the N-glycan linked glycopeptides bind to immobilized Fbs, O-linked glycopeptides and non-glycosylated peptides or proteins will remain in solution. One or more washing steps are carried out to remove material that is not bound to immobilized Fbs. The wash buffer is typically the same as the buffer used for binding. The bound N-glycan linked glycopeptides are then eluted using a mass spectrometry (mass spec) friendly solvent such as 50% acetonitrile in water. The enriched sample is analyzed by mass spec (Nilsson, et al., Nature Methods, 6, 809-813 (2009)) to reveal the identity and relative quantity of N-glycan linked glycopeptides (see box labeled \u201cafter selection\u201d)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "enrich N-glycan linked glycomolecules",
+                                "digest complex mixture with trypsin",
+                                "incubate with Fbs immobilized on beads"
+                            ],
+                            "num_characters": 1594,
+                            "outline_medium": [
+                                "enrich N-glycan linked glycomolecules"
+                            ],
+                            "outline_short": [
+                                "enrich N-glycan linked glycomolecules"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Over-Expression of an Exemplary Binding Reagent and Immobilization to a Solid Support**",
+                                "An example of a binding reagent shown in FIG. 1 is Fbs fused to the SNAP-tag protein. SNAP-tag substrates are derivatives of benzylpurines and benzylchloropyrimidines. In the conjugation reaction, the substituted benzyl group of the substrate is covalently attached to the SNAP-tag. SNAP-Fbs expresses at a high level as a soluble protein in E. coli using pSNAP-tag(T7)-2 vector (New England Biolabs, Ipswich, Mass.).",
+                                "SNAP-Fbs is efficiently conjugated to BG beads (SNAP Capture Pull-Down resin (New England Biolabs, Ipswich, Mass.): SNAP-Fbs protein is reacted with BG beads at 4\u00b0 C. overnight in a DTT-containing buffer (4 mM DTT, 20 mM tris-HCl pH 7.5, 1 mM EDTA, 50 mM NaCl). After the conjugation reaction, SNAP-Fbs beads are washed with 40\u00d7 bead volume of low salt buffer."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "over-express and immobilize binding reagent"
+                            ],
+                            "num_characters": 870,
+                            "outline_medium": [
+                                "over-express and immobilize binding reagent"
+                            ],
+                            "outline_short": [
+                                "over-express and immobilize binding reagent"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**N-Glycan-Specific Binding by the Binding Reagent (FIG. 2A)**",
+                                "N-Glycan-specific binding of the binding reagent was demonstrated using RNase B. RNase B is a glycoprotein with an N-linked high mannose glycan. Thirty micrograms RNase B was denatured by boiling in 0.5% SDS and 40 mM DTT. After boiling, 1% NP-40 was added. The denatured RNase B was either untreated or treated with PNGase F (for 1 hour at 37\u00b0 C. in 50 mM sodium phosphate, pH 7.5) to remove N-glycans. The untreated and treated samples were incubated with SNAP-Fbs conjugated to BG beads (SNAP-Capture Pull-Down resin) at 4\u00b0 C. for 1 hour in low salt buffer. Fbs beads were centrifuged, then washed twice with the low salt buffer, and bound proteins on the beads were eluted in 1\u00d7 SDS gel loading buffer (New England Biolabs, Ipswich, Mass.) and analyzed by SDS-PAGE. Lane 1 is control untreated RNase B containing N-glycan that was not exposed to Fbs beads. Lane 2 is an RNase B sample pre-treated with PNGase F and then incubated with Fbs beads. Thus N-linked glycoprotein is not bound and eluted. Lane 3 is untreated RNaseB which was bound and eluted from Fbs beads."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "demonstrate N-glycan-specific binding",
+                                "analyze bound proteins by SDS-PAGE"
+                            ],
+                            "num_characters": 1135,
+                            "outline_medium": [
+                                "demonstrate N-glycan-specific binding"
+                            ],
+                            "outline_short": [
+                                "demonstrate N-glycan-specific binding"
+                            ]
+                        },
+                        {
+                            "title": "Example 4",
+                            "paragraphs": [
+                                "**The Binding Reagent Efficiently Binds to N-Glycan Linked Glycomolecules with Complex N-Glycans (FIG. 2B)**",
+                                "Efficient binding of the binding reagent to N-glycan linked glycomolecules with complex N-glycans was demonstrated using human IgG (Bethyl Laboratories, Montgomery, Tex.). Binding depends on the presence of the N-glycan. Human IgG is a glycoprotein with an N-linked glycan in the heavy chain (at Asn297) with complex glycan structure, and typically no N-linked glycans are present in the light chain. The same conditions described in Example 3 were used to assay 50 \u03bcg human IgG binding to Fbs. Lane 1 is a control showing the IgG without any treatment. Lanes 3 and 4 show that only the heavy chain is bound by Fbs beads and only when glycan is present (Lane 4). In lanes 2, 3 and 4, the asterisk indicates a small amount of SNAP-Fbs protein that is released from the beads during boiling in gel loading buffer to elute bound heavy chain. The light chain of IgG, on which there is no N-linked glycan, did not bind to Fbs beads. This is an example to show that Fbs binding is specific for N-linked glycoproteins or glycopeptides."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "bind to N-glycan linked glycomolecules with complex N-glycans",
+                                "analyze bound proteins by SDS-PAGE"
+                            ],
+                            "num_characters": 1138,
+                            "outline_medium": [
+                                "bind to N-glycan linked glycomolecules with complex N-glycans"
+                            ],
+                            "outline_short": [
+                                "bind to N-glycan linked glycomolecules with complex N-glycans"
+                            ]
+                        },
+                        {
+                            "title": "Example 5",
+                            "paragraphs": [
+                                "**The Binding Reagent is Unaffected by Fucosylation of the Core Pentasaccharide (FIG. 3)**",
+                                "Fbs binds to N-glycan and N-glycan with fucose modification at the reducing end of GlcNAc. Isothermal titration calorimetry was used to assay the interaction between Fbs and core structure glycans. Man3GlcNAc2 (M3N2) and Man3GlcNAc2 with (alpha 1-6) fucose modification at the reducing end of GlcNAc (M3N2F) were used as binding substrates (both substrates were purchased from Prozyme, Hayward, Calif. SNAP-Fbs was dialysed against low salt buffer and the glycans were also dissolved in the same dialysis buffer. A Nano ITC instrument (TA Instruments, Lindon, Utah) with 170 \u03bcl cell volume and 50 \u03bcl buret volume was used. Every 300 seconds, 2.97 \u03bcl of 90 \u03bcM glycan was automatically injected into 9 \u03bcM Fbs solution. The data was fitted using a single site binding model (Nanoanalyze software (TA Instruments, Lindon, Utah)), and the Kd was calculated. The affinity of Fbs for Man3GlcNAc2 (Kd M3N2=0.123\u00b10.036 \u03bcM) is very similar to the affinity of Fbs for Man3GlcNAc2 modified with fucose (Kd M3N2F=0.128\u00b10.037 \u03bcM) indicating that N-glycan binds to Fbs tightly and fucosylation of the first GlcNAc residue from the reducing end does not impair binding by Fbs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "assay interaction between Fbs and core structure glycans",
+                                "calculate Kd using isothermal titration calorimetry"
+                            ],
+                            "num_characters": 1252,
+                            "outline_medium": [
+                                "show unaffected binding by fucosylation"
+                            ],
+                            "outline_short": [
+                                "show unaffected binding by fucosylation"
+                            ]
+                        },
+                        {
+                            "title": "Example 6",
+                            "paragraphs": [
+                                "**2-AB Fluorophore Labeling at the Reducing End of M3N2 Abolishes Binding by Fbs (FIG. 4)**",
+                                "When PNGase F is used to trim N-glycans away from the peptides or proteins, the terminal GlcNAc residue becomes available for modification. A common modification is fluorophore labeling using 2-AB dye. The primary amino group of the dye performs a nucleophilic attack on the carbonyl carbon of the acyclic reducing terminal residue to form a partially stable Schiff's base. The Schiff's base imine group is chemically reduced to give a stable labeled glycan. The conserved terminal GlcNAc residue is thus referred to as the \u201creducing end\u201d of a glycan species. Upon 2-AB labeling, the carbohydrate ring structure is no longer capable of forming. Fbs binding to 2-AB labeled M3N2 was tested and the results are shown in FIG. 4. Fifty picomoles of 2-AB labeled M3N2 in low salt buffer were incubated with SNAP-Fbs beads or SNAP control beads (SNAP Capture beads conjugated to SNAP-tag Purified Protein, New England Biolabs, Ipswich, Mass.). The majority of the 2-AB labeled fluorophore was found in the flow-through and low salt buffer wash fractions in both samples indicating that 2-AB labeling disrupts the interaction between glycan and Fbs. This consequence does not affect the application of Fbs for N-glycan linked glycomolecule enrichment as the 2-AB labeling step is an optional step downstream from the enrichment step."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "label M3N2 with 2-AB fluorophore",
+                                "test Fbs binding to labeled M3N2"
+                            ],
+                            "num_characters": 1419,
+                            "outline_medium": [
+                                "abolish binding by 2-AB fluorophore labeling"
+                            ],
+                            "outline_short": [
+                                "abolish binding by 2-AB fluorophore labeling"
+                            ]
+                        },
+                        {
+                            "title": "Example 7",
+                            "paragraphs": [
+                                "**The Binding Reagent Effectively Binds Charged N-Glycans Containing Sialic Acids (FIG. 5)**",
+                                "Isothermal titration calorimetry analysis of SGP (Fushimi Pharmaceutical Co., Marugame, Japan) binding to SNAP-Fbs. SNAP-Fbs was dialysed against low salt buffer and SGP was also dissolved in the same low salt buffer. A Nano ITC instrument with 170 \u03bcl cell volume and 50 \u03bcl buret volume was used. Every 300 seconds, 2.97 \u03bcl of 270 \u03bcM SGP was automatically injected into 27 \u03bcM Fbs solution. The data was fitted using a single site binding model (Nanoanalyze software), and Kd was calculated. In low salt conditions, SNAP-Fbs binds a complex-type oligosaccharide chain with two terminal sialic acid residues with a Kd=3.0 \u00b10.12 \u03bcM."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze binding of SNAP-Fbs to SGP using isothermal titration calorimetry"
+                            ],
+                            "num_characters": 723,
+                            "outline_medium": [
+                                "bind charged N-glycans containing sialic acids"
+                            ],
+                            "outline_short": [
+                                "bind charged N-glycans containing sialic acids"
+                            ]
+                        },
+                        {
+                            "title": "Example 8",
+                            "paragraphs": [
+                                "**Binding to Charged N-Glycan Linked Glycomolecules by the Binding Reagent is Substantially Unbiased in High Salt Buffer (FIG. 6A)**",
+                                "Fbs binding to complex N-glycan linked glycomolecules is substantially unbiased in a high salt buffer. SGP was labeled with two tetramethylrhodamine (TMR) fluorophores on the peptide portion via lysine residues according to the TMR protein labeling kit protocol (Genaxxon Bioscience, Ulm Germany). After TMR labeling, a fraction of the SGP-TMR sample was processed with neuraminidase (New England Biolabs, Ipswich, Mass.) to remove terminal sialic acid residues. Two binding conditions (LS, low salt buffer and HS, high salt buffer) were tested. The presence of sialic acid residues significantly reduces binding in low salt conditions (compare column 1 vs. column 3) whereas binding of sialylated SGP and asialo-SGP is greater than 65% in both low salt and high salt buffer (see column 2 and column 4). TMR Fluorescence in the supernatant was measured using a SpectraMax M5 fluorometer (excitation 555 nm and emission 595 nm with 590 nm cutoff). Binding of SGP-TMR to Fbs (y-axis) is determined by subtracting the fluorescence measured in the bead supernatant from the input fluorescence."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "label SGP with TMR fluorophores",
+                                "test Fbs binding to labeled SGP in low and high salt buffers"
+                            ],
+                            "num_characters": 1223,
+                            "outline_medium": [
+                                "demonstrate unbiased binding to charged N-glycan linked glycomolecules"
+                            ],
+                            "outline_short": [
+                                "demonstrate unbiased binding to charged N-glycan linked glycomolecules"
+                            ]
+                        },
+                        {
+                            "title": "Example 9",
+                            "paragraphs": [
+                                "**Binding of the Binding Reagent to Complex N-Glycan Linked Glycomolecules is Enhanced by Increasing the Ionic Strength of the Binding Buffer (FIGS. 6A-6C)**",
+                                "In FIG. 6B, sialylglycopeptide labeled with two pentamethylrhodamine (PMR) fluorophores on the peptide portion (via lysines), was used as an N-glycopeptide substrate for a binding assay with Fbs beads. SGP-TMR was dissolved in various solutions with increasing concentrations of ammonium acetate. Each sample was incubated with SNAP-Fbs beads for 20-30 minutes at 4\u00b0 C. The % SGP-TMR bound to the beads was determined by measuring the fluorescence in the bead supernatant and then subtracting this value from the input fluorescence. TMR Fluorescence was measured using a SpectraMax M5 fluorometer (Molecular Devices, Sunnyvale, Calif.) (excitation 555 nm and emission 595 nm with 590 nm cutoff). Strikingly, binding of the Fbs to the complex N-glycan linked glycomolecule was enhanced by increasing the ionic strength of the binding solution in the range of 0 mM to 3000 mM ammonium acetate.",
+                                "**Example 10**",
+                                "**High Salt Significantly Improves Binding of wtFbs to Complex N-Glycan Linked Glycomolecules (FIG. 6C)**",
+                                "Isothermal titration calorimetry was employed to analyze the binding of SNAP-wtFbs to SGP in solution. High salt buffer was tested as the common buffer for the binding reagent and the substrate SGP. Other conditions for the ITC experiment were the same as those listed in Example 7. The single change in NaCl concentration from 50 mM to 2000 mM resulted in a much greater affinity between wtFbs and SGP. The table in FIG. 6C shows that high salt conditions result in a Kd=1.43\u00b10.12 \u03bcM which is more than a 2-fold higher affinity compared to 3.0\u00b10.12\u03bcM in low salt buffer.",
+                                "**Example 11**",
+                                "**Immobilized Fbs Binding Reagent Facilitates Enrichment of N-Glycan Linked Glycomolecules from a Complex Sample (FIG. 7A)**",
+                                "Fbs beads were used to capture and enrich N-glycopeptides from a complex mixture. The complex mixture was a tryptic digest of RNase B spiked with SGP to serve as a complex, sialylated glycopeptide. RNase B contains several non-glycosylated peptides and several different high mannose N-glycopeptides (labeled in the enlargement as: M5N2, M6N2). One hundred eighty-five micrograms RNase B was digested with 4 micrograms trypsin (New England Biolabs, Ipswich, Mass.) in trypsin digestion buffer and then filtered with a 10 kDa Microcon 10 centrifugal filter unit (Millipore, Billerica, Mass.) to remove trypsin and any undigested RNase B. PMSF (1 mM final concentration) was added to inhibit any residual trypsin. 100 micrograms SGP was added to the RNase B digest. Then immobilized binding reagent, SNAP-Fbs beads in this example, was mixed with the complex mixture and incubated at 4\u00b0 C. for 1 hour in the presence of either low salt volatile buffer or high salt volatile buffer. The beads were washed with low salt volatile buffer or high salt volatile buffer, respectively. The bound N-glycopeptides were eluted using 50% acetonitrile, then lyophilized and analyzed by mass spec (LC-MS method). The TIC and enlargement demonstrates wild type Fbs-mediated binding and enrichment of N-glycopeptides from a complex mixture. The dotted line indicates the chromatogram of the input mixture without enrichment. The solid black line indicates the chromatogram of the high salt enrichment sample (HS enrichment=2M ammonium acetate pH 7.5). The solid gray line indicates the chromatogram of the low salt enrichment sample (LS enrichment=50 mM ammonium acetate pH 7.5). The enlarged box focuses on the glycomolecules that elute between 20-22 minutes whereas the non-glycosylated peptides elute before 20 minutes. Strikingly, the non-glycosylated peptides were not enriched. Thus, N-glycopeptides present in the sample were selectively bound by the binding reagent when using LS or HS enrichment.",
+                                "**Example 12**",
+                                "**Quantification of the Selective Binding of N-Glycopeptides from a Complex Mixture (FIG. 7B)**",
+                                "The different peptides and N-glycopeptides present in the complex mixture described in Example 11 were quantified. The extracted ion chromatogram results demonstrate that the binding reagent is selective for N-glycopeptides and does not capture non-glycosylated peptides from the complex mixture. Importantly, high salt volatile buffer improves the enrichment of SGP to the same level as non-sialylated M5N2 and M6N2. This demonstrates the universal ability of the wild-type Fbs binding reagent to bind all N-glycan linked glycomolecules in a substantially unbiased manner.",
+                                "**Example 13**",
+                                "**Wild-Type Fbs Enrichment of a Diverse Set of N-Linked Glycopeptides is Substantially Unbiased in High Salt Volatile Buffer (FIG. 7C)**",
+                                "One hundred eighty micrograms human transferrin was digested with nine micrograms trypsin in 50 mM ammonium bicarbonate and then filtered with a 10 kDa Microcon 10 centrifugal filter unit to remove trypsin and any undigested transferrin. PMSF (1 mM final concentration) was added to inhibit any residual trypsin. The filter flow-through sample was adjusted to 2M ammonium acetate, pH 7.5 (high salt volatile buffer conditions) and then incubated with SNAP-Fbs beads for 60 minutes at 4\u00b0 C. Then the sample was washed three times with high salt volatile buffer and then eluted with 50% acetonitrile (in water). The sample was lyophilized to remove residual bicarbonate, ammonium acetate, water and acetonitrile.",
+                                "The sample was resuspended in PNGase F reaction buffer according to the New England Biolabs standard protocol. PNGaseF was added to release N-linked glycans from the digested glycopeptides. In this experiment N-glycans were released to reduce the complexity of the sample in order to allow highly accurate determination of each glycan species. N-glycans were labeled with 2-AB fluorophore (Prozyme, standard protocol) and analyzed by LC-MS. The composition of human transferrin is known by those skilled in the art so the glycans eluted in each peak can be inferred by using glycan standards. Mass analysis is also used to confirm the mass of each glycan type. When using high salt volatile buffer, the recovery of various types of complex N-linked glycomolecules was substantially unbiased within the range of 28.2 to 42.7%.",
+                                "**Example 14**",
+                                "**N-Glycan Linked Glycomolecules are Reversibly Bound to Immobilized Binding Reagent and Can Be Readily Released (FIG. 8)**",
+                                "N-glycan linked glycomolecules reversibly binds to Fbs beads. Different reagents were tested for releasing bound N-linked glycopeptides from Fbs beads. 100 \u03bcl Fbs beads with bound SGP-TMR were collected, washed with 300 \u03bcl low salt binding buffer once, and divided into three aliquots (30 \u03bcl beads each aliquot). 100 ul of 2 M ammonium bicarbonate (NH4HCO3), 50% acetonitrile, or 1% acetic acid were added to Fbs beads with bound SGP-TMR to elute SGP-TMR. The beads were centrifuged and supernatants were collected. The solvent in the supernatant was removed by vacuum evaporation using a speedvac, and SGP-TMR was reconstituted in low salt buffer. SGP-levels were measured as described in Example 9. FIG. 11A shows that 50% acetonitrile readily released approximately 78% of SGP-TMR in the first 100 \u03bcl elution. 1% Acetic acid released approximately 65% of SGP-TMR. In contrast, less than 30% of bound N-glycan linked glycomolecules were released with 2 M ammonium bicarbonate.",
+                                "**Example 15**",
+                                "**Isolation of Fbs Mutants that Possess Improved Affinity to Complex N-Linked Glycomolecules (FIG. 9A-9C)**",
+                                "Fetuin, which contains sialylated complex N-linked glycans, served as the complex N-linked glycomolecule in this example. Fetuin was conjugated to Affigel 15 resin (Bio-Rad, Hercules, Calif.), and then denatured by 6 M Guanidine HCL. After denaturation, the fetuin beads were washed with 50 bead volumes of low salt buffer to remove Guanidine HCL. This immobilized denatured Fetuin was used to screen Fbs mutants for improved affinity to complex N-linked glycomolecules in low salt conditions in a fetuin pull-down assay. In this assay, cell lysates containing the same amount of wild type or mutant Fbs protein were incubated with the same amount of fetuin beads at 4\u00b0 C. for 1 hour. After incubation, the fetuin beads were washed three times with low salt buffer. The bound Fbs proteins were eluted by 1\u00d7 gel loading buffer, and analyzed by SDS-PAGE. In the fetuin pull-down assay, the amount of Fbs mutant protein shown on the SDS-PAGE gel indicates the relative affinity of each Fbs mutant for binding to a complex N-linked glycomolecule. Fbs amino acid residue serine 155 was mutated to alanine to assess the effect on the interaction with complex N-linked glycomolecules. Mutation of Ser155 to alanine was expected to reduce the affinity of the interaction between Fbs and fetuin according to the published report of Tanaka et al. (Tanaka, et al. PNAS). Contrary to the expectation, the S155A mutant showed 1.5 times greater ability to be pulled down by immobilized fetuin. Further investigation revealed that Fbs mutant S155G shows 2.0-fold greater capacity to interact with fetuin as determined by the fetuin pull-down assay.",
+                                "To expand the search for high affinity Fbs mutants, plasmid display (Speight, et al., Chemistry & Biology, 8, 951-965 (2001)) was used to isolate Fbs mutants from a mutant library prepared by saturation mutagenesis of positions D154, S155, G156, F173 and E174 of human Fbs. Four additional Fbs mutants (designated as PPG, PPS, PPR, and YR in the table FIG. 9A) were identified which possess higher affinity (up to 2.8 fold increase) to the complex N-linked glycans on Fetuin (FIG. 9B). The Fbs mutant containing combined S155G and YR mutations (S155G+YR, also termed as GYR) or PPR and YR mutations (PPR+YR, also termed as PPRYR) possess even higher affinity (up to 4.5 fold increase) against complex N-linked glycans on Fetuin (FIG. 9C).",
+                                "**Example 16**",
+                                "**Fbs GYR and PPRYR Mutants Show Substantially Reduced Bias in Binding to All Types of N-Linked Glycomolecule (FIGS. 10A-10C)**",
+                                "WT Fbs preferably binds to high mannose N-glycan linked glycomolecules such as RNase B, and possesses far lower affinity to sialylated complex N-glycan linked glycomolecules such as Fetuin. Fbs GYR and PPRYR mutants show significantly improved affinity to Fetuin (FIG. 9A-9C). The same amount of wild-type Fbs, Fbs GYR mutant and PPRYR mutant proteins were conjugated to SNAP capture resin using the conditions described in Example 2 (FIG. 10B). Binding to RNase B with high mannose N-glycan and Fetuin with siaylated complex N-glycan linked glycomolecules was analyzed in a single experiment. A mixture of denatured Fetuin and RNase B (denatured by boiling for 10 minutes in the presence of 1\u00d7 Rapid PNGase F buffer (New England Biolabs, Ipswich, Mass.) were pulled down by the immobilized Fbs beads conjugated with equal amount of WT, GYR or PPRYR Fbs proteins (FIGS. 10A and 10B). The bound fetuin and RNase B were eluted by 1\u00d7 gel loading buffer, and analyzed by -PAGE/Coomassie blue staining. The amount of fetuin or RNase B on -PAGE gels were quantified using Image J. The ratio of Fetuin to RNase B (Fetuin/RNase B) is arbitrarily defined as 1 in the input (FIGS. 10A, Lane 7 and 10C). In low salt volatile buffer conditions, wild-type Fbs pulled down a very small amount of Fetuin (FIG. 10A, Lane1), and the Fetuin/RNase B is only 0.29 (FIG. 10C), which indicates biased N-glycan linked glycomolecule binding. In contrast, in the same low salt volatile buffer conditions, the GYR and PPRYR mutants pulled down significantly more Fetuin (FIG. 10A, Lane 2 and 3) and the Fetuin/RNase B ration is very near to 1 (FIG. 10C), indicating substantially unbiased in N-glycan linked glycomolecule binding. In high salt volatile buffer wild-type Fbs pulled down more Fetuin (FIG. 10A, Lane 4) and the Fetuin/RNase B ratio is increased to 0.92 (FIG. 10C), which indicates high salt conditions help to reduce the bias in N-glycan linked glycomolecule binding to wild-type Fbs. This is consistent with the data shown in FIGS. 6A-C and 7A-C. For the GYR and PPRYR mutants, the high salt conditions are not necessary, since Fetuin and RNase B pulldown was not enhanced (FIG. 10A, Lane 5 and 6, and FIG. 10C). The asterisk (*) indicates some SNAP-Fbs leached from the prototype immobilized Fbs beads.",
+                                "**Example 17**",
+                                "**GYR and PPRYR Show Enhanced Binding to a Glycopeptide with a Complex N-Glycan (SGP-TMR) (FIG. 11)**",
+                                "SGP-TMR affinity to the Fbs in low salt volatile buffer was analyzed by a pull-down assay using SNAP Capture Pull-Down resin conjugated with equal amounts of WT, GYR or PPRYR Fbs proteins (FIG. 10B). The data shown as a bar graph in FIG. 11 was generated using the same experimental procedure as described in example 8. As compared to WT Fbs, GYR and PPRYR mutants show 3-fold and 2-fold increased affinity to SGP-TMR, respectively.",
+                                "**Example 18**",
+                                "**Enrichment of N-linked Glycomolecules from a Solution by Application of Fbs Immobilized to a Solid Support, Which is Compatible with Microfluidic Sample Processing**",
+                                "In the previous examples, the utility of Fbs has been described in the context of a SNAP-Fbs fusion protein, which is designed for immobilization to benzyl guanine beads (SNAP Capture Pull-down resin). Fbs may also be employed alone or as a fusion to other protein immobilization modules. Fbs, an Fbs fusion protein or Fbs conjugated to another type of immobilization module may be immobilized to the appropriate solid support. For example, Fbs or an Fbs fusion protein may be immobilized within a channel of a microfluidic device designed for processing small sample volumes (picoliter to milliliter scale). In a microfluidic device, a liquid sample containing N-linked glycomolecules would be allowed to come into contact with immobilized Fbs. The N-linked glycomolecules of interest will bind and other molecules in the sample would be washed away. After a washing step(s), 50% acetonitrile or other mass-spec friendly reagent may be added to elute the N-linked glycomolecules of interest. A primary advantage of such a microfluidic device is the potential for automated sample processing in-line with automated analysis of the N-linked glycomolecules of interest.",
+                                "**Example 19**",
+                                "**Enrichment of N-Linked Glycomolecules from a Solution by Mixing with Non-Immobilized Fbs**",
+                                "Fbs or Fbs fusion protein may be expressed as a recombinant protein that is readily soluble in an aqueous solution and readily available for interaction with a sample containing N-linked glycomolecules in solution. Separation of the N-linked glycomolecules of interest bound to Fbs may be separated from the other molecules in the sample by several methods including filtration or binding of the complex of interest to a solid support via an immobilization module. In the case of filtration, the N-linked glycomolecules bound to Fbs may be captured on a filter membrane with a molecular weight cut-off of 20 kDa or larger. For example, the Fbs SBD is greater than 20 kDa and the SNAP-Fbs fusion protein is approximately 45 kDa. Therefore, N-linked glycomolecules bound to the Fbs SBD or to an Fbs fusion protein will not pass through the membrane and other molecules less than 20 kDa will pass through a membrane with a molecular weight cut-off of 20 kDa or larger. After a washing step(s), 50% acetonitrile or other mass spec friendly reagent may be added to elute the N-linked glycomolecules from Fbs. This approach is envisaged for samples that have been processed by protease to create N-linked glycopeptides and/or processed with PNGase F to release N-linked glycans. These 2 molecules types may be enriched and then be eluted through the membrane for isolation and analysis. This hypothetical application of Fbs for enrichment of N-linked glycomolecules is similar to the work of Deeb, et al. who used a method named \u201cN-glyco FASP\u201d, whereby lectin-based enrichment was used to quantify N-linked glycoproteins in lymphoma cells (Deeb, et al., Mol Cell Proteomics, 1, 240-51 (2014)).",
+                                "For all patents, applications, or other references cited herein, such as non-patent literature and reference sequence information (such as database or accession numbers) are incorporated by reference in its entirety for all purposes as well as for the proposition that is recited. Where any conflict exits between a document incorporated by reference and the present application, this application will control.",
+                                "As will be recognized by the person having ordinary skill in the art following the teachings of the specification, the foregoing aspects can be claimed by Applicant in any combination or permutation. To the extent one or more elements and/or features is later discovered to be described in one or more references known to the person having ordinary skill in the art, they may be excluded from the claims by, inter alia, a negative proviso or disclaimer of the one or more elements and/or features. Headings used in this application are for convenience only and do not affect the interpretation of this application or claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe binding assay with Fbs beads",
+                                "introduce sialylglycopeptide labeled with two pentamethylrhodamine fluorophores",
+                                "detail incubation conditions with SNAP-Fbs beads",
+                                "measure TMR fluorescence",
+                                "show enhanced binding of Fbs to complex N-glycan linked glycomolecule",
+                                "describe high salt buffer conditions",
+                                "analyze binding affinity using isothermal titration calorimetry",
+                                "introduce SNAP-wtFbs and SGP in solution",
+                                "detail ITC experiment conditions",
+                                "show improved affinity in high salt buffer",
+                                "introduce immobilized Fbs binding reagent",
+                                "describe enrichment of N-glycopeptides from complex mixture",
+                                "detail RNase B digestion and trypsin digestion buffer",
+                                "add SGP to RNase B digest",
+                                "incubate with immobilized binding reagent",
+                                "wash with low salt or high salt volatile buffer",
+                                "elute with 50% acetonitrile",
+                                "analyze by mass spec",
+                                "show enrichment of N-glycopeptides",
+                                "quantify peptides and N-glycopeptides",
+                                "show selective binding of N-glycopeptides",
+                                "introduce human transferrin digestion",
+                                "detail PNGase F reaction buffer",
+                                "release N-linked glycans from glycopeptides",
+                                "label with 2-AB fluorophore",
+                                "analyze by LC-MS",
+                                "show unbiased recovery of complex N-linked glycomolecules",
+                                "introduce reversibly bound N-glycan linked glycomolecules",
+                                "test reagents for releasing bound N-linked glycopeptides",
+                                "elute with 2 M ammonium bicarbonate, 50% acetonitrile, or 1% acetic acid",
+                                "show release of SGP-TMR",
+                                "introduce Fbs mutants with improved affinity",
+                                "describe fetuin pull-down assay"
+                            ],
+                            "num_characters": 17062,
+                            "outline_medium": [
+                                "describe binding assay with Fbs beads",
+                                "detail SGP-TMR preparation",
+                                "outline incubation and measurement procedures",
+                                "present results of binding assay",
+                                "introduce Example 10",
+                                "describe isothermal titration calorimetry experiment",
+                                "detail high salt buffer conditions",
+                                "present results of ITC experiment",
+                                "introduce Example 11",
+                                "describe immobilized Fbs binding reagent",
+                                "detail enrichment of N-glycopeptides from complex mixture",
+                                "present results of enrichment experiment",
+                                "introduce Example 12",
+                                "describe quantification of selective binding",
+                                "present results of quantification experiment",
+                                "introduce subsequent examples"
+                            ],
+                            "outline_short": [
+                                "describe binding assay with Fbs beads",
+                                "measure fluorescence of SGP-TMR bound to beads",
+                                "show enhanced binding with increasing ionic strength",
+                                "describe isothermal titration calorimetry experiment",
+                                "analyze binding of SNAP-wtFbs to SGP in solution",
+                                "show improved affinity with high salt buffer",
+                                "describe immobilized Fbs binding reagent for enrichment",
+                                "show selective binding of N-glycopeptides from complex mixture"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "list various buffers"
+                    ],
+                    "num_characters": 737,
+                    "outline_medium": [
+                        "list various buffers"
+                    ],
+                    "outline_short": [
+                        "list various buffers"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1.-28. (canceled)",
+        "29. A protein comprising (i) an amino acid sequence having at least 90% identity to SEQ ID NO: 1 linked to an immobilization module to form a fusion protein, or (ii) a non naturally occurring amino acid sequence having at least 90% identity to SEQ ID NO: 2, and having one or more mutations selected from positions corresponding to amino acid 42, 43, 44, 61, and 62.",
+        "30. A variant according to claim 29, wherein the one or more mutations are selected from a Proline (P) at a position corresponding to amino acid 42, an Alanine (A), Glycine (G) or Proline (P) at a position corresponding to amino acid 43, a serine (S) or Arginine (R) at a position corresponding to amino acid 44, a Tyrosine (Y) at a position corresponding to amino acid 61 or an Arginine (R) at a position corresponding to amino acid 62.",
+        "31. The fusion protein according to claim 29, wherein the immobilization module is a variant of O6-alkylguanine-DNA alkyltransferase (AGT).",
+        "32. The variant according to claim 30, fused to an immobilization module.",
+        "33. The variant according to claim 32, wherein the immobilization module is a variant of O6-alkylguanine-DNA alkyltransferase (AGT).",
+        "34. A method comprising:\na. combining a binding reagent capable of selectively binding charged or uncharged N-glycans or N-glycan linked glycomolecules and not binding any O-glycans;\nb. binding the N-glycans or N-glycan linked glycomolecules to the binding reagent in a first buffer; and\nc. releasing the N-glycan glycomolecules from the binding reagent with a second buffer which does not comprise SDS or an oligosaccharide.",
+        "35. The method according to claim 34, wherein the binding reagent comprises an amino acid sequence with at least 90% identity to SEQ ID NO: 1 or a variant with at least 90% sequence identity to SEQ ID. No 2 comprising one or more mutations at positions corresponding to amino acid 42, 43, 44, 61, and 62.",
+        "36. The method according to claim 35, wherein the one or more mutations are selected from a P at a position corresponding to amino acid 42, an A, G or P at a position corresponding to amino acid 43, an S or R at a position corresponding to amino acid 44, a Y at a position corresponding to amino acid 61or an R at a position corresponding to amino acid 62.",
+        "37. The method according to claim 35, wherein the binding reagent further comprises an immobilization module.",
+        "38. The method according to claim 37, wherein the immobilization module is an O6-alkylguanine-DNA alkyltransferase (AGT).",
+        "39. The method according to claim 37, wherein the binding reagent is immobilized.",
+        "40. The method according to claim 34, wherein the glycomolecule is a polypeptide.",
+        "41. The method according to claim 34, wherein the glycomolecule is a product of protease digestion.",
+        "42. The method according to claim 34, wherein the glycomolecule is a product of enzyme cleavage by a cleavage enzyme, wherein the cleavage enzyme is selected from the group consisting of a glycosidase, a proteinase, a sialidase, a DNase, an RNase, or a combination thereof.",
+        "43. The method according to claim 34, wherein the second buffer comprises one or more reagents selected from acetonitrile, water, dichloromethane, dichloroethane, pentahydrofuran, ethanol, propanol, isopropanol, methanol, nitromethane, toluene, DMSO, acetic acid, formic acid or a mixture thereof.",
+        "44. The method according to claim 34, wherein the second buffer comprises acetonitrile.",
+        "45. The method according to claim 42, wherein the cleavage enzyme is a proteinase or a glycosidase selected from the group consisting of is trypsin, endoproteinase GluC, endo proteinase AspN, proteinase K, Factor Xa protease, IdeS, IdeE, enterokinase, furin, endonuclease S, neuraminidase, peptide-N-glycosidase Ar (PNGase Ar), peptide-N-glycosidase A (PNGase A), peptide-N-glycosidase F (PNGase F), O-glycosidase, endoglycosidase D (endo D), endoglycosidase F (endo F), endoglycosidase F1 (endo F1), endoglycosidase F2 (endo F2), endoglycosidase F3 (endo F3), endoglycosidase H (endo H), endoglycosidase S (endo S), beta1-3 galactosidase, beta1-4 galactosidase, alpha1-3,6 galactosidase, beta-N-acetylglucosaminidase, alpha-N-acetylgalactosamindiase, beta-N-acetylhexosaminidase, alpha1-2,3 mannosidase, alpha1-6 mannosidase, neuraminidase, alpha2-3 neuraminidase, alpha1-2 fucosidase, DNase, RNase H, or a combination thereof.",
+        "46. The method according to claim 34, wherein the N-glycan linked glycomolecule is labeled.",
+        "47. The method of claims 34, further comprising analyzing the composition of the N-glycan glycomolecules using an analytical test selected from mass spectrometry, chromatography, electrophoresis, nuclear magnetic resonance spectrometry and fluorescence-mediated detection, or a combination thereof.",
+        "48. The method according to claim 34, further comprising characterizing at least one of: the structure of the N-glycans, the linkage site of the N-glycan on the N-glycomolecule, and/or an amount of one or more different N-glycans, or a combination thereof.",
+        "49. The method according to claim 34, wherein the first buffer comprises a salt at a concentration of at least 500 mM.",
+        "50. The method according to claim 49, wherein the salt is selected from the group consisting of ammonium acetate, ammonium chloride, ammonium sulfate, calcium acetate, calcium chloride, magnesium acetate, magnesium chloride, magnesium sulfate, potassium acetate, potassium chloride, potassium sulfate, sodium acetate, sodium chloride, and sodium sulfate or a mixture thereof.",
+        "51. A method for treating a patient with a hearing loss, neurofibrillary tangles and/or virus infection; comprising administering an effective dose of a truncated ubiquitin ligase that has enhanced binding to N-glycans on glycomolecules.",
+        "52. A method according to claim 51, wherein the truncated ubiquitin ligase with a sequence of at least 90% sequence identity with SEQ ID NO:2.",
+        "53. A method according to claim 51, wherein the truncated ubiquitin ligase has one or more mutations at positions corresponding to any of amino acid 42, 43, 44, 61, and 62 of SEQ ID NO: 2.",
+        "54. The method of claim 34, wherein the second buffer comprises formic acid.",
+        "55. The method according to claim 34, wherein (b) and (c) are performed in a filter aided sample preparation unit (FASP)."
+    ]
+}

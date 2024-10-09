@@ -1,0 +1,195 @@
+# DESCRIPTION
+
+## COPYRIGHT NOTICE
+
+- reserve copyright rights
+
+## TECHNICAL FIELD
+
+- introduce dietary intake scoring system
+
+## BACKGROUND
+
+- describe decrease in essential nutrient deficiencies
+- describe increase in chronic diseases
+- describe poor eating patterns
+- describe correlation between eating patterns and diseases
+- describe importance of healthy food choices
+- describe food-based dietary guidelines
+- describe nutrient profiling models
+- describe Healthy Eating Index
+- describe Nestle's Nutrient Balance Concept
+- describe limitations of existing profiling models
+- describe Dietary Reference Intakes (DRI)
+- define Estimated Average Requirement (EAR)
+- define Recommended Dietary Allowance (RDA)
+- define Tolerable Upper Level (UL)
+- define Adequate Intake (AI)
+- describe limitations of DRI
+- describe need for personalized nutrition goals
+- describe scoring systems for food healthfulness
+- describe limitations of existing scoring systems
+- describe need for system considering quality and quantity
+- describe need for customizable scoring system
+
+## SUMMARY
+
+- introduce single dietary intake score (SDIS)
+- describe importance of energy consumption
+- describe SDIS calculation methodology
+- describe use of DRI and energy goal
+- describe healthy ranges for nutrients and energy
+- describe customization for individual needs
+- describe upper and lower limits of healthy range
+- describe RDA and AI scores
+- describe energy score calculation
+- describe matrix computation for energy score
+- describe non-additive nature of SDIS
+- describe flexibility for nutrient-dense foods
+- describe software and analytic tools
+- describe nutritional advice based on scores
+- describe database analysis for nutrient combinations
+- describe calculation of SDIS
+- describe storing nutrient indications
+- describe storing healthy ranges and endpoints
+- describe computing final SDIS score
+
+## DETAILED DESCRIPTION
+
+- introduce system for calculating SDIS
+- motivate personalized nutrition scoring
+- describe limitations of prior nutrient profiling models
+- define energy and nutrient ranges for personalized scoring
+- explain calculation of SDIS from weighted average of nutrients
+- describe energy score calculation
+- motivate use of weighted average for accuracy
+- introduce example of equal weighting for nutrients
+- describe flexibility of model for different time periods
+- list parameters for SDIS calculation
+- explain input and output of SDIS calculation
+- define healthy range and tolerances for nutrient intake
+- describe goal of recommending improved diet
+- motivate personalized recommendations based on individual characteristics
+- describe process of recommending reductions or additions to meal
+- explain filtering for personalized dietary advice
+- describe calculation of scores for nutritional impact
+- determine optimal caloric intake range for individual
+- store endpoints for consumable and nutrient ranges
+- enable user input of consumables and nutrient content
+- calculate nutrient scores and aggregate using weighting function
+- calculate energy score and multiply with nutrient score
+- describe advisory function for suggesting optimal food combinations
+- define terms for nutrients, macronutrients, and micronutrients
+- provide examples of nutrients used for SDIS calculation
+- introduce SDIS score calculation
+- describe nutrients used in SDIS score
+- motivate use of dietary sources of nutrients
+- provide rationale for inclusion of nutrients
+- describe real-time information provision
+- introduce voice recognition feature
+- describe geolocation-based exercise recommendations
+- introduce host device architecture
+- describe main unit components
+- detail processor options
+- describe memory components
+- introduce interface circuits
+- describe input devices
+- introduce storage devices
+- describe display and output devices
+- introduce client device interaction
+- describe network connection options
+- introduce cloud-based services
+- describe security measures
+- introduce client device architecture
+- describe device interaction
+- introduce repositories of information
+- describe user interaction with host device
+- motivate health through good nutrition
+- introduce module-based system architecture
+- describe software module execution
+- introduce hardware module execution
+- describe scoring function for nutrients
+- introduce healthy range for nutrient intake
+- describe under-consumption and over-consumption penalties
+- introduce piecewise linear function
+- describe function properties
+- introduce equation for scoring function
+- describe flexibility of "x" in equation
+- introduce food group and food product examples
+- conclude SDIS score calculation
+- introduce nutrient scoring function
+- define scoring function for nutrients with no intake requirement
+- illustrate scoring function with FIG. 3
+- describe energy scoring function
+- define energy scoring function with equation
+- illustrate energy scoring function with FIG. 4
+- determine final SDIS by multiplying energy score and weighted nutrient score
+- describe alternative embodiments for including energy in SDIS
+- describe selection of points A, B, C, and D for nutrient scoring
+- describe choice of parameters for scoring algorithm
+- introduce example menus with different dietary qualities
+- illustrate SDIS for example menus with FIG. 5
+- compare SDIS with and without energy factor with FIG. 6
+- compare scoring functions with energy factored in by multiplication and averaging with FIG. 7
+- illustrate individual nutrient scores for healthy and unhealthy diets with FIG. 8
+- describe example display of SDIS in software application with FIG. 9
+- introduce example nutrient composition of menu plan with Table 3
+- note that SDIS is not an additive function
+- describe applicability of SDIS to various amounts of food consumption and time ranges
+- discuss flexibility in diet to allow for some less nutrient-dense foods
+- reference Dietary Guidelines for Americans 2015-2020
+- note that disclosure encompasses use of RDAs from different countries
+- introduce Table 4 from validation paper on HEI 2005
+- describe limitations of density approach to dietary intake
+- contrast disclosure with density approach
+- summarize importance of energy factor in SDIS
+- summarize importance of choice of healthy ranges in SDIS
+- summarize importance of choice of parameters in scoring algorithm
+- summarize applicability of SDIS to various contexts
+- summarize flexibility of SDIS in accommodating different diets
+- summarize advantages of SDIS over prior art
+- summarize importance of energy-adjusted healthy ranges in SDIS
+- conclude description of SDIS and its advantages
+- introduce SDIS application
+- population-level analysis
+- income-level correlation
+- time-series analysis
+- eating pattern comparison
+- SDIS score calculation
+- nutrient range definition
+- score representation
+- personalized dietary suggestions
+- study verification
+- reliability assessment
+- validity evaluation
+- HEI score comparison
+- score distribution analysis
+- national nutrition survey application
+- dietary pattern analysis
+- energy intake consideration
+- alternative embodiment description
+- food group categorization
+- database integration
+- user input options
+- goal-based adaptation
+- nutrient score analysis
+- software-based recommendation
+- system configuration
+- user interface description
+- fuzzy search feature
+- dashboard customization
+- SDIS calculation
+- advisory functionality
+- nutrient scoring calculation
+- average nutrient score calculation
+- energy score integration
+- database storage
+- user customization
+- additional information consideration
+- laboratory testing integration
+- data verification
+- bodily fluid sample analysis
+- tissue sample analysis
+- system advantage description
+- system summary
+

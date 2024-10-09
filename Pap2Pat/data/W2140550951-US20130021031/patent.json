@@ -1,0 +1,208 @@
+{
+    "id": "US20130021031",
+    "authors": [
+        "Geoffrey Bodenhausen",
+        "Diego Carnevale"
+    ],
+    "title": "Fourier Tickling For Homonuclear Decoupling in NMR",
+    "date": "2012-07-11 00:00:00",
+    "abstract": "A method for high resolution NMR (=nuclear magnetic resonance) measurements using the application of excitation pulses and the acquisition of data points, whereby a dwell time \u0394t separates the acquisition of two consecutive data points, which is characterized in that one or more tickling rf (=radio frequency) pulses of duration \u03c4p are applied within each dwell time \u0394t, and that the average rf field amplitude of each of the tickling rf pulses approximately fulfills the condition \u03c91=\u03c91\u03c4p/\u0394t=\u03c0J wherein J is the scalar J-coupling constant and \u03c91=\u03b3B1 with \u03b3 being the gyromagnetic ratio and B1 being the strength of the magnetic component of each tickling rf pulse. This method is effective in decoupling homonuclear couplings.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [
+                "This application claims Paris Convention priority of EP 11 174 360.5 filed Jul. 18, 2011 the entire disclosure of which is hereby incorporated by reference."
+            ],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "The invention concerns a method for high resolution NMR (=nuclear magnetic resonance) measurements comprising the application of excitation pulses and the acquisition of data points, whereby a dwell time \u0394t separates the acquisition of two consecutive data points. A method as described above is known from Andrew E. Derome, \u201cModern NMR Techniques for Chemistry Research\u201d, Pergamon Press, 1987.",
+                        "Double-resonance techniques were first introduced into high-resolution CW-NMR by Bloch in 1954.[1] Bloom and Shoolery[2] have shown that the application of an rf field B2 to 31P nuclei such that \u03b3B2>>2\u03c0|J| can lead to the collapse of the doublet in the 19F spectrum arising from a heteronuclear coupling J(31P-19F). Freeman and Anderson[3, 4]proposed a theoretical description that is applicable to spin systems with either homo- or heteronuclear couplings and explains the spectral complexities and multiplicities arising from the secondary rf field B2 while sweeping the frequency of the main rf field B1 to observe the response in CW (=continuous wave) fashion. In particular, information about the topology of non-degenerate energy levels and the relative signs of coupling constants can be extracted.[5, 6]A detailed discussion of these effects, which have later become known as \u201cspin tickling\u201d experiments, has been presented elsewhere.[7, 8] Ever since, the development of advanced methods for the characterization of more and more complex systems (often in biomolecules) has been accompanied by a desire to achieve a gain in resolution and spectral simplification. The removal of homonuclear scalar interactions can simplify assignments in overlapping regions in both 1D and 2D spectra, and a number of methods have been proposed to eliminate the fine structure due to J-couplings.[9-15] However, none of these methods appear to have found widespread applications. Moreover, they usually only achieve a decoupling effect in the indirect dimension of 2D spectra. A method similar to the above is known as homonuclear decoupling, where a weak rf field of constant amplitude is applied throughout the observation of the signal. This method suffers from problems of interference between rf irradiation and signal observation, and is difficult to extend to multiple frequencies.",
+                        "The object of the present invention is to present an effective and fast method of decoupling of homonuclear couplings."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce NMR measurements",
+                        "motivate double-resonance techniques",
+                        "limitations of existing methods",
+                        "object of the invention"
+                    ],
+                    "num_characters": 2397,
+                    "outline_medium": [
+                        "introduce NMR and prior art",
+                        "discuss limitations of prior art"
+                    ],
+                    "outline_short": [
+                        "motivate NMR techniques and limitations"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "This object is achieved by that one or more tickling rf (=radio frequency) pulses of duration \u03c4p are applied within each dwell time \u0394t, and that the average rf field amplitude of each of the tickling rf pulses is between \u03c91=\u03c91\u03c4p/\u0394t=\u03c0/10J and \u03c91=\u03c91\u03c4p/\u0394t=10\u03c0J, wherein J being the scalar J-coupling constant and \u03c91=\u03b3B1 with \u03b3 being the gyromagnetic ratio and B1 being the strength of the magnetic component of each tickling rf pulse. Decoupling of homonuclear scalar interactions in J-coupled spin systems in high-resolution NMR spectra of solutions can be achieved by applying brief but fairly intense radio-frequency (rf) \u201ctickling\u201d pulses in the intervals (dwell times) between the acquisition of data points. The average rf field amplitude, i.e., the peak amplitude scaled by the duty cycle, should approximately satisfy the condition \u03c91\u2248\u03c0J. It is considered sufficient if <\u03c91> is between (\u03c0/10)J and 10\u03c0J for the method to work. The method is effective over a wide range of chemical shift differences between the J-coupled pairs of nuclei.",
+                        "This invention presents a 1D technique to remove homonuclear scalar interactions by applying a train of brief rf-pulses. This method may be seen as a combination of Fourier and tickling spectroscopy. In the spirit of self-deprecating acronyms such as INEPT and INADEQUATE, we like to refer to our method as Window-Acquired Spin Tickling Experiment (WASTE). The new method has been tested on proton spectra of a series of samples ranging from moderately strongly- to weakly-coupled spin systems.",
+                        "A preferred variant of the inventive method is characterized in that the average rf field amplitude of each of the tickling rf pulses fulfils the condition: \u03c91=\u03c91\u03c4p/\u0394t=\u03c0J.",
+                        "While the method seems to work properly with values of <\u03c91> only approximately reaching \u03c0J, \u03c91=\u03c0J is found to be the optimal condition.",
+                        "A further advantageous variant of the inventive method is characterized in that the duration \u03c4p of the tickling pulses is between 0,1 \u03bcs and 20 \u03bcs, preferably about 1 \u03bcs. Tickling rf pulses of shorter or longer duration appear to lead to unwanted side effects.",
+                        "It is advantageous if the data points, which are acquired once in every dwell time, are transformed into a spectrum by a Fourier transformation.",
+                        "In another preferred variant of the inventive method M tickling rf pulses of duration \u03c4p are applied at will within each of multiple dwell times \u0394t, each tickling rf pulse within each dwell time \u0394t belongs to a different comb Cm of tickling rf pulses, with m being a positive integer and 1\u2266m\u2266M, and all tickling rf pulses belonging to the same comb Cm are equidistant to each other.",
+                        "Multiple tickling pulses can be applied within each dwell time and grouped into combs, within which the tickling rf pulses are equidistant to each other.",
+                        "A further variation of this variant is characterized in that the phase of each tickling rf pulse belonging to the same comb Cm is shifted from one dwell time to the next by a constant factor. This variant allows for simultaneous decoupling of several spin systems.",
+                        "The invention is shown in the drawing:"
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce decoupling method",
+                        "define tickling rf pulses",
+                        "application of the method",
+                        "preferred variant of the method",
+                        "further advantageous variant",
+                        "embodiment of the method"
+                    ],
+                    "num_characters": 3101,
+                    "outline_medium": [
+                        "present object of invention",
+                        "describe method of decoupling homonuclear couplings",
+                        "discuss variants of inventive method"
+                    ],
+                    "outline_short": [
+                        "describe decoupling method using tickling rf pulses"
+                    ]
+                },
+                {
+                    "title": "DESCRIPTION OF THE PREFERRED EMBODIMENT",
+                    "paragraphs": [
+                        "FIG. 1 shows a scheme for Fourier tickling experiments. The tall rectangle represents the initial excitation pulse whereas the small rectangle represents a tickling pulse of duration \u03c4p applied along the x axis. The black dot represents the acquisition of a single data point. If the receiver runs continuously, this data point is obtained by averaging over all data points acquired in the interval during which the receiver is activated. The Driven Induction Decay (DID) is built up by acquiring n data points through an n-fold repetition of the loop.",
+                        "Decoupling of homonuclear scalar interactions JAX in coupled spin systems can be achieved by applying brief but fairly intense radio-frequency (rf) \u201ctickling\u201d pulses (typically with a duration \u03c4p=1 \u03bcs and an rf amplitude 2<\u03c91/(2\u03c0)<3 kHz) between the acquisition of data points. These are separated by intervals (\u201cdwell times\u201d) that may be typically \u0394t=100 \u03bcs if the desired spectral width is 10 kHz. As will be explained below, the average rf field amplitude \u03c91=\u03c91\u03c4p/\u0394t should approximately satisfy the condition \u03c91=\u03c0J. If one \u201ctickles\u201d spin A by placing the carrier frequency of on the chemical shift \u03a9A, the fine-structure due to JAX collapses in both A and X multiplets. In \u201clinear\u201d AMX three-spin systems with JAX=0 Hz, tickling the central spin M eliminates both interactions JAM and JMX. As a result, all three multiplets collapse and the spectrum shows only three singlets at the isotropic chemical shifts \u03a9A, \u03a9M and \u2022\u03a9X. However, in a general AMX three-spin system with if JMX\u22600 where only spin M is tickled, the multiplicity due to JAX is retained for both non-irradiated A and X spins.",
+                        "In the sequence shown in FIG. 1, we consider the case where the phases of the initial 90\u00b0 pulse and the tickling pulses are along the y and x axes, respectively. As usual in Fourier spectroscopy, the signal is observed at regular intervals \u0394t (dwell times) that are inversely proportional to the desired spectral width, so as to fulfil the Nyquist condition. A tickling pulse of length \u03c4p and constant rf amplitude \u03c91=\u03b3B1 is applied near the middle of each \u0394t interval. A so-called Driven Induction Decay (DID) can be acquired by repeating the loop n times until one obtains the desired number of points. Numerical simulations have been performed with the SIMPSON program.[16] Relaxation effects have not been taken into account in this study. The rf carrier of the tickling pulses is set on resonance with the spin A, i.e. \u03c9rf=\u03c9A, so that its offset vanishes, \u03a9A=\u03a9A\u2212\u03a9rf=0. Therefore, in the Zeeman frame rotating in synchronism with \u03a9rf=\u03a9A, the Hamiltonian is:",
+                        "\\({H_{Tot} = {{\\Omega_{X}\ue89eI_{z}^{X}} + {2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{JI}^{A}\ue89eI^{X}} + {{\\omega_{1}\ue8a0(t)}\ue89e\\left( {I_{x}^{A} + I_{x}^{X}} \\right)}}},\\)",
+                        "where the third term vanishes except during the tickling pulse.",
+                        "FIG. 2 shows a simulated tickling spectrum stacked from bottom to top as the pulse length \u03c4p is progressively increased in steps of 2 \u03bcs until continuous spin locking is achieved. The rf field strength is \u03c91/(2\u03c0)=2.5 kHz. The offsets are \u03a9A/(2\u03c0)=0 Hz and \u03a9X/(2\u03c0)=1 kHz, the coupling constant is JAX=10 Hz. The offset of spin X is indicated by a dashed line. All spectra were processed with 1 Hz line broadening because the on-resonance line would otherwise be very narrow and tall.",
+                        "The evolution of the density matrix can be evaluated numerically using the Liouville-von Neumann equation.[17] In FIG. 2 we explored the effect of the length \u03c4p of the tickling pulses by progressively increasing the pulse length \u03c4p while keeping the dwell time \u0394t constant. As the length \u03c4p of the tickling pulse is increased, signals appear that are symmetrically disposed on either side of the signal of the on-resonance spin A at \u03a9A=0 Hz. The offset of the off-resonance spin X is also perturbed, and appears to be \u201cpushed away\u201d from the carrier frequency. This is a manifestation of the Bloch-Siegert effect.[18-20] The apparent chemical shift is:",
+                        "\\(\\Omega_{X}^{App} = {\\sqrt{\\Omega_{X}^{2} + {\\langle\\omega_{1}\\rangle}^{2}} = {\\Omega_{X}\ue89e{\\sqrt{1 + \\frac{{\\langle\\omega_{1}\\rangle}^{2}}{\\Omega_{X}^{2}}}.}}}\\)",
+                        "Taking the first two terms of a series expansion around \u03c9/\u03a9=0 yields, since \u03c91<<\u03a9X:",
+                        "\\({{\\Omega_{X}^{App} \\approx {\\Omega_{X}\ue8a0\\left( {1 + {\\frac{1}{2}\ue89e\\frac{{\\langle\\omega_{1}\\rangle}^{2}}{\\Omega_{X}^{2}}}} \\right)}} = {\\Omega_{X} + \\frac{{\\langle\\omega_{1}\\rangle}^{2}}{2\ue89e\\; \ue89e\\Omega_{X}}}},\\)",
+                        "where the ratio <\u03c91>2/(2\u03a9X) gives the systematic error in rad/s. Typically, we may have an rf duty cycle \u03c4p/\u0394t=0.01=1% if \u03c4p=1 \u03bcs and \u0394t=100 \u03bcs for a spectral width of 10 kHz. If we consider an rf amplitude \u03c91/(2\u03c0)=2.5 kHz and coupling partners with offsets \u03a9X/(2\u03c0)>1 kHz (i.e., above 2 ppm at 500 MHz, or beyond 1 ppm at 1 GHz), we have systematic errors:",
+                        "0<\u03c912/(4\u03c0\u03a9X)<0.3125 Hz.\u2003\u2003(3)",
+                        "In other words, the apparent offset of the off-resonance spin X is barely perturbed. If desired, the apparent chemical shifts observed in tickling spectra may be corrected for these Bloch-Siegert effects:",
+                        "\u03a9X\u2248\u03a9XApp/[1+\u03c912/(2\u03a9X2)]\u2248\u03a9XApp/[1+\u03c912/(2(\u03a9XApp)2)],\u2003\u2003(4)",
+                        "where we have simply replaced \u03a9X by \u03a9XApp on the right-hand side. The signals that appear in a symmetrical position with respect to the carrier frequency in FIG. 2 can be explained by the fact that the projection of the trajectory of the magnetization on the equatorial plane of the rotating frame is elliptical (in contrast to the circular trajectory that prevails in the absence of a tickling field) so that is can be decomposed into two counter-rotating components with unequal amplitudes. If \u03a91>>\u03a9X, the evolution of the magnetization associated with both spins would be completely suppressed in the limit of continuous irradiation when \u03c91=\u03c91 (spin-locking), so that one expects a single unmodulated signal at \u03a9A=0 Hz. The top spectra in FIG. 2 approach this limiting case, where the two spins are in effect magnetically equivalent.",
+                        "As can be seen in FIG. 3, which shows a partial enlargement of FIG. 2, an ideal decoupling effect is achieved for both resonances when the tickling pulse length is \u03c4p=1 \u03bcs. If the pulses have a decreasing duration \u03c4p each singlet appears to be flanked by two \u201ctickling sidebands\u201d with increasing amplitude. Note that the multiplet structures of both on- and off-resonance spins A and X remain remarkably similar for 0\u2266\u03c4p\u22662.25 \u03bcs.",
+                        "The role of the rf field strength was further investigated by simulations, as shown in FIG. 4. The tickling pulse length was kept fixed at \u03c4p=1 \u03bcs and offset \u03a9X/(2\u03c0)=1 kHz while the field strength was progressively increased in the range 0\u2266\u03c91/(2\u03c0)\u226650 kHz. While the A spin resonance appears neatly decoupled regardless of the rf field strength, the off-resonance X spin shows a misleading splitting as the rf field strength is increased beyond 12 kHz. The distortion of the X spin resonance becomes worse as the rf field strength is increased.",
+                        "However, as may be appreciated in the blown-up view of FIG. 5, the tickling sidebands are largely suppressed in the range 2<\u03c91/(2\u03c0)<4 kHz if \u03c4p=1 \u03bcs and \u03a9X/(2\u03c0)=1 kHz. The efficiency of decoupling also depends on the offset of spin X. Numerical simulations indicate that decoupling fails in strongly-coupled spin systems, i.e., if the chemical-shift difference is smaller than, say, 10 Hz.",
+                        "FIG. 6 shows a set of tickling spectra for offsets 50<\u03a9X/(2\u03c0)<600 Hz with an rf field strength \u03c91/(2\u03c0)=2.5 kHz. A progressive improvement in decoupling, i.e., an increase of the intensity of the X signal is observed as the chemical shift difference is increased. The decoupling efficiency seems to be compromised when this difference is smaller than 100 Hz, i.e., smaller than 0.2 ppm at 500 MHz (11.7 T).",
+                        "In FIG. 7 similar simulations are shown for a lower rf field strength \u03c91/(2\u03c0)=800 Hz, again with a 1% duty cycle. Although the intensities of the tickling sidebands are much larger than in FIG. 6, adequate decoupling can be achieved for offsets as small as 50 Hz, or 0.1 ppm at 500 MHz. Thus, paradoxically, weak rf tickling strengths are required to achieve efficient decoupling in strongly-coupled spin systems.",
+                        "The decoupling effect of spin tickling can be rationalized in terms of Average Hamiltonian Theory.[21] Simulations performed with Mathematica[22] show that the decoupling effect is already observed when only the zeroth-order term of the Magnus expansion that describes the pulse sequence of FIG. 1 is considered. The matrix representation of this term in the product base of a two-spin system is:",
+                        "\\(\\begin{matrix}\n{{\\overset{\\_}{H}}^{(0)} = {\\begin{pmatrix}\na & c & c & 0 \\\\\nc & {- a} & {a - b} & c \\\\\nc & {a - b} & b & c \\\\\n0 & c & c & {- b}\n\\end{pmatrix}.}} & (5)\n\\end{matrix}\\)",
+                        "The off-diagonal elements c=\u03c91\u03c4p/(2\u0394t)=\u03c91/2 correspond to tickling pulses with phase x and are proportional to the duty cycle \u03c4p/\u0394t. The other elements a=(\u03a9X+\u03c0J)/2 and b=(\u03a9X\u2212\u03c0J)/2 describe the offset and J-coupling interactions and do not depend on the duty cycle since the evolution under these interactions occurs both during the free precession intervals and during the tickling-pulses. The eigenvalues of this matrix represent the energy levels of the two-spin system when the expectation values of the spin operators are sampled stroboscopically with a period \u0394t.",
+                        "The transition frequencies are given by differences of eigenvalues. In the absence of tickling pulses, the frequency difference \u0394v between the two single-quantum transitions associated with each spin amounts to the coupling constant JAX, i.e., \u0394v=2\u03c0JAX. Identifying values of c which lead to a frequency difference \u0394v(c)=0 amounts to finding the condition where the JAX-splitting collapses. Although the eigenvalues of (0) are rather involved, solving the equation \u0394v(c)=0 yields a compact result:",
+                        "\\(\\begin{matrix}\n{{\\langle\\omega_{1}\\rangle} = {{\\omega_{1}\ue89e\\frac{\\tau_{p}}{\\Delta \ue89e\\; \ue89et}} = {{\\pm \\pi}\ue89e\\; \ue89e{J_{AX}.}}}} & (6)\n\\end{matrix}\\)",
+                        "Thus, for a given coupling constant JAX, it is possible to choose an average rf field strength <\u03c91>, i.e., a peak rf field strength wand a duration of the tickling pulses \u03c4p so that the splitting vanishes, provided the observation is periodic and occurs at intervals \u0394t. Equation 6 can be recast to give \u03b2=\u03c91\u03c4p=\u00b1\u03c0JAX \u0394t. Thus, the flip angle \u03b2 of each tickling pulse must be equal to half the angle through which the single-quantum coherences of the two components of each doublet would evolve with respect to each other in the absence of any rf perturbation under the J-coupling interaction in the dwell time \u0394t.",
+                        "FIG. 8 shows numerical calculations of the multiplet of the off-resonance spin X using the average Hamiltonian of Eq.5 starting with an initial density operator IxA+IxX. The tickling pulse length was \u03c4p=1 \u03bcs and the coupling constant JAX=10 Hz. When \u03c91/(2\u03c0)=0 Hz, an unperturbed doublet is observed (black dotted line). The multiplet obtained when the condition of Eq.6 is met with \u03c4p=1 \u03bcs, \u0394t=100 \u03bcs and \u03c91/(2\u03c0)=0.5 kHz, is shown by a broken line: a central peak with an intensity comparable to the peaks of the unperturbed spectrum appears at \u03a9X=1 kHz, albeit slightly displaced by a small Bloch-Siegert effect. In addition, two tickling sidebands with intensities that are about half of the singlet peak appear. When the rf amplitude is increased to \u03a91/(2\u03c0)=1.0 kHz (shown by a continuous line) the tickling sidebands move away symmetrically from \u03a9X and lose intensity.",
+                        "Although the condition \u0394v(c)=0 of Eq. 6 is violated by a factor of 2, the intensity of the central peak is enhanced. Thus, when the rf amplitude \u03c91 is increased, the splitting between the single-quantum transitions induced by a violation of Eq. 6 does not significantly broaden the central line, while the tickling sidebands are reduced. The integrals of all three spectra are conserved.",
+                        "The requirement that the scalar coupling term in the average Hamiltonian of Eq. (1) be made ineffective (on the condition that the sampling be stroboscopic) implies that the degrees of freedom of the evolution of the density operator must be severely curtailed. In simple terms, if we start with in-phase terms such as IxA, IyA, IxX and IyX, efficient decoupling means that it should be made impossible to convert these initial states into anti-phase terms such 2IxAIzX, 2IyAIzX, 2IzAIxX and 2IzAIyX. It turns out that, if we start with IxA, and if the offset \u03a9A vanishes, coherence transfer is constrained to a Liouville subspace spanned by a triad of non-commuting operators {IxA, 2IyAIzX, 2IzAIzX}.",
+                        "FIG. 9 shows a simulation of the time dependence of these three product operators and of their norm, defined as N=(IxA2+2IyAIzX2+2IzAIzX2)1/2 (continuous line) during a typical tickling experiment. Since the norm of these three operators is constant, coherence transfer must be confined to the subspace spanned by the triad of non-commuting operators. If we start with the in-phase term IxA, the J-coupling tends to convert it into an anti-phase operator 2IyAIzX, but this process is stopped by the transformation of 2IyAIzX into longitudinal two-spin order 2IzAIzX due to the tickling pulses. As a result, the oscillations of the in-phase term IxA are kept to a minimum. This amounts to successful decoupling. Similar phenomena were observed in a different context and dubbed \u201cstabilization by interconversion within a triad of coherences under multiple refocusing pulses\u201d (SITCOM).[23, 24] Of course, in the tickling experiments presented here, the brief pulses do not have any refocusing effect, but the stabilizing effect is similar.",
+                        "Although the analogies may seem far-fetched, Fourier tickling achieves similar effects as repeated projective measurements, where the system is not confined to a single state, but evolves under the action of its Hamiltonian in a multidimensional subspace of Hilbert space. It may be helpful to ponder about possible variants in the light of these analogies.[26-30]",
+                        "All the experiments were carried out in a static field B0=11.7 T (500 MHz for proton). At this field, the two protons of 2,3-dibromothiophene in DMSO-d6 are weakly coupled with (\u03a9A\u2212\u03a9X)/(2\u03c0)\u02dc305 Hz and JAX\u02dc5.8 Hz.",
+                        "In FIG. 10, the unperturbed spectrum is compared with the best tickling spectrum. The carrier frequency was set on the left-hand resonance, as indicated by a wavy arrow. Good decoupling and minimal interference of tickling-sidebands is obtained with a tickling field strength that was empirically optimized to \u03c91/(2\u03c0)\u02dc900 Hz.",
+                        "FIG. 11 shows spectra of the strongly-coupled AB system of 2,3,6-trichlorophenol superimposed with a solvent peak marked with an asterisk.",
+                        "In contrast to the AX system of FIG. 10, some tickling sidebands are clearly visible in the strongly coupled AB system of FIG. 11. This undesirable effect was highlighted in the numerical simulations of FIG. 7.",
+                        "Nevertheless, a reasonable decoupling efficiency is achieved. A lower rf-field amplitude must be used for smaller differences in chemical shifts. Tickling also works if the molecule comprises magnetically-equivalent spins, as in the A2M2X3 system ofpropan-1-ol (HOCH2CH2CH3).",
+                        "The conventional spectrum and the tickling spectra with carrier frequencies set on one of the three multiplets are shown in FIG. 12. If the carrier frequency is set on the chemical shift of A2, the multiplicity of the coupling partner M2 is simplified by decoupling of the 3JAM, though the fine structure due to the 3JMX is not affected, as shown in the inset. If the carrier frequency is set on the chemical shift of X3, the multiplicity of the coupling partner M2 is simplified by decoupling of 3JXM but the fine structure (triplet) due to 3JAM remains, as shown in the inset of FIG. 12 c. Clearly tickling can decouple all J-interactions between the irradiated spin and its J-coupling partners. Obviously, tickling does not affect couplings between spins that are not irradiated. In FIG. 12 d, the carrier frequency was set on the M2 resonance of the A2M2X3 system. Since the M2 spins are coupled to both A2 and X3, while 3JAX=0, all three resonances appear decoupled in this case. These results show that the presence of magnetically-equivalent spins does not compromise the performance of tickling experiments. Furthermore, in all three samples considered, we did not observe any anomalies of the integrals in the tickling spectra.",
+                        "It is well known that the effective frequency of the centreband of a comb C of pulses can be shifted at will from the carrier frequency vrf to v=vrf+\u03c6/(2\u03c0\u0394t) by advancing the phase of the kth pulse of the comb C in the kth dwell time \u0394t through a shift k\u0394\u03c6. Such phase modulation schemes have been used in conjunction with so-called \u2018delays alternating with nutation for tailored excitation\u2019 (DANTE).[31-34] Since the position within the interval \u0394t of the tickling pulses of duration \u03c4p belonging to any one comb C is immaterial, one can readily superimpose several combs Cm of tickling pulses with m=1, 2, . . . M, each of which may be associated with its own phase shift k\u0394\u03c6m and hence its own frequency shift. Each dwell time \u0394t does contain only one tickling pulse per comb. The tickling pulses within a dwell time \u0394t which belong to different combs Cm do not need to be equidistant. This allows one in effect to irradiate simultaneously at a manifold of frequencies, as shown in the simulations of FIG. 13.",
+                        "The method is effective over a broad range of chemical shifts. Groups of magnetically equivalent spins as occur in methylene and methyl groups can be decoupled efficiently. A considerable gain in resolution and spectral simplification can thus be obtained without distortion of signal integrals. We believe that this new experimental tool can aid the characterization of complex systems, including biological macromolecules. By inserting a manifold of polychromatic tickling pulses in each \u0394t interval, several subsystems can be decoupled simultaneously.",
+                        "The new tickling method allows one to avoid interferences and allows irradiation at multiple frequencies to decouple several interactions simultaneously."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce Fourier tickling experiments",
+                        "describe scheme for Fourier tickling experiments",
+                        "explain decoupling of homonuclear scalar interactions",
+                        "define tickling pulses",
+                        "describe dwell times",
+                        "explain condition for average rf field amplitude",
+                        "describe effect of tickling pulses on spin A",
+                        "describe effect of tickling pulses on spin X",
+                        "explain Bloch-Siegert effect",
+                        "derive apparent chemical shift",
+                        "explain systematic error in apparent chemical shift",
+                        "correct for Bloch-Siegert effects",
+                        "explain evolution of density matrix",
+                        "simulate tickling spectra",
+                        "explain effect of tickling pulse length",
+                        "describe ideal decoupling effect",
+                        "explain role of rf field strength",
+                        "simulate effect of rf field strength",
+                        "describe distortion of X spin resonance",
+                        "explain suppression of tickling sidebands",
+                        "describe dependence of decoupling on offset of spin X",
+                        "simulate decoupling for different offsets",
+                        "explain decoupling in strongly-coupled spin systems",
+                        "rationalize decoupling effect using Average Hamiltonian Theory",
+                        "derive matrix representation of Average Hamiltonian",
+                        "explain eigenvalues of Average Hamiltonian",
+                        "derive condition for collapse of JAX-splitting",
+                        "simulate multiplet of off-resonance spin X",
+                        "explain coherence transfer in Liouville subspace",
+                        "simulate time dependence of product operators",
+                        "describe analogy to repeated projective measurements",
+                        "describe experimental setup",
+                        "compare unperturbed and tickling spectra",
+                        "describe application to strongly-coupled AB system",
+                        "describe application to A2M2X3 system"
+                    ],
+                    "num_characters": 18002,
+                    "outline_medium": [
+                        "introduce Fourier tickling experiments",
+                        "describe scheme for Fourier tickling experiments",
+                        "explain decoupling of homonuclear scalar interactions",
+                        "motivate use of brief radio-frequency pulses",
+                        "describe effect of pulse length on tickling spectra",
+                        "explain Bloch-Siegert effect",
+                        "derive apparent chemical shift",
+                        "discuss systematic errors",
+                        "correct for Bloch-Siegert effects",
+                        "explain elliptical trajectory of magnetization",
+                        "show ideal decoupling effect",
+                        "investigate role of rf field strength",
+                        "discuss dependence on offset of spin X",
+                        "rationalize decoupling effect using Average Hamiltonian Theory",
+                        "derive condition for collapsing JAX-splitting",
+                        "discuss coherence transfer and decoupling",
+                        "summarize experimental results and applications"
+                    ],
+                    "outline_short": [
+                        "introduce Fourier tickling experiments",
+                        "describe decoupling of homonuclear scalar interactions",
+                        "explain the role of tickling pulses in suppressing JAX interactions",
+                        "illustrate the effect of pulse length on tickling spectra",
+                        "discuss the Bloch-Siegert effect on apparent chemical shifts",
+                        "analyze the role of rf field strength on decoupling efficiency",
+                        "rationalize decoupling effect using Average Hamiltonian Theory",
+                        "discuss applications and advantages of Fourier tickling"
+                    ]
+                }
+            ],
+            "outline_long": [
+                "claim priority"
+            ],
+            "num_characters": 156,
+            "outline_medium": [
+                "claim priority and incorporate by reference"
+            ],
+            "outline_short": [
+                "claim priority and incorporate by reference"
+            ]
+        }
+    ],
+    "claims": [
+        "1. A method for high resolution NMR (=nuclear magnetic resonance) measurements, the method comprising the steps of:\na) applying an excitation pulse;\nb) acquiring a first data point;\nc) waiting a dwell time \u0394t;\nd) applying, during step c), one or more tickling rf (=radio frequency) pulses of duration \u03c4p, each tickling rf pulse having an average rf field amplitude between \u03c91=\u03c91\u03c4p/\u0394t=\u03c0/10J and \u03c91=\u03c91\u03c4p/\u0394t=10\u03c0J, wherein J is a scalar J-coupling constant and \u03c91=\u03b3B1 with \u03b3 being a gyromagnetic ratio and B1 being a strength of a magnetic component of each tickling rf pulse; and\ne) acquiring a second data point immediately following completion of step c), the dwell time \u0394t thereby separating acquisition of the first and the second data points.",
+        "2. The method of claim 1, wherein an average rf field amplitude of each of the tickling rf pulses fulfills the condition: \u03c91=\u03c91\u03c4p/\u0394t=\u03c0J.",
+        "3. The method of claim 1, wherein the duration \u03c4p of the tickling pulses is between 0.1 \u03bcs and 20 \u03bcs.",
+        "4. The method of claim 3, wherein the duration \u03c4p of the tickling pulses is about 1 \u03bcs.",
+        "5. The method of claim 1, wherein data points, acquired once in every dwell time \u0394t, are transformed into a spectrum by a Fourier transformation.",
+        "6. The method of claim 1, wherein M tickling rf pulses of duration \u03c4p are applied at will within each of multiple dwell times \u0394t, each tickling rf pulse within each dwell time At belonging to a different comb Cm of tickling rf pulses, wherein m is a positive integer and 1\u2266m\u2266M, all tickling rf pulses belonging to a same comb Cm being equidistant from each other.",
+        "7. The method of claim 6, wherein a phase of each tickling rf pulse belonging to the same comb Cm is shifted from one dwell time to a next by a constant factor."
+    ]
+}

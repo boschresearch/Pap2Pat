@@ -1,0 +1,87 @@
+{
+    "id": "https://semopenalex.org/work/W1980744841",
+    "authors": [
+        "J Costello",
+        "B Bernstein",
+        "Julia Joung",
+        "Deepak Reyon",
+        "Jeffry D. Sander",
+        "Morgan L. Maeder",
+        "Marcy E. Richardson",
+        "Miles Wilkinson",
+        "Shengdar Q. Tsai",
+        "Quan Ho",
+        "Vincent Cascio",
+        "James Angstman",
+        "Samantha J. Linder"
+    ],
+    "title": "Targeted DNA demethylation and activation of endogenous genes using programmable TALE-TET1 fusion proteins",
+    "date": "2013-12-01",
+    "abstract": "A fusion protein comprising a TALE DNA-targeting domain and the 5-methylcytosine hydroxylase TET1 enables investigation of the function of specific DNA methylation events. Genome-wide studies have defined cell type\u2013specific patterns of DNA methylation1 that are important for regulating gene expression in both normal development2 and disease3. However, determining the functional significance of specific methylation events remains challenging, owing to the lack of methods for removing such modifications in a targeted manner. Here we describe an approach for efficient targeted demethylation of specific CpGs in human cells using fusions of engineered transcription activator\u2013like effector (TALE) repeat arrays and the TET1 hydroxylase catalytic domain. Using these TALE-TET1 fusions, we demonstrate that modification of critical methylated promoter CpG positions can lead to substantial increases in the expression of endogenous human genes. Our results delineate a strategy for understanding the functional significance of specific CpG methylation marks in the context of endogenous gene loci and validate programmable DNA demethylation reagents with potential utility for research and therapeutic applications.",
+    "sections": [
+        {
+            "title": "Online Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TALE-TET1 Fusion Protein Design and Construction",
+                    "paragraphs": [
+                        "The full TET1 coding sequence was synthesized as gBlocks (Integrated DNA Technologies) and assembled by standard restriction enzyme digest and ligation to construct TET1-FL and TET1-CD expression vectors. All TALEs were assembled using the FLASH method and were cloned into TALE-TET1 expression vectors (pJA344C7, pJA345D4, pJA344E9 and pJA247) containing one of four 0.5 C-terminal TALE repeats, an N-terminal nuclear localization signal, the \u0394152 TALE N-terminal domain and the +95 TALE C-terminal domain as previously described 19,30 . In all expression plasmids used, either TET1-FL or TET1-CD was fused to the C-terminal end of the TALE-derived DNA-binding domain via a GlyGlyGlySer linker and expression of this fusion was driven by an EF1alpha promoter. For the Western blot experiments, expression vectors had an additional triple-FLAG tag cloned upstream of the nuclear localization signal. Sequences of all constructs are shown in Supplementary Fig. 13."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cell Culture and Transfection",
+                    "paragraphs": [
+                        "FlpIn-TRex HEK293 (Life Technologies) and HeLa (ATCC) cells were cultured in Advanced DMEM supplemented with 10% FBS, 1% Glutamax, and 1% penicillinstreptomycin (Invitrogen). K562 (ATCC) cells were maintained in RPMI supplemented with 10% FBS, 1% Glutamax, and 1% penicillin-streptomycin. All cell lines were tested for mycoplasma every two weeks. Plasmids encoding TALE-TET1 fusions targeted to the KLF4 and HBB loci were transfected into K562 cells by Nucleofection. Briefly, 10 ug of TALE-TET1-encoding plasmid (or 2, 5, 10, 20 or 50ug in the dose-response experiment) and 500 ng pmaxGFP plasmid were Nucleofected into 1\u00d710 6 K562 cells using Kit V (Lonza) and program T-016. Control transfections used 500 ng pmaxGFP plasmid (Lonza). Fluorescent microscopy was used to ensure consistent and high levels of transfection efficiency in all K562 experiments and FACS analysis showed ~80-90% of transfected cells are GFP+ under these conditions. Plasmids encoding TALE-TET1 fusions targeted to human RHOXF2 were transfected into 293 or HeLa cells using Lipofectamine LTX according to the manufacturer's instructions (Life Technologies). Briefly, 3.2 \u00d7 10 5 293 cells or 1 \u00d7 10 5 HeLa cells were seeded into 12-well plates and transfected the following day with 1.2 \u00b5g TALE-TET1-encoding plasmid, 60 ng pmaxGFP plasmid, 1 \u00b5l Plus reagent, and 3.3 \u00b5l Lipofectamine LTX. Fluorescent microscopy was used to ensure consistent and high levels of transfection efficiency. Cell viability in K562 cells was assayed by resuspending cells in PBS with 10% FBS and 1 ug/ml propidium iodide and analyzing by FACS."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Genomic DNA and Total RNA isolation",
+                    "paragraphs": [
+                        "Four days post-transfection, genomic DNA (gDNA) was isolated using the QIAamp DNA Blood Mini Kit (Qiagen) according to manufacturer's protocol. Total RNA was isolated from cells transfected with plasmids encoding TALE-TET1 fusions targeting HBB or RHOXF2 using the PureLink RNA Mini Kit (Ambion) according to the manufacturer's instructions. RNA was treated with TurboDNA-Free (Ambion)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "High-Throughput Bisulfite Sequencing",
+                    "paragraphs": [
+                        "500 ng of genomic DNA isolated from transfected cells was bisulfite treated using the EZ DNA methylation, EZ DNA Methylation-Gold or EZ DNA Methylation-Lightning Kit (Zymo Research) according to the manufacturer's instructions. All samples underwent bisulfite conversion with an efficiency of at least 98.5% as judged by conversion of unmethylated, non-CpG cytosines. Genomic DNA sites in KLF4, HBB, and RHOXF2 were amplified by PCR using bisulfite-converted gDNA as a template with Kapa HiFi HotStart Uracil+ ReadyMix (Kapa Biosystems) (for KLF4 and HBB sites) or Qiagen's PyroMark PCR Kit (for RHOXF2 sites). Standard Illumina adaptors were added by either ligation or PCR and Illumina multiplex barcodes were added by PCR. For details of PCR reactions, see Supplementary Methods. Pooled amplicons were sequenced using an Illumina MiSeq with 150 bp paired-end reads (Dana Farber MBCF Genomics Core). For each experimental sample assayed, we analyzed between 10,000 and 375,000 reads. Note that because RHOXF2 and RHOXF2B sequences are identical in the region examined, the bisulfite PCR analysis does not distinguish between these two loci. For Sanger sequencing of KLF4 samples, initial bisulfite PCR products were cloned using the TOPO Zero-Blunt cloning kit (Life Technologies) and transformed into E. coli. Plasmid DNA was purified from the resulting colonies and sequenced by the MGH DNA Core facility."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "qRT-PCR assays",
+                    "paragraphs": [
+                        "For assay of HBB gene expression, RNA was reverse transcribed using the SuperScript III First-Strand Synthesis SuperMix and oligo-dT (Life Technologies). Quantitative PCR was performed with Taqman Universal PCR Mastermix (Applied Biosystems) on an ABI 7500 Fast Real-Time PCR system with the following primer/probe sets: Forward HBB primer 5'-CAAGGGCACCTTTGCCACAC-3'; Reverse HBB Primer 5'-TTTGCCAAAGTGATGGGCCA-3'; HBB Taqman Probe 5'-/56-FAM/CCTGGGCAA/ ZEN/CGTGCTGGTCTGTGT/3IABkFQ/-3'; Forward \u03b2-actin (ACTB) Primer: 5'-GGCACCCAGCACAATGAAG-3'; Reverse ACTB primer 5'-GCCGATCCACACGGAGTACT-3'; ACTB Taqman Probe 5'-/5MAX550-Y/ TCAAGATCA/ZEN/TTGCTCCTCCTGAGCGC/3IABlk_FQ/-3'.",
+                        "For assay of RHOXF2 gene expression, RNA was reverse transcribed using iScript cDNA Synthesis Kit (BioRad) according to manufacturer's protocol. qPCR was performed with SsoAdvanced SYBRGreen Supermix (BioRad) on an ABI StepOnePlus instrument with the following primers: RHOXF2 Forward primer 5'-GGCAAGAAGCATGAATGTGA-3'; RHOXF2 Reverse primer 5'-TGTCTCCTCCATTTGGCTCT-3'; M/H Actin Forward primer 5'-GTCCACACCCRCCGCCAG-3'; M/HActin Reverse primer 5'-CCCACGATGGAGGGGAA-3'. Note that this assay does not distinguish between RHOXF2 and RHOXF2B.  Each data point represents the mean of three independent transfection experiments with bars indicating standard errors of the mean. Methylation status for each experiment was assessed using high-throughput bi-sulfite sequencing. Note that the GFP and off-target TALE-TET1 control data points shown are the same in both panels for each cell type and are depicted multiple times only for ease of comparison with experimental samples. Blue arrow indicates the location and direction (5' to 3') of the RH3 or RH4 TALE-TET1 binding sites. (E) Demethylation activities of catalytically inactive RH-3 and RH-4 TALE-TET1 fusion proteins in HeLa (top) and 293 (bottom) cells. Data represented as in (D) but here showing fraction of CpGs methylated in cells transfected with plasmids expressing RH-3 or RH-4 TALE-TET1 fusions bearing mutations that inactivate TET1 function (red). Note that RH-3, RH-4 and GFP data are the same as in (D) and are depicted again here for ease of comparison with catalytically inactive controls. fusion proteins (colored circles), an off-target TALE-TET1 fusion to a site in the KLF4 gene (black triangles), or GFP (green triangles). Each data point represents the mean of three independent transfection experiments with bars indicating standard errors of the mean. Methylation status for each experiment was assessed using high-throughput bisulfite sequencing. Note that the GFP and off-target TALE-TET1 control data points shown are the same in both panels and are depicted twice for ease of comparison with experimental samples. Colored arrows indicate the location and direction (5' to 3') of the various HB TALE-TET1 binding sites. (C) Demethylation activities of HB-7, -8, -9, and -10 TALE-TET1 fusion proteins in K562 cells. Data represented as in (B) (D) Expression levels of HBB mRNA (normalized to \u03b2-actin mRNA levels) in K562 cells transfected with indicated TALE-TET1 fusion protein expression plasmids or a control GFP expression plasmid. Means of three independent samples assayed by quantitative RT-PCR are shown with bars representing standard errors of the mean. Asterisks indicate samples with values significantly greater than those obtained with an off-target control TALE-TET1 fusion protein (targeted to a site in the human KLF4 gene) as determined by a one-sided Welch's t-test (n=3, p<0.05). (E) Graphs showing the fraction of CpGs methylated (y-axis) for different positions along the length of the HBB promoter (x-axis, numbered relative to the transcription start site) in cells transfected with plasmids expressing the HB-4, HB-5 or HB-6 TALE-TET1 fusion, HB-4, HB-5 or HB-6 TALE-TET1 bearing mutations that inactivate TET1 catalytic function, or GFP. Each data point represents the mean of three independent transfection experiments with bars indicating standard errors of the mean. Methylation status for each experiment was assessed using high-throughput bi-sulfite sequencing. Note that the control GFP data shown is the same in all three panels and is depicted multiple times for ease of comparison with experimental samples. Blue arrow indicates the location and direction (5' to 3') of the TALE-TET1 fusion protein binding sites. (F) Expression levels of HBB mRNA (normalized to \u03b2-actin mRNA levels) in K562 cells transfected with plasmids expressing HB-4, HB-5 or HB-6 TALE-TET1 fusions, HB-4, HB-5 or HB-6 TALE-TET1 fusions bearing mutations that inactivate TET1 catalytic function, an off-target TALE-TET1 fusion targeted to an unrelated site in the human KLF4 gene, or GFP. Means of three independent samples assayed by quantitative RT-PCR are shown with bars representing standard errors of the mean. Asterisks indicate samples with values significantly greater than those obtained with the off-target control TALE-TET1 fusion protein as determined by a one-sided, two-sample equal variance t-test (n=3, p<0.05)."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Acknowledgments",
+            "paragraphs": [
+                "This work was supported by a National Institutes of Health (NIH) Director's Pioneer Award DP1 GM105378 (to J.K.J.), NIH P50 HG005550 (to J.K.J.), NIH R01 HD053808 (to M.F.W.), NIH R01 HD045595 (to M.F.W.), NIH R01 CA169316 (to J.F.C.), NIH F32 GM105189 (to S.Q.T.), Defense Advanced Research Projects Agency (DARPA) W911NF-11-2-0056 (to J.K.J.), the Karen Osney Brownstein Endowed Chair (to J.F.C.), the Jim and Ann Orr Massachusetts General Hospital (MGH) Research Scholar Award (to J.K.J.), and a US National Science Foundation Graduate Research Fellowship (to M.L.M.). We thank the MGH Nucleic Acid Quantitation Core (supported by NIH P30 NS45776) for use of their real-time PCR machine."
+            ],
+            "subsections": [
+                {
+                    "title": "Accession Codes",
+                    "paragraphs": [
+                        "All raw sequenced reads and BSMAP processed data files have been deposited in NCBI's Gene Expression Omnibus and are accessible through GEO Series accession number GSE50761 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50761) GSE50761."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Supplementary Material",
+            "paragraphs": [
+                "Refer to Web version on PubMed Central for supplementary material."
+            ],
+            "subsections": []
+        }
+    ]
+}

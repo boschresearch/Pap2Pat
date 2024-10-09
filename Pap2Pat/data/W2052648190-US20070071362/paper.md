@@ -1,0 +1,256 @@
+# INTRODUCTION
+
+Theoretical and practical limitations usually constrain the achievable resolution of any imaging device. While higherquality images may result from more expensive imaging systems, often we wish to increase the resolution of images previously captured under nonideal situations. For instance, enhancing the quality of a video sequence captured by surveillance cameras in a crime scene is an example of these situations.
+
+The basic idea behind SR is the fusion of a sequence of low-resolution (LR) noisy blurred images to produce a higher-resolution image. Early works on SR showed that it is the aliasing effects in the LR images that enable the recovery of the high-resolution (HR) fused image, provided that a relative subpixel motion exists between the undersampled input images [1]. However, in contrast to the clean but practically naive frequency-domain description of SR in that early work, in general, SR is a computationally complex and numerically ill-posed problem in many instances [2]. In recent years, more sophisticated SR methods have been developed (see [2][3][4][5][6][7][8][9][10][11][12] as representative works).
+
+In this work, we consider SR applied on an image sequence, producing a sequence of SR images. At time point t, we desire an SR result that fuses the causal images at times t, t -1, . . . , 1. The natural approach, as most existing works so far suggest, is to apply the regular SR on this set of images with the tth frame as a reference, produce the SR output, and repeat this process all over again per each temporal point. We refer to this as the static SR method, since it does not exploit the temporal evolution of the process.
+
+In contrast, in this work, we adopt a dynamic point of view, as introduced in [13,14], in developing the new SR solution. The memory and computational requirements for the static process are so taxing as to preclude its direct application to the dynamic case, without highly efficient algorithms. It is natural to expect that if the SR problem is solved for time t-1, our task for time t could use the solution at the previous time instant as a stepping stone towards a faster and more reliable SR solution. This is the essence of how dynamic SR is to gain its speed and better results, as compared to a sequence of detached static SR solutions.
+
+The work presented here builds on the core ideas as appeared in [13,14], but deviates from them in several important ways, to propose a new and better reconstruction algorithm.
+
+(i) Speed. Whereas the methods in [13,14] rely on the information pair to approximate the KF, this work uses the more classic mean-covariance approach. We show that for the case of translational motion and common space-invariant blur, the proposed method is computationally less complex than the dynamic SR methods proposed previously. Also, in line with [15], we show that this problem can be decomposed into two disjoint pieces, without sacrificing optimality. (ii) Treatment of mosaiced images. In this paper, we focus on two common resolution-enhancement problems in 2 EURASIP Journal on Applied Signal Processing digital video/photography that are typically addressed separately, namely, SR and demosaicing. While SR is naturally described for monochrome images, aiming to increase resolution by the fusion of several frames, demosaicing is meant to recover missing color values, decimated deliberately by the sensor. In this work, we propose a method of dealing with these two problems jointly, and dynamically. Note that in our previous work as appeared in [16,17] we addressed the static multiframe demosaicing problem, and so the work presented here stands as an extension of it to the dynamic case. (iii) Treatment of color. Our goal in this paper is to develop a dynamic SR algorithm for both monochromatic and color input and output sequences. We seek improvements in both visual quality (resolution enhancement and color artifact reduction) and computational/memory efficiency. We introduce advanced priors that handle both spatial and color-wise relationships properly, this way leading to high quality recovery. (iv) Causality. The work presented in [13,14] considered a causal mode of operation, where the output image at time t 0 fuses the information from times t ≤ t 0 . This is the appropriate mode of operation when online processing is considered. Here, we also study a noncausal processing mode, where every HR reconstructed image is derived as an optimal estimate incorporating information from all the frames in the sequence. This is an appropriate mode of operation for offline processing of movies, stored on disk. We use the smoothed KF to obtain an efficient algorithm for this case.
+
+This paper is organized as follows. In Section 2, we discuss a fast dynamic image fusion method for the translational motion model, assuming regular monochromatic images, considering both causal and noncausal modes. This method is then extended in Section 3 to consider an enhancement algorithm of monochromatic deblurring and interpolation. We address multiframe demosaicing and color-SR deblurring problems in Section 4. Simulations on both real and synthetic data sequences are presented in Section 5, and Section 6 concludes this paper.
+
+Before delving into the details, we should mention that this paper (with all color pictures and a Matlab-based software package for resolution enhancement) is available at http://www.soe.ucsc.edu/∼milanfar.
+
+# DYNAMIC DATA FUSION
+
+## Recursive model
+
+In this paper, we use a general linear dynamic forward model for the SR problem as in [13,14]. A dynamic scene with intensity distribution X(t) is seen to be warped at the camera lens because of the relative motion between the scene and camera, and blurred by camera lens and sensor integration. Then, it is discretized at the CCD, resulting in a digitized noisy frame Y (t). Discretization in many commercial digital cameras is a combination of color filtering and downsampling processes. However, in this section, we will restrict our treatment to simple monochrome imaging. We represent this forward model by the following state-space equations [18]:
+
+(1)
+
+(
+
+Equation ( 1) describes how the ideal superresolved images relate to each other through time. We use the underscore notation such as X to indicate a vector derived from the corresponding image of size [rQ 1 × rQ 2 ] pixels, scanned in lexicographic order. The current image
+
+where r is the resolution-enhancement factor, and [Q 1 × Q 2 ] is the size of an input LR image. Equation (1) states that up to some innovation content U(t), the current HR image is a geometrically warped version of the previous image,
+
+, is assumed to be additive zero-mean Gaussian with C u (t) as its covariance matrix of size
+
+. Note that the closer the overlapping regions of X(t) and the motion compensated X(t-1) are, the smaller C u (t) becomes. Therefore, C u (t) reflects the accuracy of the motion estimation process and for overlapped regions it is directly related to the motion estimation covariance matrix.
+
+As to equation ( 2), it describes how the measured image
+
+matrix D(t) represents the downsampling operation at the CCD (downsampling by the factor r in each axis). In mosaiced cameras, this matrix also represents the effects of the color filter array, which further downsamples the color images-this will be described and handled in Section 4. The noise vector W(t) of size [Q 1 Q 2 ×1] is assumed to be additive, zero-mean, white Gaussian noise. Thus, its
+
+w I. We further assume that U(t) and W(t) are independent of each other.
+
+The equations given above describe a system in its statespace form, where the state is the desired ideal image. Thus, a KF formulation can be employed to recursively compute the optimal estimates (X(t), t ∈ {1, . . . , N}) from the measurements (Y (t), t ∈ {1, . . . , N}), assuming that D(t), H(t), F(t), σ w , and C u (t) are all known [13,14,18]. This estimate could be done causally, as an online processing of an incoming sequence, or noncausally, assuming that the entire image sequence is stored on disk and processed offline. We consider both these options in this paper.
+
+As to the assumption about the knowledge of various components of our model, while each of the operators D(t), H(t), and F(t) may vary in time, for most situations the downsampling (and later color filtering), and camera blurring operations remain constant over time assuming that the images are obtained from the same camera. In this paper, we further assume that the camera PSF is space-invariant, and the motion is composed of pure translations, accounting for either vibrations of a gazing camera, or a panning motion of a faraway scene. Thus, both H and F(t) are block-circulant matrices, 1 and as such, they commute. We assume that H is known, being dependent on the camera used, and F(t) is built from motion estimation applied on the raw sequence Y (t). The downsampling operator D is completely dictated by the choice of the resolution-enhancement factor (r). As to σ w , and C u (t), those will be handled shortly.
+
+We limit our model to the case of translational motion for several reasons. First, as we describe later, such a motion model allows for an extremely fast and memory efficient dynamic SR algorithm. Second, while simple, the model fairly well approximates the motion contained in many image sequences, where the scene is stationary and only the camera moves in approximately linear fashion. Third, for sufficiently high frame rates, most motion models can be (at least locally) approximated by the translational model. Finally, we believe that an in-depth study of this simple case yields much insight into the more general cases of motion in dynamic SR.
+
+By substituting Z(t) = HX(t), we obtain from (1) and (2) an alternative model, where the state vector is Z(t),
+
+Note that the first of the two equations is obtained by left multiplication of both sides of (1) by H and using the fact that it commutes with F(t). Thus, the vector V (t) is a colored version of U(t), leading to C v (t) = HC u (t)H T as the covariance matrix. With this alternative definition of the state of the dynamic system, the solution of the inverse problem at hand decomposes, without loss of optimality, into the much simpler subtasks of fusing the available images to compute the estimated blurry image Z(t), followed by a deblurring/ interpolation step, estimating X(t) from Z(t). In this section, we treat the three color bands separately. For instance, only the red band values in the input frames, Y (t), contribute to the reconstruction of the red band values in Z(t). The correlation of the different color bands is discussed and exploited in Section 4.
+
+We next study the application of KF to estimate Z(t). In general, the application of KF requires the update of the state vector's covariance matrix per each temporal point, and this update requires an inversion of the state vector's covariance matrix. For a superresolved image with
+
+, implying a prohibitive amount of computations and memory.
+
+Fast and memory efficient alternative ways are to be found, and such methods were first proposed in the context of the dynamic SR in [13,14]. Here we show that significant further speedups are achieved for the case of translational motion and common space-invariant blur. 1 True for cyclic boundary conditions that will be assumed throughout this work.
+
+## Forward data fusion method
+
+The following defines the forward Kalman propagation and update equations [18] that accounts for a causal (online) process. We assume that at time t -1 we already have the mean-covariance pair, ( Z(t -1), M(t -1)), and those should be updated to account for the information obtained at time t. We start with the covariance matrix update based on (3),
+
+The KF gain matrix is given by
+
+This matrix is rectangular of size
+
+. Based on K(t), the updated state-vector mean is computed by
+
+The final stage requires the update of the covariance matrix, based on (4),
+
+More on the meaning of these equations and how they are derived can be found in [18,19]. While in general the above equations require the propagation of intolerably large matrices in time, if we refer to C v (t) as a diagonal matrix, then M(t) and
+
+. It is relatively easy to verify this property: for an arbitrary diagonal matrix G B (B stands for big), the matrix DG B D T is a diagonal matrix. Similarly, for an arbitrary diagonal matrix G S (S stands for small), the matrix D T G S D is diagonal as well. Also, in [15], it is shown that for an arbitrary pure translation matrix F and an arbitrary diagonal matrix G B , the matrix FG B F T is diagonal. Therefore, if the matrix M(0) is initialized as a diagonal matrix, then M(t) and M(t) are necessarily diagonal for all t, being the results of summation, multiplication, and inversions of diagonal matrices.
+
+Diagonality of C v (t) is a key assumption in transferring the general KF into a simple and fast procedure, and as we will see, the approximated version emerging is quite faithful. Following [13,14], if we choose a matrix
+
+is a positive semidefinite matrix, and there is always a finite σ v that satisfies this requirement. Replacing C v (t) with this majorizing diagonal matrix, the new state-space system in (3) and ( 4) simply assumes a stronger innovation process. The effect on the KF is to rely less on the temporal relation in (3) and more on the measurements in (4). In fact, at the extreme case, if σ v → ∞, the KF uses only the measurements, leading to an intraframe maximumlikelihood estimator. Thus, more generally, such a change causes a loss in the accuracy of the KF because it relies less on the internal dynamics of the system, but this comes with a welcomed simplification of the recursive estimator. It must be clear that such change in C v (t) has no impact on the convergence properties of the dynamic estimator we apply, and it does not introduce a bias in the estimate. Note that all the above is true also for a diagonal non-Toeplitz alternative, where the main diagonal entries are varying in space.
+
+Once we chose C v (t) to be diagonal, ( 5), ( 6), (7), and (8) are simplified, and their use is better understood on a pixelby-pixel basis. Before we turn to describe such a KF for the forward case, we introduce some notations to simplify the explanation of the process.
+
+The warp matrix F(t) and its transpose can be exactly interpreted as image shift operators [8,15]. We use hereafter the superscript " f ," to simplify the notation of forward shifting of vectors and diagonal matrices, and thus
+
+Also, the matrix D and its transpose can be exactly interpreted as downsampling and upsampling operators. Application of DZ(t) and D M(t)D T results in downsampling of the vector Z(t) and the diagonal matrix M(t). Likewise, application of D T Y (t) and D T C w (t)D results in upsampling of the vector Y (t) and the diagonal matrix C w (t) with zero filling. Figure 1 illustrates the effect of matrix upsampling and downsampling operations, and this also sheds some light on the previous discussion on the diagonality assumption on M(t) and M(t).
+
+Finally, we will use the notation [G] q to refer to the (q, q) entry of the diagonal matrix G, and [G] q to refer to the (q, 1) entry in the vector G. This way we will be able to handle both the LR and the HR grids in the same equations.
+
+Let us now return to the KF equations and show how they are implemented in practice on a pixel-by-pixel basis. First, referring to the propagated covariance matrix, we start by observing that in (6), the term
+
+, with the (q, q)th entry being
+
+with q in the range [1,
+
+. The "jumps" in r 2 in the indices of M f (t) and C v (t) are caused by the decimation D.
+
+Applying an inversion replaces the above by its reciprocal.
+
+Using interpolation
+
+, with the qth entry being
+
+this time referring to the indices q = r 2 , 2r 2 , . . .
+
+For all other (r 2 -1)Q 1 Q 2 indices, the entries are simply zeros, filled by the interpolation. Merging this with ( 6) and ( 8), we obtain
+
+a 0 0 0 0 0 0 0 0 0 0 0 0 0 b 0 0 0 0 0 0 0 0 0 0 0 0 0 c 0 0 0 0 0 0 0 Note that the incorporation of each newly measured LR image only updates values of Turning to the update of the mean vector, Z(t), using the same reasoning applied on ( 6) and ( 7), we obtain the relation
+
+Figure 2 describes the above equation's upper part as a block diagram. Notice that two images are merged here-an interpolated version of Y (t) and Z f (t). The merging is done as a weighted average between the two, as the figure suggests.
+
+The overall procedure using these update equations is outlined in Algorithm 1. Since the update operations are simply based on shifting the previous estimates Z(t -1) and M(t -1) and updating the proper pixels using ( 11) and ( 12), we refer hereafter to this algorithm as the dynamic shiftand-add process. Similarly, we call Z(t) the dynamic shiftand-add image. Several comments are in order, regarding the above procedure.
+
+(1) Initialization. For long enough sequences, the initialization choice has a vanishing effect on the outcome. Choosing M(0) = 2 I guarantees that M(t) is strictly positive definite at all times, where is an arbitrary large number ( σ 2 w ). Better initialization can be proposed, based on interpolation of the image Y (t). The same applies to regions coming from occlusionthose can be initialized by the current image. 
+
+Shifted HR of time t - 
+
+(2) update of the covariance: use (11) to compute the update M(t);
+
+(3) update of the mean: use (12) to compute the update Z(t).
+
+(iv) Repeat. Update process.
+
+Algorithm 1: Forward dynamic shift-and-add algorithm.
+
+(2) Arrays propagated in time. The algorithm propagates two images in time, namely, the image estimate Z(t), and the main diagonal of its covariance matrix M(t). This last quantity represents the weights assigned per pixel for the temporal fusion process, where the weights are derived from the accumulated measurements for the pixel in question.
+
+At this point, we have an efficient recursive estimation algorithm producing estimates of the blurry HR image sequence Z(t). From these frames, the sequence X(t) should be estimated. Note that some (if not all) frames will not have estimates for every pixel in Z(t), necessitating a further joint interpolation and deblurring step, which will be discussed in Sections 3 and 4. For the cases of multiframe demosaicing and color SR, the above process is to be applied separately on the R, G, and B layers, producing the arrays we will start from in the next sections.
+
+While the recursive procedure outlined above will produce the optimal (minimum mean-squared) estimate of the state (blurry image Z(t)) in a causal fashion, we can also consider the best estimate of the same given "all" the frames. This optimal estimate is obtained by a two-way recursive filtering operation known as "smoothing," which we discuss next.
+
+## Smoothing method
+
+The fast and memory efficient data fusion method described above is suitable for causal, real-time processing, as it estimates the HR frames from the previously seen LR frames. However, oftentimes super-resolution is preformed offline, and therefore a more accurate estimate of an HR frame at a given time is possible by using both previous and future LR frames. In this section, we study such offline dynamic SR method also known as smoothed dynamic SR [20].
+
+The smoothed data fusion method is a two-pass (forward-backward) algorithm. In the first pass, the LR frames pass through a forward data fusion algorithm similar to the method explained in Section 2.2, resulting in a set of HR estimates { Z(t)} N t=1 and their corresponding diagonal covariance matrices { M(t)} N t=1 . The second pass runs backward in time using those mean-covariance pairs, and improves these forward HR estimates, resulting in the smoothed mean-covariance pairs { Z s (t), M s (t)} N t=1 . While it is possible to simply implement the second pass (backward estimation) similar to the forward KF algorithm, and obtain the smooth estimate by weighted averaging of the forward and backward estimates with respect to their covariance matrices, computationally more efficient methods are more desirable. We refer the reader to the appendix for a more detailed study of such algorithm based on the fixedinterval smoothing method of Rauch, Tung, and Striebel [21,22].
+
+# DEBLURRING AND INTERPOLATION OF MONOCHROMATIC IMAGE SEQUENCES
+
+To perform robust deblurring and interpolation, we use the MAP cost function
+
+and define our desired solution as
+
+Here, the matrix A(t) is a diagonal matrix whose values are chosen in relation to our confidence in the measurements that contributed to make each element of Z(t). These values have inverse relation to the corresponding elements in the matrix2 M(t). The regularization parameter, λ, is a scalar for properly weighting the first term (data fidelity cost) against the second term (regularization cost), and Γ(X) is the regularization cost function. The regularization term provides some prior information about the solution of this illposed problem and stabilizes it, improves the rate of convergence, and helps remove artifacts. In this section, we propose regularization terms that yield good results for the case of monochromatic dynamic SR problem and in Section 4 we address proper regularization terms for color SR, and multiframe demosaicing problems.
+
+For the case of monochromatic SR, many regularization terms have been proposed. Some have limited applications and are useful for some special types of images (e.g., application of maximum entropy type regularization terms [23] are generally limited to producing sharp reconstructions of point objects). Tikhonov [2,4], total variation (TV) [24][25][26], and bilateral-total variation (BTV) [8] type regularization terms are more generally applicable. While implementation of Tikhonov prior usually results in images with smoothed edges, TV prior tends to preserve edges in reconstruction, as it does not severely penalize steep local gradients.
+
+Based on the spirit of TV criterion and a related technique called the bilateral filter [27,28], the BTV regularization is computationally cheap to implement and effectively preserves edges (see [8] for a comparison of Tikhonov, total variation, and bilateral regularization cost functions). The bilateral-TV regularization term is defined as
+
+S l x and S m y are the operators corresponding to shifting the image represented by X by l pixels in horizontal direction and m pixels in vertical direction, respectively. This cost function in effect computes derivatives across multiple resolution scales. The scalar weight, 0 < α < 1, is applied to give a spatially decaying effect to the summation of the regularization term. Note that image shifting and differencing operations are very cheap to implement.
+
+The overall cost function is the summation of the data fidelity penalty term and the regularization penalty term:
+
+Steepest descent optimization may be applied to minimize this cost function, which can be expressed as
+
+# ) + β H T A T (t) A(t)HX(t) -A(t) Z(t)
+
+where S -l x and S -m y define the transposes of matrices S l x and S m y , respectively, and have a shifting effect in the opposite directions as S l
+
+x and S m y , and β is the step size.
+
+# DEMOSAICING AND DEBLURRING OF COLOR (FILTERED) IMAGE SEQUENCES
+
+Similar to what is described in Section 3, we deal with color sequences in a two-step process of image fusion and simultaneous deblurring and interpolation. In this section, first we describe the fundamentals of the multiframe demosaicing and color-SR problems (Section 4.1) and then describe the proposed method which results in optimal reconstruction of superresolved color images (Section 4.2).
+
+## Fundamentals of multiframe demosaicing and color SR
+
+A image is represented by combining three separate monochromatic images. Ideally, each pixel should correspond to three scalar values; one for each of the color bands (red, green, and blue). In practice, however, to reduce production cost, many digital cameras have only one color measurement per pixel. The detector array is a grid of CCDs, each made sensitive to one color by placing a color filter array (CFA) in front of the CCD. The Bayer pattern shown in Figure 3 (left) is a very common example of such a color filter. The values of missing color bands at every pixel are then synthesized using some form of interpolation from neighboring pixel values. This process is known as color demosaicing.
+
+While numerous single-frame demosaicing methods have been proposed (see [29][30][31][32][33][34][35][36][37] as representative works), the reconstructed images are almost always contaminated with different amounts of color artifacts. This results from the ill-posed nature of the demosaicing problem. However, if multiple, spatially offset, color-filtered images of the same scene are available, one can combine them both to increase spatial resolution, and to produce a more effective overall demosaicing with significantly reduced artifacts. Such an approach may be termed multiframe demosaicing. What makes multiframe demosaicing challenging is that almost none of the single-frame demosaicing methods (but the very recent methods in [16,17,38,39]) are directly applicable to it.
+
+A related problem, color SR, addresses fusing a set of previously demosaiced color LR (or originally full color LR frames) to enhance their spatial resolution. To date, there is very little work addressing the problem of color SR. One possible solution involves applying monochromatic SR algorithms to each of the color channels independently [40,41], while using the color information to improve the accuracy of motion estimation. Another approach is transforming the problem to a different color space, where chrominance layers are separated from luminance, and SR is applied only to the luminance channel [3]. Both of these methods are suboptimal as they do not fully exploit the correlation across the color bands.
+
+In this section, we present a very efficient dynamic method applicable to multiframe demosaicing and also, to the standard color SR problems (where full RGB channels are already available). Referring to the mosaic effects, the geometries of the single-frame and multiframe demosaicing problems are fundamentally different, making it impossible to simply cross-apply traditional demosaicing algorithms to the multiframe situation. To better understand the multiframe demosaicing problem, we offer an example for the case of translational motion. Suppose that a set of color-filtered LR images is available (images on the left in Figure 3). We use the static two-step SR process explained in [16] to fuse these images. In the first step, LR images are upsampled, motion compensated, and averaged to result in what we call the static "shift-and-add" HR image.
+
+The shift-and-add image on the right side of Figure 3 illustrates the pattern of sensor measurements in the HR   image grid. In such situations, the sampling pattern is quite arbitrary depending on the relative motion of the LR images. This necessitates a different demosaicing algorithm than those designed for the original Bayer pattern. Figure 3 shows that treating the green channel differently than the red or blue channels, as is done in many singleframe demosaicing methods before, is not particulary useful for the multiframe case. While globally there are more green pixels than blue or red pixels, locally any pixel may be surrounded by only red or blue colors. So, there is no general preference for one color band over the others.
+
+Another assumption, the availability of one and only one color band value for each pixel, is also not correct in the multiframe case. In the underdetermined cases, 3 there are not enough measurements to fill the HR grid. The symbol "?" in Figure 3 represents such pixels. On the other hand, in the overdetermined case, 4 for some pixels, there may in fact be more than one color value available.
+
+In the next subsection, we propose an algorithm for producing high-quality color sequences from a collection of LR color (filtered) images. Our computationally efficient MAP estimation method is motivated by the color image perception properties of the human visual system. This method is directly applicable to both color SR (given full RGB LR frames) and the more general multiframe demosaicing problems introduced earlier. 
+
+Output HR image Dynamic shift-and-add results 
+
+## Multiframe demosaicing and color SR
+
+As described in Section 2, our method is a two-step process of image fusion and simultaneous deblurring and interpolation. Figure 4 shows an overall block diagram of the dynamic SR process for mosaiced images (the feedback loops are eliminated to simplify the diagram). For the case of color SR, the first step involves nothing more than the application of the recursive image fusion algorithm separately on three different color bands. Image fusion of color-filtered images is done quite similarly, where each single-channel colorfiltered frame is treated as a sparsely sampled three-channel color image. The second step (deblur and demosaic block in Figure 4) is the enhancement step that removes blur, noise, and color artifacts from the shift-and-add sequence, and is based on minimizing a MAP cost function with several terms composing an overall cost function similar to (X(t)) in (13).
+
+In what follows in this section, we define the terms in this cost function.
+
+Data fidelity penalty term. This term penalizes the dissimilarity between the raw data and the HR estimate, and is defined as
+
+where Z R , Z G , and Z B are the three color channels of the color shift-and-add image, Z. A R , A G , and A B are the red, green, and blue diagonal confidence matrices of Z R , Z G , and Z B , respectively. The diagonal elements of A i∈{R,G,B} which correspond to those pixels of Z i∈{R,G,B} , which have not been produced from any measurement are set to zero. Note that the A i∈{R,G,B} matrices for the multiframe demosaicing problem are sparser than the corresponding matrices in the color SR case.
+
+Luminance penalty term. The human eye is more sensitive to the details in the luminance component of an image than the details in the chrominance components [32]. Therefore, it is important that the edges in the luminance component of the reconstructed HR image look sharp. Applying bilateral-TV regularization to the luminance component will result in this desired property [8], where L 1 norm is used to force spatial smoothness while creating sharp edges. The luminance image can be calculated as the weighted sum X L (t) = 0.299X R (t) + 0.597X G (t) + 0.114X B (t) as explained in [42]. The luminance regularization term is defined (as before):
+
+The S l x and S m y shifting operators and the parameter α are defined in (15).
+
+Chrominance penalty term. The human eye is more sensitive to chromatic change in the low-spatial-frequency region than the luminance change [37]. As the human eye is less sensitive to the chrominance channel resolution, it can be smoothed more aggressively. Therefore, L 2 regularization is an appropriate method for smoothing the Chrominance term:
+
+where Λ is the matrix realization of a highpass operator such as the Laplacian filter. The images X C1 (t) and X C2 (t) are the I and Q layers in the YIQ color representation.
+
+Orientation penalty term. This term penalizes the nonhomogeneity of the edge orientation across the color channels. Although different bands may have larger smaller gradient magnitudes at a particular edge, the statistics of natural images shows that it is reasonable to assume a same edge orientation for all color channels. That is, for instance, if an edge appears in the red band at a particular location, then an edge with the same orientation should appear in the other color bands at the same location as well. Following [31], minimizing the vector product norm of any two adjacent color pixels forces different bands to have similar edge orientation. With some modifications to what was proposed in [31], our orientation penalty term is a differentiable cost function:
+
+where is the element-by-element multiplication operator. The overall cost function (X(t)) is the summation of these cost functions:
+
+Coordinatewise steepest descent optimization may be applied to minimize this cost function. In the first step, the derivative of ( 22) with respect to one of the color bands is calculated, assuming the other two color bands are fixed. In the next steps, the derivative is computed with respect to the other color channels. The steepest descent iteration formulation for this cost function is shown in [17].
+
+# EXPERIMENTS
+
+Experiments on synthetic and real data sets are presented in this section. In the first experiment, we synthesized a sequence of low-resolution color-filtered images from a single color image of size 1200 × 1600 captured with a one-CCD OLYMPUS C-4000 digital camera. A 128 × 128 section of this image was blurred with a symmetric Gaussian lowpass filter of size 4 × 4 pixels with standard deviation equal to one. The resulting images were subsampled by the factor of four in each direction and further color filtered with Bayer pattern creating a 32 × 32 image. We added Gaussian noise to the resulting LR frames to achieve SNR equal 5 to 30 dB. We consecutively shifted the 128 × 128 window on the original 5 Signal-to-noise ratio (SNR) is defined as 10 log 10 (σ 2 /σ 2 n ), where σ 2 and σ 2 n are variances of a clean frame and noise, respectively. high-resolution image by one pixel in right, down, or up directions, and repeated the same image degradation process.
+
+In this fashion, we created a sequence of 250 frames. Figures 5(a) and 5(b) show two sections of the HR image. Figures 5(c) and 5(d) show frames #50 and #250 of the LR sequence (for the sake of presentation each frame has been demosaiced following the method of [29]). We created a sequence of HR fused images using the method described in Section 2.2 (factor of 4 resolution enhancement by forward shift-and-add method). Figures 5(e #50 and #250 of this sequence, where the missing values were filled using bilinear interpolation. Note that for the particular motion in this underdetermined experiment, it is easy to show that less than 1/3 of the pixel values in Z(t) are determined by the shift-and-add process.
+
+Later each frame was deblurred-demosaiced using the method described in Section 4. Figures 5(g) and 5(h) show frames #50 and #250 of this reconstructed sequence, where the color artifacts have been almost completely removed. The PSNR 6 values for this sequence are plotted in Figure 6. This plot shows that after the first few frames are processed, the quality of the reconstruction is stabilized for the remaining frames. The small distortions in the PSNR values of this sequence are due to the difference in color and high-frequency information of different frames. The corresponding parameters for this experiment (tuned by trial-and-error) were as follows: α = 0.9, = 10 6 , β = 0.06, λ = λ = 0.001, and λ = 10. Fifteen iterations of steepest descent were used for this experiment.
+
+Our next experiment was preformed on a real-world (already demosaiced) compressed image sequence courtesy of Adyoron Intelligent Systems Ltd., Tel Aviv, Israel. Two frames of this sequence (frames #20 and #40) are shown in Figures 7(a) and 7(d). We created a sequence of HR fused images (factor of 4 resolution enhancement) using the forward data fusion method described in Section 2.2 (Figures 7(b) and 7(e)). Later each frame in this sequence was deblurred using the method described in Section 4 (Figures 5(c) and 7(f)). The corresponding parameters for this experiment are as follows: α = 0.9, = 10 6 , β = 0.1, λ = λ = 0.005, and λ = 50. Fifteen iterations of steepest descent were used for this experiment. The (unknown) camera PSF was 6 The PSNR of two vectors X and X of size
+
+assumed to be a 4 × 4 Gaussian kernel with standard deviation equal to one. As the relative motion between these images approximately followed the translational model, we only needed to estimate the motion between the luminance components of these images [43]. We used the method described in [44] to compute the motion vectors. In the reconstructed images, there are some effects of wrong motion estimation, seen as periodic teeth along the vertical bars. We assume that these errors correspond to the small deviations from the pure translational model.
+
+In the third experiment, we used 74 uncompressed, raw CFA images from a video camera (based on Zoran 2MP CMOS sensors). We applied the method of [29] to demosaic each of these LR frames, individually. Figure 8(a) shows frame #1 of this sequence.
+
+To increase the spatial resolution by a factor of three, we applied the proposed forward data fusion method of Section 2.2 on the raw CFA data. Figure 8(b) shows the forward shift-and-add result. This frame was further deblurreddemosaiced by the method explained in Section 4 and the result is shown in Figure 8(c). To enhance the quality of reconstruction, we applied the smoothing method of Section 2.3 to this sequence. Figure 8(d) shows the smoothed data fusion result for frame #1 (smoothed shift-and-add). The deblurred-demosaiced result of applying the method explained in Section 4 is shown in Figure 8(e).
+
+Figure 8(f) shows the frame #69 of this sequence, demosaiced by the method in [29]. Figure 8(g) shows the result of applying the method of Section 2.3 to form the smoothed shift-and-add image. This frame is further deblurred-demosaiced by the method explained in Section 4 and the result is shown in Figure 8(h).
+
+The parameters used for this experiment are as follows: β = 0.04, = 10 6 , α = 0.9, λ = 0.001, λ = 50, λ = 0.1. The (unknown) camera PSF was assumed to be a tapered 5 × 5 disk PSF. 7  Note that F(t) X(t -1) is a suitable candidate to initialize X 0 (t), since it follows the KF prediction of the state-vector updates. Therefore, as the deblurring-demosaicing step is the computationally expensive part of this algorithm, for all of these experiments we used the shifted version of deblurred image of t -1 as the initial estimate of the deblurreddemosaiced image at time instant t.
+
+# SUMMARY AND FUTURE WORK
+
+In this paper, we presented algorithms to enhance the quality of a set of noisy, blurred, and possibly color-filtered images to produce a set of monochromatic or color HR images with less noise, aliasing, and blur effects. We used MAP estimation technique to derive a hybrid method of dynamic SR and multiframe demosaicing. Our method is also applicable to the case of color SR.
+
+For the case of translational motion and common spaceinvariant motion, we justified a two-step algorithm. In the 7 Matlab command fspecial('disk' ,2) creates such a blurring kernel. first step, we used the KF framework for fusing LR images recursively in a fast and memory-efficient way. In the second step, while deblurring and interpolating the missing values, we reduced luminance and color artifacts by using appropriate penalty terms. These terms were based on our prior knowledge of the statistics of natural images and the properties of the human visual system. All matrix-vector operations in the proposed method are implemented as simple image operators.
+
+While the proposed demosaicing method is applicable to a very wide range of data and motion models, our dynamic SR method is developed for the case of translational motion and common space-invariant blur. A fast and robust recursive data fusion algorithm based on using L 1 norm minimization applicable to general motion models is part of our ongoing work.
+
+# APPENDIX A. NONCAUSAL DYNAMIC SUPER-RESOLUTION
+
+In this appendix, we explain and formulate the two-pass fixed-interval smoothing method of Rauch, Tung, and Striebel [21,22] for the dynamic SR problem. The first pass is quite similar to the method explained in Section 2.2, resulting in a set of HR estimates { Z(t)} N t=1 and their corresponding diagonal covariance matrices { M(t)} N t=1 . The second pass runs backward in time using those mean-covariance pairs, and improves these forward HR estimates.
+
+The following equations define the HR image and covariance updates in the second pass. Assuming that we have the entire sequence { Z(t), M(t)} N t=1 , we desire to estimate the pairs { Z s (t), M s (t)} N t=1 that represent the mean and covariance per time t, based on all the information in the sequence. We assume a process that runs from t = N -1 downwards, initialized with Z s (N) = Z(N) and M s (N) = M(N).
+
+We start by the covariance propagation matrix. Notice its similarity to (5): M(t + 1) = F(t + 1) M(t)F T (t + 1) + C v (t + 1).
+
+(A.1)
+
+This equation builds a prediction of the covariance matrix for time t + 1, based on the first-pass forward stage. Note that the outcome is diagonal as well. The Kalman smoothed gain matrix is computed using the above prediction matrix, and the original forward covariance one, by (A.4)
+
+Following the notations we have used before, we use the superscript "b" to represent backward shifting in time of vectors and matrices, so that Z b s (t) = F T (t + 1) Z s (t + 1) and similarly M b s (t) = F T (t + 1) M s (t + 1)F(t + 1) and C b v (t) = F T (t+1)C v (t+1)F(t+1). Then, using the same rational practiced in the forward algorithm, the smoothed gain matrix for a pixel at spatial position q is M(t) q M(t) q + C b v (t) q .
+
+(A.  Similar to what is shown in Section 2.2, we can simplify (A.1), (A.2), (A.3), and (A.4) to the following pixelwise update formulas: M s (t) q = M(t) q + M(t) 2 q × M b s (t) q -M(t) q -C b v (t) q M(t) q + C b v (t) q , (A.6) Z s (t) q = C b v (t) q Z(t) q + M(t) q Z b s (t) q M(t) q + C b v (t) q . (A.7)
+
+Figure 9 describes the above equation as a block diagram. There is a simple interpretation for (A.7). The smoothed HR pixel at time t is the weighted average of the forward HR estimate at time t ([ Z(t)] q ) and the smoothed HR pixel at time instant t + 1 after motion compensation ([ Z b s (t)] q ). In case there is high confidence in the [ Z(t)] q (i.e., the value of [ M(t)] q is small), the weight of [ Z b s (t)] q will be small. On the other hand, if there is high confidence in estimating the HR pixel at time t + 1 from an HR pixel at time t after proper motion compensation (i.e., the value of [C b v (t)] q is small), it is reasonable to assume that the smoothed HR pixel at time t can be estimated from a HR pixel at time t + 1 after proper motion compensation. Note that unlike the forward pass, estimation of HR smoothed images do not depend on the computation of smoothed covariance update matrices as in (A.4) and (A.6), and those can be ignored in the application.
+
+The overall procedure using these update equations is outlined in Algorithm 2.
+
+# ACKNOWLEDGMENTS
+
+We would like to thank the associate editor and the ers for valuable comments that helped the clarity of presentation of this paper, and Lior Zimet and Erez Galil from Zoran Corp. for providing the camera used to produce the raw CFA images of experiment 3 in Figure 8. This work was supported in part by the US Air Force Grant F49620-03-1-0387, and by the National Science Foundation, Science and Technology Center for Adaptive Optics, managed by the University of California at Santa Cruz under Cooperative Agreement no. AST-9876783. M. Elad's work was supported in part by the Jewish Communities of Germany Research Fund.
+

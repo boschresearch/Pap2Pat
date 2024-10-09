@@ -1,0 +1,142 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to acoustic coordinated reset neuromodulation therapies
+
+## BACKGROUND
+
+- introduce acoustic coordinated reset neuromodulation therapy
+- motivate acoustic CR neuromodulation
+- summarize acoustic CR neuromodulation techniques
+- limitations of acoustic CR neuromodulation techniques
+
+## SUMMARY
+
+- introduce acoustic coordinated reset neuromodulation therapy
+- provide stimulation signals for therapy
+- evaluate tinnitus frequency
+- determine tinnitus bandwidth
+- generate primary stimulation signal
+- determine primary stimulation frequency
+- determine primary stimulation intensity
+- determine primary stimulation bandwidth
+- modify primary stimulation frequency
+- generate primary stimulation signal
+- deliver primary stimulation signal
+- evaluate tinnitus frequency
+- determine tinnitus bandwidth
+- determine primary stimulation frequency
+- determine primary stimulation intensity
+- determine primary stimulation bandwidth
+- modify primary stimulation frequency
+- generate primary stimulation signal
+- deliver primary stimulation signal
+- modify primary stimulation intensity
+- modify primary stimulation bandwidth
+- adjust primary stimulation frequency
+- generate secondary stimulation signal
+- determine secondary stimulation frequency
+- determine secondary stimulation intensity
+- determine secondary stimulation bandwidth
+- modify secondary stimulation frequency
+- generate secondary stimulation signal
+- deliver secondary stimulation signal
+- estimate ambient noise level
+- modify stimulation intensity
+- adjust stimulation frequency
+- re-calculate stimulation bandwidth
+- modify stimulation frequency
+- generate multiple therapeutic stimulation signals
+- adjust frequency of each stimulation signal
+- provide system for acoustic coordinated reset neuromodulation therapy
+- provide audio-detection threshold calibration
+- provide frequency-discrimination threshold calibration
+- evaluate tinnitus frequency
+- determine tinnitus bandwidth
+- generate primary stimulation signal
+- generate secondary stimulation signal
+- deliver stimulation signals
+- introduce invention
+- describe computer program product
+- motivate iterative process
+- describe parameterized analytical model
+- introduce fitting process
+- disclose further embodiments
+- provide overview of human auditory system
+- describe tonotopic structure of basilar membrane
+- model auditory filters
+- define bandwidth of auditory filters
+- describe Q factor of normal and hearing-impaired ears
+- determine shape of auditory filter
+- approximate complex shape with ERB
+- describe peripheral auditory system
+- explain tinnitus sensation
+- relate size of deafferentation to tuning curves
+- describe intensity of sound
+- define threshold of hearing
+- express intensity in dB HL
+- relate size of activation area to intensity
+- optimize desynchronizing effect
+- adapt spread of therapeutic frequencies
+- configure spacing of stimulation signals
+- change frequencies with intensity
+- use thresholdogram to define stimulation tones
+- describe iterative process for optimization
+- show schematic representation of method
+- introduce tinnitus therapy
+- calculate ERBT from tinnitus frequency
+- determine tinnitus intensity parameter
+- calculate stimulation frequency
+- determine stimulation intensity
+- calculate stimulation bandwidth
+- modify stimulation frequency for optimal overlap
+- calculate overlap parameter
+- describe multiple stimulation signals
+- discuss ambient noise level parameter
+- re-determine stimulation intensity
+- re-modify stimulation frequency
+- provide example with numerical values
+- calculate initial stimulation frequencies
+- calculate intensities from audiogram
+- calculate relative ERB values
+- calculate adjusted stimulation frequencies
+- describe multiple stimulation frequency bands
+- discuss varying amounts of overlap
+- cite published sources
+- describe calculations for auditory filter bandwidths
+- discuss application of Hopkins and Moore equation
+- describe iterative process for calculating intensities
+- discuss modifications to calculations
+- cite additional published sources
+- describe acoustic coordinated reset neuromodulation therapy
+- evaluate tinnitus pitch
+- determine center frequencies and intensities
+- determine auditory filter bandwidths
+- adjust center frequencies for overlap
+- deliver therapeutic stimulation signals
+- record patient feedback
+- describe system for delivering therapy
+- provide means for evaluating tinnitus pitch
+- provide means for determining center frequencies and intensities
+- provide means for determining auditory filter bandwidths
+- provide means for adjusting center frequencies
+- provide means for delivering therapeutic stimulation signals
+- provide means for recording patient feedback
+- discuss implantable systems and devices
+- describe hardware implementations
+- describe software implementations
+- discuss computer readable medium
+- describe computer readable instructions
+- discuss random access memory
+- discuss read-only memory
+- discuss non-volatile random access memory
+- discuss electrically erasable programmable read-only memory
+- discuss flash memory
+- discuss computer readable medium
+- describe computer readable instructions
+- discuss purposes of illustration
+- discuss purposes of limitation
+- provide summary of patent application
+- conclude patent application
+

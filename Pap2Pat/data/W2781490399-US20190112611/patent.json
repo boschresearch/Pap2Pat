@@ -1,0 +1,699 @@
+{
+    "id": "US20190112611",
+    "authors": [
+        "Scott E. Baker",
+        "Jon K. Magnuson",
+        "Morgann C. Reilly",
+        "Joonhoon Kim",
+        "John Gladden",
+        "Jed J. Lynn"
+    ],
+    "title": "GENE TARGETS FOR IMPROVED ENZYME PRODUCTION IN FUNGI",
+    "date": "2018-10-17 00:00:00",
+    "abstract": "Fungi that are genetically inactivated for the mstC gene (or a homolog thereof) are provided, which can also be genetically modified to increase production of heterologous proteins from a glucoamylase promoter. Methods of using these fungi, for example to degrade a biomass, are also provided.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "ACKNOWLEDGMENT OF GOVERNMENT SUPPORT",
+                    "paragraphs": [
+                        "This invention was made with government support under Contract DE-AC0576RL01830 and DE-AC02-05CH11231 awarded by the U.S. Department of Energy. The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "acknowledge government support"
+                    ],
+                    "num_characters": 195,
+                    "outline_medium": [
+                        "acknowledge government support"
+                    ],
+                    "outline_short": [
+                        "acknowledge government support"
+                    ]
+                },
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "This application provides fungi that are genetically inactivated for the mstC gene or a homolog thereof (such as NCU01633), and can be further genetically modified to increase production of heterologous proteins from a glucoamylase promoter. Methods of using these fungi are also provided."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce field of invention"
+                    ],
+                    "num_characters": 289,
+                    "outline_medium": [
+                        "introduce field of invention"
+                    ],
+                    "outline_short": [
+                        "introduce fungi for heterologous protein production"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Biofuels and bio-based chemicals derived from lignocellulose are promising alternatives to traditional petroleum-originating fuels and chemicals. The plant cell wall is a complex assembly of cellulose, hemicellulose, lignin, pectin, and proteins (Somerville et al. 2004). Breaking down this heterogeneic substrate into its constituent monomers and oligomers currently requires a combination of physical, chemical, and/or biological deconstruction methods. A variety of chemical pretreatment methods have been explored, including acids, bases, solvents, and oxidation (Silveira et al. 2015). For the subsequent enzymatic hydrolysis steps to be both economically and environmentally viable, proteins that can remain active in the presence of residual pretreatment chemicals need to be identified. It would also be beneficial if these enzymes can be produced economically and at a large scale.",
+                        "Ionic liquid (IL) solvents are used for biomass pretreatment (Yu et al. 2016). There has been a concerted effort to identify cellulose cocktail components that are IL-tolerant as current commercial mixtures are not. For example, a number of cellulolytic enzymes with thermophilic and IL-tolerant characteristics were identified from a switchgrass-degrading bacterial community (Gladden et al. 2011). However, many of the species producing these enzymes are not easily cultured. The predicted cellulolytic bacterial enzymes were produced either in vitro or from Escherichia coli in order to characterize their activity over a range of temperature, pH, and IL concentration (Gladden et al. 2014). To produce these enzymes at a larger scale, these sequences were cloned into the fungal host, Aspergillus niger (Campen et al.).",
+                        "Filamentous fungi are commonly used for the commercial production of chemicals and enzymes. The ability of A. niger to grow aerobically over a wide range of both temperatures and pHs is advantageous in industrial settings (Schuster et al. 2002; Oliveira et al. 2001). In addition, the organism is non-pathogenic and does not produce the mycotoxins that are common in some other related fungal species. It is therefore categorized as GRAS (generally recognized as safe) by the US Food and Drug Administration, meaning that substances generated using A. niger are considered harmless as food additives (Schuster et al. 2002, van Dijck et al. 2003). Because of its established use in industry, numerous large-scale fermentation protocols for A. niger exist. Finally, A. niger has a well-developed molecular toolbox, including various auxotrophic and antifungal resistance markers, a fully sequenced genome, and various transformation protocols, thus making it conducive to genetic manipulation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate biofuels and bio-based chemicals",
+                        "describe plant cell wall complexity",
+                        "discuss chemical pretreatment methods",
+                        "introduce ionic liquid solvents",
+                        "discuss fungal hosts for enzyme production"
+                    ],
+                    "num_characters": 2708,
+                    "outline_medium": [
+                        "motivate biofuels and bio-based chemicals",
+                        "discuss limitations of current methods"
+                    ],
+                    "outline_short": [
+                        "motivate biofuels and bio-based chemicals"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "A forward mutagenesis strategy was used to identify methods to enhance heterologous enzyme production in A. niger. A strain engineered to produce one of the IL-tolerant bacterial j3-glucosidases (BGs) was subjected to chemical mutagenesis and the resulting strains screened for increased enzyme production. Subsequent whole-genome resequencing of a dozen hyper-production mutants identified hundreds of genetic lesions, and bioinformatics analysis revealed several loci potentially associated with heterologous enzyme hyper-production, including those that appear to be specific to the heterologous protein expression construct used. One of the identified loci was annotated as a low-affinity glucose transporter, mstC. It is shown herein that the deletion of mstC improves the heterologous enzyme production driven by a glucoamylase promoter (PglaA), some examples by at least four-fold. This allows for increased production of heterologous proteins by Aspergillus species such as A. aculeatus, A. awamori, A. brasiliensis, A. carbonarius, A. flavus, A. foetidus, A. fumigatus, A. furnigatus, A. nidulans, A. niger, A. oryzae, A. pseudoterreus, A. sojae, A. terreus, A. tubingensis, and A. wentii for industrial use. In addition, functional deletion of mstC increased glucoamylase production. Amylolytic enzymes are critical to ethanol production and methods to increase amylolytic enzymes can be used to decrease enzyme production costs.",
+                        "Based on these observations, provided herein are isolated fungi, such as those in the class Eurotiomycetes (e.g., Aspergillus, such as A. niger) or Sordariomycetes (e.g., Neurospora or Glomerella, such as N. crassa) a species of, which include a genetic inactivation of a mstC gene or a homolog thereof, such as NCU01633. Such fungi can be recombinant (e.g., non-naturally occurring). In some examples, the mstC gene is genetically inactivated by nonsynonymous mutation or by insertional mutation. In some examples, the mstC gene that is genetically inactivated was a nucleic acid molecule having at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1 or 3 or to nt 82 to 1764 of SEQ ID NO: 1 (e.g., prior to its inactivation). In some examples, the mstC gene that is genetically inactivated encoded a protein comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 2 (e.g., prior to its inactivation). In some examples, the mstC homolog that is genetically inactivated is a NCU01633 gene, such as nucleic acid molecule having at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9 or 10 or to nt 652 to 2250 of SEQ ID NO: 10 (e.g., prior to its inactivation). In some examples, the NCU01633 gene that is genetically inactivated encoded a protein comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 11 (e.g., prior to its inactivation). Fungi containing a genetically inactivated mstC or homolog thereof can further include a glucoamylase promoter (e.g., a nucleic acid molecule having at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 8) operably linked to a heterologous (i.e., non-native) protein coding sequence, such as a heterologous enzyme (e.g., beta-glucosidase (BG), glycoside hydrolase, carbohydrate esterase, protease, lipase, liginase, cellulase, or hemicellulase), chimeric protein that includes a secreting signal sequence, or a chimeric protein including glucoamylase linked to a protein of interest. Such fungi can produce or express the heterologous protein. In some examples, fungi containing a genetically inactivated mstC or homolog thereof can further include one or more mutations in an AmyR gene, a mutation in an CreA gene, or both, wherein the mutations decrease expression and/or activity of AmyR and/or CreA.",
+                        "Also provided are methods of using the disclosed fungi. For example, provided are methods of expressing expression of a heterologous protein. Such methods can include culturing one or more isolated (e.g., recombinant) fungi disclosed herein, under conditions that permit the fungus having a genetically inactivated mstC gene or homolog thereof and a heterologous protein coding sequence operably linked to a glucoamlyase promoter, to express the heterologous protein, thereby expressing the heterologous protein. In some examples, expression of a heterologous protein, such as a heterologous enzyme, is increased by at least 2-fold, such as at least 3-fold, or at least 4-fold, as compared to expression of the heterologous enzyme in a fungus containing a native (e.g., non-mutated and functional) mstC gene or homolog thereof.",
+                        "Also provided are methods of using the isolated (e.g., recombinant) fungi disclosed herein to degrade a biomass containing cellulose. For example, such methods can include incubating the biomass with one or more fungi disclosed herein having a genetically inactivated mstC gene (or homolog thereof) and a heterologous protein coding sequence operably linked to a glucoamlyase promoter, under conditions that permit the fungus to express the heterologous protein (e.g., BG or other protein in Table 1) from the glucoamylase promoter, thereby degrading the biomass. In other examples, the method includes incubating a biomass with one or more heterologous proteins (e.g., BG or other enzyme or protein listed in Table 1, or combinations thereof, such as one or more heterologous proteins that can degrade the biomass) obtained from the AmstC fungi that include a glucoamylase promoter operably linked to a heterologous protein (for example enzymes secreted in the growth media of the mutant fungi and collected or isolated) under conditions that permit the secreted heterologous protein to degrade the biomass. For example, the biomass can be incubated with the one or more heterologous proteins in an appropriate liquid material, at an appropriate temperature and pH. The heterologous protein(s) obtained from the AmstC fungi degrade the biomass. Thus, the method can further include culturing the AmstC fungi and separating or isolating the heterologous protein(s) expressed in and secreted by the AmstC mutant strain, and then adding the separated heterologous protein(s) to the biomass. In some examples, the method further includes incubating the biomass with one or more ionic liquids, including, but not limited to, ethyl methylimidazolium acetate, cholinium lysinate, cholinium alpha-ketoglutarate, or combinations thereof.",
+                        "Also provided are methods of using the isolated (e.g., recombinant) fungi disclosed herein to increase glucoamylase production in a fungus. In one example, the method includes culturing one or more isolated (e.g., recombinant) fungi disclosed herein that has a genetically inactivated mstC gene (or homolog thereof), under conditions that permit the fungus to express native glucoamylase; thereby increasing expression of glucoamylase relative to a fungus with a native (e.g., non-mutated and functional) mstC gene (or homolog thereof).",
+                        "The foregoing and other objects and features of the disclosure will become more apparent from the following detailed description, which proceeds with reference to the accompanying figures."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce forward mutagenesis strategy",
+                        "describe mutagenesis and screening process",
+                        "identify genetic lesions",
+                        "analyze bioinformatics data",
+                        "identify mstC gene",
+                        "describe deletion of mstC",
+                        "show improved heterologous enzyme production",
+                        "discuss industrial applications",
+                        "provide isolated fungi with genetic inactivation of mstC",
+                        "describe recombinant fungi",
+                        "provide methods of using disclosed fungi",
+                        "describe expression of heterologous protein",
+                        "describe degradation of biomass",
+                        "describe increase in glucoamylase production"
+                    ],
+                    "num_characters": 7255,
+                    "outline_medium": [
+                        "introduce forward mutagenesis strategy",
+                        "describe identification of hyper-production mutants",
+                        "summarize bioinformatics analysis",
+                        "introduce mstC gene and its deletion",
+                        "describe increased heterologous enzyme production",
+                        "introduce isolated fungi with genetic inactivation of mstC",
+                        "summarize methods of using disclosed fungi"
+                    ],
+                    "outline_short": [
+                        "describe forward mutagenesis strategy",
+                        "identify genetic lesions associated with heterologous enzyme production",
+                        "summarize benefits of deleting mstC gene"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "I. Terms",
+                            "paragraphs": [
+                                "Unless otherwise explained, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this disclosure belongs. Definitions of common terms in molecular biology may be found in Benjamin Lewin, Genes V, published by Oxford University Press, 1994 (ISBN 0-19-854287-9); Kendrew et al. (eds.), The Encyclopedia of Molecular Biology, published by Blackwell Science Ltd., 1994 (ISBN 0-632-02182-9); and Robert A. Meyers (ed.), Molecular Biology and Biotechnology: a Comprehensive Desk Reference, published by VCH Publishers, Inc., 1995 (ISBN 1-56081-569-8).",
+                                "The singular terms \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d include plural referents unless context clearly indicates otherwise. Similarly, the word \u201cor\u201d is intended to include \u201cand\u201d unless the context clearly indicates otherwise. Hence \u201ccomprising A or B\u201d means including A, or B, or A and B. It is further to be understood that all base sizes or amino acid sizes, and all molecular weight or molecular mass values, given for nucleic acids or polypeptides are approximate, and are provided for description. Although methods and materials similar or equivalent to those described herein can be used in the practice or testing of the present disclosure, suitable methods and materials are described below. All references and Genbank\u00ae Accession numbers mentioned herein are incorporated by reference in their entireties (the sequence available on Oct. 17, 2018). The materials, methods, and examples are illustrative only and not intended to be limiting.",
+                                "In order to facilitate review of the various embodiments of the disclosure, the following explanations of specific terms are provided:",
+                                "Aspergillus: A genus of fungi that can grow in the presence of high osmotic pressure (e.g., high concentration of sugar, salt, etc.). Aspergillus species are highly aerobic and are found in almost all oxygen-rich environments, where they commonly grow as molds on the surface of a substrate, as a result of the high oxygen tension. Hundreds of Aspergillus species are known, and can be used as a source of Aspergillus in which to genetically inactivate a mstC gene. Such species can be used in the methods provided herein. Exemplary species that can be used, include, but are not limited to: A. aculeatus, A. awamori, A. brasiliensis, A. carbonarius, A. flavus, A. foetidus, A. fumigatus, A. furnigatus, A. nidulans, A. niger, A. oryzae, A. pseudoterreus, A. sojae, A. terreus, A. tubingensis, and A. wentii.",
+                                "amyR: A gene encoding alpha-amylase, a protein that hydrolyses alpha bonds of large polysaccharides. The term amyR (or amyR) includes any amyR gene (such as a fungal amyR sequence), cDNA, mRNA, or protein, that is an amyR involved in endohydrolysis of alpha linkages in polysaccharides and production of native beta-glucosidase in A. niger and when genetically inactivated results in a fungus that has an ability to produce more native beta-glucosidase than the parent strain.",
+                                "amyR sequences are publicly available. For example, GenBank Accession No AJ005258.1 discloses an Aspergillus oryzae amyR nucleic acid sequence (corresponding protein GenBank Accession No. CAA06445.1); GenBank Accession No AF155808.1 discloses an Aspergillus niger amyR nucleic acid sequence (corresponding protein GenBank Accession No. AAD38984.1); and GenBank Accession No AB753014.1 discloses an Aspergillus sojae amyR nucleic acid sequence (corresponding protein GenBank Accession No. BAM62430.1). However, amyR sequences can include variant sequences (such as allelic variants and homologs) that have amyR activity but when genetically inactivated in Aspergillus results a fungus that has an ability to produce more native beta-glucosidase than the parent strain.",
+                                "Biomass: Refers to plants or plant-based materials that include lignocellulose (thus also referred to as \u201clignocellulosic biomass\u201d), which is not used for food or feed, but are used as an energy source. Biofuels derived from lignocellulose are alternative to petroleum-originating fuels and chemicals. An example is a fermentation of lignocellulosic biomass to ethanol. The combustion of lignocellulosic ethanol produces no net carbon dioxide in the atmosphere, thus is a carbon-neutral source of energy.",
+                                "Lignocellulose biomass is composed of carbohydrate polymers (cellulose, hemicellulose), and an aromatic polymer (lignin). These carbohydrate polymers contain different sugar molecules and they are tightly bound to lignin. Breaking down this heterogeneic substrate into its constituent monomers and oligomers requires physical, chemical, and/or biological deconstruction methods.",
+                                "creA: A gene encoding a DNA-binding protein that regulates transcription. The term creA (or creA) includes any creA gene (such as a fungal creA sequence), cDNA, mRNA, or protein, involved in controlling carbon source utilization through ubiquitination and deubiquitination, and when genetically inactivated results in a fungus that has an ability to produce more heterologous protein than the parent strain.",
+                                "creA sequences are publicly available. For example, GenBank Accession No AF322183.1 discloses an Aspergillus oryzae creA nucleic acid sequence (corresponding protein GenBank Accession No. AAK11189.1); GenBank Accession No L03811.1 discloses an Aspergillus niger creA nucleic acid sequence (corresponding protein GenBank Accession No. AAA32690.1); and GenBank Accession No AB024314.1 discloses an Aspergillus aculeatus creA nucleic acid sequence (corresponding protein GenBank Accession No. BAA75519.1). However, creA sequences can include variant sequences (such as allelic variants and homologs) that have creA activity but when genetically inactivated in Aspergillus results in a fungus that has an ability to produce more heterologous protein than the parent strain.",
+                                "Detectable: Capable of having an existence or presence ascertained. For example, production of an exogenous or non-native protein, such as an exogenous beta-glucosidase (BG), is detectable if the signal generated is strong enough to be measurable.",
+                                "Expression: The process by which the coded information of a gene is converted into an operational, non-operational, or structural part of a cell, such as the synthesis of a protein. Gene expression can be influenced by external signals. For instance, exposure of a cell to a hormone may stimulate expression of a hormone-induced gene. Different types of cells can respond differently to an identical signal. Expression of a gene also can be regulated anywhere in the pathway from DNA to RNA to protein. Regulation can include controls on transcription, translation, RNA transport and processing, degradation of intermediary molecules such as mRNA, or through activation, inactivation, compartmentalization or degradation of specific protein molecules after they are produced. In an example, the disclosed fungi having a genetically inactivated mstC gene (referred to as \u0394mstC) and a glucoamylase promoter operably linked to a heterologous protein coding sequence can be used to express the heterologous gene or protein (such as BG).",
+                                "The expression of a nucleic acid molecule can be altered relative to a normal (wild type) nucleic acid molecule. Alterations in gene expression, such as differential expression, include but are not limited to: (1) overexpression; (2) underexpression; or (3) suppression of expression. Alternations in the expression of a nucleic acid molecule can be associated with, and in fact cause, a change in expression of the corresponding protein.",
+                                "Genetic inactivation: When used in reference to the expression of a nucleic acid molecule, such as a gene, refers to any process which results in a decrease in production of a gene product (or even elimination of production of a gene product). A gene product can be RNA (such as mRNA, rRNA, tRNA, and structural RNA) or protein, such as an mstC protein or homolog thereof. Therefore, gene inactivation includes processes that decrease transcription of a gene or translation of mRNA, such as a decrease of at least 20%, at least 30%, at least 40%, at least 50%, at least 60%, at least 75%, at least 80%, at least 90%, at least 95%, at least 98%, at least 99%, or even 100%.",
+                                "For example, a mutation, such as a substitution, partial or complete deletion, insertion, or other variation, or combinations thereof, can be made to a gene sequence that significantly reduces (and in some cases eliminates) production of the gene product or renders the gene product substantially or completely non-functional. For example, a genetic inactivation of an mstC gene in Aspergillus (e.g., A. niger) (or homolog thereof such as NCU01633 from N. crassa) results in Aspergillus having a non-functional or non-existent mstC sugar transporter, which results in an ability of the fungus to produce increased amounts of a heterologous protein. Genetic inactivation is also referred to herein as \u201cfunctional deletion\u201d.",
+                                "Glucoamylase: Also known as amyloglucosidase (EC 3.2.1.3). Glucoamylase is a starch-breaking enzyme capable of breaking both \u03b1-1,4 and \u03b1-1,6 bonds to digest starch. During hydrolysis, glucose units are removed from the non-reducing end of the substrate molecule.",
+                                "Glucoamylase sequences are publicly available. For example, GenBank Accession No D10698.1 discloses an Aspergillus oryzae glucoamylase nucleic acid sequence (corresponding protein GenBank Accession No. BAA01540.1); GenBank Accession No AY250996.1 discloses an Aspergillus niger glucoamylase nucleic acid sequence (corresponding protein GenBank Accession No. AAP04499.1); and GenBank Accession No KU936058.1 1 discloses an Aspergillusflavus glucoamylase nucleic acid sequence (corresponding protein GenBank Accession No. ARF07718.1). However, glucoamylase sequences can include variants of these sequences (such as allelic variants and homologs).",
+                                "An exemplary glucoamylase promoter from A. niger is shown in SEQ ID NO: 8.",
+                                "Isolated: An \u201cisolated\u201d biological component (such as a nucleic acid molecule, or protein) has been substantially separated, produced apart from, or purified away from other biological components in the cell of the organism in which the component occurs, for example, other chromosomal and extra-chromosomal DNA and RNA, and proteins. Nucleic acid molecules and proteins which have been \u201cisolated\u201d include nucleic acid molecules and proteins purified by standard purification methods. The term also embraces nucleic acid molecules and proteins prepared by recombinant expression in a host cell as well as chemically synthesized proteins and nucleic acids. Samples of isolated biological components include samples of the biological component wherein the biological component represents greater than 90% (for example, greater than 95%, such as greater than 98%) of the sample.",
+                                "An \u201cisolated\u201d microorganism (such as an mstCA strain of Aspergillus) has been substantially separated or purified away from microorganisms of different types, strains, or species. Microorganisms can be isolated by a variety of techniques, including serial dilution and culturing and resistance to certain chemicals.",
+                                "Heterologous protein: A protein that is exogenous (e.g., foreign or non-native) with respect to a particular cell or organism, for example one that is introduced into, or produced within, a different host (recipient) from that in which the protein is naturally located. \u201cHeterologous\u201d refers to the fact that the protein naturally occurs in a different cell or organism from the recipient cell or organism (e.g., the protein is not found in the recipient cell in nature). For example, a protein expressed in one organism and introduced by genetic engineering techniques into a different organism is a \u201cheterologous\u201d protein.",
+                                "Increase or Decrease: A statistically significant positive or negative change, respectively, in quantity from a control value (such as a value before \u0394mstC mutation). An increase is a positive change, such as an increase at least 50%, at least 100%, at least 200%, at least 300%, at least 400% or at least 500% as compared to the control value. A decrease is a negative change, such as a decrease of at least 20%, at least 25%, at least 50%, at least 75%, at least 80%, at least 90%, at least 95%, at least 98%, at least 99%, or at least 100% decrease as compared to a control value. In some examples the decrease is less than 100%, such as a decrease of no more than 90%, no more than 95% or no more than 99%.",
+                                "Incubate or culture: Cells, such as fungal cells, grown or maintained under controlled conditions, for example in a laboratory. Cells are expanded in culture when they are placed in or on a growth medium under conditions that facilitate cell growth and/or division, resulting in a larger population of the cells. When cells are expanded in culture, the rate of cell proliferation is typically measured by the amount of time required for the cells to double in number, otherwise known as the doubling time. In some examples, incubation or culturing is performed in a fermenter.",
+                                "Ionic liquid (IL): An ionic liquid is a salt in the liquid state, also referred to as \u201cliquid electrolytes,\u201d \u201cionic melts,\u201d \u201cionic fluids,\u201d \u201cfused salts,\u201d \u201cliquid salts,\u201d and \u201cionic glasses. ILs are largely made of ions and short-lived ion pairs. At least one ion has a delocalized charge and one component is organic, which prevents the formation of a stable crystal lattice. Examples include compounds based on the 1-Ethyl-3-methylimidazolium (EMIM) cation and include: EMIM:Cl, EMIM dicyanamide, (C2H5)(CH3)C3H3N2+*N(CN)2\u2212, 1-butyl-3,5-dimethylpyridinium bromide, and 1-ethyl-3-methylimidazolium acetate ([C2mim]OAc). In some examples, the IL is a ethyl methylimidazolium acetate, cholinium lysinate, cholinium alpha-ketoglutarate, or combination thereof.",
+                                "Ionic liquids are effective in biomass pretreatment by their ability to separate lignin from cellulose. The cellulose produced is de-agglomerated and can be hydrolyzed to sugars. The ionic liquids are stable and do not decompose cellulose, can be used at low temperature, can be easily separated, and are potentially recyclable. For example, the transformation of cellulose into glucose ester alpha-D-glucose pentaacetate can be carried out in ionic liquid 1-butyl-3-methylimidazolium chloride. (Igor et al., 2011).",
+                                "mstC: A monosaccharide transporter, for example in A. niger. The term mstC (or mstC) includes any mstC gene (such as a fungal mstC sequence), cDNA, mRNA, or protein, that is an mstC having monosaccharide transporter activity, and when genetically inactivated results in a fungus that can produce increased amounts of a heterologous protein relative to the parent strain.",
+                                "mstC sequences are publicly available. For example, GenBank Accession No AY081847 disclose a nucleic acid sequence of an A. niger mstC. Exemplary mstC nucleic acid and protein sequences are provided in SEQ ID NOS: 1-3. However, mstC sequences include variant sequences (such as allelic variants and homologs) that have mstC activity but when genetically inactivated in Aspergillus results in a fungus that has an ability to produce increased amounts of a heterologous protein relative to the parent strain. One skilled in the art will appreciate that homologs of mstC can be functionally deleted in other fungi, such as NCU01633 of Neurospora.",
+                                "Mutation: A change in a nucleic acid sequence (such as a gene sequence) or amino acid sequence, for example as compared to a nucleic acid or amino acid sequence present in a wild-type or native organism. In particular examples, a mutation is introduced into an mstC, creA, and/or amyR gene in Aspergillus (or equivalent homolog in other fungi). Mutations can be introduced, for example using molecular biology methods. In particular examples, a mutation includes one or more nucleotide or amino acid substitutions, deletions, insertions, or combinations thereof. In particular examples, the presence of one or more mutations in a gene can significantly inactivate that gene.",
+                                "Operably linked: A first nucleic acid sequence is operably linked with a second nucleic acid sequence when the first nucleic acid sequence is placed in a functional relationship with the second nucleic acid sequence. For instance, a promoter (such as a glucoamylase promoter) is operably linked to a coding sequence (such as a coding sequence of an exogenous protein, such as beta-glucosidase) if the promoter affects the transcription or expression of the coding sequence. Generally, operably linked DNA sequences are contiguous and, where necessary to join two protein-coding regions, in the same reading frame.",
+                                "Promoter: An array of nucleic acid control sequences which direct transcription of a nucleic acid. A promoter includes necessary nucleic acid sequences near the start site of transcription. A promoter also optionally includes distal enhancer or repressor elements. A \u201cconstitutive promoter\u201d is a promoter that is continuously active and is not subject to regulation by external signals or molecules. In contrast, the activity of an \u201cinducible promoter\u201d is regulated by an external signal or molecule (for example, a transcription factor). An exemplary promoter is a glucoamylase promoter, such as the one shown in SEQ ID NO: 8.",
+                                "Recombinant: A recombinant molecule (e.g., nucleic acid or protein) is one that has a sequence that is not naturally occurring, for example, includes one or more nucleotide or amino acid substitutions, deletions or insertions, and/or has a sequence that is made by an artificial combination of two otherwise separated segments of sequence. In one example includes a native promoter (e.g., glucoamylase promoter) operably linked to a heterologous protein (e.g., BG). This artificial combination can be accomplished, for example, by chemical synthesis or by the artificial manipulation of isolated segments of nucleic acids, for example, by genetic engineering techniques. A recombinant cell, such as a recombinant fungal cell, is one not found in nature, such as one containing a nucleic acid or protein molecule not found in nature, for example due to genetic manipulation, such as introduction of a foreign or non-native nucleic acid molecule or protein.",
+                                "Sequence identity/similarity: The identity/similarity between two or more nucleic acid sequences, or two or more amino acid sequences, is expressed in terms of the identity or similarity between the sequences. Sequence identity can be measured in terms of percentage identity; the higher the percentage, the more identical the sequences are. Sequence similarity can be measured in terms of percentage similarity (which takes into account conservative amino acid substitutions); the higher the percentage, the more similar the sequences are.",
+                                "Methods of alignment of sequences for comparison are well known in the art. Various programs and alignment algorithms are described in: Smith & Waterman, Adv. Appl. Math. 2:482, 1981; Needleman & Wunsch, J. Mol. Biol. 48:443, 1970; Pearson & Lipman, Proc. Natl. Acad. Sci. USA 85:2444, 1988; Higgins & Sharp, Gene, 73:237-44, 1988; Higgins & Sharp, CABIOS 5:151-3, 1989; Corpet et al., Nuc. Acids Res. 16:10881-90, 1988; Huang et al. Computer Appls. in the Biosciences 8, 155-65, 1992; and Pearson et al., Meth. Mol. Bio. 24:307-31, 1994. Altschul et al., J. Mol. Biol. 215:403-10, 1990, presents a detailed consideration of sequence alignment methods and homology calculations.",
+                                "The NCBI Basic Local Alignment Search Tool (BLAST) (Altschul et al., J. Mol. Biol. 215:403-10, 1990) is available from several sources, including the National Center for Biological Information (NCBI, National Library of Medicine, Building 38A, Room 8N805, Bethesda, Md. 20894) and on the Internet, for use in connection with the sequence analysis programs blastp, blastn, blastx, tblastn and tblastx. Additional information can be found at the NCBI web site.",
+                                "BLASTN is used to compare nucleic acid sequences, while BLASTP is used to compare amino acid sequences. To compare two nucleic acid sequences, the options can be set as follows: -i is set to a file containing the first nucleic acid sequence to be compared (e.g., C:\\seq1.txt); -j is set to a file containing the second nucleic acid sequence to be compared (e.g., C:\\seq2.txt); -p is set to blastn; -o is set to any desired file name (e.g., C:\\output.txt); -q is set to -1; -r is set to 2; and all other options are left at their default setting. For example, the following command can be used to generate an output file containing a comparison between two sequences: C:\\Bl2seq -i c:\\seq1.txt -j c:\\seq2.txt -p blastn -o c:\\output.txt -q -1 -r 2.",
+                                "To compare two amino acid sequences, the options of Bl2seq can be set as follows: -i is set to a file containing the first amino acid sequence to be compared (e.g., C:\\seq1.txt); -j is set to a file containing the second amino acid sequence to be compared (e.g., C:\\seq2.txt); -p is set to blastp; -o is set to any desired file name (e.g., C:\\output.txt); and all other options are left at their default setting. For example, the following command can be used to generate an output file containing a comparison between two amino acid sequences: C:\\Bl2seq -i c:\\seq1.txt -j c:\\seq2.txt -p blastp -o c:\\output.txt. If the two compared sequences share homology, then the designated output file will present those regions of homology as aligned sequences. If the two compared sequences do not share homology, then the designated output file will not present aligned sequences.",
+                                "Once aligned, the number of matches is determined by counting the number of positions where an identical nucleotide or amino acid residue is presented in both sequences. The percent sequence identity is determined by dividing the number of matches either by the length of the sequence set forth in the identified sequence, or by an articulated length (e.g., 100 consecutive nucleotides or amino acid residues from a sequence set forth in an identified sequence), followed by multiplying the resulting value by 100. For example, a nucleic acid sequence that has 1166 matches when aligned with a test sequence having 1554 nucleotides is 75.0 percent identical to the test sequence (i.e., 1166\u00f71554*100=75.0). The percent sequence identity value is rounded to the nearest tenth. For example, 75.11, 75.12, 75.13, and 75.14 are rounded down to 75.1, while 75.15, 75.16, 75.17, 75.18, and 75.19 are rounded up to 75.2. The length value will always be an integer. In another example, a target sequence containing a 20-nucleotide region that aligns with 20 consecutive nucleotides from an identified sequence as follows contains a region that shares 75 percent sequence identity to that identified sequence (i.e., 15-20*100=75).",
+                                "For comparisons of amino acid sequences of greater than about 30 amino acids, the Blast 2 sequences function is employed using the default BLOSUM62 matrix set to default parameters, (gap existence cost of 11, and a per residue gap cost of 1). Homologs are typically characterized by possession of at least 70% sequence identity counted over the full-length alignment with an amino acid sequence using the NCBI Basic Blast 2.0, gapped blastp with databases such as the nr or swissprot database. Queries searched with the blastn program are filtered with DUST (Hancock and Armstrong, 1994, Comput. Appl. Biosci. 10:67-70). Other programs use SEG. In addition, a manual alignment can be performed. Proteins with even greater similarity will show increasing percentage identities when assessed by this method, such as at least 75%, 80%, 85%, 90%, 95%, or 99% sequence identity.",
+                                "Nucleic acid sequences that do not show a high degree of identity may nevertheless encode identical or similar (conserved) amino acid sequences, due to the degeneracy of the genetic code. Changes in a nucleic acid sequence can be made using this degeneracy to produce multiple nucleic acid molecules that all encode substantially the same protein. Such homologous nucleic acid sequences can, for example, possess at least 60%, 70%, 80%, 90%, 95%, 98%, or 99% sequence identity determined by this method.",
+                                "One of skill in the art will appreciate that these sequence identity ranges are provided for guidance only; it is possible that strongly significant homologs could be obtained that fall outside the ranges provided.",
+                                "Transformed: A cell, such as a fungal cell, into which a nucleic acid molecule has been introduced, for example by molecular biology methods. Transformation encompasses all techniques by which a nucleic acid molecule can be introduced into a cell, including, but not limited to transfection with viral vectors, conjugation, transformation with plasmid vectors, and introduction of naked DNA by electroporation, lipofection, and biolistic particle delivery."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define technical terms",
+                                "explain singular and plural referents",
+                                "define \"or\" and \"comprising\"",
+                                "explain approximate values",
+                                "introduce Aspergillus genus",
+                                "define amyR gene",
+                                "provide amyR sequence examples",
+                                "explain amyR activity",
+                                "define biomass",
+                                "explain lignocellulose composition",
+                                "introduce creA gene",
+                                "provide creA sequence examples",
+                                "explain creA activity",
+                                "define detectable",
+                                "explain gene expression",
+                                "introduce genetic inactivation",
+                                "explain genetic inactivation methods",
+                                "define glucoamylase",
+                                "provide glucoamylase sequence examples",
+                                "explain glucoamylase activity",
+                                "define isolated biological component",
+                                "define isolated microorganism",
+                                "define heterologous protein",
+                                "define increase or decrease",
+                                "define incubate or culture",
+                                "define ionic liquid",
+                                "describe ionic liquid properties",
+                                "describe ionic liquid applications",
+                                "define mstC",
+                                "describe mstC sequences",
+                                "describe mstC mutations",
+                                "define mutation",
+                                "describe mutation types",
+                                "define operably linked",
+                                "describe promoter",
+                                "describe promoter types",
+                                "define recombinant",
+                                "describe recombinant molecules",
+                                "describe recombinant cells",
+                                "define sequence identity/similarity",
+                                "describe sequence alignment methods",
+                                "describe BLAST tool",
+                                "describe BLASTN and BLASTP options",
+                                "describe sequence identity calculation",
+                                "describe homologs",
+                                "describe manual alignment",
+                                "describe degeneracy of genetic code",
+                                "describe homologous nucleic acid sequences",
+                                "define transformed"
+                            ],
+                            "num_characters": 24791,
+                            "outline_medium": [
+                                "define technical terms",
+                                "explain singular and plural referents",
+                                "define \"or\" and \"comprising\"",
+                                "explain approximate values",
+                                "introduce Aspergillus genus",
+                                "define amyR gene",
+                                "define biomass and lignocellulose",
+                                "define creA gene",
+                                "define detectable and expression",
+                                "explain genetic inactivation",
+                                "define glucoamylase and isolated",
+                                "define heterologous protein",
+                                "define increase or decrease",
+                                "define incubate or culture",
+                                "define ionic liquid",
+                                "describe ionic liquid properties",
+                                "define mstC",
+                                "describe mstC sequences",
+                                "define mutation",
+                                "define operably linked",
+                                "define promoter",
+                                "define recombinant",
+                                "define sequence identity/similarity",
+                                "describe methods of sequence alignment"
+                            ],
+                            "outline_short": [
+                                "define technical terms",
+                                "explain singular and plural referents",
+                                "provide examples of Aspergillus species",
+                                "define specific terms (amyR, biomass, creA, etc.)",
+                                "explain detectable, expression, genetic inactivation, and isolated",
+                                "define key terms",
+                                "define heterologous protein",
+                                "define increase or decrease",
+                                "define incubate or culture",
+                                "define ionic liquid",
+                                "define other terms"
+                            ]
+                        },
+                        {
+                            "title": "II. Overview",
+                            "paragraphs": [
+                                "This disclosure provides the first demonstration that genetic inactivation of a mstC gene substantially increase expression of a heterologous protein in Aspergillus niger, while the total protein production stays similar to the parent strain.",
+                                "The present disclosure provides an isolated fungus having its mstC gene (or homolog thereof, such as NCU0163) genetically inactivated. In some embodiments, the isolated fungus is in the class Eurotiomycetes (such as Aspergillus) or Sordariomycetes (such as Neurospora). In some examples, if an Aspergillus species is used, mstC is genetically inactivated. In other examples, if a Neurospora species is used, the nearest homolog to mstC, NCU01633, is genetically inactivated.",
+                                "Provided herein are J03-derivative mutant strains generated by mutation of the J03 strain that are categorized according to their ability to generate native and/or heterologous beta-glucosidase in Aspergillus niger. In some embodiments, the mstC gene or homolog thereof is genetically inactivated by nonsynonymous mutation, insertional mutation, or CRISPR-Cas9 genome editing technology. In some examples, the mstC gene that is genetically inactivated includes a nucleic acid molecule that includes at least 90%, at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1 or 3 or to nt 82 to 1764 of SEQ ID NO: 1, prior to its genetic inactivation. In some examples, the mstC gene that is genetically inactivated encodes a protein having at least 90%, at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 2, prior to its genetic inactivation. In some examples, the mstC homolog that is genetically inactivated includes a nucleic acid molecule that includes at least 90%, at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9 or 10 or to nt 652 to 2250 of SEQ ID NO: 10, prior to its genetic inactivation. In some examples, the mstC gene homolog that is genetically inactivated encodes a NCU01633 protein having at least 90%, at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 11, prior to its genetic inactivation.",
+                                "The \u0394mstC fungi (which generically refers to any fungi with its mstC gene or homolog thereof, such as NCU01633, genetically inactivated) can further include a glucoamylase promoter operably linked to a heterologous protein coding sequence. Such fungi can produce the heterologous protein. Exemplary heterologous proteins are provided in Table 1.",
+                                "The \u0394mstC fungi (such can include a include a glucoamylase promoter operably linked to a heterologous protein coding sequence) can further include a mutated amyR gene, a mutated creA gene, or both. Such mutations can include one or more point mutations, such as at least 2, at least 5, or at least 10 point mutations, such as deletions, insertions, substitutions, or combinations thereof. In some examples, amyR and creA genes are mutated or genetically inactivated by missense, nonsense, or deletion. Such genetic inactivation decreases activity of amyR or creA, such as at least 50%, at least 60%, at least 70%, at least 80%, at least 90%, or at least 95% reduction in the activity of such genes or proteins.",
+                                "Methods of using the \u0394mstC fungi that include a glucoamylase promoter operably linked to a heterologous protein coding sequence are provided. Such methods can be used to express a heterologous protein, for example by culturing the recombinant fungus under conditions that permit the fungus to express the heterologous protein. For example, the recombinant fungus can be grown or cultured in an appropriate culture medium at an appropriate temperature. In some embodiments, the expressed heterologous protein is a heterologous enzyme (e.g., beta-glucosidase or other protein listed in Table 1). In some embodiments, other proteins are chimeric proteins, such as one that includes a secreting signal, one that includes a glucoamylase linked to the protein of interest, or combinations thereof, are expressed. In some examples, the expression of the heterologous protein in the \u0394mstC mutant strain is increased at least two-fold (such as at least 3-fold, or at least 4-fold) compared to the expression of the heterologous enzyme in a WT fungus (e.g., one having a native mstC gene).",
+                                "Methods of using the \u0394mstC fungi that include a glucoamylase promoter operably linked to a heterologous protein coding sequence to degrade a biomass are provided. For example, the method can include incubating a biomass with \u0394mstC fungi that include a glucoamylase promoter operably linked to a heterologous protein, such as BG, under conditions that permit the fungus to express the heterologous protein from the glucoamylase promoter, thereby degrading the biomass. Expression of the heterologous protein from the glucoamylase promoter degrades the biomass. In some embodiments, the biomass is further incubated with ionic liquids, such as ethyl methylimidazolium acetate, cholinium lysinate, cholinium alpha-ketoglutarate, or combinations thereof. In some examples, the biomass is incubated with ionic liquids prior to, or concurrently with, \u0394mstC fungi. In some examples, the biomass is incubated with ionic liquids after incubation with \u0394mstC fungi.",
+                                "Present disclosure also provides a method of increasing glucoamylase production in a fungus by culturing a \u0394mstC fungi to express native glucoamylase. In some examples, expression of the glucoamylase in the \u0394mstC mutant strain is increased at least two-fold (such as at least 3-fold, or at least 4-fold) compared to the expression of the glucoamylase in a WT fungus (e.g., one having a native mstC gene)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce genetic inactivation of mstC gene",
+                                "describe isolated fungus with genetically inactivated mstC gene",
+                                "categorize J03-derivative mutant strains",
+                                "genetically inactivate mstC gene by mutation or CRISPR-Cas9",
+                                "define sequence identity of mstC gene or homolog",
+                                "describe \u0394mstC fungi with glucoamylase promoter and heterologous protein",
+                                "include mutated amyR or creA genes in \u0394mstC fungi",
+                                "describe method of expressing heterologous protein using \u0394mstC fungi",
+                                "describe method of degrading biomass using \u0394mstC fungi",
+                                "describe method of increasing glucoamylase production in fungus",
+                                "provide exemplary heterologous proteins"
+                            ],
+                            "num_characters": 5651,
+                            "outline_medium": [
+                                "introduce genetic inactivation of mstC gene",
+                                "describe isolated fungus with genetically inactivated mstC gene",
+                                "provide J03-derivative mutant strains",
+                                "describe methods of using \u0394mstC fungi for heterologous protein expression",
+                                "describe methods of using \u0394mstC fungi for biomass degradation"
+                            ],
+                            "outline_short": [
+                                "introduce genetic inactivation of mstC gene",
+                                "describe \u0394mstC fungi and applications"
+                            ]
+                        },
+                        {
+                            "title": "III. \u0394mstC Fungi",
+                            "paragraphs": [
+                                "The present disclosure provides isolated fungi having its native mstC gene (or homolog thereof) inactivated, wherein such genetic inactivation results in increased heterologous protein expression by the fungi. Such fungi are referred to herein as \u0394mstC fungi. It is shown herein that genetic inactivation of mstC results in Aspergillus fungi increases heterologous protein production in the fungi as compared to Aspergillus having a native mstC sequence, such as an increase of at least 2-fold, at least 3-fold, or at least 4-fold.",
+                                "Contemplated herein are isolated fungi containing a genetic inactivation (e.g., functional deletion) of a mstC gene or homolog thereof. Any fungus can be used, such as Eurotiomycetes (e.g., Aspergillus) or Sordariomycetes (e.g., Neurospora). In particular examples, the disclosed Aspergillus fungus is A. niger, such as Aspergillus niger strain 11414 (American Type Culture Collection (ATCC) No. 11414; NRRL 2270); or 11414KusA-. In other specific examples, the Aspergillus A. aculeatus, A. awamori, A. brasiliensis, A. carbonarius, A. flavus, A. foetidus, A. fumigatus, A. furnigatus, A. nidulans, A. niger, A. oryzae, A. pseudoterreus, A. sojae, A. terreus, A. tubingensis, and A. wentii. In particular examples, the \u0394mstC fungi is N. crassa, and the gene genetically inactivated is NCU01633.",
+                                "Any method for genetic inactivation can be used, as long as the expression of the mstC gene is significantly reduced or eliminated, or the function of the expressed mstC protein is significantly reduced or eliminated, such as knocked out (or otherwise made inoperative). For example, the mstC gene can be manipulated to include one or more nucleotide substitutions, insertions, deletions, or combinations thereof, which result in inactivation of the gene. In particular examples, the mstC gene is genetically inactivated by a complete or partial deletion mutation, by insertional mutation, or both. In some examples, the mstC gene is genetically inactivated by the introduction of a stop codon, thereby disrupting expression of the protein.",
+                                "In some examples, genetic inactivation need not be 100% genetic inactivation. In some embodiments, genetic inactivation refers to at least 50%, at least 60%, at least 70%, at least 80%, at least 90%, or at least 95% gene or protein inactivation. The term \u201creduced\u201d or \u201cdecreased\u201d as used herein with respect to a particular gene or protein activity refers to a lower level of activity than that measured in a comparable cell of the same species. For example, a particular fungi lacking mstC activity has reduced mstC activity if a comparable fungi not having an mstC genetic inactivation has detectable mstC activity. mstC sequences are disclosed herein and others are publicly available, for example from GenBank or EMBL. In some examples, the mstC gene genetically inactivated includes a nucleic acid molecule having at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1 or 3 or to nt 82 to 1764 of SEQ ID NO: 1 prior to the inactivation. In some examples, the mstC gene genetically inactivated encodes a protein comprising at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 2 prior to the inactivation.",
+                                "In some examples, the mstC homolog NCU01633 is genetically inactivated, such as nucleic acid molecule having at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9 or 10 or to nt 652 to 2250 of SEQ ID NO: 10 (e.g., prior to its inactivation). In some examples, the NCU01633 gene that is genetically inactivated encoded a protein comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 11 (e.g., prior to its inactivation).",
+                                "The disclosed \u0394mstC fungi can further include a glucoamylase promoter (such as the fungi's native glucoamylase promoter) operably linked to one or more heterologous proteins. Exemplary heterologous proteins (e.g., a protein not native or naturally occurring in the fungus), such as BG, are provided herein (e.g., see Table 1). Such a recombinant fungi can be used to increase expression of the heterologous protein, such as beta-glucosidase, by the fungi. An exemplary glucoamylase promoter sequence is shown in SEQ ID NO: 8. However, variants of such sequences can be used, including those having at least 80%, at least 90%, at least 95%, at least 96%, at least 97%, at least 98%, or at least 99% sequence identity to SEQ ID NO: 8.",
+                                "The disclosed \u0394mstC gene can further include mutations (such as one or more nucleotide substitutions, insertions, deletions, or combinations thereof) which reduce the activity of in one or more other genes, such as creA and/or amyR. In some embodiments, mutations in the creA gene and/or amyR gene have a synergistic effect in combination with the genetic inactivation of mstC resulting in Aspergillus fungi that have increased heterologous protein production as compared to Aspergillus having a native mstC, creA and amyR sequence. In particular examples, the mutation(s) decrease creA and/or amyR activity by at least 50%, at least 60%, at least 70%, at least 80%, at least 90%, or at least 95%. The term \u201creduced\u201d or \u201cdecreased\u201d as used herein with respect to a cell and a particular gene or protein activity refers to a lower level of activity than that measured in a comparable cell of the same species. For example, a particular fungi having decreased creA and/or amyR activity has reduced creA and/or amyR activity if a comparable fungi not having a creA and/or amyR genetic mutation has detectable creA/amyR activity. In some examples, the amyR gene mutated includes a nucleic acid molecule having at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 4 (or to nt join (1 . . . 980,1032 . . . 1482,1541 . . . 1849)) prior to the mutation. In some examples, the amyR gene mutated encodes a protein comprising at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 5 (or to nt join ) prior to the mutation. In some examples, the creA gene mutated includes a nucleic acid molecule having at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 6 or nt 1339 to 2622 of SEQ ID NO: 6, prior to the mutation. In some examples, the creA gene mutated encodes a protein comprising at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 7 prior to the mutation.",
+                                "A. Methods of Functionally Deleting Genes",
+                                "As used herein, an \u201cinactivated\u201d or \u201cfunctionally deleted\u201d gene means that the gene has been mutated, for example by insertion, deletion, or substitution (or combinations thereof) of one or more nucleotides such that the mutation substantially reduces (and in some cases abolishes) expression or biological activity of the encoded gene product. The mutation can act through affecting transcription or translation of the gene or its mRNA, or the mutation can affect the polypeptide product itself in such a way as to render it substantially inactive.",
+                                "Genetic inactivation of one or more genes (can be referred to as functional deletion) can be performed using any conventional method. In one example, a strain of Aspergillus or other fungus is transformed with a vector which has the effect of down-regulating or otherwise inactivating an mstC gene or homolog thereof. For example, control elements such as promoters and the like which control gene expression can be mutated, the coding region of the gene can be mutated so that any protein expressed is substantially inactive, or the mstC gene or homolog thereof can be deleted entirely. For example, an mstC gene or homolog thereof can be functionally deleted by complete or partial deletion mutation (for example by deleting a portion of the coding region of the gene), by insertional mutation (for example by inserting nucleotides into the coding region of the gene, such as a molecule of about 1-5000 nucleotides), or combinations thereof. Thus, the disclosure in some examples provides transformed or recombinant fungi that include at least one exogenous nucleic acid molecule which genetically inactivates an mstC gene (such as mutates the nucleic acid sequence of SEQ ID NO: 1 or 3) or a homolog thereof (such as mutates the nucleic acid sequence of SEQ ID NO: 9 or 10). In one example, such a transformed fungus produces increased amounts of a heterologous protein, for example relative to a comparable fungus with a native, non-mutated mstC sequence or homolog thereof.",
+                                "In one example, an insertional mutation includes introduction of a nucleic acid molecule that is in multiples of three bases (e.g., a sequence of 3, 9, 12, or 15 nucleotides) to reduce the possibility that the insertion will affect downstream genes. Mutations can also be generated through insertion of a foreign gene sequence, for example the insertion of a gene encoding antibiotic resistance (such as hygromycin or bleomycin) into the mstC gene or homolog thereof.",
+                                "In one example, genetic inactivation is achieved by deletion of a portion of the coding region of the mstC gene or homolog thereof. For example, some, most (such as at least 50%) or virtually the entire coding region can be deleted. In particular examples, about 5% to about 100% of the gene is deleted, such as at least 20% of the gene, at least 40% of the gene, at least 75% of the gene, or at least 90% of the mstC gene. In particular examples, about 5% to about 100% of the coding region is deleted, such as at least 20% of the coding region, at least 40% of the coding region, at least 75% of the coding region, or at least 90% of the mstC coding region (e.g., the coding region of shown in SEQ ID NO: 1, namely nt 82 to 1764 of SEQ ID NO: 1, or the coding region of shown in SEQ ID NO: 10, namely nt 652 to 2250 of SEQ ID NO: 10).",
+                                "In one example, allelic exchange is employed to genetically inactivate one or more genes, such as mstC, in Aspergillus, or NCU01633 in Neurospora.",
+                                "In one example, counterselectable markers (such as pyrG) are employed (e.g., see Reyrat et al., Infec. Immun. 66:4011-4017, 1998). In this technique, a double selection strategy is employed wherein a plasmid is constructed encoding both a selectable and counterselectable marker, with flanking DNA sequences derived from both sides of the desired deletion. The selectable marker is used to select for fungi in which the plasmid has integrated into the genome in the appropriate location and manner. The counterselecteable marker is used to select for the very small percentage of fungi that have spontaneously eliminated the integrated plasmid. A fraction of these fungi will then contain only the desired deletion with no other foreign DNA present.",
+                                "In another technique, the cre-lox system is used for site specific recombination of DNA (for example see Steiger et al., Appl. Environ. Microbiol. 77(1): 114, 2011). The system includes 34 base pair lox sequences that are recognized by the bacterial cre recombinase gene. If the lox sites are present in the DNA in an appropriate orientation, DNA flanked by the lox sites will be excised by the cre recombinase, resulting in the deletion of all sequences except for one remaining copy of the lox sequence. Using recombination techniques, the targeted gene (e.g., mstC or homolog thereof) can be deleted in the Aspergillus genome and replaced with a selectable marker (for example a gene coding for kanamycin or other antibiotic resistance) that is flanked by the lox sites. Transient expression (e.g., by electroporation of a suicide plasmid containing the cre gene under control of a promoter that functions in Aspergillus or other fungus) of the cre recombinase efficiently eliminates the lox flanked marker. This process can produce a mutant fungi containing the desired deletion mutation of mstC or homolog thereof and one copy of the lox sequence.",
+                                "In another example, an mstC gene sequence (or homolog thereof) in a fungal genome is replaced with a marker gene, such as one encoding for green fluorescent protein, j3-galactosidase, or luciferase. In this technique, DNA segments flanking a desired deletion are prepared by PCR and cloned into a suicide (non-replicating) vector for the fungus. An expression cassette, containing a promoter active in the fungus and the appropriate marker gene, is cloned between the flanking sequences. The plasmid is introduced into wild-type fungi. Fungi that incorporate and express the marker gene are isolated and examined for the appropriate recombination event (replacement of the wild type mstC gene with the marker gene).",
+                                "Thus, for example, a fungal cell can be engineered to have a disrupted mstC gene (or homolog thereof) using mutagenesis or knock-out technology. (Methods in Yeast Genetics (1997 edition), Adams, Gottschling, Kaiser, and Sterns, Cold Spring Harbor Press, 1998; Datsenko and Wanner, Proc. Natl. Acad. Sci. USA 97: 6640-5, 2000; and Dai et al., Appl. Environ. Microbiol. 70(4):2474-85, 2004).",
+                                "In another example, antisense technology is used to reduce or eliminate the activity of mstC (or homolog thereof). For example, a fungal cell can be engineered to contain a cDNA that encodes an antisense molecule that prevents mstC from being translated. The term \u201cantisense molecule\u201d encompasses any nucleic acid molecule or nucleic acid analog (e.g., peptide nucleic acids) that contains a sequence that corresponds to the coding strand of an endogenous mstC gene (or homolog thereof). An antisense molecule also can have flanking sequences (e.g., regulatory sequences). Thus, antisense molecules can be ribozymes or antisense oligonucleotides. A ribozyme can have any general structure including, without limitation, hairpin, hammerhead, or axehead structures, provided the molecule cleaves RNA. Further, gene silencing can be used to reduce the activity of mstC.",
+                                "Any method can be used to introduce an exogenous nucleic acid molecule into a fungal cell, for example to genetically inactivate mstC (or homolog thereof). For example, chemical mediated-protoplast transformation, electroporation, Agrobacterium-mediated transformation, fusion of protoplasts, and biolistic delivery are common methods for introducing nucleic acid into fungal cells. (See, e.g., Ito et al., J. Bacterol. 153:163-8, 1983; Durrens et al., Curr. Genet. 18:7-12, 1990; Sambrook et al., Molecular cloning: A laboratory manual, Cold Spring Harbour Laboratory Press, New York, USA, third edition, 2001; and Becker and Guarente, Methods in Enzymology 194:182-7, 1991). An exogenous nucleic acid molecule contained within a particular cell of the disclosure can be maintained within that cell in any form. For example, exogenous nucleic acid molecules can be integrated into the genome of the cell or maintained in an episomal state. That is, the recombinant fungi cells can be a stable or transient transformant.",
+                                "B. Measuring Gene Inactivation",
+                                "A fungus having an inactivated mstC gene (or homolog thereof) can be identified using any known method. For example, PCR and nucleic acid hybridization techniques, such as Northern and Southern analysis, can be used to confirm that a fungus has an inactivated mstC gene (or homolog thereof). Alternatively, real-time reverse transcription PCR (qRT-PCR) can be used for detection and quantification of targeted messenger RNA, such as mRNA of mstC gene (or homolog thereof) in the parent and mutant strains as grown at the same culture conditions. Immunohisto-chemical and biochemical techniques can also be used to determine if a cell expresses mstC (or homolog thereof) by detecting the expression of the mstC protein (or homolog thereof) encoded by mstC (or homolog thereof). For example, an antibody having specificity for mstC (or homolog thereof) can be used to determine whether or not a particular fungus contains a functional nucleic acid encoding mstC protein (or homolog thereof). Further, biochemical techniques can be used to determine if a cell contains a particular gene inactivation by detecting a product produced as a result of the expression of the peptide.",
+                                "C. Measuring Heterologous Protein Activity",
+                                "Methods of determining whether a genetic inactivation of mstC (or homolog thereof) in a fungus increases heterologous protein (e.g., beta-glucosidase, glycoside hydrolase, carbohydrates esterase, protease, lipase, liginase, cellulases, and hemicellulose, and others provided in Table 1) production, for example relative to the same strain with a native mstC sequence (or homolog thereof) (such as a parental strain), are routine. Although particular examples are disclosed herein, the methods are not limiting. For example, immunohisto-chemical and biochemical techniques (such as ELISA, flow cytometry, western blotting, and fluorescence microscopy) can be used to measure or detect heterologous protein expression in A mstC fungi.",
+                                "In one example, production of beta-glucosidase by a fungus, such as Aspergillus (such as an \u0394mstC strain) can be measured using a spectrophotometric assay. In one example beta-glucosidase production can be measured using a pNPG as explained in Example 1 (also see Aich et al. (2001). Expression and Purification of Escherichia coli \u03b2-Glucuronidase. Protein expression and purification, 22(1), 75-8.",
+                                "D. mstC Sequences",
+                                "mstC protein and nucleic acid sequences are publicly available and specific examples are provided herein. In addition, mstC sequences, as well as the sequences of homologs thereof, can be identified using routine molecular biology methods.",
+                                "An exemplary mstC nucleic acid sequence that can be genetically inactivated is shown in SEQ ID NO: 1, 3, and nt 82 to 1764 of SEQ ID NO: 1, and exemplary NCU01633 nucleic acid sequence that can be genetically inactivated is shown in SEQ ID NOS: 9, 10, and nt 652 to 2250 of SEQ ID NO: 10. However, variants of SEQ ID NO: 1 or 3 that encode a functional mstC protein, or variants of SEQ ID NO: 9 or 10 that encode a functional NCU01633 protein, can be genetically inactivated. Variant sequences may contain a single insertion, a single deletion, a single substitution, multiple insertions, multiple deletions, multiple substitutions, or any combination thereof (e.g., single deletion together with multiple insertions). In addition, the degeneracy of the code permits multiple nucleic acid sequences to encode the same protein. In some examples, the mstC gene that is genetically inactivated includes a nucleic acid molecule having at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1 or 3 or nt 82 to 1764 of SEQ ID NO: 1 prior to the inactivation. In some examples, the NCU01633 gene that is genetically inactivated includes a nucleic acid molecule having at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9, 10, or nt 652 to 2250 of SEQ ID NO: 10, prior to the inactivation.",
+                                "An exemplary mstC protein sequence is shown in SEQ ID NO: 2. However, mstC sequences that encode variants of SEQ ID NO: 2 and have mstC activity, can be genetically inactivated. Variant mstC protein sequences may contain a one or more amino acid insertions, deletions, substitutions, or any combination thereof. In some examples, a native mstC protein has at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 2 prior to the inactivation.",
+                                "An exemplary NCU01633 protein sequence is shown in SEQ ID NO: 11. However, NCU01633 sequences that encode variants of SEQ ID NO: 11 and have NCU01633 activity, can be genetically inactivated. Variant NCU01633 protein sequences may contain a one or more amino acid insertions, deletions, substitutions, or any combination thereof. In some examples, a native NCU01633 protein has at least 80%, at least 90%, at least 95%, at least 97%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 11 prior to the inactivation.",
+                                "Additional mstC sequences (and homologs thereof) can be identified using any method such as those described herein. For example, mstC nucleic acid molecules (and homologs thereof) that encode an mstC protein can be identified and obtained using molecular cloning or chemical nucleic acid synthesis procedures and techniques, including PCR. In addition, nucleic acid sequencing techniques and software programs that translate nucleic acid sequences into amino acid sequences based on the genetic code can be used to determine whether or not a particular nucleic acid has any sequence homology with known mstC sequences. Sequence alignment software such as MEGALIGN (DNASTAR, Madison, Wis., 1997) can be used to compare various sequences.",
+                                "Nucleic acid hybridization techniques can be used to identify and obtain a nucleic acid molecule that encodes an mstC protein. Briefly, any known mstC nucleic acid molecule, or fragment thereof, can be used as a probe to identify similar nucleic acid molecules (including homologs thereof) by hybridization under conditions of moderate to high stringency. Such similar nucleic acid molecules then can be isolated, sequenced, and analyzed to determine whether the encoded protein is an mstC protein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define \u0394mstC fungi",
+                                "genetic inactivation of mstC gene",
+                                "increase heterologous protein expression",
+                                "Aspergillus fungi examples",
+                                "A. niger strain 11414 example",
+                                "other Aspergillus species examples",
+                                "Neurospora crassa example",
+                                "NCU01633 gene genetic inactivation",
+                                "method for genetic inactivation",
+                                "nucleotide substitutions, insertions, deletions",
+                                "stop codon introduction",
+                                "partial deletion mutation",
+                                "insertional mutation",
+                                "genetic inactivation degree",
+                                "reduced mstC activity",
+                                "mstC sequence identity",
+                                "glucoamylase promoter operably linked",
+                                "heterologous protein examples",
+                                "beta-glucosidase example",
+                                "glucoamylase promoter sequence",
+                                "creA and/or amyR gene mutations",
+                                "synergistic effect with mstC inactivation",
+                                "reduced creA and/or amyR activity",
+                                "creA and/or amyR sequence identity",
+                                "transformed or recombinant fungi",
+                                "exogenous nucleic acid molecule",
+                                "genetic inactivation methods",
+                                "insertional mutation details",
+                                "deletion of coding region",
+                                "allelic exchange method",
+                                "counterselectable markers method",
+                                "cre-lox system method",
+                                "marker gene replacement",
+                                "mutagenesis or knock-out technology",
+                                "antisense technology",
+                                "gene silencing",
+                                "introducing exogenous nucleic acid molecule",
+                                "maintaining exogenous nucleic acid molecule",
+                                "identifying inactivated mstC gene",
+                                "PCR and nucleic acid hybridization",
+                                "qRT-PCR method",
+                                "immunohisto-chemical and biochemical techniques"
+                            ],
+                            "num_characters": 21476,
+                            "outline_medium": [
+                                "define \u0394mstC fungi",
+                                "genetic inactivation of mstC gene",
+                                "increase heterologous protein expression",
+                                "various fungi species used",
+                                "mstC gene inactivation methods",
+                                "knockout or functional deletion",
+                                "nucleotide substitutions, insertions, deletions",
+                                "stop codon introduction",
+                                "genetic inactivation degree",
+                                "mstC sequences disclosed",
+                                "glucoamylase promoter operably linked",
+                                "heterologous protein expression increase",
+                                "mutations in creA and/or amyR genes",
+                                "synergistic effect with mstC inactivation",
+                                "creA and/or amyR activity decrease",
+                                "transformed or recombinant fungi",
+                                "exogenous nucleic acid molecule introduction",
+                                "genetic inactivation methods",
+                                "allelic exchange",
+                                "counterselectable markers",
+                                "cre-lox system for site-specific recombination"
+                            ],
+                            "outline_short": [
+                                "define \u0394mstC fungi",
+                                "describe genetic inactivation of mstC gene",
+                                "specify fungi that can be used",
+                                "describe method for genetic inactivation",
+                                "provide examples of mstC gene inactivation",
+                                "describe glucoamylase promoter operably linked to heterologous proteins",
+                                "provide examples of heterologous proteins",
+                                "describe mutations in creA and/or amyR genes",
+                                "provide examples of genetic inactivation methods",
+                                "describe measuring gene inactivation and heterologous protein activity"
+                            ]
+                        },
+                        {
+                            "title": "IV. Expressing Heterologous Proteins in a mstC Fungi from a Glucoamylase Promoter",
+                            "paragraphs": [
+                                "The isolated fungi having an inactivated mstC gene, and a glucoamylase promoter operably linked to one or more heterologous proteins, can be used to express the heterologous protein(s). In some embodiments, the expressed heterologous protein is a heterologous enzyme (e.g., beta-glucosidase or other enzyme or protein in Table 1). Exemplary heterologous protein(s) are provided herein, and include those used that can be used to degrade a biomass. In some embodiments, the expressed heterologous protein is a heterologous fungal protein, or heterologous bacterial (e.g., E. coli) protein.",
+                                "The methods include by culturing or growing recombinant fungi under conditions that permit the fungi to express the heterologous protein. For example, the recombinant fungus can be grown or cultured in an appropriate culture medium containing the appropriate nutrients and ions, at an appropriate temperature and pH. In some examples, the expression of the heterologous protein in the \u0394mstC mutant strain is increased at least two-fold (such as at least 3-fold, or at least 4-fold) compared to the expression of the heterologous enzyme in a WT fungus (e.g., one having a native mstC gene).",
+                                "In some examples, the method includes isolating or collecting the heterologous protein expressed by the recombinant fungus, for example from the fungi or from the culture media in which the fungi are grown."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "expressing heterologous protein in \u0394mstC fungi",
+                                "isolating or collecting heterologous protein"
+                            ],
+                            "num_characters": 1387,
+                            "outline_medium": [
+                                "express heterologous protein from glucoamylase promoter"
+                            ],
+                            "outline_short": [
+                                "describe expressing heterologous proteins in \u0394mstC fungi"
+                            ]
+                        },
+                        {
+                            "title": "V. Method of Biomass Degradation",
+                            "paragraphs": [
+                                "Methods of using the \u0394mstC fungi that include a glucoamylase promoter operably linked to one or more heterologous protein coding sequences to degrade a biomass (such as a lignocellulose biomass) are provided. Lignocellulose biomass includes carbohydrate polymers such as cellulose and hemicellulose. These carbohydrate polymers contain various sugar molecules and they are bound to lignin, an aromatic polymer. Cellulolytic enzymes degrade the lignocellulose biomass by breaking down the biomass into its constituent monomers and oligomers. Disclosed herein is a method of degrading such biomass by expressing one or more cellulolytic enzymes (e.g., beta-glucosidase) in the disclosed \u0394mstC fungi that include a glucoamylase promoter operably linked to one or more heterologous protein coding sequences.",
+                                "For example, the method can include incubating a biomass with \u0394mstC fungi that include a glucoamylase promoter operably linked to a heterologous protein, such as a protein that can be used to degrade the biomass (e.g., BG or other enzyme or protein listed in Table 1, as well as combinations thereof), under conditions that permit the fungus to express the heterologous protein from the glucoamylase promoter, thereby degrading the biomass. For example, the biomass can be incubated with the recombinant fungus can be in an appropriate medium, at an appropriate temperature and pH. In some example, the incubation occurs in a fermenter. Expression of the heterologous protein from the glucoamylase promoter degrades the biomass. In some examples, the expression of the heterologous protein in the \u0394mstC mutant strain is increased at least two-fold (such as at least 3-fold, or at least 4-fold) compared to the expression of the heterologous enzyme in a WT fungus (e.g., one having a native mstC gene).",
+                                "In other examples, the method can include incubating a biomass with one or more heterologous proteins (e.g., BG or other enzyme or protein listed in Table 1, as well as combinations thereof) obtained from the \u0394mstC fungi that include a glucoamylase promoter operably linked to a heterologous protein (for example enzymes secreted in the growth media of the mutant fungi and separated, collected or otherwise isolated), such as one or more heterologous proteins that can be used to degrade the biomass, under conditions that permit the secreted heterologous protein to degrade the biomass. For example, the biomass can be incubated with the one or more heterologous proteins in an appropriate liquid material, at an appropriate temperature and pH. In some example, the incubation occurs in a fermenter. The heterologous protein(s) obtained from the \u0394mstC fungi degrade the biomass. Thus, in some examples, the method can also include culturing the \u0394mstC fungi and separating or isolating the heterologous protein(s) expressed in and secreted by the \u0394mstC mutant strain, and then adding the separated heterologous protein(s) to the biomass.",
+                                "In some embodiments, the biomass is further incubated with ionic liquids (ILs), such as 1-ethyl-3-methylimidazolium acetate ([C2mim]OAc), for example before, during, or after incubation with the \u0394mstC fungi or separated heterologous protein(s). In some examples, the amount of IL is at least 1% v/v, at least 2% v/v, at least 4% v/v, at least 5% v/v, at least 10% v/v, or at least 15% v/v (such as about 1% v/v, about 2% v/v, about 3% v/v, about 4% v/v, about 5% v/v, about 6% v/v, about 7% v/v, about 8% v/v, about 9% v/v, or about 10% v/v).",
+                                "In some examples, the biomass is pretreated with the IL, and subsequently incubated with the disclosed recombinant fungi or separated heterologous protein(s). Therefore, if pretreated with IL, IL-tolerance is needed for the cellulolytic enzyme to be effective in biomass degradation. The disclosed fungi have IL-tolerance."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method of biomass degradation using \u0394mstC fungi",
+                                "express cellulolytic enzymes in \u0394mstC fungi",
+                                "incubate biomass with \u0394mstC fungi under conditions for enzyme expression",
+                                "describe degradation of biomass by expressed enzymes",
+                                "provide alternative method using secreted heterologous proteins",
+                                "describe optional incubation with ionic liquids",
+                                "highlight IL-tolerance of disclosed fungi"
+                            ],
+                            "num_characters": 3814,
+                            "outline_medium": [
+                                "describe method of degrading biomass using \u0394mstC fungi",
+                                "incubate biomass with recombinant fungus or separated heterologous protein",
+                                "optional incubation with ionic liquids"
+                            ],
+                            "outline_short": [
+                                "describe method of degrading biomass using \u0394mstC fungi with glucoamylase promoter operably linked to heterologous protein coding sequences"
+                            ]
+                        },
+                        {
+                            "title": "VI. Glucoamylase Expression with \u0394mstC Fungi",
+                            "paragraphs": [
+                                "Provided herein are methods of increasing glucoamylase production using the disclosed \u0394mstC fungi. In some examples, expression of the glucoamylase in \u0394mstC fungi (such as an Aspergillus species, such as A. niger, or a Neurospora species, such as N. crassa) is increased at least two-fold (such as at least 3-fold, or at least 4-fold) compared to the expression of the glucoamylase in a WT fungus (e.g., one having a native mstC gene). In some examples, if a Neurospora species is used, the nearest homolog to mstC, NCU01633, is genetically inactivated.",
+                                "The methods include culturing or growing \u0394mstC fungi under conditions that permit the fungi to express the native glucoamylase protein. For example, the \u0394mstC fungus can be grown or cultured in an appropriate culture medium containing the appropriate nutrients and ions, at an appropriate temperature and pH.",
+                                "The following examples are provided to illustrate certain particular features and/or embodiments. These examples should not be construed to limit the disclosure to the particular features or embodiments described."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method of increasing glucoamylase production using \u0394mstC fungi",
+                                "describe culturing \u0394mstC fungi to express native glucoamylase protein"
+                            ],
+                            "num_characters": 1078,
+                            "outline_medium": [
+                                "increase glucoamylase production using \u0394mstC fungi"
+                            ],
+                            "outline_short": [
+                                "describe method of increasing glucoamylase production using \u0394mstC fungi"
+                            ]
+                        },
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Materials and Methods**",
+                                "This example describes methods used in the experiments described in Examples 2-4 below.",
+                                "Reagents and Strains.",
+                                "Unless otherwise indicated, all reagents were obtained from Sigma (St. Louis, Mo.). Aspergillus niger strains used are listed in Table 2. For general maintenance, A. niger strains were cultured on slants of Potato/Dextrose (PD) agar and incubated at 30\u00b0 C. for 3 days to allow for hyphal growth and spore formation. Information on Neurospora strains can be found in Colot et al. (PNAS, 103:10352-7, 2006).",
+                                "The J03 strain was generated when 11414 (from the American Type Culture Collection; Manassas, Va.) was transformed with vector containing a codon-optimized sequence for a beta-glucosidase (BG) from Thermobaculum terrenum (J03) (Gladden et al. 2014), driven by the A. niger glucoamylase promoter (PglaA) and followed by the A. nidulans tryptophan biosynthesis terminator (TtrpC) (the expression construct is detailed in Campen et al.). A similar plasmid expressing the green fluorescent protein (GFP) in place of the J03 sequence was used to produce the strain GFP.",
+                                "The construction of strains with a BG from Thermotoga petrophila (A5) (Park et al. 2012) under the control of various promotors is detailed in Campen et al. Briefly, the Aspergillus fumigatus pyrG (AfpyrG) was used to replace the native kusA locus in a 11414 pyrG-strain (Chiang et al. 2011). This strain was subsequently transformed with a vector containing the PglaA-A5-TtrpC construct described above flanked by 1 kb of sequence 5\u2032 and 3\u2032 to the native glaA locus, allowing for targeted integration. In variations of this procedure, the A5 sequence was preceded by promoter sequences from either the A. niger glyceraldehyde-3-phosphate dehydrogenase or extracellular matrix loci (PgpdA or Pecm33, respectively).",
+                                "Generation of the mstC sugar transporter deletion strains\u2014\u0394mstC, \u0394glaA/PglaA-A5 \u0394mstC, \u0394glaA/Ppde-A5 \u0394mstC, and \u0394glaA/Pecm33-A5 \u0394mstC strains\u2014is described below.",
+                                "Mutagenesis and Primary Plate Screening.",
+                                "Spores were harvested from PD agar slant tubes of J03 using a sterile solution of 0.02% (v/v) Tween-20. In a final volume of 0.5 mL, the spores were combined with 400 ng/mL 4-nitroquinoline 1-oxide (4-NQO; concentration empirically determined to result in a \u02dc90% kill rate) and incubated on a shaker set at 200 rpm at 37\u00b0 C. for 30 min. An equal volume of 5% (v/v) sodium thiosulfate was added to inactivate the 4-NQO before plating the spores on BG Screening agar (20 g peptone, 8 g ammonium sulfate, 10 g ox-bile, and 15 g agar were added to 800 mL ddH2O and autoclaved; after autoclaving, 200 mL of a sterile 50% (w/v) maltose solution, 1 g esculin dissolved in methanol, and 5 mL of a sterile 10% (w/v) ferric citrate solution was added). The plates were incubated at 30\u00b0 C. for 3 days before evaluating the halos around the colonies in comparison with colonies from untreated J03 spores. Mutated colonies with increased halos compared to the parent were picked and transferred to slants of PD agar.",
+                                "Secondary Liquid Culture Screening.",
+                                "To evaluate the BG production of the A. niger mutant strains in liquid culture, 1\u00d7106 spores/mL were first inoculated into 5 mL of CSL Medium (100 g corn steep liquor (50% (w/v) solids), 50 g fructose, 10 g glucose, 1 g sodium phosphate, 0.5 g magnesium sulfate, and 0.05 ml Antifoam 204 were added to 760 mL ddH20, the pH adjusted to 5.8, and autoclaved; after autoclaving, 240 mL of a sterile 50% (w/v) maltose solution was added) in 60-mL glass culture tubes. The tubes were incubated in a shaker set at 200 rpm at 30\u00b0 C. for 48 hr to generate fungal biomass. An aliquot of 0.5 mL of culture was then transferred into 5 mL of HMM Medium (120 g maltose, 70 g sodium citrate (tribasic dihydrate), 15 g ammonium sulfate, 1 g sodium phosphate, 1 g magnesium sulfate (anhydrous), and 3 g SC Complete Media (Sunrise Science; San Diego, Calif.)) were added to 1 L ddH20, the pH adjusted to 6.2, and filter-sterilized) in 60-mL glass culture tubes. The tubes were incubated in a shaker set at 200 rpm at 30\u00b0 C. for 120 hr. Cell-free aliquots of the resulting culture supernatants were harvested using a 0.45 \u03bcm nylon centrifugal filter (VWR; Radnor, Pa.).",
+                                "Aliquots from the culture supernatants were assayed for total secreted protein using the Bradford Protein Assay Kit (Bio-Rad; Hercules, Calif.). The BG activity in each sample was evaluated by combining 10 \u03bcL of culture supernatant with 90 \u03bcL of reaction mix (80 mM MES buffer (pH 6.5), 5 mM 4-nitrophenyl 3-D-glucopyranoside (pNPG), plus or minus 10% (v/v) of the ionic liquid 1-ethyl-3-methylimidazolium acetate ([C2mim]OAc)). The reactions were incubated at 65\u00b0 C. for 30 min before being quenched with 100 \u03bcL 2% (w/v) sodium carbonate. The absorbance of 100 \u03bcL aliquots of the pNPG reactions was read at 410 nm.",
+                                "Characterization of Mutant Strains.",
+                                "A. niger strains were first inoculated at 1\u00d7106 spores/mL into 50 mL CSL medium in 250-mL glass flasks and then sub-cultured at 5 mL into 50 mL HMM medium in 250-mL glass flasks in triplicate for each strain. Cell-free samples of the resulting culture supernatants were harvested and assayed for total protein and BG activity as outlined above. In addition, the fungal biomass from each culture was harvested by decanting the culture through a single layer of Miracloth (EMD Millipore; Billerica, Mass.), pressing away the moisture, and then lyophilizing before weighing.",
+                                "Sequencing and Bioinformatics Analyses of Mutants.",
+                                "Genomic DNA was prepared for sequencing by grinding \u02dc0.5 g lyophilized fungal biomass to a fine powder and combining it with 15 mL CTAB buffer (2% (w/v) hexadecyltrimethylammonium bromide, 100 mM Tris-HCl (pH 8), 20 mM EDTA (pH 8), and 1.4 M NaCl); the sample was vortexed to mix and then incubated at 57\u00b0 C. for 2 hr with occasional vortexing. An equal volume 25:24:1 phenol:chloroform:isoamyl alcohol was added to the sample, vortexed to mix, and then centrifuged at 4\u00b0 C. for 10 min at 10,000 rcf. The resulting supernatant was extracted a second time with 5 mL 25:24:1 phenol:chloroform:isoamyl alcohol. Nucleic acids were precipitated by adding one volume 2-propanol to the resulting supernatant and centrifuging at 4\u00b0 C. for 10 min at 4,500 rcf. The resulting pellet was washed with 70% (v/v) ethanol, allowed to air-dry, and then incubated at 65\u00b0 C. in 1 mL sterile ddH2O to resuspend. To remove RNA, 2 \u03bcL 200 mg/mL RNase A (Thermo Fisher Scientific; Waltham, Mass.) was added and the sample incubated at 37\u00b0 C. for 2 hr. The sample was extracted a final time with 1 mL 25:24:1 phenol:chloroform:isoamyl alcohol and the DNA precipitated with the same 2-propanol and 70% (v/v) ethanol method as above before resuspending in 0.5 mL sterile ddH2O.",
+                                "DNA libraries were produced at the Joint Genome Institute (JGI) and sequenced by the Illumina paired-end sequencing method using MiSeq 2\u00d7150 bp (\u02dc30\u00d7 coverage) or HiSeq 2\u00d7100 bp (\u02dc100\u00d7 coverage). The sequence data have been deposited with the NCBI BioProject database under the following accession numbers: PRJNA249619 (J03), PRJNA249388 (J03 1.1), PRJNA249608 (J03 1.2), PRJNA249607 (J03 1.6), PRJNA249612 (J03 1.7), PRJNA249480 (J03 1.10), PRJNA249613 (J03 2.8), PRJNA249614 (J03 4.3), PRJNA259122 (J03 6.3), PRJNA259125 (J03 7.2), PRJNA259124 (J03 7.4), PRJNA259128 (J03 8.2), and PRJNA259127 (J03 8.3). The sequenced reads were mapped to the reference genome sequence of A. niger strain ATCC 1015 v4.0, augmented with the sequence of the transformation plasmid containing J03, using BWA-MEM (Li 2014). Mapped reads were sorted by coordinate using SAMtools (Li et al. 2009) and duplicate reads were marked using Picard Tools.",
+                                "Variant calling for single nucleotide polymorphisms and insertions/deletions was performed using a combination of BCFtools (Li 2011) or GATK tools (McKenna et al. 2010). Using BCFtools, variants calling and genotyping were done for each chromosome using multiple samples and merged. Using GATK, variants were called for each sample by GATK HaplotypeCaller and joint genotyping of multiple samples was performed using GATK GenotypeGVCFs. Variants called by BCFtools were filtered using VCFtools, and variants called by GATK were filtered using GATK VariantFiltration. Filtered variants were annotated using the VariantAnnotation package in R (Obenchain et al. 2014). Structural variations such as insertion, deletion, or duplication of relatively large segments were identified using Pindel (Ye et al. 2009), BreakDancer (Chen et al. 2009), Delly (Rausch et al. 2012), or Lumpy (Layer et al. 2014).",
+                                "Deletion of Sugar Transporter.",
+                                "For targeted deletion of the MstC sugar transporter, a plasmid containing the Aspergillus oryzae pyrithiamine resistance (ptrA) sequence (Kubodera et al. 2000), in a reverse orientation and flanked by \u02dc1 kb sequence upstream and downstream of the mstC locus, was synthesized (GenScript; Piscataway, N.J.). The deletion construct was amplified by PCR and then transformed into the J03, \u0394glaA/PglaA-A5, \u0394glaA/PgpdA-A5, and \u0394glaA/Pecm33-A5 strains similar to the protocol described by Yang et al. (2014). Briefly, 5\u00d7105 spores/mL were inoculated into 100 mL YPD medium in a 250-mL glass flask and incubated in a shaker set at 150 rpm at 30\u00b0 C. for 16 hr. The culture was filtered through a single layer of sterilized Miracloth: mycelia retained on the Miracloth were thoroughly rinsed with sterile ddH2O and then transferred to a 250-mL glass flask containing 40 mL Protoplasting buffer (0.6 M ammonium sulfate, 50 mM maleic acid, and 30 mg/mL VinoTaste Pro (Novozymes; Davis, Calif.) in ddH2O, the pH adjusted to 5.5, and filter-sterilized). The digesting mycelia were incubated in a shaker set at 70 rpm at 30\u00b0 C. for 4-6 hr. The culture was filtered through a single layer of sterilized Miracloth and the resulting flow-through centrifuged for 10 min at 800 rcf. The resulting pellet was washed twice with 25 mL ST solution (1 M sorbitol in 50 mM Tris (pH 8.0), filter-sterilized) and once with 10 mL STC solution (1 M sorbitol and 50 mM calcium chloride in 50 mM Tris (pH 8.0)), centrifuging for 10 min at 800 rcf. The protoplast pellet was resuspended in STC solution to a concentration of 1.2\u00d7107 protoplasts/mL and then combined with one-quarter volume PEG solution (40% (w/v) polyethylene glycol 4000, 1 M sorbitol, and 50 mM calcium chloride in 50 mM Tris (pH 8.0), filter-sterilized); to this, dimethyl sulfoxide was added at 7% of the final volume. The purified deletion construct PCR product was added at 1-10 \u03bcg per 100 \u03bcL protoplast suspension and incubated on ice for 15 min; 1 mL PEG solution was added and incubated at room temperature for 15 min. Next, 10 mL Thiamine-minus Sorbitol Medium (10 g/L glucose, Nitrate Salts (6 g/L sodium nitrate, 0.52 g/L potassium chloride, 0.52 g/L magnesium sulfate heptahydrate, and 1.52 g/L potassium dihydrogen phosphate (Pontecorvo 1953)), Trace Elements (2.25 mg/L zinc sulfate heptahydrate, 11 mg/L boric acid, 5 mg/L manganese chloride tetrahydrate, 5 mg/L iron sulfate heptahydrate, 1.7 mg/L cobalt chloride hexahydrate, 1.6 g/L copper sulfate pentahydrate, 0.085 mg/L ammonium molybdate dihydrate, and 50 mg/L tetrasodium ethylenediaminetetraacetic acid (Barrat et al. 1965)), Thiamine-minus Vitamin Stock solution (1 mg/L each of biotin, nicotinic acid, p-aminobenzoic acid, pyridoxine, and riboflavin (Barrat et al. 1965)), and 1 M sorbitol in ddH2O, autoclaved to sterilize) was added and incubated in a shaker set at 80 rpm at 30\u00b0 C. for 1 hr. The sample was then centrifuged for 15 min at 800 rcf and the resulting pellet resuspended in 12 mL Pyrithiamine Sorbitol agar (10 g/L glucose, Nitrate Salts, Trace Elements, Thiamine-minus Vitamin Stock solution, 1 M sorbitol, 18 g/L agar, and 0.1 \u03bcg/mL pyrithiamine hydrobromide in ddH2O, autoclaved to sterilize) before plating; an overlay of 12 mL Pyrithiamine Sorbitol agar was applied and the plate incubated at 30\u00b0 C. for 3-5 days.",
+                                "Pyrithiamine-resistant colonies were transferred to PD agar slants. Spores were inoculated into 3 mL Yeast extract/Peptone/Dextrose (YPD) medium in 15-mL culture tubes and incubated in a shaker set at 200 rpm at 30\u00b0 C. for 2-3 days. Fungal biomass was harvested using a 0.45 \u03bcm nylon centrifugal filter and genomic DNA was prepared using the ZR Fungal/Bacterial DNA MiniPrep kit (Zymo Research; Irvine, Calif.). The strains were screened by PCR using primer pairs targeted within and flanking the \u0394mstC construct to identify those strains where the ptrA sequence had replaced the mstC locus.",
+                                "Protein Gel Electrophoresis.",
+                                "Aliquots of cell-free culture supernatant prepared from CSL medium and HMM medium enzyme induction cultures of A. niger were combined with Laemmli sample buffer and heated to 99\u00b0 C. for 10 min. Samples were then loaded on a 12% or 8-16% gradient Mini-Protean TGX Precast Gel (Bio-Rad; Hercules, Calif.) and run at a constant voltage. Coomassie staining was performed using GelCode Blue Stain Reagent (Thermo Fisher Scientific; Waltham, Mass.)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce materials and methods",
+                                "list reagents and strains used",
+                                "describe general maintenance of A. niger strains",
+                                "generate J03 strain",
+                                "describe construction of strains with BG from T. petrophila",
+                                "generate mstC sugar transporter deletion strains",
+                                "describe mutagenesis and primary plate screening",
+                                "describe secondary liquid culture screening",
+                                "characterize mutant strains",
+                                "sequence and analyze mutants",
+                                "prepare genomic DNA for sequencing",
+                                "describe DNA library production and sequencing",
+                                "map sequenced reads to reference genome",
+                                "perform variant calling and genotyping",
+                                "filter and annotate variants",
+                                "identify structural variations",
+                                "delete sugar transporter",
+                                "describe targeted deletion of mstC locus",
+                                "transform deletion construct into strains",
+                                "screen for pyrithiamine-resistant colonies",
+                                "verify replacement of mstC locus",
+                                "prepare protein samples for gel electrophoresis",
+                                "run protein gel electrophoresis",
+                                "perform Coomassie staining",
+                                "analyze protein gel results"
+                            ],
+                            "num_characters": 13032,
+                            "outline_medium": [
+                                "introduce materials and methods",
+                                "describe reagents and strains used",
+                                "generate mutated colonies",
+                                "evaluate BG production in liquid culture",
+                                "characterize mutant strains",
+                                "sequence and analyze mutants",
+                                "prepare genomic DNA for sequencing",
+                                "produce DNA libraries and sequence",
+                                "map reads to reference genome",
+                                "call variants and filter",
+                                "annotate variants",
+                                "delete sugar transporter"
+                            ],
+                            "outline_short": [
+                                "introduce materials and methods",
+                                "describe mutagenesis and primary plate screening",
+                                "describe secondary liquid culture screening",
+                                "describe characterization of mutant strains",
+                                "describe sequencing and bioinformatics analyses of mutants",
+                                "describe deletion of sugar transporter"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Mutagenesis Screen Using the Strain J03**",
+                                "This example describes a forward mutagenesis screen using the strain J03 to identify loci that could enhance heterologous protein production. Based on these teachings, one skilled in the art will appreciate that mutagenesis screen can be performed in other strains of Aspergillus.",
+                                "The Aspergillus niger strain ATCC 11414 (WT) was engineered to produce a beta-glucosidase (BG) from the bacterium Thermobaculum terrenum, generating the strain J03. This enzyme was previously identified in a screen for thermophilic cellulose-degrading enzymes capable of functioning in the presence of the ionic liquid (IL) 1-ethyl-3 methylimidazolium acetate ([C2mim][OAc]) (Gladden et al. 2014). The fungal expression construct was designed using enzyme sequence codon-optimized to the genome of A. niger, driven by the A. niger glucoamylase promoter (PglaA) (SEQ ID NO: 8), and followed by a terminator from one of the Aspergillus nidulans tryptophan biosynthetic pathway genes (TtrpC) (Campen et al.). The A. niger J03 strain generated BG activity at moderately elevated levels compared to the parent (FIG. 1A) without significant change in the overall amount of protein secreted (FIG. 1B). It was possible to distinguish the activities of any native A. niger BG present in the culture supernatant samples from the heterologous bacterial enzyme through the inclusion of IL in the enzymatic assays: while the BG activity of both WT and GFP control strain are reduced to background levels in the presence of IL, the BG activity of the J03 strain is unaffected (FIG. 2C). A forward mutagenesis screen was designed using the J03 strain to identify loci that could enhance heterologous protein production.",
+                                "Before carrying out the mutagenesis, a plate-based means of detecting secreted BG production was developed. First, a panel of colorimetric and fluorescent substrates was tested, including 5-bromo-4-chloro-3-indolyl \u03b2-D-glucopyranoside (X-Glc), esculin in combination with ferric citrate, indoxyl \u03b2-D-glucoside, 4-methylumbelliferyl \u03b2-D-glucopyranoside (MUGlc), and resorufin \u03b2-D-glucopyranoside. Culture supernatant from either J03 or the GFP control strain was spotted onto minimal media plates with these substrates infused into the agar: all but the indoxyl \u03b2-D-glucoside was found to allow for halo formation. However, when conidial spores from the same two strains were spread on the plates, only those containing X-Glc or esculin produced halos around the resulting colonies. Next, a solid medium containing high levels of peptone and maltose was found that produced the desired expression of recombinant BG from J03 while repressing the native BG secretion in the WT parent and GFP control strains. Finally, three colony-restricting compounds were tested: the detergent Triton X-100, the IL [C2mim][OAc], and ox-bile. Triton X-100 was effective in reducing colony size, but not at allowing for distinction between positive and negative (J03 and GFP, respectively) control strains while [C2mim][OAc] did not sufficiently restrict colony size, though it was effective at reducing native BG activity. Ox-bile (1% w/v) was chosen for the mutagenesis screen as it was most effective at limiting colony size while still allowing for clear BG halo formation.",
+                                "Once a means of screening for BG hyper-secretors was optimized, conidia from the J03 strain were mutagenized using 4-nitroquinoline 1-oxide (4-NQO) to introduce point mutations in the genome and then spread onto plates with esculin, maltose, and ox-bile as detailed in Example 1. The spores were screened for large halo formation around colonies and stocks were made of those colonies with dark halo diameters exceeding that of the J03 parent strain. These strains were subsequently tested for BG activity by growing the strain in first small (5 mL) and then large (50 mL) liquid cultures and testing the supernatant using the substrate p-nitrophenyl-beta-glucopyranoside (pNPG) to confirm the BG hyper-secretion phenotype.",
+                                "Mutagenesis of conidia from J03 generated 12 mutant strains with consistently increased BG activity relative to the parent strain. These strains were categorized according to their ability to generate native and/or heterologous BG (Table 3). J03-derivative strains that maintained increased BG activity in the presence of 10% (v/v) [C2mim][OAc] were categorized as strains over-producing the heterologous J03 BG (HET) whereas native BG hyper-production mutants showed no IL-tolerance (NAT). Of the twelve mutants, ten had increased J03 enzyme activity while two were native BG hyperproducers (strains J03 4.3 and J03 6.3). Of note were those strains that showed reductions of up to -50% BG activity in the presence of IL but did not reduce the activity to background as seen with the NAT strains. These strains\u2014J03 1.2, J03 2.8, J03 7.4, and J03 8.3\u2014were categorized as containing both elevated native and heterologous BG production (BOTH) relative to the parent. A representative of each phenotypic category is shown in FIGS. 1A-1B."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe mutagenesis screen using strain J03",
+                                "engineer Aspergillus niger strain ATCC 11414 to produce beta-glucosidase",
+                                "design fungal expression construct",
+                                "generate BG activity in J03 strain",
+                                "develop plate-based means of detecting secreted BG production",
+                                "test colorimetric and fluorescent substrates",
+                                "identify optimal solid medium for BG expression",
+                                "select colony-restricting compounds",
+                                "perform mutagenesis screen using 4-nitroquinoline 1-oxide",
+                                "categorize mutant strains based on BG activity"
+                            ],
+                            "num_characters": 5051,
+                            "outline_medium": [
+                                "describe mutagenesis screen using strain J03",
+                                "design fungal expression construct",
+                                "develop plate-based means of detecting secreted BG production",
+                                "optimize mutagenesis screen conditions",
+                                "identify and categorize mutant strains"
+                            ],
+                            "outline_short": [
+                                "perform mutagenesis screen",
+                                "identify loci enhancing heterologous protein production"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Sequencing of Hyper-Production Mutant Strains**",
+                                "This example describes a method of DNA genomic sequencing in WT, parent J03, and twelve mutant J03-derivative strains to identify genomic legions responsible for hyper-production of heterologous and/or native BG.",
+                                "To identify the genomic lesions responsible for the hyper-production phenotypes observed in the mutants, DNA was prepared from the twelve mutant J03-derivative strains as well as the parent strain J03 and WT. Genomic DNA was sequenced by the Joint Genome Institute (JGI) and subsequently analyzed for mutations. Bcftools called 1,727 variants and GATK called 1,844 variants across all strains, and 1,694 and 1,326 variants passed fixed threshold filters, respectively. Among these, 962 variants called by both Bcftools and GATK were retained and subjected to annotation. Single nucleotide polymorphisms (SNPs) and small insertion/deletion (indel) calls were annotated using the filtered gene models of A. niger strain ATCC 1015 v4.0 (Aspni7 from the JGI). Variants in the coding regions, 5\u2032 UTR, 3\u2032 UTR, and splice sites (overlapping the first or last two nucleotides of an intron) were annotated first, followed by variants in the promoter region (500 bp upstream and 30 bp downstream of the transcription start site). Larger structural variants were visually inspected and manually annotated. Synonymous mutations in the coding region and variants present in the J03 parent strain were excluded from further analysis. The results of this analysis are presented in FIG. 3.",
+                                "Of the six HET strains, five contained mutations (five missense and one insertion of \u02dc9 kb sequence) within the coding region of Transcript ID 1121897, annotated as the low-affinity glucose transporter MstC (FIGS. 11A-11B and SEQ ID NO: 1 and 2). The one HET hyper-producer strains that does not have a mutation in mstC, J03 1.10, has a mutation in the promoter region of Transcript ID 1167209, a predicted amino acid transporter; this same promoter region was found to have a different mutation in one of the BOTH strains, J03 1.2.",
+                                "All four of the BOTH strains have mutations (three independent nonsense and one frameshift) in Transcript ID 1020757, the DNA-binding carbon catabolite repression transcription factor CreA. Two of the BOTH strains (J03 7.4 and J03 8.3) have point mutations in either the coding or promoter region of Transcript ID 1209131, annotated as an unstudied fungal-specific transcription factor, while another pair (J03 2.8 and J03 7.4) have mutations in either the coding or promoter region of Transcript ID 1156486, a trehalose-6-phosphate synthase (TpsA), part of the trehalose synthesis pathway.",
+                                "Finally, the two NAT strains have mutations in either the coding region or a splice site of Transcript ID 1094021, the amylase cluster transcriptional regulator AmyR. One of the NAT strains (J03 4.3) and one of the BOTH strains (J03 2.8) have mutations in either the 5\u2032 UTR or coding region of Transcript ID 1169228, annotated as a Ypt/Rab GTPase-activating protein involved in intracellular vesicle transport. Interestingly, J03 4.3 and J03 2.8 are the two highest BG producers among the J03-derivative strains, with J03 4.3 far outperforming the other NAT strain, J03 6.3 (Table 2).",
+                                "**Example 4**",
+                                "**Targeted Deletion of mstC Locus**",
+                                "This example describes to the effect of deleting the mstC locus using the strain J03 to demonstrate an association between the mstC locus and hyper-production of heterologous enzyme. Based on these teachings, one skilled in the art will appreciate that mstC can be similarly deleted in other strains of Aspergillus.",
+                                "To establish an association between the identified loci and hyper-production of heterologous enzyme, deletion of the mstC locus was pursued. Initially, the mstC locus was targeted for deletion in the same J03 background that the mutagenesis screen had been performed in. As shown in FIG. 4A, analysis of the BG activity of a J03 \u0394mstC strain found elevated levels of BG compared to the parental J03 strain and that this activity persisted in the presence of IL, indicating it was the heterologous J03 protein, as opposed to any native enzyme that was responsible for the increase in activity. As shown in FIG. 5, proteins found in the culture supernatants of both wild-type mstC and \u0394mstC strains yielded a similar banding pattern when examined by SDS-PAGE though the bands are more intense in the J03 \u0394mstC strain, reflective of the total secreted protein levels for these samples (FIG. 4B).",
+                                "Next, it was determined whether the increased enzyme production in the absence of mstC was specific to the heterologous expression construct present in the original J03 strain. For this, strains in which the native glaA locus had been replaced by a bacterial BG from Thermotoga petrophila, A5 (Park et al. 2012), under control of one of several different promoters were utilized: \u0394glaA/PglaA-A5, \u0394glaA/PgpdA-A5, and \u0394glaA/Pecm33-A5 (see Example 1 for description of assembly). These strains differ from the J03 \u0394mstC strain in four respects: (1) expression of a distinct heterologous enzyme; (2) targeted as opposed to random integration of the expression construct; (3) deletion of the native glaA locus; and (4) use of additional constitutive promoters (PgpdA and Pecm33) were tested. As shown in FIG. 6A, the three different promoters allow for a small range of A5-associated BG activity (\u0394glaA/PglaA-A5>\u0394glaA/PgpdA-A5>\u0394glaA/Pecm33-A5). Deletion of the native mstC locus in these backgrounds resulted in an at least four-fold increase in heterologous BG activity in the \u0394glaA/PglaA-A5 strain but negligible differences in the \u0394glaA/PgpdA-A5 and \u0394glaA/Pecm33-A5 backgrounds. Interestingly, both the \u0394glaA/PgpdA-A5 \u0394mstC and \u0394glaA/Pecm33-A5 \u0394mstC strains show significantly increased total protein section compared to \u0394glaA/PglaA-A5 \u0394mstC (see FIG. 6B and FIG. 7) even though any change in A5 expression compared to the parent strain is minimal. Although the impact of \u0394mstC on protein production is apparently restricted to those heterologous loci placed behind the glaA promoter, it does not seem to be limited to a particular protein sequence as both the J03 and A5 enzyme activities could be elevated.",
+                                "To establish an association between the identified loci and hyper-production of heterologous enzyme in Pgla-A5 strains, the mstC locus was genetically inactivated. As shown in FIG. 8A, analysis of the BG activity of a Pgla-A5 \u0394mstC strain found elevated levels of BG compared to the Pgla-A5 strain and that this activity persisted in the presence of IL, indicating it was the heterologous J03 protein as opposed to any native enzyme that was responsible for the increase in activity. As shown in FIG. 8B, the Pgla-A5 \u0394mstC strain did not show a significant change in the overall amount of protein secreted compared to the Pgla-A5 strain.",
+                                "**Example 5**",
+                                "**Native and Heterologous Enzyme Activity in \u0394mstC Fungi**",
+                                "This example describes to the effect of deleting the mstC locus in strain J03 on production of a native (glucoamylase) and heterologous (beta-glucosidase) enzyme.",
+                                "The mstC locus was deleted in the same J03 background described above. As shown in FIG. 8A, BG activity by expression from a glucoamylase promoter in the J03 \u0394mstC strain resulted in elevated levels of BG compared to the parental strain. As shown in FIG. 9, expression of native glucoamylase was elevated in \u0394mstC mutant strains compared to the parental strains.",
+                                "**Example 6**",
+                                "**Genetic Inactivation of NCU01633 Locus in Neurospora**",
+                                "This example describes a comparison of the effect on glucoamylase expression in A. niger \u0394mstC to N. crassa \u0394NCU01633. Based on these teachings, one skilled in the art will appreciate that mstC and NCU01633 can be similarly deleted in other strains of Aspergillus and Neurospora, and that homologs of mstC and NCU01633 can be genetically inactivated in other fungi.",
+                                "To establish an association between the identified loci and production of glucoamylase, mstC/NCU01633 was deleted. The mstC locus was deleted in the J03 background of A. niger as described above. The NCU01633 locus was deleted in N. crassa WT (FGSC 2489) to obtain the \u0394NCU01633 mutant (FGSC 13161).",
+                                "As shown in FIG. 10A, the \u0394mstC mutant and the \u0394NCU01633 mutant (FGSC 13161) showed significantly higher levels of glucoamylase production compared to the levels of the A. niger WT (11414) and N. crassa WT (FGSC 2489). FIG. 10B shows the total protein levels for A. niger and N. crassa and their mutant strains."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe sequencing of hyper-production mutant strains",
+                                "prepare genomic DNA from mutant and parent strains",
+                                "sequence genomic DNA by Joint Genome Institute",
+                                "analyze mutations using Bcftools and GATK",
+                                "filter variants using fixed threshold filters",
+                                "annotate variants using filtered gene models",
+                                "identify variants in coding regions, UTRs, and splice sites",
+                                "exclude synonymous mutations and variants present in J03 parent strain",
+                                "analyze results of mutation analysis",
+                                "identify mutations in low-affinity glucose transporter MstC",
+                                "identify mutations in promoter region of amino acid transporter",
+                                "identify mutations in DNA-binding carbon catabolite repression transcription factor CreA",
+                                "identify mutations in unstudied fungal-specific transcription factor",
+                                "identify mutations in trehalose-6-phosphate synthase",
+                                "identify mutations in amylase cluster transcriptional regulator AmyR",
+                                "identify mutations in Ypt/Rab GTPase-activating protein"
+                            ],
+                            "num_characters": 8517,
+                            "outline_medium": [
+                                "describe sequencing of hyper-production mutant strains",
+                                "prepare genomic DNA from mutant and parent strains",
+                                "sequence genomic DNA",
+                                "analyze sequencing data for mutations",
+                                "annotate variants in coding regions and UTRs",
+                                "identify mutations in promoter regions",
+                                "exclude synonymous mutations and variants present in parent strain",
+                                "present results of analysis"
+                            ],
+                            "outline_short": [
+                                "sequence genomic DNA of mutant strains",
+                                "identify genomic lesions responsible for hyper-production",
+                                "annotate variants in coding regions and promoter regions",
+                                "associate mutations with hyper-production phenotypes"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An isolated fungus comprising a genetic inactivation of a mstC gene or homolog thereof.",
+        "2. The isolated fungus of claim 1, wherein the isolated fungus is in class Eurotiomycetes or Sordariomycetes.",
+        "3. The isolated fungus of claim 1, wherein the mstC gene or homolog thereof is genetically inactivated by nonsynonymous mutation or by insertional mutation.",
+        "4. The isolated fungus of claim 1, wherein the mstC gene genetically inactivated comprises a nucleic acid molecule comprising at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1, 3, or nt 82 to 1764 of SEQ ID NO: 1, or wherein the mstC homolog is a NCU01633 gene comprising at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9, 10, or nt 652 to 2250 of SEQ ID NO: 10.",
+        "5. The isolated fungus of claim 1, wherein the mstC gene genetically inactivated encodes a protein comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 2, or wherein the mstC homolog genetically inactivated encodes a NCU01633 protein is a gene comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 11.",
+        "6. The isolated fungus of claim 1, further comprising a glucoamylase promoter operably linked to a heterologous protein coding sequence.",
+        "7. The isolated fungus of claim 6, wherein the isolated fungus produces a heterologous protein.",
+        "8. The isolated fungus of claim 7, wherein the heterologous protein is a heterologous enzyme, or a chimeric protein.",
+        "9. The isolated fungus of claim 8, wherein the heterologous enzyme is a beta-glucosidase (BG), a glycoside hydrolase, a carbohydrates esterase, a protease, a lipase, a liginase, a cellulase, or a hemicellulase.",
+        "10. The isolated fungus of claim 1, further comprising a mutation in an AmyR gene, a mutation in an CreA gene, or both, wherein the mutations decrease expression and/or activity of AmyR and/or CreA.",
+        "11. A method of expressing a heterologous protein, comprising:\nculturing the isolated fungus of claim 6 under conditions that permit the fungus to express the heterologous protein; thereby expressing the heterologous protein.",
+        "12. The method of claim 11, wherein the isolated fungus is Aspergillus niger (A. niger) or Neurospora crassa (N. crassa).",
+        "13. The method of claim 11, wherein the mstC gene or homolog thereof is genetically inactivated by nonsynonymous mutation or by insertional mutation.",
+        "14. The method of claim 11, wherein the mstC gene genetically inactivated comprises a nucleic acid molecule comprising at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 1, 3, or nt 82 to 1764 of SEQ ID NO: 1, or wherein the mstC homolog is a NCU01633 gene comprising at least 95%, at least 98%, at least 99%, or 100% sequence identity to SEQ ID NO: 9, 10, or nt 652 to 2250 of SEQ ID NO: 10.",
+        "15. The method of claim 11, wherein the mstC gene genetically inactivated encodes a protein comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 2, or wherein the mstC homolog genetically inactivated encodes a NCU01633 protein is a gene comprising at least 95%, at least 98%, at least 99%, or 100% amino acid sequence identity to SEQ ID NO: 11.",
+        "16. The method of claim 11, wherein the heterologous protein is a heterologous enzyme, or a chimeric protein.",
+        "17. The method of claim 11, wherein expression of the heterologous enzyme is increased by at least 2-fold as compared to expression of the heterologous enzyme in a fungus comprising a native mstC gene.",
+        "18. A method of degrading a biomass comprising cellulose, comprising:\nincubating the biomass with the isolated fungus of claim 7 under conditions that permit the fungus to express the heterologous protein from the glucoamylase promoter, thereby degrading the biomass, or\nincubating the biomass with heterologous protein obtained from the isolated fungus of claim 8 under conditions that permit the heterologous protein to degrade the biomass, thereby degrading the biomass.",
+        "19. The method of claim 18, further comprising incubating the biomass with ionic liquids.",
+        "20. A method of increasing glucoamylase production in a fungus, comprising:\nculturing the isolated fungus of claim 1 under conditions that permit the fungus to express native glucoamylase; thereby increasing expression of glucoamylase relative to a fungus with a native mstC gene or homolog thereof."
+    ]
+}

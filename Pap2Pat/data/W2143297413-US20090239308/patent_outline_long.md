@@ -1,0 +1,236 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce nanofluidic techniques
+- describe digital PCR
+- limitations of conventional digital PCR
+- describe copy number variation
+- limitations of whole-genome scanning technologies
+- describe digital array-based CNV determination
+- need for improved methods and systems
+
+## SUMMARY OF THE INVENTION
+
+- introduce nanofluidic systems
+- describe method and system for computing copy number variation
+- partition DNA sample into reaction chambers
+- determine accurate estimates for concentrations
+- compute ratios of concentrations
+- broader range of applicability
+- method of estimating concentration of DNA molecules
+- store number of reaction sites in memory
+- distribute biological sample among reaction sites
+- determine number of reaction sites with DNA molecules
+- compute portion of reaction sites with DNA molecules
+- estimate concentration of DNA molecules
+- compute confidence interval
+- method of estimating concentration of DNA molecule
+- compute standard deviation
+- form probability density function
+- compute confidence interval
+- method of estimating ratio of concentrations
+
+## DETAILED DESCRIPTION OF SPECIFIC EMBODIMENTS
+
+- introduce copy number variation (CNV)
+- describe digital PCR technique
+- explain digital array chip
+- motivate need for accurate CNV analysis
+- introduce embodiments of the present invention
+- describe mathematical framework for CNV analysis
+- formulate CNV problem
+- decompose CNV problem into two parts
+- distinguish from Bayesian approach
+- describe nanofluidic biochip (digital array)
+- illustrate digital array structure
+- explain valve operation
+- describe sample and reagent loading
+- discuss hydration control
+- note variations in digital array design
+- describe digital PCR in microvolumes
+- specify reaction chamber volumes
+- describe sample chamber construction
+- mention BioMark system
+- describe chip fabrication
+- illustrate sample and control channels
+- explain valve operation
+- describe PCR mix loading and thermocycling
+- illustrate fluorescence image of panel
+- explain positive reaction chamber identification
+- describe microfluidic analysis devices
+- mention elastomeric components
+- describe blind channel type devices
+- explain amplification reaction reagents
+- describe matrix device operation
+- formulate true concentration estimation problem
+- introduce Bernoulli experiment concept
+- relate probability of success to true concentration
+- describe digital array panel as finite sampling
+- illustrate universe of reaction chambers
+- define unbiased estimator of probability of success
+- derive sampling distribution of estimator
+- illustrate digital array panel as finite sampling
+- describe confidence interval estimation
+- derive confidence limits
+- derive probability of no molecules in a chamber
+- establish relationship between p and λ
+- derive sampling distribution of sample mean concentration
+- approximate sampling distribution as normal
+- estimate λ and 95% confidence interval
+- perform computer simulations to verify methods
+- simulate universe of digital array chambers
+- assign molecules to reaction chambers
+- compute P and plot histogram
+- estimate λ and compute 95% confidence interval
+- compare simulation results with predicted values
+- illustrate histogram of H
+- illustrate sampling distribution of number of molecules
+- describe method of determining DNA molecule concentration
+- store number of reaction chambers in memory
+- distribute biological sample among reaction chambers
+- determine number of positive reaction chambers
+- compute portion of positive reaction chambers
+- compute standard deviation
+- determine confidence interval
+- compute estimated concentration
+- compute confidence interval for estimated concentration
+- describe alternative method of determining DNA molecule concentration
+- form first probability density function
+- compute confidence interval for first PDF
+- form second probability density function
+- compute confidence interval for second PDF
+- describe method of determining if two samples have different concentrations
+- distribute first biological sample among reaction chambers
+- distribute second biological sample among reaction chambers
+- compute mean concentration ratio and confidence interval for first sample
+- compute mean concentration ratio and confidence interval for second sample
+- determine if confidence intervals overlap
+- describe digital array
+- motivate high copy number variation ratio
+- illustrate confidence interval
+- introduce method 600
+- store reaction chambers
+- distribute biological sample
+- compute mean estimated concentration
+- compute confidence interval
+- compute ratio of mean estimated concentrations
+- compute confidence interval values
+- illustrate alternative method 700
+- form concentration PDFs
+- form ratio PDF
+- compute confidence interval
+- describe ratio PDF formation
+- compute sampling distribution
+- build histograms
+- compute mean and confidence interval
+- describe direct formula approximation
+- define confidence ellipse
+- generalize to asymmetric distributions
+- compute asymmetric confidence interval
+- present equations for copy number variation
+- define variables used in equations
+- explain assumptions and approximations
+- discuss alternative applications
+- describe computer simulations
+- introduce method of forming ratio PDF
+- explain geometric interpretation of Fieller's Theorem
+- describe development of methods and systems
+- discuss study of copy number analysis
+- describe experimental setup
+- explain data analysis
+- present results of spike-in experiment
+- describe analysis system
+- introduce optical imaging system
+- describe optical source
+- explain excitation filter wheel
+- describe excitation shutter
+- discuss fiber bundle and microfluidic device
+- explain optical illuminator
+- describe illumination of microfluidic device
+- discuss applications of fluorescence imaging
+- explain nucleic acid amplification processes
+- describe thermal cycling
+- discuss image capture processes
+- introduce method of imaging microfluidic devices
+- describe capturing image of spatial region
+- explain time frame of image capture
+- discuss advantages of image capture method
+- provide variations and alternatives
+- discuss modifications and alternatives
+- provide examples of embodiments
+- conclude description of methods and systems
+- describe embodiments of the present invention
+- provide methods and systems for imaging microfluidic devices
+- introduce synchronous image capture process
+- describe temperature control options
+- illustrate thermal controller
+- describe thermal transfer device
+- explain force application to thermal transfer device
+- describe vacuum level detection
+- introduce mechanical or electromechanical positioning devices
+- describe automatic control and monitoring
+- provide unit and system comprising thermal control device
+- introduce temperature sensors
+- describe thermocouple
+- explain resistance-based temperature sensing
+- introduce thermo-chromatic materials
+- describe infrared camera temperature detection
+- introduce pyroelectric sensors
+- describe other electrical phenomena for temperature detection
+- introduce imaging system operation
+- describe microfluidic device placement and alignment
+- explain fiducial marking registration
+- describe carrier adjustments and optical element positioning
+- introduce computer and database
+- describe DNA concentration estimation and confidence intervals
+- introduce fluorescent, chemiluminescent, or optical signal collection
+- describe first lens system and optical properties
+- introduce emission shutter
+- describe optical filter device and emission filter wheel
+- explain filter positioning and spectral bandwidth
+- introduce intercalation dyes for double-stranded DNA detection
+- describe second lens system and detector
+- introduce detector array and pixel size selection
+- describe detection strategies for microfluidic devices
+- list signal types detectable by the system
+- describe detection methodologies
+- list detection methods
+- define detection section
+- describe detection section
+- list detection components
+- describe optical detector
+- describe microfabricated detectors
+- describe external detectors
+- describe CCD camera embodiment
+- describe optical path
+- discuss etendue considerations
+- describe system magnification
+- discuss object-side NA considerations
+- describe 1:1 optical system
+- discuss cost constraints
+- describe system magnification design
+- discuss XY-plane spacing and size
+- describe Z-axis extension
+- discuss object-side NA and depth of focus
+- describe lower object-side NA embodiment
+- discuss system magnification and NA
+- describe larger detector embodiment
+- discuss etendue considerations
+- describe detector device
+- describe low NA lens system
+- describe detector system
+- list light sources
+- describe non-optical detection approaches
+- list intercalation dyes
+- describe 1:1 imaging system
+- describe image detection device
+- discuss numerical aperture
+- describe spatial resolution
+- discuss pixel size and detector array
+- describe optical imaging system parameters
+- describe working distance
+- describe RMS spot diameter
+- describe illumination variation
+- describe overall length of optical imaging system
+

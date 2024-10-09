@@ -1,0 +1,118 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce neural prosthetics
+- limitations of FES
+- benefits of FES
+- limitations of existing FES systems
+- need for nerve signal conduction block
+- limitations of existing techniques
+
+## SUMMARY OF THE INVENTION
+
+- introduce neural prosthetic device
+- describe ion-selective membranes
+- outline method of nerve stimulation or inhibition
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce electrochemical artificial nerve activation and inhibition technique
+- describe ion-selective membrane (ISM) for modulating ion concentrations
+- explain low-threshold electrochemical stimulation technique
+- describe on-demand nerve blocking for chronic disease states
+- introduce implantable neuroprosthetic device
+- describe in-situ control of ion concentration via ion-selective electrode
+- explain local nerve activation and inactivation
+- describe hybrid approach using sciatic nerve and gastrocnemius muscle
+- measure force induced in muscle using force transducer
+- measure muscle response using electromyography (EMG)
+- determine effect of modulating Ca2+ ion concentration on electrical threshold
+- determine effect of modulating K+ and Na+ ion concentrations on nerve signal propagation
+- describe microfabricated implant device with ion-selective electrodes
+- show flexible ion-selective microelectrode array device in FIGS. 1A-1B
+- describe Ca2+ and K+ ion-selective membranes
+- explain current applied across ion-selective membrane
+- describe individually controlled ion-selective electrodes
+- explain hypersensitive zone creation in motor nerve
+- explain inhibited/blocked zone creation in sensory nerves
+- describe use in highly space-constrained regions of the body
+- describe tripolar electrode arrangement
+- explain role of potassium ion concentration in neural activity
+- explain role of calcium ion concentration in neural activity
+- describe technique to actively modulate ion concentration around nerve
+- describe ion-selective electrodes (ISE) with ion-selective membrane
+- show exemplary embodiment of invention in FIG. 2A
+- describe ion depletion and stimulation modes of operation
+- describe application of electrical stimulus current
+- describe use of K+ ion-selective electrode for nerve blocking
+- show experimental setup in FIG. 2B
+- describe measurement of muscle contraction force and compound action potential
+- describe typical electrical stimulus used
+- show results of Ca2+ ion depletion on muscle contraction force in FIG. 3A-3C
+- describe spontaneous activity of nerve without external electrical pulse
+- describe fast ion depletion by increasing ion depletion current
+- describe avoidance of tetany by adjusting depletion time
+- describe opposite effect of K+ ion depletion on electrical stimulation
+- show results of K+ ion depletion on muscle response in FIGS. 4A-4B
+- describe characterization of ion-selective electrode in-situ
+- show measurement of Ca2+ ion depletion over time in FIG. 5
+- describe flexible ion-selective microelectrode array device fabrication
+- describe use of PDMS/PI combination for biocompatibility and flexibility
+- describe advantages of flexible microelectrode array device
+- show detailed view of flexible ion-selective microelectrode array device in FIG. 6A
+- describe three-layer device with printed electrode array, PDMS layer, and polyimide layer
+- describe alternative embodiment using track-etched polycarbonate membrane or porous nylon membrane
+- describe planar microelectrode array device without ion reservoir
+- show planar microelectrode array device in FIG. 7A
+- describe tripolar electrode configuration for reducing threshold current and spread of stimulus current
+- introduce nerve excitation experiment
+- discuss Ringer's solution and perineurium
+- describe Na+ ion-selective membrane experiment
+- discuss graded blocking of sciatic nerve
+- describe K+ ion depletion experiment
+- discuss cation-selective membrane experiment
+- describe blocking state modulation
+- discuss nerve blocking reversibility
+- describe potential applications of nerve conduction block
+- discuss limitations of ion-selective membrane approach
+- describe in-vivo reliability and safety considerations
+- discuss electrochemical reduction/oxidation processes
+- describe pH shift considerations
+- discuss flexible electrode system advantages
+- describe potential applications of ion-selective membranes
+- introduce electrical current stimulation threshold measurement
+- describe Ca2+ ion-selective membrane experiment
+- discuss threshold reduction with ion depletion
+- describe influence of ion depletion time on threshold
+- discuss control experiment with PVC membrane
+- describe effect of sub-threshold current on threshold
+- discuss polarity switching experiment
+- describe threshold reduction with ion depletion current
+- discuss ion storage capacity limitations
+- describe potential solution to ion storage capacity issue
+- summarize in vitro experimental results
+- discuss significance of threshold reduction
+- describe potential applications of ion-selective membrane technology
+- discuss role of Ca2+ ions in nerve excitation
+- describe confocal microscopy experiment
+- discuss Ca2+ ion concentration change imaging
+- describe stimulation device with d.c. nerve current block
+- discuss blocking current application
+- describe Ca2+ ISM experiment
+- discuss blocking threshold reduction
+- describe recovery to previous twitch amplitude
+- discuss Na+ and K+ ISM experiments
+- describe limitations of Na+ and K+ depletion
+- discuss significance of Ca2+ ion concentration modulation
+- describe potential applications of ion-selective membrane technology
+- discuss advantages of microfabricated ISM
+- describe potential for flexible electrode system
+- discuss broad roles of ions in cellular signaling
+- describe potential applications of ion-selective membranes
+- discuss significance of invention
+- describe potential implications for neural prosthetic devices
+- discuss potential for low-power, compact devices
+- describe potential for electrochemical nerve manipulation technology
+- discuss scope of invention
+

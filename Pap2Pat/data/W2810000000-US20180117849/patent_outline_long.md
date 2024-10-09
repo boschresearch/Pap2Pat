@@ -1,0 +1,257 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### 1. Field of the Invention
+
+- define field of invention
+
+### 2. Brief Description of the Related Art
+
+- introduce 3D printing
+- limitations of existing 3D printers
+- motivate color gamut restriction
+- motivate realistic translucency reproduction
+- summarize prior art on color fabrication
+- summarize prior art on translucency fabrication
+- describe EP 3023229 A1 and GB 1512434.0
+- identify technical problem
+
+## SUMMARY OF THE INVENTION
+
+- propose 3D joint color and translucency printing method
+- use non-transparent and transparent printing materials
+- define printing object
+- describe 3D printing process
+- generate model of printing object
+- encode color and translucency information
+- define RGBA signal
+- assign color and translucency to printing object
+- generate input data
+- encode color and translucency reproduction
+- provide data format examples
+- generate control data for 3D printing device
+- encode color and translucency vector
+- describe 3D joint color and translucency printing process
+- use polymerisation-based process
+- use printing inks
+- describe support material
+- use multiple non-transparent printing materials
+- define color gamut
+- determine arrangement of printing materials
+- reproduce color and translucency
+- generate machine-readable data
+- instruct printing device
+- improve color and translucency reproduction
+- compare to EP 3023229 A1 and GB 1512434.0
+- jointly reproduce color and translucency
+- preserve color and translucency
+- determine voxel-based arrangement
+- reproduce perceptual translucency cues
+- avoid BSSRDF measurement and processing
+- take benefit from human perception of translucency
+- determine voxel-based representation
+- assign color and translucency information
+- assign color information to surface layer voxel set
+- assign translucency information to all voxels
+- convert RGBA vector to printing material color and translucency vector
+- map RGBA vector to CMYKγ vector
+- adjust CMYK parameters for translucency reproduction
+- adjust γ parameter for color reproduction
+- use reference non-transparent printing material color
+- apply color-management techniques
+- discretize geometry of printing object
+- determine surface voxels
+- transform color value and translucency information
+- transform into printer-specific printing material color and translucency vector
+- assign printing material to voxel
+- determine non-transparent printing material
+- determine transparent printing material
+- use half-toning algorithm
+- summarize assignment of printing material to voxels
+- motivate half-toning algorithm
+- describe printing material color quantization
+- explain error diffusion step
+- summarize transformation of color value and translucency information
+- describe digital processing chain
+- explain control of printing process
+- describe construction of printing object
+- assign RGBA value to each voxel
+- describe advantage of assigning color and translucency information
+- summarize determination of voxel-based representation
+- test if voxel is intersected by surface of printing object
+- assign desired color value and translucency information
+- describe sub-objects
+- map texture- and shape-based representation onto surface voxel set
+- assign object identifier to voxel
+- describe surface section determination
+- determine voxel bounding box
+- evaluate surface intersection criterion
+- describe fulfillment of surface intersection criterion
+- project voxel centre into area of surface section
+- determine barycentric coordinates
+- describe alternative surface intersection criterion
+- select principal axes
+- determine if voxel centre projects into surface section
+- describe advantage of computationally efficient determination
+- interpolate color value and translucency information
+- determine location of projected centre of voxel
+- describe object prioritization
+- determine voxel-based representation for each object
+- prioritize distinct printing objects
+- flatten hierarchy
+- assign priority to object
+- determine object voxels and object exterior voxels
+- test if voxel is object voxel or outside object
+- classify voxel as object voxel or exterior voxel
+- use flooding approach
+- evaluate flooding criteria
+- determine surface layer voxel set and interior voxel set
+- assign color value and translucency information to surface voxels
+- assign color value and translucency information to interior voxels
+- describe near-surface interior voxel set
+- assign color value and translucency information from nearest surface voxel
+- describe alternative assignment of color value and translucency information
+- introduce method for assigning color values and translucency information to interior voxels
+- describe tie-breaking algorithm for determining nearest surface voxel
+- explain assignment of color value and translucency information to near-surface interior voxels
+- describe alternative assignment of color value and translucency information to remaining interior voxels
+- define near-surface interior voxel set
+- describe two-step process for determining nearest surface voxel
+- explain first step of two-step process: determining z-distance to nearest surface voxel
+- describe second step of two-step process: using 2D distance transformation
+- explain alternative methods for assigning translucency values to interior voxels
+- describe use of voxel arrays for fast computation of nearest surface voxel
+- explain determination of nearest surface voxel slice by slice
+- describe independent invention of method for determining nearest surface voxel
+- explain transformation of color value information into perceptually uniform color space
+- describe transformation of translucency information into perceptually uniform translucency space
+- define perceptually uniform color space and translucency space
+- explain measurement of perceptual differences in color and translucency spaces
+- describe transformation from RGB color space to CIELAB color space
+- explain transformation from A translucency space to β translucency space
+- describe alternative transformation schemes
+- explain optional transformation from perceptually non-uniform space to perceptually uniform space
+- describe transformation of color value and translucency information into printer-specific printing material color and translucency vector
+- explain adaptation of translucency component as a function of light transport effects
+- describe first operation for adapting translucency component
+- describe second operation for adapting translucency component
+- explain selection of preset value for adaptation
+- describe benefits of adaptation for increasing lateral light transport and perceived translucency gamut
+- explain determination of printer-specific printing material color and translucency vector based on predetermined assignment
+- describe assignment of color value and translucency information to printer-specific printing material color and translucency vectors
+- explain approach to determine transformation from CIELABβ vectors to CMYKγ vectors
+- describe obtaining training prints and measuring color and translucency values
+- explain fitting physical or empirical model to measurements
+- describe inverting predicting function to obtain CMYKγ values
+- explain gamut mapping transformation for non-surjective transformations
+- describe strategies for selecting CMYKγ values from multiple possible values
+- explain Gray Component Replacement strategy
+- describe Under Color Removal strategy
+- explain benefits of proposed method for computationally effective and fast assignment of color values and translucency information
+- describe advantages of using 2D distance transformation
+- explain benefits of transforming color value and translucency information into perceptually uniform spaces
+- describe benefits of adapting translucency component as a function of light transport effects
+- explain benefits of using printer-specific printing material color and translucency vectors
+- describe benefits of proposed method for increasing lateral light transport and perceived translucency gamut
+- explain benefits of proposed method for achieving high color accuracy
+- describe benefits of proposed method for reducing computational time and memory requirements
+- explain benefits of proposed method for providing a better computationally performance
+- describe benefits of proposed method for allowing points to be distributed evenly over the surface area of the printing object
+- explain benefits of proposed method for providing a desired color and translucency reproduction
+- introduce color-translucency space
+- define color component and translucency component
+- describe transformation from CIELABβ space to CMYKγ space
+- introduce assignment of color value and translucency information
+- describe mapping of color component into mapped color component
+- define node in color-translucency space
+- describe printer predicting function
+- determine node-specific sets of printer-specific printing material color and translucency vectors
+- describe reference set of printable colors
+- describe determination of node-specific sets using printer predicting function
+- describe assignment of printer-specific printing material color and translucency vector to node
+- describe interpolation between printer-specific printing material color and translucency vectors
+- introduce gamut correction function
+- describe application of gamut correction function
+- describe smoothing of assignment
+- describe voxel-based representation of printing object
+- assign printing material to voxel based on desired color and translucency reproduction
+- describe error diffusion algorithm
+- describe printing material color quantization
+- describe half-toning algorithm
+- describe layered half-toning algorithm
+- describe nibbling half-toning algorithm
+- describe contoning algorithm
+- replace non-transparent printing material with transparent printing material
+- describe replacement criterion
+- describe probabilistic replacement
+- describe data processing system
+- describe computer program product
+- describe program storage medium
+- describe computer implemented method
+- describe 3D joint color and translucency printing device
+- describe means for printing non-transparent printing material
+- describe means for printing transparent printing material
+- describe control unit
+- describe arrangement of printing materials
+- describe desired color reproduction
+- describe desired translucency reproduction
+- describe printing object
+- describe core of printing object
+- describe clear and white material
+- describe CMYK vector
+- describe distance to nearest surface voxel
+- describe threshold value
+- describe color gamut volume
+- describe arrangement of color materials
+- describe center portion of printing object
+- describe surface portion of printing object
+- describe colored materials
+- describe white material
+- describe clear material
+- describe advantages of proposed method
+- conclude summary of invention
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce 3D joint color and translucency printing device
+- describe print heads and printing materials
+- define reference coordinate system
+- describe printing object with transparent printing material
+- introduce control unit for print heads
+- describe arrangement of printing materials for color and translucency reproduction
+- show voxels of printing object
+- define surface voxels and interior voxels
+- describe near surface interior layer voxel set
+- show transparent printing material voxels
+- describe optical path to interior voxel
+- introduce method for 3D joint color and translucency printing
+- generate input data with shape- and texture-based representation
+- describe RGBA vector with color and translucency information
+- perform voxelization
+- assign color value and translucency information to surface voxels
+- determine bounding box of surface section
+- test voxel intersection with surface
+- assign object identifier and RGBA vector to voxel
+- classify object voxels and object exterior voxels
+- assign color values and translucency information to interior voxels
+- determine nearest surface voxel to interior voxel
+- assign color value and translucency information to interior voxel
+- transform color values and translucency information to CIELABβ space
+- transform CIELABβ vector to printer-specific CMYKγ vector
+- adapt translucency component of CMYKγ vector
+- perform layer construction and half-toning
+- assign non-transparent printing material to each voxel
+- replace non-transparent printing material with transparent printing material
+- control printing process as a function of voxel assignments
+- show x, y-slice of printing object after step S3
+- show x, y-slice of printing object after step S4a
+- show x, y-slice of printing object after step S4b
+- show color gamuts G0 and Gγ
+- map color gamut Gγ into color gamut G0
+- introduce alternative embodiment of method
+- generate input data as RGBA vectors
+- perform voxelization and assign color and translucency information
+- transform color value and translucency information to CMYKγ vector
+- assign printing material to voxel and control printing process
+

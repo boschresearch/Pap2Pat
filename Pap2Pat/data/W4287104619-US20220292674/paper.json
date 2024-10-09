@@ -1,0 +1,125 @@
+{
+    "id": "https://semopenalex.org/work/W4287104619",
+    "authors": [
+        "Martin C. Stumpe",
+        "Jagadish Venkataraman",
+        "Nathaniel Braman",
+        "Caleb Willis",
+        "Jacob W. H. Gordon",
+        "Emery T. Goossens"
+    ],
+    "title": "Deep Orthogonal Fusion: Multimodal Prognostic Biomarker Discovery  Integrating Radiology, Pathology, Genomic, and Clinical Data",
+    "date": "2021-07-01",
+    "abstract": "Clinical decision-making in oncology involves multimodal data such as radiology scans, molecular profiling, histopathology slides, and clinical factors. Despite the importance of these modalities individually, no deep learning framework to date has combined them all to predict patient prognosis. Here, we predict the overall survival (OS) of glioma patients from diverse multimodal data with a Deep Orthogonal Fusion (DOF) model. The model learns to combine information from multiparametric MRI exams, biopsy-based modalities (such as H&E slide images and/or DNA sequencing), and clinical variables into a comprehensive multimodal risk score. Prognostic embeddings from each modality are learned and combined via attention-gated tensor fusion. To maximize the information gleaned from each modality, we introduce a multimodal orthogonalization (MMO) loss term that increases model performance by incentivizing constituent embeddings to be more complementary. DOF predicts OS in glioma patients with a median C-index of 0.788 +/- 0.067, significantly outperforming (p=0.023) the best performing unimodal model with a median C-index of 0.718 +/- 0.064. The prognostic model significantly stratifies glioma patients by OS within clinical subsets, adding further granularity to prognostic clinical grading and molecular subtyping.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Cancer diagnosis and treatment plans are guided by multiple streams of data acquired from several modalities, such as radiology scans, molecular profiling, histology slides, and clinical variables. Each characterizes unique aspects of tumor biology and, collectively, they help clinicians understand patient prognosis and assess therapeutic options. Advances in molecular profiling techniques have enabled the discovery of prognostic gene signatures, bringing precision medicine to the forefront of clinical practice [1]. More recently, computational techniques in the field of radiology have identified potential imaging-based phenotypes of treatment response and patient survival. Such approaches leverage large sets of explicitly designed image features (commonly known as radiomics [2]) or entail the novel discovery of image patterns by optimizing highly parameterized deep learning models such as convolutional neural networks (CNN) [3] for prediction. Along similar lines, the digitization of histopathology slides has opened new avenues for tissue-based assays that can stratify patients by risk from H&E slide images alone [4]. Given the complementary nature of these various modalities in comprehensive clinical assessment, we hypothesize that their combination in a rigorous machine learning framework may predict patient outcomes more robustly than qualitative clinical assessment or unimodal strategies.",
+                "Glioma is an intuitive candidate for deep learning-based multimodal biomarkers owing to the presence of well-characterized prognostic information across modalities [5], as well as its severity [6]. Gliomas can be subdivided by their malignancy into histological grades II-IV [5]. Grades differ in their morphologic and molecular heterogeneity [7], which correspond to treatment resistance and short-term recurrence [8,9]. Quantitative analysis of glioma [10] and its tumor habitat [11] on MRI has demonstrated strong prognostic potential, as well as complex interactions with genotype [12] and clinical variables [13].",
+                "Most deep multimodal prediction strategies to date have focused on the fusion of biopsy-based modalities [14,15,16]. For instance, previous work integrating molecular data with pathology analysis via CNN or graph convolutional neural networks (GCN) has shown that a deep, multimodal approach improves prognosis prediction in glioma patients [14,15]. Likewise, Cheerla et al. integrated histology, clinical, and sequencing data across cancer types by condensing each to a correlated prognostic feature representation [16]. Multimodal research involving radiology has been predominantly correlative in nature [13,12]. Some have explored late-stage fusion approaches combining feature-based representations from radiology with similar pathology [17] or genomic features [18] to predict recurrence. While promising, these strategies rely on hand-crafted feature sets and simple multimodal classifiers that likely limit their ability to learn complex prognostic interactions between modalities and realize the full additive benefit of integrating diverse clinical modalities.",
+                "To our knowledge, no study to date has combined radiology, pathology, and genomic data within a single deep learning framework for outcome prediction or patient stratification. Doing so requires overcoming several challenges. First, owing to the difficulty of assembling multimodal datasets with corresponding outcome data in large quantities, fusion schemes must be highly data efficient in learning complex multimodal interactions. Second, the presence of strongly correlated prognostic signals between modalities [16] can create redundancy and hinder model performance.",
+                "In this paper, we introduce a deep learning framework that combines radiologic, histologic, genomic, and clinical data into a fused prognostic risk score. Using a novel technique referred to as Deep Orthogonal Fusion (DOF), we train models using a Multimodal Orthogonalization (MMO) loss function to maximize the independent contribution of each data modality, effectively improving predictive performance. Our approach, depicted in Fig. 1, first trains unimodal embeddings for overall survival (OS) prediction through a Cox partial likelihood loss function. Next, these embeddings are combined through an attention-gated tensor fusion to capture all possible interactions between each data modality. Fusion models are trained simultaneously to predict OS and minimize the correlation between unimodal embeddings. We emphasize the following contributions:",
+                "Deep Fusion of Radiology, Pathology, and Omics Data: We present a powerful, data-efficient framework for combining oncologic data across modalities. Our approach enabled a previously unexplored deep integration of radiology with tissue-based modalities and clinical variables for patient risk stratification. This fusion model significantly improved upon unimodal deep learning models. In particular, we found that integrating radiology into deep multimodal models, which is under-explored in previous prognostic studies, conferred the single greatest performance increase. This finding suggests the presence of independent, complementary prognostic information between radiology and biopsybased modalities and warrants their combination in future prognostic studies.",
+                "MMO: To mitigate the effect of inherent correlations between data modalities, we present an MMO loss function that penalizes correlation between unimodal embeddings and encourages each to provide independent prognostic information. We find that this training scheme, which we call DOF, improves prediction by learning and fusing disentangled, prognostic representations from each modality. DOF was also found to outperform a fusion scheme that enforces correlated representations between modalities [16], emphasizing that the dissimilarity of these clinical data streams is crucial to their collective strength.",
+                "Multi-parametric Radiology FeatureNet: A neural network architecture that can fuse CNN-extracted deep features from local tumor regions on multiple image sequences (e.g., Gd-T1w and T2w-FLAIR scans) with global hand-crafted radiomics features extracted across the full 3D region-of-interest.",
+                "Independent prognostic biomarker of OS in glioma patients: Using 15-fold Monte Carlo cross-validation with a 20% holdout test set, we evaluate deep fusion models to predict glioma prognosis. We compare this multimodal risk score with existing prognostic clinical subsets and biomarkers (grade, IDH status) and investigate its prognostic value within these outcome-associated groups."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methodology",
+            "paragraphs": [
+                "Let X be a training minibatch of data for N patients, each containing M modalities such that X = [x 1 , x 2 , ..., x M ]. For each modality m, x m includes data from for N patients. \u03a6 m denotes a trainable unimodal network, which accepts x m and generates a deep embedding"
+            ],
+            "subsections": [
+                {
+                    "title": "Multimodal Fusion",
+                    "paragraphs": [
+                        "When M > 1, we combine embeddings from each modality in a multimodal fusion network. For each h m , an attention mechanism is applied to control its expressiveness based on information from the other modalities. An additional fully connected layer results in h S m of length l 2 . Attention weights of length l 2 are obtained through a bilinear transformation of h m with all other embeddings (denoted as H m ), then applied to h S m to yield the attention-gated embedding:",
+                        "To capture all possible interactions between modalities, we combine attentionweighted embeddings through an outer product between modalities, known as tensor fusion [19]. A value of 1 is also included in each vector, allowing for partial interactions between modalities and for the constituent unimodal embeddings to be retained. The output matrix",
+                        "is an M -dimensional hypercube of all multimodal interactions with sides of length l 2 + 1. Fig. 1 depicts F for the fusion of radiology, pathology, and genomic data. It contains subregions corresponding to unaltered unimodal embeddings, pairwise fusions between 2 modalities, and trilinear fusion between all three of the modalities. A final set of fully connected layers, denoted by \u03a6 F , is applied to tensor fusion features for a final fused embedding h F = \u03a6 F (F )."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "MMO Loss",
+                    "paragraphs": [
+                        "To address the shortcoming of multimodal models converging to correlated predictors, we introduce MMO loss. Inspired by Orthogonal Low-rank Embedding [20], we stipulate that unimodal embeddings preceding fusion should be orthogonal. This criterion enforces that each modality introduced contributes unique information to outcome prediction, rather than relying on signal redundancy between modalities. Each \u03a6 m is updated through MMO loss to yield embeddings that better complement other modalities. Let H \u2208 R l1xM * N be the set of embeddings from all modalities. MMO loss is computed as",
+                        "where || \u2022 || * denotes the matrix nuclear norm (i.e., the sum of the matrix singular values). This loss is the difference between the sum of nuclear norms per embedding and the nuclear norm of all embeddings combined. It penalizes the scenario where the variance of two modalities separately is decreased when combined and minimized when all unimodal embeddings are fully orthogonal. The per-modality norm is bounded to a minimum of 1 to prevent the collapse of embedding features to zero."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cox Partial Likelihood Loss",
+                    "paragraphs": [
+                        "The final layer of each network, parameterized by \u03b2, is a fully connected layer with a single unit. This output functions as a Cox proportional hazards model using the deep embedding from the previous layer, h, as its covariates. This final layer's output, \u03b8, is the log hazard ratio, which is used as a risk score. The log hazard ratio for patient i is denoted as \u03b8 i = h T i * \u03b2. We define the negative log likelihood L pl as our cost function",
+                        "where t \u2208 R N x1 indicates the time to date of last follow up. The event vector, E \u2208 {0, 1} N x1 , equals 1 if an event was observed (death) or 0 if a patient was censored (still alive) at time of last follow up. Each patient i with an observed event is compared against all patients whose observation time was greater than or equal to t i . Networks are trained using the final loss L which is a linear combination of the two loss functions specified above",
+                        "where \u03b3 is a scalar weighting the contribution of MMO loss relative to Cox partial likelihood loss. When training unimodal networks, \u03b3 is always zero. Performance for various values of \u03b3 are included in the Table S4."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Modality-specific Networks for Outcome Prediction",
+                    "paragraphs": [
+                        "Radiology: A multiple-input CNN was designed to incorporate multiparametric MRI data and global lesion measurements, shown in Fig. S1. The backbone of the network is a VGG-19 CNN [21] with batch normalization, substituting the final max pooling layer with a 4x4 adaptive average pooling. Two pre-trained [22] CNN branches separately extract features from Gd-T1w and T2w-FLAIR images, which are then concatenated and passed through a fully connected layer.",
+                        "A third branch passes hand-crafted features (described in section 3) through a similar fully connected layer. Concatenated embeddings from all branches are fed to 2 additional fully connected layers. All fully connected layers preceding the final embedding layer have 128 units. Histology, genomic, and clinical data: We reused the models proposed in [14] -a pre-trained VGG-19 CNN with pretrained convolutional layers for Histology and a Self-Normalizing Neural Network (SNN) for genomic data. We also use this SNN for analysis of clinical data, which was not explored in [14]. "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Experimental Details",
+            "paragraphs": [
+                "Radiology: 176 patients (see patient selection in Fig. S2) with Gd-T1w and T2w-FLAIR scans from the TCGA-GBM [23] and TCGA-LGG [24] studies were obtained from TCIA [25] and annotated by 7 radiologists to delineate the enhancing lesion and edema region. Volumes were registered to the MNI-ICBM standardized brain atlas with 1 mm isotropic resolution, processed with N4 bias correction, and intensity normalized. 96x96x3 patches were generated from matching regions of Gd-T1w and T2w-FLAIR images within the enhancing lesion. For each patient, 4 samples were generated from four even quadrants of the tumor along the z-axis. Patch slice position was randomized in unimodal training and fixed to the middles of quadrants during inference and fusion network training. Nine features including size, shape, and intensity measures were extracted separately from Gd-T1w and T2w-FLAIR images, and summarized in three fashions for a total of 56 handcrafted features, listed in Table S1.",
+                "Pathology and Genomics: We obtained 1024\u00d71024 normalized regions-ofinterest (ROIs) and DNA sequencing data curated by [15]. Each patient had 1-3 ROIs from diagnostic H&E slides, totaling 372 images. DNA data consisted of 80 features including mutational status and copy number variation (Table S2).",
+                "Clinical information: 14 clinical features were included into an SNN for the prediction of prognosis. The feature set included demographic and treatment details, as well as subjective histological subtype (see Table S3).",
+                "Implementation Details: The embedding size for unimodal networks, l 1 , was set to 32. Pre-fusion scaled embedding size, l 2 , was 32 for M =2, 16 for M =3, and 8 for M =4. Post-fusion fully connected layers consisted of 128 units each. The final layer of each network had a single unit with sigmoid activation, but its outputs were rescaled between -3 and 3 to function as a prognostic risk score. Unimodal networks were trained for 50 epochs with linear learning rate decay, while multimodal networks were trained for 30 epochs with learning rate decay beginning at the 10th epoch. When training multimodal networks, the unimodal embedding layers were frozen for 5 epochs to train the fusion layers only, then unfrozen for joint training of embeddings and fusion layers.",
+                "Statistical Analysis: All models were trained via 15-fold Monte Carlo crossvalidation with 20% holdout using the patient-level splits provided in [15]. The primary performance metric was the median observed concordance index (Cindex) across folds, a global metric of prognostic model discriminant power. We evaluated all possible combinations of a patient's data (see sampling strategy in Fig. 2) and used the 75th percentile of predicted risk score as their overall prediction. C-indexes of the best-performing unimodal model and the DOF multimodal model were compared with a Mann-Whitney U test [26]. Binary low/high-risk groups were derived from the risk scores, where a risk score >0 corresponded to high risk. For Kaplan-Meier (KM) curves and calculation of hazard ratio (HR), patient-level risk scores were pooled across validation folds."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Results and Discussion",
+            "paragraphs": [
+                "Genomic-and pathology-only model performance metrics are practically similar (Table 1). However, the CNN-only (C-index=0.687 \u00b1 0.067) and feature-only (C-index=0.653 \u00b1 0.057) configurations of the radiology model underperform relative to the aforementioned unimodal models. Combining the radiology CNN features with the handcrafted features results in the strongest unimodal model. In contrast, clinical features are the least prognostic unimodal model.",
+                "Deep fusion models integrating radiology outperform individual unimodal models, naive ensembles of unimodal models, as well as fusions of only clinical and/or biopsy-derived modalities. The full fusion model (C-index=0.775 \u00b1 0.061) achieves the best performance when trained with Cox loss [27] alone, second only to the Rad+Path+Gen model trained with MMO loss. Naive late fusion ensembles (i.e., averaging unimodal risk scores) exhibit inferior performance for Rad+Path+Gen with (C-index=0.735 \u00b1 0.063) and without (C-index=0.739 \u00b1 0.062) clinical features, confirming the benefits of deep fusion.   The addition of MMO loss when training these deep fusion models consistently improves their performance at five different weightings (Table S4), with best performance for both at \u03b3 = .5. When all fusion models are trained at this weighting, 8 of 11 improve in performance. DOF combining radiology, pathology, and genomic data predicts glioma survival best overall with a median C-index of 0.788 \u00b1 0.067, a significant increase over the best unimodal model (p=0.023).",
+                "An ablation study was conducted to investigate the contributions of components of the fusion module (modality attention-gating and tensor fusion). We found that a configuration including both yields the best performance, but that strong results can also be achieved with a simplified fusion module (Table S5).",
+                "In Fig. 3, KM plots show that the stratification of patients by OS in risk groups derived from this model perform comparably to established clinical markers. In Fig. 4, risk groups further stratify OS within grade and IDH status groups. In sum, these results suggest that the DOF model provides useful prognostic value beyond existing clinical subsets and/or individual biomarkers.",
+                "To further benchmark our approach, we implemented the fusion scheme of [16], who combined pathology images, DNA, miRNA, and clinical data, which we further modified to also include radiology data. The network and learning approach is described in-depth in Table S6. In contrast to DOF, [16] instead seeks to maximize the correlation between modality embeddings prior to prediction. A model combining radiology, pathology, and genomic data achieved C-index=0.730 \u00b1 0.05, while a model excluding the added radiology arm stratified patients by OS with C-index=0.715 \u00b1 0.05."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conclusions",
+            "paragraphs": [
+                "We present DOF, a data efficient scheme for the novel fusion of radiology, histology, genomic, and clinical data for multimodal prognostic biomarker discovery. The integration of multi-dimensional data from biopsy-based modalities and radiology strongly boosts the ability to stratify glioma patients by OS. The addition of a novel MMO loss component, which forces unimodal embeddings to provide independent and complementary information to the fused prediction, further improves prognostic performance. Our DOF model incorporating radiology, histology, and genomic data significantly stratifies glioma patients by OS within outcome-associated subsets, offering additional granularity to routine clinical markers. DOF can be applied to any number of cancer domains, modality combinations, or new clinical endpoints including treatment response."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Supplemental Information",
+            "paragraphs": [
+                "Table S6. Correlation-based deep fusion framework [16], adapted to include radiology."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "DNA",
+            "paragraphs": [
+                "Fully connected (FC) layer. Unmodified from [16]. Pathology Squeezenet applied to histology ROIs, followed by a FC layer. While [16] trained from scratch, we found better results when using pretrained ImageNet weights and freezing the convolutional layers Radiology Not included in [16]. We applied pre-trained, frozen squeezenet to Gd-T1w and T2w-FLAIR ROIs. FC layers were applied to CNN-extracted features and radiomics features, yielding 128 features from each. These were concatenated and processed by another FC layer Fusion",
+                "The output of each unimodal arm is a feature vector of length 256, which were averaged together. The averaged feature representation is then processed by a 10-layer highway network. Unmodified from [16] "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Loss",
+            "paragraphs": [
+                "Combination of Cox proportional hazard-based loss for prognosis prediction and similarity loss that enforces correlated representations between modalities. Unmodified from [16].",
+                "*All changes from [16] made by us are noted specifically above. Any further differences from the description of [16] are due to discrepancies between the paper and its codebase."
+            ],
+            "subsections": []
+        }
+    ]
+}

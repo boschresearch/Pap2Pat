@@ -1,0 +1,147 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce reinforcement learning
+
+## SUMMARY
+
+- describe reinforcement learning system
+- motivate neural network system
+- describe environment representation neural network
+- describe action selection policy neural network
+- train neural network system with auxiliary neural networks
+- describe auxiliary neural networks
+- train environment representation neural network
+- generate predictive internal representation
+- describe method of training environment representation neural network
+- receive current and future observation inputs
+- generate future latent representation
+- process current observation input
+- generate predicted future latent representation
+- evaluate objective function
+- determine update to environment representation parameters
+- generate future internal representation
+- generate predicted future internal representation
+- determine update to latent embedding network parameters
+- control agent using fixed action selection policy
+- process current internal representation
+- determine reinforcement learning loss
+- determine update to policy parameters
+- backpropagate reinforcement learning loss
+
+## DETAILED DESCRIPTION
+
+- introduce reinforcement learning system
+- describe agent interacting with environment
+- define observation and action
+- specify environment types (real-world, simulated)
+- describe mechanical agent (robot, vehicle)
+- list observation types (images, object position, sensor data)
+- describe action types (control inputs, torques)
+- introduce simulated environment
+- describe simulated observations and actions
+- specify other environment types (chemical synthesis, drug design)
+- describe agent types (static/mobile software agent)
+- specify environment types (integrated circuit routing, data packet communications)
+- describe observations and actions in these environments
+- introduce real-world environment with agent controlling equipment
+- describe observations and actions in this environment
+- introduce real-world environment with agent managing task distribution
+- describe actions in this environment
+- describe reward system
+- specify reward types (scalar numerical value, progress toward goal)
+- introduce FIG. 1 (reinforcement learning system 100)
+- describe agent control subsystem 160
+- introduce environment representation neural network 110
+- describe action selection policy neural network 130
+- introduce value prediction neural network
+- describe training engine 116
+- describe network parameters 118
+- describe auxiliary neural networks 150A-D
+- describe environment representation neural network processing
+- describe action selection policy neural network processing
+- describe value prediction neural network processing
+- describe action selection output
+- describe probability distribution over possible actions
+- describe optimal action identification
+- describe Q-value calculation
+- describe return calculation
+- describe exploration policy
+- describe value prediction calculation
+- describe recurrent neural network architecture
+- describe hidden state update
+- describe internal representation generation
+- describe action selection policy neural network architecture
+- describe value prediction neural network architecture
+- describe training engine 116 processing
+- describe trajectory buffer 114
+- describe on-policy reinforcement learning technique
+- describe off-policy reinforcement learning technique
+- describe auxiliary training neural networks 150A-D
+- describe auxiliary prediction training tasks
+- describe forward prediction task
+- describe reverse prediction task
+- describe partial representation neural network
+- describe forward and backward prediction neural networks
+- describe latent embedding neural network
+- describe training process for auxiliary neural networks
+- introduce system architecture
+- define current observation input
+- define future observation input
+- describe observation data
+- illustrate training on forward prediction task
+- generate future latent representation
+- process current observation input
+- generate current internal representation
+- generate partial future internal representation
+- predict future latent representation
+- evaluate first auxiliary task objective function
+- determine update to environment representation parameters
+- illustrate generating internal representations
+- generate future internal representation
+- predict future internal representation
+- evaluate second auxiliary task objective function
+- determine update to latent embedding parameters
+- describe interleaving forward and backward prediction training
+- describe reinforcement learning training
+- process internal representation using action selection policy neural network
+- determine reinforcement learning loss
+- determine update to policy parameters
+- update environment representation parameters
+- apply updates to network parameters
+- describe termination criterion
+- define configured systems and computer program components
+- describe digital electronic circuitry
+- describe computer software or firmware
+- describe computer hardware
+- describe data processing apparatus
+- describe computer program
+- describe database
+- describe engine
+- describe computer readable media
+- describe user interaction
+- describe machine learning models
+- describe computing system
+- describe back end component
+- describe middleware component
+- describe front end component
+- describe communication network
+- describe clients and servers
+- describe data transmission
+- describe user device
+- describe data generation
+- describe data reception
+- describe feature combinations
+- describe operation ordering
+- describe system module integration
+- describe program component integration
+- describe packaged software products
+- describe alternative embodiments
+- describe claim scope
+- describe invention scope
+- describe subcombinations
+- describe variations
+- describe multitasking and parallel processing
+- describe desirable results
+

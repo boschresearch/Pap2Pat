@@ -1,0 +1,299 @@
+{
+    "id": "US20160358782",
+    "authors": [
+        "Wenbing Yang",
+        "Tomihito Ohba",
+        "Samantha Tan",
+        "Keren Jacobs Kanarik",
+        "Jeffrey Marks",
+        "Kazuo Nojiri"
+    ],
+    "title": "ATOMIC LAYER ETCHING OF GaN AND OTHER III-V MATERIALS",
+    "date": "2016-06-03 00:00:00",
+    "abstract": "Provided herein are ALE methods of removing III-V materials such as gallium nitride (GaN) and related apparatus. In some embodiments, the methods involve exposing the III-V material to a chlorine-containing plasma without biasing the substrate to form a modified III-V surface layer; and applying a bias voltage to the substrate while exposing the modified III-V surface layer to a plasma to thereby remove the modified III-V surface layer. The disclosed methods are suitable for a wide range of applications, including etching processes for trenches and holes, fabrication of HEMTs, fabrication of LEDs, and improved selectivity in etching processes.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Gallium nitride (GaN) is a binary wide bandgap III-V semiconductor used in high-electron-mobility transistors (HEMTs), light emitting diodes (LEDs), and ultraviolet (UV) detectors. In example applications, AlGaN/GaN HEMTs including n-type aluminum gallium nitride (AlGaN)/p-type GaN hetereojunctions may be used for high power-high efficiency industrial and automotive applications due to their high voltage, high current, and low on-resistance."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce GaN semiconductor"
+                    ],
+                    "num_characters": 445,
+                    "outline_medium": [
+                        "introduce GaN semiconductor"
+                    ],
+                    "outline_short": [
+                        "introduce GaN semiconductor"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Aspects of the disclosure relate to method of etching a III-V semiconductor material and related apparatus. In some embodiments, the methods involve exposing the III-V material to a chlorine-containing plasma without biasing the substrate to form a modified III-V surface layer and applying a bias voltage to the substrate while exposing the modified III-V surface layer to a plasma to thereby remove the modified III-V surface layer. In some embodiments, the operations of forming a modified III-V surface layer and removing the modified III-V surface layer may be repeated one or more times. In some embodiments, the bias voltage is lowered during the one or more times. In some embodiments, the bias voltage is at a level such that the removal is a self-limiting regime.",
+                        "In some embodiments, the III-V material is GaN. In some embodiments, GaN is removed without removing an underlayer. Examples of underlayers include aluminum gallium nitride (A1GaN). In some embodiments, the bias voltage is at level such that the etch is selective to an underlying material.",
+                        "In some embodiments, the bias voltage is between about 20 V and 120 V. In some embodiments, the bias voltage is between about 50 V and 120 V. In some embodiments, the bias voltage is between about 50 V and 100 V.",
+                        "In some embodiments, the chlorine-containing plasma is generated from a mixture of a chlorine-containing gas and a boron-containing gas. In some embodiments, the chlorine-containing plasma is generated from a mixture of Cl2 and BCl3. In some embodiments, the plasma used to remove the modified layer is an argon-containing plasma.to an underlying material.",
+                        "Another aspect of the disclosure is an apparatus for processing semiconductor substrates, the apparatus including a process chamber comprising a substrate support; a power supply connected to the substrate support; a plasma generator; and a controller having at least one processor and a memory, wherein the at least one processor and the memory are communicatively connected with one another, and the memory stores machine-readable instructions for introducing a chlorine-containing gas to the plasma generator; igniting a plasma in the plasma generator; exposing a substrate to a chlorine-containing gas to modify a III-V layer on the substrate; and using the power supply to apply a bias voltage to the substrate while exposing the substrate to the chlorine-containing plasma to remove the modified layer.",
+                        "These and other aspects are described more fully below with reference to the figures."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce etching method",
+                        "describe modified layer formation",
+                        "describe modified layer removal",
+                        "specify III-V material embodiments",
+                        "introduce apparatus for processing substrates"
+                    ],
+                    "num_characters": 2534,
+                    "outline_medium": [
+                        "outline etching method",
+                        "describe apparatus for processing"
+                    ],
+                    "outline_short": [
+                        "outline etching method and apparatus"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "In the following description, numerous specific details are set forth to provide a thorough understanding of the presented embodiments. The disclosed embodiments may be practiced without some or all of these specific details. In other instances, well-known process operations have not been described in detail to not unnecessarily obscure the disclosed embodiments. While the disclosed embodiments will be described in conjunction with the specific embodiments, it will be understood that it is not intended to limit the disclosed embodiments.",
+                        "As feature sizes shrink, there is a growing need for atomic scale processing such as Atomic Layer Etch (ALE). ALE is a cyclic process of nominally self-limiting steps that results in digital and small changes in film thicknesses. The process may be characterized by smoothness and conformality, and also directionality in the case of some ALE.",
+                        "Provided herein are ALE methods of removing III-V materials such as gallium nitride (GaN).",
+                        "GaN is a binary wide bandgap III-V semiconductor used in high-electron-mobility transistors (HEMTs), light emitting diodes (LEDs), and ultraviolet (UV) detectors. In example applications, AlGaN/GaN HEMTs including n-type aluminum gallium nitride (AlGaN)/p-type GaN hetereojunctions may be used for high power-high efficiency industrial and automotive applications due to their high voltage, high current, and low on-resistance.",
+                        "The disclosed methods are suitable for a wide range of applications, including etching processes for trenches and holes, fabrication of HEMTs, fabrication of LEDs, and improved selectivity in etching processes. While the below description refers chiefly to GaN, the techniques described may be used with other III-V semiconductor materials as described below.",
+                        "ALE is a technique that removes thin layers of material using sequential self-limiting reactions. Generally, ALE may be performed using any suitable technique. Examples of atomic layer etch techniques are described in U.S. Patent No. 8,883,028, issued on Nov. 11, 2014; and U.S. Pat. No. 8,808,561, issued on Aug. 19, 2014, which are herein incorporated by reference for purposes of describing example atomic layer etch and etching techniques. In various embodiments, ALE may be performed with plasma, or may be performed thermally.",
+                        "The concept of an \u201cALE cycle\u201d is relevant to the discussion of various embodiments herein. Generally an ALE cycle is the minimum set of operations used to perform an etch process one time, such as etching a monolayer. The result of one cycle is that at least some of a film layer on a substrate surface is etched. Typically, an ALE cycle includes a modification operation to form a reactive layer, followed by a removal operation to remove or etch only this modified layer. The cycle may include certain ancillary operations such as sweeping one of the reactants or byproducts. Generally, a cycle contains one instance of a unique sequence of operations. As an example, an ALE cycle may include the following operations: (i) delivery of a reactant gas and an optional plasma, (ii) purging of the reactant gas from the chamber, (iii) delivery of a removal gas and an optional plasma, and (iv) purging of the chamber. In some embodiments, etching may be performed nonconformally.",
+                        "FIG. 1A provides a process flow diagram for performing operations in a method in accordance with disclosed embodiments. Operations in FIG. 1A may be performed at a chamber pressure between about 1 mTorr and about 100 Torr, e.g., about 1 mTorr and about 1 Torr. In operation 102, a substrate is provided to a processing chamber. The chamber may be a chamber in a multi-chamber apparatus or a single-chamber apparatus. The substrate may be a silicon wafer, e.g., a 200-mm wafer, a 300-mm wafer, or a 450-mm wafer, including wafers having one or more layers of material, such as dielectric, conducting, or semi-conducting material deposited thereon. The substrate includes an exposed surface of a III-V compound material.",
+                        "A III-V material is a chemical compound with at least one group III element and at least one group V element. Examples of III-V compounds include binary semiconductors GaN, gallium phosphide (GaP), gallium arsenide (GaAs), and indium phosphide (InP). Compound III-V materials are high electron mobility materials that are under consideration as enablers in future devices to replace silicon. In some embodiments, the III-V material may include one or more additional elements. For example, III-V materials include ternary alloy III-Vs such as arsenides, phosphides, nitrides, and antimonides. Examples include indium gallium arsenide (InGaAs), indium aluminum arsenide (InAlAs), aluminum gallium nitride (AlGaN) and aluminum gallium arsenide (AlGaAs). It should be understood that the formulas GaN, GaP, GaAs, AlGaN, etc. do not denote any particular ratio of the constituent elements.",
+                        "In some embodiments, the substrate includes a blanket layer of the III-V compound. The substrate may include a patterned mask layer previously deposited and patterned on the substrate. For example, a mask layer may be deposited and patterned on a substrate including a blanket III-V compound.",
+                        "In operation 104 of FIG. 1A, the substrate is exposed to a chlorine (Cl)-containing reactant to modify the III-V surface. According to various embodiments, the chlorine-containing reactant may be chlorine (Cl2), boron trichloride (BCl3), or a combination thereof. As discussed further below, in some embodiments, a mixture of Cl2 and BCl3 is used. Other Cl-containing gases may be used in addition to or instead of these according to certain embodiments. As noted below, in some embodiments, a plasma may be ignited in operation 104, which may generate various activated species from Cl2, BCl3, or other chlorine-containing gas. References herein to a Cl-containing gas are understood to include species generated from such a gas. According to various embodiments, the plasma may be controlled such that the activated species in the chamber during operation 104 are primarily or substantially radical species. In some embodiments, essentially no ionic species are in the chamber.",
+                        "During operation 104, a carrier gas may be optionally flowed, while a Cl-containing etching gas is flowed to the chamber. Examples of carrier gases include nitrogen (N2), argon (Ar), neon (Ne), helium (He), and combinations thereof.",
+                        "The modification operation forms a thin, reactive surface layer with a thickness that is more easily removed than the un-modified material in the subsequent removal operation. In a modification operation, a substrate may be chlorinated by introducing a chlorine-containing reactant into the chamber. In some embodiments, the chlorine-containing reactant may react with the substrate or may be adsorbed onto the surface of the substrate. In various embodiments, chlorine is introduced into the chamber in a gaseous form and may be optionally accompanied by a carrier gas which may be any of those described above. In some embodiments, a carrier gas is not flowed during surface modification. The reactant may be flowed such that it modifies only the top surface of the substrate.",
+                        "In some embodiments, a plasma may be ignited during operation 104. A chlorine-containing plasma can be generated directly by forming a plasma in the process chamber housing the substrate or it can be generated remotely in a process chamber that does not house the substrate, and can be supplied into the process chamber housing the substrate. In some embodiments, a plasma is not used with the modification operation being a purely thermal process. In some embodiments, another form of activation energy may be employed during operation 104. Examples include exposure to ultraviolet (UV) radiation. Generating radical species during operation 104 can significantly improve throughput in some embodiments.",
+                        "If employed, according to various embodiments, the plasma may be an inductively coupled plasma or a capacitively coupled plasma. An inductively coupled plasma may be set at a plasma between about 50 W and about 2000 W. While a substrate bias may be applied, more typically no bias is applied during operation 104 to avoid sputtering.",
+                        "In some embodiments, a purge may be performed after a modification operation. In a purge operation, non-surface-bound active chlorine species may be removed from the process chamber. This can be done by purging and/or evacuating the process chamber to remove the active species, without removing the modified layer. The species generated in a chlorine plasma can be removed by simply stopping the plasma and allowing the remaining species decay, optionally combined with purging and/or evacuation of the chamber. Purging can be done using any inert gas such as N2, Ar, Ne, He and their combinations.",
+                        "In operation 106, the modified layer of the substrate is removed from the substrate. In a removal operation, the substrate may be exposed to an energy source (e.g. activating or sputtering gas or chemically reactive species that induces removal), such as argon or helium, to etch the substrate by directional sputtering. A sputtering gas may be the same as or different from a carrier gas. In some embodiments, the removal operation may be performed by ion bombardment. During removal, a bias may be optionally turned on to facilitate directional sputtering. In some embodiments, ALE may be isotropic.",
+                        "The amount of sputtering gas may be controlled such as to etch only a targeted amount of material. In various embodiments, the pressure of the chamber may vary between the modification and removal operations. The pressure of the gas may depend on the size of the chamber, the flow rate of the gas, the temperature of the reactor, the type of substrate, and the size of substrate to be etched. Substrate bias levels are discussed further below with respect to FIGS. 1C and 1D. In some embodiments, the chamber may be purged after a removal operation. Purge processes may be any of those used for a purge after a modification operation. Operation 106 may take place in the same or different chamber as operation 104 according to various embodiments.",
+                        "In some embodiments, the plasma in operation 106 is an inert plasma. An inert plasma is a plasma that contains substantially no chemically reactive species such as oxygen or halogens. Examples of inert plasmas include argon plasmas and helium plasmas.",
+                        "As described herein, in operations where materials are introduced into the chamber, in some embodiments involving atomic layer etch using a plasma, the reactor or chamber may be stabilized by introducing the chemistry into the chamber prior to processing the substrate or wafer. Stabilizing the chamber may use the same flow rates, pressure, temperatures, and other conditions as the chemistry to be used in the operation following the stabilization. In some embodiments, stabilizing the chamber may involve different parameters. In some embodiments, a carrier gas, such as N2, Ar, Ne, He, and combinations thereof, is continuously flowed during operations 104 and 106. In some embodiments, a carrier gas is only used during operation 106. In some embodiments, a carrier gas is not flowed during removal.",
+                        "Performing operations 104 and 106 may, in some embodiments, constitute performing atomic layer etch once. If the III-V material is not sufficiently etched, operations 104 and 106 may be repeated. In various embodiments, the modification and removal operations may be repeated in cycles, such as about 1 to about 30 cycles, or about 1 to about 20 cycles. Any suitable number of ALE cycles may be included to etch a desired amount of film. In some embodiments, ALE is performed in cycles to etch about 1 \u212b to about 50 \u212b of the surface of the layers on the substrate. In some embodiments, cycles of ALE etch between about 2 \u212b and about 50 \u212b of the surface of the layers on the substrate.",
+                        "FIG. 1B shows an example schematic illustration of an ALE cycle. In 171a, a substrate including a III-V surface is provided. In 171b, the surface of the substrate is modified to form a reactive layer. In the example of FIG. 1B, this involves chlorination of the III-V surface, for example, by adsorption of chlorine onto the surface of the substrate. In 171c, excess chlorine-containing reactant gas may be purged from the chamber. In 171d, the chlorinated layer of the III-V compound is being etched. In an example, an argon removal gas is introduced with a directional plasma and ion bombardment is performed to remove the chlorinated surface of the substrate. The substrate is shown with the chlorinated layer removed in 171e.",
+                        "A cycle may only partially etch about 0.1 nm to about 50 nm of material, or between about 0.1 nm and about 5 nm of material, or between about 0.2 nm and about 50 nm of material, or between about 0.2 nm and about 5 nm of material.",
+                        "In various embodiments, process conditions, such as pedestal temperature, chamber temperature, chamber pressure, gas flow rates, gas flow chemistry, duration of pulses, exposures, and purges, plasma frequency, plasma power, and bias power, may be adjusted depending on the type of application and the type of apparatus or tool upon which the disclosed embodiments are implemented.",
+                        "The ALE processes described herein provide significantly smoother surfaces than continuous wave plasmas that use the same chemistries under comparable process conditions. This can be advantageous for applications such as HEMTs.",
+                        "In some embodiments, a substrate bias is applied during a removal operation. A bias level may set to be below a level at which the etch rate significantly increases due to sputtering by Ar ions or other removal species. In some embodiments, a bias level is set such that the removal is in a self-limiting regime. FIG. 1C shows an example of a bias voltage (Vb) vs. etched amount curve for ALE of GaN using Cl2 and Ar, with the bias applied during the Ar removal. The curve shows that between approximately 50 V and 80 V, the removal is in a self-limiting regime. Above about 100 V, the etch rate increases sharply, indicating Ar sputtering. For etching to occur, the bias voltage is set above a threshold voltage in this case, about 20 V. Accordingly, in various embodiments, the bias voltage is maintained between a threshold voltage and a voltage at which sputtering occurs. Further in some embodiments, the bias voltage is maintained in a self-limiting regime for at least some cycles of the ALE process. A self-limiting regime may be determined for any particular surface to be etched and etch process conditions as shown in FIG. 1C for GaN.",
+                        "In some embodiments, the bias voltage may be lowered toward the end of the etch process. For example, at 0.5 nm, 1 nm, or other appropriate amount left to etch, the bias voltage may be lowered. In some embodiments, the bias voltage may be modified to a voltage that provides high selectivity to an underlying material. Controlling selectivity using bias voltage is discussed further below with respect to FIG. 1D. If a bias is applied during the removal step, it may be constant or pulsed. Pulsed biasing can be applied at high frequencies (e.g., 1 kHz).",
+                        "Also provided herein are methods of selectively etching GaN and other III-V compound materials relative to harder materials by controlling ion energies. Ion energies may be controlled by any appropriate method, for example by controlling bias voltage. In some embodiments, selectivity of infinity may be obtained. FIG. 1D shows GaN/AlGaN etch selectivity as a function of bias voltage. Around the AlGaN threshold voltage of 25 V, GaN/AlGaN selectivity goes toward infinity. A difference in threshold voltages may be exploited to achieve etch selectivity for other III-V compounds as well. FIG. 1E illustrates certain operations in fabricating a GaN HEMT device, including a GaN/AlGaN heterojunction. GaN is etched selective to AlGaN. ALE of GaN is performed to provide a damage free, highly selective etch.",
+                        "Due to their more complicated surfaces, ALE of compound III-V materials may more challenging than that of silicon, for example, in terms of maintaining stoichiometry. For many applications, it is desirable to have the surface stoichiometry nearly identical to that of the bulk to keep electronic properties from degrading. Embodiments of the methods disclosed herein include ALE of III-V materials that tailor the surface stoichiometry. In some embodiments, the pre-etch surface stoichiometry is maintained. In some embodiments, the methods include using a mixture of Cl2 and a boron-containing compound, such as BCl3. Without being bound a particular theory, it is believed that the addition of boron may prevent unwanted oxidation of a surface. However, too much boron may lead to deposition. In some embodiments, the Cl2/BCl3 mixture is between 0.5% and 10% (volumetric) BCl3, e.g., about 5% BCl3. The addition of BCl3 may improve surface roughness."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Apparatus",
+                            "paragraphs": [
+                                "Inductively coupled plasma (ICP) reactors which, in certain embodiments, may be suitable for atomic layer etching (ALE) operations are now described. Such ICP reactors have also described in U.S. Patent Application Publication No. 2014/0170853, filed Dec. 10, 2013, and titled \u201cIMAGE REVERSAL WITH AHM GAP FILL FOR MULTIPLE PATTERNING,\u201d hereby incorporated by reference in its entirety and for all purposes. Although ICP reactors are described herein, in some embodiments, it should be understood that capacitively coupled plasma reactors may also be used.",
+                                "FIG. 2 schematically shows a cross-sectional view of an inductively coupled plasma apparatus 200 appropriate for implementing certain embodiments herein, an example of which is a Kiyo\u2122 reactor, produced by Lam Research Corp. of Fremont, Calif. The inductively coupled plasma apparatus 200 includes an overall process chamber structurally defined by chamber walls 201 and a window 211. The chamber walls 201 may be fabricated from stainless steel or aluminum. The window 211 may be fabricated from quartz or other dielectric material. An optional internal plasma grid 250 divides the overall processing chamber into an upper sub-chamber 202 and a lower sub-chamber 203. In most embodiments, plasma grid 250 may be removed, thereby utilizing a chamber space made of upper sub-chamber 202 and lower sub-chamber 203. A chuck 217 is positioned within the lower sub-chamber 203 near the bottom inner surface. The chuck 217 is configured to receive and hold a semiconductor wafer 219 upon which the etching and deposition processes are performed. The chuck 217 can be an electrostatic chuck for supporting the wafer 219 when present. In some embodiments, an edge ring (not shown) surrounds chuck 217, and has an upper surface that is approximately planar with a top surface of a wafer 219, when present over chuck 217. The chuck 217 also includes electrostatic electrodes for chucking and dechucking the wafer. A filter and DC clamp power supply (not shown) may be provided for this purpose. Other control systems for lifting the wafer 219 off the chuck 217 can also be provided. The chuck 217 can be electrically charged using an RF power supply 223. The RF power supply 223 is connected to matching circuitry 221 through a connection 227. The matching circuitry 221 is connected to the chuck 217 through a connection 225. In this manner, the RF power supply 223 is connected to the chuck 217.",
+                                "Elements for plasma generation include a coil 233 is positioned above window 211. In some embodiments, a coil is not used in disclosed embodiments. The coil 233 is fabricated from an electrically conductive material and includes at least one complete turn. The example of a coil 233 shown in FIG. 2 includes three turns. The cross-sections of coil 233 are shown with symbols, and coils having an \u201cX\u201d extend rotationally into the page, while coils having a \u201c\ue8a0\u201d extend rotationally out of the page. Elements for plasma generation also include an RF power supply 241 configured to supply RF power to the coil 233. In general, the RF power supply 241 is connected to matching circuitry 239 through a connection 245. The matching circuitry 239 is connected to the coil 233 through a connection 243. In this manner, the RF power supply 241 is connected to the coil 233. An optional Faraday shield 249 is positioned between the coil 233 and the window 211. The Faraday shield 249 is maintained in a spaced apart relationship relative to the coil 233. The Faraday shield 249 is disposed immediately above the window 211. The coil 233, the Faraday shield 249, and the window 211 are each configured to be substantially parallel to one another. The Faraday shield may prevent metal or other species from depositing on the dielectric window of the plasma chamber.",
+                                "Process gases (e.g. chlorine, boron trichloride, argon, nitrogen, etc.) may be flowed into the processing chamber through one or more main gas flow inlets 260 positioned in the upper chamber and/or through one or more side gas flow inlets 270. Likewise, though not explicitly shown, similar gas flow inlets may be used to supply process gases to a capacitively coupled plasma processing chamber. A vacuum pump, e.g., a one or two stage mechanical dry pump and/or turbomolecular pump 240, may be used to draw process gases out of the process chamber and to maintain a pressure within the process chamber. For example, the pump may be used to evacuate the chamber during a purge operation of ALE. A valve-controlled conduit may be used to fluidically connect the vacuum pump to the processing chamber so as to selectively control application of the vacuum environment provided by the vacuum pump. This may be done employing a closed-loop-controlled flow restriction device, such as a throttle valve (not shown) or a pendulum valve (not shown), during operational plasma processing. Likewise, a vacuum pump and valve controlled fluidic connection to the capacitively coupled plasma processing chamber may also be employed.",
+                                "During operation of the apparatus, one or more process gases may be supplied through the gas flow inlets 260 and/or 270. In certain embodiments, process gas may be supplied only through the main gas flow inlet 260, or only through the side gas flow inlet 270. In some cases, the gas flow inlets shown in the figure may be replaced more complex gas flow inlets, one or more showerheads, for example. The Faraday shield 249 and/or optional grid 250 may include internal channels and holes that allow delivery of process gases to the chamber. Either or both of Faraday shield 249 and optional grid 250 may serve as a showerhead for delivery of process gases. In some embodiments, a liquid vaporization and delivery system may be situated upstream of the chamber, such that once a liquid reactant is vaporized, the vaporized reactant is introduced into the chamber via a gas flow inlet 260 and/or 270. Example liquid reactants include SiCl4.",
+                                "Radio frequency power is supplied from the RF power supply 241 to the coil 233 to cause an RF current to flow through the coil 233. The RF current flowing through the coil 233 generates an electromagnetic field about the coil 233. The electromagnetic field generates an inductive current within the upper sub-chamber 202. The physical and chemical interactions of various generated ions and radicals with the wafer 219 selectively etch features of layers on the wafer.",
+                                "If the plasma grid is used such that there is both an upper sub-chamber 202 and a lower sub-chamber 203, the inductive current acts on the gas present in the upper sub-chamber 202 to generate an electron-ion plasma in the upper sub-chamber 202. The optional internal plasma grid 250 limits the amount of hot electrons in the lower sub-chamber 203. In some embodiments, the apparatus is designed and operated such that the plasma present in the lower sub-chamber 203 is an ion-ion plasma.",
+                                "Both the upper electron-ion plasma and the lower ion-ion plasma may contain positive and negative ions, through the ion-ion plasma will have a greater ratio of negative ions to positive ions. Volatile etching and/or deposition byproducts may be removed from the lower-sub-chamber 203 through port 222. The chuck 217 disclosed herein may operate at elevated temperatures ranging between about 10\u00b0 C. and about 250 \u00b0 C. The temperature will depend on the process operation and specific recipe.",
+                                "Chamber 201 may be coupled to facilities (not shown) when installed in a clean room or a fabrication facility. Facilities include plumbing that provide processing gases, vacuum, temperature control, and environmental particle control. These facilities are coupled to the chamber, when installed in the target fabrication facility. Additionally, the chamber may be coupled to a transfer chamber that allows robotics to transfer semiconductor wafers into and out of the chamber using typical automation.",
+                                "In some embodiments, a system controller 230 (which may include one or more physical or logical controllers) controls some or all of the operations of a processing chamber. The system controller 230 may include one or more memory devices and one or more processors. In some embodiments, the apparatus includes a switching system for controlling flow rates and durations when disclosed embodiments are performed. In some embodiments, the apparatus may have a switching time of up to about 500 ms, or up to about 750 ms. Switching time may depend on the flow chemistry, recipe chosen, reactor architecture, and other factors.",
+                                "In some implementations, a controller 230 is part of a system, which may be part of the above-described examples. Such systems can comprise semiconductor processing equipment, including a processing tool or tools, chamber or chambers, a platform or platforms for processing, and/or specific processing components (a wafer pedestal, a gas flow system, etc.). These systems may be integrated with electronics for controlling their operation before, during, and after processing of a semiconductor wafer or substrate. The electronics may be referred to as the \u201ccontroller,\u201d which may control various components or subparts of the system or systems. The controller 230, depending on the processing parameters and/or the type of system, may be programmed to control any of the processes disclosed herein, including the delivery of processing gases, temperature settings (e.g., heating and/or cooling), pressure settings, vacuum settings, power settings, radio frequency (RF) generator settings, RF matching circuit settings, frequency settings, flow rate settings, fluid delivery settings, positional and operation settings, wafer transfers into and out of a tool and other transfer tools and/or load locks connected to or interfaced with a specific system.",
+                                "Broadly speaking, the controller 230 may be defined as electronics having various integrated circuits, logic, memory, and/or software that receive instructions, issue instructions, control operation, enable cleaning operations, enable endpoint measurements, and the like. The integrated circuits may include chips in the form of firmware that store program instructions, digital signal processors (DSPs), chips defined as application specific integrated circuits (ASICs), and/or one or more microprocessors, or microcontrollers that execute program instructions (e.g., software). Program instructions may be instructions communicated to the controller in the form of various individual settings (or program files), defining operational parameters for carrying out a particular process on or for a semiconductor wafer or to a system. The operational parameters may, in some embodiments, be part of a recipe defined by process engineers to accomplish one or more processing steps during the fabrication of one or more layers, materials, metals, oxides, silicon, silicon dioxide, surfaces, circuits, and/or dies of a wafer.",
+                                "The controller 230, in some implementations, may be a part of or coupled to a computer that is integrated with, coupled to the system, otherwise networked to the system, or a combination thereof. For example, the controller may be in the \u201ccloud\u201d or all or a part of a fab host computer system, which can allow for remote access of the wafer processing. The computer may enable remote access to the system to monitor current progress of fabrication operations, examine a history of past fabrication operations, examine trends or performance metrics from a plurality of fabrication operations, to change parameters of current processing, to set processing steps to follow a current processing, or to start a new process. In some examples, a remote computer (e.g. a server) can provide process recipes to a system over a network, which may include a local network or the Internet. The remote computer may include a user interface that enables entry or programming of parameters and/or settings, which are then communicated to the system from the remote computer. In some examples, the controller 230 receives instructions in the form of data, which specify parameters for each of the processing steps to be performed during one or more operations. It should be understood that the parameters may be specific to the type of process to be performed and the type of tool that the controller is configured to interface with or control. Thus as described above, the controller 230 may be distributed, such as by comprising one or more discrete controllers that are networked together and working towards a common purpose, such as the processes and controls described herein. An example of a distributed controller for such purposes would be one or more integrated circuits on a chamber in communication with one or more integrated circuits located remotely (such as at the platform level or as part of a remote computer) that combine to control a process on the chamber.",
+                                "Without limitation, example systems may include a plasma etch chamber or module, a deposition chamber or module, a spin-rinse chamber or module, a metal plating chamber or module, a clean chamber or module, a bevel edge etch chamber or module, a physical vapor deposition (PVD) chamber or module, a chemical vapor deposition (CVD) chamber or module, an ALD chamber or module, an ALE chamber or module, an ion implantation chamber or module, a track chamber or module, and any other semiconductor processing systems that may be associated or used in the fabrication and/or manufacturing of semiconductor wafers.",
+                                "As noted above, depending on the process step or steps to be performed by the tool, the controller might communicate with one or more of other tool circuits or modules, other tool components, cluster tools, other tool interfaces, adjacent tools, neighboring tools, tools located throughout a factory, a main computer, another controller, or tools used in material transport that bring containers of wafers to and from tool locations and/or load ports in a semiconductor manufacturing factory.",
+                                "FIG. 3 depicts a semiconductor process cluster architecture with various modules that interface with a vacuum transfer module 338 (VTM). The arrangement of transfer modules to \u201ctransfer\u201d wafers among multiple storage facilities and processing modules may be referred to as a \u201ccluster tool architecture\u201d system. Airlock 330, also known as a loadlock, transfer module or airlock module 330, is shown in VTM 338 with four processing modules 320a-320d, which may be individual optimized to perform various fabrication processes. By way of example, processing modules 320a-320d may be implemented to perform substrate etching, deposition, ion implantation, wafer cleaning, sputtering, and/or other semiconductor processes. For example, in some embodiments, an ALD process may be performed in the same module as an ALE process. In some embodiments, ALD and ALE are performed in different modules of the same tool. One or more of the substrate etching processing modules (any of 320a-320d) may be implemented as disclosed herein, i.e., for depositing conformal films, selectively depositing films by ALD, etching patterns, and other suitable functions in accordance with the disclosed embodiments. Airlock 330 and each of processing modules 320a-320d may be referred to as \u201cstations.\u201d Each station has a facet 336 that interfaces the station to VTM 338. Inside each facet, sensors 1-18 are used to detect the passing of wafer 326 when moved between respective stations.",
+                                "Robot 322 transfers wafer 326 between stations. In one embodiment, robot 322 has one arm, and in another embodiment, robot 322 has two arms, where each arm has an end effector 324 to pick wafers such as wafer 326 for transport. Front-end robot 332, in atmospheric transfer module (ATM) 340, is used to transfer wafers 326 from cassette or Front Opening Unified Pod (FOUP) 334 in Load Port Module (LPM) 342 to airlock 330. Module center 328 inside process module 320 is one location for placing wafer 326. Aligner 344 in ATM 340 is used to align wafers.",
+                                "In an exemplary processing method, a wafer is placed in one of the FOUPs 334 in the LPM 342. Front-end robot 332 transfers the wafer from the FOUP 334 to an aligner 344, which allows the wafer 326 to be properly centered before it is etched or processed. After being aligned, the wafer 326 is moved by the front-end robot 332 into an airlock 330. Because airlock modules have the ability to match the environment between an ATM and a VTM, the wafer 326 is able to move between the two pressure environments without being damaged. From the airlock module 330, the wafer 326 is moved by robot 322 through VTM 338 and into one of the process modules 320a-320d. In order to achieve this wafer movement, the robot 322 uses end effectors 324 on each of its arms. Once the wafer 326 has been processed, it is moved by robot 322 from the process modules 320a-320d to an airlock module 330. From here, the wafer 326 may be moved by the front-end robot 332 to one of the FOUPs 334 or to the aligner 344.",
+                                "It should be noted that the computer controlling the wafer movement can be local to the cluster architecture, or can be located external to the cluster architecture in the manufacturing floor, or in a remote location and connected to the cluster architecture via a network. A controller as described above with respect to FIG. 2 may be implemented with the tool in FIG. 3."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe ICP reactors",
+                                "reference prior art",
+                                "introduce FIG. 2",
+                                "describe process chamber",
+                                "detail chamber walls",
+                                "describe window",
+                                "introduce plasma grid",
+                                "describe chuck",
+                                "detail electrostatic chuck",
+                                "describe RF power supply",
+                                "describe matching circuitry",
+                                "describe coil",
+                                "introduce RF power supply",
+                                "describe Faraday shield",
+                                "describe gas flow inlets",
+                                "describe vacuum pump",
+                                "describe valve-controlled conduit",
+                                "describe operation of apparatus",
+                                "describe process gas supply",
+                                "describe Faraday shield and grid",
+                                "describe liquid vaporization and delivery system",
+                                "describe RF power supply and coil",
+                                "describe electromagnetic field",
+                                "describe inductive current",
+                                "describe plasma generation",
+                                "describe upper and lower sub-chambers",
+                                "describe etching and deposition processes",
+                                "describe chamber facilities",
+                                "describe system controller",
+                                "describe switching system",
+                                "describe controller functionality",
+                                "describe system integration",
+                                "describe semiconductor processing equipment",
+                                "describe cluster tool architecture"
+                            ],
+                            "num_characters": 17372,
+                            "outline_medium": [
+                                "describe ICP reactors",
+                                "introduce Kiyo reactor",
+                                "describe chamber walls and window",
+                                "describe internal plasma grid",
+                                "describe chuck and electrostatic electrodes",
+                                "describe RF power supply and matching circuitry",
+                                "describe coil and RF power supply",
+                                "describe Faraday shield",
+                                "describe process gas flow inlets",
+                                "describe vacuum pump and valve-controlled conduit",
+                                "describe operation of apparatus",
+                                "describe plasma generation and etching process",
+                                "describe optional internal plasma grid and ion-ion plasma",
+                                "describe chamber facilities and transfer chamber",
+                                "describe system controller and switching system",
+                                "describe controller and electronics",
+                                "describe semiconductor processing systems and cluster architecture"
+                            ],
+                            "outline_short": [
+                                "describe ICP reactor",
+                                "illustrate apparatus 200",
+                                "detail chamber walls and window",
+                                "describe chuck and wafer support",
+                                "outline plasma generation elements",
+                                "explain process gas flow and vacuum system",
+                                "describe plasma operation and etching process",
+                                "outline system controller and facilities"
+                            ]
+                        },
+                        {
+                            "title": "Experimental",
+                            "paragraphs": [
+                                "A blanket layer of GaN was etched by ALE. ALE chemistry was Cl2 modification and Ar removal, with 50 V bias during the removal. 22 nm of GaN was etched using repeated ALE cycles. RMS roughness post ALE etch was slightly improved compared to before etching.",
+                                "GaN ALE (Cl2/Ar) was compared to a Cl-only etch on GaN and an Ar-only sputter etch on GaN. The Cl-only etch resulted in no GaN etch (100 cycles). The ALE etch resulted in nearly an order of magnitude more etching than the Ar sputter alone. This result indicates that there is a strong synergistic effect in the ALE process and supports that an ALE mechanism as described above is occurring.",
+                                "AlGaN surface smoothness was measured after ALE processes using various mixtures of Cl2/BCl3. Mixtures having 0%/100%, 5%/95%, 15%/85%, and 100%/0% percent BCl3/Cl2 were used. Roughness was improved with BCl3 concentration.",
+                                "Although the foregoing embodiments have been described in some detail for purposes of clarity of understanding, it will be apparent that certain changes and modifications may be practiced within the scope of the appended claims. It should be noted that there are many alternative ways of implementing the processes, systems, and apparatus of the present embodiments. Accordingly, the present embodiments are to be considered as illustrative and not restrictive, and the embodiments are not to be limited to the details given herein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "conduct ALE etching experiments",
+                                "discuss results and implications"
+                            ],
+                            "num_characters": 1407,
+                            "outline_medium": [
+                                "demonstrate ALE etching"
+                            ],
+                            "outline_short": [
+                                "demonstrate ALE etching"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce atomic layer etch (ALE) for III-V materials",
+                        "motivate need for ALE due to shrinking feature sizes",
+                        "describe ALE process as cyclic and self-limiting",
+                        "introduce GaN as a III-V material for ALE",
+                        "describe applications of GaN, including HEMTs and LEDs",
+                        "summarize disclosed methods as suitable for various applications",
+                        "introduce concept of ALE cycle",
+                        "describe operations in an ALE cycle, including modification and removal",
+                        "illustrate ALE cycle with FIG. 1A",
+                        "describe substrate preparation, including provision and exposure",
+                        "introduce chlorine-containing reactant for modification operation",
+                        "describe optional plasma ignition during modification",
+                        "introduce carrier gas for modification operation",
+                        "describe modification operation, including chlorination of surface",
+                        "describe purge operation after modification",
+                        "describe removal operation, including exposure to energy source",
+                        "introduce sputtering gas for removal operation",
+                        "describe optional bias application during removal",
+                        "illustrate ALE cycle with FIG. 1B",
+                        "describe process conditions, including pedestal temperature and chamber pressure",
+                        "describe advantages of ALE, including smoother surfaces",
+                        "introduce substrate bias during removal operation",
+                        "illustrate bias voltage vs. etched amount curve with FIG. 1C",
+                        "describe self-limiting regime for bias voltage",
+                        "describe modification of bias voltage during etch process",
+                        "introduce selectivity control using bias voltage",
+                        "illustrate GaN/AlGaN etch selectivity with FIG. 1D",
+                        "describe fabrication of GaN HEMT device with FIG. 1E",
+                        "introduce challenges of ALE for compound III-V materials",
+                        "describe importance of maintaining surface stoichiometry",
+                        "introduce use of Cl2 and BCl3 mixture for ALE",
+                        "describe benefits of adding BCl3, including improved surface roughness",
+                        "conclude description of disclosed embodiments"
+                    ],
+                    "num_characters": 16956,
+                    "outline_medium": [
+                        "introduce atomic layer etch (ALE) for III-V materials",
+                        "motivate need for ALE in shrinking feature sizes",
+                        "describe ALE process and its characteristics",
+                        "introduce GaN as a III-V material for ALE",
+                        "describe applications of ALE for GaN",
+                        "summarize prior art in ALE techniques",
+                        "define ALE cycle and its operations",
+                        "describe modification operation in ALE cycle",
+                        "describe removal operation in ALE cycle",
+                        "illustrate ALE process flow diagram",
+                        "describe plasma generation and control in ALE",
+                        "describe purge operations in ALE",
+                        "illustrate ALE cycle with chlorination and etching",
+                        "describe process conditions and adjustments in ALE",
+                        "describe bias voltage control in ALE for smooth surfaces",
+                        "describe selective etching of GaN and other III-V materials"
+                    ],
+                    "outline_short": [
+                        "motivate ALE for III-V materials",
+                        "describe ALE process and its advantages",
+                        "introduce GaN and its applications",
+                        "describe ALE cycle and its operations",
+                        "illustrate ALE process with FIG. 1A and FIG. 1B",
+                        "discuss process conditions and their adjustments",
+                        "describe bias voltage control for self-limiting regime",
+                        "discuss selectivity control and surface stoichiometry"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of etching a III-V material on a substrate, comprising:\na) exposing the III-V material to a chlorine-containing plasma without biasing the substrate to form a modified III-V surface layer; and\nb) applying a bias voltage to the substrate while exposing the modified III-V surface layer to an inert plasma to thereby remove the modified III-V surface layer.",
+        "2. The method of claim 1, further comprising repeating (a) and (b) one or more times.",
+        "3. The method of claim 1, wherein the bias voltage is at a level such that the removal is in a self-limiting regime.",
+        "4. The method of claim 1, wherein the chlorine-containing plasma is generated from a process gas including a boron-containing compound, wherein about 0.5% to 10% (volumetric) of the process gas is the boron-containing compound.",
+        "5. The method of claim 1, further comprising performing one or more additional cycles of (a) and (b), wherein the bias voltage is lowered during the one or more additional cycles.",
+        "6. The method of claim 1, wherein the III-V material is GaN. The method of claim 6, wherein GaN is removed without removing an underlayer.",
+        "8. The method of claim 7, wherein the underlayer is AlGaN.",
+        "9. The method of claim 1, wherein the bias voltage is between about 20 V and 120 V.",
+        "10. The method of claim 1, wherein the bias voltage is between about 50 V and 120 V.",
+        "11. The method of claim 1, wherein the bias voltage is between about 50 V and 100 V.",
+        "12. The method of claim 1, wherein the chlorine-containing plasma is generated from a mixture of a chlorine-containing gas and a boron-containing gas.",
+        "13. The method of claim 1, wherein the chlorine-containing plasma is generated from a mixture of a Cl2 and BCl3.",
+        "14. The method of claim 1, wherein the inert plasma in (b) is an argon-containing plasma.",
+        "15. The method of claim 1, wherein the bias voltage is at level such that the etch is selective to an underlying material.",
+        "16. An apparatus for processing semiconductor substrates, the apparatus comprising:\na process chamber comprising a substrate support;\na power supply connected to the substrate support;\na plasma generator; and\na controller having at least one processor and a memory,\nwherein the at least one processor and the memory are communicatively connected with one another, and\nthe memory stores machine-readable instructions for:\n(i) introducing a chlorine-containing gas to the plasma generator;\n(ii) igniting a chlorine-containing plasma in the plasma generator;\n(iii) exposing a substrate to the chlorine-containing plasma to modify a III-V layer on the substrate without biasing the substrate;\n(iv) introducing an inert gas to the plasma generator;\n(v) igniting an inert plasma in the plasma generator; and\n(vi) using the power supply to apply a bias voltage to the substrate while exposing the substrate to the inert plasma to remove the modified layer."
+    ]
+}

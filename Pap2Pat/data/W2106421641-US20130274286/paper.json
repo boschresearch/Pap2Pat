@@ -1,0 +1,176 @@
+{
+    "id": "https://semopenalex.org/work/W2106421641",
+    "authors": [
+        "Nagasuma Chandra",
+        "Eshita Sharma",
+        "Kumaravel Somasundaram",
+        "Raghu Bhagavat",
+        "Sreekanthreddy Peddagangannagari"
+    ],
+    "title": "Virtual screening, identification and experimental testing of novel inhibitors of PBEF1/Visfatin/NMPRTase for glioma therapy",
+    "date": "2011-01-01",
+    "abstract": "Pre-B-cell colony enhancing factor 1 gene (PBEF1) encodes nicotinamide phosphoribosyltransferase (NMPRTase), which catalyses the rate limiting step in the salvage pathway of NAD+ metabolism in mammalian cells. PBEF1 transcript and protein levels have been shown to be elevated in glioblastoma and a chemical inhibitor of NMPRTase has been shown to specifically inhibit cancer cells. Virtual screening using docking was used to screen a library of more than 13,000 chemical compounds. A shortlisted set of compounds were tested for their inhibition activity in vitro by an NMPRTase enzyme assay. Further, the ability of the compounds to inhibit glioma cell proliferation was carried out. Virtual screening resulted in short listing of 34 possible ligands, of which six were tested experimentally, using the NMPRTase enzyme inhibition assay and further with the glioma cell viability assays. Of these, two compounds were found to be significantly efficacious in inhibiting the conversion of nicotinamide to NAD+, and out of which, one compound, 3-amino-2-benzyl-7-nitro-4-(2-quinolyl-)-1,2-dihydroisoquinolin-1-one, was found to inhibit the growth of a PBEF1 over expressing glioma derived cell line U87 as well. Thus, a novel inhibitor has been identified through a structure based drug discovery approach and is further supported by experimental evidence.",
+    "sections": [
+        {
+            "title": "Background",
+            "paragraphs": [
+                "Gliomas are primary malignant tumors, originating in the brain, and account for 80% of adult primary brain tumors. The prognosis for patients with glioblastoma multiforme, a virulent variety of the disease is rather poor, with a median survival of less than one year [1]. Several molecular and biochemical abnormalities such as specific chromosomal aberrations, upregulation of epidermal growth factor receptor (EGFR), loss of phosphate and tensin homology (PTEN), have been clearly associated with gliomas. Some pathways associated with higher grade gliomas are upregulation of PDGFRA (platelet derived growth factor receptor \u03b1), CDK4 (cyclin dependent kinase 4) and down-regulation of retinoblastoma (RB1) [1]. NAD+ biosynthesis has been shown to be activated in cancers [2]. NAD+, in addition to its role as a redox cofactor, is also used as a substrate in several biochemical reactions including mono- and poly-ADP ribosylation (ART and PARP catalyzed), protein deacetylation and ADP-ribose cyclization [3]. NMPRTase catalyzes the conversion of free nicotinamide to nicotinamide mononucleotide (NMN), which is a key step in the salvage pathway of NAD+. Expression levels of NMPRTase (also known as visfatin/Pre B-cell enhancing factor1 (PBEF1)), was found to be upregulated in colorectal cancers [4], suggesting that NMPRTase may be crucial for maintaining cellular NAD+ levels in tumors. Microarray analyses of glioma cells (grade II to IV) versus normal brain glial cells has identified differential expression of NMPRTase in glioma with 2-5 fold upregulation in glioma cells, depending on the grade of the tumor (increased expression of NMPRTase with greater progression of the disease, Grade IV > Grade III > Grade II) [5]. Observation of increased rates of NAD+ metabolism in glioma, suggests that the cancer cells may be critically dependent upon metabolites produced in the pathway, and presents a possible strategy to counter the disease, through the inhibition of key enzymes in the pathway.",
+                "The crystal structures of free NMPRTase, NMPRTase bound to NMN, and NMPRTase bound to the inhibitor FK866 [6], have been recently reported. FK866 is a potent small-molecule inhibitor of human NMPRTase, and the consequent reduction in NAD+ levels can cause apoptosis of tumor cells while having minimal effect on normal cells [7]. FK866 also turns out to be the only promising inhibitor known, for the enzyme. The structures provide a basis for understanding substrate specificity, mechanism of enzyme action, and hence provide a framework for design of novel NMPRTase inhibitors.",
+                "An extremely useful step in the rational design of inhibitors is to utilize the three dimensional structural information of the target protein and identify a possible lead compound from large libraries of compounds. The most efficient method to do this, of course would be to carry out virtual screening. In the recent years several docking algorithms have been developed which are being used for virtual screening of potential ligands to a given protein at the three dimensional level [8,9]. We recently developed a parallel version of a popular docking algorithm - AutoDock [10] and have implemented this on an IBM Bluegene supercomputer [11], rendering the docking approach amenable for high throughput virtual screening. Here we report virtual screening of a large library of compounds and short listing of six candidate molecules that are likely to bind to NMPRTase. These compounds were subsequently tested experimentally for their ability to (a) inhibit the conversion of nicotinamide to NAD+ by NMPRTase and (b) inhibit efficiently the growth of a PBEF1 over expressing glioblastoma derived cell line U87. Based on these studies, a promising lead compound has been identified."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Reagents And Cell Lines",
+                    "paragraphs": [
+                        "Cancer cell lines U373, U138, LN229, U343, U87, U251 and LN18 (all glioma derived cell lines), SW480 (colon carcinoma), HaCat (immortalized human keratinocytes) and HBL100 (immortalized human breast epithelial cells) cells were cultured in Dulbecco's Modified Eagle Medium (DMEM) respectively with 10% Fetal bovine serum, penicillin and streptomycin at 37 \u00b0C in a humidified atmosphere with 5% CO2. The six best docked compounds were purchased from Maybridge, Thermo Fisher Scientific, UK. C14-Nicotinamide (Specific activity 55 mCi/mmol) was purchased from American Radio labeled Chemicals, USA."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Virtual Screening",
+                    "paragraphs": [
+                        "Different steps involved in virtual screening are briefly described below:"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Selection Of Ligand Library And Preparation Of Ligands And Protein",
+                            "paragraphs": [
+                                "Virtual screening was performed to identify possible lead compounds from the Maybridge HitFinder\u2122 database. The Maybridge HitFinder\u2122 sets are structural representatives of large non-redundant chemical libraries. This collection includes 14,400 compounds that represent the drug-like diversity of the Maybridge Screening Collection (~56,000 compounds). All the screening compounds fit Lipinski guidelines for drug-likeness; partition coefficient, ClogP \u2264 5, H-bond donors \u2264 5, H-bond acceptors \u2264 10, molecular weight \u2264 500 [12]. The Maybridge HitFinder\u2122 set was obtained from http://www.maybridge.com. The ligand files were prepared for docking using Schrodinger Ligprep software [13]. In addition to the generation of energy minimized 3D structures, Schrodinger Ligprep was also used for addition of hydrogens and desalting of metal ions. The main objective of using LigPrep was to obtain low energy 3D structures of the set of ligands in the library, for use in further computational studies. OPLS_2005 force field was utilized to optimize the geometry and minimize the energy. Force field parameters were assigned to the ligand atoms using default treatment for possible tautomers, and ionization at a selected pH range (7 \u00b1 2 by default), and ring conformations (1 ring conformer by default).The Ligparse module was used during Ligprep and the ligands with following properties were removed from the set: molecular weight less than 200, number of neutral acceptor groups greater than 10 and number of neutral donor groups greater than 5. A total of 13214 ligands were selected and retained out of the total 14,400 original ligands."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "B. Docking",
+                            "paragraphs": [
+                                "The co-ordinates of the human NMPRTase (2GVG- complex with the reaction product nicotinamide mononucleotide; 2GVJ- complex with an inhibitor, n-[4-(1-benzoylpiperidin-4-yl)butyl]-3-pyridin-3-ylpropanamide- FK866 were obtained from Protein Data Bank (PDB) [14]. The protein file was prepared for docking by removal of water molecules, addition of polar hydrogens, removal of ligand and phosphate groups in active site, and addition of Kollman charges [15]. The macromolecule was treated to be completely rigid for all docking studies to reduce the extensive computational costs. A grid box encompassing both the NMN and FK866 sites (86\u00d760\u00d750; 0.375 \u00c5 spacing) was constructed and used for all the docking runs. Our definition of the site as input for the docking program encompasses the phosphate site completely, since the grid box with dimensions 80 \u00d7 60 \u00d7 50 points with a default spacing of 0.375 \u00c5, is sufficiently large to encompass the entire binding pocket and any nearby minor sites such as that of the phosphate site. Thus, the search space for generating ligand map files using Autogrid, is big enough to encompass the PO4 site, and is not neglected. Docking parameter files were prepared for each ligand using the following parameters: ga_pop_size 150; ga_num_evals 2500000; ga_num_generations 500; ga_run 100 and rmstol 1.0. The Maybridge HitFinder\u2122 dataset was docked using the parallel version of AutoDock 3, available in the laboratory using 256 processors on an IBM cluster. This process greatly reduced the computational cost and time involved in virtual screening of the large dataset (~13214). Clustering was performed based on the similarity in binding modes and affinities in the run cycles. The size of the clusters refer to the total number of conformations of the ligand that bind in the same orientation within the specified RMSD threshold (1 \u00c5 was used in our study) and binding with the same energy. Thus, a cluster is defined as a unit of such similar confirmations. More the number in each cluster better is the accuracy and confidence of the predicted pose of the ligand molecule. The Ligand Protein Contacts (LPC) [16] was used for obtaining the interactions of docked ligand atoms with the macromolecule, hydrogen bonding, van der Waals contacts and the solvent accessible surface area."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "C. Short Listing Of Potential Leads",
+                            "paragraphs": [
+                                "The docking log files (.dlg) were parsed using in-house perl scripts to scan the clustering histograms, and identify ligands that have docked poses with binding energy lower than the cut-off criteria and cluster size greater than the defined cut-off (See Table 1). The cut-off values were obtained from docking the known inhibitor FK866, and product NMN, to the receptor, and retrieving the docking energy and cluster size values for poses that have least deviation from the crystal pose (RMSD < 1.0). As a newer version of AutoDock became available during the course of this work, the docking exercise was repeated for the short listed compounds with the same parameters using AutoDock4 (version 4.0.1)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Energy Minimization",
+                            "paragraphs": [
+                                "Minimization of the docked ligands in the best ranked poses was done using CNS software suite [17]. Conjugate gradient method was used for minimization with flexibility allowed only for those atoms within the 6 \u00c5 radius of every atom of the ligand for 150 runs. The topology and parameter files for the compounds were obtained from XPLO-2D software [18]. Molecular visualization tool Pymol [19] was used to generate the images of the docked complexes."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Rna Isolation And Rt-Qpcr",
+                    "paragraphs": [
+                        "RNA isolation and RT-qPCR were carried out as described before [5]. Total RNA was extracted from cancer cell lines by using the TRI reagent (Sigma). The RNA samples were quantified by measuring the absorbance using a spectrophotometer and visualized on a MOPS formaldehyde gel for quality assurance. The relative quantification of the expression levels of selected genes was carried out using a two-step strategy: In the first step, cDNA was generated from RNA derived from different tissue samples using a cDNA archive kit (ABI PRISM); subsequently, real-time quantitative PCR was carried out in an ABI PRISM 7900 (Applied Biosystems) sequence detection system with the cDNA as template using PBEF1 specific primer set and a Dynamo kit containing SYBR green dye (Finnzymes). All measurements were made in triplicates. The genes GARS (glycyl-tRNA synthetase), AGPAT1 (1-acylglycerol-3-phosphate O-acyltransferase 1), ATP5G1 [ATP synthase, H+ transporting, mitochondrial F0 complex, subunit C1 (subunit 9)], and RPL35A (ribosomal protein L35a) were used as internal controls because their expression levels were found to be unaltered in microarray experiments. The fold change (log2 ratio) in PBEF1 gene expression was calculated over its mean expression in normal brain samples obtained from previously published results [5]. Delta-delta CT method was used for the calculation of ratios. Sequences of reverse transcription-PCR primers and conditions used will be provided on request."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Western Blot Analysis",
+                    "paragraphs": [
+                        "Western blot analysis was performed as described previously [5] with rabbit polyclonal antibody against GST-PBEF1 raised in the laboratory using a standard immunization protocol and antitubulin antibody."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Nmprtase Assay",
+                    "paragraphs": [
+                        "The measurement of NMPRTase activity was carried out as described before [7]. To prepare cytoplasmic extract, as source of NMPRTase, we collected logarithmically growing U87 glioblastoma cells by centrifugation and washed three times with Ca2+ Mg2+ free PBS. The cells pellet (2-3 \u00d7 107 cells) was suspended and lysed in 1 mL of 0.01 M NaH2PO4 (pH 7.4) by one round of freezing and slow thawing. The clear supernatant was recovered on ice after centrifugation at 23,000 \u00d7 g at 0\u00b0C for 90 minutes. 70 mL of 1% protamine sulfate was added per ml of supernatant and incubated for 15 min on ice, followed by centrifugation at 23,000 \u00d7 g at 0\u00b0C for 30 minutes. The final supernatant was stored in small aliquots at -80\u00b0C. The NMPRTase activity was determined in 0.5 mL of reaction solution consisting of 5 mM MgCl2, 2 mM ATP, 0.5 mM phosphoribosyl PPI, 0.1 mM 14[C]-nicotinamide (specific activity: 50 mCi/mmol; American Radio labeled Chemicals, Inc.) and 50 mM Tris (pH 8.8) at 37\u00b0C. The reaction was started by adding 100 \u03bcL of cell extract and stopped after 1 hr with excess of cold nicotinamide and heating (2 min, 105\u00b0C). The precipitate was removed by centrifugation at 2500 \u00d7 g at 4\u00b0C for 10 min and the supernatant was stored at -20\u00b0C. The 14[C]-labeled components in the cell extracts were separated and identified using thin-layer chromatography (cellulose/1 M ammonium sulphate:ethanol (3:7)). The chromatograms were run, exposed to imaging plates (Fuji) and read using Phosphorimager (Fuji). The 14[C]-labeled NAD+ was quantified using Alpha Innotec software."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Mtt Assay",
+                    "paragraphs": [
+                        "MTT assay was carried out as described previously [20]. A total of 1.5 \u00d7 103 cells/well were plated in a 96-well plate. After 24 h of plating, the cells were treated with indicated amounts of compounds. A measure of 20 \u03bcL (5 mg/mL) of MTT was added to each well 48 hrs after the addition of the compounds. MTT is a tetrazolium salt that is converted by living cells into purple formazan crystals. The medium was removed from the wells 3 hrs after MTT addition and 200 \u03bcL of DMSO was added to dissolve the formazan crystals, and then the absorbance was measured at 550 nm in an ELISA reader."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Description Of The Binding Site",
+                    "paragraphs": [
+                        "The crystal structures of NMPRTase, in complex with the known inhibitor FK866, and reaction product NMN, reveal that the active enzyme exists as a dimer. The structures of the two complexes were very similar to each other and no significant conformational changes were observed upon ligand binding [6], making it meaningful to compare the binding modes of the two ligands. The catalytic centre is present at the interface of the two chains. There are two active sites per dimer and residues from both the chains are involved in the interactions with the product NMN at each site [6]. The binding pockets of the two ligands overlap partly with each other, together extending into a single large pocket resembling a long tunnel, with NMN binding at one end and FK866 spanning till the other end. Some residues are common to both, indicating the overlap in their binding poses. An essential feature of both the binding poses is the presence of hydrophobic stacking in which an aromatic group in the ligand is sandwiched between F193 of one subunit and Y18 of another subunit. The conservation of these interactions, especially the hydrophobic stacking, was used as a criterion for filtering docked ligands, subsequent to the selection on the basis of binding energy and cluster size. The uniqueness of the binding site has been studied by comparing NMPRTase with closely related NAPRT and QPRT enzymes, present in the same biochemical pathway [6]. A multiple sequence alignment of the human NMPRTase with the other two proteins showed that they have diverged in terms of sequences considerably, but adopt the same fold. Yet, analysis of their binding sites using PocketMatch [21], indicates that considerable difference exists at the binding site level, suggesting that design of specific inhibitors can be achieved. It has also been reported earlier that FK866, a potent inhibitor of NMPRTase does not inhibit NAPRT, consistent with this observation [6]."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Identification And Analysis Of Potential Compounds",
+                    "paragraphs": [
+                        "As a control study, the enzyme's reaction product NMN as well as the known inhibitor, FK866 were docked to the protein, an exercise which resulted in reproducing the crystal structure poses for both compounds. Table 1 lists the interaction energies computed for the docked NMN and FK866 as well as the deviations from the crystallographic observed poses. The energy values computed for these reference compounds were used as reference values for identifying possible ligands from the large compound library. All those compounds which exhibited interaction energies above this threshold or in other words indicated binding weaker than the reference compounds were eliminated from the list for further analysis. The result of the virtual screening of the dataset is summarized in Table 2.",
+                        "For selection of potential ligands, analysis of ligand protein contacts for top ranking poses of every ligand was carried out and the interactions of docked compounds were visualized. Interactions conserved with NMN and FK866 binding were calculated and compared with that of the short listed compounds. The best poses were identified using the following criteria in the given order of preference i) lowest binding energy in the largest sized cluster ii) number of hydrogen bonds with the active site residues and iii) conservation of interactions with those from NMN/FK866 binding. Preference is given to the largest sized least binding energy cluster and then examined to verify if one or more hydrogen bonds are conserved between the natural substrate NMN, or the previously known inhibitor FK866. This was to ensure that the ligands shortlisted were actually docking into the binding site of interest. All the 34 shortlisted from an initial list of 13214 compounds pass these criteria and is shown in Table 2. The top six in this list that were readily purchasable were considered for further studies which are shown in Table 3. The docking results for all the six compounds showed that docked poses passing the defined thresholds were found to cluster into two main groups, corresponding to the binding modes of NMN and FK866 respectively, with docking energies nearly comparable between the modes for each ligand. The binding sites for both possible modes are shown in Figure 1 and Additional file 1, Figure S1, whereas the list of interactions at the site for both possible modes are indicated in Table 3, and illustrated in Figure 1. 2D-structures of the six compounds and the two control compounds, FK866 and NMN are shown in Figure 2."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Inhibition Of Nmprtase Activity By Selected Lead Compounds",
+                    "paragraphs": [
+                        "We then tested whether the selected lead compounds could inhibit NMPRTase activity. We measured the ability of NMPRTase to convert 14[C]-nicotinamide to 14[C]-NAD+. We had earlier shown that most of the glioblastoma tissues have elevated levels of transcript and protein of PBEF1/NMPRTase [5]. To prepare NMPRTase enzyme, we first tested a panel of glioma derived cell lines for NMPRTase transcript and protein levels. We found that, out of seven glioma cell lines tested, two cell lines, U87 and U138, had substantially high levels of PBEF1 transcripts in comparison to normal brain samples (Figure 3A). Western blotting analysis also corroborated above results that U87 and U138 had relatively higher levels of PBEF1/NMPRTase protein levels (Figure 3B).",
+                        "We chose U87 cells as the source of NMPRTase. The NMPRTase enzyme extract from U87 converted the 14[C] labeled nicotinamide to NAD+ (Figure 3C lane 1). FK866, the known inhibitor of NMPRTase inhibited this reaction efficiently (Figure 3C compare lane 2 with 1). As expected, the extract from U251 cells, which had very low levels of PBEF1 transcript and protein, did not convert 14[C] labeled nicotinamide to NAD+ (Figure 3C lane 3). We then tested the ability of six selected lead compounds to inhibit NMPRTase activity. We found that, of the six compounds tested, compounds 4 and 5 inhibited NMPRTase activity (Figure 4A and 4B) significantly. Compound 5 was found to be more potent in NMPRTase inhibition (Figure 4A and 4B compare lanes 23-26 with lanes 1 and 2)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Inhibition Of Growth Pbef1 Over Expressing Glioblastoma Cell Line U87",
+                    "paragraphs": [
+                        "To correlate the NMPRTase inhibition property with cell growth inhibition, we then tested the ability of these compounds to inhibit the growth of a glioma derived cell line U87, which has elevated levels of PBEF1. FK866, the known NMPRTase inhibitor, inhibited the growth of U87 cells efficiently with an IC50 of 170 \u03bcM (Figure 5 and Table 4). Of the six selected lead compounds, we found that only compounds 1 and 5 inhibited the growth of U87 cells with an IC50 of 335 and 325 \u03bcM respectively (Figure 5 and Table 4). Since compound 1 did not inhibit NMPRTase activity (Figure 4), it might utilize a different mechanism to inhibit the growth of U87 cells. However, compound 5 inhibited NMPRTase activity as well as the growth of U87 cells. Further to confirm that inhibition of U87 cell growth by FK866 and compound 5 is because of their ability to inhibit NMPRTase, we tested the effect of these two compounds on the growth U251 cells which does not express NMPRTase. As expected, neither FK866 nor compound 5 inhibited U251 cells, while adriamycin inhibited very efficiently (data not shown). We thus conclude that compound 5 is a potent inhibitor of NMPRTase and cancer cell growth."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Discussion",
+            "paragraphs": [
+                "Virtual screening procedure carried out resulted in short-listing of six compounds which were obtained and tested experimentally using both the enzyme inhibition assay as well as the cell growth inhibition assay. It is indeed gratifying that two of the six compounds clearly exhibit enzyme inhibition. This clearly demonstrates the usefulness of the docking based virtual screening approach used here, utilizing three dimensional structural information at atomic level detail.",
+                "Analysis of the docked poses indicate that two binding modes are observed within the large tunnel like binding pocket encompassing sites for both the natural product NMN and the partly overlapping larger inhibitor FK866. Given that the docking algorithm uses heuristics, a typical docking simulation is carried out by repeating each run about 150 times, each time using a different random number as a seed. This clustering pattern obtained subsequently for each docking simulation reflects the propensity of the ligand to occupy the binding site in the respective modes. Figure S1a-S1f shows the binding sites of all the six compounds. For all the six compounds tested, distinct clusters were observed indicating the two modes of binding as top ranking poses, the first overlapping in position with that of the natural product NMN and the second overlapping substantially with that of FK866. Figure S1i shows the superposition of the site of FK866 (as in 2GVJ) and the site corresponding to the second binding mode of compound 5, which clearly illustrates that the identified compound 5 occupies the same pocket as that of FK866.",
+                "The interactions observed in the first mode include a stacking interaction of the aromatic ring in the ligand with the side chains of F193 of one subunit and Y18 of another subunit. In the second mode, interactions with Y188, K189, Y240, S241, V242, S275, I309, R349, I351, and E376 are commonly seen. Figure 1 shows the binding sites of both modes for compound 4, 5; single modes of NMN (as in 2GVG) and FK866 (as in 2GVJ). It is interesting to note that majority of these residues are conserved in the NMPRTase proteins from several sources and their close sequence homologues.",
+                "Interestingly, Compound 5 docked with the lowest binding energy of all the compounds in both modes. It forms more number of hydrogen bonds with the binding site residues, all of them being crucial for NMN/FK866 binding. The two modes reflect the most plausible modes of binding for the compounds studied, and any one of them may be more important than the other for achieving inhibition. Irrespective of that, compound 5 is seen to be a better ligand in both the poses, further corroborated by the experimental studies. To consider the situation of the concentration of NMN being high in cellular environment, and hence the possibility of high population of NMPRTase molecules bound to NMN and subsequently any influence this might have for binding compound 5, we repeated the docking exercise with NMPRTase bound to product NMN and next with natural substrate nicotinamide. The second mode of binding for compound 5 was reproduced in this exercise, indicating that this compound will be capable of binding to the enzyme in the presence of NMN/nicotinamide also and will not have to compete with NMN/nicotinamide. This observation leads to favoring the second mode binding as being more important for achieving inhibition. Competition assays using enzyme kinetics has been carried out for FK866, but the interpretation of whether it is a competitive or non-competitive inhibitor is not clear [4,5]. It may also be possible that the compounds could inhibit the enzyme by both modes of action, thus exhibiting a 'mixed inhibition'. Despite these, the fact remains that both FK866 and the new compound identified in this study are effective in inhibiting glioma cell growth and this has been demonstrated to be mediated via inhibition of NMPRTase.",
+                "The compound 5 also exhibited highest efficacy in enzyme inhibition and in cell growth assay among all the compounds tested. This compound had, in addition to the hydrophobic and aromatic interactions, hydrogen bonding interactions with F193, G353, G384, R196, H247 and R311 of one subunit and Y18 of another subunit in the first mode; and Y188 and H191 in the second mode. The other compounds, though bind at the same location do not have hydrogen bonding moieties in them, perhaps explaining higher strength of binding and hence inhibition by compound 5."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "Virtual screening by molecular docking, carried out using AutoDock, has thus proved to be useful in short listing potential lead compounds. Recently Colombano and coworkers [22] reported the synthesis of FK866 analogues and showed that two of them were indeed good inhibitors of NMPRTase. All these are however based on the same scaffold. It is indeed useful to see that two new molecules belonging to different scaffolds have now been identified and tested through experimental methods. Compound 5 in particular, serves as a promising lead compound for furthering structure based discovery of drugs for use in glioma."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "List Of Abbreviations",
+            "paragraphs": [
+                "PBEF1: Pre-B-cell colony enhancing factor; NMPRTase: Nicotinamide phosphoribosyltransferase; GBM: Glioblastoma; ART: ADP-ribosyltransferases; PARP: Poly ADP Ribose Polymerase; MTT: 3-(4,5-Dimethylthiazol-2-yl)-2,5-Diphenyltetrazolium Bromide."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Competing Interests",
+            "paragraphs": [
+                "The authors declare that they have no competing interests."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Authors' Contributions",
+            "paragraphs": [
+                "RB and ES carried out docking and related studies; PS carried out glioma enzyme and cell based assays. NC and KS conceived of the study, and participated in its design and coordination and helped to draft the manuscript. All authors read and approved the final manuscript."
+            ],
+            "subsections": []
+        }
+    ]
+}

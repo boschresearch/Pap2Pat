@@ -1,0 +1,212 @@
+# DESCRIPTION
+
+## FIELD
+
+- introduce peptidomimetic foldamers
+
+## BACKGROUND
+
+- motivate protein-protein interactions
+- describe limitations of peptides
+- introduce foldamers
+- discuss oligourea foldamers
+- highlight importance of foldamer research
+- motivate design of new foldamer architectures
+
+## SUMMARY
+
+- introduce peptide-oligourea hybrids
+- describe structure of hybrids
+- highlight advantages of hybrids
+- describe Xu residue
+- provide examples of Xu residue
+- describe amino urea residues
+- provide examples of amino urea residues
+- describe peptide-amino urea hybrid compounds
+- provide examples of hybrid compounds
+- describe glucagon-like peptide-1 (GLP-1) hybrids
+- describe pharmaceutical composition
+- describe method of treating disease
+
+## DETAILED DESCRIPTION
+
+- provide context for invention
+- incorporate prior art by reference
+- describe oligourea foldamers
+- introduce peptide-amino urea hybrid foldamer compounds
+- describe advantages of peptide-oligourea hybrid compounds
+- define terms used in disclosure
+- explain use of transitional phrases
+- define "at least one" phrase
+- describe method steps
+- define "peptides" and "polypeptides"
+- define "amino" and "amine"
+- define "amino acid" and "amino acid sidechain"
+- describe urea group
+- define "peptide precursor" and "oligourea"
+- define "compound"
+- define "amido"
+- define "cyano"
+- define "nitro"
+- define "azido"
+- explain abbreviations
+- define "alkyl"
+- define "alkenyl"
+- define "alkynyl"
+- define "alkylene"
+- explain "unsubstituted" and "substituted"
+- provide examples of substituents
+- define "hydroxyl"
+- define "heterocycle"
+- define "heteroaryl"
+- define chemical groups
+- define aryl group
+- define substituted aryl group
+- define carboxyl group
+- define cycloalkyl group
+- define substituted cycloalkyl group
+- define heterocycloalkyl group
+- define substituted heterocycloalkyl group
+- define alkenyl group
+- introduce imidazole group
+- introduce aralkyl group
+- introduce guanidine group
+- describe oligourea compounds
+- describe peptide-oligourea hybrid compounds
+- describe structure of peptide-oligourea hybrid compounds
+- describe properties of peptide-oligourea hybrid compounds
+- describe GLP-1 oligourea hybrid compounds
+- describe bioactivity of GLP-1 peptide-oligourea hybrid compounds
+- describe secondary structure of peptide-oligourea hybrid compounds
+- define peptide-oligourea hybrid compounds
+- describe structural variations
+- specify oligourea portion linkage
+- detail amino urea residue count
+- introduce chemical modifications
+- describe pharmaceutical forms
+- outline pharmaceutical composition
+- specify effective amount
+- describe medicinal uses
+- discuss salt forms
+- detail crystal forms and solvates
+- describe chiral centers and isomers
+- define pharmaceutically acceptable salts
+- define prodrugs
+- motivate prodrugs
+- describe prodrug forms
+- exemplify prodrugs
+- define protecting groups
+- describe protected forms
+- exemplify protecting groups
+- introduce formulations
+- describe routes of administration
+- describe pharmaceutical compositions
+- exemplify pharmaceutical forms
+- describe suspensions in oil
+- describe preparation of injection compositions
+- describe preparation of oral compositions
+- define rate controlling polymer
+- list examples of controlled release polymers
+- describe composition of controlled release preparation
+- list auxiliary agents
+- describe manufacturing methods
+- describe oral dosage forms
+- describe pharmaceutical compositions for rectal administration
+- describe pharmaceutical compositions for parenteral administration
+- describe ointments
+- describe fatty ointments
+- describe creams
+- describe pastes
+- describe foams
+- describe tinctures and solutions
+- describe co-administered formulations
+- list anti-cancer agents
+- list antiviral agents
+- list antimicrobial agents
+- list antifungal agents
+- define disease state or condition
+- describe method of treatment
+- define treatment and effective amount
+- describe process for treatment of disease states
+- list disease states or conditions that can be treated
+- list diseases
+- list additional diseases
+- define cancer
+- list exemplary cancers
+- describe therapeutic methods
+- identify subjects in need of treatment
+- describe administration of compounds
+- provide methods of making and using compounds
+- describe diagnostic agent use
+- describe method of monitoring treatment progress
+- determine level of diagnostic marker
+- compare levels of marker
+- describe dosage of active compound
+- describe unit dosage form
+- describe oral dosage
+- describe achieving peak plasma concentrations
+- describe intravenous injection
+- describe oral administration
+- describe methods of preparation
+- provide additional methods for synthesis
+
+### Examples
+
+- introduce peptide-oligourea hybrid design
+- motivate GLP-1-NH2 modification
+- describe consecutive amino acid residues replacement
+- discuss side chain projection of Xu residues
+- introduce Alau triad scan
+- describe functional assay for agonistic activity
+- summarize results of Alau triad scan
+- reintroduce native side chains in oligourea triads
+- discuss results of reintroducing native side chains
+- introduce enzymatic and mouse plasma degradation studies
+- describe NEP 24.11 degradation assay
+- discuss results of NEP 24.11 degradation assay
+- describe mouse plasma degradation assay
+- discuss results of mouse plasma degradation assay
+- introduce in vivo studies
+- describe effect of analogues on blood glucose concentration
+- discuss results of in vivo studies
+- summarize conclusions and future directions
+- describe in vitro pharmacology
+- describe enzymatic degradation
+- describe mouse plasma stability
+- describe in vivo studies in mice
+- describe blood glucose experiment in healthy mice
+- describe ipgtt experiments in mice
+- describe pharmacokinetics
+- perform statistical analysis
+- synthesize azido building block
+- synthesize monomer M1
+- synthesize monomer M2
+- describe general procedure for synthesizing oligomers
+- detail steps for synthesizing oligomers
+- describe procedure for reducing azide group
+- describe procedure for cleaving from resin
+- describe purification and characterization methods
+- describe alternative procedure for synthesizing oligomer 25
+- describe synthesis procedure C
+- detail synthesis of peptide 1
+- detail synthesis of peptide-oligourea hybrids 2-14
+- describe characterization of oligomers 1-25
+- present EC50 determination results for peptide-oligourea hybrids 1-14
+- present enzymatic degradation results for peptide-oligourea hybrids 2, 5, 9, 11
+- present mouse plasma degradation results for peptide-oligourea hybrids 2, 5, 9, 11
+- provide HPLC and LC-MS data for peptide-oligourea hybrids 1-14
+- illustrate concentration-response curves for peptide-oligourea hybrids 1-14
+- describe peptide-oligourea hybrids
+- synthesize and characterize peptide-oligourea hybrids
+- demonstrate concentration-response curves
+- demonstrate enzymatic degradation
+- demonstrate mouse plasma degradation
+- demonstrate NEP 24.11 degradation assay
+- demonstrate mouse plasma degradation assay
+- demonstrate pancreatin degradation assay
+- demonstrate IPGTT 2 h after dosing
+- evaluate agonist activity
+- demonstrate concentration-response curves (second method)
+- discuss experimental results
+- provide concluding remarks
+

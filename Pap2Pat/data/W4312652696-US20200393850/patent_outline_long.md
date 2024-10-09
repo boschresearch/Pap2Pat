@@ -1,0 +1,94 @@
+# DESCRIPTION
+
+## SUMMARY
+
+- summarize embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce V2V communication
+- mention road safety scenarios
+- mention traffic efficiency scenarios
+- mention infotainment scenarios
+- list road safety scenarios
+- describe high-density platooning
+- explain platoon leader
+- describe decentralized controller
+- list mobile communication technologies
+- list V2V communication technologies
+- motivate autonomous driving
+- describe cooperation with surrounding vehicles
+- define communication standards
+- explain performance metrics
+- describe variation in KPIs
+- motivate AQoSA
+- introduce QoS prediction
+- describe HDPL driving maneuvers
+- motivate adapting inter-vehicle distance
+- describe prior art DE 10 2010 013 647 A1
+- describe prior art DE 10 2016 205 143 A1
+- describe prior art US 2017/018190 A1
+- describe prior art US 2019/246303 A1
+- describe prior art Guillaume Jornod et al.
+- motivate adapting inter-vehicle distance
+- introduce disclosed embodiments
+- describe method for determining HDPL driving maneuver
+- describe apparatus for performing method
+- describe transportation vehicle
+- describe computer program
+- describe selecting HDPL closing maneuver
+- describe selecting HDPL opening maneuver
+- describe testing HDPL maneuvers
+- describe formula for testing HDPL maneuvers
+- describe Pareto efficient solution
+- describe apparatus and computer program
+- describe system architecture
+- introduce transportation vehicle
+- describe on-board communication module
+- explain mobile communication service provider
+- describe base station
+- introduce backend server
+- describe infrastructure network component
+- explain interfaces of LTE network architecture
+- introduce platooning
+- describe high density platooning
+- explain inter-vehicle distance measurement
+- describe platoon coordination module
+- introduce block diagram of transportation vehicle's board electronics system
+- describe infotainment system
+- explain camera and radio components
+- describe navigation device and telephone
+- introduce instrument cluster
+- explain data bus
+- describe communication module
+- introduce engine control unit
+- describe ESC control unit
+- explain transmission control unit
+- describe CAN bus system
+- introduce LIDAR and RADAR sensors
+- describe automatic driving control unit
+- explain adaptive cruise control unit
+- introduce UWB transceivers
+- describe on-board diagnosis interface
+- explain gateway
+- describe traffic scenario
+- introduce platoon leader
+- explain control communication
+- describe cooperative awareness messages
+- introduce decentralized environmental notification message
+- explain collective perception messages
+- describe communication service prediction server
+- introduce packet inter-reception time
+- explain predictive quality of service profile
+- describe PIR profile
+- introduce feasibility algorithm
+- explain fuel investment
+- describe compensation time
+- introduce opening maneuver
+- explain uncertainty on T2
+- describe time TQ
+- introduce flow chart for feasibility algorithm
+- explain testing formula
+- describe implementation of HDPL application
+- explain hardware and software implementation
+

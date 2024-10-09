@@ -1,0 +1,186 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- motivate adipocyte regulation
+
+## SUMMARY OF THE INVENTION
+
+- disclose MCT1 inhibitor method
+
+## DETAILED DESCRIPTION
+
+- clarify scope of disclosure
+- define range of values
+- establish meaning of technical terms
+- incorporate publications by reference
+- describe embodiment variations
+- outline experimental techniques
+- provide example protocols
+- clarify terminology and sequence
+
+### Definitions
+
+- define subject
+- define patient
+- define pharmaceutically acceptable
+- define alkyl
+- define cycloalkyl
+- define substituted alkyl
+- define aryl and heteroaryl
+- define aralkyl
+- define lower alkyl
+- define heterocyclyl
+- define polycyclyl
+- define carbocycle
+- define halogen
+- define hydroxyl
+- define sulfonyl
+- define amine and amino
+- define alkoxyl
+- define ether
+- define sulfonamido
+- define protecting group
+- define effective amount
+- define treating or treatment
+- define MCT1 inhibitors
+- specify R1, R2, R3, Q, and Ar groups
+- provide formulas for compounds A, B, and C
+- describe R1, R2, R3, and R4 groups for compounds A, B, and C
+- specify Z, n, and ring groups for compounds A, B, and C
+- describe L, Q, and R5 groups for compounds A, B, and C
+- provide examples of MCT1 inhibitors
+- describe AZD3965
+- describe AR-C155858
+- describe α-cyano-4-hydroxycinnamic (α-CCA)
+- describe FACH or [F18]FACH
+- describe compound A
+- introduce treating insulin resistance
+- describe disorders associated with insulin resistance
+- describe methods of treating insulin resistance
+- describe identifying subjects at risk for insulin resistance
+- describe prophylactic applications of MCT1 inhibitors
+- describe therapeutic applications of MCT1 inhibitors
+- describe modulating insulin resistance or sensitivity
+- describe treating cancers with MCT1 inhibitors
+- describe dosage of MCT1 inhibitors
+
+### EXAMPLES
+
+- introduce obesity and type 2 diabetes mellitus
+- describe epidemiological evidence
+- explain molecular mechanisms of insulin resistance
+- discuss adipocyte hypertrophy and hyperplasia
+- introduce paracrine growth factors and cell cycle regulation
+- describe de-differentiation and re-differentiation of mature adipocytes
+- introduce monocarboxylate transporter 1 (MCT1) and its functions
+- discuss MCT1 expression in proliferating cells and adipocyte differentiation
+- explain lactate metabolism and insulin resistance
+- introduce redox homeostasis and lactate's role
+- describe MCT1's impact on redox signaling and mitochondrial biogenesis
+- introduce study objective: inhibit MCT1 to induce adipocyte proliferation and hyperplasia
+- describe experimental design: 3T3-L1 cell model and MCT1 inhibitor AZD3965
+- present results: MCT1 expression in 3T3-L1 cells
+- describe MCT1 knockdown and pharmacological inhibition
+- present results: lipid accumulation in 3T3-L1 cells
+- present results: adipogenic gene expression in preadipocytes
+- present results: protein expression of PPARγ, FABP4, and HSL
+- describe experimental design: MCT1 inhibition in mature adipocytes
+- present results: lipid content in mature adipocytes
+- present results: viability assay and cell death elimination
+- present results: changes in lipid metabolism and NADP+/NADPH bioavailability
+- present results: influence of MCT1 inhibition on lipolysis
+- conclude: MCT1 inhibition promotes adipocyte proliferation and hyperplasia
+- introduce adipocyte cell cycle regulation
+- assess lipid content and metabolism in MCT1 inhibitor treated cells
+- measure transcript and protein expression levels of adipogenic proteins
+- determine changes in adipokine secretion following AZD3965 treatment
+- measure intracellular lactate concentration
+- examine changes in intracellular pyruvate and NAD+/NADH ratio
+- conduct RNA sequencing and pathway analysis
+- validate RNA-seq results using RT-qPCR
+- probe CDK1 for changes in protein expression and phosphorylation
+- assess changes in adipocyte proliferation using a fluorescent DNA dye-based assay
+- perform proliferation assays on preadipocytes
+- capture proliferation of MCT1 inhibitor treated mature adipocytes using confocal microscopy
+- quantify Ki67 expression
+- evaluate impact of MCT1 inhibition on mature adipocyte insulin sensitivity
+- monitor alterations in glucose uptake rates
+- determine if CDK1 inhibition affects glucose uptake
+- investigate insulin handling in adipocytes with decreased MCT1 expression
+- assess basal glucose uptake levels in 3T3-L1-shMCT1 cells
+- evaluate insulin-stimulated glucose uptake in 3T3-L1-shMCT1 cells
+- test overarching hypothesis that MCT1 inhibition induces hyperplasia
+- discuss adipose tissue expansion and ectopic fat deposition
+- discuss adipocyte hypertrophy and hyperplasia
+- discuss insulin sensitivity and adipocyte size
+- discuss lactate production and release in adipocytes
+- discuss MCT1 activity and adipocyte biology
+- introduce 3T3-L1 cell system
+- describe in vitro and transcriptomic analyses
+- introduce AZD3965 and its clinical trials
+- discuss safety and tolerability of AZD3965
+- summarize results of RNA-seq experiment
+- summarize pathway analysis results
+- conclude discussion
+- introduce adipocyte differentiation
+- inhibit MCT1 and observe lipid accumulation
+- analyze gene expression in differentiated adipocytes
+- observe decrease in lipid content with MCT1 inhibition
+- analyze lipolysis and lipogenesis in adipocytes
+- assess adipokine secretion and de-differentiation
+- monitor intracellular lactate and pyruvate levels
+- analyze transcriptomic changes with MCT1 inhibition
+- identify cell cycle promoting genes
+- assess adipocyte proliferation with MCT1 inhibition
+- visualize proliferation with Ki67 expression
+- evaluate insulin-stimulated glucose uptake
+- assess CDK1-dependent glucose uptake
+- evaluate insulin responsiveness in shMCT1 cells
+- assess adipocyte lipid storage capacity
+- discuss MCT1 inhibition and adipocyte hyperplasia
+- describe cell culture and maintenance
+- develop shMCT1 cell line
+- describe differentiation protocol
+- perform Oil Red O staining
+- perform RT-qPCR analysis
+- perform immunoblotting
+- describe RNA isolation and quantification
+- describe RT-qPCR detection
+- describe immunoblotting protocol
+- describe protein isolation and quantification
+- describe sample preparation and SDS-PAGE
+- describe protein transfer and blotting
+- describe antibody incubation and washing
+- describe blot revelation and quantification
+- provide primer sequences for RT-qPCR
+- describe membrane protein isolation
+- describe RIPA lysis buffer and protein isolation
+- describe protein denaturation and sample preparation
+- provide references for cited studies
+- describe cell viability assay
+- measure cell toxicity
+- describe NADP++NADPH bioavailability assay
+- measure NADP++NADPH concentration
+- describe lipolysis assay
+- quantify intracellular glycerol
+- describe adipokine antibody array
+- analyze adipokine secretion
+- describe intracellular lactate assay
+- measure intracellular lactate
+- describe intracellular pyruvate assay
+- measure intracellular pyruvate
+- describe NAD+/NADH ratio assay
+- measure NAD+/NADH ratio
+- describe RNA-Seq experiment
+- analyze RNA-Seq data
+- perform Ingenuity pathway analysis
+- describe confocal microscopy
+- quantify Ki67 expression
+- describe proliferation assay
+- measure cell proliferation
+- describe glucose uptake assay
+- measure glucose uptake
+- describe hyperplasia assay
+- analyze statistical significance
+

@@ -1,0 +1,150 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate machine learning
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- introduce recommendation systems
+- describe clickthrough rate prediction models
+- explain negative sampling
+- motivate non-uniform data subsampling
+- describe pilot-model techniques
+- explain limitations of model-based sampling
+- introduce real-life scenarios
+- describe online-offline discrepancy
+- explain extra dependencies across system modules
+- motivate model-agnostic data subsampling methods
+- describe topology of user-item graph
+- estimate importance of user-item interactions
+- perform propagation step
+- describe data subsampling system
+- explain user-item graph sub-system
+- describe pilot model sub-system
+- explain smoothing sub-system
+- describe ensemble sub-system
+- generate subsampling rate
+- describe set of training data
+- explain binary classification problem
+- describe generalized logistic regression model
+- explain imbalanced set of training data
+- describe negative sampling algorithm
+- explain measure of importance for negative instances
+- describe hard negative sampling procedure
+- correct log odds
+- explain model-agnostic hardness score
+- relate sample hardness to graph topology
+- determine effective conductance
+- estimate sample hardness via effective conductance
+- define hardness score
+- introduce commute time distance
+- approximate commute time distance using random walk
+- transform commute time into effective conductance
+- motivate model-agnostic methods
+- describe limitations of model-agnostic methods
+- introduce pilot model sub-system
+- generate pilot prediction as hardness score
+- describe table of pilot predictions
+- introduce smoothing subsystem
+- smooth hardness scores associated with model-agnostic methods
+- smooth hardness scores associated with model-based methods
+- describe line-graph transformation
+- smooth model-agnostic hardness scores using line-graph transformation
+- smooth model-based hardness scores using line-graph transformation
+- describe graph propagation techniques
+- smooth hardness scores using graph propagation
+- introduce iterative approximation approach
+- describe edge uncertainty propagation
+- introduce ensemble sub-system
+- generate subsampling rate based on importance
+- describe final subsampling rate determination
+- introduce heuristic strategies for combining subsampling methods
+- subsample negative instances in training data
+- train offline recommendation model using subsampled training set
+- construct user-item graph
+- use negative sampling to reduce dataset size
+- estimate importance of user-item interactions via graph conductance
+- measure importance of training data via sample hardness using pre-trained pilot model
+- determine final subsampling rate based on importance estimated from user-item graph and importance measured by pre-trained pilot model
+- generate subsampling rate based on importance estimated from user-item graph and importance measured by pre-trained pilot model
+- illustrate example process of improving data subsampling for recommendation systems
+- construct user-item graph associated with training data
+- estimate hardness score associated with each of negative instances
+- smooth hardness score associated with each of negative instances using graph propagation
+- illustrate example process of improving data subsampling for recommendation systems
+- smooth hardness score associated with each of negative instances using graph propagation
+- determine average effective conductance associated with neighboring negative edges of each negative edge
+- calculate weighted sum of average effective conductance and corresponding effective conductance for each negative edge
+- illustrate example process of improving data subsampling for recommendation systems
+- generate hardness score associated with each negative instance in training data using pre-trained pilot model
+- smooth hardness score associated with each of negative instances
+- illustrate example process of improving data subsampling for recommendation systems
+- smooth model-agnostic hardness scores and model-based hardness scores using line-graph transformation of user-item bipartite graph and graph propagation
+- determine final hardness score associated with each negative instance in training data
+- generate subsampling rate of negative instances in training data based on final hardness score associated with each of negative instances
+- subsample negative instances in training data based on subsampling rate
+- train offline recommendation model using positive instances in training data and subsampled negative instances
+- describe results of experiments showing pilot misspecification leads to discrepancies in model performance
+- describe empirical results over two datasets demonstrating superiority of model-agnostic subsampling method
+- describe results of extensive ablation studies investigating effectiveness of model-agnostic hardness score, score propagation, and benefit of ensembling model-agnostic and model-based
+- discuss effective resistance and its relationship to negative sampling
+- describe experimental setup for empirical results
+- describe baseline subsampling methods and model selections for experiments
+- describe effect of pilot misspecification on model performance
+- describe target model performance with different data sampling strategies
+- describe ablation studies on subsampling rate
+- describe ensemble strategies for combining model-agnostic and model-based methods
+- describe control experiment investigating whether hardness scores from MA-EC and Opt-Sampling complement each other
+- describe results of control experiment
+- describe ensemble strategies for combining model-agnostic and model-based methods
+- describe results of ensemble strategies
+- describe advantage of MA-EC
+- describe computation of effective conductance
+- describe model-agnostic property of MA-EC
+- conclude description of patent application
+- investigate effectiveness of correcting hardness scores via graph propagation
+- apply score correction in Opt-Sampling and MA-EC and their ensemble
+- explore propagation coefficient γ
+- perform iteration to smooth scores until convergence
+- demonstrate improvement in model performance
+- define effective resistance Reff for graph sparsification
+- compare edge importance using effective resistance and effective conductance
+- show limitations of MA-ER in capturing hard negative instances
+- visualize model training metrics for MA-ER and MA-EC
+- illustrate computing device architecture
+- describe central processing units (CPUs)
+- explain chipset functionality
+- detail random-access memory (RAM) and computer-readable storage medium
+- describe network interface controller (NIC) and network connectivity
+- illustrate mass storage device and storage controller
+- explain data storage and retrieval
+- describe operating system and its functionality
+- detail computer-executable instructions and their transformation of computing device
+- describe input/output controller and input/output devices
+- explain virtual machine host process and virtual machine instances
+- provide disclaimer on limitations of methods and systems
+- define terminology and its usage
+- explain ranges and approximations
+- define "optional" and "optionally"
+- explain "comprise" and variations
+- define "exemplary"
+- explain "such as"
+- describe components and their combinations
+- explain methods and systems in hardware, software, and combined embodiments
+- describe computer program product on computer-readable storage medium
+- explain web-implemented computer software
+- describe block diagrams and flowchart illustrations
+- explain computer program instructions and their loading
+- describe computer-readable memory and its functionality
+- explain article of manufacture including computer-readable instructions
+- describe computer-implemented process
+- explain independence of features and processes
+- describe omission of methods or process blocks
+- explain sequence of blocks or states
+- describe addition or removal of blocks or states
+- explain configuration of systems and components
+- describe memory management and data integrity
+- explain implementation in firmware and/or hardware
+- describe transmission of systems, modules, and data structures
+

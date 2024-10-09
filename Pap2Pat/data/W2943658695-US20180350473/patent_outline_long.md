@@ -1,0 +1,167 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate to monitoring ionizing radiation systems
+
+## BACKGROUND
+
+- introduce nuclear reactor safeguards
+- describe existing safeguards systems
+- discuss limitations of existing systems
+- introduce antineutrino detection
+- discuss prior art
+
+## SUMMARY
+
+- introduce system for monitoring nuclear reactor
+- describe neutron detector configuration
+- describe controller functionality
+- describe aberrant change detection
+- introduce second neutron detector
+- describe isotopic concentration determination
+- describe alert generation
+- introduce expected neutron flux
+- describe simulated and baseline neutron flux
+- describe neutron detector types
+- describe moderator configuration
+- introduce method of monitoring reactor
+
+## DETAILED DESCRIPTION
+
+- introduce reactor safeguards regimes
+- describe illicit use of reactor facilities
+- summarize current safeguard monitoring systems
+- motivate need for real-time monitoring
+- introduce anti-neutrino detectors
+- describe limitations of anti-neutrino detectors
+- introduce neutron detectors as alternative
+- describe positioning of neutron detectors
+- define standoff distance
+- describe potential configurations of neutron detectors
+- motivate use of neutron detectors
+- describe unknowns prior to developing new monitoring system
+- summarize discovery of neutron detection at standoff distances
+- describe advantages of neutron detectors over anti-neutrino detectors
+- summarize isotopic properties of fuel
+- describe how neutron detection can facilitate detection of changes in isotopic composition
+- describe how readings from multiple detectors can be coordinated
+- describe advantages of smaller neutron detectors
+- compare event rates of neutron and anti-neutrino detectors
+- introduce equation for neutron detection
+- introduce equation for reactor power
+- describe monitoring system 100
+- describe nuclear reactor 102
+- describe reactor core 104 and fuel bundles 106
+- describe radiation shield 110
+- describe escaping neutrons 108a
+- describe correlation between escaping neutrons and reactor core traits
+- describe neutron detectors 120
+- describe stand-off perimeter 122
+- describe advantages of multiple radiation detectors
+- describe detector array
+- describe monitoring neutron flux
+- describe monitoring changes in neutron flux per unit reactor power
+- describe system 100
+- introduce neutron flux per unit reactor power baseline
+- detect changes in neutron flux per unit reactor power
+- alert system users to changes
+- investigate changes in neutron flux per unit reactor power
+- describe radiation detectors
+- locate radiation detectors outside stand-off perimeter
+- describe neutron detectors
+- detect neutrons originated from nuclear fission reactions
+- generate output signals based on neutron flux detected
+- transmit output signals to system controller
+- describe system controller
+- receive input signals from reactor and sensors
+- monitor power output of reactor
+- store information about reactor
+- determine if reactor is operating within reported parameters
+- calibrate system for given reactor
+- model expected changes to fuel composition over time
+- measure baseline of neutron flux per unit reactor power
+- detect deviations from baseline
+- operate system as compliance and audit tool
+- determine expected neutron flux per unit reactor power
+- compare measured neutron flux to expected neutron flux
+- generate output based on comparison
+- alert system users to differences in neutron flux
+- describe neutron detectors used in system
+- achieve detector signal-to-background ratio
+- describe moderator used to slow neutrons
+- convert fast neutrons to thermal neutrons
+- describe alternative radiation detectors
+- describe Boron Coated Straw detector
+- describe B10+ stainless steel tubes detector
+- describe detection of thermal neutrons
+- describe NRU reactor components
+- detail BCS detector setup
+- explain signal processing components
+- describe data acquisition system
+- detail experimental setup
+- describe detector placement locations
+- explain data collection procedure
+- compare detector count rate with reactor power
+- show correlation between detector count rate and reactor power
+- describe signal to background ratio
+- explain difference in signal between locations A and B
+- describe simulated neutron emission
+- derive ratio of neutron flux to reactor power
+- show linear dependence of detector count rate on reactor power
+- compare experimental and simulated data
+- describe application of system for reactor monitoring
+- explain use of isotopic-specific characteristics
+- describe measurement of variations in reactor power
+- explain analysis of variation in detection rate
+- describe application for independent verification
+- simplify model for neutron flux per unit reactor power
+- describe changes in fissile isotope inventory
+- show predicted reduction in neutron flux
+- describe changes in average fissile isotope masses
+- show changes in measured neutron count rate and predicted neutron flux
+- describe demonstration of stand-off reactor monitoring
+- explain factors affecting detection efficiency
+- compare BCS and B10+ detector data
+- describe environmental shielding and overburden
+- show correlation between detector signals at locations A and B
+- describe regular deviations in signal at Location B
+- explain timing of online refueling activities
+- describe blocking of neutrons by fuel rod flask
+- explain spikes in count rate during refueling
+- motivate multiple detectors
+- describe detector placement
+- introduce method 600
+- describe step 602
+- describe step 604
+- describe step 606
+- describe step 608
+- describe step 610
+- describe step 612
+- describe step 614
+- describe relative analysis
+- describe absolute analysis
+- describe iterative analysis
+- describe independent analysis
+- describe controller functionality
+- describe stand-off neutron monitoring
+- introduce Monte Carlo model
+- describe detector model
+- describe simulation approach
+- describe stage 1
+- describe stage 2
+- describe stage 3
+- describe simulation results
+- describe neutron energy spectra
+- describe area sums
+- describe reactor-power normalized neutron flux
+- describe BCS detector
+- describe B10+ detector
+- describe data acquisition
+- describe data analysis
+- describe time-series plots
+- describe detector count rate
+- describe comparison to reactor power
+- describe scope of invention
+- describe non-limiting nature
+

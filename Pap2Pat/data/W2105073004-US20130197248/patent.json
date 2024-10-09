@@ -1,0 +1,684 @@
+{
+    "id": "US20130197248",
+    "authors": [
+        "Jens Nielsen",
+        "Shuobo Shi"
+    ],
+    "title": "METHODS AND PRODUCTS FOR PRODUCTION OF WAX ESTERS (U.S. NATIONAL PHASE)",
+    "date": "2011-08-06 00:00:00",
+    "abstract": "The present invention relates to the provision of genetically modified fungal cells, such as yeast cells with an improved ability for producing different fatty acids and specifically fatty acid ethyl esters (FAEE), the main components of biodiesel. An increased in fatty acid production, and hence in FAEE, is obtained in the first place by expressing different heterologous polypeptides in combination with the down-regulation, attenuation, deletion or over-expression of specially selected genes, wherein said genes encode enzymes involved in the fatty acids synthesizing pathway, fatty acid consuming pathways, carbohydrate biosynthesis pathways or enzyme acting as wax ester transporters or a combination thereof. The methods and products of the invention would allow large-scale production of FAEE with carbohydrates as the only externally-supplied substrate.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "1. Field of the Invention",
+                        "The present invention relates to the development of genetically engineered microorganisms that can produce wax esters in a controllable and economic fashion. More specifically the invention relates to the production of liquid wax esters that can be used for biofuel, lubricants, cosmetics, linoleum, printing inks as well as products related thereto, and for the production of solid wax esters used for candles and polishes as well as products related thereto.",
+                        "2. Description of the Related Art",
+                        "Fossil fuels, such as coal, oil, and natural gas, have been powering modern society for more than one century. However, fresh discoveries of deposits are on the wane and demands are increasing. The world's demand of fossil fuels will soon outweigh the current supply. An innovative approach offering some solution comes from the biotechnology industries. Efforts have made biodiesel as one of the most thoroughly developed and promising alternative fuels on the market. It works well in conventional diesel engines, with less hazardous emissions, and is consumed at greater than 3.5 billion gallons per year.",
+                        "Biodiesel is generally composed of fatty acid methyl esters (FAMEs) or fatty acid ethyl esters (FAEE), and is mostly derived from vegetable oil or animal fat by chemically transesterification with methanol or ethanol. Despite the fact that ethanol-yielded FAEEs have better performances, for cost reasons methanol is the reagent most frequently used for triglyceride transesterification. The current process has several drawbacks, including energy intensiveness, consuming edible feedstocks, difficulty of removal of the catalyst from the product and treatment of toxic waste-water, as well as geographical and seasonal restrictions.",
+                        "To overcome the problems related to the use of catalysts people have been exploring new alternatives such as enzymatic conversion using lipases (EC 3.1.1.3, triacylglycerol hydrolases). Lipases can break down neutral lipids such as triglycerides and perform a transesterification reaction in a solvent system (i.e. tert-butanol). Enzymatic production of biodiesel can be carried out at moderate reaction conditions and at a lower alcohol to oil ratio. The main drawbacks with this kind of enzymatic catalysis are the strong inactivation effect caused by alcohols (i.e. methanol) and the high enzyme costs.",
+                        "Both chemical and enzymatic transesterification require the use of toxic, petrochemically-derived alcohols and expensive feedstocks. Thus, transesterification-based biodiesel becomes unsustainable when fossil fuel derived products are used. As a result, the current feedstocks for biodiesel are mainly derived from plant oils like rapeseed oil.",
+                        "However such plant oils are inherently limited by supply of water and land, and subsequently, they cannot produce enough biofuel without threatening food supplies and/or native biodiversity. Algae are a promising choice as an alternative feedstock. Nevertheless, there are problems with surface usage and oil extraction from algae based production. Everyone agrees that fuels derived from biomass are one of the best alternatives to fossil fuels. Thus, genetically manipulation of microorganisms to produce fatty acid esters, will substantially contribute to produce environmentally friendlier, sustainable, and cost-effective biodiesels.",
+                        "In this regard, it was previously shown that an engineered E. coli strain expressing the wax synthase (WS) from Acinetobacter baylyi ADP1 and ethanol-production genes from Z. mobilis, could produce fatty acid ethyl esters by esterifying exogenously added fatty acids (Kalscheuer, Stolting et al. 2006). The research is an excellent demonstration of feasibility for microbial production of fatty acid esters. Recently, researchers from the Keasling group and the company LS9 Inc. (South San Francisco, USA) developed this idea further by constructing an engineered E. coli that can produce fatty-acid-derived fuels and chemicals from simple sugars and plant-derived biomass, without the need for fatty acid feeding (Steen, Kang et al. 2010). Production of fatty acid derivatives as biofuels has also been reported in recent patent applications WO2009/009391, WO2007136762 and WO2008119082, all owned by LS9 Inc. Briefly, the metabolically engineered E. coli strain was manipulated to be able to produce fatty (acid) esters and derivatives thereof (short and long chain alcohols, hydrocarbons, fatty alcohols, waxes, etc.) through the introduction of several genes encoding for enzymes such as thioesterase, wax synthase, alcohol acyltransferase, alcohol dehydrogenase, and different kinds of fatty alcohol forming acyl-CoA reductases. In U.S. patent publication 2010/0071259, inventors from the same company teach that by adding a mixture of at least two different alcohols to a medium containing the engineered E. coli strain that produces fatty esters, at least two different fatty esters could be produced.",
+                        "The afore-mentioned biodiesel producing methods are all based on the use of the bacterium E. coli. However, E. coli is unable to naturally overproduce the two substrates of biodiesel, fatty acids and alcohol (i.e. ethanol), and this organism is not suitable for large-scale production that often involves harsh environmental conditions. Furthermore, E. coli is sensitive to phage contamination often resulting in substantial economic losses. The patents of the prior art successfully teach several strategies to enhance fatty acids biosynthesis in E. coli. Nevertheless, and apart from the drawbacks associated with the use of this host, it should be noted that strategies working in E. coli might not be appropriate when applied in other microorganisms.",
+                        "A far better choice of microbial cell factory for industrial production of biodiesel would be the yeast Saccharomyces cerevisiae. This yeast is already widely used in industry, including for large-scale bioethanol production, but also for a range of specialty chemicals. The development of S. cerevisiae as a cell factory for biodiesel production would represent a major contribution as this could represent a plug and play solution where current infrastructures used for production of bioethanol could be used for production of far more valuable biodiesels. In contrast to the insufficient ethanol productivity of E. coli, S. cerevisiae is already a good ethanol producer.",
+                        "In fact, production of FAEEs and fatty acid isoamyl esters (FAIEs) has been achieved in recombinant S. cerevisiae with oleic acid addition by expressing the A. baylyi bifunctional WS/DGAT enzyme (Kalscheuer, Luftmann et al. 2004). A recent patent application, namely US patent application 2009/0117629 by Schmidt-dannert and Holtzapple, also describes a method for the production of esters, including isoprenoid wax esters and fatty acid alkyl esters, such as FAME and FAEE, by heterologous expression of Marinobacter hydrocarbonoclasticus wax synthase (WS2) in S. cerevisiae. The invention is however, limited to the use of specific isolated polynucleotides from Marinobacter hydrocarbonoclasticus, and its application in e.g. producing biodiesel). Moreover this method requires exogenous supply of fatty acids as the endogeneous production of fatty acids by yeast is too low to ensure economically viable production of FAEEs.",
+                        "A modified strain carrying the genes encoding the wax synthase from Marinobacter hydrocarbonoclasticus could be considered a potential host for biodiesel production in yeasts. Nonetheless, while this product is very suitable for the particular purpose it addresses, it is not the ideal option when the synthesis of other esters is desired. The knowledge of the preferred substrates for each wax synthase allows the use of yeast cells in applications other than biodiesel production. Moreover there is still a need for methods and products allowing large-scale production of fatty acid esters.",
+                        "Thus it is an object of the present invention to provide an improved fungal cell factory, such as a yeast cell factory that can be used for fermentation based production of FAEEs, that is not dependent on the addition of exogenous fatty acids to the yeast culture and that possess an increased flux towards fatty acid biosynthesis and where high level production of FAEEs is obtained."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce field of invention",
+                        "describe fossil fuel crisis",
+                        "motivate biodiesel as alternative fuel",
+                        "describe drawbacks of current biodiesel production",
+                        "introduce enzymatic conversion using lipases",
+                        "describe limitations of enzymatic catalysis",
+                        "motivate need for sustainable biodiesel production",
+                        "introduce algae as alternative feedstock",
+                        "describe problems with algae-based production",
+                        "motivate genetic manipulation of microorganisms",
+                        "describe prior art on microbial production of fatty acid esters",
+                        "introduce E. coli as host organism",
+                        "describe limitations of E. coli",
+                        "introduce Saccharomyces cerevisiae as alternative host",
+                        "describe prior art on S. cerevisiae for biodiesel production",
+                        "motivate need for improved fungal cell factory"
+                    ],
+                    "num_characters": 8310,
+                    "outline_medium": [
+                        "introduce field of invention",
+                        "describe fossil fuel crisis",
+                        "motivate biodiesel as alternative fuel",
+                        "summarize drawbacks of current biodiesel production",
+                        "introduce enzymatic conversion using lipases",
+                        "describe limitations of enzymatic catalysis",
+                        "discuss unsustainable feedstocks for biodiesel",
+                        "motivate genetic manipulation of microorganisms"
+                    ],
+                    "outline_short": [
+                        "introduce fossil fuels crisis",
+                        "describe biodiesel production limitations",
+                        "motivate enzymatic conversion",
+                        "summarize prior art"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The above presented problems have now been solved by providing a fungal cell system for producing fatty acyl ethyl esters (FAEE), said system comprising a fungal cell and an expression vector encoding at least one wax synthase, wherein the metabolism of said fungal cell is additionally modified, said modification providing for down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) selected from the group consisting of genes encoding one or more enzyme(s) involved in at least one of said fungal cell's fatty acid synthesizing pathways, fatty acid consuming pathways and carbohydrate biosynthesis pathways, and/or selected from the group consisting of genes encoding one or more enzyme(s) acting as wax ester transporter(s) of said fungal cell. Such a fungal cell system provides for an increased flux towards fatty acid biosynthesis and thereby a high level production of FAEEs. Examples of fungal cells applicable to the present invention can be selected from Saccharomyces, Saccharomyces cerevisae Hansenula polymorpha, Kluyveromyces, Pichia, Candida albicans, Aspergilli, Rhodotorula rubra, Torulopsis, Trichosporon cutaneum, Trichoderma reesei, Apiofrichum curvafum, Yarrowia lipolytica, and Cryptococcus curvatus.",
+                        "Accordingly, a primary object of the present invention is to provide an advance in the microorganism fermentation method for producing wax esters, which include, but is not limited to, the liquid waxes used for biofuel, lubricants, cosmetics, linoleum and printing inks, and the solid waxes used for candles, polishes etc. The fungal cell system and the method disclosed herein combine the expression of different wax synthases with metabolic engineering modifications to ensure a high flux to biosynthesize wax esters. The high flux described herein means at least 2-fold increase in the fatty acids flux compared with flux towards fatty acids in the reference yeast.",
+                        "In one embodiment, the invention disclosure provides different nucleotide sequences encoding the polypeptides having wax synthase activity with differences in specificity towards different-chain-length substrates. Examples of different wax synthases applicable within the scope of the present invention are Mycobacterium, Rhodococcus, Acinetobacter, Mus Musculus and/or Marinobacter, such as Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6, and Psychrobacter articus 273-4.",
+                        "In another embodiment, the present invention provides a wax ester composition in the different production hosts expressing different wax synthases, wherein the wax ester with preferred carbon chain length could be produced according to the method disclosed herein.",
+                        "Accordingly, the present invention also relates to a method for producing FAEE, said method comprising providing a fungal cell system as defined herein in a culture broth, adding one or more sources of carbohydrates as an external substrate to said fungal system, and wherein said FAEE are thereafter retrieved by extraction from said culture broth.",
+                        "In particular implementations, the produced wax ester includes fatty acid ethyl esters that can be used as biofuels. In such an example, the only externally supplied substrates are carbohydrates, which can be transformed into ethanol and fatty acids, which can then be combined into esters.",
+                        "In yet another embodiment, the invention provides a method of overproducing fatty acids. The microorganism can have ACBP (acyl-CoA-binding protein) over-expressed to deregulate the activity of enzymes involved in lipid metabolism (e.g., acetyl-CoA carboxylase).",
+                        "In a further embodiment, the invention disclosure provides a method to overproduce fatty acids, in addition to over-expressing ACBP. The ACBP over-expressing microorganism can have one or more pathway modified, e.g., fatty acids synthesizing pathway, fatty acids consuming pathways, wax ester transporters, and engineering of the central carbon metabolism.",
+                        "In a preferred embodiment the present invention provides a Saccharomyces cerevisae yeast cell with increased metabolic flux towards fatty acid ester biosynthesis. This in-house developed host cell expresses at least one (Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6 or Psychrobacter articus 273-4) specifically selected wax synthase in combination with an over-expressed ACBP.",
+                        "In this respect, before explaining at least one embodiment of the invention in detail, it is to be understood that the invention is not limited in its application to the details of construction and to the arrangements of the components set forth in the following description or illustrated in the drawings. The invention is capable of other embodiments and of being practiced and carried out in various ways. Also, it is to be understood that the phraseology and terminology employed herein are for the purpose of the description and should not be regarded as limiting."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce fungal cell system for producing FAEE",
+                        "describe expression vector encoding wax synthase",
+                        "describe metabolic engineering modifications",
+                        "motivate increased flux towards fatty acid biosynthesis",
+                        "introduce examples of fungal cells applicable",
+                        "describe primary object of the invention",
+                        "introduce different wax synthases with varying specificity",
+                        "describe method for producing FAEE",
+                        "introduce wax ester composition with preferred carbon chain length",
+                        "describe method for overproducing fatty acids"
+                    ],
+                    "num_characters": 5021,
+                    "outline_medium": [
+                        "introduce fungal cell system for producing FAEE",
+                        "describe metabolic modification for increased flux",
+                        "summarize examples of applicable fungal cells",
+                        "introduce wax synthases with different specificities",
+                        "outline method for producing FAEE"
+                    ],
+                    "outline_short": [
+                        "introduce fungal cell system",
+                        "describe method for producing FAEE"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION AND PREFERRED EMBODIMENTS THEREOF",
+                    "paragraphs": [
+                        "The invention herein relies, unless otherwise indicated, on the use of conventional techniques of biochemistry, molecular biology, microbiology, cell biology, genomics and recombinant technology.",
+                        "To facilitate understanding of the invention, a number of terms are defined below. The term \u201crecombinant\u201d means that a particular nucleic acid (DNA or RNA) is the product of various combinations of cloning, restriction, and/or ligation steps resulting in a construct having a structural coding or non-coding sequence distinguishable from endogenous nucleic acids found in natural systems",
+                        "The term \u201coverproducing\u201d is used herein in reference to the production of FAEE in a host cell and indicates that the host cell is producing more of the FAEE by virtue of the introduction of nucleic acid sequences encoding different polypeptides involved in the host cell's metabolic pathways or as a result of other modifications as compared with the wild-type or unmodified host cell.",
+                        "As used herein, the terms \u201cprotein\u201d and \u201cpolypeptide\u201d refer to compounds comprising amino acids joined via peptide bonds and are used interchangeably.",
+                        "As used herein, an \u201cACBP or acyl-CoA-binding protein\u201d is a small (10 Kd) protein that binds medium- and long-chain acyl-CoA esters with very high affinity and may function as an intracellular carrier of acyl-CoA esters. The majority of the cellular long-chain acyl-CoA esters are presumed to be sequestered with acyl-CoA binding protein (ACBP).",
+                        "Although ACBP occurs as a completely independent protein, intact ACB domains have been identified in a number of large, multifunctional proteins in a variety of eukaryotic species ranging from yeasts and plants to reptiles and mammals. In general ACBP is highly conserved in all eukaryotes. The yeasts homologue of ACBP is known as Acb1p. As used herein, an \u201cAcetyl CoA carboxylase\u201d is a biotin-containing enzyme that catalyzes the irreversible reaction in which acetyl-CoA is carboxylated to malonyl-CoA, see FIGS. 1 and 8, which is the precursor of long-chain fatty acyl-CoA. In mammals, two main isoforms of ACC are expressed, ACC1 and ACC2, which differ in both tissue distribution and function. ACC1 is found in the cytoplasm of all cells and encodes acetyl CoA carboxylase in yeast cells.",
+                        "As used herein, FAS or a \u201cfatty acid synthases\u201d is an enzymatic system that catalyzes the initiation and elongation of acyl chains and thus plays a key role in fatty acid synthesis from acetyl-CoA and malonyl-CoA. Examples of these enzymes are AccABCD, FabD, FabH, FabG, FabA, FabZ, Fabl, FabK, FabL, FabM, FabB, and FabF. In the yeast Saccharomyces cerevisae, fatty acids are synthesized by a 2.4 Mba multifunctional enzyme complex with two subunits encoded by two unlinked genes FAS1 and FAS 2.",
+                        "As used herein, acyl-CoA synthase includes peptides in enzyme classification number EC 2.3.1.86, and are any of various ligases that catalyze the conversion of a fatty acid to acyl-CoA for subsequent (3-oxidation.",
+                        "As used herein, \u201cglyceraldehyde-3-phosphate dehydrogenase\u201d (GAPDH) catalyzes the reversible interconversion between 1,3-bisphosphoglycerate and d-glyceraldehyde 3-phosphate using either NAD(H) or NADP(H) as a coenzyme. This is the sixth step of the glycolysis (FIG. 1) and thus serves to break down glucose for energy and carbon molecules.",
+                        "NADPH, a product of the pentose phosphate pathway, functions as a reductant in various synthetic (anabolic) pathways including fatty acid synthesis.",
+                        "As used herein, an \u201cacetyl-coenzyme A synthetase\u201d is an enzyme that catalyzes the formation of a new chemical bond between acetate and coenzyme A (CoA), which is a key branching molecule for different metabolic pathways.",
+                        "As used herein, \u201c(3-oxidation\u201d is the process by which fatty acids in the form of Acyl-CoA molecules are broken down to generate Acetyl-CoA. It is the principal metabolic pathway responsible for the degradation of fatty acids (FIG. 2).",
+                        "As used herein a \u201ccatalytic motif\u201d is a three-dimensional structural unit formed by a particular sequence of amino acids, found in proteins and which is often linked with a particular function. For nucleic acids is a particular, usually short, nucleotide sequence that forms a recognition site usually, to which other proteins bind.",
+                        "A peptide of the present invention may be present in an expression vector. The term \u201cexpression vector\u201d is defined herein as a linear or circular DNA molecule that comprises a polynucleotide encoding a polypeptide of the invention, and which is operably linked to additional nucleotides that ensure its expression. Suitable expression vectors include fungal, baculovirus vectors, bacteriophage vectors, plasmids, phagemids, cosmids, fosmids, Acinetobacter baylyi, yeast plasmids and any other vectors specific for the hosts of interest. Vectors may be introduced into a host cell using methods that are known in the art such as, calcium phosphate precipitation, electroporation, heat shock, lipofection, microinjection, etc.",
+                        "A \u201cfungal cell system\u201d as disclosed herein comprises a fungal cell which has been modified, such as genetically modified, as described herein, and which expresses at least one wax synthase, as exemplified herein. Said wax synthase is introduced into said fungal cell to provide for expression thereof in said fungal cell. The fungal cell system according to the invention hence provides the combination of a modified fungal cell and the expression of a wax synthase in said fungal cell, which allows for an increased metabolic flux towards fatty acid ester biosynthesis in said fungal cell. This advantageous combination is herein referred to as the \u201cfungal cell system\u201d.",
+                        "As used herein pESC vectors are a series of epitope-tagging vectors designed for expression and functional analysis of eukaryotic genes in the yeast S. cerevisiae. These vectors contain the GAL1 and GAL10 yeast promoters in opposing orientation. With these vectors one or two cloned genes can be introduced into a yeast host strain under the control of a repressible promoter Preferably the expression vector of the present invention is a pESC-derived plasmid in which the original promoter have been replaced. (S. Partow et al. 2010)",
+                        "As used herein a \u201cpromoter\u201d is a DNA sequence that usually precedes a gene in a DNA polymer and provides a site for initiation of the transcription into mRNA. In the present invention we used promoters derived from transcriptional Enhancer Factor 1 (TEF1) and phosphoglycerate kinase (PGK1). (S. Partow et al. 2010).",
+                        "As used herein, sequence identity refers to sequence similarity between two nucleotide sequence or two peptide or protein sequences. The similarity is determined by sequence alignment to determine the functional, structural, and/or evolutionary relationships between the sequences. Gaps in either or both sequences are permitted in making successive alignment.",
+                        "By two nucleotide sequence or two peptide or protein sequences having an amino acid sequence at least, for example 95% identical to a reference amino acid sequence, is intended that the amino acid sequence of e.g. the peptides is identical to the reference sequence, except that the amino acid sequence may include up to 5 point mutations per each 100 amino acids of the reference amino acid sequence. In other words, to obtain a peptide having an amino acid sequence at least 95% identical to a reference amino acid sequence: up to 5% of the amino acids in the reference sequence may be deleted or substituted with another amino acid, or a number of amino acids up to 5% of the total amino acids in the reference sequence may be inserted into the reference sequence. These mutations of the reference sequence may occur at the amino and/or carboxy terminal positions of the reference amino acid sequence or anywhere between those terminal positions, interspersed either individually among amino acids in the reference sequence or in one or more contiguous groups within the reference sequence.",
+                        "In the present invention, a local algorithm program is best suited to determine identity. Local algorithm programs, (such as Smith Waterman) compare a subsequence in one sequence with a subsequence in a second sequence, and find the combination of subsequences and the alignment of those subsequences, which yields the highest overall similarity score. Internal gaps, if allowed, are penalized. Local algorithms work well for comparing two multidomain proteins, which have a single domain or just a binding site in common.",
+                        "Methods to determine identity and similarity are codified in publicly available programs. Preferred computer program methods to determine identity and similarity between two sequences include, but are not limited to, the GCG program package (Devereux, J et al (1994)) BLASTP, BLASTN, and FASTA (Altschul, S. F. et al (1990)). The BLASTX program is publicly available from NCBI and other sources (BLAST Manual, Altschul, S. F. et al, Altschul, S. F. et al (1990)). Each sequence analysis program has a default scoring matrix and default gap penalties. In general, a molecular biologist would be expected to use the default settings established by the software program used."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Fatty Acids' Synthesizing Pathway",
+                            "paragraphs": [
+                                "The fatty acids synthesizing pathway includes fatty acid synthase enzymes selected from the group consisting of ACC1 (encoding acetyl-CoA carboxylase), FAS1/FAS 2 (encoding fatty acid synthase), and ACS1 (acetyl coenzyme A synthase) from any species to encode such proteins.",
+                                "Fatty acids (FA) play an important role as building blocks of biodiesel. In S. cerevisiae, FA is mainly synthesized in cytosol and limits biodiesel production. A fatty acid overproducing yeast cell will in turn overproduce fatty acids derived esters, e.g. FAEES (biodiesel). In this embodiment the inventors herein improve the supply of FAEE precursors. Thus an over-expression of the gene coding to acetyl-CoA carboxylase (ACC1) in combination with an increased expression of fatty acid synthetases (FAS1 and FAS 2) yields an increased amount of Malonyl CoA and Fatty Acids, respectively.",
+                                "The sources of malonyl-CoA, are generally supposed to be limited, impeding its utility for overproducing FA. The activity of acetyl-CoA carboxylase is highly regulated in S. cerevisiae: (1) Transcription of ACC1 is repressed by inositol and choline, as UASINO site was found in the promoter of ACC1 (Chirala, Zhong et al. 1994); (2) Acetyl-CoA carboxylase activity could be directly inactivated by Snf1p through phosphorylating (Shirra, Patton-Vogt et al. 2001).",
+                                "For releasing the tight regulation of the ACC1 at the mRNA and protein level, the promoter of ACC1 is replaced. Furthermore, the inventors herein have found that under control of the constitutively expressed promoter, a release of ACC1 phosphorylation sites would provide a further increase towards FAEE biosynthetic flux. For example Ser659Ala and Ser1157Ala could be substituted (SEQ ID NO 16). Thus the inactivation by Snf1 could be avoided. The resulting strain with hyperactive Acc1p would enhance the FA biosynthesis significantly.",
+                                "As previously stated, in addition to up-regulated activity of acetyl-CoA carboxylase, fatty acid synthase (FAS) could be over-activated to reinforce the push of hyperactive acetyl-CoA carboxylase. Therefore, FASI and FAS2 would be over-expressed in the engineered strain with hyperactive Acc1p. The combined manipulations would lead a high flux towards fatty acids biosynthesis.",
+                                "Another preferred modification aimed at increasing the pool of fatty acids is the over-expression of acetyl coenzyme A synthase. In S. cerevisiae, cytosolic acetyl-CoA is produced by decarboxylation of pyruvate to acetaldehyde that is then converted further to acetate and acetyl-CoA (FIG. 1; FIG. 8), which is used for the synthesis of malonyl-CoA and FA biosynthesis. The supply of acetyl-CoA may become a shortage when the FA biosynthesis ability is severely reinforced. The step for biosynthesizing acetyl-CoA is catalyzed by acetyl-coenzyme A synthetase, which is encoded by two genes, ACS1 and ACS2, in S. cerevisiae. Compared to ACS2, ACS1 has been reported to show a considerably higher activity and therefore in this invention, ACS1 has been chosen to be over-expressed.",
+                                "The genetically modified yeast cell of the present invention will provide for increased production of FA that is at least 2-fold higher than the amount of the ester produced by a control yeast that is not genetically modified as described herein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe fatty acid synthase enzymes",
+                                "describe role of ACC1 in FA biosynthesis",
+                                "describe regulation of ACC1",
+                                "describe modification of ACC1",
+                                "describe over-expression of FAS1 and FAS2",
+                                "describe over-expression of acetyl coenzyme A synthase"
+                            ],
+                            "num_characters": 3277,
+                            "outline_medium": [
+                                "describe fatty acid synthase enzymes",
+                                "describe over-expression of acetyl-CoA carboxylase",
+                                "describe over-expression of acetyl coenzyme A synthase"
+                            ],
+                            "outline_short": [
+                                "describe fatty acid synthesizing pathway"
+                            ]
+                        },
+                        {
+                            "title": "Fatty Acids Consuming Pathways",
+                            "paragraphs": [
+                                "Fatty acids are the precursor of Acyl CoA and the production host is engineered to produce fatty acid esters from acyl-CoA and ethanol. That's why it is important to improve the pool of fatty acids by down-regulating the fatty acid-consuming pathways. Most of the fatty acids are stored in the form of neutral lipids such as triacylglycerols (TAG) and steryl esters, which can constitute up to 70% of the total lipid content of the cell. In S. cerevisiae, TAG can be synthesized through two different pathways. As shown in FIG. 8, one is an acyl-CoA-dependent reaction that is catalyzed by acyl-CoA:diacylglycerol acyltransferase (encoded by DGA1 gene); another is phospholipids (PL) dependent reaction that is catalyzed by lecithin:cholesterol acyltransferase (encoded by the LRO1 gene). Steryl esters are formed from sterols through the action of the enzyme acyl-CoA:sterol acyltransferase (ASAT) which is encoded by ARE1 and ARE2 genes in S. cerevisiae.",
+                                "Previous studies have shown that the quadruple mutant, S. cerevisiae H1246, in which DGA1, LRO1, ARE1 and ARE2 were disrupted, was no longer capable of producing any TAG or steryl esters and had no apparent growth defects under standard conditions (Sandager, Gustaysson et al. 2002). In stationary phase, the quadruple disrupted strain has a 2.5-fold increase in fatty acids. Using Cre-loxP system, the four genes, DGA1, LRO1, ARE1 and ARE2, were disrupted sequentially. The mutant would decrease or abolish the amount of FA converted to neutral lipid production.",
+                                "The stored neutral lipids could be hydrolyzed at any moment to yield fatty acids. The liberated fatty acids and free fatty acids could in turn be oxidized to generate energy by \u03b2-oxidation. S. cerevisiae has only one peroxisomal acyl-CoA oxidase, Pox1p, which is regarded as being the main enzymatic step controlling the flux through the \u03b2-oxidation. Knocking out the endogenous PDX1 gene to block fatty acid \u03b2-oxidation would be beneficial for the accumulation of lipid.",
+                                "Suitable modifications allowing this particular embodiment include deletion of the afore-mentioned key genes: DGA1, LRO1, ARE1, ARE2 and PDX1. Thus, a yeast cell with all non-essential fatty acid conversion reactions deleted or attenuated, specifically those related with R-oxidation, synthesis of phospholipids, triacylglycerol and sterol esters, would show a higher production of fatty acids and hence an over-production of FAEE. On the other hand, as reported by several authors a decrease in \u03b2-oxidation flux would increase lipid accumulation (Slocombe, Cornah et al. 2009; Steen, Kang et al. 2010)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe TAG synthesis pathways",
+                                "describe role of DGA1 and LRO1 genes",
+                                "describe role of ARE1 and ARE2 genes",
+                                "describe disruption of genes",
+                                "describe blocking of fatty acid \u03b2-oxidation"
+                            ],
+                            "num_characters": 2599,
+                            "outline_medium": [
+                                "describe down-regulating fatty acid-consuming pathways",
+                                "describe disrupting genes DGA1, LRO1, ARE1, ARE2 and PDX1"
+                            ],
+                            "outline_short": [
+                                "describe fatty acid consuming pathways"
+                            ]
+                        },
+                        {
+                            "title": "Carbohydrate Biosynthesis Pathways",
+                            "paragraphs": [
+                                "The modified yeast cell with e.g. an enhanced ability to overproduce fatty acids, should need much more NADPH, as two molecules of NADPH are required for each step in the elongation of the growing FA acyl chain (FIG. 1).",
+                                "Basically, the availability of intracellular NADPH is enhanced by engineering the production host to express an NADH:NADPH transhydrogenase. The expression of one or more NADH:NADPH transhydrogenases results in an increased conversion of the NADH produced in glycolysis to NADPH. Specifically, the authors herein have designed a novel yeast strain expressing a heterologous NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase (GAPN, coded by gapN gene) (FIG. 8), for augmenting the production of fatty acid derivatives. Heterologous expression of gapN, from Streptococcus mutants in yeast provides a further push on FA biosynthesis ability, meanwhile it also lead to a higher ethanol yield, which is another precursor for biodiesel (FIG. 8)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe engineering of NADH:NADPH transhydrogenase"
+                            ],
+                            "num_characters": 968,
+                            "outline_medium": [
+                                "describe engineering production host to express NADH:NADPH transhydrogenase"
+                            ],
+                            "outline_short": [
+                                "describe carbohydrate biosynthesis pathways"
+                            ]
+                        },
+                        {
+                            "title": "Establishment of FAEE Biosynthesis Pathway",
+                            "paragraphs": [
+                                "One known method for producing fatty acid esters includes increasing the expression of ester synthases such as wax synthases (EC 2.3.1.75) (FIG. 2). A further increase might be obtained by increasing wax synthase's substrate availability e.g. overproducing fatty acids as suggested above.",
+                                "A wild-type yeast cell does not have the metabolic machinery for producing FAEEs from fatty acids. Wax synthases, the enzymes catalyzing these reactions, are characteristics of organisms such as Mycobacterium, Rhodococcus, Acinetobacter, and Marinobacter strains that grow in environments where a carbon source was abundant relative to other nutrients such as phosphorous and nitrogen. The wax synthase sequence usually contains the catalytic motif HHXXXDG, which is reported to be crucial for enzymatic activity.",
+                                "Wax synthase activity has never previously been described for yeast. In yeast, it was only shown that polypeptides Eht1p and Eeb1p have medium chain (C4-C8) fatty acid ethyl ester-synthesizing and -degrading activity. However, Kalscheuer et al. (2004) showed for the first time that low wax synthase activity could be detected in wild-type S. cerevisiae G175 using palmitoyl-CoA and 1-Hexadecanol as substrates. But no homologous sequence was detected in yeast. In addition, GC/MS analysis of total lipid extracts from wild-type S. cerevisiae showed that FAEEs were absent, even when the medium is supplied with fatty acids (oleic acid).",
+                                "Therefore, the ability to synthesize long chain fatty acid ethyl esters may exist in yeast and it may be generated by the unspecific activity of Eht1p and Eeb1p, but the activity is very poor, which is not enough to form FAEEs (i.e. long chain fatty acid ethyl ester) from fatty acids in a wild-type yeast.",
+                                "In a particular embodiment the inventors herein propose the use of a microbial wax ester synthase/acyltransferase (WS/DGAT) from Acinetobacter baylyi ADP1 as this enzyme is known to have the activity for short-chain alcohols and the ability to form FAEEs. It is obtained by expressing the atfA gene. This wax synthase may have sequence similarity with the nucleotide sequence of SEQ ID NO 1 (see attached Sequence Listing). However, the wax synthase from Acinetobacter baylyi ADP1 is a rather unspecific enzyme with broad spectra of possible substrates, and it was in fact bifunctional in vivo, also acting as a diacylglycerol acyltransferase (DGAT).",
+                                "Genes with high homologies to the Acinetobacter baylyi ADP1 wax synthase have also been identified in other species. There are three unrelated families of wax synthase found in higher plants, mammals and bacteria. The wax synthase of plants shows no activity for short-chain alcohols.",
+                                "Several heterologous wax synthases from other organisms were evaluated (Example 3). As suspected, most wax synthase had the highest activity for acyl-CoAs and alcohols with a chain length from 14 to 18, with a much lower specificity for ethanol. All the detected wax synthase (i.e. wax synthase from Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6, and Psychrobacter articus 273-4) have varied activity for ethanol and could lead to the formation of FAEEs. However the enzyme with highest activity for synthesizing FAEEs was found to be wax synthase from Marinobacter hydrocarbonoclasticus DSM 8798 (named CB2 in the present application). According to the present invention a yeast cell able to efficiently produce FAEEs that could directly be used as biodiesel should express a wax synthase from M. hydrocarbonoclasticus or wax synthase from Psychrobacter articus (Table 3).",
+                                "Overexpression of native EEb1gene coding for EeB1p, with the ability to synthesize medium chain fatty acid ethyl ester in combination with expression of selected WSs might lead to favorable results with regard to the synthesis of specific FAEEs. For this purpose, a wax synthase with the best-adapted substrate specificity should be chosen.",
+                                "On the other hand, the standardization of methods of molecular evolution or protein fusion could help improving the preference of existing WSs for certain substrates, e.g. using error prone PCR, gene shuffling or more directed protein engineering of the WSs. For example it could lead to the identification of WSs with higher specificity for ethanol. The selection of WSs with high activity for ethanol is of course, of crucial importance for designing an effective biodiesel producer as biodiesel is generally composed of fatty acid ethyl esters (FAEE). Said fatty acids have generally a chain-length from 14 to 20 carbon atoms, within the optimal operating range for acyl-CoAs. A recombinant yeast cell expressing e.g a M. hydrocarbonoclasticus is a good choice for designing a FAEEs producer because of its high preference for ethanol.",
+                                "The identified broad spectra of possible substrates of different WSs as shown in Table 3 of the invention herein (see below) allows for many biotechnological applications including but not limited to biodiesel production. Depending on the substrate specificity of the wax synthase (WS) enzymes, various mixtures of ester isomers and chain lengths can be generated. These esters relates to liquid wax esters that can be used for biofuel, lubricants, cosmetics, linoleum, printing inks as well as products related thereto, and solid wax esters used for candles, polishes as well as products related thereto. Another exemplary biotechnological application of wax synthase is spermaceti production. Spermaceti is mainly composed by cetyl palmitate and cetyl myristate, and is widely used in cosmetics, pharmacy and also in candles.",
+                                "A wax synthase polypeptide of the present invention may be isolated and obtained from other sources including microorganisms isolated from nature. People skilled in the art know how to screen a genomic or cDNA library for this purpose. Once a polynucleotide sequence encoding a polypeptide has been detected it can be isolated or cloned by utilizing techniques, which are well known to those of ordinary skill in the art.",
+                                "Here again we have used plasmid pSP-GM2, derived from pESC, which is a common plasmid with high copy number. The original weaker promoters in pESC were exchanged by two strong promoter TEF1 and PGK1, respectively, to construct pSP-GM2. The high copy number and the strong driven by TEF1 ensures high-level expression of the WS. A polynucleotide encoding a wax synthase polypeptide of the present invention may be present in the yeast cell as a vector or integrated into a chromosome (S. Partow et al.)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe method for producing fatty acid esters",
+                                "describe wax synthases",
+                                "describe substrate availability",
+                                "describe wild-type yeast cell",
+                                "describe wax synthase activity",
+                                "describe catalytic motif",
+                                "describe wax synthase from Acinetobacter baylyi ADP1",
+                                "describe wax synthase from other organisms",
+                                "describe evaluation of wax synthases",
+                                "describe expression of wax synthase",
+                                "describe overexpression of native EEb1 gene",
+                                "describe protein engineering of WSs",
+                                "describe selection of WSs with high activity for ethanol"
+                            ],
+                            "num_characters": 6574,
+                            "outline_medium": [
+                                "describe increasing expression of ester synthases",
+                                "describe wax synthase activity",
+                                "describe wax synthase sequence",
+                                "describe expression of heterologous wax synthase",
+                                "describe evaluation of wax synthases from other organisms",
+                                "describe overexpression of native EeB1 gene"
+                            ],
+                            "outline_short": [
+                                "motivate wax synthases",
+                                "describe wax synthase activity",
+                                "introduce wax synthase from Acinetobacter baylyi ADP1"
+                            ]
+                        },
+                        {
+                            "title": "Enzyme Acting as Wax Ester Transporters.",
+                            "paragraphs": [
+                                "As mentioned herein, the engineered cell expressing a wax synthase would be able to synthesize fatty acid esters e.g. FAEEs. The transfer of esters to the fermentation medium is dependent on their composition. It decreases drastically with increasing chain length, e.g. from 100% for ethyl hexanoate, to 54-68% for ethyl octanoate and 8-17% for ethyl decanoate. A wax ester transporter would facilitate the release of esters to the fermentation medium.",
+                                "In one embodiment the invention herein uses a plant wax ester transporter (Pighin, Zheng et al. 2004). For example, Cer5 from Arabidopsis facilitates the export of very long chain aldehydes, ketones, alcohols, alkanes, esters and other possible fatty acids derivatives."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe wax ester transporter"
+                            ],
+                            "num_characters": 723,
+                            "outline_medium": [
+                                "describe using plant wax ester transporter"
+                            ],
+                            "outline_short": [
+                                "introduce wax ester transporter"
+                            ]
+                        },
+                        {
+                            "title": "Strain and Polypeptide Characterizations",
+                            "paragraphs": [
+                                "The wax synthase activity is an important parameter. It is measured according to previous publications (Kalscheuer et al., 2004). Basically, crude extracts are prepared from S. cerevisiae strains and added into a reaction system containing [1-14C] palmitoyl-CoA and alcohols with specific chain. The test assays are incubated at 35\u00b0 C. for 30 min, and stopped by extraction with chloroform/methanol. The extracts are separated by TLC.",
+                                "Spots corresponding to waxes are scraped from the plates, and radioactivity is measured by scintillation counting.",
+                                "The FAEEs, are detected by GC-MS. Briefly, total lipids are first extracted from S. cerevisiae strains, and then run on a TLC plate. Spots corresponding to FAEEs are scraped from the plates, and resolved in chloroform/methanol, which is then measured by GC-MS.",
+                                "The genetically modified yeast cells hereby disclosed may be included in a composition further comprising additional components selected from, but not limited to, the group consisting of: buffers; stabilizers; protease-inhibiting agents; hydrolytic enzymes, saccharolytic enzymes; cell membrane- and/or cell wall-preserving compounds, nutritional media appropriate to the cell; and the like.",
+                                "For expressing the heterologous sequences, the yeast cells are cultured in a medium supplemented with carbohydrate as the only externally supplied source. Compounds included in this group, but not limited to, are glucose, fructose, galactose, xylose, arabinose, sucrose, maltose, starch, cellulose, and hemicellulose",
+                                "In this invention instead of providing the alcohol in the fermentation media as is known in the art e.g. when E. coli is used as biodiesel factory, Applicant has developed a genetically engineered microorganism that can produce wax esters in a controllable and economic fashion without the need of fatty acids or ethanol supplementation. In specific embodiments the carbohydrate concentration in the culture medium is between 20 g/l and 50 g/l. Additional components of the culture media are yeast nitrogen base and CSM-Ura.",
+                                "Accordingly, the present invention relates to a fungal cell system for producing fatty acyl ethyl esters (FAEE), said system comprising a fungal cell, and an expression vector encoding at least one wax synthase, wherein the metabolism of said fungal cell is additionally modified, said modification providing for down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) selected from the group consisting of genes encoding one or more enzyme(s) involved in at least one of said fungal cell's fatty acid synthesizing pathways, fatty acid consuming pathways and carbohydrate biosynthesis pathways, and/or selected from the group consisting of genes encoding one or more enzyme(s) acting as wax ester transporter(s) of said fungal cell. The invention also relates to a fungal cell which is a yeast cell.",
+                                "When herein down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) is referred to, this means that the expression/translation/transcription level of the gene or the gene product has been altered in some manner. The manipulation herein could be achieved by medium supplementation, genetic engineering, or synthetic biology. Regulated genes include genes that could be translated into protein, as well as genes that are transcribed into types of RNA that are not translated into protein. Gene regulation could be made by altering the structural or control region, introducing more copy number, deactivating the corresponding repressor gene or activating the inducible gene, increasing the RNA stability of the gene, and combinations thereof.",
+                                "Fatty acid ethyl esters (FAEEs) are esterification products of ethanol and fatty acids. Biodiesel is one kind of mixture of wax esters (FAEEs). The biosynthesis of FAEE is catalyzed by wax ester synthase, also called wax synthase (WS). The chain-length and degree of un-saturation and branching of the fatty acid may vary. Generally, this site of the ester is at least 8, 10, 12, 14, 16, 18, 20, 22, 24, or 26 carbons in length and can be mono-, di-, or tri-unsaturated.",
+                                "The present invention provides genetically modified yeast cells that have at least one heterologous polynucleotide encoding a polypeptide involved in a FAEE biosynthesis pathway. The present invention also relates to other genetically modified fungal cells, as exemplified herein, that have at least one heterologous polynucleotide encoding a polypeptide involved in a FAEE biosynthesis pathway.",
+                                "A fungal cell used in the context of the present invention can be selected from the group of fungal cells consisting of Saccharomyces, Saccharomyces cerevisae Hansenula polymorpha, Kluyveromyces, Pichia, Candida albicans, Aspergilli, Rhodotorula rubra, Torulopsis, Trichosporon cutaneum, Trichoderma reesei, Apiofrichum curvafum, Yarrowia lipolytica, and Cryptococcus curvatus. An example of a fungal cell that can be used is Saccharomyces cerevisiae CEN.PK113-5D (van Dijken, J. P., et al., 2000). A modification of the metabolism of a fungal cell according to the present invention can be genetic and effectuated by the introduction of one or more exogenous expression vector(s) into said fungal cell. In the context of the invention, said one or more exogenous expression vector(s) can be a plasmid, or another carrier such as exemplified herein. The vector also comprises a structural gene for selection of transformed cells, such as URA3, HIS3.",
+                                "In aspects of the invention, said genetic modification of said fungal cell provides for an increased supply of fatty acyls to the metabolism of said fungal cell. Furthermore, said fungal cell can be genetically modified to stimulate overproduction of fatty acids, as further described herein.",
+                                "In aspects of the invention, a modification to a fungal cell system as defined herein is performed to any one or more of the following genes, or its expression products: ACB1 (ACBP, acyl-CoA-binding protein), ACC1 (Acetyl-CoA carboxylase), FAS1, FAS2 (Fatty acid synthase), gapN (NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase), ACS1 (Acetyl-CoA synthetase), DGA1 (Acyl-CoA:diacylglycerol acyltransferas), LRO1 (Lecithin: cholesterol acyltransferase), ARE1, ARE2 (Acyl-CoA:sterol acyltransferase), and PDX1 (Peroxisomal acyl-CoA oxidase).",
+                                "In other aspects, optionally in combination with other modifications, said modification to said fungal cell is performed by a knockout/deletion of one or more of the genes DGA1, LRO1, ARE1, ARE2, and PDX1.",
+                                "According to the invention, a modification to a fungal cell as described herein can also be performed by overexpressing one or more gene product(s) by the introduction of one or more expression vector(s) encoding said one or more gene product(s), said one or more gene product(s) being selected from the group consisting of: acyl-CoA-binding protein, Acetyl-CoA carboxylase (ACC1), NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase, Fatty acid synthases (FAS1, FAS2) and Acetyl-CoA synthetase (ACS1).",
+                                "According to the invention, a modification can also provide for an overexpression of ACC1 in combination with an increased expression of FAS1 and FAS2. In some aspects of the invention. the modification of ACC1 is performed by the introduction of an expression vector and an increased expression of FAS1/FAS2 is performed by replacing the promoter thereof (the promoter of FAS1/FAS2). In one aspect of the invention, the ACC1 gene is modified by virtue Ser659Ala and Ser1157Ala of said ACC1 gene being replaced (SEQ ID NO:16).",
+                                "The invention also provides for a fungal cell system as defined herein, wherein said wax synthase encoded by said expression vector is heterologous. In this context, a \u201cheterologous\u201d wax synthase refers to a wax synthase originating from a different organism than the fungal cell used in the fungal cell system.",
+                                "A fungal cell system as defined herein can comprise a wax synthase obtained from one or more of the species Mycobacterium, Rhodococcus, Acinetobacter, Mus Musculus and/or Marinobacter. Furthermore, more specifically, said at least one wax synthase can be selected from the group consisting of Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6, and Psychrobacter articus 273-4. A gene expressing said wax synthase used herein can be codon optimized and comprise a nucleic acid sequence encoded by any one of SEQ ID NO:1, SEQ ID NO 4, SEQ ID NO 5, SEQ ID NO 6 and/or SEQ ID NO 7. Also encompassed by the present invention are nucleic acid sequences having at least 80% identity with the presented sequence, such as approximately at least 80, 82, 85, 87, 90, 92, 95, 97, or 99% identity with the presented sequence. A nucleotide sequence disclosed herein can be from a natural species, a mutated version of a naturally occurring wax synthase, or a redesigned enzyme produced by protein engineering, the wax synthases being mutated or redesigned still maintaining their activity when expressed. The present invention also relates to a wax synthase having at least 80%, such as at least 80, 82, 85, 87, 90, 92, 95, 97, or 99% in sequence identity with an amino acid sequence corresponding to any of the wax synthases presented herein.",
+                                "A wax synthase of the fungal cell system according to the present invention can be encoded by one or more of the following expression vectors pSP-B1, pSP-B2, pSP-B3, pSP-B4 and/or pSP-B5. These expression vectors are further defined herein, e.g. in the experimental section, and in FIG. 7. The nucleic acid sequences of the prior mentioned vectors are SEQ ID NO 31, SEQ ID NO 32, SEQ ID NO 33, SEQ ID NO 34, and SEQ ID NO 35. The present invention also relates to expression vectors pSP-B1, pSP-B2, pSP-B3, pSP-B4 and/or pSP-B5, wherein certain parts thereof have been slightly modified or parts have been removed, said expression vectors still retaining their activity, as well as expression vectors comprising any one of the sequences SEQ ID NO:30-35.",
+                                "According to the invention, said expression vector encoding said one or more wax synthase(s) can be an episomal plasmid (single copy plasmids) or a high-copy plasmid. A single copy plasmid is defined as a plasmid that exists only as one or a few copies in each host. A high copy plasmid is a plasmid which will provide for a longer expression in the host as it will be present in more copies than the single copy plasmid.",
+                                "In the context of the present invention, said expression vector encoding said wax synthase can provide for chromosomal integration into the chromosome of said fungal cell. Such an event is further illustrated in FIGS. 9 and 10 and in the experimental section (Example 7).",
+                                "To a fungal cell system as defined herein, carbohydrates can be supplied as an external substrate to said fungal cell system for the production of FAEE. Said carbohydrates can be selected from the group consisting of glucose, fructose, galactose, xylose, arabinose, sucrose, maltose, starch, cellulose, and hemicellulose.",
+                                "In some aspects of the invention, additionally either or both of the genes Eht1p and Eeb1p of said fungal cell, are overexpressed by said fungal cell. It was shown that Eht1p and Eeb1p have medium chain fatty acid ethyl ester (including ethyl hexanoate)-synthesizing and -degrading activity (Lilly, M., F. Bauer, M. Lambrechts, J. Swiegers, D. Cozzolino, and I. Pretorius. 2006. The effect of increased yeast alcohol acetyltransferase and esterase activity on the flavour profiles of wine and distillates. Yeast 23:641-659.). Eht1 preferred short-chain substrates (highest production was for ethyl butanoate), whereas Eeb1 preferred longer chain substrates (highest production was for ethyl octanoate) (Saerens, S., K. Verstrepen, S. Van Laere, A. Voet, P. Van Dijck, F. Delvaux, and J. Thevelein. 2006. The Saccharomyces cerevisiae EHT1 and EEB1 genes encode novel enzymes with medium-chain fatty acid ethyl ester synthesis and hydrolysis capacity. Journal of Biological Chemistry 281:4446.).",
+                                "The present invention also relates to the use of an fatty acyl ester, such as a fatty acyl ethyl ester (FAEE), produced by a fungal cell system as defined herein as a component in a biofuel, such as biodiesel, a lubricant, cosmetic, linoleum, printing ink, and/or a solid wax ester used for candles and/or polishes.",
+                                "The present invention also relates to a composition comprising a fungal cell system as defined herein, said composition further comprising at least one additional component selected from the group consisting of: buffers; stabilizers; protease-inhibiting agents; hydrolytic enzymes, saccharolytic enzymes; cell membrane- and/or cell wall-preserving compounds, nutritional media appropriate to the cell; and the like.",
+                                "The present invention also relates to a method for producing fatty acyl ethyl esters (FAEE), said method comprising:\n\n\n- - a) providing a fungal cell system as defined herein in a culture\n    broth,\n  - b) adding one or more sources of carbohydrates as an external\n    substrate to said fungal cell system;\n  - c) and wherein said FAEE are thereafter retrieved by extraction from\n    said culture broth.",
+                                "Said carbohydrates can be selected from the group consisting of: glucose, fructose, galactose, xylose, arabinose, sucrose, maltose, starch, cellulose, and hemicellulose. Considering the importance of developing second generation processes based on biomass, it will be a promising advantage how the biofuels can be produced from xylose, cellulose, and hemicellulose, which yeast does not naturally consume.",
+                                "The invention also relates to a composition comprising a fungal cell which metabolism is modified thereby possessing an increased flux towards fatty acid biosynthesis; and one or more expression vectors encoding one or more wax synthase(s). Such a fungal cell can be any fungal cell as described herein, i.e. Saccharomyces, Saccharomyces cerevisae Hansenula polymorpha, Kluyveromyces, Pichia, Candida albicans, Aspergilli, Rhodotorula rubra, Torulopsis, Trichosporon cutaneum, Trichoderma reesei, Apiofrichum curvafum, Yarrowia lipolytica, and Cryptococcus curvatus. Furthermore, said wax synthase in such a composition can be selected from Mycobacterium, Rhodococcus, Acinetobacter, Mus Musculus and/or Marinobacter. A modification of such a fungal cell can be performed in any manner exemplified herein, such as by down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) selected from the group consisting of genes encoding one or more enzyme(s) involved in at least one of said fungal cell's fatty acid synthesizing pathways, fatty acid consuming pathways and carbohydrate biosynthesis pathways, and/or selected from the group consisting of genes encoding one or more enzyme(s) acting as wax ester transporter(s) Such a fungal cell can be used for producing biofuel esters, such as biodiesel, lubricants, cosmetics, linoleum and printing inks, and/or the solid waxes used for candles and polishes.",
+                                "The present invention also relates to a yeast cell having an increased metabolic flux towards fatty acid ester biosynthesis, said yeast cell expressing at least one wax synthase selected from the group consisting of Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6 and Psychrobacter articus 273-4 in combination with over-expressing the protein ACBP (acyl-CoA-binding protein). Said yeast cell can for example be Saccharomyces cerevisae"
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "measure wax synthase activity",
+                                "prepare crude extracts from S. cerevisiae strains",
+                                "add reaction system containing [1-14C] palmitoyl-CoA and alcohols",
+                                "incubate test assays at 35\u00b0 C for 30 min",
+                                "stop reaction by extraction with chloroform/methanol",
+                                "separate extracts by TLC",
+                                "scrape spots corresponding to waxes from plates",
+                                "measure radioactivity by scintillation counting",
+                                "detect FAEEs by GC-MS",
+                                "extract total lipids from S. cerevisiae strains",
+                                "run on TLC plate",
+                                "scrape spots corresponding to FAEEs from plates",
+                                "resolve in chloroform/methanol",
+                                "measure by GC-MS",
+                                "include genetically modified yeast cells in composition",
+                                "add additional components to composition",
+                                "culture yeast cells in medium with carbohydrate",
+                                "express heterologous sequences in yeast cells",
+                                "modify metabolism of fungal cell",
+                                "down-regulate, attenuate, delete, or over-express genes",
+                                "select fungal cell from group of fungal cells",
+                                "introduce exogenous expression vector into fungal cell",
+                                "modify fungal cell to stimulate overproduction of fatty acids",
+                                "modify genes involved in fatty acid synthesizing pathways",
+                                "modify genes involved in fatty acid consuming pathways",
+                                "modify genes involved in carbohydrate biosynthesis pathways",
+                                "modify genes encoding wax ester transporters",
+                                "overexpress acyl-CoA-binding protein",
+                                "modify ACC1 gene",
+                                "modify FAS1 and FAS2 genes"
+                            ],
+                            "num_characters": 15525,
+                            "outline_medium": [
+                                "measure wax synthase activity",
+                                "describe FAEE detection by GC-MS",
+                                "list components of genetically modified yeast cells",
+                                "describe carbohydrate supplementation",
+                                "define fungal cell system for producing FAEE",
+                                "describe genetic modification of fungal cell",
+                                "list examples of fungal cells",
+                                "describe modification of metabolism of fungal cell",
+                                "list genes for modification of fungal cell",
+                                "describe knockout/deletion of genes",
+                                "describe overexpression of gene products",
+                                "describe modification of ACC1 gene",
+                                "describe heterologous wax synthase",
+                                "list sources of wax synthase",
+                                "describe expression vectors for wax synthase"
+                            ],
+                            "outline_short": [
+                                "describe wax synthase activity measurement",
+                                "outline FAEE detection by GC-MS",
+                                "list components of genetically modified yeast cell composition",
+                                "describe carbohydrate supplementation in culture medium",
+                                "define fungal cell system for producing FAEE",
+                                "outline genetic modification of fungal cell metabolism",
+                                "describe wax synthase encoding expression vector"
+                            ]
+                        },
+                        {
+                            "title": "Preferred Embodiments",
+                            "paragraphs": [
+                                "In a preferred embodiment the invention teaches a method for increasing fatty acid production in yeast cells via over-expression of ACBP.",
+                                "Saccharomyce cerevisae is the preferred host for carrying out the invention, as it is a popular host in basic and applied research apart from being a good ethanol producer, a precursor of esters and specifically of fatty acid ethyl esters. Nevertheless as previously mentioned herein other fungal cells allowing the present invention are selected from the group consisting of other Saccharomyces species as well as other fungi such as, but not limited to, Hansenula polymorpha, Kluyveromyces, Pichia, Candida albicans, Aspergilli, Rhodotorula rubra, Torulopsis, Trichosporon cutaneum, Trichoderma reesei, Apiofrichum curvafum, Yarrowia lipolytica, Cryptococcus curvatus.",
+                                "In S. cerevisae, fatty acids act as a feedback inhibitor of acetyl CoA carboxylase, and also as an inhibitor of fatty acid oxidation in response to increased fatty acid availability. On the other hand we know that the regulatory properties of fatty acids are mediated through their activation to Acyl CoA. This means that in S. cerevisiae, fatty acid biosynthesis is inhibited by its product, the acyl-CoA.",
+                                "Acyl CoA binding protein (ACBP) can attenuate the inhibitory effect of Acyl CoA by binding long- and medium-chain acyl-CoA esters with very high affinity. Owing to the high affinity of ACBP for Acyl CoA, the intracellular free Acyl CoA concentration is predicted to be very low. It has been demonstrated that overexpression of Acb1p and bovine ACBP in S. cerevisiae increased the total acyl-CoA pool size. The inventors herein have developed a yeast cell in which ACBP (acyl CoA binding protein) is over-expressed so that to down-regulate the activity of enzymes involved in the lipid metabolism and in this specific case for deregulating acetyl-CoA carboxylase. Increased ACBP expression is translated in low free Acyl CoA levels and more fatty acid availability.",
+                                "As previously explained, the present invention adopted a pESC derived plasmid as the expression vector. The plasmid pSP-GM2 shown in FIG. 4, can express two genes simultaneously. In this specific modification, Acb1 is also ligated to plasmid pSP-GM2 and under control of promoter PGK1 (S. Partow et al., 2010).",
+                                "Over-expressing ACBP as used herein means altering the rate of transcription, Post-transcription, or translation of the gene encoding the protein as compared with the same rates in the yeast cell without modification.",
+                                "Methods of testing for over-expression are well known in the art, for example transcribed RNA levels can be assessed using rtPCR, and protein levels can be assessed using SDS page gel analysis.",
+                                "In a further preferred embodiment the invention teaches a system and a method in which a further increase in fatty acid production is obtained by down-regulating, attenuating, deleting or over-expressing additional genes encoding enzymes involved in the fatty acids synthesizing pathway, fatty acid consuming pathways, carbohydrate biosynthesis pathways or enzyme acting as wax ester transporters or a combination thereof. In this regard the genetically modified yeast cell of the present invention may include other modifications in addition to an over-expressed ACBP, but preferably it should contain genes encoding a combination of different wax synthases with high specificity for short-chain alcohols.",
+                                "Basically, the genetic modifications may increase the level of enzymes involved in the different biosynthetic pathways, reduce feedback inhibition at different locations in the biosynthesis pathways, affect the availability of different substrates and cofactors used in said pathways, affect expression of genes coding those enzymes, etc.",
+                                "Polypeptides according to the invention may be purified and isolated by methods known in the art. In particular, having identified the gene sequence, it is possible to use recombinant techniques to express the genes in the selected suitable host."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "teach method for increasing fatty acid production in yeast cells",
+                                "over-express ACBP in yeast cells",
+                                "down-regulate activity of enzymes involved in lipid metabolism",
+                                "use pESC derived plasmid as expression vector",
+                                "express two genes simultaneously",
+                                "test for over-expression using rtPCR and SDS page gel analysis",
+                                "down-regulate, attenuate, delete, or over-express additional genes"
+                            ],
+                            "num_characters": 4005,
+                            "outline_medium": [
+                                "describe method for increasing fatty acid production in yeast cells",
+                                "describe preferred host for carrying out the invention",
+                                "describe additional genetic modifications for increasing fatty acid production"
+                            ],
+                            "outline_short": [
+                                "describe method for increasing fatty acid production in yeast cells via over-expression of ACBP"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "rely on conventional techniques",
+                        "define recombinant",
+                        "define overproducing",
+                        "define protein and polypeptide",
+                        "define ACBP",
+                        "define Acetyl CoA carboxylase",
+                        "define FAS",
+                        "define acyl-CoA synthase",
+                        "define glyceraldehyde-3-phosphate dehydrogenase",
+                        "define (3-oxidation",
+                        "define catalytic motif",
+                        "define expression vector",
+                        "define fungal cell system",
+                        "define pESC vectors",
+                        "define promoter",
+                        "define sequence identity",
+                        "describe methods to determine identity and similarity",
+                        "describe default settings of software programs"
+                    ],
+                    "num_characters": 9170,
+                    "outline_medium": [
+                        "define recombinant",
+                        "define overproducing",
+                        "define protein and polypeptide",
+                        "define ACBP or acyl-CoA-binding protein",
+                        "define Acetyl CoA carboxylase",
+                        "define FAS or fatty acid synthases",
+                        "define acyl-CoA synthase",
+                        "define glyceraldehyde-3-phosphate dehydrogenase",
+                        "define catalytic motif"
+                    ],
+                    "outline_short": [
+                        "define terms",
+                        "describe protein functions",
+                        "explain expression vectors",
+                        "introduce fungal cell system"
+                    ]
+                },
+                {
+                    "title": "EXPERIMENTAL SECTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Construction of Biodiesel Production Host Saccharomyces cerevisiae CB1**",
+                                "In this experiment the wax ester synthase from A. baylyi ADP1 was expressed in a laboratory strain Saccharomyces cerevisiae CEN.PK113-5D (MAT-alpha ura3-52 HIS3 LEU2 TRP1 MAL2-8c SUC2) to create biodiesel producer, Saccharomyces cerevisiae CB1.",
+                                "Briefly, cloning and DNA manipulations were all carried out in E .coli DH5\u03b1 and were performed by standard procedures (Sambrook and Russell 2001). The sequence of the gene atfA with the reported wax synthase from Acinetobacter baylyi ADP1 was optimized for expression in a yeast host. The optimized sequence is given as SEQ ID NO 1, which was based on the published gene sequence (Gene bank accession no. AF529086). It was synthesized and provided by the DNA2.0 Company (Menlo Park, Calif.). SEQ ID NO 1 was amplified using the following oligonucleotides: 5\u2032-CGCGCTCGAGATGCGTCCATT-3\u2032 (SEQ ID NO 2) introducing BamHI restriction site (underlined) and; 5\u2032-GGGGTACCCCGGGTTAGTTTGCAG-3\u2032 (SEQ ID NO 3) introducing HindIII restriction site (underlined). The BamHI/HindIII digested DNA sequence was ligated into vector pSP-GM2 (FIG. 4) and under control of the constitutively expressed promoter TEF1, which gave plasmid pSP-B1 (FIG. 7A). The cloned sequences were verified by sequencing. The plasmids pSP-GM2 and pSP-B1 were transformed into S. cerevisiae CEN.PK113-5D. The resulting strains were named S. cerevisiae CB0 and S. cerevisiae CB1, respectively. Synthetic minimal dropout (SD) medium lacking uracil was used to select for transformants."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "construct biodiesel production host",
+                                "express wax ester synthase in yeast",
+                                "describe cloning and DNA manipulation procedures"
+                            ],
+                            "num_characters": 1562,
+                            "outline_medium": [
+                                "construct biodiesel production host Saccharomyces cerevisiae CB1"
+                            ],
+                            "outline_short": [
+                                "construct biodiesel production host Saccharomyces cerevisiae CB1"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Characteristics of the Recombinant Host**",
+                                "The inoculated transformants S. cerevisiae CB0 and S. cerevisiae CB1 were cultured to late exponential growth period in 100 mL SD medium lacking uracil and containing 2% (w/v) glucose at 30\u00b0 C. The cultures were then harvested. Cell-free extracts were prepared using a previously reported fast prep method for enzyme analysis (Hou, Vemuri et al. 2009). The lipid analysis were extracted from the lyophilized cell pellets using the reported method (Gu, Valianpour et al. 2004).",
+                                "The wax synthase activities in the transformants were testified in vitro using [1-14C] palmitoyl-CoA and 1-hexadecanol or ethanol as the substrates. Table 1 summarizes the results of enzyme analysis. A low wax synthase activity could be detected in negative control S. cerevisiae CB0 using 1-hexadecanol or ethanol as the substrates. In contrast, a significant high wax synthase activity was detected in S. cerevisiae CB1.",
+                                "The lipid extraction was analyzed with Gas Chromatography/Mass spectroscopy (GC/MS). No FAEEs were detected in the negative control S. cerevisiae CB0 even when the cultured medium was supplemented with 0.1% (w/v) free fatty acids, heptadecanoic acid. In contrast, S. cerevisiae CB1 could produced FAEEs to a titer of 5.0 mg/L. The heptadecanoic acid ethyl ester was produced by S. cerevisiae CB1 when the cultured medium was supplemented with 0.1% (w/v) free fatty acids, heptadecanoic acid (C17), which doesn't synthesized by yeast itself. Taking heptadecanoic acid ethyl ester as an example for the GC/MS results, it eluted at around 15.6 min, and the parent ion mass spectrum of m/z 298 was clearly observed (FIG. 5). Additionally, structural confirmation was received by daughter ion scans of m/z 298 (FIG. 5). The spectrums are the same as in standard heptadecanoic acid ethyl ester (FIG. 6)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "characterize recombinant host",
+                                "analyze wax synthase activity",
+                                "detect FAEEs using GC/MS"
+                            ],
+                            "num_characters": 1844,
+                            "outline_medium": [
+                                "characterize recombinant host Saccharomyces cerevisiae CB1"
+                            ],
+                            "outline_short": [
+                                "characterize recombinant host Saccharomyces cerevisiae CB1"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Evaluation of the Substrate Preference of Different WSs in Yeast**",
+                                "In this example, except for the wax synthase from Acinetobacter baylyi ADP1, four other putative WSs from Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6, and Psychrobacter articus 273-4 were optimized for expression in a yeast host. The optimized sequences could be seen in SEQ ID NO 4, SEQ ID NO 5, SEQ ID NO 6 and SEQ ID NO 7. Then they were synthesized by the DNA2.0 Company (Menlo Park, Calif.). These synthesized sequences were PCR amplified by using specific oligonucleotides introducing BamHI and HindIII restriction sites (Table 2 above). The BamHI/HindIII digested DNA sequences were ligated into pSP-GM2 (FIG. 4), respectively, and under control of the constitutively expressed promoter TEF1, which resulted in the plasmids pSP-B2, pSP-B3, pSP-B4 and pSP-B5 (FIG. 7B, 7C, 7D, 7E). Cloned sequences were verified by sequencing. The plasmids pSP-B2, pSP-B3, pSP-B4 and pSP-B5 were transformed into S. cerevisiae CEN.PK113-5D to construct S. cerevisiae CB2, CB3, CB4 and CB5, respectively. Synthetic minimal dropout (SD) medium lacking uracil was used to select for transformants.",
+                                "The cell-free extracts from the constructed recombinant S. cerevisiae CB1, CB2, CB3, CB4 and CB5 were prepared as the method described in Example 2. The wax synthase activities in the transformants were testified in vitro using alcohols with various chain lengths as substrates. Table 3 summarizes the results of enzyme analysis.",
+                                "The substrate profiles in Table 3 show that CB2 and CB5 catalyzed ethanol with a higher activity, which could reduce the formation of byproducts and drive the carbon flux toward the target ethyl esters. Actually, CB2 and CB5 could produce FAEEs at yield of 6.3 mg/L and 2.3 mg/L, which are clearly higher than other wax synthase expressing yeast. Moreover CB2 catalyzed cetyl alcohol (1-Hexadecanol) with a higher activity, which is the choice for constructing the spermaceti producing yeast. Our findings clearly show that the substrate preferences of the different WSs are the instructions for producing certain wax esters."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "express different WSs in yeast",
+                                "analyze substrate preferences",
+                                "describe plasmid construction and transformation",
+                                "summarize results of enzyme analysis"
+                            ],
+                            "num_characters": 2160,
+                            "outline_medium": [
+                                "express different wax synthases in yeast",
+                                "evaluate substrate preferences of wax synthases"
+                            ],
+                            "outline_short": [
+                                "evaluate substrate preference of different wax synthases in yeast"
+                            ]
+                        },
+                        {
+                            "title": "Example 4",
+                            "paragraphs": [
+                                "**Metabolic Engineering Strategy for Enhancing Fatty Acid Biosynthesis-Expression of Heterologous NADP+ Dependent Glyceraldehyde-3-Phosphate Dehydrogenase**",
+                                "In this invention supplying more NADPH is taken as an example to illustrate the metabolic engineering strategy for enhancing fatty acid biosynthesis. To make more NADPH, the heterologous expression of NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase (gapN, from Streptococcus mutants) is used. The heterologous reaction is listed in FIG. 8.",
+                                "The sequence of gapN (from Streptococcus mutants) was optimized for expression in a yeast host (SEQ ID NO 17) and was synthesized by DNA2.0 Company (Menlo Park, Calif.). The synthesized sequence was PCR amplified by using specific oligonucleotides: 5\u2032-AAACAA ACTAGTTTGACAAAAC-3\u2032 (SEQ ID NO 18) introducing NotI restriction site (underlined) and 5\u2032-TTAATTAAAGATCTTTATTTGATATCAA-3\u2032(SEQ ID NO 19) introducing SacI restriction site (underlined). The NotI/SacI digested DNA sequences were ligated into pSP-GM2, and transformed into host S. cerevisiae strain."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe metabolic engineering strategy",
+                                "express heterologous NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase"
+                            ],
+                            "num_characters": 1061,
+                            "outline_medium": [
+                                "engineer metabolic pathway for enhancing fatty acid biosynthesis"
+                            ],
+                            "outline_short": [
+                                "engineer metabolic pathway for enhancing fatty acid biosynthesis"
+                            ]
+                        },
+                        {
+                            "title": "Example 5",
+                            "paragraphs": [
+                                "**Summary of Modifications Useful for Making Yeast with Increased FA Supply for Producing Wax Esters**",
+                                "Table 4. is a summary of modifications to construct engineered yeast cells that can efficiently biosynthesis FA for producing wax esters. The modifications can be combined together."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "summarize modifications for making yeast with increased FA supply"
+                            ],
+                            "num_characters": 285,
+                            "outline_medium": [
+                                "summarize modifications for making yeast with increased FA supply"
+                            ],
+                            "outline_short": [
+                                "summarize modifications for making yeast with increased FA supply"
+                            ]
+                        },
+                        {
+                            "title": "Example 6",
+                            "paragraphs": [
+                                "**Fermentation**",
+                                "After combination of the above engineering strategies, the engineered host yeast holds the ability with increased flux towards FA biosynthesis. After combined wax synthase expression, it produces wax ester without the need for addition of exogenous fatty acids to the culture. In such an example, the engineered wax synthase expressing S. cerevisiae with an increased flux towards FA biosynthesis allow for high level production of biodiesel (FAEEs) from the only externally supplied substrate, carbohydrates. For large-scale biodiesel production, the engineered S. cerevisiae is cultured in 5 L fermentor. Glucose is continuously fed into the medium, in which maintained a high ratio of C/N. Meanwhile, dodecane (10%, v/v) was overlayed the medium to potentially prevent FAEEs evaporation and facilitate in-situ product capture."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe fermentation process"
+                            ],
+                            "num_characters": 847,
+                            "outline_medium": [
+                                "ferment engineered yeast for biodiesel production"
+                            ],
+                            "outline_short": [
+                                "ferment engineered yeast for biodiesel production"
+                            ]
+                        },
+                        {
+                            "title": "Example 7",
+                            "paragraphs": [
+                                "**Plasmids Construction for Evaluation of Five Wax Ester Synthases on FAEE Production**",
+                                "Briefly, cloning and DNA manipulations were all carried out in E .coli DH5\u03b1 and were performed by standard procedures (Sambrook and Russell 2001). The five sequences of the wax synthase from different species were optimized for expression in a yeast host. Then they were synthesized and provided by the DNA2.0 Company (Menlo Park, Calif.). These five different sequences were amplified using the ligonucleotides primers, respectively (table 2). The five BamHI/HindIII digested DNA sequences were, respectively, ligated into vector pSP-GM2 and under control of the constitutively expressed promoter TEF1, which gave five different plasmids. These plasmids were transformed into Saccharomyces cerevisiae CEN.PK113-5D (MAT-alpha ura3-52 HIS3 LEU2 TRP1 MAL2-8c SUC2) to create five biodiesel producers. The method for yeast transformation is the standard LiAc/SS Carrier DNA/PEG method (Xiao 2006). Synthetic minimal dropout (SD) medium lacking uracil was used to select for transformants."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "construct plasmids for evaluating WSs",
+                                "describe yeast transformation and selection"
+                            ],
+                            "num_characters": 1074,
+                            "outline_medium": [
+                                "construct plasmids for evaluating wax ester synthases"
+                            ],
+                            "outline_short": [
+                                "construct plasmids for evaluating five wax ester synthases"
+                            ]
+                        },
+                        {
+                            "title": "Gene Deletions:",
+                            "paragraphs": [
+                                "Shown in FIG. 9, the five genes (DGA1, LRO1, ARE1, ARE2, PDX1) were deleted subsequently in Saccharomyces cerevisiae CEN.PK113-5D using the loop-out method with the help of loxP-KanMX-IoxP cassette (Xiao 2006).",
+                                "**General Description and Method for the Chromosomal Integration**",
+                                "Wax synthase from Marinobacter hydrocarbonoclasticus DSM 8798 is suggested to have the highest activity for biodiesel production and chosen as the working enzyme. In the deletion strains, the related genes were introduced and constructed the following strains. The ability of biodiesel production was shown in FIG. 10, and the genotypes of strains were listed in Table 5. The overexpressed ACC1 were released its phosphorylation sites (Ser659Ala and Ser1157Ala), as shown in SEQ ID NO 16."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "delete genes in Saccharomyces cerevisiae CEN.PK113-5D"
+                            ],
+                            "num_characters": 768,
+                            "outline_medium": [
+                                "delete genes in Saccharomyces cerevisiae CEN.PK113-5D"
+                            ],
+                            "outline_short": [
+                                "delete genes for enhancing fatty acid biosynthesis"
+                            ]
+                        },
+                        {
+                            "title": "Example 8",
+                            "paragraphs": [
+                                "Although plasmids based methods have been used for biodiesel production, the plasmid is not genetic stable, which contributed the loss in productivity. In this work, we developed a plasmid-free method with high genetic stability and high gene copy expression for biodiesel production. Shown in FIG. 11, the wax synthase and bacterial neo gene (Neo, G418 resistance gene) were fused together, and integrated into delta sequence of chromosome by yeast transformation. The copies of delta sequence occur in multiple places throughout the yeast genome, and, under the selection of increasing concentration of G418, clones with multiple copies of the inserted gene can be generated. Finally, pathway copy number is stabilized by RAD52 knockout, and the resulting engineered strain requires no selection markers and is unaffected by plasmid instabilities.",
+                                "The WS (wax synthase) from Marinobacter hydrocarbonoclasticus DSM 8798 were evaluated under control of two different strong promoters, TEF1 and PGK1. Amplified by primer 1 and primer 2 (Table 6), the BamHI/HindIII digested WS sequence was ligated into vector pSP-GM2 and under control of the constitutively expressed promoter TEF1, which gave plasmid pSP-B2. Using plasmid pSP-B2 as the template, the WS sequence with TEF1 promoter and CYC1 terminator could be amplified with primer 3 and primer 4. The neo gene was amplified from plasmid pJEF1105 (Wang, Wang et al. 1996) with primer 5 and primer 6. Shown in FIG. 11, the 5\u2032 end of primer 3 and primer 6 are homolog to the delta sequence, which would facilitate the integration; the 5\u2032 end of primer 4 is homolog to neo gene and the 5\u2032 end of primer 5 is homolog to CYC1 terminator, which would facilitate sequence fusion. The two DNA sequences, TEF1 controlled WS (PCR product 1, FIG. 11) and neo gene (PCR product 2, FIG. 11), could be fused together as one by PCR amplification taken these two sequences as the template and primer 3 and 6 as the PCR primers. The fused DNA fragment (PCR product 3, FIG. 11) be transformed into yeast and selected on the plats with G418 concentration. Similarly, DNA fragment that contained PGK1 controlled WS and neo gene was also constructed and integrated into yeast.",
+                                "Shown in FIG. 12, the initial results suggests PGK1 controlled WS have a higher productivity and chosen as the choice for selection on the plates with increasing G418 concentration. The colonies selected from the plate with higher concentration of G418 should contain higher copy number of WS, and contribute to a higher biodiesel production. FIG. 13 shows the relationship of the concentration of biodiesel production and the concentration of G418. Yield increased remarkably as more G418 was used in the chromosomal evolution until yield stopped increase when the supply of precursors limited the function of wax synthase. The chromosome integration constructed a stable pathway and the production is comparable or higher than those achievable using multicopy plasmids.",
+                                "**Analysis:**",
+                                "The inoculated transformants of S. cerevisiae were cultured to late exponential growth period in 100 mL SD medium lacking uracil and containing 2% (w/v) glucose at 30\u00b0 C. The cultures were then harvested. Cell-free extracts were prepared using a previously reported fast prep method for enzyme analysis (Hou, Vemuri et al. 2009). The wax synthase activities in the transformants were testified in vitro using [1-14C] palmitoyl-CoA and 1-hexadecanol or ethanol as the substrates (Kalscheuer, Luftmann et al. 2004). ACCase (Acetyl-CoA carboxylase) activity was measured under a fume hood as the incorporation of radioactivity from NaH14CO3 into an acid-stable product, as described previously (Diacovich, Peir et al. 2002). The total lipid were extracted from the lyophilized cell pellets using the reported method (Gu, Valianpour et al. 2004). The putative FAEEs in the total lipid were purified by preparative TLC and detected by GC-MS (Kalscheuer, Luftmann et al. 2004)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe plasmid-free method for biodiesel production",
+                                "integrate WS and neo gene into yeast chromosome",
+                                "evaluate WS under control of different promoters",
+                                "describe PCR amplification and fusion of DNA sequences",
+                                "transform yeast and select on G418 plates",
+                                "analyze biodiesel production and G418 concentration",
+                                "describe chromosome integration and stabilization"
+                            ],
+                            "num_characters": 3968,
+                            "outline_medium": [
+                                "develop plasmid-free method for biodiesel production",
+                                "integrate wax synthase and neo gene into yeast chromosome",
+                                "evaluate wax synthase activity under different promoters"
+                            ],
+                            "outline_short": [
+                                "develop plasmid-free method for biodiesel production"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A fungal cell system for producing fatty acyl ethyl esters (FAEE), said system comprising:\na) a fungal cell, and\nb) an expression vector encoding at least one wax synthase,\nwherein the metabolism of said fungal cell is additionally modified, said modification providing for down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) selected from the group consisting of genes encoding one or more enzyme(s) involved in at least one of said fungal cell's fatty acid synthesizing pathways, fatty acid consuming pathways and carbohydrate biosynthesis pathways, and/or selected from the group consisting of genes encoding one or more enzyme(s) acting as wax ester transporter(s) of said fungal cell.",
+        "2. A fungal cell system according to claim 1, wherein said fungal cell is a yeast cell.",
+        "3. A fungal cell system according to claim 1, wherein said fungal cell is selected from the group of fungal cells consisting of Saccharomyces, Saccharomyces cerevisae Hansenula polymorpha, Kluyveromyces, Pichia, Candida albicans, Aspergilli, Rhodotorula rubra, Torulopsis, Trichosporon cutaneum, Trichoderma reesei, Apiofrichum curvafum, Yarrowia lipolytica, and Cryptococcus curvatus.",
+        "4. A fungal cell system according to any one of claims 1-3, wherein said modification is genetic and is effectuated by the introduction of one or more exogenous expression vector(s) into said fungal cell.",
+        "5. A fungal cell system according to claim 4, wherein said one or more exogenous expression vector(s) is a plasmid.",
+        "6. A fungal cell system according to any one of claims 1-5, wherein said genetic modification provides for an increased supply of fatty acyls to the metabolism of said fungal cell.",
+        "7. A fungal cell system according to any one of claims 1-6, wherein said fungal cell is genetically modified to stimulate overproduction of fatty acids.",
+        "8. A fungal cell system according to any one of claims 1-7, wherein the modification is performed to any one or more of the following genes, or its expression products: ACB1 (ACBP, acyl-CoA-binding protein), ACC1 (Acetyl-CoA carboxylase), FAS1, FAS2 (Fatty acid synthase), gapN (NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase), ACS1 (Acetyl-CoA synthetase), DGA1 (Acyl-CoA:diacylglycerol acyltransferas), LRO1 (Lecithin: cholesterol acyltransferase), ARE1, ARE2 (Acyl-CoA:sterol acyltransferase), PDX1 (Peroxisomal acyl-CoA oxidase).",
+        "9. A fungal cell system according to claim 8, wherein the modification is performed by a knockout/deletion of one or more of the genes DGA1, LRO1, ARE1, ARE2, and PDX1.",
+        "10. A fungal cell system according to claim 8, wherein the modification is performed by overexpressing one or more gene product(s) by the introduction of one or more expression vector(s) encoding said one or more gene product(s), said one or more gene product(s) being selected from the group consisting of: acyl-CoA-binding protein, Acetyl-CoA carboxylase (ACC1), NADP+ dependent glyceraldehyde-3-phosphate dehydrogenase, Fatty acid synthases (FAS1, FAS2) and Acetyl-CoA synthetase (ACS1).",
+        "11. A fungal cell system according to claim 10, wherein said modification provides for an overexpression of ACC1 in combination with an increased expression of FAS1 and FAS2.",
+        "12. A fungal cell system according to any one of claim 10 or 11, wherein the modification of ACC1 is performed by the introduction of an expression vector and an increased expression of FAS1/FAS2 is performed by replacing the promoter thereof.",
+        "13. A fungal cell system according to claim 12, wherein Ser659Ala and Ser1157Ala of said ACC1 gene is replaced (SEQ ID NO:16).",
+        "14. A fungal cell system according to any one of the preceding claims, wherein said wax synthase encoded by said expression vector is heterologous.",
+        "15. A fungal cell system according to any one of the preceding claims, wherein said wax synthase is obtained from the one or more of the species Mycobacterium, Rhodococcus, Acinetobacter, Mus Musculus and/or Marinobacter.",
+        "16. A fungal cell system according to claim 15, wherein said at least one wax synthase is selected from the group consisting of Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6, and Psychrobacter articus 273-4.",
+        "17. A fungal cell system according to claim 16, wherein the gene expressing said wax synthase is codon optimized and comprises a sequence encoded by any one of SEQ ID NO:1, SEQ ID NO 4, SEQ ID NO 5, SEQ ID NO 6 and/or SEQ ID NO 7.",
+        "18. A fungal cell system according to claim 16 or 17, wherein said wax synthase is encoded by one or more of the following expression vectors pSP-B1, pSP-B2, pSP-B3, pSP-B4 and/or pSP-B5.",
+        "19. A fungal cell system according to any one of the preceding claims, wherein said expression vector encoding said one or more wax synthase(s) is an episomal plasmid (single copy plasmids) or a high-copy plasmid.",
+        "20. A fungal cell system according to any one of the preceding claims, wherein said expression vector encoding said wax synthase provides for chromosomal integration into the chromosome of said fungal cell.",
+        "21. A fungal cell system according to any one of the preceding claims, wherein carbohydrates are supplied as an external substrate to said fungal cell system for the production of FAEE.",
+        "22. A fungal cell system according to claim 21, wherein said carbohydrates are selected from the group consisting of glucose, fructose, galactose, xylose, arabinose, sucrose, maltose, starch, cellulose, and hemicellulose.",
+        "23. A fungal cell system according to any one of the preceding claims, wherein additionally either or both of genes Eht1p and Eeb1p of said fungal cell, are overexpressed by said fungal cell.",
+        "24. Use of an fatty acyl ester, such as a fatty acyl ethyl ester (FAEE), produced by a fungal cell system according to any one of the preceding claims as a component in a biofuel, such as biodiesel, a lubricant, cosmetic, linoleum, printing ink, and/or a solid wax ester used for candles and/or polishes.",
+        "25. A composition comprising a fungal cell system according to any one of the preceding claims, said composition further comprising at least one additional component selected from the group consisting of: buffers; stabilizers; protease-inhibiting agents; hydrolytic enzymes, saccharolytic enzymes; cell membrane- and/or cell wall-preserving compounds, nutritional media appropriate to the cell; and the like.",
+        "26. A method for producing fatty acyl ethyl esters (FAEE), said method comprising:\na) providing a fungal cell system according to any one of claims 1-23 and,\nb) adding one or more sources of carbohydrates as an external substrate to said fungal cell system in a culture broth;\nc) and wherein said FAEE are thereafter retrieved by extraction from said culture broth.",
+        "27. A method according to claim 26, wherein said carbohydrates are selected from the group consisting of: glucose, fructose, galactose, xylose, arabinose, sucrose, maltose, starch, cellulose, and hemicellulose.",
+        "28. A composition comprising:\na) a fungal cell which metabolism is modified thereby possessing an increased flux towards fatty acid biosynthesis; and\nb) one or more expression vectors encoding one or more wax synthase(s)",
+        "29. Use of a composition according to claim 28 for producing biofuel esters, such as biodiesel, lubricants, cosmetics, linoleum and printing inks, and/or the solid waxes used for candles and polishes.",
+        "30. A yeast cell having an increased metabolic flux towards fatty acid ester biosynthesis, said yeast cell expressing at least one wax synthase selected from the group consisting of Acinetobacter baylyi ADP1, Marinobacter hydrocarbonoclasticus DSM 8798, Rhodococcus opacus PD630, Mus musculus C57BL/6 and Psychrobacter articus 273-4) in combination with over-expressing the protein ACBP (acyl-CoA-binding protein)",
+        "31. A yeast cell according to claim 30, wherein said yeast cell is Saccharomyces cerevisae.",
+        "32. A fungal cell system for overproducing fatty acids, comprising a fungal cell having an increased metabolic flux towards fatty acid biosynthesis, characterized by at least over-expressing ACC1 (Acetyl-CoA carboxylase).",
+        "33. A fungal cell system for overproducing fatty acids, comprising\na) a fungal cell having an increased metabolic flux towards fatty acid biosynthesis, characterized by at least over-expressing ACC1 (Acetyl-CoA carboxylase), and wherein the metabolism of said fungal cell is additionally modified, said modification providing for down-regulation, attenuation, deletion and/or over-expression of one or more gene(s) selected from the group consisting of genes encoding one or more enzyme(s) involved in at least one of said fungal cell's fatty acid synthesizing pathways, fatty acid consuming pathways and carbohydrate biosynthesis pathways, and/or selected from the group consisting of genes encoding one or more enzyme(s) acting as wax ester and/or fatty acids transporter(s) of said fungal cell."
+    ]
+}

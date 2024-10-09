@@ -1,0 +1,616 @@
+{
+    "id": "US20190229820",
+    "authors": [
+        "Anna Scaglione",
+        "Lorenzo Ferrari"
+    ],
+    "title": "ACTIVE SEQUENTIAL XAMPLING RECEIVER FOR SPECTRUM SENSING",
+    "date": "2019-01-18 00:00:00",
+    "abstract": "An active sequential xampling receiver for spectrum sensing is disclosed. The receiver includes a dynamically adjustable analog front end to perform sub-Nyquist energy sensing across a broad radio frequency (RF) spectrum. In an exemplary aspect, the receiver includes a dynamic modulator which modulates the broad RF spectrum to dynamically select sub-bands (e.g., RF channels) and fold their spectral content into a narrower baseband signal for energy detection. A controller adjusts the dynamic modulator to maximize utility of the spectrum detection based on past energy observations.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE DISCLOSURE",
+                    "paragraphs": [
+                        "This application is related to radio frequency (RF) receivers, and specifically to spectrum sensing in RF receivers."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define RF receivers"
+                    ],
+                    "num_characters": 116,
+                    "outline_medium": [
+                        "define RF receivers"
+                    ],
+                    "outline_short": [
+                        "define RF receivers"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Mobile devices are increasingly being used for entertainment, such as gaming and video streaming. The coexistence of these new services with the Internet of Things (IoT) and machine-to-machine communications means that wireless applications may quickly become starved for bandwidth. Millimeter wave and other radio frequency (RF) spectrum can provide much needed increases in throughput but pose a challenge of high-speed sampling required to sense the spectrum. This may be a particular challenge for relatively low-rate IoT applications, which are likely to benefit from opportunistic decentralized spectrum access. To achieve efficient usage of the spectrum, sensing techniques are needed which overcome the bottleneck of sampling at the Nyquist rate, which is generally too time and/or energy intensive, particularly for low-power wireless devices.",
+                        "Two classes of solutions have been proposed to overcome this bottleneck. The first approach uses a sub-Nyquist sampling front end using analog-to-digital conversion techniques named xampling architectures. Xampling architectures preprocess a signal in the analog domain and then sample at a lower rate compared with what the Nyquist theorem dictates. The aim is to reduce the complexity and energy cost for the analog-to-digital converter hardware. However, prior xampling approaches increase complexity in the reconstruction of the underlying signal, and accurate spectrum sensing may not be guaranteed in lower signal-to-noise ratio (SNR) signals.",
+                        "The second approach consists in selecting opportunistically, and in a cognitive fashion, a small section of spectrum at a time, relying on an analog front end able to switch between small sub-bands. This approach may be better able to cope with lower SNR signals. However, for sensing a broad spectrum, the second approach may take too much time to determine and use available spectrum before the environment has changed."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate spectrum sensing",
+                        "limitations of Nyquist rate",
+                        "introduce xampling architectures"
+                    ],
+                    "num_characters": 1926,
+                    "outline_medium": [
+                        "motivate spectrum sensing"
+                    ],
+                    "outline_short": [
+                        "motivate spectrum sensing"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "An active sequential xampling receiver for spectrum sensing is disclosed. The receiver includes a dynamically adjustable analog front end to perform sub-Nyquist energy sensing across a broad radio frequency (RF) spectrum. In an exemplary aspect, the receiver includes a dynamic modulator which modulates the broad RF spectrum to dynamically select sub-bands (e.g., RF channels) and fold their spectral content into a narrower baseband signal for energy detection. A controller adjusts the dynamic modulator to maximize utility of the spectrum detection based on past energy observations.",
+                        "Nyquist sampling at very high carriers can be prohibitively costly for low-power wireless devices. In spectrum sensing, this limit calls for the receiver to include an analog front end that can sweep different bands quickly in order to use the available spectrum opportunistically. Thus, the sensing action of the analog front end maximizes a utility function decreasing linearly with the number of measurements and increasing as a function of the active spectrum components that are correctly detected. The optimization selects the best linear combinations of sub-bands to mix in order to accrue maximum utility. The structure of the utility represents the trade-off between exploration, exploitation, and risk of making an error that is characteristic of the spectrum-sensing problem.",
+                        "An exemplary embodiment relates to an RF receiver. The RF receiver includes a dynamic modulator configured to modulate a received signal such that one or more portions of the received signal are dynamically selected and folded into a baseband of a modulated signal. The RF receiver also includes an energy detector configured to sample an energy of the modulated signal at a sub-Nyquist rate. The RF receiver also includes a controller configured to adjust the dynamic modulator based on an output of the energy detector.",
+                        "Another exemplary embodiment relates to a method for sensing occupied RF spectrum. The method includes receiving an RF signal and sequentially modulating the RF signal using a sensing matrix to produce a set of modulated signals. The method also includes detecting a signal occupancy for each of the set of modulated signals. In addition, coefficients of the sensing matrix are dynamically adjusted based on detecting the signal occupancy.",
+                        "Another exemplary embodiment relates to an analog front end for an RF receiver. The analog front end includes a dynamic modulator configured to convert an incoming RF signal having a first bandwidth to a modulated signal having content of the first bandwidth dynamically folded in a second bandwidth narrower than the first bandwidth. The analog front end also includes an energy detector configured to sense signal energy of the modulated signal within the second RF bandwidth.",
+                        "Those skilled in the art will appreciate the scope of the present disclosure and realize additional aspects thereof after reading the following detailed description of the preferred embodiments in association with the accompanying drawing figures."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce active sequential xampling receiver",
+                        "describe dynamic modulator",
+                        "explain energy detection",
+                        "motivate utility function",
+                        "describe optimization",
+                        "introduce exemplary embodiments"
+                    ],
+                    "num_characters": 3068,
+                    "outline_medium": [
+                        "introduce active sequential xampling receiver",
+                        "describe dynamic modulator",
+                        "explain controller adjustment"
+                    ],
+                    "outline_short": [
+                        "introduce active sequential xampling receiver"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The embodiments set forth below represent the necessary information to enable those skilled in the art to practice the embodiments and illustrate the best mode of practicing the embodiments. Upon reading the following description in light of the accompanying drawing figures, those skilled in the art will understand the concepts of the disclosure and will recognize applications of these concepts not particularly addressed herein. It should be understood that these concepts and applications fall within the scope of the disclosure and the accompanying claims.",
+                        "It will be understood that, although the terms first, second, etc. may be used herein to describe various elements, these elements should not be limited by these terms. These terms are only used to distinguish one element from another. For example, a first element could be termed a second element, and, similarly, a second element could be termed a first element, without departing from the scope of the present disclosure. As used herein, the term \u201cand/or\u201d includes any and all combinations of one or more of the associated listed items.",
+                        "It will be understood that when an element is referred to as being \u201cconnected\u201d or \u201ccoupled\u201d to another element, it can be directly connected or coupled to the other element or intervening elements may be present. In contrast, when an element is referred to as being \u201cdirectly connected\u201d or \u201cdirectly coupled\u201d to another element, there are no intervening elements present.",
+                        "The terminology used herein is for the purpose of describing particular embodiments only and is not intended to be limiting of the disclosure. As used herein, the singular forms \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d are intended to include the plural forms as well, unless the context clearly indicates otherwise. It will be further understood that the terms \u201ccomprises,\u201d \u201ccomprising,\u201d \u201cincludes,\u201d and/or \u201cincluding\u201d when used herein specify the presence of stated features, integers, steps, operations, elements, and/or components, but do not preclude the presence or addition of one or more other features, integers, steps, operations, elements, components, and/or groups thereof.",
+                        "Unless otherwise defined, all terms (including technical and scientific terms) used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this disclosure belongs. It will be further understood that terms used herein should be interpreted as having a meaning that is consistent with their meaning in the context of this specification and the relevant art and will not be interpreted in an idealized or overly formal sense unless expressly so defined herein.",
+                        "An active sequential xampling receiver for spectrum sensing is disclosed. The receiver includes a dynamically adjustable analog front end to perform sub-Nyquist energy sensing across a broad radio frequency (RF) spectrum. In an exemplary aspect, the receiver includes a dynamic modulator which modulates the broad RF spectrum to dynamically select sub-bands (e.g., RF channels) and fold their spectral content into a narrower baseband signal for energy detection. A controller adjusts the dynamic modulator to maximize utility of the spectrum detection based on past energy observations.",
+                        "Nyquist sampling at very high carriers can be prohibitively costly for low-power wireless devices. In spectrum sensing, this limit calls for the receiver to include an analog front end that can sweep different bands quickly in order to use the available spectrum opportunistically. Thus, the sensing action of the analog front end maximizes a utility function decreasing linearly with the number of measurements and increasing as a function of the active spectrum components that are correctly detected. The optimization selects the best linear combinations of sub-bands to mix in order to accrue maximum utility. The structure of the utility represents the trade-off between exploration, exploitation, and risk of making an error that is characteristic of the spectrum-sensing problem.",
+                        "Compared with other multi-band signals receivers, the hardware in the architecture according to the present disclosure is simpler, since the architecture uses a single non-coherent receiver and a single sampling device that collects energy measurements sequentially, sampling at a fraction of the Nyquist rate. A time-dependent utility function is used to optimize the trade-off between sensing and exploitation.",
+                        "It is important to remark that the optimum action generally does not attempt the full recovery of all the white spaces. The optimum decision may be conservative and sense a very limited portion of the spectrum. Furthermore, since scanning one sub-band at a time is a possible action of the active spectrum-sensing strategy, the method of the present disclosure subsumes previous techniques to scan the spectrum optimally, without mixing it. This approach is referred to as direct inspection and is discussed in Section III, A.",
+                        "The present disclosure is more closely related to the stochastic optimization schemes that extend the framework and optimize a compressive spectrum-sensing action based on previous observations. The common goal of stochastic optimization schemes is the recovery of the full support of a given vector. Typically, such techniques are shown to be able to cope with lower signal-to-noise ratio (SNR) in the signal reconstruction with low complexity. What these stochastic optimization schemes do not capture is that, in cognitive spectrum-sensing applications, a timely decision is also desirable to have enough time to exploit the spectrum. The method of the present disclosure is also adaptive with respect to the time horizon K, the number of resources N, the prior probabilities on the states of each resources, and the parameters that characterize the utility function, that is, reward and penalty for good/bad decisions.",
+                        "Based on performance analysis, it is the clear that sparse and adaptive sensing matrix designs outperform dense sensing matrices and those that are sparse but static. There are two main reasons for this: (1) through belief propagation algorithms, they achieve near-optimum detection performance, and (2) they mitigate the aforementioned noise-folding phenomena. The method of the present disclosure is applicable not only when the utility comes from finding empty entries (e.g., spectrum sensing) but also when one is interested in finding the occupied ones (e.g., in a RADAR application).",
+                        "More specifically, the present disclosure is organized as follows: Section I is dedicated to the signal model and the analog front end of the detector according to the present disclosure, and Section II formulates the optimization problem. Then, Section III addresses the optimal dynamic design for the direct inspection case (III, A), in which there is no mixing of sub-bands (also known as scanning receiver), and a group testing case (III, B) in which is introduced the possibility of mixing different bands. Section IV is dedicated to additional discussions: an alternative standard method for detection based on maximum likelihood estimate and LASSO relaxation, hardware limitations of the architecture according to the present disclosure, and the extension of the framework according to the present disclosure to other applications. The present disclosure demonstrates that, even if finding the optimal policy is exponentially complex in the number of resources, the approximation factor for a greedy procedure can be characterized. Numerical results to sustain the claims of the present disclosure are presented in Section V.",
+                        "Regarding notation, bold lowercase represents vectors, bold uppercase represent matrices, and calligraphic letters indicate sets. For example, sA indicates the entries i\u2208 of vector s, and \u2225y\u2225A2 represents the weighted 2-norm yT Ay. For any set function \u0192 (), the marginal increment for adding element a is defined as \u2202a\u0192()=\u0192(+a)\u2212\u0192()."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Cognitive Radio Scenario",
+                            "paragraphs": [
+                                "FIG. 1A is a schematic diagram of a cognitive radio scenario 10. The cognitive radio scenario 10 includes a number of RF devices, which may include one or more user equipment (UE) 12, base stations 14, and similar devices. Each of the UEs 12 and base stations 14 may send and/or receive signals over a common RF spectrum. Accordingly, a receiver 16 in the cognitive radio scenario 10 may need to quickly and accurately sense which portions of the RF spectrum are occupied in order to receive and/or transmit signals within the RF spectrum as needed.",
+                                "FIG. 1B is a graphical representation of an RF spectrum 18 of the cognitive radio scenario 10 of FIG. 1A. The RF spectrum 18 may be spectrum with opportunistic access, such as millimeter wave (60-80 GHz), citizens broadband radio service (CBRS), or other frequencies. The RF spectrum 18 being sensed by the receiver 16 can be represented in the frequency domain as X(\u0192) and in the time domain as x(t). In addition, there may be N channels 20 (e.g., sub-bands centered at frequencies \u01921, \u01922, . . . , \u0192i, . . . , \u0192N) of the RF spectrum 18, each channel 20 having a channel width Rc such that the RF spectrum 18 has a bandwidth of W=NRc.",
+                                "In the context of cognitive radio for the RF spectrum 18, each transmission includes large amounts of control signals overhead in addition to the payload. Therefore, it can be assumed that the activity of the UEs 12 and base stations 14 over one or more channels 20 will persist for several sampling periods Ts. However, assuming this interval T lasts for a multiple K of the sampling period Ts (i.e., T=KTs), the sensing mechanism of the receiver 16 should provide the fastest decision it can. The goal of the receiver 16 according to the present disclosure is to sequentially sense the spectrum for a first portion of this interval T and transmit the most it can during the remaining time over the channels 20 found empty (or, alternatively, process one or more occupied channels 20)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe cognitive radio scenario",
+                                "illustrate RF spectrum and channels",
+                                "explain need for timely decision in spectrum sensing"
+                            ],
+                            "num_characters": 1973,
+                            "outline_medium": [
+                                "describe cognitive radio scenario"
+                            ],
+                            "outline_short": [
+                                "describe cognitive radio scenario and RF spectrum 18"
+                            ]
+                        },
+                        {
+                            "title": "B. Spectrum Sensing Architecture",
+                            "paragraphs": [
+                                "FIG. 2 is a diagram of an exemplary receiver 16 configured to sense spectrum at a sub-Nyquist rate by dynamically modulating portions of a broad spectrum. The receiver 16 includes an analog front end 22, which includes an energy detector 24 and a dynamic modulator 26. The energy detector 24 is configured to sample energy of an input signal at a sub-Nyquist rate. In an exemplary aspect, the energy detector 24 is a single-channel detector which can operate quickly with low power demands by filtering and sampling a single channel baseband input signal.",
+                                "The dynamic modulator 26 facilitates use of the single channel energy detector 24 by modulating a received signal x(t) (e.g., the RF spectrum 18) such that portions (e.g., sub-bands or channels 20) of the received signal x(t) are dynamically selected and folded into the single channel baseband input signal of the energy detector 24. The portions of the received signal x(t) which are selected and folded into the baseband input signal by the dynamic modulator 26 are selected by a controller 28 in order to maximize utility of the spectrum sensing function as described further below in Sections II and III. The controller 28 can control the dynamic modulator 26 through a sensing matrix B or other control signals.",
+                                "The receiver 16 can thus perform carrier sensing over multiple bands simultaneously. The receiver 16 has the advantage of being sequential, and not requiring time accurate time offset between sampling channel as in some approaches. In addition, the spectrum sensing function of the receiver 16 is robust to the noise-folding problem, in which SNR deteriorates approximately linear in the number of bands that are aliased prior to sampling.",
+                                "FIG. 3 is a diagram of the exemplary receiver 16 of FIG. 2, illustrating in greater detail components of the analog front end 22. In the proposed analog front end 22, the dynamic modulator 26 folds the spectrum present in specific sub-bands onto the center frequency of the energy detector 24 for filtering and sampling, during what can be referred to as a sub-Nyquist carrier sensing phase. The samples are spaced by intervals of duration",
+                                "\\(T_{s} = \\frac{1}{R_{s}}\\)",
+                                "which is a factor 1/N smaller than the total spectrum. As the diagram in FIG. 3 shows, rather than having a filter bank architecture, the analog front end 22 performs sequential non-coherent tests. These tests are designed according to a utility-maximizing strategy, such as with the sensing matrix B chosen by the controller 28 of FIG. 2 via a greedy algorithm, and the tests' thresholds y (described further below in Sections II and III). It is assumed that the complex envelope of the analog signal we are exploring is a multicomponent signal, whose components are a frequency band width equal to W=NRs. During the interval 0\u2264t<T the received signal is:",
+                                "\\(\\begin{matrix}\n{{y\ue8a0(t)} = {{x\ue8a0(t)} + {w\ue8a0(t)}}} & {{EQ}.\\mspace{14mu} \ue89e1} \\\\\n{{x\ue8a0(t)} = {\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{s_{i}\ue89e{x_{i}\ue8a0(t)}\ue89ee^{{- j}\ue89e\\; \ue89e2\ue89e\\; \ue89e\\pi \ue89e\\; \ue89e{R_{s}\ue8a0{({i - 1})}}^{t}}}}} & {{EQ}.\\mspace{14mu} \ue89e2}\n\\end{matrix}\\)",
+                                "with (t)\u02dc(0, N0\u03b4(\u03c4)) being additive white Gaussian noise. The components of the received signals xi(t) correspond to each primary user source, modeled as band-limited random processes with bandwidth Rs; they are equal in the mean square sense to the following process:",
+                                "\\(\\begin{matrix}\n{{x_{i}\ue8a0(t)} = {\\sum\\limits_{k = 1}^{N}\ue89e\\; \ue89e{{x_{i}\ue8a0\\lbrack k\\rbrack}\ue89e{{{sinc}\ue8a0\\left( {\\pi \ue8a0\\left( {{R_{s}\ue89et} - k + 1} \\right)} \\right)}.}}}} & {{EQ}.\\mspace{14mu} \ue89e3}\n\\end{matrix}\\)",
+                                "The dynamic modulator 26 modulates the received signal y(t) over the period (k\u22121)Ts\u2264t<kTs with:",
+                                "\u03b2k(t)=\u03a3i=1N\u221a{square root over (bki)}ej(2\u03c0R(i\u22121)t+\u03d5).\u2003\u2003EQ. 4",
+                                "to produce a modulated signal, where bki are the coefficients of the sensing matrix B and the phase \u03d5i accounts for the delay in generating the tone at the ith frequency plus the oscillator phase. In this regard, the dynamic modulator 26 can be implemented with a set of L voltage controlled oscillators (VCOs) 30. The sensing matrix B can therefore control a voltage level generation network 32 for the inputs to the VCOs 30 (and/or gains 34). The VCOs 30 are not required to be synchronized or phase-locked. Furthermore, the switching frequency of the VCOs 30 may also be Rs (i.e., the single channel bandwidth).",
+                                "The energy detector 24 receives and samples an energy of the modulated signal. In an exemplary aspect, the energy detector 24 includes a low-pass filter (LPF) 36, which is convolved with the modulated signal. The LPF 36 may have an impulse response sinc(\u03c0Rst) and outputs the filtered modulated signal c(t). The energy detector 24 also includes a sampling circuit 38, which then samples the filtered modulated signal c(t) at times kTs; k=1, . . . ,  in the single-channel baseband. This operation can be considered equivalent to an orthogonal projection, as shown below:",
+                                "\\(\\begin{matrix}\n{{c\ue8a0\\lbrack k\\rbrack} = {\\left. {\\left\\lbrack {{y\ue8a0(t)}\ue89e{\\beta_{k}\ue8a0(t)}} \\right\\rbrack*R_{s}\ue89e{{sinc}\ue8a0\\left( {\\pi \ue89e\\; \ue89eR_{s}\ue89et} \\right)}}\ue89e \\right|_{t = {kT}_{s}} = {\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{\\sqrt{b_{ki}}\ue89ee^{j\ue89e\\; \ue89e\\varphi_{i}}\ue89eY_{ki}}}}} & {{EQ}.\\mspace{14mu} \ue89e5}\n\\end{matrix}\\)",
+                                "where Yki represents the orthogonal projections over the period (k\u22121)Ts\u2264t<kTs of y(t) over the following signals:",
+                                "Yki=y(t),Rsej2\u03c0R(i\u22121)t sinc(\u03c0(Rst\u2212k+1)).\u2003\u2003EQ. 6",
+                                "If the periodic signals were not truncated in time, the relationship would be exact; in practice, however, there are some approximation errors due to the windowing of the signal over the prescribed interval [(k\u22121)Ts, kTs]. The effect of this can be mitigated by using raised cosine filtering and a non-rectangular window to reduce the effect of side lobes. Considering that the signals",
+                                "{ej2\u03c0R(i\u22121)t sinc(\u03c0(Rst\u2212k+1))}i,k\u2208Z",
+                                "form an orthogonal basis, and that Equation 1 is equivalent to the following:",
+                                "\\(\\begin{matrix}\n{{x\ue8a0(t)} = {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{s_{i}\ue89e{x_{i}\ue8a0\\lbrack k\\rbrack}\ue89ee^{j\ue89e\\; \ue89e2\ue89e\\pi \ue89e\\; \ue89e{R_{s}\ue8a0{({i - 1})}}\ue89et}\ue89e{{sinc}\ue8a0\\left( {\\pi \ue8a0\\left( {{R_{s}\ue89et} - k + 1} \\right)} \\right)}}}}} & {{EQ}.\\mspace{14mu} \ue89e7} \\\\\n{Y_{ki} = {{s_{i}\ue89e{x_{i}\ue8a0\\lbrack k\\rbrack}} + {w_{i}\ue8a0\\lbrack k\\rbrack}}} & {{EQ}.\\mspace{14mu} \ue89e8}\n\\end{matrix}\\)",
+                                "where wi[k]\u02dcC(0; ni). If xi[k] is also modelled as i.i.d. xi[k]\u02dcC(0; \u03c6i), then for a given state s:",
+                                "Yki\u02dcC(0,\u03c6i+N0),\u2003\u2003EQ. 9",
+                                "where \u03c6 is a vector collecting the average, unknown a priori, received signal power from the existing communications. The energy detector 24 samples for k=1, . . . , \u03ba are as follows:",
+                                "\\(\\begin{matrix}\n{{c\ue8a0\\lbrack k\\rbrack} = {\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{\\sqrt{b_{ki}}\ue89e{e^{j\ue89e\\; \ue89e\\varphi_{i}}\ue8a0\\left( {{s_{i}\ue89e{x_{i}\ue8a0\\lbrack k\\rbrack}} + {w_{i}\ue8a0\\lbrack k\\rbrack}} \\right)}}}} & {{EQ}.\\mspace{14mu} \ue89e10}\n\\end{matrix}\\)",
+                                "and therefore (assuming \u03d5i's are independent and uniformly distributed in [0, 2\u03c0)) they are also conditionally zero mean Gaussian random variables:",
+                                "c[k]\u02dcC(0,\u03b8[k]),\u2003\u2003EQ. 11",
+                                "\u03b8[k]=\u03b8(bk,s)bkT(\u03c6+n)\u2003\u2003EQ. 12",
+                                "It follows that, with reference to FIGS. 1A and 1B, the information for the detection of communications by the UEs 12 and/or base stations 14 is embedded in the variance of the sample, which is the energy received during the kth period. Sufficient statistics for the problem are as follows:",
+                                "y[k]|c[k]|2\u2003\u2003EQ 13",
+                                "which are exponentially distributed, that is, y[k]\u02dcExp(\u03b8[k])."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce receiver architecture",
+                                "describe analog front end and energy detector",
+                                "explain dynamic modulator and controller",
+                                "illustrate receiver architecture",
+                                "describe components of analog front end",
+                                "explain dynamic modulator and sensing matrix",
+                                "describe energy detector and sampling circuit",
+                                "introduce received signal model",
+                                "explain modulation and demodulation",
+                                "describe energy detector output",
+                                "introduce orthogonal projections",
+                                "explain approximation errors due to windowing",
+                                "discuss mitigation of side lobes",
+                                "conclude description of spectrum sensing architecture"
+                            ],
+                            "num_characters": 7356,
+                            "outline_medium": [
+                                "introduce receiver architecture",
+                                "describe analog front end",
+                                "introduce dynamic modulator",
+                                "describe energy detector",
+                                "introduce controller",
+                                "describe sensing matrix",
+                                "discuss sequential non-coherent tests"
+                            ],
+                            "outline_short": [
+                                "describe receiver 16 and analog front end 22",
+                                "explain dynamic modulator 26 and controller 28",
+                                "illustrate components of analog front end 22 and energy detector 24"
+                            ]
+                        },
+                        {
+                            "title": "C. Hardware Considerations",
+                            "paragraphs": [
+                                "The circuit diagram of FIG. 3 assumes a settling time for the VCOs 30 much smaller than Ts (e.g., the sampling period for the single channel sub-band). If this assumption does not hold, one should use a low-pass filter with a smaller bandwidth and collect the samples c[k] at an even slower rate than Rs to wait for the VCOs to settle. This modification does not alter the statistical characterization of the samples, derived in subsection I.B above. The drawback of taking samples less often is that (assuming the same occupancy coherence time) one has accrued less information than what is available in the received signal and has less than K slots to decide. Given that the strategy is derived as a function of K, this does not invalidate the findings. Another possibility is to replace the L tunable VCOs 30 with N oscillators at constant frequencies, corresponding to the N possible bands of the signal. Using N oscillators increases the power consumption and cost of the circuit but significantly reduces the switching time between two measurements. Hence, this is the natural choice if one wants to exploit a dense sensing matrix. Instead, the use of a set of VCOs 30 is preferable if the matrices are sparse because a small number of VCOs can synthesize the mixing signal. The switching is performed by a multiplexer that takes the sum of the up to L tones selected by the vector bk.",
+                                "In general, since the detection of the signal is the focus, with reasonably good device components, calibration can be expected to be either far less demanding or unnecessary, if one accepts loss in sensitivity. The binary coefficients for the vector b can be set to ones and zeros, as discussed in Section III, B. Controlling the gains 34 is unnecessary for the system to work, and it may be preferable not to add tunable gains 34 because they can be another possible source of uncertainty and complexity in the system. Finally, imperfect tuning of the VCOs 30 reduces the SNR, either by spreading or misplacing the center frequency of the components of interest, but not fundamentally impairing its detection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "discuss settling time for VCOs",
+                                "explain use of low-pass filter and slower sampling rate",
+                                "discuss use of N oscillators at constant frequencies",
+                                "conclude hardware considerations"
+                            ],
+                            "num_characters": 2104,
+                            "outline_medium": [
+                                "discuss VCO settling time",
+                                "discuss alternative oscillator configurations"
+                            ],
+                            "outline_short": [
+                                "discuss hardware limitations and considerations for implementation"
+                            ]
+                        },
+                        {
+                            "title": "II. Optimization Framework",
+                            "paragraphs": [
+                                "With reference to FIGS. 1A-3, the receiver 16 can be modeled as needing to divide K instants of time available between the sensing and the exploitation of a set ={1; 2, : : : , N} of sub-bands (e.g., channels 20 of the RF spectrum 18). A utility function of the receiver 16 accrues a reward that is a function of the underlying state vector for these items:",
+                                "s[s1, . . . ,sN]\u2208{0,1}N\u2003\u2003EQ. 14",
+                                "where the entries si\u2208{0,1}, as well as the residual time available after sensing. The state variables si are indicators of good/bad (0=1) state of a resource; for the cognitive spectrum sensing application 0 would mean the channel is \u201cidle\u201d and 1 would mean the channel is \u201cbusy\u201d. The receiver 16 acquires information about the entries via random observations coming from a known probability density function parameterized by an unknown vector.",
+                                "During the times devoted to sensing k=1, 2, . . . , <K the receiver 16 can dynamically and adaptively design each measurement by selecting a subset of entries of s to probe through a sensing vector bk=[bk1, bk2, . . . , bkN]. The bki's will be non-zero only on the channels that are actively sensed; it is assumed the measurement provides an observation y[k] drawn from a density \u0192\u03b8[k](y) that is a function of both the choice of bk and the state s, i.e. \u03b8[k]=\u03b8(bk, s). It is assumed the state variables si are mutually independent Bernoulli random variables with known prior probabilities given by a vector \u03c9=[\u03c91, \u03c92, . . . , \u03c9N] where \u03c9i=P(si=0). As described further in Section III below, the receiver can be designed with:\n\n\n- - 1) the\n    \u00d7N measurement matrix B (exploration phase)\n  - 2) a set of N decision rules \u03b4={\u03b4_(i)\u2208{0,1}: i=1, 2, . . . , N} over\n    the unknown states s_(i) of the resources (at the end of the\n    exploration phase).  \n    Notice that the design of B includes:\n  - the measurement vectors b_(k) for each test at time k=1, 2, . . . ,\n    (matrix rows),\n  - the sensing (exploration) time\n    to acquire information on the states s_(i) via the observations\n    y\\[k\\] (number of rows).",
+                                "The total utility for the receiver 16 will be proportional to the time left for exploitation (K\u2212k). A reward ri>0 can be used for correctly detecting an empty/busy resource and a penalty pi<0 for failing to detect a busy/empty resource. The utility of the detection function can be written as:",
+                                "\\(\\begin{matrix}\n{{U\\left( {s,\ue52d,K,B,\\delta}\ue89e\\; \\right)}\ue89e\\overset{\\Delta}{=}\ue89e\\left\\{ \\begin{matrix}\n{{\\left( {K - k} \\right)\ue89e{\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{\\omega_{i}\ue89e{r_{i}\ue8a0\\left( {1 - \\alpha_{i}} \\right)}}}} + {\\left( {1 - \\omega_{i}} \\right)\ue89ep_{i}\ue89e\\beta_{i}}} & {{case}\ue89e\\mspace{14mu} \ue89e0} \\\\\n{{\\left( {K - k} \\right)\ue89e{\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e{\\left( {1 - \\omega_{i}} \\right)\ue89e\\left( {1 - \\beta_{i}} \\right)\ue89er_{i}}}} + {\\omega_{i}\ue89e\\alpha_{i}\ue89ep_{i}}} & {{case}\ue89e\\mspace{14mu} \ue89e1}\n\\end{matrix} \\right.} & {{EQ}.\\mspace{14mu} \ue89e15}\n\\end{matrix}\\)",
+                                "where \u03b1i; \u03b2i denote the type I and type II errors probability respectively (e.g., \u03b1i=P(\u03b4i=1|si=0) and \u03b2i=P (\u03b4i=0|si=1).",
+                                "To differentiate between case 0 and case 1 allows to consider applications where the utility comes from an action on the entries detected as empty/busy: e.g., in a spectrum sensing application, the utility would come from the decision on transmitting over frequency bands found empty, whereas for a RADAR application, it makes more sense to consider the utility comes from taking action on the frequency (spatial directions) found busy. Finding the optimal policy corresponds to solving the following optimization problem:",
+                                "maxB,\u03b4[U(s,,K,B,\u03b4)]\u2003\u2003EQ. 16",
+                                "This approach can be modified to fit different observation models and assumptions, but as an example this disclosure considers the following form for the function \u03b8:",
+                                "\u03b8[k]=\u03b8(bk,s)=bk(\u03c6T+wT)\u2003\u2003EQ. 17",
+                                "where \u03c6=[\u03c61, \u03c62, . . . , \u03c6N] is a non-negative vector, such that the state variable si=1 when \u03c6i>0 and 0 when \u03c6i=0. The vector w=[w1, w2, . . . , wN] models a generic additive system noise. An exemplary aspect of this disclosure concerns the detection of the non-negative entries of \u03c6 and consequently the maximization of the utility accruable from the resources declared to be in the empty/busy state (Equation 15). The observation model also assumes that \u0192\u03b8[k](y)\u2261Exp(\u03b8[k]), i.e.:",
+                                "\\(\\begin{matrix}\n{{{y\ue8a0\\lbrack k\\rbrack} \\sim {f_{\\theta \ue8a0{\\lbrack k\\rbrack}}\ue8a0(y)}} = {\\frac{1}{\\theta \ue8a0\\lbrack k\\rbrack}\ue89ee^{- \\frac{y}{\\theta \ue8a0{\\lbrack k\\rbrack}}}}} & {{EQ}.\\mspace{14mu} \ue89e18}\n\\end{matrix}\\)",
+                                "where, for convenience, the alternative parameterization for the exponential distribution is generally used herein. In the context of RF spectrum sensing, this choice of distribution models the energy of complex circularly symmetric signal samples in each sub-band with zero mean and variance \u03c6i embedded in additive white Gaussian noise with variance w1."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "model receiver as dividing time between sensing and exploiting sub-bands",
+                                "define utility function of receiver as function of state vector",
+                                "describe sensing process and measurement design",
+                                "introduce decision rules for unknown states of resources",
+                                "define total utility for receiver",
+                                "formulate optimization problem to maximize utility",
+                                "specify example form for function \u03b8",
+                                "describe observation model and exponential distribution",
+                                "motivate application to RF spectrum sensing"
+                            ],
+                            "num_characters": 4817,
+                            "outline_medium": [
+                                "model receiver as optimization problem",
+                                "define utility function and state variables",
+                                "formulate optimization problem for optimal policy",
+                                "specify observation model and assumptions"
+                            ],
+                            "outline_short": [
+                                "formulate optimization problem for receiver utility",
+                                "define observation model and utility function"
+                            ]
+                        },
+                        {
+                            "title": "III. Dynamic Design of Sensing Matrices",
+                            "paragraphs": [
+                                "**A. Direct Inspection Case**",
+                                "In the direct inspection (DI) case, bk is limited to only one non-zero entry i, that is, bki\u22600, bkj=0 \u2200j\u2260i. This means that there is an underlying hypothesis testing:",
+                                "0: y[k]\u02dcExp(\u03b80[k])",
+                                "1: y[k]\u02dcExp(\u03b8[k])",
+                                "with \u03b80[k]=bkini and \u03b8[k]=bki(\u03c6i+ni)>\u03b80[k]. In this context, it is known that the signal energy is a sufficient statistic for the test and the energy detection is optimal. Assuming no prior knowledge over the \u03c6i's in case of existing communication, to set the test threshold alone is needed, which is set in order to maximize the utility defined in Equation 15. Defining \u03b8*[k]=max{y[k], bki(\u03c6min+\u03c9i)} obtains the following:",
+                                "\\(\\begin{matrix}\n{{y\ue8a0\\lbrack k\\rbrack}_{\\begin{matrix}\n < \\\\\nH_{0}\n\\end{matrix}}^{\\begin{matrix}\nH_{1} \\\\\n > \n\\end{matrix}}\ue89e\\frac{\\ln \ue8a0\\left( {\\gamma_{i}\ue89e\\frac{\\theta*\\lbrack k\\rbrack}{\\theta_{0}}} \\right)}{\\frac{1}{\\theta_{0}} - \\frac{1}{\\theta*\\lbrack k\\rbrack}}} & {{EQ}.\\mspace{14mu} \ue89e19} \\\\\n{\\gamma_{i}\ue89e\\overset{\\Delta}{=}\ue89e\\left\\{ \\begin{matrix}\n\\frac{r_{i}\ue89e\\omega_{i}}{{\uf603\\rho_{i}\uf604}\ue89e\\left( {1 - \\omega_{i}} \\right)} & {{case}\ue89e\\mspace{14mu} \ue89e0} \\\\\n\\frac{\\left. {{\uf603\\rho_{i}\uf604}\ue89e\\omega_{i}} \\right)}{r_{i}\ue8a0\\left( {1 - \\omega_{i}} \\right)} & {{case}\ue89e\\mspace{14mu} \ue89e1}\n\\end{matrix} \\right.} & {{EQ}.\\mspace{14mu} \ue89e20}\n\\end{matrix}\\)",
+                                "Notice that, assuming a minimum average received signal power of \u03c6min>0 in the case of existing transmission, this makes the test meaningful also for values of \u03b3i<1.",
+                                "Assumption 1:",
+                                "To simplify the decision problem, every resource is assumed to be sensed before being declared empty/busy. This can be enforced as a standard/protocol rule or numerically guaranteed by setting \u2200i\u2208,",
+                                "\\(\\omega_{i} < {\\frac{\\rho_{i}}{\\rho_{i} + r_{i}}\ue89e\\mspace{11mu} \ue89e{\\left( {{case}\ue89e\\mspace{14mu} \ue89e0} \\right)/\\omega_{i}}} > {\\frac{r_{i}}{{\uf603\\rho_{i}\uf604} + r_{i}}\ue89e\\mspace{11mu} \ue89e{\\left( {{case}\ue89e\\mspace{14mu} \ue89e1} \\right).}}\\)",
+                                "It is clear that the optimality of the test completely characterizes the set of decision rules \u03b4 for the sensed resources, while Assumption 1 gives the decision rule for the non-sensed resources. This implies that for the DI case, the optimization in Equation 16 can be expressed solely in terms of B. It is also known that for this type of text, where there is uncertainty in a parameter of the alternative hypothesis, one does not know the exact miss probability \u03b2, thus an upper-bound is used, which reflects in a lower bound for the achievable utility. Since this test is part of the DI strategy, the superscript DI is added to the test error probabilities \u03b1i and \u03b2i as follows:",
+                                "\\(\\begin{matrix}\n{\\alpha_{i}^{DI} = {\\min \ue89e\\left\\{ {\\left( \\frac{{\uf603\\rho_{i}\uf604}\ue89e\\left( {1 - \\omega_{i}} \\right)}{r_{i}\ue89e{\\omega_{i}\ue8a0\\left( {1 + \\frac{\\phi \ue89e\\; \ue89e\\min}{n_{i}}} \\right)}} \\right)^{\\frac{1 + \\frac{\\phi \ue89e\\; \ue89e\\min}{n_{i}}}{\\frac{\\phi \ue89e\\; \ue89e\\min}{n_{i}}}},1} \\right\\}}} & {{EQ}.\\mspace{14mu} \ue89e21} \\\\\n{\\beta_{i}^{DI} = {1 - {\\left( \\alpha_{i}^{DI} \\right)^{\\frac{1}{1 + \\frac{\\phi_{i}}{n_{i}}}}.}}} & {{EQ}.\\mspace{14mu} \ue89e22}\n\\end{matrix}\\)",
+                                "The above shows that the false alarm probability is independent from the alternative hypothesis, whereas the detection improves with the true average transmitted power \u03c6i. What can be guaranteed, since \u03c6i\u2265\u03c6min, is that",
+                                "\\(\\begin{matrix}\n{{\\beta_{i}^{DI} \\leq {1 - \\left( \\frac{\\rho_{i}\ue8a0\\left( {1 - \\omega_{i}} \\right)}{r_{i}\ue89e{\\omega_{i}\ue8a0\\left( {1 + \\frac{\\phi_{\\min}}{n_{i}}} \\right)}} \\right)^{\\frac{n_{i}}{\\phi \ue89e\\; \ue89e\\min}}}} = \\beta_{i,\\max}^{DI}} & {{EQ}.\\mspace{14mu} \ue89e23}\n\\end{matrix}\\)",
+                                "The threshold in Equation 20 is the optimal threshold that minimizes the Bayesian risk (maximizes the utility) for the binary case, when \u03c9i is known. It is common practice to replace the maximum likelihood estimate for the unknown \u03c9i (Generalized Likelihood Ratio Test (GLRT)) and then reduce to the binary case using the same threshold. A local, more powerful test exists for \u03b8\u2192\u03b80, but GLRT is preferred for its high SNR range.",
+                                "Note that the test performance for the DI case does not depend on bki; therefore, for the DI case no further optimization is needed over the sensing matrix B other than selecting the non-zero entries.",
+                                "Under Assumption 1, the optimization problem in Equation 16 can be rewritten for the DI case as follows:",
+                                "\\(\\begin{matrix}\n{\\underset{\ue520 \\subseteq \ue52d}{maximize}\ue89e\\mspace{11mu} \ue89e{U^{DI}\ue8a0(\ue520)}} & {{EQ}.\\mspace{14mu} \ue89e24} \\\\\n{{U^{DI}\ue8a0(\ue520)}\ue89e\\overset{\\Delta}{=}\ue89e{\\left( {K - {\uf603\ue520\uf604}} \\right)\ue89e{\\sum\\limits_{i \\in A}\ue89e\\; \ue89eu_{i}^{DI}}}} & {{EQ}.\\mspace{14mu} \ue89e25} \\\\\n{u_{i}^{DI}\ue89e\\overset{\\Delta}{=}\ue89e{{\\omega_{i}\ue89e{r_{i}\ue8a0\\left( {1 - \\alpha_{i}^{DI}} \\right)}} - {\\left( {1 - \\omega_{i}} \\right)\ue89e\\rho_{i}\ue89e\\beta_{i,\\max}^{DI}}}} & {{EQ}.\\mspace{14mu} \ue89e26}\n\\end{matrix}\\)",
+                                "The following lemma is then introduced:",
+                                "Lemma 1:",
+                                "UDI() is a normalized, non-monotone, non-negative sub-modular function of .",
+                                "Lemma 1 implies that there are diminishing returns in augmenting sets by adding a certain action to bigger and bigger sets. The maximization of a non-monotonic sub-modular function is generally NP-hard, but the case of interest is not as difficult. By sorting the resources i so that",
+                                "u1DI\u2265u2DI\u2265 . . . \u2265uNDI\u2003\u2003EQ. 27",
+                                "the set of size i, i={1, . . . , i} will be such that for any set X of size |X|=i, so that",
+                                "\\({\\sum\\limits_{k = 1}^{i}\ue89e\\; \ue89eu_{k}^{DI}} \\geq {\\sum\\limits_{k \\in X}^{\\;}\ue89e\\; \ue89e{u_{k}^{DI}.}}\\)",
+                                "Therefore, what remains is to find the best set size i such that",
+                                "\\(\\begin{matrix}\n{{{U^{DI}\ue8a0(\ue520)} \\leq {U^{DI}\ue8a0\\left( \ue520_{i} \\right)}\ue89e \\leq_{i}^{\\max}\ue89e\\left( {\\left( {K - i} \\right)\ue89e{\\sum\\limits_{k = 1}^{i}\ue89e\\; \ue89eu_{k}^{DI}}} \\right)}\ue89e\\mspace{14mu}} & {{EQ}.\\mspace{14mu} \ue89e28}\n\\end{matrix}\\)",
+                                "The maximum in Equation 28 is attained for the following:",
+                                "i*=iinf{i: \u2202i+1UDI(i)<0}\u2003\u2003EQ. 29",
+                                "where",
+                                "\u2202i+1UDI(i)=(K\u2212i)ui+1DI\u2212\u03a3k=1i+1ukDI.",
+                                "Given that the function is sub-modular, as soon as this condition is attained, it is maintained for i+2, i+3, and so on, given that the marginal returns continue to decrease. This maximization is greedy and stops when the marginal reward becomes negative.",
+                                "**B. Group Testing Approach**",
+                                "The test is now allowed to mix different sub-bands, that is, the vector bk to have more than one non-zero entry. The main idea of this section is to develop a dynamic simple strategy that can be characterized in closed form, and gives a sufficient condition to claim a group testing (GT) strategy would outperform the DI alternative. From the sensing matrix B, the sets k={i\u2208: bki\u22600} and i={1\u2264k\u2264: bki\u22600} can be defined. The convention is used that, whenever bk is the argument of a function, then the set k is also the argument of that function. Similarly, when B is the argument of a function, then all the sets k for 0\u2264k\u2264\u22121 and all the sets i for i\u2208 are arguments of that function as well.",
+                                "As outlined previously, aliasing of the spectrum comes with an associated noise-folding phenomenon. The effect is particularly severe in a non-coherent scheme such as that of the present disclosure. The samples are collected sequentially and not in parallel, which means that there are no multiple observations of the same value but only sequential observations tied to the same underlying random process.",
+                                "To mitigate the noise-folding effects and reduce the hardware complexity, the method of the present disclosure focuses on low-density measurement matrices. The goal is to develop a relatively simple dynamic strategy for choosing a sensing matrix the utility of which can be expressed in closed form and that outperforms the DI alternative. A common approach for recovery with low-density measurement matrices is to use belief propagation via message passing, the most well-known application of which is low-density parity check (LDPC) optimum error correction decoding.",
+                                "For LDPC (and compressive sensing methods), performance guarantees come as asymptotic bounds on the 2-norm, but little is known for optimal design in the finite regime. A difficulty in the design arises from the inherent multi-hypothesis testing problem associated with sensing several resources at the same time. This is why, to develop the dynamic design according to the present disclosure, a GT approach allows consideration of a binary hypothesis test for each measurement. In this way, the complexity of the analysis is relatively low, and the expected performance for any sensing matrix can be derived under mild assumptions. In the model of the present disclosure, an uninformative prior can be assigned to the \u03c6i's to run the belief propagation message-passing algorithm on the obtained measurements. Prior to providing more details, a remark regarding related GT approaches is in order.",
+                                "Note that in the context of GT, little is known in presence of measurement errors that depend on the group size, which is the scenario the present disclosure considers. In the model of the present disclosure, the false alarm and misdetection probabilities depend on the optimization of the test threshold; therefore, the noise is not independently added, nor can an independent dilution be considered. Furthermore, the strategy derived depends on the finite horizon for K; that is, the results are not asymptotic.",
+                                "For each test a binary group test is defined as follows:",
+                                "\\(\\begin{matrix}\n\\left\\{ \\begin{matrix}\n{H_{0}\ue89e\\text{:}} & {{\\forall{i \\in {\ue520_{k}\ue89e\\mspace{25mu} \ue89es_{i}}}} = 0} \\\\\n\\; & {\\left. \\Rightarrow{\\theta_{0}\ue8a0\\lbrack k\\rbrack} \\right. = {b_{k}^{T}\ue89en}} \\\\\n{H_{1}\ue89e\\text{:}} & {{\\exists{i \\in {\ue520_{k}\ue89e\\mspace{14mu} \ue89e{s.t.\\mspace{14mu} \ue89es_{i}}}}} = 1} \\\\\n\\; & {\\left. \\Rightarrow{{\\theta \ue8a0\\lbrack k\\rbrack} \\geq {{\\left. (_{i}^{\\min}\ue89eb_{ki} \\right)\ue89e\\phi_{\\min}} + {b_{k}^{T}\ue89en}}} \\right. = {\\theta_{\\min}\ue8a0\\lbrack k\\rbrack}}\n\\end{matrix} \\right. & {{EQ}.\\mspace{14mu} \ue89e30}\n\\end{matrix}\\)",
+                                "Such a test is envisioned to be useful for a downlink transmission in which the access point may want to allow multiple communications at the same time and can alert the signal units over a narrowband signaling channel to access the spectrum.",
+                                "It is important to highlight that the two hypotheses pertain exclusively to the group of sub-bands explored in test, that is, k, not the whole spectrum. Also note that this GT approach pertains to the design of the sensing matrix and detection algorithm and not to the underlying observation model. The different approaches against which the method of the present disclosure is compared subsequently use detection strategies that are multi-hypothesis tests.",
+                                "The test can be written as follows:",
+                                "\\(\\begin{matrix}\n{\\frac{\\begin{matrix}\n\\max & {f_{\\theta \ue8a0{\\lbrack k\\rbrack}}\ue8a0\\left( {y\ue8a0\\lbrack k\\rbrack} \\right)} \\\\\n{{\\theta \ue8a0\\lbrack k\\rbrack} \\geq {\\theta_{\\min}\ue8a0\\lbrack k\\rbrack}} & \\;\n\\end{matrix}}{{{f_{\\theta}}_{0}\ue8a0\\lbrack k\\rbrack}\ue89e\\left( {y\ue8a0\\lbrack k\\rbrack} \\right)}\ue89e\\begin{matrix}\n\\begin{matrix}\nH_{1} \\\\\n < \n\\end{matrix} \\\\\n\\begin{matrix}\n > \\\\\nH_{0}\n\\end{matrix}\n\\end{matrix}\ue89e\\gamma \ue89e\\; \ue89ek} & {{EQ}.\\mspace{14mu} \ue89e31}\n\\end{matrix}\\)",
+                                "for which the following can be derived:",
+                                "\\(\\begin{matrix}\n{{\\alpha \ue8a0\\left( {b_{k},\\gamma_{k}} \\right)} = \\left( \\frac{1}{\\gamma_{k}\ue89e\\frac{\\theta_{\\min}}{\\theta_{0}}} \\right)^{\\frac{\\frac{\\theta_{\\min}}{\\theta_{0}}}{\\frac{\\theta_{\\min}}{\\theta_{0}} - 1}}} & {{EQ}.\\mspace{14mu} \ue89e32} \\\\\n{{\\beta \ue8a0\\left( {b_{k},\\gamma_{k}} \\right)} = {1 - \\left( {\\alpha \ue8a0\\left( {b_{k},\\gamma_{k}} \\right)} \\right)^{\\frac{\\theta_{0}}{\\theta_{\\min}}}}} & {{EQ}.\\mspace{14mu} \ue89e33}\n\\end{matrix}\\)",
+                                "The decision declares that resource i is busy (l is true) if the majority of the tests where resource i is involved is positive, else it accepts the null hypothesis 0 for resource i. Thus:",
+                                "\\(\\begin{matrix}\n{{\\pi_{0}\ue8a0\\left( {i,b,\\gamma} \\right)} = {{\\left( {1 - {\\prod\\limits_{j \\in {A_{k}\ue89e\\backslash \ue89ei}}\ue89e\\omega_{j}}} \\right)\ue89e\\left( {1 - {\\beta_{i}\ue8a0\\left( {b,{\\gamma;0}} \\right)}} \\right)} + {{\\alpha \ue8a0\\left( {b,\\gamma} \\right)}\ue89e{\\prod\\limits_{j \\in {A_{k}\ue89e\\backslash \ue89ei}}\ue89e\\omega_{i}}}}} & {{EQ}.\\mspace{14mu} \ue89e34} \\\\\n{\\mspace{79mu} \ue89e{{\\pi_{i}\ue8a0\\left( {i,b,\\gamma} \\right)} = {1 = {\\beta_{i}\ue8a0\\left( {b,{\\gamma;1}} \\right)}}}} & {{EQ}.\\mspace{14mu} \ue89e35}\n\\end{matrix}\\)",
+                                "where the functions \u03c0i(i, b, \u03b3), j=0, 1 are only defined when bi\u22600. These functions represent the probabilities of declaring 1 in a group-test defined by b with threshold \u03b3 and given si=j, j=0, 1. Notice that the error probabilities \u03b1, \u03b2 refer to each binary hypothesis testing defined in Equation 30. The notation for \u03b2i(b, \u03b3; si) indicates the probability of having a missed-detection conditioned on the state si of one of the resources. It then follows that",
+                                "\\(\\begin{matrix}\n{{\\alpha_{i}^{GT}\ue8a0\\left( {B,\\gamma} \\right)}\ue89e\\overset{\\Delta}{=}\ue89e{1 - {F_{PBD}\ue8a0\\left( {{{\\left\\lceil \\frac{\uf603B_{i}\uf604}{2} \\right\\rceil - 1};{\uf603B_{i}\uf604}},\\left\\{ {{\\pi_{0}\ue8a0\\left( {i,b_{k},\\gamma_{k}} \\right)}:{k \\in B_{i}}} \\right\\}} \\right)}}} & {{EQ}.\\mspace{14mu} \ue89e36} \\\\\n{{\\beta_{i}^{GT}\ue8a0\\left( {B,\\gamma} \\right)}\ue89e\\overset{\\Delta}{=}\ue89e{F_{PBD}\ue8a0\\left( {{{\\left\\lceil \\frac{\uf603B_{i}\uf604}{2} \\right\\rceil - 1};{\uf603B_{i}\uf604}},\\left\\{ {{\\pi_{1}\ue8a0\\left( {i,b_{k},\\gamma_{k}} \\right)}:{k \\in B_{i}}} \\right\\}} \\right)}} & {{EQ}.\\mspace{14mu} \ue89e37}\n\\end{matrix}\\)",
+                                "where FPBD(k; n; p) indicates the cumulative distribution function of a Poisson binomial distribution parameterized by p\u2208[0; 1]n. One can then replace Equations 36 and 37 in Equation 15 to solve the optimization in Equation 16, where the equivalence between the decision rules \u03b4 and the selection of the thresholds \u03b3 is essentially the same as for the DI case.",
+                                "Notice that in order for Equations 36 and 37 to hold, each of the tests must be independent, conditioned on the state of the resource i. This is true if the sensing matrix, in the language used for LDPC codes, does not have length-4 cycles; that is, two different measurements do not mix more than one sub-band in common. Such a condition is typically required for belief propagation algorithms, for example, message passing, which suffer from loopy networks with short cycles.",
+                                "The optimization remains extremely complex due to the complexity of the decision space for B and the sum of an exponentially growing number of terms for the probabilities defined in Equations 36 and 37. Nevertheless, it gives a method to evaluate the objective of the optimization for any sensing matrix B, where the optimization over \u03b3 can be numerically solved. Equations 36 and 37 are monotonic functions of the probabilities \u03c00, \u03c01 defined in Equations 34 and 35, which are monotonic in the \u03b3k 's, and therefore a unique solution for \u03b3 exists. Next, additional constraints to Equation 16 are introduced, in particular on the structure of B, in order to evaluate whether GT strategy is superior to the DI approach.",
+                                "Note that a maximum likelihood (ML) or a maximum a posteriori probability estimator, for a rank-deficient sensing matrix, does not provide optimality guarantees in terms of minimum error probability or minimum Bayesian risk. Nevertheless, for the same sensing matrix, the maximum a posteriori probability estimator is expected to outperform the binary GT hypothesis in Equation 30 by simply adding more degrees of freedom to the decision in the \u03ba-th dimensional space of the observations. Therefore, the evaluation of the objective in Equation 16 via Equations 36 and 37 provides a benchmark for the utility obtainable with a more refined detection method.",
+                                "1. The pairwise tests case: To start, matrices B are considered that have the following property: each resource is sensed only one time, either directly inspected or mixed with another resource, and no test mixes more than two resources, that is, |k|\u2264L=2, ||\u22641 \u2200k=1, . . . , \u03ba, i=1, . . . , N. Consider the test that mixes entries i and j. According to the strategy derived at the beginning of the section, one can use Equations 34, 35, 36, and 37 to write out the per-time instant utility obtainable after the decision. First, from Equation 30, without prior knowledge over \u03c6i, \u03c6j other than the threshold \u03c6min, the best choice to minimize \u03b1 is to set bi=bj. This false alarm probability is referred to as \u03b1ij). Therefore, similar to the DI case, one can consider binary coefficients for bk, that is, bki\u22600\u2192bki=1. This holds true also for the extension of L>2 and gives implementation advantages as discussed in Section I, B.",
+                                "A missed detection event in Equation 30 can occur for three different states of the resources i, j; an upper-bound for the corresponding miss detection probability is established by always considering \u03b8=\u03b8min and is referred to as \u03b2ij,max. What is obtained is the following:",
+                                "uijGT\u03c9i\u03c9j(ri+rj)(1\u2212\u03b1ij)+[(\u03c9i(1\u2212\u03c9j)(ri+\u03c11)+\u03c9j(1\u2212\u03c9i)(rj+\u03c1i)+(1\u2212\u03c9i)(1\u2212\u03c9j)(\u03c1i+\u03c1j))]\u03b2ij,max\u2003\u2003EQ. 38",
+                                "where the threshold for this test \u03b3ij has been set to maximize Equation 38, that is,",
+                                "\\(\\begin{matrix}\n{\\gamma_{ij} = {\\frac{\\omega_{i}\ue89e{\\omega_{j}\ue8a0\\left( {r_{i} + r_{j}} \\right)}}{{\\left( {1 - \\omega_{i}} \\right)\ue89e\\left( {{\uf603\\rho_{i}\uf604} - {\\omega_{j}\ue89er_{j}}} \\right)} + {\\left( {1 - \\omega_{j}} \\right)\ue89e\\left( {{\uf603\\rho_{j}\uf604} - {\\omega_{i}\ue89er_{i}}} \\right)}}.}} & {{EQ}.\\mspace{14mu} \ue89e39}\n\\end{matrix}\\)",
+                                "Consider then a graph in which each resource is a vertex and the edge weight uij between two vertices ij is the utility (per time instant) uijGT just defined. The weight of the loops uiiGT are given by uiDI in Equation 26. The problem can then be translated into a particular instance of a max-cut problem: picking a subset of the edges and forming a subgraph, in which each edge represents a test, to maximize the objective in Equation 16. Formally, the equation can be written as follows:",
+                                "\\(\\begin{matrix}\n\\begin{matrix}\n\\begin{matrix}\n{maximize} \\\\\n\u025b\n\\end{matrix} & {U^{GT}\ue8a0(\u025b)} \\\\\n{{subject}\ue89e\\mspace{14mu} \ue89e{to}} & {{\\deg \ue89e\\; \ue89e{\u025b\ue8a0(i)}} \\leq {i\ue89e\\mspace{14mu} \ue89e{\\forall{i \\in \ue52d}}}}\n\\end{matrix} & {{EQ}.\\mspace{14mu} \ue89e40} \\\\\n{where} & \\; \\\\\n{{U^{GT}\ue8a0(\u025b)}\ue89e\\underset{\\Delta}{=}\ue89e{\\left( {K - {\uf603\u025b\uf604}} \\right)\ue89e\\left( {\\sum\\limits_{{ij} \\in \u025b}\ue89eu_{ij}^{GT}} \\right)}} & {{EQ}.\\mspace{14mu} \ue89e41}\n\\end{matrix}\\)",
+                                "and deg\u03b5(i) is the nodal degree of node i induced by the undirected graph =(, \u03b5). It is possible to map the constraint on the nodal degree in the objective of Equation 40 by adding a penalty for the violation of such constraint. This guarantees that the optimal solution will be equivalent to Equation 40, that is, no set of edges that violates the constraint can improve the objective, and any feasible set of edges would have the same objective in the two problems. The optimization can be rewritten as follows:",
+                                "\\(\\begin{matrix}\n{{\\begin{matrix}\n{maximize} \\\\\n\u025b\n\\end{matrix}\ue89e{U^{GT}\ue8a0(\u025b)}} - {M\ue89e{\\sum\\limits_{i \\in N}^{\\;}\ue89e\\; \ue89e{\\mathrm{\\Upsilon}\ue8a0\\left( {\\deg \ue89e\\; \ue89e{\u025b\ue8a0(i)}} \\right)}}}} & {{EQ}.\\mspace{14mu} \ue89e42} \\\\\n{where} & \\; \\\\\n{{\\mathrm{\\Upsilon}\ue8a0(n)}\ue89e\\overset{\\Delta}{=}\ue89e\\left\\{ \\begin{matrix}\n0 & {{{for}\ue89e\\mspace{14mu} \ue89en} \\leq 1} \\\\\n{n - 1} & {{{for}\ue89e\\mspace{14mu} \ue89en} \\geq 2}\n\\end{matrix} \\right.} & {{EQ}.\\mspace{14mu} \ue89e43}\n\\end{matrix}\\)",
+                                "and M is a positive constant.",
+                                "Lemma 2:",
+                                "For M>0, the objective in Equation 42 is a non-monotone sub-modular function of \u03b5, and it is possible to find M*>0 such that for any M>M* the two optimizations of Equations 40 to 42 are equivalent.",
+                                "The extension of this result for L>2 can now be discussed to develop a general algorithm that leverages the sub-modularity of the optimum design problem in Equation 40.",
+                                "2. Extension to L>2: If more than two channels are mixed, instead of just edges or self-loops to indicate the tests, cycles of length can be obtained up to L. The nodal degree in Equation 42 then is interpreted as the number of cycles to which a node belongs, and the set of edges is replaced with the set of cycles. The set \u03b5 of edges is then replaced with the set C of possible cycles, and use c to indicate the generic cycle, which could be a self-loop, an edge, or a cycle with length 3 or greater. With these substitutions the proof of sub-modularity in Lemma 2 naturally extends to this case as well. In light of the constraint |i|\u22641, no node can be in two cycles.",
+                                "3. The factor approximation of the greedy algorithm: Having proved the sub-modularity of Equation 42 in Lemma 2, it is natural to resort to a greedy procedure; however, it is important to highlight that the objective in Equation 42 does not respect the non-negativity property. Due to the particular structure of the problem, it is possible to find a factor approximation for the output of the greedy algorithm.",
+                                "Lemma 3:",
+                                "Algorithm 1 guarantees an \u03b1-constant factor approximation of the optimal solution for Equation 42, where",
+                                "\\(\\begin{matrix}\n{\\alpha = {\\frac{1}{\\min \ue89e\\left\\{ {L_{eff},\\frac{K}{2}} \\right\\}}\ue89e{\\frac{K - 1}{K - {\\min \ue89e\\left\\{ {L_{eff},\\frac{K}{2}} \\right\\}}}.}}} & {{EQ}.\\mspace{14mu} \ue89e44}\n\\end{matrix}\\)",
+                                "Note that",
+                                "\\(\\begin{matrix}\n{{\\partial_{C^{\\prime}}\ue89e{U^{GT}\ue8a0{()}}} = {{\\sum\\limits_{C \\in}^{\\;}\ue89e\\; \ue89eu_{C}} + {\\left( {K - {\uf603\uf604} - 1} \\right)\ue89eu_{C^{\\prime}}}}} & {{EQ}.\\mspace{14mu} \ue89e45}\n\\end{matrix}\\)",
+                                "so, as long as the number of tests |C| added in the greedy maximization is less than the time horizon K, then",
+                                "{ arg \ue89e \ue89e max C \u2208 C \ue89e \u2202 C \ue89e U GT \ue8a0 ( ) = arg \ue89e \ue89e max C \u2208 C \ue89e u C . EQ .\n\ue89e 46 }",
+                                "This relation indicates that, in the greedy procedure, edges are added in decreasing order of utility, respecting the constraint on the nodal degree in light of Lemma 2. Also, from Equation 45, it is easy to find that the optimal |C| never exceeds",
+                                "\\(\\left\\lceil \\frac{K - 1}{2} \\right\\rceil.\\)",
+                                "In the greedy procedure in Algorithm 1, there is a constant number of operations per query, which indicates the overall complexity of the algorithm is dominated by the sorting of all possible cycles' utilities. In the worst case, sorting n values require O(n2) operations, thus the complexity is given by",
+                                "\\({0\ue89e\\left( \\left( {\\sum\\limits_{\ue54b = 1}^{L}\ue89e\\left( \\frac{n}{\ue54b} \\right)} \\right)^{2} \\right)},\\)",
+                                "that is, polynomial in N and exponential in L.",
+                                "**C. Additional Applications of the Stochastic Optimization**",
+                                "The analysis for the factor approximation of the greedy strategy transcends the spectrum-sensing application discussed in the present disclosure. Group testing has been applied to a number of disparate contexts to model the outcome of sequential tests. As long as one has a way to define the per-time utility derived from each test as in Equation 38 and an overall utility as in Equation 41, then the results of the present disclosure can be applied. Classes of problems that can be formulated in a similar way include job scheduling for data centers, design of parity checks for rateless coding, and dynamic advertisement that promotes an offer that bundles two products/services together, for example. Obviously, in all these cases the statistics of the observations are radically different."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define direct inspection case",
+                                "formulate hypothesis testing",
+                                "derive energy detection",
+                                "set test threshold",
+                                "define utility",
+                                "introduce assumption 1",
+                                "express optimization in terms of B",
+                                "define test error probabilities",
+                                "show independence of false alarm probability",
+                                "guarantee detection performance",
+                                "introduce generalized likelihood ratio test",
+                                "rewrite optimization problem",
+                                "define sub-modular function",
+                                "introduce lemma 1",
+                                "sort resources",
+                                "find best set size",
+                                "introduce group testing approach",
+                                "define sets k and i",
+                                "formulate binary group test",
+                                "highlight hypotheses",
+                                "note GT approach",
+                                "write test equation",
+                                "derive alpha and beta",
+                                "define decision rule",
+                                "derive pi functions",
+                                "define alpha and beta GT",
+                                "note optimization complexity",
+                                "introduce additional constraints",
+                                "consider pairwise tests case",
+                                "set bi=bj",
+                                "define binary coefficients",
+                                "establish upper-bound for miss detection probability",
+                                "define utility uijGT",
+                                "set threshold gammaij",
+                                "translate problem to max-cut problem",
+                                "define UGT",
+                                "add penalty for constraint violation",
+                                "define upsilon function",
+                                "state Lemma 2",
+                                "extend result to L>2",
+                                "discuss factor approximation of greedy algorithm",
+                                "state Lemma 3",
+                                "discuss complexity of Algorithm 1",
+                                "note additional applications of stochastic optimization"
+                            ],
+                            "num_characters": 22650,
+                            "outline_medium": [
+                                "define direct inspection case",
+                                "formulate hypothesis testing",
+                                "derive energy detection",
+                                "define test threshold",
+                                "introduce assumption 1",
+                                "express optimization problem",
+                                "introduce group testing approach",
+                                "formulate binary group test",
+                                "discuss application of group testing",
+                                "introduce dynamic design of sensing matrices",
+                                "formulate optimization problem",
+                                "derive equations for error probabilities",
+                                "introduce constraints on sensing matrix",
+                                "discuss pairwise tests case",
+                                "formulate utility function for pairwise tests",
+                                "introduce max-cut problem",
+                                "rewrite optimization problem with penalty term",
+                                "prove sub-modularity of objective function",
+                                "extend results to L>2",
+                                "discuss factor approximation of greedy algorithm",
+                                "mention additional applications of stochastic optimization"
+                            ],
+                            "outline_short": [
+                                "derive direct inspection case",
+                                "formulate optimization problem for direct inspection case",
+                                "introduce group testing approach",
+                                "define binary group test for group testing approach",
+                                "motivate dynamic design of sensing matrices",
+                                "derive equations for probabilities of declaring 1 in a group-test",
+                                "introduce optimization problem for sensing matrix B and threshold \u03b3",
+                                "consider pairwise tests case and derive utility obtainable after decision",
+                                "formulate max-cut problem and prove sub-modularity of objective function",
+                                "discuss extension to L>2 and factor approximation of greedy algorithm"
+                            ]
+                        },
+                        {
+                            "title": "IV. Approximate Maximum Likelihood Estimate for Mixed Tests",
+                            "paragraphs": [
+                                "The previous sections have provided methods that find a low-density measurement matrix. As will be apparent in the numerical results in Section V, the noise-folding phenomenon justifies the use of sparse-sensing matrices. They are also ideal when one wants to apply belief propagation to the decision problem. However, for the sake of comparison, an approach is proposed here which can be applied to any measurement matrix B and that can be mapped into previous solutions.",
+                                "Assume that K measurements have been collected, by mixing a set \u2286 of sub-bands. One could ignore the prior \u03c9i and derive the maximum likelihood (ML) estimate for \u03c6. The log-likelihood function is as follows:",
+                                "\\(\\begin{matrix}\n{{\\log \ue8a0\\left( {f\ue8a0\\left( y \\middle| \\phi_{A} \\right)} \\right)} = {{{- {\\sum\\limits_{k = 1}^{\\kappa}\ue89e{\\log \ue89e\\; \ue89e{\\theta \ue8a0\\lbrack k\\rbrack}}}} + \\frac{y\ue8a0\\lbrack k\\rbrack}{\\theta \ue8a0\\lbrack k\\rbrack}}\ue89e\\overset{{\\theta \ue8a0{\\lbrack k\\rbrack}}\\rightarrow{y\ue8a0{\\lbrack k\\rbrack}}}{\\approx}\ue89e{{- {\\sum\\limits_{k = 1}^{\\kappa}\ue89e1}} + {\\log \ue89e\\mspace{14mu} \ue89e{y\ue8a0\\lbrack k\\rbrack}} + {\\frac{1}{2}\ue89e\\left( \\frac{{y\ue8a0\\lbrack k\\rbrack} - {\\theta \ue8a0\\lbrack k\\rbrack}}{y\ue8a0\\lbrack k\\rbrack} \\right)^{2}}}}} & {{EQ}.\\mspace{14mu} \ue89e47}\n\\end{matrix}\\)",
+                                "where the linearization corresponds to the Taylor expansion of the likelihood function around the observations mean (recall Equations 14 and 15). A possible approach consists in solving the following LASSO problem:",
+                                "\\(\\begin{matrix}\n{{\\hat{\\phi}}_{A} = {{\\begin{matrix}\n{\\arg \ue89e{\\mspace{11mu} \ue89e\\;}\ue89e\\min} \\\\\n\\phi_{A}\n\\end{matrix}\ue89e{\uf605{\\lambda_{A}\ue89e\\phi_{A}^{T}}\uf606}_{1}} + {\\frac{1}{2}\ue89e{\uf605\\left( {y - {B\ue8a0\\left( {\\phi_{A}^{T} + n_{A}^{T}} \\right)}} \\right)\uf606}_{C^{- 1}}^{2}}}} & {{EQ}.\\mspace{14mu} \ue89e48}\n\\end{matrix}\\)",
+                                "with C=diag(y) denoting the covariance of the observations and  the vector of weights for the weighted 1-norm. The first penalty term in the objective enhances sparsity, while the second term comes from the ML estimate in Equation 47. To incorporate the information of the prior beliefs \u03c9i, one can set \u03bbi=i from Equation 20, \u2200i\u2208, to favor the estimates \u03c6i>0 for entries with lower thresholds \u03b3i. Alternatively, one can also set \u03bbi=\u03bb\u2200i\u2208."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "propose alternative approach for any measurement matrix B",
+                                "derive log-likelihood function",
+                                "formulate LASSO problem",
+                                "incorporate prior beliefs \u03c9i"
+                            ],
+                            "num_characters": 2166,
+                            "outline_medium": [
+                                "derive log-likelihood function",
+                                "propose LASSO problem solution"
+                            ],
+                            "outline_short": [
+                                "derive approximate maximum likelihood estimate for mixed tests"
+                            ]
+                        },
+                        {
+                            "title": "V. Simulation Results",
+                            "paragraphs": [
+                                "This section showcases the ability of the approach of the present disclosure to dynamically switch between a DI receiver (scanning receiver) and a GT approach, based on the expected occupancy (the vector of priors \u03c9), the time available K, the minimum SNR threshold",
+                                "\\({{SNR}_{\\min} = \\frac{\\phi min}{w}},\\)",
+                                "and the number of resources N. In the context of spectrum sensing (case 0), the parameters ri and \u03c1i can be mapped into a maximization of the overall weighted network throughput: the reward ri can be proportional to the achievable rate over the channel i in the absence of primary user communications, that is, ri \u221dlog(1+SNRi,S), where the suffix S indicates the secondary communication, whereas the penalty \u03c1i can be made proportional to the loss in rate caused to the primary communication due to the interference added by the secondary.",
+                                "For the cognitive radio application, the concept of exploitation of the resource is tied to the definition of utility function chosen in Equation 15, which is expressed in bits /s/ . From Equations 15 and 16, ri's and \u03c1i's can be normalized over the communication bandwidth without altering the optimization. The longer the time available to transmit, the larger the number of bits that can be transmitted over that band.",
+                                "For the other case, that is, when the reward comes from detecting correctly which resources are busy, for example, a RADAR application, it is not immediately clear why the utility would be proportional to the number of remaining time instants. To interpret this, the action upon declaration of si=1 is modelled as a Bernoulli trial that accrues a reward ri if such action is successful, that is, the target is actually hit, and this happens with a certain probability \u03c1i for each attempt. The number of attempts Ti necessary to hit the target is then geometrically distributed. One can find then that the expected reward is equal to",
+                                "riP(Ti\u2264(K\u2212\u03ba))=ri\u03a3k\u22121K-\u03ba\u03c1i(1\u2212pi)k\u22121=ri(1\u2212(1\u2212pi)K-\u03ba)\u2248(K\u2212\u03ba)ripi",
+                                "for small pi, which would motivate having an expected utility that increases linearly with time. The \u03c1i associated with this case models an intervention cost, the main purpose of which is to limit the false alarm rate.",
+                                "It is important to highlight, however, that the time dependency in the optimization objective prevents the formulation from returning to a standard constant false alarm rate (CFAR) detection method. Nevertheless, the model can apply to electronic warfare (tentatives of creating jamming), wake-up radio, and other problems where the action (and the associated utility) is on the channels that are declared busy. For all the figures, reference is made to L=2, 3 as the maximum number of resources per test allowed in the greedy procedure in Algorithm 1. Theoretically, the optimal value for UGT monotonically increases with L since increasing L introduces additional degrees of freedom. However, the simulations used the greedy solution and, as proved in Lemma 3, the approximation factor of the greedy maximization is potentially worse for higher values of L, as the following numerical results show.",
+                                "\u201cGroup Testing\u201d indicates the utility obtained with the GT approach. The maximum a posteriori probability estimator (MAP estimator) is the estimator that knows the true values \u03a6i, uses the same matrix B of the GT approach, but then decides on each resource based on the posterior for \u03c9i, using belief propagation.",
+                                "1. Spectrum sensing vs. RADAR: Even though in light of the symmetry in the definition of the threshold \u03b3i one can switch the r's and \u03c1's to go from spectrum sensing (case 0) to RADAR (case 1) and find the same trends, even for the combined tests, to avoid confusion, the difference in the two scenarios is highlighted in the first simulation presented in FIGS. 4A and 4B.",
+                                "FIG. 4A is a graphical representation comparing utility for different optimization approaches for the spectrum sensing application. FIG. 4B is a graphical representation comparing utility for different optimization approaches for the RADAR application.",
+                                "For the experiment in FIGS. 4A and 4B, the following were set\u2212K=30, N=60, and ri=r, \u03c1i=\u03c1, and \u03c9i=\u03c9, SNRi=SNRmin(10 dB) \u2200i\u2212\u2014so that we have that for \u03c9 equal to",
+                                "\\(\\frac{\\rho}{\\rho + r}\ue89e\\mspace{14mu} \ue89e{or}\ue89e\\mspace{14mu} \ue89e\\frac{r}{\\rho + r}\\)",
+                                "for case 0 and case 1, respectively. These are the threshold values given in Assumption 1 to guarantee that no resource can give positive utility if not tested. In both scenarios the utility increases with the ratio",
+                                "\\(\\frac{\\rho}{r},\\)",
+                                "since the prior probability that favors a positive utility function increases as well for both the spectrum-sensing and RADAR applications.",
+                                "However, the gain for the GT approach over the DI approach happens in complementary ranges: when",
+                                "\\(\\frac{\\rho}{r} > 1\\)",
+                                "for the spectrum-sensing application and when",
+                                "\\(\\frac{\\rho}{r} < 1\\)",
+                                "in the RADAR application. When the penalty increases with respect to the reward, the GT approach for spectrum sensing is conservative and does not transmit in any of the channels in a group that tested positively; nevertheless, as the priors \u03c9i increase, it is possible to find multiple empty sub-bands with just one test and gain in utility compared with the DI approach.",
+                                "For the RADAR application, when the penalty increases with respect to the reward, there is a disadvantage in declaring as busy all the elements in the test, even if the prior \u03c9 decreases. Clearly, this limits the benefit of combined tests, whereas when",
+                                "\\(\\frac{\\rho}{r}\\)",
+                                "decreases, there is a gain since one element found busy in the pool guarantees higher reward. Apart from this asymmetry, both cases show the same trends in utility over the number of available resources N, and the value of SNRmin.",
+                                "2. Utility for different N: FIG. 5A is a graphical representation comparing utility for different optimization approaches versus a ratio horizon K over a number of resources N with the horizon K equal to 10. FIG. 5B is a graphical representation comparing utility for different optimization approaches versus the ratio horizon K over the number of resources N with the horizon K equal to 30.",
+                                "FIGS. 5A and 5B thus plot the utility (normalized over K2) over the ratio",
+                                "\\(\\frac{K}{N}\\)",
+                                "for two different horizons, that is, K=10 and K=30 and SNRmin=10 dB. Only for",
+                                "\\({\\frac{K}{N}\ue89e\\overset{<}{\\approx}\ue89e0.75},\\)",
+                                "the GT approach outperforms all competing options, whereas when the horizon K increases, almost no benefit comes from mixing resources. This suggests that there is enough time to test them independently with high accuracy. This experiment looked at case 0 and set",
+                                "\\({\\omega_{i} \\sim \\left( {0.7,\\frac{\\rho \ue89e\\; \ue89ei}{\\rho_{i} + r_{i}}} \\right)},{where}\\)\n\\(r_{i} = {{{\\log \ue8a0\\left( {1 + {SNR}_{i,S}} \\right)}\ue89e\\mspace{14mu} \ue89e{and}\ue89e\\mspace{14mu} \ue89e\\rho_{i}} = {{5\ue89er_{i}\ue89e\\mspace{14mu} \ue89e{with}\ue89e\\mspace{14mu} \ue89e{SNR}_{i,S_{dB}}} \\sim {{\ue534\ue8a0\\left( \\left\\lbrack {10,20} \\right\\rbrack \\right)}.}}}\\)",
+                                "The SNR for the test,",
+                                "\\(\\frac{\\phi_{i}}{n_{i}},\\)",
+                                "is generated uniformly between 10 dB and 20 dB; recall that the only information used in the algorithm is the minimum SNR value, that is, in this case 10 dB. In the regime considered, the DI approach is approximately constant since it is easy to show",
+                                "\\(U^{{DI},{OPT}} \\leq {\\frac{K^{2}}{4}\ue89eu_{\\max}}\\)",
+                                "irrespective of N.",
+                                "3. Utility for different SNRmin: FIG. 6A is a graphical representation comparing utility for different optimization approaches versus the minimum SNR with the horizon K equal to 30. FIG. 6B is a graphical representation comparing utility for different optimization approaches versus the minimum SNR with the horizon K equal to 10. This set of experiments studied how the utility behaves versus the minimum SNR in each active sub-band. In this case the SNR was drawn uniformly between SNRminand SNRmin+10, and once again only the value of",
+                                "\\({SNR}_{\\min} = \\frac{\\phi_{\\min}}{w}\\)",
+                                "was used in the optimization, which is shown in the abscissa of the figures. Matching intuition, the GT approach outperformed the DI approach only when SNRmin was sufficiently high and the gain in utility was larger for K=10 than for K=30.",
+                                "For this experiment the number of resources was fixed to N=20 and, as previously highlighted, increasing K for fixed N diminishes the benefit of combining resources in a test. In this case the utility was also plotted that was obtainable with the approximate ML estimate obtained via compressive sensing, described in Section IV. For this case, to illustrate the noise-folding issue, a dense matrix that had the same aspect ratio of the one found via the GT approach was used, that is, one that scans the same set of resources for the same number of tests.",
+                                "To show reasonable results, only for the ML estimate via compressive sensing, the mean of y[k] over 10 samples was taken. Despite having more measurements, such approach gives a much lower utility than the DI and the GT approach of the present disclosure due to the negative effect of noise folding. For K=30, the approach of the present disclosure was also compared with the performance obtained using belief propagation in a loopy network and an LDPC matrix. Considering N=20 resources and an expected sparsity approximately equal to 4, a regular LDPC matrix was chosen with a row weight of 5 and a column weight of 3, resulting in 12 tests. The LDPC was not implemented for K=10 since the constraints on the regularity would have given either a diagonal matrix (same as DI) or a relatively dense matrix. The absence of any optimization in the choice of which and how many resources to test produces a utility that, for low SNR, is lower than the DI approach proposed. For a high enough SNR, the LDPC design can outperform the DI approach but still gives a utility lower than the GT strategy with L=2. This highlights the benefit of having an active sub-Nyquist receiver compared with a static offline selection of the parameters.",
+                                "The various illustrative logical blocks, modules, and circuits described in connection with the embodiments disclosed herein may be implemented or performed with a processor, a digital signal processor (DSP), an application specific integrated circuit (ASIC), a field programmable gate array (FPGA), or other programmable logic device, a discrete gate or transistor logic, discrete hardware components, or any combination thereof designed to perform the functions described herein. Furthermore, a controller may be a processor. A processor may be a microprocessor, but in the alternative, the processor may be any conventional processor, controller, microcontroller, or state machine. A processor may also be implemented as a combination of computing devices (e.g., a combination of a DSP and a microprocessor, a plurality of microprocessors, one or more microprocessors in conjunction with a DSP core, or any other such configuration).",
+                                "The embodiments disclosed herein may be embodied in hardware and in instructions that are stored in hardware, and may reside, for example, in RAM, flash memory, ROM, electrically programmable ROM (EPROM), electrically erasable programmable ROM (EEPROM), registers, a hard disk, a removable disk, a CD-ROM, or any other form of computer-readable medium known in the art. An exemplary storage medium is coupled to the processor such that the processor can read information from, and write information to, the storage medium. In the alternative, the storage medium may be integral to the processor. The processor and the storage medium may reside in an ASIC. The ASIC may reside in a remote station. In the alternative, the processor and the storage medium may reside as discrete components in a remote station, base station, or server.",
+                                "It is also noted that the operational steps described in any of the exemplary embodiments herein are described to provide examples and discussion. The operations described may be performed in numerous different sequences other than the illustrated sequences. Furthermore, operations described in a single operational step may actually be performed in a number of different steps. Additionally, one or more operational steps discussed in the exemplary embodiments may be combined. Those of skill in the art will also understand that information and signals may be represented using any of a variety of technologies and techniques. For example, data, instructions, commands, information, signals, bits, symbols, and chips, that may be references throughout the above description, may be represented by voltages, currents, electromagnetic waves, magnetic fields, or particles, optical fields or particles, or any combination thereof.",
+                                "Unless otherwise expressly stated, it is in no way intended that any method set forth herein be construed as requiring that its steps be performed in a specific order. Accordingly, where a method claim does not actually recite an order to be followed by its steps, or it is not otherwise specifically stated in the claims or descriptions that the steps are to be limited to a specific order, it is in no way intended that any particular order be inferred.",
+                                "Those skilled in the art will recognize improvements and modifications to the preferred embodiments of the present disclosure. All such improvements and modifications are considered within the scope of the concepts disclosed herein and the claims that follow."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce simulation setup",
+                                "define parameters for spectrum sensing and RADAR applications",
+                                "explain reward and penalty for spectrum sensing",
+                                "explain reward and penalty for RADAR application",
+                                "motivate expected utility increasing linearly with time",
+                                "highlight time dependency in optimization objective",
+                                "introduce greedy solution and its limitations",
+                                "present simulation results for spectrum sensing vs. RADAR",
+                                "describe FIG. 4A",
+                                "describe FIG. 4B",
+                                "explain experiment setup",
+                                "analyze utility for different optimization approaches",
+                                "discuss gain for GT approach over DI approach",
+                                "present simulation results for different N",
+                                "describe FIG. 5A",
+                                "describe FIG. 5B",
+                                "analyze utility for different horizons K",
+                                "discuss benefit of mixing resources",
+                                "present simulation results for different SNRmin",
+                                "describe FIG. 6A",
+                                "describe FIG. 6B",
+                                "analyze utility for different minimum SNR",
+                                "compare with approximate ML estimate via compressive sensing",
+                                "compare with belief propagation in a loopy network",
+                                "discuss benefit of active sub-Nyquist receiver",
+                                "conclude simulation results"
+                            ],
+                            "num_characters": 13333,
+                            "outline_medium": [
+                                "introduce simulation setup",
+                                "define utility function for spectrum sensing",
+                                "define utility function for RADAR application",
+                                "explain time dependency in optimization objective",
+                                "present simulation results for spectrum sensing vs. RADAR",
+                                "analyze utility for different optimization approaches",
+                                "discuss effect of penalty-to-reward ratio on GT approach",
+                                "present simulation results for different N values",
+                                "analyze utility for different optimization approaches vs. K/N ratio",
+                                "discuss effect of horizon K on GT approach",
+                                "present simulation results for different SNRmin values",
+                                "analyze utility for different optimization approaches vs. SNRmin",
+                                "compare performance with belief propagation and LDPC matrix"
+                            ],
+                            "outline_short": [
+                                "introduce simulation setup for spectrum sensing and RADAR applications",
+                                "compare utility for different optimization approaches for spectrum sensing",
+                                "compare utility for different optimization approaches for RADAR",
+                                "analyze utility for different N",
+                                "analyze utility for different SNRmin",
+                                "compare with other approaches, including compressive sensing and belief propagation"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce cognitive radio scenario",
+                        "describe RF spectrum and channels",
+                        "explain need for timely decision in spectrum sensing",
+                        "introduce active sequential xampling receiver",
+                        "describe analog front end and dynamic modulator",
+                        "explain optimization problem for spectrum sensing",
+                        "discuss limitations of Nyquist sampling",
+                        "introduce utility function for spectrum sensing",
+                        "explain structure of utility function",
+                        "discuss relation to stochastic optimization schemes",
+                        "summarize performance analysis of sensing matrix designs",
+                        "outline organization of disclosure",
+                        "introduce notation for vectors, matrices, and sets",
+                        "define marginal increment for set function",
+                        "conclude introduction to detailed description"
+                    ],
+                    "num_characters": 7947,
+                    "outline_medium": [
+                        "introduce cognitive radio scenario",
+                        "describe RF spectrum and channels",
+                        "introduce active sequential xampling receiver",
+                        "motivate sub-Nyquist energy sensing",
+                        "describe optimization problem",
+                        "introduce dynamic modulator and controller",
+                        "discuss hardware limitations and considerations"
+                    ],
+                    "outline_short": [
+                        "introduce cognitive radio scenario and RF spectrum sensing",
+                        "describe active sequential xampling receiver for spectrum sensing",
+                        "discuss limitations of Nyquist sampling and advantages of sub-Nyquist energy sensing"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A radio frequency (RF) receiver, comprising:\na dynamic modulator configured to modulate a received signal such that one or more portions of the received signal are dynamically selected and folded into a baseband of a modulated signal;\nan energy detector configured to sample an energy of the modulated signal at a sub-Nyquist rate; and\na controller configured to adjust the dynamic modulator based on an output of the energy detector.",
+        "2. The RF receiver of claim 1, wherein the output of the energy detector is a past sample of the energy of the modulated signal.",
+        "3. The RF receiver of claim 1, wherein the dynamic modulator is further configured to modulate the received signal with a mixture of sinusoidal components whose frequencies and amplitudes are dynamically adjusted by the controller across multiple time windows to select the one or more portions of the received signal.",
+        "4. The RF receiver of claim 1, wherein the energy detector samples the energy of the modulated signal at the sub-Nyquist rate by low-pass filtering and sampling the baseband of the modulated signal.",
+        "5. The RF receiver of claim 1, wherein the dynamic modulator comprises a set of voltage-controlled oscillators (VCOs).",
+        "6. The RF receiver of claim 5, wherein a voltage level of each of the set of VCOs is proportional to a coefficient of a sensing matrix output by the controller, thereby generating a sinusoidal signal around a selected frequency.",
+        "7. The RF receiver of claim 1, wherein the dynamic modulator comprises a plurality of fixed frequency oscillators, each fixed frequency oscillator being controlled by the controller.",
+        "8. The RF receiver of claim 1, wherein the energy detector comprises:\na low pass filter coupled to an output of the dynamic modulator; and\na sampling circuit coupled to an output of the low pass filter.",
+        "9. The RF receiver of claim 8, wherein the sampling circuit is configured to sample the modulated signal after the low-pass filter at intervals based on a bandwidth of the baseband.",
+        "10. A method for sensing occupied radio frequency (RF) spectrum, comprising:\nreceiving an RF signal;\nsequentially modulating the RF signal using a sensing matrix to produce a set of modulated signals; and\ndetecting a signal occupancy for each of the set of modulated signals;\nwherein coefficients of the sensing matrix are dynamically adjusted based on detecting the signal occupancy.",
+        "11. The method of claim 10, wherein:\neach of the set of modulated signals corresponds to an RF resource; and\nthe coefficients of the sensing matrix are dynamically adjusted based on correctly sensing occupancy of each RF resource.",
+        "12. The method of claim 11, wherein:\neach RF resource comprises an RF channel; and\nthe set of modulated signals is sequentially combined in a baseband signal prior to detecting the signal occupancy.",
+        "13. The method of claim 10, further comprising:\npredicting a plurality of unoccupied RF channels based on the signal occupancy; and\ntransmitting an output RF signal over the plurality of unoccupied RF channels.",
+        "14. The method of claim 10, further comprising:\ndetermining an occupied RF channel based on the signal occupancy; and\ntuning to the occupied RF channel to convert content of the occupied RF channel from analog to digital.",
+        "15. An analog front end for a radio frequency (RF) receiver, comprising:\na dynamic modulator configured to convert an incoming RF signal having a first bandwidth to a modulated signal having content of the first bandwidth dynamically folded in a second bandwidth narrower than the first bandwidth; and\nan energy detector configured to sense signal energy of the modulated signal within the second bandwidth.",
+        "16. The analog front end of claim 15, wherein:\nthe second bandwidth defines a baseband; and\nthe modulated signal comprises spectral content of the incoming RF signal folded into the baseband.",
+        "17. The analog front end of claim 16, wherein the dynamic modulator is configured to convert the incoming RF signal by:\nselecting a set of sub-bands of the first bandwidth for the energy detector to sense; and\nfolding the set of sub-bands into the second bandwidth.",
+        "18. The analog front end of claim 17, wherein the set of sub-bands is selected as a function of a past output of the energy detector.",
+        "19. The analog front end of claim 16, further comprising a controller configured to determine occupancy of a set of RF channels based on the energy detector sensing signal energy above a threshold.",
+        "20. The analog front end of claim 19, wherein the controller is further configured to adjust the dynamic modulator based on the occupancy of the set of RF channels."
+    ]
+}

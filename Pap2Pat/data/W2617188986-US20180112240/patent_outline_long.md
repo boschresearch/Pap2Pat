@@ -1,0 +1,289 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- introduce genetically engineered fungal cells
+
+## BACKGROUND OF THE INVENTION
+
+- motivate primary alcohols
+- describe industrial applications
+- describe current technologies
+- limitations of current technologies
+- describe plant primary fatty alcohols
+- describe jojoba oil
+- describe uses of jojoba oil
+- limitations of jojoba oil
+- motivate alternative means
+- describe previous synthesis methods
+
+## SUMMARY OF THE INVENTION
+
+- introduce genetically engineered fungal cells
+- describe genes for biosynthesis
+- describe VLCFA products
+- describe methods of producing VLCFA products
+- describe genetically modified fungal cell
+- describe fatty acyl-CoA reductase
+- describe elongase and fatty acid synthase
+- describe method for production of VLCFA derivatives
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- disclaim exhaustive description
+- illustrate embodiments
+
+### Definitions
+
+- define technical terms
+- specify meaning of terms
+- incorporate references by citation
+- define terminology for invention
+- specify singular and plural forms
+- define "and/or" and "comprise"
+- define "consisting essentially of"
+- define "recombinant"
+- define "protein" and "polypeptide"
+- define "increase" and "enhance"
+- define "reduce" and "diminish"
+- define "reduced expression"
+- define "knock-out" and "deletion"
+- define "portion" and "fragment"
+- define "homologues" and "orthologous"
+- define "overexpress" and "overexpression"
+- define "exogenous" and "heterologous"
+- define "endogenous" and "native"
+- define "nucleic acid" and "nucleotide sequence"
+- define "gene"
+- define "isolated" gene
+- define "codon optimized" version of a gene
+- define "introduce" in yeast cell context
+- define "transformation"
+- define "stably introducing" and "stably introduced"
+- define "stable transformation"
+- define "genetic modification"
+- define "fatty alcohol"
+- define "fatty aldehyde"
+- define "fatty acid"
+- define "fatty acid products" and "fatty acid derivatives"
+- define "long chain" fatty acid
+- define "very long chain" fatty acid
+- define "elongase" and "ELO"
+- describe elongase system in endoplasmic reticulum
+- specify genes involved in elongase system
+- describe embodiment with overexpressed endogenous gene
+- describe embodiment with exogenous gene encoding elongase
+- describe embodiment with exogenous gene encoding enzyme from elongase system
+- describe codon optimized versions of genes
+- define fatty acyl-CoA reductase
+- define desaturase
+- define wax synthases
+- define fatty acid synthases
+- introduce genetically modified fungal cell
+- describe yeast cells as hosts
+- describe industry interest in platform cell factories
+- introduce yeast platform cell factory
+- describe strategies for reconstructing synthetic pathway
+- describe genetic modifications to improve production
+- describe elimination or reduction of non-essential pathways
+- introduce genetically modified fungal cell capable of producing VLCFA
+- describe at least one exogenous gene encoding fatty acyl-CoA reductase
+- describe at least one gene encoding elongase
+- describe at least one gene encoding fatty acid synthase
+- describe exogenous gene encoding fatty acyl-CoA reductase
+- describe exogenous gene encoding elongase
+- describe exogenous gene encoding fatty acid synthase
+- describe endogenous gene encoding elongase
+- describe endogenous gene encoding fatty acid synthase
+- describe additional genetic modifications
+- describe gene encoding acyl-carrier protein synthase
+- describe particular embodiment of fungal cell
+- describe another particular embodiment of fungal cell
+- describe gene encoding wax synthase
+- describe exogenous gene encoding wax synthase
+- describe gene encoding desaturase
+- describe exogenous gene encoding desaturase
+- describe endogenous gene encoding desaturase
+- describe additional genetic modifications
+- describe gene encoding long-chain acyl CoA synthetase
+- describe gene encoding non-phosphorylating NADP+-dependent glyceraldehydes-3-phosphate dehydrogenase
+- describe gene encoding phosphoketolase
+- describe genetic modifications to reduce expression of non-essential pathway genes
+- describe genetically modified fungal cell capable of producing VLCFA or VLCFA derivative
+- define elongases and desaturases
+- describe genetically modified fungal cell
+- outline method for VLCFA production
+- specify culturing conditions
+- describe isolation of VLCFA derivatives
+- introduce objective of producing VLCFA derivatives
+- outline two-step process for VLCFA production
+- describe genetically modified yeast
+- specify exogenous genes for elongase and FAS systems
+- specify exogenous genes for fatty acid reductase
+- describe preferred embodiments of elongase and FAS systems
+- describe preferred embodiments of fatty acid reductase
+- outline method for producing recombinant microorganism
+- describe genetically modified yeast for VLCFA production
+- specify exogenous genes for elongase and FAS systems
+- specify exogenous genes for desaturase
+- describe preferred embodiments of elongase and FAS systems
+- describe preferred embodiments of desaturase
+- outline method for producing recombinant microorganism
+- introduce objective of producing VLCFA derivatives
+- outline two-step process for VLCFA production
+- describe genetically modified yeast
+- specify exogenous genes for fatty acid reductase and wax synthase
+- describe preferred embodiments of fatty acid reductase
+- describe preferred embodiments of wax synthase
+- outline method for producing recombinant microorganism
+- describe genetically modified yeast for VLCFA production
+- specify exogenous genes for elongase, FAS, and fatty acid reductase systems
+- specify exogenous genes for wax synthase
+- describe preferred embodiments of elongase, FAS, and fatty acid reductase systems
+- define genetically modified yeast
+- specify exogenous genes
+- describe elongase system
+- describe fatty acid synthase system
+- describe very long chain fatty acid reductase
+- describe desaturase
+- describe wax synthase
+- specify fatty acid derivatives
+- describe method of producing recombinant microorganism
+- specify additional genetic modifications
+- describe heterologous expression of ACC
+- describe heterologous expression of GAPN
+- describe heterologous expression of desaturase
+- describe heterologous expression of LACS
+- describe combinations of embodiments
+- describe elimination of non-essential pathways
+- describe disruption of storage lipid formation
+- describe disruption of β-oxidation
+- describe reduced expression of competing enzymes
+- describe specific gene knock-outs
+- describe combinations of gene knock-outs
+- describe JV03 strain
+- describe transporter proteins
+- describe ABC transporters
+- describe lipid transfer proteins
+- describe fatty acid transporter genes
+- describe method for producing VLCFA derivatives
+- describe culturing genetically modified yeast
+- describe isolating VLCFA derivatives
+
+### EXAMPLES
+
+- introduce wax ester biosynthetic pathway
+- describe fatty acyl-CoA reductase (FAR) and wax ester synthase (WS)
+- list FAR and WS genes used in study
+- describe codon optimization of genes for S. cerevisiae
+- outline plasmid construction for FAR and WS genes
+- describe transformation of plasmids into E. coli
+- verify plasmids by sequencing
+- transform plasmids into yeast strains
+- verify transformation by colony PCR
+- grow yeast cultures and extract lipids
+- analyze lipids using gas chromatograph-mass spectrometer
+- show gas chromatogram spectra of control and producing strains
+- indicate production of long chain fatty alcohols and wax esters
+- show relative amount of fatty alcohols produced
+- summarize results of Example 1
+- introduce β-ketoacyl-CoA synthase (KCS) genes
+- describe KCS genes used in study
+- outline deletion of ELO3 gene in S. cerevisiae
+- describe construction of deletion cassettes
+- integrate deletion cassettes into genome
+- induce Cre recombinase to excise KanMX marker
+- verify deletion of ELO3 gene
+- integrate mutated ACC1 gene into genome
+- verify integration of ACC1 gene
+- overexpress KCS genes in S. cerevisiae
+- combine KCS genes with desaturase genes
+- amplify genes with primers introducing kozak sequence
+- construct plasmids using modular pathway engineering
+- transform plasmids into E. coli
+- verify plasmids by restriction analysis and sequencing
+- transform plasmids into yeast strains
+- cultivate yeast and analyze samples
+- show results of Example 2
+- summarize results of Example 2
+- describe docosanol production in yeast
+- overexpress ACC1 in yeast
+- assemble pathways for docosanol production
+- integrate pathways into yeast chromosome
+- describe production titers of control and producing strains
+- combine reductase, wax ester synthase, and elongase for wax ester production
+- amplify genes with kozak sequence and overhangs
+- assemble plasmids with pYX212 backbone
+- transform plasmids into yeast
+- analyze fatty acid spectrum
+- analyze fatty alcohol and wax ester spectrum
+- describe production data of strains
+- describe gas chromatogram spectra
+- describe fatty acid, fatty alcohol, and wax ester production
+- describe specific m/z peaks of wax esters
+- list wax ester species detected
+- overexpress desaturases for monounsaturated fatty acid synthesis
+- amplify desaturase genes with kozak sequence and overhangs
+- assemble plasmids with pYX212 backbone
+- transform plasmids into yeast
+- analyze fatty acid spectrum
+- analyze fatty alcohol and wax ester spectrum
+- describe effect of overexpressing OLE1 gene
+- overexpress fatty acyl-CoA synthase (FAA1)
+- amplify FAA1 gene with overhangs
+- clone FAA1 gene into pSP-GM2
+- overexpress endogenous yeast genes YBR159, PHS1, and TSC13
+- coexpress plant-derived elongase systems
+- introduce example 8
+- construct plasmid system
+- generate library of mutated FAS1/FAS2 genes
+- create strain for screening functionality of mutated FAS1/FAS2
+- transform library into strain and select for HIS+ prototrophic transformants
+- screen for growth on 5-fluoro-orotic acid
+- subclone final candidates into pSP-GM2::AmFAR
+- test in strains JV03 and PWY12
+- introduce example 9
+- codon optimize fatty acid synthase gene sequences
+- subclone into pSP-GM2 and pSP-GM2::AmFAR
+- transform into yeast strains
+- determine fatty acid profiles and fatty alcohol profiles
+- introduce example 10
+- fuse parts of bacterial FAS systems to yeast derived FAS1/FAS2 sequences
+- create library through subcloning of chimeras
+- screen as performed in example 8
+- subclone final candidates into pSP-GM2::AmFAR
+- test in strains JV03 and PWY12
+- introduce example 11
+- express recombinant genes in Yarrowia lipolytica
+- assemble and integrate genes into Y. lipolytica
+- select on appropriate dropout media
+- integrate elongase and reductase into Y. lipolytica
+- create strain capable of producing wax esters
+- introduce genes into rDNA loci
+- express recombinant genes in Y. lipolytica using alternative approach
+- synthesize genes with codon composition optimized for Y. lipolytica
+- construct plasmids using circular polymerase extension cloning
+- transform plasmids into Y. lipolytica and analyze fatty acid spectrum
+- show gas chromatogram spectra
+- describe production of long chain fatty alcohols
+- delete P3-oxidation capacity
+- delete PEX10 gene
+- create strain deleted in PEX10
+- create strain deleted in MFE1
+- create strain containing deletion in both genes
+- obtain wax-ester-producing strain
+- delete genes consuming fatty acids
+- transform strain with plasmids
+- analyze fatty acid spectrum
+- produce erucic acid in Saccharomyces cerevisiae
+- introduce mutations into ACC1 gene
+- overexpress OLE1
+- express plant FAE1-like 3-ketoacyl-CoA synthase
+- integrate genes into genome
+- analyze fatty acid spectrum
+- enhance wax ester production
+- exchange promoter of FAT1 gene
+- clone genes encoding ABC transporters
+- downregulate desaturase OLE1 gene expression
+- produce very long chain fatty alcohols
+

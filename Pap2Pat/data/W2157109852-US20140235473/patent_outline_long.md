@@ -1,0 +1,340 @@
+# DESCRIPTION
+
+- introduce invention for diagnosing and/or prognosing Parkinson's disease dementia (PDD)
+
+## BACKGROUND OF THE INVENTION
+
+- define Parkinson's disease (PD)
+- describe symptoms of PD
+- discuss prevalence of PD
+- explain cognitive disorders in PD
+- describe dementia in PD
+- discuss impact of dementia on patients and caregivers
+- highlight need for early diagnosis and treatment
+- describe neuropathology of PD dementia (PDD)
+- discuss Lewy bodies and alpha-synuclein
+- explain formation of alpha-synuclein containing inclusion bodies
+- describe topographical extent of lesions
+- discuss possible link between neurotoxicity, aggregation, and propagation
+- summarize attempts to improve early diagnosis of PDD
+- discuss limitations of current neurochemical profile
+- highlight need for laboratory-based tests for diagnosis and prognosis of PDD
+- introduce optimized protocol for proteomic analysis of cerebrospinal fluid sample
+
+## SUMMARY OF THE INVENTION
+
+- introduce method for diagnosing and/or prognosing PDD
+- describe molecule for detecting O-linked glycomoieties
+- introduce means for diagnosis and/or prognosis of PDD
+- describe kit for diagnosis and/or prognosis of PDD
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- disclaim limitations of invention
+- define terminology
+- incorporate references by reference
+- describe elements of invention
+- explain permutations of elements
+- define "comprise" and variations
+- define singular and plural forms
+- describe inventors' surprising finding
+- introduce method for diagnosing PDD
+- describe step of detecting O-glycosylation
+- describe step of detecting sialic acid level
+- define "diagnosing PDD"
+- define "prognosing PDD"
+- define "differential diagnosing"
+- define "Parkinson's disease"
+- define "Parkinson's disease dementia"
+- define "protein comprising a Ser/Thr motive"
+- describe O-linked glycosylation
+- describe protein isoforms
+- describe posttranslational modifications
+- define "glycosylated isoform"
+- describe Serpin family members
+- describe Serpin A1
+- describe Serpin A1 isoforms
+- describe Serpin A1 variants
+- describe sequence identity of variants
+- describe posttranslational modifications of proteins
+- define sialic acid
+- describe sialic acid structure
+- introduce nomenclature system
+- explain abbreviations
+- describe terminal sialic acid
+- describe oligosialic acid
+- describe polysialic acid
+- explain linkages between Sia units
+- describe sialidase
+- introduce Serpin A1
+- describe posttranslational modifications
+- list isoforms of Serpin A1
+- describe mature form of Serpin A1
+- describe proteolytic processing
+- describe structure of antennas
+- describe detection of isoforms
+- introduce Serpin A1 specific antibody
+- describe binding region of antibody
+- define corresponding residues
+- explain alignment tools
+- describe best sequence alignment
+- introduce O-glycosylated protein
+- describe detection of O-glycosylation
+- describe analysis of glycomoieties
+- describe mass spectroscopy
+- describe determination of glycosylated isoforms
+- describe hypersialylated O-linked glycomoieties
+- describe increased number of glycosylated isoforms
+- describe molecule weight of glycosylated Serpin A1
+- describe level of sialic acid
+- describe biological sample
+- describe body fluid sample
+- describe tissue sample
+- describe cell sample
+- describe weight of tissue sample
+- describe number of cells in cell sample
+- define subject
+- specify subject types
+- define control value
+- specify control value types
+- describe 2D gel electrophoreses
+- determine Serpin A1 isoforms
+- specify preferred control values
+- describe method for diagnosing PDD
+- specify preferred control values for PDD
+- describe method for differential diagnosing
+- specify preferred control values for differential diagnosing
+- describe O-linked glycomoieties
+- specify preferred O-linked glycomoieties
+- describe biological sample types
+- specify preferred control subjects
+- describe identification of PDD
+- specify preferred increase in glycosylated isoforms
+- specify preferred increase in sialic acid level
+- describe particularly preferred embodiment
+- define term "increased compared to a control"
+- explain detection of glycosylation and/or structure
+- diagnose and/or prognose PDD
+- introduce immunoassay
+- introduce gel electrophoresis
+- introduce spectrometry
+- introduce chromatography
+- describe liquid chromatography-mass spectrometry
+- describe 2D immunoblot
+- explain purification with affinity chromatography
+- define 1D gel electrophoresis
+- describe SDS-PAGE
+- describe native gel electrophoresis
+- describe isoelectric focusing
+- describe 2D gel electrophoresis
+- explain detection of proteins
+- describe silver staining
+- describe Coomassie Blue staining
+- introduce Western blotting
+- describe detection methods
+- introduce enzyme-linked immunosorbent assay
+- describe mass spectrometry
+- describe laser desorption mass spectrometry
+- describe matrix-assisted laser desorption/ionization mass spectrometry
+- describe surface-enhanced laser desorption/ionization mass spectrometry
+- describe tandem mass spectrometry
+- define signal
+- describe mass spectrometry embodiments
+- describe tandem mass tags embodiments
+- determine glycosylated isoforms using 2D gel electrophoresis
+- detect separated proteins using silver or Coomassie Blue staining
+- compare glycosylated isoforms to control
+- determine glycosylated isoforms using Western Blot
+- detect label/tag using chemiluminescent or colorimetric reactions
+- compare glycosylated isoforms to control
+- determine sialic acid level using 1D gel electrophoresis
+- detect sialic acid using Western Blot
+- evaluate sialic acid level using densitometry or spectrophotometry
+- compare sialic acid level to control
+- determine sialic acid level using 2D gel electrophoresis
+- detect sialic acid using Western Blot
+- evaluate sialic acid level using densitometry or spectrophotometry
+- compare sialic acid level to control
+- describe antibodies according to the second aspect
+- describe 1D or 2D gel electrophoresis with sialidase enzyme treatment
+- define sialidase enzyme
+- describe sialidase enzyme treatment
+- describe detection of shift in sialylated Ser/Thr motive proteins
+- describe preferred proteins comprising Ser/Thr motive
+- describe amino acid sequences of preferred proteins
+- define Serpin A8 and Fetuin A variants
+- define Ceruloplasmin variants
+- define Serpin F1 variants
+- define Haptoglobin variants
+- define Zinc-alpha-2 glycoprotein variants
+- describe alignment tools
+- specify method sensitivity
+- define sensitivity
+- describe diagnosis and prognosis
+- specify preferred embodiment of method
+- introduce second aspect of invention
+- define molecule for detecting O-linked glycomoieties
+- describe detected glycan structures
+- specify preferred molecule properties
+- describe molecule detection capabilities
+- define biological sample
+- define protein comprising a Ser/Thr motive
+- define subject
+- describe molecule types
+- define peptide
+- define polypeptide
+- define protein
+- define small molecule
+- describe molecule detection capabilities
+- conclude molecule description
+- define molecule binding to Ser/Thr motive protein
+- describe binding to epitope and/or glycan structure
+- specify binding to sialic acid on protein
+- describe detection of O-glycosylation and diagnosis of PDD
+- specify binding to all glycosylated isoforms and sialic acid structures
+- describe molecule binding to sialic acid and glycan structures
+- specify molecule binding to amino acid sequence and sialic acid
+- describe molecule as protein, polypeptide, peptide, or small molecule
+- specify sialic acid binding molecule as antibody or fragment
+- describe amino acid sequence binding molecule as antibody or fragment
+- define synthetic peptide or polypeptide
+- define recombinant peptide or polypeptide
+- define darpin
+- define anticalin
+- define lectin
+- describe selection of molecules by screening
+- describe testing of molecule binding by FRET, co-immunoprecipitation, or ELISA
+- describe ELISA-based experiment for binding analysis
+- describe verification of binding by antibodies or labels
+- define antibody or fragment thereof
+- describe types of antibodies and fragments
+- describe production of antibodies
+- describe primary and secondary antibodies
+- specify binding of Serpin A1 specific molecule to N-terminal region
+- specify binding of molecule to specific amino acid positions
+- specify binding of molecule to Neu5Ac(alpha1-6)Gal(beta1-4)GlcNAc structure
+- specify binding of molecule to core structure of Serpin A1
+- conclude description of molecule binding to Serpin A1 isoforms
+- define Serpin A1 specific molecule
+- describe labeling of molecule
+- introduce mass spectrometry probe
+- explain mass spectrometry procedure
+- describe selection of synthetic peptide
+- introduce third aspect of invention
+- describe means for diagnosis and prognosis
+- define biological sample and subject
+- describe solid support
+- introduce immobilization of molecule
+- describe biochip/microarray and beads
+- specify diameter of beads
+- define attached and immobilized
+- describe covalent and non-covalent binding
+- introduce multiple molecules
+- describe attachment to biochip or beads
+- specify binding to specific protein region
+- introduce antibody
+- describe use in method for detecting O-glycosylation
+- specify binding to glycosylated isoforms
+- describe 1D and 2D gel electrophoresis
+- introduce mass spectrometry probe for specific isoform
+- describe detection of sialic acid level
+- introduce labeled antibody
+- describe evaluation of sialic acid level
+- compare to control level
+- introduce specific sialic acid structure
+- describe isolation of glycosylated isoforms
+- describe binding verification
+- describe detection of glycosylated isoforms
+- compare to control number
+- diagnose PDD
+- describe advantages of invention
+- conclude invention
+- define protein comprising Ser/Thr motive
+- specify preferred proteins
+- introduce kit for diagnosis and/or prognosis of PDD
+- define kit of parts
+- describe detection of O-glycosylation and sialic acid level
+- specify means for detection
+- describe 1D gel electrophoresis
+- describe 2D gel electrophoresis
+- explain isoelectric focusing
+- describe use of sialidase enzyme
+- specify reporter-means
+- describe data carrier
+- specify control value
+- describe instructions for method
+- describe quality information material
+- describe warnings
+- specify amino acid sequences
+- introduce use of molecule, means, or kit
+- describe molecule composition or set
+- introduce molecule for detecting O-glycosylation
+- describe modifications and variations
+- specify scope of invention
+- describe embodiments
+- describe obvious modifications
+- describe intention to cover modifications
+- conclude invention description
+
+## EXAMPLES
+
+- introduce examples for illustrative purposes
+
+### Example 1
+
+- describe subjects and CSF samples
+- outline ethics committee approvals
+- detail patient examinations and neuropsychological tests
+- summarize patient groups and characteristics
+- describe neuropathology samples
+- outline CyDye labeling and 2D-DIGE methodology
+- describe 2D gel electrophoresis and imaging
+- outline in-gel digestion and mass spectrometry
+- detail database search and protein identification
+- describe Western blot methodology
+- outline calculations and statistics
+- describe results of 2D-DIGE experiments
+- identify regulated proteins
+- describe Western blot validation
+- outline 2D Western blot methodology
+- identify Serpin A1 as a regulated protein
+- describe isoform pattern of Serpin A1
+- outline reproducibility of results
+- describe sensitivity and specificity of Serpin A1
+- outline diagnostic potential of Serpin A1
+- describe additional spots in PDD patients
+- outline ROC analysis
+- describe diagnostic sensitivity and specificity
+- outline predictive value of Serpin A1 isoform pattern
+- discuss Parkinson's dementia diagnosis
+- outline limitations of current diagnostic methods
+- describe need for laboratory markers
+- outline potential of CSF analysis
+- describe Serpin A1 in Alzheimer's disease and dementia with Lewy bodies
+- outline biochemical verification of Serpin A1 regulation
+- describe isoform distribution of Serpin A1
+- outline predictive value of Serpin A1 isoform pattern
+- describe verification of results in larger cohort
+- outline potential of Serpin A1 as a diagnostic marker
+- discuss implications of results
+- conclude on the diagnostic potential of Serpin A1
+
+### Example 2
+
+- characterize Serpin A1 isoforms LC-MS/MS
+- describe sample preparation for LC-MS/MS
+- outline LC-MS/MS analysis parameters
+- describe PNGase F and neuraminidase digests
+- outline neuraminidase assay
+- summarize results of LC-MS/MS analysis
+- identify posttranslational modifications
+- perform PNGase F digest
+- perform neuraminidase digest
+- discuss results of digests
+- conclude hypersialylation of Serpin A1 isoforms
+
+### Example 3
+
+- analyze Serpin A1 expression in human cortex tissues
+- correlate Serpin A1 spots with tau-values
+

@@ -1,0 +1,152 @@
+{
+    "id": "https://semopenalex.org/work/W4296392396",
+    "authors": [
+        "Zhao Chen",
+        "Hongyang Ma",
+        "Yingjie Qu",
+        "Haowen Wang",
+        "Shumei Wang"
+    ],
+    "title": "Multiparticle quantum walk\u2013based error correction algorithm with two-lattice Bose\u2013Hubbard model",
+    "date": "2022-09-20",
+    "abstract": "When the evolution of discrete time quantum walk is carried out for particles, the ramble state is prone to error due to the influence of system noise. A multiparticle quantum walk error correction algorithm based on the two-lattice Bose\u2013Hubbard model is proposed in this study. First, two point Bose\u2013Hubbard models are constructed according to the local Euclidean generator, and it is proved that the two elements in the model can be replaced arbitrarily. Second, the relationship between the transition intensity and entanglement degree of the particles in the model is obtained by using the Bethe hypothesis method. Third, the position of the quantum lattice is coded and the quantum state exchange gate is constructed. Finally, the state replacement of quantum walk on the lattice point is carried out by switching the walker to the lattice point of quantum error correction code, and the replacement is carried out again. The entanglement of quantum particles in the double-lattice Bose\u2013Hubbard model is simulated numerically. When the ratio of the interaction between particles and the transition intensity of particles is close to 0, the entanglement operation of quantum particles in the model can be realized by using this algorithm. According to the properties of the Bose\u2013Hubbard model, quantum walking error correction can be realized after particle entanglement. This study introduces the popular restnet network as a training model, which increases the decoding speed of the error correction circuit by about 33%. More importantly, the lower threshold limit of the convolutional neural network (CNN) decoder is increased from 0.0058 under the traditional minimum weight perfect matching (MWPM) to 0.0085, which realizes the stable progress of quantum walk with high fault tolerance rate.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "A quantum walk is one of the effective methods to realize quantum computation [1,2]. However, because of the randomness of quantum walk, it is difficult to correct errors when the particles are affected by system noise during particle evolution. The physical system used in this study is a homogeneous system, which extends the two-lattice Bose-Hubbard model to the Bose-Hubbard model, and the arbitrary replacement of two particles does not lead to a new quantum state of the system [3][4][5][6].",
+                "A quantum walk algorithm can be implemented on many graph structures, and its function is very significant [7][8][9][10][11][12][13][14]. Also, quantum walks have important applications in quantum cryptography and quantum communication [15,16]. Noise research in the quantum walk algorithm is also one of the key points, and general quantum walk calculation based on the Bose-Hubbard model has been proposed [17,18]. On this basis, the multiparticle quantum walk error correction algorithm based on the two-lattice Bose-Hubbard model is further studied. As early as 2003, Shapira et al. used computer simulation to study the influence of unitary noise on onedimensional quantum walk and showed the variation of probability distribution of quantum walk under the influence of noise [19]. Also, specific noise types are studied, such as the non-Markov continuous time quantum walk algorithm with dynamic noise [20] and the quantum Bernoulli central limit theorem in the quantum walk algorithm [21]. In 2015, Ambainis et al. improved the potential barrier using the Grover algorithm, improved the amplitude of quantum walking coin state, and reduced the impact of noise during particle quantum walking [21,23]. In 2016, Wang et al. proposed to construct time-varying quantum walking with infinite degrees of freedom by using quantum Bernoulli noise [24]. In 2018, Du et al. constructed quantum gates using the quantum walk algorithm under noise, and the algorithm increased the number of addresses on the graph or the ratio of jump strength to potential could improve the coherence time, thus inhibiting the decoherence [25]. In 2019, Claudia et al. address the use of quantum walks as a quantum probe to characterize defects and perturbations occurring in complex, classical, and quantum networks [26]. These algorithms are designed to reduce the influence of noise on particles during the quantum walk.",
+                "Similar to the aforementioned algorithm, a multiparticle quantum walk error correction algorithm is proposed to reduce the influence of noise in the quantum walk. The twolattice Bose-Hubbard model is constructed for the multiparticle quantum ramble, and it is proved that the quantum state does not change after the displacement of any two particles in the model. Using the encoding method of quantum states mentioned in the study in reference [17], entanglement of quantum states in two lattices is generated by controlling the ratio of transition intensity and interaction between particles [27]. Controlling the ratio of model parameters to generate entanglement is easier than other methods [15,28]. The convolutional neural network decoder has been introduced in detail in the study mentioned in reference [29][30][31][32][33]. In this study, the threshold of the quantum walk error correction circuit has been greatly improved by using the convolution operation of the decoder and the improvement of the training speed. The evolution operator of quantum walk is improved and quantum state error correction is realized. Finally, the advantages and disadvantages of the algorithm are analyzed. Figure 1 shows the core idea of the work.",
+                "The sections of this article are organized in the following manner. In Section 2, we briefly introduce the background knowledge of discrete quantum walks. In Section 3, the two-lattice Bose-Hubbard model is constructed. In Section 4, the position of the quantum lattice is coded and the quantum state exchange gate is constructed. In Section 5, an analysis of error correction performance is performed, and Section 6concludes the study."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Discrete quantum walk",
+            "paragraphs": [
+                "A quantum walk is a quantized model for a classical random walk. The discrete time models discussed here include the walker position state and the \"coin\" state. The position n of the walker is a vector of infinite dimensional Hilbert space H p , and the basis vector of Hilbert space is {|n\u232a: n \u2208 Z}, which is called the computational basis for position space.",
+                "The evolution of the walk depends on the state of a quantum coin. Suppose the walker is on position |n\u232a, after the quantum coin is flipped \"heads\", the walker goes to position |n + 1\u232a in the next step. If the coin is flipped \"tails\", the walker will go to position |n -1\u232a. Now, the Hilbert space of the whole ramble system is "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "H H",
+            "paragraphs": [
+                "where H c is a two-dimensional Hilbert space of the quantum coin (different walkers have different throwing operators), and the basis vector of Hilbert space is {|0\u232a, |1\u232a}. The aforementioned ground state is also the computational basis of the quantum coin space, and the computational basis for space H is {|i\u232a|n\u232a, i \u2208 {0, 1}, n \u2208 Z}.",
+                "P is the coin operator that determines the direction of the quantum walk. The operator for the walker to move from position |n\u232a to position |n + 1\u232a or position |n -1\u232a is called the transition operator S.",
+                "We calculated the representation of the transition operator S under the computational basis of Hilbert space H:",
+                "3 Two-lattice Bose-Hubbard model",
+                "It is assumed that the graph structure of quantum walk is G, and the vertices V in the graph represent lattice points and satisfy the local Euclidean symmetry [4]. The two-lattice Bose-Hubbard model is used to describe the discrete time quantum walk in multiparticle interaction on the graph and to correct the error of quantum walk.",
+                "To construct the two-lattice Bose-Hubbard model, we first introduce the boson creation (annihilation) operator, b \u2020 j (b j ), where j = 1, 2, . . ., n, which satisfies the commutation relation:",
+                "Then we get the Hamiltonian of the two-lattice Bose-Hubbard model:",
+                "where t is the real parameter to describe the particle jumping intensity (in this work t = 1), \u03f5 j is the local potential, and V(n j ) is the interaction between particles at the lattice point:",
+                "where V 2 (n j ) is the interaction between two particles, V 3 (n j ) is the interaction between three particles, U 1 and U 2 are the strength of the interaction between particles, and nj b \u2020 j bj . In Eq. 6, the constraint of the two sets {j 1 , j 2 , . . ., j k } and {j 1 \u2032, j 2 \u2032, . . . , j k \u2032} is that the sum extends over all lattice points, and the two sets are not the same. Also, the operator operation condition is satisfied:",
+                "where nj b \u2020 j b j is the number operator at the lattice point j. Operator { bj , b \u2020 j , nj } satisfy the commutation relation:",
+                "According to the Hamiltonian of the model, the model can make multiple particles transition at the same time without limiting the transition of two adjacent lattice points. In the study mentioned in reference [17], the limit condition of Hilbert space H of n boson is calculated in the 2 n dimensional computational Hilbert space C, and the location is encoded by subset  initial state can be mapped to H_{C} and can be returned to C recoded as a valid computed state."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "SWAP gate operator construction",
+            "paragraphs": [
+                "Assume two lattices V 0 and V 1 (Figure 2), where V 0 is the location of the quantum walk and V 1 is the errorcorrecting coded location. The corresponding two lattices in V 0 and V 1 represent a qubit whose calculated ground state is |0\u232a and |1\u232a, respectively. The corresponding qubits in the lattice must be entangled, and we show how quantum lattices are encoded and how qubits generate entanglement. Suppose the initial n-qubit state |\u03a6\u232a satisfies the following condition:",
+                "The function of the four calculated ground-state mapping relations and the creation (annihilation) operators for a 10 dimensional space is b \u2020",
+                "The Hamiltonian of the two-lattice Bose-Hubbard model is reduced to",
+                "when the interaction of two particles and the local potential \u03f5 j are considered only. In Eq.6, N is the particle number, and the subscript j is the lattice position, and the parameter t ij is",
+                "In the two-lattice Bose-Hubbard model, the six lattice points are coded according to the Yang diagram, so the lattice coding sequence is as follows:",
+                "According to the aforementioned Eqs 11, 12, 13, we can get the energy matrix E 6 by matrix diagonalization. From the energy matrix E 6 , the eigenvalues {E (\u03b9)  6 } 6 \u03b9 0 of lattice particles and the ground state of the model can be obtained when determining the values of U/t, which is helpful for the establishment of the two-lattice Bose-Hubbard model. Moreover, the entangled degree calculation system mentioned in the study in reference [4] is used to calculate the entangled degree between the ground-state particles:",
+                "where N is the number of particles, M is the number of lattices, and (\u03d5) i is the reduced density matrix at the ith lattice point. The next step is to find the relationship between the specific value U/t and the degree \u03b7 of entanglement. The lattice energy matrix of the seven lattice points is shown below."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "FIGURE 3",
+            "paragraphs": [
+                "According to the Bethe assumption method, the Eq. 17 related to the degree of entanglement can be obtained, which shows the relationship between the degree of entanglement \u03b7 (vertical axis) and U/t (horizontal axis). The aforementioned two figures are, respectively, the relationship curves of entanglement degree \u03b7 and U/t when the total number of particles is 10 and 20. It can be seen that the degree of entanglement tends to 1 as U/t \u2192 0, so the two particles in the model can be entangled by controlling the values of parameters U/t.",
+                "According to the eigenenergy, the Bethe hypothesis method can be obtained, as follows:",
+                "wheret m,n C(m, n)/F(m, n) = 1, m and n (m \u2265 n) are the number in the lattice points, when m = n and C(m, n) = 1 and when m \u2260 n and C(m, n) = 2. According to Eq. 16, the calculation formula of entanglement is improved:",
+                "We can get the degree of entanglement between the two lattice points to 1 at U/t \u2192 0, as shown in Figure 3. The SWAP gate is obtained by limiting [4] to U/t \u2248 0:",
+                "where \u03b1 b + l 2 -4a(a + 1) -1 a and b need to be evaluated according to the degree of entanglement \u03b7 to ensure the degree of entanglement between two particles.",
+                "5 Error correction and analysis"
+            ],
+            "subsections": [
+                {
+                    "title": "Quantum walk error correction",
+                    "paragraphs": [
+                        "Because the generator of local Euclidean symmetry is used to construct the two-lattice Bose-Hubbard model, it is necessary to modify the quantum ramble operator. Assuming that the generator in the model (n lattices) is {\u03be i } n i 1 , the modification of quantum walk transfer operator and coin operator is as follows:",
+                        "Because it is currently in a two-dimensional physical system, the aforementioned formula only takes two generative elements to construct the quantum walk evolution operator.",
+                        "In the previous section, we showed that the quantum states of two corresponding lattice points can be entangled by controlling the ratio of the parameters U/t. Thus, according to the Properties of the Bose-Hubbard model, when particle qubits wander to lattice point \u03b1, it can be exchanged with another lattice point \u03b1\u2032, which becomes entangled with the particle qubits through the exchange gate and corrects the error.",
+                        "In the space of N-qubits, a single-bit quantum measurement will appear at each lattice point when the evolution of the particles is in the discrete time quantum walk. The measurement operator is:",
+                        "where, |v\u232a i,0 is the encoded quantum state in the first lattice in Figure 2, which is the state of quantum walk; |v\u232a i,1 is the quantum state in the second lattice, which is used to assist quantum error correction. Also, the lattice locations of |v\u232a i,0 and |v\u232a i,1 are entangled in the model. The quantum state |v\u232a i,0 has superposition state in the process of quantum walk:",
+                        "where \u03c8 0,n and \u03c8 1,n are the amplitude, |\u03be 0 \u232a and |\u03be 1 \u232a are the coin state, and |n\u232a is the position state. In the process of quantum walk, there are mainly two kinds of errors, which are phase inversion and bit inversion. However, the amplitude in Eq. 23 is generated by the superposition state, so the detection and correction of walker errors are mainly aimed at bit inversion errors. The quantum walk error correction circuit is shown in Figure 4. In order to suppress the error generated in the quantum walk, the noise error based on the double-lattice Bose-Hubbard model in the quantum walk is reduced by reducing the circuit gate overhead. Taking depolarization noise as an example, the data map is obtained through the training of the decoder. The decoder uses the convolutional neural network [27][28][29] in the current hot machine learning algorithm as the dominant algorithm to decode the quantum information in the line. The specific decoding training model is shown in Figure 5. By training with different restnet layers, the accuracy and speed of training are improved; the speed is 1/3 higher than before and the accuracy reaches 99.82%."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Algorithm analysis",
+                    "paragraphs": [
+                        "At present, there are many research achievements in quantum walking. For example, the quantum state operator based on the Bose-Hubbard model is given in the study in reference [17], including single-bit operation, entanglement operation, and permutation operation. This study mainly studies the error correction of system noise during a quantum walk.",
+                        "The algorithm is based on the two-lattice Bose-Hubbard model, and the evolution of the quantum walk algorithm is carried out. In the first section, it is proved that no new quantum state will be generated after the particles are replaced in the model [17]. Based on the model, this algorithm can correct the quantum walk error by using quantum error correction coding. In the second section, according to the Bethe hypothesis method mentioned in reference [4], we can get the relationship between energy eigenvalues, particle transition intensity, particle interaction, and entanglement (Eq. ( 17)). Therefore, two lattice points can be entangled by controlling the value of U/t, and the step of generating entanglement can be omitted compared with the study mentioned in reference [17]."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Error correction performance analysis",
+                    "paragraphs": [
+                        "We extracted non-local regularities from noise and performed transfer learning in various tasks. Applying this advantage to the cost of qubits passing through quantum gates can reduce the cost of qubits. The qubits contain auxiliary qubits in the synthetic measurement process, and the logic overhead is the cost of the auxiliary qubits during the synthetic measurement process.   Threshold is an effective way to characterize fault tolerance performance. Specifically, applying quantum error correction for efficient quantum computing can suppress the logical error rate to arbitrarily low levels when the physical error rate of the qubits is below a certain threshold. The CNN used in this study is used for experiments. The number of simulated qubits varies from 3.8 \u00d7 10 3 to 1.5 \u00d7 10 5 bits. The specific training data quantification is shown in Table 1. Comparing the overhead of MWPM and CNN optimization with thresholds of 0.0058 and 0.0085. Figure 6A shows that with the increase of the number of qubits both the MWPM overhead and the CNN overhead increase, but the increase in CNN-optimized overhead is significantly lower than that of the MWPM overhead. Figure 6B shows that as the number of qubits increases, the optimization overhead of CNN also gets much lower than the original one; although when the number of qubits is 2.0 \u00d7 10 8 , the overhead of the optimized CNN is slightly higher than the original one. At the same time, comparing the results under different thresholds in Figure 6, it can be found that the larger threshold, the greater the overhead of quantum circuit gate."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this study, a multiparticle quantum walk error correction algorithm based on the two-lattice Bose-Hubbard model is proposed. This algorithm controls the proportion of the interaction between particles and the transition intensity of particles to realize the entanglement of quantum state in two lattices and then corrects the quantum walking error by using the invariant property of model particle replacement. Under the condition of the threshold of 0.0085, the restnet network layer is used as a training model, and the error noise of quantum walk is reduced by decoding the error correction circuit model, so as to achieve a more stable walk circuit. Compared with the traditional quantum walk error correction, the threshold limit is increased from 0.0058 under the traditional MWPM to 0.0085, and the speed is increased by a full 1/3. However, when the number of particles or the size of the system exceeds a certain threshold, it is impossible to accurately control the transition strength of particles and the interaction between particles, thus destroying the entanglement operation. The development of quantum convolutional neural network is relatively mature at present, and it is the focus of the next research, in preparation for further improving the fault tolerance performance. visualization, investigation, and supervision; ZC: writing-reviewing and editing; H-YM: conceptualization, funding acquisition, and resources."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Funding",
+            "paragraphs": [
+                "This project was supported by the National Natural Science Foundation of China (Grant No. 61772295), Natural Science Foundation of Shandong Province, China (Grant Nos. ZR2021MF049, ZR2019YQ01), and Project of Shandong Provincial Natural Science Foundation Joint Fund Application (ZR202108020011)."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Data availability statement",
+            "paragraphs": [
+                "The original contributions presented in the study are included in the article/Supplementary Material; further inquiries can be directed to the corresponding author."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Author contributions",
+            "paragraphs": [
+                "S-MW: conceptualization, methodology, and software; Y-JQ: data curation and writing-original draft preparation; H-WW:"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "FIGURE 6",
+            "paragraphs": [
+                "Quantum circuit gate overhead data graph. (A) When threshold = 0.005, the cost of MWPM is compared with the optimization cost of CNN network. (B) When threshold = 0.0085, the cost of MWPM is compared with the optimization cost of CNN network. Among them, the abscissa represents the number of qubits, displayed in scientific notation, and the ordinate is the logical cost. The cost of CNN is marked in pink, and the cost of CNN optimization is marked in green."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conflict of interest",
+            "paragraphs": [
+                "The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Publisher's note",
+            "paragraphs": [
+                "All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors, and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher."
+            ],
+            "subsections": []
+        }
+    ]
+}

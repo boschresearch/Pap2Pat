@@ -1,0 +1,264 @@
+# DESCRIPTION
+
+## FIELD
+
+- define field of disclosure
+
+## BACKGROUND
+
+- describe autonomous vehicles
+
+## SUMMARY
+
+- introduce machine-learned motion planning model
+- describe backbone network
+- describe trajectory generator
+- outline operations of machine-learned motion planning model
+- introduce non-transitory computer-readable media
+- describe computer-implemented method of motion planning
+- outline other example aspects of disclosure
+- reference accompanying drawings
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments of the present disclosure
+- describe autonomous vehicle systems
+- introduce machine-learned motion planning model
+- describe model inputs (sensor data, map data)
+- describe model outputs (cost map, target trajectory, intermediate representations)
+- describe end-to-end driving approach
+- introduce onboard vehicle computing system
+- describe system components (sensors, map data, motion planning model)
+- describe motion planning model functionality
+- introduce cost volume
+- describe cost volume representation
+- describe cost volume generation
+- introduce interpretable intermediate representations
+- describe object detections and motion predictions
+- describe target trajectory selection
+- introduce sampling diverse trajectories
+- describe scoring potential trajectories
+- describe selecting target trajectory
+- introduce joint training of motion planning model
+- describe multitask objective
+- introduce perception loss component
+- describe classification loss
+- describe regression loss
+- introduce planning loss component
+- describe max-margin loss
+- describe training motion planning model
+- introduce backbone network
+- describe backbone network functionality
+- introduce trajectory generator
+- describe trajectory generator functionality
+- introduce deep structured minimization problem
+- describe approximating minimization
+- introduce feature map
+- describe feature map generation
+- introduce perception header
+- describe perception header functionality
+- introduce cost volume header
+- describe cost volume header functionality
+- describe trajectory generator output
+- introduce sampling or optimizing trajectories
+- describe evaluating cost volume
+- describe selecting target trajectory
+- introduce autonomous vehicle technology
+- describe motion planning model
+- motivate holistic approach
+- describe backbone network
+- introduce perception header
+- introduce cost volume header
+- describe convolutional network layers
+- describe motion planning model training
+- describe generating cost volume
+- describe generating intermediate representations
+- describe obtaining potential trajectories
+- describe selecting target trajectory
+- describe technical effects and benefits
+- describe improved motion planning
+- describe end-to-end driving approach
+- describe shortcomings of traditional engineering stacks
+- describe machine-learned motion planning model
+- describe nonparametric cost volume
+- describe trajectory generator
+- describe sampling potential trajectories
+- describe considering real-world constraints
+- describe dynamical models
+- describe computing processing requirements
+- describe traditional machine-learned model approaches
+- describe imitation learning approaches
+- describe manually designed cost functions
+- describe jointly trained motion planning model
+- describe interpretable machine-learned motion planning model
+- describe feedback to motion planning system
+- describe handling uncertainty
+- describe improving safety and reliability
+- describe improving passenger experience
+- describe providing vehicle services
+- describe reducing traffic congestion
+- describe environmental benefits
+- introduce vehicle computing system
+- describe vehicle types
+- describe operating modes
+- describe adjusting operating modes
+- describe vehicle computing system components
+- describe vehicle systems and communication
+- introduce autonomy computing system
+- describe system components
+- explain sensor data processing
+- identify objects using sensor data
+- generate perception data
+- provide perception data to prediction system
+- predict object motion
+- generate prediction data
+- provide prediction data to motion planning system
+- determine motion plan
+- consider cost data and objective functions
+- evaluate predicted motion trajectories
+- generate cost data
+- update motion plan
+- execute motion plan
+- translate motion plan into vehicle control instructions
+- implement motion plan using vehicle control system
+- describe motion planner
+- generate target trajectory
+- process sensor data and map data
+- generate intermediate representations
+- generate cost volume
+- select target trajectory
+- optimize sampled trajectory
+- compute trajectory score
+- select target trajectory based on score
+- describe machine-learned motion planning model
+- receive sensor data and map data
+- generate feature map
+- generate intermediate representations and cost volume
+- manage output of backbone network
+- generate interpretable intermediate representations
+- describe cost volume
+- optimize trajectory using cost volume
+- sample diverse physically possible trajectories
+- compute trajectory score
+- select target trajectory
+- depict machine learned motion planning model
+- introduce backbone network
+- describe input data
+- generate feature map
+- describe convolutional neural network
+- generate intermediate representations
+- generate cost volume
+- describe trajectory generator
+- score and optimize potential trajectories
+- select target trajectory
+- formulate planning problem
+- describe deep structured interpretable neural motion planner
+- depict backbone network
+- describe feature map
+- generate three-dimensional LIDAR tensor
+- generate M-channel map tensor
+- describe convolutional neural network architecture
+- describe perception header
+- generate intermediate representations
+- describe cost volume header
+- generate cost volume
+- describe trajectory generator
+- compute final target trajectory
+- depict flowchart diagram
+- describe method for generating target trajectory
+- implement method on computing devices
+- perform method by motion planner
+- describe motion planning system
+- implement motion planning system
+- obtain sensor data
+- obtain map data
+- input data into motion planning model
+- generate intermediate representations
+- generate cost volumes
+- obtain potential trajectories
+- generate trajectory scores
+- select target trajectory
+- impose dynamical model
+- represent 2D path
+- define longitudinal velocity
+- sample path
+- find corresponding position
+- sample accelerations
+- combine planar curves and velocity profiles
+- project to discrete time steps
+- obtain waypoints
+- determine trajectory score
+- define multitask objective
+- define perception loss component
+- define planning loss component
+- define max-margin loss
+- train machine-learned motion planning model
+- provide training data
+- input ground-truth data
+- receive output of machine-learned model
+- predict target trajectory
+- define classification loss component
+- define regression loss component
+- compute perception loss
+- compute planning loss
+- define cost volume value
+- sample negative trajectories
+- compute max-margin loss
+- define distance between trajectories
+- define traffic rule violation cost
+- optimize worst case
+- train machine-learned model
+- evaluate model performance
+- define machine-learned motion planning model
+- detect discrepancies between ground truth trajectory and negative training examples
+- determine loss function comparing predicted inferences to ground-truth data
+- backpropagate loss function to jointly train model
+- modify machine-learned motion planning model based on backpropagation
+- repeat training process for numerous sets of ground-truth data
+- configure means to perform methods and processes
+- depict example motion planning computing system
+- introduce sensor data unit
+- introduce map data unit
+- introduce cost volume unit
+- introduce intermediate representation unit
+- introduce trajectory sampling unit
+- introduce trajectory scoring unit
+- introduce trajectory selection unit
+- introduce motion planning unit
+- introduce vehicle controlling unit
+- train machine-learned motion planning model
+- configure means to obtain sensor data
+- project LIDAR point cloud data to bird's eye view representation
+- obtain map data
+- generate cost volume
+- generate intermediate representations
+- determine set of potential trajectories
+- evaluate set of potential trajectories
+- generate trajectory score
+- select target trajectory
+- generate motion plan
+- control vehicle controls to execute motion plan
+- train machine-learned motion planning model using multitask training
+- depict block diagram of example computing system
+- introduce computing system
+- introduce machine learning computing system
+- store machine-learned models
+- receive machine-learned models from machine learning computing system
+- implement machine-learned models
+- generate uncertainty data for object detections and motion plan generation
+- introduce one or more processors
+- introduce memory
+- store data
+- store computer-readable instructions
+- execute instructions
+- introduce machine-learned models at machine learning computing system
+- communicate between computing systems
+- train machine-learned models using model trainer
+- use supervised training techniques
+- use unsupervised training techniques
+- perform generalization techniques
+- train machine-learned model using labeled training data
+- introduce network interface
+- communicate over network
+- illustrate example computing system
+

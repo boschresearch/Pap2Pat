@@ -1,0 +1,671 @@
+{
+    "id": "US20190242876",
+    "authors": [
+        "Jeremy Linsley",
+        "Kevan Shah",
+        "Steven M. Finkbeiner"
+    ],
+    "title": "GENETICALLY ENCODED CELL DEATH INDICATORS AND METHODS OF USE",
+    "date": "2017-10-18 00:00:00",
+    "abstract": "Genetically encoded death indicator (GEDI) polypeptides and nucleic acid molecules encoding such polypeptides are provided. In addition, methods of using such nucleic acids and polypeptides to monitor cell death events in vitro and in vivo, particularly in neuronal cell death, are also provided.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "The disclosure relates to genetically encoded death indicator (GEDI) polypeptides and nucleic acid molecules encoding such polypeptides. In addition, the disclosure also provides methods of using such nucleic acids and polypeptides to monitor cell death events in vitro and in vivo, particularly in neuronal cell death."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define GEDI polypeptides"
+                    ],
+                    "num_characters": 319,
+                    "outline_medium": [
+                        "define GEDI polypeptides"
+                    ],
+                    "outline_short": [
+                        "define GEDI polypeptides"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Calcium ions (Ca2+) are involved in many signaling processes in a broad range of cells, tissues and organisms including, for example, muscle contraction, nerve signaling, fertilization and cell division. Among these, calcium transients have been monitored in the field of neuroscience as an indication of neuronal activity and/or health. Action potentials (APs) trigger large spikes in intracellular calcium through voltage-sensitive calcium channels. Genetically-encoded calcium indicators (GECIs) are widely used for imaging these calcium fluxes. Importantly, GECIs are engineered to fluoresce with a dynamic range based on physiological levels Ca2+ within healthy cells.",
+                        ") Ca2+ overload has also been associated with cell viability or cell death. In many if not all cell types, the ability to maintain a gradient of Ca2+ between the inside and outside of the cell is essential to life\u2014once Ca2+ levels inside the cell are equivalent to that outside, the cell can be classified as dead."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate calcium ions"
+                    ],
+                    "num_characters": 989,
+                    "outline_medium": [
+                        "motivate calcium ions"
+                    ],
+                    "outline_short": [
+                        "motivate calcium ions"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Methods and materials are provided for detecting and monitoring cell death, for example, neuronal cell death.",
+                        "In various embodiments, the present disclosure provides isolated nucleic acid sequences comprising a nucleotide sequence encoding a promoter, a first detectable marker, a modified calcium binding motif of SEQ ID NO. 1 or variants thereof, and a second detectable marker.",
+                        "In various embodiments, the present disclosure also provides vectors, isolated cells, non-human animals, and/or organotypic slice cultures comprising the nucleic acid sequence of any of the above or below embodiments.",
+                        "The present disclosure also provides methods for monitoring calcium flux in a cell comprising the isolated nucleic acid of any of the above or below embodiments, comprising: measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; and comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio.",
+                        "The present disclosure also provides methods for monitoring cell death in a cell comprising the isolated nucleic acid of any of the above or below embodiments, measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and determining whether the cell is dead or alive based on the signal intensity ratio.",
+                        "The present disclosure also provides methods of screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in a cell, comprising contacting a cell comprising the isolated nucleic acid of any of the above or below embodiments with the agent; measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and determining whether the agent is capable causing an intracellular calcium concentration fluctuation based the signal intensity ratio.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the promoter is a tissue specific promoter, for example, a neuron specific promoter.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the first detectable marker, the second detectable marker, or both comprise a fluorescent label, for example, green fluorescent protein (GFP), mApple, mTagBFP, or variants thereof.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the first detectable marker and the second detectable marker are distinguishable from each other.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the modified calcium binding motif comprises at least one genetic modification.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the modified calcium binding motif comprises at least one amino acid substitution of SEQ ID NO. 1 or variants thereof selected from the group consisting of E31D, F92W, E104D, D133E, or any combination thereof.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the modified calcium binding motif has a calcium dissociation constant (Kd) greater than 1 \u03bcM. In other embodiments, which may be combined with any of the above or below embodiments, the modified calcium binding motif has a Kd greater than 100 \u03bcM.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the nucleic acid sequence does not comprise a localization sequence, for example, a nuclear localization sequence, an endoplasmic reticulum localization sequence, a mitochondrial localization sequence, or any combination thereof.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the vector is an adenovirus, adeno-associated virus (AAV), lentivirus, retrovirus, or episomal vector.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the cell is a neural cell, a muscle cell, a cancer cell, or a gamete. In some embodiments, which may be combined with any of the above or below embodiments, the cell is a human cell, for example, a human induced pluripotent stem cell (iPSC).",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, at least one of the method steps are performed using confocal microscopy.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, the method is a high-throughput method. In some embodiments, which may be combined with any of the above or below embodiments, the method is an automated method.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, a signal intensity ratio of greater than 0.05 indicates the cell is dead.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, cell death comprises apoptosis, necrosis, autophagy, necroptosis, or any combination thereof.",
+                        "In some embodiments, which may be combined with any of the above or below embodiments, cell death is determined when Ca2+ levels inside the cell are equivalent to Ca2+ levels outside the cell."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "provide methods for detecting cell death",
+                        "provide isolated nucleic acid sequences",
+                        "provide vectors and cells",
+                        "provide methods for monitoring calcium flux",
+                        "provide methods for monitoring cell death",
+                        "provide methods for screening agents",
+                        "specify tissue specific promoters",
+                        "specify fluorescent labels",
+                        "specify modified calcium binding motifs",
+                        "specify calcium dissociation constants",
+                        "specify cell types"
+                    ],
+                    "num_characters": 5544,
+                    "outline_medium": [
+                        "provide methods for detecting cell death",
+                        "describe nucleic acid sequences",
+                        "describe vectors and cells",
+                        "outline methods for monitoring calcium flux",
+                        "outline methods for monitoring cell death"
+                    ],
+                    "outline_short": [
+                        "summarize methods for detecting cell death",
+                        "summarize materials for detecting cell death"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "After reading this description it will become apparent to one skilled in the art how to implement the invention in various alternative embodiments and alternative applications. However, all the various embodiments of the present invention will not be described herein. It will be understood that the embodiments presented here are presented by way of example only, and not limitation. As such, this detailed description of various alternative embodiments should not be construed to limit the scope or breadth of the present invention as set forth below.",
+                        "The detailed description is divided into various sections only for the reader's convenience and disclosure found in any section may be combined with that in another section. Titles or subtitles may be used in the specification for the convenience of a reader, which are not intended to influence the scope of the present disclosure.",
+                        "The practice of the present disclosure will employ, unless otherwise indicated, conventional techniques of tissue culture, immunology, molecular biology, cell biology and recombinant DNA, which are within the skill of the art. See, e.g., Sambrook and Russell eds. (2001) Molecular Cloning: A Laboratory Manual, 3rd edition; the series Ausubel et al. eds. (2007) Current Protocols in Molecular Biology; the series Methods in Enzymology (Academic Press, Inc., N.Y.); MacPherson et al. (1991) PCR 1: A Practical Approach (IRL Press at Oxford University Press); MacPherson et al. (1995) PCR 2: A Practical Approach; Harlow and Lane eds. (1999) Antibodies, A Laboratory Manual; Freshney (2005) Culture of Animal Cells: A Manual of Basic Technique, 5th edition; Gait ed. (1984) Oligonucleotide Synthesis; U.S. Pat. No. 4,683,195; Hames and Higgins eds. (1984) Nucleic Acid Hybridization; Anderson (1999) Nucleic Acid Hybridization; Hames and Higgins eds. (1984) Transcription and Translation; IRL Press (1986) Immobilized Cells and Enzymes; Perbal (1984) A Practical Guide to Molecular Cloning; Miller and Calos eds. (1987) Gene Transfer Vectors for Mammalian Cells (Cold Spring Harbor Laboratory); Makrides ed. (2003) Gene Transfer and Expression in Mammalian Cells; Mayer and Walker eds. (1987) Immunochemical Methods in Cell and Molecular Biology (Academic Press, London); Herzenberg et al. eds (1996) Weir's Handbook of Experimental Immunology; Manipulating the Mouse Embryo: A Laboratory Manual, 3rd edition (2002) Cold Spring Harbor Laboratory Press; Sohail (2004) Gene Silencing by RNA Interference: Technology and Application (CRC Press).",
+                        "Unless the context indicates otherwise, it is specifically intended that the various features of the invention described herein can be used in any combination. Moreover, the disclosure also contemplates that in some embodiments, any feature or combination of features set forth herein can be excluded or omitted. To illustrate, if the specification states that a complex comprises components A, B and C, it is specifically intended that any of A, B or C, or a combination thereof, can be omitted and disclaimed singularly or in any combination.",
+                        "All numerical designations, e.g., pH, temperature, time, concentration, and molecular weight, including ranges, are approximations which are varied (+) or (\u2212) by increments of 1.0 or 0.1, as appropriate, or alternatively by a variation of +1-15%, or alternatively 10%, or alternatively 5%, or alternatively 2%. It is to be understood, although not always explicitly stated, that all numerical designations are preceded by the term \u201cabout.\u201d It is to be understood that such range format is used for convenience and brevity and should be understood flexibly to include numerical values explicitly specified as limits of a range, but also to include all individual numerical values or sub-ranges encompassed within that range as if each numerical value and sub-range is explicitly specified. For example, a ratio in the range of about 1 to about 200 should be understood to include the explicitly recited limits of about 1 and about 200, but also to include individual ratios such as about 2, about 3, and about 4, and sub-ranges such as about 10 to about 50, about 20 to about 100, and so forth. It also is to be understood, although not always explicitly stated, that the reagents described herein are merely exemplary and that equivalents of such are known in the art.",
+                        "It must be noted that as used herein and in the appended claims, the singular forms \u201ca\u201d, \u201can\u201d, and \u201cthe\u201d include plural referents unless the context clearly dictates otherwise. Thus, for example, reference to \u201ca cell\u201d includes a plurality of cells."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Definitions",
+                            "paragraphs": [
+                                "As used herein the following terms have the following meanings:",
+                                "The term \u201cabout,\u201d as used herein when referring to a measurable value such as an amount or concentration and the like, is meant to encompass variations of 20%, 10%, 5%, 1%, 0.5%, or even 0.1% of the specified amount.",
+                                "The terms or \u201cacceptable,\u201d \u201ceffective,\u201d or \u201csufficient\u201d when used to describe the selection of any components, ranges, dose forms, etc. disclosed herein intend that said component, range, dose form, etc. is suitable for the disclosed purpose.",
+                                "Also as used herein, \u201cand/or\u201d refers to and encompasses any and all possible combinations of one or more of the associated listed items, as well as the lack of combinations when interpreted in the alternative (\u201cor\u201d).",
+                                "\u201cComprising\u201d or \u201ccomprises\u201d is intended to mean that the compositions and methods include the recited elements, but not excluding others. \u201cConsisting essentially of\u201d when used to define compositions and methods, shall mean excluding other elements of any essential significance to the combination for the stated purpose. Thus, a composition consisting essentially of the elements as defined herein would not exclude other materials or steps that do not materially affect the basic and novel characteristic(s) of the claimed invention. \u201cConsisting of\u201d shall mean excluding more than trace elements of other ingredients and substantial method steps. Embodiments defined by each of these transition terms are within the scope of this invention.",
+                                "As used herein, the term \u201cisolated\u201d in reference to a molecule or cell (e.g., an isolated protein, an isolated nucleic acid, or an isolated cell) is one which has been identified and separated and/or recovered from a component of its natural environment. The term \u201cisolated\u201d as used herein with respect to nucleic acids, such as DNA or RNA, refers to molecules separated from other DNAs or RNAs, respectively that are present in the natural source of the macromolecule. The term \u201cisolated nucleic acid\u201d is meant to include nucleic acid fragments which are not naturally occurring as fragments and would not be found in the natural state. The term \u201cisolated\u201d is also used herein to refer to polypeptides, proteins that are isolated from other cellular proteins and is meant to encompass both purified and recombinant polypeptides. In other embodiments, the term \u201cisolated\u201d means separated from constituents, cellular and otherwise, in which the cell, tissue, polynucleotide, peptide, polypeptide, protein, antibody or fragment(s) thereof, which are normally associated in nature. For example, an isolated cell is a cell that is separated form tissue or cells of dissimilar phenotype or genotype. As is apparent to those of skill in the art, a non-naturally occurring polynucleotide, peptide, polypeptide, protein, does not require \u201cisolation\u201d to distinguish it from its naturally occurring counterpart.",
+                                "The term \u201cmodified,\u201d \u201cmodification,\u201d and the like, in reference to a nucleic acid or amino acid sequence refers to any change in one or more nucleic acids and/or amino acids. A non-limiting example of a modification includes mutations. Nucleic acid and/or amino acid mutations include deletions, insertions, and/or substitutions. Such modifications result in the protein encoded by the sequence having altered activity or expression levels within in the cell, for example, the modification may result in an increased or reduced binding affinity of a protein or other signaling molecule.",
+                                "The term \u201cnucleic acid\u201d refers to two or more deoxyribonucleotides and/or ribonucleotides covalently joined together in either single or double-stranded form.",
+                                "The term \u201crecombinant nucleic acid\u201d means a nucleic acid of interest that is free of one or more nucleic acids (e.g., genes) which, in the genome occurring in nature of the organism in nature of the organism from which the nucleic acid of interest is derived, flank the nucleic acid of interest. A non-limiting example includes recombinant DNA which is incorporated into the genomic DNA of a prokaryote or eukaryote, or which exists as a separate molecule (e.g., a cDNA, a genomic DNA fragment, or a cDNA fragment produced by PCR or restriction endonuclease digestion) independent of other sequences.",
+                                "The term \u201coperably linked\u201d refers to a functional linkage between a nucleic acid expression control sequence (e.g., a promoter) and a second nucleic acid sequence, wherein the expression control sequence directs transcription of the nucleic acid corresponding to the second sequence.",
+                                "As used herein, the term \u201cprotein\u201d includes polypeptides, peptides, fragments of proteins, and fusion proteins and refer to a polymeric form of amino acids of any length, which can include genetically coded and non-genetically coded amino acids, chemically or biochemically modified or derivatized amino acids, and polypeptides having modified peptide backbones. The term includes fusion proteins, including, but not limited to, fusion proteins with a heterologous amino acid sequence, fusions with heterologous and homologous leader sequences, with or without N-terminal methionine residues, immunologically tagged proteins, and the like.",
+                                "The term \u201csequence identity\u201d with respect to a protein or amino acid sequence (or a DNA or RNA sequence) refers to the percentage of amino acid residues (or nucleotide residues) in a candidate sequence that are identical to the amino acid residues in the specific protein or amino acid sequence (or nucleotide residues in the specific DNA or RNA sequence), after aligning the sequences and introducing gaps, if necessary, to achieve a maximum percent sequence identity, and not considering any conservative substitutions as part of the sequence identity. Alignment can be achieved by any method known to one of skill in the art, for example, by using publicly available programs such as BLAST and EMBOSS. Those skilled in the art can determine appropriate parameters for measuring alignment, including any algorithms needed to achieve maximal alignment over the full length of the sequences being compared.",
+                                "The term \u201cvariant\u201d as used herein, is a nucleic acid or protein that differs from a reference nucleic acid or protein (i.e., calmodulin or fragment thereof), but retains essential properties (i.e., biological activity). A typical variant of a polynucleotide differs in nucleotide sequence from another, reference polynucleotide. Changes in the nucleotide sequence may or may not alter the amino acid sequence of a polypeptide encoded by the reference polynucleotide. Nucleotide changes may result in amino acid substitutions, additions, deletions, fusions, and/or truncations in the polypeptide encoded by the reference sequence.",
+                                "The term \u201cvector\u201d is used herein to refer to a nucleic acid molecule capable of transferring or transporting another nucleic acid molecule. The transferred nucleic acid is generally linked to, for example, the vector nucleic acid molecule. A vector may include sequences that direct autonomous replication in a cell, or may include sequences sufficient to allow integration into cellular DNA. Useful vectors include, for example, plasmids (e.g., DNA plasmids or RNA plasmids), transposons, cosmids, bacterial or yeast artificial chromosomes and viral vectors. Useful viral vectors include, for example, adenoviruses, retroviruses, particularly replication defective retroviruses, and lentiviruses.",
+                                "The present disclosure provides novel genetically encoded, calcium-based biosensors for reporting cell death. Rather than detecting a particular pathway of cell death (e.g., apoptosis or necrosis), the genetically encoded death indicators (GEDI) detect the ability of a cell to maintain Ca2+ homeostasis. The GEDIs disclosed herein have low toxicity, are well tolerated by cells, and can be used in a variety of in vitro and in vivo applications including, for example, time-lapse microscopy. These characteristics enable GEDIs to be useful for longitudinal imaging studies of cell death over the course of weeks and months and gives researchers a tool to study the process of cell death (e.g., neurodegeneration) in tissue, cell culture, and in vivo."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define \"about\"",
+                                "define \"acceptable\", \"effective\", or \"sufficient\"",
+                                "define \"and/or\"",
+                                "define \"comprising\"",
+                                "define \"consisting essentially of\"",
+                                "define \"consisting of\"",
+                                "define \"isolated\"",
+                                "define \"modified\"",
+                                "define \"nucleic acid\"",
+                                "define \"recombinant nucleic acid\"",
+                                "define \"operably linked\"",
+                                "define \"protein\"",
+                                "define \"sequence identity\"",
+                                "define \"variant\"",
+                                "define \"vector\"",
+                                "provide additional definitions"
+                            ],
+                            "num_characters": 8156,
+                            "outline_medium": [
+                                "define \"about\"",
+                                "define \"acceptable\", \"effective\", or \"sufficient\"",
+                                "define \"and/or\"",
+                                "define \"comprising\", \"consisting essentially of\", and \"consisting of\"",
+                                "define \"isolated\"",
+                                "define \"modified\" and \"modification\"",
+                                "define \"nucleic acid\" and \"recombinant nucleic acid\"",
+                                "define various other terms"
+                            ],
+                            "outline_short": [
+                                "define terms used in patent, including \"about\", \"acceptable\", and \"comprising\"",
+                                "define \"isolated\" in reference to molecules and cells",
+                                "define \"modified\", \"nucleic acid\", and \"recombinant nucleic acid\"",
+                                "define \"protein\", \"sequence identity\", \"variant\", and \"vector\""
+                            ]
+                        },
+                        {
+                            "title": "Vectors",
+                            "paragraphs": [
+                                "Selection of the appropriate vector and promoter for use in the GEDIs of the present disclosure is well within the level of ordinary skill in the art. The expression vector may also contain a ribosome binding site for translation initiation and a transcription terminator. The expression vector may also include appropriate sequences for amplifying expression.",
+                                "Examples of suitable mammalian expression vectors include, but are not limited to: recombinant viruses, nucleic acid vectors, such as plasmids, bacterial artificial chromosomes, yeast artificial chromosomes, human artificial chromosomes, cDNA, cRNA, and polymerase chain reaction (PCR) product expression cassettes.",
+                                "Suitable viral vectors include, but are not limited, viral vectors based on retroviruses (including lentiviruses), adenoviruses, adeno-associated viruses, and episomal vectors. An example of a suitable retrovirus-based vector is a vector based on murine moloney leukemia virus (MMLV); however, other recombinant retroviruses may also be used, e.g., Avian Leukosis Virus, Bovine Leukemia Virus, Murine Leukemia Virus (MLV), Mink-Cell focus-Inducing Virus, Murine Sarcoma Virus, Reticuloendotheliosis virus, Gibbon Abe Leukemia Virus, Mason Pfizer Monkey Virus, or Rous Sarcoma Virus (e.g., U.S. Pat. No. 6,333,195).",
+                                "In other cases, the retrovirus-based vector is a lentivirus-based vector, (e.g., Human Immunodeficiency Virus-1 (HIV-1), Simian Immunodeficiency Virus (SIV) or Feline Immunodeficiency Virus (FIV)). Johnston et al. (1999), Journal of Virology, 73(6):4991-5000 (FIV); Negre et al. (2002) Current Topics in Microbiology and Immunology, 261:53-74 (SIV); Naldini et al. (1996) Science, 272:263-267 (HIV).",
+                                "The recombinant retrovirus may comprise a viral polypeptide (e.g., retroviral env) to aid entry into the target cell. Such viral polypeptides are well-established in the art, for example, U.S. Pat. No. 5,449,614. The viral polypeptide may be an amphotropic viral polypeptide, for example, amphotropic env, which aids entry into cells derived from multiple species, including cells outside of the original host species. The viral polypeptide may be a xenotropic viral polypeptide that aids entry into cells outside of the original host species. In some embodiments, the viral polypeptide is an ecotropic viral polypeptide, for example, ecotropic env, which aids entry into cells of the original host species.",
+                                "Examples of viral polypeptides capable of aiding entry of retroviruses into cells include but are not limited to: MMLV amphotropic env, MMLV ecotropic env, MMLV xenotropic env, vesicular stomatitis virus-g protein (VSV-g), HIV-1 env, Gibbon Ape Leukemia Virus (GALV) env, RD114, FeLV-C, FeLV-B, MLV 10Al env gene, and variants thereof, including chimeras. Yee et al. (1994) Methods Cell Biol., Pt A:99-112 (VSV-G); U.S. Pat. No. 5,449,614. In some cases, the viral polypeptide is genetically modified to promote expression or enhanced binding to a receptor.",
+                                "In general, a recombinant virus is produced by introducing a viral DNA or RNA construct into a producer cell. In some cases, the producer cell does not express exogenous genes. In other cases, the producer cell is a \u201cpackaging cell\u201d comprising one or more exogenous genes, e.g., genes encoding one or more gag, pol, or env polypeptides and/or one or more retroviral gag, pol, or env polypeptides. The retroviral packaging cell may comprise a gene encoding a viral polypeptide, e.g., VSV-g that aids entry into target cells. In some cases, the packaging cell comprises genes encoding one or more lentiviral proteins, e.g., gag, pol, env, vpr, vpu, vpx, vif, tat, rev, or nef. In some cases, the packaging cell comprises genes encoding adenovirus proteins such as E1A or E1B or other adenoviral proteins. For example, proteins supplied by packaging cells may be retrovirus-derived proteins such as gag, pol, and env; lentivirus-derived proteins such as gag, pol, env, vpr, vpu, vpx, vif, tat, rev, and nef; and adenovirus-derived proteins such as E1A and E1B. In many examples, the packaging cells supply proteins derived from a virus that differs from the virus from which the viral vector derives.",
+                                "Packaging cell lines include but are not limited to any easily-transfectable cell line. Packaging cell lines can be based on 293T cells, NIH3T3, COS or HeLa cell lines. Packaging cells are often used to package virus vector plasmids deficient in at least one gene encoding a protein required for virus packaging. Any cells that can supply a protein or polypeptide lacking from the proteins encoded by such virus vector plasmid may be used as packaging cells. Examples of packaging cell lines include but are not limited to: Platinum-E (Plat-E), Platinum-A (Plat-A), BOSC 23 (ATCC CRL 11554) and Bing (ATCC CRL 11270). Morita et al. (2000) Gene Therapy 7(12):1063-1066; Onishi et al. (1996) Experimental Hematology, 24:324-329; U.S. Pat. No. 6,995,009. Commercial packaging lines are also useful, e.g., Ampho-Pak 293 cell line, Eco-Pak 2-293 cell line, RetroPack PT67 cell line, and Retro-X Universal Packaging System (all available from Clontech).",
+                                "The retroviral construct may comprise: a promoter, a multi-cloning site, and/or a resistance gene. The retroviral construct may also comprise a packaging signal (e.g., a packaging signal derived from the MFG vector; a psi packaging signal). Examples of some retroviral constructs known in the art include but are not limited to: pMX, pBabeX or derivatives thereof. Onishi et al. (1996) Experimental Hematology, 24:324-329. In some cases, the retroviral construct is a self-inactivating lentiviral vector (SIN) vector. Miyoshi et al. (1998) J. Virol. 72(10):8150-8157. In some cases, the retroviral construct is LL-CG, LS-CG, CL-CG, CS-CG, CLG or MFG. Miyoshi et al. (1998) J. Virol. 72(10):8150-8157; Onishi et al. (1996) Experimental Hematology, 24:324-329; Riviere et al. (1995) Proc. Natl. Acad Sci., 92:6733-6737. Virus vector plasmids (or constructs), include: pMXs, pMxs-IB, pMXs-puro, pMXs-neo (pMXs-IB is a vector carrying the blasticidin-resistant gene instead of the puromycin-resistant gene of pMXs-puro) Kimatura et al. (2003) Experimental Hematology 31: 1007-1014; MFG Riviere et al. (1995) Proc. Natl. Acad. Sci., 92:6733-6737; pBabePuro; Morgenstern et al. (1990) Nucleic Acids Research 18:3587-3596; LL-CG, CL-CG, CS-CG, CLG Miyoshi et al. (1998) J. Vir. 72:8150-8157 and the like as the retrovirus system, and pAdex1 Kanegae et al. (1995) Nucleic Acids Research 23:3816-3821 and the like as the adenovirus system. In exemplary embodiments, the retroviral construct comprises blasticidin (e.g., pMXs-IB), puromycin (e.g., pMXs-puro, pBabePuro); or neomycin (e.g., pMXs-neo). Morgenstern et al. (1990) Nucleic Acids Research 18:3587-3596.",
+                                "Methods of producing recombinant viruses from packaging cells and their uses are well established; see, e.g., U.S. Pat. Nos. 5,834,256; 6,910,434; 5,591,624; 5,817,491; 7,070,994; and 6,995,009. Many methods begin with the introduction of a viral construct into a packaging cell line. The viral construct may be introduced into a host fibroblast by any method known in the art, including but not limited to: a calcium phosphate method, a lipofection method (e.g., Feigner et al. (1987) Proc. Natl. Acad. Sci. 84:7413-7417), an electroporation method, microinjection, Fugene transfection, nucleofection and the like, and any method described herein.",
+                                "Methods of producing recombinant viruses from packaging cells and their uses are well established; see, e.g., U.S. Pat. Nos. 5,834,256; 6,910,434; 5,591,624; 5,817,491; 7,070,994; and 6,995,009. Many methods begin with the introduction of a viral construct into a packaging cell line. The viral construct may be introduced into a host fibroblast by any method known in the art, including but not limited to: a calcium phosphate method, a lipofection method (e.g., Feigner et al. (1987) Proc. Natl. Acad. Sci. 84:7413-7417), an electroporation method, microinjection, Fugene transfection, nucleofection and the like, and any method described herein.",
+                                "The isolated nucleic acids can be introduced into a cell using a variety of well-known techniques, such as non-viral based transfection of the cell. In an exemplary aspect a construct is incorporated into a vector and introduced into a cell. Introduction into the cell may be performed by any non-viral based transfection method known in the art, such as, but not limited to, electroporation, calcium phosphate mediated transfer, nucleofection, sonoporation, heat shock, magnetofection, liposome mediated transfer, microinjection, microprojectile mediated transfer (nanoparticles), cationic polymer mediated transfer (DEAE-dextran, polyethylenimine, polyethylene glycol (PEG) and the like, or cell fusion. Other methods of transfection include transfection reagents such as Lipofectamine\u2122, Dojindo Hilymax\u2122, Fugene\u2122, jetPEI\u2122, Effectene\u2122, and DreamFect\u2122.",
+                                "Expression Control Sequences",
+                                "In some embodiments, the nucleotide sequence includes at least one expression control sequence. An expression control sequence is a nucleotide sequence that directs transcription of the nucleic acid of interest. Non-limiting examples of expression control sequences include promoters, enhancers, and silencers. An expression control sequence can be native or heterologous. A native expression sequence is derived from the same organism, species or strain as the nucleic acid being expressed. A heterologous expression control sequence is derived from a different organism, species or stain as the nucleic acid sequence being expressed.",
+                                "The expression control sequence can be a promoter. In some embodiments, the promoter is constitutively active, such as CMV, HSV1-TK, SV40, EF-1\u03b1, \u03b2-actin, phosphoglycerol kinase (PGK). In other embodiments, the promoter is inducible, such as those containing Tet-operator elements.",
+                                "Non-limiting examples of suitable eukaryotic promoters (promoters functional in a eukaryotic cell) include CMV, CMV immediate early, HSV thymidine kinase, early and late SV40, long terminal repeats (LTRs) from retrovirus, and mouse metallothionein-1.",
+                                "Specific gene expression in a selected cell type can be achieved at the level of targeted transcription through the use of tissue/cell-specific promoters and/or enhancers. Cell-specific promoters are one of the primary means through which specialized cellular functions are limited to a particular differentiated cell type. The ability of these promoters to direct transcription of associated genes is regulated, in part, by the intracellular concentrations and activities of transcription factors in the specific type of cell. Due to their specificity, cell-specific promoters may provide a level of transcription of a transgene that is acceptable to cellular metabolism, thus avoiding the exhaustion of protein synthesis materials and over-accumulation of transgene products that may be toxic to transfected cells. Cell-specific promoters can also be advantageous as they may reduce the chance of activating host cell defense machinery and are typically less sensitive to cytokine-induced promoter inactivation than other promoters, for example, viral promoters.",
+                                "In some embodiments, the promoter is a tissue specific promoter, for example a neuron specific promoter. Non-limiting examples of suitable neuron specific promoters include synapsin I (SYN), calcium/calmodulin-dependent protein kinase II, tubulin alpha I, neuron-specific enolase and platelet-derived growth factor beta chain promoters and hybrid promoters by fusing cytomegalovirus enhancer (E) to those neuron-specific promoters.",
+                                "In some embodiments, promoters that are capable of conferring cardiac specific expression will be used. Non-limiting examples of suitable cardiac specific promoters include desmin (Des), alpha-myosin heavy chain (\u03b1-MHC), myosin light chain 2 (MLC-2), cardiac troponin T (cTnT) and cardiac troponin C (cTnC).",
+                                "In some embodiments, an enhancer is operably linked to the promoter. An enhancer comprises at least one nucleotide sequence capable of increasing transcriptional activity of the transgene. Generally, enhancers and promoters act to increase and/or activate transcription once bound by appropriate molecules such as transcription factors. For various enhancers which may be used, transcription factor binding sites may be known or identified by one of ordinary skill using methods known in the art, for example by DNA footprinting, gel mobility shift assays, and the like. The factors may also be predicted on the basis of known consensus sequence motifs.",
+                                "Detectable Marker",
+                                "In some embodiments, the isolated nucleic acid sequences (e.g., GEDIs) of the present disclosure have been optimized to brightly signal (e.g., fluoresce) only when the Ca2+ level within the cell is equivalent, or substantially equivalent, to extracellular Ca2+ levels, which make them ideal sensors of cell death.",
+                                "In many, if not all, cell types, the ability to maintain a gradient of Ca2+ between the inside and outside of the cell is essential to life. Once the Ca2+ level inside the cell is equivalent, or nearly equivalent, to that outside the cell that cell can be classified as dead.",
+                                "The fluorescent detectable signals provide extremely robust fluorescence signal, facilitating the use of the GEDIs disclosed herein for use on even the most basic microscopy setup.",
+                                "In some embodiments, the isolated nucleic acid sequence comprises at least one detectable marker that facilitates identification or selection of cells that are undergoing a specific cellular process (e.g., cell death or cell stress). The marker may be detectable by itself (e.g., radioisotope or fluorescent label) or, in the case of an enzymatic marker, may catalyze chemical alteration of a substrate compound or composition which is detectable. The markers can be suitable for small scale detection or more suitable for high-throughput screening. As such, suitable markers include, but are not limited to, radioisotopes, fluorochromes, chemiluminescent compounds, dyes, and proteins, including enzymes. A response that is simply detected generally comprises a response whose existence merely is confirmed, whereas a response that is quantified generally comprises a response having a quantifiable (e.g., numerically reportable) value such as an intensity, polarization, and/or other property. In luminescence or fluorescence assays, the detectable response may be generated directly using a luminophore or fluorophore associated with an assay component actually involved in binding, or indirectly using a luminophore or fluorophore associated with another (e.g., reporter or indicator component).",
+                                "In one embodiment, the isolated nucleic acid sequence comprises two detectable markers (e.g., a first detectable marker and a second detectable marker). Two detectable markers allows for pseudo-ratiometric standardization and assessing cellular morphology. In some embodiments, the first detectable marker, the second detectable marker, or both comprise a fluorescent label. In some embodiments, the first detectable maker, the second detectable marker, or both comprise a luminescent probe, for example, aequorin or luciferase. In one embodiment, when two (or more) detectable markers are used, the first detectable marker and the second detectable marker are distinguishable from each other.",
+                                "Examples of suitable fluorescent detectable markers include, but are not limited to, genes encoding fluorescent proteins, e.g., green fluorescent protein (GFP), enhanced-GFP (EGFP), Ds-Red (DsRed: Discosoma sp. red fluorescent protein (RFP); Bevis et al. (2002) Nat. Biotechnol. 20(11):83-87), yellow fluorescent protein (e.g., Venus), mCherry, mApple, blue-green emission tyrosine-derived chromophore (GEM), cyanofluorescent protein (e.g., Turquoise), variants thereof, and the like.",
+                                "In one embodiment the isolated nucleic acid sequence comprises RGEDI-P2A-X, wherein X represents a detectable fluorescent marker that is distinguishable from the red death indicator RGEDI, for example, EGFP. In another embodiment, the isolated nucleic acid sequence comprises GGEDI-P2A-X, wherein X represents a detectable fluorescent marker that is distinguishable from the green death indicator GGEDI, for example, mApple. In another embodiment, the isolated nucleic acid sequence comprises RGEDI-P2A-X, wherein X represents a detectable fluorescent marker that is distinguishable from the red death indicator RGEDI, for example, TagBFP2. In yet another embodiment, the isolated nucleic acid sequence comprises GEM-GEDI-P2A-X, wherein X represents a detectable fluorescent marker that is distinguishable from the green to blue death indicator GEM-GEDI, for example, Venus. In still another embodiment the isolated nucleic acid sequence comprises low-affinity red fluorescent (LAR)-GEDI-P2A-X, wherein X represents a detectable fluorescent marker that is distinguishable from the red death indicator LAR-GEDI, for example, EGFP.",
+                                "In some embodiments, at least one detectable marker can be proteins conferring resistance to a selection agent, e.g., a neomycin resistance gene, a puromycin resistance gene, a blasticidin resistance gene, and the like.",
+                                "Calcium Binding Motif",
+                                "In some embodiments, the isolated nucleic acid GEDIs of the present disclosure comprise a modified calcium binding motif.",
+                                "In one embodiment, the modified calcium binding motif comprises an optimized single fluorescent protein Ca2+ indicator, GCaMP. GCaMP consists of circularly permuted green fluorescent protein (cpGFP) tagged to Calmodulin and an M13 protein. Calmodulin (i.e., CALcium MODULated proteIN) is found in the cytoplasm and acts as an intermediary protein that senses Ca2+ levels and relays signals to various calcium-sensitive enzymes, ion channels and other proteins. When Ca2+ concentration increases in a cell, the calmodulin component of GCaMP binds to Ca2+ and causes a conformational change in the cpGFP that result in increased fluorescence.",
+                                "GCaMP variants can be constructed by any method known in the field, including, for example, by PCR of the coding region using mutagenic primers and/or site-directed mutagenesis at selected positions. Non-limiting examples of GCaMP variants include GCaMP1, GCaMP2, GCaMP3, GCaMP4, GCaMP5, and GCaMP6. In some embodiments, one or more GCaMP variants are expressly excluded.",
+                                "In one embodiment, the modified calcium binding motif comprises a nucleotide sequence having at least about 60%, at least about 65%, at least about 70%, at least about 75%, at least about 80%, at least about 85%, at least about 90%, at least about 95%, at least about 99%, or 100% nucleotide sequence identity of SEQ ID NO. 1 or SEQ ID NO. 2.",
+                                "In some embodiments, the modified calcium binding motif comprises a nucleotide sequence having at least about 90% nucleotide sequence identity to a nucleotide region of SEQ ID NO. 1, wherein the nucleotide region comprises about 100, about 200, about 300, about 400, about 500, about 600, about 700, about 800, about 900, about 1000, about 1100, about 1200, or about 1300 contiguous nucleotides of SEQ ID NO. 1.",
+                                "In some embodiments, the modified calcium binding motif comprises a nucleotide sequence having at least about 90% nucleotide sequence identity to a nucleotide region of SEQ ID NO. 2, wherein the nucleotide region comprises about 100, about 200, about 300, about 400, about 500, about 600, about 700, about 800, about 900, about 1000, about 1100, or about 1200 contiguous nucleotides of SEQ ID NO. 2.",
+                                "In one embodiment, the modified calcium binding motif comprises a polypeptide sequence having at least about 60%, at least about 65%, at least about 70%, at least about 75%, at least about 80%, at least about 85%, at least about 90%, at least about 95%, at least about 99%, or 100% nucleotide sequence identity of SEQ ID NO. 3 or SEQ ID NO. 4.",
+                                "Any calcium binding motif domains are contemplated by the present disclosure. In some embodiments, the calcium binding motif comprises at least 1, at least 2, at least 3, at least 4, at least 5, or more EF-hand motifs. In some embodiments, the modified calcium binding motif comprises Troponin C (TnC).",
+                                "The calcium binding motifs of the present disclosure can be modified to provide an optimized signal (e.g., fluoresce) only when the Ca2+ level within the cell is equivalent, or substantially equivalent, to extracellular Ca2+ levels, which make them ideal sensors of cell death.",
+                                "In many, if not all, cell types, the ability to maintain a gradient of C2+ between the inside and outside of the cell is essential to life. Once the Ca2+ level inside the cell is equivalent, or nearly equivalent, to that outside the cell that cell can be classified as dead.",
+                                "In some embodiments, the calcium binding motifs can be modified to reduce its Ca2+ binding affinity. In some embodiments that binding affinity has been reduced by at least a factor of about 5, about 10, about 20, about 50, about 100, about 200, about 300, about 400, about 500, about 600, about 700, about 800, about 900, about 1000, about 1500, about 2000, about 2500, or more compared to naturally occurring motif.",
+                                "In some embodiments, the Ca2t binding affinity of calmodulin is reduced by modifying (e.g., addition, deletion or substitution) of at least one amino acid of SEQ ID NO. 5. In some embodiments, the Ca2+ binding affinity of calmodulin is reduced by modifying (e.g., addition, deletion or substitution) more than 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10 amino acids of SEQ ID NO. 5. In some embodiments, the substitution of SEQ ID NO. 5 comprises at least one of E11K, T26G, E31A, E31Q, E31D, L36M, Q41L, E67D, K751, E84R, E87K, F92W, S101D, E104Q, E104D, D133E, E140D, or any combination thereof. In some embodiments, the modified calcium binding motif of SEQ ID NO. 5 comprises any one of the amino acid substitutions or combination of substitutions of FIG. 15. In some embodiments, the modified calcium binding motif of SEQ ID NO. 5 comprises an amino acid substitution or combination of substitutions selected from the group consisting of E31D, E31D/F92W/D133E, E31D/F92W/E104D/D133E, E31D/E67D/F92W/E104D/D133E, E31D/F92W/E104D/D133E. In one embodiment, the modified calcium binding motif comprises substitutions of E31D/F92W/E104D/D133E of SEQ ID NO. 5.",
+                                "As used herein dissociation constant (Kd) refers to the binding affinity of components to one another, for example Ca2+ to a calcium binding protein, such as calmodulin or troponin C. In some embodiments, the isolated nucleic acid sequence has a Kd greater than 1 \u03bcM, greater than 10 \u03bcM, greater than 100 \u03bcM, greater than 200 \u03bcM, greater than 250 \u03bcM greater than 300 \u03bcM, greater than 350 \u03bcM, greater than 400 \u03bcM, greater than 450 \u03bcM greater than 500 \u03bcM, greater than 550 \u03bcM, greater than 600 \u03bcM, greater than 650 \u03bcM greater than 700 \u03bcM, greater than 750 \u03bcM, greater than 800 \u03bcM, greater than 850 \u03bcM, greater than 900 \u03bcM, greater than 950 \u03bcM, or more.",
+                                "In one embodiment, the isolated nucleic acid sequences comprise a localization sequence, for example, a nuclear localization sequence, an endoplasmic reticulum localization sequence, a mitochondrial localization sequence, or any combination thereof. In one embodiment, the isolated nucleic acid sequences comprise a localization sequence (e.g., a nuclear localization sequence), for example, a nucleic acid sequence according to SEQ ID NO. 11. In one embodiment, the localization sequence (e.g., a nuclear localization sequence) is added to the 3\u2032 of the GEDI (e.g., RGEDI) and/or of the detectable fluorescent marker (e.g., EGFP). In one embodiment, the localization sequence (e.g., a nuclear localization sequence) is added to the 5\u2032 of the GEDI (e.g., RGEDI) and/or of the detectable fluorescent marker (e.g., EGFP). In one embodiment, the isolated nucleic acid sequences expressly exclude a localization sequence, for example, a nuclear localization sequence, an endoplasmic reticulum localization sequence, a mitochondrial localization sequence, or any combination thereof.",
+                                "Non-limiting examples of suitable GEDI constructs comprise nucleotide sequences having at least about 60%, at least about 65%, at least about 70%, at least about 75%, at least about 80%, at least about 85%, at least about 90%, at least about 95%, at least about 99%, or 100% nucleotide sequence identity of SEQ ID NOs. 6, 7, 8, 9, or 10. SEQ ID NO. 10 has a tandem (3\u00d7) TagBFP2 sequence to increase intensity of the BFP fluorescence. SEQ ID NO. 7 (Hsyn1:RGEDI-P2a-TagBFP2) works but, at least in some tests, had a lower efficiency as compared to SEQ ID NO. 10 (Hsyn1:RGEDI-P2a-3xTagBFP2)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce vectors",
+                                "describe expression vectors",
+                                "list examples of mammalian expression vectors",
+                                "describe viral vectors",
+                                "list examples of viral vectors",
+                                "describe retrovirus-based vectors",
+                                "describe lentivirus-based vectors",
+                                "describe recombinant retrovirus",
+                                "describe viral polypeptides",
+                                "list examples of viral polypeptides",
+                                "describe production of recombinant virus",
+                                "describe packaging cells",
+                                "list examples of packaging cell lines",
+                                "describe retroviral construct",
+                                "list examples of retroviral constructs",
+                                "describe self-inactivating lentiviral vector",
+                                "describe methods of producing recombinant viruses",
+                                "describe introduction of viral construct into packaging cell",
+                                "list methods of introducing viral construct into host fibroblast",
+                                "describe isolated nucleic acids",
+                                "describe non-viral based transfection methods",
+                                "describe expression control sequences",
+                                "describe promoters",
+                                "describe tissue-specific promoters",
+                                "describe detectable marker",
+                                "introduce cell death detection",
+                                "importance of calcium gradient",
+                                "describe fluorescent detectable signals",
+                                "introduce isolated nucleic acid sequence",
+                                "describe detectable markers",
+                                "introduce radioisotopes and fluorochromes",
+                                "describe luminescence or fluorescence assays",
+                                "introduce pseudo-ratiometric standardization",
+                                "describe fluorescent proteins",
+                                "introduce RGEDI-P2A-X",
+                                "describe calcium binding motif",
+                                "introduce GCaMP",
+                                "describe GCaMP variants",
+                                "introduce modified calcium binding motif",
+                                "describe nucleotide sequence identity",
+                                "introduce polypeptide sequence identity",
+                                "describe EF-hand motifs",
+                                "introduce Troponin C",
+                                "describe optimized signal",
+                                "introduce reduced Ca2+ binding affinity",
+                                "describe modified calmodulin",
+                                "introduce dissociation constant",
+                                "describe localization sequence"
+                            ],
+                            "num_characters": 24625,
+                            "outline_medium": [
+                                "list suitable mammalian expression vectors",
+                                "describe viral vectors",
+                                "detail retrovirus-based vectors",
+                                "explain lentivirus-based vectors",
+                                "introduce packaging cells",
+                                "describe packaging cell lines",
+                                "outline retroviral construct components",
+                                "provide examples of retroviral constructs",
+                                "describe methods of producing recombinant viruses",
+                                "introduce non-viral based transfection methods",
+                                "explain expression control sequences",
+                                "describe detectable markers",
+                                "introduce cell death detection",
+                                "describe fluorescent detectable signals",
+                                "motivate detectable markers",
+                                "describe types of detectable markers",
+                                "introduce calcium binding motif",
+                                "describe GCaMP variants",
+                                "describe modified calcium binding motif",
+                                "motivate reducing Ca2+ binding affinity",
+                                "describe modifying calmodulin",
+                                "introduce localization sequence",
+                                "describe GEDI constructs"
+                            ],
+                            "outline_short": [
+                                "list suitable mammalian expression vectors",
+                                "describe viral vectors and their components",
+                                "explain production of recombinant viruses from packaging cells",
+                                "summarize methods of introducing viral constructs into host cells",
+                                "describe expression control sequences and their functions",
+                                "introduce detectable markers and their uses",
+                                "introduce cell death detection",
+                                "describe fluorescent detectable signals",
+                                "motivate calcium binding motif",
+                                "describe modified calcium binding motif",
+                                "describe GEDI constructs"
+                            ]
+                        },
+                        {
+                            "title": "Cells",
+                            "paragraphs": [
+                                "The present disclosure also provides isolated cells comprising the nucleic acid sequence and/or vectors of an embodiment described herein. The cell can be, for example, a eukaryotic cell or a prokaryotic cell. The cells can be of any appropriate species, e.g., an animal such as a mammal, for example, a canine, an equine, a feline, or a human cell. Suitable cells include, for example, yeast cells (e.g., S. cerevisiae and Candida), bacteria cells (e.g., Neisseria, Streptococcus, Staphylococcus), and plant cells. Non-limiting examples of human cells include, neurons, cardiac cells, fibroblasts, and red blood cells. In one embodiment, the cell is a neural cell, a cardiac cell, a muscle cell, a cancer cell, or a gamete.",
+                                "As used herein \u201cneuron\u201d refers to an animal cell consisting of a cell body and one or more protrusions that extrude from the cell body, i.e., an axon or neurite, and several dendrites, and examples of the neuron may include sensory neurons, motor neurons (motoneuron), and interneurons. In addition, the neuron may include neurons constituting a central nervous system, a brain, brain stem, spinal cord and synaptic regions of the central nervous system and peripheral nervous systems, neurosustentacular cells, glia, and Schwann cells. Neurons may be derived from stem cells, including, for example, embryonic stem cells, induced pluripotent stem cells, or neural stem cells.",
+                                "Cardiac cells refer to any cell present in the heart that provides a cardiac function, such as heart contraction or blood supply, or otherwise serves to maintain the structure of the heart. Cardiac cells as used herein encompass cells that exist in the epicardium, myocardium or endocardium of the heart. Cardiac cells also include, for example, cardiac muscle cells or cardiomyocytes, and cells of the cardiac vasculatures, such as cells of a coronary artery or vein. Other non-limiting examples of cardiac cells include epithelial cells, endothelial cells, fibroblasts, cardiac stem or progenitor cells, cardiac conducting cells and cardiac pacemaking cells that constitute the cardiac muscle, blood vessels and cardiac cell supporting structure. Cardiac cells may be derived from stem cells, including, for example, embryonic stem cells or induced pluripotent stem cells."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define cells",
+                                "specify cell types",
+                                "describe neural cells",
+                                "describe cardiac cells"
+                            ],
+                            "num_characters": 2278,
+                            "outline_medium": [
+                                "define cell types",
+                                "describe cell characteristics"
+                            ],
+                            "outline_short": [
+                                "define cells"
+                            ]
+                        },
+                        {
+                            "title": "Animals",
+                            "paragraphs": [
+                                "Also provided herein are transgenic animals that include the isolated nucleic acid GEDIs disclosed herein. \u201cAnimal\u201d refers to non-human animals, including, mammals, amphibians and birds. Specifically, examples include bovines, felines, guinea pigs, horses, mice, non-human primates, ovines, porcines, rabbits, rats, sheep, zebrafish and the like. As used herein, transgenic animal refers to any animal in which one or more of the cells of the animal contain a heterologous nucleic acid. Methods for making transgenic animals have been described, for example, in Wagner et al. (1981) Proc. Nat. Acad. Sci. USA, 78:5016-5020; Stewart et al. (1982) Science, 217:1046-1048; Constantini et al. (1981) Nature, 294:92-94; Lacy et al. (1983) Cell, 34:343-358; McKnight et al. (1983) Cell, 34:335-341; Brinstar et al. (1983) Nature, 306:332-336; Palmiter et al. (1982) Nature, 300:611-615; Palmiter et al. (1982) Cell, 29:701-710; and Palmiter et al. (1983) Science, 222:809-814. Such methods are also described in U.S. Pat. Nos. 6,175,057; 6,180,849; and 6,133,502.",
+                                "By way of example, the transgenic animal can be created by introducing a nucleic acid into, for example, an embryonic stem cell, an unfertilized egg, a fertilized egg, a spermatozoon or a germinal cell containing a primordial germinal cell thereof, preferably in the embryogenic stage in the development of a non-human mammal (more preferably in the single-cell or fertilized cell stage and generally before the 8-cell phase). The nucleic acid can be introduced by known means, including, for example, the calcium phosphate method, the electric pulse method, the lipofection method, the agglutination method, the microinjection method, the particle gun method, the DEAE-dextran method and other such method. Optionally, the nucleic acid is introduced into a somatic cell, a living organ, a tissue cell or other cell by gene transformation methods. Cells including the nucleic acid may be fused with the above-described germinal cell by a commonly known cell fusion method to create a transgenic animal.",
+                                "For embryonic stem (ES) cells, an ES cell line may be employed, or embryonic cells may be obtained freshly from a host, e.g., mouse, rat, guinea pig, and the like. Such cells are grown on an appropriate fibroblast-feeder layer or grown in the presence of appropriate growth factors, such as leukemia inhibiting factor (LIF). When ES cells have been transformed, they may be used to produce transgenic animals. After transformation, the cells are plated onto a feeder layer in an appropriate medium. Cells containing the construct may be detected by employing a selective medium. After sufficient time for colonies to grow, they are picked and analyzed for the occurrence of homologous recombination or integration of the nucleic acid. Those colonies that are positive may then be used for embryo manipulation and blastocyst injection. Blastocysts are obtained from 4 to 6 week old superovulated females. The ES cells are trypsinized, and the modified cells are injected into the blastocoel of the blastocyst. After injection, the blastocysts are returned to each uterine horn of pseudopregnant females. Females are then allowed to go to term and the resulting litters screened for mutant cells having the construct. By providing for a different phenotype of the blastocyst and the ES cells, chimeric progeny can be readily detected. The chimeric animals are screened for the presence of the nucleic acid, and males and females having the modification are mated to produce homozygous progeny transgenic animals.",
+                                "Induced pluripotent stem cells (iPSCs) may also be employed. The term \u201cinduced pluripotent stem cells\u201d shall be given its ordinary meaning and shall also refer to differentiated mammalian somatic cells (e.g., adult somatic cells, such as skin) that have been reprogrammed to exhibit at least one characteristic of pluripotency. See, for example, Takahashi et al. (2007) Cell 131(5):861-872, Kim et al. (2011) Proc. Natl. Acad. Sci. 108(19): 7838-7843, Sell (2013) Stem Cells Handbook.",
+                                ") In some aspects the disclosure provides, organotypic slice cultures comprising cells having the isolated nucleic acid sequence or vector as described herein. As used herein, the term \u201corganotypic slice culture\u201d refers to sections or explants of tissue which are maintained in culture (Kang (2016) Sci. Rep. 6:28798|DOI: 10.1038/srep28798; Seil (1979) Review in Neuroscience 4:105-177; Gahwiler (1981) J Neurosci Meth 4:329-342; Gahwiler (1984) Neuroscience 11:751-760, Gahwiler (1988) Trends Neurosci 11:484-490; Stoppini et al. (1991) J Neurosci Methods 37:173-182). A skilled artisan can readily employ art known organotypic slice culture methods for use in the present invention.",
+                                "An organotypic brain slice culture refers to sections or explants of brain tissue and can employ sections of whole brain tissue or explants obtained from specific regions of the brain. Any region can be used to generate an organotypic brain slice culture. However, a preferred source of the organotypic brain slice culture is explants obtained from specific regions of the brain, preferably the hippocampus or cortex region."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define animals",
+                                "specify animal types",
+                                "describe transgenic animals",
+                                "explain method for making transgenic animals",
+                                "describe embryonic stem cells",
+                                "describe induced pluripotent stem cells",
+                                "explain method for creating transgenic animals using ES cells",
+                                "describe organotypic slice cultures",
+                                "specify brain regions for organotypic slice cultures",
+                                "describe use of organotypic slice cultures"
+                            ],
+                            "num_characters": 5171,
+                            "outline_medium": [
+                                "define transgenic animals",
+                                "describe methods for making transgenic animals",
+                                "introduce embryonic stem cells",
+                                "describe gene transformation methods",
+                                "introduce induced pluripotent stem cells"
+                            ],
+                            "outline_short": [
+                                "define animals",
+                                "describe transgenic animals"
+                            ]
+                        },
+                        {
+                            "title": "Methods of Use",
+                            "paragraphs": [
+                                "Also provided are methods for monitoring calcium flux in a cell comprising isolated nucleic acid as described herein comprising: measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; and comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio.",
+                                "Also provided are methods for monitoring cell death in a cell comprising isolated nucleic acid described herein comprising: measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and determining whether the cell is dead or alive based on the signal intensity ratio.",
+                                "Also provided are methods of screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in a cell comprising: contacting a cell comprising the isolated nucleic acid described herein with the agent; measuring the signal from the first detectable marker to generate a first signal intensity; measuring the signal from the second detectable marker to generate a second signal intensity; comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and determining whether the agent is capable causing an intracellular calcium concentration fluctuation based the signal intensity ratio.",
+                                "In some embodiments, the methods for monitoring cell death, monitoring calcium flux, and/or screening for an agents in a cell comprise use of optical means by, for example, a microscope, a spectrophotometer, a fluorimeter, a cooled charge-coupled device (CCD) imager, a fluorescence activated cell sorter (FACS). Non-limiting examples of microscopes useful for the methods described herein include inverted microscopes, confocal microscopes, including spinning disk confocal and scanning confocal, and the like. In one embodiment, automated time-lapse confocal microscopy is used to detect Ca2+ transients, for example, during neurodegeneration. In some embodiments, the method uses epifluorescence microscopy, for example, as shown in FIG. 17 and FIG. 19.",
+                                "In some embodiments, the method is a high-throughput method, automated methods, or both. In some embodiments, the method is an automated time lapse as described in Arrasate et al. (2014) Nature 431:805-810. In some embodiments the methods utilize in vivo imaging techniques.",
+                                "In some embodiments, a signal intensity of greater than 0.001, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0, or greater indicates the cell is dead. In one embodiment, a signal intensity ratio of greater than 0.05 indicates the cell is dead. In some embodiments, it is contemplated that different imaging setups will likely report different relative GEDI signal intensity ratios, necessitating a control experiment to empirically determine the appropriate GEDI signal intensity ratio. In some embodiments, a signal intensity ratio is empirically determined by, for example, inducing cell death and finding dead cells and live cells based on morphological markers or using a complimentary acute live/dead marker on GEDI expressing cells (e.g., TUNEL stain or PhiPhiLux) and using signals from those populations of cells to generate a signal intensity ratio. For example, the signal intensity ratio can be determined by taking the average signal from about 10 dead cells less the average signal from about 10 live cells. In some embodiments the signal intensity ratio is determined using the formula:",
+                                "signal intensity ratio=([(GEDI dead ratio)\u2212(GEDI live ratio)]*0.25)+[avg.GEDI live].",
+                                "In some embodiments, cell death is apoptosis, necrosis, autophagy, necroptosis, or any combination thereof:",
+                                "In some embodiments, the first intensity signal detects cell morphology. In other embodiments, the second intensity signal detects cell morphology.",
+                                "In some embodiments, the first intensity signal detects calcium binding to the calcium binding motif. In other embodiments, the second intensity signal detects calcium binding to the calcium binding motif.",
+                                "In some embodiments, cell death is determined when Ca2+ levels inside the cell are equivalent to Ca2+ levels outside the cell."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe method for monitoring calcium flux",
+                                "describe method for monitoring cell death",
+                                "describe method for screening for agents",
+                                "specify optical means for methods",
+                                "describe use of microscopes",
+                                "describe high-throughput and automated methods",
+                                "specify signal intensity ratios for cell death",
+                                "describe empirical determination of signal intensity ratios",
+                                "specify types of cell death"
+                            ],
+                            "num_characters": 4526,
+                            "outline_medium": [
+                                "describe method for monitoring calcium flux",
+                                "describe method for monitoring cell death",
+                                "describe method for screening for agents",
+                                "describe optical means for detection"
+                            ],
+                            "outline_short": [
+                                "describe methods for monitoring calcium flux and cell death",
+                                "describe methods for screening for agents"
+                            ]
+                        },
+                        {
+                            "title": "Kits",
+                            "paragraphs": [
+                                "Also provided herein are kits comprising one or more of the isolated nucleic acids or vectors disclosed herein, any of the cells or organotypic slice cultures disclosed herein, or one or more of the non-human animals disclosed herein. In some embodiments, the kit further comprises instructions for monitoring calcium flux, monitoring cell death, and/or screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in a cell. In some embodiments, the kit further comprises instructions for monitoring calcium flux, monitoring cell death, and/or screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in an organotypic slice culture. In some embodiments, the kit further comprises instructions for monitoring calcium flux, monitoring cell death, and/or screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in a non-human animal."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe kits and their components"
+                            ],
+                            "num_characters": 961,
+                            "outline_medium": [
+                                "describe kit components and instructions"
+                            ],
+                            "outline_short": [
+                                "describe kits"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce purpose of detailed description",
+                        "explain organization of detailed description",
+                        "discuss conventional techniques used in practice",
+                        "provide references for conventional techniques",
+                        "explain use of numerical designations",
+                        "discuss interpretation of singular and plural forms",
+                        "introduce definitions of terms used",
+                        "define \"about\" and its usage",
+                        "define \"comprising\" and its usage"
+                    ],
+                    "num_characters": 4595,
+                    "outline_medium": [
+                        "introduce scope of invention",
+                        "describe conventions used in description",
+                        "outline structure of description",
+                        "provide references for conventional techniques"
+                    ],
+                    "outline_short": [
+                        "provide context and scope of invention",
+                        "outline conventions and definitions used in patent"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1: Genetically Encoded Calcium Indicators (GECIs) for Monitoring Cell Death",
+                            "paragraphs": [
+                                "Genetically Encoded Calcium Indicators (GECI) have conventionally been used in the field of neuroscience in live imaging to detect Ca2+ transients triggered by synaptic input and action potential firing. Surprisingly, through time-lapse imaging over long periods of time and quantitative data analysis, it was discovered that GCaMP could be used in detecting neuronal cell death. When a cell dies, its membrane invariably breaks down, allowing extracellular Ca2+ ions to rush into the cell and disrupt the Ca2+ buffering and homeostasis within the neuron and that is required for neuronal function. Nevertheless, cellular proteins and debris remain intact and within the membrane shell long after the membrane integrity is lost. It was also discovered that biosensors, such as GFP and GCaMP remain functional within the debris, emitting fluorescence long after the cell is dead. Therefore, it was contemplated that a large increase in GCaMP when a cell dies could be used to distinguish between live and dead cells.",
+                                "Rat primary cortical neuron cultures were prepared from embryos (embryonic day 16-18) and co-transfected using Lipofectamine2000 (ThermoFisher Scientific, Carlsbad, Calif., USA) with 150 ng/well of hSyn1:mRuby-P2a-GCaMP (Addgene #50943) and either Httex1-Q27 or Httex1-Q97 (known to induce neurodegeneration) in a 96-well format. Robotic microscopy was used to image and track individual neurons once every 24 hours for 6 days as previously described by Arraste et al., (2004) starting at 5 days in vitro (DIV). FIG. 17A. The GCaMP intensity was detected and plotted as a percentage increase from baseline (t=0) (i.e., delta GCaMP/baseline GCaMP). Using the morphology as a readout, the time of death was determined for each neuron. FIG. 17B shows Neuron 1 was determined dead at approximately 24 hours, Neuron 2 remained alive throughout the duration of the time course, and Neuron 3 was determined dead at approximately 72 hours.",
+                                "To examine the changes in signal increase as a cell dies, rat primary cortical neurons expressing GCaMP6f, mRuby, and HttEx1-Q97 were examined overtime. As shown in FIG. 1A, as neurons die there is an increase in GCaMP6f expression. Using time lapse imaging, it was observed that 0 out of 94,106 dead rat primary cortical neurons examined regenerated after elevated GEDI signal, indicating elevated GEDI signal is terminal. In addition, the ratio of GCaMP6f/mRuby signal from rat primary cortical neurons expressing HttEx1-Q97 and HttEx1-Q25 at 0, 24, 48, 72, 96, and 120 hours post transfection was determined. FIG. 1B, the horizontal line at 0.75 separates dead from live neurons. Finally, data showed that HttEx1-Q97 is more toxic than HttEx1-Q25. FIG. 18A shows a single neuron expressing Httex1-Q97 that is alive at 0 hrs (5 DIV) and FIG. 18B shows the same neuron after 24 hrs (6 DIV). Similarly, human motor neurons differentiated from induced pluripotent stem cells were transfected with 0.2 pig/well hSyn1:mRuby-P2a-GCaMP and imaged with robotic microscopy every 6 hours up to 12 hours. FIG. 19A shows increase in GCaMP signal in individual human motor neurons.",
+                                "These bioinformatics data analysis techniques demonstrated that a pseudo-ratiometric GCaMP6f-P2A-mRuby was capable of distinguishing live from dead neurons in culture with a high degree of accuracy.",
+                                "Time lapse imaging was performed on cells having either GCaMP6f or RGEDI to determine specificity of response following exposure to different stimuli. As shown in FIGS. 2A-2D, after 10 Hz voltage stimulation no significant change in RGEDI signaling was observed as compared to baseline control. However, after NaAz exposure to induce death a large change in RGEDI signaling was observed. This data demonstrates that RGEDI responds only at death of the neuron and not during voltage stimulation. In addition, GEDI ratio time lapse response to neurons after addition of NaAz showed that the GEDI ratio responds reproducibly with each GEDI variant tested. FIG. 9.",
+                                "The RGEDI were also analyzed for their ability to be multiplexed with detectors for parallel analysis of multiple cellular observations. Here, RGEDI-P2a-tag3xBFP was co-transfected with an independent green channel biosensor. A mitochondrial marker mitoGFP, a lysosomal marker GFP-TrpML1, and a cytosolic Ca2+ indicator were each recorded in parallel with the GEDI death indicator at 0, 24, 48 and 72 hours post transfection. Time of neuronal death is indicated with a white asterisk. FIG. 10A-C. These data demonstrate that GEDIs can be used in multiplexed analyses and do not impede observations of other cellular reporters.",
+                                "To further analyze the GEDIs, time lapse experiments were performed on rat primary cortical neurons expressing RGEDI-P2a-EGFP. Images were collected of both dying and healthy neurons at 0, 6, and 21 hours post transfection. As seen in FIG. 2E, the RGEDI expression level increases in the dying neuron (left) while the healthy, surviving neuron (right) maintains a baseline level of expression during the course of the experiment. FIG. 2F shows quantification of the \u0394F/F RGEDI/EGFP ratio of neurons from FIG. 2E from 0 to 21 hours after transfection and show that the ratio increases in the dead neuron but does not in the live neuron. Analysis of decay rates showed that RGEDI and EGFP fluorescence decay at the same rate after death stably for up to 42 hours after death. FIG. 2G. Together this showed for the first time GCaMP could be modified for use as genetically-encoded cell death indicators. GEDIs are an alternative to other commercially available cell death indicators with several advantages. GEDIs are genetically encoded with low toxicity, they are death-type agnostic, provide acute and robust signal, and can have a dual role as a Ca2+/neuronal activity indicator."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce GECIs",
+                                "describe GECI use in detecting Ca2+ transients",
+                                "describe discovery of GECI use in detecting cell death",
+                                "detail experimental design for testing GECI in detecting cell death",
+                                "present results of GECI testing",
+                                "analyze GECI signal increase in dying neurons",
+                                "demonstrate specificity of GECI response to cell death",
+                                "show multiplexing ability of GECIs with other detectors",
+                                "analyze GECI expression level increase in dying neurons",
+                                "quantify GECI signal ratio in dead and live neurons",
+                                "conclude GECI use as cell death indicators"
+                            ],
+                            "num_characters": 5792,
+                            "outline_medium": [
+                                "introduce GECIs for monitoring cell death",
+                                "describe time-lapse imaging of rat primary cortical neurons",
+                                "analyze GCaMP6f expression in dying neurons",
+                                "demonstrate specificity of RGEDI response to cell death",
+                                "show multiplexing of RGEDI with other cellular reporters"
+                            ],
+                            "outline_short": [
+                                "demonstrate GECI for detecting cell death",
+                                "show specificity of response to cell death"
+                            ]
+                        },
+                        {
+                            "title": "Example 2: Development of Genetically Encoded Death Indicators",
+                            "paragraphs": [
+                                "The pseudo-ratiometric GCaMP6f-P2A-mRuby were capable of distinguishing live from dead neurons, but because the GCaMP was engineered to fluoresce with a dynamic range based on physiological levels of Ca2+ with a healthy neuron, fluctuations in GCaMP fluorescence blurred the separation between live and dead GCaMP fluorescent neurons. In addition, interpretation of cell death was complicated because these GEDIs were not ratiometric indicators. In addition, because fluorescent debris fades when it dissolves/diffuses, it was difficult to differentiate long dead versus live cells. Thus, it was desirable to generate a construct that could more accurately and/or precisely distinguish a live and health neuron with Ca2+ transients and a dead neuron that is beyond the point of recovering its membrane polarization.",
+                                "To achieve a higher separation between live and dead neurons and to inhibit the ability of the sensor to increase fluorescence during normal endogenous Ca2+ transients within healthy cells, a novel set of genetically encoded indicators were designed. These new constructs were specifically designed, in part, to detect high levels of Ca2+ that would not be seen in live, intact neurons. These constructs were designed to remain in the cytosol (i.e., did not contain a subcellular localization signal) and increase only when a cell, for example a neuron, died and extracellular levels of Ca2+ are in equilibrium with the cell debris. Additionally, a second genetically encoded fluorophore of a complementary color was attached with a self-cleavable P2A tag for use as a pseudo-ratiometric standardization signal and neuronal morphology marker. FIG. 8A. Color variants were generated, including RGEDI-P2A-EGFP, RGEDI-P2A-mApple, RGEDI-P2A-tagBFP2, RGEDI-P2A-3xtagBFP2 and GEM-GEDI-P2A-EGFP. The in vitro characteristics for each variant were determined along with predicted Hill Coefficients and Kd for Ca2+ binding. As shown in FIG. 8B the GEDI variants of the present disclosure all have an average predicted Kd greater than 500 \u03bcM."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe limitations of GCaMP6f-P2A-mRuby",
+                                "design novel GEDIs with improved characteristics",
+                                "detail in vitro characteristics of GEDI variants",
+                                "predict Kd values for Ca2+ binding of GEDI variants"
+                            ],
+                            "num_characters": 2049,
+                            "outline_medium": [
+                                "design novel GEDIs with improved separation of live and dead neurons",
+                                "characterize in vitro properties of GEDI variants"
+                            ],
+                            "outline_short": [
+                                "design novel GEDIs with improved separation between live and dead neurons"
+                            ]
+                        },
+                        {
+                            "title": "Example 3: GEIs as In Vitro Cell Death Reporters",
+                            "paragraphs": [
+                                "To examine use of these novel GEDIs as effective reporters of cell death in vitro, hSyn1:RGEDI-P2A-EGFP was expressed in rat cortical primary neurons. Rat primary cortical neuron cultures were prepared and robotic microscopy was used to image and track individual neurons once every 24 hours for six days as described above and previously described (Arraste et al., 2004) beginning at 5 days in vitro (DIV).",
+                                "Individual neurons were tracked over the course of 120 hours. As shown in FIG. 4B, the GEDIs were better able to distinguish dead and live signals as compared to the earlier GCaMP6f-P2A-mRuby construct in FIG. 16.",
+                                "To use the constructs as cell death indicators, a \u201clive\u201d and \u201cdead\u201d signal ratio was first determined that could then be interpolated to other samples. While this method was developed using live in vitro neurons, it is contemplated that the same or similar method can be used to define quantity of cell death in live (e.g., in vitro or in vivo), single time-point or time lapse, or fixed cells of all types.",
+                                "Briefly, to establish the \u201clive\u201d GEDI ratio, media was removed from cells, washed twice, and replaced with Ca2-free media with addition of 1 mM EGTA. Ten representative cells expressing RGEDI-P2a-EGFP were imaged separately with a RFP and GFP filter set. Once the imaging parameters were set, the same parameters were used for all further measurements. The GEDI signal was calculated for all cells using the following formula:",
+                                "GEDIsignal=average of [mean RFP fluorescence intensity within cell body]/[mean GFP fluorescence intensity within the cell body] for all cells measured",
+                                "Next, to rapidly induce cell death, 2% NaN3 was added to the well for 10 minutes. The same cells expressing RGEDI-P2a-EGFP with an RFP and GFP filter set were imaged using the same parameters as set above. The GEDI signals were then calculated. This GEDI signal value should not be significantly different than the first signal ratio recorded, due to the use of Ca-free medium with EGTA. Use this GEDI signal as the \u201clive\u201d GEDI ratio.",
+                                "To establish the \u201cdead\u201d GEDI ratio, in a separate well, ten representative cells expressing the RGEDI-P2a-EGFP were imaged separately with an RFP and GFP filter set using the same imaging parameters as above. The GEDI signal was calculated for those ten cells. To rapidly induce cell death, 2% NaN3 was then added to the well for 10 minutes. The ten cells were again imaged with an RFP and GFP filter set with same imaging parameters. The GEDI signals for the ten cells were determined. This was used as the \u201cdead\u201d GEDI ratio.",
+                                "The following formula was then used to compute the GEDI threshold:",
+                                "GEDIthreshold=0.25\u00d7([\u201clive\u201d GEDI ratio]\u00f7[\u201cdead\u201d GEDI ratio])",
+                                "A cell with a measured GEDI signal above this threshold using the same imaging and technical conditions was considered a dead cell. A cell with a measured GEDI signal below this threshold using the same imaging and technical conditions was considered a live cell. For single time point and time-lapse imaging of live cells, a \u201clive\u201d and \u201cdead\u201d signal ratio was established at onset of imaging and that ratio and same imaging parameters was used for all subsequent time points. For time-lapse imaging over more than 24 hours, single cell death must be propagated as GEDI \u201cdead\u201d signal will fade after 24 hours (i.e., report as \u201calive\u201d based on signal intensity). For fixed cells, the same protocol was followed for establishing a \u201clive\u201d and \u201cdead\u201d signal ratio as described for live cells, but cells were fixed at 10 minute time point after addition of NaN3. After fixation, the \u201clive\u201d and \u201cdead\u201d GEDI signals were determined",
+                                "FIG. 21A depicts representative images of individual neurons over the time course. The RGEDI-P2A-EGFP exhibited \u0394F/F0 responses to increased intracellular Ca2+ levels. Next, the RGEDI intensity was plotted as a percentage increase from baseline (t=0) (ie delta RGEDI/baseline RGEDI). Using the morphology as a readout, the time of death was determined for each neuron. As shown in FIG. 21C, Neurons 1, 2, 3, and 4 were determined to be dead at approximately 24 hours, 48 hours, 72 hours, and 120 hours, respectively. On the other hand, rat primary neurons exposed to KCl, which induces membrane depolarization and rapid Ca2+ transients, failed to excite RGEDI-P2A-EGFP. FIG. 21D. This demonstrates that the GEDIs, having decreased binding affinity to Ca2+, limit fluorescence above basal state unless the cell membrane becomes permeable to levels of Ca2+ beyond which a neuron can recover.",
+                                "Next, the intensity of RGEDI for individual neurons expressing the amino-terminal exon 1 fragment of huntingtin (HttEx1) containing polyQ97 was plotted on the y axis in each of 6 consecutive time points with the EGFP intensity on the X axis. HttEx1 containing polyQ97 resulted in polyQ-expansion-dependent, neuron-specific cell death at various time points during longitudinal tracking of single neurons. FIG. 5 shows RGEDI was able to detect live versus dead rat primary cortical neurons. RGEDI was able to better distinguish live and dead signals as compared to GCaMP6f-P2A-mRuby (FIG. 16 and FIG. 4).",
+                                "Rat primary neurons were transfected with hsyn1:RGEDI-P2A-EGFP as described above and imaged at DIV10. RGEDI/EGFP ratio significantly increased after addition of 2% NaN3 to neurons in neural basal media (NBM) with physiological Ca2+ levels (\u02dc2 mM Ca2+) (NaN3+Ca2+) compared to neurons with addition of saline (NaCl+Ca2+) which does not induce death. A non-linear regression was fit to the NaN3+Ca2+ time course and a half-life of RGEDI/EGFP signal increase was determined to be 5 minutes and 50 seconds. Neurons washed 3\u00d7 and incubated in Ca2+ free PBS prior to exposure to NaN3 (NaN3\u2014Ca2+) did not show a significant increase in RGEDI/EGFP ratio. ANOVA Tukey comparison to 0 minutes of each condition, *** p<0.001, **** p<0.0001. These data suggest RGEDI signal increase acutely during neuronal death and requires extracellular Ca2+. FIG. 3.",
+                                "To examine GEDI activity in other neurodegenerative diseases, neurons were transfected with either HttEx1-Q97, TDP43, or \u03b1-synuclein. All showed an increase in RGEDI signal upon death. FIG. 6A. In addition, observing GEDI ratios derived from neurons expressing HttEx1-Q97, HttEx1-Q25, TDP43, \u03b1-synuclein compared to control neurons in high throughput using automated imaging demonstrated that while a GEDI threshold set at 0.5 dividing dead and live neurons is often sufficient, it may be necessary to generate a GEDI threshold (i.e., signal intensity ratio) for different studies, for example, studies of different diseases. FIG. 6C shows an automated cumulative hazard plot derived from data in FIG. 6B showing 1-HttEx1-Q97, TDP43, and \u03b1-synuclein each have increased toxicity over time compared to control as previously reported in the literature, indicating GEDI can be used on multiple types of neurodegenerative diseases. In addition, FIGS. 7A-C demonstrate that GEDI can be used to study risk of death for certain genetic mutations as compared to wild type controls. Studies were performed on an amyotrophic lateral sclerosis (ALS) model having a copper/zinc superoxide dismutase (SOD1) mutation (D90A-SOD1). It is contemplated that GEDIs can be equally deployed as cell death indicators for other disease models as well."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe use of GEDIs as cell death reporters in vitro",
+                                "detail experimental design for testing GEDIs",
+                                "establish \"live\" and \"dead\" GEDI signal ratios",
+                                "compute GEDI threshold",
+                                "image and track individual neurons",
+                                "analyze GEDI signal increase in dying neurons",
+                                "demonstrate GEDI ability to distinguish live and dead neurons",
+                                "show GEDI response to increased intracellular Ca2+ levels",
+                                "analyze GEDI signal in neurons with HttEx1-Q97",
+                                "demonstrate GEDI ability to detect live versus dead neurons",
+                                "analyze GEDI signal increase in response to NaN3",
+                                "demonstrate GEDI requirement for extracellular Ca2+",
+                                "show GEDI activity in other neurodegenerative diseases",
+                                "conclude GEDI use as cell death indicators"
+                            ],
+                            "num_characters": 7301,
+                            "outline_medium": [
+                                "express RGEDI-P2A-EGFP in rat cortical primary neurons",
+                                "image and track individual neurons over time",
+                                "establish \"live\" and \"dead\" GEDI signal ratios",
+                                "compute GEDI threshold for cell death detection",
+                                "demonstrate RGEDI signal increase during neuronal death",
+                                "show RGEDI signal decrease after cell death",
+                                "discuss applications of GEDIs in neurodegenerative disease research"
+                            ],
+                            "outline_short": [
+                                "establish GEDIs as effective reporters of cell death in vitro",
+                                "develop method for distinguishing live and dead cells using GEDIs",
+                                "demonstrate GEDIs' ability to detect cell death in various neurodegenerative diseases"
+                            ]
+                        },
+                        {
+                            "title": "Example 4: GEDIs as In Vivo and in Tissue Cell Death Reporters",
+                            "paragraphs": [
+                                "The process of neurodegeneration is often influenced by surrounding tissue, which limits the ability of researchers to study neurodegeneration in vitro. Yet the ability to image cell death in vivo has been hindered by the ability to visualize when cell death occurs in vivo or in tissue, such as organotypic slice culture. In particular, conventional methods do not provide a non-toxic label that is stable over the long time course involved in neurodegeneration. Therefore, it was determined whether GEDIs could serve as reliable cell death reporters in vivo and in tissue.",
+                                "Briefly, zebrafish embryos were co-injected at 1-cell stage with mnx1:Gal4, UAS:GCaMP6f, and UAS:Nitroreductase-mCherry. Embryos were grown at 28.5\u00b0 C. until 48 hours post fertilization (hpf), anaesthetized in tricaine, embedded in low-melting point agarose, and then imaged on a spinning disk confocal microscope. Images were acquired of the same motor neurons within the zebrafish at 0, 24 hours, and 48 hours after MTZ or DMSO was added to the media. Intensity of GCaMP6f was plotted as the change in fluorescence intensity from time point 0.",
+                                ") In addition, a hippocampal slice culture was generated from neonatal CB7B/6 mouse embryos using a Siskiyou tissue slicer to generate 400 \u03bcm thick slices, cultured using the interface method, and maintained at 34\u00b0 C. Slices were then co-transfected using biolistic transfection by coating gold nanoparticles with RGEDI-P2a-EGFP and htt ex1 97Q, and imaged using a spinning disk confocal microscope. Ten \u03bcm Z slices were taken and collapsed into Max projection Z stacks.",
+                                "By expressing GCaMP in motor neurons of zebrafish larvae that are anaesthetized in tricaine which diminishes Ca2+ transients in neurons (FIG. 11A) and time lapse imaging after target neuronal ablation using induced nitroreductase of those motor neurons, it was demonstrated that GCaMP signal also increases after cell death in vivo. As shown in FIGS. 20A, 11B and 11C, zebrafish larvae GCaMP expression increased at 24 and 48 hours after addition of metronidazole (MTZ) to activate cell ablation, which coincided with a loss of cellular morphology. The GCaMP-P2A-mCherry zebrafish also exhibited % \u0394F/F responses to MTZ treatment that were substantially augmented over responses to the DMSO control. RGED1-P2a-3XtagBFP was also co-expressed in zebrafish neurons with NTR-mVenus and signal increased in neurons exposed to MTZ but not those exposed to DMSO as shown in FIGS. 13A and 13B. The GEDI reporter was also tested in skeletal muscle fiber. FIG. 13C. In addition, expression of RGEDI-P2A-EGFP was tested in an organotypic slice culture and was shown to be useful for determining neuronal cell death. FIGS. 14A, 14B, and 22.",
+                                "FIG. 13B contains representative a single zebrafish skeletal muscle fiber co-expressing RGEDI-P2a-3xtagBFP and NTR-mVenus at 0, 24, and 48 hours showing RGEDI signal increases during skeletal muscle fiber death.",
+                                "These data indicate that these novel GEDI variants are capable for use in vivo and in tissue."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe use of GEDIs as cell death reporters in vivo and in tissue",
+                                "detail experimental design for testing GEDIs in zebrafish",
+                                "analyze GEDI signal increase in dying motor neurons",
+                                "demonstrate GEDI ability to detect cell death in zebrafish",
+                                "test GEDI in hippocampal slice culture",
+                                "conclude GEDI use as cell death reporters in vivo and in tissue"
+                            ],
+                            "num_characters": 3031,
+                            "outline_medium": [
+                                "express GEDIs in zebrafish embryos and image cell death",
+                                "demonstrate GEDI signal increase in motor neurons after ablation",
+                                "show GEDI signal increase in skeletal muscle fiber death"
+                            ],
+                            "outline_short": [
+                                "demonstrate GEDIs as reliable cell death reporters in vivo and in tissue"
+                            ]
+                        },
+                        {
+                            "title": "Example 6: GEDIs in Combination with Robotic Microscopy",
+                            "paragraphs": [
+                                "Next it was examined whether GEDIs were useful in combination with robotic microscopy\u2014the use of automated microscopes to do high-throughput time-lapse imaging on live cells. Robotic microscopy is capable of generating high-throughput time-lapse data, yet detection of cell death had proven difficult to automate accurately. Briefly, automated images were acquired from neurons expressing RGEDI-P2A-EGFP.",
+                                "Here, using a threshold (dotted line=0.05) in the ratio of RGEDI/EGFP, neurons were classified as dead or alive for GEDI automated analysis. Briefly, ray primary cortical neurons expressing htt ex1 25Q (normal) or htt ex1 97Q (Huntington's disease model) were induced to undergo cell death. A comparison of survival analysis on the same data set using cumulative hazard ratio for neurons in which death was called after loss of automated segmentation (\u201cAutomated Analysis\u201d), death classified using manual curation according to morphology signal (\u201cManual Analysis\u201d), or death was classified as RGEDI/EGFP signal >0.05 (\u201cGEDI Automated Analysis\u201d). As shown in FIG. 5B, and summarized in FIG. 5C, use of robotic microscopy with RGEDI-P2A-EGFP, followed by fully automated analysis resulted in comparable hazard ratios and statistical analysis to the same data set manually analyzed. Similarly significant p values and hazard ratios were obtained by manual analysis and GEDI automated analysis, which automated analysis failed to detect a significant difference in survival.",
+                                "It takes a trained technician approximately 15 hours of labor to analyze a standard 96 well plate for cell death. Surprisingly, the automated-GEDI analysis appeared to out-perform manual curation of data. Manually curated data that was reexamined after looking at GEDI signal is consistently found to be misclassified. (dashed boxes, FIG. 4). Thus, GEDI saves time and money, with improved accuracy. Through manual curation analysis, robotic microscopy with single cell tracking already provides 100-1000 fold increased sensitivity over high-throughput screening systems based on single snapshots. Arrasate M. et al., (2005) Proc Natl Acad Sci USA., 102(10):3840-5. This demonstrates the ability for GEDIs to increase the accuracy of robotic microscopy even further.",
+                                "Drug screening has been used to identify toxic compounds. However, the ability to image cell death accurately in high throughput screens has been hindered by the ability to visualize precisely when cell death occurs.",
+                                "Glutamate is an amino acid and one of the most plentiful neurotransmitters in the brain. It is present only in small amounts, and it is the primary excitatory neurotransmitter. Too much glutamate can lead to excitotoxicity which can destroy neurons. Some diseases are believed to be linked to glutamate sensitivities, for example, amyotrophic lateral sclerosis (ALS).",
+                                "Briefly, neurons expressing RGEDI were exposed to the neurotransmitter glutamate. Within three hours, the glutamate killed many of the cells. FIG. 12A shows that rat primary cortical neurons after exposure to various amounts of glutamate showed different reactions. Using time lapse imaging, a subset of neurons could be identified that were resistant to glutamate, while another subset of neurons had increased sensitivity to glutamate as seen in FIGS. 12B and 12C. Furthermore, features of neurons such as neurite area were identified as associated with neurons that are resistant to high Glutamate exposure. These studies indicate that GEDIs can be used for screening for drug resistant or drug sensitive cells and identifying physiological characteristics of those cells that may underlie their sensitivity or resistance.",
+                                "It is contemplated that GEDI can facilitate the next-generation of image analysis of cellular processes, such as neurodegeneration, with machine learning approaches. Supervised machine learning requires large, curated data sets to train models on, making robotic microscopy an ideal platform to provide both training and testing of data sets for machine learning approaches to understanding neurodegenerative diseases. Previous attempts at using machine learning approaches, however, have had disappointing results because of the inability to accurately and fully classify data sets due to the error involved in classifying dead cells, for example neurons, manually.",
+                                "From the foregoing, it will be appreciated that specific embodiments of the invention have been described herein for purposes of illustration, but that various modifications may be made without deviating from the scope of the invention. Accordingly, the invention is not limited except as by the appended claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe use of GEDIs with robotic microscopy",
+                                "detail experimental design for testing GEDIs with robotic microscopy",
+                                "analyze GEDI signal increase in dying neurons",
+                                "demonstrate GEDI ability to detect cell death with robotic microscopy",
+                                "compare GEDI automated analysis to manual analysis",
+                                "show improved accuracy of GEDI automated analysis",
+                                "demonstrate GEDI ability to identify drug-resistant cells",
+                                "identify physiological characteristics associated with drug resistance",
+                                "conclude GEDI use with robotic microscopy for high-throughput screening"
+                            ],
+                            "num_characters": 4640,
+                            "outline_medium": [
+                                "use robotic microscopy to image neurons expressing RGEDI-P2A-EGFP",
+                                "classify neurons as dead or alive using GEDI signal threshold",
+                                "compare automated and manual analysis of cell death data",
+                                "discuss advantages of GEDI-automated analysis in drug screening"
+                            ],
+                            "outline_short": [
+                                "show GEDIs' ability to automate cell death detection in robotic microscopy",
+                                "demonstrate improved accuracy and efficiency of GEDIs in robotic microscopy"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An isolated nucleic acid sequence comprising a nucleotide sequence encoding:\na. a promoter;\nb. a first detectable marker;\nc. a modified calcium binding motif of SEQ ID NO. 1 or variants thereof; and\nd. a second detectable marker.",
+        "2. The isolated nucleic acid sequence of claim 1, wherein the promoter is a tissue specific promoter.",
+        "3. The isolated nucleic acid sequence of claim 2, wherein the tissue specific promoter is a neuron specific promoter.",
+        "4. The isolated nucleic acid sequence of claim 1, wherein the first detectable marker, the second detectable marker, or both comprise a fluorescent label.",
+        "5. The isolated nucleic acid of claim 1, wherein the first detectable marker and/or the second detectable marker comprise green fluorescent protein (GFP), mApple, mTagBFP, or variants thereof.",
+        "6. The isolated nucleic acid sequence of claim 1, wherein the first detectable marker and the second detectable marker are distinguishable from each other.",
+        "7. The isolated nucleic acid sequence of claim 1, wherein the modified calcium binding motif comprises at least one genetic modification.",
+        "8. The isolated nucleic acid sequence of claim 1, wherein the modified calcium binding motif comprises at least one amino acid substitution of SEQ ID NO. 1 selected from the group consisting of E31D, F92W, E104D, D133E, or any combination thereof.",
+        "9. The isolated nucleic acid sequence of claim 1, wherein the modified calcium binding motif has a calcium dissociation constant (Kd) greater than 1 \u03bcM or greater than 100 \u03bcM.",
+        "10. (canceled)",
+        "11. The isolated nucleic acid sequence of claim 1, wherein the nucleic acid sequence does not comprise a localization sequence.",
+        "12. The isolated nucleic acid sequence of claim 11, wherein the localization sequence is a nuclear localization sequence, an endoplasmic reticulum localization sequence, a mitochondrial localization sequence, or any combination thereof.",
+        "13. A vector comprising the nucleic acid sequence of claim 1.",
+        "14. (canceled)",
+        "15. An isolated cell comprising the isolated nucleic acid sequence or vector of claim 1.",
+        "16. (canceled)",
+        "17. (canceled)",
+        "18. (canceled)",
+        "19. A method for monitoring calcium flux in a cell comprising the isolated nucleic acid of claim 1 comprising:\na. measuring a signal from the first detectable marker to generate a first signal intensity;\nb. measuring a signal from the second detectable marker to generate a second signal intensity; and\nc. comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio.",
+        "20. (canceled)",
+        "21. (canceled)",
+        "22. (canceled)",
+        "23. A method for monitoring cell death in a cell comprising the isolated nucleic acid of claim 1 comprising:\na. measuring a signal from the first detectable marker to generate a first signal intensity;\nb. measuring a signal from the second detectable marker to generate a second signal intensity;\nc. comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and\nd. determining whether the cell is dead or alive based on the signal intensity ratio.",
+        "24. The method of claim 23, wherein the signal intensity ratio of greater than 0.05 indicates the cell is dead.",
+        "25. The method of claim 23, wherein the signal intensity ratio is determined using the formula:\n\n\nsignal intensity ratio=([(GEDI dead ratio)\u2212(GEDI live ratio)]*0.25)+[avg.GEDI live]",
+        "26. The method of claim 23, wherein cell death is apoptosis, necrosis, autophagy, necroptosis, or any combination thereof.",
+        "27. The method of claim 26, wherein cell death is determined when Ca2+ levels inside the cell are equivalent to Ca2+ levels outside the cell.",
+        "28. A method of screening for an agent that is capable of causing an intracellular calcium concentration fluctuation in a cell comprising:\na. contacting a cell comprising the isolated nucleic acid of claim 1 with the agent;\nb. measuring a signal from the first detectable marker to generate a first signal intensity;\nc. measuring a signal from the second detectable marker to generate a second signal intensity;\nd. comparing the first signal intensity to the second signal intensity to generate a signal intensity ratio; and\ne. determining whether the agent is capable causing an intracellular calcium concentration fluctuation based the signal intensity ratio."
+    ]
+}

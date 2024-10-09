@@ -1,0 +1,494 @@
+{
+    "id": "US20170213350",
+    "authors": [
+        "Aurel Lazar",
+        "Nikul H. Ukani",
+        "Yiyin Zhou"
+    ],
+    "title": "SYSTEMS AND METHODS FOR DETECTING MOTION USING LOCAL PHASE INFORMATION",
+    "date": "2016-06-09 00:00:00",
+    "abstract": "Systems and methods for the detection of motion in a multi-dimensional signal are provided. According to aspects of the disclosure, data representing a time sequence of frames of a video stream is received. A multi-dimensional Gaussian window in is then constructed. Each frame of the received data is divided into a plurality of blocks and, for each block in the plurality of blocks, each pixel in the block is multiplied with a corresponding pixel of the Gaussian window to obtain a windowed video block. The FFT of the windowed video block is computed to obtain an amplitude and phase thereof. The occurrence of motion in the block is then determined based on the computed phase of the windowed video block.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The design of an information processing system can be approached on multiple levels. FIG. 1 illustrates two levels of abstraction, namely, the algorithm level and the physical circuit level. On the algorithmic level, one studies procedurally how the information is processed independently of the physical realization. The circuit level concerns the actual realization of the algorithm in physical hardware, for example, a biological neural circuit or silicon circuits in a digital signal processor.",
+                        "Visual motion detection is important to the survival of animals. Many biological visual systems have evolved efficient/effective neural circuits to detect visual motion. Motion detection is performed in parallel with other visual coding circuits and starts already in the early stages of visual processing. In the retina of vertebrates, at least three types of Direction-Selective Ganglion Cells (DSGC) are responsible for signaling visual motion at this early stage. In flies, direction-selective neurons are found in the optic lobe, 3 synapses away from the photoreceptors.",
+                        "The small number of synapses between photoreceptors and direction-selective neurons suggests that the processing involved in motion detection is not highly complex but still very effective. In addition, the biological motion detection circuits can be organized in a highly parallel way to enable fast, concurrent computation of motion. It is also interesting to note that the early stages of motion detection are carried out largely in the absence of spiking neurons, indicating that initial stages of motion detection are preferably performed in the \u201canalog\u201d domain. Taking advantage of continuous time processing can be important for quickly processing motion since motion intrinsically elicits fast and large changes in the intensity levels, that is, large amounts of data under stringent time constraints.",
+                        "Certain computer-based motion detection algorithms employ optic flow techniques to estimate spatial changes in consecutive image frames. Although, often time, optic flow estimation algorithms produce accurate results, the computational demand to perform many of these algorithms can be too high for real-time implementation.",
+                        "Several models for biological motion detection are known. For example, the Reichardt motion detector for motion detection in insects uses a correlation method to extract motion induced by spatiotemporal information patterns of light intensity. Therefore, it uses a correlation/multiplication operation. The motion energy detector uses spatiotemporal separable filters and a squaring nonlinearity to compute motion energy and it was shown to be equivalent to the Reichardt motion detector. Work in the rabbit retina was used for the Barlow-Levick model of motion detection, which uses inhibition to compensate motion in the null direction. However, there exists a need for an improved motion detection technique."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce information processing system",
+                        "motivate visual motion detection",
+                        "describe biological motion detection",
+                        "limitations of computer-based motion detection",
+                        "summarize existing biological models"
+                    ],
+                    "num_characters": 2925,
+                    "outline_medium": [
+                        "introduce visual motion detection",
+                        "discuss biological and computer-based approaches"
+                    ],
+                    "outline_short": [
+                        "motivate visual motion detection"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "According to aspects of the present disclosure, methods for motion detection are provided. An example method includes receiving data representing a time sequence of frames of a multi-dimensional signal and constructing a multi-dimensional Gaussian window. The method can further include dividing each frame of the received data into a plurality of blocks. The method can further include, for each block in the plurality of blocks, multiplying each pixel in the block with a corresponding pixel of the Gaussian window to obtain a windowed signal block, and computing the multidimensional FFT of the windowed signal block to obtain an amplitude and phase thereof. The method can further include detecting the occurrence of motion in the block based on the computed phase of the windowed signal block.",
+                        "According to other aspects of the present disclosure, a system including a processor and memory is provided, in which the processor is programmed to carry out the above method. Further, a computer readable medium is provided, where the computer readable stores instructions that, when executed by a processor, cause the processor to carry out the above method."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "outline method for motion detection",
+                        "describe system and computer readable medium"
+                    ],
+                    "num_characters": 1160,
+                    "outline_medium": [
+                        "outline motion detection method"
+                    ],
+                    "outline_short": [
+                        "outline motion detection method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Images can be represented by their global phase alone. Provided herein are techniques for reconstructing visual scenes by only using local phase information, thereby demonstrating the spectrum of the representational capability of phase information.",
+                        "The Fourier shift property suggests the relationship between the global shift of an image and the global phase shift in the frequency domain. This relationship is elevated by computing the change of local phase to indicate motion that appears locally in the visual scene. The local phases can be computed using window functions that tile the visual field with overlapping segments, making it amenable for a highly parallel implementation. In addition, a Radon transform-based motion detection index on the change of local phases is provided for the readout of the relation between local phases and motion.",
+                        "Phase information has been largely ignored in the field of linear signal processing. Phase-based processing is intrinsically non-linear. However, phase information can be employed in speech processing and visual processing. For example, spatial phase in an image is indicative of local features such as edges when considering phase congruency.",
+                        "As demonstrated herein, local phase information can be used to represent visual information in the absence of amplitude information. Accordingly, one or more embodiments of a local phase based algorithm to detect motion in visual scenes are provided. Examples and applications of the motion detection algorithm disclosed in relation to motion segmentation.",
+                        "Complex valued transforms can be used for both representing and processing images. When represented in polar coordinates, the output of a complex valued transform of a signal can be split into amplitude and phase. In this embodiment, two types of phases of an image are defined: a global phase and a local phase. Both types of phases can faithfully represent an image. Accordingly, an example of a reconstruction algorithm that recovers the image from local phase information is provided. This indicates that phase information alone can largely represent an image or video signal. As disclosed herein, the use of phase for representing image and video information leads to efficient ways to implement certain types of image/video processing algorithms, for example, motion detection algorithms."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Global Phase of Images.",
+                            "paragraphs": [
+                                "The Fourier transform of a real valued image u=u(x,y), (x,y)\u03b52, is given by",
+                                "{circumflex over (U)}(\u03c9w,\u03c9y)=u(x,y)e\u2212j(\u03c9x+\u03c9y)dxdy",
+                                "with {circumflex over (U)}(\u03c9w,\u03c9y)\u03b5 and (\u03c9w,\u03c9y)\u03b52.\u2003\u2003(1)",
+                                "In polar coordinates, the Fourier transform of u can be expressed as",
+                                "{circumflex over (U)}(\u03c9x,\u03c9y)={circumflex over (A)}(\u03c9x,\u03c9y)ej{circumflex over (\u03c6)}(\u03c9,\u03c9),\u2003\u2003(2)",
+                                "where A(\u03c9x,\u03c9y)\u03b5R is the amplitude and \u03c6(\u03c9x,\u03c9y) is the phase of the Fourier transform of u.",
+                                "The amplitude of the Fourier transform of an image u=u(x,y), (x,y)\u03b52, is called the global amplitude of u. The phase of the Fourier transform of an image u=u(x,y), (x,y)\u03b52, is called the global phase of u.",
+                                "The global phase of an image plays a role in the representation of natural images. One example is to take two images and to exchange their global phases before their reconstruction using the inverse Fourier transform. The resulting images can be smeared but largely reflect the information contained in the global phase."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define global phase of images"
+                            ],
+                            "num_characters": 966,
+                            "outline_medium": [
+                                "define global phase and amplitude of images"
+                            ],
+                            "outline_short": [
+                                "define global phase and amplitude of an image"
+                            ]
+                        },
+                        {
+                            "title": "Local Phase of Images",
+                            "paragraphs": [
+                                "The global phase indicates the offset of sinusoids of different frequencies contained in the entire image. However, it is not intuitive to relate the global phase to local image features such as edges and their position in an image. To understand these local features, the Fourier transform can be modified such that it reflects properties of a restricted region of an image. The Short-Time (-Space) Fourier Transform (STFT) can be considered:",
+                                "U(\u03c9x,\u03c9y,x0,y0)=u(x,y)w(x\u2212x0,y\u2212y0)\u00b7e\u2212j(\u03c9(x-x)+\u03c9(y-y))dxdy,\u2003\u2003(3)",
+                                "where w=w(x,y), (x,y)\u03b52 is a real valued window function centered at (x0,y0) Certain choices of window functions include the Hann window and the Gaussian window. The (effectively) finite support of the window restricts the Fourier transform to local image analysis.",
+                                "Similar to the Fourier transform, the STFT can be expressed in polar coordinates as",
+                                "U(\u03c9x,\u03c9y,x0,y0)=A(\u03c9x,\u03c9y,x0,y0)ej\u03c6(\u03c9,\u03c9,x,y),\u2003\u2003(4)",
+                                "where A(\u03c9x,\u03c9y,x0,y0)\u03b5 is the amplitude and \u03c6(\u03c9x,\u03c9y,x0,y0) is the phase of the STFT.",
+                                "The amplitude of the STFT of an image u=u(x,y), (x,y)\u03b52, is called the local amplitude of u. The phase of the STFT of an image u=u(x,y), (x,y)\u03b52, is called the local phase of u.",
+                                "It should be noted that when w is a Gaussian window, the STFT of u evaluated at (\u03c9x,\u03c9y,x0,y0) can be equivalently viewed as the response of a complex-valued Gabor receptive field",
+                                "h(x,y)=e\u2212((x-x)+(y-y))/2\u03c3e\u2212j(\u03c9(x-x)+\u03c9(y-y))\u2003\u2003(5)",
+                                "to u.",
+                                "In this case, the window of the STFT is given by",
+                                "w(x,y)=e\u2212(x+y)/2\u03c3.\u2003\u2003(6)",
+                                "Therefore, the STFT can be realized by an ensemble of Gabor receptive fields that are common in modeling simple and complex cells (neurons) in the primary visual cortex.",
+                                "Reconstruction of Images from Local Phase",
+                                "Amplitude and phase can be interpreted as measurements/projections of images that are indicative of their information content. When both the global amplitude and phase are known, the image can be reconstructed. The reconstruction calls for computing the inverse Fourier transform given the global amplitude and phase. Similarly, when using local amplitude and phase, if the sampling functions form a basis or frame in a space of images, the reconstruction is provided by the formalism of wavelet theory, for example, using Gabor wavelets.",
+                                "Amplitude or phase represents partial information extracted from visual scenes. They can be obtained via nonlinear sampling, that is, a nonlinear operation for extracting the amplitude and phase information from images. The nonlinear operation can make reconstruction from either amplitude or phase alone difficult. However, certain images can be reconstructed from global or local amplitude information.",
+                                "While computing the amplitude can require a second order (quadratic) nonlinearity, computing the phase calls for higher order nonlinear operators (Volterra kernels). However, one can reconstruct up to a constant scale an image from its global phase information alone without explicitly using the amplitude information.",
+                                "Similarly, up to a constant scale, a bandlimited signal u=u(x,y), (x,y)\u03b52, can be reconstructed from its local phase alone. First the encoding of an image u is formulated by local phase, using the Gabor receptive fields as a special case. The problem can then be formulated with local phase computed from other types of STFTs.",
+                                "Formally, an image, u=u(x,y), on the domain 2, is an element of a space of trigonometric polynomials  of the form",
+                                "\\(\\begin{matrix}\n{{{u\ue8a0\\left( {x,y} \\right)} = {\\sum\\limits_{l_{x} = {- L_{x}}}^{L_{x}}\ue89e\\; \ue89e{\\sum\\limits_{l_{y} = {- L_{y}}}^{L_{y}}\ue89e\\; \ue89e{c_{l_{x\ue89e\\;}\ue89el_{y}}\ue89e{e_{l_{x}\ue89el_{y}}\ue8a0\\left( {x,y} \\right)}}}}},\ue89e{where}} & (7) \\\\\n{{e_{l_{x}\ue89el_{y}} = {{\\exp \ue8a0\\left( {{jl}_{x}\ue89e\\frac{\\Omega_{x}}{L_{x}}\ue89ex} \\right)}\ue89e{\\exp \ue8a0\\left( {{jl}_{y}\ue89e\\frac{\\Omega_{y}}{L_{y}}\ue89ey} \\right)}}},\ue89e{l_{x} = {- L_{x}}},\\ldots \ue89e\\mspace{14mu},L_{x},{l_{y} = {- L_{y}}},\\ldots \ue89e\\mspace{14mu},L_{y}} & (8)\n\\end{matrix}\\)",
+                                "are the set of basis functions of , \u03a9x, and Lx are the bandwidth and the order, respectively, of the space in the x dimension, and \u03a9y and Ly are the bandwidth and the order, respectively, of the space in the y dimension.",
+                                "is a Reproducing Kernel Hilbert Space with inner product",
+                                "u1,u2=\u222b[0,T]\u00d7[0,T]u1(x,y)dxdy,\u2003\u2003(9)",
+                                "where Tx=2\u03c0Lx/\u03a9x, Ty=2\u03c0Ly/\u03a9y are the period of the space in the x and y dimensions, respectively.",
+                                "A bank of N Gabor receptive fields can be represented as",
+                                "{ h kl , mn \ue8a0 ( x , y ) = kl \ue89e ( w \ue8a0 ( x , y ) \ue89e e - j \ue8a0 ( \u03c9 x m \ue89e x + \u03c9\ny n \ue89e y ) ) , ( 10 ) }",
+                                "where Tkl is the translation operator with Tklu=u(x\u2212kb0,y\u2212lb0), k, l\u03b5Z, b0>0, 0\u2266kb0\u2266Tx, and 0\u2266lb0\u2266Ty, and \u03c9xm=m\u03c90, \u03c9yn=n\u03c90, m, n\u03b5, \u03c90>0, \u2212\u03a9x\u2266m\u03c90\u2266\u03a9x, and \u2212\u03a9y\u2266n\u03c9 0\u2266\u03a9y. The responses of the Gabor receptive fields to the input u(x,y) are given by",
+                                "\\(\\begin{matrix}\n{{{{\\cdot {w\ue8a0\\left( {{x - {kb}_{0}},{y - {lb}_{0}}} \\right)}}\ue89ee^{- {j\ue8a0{({{\\omega_{x_{m}}\ue8a0{({x - {kb}_{0}})}} + {\\omega_{y_{n}}\ue8a0{({y - {lb}_{0}})}}})}}}\ue89e{dxdy}} = {A_{{kl},{mn}}\ue89ee^{j\ue89e\\; \ue89e\\varphi_{{kl},{mn}}}}},} & (11)\n\\end{matrix}\\)",
+                                "where Akl,mn\u22670, Akl,mn\u03b5, is the local amplitude and \u03c6kl,mn\u03b5[0,2\u03c0) is the local phase.",
+                                "Dividing both sides of (11) by ej\u03c6results in",
+                                "\\(\\begin{matrix}\n{{\ue89e{u\ue8a0\\left( {x,y} \\right)}\ue89e{{w\ue8a0\\left( {{x - {kb}_{0}},{y - {lb}_{0}}} \\right)} \\cdot e^{- {j\ue8a0{({{\\omega_{x_{m}}\ue8a0{({x - {kb}_{0}})}} + {\\omega_{y_{n}}\ue8a0{({y - {lb}_{0}})}} + \\varphi_{{kl},{mn}}})}}}}\ue89e{dxdy}} = {A_{{kl},{mn}}.}} & (12)\n\\end{matrix}\\)",
+                                "Since Akl,mn\u03b5, we have",
+                                "u(x,y)w(x\u2212kb0,y\u2212lb0)\u00b7cos(\u03c9x(x\u2212kb0)+\u03c9y(y\u2212lb0)+\u03c6kl,mn)dxdy=Akl,mn,\u2003\u2003(13)",
+                                "u(x,y)w(x\u2212kb0,y\u2212lb0)\u00b7sin(\u03c9x(x\u2212kb0)+\u03c9y(y\u2212lb0)+\u03c6kl,mn)dxdy=0.\u2003\u2003(14)",
+                                "It should be noted that w(x\u2212kb0,y\u2212lb0)sin(\u03c9xm(x\u2212kb0)+\u03c9yn(y\u2212lb0)+\u03c6kl,mn) is a real-valued Gabor receptive field with a preferred phase at \u03c6kl,mn+\u03c0/2\u2212\u03c9xmkb0\u2212\u03c9ynlb0.",
+                                "Assuming that the local phase information \u03c6kl,mn is obtained via measurements, that is, filtering the image u with pairs of Gabor receptive fields (10), the set of linear equations (14) can be interpreted as follows: the image u is orthogonal to the space spanned by the functions",
+                                "w(x\u2212kb0,y\u2212lb0)\u00b7sin(\u03c9x(x\u2212kb0)+\u03c9y(y\u2212lb0)+\u03c6kl,mn),\u2003\u2003(15)",
+                                "where (k,l,m,n)\u03b5 with ={(k,l,m,n)\u03b54|0\u2266kb0\u2266Tx, 0\u2266lb0\u2266Ty, \u2212\u03a9x\u2266m\u03c90\u2266\u03a9x, \u2212\u03a9y\u2266n\u03c90\u2266\u03a9y}.",
+                                "An embodiments of a reconstruction algorithm of the image from phase \u03c6kl,mn, (k,l,m,n)\u03b5 is provided herein. First, it should be noted that u can be reconstructed from \u03c6kl,nm, (k,l,m,n)\u03b5 as",
+                                "\\(\\begin{matrix}\n{{{u\ue8a0\\left( {x,y} \\right)} = {\\sum\\limits_{l_{x} = {- L_{x}}}^{L_{x}}\ue89e\\; \ue89e{\\sum\\limits_{l_{y} = {- L_{y}}}^{L_{y}}\ue89e\\; \ue89e{c_{l_{x\ue89e\\;}\ue89el_{y}}\ue89ee_{l_{x}\ue89el_{y}}\ue89e\\left( {x,y} \\right)}}}},\ue89e{with}} & (16) \\\\\n{{{\\Phi \ue89e\\; \ue89ec} = 0},} & (17)\n\\end{matrix}\\)",
+                                "where \u03a6 is a matrix whose pth row and qth column entry are",
+                                "[\u03a6]pq=w(x\u2212kb0,y\u2212lb0)\u00b7sin(\u03c9x(x\u2212kb0)+\u03c9y(y\u2212lb0)+\u03c6kl,mn)\u00b7ell(x,y)dxdy.\u2003\u2003(18)",
+                                "Here p traverses the set , and q=(2Ly+1)(lx+Lx)+(ly+Ly+1). c is a vector of the form",
+                                "c=[c\u2212L,\u2212l,c\u2212L,\u2212L+1, . . . ,c\u2212L,L,c\u2212L+1,\u2212L,c\u2212L+1,\u2212L+1, . . . ,c\u2212L+1,L, . . . ,cL,\u2212L,cL,\u2212L+1, . . . ,cL,L]T\u2003\u2003(19)",
+                                "that belongs to the null space of \u03a6. A necessary condition for perfect reconstruction of u, up to a constant scale, is that N\u2267(2Lx+1)(2Ly+1)\u22121, where N is the number of phase measurements.",
+                                "In FIG. 2, an example of reconstruction of an image is shown using only local phase information. The reconstructed signal is scaled to match the original signal. The SNR of the reconstruction is 44.48 dB. An alternative way to obtain a unique reconstruction is to include an additional measurement, for example, the mean value of the signal u(x,y)dxdy to the system of linear equations (14)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Short-Time Fourier Transform (STFT)",
+                                "define local amplitude and phase of images",
+                                "relate STFT to Gabor receptive fields",
+                                "discuss reconstruction of images from local phase",
+                                "formulate local phase encoding of images",
+                                "define basis functions of Reproducing Kernel Hilbert Space",
+                                "represent bank of Gabor receptive fields",
+                                "compute responses of Gabor receptive fields",
+                                "extract local amplitude and phase information",
+                                "formulate reconstruction algorithm from local phase",
+                                "discuss orthogonality of image to space spanned by functions",
+                                "provide example of reconstruction from local phase",
+                                "discuss necessary condition for perfect reconstruction",
+                                "discuss alternative way to obtain unique reconstruction"
+                            ],
+                            "num_characters": 7470,
+                            "outline_medium": [
+                                "introduce Short-Time Fourier Transform (STFT) for local phase analysis",
+                                "define local amplitude and phase of images",
+                                "relate STFT to Gabor receptive fields",
+                                "formulate local phase encoding of images",
+                                "derive local amplitude and phase equations",
+                                "interpret local phase and amplitude",
+                                "relate local phase to Gabor receptive fields"
+                            ],
+                            "outline_short": [
+                                "introduce Short-Time Fourier Transform (STFT) for local image analysis",
+                                "define local amplitude and phase of an image using STFT",
+                                "relate local phase to Gabor receptive fields"
+                            ]
+                        },
+                        {
+                            "title": "The Global Phase Equation for Translational Motion",
+                            "paragraphs": [
+                                "Let u=u(x,y,t), (x,y)\u03b52, t\u03b5, be a visual stimulus. If the visual stimulus is a pure translation of the signal at u(x,y,0), that is,",
+                                "u(x,y,t)=u(x\u2212sx(t),y\u2212sy(t),0),\u2003\u2003(22)",
+                                "where",
+                                "sx(t)=\u222b0tvx(s)ds,",
+                                "sy(t)=\u222b0tvy(s)ds\u2003\u2003(23)",
+                                "are the total length of translation at time t in each dimension and vx(t) and vy(t) are the corresponding instantaneous velocity components, then the only difference between u(x,y,t) and u(x,y,0) in the Fourier domain is captured by their global phase.",
+                                "Further, the change (derivative) of the global phase is given by",
+                                "\\(\\begin{matrix}\n\\begin{matrix}\n{\\frac{d\ue89e{\\hat{\\varphi}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}}{dt} = \ue89e{{{- \\omega_{x}}\ue89e{v_{x}\ue8a0(t)}} - {\\omega_{y}\ue89e{v_{y}\ue8a0(t)}}}} \\\\\n{{= \ue89e{- {\\left\\lbrack {\\omega_{x},\\omega_{y}} \\right\\rbrack \ue8a0\\left\\lbrack {{v_{x}\ue8a0(t)},{v_{y}\ue8a0(t)}} \\right\\rbrack}^{T}}},}\n\\end{matrix} & (24)\n\\end{matrix}\\)",
+                                "where {circumflex over (\u03c6)}(\u03c9x,\u03c9y,t) denotes the global phase of u(x,y,t){circumflex over (\u03c6)}(\u03c9x,\u03c9y,0) is the initial condition."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "derive global phase equation for translational motion"
+                            ],
+                            "num_characters": 997,
+                            "outline_medium": [
+                                "derive global phase equation for translational motion"
+                            ],
+                            "outline_short": [
+                                "derive global phase equation for translational motion"
+                            ]
+                        },
+                        {
+                            "title": "The Local Phase Equation for Translational Motion",
+                            "paragraphs": [
+                                "The previous analysis applies to global motion. This type of motion occurs, e.g., when the imaging device, either an eye or a camera, moves. Visual motion in the natural environment, however, can be more diverse across the screen since it is, often time, produced by multiple moving objects. The objects can be small and the motion more localized in the visual field.",
+                                "Taking the global phase of u does not easily reveal where motion of independent objects takes place or their direction/velocity of motion. The interpretation of motion by using the Fourier transform, however, can be applied for detecting local motion. This can be achieved by restricting the domain of the visual field where the Fourier transform is applied.",
+                                "To be able to detect local motion, the local phase of u(x,y,t) is obtained by taking the STFT with window function w(x,y). It should be noted that the STFT and its ubiquitous implementation in DSP chips can be used in any dimension. For simplicity and without loss of generality, the window can be centered at (0,0). The STFT is given by",
+                                "u(x,y,t)w(x,y)e\u2212j(\u03c9x+\u03c9y)dxdy=A00(\u03c9x,\u03c9y,t)ej\u03c6(\u03c9,\u03c9,t),\u2003\u2003(27)",
+                                "where A00(\u03c9x,\u03c9y,t) is the amplitude and \u03c600(\u03c9x,\u03c9y,t) the local phase.",
+                                "The relation between the change in local phase and visual motion taking place across the window support can be explained as follows. First, if the stimulus can undergo a uniform change of intensity or it changes proportionally over time due to lighting conditions, for example, the local phase does not change since the phase is invariant with respect to intensity scaling. Therefore, the local phase does not change for such non-motion stimuli. Second, a rigid edge moving across the window support will induce a phase change.",
+                                "For a strictly translational signal within the window support (footprint), for example,",
+                                "u(x,y,t)=u(x\u2212sx(t),y\u2212sy(t),0), for (x,y)\u03b5supp(w(x,y)),\u2003\u2003(28)",
+                                "where sx(t) and sy(t) are as defined in (23).",
+                                "Further:",
+                                "\\(\\begin{matrix}\n{{{\\frac{d\ue89e\\; \ue89e\\varphi_{00}}{dt}\ue89e\\left( {\\omega_{x},\\omega_{y},t} \\right)} = {{\\frac{{ds}_{x}\ue8a0(t)}{dt}\ue89e\\omega_{x}} - {\\frac{{ds}_{y}\ue8a0(t)}{dt}\ue89e\\omega_{y}} + {b_{00}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}}},} & (29)\n\\end{matrix}\\)",
+                                "where, by abuse of notation, \u03c600(\u03c9x,\u03c9y,t) is the local phase of u(x,y,t) and \u03c600(\u03c9x,\u03c9y,0) is the initial condition.",
+                                "It should be noted that the derivative of the local phase has similar structure to that of the global phase, but for the added term \u03c500. The first two terms in (29) can dominate over the last term for an ON or OFF moving edge. For example, FIG. 3 shows the derivative of the local phase given in (29) for an ON edge moving with velocity (40, 0) pixels/sec.",
+                                "It should be noted that \u03c600(\u03c9x,\u03c9y,t) is not necessarily differentiable even if u(x,y,t) is differentiable, particularly when A00(\u03c9x,\u03c9y,t)=0. For example, the spatial phase can jump from a positive value to zero when A00(\u03c9x,\u03c9y,t) diminishes. This also suggests that the instantaneous local spatial phase is less informative about a region of a visual scene whenever A00(\u03c9x,\u03c9y,t) is close to zero. Nevertheless, the time derivative of the local phase can be approximated by applying a high-pass filter to \u03c600(\u03c9x,\u03c9y,t)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "discuss local motion detection using STFT",
+                                "define local phase of u(x,y,t) using STFT",
+                                "relate change in local phase to visual motion",
+                                "discuss invariance of local phase to intensity scaling",
+                                "derive local phase equation for translational motion",
+                                "discuss added term in local phase equation"
+                            ],
+                            "num_characters": 3177,
+                            "outline_medium": [
+                                "derive local phase equation for translational motion",
+                                "interpret local phase change for motion detection",
+                                "discuss limitations of local phase for motion detection"
+                            ],
+                            "outline_short": [
+                                "derive local phase equation for translational motion using STFT"
+                            ]
+                        },
+                        {
+                            "title": "The Block Structure for Computing the Local Phase",
+                            "paragraphs": [
+                                "First, Gaussian windows along the x, y dimensions are constructed. The Gaussian windows are defined as",
+                                "(klw)(x,y)=e\u2212((x-x)+(x-y)/2\u03c3,\u2003\u2003(30)",
+                                "where xk=kb0, yl=lb0, in which b0\u03b5+ is the distance between two neighboring windows and 1\u2266kb0\u2266Px, 1\u2266lb0\u2266Py, where Px, Py\u03b5+ are the number of pixels of the screen in the x and y directions, respectively.",
+                                "The 2D Fourier transform of the windowed video signal u(x,y,t)(klw)(x,y) is taken and written in polar form",
+                                "u(x,y,t)(klw)(x,y)e\u2212k(\u03c9(x-x)+\u03c9(y-y))dxdy=Akl(\u03c9x,\u03c9y,t)ej\u03c6(\u03c9,\u03c9,t).\u2003\u2003(31)",
+                                "The above integral can be evaluated using the 2D FFT in a discrete domain defined on M\u00d7M blocks approximating the footprint of the Gaussian windows. For example, the standard deviation of the Gaussian windows disclosed in the examples herein is 4 pixels. A block of 32\u00d732 pixels (M=32) is sufficient to cover the effective support (or footprint) of the Gaussian window. At the same time, the size of the block is a power of 2, which can be suitable for FFT-based computation. The processing of each block (k,l) is independent of all other blocks; thus, parallelism is achieved.",
+                                "It should be noted that the size of the window is informed by the size of the objects to be located. Measurements of the local phase using smaller window functions are less robust to noise. Larger windows can enhance object motion detection if the object size is comparable to the window size. However, there can be an increased likelihood of independent movement of multiple objects within the same window, which is not necessarily robustly detected.",
+                                "Therefore, for each block (k,l), M2 measurements of the phase \u03c6kl(\u03c9xm,\u03c9ym,t) are obtained at every time instant t, with (\u03c9xm,\u03c9ym)\u03b52, where",
+                                "2={(\u03c9x=m\u03c90,\u03c9y=n\u03c90),m,n=\u2212M/2,\u2212M/2+1, . . . ,M/2\u22121},\u2003\u2003(32)",
+                                "with \u03c90=2\u03c0/M. The temporal derivative of the phase is then computed, that is, (d\u03c6kl/dt)(\u03c9x,\u03c9y,t) for (\u03c9x,\u03c9y)\u03b52.",
+                                "An example of the block structure is illustrated in FIG. 4. FIG. 4(a) shows an example of an image of 64\u00d764 pixels. Four Gaussian windows are shown each with a standard deviation of 4 pixels. The distance between the centers of two neighboring Gaussian windows is 6 pixels. The solid square shows a 32\u00d732-pixel block with k=3, l=3, which encloses effective support of the Gaussian window on top-left (k=0, l=0 is the block with Gaussian window centered at pixel (1,1)). The dashed square shows another 32\u00d732-pixel block with k=3, l=7. The two Gaussian windows on the right are associated with the blocks k=7, l=3 and k=7, l=7, respectively. Cross section of all Gaussian windows with k=7, l\u03b5[0,10], are shown in FIG. 4(b).",
+                                "The curves in FIG. 4(b) correspond to the two Gaussian windows shown in FIG. 4(a). FIG. 4(b) also suggests that some of the Gaussian windows are cut off on the boundaries. This is, however, equivalent to assuming that the pixel values outside the boundary are always zero, and should not affect motion detection based on the change of local phase.",
+                                "Since the phase, and thereby the phase change, is noisier when the local amplitude is low, de-noising can be employed to discount the measurements of (d\u03c6k/dt)(\u03c9x,\u03c9y,t) for low amplitude values Akl(\u03c9x,\u03c9y,t). The de-noising is given by",
+                                "\\(\\begin{matrix}\n{{\\frac{d\ue89e\\; \ue89e\\varphi_{kl}}{dt}\ue89e{\\left( {\\omega_{x},\\omega_{y},t} \\right) \\cdot \\frac{A_{kl}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}{{\\left( {1/M^{2}} \\right)\ue89e{\\sum_{{({\\omega_{x},\\omega_{y}})} \\in \ue503^{2}}\ue89e{A_{kl}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}}} + \\varepsilon}}},} & (33)\n\\end{matrix}\\)",
+                                "where \u03b5>0 is a constant, and (\u03c9x,\u03c9y)\u03b52."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define Gaussian windows",
+                                "compute 2D Fourier transform of windowed video signal",
+                                "evaluate integral using 2D FFT",
+                                "process each block independently",
+                                "discuss window size and object motion detection",
+                                "illustrate block structure with example",
+                                "describe de-noising of phase measurements"
+                            ],
+                            "num_characters": 3534,
+                            "outline_medium": [
+                                "define Gaussian windows",
+                                "compute 2D Fourier transform of windowed video signal",
+                                "evaluate phase and phase change"
+                            ],
+                            "outline_short": [
+                                "define block structure for computing local phase"
+                            ]
+                        },
+                        {
+                            "title": "The Phase-Based Detector",
+                            "paragraphs": [
+                                "An embodiment of a block FFT based algorithm to detect motion using phase information is provided. This can be suitable for an in silico implementation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide embodiment of block FFT based algorithm"
+                            ],
+                            "num_characters": 152,
+                            "outline_medium": [
+                                "provide block FFT based algorithm to detect motion using phase information"
+                            ],
+                            "outline_short": [
+                                "describe phase-based detector algorithm"
+                            ]
+                        },
+                        {
+                            "title": "Radon Transform on the Change of Phases",
+                            "paragraphs": [
+                                "The approximately linear structure of the phase derivative for blocks exhibiting motion is exploited by computing the Radon transform of (d\u03c6kl/dt)(\u03c9x,\u03c9y,t) over a circular bounded domain C={(\u03c9x,\u03c9y)|(\u03c9x,\u03c9y)\u03b52, \u03c92x+\u03c92y<\u03c02}.",
+                                "The Radon transform of the change of phase in the domain C is given by",
+                                "\\(\\begin{matrix}\n{{{\\left( {\ue89e\\frac{d\ue89e\\; \ue89e\\varphi_{kl}}{dt}} \\right)\ue89e\\left( {\\rho,\\theta,t} \\right)} = {\\int_{\\mathbb{R}}\ue89e{\\frac{d\ue89e\\; \ue89e\\varphi_{kl}}{dt}\ue89e\\left( {{{{\\rho \\cdot \\cos}\ue89e\\; \ue89e\\theta} - {s \\cdot \\; \ue89e\\theta}},{{{\\rho \\cdot \\sin}\ue89e\\; \ue89e\\theta} + {{s \\cdot \\cos}\ue89e\\; \ue89e\\theta}},t} \\right)\ue89e1_{C}\ue89e\\left( {{{{\\rho \\cdot \\cos}\ue89e\\; \ue89e\\theta} - {{s \\cdot \\sin}\ue89e\\; \ue89e\\theta}},{{{\\rho \\cdot \\sin}\ue89e\\; \ue89e\\theta} + {{s \\cdot \\cos}\ue89e\\; \ue89e\\theta}}} \\right)\ue89e{ds}}}},\ue89e\\mspace{20mu} \ue89e{where}} & (34) \\\\\n{\\mspace{79mu} \ue89e{{1_{C}\ue89e\\left( {\\omega_{x},\\omega_{y}} \\right)} = \\left\\{ \\begin{matrix}\n1 & {{if}\ue89e\\mspace{14mu} \ue89e\\left( {\\omega_{x},\\omega_{y}} \\right)\ue89eC} \\\\\n0 & {otherwise}\n\\end{matrix} \\right.}} & \\left( {3\ue89e\\; \ue89e5} \\right)\n\\end{matrix}\\)",
+                                "The Radon transform ((d\u03c6kl/dt))(\u03c1,\u03b8,t) evaluated at a particular point (\u03c10,\u03b80,t0) is essentially an integral of (d\u03c6kl/dt)(\u03c9x,\u03c9y,t0) along a line oriented at angle \u03c0/2+\u03b80 with the \u03c9x axis and at distance |\u03c10| along the (cos(\u03b80), sin(\u03b80)) direction from (0,0).",
+                                "If, for a particular k and l, (d\u03b8kl/dt)(\u03c9x,\u03c9y,t)=\u2212vx(t)\u03c9x\u2212vy(t)\u03c9y, then",
+                                "\\(\\begin{matrix}\n{{\\frac{\\left( {\ue89e\\left( {d\ue89e\\; \ue89e{\\varphi_{kl}/{dt}}} \\right)} \\right)\ue89e\\left( {\\rho,\\theta,t} \\right)}{c\ue8a0\\left( {\\rho,\\theta} \\right)} = {\\rho \ue8a0\\left\\lbrack {{{- {v_{x}\ue8a0(t)}}\ue89e\\cos \ue89e\\; \ue89e\\theta} - {{v_{y}\ue8a0(t)}\ue89e\\sin \ue89e\\; \ue89e\\theta}} \\right\\rbrack}},\ue89e{where}} & (36) \\\\\n{{c\ue8a0\\left( {\\rho,\\theta} \\right)} = {\\int_{\\mathbb{R}}\ue89e{1_{C}\ue89e\\left( {{{{\\rho \\cdot \\cos}\ue89e\\; \ue89e\\theta} - {{s \\cdot \\sin}\ue89e\\; \ue89e\\theta}},{{{\\rho \\cdot \\sin}\ue89e\\; \ue89e\\theta} + {{s \\cdot \\cos}\ue89e\\; \ue89e\\theta}}} \\right)\ue89e{{ds}.}}}} & (37)\n\\end{matrix}\\)",
+                                "c(\u03c1,\u03b8) is a correction term due to the different length of line integrals for different values of (\u03c1,\u03b8) in the bounded domain C.",
+                                "After computing the Radon transform of (d\u03c6kl/dt)(\u03c9x,\u03c9y,t) for every block (k,l) at time t0, the Phase Motion Indicator (PMI) is computed. The PMI is defined as",
+                                "\\(\\begin{matrix}\n{{PMI}_{kl} = {\\max\\limits_{\\theta \\in {({0,\\pi})}}\ue89e{\\sum\\limits_{\\rho}\ue89e\\; \ue89e{{\uf603\\frac{\\left( {\ue89e\\left( {d\ue89e\\; \ue89e{\\varphi_{kl}/{dt}}} \\right)} \\right)\ue89e\\left( {\\rho,\\theta,t_{0}} \\right)}{c\ue8a0\\left( {\\rho,\\theta} \\right)}\uf604}.}}}} & (38)\n\\end{matrix}\\)",
+                                "If the PMIkl is larger than a chosen threshold, motion is deemed to occur in block (k,l) at time t0.",
+                                "Using the Radon transform enables separation of rigid motion from noise. Since the phase is sensitive to noise, particularly when the amplitude is very small, the change of phase under noise can have comparable magnitude to that due to motion. The change of phase under noise, however, does not possess the structure suggested by (29) in the (\u03c9x,\u03c9y) domain. Instead, the change is more randomly distributed. Consequently, the PMI value is comparatively small for these blocks.",
+                                "Moreover, the direction of motion, for block (k,l) where motion is detected, can be computed as",
+                                "\\(\\begin{matrix}\n{{{\\hat{\\theta}}_{kl} = {{\\pi\\left( \\frac{{{sign}\ue8a0\\left( {\\sum_{\\rho > 0}\ue89e{\\left( {\ue89e\\left( {d\ue89e\\; \ue89e{\\varphi_{kl}/{dt}}} \\right)} \\right)\ue89e{\\left( {\\rho \ue89e,_{kl},t_{0}} \\right)/{c\ue8a0\\left( {\\rho,\\alpha_{kl}} \\right)}}}} \\right)} + 1}{2} \\right)} + \\alpha_{kl}}},\ue89e\\mspace{20mu} \ue89e{where}} & (39) \\\\\n{\\mspace{79mu} \ue89e{\\alpha_{kl} = {\\underset{\\theta \\in {({0,\\pi})}}{argmax}\ue89e{\\sum\\limits_{\\rho}\ue89e\\; \ue89e{{\uf603\\frac{\\left( {\ue89e\\left( {d\ue89e\\; \ue89e{\\varphi_{kl}/{dt}}} \\right)} \\right)\ue89e\\left( {\\rho,\\theta,t_{0}} \\right)}{c\ue8a0\\left( {\\rho,\\theta} \\right)}\uf604}.}}}}} & (40)\n\\end{matrix}\\)",
+                                "FIG. 5 depicts an example phase-motion detection algorithm in accordance with one or more embodiments. The algorithm depicted can be implemented on a general purpose computer, such as a desktop, laptop, or notebook computer. Further, the algorithm can be implemented as a parallel algorithm, and is capable of exploiting parallel computing capabilities of high-speed servers. FIG. 6 depicts a schematic diagram of the operation of the phase-based motion detection algorithm. Each of the planes depicted in the figure corresponds to a step of the algorithm, and presents an in-progress view of a video frame on which the algorithm operates.",
+                                "The algorithm shown in FIG. 5 can be subdivided into two parts. The first part computes local phase changes and the second part is the phase-based motion detector.",
+                                "In the first part, a screen is divided into overlapping blocks. For example, the red, green, and blue blocks in the plane \u201cdivide into overlapping blocks\u201d correspond to the squares of the same color covering the video stream. A Gaussian window is then applied on each block, followed by a 2D FFT operation that is used to extract the local phase. A temporal high-pass filter is then employed to extract phase changes.",
+                                "In the second part of the algorithm, the PMI is evaluated for each block based on the Radon transform of the local phase changes in each block. Motion is detected for blocks with a PMI larger than a preset threshold, and the direction of motion is computed as in (39). The algorithm of FIG. 5 can be parallelized.",
+                                "The algorithm depicted in FIG. 5 is based on the FFT. The algorithm can be modified by extending the FFT to higher dimensions. For example, this technique is applicable to 3D motion detection and segmentation.",
+                                "According to one or more embodiments, an N-dimensional signal u(x1, . . . ,xn,t) is received and the N-dimensional STFT is applied. Window functions defined as",
+                                "\\(w_{k_{1}},\\ldots \ue89e\\mspace{14mu},{{k_{n}\ue8a0\\left( {x_{1},\\ldots \ue89e\\mspace{14mu},x_{n}} \\right)} = {ce}^{- \\frac{{({x_{1} - x_{k_{1}}})}^{2} + \\ldots + {({x_{n} - x_{k_{n}}})}^{2}}{2\ue89e\\sigma^{2}}}}\\)",
+                                "are constructed, where xki=kib0, ki\u03b5 and b0>0. The scaling constant c guarantees that the windows approximately form a partition of unity. The N-dimensional FFT can then be applied on the windowed signal u(x1, . . . ,xn)wk1, . . . ,kn(x1, . . . ,xn). Motion in the higher N-dimensional space can then be extracted from local phase information.",
+                                "In FIG. 7, an illustrative example depicting how motion is detected using the algorithm of FIG. 5 is provided. FIG. 7(a) depicts a still from a \u201chighway video\u201d evaluated at a particular time t0. In accordance with the algorithm, the screen in FIG. 7(a) is divided into 26\u00d719 overlapping blocks and the window functions are applied to each block. Local phases can then be extracted from the 2D FFT of each windowed block, and the local phase changes are obtained by temporal high-pass filtering. The phase change is shown in FIG. 7(b) for all blocks, with block (12, 11) enlarged in FIG. 7(c) and block (23, 6) enlarged in FIG. 7(d). It should be noted that, at the time of the video frame, block (12, 11) covers a part of the vehicle in motion in the front, and block (23, 6) corresponds to an area of the highway pavement where no motion occurs.",
+                                "FIG. 7(f) depicts, for each block (k,l), the maximum phase change over all (\u03c9x,\u03c9y)\u03b52. That is,",
+                                "\\(\\begin{matrix}\n{\\max\\limits_{{({\\omega_{x},\\omega_{y}})} \\in \ue503^{2}}\ue89e{{\uf603{\\frac{d\ue89e\\; \ue89e\\varphi_{kl}}{dt}\ue89e\\left( {\\omega_{x},\\omega_{y},t_{0}} \\right)}\uf604}.}} & (41)\n\\end{matrix}\\)",
+                                "As shown in the figure, for regions with low amplitude, such as the region depicting the road, when the normalization constant is absent, the derivative of the phase can be noisy. For these blocks the maximum of |(d\u03c6kl/dt)(\u03c9x,\u03c9y,t0)| over all (\u03c9x,\u03c9y)\u03b52 is comparable to the maximum obtained for blocks that cover the vehicles in motion.",
+                                "However, (29) illustrates that the local phase change from multiple filter pairs centered at the same spatial position (k,l) can provide a constraint to robustly estimate motion and its direction. Given the block structure employed in the computation of the local phase, phase change information from multiple sources is utilized.",
+                                "Indeed, if, for a particular block (k,l), (d\u03b8kl/dt)(\u03c9x,\u03c9y,t)=\u2212vx(t)\u03c9x\u2212vy(t)\u03c9y, then (d\u03c6kl/dt)(\u03c9x,\u03c9y,t) will be zero on the line vx(t)\u03c9x+vy(t)\u03c9y=0 and have opposite sign on either side of this line. For example, in FIGS. 7(b) and 7(c), (d\u03c6kl/dt)(\u03c9x,\u03c9y,t0) exhibits this property for blocks that cover a vehicle in motion. The PMI is a tool to evaluate this property.",
+                                "Finally, the PMIs for all blocks are shown compactly in a heat map in FIG. 6(e). The figure shows that the blocks corresponding to the two moving vehicles have a high PMI value while the stationary background areas have a low PMI value, enabling detection of motion by employing thresholding. This is also exhibited in the plane entitled \u201cRadon transform and extract strength orientation of plane\u201d in FIG. 6.",
+                                "Relationship to Biological Motion Detectors. One way to implement local motion detectors is to apply a complex-valued Gabor receptive field (5) to the video signal u, and then take the derivative of the phase with respect to time or apply a high-pass filter on the phase to approximate the derivative.",
+                                "An alternate implementation without explicitly computing the phase is provided herein. This implementation elucidates the relation between the phase-based motion detector disclosed earlier and some elementary motion detection models used in biology, such as the Reichardt motion detector and motion energy detector.",
+                                "Assuming that the local phase \u03b800(\u03c9x,\u03c9y,t) is differentiable, then",
+                                "\\(\\begin{matrix}\n{{\\frac{d\ue89e\\; \ue89e{\\varphi_{00}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}}{dt} = \\frac{\\begin{matrix}\n{{\\left( {{{db}\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}/{dt}} \\right)\ue89e{a\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}} -} \\\\\n{\\left( {{da}\ue89e{\\left( {\\omega_{x},\\omega_{y},t} \\right)/{dt}}} \\right)\ue89e{b\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)}}\n\\end{matrix}}{\\left\\lbrack {a\ue8a0\\left( {\\omega_{x},\\omega_{y},t} \\right)} \\right\\rbrack^{2} + \\left\\lbrack \\left( {\\omega_{x},\\omega_{y},t} \\right) \\right\\rbrack^{2}}},} & (42)\n\\end{matrix}\\)",
+                                "where a(\u03c9x,\u03c9y,t) and b(\u03c9x,\u03c9y,t) are, respectively, the real and imaginary parts of A00(\u03c9x,\u03c9y,t)ej\u03c6(\u03c9x,\u03c9y,t).",
+                                "The denominator of (42) is the square of the local amplitude of u, and the numerator is of the form of a second order Volterra kernel. Thus, the time derivative of the local phase can be viewed as a second order Volterra kernel that processes two normalized spatially filtered inputs V1 and V2.",
+                                "An well-known Reichardt motion detector is shown in FIG. 8. It is equipped with a quadrature pair of Gabor filters whose outputs are r1(t)=a(\u03c9x,\u03c9y,t) and r2(t)=b(\u03c9x,\u03c9y,t), respectively, for a particular value of (\u03c9x,\u03c9y). The pair of Gabor filters that provide these outputs are the real and imaginary parts of w(x,y)e\u2212j(\u03c9x x+\u03c9y y). It also includes a temporal high-pass filter g1(t) and temporal low-pass filter g2(t). The output of the elaborated Reichardt detector follows the diagram in FIG. 8 and can be expressed as",
+                                "(r2*g1)(t)(r1*g2)(t)\u2212(r1*g1)(t)(r2*g2)(t).\u2003\u2003(43)",
+                                "The response can also be characterized by a second order Volterra kernel. It should be noted that there is a similarity between (43) and the numerator of (42). In fact, the phase-based motion detector shares some properties with the Reichardt motion detector. For example, a single phase-based motion detector is tuned to the temporal frequency of a moving sinusoidal grating.",
+                                "Since the motion energy detector is formally equivalent to an elaborated Reichardt motion detector, the structure of the motion energy detector with divisive normalization is also similar to the phase-based motion detector.",
+                                "The phase-based motion detection algorithm can be applied to video sequences to detect local motion. Further, the detected local motion can be used in motion segmentation tasks. In one embodiment, the algorithm can be implemented in PyCUDA and executed on an NVIDIA GeForce GTX TITAN GPU. In some embodiments, computations use single precision floating points. The phase-based motion detection algorithm can also be implemented in real-time using parallel computing devices. In some embodiments, the algorithm can be implemented on a fast GPU based on the FFT and Matrix-Matrix multiplication. Such operations can be implemented in hardware, for example, in FPGAs.",
+                                "In certain embodiments, the disclosed motion detection algorithm can be applied to video sequences that do not exhibit camera egomotion. For these video sequences, the standard deviation of the Gaussian window functions can be set to 4 pixels and the block size can be set to 32\u00d732 pixels."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "compute Radon transform of phase derivative",
+                                "define Radon transform",
+                                "discuss linear structure of phase derivative",
+                                "compute Radon transform for blocks exhibiting motion",
+                                "define correction term",
+                                "compute PMI",
+                                "discuss PMI computation",
+                                "compute direction of motion",
+                                "discuss direction of motion computation",
+                                "illustrate phase-motion detection algorithm",
+                                "describe algorithm implementation",
+                                "discuss parallel computing capabilities",
+                                "illustrate algorithm operation",
+                                "divide algorithm into two parts",
+                                "discuss first part of algorithm",
+                                "apply Gaussian window",
+                                "compute local phase",
+                                "employ temporal high-pass filter",
+                                "discuss second part of algorithm",
+                                "evaluate PMI",
+                                "detect motion",
+                                "compute direction of motion",
+                                "discuss algorithm parallelization",
+                                "discuss extension to higher dimensions"
+                            ],
+                            "num_characters": 12466,
+                            "outline_medium": [
+                                "compute Radon transform of phase derivative",
+                                "define Radon transform",
+                                "compute correction term due to different length of line integrals",
+                                "compute Phase Motion Indicator (PMI)",
+                                "define PMI",
+                                "compute direction of motion",
+                                "define direction of motion",
+                                "explain separation of rigid motion from noise",
+                                "explain structure of phase change under motion",
+                                "explain structure of phase change under noise",
+                                "illustrate phase-motion detection algorithm",
+                                "illustrate operation of phase-based motion detection algorithm"
+                            ],
+                            "outline_short": [
+                                "compute Radon transform of phase derivative",
+                                "define Radon transform of phase derivative",
+                                "compute PMI from Radon transform",
+                                "define PMI",
+                                "compute direction of motion from PMI",
+                                "define direction of motion computation"
+                            ]
+                        },
+                        {
+                            "title": "Examples of Phase-Based Motion Detection",
+                            "paragraphs": [
+                                "A first video, illustrated in FIG. 9, is a viewpoint from a highway surveillance camera (\u201chighway video\u201d) under good illumination conditions and high contrast. The video has moderate noise, particularly on the road surface. The detected motion is shown in the top left panel of FIG. 9. The phase-based motion detection algorithm captures both the moving cars and the tree leaves moving (due to the wind). As shown, in the time interval between the 9th and 10th second, the camera was slightly moved left and rightwards within 5 frames, again possibly due to the wind. However, movement due to this shift is captured by the motion detection algorithm and the algorithm determines the direction of this movement. In this video, we already noted that this algorithm suffers from the aperture problem. For example, in front of the van where a long, horizontal edge is present, the detected motion is mostly pointing downwards. In addition to moving downwards, the edge is also moving to the left, however. This is expected since the algorithm only detects motion locally and does not take into account the overall shape of any object.",
+                                "The range of the screen intensity is squeezed from [0, 1] to [0.2, 0.4], resulting in a video with a lower mean luminance and lower contrast. The motion detection results on the low-contrast video are shown in the bottom panels of FIG. 9. FIG. 9 shows that while the motion detection performance is degraded, the phase-based motion detector detects most of the moving vehicles.",
+                                "A second video depicts the viewpoint of a surveillance camera in a train station (\u201ctrain station video\u201d). The video exhibits moderate room light with a low noise level. The front side of the video has high contrast; illumination on the back side is low. The detected motion is shown in the video of FIG. 10. As shown, movements of people are successfully captured by the motion detection algorithm.",
+                                "A third video is a \u201cthermal video\u201d with a large amount of background noise (\u201cthermal video\u201d). In this example, the threshold for detecting motion is raised by approximately 60% in order to mitigate the increased level of noise. The detected motion is shown in the video of FIG. 11.",
+                                "A fourth video depicts the viewpoint of a highway surveillance camera at night (\u201cwinterstreet video\u201d). As shown, the overall illumination on the lower-left side is low whereas illumination is moderate on the upper-right side where the road is covered by snow. The detected motions are shown in the video in FIG. 12. It should be noted that car movements are successfully detected. Car movements on the lower-left side, however, suffer from low illumination and some parts of the car are not detected well due to the trade-off employed for noise suppression.",
+                                "With a higher threshold, embodiments of the phase-base motion detection algorithm are able to detect motion under noisy conditions. This is depicted in FIGS. 13 and 14, in which Gaussian white noise with a standard deviation of 5% of the maximum luminance range has been added to the original \u201chighway video\u201d and \u201ctrain station video.\u201d",
+                                "Motion Segmentation. The detected motion signals in the depicted video sequences can be useful for segmenting moving objects from the background. To this end, a larger threshold is applied to only signal motion for salient objects. The 32\u00d732 blocks, however, introduce large boundaries around the moving objects. To reduce the boundary and to segment the moving object more closely to the actual object boundary, the motion detection algorithm can be applied around the detected boundary with 16\u00d716 blocks. If 16\u00d716 blocks do not indicate motion, then the corresponding area can be removed from the segmented object area.",
+                                "FIG. 15 depicts a result of applying embodiments of the motion based segmentation on a 2-second segment of the \u201chighway video.\u201d With a higher threshold, the movement of the leaves is no longer picked up by the phase-based motion detector. Therefore, only the cars were identified as moving objects. Although the moving objects are not perfectly segmented on their boundary, they are mostly captured.",
+                                "FIGS. 16-18 depict the results of applying the motion segmentation to a 2-second segment of the \u201ctrain station video,\u201d the \u201cthermal video,\u201d and the \u201cwinterstreet video,\u201d respectively. As shown in FIG. 16, the segmentation results in the detection of people moving in the scene, as opposed to non-salient objects that can be detected. FIG. 17 also illustrates the segmentation of moving people, as opposed to non-salient objects, in the \u201cthermal video\u201d scene. Finally, FIG. 18 depicts the segmentation of moving cars in the \u201cwinterstreet video\u201d scene, as opposed to non-salient objects that otherwise can be detected (such as smaller objects that are disturbed by wind movement). These results show that for the purpose of detecting local motion and its use as a motion segmentation cue, the local phase-based motion detector works as well as, if not better than, a simple thresholding segmentation using an optic flow based algorithm.",
+                                "Although one or more embodiments have been described herein in some detail for clarity of understanding, it should be recognized that certain changes and modifications can be made without departing from the spirit of the disclosure. The embodiments described herein can employ various computer-implemented operations involving data stored in computer systems. For example, these operations can require physical manipulation of physical quantitiesusually, though not necessarily, these quantities can take the form of electrical or magnetic signals, where they or representations of them are capable of being stored, transferred, combined, compared, or otherwise manipulated. Further, such manipulations are often referred to in terms, such as producing, yielding, identifying, determining, or comparing. Any operations described herein that form part of one or more embodiments of the disclosure can be useful machine operations. In addition, one or more embodiments of the disclosure also relate to a device or an apparatus for performing these operations. The apparatus can be specially constructed for specific required purposes, or it can be a general purpose computer selectively activated or configured by a computer program stored in the computer. In particular, various general purpose machines can be used with computer programs written in accordance with the teachings herein, or it can be more convenient to construct a more specialized apparatus to perform the required operations.",
+                                "The embodiments described herein can be practiced with other computer system configurations including hand-held devices, microprocessor systems, microprocessor-based or programmable consumer electronics, minicomputers, mainframe computers, and the like.",
+                                "One or more embodiments of the present disclosure can be implemented as one or more computer programs or as one or more computer program modules embodied in one or more computer readable media. The term computer readable medium refers to any data storage device that can store data which can thereafter be input to a computer system\u2014computer readable media can be based on any existing or subsequently developed technology for embodying computer programs in a manner that enables them to be read by a computer. Examples of a computer readable medium include a hard drive, network attached storage (NAS), read-only memory, random-access memory (e.g., a flash memory device), a CD (Compact Discs)\u2014CD-ROM, a CD-R, or a CD-RW, a DVD (Digital Versatile Disc), a magnetic tape, and other optical and non-optical data storage devices. The computer readable medium can also be distributed over a network coupled computer system so that the computer readable code is stored and executed in a distributed fashion.",
+                                "Although one or more embodiments of the present disclosure have been described in some detail for clarity of understanding, it will be apparent that certain changes and modifications can be made within the scope of the claims. Accordingly, the described embodiments are to be considered as illustrative and not restrictive, and the scope of the claims is not to be limited to details given herein, but can be modified within the scope and equivalents of the claims. In the claims, elements do not imply any particular order of operation, unless explicitly stated in the claims.",
+                                "Many variations, modifications, additions, and improvements can be made. Plural instances can be provided for components, operations or structures described herein as a single instance. Boundaries between various components, operations and data stores are somewhat arbitrary, and particular operations are illustrated in the context of specific illustrative configurations. Other allocations of functionality are envisioned and can fall within the scope of the disclosure(s). In general, structures and functionality presented as separate components in exemplary configurations can be implemented as a combined structure or component. Similarly, structures and functionality presented as a single component can be implemented as separate components. These and other variations, modifications, additions, and improvements can fall within the scope of the appended claim(s)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce highway video",
+                                "illustrate motion detection results",
+                                "discuss aperture problem",
+                                "introduce low-contrast video",
+                                "show motion detection results on low-contrast video",
+                                "introduce train station video",
+                                "illustrate motion detection results",
+                                "introduce thermal video",
+                                "show motion detection results on thermal video",
+                                "introduce winterstreet video",
+                                "illustrate motion detection results",
+                                "discuss noise suppression trade-off",
+                                "introduce motion segmentation",
+                                "discuss block size reduction",
+                                "illustrate motion segmentation results",
+                                "discuss applicability to various videos",
+                                "discuss computer-implemented operations",
+                                "discuss scope of disclosure"
+                            ],
+                            "num_characters": 9256,
+                            "outline_medium": [
+                                "illustrate highway video",
+                                "illustrate train station video",
+                                "illustrate thermal video",
+                                "illustrate winterstreet video",
+                                "demonstrate motion detection under noisy conditions",
+                                "describe motion segmentation",
+                                "illustrate motion segmentation results",
+                                "discuss computer-implemented operations",
+                                "discuss scope and variations of embodiments"
+                            ],
+                            "outline_short": [
+                                "illustrate motion detection in various videos",
+                                "demonstrate motion segmentation using phase-based motion detection",
+                                "discuss applicability of embodiments to various computer systems",
+                                "provide general statements on scope and variations of the disclosure"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce phase information in images",
+                        "motivate local phase information for motion detection",
+                        "define global and local phase of images",
+                        "discuss amplitude and phase representation of images"
+                    ],
+                    "num_characters": 2355,
+                    "outline_medium": [
+                        "introduce phase information in images",
+                        "motivate local phase information for motion detection"
+                    ],
+                    "outline_short": [
+                        "introduce phase information in image representation"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A computer-implemented method for motion detection, the computer comprising a processor, memory, input device, and output device, the method comprising:\nreceiving data representing a time sequence of frames of an n-dimensional signal, where n is an integer greater than or equal to 2;\nconstructing an n-dimensional Gaussian window;\ndividing each frame of the received data into a plurality of blocks, each block having a plurality of pixels;\nfor each block in the plurality of blocks:\nmultiplying each pixel in the block with a corresponding pixel of the Gaussian window to obtain a windowed signal block;\ncomputing the FFT of the windowed signal block to obtain an amplitude and phase thereof;\ndetecting the occurrence of motion in the block based on the computed phase of the windowed signal block.",
+        "2. The method of claim 1, further comprising\napplying a high-pass filter to the phase of the FFT of the windowed signal block to obtain local phase changes thereof.",
+        "3. The method of claim 2, further comprising\ncomputing a radon transform of the local phase changes of the windowed signal block.",
+        "4. The method of claim 3, wherein the detecting motion comprises:\ncomputing a phase motion indicator based on the computed radon transform;\ndetermining whether the phase motion indicator exceeds a predetermined threshold; and\nif the phase motion indicator exceeds the predetermined threshold, then determining that motion has occurred in the block.",
+        "5. The method of claim 4, further comprising\ncomputing a direction of the detected motion based on the computed radon transform.",
+        "6. The method of claim 1, wherein two or more blocks in the plurality of blocks overlap with each other.",
+        "7. The method of claim 1, wherein the signal is a 2-dimensional video stream.",
+        "8. A system, comprising:\na processor; and\na memory, wherein the processor is programmed to carry out a method of motion detection, the method comprising:\nreceiving data representing a time sequence of frames of an n-dimensional signal, where n is an integer greater than or equal to 2;\nconstructing an n-dimensional Gaussian window;\ndividing each frame of the received data into a plurality of blocks, each block having a plurality of pixels;\nfor each block in the plurality of blocks:\nmultiplying each pixel in the block with a corresponding pixel of the Gaussian window to obtain a windowed signal block;\ncomputing the FFT of the windowed signal block to obtain an amplitude and phase thereof;\ndetecting the occurrence of motion in the block based on the computed phase of the windowed signal block.",
+        "9. The system of claim 8, wherein the method further comprises\napplying a high-pass filter to the phase of the FFT of the windowed signal block to obtain local phase changes thereof.",
+        "10. The system of claim 9, wherein the method further comprises\ncomputing a radon transform of the local phase changes of the windowed signal block.",
+        "11. The system of claim 10, wherein the detecting motion comprises:\ncomputing a phase motion indicator based on the computed radon transform;\ndetermining whether the phase motion indicator exceeds a predetermined threshold; and\nif the phase motion indicator exceeds the predetermined threshold, then determining that motion has occurred in the block.",
+        "12. The system of claim 11, wherein the method further comprises\ncomputing a direction of the detected motion based on the computed radon transform.",
+        "13. The system of claim 8, wherein two or more blocks in the plurality of blocks overlap with each other.",
+        "14. The system of claim 8, wherein the signal is a 2-dimensional video stream.",
+        "15. A non-transitory computer readable medium that stores instruction that, when executed by a processor, cause the processor to carry out a method of motion detection, the method comprising:\nreceiving data representing a time sequence of frames of an n-dimensional signal, where n is an integer greater than or equal to 2;\nconstructing an n-dimensional Gaussian window;\ndividing each frame of the received data into a plurality of blocks, each block having a plurality of pixels;\nfor each block in the plurality of blocks:\nmultiplying each pixel in the block with a corresponding pixel of the Gaussian window to obtain a windowed signal block;\ncomputing the FFT of the windowed signal block to obtain an amplitude and phase thereof;\ndetecting the occurrence of motion in the block based on the computed phase of the windowed signal block.",
+        "16. The non-transitory computer readable medium of claim 15, wherein the method further comprises\napplying a high-pass filter to the phase of the FFT of the windowed signal block to obtain local phase changes thereof.",
+        "17. The non-transitory computer readable medium of claim 16, wherein the method further comprises\ncomputing a radon transform of the local phase changes of the windowed signal block.",
+        "18. The non-transitory computer readable medium of claim 17, wherein the detecting motion comprises:\ncomputing a phase motion indicator based on the computed radon transform;\ndetermining whether the phase motion indicator exceeds a predetermined threshold; and\nif the phase motion indicator exceeds the predetermined threshold, then determining that motion has occurred in the block.",
+        "19. The non-transitory computer readable medium of claim 18, wherein the method further comprises\ncomputing a direction of the detected motion based on the computed radon transform.",
+        "20. The non-transitory computer readable medium of claim 18, wherein the signal is a 2-dimensional video stream."
+    ]
+}

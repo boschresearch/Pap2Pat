@@ -1,0 +1,200 @@
+{
+    "id": "https://semopenalex.org/work/W2132619562",
+    "authors": [
+        "John Quackenbush",
+        "Charles M. Perou",
+        "Joel S. Parker",
+        "Xiaping He",
+        "Samuel Leung",
+        "Torsten O. Nielsen",
+        "Matthew J. Ellis",
+        "Sherri R. Davies",
+        "Elaine R. Mardis",
+        "Juan Palazzo",
+        "Maggie C.U. Cheang",
+        "Philip S. Bernard",
+        "J. S. Marron",
+        "Andrew B. Nobel",
+        "Valeriu David",
+        "Michael E. Mullins",
+        "Inge J. Stijleman",
+        "Zhiyuan Hu",
+        "Tammi L. Vickery",
+        "Christiane Fauron"
+    ],
+    "title": "Supervised Risk Predictor of Breast Cancer Based on Intrinsic Subtypes",
+    "date": "2009-03-10",
+    "abstract": "PURPOSE To improve on current standards for breast cancer prognosis and prediction of chemotherapy benefit by developing a risk model that incorporates the gene expression-based intrinsic subtypes luminal A, luminal B, HER2-enriched, and basal-like. METHODS A 50-gene subtype predictor was developed using microarray and quantitative reverse transcriptase polymerase chain reaction data from 189 prototype samples. Test sets from 761 patients (no systemic therapy) were evaluated for prognosis, and 133 patients were evaluated for prediction of pathologic complete response (pCR) to a taxane and anthracycline regimen.The intrinsic subtypes as discrete entities showed prognostic significance (P = 2.26E-12) and remained significant in multivariable analyses that incorporated standard parameters (estrogen receptor status, histologic grade, tumor size, and node status). A prognostic model for node-negative breast cancer was built using intrinsic subtype and clinical information. The C-index estimate for the combined model (subtype and tumor size) was a significant improvement on either the clinicopathologic model or subtype model alone. The intrinsic subtype model predicted neoadjuvant chemotherapy efficacy with a negative predictive value for pCR of 97%. CONCLUSION Diagnosis by intrinsic subtype adds significant prognostic and predictive information to standard parameters for patients with breast cancer. The prognostic properties of the continuous risk score will be of value for the management of node-negative breast cancers. The subtypes and risk score can also be used to assess the likelihood of efficacy from neoadjuvant chemotherapy.",
+    "sections": [
+        {
+            "title": "Purpose",
+            "paragraphs": [
+                "To improve on current standards for breast cancer prognosis and prediction of chemotherapy benefit by developing a risk model that incorporates the gene expression-based \"intrinsic\" subtypes luminal A, luminal B, HER2-enriched, and basal-like."
+            ],
+            "subsections": [
+                {
+                    "title": "Methods",
+                    "paragraphs": [
+                        "A 50-gene subtype predictor was developed using microarray and quantitative reverse transcriptase polymerase chain reaction data from 189 prototype samples. Test sets from 761 patients (no systemic therapy) were evaluated for prognosis, and 133 patients were evaluated for prediction of pathologic complete response (pCR) to a taxane and anthracycline regimen."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Results",
+                            "paragraphs": [
+                                "The intrinsic subtypes as discrete entities showed prognostic significance (P \u03ed 2.26E-12) and remained significant in multivariable analyses that incorporated standard parameters (estrogen receptor status, histologic grade, tumor size, and node status). A prognostic model for nodenegative breast cancer was built using intrinsic subtype and clinical information. The C-index estimate for the combined model (subtype and tumor size) was a significant improvement on either the clinicopathologic model or subtype model alone. The intrinsic subtype model predicted neoadjuvant chemotherapy efficacy with a negative predictive value for pCR of 97%."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Conclusion",
+                            "paragraphs": [
+                                "Diagnosis by intrinsic subtype adds significant prognostic and predictive information to standard parameters for patients with breast cancer. The prognostic properties of the continuous risk score will be of value for the management of node-negative breast cancers. The subtypes and risk score can also be used to assess the likelihood of efficacy from neoadjuvant chemotherapy."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "INTRODUCTION",
+                    "paragraphs": [
+                        "Breast cancer is a heterogeneous disease with respect to molecular alterations, cellular composition, and clinical outcome. This diversity creates a challenge in developing tumor classifications that are clinically useful with respect to prognosis or prediction. Gene expression profiling by microarray has given us insight into the complexity of breast tumors and can be used to provide prognostic information beyond standard clinical assessment. [1][2][3][4][5][6][7] For example, the 21-gene OncotypeDx assay (Genome Health Inc, Redwood City, CA) can be used to risk stratify earlystage estrogen receptor (ER) -positive breast cancer. 4,5 Another strong predictor of outcome in ER-positive disease is proliferation or genomic grade. [7][8][9] In addition, the 70-gene MammaPrint (Agendia, Huntington Beach, CA) microarray assay has shown prognostic significance in ERpositive and ER-negative early-stage node-negative breast cancer. 2,3 The \"intrinsic\" subtypes luminal A (LumA), luminal B (LumB), HER2-enriched, basal-like, and normal-like have been extensively studied by microarray and hierarchical clustering analysis. 1,6,[10][11][12] Here, we study the utility of these subtypes alone and as part of a risk of relapse predictor in two cohorts: (1) patients receiving no adjuvant systemic therapy, and (2) patients undergoing paclitaxel, fluorouracil, doxorubicin, and cyclophosphamide (T/FAC) neoadjuvant chemotherapy. The risk of relapse models were compared with standard models using pathologic stage, grade, and routine biomarker status (ER and HER2)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "METHODS",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Samples and Clinical Data",
+                            "paragraphs": [
+                                "Patient cohorts for training and test sets consisted of samples with data already in the public domain 7,[13][14][15][16] and fresh frozen and formalin-fixed paraffin-embedded (FFPE) tissues collected under institutional review boardapproved protocols at the University of British Columbia (Vancouver, British Columbia, Canada), University of North Carolina (Chapel Hill, NC), Thomas Jefferson University (Philadelphia, PA), Washington University (St Louis, MO), and the University of Utah (Salt Lake City, UT). The training set for subtype prediction consisted of 189 breast tumor samples and 29 normal samples from heterogeneously treated patients given the standard of care dictated by their histology, stage, and clinical molecular marker status. The risk of relapse (ROR) models for prognosis in untreated patients were trained using the node-negative, untreated cohort of the Netherlands Cancer Institute (NKI) data set (n \u03ed 141). 13 The subtype prediction and ROR models were independently tested for prognosis 7,14,15 and chemotherapy response. 16 The Hess et al data set 16 used for prediction of chemotherapy sensitivity was not associated with long-term outcome data and was evaluated based on information for pathologic complete response (pCR). Clinical characteristics of the microarray training and test sets are presented in Table 1. 17"
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Nucleic Acid Extraction",
+                            "paragraphs": [
+                                "Total RNA was purified from fresh-frozen samples for microarray using the Qiagen RNeasy Midi Kit according to the manufacturer's protocol (Qia-gen, Valencia, CA). The integrity of the RNA was determined using an Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, CA). The High Pure RNA Paraffin Kit (Roche Applied Science, Indianapolis, IN) was used to extract RNA from FFPE tissues (2 \u03eb 10-m sections or 1.5-mm punches) for quantitative reverse transcriptase polymerase chain reaction (qRT-PCR). Contaminating DNA was removed using Turbo DNase (Ambion, Austin, TX). The yield of total RNA was assessed using the NanoDrop ND-1000 Spectrophotometer (NanoDrop Technologies Inc, Rockland, DE)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Reverse Transcription and qPCR",
+                            "paragraphs": [
+                                "First-strand cDNA was synthesized using Superscript III reverse transcriptase (first Strand Kit; Invitrogen, Carlsbad, CA) and a mixture of random hexamers and gene-specific primers. PCR amplification and fluorescent melting curve analysis was done on the LightCycler 480 using SYBR Green I Master Mix (Roche Applied Science). A detailed protocol of the PCR conditions can be found in the Appendix (online only)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Microarray",
+                            "paragraphs": [
+                                "Total RNA isolation, labeling, and hybridizations on Agilent human 1Av2 microarrays or custom-designed Agilent human 22k arrays were performed using the protocol described in Hu et al. 6 All microarray data have been deposited into the Gene Expression Omnibus 18 under the accession number of GSE10886."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Identification of Prototypical Intrinsic Subtype Samples and Genes",
+                            "paragraphs": [
+                                "To develop a clinical test that could make an intrinsic subtype diagnosis, we used a method to objectively select prototype samples for training and then predicted subtypes independent of clustering. To identify prototypic tumor samples, we started with an expanded \"intrinsic\" gene set comprised of genes found in four previous microarray studies. 1,6,8,11 The normal-like class was represented using true \"normals\" from reduction mammoplasty or grossly uninvolved tissue, thus we have removed the normal-like class from all outcome analyses and consider this classification as a quality-control measure. A total of 189 breast tumors across 1,906 \"intrinsic\" genes were analyzed by hierarchical clustering (median centered by feature/gene, Pearson correlation, average linkage), 19 and the sample dendrogram was analyzed using \"SigClust\". 20 A total of 122 breast cancers from 189 individuals profiled by qRT-PCR and microarray had significant clusters representing the \"intrinsic\" subtypes luminal A (LumA), luminal B (LumB), HER2-enriched, basal-like, and normal-like (Appendix Fig A1, online only). Four additional groups were identified in the training set as significantly reproducible clusters. All four of these groups have similar expression profiles as the luminal tumors and could represent intermediate states or tissue heterogeneity."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Gene Set Reduction Using Prototype Samples and qRT-PCR",
+                            "paragraphs": [
+                                "A minimized gene set was derived from the prototypic samples using the qRT-PCR data for 161 genes that passed FFPE performance criteria established in Mullins et al. 21 Several minimization methods were used, including top \"N\" t test statistics for each group, 22 top cluster index scores, 23 and the remaining genes after \"shrinkage\" of modified t test statistics. 24 Cross-validation (random 10% left out in each of 50 cycles) was used to assess the robustness of the minimized gene sets. The \"N\" t test method was chosen due to having the lowest cross-validation (random 10% left out of each iteration) error. The 50 genes selected and their contribution to distinguishing the different subtypes is provided in Appendix Figure A2 (online only)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Sample Subtype Prediction",
+                            "paragraphs": [
+                                "The 50 gene set was compared for reproducibility of classification across three centroid-based prediction methods: Prediction Analysis of Microarray (PAM), 24 a simple nearest centroid, 6 and Classification of Nearest Centroid. 25 In all cases, the subtype classification is assigned based on the nearest of the five centroids. Because of its reproducibility in subtype classification, the final algorithm consisted of centroids constructed as described for the PAM algorithm 24 and distances calculated using Spearman's rank correlation. The centroids of the training set using the 50-gene classifier (henceforth called PAM50) are shown in Appendix Figure A3 (online only). Abbreviations: RFS, relapse-free survival; NA, not applicable; ER, estrogen receptor."
+                            ],
+                            "subsections": [
+                                {
+                                    "title": "\u202b\u0621\u202c",
+                                    "paragraphs": [
+                                        "Compiled from Ivshina et al, 15 Loi et al, 7 van de Vijver et al, 13 Wang et al, 14 and University of North Carolina Microarray Database. 17 \u2020Hess et al. 16 "
+                                    ],
+                                    "subsections": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Prognostic and Predictive Models Using Clinical and Molecular Subtype Data",
+                            "paragraphs": [
+                                "Univariate and multivariable analyses were used to determine the significance of the intrinsic subtypes (LumA, LumB, HER2-enriched, and basal-like) in untreated patients and in patients receiving neoadjuvant chemotherapy. For prognosis, subtypes were compared with standard clinical variables (tumor size [T], node status [N], ER status, and histologic grade), with time to relapse (ie, any event) as the end point. Subtypes were compared with grade and molecular markers (ER, progesterone receptor [PR], HER2) for prediction in the neoadjuvant setting because pathologic staging is not applicable. Likelihood ratio tests were done to compare models of available clinical data, subtype data, and combined clinical and molecular variables. Categoric survival analyses were performed using a log-rank test and visualized with Kaplan-Meier plots."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Developing Risk Models With Clinical and Molecular Data",
+                            "paragraphs": [
+                                "The subtype risk model was trained with a multivariable Cox model using Ridge regression fit to the node-negative, untreated subset of the van de Vijver cohort. 13 A ROR score was assigned to each test case using correlation to the subtype alone (1) (ROR-S) or using subtype correlation along with tumor size (2) (ROR-C):",
+                                "The sum of the coefficients from the Cox model is the ROR score for each patient. To classify samples into specific risk groups, we chose thresholds from the training set that required no LumA sample to be in the high-risk group and no basal-like sample to be in the low-risk group. Thresholds were determined from the training set and remained unchanged when evaluating test cases. SiZer analysis was performed to characterize the relationship between the ROR score and relapse-free survival 26 "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Comparison of Relapse Prediction Models",
+                            "paragraphs": [
+                                "Four models were compared for prediction of relapse: (1) a model of clinical variables alone (tumor size, grade, and ER status), ( 2 ROR-C, and (4) a model combining subtype, tumor size, and grade. The C-index 28 was chosen to compare the strength of the various models. For each model, the C-index was estimated from 100 randomizations of the untreated cohort into two thirds training set and one thirds test set. The C-index was calculated for each test set to form the estimate of each model, and C-index estimates were compared across models using the two sample t test."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Distribution of Intrinsic Subtypes in Comparison With Clinical Marker Status",
+            "paragraphs": [
+                "Of the 626 ER-positive tumors analyzed in the microarray test set (Table 1), 73% were luminal (A or B), 11% were HER2-enriched, 5% were basal-like, and 12% were normal-like. Conversely, the ERnegative tumors comprised 11% luminal, 32% HER2-enriched, 50% basal-like, and 7% normal-like. The neoadjuvant study from Hess et al 16 provided an opportunity to analyze the subtype distribution across clinical HER2 (HER2clin) status. Sixty-four percent (21 of 33) of HER2clin-positive were classified as HER2-enriched by gene expression. Only two (6%) of 33 HER2clin-positive tumors were classified as basal-like. Although the majority of the HER2clin-negative tumors were luminal (56%), 9% were classified as HER2-enriched and 24% were basal-like. Thus although the subtype diagnoses have markedly different distributions depending on ER or HER2 status, all subtypes were represented in ER-positive, ER-negative, HER2positive, and HER2-negative categories. This finding demonstrates that ER and HER2 status alone are not accurate surrogates for true intrinsic subtype status. The intrinsic subtypes showed a significant impact on prognosis for relapse-free survival in untreated (no systemic therapy) patients and when stratified by ER status (Fig 1 )."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Risk of Relapse Models for Prognosis in Node-Negative Breast Cancer",
+            "paragraphs": [
+                "Cox models were tested using intrinsic subtype alone and together with clinical variables. Table 2 shows the multivariable analyses of these models in an independent cohort of untreated patients. 7,[13][14][15] In model A, subtypes, tumor size (T1 v greater), and histologic grade were found to be significant factors for ROR. The great majority of basal-like tumors (95.9%) were found to be medium or high grade, and therefore, in model B, which is an analysis without grade, basallike becomes significant. Model C shows the significance of the subtypes in the node-negative population. All models that included subtype and clinical variables were significantly better than either clinical alone (P \u03fd .0001) or subtype alone (P \u03fd .0001). We trained a relapse classifier to predict outcomes within the context of the intrinsic subtypes and clinical variables. A node-negative, no systemic treatment cohort (n \u03ed 141) was selected from the van de Vijver microarray data set 13 to train the ROR model and to select cut-offs (Appendix Fig A5, online only). Figure 2 provides a comparison of the different models using the C-index. There is a clear improvement in prediction with subtype (ROR-S) relative to the model of available clinical variables only (Fig 2A ). A combination of clinical variables and subtype (ROR-C) is also a significant improvement over either individual predictor. However, information on grade did not significantly improve the C-index in the combined model, indicating that the prognostic value of grade had been superseded by information provided by the intrinsic subtype model. Figure 2 "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Subtypes and Prediction of Response to Neoadjuvant T/FAC Treatment",
+            "paragraphs": [
+                "The Hess et al 16 study that performed microarray on tumors from patients treated with T/FAC allowed us to investigate the relationship between the subtypes and clinical markers and how each relates to pCR. Table 3 shows the multivariable analyses of the subtypes together with clinical molecular markers (ER, PR, HER2) and either with (model A) or without (model B) histologic grade. The only significant variables in the context of this study were the intrinsic subtypes. We found 94% sensitivity and 97% negative predictive value for identifying nonresponders to chemotherapy when using the ROR-S model to predict pCR (Fig 3A). The relationship between high-risk scores and a higher probability of pCR (Fig 3B) is consistent with the conclusion that indolent ER-positive tumors (LumA) are less responsive to chemotherapy. However, unlike ROR for prognosis, a plateau seems to be reached for the ROR versus probability of pCR, confirming the presence of significant chemotherapy resistance among the highest risk tumors."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Subtype Prediction and Outcome on FFPE Samples Using qRT-PCR",
+            "paragraphs": [
+                "The subtype classifier and risk predictor were further validated using a heterogeneously treated cohort of 279 patients with FFPE samples archived between 1976 and 1995. The subtype classifications followed the same survival trends as seen in the microarray data, and the ROR score was significant for long-term relapse predictions (Appendix Fig A6A, online only). This old-age sample set was also scored for standard clinical markers (ER and HER2) by immunohistochemistry (IHC) and compared with the gene expression-based test. Analysis of ESR1 and ERBB2 by gene expression showed high sensitivity and specificity as compared with the IHC assay (Appendix Figs A6B andA6C). The advantages of using qRT-PCR versus IHC are that it is less subjective than visual interpretation and it is quantitative."
+            ],
+            "subsections": [
+                {
+                    "title": "DISCUSSION",
+                    "paragraphs": [
+                        "There have been numerous studies that have analyzed interactions between breast cancer intrinsic subtypes and prognosis, 1,6,11 genetic alterations, 29 and drug response. 30 Because of the potential clinical value of subtype distinctions, we developed a standardized method of classification using a statistically derived gene and sample set that we have validated across multiple cohorts and platforms. The large and diverse test sets allowed us to evaluate the performance of the PAM50 assay at a population level and in relation to standard molecular markers. An important finding from these analyses is that all of the intrinsic subtypes are present and clinically significant in terms of outcome predictions in cohorts of patients diagnosed with either ER-positive or ER-negative tumors (Fig 1). Thus the molecular subtypes are not simply another method of classification that reflects ER status.",
+                        "Stratification of the subtypes within HER2clin-positive samples did not show significance in outcome predictions; however, there were fewer numbers and less follow-up in this category. Nevertheless, there was clear separation of the curves for those HER2clin-positive patients classified as HER2-enriched (worse prognosis) compared with those with luminal subtypes (better prognosis). We found that 6% of HER2clin-positive tumors were classified as basal-like. It has been suggested that HER2clin-positive tumors expressing basal markers may have worse outcome when given a chemotherapeutic regimen of trastuzumab and vinorelbine. 31 Approximately one third of the HER2-enriched expression subtype were not HER2clin-positive tumors, suggesting the presence of an ER-negative, nonbasal subtype that is not driven by HER2 gene amplification. The prototype samples selected to represent the HER2enriched group had high expression of the 17q12-21 amplicon genes (HER2/ERBB2 and GRB7), FGFR4 (5q35), TMEM45B (11q24), and GPR160 (3q26). In addition, other growth factor receptors such as epidermal growth factor receptor are included within the PAM50 and could potentially also contribute to the HER2-enriched genomic classification.",
+                        "We found that approximately 10% of breast cancers were classified as normal-like and can be either ER-positive or ER-negative and have an intermediate prognosis. Because the normal-like classification was developed by training on normal breast tissue, we suspect that the normal-like class is mainly an artifact of having a high percentage of normal \"contamination\" in the tumor specimen. Other explanations include a group of slow-growing basal-like tumors that lack expression of the proliferation genes or a potential new subtype that has been referred to as claudin-low tumors. 32 Detailed histologic, immunohistochemical, and additional gene expression analyses of these cases are needed to resolve these issues. Because of the uncertainties, however, the normal-like samples were removed when modeling ROR.",
+                        "The multivariable analysis for prognosis (ie, no systemic treatment) suggested that the best model was to use subtype with pathologic staging. Because pathologic staging is not available at diagnosis in  the neoadjuvant setting, we used histologic grade and clinical biomarkers as the standard for prediction of chemotherapy response before resection. In this context, only the subtypes LumB and basal-like were predictive in the multivariable analysis that included histologic grade, ER, PR, and HER2 status (note that the Hess et al 16 study did not incorporate trastuzumab into the regimen). The ROR score from the subtype-alone model was also the most predictive of neoadjuvant response. One of the major benefits of the ROR predictor is the identification of patients in the LumA group who are at a low ROR on the basis of pure prognosis and for whom the benefit from neoadjuvant therapy is unlikely. Thus the ROR predictor based on subtypes provides similar information as the OncotypeDx Recurrence Score for patients with ER-positive, node-negative disease. 4,5 Furthermore, the PAM50 assay provides a ROR score for all patients, including those with ER-negative disease, and is highly predictive of neoadjuvant response when considering all patients.",
+                        "In summary, the intrinsic subtype and risk predictors based on the PAM50 gene set added significant prognostic and predictive value to pathologic staging, histologic grade, and standard clinical molecular markers. The qRT-PCR assay can be performed using archived breast tissues, which will be useful for retrospective studies and prospective clinical trials."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "AUTHORS' DISCLOSURES OF POTENTIAL CONFLICTS OF INTEREST",
+                            "paragraphs": [
+                                "Although all authors completed the disclosure declaration, the following author(s) indicated a financial or other interest that is relevant to the subject matter under consideration in this article. Certain relationships marked with a \"U\" are those for which no compensation was received; those relationships marked with a \"C\" were compensated. For a detailed description of the disclosure categories, or for more information about "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

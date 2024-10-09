@@ -1,0 +1,723 @@
+{
+    "id": "US20210132063",
+    "authors": [
+        "Ivo Mueller",
+        "Takafumi Tsuboi",
+        "Michael White",
+        "Rhea Longley"
+    ],
+    "title": "SYSTEM, METHOD, APPARATUS AND DIAGNOSTIC TEST FOR PLASMODIUM VIVAX",
+    "date": "2017-12-21 00:00:00",
+    "abstract": "A system, method, apparatus and diagnostic test for Plasmodium vivax, to determine a likelihood of a specific timing of infection by P. vivax in a subject, and hence identify individuals with a high probability of being infected with otherwise undetectable liver-stage hypnozoites. The system, method, apparatus and diagnostic test relate to the identification of hypnozoites (\u201cdormant\u201d liver-stages), or at least of the likelihood of the subject being so infected. Optionally and preferably, the specific timing relates to recent infections, for example within the last 9 months.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention is of a system, method, apparatus and diagnostic test for relapsing Plasmodium species (i.e Plasmodium vivax and Plasmodium ovale), and in particular, to such a system, method, apparatus and diagnostic test for Plasmodium vivax for characterizing at least one aspect of infection in a subject or a population of subjects."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce Plasmodium vivax and diagnostic test"
+                    ],
+                    "num_characters": 343,
+                    "outline_medium": [
+                        "introduce Plasmodium vivax and diagnostic test"
+                    ],
+                    "outline_short": [
+                        "introduce Plasmodium vivax and diagnostic test"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Plasmodium vivax (P. vivax) is one of five species of parasites that cause malaria in humans. This disease is marked by severe fever and pain, and can be fatal. The symptoms are caused by the parasite's infection, and destruction, of red blood cells in the subject. Infection of new subjects occurs when infectious mosquitoes take a blood meal from humans and inoculate parasites with their saliva.",
+                        "Like one other species that infects humans, P. ovale, P. vivax has the ability to \u201chide\u201d in the liver of a subject and remain dormant\u2014and asymptomatic\u2014before (re-)emerging to cause renewed bloodstage infections and malarial symptoms. Transmission from humans to mosquitoes can only occur when the sexual stages of the parasite (gametocytes) are circulating in the blood. Liver-stage infection with hypnozoites is completely undetectable and asymptomatic, and transmission to mosquitoes is not possible. P. falciparum and P. knowlesi do not have this ability. P. malariae can cause recurrent infections but it remains unclear if these infections persist in the bloodstream, the liver or another organ. This ability to hide from the immune system in the liver for prolonged periods makes P. vivax and P. ovale particularly difficult to detect and treat.",
+                        "FIG. 1 shows the overall life cycle of the P. vivax parasite (see Mueller, I. et al. Key gaps in the knowledge of Plasmodium vivax, a neglected human malaria parasite. Lancet Infectious Diseases 9, 555-566 (2009)). During a blood meal, a malaria-infected female Anopheles mosquito inoculates sporozoites into the human host (1). Sporozoites infect liver cells (2) and either enter a dormant hypnozoite state or mature into schizonts (3), which rupture and release merozoites (4). After this initial replication in the liver (exo-erythrocytic schizogony A), the parasites undergo asexual multiplication in the erythrocytes (erythrocytic schizogony B). Merozoites infect red blood cells (5). The ring stage trophozoites mature into schizonts, which rupture releasing further merozoites into the blood stream (6). Some parasites differentiate into sexual erythrocytic stages (gametocytes) (7). Blood stage parasites are responsible for the clinical manifestations of the disease.",
+                        "The gametocytes, male (microgametocytes) and female (macrogametocytes), are ingested by an Anopheles mosquito during a blood meal (8). The parasites' multiplication in the mosquito is known as the sporogonic cycle (C). While in the mosquito's stomach, the microgametes penetrate the macrogametes generating zygotes (9). The zygotes in turn become motile and elongated (ookinetes) (10) which invade the midgut wall of the mosquito where they develop into oocysts (11). The oocysts grow, rupture, and release sporozoites (12), which make their way to the mosquito's salivary glands. Inoculation of the sporozoites (1) into a new human host perpetuates the malaria life cycle.",
+                        "Diagnosis of subjects with P. vivax infections is of paramount importance to reducing or even eliminating transmission in a population. Such diagnosis would also significantly help individual subjects to receive proper treatment, including those that have only silent liverstage infections. Given the high degree of population mobility today, particularly in response to natural disasters or human conflicts, accurate and rapid diagnosis of all P. vivax infections has become even more important to controlling the disease. In addition, as transmission in countries decreases (as each population approaches elimination of the disease), population-level surveillance becomes increasingly important. This surveillance will aid in determining residual areas of transmission within a country, and can also be used to provide evidence for the absence of transmission indicating that elimination has been achieved.",
+                        "Some proteins have been very well studied and characterized for diagnostic purposes. For example, merozoite surface protein 1 (MSP1), in particular certain C-terminal MSP1-19 fragments and the N-terminal Pv200L fragments have been described as suitable diagnostic antigens. Some examples of prior publications related to this protein include U.S. Pat. No. 6,958,235, which focuses on a fragment of this protein for diagnostic purposes; WO9208795A1, which focuses on this protein for diagnosis; and US20100119539. Merozoite surface protein 3 (MSP3) is described with regard to a diagnostic tool in U.S. Pat. No. 7,488,489. MSP3.10 [merozoite surface protein 3 alpha (MSP3a)] is described as part of the family of merozoite surface protein 3 like proteins for diagnostic and other purposes in US20070098738. Rhoptry associated membrane antigen is described with regard to a diagnostic tool in EP0372019 B1. Many other proteins were described in relation to their immunogenicity and hence their therapeutic utility as part of a vaccine. Some non-limiting examples are given below.",
+                        "Still other proteins have barely been described or characterized in the literature. In some cases, these proteins have not yet been described with regard to their stage in the P. vivax life cycle. In other cases, an initial determination of the stage has been made but their diagnostic or therapeutic utility is not known. A non-limiting list of some of these proteins is provided below. A further list is provided with regard to Appendix I, although optionally any annotated proteins from P. vivax in Uniprot (http://www.uniprot.org/uniprot/) or another suitable protein database could be included.",
+                        "Very few attempts have been made to characterize the life cycle of the parasite within the body for diagnostic purposes, in terms of the dynamics of the proteins or antibody responses to specific proteins present in the blood. For example, an assay for determining a state of protective immunity is described in US20160216276. However, the disclosure relates to diagnostic assays for identifying individuals that are protected against Plasmodium falciparum caused malaria. As noted above, P. falciparum does not have a dormant liver stage with long-latency giving rise to relapses. This patent application does not mention P. vivax.",
+                        "Other prior art disclosures for diagnostics focus only on the blood stage of P. vivax, which again prevents a complete picture of the dynamics of the infection in the subject from being determined. U.S. Pat. No. 6,231,861 and US20090117602 both suffer from this deficiency.",
+                        "In other cases, where a plurality of antigens were examined for malarial diagnostics of P. vivax, the results still did not provide a complete picture of the dynamics of the infection in the subject. For example, \u201cGenome-Scale Protein Microarray Comparison of Human Antibody Responses in Plasmodium vivax Relapse and Reinfection\u201d (Chuquiyauri et al; Am. J. Trop. Med. Hyg., 93(4), 2015, pp. 801-809) suffered from the following drawbacks:",
+                        "i) It only features antibody signatures that differentiate between blood-stage infections that are thought to stem either from direct infections or relapsing infections;",
+                        "ii) The phenotypes are of poor quality because they are focused on genotyping with only one gene, so may overestimate the number of new infections vs relapses;",
+                        "iii) They are only looking at the presence and titer of antigens at one timepoint (i.e. at the time of infection).",
+                        "In another example, \u201cSerological markers to measure recent changes in malaria at population level in Cambodia\u201d (Kerkhof et al; Malaria Journal, 15 (1), 2016, pp. 529, the authors calculated estimated antibody half-lives to 19 Plasmodium proteins, including 5 P. vivax proteins. These 5 proteins are well-known vaccine candidates (CSP, AMA1, EBP, DBP and MSP1), and the work included no formal antigen down-selection. A major limitation of this study is that individuals were only assessed for malaria prevalence every 6 months, and hence the estimated half-lives are not a true biological reflection of what occurs in the absence of re-infection. The authors only identified one P. vivax antigen, EBP, that had an estimated antibody half-life of less than 2 years."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe Plasmodium vivax and its life cycle",
+                        "explain liver-stage infection and relapse",
+                        "discuss transmission and diagnosis challenges",
+                        "introduce merozoite surface protein 1 (MSP1) as diagnostic antigen",
+                        "mention other diagnostic antigens (MSP3, Rhoptry associated membrane antigen)",
+                        "describe limitations of prior art diagnostic methods",
+                        "introduce antibody responses to specific proteins",
+                        "discuss dynamics of protein expression during infection",
+                        "mention prior art diagnostic assays for P. falciparum",
+                        "describe limitations of prior art diagnostic methods for P. vivax",
+                        "introduce protein microarray technology",
+                        "discuss antibody signatures for differentiating between blood-stage infections",
+                        "mention limitations of prior art studies on antibody responses",
+                        "introduce serological markers for measuring recent changes in malaria",
+                        "discuss limitations of prior art studies on serological markers",
+                        "summarize limitations of prior art diagnostic methods"
+                    ],
+                    "num_characters": 8057,
+                    "outline_medium": [
+                        "describe Plasmodium vivax life cycle",
+                        "explain liver-stage infection and relapse",
+                        "discuss diagnosis of P. vivax infections",
+                        "motivate need for accurate diagnosis",
+                        "summarize prior art diagnostic methods",
+                        "highlight limitations of prior art",
+                        "introduce proteins for diagnostic purposes",
+                        "discuss prior art protein characterization"
+                    ],
+                    "outline_short": [
+                        "describe Plasmodium vivax life cycle",
+                        "explain difficulties in detecting P. vivax infections",
+                        "summarize prior art in P. vivax diagnostics",
+                        "highlight limitations of prior art"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention, in at least some embodiments, is of a system, method, apparatus and diagnostic test for Plasmodium vivax, to determine a likelihood of a specific timing of infection by P. vivax in a subject, and hence identify individuals with a high probability of being infected with otherwise undetectable liver-stage hypnozoites. According to at least some embodiments, the system, method, apparatus and diagnostic test relate to the identification of hypnozoites (\u201cdormant\u201d liver-stages), or at least of the likelihood of the subject being so infected. Optionally and preferably, the specific timing relates to recent infections, for example within the last 9 months. Without wishing to be limited by a closed list, the present invention is able to identify such recent infections, and not just current infections.",
+                        "Non-limiting examples of elapsed time periods since an infection include time since infection ranging from 0 to 12 months, and each time period in between, by month, by week, and/or by day. Optionally and preferably a particular time period is determined as a binary decision of a more recent or an older infection, with each time point as a cut-off. As a non-limiting example, one such cut off could determine whether an infection in a subject was within the past 9 months or later than the past 9 months.",
+                        "Optionally the timing of such an infection may also be determined, such that one or more of the following parameters may be determined. One such parameter is optionally whether the infection is a first infection in the patient, of P. vivax generally or of a particular strain of P. vivax. As there is no sterilizing immunity in malaria, immunity to one strain does not necessarily confer immunity to another, different strain. However, as described in greater detail below with regard to the examples, the present invention was tested by using samples from three different regions (including Brazil, Thailand and the Solomon Islands). These three populations are genetically highly diverse and represent the major part of the global genetic variation in P. vivax. Consequently, the present inventors believe, without wishing to be limited by a single hypothesis, that it will work anywhere in the world. Other parameters relate to time elapsed from the previous infection.",
+                        "According to at least some embodiments, the antibody measurements may optionally be used to provide an estimation of elapsed time since last infection. An estimate of the time since last P. vivax blood-stage infection\u2014depending on the available calibration data\u2014can be defined either as the time since last PCR-detectable blood-stage parasitemia, or as the time since last infective mosquito bite. Time since last infection can be estimated continuously or categorically. Concurrent estimation of uncertainty will be important.",
+                        "According to at least some embodiments, the antibody measurements may optionally be used to provide a determination of medium-term serological exposure, for example a frequency of infections during a particular time period and/or time since last infection.",
+                        "According to at least some embodiments, there is provided a system, method, apparatus and diagnostic test for detection of a \u201csilent\u201d (asymptomatic or presymptomatic) infection by P. vivax.",
+                        "According to at least some embodiments, there is provided a system, method, apparatus and diagnostic test for detection of a dormant infection, in which P. vivax is present in the liver but is not present at detectable levels in the blood. As described herein, detection of a dormant infection optionally comprises prediction from an indirect measurement of an antibody level.",
+                        "During the life cycle of P. vivax, blood-stage forms of the parasite can initially be present at the same time as arrested liver forms, as described in the Background of the Invention. Even after the blood-stage infection has cleared, hypnozoites can still be present in the liver, and the parasite may still be indirectly detected via persisting antibody responses against the primary blood-stage infection. According to at least some embodiments, there is provided a system, method, apparatus and diagnostic test for detection of antibodies to malarial proteins that are present in the blood that indicate a high degree of probability of liver-stage infection.",
+                        "According to at least some embodiments, there is provided a system, method, apparatus and diagnostic test for determination of the progression of infection by P. vivax in a population of a plurality of subjects. Optionally, it is possible to determine the rate of propagation of a particular Plasmodium species in a population not previously exposed to that species.",
+                        "With regard to the diagnostic test, in at least some embodiments, there is provided a plurality of antibodies that bind to a plurality of antigens in a blood sample taken from the subject. Optionally any suitable tissue biological sample from a subject may be used for detecting a presence and/or level of a plurality of antibodies.",
+                        "According to at least some embodiments, the dynamics of the measured antibodies preferably include a combination of short-lived and long-lived antibodies. Without wishing to be limited by a single hypothesis or a closed list, such a combination is useful to reduce measurement error.",
+                        "Optionally the level of antibodies is measured at one time point or a plurality of time points.",
+                        "Optionally, the presence of the actual antibodies in the blood of the subject is measured at a plurality of time points to determine decay in the level of the antibody in the blood. Such a decay in the level is then optionally and preferably fitted to a suitable model as described herein, in order to determine at least one of the infection parameters as described above. More preferably, decay of the level of a plurality of different antibodies is measured. Optionally and more preferably, the different antibodies are selected to have a range of different half-lives. Optionally, a maximum number of different antibodies is measured, which is optionally up to 20 or as few as two, or any integral number in between. According to at least some embodiments, the number of antibodies is preferably 4 or 8.",
+                        "According to at least some e rtbodiments, the level is measured of at least one antibody to a protein selected from the group consisting of: PVX_099980, PVX_112670, PVX_087885, PVX_082650, PVX_088860, PVX_112680, PVX_112675, PVX_092990, PVX_091710, PVX_117385, PVX_098915, PVX_088820, PVX_117880, PVX_121897, PVX_125728, PVX_001000, PVX_084340, PVX_090330, PVX_125738, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_084720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930, PVX_123685, PVX_002550, PVX_082700, PVX_097680, PVX_097625, PVX_082670, PVX_082735, PVX_082645, PVX_097720, PVX_000930, PVX_094350, PVX_099930, PVX_114330, PVX_088820, PVX_080665, PVX_092995, PVX_087885, PVX_003795, PVX_087110, PVX_087670, PVX_081330, PVX_122805, RBP1b (P7), RBP2a (P9), RBP2b (P25), RBP2cNB (M5), RBP2-P2 (P55), PvDBP R3-5, PvGAMA, PvRipr, PvCYRPA, Pv DBPII (AU), PvEBP, RBP1a (P5) and Pv DBP (SacI).",
+                        "Preferably, the level is measured of at least one antibody to a protein selected from the group consisting of PVX_099980, PVX_112670, PVX_087885, PVX_082650, PVX_088860, PVX_112680, PVX_112675, PVX_092990, PVX_091710, PVX_117385, PVX_098915, PVX_088820, PVX_117880, PVX_121897, PVX_125728, PVX_001000, PVX_084340, PVX_090330, PVX_125738, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_984720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930 and PVX_123685.",
+                        "More preferably, the level is measured of at least one antibody to a protein selected from the group consisting of PVX_099980, PVX_112670, PVX_087885, PVX_082650, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_084720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930 and PVX_123685.",
+                        "Most preferably, the level is measured of at least one antibody to a protein selected from the group consisting of PVX_099980, PVX_112670, PVX_087885 and PVX_082650.",
+                        "According to at least some embodiments, preferably the level is measured of at least one antibody to a protein selected from the group consisting of RBP2b, L01, L31, X087885, PvEBP, L55, PvRipr, L54, L07, L30, PvDBPII, L34, X092995, L12, RBP1b, L23, L02, L32, L28, L19, L36, L41, X088820 and PvDBP . . . SacI.",
+                        "More preferably the level is measured of at least one antibody to a protein selected from the group consisting of RBP2b, L01, L31, X087885, PvEBP, L55, PvRipr, L54, L07, L30, PvDBPII, L34, X092995, L12 and RBP1b.",
+                        "Also more preferably the level is measured of at least one antibody to a protein selected from the group consisting of RBP2b, L01, L31, X087885, PvEBP, L55, PvRipr and L54.",
+                        "Most preferably the level is measured of at least one antibody to a protein selected from the group consisting of RBP2b and L01.",
+                        "A table containing additional proteins against which antibodies may optionally be measured is provided herein in Appendix I, as described in greater detail below, such that the level of one or more of these antibodies may optionally be measured.",
+                        "Appendix II gives a list of preferred proteins against which antibodies may be measured, while Appendix III shows a complete set of data for antibodies against the proteins in Appendix II. Appendix III is given in two parts, due to the size of the table: Appendix IIIA and Appendix IIIB. The references to gene identifiers in Appendix II are the common ones used for Plasmodium\u2014from PlasmoDB website: http://plasmodb.org.plasmo/.",
+                        "For any protein described herein, optionally a fragment and/or variant may be used for detecting the presence and/or level of one or more antibodies in a biological sample taken from a subject.",
+                        "According to at least some embodiments, a biologically-motivated model of the decay of antibody titers over time is used to determine a statistical inference of the time since last infection. The model preferably uses previously determined decay rates of a plurality of different antibodies to determine a likelihood that infection in the subject occurred within a particular time period. Optionally such previously determined decay rates may be achieved through estimation of antibody decay rates from longitudinal data, or estimation of decay rates from cross-sectional antibody measurements.",
+                        "With regard to estimation of antibody decay rates from longitudinal data, preferably such an estimation is performed as described in equation (1), which is a mixed-effects linear regression model:",
+                        "log(Aijk)\u02dc(\u03b1k0+\u03b1ik)+(rk0+rik)tj+\u03b5k",
+                        "\u03b1ik\u02dcN(0, \u03c3\u03b1,k)",
+                        "rik\u02dcN(0, \u03c3r,k)",
+                        "\u03b5k\u02dcN(0, \u03c3m,k) \u2003\u2003Equation 1",
+                        "For the above equation to be true, the following assumptions were made. We assume that for individual i we have measurements of antibody titer Aijk at time j to antigen k. We assume that at time 0, antibody titers are Normally distributed5 with mean \u03b1k0 and standard deviation \u03c3\u03b1,k on a log-scale. We assume that an individual's rate of antibody decay is drawn from a Normal distribution with mean rk0 and standard deviation \u03c3r,k.",
+                        "According to at least some embodiments, the plurality of different antibodies selected maximizes probability of determining at least one of the infection parameters as described above. A method for such a selection process is described below in Example 3, Optionally the plurality of antibodies is selected for determining an answer to a binary determinant, such as for example, whether an individual was infected before x months ago or after as previously described.",
+                        "According to at least some embodiments, the model for determining at least one parameter about the infection in the subject may optionally comprise one or more of the following algorithms: linear discriminant analysis (LDA), quadratic discriminant analysis (ODA), combined antibody dynamics (CAD), decision trees, random forests, boosted trees and modified decision trees.",
+                        "According to at least some embodiments, the levels of antibody in a blood-sample can be measured and summarized in a variety of ways, for input to the above described model.",
+                        "a) Continuous Measurement",
+                        "A continuous measurement that has a monotonic relationship with antibody titer. It can be compared with a titration curve to produce an estimate of antibody titer.",
+                        "b) Binary Classification",
+                        "Assesses whether antibody levels are greater or less than some threshold",
+                        "c) Categorical Classification",
+                        "Assigns antibody levels to one of a set of pre-defined categories, e.g. low, medium, high. A categorical classification can be generated via a series of binary classifications.",
+                        "According to at least some embodiments, antibody levels may optionally he measured in a subject in a number of different ways, including but not limited to, bead-based assays (e.g. AlphaScreen\u00ae or Luminex\u00ae technology), the enzyme linked immuosorbent assay (ELISA), protein microarrays and the luminescence immunoprecipitation system (LIPS). All the aforementioned methods generate a continuous measurement of antibody."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce system, method, apparatus, and diagnostic test for P. vivax",
+                        "determine likelihood of specific timing of infection",
+                        "identify individuals with high probability of liver-stage hypnozoites",
+                        "determine specific timing of infection (e.g., within last 9 months)",
+                        "measure antibody responses to multiple antigens",
+                        "estimate time since last infection",
+                        "determine medium-term serological exposure",
+                        "detect silent or asymptomatic infections",
+                        "detect dormant infections",
+                        "predict liver-stage infection from antibody levels",
+                        "determine progression of infection in a population",
+                        "measure antibody levels at multiple time points",
+                        "fit decay of antibody levels to a model",
+                        "select antibodies with different half-lives",
+                        "measure levels of multiple antibodies",
+                        "use biologically-motivated model of antibody decay",
+                        "estimate antibody decay rates from longitudinal data",
+                        "estimate antibody decay rates from cross-sectional data",
+                        "select antibodies that maximize probability of determining infection parameters",
+                        "use linear discriminant analysis (LDA) or quadratic discriminant analysis (QDA)",
+                        "use combined antibody dynamics (CAD) or decision trees",
+                        "use random forests or boosted trees",
+                        "use modified decision trees",
+                        "measure antibody levels using bead-based assays",
+                        "measure antibody levels using ELISA or protein microarrays",
+                        "measure antibody levels using luminescence immunoprecipitation system (LIPS)"
+                    ],
+                    "num_characters": 13104,
+                    "outline_medium": [
+                        "introduce system, method, apparatus and diagnostic test",
+                        "describe determination of infection timing",
+                        "explain identification of hypnozoites",
+                        "discuss determination of recent infections",
+                        "introduce antibody measurements",
+                        "estimate time since last infection",
+                        "determine medium-term serological exposure",
+                        "detect silent infections",
+                        "detect dormant infections",
+                        "determine progression of infection",
+                        "measure antibody levels",
+                        "select antibodies for measurement",
+                        "use biologically-motivated model for decay"
+                    ],
+                    "outline_short": [
+                        "introduce system, method, apparatus and diagnostic test for P. vivax",
+                        "describe determining likelihood of specific timing of infection",
+                        "explain identifying individuals with high probability of liver-stage hypnozoites",
+                        "outline determining elapsed time since last infection",
+                        "describe detecting silent or dormant infections",
+                        "summarize determining progression of infection in a population"
+                    ]
+                },
+                {
+                    "title": "EXAMPLE 1",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Testing of Antigens",
+                            "paragraphs": [
+                                "This non-limiting Example relates to testing of antibody responses to various P. vivax proteins, present in the blood, as potential antigens for a diagnostic test."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce antigen discovery study"
+                            ],
+                            "num_characters": 163,
+                            "outline_medium": [
+                                "introduce field sites and sample collection"
+                            ],
+                            "outline_short": [
+                                "introduce field sites and sample collection"
+                            ]
+                        },
+                        {
+                            "title": "Materials and Methods",
+                            "paragraphs": [
+                                "**Ethics Statement.**",
+                                "The relevant local ethics committees approved all field studies and all patients gave informed consent or assent. The Ethics Committee of the Faculty of Tropical Medicine, Mahidol University, Thailand approved the Thai antigen discovery and validation studies (MUTM 2014-025-01 and 02, and MUTM 2013-027-01, respectively). The Ethics Review Board of the Funda\u00e7\u00e3o de Medicina Tropical Dr. Heitor Vieira Dourado (FMT-HVD) (957.875/2014) approved the Brazilian antigen discovery study. The samples used from Brazil for the validation study were approved by the FMT-HVD (51536/2012), by the Brazilian National Committee of Ethics (CONEP) (349.211/2013) and by the Ethics Committee of the Hospital Clinic, Barcelona, Spain (2012/7306). The National Health Research and Ethics Committee of the Solomon Islands Ministry of Health and Medical Services (HRC12/022) approved collection of the samples used from the Solomon Islands for the validation study. The Human Research Ethics Committee at WEHI approved samples for use in Melbourne (#14/02),",
+                                "**Field Sites and Sample Collection: Antigen Discovery Study.**",
+                                "Samples from two longitudinal cohorts, located in Thailand and Brazil, were used for the antigen discovery studies. The longitudinal study in Thailand was conducted from April 2014 to September 2015, as previously described (Longley et al., Am J Trop Med Hyg. 2016 Nov. 2; 95(5):1086-1089). Briefly, 57 symptomatic P. vivax patients were enrolled from either the Tha Song Yang malaria clinic or hospital. Patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency and those aged younger than 7 years or more than 80 years were excluded. Patients were treated with chloroquine (25 mg base/kg body weight, administered over 3 days) and primaquine (15 mg daily, for 14 days) according to the standard Thai treatment regimen. Anti-malarial drugs were given under directly-observed treatment in order to reduce the likelihood of treatment failure and the presence of recurrent infections during follow-up. Volunteers were followed for 9-months following enrolment, with finger-prick blood samples collected at enrolment and week 1, then every 2 weeks for 6 months, then every month until the end of the study. Blood was separated into packed red cells and plasma at the field site. All blood samples were analysed by both light microscopy and quantitative PCR (qPCR) for the presence of blood-stage parasites. A sub-set of volunteers, n=32, were selected for use in the antigen discovery project. These volunteers had no detectable recurrent infections during 9-months follow-up, and were the first to complete follow-up.",
+                                "The longitudinal study in Brazil followed the same format as in Thailand. The study was conducted from May 2014 to May 2015. 91 malaria patients at Funda\u00e7\u00e3o de Medicina Tropical Doutor Heitor Vieira Dourado in Manaus aged between 7 and 70 years were enrolled. Individuals with G6PD deficiency or chronic diseases were not enrolled. Patients were treated according to the guidelines of the Brazilian Ministry of Health (3 days chloroquine, 7 days primaquine). Follow-up intervals with finger-prick blood sample collection were as in the Thai study. A sub-set of volunteers, n=33, whom had no detectable recurrent infections during 9-months follow-up, were selected for use in the antigen discovery project.",
+                                "**Field Sites and Sample Collection: Validation Study.**",
+                                "For the validation studies, samples collected from four observational longitudinal cohort studies, conducted in Thailand, Brazil and the Solomon Islands, were used (data from the Solomon Islands not shown). Samples were collected from a cohort of volunteers every month for 1 year. Plasma samples from the final cohort time-point were used in the validation study, n=829 Thailand, n=925 Brazil, and n=751 Solomon Islands.",
+                                "The Thailand observational cohort was conducted from May 2013 to June 2014 in the Kanchanaburi and Ratchaburi provinces of western Thailand. The design of this study has been published (Longley et al, Clin Vaccine Immunol. 2015 Dec. 9; 23(2):117-24). Briefly, a total of 999 volunteers were enrolled (aged 1-82 years, median 23 years). Volunteers were sampled every month over the yearlong cohort, with 14 active case detection visits performed in total. A total of 609 volunteers attended all visits, with 829 attending the final visit. At each visit, volunteers completed a brief survey outlining their health over the past month (to determine the possibility of missed malarial infections), in addition to travel history and bed net usage. A finger-prick blood sample was also taken and axillary temperature recorded. Blood samples were separated into packed red blood cells, for detection of malaria parasites, and plasma, for antibody measurements, at the field sites. In addition to the monthly active case detection visits, passive case detection was also performed routinely by local malaria clinics.",
+                                "The Brazilian observational cohort was conducted from April 2013 to April 2014 in three neighbouring communities located on the outskirts of Manaus, Amazonas State. Briefly, a total of 1274 residents of all age groups were enrolled (range 0-102 years, median 25 years). Volunteers were sampled every month over the yearlong period, with 13 active case detection visits performed in total. At each visit a finger-prick blood sample was collected, with the exception of children aged less than one in which blood was collected from the heel or big toe. As per the Thai cohort study, at each visit body temperature was also recorded and a questionnaire undertaken outlining the participants' health, bed net usage and travel history. Passive case detection was performed routinely by local health services. Blood samples were processed as per the Thai cohort. Plasma samples from 925 volunteers were available from the final visit.",
+                                "The Solomon islands observational cohort was conducted from May 2013 to May 2014 in 20 villages on the island of Ngella, Solomon Islands. 1111 children were initially enrolled, and after exclusion of children who withdrew, had inconsistent attendance or failed to meet other inclusion criteria, 860 remained (Quah Waltmann, in preparation). The age of the children ranged from 6 months to 12 years, with a median age of 5.6 years. Over the yearlong cohort, children were visited approximately monthly, with 11 active case detection visits in total. Of the 860 children, 751 attended the final visit. At each visit, a brief survey was conducted as per the Thai cohort, temperature recorded and a finger-prick blood sample taken. Blood was separated into packed red cells for qPCR and plasma for antibody measurements. In addition to the monthly active case detection visits, local health clinics and centres also performed passive case detection routinely.",
+                                "Negative Control samples: Melbourne and Thai Red Cross, Melbourne Blood Donors",
+                                "Three panels of control samples were collected from individuals with no known previous exposure to malaria. The first panel was collected from the Volunteer Blood Donor Registry (VBDR) at the Walter and Eliza Hall of Medical Research in Melbourne, Australia. These individuals are not screened for diseases but a record of their past travel, medical history and current drug use is recorded. 102 volunteers from the VBDR were utilized (median age 39 years, range 19-68). The second panel was collected from the Australian Red Cross (Melbourne, Australia). 100 samples were utilized (median age 52 years, range 18-77), and these individuals were screened as per the standard conditions of the Australian Red Cross. Finally, another control panel was collected from the Thai Red Cross (Bangkok, Thailand). Samples from 72 individuals were utilized, but no demographic data was available (hence the age range is unknown). Standard Thai Red Cross screening procedures exclude individuals from donating blood if they had a past malaria infection with symptoms within the last three years, and individuals who have travelled to malaria-endemic regions within the past year.",
+                                "All studies (antigen discovery and validation) detected malaria parasites by quantitative PCR as previously described (2, 3)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "ethics statement",
+                                "field sites and sample collection: antigen discovery study",
+                                "field sites and sample collection: validation study",
+                                "negative control samples",
+                                "protein expression",
+                                "protein purification",
+                                "protein yield and purity determination",
+                                "AlphaScreen assay for antigen discovery study",
+                                "multiplexed bead-based assay for validation study",
+                                "statistical modelling",
+                                "statistical analysis",
+                                "data manipulation",
+                                "software used",
+                                "plate reader used",
+                                "instrument used",
+                                "standard curve generation"
+                            ],
+                            "num_characters": 8212,
+                            "outline_medium": [
+                                "ethics statement",
+                                "field sites and sample collection: antigen discovery study",
+                                "field sites and sample collection: validation study",
+                                "negative control samples",
+                                "protein expression",
+                                "AlphaScreen assay for antigen discovery study",
+                                "multiplexed bead-based assay for validation study",
+                                "statistical modelling"
+                            ],
+                            "outline_short": [
+                                "ethics statement",
+                                "field sites and sample collection",
+                                "protein expression",
+                                "AlphaScreen assay"
+                            ]
+                        },
+                        {
+                            "title": "Protein Expression.",
+                            "paragraphs": [
+                                "Proteins were preferably expressed as full-length proteins, to ensure that any possible antibody recognition site was covered. For very large proteins, fragments were expressed that together cover the entire protein. These were treated as individual constructs in the down-selection process. The proteins were first produced at a small-scale with a biotin tag for the antigen discovery study, at Ehime University. A panel of 342 P. vivax proteins were assessed, including well-known P. vivax proteins such as potential vaccine candidates (i.e. MSP1, AMA1, CSP), orthologs of immunogenic P. falciparum proteins and proteins with a predicted signal peptide (SP) and/or 1-3 transmembrane domains (TM) (4). The genes were amplified by PCR and cloned into the pEU_E01 vector with N-terminal His-bis tag (CellFree Sciences, Matsuyama, Japan). P. vivax genes were obtained either from parent clones (4), using SAL-1 cDNA, or commercially synthesized from Genscript (Japan). The recombinant proteins were expressed without codon optimization using the wheat germ cell-free (WGCF) system as previously described (5). WGCF synthesis of the P. vivax protein library was based on the previously described bilayer diffusion system (6). For biotinylation of proteins, 500 nM D-biotin (Nacalai Tesque, Kyoto, Japan) was added to both the translation and substrate layers. Crude WGCF expressed BirA (1 \u03bcl) was added to the translation layer. In vitro transcription and cell-free protein synthesis for the P. vivax protein library were carried out using the GenDecoder 1000 robotic synthesizer (CellFree Sciences) as previously described (7, 8). Expression of the proteins was confirmed by western blot using HRP-conjugated streptavidin.",
+                                "Large-scale protein expression for the down-selected candidates was then performed (CellFree Sciences Tokyo, Japan). Genes were synthesized by GenScript (Japan) and the products cloned into the pEU-E01-MCS expression vector. The sequence of all gene synthesis products and their correct insertion into the expression vector was confirmed by full-length sequencing of the vector inserts. Transcription was performed utilizing SP6 RNA polymerase (80 U/\u03bcl) and the SP6 promoter in the pEU-E01-MCS expression vector. For large-scale expression, a dialysis-based refeeding assay was used, with protein expression and solubility first tested on a 50 scale. The test results then enabled production on a 3 ml scale (maintained for up to 72 hours, 15\u00b0 C.) to produce at least 300 \u03bcg of each target protein, using the wheat germ extract WEPRO7240H. The proteins were manually purified one-time on an affinity matrix (Ni Sepharose 6 Fast Flow from GE Healthcare, Chalfont, United Kingdom) using a batch method (all proteins were expressed with a His-tag at the C terminus). The purified proteins were stored and shipped in the following buffer: 20 mM Na-phosphate pH 7.5, 0.3 M NaCl, 500 mM imidazole and 10% (v/v) glycerol. Protein yields and purity were determined using 15% SDS page followed by Coomassie Brilliant Blue staining using standard laboratory methods. In addition, proteins were also analyzed by Western Blot using an anti-His-tag antibody.",
+                                "An additional 25 proteins were also used in the validation study. 12 proteins were produced using the wheat-germ cell free system described above at Ehime University, and were selected based on associations with past exposure in preliminary work conducted in a PNG cohort. The remaining 13 proteins were produced using standard E. coli methods, and were selected based on their predicted high immunogenicity (due to their status as potential vaccine candidates). References can be found in Appendix II."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "protein expression system",
+                                "protein expression vector",
+                                "gene synthesis",
+                                "protein expression confirmation",
+                                "large-scale protein expression",
+                                "protein purification method",
+                                "protein storage buffer"
+                            ],
+                            "num_characters": 3671,
+                            "outline_medium": [
+                                "express full-length proteins",
+                                "express protein fragments",
+                                "confirm protein expression by western blot"
+                            ],
+                            "outline_short": [
+                                "express proteins using wheat germ cell-free system"
+                            ]
+                        },
+                        {
+                            "title": "AlphaScreen\u00ae Assay for the Antigen Discovery Study.",
+                            "paragraphs": [
+                                "The AlphaScreen\u00ae assay was used to measure antibody responses in the antigen discovery study. Plasma samples from the sub-set of volunteers (n=32 Thailand, n=33 Brazil) were used from four time-points, enrollment (week 0) and weeks 12, 24 and 36. Responses were measured against 342 P. vivax proteins. The assay was conducted as previously reported (9), with slight modifications. The protocol was automated by use of the JANUS Automated Workstation (PerkinElmer Life and Analytical Science, Boston, Mass.). Reactions were carried out in 25 \u03bcl of reaction volume per well in 384-well OptiPlate microtiter plates (PerkinElmer). First, 0.1 \u03bcl of the translation mixture containing a recombinant P. vivax biotinylated protein was diluted 50-fold (5 \u03bcl), mixed with 10 \u03bcl of 4000-fold diluted plasma in reaction buffer (100 mM Tris-HCL [pH 8.0], 0.01% [v/v] Tween-20 and 0.1% [w/v] bovine serum albumin), and incubated for 30 min at 26\u00b0 C. to form an antigen-antibody complex. Subsequently, a 10 \u03bcl suspension of streptavidin-coated donor-beads and acceptor-beads (PerkinElmer) conjugated with protein G (Thermo Scientific, Waltham, Mass.) in the reaction buffer was added to a final concentration of 12 \u03bcg/ml of both beads. The mixture was incubated at 26\u00b0 C. for one hour in the dark to allow the donor and acceptor-beads to optimally bind to biotin and human IgG, respectively. Upon illumination of this complex, a luminescence signal at 620 rim was detected by the EnVision plate reader (PerkinElmer) and the result was expressed as AlphaScreen counts. A translation mixture of WGCF without template mRNA was used as a negative control. Each assay plate contained a standard curve of total biotinylated rabbit IgG. This enabled standardisation between plates using a 5-parameter logistic standard curve. All samples were run in triplicate. Reading the plates was conducted in a randomized manner to avoid biases."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "assay protocol",
+                                "antigen-antibody complex formation",
+                                "luminescence signal detection"
+                            ],
+                            "num_characters": 1912,
+                            "outline_medium": [
+                                "measure antibody responses using AlphaScreen assay"
+                            ],
+                            "outline_short": [
+                                "measure antibody responses using AlphaScreen assay"
+                            ]
+                        },
+                        {
+                            "title": "Multiplexed Bead-Based Assay for the Validation Study.",
+                            "paragraphs": [
+                                "For validation of the down-selected candidate serological markers, IgG levels were measured in plasma collected from the last time-point of the longitudinal observation studies. IgG measurements were performed using a multiplexed bead-based assay as previously described (10). In brief, 2.5\u00d7106 COOH microspheres (Bio-Rad, USA) were prepared for protein coupling by incubation for 20 minutes at room temperature in 100 mM monobasic sodium phosphate (pH 6.2), 50 mg/ml N-Hydroxysulfosuccinimide sodium salt and 50 mg/ml N-(3-Dimethylaminopropyl)-N\u2032-ethylcarbodiimide hydrochloride. Proteins were then added and incubated overnight at 4\u00b0 C. Optimal amounts of protein were determined experimentally, in order to achieve a log-linear standard curve when using a positive control plasma pool generated from hyper-immune PNG donors. Each assay plate subsequently included this 2-fold serial dilution standard curve ( 1/50 to 1/25600), to enable standardisation between plates.",
+                                "The assay was run by incubating 50 \u03bcl of the protein-coupled microspheres (500 microspheres/well) with 50 \u03bcl test plasma (at 1/100 dilution) in 96-well multiscreen filter plates (Millipore, USA) for 30 minutes at room temperature, on a plate shaker. Plates were washed 3 times and then incubated for a further 15 minutes with the detector antibody, PE-conjugated anti-human IgG ( 1/100 dilution, Jackson ImmunoResearch, USA). The plates were once again washed and then assayed on a Luminex 200\u2122 instrument. All median fluorescent intensity (MFI) values were converted to relative antibody unites using the plate-specific standard curve (five-parameter logistic function, as previously described in detail (10))."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "protein coupling to microspheres",
+                                "assay protocol",
+                                "median fluorescent intensity measurement"
+                            ],
+                            "num_characters": 1684,
+                            "outline_medium": [
+                                "measure IgG levels using multiplexed bead-based assay"
+                            ],
+                            "outline_short": [
+                                "measure IgG levels using multiplexed bead-based assay"
+                            ]
+                        },
+                        {
+                            "title": "Statistical Modelling.",
+                            "paragraphs": [
+                                "The models are described in greater detail below (see Example 3)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "model description"
+                            ],
+                            "num_characters": 65,
+                            "outline_medium": [
+                                "describe statistical models"
+                            ],
+                            "outline_short": [
+                                "describe statistical models"
+                            ]
+                        },
+                        {
+                            "title": "Statistical Analysis.",
+                            "paragraphs": [
+                                "All data manipulation and statistical analyses were performed in either R version 3.2.3 (11), Prism version 6 (GraphPad, USA) or Stata version 12.1 (StataCorp, USA)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "data analysis software"
+                            ],
+                            "num_characters": 165,
+                            "outline_medium": [
+                                "perform statistical analysis using R, Prism, and Stata"
+                            ],
+                            "outline_short": [
+                                "perform statistical analysis using R, Prism, and Stata"
+                            ]
+                        },
+                        {
+                            "title": "Results",
+                            "paragraphs": [
+                                "**Down-Selection of Candidate Serological Markers.**",
+                                "The data were processed and candidate serological markers down-selected following the pipeline shown in FIG. 2. The raw AlphaScreen data was converted based on the plate-specific standard curve, resulting in relative antibody units ranging from 0-400. Using the converted data, seropositivity was defined as a relative antibody unit greater than 0. For proteins that were defined as immunoreactive (more than 10% individuals seropositive at baseline, time of P. vivax infection), an estimated antibody half-life was determined using a mixed-effects linear regression model, described in detail below (see Statistical modelling). Using the metadata on immunoreactivity and half-life, an initial round of antigen down-selection was performed, with prioritisation of antigens that had similar estimated half-lives in both the Thai and Brazilian datasets (neither site more than double the other), high levels of seropositivity at baseline (more than 50% individuals seropositive, i.e. relative antibody units above 0), and low levels of error estimated in the model. Three rounds of initial down-selection were performed, resulting in approximately 100 antigens for the next round of model-based down-selection.",
+                                "The model-based down-selection was performed in two stages: first, by calculating the estimated time since last infection based on antibody levels at 0, 3, 6 and 9 months (and comparing this with the known time since infection), and second, by determining the best combination of antigens for accurately detecting the time since last infection.",
+                                "In more detail, FIG. 2 shows a pipeline for down-selection of candidate serological markers. As shown in the process of FIG. 2A, antigens were first down-selected based on prioritization of metadata characteristics such as similar levels of estimated antibody longevity in Thailand and Brazil, high levels of immunogenicity at the time of infection and low levels of error estimated in the model. As shown in the process of FIG. 2B, using the initial down-selected antigens, further modelling was performed to identify the optimal combination of antigens able to accurately estimate the time since last infection. A final decision on candidate serological markers was made using output from this modelling and other protein characteristics, as detailed above.",
+                                "As expected, different antibody kinetic profiles over 9-months were observed for different proteins (see FIG. 3 for an example). Antigen down-selection was performed as described in detail in the Materials and Methods, essentially by prioritizing antigens with high levels of immunogenicity, similar estimated half-lives between Thailand and Brazil and low levels of error estimated in the model. The initial down-selection was followed by further model-based down selection. The model-based down-selection was used to determine the ability of various proteins to predict the time since last infection, utilizing the same datasets from Thailand and Brazil, and to determine the best combination of proteins to do so successfully (see for example FIG. 20 and its accompanying description). Antigens were excluded from selection if they had less than a 40% probability of inclusion in a 40-antigen panel that was able to accurately determine the time since last infection. Remaining antigens were then ranked according to a high probability of inclusion in a successful 20-antigen panel. When required, ranking in 30 and 40-antigen panels was also considered. Antigens were excluded if they had unfavorable protein production characteristics, such as low-yield in the small-scale WGCF expression or presence of aggregates. Three rounds of selection were performed: the first resulted in 12 proteins, the second in a further 12, and the third in an additional 31 candidates. A final list of 55 protein constructs (53 unique proteins) representing candidate serological markers of recent exposure to P. vivax infection was generated (two fragments were included from two different antigens). Characteristics of these proteins are highlighted in FIG. 4.",
+                                "**Validation of Candidate Serological Markers.**",
+                                "Geographical validation (that is validation across different regions) was performed as follows.",
+                                "The down-selected markers were chosen based on antibody data from individuals in Thailand, Brazil and the Solomon Islands, three discrete geographical areas. Despite this, there was a strong correlation between the antibody responses measured, in terms of both immunogenicity (seropositivity rates) and antibody level at time of P. vivax infection, as well as the estimated antibody half-lives calculated from consecutive time-points. This is shown in FIG. 5.",
+                                "Validation in association with recent and past infection was performed as well.",
+                                "The Luminex\u00ae bead-array assay has been successfully established for 40 of the 55 proteins identified in the antigen discovery study (FIG. 6) as well as for the additional 25 proteins (65 total). Plasma samples from three observational cohorts (final time-point) have been screened against these 65 proteins, Thai (n=829), Brazilian (n=925) and Solomon Islands (n=751), in addition to 3 sets of non-exposed (malaria) controls (two panels from Australia and one panel from Thailand). An example of the responses in these cohorts, with relation to time since last infection, to 4 of 65 proteins is shown in FIG. 22, described with regard to Example 4 below.",
+                                "In the Thai cohort, antibody levels measured to all 17 proteins, selected for performing the first set of tests, were strongly associated with the presence of current P. vivax infections (logistic regression model, odds ratios of 2.8-5.4, p<0.05) (FIG. 7). In addition, antibody levels to 16 of 17 proteins at the last visit of the cohort study were positively and significantly associated with past exposure to P. vivax infections based on PCR results during the yearlong assessment period (measured as the molecular force of blood-stage infection, (molFOI) (generalised linear model, exponentiated coefficients of 1.03-1.18, p<0.05) (FIG. 8). The exception was for PVX_090970, exponentiated coefficient 1.03, p=0.073.",
+                                "In the Brazilian cohort, the effect size, overall, was not as great as for Thailand. Nevertheless, antibody levels to 16 of 17 proteins were strongly associated with the presence of current P. vivax infections (logistic regression model, odds ratios of 1.59-3.04, p<0.05) (FIG. 9). The exception was for PVX_088860, with an odds ratio of 1.33 (p=0.21). Antibody levels to 10 of 17 proteins at the last visit of the cohort were positively and significantly associated with past exposure to P. vivax (molFOI) (generalised linear model, exponentiated coefficients of 1.04-1.18, p<0.05) (FIG. 10). Of the antibodies with estimated \u2018short\u2019 half-lives (less than 6 months), there was one exception, PVX_088860, with an exponentiated coefficient of 1.03 (p=0.24). Of the antibodies with estimated \u2018long\u2019 half-lives (more than 6 months), 6 of 10 were not associated with past exposure (exponentiated coefficients of 1.02-1.04, p>0.05).",
+                                "Various statistical methods can be used to test the association between antibody level to certain proteins and past (recent) or current exposure to P. vivax infections. For most proteins, there was a clear significant association with both past and current P. vivax infections, which is promising for the use of these antigens as serological markers. For others, there was a trend towards an association, which did not reach significance. In a final test, it will be an antibody signature that is used for classification of recent infection, made up of antibody responses to a multitude of proteins. Therefore the lack of significance for some individual proteins does not imply that they will not be useful in the final classification algorithm.",
+                                "These analyses show that 16 of 17 proteins generate antibodies that are strongly associated with both current infections and 10 of 17 with past P. vivax exposure in both Thailand and Brazil, demonstrating that a majority of these antigens have the potential to detect both concurrent and recent past P. vivax infections."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "down-selection of candidate serological markers",
+                                "antigen prioritization",
+                                "initial down-selection",
+                                "model-based down-selection",
+                                "antibody kinetic profiles",
+                                "antigen exclusion criteria",
+                                "final list of candidate serological markers",
+                                "geographical validation",
+                                "validation in association with recent and past infection",
+                                "Luminex bead-array assay establishment",
+                                "plasma sample screening",
+                                "antibody level association with current infection",
+                                "antibody level association with past exposure",
+                                "effect size comparison between cohorts",
+                                "antibody signature for classification",
+                                "conclusion on antigen potential"
+                            ],
+                            "num_characters": 8184,
+                            "outline_medium": [
+                                "down-select candidate serological markers",
+                                "describe antibody kinetic profiles",
+                                "perform model-based down-selection",
+                                "rank antigens based on probability of inclusion",
+                                "exclude antigens with unfavorable production characteristics",
+                                "generate final list of candidate serological markers",
+                                "validate candidate serological markers geographically",
+                                "validate candidate serological markers in association with recent and past infection"
+                            ],
+                            "outline_short": [
+                                "down-select candidate serological markers",
+                                "validate candidate serological markers",
+                                "show geographical validation",
+                                "show validation in association with recent and past infection"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "EXAMPLE 2",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Illustrative Diagnostic Test",
+                            "paragraphs": [
+                                "A diagnostic test according to at least some embodiments of the present invention could optionally include any of bead-based assays previously described (AlphaScreen\u00ae assay and multiplexed assay using Luminex\u00ae technology).",
+                                "In addition to the ability to measure antibody responses using the bead-based assays previously described, other methods could also be used, including, but not limited to, the enzyme linked immunosorbent assay (ELISA) (1). protein microarray (2) and the luminescence immunoprecipitation system (LIPs) (3).",
+                                "Antibody measurements via ELISA rely on coating of specialised plates with the required antigen, followed by incubation with the plasma sample of interest. IgG levels are detected by incubation with a conjugated secondary antibody followed by substrate, for example a horseradish peroxidase-conjugated anti-IgG and ABTS [2,2=-azinobis(3-ethylbenzothiazo-line-6-sulfonic acid)-diammonium salt].",
+                                "Protein microarray platforms offer a high-throughput system for measuring antibody responses. Proteins of interest are spotted onto microarray chips then probed with plasma samples. The arrays are then further incubated with a labeled anti-immunoglobulin and analysed using a microarray scanner.",
+                                "The LIPs assay utilizes cell lysate containing the expressed antigen fused to a Renilla luciferase reporter protein. Plasma samples are incubated with a defined amount of this lysate, with protein A/G beads used to capture the antibody. The amount of antibody-bound antigen-luciferase is measured by the addition of a coelenterazine substrate, and the light emitted measured using a luminometer.",
+                                "Any of these assays may optionally be combined with a reader and if necessary, an analyzer device, to form an apparatus according to at least some embodiments of the present invention. The reader would read the test results and the analyzer would then analyze them according to any of the previously described algorithms and software."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe bead-based assays",
+                                "describe alternative methods for antibody measurements",
+                                "describe apparatus for reading and analyzing test results"
+                            ],
+                            "num_characters": 1954,
+                            "outline_medium": [
+                                "describe diagnostic test methods"
+                            ],
+                            "outline_short": [
+                                "describe diagnostic test methods"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "EXAMPLE 3",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Illustrative Software Process for Diagnosis",
+                            "paragraphs": [
+                                "This Examples relates to processes for estimation of time since last P. vivax infection using measurements of antibody titers, which may optionally be provided through software.",
+                                "Section 1 relates to calibration and validation of the input data, as well as non-limiting examples of models and algorithms which may optionally be used to analyze the data. Section 2 provides additional information on the algorithms utilized."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce software process for diagnosis"
+                            ],
+                            "num_characters": 423,
+                            "outline_medium": [
+                                "introduce software process for diagnosis"
+                            ],
+                            "outline_short": [
+                                "overview of calibration data and algorithms"
+                            ]
+                        },
+                        {
+                            "title": "Section 1\u2014Overview of Calibration Data and Algorithms",
+                            "paragraphs": [
+                                "**Calibration and Validation Data**",
+                                "Both the down-selection of antigens for incorporation into a diagnostic test, and the calibration and validation of algorithms for providing classifications of recent P. vivax infection given blood samples, will depend on the available epidemiological data. Data will be required on the demography of the populations under investigation, serological measurements, and monitoring for parasitemia and clinical episodes. Table 1 provides an overview of the data sets that are used.",
+                                "**Algorithm Inputs and Outputs**",
+                                "A diagnostic test will take a blood sample as input and provide data to inform a decision making process as output. The type of data generated will depend on the technological specifications of the diagnostic platform. The outputted data can then be used as input for some algorithm to inform a decision making process. The following factors need to be taken into consideration when defining the inputs and outputs of a decision making algorithm:",
+                                "**1) Number of Antigens**",
+                                "The number of antigens to which antibodies can be measured will be restricted by the technological specifications of the diagnostic platform under consideration. Measurement of antigens to a greater number of antibodies will in theory provide more data as input for an algorithm, potentially increasing predictive power.",
+                                "**2) Measurement of Antibody Levels**",
+                                "The levels of antibody in a blood-sample can be measured and summarised in a variety of ways.",
+                                "a) Continuous Measurement\n\n\n- - A continuous measurement that has a monotonic relationship with\n    antibody titer. It can be compared with a titration curve to produce\n    an estimate of antibody titer,",
+                                "b) Binary Classification\n\n\n- - Assesses whether antibody levels are greater or less than some\n    threshold.",
+                                "c) Categorical Classification\n\n\n- - Assigns antibody levels to one of a set of pre-defined categories,\n    e.g. low, medium, high. A categorical classification can be\n    generated via a series of binary classifications.",
+                                "**3) Decision Making Requirements**",
+                                "The result of a diagnostic test and accompanying algorithm can be used to inform a decision on whether or not to treat, as well as to inform surveillance systems.",
+                                "a) Classification of Recent Infection\n\n\n- - A binary output corresponding to whether or not there was an\n    infection with *P. vivax* blood-stage parasites in the past 9\n    months. This can be presented as a binary classification, or as a\n    probabilistic classification. This can be adjusted for a range of\n    different temporal thresholds: 3 months, 6 months, 12 months, 18\n    months.",
+                                "b) Estimation of Time Since Last Injection\n\n\n- - An estimate of the time since last *P. vivax* blood-stage\n    infection\u2014depending on the available calibration data the time since\n    last infection can be defined either as the time since last\n    PCR-detectable blood-stage parasitemia, or as the time since last\n    mosquito bite. Time since last infection can be estimated\n    continuously or categorically. Concurrent estimation of uncertainty\n    will be important.)",
+                                "c) Medium-Term Serological Exposure",
+                                "Given sufficient calibration data, the algorithms described here can be modified to provide extended measurements of an individual's recent to medium term P. vivax exposure, e.g. how many infections in the last 2 years?",
+                                "**4) Computational and Analytic Capabilities**",
+                                "An algorithm's complexity will be restricted by the analytic resources accompanying the diagnostic platform. In a low resource setting, we may require a decision to be made given a sequence of binary outputs from a rapid diagnostic test (sero-negative or sero-positive) without any access to computational devices. At the other extreme, in a high resource setting we may have continuous measurements of antibodies to multiple antigens accompanied with algorithms encoded in computational software.\n\n\n- - a) No access to computational devices. Algorithms implemented via\n    \u2018easy to follow\u2019 instructions on paper charts.\n  - b) Algorithm implemented in software that can be installed on a\n    portable computation device such as a smartphone or tablet. May\n    require the manual entry of output from the diagnostic platform.\n  - c) Computational software with encoded algorithms integrated within\n    the diagnostic platform."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate calibration and validation data",
+                                "describe data requirements",
+                                "outline algorithm inputs and outputs",
+                                "discuss number of antigens",
+                                "explain measurement of antibody levels",
+                                "describe decision making requirements",
+                                "discuss computational and analytic capabilities",
+                                "summarize algorithm inputs and outputs"
+                            ],
+                            "num_characters": 4318,
+                            "outline_medium": [
+                                "motivate calibration and validation data",
+                                "describe algorithm inputs and outputs",
+                                "discuss factors for defining algorithm inputs and outputs",
+                                "outline decision making requirements"
+                            ],
+                            "outline_short": [
+                                "motivate calibration and validation data",
+                                "describe algorithm inputs and outputs"
+                            ]
+                        },
+                        {
+                            "title": "Algorithms",
+                            "paragraphs": [
+                                "There is a wide range of algorithms for classification and regression in the statistical inference and machine learning literature (Hastie, Tibshirani & Friedman). A classification algorithm can take a diverse range of input data and provide some binary or categorical classification as output. A regression algorithm can take similar input, but provides a continuous prediction as output. Table 2 provides an overview of some algorithms that can be used for classification problems. Four of these have been regularly described in the statistical learning literature: linear discriminant analysis (LDA); quadratic discriminant analysis (QDA); decision trees; and random forests. One of these has been specifically developed for the application at hand: combined antibody dynamics (CAD). The candidate algorithms are classified according to a number of factors. The degree of transparency describes the straightforwardness and reproducibility of an algorithm. A decision tree is considered very transparent as it can be followed by a moderately well-informed individual, as it requires answering a sequence of questions in response to measured data. This simple, logical structure makes decision trees particularly popular with doctors. Because of the transparency and ease of use, decision trees are sometimes referred to as glass box algorithms. At the other extreme, algorithms such as random forests are considered to be black box algorithms where there may be no obvious association between the inputs and outputs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce classification and regression algorithms",
+                                "describe linear and quadratic discriminant analysis",
+                                "explain decision trees and random forests"
+                            ],
+                            "num_characters": 1518,
+                            "outline_medium": [
+                                "introduce classification and regression algorithms"
+                            ],
+                            "outline_short": [
+                                "introduce classification and regression algorithms"
+                            ]
+                        },
+                        {
+                            "title": "Section 2\u2014Expanded Details of Algorithms",
+                            "paragraphs": [
+                                "Here we provide an overview of classification algorithms such as LDA, CODA, decision trees and random forests which have already been described extensively elsewhere (Hastie, Tibshirani & Friedman3). We also provide an extended description of the combined antibody dynamics (CAD) algorithm.",
+                                "**Linear and Quadratic Discriminant Analysis**",
+                                "The theory of linear discriminant analysis (LDA) and quadratic discriminant analysis (QUA) is described in detail in \u201cThe Elements of Statistical Learning: Data Mining, Inference and Prediction\u201d by Hastie, Tibshirani &. Friedman6. We provide a brief overview of how these methods may be applied. A key assumption for LDA and QDA classification algorithms is that individuals who have similar antibody titers are likely to have the same classification. It is convenient to compare individuals with different antibody profiles via Euclidean distance of log antibody titers. An LDA or QDA classifier can be implemented by fitting multivariate Gaussian distributions to the clusters of data points representing \u2018old\u2019 and \u2018new\u2019 infections. Assume we have measurements of p antibodies. Denote k \u2208 {new,old} to represent the classes of training individuals with new and old infections. These can be modelled as multivariate Gaussians:",
+                                "\\({f_{k}(x)} = {\\frac{1}{\\left( {2\\;\\pi} \\right)^{p/2}{\uf603\\Sigma_{k}\uf604}^{1/2}}e^{{- \\frac{1}{2}}{({x - \\mu_{k}})}^{\\tau}{\\Sigma_{k}^{- 1}{({x - \\mu_{k}})}}}}\\)",
+                                "where \u03bck and \u03a3k are the mean and p*p covariance matrix of the training data of each class. In the case of LDA, all classes are assumed to have the same covariance matrix (\u03a3new=\u03a3old=\u03a3), and the classification between new and old infections can be evaluated via the log ratio:",
+                                "\\({\\log\\left( \\frac{P\\left( {{{new}\\text{|}X} = x} \\right)}{P\\left( {{{old}\\text{|}X} = x} \\right)} \\right)} = {{{- \\frac{1}{2}}\\left( {\\mu_{new} + \\mu_{old}} \\right)^{T}{\\Sigma^{- 1}\\left( {\\mu_{new} - \\mu_{old}} \\right)}} + {x^{T}{\\Sigma^{- 1}\\left( {\\mu_{new} - \\mu_{old}} \\right)}}}\\)",
+                                "which is linear in x. The two categories are therefore separated by a hyperplane in p-dimensional space.",
+                                "In QDA, the restriction that \u03a3new=\u03a3old=\u03a3 is relaxed and it can be shown that the classification boundary is described by a conic section in p-dimensional space.",
+                                "LDA and QDA have consistently been shown to provide robust classification for a wide range of problems. The predictive power of these algorithms can be assessed through cross-validation whereby the data is split into training and testing data sets. The algorithm is calibrated using the training data set and subsequently validated using the test data set. An important method for assessing an algorithm's predictive power is to evaluate the sensitivity and specificity. In this context, we define sensitivity to be the proportion of recent infections correctly classified as recent infections, and we define specificity to be the proportion of old infections correctly classified as old infections.",
+                                "A receiver operating characteristic (ROC) curve allows for detailed investigation of the association between sensitivity and specificity. At one extreme, we could obtain 100% sensitivity and 0% specificity by simply classifying all blood samples as new infections. At the other extreme, we could obtain 100% specificity and 0% sensitivity by classifying all blood samples as old infections. FIG. 25 shows ROC curves describing the classification performance of IDA algorithms for combinations of 4 antigens in Thailand, Brazil and the Solomon Islands.",
+                                "**Decision Trees and Random Forests**",
+                                "Tree-based algorithms partition the space spanned by the data into a set of rectangles with a unique classification applied to each rectangle. Similarly to the LDA and QDA classification algorithms, a great deal of theoretical information is supplied in the book \u201cThe Elements of Statistical Learning: Data Mining, Inference and Prediction\u201d.",
+                                "There are several powerful methods for extending decision tree classifiers including bagging (bootstrapp aggregating), boosting and random forests3. These methods can lead to substantially improved classifiers but typically require more computation and more data. In addition to providing powerful classifiers, these algorithms can provide important diagnostics for investigating the association between the signal in the input and the output.",
+                                "FIG. 23 A-C shows the ROC curves for cross-validated random forests classifiers applied to data sets from Thailand, Brazil and Solomon Islands. Notably, when the training and testing data sets are from the same region, there are many combinations of four antigens that allow sensitivity >80% and specificity >80%. When training and testing data sets are from different regions, it was still possible to obtain combinations of four antigens with sensitivity >80% and specificity >80%.",
+                                "**Modelling of Antibody Dynamics**",
+                                "A key premise of the proposed diagnostic test is that following infection with P. vivax blood-stage parasites, an antibody response will be generated that will change predictably over time (FIG. 13). Here we present a subset of the data that demonstrates how antibodies to P. vivax antigens change over time.",
+                                "Longitudinal Antibody Titers Following Clinical P. vivax",
+                                "We have data from longitudinal cohorts in Thailand and Brazil where participants were followed for up to 36 weeks after a symptomatic clinical episode of P. vivax (see also Table 1/Materials and Methods in Example 1, antigen discovery cohorts). Participants were treated with primaquine, and blood samples were frequently tested to ensure they remained free from re-infection. Antibody levels to a wide range of antigens were measured at 12 week intervals to investigate the changing antibody dynamics. The sample data in FIG. 11 illustrates that antibodies exhibit a range of different half-lives\u2014a pattern consistent with the rest of the data (see also FIG. 3). Another important general feature of the data is exhibited here: rapidly decaying antibodies (short half-life) exhibit much more measurement error than slowly decaying antibodies (long-lived half-life).",
+                                "The decay of anti-malaria antibodies following infection can be described by an exponential or a bi-phasic exponential distribution4. Because of the sampling frequency (every 12 weeks) we assume that antibodies decay exponentially. Exponential decay equates to linear decay on a log scale. Therefore we utilise linear regression models. In particular, we utilise a mixed-effects linear regression framework so that we can estimate both the mean rate of antibody decay as well as the standard deviation.",
+                                "We assume that for individual i we have measurements of antibody titer Aijk at time j to antigen k. We assume that at time 0, antibody titers are Normally distributed5 with mean \u03b1k0 and standard deviation \u03c3\u03b1,k on a log-scale. We assume that an individual's rate of antibody decay is drawn from a Normal distribution with mean rk0 and standard deviation \u03c3r,k. The antibody dynamics in the population can therefore be described by the following mixed-effects linear regression model:",
+                                "log(Aijk)\u02dc(\u03b1k0+\u03b1ik)+(rk0+rik)tj+\u03b5k",
+                                "\u03b1ik\u02dcN(0, \u03c3\u03b1,k)",
+                                "rik\u02dcN(0, \u03c3r,k)",
+                                "\u03b5k\u02dcN(0, \u03c3m,k) \u2003\u2003(1)",
+                                "This model can be fitted to data using the liner package in R. FIG. 11 shows a sample of the fitted profiles of antibody dynamics.",
+                                "**Estimation Using Antibodies to a Single Antigen**",
+                                "Here we describe an algorithm that uses a biologically-motivated model of the decay of antibody titers over time to facilitate statistical inference of the time since last infection. A key requirement of this algorithm is that it requires some prior knowledge of the decay rates of antibodies. This can be achieved either through estimation of antibody decay rates from longitudinal data as described in equation (1), or estimation of decay rates from cross-sectional antibody measurements as presented in FIG. 12.",
+                                "The linear regression model for the decay of antibody titers described in equation (1) has three sources of variation: (i) variation in initial antibody titer following infection; (ii) between individual variation in antibody decay rate; and (iii) measurement error. Notably, all these sources of variations are described by Normal distributions (FIG. 13a) so their combined variation will also be described by a Normal distribution. Therefore, the expected log antibody titer to antigen k in individual i at timet can be described by the following distribution.",
+                                "xik\u02dcN(\u03b1k0+rkt, \u03c3\u03b1,k2+t2\u03c3r,k2+\u03c3m,k2) \u2003\u2003(2)",
+                                "The probability distribution of the expected antibody titer to antigen k in individual i at time t is given by the following distribution:",
+                                "\\(\\begin{matrix}\n{{P\\left( {x_{ik}\\text{|}t} \\right)} = {\\frac{1}{\\sqrt{2\\;{\\pi\\left( {\\sigma_{\\alpha,k}^{2} + {t^{2}\\sigma_{r,k}^{2}} + \\sigma_{m,k}^{2}} \\right)}}}e^{- \\frac{{({x_{ik} - \\alpha_{k}^{0} - {r_{k}^{0}t}})}^{2}}{2{({\\sigma_{\\alpha,k}^{2} + {t^{2}\\sigma_{r,k}^{2}} + \\sigma_{m,k}^{2}})}}}}} & (3)\n\\end{matrix}\\)",
+                                "Note that we have xik \u2208 (\u2212\u221e, +\u221e), as xik denotes the log antibody titer and measurements of antibody titer are assumed to be positive. The probability distribution for the time since infection t given measured antibody titer xik can be calculated by inverting equation (3) using Bayes rule3.",
+                                "\\(\\begin{matrix}\n{{P\\left( {t\\text{|}x_{ik}} \\right)} = \\frac{{P\\left( {x_{ik}\\text{|}t} \\right)}{P(t)}}{P\\left( x_{ik} \\right)}} & (4)\n\\end{matrix}\\)",
+                                "The time since last infection will have a lower bound of zero. We can choose to impose an upper bound of either the individual's age \u2018a\u2019 or positive infinity. Choosing positive infinity allows us to better handle the case where an individual was never infected\u2014the low measured antibody titers will be consistent with a very large time since last infection, possibly greater than the age of the individual. Therefore we should only restrict t to the interval (0, a) if we know for certain that the individual has been infected. In practice, we choose some large time tmax for our upper bound. We assume P(t) denotes a uniform distribution on the interval (0, tmax). P(xik) is a normalising constant which is calculated via numerical integration to ensure that P(t|xik) denotes a probability distribution.",
+                                "Equation (4) provides a probability distribution for the time since last infection. For the purposes of a diagnostic test we may be more interested in obtaining a binary classification, e.g. was the individual infected within the last 9 months. It is usually not possible to definitively make such a categorisation, but we can instead calculate their probabilities as follows:",
+                                "P0-9m(xik)=\u222b09P(t|xik)dt",
+                                "P9m+(xik)=\u222b9tP(t|xik)dt \u2003\u2003(5)",
+                                "**Combined Antibody Dynamics: Estimation Using Antibodies to Multiple Antigens**",
+                                "Previously, we described how the antibody titer to a single antigen can be used to estimate the time since last infection. However, in practice there is too much noise to make an accurate estimate of time since last infection with a single antigen. Increasing the number of measured antibodies can increase the information content in our data allowing us to obtain more accurate estimates of time since last infection. In particular, selecting antibodies with a range of half-lives may increase our power to resolve infection times more accurately.",
+                                "FIG. 14 shows a schematic of the dynamics of antibodies to two antigens. We have rapidly decaying antibody 1 and slowly decaying antibody 2. At baseline, antibody titers are likely to be correlated, so we assume that initial titer following infection is described by a multivariate Normal distribution with covariance matrix \u03a3\u03b1. The between individual rates of antibody decay may also be correlated (i.e. all antibody titers may decay particularly quickly in some individuals) so we also assume that decay rates are described by a multivariate Normal distribution with covariance matrix \u03a3r. Finally, there will be measurement error associated with each antibody. In particular, we assume the measurement errors between different antibodies are independent so that the total measurement error can be described by a multivariate Norma distribution with diagonal covariance matrix \u03a3m.",
+                                "\\(\\begin{matrix}\n{{P\\left( {x_{i}\\text{|}t} \\right)} = {{\\left( {2\\;\\pi} \\right)^{- \\frac{k}{2}}\\text{\uf603}\\Sigma_{\\alpha}} + {t^{2}\\Sigma_{r}} + {\\Sigma_{m}\\text{\uf604}^{- \\frac{1}{2}}e^{{- \\frac{1}{2}}{({x_{i} - \\alpha^{0} - {r^{0}t}})}^{T}{({\\Sigma_{\\alpha} + {t^{2}\\Sigma_{r}} + \\Sigma_{m}})}^{- 1}{({x_{i} - \\alpha^{0} - {r^{0}t}})}}}}} & (6)\n\\end{matrix}\\)",
+                                "The method for estimating the time since last infection given the multivariate probability distribution for the measured vector of antibody titers xi is the same as described in equation (4).",
+                                "**Selecting Optimal Combinations of Antigens**",
+                                "Machine learning algorithms take data from a large number of streams and identify which data streams have the most signal for classifying output. Such methods typically involve a greedy algorithm which will provide a good but not necessarily optimal solution. Greedy algorithms take the next best step, i.e. including the next antigen that gives the biggest increase in predictive power. As such they may provide a locally optimal solution but not necessarily a globally optimal solution. Simulated annealing algorithms provide an alternative to greedy algorithms that provide a higher likelihood of obtaining a globally optimal solution7.",
+                                "Here we describe how a simulated annealing algorithm can be applied to the combined antibody dynamics (CAD) classifier to select a combination of antigens that provides optimal predictive power. Assume that P measurements of antibodies are available. We want to select some subset of these that maximises predictive power. Denote y to be a vector of 0's and 1's indicating whether the pth antibody is included in our panel. Thus for example we may have",
+                                "y=(0, 0, 1, 1, 0, 1, 0, 0, 1) \u2003\u2003(7)",
+                                "The vector of binary states depicted in equation (7) will correspond to a vector of antibody measurements as follows:",
+                                "xi=(xi,1, xi,2, xi,3, xi,4) \u2003\u2003(8)",
+                                "Given data from I individuals on measured antibody responses, we can calculate the probability that the individual was infected within the last 9 months P0-9m(xi) or greater than 9 months ago P9m+(xi). Let zi be an indicator denoting whether individual I was infected in the last 9 months (zi=1) or not (zi=0). We can then write down the likelihood of the data as follows:",
+                                "\\(\\begin{matrix}\n{{L(y)} = {\\prod\\limits_{i = 1}^{I}\\;{{P_{0 - {9\\; m}}\\left( x_{i} \\right)}^{z_{i}}{P_{{9\\; m} +}\\left( x_{i} \\right)}^{1 - z_{i}}}}} & (9)\n\\end{matrix}\\)",
+                                "The challenge is to select a binary vector); corresponding to a combination of antigens that maximises the likelihood in equation (9) and thus has the highest likelihood of correctly classifying infections according to whether they occurred in the last 9 months.",
+                                "If we have P antigens, there are 2P combinations of antigens. For P>15 it is not computationally feasible to test all possible combinations. We therefore utilise a simulated annealing algorithm for exploring the state space of combinations and identifying the optimal combinations subject to various constraints (e.g. enforcing a ma.ximum of 10 antigens to a panel). FIG. 20 shows the results, and this contributed to the initial down-selected of antigens as described in Example 1."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce linear discriminant analysis",
+                                "derive linear discriminant analysis",
+                                "introduce quadratic discriminant analysis",
+                                "derive quadratic discriminant analysis",
+                                "discuss decision trees",
+                                "explain random forests",
+                                "introduce modelling of antibody dynamics",
+                                "describe longitudinal antibody titers",
+                                "model antibody decay",
+                                "estimate antibody decay rates",
+                                "describe antibody dynamics model",
+                                "estimate time since last infection",
+                                "introduce estimation using antibodies to a single antigen",
+                                "describe antibody decay model",
+                                "estimate time since last infection",
+                                "introduce combined antibody dynamics",
+                                "describe antibody dynamics model",
+                                "estimate time since last infection",
+                                "discuss selecting optimal combinations of antigens",
+                                "introduce simulated annealing algorithm",
+                                "describe selecting optimal combinations of antigens",
+                                "discuss machine learning algorithms",
+                                "introduce greedy algorithm",
+                                "describe simulated annealing algorithm",
+                                "discuss selecting optimal combinations of antigens",
+                                "introduce likelihood function",
+                                "describe likelihood function",
+                                "discuss selecting optimal combinations of antigens",
+                                "introduce simulated annealing algorithm",
+                                "summarize selecting optimal combinations of antigens"
+                            ],
+                            "num_characters": 15327,
+                            "outline_medium": [
+                                "introduce linear discriminant analysis",
+                                "describe quadratic discriminant analysis",
+                                "introduce decision trees",
+                                "describe random forests",
+                                "motivate modelling of antibody dynamics",
+                                "describe longitudinal antibody titers",
+                                "model antibody dynamics using mixed-effects linear regression",
+                                "estimate antibody decay rates",
+                                "describe estimation using antibodies to a single antigen",
+                                "derive probability distribution of expected antibody titer",
+                                "calculate probability distribution of time since infection",
+                                "introduce combined antibody dynamics",
+                                "describe estimation using antibodies to multiple antigens",
+                                "select optimal combinations of antigens",
+                                "apply simulated annealing algorithm"
+                            ],
+                            "outline_short": [
+                                "describe linear and quadratic discriminant analysis",
+                                "introduce decision trees and random forests",
+                                "model antibody dynamics",
+                                "estimate time since last infection using antibodies to a single antigen",
+                                "estimate time since last infection using antibodies to multiple antigens",
+                                "select optimal combinations of antigens",
+                                "apply simulated annealing algorithm to select optimal antigens"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A diagnostic test for Plasmodium vivax or Plasmodium ovale, to determine a likelihood of a specific timing of infection by P. vivax or P. ovale in a subject by determining a level of antibodies to a plurality of antigens in a sample from the subject, wherein the level is measured of at least one antibody to a protein selected from the group consisting of PVX_099980 (L01), PVX_112670, PVX_087885, PVX_082650, PVX_088860, PVX_112680, PVX_112675, PVX_092990, PVX_091710, PVX_117385, PVX_098915, PVX_088820, PVX_117880, PVX_121897, PVX_125728, PVX_001000, PVX_084340, PVX_090330, PVX_125738, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_084720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930, PVX_123685, PVX_002550, PVX_082700, PVX_097680, PVX_097625, PVX_082670, PVX_082735, PVX_082645, PVX_097720, PVX_000930, PVX_094350, PVX_000930, PVX_114330, PVX_088820, PVX_080665, PVX_092995, PVX_087885, PVX_003795, PVX_087110, PVX_087670, PVX_081330, PVX_122805, RBP1b (P7) , RBP2a (P9), RBP2b (P25) (PVX_094255), RBP2cNB (M5), RBP2-P2 (P55), PvDBP R3-5, PvGAMA, PvRipr, PvCYRPA, Pv DBPII (AH), PvEBP, RBP1a (P5) and Pv DBP (SacI).",
+        "2. (canceled)",
+        "3. The test of claim 1, wherein the protein is selected from the group consisting of:\n(a) PVX_099980 (L01), PVX_112670, PVX_087885, PVX_082650, PVX_088860, PVX_112680, PVX_112675, PVX_092990, PVX_091710, PVX_117385, PVX_098915, PVX_088820, PVX_117880, PVX_121897, PVX_125728, PVX_001000, PVX_084340, PVX_090330, PVX_125738, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_084720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930 and PVX_123685;\n(b) PVX_099980, PVX_112670, PVX_087885, PVX_082650, PVX_096995, PVX_097715, PVX_094830, PVX_101530, PVX_090970, PVX_084720, PVX_003770, PVX_112690, PVX_003555, PVX_094255, PVX_090265, PVX_099930 and PVX_123685;\n(c) PVX_099980, PVX_112670, PVX_087885 and PVX_082650;\n(d) RBP2b (PVX_094255) and PVX_099980 (L01); and\n(e) PVX_099980 (L01), PVX_112670, PVX_087885, PVX_096995, PVX_097715, PVX_094255, PVX_097625, PVX_097720, PVX_000930, PVX_092995, PvDBP R3-5, PvRipr, and PvEBP.",
+        "4. The test of claim 3, wherein the protein is selected from the group consisting of PVX_099980 (L01), PVX_112670, PVX_087885, PVX_096995, PVX_097715, PVX_094255, PVX_097625, PVX_097720, PVX_000930, PVX_092995, PvDBP R3-5, PvRipr, and PvEBP.",
+        "5. (canceled)",
+        "6. (canceled)",
+        "7. (canceled)",
+        "8. (canceled)",
+        "9. (canceled)",
+        "10. The test of claim 1, comprising determining a level of a plurality of antibodies that bind to a plurality of antigens in a blood sample taken from the subject.",
+        "11. The test of claim 10, comprising determining a level of 2 to 17 antibodies.",
+        "12. (canceled)",
+        "13. The test of claim 1, wherein dynamics of the measured antibodies preferably include a combination of short-lived and long-lived antibodies.",
+        "14. The test of claim 1, wherein the level of antibodies is measured at one time point, or at a plurality of time points.",
+        "15. (canceled)",
+        "16. The test of claim 1, wherein antibody levels are measured in the subject according to a technology providing a continuous measurement of antibody.",
+        "17. The test of claim 16, wherein the technology is selected from the group consisting of bead-based assays (e.g. AlphaScreen\u00ae or Luminex\u00ae technology), the enzyme linked immuosorbent assay (ELISA), protein microarrays and the luminescence immunoprecipitation system (LIPS).",
+        "18. An apparatus for diagnosis of P. vivax or P. ovale, comprising the diagnostic test of claim 1 and a reader for reading results of the diagnostic test, optionally adapted for portable use.",
+        "19. (canceled)",
+        "20. The apparatus of claim 18, further comprising a transmitter for transmitting said results.",
+        "21. A system for diagnosis of P. vivax or P. ovale, comprising the apparatus of claim 18 and an analyser for analysing the results of the diagnostic test.",
+        "22. A method for diagnosis of P. vivax or P. ovale, comprising performing the diagnostic test of claim 1 to thereby identify individuals with a high probability of being infected with liver-stage hypnozoites.",
+        "23. The test of claim 1, wherein said specific timing relates to an infection occurring within an elapsed time period of 0 to 12 months.",
+        "24. (canceled)",
+        "25. The test of claim 23, wherein said time period is differentiated by month, by week, or by day.",
+        "26. (canceled)",
+        "27. (canceled)",
+        "28. The test of claim 1, wherein a particular time period is determined as a binary decision of a more recent or an older infection, with each time point as a cut-off.",
+        "29. The test of claim 28, wherein said cut off determines whether an infection in a subject was within the past 9 months or later than the past 9 months.",
+        "30. (canceled)",
+        "31. The test of claim 1, comprising further determining an estimate of the time since last P. vivax or P. ovale blood-stage infection according to the time since last PCR-detectable blood-stage parasitemia, or as the time since last infective mosquito bite.",
+        "32. (canceled)",
+        "33. The test of claim 31 method, test, apparatus or comprising determining a frequency of infections during a particular time period and/or time since last infection.",
+        "34. The test of claim 1 for detecting a presymptomatic or asymptomatic infection by P. vivax or P. ovale.",
+        "35. The test of claim 1 for detecting a dormant infection, wherein P. vivax or P. ovale is present in the liver but is not present at significant levels in the blood.",
+        "36. The test of claim 1 for detecting antibodies to malarial proteins that are present in the blood that indicate a high degree of probability of liver-stage infection.",
+        "37. The test of claim 1 for determining progression of infection by P. vivax or P. ovale in a population of a plurality of subjects.",
+        "38. (canceled)",
+        "39. The test of claim 1 for determining whether the infection is starting or whether the infection has reached a peak in terms of exposure of individuals who are na\u00efve to the particular strain of P. vivax or P. ovale causing the infection.",
+        "40. The test of claim 1 for measuring antibodies in the blood of the subject at a plurality of time points to determine decay in the level of each antibody in the blood; and fitting such decay to a suitable model to determine at least one infection parameter.",
+        "41. (canceled)",
+        "42. The test of claim 40, wherein decay in the level of a plurality of different antibodies is determined and the different antibodies are selected to have a range of different half-lives.",
+        "43. The test of claim 40, wherein from two up to twenty different antibodies are measured.",
+        "44. (canceled)",
+        "45. The test of claim 1, wherein a model for determining at least one parameter about the infection in the subject is selected from the group consisting of linear discriminant analysis (LDA), quadratic discriminant analysis (QDA), combined antibody dynamics (CAD), decision trees, random forests, boosted trees and modified decision trees.",
+        "46. (canceled)"
+    ]
+}

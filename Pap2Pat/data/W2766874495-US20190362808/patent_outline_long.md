@@ -1,0 +1,234 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to sequencing data processing and benchmarking
+
+## BACKGROUND
+
+- motivate somatic mutations in cancer
+- describe cancer driver events
+- discuss limitations of current sequencing methods
+- highlight importance of archival tissue collections
+- describe challenges of identifying somatic variants
+- discuss field cancerization
+- describe current analytic strategies
+- discuss limitations of filtering and machine-learning approaches
+- highlight need for new bioinformatics methods
+- summarize current state of somatic variant detection
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce method for detecting somatic and germline variants
+- describe receiving aligned sequence data
+- identify candidate variants
+- observe allelic fractions
+- model copy number state estimates and tumor-cell fractions
+- predict expected allelic fractions
+- determine somatic or germline status
+- describe archival samples
+- describe matched normal samples
+- describe macro-dissecting
+- describe normal, non-tumor cells
+- describe DNA sequencing data
+- describe single-nucleotide variants (SNVs)
+- describe insertions or deletions (INDELs)
+- describe noncoding mutations
+- describe rare variants within a population
+- model jointly for multiple tumor samples
+- verify somatic or germline status
+- describe germline variant callers
+- describe somatic variant callers
+- partition genome into segments
+- observe allelic fractions of each segment
+- model copy number state estimates and tumor-cell fractions
+- determine posterior probability of somatic or germline status
+- describe Bayesian model
+
+## DETAILED DESCRIPTION
+
+- introduce subject matter
+- define variants, including mutations, polymorphisms, and allelic variants
+- discuss detection of somatic mutations in DNA sequencing data
+- provide exemplary embodiments of the present subject matter
+- define technical and scientific terms
+- discuss preferred methods and materials
+- describe modifications of the invention
+- define "comprise" and "a" or "an"
+- define "subject" or "patient"
+- define "sample"
+- define "nucleic acid"
+- define "gene"
+- define "coding" sequence or region
+- define "regulatory sequences"
+- define "non-coding" sequences or regions
+- define "allele"
+- define "variant"
+- define "polymorphism"
+- define "mutation"
+- define "deletion mutation"
+- define "insertion mutation"
+- define "chromosome amplification"
+- define "isolated" nucleic acid
+- define "sequencing"
+- define "next generation sequencing"
+- define "genotype" and "phenotype"
+- define "genome"
+- define "chromosome"
+- define "heterozygous" and "homozygous"
+- define "exome"
+- define "library"
+- define "allelic fractions"
+- define "tumor-cell fraction"
+- define "copy number alteration"
+- discuss next-generation sequencing of tumors
+- discuss importance of accurate identification of somatic variants
+- discuss difficulties in differentiating between somatic and germline variants
+- discuss use of variant databases to filter out germline variants
+- discuss use of variant allele frequencies to differentiate between somatic and germline variants
+- discuss misidentification of germline variants as somatic
+- discuss clinical implications of misidentification
+- discuss presence of germline false positives in clinically actionable genes
+- discuss limitations of existing methods for distinguishing germline and somatic variants
+- introduce Bayesian tumor-only somatic variant caller
+- discuss use of prior knowledge of population frequencies of germline and cancer mutations
+- discuss use of observed variant allele frequencies
+- discuss modeling allelic copy number to determine expected allelic fractions
+- discuss incorporation of population database frequencies to call variants as somatic or germline
+- discuss joint probability of somatic and germline mutations across multiple samples
+- discuss advantages of multi-sample approach
+
+### EXAMPLES
+
+- introduce ethics approval and consent
+- describe patient and sample information
+- outline retrospective analysis of archival samples
+- detail breast tumor collection and characteristics
+- detail prostate tumor collection and characteristics
+- describe data collection from medical records
+- outline pathology review and tissue block selection
+- describe macrodissections and DNA isolation from FFPE tissue
+- describe DNA isolation from fresh frozen tissue
+- describe DNA isolation from blood germline tissue
+- outline RNA purification from FFPE tissue sections
+- describe DNA quality assessment and quantification
+- outline tumor sample characteristics and normal cell content
+- describe library preparation and sequencing
+- detail custom bait content and sequencing protocols
+- outline data availability and sharing
+- introduce software requirements and availability
+- describe alignment and assembly pipeline
+- outline BWA-MEM alignment and BAM file processing
+- describe in silico dilutions and downsampling
+- outline benchmark variant calling approach
+- describe germline variant filtering approach
+- introduce simulations for somatic variant detection
+- outline simulation parameters and read depth modeling
+- introduce variant caller overview
+- describe single-sample strategy
+- outline four main steps of single-sample strategy
+- explain first step of single-sample strategy
+- explain second step of single-sample strategy
+- explain third step of single-sample strategy
+- explain fourth step of single-sample strategy
+- describe multiple-sample strategy
+- outline four main steps of multiple-sample strategy
+- explain first two steps of multiple-sample strategy
+- explain third step of multiple-sample strategy
+- explain fourth step of multiple-sample strategy
+- calculate position quality scores from unmatched controls
+- determine quality score for each position
+- calculate conditional probabilities
+- calculate posterior probability that position is unreliable
+- transform posterior probability to Phred-like score
+- calculate tumor quality metrics and filtering
+- calculate sixteen quality metrics
+- determine PASS and REJECT thresholds
+- assign positions to trusted and non-trusted training groups
+- train quadratic discriminant model
+- determine posterior probability that variant belongs to trusted training group
+- perform second classification step
+- determine probability of position belonging to artifact group
+- call PASS, REJECT, or LowQC
+- estimate copy number and clonal sample fraction
+- model allele-specific copy number of clonal and subclonal copy number events
+- find most likely allelic copy number state for each segment
+- optimize clonal and subclonal sample fractions
+- maximize sum of likelihoods
+- determine allele frequencies
+- calculate likelihood of clone
+- find most likely clone
+- extend single-sample approach
+- model multiple samples
+- optimize centering parameter
+- calculate likelihood of exon read depth
+- calculate likelihood of heterozygous variant
+- calculate likelihood of somatic variant
+- calculate likelihood of observing heterozygous positions
+- calculate likelihood of observing somatic calls
+- determine optimal number of clonal variant groups
+- calculate probability of data given models
+- calculate posterior probability of somatic mutation
+- calculate joint probability of each variant type
+- calculate posterior probability of somatic variant
+- determine evidence of variant in each sample
+- introduce private germline variation
+- examine dependence of private germline variation on ancestry
+- analyze 1000 Genomes Phase 3 data
+- extend analysis with additional exome sequenced tumor/normal sets
+- obtain high quality variant calls using strict thresholds
+- limit to single nucleotide variants with defined impact on protein transcription or translation
+- overlay ancestry by PCA on common coding variants
+- summarize private putatively functional variants for each individual
+- show resolution of ancestry and number of private variants
+- examine mean number of missense variants separating into three approximate groups
+- perform 1-way ANOVA analysis between groups
+- discuss implications towards using tumor only sequencing in precision medicine
+- introduce framework for considering allele fraction shifts
+- model allelic copy number and clonal sample fractions
+- calculate expected allele frequencies for somatic and germline variants
+- illustrate how expected allele frequencies differ with tumor content
+- simulate single-sample approach
+- examine power to detect somatic variants depending on tumor content, mean target coverage, and copy number state
+- evaluate dataset using tumor only caller
+- define true somatic and true germline variants using consensus calling approach
+- use strict quality filtering to exclude variants not mapped cleanly
+- discuss effect of increasing coverage on number of somatic and private germline variants
+- discuss effect of changing tumor content on number of somatic and private germline variants
+- perform downsampling and in silico dilution experiments
+- call main copy number events consistently
+- discuss sample fraction and copy number calling of single-sample approach
+- evaluate somatic variant detection sensitivity of single-sample approach
+- simulate somatic variants to determine proportion of simulated somatic variants that would be called somatic
+- discuss effect of coverage on sensitivity to detect somatic variants
+- discuss effect of tumor content on sensitivity to detect somatic variants
+- evaluate somatic variant detection precision of single-sample approach
+- introduce LumosVar approach
+- motivate tumor-only sequencing
+- discuss limitations of tumor-only sequencing
+- explain importance of mutational burden
+- describe dependence of mutational burden on cancer type
+- discuss relationship between tumor-only false positives and ancestry
+- introduce Bayesian framework
+- describe integration of modeling copy number and clonality
+- discuss sensitivity of approach to tumor purity, coverage, and copy number alterations
+- introduce multi-sample joint approach
+- simulate power to detect somatic variants in joint approach
+- compare joint approach to single-sample approach
+- evaluate joint approach on GBM samples
+- apply joint approach to FFPE breast and prostate samples
+- discuss benefits of sequencing two samples of different purities
+- evaluate joint approach on glioblastoma dataset
+- apply joint approach to archival breast and prostate samples
+- discuss results of joint approach on archival samples
+- analyze archival tissue using filtering strategy
+- analyze archival tissue using adjacent normal as reference
+- compare mutations called by different approaches
+- discuss validation of mutations
+- discuss novel mutations
+- discuss limitations of ANR approach
+- discuss putative mutations
+- motivate integration of somatic variant, germline variant, copy number variant, and clonal variant grouping
+- describe advantages of claimed methods
+- conclude claimed methods
+

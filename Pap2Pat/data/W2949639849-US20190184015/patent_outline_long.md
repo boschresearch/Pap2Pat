@@ -1,0 +1,201 @@
+# DESCRIPTION
+
+- introduce treatment approach
+
+## BACKGROUND OF THE INVENTION
+
+- define itch
+- describe urgent need to scratch
+- discuss impact on quality of life
+- introduce chronic itch cycle
+- describe skin barrier damage
+- mention itch-associated diseases
+- discuss limitations of anti-histamine drugs
+- introduce non-histaminergic pathways
+- highlight IL-31 as novel target molecule
+- describe IL-31's skin tropism
+- discuss IL-31's role in atopic dermatitis
+- introduce pain as another neurological sensation
+- define pain
+- discuss classification of chronic pain
+- describe mechanical allodynia
+- discuss impact on quality of life
+- introduce need for specific treatment
+- discuss spinal circuits and mechanical pain
+- introduce A-fibre mechanoreceptors
+- discuss role of A-fibre mechanoreceptors in pain
+- introduce problem of adverse neurological sensations
+- describe need for therapeutic strategy
+- introduce method for targeting and inhibiting/killing target cells
+- describe conjugate compound
+- discuss binding domain and photosensitive inhibition/cytotoxin group
+- describe administration of conjugate compound
+- discuss irradiation of target body surface area
+- introduce conjugate compound for use in method
+- discuss treatment of neurological sensations
+- describe target cell and target body surface area
+- introduce TrkB, TrkA, IL31RA, and OSMR as target cells
+- discuss neurological sensations and target cells
+- define itch and pruritus
+- discuss itch related disorders or diseases
+- introduce patient to be treated
+- discuss treatment of non-human mammals
+- describe types of itch
+- introduce pain as neurological sensation
+- discuss types of pain
+- describe mechanical allodynia
+- discuss treatment of mechanical allodynia
+- introduce background of invention
+- define sensory neuron
+- describe conjugate compound
+- define antibody
+- describe humanized antibodies
+- describe transgenic animals
+- describe display technologies
+- describe aglycosylated antibody
+- describe antibody fragments
+- describe target cell
+- describe receptor
+- describe inactivating target cell
+- describe photosensitive inhibition/cytotoxin group
+- describe cytotoxic agent
+- describe therapeutic groups
+- describe chemotherapeutic groups
+- describe photosensitizing agent
+- describe beneficial effect of method
+- describe alleviating neurological sensation
+- define pruritogen
+- describe IL31
+- describe mutant IL31
+- describe conjugate compound with IL31
+- describe SNAP tag
+- describe TrkB gene
+- describe TrkB protein
+- describe TrkB ligand
+- describe anti-TrkB antibody
+- describe TrkB T cell receptor
+- describe chimeric antigen receptor
+- describe nucleic acid sequence
+- describe BDNF
+- describe NT-4
+- describe TrkA gene
+- describe TrkA protein
+- describe TrkA RNA
+- describe TrkA ligand
+- describe anti-TrkA antibody
+- describe TrkA T cell receptor
+- describe chimeric antigen receptor
+- describe NGF
+- describe NGFR121W mutant
+
+## Diseases, Treatments and Pharmaceutical Compositions
+
+- define subject
+- describe diseases
+- specify preferred embodiments
+- describe itch
+- describe itch associated diseases
+- describe treatment
+- describe administration
+- define systemic administration
+- define local administration
+- describe pharmaceutical compositions
+- describe conjugate compound
+- describe target body surface area
+- describe method of treatment
+- describe illumination
+- describe neuronal retraction
+- describe pharmaceutical composition
+- describe dosage
+- describe dosage determination
+- describe factors affecting dosage
+- describe physician's role
+- introduce item 1
+- describe compound for use
+- describe binding to TrkB
+- describe functional moiety
+- describe pharmaceutical composition
+
+## EXAMPLES
+
+### I: ITCHING
+
+- generate IL31SNAP
+- characterize IL31SNAP
+- perform binding studies
+- examine IL31SNAP labelling in vivo
+- determine IL31SNAP activity
+- motivate IL31 mediated photoablation
+- synthesize IR700
+- conjugate IR700 to IL31SNAP
+- apply IL31SNAP-IR700 to keratinocytes
+- provoke cell death
+- examine photosensitizer induced cell death in skin
+- impact on IL31 evoked scratching behavior
+- generate IL31K138A-SNAP
+- characterize IL31K138A-SNAP
+- examine IL31K138A-SNAP labelling
+- assess cellular signaling pathways
+- test IL31K138A-SNAP capacity to provoke scratching
+- characterize IL31K138A-SNAP mediated photoablation
+- alleviate IL31 provoked itch
+- test effects on other acutely applied pruritogens
+- assess specificity of photoablation
+- examine effects on chronic inflammatory itch
+- prevent Calcipotriol provoked dermatitis
+- reverse established skin inflammation
+- develop topical formulation
+- apply IL31K138A-SNAP-IR700 topically
+- prevent and reverse Calcipotriol provoked dermatitis
+- normalize skin structure and histology
+- demonstrate specificity for IL31RA expressing cells
+- describe animal model
+- describe production of recombinant IL31SNAP and IL31K138A-SNAP
+- describe synthesis of BG-IR700
+- describe primary keratinocyte culture
+- describe in-vitro and in-vivo labeling
+- describe in-vitro photo-ablation
+- describe in-vivo photo-ablation
+- describe microemulsion preparation
+- describe statistical analysis
+
+### II: PAIN
+
+- introduce TrkB positive neurons
+- characterize response properties
+- ablate TrkB positive neurons
+- examine behavioral responses
+- test optogenetic activation
+- induce inflammatory pain
+- ablate TrkB neurons in inflammatory pain
+- test optogenetic activation in inflammatory pain
+- induce neuropathic pain
+- ablate TrkB neurons in neuropathic pain
+- test optogenetic activation in neuropathic pain
+- examine C-fos induction
+- develop pharmacological strategy
+- produce recombinant BDNF protein
+- test BDNF selectivity
+- apply BDNF to DRG neurons
+- manipulate TrkB neurons in vivo
+- synthesize benzylguanine modified IR700
+- conjugate IR700 to BDNF
+- test BDNF-IR700 in HEK293T cells
+- test BDNF-IR700 in wildtype mice
+- examine effects on mechanical allodynia
+- examine effects on other types of neuropathic pain
+- assess selectivity of approach
+- investigate mechanism of BDNF-IR700
+- examine innervation density of hypersensitive skin
+- examine loss of TrkB fibers
+- examine loss of TrkB neurons
+- identify TrkB expressing cells in skin
+- ablate TrkB sensory fibers
+- examine behavioral responses
+- introduce NGF to target nociceptive sensory neurons
+- produce recombinant NGFSNAP protein
+- test NGFSNAP selectivity
+- conjugate IR700 to NGFSNAP
+- test NGFSNAP-IR700 in inflammatory pain
+- test NGFSNAP-IR700 in acute pain
+

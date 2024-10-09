@@ -1,0 +1,411 @@
+# DESCRIPTION
+
+## FIELD
+
+- introduce peptidomimetic foldamers
+
+## BACKGROUND
+
+- motivate protein-protein interactions
+- describe limitations of peptides
+- introduce foldamers
+- describe properties of foldamers
+- discuss peptide therapeutics
+- describe shortcomings of peptides
+- introduce oligoureas
+- describe properties of oligoureas
+- discuss compatibility of peptide-oligourea hybrids
+- motivate design of biomimetic systems
+- describe potential applications of foldamers
+- state need for peptidomimetic compounds
+
+## SUMMARY
+
+- introduce peptide-amino urea hybrid foldamers
+- describe structure of peptide-amino urea hybrids
+- motivate design of peptide-amino urea hybrids
+- describe properties of peptide-amino urea hybrids
+- introduce Xu residue
+- describe substitutions of Xu residue
+- introduce formula I
+- describe R groups of formula I
+- introduce formula II
+- describe R groups of formula II
+- describe peptide-amino urea hybrid compounds
+- introduce glucagon-like peptide-1 (GLP-1)
+- describe properties of GLP-1 peptide-oligourea hybrids
+- introduce SEQ ID NO. 2-24
+- describe pharmaceutical composition
+- introduce effective amount
+- describe method of treating disease
+- introduce metabolic disorder
+- introduce diabetes
+- describe coupling of oligourea residues
+- describe fusion of amino urea residues
+- introduce additional chemical modifications
+- describe pharmaceutically acceptable acid and base salt forms
+- describe use of compounds for treatment of disease
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+- provide context for those skilled in the art
+- define technical and scientific terms
+- incorporate references by reference
+- describe oligoureas as peptidomimetic foldamers
+- introduce peptide-amino urea hybrid foldamer compounds
+- describe function of native or parental alpha-amino acid peptide
+- describe superior half-life and protease resistance
+- define peptide-oligourea hybrid compounds
+- describe substitution of amino urea residues
+- describe secondary structure conformation and biochemistry
+- describe potential applications of peptide-oligourea hybrid compounds
+- define range of values
+- describe intervening values
+- define terms used in the disclosure
+- define articles "a" and "an"
+- define phrase "and/or"
+- define phrase "or"
+- describe transitional phrases
+- define phrase "at least one"
+- describe order of steps in methods
+- define peptides
+- define amino or amine
+- define amino acid
+- define amino acid sidechain or amino acid residue
+- describe any amino acid
+- define natural amino acid
+- define urea group
+- define peptide precursor or parental peptide
+- define oligourea
+- define "amido"
+- define "cyano"
+- define "nitro"
+- define "azido"
+- introduce abbreviations
+- reference standard list of abbreviations
+- define "alkyl"
+- provide examples of alkyl groups
+- define "alkenyl"
+- define "alkynyl"
+- define "alkylene"
+- describe optional substitution of alkylene
+- define "unsubstituted"
+- define "substituted"
+- provide examples of substituents
+- describe optional substitution of substituents
+- define "hydroxyl"
+- define "heterocycle"
+- provide examples of heterocyclic groups
+- describe optional substitution of heterocyclic groups
+- define "heteroaryl"
+- provide examples of heteroaryl groups
+- define "thiol"
+- define "thioalkoxy"
+- define "amidine"
+- define "alkoxyl"
+- define "substituted alkyl"
+- define "halogen"
+- define "acyl"
+- define terms
+- define acloxy
+- define alkylamino
+- define aryl
+- define substituted aryl
+- define carboxyl
+- define cycloalkyl
+- define substituted cycloalkyl
+- define heterocycloalkyl
+- define substituted heterocycloalkyl
+- define alkenyl
+- define imidazole
+- define aralkyl group
+- define guanidine
+- define aralkyl and heteroarylalkyl
+- describe oligourea compounds
+- describe peptide-oligourea hybrid compounds
+- describe structure of peptide-oligourea hybrid compounds
+- describe non-peptide amino urea residues
+- describe peptide-oligourea hybrid compounds with substitutions
+- describe peptide-oligourea hybrid compounds with helical structure
+- describe peptide-oligourea hybrid compounds with proteinaceous side-chains
+- describe peptide-oligourea hybrid compounds with substitutions of alpha-amino acids
+- describe peptide-oligourea hybrid compounds with resistance to DPP-4 and NEP 24.11
+- describe peptide-oligourea hybrid compounds with bioactivity
+- describe peptide-oligourea hybrid compounds with secondary structure
+- describe peptide-oligourea hybrid compounds with biological activity
+- describe peptide-oligourea hybrid compounds with enzymatic activity
+- describe peptide-oligourea hybrid compounds with binding activity
+- describe peptide-oligourea hybrid compounds with receptor binding activity
+- describe peptide-oligourea hybrid compounds with growth factor receptor binding activity
+- describe peptide-oligourea hybrid compounds with G-Protein Coupled Receptor binding activity
+- describe peptide-oligourea hybrid compounds with biological and enzymatic activity
+- describe glucagon-like peptide-1 (GLP-1) oligourea hybrid compounds
+- describe GLP-1 peptide-oligourea hybrid compounds with resistance to DPP-4 and NEP 24.11
+- describe GLP-1 peptide-oligourea hybrid compounds with bioactivity
+- describe GLP-1 peptide-oligourea hybrid compounds with binding activity
+- describe GLP-1 peptide-oligourea hybrid compounds with EC50
+- define peptide-oligourea hybrid compounds
+- describe structure of peptide-oligourea hybrid compounds
+- specify oligourea portion of peptide-oligourea hybrid compounds
+- describe covalent linking of oligourea portion
+- specify number of amino urea residues
+- describe preferred embodiment of peptide-oligourea hybrid compounds
+- describe additional chemical modifications
+- introduce pharmaceutical forms
+- describe pharmaceutical composition
+- specify effective amount of peptide-oligourea hybrid
+- describe use of compounds or compositions
+- describe administration of compounds or compositions
+- describe crystal forms of compounds or compositions
+- describe solvates of compounds or compositions
+- describe chiral centers of compounds or compositions
+- describe enantiomers and diastereoisomers
+- describe separation of enantiomers and diastereoisomers
+- describe tautomers and geometric isomers
+- describe conformational isomers
+- describe zwitterionic forms
+- describe pharmaceutically acceptable salts
+- describe racemates and optical isomers
+- describe pharmaceutically acceptable counterions
+- describe acids for forming pharmaceutically acceptable salts
+- describe bases for forming pharmaceutically acceptable salts
+- describe preferred pharmaceutically acceptable acid addition salts
+- define prodrugs
+- motivate prodrugs
+- describe prodrug forms
+- exemplify prodrugs
+- describe protecting groups
+- motivate protecting groups
+- exemplify protecting groups
+- describe chemically protected forms
+- motivate chemically protected forms
+- exemplify chemically protected forms
+- describe pharmaceutically acceptable derivatives
+- motivate pharmaceutically acceptable derivatives
+- describe formulations
+- motivate formulations
+- describe routes of administration
+- exemplify routes of administration
+- describe therapeutic compositions
+- motivate therapeutic compositions
+- describe pharmaceutical compositions
+- motivate pharmaceutical compositions
+- describe preparation of pharmaceutical compositions
+- exemplify pharmaceutical compositions
+- describe suspensions in oil
+- motivate suspensions in oil
+- describe preparation of injection compositions
+- describe pharmaceutical compositions for oral use
+- motivate pharmaceutical compositions for oral use
+- describe controlled release
+- define rate controlling polymer
+- list examples of controlled release polymers
+- describe composition of controlled release preparation
+- list auxiliary agents
+- describe manufacturing methods
+- describe oral dosage forms
+- describe multiparticulate forms
+- describe controlled release matrix tablets
+- describe film coating
+- describe hydrogel matrix
+- describe use of dyes or pigments
+- describe pharmaceutical compositions for oral administration
+- describe hard capsules
+- describe soft capsules
+- describe syrups
+- describe concentrates
+- describe pharmaceutical compositions for rectal administration
+- describe suppositories
+- describe pharmaceutical compositions for parenteral administration
+- describe aqueous solutions
+- describe injection suspensions
+- describe lyophilisates
+- describe infusion solutions
+- describe ointments
+- describe fatty ointments
+- describe creams
+- describe pastes
+- describe foams
+- describe tinctures and solutions
+- describe co-administered formulations
+- define co-administration
+- list additional therapeutic agents
+- describe anti-cancer agents
+- describe antiviral agents
+- describe antimicrobial agents
+- describe antifungal agents
+- describe other bioactive agents
+- describe synergistic activity
+- describe combination therapy
+- define disease state or condition
+- introduce method of treatment
+- define treatment
+- define effective amount
+- describe therapeutically effective amount
+- outline process for treatment
+- describe administration of compounds
+- outline methods of treating disease
+- describe use of compounds for manufacturing medication
+- list disease states or conditions
+- list diseases
+- list additional diseases
+- define cancer
+- describe cancer
+- list exemplary cancers
+- describe therapeutic methods
+- identify subjects in need of treatment
+- administer effective amount of compound
+- describe diagnostic agent
+- monitor treatment progress
+- determine level of diagnostic marker
+- compare levels of marker
+- describe pharmaceutically acceptable carrier
+- describe preferred dose
+- describe unit dosage form
+- describe oral dosage
+- achieve peak plasma concentrations
+- administer by intravenous injection
+- administer orally
+- consider absorption, distribution, inactivation, and excretion rates
+- adjust dosage regimens
+- describe methods of preparation
+- fabricate peptide-oligourea hybrid foldamer compound
+- provide additional methods for synthesis
+- understand examples and embodiments
+- vary relative quantities of ingredients
+- add additional ingredients
+- substitute similar ingredients
+- incorporate publications, patents, and patent applications
+- describe methods of making and using compounds
+- describe methods of making and using compositions
+- provide methods of synthesis
+- describe peptide-oligourea hybrid compounds
+- describe oligourea compounds
+- describe diagnostic agents
+- describe therapeutic methods
+- describe methods of treatment
+- describe methods of monitoring treatment progress
+- describe methods of determining level of diagnostic marker
+- describe methods of comparing levels of marker
+- describe methods of adjusting dosage regimens
+
+### Examples
+
+- introduce peptide-oligourea hybrid design
+- motivate GLP-1-NH2 modification
+- describe glycine introduction in position 2
+- discuss consecutive amino acid residues replacement
+- introduce triad helix turn concept
+- describe side chain projection analysis
+- motivate Alau triad scan
+- describe functional assay for agonistic activity
+- summarize results of Alau triad scan
+- introduce native side chain reintroduction
+- summarize results of native side chain reintroduction
+- describe GG2[YuEuAu]14-17 synthesis
+- summarize results of GG2[YuEuAu]14-17
+- describe GG2[DuαAuAu]9-12 and GG2[FuαIuAu]22-25 synthesis
+- summarize results of GG2[DuαAuAu]9-12 and GG2[FuαIuAu]22-25
+- describe GG2[YuEuAuAuAuAu]14-21 synthesis
+- summarize results of GG2[YuEuAuAuAuAu]14-21
+- introduce enzymatic and mouse plasma degradation studies
+- describe NEP 24.11 degradation assay
+- describe mouse plasma degradation assay
+- summarize results of NEP 24.11 degradation assay
+- summarize results of mouse plasma degradation assay
+- introduce in vivo studies
+- describe blood glucose concentration study
+- summarize results of blood glucose concentration study
+- describe IPGTT studies
+- summarize results of IPGTT studies
+- describe pharmacokinetic study
+- summarize results of pharmacokinetic study
+- introduce protraction strategy
+- describe semaglutide analogue synthesis
+- summarize results of semaglutide analogue in vitro study
+- describe pharmacodynamics study on db/db mice
+- summarize results of pharmacodynamics study
+- describe pancreatin degradation assay
+- summarize results of pancreatin degradation assay
+- describe in vitro pharmacology
+- evaluate agonist activity
+- measure cAMP production
+- describe enzymatic degradation
+- assess stability of oligomers
+- describe enzymatic degradation
+- assess stability of oligomers
+- describe mouse plasma stability
+- assess stability of oligomers
+- describe in vivo studies
+- describe animal housing
+- describe blood glucose experiment
+- describe ipgtt experiments
+- describe blood glucose experiment
+- describe pharmacokinetics
+- perform statistical analysis
+- synthesize azido building block
+- synthesize monomer M1
+- synthesize monomer M2
+- describe general procedure for synthesizing oligomers
+- describe Fmoc deprotection
+- describe coupling of Fmoc-amino acid
+- describe coupling of activated N3-building block
+- describe reduction of azide group
+- describe cleavage from resin
+- describe purification and characterization
+- describe procedure B for synthesizing oligomer 25
+- describe synthesis of oligomer 25
+- describe removal of Alloc group
+- describe coupling of Fmoc-OcO2—OH
+- describe removal of Fmoc group
+- describe coupling of Fmoc-OcO2—OH again
+- describe coupling of N-Fmoc-Glu(OH)-OtBu
+- describe removal of Fmoc group again
+- describe coupling of 18-(ter-butoxy)18-oxooctadecanoic acid
+- describe cleavage and purification of oligomer 25
+- describe synthesis procedure C
+- detail attachment to benzyl alcohol resin
+- outline synthesis
+- describe cleavage
+- detail purification and characterization
+- characterize oligomers 1-25
+- synthesize peptide 1
+- synthesize peptide-oligourea hybrid 2
+- synthesize peptide-oligourea hybrid 3
+- synthesize peptide-oligourea hybrid 4
+- synthesize peptide-oligourea hybrid 5
+- synthesize peptide-oligourea hybrid 6
+- synthesize peptide-oligourea hybrid 7
+- synthesize peptide-oligourea hybrid 8
+- synthesize peptide-oligourea hybrid 9
+- synthesize peptide-oligourea hybrid 10
+- synthesize peptide-oligourea hybrid 11
+- synthesize peptide-oligourea hybrid 12-14
+- describe peptide-oligourea hybrids
+- synthesize peptide-oligourea hybrid 14
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 14
+- demonstrate enzymatic degradation of peptide-oligourea hybrid 14 by NEP 24.11
+- demonstrate mouse plasma degradation of peptide-oligourea hybrid 14
+- synthesize peptide-oligourea hybrid 15
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 15
+- synthesize peptide-oligourea hybrid 16
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 16
+- demonstrate enzymatic degradation of peptide-oligourea hybrid 16 by NEP 24.11
+- demonstrate mouse plasma degradation of peptide-oligourea hybrid 16
+- synthesize peptide-oligourea hybrid 17
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 17
+- synthesize peptide-oligourea hybrid 18
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 18
+- synthesize peptide-oligourea hybrid 19
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 19
+- synthesize peptide-oligourea hybrid 20
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 20
+- synthesize peptide-oligourea hybrid 21
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 21
+- synthesize peptide-oligourea hybrid 22
+- demonstrate concentration-response curve for EC50 determination of peptide-oligourea hybrid 22
+- demonstrate enzymatic degradation of peptide-oligourea hybrid 22 by NEP 24.11
+- demonstrate mouse plasma degradation of peptide-oligourea hybrid 22
+- discuss experimental results and potential applications of peptide-oligourea chimeric foldamers
+

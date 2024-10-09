@@ -1,0 +1,1176 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce anti-RSV antibodies and methods
+
+## BACKGROUND
+
+- describe RSV infection and its effects
+- discuss existing approaches to prevention and treatment
+- highlight need for additional agents
+
+## SUMMARY
+
+- introduce RSV antibodies
+- describe prophylaxis and treatment
+- describe diagnosis and monitoring
+- introduce polypeptides and antigen-binding fragments
+- describe immunospecific binding to RSV
+- describe neutralization of RSV
+- introduce VH CDR1 sequences
+- introduce VH CDR2 sequences
+- introduce VH CDR3 sequences
+- introduce VL CDR1 sequences
+- introduce VL CDR2 sequences
+- introduce VL CDR3 sequences
+- describe antibody containing VHCDR1 set forth in SEQ ID NO:405
+- describe antibody containing VHCDR2 set forth in SEQ ID NO:406
+- describe antibody containing VHCDR3 set forth in SEQ ID NO:407
+- describe antibody containing VLCDR1 set forth in SEQ ID NO:408
+- describe antibody containing VLCDR2 set forth in SEQ ID NO:409
+- describe antibody containing VLCDR3 set forth in SEQ ID NO:410
+- describe antibody containing VHCDR1 set forth in SEQ ID NO:464
+- describe antibody containing VHCDR2 set forth in SEQ ID NO:465
+- describe antibody containing VHCDR3 set forth in SEQ ID NO:466
+- describe antibody containing VLCDR1 set forth in SEQ ID NO:467
+- describe antibody containing VLCDR2 set forth in SEQ ID NO:468
+- describe antibody containing VLCDR3 set forth in SEQ ID NO:469
+- describe antibody containing VHCDR1 set forth in SEQ ID NO:411
+- describe antibody containing VHCDR2 set forth in SEQ ID NO:412
+- describe antibody containing VHCDR3 set forth in SEQ ID NO:413
+- describe antibody containing VLCDR1 set forth in SEQ ID NO:414
+- describe antibody containing VLCDR2 set forth in SEQ ID NO:415
+- describe antibody containing VLCDR3 set forth in SEQ ID NO:416
+- describe antibody containing VHCDR1 set forth in SEQ ID NO:470
+- describe antibody containing VHCDR2 set forth in SEQ ID NO:471
+- describe antibody containing VHCDR3 set forth in SEQ ID NO:472
+- describe antibody containing VLCDR1 set forth in SEQ ID NO:473
+- describe antibody containing VLCDR2 set forth in SEQ ID NO:474
+- describe antibody containing VLCDR3 set forth in SEQ ID NO:475
+- describe isolated antibody or antigen-binding fragment thereof
+- describe immunospecific binding to RSV fusion (F) protein
+- introduce isolated antibodies or antigen-binding fragments
+- describe heavy chain and light chain composition
+- describe VH and VL domains
+- describe CDR1, CDR2, and CDR3 regions
+- describe epitope binding on RSV fusion protein
+- describe additional heavy chain and light chain sequences
+- describe VH and VL CDR regions
+- describe isolated polypeptides that immunospecifically bind to RSV F protein
+- describe human or humanized antibodies or antigen-binding fragments
+- describe chimeric antibodies and antibody fragments
+- describe peptide linkers and conjugation
+- describe PEG conjugation and therapeutic or diagnostic agents
+- describe protein transduction domains
+- describe multivalent antibodies with complementary multimerization domains
+- describe multivalent antibodies with additional antigen-binding portions
+- describe heterobivalent, homobivalent, and multispecific antibodies
+- describe multivalent antibodies with single-chain Fv, Fab, or Fd fragments
+- describe multivalent antibodies with anti-RSV antibodies or antigen-binding fragments
+- describe multivalent antibodies with anti-RSV and anti-PIV or anti-hMPV antibodies
+- describe combinations with antiviral agents
+- describe combinations with additional antiviral antibodies
+- describe combinations with anti-RSV and anti-PIV or anti-hMPV antibodies
+- describe combinations with single-chain Fv, Fab, or Fd fragments
+- describe PIV and hMPV antigens
+- describe allelic variants of PIV and hMPV antigens
+- introduce pharmaceutical compositions
+- formulate pharmaceutical compositions
+- provide pharmaceutical compositions with antiviral antibodies
+- provide pharmaceutical compositions with multivalent antibodies
+- provide pharmaceutical compositions with antiviral agents
+- treat viral infections with pharmaceutical compositions
+- prevent viral infections with pharmaceutical compositions
+- administer pharmaceutical compositions
+- administer pharmaceutical compositions to specific subjects
+- administer pharmaceutical compositions at specific times
+- combine pharmaceutical compositions with antiviral agents
+- combine pharmaceutical compositions with hormonal therapy
+- combine pharmaceutical compositions with immunotherapy
+- combine pharmaceutical compositions with anti-inflammatory agents
+- combine pharmaceutical compositions with additional antiviral antibodies
+- detect RSV infection with antibodies
+- provide isolated nucleic acids
+- provide vectors with nucleic acids
+- provide isolated cells with antibodies or nucleic acids
+- provide transgenic animals with nucleic acids or vectors
+- express isolated antibodies or antigen-binding fragments
+- provide kits with antibodies or antigen-binding fragments
+- use antibodies or antigen-binding fragments for prevention
+- use antibodies or antigen-binding fragments for treatment
+- use antibodies or antigen-binding fragments for symptom inhibition
+- formulate medicaments with antibodies or antigen-binding fragments
+
+## DETAILED DESCRIPTION
+
+### Outline
+
+- define antibody structure
+- describe anti-RSV antibodies
+- outline modifications of anti-RSV antibodies
+- summarize methods of isolating and producing anti-RSV antibodies
+- outline uses and applications of anti-RSV antibodies
+
+### A. DEFINITIONS
+
+- define technical terms
+- incorporate patents and publications by reference
+- define antibody
+- describe antibody fragments
+- define therapeutic antibody
+- describe heterogeneity of therapeutic antibodies
+- define neutralizing antibody
+- describe neutralizing antibody binding
+- define enveloped virus
+- describe enveloped virus characteristics
+- define non-enveloped virus
+- describe non-enveloped virus characteristics
+- define surface protein
+- describe surface protein location
+- define monoclonal antibody
+- describe monoclonal antibody production
+- define conventional antibody
+- describe conventional antibody structure
+- define full-length antibody
+- describe full-length antibody structure
+- define Fv antibody fragment
+- describe dsFv
+- define Fd fragment
+- define Fab fragment
+- define F(ab′)2 fragment
+- define Fab′ and Fd′ fragments
+- define Fv′, hsFv, scFv, and derivative
+- define derived from antibody fragments
+- define parent antibody
+- define epitope
+- define chimeric polypeptide
+- define fusion protein
+- define linker or spacer peptide
+- define antibody hinge region
+- define diabodies
+- define humanized antibodies
+- define idiotype
+- define anti-idiotype antibody
+- define Ig domain
+- define variable domain or variable region
+- define antigen-binding domain
+- define hypervariable region
+- define framework regions
+- define constant region domain
+- define functional region of an antibody
+- define functional region of a VH domain
+- define functional region of a VL domain
+- define specifically bind or immunospecifically bind
+- describe affinity constants
+- describe surface plasmon resonance
+- describe immunospecific binding to RSV F protein
+- describe immunospecific binding to RSV virus
+- describe cross-reactivity
+- describe identification of immunospecific binding
+- describe distinction between immunospecific binding and neutralization
+- describe measurement of affinity for virus or antigen
+- describe target identification
+- describe biosensor matrix
+- describe BiaCore system
+- define multivalent antibody
+- define monospecific antibody
+- define multispecific antibody
+- define bispecific antibody
+- define trispecific antibody
+- define tetraspecific antibody
+- define heterobivalent antibody
+- define homobivalent antibody
+- define multimerization domain
+- define dimerization domains
+- define Fc region
+- define Fc chimera
+- define protein transduction domain
+- define tag or epitope tag
+- define polypeptide
+- define peptide
+- define amino acid
+- define amino acid residue
+- describe conservative substitutions
+- define naturally occurring amino acids
+- define non-natural amino acid
+- list non-natural amino acids
+- define native polypeptide
+- define wild-type form
+- define predominant form
+- define allelic variant
+- define allele
+- define species variants
+- define polypeptide domain
+- define functional region
+- define structural region
+- define property of polypeptide
+- define activity of polypeptide
+- define therapeutic activity
+- define exhibits at least one activity
+- define assessing activity
+- define nucleic acid
+- define polynucleotide
+- define DNA construct
+- define DNA segment
+- define positive strand polynucleotide
+- define genetic element
+- define regulatory region
+- define promoter
+- define enhancer
+- describe characteristics of native polypeptide
+- describe characteristics of wild-type form
+- describe characteristics of predominant form
+- describe characteristics of allelic variant
+- describe characteristics of allele
+- describe characteristics of species variants
+- describe characteristics of polypeptide domain
+- describe characteristics of functional region
+- describe characteristics of structural region
+- describe characteristics of property of polypeptide
+- describe characteristics of activity of polypeptide
+- describe characteristics of therapeutic activity
+- describe characteristics of exhibits at least one activity
+- describe characteristics of assessing activity
+- describe characteristics of nucleic acid
+- describe characteristics of polynucleotide
+- describe characteristics of DNA construct
+- describe characteristics of DNA segment
+- describe characteristics of regulatory region
+- define regulatory regions
+- define operably linked
+- define synthetic
+- define production by recombinant means
+- define expression
+- define host cell
+- define vector
+- define expression vector
+- define oligonucleotide
+- describe synthetic oligonucleotides
+- define primer
+- define primer pair
+- define single primer
+- define complementarity
+- define complementary strand
+- define specifically hybridizes
+- define primary sequence
+- define similarity
+- define identity
+- describe calculating sequence identity
+- describe measuring sequence identity
+- describe comparing sequence identity
+- describe comparing sequence identity along a region
+- describe comparing sequence identity with amino acid replacements
+- describe determining high levels of identity
+- describe using software to determine identity
+- describe using methods to determine identity
+- describe using techniques to determine identity
+- describe using published techniques to determine identity
+- describe using art-recognized meaning of identity
+- describe using percentage of sequence identity
+- describe using full length of a polynucleotide or polypeptide
+- describe using a region of a polynucleotide or polypeptide
+- describe using analogous regions of polynucleotides or polypeptides
+- describe using conservative amino acid replacements
+- describe using non-conservative amino acid replacements
+- describe using various programs to determine identity
+- describe using methods known to those of skill in the art
+- describe using art-recognized methods to determine identity
+- define identity of nucleic acid molecules
+- describe determination of percent homology or identity
+- introduce GAP program for sequence comparison
+- outline default parameters for GAP program
+- explain alignment of sequences
+- describe related or variant polypeptides or nucleic acid molecules
+- introduce analogous portions, positions or regions
+- define modification of a sequence
+- describe deletion of a sequence
+- describe insertion of a sequence
+- describe addition of a sequence
+- describe substitution of a sequence
+- define binding property
+- describe affinity
+- describe avidity
+- define bind
+- describe affinity constant
+- describe the same binding affinity
+- describe substantially the same binding affinity
+- describe having the same binding specificity
+- introduce competition assays
+- describe virus neutralization assays
+- define monoclonal antibody resistant mutant (MARM)
+- describe generation of MARMs
+- describe EC50
+- define binding partner
+- describe in vitro methods for selection
+- describe iterative process for selection
+- outline uses of binding partners
+- describe solid supports for selection
+- describe selectable molecules for selection
+- describe wash steps for selection
+- describe elution of selected variant polypeptides
+- describe repeated selection process
+- outline importance of alignment
+- describe manual alignment
+- describe alignment programs
+- describe structural alignments
+- describe corresponding positions
+- describe analogous portions
+- describe corresponding regions
+- define disulfide bond
+- define coupled or conjugated
+- define conjugated to an antibody
+- define phage display
+- define phage-display compatible cell
+- define panning
+- define display protein
+- define coat protein
+- exemplify coat proteins
+- define disease or disorder
+- define infection and RSV infection
+- define acute RSV disease
+- define treating
+- define prevention
+- define pharmaceutically effective agent
+- define therapeutic effect
+- define therapeutically effective amount
+- define therapeutic efficacy
+- define prophylactically effective amount
+- define immunotherapeutically
+- define amelioration
+- define diagnostically effective amount
+- define label or detectable moiety
+- define subject
+- define patient
+- define animal
+- define elderly
+- define human infant
+- define human infant born prematurely
+- define unit dose form
+- define single dosage formulation
+- define article of manufacture
+- define fluid
+- define isolated or purified polypeptide
+- define cellular extract or lysate
+- define isolated nucleic acid molecule
+- define control
+- define composition
+
+### B. OVERVIEW
+
+- introduce anti-RSV antibodies
+- neutralize RSV
+- bind to RSV fusion protein
+- use in prophylaxis therapies
+- use in therapeutics
+- prevent and/or spread of pathogenic disease
+- inhibit viral transmission
+- inhibit establishment of viral infection
+- reduce viral load
+- treat RSV infection
+- alleviate symptoms of RSV infection
+- reduce duration of RSV infection
+- limitations of existing antibodies
+- generate escape mutants
+- antibodies bind to conserved epitope
+- exhibit improved virus neutralization activity
+- neutralize virus over successive rounds
+- limit generation of escape mutants
+- bind to epitope less susceptible to variation
+- importance of antibodies for RSV treatment
+
+### C. ANTI-RSV ANTIBODIES
+
+- introduce anti-RSV antibodies
+- therapeutic, prophylactic, and diagnostic use
+- passive immunization and treatment
+- define antibody structure
+- motivate antibody diversity
+- describe antibody V, D, and J gene segments
+- explain antibody repertoire
+- summarize antibody binding specificity
+- describe antibody domains and regions
+- detail Ig domain structure
+- explain antibody chain linkage
+- describe variable and constant region domains
+- introduce antibody fragments
+- describe antibody fragment types
+- explain methods for generating fragments
+- introduce single chain antibodies
+- introduce anti-RSV antibodies
+- immunospecifically bind to RSV F protein
+- exhibit advantageous properties
+- lower or improved binding affinity
+- improved neutralization activity
+- resistant to variation in escape mutants
+- include sc5 or 58c5 antibodies
+- define 58c5 antibody structure
+- define sc5 antibody structure
+- include various antibody forms
+- include immunoglobulin molecules
+- used in treatment and diagnosis methods
+- include exemplary anti-RSV antibodies
+- define 30D8 antibody structure
+- define other exemplary antibodies
+- include full-length antibody forms
+- include full-length antibody forms with human constant region
+- include other antibody fragment forms
+- include engineered antibodies
+- include chimeric antibodies
+- include single-chain Fvs
+- include single chain antibodies
+- include single domain antibodies
+- include Fab fragments
+- include F(ab′) fragments
+- include disulfide-linked Fvs
+- include anti-idiotypic antibodies
+- include intrabodies
+- include antigen-binding fragments
+- define VH and VL domain sequences
+- define percentage identity of VH and VL domains
+- define anti-RSV antibodies
+- specify VH domain sequence
+- specify VL domain sequence
+- provide alternative VH domain sequence
+- provide alternative VL domain sequence
+- define anti-RSV antibodies with VH CDRs
+- specify VH CDR1 sequence
+- specify VH CDR2 sequence
+- specify VH CDR3 sequence
+- provide example VH CDR combinations
+- provide alternative VH CDR1 sequence
+- provide alternative VH CDR2 sequence
+- provide alternative VH CDR3 sequence
+- provide example VH CDR combinations
+- provide alternative VH CDR1 sequence
+- provide alternative VH CDR2 sequence
+- provide alternative VH CDR3 sequence
+- provide example VH CDR combinations
+- define anti-RSV antibodies
+- specify VH CDRs
+- specify VL CDRs
+- provide examples of anti-RSV antibodies
+- specify VL CDR1 sequences
+- specify VL CDR2 sequences
+- specify VL CDR3 sequences
+- provide examples of anti-RSV antibodies with VL CDRs
+- describe antibody framework regions
+- specify human framework regions
+- describe isolated anti-RSV antibodies
+- specify antibodies binding to same epitope as 30D8
+- specify antibodies binding to same epitope as 104E5
+- specify antibodies binding to same epitope as 38F10
+- specify antibodies binding to same epitope as 14G3
+- specify antibodies binding to same epitope as 90D3
+- specify antibodies binding to same epitope as 56E11
+- specify antibodies binding to same epitope as 17C9
+- specify antibodies binding to same epitope as 69F6
+- describe binding affinity constants
+- describe dissociation constants
+- describe EC50 values
+- specify EC50 values for neutralization of RSV
+- provide examples of EC50 values
+- conclude anti-RSV antibody descriptions
+- describe anti-RSV antibodies
+- neutralize monoclonal antibody escape mutants
+- bind to epitope less susceptible to variation
+- inhibit RSV replication
+- have long half-life
+- generate derivative antibodies
+- produce Fab, Fab′, F(ab′)2 fragments
+- generate chimeric antibodies
+- fuse variable regions to constant regions
+- produce full length antibodies from fragments
+- generate chimeric antibodies using CDR-grafting
+- generate chimeric antibodies using veneering
+- generate chimeric antibodies using chain shuffling
+- describe antibodies with heterologous framework regions
+- describe antibodies with high binding affinity
+- describe antibodies with low dissociation constant
+- neutralize monoclonal antibody escape mutants
+- bind to epitope less susceptible to variation
+- inhibit RSV replication
+- have low EC50 in microneutralization assay
+- have low EC50 in plaque reduction assay
+- summarize derivative antibody properties
+- introduce anti-RSV antibodies
+- application of anti-RSV antibodies
+- generate single chain antibodies
+- define single chain antibody structure
+- describe peptide linkers
+- provide examples of peptide linkers
+- generate anti-idiotype antibodies
+- describe anti-idiotype antibody function
+- generate anti-anti-idiotypes
+- describe multivalent derivative antibodies
+- define monospecific multivalent antibodies
+- define multispecific multivalent antibodies
+- describe techniques for engineering multivalent antibodies
+- provide examples of multivalent antibody formation
+- describe properties of multivalent derivative antibodies
+- provide examples of VH CDR sequences
+- provide examples of VL CDR sequences
+- generate multispecific antibodies to RSV F protein
+- describe epitopes of RSV F protein
+- generate multispecific antibodies to RSV epitopes
+- describe applications of multispecific antibodies
+- introduce anti-RSV antibodies
+- list anti-RSV antibodies
+- describe multispecific antibodies
+- introduce multimerization
+- describe peptide linkers
+- describe multimer polypeptide structure
+- describe heterobifunctional linking agents
+- list heterobifunctional linking agents
+- describe polypeptide multimerization domains
+- introduce multimerization domains
+- describe multimerization domain interactions
+- describe chimeric polypeptides
+- describe multivalent and/or multispecific derivative antibodies
+- describe homo- or heteromultimeric polypeptides
+- describe multimerization domain sequences
+- describe immunoglobulin sequence multimerization
+- describe leucine zipper multimerization
+- describe hydrophobic region multimerization
+- describe hydrophilic region multimerization
+- describe disulfide bond multimerization
+- describe protuberance and hole multimerization
+- describe steric interaction multimerization
+- describe multivalent and/or multispecific antibody generation
+- describe antigen-binding polypeptide conjugation
+- describe chimeric polypeptide formation
+- define multivalent antibody
+- describe formation of multivalent antibodies
+- motivate use of multimerization domains
+- introduce immunoglobulin domain
+- describe structure of immunoglobulin molecule
+- explain role of constant region
+- discuss differences between immunoglobulin heavy chains
+- describe antigen-binding chimeric polypeptides
+- introduce Fc domain
+- describe structure of Fc domain
+- provide exemplary Fc sequences
+- discuss selection of Fc domain based on functional properties
+- introduce modified Fc domains
+- describe bivalent antibody formation
+- explain expression and purification of chimeric proteins
+- discuss formation of heterodimers
+- describe biochemical separation of heterodimers
+- introduce genetically engineered heterodimers
+- describe use of leucine zippers to form heterodimers
+- discuss tagging of Fc regions for purification and detection
+- summarize applications of anti-RSV antigen-binding chimeric polypeptides
+
+### D. ADDITIONAL MODIFICATIONS OF ANTI-RSV ANTIBODIES
+
+- introduce modifications of anti-RSV antibodies
+- improve properties of antibodies
+- decrease immunogenicity of antibodies
+- improve half-life of antibodies
+- alter binding properties of antibodies
+- modify primary amino acid sequence of antibodies
+- alter post-translational modification of antibodies
+- exemplify post-translational modifications
+- assess binding of modified antibodies to RSV F protein
+- improve half-life of anti-RSV antibodies
+- increase therapeutic effectiveness of antibodies
+- modify antibodies through amino acid substitutions
+- modify antibodies through deletions or additions
+- introduce mutations in nucleotide molecule encoding antibody
+- modify antibodies by attachment of heterologous peptide
+- facilitate purification of antibodies
+- attach diagnostic and/or therapeutic moiety to antibodies
+- covalently attach molecule to antibody
+- exemplify diagnostic and therapeutic moieties
+- generate additional fusion proteins through DNA shuffling
+- alter activities of anti-RSV antibodies
+- produce antibodies with higher affinities
+- attach antibodies to solid supports
+- exemplify solid supports
+- modify antibodies to reduce immunogenicity
+- eliminate or reduce immunogenicity of antibodies
+- modify Fc region of antibodies
+- alter effector functions of Fc region
+- modify Fc region to alter binding to Fc receptors
+- exemplify Fc receptors
+- modify Fc region to optimize binding to FcγRs
+- exemplify modified Fc regions
+- improve interaction of antibody with FcRn receptor
+- increase in vivo half-life and pharmacokinetics of antibodies
+- exemplify modifications of Fc region
+- modify Fc region to alter serum half-life and pharmacokinetics
+- describe modifications of anti-RSV antibodies
+- motivate Fc heavy chain constant region modifications
+- describe Fc heavy chain constant region modifications
+- describe C1q binding modifications
+- describe Fc muteins with reduced FcγR binding
+- describe Fc fusion proteins
+- describe pegylation of anti-RSV antibodies
+- motivate pegylation
+- describe pegylation methods
+- describe conjugation of detectable moieties
+- motivate conjugation of detectable moieties
+- describe detectable moieties
+- describe conjugation methods
+- describe conjugation of therapeutic moieties
+- motivate conjugation of therapeutic moieties
+- describe therapeutic moieties
+- describe conjugation methods
+- describe modifications to improve binding specificity
+- motivate phage display
+- describe phage display methods
+- describe DNA amplification and cloning
+- describe phage selection and identification
+- describe antibody expression and production
+- describe Fab, Fab', and F(ab')2 fragment production
+- describe mutagenesis and screening
+- describe human or chimeric antibody production
+- motivate human antibody production
+- describe human antibody production methods
+- describe phage display methods for human antibodies
+- describe synthetic sequence methods
+- describe human antibody applications
+
+### E. METHODS OF ISOLATING ANTI-RSV ANTIBODIES
+
+- introduce methods of isolating anti-RSV antibodies
+- describe murine hybridomas
+- describe transgenic mice expressing human immunoglobulin genes
+- describe phage display
+- describe isolation from mature human immune cells
+- describe immortalization of human B cells with Epstein Barr Virus (EBV)
+- describe activation and immortalization of human B cells
+- describe cell fusion with myeloma cell line
+- describe additional techniques for improving EBV immortalization
+- describe isolation of human monoclonal antibodies from B cells
+- describe selection of specific immune cells such as B cells
+- describe use of antibodies that bind specifically to B-cell specific cell surface proteins
+- describe selection of cell marker for purification
+- describe use of CD22 for initial B cell selection
+- describe use of CD27 for enrichment of antibody-secreting cells
+- describe use of additional markers for enrichment or depletion
+- describe exposure to stimulating agents
+- describe use of polyclonal B cell activators
+- describe use of agonists of innate immune responses
+- describe use of immunomodulatory molecules such as cytokines
+- describe use of agonists of cell membrane receptors of the TNF receptor family
+- describe stimulation of B cells using EBV immortalization
+- describe isotype-based selection of cells
+- describe separation technologies for antibody-secreting cells
+- describe depletion or enrichment of other isotype expressing cells
+- describe use of viral immortalization agents
+- describe use of gamma class of herpesviruses
+- describe use of EBV for immortalization
+- describe use of recombinant DNA constructs
+- describe immortalization phase
+- describe culture of immortalized cells on feeder cell layers
+- describe use of growth promoting agents
+- describe construction of DNA libraries encoding antibodies
+- describe screening of cell culture supernatants
+- describe identification of cells that express antibodies with particular antigen specificity
+- describe isolation of DNA encoding antibodies
+- describe expression and purification of antibodies
+- describe single cell sorting using a cell sorter
+
+### F. METHODS OF PRODUCING ANTI-RSV ANTIBODIES, AND MODIFIED OR VARIANT FORMS THEREOF AND NUCLEIC ACIDS ENCODING ANTIBODIES
+
+- generate anti-RSV antibodies
+- describe host cells and vectors
+- transform host cells with nucleic acids
+- produce monoclonal antibodies
+- describe hybridoma techniques
+- produce polypeptides in vivo and in vitro
+- express polypeptides in organisms
+- describe expression hosts
+- introduce nucleic acids into expression hosts
+- describe isolated nucleic acid molecules
+- encode anti-RSV antibodies
+- describe nucleic acid molecules encoding antibodies
+- describe modified antibodies
+- generate modified antibodies using recombinant techniques
+- describe site-directed mutagenesis
+- describe polymerase chain reaction
+- insert CDRs into framework regions
+- generate antibodies with altered properties
+- describe vectors containing nucleic acids
+- clone nucleic acids into vectors
+- describe expression vectors
+- describe promoters and enhancers
+- describe transcriptional and translational signals
+- describe selectable markers
+- describe origins of replication
+- describe epitope tags
+- describe purification tags
+- describe secretion and membrane association sequences
+- describe bacterial promoters
+- describe mammalian promoters
+- describe yeast promoters
+- describe insect promoters
+- describe plant promoters
+- describe transcriptional control regions
+- describe expression cassettes
+- describe gene amplification markers
+- describe high-yield expression systems
+- describe vectors containing heavy and light chain sequences
+- describe constant regions and hinge regions
+- describe cell expression systems
+- introduce methods of producing anti-RSV antibodies
+- transfect host cells with vectors encoding heavy and light chains
+- co-transfect with first and second expression vectors
+- describe expression vectors pγ1HC and pκLC
+- describe expression vectors pAG4622 and pAH4604
+- clone heavy and light chains into single vector
+- describe mammalian expression vector pTT5
+- describe expression vector pCALM
+- express full-length Ig or Fab
+- introduce prokaryotic expression
+- describe E. coli host cells
+- describe inducible promoters
+- express proteins in cytoplasmic environment
+- describe periplasmic expression
+- introduce yeast cells
+- describe yeast expression hosts
+- describe inducible promoters
+- express proteins in yeast
+- introduce insect cells
+- describe baculovirus expression
+- describe insect cell lines
+- describe mammalian cells
+- describe expression constructs
+- describe transcriptional promoter-enhancers
+- describe selectable markers
+- introduce plants
+- describe plant promoters
+- describe selectable markers
+- introduce purification of antibodies
+- describe purification methods
+- describe affinity purification
+- describe purity assessment
+- describe column chromatography
+- describe analysis of isolated polypeptides
+- describe binding assays
+
+### G. ASSESSING ANTI-RSV ANTIBODY PROPERTIES AND ACTIVITIES
+
+- introduce anti-RSV antibodies
+- describe binding assays
+- introduce immunospecific binding
+- describe solution binding assays
+- describe bead-based binding assays
+- describe chip-based binding assays
+- describe bacteria-based binding assays
+- describe spore-based binding assays
+- describe plasmid-based binding assays
+- describe phage-based binding assays
+- determine binding specificity
+- describe epitope determination
+- introduce competition assays
+- describe western blot analysis
+- describe immunoprecipitation protocols
+- describe ELISAs
+- describe liposome immunoassays
+- determine binding affinity
+- describe Scatchard plot analysis
+- describe surface plasmon resonance kinetic analysis
+- determine off-rates
+- describe competitive binding assays
+- describe radioimmunoassays
+- describe inhibition of RSV binding
+- describe cell-free assays
+- describe immobilized antibody assays
+- describe immobilized antigen assays
+- describe biotinylated antigen assays
+- introduce binding specificity determination
+- describe epitope mapping
+- describe virus neutralization assays
+- describe Monoclonal Antibody-Resistant Mutants
+- determine epitope overlap
+- describe MARM generation
+- analyze MARM results
+- introduce anti-RSV antibodies
+- describe in vitro assays for virus neutralization
+- motivate plaque assays
+- describe plaque reduction assays
+- describe plaque size reduction assays
+- describe virus neutralization assays
+- describe assays for inhibition of syncytium formation
+- describe assays for inhibition of RSV replication
+- describe assays for inhibition of RSV polypeptide expression
+- introduce in vivo animal models
+- describe in vivo studies for assessing efficacy
+- describe in vivo studies for assessing toxicity
+- introduce in vitro and in vivo assays for measuring antibody efficacy
+- describe detection of inhibition of viral replication
+- describe detection of inhibition of transmission
+- describe detection of reduction in incidence of RSV infection
+- describe detection of reduction in symptoms associated with RSV infection
+- describe detection of increase in immune response
+- describe detection of induction of cytokine expression
+- describe detection of modulation of biological activity of immune cells
+- describe detection of inhibition of viral replication or reduction of viral load
+- describe detection of decrease in time course of RSV infection
+- describe extrapolation of in vitro and animal model studies to humans
+
+### H. DIAGNOSTIC USES
+
+- introduce diagnostic uses of anti-RSV antibodies
+- describe in vitro detection of RSV
+- conjugate antibodies to detectable moiety
+- detect antibodies in vivo
+- describe in vitro detection methods
+- immobilize antibodies on solid support
+- detect polypeptide markers in sample
+- describe competitive assay
+- use labeled polypeptide
+- describe solid support materials
+- immobilize antibodies using adsorption
+- immobilize antibodies using covalent attachment
+- describe flow-through or strip test format
+- describe additional assay protocols
+- improve sensitivity using multiple markers
+- combine assays for different RSV polypeptides
+- use multiple primers or probes
+- introduce in vivo detection of pathogenic infection
+- describe imaging of infected tissues
+- couple antibodies to imaging agent
+- describe attachment methods for imaging agents
+- select radioisotopes for in vivo diagnosis
+- bind radioisotopes to antibodies
+- describe paramagnetic isotopes for MRI
+- describe X-ray imaging isotopes
+- determine dosage of detectably labeled antibodies
+- monitor infection using antibodies
+- measure changes in RSV virus particles
+- determine effectiveness of therapeutic regimen
+- motivate diagnostic uses
+- describe subjects for therapy
+- define RSV virus infections
+- describe administration of anti-RSV antibodies
+- discuss treatment of RSV-mediated diseases
+- describe maintenance or suppression therapy
+- describe administration to subjects at risk
+- discuss tests for pathogens and pathogenic infection
+- describe administration during RSV season
+- discuss dosages
+- describe therapeutically effective concentration
+- discuss factors affecting dosage
+- describe exemplary dosages
+- discuss serum titer
+- describe administration by pulmonary delivery
+- discuss titer in intubation sample, sputum or lavage
+- describe repeated administrations
+- discuss dosage regimens
+- describe administration one time, two times, etc.
+- discuss sequence of administrations
+- describe prophylactically effective amount
+- discuss therapeutic efficacy
+- describe optimal treatment regimen
+- discuss routes of administration
+- describe systemic or local administration
+- discuss topical, epidural, or mucosal administration
+- describe external administration
+- discuss infusion or bolus injection
+- describe absorption through epithelial or mucocutaneous linings
+- discuss administration with other biologically active agents
+- describe topical or aerosol routes
+- discuss controlled release formulation
+- describe pulmonary delivery
+- discuss aerosol methods
+- describe intratracheal instillation and insufflation
+- discuss co-administration of permeation enhancers
+- describe selection of delivery methods
+- discuss properties of dosage amount
+- describe solubility
+- discuss hygroscopicity
+- describe crystallization properties
+- discuss melting point
+- describe density
+- discuss viscosity
+- describe diagnostic uses of anti-RSV antibodies
+- list administration routes for anti-RSV antibodies
+- describe combination therapies for prophylaxis and treatment
+- list antiviral agents for combination therapy
+- describe administration of combination therapies
+- list additional agents for combination therapy
+- describe inhibition of RSV infection by combination therapy
+- describe inhibition of RSV replication by combination therapy
+- list therapies for RSV infection
+- describe combination therapy with immunomodulator agents
+- describe combination therapy with anti-inflammatory agents
+- describe combination therapy with pain relievers
+- describe combination therapy with leukotriene antagonists
+- describe combination therapy with bronchodilators
+- describe combination therapy with anticholinergic agents
+- describe combination therapy with sulphasalazine
+- describe combination therapy with penicillamine
+- describe combination therapy with dapsone
+- describe combination therapy with antihistamines
+- describe combination therapy with anti-malarial agents
+- describe combination therapy with antiviral agents
+- describe combination therapy with therapies for lung maturation
+- describe combination therapy with glucocorticoids
+- describe combination therapy with PPARγ ligands
+- describe combination therapy with vascular endothelial cell growth factor
+- describe combination therapy with immunostimulatory agents
+- describe dosages for combination therapies
+- introduce antiviral antibodies for combination therapy
+- describe additional antibodies for combination therapy
+- specify antiviral antibodies that bind to viral antigen
+- describe antibodies that bind to RSV attachment protein
+- describe antibodies that bind to RSV RNA polymerase beta subunit
+- describe antibodies that bind to RSV nucleocapsid protein
+- describe antibodies that bind to RSV nucleoprotein
+- describe antibodies that bind to RSV phosphoprotein P
+- describe antibodies that bind to RSV matrix protein
+- describe antibodies that bind to RSV small hydrophobic protein
+- describe antibodies that bind to RSV RNA-dependent polymerase
+- describe antibodies that bind to RSV F protein
+- describe antibodies that bind to RSV G protein
+- specify antibodies that bind to RSV F protein antigenic sites
+- list exemplary anti-RSV antibodies for combination therapy
+- describe antibodies containing VH chain and/or VL chain
+- describe antibodies containing one or more CDRs
+- specify antibodies containing VH chain having amino acid sequence
+- specify antibodies containing VH domain having amino acid sequence
+- specify antibodies containing VH CDR1 having amino acid sequence
+- specify antibodies containing VH CDR2 having amino acid sequence
+- specify antibodies containing VH CDR3 having amino acid sequence
+- specify antibodies containing VL chain having amino acid sequence
+- specify antibodies containing VL domain having amino acid sequence
+- specify antibodies containing VL CDR1 having amino acid sequence
+- specify antibodies containing VL CDR2 having amino acid sequence
+- specify antibodies containing VL CDR3 having amino acid sequence
+- describe administration of anti-RSV antibody with hyperimmune serum
+- describe administration of anti-RSV antibody with immune globulin
+- specify RSV hyperimmune globulin for combination therapy
+- describe simultaneous administration of antibodies
+- describe sequential administration of antibodies
+- describe intermittent administration of antibodies
+- describe administration of antibodies at different time periods
+- introduce diagnostic uses
+- describe antibodies against other respiratory viruses
+- specify anti-PIV antibody
+- specify anti-hMPV antibody
+- describe types of antibodies administered
+- describe effects of antibody administration
+- describe inhibition of RSV binding
+- describe inhibition of RSV replication
+- introduce gene therapy
+- describe methods of gene therapy
+- describe expression vectors
+- describe promoters
+- describe homologous recombination
+- describe single chain antibodies
+- describe delivery of nucleic acids
+- describe in vivo gene therapy
+- describe ex vivo gene therapy
+- describe viral vectors
+- describe retroviral vectors
+- describe adenoviral vectors
+- describe adeno-associated virus vectors
+- describe cell transfection
+- describe cell selection
+- describe cell administration
+- describe autologous cells
+- describe inducible promoters
+- introduce pharmaceutical compositions
+- describe pharmaceutical acceptable carriers
+- describe unit dosage forms
+- describe formulation methods
+- describe injectable formulations
+- describe ingestible formulations
+- describe topical formulations
+- describe aerosol formulations
+- describe liposome formulations
+- describe suppository formulations
+- describe sustained release forms
+- describe sterile and pyrogen-free compositions
+- describe parenterally acceptable solutions
+- describe pH, isotonicity, and stability
+- define pharmaceutical compositions
+- list pharmaceutical carriers
+- list pharmaceutical additives
+- describe stabilizing agents
+- describe therapeutically effective dosages
+- describe lyophilization and reconstitution
+- describe controlled release compositions
+- list polymers for sustained release
+- describe production of sustained release formulations
+- describe pharmaceutical compositions with multiple antibodies
+- list additional antibodies
+- describe articles of manufacture/kits
+- describe packaging materials
+- describe pharmaceutical composition packaging
+- describe kit components
+- describe instructions for kit use
+- describe diagnostic kits
+- describe devices for administering antibodies
+- describe combinations of antibodies and agents
+- describe combinations of antibodies and therapeutic agents
+- describe combinations of antibodies and diagnostic agents
+- introduce examples
+- express RSV F protein
+- clone and express RSV F gene
+- describe RSV F gene engineering
+- describe RSV F gene cloning
+- describe RSV F protein expression
+- describe RSV F protein purification
+- express native RSV F protein
+- infect HEp-2 cells with RSV
+- harvest and lyse infected cells
+- describe native RSV F protein purification
+- describe RSV F protein capture on ELISA plates
+- describe RSV F protein dilution
+- conclude examples
+- capture with anti-RSV mAb
+- prepare ELISA plate
+- motivate example 2
+- isolate anti-RSV fab antibodies
+- generate and clone EBV-transformed B cells
+- screen for binding to RSV F protein
+- describe procedure A
+- isolate CD22+ B cells
+- activate CD22+ B cells
+- immortalize IgG+ B cells
+- prepare irradiated B-cell depleted feeder cells
+- clone B cells
+- screen B cell supernatant for binding
+- describe procedure B
+- isolate CD22+ B cells
+- activate CD22+ B cells
+- isolate CD22+ B cells
+- isolate IgG+ B cells
+- prepare irradiated feeder cells
+- immortalize B cells with EBV
+- culture immortalized B cells
+- prepare irradiated B-cell depleted feeder cells
+- clone B cells
+- culture cloned B cells
+- screen B cell supernatant for RSV F protein binding
+- retest positive wells
+- extract RNA from B cells
+- synthesize cDNA from RNA
+- amplify IgG heavy chain genes by PCR
+- amplify lambda light chain genes by PCR
+- amplify kappa light chain genes by PCR
+- link heavy and light chain genes by overlap PCR
+- amplify heavy chain genes in Step I
+- amplify lambda light chain genes in Step I
+- amplify heavy chain genes in Step II
+- amplify lambda light chain genes in Step II
+- introduce SfiI restriction site in heavy chain forward primers
+- introduce SfiI restriction site in lambda light chain forward primers
+- introduce diagnostic uses
+- describe PCR II: kappa light chain
+- describe PCR II: heavy chain
+- describe overlap PCR
+- describe digestion with Sfi and cloning into pCAL expression vector
+- describe transformation into E. coli
+- summarize diagnostic uses
+- introduce example 3
+- describe B cell isolation
+- describe single cell sorting
+- describe first strand cDNA synthesis
+- describe IgG heavy chain and kappa light chain amplification
+- describe step I: amplification
+- describe step II: amplification
+- describe step III: overlap PCR
+- describe step IV: introduction of CH1 region
+- describe step V: digestion with Sfi and cloning into pCAL expression vector
+- describe step VI: transformation into E. coli
+- describe PCR step I
+- describe PCR II: light chain
+- describe PCR II: heavy chain
+- describe overlap PCR with linker
+- describe introduction of CH1 region
+- describe full length Fab amplification
+- describe digestion with Sfi
+- describe cloning into pCAL expression vector
+- describe transformation into E. coli
+- describe B cell isolation kit
+- describe single cell sorting parameters
+- describe first strand cDNA synthesis protocol
+- describe IgG heavy chain and kappa light chain amplification primers
+- describe step I: amplification primers
+- describe step II: amplification primers
+- describe step III: overlap PCR primers
+- describe step IV: introduction of CH1 region primers
+- introduce diagnostic uses
+- describe selection of individual colonies
+- detail ELISA protocol
+- describe antibody binding to RSV F protein
+- summarize results of ELISA for Fab 58c5
+- summarize results of ELISA for Fab sc5
+- describe binding of cell lysates for Fabs generated from EBV-transformed B cells
+- summarize results of ELISA for Fab 30D8
+- summarize results of ELISA for Fab 104E5
+- summarize results of ELISA for Fab 38F10
+- summarize results of ELISA for Fab 14G3
+- summarize results of ELISA for Fab 90D3
+- describe binding of cell lysates for Fabs generated from single cell sorting
+- describe additional anti-RSV antibodies
+- detail expression and purification of isolated Fabs
+- describe binding of purified Fabs to RSV F lysate and purified RSV F protein
+- summarize results of ELISA for Fab 58c5 and sc5
+- summarize results of ELISA for Fabs 30D8, 104E5, 38F10, 90D3, and
+- summarize results of ELISA for Fabs 56E11, 17C9, and 69F6
+- introduce RSV neutralization assay
+- describe RSV neutralization assay protocol
+- detail Vero cell culture
+- describe antibody-virus pre-incubation
+- describe infection of Vero cells
+- describe overlay medium and incubation
+- describe fixation and blocking of cell plates
+- describe detection of RSV-infected cells
+- describe calculation of ED50
+- describe calculation of plaque reduction rate
+- summarize results of RSV neutralization assay
+- conclude diagnostic uses
+- present diagnostic uses
+- show data in tables
+- introduce example 7
+- clone and express IgG
+- describe PCR amplification
+- describe linker generation
+- describe overlap of heavy and light chains
+- describe cloning into pCALM vector
+- describe expression of IgG
+- introduce example 8
+- describe IgG binding assays
+- describe ELISA
+- introduce example 9
+- describe IgG RSV neutralization assays
+- describe neutralization of RSV
+- describe neutralization of RSV MARMs
+- introduce example 10
+- describe competition assays
+- describe ELISA for competition assays
+- introduce example 11
+- describe RSV MARM generation and neutralization assays
+- describe MARM generation for motavizumab
+- describe MARM generation for 58C5
+- describe MARM generation for 30D8
+- summarize neutralization assays
+- describe neutralization of RSV A2 parental virus
+- describe neutralization of motavizumab MARM
+- describe neutralization of 58C5 MARM
+- summarize neutralization data
+- introduce example 12
+- describe mapping of 58C5 and 30D8 binding epitopes
+- describe generation of RSV F protein mutant library
+- describe screening for binding to 58C5 and 30D8
+- describe selection criteria for evaluating residues
+- describe binding to antibody 58C5
+- summarize results for 58C5 binding
+- describe binding to antibody 30D8
+- summarize results for 30D8 binding
+- describe location of 58C5 epitope
+- describe location of 30D8 epitope
+- summarize epitope mapping results
+- describe lack of competition between 58C5 and 30D8
+- describe lack of competition between 58C5 and motivizumab
+- describe lack of competition between 30D8 and motivizumab
+- describe epitope mapping conclusions
+- describe implications for RSV F protein conformation
+- conclude epitope mapping example
+

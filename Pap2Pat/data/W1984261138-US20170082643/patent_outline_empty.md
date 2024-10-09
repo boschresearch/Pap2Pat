@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+## BACKGROUND OF THE INVENTION
+
+### Technical Problems Underlying the Present Invention
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION
+
+### Definitions
+
+### EMBODIMENTS OF THE INVENTION
+
+### EXAMPLES
+

@@ -1,0 +1,660 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate cancer screening
+- describe limitations of current screening methods
+- highlight promise of blood-based tests
+- discuss challenges of analyzing biological analytes
+- introduce machine learning in cancer diagnostics
+- state need for new methods
+
+## BRIEF SUMMARY
+
+- introduce machine learning approach
+- describe focus on non-cellular portion of circulation
+- summarize method of using classifier
+- describe assaying multiple classes of molecules
+- identify features for machine learning model
+- prepare feature vector
+- load machine learning model
+- input feature vector into model
+- obtain output classification
+- describe classes of molecules
+- provide examples of nucleic acids
+- provide examples of polyamino acids
+- provide examples of carbohydrates
+- provide examples of metabolites
+- describe plurality of assays
+- provide examples of assays
+- describe classifying biological sample
+- provide examples of machine learning algorithms
+- describe specified property
+- provide examples of clinically-diagnosed disorders
+- describe responsiveness to treatment
+- describe continuous measurement of patient trait
+- introduce system for performing classifications
+- describe receiver
+- describe feature module
+- describe analysis module
+- describe labeling module
+- describe comparator module
+- describe training module
+- describe output module
+- introduce system for classifying subjects
+- describe classification circuit
+- describe non-transitory computer-readable medium
+
+## TERMS
+
+- define "a", "an", "the"
+- define "or"
+- define "based on"
+- define "area under the curve" (AUC)
+- describe ROC curves
+- define "cancer" and "cancerous"
+- define "cancer-free"
+- define "genetic variant" (or "variant")
+- define "germline variant"
+- define "input features" (or "features")
+- define "machine learning model" (or "model")
+- describe model training
+- define "marker" or "marker proteins"
+- describe marker detection
+- define "non-cancerous tissue"
+- define "normal tissue" or "healthy tissue"
+- define "polynucleotides", "nucleotide", "nucleic acid", and "oligonucleotides"
+- describe polynucleotide structure
+- define "polypeptide" or "protein" or "peptide"
+- describe protein modifications
+- define "prediction"
+- describe predictive methods
+- define "prognosis"
+- define "specificity"
+- define "sensitivity"
+- define "structural variation" (SV)
+- define "subject"
+- describe subject characteristics
+- define "training sample"
+- describe training vector
+- define "tumor", "neoplasia", "malignancy" or "cancer"
+- define "tumor burden"
+- describe nucleic acid sample
+- define "barcode"
+- describe barcode sequence
+- describe tagmentation or ligation reaction
+- describe nucleic acid amplification
+- describe amplified product
+
+## DETAILED DESCRIPTION
+
+- introduce medical diagnostic methods
+- describe machine learning approaches
+- highlight advantages over other methods
+- motivate non-cellular portion of immune system
+- summarize applications of methods
+
+### I. CIRCULATING ANALYTES AND CELLULAR DECONSTRUCTION WITH BIOLOGICAL ASSAYS
+
+- introduce importance of cost-effective assays
+- define analytes
+- describe DNA analytes
+- specify types of DNA analytes
+- describe RNA analytes
+- specify types of RNA analytes
+- describe polyamino acid analytes
+- specify types of polyamino acid analytes
+- describe other analytes
+- specify types of other analytes
+- motivate combination of analytes
+- describe selection of analyte combinations
+- provide examples of analyte combinations
+- conclude importance of analyte selection
+
+### II. SAMPLE PREPARATION
+
+- obtain biological sample
+- process sample to purify nucleic acid molecule
+- separate analytes from sample
+- remove higher molecular weight nucleic acid molecules
+- modify nucleic acid molecule
+- oxidize nucleic acid molecule
+- tag or barcode nucleic acid molecule
+- partition sample
+- separate cellular DNA from cfDNA
+- detect cellular components
+- quantify nucleic acid molecules
+- obtain blood samples from healthy and cancer individuals
+- detect presence of AA and CRC
+- differentiate between stages and sizes of cancer
+- prepare library for sequencing
+- add adapter sequence to nucleic acid molecule
+- incorporate molecular barcode
+- generate sequencing library
+- treat nucleic acid molecule for methylation analysis
+- deaminate unmethylated cytosine bases
+- convert 5hmC to 5-formylcytosine and 5-carboxylcytosine
+- sequence nucleic acid molecule
+- prepare sequencing library
+- amplify nucleic acid molecule
+- perform targeted sequencing
+- perform whole-genome sequencing
+- prepare biological information
+- prepare sequencing information
+- perform assays on biological sample
+- select assays based on machine learning model
+- perform biological assays on different portions of sample
+- generate feature data for machine learning analysis
+- integrate assays and machine learning model
+- introduce sample preparation
+- motivate copy number variation
+- describe copy number variation detection
+- describe genome-wide detection of copy number alterations
+- describe chromosomal instability analysis
+- describe Length Mixture Model and Fragment Endpoint Analysis
+- describe manual inspection of large-scale CNV
+- motivate changes in gene expression
+- describe microarray analysis
+- describe metrics of cfDNA concentration
+- introduce somatic mutation analysis
+- describe low-coverage whole genome sequencing
+- describe deep WGS and targeted sequencing
+- describe somatic mutation analysis features
+- introduce transcription factor profiling
+- describe inference of transcription factor binding
+- describe nucleosome signatures at Transcription Factor Binding Sites
+- describe shallow WGS data profiles
+- describe transcription factor binding site plasticity
+- describe cfDNA fragmentation patterns
+- describe hematopoietic transcription factor-nucleosome footprints
+- describe curated list of transcription factor binding sites
+- describe accessibility score and z-score statistics
+- introduce method for diagnosing a disease
+- describe generating a coverage pattern for a transcription factor
+- describe processing the coverage pattern
+- describe comparing the signal to a reference signal
+- describe diagnosing the disease
+- introduce inferring chromosome structure/chromatin state
+- describe assays for inferring three-dimensional structure of a genome
+- describe predicting chromatin state of genes
+- describe probabilistic graphical model
+- describe expression of genes controlled by access of cellular machinery
+- introduce tissue of origin assay
+- motivate cell-type-of-origin inference
+- describe genetic features for cell-type-of-origin inference
+- prepare reference population values
+- prepare sample values
+- perform matrix multiplication and parameter optimization
+- estimate cell-type proportion
+- determine type and proportion of cell types
+- introduce method of processing a sample
+- provide sequencing information
+- prepare first array of values
+- prepare second array of values
+- prepare third array of values
+- introduce methylation sequencing
+- describe enzymatic methyl sequencing
+- perform bisulfite conversion
+- introduce whole genome bisulfite sequencing
+- describe modification of nucleic acid molecule
+- introduce methylation analysis metrics
+- introduce machine learning approach for nucleosome positioning
+- introduce method for determining genetic sequence feature
+- introduce method for determining genetic sequence feature with optional enrichment
+- introduce differentially methylated regions analysis
+- introduce haplotype block assay
+- introduce cfRNA assays
+- describe RNA sequencing and alignment
+- count and normalize RNA fragments
+- introduce sample preparation
+- aggregate reads for microRNA detection
+- describe direct detection methods
+- outline hybridization-based RNA assays
+- detail in situ hybridization protocol
+- specify probe requirements
+- describe PCR reaction
+- outline quantitative PCR methods
+- describe fluorogenic quantitative PCR
+- list other suitable amplification methods
+- specify RNA markers associated with cancer
+- introduce poly-amino acid and autoantibody assays
+- describe protein assays using immunoassay or mass spectrometry
+- outline immunoassay methods
+- describe protein data normalization
+- list cancer-associated peptide and protein sequences
+- specify cancer-associated peptide or protein markers
+- describe autoantibody detection
+- outline immunosorbent assay methods
+- describe protein microarrays
+- specify metrics for autoantibody assay
+- associate autoantibody markers with cancer subtypes or stages
+- specify tumor-associated antigens
+- describe ZNF700 as a capture antigen
+- describe anti-p53 antibody assay
+- introduce carbohydrate assays
+- describe methods for measuring carbohydrates
+- specify metrics from carbohydrate assays
+
+### III. EXAMPLE SYSTEMS
+
+- introduce system architecture
+- describe data analysis in measurement devices
+- outline software code execution on computing hardware
+- define modules and devices/computers
+- describe data receiving module
+- outline data pre-processing module operations
+- describe data analysis module for genomic data
+- outline data interpretation module methods
+- describe machine learning model implementation
+- outline data visualization module methods
+- describe computer systems for implementing methods
+- introduce computational analysis on nucleic acid sequencing data
+- describe variant identification using probabilistic modeling
+- outline statistical modeling methods
+- describe mechanistic modeling methods
+- outline network modeling methods
+- describe statistical inferences methods
+- outline non-limiting examples of analysis methods
+- describe germline variation and somatic mutation
+- outline natural or normal variations
+- describe acquired or abnormal variations
+- outline distinguishing between germline variants
+- describe using identified variants for healthcare improvement
+- introduce system 100 for performing methods
+- describe computer system 101 components
+- outline measurement devices 151, 152, or 153
+- describe computer system 101 operations
+- outline network 130 for distributed computing
+- describe cloud computing platforms
+- outline CPU 105 execution of machine-readable instructions
+- describe storage unit 115 for storing files and data
+
+### IV. MACHINE LEARNING TOOLS
+
+- introduce machine learning for assay effectiveness assessment
+- describe statistical learning and regression analysis
+- outline cross-validation paradigm
+- describe simple to complex and small to large models
+- outline machine learning techniques for commercial testing modalities
+- describe threshold check for assay performance
+- outline desired minimum accuracy and AUC
+- describe subset selection of assays based on cost and performance
+- outline machine learning techniques for data processing
+- describe dimension reduction methods
+- outline logistic regression and other machine learning methods
+- describe supervised and unsupervised machine learning methods
+- outline training samples and known labels
+- describe optimization of model parameters
+- outline use of machine learning models for various purposes
+
+### V. SELECTION OF INPUT FEATURES
+
+- describe feature space generation
+- list example features
+- explain genetic sequence features
+- describe methylation status
+- describe feature selection
+- identify invariant features
+- identify varying features
+- analyze read counts
+- compare read counts
+- use statistical metrics
+- select features for training
+- create feature vector
+- associate indices with feature vector
+- store matrix at index
+- generate summary statistics
+- concatenate features
+- merge features
+- engineer features
+- apply weights to features
+- learn weights during training
+- reduce feature vector size
+
+### VI. USE OF MACHINE LEARNING MODEL FOR MULTI-ANALYTE ASSAYS
+
+- receive biological sample
+- separate sample into portions
+- identify features for each assay
+- perform assays on portions
+- obtain measured values
+- form feature vector
+- load machine learning model
+- train model using training vectors
+- input feature vector into model
+- obtain output classification
+- provide classification output
+- use principal component analysis
+- update models using raw features
+- provide treatment based on classification
+
+### VII. CLASSIFIER GENERATION
+
+- identify informative features correlating with class distinction
+- sort features by correlation degree
+- determine correlation strength
+- use machine learning techniques
+- define class distinction
+- specify disease class distinction
+- provide examples of cancer types
+- ascertain unknown class
+- classify sample into disease class
+- create classifier for distinguishing individuals
+- integrate classifier into machine learning model
+- input feature vector into machine learning model
+- generate feature vector from measured values
+- train machine learning model using training vectors
+- load machine learning model into computer memory
+- provide system for classifying subjects
+- specify components of classification system
+- list types of machine learning classifiers
+- optimize threshold of linear classifier
+- normalize multi-analyte assay data
+- use linear classifier for diagnostic or prognostic call
+- split data space into two disjoint halves
+- define threshold value for biomarker
+- evaluate biomarker profile using linear classifier
+- compare decision score to pre-defined cut-off score
+- interpret cut-off threshold responsiveness or resistance
+- derive weights and cut-off threshold from training data
+- use Partial Least Squares Discriminant Analysis (PLS-DA)
+- convert quantitative assay data into prognosis
+- list methods for performing classification
+- train prediction method using training data
+- optimize prediction method for training set
+- perform transformation or pre-processing steps
+- form weighted sum of pre-processed feature values
+- compare weighted sum to threshold value
+- make classification from measured values
+
+### VIII. CANCER DIAGNOSIS AND DETECTION
+
+- introduce cancer diagnosis and detection
+- describe predictive analytics using AI-based approaches
+- apply prediction algorithm to generate diagnosis
+- train machine learning predictor using datasets
+- generate training datasets from biological samples
+- define features and labels for training datasets
+- describe characteristics of features and labels
+- select training sets by random sampling
+- select training sets by proportionate sampling
+- balance training sets across data
+- train machine learning predictor until accuracy conditions met
+- describe diagnostic accuracy measures
+- provide method for identifying cancer in a subject
+- provide biological sample comprising cell-free nucleic acid molecules
+- sequence cfNA molecules to generate sequencing reads
+- align sequencing reads to a reference genome
+- generate quantitative measure of sequencing reads
+- apply trained algorithm to generate likelihood of cancer
+- describe predetermined conditions for accuracy
+- provide examples of predetermined conditions
+- describe monitoring progression of disease
+- determine tissue-of-origin of cancer
+- estimate tumor burden in subject
+- introduce treatment responsiveness
+- describe predictive classifiers for treatment responsiveness
+- determine drug target of a condition or disease
+- determine efficacy of a drug designed to treat a disease
+- classify sample into a class of disease
+- determine whether individual belongs to a phenotypic class
+- identify biomarkers for predicting prognosis of patients
+- classify population based on treatment responsiveness
+- describe chemotherapeutic agents
+- provide examples of treatments for which population may be stratified
+
+### IX. INDICATIONS
+
+- define biological condition
+- specify examples of biological conditions
+- describe unknown biological condition
+- motivate machine learning for unknown biological condition
+- introduce colon cancer
+- describe stages of colon cancer
+- specify examples of colon cancer stages
+- introduce conditions that can be inferred
+- specify examples of cancers
+- specify examples of gut-associated diseases
+- specify examples of immune-mediated inflammatory diseases
+- specify examples of neurological diseases
+- specify examples of kidney diseases
+- specify examples of prenatal diseases
+- specify examples of metabolic diseases
+- describe diagnosis of cancer
+- specify examples of cancers that can be inferred
+- specify examples of gut-associated diseases that can be inferred
+- specify examples of immune-mediated inflammatory diseases that can be inferred
+- specify examples of neurological diseases that can be inferred
+- specify examples of kidney diseases that can be inferred
+- specify examples of prenatal diseases that can be inferred
+- specify examples of metabolic diseases that can be inferred
+- describe combining specific details of particular examples
+- incorporate references by reference
+- describe scope of invention
+- describe modifications and variations
+- describe non-limiting examples
+- describe incorporation of patents and publications
+- introduce indications
+- describe machine learning techniques
+- outline threshold check
+- describe assay engineering procedure
+- motivate hierarchy of samples
+- describe multi-analyte approach
+- illustrate sample collection
+- describe sample splitting
+- outline molecule analysis
+- describe assay results analysis
+- introduce iterative flow
+- describe initialization phase
+- outline cohort design
+- describe sample acquisition
+- outline initial assay performance
+- describe data transmission
+- introduce data filter module
+- describe feature extraction
+- outline cost/loss selection
+- describe model selection
+- outline feature selection
+- describe training module
+- introduce assessment module
+- describe final assay
+- outline feedback loop
+- describe assay identification
+- outline sample identification
+- describe iterative process
+- outline optional modules
+- conclude indications
+- introduce multi-analyte assay design
+- motivate iterative process for assay selection
+- describe overall process flow for designing multi-analyte assay
+- receive training samples with multiple classes of molecules
+- identify features for each assay and training sample
+- obtain sets of measured values for each assay and training sample
+- analyze sets of measured values to obtain training vectors
+- operate on training vectors using machine learning model
+- compare output labels to known labels of training samples
+- iteratively search for optimal parameters of machine learning model
+- provide parameters of machine learning model and set of features
+- describe method for identifying cancer in a subject
+- provide biological sample comprising cell-free nucleic acid molecules
+- sequence cell-free nucleic acid molecules to generate sequencing reads
+- align sequencing reads to reference genome
+- generate quantitative measure of sequencing reads at genomic regions
+- apply trained algorithm to generate likelihood of subject having cancer
+- describe results for different analytes and corresponding best performing model
+- analyze results of different models with different dimensional reduction
+- describe feature column corresponding to different combinations of analytes
+- perform 5× cross-validation to obtain AUC information
+- show classification performance for different analytes
+- analyze individual assays for classification of biological samples
+- separate blood sample into different portions for multiple assays
+- investigate classes of molecules including cell-free DNA, cell-free miRNA, and circulating proteins
+- perform low-coverage whole-genome sequencing and whole-genome bisulfite sequencing on cell-free DNA
+- assess cell-free microRNA by small-RNA sequencing
+- measure levels of circulating proteins by quantitative immunoassay
+- align sequenced reads to human reference genome
+- analyze reads to produce vectors per sample
+- filter measured values to identify significant differences
+- perform PCA analysis for each analyte
+- apply machine learning model to classification
+- describe cf-DNA low coverage whole genome sequencing
+- count sequence reads for each annotated region
+- normalize read counts in various ways
+- show distribution of high tumor fraction samples across clinical stage
+- show CNV plots for individuals with high tumor fraction
+- describe methylation analysis
+- use differentially methylated regions for CpG sites
+- show CpG methylation analysis at LINE-1 sites
+- describe micro-RNA analysis
+- use expression data for micro-RNAs as features
+- show cf-miRNA sequencing analysis
+- rank order micro-RNAs by expression
+- describe cf-miRNA profiles in individuals with CRC
+- motivate use of micro-RNAs as potential CRC biomarkers
+- describe results for different analytes and corresponding best performing model
+- analyze results of different models with different dimensional reduction
+- summarize method for identifying cancer in a subject
+- introduce protein data
+- normalize protein data
+- generate standard curve
+- calculate concentration relationship
+- show protein biomarker distribution
+- identify significantly different levels
+- describe protein measurements
+- compare protein levels
+- observe distinction among ANOVA plots
+- perform principal component analysis
+- vectorize protein concentrations
+- identify proteins with most variation
+- perform PCA on cell-free DNA
+- identify genes with most variance
+- show PCA output
+- separate distance between high and low tumor fraction
+- classify samples
+- maximize differentiation between classes
+- use dimensionality reduction
+- filter out measured values
+- identify Hi-C-like structure
+- segment genome sequence
+- calculate correlation between bins
+- generate heatmap
+- identify cfDNA-specific co-releasing patterns
+- infer three-dimensional proximity of chromatin
+- generate genome-wide map
+- describe sample collection and preprocessing
+- introduce tissue-of-origin analysis
+- model compartment of cfHi-C data
+- filter genomic regions
+- transform eigenvalues
+- solve constrained optimization problem
+- define tumor fraction
+- perform ichorCNA analysis
+- describe sequencing protocol
+- calculate normalized fragmentation score
+- calculate Pearson correlation coefficient
+- compare Hi-C and cfHi-C
+- quantify degree of similarity
+- call compartment A/B
+- expand application to single-sample level
+- use Kolmogorov-Smirnov test
+- rule out internal library preparation bias
+- rule out technical bias
+- apply LOWESS method
+- use genomic DNA as negative control
+- apply GBM regression tree
+- test effect of G+C % and mappability
+- test effect of bin size
+- test effect of sequencing depth
+- analyze data at different sample sizes
+- analyze data at different pathological conditions
+- apply principal component analysis
+- apply canonical correlation analysis
+- correlate eigenvalue with DNase-seq signal
+- generate reference Hi-C panel
+- determine cell-specific correlation patterns
+- rule out artifacts during library preparation
+- quantify accuracy of approach
+- compare tumor fraction with ichorCNA
+- test hypothesis at single-sample level
+- describe detection of cancer using artificial intelligence
+- annotate human genome regions
+- generate feature set from annotated regions
+- preprocess feature set
+- remove sex chromosomes
+- remove poor-quality genomic bins
+- normalize features for length
+- perform depth normalization
+- apply GC correction
+- describe cross-validation procedure
+- motivate k-batch validation
+- describe k-batch validation
+- describe balanced k-batch validation
+- describe ordered k-batch validation
+- illustrate training schemas
+- apply k-batch with institutional downsampling
+- describe model training
+- transform data
+- standardize data
+- reduce dimensionality
+- optimize classifier hyperparameters
+- report performance metrics
+- describe bootstrapping
+- identify important features
+- analyze feature distributions
+- describe population demographics
+- evaluate k-fold cross-validation
+- evaluate k-batch cross-validation
+- evaluate balanced k-batch cross-validation
+- evaluate ordered k-batch cross-validation
+- analyze performance by population
+- analyze performance by CRC stage
+- analyze performance by tumor fraction
+- analyze performance by age
+- analyze performance by gender
+- identify highly important features
+- analyze feature significance
+- analyze copy number distributions
+- describe use of highly important features
+- evaluate performance on other cancer types
+- describe classification framework
+- analyze performance on smaller datasets
+- describe results
+- discuss importance of controlling for confounding factors
+- discuss experimental design
+- discuss computational approaches
+- discuss cfDNA count-profile representation
+- discuss tumor fraction and clinical cancer stage
+- discuss signals in the models
+- discuss sequencing depth
+- describe sample collection
+- describe cell-free DNA extraction
+- describe sequencing
+- extract reads aligning to annotated protein-coding genes
+- normalize read counts
+- train machine learning models
+- illustrate training schemas
+- show classification performance
+- define threshold for sensitivity
+- evaluate batch-to-batch technical variability
+- evaluate institution specific differences
+- describe prototype blood-based CRC screening test
+- introduce gene expression prediction model
+- describe methods for generating predictions
+- obtain de-identified plasma samples
+- separate plasma samples based on CRC stage information
+- train prediction model
+- derive V-plots
+- perform footprinting
+- show average V-plot of an expressed gene
+- apply wavelet compression and smoothing
+- learn logistic regression coefficients
+- measure presence or absence of accessible chromatin
+- evaluate classification accuracy
+- augment CNV based tumor fraction estimation
+- describe computer system
+- utilize subsystems
+- connect subsystems via system bus
+- implement control logic
+- encode software components
+- transmit software components
+

@@ -1,0 +1,149 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce RT-qPCR tests
+- limitations of current methods
+
+## SUMMARY OF THE INVENTION
+
+- describe materials and methods for RT-qPCR
+- introduce kit for molecular diagnostic testing
+- describe internal standards mixture
+- describe external standards mixture
+- describe gene-specific primers
+- describe sequence-specific fluorometric hydrolysis probes
+- outline method for using kit
+- extract RNA from sample
+- reverse-transcribe RNA
+- pre-amplify cDNA
+- perform second round of PCR amplification
+- quantify copy number for target genes
+- calculate difference in quantification cycle
+- calculate average difference in Cq
+- calculate corrected delta Cq
+- obtain target gene NT copy number
+- normalize target gene NT copy number
+- describe method for using kit with degraded RNA
+- describe method for using kit with FFPE samples
+- describe method for using kit with fresh-frozen samples
+- describe kit with synthetic competitive internal standards
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- incorporate publications, patents, and published patent specifications by reference
+- define "sample"
+- define "biological entity"
+- define "nucleic acid"
+- define "nucleotide-like molecule"
+- define "native template"
+- define "primer"
+- define "fluorometric hydrolysis probe"
+- define "fluorescent dye"
+- describe kit for molecular diagnostic testing
+- describe synthetic competitive internal standards (IS)
+- describe external standards mixture (ESM)
+- describe gene-specific primers (GSP)
+- describe sequence-specific fluorometric hydrolysis probes
+- describe method for using kit
+- extract RNA from sample
+- reverse-transcribe (RT) RNA
+- pre-amplify cDNA with ISM
+- perform second round of PCR amplification
+- quantify copy number for target genes
+- describe kit for molecular diagnostic testing of lung cancer
+- describe synthetic competitive internal standards (IS) for lung cancer
+- describe external standards mixture (ESM) for lung cancer
+- describe gene-specific primers (GSP) for lung cancer
+- describe sequence-specific fluorometric hydrolysis probes for lung cancer
+- describe method for using kit for lung cancer
+- extract RNA from sample for lung cancer
+- reverse-transcribe (RT) RNA for lung cancer
+- pre-amplify cDNA with ISM for lung cancer
+- perform second round of PCR amplification for lung cancer
+- quantify copy number for target genes for lung cancer
+- describe method for using kit with two distinct concentrations of ESM
+- describe method for using kit with two distinct concentrations of ESM differing by at least one order of magnitude
+- describe method for using kit with two distinct concentrations of ESM at 10−13 M NT/10−13 M IS and 10−14
+- describe method for quantifying copy number for each target gene
+- calculate difference in quantification cycle (Cq) between NT and IS
+- calculate average difference in Cq between NT and IS of two concentrations of ESM
+- calculate corrected delta Cq
+- obtain target gene NT copy number
+- normalize target gene NT copy number to ACTB gene loading control NT value
+- describe method for using kit with degraded RNA samples
+- describe method for using kit with formalin fixed paraffin embedded (FFPE) samples
+- describe method for using kit with fresh-frozen samples
+- describe kit for molecular diagnostic testing with synthetic competitive internal standards (IS)
+- describe kit for molecular diagnostic testing with external standards mixture (ESM)
+- describe kit for molecular diagnostic testing with gene-specific primers (GSP)
+- describe kit for molecular diagnostic testing with fluorometric hydrolysis probes
+
+## EXAMPLES
+
+- obtain FFPE lung tissues
+- assign non-identifying number to each sample
+- prepare microtome sections
+- extract RNA from FFPE samples
+- treat RNA with DNase
+- assess RNA purity and integrity
+- optimize reverse transcription conditions
+- design primers for each gene
+- test primer efficiency and specificity
+- design probes and IS templates
+- synthesize and purify standards
+- test probe specificity
+- prepare internal standards mixture
+- prepare external standards mixture
+- perform pre-amplification PCR
+- perform second-round PCR
+- calculate gene expression
+- determine accuracy of IS concentration
+- assess linearity of the assay
+- measure imprecision of the assay
+- test robustness and interference
+- vary EDTA concentration
+- test effect of ESM on quality control
+- test inter-day experimental variation
+- perform statistical analysis
+- validate primer efficiency and specificity
+- validate probe specificity
+- validate internal standards mixture accuracy
+- validate linearity of the assay
+- validate imprecision of the assay
+- validate robustness and interference testing
+- present results of analytical validation
+- present results of statistical analysis
+- introduce examples
+- test effect of variation in fluorescence specific activity
+- control for inter-experimental variation in selection of Cq threshold
+- describe fitness for purpose testing in FFPE samples
+- present histomorphologic diagnosis of benign or malignant FFPE samples
+- present RNA yield and purity
+- optimize FFPE reverse transcription
+- assess efficiency of RT with GSP or RHP
+- analyze effect of pre-amplification
+- compare results with or without pre-amplification
+- analyze MYC, E2F1, CDKN1A and ACTB in FFPE samples
+- present comparison of LCDT index in benign and malignant surgical FFPE samples
+- present ROC curve analysis
+- describe conditions for calculation of results
+- present LCDT optimal cut-off value
+- discuss analytical validation and fitness for purpose testing
+- highlight key features of optimized method
+- describe use of internal standards
+- describe two-color fluorometric real-time PCR
+- discuss imprecision
+- describe ESM controlled for inter-run variation in probe fluorescence
+- discuss multiplex pre-amplification
+- describe competitive multiplex pre-amplification
+- discuss gene specific reverse transcription
+- describe fitness of method for FFPE sample analysis
+- introduce diagnostic applications
+- describe method of identifying a biological state
+- describe use of numerical index
+- describe normal expression levels
+- describe method of identifying lung cancer
+- describe kits
+- provide instructions for preparing, executing, and analyzing PCR
+

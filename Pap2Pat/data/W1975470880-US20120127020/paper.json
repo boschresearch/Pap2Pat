@@ -1,0 +1,87 @@
+{
+    "id": "https://semopenalex.org/work/W1975470880",
+    "authors": [
+        "Eung Gi Paek",
+        "J. Y. Choe"
+    ],
+    "title": "Distributed time reversal mirror array",
+    "date": "2010-01-01",
+    "abstract": "An array of independent, separate, distributed time-reversal mirrors (TRMs) that can function as a large array in a coherent (collective and co-operative) manner is described. Due to the unique feature of time-reversal to compensate for the propagation delay after round-trip, the DTRMA can perform coherent integration of signals across the array through distorting media without the need for complicated array calibration and precise geo-location procedures, even after the location of a TRM has been changed. Several proof-of-concept experimental results to show both temporal and spatial focusing properties of the DTRMA are demonstrated using commercially available off-the-shelf components and instruments.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "Time-reversal [1] has several powerful features that make it highly desirable for coherent radar imaging and tracking. These features include adaptive self-focusing of a beam on a target through distorting media, high resolution imaging due to multipath-enabled extended virtual aperture, etc. However, its implementation at long RF wavelengths has been hampered by the required long RF cables which can raise various issues such as signal attenuation, phase instability due to thermal expansion, and difficulties in installation.",
+                "The concept of coherent integration of signals from widely distributed radars has been extensively investigated in the past by the name of netted radars [2,3], WSN (Wireless Sensor Network), etc. Temporal coherence can be attained with the current commercial technology using a Rubidium clock disciplined by a timing signal from the global positioning system (GPS) (in the following, we will call it the Rb-GPS clock for short). However, spatial coherence with sub nsec (a few percent of the period) synchronization across the distributed sensors without a hard-wire is difficult to achieve [4], and no results have been reported previously in the open literature, to the best of our knowledge. The demonstrated coherent netted radar systems to date [2] are \"hard-wired\" to meet the stringent requirements of coherence and synchronization.",
+                "In this paper, we introduce the concept of the distributed time-reversal mirror array (DTRMA) that can function as a large coherent array without requiring hard-wired cable connection. Furthermore, due to the unique feature of timereversal to compensate for the propagation delay after round-trip, the DTRMA can perform coherent integration of signals across the array through distorting media, without the need for complicated array calibration and precise geo-location procedures, even after the location of a TRM has been changed. Several proof-of-concept experimental results to show both temporal and spatial focusing properties of the DTRMA are demonstrated."
+            ],
+            "subsections": [
+                {
+                    "title": "II. Distributed Time-Reversal Mirror Array (DTRMA)",
+                    "paragraphs": [
+                        "DTRMA is an array of independent, separate time reversal mirrors (TRMs) that are distributed sparsely and randomly over a large area in a two-dimensional or threedimensional arrangement conformal to the available surface profile. These TRMs must maintain both temporal and spatial coherences across the entire array in order to function as a large aperture coherent array sensor. Each TRM repeats a simple procedure comprising three steps -detection, timereversal and re-transmission -at a pre-defined pulse repetition frequency (prf) in a synchronous manner.",
+                        "Fig. 1 shows a schematic diagram of each individual TRM. The TRM has a Rb-GPS clock and a precision synthesized clock generator (e.g., SRS, CG635) which is phase-locked to the 10 MHz time-base from the Rb-GPS clock. A digital oscilloscope (OSC) is used here as an analog-to-digital converter (ADC) to digitize incoming signals. An arbitrary waveform generator (AWG) generates an arbitrary waveform programmed by a computer. Temporal coherence during a coherent integration time can be achieved with a commercially available Rb-GPS clock. However, maintaining spatial coherence across the entire array is not straightforward to achieve. The time-reversal process, which consists of detection, time-reversal and retransmission, must be done in a synchronous manner within several percent of a period across the entire array. In order to achieve the goal, we take three steps: First, phase-lock all the instruments (OSC, AWG, etc) to the local reference signal from a Rb-GPS clock. Second, a trigger signal at a predesignated pulse repetition frequency (prf) is generated using a precision synthesized clock generator (e.g., SRS, CG635) which is also phase-locked to the local Rb-GPS clock. Special care must be taken to ensure that the TTL trigger signal is clean and free from glitches or ripples. Finally, the remaining fixed temporal skew of the trigger signal is compensated by a digital delay generator (e.g. SRS DG535). Once the skew in the trigger signal is adjusted, no further array calibration is necessary, even after a TRM is moved to a new location, for the reason described below in section III. III. COMPENSATION OF CLOCK SKEW AND PROPAGATION DELAY Fig. 2 explains the waveform measured at the probe (left) and TRM (right) stations. Initially a pulse is generated by the probe station at t = x sec (in the following, the unit sec will be omitted for short.), measured from the start (e.g. rising edge) of the trigger signal at the probe station, as shown in Fig. 2(a). When the pulse arrives at the TRM, it will be delayed by p (p = d /c, where d is the distance between the two nodes and c is the velocity of light). If the delayed signal were to be measured at the probe station's oscilloscope, it would have looked like that shown in Fig. 2(b). Assuming that the trigger signal of the TRM \"leads' that of the probe by s, the pulse will appear at",
+                        "on the oscilloscope at the TRM (Fig. 2(c)). After time-reversal, the pulse is located at s p x \uf02b \uf02b when measured from the end (right edge) of the frame, or when measured from the start (left edge) of the frame, where T represents the period of the frame (or record length in time) (Fig. 2(d)). The time-reversed waveform is loaded on the AWG and is re-transmitted to the probe station. If the delayed signal were to be measured at the TRM's oscilloscope, it would have looked like that shown in Fig. 2(e) after delay p. However, since the trigger signal at probe station \"lags\" that of TRM by s, the pulse at the probe station will be at on the One should note that this delay is independent of propagation delay p even through a distorting medium (as long as the propagation characteristics are reciprocal) since it is canceled out after round trip and the time reversal process. However, the effect of the time skew between the trigger signals of the two stations is doubled. Therefore, the amount of the trigger skew at each TRM must be cancelled out using a delay generator. However, once compensated, there is no further need to re-adjust the trigger skew, even after the TRM is re-positioned at a different location since the skew s is location-independent. This peculiar feature due to timereversal provides spatial coherence among randomly distributed TRMs and might even allow mobile operation of the DTRMA."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "s T 2 \uf02d",
+                    "paragraphs": [
+                        "In this way, coherent integration of signals from distributed sensors may be achieved through a distorting medium without the complicated array calibration or geolocation processes."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "VI. PROOF-OF-CONCEPT EXPERIMENTS",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "A. Construction of a DTRMA with Three TRMs",
+                    "paragraphs": [
+                        "To demonstrate time reversal using DTRMA, three timereversal mirrors (TRMs) are constructed using COTS components and instruments, as schematically shown in Fig. 1. Each TRM is connected to a respective HF vertical antenna and a GPS antenna on the roof of a four-story building. Special care is taken to ensure that each TRM is totally separate and independent without any RF cable connections among TRMs -a crucial feature of the DTRMA. All the instruments (AWG, oscilloscope, precision synthesized clock generator and delay generator) in each TRM are phase-locked by the 10 MHz reference time base from their local Rb-GPS clock. To maintain spatial coherence across TRM's, the 10 KHz triggering signal is carefully generated using the procedure detailed at the end of Section II."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "B Temporal focusing using DTRMA",
+                    "paragraphs": [
+                        "Using the above DTRMA, the temporal focusing feature of time-reversal has been tested for both a short pulse and a chirp signal as follows.",
+                        "Fig. 3 shows a schematic diagram (Fig. 3(a)) and a picture (Fig. 3(b)) of the setup to demonstrate temporal focusing with the DTRMA. A short pulse from one of the TRMs (called probe station) is propagated through free-space (shown with arrow \"1\") and is received by the second TRM which is separated from the probe by 160 feet. The TRM time-reverses the received signal and re-transmits through the air (shown with arrow \"2\").",
+                        "Fig. 3(c) shows the received signal without using a Rb-GPS clock and proper synchronization as explained previously. The 10 MHz signal from the AWG is used to phase-lock all the other instruments locally. In the Figure, the initially transmitted pulse from the probe (yellow curve) and the time-reversed returning signal (pink curve) are shown. As expected, the correlation output is severely smeared because the two TRMs are not phase-locked to each other. Fig. 3(d) shows the received signal with a Rb-GPS clock and the proper synchronization as described before. One can see that the signal is stable and sharply focused with a symmetric shape.",
+                        "Temporal focusing is also tested with a chirp signal. In this case, due to the processing gain provided by the pulse compression of a chirp, the signal strength can be increased and a sharper peak can be expected. A chirp signal ranging 11 -13 MHz is transmitted from the probe station, and the time-reversed returning signal is convolved (instead of correlated because the returning signal is time-reversed) with the original transmitted chirp signal.",
+                        "Fig. 4(a) shows the initially transmitted chirp signal (shown with yellow curve), trigger signal (green), and the time-reversed received signal (pink). One can see that the amplitude of the returning signal is not uniform. Such a nonuniform temporal response is mainly attributed to the limited frequency response of the resonant antennas. "
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "C. Spatial Focusing Using a DTRMA",
+                    "paragraphs": [
+                        "To demonstrate spatial focusing using DTRMA, three TRM's are used -one for the probe and two for the TRM's, as shown in Fig. 5(a). A sinusoidal signal from the probe station is transmitted through an antenna and is detected by each of the two TRM's antennas. The time-reversed signals from both TRM's are coherently summed and detected by the probe. One can scan the self-focused signal by moving the antennas around the original probe location. However, such a spatial scanning requires a movement of a large antenna over  To communicate low-speed digital signals (e.g. commands or other digital signals that do not require direct coherent integration) with a central office or end-users in a net-centric environment, each node of the DTRMA may be connected to a digital wireless network such as WiMAX or WiBRO.",
+                        "Figure 5. A proof-of-concept experiment to demonstrate spatial focusing using the DTRMA. See the text for more details.",
+                        "a long distance, which is normally difficult for HF cases. So, in this proof-of-concept experiment, the trigger signal of one of the TRMs is delayed by using a digital delay generator. The digital delay generator (SRS, DG535) provides a very precise delay of a TTL signal with a 5 ps resolution and <25 ps rms jitter. The strength of the combined signals from the two TRM's is measured at the probe station as a function of the time delay of the trigger signal at one of the TRMs. V. TECHNICAL ISSUES Time-reversal is based on the assumption that wave propagation is reciprocal. In some environments such as the ionosphere, this reciprocity may fail and so time-reversal may not function properly. A more detailed description on this issue is reported previously [4].",
+                        "The proposed DTRMA heavily relies on the frequency stability of the currently available Rb-GPS clock for the synchronization of remote TRMs within sub nsec (or less than a few percent of a period). However, as the operating carrier frequency increases (or period shortens), even more precise synchronization using a more accurate clock, such as a hydrogen maser, might be necessary."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "VI. CONCLUSION",
+                            "paragraphs": [
+                                "An array of independent, separate, distributed timereversal mirrors that can function as a large array in a coherent (collective and co-operative) manner is described along with several proof-of-concept experiments. Due to the unique feature of time-reversal to compensate for the propagation delay after round-trip, the DTRMA can maintain coherent integration of signals across the array through a distorting medium, without the need for complicated array calibration and precise geo-location procedures, even after the location of a TRM has been changed. The proposed concept has the potential to coherently combine signals from low-cost distributed RF sensors to achieve a large-scale array with high angular resolution and low clutter noise."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "ACKNOWLEDGMENT",
+                            "paragraphs": [
+                                "The authors thank Joseph Thomason and Benjamin Root for many helpful discussions and support; Serafin Rodriguez, Geoff San Antonio for the help in removing unwanted spurious noise spectrum; Michael Rachuba, Dan Newton, John McConnell, and John Glancy for many useful discussions and support; Mark Parent for giving us information on phase-locking and lending us a Rubidium clock."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

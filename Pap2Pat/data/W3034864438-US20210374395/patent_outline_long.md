@@ -1,0 +1,147 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate machine-learned models
+
+## BACKGROUND
+
+- introduce templatic documents
+- describe challenges of extracting information
+- limitations of current techniques
+- difficulties of extracting information
+
+## SUMMARY
+
+- introduce computer-implemented method
+- describe extracting candidate text portions
+- generate input feature vectors
+- determine scores and assign text portions
+
+## DETAILED DESCRIPTION
+
+- introduce system for extracting information from form-like documents
+- describe end-to-end trainable system using machine learning models
+- explain robustness to native digital documents and scanned images
+- describe machine learning model learning dense representation for extraction candidates
+- explain desirable property of positive and negative examples forming separable clusters
+- describe generating scores for candidates relative to field types in target schema
+- explain assigning candidates to field types based on scores
+- describe using extracted information for automated actions
+- motivate workflows for business processes including form-like documents
+- explain expense and time reduction through automated processing
+- describe document analysis system identifying document types
+- explain associating document types with target schemas
+- describe target schema including expected fields and information
+- explain receiving image of document and determining document type
+- describe analyzing image to extract text portions
+- explain extracting data from text portions including content and location
+- describe determining field types expected in document based on target schema
+- explain determining candidate text portions for each field type
+- describe analyzing text portions to determine content type
+- explain generating scores for candidate text portions using machine-learned model
+- describe machine-learned model taking field type and position information as input
+- explain generating embeddings for field type and candidate text portion
+- describe generating neighborhood candidate position embedding
+- explain using self-attention layers to update neighbor encodings
+- describe combining candidate position embedding and neighborhood embedding
+- explain generating overall score for candidate text portion
+- describe selecting candidate text portion based on generated scores
+- explain transmitting selected values to central server for use and analysis
+- describe three general principles informing document analysis system organization
+- explain principle of each field corresponding to well-understood type
+- describe principle of each field instance being associated with key phrase
+- explain principle of key phrases being drawn from small vocabulary
+- describe pipeline stages including document ingestion, text recognition, and candidate generation
+- explain score generation stage and assigning candidate text portion to field
+- define scorer system
+- describe scorer system functionality
+- determine features associated with candidate text portion
+- define neighborhood zone
+- identify nearby text portions
+- encode neighbor text portions
+- represent position of candidate text portion
+- calculate relative position of neighbor text portion
+- embed information associated with inputs
+- generate intermediate representation of each input
+- employ embedding table for field
+- generate initial neighbor embeddings
+- transform initial neighbor embeddings
+- obtain attention weight vector
+- encode neighbor text portions using self-attention
+- project self-attended neighbor encodings
+- form single encoding by combining neighbor encodings
+- obtain candidate encoding
+- generate score for candidate text portion
+- compute cosine similarity
+- rescale cosine similarity to generate score
+- train scorer system using binary cross-entropy
+- describe technical effects and benefits
+- introduce document analysis system
+- describe components of document analysis system
+- describe candidate generation system
+- determine target schema
+- extract candidate text portions
+- analyze content of text portions
+- generate score for each candidate text portion
+- use machine-learned model to generate score
+- generate embeddings for input data
+- compare embeddings to generate scores
+- generate field type embedding
+- generate candidate position embedding
+- generate neighborhood candidate position embedding
+- use self-attention layers to obtain word embeddings
+- generate attention weight vector
+- combine candidate position embedding and neighborhood embedding
+- compare candidate encoding to field encoding
+- select candidate text portion based on score
+- assign candidate text portion to field type
+- store assigned values for later use
+- transmit data to second computing system
+- map candidate text portions to actions
+- describe system for extracting text information
+- divide document analysis process into components
+- describe text extraction system
+- extract characters from document
+- group characters into text portions
+- determine content of each text portion
+- determine position of each text portion
+- determine relative position of text portions
+- describe candidate selection system
+- determine target schema for document
+- identify candidate text portions for each field
+- use scoring model to generate score for each candidate
+- assign candidate text portion to field based on score
+- describe score model
+- generate features associated with candidate text portion
+- encode neighbor text portions using vocabulary
+- define score model
+- transform initial neighbor embeddings
+- obtain attention weight vector
+- encode neighbor text portions
+- project self-attended neighbor encodings
+- form neighborhood encoding
+- obtain candidate encoding
+- generate score
+- train score model
+- depict example document
+- identify position of candidate text portion
+- identify text of neighbor text portions
+- generate score
+- depict example process for identifying neighbor text portions
+- identify center position of candidate text portion
+- identify text portions as neighboring
+- depict block diagram of multi-step document analysis model
+- describe text extraction model
+- describe candidate selection model
+- train machine-learned models
+- depict flowchart illustrating example method for extracting text
+- obtain image of document
+- extract candidate text portions
+- generate input feature vector
+- process input feature vector using machine-learned scoring model
+- determine score for each candidate text portion
+- assign candidate text portions to field type
+- map assigned candidate text portions to action
+- describe variations of embodiments
+

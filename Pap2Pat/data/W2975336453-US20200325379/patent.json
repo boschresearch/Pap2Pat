@@ -1,0 +1,251 @@
+{
+    "id": "US20200325379",
+    "authors": [
+        "Arunava Majumdar",
+        "Ian S. McKay"
+    ],
+    "title": "Electrochemical redox refrigeration",
+    "date": "2020-04-13 00:00:00",
+    "abstract": "A method of electrochemical redox refrigeration includes inducing a flow of an electrochemical refrigerant that is in contact with a first electrode to a second electrode; applying an electrical potential difference between the first electrode and the second electrode, wherein the electrochemical refrigerant is oxidized at one of the first electrode and second electrode and reduced at another of the first electrode and second electrode; wherein the first electrode is at least partially thermally isolated from Joule heating in the electrochemical refrigerant and from activation losses in the second electrode by an action of the flow of the electrochemical refrigerant.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates generally to refrigeration devices and methods. More specifically, it relates to techniques for electrochemical oxidation-reduction refrigeration."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to refrigeration devices"
+                    ],
+                    "num_characters": 176,
+                    "outline_medium": [
+                        "define refrigeration devices"
+                    ],
+                    "outline_short": [
+                        "define refrigeration devices"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Air conditioning and refrigeration consume roughly 20% of all electrical power in US residences and 25% in commercial buildings1. By 2050, the world population will grow by an additional 2.5 B, mostly in urban areas hot and humid urban areas that will need cooling2. This demand creates a need for more energy efficient refrigeration. Moreover, common refrigerants, such as hydrofluorocarbons (HFCs) and hydrochloro-fluorocarbons (HCFCs), have specific global warming potentials about 2000 times that of CO2. It is predicted that the impact of global warming owing to refrigerant leakage alone could grow to be about 10-40% that of all emitted CO23. It is thus imperative that HFCs and HCFCs be phased out in favor of more environmentally friendly refrigerants4.",
+                        "A key parameter in the thermodynamics of any cooling cycle is the entropy change, \u0394S, of the energy carrier. For HFCs, \u0394S is typically \u02dc1 kJ/kg-K (or \u02dc1 mV/K per carrier)5. While the \u0394S associated with thermoelectric, electrocaloric, magnetocaloric, thermoacoustic, thermoelastic, absorption and other phase transitions have been studied intensively for cooling purposes6,7, no alternative approach has yet provided the reversible and controllable \u0394S required to be a viable at-scale alternative to vapor compression refrigeration.",
+                        "One under-studied source of \u0394S can be found in electrochemical redox reactions. Redox processes are controllable, reversible, can manifest large entropy changes per unit charge (as high as 2 mV/K over a broad temperature range), and have been harnessed in a wide variety of practical and profitable applications8. In thermogalvanic systems, the electrochemical analogues of solid-state thermoelectric devices, entropy changes inherent in redox reactions are used to couple a flow of ions to a flow of heat for energy harvesting purposes9. Recent advances in this concept include both thermally regenerative and continuous electrochemical heat engines, in which forced convection of redox-active fluids allows for decoupling of ionic and thermal transport lengths that may lead to higher efficiencies than are achievable by solid-state thermoelectrics10,11. In addition to leveraging the fundamental reaction entropy, thermo-electrochemical systems that leverage the interaction of electrochemical driving forces and other phase transitions have also been deployed successfully12,13. However, little progress has been made on electrochemical refrigeration systems. Although the presence of an electrochemical cooling effect is recognized14 and double redox junction refrigeration systems have been considered15, no one has managed yet to realize this approach in a practical implementation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate energy efficiency",
+                        "highlight environmental concerns",
+                        "discuss limitations of vapor compression refrigeration",
+                        "introduce electrochemical redox reactions",
+                        "summarize prior art"
+                    ],
+                    "num_characters": 2686,
+                    "outline_medium": [
+                        "motivate energy efficiency",
+                        "limitations of current refrigerants"
+                    ],
+                    "outline_short": [
+                        "motivate electrochemical oxidation-reduction refrigeration"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "A simple single junction redox refrigerator has a fundamental advantage over its solid-state equivalent. Since thermal and electrical conduction are inextricably linked in solid materials, Joule heating from the bulk element necessarily diffuses towards the cooling junction. This creates an upper limit on the cooling power of Peltier coolers16. By contrast, if a fluid is used instead, the Joule heating can be transported away from the cold junction via advection. In other words, a fluid thermoelectric can actively advect joule-heated electrolyte away from the cooling junction with no penalty to the entropy transport, potentially unlocking higher maximum power. Hence, a fluid-based redox refrigerator can operate without this upper bound in performance.",
+                        "In this description, we disclose a single junction redox refrigerator. In one implementation, the refrigerator is based on the Fe(CN)63\u2212/4\u2212 redox couple, which has been shown previously to possesses the requisite low activation energy, high entropy change, and high overall reversibility for effectively coupling thermal and electrical energy flows17.",
+                        "This single junction redox refrigerator uses the conformational entropy change of an electrochemical redox reaction to produce a refrigeration effect. This device is similar to a liquid version of a Peltier cooler, but with two distinct advantages: 1) the entropy change per carrier of the electrochemical refrigerant is more than five times larger than state-of-the-art thermoelectric materials and 2) the liquid element can be convected continuously away from the cooling junction, so that joule heating in the bulk element does not diminish the delivered cooling effect. Embodiments of the invention provide a higher Seebeck coefficient and solve a problem with Joule heating propagating towards the cooling junction.",
+                        "Significantly, the electrolyte flow from the cooling electrode towards the heating electrodes provides a continuous refrigeration effect, which is not otherwise possible with a single junction. The use of electrolyte flow provides a continuous refrigeration effect. Using a fluid, the Joule heating can be transported away from the cold junction via advection. In other words, a fluid thermoelectric can actively advect joule-heated electrolyte away from the cooling junction with no penalty to the entropy transport, unlocking higher maximum power. Hence, this fluid-based redox refrigerator can operate without this upper bound in performance.",
+                        "Applications of this device include air conditioning, refrigeration, microprocessor and battery cooling.",
+                        "In one aspect, the invention provides a method of electrochemical redox refrigeration comprising inducing a flow of an electrochemical refrigerant that is in contact with a first electrode to a second electrode; applying an electrical potential difference between the first electrode and the second electrode, wherein the electrochemical refrigerant is oxidized at one of the first electrode and second electrode and reduced at another of the first electrode and second electrode; wherein the first electrode is at least partially thermally isolated from Joule heating in the electrochemical refrigerant and from activation losses in the second electrode by an action of the flow of the electrochemical refrigerant.",
+                        "In one implementation, the first electrode is a cooling electrode and the second electrode is a heating electrode.",
+                        "The electrochemical refrigerant may flow from the first electrode toward the second electrode, or it may flow in a transverse direction between the first electrode and the second electrode.",
+                        "In one implementation, the electrochemical refrigerant is reduced at the first electrode to Fe(CN)64\u2212 and is oxidized at the second electrode to Fe(CN)63\u2212.",
+                        "Preferably, inducing the flow of the electrochemical refrigerant comprises inducing a continuous flow.",
+                        "The electrochemical refrigerant preferably has a figure of merit",
+                        "\\(Q_{g\ue89e\\text{/}\ue89eb} = \\frac{\\Delta \ue89e\\; \ue89e{S\ue8a0\\left( \\frac{J}{{mol}\ue89e\\mspace{14mu} \ue89eK} \\right)}\ue89e\\mspace{14mu} \ue89e{T\ue8a0(K)}}{E_{a}\ue8a0\\left( \\frac{J}{mol} \\right)}\\)",
+                        "whose value is greater than 1, where T represents temperature, \u0394S represents the absolute value of the standard entropy of reduction of the refrigerant, and Ea represents activation barrier for oxidation or reduction of the refrigerant.",
+                        "In one implementation, the electrochemical refrigerant is directed through multiple successive electrochemical refrigeration cells to produce a larger net temperature depression than in a single cell.",
+                        "In one implementation, the electrochemical refrigerant is used for electrical energy storage and electrochemical refrigeration. For example, the method may include inducing the flow of two electrochemical refrigerants, driving two redox reactions in a positive entropy direction at a pair of cooling electrodes to either store or release stored energy and produce a redox cooling effect, and driving the two redox reactions in a negative entropy direction to either store or release stored energy and produce a redox heating effect."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce single junction redox refrigerator",
+                        "compare to solid-state equivalent",
+                        "describe Fe(CN)63\u2212/4\u2212 redox couple",
+                        "explain conformational entropy change",
+                        "highlight advantages over thermoelectric materials",
+                        "describe electrolyte flow",
+                        "explain continuous refrigeration effect",
+                        "mention applications",
+                        "describe method of electrochemical redox refrigeration",
+                        "discuss figure of merit"
+                    ],
+                    "num_characters": 5068,
+                    "outline_medium": [
+                        "introduce single junction redox refrigerator",
+                        "advantage over solid-state equivalent",
+                        "embodiment of Fe(CN)63\u2212/4\u2212 redox couple",
+                        "application of electrochemical redox refrigeration",
+                        "method of electrochemical redox refrigeration"
+                    ],
+                    "outline_short": [
+                        "introduce single junction redox refrigerator",
+                        "describe advantages over solid-state equivalent"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "FIG. 1A and FIG. 1B are temperature-entropy diagrams comparing an idealized Peltier cooler with an idealized redox refrigerator. In the redox refrigerator of FIG. 1B, forced advection of joule-heated electrolyte away from the cooling junction reduces parasitic heat losses, enabling higher cooling power than the Peltier cooler.",
+                        "FIG. 2A is an optical view of a redox refrigerator device according to an embodiment of the invention showing the electrodes 100 and 102 and electrolyte flow channel 104 carrying electrolyte refrigerant 106. A corresponding infrared view of the device is shown in FIG. 2B where the electrode regions 108 and 110 indicate cooling due to oxidation of the refrigerant and heating due to reduction of the refrigerant, respectively. Specifically, a potential difference is applied across the two electrodes in contact with the electrochemical refrigerant flowing through the channel between them. The Fe(CN)64\u2212 refrigerant is oxidized to Fe(CN)63\u2212 at the anode, producing a cooling effect, while the opposite process occurs at the cathode, rejecting heat. An overall flow of electrolyte from the cooling to the heating electrode prevents the equilibration of the cooling electrode with either the heating electrode or the joule-heated electrolyte. In the cell, the reduction of Fe(CN)63\u2212 yields an entropy change per charge a=\u0394S/F=\u22121.5 mV/K, which corresponds to a theoretical maximum cooling power density of i\u0394STc/F for applied current density i, Faraday's number F, and cold electrode temperature Tc18.",
+                        "The inventors have explored the effect of electrolyte convection on temperature depression and observe the cooling effect in two example device configurations. Figures of merit are provided for redox refrigerants, and a number of conventional redox active fluids from the flow battery community are evaluated as potential alternatives to the Fe(CN)63\u2212/4\u2212 redox couple.",
+                        "Three time scales govern the dynamics of the Fe(CN)63\u2212/4\u2212 electrochemical refrigerator. Considering heat conduction, the characteristic time for transport between the electrodes is \u03c4thermal\u2248d2\u03c1Cp/\u03ba for inter-electrode distance d, electrolyte density p, thermal conductivity \u03ba, and specific heat Cp. Considering heat advection, the characteristic time depends on the flow velocity v between the electrodes \u03a3flow\u2248d/v. For stagnant electrolytes, the characteristic timescale of the electrochemical response based on reactant diffusion is \u03a3sand\u2248\u03c0D (0.5 Co F/iinitial) for reactant diffusivity D, concentration Co, and applied current density iinitial19. To enable continuous cooling, the cooling electrode must be thermally isolated from both Joule heating in the electrolyte and activation losses at the hot electrode. This requires the electrolyte to flow swiftly enough so that \u03c4flow<\u03c4thermal. For stagnant electrolyte, the duration that cooling can be maintained is expected to be the shorter of \u03c4thermal and \u03c4sand.",
+                        "An infrared microscope (Quantum Focus Instruments, InSb detector) was used to visualize the thermal effects of Fe(CN)63\u2212/4\u2212 reduction/oxidation in a custom-made electrochemical flow cell, depicted in FIG. 2B. Carbon paper electrodes (SpectraCarb 2050a) were oxidized in air at 200\u00b0 C. for hydrophilicity and deposited on an infrared-transparent CaF2 substrate (ThorLabs). The electrodes were positioned in the flow path of an aqueous 350 mM K3Fe(CN)63\u2212|350 mM K3Fe(CN)64\u2212 solution. The electrolyte flow was controlled using a peristaltic pump (Masterflex) and preheated to 50\u00b0 C. before entering the cell by flowing through a parylene-coated serpentine channel milled into a heated Al block. In addition to heating the sample above the ambient temperature for better infrared signal above room-temperature thermal reflections, this heating allowed the emissivity for each point within the sample to be calibrated. The single-temperature emissivity measurement is made possible by a correlation between one- and two-temperature radiance measurements for a library of materials implemented by the Quantum Focus microscope. The single-point resolution for this approach is 100 mK, with sensitivity down to 1 \u03bcK claimed for spatially averaged measurements. Electrolyte flow velocity was estimated by measuring the volumetric flow rate and correcting for the cross-sectional area of the flow channel housing the electrodes. Contact to the electrodes 100 and 102 was established using strips of 12.5 \u03bcm Ti foil (GalliumSource) 112, 114, 116, 118, as shown in FIG. 2A.",
+                        "The electrochemical redox of Fe(CN)63\u2212/4\u2212 was driven and monitored potentiostatically (Biologic SP-240). Since the opposite electrochemical reactions were run at the oxidation (cooling) and reduction (heating) electrodes, the open-circuit voltage of the cell was 0 V and so the applied voltage is reported as the total overpotential for both reactions \u03b7=\u03b7red+\u03b7ox. No reference electrode was used.",
+                        "The temperature depression was measured by integrating the temperature signal over the area of the cooling electrode on the infrared movie that was created from each test run. The total cooling power was estimated using an aggregate heat transfer coefficient, U [W/K], between the electrode and its surroundings. To establish U, a known electrical current was driven across the cooling electrode to use it as a Joule heater with known power dissipation P. By monitoring the resulting electrode temperature rise \u0394T at each flow setting, the constant of proportionality U=\u0394T/P could be inferred. The U measured for each flow rate was then used to estimate the cooling power based on the observed \u0394T during the cooling experiments.",
+                        "For stagnant electrolyte tests, both electrodes were loaded with a high activity and high surface area catalyst, which was intended to both decrease activation losses and to increase the emissivity of the electrode for better temperature estimation. The Pt\u2014C catalyst ink consisting of 50 \u03bcg/\u03bcL HISPEC 40% Pt on high surface area carbon in 3:2:0.1 H2O (MilliQ Synergy UV): Isopropanol (Aldrich): Nafion 117 dispersion (Aldrich) was dropcast onto the positive electrodes for a total Pt loading of 0.5 mg/cm2. For test with flowing electrolytes, no catalyst coating was used to improve electrode consistency over lengthy tests. Electrode spacing d was also increased from approximately 0.5 mm in the stagnant test to 1.0 mm in the tests with flow.",
+                        "Initial testing was performed in stagnant electrolyte to test the electrochemical and thermal behavior in the absence of flow. The thermal response of both electrodes to 2 seconds of applied voltage is shown in FIG. 3. As expected, the anode experiences a momentary temperature decrease, and the cathode experiences a concomitant increase. Both temperature deviations are of shorter duration than the applied voltage pulse. While the short duration of cooling could be due to either thermal equilibration in the small gap between or the decreasing reaction current over time due to concentration polarization of the electrolyte (see FIG. 7), concentration polarization is likely the larger contributor in this case because \u03c4sand<\u03c4thermal. As larger driving potentials are applied, the magnitude of the heating effect at the cathode grows faster than the cooling effect at the anode, as expected for less reversible heat pump operation. At very high overpotential, the cooling effect at the anode is overwhelmed by heating due to activation and transport losses even before \u03c4sand, and long before heat can propagate across the inter-electrode space.",
+                        "As shown in FIG. 4, electrolyte flow dramatically altered the thermal response of the cell. In these tests, different overpotentials were applied and the temperature response monitored with and without electrolyte flow. The applied current and overpotential were also recorded and was used to compare the estimated to the theoretical cooling power. Both peak and maximum steady-state cooling were achieved at higher overpotential with flowing electrolyte than with stagnant electrolyte. Flowing electrolyte also allowed for some steady-state refrigeration (albeit delivered at lower \u03b7 than the peak value), which was neither expected nor observed in the cell with stagnant electrolyte. However, the magnitude of the peak cooling was not significantly larger with flow than without.",
+                        "The similarity of the peak cooling values for stagnant and flowing electrolyte are attributable to the scaling of both i and U with v1/2. In other words, higher flow rates allow for higher cooling power by advection of reactant towards (and Joule heating away from) the cooling electrode but simultaneously allow better heat removal from the cooling electrode. Therefore, electrolyte flow does not appreciably change the transient \u0394T.",
+                        "Comparison of the estimated and theoretical cooling power with electrolyte flow illustrates a similar dynamic. As shown in FIG. 5, electrolyte flow allows for favorable partitioning of the temperature rise due to the cell's irreversibility; less than 50% of the total overpotential applied to the cell results in undesired temperature rise at the cooling electrode. For a typical Butler-Volmer transfer coefficient ab-v\u22480.5, the expectation in stagnant electrolyte is that approximately 50% of the applied activation overpotential will manifest as an undesirable temperature increase on the cooling electrode. The anticipated cooling in this case is described by the grey curve in FIG. 5. That the measured cooling power was higher than this power indicates the benefit of electrolyte flow in sweeping joule heated electrolyte away from the cooling junction. This effect diminished and the total kinetic losses regressed towards an equal partition at higher currents, as concentration polarization rather than ohmic losses in the electrolyte become dominant19. While the observed partitioning of overpotential losses onto the heating electrode could in theory be due to a kinetic asymmetry in the reaction, (i.e. a Butler-Volmer transfer coefficient ab-v\u22600.5), this asymmetry would not continue to scale with higher applied overpotentials, and is inconsistent with prior measurements of ab-v for Fe(CN)63\u2212/4\u2212 kinetics20.",
+                        "The inventors envision alternative embodiments that include several variations to achieve a greater cooling effect, which were not included in these experiments described above for simplicity and ease of visualizing results. These include tighter electrode spacing for lower total ohmic losses22, a supporting electrolyte for greater ionic conductivity19, flow-through rather than flow-past electrode configurations, high surface-area catalyst loading, and a co-solvent for the electrochemical refrigerant mixture. Species other than Fe(CN)63\u2212/4\u2212 might also be used as electrochemical refrigerants. These might include redox of species containing Fe, I, Br, Ce, Cr, H, or S in aqueous, non-aqueous, or mixed solvent systems. Additionally, pairs of redox refrigerants might be used. In a pair of cells connected by a membrane (such as in [11]), this configuration can allow two redox cooling processes to occur at one heat transfer location, and two redox heating processes to occur at another location. Additionally, the use of a pair of refrigerants allows for simultaneous refrigeration and energy storage. For example, in a connected cell of V4+/5+ and V2+/3+, both reactions can be driven in the positive entropy direction at a pair of cooling electrodes, storing energy. At a later time, the two processes can be run in the negative entropy direction, both releasing stored electrical energy and creating a redox heating effect.",
+                        "Alternative flow arrangements could also enable effective redox refrigeration from a single pair of electrodes. In the multi-stage refrigerator embodiment of FIG. 8, electrolyte flow is largely orthogonal to the inter-electrode direction, with only a component of the electrolyte flow aligned with the inter-electrode direction. Electrolyte flow completely transverse to the line connecting the heating and cooling electrodes would also result in effective refrigeration. In this case, electrolyte flow from the cooling electrode to a third point 3 would undergo temperature decrease, and could be run through a cold-side heat exchanger or directed to an additional electrochemical refrigeration cell. Electrolyte flow from the heating electrode to a fourth point 4 could be run through a hot-side heat exchanger, and optionally recirculated back to the cell's electrolyte inlet.",
+                        "In another useful embodiment of a redox refrigerator, the refrigerant species could be included directly in the electrolyte of a conventional battery system. For example, a redox refrigerant with \u03b1<0 and standard reduction potential slightly above the ordinary discharging potential of a battery's negative electrode could be included in the battery's electrolyte, to provide both an additional electron sink and a right-on-time cooling pulse when the battery's voltage dropped (and therefore its negative electrode transited the refrigerant's equilibrium potential) during maximum load conditions. This would result in a useful self-cooling effect for batteries, which are often limited by overheating when providing maximum power.",
+                        "In addition, the inventors envision embodiments that include flow-through rather than flow-past electrode configuration, a multi-stage design (one possible implementation of which is described below in relation to FIG. 8), and a much higher flow rate to eliminate concentration polarization on the cooling electrode. The relatively slow flow rates described in the examples above reflect the goal of elucidating the effect of flow for purposes of illustration here, rather than leading to the maximum possible cooling power. Thus, the inventors envision considerably higher flow rates in commercial implementations.",
+                        "The flow-past electrode configuration was similarly chosen to facilitate lower-noise IR thermography. Drawing on extensive work in the flow battery community the inventors envision that a flow-through configuration would in fact better reduce concentration polarization23. Additionally, while thermodynamic calculations indicate that cooling can be achieved up until a product/reactant concentration Coxidized/Creduced=e\u2212aF/R, the use of a reference electrode could aid in localizing overpotential and thus in formulating the ideal ratio of reduced and oxidize species in the refrigerant. The inventors thus envision embodiments that take advantage of such improvements.",
+                        "Materials design is an important aspect of optimizing electrochemical refrigeration systems such as this. While the Fe(CN)63\u2212/4\u2212 redox couple was chosen in the examples discussed above based on its track record of use in thermogalvanic systems, the inventors recognize that there is a wide parameter space open for electrochemical refrigerants with the right combination of high standard entropies of reduction \u0394S, low activation barrier Ea for reduction (if a>0) or oxidation (if a<0), low specific heat cp, and a high capacity of entropy carriers C (in mol/kg), which equates to high total solubility for aqueous species. These properties are the primary determinants of the achievable cooling effect \u0394Treal in a system in which heating due to concentration polarization and ohmic losses in the electrolyte are managed by forced convection.",
+                        "We define",
+                        "\\({\\Delta \ue89e\\; \ue89eT_{real}} = \\frac{\\left( {{\\Delta \ue89e\\; \ue89e{S\ue8a0\\left( \\frac{J}{{mol}\ue89e\\mspace{14mu} \ue89eK} \\right)}\ue89e\\mspace{14mu} \ue89e{T\ue8a0(K)}} - {E_{a}\ue8a0\\left( \\frac{J}{mol} \\right)}} \\right) \\times {C\ue8a0\\left( \\frac{mol}{kg} \\right)}}{c_{p}\ue8a0\\left( \\frac{J}{{kg}\ue89e\\mspace{14mu} \ue89eK} \\right)}\\)",
+                        "Based on a Buckingham Pi analysis, we propose the following dimensionless figures of merit for electrochemical refrigerants:",
+                        "\\(Y = \\frac{\\Delta \ue89e\\; \ue89e{S\ue8a0\\left( \\frac{J}{{mol}\ue89e\\mspace{14mu} \ue89eK} \\right)}\ue89e\\mspace{14mu} \ue89e{C\ue8a0\\left( \\frac{mol}{kg} \\right)}}{c_{p}\ue8a0\\left( \\frac{J}{{kg}\ue89e\\mspace{14mu} \ue89eK} \\right)}\\)\n\\(and\\)\n\\(Q_{g\ue89e\\text{/}\ue89eb} = \\frac{\\Delta \ue89e\\; \ue89e{S\ue8a0\\left( \\frac{J}{{mol}\ue89e\\mspace{14mu} \ue89eK} \\right)}\ue89e\\mspace{14mu} \ue89e{T\ue8a0(K)}}{E_{a}\ue8a0\\left( \\frac{J}{mol} \\right)}\\)",
+                        "where Y gives the ratio of redox cooling potential to sensible heat energy stored in the refrigerant, and is also described in the literature on electrochemical energy harvesting10. Y expresses the thermodynamic reality; YT=\u0394Tmax the maximum cooling that could be achieved adiabatically by this refrigerant given totally reversible operation and a very long residence time near the electrode surface (or in a staged design). By contrast, Qg/b expresses the kinetic reality as the ratio between the \u201cgood\u201d and \u201cbad\u201d thermal signatures per carrier; only refrigerants with Qg/b>1 can demonstrate a cooling effect in practice.",
+                        "Redox reaction entropy is generally attributed to rearrangements of molecular structure and solvation24. Marcus theory, however, correctly predicts that large molecular and solvation rearrangements disfavor electron transfer19. As a result, one might expect a fundamental tradeoff between reversibility and reaction entropy that limits Q. Due to solvent effects in particular, larger dissolved molecules should demonstrate generally lower Ea and \u0394S, whereas smaller molecules should demonstrate higher \u0394S and Ea. In this respect, a \u201chappy medium\u201d for Qg/b might be hard to find. Fortunately, despite these countervailing factors a number of aqueous dissolved species can be identified with Qg/b>1. Table 1 provides several examples of such species.",
+                        "Table 1 illustrates a different tradeoff. Pure substances such as water require no solvent by definition, and so have high Y ratios and correspondingly high \u0394Tmax relative the species' thermopower. However, redox of these small molecules requires inner-sphere electron transfer, which tends to proceed slowly19, leading to a poor ratio Q. By contrast, many coordinated metal species are only moderately soluble, and the c, contribution of the excess solvent is reflected in low \u0394Tmax However, these species undergo comparatively fast single-electron transfer and frequently have high \u0394S leading to high Qg/b. An important step in the future will be to identify the trick that allows an electrochemical refrigerant to circumvent this apparent tradeoff.",
+                        "Many promising potential electrochemical refrigerants have already been studied by the redox flow battery community, which has spent decades screening electroactive species for solubility, stability and reversibility23. Further inspiration can be found in the strikingly similar set of compounds found in biological vascular systems. Hemovanadin (vanadium), hemoerythrin, chlorocruorin and hemoglobin (iron) and hemocyanins (copper) all point to the enormously tunable redox properties of an appropriately coordinated metal center25. Laboratory results suggest that the standard entropy of reduction is perhaps as tunable as the redox potential24. The inexhaustive list of Table 1 contains only a few potential liquid-phase refrigerants and completely omits other electrochemical transformations (solid dissolution, hydriding, intercalation, redox of slurries, in non-aqueous media etc.) that may be of great interest in future work.",
+                        "Calculating Qg/b and \u0394Tmax for a Variety of Redox Couples",
+                        "The specific heat cp and density \u03c1 of the V2+/3+ and Fe(CN)63\u2212/4\u2212 solutions and the thermopower a of the V2+/2+, V4+/5+, Fe(CN)63\u2212/4\u2212, Fe2+/3+ and Br2/Br\u2212 redox couples were measured as described in [Poletayev, et al. Continuous electrochemical heat engines. Energy Environ. Sci. 11, 2964-2971 (2018)]. For dissolved redox couples other than V2+/3+ and Fe(CN)63\u2212/4\u2212, cp and \u03c1 were used for NaCl solutions of the same total ionic strength. For redox couples other than V2+/3+, V4+/5+, Fe(CN)63\u2212/4\u2212, Fe2+/3+ and Br2/Br\u2212, a was taken from calculations based on formation values [Bratsch, S. G. Standard Electrode Potentials and Temperature Coefficients in Water at 298.15K. J. Phys. Chem. Ref. Data 18, 1-21 (1989)].",
+                        "The activation loss Ea was estimated based on literature sources for rotating disc electrode measurements of exchange current density io or reaction velocity ko. Since io and ko were generally not available at multiple temperatures as is required to establish a traditional activation energy, Ea was instead approximated via the Butler-Volmer relation as the overpotential applied to pass 1 mA/cm2 for the reduction (if a>0) or oxidation process (if a<0). Since a variety of io values have been reported for each redux system common middle-of-the-road values were chosen. Higher values can be found for each couple, generally on noble metal catalysts. Significantly lower values can also be found reported as reaction velocities on Hg and Au, generally from older studies [Weber, A. Z. et al. Redox flow batteries: A review. J. Appl. Electrochem. 41, 1137-1164 (2011)]. Notably, reaction velocities reported at low reactant concentrations were often inconsistent with exchange current densities established at higher concentrations. Where such discrepancies existed, the more frequently reported value was used.",
+                        "FIG. 6A is a photograph of a flow cell geometry of a redox refrigeration device with a built-in serpentine pre-heating channel 600. The device is otherwise similar to the device shown in FIG. 2A. A schematic comparison of flow-through (bottom) and flow-past (top) electrode configurations is shown in FIG. 6B. In the flow-past configuration, the refrigerant 602 flows across the surface of the cooling and heating electrodes 604 and 606, respectively, while in the flow-through configuration, the refrigerant 608 flows across the surface of the cooling and heating electrodes 610 and 612, respectively.",
+                        "FIG. 8 illustrates a multi-stage embodiment of a redox refrigerator with three tapered flow-through electrodes 800, 802, 804 for large \u0394T, high cooling power density. Flow pushes joule-heated electrolyte away from cooling junctions 806, 808, 810. Cold plate 812 receives cold flow from electrode 810 and the flow then recirculates to electrode 800. Hot plate 814 receives warm flow from electrode 804 and the cooled flow then enters cooling stages at electrode 806. This embodiment illustrates decoupling of thermal and ionic transport lengths. The cooling electrodes 806, 808, 810 are separated by the heating electrodes 800, 802, 804 by a porous divider 816. This embodiment depicts one of many configurations in which multiple electrode pairs are combined to create a larger temperature difference than was realized experimentally with the single pair of electrode embodiments described earlier.",
+                        "FIG. 9 shows SEM images of the porous cooling electrodes as prepared. They are composed of platinum catalyst bound to carbon paper using a sulfonated fluoropolymer binder.",
+                        "In conclusion, an electrochemical refrigerator based on a redox couple (e.g., the Fe(CN)63\u2212/4\u2212 redox couple) is described and implemented. While refrigeration systems have been demonstrated previously that leverage electrochemical driving forces to drive other phase transitions13, to our knowledge this is the first practical realization of a refrigeration cycle based on the entropy changes inherent in electrochemical redox reactions. The examples described herein focus on electrode configurations with and without electrolyte flow. Although the high entropy change of Fe(CN)63\u2212/4\u2212 redox and the ability to flow the joule-heated electrolyte away from the cooling junction enabled high power densities when normalized to the tiny volume of the cooling electrodes, these high power densities did not translate to either large temperature differences or efficient refrigeration. We found that, at least for this redox couple in this configuration, the benefit of electrolyte flow cannot compensate for the high reaction activation energy and low electrolyte conductivity relative to solid-state thermoelectric devices.",
+                        "A key advantage of the electrochemical approach over other alternative approaches to refrigeration is that it offers the unique opportunity to leverage the vast knowledge and progress in the area of electrochemical storage (e.g., batteries) and to use it in a novel way for the purpose of cooling. Using the teachings of the present invention, electrochemical refrigeration may prove to have great benefits for 21st-century climate control and other applications."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce redox refrigerator concept",
+                        "describe idealized Peltier cooler and redox refrigerator temperature-entropy diagrams",
+                        "illustrate redox refrigerator device with electrodes and electrolyte flow channel",
+                        "describe electrochemical reactions at anode and cathode",
+                        "explain entropy change per charge and theoretical maximum cooling power density",
+                        "discuss three time scales governing dynamics of Fe(CN)63\u2212/4\u2212 electrochemical refrigerator",
+                        "describe infrared microscope setup for visualizing thermal effects",
+                        "detail electrode preparation and electrolyte flow control",
+                        "discuss initial testing in stagnant electrolyte",
+                        "show thermal response of both electrodes to applied voltage",
+                        "explain concentration polarization and thermal equilibration",
+                        "describe effect of increasing overpotential on cooling and heating effects",
+                        "discuss electrolyte flow and its impact on thermal response",
+                        "show temperature response with and without electrolyte flow",
+                        "compare estimated and theoretical cooling power with electrolyte flow",
+                        "explain partitioning of overpotential losses onto heating electrode",
+                        "discuss alternative embodiments for achieving greater cooling effect",
+                        "propose tighter electrode spacing for lower ohmic losses",
+                        "suggest using supporting electrolyte for greater ionic conductivity",
+                        "describe flow-through rather than flow-past electrode configurations",
+                        "discuss high surface-area catalyst loading and co-solvent for electrochemical refrigerant mixture",
+                        "propose using species other than Fe(CN)63\u2212/4\u2212 as electrochemical refrigerants",
+                        "describe pairs of redox refrigerants for simultaneous refrigeration and energy storage",
+                        "illustrate multi-stage refrigerator embodiment with electrolyte flow",
+                        "describe alternative flow arrangements for effective redox refrigeration",
+                        "propose including redox refrigerant species in electrolyte of conventional battery system",
+                        "envision embodiments with flow-through rather than flow-past electrode configuration",
+                        "discuss multi-stage design and higher flow rate to eliminate concentration polarization",
+                        "define realizable cooling effect \u0394Treal",
+                        "propose dimensionless figures of merit for electrochemical refrigerants Y and Qg/b",
+                        "explain thermodynamic and kinetic realities of electrochemical refrigeration",
+                        "discuss tradeoff between reversibility and reaction entropy",
+                        "provide examples of electrochemical refrigerants with Qg/b>1",
+                        "illustrate different tradeoff between Y and Qg/b",
+                        "discuss inspiration from biological vascular systems",
+                        "calculate Qg/b and \u0394Tmax for various redox couples",
+                        "describe measurement of specific heat and density of V2+/3+ and Fe(CN)63\u2212/4\u2212 solutions",
+                        "discuss estimation of activation loss Ea",
+                        "illustrate flow cell geometry with built-in serpentine pre-heating channel",
+                        "compare flow-through and flow-past electrode configurations",
+                        "illustrate multi-stage embodiment with tapered flow-through electrodes",
+                        "describe decoupling of thermal and ionic transport lengths",
+                        "show SEM images of porous cooling electrodes",
+                        "discuss implementation of electrochemical refrigerator",
+                        "compare electrochemical refrigerator with other refrigeration systems",
+                        "discuss limitations of current implementation",
+                        "highlight key advantage of electrochemical approach over other alternative approaches",
+                        "conclude with potential benefits of electrochemical refrigeration for climate control and other applications"
+                    ],
+                    "num_characters": 24299,
+                    "outline_medium": [
+                        "introduce redox refrigerator concept",
+                        "describe idealized Peltier cooler vs. redox refrigerator",
+                        "illustrate redox refrigerator device with electrodes and electrolyte flow channel",
+                        "explain electrochemical redox of Fe(CN)63\u2212/4\u2212",
+                        "describe thermal response of electrodes to applied voltage",
+                        "discuss effect of electrolyte convection on temperature depression",
+                        "define characteristic timescales for heat conduction, advection, and electrochemical response",
+                        "describe infrared microscope setup for visualizing thermal effects",
+                        "discuss initial testing in stagnant electrolyte",
+                        "show thermal response of electrodes to applied voltage in stagnant electrolyte",
+                        "describe effect of electrolyte flow on thermal response",
+                        "compare estimated and theoretical cooling power with electrolyte flow",
+                        "discuss alternative embodiments for achieving greater cooling effect",
+                        "propose flow-through electrode configuration",
+                        "describe multi-stage design for larger temperature differences",
+                        "discuss materials design for optimizing electrochemical refrigeration systems",
+                        "define dimensionless figures of merit for electrochemical refrigerants",
+                        "discuss tradeoffs between reaction entropy and activation energy",
+                        "provide examples of electrochemical refrigerants with Qg/b>1",
+                        "discuss calculation of Qg/b and \u0394Tmax for various redox couples",
+                        "illustrate flow cell geometry with built-in serpentine pre-heating channel",
+                        "compare flow-through and flow-past electrode configurations",
+                        "describe multi-stage embodiment with tapered flow-through electrodes",
+                        "conclude with advantages of electrochemical approach to refrigeration"
+                    ],
+                    "outline_short": [
+                        "introduce redox refrigerator concept",
+                        "describe idealized Peltier cooler vs. redox refrigerator",
+                        "illustrate redox refrigerator device with electrodes and electrolyte flow channel",
+                        "explain electrochemical redox of Fe(CN)63\u2212/4\u2212",
+                        "discuss three time scales governing dynamics of Fe(CN)63\u2212/4\u2212 electrochemical refrigerator",
+                        "describe experimental setup and methods",
+                        "present results of stagnant electrolyte tests",
+                        "present results of flowing electrolyte tests",
+                        "discuss benefits of electrolyte flow and limitations of stagnant electrolyte",
+                        "envision alternative embodiments and variations",
+                        "define figures of merit for electrochemical refrigerants",
+                        "discuss potential electrochemical refrigerants and future work"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of electrochemical redox refrigeration comprising:\ninducing a flow of an electrochemical refrigerant that is in contact with a first electrode to a second electrode;\napplying an electrical potential difference between the first electrode and the second electrode, wherein the electrochemical refrigerant is oxidized at one of the first electrode and second electrode and reduced at another of the first electrode and second electrode;\nwherein the first electrode is at least partially thermally isolated from Joule heating in the electrochemical refrigerant and from activation losses in the second electrode by an action of the flow of the electrochemical refrigerant.",
+        "2. The method of claim 1 wherein the first electrode is a cooling electrode and the second electrode is a heating electrode.",
+        "3. The method of claim 1 wherein the electrochemical refrigerant flows from the first electrode toward the second electrode.",
+        "4. The method of claim 1 wherein the electrochemical refrigerant flows in a transverse direction between the first electrode and the second electrode.",
+        "5. The method of claim 1 wherein the electrochemical refrigerant is reduced at the first electrode to Fe(CN)64\u2212 and is oxidized at the second electrode to Fe(CN)63\u2212.",
+        "6. The method of claim 1 wherein inducing the flow of the electrochemical refrigerant comprises inducing a continuous flow.",
+        "7. The method of claim 1 wherein the electrochemical refrigerant has a figure of merit\n\n\\(Q_{g\ue89e\\text{/}\ue89eb} = \\frac{\\Delta \ue89e\\; \ue89e{S\ue8a0\\left( \\frac{J}{{mol}\ue89e\\mspace{14mu} \ue89eK} \\right)}\ue89e\\mspace{14mu} \ue89e{T\ue8a0(K)}}{E_{a}\ue8a0\\left( \\frac{J}{mol} \\right)}\\)\n\nwhose value is greater than 1, where T represents temperature, \u0394S represents the absolute value of the standard entropy of reduction of the refrigerant, and Ea represents activation barrier for oxidation or reduction of the refrigerant.",
+        "8. The method of claim 1 wherein the electrochemical refrigerant is directed through multiple successive electrochemical refrigeration cells to produce a larger net temperature depression than in a single cell.",
+        "9. The method of claim 1 wherein the electrochemical refrigerant is used for electrical energy storage and electrochemical refrigeration.",
+        "10. The method of claim 9 further comprising inducing the flow of two electrochemical refrigerants, driving two redox reactions in a negative entropy direction at a pair of cooling electrodes to either store or release stored energy and produce a redox cooling effect, and driving the two redox reactions in a positive entropy direction to either store or release stored energy and produce a redox heating effect."
+    ]
+}

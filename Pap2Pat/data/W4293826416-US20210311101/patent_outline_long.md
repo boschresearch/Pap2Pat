@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## STATEMENT AS TO RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH AND DEVELOPMENT
+
+- acknowledge government support
+
+## BACKGROUND OF THE INVENTION
+
+- introduce photon detectors
+
+## SUMMARY OF THE INVENTION
+
+- motivate graphene for bolometry
+- describe thermal response of graphene
+- introduce multi-terminal superconducting device
+- describe thermalization pathways
+- present device architecture for graphene photodetectors
+- describe benefits of device architecture
+- introduce example 1: radiation sensor
+- describe electrical signal path
+- describe resonance structure
+- introduce example 2: radiation sensor with electrical measurements
+- describe S-parameter measurements
+- introduce example 3: radiation sensor with heater line
+- introduce example 4: radiation sensor with back gate voltage
+- introduce example 5: radiation sensor with S-G-S junction
+- introduce example 6: radiation sensor with NbTiN resonator
+- introduce example 7: method of operating radiation sensor
+- describe method of making electrical measurements
+- conclude summary of invention
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce graphene photodetectors
+- describe graphene Josephson junctions (gJJs)
+- explain thermalization of electrons and holes in gJJs
+- discuss limitations of conventional readout methods
+- motivate need for simultaneous, fast, and continuous readout
+- describe thermalization in gJJs with hexagonal boron nitride (hBN)
+- discuss discrepancies between experimental and theoretical thermalization rates
+- introduce broadband radiation sensor with resonantly-coupled graphene SNS junction
+- describe thermal measurements on a high-quality graphene sample
+- demonstrate functionality of broadband radiation sensor
+- describe microwave signal transmission and amplification
+- explain resonance feature as a function of microwave signal frequency
+- introduce SNS-type Josephson Junction integrated into a graphene flake
+- describe electrical impedance of SNS junction
+- explain dependence of electrical impedance on temperature and carrier density
+- describe changes in resonant frequency due to changes in electrical impedance
+- demonstrate continuous and sensitive monitoring of resonant frequency
+- motivate graphene-based detector-array technology
+- describe optimization of responsivity, thermal isolation, and multiplexing
+- introduce hBN-encapsulated graphene device
+- describe superconducting resonator for frequency multiplexing
+- compare junction switching detectors with resonantly-coupled graphene detectors
+- discuss limitations of threshold detectors
+- introduce graphene-insulator-superconductor (G-I-S) junctions
+- describe physical principles of G-I-S junctions
+- compare G-I-S junctions with superconductor-graphene-superconductor (S-G-S) junctions
+- describe fabrication processes for G-I-S and S-G-S junctions
+- introduce radiation sensing system with computing system and radiation sensor
+- describe input and output signals for radiation sensing system
+- illustrate example of radiation sensor with resonance structures
+- describe resonator structure
+- motivate temperature dependence of resonant frequency
+- explain impedance of graphene junction
+- describe heating element and its operation
+- explain fine-tuning of resonant frequency by back gate voltage
+- describe design of resonator for low characteristic impedance
+- explain characterization and operation of device
+- describe alternative resonator designs
+- illustrate graphene junction structure
+- describe operation of graphene junction
+- explain dependence of resonant frequency on back gate voltage
+- describe temperature dependence of resonance
+- illustrate thermal coupling between heating element and graphene junction
+- describe photon detector functionality
+- illustrate plot of measured S21 parameter
+- explain dependence of resonant frequency on back gate voltage
+- describe calculation of maximum sensitivity of device as electrometer
+- illustrate plots of S21 parameter for gJJ device
+- describe electron-side S21 parameter values and resonant frequencies
+- describe hole-side S21 parameter values and resonant frequencies
+- explain effect of heater current on resonant frequency
+- describe one-to-one correspondence between Ic and Tmxc
+- explain measurement configuration for obtaining experimental data
+- describe thermal conductivity measurement
+- illustrate frequency multiplexed readout
+- explain resonant frequency tuning
+- describe radiation detection operation
+- illustrate radiation sensing system
+- describe electrical measurement setup
+- explain impedance measurement
+- describe heater measurement setup
+- explain fitting function for S21 transmission data
+- extract fit parameters
+- define total quality factor
+- illustrate method of operating radiation sensor
+- receive incident photon
+- heat graphene layer
+- change impedance of graphene junction
+- shift resonant frequency
+- receive electrical signals
+- produce output signal
+- illustrate method of making electrical measurements
+- provide input signal
+- receive output signal
+- compare output signal to input signal
+- describe radiation sensor method
+- illustrate steps of radiation sensor method
+- discuss variations of radiation sensor method
+- introduce computer system embodiment
+- describe hardware elements of computer system
+- detail communication medium of computer system
+- describe processor elements of computer system
+- discuss input device elements of computer system
+- describe output device elements of computer system
+- detail communication subsystem of computer system
+- describe memory device elements of computer system
+- discuss main memory of computer system
+- describe software elements of computer system
+- discuss instructions executable by computer system
+- describe computer-readable storage medium
+- discuss non-transitory computer-readable medium
+- describe system for performing methods
+- introduce computer-program product
+- describe non-transitory computer-readable medium
+- discuss various configurations of methods and systems
+- omit or substitute procedures or components
+- add various stages to methods
+- combine features of different configurations
+- provide thorough understanding of exemplary configurations
+- practice configurations without specific details
+- show well-known circuits, processes, algorithms, structures, and techniques
+- avoid obscuring configurations
+- provide enabling description for implementing techniques
+- make various changes in function and arrangement of elements
+- use equivalents without departing from spirit or scope
+- undertake steps before, during, or after described elements
+- bind scope of claims
+- use singular forms to include plural references
+- specify presence of stated features, integers, components, or steps
+

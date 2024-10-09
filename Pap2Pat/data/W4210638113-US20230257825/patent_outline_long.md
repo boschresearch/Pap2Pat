@@ -1,0 +1,476 @@
+# DESCRIPTION
+
+## STATEMENT AS TO RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH AND DEVELOPMENT
+
+- acknowledge government support
+
+## BACKGROUND
+
+- introduce tumor infiltrating lymphocytes
+- discuss CD8+ TILs in breast cancer
+- highlight need for better understanding
+
+## SUMMARY
+
+- introduce method for identifying breast cancer patients
+- detect elevated exhausted CD8+ T cells
+- detect elevated exhausted CD8+ T cells in embodiments
+- introduce method for treating breast cancer
+- detect elevated exhausted CD8+ T cells for treatment
+- introduce method for identifying breast cancer patients
+- detect decreased CD26+CD4+ T cells
+- detect decreased CD26+CD4+ T cells in embodiments
+- introduce method for identifying breast cancer patients
+- detect increased CD26+CD4+ T cells
+
+## DETAILED DESCRIPTION
+
+### Definitions
+
+- define technical terms
+- provide dictionary references
+- introduce T cells
+- define CD4+ T cells
+- describe CD4 T cell subtypes
+- define CD8+ T cells
+- describe CD8 T cell subtypes
+- define exhausted CD8+ T cells
+- define CD26
+- define CD26+CD8+ T cells
+- define PD-1+
+- define remission
+- define relapse
+- define relapse-free survival
+- define good prognosis
+- provide examples of good prognosis
+- define biological sample
+- provide examples of biological samples
+- define peripheral blood
+- define peripheral blood mononuclear cells
+- define gene expression
+- define elevated gene expression
+- define reduced gene expression
+- define pathway
+- define control
+- provide examples of controls
+- define treating
+- define treatment
+- define patient
+- provide examples of patients
+- define breast cancer patient
+- define breast cancer
+- provide examples of breast cancer types
+- define molecular sub-types
+- define breast cancer stages
+- provide examples of breast cancer stages
+- define primary breast cancer
+- define metastatic breast cancer
+- conclude definitions
+- define breast cancer diagnosis method
+- identify exhausted CD8+ T cells
+- detect CD8+ T cell expression levels
+- administer non-chemotherapeutic therapy
+- select patient for treatment
+- identify breast cancer patient
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer non-chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer non-chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer non-chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer non-chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer non-chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- detect gene expression levels
+- predict breast cancer prognosis
+- administer chemotherapeutic therapy
+- identify breast cancer patient for treatment
+- define breast cancer risk scores
+- identify intermediate breast cancer risk score
+- identify intermediate breast cancer risk score based on Oncotype Dx test
+- identify intermediate breast cancer risk score based on gene expression levels
+- identify intermediate breast cancer risk score based on equally weighted average
+- identify low breast cancer risk score
+- identify low breast cancer risk score based on Oncotype Dx test
+- identify low breast cancer risk score based on gene expression levels
+- identify low breast cancer risk score based on equally weighted average
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- provide methods of identifying breast cancer patients at increased risk
+- detect CD26+CD4+ T cells in biological sample
+- identify level of CD26+CD4+ T cells as higher or lower than standard control
+- identify patient as having good prognosis or increased risk
+- administer non-chemotherapeutic or chemotherapeutic therapy
+- specify breast cancer types for treatment
+- specify patient types for treatment
+- specify biological sample types for treatment
+- provide methods of detecting increased level of CD26+CD4+ T cells
+- specify breast cancer types for detection
+- specify patient types for detection
+- specify biological sample types for detection
+- provide methods of treating breast cancer with chemotherapeutic therapy
+- detect decreased expression level of CD26+CD4+ T cells
+- administer chemotherapeutic therapy
+- identify patient as having increased risk of relapse or reduced survival
+- select patient for treatment with chemotherapeutic therapy
+- specify breast cancer types for selection
+- specify patient types for selection
+- specify biological sample types for selection
+- provide methods of identifying breast cancer patients having increased risk
+- provide methods of selecting patients for treatment with chemotherapeutic therapy
+- provide methods of treating breast cancer with chemotherapeutic therapy
+- define breast cancer patient identification methods
+- identify good prognosis patients
+- administer non-chemotherapeutic therapy
+- identify patients for chemotherapeutic therapy
+- define breast cancer treatment methods
+- detect CD26+CD4+ T cells
+- determine increased level of CD26+CD4+ T cells
+- administer non-chemotherapeutic therapy
+- define breast cancer monitoring methods
+- detect gene expression levels
+- identify breast cancer patients
+- administer chemotherapeutic therapy
+- define ER+ breast cancer
+- define PR+ breast cancer
+- define ER+PR+ breast cancer
+- define triple negative breast cancer
+- define premenopausal woman
+- define postmenopausal woman
+- define tumor biological sample
+- define tumor tissue biological sample
+- define tumor cells biological sample
+- define primary tumor
+- describe gene expression levels
+- describe CD26+CD4+ T cells
+- describe non-chemotherapeutic therapy
+- describe chemotherapeutic therapy
+- describe breast cancer treatment
+- describe breast cancer monitoring
+- describe breast cancer patient identification
+- describe gene expression levels in Table 2
+- describe increased expression level of genes
+- describe decreased expression level of genes
+- describe unequally weighted average of gene expression levels
+- describe breast cancer patient prognosis
+- describe breast cancer patient survival
+- describe breast cancer relapse
+- describe breast cancer treatment efficacy
+- describe breast cancer patient response
+- describe breast cancer patient outcome
+- describe breast cancer patient monitoring
+- describe breast cancer patient follow-up
+- describe breast cancer patient care
+- describe breast cancer patient management
+- describe breast cancer patient treatment strategy
+- define breast cancer patient identification method
+- identify patient with decreased gene expression
+- administer chemotherapeutic therapy
+- select patient for chemotherapeutic therapy
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- identify patient with decreased expression of multiple genes
+- define treatment method
+- identify patient with good prognosis
+- select patient for non-chemotherapeutic therapy
+- administer non-chemotherapeutic therapy
+- specify non-chemotherapeutic therapy types
+- identify patient with increased gene expression
+- treat breast cancer with non-chemotherapeutic therapy
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- identify patient with increased expression of multiple genes
+- define treatment method
+- identify patient with increased risk of relapse
+- select patient for chemotherapeutic therapy
+- administer chemotherapeutic therapy
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- identify patient with elevated exhausted CD8+ T cells
+- identify patient with decreased CD26+CD4+ T cells
+- identify patient with increased risk of relapse
+- select patient for chemotherapeutic therapy
+- administer chemotherapeutic therapy
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- identify patient with elevated exhausted CD8+ T cells
+- identify patient with decreased CD26+CD4+ T cells
+- identify patient with increased risk of relapse
+- select patient for chemotherapeutic therapy
+- administer chemotherapeutic therapy
+- specify breast cancer types
+- specify patient types
+- specify biological sample types
+- define methods of treating breast cancer
+- specify patient and breast cancer types
+- detect exhausted CD8+ T cells and CD26+CD4+ T cells
+- administer chemotherapeutic therapy
+- specify biological sample types
+- detect gene expression levels from Table 1 and Table 2
+- identify gene expression levels relative to standard control
+- administer non-chemotherapeutic or chemotherapeutic therapy
+- specify patient and breast cancer types
+- detect gene expression levels from Table 1 and Table 2
+- identify gene expression levels relative to standard control
+- administer chemotherapeutic therapy
+- specify patient and breast cancer types
+- detect gene expression levels from Table 1 and Table 2
+- identify gene expression levels relative to standard control
+- administer non-chemotherapeutic therapy
+- specify patient and breast cancer types
+- predict risk of relapse or reduced survival
+- detect gene expression levels from Table 1 and Table 2
+- identify gene expression levels relative to standard control
+- predict increased risk of relapse or good prognosis
+- specify number of genes from Table 1 and Table 2
+- describe detection methods
+- define RNA detection methodologies
+- define protein detection methodologies
+- calculate gene expression levels
+- calculate protein expression levels
+- determine weighted average of gene expression levels
+- introduce chemotherapeutic therapy
+- define chemotherapeutic therapy
+- define chemotherapeutic agent
+- list examples of chemotherapeutic agents
+- introduce non-chemotherapeutic therapy
+- define non-chemotherapeutic therapy
+- introduce hormone therapy
+- define hormone therapy
+- list examples of hormone therapy
+- introduce immunotherapy
+- define immunotherapy
+- list examples of immunotherapy
+- introduce targeted therapy
+- define targeted therapy
+- list examples of targeted therapy
+- introduce radiation therapy
+- define effective amount
+- define reduction
+- describe therapeutically effective amount
+- describe target concentrations
+- describe dosage in humans
+- describe adjusting dosage
+- describe therapeutically effective amount
+- describe dosages
+- describe administering
+- introduce kits
+- describe kit components
+- describe assay system
+- describe RNA or protein microarrays
+- describe assay systems
+- describe controls
+- describe means for detecting
+- describe conjugated tags
+- describe immobilized substrates
+- describe kit components
+- describe written instructions
+- describe means for detecting control marker
+- describe probes
+- describe PCR primers
+- describe aptamers
+- describe antibodies
+- describe kit components
+- define detection agent
+- define indirect detection agent
+- define direct detection agent
+- exemplify detection agents
+- define detectable label
+- define indirect label
+- define direct label
+- exemplify detectable labels
+- define detectable complex
+- define probe
+- define hybridization complex
+- define target nucleic acid
+- define complementary
+- define substantially complementary
+- describe hybridization assays
+- describe nucleic acid hybridization
+- define nucleic acid
+- describe nucleic acid modifications
+- define DNA and RNA
+- define amplifying
+- define primer
+- define identical or percent identity
+- describe methods of specific DNA and RNA measurements
+- describe nucleic acid amplification systems
+- define solid support
+- describe characteristics of solid supports
+- exemplify solid supports
+- describe immobilization of antibodies on solid supports
+- describe binding of analyte to nucleic acid reagent on solid support
+- describe protein binding surfaces
+- describe solid phases for immobilizing specific binding members
+
+### EXAMPLES
+
+- introduce CD8+ tumor infiltrating lymphocytes (TTLs)
+- associate TTLs with improved survival in triple negative breast cancer (TNBC)
+- contrast TTLs with estrogen receptor-positive (ER+) breast cancer (BC)
+- identify subsets of BC tumors infiltrated by CD8+ T cells with characteristic features of exhausted T cells (TEX)
+- describe tumor microenvironment marked by amplified interferon-γ signaling related pathways and higher PD-L1 expression
+- associate higher levels of CD8+ TEX TILs with decreased overall survival in ER+BC patients
+- identify high tumor expression of a CD8+ TEX signature score in identifying high-risk premenopausal ER+BC patients
+- examine BC patient peripheral blood mononuclear cells (PBMCs) by flow cytometry
+- analyze tumor negative tumor draining lymph nodes (T− LNs) and tumor positive tumor draining lymph nodes (T+ LNs)
+- examine primary tumors and non-cancerous breast tissue (NCBT) by flow cytometry
+- identify PD-1+ CD39+ CD8+ T cells in primary tumors and T+ LNs
+- observe high variability in the frequency of PD-1+ CD39+ within CD8+ TTLs
+- correlate frequency of PD-1+ CD39+ CD8+ TTLs with Ki-67 status, tumor size, and patient stage
+- associate higher grade ER+ tumors with increased frequencies of PD-1+ CD39+ CD8+ TILs
+- elucidate relationship between PD-1+ CD39+ CD8+ TILs, TME features, and patient survival using a multi-omics
+- characterize BC patient PD-1+ CD39+ CD8+ TILs protein expression by flow cytometry
+- identify PD-1+ CD39+ CD8+ TILs as highly activated cells with both exhausted and tissue residency characteristics
+- employ single cell RNA sequencing of patient CD8+ T cells from BC patients
+- identify four major clusters with discrete gene expression patterns
+- annotate CD8+ T cell clusters as exhausted T cells, resident effector memory T cells, effector memory T cells, and central memory T cells
+- analyze gene expression differences between clusters
+- identify central memory T cell cluster genes related to proliferation capacity and anti-apoptosis
+- identify activated effector memory T cell cluster genes linked to T cell activation and effector function
+- identify resident effector memory T cluster genes related to cell cycle regulation
+- identify exhausted T cell cluster genes associated with increased cytolytic activation and interferon response elements
+- generate a TEX gene signature composed of genes significantly elevated in TEX relative to other CD8+ T cell populations
+- compare TEX gene expression signature to TEX gene signatures produced by other groups
+- associate CD8+ TEX with IFNγ signature rich and immunologically distinct tumors
+- correlate CD8+ TEX with higher abundance of immune subsets including B cells, CD8+ T cells, and NK cells
+- associate CD8+ TEX with increased expression of IFNγ regulated genes
+- identify genes significantly upregulated in TEXhi tumors
+- identify genes significantly downregulated in TEXhi tumors
+- analyze differential gene expression in TEXhi and TEXlo ER+ tumors using the METABRIC dataset
+- identify TEXhi tumors as having an ‘inflamed tumor’ phenotype
+- associate TEXhi tumors with upregulation of IFNγ associated genes and anti-tumor immune subsets
+- investigate relationship between CD8+ TEX, BC tumor characteristics, and patient outcomes within the METABRIC dataset
+- find TEX signatures scores higher in TNBC tumors compared to ER+ tumors
+- find TEX signatures highest in basal tumors and slightly higher in luminal B tumors than luminal A tumors
+- investigate if increased tumor mutation burden coincides with increased TEX in BC patients
+- find no association between TEX infiltration and high tumor mutation burden
+- introduce TEXhi ER+ tumors
+- survival characteristics in premenopausal and postmenopausal ER+BC patients
+- limitations of current gene expression testing
+- hypothesize TEX signature for added prognostication
+- calculate BRS signature
+- associate TEX signature with BRS
+- define OncDXhi, OncDXint, and OncDXlo patients
+- analyze survival in postmenopausal OncDXint patients
+- analyze survival in premenopausal OncDXint patients
+- perform multivariate analysis
+- estimate hazard ratios for survival
+- examine patient survival characteristics in four subgroups
+- discuss CD8+ TEX in BC patients
+- discuss tumor immunogenicity
+- discuss IFNγ rich TME and reduced survival
+- discuss differences between ER+BC and TNBC patients
+- discuss potential pro-tumorigenic role of IFNγ signaling
+- discuss therapeutic strategy targeting interferon signaling
+- discuss standard of care for early-stage ER+BC patients
+- discuss use of TEX gene signature for high-risk patients
+- discuss methods for human samples
+- discuss sample processing
+- discuss flow cytometry
+- discuss T cell single cell sequencing and analysis
+- discuss tumor single cell sequencing and analysis
+- discuss filtering and normalization of single cell sequencing data
+- discuss dimensionality reduction and clustering analysis
+- discuss annotation of T cell clusters
+- discuss filtering of TEX signature
+- discuss deposition of single cell sequencing data
+- discuss integration of tumor samples
+- discuss principle component analysis
+- discuss clustering analysis
+- discuss annotation of tumor cell cluster
+- discuss stratification of tumor cells into TEXhi and TEXlo groups
+- discuss comparison of gene expression between TEXhi and TEXlo groups
+- introduce public genomic data analysis
+- download METABRIC dataset
+- organize patient data
+- calculate TEX signature scores
+- stratify ER+ and TNBC populations
+- implement survival comparison
+- generate Kaplan Meier curves
+- calculate hazard ratios
+- perform multivariate Cox regression analysis
+- investigate association between TEX signature scores and molecular features
+- calculate tumor proliferation score
+- download TCGA-BRCA dataset
+- calculate TEX signature scores for TCGA-BRCA ER+ primary tumors
+- stratify ER+ patients into TEXhi and TEXlo cohorts
+- implement differential expression analysis
+- perform gene set enrichment analysis
+- utilize CIBERSORTx to deconvolute METABRIC expression data
+- compare relative abundances of immune cell types
+- implement differential expression analysis between TEX high and TEX low cohorts
+- visualize results using EnhancedVolcano R package
+- implement Gene Set Enrichment Analysis using GSEA software
+- calculate in-house Oncotype Dx scores
+- correlate in-house and standard Oncotype Dx scores
+- stratify ER+ cohort based on TEX score and in-house Oncotype Dx scores
+- implement survival comparison and analysis
+- extract RNA from FFPE tissue using Nanostring PanCancer Immune Panel
+- perform tumor mutation load assessment
+- introduce examples
+- describe 25-gene signature of exhausted CD8+ T cells
+- demonstrate independence of TEX and CD26+CD4+ signatures
+- show added predictive accuracy by combining TEX and CD4+CD26+ signatures
+- describe methods for human samples
+- outline patient characteristics
+- describe classification of tumor samples
+- detail sample processing
+- describe flow cytometry
+- outline single cell sequencing and analysis
+- describe public genomic data analysis
+- detail multiplex immunofluorescence
+- outline additional statistics
+- describe study approval
+- detail data availability
+- provide references for example 1
+- introduce references
+- cite Fridman et al
+- cite Schnitt et al
+- cite Stanton et al
+- cite Krishnamurti et al
+- cite Miyoshi et al
+- cite Ali et al
+- cite Colleoni et al
+- cite Estrogen Receptor Status
+- cite Egelston et al
+- cite Savas et al
+- cite Gruosso et al
+- cite McLane et al
+

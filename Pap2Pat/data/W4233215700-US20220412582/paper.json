@@ -1,0 +1,106 @@
+{
+    "id": "https://semopenalex.org/work/W4233215700",
+    "authors": [
+        "Jing Xu",
+        "Aaswath Raman"
+    ],
+    "title": "Tuning radiative heat flows between interior surfaces and human occupants to improve heating and cooling efficiency",
+    "date": "2020-02-19",
+    "abstract": "Space heating and cooling in buildings account for nearly 20% of energy use globally. In most buildings this energy is used to maintain the thermal comfort of the building\u2019s human occupants by maintaining the interior air temperature at a particular set point. However, if one could maintain the human occupant\u2019s thermal comfort while decreasing the heating or increasing the cooling set point, dramatic energy savings are possible. Here, we propose and evaluate an untapped degree of freedom in improving building efficiency: dynamically tuning the thermal emissivity of interior building surfaces at long-wave infrared wavelengths to maintain thermal comfort. We show that in cold weather conditions tuning the emissivity of interior walls, floors and ceilings to a low value (0.1) can decrease the set point temperature as much as 7\u00b0C, corresponding to an energy saving of nearly 67.7% relative to high emissivity materials (0.9). Conversely, in warm weather, high emissivity interior surfaces result in a 38.5% energy savings relative to low emissivity surfaces, highlighting the need for tunability for maximal year-round efficiency. Our results reveal the remarkable energy savings potential possible by better controlling the ubiquitous flows of heat that surround us in the form of thermal radiation.",
+    "sections": [
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Low emissivity, high-reflectivity interior surfaces during cold-weather & low heat-load conditions",
+                    "paragraphs": [
+                        "High emissivity surfaces during warm-weather and high heat-load conditions potentially an effective way to keep occupants comfortable at lower air temperatures. Most building materials, such as typical paints, have high emissivity (and therefore absorptivity) in the long-wave infrared. Thus interior surfaces typically absorb the thermal radiation from the human occupant and emit back a smaller amount of thermal radiation corresponding to the lower temperature of the walls, ceilings and floors. Our goal for cold-weather conditions, schematically shown in Fig. 1, is thus to have low emissivity, high reflectivity, interior surfaces. By virtue of this property, the surfaces will send back a large fraction of the radiative heat lost by the human occupant back to them, allowing us to set the air temperature lower, thereby reducing the need for heating energy while maintaining the same level of thermal comfort (which in our study is assessed by the maintenance of constant skin temperature and fixed amount of body heat released by the human occupant).",
+                        "By contrast, in summer and warm-weather conditions more generally, it is desirable to maximize the net heat rejected by the human occupant to their environment (Fig. 1). Thus, high emissivity (high absorptivity) materials in the interior of the building should be used to absorb the heat radiated by the occupant. By doing so one can maintain the same level of thermal comfort while using less cooling energy than it would be needed if the walls were low emissivity or high reflectivity. This qualitative introduction to our concept highlights a key result of our analysis: the need for tunability in the emissivity of the surfaces surrounding the human occupant, depending on weather conditions and overall heat loads.",
+                        "To numerically analyze the impact of emissivity on the interior air temperature set point we developed a 3D computational model to simulate a standing person in a proto-typical conditioned space (Fig. 2)). The room, whose dimensions are 3 m x 3 m x 3 m, has an air inlet (shown in blue) where heating or cooling air is supplied, and multiple outlets (shown in red) to ensure adequate distribution and flow of air in the space. In winter, the heating air will come through the inlet, heat the room, and then come out the room through the outlets. In summer, the cooling air will come from the inlet, cool the room, and then exit through outlets. The human occupant is modeled as a volume heat source of 103 W 19 . The occupant is set to have 1.0 clo and 0.6 clo clothing insulation in the cold weather and warm weather case respectively 38,39 . The wall temperature is set as a constant value during the simulation to capture its large thermal mass and typical observed behavior in commercial buildings. To assess the change in set point temperature as a function of emissivity, we sought to adjust the air temperature to maintain a skin temperature of 33\u00b0C in response to the change in the emissivity of the interior surfaces. In doing so, we determine the change in air temperature set point possible while maintaining the human occupant's thermal comfort. For a closed system consisted of two gray and diffuse surfaces, the radiative heat flux of the two surfaces can be analytically described as 40 :",
+                        "In the above equations, \ud835\udc44 !,! is the heat flux, A 1 is the area of the hot surface and A 2 is the sum of the three cold surfaces area, E b1 and E b2 are the black body emission at the temperature of hot surface and cold surface respectively where E b1 = \u03c3T 1 4 , E b2 = \u03c3T 2 4 , \u03c3 is the Stephan-Boltzmann constant, T 1 is the hot surface temperature, T 2 is the cold surface temperature, \u03b5 1 and \u03b5 2 are the emissivity of the hot surface and the cold surface, X is the view factor.",
+                        "When surface 1 is a plane or convex Eq. ( 2) can be simplified as 40",
+                        "Eq. ( 2) can be used as a simplified way to calculate the radiative heat transfer between the occupant and their surroundings. From Eq. ( 2), we can further see when we decrease the emissivity of the cold surface the heat flux will be decreased as well."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cold Weather Conditions: Low Emissivity",
+                    "paragraphs": [
+                        "In the winter, or cold-weather conditions more generally, the temperature of the walls in the interior space is set to 13\u00b0C 41 . The heater is turned on and heating air is delivered through the inlet to the room. At the same time, the occupant inside is exchanging heat both through convection to the air and radiation to the surrounding interior surfaces. While the temperature of the occupant and the surrounding interior surfaces are difficult to change, the emissivity of the walls can be adjusted to reduce the radiative loss. Using our CFD model, we first determine the radiative and convective heat exchange between the occupant and the surrounding surfaces as a function of emissivity (Fig. 3 (a)). We can see the sum of radiative heat and convective heat equal to the constant of the total heat generated by the occupant. The radiative heat loss from the occupant is reduced from 99.1 W to 72. 3 W when the emissivity is decreased from 0.9 to 0.1 (Fig. 3(a)), which matches well with the analytical model of Eq. ( 2); when the interior surfaces have a lower \u03b5 2 , the radiative heat loss is decreased, which allows more heat loss from the non-radiative part given the total heat loss is constant. As a result, we can decrease the set-point of the room to save heating energy, as shown in Fig. 3(b). The set point temperature decreases a remarkable amount, from 25\u00b0C to 18\u00b0C, when the emissivity is tuned from 0.9 to 0.1 (Fig. 3(b)). A common trend in Fig. 3(a) and Fig. 3 b) is that the rate of change of both the radiative heat loss and set point temperature reduction is accelerated when the emissivity approaches 0. To understand why, we can look at the analytical form of Eq.( 2) which",
+                        "shows that as \u03b5 2 approaches zero the impact of the denominator increases sharply, agreeing with previous observations about the impact of emissivity 34 ."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Warm Weather Conditions: High Emissivity",
+                    "paragraphs": [
+                        "In warm weather conditions, the temperature of the walls is set to 20\u00b0C 42 , which is still lower than human skin temperature. The air conditioner is turned on and cooling air is delivered through inlet to the room. We show in Fig. 4(a) the radiative heat flux between the occupant and the surrounding walls as a function of emissivity.",
+                        "As expected, the heat released radiatively from the occupant increases significantly when the emissivity of the walls goes to near that of a blackbody (0.9). The radiative heat loss increases from 57.7 W for an emissivity of 0.1 to 77.2 W when the emissivity is 0.9, which corresponds well with Eq. ( 2). Since the occupant can release more heat through radiation with a higher interior surface emissivity, which requires less heat dissipation through the non-radiative part. As a result, the cooling temperature set point can thus be increased to save energy, as shown in Fig."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "4(b)",
+                            "paragraphs": [
+                                ". The set point temperature rises nearly 4\u00b0C, from 18\u00b0C to 22\u00b0C when the emissivity increases from 0.1 to 0.9. "
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Multiple Occupants",
+                    "paragraphs": [
+                        "Next, we investigated a common scenario in most buildings: the presence of more than one occupant in an interior space (Fig. 5(a)). We implement this scenario numerically in both cold weather and warm weather conditions. When there is more than one occupant in the same room, the heat source is effectively multiplied and there is not only heat transfer between occupant and surroundings, but also between occupants. In typical cases, such as a classroom or movie theater, the space between different occupants is quite narrow. If we treat the multiple occupants as one and larger heat source, the emissivity effect will be enhanced according to Eq. ( 2) because of the area of the hot object increases. Extending this analysis when multiple occupants are in a same room, the low emissivity walls will not only reflect their own heat back but also others' heat to them, which makes them feel warmer than single occupant case. On the other hand, in summer, if the walls reflect most of the radiative heat back, the multiple occupants will result in a significant cooling load for the air conditioner. However, if the walls can absorb most of the heat, the energy used in cooling will be substantially decreased. The radiative heat flux and set point change resulting from varying emissivity from 0.1 to 0.9 in both winter and summer are shown in Fig. 5. In the cold weather case, Fig. 5(b) shows the average radiative heat loss of each occupant decreases from 96.2W to 55.5W when the emissivity decreases from 0.9 to 0.1. There is also an acceleration of change after emissivity goes below than 0.3. This leads to a sharp set point temperature decrease of 10\u00b0C when the emissivity is 0.1 (shown in Fig. 5(c)). Similarly, in the warm weather case, the radiative heat loss of each occupant is increased from 39.9 W to 72.1 W when the emissivity increases from 0.1 to 0.9 (Fig."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "5(b))",
+                            "paragraphs": [
+                                ". There is also an acceleration in the heat transfer reduction as emissivity goes below than 0.3. This leads to a sharp set point temperature decrease of up to 3.8\u00b0C when the emissivity is 0.1 (Fig. 5(c)), necessitating substantially more cooling. These results highlight that in dense spaces like classrooms, theaters and indoor stadiums, a significant amount of energy can be saved by implementing a tunable emissivity surface on the walls, ceilings and floors."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Discussion",
+            "paragraphs": [
+                "To assess the building-level energy savings possible from our proposed approach, we use EnergyPlus, a widely-used building energy analysis tool 43 . We apply our CFD simulation results",
+                "to EnergyPlus and then estimate the energy savings in a hotel-type commercial building if it uses tunable emissivity interior surfaces. We choose a small hotel reference building 44 located in Ancona, Italy as our simulated environment. This hotel has a low window/ wall ratio (184.2 m 2 / 1,695 m 2 ) making it similar overall to the structure simulated in our CFD analysis 44 . Furthermore, Ancona has both a cold winter and a hot summer, allowing us to assess both heating and cooling energy savings. Our simulation period is a typical day in August for warm weather conditions, and December for cold weather conditions 44 . Fig. 6 shows the average air temperature in the August and December days modeled, corresponding to weather patterns common in a wide range of temperate climates throughout the world. We use the change in set point associated with a change in the interior surfaces' emissivity from 0.9 to 0.1 in winter, to model the change in heating energy use as a function of emissivity (Fig. 7). We find that the energy used for heating decreases dramatically from 910 kWh to 300 kWh, when the emissivity decreases from 0.9 to 0.1, corresponding to a 67.7% savings in heating energy. Conversely, during the summer day modeled, the cooling energy use in this hotel increases from 740 kWh to 1050 kWh when the emissivity changes from 0.9 to 0.1, which leads to a 38.5% energy penalty if the low emissivity interior surfaces are not tuned back to high emissivity ones. While we have analyzed tunability in the context of separate days, it should be noted that tunability may also be necessary within a single day depending on variable weather conditions between day and night, and variable occupancy and heat loads.",
+                "Our results indicate that tuning the emissivity of interior surfaces can yield remarkable energy savings, particularly for heating. In recent years, a range of materials have shown the ability to tune their thermal emissivity 29,30 .While these preliminary works indicate that tunable emissivity is in fact possible, our results highlight the need for further investigation of tunable emissivity materials that can meet the cost and performance targets suitable for large-area application in interior spaces. In the broader context of decarbonising our built environment, the approach proposed and evaluated here represents a new strategy that can complement a range of existing strategies, including radiant heating and cooling, electrochromic windows and building integrated photovoltaics. Intriguing opportunities exist to combine the capabilities highlighted here with advances in smart building systems to develop interior spaces that dynamically respond to changing heat loads and occupants, to maximize both comfort and efficiency. More broadly, our results highlight an untapped degree of freedom for energy efficiency that lies in controlling the ubiquitous flows of heat that surround us everyday."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Computational Fluid Dynamics (CFD) Modeling",
+                    "paragraphs": [
+                        "ANSYS workbench mesh (v19.0) is used to generate the hexahedra dominated cutcell mesh for the whole domain, with a total number of 278921. The simulations are performed using ANSYS Fluent (v19.0). Steady state simulations for incompressible flows are implemented. The realizable k-\u03b5 model with standard wall functions is adopted to deal with turbulence. DO (discrete ordinates) radiation model is used to calculate the radiative heat transfer between the occupants and the walls. SIMPLE algorithm is adopted to deal with the coupling of the pressure and the velocity. The discretization of the convection term in all equations is second order upwind scheme and for the diffusion term second order central scheme is used. We maintain the constant temperature of the occupants' skin and fixed heat released from them by changing the set point temperature of the room."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "EnergyPlus Modeling",
+                    "paragraphs": [
+                        "EnergyPlus (v7-2-0) is implemented to assess the total energy saving in the small hotel building.",
+                        "\"HTGSETP_SCH\" and \"CLGSETP_SCH\", which are the heating and cooling set point schedule respectively, are changed accordingly to the CFD calculation results."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Acknowledgements",
+            "paragraphs": [
+                "J. X. acknowledges support of the China Scholarship Council (CSC). A. R. acknowledges support of the Alfred P. Sloan Foundation (Sloan Research Fellowship in Physics)."
+            ],
+            "subsections": []
+        }
+    ]
+}

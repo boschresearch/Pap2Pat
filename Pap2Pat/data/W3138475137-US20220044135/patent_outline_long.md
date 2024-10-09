@@ -1,0 +1,142 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce NLP and open-domain question answering
+
+## SUMMARY
+
+- motivate complementary evidence identification
+- describe method for natural language inference
+- detail hardware processor operations
+- explain ranking and selecting passages
+- describe computer readable medium
+- detail apparatus operations
+- define facilitating an action
+- describe computer program product
+- describe system implementation
+- describe means for carrying out method steps
+- list beneficial technical effects
+- summarize advantages of the invention
+
+## DETAILED DESCRIPTION
+
+- introduce cloud computing
+- define cloud computing characteristics
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- introduce service models
+- describe software as a service (SaaS)
+- describe platform as a service (PaaS)
+- describe infrastructure as a service (IaaS)
+- introduce deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- illustrate cloud computing environment
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe resource provisioning
+- describe metering and pricing
+- describe security
+- describe user portal
+- describe service level management
+- describe service level agreement planning
+- describe workloads layer
+- introduce natural language inference
+- describe problem of complementary evidence identification
+- describe method for complementary evidence selection
+- define task
+- introduce BERT model
+- describe vector space modeling
+- illustrate encoder embodiments
+- define complementary conditions
+- describe relevancy condition
+- describe coverage condition
+- describe diversity condition
+- describe compactness condition
+- introduce training with complementary regularization
+- describe training workflow
+- generate question and passage embeddings
+- define training objective function
+- describe cross-entropy loss
+- describe cosine-embedding loss
+- describe diversity regularization
+- introduce inference via beam search
+- describe score function
+- illustrate inference workflow
+- describe complementary evidence selection
+- introduce algorithm for complementary evidence selection
+- describe algorithm workflow
+- return highest ranked subset of passages
+- introduce problem of inefficient ranking
+- propose beam search solution
+- describe experimental settings
+- introduce datasets MNLI-12 and HotpotQA-50
+- describe baseline BERT passage ranker
+- define metric for evaluation
+- present results of experiments
+- illustrate improvement over baseline
+- discuss inference speed
+- outline exemplary method for natural language inference
+- describe obtaining passages from database
+- determine probability of supportive passages
+- rank passages based on probabilities
+- select top-ranked passages
+- select set of passages based on scores
+- provide passages to machine learning system
+- define score function for finding best passage
+- describe properties of selected passages
+- apply BERT model to estimate probability of supportive evidence
+- define supervised training objective function
+- define mathematical notation
+- introduce computerized machine learning system
+- describe method of obtaining a given question
+- describe method of obtaining a set of passages
+- determine probability of a passage being supportive
+- rank passages based on determined probabilities
+- select M passages
+- select a set of L passages based on scores
+- provide set of M highest ranked passages to computerized machine learning system
+- describe apparatus comprising memory and processor
+- describe operations performed by processor
+- describe computer system
+- describe cloud computing node
+- describe computer system/server
+- describe components of computer system/server
+- describe bus
+- describe system memory
+- describe storage system
+- describe program/utility
+- describe program modules
+- describe computer system/server communicating with external devices
+- describe computer system/server communicating with networks
+- describe software running on general purpose computer
+- describe processor, memory, and input/output interface
+- describe data processing system
+- describe network adapters
+- describe server
+- describe cloud-based service
+- describe method steps
+- describe system with distinct software modules
+- describe computer program product
+- describe computer readable storage medium
+- describe computer readable program instructions
+- describe network
+- describe computer readable program instructions for carrying out operations
+- describe electronic circuitry
+- describe flowchart illustrations and block diagrams
+- describe computer readable program instructions provided to processor
+- describe article of manufacture
+- describe computer implemented process
+- describe functionality and operation of systems, methods, and computer program products
+- describe modifications and variations
+- describe terminology used
+

@@ -1,0 +1,157 @@
+{
+    "id": "https://semopenalex.org/work/W2778536993",
+    "authors": [
+        "Panagiotis Polygerinos",
+        "Marco Santello",
+        "Qiushi Fu",
+        "Frederick Sebastian"
+    ],
+    "title": "Soft Robotic Haptic Interface with Variable Stiffness for Rehabilitation of Neurologically Impaired Hand Function",
+    "date": "2017-12-20",
+    "abstract": "The human hand comprises complex sensorimotor functions that can be impaired by neurological diseases and traumatic injuries. Effective rehabilitation can bring the impaired hand back to a functional state because of the plasticity of the central nervous system to relearn and remodel the lost synapses in the brain. Current rehabilitation therapies focus on strengthening motor skills, such as grasping, employ multiple objects of varying stiffness so that affected persons can experience a wide range of strength training. These devices have limited range of stiffness due to the rigid mechanisms employed in their variable stiffness actuators. This paper presents a novel soft robotic haptic device for neuromuscular rehabilitation of the hand, which is designed to offer adjustable stiffness and can be utilized in both clinical and home settings. The device eliminates the need for multiple objects by employing a pneumatic soft structure made with highly compliant materials that act as the actuator of the haptic interface. It is made with interchangeable sleeves that can be customized to include materials of varying stiffness to increase the upper limit of the stiffness range. The device is fabricated using existing 3-D printing technologies, and polymer molding and casting techniques thus keeping the cost low and throughput high. The haptic interface is linked to either an open-loop system that allows for an increased pressure during usage or closed-loop system that provides pressure regulation in accordance to the stiffness the user specifies. Preliminary evaluation is performed to characterize the effective controllable region of variance in stiffness. It was found that the region of controllable stiffness was between points 3 and 7, where the stiffness appeared to plateau with each increase in pressure. The two control systems are tested to derive relationships between internal pressure, grasping force exertion on the surface, and displacement using multiple probing points on the haptic device. Additional quantitative evaluation is performed with study participants and juxtaposed to a qualitative analysis to ensure adequate perception in compliance variance. The qualitative evaluation showed that greater than 60% of the trials resulted in the correct perception of stiffness in the haptic device.",
+    "sections": [
+        {
+            "title": "MaTerials anD MeThODs soft robotic haptic interface Design",
+            "paragraphs": [
+                "As shown in Figure 2 the device is designed as a cylindrical handle of 40 mm diameter since this diameter has been shown to be most effective in enabling high grip forces in humans (Seo et al., 2008). The average male hand width, defined as the distance from the second to the fifth metacarpophalangeal joints, is approximately 83 mm (Seo et al., 2008;Geetha et al., 2015). We designed the cylindrical device's height to be 120 mm. The approximately 40 mm additional length was added to ensure that the entire body of the device fits in a patient's grip, accommodate for hand widths larger than the average, and to account for higher stiffness in areas closer to the end caps of the device. The male hand width is used as the basis of the design since on average the male hand is larger than the female hand. The device is modeled using a computer-aided design software before a mold was made for its body to be cast out of silicone elastomer material and the end caps are 3D printed. The mold of the body included groves in a helical pattern along the body of the device to facilitate the fiber winding process during fabrication, as described in the fabrication section."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "soft robotic haptic interface Fabrication",
+            "paragraphs": [
+                "The body of the device is fabricated based on the multistep molding and casting technique that have been established for creating fiber-reinforced soft actuators (Deimel and Brock, 2013;Bishop-Moser and Kota, 2015;Polygerinos et al., 2015a,b). However, some features and components are modified according to the goal of constraining the device from expanding vertically and horizontally, as well as to prevent bending and twisting motions. Instead of a hemisphere or a rectangle, the body of the mold is made in a circular design to achieve a cylindrical handheld device, and 3D printed (Fortus 250MC printer, Stratasys Ltd., MN, USA). The first layer is casted with the printed mold using a shore hardness 10 A silicone rubber (Dragon Skin 10, Smooth-on Inc., PA, USA) with 2-mm thickness. End caps of 50-mm diameter and 5-mm thickness are 3D printed (Fortus 450MC printer, Stratasys Ltd., MN, USA).",
+                "The caps included a 6-mm-diameter hole in the center to introduce a 178-mm-long threaded rod, acting as core, which is fastened on both ends with locking nuts. In addition, a 3-mmdiameter hole is made approximately 4 mm off the edge of the first hole to introduce a tube for pneumatic actuation. The end caps are attached to the body of the actuator using silicone adhesive (Sil-Poxy Adhesive, Smooth-on Inc., PA, USA). This adhesive is also used around the connecting parts to prevent air leaks, i.e., around base of the cap and the body, and at the ends of the core. A single Kevlar fiber of 0.38-mm diameter is wound along the groves made from the mold in a clock-wise and counter clock-wise directions, and a thin layer of silicone is applied on the threading to anchor it in place and prevent it from moving during actuation and grasping. A second layer 2-mm thick is made with the same casting techniques, but with a shore hardness 20 A silicone rubber (Dragon Skin 20, Smooth-on Inc., PA, USA), and used as a sleeve over the first layer.",
+                "The first layer of the device is made with very flexible rubber to ensure the lower limit of the device's stiffness is kept at a minimum while it is directly exposed to pressure. However, the high compliance of the first layer compromises its structural integrity. Therefore, a secondary layer of the same compliance is made as a sleeve over the first. The user may utilize a third sleeve with less compliant materials to increase the upper limit of the device's stiffness range. The interchangeability of sleeves provides greater customization and adaptability for the user's specific needs. In addition, the interchangeability feature allows for improved sanitary environments by allowing physicians to swap sleeves between patients quickly.  "
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Principle of Operation",
+            "paragraphs": [
+                "There are two modes of operation for the soft robotic haptic interface: (1) isometric and (2) constant pressure. Both of these systems utilize a bang-bang controller. The former mode is a system with no pressure regulation. Therefore, the device is given a starting pressure (greater than 0 kPa) and the internal pressure is allowed to increase with an increased force exertion on the device. This actuation system is shown on the open-loop control system block diagram in Figure 3. The latter mode of operation involves regulated pressure. Therefore, the device is given a starting pressure (greater than 0 kPa), and the internal pressure is maintained at that pressure as the hand grasping force exerted on the device is increased. This actuation system is shown on the closed-loop control system block diagram in Figure 4."
+            ],
+            "subsections": [
+                {
+                    "title": "Constant Pressure Control",
+                    "paragraphs": [
+                        "The design for the closed-loop system is achieved by employing solenoid valves to both pressurize and depressurize the actuator based on the user's input. The pressure input is fed through solenoid valves (Series 11 Miniature Solenoid Valves, Parker Hannifin Corp., OH, USA) before they split to equal pressures in the haptic interface and a fluidic pressure sensor (ASDXAVX100PGAA5, Honeywell International Inc., Morris Plains, NJ, USA). The pressure sensor provides feedback to a microcontroller (Arduino Uno R3, Arduino LLC., Italy) to turn the solenoid valves on and off to regulate the pressure to an approximate accuracy of 0.1 psi. When the pressure sensor reads the pressure input to be higher or lower than the desired preset input, it will depressurize or pressurize, respectively."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Isometric Control",
+                    "paragraphs": [
+                        "In the open-loop mode, the pressure sensor is utilized to monitor the pressure variations inside the device. The microcontroller is set to keep the solenoid valves closed, thereby preventing a pressure drop in the system once the initial pressure has been set."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Device characterization and Testing",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Characterization",
+                    "paragraphs": [
+                        "Generally, an object's stiffness is described by the Young's Modulus, which is the ratio of the pressure (force per unit area) applied on the object and its relative deformation. However, for small strains, as expected in this case, the compliance of the soft haptic interface can still be characterized by the ratio of the force exerted on it and the resulting displacement (Bergmann Tiest and Kappers, 2009;Bergmann Tiest, 2010):",
+                        "The equation describing this characterization is shown in Eq. 1, where k, \u0394x, and F represent stiffness, displacement, and force applied, respectively. A stiffness characterization experiment was performed to determine the stiffness profile of the grasping area of the soft robotic haptic interface. This was done by marking the device's soft body with nine linear points with spacing of 15 mm in between in each point (Figure 5A). Point 1 is the point closest to the end cap on the side with a pneumatic tubing, and point 9 is at the furthest opposite end. These points were selected primarily due to the shape of the device. Due to its cylindrical geometry, it could be assumed that the characterization will be similar all around the device. The device is fixed in place by the core using a bar clamp with the marked points being exposed upwards. The clamp is attached to the lower grip of a uniaxial testing machine (Instron 5944, Instron Corp., High Wycombe, UK) while a probe of 6-mm diameter is attached on the upper grip (Figure 5B).",
+                        "The probe is positioned right above the point to be tested, and force and position of the probe are set to 0 N and 0 mm, respectively. In a quasi-static, cyclical (loading-unloading) experiment the probe is set to lower a maximum of 10 mm into the soft material body of the device while a preset pressure is provided at the beginning of the experiment. The resulting force and displacement of the probe are recorded. A total of three trials are performed per probing point, and the exerted force and displacement are averaged. The characterization experiment is repeated with preset pressurizations of 0.5, 1, 2, and 3 psi (which convert to 3.45, 6.89, 13.79, and 20.68 kPa, respectively)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Constant Pressure and Isometric Testing",
+                    "paragraphs": [
+                        "These experiments were conducted to determine the efficacy of the device's modes of operation since the effective region of variable stiffness has been determined. For the constant pressure mode of operation, a similar test to the characterization experiment is performed but the closed-loop system is utilized instead. In addition, the mid-point on the device (point 5) is selected as the only probing location to record the resulting force. This was the only point chosen since it had the most change in stiffness as identified from the characterization experiment, and it was imperative to choose a point where small changes in stiffness can be easily observed. A total of three trials are performed, and the exerted force is averaged. This is repeated with pressurizations of 0.5, 1, 2, and 3 psi.",
+                        "For the isometric mode of operation, this quasi-static experiment is performed while using the open-loop system. This experiment also utilized the mid-point (point 5) on the device as the only probing location. This point was chosen since it was imperative to observe a point where the change in stiffness can easily be identified given the small testing parameters being utilized. However, the probe is set to probe four times with 2.5mm intervals between each vertical probing distance (starting at 2.5 mm) for a given starting pressurization. The resulting pressure and the force exerted on the device were then recorded. The stiffness per displacement is then calculated using Eq. 1 and plotted against the pressure recorded for that displacement. Three trials per displacement was performed, and the exerted force and pressure were averaged. This experiment was repeated with pressurizations of 0.5, 1, 2, and 3 psi."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Efficacy of Device",
+                    "paragraphs": [
+                        "To maximize the efficacy of this variable stiffness device, it is essential that the change in compliance is adequately perceived by the person using the device. This is because the essence of this technology is to have variance in stiffness that begins with very low resistance so as to differentiate itself from existing rigid variable stiffness devices. Therefore, the end user needs to be able to readily differentiate the stiffness of the device from the lowest stiffness setting up to the highest. More importantly, perception of stiffness often involves a variety of somatosensory modalities, such as mechanoreceptors, muscle spindles, and Golgi tendon (Jones and Hunter, 1990;Bergmann Tiest and Kappers, 2009), as well as the ability to coordinate joint positions and contact forces. Therefore, this type of tasks could have potential application in the rehabilitation of sensorimotor function of hands.",
+                        "To test the stiffness perception, the soft haptic device was set at a constant pressure utilizing the open-loop control system. The stiffness per pressure setting (0.5, 1, or 3 psi) is approximated to three distinct Shore Hardness (00-10, 00-30, and 00-50, respectively). Three cylindrical objects of Shore Hardness 00-10, 00-30, and 00-50 of the same dimensions as the soft haptic device were then fabricated but with a filled center. Under an Arizona State University institutional review board approval (#1309009629), a written informed consent was obtained from healthy participants where they were asked to grasp the three filled cylindrical objects and then grasp the soft haptic device that is set at a pressure setting unknown to them. Whether the participant matched it to our set Shore Hardness correctly for the given pressurization is then recorded. This was then repeated another time with the same participant but with a different pressure setting. This qualitative experiment is repeated with the same participant but at a different pressure setting. This experiment is conducted with 17 healthy participants (totaling 34 trials) who gave their full written and oral consent before participation."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "resulTs",
+            "paragraphs": [
+                "The stiffness profile versus the points on the device with varying pressures is presented in Figure 6. We expected the device to be stiffer as one moves away from the middle (point 5) of the device. This expectation was consistent with experimental results from the characterization test of the soft haptic device (Figure 6A). The device has greater stiffness at points closer  to the end caps and, therefore, the regions of effective variable stiffness can be identified between points 3 and 7 where the stiffness for each pressure appear to plateau. The greater stiffness toward either ends of the device is mainly due to the influence of the bond between the end caps and the body of the actuator. For this reason, points 1 and 9 were excluded from the data. The graph of the exerted force and displacement with varying pressures using the constant pressure system is presented in Figure 6B. Using this plot, the end user has the ability to select a fixed stiffness value when using the soft haptic interface in a constant pressure mode to perform grasping exercises where the haptic feel remains the same irrespective of the grasping force exerted on the device. Conversely, the stiffness reduced for every increment in displacement in the isometric testing (Figure 7), however, the drop was consistent for every pressure input. This validates the concept of a controllable increased stiffness with varying pneumatic actuation in the soft haptic interface, which enables the device to increase its stiffness when a gradual force is exerted on it. Overall, the two modes allow for stiffness values to be adjusted on demand to higher or lower ranges through variations of the initial stiffness of the sleeves and the internal pneumatic pressure.",
+                "In addition, the efficacy of the device was tested using 17 test participants to grasp the device at varying stiffness settings. Out of the 34 trials, 23 of them (or 68%) matched the stiffness of the device correctly in their first attempt as seen in Figure 8A. This number was then further broken down for the three stiffness settings and it was found that 67, 73, and 64% of the trials matched the stiffness correctly in their first attempt for the Shore 00-10, Shore 00-30, and Shore 00-50 cylinders, respectively, as shown in Figure 8B."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "DiscussiOn",
+            "paragraphs": [
+                "In this paper, we presented the novel design of a variable stiffness haptic interface based on soft-robotics that is pneumatically actuated to assist hand rehabilitation. The fabrication process of this device is simple and cost-effective, approximately $100, since it closely adheres to existing multistep casting and molding techniques utilized for fiber-reinforced soft actuators. The cost is used solely for research and development for this prototype. The utilization of highly compliant materials (silicone elastomers) allowed for the device to present stiffness ranges that existing variable stiffness devices are not able to achieve due to the rigidity of their mechanical designs (Masia et al., 2006;Lambercy et al., 2009;Mace et al., 2015Mace et al., , 2017;;Malosio et al., 2016;Spagnuolo et al., 2017). Experiments were conducted to characterize the effective regions of variable stiffness in the soft haptic device due to design constraints that include regions of exponential stiffness. A closed-loop and open-loop control system were presented and tested. Finally, the variance of stiffness in the device was tested with healthy participants to ensure that the induced variance in stiffness translates adequately to a qualitative measure as well. One of the most challenging aspects of creating a device of variable stiffness is to ensure the variance in compliance is appropriately perceived by the users. This is challenging due to the multitude of factors involved in human perception of stiffness (Jones and Hunter, 1990;Bergmann Tiest, 2010). The experiment results show that healthy participants could effectively distinguish the variance in stiffness of the soft haptic device, and that the qualitative measurement could be matched to a quantitative value (Shore Hardness). This allows for a more cohesive mapping of the soft haptic device and, therefore, provides the device's user(s) the tool necessary to utilize the device effectively. Below we describe the main findings and potential applications of our soft-robotics device for rehabilitation of sensorimotor function of hands."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "characterization",
+            "paragraphs": [
+                "The central region (points 3-7, Figure 6A) is characterized by an increasing stiffness that could be manipulated on demand by the end user or physical therapist in a controlled fashion by increasing the pressure input to the device. It is important to note that only four different pressure settings were tested in this work as a proof-of-concept. If desired, additional pressure settings can be utilized for this particular design. However, the maximum pressure input presented was 20.68 kPa so as to prevent the device from buckling under greater internal pressure. To increase the upper limit of the pressure input, a greater number of sleeves can be added to the device, sleeves of higher stiffness can be incorporated into the design, and/or the number of windings on the first layer could be increased. This once again proves the versatility of this device to be used in stroke rehabilitation given the importance of tailoring task difficulty or characteristics to individual patients' sensorimotor deficits."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "constant Pressure and isometric Testing",
+            "paragraphs": [
+                "The constant pressure test support using the device to calculate the stiffness a user can expect when using the device at a given regulated pressure. This could be eventually used to formulate a chart for quick reference if a particular setting is desired for a rehabilitative exercise to be performed. This setting can be utilized for strength training that requires a large number of hand grasping/squeezing repetitions since high repetitions have shown to increase neural plasticity in stroke recovery. The isometric mode provides the user with an option to increase the force needed to squeeze the device at a given pressure, thus being useful for users who need consistent increases in difficulty for each rehabilitative exercise. These two different modes can be utilized by the physician depending on the needs of the stroke patient. However, the results of this testing showed that the stiffness dropped for 2.5 mm increments in the displacement using the isometric system. Given that the stiffness increased during characterization which utilized the same control system, it appears that the pressure in the soft haptics is escaping when small displacements occur in the device."
+            ],
+            "subsections": [
+                {
+                    "title": "Implication to Hand Rehabilitation",
+                    "paragraphs": [
+                        "Our results demonstrated great potential to use the proposed device in a variety of hand-rehabilitation exercises. For instance, patients who need fixed stiffness with increased repetitions of grasping exercise could use the constant pressure control mode; and patients who need increasing difficulty could utilize the isometric control mode. Furthermore, with simple sensor added to the device, patients can use it as a controller at home to perform exercises in combination with video games to mimic augmented reality feedback that currently exist for rehabilitation devices (Khademi et al., 2012). Lastly, our device has the unique feature that the entire grasp area is compliant due to the implementation of soft robotics techniques. Unlike hand rehabilitation devices with rigid mechanisms, our design could promote the practice of natural coordination among all fingers which is important in ADL tasks."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "cOnclusiOn",
+            "paragraphs": [
+                "In the future, we expect to fabricate this device with varying factors such as thickness and stiffness of materials, as well as investigate the effects of the number of windings and the pattern of winding on the device. This would allow for a greater effective variable stiffness region on the device. Varying the materials and fabrication methods would also allow for a more airtight device that could prevent pressure leaks, thus making the mechanical behavior of the device in the isometric mode more reliable.",
+                "We also plan on incorporating force sensors into the design to accurately map the region users would interact with the device, especially the force exerted under each digit. This would also allow us to develop an equation that more accurately characterizes the stiffness of the device. In addition, the potential of the device for rehabilitation applications should be assessed by testing with patients. We can present more descriptive psychophysical data from these experiments. This would also allow for dynamic testing of the device since the current results were obtained from discrete testing methodologies."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "eThics sTaTeMenT",
+            "paragraphs": [
+                "Under an Arizona State University institutional review board (IRB) approval (#1309009629), a written informed consent was obtained from healthy participants where they were asked to grasp the three filled cylindrical objects and then grasp the soft haptic device that is set at a pressure setting unknown to them. auThOr cOnTriBuTiOns FS, QF, MS, and PP were involved in the early planning and design of the study; designed the experiments. FS and PP further developed the concept; performed the tests. FS characterized the devices for testing. All authors analyzed the data and wrote the manuscript."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "acKnOWleDgMenTs",
+            "paragraphs": [
+                "We would like to thank Mr. Dattaraj Sansgiri for his exploratory contributions to some of the graphics for the figures."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "FunDing",
+            "paragraphs": [
+                "This research was partially supported by a Collaborative Research Grant BCS-1455866 from the National Science Foundation (NSF) to MS. Its contents are solely the responsibility of the authors and do not necessarily represent the official views of NSF."
+            ],
+            "subsections": [
+                {
+                    "title": "Conflict of Interest Statement:",
+                    "paragraphs": [
+                        "The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest."
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}

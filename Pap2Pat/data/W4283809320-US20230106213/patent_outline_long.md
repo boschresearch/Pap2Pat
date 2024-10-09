@@ -1,0 +1,151 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field of machine learning systems
+
+## BACKGROUND
+
+- describe limitations of machine learning models
+
+## SUMMARY
+
+- summarize machine learning model compression
+- introduce first embodiment of method
+- obtain parameter matrix
+- determine importance values
+- generate factorized matrices
+- generate second machine learning model
+- describe factorized matrices generation
+- introduce second embodiment of apparatus
+- describe apparatus configuration
+- introduce third embodiment of non-transitory computer readable medium
+- describe medium instructions
+- introduce fourth embodiment of method
+- obtain input data
+- provide input data to compressed model
+- generate prediction
+- perform action based on prediction
+- describe compressed model configuration
+- define terms and phrases
+- describe meaning of "transmit" and "receive"
+- describe meaning of "include" and "comprise"
+- describe meaning of "or"
+- describe meaning of "associated with"
+- describe computer readable program code
+- describe computer readable medium
+- describe non-transitory computer readable medium
+- describe meaning of "have" and "may have"
+- describe meaning of "A or B"
+- describe meaning of "first" and "second"
+- describe meaning of "coupled with/to"
+- describe meaning of "configured to"
+
+## DETAILED DESCRIPTION
+
+- introduce machine learning models
+- limitations of machine learning models
+- prior approaches to develop smaller machine learning models
+- limitations of prior approaches
+- introduce weighted low-rank factorization
+- generate factorized matrices
+- generate compressed machine learning model
+- deploy compressed machine learning model
+- fine-tune compressed machine learning model
+- advantages of compressed machine learning model
+- illustrate example network configuration
+- describe electronic device
+- describe bus
+- describe processor
+- describe memory
+- describe input/output interface
+- describe display
+- describe communication interface
+- describe sensor
+- describe external electronic devices
+- describe communication protocols
+- describe network
+- describe server
+- describe operations executed on server
+- describe cloud computing
+- describe distributed computing
+- describe client-server computing
+- describe independent operation of electronic device
+- describe components of server
+- describe operations supported by server
+- conclude network configuration
+- illustrate low-rank factorizations
+- describe unweighted low-rank factorization
+- motivate limitations of unweighted low-rank factorization
+- describe weighted low-rank factorization
+- motivate importance of importance values
+- describe technique for determining importance values
+- illustrate weighted low-rank factorization
+- describe application of weighted low-rank factorization
+- illustrate example usage of weighted low-rank factorization
+- describe original machine learning model
+- motivate need for model compression
+- describe compressed machine learning model
+- describe parameter matrices for compressed model
+- motivate benefits of compressed model
+- describe determination of parameter matrices
+- define Fisher information
+- define task loss function
+- estimate Fisher information
+- describe optimization objective problem
+- solve optimization objective problem
+- estimate importance values
+- aggregate importance values
+- describe alternative solution approaches
+- conclude model compression technique
+- define diagonal matrix Î
+- derive row-wise importance values
+- simplify optimization objective problem
+- solve optimization objective problem
+- generate parameter matrices A and B
+- repeat process for each linear layer
+- fine-tune compressed machine learning model
+- illustrate example generation of compressed machine learning model
+- describe original machine learning model
+- apply weighted low-rank factorization
+- generate compressed transformer block
+- illustrate example generation and deployment of compressed machine learning model
+- describe original machine learning model
+- compress original machine learning model
+- fine-tune compressed machine learning model
+- deploy compressed machine learning model
+- illustrate example usage of compressed machine learning model
+- describe multiple compressed machine learning models
+- process input data using compressed machine learning models
+- generate predictions and initiate actions
+- illustrate example use case for multiple compressed machine learning models
+- describe ASR model
+- describe NLU model
+- initiate actions based on predictions
+- illustrate example method for generating and deploying compressed machine learning model
+- obtain original machine learning model
+- obtain parameter matrix
+- determine importance values
+- generate factorized matrices
+- generate parameter matrices for compressed machine learning model
+- form compressed machine learning model
+- deploy compressed machine learning model
+- illustrate example method for using compressed machine learning model
+- obtain input data
+- provide input data to compressed machine learning model
+- generate predictions
+- identify actions based on predictions
+- perform actions
+- describe variations of methods
+- describe variations of compressed machine learning models
+- describe hardware and software implementations
+- describe single device or multiple devices
+- describe dedicated hardware components
+- describe software applications
+- describe firmware instructions
+- describe electronic device
+- describe server
+- describe network configuration
+- describe other devices and systems
+- describe scope of disclosure
+

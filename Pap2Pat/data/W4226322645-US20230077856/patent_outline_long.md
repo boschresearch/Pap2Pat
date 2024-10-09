@@ -1,0 +1,144 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- motivate multi-object 3D shape reconstruction
+- limitations of instance-level 6D pose estimation
+- limitations of category-level 6D pose estimation
+
+## SUMMARY
+
+- introduce system for multi-object 3D shape reconstruction
+- extract RGB and depth features
+- generate feature pyramid
+- infer heatmap
+- infer 3D parameter map
+- sample 3D parameter map
+- generate point clouds
+- transform point clouds
+- utilize point clouds
+
+## DETAILED DESCRIPTION
+
+- introduce 3D shape reconstruction and 6D pose and size estimation
+- motivate instance-level and category-level 6D pose estimation
+- describe limitations of two-stage pipeline approach
+- introduce single-shot approach for 3D shape reconstruction and 6D pose and size estimation
+- describe system configuration for 6D pose and size estimation
+- obtain RGB-D image as input
+- provide RGB-D image to residual neural network
+- obtain RGB features and depth features as output
+- concatenate RGB features and depth features
+- provide concatenated features to FPN backbone
+- obtain feature pyramid as output
+- infer heatmap based on feature pyramid
+- identify peaks in heatmap corresponding to object centers
+- infer 3D parameter map based on feature pyramid
+- sample 3D parameter map at peak locations
+- obtain latent shape codes, 6D poses, and 1D scales
+- generate point clouds based on latent shape codes, 6D poses, and 1D scales
+- describe advantages of single-shot approach
+- illustrate robotic device with 6D pose and size estimator system
+- describe elements of robotic device
+- introduce 6D pose and size estimator system
+- describe processor and memory components
+- describe 6D pose and size estimator module
+- receive data inputs from sensors
+- acquire sensor data including RGB-D images
+- describe 6D pose and size estimator module functionality
+- reconstruct complete point clouds and infer 6D poses and scales
+- describe object-centric 3D parameter maps
+- detect objects in RGB-D image using detection backbone
+- predict joint shape, pose, and size code using specialized heads
+- utilize two-dimensional heatmaps
+- describe database components
+- store sensor data and metadata
+- store RGB-D image and feature extractor
+- store concatenated features and FPN backbone
+- store heatmap head and heatmap
+- store CAD models and encoder-decoder network
+- store 3D parameter map head and 3D parameter map
+- illustrate process overview
+- represent objects by 2D locations
+- generate RGB and depth features
+- describe feature extractor
+- generate feature pyramid
+- predict heatmap
+- describe heatmap head
+- compute ground truth heatmaps
+- train heatmap head
+- represent complete object-based 3D information
+- describe encoder-decoder network
+- train encoder-decoder network
+- infer 3D parameter map
+- describe 3D parameter map head
+- determine rotation representation
+- project rotation into SO(3)
+- utilize rotation map function
+- jointly optimize 3D parameter map
+- define 6D pose and size estimator module
+- integrate auxiliary depth reconstruction loss
+- pre-process input synthetic RGB-D images
+- jointly optimize for detection, reconstruction, and localization
+- obtain RGB-D image
+- extract features from RGB-D image
+- generate concatenated features
+- obtain feature pyramid
+- predict heatmap
+- identify peaks in heatmap
+- associate heatmap probabilities with detection confidence
+- perform non-maximum suppression
+- infer 3D parameter map
+- sample 3D parameter map at peak locations
+- generate point clouds
+- extract latent shape codes, 6D poses, and 1D scales
+- reconstruct initial point clouds
+- transform initial point clouds
+- utilize point clouds for navigation or simulation
+- apply textures to point clouds
+- train machine learning model
+- control robotic device based on point clouds
+- define robotic device
+- describe vehicle systems
+- introduce autonomous vehicle
+- explain autonomous mode
+- describe semi-autonomous operational modes
+- introduce processor
+- describe data store
+- explain map data
+- describe terrain map
+- introduce static obstacle map
+- describe sensor data
+- explain sensor system
+- describe robotic device sensor
+- introduce environment sensor
+- describe radar sensor
+- introduce LIDAR sensor
+- describe sonar sensor
+- introduce camera
+- describe input system
+- introduce output system
+- explain communication between processor and robotic device systems
+- describe control of robotic device systems
+- introduce modules
+- explain artificial or computational intelligence elements
+- describe distribution of modules
+- introduce flowcharts and block diagrams
+- explain architecture, functionality, and operation
+- describe systems, components, and/or processes
+- introduce computer-readable storage
+- explain computer-readable medium
+- describe computer-readable signal medium
+- introduce computer-readable storage medium
+- explain tangible medium
+- describe modules and memory
+- introduce application-specific integrated circuit
+- explain hardware component of a system on a chip
+- describe programmable logic array
+- introduce transmission of program code
+- explain writing of program code
+

@@ -1,0 +1,483 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- define edge computing
+- list edge computing applications
+- describe edge computing use cases
+- identify challenges in edge computing
+
+## DETAILED DESCRIPTION
+
+- introduce edge computing concept
+- describe edge cloud architecture
+- explain operational layers among endpoints, edge cloud, and cloud computing environments
+
+### A. Overviews of Edge Computing
+
+- define edge computing
+- describe edge cloud
+- illustrate edge cloud architecture
+- explain edge computing benefits
+- describe edge computing limitations
+- introduce edge cloud layers
+- describe endpoint layer
+- describe edge devices layer
+- describe network access layer
+- describe core network layer
+- describe cloud data center layer
+- explain latency values
+- categorize edge layers
+- describe use cases
+- explain service-flow concept
+- describe transaction details
+- explain SLA management
+- describe edge computing advantages
+- describe edge computing caveats
+- explain resource constraints
+- describe power and cooling constraints
+- explain security requirements
+- describe edge cloud deployments
+- describe edge gateway nodes
+- describe edge aggregation nodes
+- describe core data centers
+- explain client computing node concept
+- describe node or device concept
+- explain edge cloud formation
+- describe network components
+- describe appliance computing devices
+- describe server racks
+- describe sleds
+- describe sensors
+- describe mechanical connectivity
+- describe output devices
+- describe edge devices
+- describe Internet of Things devices
+- describe appliance computing device management
+- describe virtual computing environment
+
+### B. Usage of Containers in Edge Computing
+
+- illustrate deployment and orchestration for virtualized and container-based edge configurations
+- describe coordination of edge nodes and tenants
+- introduce virtual edge instances and edge compute capabilities
+- explain access to a cloud/data center
+- define a trusted multi-tenant device
+- describe a tenant specific cryptographic key
+- introduce a root of trust (RoT) concept
+- explain fan-out and layering according to a DICE model
+- describe establishment of a distributed trusted computing base (DTCB)
+- introduce container migration and key management
+- describe pod controller and orchestrator functions
+- explain resource allocation and partitioning
+- introduce security role of pod controller
+- describe attestation and trustworthiness of pod and pod controller
+- illustrate additional compute arrangements deploying containers
+- describe pod controller and container orchestrator functions
+- explain execution of containerized pods, functions, and FaaS instances
+- introduce multi-tenant orchestrator and resource allocation
+- describe security enforcement points and tenant isolation
+- explain use of virtualization, containerization, enclaves, and hardware partitioning
+- introduce software-defined or controlled silicon hardware
+- describe integration with applications, functions, and services
+- explain configurable systems or hardware resources activation
+
+### C. Mobility and Multi-Access Edge Computing (MEC) in Edge COMPUTING SETTINGS
+
+- illustrate vehicle compute and communication use case
+- describe mobile access to applications in an edge computing system
+- introduce edge gateway nodes and edge resource nodes
+- explain processing and storage capabilities of edge nodes
+- describe communication between edge nodes and core data center
+- introduce stateful applications and geographic distributed database
+- explain vertical distribution of resources, services, or components
+- describe peer relationships at any level
+- introduce container migration and swizzling translation operations
+- explain late-binding technique and hardware abstraction layer (HAL) mapping
+- describe pod controller and interface mapping
+- introduce mobile edge nodes and vehicle-to-vehicle communications
+- explain distribution of application components
+- describe FaaS computing capabilities and function code execution
+- introduce container and function code execution
+- explain spin up and spin down of functions
+- describe deployment of edge functions in a service fashion
+- introduce support of edge computing as a service (EaaS)
+- explain granular billing component and common data storage
+- describe orchestration and management among individual functions
+- introduce function execution management and parallelism
+- explain management of container and function memory spaces
+- describe coordination of acceleration resources
+- introduce distribution of functions between containers
+- describe edge provisioning node and software distribution
+- explain transmission of software instructions to receiving parties
+- introduce servers and storage devices of edge provisioning node
+- describe payment handling and software updates
+- explain periodic offering of updates to software instructions
+- describe distribution of different components of software instructions
+
+### D. Computing Architectures and Systems
+
+- introduce edge computing nodes
+- describe edge compute device embodiments
+- illustrate block diagram of edge computing node
+- specify processing circuitry components
+- detail processor types
+- describe system on a chip (SoC) implementations
+- specify processor socket form factors
+- describe interconnect interface
+- detail system memory components
+- specify memory device types
+- describe memory standards
+- detail storage components
+- specify storage device types
+- describe storage technologies
+- detail interconnect technologies
+- specify transceiver components
+- describe wireless communication protocols
+- detail antenna components
+- specify radio communication protocols
+- describe wireless network transceiver components
+- detail cloud communication protocols
+- specify network interface controller components
+- describe wired communication protocols
+- detail acceleration circuitry components
+- specify AI accelerator types
+- describe sensor hub components
+- detail sensor types
+- specify actuator components
+- describe input/output devices
+- detail display components
+- specify input device types
+- describe battery components
+- detail battery monitor/charger components
+- specify power block components
+- describe wireless power receiver components
+- detail instruction storage components
+- specify non-transitory machine-readable medium components
+- describe trusted execution environment components
+- specify secure area components
+
+### E. Machine Readable Medium and Distributed Software Instructions
+
+- define machine-readable medium
+- describe tangible medium
+- list examples of machine-readable media
+- describe transmission of instructions over a network
+- introduce storage device hosting data in non-transitory format
+- describe information representative of instructions
+- process information into instructions
+- derive instructions from information
+- describe assembly, compilation, or interpretation of information
+- combine, unpack, and modify information
+- describe edge computing system
+- introduce FIG. 9
+- describe layers of distributed compute
+- describe client computing nodes
+- describe edge gateway nodes
+- describe edge aggregation nodes
+- describe core data centers
+- describe global network cloud
+- describe fog computing
+- describe edge cloud
+
+### F. Use Case: Satellite Edge Connectivity
+
+- introduce satellite constellation
+- describe network connectivity in non-terrestrial and terrestrial settings
+
+### G. Software Distribution:
+
+- introduce software distribution platform
+- describe storage of computer readable instructions
+- describe transmission of software to devices
+- describe payment handling
+- describe downloading of software
+- describe security domains and devices
+- describe periodic updates to software
+- describe format of computer readable instructions
+- describe preparation tasks for execution on processor platforms
+
+### H. Machine Learning in Edge Computing Networks
+
+- define machine learning
+- introduce supervised ML algorithm
+- describe linear regression
+- explain gradient descent algorithm
+- discuss distributed computing
+- introduce federated learning
+- describe federated learning protocol
+- explain model updates
+- define central server
+- describe client computing node
+- explain Equation (A0)
+- define training symbol matrix
+- define model parameter matrix
+- define measurement noise matrix
+- define measurement vector
+- explain gradient descent optimization
+- describe cost function
+- explain Equation (A1)
+- explain Equation (A2)
+- discuss computational complexity
+- introduce edge computing nodes
+- describe federated learning in edge computing
+- explain FIG. 12
+- describe client updates
+- explain central server aggregation
+- discuss federated learning efficiency
+- explain Equation (A3)
+- describe partial sums
+- explain Equation (A4)
+- describe local gradient computation
+- explain Equation (A5)
+- describe global gradient computation
+- explain Equation (A6)
+- describe model update
+- discuss client computing node
+- explain communication protocol
+- introduce distributed meta-learning
+- describe federated learning objective
+- explain modified objective
+- discuss distributed approaches
+- describe model-agnostic meta learning
+- explain Equation (B1)
+- describe federated averaging approach
+- explain Equation (B2)
+- describe federated meta-learning objective
+- introduce federated meta-learning
+- describe federated meta averaging approach
+- illustrate process 1400 for performing federated meta-learning
+- select clients and send global model weights
+- compute gradient and update local weights
+- compute Hessian and perform local meta update
+- send updated weights to central server
+- perform global model update
+- repeat process until convergence
+- describe federated meta stochastic gradient descent approach
+- illustrate process 1500 for performing federated meta-learning
+- select clients and send global model weights
+- perform local stochastic gradient update
+- update local weights
+- compute Hessian
+- send updated weights and Hessians to central server
+- evaluate gradient expression
+- perform global model weight update
+- repeat process until convergence
+- describe meta-learning over client data distributions
+- minimize expectation over tasks of interest
+- cluster clients according to data distributions
+- describe clustering approaches
+- illustrate process 1600 for performing federated meta-learning
+- report probability mass function to central server
+- cluster clients based on data distributions
+- assign weights to tasks
+- draw random batch of clusters
+- select clients from drawn clusters
+- compute local meta update
+- perform global weight update
+- repeat process until convergence
+- describe experimental results
+- illustrate performances of different variants
+- describe client selection algorithms
+- illustrate experimental results of different approaches
+- summarize results
+
+### J. Compute-Aware Batch Size Selection for Federated Learning
+
+- introduce federated learning
+- motivate compute-aware batch size selection
+- describe limitations of current systems
+- introduce straggler problem
+- propose compute-aware batch size selection
+- describe benefits of compute-aware batch size selection
+- introduce client-based approach
+- introduce server-based approach
+- describe estimation of clients' compute time
+- introduce reference time duration Tref
+- describe client-based approach for determining batch size
+- describe server-based approach for determining batch size
+- introduce compute model
+- describe non-linear behavior in compute times
+- introduce minimum batch size bmin
+- describe determination of nominal compute time Tref
+- describe selection of batch sizes bk
+- describe communication of batch sizes to clients
+- describe client operations for determining minimum batch size
+- describe feedback to server
+- introduce example federated learning algorithm
+- describe client selection
+- describe gradient computation
+- describe weight update and weight combining
+- introduce client-based approach for performing compute-aware batch size selection
+- describe determination of Tref by server
+- describe client operations for determining batch size
+- describe communication of number of batches to server
+- describe client selection
+- describe gradient computation
+- describe weight update and weight combining
+- introduce automated ML approaches for federated learning
+- motivate reinforcement learning for federated learning
+- describe limitations of current methods
+- introduce reinforcement learning agent
+- describe advantages of reinforcement learning approach
+- introduce deep reinforcement learning background
+- describe reinforcement learning model
+- introduce policy
+- describe use of deep neural networks
+- introduce example use case for federated learning
+- describe system for federated learning
+- introduce state and action representations
+- describe reward signals for RL model
+- introduce RL agent for federated learning
+- describe interaction between RL agent and environment
+- describe objective of RL agent
+- conclude compute-aware batch size selection for federated learning
+- define state representation
+- statistics of parameter updates across clients
+- cosine similarity of local parameter updates with global parameter update
+- training and validation loss
+- current lr and number of local epochs
+- number of training examples at the federated node t
+- average rate supported over the wireless link between node t and central server
+- energy budget
+- time to compute gradient per data point
+- memory access time
+- define action representation
+- sampling probability for clients
+- coding redundancy
+- uplink transmit power
+- bandwidth
+- scaling factor
+- training hyper-parameters
+- define reward signals
+- ratio of test accuracy to update time
+- -log(test loss)
+- describe policy gradient method
+- describe training algorithm
+- describe deep RL training phase
+- describe Q-learning and deep Q-networks method
+- describe Q-function
+- describe DQN training algorithm
+- describe extensions
+- describe edge computing implementations
+- describe apparatus of edge computing node
+
+## EXAMPLES
+
+- introduce edge computing node apparatus
+- describe global ML model processing
+- motivate Hessian computation
+- evaluate gradient expression
+- generate meta-updated set of weights
+- select client compute nodes randomly
+- cluster client compute nodes based on data distributions
+- select client compute nodes based on clustering
+- perform clustering based on probability mass function
+- perform clustering based on distance metric
+- select client compute nodes based on communication capability
+- select client compute nodes based on compute ability
+- determine data batch size for each client compute node
+- transmit data batch size to each client compute node
+- determine reference time for federated ML training
+- transmit reference time to each client compute node
+- obtain data batch size information from each client
+- perform reinforcement learning to determine hyper-parameters
+- obtain state information from clients
+- select action vectors corresponding to hyper-parameters
+- perform rounds of federated ML training
+- determine measure of accuracy of updated global ML model
+- perform reinforcement learning across multiple hyper-parameter scenarios
+- introduce method to be performed at edge computing node
+- transmit initial set of weights to client compute nodes
+- receive Hessians from client compute nodes
+- evaluate gradient expression for ML model
+- generate meta-updated set of weights
+- select client compute nodes based on Bregman's k-means clustering
+- select client compute nodes based on affinity propagation analysis
+- determine hyper-parameters via reinforcement learning
+- introduce apparatus of edge computing node
+- compute gradient for set of weights
+- generate updated set of weights based on computed gradient
+- define wt+1k equation
+- introduce Example 47
+- introduce Example 48
+- introduce Example 49
+- introduce Example 50
+- introduce Example 51
+- introduce Example 52
+- introduce Example 53
+- introduce apparatus of edge computing node
+- introduce method to be performed at edge computing node
+- introduce Example 54
+- introduce method to be performed at edge computing node
+- introduce Example 55
+- introduce apparatus of edge computing node
+- introduce method to be performed at edge computing node
+- introduce Example 56
+- introduce method to be performed at edge computing node
+- introduce Example 57
+- introduce apparatus of edge computing node
+- introduce perform reinforcement learning
+- introduce Example 58
+- introduce state information
+- introduce Example 59
+- introduce action vectors
+- introduce Example 60
+- introduce hyper-parameters
+- introduce Example 61
+- introduce perform reinforcement learning across multiple hyper-parameter scenarios
+- introduce Example 62
+- introduce method to be performed at edge computing node
+- introduce Example 63
+- introduce state information
+- introduce Example 64
+- introduce action vectors
+- introduce Example 65
+- introduce hyper-parameters
+- introduce Example 66
+- introduce perform reinforcement learning across multiple hyper-parameter scenarios
+- introduce Example P1
+- introduce method to be performed at apparatus of edge compute node
+- introduce Example P2
+- introduce model update information
+- introduce Example P3
+- introduce model update information
+- introduce Example P4
+- introduce select subset of client edge compute nodes
+- introduce Example P5
+- introduce select subset of client edge compute nodes
+- introduce Example P6
+
+## ADDITIONAL EXAMPLES
+
+- define apparatus with means to perform method
+- define non-transitory computer-readable media with instructions
+- define machine-readable storage with machine-readable instructions
+- define apparatus with processors and computer-readable media
+- define apparatus with transceiver and antennas
+- define apparatus with system memory and processor
+- define apparatus with logic, modules, or circuitry
+- define method, technique, or process
+- define apparatus with processors and computer-readable media
+- define signal as described in examples
+- define datagram, packet, frame, segment, protocol data unit (PDU), or message
+- define signal encoded with data
+- define signal encoded with datagram, packet, frame, segment, protocol data unit (PDU), or message
+- define electromagnetic signal carrying computer-readable instructions
+- define computer program with instructions
+- define message or communication between edge computing nodes or client computing node and central server
+- define message or communication on Physical (PHY) layer or Medium Access Control (MAC) layer
+- define message or communication involving parameter exchange
+- define message or communication involving prediction of edge computing node sleep patterns
+- define message or communication on transport network layer, Internet Protocol (IP) transport layer, or other layers
+- define signal in wireless network
+- define method of communicating in wireless network
+- define system for providing wireless communication
+- define edge compute node with apparatus and transceiver
+- define edge compute node with system memory and processor
+- define edge compute node with network interface card (NIC) and housing
+- define edge compute node with power circuitry and mounting hardware
+- define edge compute node with input device and output device
+- define example implementation of edge computing system
+- define other example implementations of edge computing system
+

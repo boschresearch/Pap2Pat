@@ -1,0 +1,228 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- limitations of current technologies
+- motivate new approach
+
+## BRIEF SUMMARY
+
+- summarize invention
+
+## DETAILED DESCRIPTION
+
+- introduce limitations of isolated islet cells
+- define Islets
+- define Neo-Islets
+- describe composition of Neo-Islets
+- describe generation of Neo-Islets
+- describe advantages of Neo-Islets
+- describe MSC/ASC component of Neo-Islets
+- describe immune isolation of Neo-Islets
+- describe redifferentiation of dedifferentiated islet cells
+- compare fusion of cells to Neo-Islets
+- describe administration of Neo-Islets
+- describe advantages of intra-peritoneal administration
+- describe use of rapamycin to improve Neo-Islet survival
+- describe methods for generating Neo-Islets
+- describe first example of method for generating Neo-Islets
+- describe additional examples of methods for generating Neo-Islets
+- describe coating and encapsulation of Neo-Islets
+- describe immune privileged Neo-Islets
+- describe dedifferentiated islet cells
+- proliferate dedifferentiated islet cells
+- culture islet cells on laminins
+- add suitable media for cell adhesion and survival
+- dedifferentiate islet cells on suitable substrate
+- plate β-cells on laminin-coated flasks
+- culture β-cells in suitable medium
+- supplement culture medium with Exendin-4
+- list examples of sera for culturing Neo-Islets
+- describe MSCs and ASCs
+- dedifferentiate islet cells to proliferate
+- redifferentiate dedifferentiated islet cells
+- describe first step of redifferentiation
+- describe second step of redifferentiation
+- list components of culture medium
+- describe method for generating insulin-producing cells
+- form Neo-Islets
+- describe methods for treating diabetes
+- administer Neo-Islets to subject
+- describe effects of Neo-Islet administration
+- provide dose of Neo-Islets
+- describe high efficiency of method
+- define "treating" or "treatment"
+- describe administration of insulin and/or oral hypoglycemic agents
+- describe packaging and preparation of Neo-Islets
+
+### EXAMPLES
+
+- introduce examples for illustration purposes
+- hypothesize Neo-Islets with higher numbers of MSCs/ASCs
+- test Neo-Islets for autoimmune isolation and survival benefits
+- describe pleiotropic actions of MSCs/ASCs
+- generate Neo-Islets in vitro from islet cells and MSCs
+- administer Neo-Islets to diabetic NOD mice
+- test for glycemic control and immune response
+- demonstrate long-term engraftment and redifferentiation
+- show regulated insulin secretion
+- compare to control groups
+- demonstrate therapeutic efficacy of Neo-Islets
+- test canine Neo-Islets in diabetic NOD/SCID mice
+- conclude translational relevance for T1DM treatment
+- list reagents and their sources
+- describe islet isolation from rodents
+- describe islet isolation from dogs
+- describe islet isolation from humans
+- describe culture and de-differentiation of islet cells
+- describe passaging of islet cells
+- describe isolation and culture of ASCs and MSCs
+- describe characterization of MSCs and ASCs
+- describe characterization of dedifferentiated canine islet cells
+- describe cell viability assessment
+- introduce induction of IDO-1
+- describe IDO-1 induction in canine ASCs
+- introduce Neo-Islet formation and in vitro characterization
+- describe rationale and methods for Neo-Islet formation
+- introduce Neo-Islet formation
+- outgrowth of islet cells
+- Neo-Islet formation protocol
+- staining for confocal microscopy
+- Lipophilic Tracer DiR labeling
+- redifferentiation of Neo-Islets
+- Neo-Islet cellular ratio assessment
+- rtPCR
+- growth and characterization of ICs and M/ASCs
+- Neo-Islet formation and imaging
+- illustrate outgrowth and Epithelial to Mesenchymal transition
+- describe Ins 1gfp+ islet cells
+- illustrate Ins 1gfp+ islet cells
+- describe NIs of approximate islet size
+- illustrate NIs of approximate islet size
+- describe gene expression profiles and Glucose Stimulated Insulin Secretion
+- illustrate gene expression profiles and Glucose Stimulated Insulin Secretion
+- conclude Neo-Islet formation and redifferentiation
+- introduce animal models
+- describe animal housing and care
+- describe Polydextran Particle Omental Uptake protocol
+- describe Diabetes Models
+- describe Streptozotocin-induced diabetes
+- describe spontaneous diabetes
+- describe insulin treatment
+- describe Blood Glucose Monitoring
+- describe anesthesia
+- describe animal studies
+- describe results
+- illustrate results
+- discuss results
+- conclude animal studies
+- introduce treatment of diabetic NOD mice with allogeneic NIs
+- describe STZ diabetic C57B1/6 mouse treatment with syngeneic NIs, ASC-clusters or IC-clusters
+- describe treatment of non-diabetic mice with mouse or canine NIs
+- summarize results of NI treatment in diabetic mice
+- describe collaboration of islet cells and M/ASCs within NIs
+- describe in vivo redifferentiation of NIs
+- introduce example 7: in vivo, dose finding and proof of principle studies in STZ-diabetic NOD/SCID mice
+- describe rationale for example 7
+- describe methods for example 7
+- describe diabetes model for example 7
+- describe treatment protocols for example 7
+- describe NOD allogeneic treatment
+- describe C57B1/6 syngeneic treatment of STZ diabetic animals
+- describe treatment of non-diabetic mice
+- describe mouse Neo-Islet administration
+- describe canine Neo-Islet administration
+- describe NOD/SCID recent onset diabetes, xenogeneic treatment
+- describe NOD/SCID remote onset diabetes, xenogeneic treatment
+- describe intraperitoneal glucose tolerance tests
+- describe results of example 7
+- describe removal of Neo-Islets
+- describe return of hyperglycemia
+- describe confirmation of Neo-Islets' role in treatment
+- describe significance of results
+- describe implications for T1DM treatment
+- describe potential applications of NIs
+- describe limitations of current study
+- describe future directions for research
+- describe potential for human clinical trials
+- conclude with summary of findings
+- describe ELISA for canine insulin
+- describe antibody response test
+- describe embedding Neo-Islets in Gelfoam
+- describe in vivo imaging
+- present results of Neo-Islet treatment
+- describe dose response of Neo-Islets
+- describe blood glucose levels of treated animals
+- describe mortality rates of treated animals
+- describe intraperitoneal glucose tolerance tests
+- describe detection of canine insulin in sera
+- describe removal of Neo-Islets and reestablishment of hyperglycemia
+- conclude that Neo-Islets provide durable and reversible euglycemia
+- introduce rationale for Example 8
+- describe methods for generating and tracking Neo-Islets
+- describe diabetes model and allogeneic treatment
+- describe canine Neo-Islet administration
+- describe syngeneic Neo-Islet administration
+- describe immunohistochemistry
+- present results of Neo-Islet tracking and angiogenesis
+- conclude that Neo-Islets engraft in the omentum and produce insulin
+- introduce examples
+- examine engraftment pattern
+- detect eGFP+Ms
+- stain for insulin
+- show no tumor formation
+- conclude Neo-Islet effectiveness
+- introduce Example 9
+- form Neo-Islets
+- create diabetes model
+- treat with Neo-Islets or vehicle
+- perform IP GTTs and Insulin ELISAs
+- present results
+- conclude Neo-Islet effectiveness
+- introduce Example 10
+- generate mouse Neo-Islets
+- treat spontaneously diabetic NOD mice
+- assess blood glucose levels
+- conclude Neo-Islet effectiveness
+- introduce Example 11
+- test for hypoglycemia
+- administer Neo-Islets
+- assess blood glucose levels
+- conclude Neo-Islet safety
+- introduce Example 12
+- inhibit autoimmune response
+- motivate ICs protection
+- summarize autoimmune destruction
+- describe allo-ASC administration
+- motivate Tgfb 1 expression
+- describe IDO upregulation
+- examine MSC immunomodulatory mechanisms
+- treat diabetic NOD mice
+- harvest and test organs
+- analyze FACS and IHC results
+- conclude NI treatment effects
+- conclude Neo-Islets immune isolation
+- describe Example 13 treatment
+- describe Example 14 treatment
+- describe Example 15 treatment
+- describe Example 16 treatment
+- describe Example 17 treatment
+- describe Example 18 treatment
+- describe Example 19 treatment
+- describe Example 20 treatment
+- describe Example 21 treatment
+- describe Example 22 treatment
+- describe Example 23 treatment
+- describe Example 24 treatment
+- describe Example 25 treatment
+- describe Example 26 treatment
+- describe Example 27 treatment
+- describe Example 28 treatment
+- describe Example 29 administration
+- describe Example 30 administration
+- describe Example 31 administration
+

@@ -1,0 +1,111 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce mobile communication generations
+
+## SUMMARY
+
+- introduce polar encoding and decoding
+- describe encoding node selection
+- explain relaxation group determination
+- outline adaptive polar component code selection
+
+## DETAILED DESCRIPTION
+
+- introduce communications system
+- describe wireless transmit/receive units (WTRUs)
+- describe base stations
+- describe air interface
+- describe multiple access schemes
+- describe radio technologies (e.g. UMTS, LTE, NR)
+- describe base station and WTRU implementation
+- describe multiple radio access technologies
+- describe radio technologies (e.g. IEEE 802.11, IEEE 802.16)
+- describe base station 114b and WTRUs 102c, 102d
+- describe RAN and CN
+- describe CN functionality
+- describe WTRU components (e.g. processor, transceiver, transmit/receive element)
+- describe WTRU multi-mode capabilities
+- describe WTRU peripherals (e.g. GPS, display, keypad)
+- describe WTRU power source
+- describe WTRU location determination
+- describe RAN and CN components (e.g. eNode-Bs, ON)
+- describe eNode-Bs and CN components
+- describe MME functions
+- describe SGW functions
+- describe PGW functions
+- describe WLAN infrastructure and operation modes
+- describe HT and VHT STAs
+- describe sub 1 GHz modes of operation
+- describe primary channel operation
+- describe available frequency bands for 802.11ah
+- describe RAN and CN components
+- describe gNB functions
+- describe WTRU communication with gNBs
+- describe AMF functions
+- describe SMF functions
+- describe UPF functions
+- describe CN facilitation of communications with other networks
+- describe emulation devices and testing
+- introduce polar codes
+- motivate polar codes
+- describe polar code encoding
+- define polar code parameters
+- explain polar code decoding
+- categorize polar code decoding
+- describe SC polar decoding
+- describe BP polar decoding
+- introduce relaxation
+- describe relaxation operation
+- explain graph representation of polar code
+- describe polar code encoding and decoding
+- explain error probability calculation
+- describe relaxation schemes
+- motivate relaxation
+- describe challenges in FEC technologies
+- describe drawbacks of conventional relaxation schemes
+- introduce polar encoder and decoder implementations
+- describe relaxation implementation
+- explain initial relaxation attribute selection
+- describe encoding operation with relaxation
+- explain relaxation attribute determination
+- describe initial relaxation requirements
+- define polar code construction
+- motivate reliability sequence of input bit indexes
+- determine initial relaxation attribute
+- select good and bad channel relaxation nodes
+- define complexity reduction ratio
+- determine relaxation groups
+- check consecutive ones for relaxation group
+- apply relaxation in first level
+- generalize relaxation to other levels
+- determine final relaxation level
+- determine next level relaxation attribute
+- apply bit-reversed interleaver
+- determine connected node
+- perform encoding operation
+- describe compact relaxation attribute determination
+- perform good channel relaxation
+- exclude single relaxation attribute
+- extend relaxation technique
+- perform rate matching
+- describe puncturing and shortening
+- describe polar encoding relaxation
+- introduce shortening and puncturing
+- explain repetition in polar code
+- describe decoding with relaxation
+- categorize decoding implementations
+- modify message passing for relaxation
+- employ relaxation in decoding operation
+- present numerical results
+- summarize simulation conditions
+- describe evaluated implementations
+- observe coding gain by relaxation
+- explain performance improvement
+- describe Bhattacharyya code construction
+- perform Bhattacharyya code construction for relaxation
+- describe adaptive polar encoder and decoder complexity reduction
+- configure adaptive complexity reduction
+- show trade-off relation between complexity reduction and BLER performance
+

@@ -1,0 +1,123 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous vehicle
+
+## DETAILED DESCRIPTION
+
+- clarify purpose of description
+- explain diagram conventions
+- define terminology usage
+- explain communication and messaging
+- clarify conditional language usage
+- introduce embodiment descriptions
+
+### General Overview
+
+- introduce autonomous vehicle
+- describe sensors and data processing
+- motivate prediction and determination of agent importance
+- describe environment and components
+- illustrate example environment
+- describe vehicles and their components
+- describe objects and their characteristics
+- describe routes and their characteristics
+- describe area and its characteristics
+- describe vehicle-to-infrastructure device
+- describe network and its characteristics
+- describe remote autonomous vehicle system
+- describe fleet management system
+- describe vehicle-to-infrastructure system
+- introduce camera system
+- describe camera features
+- explain camera functionality
+- introduce LiDAR sensors
+- describe LiDAR sensor features
+- explain LiDAR sensor functionality
+- introduce radar sensors
+- describe radar sensor features
+- explain radar sensor functionality
+- introduce microphones
+- describe microphone features
+- explain microphone functionality
+- introduce communication device
+- describe autonomous vehicle compute
+- describe safety controller and DBW system
+- introduce device components
+- describe input interface
+- describe output interface
+- describe communication interface
+- describe processor and memory
+- describe software instructions
+- describe data storage
+- introduce autonomous vehicle compute
+- describe perception system
+- describe planning system
+- describe localization system
+- describe control system
+- describe database
+- describe machine learning model implementation
+- describe data storage in database
+- introduce database implementation
+- describe convolutional neural network architecture
+- motivate subsampling layer
+- explain convolution operations
+- describe data processing before input to CNN
+- outline output generation
+- illustrate feature value identification
+- describe CNN training
+- introduce example operation of CNN
+- perform first convolution function
+- perform first subsampling function
+- perform second convolution function
+- introduce CNN architecture
+- describe CNN layers and operations
+- illustrate transformer model architecture
+- explain self-attention mechanism
+- describe encoder and decoder stacks
+- illustrate system for predicting agent importance score
+- describe agent importance prediction model
+- explain trajectory prediction and attention mechanisms
+- illustrate vehicle controller and sensor components
+- describe agent importance prediction model components
+- explain agent-to-agent attention system
+- illustrate transformer attention system
+- describe trajectory prediction model
+- explain agent interaction model
+- illustrate interaction model architecture
+- describe importance score calculation
+- explain attention vector calculation
+- illustrate single attention layer
+- describe multiple attention layers
+- conclude agent importance prediction model
+- define attention vector
+- derive attention vector equation
+- describe multi-layer attention model
+- illustrate experimental results
+- apply agent importance scores
+- illustrate distribution of ego trajectory delta
+- illustrate distribution of attention values
+- summarize quantile distribution of attention values and trajectory angular delta
+- illustrate plots of average normalized attention value
+- perform ablation study of aggregation functions
+- conclude robustness of techniques to aggregation function selection
+- introduce process for predicting agent importance score
+- process input features associated with agents
+- determine output features associated with agents
+- predict importance score of each agent
+- determine movements of vehicle based on importance scores
+- describe system for predicting agent importance score
+- describe non-transitory computer-readable medium for predicting agent importance score
+- describe method for predicting agent importance score
+- describe further non-limiting aspects or embodiments
+- describe Clause 1: system for predicting agent importance score
+- describe Clause 2: vehicle controller with agent importance prediction model
+- describe Clause 3: agent importance prediction model with attention system and trajectory prediction model
+- describe Clause 4: trajectory prediction model with single attention layer
+- describe Clause 5: trajectory prediction model with multiple attention layers
+- describe Clause 6: sensing device positioned on vehicle
+- describe Clause 7: sensing device with camera, motion sensor, or scanner
+- describe Clause 8: method for predicting agent importance score
+- describe Clause 9-20: further clauses of method for predicting agent importance score
+

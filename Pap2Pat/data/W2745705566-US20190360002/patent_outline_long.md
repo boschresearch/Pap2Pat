@@ -1,0 +1,601 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define genetic engineering tools
+
+## BACKGROUND TO THE INVENTION
+
+- introduce CRISPR-Cas system
+- describe adaptive immune system
+- summarize CRISPR-Cas system classes
+- motivate Cas9 for genome editing
+- describe Cas9 use in eukaryotic cells
+- describe Cas9 use in bacteria
+- introduce Targeting construct
+- describe selection for recombination events
+- establish CRISPR-Cas mediated genome editing
+- motivate need for improved sequence-specific nucleic acid detection
+- describe limitations of Cas9 in thermophilic organisms
+- summarize presence of Cas9 in bacteria
+- describe discovery of thermostable Cas9 variants
+- introduce optimised PAM sequences
+- describe phylogenetic re-assessment of Geobacillus
+- summarize CRISPR-Cas systems
+- motivate need for Cas9-based editing tool for obligate thermophiles
+
+## SUMMARY OF THE INVENTION
+
+- introduce ThermoCas9
+- describe its in vitro activity
+- demonstrate importance of sgRNA structure for thermostability
+- apply ThermoCas9 for in vivo genome editing
+- provide method of modifying genetic material of eukaryotic cell
+- integrate polynucleotide encoding ThermoCas9 into genome
+- transform cell with expression vector comprising guide RNA
+- transform cell with repair oligonucleotide
+- describe active fragments of ThermoCas9
+- modify genome of cell first to express ThermoCas9
+- transform cell with expression vector for gRNA
+- transform cell with repair oligonucleotide simultaneously
+- provide alternative method of modifying genetic material
+- integrate polynucleotide encoding ThermoCas9 into genome
+- transform cell with expression vector comprising guide RNA
+- describe repair oligonucleotide
+- use double-stranded DNA repair oligo
+- use repair oligo to achieve deletion of desired locus
+- describe promoters
+- use constitutive promoter
+- use inducible promoter
+- describe combinations of promoters
+- transform cell with expression plasmid(s) and/or repair-oligo
+- provide method of modifying genetic material of prokaryotic host
+- provide polynucleotide expression vector
+- describe Cas9 nuclease
+- describe guide RNA
+- describe first promoter
+- describe expression vector with HR fragment
+- describe inducible promoter
+- describe constitutive promoter
+- describe HR fragment
+- describe insertion element
+- provide method of modifying genetic material of prokaryotic organism
+- transform organism with expression vector
+- describe temperatures for transformation and induction
+- provide isolated CRISPR-associated (Cas) protein or polypeptide
+- describe motifs of Cas protein or polypeptide
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list peptide sequences
+- list Cas protein motifs
+- list Cas protein motifs
+- define Cas protein
+- describe motifs
+- provide isolated Cas protein
+- describe temperature range
+- describe target polynucleotide
+- describe target nucleic acid sequence
+- describe non-target nucleic acid strand
+- describe protospacer adjacent motif (PAM) sequence
+- provide examples of PAM sequences
+- describe Cas protein binding
+- describe temperature range for binding
+- describe Cas protein cleaving
+- describe Cas protein marking
+- describe Cas protein modifying
+- describe uses of Cas protein
+- describe method of binding
+- describe method of cleaving
+- describe method of marking
+- describe method of modifying
+- describe in vivo uses
+- describe in vitro uses
+- describe expression of Cas protein
+- describe percentage identity with SEQ ID NO: 1
+- describe characterisation of Cas protein
+- describe use of targeting RNA molecule
+- describe method of forming ribonucleoprotein complex
+- describe concentration of Cas protein
+- describe PAM sequence with adenine in eighth position
+- describe PAM sequence with cytosine in fifth position
+- describe nucleic acids encoding Cas protein
+- describe conservative amino acid substitutions
+- describe conservative nucleic acid substitutions
+- describe transformed cell
+- describe kits for carrying out the invention
+
+## RNA Guides and Target Sequences
+
+- introduce Cas proteins and target nucleic acids
+- describe target nucleic acid types
+- introduce guide RNAs (gRNAs) and targeting RNA molecules
+- describe PAM sequences and their importance
+- provide PAM sequence examples
+- describe ribonucleoprotein complex composition
+- outline use of ribonucleoprotein complex
+- describe method of binding, cleaving, marking or modifying target nucleic acid
+- introduce transformed non-human cells
+- describe RNA molecule characteristics
+- provide RNA molecule length ranges
+- describe preferred RNA molecule length ranges
+- introduce complementary portion of RNA molecule
+- provide complementary portion length ranges
+- describe RNA molecule specificity and affinity
+- provide dissociation constant (Kd) ranges
+- introduce CRISPR RNA (crRNA) molecules
+- describe crRNA structure
+- introduce type I-E and type II CRISPR systems
+- describe RNA molecule design based on gene sequence information
+- introduce SEED portion of spacer sequence
+- describe SEED sequence requirements
+- introduce method of detecting single base change in target nucleic acid
+- describe PAM sequence design rule
+- provide PAM sequence examples for different Cas9 variants
+- describe influence of PAM sequence on temperature range
+- define RNA guides and target sequences
+- specify PAM sequences for broad temperature range
+- describe targeting RNA molecule length
+- specify ribonucleoprotein complex components
+- describe hairpin and tetranucleotide loop forming sequence
+- specify non-target nucleic acid strand PAM sequences
+- describe limitations of mesophilic SpCas9
+- introduce ThermoCas9 and its temperature range
+- describe ThermoCas9's ability to manipulate temperature range
+- identify factors conferring thermostability of ThermoCas9
+- describe PAM preferences of ThermoCas9
+- specify PAM sequences for binding, cleavage, marking, or modification
+- describe PAM sequence alteration for efficient binding, cleavage, marking, or modification
+- specify PAM sequences for target binding, cleavage, marking, or modification at 30°C
+- describe PAM sequence options for target binding, cleavage, marking, or modification
+- define PAM sequences of the invention
+- describe PAM sequence composition
+- specify nucleoprotein complex components
+- describe ribonucleoprotein complex association with target nucleic acid strand
+- conclude nucleoprotein complex description
+
+### Binding, Cleavage, Marking and Modifying Temperatures
+
+- introduce Cas proteins of the invention
+- describe optimal temperature range
+- highlight advantage in genetic engineering
+- describe thermostability of Cas proteins
+- discuss application in molecular biology techniques
+- describe transcriptional control of target sequences
+- discuss gene-silencing tool
+- specify temperature range for nucleic acid binding
+- specify temperature range for nucleic acid cleavage
+- specify temperature range for nucleic acid marking
+- specify temperature range for nucleic acid modifying
+- describe PAM sequence
+- describe target RNA molecules
+- specify temperature range for binding, cleaving, marking and modifying
+- describe alteration of PAM sequence for efficient cleavage
+- describe tracrRNA and crRNA
+- specify length of crRNA
+- describe synthetic linker
+- describe chimeric single-guide RNA (sgRNA)
+- describe tracrRNA and hairpin structures
+- describe deletion of tracrRNA part
+- describe influence of tracrRNA structure on thermostability
+- describe modification of tracrRNA for efficient binding, cleavage, marking and modifying
+- specify temperature range for activity with modified tracrRNA
+- describe sgRNA sequence with one or more stem-loop structures
+- describe sgRNA sequence with two or more stem-loop structures
+- describe sgRNA sequence with three or more stem-loop structures
+- describe preferred sgRNA sequence
+- describe importance of full-length tracrRNA for optimal ThermoCas9-based DNA cleavage
+- describe removal of hairpins and its effect on cleavage efficiency
+- describe stability of ThermoCas9 associated with sgRNA
+- describe variation of spacer sequence length
+- describe preferred spacer length
+
+### Functional Moieties
+
+- introduce functional moieties
+- describe fusion or linking of functional moieties to Cas protein
+- describe types of functional moieties
+- provide example of marker protein
+
+### Nuclease Activity
+
+- define Cas ribonucleoprotein
+- describe nuclease activity
+- specify temperature range
+- describe binding, cleavage, marking or modification
+- specify nucleic acid types
+- describe sequence-specific cleavage
+- explain generation of double strand breaks
+- describe endogenous cellular repair machinery
+- inactivate nuclease activity
+- link or fuse to functional moiety
+- reduce mis-targeting events
+- inactivate native Cas9 nuclease activity
+- provide heterologous nuclease
+- fuse to FokI nuclease domain
+- provide protein complex
+- target opposite strands of target genomic DNA
+- attenuate nuclease activity
+- utilise for diagnostic test
+- inactivate and fuse to marker protein
+- visualise target sequence
+- describe catalytically inactive Cas protein
+- repress gene expression
+- create nickase
+- mutate HNH or RuvC catalytic domains
+- create catalytically dead Cas9 variant
+- use for transcriptional silencing
+- facilitate metabolic studies
+- provide marker protein
+- visualise target sequence
+- quantify transcriptional activity
+- use in homologous recombination method
+- describe HR mediated genome modification
+- prevent gtCas9 ribonuclease complex action
+- modify or eliminate PAM sequence
+- describe HR to modify microbial genome
+
+## Expression Vectors
+
+- introduce expression vectors
+- describe expression construct
+- define targeting RNA molecule
+- discuss expression vector components
+- list regulatory elements
+- describe promoters
+- discuss inducible promoters
+- introduce selectable markers
+- describe method of modifying target nucleic acid
+- discuss transfection, transformation, or transduction
+- introduce mRNA encoding Cas protein
+- describe targeting RNA introduction
+- discuss ribonucleoprotein complex formation
+- introduce method of modifying target nucleic acid
+- discuss in vitro and in vivo modification
+- describe delivery systems
+- introduce Adeno-associated virus (AAV) delivery
+- discuss method of modifying target nucleic acid
+- introduce transforming, transfecting, or transducing cells
+- describe expression vector components
+- discuss targeting RNA delivery
+- introduce method of modifying target nucleic acid
+- describe marker protein or reporter protein
+- discuss fluorescent protein markers
+- introduce method of visualizing target locus
+- discuss nuclease or helicase-nuclease functional moiety
+- introduce method of non-homologous end joining
+- discuss method of homologous recombination
+- introduce method of modifying gene expression
+- discuss DNA modifying enzyme functional moiety
+- introduce method of modifying gene expression
+- discuss ribonuclease functional moiety
+
+## Host Cells
+
+- introduce host cells
+- describe applicability of host cells
+- define transformed cell
+- specify Cas protein or polypeptide
+- specify targeting RNA molecule
+- describe expression vector
+- list prokaryotic or eukaryotic cells
+- specify commonly used host cells
+- prefer prokaryotic cell, fungal cell, plant cell, protist cell or animal cell
+- exclude human cells
+- describe preferred host cells
+- specify bacterial cells
+- specify thermophilic bacteria
+- list thermophilic bacteria species
+- describe method or use for modifying genomes
+- specify mesophilic bacteria
+- list mesophilic bacteria species
+- specify Pseudomonas putida
+- describe method or use for modifying yeast or fungi
+- specify mesophilic fungal species
+- list Aspergillus species
+- specify Candida species
+- list yeast species
+- specify Hansenula species
+- specify Penicillium species
+- specify Yarrowia species
+- describe method or use for modifying thermophilic yeast or fungi
+- specify thermophilic fungal species
+- list thermophilic Aspergillus species
+- list thermophilic Candida species
+- list thermophilic yeast species
+- specify thermophilic microbes
+- list thermophilic bacilli
+- list thermophilic clostridia
+- specify preferred thermophilic microbes
+- specify mesophilic bacteria
+- provide polynucleotide and amino acid sequences of Cas proteins
+
+## DETAILED DESCRIPTION
+
+### Example 1: Isolation of Geobacillus thermodenitrificans
+
+- isolate G. thermodenitrificans
+
+### Example 2: Defining the Essential Consensus Sequences for Cas9 in Geobacillus thermodenitrificans
+
+- perform database searches
+- align sequences
+- construct Neighbour-Joining tree
+- analyze protein domain homology
+
+### Example 3: Identifying Core Amino Acid Motifs which are Essential for the Function of CAS9 and Those which Confer Thermostability in Thermophilic Cas9 Nucleases
+
+- align protein sequences
+- identify conserved residues
+- determine protein architecture
+
+### Example 4: Determination of the PAM Sequence of G. thermodenitrificans gtCas9
+
+- establish CRISPR system function
+- describe Cas9 protein function
+- explain crRNA molecule function
+- predict CRISPR array
+- design tracrRNA-expressing module
+- design chimeric sgRNA module
+- describe transcriptional terminator
+
+### Example 5: Target Generation with Randomized PAM
+
+- amplify spacers by PCR
+- generate protospacers with randomized PAM sequences
+
+### Example 6: In Vitro Determination of PAM Sequences for gtCas9
+
+- construct pRham:Cas9gt vector
+- transform E. cloni cells with pRham:Cas9gt vector
+- isolate plasmids from E. cloni cells
+- verify cas9gt gene sequence
+- express gtCas9 in E. cloni cells
+- prepare cell free extract (CFE) from E. cloni cells
+- design sgRNA targeting plasmid library
+- synthesize pT7_sgRNA DNA module
+- transform DH5a E. coli cells with pUC57:pT7_sgRNA vector
+- isolate plasmid from DH5a E. coli cells
+- amplify pT7_sgRNA module by PCR
+- perform in vitro transcription of pT7_sgRNA module
+- purify sgRNA
+- design and construct 7 nt long PAM library
+- prepare SpPAM double stranded DNA insert
+- ligate SpPAM insert with pNW33n vector
+- transform DH10b cells with pNW33n:SpPAM vector
+- isolate plasmid from DH10b cells
+- linearize plasmid with SapI restriction enzyme
+- set up cleavage reaction with gtCas9, sgRNA, and PAM library
+- analyze cleavage reaction products by agarose gel electrophoresis
+- tag PAM-containing DNA fragments for sequencing
+- perform A-tailing with Taq polymerase
+- analyze sequencing results and determine candidate PAM sequences
+
+### Example 7: In Silico PAM Prediction for gtCas9
+
+- identify candidate CRISPR loci in G. thermodenitrificans T12 genome
+- search for matching protospacers in genome databases
+- analyze flanking regions of protospacer hits for consensus PAM sequences
+
+### Example 8: Determination of 8 Nucleotide Long PAM Sequences for gtCas9
+
+- design specific 8 nucleotide-long PAM sequence variants
+- perform in vitro cleavage assay with gtCas9 and PAM sequence variants
+- analyze effect of gtCas9 concentration on cleavage activity
+- analyze effect of temperature on gtCas9 activity
+- determine optimal temperature range for gtCas9 activity
+
+### Example 9: In Vivo Genome Editing of Bacillus smithii ET138 with gtCas9 and 8 Nucleotide Length PAM Sequences
+
+- design experiment to confirm gtCas9 recognition of 8 nucleotide PAMs in vivo
+- describe method of homologous recombination template construct
+- introduce gtCas9 and sgRNA in homologous recombination construct
+- describe pNW33n plasmid as backbone for cloning
+- clone cas9_(gt) gene under glucose repressible promoter
+- clone 1 kb upstream and 1 kb downstream regions of pyrF gene
+- clone sgRNA expressing module under constitutive promoter
+- generate three separate constructs with different spacer sequences
+- describe three different targeted protospacers with PAM sequences
+- transform B. smithii ET138 cells with constructs
+- plate on selection plates and obtain results
+- analyze results of transformation with construct number 3
+- analyze results of transformation with construct number 1
+- analyze results of transformation with construct number 2
+- conclude that gtCas9 is active at 55° C. in vivo
+- suggest use of gtCas9 as genome editing tool at 55° C.
+- describe results of colony PCR to screen for pyrF gene deletion
+- interpret results of transformation efficiency and cell death
+- conclude that PAM sequences are recognised by gtCas9
+- describe FIG. 12 and FIG. 13
+- describe FIG. 14
+- describe results of transformation with construct number 2
+- conclude that ACGGCCAA PAM sequence is recognised by gtCas9
+- introduce ThermoCas9 and its application
+- describe tracrRNA structure and its effect on DNA cleavage
+- evaluate effect of hairpin truncation on cleavage efficiency
+- test effect of temperature on cleavage efficiency
+- analyze thermostability of ThermoCas9
+- compare ThermoCas9 to SpCas9
+- evaluate divalent cation contribution to DNA cleavage
+- test ThermoCas9 on single-stranded DNA substrates
+- introduce ThermoCas9-based gene deletion in B. smithii
+- describe plasmid construction for ThermoCas9-based gene deletion
+- evaluate ThermoCas9 activity in B. smithii
+- analyze homologous recombination efficiency in B. smithii
+- introduce ThermoCas9-based gene deletion in P. putida
+- describe plasmid construction for ThermoCas9-based gene deletion in P. putida
+- evaluate ThermoCas9 activity in P. putida
+- analyze deletion genotype in P. putida
+- introduce Thermo-dCas9-based gene silencing
+- describe construction of Thermo-dCas9-based CRISPRi tool
+- evaluate Thermo-dCas9-based transcriptional silencing
+- analyze growth of silenced cultures
+- summarize CRISPR-Cas applications
+- describe limitations of CRISPR-Cas technologies
+- introduce ThermoCas9 as a solution to temperature limitations
+- describe characterization of ThermoCas9
+- analyze PAM preferences of ThermoCas9
+- describe importance of sgRNA guide for ThermoCas9 activity
+- summarize development of genome engineering tools
+- describe application of ThermoCas9 in thermophilic and mesophilic microorganisms
+- discuss value of screening natural resources for novel enzymes
+- describe alternative approach to constructing thermophilic Cas9 protein
+- summarize potential of ThermoCas9-based genome editing technologies
+- discuss new possibilities for using Cas9 technologies
+- describe significance of ThermoCas9 in genome editing
+- conclude ThermoCas9 as a powerful genome engineering tool
+- introduce bacterial strains and growth conditions
+- describe ThermoCas9 expression and purification
+- outline in vitro synthesis of sgRNA
+- detail in vitro cleavage assay
+- construct PAM library for in vitro PAM screen
+- perform PAM screening assay
+- describe editing and silencing constructs for B. smithii and P. putida
+- construct pThermoCas9_ctrl, pThermoCas9_bsΔpyrF1, and pThermoCas9_bsΔpyr
+- construct pThermoCas9i_ldhL vectors
+- construct pThermoCas9i_ctrl vector
+- construct P. putida KT2440 vector pThermoCas9_ppΔpyrF
+- outline editing protocol for P. putida
+- describe RNA isolation
+- quantify mRNA by RT-qPCR
+- perform HPLC
+- introduce ThermoCas9 in Geobacillus thermoglucosidans
+- describe single-plasmid approach
+- detail thermoCas9 gene/sgRNA on the same plasmid
+- place thermoCas9 gene under control of β-glucosidase promoter
+- add incubation step at elevated temperature
+- choose G. thermoglucosidans DSM 2542T 960 bp ldhL gene as deletion target
+- generate upstream and downstream fragments of 0.9 kb by PCR
+- amplify vector backbone in two parts using pThermoCas9_ctrl as template
+- introduce non-targeting spacer sequence
+- generate one fragment using primer combination
+- generate another fragment using primer combination
+- describe PCR conditions
+- detail primer combinations
+- outline template usage
+- describe annealing temperature
+- detail chromosomal DNA of G. thermoglucosidans ΔsigF as template
+- describe pThermoCas9_ctrl as template
+- introduce non-targeting spacer sequence
+- describe primer combinations
+- detail template usage
+- introduce example 9
+- amplify promoter
+- create PCR fragments
+- assemble plasmid
+- transform plasmid
+- extract plasmid
+- confirm plasmid integrity
+- transform plasmid to G. thermoglucosidans
+- induce beta-glucosidase promoter
+- perform colony PCR
+- introduce example 19
+- evaluate ThermoCas9
+- amplify fragments
+- assemble plasmid
+- transform plasmid
+- extract plasmid
+- confirm plasmid integrity
+- transform plasmid to B. coagulans
+- induce beta-glucosidase promoter
+- perform colony PCR
+- introduce example 20
+- evaluate ThermoCas9
+- amplify fragments
+- assemble plasmid
+- transform plasmid
+- extract plasmid
+- confirm plasmid integrity
+- transform plasmid to P. putida
+- induce Pm promoter
+- perform colony PCR
+- introduce example 21
+- evaluate ThermoCas9
+- describe genome editing
+- construct gRNA plasmid
+- assemble plasmid fragments
+- transform E. coli
+- extract plasmid DNA
+- construct repair oligo
+- co-transform yeast
+- analyze transformants
+- demonstrate genome editing
+- introduce numbered paragraphs
+- describe Cas protein
+- describe Cas protein fragment
+- describe Cas protein temperature range
+- describe DNA cleavage
+- describe Cas protein source
+- describe ribonucleoprotein complex
+- describe targeting RNA molecule
+- describe RNA molecule length
+- describe target sequence length
+- describe protein complex
+- describe nucleic acid molecule encoding Cas protein
+- define expression vector
+- specify nucleotide sequence
+- describe method of modifying target nucleic acid
+- specify non-human cell
+- describe method of modifying target nucleic acid in non-human cell
+- describe method of modifying target nucleic acid in non-human cell
+- describe method of modifying target nucleic acid with marker protein
+- specify target nucleic acid as DNA
+- specify target nucleic acid as RNA
+- describe method of modifying target nucleic acid with nuclease
+- describe method of silencing gene expression
+- describe method of modifying or deleting and/or inserting nucleotide sequence
+- describe method of modifying gene expression in non-human cell
+- describe method of modifying gene expression in non-human cell
+- specify temperature range for method
+- specify temperature range for method
+- describe method of modifying target nucleic acid in prokaryotic cell
+- describe method of modifying target nucleic acid in eukaryotic cell
+- describe host cell transformed by method
+- use Cas protein for binding, cleaving, marking or modifying target polynucleotide
+- specify temperature range for use
+- specify cleavage of target polynucleotide
+- specify gene silencing of target polynucleotide
+- specify PAM sequence
+- specify PAM sequence
+- specify PAM sequence
+- specify temperature range for use
+- specify Cas protein obtainable from bacterium, archaeon or virus
+- define genome editing method
+- specify Cas9 nuclease
+- describe functional moiety
+- specify nuclease domain
+- specify marker protein
+- describe use in vivo
+- specify thermophilic organism
+- specify mesophilic organism
+- describe gene expression modification
+- describe transformed non-human cell
+- specify CRISPR-associated protein
+- describe targeting RNA molecule
+- specify expression vector
+- describe binding, cleaving, marking or modifying
+- specify temperature range
+- describe cleavage of target polynucleotide
+- describe gene silencing
+- specify PAM sequence
+- describe binding, cleaving, marking or modifying at temperature
+- specify Cas protein origin
+- specify cell type
+- describe targeting RNA molecule composition
+- specify targeting RNA molecule length
+- specify target nucleic acid sequence length
+- describe Cas protein with functional moiety
+- describe protein complex with functional moiety
+- specify functional moiety fusion
+- describe functional moiety options
+- describe nucleoprotein complex
+- describe nucleoprotein complex formation
+

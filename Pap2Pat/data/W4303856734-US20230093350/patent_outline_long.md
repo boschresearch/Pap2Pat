@@ -1,0 +1,201 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND
+
+- introduce tissue oxygenation
+- describe fMRI
+- describe fNIRS
+- limitations of hemodynamic neuroimaging
+- introduce Cytochrome
+- describe CCO function
+- describe CCO redox state
+- importance of CCO measurement
+- difficulties of CCO measurement
+- prior art of CCO measurement
+- limitations of prior art
+- need for accurate CCO measurement
+- need for non-invasive CCO measurement
+
+## SUMMARY OF THE INVENTION
+
+- introduce apparatus for measuring hemodynamic/metabolic function
+- describe super-continuum laser
+- describe fiber amplifier stage
+- describe probe configuration
+- describe detector and signal generation
+- describe processor and machine readable instructions
+- determine metabolic state
+- determine oxygenation state
+- improve signal-to-noise ratio
+- describe dual-arm differential measurement technique
+- describe lock-in technique
+- describe polarizer
+- identify organ or tissue functionality
+
+## DETAILED DESCRIPTION
+
+- introduce techniques for measuring metabolic tissue state and tissue oxygenation
+- describe Cytochrome-C-Oxidase (CCO) and its relation to neuron's internal metabolic activity
+- explain measurement of oxygenation by measuring oxygenated hemoglobin (HbO) and deoxygenated (HbR) hemoglobin
+- describe correlations and dis-correlations between CCO and HbO and HbR
+- highlight advantages over conventional techniques
+- describe ability to distinguish CCO from hemodynamic response, skin interference, and motion artifacts
+- introduce super-continuum laser infrared spectroscopy system for non-invasive interrogation of redox state of CCO enzyme
+- describe all-fiber integrated, super-continuum light source
+- explain reduction in motion artifacts
+- describe simultaneous measurement of HbO and HbR
+- highlight improvement in signal-to-noise ratio (SNR)
+- describe enhancement of SNR by deploying pulsed super-continuum laser source and detection system
+- highlight high brightness and fiber-delivery of SCL systems
+- describe clinical applications and deeper brain penetration
+- highlight ability to distinguish CCO signal from clutter or interference
+- describe SCL system configuration with two-arm differential set-up
+- quantify sensitivity and selectivity of CCO measurements
+- describe application to other organs and tissues
+- highlight use in early detection of brain injury/neuronal dysfunction
+- describe monitoring of neuronal metabolism and cerebral oxygenation
+- highlight applications in scenarios with risk of brain ischemia or injury
+- introduce FIG. 1, block diagram of optical set-up for in vitro laboratory measurements
+- describe all-fiber integrated super-continuum laser (SCL) and its operation
+- explain chopper and spectrometer functions
+- describe beam splitter and spatial apertures
+- introduce CCO sample and reference arm beams
+- describe detectors and lock-in amplifiers
+- explain data collection and processing
+- introduce FIG. 2A, block-diagram of SCL system
+- describe light source and amplifier stages
+- explain modulational instability initiated super-continuum source
+- describe super-continuum generation fiber and nonlinear mechanisms
+- highlight advantages of SCL systems
+- introduce FIG. 2B, plot of optical output spectrum of SCL
+- describe enhancement factor of SCL sources
+- introduce FIG. 3, plot of spectral density versus wavelength for SCL versus black body radiator
+
+### Empirical Examples
+
+- introduce CCO measurement
+- prepare bovine heart CCO samples
+- describe SCL system setup
+- measure CCO optical absorption spectrum
+- plot CCO absorption spectrum
+- compare to literature data
+- identify CCO spectrum shift
+- plot CCO absorption over time
+- describe SCL system design
+- illustrate SCL system block diagram
+- describe NIR/SWIR SCL light source
+- describe tunable spectrometer
+- describe optical chopper
+- describe polarizer
+- describe beam splitter
+- describe reference arm beam
+- describe sample arm beam
+- describe fiber-based probe
+- illustrate probe ends
+- describe sensor housing
+- describe output fiber
+- describe input fiber
+- describe adjustable spacing distance
+- describe method to measure absolute concentration change
+- collect reflected light
+- determine light attenuation
+- calculate optical pathlength
+- determine extinction coefficients
+- calculate absolute concentration changes
+- describe method to measure metabolic state
+- generate super-continuum emission
+- determine correlation between metabolic and oxygenation states
+- introduce empirical examples
+- describe implementation of method 600
+- explain measurement protocol
+- define term "subject"
+- describe blood pressure test at forearm example
+- illustrate set-up for blood pressure test
+- describe protocol for blood pressure test
+- present results of blood pressure test
+- explain reason for CCO not changing in forearm
+- describe breath holding test at forehead example
+- illustrate set-up for breath holding test
+- describe protocol for breath holding test
+- present results of breath holding test
+- compare SCL system with fNIRS system
+- describe limitations of fNIRS system
+- present correlations between CCO and HbO and HbR
+- describe attention test example
+- illustrate modified CCO probe
+- describe location of modified CCO probe on human subject
+- describe attention test protocol
+- describe cognitive attention test
+- present HbO comparison for fNIRS and SCL systems
+- explain phase shift between two curves
+- discuss correlation between fNIRS and SCL systems
+- summarize results of attention test
+- discuss significance of results
+- conclude empirical examples
+- introduce cognitive attention test example
+- describe SCL system configuration
+- explain data acquisition time and limitations
+- describe data filtering methods
+- illustrate detection time relative to attention test protocol
+- explain slow data acquisition or scan time limitations
+- describe screening filter techniques
+- apply filtering to CCO signal data
+- describe best of 6 data screening method
+- illustrate results of best of 6 screening method
+- describe HbO increasing screening method
+- illustrate results of HbO increasing screening method
+- discuss results of cognitive attention test
+- explain correlations between CCO and HbO/HbR
+- discuss CCO measurements and cellular ATP demand
+- illustrate trends between CCO redox state and cellular ATP demand
+- explain physiological response in local oxygenation
+- discuss frontal lobe activity and oxygenation
+- explain CCO level decrease during attention tasks
+- discuss blood pressure test results
+- discuss breath holding test results
+- explain brain operation during breath holding
+- discuss deviations of expected CCO, HbO, and HbR trends
+- discuss measurement protocols and design
+- describe overall measurement time and periods
+- discuss stimuli applied and/or provided to subjects
+- compare results to previously published studies
+- discuss advantages of SCL system design
+- explain improvement in signal-to-noise ratio
+- describe use of super-continuum laser as light source
+- discuss importance of reference arm and polarizer
+- explain use of lock-in amplifiers
+- discuss adaptability and tunability of SCL system
+- describe potential for further improvement
+- discuss significance of results for brain metabolism and functionality
+- discuss potential applications in diagnosing conditions
+- discuss importance of simultaneous measurements of oxygenation and metabolic demand
+- explain non-invasive nature of SCL system
+- discuss potential for use in various fields
+- discuss potential for further research and development
+- summarize key findings and results
+- conclude with significance and implications of study
+- summarize cognitive attention test
+- describe pilot human study
+- present results of study
+- interpret results
+- describe SCL systems
+- outline applications of SCL systems
+- clarify implementation of components
+- describe logic and routines
+- define hardware module
+- explain mechanical or electronic implementation
+- discuss temporary configuration
+- describe communication between hardware modules
+- outline operations of example methods
+- describe processor-implemented modules
+- discuss distribution of operations
+- clarify geographic location of processors
+- define processing and computing
+- explain meaning of "one embodiment"
+- describe coupled and connected elements
+- discuss modifications and alterations
+

@@ -1,0 +1,438 @@
+{
+    "id": "US20140105232",
+    "authors": [
+        "Kerry Vahala",
+        "Tong Chen",
+        "Hansuek Lee",
+        "Myoung-Gyun Suh"
+    ],
+    "title": "ON-CHIP OPTICAL REFERENCE CAVITY EXHIBITING REDUCED RESONANCE CENTER FREQUENCY FLUCTUATIONS",
+    "date": "2013-03-15 00:00:00",
+    "abstract": "An optical apparatus comprises a waveguide substrate and an optical reference cavity. The optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 cm in length. The RMS resonance frequency fluctuation is less than or about equal to 100 Hz. The Q-factor can be greater than or about equal to 108. The optical waveguide can exhibit optical loss less than or about equal to 0.2 dB/m for propagation of an optical signal along the optical waveguide. The closed loop path can comprise two or more linked spirals greater than or about equal to 1 meter in length and can occupy an area on the waveguide substrate less than or about equal to 5 cm2.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BENEFIT CLAIMS TO RELATED APPLICATIONS",
+                    "paragraphs": [
+                        "This application claims benefit of U.S. provisional App. No. 61/656,285 filed Jun. 6, 2012 in the names of Kerry Vahala, Tong Chen, Hansuek Lee, and Myoung-Gyun Suh, said provisional application being hereby incorporated by reference as if fully set forth herein."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "claim benefit of provisional application"
+                    ],
+                    "num_characters": 263,
+                    "outline_medium": [
+                        "claim benefit of provisional application"
+                    ],
+                    "outline_short": [
+                        "claim benefit of provisional application"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The field of the present invention relates to optical reference cavities. In particular, on-chip optical reference cavities are disclosed that exhibit reduced thermorefractive, thermomechanical, or photothermal frequency fluctuations.",
+                        "The subject matter of the instant application may be related to or enabled by subject matter disclosed in one or more of the following references, each of which is incorporated by reference as if fully set forth herein:\n\n\n- - U.S. Pub. No. 2012/0321245 entitled \u201cSilica-on-silicon waveguides\n    and related fabrication methods\u201d published Dec. 20, 2012 in the\n    names of Vahala et al;\n  - U.S. Pub. No. 2012/0320448 entitled \u201cChip-based frequency comb\n    generator with microwave repetition rate\u201d published Dec. 20, 2012 in\n    the names of Li et al;\n  - U.S. Pat. No. 8,094,987 entitled \u201cSilica-on-silicon waveguides and\n    related fabrication methods\u201d issued Jan. 10, 2012 to Martin Armani;\n  - U.S. Pat. No. 8,045,834 entitled \u201cSilica-on-silicon waveguides and\n    related fabrication methods\u201d issued Oct. 25. 2011 to Painter et al;\n  - U.S. Pub. No. 2009/0285542 entitled \u201cSilica-on-silicon waveguides\n    and related fabrication methods\u201d published Nov. 19, 2009 in the\n    names of Martin Armani et al;\n  - U.S. Pub. No. 2008/0203052 entitled \u201cMethod of fabricating a\n    microresonator\u201d published Aug. 28, 2008 in the names of\n    Hossein-Zadeh et al;\n  - U.S. Pub. No. 2004/0179573 entitled \u201cUltra-high Q micro-resonator\n    and method of fabrication\u201d published Sep. 16, 2004 in the names of\n    Armani et al;\n  - Hansuek Lee, Tong Chen, Jiang Li, Ki Youl Yang, Seokmin Jeon, Oskar\n    Painter, and Kerry J. Vahala, \u201cChemically etched ultrahigh-Q\n    wedge-resonator on a silicon chip,\u201d Nature Photonics 6, 369 (20 May\n    2012);\n  - Hansuek Lee, Tong Chen, Jiang Li, Oskar Painter, & Kerry J. Vahala,\n    \u201cUltra-low-loss optical delay line on a silicon chip,\u201d Nature\n    Communications 3, 867 (29 May 2012);\n  - H. Lee, T. Chen, J. Li, K. Yang, S. Jeon, 0. Painter, and K. Vahala,\n    \u201cUltra-high-Q wedge-resonator on a silicon chip,\u201d arXiv:1112.2196v1\n    (2011);\n  - J. Li, H. Lee, T. Chen, K. J. Vahala, \u201cChip-based Frequency Comb\n    with Microwave Repetition Rate,\u201d Frontiers in Optics Meeting, Paper\n    \\# FWB2 (2011);\n  - H. Lee, T. Chen, J. Li, O. Painter, and K. Vahala, \u201cUltra-High-Q\n    Micro-Cavity on a Silicon Chip,\u201d Frontiers in Optics Meeting, Paper\n    \\# FWS2 (2011);\n  - D. K. Armani, T. J. Kippenberg, S. M. Spillane and K. J. Vahala,\n    \u201cUltra-high-Q toroid microcavity on a chip,\u201d Nature 421, 925-929\n    (2003);\n  - S. B. Papp and S. A. Diddams, \u201cSpectral and temporal\n    characterization of a fused-quartz-microresonator optical frequency\n    comb,\u201d Phys. Rev. A. 84, 053833 (2011);\n  - T. J. Kippenberg, R. Holzwarth, and S. A. Diddams,\n    \u201cMicroresonator-Based Optical Frequency Combs,\u201d Science 332, 555-559\n    (2011);\n  - Xu et al, \u201cArchimedean spiral cavity ring resonators in silicon as\n    ultra-compact optical comb filters,\u201d Optics Express 18, 1937 (2010);\n  - T. Cannon, L. Yang, and K. J. Vahala, \u201cDynamical thermal behavior\n    and thermal self-stability of microcavities,\u201d Optics Express 12,\n    4742 (2004);\n  - Gorodetsky, M. L. & Grudinin, I. S., \u201cFundamental thermal\n    fluctuations in microspheres,\u201d J. Opt. Soc. Am. B 21, 697-705\n    (2004);\n  - J. Alnis, A. Schliesser, C. Y. Wang, J. Hofer, T. J. Kippenberg,\n    and T. W. H\u00e4nsch, \u201cThermal-noise limited laser stabilization to a\n    crystalline whispering-gallery-mode resonator,\u201d arXiv:1102.4227v1\n    (21 Feb. 2011);\n  - H\u00e4nsch, T. & Couillaud, B., \u201cLaser frequency stabilization by\n    polarization spectroscopy of a reflecting reference cavity,\u201d Opt.\n    Commun. 35, 441-444 (1980);\n  - R. W. P. Dreyer, J. L. Hall, F. V. Kowalski, J. Hough, G. M.\n    Ford, A. J. Munley, and H. Ward, \u201cLaser phase and frequency\n    stabilization using an optical resonator,\u201d Appl Phys B 31(2), 97\n    (1983);\n  - Eric D. Black, \u201cAn introduction to Pound-Drever-Hall laser frequency\n    stabilization,\u201d Am J Phys 69(1), 79 (2001); and\n  - T. Udem, R. Holzwarth and T. W. H\u00e4nsch, \u201cOptical frequency\n    metrology,\u201d Nature 416, 233 (2002).",
+                        "There exist many devices and techniques in which an optical reference cavity is employed as a frequency reference. One application of particular interest is locking the output frequency of a laser source to an optical resonance frequency of an optical reference cavity 20 (FIG. 1). A variety of schemes have been developed to achieve such locking. Examples include, inter alia, the H\u00e4nsch-Couillaud method and the Pound-Drever-Hall method.",
+                        "Any resonant optical cavity exhibits multiple resonance frequencies that are spaced by the cavity's free spectral range, which is in turn determined by the optical pathlength of the reference cavity over an operational frequency range (equivalently, an operational wavelength range). Over typical operational wavelength ranges (e.g., a few tens or hundreds of nanometers at so-called optical frequencies), the multiple resonance frequencies can be regarded as substantially uniformly spaced in frequency. The linewidth of the resonances of the reference cavity in part determine the utility of the cavity as a frequency reference. Narrower resonant linewidth results in improved precision of frequency measurement or control using the optical reference cavity. The linewidth is mainly determined by the so-called Q-factor of the optical reference cavity, which is in turn determined primarily by the total round-trip optical loss of the reference cavity. Reference cavity Q-factors exceeding 108 and approaching 109 have been demonstrated in optical reference cavities comprising a closed-loop dielectric waveguide formed on a substrate chip; some examples are disclosed in one or more of the preceding references. Such large Q-factors can yield, for example as shown in FIG. 2, frequency linewidths of only a few hundred kHz (or even down to several tens of kHz) at optical frequencies on the order of 2\u00d71014 Hz (i.e., wavelengths around 1500 nm).",
+                        "Frequency linewidth is not the only determinant of a reference cavity's utility as a frequency reference. Because the optical pathlength of the reference cavity depends on the effective index of the corresponding cavity optical mode and the physical length of the cavity, the multiple resonance frequencies are temperature dependent. Use of an optical reference cavity therefore requires temperature control and stabilization to maintain a sufficiently stable frequency reference. As requirements for the stability of a frequency reference become more and more stringent, however, simple thermal control and stabilization of an optical reference cavity may not be sufficient. Even if the optical reference cavity is maintained at a perfectly invariant bulk temperature, variations or fluctuations in the center frequency of each of the multiple cavity resonances can occur (as in FIG. 3) and can arise from one of several sources. A first source of such fluctuations is the occurrence of localized, transient, statistical fluctuations in the temperature of the reference cavity (i.e., so-called thermorefractive noise). A second source of resonance center frequency fluctuations is the thermal excitation of relatively high frequency (e.g., on the order of 1-100 MHz) vibrational modes of the reference cavity or its supporting structures and coupling of those vibrational modes to the optical modes supported by the reference cavity (i.e., so-called thermomechanical noise). A third source of resonance center frequency fluctuations is the absorption of light circulating in the reference cavity by localized, random defects in the optical material of the reference cavity, which in turn causes localized, intensity dependent heating of the reference cavity (i.e., so-called photothermal noise). These three are major sources of frequency fluctuations in an optical reference cavity realized as a closed-loop dielectric waveguide formed on a substrate chip. Because such on-chip optical reference cavities are desirable for various reasons (e.g., compactness, robustness, manufacturability), it would be desirable to provide on-chip optical reference cavities that exhibit reduced center frequency fluctuations."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce optical reference cavities",
+                        "motivate on-chip optical reference cavities",
+                        "summarize prior art",
+                        "list prior art references",
+                        "describe application of optical reference cavities",
+                        "explain H\u00e4nsch-Couillaud method",
+                        "explain Pound-Drever-Hall method",
+                        "describe resonance frequencies",
+                        "explain Q-factor",
+                        "describe thermal noise",
+                        "describe thermomechanical noise",
+                        "describe photothermal noise",
+                        "motivate reduction of frequency fluctuations",
+                        "describe prior art limitations",
+                        "describe prior art achievements",
+                        "conclude background"
+                    ],
+                    "num_characters": 8277,
+                    "outline_medium": [
+                        "introduce optical reference cavities",
+                        "motivate on-chip optical reference cavities",
+                        "summarize prior art",
+                        "describe limitations of prior art",
+                        "application of optical reference cavities",
+                        "describe H\u00e4nsch-Couillaud method",
+                        "describe Pound-Drever-Hall method",
+                        "motivate need for improved optical reference cavities"
+                    ],
+                    "outline_short": [
+                        "introduce optical reference cavities",
+                        "discuss limitations of prior art",
+                        "motivate on-chip optical reference cavities",
+                        "summarize prior art references"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "An optical apparatus comprises a waveguide substrate and an optical reference cavity. The optical reference cavity exhibits multiple resonance frequencies over an operational wavelength range and can be characterized over the operational wavelength range by a Q-factor and a RMS resonance frequency fluctuation. The optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 cm in length. The RMS resonance frequency fluctuation is less than or about equal to 100 Hz. The Q-factor can be greater than or about equal to 108. The optical waveguide can exhibit optical loss less than or about equal to 0.2 dB/m for propagation of an optical signal along the optical waveguide. The closed loop path can comprise two or more linked spirals greater than or about equal to 1 meter in length and can occupy an area on the waveguide substrate less than or about equal to 5 cm2.",
+                        "A method employing the optical reference cavity comprises: (i) operating a laser source to produce an output optical signal; (ii) coupling a portion of the output optical signal to the optical reference cavity; (iii) generating an error signal based on the interaction of the coupled portion of the optical signal with the optical reference cavity; and (iv) controlling one or more operating parameters of the laser source based on the error signal so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity.",
+                        "Objects and advantages pertaining to on-chip optical reference cavities may become apparent upon referring to the exemplary embodiments illustrated in the drawings and disclosed in the following written description or appended claims.",
+                        "This summary is provided to introduce a selection of concepts in a simplified form that are further described below in the Detailed Description. This Summary is not intended to identify key features or essential features of the claimed subject matter, nor is it intended to be used as an aid in determining the scope of the claimed subject matter.",
+                        "It should be noted that the embodiments depicted in this disclosure are shown only schematically, and that not all features may be shown in full detail or in proper proportion. Certain features or structures may be exaggerated relative to others for clarity. For example, the actual spiral waveguides depicted schematically as having a handful of turns might have dozens, hundreds, or even thousands of turns; the number of turns is reduced in the drawings for clarity. Terms such as horizontal, vertical, up, down, top, bottom, upper, lower, above, below, and so forth are defined relative to the waveguide substrate (which is considered to be below the waveguide). Terms such as lateral, medial, transverse, and longitudinal are defined locally relative to the local optical propagation direction along the waveguide (which is considered to be longitudinal). It should be noted further that the embodiments shown are only examples, and should not be construed as limiting the scope of the written description or appended claims."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce optical apparatus",
+                        "describe optical reference cavity",
+                        "describe method of using optical reference cavity",
+                        "summarize objects and advantages",
+                        "disclaim summary",
+                        "conclude summary"
+                    ],
+                    "num_characters": 3161,
+                    "outline_medium": [
+                        "introduce optical apparatus",
+                        "describe optical reference cavity",
+                        "outline method of using optical reference cavity"
+                    ],
+                    "outline_short": [
+                        "summarize optical apparatus and method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF EMBODIMENTS",
+                    "paragraphs": [
+                        "An embodiment of an optical apparatus according to the present disclosure comprises a waveguide substrate 10 and an optical reference cavity 20 formed on the substrate 10. The optical reference cavity 20 comprises an optical waveguide 30 that is formed on the waveguide substrate 10 and arranged to form a closed loop greater than or about equal to 1 meter in length. The optical reference cavity 20 exhibits multiple resonance frequencies over an operational wavelength range, and can be characterized over the operational wavelength range by a Q-factor and a RMS resonance frequency fluctuation. In accordance with the present disclosure, the Q-factor of the optical reference cavity is greater than or about equal to 108, and the RMS resonance frequency fluctuation is less than or about equal to 100 Hz.",
+                        "In general, any suitable substrate material, waveguide material, or waveguide morphology can be employed provided the performance characteristics recited in the preceding paragraph are met. The center frequency noise is observed to scale inversely with respect to the mode volume of the corresponding resonant optical mode (as in FIG. 4), so lengthening the closed loop optical reference cavity decreases the resonance frequency fluctuations arising from thermorefractive noise, thermomechanical noise, or photothermal noise. A closed loop greater than or about equal to 1 meter in length yields a reduction in center frequency noise that achieves the RMS resonance frequency fluctuation that is less than or about equal to 100 Hz. At that length, an extremely low-loss waveguide typically must be employed to achieve a sufficiently large Q-factor, i.e., greater than or about equal to 108. A waveguide morphology that exhibits optical loss less than or about equal to 0.2 dB/meter for propagation of an optical signal along the optical waveguide can be sufficient to yield a Q-factor of about 108 or more in a resonator cavity that is about 1 meter long.",
+                        "If needed or desired, more stringent performance parameters can be employed for the optical reference cavity. In some examples, the closed-loop waveguide can be greater than or about equal to 2 meters in length, greater than or about equal to 10 meters in length, or about equal to some other suitably chosen length (e.g., between about 1 and about 10 m or even longer). In some examples, reduction of center frequency noise by lengthening the optical reference cavity can yield RMS resonance frequency fluctuations less than or about equal to 20 Hz or less than or equal to about 10 Hz. In some examples, the reference cavity Q-factor can exceed about 2\u00d7108 or about 5\u00d7108, or can approach 109, with corresponding narrowing of the resonance frequency linewidth for a given cavity length.",
+                        "Any suitably low-loss waveguide morphology can be employed to achieve the desired Q-factor for a given reference cavity length, including, for example, a solid core material surrounded by a solid cladding or encapsulating material, or a solid core material surrounded by a gaseous ambient medium. Typically great care and attention are required to fabricate the optical waveguide to exhibit sufficiently low optical loss, e.g., less than about 0.2 dB/m, less than about 0.1 dB/m, less than about 0.05 dB/m, less than about 0.02 dB/m, or less than about 0.01 dB/m. Some examples of suitable optical waveguide materials or morphologies are disclosed in the preceding references.",
+                        "In one specific group of examples (FIG. 5; see U.S. Pub. No. 2012/0321245 incorporated above), a transverse cross section of the optical waveguide 30 comprises a dielectric material supported by a pedestal or pillar 12 of substrate material. A lateral portion 32 of the dielectric material extends transversely beyond the pedestal 12 of the substrate material and an optical mode 99 of the optical reference cavity 20 is guided at least partly by an interface between the dielectric material and an ambient medium 40 at a lateral surface 34 of the extended portion 32 of the dielectric material. In some examples, the lateral surface 34 of the dielectric material forms an acute angle with a bottom surface 36 thereof. In some examples the ambient medium 40 is gaseous and comprises atmospheric or conditioned air (e.g., temperature-controlled or dehumidified), one or more inert gases (e.g., nitrogen or noble gas), or near vacuum (i.e., whatever residual gas composition and pressure remains after the volume containing the reference cavity has been evacuated by a suitably chosen pump). In some other examples the ambient medium can comprise a liquid, gel, or solid dielectric embedding medium, provided there is sufficient index contrast between the optical waveguide 30 and the ambient medium 40 to enable guiding of the optical mode 99 by the interface between the waveguide 30 and the ambient medium 40.",
+                        "The substrate 10 commonly comprises one or more semiconductor materials and the dielectric material of waveguide 30 commonly comprises one or more oxide materials. In some examples, the low-index dielectric material comprises silica or doped silica between about 2 \u03bcm and about 10 \u03bcm thick, the substrate material comprises silicon or doped silicon, and the low-index dielectric material extends transversely more than about 70-80 \u03bcm beyond the pedestal of the substrate material. Optical waveguides formed within those parameters have exhibited optical loss less than or about equal to 0.2 dB/m and often much lower (see above) for propagation of the optical mode along the optical waveguide. In many of these examples, the operational wavelength range includes one or more portions of the visible or near infrared optical spectrum; other spectral regions can be employed if needed or desired.",
+                        "For forming an on-chip optical reference cavity 20, it is desirable to reduce the area occupied by a cavity of a given length. The \u201carea occupied\u201d is not intended to include only the area of the substrate 10 that is literally covered by the waveguide 30, but is intended to include the entire area of the substrate 10 that is occupied by the reference cavity 20 so that other structures cannot be readily formed on portions of that area. For example, if the optical reference cavity 20 comprises a circular ring resonator, then the area \u201coccupied\u201d by the reference cavity is the entire area of the circle, not just the thin annular area covered by the waveguide 30. In some examples of an optical reference cavity 20, the closed loop path of the optical waveguide 30 (that is at least about 1 meter in length) comprises two or more linked spirals and occupies an area on the waveguide substrate less than or about equal to, e.g., 5 cm2 (or even smaller in some examples). In another example, a reference cavity comprising multiple linked spirals and having a length of about 300 meters can be formed on a substrate area of about 300 cm2. Increasing the density of the spiral waveguide (i.e., reducing the pitch of the spiral) can allow a longer cavity to occupy a given area, or a cavity of a given length to occupy a smaller area. The two linked spirals can be interleaved on the substrate and joined together to form a closed loop; two pairs of such interleaved spirals can be linked together to form a closed loop. In the example of FIG. 6, the two pairs 20a and 20b of interleaved spirals are different sizes, which can allow more efficient use of substrate area. Alternatively, the two pairs of interleaved spirals can be substantially the same size. In other examples, more than two pairs of interleaved spirals can be employed. At least a portion of one or more of the spirals in any of these examples can comprise an Archimedean spiral.",
+                        "An optical apparatus according to the present disclosure can further comprise a laser source 50 and a second optical waveguide 52 (FIGS. 1 and 6). The second optical waveguide 52 is arranged so as to couple optically a portion of an optical signal emitted by the laser source 50 to the optical reference cavity 20. A feedback mechanism 54 of any suitable type (see above) produces an error signal based on the interaction between the coupled portion of the optical signal and the optical reference cavity 20. That error signal is used to control one or more operating parameters of the laser source so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity 20, thereby stabilizing the output optical frequency of the laser source 50. In some examples, the second optical waveguide 52 is formed on the waveguide substrate 10 along with the optical reference cavity 20. Typically such an integrally formed optical waveguide 52 is arranged to convey the optical signal to the optical reference cavity 20 by directional optical coupling of any suitable type (e.g., mode-interference coupling or adiabatic coupling; directional coupling is also sometimes referred to as transverse coupling). Integral formation of the optical reference cavity 20 and the second optical waveguide 52 can enable reproducible levels of optical coupling to be achieved between the optical reference cavity 20 and the second optical waveguide 52. In addition to reducing center frequency fluctuations arising from thermorefractive, thermomechanical, or photothermal noise, increasing the length of the reference cavity 20 (thereby increasing its mode volume) also increases the optical power level at which photothermal noise becomes significant. That in turn allows larger optical signals to be coupled into the reference cavity for improved performance of the feedback mechanism 54 without concomitant increase in photothermal noise.",
+                        "It can be further advantageous also to form the laser source 50 on the same substrate 10 with the optical reference cavity 20 and the second optical waveguide 52. Such monolithic formation is particularly facilitated when the substrate 10 is a semiconductor and the laser source 50 is a semiconductor laser source.",
+                        "In addition to the preceding, the following examples fall within the scope of the present disclosure or appended claims:"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EXAMPLE 1",
+                            "paragraphs": [
+                                "An optical apparatus comprising: (a) a waveguide substrate; and (b) an optical reference cavity that (i) exhibits multiple resonance frequencies over an operational wavelength range and (ii) can be characterized over the operational wavelength range by a Q-factor and a RMS resonance frequency fluctuation, wherein: (c) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 cm in length; and (d) the RMS resonance frequency fluctuation is less than or about equal to 100 Hz."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with waveguide substrate and optical reference cavity"
+                            ],
+                            "num_characters": 583,
+                            "outline_medium": [
+                                "specify optical apparatus with waveguide substrate and optical reference cavity"
+                            ],
+                            "outline_short": [
+                                "define optical apparatus embodiment"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 2",
+                            "paragraphs": [
+                                "The optical apparatus of Example 1 wherein: (c\u2032) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 2 meters in length; (d\u2032) the RMS resonance frequency fluctuation is less than or about equal to 20 Hz; or (e\u2032) the Q-factor is greater than or about equal to 2\u00d7108."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with longer closed loop optical reference cavity"
+                            ],
+                            "num_characters": 373,
+                            "outline_medium": [
+                                "modify optical reference cavity length and RMS resonance frequency fluctuation"
+                            ],
+                            "outline_short": [
+                                "modify optical reference cavity parameters"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 3",
+                            "paragraphs": [
+                                "The optical apparatus of Example 1 wherein: (c\u2032) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 meters in length; (d\u2032) the RMS resonance frequency fluctuation is less than or about equal to 10 Hz; or (e\u2032) the Q-factor is greater than or about equal to 5\u00d7108."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with even longer closed loop optical reference cavity"
+                            ],
+                            "num_characters": 374,
+                            "outline_medium": [
+                                "modify optical reference cavity length and RMS resonance frequency fluctuation"
+                            ],
+                            "outline_short": [
+                                "modify optical reference cavity parameters"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 4",
+                            "paragraphs": [
+                                "The optical apparatus of Example 1 wherein the Q-factor is greater than or about equal to 108."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with high Q-factor optical reference cavity"
+                            ],
+                            "num_characters": 94,
+                            "outline_medium": [
+                                "specify Q-factor of optical reference cavity"
+                            ],
+                            "outline_short": [
+                                "modify Q-factor requirement"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 5",
+                            "paragraphs": [
+                                "The optical apparatus of Example 1 wherein the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 1 meter in length."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with 1-meter closed loop optical reference cavity"
+                            ],
+                            "num_characters": 221,
+                            "outline_medium": [
+                                "specify optical reference cavity length"
+                            ],
+                            "outline_short": [
+                                "modify optical reference cavity length"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 6",
+                            "paragraphs": [
+                                "The optical apparatus of any preceding Example wherein the optical waveguide exhibits optical loss less than or about equal to 0.2 dB/m for propagation of an optical signal along the optical waveguide."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with low-loss optical waveguide"
+                            ],
+                            "num_characters": 201,
+                            "outline_medium": [
+                                "specify optical waveguide loss"
+                            ],
+                            "outline_short": [
+                                "specify optical waveguide loss"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 7",
+                            "paragraphs": [
+                                "The optical apparatus of any preceding Example wherein the closed loop path comprises two or more linked spirals and occupies an area on the waveguide substrate less than or about equal to 5 cm2."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with linked spiral waveguide design"
+                            ],
+                            "num_characters": 195,
+                            "outline_medium": [
+                                "describe closed loop path with linked spirals"
+                            ],
+                            "outline_short": [
+                                "describe spiral waveguide design"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 8",
+                            "paragraphs": [
+                                "The optical apparatus of Example 7 wherein at least a portion of one or more of the spirals comprises an Archimedean spiral."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "specify optical apparatus with Archimedean spiral waveguide design"
+                            ],
+                            "num_characters": 124,
+                            "outline_medium": [
+                                "specify Archimedean spiral in closed loop path"
+                            ],
+                            "outline_short": [
+                                "specify Archimedean spiral design"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 9",
+                            "paragraphs": [
+                                "The optical apparatus of any preceding Example wherein a transverse cross section of the optical waveguide comprises a dielectric material supported by pedestal of substrate material, wherein a lateral portion of the dielectric material extends transversely beyond the pedestal of the substrate material and an optical mode of the optical reference cavity is guided at least partly by an interface between the low dielectric material and an ambient medium at a lateral surface of the extended portion of the dielectric material.",
+                                "**EXAMPLE 10**",
+                                "The optical apparatus of Example 9 wherein the lateral surface of the dielectric material forms an acute angle with a bottom surface thereof.",
+                                "**EXAMPLE 11**",
+                                "The optical apparatus of any one of Examples 9 or 10 wherein the ambient medium is gaseous and comprises atmospheric or conditioned air, one or more inert gases, or near vacuum.",
+                                "**EXAMPLE 12**",
+                                "The optical apparatus of any one of Examples 9-11 wherein the substrate comprises one or more semiconductor materials and the dielectric material comprises one or more oxide materials.",
+                                "**EXAMPLE 13**",
+                                "The optical apparatus of any one of Examples 9-12 wherein the dielectric material comprises silica or doped silica between about 2 \u03bcm and about 10 \u03bcm thick, the substrate material comprises silicon or doped silicon, and the dielectric material extends transversely more than about 70 \u03bcm beyond the pedestal of the substrate material.",
+                                "**EXAMPLE 14**",
+                                "The optical apparatus of any one of Examples 9-13 wherein the optical waveguide exhibits optical loss less than or about equal to 0.2 dB/m for propagation of the optical mode along the optical waveguide.",
+                                "**EXAMPLE 15**",
+                                "The optical apparatus of any preceding Example further comprising (i) a laser source and (ii) a second optical waveguide that is arranged so as to couple optically a portion of an optical signal emitted by the laser source to the optical reference cavity.",
+                                "**EXAMPLE 16**",
+                                "The optical apparatus of Example 15 wherein the optical reference cavity and the second optical waveguide form a portion of a feedback mechanism arranged so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity.",
+                                "**EXAMPLE 17**",
+                                "The optical apparatus of any one of Examples 15 or 16 wherein the second optical waveguide is formed on the waveguide substrate.",
+                                "**EXAMPLE 18**",
+                                "The optical apparatus of Example 17 wherein the laser source is formed on the waveguide substrate.",
+                                "**EXAMPLE 19**",
+                                "A method employing the optical reference cavity of any preceding Example, the method comprising: (i) operating a laser source to produce an output optical signal; (ii) coupling a portion of the output optical signal to the optical reference cavity; (iii) generating an error signal based on the interaction of the coupled portion of the optical signal with the optical reference cavity; and (iv) controlling one or more operating parameters of the laser source based on the error signal so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity.",
+                                "**EXAMPLE 20**",
+                                "The method of Example 19 wherein a second optical waveguide couples the portion of the optical signal to the optical reference cavity.",
+                                "**EXAMPLE 21**",
+                                "The method of Example 20 wherein the second optical waveguide is formed on the waveguide substrate.",
+                                "**EXAMPLE 22**",
+                                "The method of Example 21 wherein the laser source is formed on the waveguide substrate.",
+                                "It is intended that equivalents of the disclosed example embodiments and methods shall fall within the scope of the present disclosure or appended claims. It is intended that the disclosed exemplary embodiments and methods, and equivalents thereof, may be modified while remaining within the scope of the present disclosure or appended claims.",
+                                "In the foregoing Detailed Description, various features may be grouped together in several exemplary embodiments for the purpose of streamlining the disclosure. This method of disclosure is not to be interpreted as reflecting an intention that any claimed embodiment requires more features than are expressly recited in the corresponding claim. Rather, as the appended claims reflect, inventive subject matter may lie in less than all features of a single disclosed exemplary embodiment. Thus, the appended claims are hereby incorporated into the Detailed Description, with each claim standing on its own as a separate disclosed embodiment. However, the present disclosure shall also be construed as implicitly disclosing any embodiment having any suitable set of one or more disclosed or claimed features (i.e., sets of features that are not incompatible or mutually exclusive) that appear in the present disclosure or the appended claims, including those sets that may not be explicitly disclosed herein. It should be further noted that the scope of the appended claims do not necessarily encompass the whole of the subject matter disclosed herein.",
+                                "For purposes of the present disclosure and appended claims, the conjunction \u201cor\u201d is to be construed inclusively (e.g., \u201ca dog or a cat\u201d would be interpreted as \u201ca dog, or a cat, or both\u201d; e.g., \u201ca dog, a cat, or a mouse\u201d would be interpreted as \u201ca dog, or a cat, or a mouse, or any two, or all three\u201d), unless: (i) it is explicitly stated otherwise, e.g., by use of \u201ceither . . . or,\u201d \u201conly one of,\u201d or similar language; or (ii) two or more of the listed alternatives are mutually exclusive within the particular context, in which case \u201cor\u201d would encompass only those combinations involving non-mutually-exclusive alternatives. For purposes of the present disclosure or appended claims, the words \u201ccomprising,\u201d \u201cincluding,\u201d \u201chaving,\u201d and variants thereof, wherever they appear, shall be construed as open ended terminology, with the same meaning as if the phrase \u201cat least\u201d were appended after each instance thereof.",
+                                "In the appended claims, if the provisions of 35 USC \u00a7112 \u00b66 are desired to be invoked in an apparatus claim, then the word \u201cmeans\u201d will appear in that apparatus claim. If those provisions are desired to be invoked in a method claim, the words \u201ca step for\u201d will appear in that method claim. Conversely, if the words \u201cmeans\u201d or \u201ca step for\u201d do not appear in a claim, then the provisions of 35 USC \u00a7112 \u00b66 are not intended to be invoked for that claim.",
+                                "If any one or more disclosures are incorporated herein by reference and such incorporated disclosures conflict in part or whole with, or differ in scope from, the present disclosure, then to the extent of conflict, broader disclosure, or broader definition of terms, the present disclosure controls. If such incorporated disclosures conflict in part or whole with one another, then to the extent of conflict, the later-dated disclosure controls.",
+                                "The Abstract is provided as required as an aid to those searching for specific subject matter within the patent literature. However, the Abstract is not intended to imply that any elements, features, or limitations recited therein are necessarily encompassed by any particular claim. The scope of subject matter encompassed by each claim shall be determined by the recitation of only that claim.",
+                                "One or more features or aspects of subject matter of the instant application may be related to or enabled by subject matter disclosed in one or more of the following additional references, each of which is incorporated by reference as if fully set forth herein:\n\n\n- - J. Li, H. Lee, T. Chen, O. Painter and K. Vahala, \u201cChip-based\n    Brillouin lasers as spectral purifiers for photonic systems,\u201d\n    arXiv:1201.4212 (2012);\n  - J. Li, H. Lee, T. Chen, O. Painter and K. Vahala, \u201cHighly Coherent,\n    Microcavity Brillouin Laser on Silicon,\u201d Frontiers in Optics\n    Meeting, Paper \\# FTuD4 (2011);\n  - T. Lu, H. Lee, T. Chen, S. Herchak, J. Kim, S. E. Fraser, R. C.\n    Flagan and K. J. Vahala, \u201cHigh sensitivity nanoparticle detection\n    using optical microcavities,\u201d Proc Natl Acad Sci 108(15), 5976-5979\n    (2011);\n  - Kippenberg, T. J. & Vahala, K. J., \u201cCavity optomechanics:\n    Back-action at the mesoscale,\u201d Science 321, 1172-1176 (2008);\n  - Kippenberg, T. J. & Vahala, K. J., \u201cCavity opto-mechanics,\u201d Optics\n    Express 15, 17172-17205 (2007);\n  - T. J. Kippenberg, J. Kalkman, A. Polman and K. J. Vahala,\n    \u201cDemonstration of an erbium-doped microdisk laser on a silicon\n    chip,\u201d Physical Review A 74, 051802 (2006);\n  - Kippenberg, T. J., Spillane, S. M., & Vahala, K. J.,\n    \u201cKerr-nonlinearity optical parametric oscillation in an ultrahigh-Q\n    toroid microcavity,\u201d Phys. Rev. Lett. 93, 083904 (2004);\n  - S. M. Spillane, T. J. Kippenberg, O. J. Painter, and K. J. Vahala,\n    \u201cIdeality in a Fiber-Taper-Coupled Microresonator System for\n    Application to Cavity Quantum Electrodynamics,\u201d Phys. Rev. Lett. 85,\n    043902, (2003);\n  - K. J. Vahala, \u201cOptical microcavities\u201d, Nature 424, 839-846 (2003);\n  - Spillane, S. M., Kippenberg, T. J., Painter, O. J., & Vahala, K. J.,\n    \u201cIdeality in a fiber-taper-coupled microresonator system for\n    application to cavity quantum electrodynamics,\u201d Phys. Rev. Lett. 91,\n    043902 (2003).\n  - M. Cai, O. Painter, & K. J. Vahala, \u201cObservation of critical\n    coupling in a fiber taper to a silica-microsphere whispering gallery\n    mode system,\u201d Phys. Rev. Lett. 85, 74 (2000);\n  - F. Quinlan, G. Yeas, S. Osterman, S. A. Diddams, Rev. of Sci. Instr.\n    8, 063105 (2010);\n  - D. Braje, L. Hollberg, and S. Diddams, \u201cBrillouin-enhanced\n    hyperparametric generation of an optical frequency comb in a\n    monolithic highly nonlinear fiber cavity pumped by a cw laser,\u201d\n    Phys. Rev. Lett. 102, 193902 (2009);\n  - A. A. Savchenkov, A. B. Matsko, D. Strekalov, M. Mohageg, V. S.\n    Ilchenko, and L. Maleki, Phys. Rev. Lett. 93, 243905 (2004);\n  - P. Del'Haye, A. Schliesser, O. Arcizet, T. Wilken, R. Holzwarth\n    and T. J. Kippenberg, \u201cOptical frequency comb generation from a\n    monolithic microresonator,\u201d Nature 450, 1214 (2007);\n  - A. A. Savchenkov, A. B. Matsko, V. S. Ilchenko, I. Solomatine, D.\n    Seidel, and L. Maleki, \u201cTunable Optical Frequency Comb with a\n    Crystalline Whispering Gallery Mode Resonator,\u201d Physical Review\n    Letter 101, 093902 (2008);\n  - I. S. Grudinin, N. Yu, and L. Maleki, Optics Letters 34, 878 (2009);\n  - J. S. Levy, A. Gondarenko, M. A. Foster, A. C. Turner-Foster, A. L.\n    Gaeta, and M. Lipson, \u201cCMOS-compatible multiple-wavelength\n    oscillator for on-chip optical interconnects,\u201d Nature Photon. 4,\n    37-40 (2010);\n  - F. Ferdous, H. Miao, D. E. Leaird, K. Srinivasan, J. Wang, L.\n    Chen, L. T. Varghese and A. M. Weiner, Nature Photonics 5, 770\n    (2011);\n  - L. Razzari, D. Duchesne, M. Ferrera, R. Morandotti, S. Chu, B. E.\n    Little, and D. J. Moss, \u201cCMOS-compatible integrated optical\n    hyperparametric oscillator,\u201d Nature Photon. 4, 41-45 (2010);\n  - P. Del'Haye, T. Herr, E. Gavartin, M. L. Gorodetsky, R. Holzwarth,\n    and T. J. Kippenberg, Phys. Rev. Lett. 107, 063901 (2011);\n  - Y. Okawachi, K. Saha, J. S. Levy, Y. H. Wen, M. Lipson, and A. L.\n    Gaeta, Opt. Lett. 36, 3398 (2011);\n  - Del'Haye, P., Arcizet, O., Schliesser, A., Holzwarth, R., &\n    Kippenberg, T. J., \u201cFull stabilization of a microresonator frequency\n    comb,\u201d Phys. Rev. Lett. 101, 053903 (2008);\n  - A. R. Johnson, Y. Okawachi, J. S. Levy, J. Cardenas, K. Saha, M.\n    Lipson, and A. L. Gaeta, Opt. Lett. 37, 875-877 (2012);\n  - P. Del'Haye, O. Arcizet, M. L. Gorodetsky, R. Holzwarth, and T. J.\n    Kippenberg, Nature Photonics 3, 529 (2009);\n  - M. A. Foster, J. S. Levy, O. Kuzucu, K. Saha, M. Lipson, and A. L.\n    Gaeta, Opt. Express 19, 14233 (2011);\n  - I. S. Grudinin, N. Yu, and L. Maleki, \u201cGeneration of optical\n    frequency combs with a CaF.sub.2 resonator,\u201d Opt. Lett. 45, 878-880\n    (2009);\n  - F. Vollmer and S. Arnold, \u201cWhispering-gallery-mode biosensing:\n    label-free detection down to single molecules,\u201d Nature Methods 5.\n    591-596 (2008);\n  - R. Adar, M. Serbin, and Y. Mizrahi, \u201cLess than 1 dB per meter\n    propagation loss of silica waveguides measured using a ring\n    resonator,\u201d J. Light. Tech. 12, 1369-1372 (1994);\n  - T. Kominato, Y. Hida, M. Itoh, H. Takahashi, S. Sohma, T. Kitoh,\n    and Y. Hibino, \u201cExtremely low-loss (0.3 dB/m) and long silica-based\n    waveguides with large width and clothoid curve connection,\u201d in\n    Proceedings of ECOC (Stockholm, Sweden, 2004);\n  - J. F. Bauters, M. J. R. Heck, D. John, D. Dai, M. Tien, J. S.\n    Barton, A. Leinse, R. G. Heideman, D. J. Blumenthal, and J. E.\n    Bowers. \u201cUltra-low-loss high-aspect-ratio Si.sub.3N.sub.4\n    waveguides,\u201d Optics Express 19, 3163-3174 (2011);\n  - Matsko, A. B., Savchenkov, A. A., Yu, N. & Maleki, L.,\n    \u201cWhispering-gallery-mode resonators as frequency references. I.\n    fundamental limitations,\u201d J. Opt. Soc. Am. B 24, 1324-1335 (2007);\n  - Savchenkov, A. A., Matsko, A. B., Ilchenko, V. S., Yu, N. & Maleki,\n    L., \u201cWhispering-gallery-mode resonators as frequency references. II.\n    stabilization,\u201d J. Opt. Soc. Am. B 24, 2988-2997 (2007);\n  - Matsko, A. B. & Ilchenko, V. S., \u201cOptical resonators with\n    whispering-gallery modes-part I: basics,\u201d IEEE J. Sel. Top. Quant.\n    Electron. 12, 3-14 (2006);\n  - Ilchenko, V. S. & Matsko, A. B., \u201cOptical resonators with\n    whispering-gallery modes-part II: applications,\u201d IEEE J. Sel. Top.\n    Quant. Electron. 12, 15-32 (2006);\n  - Grudinin, I. S., Matsko, A. B. & Maleki, L., \u201cOn the fundamental\n    limits of Q factor of crystalline dielectric resonators,\u201d Optics\n    Express 15, 3390-3395 (2007);\n  - Savchenkov, A. A., Matsko, A. B., Ilchenko, V. S. & Maleki, L.,\n    \u201cOptical resonators with ten million finesse,\u201d Optics Express 15,\n    6768-6773 (2007);\n  - Aoki, T. et al., \u201cObservation of strong coupling between one atom\n    and a monolithic microresonator,\u201d Nature 442, 671-674 (2006);\n  - Grudinin, I. S., Ilchenko, V. S. & Maleki, L., \u201cUltrahigh optical Q\n    factors of crystalline resonators in the linear regime,\u201d Phys. Rev.\n    A 74, 063806 (2006);\n  - Tomes, M. & Carmon, T., \u201cPhotonic microelectromechanical systems\n    vibrating at X-band (11-GHz) rates,\u201d Phys. Rev. Lett. 102, 113601\n    (2009);\n  - Grudinin, I. S., Yu, N. & Maleki, L., \u201cBrillouin lasing with a CaF2\n    whispering gallery mode resonator,\u201d Phys. Rev. Lett. 102, 043902\n    (2009);\n  - Pant, R. et al., \u201cCavity enhanced stimulated Brillouin scattering in\n    an optical chip for multiorder Stokes generation,\u201d Optics Letters\n    36, 3687-3689 (2011);\n  - Vernooy, D. W., Ilchenko, V. S., Mabuchi, H., Streed, E. W., &\n    Kimble, H. J., \u201cHigh-Q measurements of fused silica microspheres in\n    the near infrared,\u201d Optics Letters 23, 247-249 (1998);\n  - Smith, S. P., Zarinetchi, F., & Ezekiel, S., \u201cNarrow-linewidth\n    stimulated brillouin fiber laser and applications,\u201d Optics Letters\n    16, 393-395 (1991);\n  - Okawachi, Y. et al., \u201cTunable all-optical delays via brillouin slow\n    light in an optical fiber,\u201d Phys. Rev. Lett. 94, 153902 (2005);\n  - Zhu, Z., Dawes, A., Gauthier, D., Zhang, L., & Willner, A.,\n    \u201cBroadband SBS slow light in an optical fiber,\u201d Journal of Lightwave\n    Technology 25, 201-206 (2007);\n  - Zhu, Z., Gauthier, D., & Boyd, R., \u201cStored light in an optical fiber\n    via stimulated brillouin scattering,\u201d Science 318, 1748-1750 (2007);\n  - Schliesser, A., Riviere, R., Anetsberger, G., Arcizet, O., &\n    Kippenberg, T. J., \u201cResolved-sideband cooling of a micromechanical\n    oscillator,\u201d Nature Physics 4, 415-419 (2008);\n  - Tkach, R. W., Chraplyvy, A. R., & Derosier, R. M., \u201cSpontaneous\n    Brillouin scattering for single-mode optical-fibre\n    characterization,\u201d Electron. Lett. 22, 1011-1013 (1986);\n  - Ciminelli, C., Dell'Olio, F., Campanella, C., & Armenise, M.,\n    \u201cPhotonic technologies for angular velocity sensing,\u201d Adv. Opt.\n    Photon. 2, 370-404 (2010);\n  - Ciminelli, C., Passaro, V., Dell'Olio, F., & Armenise, M.,\n    \u201cThree-dimensional modelling of scattering loss in In\u2014GaAsP/InP and\n    silica-on-silicon bent waveguides,\u201d J. Eur. Opt. Soc. Rapid Publ. 4,\n    1-6 (2009);\n  - Anetsberger, G., Riviere. R., Schliesser A., Arcizet, O., &\n    Kippenberg, T. J., \u201cUltralow-dissipation optomechanical resonators\n    on a chip,\u201d Nature Photonics 2, 627-633 (2011).\n  - Tien, M. C. et al., \u201cUltra-high quality factor planar Si3N4 ring\n    resonators on Si substrates,\u201d Optics Express 19, 13551-13556 (2011);\n  - Barwicz, T. & Haus, H., \u201cThree-dimensional analysis of scattering\n    losses due to sidewall roughness in microphotonic waveguides,\u201d J.\n    Lightwave Technol. 23, 2719-2732 (2005); and\n  - Payne, F. & Lacey, J. A., \u201cTheoretical analysis of scattering loss\n    from planar optical waveguides,\u201d Opt. Quantum. Electron. 26, 977-986\n    (1994)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define optical apparatus with dielectric material and pedestal of substrate material",
+                                "describe lateral portion of dielectric material extending transversely beyond pedestal",
+                                "specify optical mode guided by interface between low dielectric material and ambient medium",
+                                "introduce EXAMPLE 10 with acute angle between lateral surface and bottom surface",
+                                "specify ambient medium in EXAMPLE 11",
+                                "describe substrate and dielectric material in EXAMPLE 12",
+                                "specify thickness and materials in EXAMPLE 13",
+                                "describe optical loss in EXAMPLE 14",
+                                "introduce laser source and second optical waveguide in EXAMPLE 15",
+                                "describe feedback mechanism in EXAMPLE 16",
+                                "specify second optical waveguide formation in EXAMPLE 17",
+                                "specify laser source formation in EXAMPLE 18",
+                                "introduce method employing optical reference cavity in EXAMPLE 19",
+                                "describe operating laser source in EXAMPLE 19",
+                                "couple portion of optical signal to optical reference cavity in EXAMPLE 19",
+                                "generate error signal in EXAMPLE 19",
+                                "control operating parameters of laser source in EXAMPLE 19",
+                                "specify second optical waveguide in EXAMPLE 20",
+                                "specify second optical waveguide formation in EXAMPLE 21",
+                                "specify laser source formation in EXAMPLE 22",
+                                "introduce equivalents of disclosed example embodiments and methods",
+                                "describe grouping of features in exemplary embodiments",
+                                "specify scope of subject matter encompassed by claims",
+                                "introduce incorporated references",
+                                "describe Abstract as aid to searching patent literature",
+                                "specify scope of subject matter encompassed by Abstract",
+                                "introduce additional references",
+                                "specify references related to or enabled by subject matter",
+                                "describe references to Brillouin lasers and optical frequency combs",
+                                "specify references to optical microcavities and whispering gallery modes",
+                                "describe references to stimulated Brillouin scattering and slow light",
+                                "specify references to optomechanical resonators and angular velocity sensing",
+                                "describe references to planar Si3N4 ring resonators and scattering losses"
+                            ],
+                            "num_characters": 16763,
+                            "outline_medium": [
+                                "define optical apparatus with dielectric material and pedestal",
+                                "specify lateral portion of dielectric material extending beyond pedestal",
+                                "describe optical mode guided by interface between dielectric material and ambient medium",
+                                "introduce Example 10 with acute angle between lateral surface and bottom surface",
+                                "specify ambient medium in Example 11",
+                                "describe substrate and dielectric material in Example 12",
+                                "specify thickness and materials in Example 13",
+                                "describe optical loss in Example 14",
+                                "introduce laser source and second optical waveguide in Example 15",
+                                "describe feedback mechanism in Example 16",
+                                "specify second optical waveguide formation in Example 17",
+                                "describe laser source formation in Example 18",
+                                "introduce method employing optical reference cavity in Example 19",
+                                "describe steps of method in Example 19",
+                                "specify second optical waveguide in method of Example 20",
+                                "describe formation of second optical waveguide and laser source in method of Example 22"
+                            ],
+                            "outline_short": [
+                                "define optical apparatus with dielectric material and pedestal",
+                                "specify lateral surface of dielectric material",
+                                "describe ambient medium",
+                                "specify substrate and dielectric materials",
+                                "describe thickness of dielectric material",
+                                "specify optical loss of optical waveguide",
+                                "add laser source and second optical waveguide",
+                                "describe feedback mechanism"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe optical apparatus embodiment",
+                        "introduce waveguide substrate and optical reference cavity",
+                        "specify optical waveguide formation on substrate",
+                        "define closed loop optical reference cavity",
+                        "characterize optical reference cavity by Q-factor and RMS resonance frequency fluctuation",
+                        "specify performance characteristics of optical reference cavity",
+                        "discuss substrate material and waveguide morphology options",
+                        "explain center frequency noise reduction by lengthening optical reference cavity",
+                        "provide examples of more stringent performance parameters",
+                        "discuss low-loss waveguide morphology options",
+                        "describe fabrication of optical waveguide with low optical loss",
+                        "introduce specific waveguide material and morphology examples",
+                        "describe transverse cross section of optical waveguide",
+                        "specify dielectric material and ambient medium options",
+                        "discuss substrate and dielectric material composition options",
+                        "describe on-chip optical reference cavity formation",
+                        "specify area occupied by optical reference cavity",
+                        "introduce linked spiral waveguide design",
+                        "describe laser source and second optical waveguide integration",
+                        "outline feedback mechanism for stabilizing laser output frequency"
+                    ],
+                    "num_characters": 10101,
+                    "outline_medium": [
+                        "describe optical apparatus embodiment",
+                        "specify waveguide substrate and optical reference cavity",
+                        "define optical waveguide and closed loop length",
+                        "characterize optical reference cavity by Q-factor and RMS resonance frequency fluctuation",
+                        "discuss substrate material and waveguide morphology",
+                        "motivate lengthening closed loop optical reference cavity",
+                        "describe waveguide morphology and optical loss",
+                        "illustrate specific waveguide material and morphology examples",
+                        "discuss forming on-chip optical reference cavity",
+                        "describe optical apparatus with laser source and feedback mechanism"
+                    ],
+                    "outline_short": [
+                        "describe optical apparatus embodiment",
+                        "motivate optical reference cavity design",
+                        "summarize performance characteristics",
+                        "describe waveguide morphology",
+                        "illustrate specific waveguide examples"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An optical apparatus comprising:\n(a) a waveguide substrate; and\n(b) an optical reference cavity that (i) exhibits multiple resonance frequencies over an operational wavelength range and (ii) can be characterized over the operational wavelength range by a Q-factor and a RMS resonance frequency fluctuation,\nwherein:\n(c) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 cm in length; and\n(d) the RMS resonance frequency fluctuation is less than or about equal to 100 Hz.",
+        "2. The optical apparatus of claim 1 wherein:\n(c\u2032) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 2 meters in length;\n(d\u2032) the RMS resonance frequency fluctuation is less than or about equal to 20 Hz; or\n(e\u2032) the Q-factor is greater than or about equal to 2\u00d7108.",
+        "3. The optical apparatus of claim 1 wherein:\n(c\u2032) the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 10 meters in length;\n(d\u2032) the RMS resonance frequency fluctuation is less than or about equal to 10 Hz; or\n(e\u2032) the Q-factor is greater than or about equal to 5\u00d7108.",
+        "4. The optical apparatus of claim 1 wherein the Q-factor is greater than or about equal to 108.",
+        "5. The optical apparatus of claim 1 wherein the optical reference cavity comprises an optical waveguide formed on the waveguide substrate and arranged to form a closed loop greater than or about equal to 1 meter in length.",
+        "6. The optical apparatus of claim 5 wherein the optical waveguide exhibits optical loss less than or about equal to 0.2 dB/m for propagation of an optical signal along the optical waveguide.",
+        "7. The optical apparatus of claim 5 wherein the closed loop path comprises two or more linked spirals and occupies an area on the waveguide substrate less than or about equal to 5 cm2.",
+        "8. The optical apparatus of claim 7 wherein at least a portion of one or more of the spirals comprises an Archimedean spiral.",
+        "9. The optical apparatus of claim 1 wherein a transverse cross section of the optical waveguide comprises a dielectric material supported by pedestal of substrate material, wherein a lateral portion of the dielectric material extends transversely beyond the pedestal of the substrate material and an optical mode of the optical reference cavity is guided at least partly by an interface between the low dielectric material and an ambient medium at a lateral surface of the extended portion of the dielectric material.",
+        "10. The optical apparatus of claim 9 wherein the lateral surface of the dielectric material forms an acute angle with a bottom surface thereof.",
+        "11. The optical apparatus of claim 9 wherein the ambient medium is gaseous and comprises atmospheric or conditioned air, one or more inert gases, or near vacuum.",
+        "12. The optical apparatus of claim 9 wherein the substrate comprises one or more semiconductor materials and the dielectric material comprises one or more oxide materials.",
+        "13. The optical apparatus of claim 9 wherein the dielectric material comprises silica or doped silica between about 2 \u03bcm and about 10 \u03bcm thick, the substrate material comprises silicon or doped silicon, and the dielectric material extends transversely more than about 70 \u03bcm beyond the pedestal of the substrate material.",
+        "14. The optical apparatus of claim 9 wherein the optical waveguide exhibits optical loss less than or about equal to 0.2 dB/m for propagation of the optical mode along the optical waveguide.",
+        "15. The optical apparatus of claim 1 further comprising (i) a laser source and (ii) a second optical waveguide that is arranged so as to couple optically a portion of an optical signal emitted by the laser source to the optical reference cavity.",
+        "16. The optical apparatus of claim 15 wherein the optical reference cavity and the second optical waveguide form a portion of a feedback mechanism arranged so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity.",
+        "17. The optical apparatus of claim 15 wherein the second optical waveguide is formed on the waveguide substrate.",
+        "18. The optical apparatus of claim 17 wherein the laser source is formed on the waveguide substrate.",
+        "19. A method employing the optical reference cavity of claim 1, the method comprising:\n(i) operating a laser source to produce an output optical signal;\n(ii) coupling a portion of the output optical signal to the optical reference cavity;\n(iii) generating an error signal based on the interaction of the coupled portion of the optical signal with the optical reference cavity; and\n(iv) controlling one or more operating parameters of the laser source based on the error signal so as to lock an optical frequency of the optical signal to one of the resonance frequencies of the optical reference cavity.",
+        "20. The method of claim 19 wherein a second optical waveguide couples the portion of the optical signal to the optical reference cavity.",
+        "21. The method of claim 20 wherein the second optical waveguide is formed on the waveguide substrate.",
+        "22. The method of claim 21 wherein the laser source is formed on the waveguide substrate."
+    ]
+}

@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+## BACKGROUND ART
+
+## DESCRIPTION OF THE INVENTION
+
+## EXAMPLES
+
+### Example 1
+
+### Exaxple 2
+
+### Example 3
+
+## LIST OF REFERENCE SIGNS
+

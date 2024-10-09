@@ -1,0 +1,374 @@
+{
+    "id": "US20230197448",
+    "authors": [
+        "Chi Zhang",
+        "Sougata Hazra",
+        "Qianying Wu",
+        "Mehdi Asheghi",
+        "Kenneth E. Goodson",
+        "Ercan Dede",
+        "James Palko",
+        "Sreekant Narumanchi"
+    ],
+    "title": "Hardmask to substrate pattern transfer method for Microfabrication of micro to mesoscale, high aspect ratio, multi-level, 3D Structures",
+    "date": "2022-12-19 00:00:00",
+    "abstract": "We provide a novel cleanroom-based process flow that allows for easy creation of multi-level, hierarchical 3D structures in a substrate. This is achieved by introducing an ultra-thin sacrificial hardmask layer on the substrate which is first 3D patterned via multiple rounds of lithography. This 3D pattern is then scaled vertically by a factor of 200 - 300 and transferred to the substrate underneath via a single shot deep etching step. This method is also easily characterizable - using features of different topographies and dimensions, the etch rates and selectivities were quantified; this characterization information was later used while fabricating specific target structures.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "GOVERNMENT SPONSORSHIP",
+                    "paragraphs": [
+                        "This invention was made with Government support under contract DE-AR0001055 awarded by the Department of Energy. The Government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "acknowledge government support"
+                    ],
+                    "num_characters": 164,
+                    "outline_medium": [
+                        "acknowledge government support"
+                    ],
+                    "outline_short": [
+                        "acknowledge government support"
+                    ]
+                },
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "This invention relates to lithographic etching of patterns having deep and multi-level features."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field"
+                    ],
+                    "num_characters": 96,
+                    "outline_medium": [
+                        "define field"
+                    ],
+                    "outline_short": [
+                        "define field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "This work solves a major hurdle that mars photolithography-based fabrication of micro-mesoscale structures in silicon and other rigid materials. Conventional photolithography is usually performed on smooth, flat wafer surfaces to lay a 2D design and subsequently etch it to create single-level features. It is, however, unable to process non-flat surfaces or already etched wafers and create more than one level in the structure.",
+                        "Various less conventional attempts have been made to perform lithography of deep, multi-level patterns in rigid materials like silicon, as described in detail below. However, these approaches all have their various deficiencies, also as described in detail below. Accordingly, it would be an advance in the art to provide improved lithography of deep, multi-level patterns in rigid materials."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate lithography"
+                    ],
+                    "num_characters": 823,
+                    "outline_medium": [
+                        "motivate lithography"
+                    ],
+                    "outline_short": [
+                        "motivate lithography"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "In this study, we have described a novel cleanroom-based process flow that allows for easy creation of such multi-level, hierarchical 3D structures in a substrate. This is achieved by introducing an ultra-thin sacrificial hardmask layer (e.g., of silicon dioxide) on the substrate which is first 3D patterned via multiple rounds of lithography. This 3D pattern is then scaled vertically by a factor of 200 - 300 and transferred to the substrate underneath via a single shot deep etching step. This method is also easily characterizable - using features of different topographies and dimensions, the etch rates and selectivities were quantified; this characterization information was later used while fabricating specific target structures. Furthermore, this study comprehensively compares the novel pattern transfer technique to already existing methods of creating multi-level structures, like grayscale lithography and chip stacking. Our new process was found to be cheaper, faster, and easier to standardize compared to other methods - this made the overall process more reliable and repeatable."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce novel process",
+                        "compare to existing methods"
+                    ],
+                    "num_characters": 1098,
+                    "outline_medium": [
+                        "summarize invention"
+                    ],
+                    "outline_short": [
+                        "summarize invention"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "I) Introduction",
+                            "paragraphs": [
+                                "Advances in lithography based micro-nano processing techniques have revolutionized the technology around the world for its ability to cost effectively mass produce structures ranging from sub-10 nm length scale all the way up to millimeter scale. Some of these structures include nanometer scale electronics components like transistors, sub-micron features like optical waveguides, Fresnel lenses, photonic devices, and micro-nanofluidic devices. Slightly larger micro (1 - 100 \u00b5m) and meso (0.1 - 1 mm) scale features are even more useful in modern technology and has seen numerous applications in microfluidics, cooling technologies, battery research, sorption-desorption, desalination and catalysis. Although ubiquitous, versatile, and indispensable as a micro-nano manufacturing technique, conventional cleanroom-based lithography suffers from one major limitation. This type of processing can efficiently create only 2.5D or single-level structures (FIG. 1A) but is unable to reliably create multi-level, hybrid, 3D hierarchical structures (structures with more than one level of height or depth as shown in FIG. 1B) of depths more than 1 - 5pm.",
+                                "FIGS. 1A-B show two types of structures, referred to as 2.5D and 3D structures respectively. FIG. 1A shows single-level structures, where all the features are of the same depth / height. These are also the structures that we will refer to as 2.5D structures throughout the rest of this work. Here 102 is a structure showing a single feature depth 1, and 104 is an image of a fabricated structure having a single feature depth.",
+                                "In contrast to 2.5D structures, FIG. 1B shows two different fully 3D structures (106, 110) which are multi-level; different parts of the wafer have different etch depth / height. Here 108 is a fabricated version of 106, and different feature depths are referenced as 1, 2, 3. Throughout this description, 1, 2, 3 will be used to refer to feature depths of various structures. Structure 106 has two feature depths and structure 110 has three feature depths.",
+                                "FIG. 1C shows conventional LELE (Litho-Etch Litho-Etch) of a structure having deep features. Here 120a shows the result of spin coating photoresist layer 124 on silicon substrate 122. The uniformity of the photoresist layer is critical for the success of the downstream processes. Step 120b shows the result of full exposure and development to make a 2D pattern on the photoresist. Step 120c shows the result of a deep Si etch to make a single-level structure. Step 120d shows the second round of photoresist spin coating fails if the etched structure height is taller than photoresist layer thickness (4-10 \u00b5m). The resulting photoresist layer 126 is not uniform and is wholly unsuitable for any further processing.",
+                                "FIG. 1D shows an example of chip stacking for making 3D structures. Here 130a is the target 3-level structure in substrate 132. In step 130b, the multi-level structure is first broken into multiple single-level structure 134, 136, 138 which need to be made on separate wafers and are then bonded together in step 130c.",
+                                "FIG. 1E shows an example of grayscale lithography. Step 140a shows the result of spin coating photoresist 124 on substrate 122. After PR coating, step 140b shows combinations of full dose (energy) and partial dose lithography is performed to create a 3D structure 142 in the photoresist. Step 140c is an etch step that transfers the 3D pattern from the photoresist to the silicon substrate underneath.",
+                                "Through conventional LELE (Litho-Etch Litho-Etch) route, a 2D design/pattern (full control available over the feature design in 2D) is first lithographically laid on a sacrificial mask layer (usually, a photosensitive polymer called photoresist (PR)) on the wafer. This mask is now used as protection to etch the exposed part of the design onto the wafer. Through one round of \u2018lithography + etching\u2019 the entire design can be etched to only one specific depth thus giving rise to a single level structure. Conventional LELE cleanroom process would normally require multiple rounds of back-to-back \u2018lithography + etching\u2019 to achieve the desired multi-level structures (102a, 120b, 120c, 120d on FIG. 1C). The bottleneck arises due to unsatisfactory second round of lithography (120d on FIG. 1C) on wafers which have already gone through one round of \u2018lithography + etching\u2019 and thus have etched features (height \u2265 5 \u00b5m) in them. This comes as a major manufacturing hurdle in a time when hybrid structures hold the key to dramatic improvements in the performance of existing devices. (Additional details on usefulness of hybrid structures can be found in the \u201cImpact\u201d section.)",
+                                "Multi-level, 3D structures can be made with ease from soft materials like PDMS (polydimethylsiloxane), thermoplastics using deforming techniques (two-step soft lithography, sequential thermal and UV Nano Imprint Lithography (NIL), Capillary Force Lithography, Nano Transfer Printing (NTP)) but reliable methods for fabrication of 3D multi-level structures in rigid materials like silicon is still lacking. Recently, two-photon lithography has enabled the fabrication of complicated fully 3D patterns in photopolymers, but these systems have an extremely small print volume (Nanoscribe GT, a state-of-the-art multi-photon system used in academia and industry can print a maximum volume of 300\u00d7300\u00d7300 \u00b5m3) with equally long write times of more than 12 hours per structure. This reason makes two-photon lithography prohibitively expensive to use and difficult to integrate in commercial mass manufacturing scenarios.",
+                                "Another technique called grayscale lithography (FIG. 1E) has gained some traction in recent years, although, this method is often expensive, tedious, and difficult to characterize. In this approach, several gray doses which have energy less than the full dose-to-clear energy are used to illuminate the photoresist (PR). The PR in this gray dose exposed zones undergo partial photochemical reaction, and when developed, only some part of the resist gets washed away - precisely controlling the energy and focal plane of the exposing light results in a multi-height 3D structure in the resist and subsequently transferred to the substrate underneath (FIG. 1E). However, it was quickly found that the gray exposure doses were associated with several uncontrollable problems. According to the literature, this arises because of severely limited control over several parameters that is inherently associated with gray dose exposure. Some of these challenges encountered in grayscale lithography are -complicated and expensive mask modelling, dose dependent dimension distortion which gets worse at sub-10 \u00b5m feature sizes, feature size dependent shifting of characteristic response curve of photoresists, profile welling and sidewall tapering at gray doses, messy post-development PR surface. All these problems make the target resist profile extremely difficult to achieve. These issues must be perfectly addressed through extensive experimental characterization and tedious numerical model-based error correction for overall success of the process. The literature further goes on to state that making accurately controlled gray features is so heavily dependent on process conditions and operate within such tight process tolerances that transferring recipe or process knowledge from one lab to another is almost impossible. Small changes in process equipment and environment causes drastic changes in the grayscale process.",
+                                "Recently, an ingenious double-sided processing technique has been developed by several researchers and using this technique they were able to create 2-level 3D manifold structures for high power electronics hot-spot (25 - 100 mm2 footprint) cooling. A later report successfully demonstrated scalability of this process flow to create extremely large area (\u2265 500 mm2) high heat flux 3D manifolded micro-coolers. However, this method is only suitable for creation of very specific 2-level structures which can be made via intersection of two designs etched from both sides of the wafer. Furthermore, the yield of 3D structures made via conventional or double-sided microlithography techniques on rigid Si wafers, drop drastically to about 50% because of manual handling of fragile wafers which have already gone through a round of deep Si etch.",
+                                "Thus, commercially, the creation of taller (\u2265 10 \u00b5m) multi-level structures have traditionally been performed via chip stacking methods (FIG. 1D). In this approach, a fully 3D design is split into several different 2.5D structures; these 2.5D structures are fabricated in separate wafers using conventional \u2018lithography + etching\u2019 which are then stacked together using solder die-attach or thin eutectic bonding technologies (130b, 130c on FIG. 1D). The wafer thicknesses used for each of these separate layers determine the step heights achievable through this process and often, to achieve small step heights, the wafers need to be thinned down using a back-grinding tool. Wafer thinning is not possible below 30 - 50 \u00b5m which puts quite a large limitation on the minimum step height or vertical resolution of this process. Moreover, extremely thin wafers are prone to warping, chipping, and breakage. The final bonded chip-stacked configurations are short-lived and unreliable, the bonding sites being the primary source of failure. These issues present themselves more frequently in devices that go through massive cyclic thermal or mechanical stresses, especially, in high heat flux microfluidic cooling devices. Also, chip stacking techniques have their limitations in terms of the device configurations it can fabricate, since the middle wafer layers of the stack cannot have free standing structures (for e.g., multi-level pin fin array structures cannot be made using this technique). Thus, current microfabrication community is in desperate need of a standardized, easily characterized process to make high aspect ratio, tall (\u2265 100 \u00b5m) micro-mesoscale multi-level structures that is simple, cost-effective, can operate between reasonable process tolerances, and thus ultimately easily translatable from one lab to another.",
+                                "In this work, we provide a novel silicon dioxide to silicon pattern transfer process which can reliably create multi-level structures using photolithography techniques and simultaneously solve several of the practical challenges that arise while employing existing state-of-the-art methods like chip stacking and grayscale lithography. The pattern transfer process is achieved through a single shot deep silicon etching step which translates into an improvement in manufacturing yield by more than 40%. Furthermore, Si:SiO2 etch selectivity is more than an order of magnitude higher compared to Si:PR etch selectivities, thus enabling us to create really tall (up to 500 pm), high aspect ratio (~10-15) structure the likes of which will be immensely useful in applications that rely on mesoscale features. The process described employs full-dose exposure and thus circumvents all the challenges and difficulties associated with partial dose gray exposure. Removing the gray exposure step simultaneously eliminates the \u201chard-to-control\u201d parameters that are inherently associated with partial exposure steps in gray-lithography. The only parameters to be characterized are associated with etching silicon dioxide and silicon, thus making this novel process easy to generalize, and not require extremely tight process tolerances.",
+                                "This work also describes a simple characterization method and details data on SiO2 and Si etch specific to the tools and step conditions used. Coupled with easy characterization and standardizability, the process also employs very commonly used cleanroom-based tools and processes to create multi-level microstructure - this makes knowledge transfer from one lab to another much easier. Finally, this work shows proof-of-concept of this method via performing two rounds of \u2018lithography + etch\u2019 and shows SEM images of several 2-level and 3-level microstructures made. However, the possibilities in terms of structure types, topologies, configurations, and length-scale are endless. Finally, this work ends by listing some exciting applications of these novel hybrid structures whose fabrication is now made possible and which could pave the way for the next generations of high-performance microfluidics and cooling technologies."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce micro-nano processing techniques",
+                                "describe applications of micro-nano processing",
+                                "motivate limitations of conventional cleanroom-based lithography",
+                                "describe 2.5D structures",
+                                "describe 3D structures",
+                                "illustrate 2.5D and 3D structures with figures",
+                                "describe conventional LELE process",
+                                "illustrate LELE process with figures",
+                                "describe limitations of LELE process",
+                                "describe chip stacking for making 3D structures",
+                                "illustrate chip stacking with figures",
+                                "describe grayscale lithography",
+                                "illustrate grayscale lithography with figures",
+                                "describe limitations of grayscale lithography",
+                                "describe double-sided processing technique",
+                                "describe limitations of double-sided processing",
+                                "describe chip stacking methods",
+                                "illustrate chip stacking methods with figures",
+                                "describe limitations of chip stacking methods",
+                                "motivate need for novel silicon dioxide to silicon pattern transfer process",
+                                "introduce novel pattern transfer process",
+                                "describe advantages of novel pattern transfer process",
+                                "describe characterization method and data",
+                                "conclude with applications of novel hybrid structures"
+                            ],
+                            "num_characters": 12431,
+                            "outline_medium": [
+                                "introduce micro-nano processing techniques",
+                                "describe limitations of conventional cleanroom-based lithography",
+                                "define 2.5D and 3D structures",
+                                "illustrate 2.5D and 3D structures with figures",
+                                "describe conventional LELE process",
+                                "illustrate LELE process with figures",
+                                "describe chip stacking for making 3D structures",
+                                "illustrate chip stacking with figures",
+                                "describe grayscale lithography",
+                                "illustrate grayscale lithography with figures",
+                                "discuss limitations of grayscale lithography",
+                                "motivate need for novel silicon dioxide to silicon pattern transfer process"
+                            ],
+                            "outline_short": [
+                                "introduce micro-nano processing techniques",
+                                "motivate need for multi-level, 3D hierarchical structures",
+                                "describe limitations of conventional cleanroom-based lithography",
+                                "illustrate 2.5D and 3D structures",
+                                "discuss conventional LELE and grayscale lithography",
+                                "highlight need for novel silicon dioxide to silicon pattern transfer process"
+                            ]
+                        },
+                        {
+                            "title": "II) Methods",
+                            "paragraphs": [
+                                "In conventional lithography (FIG. 1C), creation of etched features usually follows these steps - coating Photoresist (PR) on the wafer (120a on FIG. 1C); exposing 2D design on the PR with light of appropriate wavelength and energy which causes a photochemical reaction in the PR and makes it dissolvable in a special solvent called the developer (developers are usually highly dilute solutions of extremely corrosive bases like TMAH, Tetramethylammonium hydroxide). After exposure, the developer is used to wash away the parts of the PR that had been exposed in the previous step, thus leaving behind a 2D pattern of PR on the wafer surface (120b on FIG. 1C). Deep Reactive Ion based Bosch Silicon etch is subsequently performed to etch away the exposed parts of the wafer up to a desired depth and we are left with a single-level structure with all the features having the same depth into the silicon wafer (120c on FIG. 1C).",
+                                "To achieve a multi-depth structure using this conventional technique, a process flow called LELE (litho-etch-litho-etch) can be used. In this process, the sequence of steps \u2018lithography + etch\u2019 needs to be repeated multiple times with a different exposure design and different etch times in each step. The primary challenge arises in the second lithography step where PR is attempted to be spun on the wafer with features already etched in it. The spin coating process works via PR being puddle dispensed at the center of a Silicon wafer spinning at a high RPM, making it spread radially outward to create a thin, uniform, and conformal coating over the wafer. The spinning process on an already etched wafer is satisfactory (thin and uniform) when the PR thickness (4 - 10 \u00b5m) is much larger compared to the etch height of the features. Thus, in some cases of IC (integrated circuit) fabrication, where the already etched feature height is \u2264 1 - 4 \u00b5m, the LELE process works perfectly. However, in several useful applications of microfluidics, liquid cooling, optics and semiconductor fabrication, these etch depths are of the micro-meso scale and can range anywhere from 10 \u00b5m to 500 - 600 \u00b5m. PR spinning on larger step heights (more than 5 - 10 \u00b5m) lead to unsatisfactory coating (120d on FIG. 1C). Several problems like streaking (PR layer being wrinkled after hitting an etched feature or obstacle), fingering (PR getting trapped in a deep cavity/channel and progressing along those channels only), and incomplete coverage (PR hitting the corner of an etched feature and failing to cover the rest of the wafer) mar the spin coating process in the second rounds of lithography. This causes failure of the downstream exposure process, whose success relies exclusively on the uniformity of the PR coat - thus leading to failure of the overall process.",
+                                "We identified two major problems in conventional methods that lead to difficulties in reliable fabrication -unsatisfactory PR coating issues on etched structures with height \u2265 5 \u00b5m in LELE processing; and unavoidable and uncontrollable issues associated with partial gray dose exposure in grayscale lithography. In this context, we here describe a novel process flow using commonly used cleanroom tools which mitigates all these problems and enables us to create multi-level hierarchical structures with ease.",
+                                "We have introduced an ultra-thin, sacrificial layer of SiO2 in between the PR and the Silicon wafer; the SiO2 layer now acting as the masking material during the deep Si etching process instead of PR. The idea is to perform multiple rounds of conventional LELE lithography to pattern this newly introduced SiO2 mask layer, instead of attempting to directly pattern the Silicon underneath. After this, by deep Si etching, this 3D multi-level pattern in the SiO2 gets scaled vertically and transferred to the silicon - the overall process flow is shown schematically in FIGS. 2A-I.",
+                                "FIGS. 2A-I show an exemplary process flow for creation of multi-level structures using the present approach. FIG. 2A shows a clean bare wafer 202 without features. FIG. 2B shows the result of depositing an intermediate ultra-thin masking material 204 - in our case, SiO2 is CVD (chemical vapor deposition) deposited. FIG. 2C shows the result of depositing and patterning photoresist (PR) 206, this process is not hindered because it is thicker than the underlying SiO2 layer. FIG. 2D shows the result of etching the underlying SiO2 204 to a precise depth t1 using PR 206 as a mask layer. FIG. 2E shows the result of stripping the PR. FIG. 2F shows the second round of lithography - in this situation PR thickness is at least 1.5 times the maximum SiO2 feature thickness already on the wafer, thus spin coating process is successful, yielding a thin conformal coat all over the 3D featured SiO2. This time the SiO2 is etched to a different depth, t2, again using PR layer 206 as a mask. FIG. 2G shows the result of stripping the second-round PR from the substrate. After two rounds of lithography, a 2-level structure is made on the SiO2. FIG. 2H shows the result of two more rounds of lithography. Here two more levels can be made. In theory, n rounds of lithography is able to make at least n levels in the structure. FIG. 2I shows the result of etching the wafer 202 with a 3D structured SiO2 layer (i.e., 204 of FIG. 2H) in a deep Si Reactive Ion Etcher (RIE) to vertically scale the SiO2 3D pattern by the Si:SiO2 selectivity S (which is around 200 - 300 for our case) and transfer to the silicon wafer underneath. Finally, we are left with an n level, high aspect ratio structure, deep structure in Si. FIG. 2J shows a single-level structure for comparison.",
+                                "In the first step of this process flow, the thin (1 -3 \u00b5m) layer of SiO2 is first deposited on the wafer through Chemical Vapor Deposition (CVD) at 250 - 350\u00b0 C. or thermal oxidation process (\u2265 850\u00b0 C.) (FIG. 2B). Alternatively, to make the process more BEOL (back-end-of-line) friendly, high density plasma enhanced CVD (HDPECVD) process can be used which can deposit high quality SiO2 but at a much lower temperature of 90 - 120\u00b0 C. by using directional plasma to enhance the deposition process. Following the SiO2 layer growth/deposition, multiple rounds of lithography is performed on the SiO2 layer with different design and SiO2 etch time in each of the rounds (FIGS. 2C-H). Since the SiO2 layer is ultra-thin, the maximum etch step heights (\u2264 3 \u00b5m) in SiO2 is always less than the PR layer thickness (4 -10 \u00b5m) spreading over them during the spinning process. These low aspect ratio features in the SiO2 do not interfere with the PR spinning process, thus giving rise to perfectly uniform and conformal PR coats on the SiO2 layer during the multiple lithography steps (FIG. 2F). After the desired 3D profile has been etched in the SiO2 layer through multiple lithography rounds, the wafer is placed in a deep Si etcher which achieves anisotropic profiles in Si via a time-multiplexed deep reactive ion (DRI) process often also termed Bosch etching process. This etching step is a one-shot process which scales the 3D profile in the SiO2 vertically by the Si:SiO2 etch selectivity and transfers it to the Silicon underneath (FIG. 2I). Since this etching step is a single-shot process, it also eliminates manual handling of fragile deep etched wafers like in chip stacking or conventional LELE process, thus improving process yield from 50 to 90%. Furthermore, these structures are now monolithic or made of a single bulk Si substrate, which eliminates the several bonding layers that would be required in chip stacking approach - this increases device reliability and robustness; the thermal and mechanical stress cycling induced failures in chip stacked configurations are effectively avoided. All the aforementioned effects combined would result faster processing time, more yield, higher throughput in industrial mass manufacturing scenarios and ultimately cheaper devices. The two major issues mentioned at the beginning of this section are also mitigated through this process flow - the use of ultra-thin SiO2 eliminates the PR spin coating issues over etched steps in SiO2, and performing full dose exposure-based lithography to pattern the SiO2 layer gets rid of the difficult to characterize problems associated with gray dose lithography. Moreover, SiO2 as a etch hard-mask provides very high selectivity of etch (200 - 300) with respect to Si, which is more than twice that of maximum Si:PR selectivity of 80 - 100. This enables us to easily make meso-scale structures taller than 500pm using extremely thin (\u2264 3 \u00b5m) SiO2.",
+                                "It is also important to note that all the steps used to make up this process flow like lithography (spinning PR, exposing sub-10 \u00b5m feature design, development), SiO2 deposition or growth on Si wafer, SiO2 reactive ion etch (RIE) and DRI etch of silicon are very commonly employed in the cleanroom microfabrication community. This enables easy transfer of process knowledge from one lab to another, something that is almost impossible for grayscale technology. Furthermore, this process flow uses only full exposure lithography, which has been extensively characterized and documented for different types and thicknesses of positive and negative resist. The elimination of gray dose exposure deals away with some of the unavoidable issues associated with grayscale technology like gray dose induced PR response curve shifting, gray dose profile welling, messy surface post-development, gray dose dependent dimension distortion etc. In absence of these issues, expensive and tedious experimental and numerical profile error correction steps that would otherwise be required, are also effectively avoided. The only characterization required is related to the etch of SiO2 and Si, both of which have also been extensively characterized by numerous previous researchers. Despite these processes being very common and their characterization data widely available in the microfabrication community, we have detailed some characterization data later in the section specific to the tools and recipes we have employed to provide a starting point for anyone looking to fabricate such structures.",
+                                "Preliminary tests using this novel process flow (FIGS. 2A-I) have demonstrated the ability to create 3D hierarchical features of nominal dimensions (width) ~ 5 -10 \u00b5m with aspect ratios (height to width ratio) as large as 10-15. The resolution can be further improved to sub-500 nm scale by using e-beam lithography instead of conventional photolithography. The process flow of creating multi-level structures has been tested 5 times with different magnitudes of step heights (250 nm through 1.5 \u00b5m) to establish reliability and repeatability.",
+                                "The resolution and repeatability of the process depends on our ability to precisely characterize the etch rate of Silicon, etch rate of SiO2 and the Si:SiO2 etch selectivity. Two characterization masks were constructed such that when lithographically aligned will contain small design patches of overlapping straight microchannels and square pillar arrays. Three different characterization wafers were etched for varying amounts with these two lithography masks on three different days. These two masks were etched for varying durations using a 600 - 800 W plasma of CHF3 and CH4 in 3:1 ratio in a reactive ion etching tool named Oxford RIE, to generate steps of step heights varying between 250 nm and 1.5 \u00b5m in the SiO2 layer. The SiO2 etching recipe was so chosen such that the SiO2:PR selectivity was \u2265 1. This ensures that the PR layer (4 - 10 \u00b5m) is always sufficiently thick to completely etch the thinner (3 \u00b5m) SiO2 underneath, thus eliminating one more parameter (SiO2:PR etch selectivity) from needing precise characterization. In this scenario, only the SiO2 etch rate information becomes important. The findings of SiO2 etch are summarized in FIGS. 3A-B.",
+                                "To establish repeatability and standardizability of our method, precise characterization of the oxide etch rate is performed. Characterization wafers having straight channels and square pillar arrays were etched for varying durations (1 sec to 100 sec) and the etch per second in \u00c5/s has been plotted as a function of the feature dimensions on FIGS. 3A and 3B, for straight channels and square pillars, respectively. Etch per second was found to be stable around 5 nm/s. However, the important observation is the fact that no Aspect Ratio Dependent Etching (ARDE) in SiO2 is noticed (the maximum variation in etch per second in different geometries was found to be ~ 1 nm/s) showing a consistent etch per second value for different feature dimension and loading conditions. Etch per second was seen to be more influenced by total etch time, especially when total etch time is low (\u2264 5 secs) - this is the result of unpredictable and non-uniform plasma distribution in the etch chamber when etch time is only 1 second. At higher etch times (30s, 60s, 100s) the etch per second showed less variation and were closer to each other (45 - 50 \u00c5/s) indicating good process control, repeatability, and reliability.",
+                                "Following detailed characterization of the oxide etch rate using our specific recipe, we can precisely construct 3D structures in Silicon oxide. The target structures for our extreme heat flux cooling devices are extremely tall (~ 500 \u00b5m) needing 3 - 4 \u00b5m SiO2 layer as the mask. As mentioned before, we have chosen an aggressive oxide etch recipe with good SiO2:PR selectivity of \u2265 1. This is necessary in order to be able to etch the thick SiO2 layers (up to 4 - 6 \u00b5m) using a relatively thinner PR layer (4 \u00b5m, thus maintaining sub-10 \u00b5m resolution). Although, choosing an aggressive SiO2 etch recipe (with high etch per second value) leads to worsening of the vertical resolution of our target structures. As seen in FIGS. 3A-B, which plots the etch per second (\u00c5/s) as a function of the total etch time and feature dimension, the average etch rate was well controlled within 45 and 54 \u00c5/s for a wide range of target structures and for all etch durations above 1 seconds. At 1 second, the etching is severely starved of plasma and etch rate is much lower, ~ 30 \u00c5/s. Additionally, in 1 sec, plasma does not have enough time to distribute in the chamber uniformly thus also leading to Aspect Ratio Dependent Etching (ARDE), where the feature dimensions influence the etch rate more strongly (this can be seen in the 1 sec etch line plot in FIG. 3B). Thus, the vertical resolution of the 3D structures using our etching recipe is determined by a minimum of 2 sec etch and is limited around 10 nm in the SiO2 layer. This translates to around 2 - 3 \u00b5m when the step is scaled and transferred to the Silicon wafer through DRIE. The etching recipe can be tuned (flow rates of respective gases can be reduced, CHF3 and CH4 ratio could be decreased) to make it less aggressive, and thus reduce the etch per second value - this will lead to better control of the etch, and better (sub-10 nm) resolution in the SiO2 3D structure although at the cost of lowering SiO2:PR selectivity.",
+                                "Following characterization of the oxide etching step, a deep silicon etching recipe was used in the Plasma-Therm Deep Silicon Etcher (PTDSE) for pattern transfer. This recipe was also characterized using a test wafer with straight channels of widths 100 - 200 \u00b5m. The average Si:SiO2 etch selectivity over a total 200 \u00b5m depth of etch was found to be around 270 - 290. This etching recipe was developed extensively in our previous reported work, where we reported etch selectivity of 220 - 240, and etch rate of 8 \u00b5m/min. The DSE recipe used in that reported work was also extremely aggressive in order to accommodate their extreme total etch height of 1000 \u00b5m, although this aggressive recipe leads to a reduced Si:SiO2 selectivity. In our present study, the recipe was slightly modified (the silicon etching step, \u2018etchA\u2019 time was reduced to 3.1 seconds from 3.3 seconds) to increase selectivity and attain straighter, more anisotropic etch profile. The progression of etch for our characterization structures (perpendicularly placed straight channels arrays of different widths and spacings between 100 and 400 \u00b5m) were investigated. 172 \u00b5m of Silicon was found to be etched for 0.61 \u00b5m of oxide, thus making the average Si:SiO2 etch selectivity ~282. Some of the final multi-level structures obtained through this process flow are shown in FIGS. 4A-M.",
+                                "FIGS. 4A-M show images of fabricated 3D structures using our fabrication method. On all figures, 1, 2, 3 are feature depths as indicated above, and \u2018W\u2019 is the top wafer surface. FIG. 4A is a multi-level pin fin structure (isometric view), these types of structures cannot be made via conventional chip stacking or double sided etching techniques. FIG. 4B is a side view of the multi-level pin fin array. FIG. 4C shows pin fins and pin holes. FIG. 4D shows straight microchannels offset from wafer surface (the ability to make microstructure slightly offset from surface has immense potential to ease bonding, integration and packaging different components together especially for extreme heat flux cooling applications). FIG. 4E shows serrated fin structures of different aspect ratios and spacing. FIG. 4F is a zoomed image of the pin-fin pin hole sample. FIG. 4G is a side view of a serrated fin structure showing 4 distinct levels. FIG. 4H is an isometric view of a 2-level serrated fin structure. FIG. 4I shows overlapping mask designs used to make 3-level serrated fins. FIG. 4J shows 3-level channels with pin-holes made by overlapping two mask designs. These kind of smaller pin-fin or pin-hole type structures distributed on a larger underlying meso structure is an easy and viable way to improve thermal performance of the active heat transfer zone in coolers. FIG. 4K shows pin fins protruding from channel base that are taller than the channel sidewall height (some fins got broken during wafer dicing). FIG. 4L shows a 3-level \u201cChair\u201d design made by overlapping square pattern mask designs on the side of channels. FIG. 4M shows a pin fin array patterned on two-level channels, which demonstrates our ability to make well-ordered surface enhanced multi-level structures as well.",
+                                "Finally, it is worthwhile to mention that the present fabrication concept, which involves multi-lithographically patterning a thin, low aspect ratio masking layer and then transferring that pattern to an underlying substrate through single-shot etching can be extended to other mask material and substrate combinations as well. Instead of CVD Silicon dioxide, thin metal layers (Au, Pt, Cr, W, Al) or other oxide (Alumina) or Nitride (SiNx) material can also be used as the mask layer. Superior etch selectivity of 105 has been observed during DRIE of Silicon with an Al mask layer - thus combining this with our method will enable the creation of extreme aspect ratio (\u2265 35) multi-level structures. These new masking materials can also be deposited or grown on our wafer through other techniques like evaporation, sputtering, atomic layer deposition (ALD) or electroplating - thus making the concept applicable in wide range of fabrication scenarios. For different sets of mask and substrate material, the characterization process stays relatively unchanged, with a single run required using a characterization mask to quantify the etch rates and selectivities specific to the tools and process conditions used - these parameters are then to be used to design the process flow for obtaining our final target multi-level structures."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce conventional lithography process",
+                                "describe coating photoresist on wafer",
+                                "explain exposing 2D design on photoresist",
+                                "describe developer wash away exposed parts",
+                                "explain deep reactive ion etching process",
+                                "introduce LELE process for multi-depth structure",
+                                "describe limitations of LELE process",
+                                "identify two major problems in conventional methods",
+                                "introduce novel process flow using SiO2 layer",
+                                "describe depositing SiO2 layer on wafer",
+                                "explain performing multiple rounds of lithography",
+                                "describe etching SiO2 layer with different design and etch time",
+                                "explain deep Si etching process",
+                                "describe advantages of novel process flow",
+                                "explain elimination of PR spin coating issues",
+                                "describe elimination of gray dose exposure problems",
+                                "explain high selectivity of SiO2 etch mask",
+                                "describe easy transfer of process knowledge",
+                                "explain use of full exposure lithography",
+                                "describe elimination of gray dose induced errors",
+                                "explain preliminary tests of novel process flow",
+                                "describe creation of 3D hierarchical features",
+                                "explain improvement of resolution using e-beam lithography",
+                                "describe testing of process flow with different step heights",
+                                "explain characterization of etch rate of Silicon and SiO2",
+                                "describe construction of characterization masks",
+                                "explain etching of characterization wafers",
+                                "describe findings of SiO2 etch rate characterization",
+                                "explain influence of total etch time on etch per second",
+                                "describe repeatability and standardizability of method",
+                                "explain characterization of deep silicon etching recipe",
+                                "describe development of deep silicon etching recipe",
+                                "explain modification of etching recipe for better selectivity",
+                                "describe investigation of etch progression",
+                                "explain average Si:SiO2 etch selectivity",
+                                "describe final multi-level structures obtained",
+                                "explain extension of fabrication concept to other materials",
+                                "describe deposition or growth of mask layer through various techniques",
+                                "explain applicability of concept in wide range of fabrication scenarios"
+                            ],
+                            "num_characters": 19547,
+                            "outline_medium": [
+                                "introduce conventional lithography process",
+                                "describe coating photoresist on wafer",
+                                "explain exposing 2D design on photoresist",
+                                "describe washing away exposed parts of photoresist",
+                                "perform deep reactive ion etching",
+                                "introduce LELE process for multi-depth structure",
+                                "identify problems in conventional methods",
+                                "introduce novel process flow using SiO2 layer",
+                                "deposit SiO2 layer on wafer",
+                                "perform multiple rounds of lithography on SiO2 layer",
+                                "etch SiO2 layer to precise depth",
+                                "strip photoresist",
+                                "repeat lithography and etching steps",
+                                "etch wafer with 3D structured SiO2 layer",
+                                "transfer pattern to silicon wafer",
+                                "discuss advantages of novel process flow",
+                                "describe characterization of SiO2 etch rate",
+                                "discuss repeatability and standardizability of method",
+                                "characterize deep silicon etching recipe"
+                            ],
+                            "outline_short": [
+                                "describe conventional lithography process",
+                                "identify problems with LELE process",
+                                "introduce novel process flow using SiO2 layer",
+                                "describe deposition of SiO2 layer",
+                                "describe multiple rounds of lithography on SiO2 layer",
+                                "describe deep Si etching process",
+                                "highlight advantages of novel process flow",
+                                "describe characterization of etch rates and selectivities",
+                                "discuss flexibility of process flow with different mask materials"
+                            ]
+                        },
+                        {
+                            "title": "III) Results and Discussion",
+                            "paragraphs": [
+                                "Different types of multi-level features made using this method, with varying feature widths and heights and topographies are presented in FIGS. 4A-M. All the structures in FIGS. 4A-M are made via two rounds of lithography by overlapping two lithography masks. In theory, several lithography rounds can be performed on the wafer to create n-level structures.",
+                                "Usually, the number of \u2018lithography + SiO2 etch\u2019 steps is equal to the number of levels required in the multi-level structure (FIGS. 2A-I), although it was soon realized that further simplifications could be made easily to reduce the number of processing steps required for these structures. For example, the final step height in the SiO2 layer could be entirely replaced with a baked photopolymer, thus reducing one round of \u2018lithography + SiO2 etch\u2019. Although this would require designing the fabrication flow while accounting for the different etch rates and selectivities of PR, SiO2 and Si during the process. In addition to these simplifications, mask designs themselves can be cleverly combined and overlapped between different rounds of \u2018lithography + SiO2 etch\u2019 which gives rise to more levels using lesser number of rounds of \u2018lithography + etch\u2019. An example has been demonstrated in FIGS. 5A-F, where two rounds of \u2018lithography + etch\u2019 involving 2 masks could generate a 3-level structure. More such structures are seen in FIGS. 4G,I,J,L,M, all of which are made by overlapping two masks.",
+                                "FIGS. 5A-F show overlapping mask designs to make more complicated structures. FIG. 5A shows the result of etching a first mask design (504 of FIG. 5D) in SiO2 502 to a depth of t1. FIG. 5B shows the result of patterning PR 206 according to a second design (506 of FIG. 5D) that overlaps partially with the feature formed on FIG. 5A. FIG. 5C shows the result of etching the structure of FIG. 5B to obtain a 3-level 3D feature on the SiO2 502. FIG. 5D shows the two masks for two rounds of \u2018lithography + SiO2 etch\u2019, where the image on the right shows how the masks overlap. FIG. 5E is an image of the result after DRIE, where the structure is scaled vertically and transferred to the underlying Si. The new 3-level pin-fin-hole combination arrays are shown. 510 is a zoomed view of the 3D structure singled out on 508. FIG. 5F is a side cross-sectional view of the structure of FIG. 5E. Here the numbers 1, 2, 3 represent the different levels, and \u2018W\u2019 is the wafer top.",
+                                "FIGS. 5A-F show a multi-height pin fin structure with a pillar and pocket feature etched together. The dimensional accuracy and exposure quality by the MLA Heidelberg Maskless aligner (exposure tool) depends on two main parameters - the exposing light energy (dose) and the location of focus (defocus) with respect to the PR top surface, although the exposing energy is the primary determinant. It has been observed previously that a \u00b1 1 \u00b5m change in the defocus value from the optimal focal plane does not affect the exposure step significantly - this suggests that if the 3D features and step heights in the SiO2 is low enough (sub-micron), exposure quality at the two steps is relatively good. Overlapping designs were tested for step heights from 0.5pm to 1 \u00b5m and exposures were found to be satisfactory on both the levels (FIGS. 5A-E)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "present different types of multi-level features made",
+                                "explain overlapping mask designs to make more complicated structures",
+                                "describe simplifications to reduce processing steps",
+                                "explain combining mask designs to generate more levels",
+                                "describe results of overlapping mask designs",
+                                "explain dimensional accuracy and exposure quality"
+                            ],
+                            "num_characters": 3271,
+                            "outline_medium": [
+                                "present multi-level features made using novel method",
+                                "discuss simplifications to reduce processing steps",
+                                "demonstrate overlapping mask designs for complicated structures"
+                            ],
+                            "outline_short": [
+                                "present and discuss results of fabricated multi-level structures"
+                            ]
+                        },
+                        {
+                            "title": "IV) Impact",
+                            "paragraphs": [
+                                "The approach of this work allows us to precisely create multi-level, hybrid structures through an easy to characterize and standardizable process flow. Some of these kinds of structures are demonstrated in FIGS. 4A-M and 5A-F, but the possibilities are endless. Since most of these structures are tall (\u2265 100 \u00b5m, often as tall as 500 pm) with high (5-10) to extreme (15-25) aspect ratios, we anticipate these kinds of structures to be best suited for micro to meso-scale microfluidics and liquid cooling applications. The ability to create 3D, multifunctional and hierarchical structures is especially important to the academic and industrial research environment right now, since numerous micro-meso scale applications can benefit in performance by merely replacing conventional single-level device structures into multi-functional and multi-level, hybrid features. Some of those applications are as follows.",
+                                "**IV Improvements in Microfluidics**",
+                                "Flow type microfluidic devices have active regions with diverse range of functionalities, some examples being mixing, particle separation, sorting, separation, and analysis. Alongside the active region, the devices also have flow channels, inlets and outlets which are usually of different feature sizes and at different levels in the device - flow channels are wider, inlets and outlets through etched to enable flow connections in and out of the device. One of the most common approaches for high volume manufacturing of such devices is thermal or UV Nano Imprint Lithography (NIL). This utilizes a rigid master or mold (often made from Si) which is used to create the mirror inverse out of several soft polymers like SU-8, PDMS, Polyurethanes (PU), Polycarbonates (PC), PMMA etc. Currently, no method exists for creation of multi-level rigid molds - our method will be immensely useful in this context. Additionally, this process will enable easy fabrication of active area microstructure and flow channels with independent control of the feature widths and heights, which will pave the way for multi-physics on the same device or chip. Complicated flow paths and internal capped structures like the ones demonstrated in the literature by 3D-printing can now be made by ease by bonding two silicon chips or their corresponding NIL casted polymers. Digital or droplet-based microfluidics could also immensely benefit from such multi-level structures. Carefully crafted multi-level pins and holes (like the ones shown in FIGS. 4C, 4F) combined with multi-level channels could be used to create, trap, and transport droplets effectively. Recently, hybrid structures have garnered a lot of attention from the optofluidic community as well - a report in the literature demonstrated the integration of a PDMS based fluid handling layer with a silicon optical sensor for single particle detection but also showed its functionality for other purposes like labelling DNA, single molecule detection, particle mixing, distribution, and filtering. Another benefit to multi-level featuring is the ability to make surface structures that will also present several possibilities in designing bio-inspired surface designs with targeted functionalities, for example, superhydrophobic, self-cleaning lotus leaf, antifouling and drag reducing shark skin and mollusk shell textures, anti-reflective moth-eye, photonic butterfly wing structures and \u201cwater harvesting\u201d micro-bumps like Namib beetle skin. Being able to combine several different functionalities together on the same chip will push us to create more versatile lab-on-a-chip (LOC) devices which will have a massive impact on bio-microfluidics, enabling droplet based small volume sample-reagent testing, biological and chemical assays, point-of-care diagnostics, cell and DNA manipulation and testing, separation, sorting, and analysis. These types of multi-level materials will also have varied use in situations requiring surface and absorption enhancements, some of which are water absorption, desalination, carbon capture, battery technology, adsorption enhancement, catalysis, surface tension or capillary force driven transport etc.",
+                                "**IV Advances in Convective Cooling Devices**",
+                                "Moreover, hybrid multi-level structures probably have the most significant impact on improving the device performance in the field of embedded liquid cooling solution. Hybridization of the Cold Plate side microchannel (by introducing a microwick or surface features at the bottom of a straight microchannel) lead to increased thermal performance in forced fed microchannel cooling scenarios. In the literature, there is a report of heat transfer coefficient improvements from 17% to over 117% for microstructured microchannel compared to smooth microchannel, for 25 and 75 \u00b5m tall micropillars, respectively, using methanol as the working fluid without significant increase in pressure drop. Passive heat spreaders like Heat Pipes and Vapor chambers with hybrid, bi-porous wicks instead of a conventional mono-porous one showed significant improvement in their heat spreading capabilities. A report in the literature demonstrated that a complex hybrid wick when used in a heat pipe, leads to a massive 30 folds increase in maximum spreadable heat load as compared to solid Copper. Another report validated the superior performance of hybrid two-level wicks in Vapor Chambers by reporting a 28% and 17% decrease respectively in device thermal resistance as compared to a state-of-the-art commercial monoporous and biporous wick TGP (Thermal Ground Plane).",
+                                "Moreover, our ability to reliably create multi-level hierarchical structures will allow us to aggressively scale up forced convection based active cooling device using a second 3D manifold layer for efficient fluid delivery. High performance cooler scale-up is an immensely important goal being pursued in the field of embedded cooling; this will allow us to pack energy dense power electronic components closely together and continue the trend of improving electronics speed and energy density. A report in the literature performed numerical simulations in ANSYS Fluent to compare Manifolded Coolers (MMC) design with Traditional 2D Coolers (TMC)s and showed that at same flow rates, the MMCs can achieve similar levels of thermal performance as the TMCs but achieve a massive 4\u00d7 to 6\u00d7 reduction in total device pressure and thus, 4\u00d7 to 6\u00d7 improvement in Coefficient of Performance (COP). In addition to active coolers, such hybrid, multi-height wicks will also enable scale up of heat spreader technologies. This is possible since multi-depth features when cleverly combined in the evaporator wick can effectively solve the mass transport limitations inherently imposed by thin evaporator wicks in liquid-to-vapor phase change heat spreaders. In ultra-thin vapor chamber designs, the short pillars could be placed over the hot spots to hold a very thin liquid film, leading to smaller thermal resistance and superior thermal performance while the tall pillars will act as liquid replenishment routes supplying enough wicking mass flow from the condenser back to the evaporator over large device areas. In addition to the above mentioned uses for multi-level structures, the active heat transfer 3D micro-featured surfaces themselves can be surface enhanced (FIG. 4M shows surface enhancements on top of 2-level structured channels to make an overall 3-level structure) using this novel method. These surface enhancements will be well-ordered, and their dimensions exactly controlled, thus they can replace conventional methods of creating stochastic surface roughness elements (such as wires, tubes, needles, broccoli, and polyps) which are harder to control and repeat. These surface enhancements lead to massive improvements in device metrics by enhancing the capillary wicking-based transport from the condenser back to the evaporator. This has been demonstrated by creating hybrid wicks using UV laser induced roughness, hydrothermal ZnO Nanowire synthesis on silicon microstructure and then performing capillary rate of rise tests to show that their wicking rate is much faster than their non-hybrid smooth counterparts with no surface enhancements. Surface enhancements combined with multi-level structures, additionally increase the overall surface area available for heat transfer in forced fed convection and thin film evaporation scenarios, and leads to increased bubble nucleation sites in pool and flow boiling regimes.",
+                                "Some of the above-mentioned applications help motivate the superiority of hybrid structures. Several orders of magnitude improvement can be achieved in many applications when conventional monoporous or single-level wicks are replaced by hybrid, multi-level wicks. We hope that this standardized recipe for manufacturing such multi-level structures will encourage more research, and eventually adoption of such structures in commercial devices and real-life scenarios."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce multi-level hybrid structures",
+                                "motivate micro to meso-scale microfluidics and liquid cooling applications",
+                                "summarize importance of 3D, multifunctional and hierarchical structures",
+                                "describe flow type microfluidic devices",
+                                "motivate limitations of current microfluidic device manufacturing",
+                                "introduce benefits of multi-level rigid molds",
+                                "describe advantages of independent control of feature widths and heights",
+                                "motivate digital or droplet-based microfluidics",
+                                "describe benefits of multi-level pins and holes",
+                                "introduce hybrid structures in optofluidics",
+                                "motivate surface structures with targeted functionalities",
+                                "describe benefits of combining functionalities on the same chip",
+                                "introduce advances in convective cooling devices",
+                                "describe benefits of hybrid multi-level structures in cooling devices",
+                                "motivate passive heat spreaders with hybrid wicks",
+                                "describe benefits of aggressively scaling up forced convection based active cooling devices",
+                                "summarize importance of multi-level structures in various applications"
+                            ],
+                            "num_characters": 8939,
+                            "outline_medium": [
+                                "introduce multi-level hybrid structures",
+                                "motivate microfluidics applications",
+                                "describe limitations of current microfluidics methods",
+                                "application of multi-level structures in microfluidics",
+                                "motivate convective cooling devices",
+                                "describe limitations of current cooling methods",
+                                "application of multi-level structures in cooling devices",
+                                "summarize benefits of hybrid structures"
+                            ],
+                            "outline_short": [
+                                "motivate microfluidics applications",
+                                "describe microfluidics improvements",
+                                "motivate convective cooling devices",
+                                "describe cooling device advancements"
+                            ]
+                        },
+                        {
+                            "title": "V) Conclusion",
+                            "paragraphs": [
+                                "In this work, we have detailed a novel Silicon Oxide (SiO2) to Si pattern transfer process which uses multiple lithography to first pattern a thin, low aspect ratio SiO2 layer which is then transferred to the Si substrate underneath via a one-shot deep etching technique. The extreme high etch selectivity between Si:SiO2 etch of 200 -300 enables us to create multi-level structures of extreme heights of \u2265 500 \u00b5m and extreme aspect ratio (\u226510-15) in Silicon with a relatively thin (\u2264 3) oxide layer on top. With the current oxide etch recipe selected, we obtain a stable resolution of 90 - 100 \u00c5 in SiO2 for 2 secs of etch, this yields a vertical Si etch resolution of 2 - 3 \u00b5m in Si. With more tweaks to the etch recipe, the oxide etch per second can be reduced and resolution further refined. This process provides several advantages over conventional chip stacking and grayscale lithography approaches. The novel process has been used to create myriads of multi-level structures as shown in FIGS. 4A-M, furthermore, FIGS. 5A-F shows how multiple lithography masks can be overlapped to create more levels using lesser number of lithography steps. Such multi-level structures in the micro and mesoscale have far reaching applications in the fields of microfluidics, cooling technologies, biology, filtration, and energy as mentioned briefly in the Introduction and Impact sections. Furthermore, our novel process solves several practical characterization and standardization challenges that mar the use of grayscale lithography and conventional LELE process, to make multi-level hierarchical structures and thus arguably is more suited for commercial mass manufacturing, high throughput situations. Difficult, non-standard fabrication with tight process tolerances is the primary reason why multi-level, 3D structures are not regularly observed in commercial devices. Having a standard recipe that can be easily translated from one lab to another will open a range of possibilities in research and development of such hybrid structures for the improving functionalities and increasing their performance many fold."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "summarize novel Silicon Oxide to Si pattern transfer process",
+                                "describe advantages of the process",
+                                "motivate applications of multi-level structures",
+                                "conclude with the importance of a standardized recipe for manufacturing multi-level structures"
+                            ],
+                            "num_characters": 2115,
+                            "outline_medium": [
+                                "summarize novel pattern transfer process",
+                                "conclude advantages and applications"
+                            ],
+                            "outline_short": [
+                                "summarize novel pattern transfer process"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of deep-etching a substrate, the method comprising:\ndisposing a hard mask layer on the substrate;\netching a first multi-level pattern into the hard mask layer using two or more iterations of photoresist patterning followed by etching to provide etched features in the hard mask layer having two or more depths;\nperforming a deep etch of the structure using a single etch recipe that etches both the hard mask and the substrate, wherein the single etch recipe has an etch rate in the substrate at least 10\u00d7 its etch rate in the hard mask layer;\nwherein the deep etch is performed for a time sufficient to at least partially etch through the hard mask layer, thereby deep-etching a second multi-level pattern into the substrate that corresponds to the first multi-level pattern, but has magnified vertical feature dimensions.",
+        "2. The method of claim 1, wherein the hard mask layer comprises silicon dioxide, and wherein the substrate comprises silicon.",
+        "3. The method of claim 1, wherein a thickness of the hard mask layer is 3 microns or less.",
+        "4. The method of claim 1, wherein the single etch recipe has an etch rate in the substrate at least 100\u00d7 its etch rate in the hard mask layer.",
+        "5. The method of claim 1, wherein the second multi-level pattern includes features having a height/width aspect ratio of 10 or more."
+    ]
+}

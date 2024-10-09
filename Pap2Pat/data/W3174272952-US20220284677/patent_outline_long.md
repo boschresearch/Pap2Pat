@@ -1,0 +1,131 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce 3D modeling
+- describe polygonal modeling
+- limitations of mesh deformation
+
+## SUMMARY
+
+- introduce 3D conditional generative model
+- describe disentangled meta-handles
+- explain deformation function
+- summarize regularization techniques
+- describe biharmonic coordinates
+- summarize technical effects
+
+## DETAILED DESCRIPTION
+
+- introduce 3D meshes
+- motivate learning to generate 3D meshes
+- describe limitations of conventional mesh deformation methods
+- introduce disclosed system and methods
+- describe conventional approach of generating shapes by deforming a template mesh
+- contrast disclosed system with conventional approach
+- describe another conventional approach of parameterizing deformation
+- contrast disclosed system with another conventional approach
+- describe disclosed system's mechanism to enable users to make intuitive, controllable, and plausible deformations
+- introduce technical purpose of disclosed system
+- describe technical characteristics of disclosed system
+- introduce adversarial regularization
+- describe render and 2D discriminator
+- describe implausible deformations penalization
+- describe technical effects of disclosed system
+- introduce overview of technologies described
+- describe system 100
+- introduce presenter 110
+- describe user interface manager 120
+- describe rendering engine 130
+- introduce meta-handler 140
+- describe predicting meta-handles
+- describe estimating deformation range
+- introduce deformer 150
+- describe predicting coefficients
+- introduce discriminator 160
+- describe 2D discriminator
+- describe render and 2D silhouette images
+- describe implausible deformations penalization
+- describe neural networks used in system 100
+- describe multi-layer perceptron (MLP) networks
+- describe convolutional neural networks (CNN)
+- describe recursive neural networks
+- describe recurrent neural networks
+- describe long short-term memory (LSTM)
+- describe parameters and hyper-parameters of neural networks
+- describe activation functions
+- describe additional or alternative layers
+- describe system 100's computing environment
+- describe components of system 100
+- describe arrangement of system 100
+- introduce FIG. 2
+- describe operation of learned meta-handles
+- describe each learned meta-handle
+- describe deformation directions
+- describe user interface elements
+- describe controlling deformations using user interface elements
+- introduce FIG. 3
+- describe system 300
+- describe learning meta-handles
+- describe deformation net 330
+- describe various regularizations
+- describe joint loss function
+- define Chamfer distance
+- introduce geo and adv losses
+- motivate symmetry loss
+- motivate normal loss
+- motivate Laplacian loss
+- compare to conventional systems
+- motivate adversarial loss
+- introduce disentanglement loss
+- motivate sparsity term
+- motivate covariance term
+- motivate orthogonality term
+- motivate SVD term
+- motivate fit loss
+- illustrate network architecture
+- convert mesh to point cloud
+- compute biharmonic coordinates
+- encode point cloud
+- process features with MLP
+- aggregate features with max-pooling
+- predict meta-handles and coefficient ranges
+- illustrate alternative embodiment
+- illustrate coefficient prediction network
+- describe deformation process
+- introduce 3D conditional generative model
+- explain meta-handles and deformation space
+- describe graphical user interface for deformation
+- illustrate deformation function and coefficient values
+- explain soft priors and hard constraints
+- describe training process for deformation network
+- illustrate process of training meta-handle network
+- explain regularization techniques
+- describe advantages of disclosed system
+- illustrate operating environment for computing device
+- describe computer-readable media
+- explain communication media
+- describe memory and deformation logic
+- illustrate I/O components and GUI
+- describe networking interface
+- explain wireless communication technologies
+- describe limitations of conventional deformation systems
+- illustrate deformation of local region
+- explain adversarial regularization
+- describe deformation of source shape
+- illustrate process of estimating coefficient range
+- explain disentanglement loss
+- describe fitting loss and geometric loss
+- illustrate process of generating deformed 3D shape
+- explain deformation direction and GUI representation
+- describe process of assigning deformation function
+- illustrate process of predicting meta-handle
+- explain process of deforming source shape
+- describe process of training deformation network
+- illustrate process of training meta-handle network
+- explain process of estimating coefficient range
+- describe process of generating deformed 3D shape
+- illustrate process of deforming source shape
+- explain process of predicting meta-handle
+- describe advantages of disclosed system
+

@@ -1,0 +1,124 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous platforms
+
+## SUMMARY
+
+- introduce motion forecasting model
+- describe graph-centric motion forecasting model
+- motivate actor-specific graph
+- describe actor-specific graph components
+- describe global graph
+- describe interaction modeling
+- describe motion trajectory prediction
+- compare with single vector approach
+- compare with fully-connected graph approach
+- compare with regression-based predictors
+- describe advantages of graph-centric approach
+- describe computational efficiency
+- describe method for motion forecasting and planning
+- describe generating actor-specific graphs
+- describe determining interactions
+- describe predicting motion trajectories
+- describe autonomous vehicle control system
+
+## DETAILED DESCRIPTION
+
+- introduce autonomous vehicle example
+- describe operational scenario
+- define environment and actors
+- describe sensor configurations
+- introduce autonomous platform
+- describe system overview of autonomous vehicle
+- explain vehicle computing system
+- describe operating modes of vehicle
+- explain operating mode data structure
+- describe adjusting operating mode
+- introduce operations computing system
+- describe remote computing system
+- describe vehicle computing system
+- describe communication system
+- describe onboard systems
+- describe sensor system
+- describe sensor data acquisition
+- describe sensor data types
+- describe map data
+- describe positioning system
+- describe autonomy computing system
+- describe perception function
+- describe prediction function
+- describe motion planning function
+- describe object perception
+- describe object prediction
+- describe motion planning data
+- describe vehicle motion trajectory
+- describe cost data analysis
+- describe motion plan optimization
+- introduce vehicle computing system
+- generate motion planning data
+- cause motion control
+- store vehicle data
+- communicate data
+- include user devices
+- utilize machine-learned models
+- construct actor-specific graphs
+- represent actor context
+- include nodes and edges
+- include node embeddings
+- determine interactions
+- generate global graph
+- distribute interactions
+- predict motion trajectories
+- leverage machine-learned model framework
+- process sensor data
+- obtain actor data and map data
+- forecast actor motion
+- include convolutional operator
+- include pooling operator
+- generate actor-specific graphs
+- update actor-specific graphs
+- encode information into node embeddings
+- update node embeddings
+- introduce neural network training systems
+- describe rectified linear units
+- explain lane pooling operator
+- detail learnable pooling function
+- generate pooling feature
+- leverage encoder
+- aggregate node embeddings
+- apply convolution layers
+- utilize graph shortcut mechanism
+- extract features for past actor motions
+- apply 1D convolutional neural network
+- determine interaction between actors
+- generate global graph
+- project actor-specific graphs to global graph
+- distribute global node embeddings
+- determine predicted motion trajectory
+- determine predicted goal
+- determine curvature of predicted motion trajectory
+- initiate autonomy operation
+- describe method for determining actor trajectory
+- describe method for controlling autonomous vehicle
+- depict block diagram of example system
+- describe computing system architecture
+- introduce memory and processor components
+- describe machine-learned models and training
+- introduce model trainer and training data
+- describe training method and process
+- generate training data for machine-learned model
+- select training instance based on training data
+- input training instance into machine-learned model
+- generate loss metrics for machine-learned model
+- modify machine-learned model based on loss metrics
+- describe communication interface and network
+- illustrate example computing system architecture
+- discuss flexibility of computing system components
+- describe machine-learned model training and use
+- discuss variations of computing system configurations
+- describe computer-implemented operations and data storage
+- discuss scope and spirit of appended claims
+- provide disclaimer for claim language and interpretation
+

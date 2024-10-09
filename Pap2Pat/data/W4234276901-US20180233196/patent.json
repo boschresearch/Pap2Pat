@@ -1,0 +1,407 @@
+{
+    "id": "US20180233196",
+    "authors": [
+        "Mohammed Affan Zidan",
+        "Hesham Omran",
+        "Rawan Naous",
+        "Ahmed Sultan Salem",
+        "Khaled Nabil Salama"
+    ],
+    "title": "SINGLE-READOUT HIGH-DENSITY MEMRISTOR CROSSBAR",
+    "date": "2016-08-23 00:00:00",
+    "abstract": "Methods are provided for mitigating problems caused by sneak-paths current during memory cell access in gateless arrays. Example methods contemplated herein utilize adaptive-threshold readout techniques that utilize the locality and hierarchy properties of the computer memory system to address this sneak-paths problem. The method of the invention is a method for reading a target memory cell located at an intersection of a target row of a gateless array and a target column of the gateless array, the method comprising: \u2014reading a value of the target memory cell; and \u2014calculating an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current. Utilizing either an \u201cinitial bits\u201d strategy or a \u201cdummy bits\u201d strategy in order to calculate the component of the read value caused by sneak path current, example embodiments significantly reduce the number of memory accesses pixel for an array readout. In addition, these strategies consume an order of magnitude less power in comparison to alternative state-of-the-art readout techniques.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNOLOGICAL FIELD",
+                    "paragraphs": [
+                        "Example embodiments of the present invention relate generally to high-density crossbar memory arrays and, more particularly, to a method and apparatus for mitigating the sneak-paths problem in high-density gateless arrays."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce high-density crossbar memory arrays"
+                    ],
+                    "num_characters": 222,
+                    "outline_medium": [
+                        "introduce high-density crossbar memory arrays"
+                    ],
+                    "outline_short": [
+                        "introduce high-density crossbar memory arrays"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Current processor and memory technologies face design challenges that are related to the continuous scaling down of the minimum feature size according to Moore's Law. Moreover, the conventional computing architecture is no longer an effective way to fulfill the demands of modern applications. An exigent need therefore exists to shift to new technologies at both architectural and device levels. Recently, the high-density memristor crossbar architecture attracted attention in this regard. Memristor based resistive RAM is a promising candidate to replace HDD, DRAM, and flash memories. Moreover, the high-density memristive crossbar is also a perfect candidate for neural bio-inspired computing. Such applications are driven by recent advances in the fabrication of memristive devices.",
+                        "The main advantage of a redox memristive array is its very high density, which entails each memory cell occupying only a few nanometers. The array is simply built as a crossbar structure. This simple assembly is inherently self-aligned and can be fabricated using only one or two lithography masks. While the simplicity of the structure is its principal advantage, it is also the source of its main problem, namely the sneak-paths problem. While accessing the array, current should flow through the desired cell only. However, nothing in the crossbar prevents the current from sneaking through other cells in the array as shown in FIGS. 1A and 1B, which illustrate the desired current path 102 and the sneak-paths 104. This parasitic current ruins the reading and writing operations and adds a considerable amount of undesired power consumption.",
+                        "The direct solution to the sneak-paths problem is to add a selector (gate) to each memory cell, such as MOS transistors, threshold devices, or complementary memristors. In general, doing so comes at the expense of array density and the complexity of the fabrication process (low cost per bit). As a result, the need arises to address the sneak-paths challenge using the typical gateless crossbar structure in a similar quality of the gated arrays. Several techniques have been proposed for handling such an effect in gateless arrays, including multistage readout, multiport readout, unfolded arrays, engineering device nonlinearity, and grounded array. However, these techniques either require extended accessing time, rely on a power-hungry accessing, reduce the density of the array significantly, or are simply not valid solutions for practical size arrays."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate need for new technologies",
+                        "describe memristor based resistive RAM",
+                        "limitations of redox memristive array",
+                        "summarize sneak-paths problem"
+                    ],
+                    "num_characters": 2497,
+                    "outline_medium": [
+                        "motivate need for new technologies",
+                        "describe limitations of current computing architecture"
+                    ],
+                    "outline_short": [
+                        "motivate need for new technologies"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY",
+                    "paragraphs": [
+                        "Example embodiments described herein illustrate a single stage readout technique for the high-density gateless resistive arrays. These embodiments reduce the access time to the crossbar array significantly by utilizing the locality property of memory systems and the sneak-paths correlation. The new readout adopts a very power efficient accessing mode to the crossbar, guided by the study of the sneak-paths power consumption presented herein. In addition, minimal control and sensing circuitry are required. Altogether, compared to the traditional solutions described above, these embodiments comprise a faster and more power efficient readout with a simple sensing mechanism.",
+                        "In a first example embodiment, a method is provided for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array. The method includes reading a value of the target memory cell, and calculating an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+                        "In some embodiments, the method calculates the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell. In this regard, calculating the component of the read value caused by sneak path current may include estimating a value of the initial memory cell, reading a value of the initial memory cell, and calculating the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell. In one such instance, for each row in the set, estimating the value of the first memory cell includes reading the value of the first memory cell a plurality of times, and calculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+                        "In some embodiments, the method may calculate the component of the read value caused by sneak path current by storing a known value in a dummy memory cell located in the target row, reading a value of the dummy memory cell, and calculating the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+                        "In some embodiments, reading a value of a particular memory cell includes identifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell, connecting all remaining rows of the high-density gateless array to a first common node, and connecting all remaining columns of the high-density gateless array to a second common node. In some such embodiments, reading the value of the particular memory cell further includes biasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage. In this regard, the first predefined voltage and the second predefined voltage may be equal.",
+                        "In a second example embodiment, an apparatus is provided for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array. The apparatus includes a processor and a memory storing computer-executable instructions, that, when executed by the processor, cause the apparatus to read a value of the target memory cell, and calculate an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+                        "In some embodiments, the computer-executable instructions, when executed by the processor, further cause the apparatus to calculate the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell. In this regard, calculating the component of the read value caused by sneak path current may include estimating a value of the initial memory cell, reading a value of the initial memory cell, and calculating the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell. In one such instance, for each row in the set, estimating the value of the first memory cell includes reading the value of the first memory cell a plurality of times, and calculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+                        "In some embodiments, the computer-executable instructions, when executed by the processor, further cause the apparatus to calculate the component of the read value caused by sneak path current by storing a known value in a dummy memory cell located in the target row, reading a value of the dummy memory cell, and calculating the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+                        "In some embodiments, reading a value of a particular memory cell includes identifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell, connecting all remaining rows of the high-density gateless array to a first common node, and connecting all remaining columns of the high-density gateless array to a second common node. In some such embodiments, reading the value of the particular memory cell further includes biasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage. In this regard, the first predefined voltage and the second predefined voltage may be equal.",
+                        "In a third example embodiment, a computer program product is provided for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array. The computer program product includes a computer-readable storage medium storing computer-executable instructions that, when executed, cause an apparatus to read a value of the target memory cell, and calculate an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+                        "In some embodiments, the computer-executable instructions, when executed, further cause the apparatus to calculate the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell. In this regard, calculating the component of the read value caused by sneak path current may include estimating a value of the initial memory cell, reading a value of the initial memory cell, and calculating the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell. In one such instance, for each row in the set, estimating the value of the first memory cell includes reading the value of the first memory cell a plurality of times, and calculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+                        "In some embodiments, the computer-executable instructions, when executed, further cause the apparatus to calculate the component of the read value caused by sneak path current by storing a known value in a dummy memory cell located in the target row, reading a value of the dummy memory cell, and calculating the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+                        "In some embodiments, reading a value of a particular memory cell includes identifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell, connecting all remaining rows of the high-density gateless array to a first common node, and connecting all remaining columns of the high-density gateless array to a second common node. In some such embodiments, reading the value of the particular memory cell further includes biasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage. In this regard, the first predefined voltage and the second predefined voltage may be equal.",
+                        "In a fourth example embodiment, an apparatus is provided for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array. The apparatus includes means for reading a value of the target memory cell, and means for calculating an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+                        "In some embodiments, the apparatus is configured to calculate the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell. In this regard, the means for calculating the component of the read value caused by sneak path current may include means for estimating a value of the initial memory cell, means for reading a value of the initial memory cell, and means for calculating the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell. In one such instance, for each row in the set, the means for estimating the value of the first memory cell includes means for reading the value of the first memory cell a plurality of times, and means for calculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+                        "In some embodiments, the means for calculating the component of the read value caused by sneak path current includes means for storing a known value in a dummy memory cell located in the target row, means for reading a value of the dummy memory cell, and means for calculating the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+                        "In some embodiments, the means for reading a value of a particular memory cell includes means for identifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell, means for connecting all remaining rows of the high-density gateless array to a first common node, and means for connecting all remaining columns of the high-density gateless array to a second common node. In some such embodiments, the means for reading the value of the particular memory cell further includes means for biasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage. In this regard, the first predefined voltage and the second predefined voltage may be equal.",
+                        "The above summary is provided merely for purposes of summarizing some example embodiments to provide a basic understanding of some aspects of the invention. Accordingly, it will be appreciated that the above-described embodiments are merely examples and should not be construed to narrow the scope or spirit of the invention in any way. It will be appreciated that the scope of the invention encompasses many potential embodiments in addition to those here summarized, some of which will be further described below."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce single stage readout technique",
+                        "describe locality property of memory systems",
+                        "summarize sneak-paths correlation",
+                        "describe power efficient accessing mode",
+                        "introduce minimal control and sensing circuitry",
+                        "describe method for reading target memory cell",
+                        "calculate actual value of target memory cell",
+                        "estimate component of read value caused by sneak path current",
+                        "read value of initial memory cell",
+                        "calculate component of read value caused by sneak path current",
+                        "store known value in dummy memory cell",
+                        "read value of dummy memory cell",
+                        "calculate component of read value caused by sneak path current",
+                        "identify row and column of high-density gateless array",
+                        "connect remaining rows to first common node",
+                        "connect remaining columns to second common node",
+                        "bias rows and columns to predefined voltages",
+                        "describe apparatus for reading target memory cell",
+                        "execute computer-executable instructions",
+                        "calculate component of read value caused by sneak path current",
+                        "describe computer program product",
+                        "execute computer-executable instructions",
+                        "provide apparatus with means for reading and calculating"
+                    ],
+                    "num_characters": 11830,
+                    "outline_medium": [
+                        "introduce single stage readout technique",
+                        "describe advantages of new readout",
+                        "outline method for reading target memory cell",
+                        "calculate actual value of target memory cell",
+                        "estimate component of read value caused by sneak path current",
+                        "read value of initial memory cell",
+                        "calculate component of read value caused by sneak path current",
+                        "describe apparatus for reading target memory cell",
+                        "outline computer program product for reading target memory cell",
+                        "describe means for reading value of target memory cell",
+                        "summarize embodiments"
+                    ],
+                    "outline_short": [
+                        "summarize single stage readout technique",
+                        "describe advantages over traditional solutions",
+                        "outline method for reading target memory cell",
+                        "describe apparatus for reading target memory cell",
+                        "summarize computer program product"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Some embodiments of the present invention will now be described more fully hereinafter with reference to the accompanying drawings, in which some, but not all embodiments of the inventions are shown. Indeed, these inventions may be embodied in many different forms and should not be construed as limited to the embodiments set forth herein; rather, these embodiments are provided so that this disclosure will satisfy applicable legal requirements. Like numbers refer to like elements throughout."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Sneak Paths Analysis",
+                            "paragraphs": [
+                                "Sneak-paths impact the performance of a crossbar-based system in two ways. First, a considerable amount of undesirable energy is consumed while current sneaks throughout the array cells. Second, the sneak currents cannot be predicted because they are data dependent. Data stored in a memory array is naturally random, which leads to a random sneak-paths resistance. This is translated into having distributions to represent the \u201cOne\u201d and \u201cZero\u201d values rather than a single value. In addition, the magnitude of the sneak-current is typically higher than the current of the desired memory cell; as a result, the distributions for the two binary values are highly overlapped, as shown in FIG. 10. Direct memory readout is therefore not possible, so a power efficient sneak-paths immune readout is a necessity for a functional system.",
+                                "A crossbar can be accessed using two general modes. The first approach is the \u201cfloating terminals\u201d accessing mode, in which the array is accessed through the desired row and column and the other terminals are kept floating, as shown in FIG. 2A. This approach lacks having a solvable equivalent circuit, which is a necessity for effectively dealing with the sneak-paths problem. FIG. 2B shows the array equivalent circuit, where \u2018Rsp\u2019 represents the equivalent resistance of the crossbar sneak-paths, which is dependent on the data stored in the array. The second option is the \u201cconnected terminals\u201d accessing mode, in which the unused rows and columns are connected to two common nodes, as shown in FIG. 20, These nodes could be biased to predefined voltages, or used as extra access points to the array as described in \u201cMemristor Multiport Readout: A Closed-Form Solution for Sneak Paths\u201d, IEEE Transactions On Nanotechnology, Vol. 13, No. 2, March 2014. The main strength of the \u201cconnected terminals\u201d mode is its equivalent circuit, where the data stored in the array are mapped into three resistances representing the sneak-paths, as shown in FIG. 2D. It should be noted that although the metal line resistances are not included in the equivalent circuit for the sake of simplicity, they are fully considered in the simulations described below."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate sneak-paths problem",
+                                "describe crossbar accessing modes",
+                                "introduce equivalent circuit for sneak-paths",
+                                "discuss limitations of floating terminals mode"
+                            ],
+                            "num_characters": 2179,
+                            "outline_medium": [
+                                "describe impact of sneak-paths on crossbar-based system",
+                                "introduce two general modes of accessing crossbar"
+                            ],
+                            "outline_short": [
+                                "motivate sneak-paths problem in crossbar-based systems"
+                            ]
+                        },
+                        {
+                            "title": "Sneak-Paths Correlation",
+                            "paragraphs": [
+                                "An advantage of the \u201cconnected terminals\u201d accessing mode is its simple model. In the case of biasing all the unselected terminals at \u2018VDD=2\u2019, the sneak-paths resistance is made of \u2018Rr\u2019 and \u2018Rc\u2019 only, while \u2018Ra\u2019 is shorted out since nodes \u2018n3\u2019 and \u2018n4.\u2019 (FIG. 2D) are connected to the same potential level. Hence, only the cells that belong to the desired rows and columns contribute in the sneak-paths, where all of them have a potential drop of \u2018VDD/2\u2019. The sneak-paths component due to the accessed row (Rr) is a parallel combination of all of the row cells apart from the desired one; it is given by:",
+                                "\\(\\begin{matrix}\n{{R_{r} = \\left( {\\sum\\limits_{i = 1}^{L - 1}\ue89e\\frac{1}{R_{xi}}} \\right)^{- 1}},} & (1)\n\\end{matrix}\\)",
+                                "where \u2018Rx\u2019 is the resistance of a one-row cell, and \u2018L\u2019 is the array length. The row cell resistance can be either \u2018R\u2032on\u2019 or \u2018R\u2032off\u2019, which are the ON and OFF resistance of the device under \u2018Vdd/2\u2019 voltage drop respectively. The row resistance can be rewritten as,",
+                                "\\(\\begin{matrix}\n{R_{r} = \\frac{R_{on}^{\\prime}\ue89e\\; \ue89eR_{off}^{\\prime}}{{\\left( {L - 1} \\right)\ue89eR_{on}^{\\prime}} + {N_{on}\ue8a0\\left( {R_{off}^{\\prime} - R_{on}^{\\prime}} \\right)}^{\\prime \ue89e\\;}}} & (2)\n\\end{matrix}\\)",
+                                "where \u2018Non\u2019 is the number of ON cells within the accessed row not counting the accessed cell itself. The sneak-paths component due to the accessed row (Rr) can be derived similarly.",
+                                "For practical array size, the values of \u2018Rr\u2019 and \u2018Rc\u2019 are almost constant over the same row or column, respectively. For instance, the sneak-paths row resistances found at two different locations in the same row have all cells in common except the two cells that are swapped because of the accessed locations. For devices with a large OFF/ON ratio, the relative change in the sneak-paths row resistance is given by:",
+                                "\\(\\begin{matrix}\n{{\\frac{\\Delta \ue89e\\; \ue89eR_{r}}{R_{r}} \\leq {\uf603\\frac{\\rho}{L + {\\left( {N_{on} - 1} \\right)\ue89e\\rho}}\uf604}},} & (3)\n\\end{matrix}\\)",
+                                "where \u2018\u03c1\u2019 is the OFF/ON ratio of the used device. The maximum relative change in the row resistance versus the array size for a balanced number of zeros and ones is plotted in FIG. 3A. FIG. 3A shows that as the array size increases the effect of a single bit swap diminishes. The other parameter that affects \u0394R/R is the number of ones (per row or column), as given by equation (3), FIG. 3B shows that the maximum relative change of sneak-paths resistance is still small while the percentage of ones per row/column is swept. As a result, \u2018Rr\u2019 is almost constant over a given row and \u2018Rc\u2019 is almost constant over a given column. In this regard, it should be understood that \u2018\u0394R/R\u2019 represents both \u2018\u0394Rr/Rr\u2019 and \u2018\u0394Rc/Rr\u2019 in both FIGS. 3A and 3B."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "derive sneak-paths resistance equations",
+                                "discuss row and column resistance components",
+                                "analyze relative change in row resistance",
+                                "plot maximum relative change versus array size",
+                                "discuss effect of number of ones on sneak-paths resistance"
+                            ],
+                            "num_characters": 2681,
+                            "outline_medium": [
+                                "derive sneak-paths resistance components",
+                                "analyze correlation property of sneak-paths resistance"
+                            ],
+                            "outline_short": [
+                                "derive sneak-paths resistance equations"
+                            ]
+                        },
+                        {
+                            "title": "Adaptive-Threshold Readout",
+                            "paragraphs": [
+                                "The sneak-paths correlation property can be effectively utilized in case of sequential reading for the stored data on an array, which is the typical memory access scheme in computer systems. The cache fetches a block of data from the RAM, as well as RAM do with the HDD. Data is thus transferred and shared between different memory layers as a block of contiguous bits, rather than in random bits or words. As a result, a memory layer is accessed to read or write blocks of adjacent memory cells in sequence. This is possible because of the data locality property. When a bit location is accessed, its neighborhoods are likely to be accessed too.",
+                                "The locality property is of help only if the knowledge gained from reading a single bit can be adopted in reading that bit's neighborhoods. This is true for the \u201cconnected terminals\u201d crossbar, where the values of \u2018Rr\u2019 and \u2018Rc\u2019 can be safely shared over the same row or column respectively, as discussed in the previous sections. This is equivalent to defining an adaptive threshold that changes at each new row readout, which can be achieved with the aid of the \u201cconnected terminals\u201d crossbar structure.",
+                                "The generic \u201cconnected terminals\u201d circuit model shown in FIG. 2D can be simplified for the case of \u2018VB\u2019 terminal bias. Terminals \u2018n3\u2019 and \u2018n4\u2019 are connected to \u2018VB\u2019, and terminals \u2018n1\u2019 and \u2018n2\u2019 are connected to \u2018VDD\u2019 and virtual ground, which can be done using two different implementations as shown in FIGS. 4A and 4B. Using a virtual ground sensing circuit forces all the array elements to have a defined voltage drop independent of the data stored in the array. The desired cell experiences a full \u2018VDD\u2019 voltage drop, while the sneak-paths components of \u2018Rr\u2019 and \u2018Rc\u2019 have only half of this voltage drop. Because of the device saturation nonlinearity, the full voltage drop on the desired cell makes the magnitude difference between its ON and OFF states much larger than any error introduced by sharing \u2018Rr\u2019 or \u2018Rc\u2019 over a segment. While both of \u2018Rr\u2019 and \u2018Rc\u2019 drain parasitic sneak-current, the current leak through only one of them affects the correctness of the readout operation. When the read circuit is connected to node \u2018n1\u2019, as shown in FIG. 4A, the sense current (Isense) is defined as:",
+                                "Isense=Im+Ir,\u2003\u2003(4)",
+                                "where \u2018Im\u2019 is the desired current and \u2018Ir\u2019 is the row sneak current component. Sensing from node \u2018n2\u2019 swaps the locations and the role of \u2018Rr\u2019 and \u2018Rc\u2019 in the circuit, as shown in FIG. 4B. The sense current is shifted from its desired value by the sneak-current of the row or the column. However this shift is constant within a given row or column, based on the connection orientation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate adaptive threshold readout",
+                                "describe connected terminals circuit model",
+                                "simplify circuit model for VB terminal bias",
+                                "define sense current and sneak-current components",
+                                "discuss role of sneak-paths correlation in readout"
+                            ],
+                            "num_characters": 2658,
+                            "outline_medium": [
+                                "introduce adaptive-threshold readout technique",
+                                "describe circuit model and operation"
+                            ],
+                            "outline_short": [
+                                "introduce adaptive-threshold readout technique"
+                            ]
+                        },
+                        {
+                            "title": "Multi-Read for Initial Bits",
+                            "paragraphs": [
+                                "Each bit generally has two unknowns: \u2018Rm\u2019 and \u2018Rr\u2019 (or \u2018Rc\u2019). Without adopting sneak-paths correlation and locality, multiple access stages are needed to estimate the bit value. However, a faster readout can be achieved by categorizing the bits into two types: the \u201cinitial bits,\u201d which are the first bits accessed in a given row, and \u201cregular bits,\u201d which are any other bits in the array. To estimate the value of the \u201cinitial bit,\u201d two unknowns need to be calculated: the desired resistance (Rm), and the row sneak resistance (Rr). However, the remaining bits in the row share the same (Rr) value, and \u2018Ir\u2019 is treated as a threshold for a given row. Any of the readout techniques presented in the literature, such as Vontobel, P. O. et al., \u201cWriting to and reading from a nano-scale crossbar memory based on memristors,\u201d Nanotechnology 20, 425204 (2009), can be used to estimate the \u201cinitial bit\u201d. For instance, a multistage readout procedure may adopt multiple reads and writes per cell to estimate both of the sneak-paths and the desired current components. The readout for the \u201cinitial bit\u201d dictates the threshold used for the remaining bits in that row. In the case of a \u201cZero\u201d bit, the threshold (Rth or Ith) can be calculated from the readout for the initial bit (Rib or Iib) as follows:",
+                                "Rth=Rib\u2212Cr, where Cr=0.5(Roff\u2212Ron)",
+                                "Ith=Iib+Ci, where Ci=0.5(Ion\u2212Ioff)",
+                                "where Ron and Roff refer to the resistance with and without applying a current to the memory cell, respectively, and similarly where Ion and Ioff refer to the resistance with and without applying a current to the memory cell, respectively.",
+                                "In the case of a \u201cOne\u201d bit, the threshold (Rth or Ith) can be calculated from the readout for the initial bit (Rib or Iib) as follows:",
+                                "Rth=Rib+Cr, where Cr=0.5(Roff\u2212Ron)",
+                                "Ith=Iib\u2212Ci, where Ci=0.5(Ion/Ioff)",
+                                "where, as with the \u201cZero\u201d bit case above, Ron and Roff refer to the resistance with and without applying a current to the memory cell, respectively, and similarly where Ion and Ioff refer to the resistance with and without applying a current to the memory cell, respectively. Subsequently, the resistance or current of subsequent memory cells can be measured and then compared to this threshold to estimate the actual value of the remaining memory cells in the row.",
+                                "FIG. 5A shows the readout sequence for the array when this \u201cinitial bits\u201d strategy is adopted. Therefore, the first bit (initial bit) could be any bit in the array which requires \u2018n\u2019 stages of reading, and the rest of the bits in the same row are accessed in sequence, only one time for each. Reading from the next row requires a new \u201cinitial bit\u201d, which in this case is the first bit in the row, as shown in FIG. 5A. The same sequence is followed until the fetched data block for the cache is completed (e.g., each row contains one \u201cinitial bit\u201d), and the rest of the bits are accessed in a single stage fashion. It should be noted that in the case of sensing from \u2018n1\u2019, data is accessed in a column-wise scheme."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate multi-read approach",
+                                "categorize bits into initial and regular bits",
+                                "describe readout procedure for initial bits",
+                                "calculate threshold from initial bit readout",
+                                "discuss readout sequence for array"
+                            ],
+                            "num_characters": 2998,
+                            "outline_medium": [
+                                "introduce multi-read technique for initial bits",
+                                "describe readout procedure for initial bits"
+                            ],
+                            "outline_short": [
+                                "describe multi-read technique for initial bits"
+                            ]
+                        },
+                        {
+                            "title": "Predefined Dummy Bits",
+                            "paragraphs": [
+                                "A more time efficient way to estimate the adaptive threshold is to add \u201cdummy bits\u201d with a predefined value to the array. For a dummy bit (which may also referred to as a \u201cpredefined bit\u201d), the value of \u2018Rm\u2019 is known in advance, and a single readout is needed to estimate the value of \u2018Rr\u2019. This estimated \u2018Rr\u2019 value is reused with the other bits in the same row, where, in this case, a single readout is required to estimate the remaining unknown (Rm). This value is used for the rest of the bits in the same row. The dummy bit can be organized in several ways, given that each row contains a single bit. FIG. 5B shows a possible organization of dummy bits that is suitable for row-wise readout analogy. It should be understood that in both FIGS. 5A and 5B, \u2018i\u2019 represents an initial bit, \u2018d\u2019 represents a dummy bit, and \u2018r\u2019 represents a regular bit.",
+                                "In this regard, while accessing a row for the first time during a data block fetching, the threshold (Rth or Ith) can be measured by reading the resistance or current of the dummy (or predefined) bit (Rpd or Ipd). The threshold is defined as,",
+                                "Rth=Rpd\u2212Cr, where Cr=0.5(Roff\u2212Ron)",
+                                "Ith=Ipd+Ci, where Ci=0.5(Ion/Ioff)",
+                                "where Ron and Roff refer to the resistance with and without applying a current to the memory cell, respectively, and similarly where Ion and Ioff refer to the resistance with and without applying a current to the memory cell, respectively. Subsequently, the resistance or current of subsequent memory cells can be measured and then compared to this threshold to estimate the actual value of the remaining memory cells in the row.",
+                                "The \u201cdummy bits\u201d technique adds a smaller amount of overhead to the readout process than the \u201cinitial bits\u201d method, because a \u201cdummy bit\u201d only needs to be accessed a single time (in comparison to \u2018n\u2019 times for an \u201cinitial bit\u201d). However, for practical size arrays with 256k size or more, the average number of array accesses per bit when fetching a block of data from memory is almost one for both methods. FIG. 6A shows the average number of readouts per memory bit, where the overhead is shared over \u201cregular bits\u201d, versus the fetched data size. It also illustrates how the average number of readouts converges to one very fast. The irregularities in the curve occur because that start reading from a new row adds extra overhead for an \u201cinitial bit\u201d or a \u201cdummy bit\u201d. It should be noted that the typical cache line is 0.5 kb (64 bytes), where multiple lines are fetched from memory in sequence based on the cache policy. This value is much larger in the case of RAM fetching from HDD. While the \u201cdummy bits\u201d technique demonstrates better behavior, it comes at a small expense of the effective area of the array, since \u201cdummy bits\u201d are not used to store real data. This negligible overhead is shown in FIG. 6B.",
+                                "In order to evaluate the validity and efficiency of crossbar readout techniques, an accurate simulation platform that includes different crossbar non-idealities is a necessity. To achieve this goal, a Python script was utilized that created SPICE netlists for realistic size arrays and swept different parameters and data patterns by calling HSPICE or Cadence APS iteratively. A crossbar parasitic resistance value of 5 \u03a9 per cell was used and the effect of the switching circuitry in all of the simulations was included in this work. Finally, it should be noted that resistive RAMs are built in the same hierarchy and structure of DRAMs, where subarrays of size up to 256 kb are used to reduce the capacitive loading of the metal lines. As a result, the inventors used an array size up to 256 kb for simulations and comparisons with the above-described crossbar readout techniques.",
+                                "In this regard, to verify the proposed concept, the readout operation was simulated at different locations of a 256 kb array of various NIST RAM images. In a first case, the readout locations were distributed over the array, while in a second, all the readouts were made for cells in the same column. FIG. 7 shows the histogram of the sensed read current in the two cases. The results indicate that normally the distributions of reading \u201cOne\u201d and reading \u201cZero\u201d are highly overlapped, and it is not possible to define a threshold to distinguish between the two binary cases, as shown in FIG. 7 (inset). However, for a given row or column, reading from different locations reveals a clear separation between the distribution of ones and zeros, as shown in FIG. 7. This verifies the merit of the above-described readout schemes, where an adaptive threshold is defined for each column (or row) as discussed earlier. The simulation results show that a simple comparator is able to differentiate between the \u201cOne\u201d and \u201cZero\u201d states."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate predefined dummy bits approach",
+                                "describe organization of dummy bits",
+                                "estimate adaptive threshold from dummy bit",
+                                "discuss readout sequence for array",
+                                "compare overhead of initial and dummy bits methods",
+                                "plot average number of readouts per memory bit",
+                                "discuss convergence of average readouts to one",
+                                "show negligible overhead of dummy bits",
+                                "discuss simulation platform for crossbar readout"
+                            ],
+                            "num_characters": 4724,
+                            "outline_medium": [
+                                "introduce predefined dummy bits technique",
+                                "describe organization of dummy bits",
+                                "derive threshold calculation for dummy bits",
+                                "compare overhead of dummy bits and initial bits techniques"
+                            ],
+                            "outline_short": [
+                                "introduce predefined dummy bits technique",
+                                "describe threshold calculation using dummy bits"
+                            ]
+                        },
+                        {
+                            "title": "Crossbar Power Consumption",
+                            "paragraphs": [
+                                "Undesirable sneak-paths power consumption is not avoidable in high-density gateless arrays. However, it can be reduced by utilizing devices with nonlinear saturation behavior. Reducing the voltage applied to such devices by fifty percent can increase saturation resistance up to two orders of magnitude. This is a very attractive property since a sneak path is made of series memristor devices, where a sub-voltage is dropped on each of them. In the \u201cconnected terminals\u201d structure, the device nonlinearity can be enforced by biasing the unused terminals to sub-read voltage. In such case, the very small \u2018Ra\u2019 is shorted out, and the nonlinearity of the other terminals is efficiently utilized. FIG. 8B shows that, by setting \u2018VB\u2019 to \u2018VDD/2\u2019, the power consumption of this method is almost the same as the baseline \u201cfloating terminals\u201d. FIG. 8A shows that biasing the unused terminals voltage to be \u2018VB=VDD/2\u2019 is the optimal selection. The power consumption of this method is almost the same as the baseline \u201cfloating terminals\u201d, as shown in FIG. 8B. The figure also shows the great power savings the \u201cconnected terminals\u201d technique offers while comparing it with the power hungry \u201cgrounded terminals\u201d technique. It should be noted that power consumption saturates for larger array sizes because of the crossbar metal lines."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "discuss undesirable sneak-paths power consumption",
+                                "show power savings of connected terminals technique"
+                            ],
+                            "num_characters": 1324,
+                            "outline_medium": [
+                                "describe power consumption reduction using nonlinear devices"
+                            ],
+                            "outline_short": [
+                                "discuss power consumption reduction using nonlinear devices"
+                            ]
+                        },
+                        {
+                            "title": "Figure-of-Merit",
+                            "paragraphs": [
+                                "In general, the presented technique offers a readout technique that is immune to the sneak-paths problem and that is more power efficient and faster than the state-of-the-art crossbar accessing techniques that are presented in the literature. Table 1 shows a detailed comparison between the various gateless techniques that can provide an error-free readout. The different methods are compared based on a figure-of-merit (FoM), which is defined as",
+                                "\\(\\begin{matrix}\n{{{FoM} = \\frac{{Array}\ue89e\\mspace{14mu} \ue89e{Density}}{{Readout}\ue89e\\mspace{14mu} \ue89e{Power}}},} & (5)\n\\end{matrix}\\)",
+                                "where the proposed technique shows the best FoM."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define figure-of-merit for readout techniques"
+                            ],
+                            "num_characters": 623,
+                            "outline_medium": [
+                                "introduce figure-of-merit for comparing readout techniques"
+                            ],
+                            "outline_short": [
+                                "introduce figure-of-merit for comparing readout techniques"
+                            ]
+                        },
+                        {
+                            "title": "Operations Performed by a Computing Device to Efficiently Perform Readout Operations",
+                            "paragraphs": [
+                                "Having stepped through a description of the adaptive threshold techniques used in example embodiments of the present invention, FIG. 9 illustrates a flowchart containing a series of operations performed by example embodiments described herein to perform error-free readouts of a high-density gateless array with an order of magnitude less power consumption than alternative procedures. The operations described in FIG. 9 may be performed by, or under the control of, an apparatus such as a microprocessor, a coprocessor, a controller, a special-purpose integrated circuit such as, for example, an ASIC (application specific integrated circuit), an FPGA (field programmable gate array), DSP (digital signal processor), processing circuitry or other similar hardware.",
+                                "Turning now to the flowchart, the procedure begins at optional operation 902. In operation 902, the apparatus calculates, for a target row of a high-density gateless array, a component of the read value that is caused by sneak path current.",
+                                "In some embodiments, calculating this component may utilize the \u201cinitial bits\u201d strategy described above. In such embodiments, operation 902 may include arranging the high-density gateless array in a connected terminals structure for accessing an initial memory cell located in the target row. Subsequently, the apparatus may estimate a value of the initial memory cell, and also read a value of the initial memory cell. The apparatus thereafter calculates the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell. Furthermore, estimating the value of the first memory cell may include reading the value of the first memory cell a plurality of times, and calculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times. As noted previously, any of the readout techniques presented in the literature can be used to estimate this value.",
+                                "In other embodiments, calculating the component of the read value that is caused by sneak path current may utilize the \u201cdummy bits\u201d strategy described above. In such embodiments, operation 902 may include storing a known value in a dummy memory cell located in the target row, and arranging the high-density gateless array in a connected terminals structure for accessing the dummy memory cell. Subsequently, the apparatus may read a value of the dummy memory cell, and then calculate the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+                                "It should be understood that operation 902 is optional because, in some embodiments, the component caused by sneak path current may have been previously calculated and need not be calculated a second time prior to performance of operations 904 through 908.",
+                                "Turning now to operation 904, the apparatus reads a value of the target memory cell. In this regard, in some embodiments reading a value of a particular memory cell includes identifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell, and connecting all remaining rows of the high-density gateless array to a first common node; and connecting all remaining columns of the high-density gateless array to a second common node.",
+                                "Reading the value of the particular memory cell may further include biasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage. In this regard, the first predefined voltage and the second predefined voltage may be equal.",
+                                "Subsequently, in operation 906, the apparatus calculates an actual value of the target memory cell based on the read value of the target memory cell and the component of the read value caused by sneak path current (which may have been calculated in operation 902 or previously stored and simply retrieved for use in operation 908).",
+                                "For ease of explanation, these operations are described above to retrieve an actual value for a single memory cell. However, it should be understood that these operations may be repeated in sequence for a number of memory cells within a target row to retrieve a series of memory cell values within that target row. Furthermore, if memory cells are desired from other rows of the high-density gateless array, these operations may then be repeated for those other rows. It should also be understood that while these operations contemplate retrieving memory cell values in a row-wise fashion, similar operations may be performed to retrieve a sequence of actual values from memory cells in a column-wise fashion.",
+                                "Accordingly, as illustrated above, taking advantage of the memory locality and the sneak-paths correlation leads to a fast and power efficient readout technique. Contrary to other techniques, embodiments described herein achieve the theoretical limit of a single memory access per pixel for an array readout at a fraction of the power, when compared to the state-of-the-art readout techniques. In fact, according to the Table 1, the adaptive-threshold readout is 7 to 24 times better than the other gateless techniques presented in the literature, based on the density-power figure-of-merit. In addition, the new sneak-paths immune technique requires minimal hardware to distinguish between the memory data values.",
+                                "The above-described flowchart in FIG. 9 illustrates operations performed by an apparatus in accordance with some example embodiments of the present invention. It will be understood that each block of the flowchart, and combinations of blocks in the flowchart, may be implemented by various means, such as hardware, firmware, processor, circuitry and/or other device associated with execution one or more computer program instructions. For example, the operations may be performed by one or more of a microprocessor, a coprocessor, a controller, a special-purpose integrated circuit such as, for example, an ASIC (application specific integrated circuit), an FPGA (field programmable gate array), DSP (digital signal processor), processing circuitry or other similar hardware. Blocks of the flowchart support combinations of means for performing the specified functions and combinations of operations for performing the specified functions. It will be understood that one or more blocks of the flowchart, and combinations of blocks in the flowchart, can be implemented by special purpose hardware-based computer systems which perform the specified functions, or combinations of special purpose hardware and computer instructions.",
+                                "Many modifications and other embodiments of the inventions set forth herein will come to mind to one skilled in the art to which these inventions pertain having the benefit of the teachings presented in the foregoing descriptions and the associated drawings. Therefore, it is to be understood that the inventions are not to be limited to the specific embodiments disclosed and that modifications and other embodiments are intended to be included within the scope of the appended claims. Moreover, although the foregoing descriptions and the associated drawings describe certain example combinations of elements and/or functions, it should be appreciated that different combinations of elements and/or functions may be provided by alternative embodiments without departing from the scope of the appended claims. In this regard, for example, different combinations of elements and/or functions than those explicitly described above are also contemplated as may be set forth in some of the appended claims. Although specific terms are employed herein, they are used in a generic and descriptive sense only and not for purposes of limitation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "illustrate flowchart of operations",
+                                "introduce apparatus performing operations",
+                                "calculate sneak path current component",
+                                "estimate initial memory cell value",
+                                "read initial memory cell value",
+                                "calculate sneak path current component (alternative)",
+                                "store known value in dummy memory cell",
+                                "read dummy memory cell value",
+                                "read target memory cell value",
+                                "identify row and column of target memory cell",
+                                "connect rows and columns to common nodes",
+                                "bias rows and columns to predefined voltages",
+                                "calculate actual target memory cell value",
+                                "repeat operations for multiple memory cells",
+                                "summarize advantages of readout technique"
+                            ],
+                            "num_characters": 7891,
+                            "outline_medium": [
+                                "illustrate flowchart of operations",
+                                "calculate sneak path current component",
+                                "read target memory cell value",
+                                "calculate actual memory cell value",
+                                "repeat operations for multiple memory cells",
+                                "describe hardware implementation options",
+                                "discuss modifications and scope of invention"
+                            ],
+                            "outline_short": [
+                                "outline readout operations for high-density gateless array",
+                                "calculate sneak path current component",
+                                "perform readout operations with adaptive threshold technique"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe patent application structure"
+                    ],
+                    "num_characters": 495,
+                    "outline_medium": [
+                        "describe crossbar-based system and sneak-paths problem"
+                    ],
+                    "outline_short": [
+                        "describe sneak-paths analysis in crossbar-based systems"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array, the method comprising:\nreading a value of the target memory cell; and\ncalculating an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+        "2. The method of claim 1, further comprising:\ncalculating the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell.",
+        "3. The method of claim 2, wherein calculating the component of the read value caused by sneak path current comprises:\nestimating a value of the initial memory cell;\nreading a value of the initial memory cell; and\ncalculating the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell.",
+        "4. The method of claim 3, wherein, for each row in the set, estimating the value of the first memory cell comprises:\nreading the value of the first memory cell a plurality of times; and\ncalculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+        "5. The method of claim 2, wherein calculating the component of the read value caused by sneak path current comprises:\nstoring a known value in a dummy memory cell located in the target row;\nreading a value of the dummy memory cell; and\ncalculating the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+        "6. The method of claim 1, wherein reading a value of a particular memory cell comprises:\nidentifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell;\nconnecting all remaining rows of the high-density gateless array to a first common node; and\nconnecting all remaining columns of the high-density gateless array to a second common node.",
+        "7. The method of claim 6, wherein reading the value of the particular memory cell further comprises:\nbiasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage.",
+        "8. The method of claim 7, wherein the first predefined voltage and the second predefined voltage are equal.",
+        "9. An apparatus for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array, the apparatus comprising a processor and a memory storing computer-executable instructions, that, when executed by the processor, cause the apparatus to:\nread a value of the target memory cell; and\ncalculate an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+        "10. The apparatus of claim 9, wherein the computer-executable instructions, when executed by the processor, further cause the apparatus to calculate the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell.",
+        "11. The apparatus of claim 10, wherein the computer-executable instructions, when executed by the processor, further cause the apparatus to calculate the component of the read value caused by sneak path current by causing the apparatus to:\nestimate a value of the initial memory cell;\nread a value of the initial memory cell; and\ncalculate the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell.",
+        "12. The apparatus of claim 11, wherein, for each row in the set, estimating the value of the first memory cell comprises:\nreading the value of the first memory cell a plurality of times; and\ncalculating the estimated value of the first memory cell based on reading the value of the first memory cell the plurality of times.",
+        "13. The apparatus of claim 10, wherein the computer-executable instructions, when executed by the processor, further cause the apparatus to calculate the component of the read value caused by sneak path current by causing the apparatus to:\nstore a known value in a dummy memory cell located in the target row;\nread a value of the dummy memory cell; and\ncalculate the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+        "14. The apparatus of claim 9, wherein reading a value of a particular memory cell includes:\nidentifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell;\nconnecting all remaining rows of the high-density gateless array to a first common node; and\nconnecting all remaining columns of the high-density gateless array to a second common node.",
+        "15. The apparatus of claim 14, wherein reading the value of the particular memory cell further includes:\nbiasing the rows connected to the first common node to a first predefined voltage and the columns connected to the second common node to a second predefined voltage.",
+        "16. The apparatus of claim 15, wherein the first predefined voltage and the second predefined voltage are equal.",
+        "17. A computer program product for reading a target memory cell located at an intersection of a target row of a high-density gateless array and a target column of the high-density gateless array, the computer program product comprising a computer-readable storage medium storing computer-executable instructions that, when executed, cause an apparatus to:\nread a value of the target memory cell; and\ncalculate an actual value of the target memory cell based on the read value of the memory cell and a component of the read value caused by sneak path current.",
+        "18. The computer program product of claim 17, wherein the computer-executable instructions, when executed, further cause the apparatus to calculate the component of the read value caused by sneak path current prior to calculating the actual value of the target memory cell.",
+        "19. The computer program product of claim 18, wherein the computer-executable instructions, when executed, further cause the apparatus to calculate the component of the read value caused by sneak path current by causing the apparatus to:\nestimate a value of the initial memory cell;\nread a value of the initial memory cell; and\ncalculate the component of the read value caused by sneak path current based on the estimated value of the initial memory cell and a read value of the initial memory cell.",
+        "20. (canceled)",
+        "21. The computer program product of claim 18, wherein the computer-executable instructions, when executed, further cause the apparatus to calculate the component of the read value caused by sneak path current by causing the apparatus to:\nstore a known value in a dummy memory cell located in the target row;\nread a value of the dummy memory cell, wherein reading a value of a particular memory cell includes:\nidentifying a row of the high-density gateless array and a column of the high-density gateless array that intersect at the particular memory cell,\nconnecting all remaining rows of the high-density gateless array to a first common node,\nconnecting all remaining columns of the high-density gateless array to a second common node, and\nbiasing the rows connected to the first common node and the columns connected to the second common node to a first predefined voltage; and\n\ncalculate the component of the read value caused by sneak path current based on the known value stored in the dummy memory cell and the read value of the dummy memory cell.",
+        "22-24. (canceled)"
+    ]
+}

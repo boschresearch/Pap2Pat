@@ -1,0 +1,162 @@
+# DESCRIPTION
+
+- claim priority to provisional application
+
+## BACKGROUND OF THE DISCLOSURE
+
+- introduce fluorescence enhancement
+- motivate plasmonic patch
+- describe limitations of previous plasmon-enhanced fluorescence assays
+- summarize fluorescent probes and fluorometric approaches
+- highlight "feeble signal" problem
+- motivate ultra-sensitive fluoroimmunoassays
+- describe various techniques to improve signal-to-noise ratio
+- highlight limitations of these techniques
+- introduce plasmon- or metal-enhanced fluorescence
+- describe limitations of plasmonic substrates
+- highlight challenges in widespread application
+- motivate addressing disadvantages
+
+## BRIEF DESCRIPTION OF THE DISCLOSURE
+
+- introduce plasmonic patch
+- describe plasmonic patch composition
+- introduce method for enhancing fluorescent signal
+
+## DETAILED DESCRIPTION OF THE DISCLOSURE
+
+- define terms
+- explain approximating language
+- introduce plasmonic patch
+- describe limitations of previous plasmon-enhanced fluorescence assays
+- introduce novel method of plasmonic patch transfer
+- describe advantages of plasmonic patch
+- explain control over spacer thickness
+- describe fluoroimmunoassay read before and after patch addition
+- explain dynamic range enhancement
+- describe plasmonic patch structure
+- define conformable substrate
+- describe hardness of plasmonic patch
+- explain covering of plasmonic nanoparticles
+- describe usefulness of plasmonic patch
+- describe microplate formats
+- describe fluorescence intensity enhancement
+- explain lower limit of detection decrease
+- describe overall dynamic range increase
+- describe consistency across assay formats
+- describe implementation with existing bioassays
+- describe validation of technology
+- describe materials for plasmonic patch construction
+- describe mechanical flexibility of first material
+- describe optical transparency of materials
+- describe functionalization of materials
+- describe spacer material composition
+- describe thickness and refractive index of spacer
+- describe composition of second material
+- describe weight percentage of APTES
+- describe weight percentage of TMPS
+- describe weight percentage of MPTMS
+- describe nanostructure selection criteria
+- describe localized surface plasmon resonance wavelength
+- describe difference between LSPR wavelength and excitation wavelength
+- describe tuning of plasmonic patch to match weak fluorescence signal
+- describe examples of nanostructures
+- describe dimensions of nanorods
+- describe nanocubes and nanocuboids fabrication
+- specify edge length ranges
+- list plasmonic materials
+- explain plasmonic nanostructures distribution
+- specify density ranges
+- list suitable assays
+- list enhanced fluorescent sources
+- describe spacer thickness tunability
+- specify spacer thickness ranges
+- explain spacer material selection
+- describe refractive index variation
+- specify refractive index ranges
+- define elastic modulus
+- specify elastic modulus ranges
+- describe flexible substrate properties
+- describe backing layer function
+- list backing layer materials
+- describe reflective layer function
+- list reflective layer materials
+- describe plasmonic patch preparation
+- list attachment mechanisms
+- describe electrostatic attachment
+- describe covalent attachment
+- describe method for enhancing fluorescent signal
+- specify proximity distance
+- describe electromagnetic radiation source
+- specify excitation wavelength ranges
+- describe Stokes shift
+- specify excitation maximum
+- describe wavelength selection
+- list fluorescent dyes
+- describe method flexibility
+- provide disclaimer
+
+## EXAMPLES
+
+- synthesize Au@Ag-490 nanocubes
+- synthesize Au nanospheres
+- synthesize AuNR
+- fabricate plasmonic patch
+- treat PDMS with oxygen plasma
+- treat PDMS with PSS
+- adsorb plasmonic nanoparticles onto PDMS
+- illustrate plasmonic patch embodiment
+- covalently link nanorods to PDMS
+- modify PDMS with (3-mercaptopropyl)trimethoxysilane
+- adsorb plasmonic nanostructures onto modified PDMS
+- create polymer spacer on plasmonic patch
+- fabricate plasmonic patches with varying AuNR density
+- characterize plasmonic patches with SEM and extinction spectra
+- quantify fluorescence enhancement efficiency
+- fabricate plasmonic patches with different size nanorods
+- characterize plasmonic patches with extinction coefficients
+- illustrate size-dependent fluorescence enhancement
+- activate silicon and glass substrates with aldehyde
+- perform plasmonic patch enhanced fluorescence
+- perform ELISA for NGAL and KIM1 quantification
+- perform fluorescence-linked immunosorbent assay with plasmonic patch
+- treat glass surface with aldehyde functionality
+- perform streptavidin binding and plasmonic patch transfer
+- scan and analyze fluorescent signals
+- introduce fluorescence enhancement on protein microarray
+- describe experimental setup
+- detail blocking and incubation steps
+- describe scanning process
+- introduce plasmonic patch material characterization
+- describe properties of PDMS film
+- detail fabrication of plasmonic patches
+- describe SEM images of plasmonic patches
+- detail extinction spectra of plasmonic patches
+- describe transfer of plasmonic patches to surfaces
+- detail fluorescence enhancement on various surfaces
+- introduce distance-dependent fluorescence enhancement
+- describe optimization of spacer layer thickness
+- detail formation of polysiloxane copolymer film
+- describe effect of spacer layer thickness on LSPR wavelength
+- detail fluorescence enhancement efficacy
+- introduce plasmonic patch enhanced fluoroimmunoassays
+- describe fluoroimmunoassay protocol
+- detail KIM-1 and NGAL fluoroimmunoassays
+- describe enhancement in sensitivity and LOD
+- detail stability of fluorescence signal
+- introduce comparison with ELISA
+- describe performance of plasmon-enhanced fluoroimmunoassay
+- detail analysis of human urine samples
+- describe application of plasmonic patch on protein microarray
+- detail microarray layout and protocol
+- describe enhancement of fluorescence signals
+- detail detection of new analytes
+- introduce cTnI fluoroimmunoassay
+- describe cTnI fluoroimmunoassay protocol
+- detail enhancement of fluorescent signal
+- introduce IL-6 fluoroimmunoassay
+- describe IL-6 fluoroimmunoassay protocol
+- detail enhancement of fluorescent signal
+- describe lower limit of detection
+- conclude with patentable scope of disclosure
+

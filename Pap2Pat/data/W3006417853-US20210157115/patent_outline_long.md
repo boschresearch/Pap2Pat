@@ -1,0 +1,131 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate volumetric imaging
+- limitations of scanning approaches
+- limitations of light field microscopy
+
+## SUMMARY
+
+- introduce selective volume illumination
+- describe system components
+- advantages of selective volume illumination
+- implementation of scanned-optical-volume SVI
+- implementation of multi-view light field detection
+
+## DETAILED DESCRIPTION
+
+- introduce volumetric imaging system
+- describe system components
+- explain selective volume illumination
+- motivate 3D imaging at cellular resolution
+- describe hardware components
+- describe software components
+- explain light field detection mechanism
+- describe optical system components
+- explain optical geometry adjustments
+- describe microscope assembly components
+- explain switchable optical components
+- describe SVI light arm
+- motivate restricting illumination
+- explain 3D-confined illumination
+- describe contrast agents
+- explain photo-chemico-physical properties
+- describe high-contrast LFD imaging
+- explain microscope assembly capabilities
+- describe high-resolution image data
+- explain image reconstruction enhancement
+- describe light source implementation
+- explain coherent and non-coherent light
+- describe computer system components
+- explain SVI-LFD imaging software
+- describe SVI-LFD Imaging Software 146
+- implement SVI aspects
+- implement LFD imaging capabilities
+- generate volumetric imaging data
+- control illumination of a volume of interest
+- effectuate movement of electro-mechanical components
+- cause illumination of the 3D sample
+- describe optical geometries for implementing SVI techniques
+- show advantages of static-optical-volume approaches
+- describe illumination light formation
+- describe propagation invariant optical beams
+- show sample 205 as a biological specimen
+- describe static-optical-volume approach
+- describe dedicated optical elements for illumination light
+- describe light field detection path
+- describe non-collinear nature of illumination light path
+- describe optical axis of illumination
+- describe angle theta (θ)
+- describe another implementation for static-optical-volume approach
+- describe optical geometry with shared optical element
+- describe oblique-angle illumination strategy
+- describe adjusting optical geometry
+- describe linear-excitation modes
+- describe signal contrast generation
+- describe nonlinear multi-photon excitation
+- describe collinear optical geometric configuration
+- describe multi-photon excitation fluorescence
+- describe scanned-optical-volume approach
+- describe focused beam of light
+- describe scanning in one, two, or three dimensions
+- describe detection optics for capturing light field image
+- describe advantages of scanned-optical-volume techniques
+- describe endoscopic implementation of SVI-LFD imaging techniques
+- illustrate multi-core fiber for delivering illumination light
+- describe optical geometry for endoscopic implementation
+- illustrate scanning device for scanning illumination light beam
+- describe optical geometry with free-space optics for light field detection
+- illustrate use of two lenses for receiving illumination light and light field
+- describe adjustment of optical geometry to arrange objective lenses at angle theta
+- illustrate use of miniature prism to turn illumination light by 90°
+- describe optical geometry with multi-core fiber for delivering excitation light
+- illustrate use of illumination objective lens and tube lens for creating image
+- describe relay of image to distal face of endoscope using another multi-core fiber
+- illustrate use of detection objective lens for receiving propagating light field
+- describe alternative implementation with each multi-core fiber in a different endoscope
+- illustrate use of single core fiber for delivering excitation light
+- describe scanning device for scanning excitation light beam
+- illustrate use of micro lens array for creating light field image
+- describe optical geometry with common optical system for illumination and detection
+- illustrate use of multi-core fibers for transmitting illumination and detection light
+- describe multi-view LFD imaging techniques
+- illustrate optical geometry for capturing light field from multiple views
+- describe use of multiple detection micro-lens arrays and cameras
+- illustrate capture of light field with higher numerical aperture and larger camera sensor area
+- describe trade-offs associated with increasing number of detection elements
+- illustrate adjustment of optical geometry for providing SVI techniques
+- describe use of oblique-angled detection paths for SVI
+- illustrate use of beam-splitters for separating paths of illumination and detection
+- describe recording of multiple detection views with multiple micro-lens arrays and camera-optical systems
+- illustrate use of multiple oblique-angled illumination direction paths for SVI
+- describe overlapping region between multiple imaging views
+- illustrate benefit of multi-view LFD imaging for yielding final 3D image with higher resolution
+- describe multi-view LFD imaging techniques
+- illustrate optical geometry for multi-view LFD imaging
+- explain side illuminations and central illumination
+- describe sequential imaging of views
+- discuss benefits of multi-view imaging
+- illustrate another optical geometry for multi-view LFD imaging
+- explain use of reflecting prism to separate optical paths
+- describe illumination light and light fields
+- discuss detection of light fields using micro-lens arrays
+- explain use of other optical elements with reflective properties
+- discuss additional types of illumination mechanisms
+- explain use of coherent light sources for SVI
+- describe generation of image contrast using coherent light techniques
+- implement embodiments in digital electronic circuitry
+- implement embodiments in computer software, firmware, or hardware
+- describe computer-readable medium for execution by data processing apparatus
+- define data processing apparatus
+- describe computer program and its deployment
+- explain processes and logic flows performed by programmable processors
+- describe special purpose logic circuitry
+- describe essential elements of a computer
+- discuss interaction with a user
+- describe computing system with clients and servers
+- explain back-end, middleware, and front-end components
+- discuss communication networks
+- provide disclaimer on implementation details and scope of invention
+

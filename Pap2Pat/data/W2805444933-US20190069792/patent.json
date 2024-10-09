@@ -1,0 +1,444 @@
+{
+    "id": "US20190069792",
+    "authors": [
+        "Mohammad Hassan Shariat",
+        "Damian P. Redfearn"
+    ],
+    "title": "Methods for Identifying Wave Break During Atrial Fibrillation",
+    "date": "2018-09-06 00:00:00",
+    "abstract": "Study of intracardiac electrograms (IEGMs) during atrial fibrillation (AF) provides clinically significant information that can be used in ablation therapy. Methods include determining a regional feature, e.g., dominant frequency (RDF), which encompasses the relationship between simultaneously recorded electrodes and identifies the feature components of a region, rather than the feature of a single electrode. Methods employing the regional feature may be used to identify and characterize variation and disorganization in wavefront propagation or wave breaks (WBs) at each recording site, and may be used to direct catheter ablation therapy.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "The invention relates to methods for analyzing intracardiac electrogram (IEGM) data obtained during atrial fibrillation (AF) and ventricular fibrillation to detect a feature, and using the detected feature as a basis for treatment of AF. More particularly, methods may include determining a regional feature, such as regional dominant frequency (RDF), which may be used to identify and characterize variation and disorganization in wavefront propagation or wave break (WB) at each electrode site, and may be used to direct catheter ablation therapy."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field of invention"
+                    ],
+                    "num_characters": 549,
+                    "outline_medium": [
+                        "define field of invention"
+                    ],
+                    "outline_short": [
+                        "define field of invention"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Atrial fibrillation (AF) is the most common arrhythmia and a primary cause of stroke. Itcharacterized by a mosaic of heterogeneous spatiotemporal wavefront propagation that results in complex signal formation and fragmentation. Catheter ablation therapy is a method for treatment of AF which involves targeting and elimination of putative triggers and perpetuating sources found in pulmonary veins and elsewhere in the atria utilizing electroanatomic information.",
+                        "Information extracted from intracardiac electrograms (IEGMs) collected from both atria, e.g., relative timing of pulmonary vein potentials, duration of bipolar electrograms [5], complex fractionated electrograms (CFE) [6,7] and the dominant frequency (DF) [8], are often used to guide ablation therapy procedures. Feature analyses of IEGMs are based on the time and frequency analysis of the recorded signals from individual bipolar/unipolar electrodes of a conventional multi-electrode recording catheter, i.e., the IEGM of each electrode is processed and used to estimate the CFE or DF. After processing the recorded IEGM, a CFE or DF value is assigned to each electrode at an XYZ coordinate location. The assigned values are further processed, interpolated, and colour-coded to generate an anatomical map of the cardiac chamber to aid targeting of catheter ablation and thus improve procedural efficacy [6,9,10]. Since the IEGM of each electrode of the catheter is processed independently of other simultaneously recorded electrodes, these conventional methods do not provide any information about the wavefront propagation during AF [11]. Indeed, mapping of fractionated signals has not delivered success due to confounding causes, such as wavefront collision, resulting in high frequency and complex electrograms. Recent studies suggest the CFE strategy appears no better than empiric ablation [15]. Experimental work has suggested high frequency electrograms are located at sources of AF, these sources are surrounded by continuous WB, potentially obscuring the driver [20].",
+                        "Methods to compensate for the deficiencies of independent IEGM analysis approaches have met with debate and variable results, or are acquired from a surface ECG and are thus limited in spatial resolution and application [12,13]. The underlying mechanisms for AF remain elusive, and outcomes remain suboptimal in both paroxysmal [14] and persistent AF [15]. Thus, there is a need to better understand the complex mechanisms involved in AF perpetuation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce atrial fibrillation",
+                        "describe catheter ablation therapy",
+                        "discuss limitations of conventional methods",
+                        "highlight need for better understanding"
+                    ],
+                    "num_characters": 2498,
+                    "outline_medium": [
+                        "describe atrial fibrillation",
+                        "limitations of current methods"
+                    ],
+                    "outline_short": [
+                        "discuss atrial fibrillation and limitations of current methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "According to one aspect of the invention there is provided a method for detecting an abnormality in wavefront propagation during cardiac atrial fibrillation in a subject, comprising: extracting one or more feature from intracardiac electrograms of one or more electrodes disposed in a sampled region to determine a regional feature; using time-frequency analysis of the regional feature to detect spatiotemporal heterogeneity in the regional feature and a change in wavefront dynamics; wherein spatiotemporal heterogeneity in the regional feature and wavefront dynamics in the sampled region indicate an abnormality in wavefront propagation in the subject.",
+                        "In various embodiments, the one or more extracted feature is at least one of electrogram active interval envelope, number of baseline occurrence (NO), isoelectric line portion, instantaneous power, and Shannon entropy. Extracted features may be combined to extract the regional feature. In some embodiments, two or more extracted features may be combined to extract the regional feature. The two or more extracted features may be combined using weighted averaging to extract the regional feature.",
+                        "In one embodiment, the method further comprises signal exclusion. Signal exclusion may comprise one or more of exclusion of a physiologically irrelevant signal, exclusion of electrodes with low signal to noise ratio; and exclusion of an electrogram collected at a distance too far from the atrial surface (i.e., non-contact).",
+                        "In one embodiment, the method further comprises outputting results graphically. Outputting results may comprise colour coding on a three-dimensional (3D) map of the sampled region.",
+                        "In one embodiment, the regional feature is a regional dominant frequency (RDF).",
+                        "In one embodiment, the abnormality in wavefront propagation in the sampled region identifies a source of cardiac atrial fibrillation in the subject. The method may include using the source of cardiac atrial fibrillation to determine a location of ablation therapy in the subject.",
+                        "In one embodiment, the method comprises detecting a change in wavefront dynamics comprises: determining an instantaneous RDF (iRDF) corresponding to a short time window; and identifying a wave break (WB) in the iRDF.",
+                        "In one embodiment, the method comprises identifying a WB based on one or more of: a drop in iRDF that is at least fth0 Hz below the RDF; a drop in iRDF that is below fth1 Hz; and a duration of at least Tth ms; where fth0, fth1, Tth are user defined values.",
+                        "In one embodiment, the method comprises determining the RDF based on using an intracardiac electrogram data segment of at least four seconds duration.",
+                        "In one embodiment, the method comprises determining wave break rate (WBR) to characterize wavefront propagation; wherein WBR is determined based on an IEGM data segment of at least 25 seconds duration.",
+                        "In one embodiment, the method comprises determining a wave break measure to characterize wavefront propagation; wherein the wave break measure is selected from a WBR that describes a number of WBs per second, a longest WB duration throughout a recording time, average or shortest time between consecutive WBs, or WB duration percentage; wherein WB duration percentage is the total WB duration divided by IEGM segment duration.",
+                        "In one embodiment, the method comprises detecting a change in wavefront dynamics relative to the RDF for the sampled region by selecting a short time window of 0.5-3.0 s.",
+                        "In one embodiment, the method comprises detecting a change in wavefront dynamics relative to the RDF for the sampled region by selecting a short time window of 1 s or less.",
+                        "In one embodiment, the method comprises detecting a change in wavefront dynamics relative to the RDF for the sampled region by selecting a short time window of 2 s or less.",
+                        "In one embodiment, the method comprises displaying a colour-coded map to highlight one or more critical site; wherein a critical site is characterized by a site with high RDF and low WBR, a site with high WBR and low amplitude, and a site with WBR higher than a selected threshold. In other embodiments, different combinations of regional features may be used. For example, critical sites may be sites with high RDF and high WB duration percentage.",
+                        "According to another aspect of the invention there is provided programmed media for use with a processor, comprising: a code stored on non-transitory storage media compatible with the processor, the code containing instructions to direct the processor to receive IEGM data corresponding to a plurality of IEGMs from electrodes, and carry out one or more processing steps according to FIG. 1A, FIG. 1B, and/or FIG. 1C.",
+                        "In one embodiment, the programmed includes a code stored on non-transitory storage media compatible with the processor, the code containing instructions to direct the processor to: receive an intracardiac electrogram of one or more electrodes disposed in a sampled region of a subject; extract one or more feature from the intracardiac electrogram to determine a regional feature; use time-frequency/scale analysis of the regional feature to detect spatiotemporal heterogeneity in the regional feature and a change in wavefront dynamics; wherein spatiotemporal heterogeneity in the regional feature and wavefront dynamics in the sampled region indicate an abnormality in wavefront propagation in the subject; and output a result including a location of sources of cardiac atrial fibrillation in the subject."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce method for detecting abnormality",
+                        "extract features from intracardiac electrograms",
+                        "use time-frequency analysis to detect heterogeneity",
+                        "combine features to extract regional feature",
+                        "exclude irrelevant signals",
+                        "output results graphically",
+                        "identify source of cardiac atrial fibrillation",
+                        "detect change in wavefront dynamics",
+                        "determine wave break rate",
+                        "display colour-coded map"
+                    ],
+                    "num_characters": 5482,
+                    "outline_medium": [
+                        "introduce method for detecting abnormality",
+                        "extract features from intracardiac electrograms",
+                        "detect spatiotemporal heterogeneity",
+                        "output results graphically",
+                        "identify source of cardiac atrial fibrillation"
+                    ],
+                    "outline_short": [
+                        "introduce method for detecting abnormality in wavefront propagation",
+                        "outline various embodiments of the method"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Described herein are methods which consider the relationship between simultaneously recorded IEGM from electrodes and determine the wavefront characteristics of a region through time-frequency analysis of a regional feature. Relative delays between the activation times (ATs) of a mapping catheter's electrodes are time variant in AF, representing the dynamic melee of wavefronts as they pass the stationary catheter's position. As described herein, preprocessed IEGMs which are closely related to activation times are averaged to represent a regional feature. Frequency analysis of the resulting feature in a short time window is used to detect changes in wavefront dynamics for any sampled region. According to various aspects and embodiments of the invention, spatiotemporal heterogeneity in RDF and wavefront dynamics may be detected, characterized, and used to identify a region associated with the source of wave break during atrial fibrillation, which may be used to direct catheter ablation procedures, and/or used to evaluate catheter ablation outcomes in AF patients.",
+                        "A generalized framework is shown in the block diagram of FIG. 1A. Referring to FIG. 1A, in the first step features such as, but not limited to, electrogram active interval envelope, number of baseline occurrence (NO), instantaneous power, Shannon entropy, are extracted from intracardiac electrograms of individual electrodes. In the feature fusion block, the extracted features are combined (e.g., using weighted average) to extract regional features. Signal exclusion (e.g., exclusion of physiologically irrelevant signals, exclusion of electrodes with low signal to noise ratio and/or exclusion of an electrogram collected at a distance too far from the atrial surface (non-contact)) can be done in any of the first two steps. Time-frequency and/or time-scale analysis of the regional features is used to evaluate variations and irregularities in the wavefronts (i.e., wave-breaks). These results are then coded (e.g., by colour or other indicator) and shown e.g., graphically, such as on a three-dimensional (3D) map of the cardiac chamber.",
+                        "An embodiment is described with respect to a study in which data were collected from twenty patients attending for diagnostic electrophysiologic studies with catheter ablation for AF. The study was approved by the institutional ethics committee of Queen's University at Kingston, Kingston, Ontario, Canada. Endocardial electrogram data were collected during sustained AF prior to ablation. For patients taking antiarrhythmic drugs (other than Amiodarone), the drugs were withheld five half-lives prior to the study. The left atrium was mapped using an electroanatomic mapping (EAM) system (EnSite\u2122 Velocity\u2122 system, St Jude Medical, MN) and a high definition mapping catheter, either a Reflexion\u2122 HD or Spiral (St. Jude Medical). Each catheter has 20 electrodes; the bipolar pair electrodes spacing for Reflexion\u2122 HD and Spiral are 2 mm and 1 mm, respectively. The data were collected at a sampling frequency of 2034.5 Hz. The EAM system was employed to ensure ample sampling and even coverage of the endocardial surface. In two patients recordings of one minute were obtained in order to establish a minimum duration required for robust experimental data (see section C and D, below). The data were recorded as segments and later exported to be used offline in the MATLAB\u2122 (Mathworks, Natick, Mass.) environment for signal processing, as described below.",
+                        "Locations of AF or atrial tachycardia (ATach) termination were labelled on the EAM during the procedure. The location of AF termination was compared with MATLAB generated maps and correlated subjectively. Procedural outcomes were reported as both immediate (termination of AF) and during follow up (recurrence of atrial arrhythmia)."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "1A. Regional Dominant Frequency and Wave Break Rate",
+                            "paragraphs": [
+                                "The DF of each electrode of the catheter was extracted from the frequency analysis of the preprocessed IEGM of that electrode independent of the rest of the catheter's electrodes. To estimate the electrode DF (EDF), preprocessing was applied (e.g., [17]) to the IEGM recorded from each electrode, the mean amplitude of the resulting signal was removed, and the EDF was estimated from the extracted power spectrum. To obtain the power spectrum, short time Fourier transform (STFT) of the signal was calculated. For this, the signal was divided into segments with T second duration and 95% overlap. A Hanning window was applied on each segment and the power spectrum was estimated using the fast Fourier transform (FFT). Finally, the EDF of the ith electrode was calculated using",
+                                "\\(\\begin{matrix}\n{{{EDF}_{i}\ue8a0\\left( {t,T} \\right)} = {\\arg \ue89e{\\max\\limits_{f}\ue89e{P_{i}\ue8a0\\left( {f,t,T} \\right)}}}} & (1)\n\\end{matrix}\\)",
+                                "where Pi(f, t, T) is the power spectrum obtained from ith electrode of the catheter.",
+                                "To obtain the regional DF (RDF), first, the IEGM of each electrode of the catheter was preprocessed to generate a smooth train of pulses on the active intervals of the electrogram. Then the preprocessed signals of all the catheter electrodes were averaged to produce one signal; this was smoothed by a low pass filter, and the mean amplitude was subtracted. Finally, the power spectrum of the resulting signal was used to estimate the DF, and the upper quartile extracted from the generated power spectrum was reported as the regional DF. FIG. 1B shows a flowchart of this embodiment, including sample output at each stage, as explained in more detail below.",
+                                "Similar to the EDF calculation, in the first stage of the RDF calculation, preprocessing was applied to the IEGM recorded from each electrode of the catheter. Preprocessing is used to replace the complex morphologies of the IEGMs with a smooth, simplified pulse shape, such as, for example, a Gaussian shape as shown in FIG. 1B. In one embodiment, a preprocessing step such as that in [17] may be used. FIG. 1C shows an example of a preprocessing block used to obtain regional dominant frequency, and shows sample output at each step. Preprocessing steps include a bandpass filter, a variance ratio operator [17], a clipper, and a lowpass filter. In one embodiment, values are f1=40 Hz, f2=250 Hz, fc=20 Hz, and \u03b7=10.",
+                                "The AT of each bipolar electrode may be obtained by threshold crossing the associated preprocessed signal. However, here, the processed signal is used as an indicator of IEGM active intervals without trying to extract local ATs of electrodes which are prone to error. The preprocessed signals of all the electrodes were then averaged. The following two-sided exponential finite impulse response (FIR) filter (h) with a length of L was then used to further smooth the processed signal and allow estimation of discontinuities in the wavefront propagation or WB:",
+                                "\\(\\begin{matrix}\n{{h_{n}^{\\prime} = {\\exp \ue8a0\\left( {- {\uf603{{- 1} + \\frac{2\ue89e\\left( {n - 1} \\right)}{L}}\uf604}} \\right)}},\ue89e{h_{n} = \\frac{h_{n}^{\\prime}}{\\sum\\limits_{k = 1}^{L}\ue89e\\; \ue89eh_{k}^{\\prime}}},{{{for}\ue89e\\mspace{14mu} \ue89en} = 1},\\ldots \ue89e\\mspace{14mu},{L.}} & (2)\n\\end{matrix}\\)",
+                                "For example, L=220 was used for the cases reported herein. This value or filter type may of course be adjusted according to the sampling rate, DF, or mean cycle lengths of atrial activations.",
+                                "The mean amplitude of the resulting signal was removed and, in the next stage, the STFT of the signal was calculated in a similar manner to the EDF to obtain its power spectrum, i.e., the signal was divided into segments with T second duration and 95% overlap, the Hanning window (other windows such as, but not limited to, Rectangular, Triangular, Hamming, Gaussian, Blackman, etc., may be used) was applied on each segment, and the power spectrum of the signal was estimated using the FFT. The instantaneous RDF (iRDF) and upper quartile of iRDF, (denoted as RDF) were calculated from the extracted power spectrum, i.e.,",
+                                "\\(\\begin{matrix}\n{{{iRDF}\ue8a0\\left( {t,T} \\right)} = {\\arg \ue89e{\\max\\limits_{f}\ue89e{P\ue8a0\\left( {f,t,T} \\right)}}}} & (3) \\\\\n{{{RDF}\ue8a0\\left( {D,T} \\right)} = {\\underset{t \\in {\\lbrack{0,D}\\rbrack}}{{upper}\ue89e\\mspace{14mu} \ue89e{quartile}}\ue89e\\mspace{14mu} \ue89e{{iRDF}\ue8a0\\left( {t,T} \\right)}}} & (4)\n\\end{matrix}\\)",
+                                "where T is the duration of the segments used in the STFT, D is the duration of the IEGM segment, and P(f, t, T) is the power spectrum of the output of the 2-sided exponential lowpass filter which depends on time, frequency and T.",
+                                "The time window Tin the STFT was selected to be a small value, to increase time resolution of the extracted iRDF and enable identification of WB. In this example, T was selected to be equal to one second. However, other values of T may be used, such as, but not limited to, 0.5-3.0 s. For example, T may be two seconds. Such values are smaller than that commonly used for EDF calculations (see, e.g., [16,18]). Increasing T beyond these values increases the frequency resolution and degrades the time resolution, thus obscuring transient WB events. WB is defined herein as any drop in the iRDF which is more than 3 Hz below the RDF (or below 0.5 Hz) and lasts longer than 100 m. Finally, the number of WBs per second (i.e., wave break rate (WBR)) was used as a feature/measure to characterize (e.g., quantify, assess quality) of the wavefront propagation at each site. Specific values used herein are user-defined thresholds and the invention is not limited thereto."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe calculation of electrode dominant frequency (EDF)",
+                                "describe preprocessing of IEGMs",
+                                "describe calculation of regional dominant frequency (RDF)",
+                                "describe preprocessing steps for RDF calculation",
+                                "describe calculation of instantaneous RDF (iRDF)",
+                                "describe calculation of upper quartile of iRDF",
+                                "describe selection of time window T",
+                                "define wave break (WB) and wave break rate (WBR)",
+                                "describe calculation of WBR",
+                                "describe use of WBR as a feature to characterize wavefront propagation"
+                            ],
+                            "num_characters": 5512,
+                            "outline_medium": [
+                                "extract dominant frequency of each electrode of the catheter",
+                                "calculate regional dominant frequency from preprocessed IEGMs",
+                                "describe preprocessing steps for obtaining regional dominant frequency",
+                                "calculate instantaneous RDF and upper quartile of iRDF",
+                                "define wave break and calculate wave break rate"
+                            ],
+                            "outline_short": [
+                                "extract regional dominant frequency from IEGMs",
+                                "calculate wave break rate from regional dominant frequency"
+                            ]
+                        },
+                        {
+                            "title": "1B. Example of RDF-Based Wave Break Identification",
+                            "paragraphs": [
+                                "In FIG. 2A the top ten plots are IEGMs recorded from electrodes of a Reflexion\u2122 Spiral catheter from the roof of the left atrium of a patient with persistent AF. The outputs of various stages of processing are also plotted for this segment. For the regions where a clear wavefront is present, the peaks of the preprocessed signals of all the electrodes occur very close to each other, therefore, the averaged signal generates a large peak for each wavefront (see FIG. 2B). However, for the areas/time intervals where a WB occurs, e.g., due to slow conduction velocity, the delays between the ATs of the electrodes increase and, consequently, the peaks of the preprocessed signals occur during a longer time interval. In this case, averaging the preprocessed signals generates several small peaks resulting in a segment with high frequency. This high frequency component of the signal was attenuated significantly by the two-sided exponential low pass filter leading to a drop in the iRDF (see FIG. 2C). This example shows how changes in iRDF can be used to study the wavefront variation and identify WBs. As shown in the bottom plot of FIG. 2A, three WBs are present in this IEGM segment (at around time=12, 14, and 24 s), and the WBR for this segment is estimated to be 0.1 WB/sec."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe example of RDF-based wave break identification",
+                                "illustrate example with plots of IEGMs and processing outputs"
+                            ],
+                            "num_characters": 1282,
+                            "outline_medium": [
+                                "illustrate example of RDF-based wave break identification using IEGMs from a patient with persistent AF"
+                            ],
+                            "outline_short": [
+                                "illustrate RDF-based wave break identification using IEGM segment"
+                            ]
+                        },
+                        {
+                            "title": "1C. Minimum Required Segment Duration for Accurate RDF Estimation",
+                            "paragraphs": [
+                                "Here, the aim was to find the minimum segment duration that is required for an accurate and robust estimation of the RDF. It was assumed that the feature obtained using the 30-second segment was accurate and robust (i.e., the \u201cgold standard\u201d), e.g., RDF (D=30 s, T=1 s) is an accurate estimate of the segment RDF. The goal was to find the segment duration such that the Pearson correlation between the desired feature obtained from that segment and the gold standard is higher than 85%. IEGMs of the patients with durations longer than 30 seconds were selected (201 segments were selected from 15 patients) and the RDF (30 s, 1 s) was calculated for them. The RDF was also calculated using shorter segment durations D and the results compared. FIG. 4 shows the Pearson correlation between the RDF (D, 1 s) and the RDF (30 s, 1 s) for various Ds, with the upper and lower bounds of the confidence interval (CI) of the correlation are also plotted. From this figure, it was concluded that the RDF obtained using an IEGM segment longer than four seconds is an accurate estimate of the RDF (30 s, 1 s), as the correlation of the RDF (4 s, 1 s) and RDF (30 s, 1 s) is 90%."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe aim to find minimum segment duration for accurate RDF estimation",
+                                "describe results of analysis and conclusion"
+                            ],
+                            "num_characters": 1167,
+                            "outline_medium": [
+                                "determine minimum segment duration required for accurate RDF estimation"
+                            ],
+                            "outline_short": [
+                                "determine minimum segment duration for accurate RDF estimation"
+                            ]
+                        },
+                        {
+                            "title": "1D. Minimum Required Segment Duration for Accurate WBR Estimation",
+                            "paragraphs": [
+                                "Having established that the use of four second segments provides accurate estimation of the RDF, the objective in this section was to find the minimum required segment duration for reliable WBR estimation. It was expected that much longer segment duration would be required for WBR estimation. Thus, the same procedure as in the previous section was followed. Segments with duration D longer than 50 s (37 segments) were selected from two patients, and for each segment, the WBR was obtained using the first 50 seconds of each segment. The Pearson correlation (and the 95% CI bounds) of the WBRs estimated from D-second segments and 50-second segments are plotted in FIG. 5. Based on this figure, it was concluded that IEGM segments longer than 25 s are required for reliable estimation of the WBRs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe results of analysis and conclusion"
+                            ],
+                            "num_characters": 799,
+                            "outline_medium": [
+                                "determine minimum segment duration required for accurate WBR estimation"
+                            ],
+                            "outline_short": [
+                                "determine minimum segment duration for accurate WBR estimation"
+                            ]
+                        },
+                        {
+                            "title": "1E. Statistics",
+                            "paragraphs": [
+                                "The Anderson-Darling test was used to inspect for normality. Nonparametric data was compared using the Mann-Whitney test and was used to compare the WBR and RDF of persistent and paroxysmal patients; and Spearman's rank correlation coefficient used to study the correlation between WB and RDF. (a p value less than 0.05 is considered statistically significant). The mean and standard deviation of variables are reported using the mean\u00b1std notation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe statistical methods used"
+                            ],
+                            "num_characters": 448,
+                            "outline_medium": [
+                                "describe statistical methods used for data analysis"
+                            ],
+                            "outline_short": [
+                                "describe statistical methods for analyzing WBR and RDF"
+                            ]
+                        },
+                        {
+                            "title": "1F. Implementation",
+                            "paragraphs": [
+                                "Embodiments may be implemented at least partially in software (e.g., an algorithm). The software may include programmed media for use with a processor (e.g., a computer) and with data such as, for example, IEGM data from electrodes, the programmed media comprising a computer program stored on non-transitory storage media compatible with the computer, the computer program containing instructions to direct the processor to perform one or more of the functions described above and/or in FIG. 1.",
+                                "The computer may include a data processing system that controls one or more components of the system, in conjunction with a user interface (e.g., a graphical user interface (GUI)). Controlling may include functions such as receiving input (e.g., IEGM data), analyzing data, and displaying results and/or images on a display of the system. The data processing system may be a client and/or server in a client/server system. For example, the data processing system may be a server system or a personal computer (PC) or tablet-based system. The data processing system may include an input device, a central processing unit (CPU), memory, display device, and interface device. The input device may include a keyboard, a mouse, a trackball, a touch sensitive surface or screen, or a similar device. The display may include a computer screen, television screen, display screen, terminal device, a touch sensitive display surface or screen, or a hardcopy producing output device such as a printer or plotter. The memory may include a variety of storage devices including internal memory and external mass storage typically arranged in a hierarchy of storage as understood by those skilled in the art. For example, the memory may include databases, random access memory (RAM), read-only memory (ROM), flash memory, and/or disk devices. The interface device may include one or more network connections. The data processing system may be adapted for communicating with other data processing systems over a network via the interface device. For example, the interface device may include an interface to a network such as the Internet and/or another wired or wireless network (e.g., a wireless local area network (WLAN), a cellular telephone network, etc.). Thus, the data processing system may be linked to other data processing systems by the network. The CPU may include or be operatively coupled to dedicated coprocessors, memory devices, or other hardware modules. The CPU is operatively coupled to the memory which stores an operating system for general management of the system. The CPU is operatively coupled to the input device for receiving user commands or queries and for displaying the results of these commands or queries to the user on the display. Commands and queries may also be received via the interface device and results may be transmitted via the interface device. The data processing system may include a database system (or storage) for storing data and programming information. The database system may include a database management system and a database and may be stored in the memory of the data processing system. In general, the data processing system has stored therein data representing sequences of instructions which when executed cause certain steps of the method described herein to be performed. For example, the instructions may be associated with one or more components of FIG. 1. Of course, the data processing system may contain additional software and hardware, a description of which is not necessary for understanding the invention.",
+                                "Thus, the data processing system includes computer executable programmed instructions for directing the system to implement the embodiments of the invention. Executing instructions may include the system prompting the user for input at various steps, some of which are shown in the embodiments of FIG. 1. In one embodiment the programmed instructions may be embodied in one or more hardware modules or software modules resident in the memory of the data processing system or elsewhere. In one embodiment the programmed instructions may be embodied on a non-transitory computer readable storage medium or product (e.g., a compact disk (CD), etc.) which may be used for transporting the programmed instructions to the memory of the data processing system and/or for executing the programmed instructions. In one embodiment the programmed instructions may be embedded in a computer-readable signal or signal-bearing medium (or product) that is uploaded to a network by a vendor or supplier of the programmed instructions, and this signal or signal-bearing medium may be downloaded through an interface to the data processing system from the network by end users or potential buyers.",
+                                "A user may interact with the data processing system and its hardware and software modules using a GUI. The GUI may be used for controlling, monitoring, managing, and accessing the data processing system. GUIs are supported by common operating systems and provide a display format which enables a user to choose commands, execute application programs, manage computer files, and perform other functions by selecting pictorial representations known as icons, or items from a menu through use of an input device such as a mouse or touch screen. In general, a GUI is used to convey information to and receive commands from users and generally includes a variety of GUI objects or controls, including icons, toolbars, drop-down menus, text, dialog boxes, buttons, and the like. A user typically interacts with a GUI presented on a display by using an input device (e.g., a mouse or touchscreen) to position a pointer or cursor over an object (e.g., an icon) and by \u201cclicking\u201d on the object. Typically, a GUI based system presents application, system status, and other information to the user in one or more \u201cwindows\u201d appearing on the display. A window is a more or less rectangular area within the display in which a user may view an application or a document. Such a window may be open, closed, displayed full screen, reduced to an icon, increased or reduced in size, or moved to different areas of the display. Multiple windows may be displayed simultaneously, such as: windows included within other windows, windows overlapping other windows, or windows tiled within the display area."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe implementation of embodiments in software",
+                                "describe data processing system",
+                                "describe user interface",
+                                "describe input device",
+                                "describe central processing unit (CPU)",
+                                "describe memory",
+                                "describe display device",
+                                "describe interface device",
+                                "describe network connections",
+                                "describe database system",
+                                "describe computer executable programmed instructions",
+                                "describe graphical user interface (GUI)"
+                            ],
+                            "num_characters": 6326,
+                            "outline_medium": [
+                                "describe software implementation of embodiments",
+                                "outline data processing system architecture",
+                                "describe user interface and input/output devices",
+                                "discuss memory and storage hierarchy",
+                                "outline network connectivity and communication",
+                                "describe database system and storage of programming information"
+                            ],
+                            "outline_short": [
+                                "describe software implementation of embodiments",
+                                "outline data processing system architecture",
+                                "discuss user interface and interaction"
+                            ]
+                        },
+                        {
+                            "title": "1G. Results",
+                            "paragraphs": [
+                                "Five patients from 20 were excluded due to poor data quality and incomplete coverage of the left atrial chamber defined as endocardial surface coverage of less than 60%. Average procedural duration for the remaining 15 patients was 4:39\u00b10:54 hours (persistent 4:53\u00b10:42 hours, paroxysmal 4:12\u00b11:09 hours). There were 13 males; mean age 61.3\u00b19.2 years; 5 paroxysmal AF; 10 persistent AF (mean duration of persistent AF 20.6\u00b18.6 months); the mean left atrial diameter was 47\u00b19.4 millimeters (persistent 50.9\u00b17.8 millimeters and paroxysmal 39.2\u00b17.7 millimeters). There was an average of 24.4\u00b17 recording locations per patient and mean recording duration of 29.9\u00b19.8 seconds. In 8/10 persistent patients Ibutilide 1 mg was administered prior to sampling of the AF electrograms.",
+                                "Segments longer than 25 s were selected from 15 patients (279 segments). The first 25 s of each segment was used for the RDF and, consequently, the WBR estimation. The mean RDF of the segments was 5.5\u00b10.82 Hz (median 5.4 Hz; range, 2.86 to 7.66 Hz), and the WBR was 0.16\u00b10.13 WB/sec (median 0.15 WB/sec; rang, 0 to 0.63 WB/sec). The RDF and WBR for the five paroxysmal patients was 5.99\u00b10.8 Hz (median 5.94; range, 3.47 to 7.66 Hz) and 0.24\u00b10.14 (median 0.23; range, 0 to 0.63 WB/sec) respectively. For the ten persistent patients, the RDF and WBR was 5.32\u00b10.75 Hz (median 5.27; range, 2.86 to 7.03 Hz) and 0.14\u00b10.11 (median 0.13; range, 0 to 0.47) respectively. The difference was significant (p<0.001) for both RDF and WBR.",
+                                "There was significant heterogeneity in distribution of WB and RDF, as the two measures were weakly correlated (0.3; p<0.001). FIG. 6B shows a scatter plot of the estimated WBR and RDF, in which circles and triangles are used to mark the estimated values from the patients with persistent and paroxysmal AF, respectively. The histograms of the WBR (in WB/sec) and RDF (in Hz) are also shown in FIGS. 6A and 6C, respectively. FIGS. 7A and 7B show the estimated values for the WBR and RDF, respectively, at different left atrial sites for all the segments collected from the patient cohort. There was a trend toward relatively low WBR in the left atrial appendage and both the anterior wall and veins, but overall there was non-significant variation in relative values across the LA geometries.",
+                                "Of the 15 patients, ablation terminated AF to sinus rhythm in six patients and ATach in three; a further six patients underwent direct current cardioversion at the discretion of the operator. Sites where termination of AF occurred with ablation were plotted with the geometries populated with RDF and WBR data. Sites of high RDF and low WBR (\u2191RDF,\u2193WBR) were defined as sites where RDF and WBR were in the upper and lower quartile range of the calculated values for each patient, respectively. Thus, a \u2191RDF,\u2193WBR site was described based on the relative values in each patient and not absolute values; these sites were identified in 14/15 patients (2.6\u00b11.2 sites per patients; range, 1 to 4 sites; 43% situated within the pulmonary veins). FIGS. 8 and 9 are illustrative. In FIG. 8 the roof of the left atrium shows very high frequency with very low WBR observed on the sampled electrograms. This area terminated AF during a wide area circumferential ablation prior to isolation of the right sided veins.",
+                                "Nine patients had termination of AF with ablation. In 5/6 patients where AF terminated to sinus rhythm \u2191RDF,\u2193WBR sites were present and ablated, in 3/3 patients where AF terminated to ATach, \u2191RDF,\u2193WBR sites were present and ablated, and in 6/9 patients \u2191RDF,\u2193WBR sites were located at sites of termination. In one patient no \u2191RDF,\u2193WBR site was observed; this patient had a history of paroxysmal AF and terminated to sinus rhythm during right pulmonary vein antral ablation.",
+                                "Of the six patients that underwent cardioversion, only two had sites with \u2191RDF,\u2193WBR ablated. During follow up of those patients, four had recurrence (ATach (two) and AF (two)). No recurrence was reported in the cohort of six patients that ablation successfully terminated AF to sinus rhythm, whereas among three patients that terminated to ATach, one had ATach recurrence. Table 1 summarizes these results.",
+                                "FIG. 9 highlights an ablation that terminated the AF to sinus rhythm on a geometry colour coded (shown in grayscale) for CFEmean; the area just posterior to the RIPV is observed to present high RDF and low WBR with an area immediately inferior showing a high WBR. In FIG. 9, the top panel shows a 3D atrial map based on the mean complex fractionated electrogram (CFE) for a patient with persistent AF, wherein ablation sites are marked with dots; the middle panel is a plot showing, from top to bottom, surface ECG (lead I), IEGMs of the Cool Flex\u2122 (St. Jude Medical) ablation catheter placed at the location marked with star, IEGMs collected from the Inquiry\u2122 (St. Jude Medical) catheter placed in coronary sinus (CS), and from Reflexion\u2122 Spiral (St. Jude Medical) placed in right superior pulmonary vein; and at the bottom are atrial maps shaded based on the regional dominant frequency (RDF) and wave break rate (WBR) when 24 segments longer than 25 seconds were used to create these maps. In all the atrial maps, the ablation site that lead to AF termination is marked with star."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "exclude patients due to poor data quality",
+                                "describe patient demographics",
+                                "summarize procedural duration",
+                                "report recording locations and duration",
+                                "administer Ibutilide to patients",
+                                "select segments for RDF and WBR estimation",
+                                "calculate RDF and WBR for all patients",
+                                "compare RDF and WBR for paroxysmal and persistent patients",
+                                "show scatter plot and histograms of WBR and RDF",
+                                "describe ablation results and termination sites"
+                            ],
+                            "num_characters": 5265,
+                            "outline_medium": [
+                                "present patient demographics",
+                                "describe data collection and processing",
+                                "report RDF and WBR results",
+                                "analyze correlation between RDF and WBR",
+                                "discuss ablation results and termination sites"
+                            ],
+                            "outline_short": [
+                                "present patient data and statistics",
+                                "analyze and visualize RDF and WBR data"
+                            ]
+                        },
+                        {
+                            "title": "1H. Discussion",
+                            "paragraphs": [
+                                "The methods described herein provide a novel metric for further investigation, mapping, and understanding of AF that overcomes the drawbacks of traditional electrogram and anatomical-guided ablation (pulmonary vain isolation, lines, CFE, EDF) treatment for persistent AF [15,19]. Regional dominant frequency identifies regions with rapid change in wavefront propagation. This is done without directly identifying the activation time at individual bipoles, as accurate local activation time estimation is very challenging [5]. The methods are more robust and efficient than traditional methods and can be used to identify and characterize wavefronts with long/fractionated/non-discrete activations and without clear isoelectric lines between activations. The methods are robust against the unorganized activations during WBs that result from rotating waves, local conduction block, and wavefront collision such that WB characteristics may be quantified at each atrial site to provide information about AF mechanism and perpetuation. The methods provide a computationally efficient algorithm to identify and quantify regional wavefront discontinuities or WBs for further characterization of AF patterns. These were examined in the context of acute procedural outcomes and showed an association between termination sites and wavefront dynamics. It was observed that sites with high RDF and low WBR (\u2191RDF, \u2193WBR) are associated with termination of AF; this is in keeping with experimental data on sources [21,22]. Moreover, it is expected that the technique will be able to differentiate regions with high frequencies resulting from colliding wavefronts, from anchored, stable AF drivers by combining the RDF and WBR metrics.",
+                                "The study of the spatial distribution of WBR and RDF might provide clinically important insight regarding putative sources of AF as suggested in these early data. The WBR is proposed as a feature/measure to quantify the quality of the wavefront propagation at each site; it can be shown on electroanatomic mapping systems and employed to characterize and differentiate signal complexity leading to the potential for a more informed choice of ablation target than current empiric techniques. Importantly, the data is collected sequentially but used regionally, which provides improved endocardial resolution over panoramic surface ECG and current balloon-based technologies. As shown herein, four seconds is sufficient for RDF reproducibility at any site and the addition of WBR can be performed within 25 seconds of data collection. These early data suggest that an expedited protocol that examines only WBR rate at high DF sites to differentiate putative source from collision may be feasible. It is expected that regional features such as wave break duration percentage require segments with shorter duration, which suggests that this method may be used during ventricular fibrillation.",
+                                "WB was quantified at each site by estimating the WBR which describes the number of WBs per second. Other measures for quantifying WB include longest WB duration throughout the recording time, average or shortest time between consecutive WBs, or WB duration percentage defined as the total WB duration divided by IEGM segment duration.",
+                                "Furthermore, recording sites with (\u2191RDF, \u2193WBR) were described as critical sites. Other possibilities for critical sites may be sites with high WBR and low amplitude or sites with WBR higher than user-defined threshold.",
+                                "Here, \u2191RDF, 75 WBR site was described based on the relative values in each patient. Evaluation of absolute values may also be done by using user-defined thresholds for the measured features.",
+                                "According to the exemplary study described herein, accurate estimation of the WBR requires 25 s stable positioning at each recording site. For the 15 patients the mean time for electrogram collection for the left atrium alone was 27\u00b18 min. However, it is expected that this time can be reduced with WBR focusing only on high RDF sites identified through four second segments. In addition, if a goal is to localize sites with high WB measures (e.g., high WBR sites), long recordings are not needed and shorter segments can be used to identify those sites.",
+                                "Ibutilide was used in 8/10 persistent patients and none of the five paroxysmal patients. The use of Ibutilide to facilitate catheter ablation is still debated; however, the potent class III effect will reduce mean AF cycle length and consequently RDF values [23]. This may explain why the mean RDF for paroxysmal patients was significantly higher than for persistent patients, contrary to the available literature [8].",
+                                "Stability of the generated map throughout procedure duration is a critical factor, as any shift and drift in the initial map limits the ability to accurately associate WBR or RDF to their recording sites during the ablation portion of the procedure. Although care was taken in the mapping, significant change was observed in geometry location and instability that required correction that necessitated subjective correlation between ablation sites and TRDF, jWBR sites.",
+                                "Furthermore, electrograms were collected exclusively from the left atrium and the right atrium during AF is not represented in the analysis."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce novel metric for AF investigation",
+                                "describe regional dominant frequency",
+                                "discuss advantages over traditional methods",
+                                "explain wave break rate quantification",
+                                "associate termination sites with wavefront dynamics",
+                                "discuss spatial distribution of WBR and RDF",
+                                "propose WBR as a feature for ablation target",
+                                "discuss data collection and regional features",
+                                "describe critical sites and evaluation methods",
+                                "discuss limitations and future directions"
+                            ],
+                            "num_characters": 5247,
+                            "outline_medium": [
+                                "introduce novel metric for AF investigation",
+                                "describe advantages of RDF and WBR methods",
+                                "discuss association between termination sites and wavefront dynamics",
+                                "propose WBR as a feature to quantify wavefront propagation",
+                                "suggest future directions and potential applications"
+                            ],
+                            "outline_short": [
+                                "discuss advantages and implications of RDF and WBR metrics",
+                                "propose future applications and refinements of the method"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe methods for analyzing IEGMs to determine wavefront characteristics",
+                        "introduce block diagram of FIG. 1A",
+                        "describe feature extraction and fusion",
+                        "describe time-frequency and/or time-scale analysis of regional features",
+                        "describe embodiment of study with twenty patients",
+                        "describe data collection and processing",
+                        "describe correlation of MATLAB generated maps with procedural outcomes"
+                    ],
+                    "num_characters": 3814,
+                    "outline_medium": [
+                        "describe methods for analyzing IEGMs to determine wavefront characteristics",
+                        "introduce framework for extracting regional features from IEGMs",
+                        "outline application of time-frequency analysis to detect changes in wavefront dynamics"
+                    ],
+                    "outline_short": [
+                        "describe methods for analyzing IEGMs to determine wavefront characteristics"
+                    ]
+                },
+                {
+                    "title": "2. Computer Modelling of Spiral Rotor and Associated Wave Break Analysis",
+                    "paragraphs": [
+                        "In this section, a computer model was used to simulate the electrical activities of cardiac cells. More specifically, the simulation included a spiral rotor with meandering core which sustained the cardiac electrical activities. The simulated electrograms were used to estimate the iRDF and identify WBs. The results showed that the iRDF-drop or WB happens when the core of simulated rotor wavefront passes the area under the catheter.",
+                        "To generate a rotor a modified FitzHugh-Nagumo model was used with membrane parameters described in Table I of [1]. The spiral wavefront was generated by cross-field stimulation method (homogeneous and isotropic array) [2]. A two-dimensional partial differential equation with Neumann no-flux boundary conditions was numerically solved by the finite difference method, and the diffusion terms were calculated using a five-point formula. Ghost points were deployed to include the Neumann boundary conditions [3], and the Euler method of integration were implemented to solve the differential equations [2]. Unipolar electrograms were calculated with sampling frequency of 1000 sample/second, using current source approximation for a large volume conductor [4], and consequently, the bipolar electrograms were obtained from unipolar electrograms.",
+                        "FIG. 10A shows the simulated spiral wavefront and its core trajectory, wherein the meandering core is marked with a star and its trajectory is colour-coded (shown in grayscale) based on time. A sample catheter with 20 electrodes and a bipolar pair electrode spacing of 2 mm is also shown. The bipolar electrograms generated from placing the catheter in eight different sites, labelled 1-8, (FIG. 10B) were processed to calculate iRDF; these iRDF are plotted in FIG. 10C as a function of time. This figure shows that there is a significant drop in iRDF (or WB) when the core of rotor passes the area under the catheter (no WB was observed in the collected electrograms of the catheter shown in FIG. 10A. This simulation showed that sites which are more frequently in a rotor core travelling path experience more WBs and consequently would be highlighted in the WBR map as good candidates for ablation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "simulate cardiac cells using computer model",
+                        "generate spiral rotor using modified FitzHugh-Nagumo model",
+                        "calculate unipolar and bipolar electrograms",
+                        "analyze iRDF-drop or WB using simulated electrograms"
+                    ],
+                    "num_characters": 2183,
+                    "outline_medium": [
+                        "simulate spiral rotor using FitzHugh-Nagumo model",
+                        "generate electrograms and identify wave breaks"
+                    ],
+                    "outline_short": [
+                        "simulate spiral rotor and wave break analysis using computer model"
+                    ]
+                },
+                {
+                    "title": "3. Clinical Example of an Identified Rotor During Wave Break",
+                    "paragraphs": [
+                        "FIG. 11 shows an example of rotational activity observed during wave break. Local activation times of electrodes may be used to create a propagation map, and the atrial surface may be colour coded to illustrate the isochronal surfaces. FIG. 11 is a propagation map created using the activation times of electrograms plotted in FIG. 2A during wave break at time 11 s. The arrow shows the direction of rotational activities observed at this site, beginning at 0 and ending at 1. Although shown in greyscale, the dots on the map may be colour-coded according to the scale on the right, from, e.g., blue at 0, through green at 0.5, to red at 1.",
+                        "The contents of all cited publications are incorporated herein by reference in their entirety."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "illustrate rotational activity observed during wave break using propagation map"
+                    ],
+                    "num_characters": 736,
+                    "outline_medium": [
+                        "illustrate rotational activity observed during wave break"
+                    ],
+                    "outline_short": [
+                        "illustrate clinical example of rotational activity during wave break"
+                    ]
+                },
+                {
+                    "title": "EQUIVALENTS",
+                    "paragraphs": [
+                        "While the invention has been described with respect to illustrative embodiments thereof, it will be understood that various changes may be made to the embodiments without departing from the scope of the invention. Accordingly, the described embodiments are to be considered merely exemplary and the invention is not to be limited thereby."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe scope of invention"
+                    ],
+                    "num_characters": 338,
+                    "outline_medium": [
+                        "describe scope of invention"
+                    ],
+                    "outline_short": [
+                        "discuss equivalents of the invention"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for detecting an abnormality in wavefront propagation during cardiac atrial fibrillation in a subject, comprising:\nobtaining an intracardiac electrogram (IEGM) of one or more electrodes disposed in a sampled region of a subject;\nextracting one or more feature from the intracardiac electrogram to determine a regional feature;\nusing time-frequency/scale analysis of the regional feature to detect spatiotemporal heterogeneity in the regional feature and a change in wavefront dynamics;\nwherein spatiotemporal heterogeneity in the regional feature and wavefront dynamics in the sampled region indicate an abnormality in wavefront propagation in the subject; and\noutputting a result including a location of sources of cardiac atrial fibrillation in the subject.",
+        "2. The method of claim 1, wherein the one or more extracted feature is at least one of electrogram active interval envelope, number of baseline occurrence (NO), isoelectric line portion, instantaneous power, and Shannon entropy.",
+        "3. The method of claim 1, wherein two or more extracted features are combined to extract the regional feature.",
+        "4. The method of claim 3, wherein the two or more extracted features are combined using weighted averaging to extract the regional feature.",
+        "5. The method of claim 1, further comprising signal exclusion.",
+        "6. The method of claim 5, wherein signal exclusion comprises one or more of exclusion of a physiologically irrelevant signal, exclusion of electrodes with low signal to noise ratio, and exclusion of an electrogram collected at a selected distance from the atrial surface.",
+        "7. The method of claim 1, further comprising outputting the result graphically.",
+        "8. The method of claim 7, wherein outputting the result comprises colour coding on a three-dimensional (3D) map of the sampled region.",
+        "9. The method of claim 1, wherein the regional feature is a regional dominant frequency (RDF).",
+        "10. The method of claim 1, wherein the abnormality in wavefront propagation in the sampled region identifies a source of cardiac atrial fibrillation in the subject.",
+        "11. The method of claim 10, comprising using the source of cardiac atrial fibrillation to determine a location of ablation therapy in the subject.",
+        "12. The method of claim 9, wherein detecting a change in wavefront dynamics comprises:\ndetermining an instantaneous RDF (iRDF) corresponding to a short time window; and\nidentifying a wave break (WB) in the iRDF.",
+        "13. The method of claim 12, comprising identifying a WB based on one or more of:\na drop in iRDF that is at least fth0 Hz below the RDF;\na drop in iRDF that is below fth1 Hz; and\na duration of at least Tth ms;\nwhere fth0, fth1, Tth are user defined values.",
+        "14. The method of claim 9, comprising determining the RDF based on using an intracardiac electrogram data segment of at least four seconds duration.",
+        "15. The method of claim 1, further comprising:\ndetermining wave break rate (WBR) to characterize wavefront propagation;\nwherein WBR is determined based on an IEGM data segment of at least 25 seconds duration.",
+        "16. The method of claim 1, further comprising:\ndetermining a wave break measure to characterize wavefront propagation;\nwherein the wave break measure is selected from a WBR that describes a number of WBs per second, a longest WB duration throughout a recording time, average or shortest time between consecutive WBs, or WB duration percentage;\nwherein WB duration percentage is the total WB duration divided by IEGM segment duration.",
+        "17. The method of claim 9, comprising detecting a change in wavefront dynamics relative to the RDF for the sampled region by selecting a short time window of 0.5-3.0 s.",
+        "18. The method of claim 9, comprising detecting a change in wavefront dynamics relative to the RDF for the sampled region by selecting a short time window of 2 s or less.",
+        "19. The method of claim 1, further comprising:\ndisplaying a colour-coded map to highlight one or more critical site;\nwherein a critical site is characterized by a site with high RDF and low WBR, a site with high WBR and low amplitude, and a site with WBR higher than a selected threshold.",
+        "20. Programmed media for use with a processor, comprising:\na code stored on non-transitory storage media compatible with the processor, the code containing instructions to direct the processor to:\nreceive an intracardiac electrogram of one or more electrodes disposed in a sampled region of a subject;\nextract one or more feature from the intracardiac electrogram to determine a regional feature;\nuse time-frequency/scale analysis of the regional feature to detect spatiotemporal heterogeneity in the regional feature and a change in wavefront dynamics;\nwherein spatiotemporal heterogeneity in the regional feature and wavefront dynamics in the sampled region indicate an abnormality in wavefront propagation in the subject; and\noutput a result including a location of sources of cardiac atrial fibrillation in the subject."
+    ]
+}

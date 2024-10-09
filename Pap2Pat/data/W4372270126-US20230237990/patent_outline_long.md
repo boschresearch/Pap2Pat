@@ -1,0 +1,125 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate speech processing models
+
+## SUMMARY
+
+- introduce wav2seq method
+- obtain first training corpus
+- compute feature vectors
+- determine pseudo tokens
+- determine pseudo-token sequences
+- train first neural network
+- obtain second training corpus
+- train second neural network
+- deploy second neural network
+- specify clustering method
+- specify token compression method
+- specify neural network architecture
+- specify system configuration
+- specify media storage
+
+## DETAILED DESCRIPTION
+
+- introduce speech processing models
+- describe applications of speech processing models
+- discuss limitations of labeled training data
+- introduce self-supervised learning
+- describe pseudo tokens
+- outline method for training speech processing model using pseudo tokens
+- determine set of pseudo tokens using unlabeled training data
+- compute sequences of feature vectors from audio training samples
+- cluster feature vectors
+- represent training samples as sequence of cluster tokens
+- deduplicate cluster token sequences
+- perform token compression on deduplicated sequences
+- train first speech processing model using pseudo tokens and unlabeled training data
+- represent training samples as sequences of pseudo tokens
+- train first speech processing model to generate sequences of pseudo tokens
+- discuss limitations of first speech processing model
+- train second speech processing model using labeled training data
+- initialize second speech processing model using first speech processing model
+- fine-tune second speech processing model
+- deploy second speech processing model
+- describe system for determining set of pseudo tokens
+- compute feature vectors from training samples
+- perform average pooling on feature vectors
+- cluster feature vectors
+- generate sequence of cluster tokens for each training sample
+- deduplicate cluster token sequences
+- perform token compression on deduplicated sequences
+- describe system for determining sequences of pseudo tokens
+- reuse clusters determined by system for determining set of pseudo tokens
+- generate sequence of cluster tokens for each training sample
+- deduplicate cluster token sequences
+- replace cluster tokens with pseudo tokens
+- describe system for training encoder-decoder neural network using pseudo tokens
+- process speech using encoder and decoder
+- generate sequence of pseudo tokens
+- compare generated sequence with previously-generated sequence
+- update parameters of system
+- describe system for training encoder-decoder neural network using labeled training data
+- initialize system using first neural network
+- fine-tune system using labeled training data
+- describe transformer encoder
+- describe transformer decoder
+- describe output token layers
+- describe output token embedding component
+- describe system for training transducer neural network
+- describe audio encoding component
+- describe output token prediction component
+- describe joint network
+- describe output token layers component
+- describe method for training speech processing model
+- obtain first training corpus
+- compute feature vectors from training corpus
+- determine set of pseudo tokens
+- determine pseudo-token sequences for first training corpus
+- train first neural network using pseudo-token sequences
+- obtain second training corpus
+- train second neural network using first neural network and second training corpus
+- deploy second neural network to production system
+- describe method for determining set of pseudo tokens
+- obtain first training corpus
+- compute feature vectors from training corpus
+- cluster feature vectors
+- determine cluster-token sequences
+- perform token compression
+- determine pseudo-token sequences
+- describe computing device
+- describe feature vector computation component
+- describe clustering component
+- describe cluster tokenization component
+- describe token compression component
+- describe token replacement component
+- describe encoder component
+- describe decoder component
+- describe training component
+- describe unlabeled-training-data data store
+- describe labeled-training-data data store
+- describe processor
+- describe memory
+- describe network interfaces
+- describe input and output components
+- describe computing device components
+- describe non-transitory computer-readable media
+- describe storage medium
+- describe server
+- describe client
+- describe network infrastructure
+- describe cellular network
+- describe mobile devices
+- describe machine readable media
+- describe data transformation
+- describe physical and/or intangible items transformation
+- describe logical boundaries
+- describe software or hardware engineering practices
+- describe machines
+- describe flow charts and block diagrams
+- describe functional aspects
+- describe order of steps
+- describe hardware and/or software
+- describe computer executable code
+

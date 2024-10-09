@@ -1,0 +1,431 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to mmBCFA discovery
+
+## BACKGROUND OF THE INVENTION
+
+- introduce fatty acids
+- describe mmBCFA in bacteria
+- describe mmBCFA in eukaryotes
+- discuss mmBCFA functions
+- discuss mmBCFA biosynthesis
+- highlight knowledge gaps
+
+## SUMMARY OF THE INVENTION
+
+- introduce non-human animal model
+- describe protein modifications
+- introduce isolated cell model
+- describe cell modifications
+- introduce method to identify compounds
+- describe compound identification
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce method to identify compounds
+- describe compound detection
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce method to identify compounds
+- describe compound detection
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce method to identify compounds
+- describe compound detection
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce method to identify compounds
+- describe compound detection
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce method to identify compounds
+- describe compound detection
+- introduce method to regulate mmBCFA
+- describe compound detection
+- introduce formulation
+- describe formulation composition
+- introduce method to increase mmBCFA
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce mmBCFA in eukaryotes
+- describe biosynthesis of mmBCFA in C. elegans
+- show essentiality of mmBCFA for C. elegans growth and development
+- describe mmBCFA with different length carbon backbones
+- show correlation between mmBCFA supplement and rescue ability
+- describe ACS-1 requirement for embryogenesis
+- show genetic interaction between zen-4 and acs-1
+- describe effect of ACS-1 on eggshell and adult cuticle formation
+- show relationship between mmBCFA and DAF pathway
+- describe genetic interaction between acs-1 and DAF-2/DAF-16 pathway
+- show effect of mmBCFA deficiency on DAF-16 nuclear translocation
+- describe connection of mmBCFA to insulin-signaling pathway
+- show effect of mmBCFA deficiency on dauer formation
+- describe link between mmBCFA biosynthesis and protein uptake
+- show transcriptional suppression of elo-5 by TOR pathway
+- describe effect of exogenous mmBCFA on pnk-1 expression
+- show negative feedback control of pnk-1 by mmBCFA
+- describe role of mmBCFA in coordination of food signaling and energy expenditure
+- show elongation of C13ISO into C15ISO and C17ISO in mammalian cells
+- describe identification of key enzymes and regulatory proteins in mmBCFA biosynthesis
+- show potential feedback regulation of mmBCFA biosynthesis
+- describe involvement of SREBP and pantothenate kinase in mmBCFA biosynthesis
+- show elo-5 and elo-6 as targets of LPD-1
+- describe physiological roles of C13ISO, C15ISO, and C17ISO
+- show biological activity of mmBCFA methyl esters
+- describe use of mmBCFA methyl esters as food supplements
+- show better solubility and permeability of mmBCFA methyl esters
+- describe absorption of dietary mmBCFA by animal cells
+- show incorporation of mmBCFA into lipid fractions
+- describe lack of toxic effect of mmBCFA in eukaryotic organisms
+- show extraction of mmBCFA from bacterial species
+- describe use of mmBCFA-carrying bacteria as sources of mmBCFA
+- show use of fatty acid methyl esters in various applications
+- describe potential physiological value of mmBCFA methyl esters
+- show anteISO branched-chain FA physiological potency
+- describe model system for identifying regulators of mmBCFA
+- show modification of mmBCFA biosynthetic pathway components
+- describe evaluation of effects of modification on mmBCFA biosynthesis
+- show use of organisms with intact mmBCFA biosynthesis capacity
+- describe evaluation of effects of putative regulators on mmBCFA biosynthesis
+- show use of functional and non-functional mmBCFA systems
+- describe modification of organisms to produce mmBCFA
+- show use of bacterial cells and eukaryotic organisms
+- describe genetic modification of organisms
+- show deletion or inactivation of proteins involved in mmBCFA biosynthesis
+- describe use of RNA interference to modify mmBCFA biosynthesis
+- show feeding of RNAi to C. elegans to disrupt mmBCFA biosynthesis
+- describe use of invertebrate systems to elucidate biochemical pathways
+- show use of SREBP expression system to screen for regulators of mmBCFA biosynthesis
+- describe combination of mmBCFA-related genetic engineering and dietary supplements
+- introduce mmBCFA system
+- describe mmBCFA biosynthesis and metabolism
+- relate mmBCFA to growth, development, and reproduction
+- introduce methods to evaluate pharmaceutical and nutraceutical compounds
+- describe targets for pharmaceutical and nutraceutical compounds
+- introduce long chain fatty acid elongation enzymes ELO-5 and ELO-6
+- describe ELO-5 and ELO-6 biological activity
+- introduce mmBCFA-specific acetyl-CoA synthetase ACS-1
+- describe ACS-1 biological activity
+- introduce lipid depleted 1 LPD-1
+- describe LPD-1 biological activity
+- introduce nuclear hormone receptor 49 NHR-49
+- describe NHR-49 biological activity
+- introduce RuvB-like DNA binding protein
+- describe RuvB-like DNA binding protein biological activity
+- introduce pantothenate kinase PNK-1
+- describe PNK-1 biological activity
+- introduce branched-chain α-keto-acid dehydrogenase BCKAD
+- describe BCKAD biological activity
+- introduce oligopeptide transporter PEP-2
+- describe PEP-2 biological activity
+- introduce phosphoinositide-dependent protein kinase 1 PDK-1
+- describe PDK-1 biological activity
+- introduce DAF-2 insulin receptor
+- describe DAF-2 biological activity
+- introduce POD-1
+- describe POD-1 biological activity
+- introduce SOD-3
+- describe SOD-3 biological activity
+- introduce ZEN-4
+- describe ZEN-4 biological activity
+- relate targets to mmBCFA biosynthesis and function
+- describe structural homologues of targets
+- introduce methods for identifying therapeutic or nutraceutical compounds
+- describe identifying regulators of target genes
+- introduce WormBase database
+- describe information in WormBase database
+- introduce accession numbers
+- describe information in accession numbers
+- relate targets to other organisms
+- conclude mmBCFA biosynthesis and function
+- describe DAF-2 component
+- describe DAF-2 function
+- describe DAF-2 homologues
+- describe ZEN-4 component
+- describe ZEN-4 function
+- describe ZEN-4 homologues
+- describe POD-1 component
+- describe POD-1 function
+- describe POD-1 homologues
+- describe SOD-3 component
+- describe SOD-3 function
+- describe SOD-3 homologues
+- describe gene fragments
+- describe regulation of target genes
+- describe regulation of mmBCFA biosynthesis
+- describe evaluation of target genes
+- describe knock-out methods
+- describe nucleic acid-based experiments
+- describe identification of additional pathway members
+- describe scope of invention
+- describe methods for identifying regulatory compounds
+- describe screening and selecting compounds
+- describe regulation of target genes
+- describe evaluation of compounds
+- describe biological activity of proteins and lipids
+- describe biologically active fragments or homologues
+- introduce modified non-human organism
+- describe gene modification methods
+- list proteins involved in mmBCFA biosynthesis and function
+- define mimetic
+- describe methods for designing and selecting mimetics
+- introduce molecular diversity strategy
+- describe methods of directed design
+- describe methods of random design
+- describe grid-based approach
+- define test compound
+- describe method for identifying regulatory compounds
+- describe cell-based assay conditions
+- describe culturing conditions
+- define expression
+- describe methods for detecting expression
+- describe method for identifying additional genes associated with mmBCFA biosynthesis
+- describe method for regulating mmBCFA metabolism and homeostasis
+- describe method for regulating growth, development, and reproduction
+- describe method for regulating food sensing and insulin signaling
+- describe pharmaceutical, nutraceutical, and dietary compositions
+- describe pharmaceutically acceptable carriers
+- describe formulation methods
+- describe administration routes
+- describe food products for oral administration
+- describe method for achieving a desired physiological effect
+- describe patient populations
+- define therapeutic benefit
+- define protected from a disease
+- describe Maple Syrup Urine Disease (MSUD)
+- describe conventional treatment for MSUD
+- describe dietary supplementation with long chain mmBCFA for MSUD
+- describe dietary supplement composition
+- describe pharmaceutical composition
+- describe nutraceutical composition
+- describe additional components for compositions
+- define isolated protein
+- describe methods for producing isolated proteins
+- describe smaller peptides as regulatory peptides
+- describe synthetic production of peptides
+- describe method for identifying compounds that regulate mmBCFA biosynthesis
+- describe method for identifying compounds that regulate mmBCFA function
+- describe method for identifying compounds that regulate mmBCFA metabolism
+- describe method for identifying compounds that regulate mmBCFA homeostasis
+- describe method for identifying compounds that regulate growth, development, and reproduction
+- describe method for identifying compounds that regulate food sensing and insulin signaling
+- describe method for identifying compounds that regulate mmBCFA biosynthetic and metabolic pathway
+- describe method for identifying compounds that regulate physiological processes related to mmBCFA
+- describe method for identifying compounds that regulate mmBCFA and its derivatives
+- describe method for identifying compounds that regulate fatty acid composition
+- describe method for identifying compounds that regulate ratios and compositions of different fatty acids
+- describe gas chromatography analysis of FA composition
+- describe method for modifying total fatty acid profile
+- describe method for manipulating mmBCFA in an organism
+- describe method for regulating mmBCFA biosynthesis and function
+- describe method for regulating mmBCFA metabolism and homeostasis
+- define homologue
+- describe agonist
+- describe antagonist
+- define isolated nucleic acid molecule
+- describe production of isolated nucleic acid molecule
+- describe recombinant vector
+- describe expression vector
+- describe targeting vector
+- describe recombinant nucleic acid molecule
+- describe transfection
+- describe transformation
+- describe hybridization
+- describe stringent hybridization conditions
+- describe moderately stringent conditions
+- describe high stringency conditions
+- describe very high stringency conditions
+- calculate melting temperature
+- describe wash conditions
+- describe amino acid sequence with heterologous amino acids
+- describe nucleic acid sequence with heterologous nucleotides
+- define percent identity
+- describe BLAST 2.0 Basic BLAST homology search
+- describe BLAST 2 alignment
+- describe PSI-BLAST
+- describe BLAST 2 sequence alignment
+- describe parameters for blastn
+- describe parameters for blastp
+- introduce experimental results
+- describe first experiment
+- describe second experiment
+- describe third experiment
+- describe fourth experiment
+- describe fifth experiment
+- describe sixth experiment
+- describe seventh experiment
+- describe eighth experiment
+- describe ninth experiment
+- describe tenth experiment
+- describe eleventh experiment
+- describe twelfth experiment
+- describe thirteenth experiment
+- describe fourteenth experiment
+- describe fifteenth experiment
+- describe sixteenth experiment
+- describe seventeenth experiment
+- describe eighteenth experiment
+- describe nineteenth experiment
+- describe twentieth experiment
+- describe twenty-first experiment
+- describe twenty-second experiment
+- conclude experimental results
+
+### EXAMPLES
+
+- describe unexpected physiological functions
+- introduce RNA interference by feeding
+- describe RNAi feeding vectors
+- explain RNAi feeding strain preparation
+- describe synchronized worm plating
+- introduce gas chromatography analysis
+- describe fatty acid methyl esters and lipid extraction
+- explain GC analysis
+- describe staging worms for FA composition testing
+- introduce phenotype rescue using FA supplements
+- describe elo-5(RNAi) worm rescue
+- introduce designing of GFP reporter constructs
+- describe elo-5Prom::GFP construct
+- describe elo-6Prom::GFP construct
+- describe acs-1Prom::GFP construct
+- describe pnk-1Prom::GFP construct
+- introduce staining chemosensory ciliated neuron with DiI
+- describe correlation analysis
+- introduce visualization and scoring of GFP expression
+- describe microarray analysis
+- introduce array design
+- describe experimental design
+- introduce total RNA isolation
+- describe hybridization and data processing
+- introduce measurement data and specifications
+- describe statistical algorithms and data manipulation
+- introduce mmBCFA metabolism
+- functionally test candidates by RNAi and GC analysis
+- identify elo-1 and elo-2 genes affecting FA elongation
+- identify elo-5 and elo-6 genes affecting branched-chain FA
+- analyze elo-5 and elo-6 gene expression patterns
+- show elo-5 RNAi reduces C15ISO and C17ISO levels
+- show elo-6 RNAi reduces C17ISO level
+- identify BCKAD complex genes in C. elegans
+- show BCKAD complex genes affect mmBCFA biosynthesis
+- compare mmBCFA biosynthesis in bacteria, C. elegans, and humans
+- describe elo-5 RNAi phenotypes
+- show elo-5 RNAi causes growth and developmental defects
+- analyze elo-5 RNAi phenotypes in different larval stages
+- show elo-5 RNAi phenotypes are rescued by C17ISO supplements
+- show C17ISO is incorporated into lipids in rescued worms
+- analyze FA composition in worms grown on supplemented plates
+- show ELO-6 function remains intact in elo-5(RNAi) animals
+- analyze elo-5(gk208) deletion mutant phenotypes
+- show elo-5(gk208) mutant phenotypes are rescued by C17ISO supplements
+- analyze L1 arrest of elo-5(RNAi) animals
+- show L1 arrest is reversible by C17ISO supplements
+- analyze FA levels in staged worms
+- show C17ISO level increases during development
+- propose relationship between C17ISO levels and developmental stages
+- analyze correlation between C17ISO levels and other FA species
+- show correlation between C17ISO and linoleic acid levels
+- show correlation between C17ISO and vaccenic acid levels
+- discuss potential physiological significance of correlations
+- analyze FA composition in elo-5(RNAi) worms
+- calculate saturation index in elo-5(RNAi) worms
+- discuss potential common function of C17ISO and linoleic acid
+- analyze FA composition in elo-5(RNAi) worms fed with S. maltophilia
+- show mmBCFA become principal components in FA composition
+- discuss potential cross-regulation of mmBCFA and straight-chain FA
+- introduce worm SREBP homology
+- describe control of branched-chain FA production by SREBP
+- conclude significance of mmBCFA in C. elegans development
+- introduce FA biosynthesis in mammals
+- introduce SREBP-1c and its role in FA biosynthesis
+- introduce C. elegans homolog of SREBP-1c, LPD-1
+- describe LPD-1's role in FA biosynthesis
+- describe RNAi experiment to test LPD-1's role in mmBCFA biosynthesis
+- describe results of RNAi experiment
+- introduce LPD-2 and its role in FA biosynthesis
+- compare LPD-1 and LPD-2 functions
+- introduce elo-5 and elo-6 as likely targets of LPD-1
+- describe GFP reporter analysis to test elo-5 and elo-6 regulation
+- describe results of GFP reporter analysis
+- test if disruption of FAS contributes to mmBCFA deficiency
+- describe results of FAS RNAi experiment
+- conclude that LPD-1 regulates mmBCFA biosynthesis
+- introduce reciprocal correlation between LPD-1 expression and mmBCFA levels
+- describe microarray analysis to test LPD-1 regulation by mmBCFA
+- describe results of microarray analysis
+- test LPD-1 regulation by mmBCFA in amphid neurons
+- describe results of LPD-1 regulation in amphid neurons
+- introduce screening for additional genes involved in mmBCFA homeostasis
+- describe microarray analysis to identify candidate genes
+- describe selection criteria for candidate genes
+- introduce four candidate genes involved in mmBCFA homeostasis
+- describe RNAi analysis of candidate genes
+- describe results of RNAi analysis
+- analyze candidate genes for feedback regulation of mmBCFA biosynthesis
+- describe reporter strains to test acs-1 and pnk-1 regulation
+- describe results of reporter strain analysis
+- discuss potential link to DAF-2/insulin signaling
+- introduce C27H6.2 as a potential regulator of monounsaturated FA levels
+- describe potential adaptive effect of C27H6.2 down-regulation
+- conclude importance of mmBCFA for growth and development
+- discuss potential regulatory role of mmBCFA on growth and development
+- discuss potential mechanisms of mmBCFA action
+- introduce potential for further investigation of mmBCFA biosynthesis
+- introduce potential for further investigation of mmBCFA transport and signaling
+- introduce potential for further investigation of mmBCFA physiological functions
+
+### Example 2
+
+- describe role of acs-1 in embryogenesis
+- demonstrate suppression of acs-1 causes embryonic lethality
+- propose model of ZEN-4 binding to ACS-1 product
+
+### Example 3
+
+- describe role of acs-1 in protective layer formation
+- demonstrate suppression of acs-1 affects eggshell and cuticle formation
+- show acs-1(RNAi)+C13ISO embryos are osmotic sensitive
+- compare inner layer of eggshell in acs-1(RNAi)+C13ISO and pod-1 mutants
+
+### Example 4
+
+- describe role of mmBCFA and DAF pathway in food sensation and insulin signaling
+- demonstrate genetic interaction between acs-1 and daf-2
+- show deficiency of mmBCFA activates expression of pnk-1 and sod-3
+- demonstrate deficiency of mmBCFA stimulates nuclear translocation of DAF-16
+- show elo-5 is down-regulated in K01G5.1(RNAi)
+- describe L1 arrest caused by mmBCFA deficiency
+
+### Example 5
+
+- describe correlation between mmBCFA and growth
+- demonstrate C13ISO supplementation rescues elo-5(gk208) larval lethal phenotype
+- show non-linear correlation between C13ISO concentration and rescue ability
+- describe effects of high C13ISO concentrations on growth and maturation
+
+### Example 6
+
+- describe link between mmBCFA biosynthesis and protein uptake
+- demonstrate RNAi of pep-2 results in slow postembryonic development
+- show changes in FA composition of total lipids in pep-2(RNAi)
+- demonstrate decrease in mmBCFA levels in pep-2(RNAi)
+- analyze GFP expression of reporter constructs on pep-2(RNAi) background
+- propose transcriptional down-regulation of elo-5 in pep-2(RNAi)
+
+### Example 7
+
+- demonstrate elo-5 as a down-stream target of TOR
+- show effect of inhibiting ceTOR pathway on elo-5 expression
+
+### Example 8
+
+- describe effect of exogenous mmBCFA on pantothenate kinase gene expression
+- demonstrate down-regulation of pnk-1 by high levels of mmBCFA
+- propose link between CoA metabolism and mmBCFA
+
+### Example 9
+
+- demonstrate human cells can elongate exogenous short chain mmBCFA
+

@@ -1,0 +1,193 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- discuss limitations of ICT
+
+## SUMMARY OF THE INVENTION
+
+- motivate ICT outcome prediction
+- introduce scRNA-seq analysis
+- identify immune cell subpopulations
+- validate ImmuneCells.Sig
+- compare with prior ICT response signatures
+- describe ImmuneCells.Sig application
+- provide method for ICT responsiveness detection
+- provide method for treating cancer
+- describe gene chip composition
+- outline method for processing test samples
+- describe kit and system for ICT responsiveness detection
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce immune checkpoint therapies (ICT)
+- limitations of ICT
+- analyze scRNA-seq dataset of tumor-infiltrating immune cells
+- discover macrophages overexpressing TREM2
+- discover γδ T cells overrepresented in non-responding tumors
+- analyze B cell subset in non-responders
+- validate ImmuneCells.Sig in other scRNA-seq datasets
+- analyze multiple gene expression datasets
+- validate ImmuneCells.Sig as ICT outcome signature
+- compare ImmuneCells.Sig to previously reported ICT response signatures
+- define ImmuneCells.Sig as predicative of ICT outcomes
+- describe use of ImmuneCells.Sig in clinical decision making
+- define immune checkpoints
+- define immune checkpoint therapy (ICT)
+- list examples of ICT therapies
+- describe PD-1 inhibitors
+- describe PD-L1 inhibitors
+- define cancer
+- provide examples of cancers
+- define susceptibility and response to ICT
+- describe method of determining susceptibility and response to ICT
+- detect genes associated with ImmuneCells.Sig
+- treat subject with ICT if genes not detected
+- describe method of treating cancer with ICT
+- determine expression profile of genes associated with ImmuneCells.Sig
+- treat subject with ICT based on expression profile
+- describe gene chip with ImmuneCells.Sig
+- describe probes on gene chip
+- describe method of processing test sample to determine likelihood of response to ICT
+- receive information on expression levels of biomarkers
+- provide input to classifier to predict likelihood of response to ICT
+- receive output report from classifier
+- determine likelihood of response to ICT based on output report
+- administer ICT based on determination
+- define biomarker
+- describe classifier accuracy
+- describe sequencing of nucleic acids
+- describe RNA sequencing (RNA-seq) analysis
+- describe plurality of biomarkers
+- describe kit for detecting likelihood of response to ICT
+- describe system for processing test sample to determine likelihood of response to ICT
+- describe computer system for implementing methods of the disclosure
+- describe implementation of methods
+- describe storage of machine-executable code
+- describe execution of code by processor
+- describe storage of code on memory
+- describe retrieval of code from storage unit
+- describe execution of code on second computer system
+- describe aspects of systems and methods as products
+- describe machine-executable code and associated data
+- describe storage of code on electronic storage unit
+- describe communication of software through networks
+- describe loading of software from one computer to another
+- describe media bearing software elements
+- describe computer systems comprising executable code
+- describe algorithms and methods described herein
+- describe memory unit comprising at least one database
+- describe transmission of data over a network
+- describe reception and review of data by a receiver
+- describe computer-readable medium including a medium suitable for transmission
+- describe non-volatile storage media
+- describe volatile storage media
+- describe tangible transmission media
+- describe carrier-wave transmission media
+- describe common forms of computer-readable media
+- define treating or treatment
+- describe characteristics of treating
+- describe effective amount and therapeutically effective amount
+- define administering and administration
+- describe methods of administering
+- define nucleic acid and nucleic acid molecule
+- describe characteristics of nucleic acids
+- describe nucleic acid analogs
+- describe nucleic acid sequences
+- describe scope of the invention
+- describe transitional phrases and terms
+
+## EXAMPLES
+
+### Example 1: A Gene Expression Signature of TREM2hi Macrophages and γδ T Cells Predicts Immunotherapy Response
+
+- introduce immune checkpoint therapies
+- motivate biomarkers for ICT outcomes
+- describe scRNA-seq study of 48 tumor biopsies
+- analyze scRNA-seq datasets from multiple studies
+- identify immune cell subpopulations associated with ICT outcomes
+- validate ICT outcome signature using bulk RNA-seq datasets
+- summarize ICT outcome signature
+- describe association of immune cell populations with ICT outcome
+- perform fine clustering of single cells
+- classify cell clusters into immune cell populations
+- identify γδ T cells
+- test immune cell clusters for percentage differences
+- identify clusters with biologically significant differences
+- describe TREM2hi macrophages
+- analyze gene expression differences in macrophage clusters
+- identify Inflammatory Mφ and Immunoregulatory related Mφ
+- perform Reactome pathways analysis
+- identify enriched pathways in TREM2hi macrophages
+- validate TREM2hi macrophage signature
+- analyze gene expression datasets of melanoma patients
+- associate TREM2hi macrophages with ICT resistance
+- identify γδ T-cell subsets associated with ICT outcome
+- analyze gene expression differences in γδ T-cell clusters
+- identify Tgd_c21 cells
+- perform GSEA pathway analysis
+- associate Tgd_c21 cells with ICT resistance
+- identify B-cell subsets associated with ICT outcome
+- analyze gene expression differences in B-cell clusters
+- identify B_c22 cells
+- perform GSEA pathway analysis
+- associate B_c22 cells with ICT response
+- validate results in other scRNA-seq datasets
+- analyze scRNA-seq dataset of melanoma patients
+- identify similar macrophage and B-cell subpopulations
+- validate TREM2hi macrophage and B_c22 B-cell signatures
+- analyze scRNA-seq dataset of basal cell carcinoma patients
+- identify similar macrophage and B-cell subpopulations
+- validate TREM2hi macrophage and B_c22 B-cell signatures
+- develop ICT outcome signature
+- describe ImmuneCells.Sig
+- validate ImmuneCells.Sig using bulk gene expression datasets
+- test ImmuneCells.Sig in multiple independent datasets
+- summarize performance of ImmuneCells.Sig
+- introduce gene expression signature of TREM2hi macrophages and γδ T cells
+- validate predictive value of ImmuneCells.Sig
+- apply ImmuneCells.Sig to large dataset of melanoma patients
+- compare ImmuneCells.Sig with other ICT response signatures
+- discuss limitations of study
+- motivate single-cell RNA-seq study of tumor samples
+- analyze single-cell RNA-seq data
+- identify immune cell clusters associated with ICT response
+- characterize TREM2hi macrophages
+- discuss role of complement system in cancer progression
+- characterize γδ T cells
+- discuss dual effect of γδ T cells on cancer
+- analyze B-cell clusters
+- compare B-cell signature with published signature
+- develop scR.Immune signature
+- compare scR.Immune with ImmuneCells.Sig
+- discuss limitations of scR.Immune signature
+- introduce study design
+- describe single-cell RNA-sequencing data analysis
+- identify differentially expressed genes
+- display genes in heatmap
+- create fold change plots
+- process RNA-seq data
+- transform read counts data
+- develop ICT responsiveness signature
+- validate ICT response signature
+- compare ICT response signature with other signatures
+- perform pathway analyses
+- use IPA software
+- use GSVA software
+- use GSEA software
+- use fgsea package
+- perform Reactome pathways analyses
+- perform PANTHER overrepresentation test
+- evaluate performance of ImmuneCells.Sig
+- calculate AUC and estimates of sensitivity and specificity
+- perform statistical analysis
+- use Fisher's exact test
+- calculate binomial confidence intervals
+- perform statistical analysis with R software
+- discuss TREM2hi macrophages and ICT resistance
+- discuss γδ T cells and ICT resistance
+- discuss B cells and ICT resistance
+- discuss ICT outcome gene expression signature
+- discuss opportunities to improve cancer immunotherapy
+- conclude study
+

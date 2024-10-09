@@ -1,0 +1,728 @@
+# DESCRIPTION
+
+## STATEMENT AS TO FEDERALLY SPONSORED RESEARCH
+
+- disclose government sponsorship
+
+## BACKGROUND
+
+- introduce advanced manufacturing technologies
+- describe limitations of additive manufacturing
+
+## SUMMARY
+
+- introduce silica film formation method
+- describe CO2 laser sintering
+- specify scanning parameters
+- introduce Er-doped silica film
+- introduce ceramic component fabrication method
+- describe CO2 laser scanning
+- specify scanning speed and power
+- introduce multiple scanning paths
+- specify ceramic paste materials
+- introduce 3D printing of fused silica glass
+- describe CO2 laser melting
+- specify layer deposition and melting
+- introduce optical fiber sensor fabrication method
+- describe laser machining of microchannel
+- specify ceramic slurry filling and sintering
+- introduce fiber-optic sensor fabrication method
+- describe 3D printing of housing
+- specify paste extrusion and laser melting
+- introduce protonic ceramic energy device fabrication method
+- describe rapid laser reactive sintering
+
+## DETAILED DESCRIPTION
+
+- introduce integrated laser processing and additive manufacturing system
+- describe system components
+- specify ceramic, glass, and carbide material applications
+- introduce CO2 laser heating system
+- describe ps laser microfabrication system
+- specify free-forming extrusion system
+- introduce ultrasonic spray coating system
+- describe additive manufacturing capability
+- specify in-situ material processing
+- introduce CO2 laser processing parameters
+- specify Galvo scanner parameters
+- describe ps laser parameters
+- specify optimal printing parameters
+- introduce silicon carbide applications
+- describe protonic ceramic fuel cell applications
+- introduce glass object fabrication
+- specify optimal laser processing parameters for glass
+
+## EXAMPLES
+
+### Example 1—Integrated Multi-Laser 3D Manufacturing System
+
+- describe CO2 laser heating system
+- specify laser and translation stage components
+- detail laser beam focusing and scanning
+- describe picosecond laser microfabrication system
+- specify picosecond laser and objective lens components
+- detail laser beam focusing and monitoring
+- describe free-forming extrusion system
+- specify micro-extruder and 3D printing process
+- describe control center and hardware integration
+- detail toolpath generation and synchronization
+- describe system arrangement and components
+
+### Example 2—CO2 Laser Sintering of Sol-Gel Deposition
+
+- introduce sol-gel process
+- describe limitations of conventional sol-gel process
+- motivate laser processing of sol-gel films
+- describe advantages of laser sintering
+- introduce CO2 laser sintering of sol-gel derived silica films
+- describe experimental setup
+- detail sol-gel precursor preparation
+- describe dip-coating method
+- detail laser sintering process
+- describe laser power density calculation
+- detail sample preparation for characterization
+- describe characterization methods
+- define shrinkage calculation
+- define relative density calculation
+- define porosity calculation
+- introduce FEM model
+- describe thermal properties of fused silica substrate
+- describe laser beam simulation
+- detail scanning conditions
+- describe heat transfer equations
+- describe thermal radiation equation
+- describe thermal convection equation
+- show SEM images of silica thin films
+- describe microstructure evolution
+- show AFM results
+- describe shrinkage and porosity results
+- compare with furnace-treated film
+- describe repeatability of laser sintering process
+- show optical images of thick silica film
+- describe cracking control
+- show thickness reduction after laser sintering
+- introduce 1D heat conduction model
+- compare FEM model with analytical solution
+- show temperature profiles on silica substrate
+- describe temperature calculation at center position
+- describe temperature calculation on sides of sintered track
+- discuss thermal conductivity modification
+- show thickness profile across laser-sintered track
+- describe thermal conductivity effects
+- describe galvo scanner usage
+- show silica thin films with designed patterns
+- describe scanning speed and spacing effects
+- summarize advantages of laser sintering
+- conclude with flexibility of laser sintering technique
+
+### Example 3—CO2 Laser Melting of Ceramic Paste
+
+- introduce ceramic paste for additive manufacturing
+- describe printability of ceramic paste
+- explain importance of rheology control
+- discuss green body density improvement
+- motivate use of lasers in additive manufacturing
+- describe indirect SLS process
+- explain post-processing requirements
+- introduce direct laser melting approach
+- discuss challenges of direct laser melting
+- describe use of multi-component ceramics
+- explain role of liquid phase in densification
+- discuss preheating to avoid cracking
+- describe challenges of single-component ceramics
+- explain effect of ambient temperature on cracking
+- motivate study of laser operating parameters
+- introduce CO2 laser melting of alumina and fused silica
+- describe preparation of ceramic paste
+- explain composition of ceramic paste
+- describe deposition of ceramic paste
+- introduce study of flow behavior of melted alumina
+- describe SEM images of laser-processed alumina tracks
+- explain effect of scanning speed on melting pools
+- describe cross-section images of alumina tracks
+- explain permeation of melted alumina into porous compact
+- derive Lucas-Washburn equation
+- simplify equation for capillary pressure
+- explain flow behavior of melted alumina
+- describe optimization of line spacing for surface uniformity
+- show SEM images of laser-melted alumina layer
+- explain formation of micro-cracks
+- describe cross-section images of alumina layers
+- explain heterogeneous dense-porous dual-layered structure
+- describe periodic thickness variation
+- explain laser beam profile and its effect
+- introduce laser scanning strategy for fused silica paste
+- show images of fused silica layer melted by CO2 laser
+- describe surface and cross-section morphology
+- explain controllability of fused silica paste
+- compare thermal properties of fused silica and alumina
+- explain thermal shock resistance of fused silica
+- summarize results of direct laser melting of ceramic paste
+
+### Example 4—Thick Er-Doped Silica Films Sintered by CO2 Laser for Scintillation Applications
+
+- introduce Er-doped silica films
+- describe laser sintering process
+- discuss advantages of laser sintering
+- describe preparation of Er-doped silica sol
+- introduce poloxamer 407 for viscosity control
+- describe dip-coating method
+- characterize morphology of sintered films
+- measure thickness of sintered films
+- simulate thermal stress distribution
+- discuss cracking control mechanism
+- show photoluminescence spectra
+- show radioluminescence spectra
+- compare luminescence results
+- discuss significance of luminescence results
+- describe SEM micrographs
+- show AFM measurements
+- calculate shrinkage ratio
+- compare shrinkage ratio with furnace sintering
+- show optical microscopy images
+- discuss cracking prevention
+- develop FEM model
+- simulate stress distribution
+- discuss stress relaxation mechanism
+- determine spacing between cracks
+- discuss significance of FEM model
+- summarize results
+- discuss implications for scintillation applications
+- discuss advantages of laser sintering
+- discuss limitations of furnace sintering
+- discuss potential applications
+- conclude Er-doped silica films
+- summarize significance of results
+
+### Example 5—High-Resolution Laser 3D Printing of Transparent Fused Silica Glass
+
+- introduce fused silica glass
+- discuss challenges of manufacturing
+- introduce additive manufacturing
+- describe direct laser melting process
+- discuss advantages of direct laser melting
+- describe process flow for laser 3D printing
+- show curved thin wall structures
+- discuss control of layer thickness
+- discuss control of melting depth
+- show SEM images of laser-melted glass
+- discuss effect of laser output power
+- show transmission spectra of laser-melted glass
+- compare transmission spectra with commercial substrates
+- discuss significance of transmission results
+- conclude laser 3D printing of fused silica glass
+
+### Example 6—Laser-Assisted Embedding of all-Glass Optical Fiber Sensors into Bulk Ceramics for High Temperature Applications
+
+- introduce ceramic materials for high-temperature applications
+- motivate need for structural health monitoring
+- introduce all-glass optical fiber sensors for harsh environments
+- describe limitations of traditional sensor attachment methods
+- introduce additive manufacturing for sensor embedding
+- describe limitations of additive manufacturing for high-temperature ceramics
+- introduce laser processing for ceramic materials
+- describe ultrafast laser micromachining of ceramic materials
+- describe CO2 laser heating of ceramic materials
+- propose laser-assisted sensor embedding process
+- describe design of two-step microchannel for sensor embedment
+- describe picosecond laser machining of microchannel
+- describe Al2O3 slurry application and dispensing
+- describe CO2 laser sintering of Al2O3 slurry
+- describe in-situ monitoring of sensor spectrum during laser sintering
+- illustrate process flow with FIGS. 37A-37C
+- describe microchannel design and fabrication
+- describe Al2O3 slurry filling and CO2 laser sintering
+- describe sensor spectrum monitoring during laser sintering
+- describe heating of ceramic parts with embedded sensor
+- describe spectrum collection during heating and cooling process
+- describe effect of laser heating on sensor stabilization
+- describe design of two-step microchannel for precise control
+- describe CO2 laser sintering parameters optimization
+- describe sensor spectrum before and after laser sealing
+- describe SEM images of sensor-embedded substrate
+- describe effect of CO2 laser sealing on high-temperature stability
+- describe transmission spectrum of embedded optical fiber
+- describe high-temperature response of embedded sensor
+- describe spectral shift as a function of temperature change
+- describe deviation effect of residual stress on sensor response
+- describe dummy fiber co-embedding to eliminate deviation effect
+- describe temperature response of embedded sensor with dummy fiber
+- summarize laser-assisted sensor embedding process and results
+
+### Example 7—SiC Applications
+
+- introduce IASM platform for SiC-based composites
+- describe advantages of IASM over traditional manufacturing methods
+- illustrate IASM equipment developed by Clemson University
+- describe capabilities of IASM platform
+- motivate need for heterogeneous micro-domains in SiC-based composites
+- describe lattice-like microstructure for SiC-based composites
+- introduce BN as compliant interface material
+- describe properties of BN
+- introduce ZrB2 as additive for thermal conductivity adjustment
+- describe properties of ZrB2
+- motivate need for novel ceramic composites in energy systems
+- describe limitations of current SiCf/SiC CMCs manufacturing methods
+- introduce information-centered IASM as solution
+- describe overall goal of project
+- describe fabrication strategy
+- motivate need for high precision during fabrication
+- describe freeform extrusion process
+- introduce ZrB2 particles as additive
+- describe defects in freeform extrusion
+- describe solution to eliminate gaps between filaments
+- describe solution to prevent warping or sagging of filaments
+- describe PS laser micromachining process
+- motivate need for precise control of micro-domain size and geometry
+- describe balance between laser micromachining efficiency and quality
+- describe inkjet printing process for BN precursor deposition
+- motivate need for uniform coverage of BN precursor
+- describe effect of solvent evaporation on viscosity change of BN precursor ink
+- describe CO2 laser tracking for accelerated solvent evaporation
+- describe pyrolysis and consolidation process
+- motivate need for microstructure integrity during heat-treatment
+- describe potential defects during pyrolysis and consolidation
+- describe characterization of shrinking behavior of SiC and BN precursors
+- describe potential solution to prevent cracking and rupture of BN interface
+
+### Example 8—3D Printing of all-Glass Fiber-Optic Pressure Sensor for High-Temperature Applications
+
+- introduce fiber-optic pressure sensor
+- motivate high-temperature applications
+- summarize pressure monitoring importance
+- describe optical fiber sensors
+- explain Fabry-Perot interferometer (EFPI) principle
+- discuss limitations of assembly-based EFPI sensors
+- introduce 3D printing technology for sensor fabrication
+- describe 3D printed sensors
+- motivate all-glass EFPI pressure sensor
+- introduce extrusion-based 3D printing of ceramics and glass
+- describe CO2 laser direct melting fabrication process
+- illustrate sensor structure
+- explain fiber housing structure printing
+- describe cone shape and tube structure printing
+- explain diaphragm dimension tuning capability
+- describe gold coating for optical reflection enhancement
+- explain glass tube insertion and fixing
+- describe CO2 laser irradiation for tube and optical fiber fixing
+- illustrate extrusion trace and CO2 laser irradiation trace
+- explain laser irradiation process
+- show printed transparent fused silica fiber housing structure
+- describe gold sputter coating
+- explain fused silica tube insertion and gap filling
+- describe CO2 laser irradiation for tube and optical fiber fixing
+- show assembled all-glass pressure sensor
+- simulate deflection distribution using finite element method
+- analyze center deflection under pressure change
+- calculate simulated pressure sensitivity
+- describe pressure sensitivity equation
+- characterize pressure sensitivity of fabricated sensor
+- show spectra of sensor under external pressures
+- plot FFT of spectra
+- analyze cavity length change under pressure variation
+- study temperature dependence of sensor
+- summarize sensor performance and potential applications
+
+### Example 9—Laser-Assisted Embedding of all-Glass Optical Fiber Sensors into Bulk Ceramics for High-Temperature Applications
+
+- introduce laser-assisted sensor embedding process
+- motivate high-temperature applications
+- describe ceramic materials
+- explain importance of structural health monitoring
+- introduce all-glass optical fiber sensors
+- describe advantages of all-glass optical fiber sensors
+- explain limitations of surface-mounted method
+- introduce additive manufacturing (AM) methods
+- describe challenges of AM methods
+- introduce sapphire optical fiber
+- describe limitations of sapphire optical fiber
+- introduce laser processing technologies
+- describe ultrafast laser machining
+- describe CO2 laser heating
+- propose laser-assisted sensor embedding process
+- describe two-step microchannel design
+- describe IFPI sensor fabrication
+- illustrate process flow to embed IFPI sensor
+- describe microchannel fabrication
+- describe Al2O3 slurry application
+- describe CO2 laser sintering process
+- describe in-situ monitoring of sensor spectrum
+- illustrate microchannel design
+- describe CO2 laser sintering optimization
+- show spectra of embedded IFPI sensor
+- calculate Finesse factors
+- describe cavity length variation
+- show SEM images of sensor-embedded ceramic substrate
+- evaluate laser sealing quality
+- demonstrate effect of CO2 laser sealing
+- show transmission spectra of embedded optical fibers
+- explain microbending effect
+- describe high-temperature response of embedded IFPI sensor
+- plot spectral shift as a function of temperature
+- estimate sensor sensitivity
+- evaluate repeatability and stability
+- show spectra of embedded IFPI sensor at room temperature and 800° C.
+- introduce dummy fiber for thermal strain measurement
+- plot temperature response of optical fiber IFPI sensor
+- explain thermal shrinkage of ceramic substrate
+- describe spectral shift calculation
+- conclude laser-assisted sensor embedding process
+- introduce example 9
+- describe laser-assisted embedding process
+- explain thermal-optic coefficient calculation
+- discuss mechanical bonding improvement
+- show temperature response of dummy fiber co-embedded component
+- evaluate high-temperature long-term stability
+- summarize example 9 results
+- introduce example 10
+- describe rapid laser reactive sintering method
+- explain protonic ceramic fuel cells
+- discuss limitations of traditional sintering methods
+- introduce rapid laser reactive sintering advantages
+- describe fabrication of PCFC single cells
+- explain anode substrate preparation
+- describe electrolyte precursor thin film coating
+- detail RLRS deposition of dense electrolyte
+- explain cathode layer deposition
+- describe PCFC single cell fabrication process
+- discuss electrochemical and physical properties
+- explain anode pellet substrate preparation
+- describe green BCZYYb thin layer casting
+- detail RLRS experiment parameters
+- explain BCFZY0.1 cathode powder synthesis
+- describe cathode paste preparation
+- detail PCFC single cell assembly
+- explain I-V characteristic and electrochemical impedance spectra measurement
+- discuss XRD pattern of RLRS-derived BCZYYb+1 wt % NiO electrolyte
+- analyze XRD patterns of Ni(O)-BCZYYb anode substrates
+- discuss SEM micrograph of RLRS-derived BCZYYb+1 wt % NiO electrolyte
+- explain SEM micrograph of cross-section of RLRS-derived BCZYYb1 wt % NiO electrolyte
+- discuss SEM micrograph of cross-section of half cells
+- conclude example 10 results
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- describe single cell performance
+- analyze electrochemical impedance spectroscopy
+- discuss limitations of single cell performance
+- introduce rapid laser reactive sintering method
+- describe preparation of protonic ceramic electrolyte films
+- discuss advantages of RLRS method
+- introduce example 11
+- describe challenges of energy conversion and storage devices
+- introduce rapid laser reactive sintering method
+- describe conventional method for manufacturing protonic ceramics
+- discuss limitations of conventional method
+- introduce alternative ceramic sintering methods
+- discuss limitations of alternative methods
+- introduce solid-state reactive sintering method
+- discuss limitations of SSRS method
+- describe RLRS technique
+- discuss advantages of RLRS method
+- describe X-ray diffraction patterns of protonic ceramic component films
+- discuss crystal structures of protonic ceramic component films
+- describe SEM characterization of protonic ceramic component films
+- discuss microstructures of protonic ceramic component films
+- describe SEM characterization of porous protonic ceramic components
+- discuss microstructures of porous protonic ceramic components
+- describe proton conductivity of protonic ceramic electrolyte
+- discuss activation energy of protonic ceramic electrolyte
+- compare cost of RLRS and conventional furnace sintering method
+- discuss advantages of RLRS method
+- summarize fabrication of protonic ceramic energy devices
+- discuss XRD and SEM characterization results
+- discuss initial conductivity measurement results
+- discuss cost estimation results
+- discuss potential of RLRS method
+- conclude advantages of RLRS method
+- introduce example 9
+- describe protonic ceramic components
+- prepare green pastes
+- prepare green films
+- perform RLRS
+- characterize crystal structure
+- observe microstructures
+- analyze relative densities
+- summarize proton conductivities
+- introduce example 12
+- describe RLRS process
+- prepare La0.8Sr0.2CrO3-δ interconnects
+- describe importance of interconnect material
+- discuss limitations of LaCrO3
+- introduce RLRS technique
+- describe RLRS mechanism
+- investigate laser conditions
+- describe sample appearance
+- analyze XRD patterns
+- identify processing window
+- describe cracking issue
+- solve cracking issue
+- describe delamination issue
+- solve delamination issue
+- analyze surface morphology
+- describe micrograin-agglomerated structure
+- analyze relative density
+- describe location dependence
+- analyze relative density distribution
+- discuss phase conversion
+- discuss densification
+- discuss Cr sublimation
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- show SEM images and EDS mapping of Mg and Cr
+- discuss Cr loss and densification of La0.8Sr0.2CrO3-δ films
+- motivate low area-specific resistance (ASR) for La0.8Sr0.2CrO3-δ interconnect performance
+- show conductivities of RLRS-derived La0.8Sr0.2CrO3-δ films
+- discuss effect of laser power and scanning speed on conductivity
+- show relation between ASR and sample thickness
+- compare ASR of RLRS-derived La0.8Sr0.2CrO3-δ with furnace-sintered La0.8Sr
+- compare RLRS-derived La0.8Sr0.2CrO3-δ with state-of-the-art SOFC/EC electrodes and electrolyte
+- compare RLRS-derived La0.8Sr0.2CrO3-δ with furnace-sintered La0.8Sr0.2
+- discuss advantages of RLRS technique
+- describe laser sintering apparatus
+- show laser power as a function of laser-controlling power percentage
+- describe RLRS of La0.8Sr0.2CrO3-δ films on MgO substrate
+- describe preparation of MgO substrate
+- describe preparation of terpineol-based green La0.8Sr0.2CrO3-δ slurry
+- discuss limitations of using water-based slurry and La2(CO3)3
+- describe XRD analysis of phases
+- describe FE-SEM and EDS analysis of microstructure
+- describe XPS analysis of Mg content
+- describe four-probe DC resistivity measurement
+- introduce integrated additive manufacturing and laser processing for protonic ceramic energy devices (PCEDs)
+- discuss performance of PCEDs
+- discuss limitations of manufacturing PCEDs
+- motivate integrated manufacturing system for PCEDs
+- conclude integrated manufacturing system for PCEDs
+- motivate ceramic devices
+- limitations of conventional manufacturing methods
+- introduce advanced manufacturing techniques
+- describe multilayer design of PCED stacks
+- introduce I-AMLP method
+- describe I-AMLP system components
+- describe micro-extrusion-based 3D printing
+- describe rapid laser drying
+- describe rapid sintering
+- describe precise laser polishing and cutting
+- describe paste preparation process
+- describe 3D printing process
+- describe tool path adjustment
+- describe CO2 laser drying
+- describe CO2 laser sintering
+- describe laser scanning methods
+- describe Galvo scanner
+- describe ps-laser machining
+- describe laser machining process
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- describe cutting and polishing operations on green layers
+- specify laser operation parameters for cutting and polishing
+- explain L3DP method involving laser sintering
+- describe post-treatments for I-AMLP-derived green parts
+- detail prefiring and dip-coating process
+- describe co-firing process
+- explain conventional firing/sintering for single-component PC green parts
+- quantify paste viscosity using rotational viscometer
+- observe microstructure using scanning electron microscope
+- characterize crystal structure using XRD
+- measure porosities using Archimedes' method
+- explain importance of paste viscosity in micro-extrusion-based 3D printing
+- optimize paste viscosity by varying binder amount
+- investigate viscosity vs. shear rate for three pastes
+- show photos of green parts manufactured by 3D printing
+- analyze effects of low, medium, and high viscous pastes on 3D printing
+- describe microextrusion-based 3D printing without consolidation treatment
+- manufacture various green parts using 3D printing
+- show photos of manufactured green parts
+- discuss importance of paste viscosity in achieving desired shapes and bonding
+- introduce laser drying, cutting, and polishing in L3DP technique
+- analyze effects of low paste viscosity on printing thin-wall parts
+- show SEM images of cross-section of 3D printed green tube
+- characterize sintered tubes using SEM
+- discuss importance of crystal structure in materials fabricated through this system
+- show XRD measurements of BZY20 sample
+- introduce Ps-laser-assisted 3D machining and surface modification
+- describe advantages and parameters of Ps-laser system
+- introduce laser-assisted 3D printing
+- describe laser cutting process
+- show example of fabricated part
+- describe post-treatment process
+- show SEM images of fabricated part
+- describe coating and sintering process
+- show SEM images of sintered part
+- describe reduction treatment
+- show SEM images of reduced part
+- describe microchannel membrane reactors
+- show SEM images of microchannel membrane
+- describe L3DP method
+- describe materials used
+- describe effectiveness of laser processing
+- introduce protonic ceramic fuel cells
+- describe challenges of sintering
+- describe rapid laser reactive sintering
+- describe fabrication process of PCFC single cells
+- describe advantages of RLRS
+- describe fabrication process of PCEDs
+- describe challenges of PCED fabrication
+- describe application of RLRS in PCFC/PCEC fabrication
+- describe two paths of PCFC/PCEC fabrication
+- describe layer-by-layer fabrication of PCEDs
+- describe concept of Direct Digital Manufacturing
+- describe fabrication of PCFC single cells
+- describe primary process of RLRS electrolyte deposition
+- describe preparation of anode substrate
+- describe coating of electrolyte precursor thin film
+- describe deposition of dense electrolyte by RLRS
+- describe deposition of porous cathode layer
+- introduce RLRS experiment
+- set laser parameters
+- prepare cathode ink
+- prepare PCFC single cells
+- heat single cells
+- characterize crystal structure
+- observe microstructure
+- analyze XRD patterns
+- conclude crystal structure
+- show SEM micrographs
+- analyze SEM micrographs
+- conclude microstructure
+- discuss RLRS mechanism
+- discuss challenges of laser sintering
+- discuss advantages of RLRS
+- deposit electrolyte film
+- make single cells
+- measure I-V and I-P curves
+- analyze EIS spectra
+- discuss single-cell performance
+- discuss advantages of RLRS method
+- compare RLRS with SSRS
+- discuss potential of RLRS
+- discuss limitations of current study
+- discuss future work
+- introduce Example 15
+- discuss motivation for Example 15
+- propose new RLRS method
+- conclude Example 15
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- describe dog-bone shape anode layer
+- explain CO2 laser sintering process
+- discuss electrolyte slurry preparation
+- describe surface morphology of coatings
+- discuss binder selection for electrolyte spray coating
+- describe new recipe for electrolyte thin layer deposition
+- explain RLRS method for one-step co-sintering
+- describe half-cell fabrication process
+- discuss microstructure of one-step fabricated half-cells
+- compare cost of RLRS and conventional furnace sintering
+- discuss microstructure of furnace sintered half-cells
+- explain multi-time laser treatment on green half-cells
+- describe full cell construction with screen-printed cathode
+- discuss microstructure of full cell
+- describe electrochemical performance of full cell
+- discuss long-term stability test of full cell
+- introduce direct inkjet printing of mullite nano-ribbons
+- discuss challenges of fabricating bio-inspired ceramics
+- explain advantages of sol-gel precursor inks
+- describe mullite sol-gel ink preparation
+- discuss line stability during inkjet printing
+- explain effect of substrate temperature on line stability
+- discuss cracking behavior of printed lines during firing
+- describe addition of PVP as stress relaxer during firing
+- discuss critical thickness for cracking in printed lines
+- explain mullite sol-gel ink composition
+- describe sol-gel precursor preparation
+- discuss mullite yield in inks
+- describe PVP addition to sol-gel precursors
+- discuss inkjet printing of mullite nano-ribbons
+- explain post-heat treatment of printed lines
+- describe pure mullite phase formation
+- discuss printed line and dot retention during firing
+- explain crack-free mullite nano-ribbon fabrication
+- discuss potential of bio-inspired mullite ceramics
+- describe mechanical properties of mullite fibers
+- discuss line stability problem during inkjet printing
+- summarize mullite nano-ribbon fabrication process
+- introduce example 9
+- describe substrate preparation
+- describe piezoelectric drop-on-demand printhead
+- describe droplet generation and printing process
+- measure viscosities and surface tensions of inks
+- measure advanced and receding contact angles
+- describe firing process
+- characterize microstructure of printed lines
+- analyze XRD traces of mullite gel
+- introduce Ohnesorge number
+- evaluate printability of inks
+- show images of droplet printing
+- study effect of contact angle on line stability
+- describe microstructure of printed lines on as-received substrates
+- describe microstructure of printed lines on PVB-coated substrates
+- study effect of substrate temperature on printing stability
+- describe printed lines on as-received substrates at elevated temperature
+- describe printed lines on PVB-coated substrates at elevated temperature
+- show optical images of printed lines after firing
+- describe morphology of lines printed using 45PVP ink
+- analyze SEM micrograph of fired line
+- discuss droplet spreading and contact angle
+- discuss boundary conditions for line stability
+- discuss previous studies on line stability
+- analyze reasons for increased line stability at elevated temperature
+- measure surface tension at different temperatures
+- measure viscosity at different temperatures
+- discuss combined effect of drying and fast gelation on line stability
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- explain printing parameters and their correlation
+- describe effect of drop spacing on line stability
+- discuss role of solvent evaporation and polymer gelation
+- summarize processing window in FIG. 130
+- explain effect of printing frequency on line stability
+- describe critical thickness of sol-gel mullite coating
+- discuss effect of PVP concentration on critical thickness
+- explain cracking in large bulges
+- discuss maximum critical thickness with PVP
+- describe thickness of printed lines
+- explain coffee ring effect
+- summarize stable printed lines using sol-gel inks
+- introduce protonic ceramic materials
+- describe conventional method for manufacturing protonic ceramics
+- explain solid state reactive sintering technique
+- discuss challenges of integrating dense electrolyte with porous electrodes
+- introduce rapid laser reactive sintering technique
+- describe RLRS process for protonic ceramic electrolytes
+- explain advantages of RLRS over conventional sintering
+- discuss fabrication of half-cells and single cells
+- summarize RLRS method for nine protonic ceramics
+- discuss cost estimation of RLRS
+- describe state-of-the-art protonic ceramic components
+- explain preparation of green pastes
+- describe 3D printing and laser reactive sintering process
+- discuss laser operation parameters
+- explain challenges of rapid sintering of ceramics
+- describe successful fabrication of crack-free protonic ceramic parts
+- introduce laser-assisted embedding of all-glass optical fiber sensors
+- characterize crystal structure of protonic ceramic component films
+- describe XRD patterns of BCZYYb and BZY20 pellets
+- compare XRD patterns of RLRS and SSRS samples
+- discuss microstructure engineering for protonic ceramics
+- analyze relative densities of RLRS components
+- provide SEM characterization of BCZYYb+1 wt % NiO electrolyte
+- describe SEM characterization of BZY20+1 wt % NiO electrolyte
+- provide SEM characterization of LSC interconnect
+- describe SEM characterization of BCF composite films
+- provide SEM characterization of porous protonic ceramic components
+- describe effect of laser power on electrolyte densification
+- summarize grain size and distribution with laser power
+- describe proton conductivity measurement by EIS
+- provide EIS Nyquist plot for BCZYYb sample
+- discuss total conductivities under different atmospheres
+- calculate activation energies for total conductivities
+- describe proton conductivity of BCZYYb thin film
+- compare cost of RLRS and conventional furnace sintering method
+- summarize advantages of RLRS method
+- discuss potential applications of RLRS method
+- describe integration of RLRS with additive manufacturing
+- provide scope of the present invention
+- discuss modifications to the exemplary embodiments
+- describe equivalents of the claims
+- define the invention by the claims
+- provide equivalents of the claims
+- discuss scope of the invention
+- describe advantages of the RLRS method
+- conclude the invention
+

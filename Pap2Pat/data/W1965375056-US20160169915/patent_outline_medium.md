@@ -1,0 +1,173 @@
+# DESCRIPTION
+
+## CONTINUING APPLICATION DATA
+
+- claim benefit of prior applications
+
+## BACKGROUND
+
+- motivate ASD diagnosis
+
+## SUMMARY OF THE INVENTION
+
+- introduce method for identifying metabolomic signature for autism
+- assay biosamples from autistic and non-autistic subjects by GCMS
+- identify differentially produced small molecule metabolites by GCMS
+- assay biosamples by untargeted LC/HRMS methodologies
+- identify differentially produced small molecule metabolites by LC/HRMS
+- combine identified metabolites to form training set
+- select subset of metabolites with statistically significant abundance difference
+- describe variations of method using multiple methodologies
+- specify characteristics of small molecule metabolites and biosamples
+- provide examples of metabolomic signature for autism
+- define metabolomic signature for autism
+- list metabolites included in signature
+- describe methods for determining metabolomic signature
+- specify biosample sources
+- describe statistical analysis for assessing risk of autism
+- provide examples of metabolomic signatures for autism
+- describe methods for assessing risk of autism
+- specify metabolites indicative of high functioning autism (HFA) and/or low functioning autism (LFA)
+- describe methods for determining ratio of small molecule metabolites
+- describe combination assessment of relative abundance of small molecule metabolites
+- specify biosample types
+- describe methods for assessing risk of autism in subjects less than two years of age
+- describe methods for assessing risk of autism in phenotypic subpopulations
+- define terms used in the specification
+- describe use of "and/or" in the specification
+- describe use of "preferred" and "preferably" in the specification
+- describe use of "comprises" and variations in the specification
+- describe use of "a", "an", "the", and "at least one" in the specification
+- describe recitation of numerical ranges by endpoints
+- describe order of discrete steps in methods
+- describe use of examples in the specification
+- provide summary of the present invention
+- provide guidance on interpreting the specification
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- introduce metabolomics-based approach for identifying metabolic biomarkers of autism spectrum disorder (ASD)
+- describe multiple high resolution mass spectrometry-based techniques for analyzing samples
+- explain use of gas chromatography-mass spectrometry (GC-MS) and liquid chromatography-high resolution mass spectrometry (LC-HR
+- describe tandem mass spectrometry (MS-MS) methods for structural confirmation of metabolites
+- outline data analysis using univariate, multivariate, and machine learning methods
+- define training set and test set in context of statistical models
+- explain quantification of data for one or more metabolites
+- describe comparison of quantifying data to reference samples
+- define metabolite, cellular metabolite, feature, biomarker, and metabolic signature
+- outline methods for identifying metabolites in biofluids of individuals with autism
+- describe blood test for diagnosis of ASD
+- explain identification of metabolic biomarkers by unique molecular mass and consistency
+- outline steps for identifying metabolomic signature characteristic for autism
+- describe assaying biosamples by multiple methodologies
+- explain combining and selecting small molecule metabolites to form a training set
+- summarize method for identifying metabolomic signature for autism in a human
+- describe metabolomic signature for autism
+- identify training set of small molecule metabolites
+- select subset of metabolites with statistically significant abundance difference
+- describe alternative spectrometry methods for metabolite detection
+- describe methods for identifying metabolomic signature
+- provide examples of metabolic signatures of autism
+- describe ranges of metabolites in metabolic signatures
+- provide examples of metabolites in Table 5
+- provide examples of metabolites in Table 9
+- provide examples of metabolites in FIG. 13
+- describe quantification methods for metabolites
+- describe GCMS quantification method
+- describe C8pos, C8neg, HILICpos, and HILICneg quantification methods
+- reference quantification methodologies in tables
+- confirm chemical identity
+- demonstrate metabolic signature
+- quantify abundance ratio
+- relate abundance ratio to autism
+- describe physical separation methods
+- describe non-physical separation methods
+- assay biosample for metabolites
+- quantify metabolites
+- relate metabolite abundance to autism
+- specify number of metabolites
+- specify range of metabolites
+- describe method of assessing autism risk
+- quantify metabolites in Table 6
+- relate metabolite abundance to autism risk
+- specify number of metabolites in Table 5
+- quantify metabolites in Table 5
+- relate metabolite abundance to autism risk
+- specify number of metabolites in Table 9
+- define autism diagnosis method
+- describe biosample sources
+- detail biosample processing
+- outline metabolite extraction procedures
+- introduce statistical analysis methods
+- explain sensitivity and specificity measures
+- discuss accuracy and precision
+- define predictability
+- claim autism diagnosis method with varying accuracy
+- claim autism diagnosis method with varying sensitivity
+- claim autism diagnosis method with varying specificity
+- describe average abundance ratio determination
+- detail fold change ratio calculation
+- introduce ratio of signature metabolites
+- discuss additional markers of autism
+- outline kit for identifying metabolites associated with ASD
+- describe kit components
+- detail instructions for kit use
+- provide example of kit application
+- discuss therapeutic intervention
+- conclude with invention illustration
+
+### EXAMPLES
+
+- motivate ASD diagnosis
+- introduce ASD complexity
+- describe ASD genetic studies
+- discuss ASD metabolomic studies
+- introduce HRMS advantages
+- describe orthogonal chromatographic approach
+- outline study objectives
+- describe subject recruitment
+- outline subject inclusion criteria
+- describe sample collection and storage
+- outline sample preparation for LC-MS
+- describe LC-HRMS methods
+- describe GC-MS methods
+- outline metabolite identification
+- describe metabolite structure confirmation
+- introduce metabolite analysis
+- describe LC-HRMS-MS methods
+- outline data analysis workflow
+- preprocess LC-HRMS data
+- filter features by abundance and noise
+- normalize feature abundance values
+- split data into training and validation sets
+- perform univariate filtering of mass features
+- develop classification models using PLS-DA and SVM
+- evaluate model performance using ROC analysis
+- identify minimum feature set for classification
+- annotate features with putative chemical structures
+- present results of metabolite analysis
+- validate model performance using independent test set
+- present examples of metabolomic approach to identify biomarkers for autism spectrum disorder (ASD)
+- discuss untargeted metabolomic approach to identify potential ASD biomarkers
+- describe cross-validation training sets
+- discuss identification of metabolites associated with ASD
+- motivate mitochondrial dysfunction in ASD
+- discuss potential relationship between gut microbiome and ASD
+- identify previously unidentified metabolic alterations in ASD
+- discuss conclusions of metabolomic approach
+- introduce additional confirmed metabolites
+- describe sample preparation and mass spectrometry
+- discuss comparison of metabolic features between ASD and non-ASD individuals
+- introduce metabolic signatures for high functioning autism and low functioning autism
+- describe model accuracy, sensitivity, and specificity
+- discuss overlap of biometabolic signatures between HFA and LFA populations
+- present putative identifications of metabolic features
+- discuss abundance of biometabolic features in autistic and typical subjects
+- introduce additional cohorts for metabolomic analysis
+- describe non-targeted metabolomic analysis approach
+- discuss mapping of metabolites to metabolic pathways
+- motivate development of clinical diagnostic kit
+- discuss incorporation of patents, patent applications, and publications by reference
+- provide disclaimer for inconsistencies in disclosure
+- provide general disclaimer for the invention
+

@@ -1,0 +1,313 @@
+{
+    "id": "US20190203303",
+    "authors": [
+        "Sameer Chopra",
+        "Jie Liu",
+        "Inderbir Singh Gill",
+        "Kimberly Siegmund"
+    ],
+    "title": "CLASSIFICATION OF SUBTYPES OF KIDNEY TUMORS USING DNA METHYLATION",
+    "date": "2017-06-28 00:00:00",
+    "abstract": "A method of classifying kidney tumors is provided. The method includes obtaining a sample from a subject, isolating DNA from the sample, determining the methylation status of the DNA, and comparing the methylation status of the DNA to one or more GO methylated biomarkers selected from the following: cg04877910, cg09667289, cg05274650, cg1 1473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg1 1201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg1 1264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg1 1808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682. The comparison indicates whether the sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to methods of screening and classifying kidney tumors."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define field of invention"
+                    ],
+                    "num_characters": 84,
+                    "outline_medium": [
+                        "define field of invention"
+                    ],
+                    "outline_short": [
+                        "define field of invention"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "It is estimated that 62,700 new cases of renal cancer will be diagnosed in 2016 [1]. The incidence in the US has increased significantly over the past 10 years [2] due to increased use of abdominal imaging. However, although the incidence of renal cell carcinoma (RCC) is increasing, the mortality from this disease has not increased proportionately [1]. This is attributed both to the increased detection of localized small renal masses (SRMs), which are classified as tumors measuring <4 cm in diameter and account for 48-66% of new kidney cancers [3]. In addition, 30% of SRMs are benign [4] and many SRMs having a low malignant potential. This is concerning as it has led to over diagnosis and over treatment for indolent lesions [5]. Nearly 65% of all renal masses are diagnosed when they are localized, and it has been shown that the incidence of benign pathology is inversely related to tumor size (i.e., a decrease in renal mass size increases the frequency of benign pathology) [6]. Current imaging techniques alone are unable to definitively distinguish benign from malignant pathologies [7]. Despite this, the majority of SRMs are still being treated without a pretreatment diagnostic biopsy, causing significant unnecessary morbidity to patients. Thus, renal tumor biopsies have the potential to assist in both the histological assessment and management of patients [3].",
+                        "While radiologic imaging provides clues as to the pathology of the mass, incidental non-neoplastic findings such as trauma, infection, hemorrhage, infections, and cysts have radiographic features that occasionally are from those of the spectrum of renal carcinomas [7]. Furthermore, malignant and benign lesions appear to grow at similar rates, therefore this parameter cannot accurately identify malignant lesions requiring early intervention [8]. Currently, needle biopsies have been used along with radiologic assessment to evaluate SRMs, however, the applicability and the diagnostic and predictive accuracy of needle biopsy remain in question [9-11]. The accuracy of needle biopsy in distinguishing benign from malignant lesions ranges from 73-94%, but in SRMs, the needle biopsies have lower specificity, sensitivity, and a high rate of false negativity [11].",
+                        "It has been postulated that combining histological results with molecular markers can improve the sensitivity of needle biopsies. While mRNA and protein-based markers are promising, in the SRM clinical scenario, the small amount of tissue available from the needle biopsy, sample stability issues, and the associated costs for subsequent analysis present significant challenges that make these markers burdensome choices.",
+                        "DNA methylation alterations are among the first changes to occur in the process of tumorigenesis [12]. Because of this, it is likely that they will be present in the majority of tumors, as well as in less aggressive malignancies. Furthermore, they are easily detected in needle biopsy samples. DNA methylation is a stable modification from a stable DNA molecule, and therefore is less likely to be degraded in clinical samples. At the same time, PCR-based approaches allow for the analysis of DNA methylation using a very small sample with low costs. In fact, DNA methylation markers are currently being utilized to detect tumors in serum and urine sediments [13-16]. The fact that DNA methylation changes occur in RCC [17, 18] coupled with the ease of its detection, warrants further investigation to determine the applicability of utilizing DNA methylation markers to improve the accuracy of needle biopsies in SRMs in a clinical setting."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce renal cancer statistics",
+                        "discuss limitations of current imaging techniques",
+                        "motivate need for biopsy",
+                        "discuss challenges of needle biopsy",
+                        "introduce DNA methylation as potential solution",
+                        "discuss advantages of DNA methylation markers",
+                        "motivate investigation of DNA methylation markers"
+                    ],
+                    "num_characters": 3614,
+                    "outline_medium": [
+                        "motivate need for kidney tumor screening",
+                        "summarize limitations of current imaging techniques",
+                        "introduce DNA methylation as potential solution"
+                    ],
+                    "outline_short": [
+                        "discuss limitations of current methods"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "One aspect of the present invention is directed to a method of classifying kidney tumors. The method includes obtaining a sample from a subject, isolating DNA from the sample, determining the methylation status of the DNA and comparing the methylation status of the DNA to one or more methylated biomarkers selected from the following: cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682. The methylated biomarker includes a sequence region that extends up to 250 base pairs upstream and downstream from the methylated biomarker. The comparison indicates whether the sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign.",
+                        "Examples of methylation sensitive assays that can be used to determine the DNA methylation status include but are not limited to HM450, HM850, real-time methylation sensitive PCR (MSP), MethyLight and Pyrosequencing.",
+                        "In one embodiment, the sample is a biopsy sample including liquid biopsy (circulating tumor cells, CTC or circulating tumor DNA, ctDNA).",
+                        "In another embodiment, the biopsy is from a small renal mass (SRM).",
+                        "In another embodiment, two or more methylated biomarkers are selected.",
+                        "In another embodiment, the sample is selected from the following: blood, plasma and urine.",
+                        "In another embodiment, the sequence region extends up to 100 base pairs upstream and downstream from the methylated biomarker.",
+                        "In another embodiment, the sequence region extends 0 base pairs upstream and downstream from the methylated biomarker.",
+                        "In another embodiment, five or more methylated biomarkers are selected.",
+                        "In another embodiment, fifteen or more methylated probes are selected.",
+                        "Another aspect of the present invention is directed to a method of identifying subjects having renal cancer. The method includes obtaining a sample from a subject, isolating DNA from the sample, determining the methylation status of the DNA and comparing the methylation status of the DNA to one or more methylated biomarkers selected from the following: cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682. The comparison indicates whether the sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign. The methylated biomarker includes a sequence region that extends up to 250 base pairs upstream and downstream from the methylated biomarker. The comparison indicates whether the sample is normal or malignant.",
+                        "In one embodiment, the sample is a biopsy sample including liquid biopsy (CTC or ctDNA).",
+                        "In another embodiment, the biopsy is from a small renal mass (SRM).",
+                        "In another embodiment, two or more methylated biomarkers are selected.",
+                        "In another embodiment, the sample is selected from the following: blood, plasma and urine.",
+                        "In another embodiment, the sequence region extends up to 100 base pairs upstream and downstream from the methylated biomarker.",
+                        "In another embodiment, the sequence region extends 0 base pairs upstream and downstream from the methylated biomarker.",
+                        "In another embodiment, five or more methylated biomarkers are selected.",
+                        "Another aspect of the present invention is directed to a composition comprising one or more methylated biomarkers selected from the following: cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682.",
+                        "In one embodiment, the composition is used in an assay to determine whether a sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign.",
+                        "In another embodiment, the composition is used in an assay to determine whether a sample is normal or malignant.",
+                        "Other aspects and advantages of the invention will be apparent from the following description and the appended claims."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce method of classifying kidney tumors",
+                        "describe obtaining and isolating DNA sample",
+                        "determine methylation status of DNA",
+                        "compare methylation status to methylated biomarkers",
+                        "introduce methylated biomarkers",
+                        "describe methylation sensitive assays",
+                        "introduce embodiments of sample types",
+                        "introduce embodiments of methylated biomarkers",
+                        "introduce embodiments of sequence regions",
+                        "introduce method of identifying subjects with renal cancer",
+                        "introduce composition of methylated biomarkers"
+                    ],
+                    "num_characters": 5718,
+                    "outline_medium": [
+                        "introduce method of classifying kidney tumors",
+                        "describe DNA methylation analysis",
+                        "list methylated biomarkers",
+                        "outline embodiments of the method",
+                        "introduce composition of methylated biomarkers"
+                    ],
+                    "outline_short": [
+                        "describe method of classifying kidney tumors",
+                        "describe method of identifying subjects with renal cancer"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "A \u201cbiomarker\u201d as used herein refers to a molecular indicator that is associated with a particular pathological or physiological state. The \u201cbiomarker\u201d as used herein is a molecular indicator for cancer, more specifically an indicator for renal cancer.",
+                        "As used herein the term \u201ccancer\u201d refers to or describes the physiological condition in mammals that is typically characterized by abnormal and uncontrolled cell division or cell growth.",
+                        "As used herein, a \u201csubject\u201d is preferably a human, non-human primate, cow, horse, pig, sheep, goat, dog, cat, or rodent. In all embodiments, human subjects are preferred. The \u201csubject\u201d may be at risk of developing kidney cancer or renal cell carcinoma (RCC), may be suspected of having kidney cancer or RCC, or may kidney cancer or RCC. In addition, a \u201csubject\u201d may simply be a person who wants to be screened for kidney cancer or RCC.",
+                        "In this invention, available DNA methylation data from The Cancer Genome Atlas (TCGA) in subtypes of renal tumors is used and a classification model to predict subtypes of kidney tumor that include benign and malignant is built. Finally, we applied the classifier to predict both the malignancy and tissue subtype on 272 ex vivo biopsies from 100 RMs (73 renal masses were SRM). Overall, we demonstrate that cancer-specific DNA methylation data can be used as subtype-specific RCC biomarkers in needle biopsy specimens, which have potential utility in clinical decision-making, especially in SRMs. These markers could also be used in liquid biopsy of RCC.",
+                        "One or more embodiments of the invention may use a computer. For instance, any of the DNA methylation status determinations and comparisons may be implemented, stored or processed by a computer. Further, any determination, evaluation or conclusion may likewise be derived, analyzed or reported by a computer. The type computer is not particularly limited regardless of the platform being used. For example, a computer system generally includes one or more processor(s), associated memory (e.g., random access memory (RAM), cache memory, flash memory, etc.), a storage device (e.g., a hard disk, an optical drive such as a compact disk drive or digital video disk (DVD) drive, a flash memory stick, magneto optical discs, solid state drives, etc.), and numerous other elements and functionalities typical of today's computers or any future computer. Each processor may be a central processing unit and may or may not be a multi-core processor. The computer may also include input means, such as a keyboard, a mouse, a tablet, touch screen, a microphone, a digital camera, a microscope, etc. Further, the computer may include output means, such as a monitor (e.g., a liquid crystal display (LCD), a plasma display, or cathode ray tube (CRT) monitor). The computer system may be connected to a network (e.g., a local area network (LAN), a wide area network (WAN) such as the Internet, or any other type of network) via a network interface connection, wired or wireless. Those skilled in the art will appreciate that many different types of computer systems exist, and the aforementioned input and output means may take other forms including handheld devices such as tablets, smartphone, slates, pads, PDAs, and others. Generally speaking, the computer system includes at least the minimal processing, input, and/or output means necessary to practice embodiments of the invention.",
+                        "Further, those skilled in the art will appreciate that one or more elements of the aforementioned computer system may be located at a remote location and connected to the other elements over a network. Further, embodiments of the invention may be implemented on a distributed system having a plurality of nodes, where each portion of the invention may be located on a different node within the distributed system. In one embodiment of the invention, the node corresponds to a computer system. Alternatively, the node may correspond to a processor with associated physical memory. The node may alternatively correspond to a processor or micro-core of a processor with shared memory and/or resources. Further, computer readable program codes (e.g., software instructions) to perform embodiments of the invention may be stored on a computer readable medium. The computer readable medium may be a tangible computer readable medium, such as a compact disc (CD), a diskette, a tape, a flash memory device, random access memory (RAM), read only memory (ROM), or any other tangible medium.",
+                        "Thus, one embodiment of the present invention is directed to system comprising: a non-transitory computer readable medium comprising computer readable program code stored thereon for causing a processor to determine the methylation status of the DNA; and compare the",
+                        "methylation status to one or more methylated biomarkers selected from the following: cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682. In a preferred embodiment, a report is generated based on the comparison providing guidance as to whether the sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Development of a DNA Methylation Classifier to Subtype Kidney Tumors",
+                            "paragraphs": [
+                                "RCC and its subtypes (clear cell, papillary and chromophobe) account for about 90% of solid renal masses, with clear cell accounting for over 75%, while the remaining 10% are composed of other malignancies (sarcoma, lymphoma, carcinoid) and benign solid tumors (oncocytoma, angiomyolipoma) [19]. We built a classification model for kidney tumors using Illumina Infinium HumanMethylation450 (HM450) DNA methylation data from 697 tissues across six major subgroups: 283 clear cell, 81 papillary and 65 chromophobe RCC, 27 benign angiomylolipomas, 37 oncocytomas, and 204 normal kidney. DNA methylation data for the 429 malignant cancers and 204 adjacent normal kidney tissues were obtained from TCGA, and additional HM450 DNA methylation data were generated for 64 benign tumors from formalin-fixed paraffin embedded (FFPE) microdissected tumor samples collected at the University of Southern California. The average size of the benign tumors was 3.4 cm, with 72% qualifying as small renal mass (<4 cm).",
+                                "A multidimensional scaling plot of the 697 training samples shows clustering of normal kidney and well-defined tumor subtypes (FIG. 1). Angiomylolipomas (AML) form a distinct subgroup, oncocytomas and chromophobe RCCs cluster adjacent to one another, and clear cell and papillary RCCs cluster further away, indicative of unique DNA methylation profiles. For each subgroup, we selected the 100 CpG features with greatest separation of that subtype from all others, and combined all the lists. Interestingly, the six lists of features were unique and non-overlapping. FIG. 2 shows an ordered heatmap of the training samples for the 600 selected CpG features. Whereas the majority of loci predictive of normal kidney have intermediate DNA methylation levels, they were decreased in oncocytomas and chromophobe RCCs and increased in AML (benign) and clear cell and papillary RCCs. The majority of loci predictive for a single tumor subtype showed consistent increases or consistent decreases when compared to the other subtypes.",
+                                "The selected features for all subgroups were enriched with features outside UCSC CpG islands, shelfs and shores, with greater than 2-fold enrichment for chromophobe RCCs and benign oncocytomas (70% and 73% vs 32% reference) (FIG. 4). Enhancers were enriched 1.9-fold in AML and more than 2-fold in malignant tumors, normal kidney and oncocytomas. DNaseI hypersensitive sites showed the greatest variation in enrichment, with chromophobe RCC showing 4.5-fold depletion while AML, papillary RCC and normal kidney showed a 1.7-fold enrichment. This finding suggests that alterations of DNA methylation in the tumor subtypes mainly happened in enhancers but not promoter regions.",
+                                "Furthermore, we built a multi-group classifier to predict tissue subtype, using an L1-penalty to reduce the DNA methylation feature set. The six groups were modeled using six equations, with each equation estimating the probability a sample belonged to one of the six groups and the sum of six probabilities equaling one. The final models used a combination of 59 variables: 2 for angiomylolipomas, 9 for oncocytomas, 11 for normal kidney, 13 for clear cell carcinomas, 14 for papillary and 10 for chromophobe RCC, with each model only selecting features from the subgroup-specific list. The classifier had 99.3% sensitivity and 99.6% specificity for the training data, detecting malignancy in 426 out of 429 cancers. Tumor subtype was predicted correctly in 95% of the training samples (407/429 malignant and 61/64 benign) (FIG. 5, Table 3)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe RCC and its subtypes",
+                                "describe building a classification model using Illumina Infinium HumanMethylation450 (HM450) DNA methylation data",
+                                "describe multidimensional scaling plot of the 697 training samples",
+                                "describe selecting features for each subgroup",
+                                "describe building a multi-group classifier to predict tissue subtype",
+                                "describe evaluating the classifier on the training data",
+                                "describe results of the classifier"
+                            ],
+                            "num_characters": 3548,
+                            "outline_medium": [
+                                "describe RCC and its subtypes",
+                                "build classification model using DNA methylation data",
+                                "evaluate classifier performance on training data"
+                            ],
+                            "outline_short": [
+                                "build classification model using DNA methylation data from TCGA and USC"
+                            ]
+                        },
+                        {
+                            "title": "Using Ex Vivo SRM Needle Biopsies to Validate the Developed Classification Model",
+                            "paragraphs": [
+                                "We obtained 272 ex vivo needle biopsy samples from 100 renal masses after nephrectomy (partial or total) at USC. Based on pathology reports, there were 70 malignant RMs and 30 benign RMs; in addition, 73 RMs were SRM (less than 4 cm) (Table 1). In general, three core biopsies were obtained from each patient: one from adjacent-normal tissue and two from the intact specimen using an 18-gauge side-cutting needle loaded on an automated biopsy gun. However, these numbers varied based on the availability of specimens across the patient set. For some ex vivo specimens, we only obtained one tumor needle biopsy. FIG. 3 shows the prediction probabilities for the six phenotypes using HM450 DNA methylation data from these 272 ex vivo needle biopsies. The probabilities were plotted for the six groups, the color bar at the bottom indicating the corresponding diagnosis from the pathologist. The maximum probability for each sample represents the predicted phenotype. Malignancy status was correctly predicted in 93% of samples, (86% of papillary, 91% of clear cell, 100% of chromophobe, 98% of normal kidney, 100% of oncocytoma, 80% of AML, and 64% of other benign tumors) (Table 2). Subtype was correctly estimated in 85% of samples (range: 58%-100%).",
+                                "Classification error was evaluated as a function of the predicted probabilities. Entropy, the sum of p\u00d7log(p) for the six predictive probabilities p, captured classification uncertainty, with higher entropy for samples with more intermediate probability estimates and lower entropy for samples with greater discrimination in their probability estimates. Entropy varied by tumor subtype with benign AML and oncocytoma showing greater entropy compared to malignant tumors (FIG. 6). Not surprisingly, the entropy was also higher among samples predicted incorrectly than among those predicted correctly. Seventy-two percent of samples had a maximum probability above 0.70. Malignancy was correctly estimated in 98% and subtype in 96% of this high-confidence sample subset.",
+                                "Out of the 100 tumors studied, 70 had DNA methylation data from two needle biopsies. The prediction based on multiple needle biopsies assigned an individual tumor to be malignant if the needle biopsy results for either measurement was malignant. Each sample was assigned the subtype from the needle biopsy with the highest probability estimate. In general, the results were highly reproducible with 62 of 70 tumors (89%) predicting identical subtypes from both biopsies. However, seven of the 62 concordant pairs (11%) were incorrectly predicted as normal kidney, of which two were missed malignant tumors (2 clear cell RCC), 3 \u2018other\u2019 benign, and 2 oncocytomas. Three malignant tumors with discordant needle biopsy results were correctly predicted as malignant when using two needle biopsies (2 clear cell, 1 papillary RCC). Overall, the sensitivity estimates at the tumor level reflected similar estimates at the sample level (Table 2). Sixty-four out of 70 (91%) tumors were correctly classified as malignant and 25 of 30 (83%) were correctly classified as benign.",
+                                "Taken together, the high specificity and sensitivity to predict not only benign and malignant but also the more detailed subtypes holds great promise for our DNA methylation classification model to develop into a DNA methylation-based assay for needle biopsy samples and potential liquid biopsy samples.",
+                                "Treatment decision making for SRMs is an increasingly frequent and challenging clinical problem. The management of SRMs first requires accurate characterization, and then the options for treatment consist of active surveillance, surgical removal, or in situ ablation. This decision of the best treatment modality is based on clinical assessment of patient comorbidities and tumor characteristics. SRMs are represented by a heterogeneous group of benign and malignant histologic entities, with a range of biologic and clinical behaviors. However, the assessment of tumor malignancy generally relies on its size, shape, profile, as well as tissue enhancement on multiphasic computed tomography (CT) and magnetic resonance imaging (MRI). The use of renal tumor biopsies to obtain pathologic information to guide treatment decisions has been traditionally reserved for very selected cases of SRMs [20]. Before the advent of biologic-targeted therapies, there was also limited interest in the histologic characterization of advanced and metastatic renal tumors.",
+                                "Needle biopsies have demonstrated an ability to improve kidney tissue selection while maintaining a low complication rate. However, a key limitation of needle biopsy is its high rate of false negative results. Combining molecular markers with histological results is one potential way to increase sensitivity. Our hypothesis is that by incorporating a DNA methylation assay derived from needle biopsies, patients will be placed into more appropriate treatment protocols. This could potentially reduce invasive and morbid SRM treatments, especially in the elderly or in patients with benign diseases. In fact, the American Urological Association recommendations for the management of localized renal tumors states the study of molecular and genetic profiling on percutaneous renal tumor biopsies as a research priority (see e.g., https://www.auanet.org/education/guidelines/renal-mass.cfm).",
+                                "To identify candidate markers that are differentially methylated in RCC and build a classification model, we have taken advantage of the TCGA database [21-23], which contains Illumina Infinium HM450 DNA methylation data for 429 malignant RCCs and 204 normal-adjacent tissues. Although some of these tumors were too large to be classified as SRM (median clinical tumor size is 5.54 cm for clear cell renal carcinomas, 9.6 cm for chromophobe renal carcinoma, 5.35 cm for papillary renal carcinoma) [21-23], the large sample size allowed for the identification of predictive features and was instrumental in building a prediction model that we later validated using SRMs. However, size did not seem to be an issue since we successfully used this DNA methylation classification model to predict tumor types in ex vivo needle biopsies derived mainly from SRMs (73% of RMs). In addition, since non-malignant kidney tumors were not included in the TCGA, we included 64 non-malignant tumor samples from our laboratory to test whether there are specific patterns in the non-malignant tumors and their subtypes. These data strongly suggest that differential DNA methylation patterns exist not only between non-malignant and malignant tissues, but also among tumor subtypes. In particular, chromophobe RCC appears more similar to benign oncocytoma than the other malignant papillary and clear cell tumors, supporting our hypothesis that cancer-specific DNA methylation can be used as subtype-specific renal cancer biomarkers. In support of this, the six sets of probes used to predict each subtype are indeed non-overlapping, allowing for the identification of subtypes using DNA methylation data.",
+                                "Normal kidney tissues were predicted with high specificity using DNA methylation data. Interestingly, the two normal kidney samples that were incorrectly classified as clear cell carcinomas came from patients with clear cell tumors, suggesting that the biopsy might have contained tumor cells from the patient. We also found the reverse, in which clear cell tumors were incorrectly classified as normal. However, these classification probabilities were greater than 20% for being clear cell, suggesting that the biopsy may not have captured a sufficient number of malignant cells. This suggests that the classifier accurately reflects cell mixtures based on the probabilities it assigns to the individual subgroups.",
+                                "The highest error rates occurred for the benign tumor subtypes. The benign tumors most likely to be overcalled as malignant were those from subtypes that were too rare to be represented in our training dataset. The poor performance for AML and oncocytomas might be a result of the limited sample numbers (27 AML and 37 oncocytomas) for these subtypes and indicate a need to include more samples in future studies in order to establish a better separation pattern.",
+                                "In summary, these data demonstrate that differential DNA methylation patterns exist not only between benign and malignant tissues, but also between tumor subtypes. These results fully support our hypothesis that cancer-specific DNA methylation can be used as subtype-specific RCC biomarkers. This DNA methylation classification model could allow for improved clinical management of RCC patients, in which unnecessary surgical procedures would be minimized for patients with benign lesions, thereby reducing patient-associated morbidity/mortality. Moreover, malignant lesions and their subtypes can be identified earlier, thus decreasing unnecessary radiation exposure from serial imaging and increasing the chance of preserving renal function."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe obtaining ex vivo needle biopsy samples",
+                                "describe predicting probabilities for the six phenotypes",
+                                "describe evaluating classification error",
+                                "describe results of the classifier",
+                                "describe evaluating entropy",
+                                "describe results of entropy evaluation",
+                                "describe predicting malignancy and subtype",
+                                "describe results of prediction",
+                                "describe using multiple needle biopsies",
+                                "describe results of using multiple needle biopsies",
+                                "describe treatment decision making for SRMs",
+                                "describe limitations of needle biopsy",
+                                "describe combining molecular markers with histological results",
+                                "describe potential benefits of the invention",
+                                "describe American Urological Association recommendations",
+                                "describe using TCGA database",
+                                "describe results of the study"
+                            ],
+                            "num_characters": 8958,
+                            "outline_medium": [
+                                "obtain ex vivo needle biopsy samples",
+                                "describe prediction probabilities for six phenotypes",
+                                "evaluate classification performance on ex vivo samples",
+                                "analyze classification error as a function of predicted probabilities",
+                                "describe reproducibility of results using multiple needle biopsies",
+                                "discuss implications for treatment decision making",
+                                "highlight potential benefits of DNA methylation assay",
+                                "summarize results and future directions"
+                            ],
+                            "outline_short": [
+                                "obtain ex vivo needle biopsy samples from renal masses",
+                                "predict tissue subtype using HM450 DNA methylation data",
+                                "evaluate classification error rates",
+                                "validate classification model using multiple needle biopsies"
+                            ]
+                        },
+                        {
+                            "title": "Example 3\u2014Methods",
+                            "paragraphs": [
+                                "**Patient Material, Samples, and Marking**",
+                                "In a prospectively-collected institutional review board (IRB)-approved database, ex vivo samples were collected from resected kidney tissue retrieved immediately post-operative. For each surgical specimen, three doublet biopsies were taken: two doublets in the mass, and one doublet in normal kidney parenchyma adjacent to the mass. One sample from each doublet was used for H&E preparation, and the other sample was used for DNA methylation analysis. FFPE-microdissected samples of 64 benign tumors were collected from our institution's IRB-approved renal tissue database. A trained pathologist reviewed each prospective kidney case and the block that contained the most pure pathology was selected for microdissection.",
+                                "Training data include a total of 697 kidney samples consisting of 6 subtypes: 283 clear cell carcinomas, 81 papillary carcinomas, 65 chromophobe, 27 angiomylolipomas, 37 oncocytomas, and 204 normal kidney. HM450 profiles for the malignant cancers and normal kidney tissues were downloaded from the TCGA data portal (https://tcga-data.nci.nih.gov/tcga/), and supplemental HM450 DNA methylation profiles were generated for the FFPE-microdissected samples of 64 benign tumors collected at USC. A testing dataset comprised of 272 ex vivo needle biopsy samples collected from 100 patients after nephrectomy (partial or total) at USC. The 272 ex vivo samples included 98 clear cell, 14 papillary, 6 chromophobe, 101 normal kidney, 15 angiomylolipoma, 26 oncocytoma, 11 other benign. Seventy tumors had data from two needle biopsies.",
+                                "**DNA Methylation Profiling**",
+                                "Genomic DNA (200-500 ng) from each FFPE sample was treated with sodium bisulfite and recovered using the Zymo EZ DNA methylation kit (Zymo Research) according to the manufacturer's specifications and eluted in 10 \u03bcl volume. An aliquot (1 \u03bcl) was removed for MethyLight-based quality control testing of bisulfite conversion completeness and the amount of bisulfite converted DNA available for the Illumina Infinium HM450 DNA methylation assay [24]. All samples passed the QC tests and were then repaired using the Illumina Restoration solution as described by the manufacturer. Each sample was then processed using the Infinium DNA methylation assay data production pipeline [25]. All HM450 profiles were generated at the USC Molecular Genomics Core Facility. All profiles were processed from DAT files using the minfi and wateRmelon packages in Bioconductor. We corrected for background intensity, dye bias and typeI/typeII design bias using \u2018noob\u2019 followed by BMIQ. Beta values from features with low signal intensity were assigned as missing and samples with more than 5% features missing were excluded. One sample was excluded from the test set for this reason. We applied the feature filter from TCGA omitting features due to SNPs, repetitive regions, or targeting CpH sites, also filtering features mapping to X or Y chromosomes. Features containing missing values in either training or testing dataset are excluded, leaving a final data set of 351,124 features.",
+                                "**Pre-Selecting DNA Methylation Markers**",
+                                "We used the training data to select a priori a list of 100 features for each of the 6 renal tissue subtypes as a function of their differences in group means. Specifically, for each subtype, we ranked the features on the smallest difference in average Beta value between the given subtype and each remaining subtype. Then, the top 100 probes with the largest minimum absolute differences are selected. No feature was selected twice, resulting in a combined set of 600 features. These 600 features are displayed in a heatmap and used for training the classification model (FIG. 2).",
+                                "**MDS Plot and Heatmap**",
+                                "A multidimensional scaling (MDS) plot of the 500 features with greatest median absolute deviation was created using the limma package. The heatmap shows a supervised clustering of the samples in the training data set for the 600 differentially-methylated CpG features. The columns represent samples and the rows represent predictive features, each ordered by group as follows: ex vivo angiomyolipoma, ex vivo oncocytoma, TCGA normal kidney, TCGA clear cell, TCGA papillary, and TCGA chromophobe RCCs.",
+                                "**L1-Penalized Classification Model**",
+                                "To predict tissue subtype we fit the L1-penalized multinomial logistic regression model using the GLMnet package in the R programming language. We provided as input the 600 features on 697 training samples, and performed 10-fold cross-validation to select the penalty parameter and reduced feature set. We tested the model on 272 ex vivo needle biopsy samples collected from 100 tumors after nephrectomy (partial or total) at USC.",
+                                "The output of the GLMnet model is probabilities of belonging to each subgroup, as a function of the DNA methylation values of the selected features. For each sample, the probabilities for the six renal tissue subtypes sum to one and we assign each sample to the subgroup with the highest predicted probability. Classification error rates are evaluated using pathology as the gold standard. Error rates were assessed for two classifications: (1) discriminating malignant vs. non-malignant and (2) discriminating the six tissue subgroups. For the classification of malignant/non-malignant, clear cell, papillary, and chromophobic RCC are classified as malignant, and AML, oncocytoma and normal kidney as non-malignant.",
+                                "The Cancer Genome Atlas data (KIRC, KICH, KIRP) are publicly available from the TCGA data portal (https://tcga-data.nci.nih.gov/tcga/). Additional data supporting the foregoing findings are available in the Open Science Framework repository, DOI 10.17605/OSF.IO/Y8BH2|ARK c7605/osf.io/y8bh2 at https://osf.io/y8bh2/.",
+                                "Although the present invention has been described in terms of specific exemplary embodiments and examples, it will be appreciated that the embodiments disclosed herein are for illustrative purposes only and various modifications and alterations might be made by those skilled in the art without departing from the spirit and scope of the invention as set forth in the following claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe patient material, samples, and marking",
+                                "describe collecting ex vivo samples",
+                                "describe collecting FFPE-microdissected samples",
+                                "describe training data",
+                                "describe DNA methylation profiling",
+                                "describe processing HM450 profiles",
+                                "describe correcting for background intensity",
+                                "describe pre-selecting DNA methylation markers",
+                                "describe creating MDS plot and heatmap",
+                                "describe L1-penalized classification model",
+                                "describe testing the model",
+                                "describe evaluating classification error rates"
+                            ],
+                            "num_characters": 6139,
+                            "outline_medium": [
+                                "describe patient material and sample collection",
+                                "outline DNA methylation profiling using HM450",
+                                "pre-select DNA methylation markers",
+                                "create MDS plot and heatmap",
+                                "build L1-penalized classification model",
+                                "evaluate classification error rates"
+                            ],
+                            "outline_short": [
+                                "describe patient material, samples, and marking",
+                                "outline DNA methylation profiling process",
+                                "explain pre-selecting DNA methylation markers and classification model"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "define biomarker",
+                        "define cancer",
+                        "define subject",
+                        "describe use of DNA methylation data from The Cancer Genome Atlas (TCGA)",
+                        "describe building a classification model to predict subtypes of kidney tumor",
+                        "describe application of the classifier to predict malignancy and tissue subtype",
+                        "describe use of a computer to implement the invention",
+                        "describe system comprising a non-transitory computer readable medium",
+                        "describe generating a report based on the comparison",
+                        "describe preferred embodiment of the invention",
+                        "describe scope of the invention"
+                    ],
+                    "num_characters": 5797,
+                    "outline_medium": [
+                        "define biomarker and cancer",
+                        "describe subject and DNA methylation data",
+                        "outline computer system for DNA methylation analysis",
+                        "introduce classification model for kidney tumors",
+                        "describe report generation based on comparison"
+                    ],
+                    "outline_short": [
+                        "define biomarker and cancer",
+                        "describe computer system for DNA methylation status determination"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of classifying kidney tumors comprising:\nobtaining a sample from a subject;\nisolating DNA from the sample;\ndetermining the methylation status of the DNA; and comparing the methylation status of the DNA to one or more methylated biomarkers selected from the group consisting of cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682,\nwherein the methylated biomarker comprises a sequence region that extends up to 250 base pairs upstream and downstream from the methylated biomarker, and\nwherein the comparison indicates whether the sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign.",
+        "2. The method of claim 1, wherein the sample is a biopsy sample.",
+        "3. The method of claim 2, wherein the biopsy is from a small renal mass (SRM).",
+        "4. The method of claim 1, wherein two or more methylated biomarkers are selected.",
+        "5. The method of claim 1, wherein the sample is selected from the group consisting of blood, plasma and urine.",
+        "6. The method of claim 1, wherein the sequence region extends up to 100 base pairs upstream and downstream from the methylated biomarker.",
+        "7. The method of claim 1, wherein the sequence region extends 0 base pairs upstream and downstream from the methylated biomarker.",
+        "8. The method of claim 1, wherein five or more methylated biomarkers are selected.",
+        "9. The method of claim 1, wherein fifteen or more methylated biomarkers are selected.",
+        "10. A method of identifying subjects having renal cancer comprising:\nobtaining a sample from a subject;\nisolating DNA from the sample;\ndetermining the methylation status of the DNA; and comparing the methylation status of the DNA to one or more methylated biomarkers selected from the group consisting of cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682,\nwherein the methylated biomarker comprises a sequence region that extends up to 250 base pairs upstream and downstream from the methylated biomarker, and\nwherein the comparison indicates whether the sample is normal or malignant.",
+        "11. The method of claim 10, wherein the sample is a biopsy sample.",
+        "12. The method of claim 11, wherein the biopsy is from a small renal mass (SRM).",
+        "13. The method of claim 10, wherein two or more methylated biomarkers are selected.",
+        "14. The method of claim 10, wherein the sample is selected from the group consisting of blood, plasma and urine.",
+        "15. The method of claim 10, wherein the sequence region extends up to 100 base pairs upstream and downstream from the methylated biomarker.",
+        "16. The method of claim 10, wherein the sequence region extends 0 base pairs upstream and downstream from the methylated biomarker.",
+        "17. The method of claim 10, wherein five or more methylated biomarkers are selected.",
+        "18. The method of claim 10, wherein fifteen or more methylated biomarkers are selected.",
+        "19. A composition comprising one or more methylated biomarkers selected from the group consisting of cg04877910, cg09667289, cg05274650, cg11473616, cg16935734, cg27534624, cg21851713, cg15867829, cg15679829, cg08884979, cg09538401, cg26811868, cg05367028, cg19816080, cg20108357, cg25504868, cg11201447, cg19922137, cg14706317, cg15902830, cg10794973, cg10777887, cg03290131, cg07851269, cg11264947, cg00279406, cg23140965, cg03574652, cg03265671, cg24864241, cg01572891, cg00193963, cg14329285, cg17819990, cg17298239, cg23856138, cg21049501, cg11808936, cg25170591, cg17983632, cg08141142, cg19848599, cg25799109, cg07093324, cg16223546, cg07604732, cg12149606, cg08949329, cg27166177, cg26177041, cg09885851, cg22876153, cg21386992, cg02309772, cg02833180, cg20007890, cg04972244, cg02666955 and cg12102682.",
+        "20. The composition of claim 19, wherein the composition is used in an assay to determine whether a sample is clear cell malignant, papillary malignant, chromophobe malignant, angiomylolipomas (AML) benign, or oncocytoma benign.",
+        "21. The composition of claim 19, wherein the composition is used in an assay to determine whether a sample is normal or malignant."
+    ]
+}

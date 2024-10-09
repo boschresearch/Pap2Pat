@@ -1,0 +1,443 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce nitric oxide synthases (NOSs)
+- describe function of NO in mammalian systems
+- discuss isoforms of NOS
+- motivate selective inhibition of nNOS
+- limitations of existing nNOS inhibitors
+
+## SUMMARY
+
+- introduce disclosed compounds and compositions
+- describe method of using disclosed compounds
+- motivate selective inhibition of nNOS
+- describe advantages over prior art
+- define formula for disclosed compounds
+- describe potential applications of disclosed compounds
+
+## DETAILED DESCRIPTION
+
+- define terms
+- specify meaning of "a", "an", and "the"
+- define "about", "approximately", "substantially", and "significantly"
+- define "include" and "including"
+- define "comprise" and "comprising"
+- define "consist" and "consisting of"
+- define "consisting essentially of"
+- define "subject in need thereof"
+- introduce chemical entities
+- define "alkyl"
+- define "alkylene"
+- define "haloalkyl"
+- define "heteroalkyl"
+- define "alkenyl"
+- define "alkynyl"
+- define "cycloalkyl"
+- define "cycloalkylene"
+- define "partially unsaturated carbocyclyl"
+- define "aryl"
+- define "heterocyclyl" and "heterocyclic group"
+- define "heteraryl"
+- define subject
+- describe nitric oxide synthase activity
+- introduce effective amount
+- define modulate
+- describe method of inhibiting nitric oxide synthase
+- describe pharmaceutical composition
+- describe contacting nitric oxide synthase
+- describe inhibition of nitric oxide synthase
+- describe dosage amount
+- describe pharmaceutical formulation
+- describe medicament administration
+- introduce novel 7-phenyl-2-aminoquinolines
+- describe compounds and pharmaceutical compositions
+- describe method of treating disease or disorder
+- describe formula of compounds
+- describe X substituents
+- describe specific compounds
+- describe alkyl-amino substituted phenyl compounds
+- describe alkyl-amino substituted pyridyl compounds
+- describe isoindolinyl compounds
+- describe amino-substituted indanyl compounds
+- describe pharmaceutical compositions
+- describe method of treating disease or disorder
+- describe method of inhibiting nitric oxide synthase
+- describe method of inhibiting neuronal nitric oxide synthase
+
+### ILLUSTRATIVE EMBODIMENTS
+
+- define compound of formula
+- specify X in formula
+- specify substituents of X
+- define embodiment 2
+- specify X in embodiment 2
+- specify substituents of X in embodiment 2
+- define embodiment 3
+- specify Z in embodiment 3
+- define embodiment 4
+- specify R in embodiment 4
+- specify substituents of R
+- define embodiment 5
+- specify Z in embodiment 5
+- define embodiment 6
+- define embodiment 7
+- specify X in embodiment 7
+- specify substituents of X in embodiment 7
+- define embodiment 8
+- define embodiment 9
+- define embodiment 10
+- specify X in embodiment 10
+- define embodiment 11
+- define embodiment 12
+- specify X in embodiment 12
+- define embodiment 13
+- define embodiment 14
+- define pharmaceutical composition
+- define embodiment 15
+- specify disease or disorder
+- define embodiment 16
+- specify disease or disorder
+- define embodiment 17
+- define embodiment 18
+- define embodiment 19-23
+- synthesize derivatives 49
+- synthesize derivatives 10/11 and 12/13
+- perform Suzuki coupling
+- deprotect derivatives 58-66
+- synthesize derivative 14
+- synthesize derivative 15
+- synthesize derivative 16
+- synthesize derivatives 17 and 18
+- synthesize derivatives 19-24
+- prepare 4-ether halide derivatives 25-37
+- perform Suzuki coupling with 39
+- deprotect derivatives 117-135
+- determine inhibitory constants
+- perform crystallography
+- analyze initial inhibitory and structural data
+- discuss X-ray crystal structure of 5 bound to rnNOS, hnNOS, and heNOS
+- discuss binding of 5 in heNOS
+- optimize conformational positioning of the tail amine of 5
+- discuss X-ray crystal structures of 7 bound to rnNOS and hnNOS
+- compare SAR of phenylaminoquinoline and phenyl ether compounds
+- discuss distinct parts of the SAR
+- describe o-substituted isomers
+- compare potency of o-substituted isomers
+- describe m-substituted isomers
+- compare potency of m-substituted isomers
+- analyze kinetic data for 12
+- describe X-ray crystal structures of rnNOS-12 and hnNOS-12
+- analyze binding interactions of 12
+- contrast binding interactions of 12 with heNOS-12
+- propose homologated analogue 13
+- analyze nNOS inhibitory activity of 13
+- describe crystal structures of rnNOS-13 and hnNOS-13
+- analyze binding interactions of 13
+- discuss installation of nitrile at 5-position
+- analyze potency of 14
+- describe crystal structure of 12
+- propose pyridine 15
+- analyze potency of 15
+- describe constrained amine analogues 16-18
+- describe 4-alkoxy-3-aminomethyl analogues 19-29
+- analyze potency of 24
+- describe crystal structure of 24 bound to rnNOS
+- discuss further improvement for rnNOS inhibition
+- describe illustrative embodiments
+- introduce inhibitors 32 and 33
+- motivate pyridinylmethyl ether groups
+- discuss rnNOS potency of 32 and 33
+- analyze crystal structure of rnNOS-32
+- compare binding positions of 32 and 33
+- discuss differences in binding to rnNOS and hnNOS
+- explain decreased binding affinity of 32 to hnNOS
+- discuss selectivities of 32
+- compare 32 to previously reported aminoquinolines
+- discuss heNOS-32 crystal structure
+- explain good hn/heNOS selectivity of 32
+- introduce inhibitor 33
+- discuss hnNOS potency of 33
+- analyze X-ray structure of hnNOS-33
+- discuss binding to rnNOS and hnNOS
+- explain equal potency of 33 against rat and human enzymes
+- discuss heNOS-33 crystal structure
+- explain 3-fold improvement in binding affinity of 33
+- discuss human iNOS inhibition study
+- illustrate inhibitor selectivity
+- discuss limitations of static X-ray structures
+- introduce off-target profiling
+- describe radioligand displacement assay
+- classify off-target binding
+- discuss off-target profiles of aminoquinolines
+- introduce membrane permeability and microsome stability
+- describe PAMPA-BBB assay
+- discuss permeability results
+- introduce SwissADME predictive model
+- discuss microsome stability results
+- summarize conclusions
+- introduce novel 7-phenyl-2-aminoquinolines
+- discuss modifications to 12
+- discuss crystal structures
+- discuss mutagenesis studies
+- discuss selectivity of inhibitors
+- introduce experimental section
+- describe general procedures
+- describe Suzuki coupling
+- describe deprotection of aminoquinolines
+- describe preparation of quinoline precursors
+- describe assembly of final compounds
+- describe preparation of other precursors
+- describe General Procedure 1
+- describe General Procedure 2
+- describe purification of compounds
+- describe workup of compounds
+- describe characterization of compounds
+- describe HRMS data
+- describe NMR data
+- synthesize compound 8
+- characterize compound 8
+- synthesize compound 9
+- characterize compound 9
+- synthesize compound 10
+- characterize compound 10
+- synthesize compound 11
+- characterize compound 11
+- synthesize compound 12
+- characterize compound 12
+- synthesize compound 13
+- characterize compound 13
+- describe general procedure 1
+- describe general procedure 2
+- provide experimental conditions
+- report analytical data
+- describe compound 14
+- provide NMR and HRMS data for compound 14
+- describe compound 15
+- provide NMR and HRMS data for compound 15
+- describe compound 16
+- provide NMR and HRMS data for compound 16
+- describe compound 17
+- provide NMR and HRMS data for compound 17
+- describe compound 18
+- provide NMR and HRMS data for compound 18
+- describe compound 19
+- provide NMR and HRMS data for compound 19
+- detail general procedure 1
+- detail general procedure 2
+- describe purification by flash column chromatography
+- describe treatment with methanolic HCl
+- describe precipitation and drying of compounds
+- describe compound 20
+- describe compound 21
+- describe compound 22
+- describe compound 23
+- describe compound 24
+- describe compound 25
+- synthesize compound 20
+- synthesize compound 21
+- synthesize compound 22
+- synthesize compound 23
+- synthesize compound 24
+- synthesize compound 25
+- characterize compound 20
+- characterize compound 21
+- characterize compound 22
+- characterize compound 23
+- characterize compound 24 and 25
+- describe compound 26
+- describe compound 27
+- describe compound 28
+- describe compound 29
+- describe compound 30
+- describe compound 31
+- synthesize compound 26
+- synthesize compound 27
+- synthesize compound 28
+- synthesize compound 29
+- synthesize compound 30
+- synthesize compound 31
+- characterize compound 26
+- characterize compound 27
+- characterize compound 28
+- characterize compound 29
+- characterize compound 30
+- characterize compound 31
+- purify compound 26
+- purify compound 31
+- describe compound 32
+- describe synthesis of compound 32
+- describe characterization of compound 32
+- describe compound 33
+- describe synthesis of compound 33
+- describe characterization of compound 33
+- describe compound 34
+- describe synthesis of compound 34
+- describe characterization of compound 34
+- describe compound 35
+- describe synthesis of compound 35
+- describe characterization of compound 35
+- describe compound 36
+- describe synthesis of compound 36
+- describe characterization of compound 36
+- describe compound 37
+- describe synthesis of compound 37
+- describe characterization of compound 37
+- provide general procedure 1
+- provide general procedure 2
+- provide additional experimental details
+- synthesize compound 39
+- describe NMR spectra of compound 39
+- introduce NOS enzyme assays
+- describe hemoglobin capture assay
+- outline experimental conditions for NOS enzyme assays
+- calculate IC50 and Ki values
+- introduce PAMPA-BBB assay
+- describe experimental conditions for PAMPA-BBB assay
+- calculate effective permeability
+- define retention membrane factor
+- provide equations for Pe and R calculations
+- describe human liver microsome stability assay
+- calculate half-life and intrinsic clearance
+- prepare inhibitor complex crystals
+- grow crystals using sitting drop vapor diffusion method
+- soak crystals with inhibitor
+- collect X-ray diffraction data
+- process and refine X-ray diffraction data
+- detect inhibitor binding using difference Fourier maps
+- model and refine inhibitor structures
+- validate and deposit refined structures
+- list PDB ID codes
+- list references
+- cite neurodegenerative disorders research
+- cite neurodegenerative disorders research
+- cite neurodegenerative disorders research
+- cite nitric oxide synthase research
+- cite nitric oxide synthase research
+- cite neuronal nitric oxide synthase inhibitors
+- cite neuronal nitric oxide synthase inhibitors
+- cite neuronal nitric oxide synthase inhibitors
+- cite neuronal nitric oxide synthase inhibitors
+- cite tuberculosis research
+- cite mycobacterial dihydrofolate reductase inhibitors
+- cite neuronal nitric oxide synthase inhibitors
+- cite indazoles patent
+- cite asymmetric synthesis of amines
+- cite pyridinonyl pdk1 inhibitors patent
+- cite halogenalkyl-substituted amides patent
+- cite prior art
+- describe blood-brain barrier permeability assays
+- discuss applicability of artificial membrane permeability assay
+- introduce SwissADME tool
+- describe BOILED-Egg method
+- discuss improvement of cell permeability
+- describe development of silicon-containing building blocks
+- introduce tetrahydroquinoline derivatives
+- discuss degenerate molecular shuttles
+- describe sulfonamide derivatives
+- discuss endocyclic restriction test
+- introduce cyclopentane-1,3-dione isostere
+- describe meta-substituent effects
+- discuss aldosterone synthase inhibitors
+- introduce substituted benzene fungicides
+- describe cationic chalcone antibiotics
+- describe molecular docking protocol
+- discuss results of molecular docking
+- introduce constrained amine analogues
+- discuss potency of constrained amine analogues
+- compare potency of constrained analogues to parent molecules
+- describe small 4-alkyloxy-3-aminomethyl analogues
+- illustrate binding of 25 to rnNOS
+- describe binding of 25 to heNOS
+- illustrate binding of 26 to rnNOS
+- describe binding of 26 to heNOS
+- illustrate binding of 27 to rnNOS
+- describe binding of 27 to heNOS
+- illustrate binding of 28 to rnNOS
+- describe binding of 28 to heNOS
+- describe unusual binding behavior of 31
+- illustrate binding of 31 to heNOS
+- describe structural features of 36
+- illustrate binding of 36 to rnNOS
+- describe binding of 36 to hnNOS
+- describe structural features of 37
+- illustrate binding of 37 to rnNOS
+- describe binding of 37 to hnNOS
+- provide experimental section
+- synthesize tert-butyl (4-iodobenzyl)(methyl)carbamate
+- synthesize (S,S)—N—(−1-(4-bromophenyl)propan-2-yl)-2-methylpro
+- synthesize tert-butyl (S)-(1-(4-bromophenyl)propan-2-yl)carbamate
+- provide NMR data for tert-butyl (S)-(1-(4-bromophenyl)propan-2-yl)carbamate
+- conclude synthesis
+- synthesize tert-Butyl (3-bromo-5-cyanobenzyl)carbamate
+- synthesize tert-Butyl 4-bromoisoindoline-2-carboxylate
+- synthesize (±)—N-(5-Bromo-2,3-dihydro-H-inden-1-yl)-2-methylpropane
+- synthesize (±)-N-(6-Bromo-2,3-dihydro-H-inden-1-yl)-2-methylpropane
+- synthesize (±)-tert-Butyl (5-Bromo-2,3-dihydro-1H-inden-1-yl
+- synthesize (±)-tert-Butyl (6-bromo-2,3-dihydro-1H-inden-1-yl
+- synthesize 2-(Bromomethyl)-1-fluoro-4-iodobenzene
+- synthesize tert-Butyl (5-bromo-2-(trifluoromethyl)benzyl)carbamate
+- synthesize 3-Bromo-2-ethylbenzaldehyde and 5-Bromo-2-ethylbenzaldehyde
+- synthesize (5-Bromo-2-ethylphenyl)methanol
+- synthesize 4-Bromo-2-(chloromethyl)-1-ethylbenzene
+- describe NMR spectra of tert-Butyl (3-bromo-5-cyanobenzyl)carbamate
+- describe NMR spectra of tert-Butyl 4-bromoisoindoline-2-carboxylate
+- describe NMR spectra of (±)—N-(5-Bromo-2,3-dihydro-H-inden-1-yl)-2-m
+- describe NMR spectra of (±)-N-(6-Bromo-2,3-dihydro-H-inden-1-yl)-2-m
+- describe NMR spectra of (±)-tert-Butyl (5-Bromo-2,3-dihydro-1H-inden-
+- describe NMR spectra of (±)-tert-Butyl (6-bromo-2,3-dihydro-1H-inden-
+- describe NMR spectra of 2-(Bromomethyl)-1-fluoro-4-iodobenzene
+- describe NMR spectra of tert-Butyl (5-bromo-2-(trifluoromethyl)benzyl)
+- describe NMR spectra of 3-Bromo-2-ethylbenzaldehyde and 5-Bromo-2-ethyl
+- describe NMR spectra of (5-Bromo-2-ethylphenyl)methanol
+- describe NMR spectra of 4-Bromo-2-(chloromethyl)-1-ethylbenzene
+- report physical properties of tert-Butyl (3-bromo-5-cyanobenzyl)carbamate
+- report physical properties of tert-Butyl 4-bromoisoindoline-2-carboxylate
+- report physical properties of 4-Bromo-2-(chloromethyl)-1-ethylbenzene
+- describe compound synthesis
+- detail Delépine reaction
+- outline general procedure 1
+- apply general procedure 1 to compound 85
+- apply general procedure 1 to compound 86
+- apply general procedure 1 to compound 94
+- apply general procedure 1 to compound 97
+- apply general procedure 1 to compound 100
+- describe compound 103 synthesis
+- detail general procedure 2
+- apply general procedure 2 to compound 103
+- apply general procedure 2 to compound 103 with 1-iodopropane
+- apply general procedure 2 to compound 103 with 2-iodopropane
+- report NMR data for compound 95
+- report NMR data for compound 101
+- report NMR data for compound 103
+- synthesize compound 106
+- synthesize compound 107
+- synthesize compound 108
+- synthesize compound 109
+- synthesize compound 110
+- synthesize compound 111
+- characterize compound 106
+- characterize compound 107
+- characterize compound 108
+- characterize compound 110
+- characterize compound 111
+- illustrate embodiments
+- synthesize compound 112
+- synthesize compound 113
+- synthesize compound 114
+- synthesize compound 115
+- synthesize compound 116
+- reference molecular force field
+- reference generalized Born/volume integral implicit solvent model
+- reference amber force field
+- reference molecular operating environment
+- reference human constitutive nitric oxide synthases
+- reference optimization of blood-brain barrier permeability
+- reference hydrophilic human neuronal nitric oxide synthase inhibitors
+- reference automated design of ligands
+- reference ring opening of cyclic sulfamidates
+- reference process for preparation of pyrrolines
+- reference halogenalkyl-substituted amides
+- reference small organic molecule regulators
+

@@ -1,0 +1,307 @@
+{
+    "id": "US20220325362",
+    "authors": [
+        "Hong Li",
+        "Sagar Sridhara",
+        "Hemant N Goswami",
+        "Charlisa Whyms"
+    ],
+    "title": "VIRUS DETECTION VIA PROGRAMABLE TYPE III-A CRISPR-CAS SYSTEMS AND METHODS",
+    "date": "2022-03-31 00:00:00",
+    "abstract": "Methods and systems, which use a reconstituted Type III-A CRISPR-Cas system, MORIARTY (Multipronged, One-pot, RNA Induced, Augmentable, Rapid, Test sYstem) for the detection of disease are provided herein. The methods and systems may be performed either without amplification or coupled to RNA transcription as one-pot reactions. The systems and methods herein may be highly sensitive and may be used to detect viruses, including SARS-CoV-2.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Human infectious diseases constitute a broad class of diseases caused by microorganisms such as bacteria and viruses transmitted via food, air, body fluids and physical contact. These diseases can be highly contagious, and can broadly affect human health. Historically, several outbreaks namely Spanish flu and Swine flu caused by H1N1 influenza virus, Acquired Immunodeficiency Syndrome (AIDS) caused by Human Immunodeficiency virus (HIV), Zika disease caused by the Zika virus, Ebola Virus Disease (EVD) caused by the Ebola virus, Severe Acute Respiratory Syndrome (SARS) caused by SARS coronavirus (SARS-CoV) and Middle East Respiratory Syndrome (MERS) caused by MERS coronavirus (MERS-CoV) have wreaked havoc on the general population and had widespread economic implications in the world.",
+                        "The global outbreak of Coronavirus disease 2019 (COVID-19) caused by a novel coronavirus named severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the most recent public health emergency, transmitting from human to human at very high pace across countries. The infection can either be asymptomatic or associated with pathogenesis ranging from mild, heterogenous symptoms such as fever, headache, sore throat, nausea and shortness of breath to severe respiratory failure causing death. The emergence of genetic variants of COVID-19 across the world has, in some instances, further increased the risk of mortality. One of the challenges posed by this pandemic and previous infectious diseases has been the availability of rapid testing of the virus. Other factors ranging from ambiguity in diagnosis to financial limitations associated with kits available in the market adds to the plethora of challenges posed by infectious diseases.",
+                        "To effectively address the pandemic and other infectious diseases, nucleic acid detection systems should be simple, rapid, specific, sensitive, cost-effective, and/or high throughput, preferably instrument-free for resource-limited settings. In this regard, several point-of-care devices/technologies such as microfluidics-based platforms, surface-plasmon-resonance-based platforms, smartphone-based detection system and lensless digital holographic imaging based platforms have emerged. Some of the microfluidics-based platforms harness enzymatic functionality for detection purposes. Among these, lustered, egularly nterspaced, hort alindromic epeat (CRISPR) and CRISPR-Associated (Cas) proteins have been harnessed in nucleic acid detection owing to both their programmability and RNA-induced enzymatic activities. CRISPR-based technologies can take advantage of isothermal nucleic acid amplification methods such as reverse transcription loop-mediated isothermal amplification (RT-LAMP) and reverse transcription recombinase polymerase amplification (RT-RPA) without the need of thermocyclers, thereby offering convenient instrument-free solutions to testing. CRISPR-derived detection methods typically offer improved sensitivity comparable with that of PCR-based methods.",
+                        "Current CRISPR-Cas based diagnostic tools/technologies employ Class 2 CRISPR-Cas effector molecules, mainly Cas12 and Cas13, but also Cas14 that possess viral DNA or RNA stimulated collateral DNase or RNase activities (Wang, M., R. Zhang, and J. Li, CRISPR/cas systems redefine nucleic acid detection: Principles and methods. Biosens Bioelectron, 2020. 165: p. 112430). The Cas13-based methods such as pecific igh-sensitivity nzymatic eporter un-ing (SHERLOCK), SHERLOCK version 2 (SHERLOCKv2), Heating Unextracted Diagnostic Samples to Obliterate Nuclease (HUDSON) detect amplified viral RNA by monitoring cleaved RNA probe (Gootenberg, J. S., et al., Nucleic acid detection with CRISPR-Cas13a/C2c2. Science, 2017. 356(6336): p. 438-442). The Cas12-based methods such as DNA ndonuclease argeted RISPR rans eporter (DETECTR), one-ur ow-cost ultipurpose highly fficient ystem (HOLMES), HOLMES version 2 (HOLMESv2), ll-n-ne ual RISPR-Cas12a (AIOD-CRISPR) [37], s12a-inked eam nlocking eactio (CALIBURN) on the other hand, detect amplified viral DNA by monitoring cleaved DNA probe (Chen, J. S., et al., CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 2018. 360(6387): p. 436-439). However, these methods are limited.",
+                        "The Type III-A CRISPR-Cas system, or Csm, is a viral RNA or transcription activated ribonucleoprotein enzyme system that comprises four enzymatic activities: (1) specific cleavage of the viral transcript by the Csm3 subunit, (2) collateral DNase by the HD domain of the Csm1 subunit, (3) cyclic oligoadenylate (cOA) synthesis by the Csm1 GGDD motif (SEQ ID NO: 1), and (4) cOA-activated collateral RNase by the ancillary enzyme Csm6 (Jia, N., et al., Type III-A CRISPR-Cas Csm Complexes: Assembly, Periodic RNA Cleavage, DNase Activity Regulation, and Autoimmunity. Mol Cell, 2019. 73(2): p. 264-277 e5). Simultaneous detection of the collateral DNase and RNase activities can offer a unique opportunity for Type III-A CRISPR-Cas systems to be repurposed for multipronged virus detection. Furthermore, the inherent responses of Csm to either viral RNA or its transcription makes the Csm-based detection suitable for both RNA and DNA viruses. However, it can be more challenging to realize the multicomponent Type III-A systems as an off-the-shelf virus detection tool than their single-subunit counterparts. Thus, a Type III-A CRISPR-Cas has not previously been repurposed for disease detection likely owing, at least in part, to the complex enzyme reconstitution process and functionality. Accordingly, improved viral detection methods, including those utilizing a Type III-A CRISPR-Cas system are highly desirable."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce infectious diseases",
+                        "describe historical outbreaks",
+                        "discuss COVID-19 pandemic",
+                        "highlight challenges in testing",
+                        "introduce nucleic acid detection systems",
+                        "describe point-of-care devices",
+                        "discuss CRISPR-based technologies",
+                        "introduce CRISPR-Cas effector molecules",
+                        "describe Cas13-based methods",
+                        "describe Cas12-based methods",
+                        "highlight limitations of current methods"
+                    ],
+                    "num_characters": 5698,
+                    "outline_medium": [
+                        "introduce infectious diseases",
+                        "describe COVID-19 pandemic",
+                        "discuss challenges in virus detection",
+                        "introduce CRISPR-based detection methods",
+                        "describe limitations of current CRISPR-Cas based diagnostic tools"
+                    ],
+                    "outline_short": [
+                        "describe infectious diseases",
+                        "motivate CRISPR-based detection methods"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY",
+                    "paragraphs": [
+                        "Provided herein are virus detection methods, systems, and diagnostics, which, in some embodiments, are based on an in vivo-reconstituted Type III-A system, MORIARTY (ultipronged, ne-pot, NA nduced, ugmentable, apid, est sstem). MORIARTY can harness the viral RNA- or transcription-activated dual nucleic acid cleavage activities and, in some embodiments, can conveniently and advantageously detect viruses either without amplification or coupled to RNA transcription as one-pot reactions. Embodiments of the methods provided herein are highly sensitive.",
+                        "In embodiments, the methods of detection provided herein comprise providing a sample comprising a virus, wherein the virus comprises a cognate target RNA; contacting the sample with an effector complex and an ancillary protein, wherein the effector complex binds to the cognate target RNA, and the binding of the effector complex to the cognate target RNA produces at least one messenger comprising a cyclic oligoadenylate, wherein the at least one messenger activates nonspecific ssRNA cleavage activity in the ancillary protein to produce detectable DNase activity, detectable RNase activity, or a combination thereof; and analyzing the sample with one or more reporters to detect the detectable DNase activity, detectable RNase activity, or a combination thereof.",
+                        "In embodiments, systems for detecting a virus are provided herein comprising a L1Csm effector complex, a L1Csm6 protein, a first reporter comprising an RNA oligo flanked by a first fluorophore-quencher pair; and a second reporter comprising a DNA oligo flanked by a second fluorophore-quencher pair.",
+                        "Additional aspects will be set forth in part in the description which follows, and in part will be obvious from the description, or may be learned by practice of the aspects described herein. The advantages described herein may be realized and attained by means of the elements and combinations particularly pointed out in the appended claims. It is understood that both the foregoing general description and the following detailed description are exemplary and explanatory only and are not restrictive."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce MORIARTY system",
+                        "describe virus detection methods",
+                        "highlight advantages of MORIARTY",
+                        "summarize embodiments of methods"
+                    ],
+                    "num_characters": 2127,
+                    "outline_medium": [
+                        "introduce MORIARTY system",
+                        "describe virus detection methods"
+                    ],
+                    "outline_short": [
+                        "introduce MORIARTY system"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Provided herein are methods and systems, which may use an in vivo-reconstituted Type III-A system, MORIARTY (ultipronged, ne-pot, NA nduced, ugmentable, apid, est sstem) for the detection of viruses. MORIARTY can harness the viral RNA- or transcription-activated dual nucleic acid cleavage activities and can conveniently and advantageously detect viruses either without amplification or coupled to RNA transcription as one-pot reactions. In embodiments, the systems and methods herein, may be used to detect SARS-CoV-2. In embodiments, the systems and methods herein, may be used to detect viruses other than SARS-CoV-2, including but not limited to a coronavirus (e.g., SARS/MERS), influenza virus, HIV, Ebola virus, and/or Zika Virus.",
+                        "The systems and methods provided herein may be sensitive. In embodiments, the systems and methods herein have a low detection limit. For example, in embodiments the systems and methods herein provide sensitivity of less than 500 fM, such as less than 200 fM, less than 100 fM, less than 50 fM, less than 20 fM, less than 10 fM, less than 5 fM, less than 1 fM, or less than less than 0.5 fM. In embodiments, the systems and methods herein may reach 5 fM sensitivity in amplification-free and 60 copies/ml sensitivity via isothermal amplification within 30 minutes. The high sensitivity, ease in enzyme production, and/or flexible reaction conditions can make MORIARTY a highly effective and affordable detection method with broad applications.",
+                        "In some embodiments, the systems herein include a Type III-A CRISPR-Cas system for virus detection employing both amplification-free and RT-RPA based strategies. MORIARTY-based detection typically is a highly-sensitive system and can have advantages over those based on qPCR without the requirement for thermocyclers. Unique to MORIARTY is its multiprongeness, which can yield cumulative signals for detection under multiple buffer conditions. For example, in a Mn2+ and ATP-free buffer, the viral RNA stimulated DNase can be readily detectable while in a Mg2+ buffer with ATP, the viral RNA-stimulated and cOA6-mediated RNase activity typically dominates. In some embodiments, with an optimized solution containing Mn2+ and a low concentration of ATP, both DNase and RNase activities are simultaneously detectable in an additive manner. It is understood that other buffer conditions may be used.",
+                        "In some embodiments, the methods herein include amplification-free detection with MOARITY under the Mn2+/low ATP condition, which can directly detect in vitro transcribed SARS-CoV-2 S gene mRNA as low as 5 fM (\u02dc3000 copies/\u03bcL).",
+                        "The enzymatic property of Csm in its activation by RNA transcription permits, in some embodiments, the construction of a one-pot detection with DNA amplified from viral RNA. Embodiments of this convenient procedure reached high sensitivity with either model SARS-CoV-2 virus or human patient samples. In some embodiments, MORIARTY-based assay results show a consistent detection sensitivity to those by qPCR and seem to have a larger dynamic range than qPCR in detecting viral RNA. Noteworthy, the temperature range of 37\u00b0 C. to 42\u00b0 C. for all the steps in some embodiments of the T7-MORIARTY-based detection can eliminate the requirement of expensive equipment and makes it potentially compatible with the low-cost hand warmer-mediated heating solution as demonstrated previously.",
+                        "In embodiments, the methods of detection herein include a L1Csm effector complex. In embodiments, the ancillary protein comprises L1Csm6. In embodiments, the at least one messenger comprises cOA6. In embodiments, the one or more reporters comprise one or more fluorescence reporters. In embodiments, the one or more reporters comprise (i) an RNA oligo flanked by a first fluorophore-quencher pair, and (ii) a DNA oligo flanked by a second fluorophore-quencher pair. In embodiments, the first fluorophore-quencher pair and the second fluorophore-quencher pair are the same. In embodiments, the virus comprises a spike protein, and the spike protein comprises the cognate target RNA. In embodiments, the virus is SARS-CoV-2. In embodiments, the contacting of the sample with the effector complex occurs in a liquid. In embodiments, the liquid is a buffer.",
+                        "In embodiments, a concentration of the effector complex in the liquid is about 200 nM to about 300 nM, and the concentration of the ancillary protein is about 0.1 to about 3 nM. In embodiments, the methods of detection comprises detecting both the detectable DNase activity and the detectable RNase activity. In embodiments, the virus is not amplified. In embodiments, the methods herein further comprise amplifying the virus prior to the contacting step. In embodiments, the methods herein are performed in a single container.",
+                        "In embodiments, the systems provided herein comprise a buffer. In embodiments, the buffer comprises Mg2+, ATP, or a combination thereof. In embodiments, the systems comprise a T7 promoter sequence. In embodiments, the system further comprises a sample comprising a virus to be detected. In embodiments, the system can detect the virus at 5 fM or less.",
+                        "The systems and methods herein demonstrate that MORIARTY is a versatile virus detection method with high sensitivity. Given that the genomes of infectious pathogens are made up of either DNA or RNA, multipronged diagnostic tools such as MORIARTY can be employed towards the detection of multiple nucleic acid targets. With the availability of many known Type III-A CRISPR-Cas systems and their individual biochemical differences, MORIARTY offers a broad range of nucleic acid detections under a wide range of conditions."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EXAMPLES",
+                            "paragraphs": [
+                                "The present invention is further illustrated by the following examples, which are not to be construed in any way as imposing limitations upon the scope thereof. On the contrary, it is to be clearly understood that resort may be had to various other aspects, embodiments, modifications, and equivalents thereof which, after reading the description herein, may suggest themselves to one of ordinary skill in the art without departing from the spirit of the present invention or the scope of the appended claims. Thus, other aspects of this invention will be apparent to those skilled in the art from consideration of the specification and practice of the invention disclosed herein. The supplementary tables and figures are in attached Appendix A.",
+                                "**Example 1\u2014MORIARTY Simultaneously and Cumulatively Detects DNase and RNase Fluorescence**",
+                                "The L1Csm effector complex was produced using an all-in-one codon-optimized expression plasmid encoding all Csm subunits and modified crRNA locus (FIG. 1, FIGS. 2A-2F, and FIGS. 3A-3F). Specifically, in FIG. 1, expression-plasmids, purified Csm components, and schematic representation of the L1Csm/L1Csm6 CRISPR-Cas system. RNA induced cleavage by Csm3, DNase by Csm1, cOA6 synthesis by Csm1 and cOA6-stimulated RNase by Csm6 are indicated. CTR denotes cognate target RNA and NTR denotes not non-cognate target RNA. The DNA fluorescent probes (DNA-Alexa/DNA-FAM) used were substrates for L1Csm1-stimulated DNase activity. The RNA fluorescent probe (RNA-FAM) was a substrate for cOA6 stimulated L1Csm6-mediated RNase activity. The cleavage of DNA-Alexa was indicated by the rise in fluorescence intensity at 570/630 nm excitation/emission wavelength. The cleavage of DNA-FAM/RNA-FAM was indicated by the rise in fluorescence intensity at 480/530 nm excitation/emission wavelength.",
+                                "The purified L1Csm cleaved single stranded DNA (ssDNA) and polymerized Adenosine triphosphate (ATP) to generate cyclic oligoadenylates (cOA3, cOA4, and cOA6) upon binding to its cognate target RNA (CTR) but not noncognate target RNA (NTR) or self RNA. The generated cOA6 second messenger subsequently activates a nonspecific ssRNA cleavage activity in the ancillary protein L1Csm6, expressed and purified separately (FIG. 1). To harness the detectable viral RNA-stimulated DNase and RNase activities, two fluorescence reporters, an RNA oligo flanked by a fluorophore-quencher pair and a DNA oligo flanked by either the same or a different fluorophore-quencher pair were constructed (FIG. 1). The DNase and RNase activities were reconstituted by adding a model viral RNA to a reaction mixture containing L1Csm, L1Csm6, ATP, and the two fluorescence probes (FIGS. 2A-2F). FIGS. 2A-2F show one-pot reaction components for amplification detection. FIGS. 2B-2D show simultaneous rise in DNA-Alexa (shown as squares) and RNA-FAM (shown as circles) fluorescence under three different conditions tested: 10 mM MnCl2, 0 mM ATP (FIG. 2B), 10 mM MnCl2, 0.05 mM ATP (FIG. 2C) and 10 mM MgCl2, 0.5 mM ATP (FIG. 2D). FIGS. 2E-2F show the augmentability of MORIARTY by combined use of 1 or 0.5 \u03bcM DNA-FAM and 1 or 0.5 \u03bcM RNA-FAM as probes (shown as triangles) under two different conditions tested: 10 mM MnCl2, 0.05 mM ATP (FIG. 2E), 10 mM MgCl2, 0.5 mM ATP (FIG. 2F). The rise in fluorescence of 1 \u03bcM RNA-FAM alone are shown as circles while 1 \u03bcM DNA-FAM alone are shown as squares. The optimized condition is outlined.",
+                                "The dual functionality of L1Csm system was tracked simultaneously by using the DNA reporter flanked by Alexa594N fluorophore-quencher and the RNA reporter flanked by the Fluorescein (FAM) fluorophore-quencher with absorption/emission wavelength of 570/630 nm and 480/530 nm respectively (Table 1). Such a setup enabled detection of both activities of L1Csm1 in parallel via real-time intensity rises in two separate fluorescence channels. Consistently, mutation of the HD domain of L1Csm1 or the HEPN domain of L1Csm6 removed the Alexa595N or the FAM signal, respectively (FIG. 9A). Similarly, the absence of divalent ion Mg2+, thought to be essential to cOA production, abolished the FAM signal (FIGS. 2B-2F & FIG. 9B) while the absence of Mn2+, essential to the HD domain-mediated DNase activity, abolished the Alexa594N signal (FIGS. 2B-2F & FIG. 9B). As cOA production typically requires the presence of ATP, we found that the L1Csm6-mediated RNase activity has a strong preference for the ATP+Mg2+ combination while the L1Csm1-mediated DNase activity for Mn2+ alone. Nonetheless, strong fluorescence signals can be readily detected under either an Mn2+ or ATP+Mg2+ condition, making direct detection of viral RNA by MORIARTY possible in multiple buffer conditions.",
+                                "As shown in FIGS. 9A-9B, the effects of metal ions, ATP and L1Csm/Csm6 mutations on amplification-free MORIARTY RNase (circles) and DNase (squares) probe signal, respectively. 500 nM model RNA was used as the stimulator. The RNA-FAM (circles) and DNA-Alexa594N (squares) labeled oligos were used as the fluorescence probes. The condition identified for the amplification-free MORIARTY and a T7-MORIARTY-like assays are outlined by the dashed boxes. Each mutant was tested under the condition with metal ions required for the wild-type conditions. The RNA-induced RNase activity in L1Csm6-R355A/L1Csm-HD mutants and Mg2+ combination was believed to be that of the GGDD domain (SEQ ID NO: 1) of Csm1.",
+                                "The fluorescence signals from both RNase and DNase activities were combined with an intent to improve the overall sensitivity. To achieve this, a series of optimizations was performed to arrive at a set of Mn2+, Mg2+ and ATP combinations that gave rise to best combined FAM and Alexa594N signals (FIG. 9B). The Alexa594N fluorophore on the DNA reporter was subsequently replaced with the FAM fluorophore. It was hypothesized that a combination of DNA and RNA reporter signals could add-up under an appropriately optimized condition measured at 480/530 nm, contributing to an overall amplified fluorescence signal. Indeed, among the conditions tested, it was observed a cumulative effect of the two fluorophores in a low ATP+Mn2+ combined condition (FIGS. 2A-2F). Thus, MORIARTY offers augmentable and multipronged detection of viral nucleic acids that uniquely distinguishes it from other CRISPR-derived methods.",
+                                "The RNA-guided Type III-A CRISPR-Cas systems can be directly activated by viral RNA transcription. It was hypothesized that a DNA template with the T7 promoter sequence and encoding the viral RNA may be used as the stimulator to MORIARTY reaction mixture supplemented with T7 transcription components, henceforth referred to as T7-MORIARTY. Under the reaction condition conducive to T7 transcription, RNA-FAM yielded strong fluorescence but not DNA-Alexa594N due to the absence of Mn2+ (FIGS. 3A-3F). FIGS. 3A-3F show T7 MORIARTY one-pot reaction components for transcription coupled detection. FIGS. 3B-3D show the multiprongness of T7 MORIARTY by simultaneous rise in DNA-Alexa (shown as squares) and RNA-FAM (shown as circles) fluorescence under two different conditions tested: 17 mM MgCl2, 0.5 mM ATP, 0 mM MnCl2 (FIGS. 3B-3C), 17 mM MgCl2, 0.5 mM ATP, 0.5 mM MnCl2 (FIG. 3D). The lack of T7 promoter sequence in stimulator DNA caused no rise in DNA-Alexa/RNA-FAM fluorescence (FIG. 3B). The presence of high Mg2+ in both the conditions supports L1Csm/L1Csm6-mediated RNA-FAM cleavage but abrogates L1Csm-mediated DNA-FAM cleavage (FIGS. 3C-3D). FIGS. 3E-3F show the augmentability of T7 MORIARTY by combined use of 1 or 0.5 \u03bcM DNA-FAM and 1 or 0.5 \u03bcM RNA-FAM (shown as triangles) under two different conditions tested: 17 mM MgCl2, 0.5 mM ATP, 0 mM MnCl2 and 1 nM L1Csm6 (FIG. 3E), 17 mM MgCl2, 0.5 mM ATP, 0.5 mM MnCl2 and 250 nM L1Csm6 (FIG. 3F). The rise in fluorescence of 1 \u03bcM RNA-FAM alone are shown as green circles while 1 \u03bcM DNA-FAM alone are shown as squares. The optimized condition is outlined.",
+                                "No fluorescence was observed with the DNA stimulator lacking the T7 promotor sequence, indicating a dependence of T7-MORIARTY on transcription. Because high Mn2+ concentrations inhibit T7 transcription, reaction conditions were tested with varying amounts of Mn2+ in hopes to take advantage of both RNase and DNase signals. It was observed that supplementing T7-MORIARTY with MnCl2 generally reduced the RNA-FAM fluorescence (FIGS. 3A-3F & FIG. 10), likely due to high-Mn2+-mediated inhibition of T7 transcription. FIG. 10 in particular shows the effects of metal ions and ATP on amplification-free MORIARTY with combined RNase and DNase probe signals. 500 nM model RNA was used as the stimulator. The RNA-FAM and the DNA-FAM labeled oligos were used as the fluorescence probes. The condition identified for the amplification-free MORIARTY and T7-MORIARTY assays are outlined by dashed boxes.",
+                                "However, with a small amount of Mn2+ (0.5 mM) in combination with elevated Csm6, a high overall fluorescence with a non-negligible DNA reporter signal that augmented the high RNA reporter fluorescence was observed (FIGS. 3A-3F & FIG. 11A-11D).",
+                                "**Example 2\u2014Amplification-Free, Direct Detection of SARS-CoV-2 Viral RNA Via MORIARTY**",
+                                "The basic principle of MORIARTY was applied in an amplification-free setting towards the detection of SARS-CoV-2 responsible for the COVID-19 pandemic by reprogramming the 29mer CRISPR RNA (crRNA) protospacer (Table 1) against the Spike (S) gene of SARS-CoV-2 (nucleotides 22280-22308, NCBI MT801051.1). The choice of the targeting region within the S gene was made such as to ensure that the 3\u2032-protospacer flanking sequence (3\u2032-PFS) of the viral target RNA would remain non-complementary to the 5\u2032-handle of L1Csm crRNA (FIG. 4), ensuring activation of L1Csm upon encountering S mRNA. Expressed and copurified was the L1Csm RNP reprogrammed to detect SARS-CoV-2 S gene, hereafter referred to as L1Csm_S (Table 3). To evaluate if L1Csm_S would successfully detect its complementary CTR model RNA, hereafter referred to as S_CTR, without amplification (FIGS. 5A-5D), the L1Csm_S/L1Csm6 system was directly stimulated with S_CTR under a series of conditions (FIGS. 11A-11D). Under an optimized condition, the serially diluted 50 pM-500 fM of CTR_S could be detected with high confidence (p value<0.0001) when comparing to water (FIGS. 5A-5D). The sensitivity of L1Csm_S towards detection of in vitro transcribed S gene mRNA (S_IVS_RNA) was then evaluated. The L1Csm_S was observed to have improved sensitivity with S_IVS_RNA at 5 fM (p value=0.006) (FIGS. 5C-5D).",
+                                "Specifically, as shown in FIGS. 5A-5B, the 37mer S_CTR model RNA were serially diluted and tested in MORIARTY. As a negative control, the S_CTR sample was replaced by water. The rise in fluorescence corresponding to 5 pM, 500 fM and 50 fM are shown relative to water. As shown in FIGS. 5C-5D, the S_IVT_RNA samples were serially diluted and tested in MORIARTY. As a negative control, the S_IVT_RNA sample was replaced by water. The rise in fluorescence corresponding to 500 fM, 50 fM and 5 fM are shown relative to water. The reaction products imaged against Fluorescein wavelength with Biolmager are shown. The slope of the curves (right) was determined by employing simple linear regression to the data obtained from the initial 30 minutes of the experiment performed in triplicates. All the slopes were compared to the negative control by performing Ordinary one-way analysis of variance (ANOVA) and Dunnett's multiple comparisons test. ****=p<0.0001, ***=p<0.001 and ns=non-significant.",
+                                "As shown in FIGS. 11A-11D, the effects of concentrations of L1Csm6 (FIG. 11A), probe (FIG. 11B), DNA template (FIG. 11C) and supplementary Mn2+(FIG. 11D) on T7-MARIARTY. Only RNA-FAM was included as the fluorescence probe. A range of L1Csm6 concentrations were used in a Mg2+/ATP condition (FIG. 11A). Note concentration greater than 250 nM did not yield better signal. A range of RNA-FAM concentration was tested in the Mg2+/ATP condition (FIG. 11B). Increasing the probe concentration increased the signal. Synthetic DNA oligos containing T7 promoter sequence at various concentrations were used as stimulator to T7-MORIARTY (FIG. 11C). The effect of supplementing a small amount of Mn2+ ions on T7-MORIARTY with optimized L1Csm6 (FIG. 11D).",
+                                "**Example 3\u2014Attomolar Detection of SARS-CoV-2 Virus with Amplification-Coupled MORIARTY**",
+                                "Whether the sensitivity of MORIARTY could be improved when it was coupled with a pre-amplification step with reverse transcription and recombinase-polymerase amplification (RT-RPA) was examined. In this application, viral RNA was first reverse transcribed by a reverse transcriptase (RT) followed by dsDNA synthesis from a T7-promoter containing primer and a downstream primer via three recombinase-polymerase amplification (RPA) enzymes: a recombinase, single-stranded DNA-binding protein (SSB) and strand-displacing polymerase (FIG. 6). The RT-RPA protocols optimized for the detection of the S-gene of SARS-CoV-2 were used to test the sensitivity of MORIARTY to RT-RPA reaction products from varying amount of viral RNA.",
+                                "MORIARTY can be extremely sensitive to the RT-RPA products amplified from the in vitro transcribed S gene mRNA, hereafter referred to as S_IVT_RNA. A 25 \u03bcL RT-RPA reaction was performed using 2.5 \u03bcL S_IVT_RNA at varying concentrations by incubating the reaction mix at a 42\u00b0 C. water bath for 25 minutes. Addition of 15 \u03bcL of RT-RPA product in a 100 \u03bcL optimized T7 MORIARTY reaction resulted in a clear rise in total fluorescence above water as low as 200 aM, or roughly 100 copies/mL by a qPCR procedure.",
+                                "MORIARTY was next applied to the detection of Quantitative PCR (qPCR) control RNA extracted from heat-inactivated SARS-CoV-2 virus (BEI NR-52347) with known viral titters (50,000 cp/mL). Serial dilutions were performed from the stock in a range of 500-31.25 cp/\u03bcl in water and used them in RT-RPA and the subsequent T7 MORIARTY reactions. Samples with copy numbers higher than 62.5 cp/\u03bcL produced statistically significant rise above water in multi-replicate experiments (FIGS. 7A-7C). As shown in FIGS. 7A-7C, the SARS-CoV-2 control RNA samples (BEI NR-52347) were serially diluted, added to RT-RPA reaction and tested in T7 MORIARTY. As a negative control, RT-RPA treated water was used instead of RT-RPA treated sample. The rise in fluorescence corresponding to 500 cp/\u03bcL, 250 cp/\u03bcL, 125 cp/\u03bcL, 62.5 cp/\u03bcL and 31.25 cp/\u03bcL relative to water are shown. The slope of the curves was determined by employing simple linear regression to the data obtained from the initial 30 minutes of the experiment performed in triplicates. All the slopes were compared to the negative control by performing Ordinary one-way analysis of variance (ANOVA) and Dunnett's multiple comparisons test. ****=p<0.0001, ***=p<0.001 and ns=non-significant.",
+                                "Finally, MORIARTY was applied to human patient samples obtained from a COVID-19 testing center. A total of fourteen patient samples were obtained and subjected to RNA extraction (QIAamp viral mini kit). The extracted RNA from each patient was split for simultaneous detection with MORIARTY and an FDA approved qPCR procedure, respectively. Since the qPCR method detected four targets, human RNase P, SARS-CoV-2 N1, N2 and E genes, while the MORIARTY of this example detected S gene in each sample, the detected viral signals were normalized by using the counts of human RNase P for each patient. For qPCR results, the quotients of human RNase P count and each of the three viral count numbers computed and plotted, respectively. For MORIARTY results, the quotient of fluorescence slope and human RNase P count for each patient was computed and plotted. For both results, high quotient values were indicative of high viral titter. Thus, a set of consistent results were obtained from two different experiments for comparison (FIG. 8).",
+                                "As shown in FIG. 8, the viral RNA samples extracted from 14 patients were RT-RPA treated and tested in T7-MORIARTY. T7-MORIARTY results were obtained as in FIGS. 7B-7C, subtracted from that of water, normalized with individual RNase P counts and depicted as a bar diagram with statistical significance values. The qPCR results were plotted as bar diagrams for the three targets (E, N1, and N2) as quotients of Ct value for RNase P and that of each target. In general, a good agreement between MORIARTY results with the detected E gene titer with qPCR was observed (FIG. 8). FIG. 12A shows in vitro transcribed S-gene mRNA (S_IVT_RNA) at various concentrations for RT-RPA-T7-MORIARTY. The concentration of the S_IVT_RNA was determined by q-RT-PCR based on model SARS-CoV-2 virus (BEI NR-52347). In FIG. 12B, model SARS-CoV-2 virus with known concentrations (BEI NR-52347) were used to test the requirement for T7 promoter sequence in the S-gene specific primers. T7-minus primer denotes the forward primer specific for S-gene but without T7 promoter sequence. Additionally, the raw data of rise in fluorescence of patient samples was tested in RT-RPA-T7-MORIARTY (FIGS. 13A-13B) and bar diagram of the fluorescence intensities at 40 min time point (FIG. 13C) of the 14 patient samples was prepared. Each sample was tested in triplicate as two groups of experiments along with either a negative sample or water. The grey dotted line represents intensity measured on RT-RPA treated water. Intensities were compared to the negative control by performing Ordinary one-way analysis of variance (ANOVA) and Dunnett's multiple comparisons test. ****=p<0.0001, ***=0.003<p<0.006 and ns=non-significant.",
+                                "MORIARTY correctly diagnosed three of the four qPCR-diagnosed negative and seven of the eight qPCR-diagnosed positive patients with excellent statistics (FIG. 8). Interestingly, the qPCR results for the N1 and N2 genes agreed with those of MORIARTY to a less degree, likely reflecting the difference in target site accessibility or annealing thermodynamics between the N and the S gene primers."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce MORIARTY system",
+                                "describe L1Csm effector complex production",
+                                "outline L1Csm/L1Csm6 CRISPR-Cas system",
+                                "define DNA and RNA fluorescent probes",
+                                "describe L1Csm1-stimulated DNase activity",
+                                "describe cOA6-stimulated L1Csm6-mediated RNase activity",
+                                "show one-pot reaction components for amplification detection",
+                                "demonstrate simultaneous rise in DNA-Alexa and RNA-FAM fluorescence",
+                                "show augmentability of MORIARTY by combined use of DNA-FAM and RNA-FAM probes",
+                                "outline optimized condition for MORIARTY",
+                                "describe effects of metal ions, ATP, and L1Csm/Csm6 mutations on MORIARTY",
+                                "show fluorescence signals from RNase and DNase activities",
+                                "describe T7-MORIARTY system",
+                                "show T7 MORIARTY one-pot reaction components for transcription-coupled detection",
+                                "demonstrate multiprongness of T7 MORIARTY",
+                                "show augmentability of T7 MORIARTY by combined use of DNA-FAM and RNA-FAM probes",
+                                "outline optimized condition for T7-MORIARTY",
+                                "describe effects of metal ions and ATP on T7-MORIARTY",
+                                "introduce Example 2: amplification-free, direct detection of SARS-CoV-2 viral RNA via MORIARTY",
+                                "describe reprogramming of 29mer CRISPR RNA protospacer against SARS-CoV-2 Spike gene",
+                                "express and copurify L1Csm RNP reprogrammed to detect SARS-CoV-2 S gene",
+                                "evaluate L1Csm_S detection of SARS-CoV-2 S gene mRNA",
+                                "show sensitivity of L1Csm_S towards detection of in vitro transcribed S gene mRNA",
+                                "introduce Example 3: attomolar detection of SARS-CoV-2 virus with amplification-coupled MORIARTY",
+                                "describe RT-RPA protocol for detection of SARS-CoV-2 S gene",
+                                "evaluate sensitivity of MORIARTY to RT-RPA reaction products",
+                                "apply MORIARTY to detection of Quantitative PCR control RNA extracted from heat-inactivated SARS-CoV-2 virus",
+                                "show statistically significant rise above water in multi-replicate experiments",
+                                "apply MORIARTY to human patient samples obtained from a COVID-19 testing center",
+                                "compare MORIARTY results with qPCR results",
+                                "show consistent results from two different experiments",
+                                "describe in vitro transcribed S-gene mRNA at various concentrations for RT-RPA-T7-MORIARTY",
+                                "test requirement for T7 promoter sequence in S-gene specific primers",
+                                "show raw data of rise in fluorescence of patient samples in RT-RPA-T7-MORIARTY",
+                                "summarize MORIARTY diagnosis of patient samples"
+                            ],
+                            "num_characters": 17936,
+                            "outline_medium": [
+                                "introduce MORIARTY system",
+                                "describe L1Csm effector complex production",
+                                "outline L1Csm system functionality",
+                                "detail DNA and RNA fluorescent probes",
+                                "describe dual functionality of L1Csm system",
+                                "show effects of metal ions, ATP, and L1Csm/Csm6 mutations",
+                                "optimize Mn2+, Mg2+, and ATP combinations",
+                                "replace Alexa594N with FAM fluorophore",
+                                "demonstrate cumulative effect of two fluorophores",
+                                "introduce T7-MORIARTY system",
+                                "describe T7 MORIARTY one-pot reaction components",
+                                "show multiprongness of T7 MORIARTY",
+                                "demonstrate augmentability of T7 MORIARTY",
+                                "apply MORIARTY to SARS-CoV-2 viral RNA detection",
+                                "evaluate sensitivity of L1Csm_S towards S_CTR and S_IVS_RNA",
+                                "couple MORIARTY with RT-RPA for attomolar detection",
+                                "apply MORIARTY to human patient samples"
+                            ],
+                            "outline_short": [
+                                "introduce MORIARTY system",
+                                "describe Example 1: MORIARTY simultaneously detects DNase and RNase fluorescence",
+                                "detail experimental conditions and results for Example 1",
+                                "introduce T7-MORIARTY system",
+                                "describe Example 2: amplification-free, direct detection of SARS-CoV-2 viral RNA via MORIARTY",
+                                "detail experimental conditions and results for Example 2",
+                                "describe Example 3: attomolar detection of SARS-CoV-2 virus with amplification-coupled MORIARTY",
+                                "detail experimental conditions and results for Example 3"
+                            ]
+                        },
+                        {
+                            "title": "Material and Methods",
+                            "paragraphs": [
+                                "**Cloning**",
+                                "The pACYC Lactococcus lactis Csm (L1Csm) effector module plasmid encoding Cash, Csm1-6 and CRISPR locus was as described previously. The standard L1Csm effector complex was reprogrammed to detect the S gene of SARS-CoV-2 by replacing the 29mer protospacer region with 29mer gene-complementary sequence via Q5 mutagenesis. The desired mutations including Csm1 H13A, Csm1 D14N, Csm3 D30A and Csm6 R355A were also introduced by Q5 mutagenesis. For multiplexing, three new clones of L1Csm_S were designed: L1Csm_S7 (nucleotides 24702-24730, MT801051.1), L1Csm_S8 (nucleotides 25061-25089, MT801051.1) and L1Csm_S9 (nucleotides 25092-25120, MT801051.1) each of which harbored Csm1 H13A and Csm3 D30A mutations. The reprogramming of crRNA protospacer region was achieved as described previously. Briefly, two BbsI sites were introduced at the 3\u2032-end of the repeat and the 5\u2032-end of the HDV ribozyme region, upstream and downstream of the target protospacer region in the L1Csm plasmid using Q5 mutagenesis. The modified plasmid was restriction digested using BbsI enzyme at 37\u00b0 C. for 60 min and the digested product was gel extracted, purified using a gel extraction kit. To create individual L1Csm multiplexing clones: S7, S8 and S9, the linearized plasmid was incubated with the respective 29mer oligos at 37\u00b0 C. for 10 min for ligation using DNA ligase. The ligated DNA was transformed into the DH5\u03b1 competent cells, plated on LB-agar plate and incubated at 37\u00b0 C. for 16 hours. Next, two colonies from each plate were picked, grown overnight and plasmid DNA was isolated using a kit. All the clones were verified using sequencing primers.",
+                                "**Protein Expression and Purification**",
+                                "The standard and reprogrammed L1Csm complexes were all expressed and purified as described previously. Briefly, L1Csm complexes encoded in all-in-one pACYC plasmid (FIG. 1) were produced in Escherichia coli NICO stain using 0.3 mM isopropyl \u03b2-D-1 thiogalactopyranoside (IPTG) for induction of protein expression. The L1Csm2 subunit harbored N-terminal His6-tag (SEQ ID NO: 2) that enabled isolation of L1Csm ribonucleoprotein complex using Ni-immobilized affinity chromatography. The complexes were further purified using size-exclusion chromatography and stored in 20 mM HEPES pH 7.5, 200 mM NaCl, 5 mM MgCl2, 14 mM 2-mercaptoethanol. As L1Csm6 is not a component of the effector complex, it was produced separately using pL1Csm6 plasmid (FIG. 1) as described previously and stored in 20 mM HEPES pH 7.5, 300 mM NaCl, 14 mM 2-mercaptoethanol. The T7 RNA polymerase was produced as described previously.",
+                                "In Vitro Transcription of S Gene mRNA",
+                                "The bacterial expression plasmid for SARS-CoV-2 surface glycoprotein (Spike protein) pGBW-m4046887 (Addgene) was cultured in LB media supplemented with 35 \u03bcg/ml Chloramphenicol at 37\u00b0 C. overnight and subjected to plasmid DNA extraction kit. The extracted plasmid DNA was subjected to BamH1 restriction digestion to linearize the plasmid, run on an agarose gel and the linearized DNA was gel-extracted. The gel-extracted DNA was used as starting material with suitable primers to generate a dsDNA template for in vitro transcription. The S_IVT_RNA was transcribed using 1 \u03bcg template DNA in a reaction containing 1\u00d7 transcription buffer (10\u00d7 consists of 500 mM Tris pH 8.0, 100 mM DTT 200 mM MgCl2), 5 mM rNTPs, 480 \u03bcg/mL T7 RNA polymerase. The transcription reaction was incubated at 37\u00b0 C. for 3 hrs. The RNA transcript was purified using Monarch RNA Cleanup kit, eluted in water, aliquoted, flash frozen using liquid nitrogen and stored at \u221280\u00b0 C.",
+                                "**RT-RPA**",
+                                "The RT-RPA was performed using a kit as previously described. For each lyophilized pellet provided by the kit, a 50 \u03bcL reaction mix containing 29.5 \u03bcL of rehydration buffer, 0.5 \u03bcM each of forward and reverse primers and 100 U Protoscript reverse transcriptase was prepared. The master-mix was added to the RPA tube on ice to resuspend the pellet. After the pellet was dissolved completely, 5 \u03bcL RNA samples extracted from patient nasopharyngeal swab using QIAamp viral mini kit was added. To initiate the RT-RPA reaction, 14 mM Magnesium Acetate (provided with the kit) was added and the reactions were incubated for 30 minutes at 42\u00b0 C. with intermittent mixing every 10 minutes. After the reaction was complete, the RT-RPA product was transferred to ice until T7-MORIARTY detection assay was set up.",
+                                "**Amplification Free MORIARTY**",
+                                "The overall design of Amplification-free MORIARTY methodology of the foregoing examples was optimized from the previously reported fluorescent reporter assay. To depict multiprongness of MORIARTY, DNA-probe and RNA-probe harbored 5\u2032-Alexa Fluor594 and 5\u2032 6-FAM fluorescent dyes respectively. The reactions were performed in 1\u00d7TAPA buffer (10\u00d7 consists of 330 mM Tris acetate pH 7.6 at 32\u00b0 C., 660 mM Potassium acetate) containing 0.5 \u03bcM DNA-Alexa, 0.5 \u03bcM RNA-FAM (IDT), 250 nM L1Csm effector complex, 1 nM L1Csm6, 10 mM MgCl2/MnCl2, 0-0.5 mM ATP and 0-500 nM target RNA at 37\u00b0 C. The dual fluorescence was simultaneously measured on Spectramax ID5 multi-mode microplate reader (Molecular Devices) using 480 nm/530 nm (to track cleavage of RNA-FAM) and 570 nm/630 nm (to track cleavage of DNA-Alexa) excitation/emission wavelength at 1 min intervals. The reactions were performed in triplicates and averaged for the final plots. To depict the augmentability of MORIARTY, the reactions were performed similarly, but with DNA-Alexa replaced by DNA-FAM. The fluorescence was measured using 480 nm/530 nm excitation/emission wavelength at 1 min intervals. The reaction products were transferred to 0.2 ml PCR tubes and imaged against Fluorescein wavelength filter for direct visualization.",
+                                "**T7-MORIARTY**",
+                                "The T7-MORIARTY methodology of the foregoing examples was designed to track L1Csm co-transcriptional activation of template viral DNA obtained from RT-RPA step. All T7-MORIARTY reactions were done using RNA-FAM and DNA-FAM fluorescent probes at a reaction volume of 25 \u03bcL or 100 \u03bcL. The reactions were performed in a buffer cocktail of 1\u00d7TAPA buffer (10\u00d7 consists of 330 mM Tris acetate pH 7.6 at 32\u00b0 C., 660 mM Potassium acetate) and 1\u00d7HEPES transcription buffer (10\u00d7 contains 300 mM K-HEPES pH 7.6, 20 mM Spermidine, 0.1% Triton X-100, 170 mM MgCl2) containing 1 \u03bcM DNA-FAM (IDT), 1 \u03bcM RNA-FAM (IDT), 250 nM L1Csm effector complex, 250 nM L1Csm6, 10 mM MgCl2, 0.5 mM MnCl2, 0.5 mM rNTPs, 10 mM TCEP, 60 \u03bcg/mL T7 RNA polymerase and 0-500 nM target RNA at 37\u00b0 C.",
+                                "The fluorescence was measured on Spectramax ID5 multi-mode microplate reader using 480 nm/530 nm excitation/emission wavelength at 5 min intervals. The reactions were performed in triplicates and averaged for the final plots. The reaction products were transferred to 0.2 mL PCR tubes and imaged against Fluorescein wavelength.",
+                                "Target RNA Sequences and crRNA Sequences",
+                                "Target RNA sequences are provided in Table 2. The 37mer target sequences are shown highlighting 29mer region complementary to crRNA protospacer (bold). The corresponding 8-nt 3\u2032-protospacer flanking sequence (3\u2032-PFS) is shown in small letters. The 3822 b long S_IVT_RNA sequence is shown highlighting the 3\u2032-PFS (small letters/underline) and target RNA PFS (in highlight/bold). Table 4 provides crRNA sequences. The 37mer crRNA sequences are shown highlighting reprogrammable 29mer protospacer region (bold). The 8-nt crRNA 5\u2032-handle sequence (small letters) originates from the repeat sequence processed by Cash.",
+                                "**DNA Templates**",
+                                "Table 5 provides a compilation of DNA templates used in FIG. 1, FIGS. 2A-2F, and FIGS. 3A-3F. The double stranded DNA templates for T7-MORIARTY were prepared by annealing non-coding and coding strands ordered as single-stranded forward and reverse primers. The T7 promoter region in the forward primer and its complementary sequence in the reverse primer are shown in bold. The region corresponding to 8-nt 3\u2032-PFS of transcript is underlined.",
+                                "**RPA Primers**",
+                                "Table 6 provides a compilation of RNA primers used in FIG. 6, FIGS. 7A-7C, and FIG. 8. The RPA primers used in RT-RPA-T7-MORIARTY were designed to detect S gene. The T7 promoter region is highlighted in bold. The underlined region represents primer segment annealing to the target",
+                                "**Target DNA Sequences**",
+                                "Table 7 provides a compilation of the target DNA sequences of Nucleocapsid (N), Envelope (E) genes of SARS-CoV-2 and human RNase P control used in qPCR validation, used in FIG. 6, FIGS. 7A-7C, and FIG. 8.",
+                                "Raw qPCR and T7-MORIARTY Results",
+                                "Table 8 provides raw qPCR and T7-MORIARTY results of 14 patient samples tested in FIG. 6, FIGS. 7A-7C, and FIG. 8. For each patient, Ct values corresponding to SARS-CoV-2 E, N1 and N2 genes, human RNase P and MORIARTY slope values are shown. \u201c+\u201d represents positive diagnosis, \u201c\u2212\u201d represents negative diagnosis and \u201cI\u201d represents invalidated sample due to undetectable human RNase P."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "clone L1Csm plasmid",
+                                "introduce mutations via Q5 mutagenesis",
+                                "reprogram crRNA protospacer region",
+                                "express and purify L1Csm complexes",
+                                "produce L1Csm6 subunit",
+                                "produce T7 RNA polymerase",
+                                "transcribe S gene mRNA in vitro",
+                                "extract and purify RNA transcript",
+                                "perform RT-RPA",
+                                "set up T7-MORIARTY detection assay",
+                                "design and optimize Amplification-free MORIARTY methodology",
+                                "perform Amplification-free MORIARTY reactions",
+                                "design and optimize T7-MORIARTY methodology",
+                                "perform T7-MORIARTY reactions",
+                                "provide target RNA sequences and crRNA sequences",
+                                "provide DNA templates",
+                                "provide RPA primers and target DNA sequences"
+                            ],
+                            "num_characters": 8902,
+                            "outline_medium": [
+                                "clone L1Csm plasmid",
+                                "introduce mutations via Q5 mutagenesis",
+                                "reprogram crRNA protospacer region",
+                                "express and purify L1Csm complexes",
+                                "transcribe S gene mRNA in vitro",
+                                "perform RT-RPA",
+                                "detect target RNA using MORIARTY",
+                                "provide target RNA and crRNA sequences"
+                            ],
+                            "outline_short": [
+                                "clone and reprogram L1Csm effector module plasmid",
+                                "express and purify L1Csm complexes",
+                                "transcribe S gene mRNA in vitro",
+                                "perform RT-RPA and MORIARTY assays"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce MORIARTY system",
+                        "motivate virus detection",
+                        "describe system sensitivity",
+                        "describe system advantages",
+                        "describe Type III-A CRISPR-Cas system",
+                        "describe amplification-free detection",
+                        "describe one-pot detection with DNA amplification",
+                        "describe MORIARTY-based assay results",
+                        "describe L1Csm effector complex",
+                        "describe system embodiments",
+                        "conclude MORIARTY versatility"
+                    ],
+                    "num_characters": 5650,
+                    "outline_medium": [
+                        "introduce MORIARTY system for virus detection",
+                        "describe sensitivity and detection limits",
+                        "outline embodiments of MORIARTY-based detection methods",
+                        "detail components and conditions of MORIARTY system",
+                        "highlight versatility and broad applications of MORIARTY"
+                    ],
+                    "outline_short": [
+                        "describe MORIARTY system for virus detection",
+                        "embodiments and advantages of MORIARTY"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of detection, the method comprising:\nproviding a sample comprising a virus, wherein the virus comprises a cognate target RNA;\ncontacting the sample with an effector complex and an ancillary protein, wherein the effector complex binds to the cognate target RNA, and the binding of the effector complex to the cognate target RNA produces at least one messenger comprising a cyclic oligoadenylate, wherein the at least one messenger activates nonspecific ssRNA cleavage activity in the ancillary protein to produce detectable DNase activity, detectable RNase activity, or a combination thereof; and\nanalyzing the sample with one or more reporters to detect the detectable DNase activity, detectable RNase activity, or a combination thereof.",
+        "2. The method of claim 1, wherein the effector complex comprises a L1Csm effector complex.",
+        "3. The method of claim 1, wherein the ancillary protein comprises L1Csm6.",
+        "4. The method of claim 1, wherein the at least one messenger comprises cOA6.",
+        "5. The method of claim 1, wherein the one or more reporters comprise one or more fluorescence reporters.",
+        "6. The method of claim 1, wherein the one or more reporters comprise (i) an RNA oligo flanked by a first fluorophore-quencher pair, and (ii) a DNA oligo flanked by a second fluorophore-quencher pair.",
+        "7. The method of claim 1, wherein the first fluorophore-quencher pair and the second fluorophore-quencher pair are the same.",
+        "8. The method of claim 1, wherein the virus comprises a spike protein, and the spike protein comprises the cognate target RNA.",
+        "9. The method of claim 1, wherein the contacting of the sample with the effector complex occurs in a liquid.",
+        "10. The method of claim 9, wherein the liquid comprises a buffer.",
+        "11. The method of claim 9, wherein a concentration of the effector complex in the liquid is about 200 nM to about 300 nM, and the concentration of the ancillary protein is about 0.1 to about 3 nM.",
+        "12. The method of claim 1, wherein the virus is SARS-CoV-2.",
+        "13. The method of claim 1, wherein the analyzing step comprises detecting both the detectable DNase activity and the detectable RNase activity.",
+        "14. The method claim 1, wherein the virus is not amplified.",
+        "15. The method of claim 1, further comprising amplifying the virus prior to the contacting step.",
+        "16. The method of claim 1, wherein the method is performed in a single container.",
+        "17. A system for detecting a virus comprising:\na L1Csm effector complex;\na L1Csm6 protein;\na first reporter comprising an RNA oligo flanked by a first fluorophore-quencher pair; and\na second reporter comprising a DNA oligo flanked by a second fluorophore-quencher pair.",
+        "18. The system of claim 17, further comprising a buffer.",
+        "19. The system of claim 18, wherein the buffer comprises Mg2+, ATP, or a combination thereof.",
+        "20. The system of claim 17, further comprising a T7 promoter sequence.",
+        "21. The system of claim 17, further comprising a sample comprising a virus to be detected, wherein the system can detect the virus at 5 fM or less."
+    ]
+}

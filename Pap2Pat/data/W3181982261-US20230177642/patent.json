@@ -1,0 +1,256 @@
+{
+    "id": "US20230177642",
+    "authors": [
+        "Zhaxylyk A. Kudyshev",
+        "Demid Sychev",
+        "Zachariah Olson Martin",
+        "Simeon I. Bogdanov",
+        "Xiaohui Xu",
+        "Alexander Kildishev",
+        "Alexandra Boltasseva",
+        "Vladimir Shalaev"
+    ],
+    "title": "MACHINE LEARNING ASSISTED SUPER RESOLUTION MICROSCOPY",
+    "date": "2022-07-06 00:00:00",
+    "abstract": "A method of providing super-resolved images of a photon emitting particle is disclosed, which includes providing a machine-learning (ML) platform, wherein the ML platform is configured to receive pixel-based sparse autocorrelation data and generate a predicted super-resolved image of a photon emitting particle, receiving photons from the photon emitting particle by two or more photon detectors, each generating an electrical pulse associated with receiving an incident photon thereon, generating sparse autocorrelation data from the two or more photon detectors for each pixel within an image area, and inputting the pixel-based sparse autocorrelation data to the ML platform, thereby generating a predicted super-resolved image of the imaging area, wherein the resolution of the super-resolved image is improved by \u221an as compared to a classical optical microscope limited by Abbe diffraction limit.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "STATEMENT REGARDING GOVERNMENT FUNDING",
+                    "paragraphs": [
+                        "This invention was made with government support under ECCS2015025 awarded by the National Science Foundation and under DE-AC05-000R2275 awarded by the Department of Energy. The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "acknowledge government support"
+                    ],
+                    "num_characters": 224,
+                    "outline_medium": [
+                        "acknowledge government support"
+                    ],
+                    "outline_short": [
+                        "acknowledge government support"
+                    ]
+                },
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present disclosure generally relates to super-resolution microscopy and, in particular, to a method and system utilizing machine learning for improvement thereof."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 166,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "This section introduces aspects that may help facilitate a better understanding of the disclosure. Accordingly, these statements are to be read in this light and are not to be understood as admissions about what is or is not prior art.",
+                        "Due to the wave nature of light, the spatial resolution of conventional far-field microscopes is fundamentally limited by the diffraction limit to approximately half the wavelength of the incident light, known as the \u201cAbbe limit,\u201d named after Ernst Karl Abbe. In 1874 he published a paper entitled \u201cA Contribution to the Theory of the Microscope and the nature of Microscopic Vision,\u201d in which he described the inverse proportionality of a microscope resolution to its aperture. Referring to FIG. 1, a diagram intended to show the Abbe limit of optical microscopes, this relationship is visualized. A photon emitting object provides light at various wavelengths (fluorescent light provides most useful information at a wavelength of about 400-500 nm). The light shone on a lens is transmitted onto a detector. When the particle is small (say less than the wavelength divided by 2), it generates a point spread function (PSF) in the XY plane in the form of the Airy lateral circle and rings, with every ring away from the center being less bright. The photoluminescence (PL) map (i.e., map of electromagnetic radiation as a result of emission of photons), which is intensity as a function of XY location, is also shown. The lowest diameter for the XY PSF is thus in the order of 200-250 nm. In the XZ plane, the PSF is more of an oblong shape but even larger in dimension. Abbe's formula is shown in FIG. 1 (d=\u03bb/2\u00b7NA, where \u03bb, is the wavelength of light, and NA is the numerical aperture which is about 1 for most aberration-free lenses), thus resulting in the 200-250 nm diffraction limit. This limit poses significant challenges for viewing smaller objects, e.g., in the order of 10's of nm, and particularly when these objects are close to each other, e.g., in the order of 10 s of nm, as the PSFs of these particles begin to merge thus causing partial or complete loss of useful detection.",
+                        "Given the Abbe diffraction limit, there have been far-field super-resolution microscopy (SRM) techniques that aim at overcoming said limitation. The developed SRM techniques typically break one or more of the underlying fundamental assumptions on the nature of light-matter interaction within the optical system, under which the diffraction limit is derived. Specifically, it is assumed that the illumination intensity is homogenous, the optical response of the stationary object is linear, and all the optical fields in the system are classical. Recently, a plethora of novel super-resolution techniques, including stimulated emission depletion, structured illumination microscopy, photoactivated localization microscopy, and stochastic optical reconstruction microscopy, have been developed. All the aforementioned techniques are realized within classical optical systems via breaking the homogeneity, linearity, or stationarity assumptions.",
+                        "Another promising SRM technique includes taking into account the quantum nature of light. Several quantum schemes have been proposed utilizing multimode squeezed light and generalized quantum states. These approaches use complex quantum states of light as an illumination source, which demand highly efficient, deterministic sources of such quantum photons or entangled photon pairs. In contrast, several SRMs have been developed by relying on the quantum nature of the light emitted by the object itself. This approach, originally proposed by Hell et al., is based on the fact that some quantum sources emit photons with sub-Poissonian temporal statistics, which can be analyzed by measuring the autocorrelation function of the emission. It has been shown that by analyzing the n-th order autocorrelation function at zero time delay g(n)(t=0) of nonclassical light emitted from a point source, it is possible to reduce the size of the effective point spread function by a factor of \u221an (square root of n).",
+                        "Hell et al. proposed the Gedanken experiment in which a photon emitter provides photons to a beam splitter which either allows transmission of the photons to a first detector or reflection of the photons to a second detector. FIG. 2 is a diagram showing the basic schematic of the Gedanken experiment, in which a system 100 was used, including a photon emitter 102 providing photons 104 to a beam splitter 106 that distributes the photons between two detectors 108a and 108b. It should be noted that no single photon is allowed to travel to both detectors 108a and 108b, as shown in the registers next to each detector, whose outputs are coupled to a correlation device 110. A second-order autocorrelation function (or cross-correlation function between the two detectors) denoted as g(2)(x,y,0) representing the 2nd order autocorrelation at pixel position (x,y) with zero delay is established from the two detectors, thereby establishing the statistical nature of the photon emitter. Said autocorrelation can then be used to generate a super-resolved image N (x,y)2 (1\u2212g(2)(x, y, 0)) where N (x,y) represents the intensity at pixel position (x,y). In this setup, the beam splitter 106 performs an antibunching function by either transmitting the incoming photon to the first detector 108a or reflecting it to the second detector 108b.",
+                        "The above-described antibunching-based SRM can be coupled with a classical approach to improve the imaging system's resolution further. By combining image scanning microscopy with the second-order quantum photon correlation measurement, a spatial resolution of four times beyond the diffraction limit was achieved with only a modest hardware overhead compared to traditional confocal scanning microscopy. This combination makes the antibunching-based SRM technique a very attractive platform for imaging quantum light sources, as these are typically analyzed using confocal scanning microscopy. The main bottleneck of this framework is the time required for acquiring the time-resolved photon statistics needed to accurately determine the values of the autocorrelation function at zero delay. This accuracy depends on the number of registered correlated photon detection events. For example, a standard protocol for each pixel requires about 1-4 minutes for measurement and postprocessing. Thus, if there are, for example, 1024 pixels in a fully encompassed super-resolved image, the amount of time required to generate the image is on the order of 1024-4096 minutes (i.e., between 17 to 68 hours for one super-resolved image). The time requirement scales up exponentially with the increasing order of the autocorrelation function, making such data manipulations impractical. Hence, to realize scalable and practical antibunching-based SRM, one needs to develop a fast and precise approach to determine n-th order autocorrelation function at zero time delay (g(n)t=0)).",
+                        "Therefore, there is an unmet need for a novel approach to speed up processing of quantum-based super-resolution microscopy."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce Abbe limit",
+                        "describe Abbe's formula",
+                        "explain diffraction limit",
+                        "introduce super-resolution microscopy",
+                        "describe classical SRM techniques",
+                        "introduce quantum SRM techniques",
+                        "describe Hell's Gedanken experiment",
+                        "explain antibunching function",
+                        "describe classical approach combination",
+                        "discuss time requirement bottleneck",
+                        "motivate need for fast approach",
+                        "summarize limitations of classical SRM",
+                        "summarize limitations of quantum SRM",
+                        "conclude need for novel approach"
+                    ],
+                    "num_characters": 7114,
+                    "outline_medium": [
+                        "introduce Abbe limit",
+                        "describe limitations of conventional microscopes",
+                        "motivate super-resolution microscopy",
+                        "summarize classical SRM techniques",
+                        "introduce quantum SRM techniques",
+                        "describe antibunching-based SRM",
+                        "highlight limitations of antibunching-based SRM"
+                    ],
+                    "outline_short": [
+                        "introduce Abbe limit",
+                        "describe super-resolution microscopy techniques",
+                        "motivate quantum-based super-resolution microscopy"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "A method of providing super-resolved images of a photon emitting particle is disclosed. The method includes providing a machine-learning (ML) platform, wherein the ML platform is configured to receive pixel-based sparse autocorrelation data and generate a predicted super-resolved image of a photon emitting particle, receiving photons from the photon emitting particle by two or more photon detectors, each generating an electrical pulse associated with receiving an incident photon thereon, generating sparse autocorrelation data from the two or more photon detectors for each pixel within an image area, and inputting the pixel-based sparse autocorrelation data to the ML platform, thereby generating a predicted super-resolved image of the imaging area, wherein the resolution of the super-resolved image is improved by \u221an as compared to a classical optical microscope limited by Abbe diffraction limit.",
+                        "A system for generating super-resolved images of a photon emitting particle is also disclosed. The system includes a platform configured to receive a particle for which a super-resolved image is to be generated; a light source configured to illuminate the particle, two or more photon detectors configured to receive photons emanating from the particle, each photon detector generating an electrical pulse associated with receiving an incident photon emanating from the particle thereon, and a computer system having a processor and non-transient memory with software thereon. The computer system is configured to provide a machine-learning (ML) platform; the ML platform is configured to receive pixel-based sparse autocorrelation data associated with the two or more detectors and generate a predicted super-resolved image of the photon emitting particle, generate sparse autocorrelation data from the two or more photon detectors for each pixel within an image area, and input the pixel-based sparse autocorrelation data to the ML platform, thereby generating a predicted super-resolved image of the imaging area, wherein the resolution of the super-resolved image is improved by \u221an as compared to a classical optical microscope limited by Abbe's diffraction limit."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce ML platform",
+                        "describe method of generating super-resolved image",
+                        "describe system for generating super-resolved image",
+                        "summarize improved resolution"
+                    ],
+                    "num_characters": 2177,
+                    "outline_medium": [
+                        "disclose ML-based super-resolution method",
+                        "disclose ML-based super-resolution system"
+                    ],
+                    "outline_short": [
+                        "summarize invention"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "For the purposes of promoting an understanding of the principles of the present disclosure, reference will now be made to the embodiments illustrated in the drawings, and specific language will be used to describe the same. It will nevertheless be understood that no limitation of the scope of this disclosure is thereby intended.",
+                        "In the present disclosure, the term \u201cabout\u201d can allow for a degree of variability in a value or range, for example, within 10%, within 5%, or within 1% of a stated value or a stated limit of a range.",
+                        "In the present disclosure, the term \u201csubstantially\u201d can allow for a degree of variability in a value or range, for example, within 90%, within 95%, or within 99% of a stated value or of a stated limit of a range.",
+                        "A novel approach is described to speed up the processing of quantum-based super-resolution microscopy. Towards this end, according to the present disclosure, convolutional neural networks (CNNs) are utilized to enable rapid classification of quantum emitters depending on whether g(2)(0) is above or below a given threshold value based on sparse autocorrelation function measurements. Specifically, a CNN-based regression model is disclosed herein that allows an accurate estimation of the g(2)(0) values and thus super-resolved images based on sparse data. Using the developed CNN model, the acquisition time in the antibunching-based scanning SRM technique has been reduced by at least 12 times per pixel, thus marking an important step towards the practical realization of scalable quantum super-resolution imaging devices. According to the present disclosure, the approach can be extended to rapid measurements of higher-order autocorrelation functions, which opens up the way to the practical realization of scalable quantum super-resolution imaging systems. The developed method is compatible with the continuous wave (CW) excitation regime, which reduces emitter photobleaching due to multi-photon absorption and does not restrict the fluorescence lifetime. Therefore, it can be extended and applied to a wide variety of quantum emitters used in biological labeling and quantum on-chip photonics.",
+                        "The antibunching technique is further described to better elucidate the present disclosed method. The antibunching SRM technique relies on the detection of quantum correlations in the signal radiated by quantum emitters, which allows for a gain in the spatial resolution of a factor of vin by measuring n-th order autocorrelation function. This fact can be understood by conducting the Gedanken experiment, as presented in FIG. 2. In the case of a hypothetical emitter that emits photons by pairs, an improvement in resolution can be theoretically obtained by sending each of the two photons to a separate detector. Since the two detectors will record two independent point-spread function (PSF) estimates, the spatial resolution can be improved by a factor of \u221a2 via simple multiplication compared to classical optical microscopy. However, instead of requiring the emitter to emit pairs of photons, one can acquire the same amount of information by assessing the absence of the two-photon correlation in single-photon emission by measuring the second-order autocorrelation function (based on the presence of two detectors). Furthermore, one can achieve an arbitrarily large improvement in resolution by measuring higher-order correlations in the emission of a single photon emitter. In the most general form, the intensity distribution of the super-resolved image based on antibunching SRM G(n)(x, y) can be obtained via retrieving spatial distributions of the n-th order autocorrelation function at zero time delay g(n)(x, y, \u03c4=0) and the number of detected photons \u00d1 (x, y) based on",
+                        "G(n)(x,y)\u02dc\u00d1(x,y)n\u03a3i=1i=iciXi,\u2003\u2003(1)",
+                        "where \u00d1(x, y) is the average number of detected photons from a given point (x,y) of the sample,\n\nXi is a function of the product g(i)(x, y, 0)g(i)(x, y, 0) . . . g(i)(x, y, 0),\n\nimax is the number of ordered combinations, fulfilling the condition \u03a3k=1ljk=n. For example, for n=2 case, Eq. (2) takes the simple form:",
+                        "G(2)(x,y)\u02dc\u00d1(x,y)2(1\u2212g(2)(x,y,0)).\u2003\u2003(2)",
+                        "The most commonly used approach for retrieving the g(2)(0) value is a Hanbury-Brown-Twiss (HBT) interferometry measurement, composed of a beam-splitter directing the emitted light to two single-photon detectors connected to a correlation board (as shown in FIG. 2). The correlation board registers events consisting of pairs of detector clicks. It then arranges these events into a histogram as a function of the time delay \u03c4 between the clicks, which can be used for the postprocessing via a curve fitting process, e.g., Levenberg-Marquardt (LM) fitting as provided by:",
+                        "\\(\\begin{matrix}\n{{g^{(2)}(\\tau)} = {1 - {a_{1}e^{\\frac{- \\tau}{t_{1}}}} + {a_{2}e^{\\frac{- \\tau}{t_{2}}}}}} & (3)\n\\end{matrix}\\)",
+                        "where, aj, tj, j=1,2 are the fitting parameters related to the internal dynamics of the emitters. Referring to FIG. 3, the autocorrelation function is shown, indicating almost zero correlation with zero delay, as to be expected since the photons from the emitter can only be transmitted to one detector or reflected to the other detector. FIG. 3 also shows the main steps of the fitting-based approach for the realization of the antibunching SRM technique based on the LM fitting. Specifically, the area of interest is divided into n\u00d7m pixels, and autocorrelation histograms are acquired at each pixel. The autocorrelation measurement is performed for several minutes for each pixel. The L-M fitting is done over all HBT histograms, and the corresponding g(2)(x, y, 0) map is retrieved. Finally, the resolved image is calculated via Eq. (2) (as further shown in FIG. 3).",
+                        "In the Gedanken experiment, according to the present disclosure, the photon emitter is a single nitrogen-vacancy (NV) centers in nanodiamonds dispersed on a coverslip glass substrate. These emitters typically yield between 104 and 105 counts per second on each of the single-photon detectors in the HBT setup (when in focus) and exhibit fluorescence lifetimes between 10 and 100 ns. During the scan, when the emitters are partially out of focus, the fluorescence counts drop significantly. Consequently, to assess g(2)(0) via Levenberg-Marquardt (L-M) fitting with an uncertainty varying between \u00b10.01 to \u00b10.05, autocorrelation histogram acquisition times of 1 min are required per pixel. In the pulsed excitation regime, the fitting is not required to retrieve g(2)(0) as long as the pump repetition period is much longer than the emitter's fluorescence lifetime. However, this requirement becomes somewhat impractical when the emitter lifetime is long, as in the case of NV centers. The developed machine learning approach addresses the aforementioned problem by rapidly estimating the g(2)(x, y, 0) values based on sparse HBT measurement. According to the present disclosure, the machine learning framework is shown in FIG. 4a with additional details shown in FIGS. 5a and 5b. A CNN regression network is trained on a \u201csparse\u201d autocorrelation data set with short acquisition times. Once trained, the CNN network estimates the g(2)(0) values, requiring an acquisition time of less than 10 s.",
+                        "With reference to FIG. 4a, a schematic is shown for the main building block of the machine learning assisted antibunching SRM technique, according to the present disclosure, which provides a CNN-based regression model used for retrieving g(2)(0) values. As shown in FIG. 4a, a short (<10 seconds) of the 2nd order autocorrelation vs. delay time from two detectors for a pixel is provided to the pre-trained CNN, which then provides the super-resolved image for that pixel. This process is repeated for all pixels, thereby providing the super-resolved image of the object/sample. As discussed above, the prior art requires about 1 to 5 minutes per pixel to provide the super-resolved image, while utilizing the CNN of the present disclosure, this can be reduced by at least a factor of 12, thus significantly improving the processing time. The structure of the CNN, its training and testing, and a comparison of its performance against convention LM fitting are provided below.",
+                        "As discussed in FIG. 4a, the supervised training of the CNN regression model was performed using an augmented dataset of 5 s-10 s sparse HBT histograms and the corresponding ground truth labels. The training process is realized by performing ADAMAX gradient descent optimization using the KERAS library for 100 epochs with a mean absolute percentage error loss function. In this setup, 80% of the dataset is used for training, while the remaining 20% are used for validation and testing.",
+                        "The training dataset for sparse second-order autocorrelation histograms includes measurements performed on a set of 40 randomly dispersed nanodiamonds with NV centers on a coverslip glass substrate. Referring to FIG. 4b, a schematic is shown describing the process of training the CNN. As shown, sparse 2nd order autocorrelation data vs. delay time is provided for each pixel to the CNN as training input data. The CNN generates a predicted super-resolved image for each pixel. The super-resolved image is then compared to the experimental super-resolved image, thus generating an error signal, which is minimized by changing the weights of the CNN in a regression process. Once the weights have been determined, the CNN is considered trained.",
+                        "Referring to FIGS. 5a and 5b, the CNN and its operation are shown in more detail. FIG. 5a is a schematic of the optical circuit used, according to the present disclosure for the HBT setup. FIG. 5a shows two avalanche detectors (D1, D2) with 30 ps jitter, which are coupled to a pulse correlator with a 4 ps internal jitter. The co-detection events are recorded over a range of 500 ns and collected into 215 equally sized time bins. For each of the 40 emitters, hundreds of sparse autocorrelation histograms with 1 s acquisition time are collected until the total number of co-detection events in their sum allows a precise ground truth (g(2)(0)) estimation via L-M fitting with fitting uncertainty varying between \u00b10.01 to \u00b10.05. The estimated ground-truth value is then assigned as a label to the entire set of is histograms. Thereafter, all the possible combinations of 1 to 10 of these is histograms are formed to obtain training data that emulated histograms with acquisition times from 1 s to 10 s. Such a data augmentation process assumes that the emission is a process with no memory over times exceeding 1 s, thus allowing to extend the training dataset significantly.",
+                        "Referring to FIG. 5b, a schematic is provided depicting the structure of the CNN used for prediction of g(2)(0) and thus the super-resolved image. The CNN includes one input layer, three hidden convolutional layers, one max-pooling layer followed by dropout, three fully connected layers, and one output node generating the super-resolved image. The input layer included 215 nodes corresponding to the number of bins in the input histogram. The feature learning part of the CNN is optimized to capture the salient features of the autocorrelation datasets. In contrast, the regression part is trained to predict g(2)(0) values based on these extracted features. All of the hidden layers comprised 260 filters. The third hidden layer's output is connected with the max-pooling layer, followed by the dropout layer. The kernel size of the filters (4) is chosen to be the same for each layer. Importantly, the CNN takes the total number of two-photon detection events Nevents in the histogram as an additional input. Nevents is concatenated to the output of the feature learning part and used as a regularization term during the training process. The 5 s-10 s histograms acquired on pixels, where the contribution of the quantum emission to the total counts is negligible, feature Nevents<4, while the histograms on areas close to the quantum emitter locations feature Nevents=65 on average. To populate the \u201cdark\u201d pixels, the CNN regression network is implicitly biased to produce g(2)(0)=1, on the datasets with Nevents<4 counts.",
+                        "The performance of the trained CNN regression model is assessed via calculating the mean absolute percentage error (MAPE) and the coefficient of determination (r2) on the 5 s histogram datasets. FIG. 5c is a graph of predicted g(2)(0) vs. ground truth based on the LM fitting alone, which shows the regression plot of the LM fitting performed on 5 s HBT histograms. Dots show the average predicted g(2)(0) value, while error bars show the standard deviation of the predicted value over all the 5 s datasets acquired for a given emitter. Specifically, markers show the average value of the prediction, while error bars show the standard deviation over the set of 5 s histograms belonging to the same emitter. Due to the sparsity of the HBT measurement, the LM fitting expectedly cannot ensure precise fitting of the data, which results in MAPE=32%, r2=70%, and root mean square error (RMSE) of 0.215.",
+                        "In contrast, the CNN regression model ensures precise predictions of the g(2)(0) values based on 5 s HBT histograms, as indicated in FIG. 5d, which is another graph of g(2)(0) vs. ground truth utilizing the CNN regression model. Dots show the average predicted g(2)(0) value, while error bars show the standard deviation of the predicted value over all the 5 s datasets acquired for a given emitter. Due to the ability of the CNN network to learn hidden correlations between signature features of the sparse datasets and the ground truth labels, the CNN regression model shows excellent performance on the sparse dataset and ensures low MAPE (5%), a high coefficient of determination of 93% and RMSE of 0.0018. The CNN performance is also robust against the reduction of the acquisition time. The performance of both approaches was analyzed on 5 s, 6 s, and 7 s HBT datasets. The performance of the direct fitting ensures 30% and 27% MAPE when applied to 6 s and 7 s HBT measurements, respectively. A comparison between the LM fitting approach and the CNN approach shows that the CNN regression model ensures a much more robust performance than LM fitting. It ensures 3.92% MAPE on 6 s HBT datasets and reaches up to 3.58% MAPE when applied to 7 s datasets.",
+                        "The benchmarking of the ML-assisted regression of autocorrelation data enables the experimental demonstration of the ML-assisted antibunching SRM. The experiment is realized on a sample of randomly dispersed nanodiamonds with NVs on a glass substrate. In this demonstration, the objective is scanned using a piezo-stage with sub-10 nm resolution over the 775\u00d7775 nm2 region of interest, which is divided into 1024 (32\u00d732) pixels and contains one nanodiamond with a single NV center. Autocorrelation measurements are performed on each pixel in 1 s time increments with a 7 s total acquisition time per pixel. Along with the autocorrelation data, the corresponding photoluminescence (PL) map is retrieved, which is shown in FIG. 6a, which is a PL distribution within the area of 32 by 32 pixels containing one NV center.",
+                        "A graph of intensity vs. line coordinates in \u03bcm for the original PL and a Gaussian fit cross-section of the diffraction-limited image, taken along the dashed line (see FIG. 6a), is shown in FIG. 6b. Gaussian fitting of the intensity distribution yields a full width half maximum (FWHM=2\u221a2 ln 2\u03c3) of 310 nm. By LM fitting the 5 s sparse histograms of each pixel, the g(2)(x, y, 0) map is retrieved. Due to the sparsity of the HBT histograms, the L-M fitting expectedly leads to a noisy reconstruction of the g(2)(x, y, 0) distribution (as shown in the reconstructed PL of FIG. 6c). FIG. 6d shows the corresponding reconstructed image of G(2)(x, y) (based on Eq. 3). The cross-section of the obtained image and corresponding fitting with the same a value as of the original PL image are shown in FIG. 6e. It should be noted that the g(2)(x, y, 0) obtained via L-M fitting leads to a noisy, blurred image without any gain in spatial resolution, which is a direct consequence of the inaccurate retrieval of the g(2)(x, y, 0). In contrast, the CNN-based antibunching SRM ensures the expected \u221a2 gain in resolution on a sparse 7 s HBT scan. FIGS. 6f and 6g show g(2)(x, y, 0) distribution retrieved via using the pre-trained CNN (FIG. 6f) and corresponding super-resolved image (FIG. 6g). It should be noted that ML-based framework ensures precise reconstruction of the g(2)(x, y, 0) map, and as a result, achieves a \u221a2 gain in the spatial resolution of the reconstructed image. Gaussian fitting of the cross-section distribution of the resolved image shows that ML assisted approach ensures a FWHM of 219 nm, which corresponds to \u03c3CNN=\u03c3/\u221a2 (as shown in FIG. 6h).",
+                        "Up to this point, an acquisition time of 7 s per pixel has been considered. However, the robustness of the regression model indicates that the developed approach can be efficiently applied to more sparse datasets. FIGS. 7a, 7b, and 7c show the reconstructed images based on 5 s, 6 s, and 7 s HBT scans, respectively, and FIG. 7d compares their cross-sections, which appear stable against the reduction of the acquisition time. It is worth noting that the fitting-based approach requires at least 1 min of HBT measurement per pixel for precise retrieval of the g(2)(0) values, as it has been observed during the dataset collection process discussed above. This time requirement significantly depends on the properties of the single-photon emitters, e.g., quantum purity, lifetime, and emission rate, and can be significantly longer in the case of low emission rates of the emitter. As a result, the developed ML-assisted anti-bunching approach ensures up to 12 times speed-up compared with the fitting-based approach.",
+                        "The developed ML-assisted SRM is also capable of resolving closely spaced quantum emitters. FIGS. 8a, 8b, and 8c show the PL distribution (FIG. 8a), CNN-based retrieved 1\u2212g(2)(x, y, 0) map (FIG. 8b) and the CNN-based resolved image of the two NVs separated by \u02dc600 nm distance (FIG. 8c). By comparing the original PL distribution and the resolved image, the expected \u221a2 improvement in the spatial resolution is observed. By performing the Gaussian fitting of the cross-section (taken along the dashed line in FIG. 8a), one can retrieve the FWHM values of each of the lobes, which are equal to about 465 nm (as shown in FIG. 8d). By performing the same fitting on the resolved image, \u221a2 narrowing of the emission features (FWHM=330 nm) by the CNN based approach is confirmed (FIG. 8e).",
+                        "While a significant portion of the present disclosure is directed to two detectors, and thus 2nd order autocorrelation data associated with these two detectors, no such limitation is intended herein. Specifically, the present disclosure is also intended to cover higher orders based on an additional number of detectors. Specifically referring to FIG. 9a, a schematic of higher number of detectors is shown, resulting in an nth order autocorrelation function vs. delay time in ns shown in FIG. 9b.",
+                        "It should be appreciated that both data from curve-fit autocorrelation (2nd, . . . , nth order) function (i.e., the LM curve-fit discussed above) or actual raw experimental data without curve fitting can be used to train the CNN.",
+                        "Those having ordinary skill in the art will recognize that numerous modifications can be made to the specific implementations described above. The implementations should not be limited to the particular limitations described. Other implementations may be possible."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce patent disclosure",
+                        "define \"about\" and \"substantially\"",
+                        "describe novel approach to speed up quantum-based super-resolution microscopy",
+                        "introduce convolutional neural networks (CNNs) for rapid classification of quantum emitters",
+                        "describe CNN-based regression model for estimating g(2)(0) values",
+                        "discuss application of CNN model to antibunching-based scanning SRM technique",
+                        "describe reduction of acquisition time using CNN model",
+                        "motivate antibunching SRM technique",
+                        "describe Gedanken experiment for understanding antibunching SRM",
+                        "derive intensity distribution of super-resolved image",
+                        "describe Hanbury-Brown-Twiss (HBT) interferometry measurement",
+                        "introduce Levenberg-Marquardt (LM) fitting for retrieving g(2)(0) values",
+                        "describe limitations of LM fitting",
+                        "introduce machine learning approach for rapid estimation of g(2)(x, y, 0) values",
+                        "describe CNN regression network for retrieving g(2)(0) values",
+                        "discuss training of CNN network",
+                        "describe structure of CNN network",
+                        "discuss performance of CNN network",
+                        "compare performance of CNN network with LM fitting",
+                        "describe experimental demonstration of ML-assisted antibunching SRM",
+                        "describe sample preparation for experimental demonstration",
+                        "describe autocorrelation measurements for experimental demonstration",
+                        "describe retrieval of g(2)(x, y, 0) map using LM fitting",
+                        "describe limitations of LM fitting for g(2)(x, y, 0) map retrieval",
+                        "describe retrieval of g(2)(x, y, 0) map using CNN network",
+                        "describe super-resolved image reconstruction using CNN network",
+                        "discuss gain in spatial resolution using CNN network",
+                        "describe robustness of CNN network against reduction of acquisition time",
+                        "compare performance of CNN network with fitting-based approach",
+                        "describe capability of CNN network to resolve closely spaced quantum emitters",
+                        "describe PL distribution of two NVs",
+                        "describe CNN-based retrieved 1\u2212g(2)(x, y, 0) map",
+                        "describe CNN-based resolved image of two NVs",
+                        "discuss improvement in spatial resolution using CNN network",
+                        "describe extension of CNN network to higher-order autocorrelation functions",
+                        "describe use of higher-order autocorrelation functions for training CNN network",
+                        "discuss flexibility of CNN network for different types of data",
+                        "discuss potential modifications to CNN network",
+                        "conclude patent disclosure"
+                    ],
+                    "num_characters": 19558,
+                    "outline_medium": [
+                        "introduce terminology",
+                        "define \"about\" and \"substantially\"",
+                        "motivate novel approach to quantum-based super-resolution microscopy",
+                        "describe antibunching SRM technique",
+                        "explain Gedanken experiment",
+                        "derive intensity distribution of super-resolved image",
+                        "describe HBT interferometry measurement",
+                        "motivate machine learning approach",
+                        "describe CNN-based regression model",
+                        "explain training process of CNN",
+                        "describe structure of CNN",
+                        "discuss performance of CNN regression model",
+                        "compare CNN approach with LM fitting",
+                        "describe experimental demonstration of ML-assisted antibunching SRM",
+                        "show PL distribution and Gaussian fit",
+                        "compare reconstructed images using LM fitting and CNN approach",
+                        "demonstrate robustness of CNN approach against reduction of acquisition time",
+                        "show capability of resolving closely spaced quantum emitters",
+                        "generalize approach to higher-order autocorrelation functions"
+                    ],
+                    "outline_short": [
+                        "define terms",
+                        "motivate CNN approach",
+                        "describe antibunching SRM technique",
+                        "explain Gedanken experiment",
+                        "detail HBT interferometry measurement",
+                        "introduce CNN regression model",
+                        "describe training and testing of CNN",
+                        "demonstrate ML-assisted antibunching SRM",
+                        "discuss extensions to higher-order autocorrelation functions"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of providing super-resolved images of a photon emitting particle, comprising:\nproviding a machine-learning (ML) platform, wherein the ML platform is configured to receive pixel-based sparse autocorrelation data and generate a predicted super-resolved image of a photon emitting particle;\nreceiving photons from the photon emitting particle by two or more photon detectors, each generating an electrical pulse associated with receiving an incident photon thereon;\ngenerating sparse autocorrelation data from the two or more photon detectors for each pixel within an image area; and\ninputting the pixel-based sparse autocorrelation data to the ML platform, thereby generating a predicted super-resolved image of the imaging area, wherein the resolution of the super-resolved image is improved by \u221an as compared to a classical optical microscope limited by Abbe diffraction limit.",
+        "2. The method of claim 1, wherein n is 2.",
+        "3. The method of claim 2, wherein processing speed of generating the super-resolved image is improved by at least 12 times as compared to a non-ML arrangement.",
+        "4. The method of claim 1, wherein the ML platform is a convolutional neural network (CNN).",
+        "5. The method of claim 1, training of the ML platform, comprising:\nproviding the pixel-based generated sparse autocorrelation data from the two or more photon detectors to the ML platform in training;\ngenerate a predicted super-resolved image for all pixels within the imaging area;\ncompare the predicted super-resolved image for all pixels with a super-resolved image generated experimentally from a full dataset, thereby generating an error signal; and\nminimizing the error signal by altering characteristics of the ML platform.",
+        "6. The method of claim 5, wherein the experimentally generated super-resolved image is based on:\n\n\nG(n)(x,y)\u02dc\u00d1(x,y)n\u03a3i=1i=iciXi,\n\nwhere \u00d1(x, y) is the average number of detected photons from a given point (x,y) of the imaging area,\nXi is a function of the product g(i)(x, y, 0)g(i)(x, y, 0) . . . g(i)(x, y, 0), and\nimax is the number of ordered combinations, fulfilling the condition \u03a3k=1ljk=n.",
+        "7. The method of claim 6, wherein if n=2 (2 detectors) G(2)(x,y) is expressed by:\n\n\nG(2)(x,y)\u02dc\u00d1(x,y)2(1\u2212g(2)(x,y,0)).",
+        "8. The method of claim 7, wherein the 2nd order autocorrelation function is expressed by Levenberg-Marquardt (LM) fitting:\n\n\\({g^{(2)}(\\tau)} = {1 - {a_{1}e^{\\frac{- \\tau}{t_{1}}}} + {a_{2}e^{\\frac{- \\tau}{t_{2}}}}}\\)\nwhere, aj, tj, j=1,2 are the fitting parameters related to internal dynamics of the photon emitters.",
+        "9. The method of claim 8, wherein the ML platform is a convolutional neural network.",
+        "10. The method of claim 6, wherein the error minimization is based on gradient descent.",
+        "11. A system for generating super-resolved images of a photon emitting particle, comprising:\na platform configured to receive a particle for which a super-resolved image to be generated;\na light source configured to illuminate the particle;\ntwo or more photon detectors configured to receive photons emanating from the particle, each photon detector generating an electrical pulse associated with receiving an incident photon emanating from the particle thereon; and\na computer system having a processor and non-transient memory with software thereon configured to:\nprovide a machine-learning (ML) platform, the ML platform is configured to receive pixel-based sparse autocorrelation data associated with the two or more detectors and generate a predicted super-resolved image of the photon emitting particle;\ngenerate sparse autocorrelation data from the two or more photon detectors for each pixel within an image area; and\ninput the pixel-based sparse autocorrelation data to the ML platform, thereby generating a predicted super-resolved image of the imaging area, wherein the resolution of the super-resolved image is improved by \u221an as compared to a classical optical microscope limited by Abbe's diffraction limit.",
+        "12. The system of claim 11, wherein n is 2.",
+        "13. The system of claim 12, wherein processing speed of generating the super-resolved image is improved by at least 12 times as compared to a non-ML arrangement.",
+        "14. The system of claim 11, wherein the ML platform is a convolutional neural network (CNN).",
+        "15. The system of claim 11, training of the ML platform, comprising:\nproviding the pixel-based generated sparse autocorrelation data from the two or more photon detectors to the ML platform in training;\ngenerate a predicted super-resolved image for all pixels within the imaging area;\ncompare the predicted super-resolved image for all pixels with a super-resolved image generated experimentally from a full dataset, thereby generating an error signal; and\nminimizing the error signal by altering characteristics of the ML platform.",
+        "16. The system of claim 15, wherein the experimentally generated super-resolved image is based on:\n\n\nG(n)(x,y)\u02dc\u00d1(x,y)n\u03a3i=1i=iciXi,\n\nwhere \u00d1(x, y) is the average number of detected photons from a given point (x,y) of the imaging area,\nXi is a function of the product g(i)(x, y, 0)g(i)(x, y, 0) . . . g(i)(x, y, 0), and\nimax is the number of ordered combinations, fulfilling the condition \u03a3k=1ljk=n.",
+        "17. The system of claim 16, wherein if n=2 (2 detectors) G(2)(x,y) is expressed by:\n\n\nG(2)(x,y)\u02dc\u00d1(x,y)2(1\u2212g(2)(x,y,0)).",
+        "18. The system of claim 17, wherein the 2nd order autocorrelation function is expressed by Levenberg-Marquardt (LM) fitting:\n\n\\({g^{(2)}(\\tau)} = {1 - {a_{1}e^{\\frac{- \\tau}{t_{1}}}} + {a_{2}e^{\\frac{- \\tau}{t_{2}}}}}\\)\nwhere, aj, tj, j=1,2 are the fitting parameters related to internal dynamics of the photon emitters.",
+        "19. The system of claim 18, wherein the ML platform is a convolutional neural network",
+        "20. The system of claim 16, wherein the error minimization is based on gradient descent."
+    ]
+}

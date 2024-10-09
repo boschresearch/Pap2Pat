@@ -1,0 +1,246 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce technical field of prenylated chemicals
+
+## BACKGROUND
+
+- motivate prenylation of natural compounds
+- describe limitations of cannabinoid production
+- highlight environmental challenges of cannabis farming
+
+## SUMMARY
+
+- define recombinant polypeptide
+- describe mutations of SEQ ID NO:30
+- specify conservative amino acid substitutions
+- define sequence identity
+- describe prenylation reactions
+- define recombinant pathway
+- specify enzymes for glucose conversion
+- describe pyruvate dehydrogenase bypass
+- introduce "purge valve" for NADH/NADP recycling
+- list enzymes for pyruvate oxidase pathway
+- describe 4-step pathway for GPP production
+- specify ATP and olivetolate supplementation
+- describe cannabidiolic acid production
+
+## DETAILED DESCRIPTION
+
+- define singular and plural forms
+- define technical and scientific terms
+- explain use of "or" and "comprise"
+- discuss prior art publications
+- introduce prenylation and its importance
+- describe prenylated natural products and their challenges
+- discuss microbial production of prenylated natural products
+- highlight the challenges of producing cannabinoids
+- introduce synthetic biochemistry as an alternative
+- describe the cell-free system for cannabinoid production
+- outline the biosynthetic pathways used
+- describe the "purge valves" used to regulate NAD(P)H levels
+- introduce NphB and its properties
+- describe NovQ and its catalytic promiscuity
+- introduce AtaPT and its prenylation capabilities
+- discuss the limitations of wild-type NphB
+- describe the testing of the cell-free system
+- discuss the inhibition of PDH by aromatic polyketides
+- introduce the PDH bypass system
+- describe the improved titers of 5-prenyl-1,6 DHN
+- discuss the mechanism of prenyl-transfer
+- model OA into the active site of NphB
+- design NphB variants using ROSETTA software
+- rank changes likely to have the most significant impact on OA binding
+- generate a library of NphB variants
+- describe the recombinant methods for producing modified NphB polypeptides
+- discuss the initial screen for CBGA production
+- identify top hits from the initial screen
+- purify and characterize the top hits
+- design a focused library of NphB variants
+- describe the kinetic parameters of the best mutants
+- highlight the improved catalytic efficiency of M23
+- discuss the specificity of M23 for CBGA production
+- provide mutant NphB variants with improved activity
+- describe polynucleotides encoding the NphB variants
+- discuss the degeneracy of the genetic code
+- provide exemplary polynucleotide sequences
+- describe recombinant host cells and cell-free systems
+- discuss the use of the recombinant cells and cell-free systems
+- outline the objective of producing GPP from glucose or prenol/isoprenol
+- describe the use of mutant NphB to generate CBGA
+- introduce cell-free system
+- convert glucose to glucose-6-phosphate
+- convert glucose-6-phosphate to fructose-6-phosphate
+- convert fructose-6-phosphate to fructose-1,6-bisphosphate
+- convert fructose-1,6-bisphosphate to glyceraldehyde-3-phosphate and dihydroxyacetone phosphate
+- convert glyceraldehyde-3-phosphate to 1,3-bisphosphoglycerate
+- convert 1,3-bisphosphoglycerate to 3-phosphoglycerate
+- convert 3-phosphoglycerate to 2-phosphoglycerate
+- convert 2-phosphoglycerate to phosphenolpyruvate
+- convert phosphenolpyruvate to pyruvate
+- convert pyruvate to acetyl-CoA using PDH bypass
+- convert acetyl-CoA to acetoacetyl-CoA
+- convert acetoacetyl-CoA to HMG-CoA
+- convert HMG-CoA to mevalonate
+- convert mevalonate to mevalonate-5-phosphate
+- convert mevalonate-5-phosphate to mevalonate-5-diphosphate
+- convert mevalonate-5-diphosphate to isopentyl pyrophosphate
+- convert isopentyl pyrophosphate to geranyl pyrophosphate
+- convert geranyl pyrophosphate to prenyl-flavinoids, geranyl-flavonoics, prenyl-stilbenoids, ger
+- describe mutant NphB enzyme
+- test mutant NphB enzyme for CBGA production
+- describe flow system for CBGA production
+- test flow system for CBGA production
+- produce CBGVA using divirinic acid
+- test mutant NphB enzyme for CBGVA production
+- convert CBGA to CBDA using CBDA synthase
+- convert CBGVA to CBDVA using CBDA synthase
+- describe benefits of cell-free system
+- describe flexibility of synthetic biochemistry platform
+- provide list of enzymes, organisms, and reaction amounts used
+- provide accession numbers for sequences
+- incorporate sequences by reference
+- describe overall pathway
+- describe enzymes and co-factors used
+- provide table of enzymes, organisms, and reaction amounts used
+- provide accession numbers for sequences
+- describe prenylation of olivetolate by GPP
+- introduce in vitro method for producing prenylated compounds
+- describe cell-free preparations for in vitro method
+- illustrate pathway as various modules
+- describe isoprenoid module
+- describe aromatic polyketide module
+- describe cannabinoid module
+- introduce in vivo system using recombinant microorganisms
+- describe recombinant microorganisms with elevated expression of target enzymes
+- describe reduction of competing enzymes in recombinant microorganisms
+- define microorganism
+- define prokaryotes
+- define bacteria
+- define gram-negative bacteria
+- define gram-positive bacteria
+- define enzyme activity
+- define biosynthetic pathway
+- describe metabolically engineered microorganisms
+- introduce genetic material into host microorganism
+- disrupt or knockout genes in host microorganism
+- define enzyme
+- define protein or polypeptide
+- define metabolically engineered or metabolic engineering
+- define metabolite
+- define mutation
+- define native or wild-type protein, enzyme, polynucleotide, gene, or cell
+- define parental microorganism
+- describe genetic modification of parental microorganism
+- introduce nucleic acid molecules into parental microorganism
+- facilitate expression or over-expression of target enzymes
+- reduce or eliminate target enzymes
+- provide polynucleotides encoding enzymes
+- describe recombinant nucleic acid molecules
+- provide sequence listing for exemplary polypeptides
+- describe conservative variations of polypeptide molecules
+- define polynucleotide, nucleic acid, or recombinant nucleic acid
+- define expression of gene or polynucleotide
+- describe degeneracy of genetic code
+- introduce polynucleotide or gene sequence encoding biosynthetic enzyme
+- describe tolerance of polypeptide to amino acid substitutions
+- introduce recombinant DNA expression vectors or plasmids
+- describe forms of DNA molecules
+- describe amplification of polynucleotide using PCR
+- describe design, synthesis, and isolation of polynucleotide sequences
+- introduce creation of isolated polynucleotide molecule
+- describe introduction of mutations into polynucleotide
+- describe codon optimization
+- describe optimization of coding sequences
+- define substrate or suitable substrate
+- define transformation
+- define vector
+- describe components of expression vector
+- describe promoters for inclusion in expression vectors
+- describe recombinant expression vectors
+- describe homologs of enzymes
+- define homology or homologous proteins
+- describe percent identity of amino acid sequences
+- describe conservative amino acid substitutions
+- describe isozymes
+- describe sequence homology for polypeptides
+- describe algorithm for comparing molecule sequences
+- describe database searching using amino acid sequences
+- provide accession numbers and sequences for genes, homologs, and variants
+- describe identification of homologs and isozymes
+- describe culture conditions for growth and maintenance of recombinant microorganisms
+- describe modification of microorganisms to include recombinant metabolic pathways
+- describe use of vectors, promoters, and other molecular biological techniques
+- describe in vitro amplification methods
+- describe production of homologous nucleic acids
+- describe cloning in vitro amplified nucleic acids
+- describe amplifying large nucleic acids by PCR
+- describe conversion of RNA into double-stranded DNA
+- describe sequencing of PCR amplicons
+- describe use of reverse transcriptase and polymerase
+- describe illustration of invention in examples
+- describe non-limiting nature of examples
+- conclude description of invention
+
+### EXAMPLES
+
+- list chemicals and reagents
+- specify sources of chemicals and reagents
+- describe cloning and purification of enzymes
+- detail Gibson Assembly method
+- outline plasmid transformation and enzyme expression
+- describe cell harvesting and lysis
+- detail NiNTA resin binding and protein elution
+- describe PDH cell-free reactions
+- specify co-factor and substrate concentrations
+- detail PDH activity assays
+- describe PyOx/PTA cell-free reactions
+- specify co-factor and substrate concentrations
+- detail reaction quenching and extraction
+- describe HPLC analysis
+- detail quantification of products
+- describe calibration curve generation
+- detail quantification of prenyl-products without authentic standards
+- describe liquid chromatography-mass spectrometry
+- detail electrospray ionisation time-of-flight measurements
+- describe NMR spectroscopy
+- detail identification of prenyl-products
+- describe Rosetta design to modify NphB binding pocket
+- detail olivetolate placement in active site
+- describe generation of rotamer library
+- detail Rosetta design parameters
+- describe initial NphB mutant library screening
+- detail small-scale expression and purification
+- describe enzyme assays
+- detail focused NphB mutant library screening
+- describe large-scale expression and purification
+- detail enzyme assays
+- describe HPLC analysis
+- describe enzyme kinetic parameters
+- detail experimental conditions
+- outline GC-MS characterization
+- describe nonane-flow system
+- detail cloning of CBDAS
+- describe CBDAS expression test
+- outline CBDAS activity assay
+- describe production of CBDVA and CBDA
+- detail MatB activity assay
+- describe AAE3 activity assay
+- outline ADK activity assay
+- describe CPK activity assay
+- detail OLS activity assay
+- describe OLS/OAC activity assay
+- outline full pathway setup
+- detail MatB pathway
+- describe MdcA pathway
+- outline reaction conditions
+- describe enzyme concentrations
+- detail cofactor concentrations
+- outline reaction initiation
+- describe quenching and extraction
+- detail HPLC analysis
+- describe pathway overview
+- outline modifications and scope
+- conclude embodiments
+

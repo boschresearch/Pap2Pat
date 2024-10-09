@@ -1,0 +1,149 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce TCD and its applications
+
+## SUMMARY
+
+- process signal to identify morphological variables
+- categorize waveform based on morphological variables
+- visualize categorized waveform
+- determine probability of waveform belonging to category
+- define morphological variables
+- map variables to axes
+- categorize variables
+- define categories and corresponding areas
+- categorize waveform based on variable values
+- relate categories to blood flow and pathologies
+- describe device for visualizing categorization
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+- provide context for appended drawings
+- describe systems and methods for automated flow type classification
+- introduce objective assessment of TCD morphology using machine learning
+- extract morphological variables from waveforms
+- describe spectral clustering for identifying groups
+- discuss TCD morphological variability beyond TIBI flow grades
+- introduce Velocity Curvature Index (VCI) for detecting Large Vessel Occlusion (LVO)
+- describe limitations of VCI for differentiating pathological morphologies
+- introduce objective waveform categorization for stroke etiology
+- describe data-driven approach to waveform categorization
+- apply unsupervised learning algorithm to dataset
+- employ spectral clustering for identifying clusters
+- compare TCD waveform morphology across subject groups
+- acquire CBFV signals using ultrasound probes
+- describe automated process for signal acquisition
+- extract individual beat waveforms from recorded depths
+- align and average accepted beats for representative waveform
+- resample waveforms to match native sampling rate
+- smooth waveforms to reduce high-frequency noise
+- normalize waveforms with respect to time and velocity
+- extract three morphological features from each waveform
+- define onset variable for absolute peak onset
+- define canopy variable for systolic canopy length
+- define peaks variable for number/prominence of auxiliary peaks
+- use spectral clustering to identify groups in feature space
+- derive beat archetypes for each resultant cluster
+- describe categorization of onset variable
+- describe categorization of canopy variable
+- describe categorization of peaks variable
+- illustrate waveform translation to three-dimensional representation
+- depict waveform data with various morphological features
+- describe clusters of waveforms
+- define morphological variables
+- partition feature space via spectral clustering
+- derive archetypal waveforms for each cluster
+- visualize cluster morphologies
+- describe features of representative waveforms
+- depict categories of waveforms in 3D cluster space
+- describe fuzzy boundary between clusters
+- discuss limitations of clustering
+- depict waveforms with different morphological features
+- compute representative waveforms for each category
+- describe features of waveforms in each category
+- depict histograms of probability distributions
+- describe gap-statistic disparity for clusters
+- determine optimal number of clusters
+- relate clusters to TIBI flow grades
+- discuss association of clusters with control subjects and LVO
+- discuss limitations of TIBI flow grades
+- propose extension of clustering framework
+- describe potential applications of clustering framework
+- introduce waveform visualization system
+- describe headset device
+- describe controller
+- describe output device
+- describe input device
+- describe network interface
+- describe probe configuration
+- describe automatic location of middle cerebral artery
+- describe positioning of probes
+- describe manual operation of probes
+- conclude description of waveform visualization system
+- describe controller 830
+- receive ultrasound data
+- generate CBFV waveforms
+- perform signal processing functions
+- determine morphological indicators
+- display morphological indicators
+- describe output device 845
+- display information to operator
+- describe headset device 810
+- include robotics 814
+- control positioning of probe 805
+- translate probe 805
+- move probe 805 with respect to head
+- include multiple degree of freedom TCD transducer positioning system
+- describe end of probe 805
+- couple to robotics 814
+- include concave surface
+- focus generated energy
+- describe first end of probe 805
+- include transducer
+- emit acoustic energy
+- describe second end of probe 805
+- couple to robotics 814
+- include threaded section
+- secure in robotics 814
+- describe structural support 816
+- support head of patient
+- support headset device 810
+- describe input device 850
+- input information or commands
+- describe network interface 860
+- send and receive data
+- describe controller 830 operations
+- execute input commands
+- provide results
+- describe controller 830
+- introduce robotic control circuit 840
+- explain control of probe 805
+- describe method 900 of categorizing a waveform
+- process signal containing ultrasound data
+- identify morphological variables of waveform
+- identify categories corresponding to morphological variables
+- categorize waveform as belonging to one of the categories
+- visualize one or more categories
+- display probability of waveform belonging to categories
+- map morphological variables to axes
+- categorize waveform based on morphological variables
+- describe examples of categorizing waveform
+- describe correspondence of categories to blood flow
+- describe overlap of designated areas of categories
+- describe examples of blood flow and pathologies
+- describe automated algorithm for performing method
+- describe displaying waveform and samples
+- describe method 100 for visualizing a waveform
+- collect data about waveform using ultrasound insonation
+- automatically identify morphological variables of waveform
+- automatically reference predetermined categories
+- determine probability of waveform belonging to categories
+- categorize waveform as belonging to one of the categories
+- display categorized waveform and probability
+- describe examples of morphological variables
+- describe scope of claims and equivalents
+- describe implementation of logical blocks and circuits
+

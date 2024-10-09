@@ -1,0 +1,123 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce additive manufacturing
+- describe early 3-D printing techniques
+- list printed materials
+- highlight limitations of 3-D printing
+- introduce 3-D scanning
+- describe 3-D scanning applications
+- discuss quality management in manufacturing
+- highlight limitations of quality management
+- describe limitations of additive manufacturing systems
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+- provide context for subject matter
+- describe approach to quality assessment for 3-D printed objects
+- explain use of sensor data to assess progress and quality
+- list types of 3-D printing defects
+- describe sensing system for other applications
+- outline steps for characterization of a completed 3-D printed object
+- explain creation of digital model from scans
+- describe assessment using discrete nature of pixels
+- discuss conversion of pixel data to other formats
+- explain implementation in 3-D printing control systems
+- describe use of different types of sensors
+- discuss enhancement of 3-D defect assessment
+- describe creation of point-clouds from imagery
+- explain use of vector-based models and comparisons
+- discuss identification and characterization of defects
+- describe analysis of defects and corrective actions
+- explain use in bespoke industrial manufacturing
+- describe application in point-of-sale printings
+- discuss benefits of defect detection
+- illustrate sensor configuration
+- describe image capture devices and sensors
+- explain arrangement of optical sensors
+- describe use of single fixed sensor
+- illustrate sensor output values of various threshold levels
+- explain comparison of in-process object to final version
+- describe detection of potential errors
+- illustrate difference between partial and complete object
+- explain calculation of scale factor
+- describe generation of brightness values
+- illustrate comparisons at different thresholds
+- explain use of threshold to determine salient levels of difference
+- illustrate sensor and algorithm output values using various sensor angles
+- describe processing of progress level 1 image for all five camera positions
+- illustrate sensor and algorithm output values generated via various color exclusions
+- describe manipulation of threshold value
+- present quantitative analysis of sensor data
+- introduce table 1: aggregate level of difference by progress level and camera position
+- introduce table 2: maximum difference based on embodiment data
+- analyze tables 3 and 4: average level of difference and percentage of difference
+- discuss limitations of aggregate difference level and derivative metrics
+- introduce alternative method using threshold value to count pixels
+- present table 5: example embodiment data for number of pixels that are different
+- discuss effect of slight movements on method
+- introduce methods to exclude movement through color filtering or opaque box
+- present tables 6 and 7: percentage of pixels exhibiting difference and percentage of total difference level
+- discuss correlation between object completeness and difference level
+- discuss importance of environmental or camera position changes
+- introduce algorithm to identify and exclude background areas and changes
+- discuss use of system for object characterization during destructive scan
+- introduce benefits of multi-sensor system
+- discuss depth perception and material identification
+- introduce block diagram of machine
+- describe machine components: hardware processor, main memory, static memory, display unit, input device, UI navigation device, storage device, signal generation device,
+- describe machine components: network interface device, sensors, output controller, actuator control, destructor control
+- describe machine-readable medium
+- discuss transmission of instructions over communication network
+- describe network interface device
+- discuss adaptations and variations
+- introduce example 1: method for identifying 3-D printing defect
+- introduce example 2: applying image threshold to reduce false defect identification
+- introduce example 3: selecting image threshold to reduce false defect identification
+- introduce example 4: using multiple imaging device perspectives
+- introduce example 5: applying different image thresholds for different perspectives
+- introduce example 6: excluding background from image
+- introduce example 7: using 3-D printed object model for image model
+- introduce example 8: using object specification for image model
+- introduce example 9: using imaging device perspective model for image model
+- discuss optional features of examples
+- discuss permutations of elements in examples
+- conclude with discussion of examples
+- define detailed description
+- introduce example 10
+- introduce example 11
+- introduce example 12
+- introduce example 13
+- introduce example 14
+- introduce example 15
+- introduce example 16
+- introduce example 17
+- introduce example 18
+- introduce example 19
+- introduce example 20
+- introduce example 21
+- introduce example 22
+- introduce example 23
+- introduce example 24
+- introduce example 25
+- introduce example 26
+- introduce example 27
+- introduce example 28
+- introduce example 29
+- introduce example 30
+- introduce example 31
+- introduce example 32
+- introduce example 33
+- introduce example 34
+- introduce example 35
+- introduce example 36
+- introduce example 37
+- introduce example 38
+- introduce example 39
+- introduce example 40
+- introduce example 41
+- introduce example 42
+- introduce example 60
+

@@ -1,0 +1,90 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce SoC and IP cores
+- motivate 3PIP cores usage
+- limitations of 3PIP cores trustworthiness
+- challenge of Trojan detection
+- summarize existing detection approaches
+- limitations of structural analysis
+- limitations of functional analysis
+- limitations of symbolic algebra
+- limitations of formal methods and IFT
+
+## DETAILED DESCRIPTION
+
+- introduce IFS verification framework
+- detect IFS policy violations
+- describe SoC design flow
+- identify trusted and untrusted entities
+- explain Trojan structure and payload
+- describe Type I and Type II Trojans
+- introduce detection framework 213
+- model asset as stuck-at-0 and stuck-at-1 fault
+- leverage ATPG algorithm
+- identify observation and control points
+- use partial-scan ATPF technique
+- describe computing device 200
+- introduce processor circuit and memory
+- store data and components in memory
+- execute detection framework 213
+- perform IFS verification on IP core
+- determine compliance with confidentiality policy
+- determine compliance with integrity policy
+- define confidentiality policy
+- specify access restrictions
+- define integrity policy
+- specify control restrictions
+- describe HDL file
+- specify functionality of integrated circuit
+- develop HDL file using high-level language
+- define assets of IP core
+- store software components in memory
+- execute software components
+- define executable program
+- describe memory components
+- define volatile and nonvolatile memory
+- describe processor and memory architecture
+- facilitate communication between processors and memories
+- embody detection framework in software or hardware
+- describe dedicated hardware implementation
+- describe computer-readable medium
+- introduce detection framework
+- overview of detection framework
+- classify detection framework
+- initialize detection framework
+- determine type of IFS verification
+- perform confidentiality verification
+- illustrate confidentiality verification process
+- describe pseudo-code for confidentiality verification
+- perform integrity verification
+- illustrate integrity verification process
+- describe pseudo-code for integrity verification
+- determine IFS violation
+- identify type of violation
+- perform malicious observation point identification
+- analyze asset propagation path
+- perform intersect analysis
+- illustrate intersect analysis
+- perform malicious control point identification
+- analyze asset activation path
+- perform intersect analysis for integrity
+- identify input sequence triggering Trojan
+- extract triggering condition from stimulus vector
+- determine if Trojan trigger circuit is FSM
+- extract functionality of FSM
+- retrieve state transition graph
+- extract sequence of input patterns
+- illustrate functionality of detection framework
+- describe implementation of detection framework
+- discuss variations in execution order
+- discuss addition of counters or state variables
+- discuss disjunctive language
+- discuss embodiments and modifications
+- discuss scope of disclosure
+- discuss variations and modifications
+- discuss claims
+- discuss spirit and principles of disclosure
+- conclude disclosure
+

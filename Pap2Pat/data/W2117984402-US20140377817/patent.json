@@ -1,0 +1,498 @@
+{
+    "id": "US20140377817",
+    "authors": [
+        "James G. Elkins",
+        "Sonya M. Clarkson"
+    ],
+    "title": "HEAT STABLE, FE DEPENDENT ALCOHOL DEHYDROGENASE FOR ALDEHYDE DETOXIFICATION",
+    "date": "2014-06-20 00:00:00",
+    "abstract": "The present invention relates to microorganisms and polypeptides for detoxifying aldehydes associated with industrial fermentations. In particular, a heat-stable, NADPH- and iron-dependent alcohol dehydrogenase was cloned from Thermoanaerobacter pseudethanolicus 39E and displayed activity against a number of aldehydes including inhibitory compounds that are produced during the dilute-acid pretreatment process of lignocellulosic biomass before fermentation to biofuels. Methods to use the microorganisms and polypeptides of the invention for improved conversion of bio mass to biofuel are provided as well as use of the enzyme in metabolic engineering strategies for producing longer-chain alcohols from sugars using thermophilic, fermentative microorganisms.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [
+                "This application claims the benefit of priority of U.S. provisional patent application Ser. No. 61/838,961, filed Jun. 25, 2013, the content of which is incorporated herein in its entirety.",
+                "This invention was made with government support under Prime Contract No. DE-AC05-00OR22725 awarded by the U.S. Department of Energy. The government has certain rights in the invention."
+            ],
+            "subsections": [
+                {
+                    "title": "FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to microorganisms and polypeptides for detoxifying aldehydes associated with industrial fermentations. In particular, a heat-stable, NADPH- and iron-dependent alcohol dehydrogenase was cloned from Thermoanaerobacter pseudethanolicus 39E (Teth39E). The enzyme displayed activity against a number of aldehydes including inhibitory compounds that are produced during the dilute-acid pretreatment process of lignocellulosic biomass before fermentation to biofuels. The enzyme was introduced into and expressed in anaerobic, thermophilic microorganisms. Methods to use the microorganisms and polypeptides of the invention for improved conversion of biomass to biofuel are provided as well as use of the enzyme in metabolic engineering strategies for producing longer-chain alcohols from sugars using thermophilic, fermentative microorganisms."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to microorganisms and polypeptides for detoxifying aldehydes"
+                    ],
+                    "num_characters": 867,
+                    "outline_medium": [
+                        "introduce microorganisms and polypeptides for detoxifying aldehydes"
+                    ],
+                    "outline_short": [
+                        "introduce microorganisms and polypeptides for detoxifying aldehydes"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Lignocellulosic biomass represents one of the most abundant renewable resources on Earth. It is formed of three major components: cellulose, hemicellulose, and lignin, and includes, for example, agricultural and forestry residues, municipal solid waste (MSW), fiber resulting from grain operations, waste cellulosic products (e.g., paper and pulp operations), and energy crops. The cellulosic and hemicellulosic polymers of biomass can be hydrolyzed into their component sugars, such as glucose and xylose, which can then be fermented by microorganisms to produce ethanol. Conversion of even a small portion of the available biomass into ethanol could substantially reduce current gasoline consumption and dependence on petroleum.",
+                        "Many conversion processes are known that breakdown lignocellulosic biomass to produce bioenergy. These processes vary from multi-enzyme and multi-fermentation approaches called separate hydrolysis and fermentation (SHF) [Wilke et al. (1976) Biotechnol. Bioeng. Symp. 6:55] to simpler, simultaneous cellulose hydrolysis (or saccharification) and fermentation (SSF) [Takagi et al. (1977) in Proceedings of the Bioconversion Symposium, Indian Institute of Technology, New Delhi, pp. 55-571; Spindler (1988) Appl. Biochem. Biotechnol. 17:279-294; Alfani (2000) J. Ind. Microbiol. Biotechnol. 25:184-192]. In an SHF process, the cellulosic biomass is hydrolyzed with cellulases to liberate fermentable glucose followed by a separate step for fermentation to ethanol. The SSF process combines the enzymatic hydrolysis and fermentation simultaneously, reducing the process complexity. A natural extension is simultaneous saccharification and cofermentation (SSCF) using microorganisms that are able to convert both hexose and pentose sugars to ethanol. This process simplification culminates with the development of fermentation microorganisms that produce their own enzymes for cellulose hydrolysis, called consolidated bioprocessing (CBP). CBP involves four biologically-mediated events: (1) enzyme production, (2) substrate hydrolysis, (3) hexose fermentation and (4) pentose fermentation. In contrast to the other approaches, where some or all of the steps may be performed independently, all four events are performed simultaneously in a CBP configuration.",
+                        "While chemical and physical pretreatment of lignocellulosic biomass improves substrate reactivity, it also produces microbial growth inhibitors such as furan and phenolic aldehydes [Klinke et al. (2004) Appl. Microbiol. Biotechnol. 66: 10-26]. The most abundant inhibitors, 5-hydroxymethyl furfural (5-HMF) and furfural, are generated from the dehydration of glucose and xylose, respectively, under acidic pH at high temperatures. These aldehydes impart broad cytological and physiological damage, especially in ethanologenic fungi and bacteria [Taylor et al. (2012) Biotechnol. J. 7:1169-1181; Palmqvist et al. (2000a) Bioresource Technol. 74:17-24]. Hence, for processes which involve fermentation, there is a need to abate the microbial inhibition that can arise during biomass pretreatment.",
+                        "Several non-biological strategies have been described in the literature for removal of pretreatment inhibitors from lignocellulosic hydrolysates, including overliming with Ca(OH)2 or NaOH to precipitate inhibitors and addition of activated charcoal or anion exchange resins to adsorb toxic compounds [Taylor 2012; Palmqvist et al. (2000b) Bioresource Technol. 74:25-33]. Biological abatement has been evaluated either by adding enzymes to hydrolysates to degrade compounds (generally specific for phenolic, lignin-derived inhibitors) or by adding microorganisms capable of directly metabolizing pretreatment inhibitors. For example, Li et al. showed that Cupriavidus necator can rapidly reduce furfural to the less toxic form, furfuryl alcohol [Li et al. (2011a) Biodegradation 22:1215-1225]. Conceptually, this microorganism could be applied to pretreatment hydrolysates to scavenge furan aldehydes; however, the microorganism requires oxygen for growth and does not grow at elevated temperatures, whereas many industrial processes are conducted at elevated temperatures under anaerobic conditions, making this microorganism unsuitable for such processes.",
+                        "To improve inhibitor tolerance, fermentative, biofuel-producing microorganisms have been adapted or genetically modified to provide robust growth and performance in the presence of pretreatment hydrolysates. For example, improved inhibitor tolerance has been engineered into common ethanologenic microorganisms, including Saccharomyces cerevisiae [Almeida et al. (2007) J. Chem. Technol. Biotechnol. 82:340-349; Larsson et al. (2001) Appl. Environ. Microbiol. 67:1163-1170], Zymomonas mobilis [Yang et al. (2010) Bmc Microbiol. 10:135)], and ethanologenic Escherichia coli [Wang et al. (2011) Appl. Environ. Microbiol. 77:5132-5140; Wang et al. (2012) Appl. Environ. Microbiol. 78:2452-2455; Zheng et al. (2012) Appl. Environ. Microbiol. 78:4346-4352]. Further, enzymatic detoxification of furan aldehydes has been widely documented in yeast [Liu et al. (2004) J. Ind. Microbiol. Biotechnol. 31:345-352; Bowman et al. (2010) Appl. Environ. Microbiol. 76:4926-4932; Park et al. (2011) Bioresource Biotechnol. 102:6033-6038] and in E. coli [Miller et al. (2009) Appl. Environ. Microbiol. 75:4315-4323; Wang et al. (2010], which generally include aldehyde-specific oxidoreductases or alcohol dehydrogenases. While these microorganisms have been important for first-generation ethanol production, they are not suitable for second generation biofuels which use thermophilic, cellulolytic strains that can directly solubilize cellulose and ferment carbohydrates into fuels under anaerobic conditions [Elkins et al. (2010) Curr. Opin. Biotechnol. 21:657-662; Lynd, L. R. et al. (2008) Nat. Biotechnol. 26:169-172; Olson et al. (2012) Curr. Opin. Biotechnol. 23:396-405)].",
+                        "Hence a need remains for anaerobic, inhibitor-tolerant microorganisms capable of fermentation at elevated growth temperatures (typically above 50-60\u00b0 C., and even as high as 80\u00b0 C.). To address this need, the saccharolytic thermophile Thermoanaerobacter pseudethanolicus 39E (Teth39E) was grown in the presence and absence of furfural and a protein that was up-regulated 7-fold was selected for further study. From the genomic sequence of Teth39E, this protein was identified as the product of open reading frame (orf) Teth39\u20141597 (hereinafter referred to as \u201cthe bdhA gene\u201d or \u201cbdhA\u201d) and found to encode an iron-dependent alcohol dehydrogenase (hereinafter referred to as \u201cBdhA\u201d).",
+                        "Alcohol dehydrogenases (ADHs) constitute a large family of enzymes and catalyze the reversible oxidation of primary or secondary alcohols to aldehydes or ketones. In bacteria and yeast, ADHs (also referred to herein and in the literature as aldehyde reductases) have been found that are capable of reducing furfural and 5-(hydroxymethyl) furfural (5-HMF) (and other toxic aldehydes) to alcohols. However, those enzymes which have heretofore been studied are distinct from that encoded by the bdhA gene.",
+                        "For example, S. cerevisiae has multiple NADH and NADPH-dependent aldehyde reductases that can convert furfural and 5-HMF to non-toxic alcohols [Liu et al. (2008) Appl. Environ. Microbiol. 81:743-753]. The S. cerevisiae ADH6 gene product has been characterized as a Zn- and NADPH-dependent enzyme capable of reducing 5-HMF (Larroy et al. (2002) Biochem. J. 361:163-172; Petersson et al. (2006) Yeast 23:455-464). U.S. Patent Appln. Pub. No. 2007/0155000 also describes ethanol-producing S. cerevisiae strains that tolerate furfural and 5-HMF by overexpressing the yeast ADH6 gene. U.S. Pat. No. 8,110,387 describes S. cerevisiae ADH1 and mutants thereof that have NADH-dependent 5-HMF reductase activity and indicates that these enzymes can aid in detoxifying lignocellulosic hydrolysates. U.S. Pat. No. 7,253,001 relates to S. cerevisiae strains with improved xylose utilization which were created by deleting an endogenous aldehyde dehydrogenase gene and introducing 5 other genes. U.S. Patent Appln. Pub. No. 2012/0190089 describes recombinant yeast with engineered metabolic pathways to produce isobutanol, in part by expressing an exogenous NADH-dependent ADH that converts isobutyraldehyde to isobutanol under anaerobic conditions. None of these yeast genes are homologous to BdhA.",
+                        "U.S. Pat. No. 8,039,239 describes recombinant Clostridia strains that overexpress an NADPH-dependent secondary alcohol dehydrogenase with sequence homology to a previously-characterized T. pseudethanolicus NADPH-dependent alcohol dehydrogenase (Teth39\u20140218). However, as shown in FIG. 4 of the '239 patent, the amino acid sequence of that ADH is markedly distinct from BdhA.",
+                        "ADHs distinct from BdhA also exist in other bacteria. For example, U.S. Patent Appln. Pub. No. 2011/0177579 describes a thermostable, primary-secondary ADH from Thermococcus guaymasensis which appears related to Zn-dependent ADHs and it is unknown whether the enzyme is capable of detoxifying furfural or 5-HMF. U.S. Patent Appln. Pub. No. 2012/0108855 reports recombinantly-produced, ethanologenic bacteria with increased expression of the transhydrogenase genes pntA and pntB which are capable of imparting increased furfural tolerance. The C. necator strain mentioned above turns out to have a NADH- and Zn-dependent ADH [Li et al. (2011b) Biodegradation 22:1227-1237].",
+                        "In accordance with the invention, the discovery of BdhA provides a route to modified anaerobic, aldehyde-tolerant thermophilic microorganisms suitable for use in bioprocessing lignocellulosic biomass to efficiently produce biofuel."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce lignocellulosic biomass",
+                        "describe conversion processes",
+                        "explain limitations of conversion processes",
+                        "introduce pretreatment inhibitors",
+                        "describe non-biological strategies for removal of inhibitors",
+                        "describe biological abatement of inhibitors",
+                        "introduce microorganisms capable of metabolizing pretreatment inhibitors",
+                        "describe limitations of microorganisms",
+                        "introduce engineered microorganisms for improved inhibitor tolerance",
+                        "describe enzymatic detoxification of furan aldehydes",
+                        "introduce need for anaerobic, inhibitor-tolerant microorganisms",
+                        "describe selection of Thermoanaerobacter pseudethanolicus 39E",
+                        "identify protein up-regulated in presence of furfural",
+                        "describe alcohol dehydrogenases",
+                        "introduce distinct alcohol dehydrogenases",
+                        "describe yeast ADH6 gene product",
+                        "introduce U.S. patents related to ADHs",
+                        "describe recombinant Clostridia strains",
+                        "introduce distinct ADHs in other bacteria"
+                    ],
+                    "num_characters": 9665,
+                    "outline_medium": [
+                        "motivate lignocellulosic biomass conversion to biofuels",
+                        "describe conversion processes of lignocellulosic biomass",
+                        "discuss limitations of current conversion processes",
+                        "introduce non-biological strategies for removing pretreatment inhibitors",
+                        "discuss biological abatement of pretreatment inhibitors",
+                        "motivate need for anaerobic, inhibitor-tolerant microorganisms",
+                        "describe prior art of alcohol dehydrogenases",
+                        "discuss limitations of prior art",
+                        "motivate discovery of BdhA"
+                    ],
+                    "outline_short": [
+                        "motivate need for biofuels",
+                        "describe conversion processes of lignocellulosic biomass",
+                        "discuss limitations of current conversion processes",
+                        "motivate need for anaerobic, inhibitor-tolerant microorganisms"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention provides isolated microorganisms that express an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof.",
+                        "In one embodiment, the present invention provides isolated anaerobic, thermophilic microorganisms that can be used in one or more bioprocessing steps for conversion of biomass to biofuel, including the processes of SHF, SSF, SSCF and CBP, that have been engineered to express an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof, at expression levels that impart aldehyde tolerance to the microorganism. Preferred microorganisms include, but are not limited to, Thermoanaerobacter spp., as well as anaerobic, thermophilic Firmicutes species, especially Clostridia and Caldicellulosiruptor spp., and the like.",
+                        "In another aspect of the invention, bacterial cell lysates are prepared from the microorganisms of the present invention. Such lysates include whole cell lysates and lysates in which the bacterial membranes have been removed (e.g., by centrifugation) to provide clarified supernatants. Whole cell lysates of the invention have active exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof which, in the presence of NADPH, have an aldehyde reductase specific activity of at least about 2-20 \u03bcmol/min/mg with furfural as a substrate, of at least about 5-50 \u03bcmol/min/mg with 5-HMF as a substrate, of at least about 2-20 \u03bcmol/min/mg with acetaldehyde as a substrate, 0.3-3 \u03bcmol/min/mg with isobutyraldehyde, and/or at least about 7-70 \u03bcmol/min/mg with butyraldehyde as a substrate. In preferred embodiments, the aldehyde reductase specific activity with NADPH as a cofactor is at least 4 \u03bcmol/min/mg with furfural as a substrate, at least 10 \u03bcmol/min/mg with 5-HMF as a substrate, of at least 4 \u03bcmol/min/mg with acetaldehyde as a substrate, at least 0.6 \u03bcmol/min/mg with isobutyraldehyde, and/or at least 14 \u03bcmol/min/mg with butyraldehyde as a substrate.",
+                        "Yet another aspect of the invention relates to an isolated polypeptide comprising NAD(P)H-dependent and iron-dependent aldehyde reductase activity, and being at least 70, 80, 90 or 95% identical to the amino acid sequence set forth in SEQ ID NO: 2. In some embodiments the polypeptide is at least 98 or 99% identical to the amino acid sequence in SEQ ID NO: 2, and in other embodiments, the polypeptide has the amino acid sequence in SEQ ID NO: 2 or consists essentially of the amino acid sequence in SEQ ID NO: 2, and can include modification such as His tags to allow rapid purification of the protein.",
+                        "The invention further provides an isolated and purified nucleic acid encoding any of the polypeptides of the invention, recombinant expression vectors comprising a nucleic acid of the invention and host cells comprising the vectors of the invention. Such host cells include strains typically used in cloning and protein expression, such as E. coli, as well as thermophilic, anaerobic hosts that are suitable for use in at least one step of an industrial fermentation process.",
+                        "In some aspects, the isolated and purified nucleic acid is at least 70, 80, 90 or 95% identical to the nucleic acid sequence set forth in SEQ ID NO: 1. In some embodiments the isolated and purified nucleic acid is at least 98 or 99% identical to the nucleic acid sequence in SEQ ID NO: 1, and in other embodiments, the isolated and purified nucleic acid has the nucleic acid sequence in SEQ ID NO: 1 or consists essentially of the nucleic acid sequence in SEQ ID NO: 1.",
+                        "In accordance with the invention, the anaerobic, thermophilic microorganisms and proteins of the invention can be used in biomass fermentation processes to detoxify aldehydes that are present in the biomass (e.g., produced by acid pretreatment or during fermentation). Detoxification of aldehydes, as used herein, means a reduction in aldehyde content below the level that normally inhibits growth of a particular (unmodified) microorganism for any particular aldehyde, and thereby making the microorganism aldehyde tolerant and allowing improved biofuel yield when that microorganism is used in a fermentation step. Hence, the invention provides methods of improving yield and/or efficiency of biomass conversion to biofuel by contacting biomass with an anaerobic, thermophilic microorganism of the invention, a protein of the invention, or a cell lysate of the invention for a time and under thermophilic, anaerobic conditions sufficient to detoxify inhibitory aldehydes that may be present in the biomass. The method is used with biomass before or during SHF, SSF, SSCF or CBP, and can further be used with biomass that has been pretreated by dilute acid, hot water only or enzymatic hydrolysis.",
+                        "A still additional aspect of the invention provides a method to produce butanol from biomass which comprises culturing biomass with an anaerobic, thermophilic microorganism of the invention for a time and under fermentation conditions suitable to produce butanol and recovering said butanol. The invention also contemplates similar methods for producing ethanol, furfuryl alcohol, and/or 2,5-(dihydroxymethyl)furan, by culturing as for butanol production and recovering the desired alcohol. Depending on the source of biomass, certain alcohols may predominate over others, for example, using the method with furan waste from pulp or paper processing is advantageous for recovering furfuryl alcohol"
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce isolated microorganisms expressing exogenous heat-stable ADH",
+                        "describe anaerobic, thermophilic microorganisms for bioprocessing",
+                        "introduce bacterial cell lysates",
+                        "describe aldehyde reductase specific activity",
+                        "introduce isolated polypeptide with NAD(P)H-dependent aldehyde reductase activity",
+                        "describe identity to SEQ ID NO: 2",
+                        "introduce isolated and purified nucleic acid encoding polypeptide",
+                        "describe identity to SEQ ID NO: 1",
+                        "introduce recombinant expression vectors and host cells",
+                        "describe use of microorganisms and proteins in biomass fermentation",
+                        "introduce methods for producing butanol, ethanol, furfuryl alcohol, and/or 2,5-(dihydroxymethyl)furan"
+                    ],
+                    "num_characters": 5616,
+                    "outline_medium": [
+                        "introduce isolated microorganisms expressing exogenous BdhA",
+                        "describe engineered microorganisms for bioprocessing biomass",
+                        "introduce bacterial cell lysates with BdhA activity",
+                        "describe isolated polypeptides with BdhA activity",
+                        "introduce nucleic acids encoding BdhA and host cells"
+                    ],
+                    "outline_short": [
+                        "introduce isolated microorganisms with heat-stable, NADPH- and iron-dependent alcohol dehydrogenase",
+                        "describe applications of microorganisms in bioprocessing"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates to engineered anaerobic, thermophilic microorganisms used in industrial fermentations that express an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E (Teth39E), or homologs thereof. In one embodiment, the exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Teth39E is the gene product of the Teth39\u20141597 locus.",
+                        "By engineering anaerobic, thermophilic microorganisms to express exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E (Teth39E), or homologs thereof, or by adding the expressed proteins to industrial hydrolysis and fermentation, allows improved efficiency and/or yield for conversion of biomass to biofuel by detoxifying pretreatment inhibitors found in such industrial fermentations.",
+                        "The substrate specificity of the heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Teth39E for aldehydes includes furfural, 5-hydroxymethylfurfural (5-HMF), isobutyraldehyde, butyraldehyde, and acetaldehyde, which the enzyme converts to alcohols (see FIGS. 1-3, and Table 1)."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "BdhA Proteins, Nucleic Acids and Expression Vectors",
+                            "paragraphs": [
+                                "Teth39\u20141597 is the locus tag for an iron-containing alcohol dehydrogenase encoded by Thermoanaerobacter pseudethanolicus strain ATCC 33223 (abbreviated herein as Teth39E). Teth39E increases expression of an iron-dependent alcohol dehydrogenase (BdhA) when grown in the presence of furfural. The open reading frame encoding Teth39\u20141597 is located at positions 1,630,187 to 1,631,392 on the chromosome of Teth39E (see FIG. 4), is 1206 bp in length (SEQ ID NO: 2) and encodes a protein of 401 amino acids (SEQ ID NO: 1) with a mass of approximately 43.4 kD. The gene product belongs to the family of iron-containing alcohol dehydrogenases and possesses highly conserved domains for butanol dehydrogenase, an enzyme which can catalyze the final step in butanol formation in anaerobic bacteria (see FIG. 5). The iron-dependent alcohol dehydrogenases have higher activity for longer chain aldehydes relative to formaldehyde or acetaldehyde. For BdhA it is shown herein that the substrate preference in whole lysates with NADPH as the cofactor, from most to least activity, is butyraldehyde, 5-HMF, furfural, acetaldehyde and isobutyraldehyde (see Table 1).",
+                                "Enzymatic activity can be measured in the forward or reverse reaction direction, by alcohol to aldehyde conversion (dehydrogenation) or by aldehyde to alcohol conversion (reduction) using methods known in the art. For alcohol conversion to aldehyde, the enzymatic activity of BdhA is said to be an alcohol dehydrogenase activity. For aldehyde conversion to alcohol, the enzymatic activity of BdhA is said to be an aldehyde reductase activity. BdhA and its homologs can be characterized by specifying either activity. The specific activity of BdhA with NADPH as a cofactor is at least 0.5 \u03bcmole/min/mg when expressed in E. coli and measured with various aldehydes in a whole cell lysate. When butyraldehyde is the substrate, the specific activity can reach to at least about 14 \u03bcmole/min/mg.",
+                                "As used herein, \u201cnucleic acid\u201d includes RNA and DNA in any form, including in single or double stranded form and as cDNA. Isolated nucleic acid means that the nucleic acid has been removed from its natural position in the genome (or on an epichromosomal element such as a natural plasmid) and that it has a discrete size and can be a fragment or circular molecule in a useful form for manipulation such as for a probe, for creating a mutation, for use in cloning particular sequences, for protein expression and for such other recombinant and molecular biology techniques as known in the art.",
+                                "Purified nucleic acids or proteins are preparations of nucleic acids or proteins, respectively, that within reasonable detection limits, form a homogenous preparation of that particular molecule. The preparation may contain buffer or other non-nucleic acid or non-proteinaceous components routinely used in such purifications and manipulations. For example, a restriction fragment purified from an agarose gel is considered an isolated and purified nucleic acid. Likewise, a protein excised from a polyacrylamide gel is considered an isolated and purified protein. As used herein, \u201csubstantially purified\u201d or \u201cpartially purified\u201d molecules are at least 60% free, at least 75% free, or at least 90% free from other components with which they are naturally associated. As used herein, the terms \u201cpurified\u201d and \u201cto purify\u201d also refer to the removal of contaminants from a sample. The removal of contaminating molecules results in an increase in the percent of polypeptide or nucleic acid of interest in the sample.",
+                                "One aspect of the invention is directed to isolated nucleic acids and expression vectors that encode the polypeptides of the present invention, that are used to create isolated anaerobic, thermophilic microorganisms that express an exogenous BdhA, or a homolog thereof.",
+                                "Expression vectors suitable for use in the present invention comprise nucleic acids encoding exogenous BdhA, or a homolog thereof, operably linked to a promoter, preferably a strong inducible promoter, to allow expression of the exogenous BdhA, or a homolog thereof in the microorganisms of the present invention.",
+                                "Expression vectors suitable for use in the present invention contain appropriate regulatory sequences, such as a promoter and operator, so that the microorganism host-cell machinery can transcribe the exogenous gene and translate the resultant messenger RNA to synthesize the corresponding exogenous protein. In certain embodiments, the regulatory sequences are specific for the microorganism into which the expression vector is introduced. In certain embodiments, the expression vector is a plasmid. In alternate embodiments, the expression vector is a virus. In certain embodiments, the exogenous gene integrates into the host cell genome.",
+                                "In certain embodiments, flanking sequences in the vector upstream and downstream of the exogenous gene enhances integration of the exogenous gene into the host cell genome.",
+                                "In certain embodiments, the expression vector contains sequences that introduce modifications to the exogenous gene. The modifications may include post-translational modifications (e.g., glycosylation, methylation), purification tags (e.g., a His tag) or reporter moieties to facilitate purification, manipulation and characterization of the protein. Such modifications are not included in calculations of sequence identities.",
+                                "The methods for making such expression vectors as well as useful vectors and promoters therefor, along with additional expression control elements and purification tags, are all well known in the art and can be readily made and used by those of skill in the art. In general, molecular biological techniques for cloning and protein expression can be found in Green & Sambrook (2012) Molecular Cloning, A Laboratory Manual, 4th ed., Cold Spring Harbor Press, NY.",
+                                "For protein expression in Gram positive thermophiles, useful shuttle and expression vectors include, but are not limited to, pNW33N, pMK3, pMK4 (from the Bacillus Genetic Stock Center), pIKM1 [Mai et al. (1997) FEMS Microbiol. Let. 148:163-167]; and, pDCW142 [Chung et al. (2014) PNAS, 111:8931-8936] and pDCW89 [Chung et al. (2013) PLoS ONE 8(5): e62881. doi:10.1371/journal.pone.0062881].",
+                                "In one embodiment, Caldicellulosiruptor bescii is engineered to express an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof, using the expression/integration vector disclosed in Chung et al. [PNAS, 2014, 111:8931-8936].",
+                                "In one embodiment, Caldicellulosiruptor bescii is engineered to express an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof, using the expression/integration vector disclosed in Chung et al. [PLoS ONE 8(5): e62881. doi:10.1371/journal.pone.0062881].",
+                                "E. coli is a common organism to use for protein production and techniques to express heterologous proteins in E. coli are well known.",
+                                "Introduction of the expression vector into a host cell may be via any suitable method that is readily selected by one of skill in the art. Examples include the methods disclosed in Chung et al, and Cha et al. [Biotechnology for Biofuels, 2013, 6:85].",
+                                "The expressed exogenous BdhA, or a homolog thereof, can be expressed in bacteria, yeast, or mammalian host cells. The exogenous BdhA, or a homolog thereof, may be recovered to provide isolated and/or purified polypeptides after the removal of host cell proteins. Alternatively, the host cell containing the expression vector may be used in the production of bulk and platform chemicals from lignocellulosic material, such as lignocellulosic feedstock, where there is a need to detoxify 5-HMF, other furans or other aldehydes or carbonyl compounds.",
+                                "Accordingly, one aspect of the invention provides an isolated polypeptide that comprises BdhA or is a homolog thereof. A BdhA homolog is a protein with NAD(P)H- and iron-dependent aldehyde reductase activity and has, over the course of the BdhA amino acids, at least 70, 80, 90, 95, 98 or 99% identity to the amino acids encoded by the bdhA gene, and preferably has at least 90, 95, 98 or 99% amino acid identity. Enzymatic activity can be measured in the forward or reverse reaction direction, by alcohol to aldehyde conversion (dehydrogenation) or by aldehyde to alcohol conversion (reduction) using methods known in the art. For alcohol conversion to aldehyde, the enzymatic activity of BdhA or a homolog thereof is said to be an alcohol dehydrogenase activity. For aldehyde conversion to alcohol, the enzymatic activity of BdhA or a homolog thereof is said to be an aldehyde reductase activity. BdhA or a homolog thereof can be characterized by specifying either activity. The specific activity of BdhA or a homolog thereof with NADPH as a cofactor is at least 0.5 \u03bcmole/min/mg when expressed in E. coli and measured with various aldehydes in a whole cell lysate. When butyraldehyde is the substrate, the specific activity can reach to at least about 14 \u03bcmole/min/mg. The amino acid sequence of BdhA is set forth in SEQ ID No: 2. Examples of algorithms that are suitable for determining percent sequence identity and sequence similarity, such as the BLAST algorithm, are well known to those skilled in the art. If additional amino acids are present, such as a His tag for purification, these amino acids are not factored in the identity calculation.",
+                                "The isolated polypeptides of the invention can also be purified to varying degrees of homogeneity and preparations which range to at least 30, 40, 50, 60, 70, 80, 90, 95, 99 and 99.9 percent homogenous are within the ambit of the invention. Techniques for purifying proteins are known in the art and protein purity can be assessed by various known methods, including but not limited to, SDS-PAGE, increase in specific activity, amino acid analysis, amino acid sequence analysis and combinations thereof.",
+                                "The polypeptides of the invention can be used in the production of bulk and platform chemicals from lignocellulosic material, such as lignocellulosic feedstock, where there is a need to detoxify 5-HMF, other furans or other aldehydes or carbonyl compounds. Examples of biofuels and bulk and platform chemicals include ethanol, butanol, lactate, 1,4-dicarboxylic acids (succinic, fumaric, malic), glycerol, sorbitol, mannitol, arabinitol, L-ascorbic acid, xylitol, hydrogen gas, 2,5-furan dicarboxylic acid, 3-hydroxy propionic acid, aspartic acid, glutaric acid, glutamic acid, itaconic acid, levulinic acid, and 3-hydroxybutyrolactone, fatty acids, fatty-derived molecules, isoprenoids, isoprenoid-derived molecules, alkanes, isopentanol, and isoamylacetate. When using the polypeptides of the invention, increased specific productivity (gram product per gram cell and hour) can be achieved due to the faster removal of inhibitory furan compounds and carbonyl compounds from the medium.",
+                                "Thus, the polypeptides of the invention are useful to reduce the aldehyde content of biomass and to allow microorganisms that are normally inhibited at high aldehyde concentration to be used in fermentation steps. For example, the polypeptides can be mixed with biomass for a time and under conditions to convert the aldehydes that are present in the biomass (or that are released as the biomass is hydrolyzed) to non-toxic alcohols. The proteins can be added before any fermentation steps or during one or more fermentation steps to provide more efficient conversion of biomass to biofuel. The proteins of the invention are particularly useful in conjunction with anaerobic, thermophilic fermentations due to their thermostability."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define Teth39\u20141597 locus tag",
+                                "describe open reading frame encoding Teth39\u20141597",
+                                "specify gene product of Teth39\u20141597",
+                                "describe iron-dependent alcohol dehydrogenases",
+                                "specify substrate preference of BdhA",
+                                "define enzymatic activity of BdhA",
+                                "describe specific activity of BdhA",
+                                "define nucleic acid",
+                                "describe isolated nucleic acid",
+                                "define purified nucleic acids or proteins",
+                                "describe expression vectors suitable for use",
+                                "specify regulatory sequences in expression vectors",
+                                "describe integration of exogenous gene into host cell genome",
+                                "specify modifications to exogenous gene",
+                                "describe methods for making expression vectors",
+                                "specify useful shuttle and expression vectors",
+                                "describe engineering of Caldicellulosiruptor bescii",
+                                "describe introduction of expression vector into host cell",
+                                "specify techniques for purifying proteins",
+                                "describe recovery of expressed exogenous BdhA",
+                                "specify uses of polypeptides of the invention",
+                                "describe benefits of using polypeptides of the invention",
+                                "specify examples of biofuels and bulk and platform chemicals"
+                            ],
+                            "num_characters": 11717,
+                            "outline_medium": [
+                                "define Teth39\u20141597 locus tag",
+                                "describe open reading frame encoding Teth39\u20141597",
+                                "specify gene product of Teth39\u20141597",
+                                "describe iron-dependent alcohol dehydrogenases",
+                                "define enzymatic activity of BdhA",
+                                "describe expression vectors suitable for use",
+                                "specify regulatory sequences in expression vectors",
+                                "describe integration of exogenous gene into host cell genome",
+                                "introduce modifications to exogenous gene",
+                                "describe methods for making expression vectors",
+                                "specify useful shuttle and expression vectors"
+                            ],
+                            "outline_short": [
+                                "define Teth39\u20141597 locus and BdhA protein",
+                                "describe enzymatic activity of BdhA",
+                                "introduce isolated nucleic acids and expression vectors",
+                                "describe expression vectors and regulatory sequences",
+                                "discuss protein expression and purification"
+                            ]
+                        },
+                        {
+                            "title": "Microorganisms",
+                            "paragraphs": [
+                                "The invention generally provides two groups of microorganisms that express a polypeptide of the invention: (1) anaerobic, thermophilic microorganisms used in at least one step of an industrial fermentation process and which express an exogenous BdhA or a homolog thereof; and (2) microorganisms used in cloning, expression and purification of BdhA or a homolog thereof.",
+                                "As used herein \u201cexogenous expression\u201d refers to the expression of a gene product from a gene that has been introduced into a subject microorganism. The introduced gene may be a heterologous gene (i.e. not present in the subject microorganism), or identical or homologous to an endogenous gene in the subject microorganism.",
+                                "As used herein, \u201cexogenous BdhA\u201d or \u201cexogenous BdhA or a homolog thereof\u201d refers to the expression of BdhA or a homolog thereof from a gene that has been introduced into a subject microorganism. The introduced gene may be a heterologous gene (i.e. not present in the subject microorganism), or identical or homologous to an endogenous gene in the subject microorganism.",
+                                "The term \u201cthermophiles\u201d refer to microorganisms that can grow in high temperature environments, for example, at temperatures of at least 50\u00b0 C. or more. Thermophiles have growth optima that range between 50 and 100\u00b0 C. The genome and proteome composition of thermophiles are characterized by overrepresentation of purine bases in protein coding sequences, higher GC-content of structural RNAs, distinct synonymous codon usage, enhanced usage of positively charged residues and aromatic residues, and a decrease in polar uncharged residues in the encoded protein. Thermophiles have optimal growth temperatures above 50\u00b0 C., and typically between about 50-60\u00b0 C. Extreme thermophiles have optimal growth temperatures above 65\u00b0 C. and typically between about 70-80\u00b0 C. Often extreme thermophiles are capable of growing at the temperatures used for thermophilic microorganisms.",
+                                "Anaerobic, thermophilic microorganisms that are used in at least one step in industrial fermentations are capable of, or have been engineered to be capable of, one or all of the steps of hydrolyzing cellulose and hemicellulose and converting the resultant hexose and pentose sugars, including xylose, to ethanol and acetic acid for a bioenergy source. Additionally, in accordance with the invention, this group of microorganisms can be recombinantly engineered to express exogenous BdhA or homolog thereof. Such strains can be made by techniques known in the art.",
+                                "Introduction of the expression vector into a host cell may be via any suitable method that is readily selected by one of skill in the art. Examples include the methods disclosed in Chung et al, Cha et al, U.S. Patent Application Publication No. 2008028340, Tripathi et al. [2010, Appl, Environ. Microbiol. 76:6591-6599], and Argyros et al. [2011, Appl, Environ. Microbiol. 77:8288-8294].",
+                                "Many classes of anaerobic, thermophilic bacteria are available for many purposes and stages in industrial fermentations. Cellulolytic microorganisms are capable of hydrolyzing cellulose. These bacteria produce cellulase which hydrolyzes cellulose to produce glucose. Many examples of cellulolytic, thermophilic microorganisms are known. Hemicellulolytic microorganisms produce xyalanases and are thus capable of hydrolyzing hemicellulose to release pentose sugars, especially xylose, that can then be further fermented. Useful reviews describing cellulolytic thermophiles and/or hemicellulolytic (extreme) thermophiles include, for example, Bergquist et al. (1999) FEMS Microbiol. Ecol. 28:99-110; Lynd et al. (2002) Microbiol. Mol. Biol. Rev. 66:506-577; Vanfossen et al. (2008) Ann. NY Acad. Sci. 1125:322-37. Some specific microorganisms described and known include, the cellulolytic thermophile Clostridium thermocellum [Raman et al. (2009) PLoS ONE 4(4): e5271 (2009); Zhang et al. (2005) J. Bacteriol. 187:99-106; Raman et al. (2011) BMC Microbiol. 11:134] and Clostridium thermohydrosulfuricum [Lovitt et al. (1984) App. Microbiol. 48:171-177]; as well as the hemicellulolytic extreme thermophiles including various Caldicellulosiruptor spp. [Blumer-Schuette et al. (2008) Curr. Opin. Biotechnol. 19:210-217; Blumer-Schuette et al. (2010) App. Microbiol. 76:8084-8092; Blumer-Schuette et al. (2011) J. Bacteriol. 193:1483-4; pub March 2011; e-published Jan. 7, 2011] and more specifically Caldicellulosiruptor obsidiansis [Hamilton-Brehm et al. (2010) App. Environ. Microbiol. 76:1014-1020; Mielenz et al. (2010) Abstract from \u201cThe 32nd Symposium on Biotechnology for Fuel and Chemicals\u201d (Apr. 19-22, 2010)].",
+                                "These microorganisms are useful in the SHF, SSF, SSCF and CBP industrial processes as described below. Furthermore, CBP microorganisms are needed that produce ethanol as sole product, hydrolyze cellulose to fermentable oligomers, hydrolyze hemicellulose to fermentable oligomers, ferment cellulose oligomers, ferment xylose or xylose oligomers, produce ethanol in high titer (resistant to up to 4 to 5% ethanol), be resistant to up to 1% acetic acid from hemicelluloses, grow at thermophilic temperatures ranging from 55 to 80\u00b0 C., are moderately resistant to common pretreatment inhibitors (furans, polyphenolics) and produce a multi-carbohydrase portfolio on the cellulosome [Mielenz (2009) in Molecular Biology and Biotechnology, 5th Edition, Ed. J. M. Walker & R. Rapley, Royal Society of Chemistry, pp: 548-584]. No such single microorganism is presently known and the present invention addresses the resistance to pretreatment inhibitors by allowing genetic engineering of appropriate CBP microorganisms to express exogenous BdhA or homologs thereof active at reducing common pretreatment inhibitors such as furfural and 5-HMF.",
+                                "Additionally, metabolic engineering of microorganisms (altering specific fermentative pathways in a microorganism) is being used to direct microorganisms to preferentially or exclusively produce particular biofuels from sugar substrates. Thus exogenous BdhA or homologs thereof can be incorporated in such strategies to produce anaerobic, thermophilic microorganisms of the invention capable of producing a particular biofuel of interest such as ethanol, butanol, isobutanol and the like.",
+                                "Accordingly, in some embodiments, the anaerobic thermophiles of the invention which have been modified to express exogenous BdhA or a homolog thereof are Clostridium species. Examples of useful Clostridium spp., C. thermocellum, C. straminisolvens, and C. thermocopriae, with C. thermocellum being a preferred organism. C. thermocellum is an established bacterium for hydrolysis of cellulose in the biofuel production process. Its growth temperature range is 45-65\u00b0 C. and it grows optimally at 60\u00b0 C. C. thermocellum strains that express exogenous Teth39\u20141597 or a homolog thereof may be used in methods to produce n-butanol, furfural, and the other alcohols from when aldehydes are reduced by this enzyme.",
+                                "In other embodiments, the anaerobic thermophiles of the invention which have been modified to express exogenous BdhA or a homolog thereof are Caldicellulosiruptor species. Caldicellulosiruptor spp. are extremely thermophilic, anaerobic, Gram-positive bacteria capable of hydrolyzing hemicellulose and exhibit optimal growth in the temperature range of 70-80\u00b0 C. The members of this genus are also capable of cofermentation of pentose and hexose sugars, including xylose. The Caldicellulosiruptor spp. suitable for use in the present invention include C. bescii, C. saccharolyticus, C. hydrothermalis, C. kristjanssonii, C. kronotskyensis, C. lactoaceticus, C. owensensi, C. acetigenus and C. obsidiansis. C. bescii is a preferred species.",
+                                "Caldicellulosiruptor obsidiansis (C. obsidiansis) is an extreme thermophile isolated from Yellowstone National Park (Hamilton-Brehm 2010). C. obsidiansis grows optimally at 78\u00b0 C. and primarily produces acetic acid and lower levels of ethanol. It readily hydrolyzes hemicellulose and to a slower degree, hydrolyzes cellulose.",
+                                "In other embodiments, the anaerobic thermophiles of the invention which have been modified to express exogenous BdhA or a homolog thereof are Thermoanaerobacter and Thermoanaerobacterium species and T. pseudethanolicus strains. Thermoanaerobacter and Thermoanaerobacterium species, include but are not limited to Thermoanaerobacter brockii (sample strain: ATCC 35047), Thermoanaerobacter ethanolicus (sample strain: JW200 DSM 2246), Thermoanaerobacter pseudethanolicus (sample strain: 39E ATCC 33223), Thermoanaerobacterium aotearoense (sample strain: DSM 10170), Thermoanaerobacterium saccharolyticum (sample strains include B6A, B6A-RI ATCC 49915, and JW/SL-YS485 DSM 8691), Thermoanaerobacterium thermosaccharolyticum (sample strains include ATCC 7956, HG-8 ATCC 31960, M0523, M0524 and M0795) and Thermoanaerobacterium xylanolyticum (sample strain: DSM 7097).",
+                                "Genetic transformation of Thermoanaerobacter and Thermoanaerobacterium species is described in Shaw et al. (2010) Appl. Environ. Microbiol. 76:4713-4719.",
+                                "In certain embodiments, the present invention provides microorganisms for cloning and expressing exogenous BdhA or a homolog thereof. Such microorganisms include bacteria, yeast and fungi, as well as cells, such as mammalian cells or insect cells. As discussed above in the section on BdhA Proteins, Nucleic Acids and Expression Vectors, hosts are well known in the art and include E. coli, S. cerevisiae and the like."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define anaerobic, thermophilic microorganisms",
+                                "describe exogenous expression",
+                                "define exogenous BdhA",
+                                "describe thermophiles",
+                                "specify optimal growth temperatures",
+                                "describe genome and proteome composition of thermophiles",
+                                "specify examples of anaerobic, thermophilic microorganisms",
+                                "describe engineering of microorganisms",
+                                "specify techniques for introducing expression vector into host cell",
+                                "describe cellulolytic microorganisms",
+                                "specify examples of cellulolytic thermophiles",
+                                "describe hemicellulolytic microorganisms",
+                                "specify examples of hemicellulolytic extreme thermophiles",
+                                "describe uses of microorganisms in industrial fermentations",
+                                "specify examples of microorganisms used in industrial fermentations",
+                                "describe metabolic engineering of microorganisms",
+                                "specify examples of anaerobic thermophiles modified to express exogenous BdhA",
+                                "describe genetic transformation of Thermoanaerobacter and Thermoanaerobacterium species"
+                            ],
+                            "num_characters": 9451,
+                            "outline_medium": [
+                                "introduce anaerobic, thermophilic microorganisms expressing exogenous BdhA",
+                                "define exogenous expression",
+                                "describe thermophiles",
+                                "specify anaerobic, thermophilic microorganisms used in industrial fermentations",
+                                "describe introduction of expression vector into host cell",
+                                "specify microorganisms used in cloning, expression and purification of BdhA",
+                                "describe cellulolytic and hemicellulolytic microorganisms",
+                                "specify examples of microorganisms",
+                                "describe metabolic engineering of microorganisms"
+                            ],
+                            "outline_short": [
+                                "introduce anaerobic, thermophilic microorganisms expressing exogenous BdhA",
+                                "describe microorganisms used in cloning, expression, and purification of BdhA",
+                                "discuss thermophiles and their characteristics",
+                                "provide examples of microorganisms, including Clostridium and Caldicellulosiruptor species"
+                            ]
+                        },
+                        {
+                            "title": "Cell Lysates",
+                            "paragraphs": [
+                                "Yet another aspect of the invention is drawn to cell lysates prepared from the microorganisms of the invention. Cell lysates comprise active BdhA polypeptides and can thus be used directly to reduce the aldehyde content of biomass. On the industrial scale, cell lysates can be grown in large fermentor vessels. Once the appropriate cell density is achieved with an appropriate level of BdhA aldehyde reductase activity, the cells are harvested and lysed. Lysing can be by physical treatment, by chemical treatment, by enzymatic treatment or a combination thereof. Once lysed, the mixture can be used directly with biomass. Alternatively, the cellular debris and membranes can be removed by centrifugation and the remaining supernatant (which has the BdhA aldehyde reductase activity) can be used in a method of the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe cell lysates preparation and use"
+                            ],
+                            "num_characters": 825,
+                            "outline_medium": [
+                                "describe cell lysates preparation and use"
+                            ],
+                            "outline_short": [
+                                "describe cell lysates preparation and use"
+                            ]
+                        },
+                        {
+                            "title": "Methods",
+                            "paragraphs": [
+                                "In accordance with the invention, the anaerobic, thermophilic microorganisms and proteins of the invention are useful to detoxify aldehydes that are present in biomass, especially in lignocellulosic biomass pretreated with acid as used in many industrial fermentation processes to produce one or more biofuels. Hence, this invention provides a method of improving yield and/or efficiency of biomass conversion to biofuel by contacting biomass with an anaerobic, thermophilic microorganism of the invention, a polypeptide of the invention or a cell lysate of the invention for a time and under thermophilic, anaerobic conditions sufficient to detoxify inhibitory aldehydes present in said biomass, and thereby produce improved yields or efficiency of biomass conversion to biofuel, relative to biomass that has not been so treated, when the so-treated biomass is used in industrial fermentation processes.",
+                                "Generally, the aldehyde detoxification treatments of the invention occur after hydrolysis of biomass, since that is when aldehydes are generated. However, the aldehyde detoxification treatments of biomass can be conducted before or during SHF, SSF, SSCF or CBP fermentation steps. If the hydrolysis steps that produce aldehydes occur simultaneously with a fermentation step or are conducted by microorganisms, then the aldehyde detoxification treatments can also be conducted simultaneously with those steps. In a preferred method, the biomass is pretreated with acid, then simultaneously treated for aldehyde detoxification and fermented with one or more microorganisms to produce biofuels.",
+                                "The ethanol and acetic acid (and other fermentation by-products which can supply energy) from industrial fermentations are referred to as biofuel. Biofuel derives its energy from biological carbon fixation and covers many types of energy sources including ethanol, butanol, biodiesel (produced from biological oils and fats), bioethers, biogas (methane) and even biomass (when used in combustion processes). As used herein, biofuel includes, but is not limited to, one or more of the energy-yielding molecules produced by the biological hydrolysis and fermentation of biomass. For example, biofuel obtained from biomass includes 2-4 carbon atom alcohols, such as ethanol, butanol, isobutanol, as well as acetate, and is not limited to any particular combination of products that are produced, e.g., such as ethanol and acetic acid, singly or in combination. Ethanol is sometimes referred to as bioethanol, cellulosic ethanol, corn ethanol and other names, which may typically reflect the source from which the ethanol is obtained. Ethanol has the chemical formula CH3CH2OH, no matter its source or production method.",
+                                "Biomass is a renewable resource and has three main structural components\u2014typically, 33-50% cellulose, 17-35% hemicellulose and 12-24% lignin\u2014with the remainder being minerals, protein and other minor materials. Biomass is primarily lignocelluosic plant material but may include non-plant waste materials such as animal waste. Hence, \u201cbiomass\u201d as used herein, includes, but is not limited to, forestry residue, agricultural residue, municipal solid waste (MSW), animal waste, yard waste, wood products, fiber resulting from grain operations, waste cellulosic products (e.g., paper and pulp operations), grasses, and energy crops whether grown for biomass production or for other purposes. The embodiments of the invention can use any type of biomass, alone or in any combination or in any ratio. It is within the knowledge of the art to select and combine biomass types for use in the present invention. For example, the biomass can comprise an energy crop alone, or municipal solid waste and yard waste, or forestry residue, paper waste and pulp waste, and on in any of the many possible combinations.",
+                                "In accordance with the invention, biomass can be used with or without pretreatment before culturing with microorganisms to ferment the sugars in the mash and generate biofuel. Pretreatment can be done by physical (e.g., grinding), chemical (e.g., acid treatment) or biological (e.g., enzymatic hydrolysis) techniques, and methods therefor are well known in the art [see, e.g., Zheng et al. (2009) Int. J. Agric. & Biol. Eng. 2:51-67]. As used herein, unless the context shows otherwise, \u201cbiomass\u201d includes such pretreated biomass.",
+                                "The general aspects of culturing biomass with microorganisms as well as the equipment and apparatus needed are known to the ordinarily skilled artisan or can be readily determined, whether on the laboratory scale or on an industrial scale. See, Mielenz (2009) for an example of an industrial scale production system. Such general aspects include preparation of the biomass, introduction of the biomass and any other media into a fermentation reactor or vessel using sterile techniques, maintaining cultures and stocks of the microorganisms, timing of inoculation, amounts of an inoculum, the form of the inoculum (e.g., from exponentially growing cultures or from lag-phase cultures and otherwise), co-culturing of microorganisms in the fermentation, time length of the fermentation, appropriate thermophilic growth conditions, removal or purification of the biofuel from the fermentation mixture or mash and more.",
+                                "The fermentative conversion processes that breakdown biomass to produce biofuel include, but are not limited, to separate hydrolysis and fermentation (SHF); simultaneous cellulose hydrolysis (or saccharification) and fermentation (SSF); simultaneous saccharification and cofermentation (SSCF); and consolidated bioprocessing (CBP). Each of these processes can be practiced with the proteins or anaerobic, thermophilic microorganisms of the invention at any stage thereof. The preferred growth format is CBP. While the ability to conduct CBP has not yet been achieved with a single, aldehyde-tolerant, anaerobic, thermophilic microorganism (capable of cellulose and hemicellulose hydrolysis as well as hexose and pentose sugar fermentation), the present invention provides a way to achieve aldehyde tolerance.",
+                                "The duration needed for fermentation that yields high substrate conversion lasts for the time needed to produce biofuel and can be determined by those of skill in the art. For example, fermentation to end products should occur in the shortest time possible to allow maximum and efficient conversions of the biomass before exhaustion of the substrate. An example of good substrate conversion would be to achieve at least about 50%, 55%, 60%, 65%, 70% or 75% conversion over a time period of from at least about 30 to about 200 hours or from at least about 50 to about 150 hours.",
+                                "A still additional aspect of the invention provides methods to produce bulk and platform chemicals, including alcohols, by (a) removing sufficient inhibitory aldehydes in a lignocellulosic mixture undergoing a fermentative reaction to produce bulk or platform chemicals by adding one or more polypeptides of the invention to said mixture in an amount and for a time sufficient to convert such aldehydes to nontoxic compounds, and (b) recovering the bulk or platform chemical of interest. Examples of bulk and platform chemicals include ethanol, butanol, lactate, 1,4-dicarboxylic acids (succinic, fumaric, malic), glycerol, sorbitol, mannitol, arabinitol, L-ascorbic acid, xylitol, hydrogen gas, 2,5-furan dicarboxylic acid, 3-hydroxy propionic acid, aspartic acid, glutaric acid, glutamic acid, itaconic acid, levulinic acid, 3-hydroxybutyrolactone, fatty acids, fatty-derived molecules, isoprenoids, isoprenoid-derived molecules, alkanes, isopentanol, and isoamylacetate. When using the polypeptides of the invention, increased specific productivity (gram product per gram cell and hour) can be achieved due to the faster removal of inhibitory furan compounds and carbonyl compounds from the medium.",
+                                "A further aspect of the invention relates to methods to produce butanol from biomass which comprises culturing biomass with an anaerobic, thermophilic microorganism of the invention for a time and under fermentation conditions suitable to produce butanol and recovering the butanol. The invention also contemplates similar methods for producing ethanol, furfuryl alcohol, and/or 2,5-(dihydroxymethyl)furan, by culturing as for butanol production and recovering the desired alcohol. Depending on the source of biomass, certain alcohols may predominate over others, for example, using the method with furan waste from pulp or paper processing is advantageous for recovering furfuryl alcohol. These methods are practiced as described above for biomass conversion to biofuel.",
+                                "Methods for recovery and downstream processing of biofuel, specific alcohols and bulk and platform chemicals are known in the art. For example, ethanol can be recovered by distillation, and using a thermophilic process is an advantage in that regard, especially when working on an industrial scale. Ethanol can be removed from fermentation reactors as it is produced to avoid its toxic effects on microorganisms and methods for such removal are known in the art. Butanol can be recovered by adsorption techniques. All the methods of the invention can be practiced on any scale, from small batches in a laboratory to industrial scale production.",
+                                "The foregoing is considered as illustrative of the principles of the invention. Further, since numerous modifications and changes will readily occur to those skilled in the art, it is not desired to limit the invention to the exact construction and operation shown and described, and accordingly, all suitable modifications and equivalents may be resorted to, falling within the scope of the invention. All referenced patents, patent applications or other documents cited are herein incorporated by reference in their entirety."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate detoxification of aldehydes in biomass",
+                                "describe method of improving yield and/or efficiency of biomass conversion to biofuel",
+                                "outline aldehyde detoxification treatments",
+                                "describe simultaneous acid pretreatment and aldehyde detoxification",
+                                "define biofuel",
+                                "describe biomass composition",
+                                "outline biomass pretreatment methods",
+                                "describe culturing biomass with microorganisms",
+                                "outline fermentative conversion processes",
+                                "describe consolidated bioprocessing (CBP)",
+                                "outline duration of fermentation",
+                                "describe method of producing bulk and platform chemicals",
+                                "outline recovery of bulk and platform chemicals",
+                                "describe method of producing butanol from biomass",
+                                "outline recovery of butanol",
+                                "describe methods for producing ethanol, furfuryl alcohol, and/or 2,5-(dihydroxymethyl)furan",
+                                "outline methods for recovery and downstream processing of biofuel",
+                                "describe advantages of thermophilic process",
+                                "outline scope of the invention"
+                            ],
+                            "num_characters": 9806,
+                            "outline_medium": [
+                                "motivate aldehyde detoxification in biomass conversion",
+                                "describe anaerobic, thermophilic microorganisms and proteins for detoxification",
+                                "outline method of improving yield and/or efficiency of biomass conversion",
+                                "describe aldehyde detoxification treatments before, during, or after fermentation",
+                                "define biofuel and its production",
+                                "describe biomass types and pretreatment methods",
+                                "outline fermentation processes and conditions",
+                                "describe recovery and downstream processing of biofuel and chemicals",
+                                "motivate production of bulk and platform chemicals"
+                            ],
+                            "outline_short": [
+                                "motivate aldehyde detoxification in biomass conversion",
+                                "describe aldehyde detoxification methods using microorganisms or polypeptides",
+                                "outline biofuel production from biomass using microorganisms or polypeptides",
+                                "describe recovery and downstream processing of biofuel and chemicals"
+                            ]
+                        },
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Identification of a Teth39E Fe-Dependent, Alcohol Dehydrogenase**",
+                                "The saccharolytic thermophile Thermoanaerobacter pseudethanolicus 39E (Teth39E) tolerates furfural and HMF, and reduces these compounds to their respective alcohols.",
+                                "Teth39E (DSMZ 2355) was purchased from Deutsche Sammlung von Mikroorganismen and Zellkulturen GmbH (DSMZ). Anaerobic growth medium was prepared anaerobically by a modified Hungate technique and consisted of 4.5 mM KCl, 4.7 mM NH4Cl, 2.5 mM MgSO4.7H2O, 1.0 mM NaCl, 0.7 mM CaCl2.2H2O, 0.25 mg/ml resazurin, 2.8 mM cysteine-HCl, 6.0 mM NaHCO3, 1 mM potassium phosphate buffer (pH 6.8), 10 mM 3-(N-morpholino)-propanesulfonic acid (pH 6.8), 1\u00d7 Wolfe's trace minerals, 1\u00d7 Wolfe's vitamin supplement, 0.1% (w/v) yeast extract, and 40 mM glucose [Miller and Wolin (1974) Appl. Microbiol. 27:985-987; Wolin et al. (1963) J. Biol. Chem. 238:2882-2886]. Furan aldehydes were added from degassed concentrated stock solutions. Cultures were grown at 65\u00b0 C. from a 1% inoculum in Balch tubes (10 mL) or 125 mL serum bottles (50 mL). Cell growth was monitored by optical density at 600 nm, either directly in the Balch tube using a Spectronic 200 spectrophotometer (Thermo Fisher Scientific, Waltham, Mass.) or as 200 \u03bcL samples transferred to a 96-well plate and read on a Synergy Mx plate reader (BioTek, Winooski, Vt.). All growth experiments were performed in triplicate.",
+                                "Lower concentrations of furfural (10 and 20 mM) and 5-hydroxymethylfurfural (10 mM) stimulated growth of Teth39E, with increased cell yields after 12 h for both (see FIG. 1). Furfural addition increased specific growth rate at both 10 mM (0.52\u00b10.03 h\u22121) and 20 mM (0.43\u00b10.03 h\u22121) versus the control without furfural (0.38\u00b10.01 h\u22121) (see FIG. 1A) and 5-hydroxymethylfurfural (5-HMF) also increased specific growth rate at 10 mM versus the control (0.51\u00b10.03 v. 0.41\u00b10.02 h\u22121) (see FIG. 1B). The furan aldehyde concentration which resulted in 50% inhibition of growth (IC50) with furfural was 30 mM after 12 h and 30 to 40 mM after 24 h. The IC50 for 5-HMF was between 20 and 30 mM after both 12 and 24 h.",
+                                "Furfural and 5-HMF were measured spectrophotometrically (DU 800, Beckman Coulter, Brea, Calif.) at 304 and 323 nm, respectively, and concentrations were determined using standard curves generated in growth medium. In addition, 2,5-(dihydroxymethyl)furan was measured using GC-MS. Teth39E was grown in the presence of 15 mM furfural or 5-HMF and furan aldehyde and respective furan alcohol concentrations were measured along with growth, either spectrophotometrically or by GC-MS. As shown in FIG. 2, furfural (FIG. 2A) and 5-HMF (FIG. 2B) concentration decreased and 2,5-(dihydroxymethyl)furan concentration increased concomitant with growth, indicating reduction of 5-HMF by Teth39E. Furfural was most likely also reduced to furfuryl alcohol; however, detection of the latter is complicated by its polymerization at the growth temperature of Teth39E.",
+                                "The gene product of Teth39\u20141597 is an aldehyde reductase (BdhA) that reduces furfural and 5-HMF to furfuryl alcohol and 2,5-(dihydroxymethyl)furan in an NADPH-dependent manner. See FIG. 3."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Thermoanaerobacter pseudethanolicus 39E (Teth39E)",
+                                "describe anaerobic growth medium preparation",
+                                "outline growth experiments with furfural and 5-hydroxymethylfurfural",
+                                "describe measurement of furfural and 5-hydroxymethylfurfural concentrations",
+                                "outline reduction of furfural and 5-hydroxymethylfurfural by Teth39E",
+                                "describe gene product of Teth39\u20141597 as an aldehyde reductase (BdhA)"
+                            ],
+                            "num_characters": 3146,
+                            "outline_medium": [
+                                "introduce Teth39E and its tolerance to furfural and HMF",
+                                "describe growth experiments and results with furfural and 5-HMF",
+                                "identify BdhA aldehyde reductase and its function"
+                            ],
+                            "outline_short": [
+                                "illustrate identification of a Teth39E Fe-dependent, alcohol dehydrogenase"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Characterization of BdhA**",
+                                "To identify the enzymes responsible for furfural and 5-HMF conversion, the proteomes were compared for strain Teth39E grown in the presence or absence of 15 mM furfural. Many proteins were upregulated at least 2-fold by furfural, including homologs of proteins involved in furfural detoxification in Escherichia coli (Miller 2009), and these proteins were targeted for further investigation. The protein encoded by the Teth39\u20141597 locus is a predicted Fe-dependent, alcohol dehydrogenase (bdhA) and the expression was upregulated approximately 7-fold in the presence of 15 mM furfural.",
+                                "The bdhA gene was PCR amplified from Teth39E genomic DNA and cloned into E. coli expression vector pET30a (see FIG. 6A) under control of an IPTG-inducible, strong T7 promoter via the methods described below.",
+                                "Teth39E genomic DNA was isolated using the Wizard Genomic DNA Purification kit (Promega, Madison, Wis.). The bdha gene was PCR amplified using Phusion polymerase (New England Biolabs, Ipswich, Mass.) and cloned into pET30a (EMD Millipore, Billerica, Mass.) behind 6\u00d7His- and S-tags. See FIG. 6A. Expression plasmids were transformed in BL21 (DE3) E. coli according to the manufacturer's protocol (Invitrogen, Grand Island, N.Y.). Cells were grown in 50 mL 2\u00d7YT medium at 37\u00b0 C. to OD600 of 0.8-1.0, then induced with 100 \u03bcM isopropyl-\u03b2-D-thiogalactopyranoside and switched to 30\u00b0 C. for 16 h. Cells were harvested at 4\u00b0 C. (3,000\u00d7g, 30 min), washed in 50 mL 100 mM sodium phosphate buffer, pH 7 (buffer A), and re-suspended in 5 mL buffer A. Enzyme assays were performed aerobically at 60\u00b0 C. with whole cell lysates and specific activity was determined by measuring the change in absorbance at 340 nm due to oxidation of NADPH or NADH.",
+                                "Cell suspension (450 \u03bcL) was added to 0.1 mm zirconia beads (300 \u03bcL) and vortexed 4\u00d760 sec with 30 sec on ice in between. Samples were centrifuged (14,000\u00d7g, 2 min) and the resulting supernatant was used for enzyme assays.",
+                                "For the enzyme assays, Buffer A (1 mL), 10 mM NAD(P)H (25 \u03bcL), and 400 mM aldehyde (50 \u03bcL) were added to a 2 mL quartz cuvette, sealed with a butyl stopper, and equilibrated to 60\u00b0 C. Assays were read at 340 nm (DU 800) for 150 sec to establish a baseline slope before whole cell lysate was added (1-5 \u03bcL). Cuvettes were inverted once to mix and read an additional 450 sec. The decrease in absorbance over time was calculated and the baseline slope was subtracted. NAD(P)H concentration was determined using the extinction coefficient (NADH: 6220 M\u22121 cm\u22121, NADPH: 6270 M\u22121 cm\u22121) and specific activity was calculated as the change in \u03bcmoles NAD(P)H/min/mg of whole cell lysate protein. Protein concentration was determined using the Bradford assay (Bio-Rad, Hercules, Calif.) with bovine serum albumin as a standard. Specific activity was measured for the pET30a vector (control) and overexpressed Teth39\u20141597 (BdhA) with acetaldehyde, butyraldehyde, isobutyraldhyde, furfural, and 5-HMF. Furfural was also assayed under anaerobic conditions. BdhA activity was compared to the vector-only control.",
+                                "BdhA showed activity above the vector control under aerobic conditions using NADPH as cofactor with both furan aldehydes. The assays showed reducing activity for furfural, 5-HMF, butyraldehyde, isobutyraldehyde, and acetaldehyde in the presence of NADPH (see Table 1 and FIG. 7). Specific activity was 4.97\u00b10.17 U with furfural and 10.06\u00b10.80 U with 5-HMF. The highest activity was observed against butyraldehyde (approximately 14.58\u00b13.57 \u03bcmoles/min/mg) while the lowest activity occurred with isobutyraldehyde as the substrate. No activity was detected with BdhA (above the vector control) using NADH as the cofactor, and no other cofactors were required.",
+                                "When overexpressed in E. coli, the Teth39E expression BdhA vector produced a protein of the correct molecular weight whereas the control vector did not as shown by SDS PAGE and Coomassie blue staining (see FIG. 6B). The overexpressed protein had an expected molecular weight of 48 kD, including N-terminal tags and cleavage sites.",
+                                "The optimal temperature for BdhA activity was determined from purified enzyme as follows. A 1 liter culture of E. coli BL21 (DE3) harboring the pET30a-BdhA expression construct (see FIG. 6A) was grown to mid-log phase and induced with 0.4 mM IPTG and allowed to incubate for 16 h at 30\u00b0 C. with shaking at 250 rpm. The induced cells were harvested via centrifugation at 5,000\u00d7g for 20 min at 4\u00b0 C. and washed 3 times with 40 mL ice-cold phosphate buffered saline (PBS) at pH 7.2 and placed on ice. The cell pellet was resuspended in binding buffer (20 mM sodium phosphate, 500 mM NaCl, 20-40 mM imidazole, pH 7.4) containing 0.2 mg/mL lysozyme, 20 \u03bcg/mL DNAse, 1 mM MgCl2, 1 mM PMSF and stirred for 30 min at room temperature. The cells were then subjected to 5\u00d72 min rounds of sonication (Branson Sonifier 450 with microtip, duty cycle at 30%) while kept in an ice water bath. The lysate was centrifuged at 7,500\u00d7g for 20 min at 4\u00b0 C. and the supernatant was transferred to a new 50 mL conical tube. Purification of the 6\u00d7His tagged BdhA enzyme was performed using 1 mL HisTrap FF crude affinity column according to the supplier's protocol (GE Healthcare, Piscataway, N.J., USA). Enzyme assays were performed as described above only 3 \u03bcg of purified BdhA enzyme was used rather than crude lysate. For determining the optimal temperature for BdhA, 1 mL assays containing 100 mM phosphate buffer (pH 7.5), 20 mM butyraldehyde, and 0.25 mM NADPH were monitored for loss of absorbance at 340 nm for 20 seconds at 30-90\u00b0 C. in 5\u00b0 C. intervals. Each assay was preheated to the appropriate temperature before adding 3 \u03bcg of purified BdhA enzyme. A temperature controlled cuvette holder (Shimadzu UV-800) was used to maintain assay temperature. The results are shown in FIG. 8. The optimal temperature was observed to be 75\u00b0 C.",
+                                "The optimum pH was also determined for BdhA by using butyraldehyde as the substrate and NADPH as the cofactor. The assay conditions were as described above but a series of buffers increasing in pH from 4-10 were substituted for 100 mM phosphate buffer (pH 7.5). The optimal relative activity was found to be at a value of 8.0 pH units. See FIG. 9.",
+                                "The bdhA gene was inserted into the genome of the cellulolytic, thermophilic microorganism, Caldicellulosiruptor bescii. The coding sequence for BdhA the bdhA gene set forth in SEQ ID NO: 1 was PCR amplified from Thermoanaerobacter pseudethanolicus 39E and cloned into the shuttle vector pDCW 171 (FIG. 10A), generating the BdhA expression cassette, which consists of the bdha coding region flanked by a strong promoter (Ps-layer) at the 5\u2032 end and a 6\u00d7His-tag plus Rho-independent terminator at the 3\u2032 end. Flanking the expression cassette are two kb sequences enabling homologous recombination into a targeted area in the chromosome. Also included in the pDCW 171 vector is a pyrF cassette allowing for uracil prototrophic selection of transformants. The construct was transformed into a C. bescii host strain (JWCB018) according to the methods described in Chung et al. [PNAS, 2014, 111:8931-8936]. Homologous recombination can occur at either the upstream or the downstream targeted chromosomal region, integrating the plasmid into the genome and generating a strain that is a uracil prototroph due to integration of the pyrF cassette on pDCW 171. Counter-selection with 5-fluoroorotic acid (5-FOA) selects for loss of the plasmid sequences, specifically the pyrF cassette, but not the BdhA expression cassette. Bent arrows depict primers used for verification of the integrated expression cassette (see FIG. 10B).",
+                                "Transformants were selected on a minimal medium without uracil. Counter-selection for double recombinants and loss of the suicide plasmid were screened for by picking colonies onto media containing 5-FOA. PCR was used to verify integration of the bdhA gene allele at the target locus within the chromosome (FIG. 11A). The total cellular protein was separated on an SDS-PAGE gel for wild-type C. bescii; the parent strain (JWCB018), and the expression strain JWCB044 grown at 65, 70, and 75\u00b0 C. (FIG. 11B). The separated proteins were stained with Coomassie blue, transferred to a blotting membrane and subjected to Western analysis using anti-His antibodies (FIG. 11B). The BdhA enzyme was heterologously expressed in C. bescii at 65-75\u00b0 C. as indicated by antibody detection in total cell protein.",
+                                "Growth experiments were conducted to test the phenotype of a C. bescii strain expressing BdhA (JWCB044) compared to a parent strain (JWCB018) when exposed to 5 and 10 mM furfural. The cells were grown in 10 mL of a minimal defined medium [Farkas et al. (2013) J. Ind. Microbiol. Biotechnol. 40:41-49] in Balch tubes incubated at 75\u00b0 C. with shaking at 100 rpm. Experiments were inoculated in triplicate at equal cell densities from fresh overnight cultures. Growth was measured by placing individual Balch tubes in a Spec20 spectrophotometer and recording the absorbance at 600 nm. Furfural was added after 4 h of incubation and growth was measured periodically for 28 h. Compared to the parent strain control (JWCB018), the BdhA expression strain (JWCB044) displayed increased cell densities at 24 h of growth by 12.2% for the 5 mM furfural treatment and 21.7% when 10 mM furfural was added. See FIG. 12. A 15 mM furfural treatment, when applied to both JWCB018 and JWCB044 resulted in an improvement in the final OD600 values by 49% in JWCB044 after 24 h of growth. The residual furfural concentration was measured via HPLC analysis in cultures of JWCB018 and JWCB044 after 24 h of growth in the presence of either 5, 10, or 15 mM furfural. Uninoculated controls showed no degradation of furfural over time. When exposed to 5 mM furfural, the parent strain displayed some ability to reduce furfural to furfuryl alcohol in situ; however, at 10 mM furfural, no furfural was reduced and 100% remained in the medium after 24 h. In contrast, the strain expressing BdhA showed a dramatic difference in furfural concentration, with no detectable furfural remaining in any culture after 24 h. See FIG. 13. These results demonstrate that the engineered strain expressing BdhA is improved over the parent strain (which is derived from the wild-type) and tolerates significant concentrations of the furan aldehyde, furfural."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "characterize BdhA enzyme",
+                                "identify enzymes responsible for furfural and 5-HMF conversion",
+                                "compare proteomes of strain Teth39E grown with and without furfural",
+                                "target proteins for further investigation",
+                                "PCR amplify bdhA gene from Teth39E genomic DNA",
+                                "clone bdhA gene into E. coli expression vector pET30a",
+                                "express and purify BdhA enzyme",
+                                "perform enzyme assays with whole cell lysates",
+                                "measure specific activity of BdhA enzyme",
+                                "compare BdhA activity with vector-only control",
+                                "determine optimal temperature for BdhA activity",
+                                "determine optimal pH for BdhA activity",
+                                "insert bdhA gene into genome of Caldicellulosiruptor bescii",
+                                "generate BdhA expression cassette",
+                                "transform BdhA expression cassette into C. bescii host strain",
+                                "select for transformants on minimal medium without uracil",
+                                "verify integration of bdhA gene allele at target locus",
+                                "express BdhA enzyme in C. bescii at 65-75\u00b0C",
+                                "conduct growth experiments with C. bescii strains",
+                                "measure growth and furfural degradation in C. bescii strains"
+                            ],
+                            "num_characters": 10382,
+                            "outline_medium": [
+                                "characterize BdhA enzyme",
+                                "clone BdhA gene into E. coli expression vector",
+                                "express and purify BdhA enzyme",
+                                "perform enzyme assays with various substrates",
+                                "determine optimal temperature for BdhA activity",
+                                "determine optimal pH for BdhA activity",
+                                "insert BdhA gene into Caldicellulosiruptor bescii genome",
+                                "verify integration of BdhA gene into chromosome",
+                                "express BdhA enzyme in C. bescii at various temperatures",
+                                "test growth of C. bescii strain expressing BdhA in presence of furfural"
+                            ],
+                            "outline_short": [
+                                "characterize BdhA enzyme",
+                                "express and purify BdhA in E. coli",
+                                "determine optimal temperature and pH for BdhA activity",
+                                "integrate BdhA expression cassette into C. bescii genome",
+                                "evaluate growth and furfural tolerance of C. bescii expressing BdhA"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Bacterial Homology to BdhA**",
+                                "Table 2 lists the sequenced microorganisms that have coding sequences that share at least 60% identity and homology with BdhA as determined by the BLAST algorithm in May 2013.",
+                                "Although the various aspects of the invention have been illustrated above by reference to examples and preferred embodiments, it will be appreciated that the scope of the invention is defined not by the foregoing description but by the following claims properly construed under principles of patent law."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "list sequenced microorganisms with coding sequences homologous to BdhA"
+                            ],
+                            "num_characters": 512,
+                            "outline_medium": [
+                                "list bacterial homologs to BdhA"
+                            ],
+                            "outline_short": [
+                                "identify bacterial homologs to BdhA"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce engineered anaerobic, thermophilic microorganisms",
+                        "describe benefits of expressing exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase"
+                    ],
+                    "num_characters": 1202,
+                    "outline_medium": [
+                        "introduce engineered anaerobic, thermophilic microorganisms expressing exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase"
+                    ],
+                    "outline_short": [
+                        "introduce engineered anaerobic, thermophilic microorganisms expressing exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase"
+                    ]
+                }
+            ],
+            "outline_long": [
+                "claim priority of provisional patent application"
+            ],
+            "num_characters": 375,
+            "outline_medium": [
+                "claim priority of provisional patent application"
+            ],
+            "outline_short": [
+                "claim priority of provisional patent application"
+            ]
+        }
+    ],
+    "claims": [
+        "1. An anaerobic, thermophilic microorganism comprising a vector that expresses an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof.",
+        "2. The microorganism of claim 1, wherein the NADPH- and iron-dependent alcohol dehydrogenase has an aldehyde reductase specific activity of at least about 2-20 \u03bcmol/min/mg with furfural as a substrate, of at least about 5-50 \u03bcmol/min/mg with 5-hydroxymethylfurfural as a substrate, of at least about 2-20 \u03bcmol/min/mg with acetaldehyde as a substrate, of at least about 0.3-3 \u03bcmol/min/mg with isobutyraldehyde as a substrate, and/or at least about 7-70 \u03bcmol/min/mg with butyraldehyde as a substrate.",
+        "3. The microorganism of claim 2, wherein said aldehyde reductase specific activity is at least 4 \u03bcmol/min/mg with furfural as a substrate, at least 10 \u03bcmol/min/mg with 5-hydroxymethylfurfural as a substrate, of at least 4 \u03bcmol/min/mg with acetaldehyde as a substrate, of at least about 0.6 \u03bcmol/min/mg with isobutyraldehyde as a substrate, and/or at least 14 \u03bcmol/min/\u03bcmg with butyraldehyde as a substrate.",
+        "4. The microorganism of claim 1, wherein the microorganism is selected from the group consisting of Thermoanaerobacter brockii, Thermoanaerobacter ethanolicus, Thermoanaerobacter pseudethanolicus, Thermoanaerobacterium aotearoense, Thermoanaerobacterium saccharolyticum, Thermoanaerobacterium thermosaccharolyticum, Thermoanaerobacterium xylanolyticum, Clostridium thermocellum, Clostridium straminisolvens, Clostridium thermocopriae, Caldicellulosiruptor bescii, Caldicellulosiruptor saccharolyticus, Caldicellulosiruptor hydrothermalis, Caldicellulosiruptor kristjanssonii, Caldicellulosiruptor kronotskyensis, Caldicellulosiruptor lactoaceticus, Caldicellulosiruptor owensensi, Caldicellulosiruptor acetigenus and Caldicellulosiruptor obsidiansis.",
+        "5. A method to generate an anaerobic, thermophilic microorganism that expresses an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof, comprising introducing a nucleic acid vector that expresses an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof into an anaerobic, thermophilic microorganism.",
+        "6. A nucleic acid vector capable of expressing an exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof in an anaerobic, thermophilic microorganism.",
+        "7. The nucleic acid vector of claim 6, wherein the exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof has the amino acid sequence set forth in SEQ ID NO: 1.",
+        "8. The nucleic acid vector of claim 6, wherein the exogenous heat-stable, NADPH- and iron-dependent alcohol dehydrogenase cloned from Thermoanaerobacter pseudethanolicus 39E, or a homolog thereof has at least 70, 80, 90, 95, 98 or 99% identity to the amino acid sequence set forth in SEQ ID NO: 1.",
+        "9. A lignocellulosic biomass fermentation process comprising contacting biomass with the microorganism of claim 1 for a time and under thermophilic, anaerobic conditions to detoxify inhibitory aldehydes present in the biomass, and to allow fermentation of the biomass and conversion of the biomass to biofuel.",
+        "10. The process of claim 9, wherein said biomass has been pretreated by acid hydrolysis, hot water, or enzymatic hydrolysis.",
+        "11. A method of improving the yield and/or efficiency of lignocellulosic biomass conversion to biofuel, comprising contacting lignocellulosic biomass with the microorganism of claim 1 for a time and under thermophilic, anaerobic conditions sufficient to detoxify inhibitory aldehydes present in said biomass, and to produce improved yields or efficiency of biomass conversion to biofuel, relative to lignocellulosic biomass that has not been so contacted.",
+        "12. The method of claim 11, wherein said lignocellulosic biomass has been pretreated by acid hydrolysis, hot water, or enzymatic hydrolysis.",
+        "13. A lignocellulosic biomass fermentation process comprising contacting lignocellulosic biomass with the microorganism of claim 1 and an anaerobic, thermophilic microorganism for a time and under thermophilic, anaerobic conditions to detoxify inhibitory aldehydes present in the biomass and to allow fermentation of the biomass to proceed and conversion of biomass to biofuel.",
+        "14. The method of claim 13, wherein said lignocellulosic biomass has been pretreated by acid hydrolysis, hot water, or enzymatic hydrolysis.",
+        "15. An improved method of producing a bulk or platform chemical from lignocellulosic biomass, the improvement comprising contacting said lignocellulosic biomass with the anaerobic, thermophilic microorganism of claim 1 for a time and under conditions to reduce the aldehyde content associated with said lignocellulosic biomass and to improve production efficiency or yield of said bulk or platform chemical, and recovering the bulk or platform chemical.",
+        "16. The method of claim 15, wherein said lignocellulosic biomass has been pretreated by acid hydrolysis, hot water, or enzymatic hydrolysis.",
+        "17. The method of claim 15, wherein the bulk or platform chemical is selected from the group consisting of ethanol, butanol, lactate, furfuryl alcohol, 1,4-dicarboxylic acids (succinic, fumaric, malic), glycerol, sorbitol, mannitol, xylitol/arabinitol, L-ascorbic acid, xylitol, hydrogen gas, 2,5-furan dicarboxylic acid, 3-hydroxy propionic acid, aspartic acid, glutaric acid, glutamic acid, itaconic acid, levulinic acid, 3-hydroxybutyrolactone, fatty acids, fatty-derived molecules, isoprenoids, isoprenoid-derived molecules, alkanes, isopentanol, and isoamylacetate.",
+        "18. The method o claim 15, wherein the lignocellulosic biomass is furan waste from pulp or paper processing."
+    ]
+}

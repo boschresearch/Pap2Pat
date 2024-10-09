@@ -1,0 +1,219 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- limitations of NISQ devices
+
+## BRIEF SUMMARY
+
+- introduce quantum-assisted machine learning
+- application of quantum model
+- embodiment of apparatus
+
+## DETAILED DESCRIPTION
+
+- introduce non-limiting example embodiments
+- define terms used in the disclosure
+- describe tensor networks (TNs) and their application in quantum-assisted machine learning
+- motivate use of TNs in noisy intermediate-scale quantum (NISQ) devices
+- describe methods for quantum-assisted machine learning using TNs and classical data sets
+- introduce optimization methodologies for training TN models on classical devices
+- describe deployment of TN models on gate-based quantum devices
+- motivate use of heuristics for translating TN models into abstract quantum circuits
+- describe compilation of TN models into quantum programs for NISQ devices
+- highlight advantages of TN-based quantum programs
+- describe applicability of example methods in various contexts
+- introduce quantum-assisted machine learning (QAML) on NISQ devices
+- describe framework for designing and optimizing TN-based QAML models
+- introduce generalized canonical form for matrix product state (MPS) models
+- describe greedy heuristics for compiling TN models with given topology and gate set
+- introduce solvable benchmark problem for assessing performance of MPS QAML models
+- describe impacts of hardware topology and noise fluctuations on model performance
+- introduce parametric studies of depolarization and readout noise impacts on model performance
+- describe gate-based quantum computing and its limitations
+- motivate use of NISQ devices in machine learning applications
+- describe design of quantum circuits for machine learning applications
+- introduce TN-based QAML algorithms and their advantages
+- describe applicability of QAML with TN architectures on NISQ hardware and hardware simulators
+- introduce framework for QAML with TNs, including translation of classical data into quantum states
+- describe optimization of TN models using classical techniques
+- introduce conversion of TN models into resource-efficient sequential preparation schemes
+- describe compilation and optimization of isometric operations into native operations for given hardware topology and gate set
+- introduce techniques for compilation stage aimed at TN models for QAML on NISQ devices
+- describe permutation of auxiliary quantum degrees of freedom in TN to optimize mapping to hardware resources
+- introduce heuristics for translation of isometries into native operations minimizing entangling operations
+- describe example method 100 for QAML workflow
+- introduce quantum-inspired ML applications
+- define phase-like encoding
+- derive related map satisfying both conditions
+- focus on binary data
+- learn or train quantum model
+- define quantum model using TN models
+- describe TN topologies
+- introduce matrix product states (MPSs)
+- describe properties of MPSs
+- apply TN methods outside of condensed matter and quantum information domains
+- leverage sequential preparation scheme
+- describe qubit resource requirements
+- illustrate property using register of N qubits
+- define isometric operators
+- describe decoupling of qubit states from ancilla
+- introduce quantum data representation
+- define Born machine
+- describe data representation using Born machine
+- define average log-likelihood
+- minimize negative log-likelihood
+- update local block of tensors
+- describe sweeping process
+- convert MPS model into sequence of operations
+- describe quantum compilation
+- optimize tensor network structure
+- display isometries using plots
+- define basis ordering
+- describe isometry acting on physical qubit and ancilla
+- clean isometries from classical model
+- filter MPS to remove noise
+- perform local SVD compression
+- truncate bond dimension
+- replace MPS tensor with U or V
+- convert MPS into left-canonical form
+- use gauge freedom to produce MPS models
+- define matrix of overlaps
+- diagonalize matrix of overlaps
+- transform basis of L
+- permute ancilla basis states
+- show example isometries before permutation
+- show example isometries after permutation
+- handle ambiguities in permutation operation
+- enumerate basis permutations
+- construct isometries for permutations
+- select permutation to minimize qubit operations
+- convert state index into binary representation
+- map ancilla state onto collection of qubits
+- describe example binary representations
+- describe sequential MPS preparation scheme
+- require ancilla to start and end in vacuum state
+- handle cases where multiple elements have same absolute value
+- employ alternate procedure to decide between permutations
+- condition operator to be as diagonal as possible
+- construct cost function to minimize qubit operations
+- describe qubit operations in terms of binary representation
+- describe compilation of isometries for QAML models
+- leverage gauge freedom to simplify compilation
+- define distance between basis states
+- introduce cost function
+- implement right-moving update
+- implement left-moving update
+- transform MPS to diagonal gauge
+- set diagonality center
+- fix sign ambiguity
+- transform isometries to quantum operations
+- describe target hardware
+- define single-qubit gates
+- define two-qubit gates
+- introduce compilation heuristic
+- define cost function for compilation
+- optimize cost function
+- select acceptable unitary
+- form priority queue
+- add gate-dependent heuristic function
+- evaluate cost function
+- optimize cost function using BFGS method
+- introduce longer gate sequence motifs
+- define quantum gates
+- introduce CNOT connectivity
+- derive Ŝ gate compilation
+- derive gate compilation
+- discuss gate optimization
+- introduce penalty function
+- apply greedy compilation procedure
+- illustrate example compilation
+- discuss cost function tolerance
+- describe successive optimization rounds
+- compile raw circuit into CNOTs
+- collect single-qubit rotations
+- optimize single-qubit gates
+- discuss alternative compilation methods
+- describe QISKIT implementation
+- discuss isometric completion
+- compare methods with generic method
+- illustrate example isometry compilation
+- discuss permutation gate compilation
+- describe reversible logic synthesis
+- define exactly solvable benchmark model
+- introduce NIPS Born machine
+- describe exactly solvable MPS generative model
+- convert MPS to sequential qubit preparation
+- perform QR decomposition
+- reshape tensors to isometries
+- define quantum gate operations
+- introduce isometry operators
+- derive unitary completion of operators
+- provide matrix representation of unitary completion
+- discuss natural interpretation of rotation angle
+- introduce alternative unitary completion for isometry
+- describe gate-based perspective of operators
+- discuss implementation of iSWAP gates
+- generate operation using effective Hamiltonian
+- discuss freedom in representation of bond basis
+- introduce reversed roles of ancilla states
+- derive isometries with reversed roles
+- provide matrix representation of natural unitary completions
+- describe natural unitary completions using effective Hamiltonian
+- describe quantum-assisted machine learning
+- encode classical data into quantum states
+- train quantum model with tensor network structure
+- compile quantum model into quantum circuit
+- map virtual qubits onto hardware qubits
+- describe exactly solvable benchmark model
+- apply sequential preparation scheme
+- implement diagonal gauge for model representation
+- use greedy heuristics for gate sequence optimization
+- describe noise levels of NISQ devices
+- implement jackknife procedure for statistical analysis
+- apply measurement noise filter for noise calibration
+- describe KL divergence for performance assessment
+- show results of auto-compiled circuits
+- compare hand-compiled and auto-compiled circuits
+- describe QAML module for encoding and training
+- describe processing circuitry for QAML module
+- describe memory for storing QAML data
+- describe processor for executing QAML instructions
+- describe apparatus for implementing QAML
+- describe configuration of processing circuitry
+- describe operation of QAML module
+- describe encoding of classical data vectors
+- describe training of quantum model
+- describe compilation of quantum model
+- describe sequential preparation of matrix product states
+- describe implementation of diagonal gauge
+- describe greedy heuristics for gate sequence optimization
+- describe quantum hardware device
+- describe qubit topology
+- describe quantum circuit with gates
+- minimize entangled gates in quantum circuit
+- describe example method for QAML
+- encode classical data into quantum states
+- train quantum model with tensor network structure
+- compile quantum model into quantum circuit
+- map virtual qubits onto hardware qubits
+- describe encoding of classical data vectors
+- describe training of quantum model
+- describe compilation of quantum model
+- describe sequential preparation of matrix product states
+- describe implementation of diagonal gauge
+- describe greedy heuristics for gate sequence optimization
+- describe quantum hardware device
+- describe qubit topology
+- describe quantum circuit with gates
+- minimize entangled gates in quantum circuit
+- describe apparatus for implementing QAML
+- describe configuration of processing circuitry
+- describe operation of QAML module
+- describe encoding of classical data vectors
+- describe training of quantum model
+

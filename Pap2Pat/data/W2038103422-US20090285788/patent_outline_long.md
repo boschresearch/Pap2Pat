@@ -1,0 +1,411 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+- introduce RNA molecule invention
+
+## BACKGROUND OF THE INVENTION
+
+- limitations of conventional RNA library synthesis
+
+## SUMMARY OF THE INVENTION
+
+- provide expression vectors for RNA molecules
+- define RNA molecule structure
+- describe set or library of recombinant expression vectors
+- motivate method of generating RNA molecules
+- describe method of generating RNA molecules
+- detail nucleic acid intermediate II
+- detail double-stranded intermediate III
+- describe restriction enzyme site asymmetry
+- provide alternative method of generating RNA molecules
+- describe synthesizing nucleotide intermediate I
+- describe synthesizing second nucleotide molecule
+- describe annealing nucleotide intermediate I
+- provide set or library of recombinant viruses
+- provide expression vector for RNA molecule
+- describe method of conferring protection against viral infection
+- describe method of inhibiting viral replication
+- describe method of inducing cell differentiation
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce RNA molecules with double-stranded variable region
+- describe sets and libraries of RNA molecules
+- outline methods of generating RNA molecules
+- identify RNA therapeutics or RNA molecules affecting biological parameters
+- describe drug targets for diseases or disorders
+- identify variants of RNA molecules with altered biological effects
+- exemplify recombinant expression vectors expressing RNA molecules
+- describe individual RNA molecules with variable, non self-complementary, and complementary regions
+- vary second, non self-complementary region location
+- vary double-stranded region among RNA molecules
+- make non self-complementary region common to RNA molecules
+- express one type of RNA molecule per vector
+- generate random or variable region sequences using oligonucleotide synthesizer
+- generate sequences using computer
+- vary length of sub-region of substantially random sequence
+- specify length of sub-region as 6-29 nucleotides
+- specify length of sub-region as 7-29 nucleotides
+- specify length of sub-region as 8-29 nucleotides
+- specify length of sub-region as 9-29 nucleotides
+- specify length of sub-region as 10-29 nucleotides
+- specify length of sub-region as 11-29 nucleotides
+- specify length of sub-region as 12-29 nucleotides
+- specify length of sub-region as 13-29 nucleotides
+- specify length of sub-region as 14-29 nucleotides
+- specify length of sub-region as 15-29 nucleotides
+- specify length of sub-region as 7-25 nucleotides
+- specify length of sub-region as 8-25 nucleotides
+- specify length of sub-region as 9-25 nucleotides
+- specify length of sub-region as 10-25 nucleotides
+- specify length of sub-region as 11-25 nucleotides
+- specify length of sub-region as 12-25 nucleotides
+- specify length of sub-region as 13-25 nucleotides
+- specify length of sub-region as 14-25 nucleotides
+- specify length of sub-region as 15-25 nucleotides
+- define "substantially random" sequence
+- define "non self-complementary" sequence
+- define "substantially complementary" sequence
+- add promoter of RNA polymerase to expression vectors
+- express set or library of RNA molecules using expression vectors
+- add gene encoding RNAi molecule to expression vectors
+- describe loop-forming region in RNA molecules
+- define "palindromic" sequence
+- define terms
+- describe embodiments of copies
+- describe embodiments of second copy
+- describe embodiments of homology
+- describe embodiments of inverted double-stranded copy
+- describe embodiments of obtaining nucleic acid intermediate II
+- describe embodiments of obtaining double-stranded intermediate I B
+- describe embodiments of obtaining nucleic acid intermediate II without double-stranded intermediate I B
+- describe embodiments of obtaining nucleic acid intermediate II by other methods
+- describe embodiments of obtaining double-stranded intermediate I B with primer
+- describe embodiments of obtaining double-stranded intermediate I B with mismatched primer
+- describe embodiments of obtaining double-stranded intermediate I B with non-aligned primer
+- describe embodiments of obtaining nucleic acid intermediate II with linker nucleic acid molecule
+- describe embodiments of obtaining nucleic acid intermediate II with hairpin-shaped linker
+- describe embodiments of obtaining nucleic acid intermediate II with non-hairpin-shaped linker
+- describe embodiments of obtaining nucleic acid intermediate II with restriction enzymes
+- describe embodiments of nucleic acid intermediate II structure
+- describe embodiments of obtaining circular intermediate IV
+- describe embodiments of obtaining circular intermediate IV with fragment of ds intermediate III
+- describe embodiments of obtaining circular intermediate IV with ligation
+- describe embodiments of obtaining circular product
+- describe embodiments of obtaining circular product with fragment of ds intermediate III
+- describe embodiments of obtaining circular product with ligation
+- describe embodiments of obtaining linear intermediate V
+- describe embodiments of obtaining circular product VI
+- describe embodiments of obtaining circular product VI with non-palindromic intervening region
+- describe embodiments of obtaining circular product VI with loop-forming region
+- describe embodiments of obtaining circular product VI with ordered components
+- describe embodiments of generating set or library of recombinant expression vectors
+- describe embodiments of generating set or library of RNA molecules
+- describe embodiments of individual RNA molecules
+- describe embodiments of method depicted in FIGS. 6-8
+- describe embodiments of generating single-stranded nucleic acid intermediate I
+- describe embodiments of generating single-stranded nucleic acid intermediate I with altered backbone or base composition
+- describe embodiments of "constant" region
+- describe embodiments of method for generating expression vector
+- describe embodiments of fragment of ds intermediate III
+- define hybridize
+- define hybridize under stringent conditions
+- define hybridize under moderate conditions
+- define hybridize with self-complementary nucleotide
+- define constant region as substrate for nicking endonuclease
+- specify nicking endonuclease as DNA nicking endonuclease
+- specify nicking endonuclease as Nb.BbvC I
+- describe step of obtaining double-stranded intermediate III
+- describe extending primer with polymerase
+- specify polymerase with strand displacement activity
+- specify polymerase with high strand displacement activity
+- specify polymerase as DNA polymerase
+- specify polymerase as phi29
+- specify polymerase as Bst
+- specify polymerase as Vent
+- specify Vent as exo-
+- specify polymerase as 9 oNm
+- define strand displacement activity
+- define highly processive
+- specify nicking endonuclease as Nb.Bsm I
+- specify nicking endonuclease as Nt.Alw I
+- specify nicking endonuclease as Nt.BbvC I
+- specify nicking endonuclease as Nt.BstNB I
+- specify nicking endonuclease as Nb.BsrDI
+- specify nicking endonuclease as Nb.BtsI
+- describe step of obtaining double-stranded intermediate I B
+- describe primer with mismatches
+- describe intentional mis-alignment of primer
+- define sticky end
+- define blunt end
+- describe step of obtaining nucleic acid intermediate II
+- describe ligation of linker nucleic acid molecule
+- describe restriction enzyme site asymmetry
+- describe expression vector embodiments
+- define RNA polymerase promoter embodiment
+- introduce RNAi molecule embodiment
+- describe recombinant virus embodiment
+- define shRNA molecule embodiment
+- describe digestion embodiment
+- introduce endonuclease embodiment
+- describe method for identifying RNA molecule
+- define mechanism of action embodiment
+- describe function-based screening embodiment
+- isolate or amplify expression vector embodiment
+- sequence expression vector embodiment
+- contact additional cell with expression vector embodiment
+- generate copy of RNA molecule embodiment
+- describe subcloning embodiment
+- define altered version of RNA molecule embodiment
+- describe homology-sharing region embodiment
+- define ds region homology embodiment
+- describe mutagenesis embodiment
+- introduce computational method embodiment
+- describe entire sequence mutagenesis embodiment
+- identify putative target mRNAs embodiment
+- create sub-library of sequences embodiment
+- describe computer program embodiment
+- confirm efficacy of RNA molecule embodiment
+- describe modifying RNA molecule embodiment
+- describe expressing RNA molecule embodiment
+- describe RNA molecule selection method
+- describe RNA molecule production
+- describe RNA molecule application
+- describe RNA molecule effects
+- describe RNA molecule variations
+- describe RNA molecule identification
+- describe RNA molecule screening
+- describe RNA molecule library generation
+- describe RNA molecule library application
+- describe RNA molecule expression vector
+- describe RNA molecule expression vector application
+- describe RNA molecule expression vector identification
+- describe RNA molecule expression vector screening
+- describe RNA molecule expression vector library generation
+- describe RNA molecule expression vector library application
+- describe RNA molecule with double-stranded region of random sequence
+- describe RNA molecule with double-stranded region of random sequence application
+- describe RNA molecule with double-stranded region of random sequence identification
+- describe RNA molecule with double-stranded region of random sequence screening
+- describe RNA molecule with double-stranded region of random sequence library generation
+- describe RNA molecule with double-stranded region of random sequence library application
+- describe method of identifying drug target
+- describe method of identifying variant of RNA molecule
+- describe method of conferring protection against viral infection
+- describe method of inhibiting viral replication
+- describe method of inducing cell differentiation
+- describe method of inducing cell proliferation
+- describe method of sustaining cell pluripotency
+- describe method of generating RNA molecule with double-stranded region of random sequence
+- describe method of generating RNA molecule with double-stranded region of random sequence application
+- describe method of generating RNA molecule with double-stranded region of random sequence identification
+- describe method of generating RNA molecule with double-stranded region of random sequence screening
+- describe method of generating RNA molecule with double-stranded region of random sequence library generation
+- describe method of generating RNA molecule with double-stranded region of random sequence library application
+- describe RNA molecule with self-complementary region
+- describe RNA molecule with self-complementary region application
+- describe RNA molecule with self-complementary region identification
+- describe RNA molecule with self-complementary region screening
+- describe RNA molecule with self-complementary region library generation
+- describe RNA molecule with self-complementary region library application
+- describe partially self-complementary RNA molecule
+- describe partially self-complementary RNA molecule application
+- describe partially self-complementary RNA molecule identification
+- describe partially self-complementary RNA molecule screening
+- describe partially self-complementary RNA molecule library generation
+- describe partially self-complementary RNA molecule library application
+- describe shRNA
+- describe siRNA
+- describe RNAi
+- describe agRNA
+- describe microRNA
+- describe anti-sense locked-nucleic acid oligonucleotide
+- describe expression vector embodiments
+- define gene encoding protein
+- describe disease phenotype embodiments
+- describe therapeutic RNA molecule identification
+- describe inhibitory RNA molecule embodiments
+- describe phenotype conferring embodiments
+- describe RNA molecule library screening
+- describe 2 H1-promoter cassette embodiments
+- describe RNAi molecule expression methods
+- describe expression vector embodiments
+- describe asymmetric digestion embodiments
+- describe RNA polymerase promoter embodiments
+- describe promoter location embodiments
+- describe string of pyrimidines embodiments
+- describe RNA molecule generation embodiments
+- describe expression vector library generation
+- describe recombinant virus packaging embodiments
+- describe recombinant virus types embodiments
+- describe biological parameter embodiments
+- describe cell type derivation embodiments
+- describe cell survival embodiments
+- describe pathogen susceptibility embodiments
+- describe cancer cell killing embodiments
+- describe biological parameter readout embodiments
+- define readout
+- describe embodiments of readout
+- introduce multiple cells exhibiting alteration
+- describe embodiments of multiple cells
+- introduce isolating expression vector
+- describe embodiments of isolating expression vector
+- introduce sequencing expression vector
+- describe embodiments of sequencing expression vector
+- introduce PCR amplification
+- describe embodiments of PCR amplification
+- introduce confirmatory testing
+- describe embodiments of confirmatory testing
+- introduce restriction enzyme
+- describe embodiments of restriction enzyme
+- introduce therapeutic RNA molecule
+- describe embodiments of therapeutic RNA molecule
+- introduce library generation
+- describe embodiments of library generation
+- introduce avoiding high salt solution
+- describe embodiments of avoiding high salt solution
+- introduce stem or self-complementary region length
+- describe embodiments of stem or self-complementary region length
+- introduce loop region length
+- describe embodiments of loop region length
+- introduce RNA molecule structure
+- describe embodiments of RNA molecule structure
+- introduce RNA molecule substrate
+- describe embodiments of RNA molecule substrate
+- introduce RNA molecule digestion
+- describe embodiments of RNA molecule digestion
+- introduce RNA molecule binding
+- describe embodiments of RNA molecule binding
+- introduce target molecule
+- describe embodiments of target molecule
+- introduce complementary region length
+- describe embodiments of complementary region length
+- introduce RNA molecule expression
+- describe embodiments of RNA molecule expression
+- introduce translational repression
+- describe embodiments of translational repression
+- introduce cell survival assays
+- describe embodiments of cell survival assays
+
+### EXPERIMENTAL DETAILS SECTION
+
+- design retroviral vector for dual RNAi expression
+- describe vector pQe2 and its components
+- validate shRNA knockdown using pQe2
+- describe vector modification of pSuper-Retro
+- replace Bgl II-Mlu I fragment with Bgl II-Bbs I-Mlu I fragment
+- create linearized vector depicted in FIG. 5
+- describe development of alternate vectors
+- replace Bgl II cloning site and spacer sequence
+- add spacer sequence between Xcm I and Sfi I
+- describe rationale for adding back spacer sequence
+- list other vectors and restriction enzyme combinations suitable for the method
+- describe creation of library of partially self-complementary RNA molecules
+- obtain single-stranded DNA molecules with constant and random regions
+- anneal primer mismatched at two positions to oligo
+- generate complementary strand to most of ssI
+- ligate hairpin-loop linker to staggered end of extended oligonucleotide
+- describe nucleic acid intermediate II
+- amplify single-stranded product by PCR to generate double-stranded intermediate III
+- describe double-stranded intermediate III
+- restrict and ligate into vector downstream of polymerase-III H1-RNA promoter
+- describe circular intermediate IV
+- restrict and ligate to create circular product VI
+- describe creation of library of shRNA molecules with random stem and non-complementary loop
+- describe additional approach for creating library of partially self-complementary RNA molecules
+- describe creation of double-stranded intermediate IB
+- ligate hairpin-loop linker to extended oligonucleotide
+- describe creation of non-self-complementary loop sequence
+- describe creation of shRNA library with random 29-base-pair stem and non-self-complementary loop
+- introduce third approach for creation of library of partially self-complementary RNA molecules
+- create reverse complement of random stem sequence
+- covalently link two strands and start second extension
+- synthesize single-stranded DNA molecule with region of random sequence
+- create ds Ib with recessed primer
+- use mismatched primer to create Aar I recognition sequence
+- ligate hairpin-loop linker to recessed-primer end of ds Ib
+- create nucleic acid intermediate II
+- create nick site with nicking enzyme N.BbvC
+- extend with strand-displacing DNA polymerase Bst
+- create double-stranded intermediate III
+- digest with BtgZ I and fill in with Klenow
+- finish second extension to create vector insert
+- insert into vector
+- test efficacy of method
+- sequence inserts and verify efficacy
+- establish apoptosis-inhibiting assays for screening shRNA library
+- treat 293T cells with CDDO
+- treat 293T cells with serum-free medium
+- induce apoptosis using glucose/glucose oxidase technique
+
+### Materials and Experimental Methods
+
+- outline cell preparation
+
+### Results
+
+- define apoptosis protocol
+- calibrate retroviral infection
+- choose 30% GFP-positive cells
+- infect FL5.12 cells with library
+- withdraw IL-3 to select for shRNAs
+- repeat withdrawal and recovery process
+- retrieve and sequence shRNA-encoding sequences
+- infect FL5.12 cells with putative shRNA molecules
+- analyze infected cells by flow cytometry
+- confirm function of RNA molecules
+- isolate effective vectors
+- re-add vectors to another population of cells
+- confirm phenotype in additional population
+- test in model systems other than original
+- use imperative pooling and re-testing
+- pool surviving cells and retrieve shRNA sequences
+- re-clone and re-test as sub-library
+- increase percentage of true positives
+- use additional apoptosis assays
+- identify RNA molecules with ability to inhibit apoptosis
+- use different cell types and apoptosis inducers
+- define in vitro model system for FRDA cells
+- use shRNA library to identify RNA molecules
+- package random RNA library as retroviral vector
+- infect primary FRDA fibroblasts
+- select for fibroblast clones that survive
+- use shRNA library to identify RNA molecules
+- induce long-term proliferation of stem cells
+- sustain pluripotency of stem cells
+- describe differentiation experiment
+- analyze flow cytometry results
+- confirm differentiation by adherence and morphology
+- identify RNA sequences inducing differentiation
+- introduce ES cells into mice
+- isolate GFP-positive cells from tissues
+- retrieve sequences associated with cells
+- detect differentiation into various cell types
+- use cell sorting to select differentiated cells
+- infect precursor cells with shRNA library
+- isolate fully or partially differentiated cells
+- sequence vector to identify RNA sequences
+- generate reversible RNAi for confirmatory testing
+- use shRNA library to prevent viral replication
+- infect cells with cytopathic virus
+- identify survivors
+- generate reversible RNAi for confirmatory testing
+- identify improvements of RNA molecules
+- use random mutagenesis
+- perform error-prone PCR
+- amplify sequence using error-prone PCR
+- create library of half-books
+- construct library after random mutagenesis
+- introduce sub-library into target cells
+- define increased effectiveness of shRNA construct
+- use computer-generated shRNA library
+- generate shRNA-encoding sequences
+- create library of random shRNA-encoding sequences
+- test library in cell model of disease
+- retrieve effective sequences by PCR
+- confirm sequences by re-contacting cells
+- generate variants of identified sequence
+- create library of random shRNA-encoding sequences
+- test sub-library to identify improved sequences
+

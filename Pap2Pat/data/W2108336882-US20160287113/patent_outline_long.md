@@ -1,0 +1,108 @@
+# DESCRIPTION
+
+- introduce microelectrodes and devices for neural interfacing applications
+- describe neurostimulation and recording electric signals
+- list examples of applications (cochlear implants, retinal implants, deep brain stimulation, cortical implants)
+- describe requirements for electrodes used for neurostimulation
+- explain biocompatibility and charge transfer process
+- describe electrochemical properties of electrodes
+- discuss limitations of electrodes used for neurostimulation
+- describe electrodes used for electro-physiological applications ex-vivo
+- explain electrochemical properties required for electro-physiological applications
+- describe development of electrodes with increasingly small diameters
+- discuss problem of gradual degradation of electrodes
+- introduce synthetic diamond as a potential electrode material
+- describe properties of synthetic diamond (chemically and biologically inert, excellent electrochemical properties)
+- discuss growth of synthetic diamond
+- describe poly-crystalline diamond doped with boron (BDD)
+- discuss limitations of BDD (small double layer electrochemical capacity, high impedance)
+- state technical problem to be solved
+- introduce object of the invention (microelectrode for neural interfacing applications)
+- describe structure of microelectrode (stack of layers)
+- describe third layer (textured material with hollow or solid tubes)
+- describe properties of tubes (radially external peripheral layer, doped poly-crystalline diamond)
+- describe arrangement of tubes (separated from each other, projecting away from first and second layers)
+- describe particular embodiments of microelectrode
+- describe multi-electrode network for neural interfacing applications
+- describe flexible implant for neural interfacing applications
+- describe method for manufacturing microelectrode
+- describe steps of manufacturing method
+- describe particular embodiments of manufacturing method
+- describe growth of carbon nanotubes
+- describe deposition of non-doped diamond nanoparticles
+- describe deposition of doped diamond
+- describe formation of fourth layer
+- describe deposition of metal layer
+- describe de-wetting step
+- describe growth of carbon nanotubes on metal drops
+- describe deposition of poly-electrolyte polymer and diamond nanoparticles
+- describe deposition by ink jet type printing
+- describe electrospray of diamond nanoparticles
+- describe chemical vapor deposition assisted by microwave plasma
+- describe radiofrequency chemical vapor deposition
+- describe hot filament chemical vapor deposition
+- describe second material (titanium nitride, non-doped poly-crystalline diamond, poly-crystalline diamond doped with bor
+- describe second step of manufacturing method
+- describe tenth step of manufacturing method
+- describe eleventh step of manufacturing method
+- describe first material (biocompatible material)
+- describe third material (synthetic poly-crystalline diamond)
+- describe structure of third material (compact set of hollow or solid tubes)
+- describe properties of tubes (nanometric to micrometric dimensions)
+- describe shape of active portion of microelectrode
+- describe diameter and height of third layer
+- describe second material (adhesion material of tubes)
+- describe microelectrode arrangement
+- illustrate microelectrode arrangement
+- describe tube structure
+- describe application of MEA networks
+- describe flexible implant for neural interfacing
+- describe covering matrix
+- outline method for manufacturing microelectrode
+- provide first step of method
+- describe first material
+- provide second step of method
+- describe second material
+- provide third step of method
+- describe third material
+- describe tube structure
+- outline fourth step of method
+- describe seventh step of method
+- describe eighth step of method
+- describe ninth step of method
+- describe fifth step of method
+- describe sixth step of method
+- describe CNT etching
+- describe diamond synthesis methods
+- describe alternative of the invention
+- deposit structured diamond layer on supports
+- motivate structured material
+- describe functions of structured material
+- describe electric current outlet
+- describe fourth layer
+- describe material of electric outlet
+- describe passivation layer
+- describe method for producing current outlet and passivation layer
+- describe advantages of the invention
+- describe method for manufacturing MEA multi-electrode network
+- describe deposit of diamond particles
+- describe growth of diamond
+- describe deposit of nickel
+- describe growth of carbon nanotubes
+- describe deposit of nanodiamond layer
+- describe growth of diamond
+- describe protection of diamond structures
+- describe etching of non-protected diamond layer
+- describe metal contact outlet
+- describe passivation layer
+- describe second embodiment of method for manufacturing MEA multi-electrode network
+- describe deposit of TiN layer
+- describe deposit of nickel layer
+- describe growth of carbon nanotubes
+- describe deposit of diamond nanoparticles
+- describe growth of diamond
+- describe metal contact outlet
+- describe passivation layer
+- describe third embodiment of method for manufacturing network of multiple electrodes
+- describe fourth embodiment of method for manufacturing network of multiple electrodes
+

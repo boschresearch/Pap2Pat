@@ -1,0 +1,397 @@
+# DESCRIPTION
+
+- incorporate sequence listing
+
+## FIELD OF THE INVENTION
+
+- relate to composition for raising immune response against coronavirus infection
+
+## BACKGROUND
+
+- introduce poxvirus family
+- describe Chordopoxvirinae subfamily
+- mention Orthopoxviridae and Avipoxviridae genera
+- discuss use of recombinant vaccinia-based viruses as vaccine vectors
+- describe poxvirus life cycle
+- introduce host range factors
+- review host range genes
+- discuss vaccinia strains used as smallpox vaccines
+- introduce Modified Vaccinia Ankara (MVA)
+- describe MVA development
+- discuss MVA as a vector for heterologous molecules
+- introduce Sementis Copenhagen Vaccinia (SCV) vaccinia virus vector
+- describe SCV advantages
+- introduce coronaviruses
+- describe coronavirus structure
+- discuss coronavirus life cycle
+- introduce human coronaviruses
+- discuss SARS-CoV and MERS-CoV
+- introduce COVID-19 pandemic
+- discuss SARS-CoV-2 characteristics
+- describe SARS-CoV-2 transmission
+- discuss SARS-CoV-2 reproductive number
+- introduce SARS-CoV-2 spike protein
+- describe SARS-CoV-2 spike protein structure
+- discuss SARS-CoV-2 spike protein function
+- introduce SARS-CoV-2 membrane protein
+- describe SARS-CoV-2 membrane protein function
+- introduce SARS-CoV-2 envelope protein
+- describe SARS-CoV-2 envelope protein function
+- introduce SARS-CoV-2 nucleocapsid protein
+- describe SARS-CoV-2 nucleocapsid protein function
+- discuss SARS-CoV-2 evolution
+- introduce SARS-CoV-2 mutations
+- discuss SARS-CoV-2 variants
+- introduce neutralizing antibodies
+- discuss T cell immunity
+- introduce CD4 and CD8 T cells
+- discuss Th1 polarized CD4 T cells
+- introduce T follicular helper cells
+- discuss germinal center responses
+- introduce humoral immune responses
+- discuss Th1-biased response
+- introduce antibody-dependent enhancement of disease
+- discuss vaccine development
+- introduce antigenic sequences
+- discuss immunogenicity of spike protein
+- discuss immunogenicity of membrane protein
+- discuss immunogenicity of nucleocapsid protein
+- discuss immunogenicity of envelope protein
+
+## SUMMARY
+
+- introduce SARS-CoV-2 infection prevention composition
+- describe attenuated poxvirus with SARS-CoV-2 spike protein
+- describe attenuated poxvirus with SARS-CoV-2 membrane protein
+- describe attenuated poxvirus with SARS-CoV-2 nucleocapsid protein
+- describe attenuated poxvirus with SARS-CoV-2 envelope protein
+- provide first aspect of invention: composition with attenuated poxvirus
+- provide second aspect of invention: composition with attenuated poxvirus
+- provide third aspect of invention: composition with attenuated poxvirus
+- provide fourth aspect of invention: composition with attenuated poxvirus
+- provide fifth aspect of invention: composition with attenuated poxvirus
+- provide sixth aspect of invention: composition with attenuated poxvirus
+- provide seventh aspect of invention: composition with attenuated poxvirus
+- provide eighth aspect of invention: composition with attenuated poxvirus
+- provide ninth aspect of invention: composition with attenuated poxvirus
+- provide tenth aspect of invention: composition with attenuated poxvirus
+- provide eleventh aspect of invention: composition with attenuated poxvirus
+- provide twelfth aspect of invention: composition with attenuated poxvirus
+- provide thirteenth aspect of invention: composition with attenuated poxvirus
+- provide fourteenth aspect of invention: method of inducing immune response
+- provide fifteenth aspect of invention: method of inducing immune response
+- provide sixteenth aspect of invention: method of inducing immune response
+- provide seventeenth aspect of invention: composition resembling SARS-CoV-2 virus-like particles
+- provide eighteenth aspect of invention: composition against coronaviruses with genetic similarity
+- provide nineteenth aspect of invention: use of composition in medicament preparation
+- describe genetically engineered attenuated vaccinia virus
+- describe composition with attenuated vaccinia virus and SARS-CoV-2 spike protein
+- describe composition with attenuated vaccinia virus and SARS-CoV-2 membrane protein
+- describe composition with attenuated vaccinia virus and SARS-CoV-2 nucleocapsid protein
+- describe composition with attenuated vaccinia virus and multiple SARS-CoV-2 proteins
+- define composition
+- describe nucleic acid sequence encoding SARS-CoV-2 polypeptide
+- describe insertion into deleted ORFs of immune modulatory genes
+- describe insertion into intergenic region of attenuated vaccinia virus genome
+- describe deletion of one or more genes
+- describe insertion into deletion site of genes
+- describe expression cassette encoding SARS-CoV-2 polypeptide
+- describe multiple expression cassettes
+- describe composition comprising pharmaceutically acceptable carrier
+- describe composition for raising immune response
+- describe genetically engineered attenuated vaccinia virus vector
+- describe method for preventing SARS-CoV-2 infection
+- describe immune response against SARS-CoV-2 antigens
+- describe use of composition in medicament preparation
+- describe alternative composition
+- describe alternative insertion site
+- describe alternative gene deletion
+- describe alternative expression cassette
+- describe alternative composition for raising immune response
+- describe alternative genetically engineered attenuated vaccinia virus vector
+- describe alternative method for preventing SARS-CoV-2 infection
+
+## DETAILED DESCRIPTION
+
+- define terminology
+- introduce materials and methods
+- provide references for practitioners
+- define preferred methods and materials
+- define "comprise" and "consisting of"
+- define "consisting essentially of"
+- clarify singular and plural forms
+- define "and/or"
+- define "attenuation" and "attenuated"
+- define "control element" and "control sequence"
+- define "corresponds to" and "corresponding to"
+- define "effective amount"
+- define "encode" and "encoding"
+- define "endogenous"
+- define "expressible" and "expressed"
+- define "gene"
+- define "heterologous nucleic acid sequence"
+- define "heterologous polypeptide"
+- describe embodiment of heterologous DNA sequence
+- describe embodiment of heterologous DNA sequence with multiple coding sequences
+- describe embodiment of heterologous DNA sequence with SARS-CoV-2 genes
+- define "protective immune response"
+- define "neutralizing antibody response"
+- describe inducing an immune response
+- describe propagating pox virus vector in mammalian cells
+- define homologous recombination and viral propagation
+- describe BC19A-12 cell line
+- describe SD07-1 cell line
+- define "operably connected" and "operably linked"
+- define "open reading frame" and "ORF"
+- define "polynucleotide" and related terms
+- define "polypeptide" and related terms
+- define "recombinant" as applied to nucleic acid molecules
+- define "sequence identity"
+- define "signal sequence" and "signal peptide"
+- define "similarity"
+- describe optimal alignment of sequences
+- define "subject", "patient", "host", and "individual"
+- define "transgene"
+- define "treatment", "treating", and related terms
+- define "wild-type", "natural", "native", and related terms
+- define "viral infection"
+- define "virus-like particles" or "VLP"
+- define "variants"
+- describe nucleic acid sequence identity
+- describe amino acid sequence identity
+- define "hybridize under stringent conditions"
+- define "deletion"
+- define "gene"
+- define "regulatory element" and "regulatory sequence"
+- describe chimeric constructs
+- describe promoters
+- describe constitutive and inducible promoters
+- describe viral promoters
+- describe poxviral promoter types
+- describe early/late promoters
+- describe compact, synthetic promoters
+- describe native early/late promoters
+- describe enhancer elements
+- describe SV40 early gene enhancer
+- describe Rous Sarcoma Virus LTR enhancer/promoter
+- describe human CMV enhancer elements
+- describe CMV intron A sequence
+- conclude definitions
+- define 3' non-translated sequence
+- describe polyadenylation signal
+- describe selectable marker gene
+- describe expression of poxvirus structural gene
+- describe promoters
+- introduce SARS-CoV-2
+- describe SARS-CoV-2 genome
+- describe SARS-CoV-2 variants
+- describe S1 subunit of spike protein
+- describe immunodominant T cell epitopes
+- describe genetic sequence of SARS-CoV-2
+- introduce attenuated poxvirus
+- describe attenuation of poxvirus
+- describe poxvirus family
+- describe Orthopoxviridae
+- describe Avipoxviridae
+- describe poxvirus as vectors
+- describe vaccinia virus
+- describe suitable attenuated poxviruses
+- describe Sementis Copenhagen Vector
+- describe modification of poxvirus
+- describe deletion of essential assembly gene
+- describe deletion of immunomodulatory gene
+- describe insertion of heterologous DNA sequence
+- describe intergenic regions for insertion
+- describe old nomenclature for ORFs
+- describe modification of vaccinia virus
+- describe deletion of A41L gene
+- describe deletion of A41L and D13L genes
+- describe deletion of A41L, D13L, and 87R-B8R genes
+- describe deletion of A41L, D13L, 87R-B8R, C3L, and A39R genes
+- describe advantages of deletion
+- describe insertion of heterologous DNA sequence in intergenic region
+- introduce SCV vector
+- express structural and non-structural proteins
+- assemble into VLPs
+- generate immune response
+- provide long-lasting immune response
+- describe composition for raising immune response
+- modify poxvirus genome
+- encode spike polypeptide
+- encode membrane polypeptide
+- encode nucleocapsid polypeptide
+- describe engineered spike protein variants
+- provide composition for raising immune response
+- modify poxvirus genome
+- encode S1 receptor-binding domain
+- provide composition for raising immune response
+- modify poxvirus genome
+- encode multiple polypeptides
+- provide composition for raising immune response
+- modify poxvirus genome
+- encode multiple polypeptides
+- provide method of inducing immune response
+- administer composition
+- provide method of inducing immune response
+- administer mixed composition
+- provide method of inducing immune response
+- administer mixed composition
+- describe immunogenicity of spike protein
+- describe immunogenicity of membrane protein
+- describe immunogenicity of nucleocapsid protein
+- describe immunogenicity of combined proteins
+- describe VLP formation
+- describe preferred attenuated poxvirus
+- describe modified orthopoxvirus
+- describe deletion of D13L and K1L genes
+- provide non-limiting examples
+
+### Construction of Vaccines
+
+- construct SCV-COVID19 vaccines
+- remove early transcription termination signals
+- synthesize expression cassettes for antigenic transgenes
+- include control elements and endonuclease recognition sites
+- show specific examples of expression cassettes
+- insert transgene expression cassettes into HR plasmids
+- describe HR plasmid components
+- show specific examples of HR cassettes
+- prepare HR plasmid for virus construction
+- perform homologous recombination
+- infect cells with SCV-SMX06
+- transfect cells with Not I digested HR plasmid
+- incubate cells until fluorescent cells appear
+- purify recombinant virus from parent virus
+- remove selection genes via intramolecular recombination
+- enrich and purify virus without selection markers
+- validate virus seed stocks by PCR and DNA sequencing
+- validate virus seed stocks by western blot or immunostaining
+- summarize construction strategies
+- describe SCV derivation from Copenhagen strain
+- describe SCV-SMX06 derivation from SCV
+- illustrate gene deletions in SCV-SMX06
+- describe transgene insertion into deletion sites
+- describe variations of SCV-COVID19 vaccines
+- describe recombinant virus SCV-COVID19A construction
+- describe recombinant virus SCV-COVID19B construction
+- describe recombinant virus SCV-COVID19C construction
+- describe recombinant virus SCV-COVID19D construction
+- describe recombinant virus SCV-COVID19E construction
+- describe recombinant virus SCV-COVID19F construction
+- describe recombinant virus SCV-COVID19G construction
+- describe recombinant virus SCV-COVID19H construction
+- describe recombinant virus SCV-COVID19I construction
+
+### Example 2
+
+- describe experimental strategy
+- vaccinate mice with SCV-COVID19D or vector control
+- obtain blood samples before and after vaccination
+- determine S1-specific IgG levels and neutralizing antibody levels
+- perform virus neutralization test
+- perform enzyme-linked immunosorbent assay for mouse sera
+- present results of neutralizing antibody titres and IgG subclass profiling
+
+### Example 3
+
+- define T cell response
+- experimental strategy
+- ELISpot assay
+- intracellular cytokine staining analysis
+- results
+
+### Conclusion
+
+- summarize results
+
+### Example 4
+
+- experimental strategy
+- western blot
+- enzyme-linked immunosorbent assay
+- results
+- western blot results
+- ELISA results
+- conclusion
+
+### Example 5
+
+- experimental strategy
+- enzyme-linked immunosorbent assay
+- cPass SARS-CoV-2 neutralization antibody detection
+- results
+- S1-specific IgG levels
+- neutralizing antibody levels
+- comparison of inbred and outbred mice
+- results interpretation
+- conclusion
+
+### Example 6
+
+- experimental strategy
+- method
+- CD8 and CD4 T cell responses
+- intracellular cytokine staining
+- peptide pools
+- results
+- spike-specific triple-cytokine-positive CD8 T cell response
+- spike-specific granzyme-B-producing CD8 T cell response
+- spike-specific IFN-γ-producing CD4 T cell response
+
+### Example 7
+
+- introduce pre-existing immunity issue
+- motivate orthopoxvirus-based vaccines
+- describe experimental strategy
+- outline treatment groups
+- describe method
+- present results
+- analyze antibody response
+- discuss neutralizing antibody levels
+- introduce prime-boost strategy
+- describe experimental strategy
+- outline treatment groups
+- describe method
+- present results
+- analyze antibody response
+- discuss neutralizing antibody levels
+- conclude on pre-existing immunity
+- introduce aging mice
+- describe experimental strategy
+- outline treatment groups
+- describe method
+- present results
+- analyze antibody response
+- discuss neutralizing antibody levels
+- conclude on aging mice
+- present example 7
+- detect IFN-γ producing T cell responses
+- conclude prophylactic protection
+- present example 12
+- describe experimental strategy
+- perform ELISpot assay
+- evaluate T cell responses
+- present results
+- conclude T cell responses
+- present example 13
+- describe experimental strategy
+- perform ELISA and ELISpot assays
+- evaluate antibody and T cell responses
+- present results
+- conclude immune responses
+- present example 14
+- discuss antigenic competition
+- describe experimental strategy
+- perform vaccination study
+- evaluate immune responses
+- present results
+- conclude optimal immune responses
+- present example 15
+- describe experimental strategy
+- perform neutralization assay
+- evaluate protection
+- present results
+- conclude protection
+- present example 15S
+- evaluate cytolytic T lymphocyte activity
+

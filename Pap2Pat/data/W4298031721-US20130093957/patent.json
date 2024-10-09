@@ -1,0 +1,323 @@
+{
+    "id": "US20130093957",
+    "authors": [
+        "Richard G. Baraniuk",
+        "Aswin C. Sankaranarayanan"
+    ],
+    "title": "METHOD AND APPARATUS FOR COMPRESSIVE ACQUISITION AND RECOVERY OF DYNAMIC IMAGERY",
+    "date": "2011-06-18 00:00:00",
+    "abstract": "A new framework for video compressed sensing models the evolution of the image frames of a video sequence as a linear dynamical system (LDS). This reduces the video recovery problem to first estimating the model parameters of the LDS from compressive measurements, from which the image frames are then reconstructed. We exploit the low-dimensional dynamic parameters (state sequence) and high-dimensional static parameters (observation matrix) of the LDS to devise a novel compressive measurement strategy that measures only the dynamic part of the scene at each instant and accumulates measurements over time to estimate the static parameters. This enables us to lower the compressive measurement rate considerably yet obtain video recovery at a high frame rate that is in fact inversely proportional to the length of the video sequence. This property makes our framework well-suited for high-speed video capture and other applications. We validate our approach with a range of experiments including classification experiments that highlight the purposive nature of our framework.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "1.1 Field of the Invention",
+                        "The present invention relates to methods and apparatus for the acquisition of time-varying signals such as video sequences using compressive measurements and a dynamical system model for the evolution of the data. The invention further relates to methods that exploit the signal measurements and the dynamical system model for the purpose of performing a further processing step including but not limited to detection, classification, estimation, reconstruction, or other information exploitation. The invention is applicable to all types of signals and data, including but not limited to signals, images, video and other higher-dimensional data. In particular, the invention is applicable to highly correlated data that exhibits subspace structure such as hyper-spectral data and reflectance fields.",
+                        "1.2 Brief Description of the Related Art"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "1.2.1 Compressive Sensing",
+                            "paragraphs": [
+                                "Consider a signal y\u03b5N, which is K-sparse in a basis \u03a8, that is, s\u03b5N, defined as s=\u03a8Ty, has at most K non-zero components. The signal y could be of any dimension, i.e., a one-dimensional (1D) time signal, a 2D image, a 3D video sequence, a 3D hyperspectral data cube, a 4D hyperspectral video sequence, and so on. Compressive sensing (see E. Cand\u00e8s, J. Romberg, and T. Tao, \u201cRobust uncertainty principles: Exact signal reconstruction from highly incomplete frequency information\u201d, in IEEE Transactions on information theory, vol. 52 (2006) 489-509; D. Donoho, \u201cCompressed sensing,\u201d in IEEE Transactions on Information Theory, vol. 52 (2006) 1289-1306) deals with the recovery of y from dimensionality reduced linear measurements of the form z=\u03a6y=\u03a6\u03a8s, where \u03a6\u03b5M\u00d7N is the measurement matrix. For M<N (corresponding to dimensionality reduction), estimating y from the measurements z is an ill-conditioned problem. By exploiting the sparsity of s, the CS theory demonstrates that the signal y can be recovered exactly from M=O(K log(N/K)) measurements provided the matrix \u03a6\u03a8 satisfies the so called restricted isometry property (RIP) (see R. Baraniuk, M. Davenport, R. DeVore and M. Wakin, \u201cA simple proof of the restricted isometry property for random matrices,\u201d in Constructive Approximation, vol. 28 (2008) 253-263).",
+                                "In practical scenarios, where there is noise in the signal y or the measurements z, the signal s (or equivalently, y) can be recovered from z by solving a convex problem of the form",
+                                "min\u2225s|1 subject to \u2225z\u2212\u03a6\u03a8s\u2225\u2266\u03b5\u2003\u2003(1)",
+                                "with \u03b5 a bound on the measurement noise. It can be shown that the solution to (1) is with high probability the K-sparse solution that we seek. The theoretical guarantees of CS have been extended to compressible signals (see J. Haupt, and R. Nowak, \u201cSignal reconstruction from noisy random projections,\u201d IEEE Transactions on Information Theory, vol. 52 (2006) 4036-4048). In a compressible signal, the sorted coefficients decay rapidly according to a power-law.",
+                                "There exist a wide range of algorithms that solve (1) under various approximations or reformulations (see E. Cand\u00e8s, J. Romberg, and T. Tao, \u201cRobust uncertainty principles: Exact signal reconstruction from highly incomplete frequency information\u201d, in IEEE Transactions on information theory, vol. 52 (2006) 489-509; E. van den Berg, and M. P. Friedlander, \u201cProbing the pareto frontier for basis pursuit solutions,\u201d SIAM Journal on Scientific Computing, vol. 31 (2008) 890-912). It is also possible to solve (1) efficiently using greedy techniques such as Orthogonal Matching Pursuit (see Y. C. Pati, R. Rezaiifar and P. S. Krishnaprasad, \u201cOrthogonal matching pursuit: Recursive function approximation with applications to wavelet decomposition,\u201d in Asilomar Conference on Signals, Systems and Computers, Volume 1. (1993) 40-44) and CoSAMP (see D. Needell, and J. Tropp, \u201cCoSaMP: Iterative signal recovery from incomplete and inaccurate samples,\u201d in Applied and Computational Harmonic Analysis, vol. 26 (2009) 301-321). In particular, CoSAMP is a lucrative alternative to convex optimization methods given its strong convergence properties and low computational complexity. It is also easy to impose structural constraints such as block sparsity into CoSAMP giving variants such as model-based CoSAMP (see R. G. Baraniuk, V. Cevher, M. F. Duarte and C. Hegde, \u201cModel-based compressive sensing,\u201d CoRR vol. abs/0808.3572 (2008))."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define compressive sensing",
+                                "describe signal y and measurement matrix \u03a6",
+                                "explain restricted isometry property (RIP)",
+                                "introduce convex problem for signal recovery",
+                                "discuss compressible signals",
+                                "mention various algorithms for signal recovery"
+                            ],
+                            "num_characters": 3422,
+                            "outline_medium": [
+                                "define compressive sensing",
+                                "describe signal recovery",
+                                "mention algorithms for signal recovery"
+                            ],
+                            "outline_short": [
+                                "motivate compressive sensing"
+                            ]
+                        },
+                        {
+                            "title": "1.2.2 Video Compressive Sensing",
+                            "paragraphs": [
+                                "In video CS, we are interested in acquiring and recovering a video sequence (without loss of generality with two spatial dimensions and one time dimension) of a scene that has dynamic elements. Existing methods for video CS work under the assumption of the availability of multiple measurements at each time instant. To date, such measurements have been obtained using a snapshot imager (see A. Wagadarikar, R. John, R. Willett and D. Brady, \u201cSingle disperser design for coded aperture snapshot spectral imaging,\u201d in Applied Optics, vol. 47 (2008) 44-51) or by stacking consecutive measurements from a single pixel camera (SPC) (see M. Duarte, M. Davenport, D. Takhar, J. Laska, T. Sun, K. Kelly, and R. Baraniuk, \u201cSingle-pixel imaging via compressive sampling,\u201d in IEEE Signal Processing Magazine, vol. 25 (2008) 83-91). Given such a sequence of compressive measurements, reconstruction of the video can be achieved in multiple ways. Wakin et al. (see M. Wakin, J. Laska, M. Duarte, D. Baron, S. Sarvotham, D. Takhar, K. Kelly, R. Baraniuk, \u201cCompressive imaging for video representation and coding, in Picture Coding Symposium, (2006)) use a 3D wavelet transform as the sparsifying basis \u03a8 for recovering videos from snapshots of compressive measurements. Park and Wakin (see J. Park and M. Wakin, \u201cA multiscale framework for compressive sensing of video,\u201d in Picure Coding Symposium, (2009)) use a coarse-to-fine estimation framework wherein the video, reconstructed at a coarse level, is used to estimate motion vectors that are subsequently used to design dictionaries for reconstruction at a finer level. Vaswani (see N. Vaswani, \u201cKalman filtered compressed sensing,\u201d in IEEE International Conference on Image Processing, (2008)) and Vaswani and Lu (see N. Vaswani and W. Lu, \u201cModified-CS: Modifying compressive sensing for problems with partially known support,\u201d in Intl. Symposium on Information Theory, (2009)) propose a sequential framework that exploits the similarity of support and the value the signal takes in this support between adjacent frames of a video. A frame of video is reconstructed using a linear inversion over the support at the previous time instant, and a small-scale CS recovery over the residue. All of these algorithms require a large number of measurements at each time instant and in most cases, the number of measurements is proportional to the sparsity of an individual frame. This could potentially be a limiting factor in many applications (where sensing is costly).",
+                                "Video CS is related to the background subtraction problem, where the idea is to estimate only the dynamic components of a scene. Cevher et al. (see V. Cevher, A. Sankaranarayanan, M. Duarte, D. Reddy, R. Baraniuk and R. Chellappa, \u201cCompressive sensing for background subtraction,\u201d in European Conference on Computer Vision, Springer (2008) 12-18) and Zheng and Jacobs (see J. Zheng and E. Jacobs, \u201cVideo compressive sensing using spatial domain sparsity\u201d, in Optical Engineering, vol. 48 (2009) 087006) model a video as a static scene with canonically sparse innovations. Veeraraghavan et al. (see A. Veeraraghavan, D. Reddy, and R. Raskar, \u201cCoded strobing photography: Compressive sensing of high-speed periodic events,\u201d in IEEE Trans. on Pattern Analysis and Machine Intelligence ((to appear), URL: http://www.cfar.umd.edu/users/vashok)) propose a compressive sensing framework of periodic scenes using coded strobing techniques."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce video compressive sensing",
+                                "describe existing methods for video CS",
+                                "explain snapshot imager and single pixel camera",
+                                "discuss various video CS algorithms",
+                                "mention limitations of existing methods",
+                                "relate video CS to background subtraction problem"
+                            ],
+                            "num_characters": 3437,
+                            "outline_medium": [
+                                "introduce video compressive sensing",
+                                "describe existing methods",
+                                "mention limitations of existing methods"
+                            ],
+                            "outline_short": [
+                                "discuss video compressive sensing methods"
+                            ]
+                        },
+                        {
+                            "title": "1.2.3 Dynamic Textures and Linear Dynamical Systems",
+                            "paragraphs": [
+                                "Linear dynamical systems (LDS) are a class of parametric models for time-series data of any dimension. A wide variety of spatio-temporal data have often been modeled as realizations of LDS. In particular, they have been used to model, synthesize and classify dynamic textures (see G. Doretto, A. Chiuso, Y. Wu, and S. Soatto, \u201cDynamic textures,\u201d in International Journal of Computer Vision, vol. 51 (2003) 91-109), traffic scenes (see A. B. Chan and N. Vasconcelos, \u201cProbabilistic kernels for the classification of auto-regressive visual processes,\u201d in IEEE Conf. on Computer Vision and Pattern Recognition, (2005) 846-851), and human activities (see A. Veeraraghavan, A. K. Roy-Chowdhury, and R. Chellappa, \u201cMatching shape sequences in video with applications in human movement analysis,\u201d in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 27 (2005) 1896-19092005, P. Turaga, A. Veeraraghavan, and R. Chellappa, \u201cUnsupervised view and rate invariant clustering of video sequences,\u201d Computer Vision and Image Understanding vol. 113 (2009) 353-371). Let {yt, t=0, . . . , T} be a sequence of frames/observations indexed by time t. The LDS model parameterizes the evolution of yt as follows:",
+                                "yt=Cxt+wt wt\u02dcN(0,R),R\u03b5N\u00d7N\u2003\u2003(2)",
+                                "xt+1=Axt+vt vt\u02dcN(0,Q),Q\u03b5d\u00d7d\u2003\u2003(3)",
+                                "where xt\u03b5d is the hidden state vector, A\u03b5d\u00d7d the transition matrix, and C\u03b5N\u00d7d the observation matrix.",
+                                "Given the observations {yt}, the truncated SVD of the matrix [y]1:T=[y1, y2, . . . , yT] can be used to recover both C and A. In particular, an estimate of the observation matrix C is given as \u0108=U, where [y]1:T\u2248U\u03a3VT is the rank-d\u2212approximation/truncated SVD. Note that the choice of C is unique only up to a d\u00d7d linear transformation. That is, given [y]1:T, we can define \u0108=UL, where L is an invertible d\u00d7d matrix. This represents our choice of coordinates in the subspace defined by the columns of C."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce linear dynamical systems (LDS)",
+                                "describe LDS model for dynamic textures",
+                                "mention applications of LDS models"
+                            ],
+                            "num_characters": 1882,
+                            "outline_medium": [
+                                "introduce linear dynamical systems"
+                            ],
+                            "outline_short": [
+                                "introduce linear dynamical systems"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce compressive sensing and video compressive sensing"
+                    ],
+                    "num_characters": 870,
+                    "outline_medium": [
+                        "introduce compressive sensing and video compressive sensing"
+                    ],
+                    "outline_short": [
+                        "introduce compressive sensing and video compressive sensing"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "Recent advancements in the field of compressive sensing (CS) (see E. Cand\u00e8s, J. Romberg, and T. Tao, \u201cRobust uncertainty principles: Exact signal reconstruction from highly incomplete frequency information\u201d, in IEEE Transactions on information theory, vol. 52 (2006) 489-509) have led to the development of imaging devices that sense at measurement rates far lower than the Nyquist rate. CS exploits the property that the sensed signal is often sparse in some transform basis to recover it from a small number of linear, random, multiplexed measurements. Robust signal recovery is possible from a number of measurements that is proportional to the sparsity level of the signal, as opposed to its ambient dimensionality. For example, U.S. Patent Publication No. 2006/0239336, entitled \u201cMethod and Apparatus for Compressive Imaging Device,\u201d disclosed a digital image/video camera that directly acquires random projections of the incident light field without first collecting the pixels/voxels. While there has been substantial progress for CS of static signals such as images, its application to sensing of videos (defined as a sequence of images referred to as frames of the video) has been rather limited. Yet, video CS makes a compelling application with potential for dramatically reducing sensing costs as well as the subsequent data deluge problems faced in the processing and storage of videos.",
+                        "In the present application, predictive/generative signal models for video CS that are characterized by static parameters are used. Predictive modeling provides a prior for the evolution of the video in both forward and reverse time. By relating the video frames over small durations, predictive modeling helps to reduce the number of measurements required at a given time instant. In particular, such models are defined by two sets of parameters: a high dimensional static parameter (by definition, is constant) and a low dimensional dynamic parameter that changes frame-to-frame. At each time instant, it is only necessary to sense at the rate of the dynamic component of the scene, which can be significantly lower than the sparsity of an individual frame of the video. Under such a model, all measurements (i.e., the measurements taken at all time instants) contribute towards estimation of static parameters.",
+                        "One dynamic scene model that exhibits predictive modeling as well as high dimensional static parameters is the linear dynamical system (LDS). In this application, new theory, methods, and an apparatus are disclosed for the CS of dynamic scenes modeled as LDS motivated, in part, by the extensive use of such models in characterizing dynamic textures (see G. Doretto, A. Chiuso, Y. Wu, and S. Soatto, \u201cDynamic textures,\u201d in International Journal of Computer Vision, vol. 51 (2003) 91-109), matching shape sequences (see A. Veeraraghavan, A. K. Roy-Chowdhury, and R. Chellappa, \u201cMatching shape sequences in video with applications in human movement analysis,\u201d in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 27 (2005) 1896-1909), activity modeling and video clustering (see P. Turaga, A. Veeraraghavan, and R. Chellappa, \u201cUnsupervised view and rate invariant clustering of video sequences,\u201d Computer Vision and Image Understanding vol. 113 (2009) 353-371).",
+                        "In a preferred embodiment, the present invention is a method for capturing a video sequence using a architecture such as a single pixel camera. The method comprises the steps of obtaining common measurements of the video sequence, wherein for the common measurements a corresponding measurement matrix is the same at each time instant; obtaining innovations measurements of the video sequence, wherein for the innovation measurements a corresponding measurement matrix is different at each time instant; and estimating a state sequence up to a linear transformation using an SVD of the common measurements. The method may further comprise the step of estimating an observation matrix using the innovation measurements. Still further, the method my comprise the step of recovering an estimate of the video sequence from a product of the observation matrix and the state sequence.",
+                        "In another preferred embodiment, the present invention is a method for capturing a video sequence that is comprised of the steps of modeling the evolution of image frames of the video sequence as a linear dynamical system, estimating model parameters of the linear dynamical system model from compressive measurements of the video sequence, and reconstructing image frames of the video sequence from the linear dynamical system model and the estimated parameters.",
+                        "The present invention is also capable of other and different embodiments including those not restricted to videos. In particular, much of ideas apply to a larger class of imagery. In particular, in another preferred embodiment, the present invention is a method for efficient acquisition of correlated data sequences. Instances of this, include hyper-spectral data where the correlation is across the frequency bands of sensing; hyper-spectral video where additional redundancy and correlation is introduced by the temporal smoothness of the video; and 4D reflectance fields that capture surface reflectance properties as a function of the angle of the incident light.",
+                        "In another preferred embodiment, the present invention is a method for estimating parameters of interest directly from CS measurements of video/data sequences. Such parameters enable detection of abnormal behavior; classification and clustering of events directly from the compressive measurements without ever reconstructing the actual videos. This purposive nature of the present invention allows for reduced processing complexity as well as reduced sensing requirements.",
+                        "Still other aspects, features, and advantages of the present invention are readily apparent from the following detailed description, simply by illustrating a preferable embodiments and implementations. The present invention is also capable of other and different embodiments and its several details can be modified in various obvious respects, all without departing from the spirit and scope of the present invention. Accordingly, the drawings and descriptions are to be regarded as illustrative in nature, and not as restrictive. Additional objects and advantages of the invention will be set forth in part in the description which follows and in part will be obvious from the description, or may be learned by practice of the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate video compressive sensing",
+                        "introduce predictive/generative signal models",
+                        "describe linear dynamical system (LDS) model",
+                        "explain advantages of LDS model",
+                        "introduce method for capturing video sequence",
+                        "describe common measurements",
+                        "describe innovation measurements",
+                        "estimate state sequence using SVD",
+                        "estimate observation matrix",
+                        "recover video sequence",
+                        "mention other embodiments",
+                        "describe method for efficient acquisition of correlated data sequences",
+                        "describe method for estimating parameters of interest"
+                    ],
+                    "num_characters": 6523,
+                    "outline_medium": [
+                        "motivate video compressive sensing",
+                        "introduce predictive modeling",
+                        "describe linear dynamical system model",
+                        "outline method for capturing video sequence",
+                        "mention other embodiments",
+                        "highlight advantages"
+                    ],
+                    "outline_short": [
+                        "motivate video compressive sensing",
+                        "introduce predictive/generative signal models",
+                        "describe linear dynamical system model"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS",
+                    "paragraphs": [
+                        "The following notation is used in the present description. At time/frame t, the image observation is yt\u03b5N, the hidden state is xt\u03b5d, such that yt=Cxt, where C\u03b5N\u00d7d is the observation matrix. In this description z is used to denote compressive measurements and \u03a6 and \u03a8 to denote the measurement and sparsifying matrices respectively. Further, \u201c:\u201d subscripts are used to denote sequences, such as x1:T={x1, x2, . . . , xT}, and the [\u00b7]1:T to denote matrices, such as [y]1:T is the N\u00d7T matrix formed by y1:T such that the k-th column is yk.",
+                        "One of the key features of an LDS is that the observations yt lie in the subspace spanned by the columns of the matrix C. The subspace spanned by C also forms a static parameter of the system. Estimating C and the dynamics encoded in the state sequence, x1:T is sufficient for reconstructing the video. For most LDSs, Nd, thereby making C much higher dimensional than the state sequence {xt}. In this sense, the LDS models the video using high information rate static parameters (such as C) and low information rate dynamic components (such as xt). This relates to an initial motivation for identifying signal models with parameters that are largely static. The subspace spanned by C is static, and hence, we can \u201cpool\u201d measurements over time to recover C.",
+                        "Further, given that the observations are sparse in a wavelet/Fourier basis, one can argue that the columns of the C need to be sparse as well in a similar wavelet basis. Sparsity of C is also motivated by the fact that columns of C encodes the dominant motion in the scene, and for a large set of videos, this is smooth and has sparse representation in a wavelet/DCT basis or in a dictionary learnt from training data. This sparsity can be exploited along the lines of the theory of CS. However, note that yt=Cxt is a bilinear relationship in C and xt, which complicates direct inference of the unknowns. Towards alleviating this non-linearity, the present invention employs a two-step measurement process that enables the estimation of the state xt first and subsequently the solution for C. This is referred to in this description as the CS-LDS framework.",
+                        "4.1 Outline of the CS-LDS Framework",
+                        "As shown in FIG. 3, at each time instant t, two sets of measurements 322, 324 are taken by aggregating consecutive measurements from a single pixel camera, or SPC, 310. The scene is assumed to be quasi-stationary over small time durations, which allows us to assume that the consecutive measurements of the SPC are from near-identical scenes.",
+                        "\\(\\begin{matrix}\n\\begin{matrix}\n{z_{t} = \ue89e\\begin{pmatrix}\n{\\overset{\\Cup}{z}}_{t} \\\\\n{\\overset{\\sim}{z}}_{t}\n\\end{pmatrix}} \\\\\n{= \ue89e{\\begin{bmatrix}\n\\overset{\\Cup}{\\Phi} \\\\\n{\\overset{\\sim}{\\Phi}}_{t}\n\\end{bmatrix}\ue89ey_{t}}} \\\\\n{{= \ue89e{\\Phi_{t}\ue89ey_{t}}},}\n\\end{matrix} & (4)\n\\end{matrix}\\)",
+                        "where {hacek over (z)}t\u03b5{hacek over (M)} and {tilde over (z)}t\u03b5{tilde over (M)}, such that the measurement rate at each frame is M={hacek over (M)}+{tilde over (M)}. We denote {hacek over (z)}t as common measurements 322 in the sense that the corresponding measurement matrix {hacek over (\u03a8)} it is the same at each time instant. We denote {tilde over (z)} as innovations measurements. For the innovations measurements 324, the measurement matrix is different at each time instant. The state sequence 340 can be estimated up to a linear transformation using an singular value decomposition (SVD) of the common measurements",
+                        "[{hacek over (z)}]1:T=[{hacek over (z)}1 {hacek over (z)}2 . . . {hacek over (z)}T]={hacek over (\u03a8)}C[x1 x2 . . . xT]={hacek over (\u03a8)}C[x]1:T.\u2003\u2003(5)",
+                        "The state sequence 340 is recovered using singular value decomposition (SVD) 330 and the observation matrix 360 using a model-based CoSAMP algorithm 360. Hence, an SVD 330 of [{hacek over (z)}]1:T=USVT allows us to identify [x]1:T up to a linear transformation. In particular, the columns of V corresponding to the top d singular values form an estimate of [x]1:T up to a d\u00d7d linear transformation (the ambiguity being the choice of coordinate). When the video sequence 370 is exactly an LDS of d dimensions, this estimate is exact provided {hacek over (M)}>d. The estimate so can be very accurate, when the video sequence is approximated by a d-dimensional subspace as discussed later in this section. Once we have an estimate of the state sequence 340, say [{hacek over (x)}]1:T, we can obtain C by solving the following convex problem:",
+                        "\\(\\begin{matrix}\n{{\\left( {P\ue89e\\; \ue89e1} \\right)\ue89e\\mspace{20mu} \ue89e\\min \ue89e{\\sum\\limits_{k = 1}^{d}\ue89e\\; \ue89e{\uf605{\\Psi^{T}\ue89ec_{k}}\uf606}_{1}}},{{{subject}\ue89e\\mspace{14mu} \ue89e{to}\ue89e{\\mspace{11mu} \ue89e\\;}\ue89e{\uf605{z_{t} - {\\Phi_{t}\ue89eC\ue89e{\\hat{x}}_{t}}}\uf606}_{2}}\ue2fa\\varepsilon},{\\forall t}} & (6)\n\\end{matrix}\\)",
+                        "where ck is the k-th column of the matrix C, and \u03a8 is a sparsifying basis for the columns of C. In this context, we have the freedom of choosing a different basis for each column of C. In Section 4.3, we show that the specifics of our measurements induce a structured sparsity in the columns of C, and this naturally leads to an efficient greedy solution.",
+                        "Note that we do not require {hacek over (\u03a8)} and {tilde over (\u03a8)} to be a random matrix. Along the lines of the CS, we only require them to be incoherent with the sparsifying (or compressible) basis. In many cases, there exist fast random transforms, such as noiselets and permuted Hadamard that are incoherent with Wavelet bases. These are especially useful in large scale problems where it becomes difficult to store \u03a8 explicitly as a matrix.",
+                        "An exemplary preferred embodiment of the present invention is described with reference to FIG. 1. A CS camera 120 performs a two-step measurement process with respect to image 110. The proposed invention can work with a CS camera similar to the single pixel camera (U.S. Patent Publication No. 2006/0239336) with a processor, a memory, a single photo-diode and a programmable micro-mirror array for acquiring random projections of the incident lightfield. The CS camera takes common measurements 122 and innovations measurements 124. This enables us to image at arbitrary wavelengths by choosing appropriate photodiodes tuned to the spectrum of interest. Finally, the programmable nature of the micro-mirror array allows for arbitrary measurement matrices as required in (4). This allows for the estimation of the state sequence 140 using just the common measurements 122, and subsequently, solving for C using the diversity present in the innovations measurements [{tilde over (z)}]t. Recovery of the state sequence using singular value decomposition (SVD) 150 and the observation matrix using a model-based CoSAMP algorithm 130.",
+                        "4.2 Low-Dimensional Projections of LDS Data",
+                        "As mentioned earlier, when [y]1:T lies exactly in the (column) span of a matrix C, then [{hacek over (z)}]1:T lies in the span of {hacek over (\u03a8)}C. Hence, the SVD of [{hacek over (z)}]1:T can be used to recover the state sequence up to a linear transformation, provided {hacek over (M)}\u2267d",
+                        "[{hacek over (z)}]1:T=USVT,[{hacek over (x)}]1:T=SdVdT\u2003\u2003(7)",
+                        "where Sd is the d\u00d7d principal sub-matrix of S and Vd is the T\u00d7d matrix formed by columns of V corresponding to the largest d singular values. In practice, the observations yt lie close to the subspace spanned by C such that projection of onto C makes for a highly accurate approximation of yt. In such a case, the estimate of the state sequence from the SVD of [{hacek over (z)}]1:T is accurate only when the observations yt are compressible (see J. Fowler, \u201cCompressive-projection principal component analysis,\u201d in IEEE Transactions on Image Processing vol. 18 (2009)). In our case, this is equivalent to imposing a power-law decay on the singular values.",
+                        "FIG. 2 shows the accuracy of the approximation of the estimated state sequence for various values of {hacek over (M)}. This suggests that, in practice, xt can be reliably estimated with {hacek over (M)}\u221dd.",
+                        "4.3 Structured Sparsity and Recovery with Modified CoSAMP",
+                        "The SVD of the common compressive measurements introduces an ambiguity in the estimates of the state sequence in the form of [{circumflex over (x)}]1:T\u2248L\u22121[x]1:T, where L is an invertible d\u00d7d matrix. Solving (P1) using this estimate will, at best, lead to an estimate \u0108=CL, satisfying zt=\u03a8t\u0108{circumflex over (x)}t. This ambiguity introduces additional concerns in the estimation of C. Suppose the columns of C are K-sparse each in \u03a8 with support Sk for the k-th column. Then, the columns of CL are potentially dK-sparse with identical supports S=\u222ak Sk. The support is exactly dK-sparse when the Sk are disjoint and L is dense. At first glance, this seems to be a significant drawback, since the overall sparsity of \u0108 has increased to d2K. However, this apparent increase in sparsity is alleviated by the columns having identical supports. The property of identical supports on the columns of CL can be exploited to solve (P1) very efficiently using greedy methods.",
+                        "Given the state sequence, we use a modified CoSAMP algorithm for estimating C. The modification exploits the structured sparsity induced by the columns of C having identical support. In this regard, the resulting algorithm is a particular instance of the model-based CoSAMP algorithm (see R. G. Baraniuk, V. Cevher, M. F. Duarte and C. Hegde, \u201cModel-based compressive sensing,\u201d CoRR vol. abs/0808.3572 (2008)). One of the key properties of model-based CoSAMP is in signal recovery from a number of measurements that is proportional the model-sparsity of the signal, which in our case is equal to dK. Hence, we can recover the observation matrix from just O(dK log(Nd)) measurements. The modified CoSAMP algorithm used for recovering the observation matrix is summarized below.",
+                        "In addition to this, the performance guarantees provided by CoSAMP (and model-based CoSAMP) extend gracefully to compressible (and model-compressible) signals (see J. Haupt, and R. Nowak, \u201cSignal reconstruction from noisy random projections,\u201d IEEE Transactions on Information Theory, vol. 52 (2006) 4036-4048; R. G. Baraniuk, V. Cevher, M. E Duarte and C. Hegde, \u201cModel-based compressive sensing,\u201d CoRR vol. abs/0808.3572 (2008)). This gives us reconstructions with errors proportional to the model fit error.",
+                        "4.4 Performance and Measurement Rate",
+                        "For a stable recovery of the observation matrix, [specify it's notation and size] we need in total O(dK log(Nd)) measurements. In addition to this, for recovering the state sequence, we need a number of common measurements proportional to the dimensionality of the state vectors",
+                        "MT\u221ddK log(Nd),{hacek over (M)}\u221dd.\u2003\u2003(8)",
+                        "Compared to Nyquist sampling, we obtain a measurement rate given by",
+                        "\\(\\begin{matrix}\n{\\frac{M}{N} \\propto {\\frac{{dK}\ue89e\\; \ue89e{\\log \ue8a0({Nd})}}{NT}.}} & (9)\n\\end{matrix}\\)",
+                        "This indicates extremely favorable operating scenarios for the CS-LDS framework, especially when T is large (as in a high frame rate capture). Consider a segment of a video of fixed duration observed at various sampling rates. The effective number of frames, T, changes with the sampling rate, fs (in frames per second), as T\u221dfs. However, the complexity of the video measured using the state space dimension d does not change. Hence, as the sampling rate fs increases, {tilde over (M)} can be decreased while keeping the value of M fs constant. This will ensure that (8) is satisfied, allowing a stable recovery of C. This suggests that as the sampling rate increases our measurement rate decreases, a very desirable property for high-speed imaging.",
+                        "4.5 Extensions"
+                    ],
+                    "subsections": [
+                        {
+                            "title": "4.5.1 Mean+LDS",
+                            "paragraphs": [
+                                "In many instances, a dynamical scene is modeled better as an LDS over a static scene, that is, yt=Cxt+\u03bc. This can be handled with two minimal modifications to the algorithm described above. There are two modifications. First, the state sequence [{circumflex over (x)}]1:T is obtained by performing SVD on the matrix [{hacek over (z)}]1:T modified such that the each row sums to zero. This works under the assumption that the sample mean of {hacek over (z)}1:T is equal to {hacek over (\u03a8)}\u03bc, the compressive measurement of \u03bc. Next, we use model-based CoSAMP to estimate both C and \u03bc simultaneously. However, only the columns of C enjoy the structured sparsity model. The support of \u03bc is not constrained to be similar to that of C."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "modify algorithm for mean+LDS model"
+                            ],
+                            "num_characters": 729,
+                            "outline_medium": [
+                                "modify algorithm for mean+LDS model"
+                            ],
+                            "outline_short": [
+                                "describe modifications to handle static scene and mean estimation"
+                            ]
+                        },
+                        {
+                            "title": "4.5.2 Residual Correction",
+                            "paragraphs": [
+                                "When we work with large number of measurements per time instant, we can perform residual recovery on each frame of the video separately. Given estimates of the observation matrix \u0108 and the state sequence {circumflex over (x)}1:T, we can perform an l1 recovery on the residue at each frame:",
+                                "(Pt)\u015dt=arg min\u2225\u03a8st\u22251 subject to \u2225zt\u2212\u03a8t(\u0108{circumflex over (x)}t+st)\u22252<\u03b5\u2003\u2003(10)",
+                                "The new estimate of the frame is \u0177t=\u0108{circumflex over (x)}t+st. In practice, residual correction works only when we have a large number of measurements such that MdK log(Nd)/T so that we have enough measurements to estimate beyond the support of C.",
+                                "4.6 Results",
+                                "We present a range of experiments validating various aspects of our proposed CS-LDS framework. Our test dataset comprises of videos from DynTex (see R. P\u00e9teri, S. Fazekas, and M. Huiskes, \u201cDynTex: A Comprehensive Database of Dynamic Textures,\u201d URL: http://projects.cwi.nl/dyntex/) and data we collected using high speed cameras. For most experiments, we chose {hacek over (M)}=2d, with d as well as K chosen appropriately. We used the mean+LDS model for all the experiments with 2D DCT as the sparsifying basis for the columns of C as well as the mean. Finally, the entries of the measurement matrix were sampled from iid standard Gaussian distribution. We compare against frame-to-frame CS where each frame of the video is recovered separately using traditional CS. We use the term oracle LDS for parameters and video reconstruction obtained by operating on the original data itself. Oracle LDS estimates the parameters using a rank-d approximation to the ground truth data. The reconstruction SNR of the oracle LDS gives an upper bound on achievable SNR. Finally, the ambiguity in observation matrix (due to non-uniqueness of the SVD based factorization) as estimated by oracle LDS and CS-LDS is resolved for visual comparison in FIGS. 5 and 6.",
+                                "Reconstruction:",
+                                "FIG. 4 shows reconstruction results from data collected from a high speed camera of a candle flame. FIG. 5 shows the estimated observation matrix as well as the state sequence. FIG. 6 shows video reconstruction of a dynamic texture from the DynTex dataset (see R. P\u00e9teri, S. Fazekas, and M. Huiskes, \u201cDynTex: A Comprehensive Database of Dynamic Textures,\u201d URL: http://projects.cwi.nl/dyntex/). The original video was 250 frames long. Reconstruction results are under a measurement rate M/N=1/234 (about 0.25%), an operating point where a frame-to-frame CS recovery is completely infeasible. However, the dynamic component of the scene is relatively small (d=20) which allows us to recover the video from relatively few measurements. The SNR of the reconstructions shown are as follows: Oracle LDS=24.97 dB, frame-to-frame CS: 11.75 dB and CS-LDS: 22.08 dB. This also demonstrates the robustness of CS-LDS to model error.",
+                                "Performance with Measurement Noise:",
+                                "It is worth noting that the video sequences used in the experiments have moderate model fit error at a given value of d. The columns of C with larger singular values are, inherently, better conditioned to deal with this model error. The columns corresponding to the smaller singular values are invariably estimated at higher error. This is reflected in the estimates of the C matrix in FIGS. 5 and 6.",
+                                "FIG. 8 shows the performance of the recovery algorithm for various levels of measurement noise. The effect of the measurement noise on the reconstructions is perceived only at much lower SNR. This is, in part, due to the model fit error dominating the performance of the algorithm when the measurement noise SNR is very high. As the measurement SNR drops significantly below the model fit error, predictably, it starts influencing the reconstructions more. This \u201cproperty\u201d provides a certain amount of flexibility in the design of potential CS-LDS cameras especially in purposive imaging scenarios,",
+                                "Sampling Rate:",
+                                "FIG. 9 shows reconstruction plots of the candle sequence (of FIG. 4) for 1 second of video at various sampling rates. We use (9) to predict the required measurement rates at various sampling rates to maintain a constant reconstruction SNR. As expected, the reconstruction SNR remains the same, while the measurement rate decreases significantly with a linear increase in the sampling rate. This makes the CS-LDS framework extremely promising for high speed capture applications. In contrast, most existing video CS algorithms have measurement rates that, at best, remain constant as the sampling rate increases.",
+                                "4.7 Application to Non-LDS Data",
+                                "While the above formulation concentrates mainly on LDSs, the overall framework of sensing extended the important class of subspace compressible data. The CS-LDS framework of two-step sensing followed by SVD to recover subspace coefficients (or the state vectors) and model-based CoSAMP for recovering a basis spanning the subspace itself. This basic framework is applicable to data that is compressible onto an unknown subspace. There are many examples of data exhibiting such behavior. In particular, any correlated data exhibits this property.",
+                                "Hyper-spectral data is potentially one example where this model for sensing can be applied. Images corresponding to different spectral bands are correlated for two reasons; spectral characteristics of materials in neighboring frequency bands typically similar and, the sensed spectrum typically overlaps significantly for different bands. This makes hyper-spectral data an important application domain for the proposed invention.",
+                                "Linear dynamical evolution is invariably accurate over small time durations and use of high-speed sensors (such as photo-diodes) reduces this modeling error as well as provide sufficient number of measurements for stable reconstructions. In this regard, the proposed invention can also be applied for non-image temporal data such as time varying reflectance fields and time varying BRDFs.",
+                                "The foregoing description of the preferred embodiment of the invention has been presented for purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise form disclosed, and modifications and variations are possible in light of the above teachings or may be acquired from practice of the invention. The embodiment was chosen and described in order to explain the principles of the invention and its practical application to enable one skilled in the art to utilize the invention in various embodiments as are suited to the particular use contemplated. It is intended that the scope of the invention be defined by the claims appended hereto, and their equivalents. The entirety of each of the aforementioned documents is incorporated by reference herein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "perform residual recovery on each frame",
+                                "define residual recovery problem",
+                                "describe l1 recovery of residue",
+                                "update estimate of frame",
+                                "discuss conditions for residual correction",
+                                "describe measurement rate requirement",
+                                "outline benefits of residual correction",
+                                "discuss limitations of residual correction",
+                                "describe experimental setup",
+                                "present experimental results",
+                                "discuss performance of residual correction",
+                                "compare with frame-to-frame CS",
+                                "discuss applicability to high-speed imaging"
+                            ],
+                            "num_characters": 6700,
+                            "outline_medium": [
+                                "perform residual recovery on each frame",
+                                "estimate frame using observation matrix and state sequence",
+                                "perform l1 recovery on residue",
+                                "obtain new estimate of frame",
+                                "require large number of measurements",
+                                "estimate beyond support of C"
+                            ],
+                            "outline_short": [
+                                "introduce residual correction for large number of measurements",
+                                "describe l1 recovery on residue at each frame",
+                                "discuss limitations of residual correction"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce notation",
+                        "define LDS and its properties",
+                        "motivate LDS for video modeling",
+                        "describe CS-LDS framework",
+                        "outline measurement process",
+                        "define common and innovations measurements",
+                        "estimate state sequence using SVD",
+                        "recover observation matrix using CoSAMP",
+                        "describe CS camera implementation",
+                        "outline recovery of state sequence and observation matrix",
+                        "discuss low-dimensional projections of LDS data",
+                        "describe SVD-based estimation of state sequence",
+                        "discuss accuracy of state sequence estimation",
+                        "introduce structured sparsity and modified CoSAMP",
+                        "describe recovery of observation matrix using modified CoSAMP",
+                        "discuss performance and measurement rate",
+                        "describe extensions to CS-LDS framework",
+                        "outline mean+LDS model",
+                        "describe residual correction",
+                        "present experimental results",
+                        "discuss performance with measurement noise",
+                        "discuss application to non-LDS data"
+                    ],
+                    "num_characters": 11502,
+                    "outline_medium": [
+                        "introduce notation",
+                        "motivate LDS models",
+                        "describe CS-LDS framework",
+                        "outline measurement process",
+                        "estimate state sequence using SVD",
+                        "recover observation matrix using CoSAMP",
+                        "discuss structured sparsity and recovery",
+                        "analyze performance and measurement rate",
+                        "describe extensions to mean+LDS and residual correction",
+                        "present experimental results",
+                        "discuss applications to non-LDS data"
+                    ],
+                    "outline_short": [
+                        "introduce LDS notation and definitions",
+                        "motivate CS-LDS framework and its advantages",
+                        "describe two-step measurement process and state sequence estimation",
+                        "outline recovery of observation matrix using model-based CoSAMP",
+                        "discuss extensions and modifications to the CS-LDS framework"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for capturing a video sequence comprising the steps of:\nobtaining common measurements of said video sequence, wherein for said common measurements a corresponding measurement matrix is the same at each time instant;\nobtaining innovations measurements of said video sequence, wherein for said innovation measurements a corresponding measurement matrix is different at each time instant; and\nestimating a state sequence up to a linear transformation using an SVD of said common measurements.",
+        "2. A method for capturing a video sequence according to claim 1, further comprising the step of estimating an observation matrix using said innovation measurements.",
+        "3. A method for capturing a video sequence according to claim 2, further comprising the step of recovering an estimate of said video sequence from a product of said observation matrix and said state sequence.",
+        "4. A method for capturing a video sequence according to claim 1, wherein said common measurements and said innovations measurement are obtained using a CS camera comprising a processor, a memory, a single photo-diode and a programmable micro-mirror array for acquiring random projections of a light field incident to a scene.",
+        "5. A method for capturing a video sequence according to claim 1, wherein said step of estimating a state sequence comprises using an SVD of said common measurements wherein said measurement matrix is modified to make each row in said matrix sum to zero.",
+        "6. A method for capturing a video sequence comprising the steps of:\nmodeling evolution of image frames of said video sequence as a linear dynamical system; estimating model parameters of said linear dynamical system model from compressive measurements of said video sequence; and reconstructing image frames of said video sequence from said linear dynamical system model and said estimated parameters.",
+        "7. A method for sensing multiple frames of data that lies on an unknown, low dimensional subspace using common and innovations measurements comprising the steps of:\nobtaining common measurements of said video sequence, wherein for said common measurements a corresponding measurement matrix is the same at each time instant;\nobtaining innovations measurements of said video sequence, wherein for said innovation measurements a corresponding measurement matrix is different at each time instant; and\nestimating a state sequence up to a linear transformation using an SVD of said common measurements.",
+        "8. A method for sensing multiple frames of data that lies on an unknown, low dimensional subspace using common and innovations measurements according to claim 7, wherein said data comprises hyper-spectral data with multiple frequency sensing bands with high correlation between these frequency band.",
+        "9. A method for sensing multiple frames of data that lies on an unknown, low dimensional subspace using common and innovations measurements according to claim 7, wherein said data comprises a reflectance field of a scene where pixels with similar texture exhibit similar reflectance properties.",
+        "10. A method for sensing multiple frames of data that lies on an unknown, low dimensional subspace using common and innovations measurements according to claim 7, wherein said data comprises time varying hyper-spectral data that exhibits spectral correlation as well as temporal correlation permitting subspace model for various spectral bands and linear dynamical system modeling for temporal variations."
+    ]
+}

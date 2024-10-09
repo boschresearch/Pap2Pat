@@ -1,0 +1,162 @@
+{
+    "id": "https://semopenalex.org/work/W4286632602",
+    "authors": [
+        "Qian Li",
+        "Lei Chen",
+        "Xiaohong Wang",
+        "Jingchao Wang",
+        "Anthony E. Samir",
+        "Theodore T. Pierce",
+        "Shuhang Wang",
+        "Viksit Kumar",
+        "Mark Washburn",
+        "Paul O\u2019Dea",
+        "Szu-Yeu Hu",
+        "Arinc Ozturk",
+        "Yelena Tsymbalenko"
+    ],
+    "title": "Automated Estimation of Hepatorenal Index: a Biomarker for Hepatic Steatosis",
+    "date": "2022-07-06",
+    "abstract": "Steatosis is the most common cause of chronic liver disease worldwide. Ultrasound helps diagnose steatosis due to its wide availability, non-invasiveness, and safety. The hepatorenal index (HRI) is a clinically used biomarker for diagnosing steatosis. To study the automated calculation of HRI from ultrasound images, we identified a retrospective cohort undergoing abdominal ultrasound with 1320 images, one image per patient. The patients were divided into training (n=1166) and test (n=154) sets. The test set consists of 48 patients without steatosis (S0) and 106 patients with steatosis (S1-S3). An automated method was proposed to calculate HRI using four steps (a) segment the liver and the renal cortex, (b) remove pixels associated with ducts, vessels, masses, cysts, and shadowing artifacts, (c) place two regions of interest (ROIs), one each in the liver and the renal cortex, and (d) calculate the HRI as the ratio of the mean pixel value of the liver ROI to the renal cortex ROI. We explored several sets of rules for ROI placement. The method minimizing the Euclidean distance between the two ROIs, the best performer, had an area under the ROC (AUROC) curve of 0.87 compared to physicians with an AUROC of 0.82 (p=0.159). In addition, the Euclidean distance constraint showed no dependence on depth for ROI placement. The proposed automated method can be translated into clinical care without modifying existing imaging protocols to optimize the diagnostic capability of ultrasound for hepatic steatosis and assist with triaging patients.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Steatosis, or fatty liver, is defined as intrahepatic fat of more than 5% of liver weight. There are multiple causes of steatosis including obesity, diabetes, viruses, drugs, alcohol, and idiopathic causes 1 . Steatosis is the most common cause of chronic liver disease worldwide [2][3][4] , with a prevalence of 30% 5 . In some patients, steatosis leads to progressive fibrosis, cirrhosis, liver failure, and hepatocellular carcinoma [6][7][8] . As a result, patients with hepatic steatosis require dedicated specialist management and monitoring for treatment and complication screening.",
+                "Liver biopsy is considered the gold standard for steatosis diagnosis; however, liver biopsy is costly and invasive, suffers from tissue sampling error and inter-observer variability, precludes serial monitoring, and carries the risk of serious complications and even death 9,10 . Various imaging modalities can provide detailed information about hepatic tissue noninvasively. For example, magnetic resonance (MR) imaging, using proton density fat fraction or spectroscopy, accurately assesses hepatic fat content [11][12][13][14][15][16] . However, MR examinations are costly and unsuitable for patients with claustrophobia, implanted electronic devices, certain metal implants, and large body habitus. Computed Tomography (CT) has also been evaluated in the diagnosis of steatosis by various investigators [17][18][19][20][21][22] . Still CT is unreliable for diagnosing mild to moderate hepatic steatosis 23 , especially after intravenous contrast administration. In addition, CT is associated with radiation exposure, limiting its use in longitudinal studies and children.",
+                "Ultrasound is helpful for steatosis assessment due to its wide availability, non-invasiveness, safety, low cost, and portability, especially for initial screening and longitudinal studies 20,[24][25][26] . Increasing liver fat deposition increases hepatic parenchymal echogenicity. However, several other technical acquisition parameters and patient factors may confound evaluation. A normative in-image reference, typically the renal cortex, can be used to control for much of this variability. Hepatorenal index (HRI), defined as the ratio of the mean pixel value of the liver to the renal cortex, has shown some potential to diagnose steatosis 27 . To estimate HRI, two representative regions of interest (ROIs) are manually placed, one each in the liver and the renal cortex 1,27,28 . Efforts have been made to standardize the ROI placement process by providing clinical guidelines for ROI placement. These guidelines include placement of ROIs at a similar depth to account for ultrasound beam attenuation effects 1,27,28 . However, due to the added effort of placing ROIs, clinical practice has a tendency to only qualitatively assess the echogenicity of the liver with regard to the renal cortex rather than leveraging the HRI quantitative biomarker. This leads to increased subjectivity in diagnosing and reporting hepatic steatosis.",
+                "To streamline the utilization of HRI and improve biomarker performance, we have developed an automated method to compute HRI as a quantitative tool for diagnosing liver steatosis. The automated process includes two essential tasks: (a) the segmentation of the liver and the renal cortex and (b) the placement of ROIs in the liver and the renal cortex. Inspired by recent studies on deep learning 29 , we employed a deep learning-based algorithms to segment the liver parenchyma and the renal cortex automatically. Two rule-based algorithms were developed to place ROIs based on 1) clinical guidelines and 2) performance-optimized ROI localization. A deep learning approach for placement of ROI was avoided to provide greater flexibility in constraining the ROI placement and avoid reannotating and retraining if the clinical guidelines are changed or new guidelines are proposed that yield better results than existing guidelines. We assess the diagnostic performance of each automated HRI algorithm and compare it to manual calculation."
+            ],
+            "subsections": [
+                {
+                    "title": "Results",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Demographic and Clinical Characteristics",
+                            "paragraphs": [
+                                "A total of 1398 patients were retrospectively identified. Seventy-eight patients were excluded due to missing Morison's pouch view (n=36), shadowing artifacts (n=21), and ineligible medical history (n=21). The final set of 1320 ultrasound images, one image per patient, were acquired by ultrasound systems from five different vendors (multiple machines per vendor), including SuperSonic Imagine (Aix-en-Provence, France, n=692), General Electric Healthcare (Milwaukee, WI, USA, n=596), BK Medical (Peabody, MA, USA, n=16), Hitachi Medical Corporation (Tokyo, Japan, n=12), and Siemens Healthineers (Mountain View, CA, USA, n=4). We randomly identified 154 patients with steatosis staging and grouped them as the test set, and the remaining 1166 patients were regarded as the training set. Age (year) -Mean \u00b1 SD 49.0 \u00b1 16.9 (missing n=7) Female sex -Count (%) 635 (54.8%) (missing n=7) BMI -Mean \u00b1 SD 28.9 \u00b1 6. "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Segmentation Evaluation",
+                            "paragraphs": [
+                                "The mean \u00b1 SD Dice scores for segmenting the liver and the renal cortex on the test images are 0.915 \u00b1 0.005 and 0.815 \u00b10.006, respectively. While there are no accepted thresholds to define Dice score qualitatively, we consider these Dice scores relatively high. An example of the liver and the renal cortex segmentation and identification of valid pixels is shown in Figure 1. "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Physician versus Automated HRI Methods",
+                            "paragraphs": [
+                                "Table 3 reports the mean HRI of each steatosis group, and the AUROC and optimal thresholds by the physician, the rules mimicking clinical guidelines, and the rules minimizing the Euclidean distance between the two ROIs. The HRI is higher on average in the steatosis group for all the methods. The corresponding ROC curve is presented in Figure 2. The rules minimizing the Euclidean distance has the highest AUROC 0.87, which is not significantly different from a physician (p=0.159) and the clinical-guideline constraint (p=0.173) methods."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Discussion",
+                    "paragraphs": [
+                        "HRI is a well-known quantitative biomarker of liver fat deposition, which would be more widely used if not for the need of manual ROI measurements and performance degradation related to measurement variability. Automated methods for ROI placement would mitigate rater variability, improve measurement reproducibility, and reduce the required time to perform HRI analysis. This paper proposed automated methods to calculate HRI to provide fast and easy accurate measurements while avoiding rater subjectivity. We showed that the automated detection of liver contours, renal contours, and exclusion of confounding structures, such as blood vessels, could be performed.  Following clinical recommendations for ROI placement can be sub-optimal. For example, placing the liver and renal cortex ROIs at the same depth can be challenging. It can be difficult to visually assess the curved iso-depths on images generated by curved ultrasound arrays as equivalent depths are not on the same horizontal lines. Even though the sonographers were requested to place ROIs at the same depth, our study found that the manually placed ROIs had a median of only 50% overlap in depth. Furthermore, it is challenging to balance additional constraints, such as simultaneously minimizing the distance between ROIs. Therefore, manually placing the ROIs is unreliable while also time-consuming. The proposed automated method does not require any special hardware. It can be used offline, permitting easy integration into the clinical workflow to obviate the time cost and improve reliability.",
+                        "Confounders for HRI include image quality and image acquisition parameters like gain and time gain compensation (TGC).",
+                        "Our retrospective dataset was sourced from different vendors and lacked standard settings for image acquisitions. Good algorithm performance over non-standard ultrasound images from various vendors increased the confidence in our algorithm performance, suggesting robustness and generalizability. While the automated algorithm works well for clinically acceptable images after careful acquisition by skilled sonographers, performance may be reduced for images in which the gain or image contrast are suboptimal. Similarly, a discontinuity in TGC settings may create spurious HRI values. However, such images will not be considered good quality and are frequently collected by sonographers. Automated HRI algorithms applied earlier in signal processing stages, for example, immediately following beam summation, may mitigate the challenges associated with gain and TGC. Previous studies 30 have used carefully designed image processing techniques to place ROIs automatically. However, the inability to control ROI placement has limited the application of these algorithms. In our approach, the ROI placement parameters are rule-driven rather than learning-based to allow control based on clinical knowledge and guidelines. For example, considering ROIs at different depths may lead to variation as total attenuation may vary among the two ROIs. Thus, the ROIs should be placed on the same iso-depth line. We use iso-depth constraint to ensure ROIs at a similar depth after accounting for transducer geometry. However, our result showed that only using the Euclidean distance constraint provided better results. This implies that depth and total attenuation may not play as important a role as previously understood. The lack of dependence on depth can be explained by the TGC, which amplifies the signal, thus countering the effect of attenuation.",
+                        "The study's limitations include an empirical selection of weights for combining different constraints, subjects enrolled from a single clinical center, a limited sample size, and a lack of consensus on HRI thresholds for steatosis staging. Other limitations of this work include the absence of an external validation data set. These limitations could be addressed in more extensive multi-institutional studies."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Conclusion",
+                    "paragraphs": [
+                        "We have proposed a novel automated algorithm for HRI estimation, which combines deep learning segmentation with geometric rule-based methods for automated HRI computation. Our work is novel as we use a mix of rule-based and deep learning-based methods to replicate existing clinical practices with the ability to control ROI placement, avoiding any challenges associated with the interpretation of the algorithms using deep learning. The rules minimizing the Euclidean distance has shown best performance for ROI placement. The proposed algorithm is able to predict hepatic steatosis at or above par with physicians while reducing subjectivity and providing a quantitative biomarker. This work offers a pathway to acquiring an automated biomarker for one of the most prevalent diseases at minimal or no additional cost to the standard of care ultrasound imaging. This algorithm can be translated into clinical care without modifying existing imaging protocols to optimize the diagnostic capability of ultrasound for hepatic steatosis and assist with triaging patients prior to expensive or invasive testing."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Methods",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Dataset",
+                            "paragraphs": [
+                                "A cohort undergoing ultrasound-guided liver biopsies or diagnostic ultrasound exams between January 2011 to December 2018 was retrospectively identified. Patients with an available Morison's pouch ultrasound image (an image capturing both liver and right renal cortex) stored in the institutional Picture Archiving and Communication System (PACS) were included. Patient exclusion criteria for the test set included: liver lesions such as hemangioma and focal nodular hyperplasia, chemotherapy, renal disease or renal parenchymal abnormalities, and ascites. The ultrasound images were captured per institutional routine from US-guided non-focal liver biopsies or diagnostic ultrasound exams. The age, body-mass index (BMI), indication for biopsies or exams, and diagnosis of diabetes at the time of the exams were collected from the electronic medical record."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Reference standard",
+                            "paragraphs": [
+                                "We extracted steatosis grades from clinical pathology reports issued by board-certified pathologists. As per routine institutional protocol, steatosis was graded as mild (5%-33% hepatocytes), moderate (34%-66% hepatocytes), or severe (> 66% hepatocytes). Minimal (<5%) and no steatosis were grouped as \"no steatosis.\""
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Manual HRI Calculation",
+                            "paragraphs": [
+                                "Three radiologists (Radiologist 1, 10 years experience in abdominal US; Radiologist 2, 10 years experience in abdominal US; Radiologist 3, 6 years experience in abdominal US) manually annotated the liver capsule and renal cortex for all images. The manual annotation served as ground truth to train and test our deep learning model for segmentation. Two radiologists (Radiologist 1 and Radiologist 3) manually calculated HRI for the test set. For each image in the test set, a radiologist first loaded the image into the Visage 7 Imaging platform (Visage Imaging, San Diego, CA) and then placed a circular ROI with diameter 70-90 mm in the liver parenchyma adjacent to the renal cortex and a circular ROI with diameter 20-30 mm in the renal cortex at the same depth. The ROI was placed according to guidelines specified in the literature 28,[31][32][33] . The guidelines specify that liver ROI should avoid artifacts, large vessels, large ducts, and incidental cysts/masses. The renal cortex ROI should avoid renal sinus and perinephric fat. The HRI was calculated as the mean intensity ratio for the pixels inside the liver ROI to renal cortex ROI. We subsequently quantitatively assessed the adherence to the iso-depth ROI placement goal, by evaluating the variability of iso-depth lines of the manually placed ROI pairs.. The iso-depth line is defined as the curved line replicating the transducer geometry (illustrated in the appendix Figure A1)."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Automated HRI Algorithm",
+                            "paragraphs": [
+                                "We developed a four-step algorithm to estimate HRI, as shown in Figure 3. The first step segments the liver and the renal cortex using a deep learning model. The second step excludes invalid pixels from the liver and the renal cortex by a custom rule-based algorithm identifying capsules, ducts, vessels, masses, cysts, and artifacts. The third step places two circular ROIs in the renal cortex and liver. The algorithm finally calculates HRI as the ratio of mean intensity values inside the liver and the renal cortex ROIs (refer to the appendix for the equation). Step 1: Deep learning-based segmentation of the liver and the renal cortex We used SDU-Net 34 , a modification of vanilla U-Net, for automated liver and renal cortex segmentation. U-Net uses two standard convolutions in each layer to process feature maps of the same resolution and takes the output of the second convolution as the input to the next layer. Alternatively, SDU-Net adopts a stacked dilated operation to replace the two standard convolutions in each layer (Figure 4(a)). As Figure 4(b) shows, the stacked dilated operation includes one standard convolution followed by multiple dilated convolutions and concatenates all dilated convolution outputs as the input to the next layer. In Figure 4, each encoder operation downsamples the preceding layer while each decoder operation upsamples the prior layer and concatenates it with its corresponding encoder map (indicated by dashed-line box) 34 . In both encoder and decoder, the number of map channels is reduced while the dilation rate increases with subsequent downsampling or upsampling operations. An efficient design was constructed by setting the output channel number of each dilated convolutional layer to n out /2, n out /4, n out /8, n out /16, and n out /16, and therefore the concatenation output consists of n out channels.",
+                                "We utilized random horizontal flipping and random rotation for data augmentation to overcome overfitting of network training. Random horizontal flipping is defined as flipping the image horizontally from left to right. Random rotation is defined as rotating around its center. The rotation angle was a random value in the range of [-45 \u2022 , 45 \u2022 ].",
+                                "Step2: Rule-based identification and removal of invalid pixels According to the guidelines, the ROIs should avoid capsules, ducts, vessels, masses, cysts, and shadowing artifacts. The liver and the renal cortex masks were eroded to avoid hyperechoic pixels on the liver or renal cortex capsule. The erosion adopted a square structuring element, with the side length set to 0.2 times the renal cortex's maximum skeleton distance (SD). The skeleton of an object is defined as the set of centers of all the circles that are tangent to the object's boundary at two or more disjoint points 35 . As shown in Figure 5, centered at any point O on the skeleton, the skeleton distance is defined as the circle's radius r. In addition, ducts, vessels, masses, and imaging artifacts in the liver often have characteristic hypo or hyper-echogenic pixels. Thus, the pixels associated with liver tissue were identified by empirically removing the two tails of the intensity histogram and keeping values between the interval of [15%, 85%]. The retained pixels are referred to as valid pixels. The same technique was not applied to the renal cortex as the pixels inside the renal cortex are typically hypoechoic and traversing large vessels would be unusual. Acoustic shadowing in the renal cortex was removed by detecting dark stripes along the axial direction. Step 3: Rule-based placement of ROIs inside the liver and the renal cortex Current clinical guidelines for placing ROIs can lead to increased subjectivity. The ROI placement process was made more quantitative by defining constraints associated with ROI size, spatial constraints, and valid pixel density.",
+                                "\u2022 ROI Size: The two ROIs in the same image were set to the same size, principally constrained by the renal cortex size.",
+                                "The SD of the renal cortex was used to determine ROI diameter to optimize the tradeoff between placement options and sampling error.",
+                                "\u2022 Spatial Constraint: We explored four factors for the spatial constraint of ROIs. (a) The ROIs should be placed close together to minimize the number of transducer elements and beam formation spatial variability. This constraint was captured by the Euclidean distance (ED) between ROIs. (b) Since the signal attenuates with depth, the ROIs should be placed at a similar depth. Therefore, we minimized the difference between two ROIs' iso-depth lines (ID). (c) For each ROI, we also restrained the signal attenuation by minimizing the depth (DP). (d) Due to the limited acoustic window in abdominal exams, the center of the image is presumed to have the best image quality. Thus, the ROIs were constrained to be close to the center of the image by minimizing the distance from ROIs to the vertical centerline of the image (CD). We explored five sets of combinations of the primary factors, which are elaborated in the following subsection.",
+                                "\u2022 Valid-pixel-number Threshold: After removing invalid pixels, it is crucial to ensure that there are sufficient samples for estimating HRI. We empirically excluded candidate ROIs with less than 40% valid pixels."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Data Availability",
+                    "paragraphs": [
+                        "The datasets generated and/or analysed during the current study are not publicly available, as the datasets were developed with the support of GE Healthcare. Sharing of the data set can be considered on request to the corresponding author (Shuhang Wang: swang38@mgh.harvard.edu), but is subject to the approval of GE Healthcare."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Rules for ROI Spatial Constraints",
+                            "paragraphs": [
+                                "We explored five sets of rules for ROI spatial constraints, while we mainly focused on two of them considering the reliability and the applicability.",
+                                "Rules mimicking clinical guidelines: Current clinical guidelines specify that ROIs are placed at the same depth, while sonographers unconsciously use other factors. Key placement considerations based on clinical experience include ROIs close to each other, of similar depths, near the probe and the middle line of the image, and entirely within the liver or renal cortex. To balance these factors, the weights of ED, ID, DP, and CD (refer to the definitions below and appendix for more details) were empirically set to 0.3, 0.56, 0.07, and 0.07.",
+                                "\u2022 ED: the Euclidean distance between the two ROIs.",
+                                "\u2022 ID: the difference between the iso-depth lines through the two ROIs, respectively.",
+                                "\u2022 CD: the maximum of the distances from the two ROIs to the centerline of image.",
+                                "\u2022 DP: the maximum of the depths of the two ROIs.",
+                                "Rules minimizing the distance between the two ROIs: To develop an even simpler model which was more likely to generalize, the set of rules only focused on minimizing the ED to guide the ROI placement, allowing the ROI to be partly outside of the liver or renal cortex as long as the ROI center was within the liver or renal cortex. The pixels outside the organ were considered invalid pixels for HRI measurement and thus were not included in the HRI calculation.",
+                                "In addition, three other sets of rules were also tested but not reported due to lack of clinical justification and reliability. Rule set 3: The weights of the four factors were set the same as the rules mimicking clinical guidelines, but allowing the ROI to be partly outside the liver or renal cortex as long as the ROI center was within the liver or renal cortex. Rule set 4: The two ROIs were placed precisely on the same iso-depth line while ED is minimized. Rule set 5: ID was constrained to be less than equal to 3 pixels while ED was minimized."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Statistical Analysis",
+                            "paragraphs": [
+                                "Statistical analysis was done with MedCalc 11.6.1. Descriptive statistics were reported as mean and standard deviation for continuous variables and counts and frequencies for categorical parameters. Liver and renal segmentation performance was assessed by Dice score 36 . Receiver operating characteristic (ROC) curves were plotted to determine the diagnostic performance of manual HRI and automated HRI methods to predict hepatic steatosis, dichotomized as stages S0 vs S1-3. The area under the ROC curve (AUROC) and optimal diagnostic threshold using Youden's index was reported for each method. Pairwise ROC curves between physicians, rules mimicking clinical guidelines and rules minimizing the ROIs' distance were compared using the DeLong test 37 . Adjustment for multiple comparisons was not made due to the small number of a priori comparisons."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Statement of Ethics",
+                            "paragraphs": [
+                                "The institutional review board of Massachusetts General Hospital approved this retrospective study and waived the requirement to obtain informed consent. The study was compliant with the Health Insurance Portability and Accountability Act, adhered to the principles outlined by the Declaration of Helsinki, and were carried out in accordance with local guidelines and regulations.",
+                                "Author contributions statement S.W., V.K., and A.E.S. designed research; S.W., V.K., S.H., and X.W. performed research; S.W., V.K., S.H., X.W., L.C., J.W., A.O., and Q.L. performed data acquisition and dataset curation; S.W. and V.K. analyzed data; T.T.P., Y.T., P.O., and M.J.W. provided interpretation of the data and results; S.W. wrote the paper. All authors reviewed the manuscript."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Supplementary Files",
+            "paragraphs": [
+                "This is a list of supplementary les associated with this preprint. Click to download."
+            ],
+            "subsections": []
+        }
+    ]
+}

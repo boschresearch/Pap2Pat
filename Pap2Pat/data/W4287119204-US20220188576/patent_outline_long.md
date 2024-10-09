@@ -1,0 +1,162 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to multi-agent systems
+
+## BACKGROUND
+
+- define multi-agent system
+- motivate inter-agent communication
+
+## DETAILED DESCRIPTION
+
+- introduce MARL
+- define policy and reward
+- motivate reinforcement learning
+- describe limitations of policy models
+- introduce need for efficient inter-agent communication
+- describe MARL system
+- train agents using MARL
+- control communication based on reward signals
+- aggregate task reward and communication penalty
+- minimize communication and maximize contribution
+- train policy model for each agent
+- facilitate optimized communications
+- receive messages from other agents
+- generate aggregated communication vector
+- produce first state vector
+- determine whether to send message
+- calculate reward score
+- optimize reward score
+- compare reward scores
+- generate and send message
+- determine recipients of message
+- prevent inter-agent communication when costly
+- facilitate efficient inter-communication
+- provide disclaimer for specific details
+- describe accompanying drawings
+- define various terms and phrases
+- introduce multi-agent system
+- describe autonomous agent
+- describe multi-agent server
+- describe goal determination
+- describe scene selection
+- describe agent navigation
+- describe system backend functions
+- describe multi-agent server components
+- describe database functionality
+- describe communication with agents
+- describe third-party system communication
+- describe third-party system functionality
+- describe network functionality
+- describe network protocols
+- describe data representation
+- describe encryption
+- introduce multi-agent server components
+- describe interface module
+- describe training module
+- describe policy model training
+- describe hyperparameter determination
+- describe policy model architecture
+- describe validation module
+- describe policy model validation
+- describe accuracy score determination
+- describe threshold comparison
+- describe distributer module
+- describe policy model distribution
+- describe request processing
+- describe policy model selection
+- describe feedback processing
+- describe database functionality
+- describe data storage
+- introduce example agent
+- introduce agent 110
+- describe components of agent 110
+- detail policy model 310
+- explain sensor suite 320
+- describe actuator suite 330
+- detail communication suite 340
+- explain memory 350
+- introduce policy model 310
+- describe message aggregating module 410
+- detail encoder module 420
+- explain message gating module 430
+- describe message generation module 440
+- detail action module 450
+- introduce message aggregation process
+- explain communication vector generation
+- detail message forwarding process
+- describe state vector generation
+- explain encoder module 420 operation
+- detail gate generation
+- explain reward signal calculation
+- describe optimization of reward signal
+- detail message generation
+- explain action generation
+- introduce policy network 500
+- describe inputs to policy network 500
+- detail message aggregation module 510
+- explain encoder module 520
+- describe message gating module 530
+- detail message generation module 540
+- explain action module 550
+- describe communication vector generation
+- detail hidden state update
+- explain gate computation
+- describe action generation
+- illustrate communication gates
+- describe gate functionality
+- introduce example methods
+- illustrate method of controlling inter-agent communication
+- describe policy model functionality
+- determine whether to send message
+- generate message
+- send message
+- determine action
+- instruct actuator
+- introduce computing device
+- describe computing system components
+- illustrate processing device
+- describe memory functionality
+- introduce communication chip
+- describe wireless communication protocols
+- describe wired communication protocols
+- introduce antenna
+- describe battery/power circuitry
+- introduce display device
+- introduce audio output device
+- introduce audio input device
+- introduce GPS device
+- introduce other output device
+- introduce other input device
+- describe form factor
+
+### SELECT EXAMPLES
+
+- provide example 1 of method
+- provide example 2 of method
+- provide example 3 of method
+- provide example 4 of method
+- provide example 5 of method
+- provide example 6 of method
+- provide example 7 of method
+- provide example 8 of method
+- provide example 9 of method
+- provide example 10 of method
+- provide example 11 of computer-readable media
+- provide example 12 of computer-readable media
+- provide example 13 of computer-readable media
+- provide example 14 of computer-readable media
+- provide example 15 of computer-readable media
+- provide example 16 of computer-readable media
+- provide example 17 of computer-readable media
+- provide example 18 of computer-readable media
+- provide example 19 of computer-readable media
+- provide example 20 of computer-readable media
+- provide example 21 of apparatus
+- provide example 22 of apparatus
+- provide example 23 of apparatus
+- provide example 24 of apparatus
+- provide example 25 of apparatus
+

@@ -1,0 +1,353 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND
+
+- motivate bioluminescence
+- describe limitations of current systems
+- discuss importance of near-infrared bioluminescence
+- summarize previous approaches
+- highlight need for improvement
+
+## SUMMARY OF THE INVENTION
+
+- introduce click beetle luciferase variant polypeptides
+- describe enhanced luminescence
+- describe altered light emission wavelength
+- describe altered substrate specificity
+- list specific amino acid substitutions
+- describe CBR variant polypeptide with enhanced luminescence
+- describe CBR variant polypeptide with altered light emission spectra
+- describe CBR variant polypeptide with altered substrate specificity
+- describe Km for PBI-4813
+- describe Km for PBI-4739
+- describe relative Vmax
+- describe codon-optimized sequence
+- describe polynucleotide encoding CBR variant polypeptide
+- describe vector comprising polynucleotide
+- describe cell comprising polynucleotide or vector
+- describe non-human transgenic animal comprising cell
+- describe non-human transgenic animal comprising polynucleotide or vector
+- describe CBR variant polypeptide encoded by polynucleotide
+- describe circularly permuted luciferase
+- describe fusion protein comprising CBR variant polypeptide
+- describe near-infrared bioluminescence system
+- describe method of producing CBR variant polypeptide
+- describe kit comprising polynucleotide or vector
+- describe kit comprising CBR variant polypeptide
+- describe bioluminescence resonance energy transfer system
+- describe method for measuring bioluminescence
+- describe method for measuring enzymatic activity
+
+## DETAILED DESCRIPTION
+
+- introduce click beetle red luciferase (CBR) variants
+- describe near-IR bioluminescence systems
+
+### 1. DEFINITIONS
+
+- define technical and scientific terms
+- describe preferred methods and materials
+- incorporate references by reference
+- define open-ended transitional phrases
+- describe terminology usage
+- define numeric ranges
+- define bioluminescence or luminescence
+- define enhanced
+- define luciferin substrate
+- describe naturally-occurring luciferin
+- define luciferin derivative
+- describe luciferase reaction mixture
+- describe luciferase detection mixture
+- define luminescence
+- describe measuring luminescence
+- define relative substrate specificity
+- describe determining relative substrate specificity
+- define change in relative substrate specificity
+- describe determining change in relative substrate specificity
+- define fusion polypeptide or fusion protein
+- describe identity of nucleic acids or polypeptide sequences
+- describe methods of alignment for comparison
+- define mutations
+- describe substitution
+- define nucleic acid molecule, polynucleotide, or nucleic acid sequence
+- describe polynucleotide encoding a protein or polypeptide
+- define peptide, protein, and polypeptide
+- describe pure or purified
+- define variant
+- describe modified version of a starting polypeptide or polynucleotide sequence
+- describe parental sequence
+- describe functional fragment
+- describe conservative substitution of an amino acid
+- describe hydrophobicity index of amino acids
+- describe hydrophilicity of amino acids
+- describe vector
+- describe wild-type or native
+- describe mutant
+- describe naturally occurring mutants
+- conclude definitions
+
+### 2. CBR VARIANTS
+
+- introduce CBR variants
+- describe techniques for evolving CBR
+- identify sites for amino acid substitution
+- list amino acid substitutions
+- describe CBR variant polypeptide
+- define shorthand names for CBR variants
+- describe SEQ ID NO: 1, 2, 3, 4, and 5
+- define substantially the same sequence
+- describe recombinant polynucleotide
+- describe amino acid sequence identity
+- describe variant fragments
+- describe fusion proteins
+- list characteristics of enhanced luminescence
+- describe substrate inhibition
+- describe determining enhanced luminescence
+- describe assays for determining luminescence
+- describe comparing luminescence signals
+- describe increased luminescence emission
+- introduce CBR variants
+- describe altered light emission spectra
+- specify shift in spectral maximum
+- provide range of spectral maximum
+- describe altered substrate specificity
+- specify increased or decreased substrate specificity
+- describe change in relative specificity
+- specify altered Km or Vmax
+- provide range of Km for PBI-4813
+- specify Km for PBI-4813
+- provide range of Km for PBI-4739
+- specify Km for PBI-4739
+- describe Km for PBI-4813 relative to SEQ ID NO: 1
+- specify fold difference in Km for PBI-4813
+- describe altered substrate specificity for luciferin
+- specify increased or decreased substrate specificity for luciferin
+- describe change in relative specificity for luciferin
+- specify altered Km or Vmax for luciferin
+- provide range of Km for luciferin
+- specify Km for luciferin
+- describe Km for luciferin relative to SEQ ID NO: 1
+- specify fold difference in Km for luciferin
+- describe altered substrate specificity for novel luciferin derivative
+- specify increased or decreased substrate specificity for novel luciferin derivative
+- describe change in relative specificity for novel luciferin derivative
+- specify altered Km or Vmax for novel luciferin derivative
+- define CBR variants
+- specify Km for PBI-4813
+- specify Km for PBI-4739
+- specify relative Vmax for PBI-4813
+- specify relative Vmax for PBI-4739
+- describe fusion proteins
+- specify heterologous amino acid sequences
+- describe epitope tags
+- describe conformational changes
+- describe reporter applications
+- describe fusion with HALOTAG polypeptide
+- describe signal sequences
+- describe membrane anchoring sequences
+- describe vectors and host cells
+- prepare expression cassettes
+- introduce nucleic acid molecules to vectors
+- introduce vectors to host cells
+- describe prokaryotic cells
+- describe eukaryotic cells
+- describe mammalian cells
+- describe promoters
+- describe post-transcriptional regulation
+- describe optimized sequences
+- describe codon optimization
+- describe modifications to add/remove sequences
+- describe optimized sequences for mammalian hosts
+- describe optimized sequences for bacterial cells or plants
+- describe stringency conditions
+- describe nucleic acid sequence identity
+- describe amino acid sequence identity
+- describe expression cassettes and vectors
+- describe kits comprising isolated nucleic acid molecules
+
+### 3. NEAR-INFRARED BIOLUMINESCENCE SYSTEMS
+
+- introduce near-IR bioluminescence systems
+- describe CBR variants and luciferin derivatives
+- motivate near-IR luminescence for in-depth tissue imaging
+- describe advantages of near-IR bioluminescence systems
+- introduce novel luciferin derivatives
+- define compound of Formula (Ia), (Ib), (Ic), (II), (III), (IV), (V), (VI
+- describe structure of Formula (Ia), (Ib), (Ic)
+- describe structure of Formula (II)
+- describe structure of Formula (III)
+- describe structure of Formula (IV)
+- describe structure of Formula (V)
+- describe structure of Formula (VI)
+- describe structure of Formula (VII)
+- describe emission maximum of compounds
+- introduce pro-substrates for luciferase enzymes
+- describe reductase substrates
+- describe glycosidase substrates
+- describe protease and protease-dependent protein modifying substrates
+- describe oxidase substrates
+- describe carboxyl-based pro-substrates and glutathione transferase substrates
+- describe beta-lactamase substrates and other pro-substrates
+
+### 4. METHODS OF USING THE CBR VARIANTS AND/OR BIOLUMINESCENT SYSTEMS
+
+- use CBR variants and near-IR bioluminescence systems
+- use with sample or in vivo imaging
+- use as transcriptional reporter or biosensor
+- use in dual-color assays or multiplexing
+- use in assays to detect enzymes or molecules
+- use as energy donor to another molecule
+- use in protein proximity assays or protein complementation assays
+- use in in situ methods of analyzing cells
+- distinguish between substrates and inhibitors of an enzyme
+- perform screening in vitro or in vivo
+- detect or quantify molecule in solution or on solid supports
+- restrict or limit luciferase reaction by time, enzyme concentration, or substrate concentration
+- adjust reaction conditions for completion
+- carry out reaction at specific temperatures
+- carry out reaction for specific times
+- use for in vivo imaging
+- improve speed, detection limit, and depth penetration of bioluminescence imaging
+- use for non-invasive animal imaging
+- evaluate tumor progression and response to anti-cancer therapeutics
+- image expression of selected protein of interest in real time
+- introduce CBR variants and bioluminescent systems
+- multiplex CBR variants with luciferases
+- use CBR variants as transcriptional reporters
+- multiplex CBR variants with aequorin or cAMP circularly-permuted firefly luciferase biosensor
+- detect non-luminescent enzymes using CBR variants and pro-substrates
+- describe non-luminescent enzymes detectable by CBR variants
+- introduce bioluminescence resonance energy transfer (BRET)
+- use CBR variants in BRET analysis
+- create fusion proteins for BRET analysis
+- use HALOTAG as a fluorescent acceptor molecule
+- perform BRET using CBR variants and fluorescent proteins
+- list fluorescent labels for BRET
+- introduce protein proximity assays for live cells or lytic formats
+- use CBR variants as circularly permuted or straight split luminescent enzyme fusion proteins
+- measure protein proximity using CBR variants
+- introduce protein complementation assays
+- use CBR variants in protein complementation assays
+- separate CBR variants into fragments
+- fuse CBR variant fragments to polypeptides of interest
+- reconstitute functional CBR variant enzyme
+- detect and measure reconstituted CBR variant enzyme activity
+- use split CBR variants in complementation systems
+- fuse CBR variant fragments to target proteins
+- monitor luminescence in cells or cell lysates
+- capture or immobilize fusion proteins using HALOTAG
+- introduce biosensors
+- use CBR variants as biosensors
+- alter CBR variant activity upon interaction with molecules of interest
+- generate biosensors to detect proteases, kinases, ligands, or metals
+- insert sensor regions into CBR variant sequences
+- use full-length circularly permuted CBR variant enzymes in protein complementation-type assays
+- describe dimerization of full-length circularly permuted CBR variant enzymes
+
+### 5. SAMPLE
+
+- define sample composition
+- describe sample components
+- specify sample types
+- detail cell types
+
+### 6. KIT
+
+- introduce kit components
+- describe kit composition
+- specify container types
+- detail instructional materials
+- outline electronic instructions
+
+### 7. EXAMPLES
+
+- introduce example 1
+- characterize near-IR substrates
+- describe experimental details
+- present spectral data for Click Beetle Red Luciferase
+- present spectral data for UltraGlo luciferase
+- present spectral data for QuantiLum luciferase
+- introduce example 2
+- prepare library of Click Beetle Red variants
+- describe library screening process
+- introduce example 3
+- combine mutations to identify beneficial combinations
+- introduce example 4
+- test variants in mammalian cells
+- introduce example 5
+- design hydrogen acceptor mutagenesis
+- introduce example 6
+- perform hydrogen acceptor mutagenesis variant screen
+- introduce secondary screen
+- select hits from primary screen
+- assay variants in quadruplicate
+- normalize luminescence to CBR luciferase
+- describe example 7
+- combine hydrogen acceptor mutants
+- design and prepare variants
+- clone and express variants
+- screen variants
+- describe example 8
+- evaluate clone 1230 and 1240
+- assay luminescence with PBI-4813 and PBI-4739
+- measure spectral properties
+- perform Km titration
+- perform live cell kinetics
+- describe example 9
+- prepare random clone library
+- clone into pF4Ag
+- screen library
+- describe example 10
+- perform insertion mutagenesis
+- identify suitable insertion sites
+- generate variant constructs
+- assay variants
+- describe example 11
+- recombine ATG 1240 library mutants
+- create library of mutant genes
+- clone into pF4Ag
+- screen library
+- describe example 12-14
+- describe re-plate cells
+- describe assay
+- provide legend/background information for codon optimization experiments
+- describe scope of invention
+- provide clauses for isolated polynucleotides
+- describe CBR variant polypeptide with enhanced luminescence
+- describe CBR variant polypeptide with altered light emission spectra
+- describe CBR variant polypeptide with altered substrate specificity
+- describe CBR variant polypeptide with luciferase activity
+- describe Km for PBI-4813
+- describe Km for PBI-4739
+- describe relative Vmax
+- describe codon-optimized sequence
+- describe sequence comprising polynucleotide of SEQ ID NOs: 6-9
+- describe polynucleotide encoding polypeptide of interest linked to CBR variant polypeptide
+- describe vector comprising polynucleotide
+- describe cell comprising polynucleotide or vector
+- describe non-human transgenic animal comprising cell or polynucleotide
+- describe CBR variant polypeptide encoded by polynucleotide
+- describe circularly permuted luciferase
+- describe fusion protein comprising CBR variant polypeptide
+- describe near-infrared bioluminescence system
+- describe method of producing CBR variant polypeptide
+- describe kit comprising polynucleotide or vector
+- describe kit comprising CBR variant polypeptide
+- describe bioluminescence resonance energy transfer (BRET) system
+- describe method for measuring bioluminescence
+- describe method for measuring enzymatic activity of luminogenic protein
+- describe method for measuring activity of non-luminescent enzyme of interest
+- describe method to detect presence of at least two molecules in a sample or cell
+- describe method to detect interaction between first protein and second protein in a sample
+- describe method to detect interaction between first protein and second protein in a sample using BRET
+- describe method to detect interaction between first protein and second protein in a sample using luminescence
+- describe method to detect interaction between first protein and second protein in a sample using FRET
+- describe method to detect interaction between first protein and second protein in a sample using alpha-complementation
+- describe method to detect interaction between first protein and second protein in a sample using protein fragment complementation
+- describe method to detect interaction between first protein and second protein in a sample using protein-protein interaction
+- describe method to detect interaction between first protein and second protein in a sample using protein-ligand interaction
+

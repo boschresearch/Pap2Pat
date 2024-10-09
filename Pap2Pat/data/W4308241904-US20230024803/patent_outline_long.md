@@ -1,0 +1,145 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to training segmentation model
+
+## BACKGROUND
+
+- motivate action segmentation
+- limitations of annotated data
+
+## DESCRIPTION OF EMBODIMENTS
+
+- introduce semi-supervised training approach
+- motivate reducing annotation costs for training data
+- describe semi-supervised machine learning architecture 100
+- illustrate multi-stream temporal convolution networks 104
+- explain knowledge distillation
+- describe Equation 1 for softmax output layer
+- detail multi-stream temporal convolution networks 104
+- explain accumulation of predictions
+- describe transcript generator 106
+- illustrate series of segments 108
+- explain sequence-to-sequence model 110
+- generate ordered list of actions 112
+- describe sequence matching module 114
+- execute dynamic time warping process
+- generate soft labels
+- describe semi-supervised training approach
+- illustrate method 300
+- generate final frame predictions
+- predict ordered list of actions
+- temporally align ordered list of actions
+- generate labels
+- generate first loss
+- generate second loss
+- update first machine learning model
+- update second machine learning model
+- describe first machine learning model
+- describe second machine learning model
+- generate first frame predictions
+- generate second frame predictions
+- accumulate frame predictions
+- train first and second temporal segmentation machine learning models
+- bypass third temporal segmentation machine learning model
+- execute dynamic time warping process
+- illustrate multi-stream temporal convolution networks architecture 218
+- describe first stream 204
+- describe distillation process
+- describe second stream 206
+- describe L stream 208
+- update second stream 206 and L stream 208
+- accumulate predictions
+- generate final frame predictions 212
+- illustrate training architecture 224
+- divide frames into K-segments
+- learn sequence of action steps
+- conclude semi-supervised training approach
+- describe video sequence analysis
+- identify segments based on frame predictions
+- generate sequence of action steps
+- train sequence-to-sequence model
+- generate soft labels
+- perform temporal alignment
+- update streams based on losses
+- illustrate method of generating losses
+- describe processing blocks
+- execute frame-wise prediction process
+- generate unannotated and annotated losses
+- update base stream and other streams
+- illustrate method of matching frame-wise predictions
+- receive ordered list of actions and predictions
+- filter out labeled data predictions
+- execute dynamic time warping
+- describe training-enhanced computing system
+- illustrate host processor and system memory
+- describe input output module
+- illustrate graphics processor and AI accelerator
+- describe sensors and mass storage
+- execute instructions to implement embodiments
+- describe semiconductor apparatus
+- illustrate logic and substrate
+- describe processor core
+- illustrate memory and code instructions
+- describe front end portion and decoders
+- describe execution logic and execution units
+- describe back-end logic and retirement logic
+- illustrate multiprocessor system
+- describe processing elements and point-to-point interconnect
+- illustrate shared cache and memory
+- describe memory controller logic and interfaces
+- illustrate I/O subsystem and interfaces
+- describe high performance graphics engine
+- illustrate bus and I/O devices
+- describe bus bridge and second bus
+- illustrate devices coupled to second bus
+- describe data storage unit and code
+- illustrate audio I/O and battery
+- describe alternative embodiments
+- illustrate multi-drop bus architecture
+- describe integrated chip partitioning
+- conclude system architecture
+
+## ADDITIONAL NOTES AND EXAMPLES
+
+- introduce computing system
+- generate final frame predictions
+- predict ordered list of actions
+- temporally align ordered list to final frame predictions
+- generate labels
+- generate first loss
+- generate second loss
+- update first machine learning model
+- update second machine learning model
+- include multiple temporal segmentation machine learning models
+- generate first frame predictions
+- generate second frame predictions
+- accumulate frame predictions
+- train temporal segmentation machine learning models
+- bypass third temporal segmentation machine learning model
+- execute dynamic time warping process
+- temporally align first subset of actions
+- bypass second subset of actions
+- include semiconductor apparatus
+- implement logic in configurable or fixed-functionality logic
+- generate final frame predictions
+- predict ordered list of actions
+- temporally align ordered list to final frame predictions
+- generate labels
+- generate first loss
+- generate second loss
+- update first machine learning model
+- update second machine learning model
+- include multiple temporal segmentation machine learning models
+- generate first frame predictions
+- generate second frame predictions
+- accumulate frame predictions
+- train temporal segmentation machine learning models
+- bypass third temporal segmentation machine learning model
+- execute dynamic time warping process
+- temporally align first subset of actions
+- bypass second subset of actions
+- include at least one computer readable storage medium
+- describe method
+

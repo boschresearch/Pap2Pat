@@ -1,0 +1,204 @@
+# DESCRIPTION
+
+## STATEMENT OF GOVERNMENT LICENSE RIGHTS
+
+- acknowledge government support
+
+## BACKGROUND
+
+- motivate analog optical computing
+
+## SUMMARY
+
+- define acousto-optic modulator
+- describe optical layer structure
+- describe piezoelectric transducer
+- define optical computation system
+- describe system components
+- outline method of optical computation
+
+## DETAILED DESCRIPTION
+
+- motivate optical accelerators
+- introduce integrated photonics
+- describe limitations of N×N optical computing layers
+- introduce synthetic frequency dimension
+- describe frequency-domain N×N optical networks
+- motivate acousto-optic modulation
+- describe on-chip acousto-optic modulation
+- introduce heterogeneous integration of SOI with CMOS-compatible piezoelectric materials
+- describe photonic devices for scalable matrix-vector multiplications
+- introduce nanophotonic cavity acousto-optic modulator on AlN-on-SOI platform
+- describe dynamic modulation depth
+- introduce homodyne detection
+- introduce heterodyne detection
+- provide acousto-optic modulator (AOM)
+- describe AOM structure
+- introduce substrate
+- describe optical layer
+- introduce free-standing portion
+- describe rib waveguide
+- introduce photonic crystal
+- describe piezoelectric transducer
+- introduce conductive electrodes
+- describe RF signal transmission
+- introduce substrate materials
+- describe optical layer configuration
+- introduce gap
+- describe acoustic wave propagation
+- introduce photonic crystal cavity
+- describe modulation efficiency
+- introduce interdigital transducer (IDT)
+- describe IDT configuration
+- introduce period of conductive electrodes
+- describe mechanical resonances
+- introduce recesses in photonic crystal
+- describe gap between piezoelectric transducer and rib waveguide
+- describe system 500A
+- illustrate AOM 500
+- describe AOM 600
+- illustrate Bragg reflector 626
+- describe optical computation system 700
+- illustrate piezoelectric transducer 716
+- describe actuation mechanism 720
+- illustrate optical signal 734
+- describe controller 724
+- illustrate memory 726
+- describe one or more processors 728
+- describe inputting 730
+- describe outputting 736
+- illustrate photonic crystal 714
+- describe method of controller 724
+- describe method of optical computation 800
+- actuate piezoelectric transducer
+- input optical signal
+- output output signal
+- describe multilayer optical computing system 900
+- illustrate AOM array 902
+- describe controller 908
+- illustrate memory 910
+- describe one or more processors 912
+- describe splitting 914
+- describe processing 918
+- describe sending 920
+- describe training model 922
+- describe reducing 926
+- describe optimizing 928
+- describe optimizing 930
+- describe optimizing 932
+- describe outputting 934
+- describe method of using multilayer optical computing system 900
+- describe splitting data input
+- describe processing first vector x1 and second vector x2
+- describe sending first output vector y1 and second output vector y2
+- describe reducing loss function
+- describe outputting data output
+- describe computer-implemented method of training model 922
+- describe systems 900A and 900B
+
+### Aspects
+
+- describe device fabrication on AlN-on-SOI substrate
+- illustrate device structure with SEM image
+- define one-dimensional photonic crystal cavity
+- describe end-coupling to grating couplers
+- report loaded quality factor QL and total cavity loss rate κ
+- explain acoustic wave excitation by IDT pattern
+- describe mechanical mode excitation and sideband-resolved regime
+- illustrate mechanical resonances in zoom-in spectra
+- define modulation index β and optomechanical coupling g om
+- derive intra-cavity photon dynamics equation
+- illustrate mechanical resonances with enhanced modulation efficiencies
+- describe acousto-optic modulators with improved modulation efficiency
+- quantify modulation efficiency and synthetic lattice size
+- measure optical transmission spectra with varying RF power
+- infer half-wave voltage Vπ and modulation index β
+- illustrate multiple sidebands and synthetic lattice formation
+- describe coherent frequency conversions in synthetic frequency dimension
+- formulate monochromatic laser input and RF drive
+- derive harmonic signal amplitudes and non-local frequency conversions
+- illustrate optical spectra of harmonic signals
+- describe two-dimensional optomechanical coupling tensor G
+- define fully connected MVM operations in synthetic frequency dimension
+- describe large-scale coherent MVM operations and phase coherence
+- illustrate experimental MVM operation and output vector y
+- describe concatenated phase modulator networks and non-abelian algebraic structure
+
+### EXAMPLES
+
+- describe fabrication flow for cavity acousto-optic modulator
+- introduce plasma-enhanced chemical vapor deposition
+- describe electron-beam lithography and fluorine-based inductively-coupled-plasma etching
+- describe chlorine-based inductively-coupled-plasma etching
+- describe electron-beam evaporation and lift-off
+- describe vapor hydrofluoric acid creation of gap
+- analyze piezoelectrically transduced mechanical modes
+- introduce IDT patterned on heterogeneous AlN/Si region
+- describe numerical simulations of displacement fields
+- analyze fundamental Lamb mode and compressional mode
+- describe higher-order mechanical modes
+- analyze acousto-optic modulations
+- derive analytical solutions to intra-cavity photon dynamics
+- introduce equation (1) for modulator dynamics
+- transform equation (1) to equation (2)
+- use Jacobi-Anger expansion
+- decompose equation (2) into Fourier series
+- derive equation (4) for αk
+- derive equation (5) for αk
+- express intra-cavity optical field as equation (6)
+- calculate optical output at exit facet
+- describe boundedness of effective vector space
+- introduce optomechanical coupling matrix G
+- describe coupling coefficient from n-th sideband to m-th sideband
+- approximate summation in equation (8)
+- describe experimental characterization of cavity acousto-optic modulator
+- introduce homodyne and heterodyne measurement schemes
+- describe experimental setup for homodyne measurements
+- describe experimental setup for heterodyne measurements
+- derive equation (9) for S21
+- describe functionality of homodyne measurements
+- describe heterodyne measurements
+- derive equation (10) for U_hetero
+- describe RF spectra of microwave-to-optical transduction
+- describe spectrum of measured microwave-to-optical transduction signal
+- determine modulation index from spectra of optical transmittance
+- fit measured spectra of optical transmittance
+- describe optical spectra of high-order harmonic signal generations
+- fit measured spectrum of first-order beating note
+- describe driving phase dependence of matrix-vector multiplications
+- calculate dependence on modulation phase ϕ
+- measure output of MVM operations on synthetic frequency lattice
+- interrogate noncommutativity of concatenated modulators
+- define modulation phase differences
+- analyze matrix-matrix multiplications
+- derive output vector expressions
+- attribute noncommutativity to optomechanical coupling matrix
+- introduce Example 12
+- synthesize flexible periodic acousto-optic modulation waveform
+- derive intra-cavity photon dynamics
+- rewrite equation using Fourier series
+- express output optical field
+- derive optomechanical coupling matrix
+- introduce Example 13
+- describe optical neural network simulation
+- implement fully connected linear MVM layer
+- encode pixelated images into complex-valued vectors
+- apply nonlinear activation function and pooling layers
+- optimize beam-splitting weights and modulation indices
+- describe training process and loss function
+- discuss accuracy of image recognition
+- incorporate references by reference
+- describe scope of disclosure
+- discuss variations and equivalents
+- define terms and phrases
+- discuss numerical parameters and approximations
+- discuss headings and references
+- discuss modifications and embodiments
+- discuss claims and scope
+- discuss further embodiments
+- discuss advantages and embodiments
+- discuss singular and plural terms
+- discuss words and phrases
+- discuss numerical parameters and rounding
+- discuss doctrine of equivalents
+

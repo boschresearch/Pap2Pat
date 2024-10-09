@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce atrial fibrillation treatment
+- limitations of 2D ICE
+- limitations of existing segmentation approaches
+
+## SUMMARY
+
+- introduce 3D segmentation from 2D ICE
+- train generator with 3D information
+- use computed tomography or magnetic resonance data
+- generate 3D segmentation and complete volume
+- project 3D segmentation to 2D
+- display 3D segmentation for ablation guidance
+- summarize aspects of the invention
+
+## DETAILED DESCRIPTION OF EMBODIMENTS
+
+- integrate knowledge to boost contouring performance
+- provide 3D geometry information from position sensor
+- provide 3D image appearance information from CT or MR volumes
+- integrate knowledge with machine learning for multi-task network
+- perform cross-modality volume completion and 3D+2D segmentation
+- use ICE information in 3D for initial 3D contour
+- use full or complete volume from other modality for 3D contour
+- perform both completion and 3D segmentation in one multi-task network
+- provide 3D or 2D contouring despite sparseness and noise in imaging
+- use deep neural network with 3D geometrical information and 3D image appearance information
+- form 3D sparse volume based on 2D ICE images
+- perform combined cross-modality volume completion and 3D segmentation
+- achieve collaborative structural understanding through multi-task network
+- generate refined 2D segmentation taking original ICE image and preliminary 2D segmentation
+- introduce flow chart diagram of method for three-dimensional segmentation
+- form 3D sparse volume based on 2D ICE images
+- apply multi-task 3D network with adversarial formulation
+- perform cross-modality volume completion and sparse volume segmentation
+- refine 2D segmentation results
+- provide context of use for treatment of atrial fibrillation
+- show example left atrium and surrounding structure of interest
+- perform method in order shown
+- provide additional, different or fewer acts
+- perform method by medical diagnostic ultrasound scanner with one or more ablation systems
+- use ICE catheter and corresponding transducer to perform act 10
+- use sensor on ICE catheter or transducer to perform act 11
+- perform acts 12, 13, 15, and 16 by image processor
+- perform acts 14 and 17 by image processor in conjunction with display device
+- perform act 18 by ablation system
+- use ultrasound scanner to image with ICE catheter
+- scan plane oriented based on position of catheter
+- generate frame of data representing scan plane at that time
+- sequence of frames of data result from ICE imaging
+- sense positions of scan planes
+- determine location and orientation of transducer for each frame
+- form ICE volume from ultrasound data for scan planes
+- map ultrasound data to three dimensions using positions of scan planes
+- form 3D sparse ICE volume using location information associated with each ICE image
+- generate 3D segmentation from input of ICE volume to machine-learned multi-task generator
+- label anatomy represented by each location
+- form 3D mesh for each anatomy
+- define machine-learned network as plurality of sequential feature units or layers
+- provide nodes of each layer or unit
+- learn features of nodes by machine using building blocks
+- train machine-learned network using training data
+- define multi-task GAN
+- provide output layers for both tasks, volume completion and three-dimensional segmentation
+- provide discriminator networks or layer arrangements
+- train machine-learned network
+- assign CT volumes from first group of patients as ground truth volumes for ultrasound imaging of second group of patients
+- train generator and discriminators by machine learning
+- introduce 3D segmentation and volume completion
+- describe machine-learned multi-task generator
+- explain 3D segmentation output
+- describe 3D segmentation rendering
+- introduce 2D segmentation
+- describe 2D segmentation network
+- explain 2D segmentation output
+- describe display of 2D segmentation
+- introduce ablation guidance
+- describe training data
+- explain 3D annotation
+- describe 2D annotation
+- introduce CT volume pairing
+- describe network training
+- explain evaluation metrics
+- describe 3D segmentation results
+- introduce 2D ICE contouring results
+- describe "2D only" model
+- describe "3D only" model
+- describe "2D+3D" model
+- introduce cyclic image-to-image generative model
+- describe medical imaging system
+- introduce display
+- describe memory
+- introduce image processor
+- describe ICE catheter
+- introduce ultrasound transducer
+- describe sensor
+- introduce medical imager
+- describe image generation
+- introduce machine-learned generative network
+- describe 3D segmentation and volume completion
+- introduce 2D segmentation
+- describe image rendering
+- introduce display of segmentation
+- describe storage of data
+- introduce instructions for implementation
+- describe computer-readable storage media
+- introduce remote storage
+- describe local storage
+- introduce system components
+- describe method steps
+- introduce improvements
+- describe separate or combined use
+- introduce changes and modifications
+- describe scope of invention
+- conclude invention description
+

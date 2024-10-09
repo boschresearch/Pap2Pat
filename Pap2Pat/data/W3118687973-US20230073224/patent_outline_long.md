@@ -1,0 +1,217 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce superconducting circuits
+
+## SUMMARY
+
+- motivate flux qubits
+- describe fluxonium benefits
+- limitations of standard control techniques
+- introduce fast control methods
+- describe initialization methods
+- describe read-out methods
+- universal single-qubit control
+
+## DETAILED DESCRIPTION
+
+- introduce fluxonium qubit 120
+- describe coupling to readout resonator 110
+- define Hamiltonian Hf for fluxonium qubit 120
+- explain significance of external magnetic flux 130
+- describe readout resonator 110 components
+- specify resonant frequency of readout resonator 110
+- explain thermal background photon minimization
+- describe measurement of fluxonium qubit 120 state
+- introduce FIG. 2, potential energy and wavefunctions
+- explain flux-frustration point and wavefunctions
+- describe ground state |g and first excited state |e
+- explain tunneling and energy spacing Δ1
+- describe second and third excited states |f and |h
+- explain plasmon-like transitions
+- introduce FIG. 3, energy-level diagram
+- describe composite states of fluxonium qubit 120 and resonator 110
+- explain spontaneous photon emission
+- describe alternative energy-dissipating devices
+- introduce reset method for initializing quantum system 100
+- describe mixed state of fluxonium qubit 120
+- explain first microwave field 302 and its effect
+- describe second microwave field 304 and its effect
+- explain decay to state |e0 and spontaneous photon emission
+- describe third microwave field 310 and its effect
+- explain Rabi frequencies and transition dipole moments
+- describe experimental demonstration of reset method
+- introduce readout method for distinguishing between states |g and |e
+- explain dispersive frequency shifts
+- describe π pulse 308 and its effect
+- explain enhanced interaction with readout resonator 110
+- describe alternative π pulse configuration
+- explain advantage of readout method
+- describe assumption of continuous external magnetic flux 130
+- explain possibility of changing external magnetic flux 130
+- describe applicability of readout method to other qubits
+- explain potential replacement of microwave fields with other electromagnetic fields
+- introduce fluxonium qubit
+- describe magnetic pulse for single-qubit rotation
+- define fast magnetic pulse
+- explain Larmor frequency and period
+- describe pulse duration and its effect on Bloch vector rotation
+- explain energy splitting and its relation to magnetic flux
+- describe optimal magnetic flux for coherence properties
+- introduce pulse shapes and their characteristics
+- describe pulse generation using digital-to-analog converter
+- introduce magnetic-pulse sequence for universal single-qubit rotation
+- describe first pulse and its effect on Bloch vector
+- describe idling and its effect on Bloch vector
+- describe second pulse and its effect on Bloch vector
+- explain selection of pulse amplitudes and durations
+- describe zero-area pulse sequence
+- explain minimization of high-order harmonics
+- describe application of magnetic-pulse sequence
+- introduce alternative pulse shapes and sequences
+- describe complex pulse that crosses nominal flux
+- introduce method for manipulating fluxonium qubit state
+- describe properties of flux pulse
+- introduce measurement method for determining fluxonium qubit state
+- describe operation in z basis and x basis
+- explain quantum non-demolition measurement
+- describe dispersive coupling to structured radiation environment
+- introduce active pulses and shaped pulses
+- describe emission of energy into measurement apparatus
+- introduce initialization method for cooling fluxonium
+- describe plasmon dissipation and radiative cooling
+- explain transition energy and equilibrium population
+- describe combination of initialization and measurement methods
+- describe combination of initialization and manipulation methods
+- describe combination of measurement and manipulation methods
+- conclude with various embodiments of methods
+
+### Experimental Demonstration
+
+- introduce superconducting circuits
+- motivate fluxonium over transmon
+- describe limitations of standard microwave control
+- introduce high-fidelity control of fluxonium circuit
+- describe transmon circuit
+- discuss limitations of transmon
+- introduce flux qubit
+- discuss improvements in fluxonium
+- describe heavy-fluxonium circuit
+- show circuit diagram
+- explain effective circuit
+- provide Hamiltonian
+- describe level structure
+- introduce qubit initialization and readout
+- describe reset protocol
+- explain qubit initialization
+- describe readout scheme
+- characterize device coherence
+- measure T1
+- explain relaxation times
+- discuss dielectric loss
+- discuss Purcell loss
+- discuss resistive loss
+- characterize dephasing
+- measure T2e
+- discuss 1/f flux noise
+- introduce fast single-cycle flux gates
+- describe control scheme
+- idealize Hamiltonian
+- describe pulse protocol
+- show pulse diagram
+- explain gate operations
+- characterize gate fidelities
+- perform randomized benchmarking
+- perform interleaved randomized benchmarking
+- extract gate infidelities
+- discuss gate error sources
+- describe experimental setup
+- show wiring configuration
+- describe device fabrication
+- deconstruct single-qubit gates
+- define experimental demonstration
+- derive zero-flux-pulse construction
+- motivate π/2 rotation about Y-axis
+- construct Y/2 and Z/2 gates
+- summarize Clifford gate lengths and fidelities
+- derive fluxonium matrix elements
+- describe reset protocol
+- explain plasmon-assisted readout
+- model fluxonium relaxation
+- derive decay rates using Fermi's golden rule
+- relate noise spectral density to qubit depolarization rate
+- describe detailed balance of noise spectral density
+- relate fluxonium matrix elements to charging energy
+- introduce relaxation from flux noise
+- derive decay rate from current noise
+- derive decay rate from 1/f flux noise
+- discuss suppression of 1/f noise induced decay
+- introduce relaxation from radiation loss to the charge line
+- derive decay rate from radiative loss
+- discuss upper-bound for resistance R
+- introduce relaxation from dielectric loss in the capacitor
+- derive decay rate from dielectric loss
+- discuss T1 limit from dielectric loss
+- introduce relaxation from dielectric loss in the inductor
+- derive decay rate from inductive loss
+- discuss T1 limit from inductive loss
+- introduce relaxation rate due to the Purcell effect
+- model interaction between bath and resonator
+- derive transition rate under perturbation
+- discuss total transition rate
+- define thermal probability of occupying initial configuration
+- derive expressions for upward and downward transitions
+- discuss Purcell loss in dispersive regime
+- define total transition rate due to Purcell effect
+- discuss modeling of fluxonium dephasing
+- introduce decay envelope of Ramsey experiment
+- discuss spin-echo experiments
+- fit data to product of gaussian and exponential
+- define T2e
+
+## CONCLUSION
+
+- summarize heavy-fluxonium qubit
+- highlight advantages and applications
+
+## COMBINATION OF FEATURES
+
+- introduce method for initializing quantum system
+- specify qubit type
+- specify energy dissipater type
+- describe exciting quantum system
+- describe coupling quantum system
+- specify qubit transition frequency
+- describe threading flux qubit with magnetic flux
+- specify magnetic flux value
+- describe simultaneous threading, exciting, and coupling
+- specify duration of threading, exciting, and coupling
+- describe transferring quantum system with pi pulse
+- specify pi pulse frequency
+- describe preparing quantum system in thermal mixed state
+- describe cryogenically cooling quantum system
+- describe qubit metastable state occupation
+- repeat method for initializing quantum system
+- specify qubit type
+- specify energy dissipater type
+- describe exciting quantum system
+- describe coupling quantum system
+- specify qubit transition frequency
+- describe threading flux qubit with magnetic flux
+- specify magnetic flux value
+- describe simultaneous threading, exciting, and coupling
+- specify duration of threading, exciting, and coupling
+- describe transferring quantum system with pi pulse
+- specify pi pulse frequency
+- describe preparing quantum system in thermal mixed state
+- describe cryogenically cooling quantum system
+- describe qubit metastable state occupation
+- introduce method for measuring qubit state
+- specify qubit type
+- describe coupling quantum system
+- describe dispersively reading qubit state
+- introduce method for rotating flux qubit
+- describe applying pulses to rotate Bloch vector
+- describe idling and applying second pulse
+

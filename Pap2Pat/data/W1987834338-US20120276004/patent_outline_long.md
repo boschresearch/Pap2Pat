@@ -1,0 +1,198 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate early cancer detection
+- describe MDSC role in cancer
+- summarize MDSC mechanisms
+- highlight need for MDSC identification
+
+## SUMMARY
+
+- introduce MDSC identification method
+- describe MDSC detection in cell samples
+- outline cancer treatment based on MDSC detection
+- provide alternative cancer treatment method
+- describe method for treating responsive patients
+- outline method for detecting cancer presence
+- describe method for determining treatment efficacy
+- introduce method for generating human MDSC
+
+## DETAILED DESCRIPTION
+
+- define singular and plural forms
+- define "comprising"
+- define "consisting essentially of"
+- define "consisting of"
+- specify numerical designations
+- specify "effective amount"
+- specify "therapeutically effective amount"
+- define "treating" or "treatment"
+- describe beneficial or desired results
+- introduce methods for cancer detection
+- identify MDSC by expression of CD33, CD14, CD66b, or CD11b and HLA-DR
+- describe MDSC phenotypes
+- specify CD11b protein sequence
+- specify CD33 protein sequence
+- specify CD14 protein sequence
+- specify CD66b protein sequence
+- describe methods for determining cancer presence
+- describe methods for monitoring cancer progression
+- describe methods for aiding in cancer diagnosis
+- describe methods for monitoring cancer relapse
+- describe methods for monitoring response to cancer therapy
+- describe methods for cancer staging
+- specify transcription factors
+- describe methods for determining tumor malignancy
+- describe methods for monitoring cancer prognosis
+- specify STAT3 protein sequence
+- describe STAT3 function
+- specify HIF1α protein sequence
+- describe HIF1α function
+- specify C/EBPβ protein sequence
+- describe C/EBPβ function
+- define HLA-DR protein sequence
+- introduce GenBank DNA accession numbers
+- describe antibody preparation
+- motivate polypeptide immunization
+- summarize antibody purification
+- describe antibody making methods
+- introduce monoclonal antibodies
+- motivate commercial antibody sources
+- describe diagnostic and prognostic methods
+- motivate cancer detection
+- introduce flow cytometry and other detection methods
+- describe cancer types
+- motivate malignant lymphoma
+- define tumor and histogenesis
+- describe neoplasm classification
+- motivate suppressing tumor growth
+- describe culturing and expanding cells
+- introduce mature cell neoplasm and T or natural killer cell neoplasm
+- describe sample sources and MDSC generation methods
+- describe methods for identifying suppression agonist
+- describe methods for identifying suppression antagonist
+- describe methods for treating cancer
+- describe cancer therapeutics
+- list chemotherapeutic compounds
+- describe DNA alkylating agents
+- describe platinum-based compounds
+- describe oxaliplatin
+- describe topoisomerase inhibitors
+- list topoisomerase I inhibitors
+- describe campothecine derivatives
+- describe protobereberine alkaloids
+- describe phenanthroline derivatives
+- describe terbenzimidazole derivatives
+- describe anthracycline derivatives
+- describe topoisomerase II inhibitors
+- describe dual topoisomerase I and II inhibitors
+- describe lapatinib
+- describe chemical equivalents of lapatinib
+- describe biological equivalents of lapatinib
+- list examples of tyrosine kinase inhibitors
+- define therapeutic agents
+- list endoplasmic reticulum stress inducing agents
+- describe antimetabolite agents
+- list folic acid based antimetabolite agents
+- list purine based antimetabolite agents
+- list pyrimidine based antimetabolite agents
+- describe fluorouracil (5-FU)
+- list chemical equivalents of 5-FU
+- describe leucovorin (Folinic acid)
+- list vincalkaloids
+- list taxanes
+- list epothilones
+- list enzyme inhibitors
+- list tyrosine kinase inhibitors
+- describe PTK/ZK
+- list chemotherapeutic agents and combination therapies
+- describe therapeutic antibodies
+
+### Formulations
+
+- introduce pharmaceutical compositions
+- describe administration routes
+- detail oral administration
+- describe composition forms
+- explain inhalation administration
+- describe nebulizer devices
+- describe metered dose inhalers
+- describe dry powder inhalers
+- discuss bioavailability
+- describe nanoparticle formulations
+- discuss ocular administration
+- describe vehicles for ocular administration
+- list solid pharmaceutical excipients
+- list liquid and semisolid excipients
+- describe compressed gases
+- discuss formulation concentrations
+- describe transdermal administration
+- describe transdermal reservoirs
+- describe transdermal devices
+- describe intranasal administration
+- describe intranasal formulations
+- describe inhalation formulations
+- discuss animal models
+- describe human treatment methods
+- discuss detecting clinical evidence
+- describe treating diseases
+- describe administering to animals
+- describe determining prognosis
+- describe diagnostic kits
+- describe gene chips and microarrays
+
+### EXAMPLES
+
+- introduce cell lines and cell culture
+- describe cell line authenticity
+- outline cell culture conditions
+- introduce tumor associated MDSC generation protocol
+- induce MDSC generation
+- describe co-culture conditions
+- outline PBMC isolation
+- describe tumor cell seeding
+- outline induction negative control
+- describe neutralization experiments
+- isolate MDSC
+- describe MDSC isolation method
+- outline suppressive function assay
+- describe T cell stimulation
+- characterize myeloid suppressor cells
+- analyze morphology of MDSC
+- examine cell phenotypes by flow cytometry
+- analyze gene expression by real-time RT-PCR
+- perform statistical analysis
+- introduce tumor-associated human myeloid suppressor cells
+- describe protocol for generation of tumor cell line educated-CD33+ human MDSC
+- summarize controls run for each donor
+- describe use of irradiated tumor cells in co-cultures
+- describe generation of tumor cell line educated-CD11b+ human MDSC
+- identify subset of human tumor cell lines with strong myeloid suppressor cell induction capability
+- describe testing of human solid tumor cell lines for MDSC induction
+- categorize CD33+ cells from tumor co-cultures
+- describe correlation of MDSC-induction capacity with tumor cell line expression
+- examine expression of putative MDSC-inducing immune modulatory factors
+- confirm differential gene expression at protein level
+- describe suppressive capability of HNSCC induced CD33+ MDSC
+- evaluate IFNγ production in MDSC suppression assays
+- compare suppressive capability of HNSCC induced CD33+ MDSC
+- describe preferential induction of CD11b+ MDSC by human cancer cell lines
+- evaluate suppressive function of CD11b+ cells from breast cancer cell line-PBMC co-cultures
+- describe morphology of human CD33+ and CD11b+ suppressor cells
+- compare morphology of suppressive tumor-co-cultured CD33+ and CD11b+ populations
+- describe phenotype of MDSC
+- examine expression of proposed MDSC and mature innate immune cell markers
+- describe correlation of CD11b expression levels with suppressive function
+- describe over-expression of iNOS, TGFβ, NOX2, VEGF, and ARG-1
+- examine expression of putative suppression genes in tumor-induced MDSC
+- compare expression levels in normal, non-suppressive CD33+ myeloid cells
+- describe use of specific inhibitors of ARG-1, iNOS, NOX2, VEGF, or TGFβ1
+- describe siRNA knockdown of individual suppression genes
+- compare ARG-1, iNOS, and NOX2-component NCF1 gene expression in CD33+ and CD11b+ human MD
+- describe higher Hif1α, STAT3, and C/EBPβ gene expression in tumor cell line-induced human MDSC
+- examine expression of HIF1α, STAT3, and C/EBPβ in tumor cell line-induced human MDSC
+- describe treatment of MDSC with lipopolysaccharide
+- describe gene expression patterns in ATRA, Sunitinb, or CXB-treated CD33+ or CD11b+ human MDSC
+- describe correlation of inhibition of human MDSC with decreased transcription of key genes
+

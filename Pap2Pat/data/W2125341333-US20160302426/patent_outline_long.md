@@ -1,0 +1,220 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND OF THE INVENTION
+
+- describe plant diseases
+
+## SUMMARY OF THE INVENTION
+
+- provide method of propagating bacteriophage
+- infect Xanthomonas bacteria with bacteriophage
+- isolate bacteriophage particles
+- use surrogate host to enrich for virulent bacteriophage
+- provide method of obtaining candidate biocontrol agent
+- contact X. fastidiosa and Xanthomonas with sample
+- isolate bacteriophage capable of lysing bacteria
+- use agar overlaying for growth of bacteriophage
+- provide method of preventing or reducing symptoms
+- contact plant with bacteriophage
+- introduce bacteriophage into plant
+- select plant from group of plants
+- introduce bacteriophage via injection or insect vector
+- provide plant disease biocontrol composition
+- formulate composition for delivery to plant
+- provide method of obtaining candidate biocontrol agent for citrus canker
+- contact Xanthomonas axonopodis with sample
+- isolate bacteriophage capable of lysing bacteria
+- provide method of preventing or reducing symptoms of citrus canker
+- contact plant with bacteriophage
+- introduce bacteriophage into plant
+- select plant from group of citrus plants
+- provide isolated bacteriophage virulent to Xanthomonas axonopodis
+- deposit bacteriophage under ATCC Accession Number
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define terms
+- introduce bacteriophage propagation and isolation
+- describe surrogate host approach
+- detail bacteriophage isolation by soft agar overlay method
+- describe high-titer phage plate lysates preparation
+- outline CsCl centrifugation purification
+- explain dialysis of extracted phage solution
+- describe preferred ratio for filtration
+- introduce methods for detection and propagation of bacteriophage
+- describe characteristics of virulent bacteriophages
+- detail control of plant diseases caused by X. fastidiosa
+- describe Pierce's Disease symptoms
+- introduce insect vectors of X. fastidiosa
+- describe current limitations of PD control
+- introduce bacteriophage-based control strategy
+- describe identification and propagation of virulent phages
+- detail production and delivery of bacteriophage
+- describe phage infection via recognition of receptors
+- introduce type IV pili as receptors
+- describe host cells for bacteriophage propagation
+- detail Xanthomonadaceae family hosts
+- list exemplary X. fastidiosa strains
+- list exemplary Xanthomonas strains
+- define isolation of an organism
+- describe general laboratory methods for isolating bacteriophage
+- introduce method of propagating a virus (bacteriophage)
+- describe soft agar overlay method for bacteriophage preparation
+- detail high-titer phage plate lysates preparation
+- outline CsCl centrifugation purification
+- explain dialysis of extracted phage solution
+- describe preferred ratio for filtration
+- introduce method of treating or reducing symptoms associated with X. fastidiosa and/or Xa
+- describe administering bacteriophage to a plant
+- detail treatment of plants for infection
+- define treatment, treating, and treat
+- introduce plant disease biocontrol composition
+- describe composition comprising at least one carrier and bacteriophage
+- detail virulent bacteriophage characteristics
+- describe Xfas100 and Xfas300 phage types
+- introduce combination of phage as an active ingredient
+- describe carriers for phage administration
+- detail excipients and protective agents
+- describe phage concentration and dosage
+
+## DEPOSIT INFORMATION
+
+- provide deposit details
+
+### EXAMPLES
+
+- introduce examples of preferred embodiments of the invention
+- describe media, culture conditions, and bacterial strains used
+- specify PW broth medium and its modifications
+- describe TN broth medium and its modifications
+- list California X. fastidiosa isolates used in the study
+- list Texas X. fastidiosa isolates used in the study
+- describe single-colony purification of isolates
+- describe storage of isolates at -80° C
+- confirm X. fastidiosa isolates at species and subspecies level using PCR
+- identify Xanthomonas species using MIDI Sherlock Microbial Identification System
+- describe processing of plant samples and isolation of bacteria
+- obtain plant extracts using mortar and pestle
+- describe dilution plating to isolate X. fastidiosa and non-X. fastidiosa bacteria
+- incubate plates at 28° C for up to 10 days
+- describe isolation, purification, and titration of bacteriophage from plant samples
+- obtain plant tissue filtrates (PTFs) by centrifugation and filtration
+- detect bacteriophage in PTFs using spot test on X. fastidiosa and Xanthomonas species hosts
+- enrich bacteriophage from PTFs using X. fastidiosa or Xanthomonas species hosts
+- determine presence of bacteriophage in enriched supernatants
+- make soft agar overlays to survey bacterial supernatants for bacteriophage activity
+- excise and plaque-purify individual plaques
+- titer individual plaques to obtain clonal isolates
+- describe host range studies using X. fastidiosa and Xanthomonas species hosts
+- enrich bacteriophage from wastewater samples
+- isolate and characterize bacteriophage Xfas106-109 and Xfas306
+- describe CsCl-purification of bacteriophage
+- perform transmission electron microscopy (TEM) of CsCl-purified bacteriophage
+- determine efficiency of plating (EOP) of bacteriophage on X. fastidiosa and Xanthomonas species hosts
+- study host range of bacteriophage using X. fastidiosa and Xanthomonas species hosts
+- identify type IV pili as primary site of attachment for Xfas phages
+- evaluate XF15ΔpilA mutant as host for Xfas phages
+- evaluate EC-12ΔpilA mutant as host for Xfas phages
+- demonstrate that type IV pili are required for Xfas phage adsorption
+- isolate bacteriophage DNA
+- sequence bacteriophage genome
+- assemble sequence data
+- predict protein coding regions
+- identify conserved domains
+- classify phage types
+- describe Xfas100 phage type
+- describe Xfas300 phage type
+- inoculate grapevines with bacteriophage
+- challenge grapevines with X. fastidiosa
+- evaluate bacteriophage movement
+- evaluate bacteriophage persistence
+- evaluate therapeutic potential
+- inoculate grapevines with bacteria
+- challenge grapevines with bacteriophage
+- evaluate bacteriophage treatment
+- evaluate preventative potential
+- collect and process vine samples
+- extract bacteriophage DNA
+- extract bacterial DNA
+- treat samples with PMA
+- exclude dead cells from assays
+- develop standard curves
+- assay vine tissue extracts
+- quantify bacteriophage population
+- quantify bacterial population
+- evaluate bacteriophage replication
+- evaluate bacteriophage decline
+- evaluate PD symptoms
+- evaluate bacteriophage treatment efficacy
+- evaluate prophylactic potential
+- confirm bacteriophage safety
+- describe bacteriophage Xfas304
+- describe X. fastidiosa strains
+- describe grapevine cultivation
+- describe inoculation protocols
+- describe qRT-PCR analysis
+- summarize challenge study results
+- introduce real-time PCR detection of X. fastidiosa and bacteriophage Xfas304
+- describe PCR conditions and primers used
+- outline master mix composition and cycling parameters
+- explain Ct value determination and standard curve construction
+- calculate PCR efficiency
+- introduce lysogen formation assay studies
+- describe phage infection and plating procedures
+- outline primer pairs used for prophage sequence detection
+- test for abortive lysogeny
+- calculate MOIactual and predicted proportion of uninfected cells
+- examine potential for lysogeny
+- test for phage resistance
+- introduce phage cocktail protection and prevention studies
+- describe bacterial strains and phage preparation
+- outline grapevine inoculation and phage cocktail treatment
+- describe sample collection and processing
+- outline qRTPCR protocol
+- determine phage and pathogen distribution in grapevines
+- examine movement of X. fastidiosa and disease development
+- quantify phage movement and persistence in grapevines
+- evaluate therapeutic efficacy of phage against X. fastidiosa
+- describe prophylactic efficacy of cocktail treatment
+- examine persistence and replication of phages in grapevines
+- quantify phage populations in presence or absence of hosts
+- confirm phage replication and maintenance in grapevines
+- demonstrate phage treatment prevents or reduces PD symptoms
+- show no adverse effect to treated plants
+- describe PMA treatment and qRTPCR protocol
+- outline phage-specific primers used
+- describe grapevine inoculation and sampling procedures
+- summarize results of phage cocktail treatment studies
+- introduce transmission of X. fastidiosa by GWSS
+- describe experimental design
+- detail bacterial strains and inoculum preparation
+- describe plant growth conditions and preparation
+- introduce glassy-winged sharpshooter
+- detail uptake of X. fastidiosa and phage by GWSSs
+- describe experimental setup for uptake and transfer of phage by GWSSs
+- detail phage challenge of X. fastidiosa harboring GWSSs
+- describe collection and assay of cowpea cut stems and GWSSs
+- detail PMA treatment and qRTPCR
+- introduce phage activity against Xanthomonas axonopodis pv. Citri
+- describe sensitivity of Xac field strains to phages
+- detail 454 pyrosequencing of Xfas303 genome
+- identify type IV pili as primary receptor site for phage Xfas303
+- describe evidence for expression of type IV pili in Xac
+- detail light microscopy studies for twitching motility
+- describe results of twitching motility studies
+- discuss implications of results for phage biocontrol system
+- summarize uptake of X. fastidiosa and phage by GWSSs
+- summarize transfer of X. fastidiosa and phage by GWSSs
+- summarize phage challenge of X. fastidiosa harboring GWSSs
+- summarize results of phage activity against Xac
+- discuss significance of type IV pili in Xac infection
+- summarize evidence for expression of type IV pili in Xac
+- discuss implications of results for Xac pathogenesis
+- summarize results of twitching motility studies
+- discuss significance of results for phage biocontrol system
+- conclude with implications for sustainable phage biocontrol system
+

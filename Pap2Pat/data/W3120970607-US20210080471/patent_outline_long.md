@@ -1,0 +1,183 @@
+# DESCRIPTION
+
+## FIELD
+
+- introduce isotyping and quantification of antibodies
+
+## BACKGROUND
+
+- motivate concern of drug efficacy and patient safety
+- summarize FDA guidance on immunogenicity assessment
+- review clinical pharmacology of biologics
+- highlight limitations of current methods
+
+## SUMMARY
+
+- introduce characterization of anti-drug antibodies (ADAs)
+- motivate need for ADA characterization
+- summarize method of identifying peptides or proteins
+- describe contacting sample to solid support
+- describe washing solid support
+- describe isolating peptides or proteins
+- describe treating isolated peptides or proteins
+- describe identifying components using mass spectrometer
+- describe determining isotype or subclass
+- describe quantifying isolated peptides or proteins
+- describe pharmaceutical products
+- describe antibodies that selectively bind
+- describe human antibody isotypes
+- describe mammalian antibody isotypes
+- describe amino acid sequences
+- describe treating sample with solution
+- describe incubating sample with solid support
+- describe sample composition
+- describe washing solid support with mobile phase solution
+- describe denaturation solution composition
+- describe enzymatic digestion reaction
+- describe attaching pharmaceutical product to solid support
+- describe mass spectrometer capabilities
+- describe system for identifying or quantifying peptides or proteins
+- describe system components
+- describe system capabilities
+
+## DETAILED DESCRIPTION
+
+- motivate characterization of anti-drug antibodies (ADAs)
+- introduce demands for ADA characterization
+- describe limitations of existing methods
+- introduce methods and systems for ADA characterization
+- describe immunogenicity impacts on pharmacokinetics and efficacy
+- explain formation of ADAs during drug treatment
+- differentiate between neutralizing and non-neutralizing ADAs
+- define immunogenicity and its relevance
+- discuss clinical significance of ADAs
+- introduce immunoglobulins and their structure
+- describe isotypes of immunoglobulins
+- explain functions of different ADA isotypes
+- cite FDA guidance on ADA isotyping assays
+- introduce immunocapture and LC-MS methods for ADA isotyping and quantification
+- describe acid dissociation treatment of serum samples
+- explain immunocapture method using drug conjugated beads
+- describe LC-MS method for ADA isotyping and quantification
+- introduce LC-MRM-MS method for ADA isotyping and quantification
+- describe optimization of immunocapture and LC-MS methods
+- discuss advantages of LC-MS based method
+- introduce MRM based method for precise quantification of ADA isotypes
+- conclude with the development of an effective and sensitive method for ADA identification and quantification
+- define peptide or protein
+- define pharmaceutical product
+- define denaturation solution
+- describe protein pharmaceutical product
+- define antibody fragment
+- describe antibody-drug conjugate
+- define antibody
+- describe IgG
+- describe method of identifying and/or quantifying peptide or protein
+- describe peptide mapping
+- describe mass spectrometer
+- describe liquid chromatography
+- describe electrospray ionization
+- describe triple quadrupole mass spectrometer
+- describe tandem mass spectrometry
+- describe peptides as surrogate representatives of intact protein
+- describe protein characterization
+- describe sequencing amino acids of protein fragments
+- describe determining protein sequencing
+- describe determining protein de novo sequencing
+- describe locating post-translational modifications
+- describe identifying post-translational modifications
+- describe comparability analysis
+- describe determining isotype or subclass of isolated peptide or protein
+- define isotype or subclass
+- describe IgG subclasses
+- describe IgA subclasses
+- describe human antibody isotypes
+- describe monkey antibody isotypes
+- describe method of identifying and/or quantifying peptide or protein
+- describe conducting peptide mapping
+- describe selecting unique peptides and fragment ions
+- describe generating calibration curve
+
+### Exemplary Embodiments
+
+- introduce compositions, methods, and systems for identifying and quantifying isotypes or subclasses of antibodies
+- describe method of identifying and/or quantifying at least one peptide or protein in a sample
+- contact sample to solid support with attached pharmaceutical product
+- wash solid support using mobile phase solution to provide eluent
+- isolate peptide or protein from eluent
+- treat isolated peptide or protein with denaturation solution and/or enzymatic digestion reaction
+- identify components of isolated peptide or protein using mass spectrometer
+- treat sample with acidic solution prior to contacting solid support
+- specify pH range of acidic solution
+- list types of acidic solutions
+- incubate sample with solid support at room temperature
+- specify time periods for incubation
+- incubate sample with solid support at specific temperatures
+- specify time periods for incubation at specific temperatures
+- list types of solid supports
+- describe composition of sample
+- describe composition of mobile phase solution
+- specify concentration of denaturation solution
+- list types of denaturation solutions
+- specify amount of component of isolated peptide or protein
+- describe system for identifying or quantifying at least one peptide or protein in a sample
+- list components of system
+- describe capabilities of mass spectrometer
+- specify LLOQ
+- specify LOD and LOQ
+- describe non-limiting nature of system
+- incorporate cited references by reference
+- introduce examples
+- prepare materials and reagents
+- conjugate antibody drugs to magnetic beads
+- describe ADA positive control
+- describe instrument for peptide identification and quantification
+- select unique surrogate peptides to identify and quantify ADA isotype
+- describe considerations for selecting surrogate peptides
+- describe method for selecting surrogate peptides
+- develop LC-MRM-MS method to identify and quantify ADA isotypes
+- determine instrument detection limit
+- immunocapture ADAs using antibody drugs
+- introduce ADA-Std as positive control
+- compare recovery rates of ADAs using biotinylated drug-beads and cross-linked drug beads
+- show high recovery rates of ADAs using cross-linked drug-beads
+- optimize enzymatic digestion method
+- use denaturation solution to improve consistency and linearity of ADA identification and quantification
+- observe nonspecific interactions in serum
+- use ADA-Std to develop and optimize immunocapture and LC-MS assays
+- optimize incubation condition for immunocapture
+- reduce background noises by incubating at room temperature for 1 hour
+- optimize immunocapture by interrupting interactions in serum
+- add acidic solution to serum samples to reduce background noises
+- use Fab portions of IgG drugs to capture ADAs
+- reduce background noises for isotyping and identification of IgG4 ADAs
+- use Fab portions of IgG drugs to capture ADAs for IgM isotyping and quantification
+- determine low limit of quantitation (LLOQ)
+- outline preferred immunocapture and enzymatic methods
+- generate calibration curve for detection and quantification of ADAs
+- determine limit of detection (LOD) and limit of quantification (LOQ)
+- determine drug tolerance limit
+- assess assay tolerance to Drug A and Drug B
+- isotype and quantify ADAs in preclinical toxicology study in monkeys
+- monitor concentrations of drug B in serum samples of monkeys
+- measure total quantities of ADAs in monkeys A and B
+- compare test results of immunocapture-LC/MS method and LBA
+- isotype and quantify ADAs in monkeys A and B
+- determine relative quantifications of ADA isotypes
+- isotype and quantify ADAs in preclinical pharmacokinetic study in monkeys
+- monitor concentrations of drug A in serum samples of monkeys
+- measure total quantities of ADAs in monkeys A, B and C
+- determine relative quantifications of ADA isotypes
+- show level of total ADAs is subject dependent
+- determine IgG1 subtype of ADAs
+- contribute to elevated levels of total ADAs in monkey B
+- use immunocapture-LC/MS methods for isotyping and quantification of ADAs
+- use LC-MS analysis for isotyping and quantification of ADAs
+- use enzymatic digestion to generate peptides for LC-MS analysis
+- use acidic solution to reduce background noises
+- use Fab portions of IgG drugs to capture ADAs
+- reduce background noises for isotyping and identification of IgG4 ADAs
+- use immunocapture-LC/MS methods for isotyping and quantification of ADAs
+- determine relative quantifications of ADA isotypes
+- contribute to elevated levels of total ADAs in monkey B
+

@@ -1,0 +1,284 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce GI symptoms in ASD children
+- summarize studies on GI symptoms in ASD children
+- describe inflammatory pathology in ASD children
+- discuss features of GI disease in ASD children
+- analyze inflammatory infiltrate in mucosa
+- describe mucosal cytokine profiles in ASD children
+- distinguish lesions in ASD children from IBD
+- discuss disturbances in mucosal function
+- describe intestinal microflora in ASD children
+- summarize consensus report on GI disorders in ASD
+- discuss immunologic and inflammatory activity
+- describe molecular characterization of inflamed tissue
+- discuss gene expression profiling of biopsy-derived tissue
+- identify biomarker panel for distinguishing IBD
+- discuss need for molecular characterization of ASD children
+
+## SUMMARY OF THE INVENTION
+
+- introduce method of diagnosing GI disorder
+- describe measuring biomarker levels
+- detect polymorphisms in biological sample
+- introduce method of diagnosing ASD
+- describe kit for diagnosis of GI and/or ASD
+- provide additional embodiments of kit
+- discuss various embodiments of methods
+
+## DETAILED DESCRIPTION
+
+- introduce ASDIC markers
+- list methods using ASDIC biomarkers
+- discriminate inflammatory disorders
+- diagnose ASD-associated IBD variant
+- refine disease diagnosis and management
+
+### DEFINITIONS
+
+- define technical and scientific terms
+- introduce articles "a" and "an"
+- define "about" in measurable values
+- define "abnormal" in organisms and tissues
+- define "alteration" as increase or decrease
+- define "amplification" of polynucleotide sequences
+- define "analyte" as substance undergoing analysis
+- define "assessing" as measurement or determination
+- define "autism spectrum disorder (ASD)"
+- define "biomarker" as characteristic of biological process
+- define "capture reagent" as binding nucleic acid or polypeptide
+- define "decreases" as negative alteration
+- define "detect" as identifying presence or level
+- define "detectable" as moiety rendering molecule detectable
+- define "disease" as state of health with deteriorating condition
+- define "disorder" as state of health with less favorable condition
+- define "alleviated" as reduced severity of disease or disorder
+- define "effective amount" of compound as beneficial effect
+- define "encoding" as property of nucleotide sequences
+- define "expression" as transcription and translation
+- define "fragment" as portion of polypeptide or nucleic acid molecule
+- define "genotype" as genetic composition
+- define "IGF2BP1 nucleic acid molecule" as polynucleotide encoding IGF2BP1
+- define "IL2RA nucleic acid molecule" as polynucleotide encoding IL2RA
+- define "TNFRSF12A nucleic acid molecule" as polynucleotide encoding TNFRSF12A
+- define "increases" as positive alteration
+- define "instructional material" as publication or recording
+- define "marker" and "epigenetic marker" as distinguishing substance
+- define "marker profile" as characterization of expression levels
+- define "measuring" or "detection" as assessing presence or level
+- define "patient", "subject", "individual" as animal or cells
+- define "nucleic acid or oligonucleotide probe" as binding target sequence
+- define "polynucleotide" as chain of nucleotides
+- define "protein" or "peptide" as compound of amino acid residues
+- define "quantitative trait" as phenotype attributed to genes
+- define "quantitative trait locus (QTL)" as DNA sequence regulating trait
+- define "expression quantitative trait loci (eQTLs)" as genomic loci regulating expression
+- define "reference" as standard or control condition
+- define "sample" or "biological sample" as biological material
+- define "single nucleotide polymorphism (SNP)" as DNA sequence variation
+- define "specifically binds" as compound or antibody recognizing polypeptide
+- define "substantially identical" as polypeptide or nucleic acid molecule with high identity
+- define "target nucleic acid molecule" as nucleic acid or biomarker to be detected
+- define "therapeutic" treatment as diminishing or eliminating sign or symptom
+- define "treating a disease or disorder" as preventing or alleviating sign or symptom
+- define "therapeutically effective amount" as preventing or treating disease or disorder
+- define "variant" as polynucleotide or polypeptide sequence differing from wild-type
+- define "hybridize" as pairing to form double-stranded molecule
+- define "stringency" conditions for hybridization and washing steps
+
+### DESCRIPTION
+
+- relate invention to ASD-associated inflammatory disorder
+- compare gene expression profiles in GI symptomatic ASD children and non-ASD control groups
+- identify biomarkers for ASD-associated inflammatory disorder screening and diagnosis
+- describe potential pharmaceutical targets
+- outline method of screening for Autism Spectrum Disorder
+- obtain nucleic acid sample from cells of a patient
+- perform nucleic acid analysis to obtain gene expression analysis data set
+- compare data set to control data set corresponding to gene ensemble of differentially expressed genes
+- indicate autism spectrum disorder upon observing statistically significant differential gene expression
+- obtain nucleic acid sample from cells of the gastrointestinal tract of a patient
+- observe expression profile of at least 2, 3, 4, 5, 6, 7, 8, 9 or
+- 10 genes whose expression is shown to be dysregulated in autism spectrum disorders
+- perform method on a plurality of individuals and categorize based upon similarities or differences in their gene expression profiles
+- observe and/or collect and/or store expression profile(s) using a computer system
+- create electronically searchable library of profiles
+- include individual's gene expression data in combination with other diagnostic data
+- relate invention to one or more biomarkers of ASD
+- detect differentially expressed transcripts (DETs) in samples obtained from subjects with ASDIC
+- compare to samples obtained from non-disease control subjects, subjects with Crohn's disease, or subjects with ulcerative colitis
+- detect biomarker to have decreased expression in a subject with ASD compared to a control sample
+- detect biomarker to have increased expression in a subject with ASD compared to a control sample
+- list biomarkers in Table 6
+- list biomarkers in Table 9
+- use biomarker to detect a gastrointestinal disorder and/or autism spectrum disorder in a subject
+- describe altered gene expression of transcripts indicating presence of a gastrointestinal disorder in ASD individuals
+- capture biomarkers on a biochip array
+- detect analytes by a variety of detection methods
+- use mass spectrometry, and in particular, SELDI
+- use optical methods, including fluorescence, luminescence, chemiluminescence, absorbance, reflectance, transmittance, birefr
+- use electrochemical methods, including voltametry and amperometry
+- use radio frequency methods, including multipolar resonance spectroscopy
+- perform quantitative MS to measure serum peptide marker
+- perform MS in an automated or semi-automated format
+- link MS to a liquid chromatography device or gas chromatography device
+- measure multiple markers
+- use pattern recognition to detect patterns formed by multiple markers
+- correlate expression levels of particular nucleic acids or polypeptides with a gastrointestinal disorder and/or autistic spectrum disorder
+- measure levels of polypeptide using immunoassay, ELISA, western blotting and radioimmunoassay
+- use oligonucleotides or longer fragments derived from a nucleic acid sequence
+- use antibodies that bind a polypeptide
+- monitor expression of a polynucleotide or polypeptide of interest
+- correlate a 1.5, 2, 3, 4, 5, or 6-fold change in the level of a marker
+- inform treatment selection based on diagnosis
+- treat with corticosteroids, immunomodulators, 5-aminosalicylic acid preparations, cytokine specific antagonists, dietary restrictions
+- treat with antimicrobials, probiotics, and supplemental digestive enzymes
+- target therapies that decrease or eliminate the expression of any of the nucleic acid molecules or polypeptides
+- use combination of markers to provide greater predictive value than single markers alone
+- describe PCR method
+- introduce thermostable DNA polymerase
+- define 3′→5′ exonuclease activity
+- list examples of proofreading enzymes
+- describe long range PCR
+- introduce sequencing
+- describe Sanger method
+- describe pyrosequencing
+- introduce real-time PCR
+- describe 5′ nuclease probes
+- describe TaqMan probes
+- describe molecular beacons
+- describe FRET hybridization probes
+- introduce primer extension
+- describe RFLP
+- introduce mass spectrometry
+- describe ESI
+- describe ESI/MS/MS
+- describe SIMS
+- describe LD-MS
+- describe LDLPMS
+- describe MALDI-TOF-MS
+- introduce hybridization
+- define hybridization
+- describe high stringency conditions
+- describe medium stringency conditions
+- describe low stringency conditions
+- describe label detection
+- describe fluorescent label
+- describe enzyme tag
+- describe solid phase hybridization
+- describe solution hybridization
+- introduce kits
+- describe kit components
+- describe capture reagent
+- describe primer or probe
+- describe enzymes for amplification
+- describe dNTPs/rNTPs and buffers
+- describe labeled deoxynucleotides
+- describe detection reagents
+- describe associated instructions
+- describe treatment agents
+- describe carrier means
+- describe container means
+- describe packaging
+
+## EXPERIMENTAL EXAMPLES
+
+- introduce experimental examples
+
+### Example 1
+
+- introduce ASDIC study
+- describe study design
+- present subject demographics
+- outline case selection and biopsy procurement
+- describe control biopsy procurement
+- detail microarray and data analysis
+- explain sample preparation
+- describe microarray hybridization
+- outline qPCR validation
+- present data analysis methods
+- describe pair-wise analysis
+- outline principal component analysis
+- explain hierarchical clustering analysis
+- describe expression quantitative trait loci analysis
+- present demographics of cases and controls
+- describe ASDIC samples
+- describe non-ASD samples
+- outline principal component analysis results
+- describe ileal mucosa gene expression profiles
+- describe colonic mucosa gene expression profiles
+- outline pairwise comparisons
+- describe IPA analysis
+- present diseases and disorders findings
+- present physiological system development and function findings
+- present top canonical pathway involvement findings
+- describe differentially-expressed transcripts in ileal mucosa
+- describe differentially-expressed transcripts in colonic mucosa
+- outline validation of microarray results
+- describe qPCR validation results
+- present eQTL analysis results
+- describe functional enrichment analysis
+- present gene ontology analysis results
+- describe pathway analysis results
+- outline transcription factor analysis
+- present biological function analysis results
+- summarize study findings
+- analyze DETs in ASDIC ileal mucosa
+- identify down-regulated and up-regulated genes
+- associate with gastrointestinal disease and inflammatory response
+- associate with humoral immune response and tissue morphology
+- associate with digestive system development and function
+- identify canonical pathways
+- analyze DETs in Crohn's disease ileal mucosa
+- associate with inflammatory disease and immune response
+- associate with immune cell trafficking and cell-mediated immune response
+- identify canonical pathways
+- analyze DETs in ulcerative colitis ileal mucosa
+- associate with cardiovascular disease and connective tissue disorders
+- associate with nervous system development and function
+- identify canonical pathways
+- analyze DETs in ASDIC colonic mucosa
+- associate with gastrointestinal disease and neurological disease
+- associate with behavior and organ development
+- identify canonical pathways
+- analyze DETs in Crohn's disease and ulcerative colitis colonic mucosa
+- introduce ulcerative colitis group
+- compare inflamed colonic mucosa with non-inflamed mucosa
+- analyze down-regulated transcripts
+- analyze up-regulated transcripts
+- identify diseases and disorders
+- identify physiological system development and function
+- identify significant canonical pathways
+- compare DETs in ASDIC sub-groups
+- identify DETs unique to ASDIC cases
+- analyze biological functions
+- identify significant metabolic and signaling pathways
+- verify transcripts by quantitative real-time PCR
+- compare gene expression profiles in ASDIC cases
+- identify DETs unique to LNH+ileitis group
+- analyze diseases and disorders
+- analyze physiological system development and function
+- identify significant canonical pathways
+- characterize inflamed GI biopsy tissue
+- distinguish ASDIC from non-inflamed controls
+- compare ASDIC with IBD and non-inflamed controls
+- analyze overlap between ASDIC and IBD gene expression profiles
+- identify unique DETs in ASDIC tissue
+- analyze gene expression in terminal ileum mucosal tissue
+- analyze gene expression in colonic mucosal tissue
+- identify disease categories and biological pathways
+- analyze impact of ileitis on gene expression in ASDIC cases
+- identify DETs unique to LNH+ileitis samples
+- analyze biological pathways
+- summarize gene expression patterns
+- analyze relationships between DETs
+- discuss methodological aspects
+- compare with previous reports
+- discuss factors influencing gene expression
+- analyze distribution of gene expression profiles
+- discuss underlying inflammatory process
+- compare eQTL in ASD associated ileocolitis and IBD
+- identify eQTL associations in terminal ileum and colon tissues
+

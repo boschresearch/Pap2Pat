@@ -1,0 +1,127 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE DISCLOSURE
+
+- describe limitations of imaging techniques
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce image guidance method
+- receive first image data set
+- generate model of anatomical target
+- generate model of spine
+- receive fluoroscopic image
+- generate mask of spine
+- generate model of medical device
+- determine transformation between coordinate systems
+- register medical device with anatomical target
+- generate output image
+- describe variations of method
+
+## DETAILED DESCRIPTION
+
+- introduce system overview
+- describe system components
+- illustrate system architecture
+- introduce guidance system
+- describe model generator
+- generate virtual models
+- introduce segmentation engine
+- segment image data
+- identify universal fiducial marker
+- introduce registration engine
+- determine transformation
+- co-register image data
+- introduce motion correction engine
+- correct for motion artifacts
+- identify time points
+- capture images during inter-beat interval
+- introduce display generator
+- generate virtual models
+- register medical device position
+- generate 2D or 3D image
+- introduce database
+- store models
+- store masks
+- store transformation data structures
+- store image data sets
+- store training library
+- introduce first imaging device
+- capture pre-operative images
+- capture 3D images
+- introduce second imaging device
+- capture intra-operative images
+- capture 2D images
+- include metadata
+- mount fluoroscopic imaging device
+- capture images from different angles
+- introduce display system
+- describe display types
+- illustrate catheter example
+- describe catheter dimensions
+- describe radiopaque marker
+- illustrate radiopaque marker
+- describe pitch angle calculation
+- describe roll calculation
+- describe yaw angle calculation
+- illustrate ring radiopaque markers
+- describe position determination
+- illustrate image data sets
+- describe model generation
+- describe segmentation process
+- describe post-processing
+- illustrate fluoroscopic image
+- describe spine segmentation
+- describe machine learning algorithm
+- describe medical device position determination
+- describe 3D position calculation
+- illustrate medical device detection
+- describe region of interest
+- describe edge detection
+- describe gradient calculation
+- describe peak detection
+- describe center line identification
+- describe region of interest advancement
+- describe center line generation
+- illustrate center line
+- describe image processing
+- describe object identification
+- describe model reconstruction
+- describe model refinement
+- illustrate fluoroscopic image alignment
+- generate mask of spine
+- illustrate 3D model of spine and target
+- describe 2D projection of 3D model
+- derive transformation matrix
+- describe Fourier transformation
+- describe polar-logarithmic transformation
+- describe phase correlation method
+- describe registration engine with machine learning algorithm
+- illustrate block diagram of image guidance method
+- receive image data of first modality
+- generate models from received image data
+- receive image data of second modality
+- generate masks
+- determine transformation
+- register models based on transformation
+- generate output image
+- describe receiving image data
+- describe generating models
+- describe receiving image data of second modality
+- describe generating masks
+- describe determining transformation
+- describe registering models
+- describe generating output image
+- describe generating 2D projection
+- describe generating 3D models
+- describe generating masks
+- describe determining location of medical device
+- describe determining transformation
+- describe registering models
+- describe generating output image
+- describe generating secondary view
+- describe operational information
+- describe system components
+- describe order of operations
+- describe scope of implementations
+

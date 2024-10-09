@@ -1,0 +1,345 @@
+{
+    "id": "US20220067284",
+    "authors": [
+        "Junxian He",
+        "Wojciech Kryscinski",
+        "Bryan McCann"
+    ],
+    "title": "SYSTEMS AND METHODS FOR CONTROLLABLE TEXT SUMMARIZATION",
+    "date": "2020-12-17 00:00:00",
+    "abstract": "Embodiments described herein provide a flexible controllable summarization system that allows users to control the generation of summaries without manually editing or writing the summary, e.g., without the user actually adding or deleting certain information under various granularity. Specifically, the summarization system performs controllable summarization through keywords manipulation. A neural network model is learned to generate summaries conditioned on both the keywords and source document so that at test time a user can interact with the neural network model through a keyword interface, potentially enabling multi-factor control.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "CROSS REFERENCE(S)",
+                    "paragraphs": [
+                        "This application is a nonprovisional of and claims priority under 35 U.S.C. 119 to U.S. provisional application No. 63/071,571, filed on Aug. 28, 2020, which is hereby expressly incorporated by reference herein in its entirety."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "claim priority"
+                    ],
+                    "num_characters": 227,
+                    "outline_medium": [
+                        "claim priority"
+                    ],
+                    "outline_short": [
+                        "claim priority"
+                    ]
+                },
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present disclosure relates generally to machine learning models and neural networks, and more specifically, to a controllable text summarization framework."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 159,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Text summarization compresses a document into a short paragraph or sentence as a \u201csummary\u201d of the document, while the summary is expected to preserve the core information from the document. Some existing summarization systems extracts important sentences from the document to form a summary, while some other existing summarization systems generate a summary from scratch by formulating sentences of their own choice. These summarization systems generate the summary solely depends on the input document, thus often resulting in one version of summary for the input document. The universal version of summary sometimes may fail to capture different interests of users who request the summary.",
+                        "In the figures and appendix, elements having the same designations have the same or similar functions."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate text summarization"
+                    ],
+                    "num_characters": 796,
+                    "outline_medium": [
+                        "motivate text summarization"
+                    ],
+                    "outline_short": [
+                        "motivate text summarization"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "Existing summarization systems often generate the summary solely depends on the input document, thus often resulting in one version of summary for the input document. The universal version of summary sometimes may fail to capture different interests of users who request the summary. For example, if the document includes a news article on sports news, a user may want the summary to focus on a specific player, or summaries of different lengths given the user's interest or available time. The user preference to different versions of the summary can be extended to other controlling factors such as topics or certain sections (when summarizing scientific papers or books) as well.",
+                        "In view of the need to generate customized summary of a document that reflects user preference, embodiments described herein provide a flexible controllable summarization system that allows users to control the generation of summaries without manually editing or writing the summary, e.g., without the user actually adding or deleting certain information under various granularity. Specifically, the summarization system performs controllable summarization through keywords manipulation. A neural network model is learned to generate summaries conditioned on both the keywords and source document so that at test time a user can interact with the neural network model through a keyword interface, potentially enabling multi-factor control.",
+                        "For example, controllable summarization system allows the users to control and manipulate the summaries from the model. A user may enter control tokens in the form of a set of keywords or descriptive prompts via a user interface, which may be used to generate a customized summary that reflects the user preference of a source article. At training time, the model learns to predict summaries conditioned on both the source document and keywords that serve as external guidance. During inference, keywords and optional prompts (e.g., entered by a user), which are the target prefix to constrain decoding, are combined as control tokens to convey user preferences in summary generation.",
+                        "In one embodiment, the user of keywords and prompts may be complementary. For example, the user may enter or select entity names as keywords or vary the number of keywords to control entities and length respectively. A model may be trained using only keywords as additional input which can be identified from training summaries. The process requires neither extra human annotations nor pre-defining control aspects for training, yet is quite flexible to achieve a broad scope of text manipulation. In contrast, most existing summarization systems either do not allow user input to control the summarization process, or require pre-defined \u201ccontrol codes\u201d (see Fan et al., Controllable abstractive summarization, in Proceedings of the 2nd Workshop on Neural Machine Translation and Generation, 2018; Liu et al., Controlling length in abstractive summarization using a convolutional neural network, in Proceedings of EMNLP, 2018; Keskar et al., Ctrl: A conditional transformer language model for controllable generation. arXiv preprint arXiv:1909.05858, 2019, which are all hereby expressly incorporated by reference in their entirety), which in turn requires the system to collect annotations for training and cannot generalize to unseen control aspects such as different types of articles or different types of control commands at test time.",
+                        "As used herein, the term \u201cprompt\u201d is used to refer to pre-defined text sequences used as a target prefix to constrain decoding of the summarization system. For example, the prompt \u201cthe main contributions of this paper are: (1)\u201d may be used to constrain decoding for summarizing a list of contributions of scientific papers.",
+                        "As used herein, the term \u201cnetwork\u201d may comprise any hardware or software-based framework that includes any artificial intelligence network or system, neural network or system and/or any training or learning models implemented thereon or therewith.",
+                        "As used herein, the term \u201cmodule\u201d may comprise hardware or software-based framework that performs one or more functions. In some embodiments, the module may be implemented on one or more neural networks."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Controllable Summarization Overview",
+                            "paragraphs": [
+                                "FIG. 1A shows a block diagram illustrating an example neural network model diagram 100a of the summarization system, according to embodiments described herein. Traditionally, unconstrained neural summarization methods are trained to learn the conditional distribution p(y|x), where x and y represent a source document, such as an article and the summary, respectively. The generated summaries depend solely on the document x without human involvement. To control the output summaries, additional control tokens, such as the keywords z, may be used to represent user preferences. Thus, diagram 100a shows that at training stage, the neural network model for controllable summarization is learned to model the probability p(y|x, z), where x denotes the source document article 110, y denotes the generated summary 130, and z denotes the keywords 120 that are extracted from the article 110. Thus, the probability p(y|x, z) denotes the summary distribution conditioned on both the source document 110 and keywords 120.",
+                                "FIG. 1B shows a block diagram 100b illustrating a controlling workflow for the summarization system at test time, according to embodiments described herein. Diagram 100b shows that at inference stage, a keyword manipulation mechanism is used to bridge users and the keywords interface, referred to as the \u201ccontrol center\u201d 140. Specifically, keywords 120a are automatically extracted from the source document, e.g., article 110, which may be (optionally) presented to a user 150 at a user interface of the control center 140. Then the user 150 may interact with the automatic keywords 120a through the control center 140 to insert control tokens z.",
+                                "In one embodiment, the control tokens z may include keywords as extra inputs during training and inference. Control tokens can also optionally include prompts at test time to further constrain the decoding process. Control tokens z\u2014in the form of keywords, prompts, or a combination of both\u2014may act as an interface between users and an otherwise black-box neural model, providing a flexible way for users to explicitly control automatic summarization.",
+                                "For example, the user 150 may configure a target length (word limit) of the summary, prompting the control center 140 to remove a number of automatic keywords to generate a shorter summary. Or the control center 140 may choose to only keep certain entity-related keywords if the user 150 indicates interests in the particular entity name. In addition, the user 150 can also edit the customized keywords, which allows for more flexible customized summarization without the user manually editing the summary directly.",
+                                "FIG. 2 shows an example diagram illustrating the inference stage of a controllable summarization keywords-based model 230, according to embodiments described herein. FIG. 2 shows an NBA basketball news article 210, and the reference summary 215 describes several match results. However, fans of certain basketball stars in these teams such as Lebron James or Stephen Curry might only be interested in the matches they played and would like to know the player's scores as well. Thus, user 150 may provide such user preferences through control tokens 232 that may control the summary generation at the keywords-based model 230.",
+                                "Specifically, at training time, the keywords-based model may learn to predict summaries conditioned on both the source document and keywords that serve as external guidance. For example, a ground-truth summary may be used to identify keywords in the source document. In this example, the reference summary 215 may be used for training. In another example, a ground-truth summary that is customized to user preference on the user's interested player names such as \u201cDwyane Wade,\u201d \u201cJames\u201d or \u201cStephen Curry\u201d may be used for training with the source document 210.",
+                                "During inference, keywords and optional prompts, which are the target prefix to constrain decoding, are combined as control tokens 232 to convey user preferences. Specifically, the keywords provide a generic interface to control multiple aspects of summaries, which allows the user to optionally rely on automatically extracted keywords, user provided keywords, or a combination of both. This method provides clean separation of test-time user control and the training process, including pretraining. Consequently, the keyword-based model 230 can be adapted to new use cases without changing model parameters. For example, even if the keyword-based model 230 may not be trained during training to specifically focus on controlling entities or length.",
+                                "For example, keywords 225 may be input to the keywords-based model 230 during training and testing, while prompts 227 are optionally used at test time. The dashed lines represent optional paths where control tokens 232 may come from the source article 210, user 150, or both. The keywords-based model 230 may then generate different versions of summaries 235a-c, depending on different keywords 225 or prompts 227 during inference time."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce traditional unconstrained neural summarization methods",
+                                "describe controllable summarization system architecture",
+                                "explain probability distribution p(y|x, z)",
+                                "describe keyword extraction mechanism",
+                                "illustrate controllable summarization system workflow",
+                                "describe user interaction with control center",
+                                "explain control tokens and prompts",
+                                "describe flexibility of controllable summarization system",
+                                "illustrate example of controllable summarization system"
+                            ],
+                            "num_characters": 5012,
+                            "outline_medium": [
+                                "describe traditional unconstrained neural summarization",
+                                "introduce controllable summarization with keywords",
+                                "describe training stage of controllable summarization",
+                                "describe inference stage of controllable summarization"
+                            ],
+                            "outline_short": [
+                                "introduce controllable summarization model",
+                                "describe controllable summarization workflow"
+                            ]
+                        },
+                        {
+                            "title": "Computer Environment",
+                            "paragraphs": [
+                                "FIG. 3 is a simplified diagram of a computing device for implementing the summarization system, according to some embodiments. As shown in FIG. 3, computing device 300 includes a processor 310 coupled to memory 320. Operation of computing device 300 is controlled by processor 310. And although computing device 300 is shown with only one processor 310, it is understood that processor 310 may be representative of one or more central processing units, multi-core processors, microprocessors, microcontrollers, digital signal processors, field programmable gate arrays (FPGAs), application specific integrated circuits (ASICs), graphics processing units (GPUs) and/or the like in computing device 300. Computing device 300 may be implemented as a stand-alone subsystem, as a board added to a computing device, and/or as a virtual machine.",
+                                "Memory 320 may be used to store software executed by computing device 300 and/or one or more data structures used during operation of computing device 300. Memory 320 may include one or more types of machine readable media. Some common forms of machine readable media may include floppy disk, flexible disk, hard disk, magnetic tape, any other magnetic medium, CD-ROM, any other optical medium, punch cards, paper tape, any other physical medium with patterns of holes, RAM, PROM, EPROM, FLASH-EPROM, any other memory chip or cartridge, and/or any other medium from which a processor or computer is adapted to read.",
+                                "Processor 310 and/or memory 320 may be arranged in any suitable physical arrangement. In some embodiments, processor 310 and/or memory 320 may be implemented on a same board, in a same package (e.g., system-in-package), on a same chip (e.g., system-on-chip), and/or the like. In some embodiments, processor 310 and/or memory 320 may include distributed, virtualized, and/or containerized computing resources. Consistent with such embodiments, processor 310 and/or memory 320 may be located in one or more data centers and/or cloud computing facilities.",
+                                "In some examples, memory 320 may include non-transitory, tangible, machine readable media that includes executable code that when run by one or more processors (e.g., processor 310) may cause the one or more processors to perform the methods described in further detail herein. For example, as shown, memory 320 includes instructions for a control summarization module 330 that may be used to implement and/or emulate the systems and models, and/or to implement any of the methods described further herein. In some examples, the controllable summarization module 330, may receive an input 340, e.g., a source document. The data interface 315 may be any of a user interface that receives a user entered input, or a communication interface that may receive or retrieve a document from a database. The controllable summarization module 330 may generate an output 350, e.g., a summary.",
+                                "In some embodiments, the controllable summarization module 330 includes a keyword-based module 331, and a control center 332. For example, the keyword-based model 331 may be similar to model 230 in FIG. 2, which may employ different keywords extraction mechanisms at training and test time. In one implementation, the control center 332 may communicate with the data interface 315 and serve as a filter to select customized keywords from automatic keywords based on users' preference obtained from the data interface 315.",
+                                "In some examples, the controllable summarization module 330 and the sub-modules 331-232 may be implemented using hardware, software, and/or a combination of hardware and software."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe computing device architecture",
+                                "explain processor and memory components",
+                                "describe machine readable media",
+                                "illustrate computing device implementation",
+                                "describe controllable summarization module",
+                                "explain data interface and input/output",
+                                "describe sub-modules of controllable summarization module"
+                            ],
+                            "num_characters": 3596,
+                            "outline_medium": [
+                                "describe computing device architecture",
+                                "describe memory and storage",
+                                "describe controllable summarization module"
+                            ],
+                            "outline_short": [
+                                "describe computer environment for implementing summarization system"
+                            ]
+                        },
+                        {
+                            "title": "Controllable Summarization Work Flows",
+                            "paragraphs": [
+                                "FIG. 4 is a simplified logic flow diagram illustrating a method for training the keywords-based summarization model shown in FIG. 2, according to some embodiments described herein. One or more of the processes 402-412 of method 400 may be implemented, at least in part, in the form of executable code stored on non-transitory, tangible, machine-readable media that when run by one or more processors may cause the one or more processors to perform one or more of the processes 402-412. In some embodiments, method 400 may correspond to the method used by the module 330.",
+                                "At step 402, an input document (e.g., 210) and a ground-truth summary (e.g., 215) from a training dataset may be received, e.g., via the data interface 315.",
+                                "At step 404, sentences may be greedily selected from the document 210 that maximize the ROUGE scores with the reference summary 215. The ROUGE score maybe defined in (Lin, 2004), which is hereby expressly incorporated by reference herein in its entirety. This step constrains keywords to those found in important sentences.",
+                                "At step 406, all the longest sub-sequences are identified in the extracted sentences that have matched sub-sequences in the ground-truth summary. This matching step may be similar to the copying word recognition method described in Gehrmann et al., Bottom-up abstractive summarization, in Proceedings of EMNLP, 2018, which is hereby expressly incorporated by reference herein in its entirety.",
+                                "At step 408, duplicate words and stop words are removed from the sentences, and the remaining tokens are kept as keywords. Thus, compared to other existing keywords extraction methods which output only a few salient words, keyword extraction retains most content words found in the summary. This encourages dependence on the given keywords by building a reliable correlation between their presence in the input (e.g., the source article 210) and the target (e.g., the ground-truth summary). It in turn ensures that user-provided keywords are not ignored by the model at test time.",
+                                "At step 410, the generated keyword sequence is then prepended to the source document, separated with a special token, and fed to the summarization model. In one embodiment, the keyword sequence maintains the order of the keywords as they were in the source document. In another embodiment, the keyword sequence may adopt a different order of the keywords as this ordering may frequently differ between the source document and the target summary. Keywords may also be separated from different source sentences with the special token (\u201c|\u201d). In applications where the sentence boundary is unknown, e.g., when users propose their own keywords, the \u201c|\u201d token can be ignored.",
+                                "At step 412, the keywords-based model generates the probability distribution for a summary p(y|x, z) conditioned on the input document x and the keywords z. The summarization model is then trained to maximize p(y|x, z) in an end-to-end fashion. For example, the conditional probability distribution p(y|x, z) of generated summaries from the summarization model is compared with the ground-truth summary to compute a cross-entropy loss, which may be used to update the summarization model via backpropagation.",
+                                "In one embodiment, the keyword extraction strategy described in steps 404-408 may retain most words from the summary found in the source document. Without regularization, the dependence on such keywords is strong enough that the keyword-based summarization model 230 may rarely generate novel words in the summary. To remedy this, keywords may be randomly dropped at training time so that keyword-based summarization model 230 may learn to rely on keywords that are present in the keyword sequence that is part of the input of the model, while also learning to still carry over key information from the source document that is not present in the keyword sequence. Note that keywords dropout may be applied at training time only.",
+                                "FIG. 5 is a simplified logic flow diagram illustrating a method for generating a controlled summary using the keywords-based model shown in FIG. 2 during inference stage, according to some embodiments described herein. One or more of the processes 502-514 of method 500 may be implemented, at least in part, in the form of executable code stored on non-transitory, tangible, machine-readable media that when run by one or more processors may cause the one or more processors to perform one or more of the processes 502-514. In some embodiments, method 500 may correspond to the method used by the module 330.",
+                                "At step 502, an input document (e.g., document 210) may be received. For example, the input summary may be received at data interface 315 in FIG. 3.",
+                                "At step 504, a set of keywords may be extracted from the input document, e.g., by sequence labeling the keywords. For example, keyword extraction at inference time may be formulated as a sequence labeling task. Concretely, a BERT-based sequence tagger (e.g., 220) may have been optionally trained on the keywords and documents from the training dataset. The BERT-based sequence tagger 220 may be similar to the BERT model described in Devlin et al., BERT: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805, 2018, which is hereby expressly incorporated by reference herein in its entirety. This tagger may then compute the selection probability qi for each token in the test document. Similar to training time keyword extraction (as described in steps 404-408 in FIG. 4), a set of ns sentences with the highest average token selection probability are selected from the input source document. Within these sentences words with qj>\u03b5 are selected as keywords up to a maximum number of mmax. The three hyperparameters ns, E, mmax may be selected based on the uncontrolled summarization performance on validation datasets. The results are reasonably robust to different settings.",
+                                "At step 506, a user input of a control token sequence and/or one or more control parameters relating to a characteristic of the summary to be generated may be received to modify the set of keywords into a customized set of keywords, e.g., via the control center 232 in FIG. 2. During inference time, the user 150 may provide different configurations of control tokens 232 reflecting keyword control to entity and length of the summary.",
+                                "At step 508, the set of keywords is modified based on the received control token sequence.",
+                                "At step 510, a summary may be generated for the input document based on the set of customized set of keywords according to the one or more control parameters. For example, entity control may produce summaries that focus on entities of interest. Example summaries 235a-c provide different versions of summaries focusing on different players when those player names are included as keywords directly influencing the respective summary.",
+                                "For another example, the user may have different preferences as to the length of summaries, which may be controlled by a user-specified length parameter. Specifically, the training data may be separated into 5 buckets signified by different summary lengths so that each bucket has the same number of examples. Then the average number of keywords KI may be computed for each bucket on the training data. At test time, a user 150 can specify length parameter l\u2208{0, 1, 2, 3, 4} to include the KI number of keywords with the highest selection probability computed by the sequence tagger 220.",
+                                "In one embodiment, prompts (e.g., 227 in FIG. 2) are utilized to perform multi-purpose text generation with a single unified model. Specifically, prompts may take the form of control token sequence, and such tokens can be used both as the target prefix and keywords. For example, the prompts can be used for summarizing contributions of scientific articles. Existing datasets about scientific papers such as arXiv collect paper abstracts as the summaries, which often include extra background context and lack detailed contribution descriptions for the associated paper. In many cases, readers would benefit from an explicit list of contributions in order to understand the novelty and value of the paper. For these cases, the prompt of control tokens such as \u201cthe main contributions of this paper are: (1)\u201d may trigger generation of a summary focused on contributions. For another example, prompts may be used for summarizing invention purpose of patent documents. Patent article summaries in existing datasets such as BIG-PATENT can often be over-complicated, often covering core method details. Yet for a non-technical reader it would be preferred to provide a one-sentence summary that states the purpose of the invention while ignoring technical details. A prompt of \u201cthe purpose of the present invention is\u201d may be used to trigger a concise summary of an input patent document focusing on patent purpose. For another example, question-guided summarization may be used to enhance reading comprehension of users. Human summarization can be constrained by questions that require answers to be found in the summary. This points to an important connection between summarization and reading comprehension. A summarization model may directly answer some questions about the article if guided properly. This suggests the possibility of subsuming reading comprehension as a form of summarization. To verify this hypothesis, the prompt of control tokens \u201cQ: question [text]? A:\u201d to trigger reading comprehension behavior in generating the summary."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe training process for keywords-based summarization model",
+                                "receive input document and ground-truth summary",
+                                "select sentences from document that maximize ROUGE scores",
+                                "identify longest sub-sequences in extracted sentences",
+                                "remove duplicate words and stop words",
+                                "generate keyword sequence",
+                                "prepend keyword sequence to source document",
+                                "train summarization model to maximize p(y|x, z)",
+                                "describe keyword extraction strategy",
+                                "describe keyword dropout regularization",
+                                "describe inference stage for generating controlled summary",
+                                "receive input document",
+                                "extract keywords from input document",
+                                "receive user input of control token sequence",
+                                "modify set of keywords based on control token sequence",
+                                "generate summary based on customized set of keywords",
+                                "describe entity control and length control",
+                                "describe use of prompts for multi-purpose text generation",
+                                "illustrate example of controllable summarization system"
+                            ],
+                            "num_characters": 9531,
+                            "outline_medium": [
+                                "describe training dataset preparation",
+                                "extract sentences from document",
+                                "identify longest sub-sequences in extracted sentences",
+                                "remove duplicate words and stop words",
+                                "generate keyword sequence",
+                                "train summarization model",
+                                "describe keyword extraction strategy",
+                                "describe keyword dropout",
+                                "describe training process"
+                            ],
+                            "outline_short": [
+                                "describe training keywords-based summarization model",
+                                "extract keywords from input document",
+                                "generate controlled summary using keywords-based model",
+                                "describe inference stage of controllable summarization"
+                            ]
+                        },
+                        {
+                            "title": "Example Performance",
+                            "paragraphs": [
+                                "FIG. 6 provides qualitative examples showing resulting summaries generated based on different user-controlled configuration parameters, according to one embodiment described herein. Example 601 shows a source document that is summarized into different versions of summary based on different control aspects, such as the entity names (e.g. \u201cISIS\u201d \u201cHasd Al-Shaabi\u201d as keywords), length, question and answer format, and/or the like. Example 602 shows a reference summary that is re-summarized by a prompt that has a contribution format, e.g., \u201cthe main contribution of this paper are . . . \u201d. Example 603 shows a reference summary that is re-summarized by a prompt for the purpose of invention.",
+                                "Additional examples illustrating the performance of the keyword-based model may be performed on distinct-domain summarization datasets: CNN/Dailymail (CNNDM) news articles, arXiv scientific papers (which is described in Cohan et al., A discourse-aware attention model for abstractive summarization of long documents. In Proceedings of NAACL (Short Papers), 2018), and BIGPATENT patent articles. For all datasets the source documents are truncated to 1024 tokens and the target summaries are truncated to 256 tokens following. The conditional distribution p(y|x, z) in the keyword-based model is the fine-tuned version of the pretrained BARTLARGE model, which achieves comparable performance on several summarization benchmarks. The automatic keyword tagger at test time is based on the pretrained BERTLARGE model fine-tuned as described in in relation to FIG. 2. The summarization model implementation is based on the fairseq toolkit and the automatic keyword extraction model is based on the HuggingFace Transformers library.",
+                                "For evaluation, the ROUGE scores and the recently proposed BERTScore (see Zhang et al., BERTScore: Evaluating text generation with BERT, in Proceedings of ICLR, 2020) are used when ground-truth is available. For control-related evaluation where reference summaries may not be available, (1) ground-truth summaries are collected when possible, (2) summaries are examined to respect the control signal, or (3) resort to human evaluation.",
+                                "To test the performance of entity control, user preference is first simulated by providing the model with oracle entities extracted from the ground-truth target, and then compared to the model using automatic keywords in a uncontrolled setting to show the effect of oracle entities. To examine whether the decoded summaries respect entity change, 100 documents are sampled and repeatedly acquired every entity in the document to generate summaries. Then the Success Rate is computed, the fraction of requested entity actually occurring in the output summaries. The results are reported in separation of whether the entity is from leading 3 sentences or from the full article. To test if the summaries from different entity input are factually consistent with the document, another 100 documents are sampled, and for each one \u201cimportant\u201d entity that appears in the reference is randomly sampled, and one \u201cunimportant\u201d entity that occurs neither in the reference nor the leading three source sentences to produce summaries. For each (article, summary) pair 3 annotators from Amazon Mechanical Turk are adopted to make a binary decision as to whether the summary can be entailed from the article. The majority vote is then taken as the result and report the fraction of factually correct summaries. Evaluation is done on CNNDM only since many examples in arXiv and BIGPATENT do not have identifiable entities.",
+                                "FIG. 7 illustrates the example performance of the keywords-based model (referred to as CTRLsum) comparted with BART. It is observed that the use of oracle entities helps boost the ROUGE-2 score by 3.6 points compared with using automatic keywords, which means CTRLsum is able to take advantage of the given entities. FIG. 8 shows the Success Rate and factual correctness evaluations. Remarkably, the keyword-based model described herein (CTRLsum) achieves a high success rate for both lead-3 and full-article entities reaching around 95%. Yet other systems struggle to include the given entities especially for the ones that do not occur in the beginning of the article. Factual correctness scores from human annotators suggest that CTRLsum is able to generate factually consistent summaries no matter whether the entity of interest is important or not, comparable to the unconstrained BART baseline.",
+                                "Similar to entity control, we first examine the effect of oracle length signal from the reference to simulate user preference. In addition to ROUGE and BERTScore, we measure the length distance between the decoded summary and the reference following (Liu et al., 2018). Specifically, the mean of absolute deviation (MAD) of the actual length bucket code lsys of the decoded summary is computed from the ground-truth control code lref, as",
+                                "\\(\\frac{1}{N}\\Sigma_{1}^{N}{{\uf603{l_{sys}^{(n\\;)} - l_{ref}^{(n)}}\uf604}.}\\)",
+                                "To assess the summary variations as length signals change, 1000 documents are further sampled and decoded 5 different-length summaries for each document. Then the Pearson Correlation Coefficient (PCC) is reported between the input bucket code and actual bucket code. Experiments are conducted on CNNDM and arXiv.",
+                                "In FIG. 7, CTRLsum with oracle length signals only presents relatively small gains over the automatic CTRLsum baseline. This implies that oracle lengths only convey limited additional information to help generate the reference summary. The LengthCode baseline is run based on BART, where the ground-truth length bucket code is prepended to the article at both training at test time. However, LengthCode fails to consistently improve over BART with oracle length signals. Moreover, the BART model fine-tuned with LengthCode method almost ignores the length signal with PCC close to 0, as shown in FIG. 9. This is not very surprising since length code would be less useful when the summarizers grow stronger, which can already learn a good length predictor implicitly. In contrast, CTRLsum with length-guided keywords achieves high positive PCC between control signal and actual output length, and is able to reduce the length deviation MAD compared to automatic baselines.",
+                                "There is no existing dataset to evaluate contribution summarization of scientific papers, bringing challenges to our evaluation. However, researchers often summarize the bullet contributions of their paper in the Introduction section, which inspire us to extract such contribution claims as the reference summary. Therefore, the entire arXiv database,2 and download all the papers whose first submission time is within the first six months of 20193 of 67K papers. Introduction section and bullet contributions are extracted with regular expression and filter out the ones that fail. The contributions are used as the reference and the Introduction section after removing the contribution claims is used as the source article-to predict contributions from the rest of the introduction section. This procedure leads to 1018 test examples. The model is trained and tested on arXiv.",
+                                "For purpose summarization setup, to collect a test dataset that features one-sentence invention purpose summaries, 1000 test examples are sampled from BIGPATENT and present their reference summaries to human annotators from Amazon Mechanical Turk. For each example one annotator is asked to select the sentence that convey the purpose of the invention. The option is also provided for annotators that the invention purpose cannot be identified. After filtering out the invalid examples, 763 examples are collected as test data.",
+                                "FIG. 11 shows results of contribution summarization on scientific papers and invention purpose summarization on patent filings. Through using the prompt text as both the decoder prefix and keywords, CTRLsum outperforms the BART baseline in most cases. We further report the precision (P) and recall (R) scores in BERTScore besides F1. It is observed that the BART baseline tends to over-generate a full summary with low precision scores while CTRLsum is able to focus on keywords-related content.",
+                                "Question-guided summarization is tested on reading comprehension benchmarks in a zero-shot setting. Specifically, the CNNDM summarization models are evaluated on in-domain NewsQA and out-of-domain SQuAD 1.1 respectively. Some NewsQA test articles are present in the CNNDM summarization training dataset, as it is still a reasonable unsupervised setting since the keyword-based model never sees questions or answers during training. In addition to comparing with the vanilla BART model, the zero-shot performance from GPT2 language models (without fine-tuning) is included as a reference point. The largest GPT2 model is omitted with 1.5B parameters since it cannot be evaluated in a single GPU device due to memory limits. F1 scores are reported on the two benchmarks.",
+                                "BART is pretrained with a denoising task to predict the denoised version of the source, and performs poorly on zero-shot reading comprehension out of box, as shown in FIG. 10. Interestingly, however, BART fine-tuned on a summarization task\u2014without seeing any question-answer pairs in the training data\u2014is able to improve the F1 scores by 24.4 and 25.9 points on NewsQA and SQuAD respectively. Moreover, CTRLsum equipped with question keywords is able to further boost the performance by 15.6 and 17.9 points, approaching the supervised MatchLSTM score on NewsQA. Such results suggest that summarization might be a suitable transfer task for abstractive reading comprehension.",
+                                "FIG. 12 shows the uncontrolled summarization performance without any user input, which uses the automatically extracted keywords as described in relation to FIG. 2. On CNNDM and arXiv datasets CTRLsum outperforms the strong BART and PEGASUS baselines by a large margin, leading to new state-of-the-art performance on CNNDM. It also performs comparably to the BART baseline on BIGPATENT in terms of BERTScore, though with an inferior ROUGE-2 score. Yet there is a big performance gap between BART-based models and PEGASUS on BIGPATENT. The reasons might be different dataset processing,4 sub-optimal learning schedule, or inherent difference between BART and PEGASUS.",
+                                "For controlled summarization, further human evaluation results to evaluate \u201ccontrol\u201d directly by informing annotators the intended control signal. Experiments are conducted on entity and purpose control. Specifically, the annotators are informed of intents (to obtain summaries focused on a specific entity or purpose of patent), then the annotators provide scores in scale 1-5 over two dimensions: (1) Control Accuracy (CA): whether the summary contains accurate main information with respect to the intent, and (2) Control Relevance (CR): how the summary is relevant to the control intent overall\u2014a summary that contains redundant contents that are unrelated to the intent will be penalized. Results including significance tests are shown in FIG. 13. The control accuracy for important entity control and purpose control are comparable between BART and CTRLsum without significant difference (p-value>0.05), while CTRLsum shows significantly better control relevance overall by focusing on the desired information. Also, the unconstrained BART are unable to generate unimportant-entity-related summaries and thus suffers from poor scores on both dimensions.",
+                                "For uncontrolled summarization, human annotators from Amazon Mechanical Turk score summaries (scale 1-5) over four dimensions: (1) Factual Consistency (FAC): the summary should only contain statements that can be entailed by the source document, (2) Relevance (REL): the summary should only contain important information of the source document, (3) Fluency (FLU): each sentence in the summary should be fluent, and (4) Coherence (COH): the summary should be well-structured and well-organized. Results including significance tests are present in FIG. 14. The quality of summaries from all systems on all dimensions is generally good with a score mostly higher than 4.0. However, most scores do not show significant difference from CTRLsum (Automatic Keyword) with large p-values, despite their very different similarities against the reference summaries in terms of ROUGE/BERTScore (e.g. CTRLsum with oracle keywords). This implies that the summary quality from different systems powered by strong pretrained models like BART has become difficult to be clearly distinguished by non-expert MTurkers. It is also noted that non-expert human judgement for summarization may be unreliable and exhibit poor correlation with expert judgement.",
+                                "Some examples of computing devices, such as computing device 200 may include non-transitory, tangible, machine readable media that include executable code that when run by one or more processors (e.g., processor 210) may cause the one or more processors to perform the processes of method 400. Some common forms of machine readable media that may include the processes of method 400 are, for example, floppy disk, flexible disk, hard disk, magnetic tape, any other magnetic medium, CD-ROM, any other optical medium, punch cards, paper tape, any other physical medium with patterns of holes, RAM, PROM, EPROM, FLASH-EPROM, any other memory chip or cartridge, and/or any other medium from which a processor or computer is adapted to read.",
+                                "This description and the accompanying drawings that illustrate inventive aspects, embodiments, implementations, or applications should not be taken as limiting. Various mechanical, compositional, structural, electrical, and operational changes may be made without departing from the spirit and scope of this description and the claims. In some instances, well-known circuits, structures, or techniques have not been shown or described in detail in order not to obscure the embodiments of this disclosure. Like numbers in two or more figures represent the same or similar elements.",
+                                "In this description, specific details are set forth describing some embodiments consistent with the present disclosure. Numerous specific details are set forth in order to provide a thorough understanding of the embodiments. It will be apparent, however, to one skilled in the art that some embodiments may be practiced without some or all of these specific details. The specific embodiments disclosed herein are meant to be illustrative but not limiting. One skilled in the art may realize other elements that, although not specifically described here, are within the scope and the spirit of this disclosure. In addition, to avoid unnecessary repetition, one or more features shown and described in association with one embodiment may be incorporated into other embodiments unless specifically described otherwise or if the one or more features would make an embodiment non-functional.",
+                                "Although illustrative embodiments have been shown and described, a wide range of modification, change and substitution is contemplated in the foregoing disclosure and in some instances, some features of the embodiments may be employed without a corresponding use of other features. One of ordinary skill in the art would recognize many variations, alternatives, and modifications. Thus, the scope of the invention should be limited only by the following claims, and it is appropriate that the claims be construed broadly and in a manner consistent with the scope of the embodiments disclosed herein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide qualitative examples of summaries",
+                                "show source document summarized into different versions",
+                                "illustrate re-summarization by prompts",
+                                "describe performance on distinct-domain summarization datasets",
+                                "detail conditional distribution p(y|x, z) in keyword-based model",
+                                "explain automatic keyword tagger at test time",
+                                "describe summarization model implementation",
+                                "detail automatic keyword extraction model",
+                                "evaluate ROUGE scores and BERTScore",
+                                "evaluate control-related performance",
+                                "simulate user preference for entity control",
+                                "test performance of entity control",
+                                "examine factual consistency of summaries",
+                                "report Success Rate and factual correctness evaluations",
+                                "illustrate example performance of keywords-based model",
+                                "compare CTRLsum with BART",
+                                "examine effect of oracle length signal",
+                                "measure length distance between decoded summary and reference",
+                                "assess summary variations as length signals change",
+                                "report Pearson Correlation Coefficient (PCC)",
+                                "evaluate contribution summarization of scientific papers",
+                                "extract contribution claims as reference summary",
+                                "evaluate purpose summarization on patent filings",
+                                "collect test dataset for purpose summarization",
+                                "show results of contribution and purpose summarization",
+                                "test question-guided summarization on reading comprehension benchmarks",
+                                "evaluate zero-shot performance on NewsQA and SQuAD 1.1",
+                                "show uncontrolled summarization performance",
+                                "evaluate human evaluation results for controlled summarization",
+                                "describe computing devices and machine-readable media"
+                            ],
+                            "num_characters": 15492,
+                            "outline_medium": [
+                                "provide qualitative examples of summaries",
+                                "show source document summarized into different versions",
+                                "describe re-summarization by prompts",
+                                "illustrate performance on distinct-domain summarization datasets",
+                                "describe model implementation and evaluation metrics",
+                                "test performance of entity control",
+                                "evaluate factual correctness of summaries",
+                                "examine effect of oracle length signal",
+                                "assess summary variations as length signals change",
+                                "evaluate contribution summarization of scientific papers",
+                                "evaluate purpose summarization on patent filings",
+                                "test question-guided summarization on reading comprehension benchmarks",
+                                "show uncontrolled summarization performance",
+                                "provide human evaluation results for controlled and uncontrolled summarization",
+                                "describe computing devices and machine-readable media"
+                            ],
+                            "outline_short": [
+                                "illustrate performance with different user-controlled configuration parameters",
+                                "describe keyword-based model performance on distinct-domain summarization datasets",
+                                "evaluate entity control performance using oracle entities and automatic keywords",
+                                "examine length control performance using oracle length signals and automatic keywords",
+                                "describe contribution and purpose summarization performance on scientific papers and patent filings",
+                                "evaluate question-guided summarization performance on reading comprehension benchmarks",
+                                "report human evaluation results for controlled and uncontrolled summarization"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce limitations of existing summarization systems",
+                        "motivate controllable summarization system",
+                        "describe controllable summarization system overview",
+                        "define controllable summarization system components",
+                        "describe neural network model for controllable summarization",
+                        "explain keyword manipulation mechanism",
+                        "describe user interaction with control center",
+                        "illustrate controllable summarization system workflow"
+                    ],
+                    "num_characters": 4231,
+                    "outline_medium": [
+                        "motivate need for customized summaries",
+                        "introduce controllable summarization system",
+                        "describe neural network model for controllable summarization",
+                        "define key terms"
+                    ],
+                    "outline_short": [
+                        "motivate controllable summarization",
+                        "describe controllable summarization system"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of controllable text summarization of a document, the method comprising:\nreceiving, at a communication interface, an input text document;\nextracting, via a language model that is trained by a training dataset of a plurality of documents and a plurality of corresponding keywords, one or more keywords by sequence labeling the one or more keywords from the input text document;\nreceiving, via a user interface, a control token sequence and one or more control parameters relating to a characteristic of a summary to be generated;\nmodifying the one or more keywords based on the received control token sequence; and\ngenerating, by the language model, the summary for the input text document based on the modified one or more keywords according to the one or more control parameters.",
+        "2. The method of claim 1, wherein the characteristic of the summary includes any of:\nan entity mentioned in the input text document;\na target length of the summary; and\na type of the input text document.",
+        "3. The method of claim 2, wherein the one or more control parameters comprises a prompt corresponding to the type of the input text document.",
+        "4. The method of claim 3, wherein the prompt is selected from the group of:\na first summary prefix that summarizes contributions of a research paper;\na second summary prefix that summarizes invention purpose of a patent document; and\na third summary prefix that summarizes the input text document in a guided question and answer format.",
+        "5. The method of claim 1, further comprising:\ngenerating a first set of modified keywords and a first control parameter from the received control token sequence;\ngenerating, by the language model, a first version of the summary for the input text document based on the first set of modified keywords according to the first control parameter;\ngenerating a second set of modified keywords and a second control parameter from the received control token sequence; and\ngenerating, by the language model, a second version of the summary for the input text document based on the second set of modified keywords according to the second control parameter.",
+        "6. The method of claim 1, wherein the language model is trained by:\nprepending a keyword sequence to a training source document separated with a special token;\ninputting the training source document with the keyword sequence to the language model;\ngenerating, by the language model, an output summary; and\nupdating the language model by maximizing a conditional probability of an output summary conditioned on the training source document and the keyword sequence.",
+        "7. The method of claim 6, further comprising:\nrandomly dropping a subset of keywords from the keyword sequence during training.",
+        "8. A system of controllable text summarization of a document, the system comprising:\na communication interface that receives an input text document;\na memory that stores a language model that is trained by a training dataset of a plurality of documents and a plurality of corresponding keywords; and\none or more hardware processors that:\nextracts, via the language model, one or more keywords by sequence labeling the one or more keywords from the input text document;\nreceives, via the communication interface, a control token sequence and one or more control parameters relating to a characteristic of a summary to be generated;\nmodifies the one or more keywords based on the received control token sequence; and\ngenerates, by the language model, the summary for the input text document based on the modified one or more keywords according to the one or more control parameters.",
+        "9. The system of claim 8, wherein the characteristic of the summary includes any of:\nan entity mentioned in the input text document;\na target length of the summary; and\na type of the input text document.",
+        "10. The system of claim 9, wherein the one or more control parameters comprises a prompt corresponding to the type of the input text document.",
+        "11. The system of claim 10, wherein the prompt is selected from the group of:\na first summary prefix that summarizes contributions of a research paper;\na second summary prefix that summarizes invention purpose of a patent document; and\na third summary prefix that summarizes the input text document in a guided question and answer format.",
+        "12. The system of claim 8, wherein the one or more hardware processors further:\ngenerates a first set of modified keywords and a first control parameter from the received control token sequence;\ngenerates, by the language model, a first version of the summary for the input text document based on the first set of modified keywords according to the first control parameter;\ngenerates a second set of modified keywords and a second control parameter from the received control token sequence; and\ngenerates, by the language model, a second version of the summary for the input text document based on the second set of modified keywords according to the second control parameter.",
+        "13. The system of claim 8, wherein the language model is trained by:\nprepending a keyword sequence to a training source document separated with a special token;\ninputting the training source document with the keyword sequence to the language model;\ngenerating, by the language model, an output summary; and\nupdating the language model by maximizing a conditional probability of an output summary conditioned on the training source document and the keyword sequence.",
+        "14. The system of claim 13, wherein the one or more hardware processors further:\nrandomly drops a subset of keywords from the keyword sequence during training.",
+        "15. A non-transitory processor-readable medium storing a plurality of processor-executable instructions for controllable text summarization of a document, the instructions being executed by one or more processors to perform operations comprising:\nreceiving, at a communication interface, an input text document;\nextracting, via a language model that is trained by a training dataset of a plurality of documents and a plurality of corresponding keywords, one or more keywords by sequence labeling the one or more keywords from the input text document;\nreceiving, via a user interface, a control token sequence and one or more control parameters relating to a characteristic of a summary to be generated;\nmodifying the one or more keywords based on the received control token sequence; and\ngenerating, by the language model, the summary for the input text document based on the modified one or more keywords according to the one or more control parameters.",
+        "16. The non-transitory processor-readable medium of claim 15, wherein the characteristic of the summary includes any of:\nan entity mentioned in the input text document;\na target length of the summary; and\na type of the input text document.",
+        "17. The non-transitory processor-readable of claim 16, wherein the one or more control parameters comprises a prompt corresponding to the type of the input text document.",
+        "18. The non-transitory processor-readable of claim 17, wherein the prompt is selected from the group of:\na first summary prefix that summarizes contributions of a research paper;\na second summary prefix that summarizes invention purpose of a patent document; and\na third summary prefix that summarizes the input text document in a guided question and answer format.",
+        "19. The non-transitory processor-readable of claim 16, wherein the operations further comprise:\ngenerating a first set of modified keywords and a first control parameter from the received control token sequence;\ngenerating, by the language model, a first version of the summary for the input text document based on the first set of modified keywords according to the first control parameter;\ngenerating a second set of modified keywords and a second control parameter from the received control token sequence; and\ngenerating, by the language model, a second version of the summary for the input text document based on the second set of modified keywords according to the second control parameter.",
+        "20. The non-transitory processor-readable of claim 15, wherein the language model is trained by:\nprepending a keyword sequence to a training source document separated with a special token;\nrandomly dropping a subset of keywords from the keyword sequence during training;\ninputting the training source document with the keyword sequence to the language model;\ngenerating, by the language model, an output summary; and\nupdating the language model by maximizing a conditional probability of an output summary conditioned on the training source document and the keyword sequence."
+    ]
+}

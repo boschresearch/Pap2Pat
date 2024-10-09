@@ -1,0 +1,259 @@
+# DESCRIPTION
+
+## FIELD
+
+- relate to engineered cells
+
+## SUMMARY
+
+- provide engineered cells
+- develop human brain tumor models
+- animal model with Cxcl10 deficiency
+- method of growing patient-derived xenografts
+- method of growing cell-derived xenografts
+- select population of cells
+- generate cells by hiPSC engineering
+- animal model with human cells in brain
+- patient-derived xenograft model
+- xenograft develops glioma-like lesions
+- method of making cells with NF1 mutations
+- method of making animal model of LGG
+- inject cells into animal brain
+- identify putative cells of origin
+- determine putative cells of origin
+- make animal model capable of growing tumors
+- CRISPR/Cas9-engineer NF1 mutations
+- differentiate hiPSCs into neural progenitor cells
+- differentiate iNPCs into glial restricted progenitor
+- differentiate iPSCs into oligodendrocyte progenitor cell
+- use in screening platform for therapeutic drug testing
+- use in patient-specific care
+
+## DETAILED DESCRIPTION
+
+- develop humanized low-grade brain tumor model
+- motivate need for human tumor models
+- describe methodology for generating low-grade gliomas
+- explain significance of Cxcl10 silencing
+- describe application of mouse models for drug testing
+- discuss limitations of current preclinical models
+- introduce specific mouse models for LGG growth
+
+### Molecular Engineering
+
+- define transfection
+- define transduction
+- define heterologous DNA sequence
+- define expression vector
+- describe gene expression in cells
+- introduce inducer
+- describe repressor proteins
+- describe transcription process
+- define promoter
+- define ribosome binding site
+- define transcribable nucleic acid molecule
+- describe construct composition
+- define transformation
+- define transgenic
+- define recombinant
+- define wild-type
+- describe design and generation of variant nucleotides
+- describe nucleotide and amino acid sequence identity
+- define substitution
+- define insertion
+- define deletion
+- describe conservative exchanges
+- describe deletion positions
+- describe insertion positions
+- describe modulating amino acid sequences
+- define highly stringent hybridization conditions
+- describe determining melting temperature
+- describe transforming host cells
+- describe selecting and propagating transformed cells
+- define exogenous DNA
+- describe evaluating host strains
+- describe down-regulating gene expression
+- introduce antisense oligonucleotides
+- introduce protein aptamers
+- introduce nucleotide aptamers
+- introduce RNA interference
+- describe designing siRNA molecules
+- describe genome editing
+- introduce CRISPR/Cas9
+- introduce CRISPR-Cpf1
+- introduce TALEN
+- introduce ZNFs
+- describe modulating Cxcl10 signals
+- describe CRISPR/Cas systems
+- describe gene therapy
+- describe inserting functional genes with viral vectors
+- describe gene therapies for cancers
+- describe viral vectors for gene therapy
+
+### Gene Therapy Strategies
+
+- introduce gene therapy
+- advantage over weekly infusions
+- cross-correction mechanism
+- low number of cells to modify
+- ex vivo strategy
+- in vivo strategy
+- stem cells as therapeutic targets
+- autologous gene therapy
+- use of endonucleases for genome editing
+- custom molecular scissors
+- delivery of endonucleases
+- formulation of agents and compositions
+- define formulation
+- pharmaceutically acceptable carriers or excipients
+- therapeutically effective amount of biologically active agent
+- suitable amount of carrier
+- define pharmaceutically acceptable
+- examples of pharmaceutically acceptable ingredients
+- define pharmaceutically acceptable excipient
+- solvents, dispersion media, coatings, antibacterial and antifungal agents
+- isotonic or absorption delaying agents
+- supplementary active ingredients
+- define stable formulation
+- convenient temperature for storage
+- commercially reasonable period of time
+- routes of administration
+- individual agents in combination with additional agents
+- controlled-release preparations
+- sustained-release preparations
+- therapeutic methods
+- process of treating cancer
+- safe and effective amount of an agent
+- administration of a therapeutically effective amount
+- introduce gene therapy strategies
+- describe allogeneic cell therapy
+- describe autologous cell therapy
+- describe xenogeneic cell therapy
+- discuss administration methods
+- list administration routes
+- describe exogenous agents
+- describe endogenous agents
+- discuss delivery systems
+- list delivery vehicles
+- describe controlled release systems
+- discuss carrier delivery systems
+- list carrier delivery systems
+- describe screening methods
+- list candidate molecules
+- describe lead-like compounds
+- describe drug-like compounds
+- discuss Lipinski's rules
+- describe kits
+- list kit components
+- discuss instructional materials
+- describe control samples
+- describe reference samples
+- discuss molecular biology protocols
+- cite molecular biology references
+- define terms
+- discuss numerical parameters
+- discuss singular and plural forms
+- discuss open-ended linking verbs
+- discuss method order
+- discuss examples and exemplary language
+- discuss groupings of alternative elements
+- discuss incorporation by reference
+- discuss modifications and variations
+- discuss equivalent embodiments
+- conclude disclosure
+
+## EXAMPLES
+
+- provide non-limiting examples
+
+### Example 1
+
+- introduce humanized low-grade brain tumor model
+- motivate pediatric low-grade glioma modeling
+- describe limitations of existing models
+- introduce hiPSC engineering approach
+- summarize pediatric LGG characteristics
+- describe NF1-associated and sporadic pediatric LGGs
+- motivate development of patient-derived pediatric LGG xenograft models
+- introduce CD4+ T cell-astrocyte Cxcl10 axis
+- describe disruption of Cxcl10 expression
+- establish new murine platform for in vivo patient-derived pediatric LGG xenograft modeling
+- describe NF1-null and KIAA1549:BRAF-expressing hiPSC-derived neural progenitor cells
+- exhibit increased cell proliferation
+- describe iNPCs form LGGs in Rag1−/− mice
+- define LGG criteria
+- describe LGG formation in Rag1−/− mice
+- describe LGG histopathologic features
+- describe LGG immunohistochemical markers
+- describe LGG stem cell markers
+- describe RNA sequencing and methylation studies
+- compare hiPSC-LGGs to spontaneously arising clinical counterparts
+- describe PDPN and FABP7 gene expression
+- describe chronic non-malignant nature of pediatric LGGs
+- assess tumors at 1, 3, and 6 mpi
+- describe tumor growth and proliferative indices
+- describe apoptosis and cellular senescence
+- conclude iNPCs generate both NF1-associated and sporadic LGGs in vivo
+- introduce hiPSC platform
+- leverage derivative restricted progenitors
+- differentiate into glial restricted progenitors
+- differentiate into oligodendrocyte progenitor cells
+- differentiate into astrocytes
+- inject into brainstems of Rag1−/− mice
+- form LGGs in 100% of mice
+- describe histopathologic features
+- describe iGRP LGGs
+- describe iOPC LGGs
+- exhibit low proliferative indexes
+- require CD4+ T cell depletion
+- identify mouse strains that permit LGG formation
+- perform transcriptomal analysis
+- identify downregulated transcripts
+- validate downregulated transcripts
+- analyze microglia and astrocytes
+- find deficit in astrocytes
+- induce Cxcl10 expression in astrocytes
+- demonstrate Cxcl10 inhibits LGG formation
+- ectopically express Cxcl10
+- incubate with recombinant murine Cxcl10 protein
+- demonstrate Cxcl10 induces astrocytic differentiation
+- demonstrate Cxcl10 induces cell death
+- engineer to ectopically express murine Cxcl10
+- inject into brainstems of Rag1−/− mice
+- demonstrate Cxcl10 is necessary to inhibit LGG formation
+- develop human pediatric LGG cell lines
+- discuss implications for human brain tumor pathobiology
+- summarize conclusions
+- motivate Rag1−/− mice model
+- describe limitations of Cxcl10 loss
+- introduce hiPSC-derived monocyte populations
+- describe pediatric LGG modeling
+- outline study approval
+- describe animal maintenance
+- outline mating and injection procedures
+- describe human iPSC culture and differentiation
+- outline neural progenitor cell differentiation
+- describe astrocyte differentiation
+- outline glial restricted progenitor differentiation
+- describe oligodendrocyte progenitor cell differentiation
+- outline intracranial injections
+- describe PD0325901 treatments
+- outline magnetic resonance imaging
+- describe tissue fixation and immunohistochemistry
+- outline immunocytochemistry
+- describe BrdU proliferation, RAS activity, cAMP, and Cxcl10 ELISA
+- outline lentivirus production and cell infection
+- describe CXCL10 peptide treatment
+- outline RNA extraction and quantitative real-time PCR
+- describe RNA sequencing and analysis
+- outline T cell isolation and culture
+- describe astrocyte isolation and culture
+- outline quantification and statistical analysis
+- describe study limitations
+- outline future studies
+- summarize results
+- discuss implications
+- outline potential applications
+- describe study significance
+- conclude study findings
+

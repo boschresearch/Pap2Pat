@@ -1,0 +1,205 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce silicon substrates
+- motivate hyperdoping silicon
+- limitations of hyperdoped black silicon
+
+## SUMMARY
+
+- introduce nanosecond pulsed laser annealing
+- motivate sub-bandgap optical absorptance
+- describe method of processing semiconductor substrate
+- incorporate dopant in semiconductor substrate
+- optically anneal doped surface layer
+- enhance crystallinity of doped surface layer
+- preserve light-trapping surface textures
+- increase electrical conductivity of doped surface layer
+- restore sub-bandgap optical absorptance
+- employ for fabricating photodetectors and photovoltaic devices
+- applicable to various semiconductor substrates
+- thermal annealing prior to optical annealing
+- incorporate dopant using laser pulses
+- incorporate dopant using ion implantation
+- form diode junction with underlying bulk substrate
+- generate doped surface layer with light-trapping textures
+- thermally anneal doped surface layer
+- optically anneal thermally-annealed doped surface layer
+- reduce absorptance of doped surface layer
+- restore absorptance of doped surface layer
+- dopant concentration greater than solid solubility limit
+- semiconductor substrate is silicon
+- dopant is chalcogen
+- generate doped surface layer using laser pulses
+- expose substrate to dopant and compound
+- apply film containing dopant to substrate surface
+- implant dopant ions in semiconductor substrate
+- doped surface layer exhibits polyphase structure
+- thermal and optical annealing enhance crystallinity
+- doped surface layer forms diode junction with substrate
+- doped surface layer exhibits absorptance greater than 50%
+- semiconductor substrate is silicon, germanium, silicon carbide, or gallium arsenide
+- dopant is electron-donating or hole-donating species
+- apply texturing laser pulses to substrate surface
+- optically anneal polyphase surface layer
+- enhance crystallinity of polyphase surface layer
+- surface textures characterized by undulations
+
+## DETAILED DESCRIPTION
+
+- introduce semiconductor substrate processing
+- define solid solubility limit
+- describe polyphasic doped surface layer formation
+- motivate optical annealing
+- describe crystallinity enhancement
+- define crystalline material phase
+- describe Raman spectroscopy analysis
+- describe highly crystalline doped surface layer
+- define sub-bandgap radiation wavelength
+- describe absorptance of sub-bandgap radiation
+- introduce flow chart of FIG. 1
+- describe step 1: applying short radiation pulses
+- describe textured surface layer formation
+- describe polyphase structure characterization
+- describe surface textures
+- describe dopant concentration
+- introduce semiconductor substrate options
+- describe dopant options
+- describe U.S. Pat. No. 7,057,256 teachings
+- describe sub-bandgap absorptance enhancement
+- describe diode junction formation
+- introduce step 2: optical annealing
+- describe optical annealing pulse characteristics
+- describe optical annealing process
+- describe crystallinity enhancement
+- describe highly crystalline doped layer formation
+- describe surface texturing preservation
+- describe absorptance characteristics
+- describe dopant concentration preservation
+- describe light-trapping surface textures
+- introduce photodetector application
+- describe photodetector structure
+- describe metal contact formation
+- describe photocurrent detection
+- introduce photovoltaic device application
+- describe photovoltaic device structure
+- describe apparatus 100 for incorporating dopant
+- describe apparatus 200 for optical annealing
+- conclude detailed description
+- describe rastering of laser pulse train across substrate's surface
+- introduce x-y scanning mirror system and x-y translation stage
+- describe gas line and pump line for controlled atmosphere
+- introduce integrated system with fs and ns lasers
+- describe fs laser for texturing and/or doping semiconductor substrate
+- describe ns laser for optically annealing substrate
+- describe beam splitter and mirror for directing laser pulses
+- describe scanning of fs and ns laser pulses over substrate surface
+- introduce ion implantation for incorporating dopant into surface layer
+- describe generation of light-trapping textures via short laser pulses
+- describe implantation of dopant ions into surface layer
+- describe optical annealing of doped surface layer
+- describe system for generating highly crystalline doped surface layer
+- introduce ion beam line for bombarding substrate with ion beam
+- describe method of processing semiconductor substrate
+- incorporate dopant in semiconductor substrate
+- generate light-trapping surface textures
+- thermally anneal doped surface layer
+- optically anneal doped surface layer
+- describe thermal annealing of doped surface layer
+- describe optical annealing of doped surface layer
+- describe method of generating highly crystalline doped surface layer
+- generate light-trapping textured surface
+- incorporate dopant into surface layer via ion implantation
+- optically anneal doped surface layer
+- describe method of generating highly crystalline doped surface layer
+- generate light-trapping textured surface
+- introduce dopant into surface layer via ion implantation
+- thermally anneal doped surface layer
+- optically anneal doped surface layer
+- describe method of generating highly crystalline doped surface layer
+- generate light-trapping surface textures
+- optically anneal substrate surface
+- describe highly crystalline semiconductor substrate with light-trapping surface features
+
+### EXEMPLIFICATION
+
+- introduce example 1
+- describe laser irradiation process
+- form highly sulfur-doped surface layer
+- perform pulsed laser annealing
+- treat with rapid thermal annealing
+- measure crystallinity using Raman spectroscopy
+- measure surface electrical conductance
+- measure current-voltage characteristics
+- measure optical absorption
+- present results of nanosecond annealing on crystallinity
+- present results of nanosecond annealing on electrical conductance
+- present results of nanosecond annealing on electrical rectification
+- present results of nanosecond annealing on optical absorptance
+- present results of rapid thermal annealing on optical absorptance
+- present results of nanosecond annealing on surface morphology
+- introduce example 2
+- describe methods of example 2
+- present results of example 2
+- fabricate hyperdoped black silicon
+- control fs laser pulse fluence
+- scan fs laser pulses across silicon surface
+- vary fs laser pulse fluence
+- irradiate hyperdoped black silicon with ns laser pulses
+- control ns laser pulse fluence
+- measure crystallinity using Raman spectroscopy
+- determine crystallinity from Raman spectra
+- investigate surface morphology using FESEM
+- investigate microstructure using TEM and SAD
+- measure optical absorptance using UV-VIS-NIR and FTIR spectrometers
+- calculate optical absorptance from reflectance and transmittance
+- measure current-bias behavior using probe station and parametric analyzer
+- apply metal electrodes to samples
+- perform rapid thermal annealing
+- crystallize hyperdoped black silicon using thermal annealing
+- deactivate sub-bandgap optical absorptance using thermal annealing
+- combine thermal annealing and ns laser annealing in series
+- measure effects of ns laser annealing on surface morphology
+- measure effects of ns laser annealing on crystallinity
+- measure effects of ns laser annealing on optical absorptance
+- measure effects of ns laser annealing on electrical rectification
+- describe optical absorptance of hyperdoped black silicon
+- show effect of ns laser annealing on absorptance
+- describe current-bias measurements
+- show effect of rapid thermal annealing on current-bias measurements
+- describe reactivation of sub-bandgap optical absorptance
+- describe fabrication with fs-laser pulse fluence
+- describe surface structure and optical absorptance
+- describe effect of ns laser annealing on surface structure and absorptance
+- discuss nanosecond laser annealing effects
+- discuss conversion of amorphous silicon to crystalline silicon
+- discuss solute trapping and crystalline hyperdoped silicon
+- discuss physical processes during ns laser annealing
+- describe TEM images of conical surface structures
+- discuss removal of amorphous skin during ns laser annealing
+- estimate melting depth from ns laser annealing
+- discuss average melting depth and surface reflectance
+- discuss melting threshold fluence and heat of fusion
+- discuss crystallization of amorphous silicon pockets
+- discuss melting depths and dynamics
+- discuss nanosecond laser annealing and surface smoothing
+- discuss Raman crystalline silicon peak
+- discuss lattice stress and grain size
+- discuss increase in turn-on voltage after rapid thermal annealing
+- discuss removal of Schottky barriers
+- discuss rectification in hyperdoped black silicon
+- discuss reactivation of sub-bandgap optical absorptance
+- discuss Johnson-Mehl-Avrami-Kolmogorov framework
+- discuss reactivation by ns laser annealing
+- discuss combined thermal and ns laser annealing
+- discuss versatility of combining equilibrium and non-equilibrium processing
+- discuss challenges and advantages of ns laser annealing
+
+## CONCLUSION
+
+- summarize nanosecond laser annealing benefits
+- motivate broader applicability
+- discuss fabrication challenges
+- acknowledge variations
+

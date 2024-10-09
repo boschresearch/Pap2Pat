@@ -1,0 +1,256 @@
+{
+    "id": "US20170299858",
+    "authors": [
+        "Liangjia Zong",
+        "Han Zhao"
+    ],
+    "title": "Wavelength Selective Switch",
+    "date": "2017-06-29 00:00:00",
+    "abstract": "A wavelength selective switch (WSS) includes a liquid crystal on silicon (LCOS) panel and a fiber array with multiple ports. The two outermost ports of the multiple ports are a first port and a second port. An included angle between an intersecting line of the LCOS panel and a first plane in which the incident light entering the LCOS panel and emergent light exiting the LCOS panel are located, and incident light entering the LCOS panel is (90\u2212\u03b8) degrees, where a wavelength of the incident light is same as a wavelength of the emergent light, \u03b8 is less than 15 degrees, the first port and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light, and the second port and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The disclosure relates to the communications field, and more specifically, to a wavelength selective switch."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "define technical field"
+                    ],
+                    "num_characters": 108,
+                    "outline_medium": [
+                        "define technical field"
+                    ],
+                    "outline_short": [
+                        "define technical field"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "A continuous growth in network traffic drives a single-channel bit rate in a wavelength division multiplexing system to gradually develop from 10 gigabits per second (10 G) over ten years ago to 40 G and 100 G; and even to 4006 and 1 terabyte per second (IT) in the future. For a network system in which a single-channel rate is below 1000 a conventional spectrum interval of 50 gigahertz (GHz) can meet a requirement. However, when the bit rate reaches 400 G, 1 T, and even higher, a spectral width occupied by a signal will exceed 50 GHz. Therefore, on an existing network, when a signal with a rate of 400 G or above is borne, a high-rate signal needs to be divided into multiple low-rate signals. For example, a 400 G signal is divided into four 100 G signals, and each 100 G signal is borne by using a fixed frequency band of 50 GHz. This is feasible regarding network implementation, but inevitably causes a decrease in spectrum utilization in comparison with a continuous 400 G signal.",
+                        "Therefore, to improve network spectrum resource utilization, a new network emerges\u2014a \u201cflexible bandwidth optical network\u201d. Bandwidth occupied by different signals is no longer limited to 50 GHz or an integer multiple of 50 GHz, but exists in a form of a flexible interval (Flexgrid). A change in a network structure inevitably requires adaptation of various optical components to the change. The optical components include a core switch component, that is, a wavelength selective switch (WSS). An early WSS is mainly an optical engine based on a micro-electro-mechanical system. However, there is a particular gap between various micromirrors in the micro-electro-mechanical system. Therefore, when multiple micromirrors are required for implementing a wide-spectrum filter, some grooves are generated between spectra. As a result, a spectral width of the filter cannot meet a \u201cFlexgrid\u201d requirement. In view of this, a new optical engine based on liquid crystal on silicon (LOS) is provided in the industry. The LCOS can implement a \u201cFlexgrid\u201d filter function, and therefore gradually becomes a mainstream technology.",
+                        "An operating principle of the LCOS lies in that different voltages are loaded on different pixels of the LCOS. Because of a birefringent effect of liquid crystal, the different voltages correspond to different phase delays, thereby forming a structure similar to a blazed grating. A diffraction angle of the blazed grating depends on a grating period of the blazed grating. Therefore, a diffraction angle of incident light may be controlled merely by changing grating periods corresponding to different positions on the LCOS. This allows diffractive light to be output at different ports of the WSS, implementing a WSS function. Because there are millions of pixels on the LCOS and a gap between the pixels is very small, the Flexgrid filter function can be implemented very flexibly, and in addition, there is no spectrum gap.",
+                        "However, because the operating principle of the LCOS is based on a diffraction effect, when diffractive light required by us is obtained, light at high diffraction orders is also generated due to a phase error. As shown in FIG. 1, FIG. 1 is a schematic structural diagram of a WSS. FIG. 1 is a schematic diagram for describing a crosstalk generation cause, and does not show a complete structure of the WSS. In FIG. 1, light entering an input port undergoes a series of processing (which may include deflection processing, demultiplexing and multiplexing processing, and the like) in the black box, and then is incident on an LCOS panel. A corresponding pixel on the LCOS diffracts required +1-order diffractive light to a corresponding output port according to a corresponding configuration. However, in this case, light at other diffraction orders may possibly enter other output ports. After entering a corresponding input port, diffractive light such as 0-order, 1-order, and +2-order diffractive light may possibly cause crosstalk on an optical link subsequently. For example, in FIG. 1, when the +1-order diffractive light needs to be output from output port 3, light at other diffraction orders may be possibly output from other ports as crosstalk light, causing intra-frequency crosstalk. However, once entering the corresponding output ports, this part of signals are difficult to eliminate, affecting system performance. Therefore, to improve the system performance of the LCOS-based WSS, a solution needs to be found to effectively suppress crosstalk signals."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate high-speed networks",
+                        "describe limitations of current networks",
+                        "introduce flexible bandwidth optical networks",
+                        "describe limitations of micro-electro-mechanical systems",
+                        "introduce liquid crystal on silicon technology",
+                        "describe operating principle of LCOS",
+                        "describe limitations of LCOS",
+                        "illustrate crosstalk generation",
+                        "motivate need for crosstalk suppression"
+                    ],
+                    "num_characters": 4513,
+                    "outline_medium": [
+                        "motivate high-speed networks",
+                        "describe limitations of existing networks",
+                        "introduce flexible bandwidth optical networks",
+                        "describe limitations of existing WSS"
+                    ],
+                    "outline_short": [
+                        "motivate flexible bandwidth optical network",
+                        "limitations of early WSS"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "In view of this, embodiments of the disclosure provide a WSS.",
+                        "An embodiment of the disclosure provides a WSS. The WSS includes a fiber array, an LCOS panel, and a lens component. The fiber array includes multiple ports that are arranged in a column. The multiple ports include an input port and multiple output ports. Two outermost ports of the multiple ports that are arranged in a column are a first port and a second port. An included angle between an intersecting line of the LCOS panel and a first plane and incident light entering the LCOS panel is equal to (90\u2212\u03b8) degrees. The first plane is a plane on which the incident light entering the LCOS panel and emergent light exiting the LCOS panel are located. A wavelength of the incident light is the same as a wavelength of the emergent light and \u03b8 is less than 15 degrees and meets the following condition:",
+                        "\\(\\theta > {\\frac{\\arctan \ue8a0\\left( {l_{1}/f} \\right)}{2} + {\\arctan \ue8a0\\left( {l_{2}/f} \\right)}}\\)",
+                        "l1 is a distance between the input port and the first port and l2 is a distance between the input port and the second port. The first port and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light. The second port and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light and f is a focal length of the lens component on the first plane.",
+                        "An embodiment of the disclosure provides another WSS. The WSS includes a fiber array, an LCOS panel, and a lens component. The fiber array includes an input port and multiple output ports. The input port and the multiple output ports are located in a straight line. An included angle between the LCOS panel and a first plane is equal to (90\u2212\u03b8) degrees. The first plane is a plane on which incident light entering the LCOS panel and +1-order diffractive light exiting the LCOS panel are located. A grating period \u039b1 that is of a blazed-grating-like structure on the LCOS panel and that is in a direction perpendicular to the straight line meets the following condition: \u039b1=\u03bb/2 sin \u03b8. A grating period \u039b2 that is of the blazed-grating-like structure on the LCOS panel and that is in a direction parallel to the straight line meets the following condition: \u039b2=\u03bb/(l/f), where \u03bb is a wavelength of the incident light. l is a distance between the input port and a destination output port and f is a focal length of the lens component on the first plane.",
+                        "According to the WSS provided by the embodiments of the disclosure, without adding any additional component, other diffractive light different from +1-order diffractive light can be prevented from entering any input port or output port. This suppresses crosstalk with low costs."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce WSS",
+                        "describe fiber array",
+                        "describe LCOS panel",
+                        "describe lens component",
+                        "summarize benefits of WSS"
+                    ],
+                    "num_characters": 2703,
+                    "outline_medium": [
+                        "introduce WSS embodiment",
+                        "describe WSS configuration"
+                    ],
+                    "outline_short": [
+                        "summarize WSS embodiment"
+                    ]
+                },
+                {
+                    "title": "DESCRIPTION OF EMBODIMENTS",
+                    "paragraphs": [
+                        "The following clearly describes the technical solutions in the embodiments of the disclosure with reference to the accompanying drawings in the embodiments of the disclosure. The described embodiments are some but not all of the embodiments of the disclosure. All other embodiments obtained by a person of ordinary skill in the art based on the embodiments of the disclosure without creative efforts shall fall within the protection scope of the disclosure.",
+                        "The disclosure provides an LCOS-based wavelength selective switch, which can effectively suppress crosstalk diffractive light. It should be noted that, the \u201cconnection\u201d in the embodiments of the disclosure refers to a connection on an optical path. A person skilled in the art may understand that, specific optical components may not necessarily have an essential physical contact-type connection relationship, but spatial positions of these optical components and component features of these optical components enable these optical components to form a connection relationship on an optical path.",
+                        "As shown in FIG. 2, an LCOS-based WSS includes a fiber array configured for input and output, a deflection processing component configured for deflection processing, a reflection component configured to reflect light, a lens component configured to focus light, a demultiplexing and multiplexing component configured for demultiplexing and multiplexing, and an LCOS panel. Optionally, the WSS may further include a collimator array that is located after the fiber array and that is configured to collimate light. Optionally, the deflection processing component may include a beam deformation and polarization conversion component. Optionally, the lens component may be one lens or a combination of multiple lenses. Optionally, the demultiplexing and multiplexing component may be a grating.",
+                        "FIG. 2 is merely a schematic diagram. In reality, light exiting the lens component is parallel light instead of scattered light. FIG. 2 schematically shows a corresponding light ray merely for describing expansion of various wavelengths in a horizontal direction. The LCOS-based WSS is a mature technology. Functions and spatial position relationships of various components in the figure (including components not shown in the figure) are well-known. The embodiments of the disclosure describe in detail only the LCOS panel that changes relative to a conventional WSS, and do not provide details about other known components and position relationships. In addition, the embodiments of the disclosure are also applicable to another LCOS-based WSS other than that in FIG. 2. Only a corresponding LCOS panel is correspondingly changed, and functions and position relationships of other components of the WSS may remain unchanged. In addition, a modified part of the LCOS panel in the embodiments of the disclosure is also applicable to a future potential WSS of another structure.",
+                        "In FIG. 2, a straight line formed by the fiber array is referred to as a port direction (that is, a vertical direction in FIG. 2) in the embodiments of the disclosure. Correspondingly, in 2, a direction in which light with various wavelengths scatters after passing through the demultiplexing and multiplexing component is referred to as a wavelength direction (that is, a horizontal direction in FIG. 2) in the embodiments of the disclosure.",
+                        "Multiple patents, such as patents with publication numbers of U.S. Pat. No. 8,437,634 B2, U.S. Patent Publication US20140023316 A1, PCT Publication WO2014027204 A1, Chinese Patent Application Publication CN203311035 U, and Chinese Patent Application Publication CN102879864 B, include a structure of a conventional WSS. Content of these patents is also combined in this patent.",
+                        "An existing LCOS-based WSS can implement Flexpid filtering for spectrum signals. However, when LCOS is used as an optical engine to load a grating, multiple diffraction orders are generated. A prime light intensity order is a +1 order. Light at this order is output at a destination output port as emergent light. At the same time, light at other orders is output at other ports as crosstalk signals, causing infra-frequency crosstalk between WSS ports. A value of the crosstalk is generally above \u221225 decibel (dB). However, a system generally has a crosstalk requirement of less than \u221230 dB or even lower for a single WSS. Therefore, for the existing LCOS-based WSS, a crosstalk suppression method needs to be found.",
+                        "An embodiment of the disclosure provides a solution of effectively suppressing port crosstalk. As shown in FIG. 3, an output port plane of a WSS is divided into a +1-order signal light area and areas of crosstalk light at other orders. A white area in FIG. 3 is the +1-order diffractive light area. A circle in the figure represents an input or output port in a fiber array. FIG. 3, different from the white area, a black area and a gray area are the distribution areas of the diffractive light at other orders. Theoretically, crosstalk can be effectively suppressed provided that +1-order diffractive light is output from a corresponding output port in the white area in the figure and the diffractive light at other orders is correspondingly output from the peripheral black or gray area other than the white area.",
+                        "In an implementation, as shown in FIG. 4, only the fiber array, a lens component, and an LCOS panel are schematically shown in FIG. 4. White and black areas corresponding to the white and black areas in FIG. 3 are used only for description, and do not represent any component. FIG. 4 is equivalent to a schematic front view of FIG. 2. In FIG. 4, signal light is input through an input port of the fiber array. After switching is performed in the WSS, +1-order diffractive light of the signal light is transmitted to a destination output port from the white area in FIG. 4. Diffractive light at other orders is transmitted to the black area, that is, the diffractive light at other orders does not enter any output port. Therefore, no crosstalk is caused. In this implementation of the disclosure, the LCOS panel is deflected by a small angle by using a wavelength direction (the horizontal direction in FIG. 2) as an axis.",
+                        "In another implementation, as shown in FIG. 5, only the fiber array, a demultiplexing and multiplexing component, a lens component, and an LCOS panel are schematically shown in FIG. 5. White and gray areas corresponding to the white and gray areas in FIG. 3 are used only for description, and do not represent any component. FIG. 5 is equivalent to a schematic top view of FIG. 2. It can be learned from FIG. 5 that, after light output from the fiber array undergoes optical switching in the WSS, +1-order diffractive light returns on a vertical plane and is transmitted to a corresponding destination output port. Diffractive light at other orders is transmitted to the gray area, that is, the diffractive light at other orders does not enter any output port, thereby effectively suppressing crosstalk. Three solid return lines in the figure represent three beams of +1-order diffractive light with different wavelengths. In this implementation of the disclosure, the LCOS panel is deflected by a small angle by using a port direction (the vertical direction in FIG. 2) as an axis, and a blazed-grating-like structure on the LCOS panel is a tilt structure.",
+                        "Specifically, corresponding to the implementation in FIG. 4, an embodiment of the disclosure provides a wavelength selective switch WSS. The WSS includes a fiber array, a liquid crystal on silicon LCOS panel, and a lens component. The fiber array includes multiple ports that are arranged in a column. The multiple ports include an input port and multiple output ports. Two outermost ports of the multiple ports that are arranged in a column are a first port and a second port. An included angle between an intersecting line of the LCOS panel and a first plane and incident light entering the LCOS panel is equal to (90\u2212\u03b8) degrees. The first plane is a plane on which the incident light entering the LCOS panel and emergent light exiting the LCOS panel are located. A wavelength of the incident light is the same as a wavelength of the emergent light and \u03b8 is less than 15 degrees and meets the following condition:",
+                        "\\(\\theta > {\\frac{\\arctan \ue8a0\\left( {l_{1}/f} \\right)}{2} + {\\arctan \ue8a0\\left( {l_{2}/f} \\right)}}\\)",
+                        "l1 is a distance between the input port and the first port. l2 is a distance between the input port and the second port. The first port and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light. The second port and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light and f is a focal length of the lens component on the first plane. It should be noted that focal lengths of the lens component may be the same or may be different in different directions. In all implementations of the disclosure, correspondingly, refers to a focal length of the lens component in a port direction, that is, the focal length on the first plane.",
+                        "Specifically, a grating period \u039b of a blazed-grating-like structure on the LCOS panel meets the following condition: \u039b=\u03bb/(sin \u03b8+sin B1). B1 is a diffraction angle of +1-order diffractive light in the emergent light, and \u03bb is the wavelength of the incident light and the emergent light. When a destination output port of the +1-order diffractive light and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light, B1 is equal to \u03b8+arctan(l3/f). When a destination output port of the +1-order diffractive light and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light, B1 is equal to \u03b8\u2212arctan(l3/f). l3 is a distance between the destination output port and the input port.",
+                        "Optionally, \u03b8 is less than 5 degrees.",
+                        "The blazed-grating-like structure on the LCOS panel is configured to adjust a diffraction angle of diffractive light at various orders in the emergent light, and the first plane is parallel to a straight line in which the multiple ports that are arranged in a column are located.",
+                        "The WSS further includes a deflection processing component, a reflection component, and a demultiplexing and multiplexing component.",
+                        "Optionally, in this embodiment, the multiple ports may include one input port and multiple output ports, or may include multiple input ports and multiple output ports. In the following embodiment, one input port and multiple output ports are used as an example. For a case of multiple input ports and multiple output ports, description about each input port is the same as that about the input port in the case of one input port and multiple output ports. The input port may be located in the middle of the multiple ports that are arranged in a column, or may be located at either end of the multiple ports that are arranged in a column.",
+                        "To clearly describe the specific implementation principle of the embodiment in FIG. 4, an embodiment of the disclosure provides FIG. 6. A conventional LCOS panel is generally perpendicular to incident light. However, in FIG. 6, an included angle of (90\u2212\u03b8) degrees is formed between an LCOS panel and incident light. To enable +1-order diffractive light to enter a corresponding destination output port of a fiber array and 0-order diffractive light and +2-order diffractive light to be located outside a white area, \u03b8 is greater than a specific value. This embodiment of the disclosure provides a \u03b8 value in a critical condition. Provided that a deflection angle of the LCOS panel is greater than the \u03b8 value, it can be ensured that the +1-order diffractive light enters the corresponding destination output port of the fiber array and that the 0-order diffractive light and the +2-order diffractive light are located outside the white area.",
+                        "FIG. 6 shows a schematic diagram of a corresponding critical state. When the included angle of (90\u2212\u03b8) degrees is formed between the LCOS panel and the incident light, differences between diffraction angles of diffractive light at adjacent orders are equal in a case of a small diffraction angle. In this way, an included angle \u03b1+\u03b2 between the +2-order diffractive light and the +1-order diffractive light should be equal to an included angle 2\u03b8\u2212\u03b2 between the +1-order diffractive light and the 0-order diffractive light. That is, \u03b1+\u03b2=2\u03b8\u2212\u03b2. Therefore, \u03b8=\u03b1/2+\u03b2. In addition, \u03b1=arctan(l1/f), and \u03b2=arctan(l2/f). Therefore, the critical \u03b8 value is as follows.",
+                        "\\(\\theta = {\\frac{\\arctan \ue8a0\\left( {l_{1}/f} \\right)}{2} + {\\arctan \ue8a0\\left( {l_{2}/f} \\right)}}\\)",
+                        "l1 is a distance between the input port and an outermost output port on a left side in FIG. 6; l2 is a distance between the input port and an outermost output port on a right side; and f is a focal length of the lens component on the first plane.",
+                        "In this critical state, the 0-order diffractive light is obviously not transmitted to the output port, and the +2-order diffractive light is transmitted to the outermost port on the left side. Therefore, provided that the corresponding \u03b8 value is greater than this critical value, the +2-order diffractive light is transmitted to a black area in FIG. 6, and does not enter any port, thereby effectively suppressing crosstalk.",
+                        "In a range in which the \u03b8 value is greater than this critical value, a small \u03b8 value should be selected as possible. Generally the \u03b8 value is not greater than 15 degrees. Preferably, the \u03b8 value is not greater than 10 degrees, or not greater than 5 degrees, or not greater than 3 degrees.",
+                        "In a WSS structure in this embodiment of the disclosure, a corresponding grating period \u039b of a blazed-grating-like structure on the LCOS panel may be determined by using a grating equation \u039b(sin \u03b8+sin Bm)=m\u03bb when light is transmitted to different ports. In the grating equation, \u03b8 is an incidence angle of the incident light, Bm is a diffraction angle of diffractive light at an mth order, and \u03bb is a corresponding optical wavelength. Because a required optical signal is the +1-order diffractive light, the foregoing grating equation is converted to \u039b(sin \u03b8+sin B1)=\u03bb. Therefore, \u039b=\u03bb/(sin \u03b8+sin B1). As shown in FIGS. 7 and 8, if a destination output port that the optical signal is transmitted to and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light, B1 is equal to \u03b8+arctan(l3/f). When a destination output port of the +1-order diffractive light and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light, B1 is equal to \u03b8\u2212arctan(l3/f) and l3 is a distance between the destination output port and the input port.",
+                        "In the following, a 1\u00d74 WSS is used as an example to describe how to suppress crosstalk of light at a high diffraction order.",
+                        "As shown in FIG. 9, the WSS includes 1\u00d74 ports in this embodiment. Two ports are disposed on each side of an input port. A distance between adjacent ports is 250 micrometer (um). A focal length of a lens is 75 millimeter (mm). Herein, a manner of rotating LCOS clockwise is used.",
+                        "In this implementation, l1=l2=500 um, and f=75 mm. According to",
+                        "\\({\\theta = {\\frac{\\arctan \ue8a0\\left( {l_{1}/f} \\right)}{2} + {\\arctan \ue8a0\\left( {l_{2}/f} \\right)}}},\\)",
+                        "it can be learnt that a value of \u03b8 in a critical state is 0.573 degree (\u00b0). Then, according to a value range of \u03b8, a specific \u03b8 value may be determined. Herein, \u03b8 may be set to 0.6\u00b0, and the LCOS panel is rotated to a corresponding angle.",
+                        "Then, according to port positions and the \u03b8 value, a wavelength value is 1.55 um. By using a grating diffraction equation \u039b=\u03bb/(sin \u03b8+sin B1), grating periods of a blazed-grating-like structure on the LCOS panel that are corresponding to four output ports disposed from left to right are: 56.2 um, 63.9 um, 88 um, and 109.6 um.",
+                        "Grating periods of the blazed-grating-like structure on the LCOS panel that correspond to different wavelengths and different output ports may be obtained by using different wavelength values. A WSS function can be implemented by importing a correspondence among an output port, a wavelength, and a grating period into an LCOS chip.",
+                        "A person skilled in the art clearly knows that, for a given WSS structure, incident light, input from a specific input port, with a specific wavelength is incident on a fixed pixel (pixel) on an LCOS panel. The pixel or multiple pixels are a set of a series of liquid crystal. Because of a birefringent effect of the liquid crystal, a blazed-grating-like structure is formed under an external voltage. A grating period of the blazed-grating-like structure can be adjusted by adjusting a corresponding external voltage. It may be known from the foregoing grating diffraction equation \u039b=2/(sin \u03b8+sin B1) that, once the grating period \u039b, a wavelength \u03bb of the incident light, and an incidence angle \u03b8 are determined, a diffraction angle B1 of a corresponding +1-order diffraction light, that is, required signal light, is determined. Emergent diffractive light returns, for output, to a fiber array by using a lens component. Relative to the incident light, the +1-order diffractive light has corresponding displacement in a straight line in which the fiber array is located. A value of the displacement can be adjusted by adjusting the corresponding external voltage. When the external voltage is appropriate, the diffractive light may be output from a corresponding destination output port.",
+                        "According to the WSS provided by this embodiment of the disclosure, without adding any additional component, other diffractive light different from +1-order diffractive light can be prevented from entering any input port or output port, provided that an LCOS panel is correspondingly deflected. This suppresses crosstalk with low costs.",
+                        "Corresponding to FIG. 5, an embodiment of the disclosure provides another LCOS-based. WSS. The WSS includes a fiber array, an LCOS panel, and a lens component. The fiber array includes an input port and multiple output ports. The input port and the multiple output ports are located in a straight line. An included angle between the LCOS panel and a first plane is equal to (90\u2212\u03b8) degrees. The first plane is a plane on which incident light entering the LCOS panel and +1-order diffractive light exiting the LCOS panel are located. A grating period \u039b1 that is of a blazed-grating-like structure on the LCOS panel and that is in a direction perpendicular to the straight line meets the following condition: \u039b1=\u03bb/2 sin \u03b8. A grating period \u039b1 that is of the blazed-grating-like structure on the LCOS panel and that is in a direction parallel to the straight line meets the following condition: \u039b2=\u03bb/(l/f). \u03bb is a wavelength of the incident light. l is a distance between the input port and a destination output port. f is a focal length of the lens component on the first plane.",
+                        "Optionally, \u03b8 is less than 5 degrees. For example, \u03b8 may be 1 degree, 1.5 degrees, 2 degrees, 3 degrees, or 4 degrees.",
+                        "Optionally, the blazed-grating-like structure on the LCOS panel is configured to adjust a diffraction angle of diffractive light at various orders in emergent light, and the first plane is parallel to the straight line.",
+                        "Optionally, the WSS further includes a deflection processing component, a reflection component, and a demultiplexing and multiplexing component.",
+                        "In this implementation of the disclosure, the LCOS panel is deflected by a small angle by using a port direction (the vertical direction in FIG. 2) as an axis, and the blazed-grating-like structure on the LCOS panel is a tilt structure.",
+                        "As shown in FIG. 10, FIG. 10 is corresponding to FIG. 5. A white box and a gray box behind the fiber array in FIG. 10 are corresponding to the white box and the gray box in FIG. 3, do not represent any component, and are used only to describe an exit scope of the diffractive light. In FIG. 10, the LCOS panel is rotated by \u03b8 by using the port direction (the vertical direction in FIG. 2) as an axis. If the LCOS panel is only rotated and no other processing is performed, all diffractive light should exit along a direction of 0-order diffractive light in FIG. 10. In this embodiment of the disclosure, to enable the +1-order diffractive light to return to a corresponding destination output port along the plane on which the incident light is located, in addition to rotating the LCOS panel by \u03b8, a blazed-grating-like structure configured to adjust displacement of the +1-order diffractive light in a wavelength direction is further configured. At the same time, a blazed-grating-like structure configured to adjust displacement of the +1-order diffractive light in the port direction is further configured, so as to adapt to a destination output port through which the +1-order diffractive light exits. A comprehensive effect of the two blazed-grating-like structures is that, an actual blazed-grating-like structure on the LCOS panel tilts.",
+                        "The solution and principle of this embodiment of the disclosure are described in detail below with reference to FIG. 11. In FIG. 11, black points indicate diffractive light at various orders, circles indicate ports of the fiber array, and numbers indicate the orders of the diffractive light. As shown in FIG. 11, a part (a) is used to indicate a situation of various orders of diffractive light returned from ports of a fiber array in a conventional WSS. An LCOS panel in the part (a) is not deflected in any manner, and no blazed-grating-like structure configured to adjust displacement in a wavelength direction is configured on the a blazed-grating-like structure of the LCOS is deflected, or a tilt blazed-grating-like structure is configured but the LCOS is not deflected, various orders of emergent diffractive light shown in a part (h) in FIG. 11 may be obtained from the ports of the fiber array. If the LCOS panel is deflected but the blazed-grating-like structure on the conventional LCOS panel is not changed, various orders of emergent diffractive light shown in a part (c) in FIG. 11 may be obtained from the ports of the fiber array. In this embodiment of the disclosure, the LCOS panel is rotated, and the blazed-grating-like structure on the LCOS panel is changed correspondingly, so that various orders of emergent diffractive light shown in a part (d) in FIG. 11 may be obtained from the ports of the fiber array.",
+                        "It can be seen from the part (d) in FIG. 11 that, +1-order diffractive light is output from a corresponding port, and other orders of diffractive light bypass ports of the fiber array, thereby effectively suppressing crosstalk. Further, a grating period of the blazed-grating-like structure in the port direction on the LCOS panel is adjusted, and therefore, displacement of corresponding +1-order diffractive light in the port direction may be adjusted, so that the +1-order diffractive light is output from a corresponding output port.",
+                        "Specifically, an included angle between the LCOS panel and a first plane is equal to (90\u2212\u03b8) degrees. The first plane is a plane on which incident light entering the LCOS panel and +1-order diffractive light exiting the LCOS panel are located. That is, the LCOS panel in FIG. 10 is deflected by an angle of \u03b8. In this case, to enable the +1-order diffractive light to exit from the first plane, a diffraction angle in the wavelength direction should be \u03b8. Therefore, according to a grating equation \u039b1(sin \u03b8+sin Bm)=m\u03bb, the grating period \u039b1 that is of the blazed-grating-like structure on the LCOS panel and that is in the direction perpendicular to the straight line meets the following condition: \u039b1=\u03bb/2 sin \u03b8. Herein, m in the grating equation is equal to 1, and the diffraction angle of the +1-order diffractive light is Bm=B1=\u03b8. In this way, it can be ensured that the +1-order diffractive light is output from a direction of a straight line in which multiple ports of the fiber array are located. Further, to adjust the displacement of the +1-order diffractive light in the port direction, according to a grating equation \u039b2(sin \u03c6+sin Bm)=m\u03bb, the grating period \u039b2 that is of the blazed-grating-like structure on the LCOS panel and that is in the direction parallel to the straight line meets the following condition: \u039b2=\u03bb/(l/f). Herein, \u03c6 is an incidence angle of the incident light in the port direction, a value of \u03c6 is equal to 0, and m is equal to 1. In addition, because the distance l between the destination output port and the input port is far less than f, sin Bm=sin B1=tan B1=l/f.",
+                        "For a detailed method for configuring the grating period of the blazed-grating-like structure on the LCOS panel, reference may be made to the foregoing descriptions, and details are not described herein.",
+                        "According to the WSS provided by this embodiment of the disclosure, without adding any additional component, other diffractive light different from +1-order diffractive light can be prevented from entering any input port or output port, provided that an LCOS panel is correspondingly deflected and a corresponding blazed-grating-like structure is configured. This suppresses crosstalk with low costs.",
+                        "The foregoing descriptions are merely specific implementations of the disclosure, but are not intended to limit the protection scope of the disclosure. Any variation or replacement readily figured out by a person skilled in the art within the technical scope disclosed in the disclosure shall fall within the protection scope of the disclosure. Therefore, the protection scope of the disclosure shall be subject to the protection scope of the claims."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce LCOS-based wavelength selective switch",
+                        "define connection on optical path",
+                        "describe LCOS-based WSS structure",
+                        "introduce fiber array and its function",
+                        "introduce deflection processing component and its function",
+                        "introduce reflection component and its function",
+                        "introduce lens component and its function",
+                        "introduce demultiplexing and multiplexing component and its function",
+                        "introduce LCOS panel and its function",
+                        "describe optional components of WSS",
+                        "explain limitations of conventional WSS",
+                        "motivate need for crosstalk suppression method",
+                        "describe solution for suppressing port crosstalk",
+                        "illustrate output port plane of WSS",
+                        "describe +1-order signal light area and areas of crosstalk light",
+                        "illustrate implementation of WSS with fiber array, lens component, and LCOS panel",
+                        "describe deflection of LCOS panel by small angle",
+                        "illustrate another implementation of WSS with fiber array, demultiplexing and multiplexing component, lens component, and LCOS panel",
+                        "describe deflection of LCOS panel by small angle using port direction as axis",
+                        "describe specific implementation of WSS with fiber array, LCOS panel, and lens component",
+                        "define included angle between LCOS panel and incident light",
+                        "describe condition for \u03b8 value",
+                        "describe grating period of blazed-grating-like structure on LCOS panel",
+                        "illustrate specific implementation principle of embodiment",
+                        "describe critical condition for \u03b8 value",
+                        "provide formula for critical \u03b8 value",
+                        "describe WSS structure",
+                        "determine grating period",
+                        "explain grating equation",
+                        "calculate \u03b8 value",
+                        "set \u03b8 value",
+                        "determine wavelength value",
+                        "calculate grating periods",
+                        "implement WSS function",
+                        "explain birefringent effect",
+                        "describe blazed-grating-like structure",
+                        "adjust grating period",
+                        "output diffractive light",
+                        "suppress crosstalk",
+                        "describe another LCOS-based WSS",
+                        "explain fiber array and LCOS panel",
+                        "determine grating periods",
+                        "optionally set \u03b8 value",
+                        "configure blazed-grating-like structure",
+                        "deflect LCOS panel",
+                        "describe tilt structure",
+                        "explain diffraction angle",
+                        "adjust displacement of diffractive light",
+                        "describe comprehensive effect",
+                        "summarize WSS principle"
+                    ],
+                    "num_characters": 25567,
+                    "outline_medium": [
+                        "introduce LCOS-based wavelength selective switch",
+                        "define connection on optical path",
+                        "describe LCOS-based WSS structure",
+                        "explain limitations of conventional WSS",
+                        "motivate need for crosstalk suppression method",
+                        "describe solution for suppressing port crosstalk",
+                        "illustrate output port plane of WSS",
+                        "describe implementation of WSS with deflected LCOS panel",
+                        "describe another implementation of WSS with deflected LCOS panel",
+                        "specify structure of WSS with fiber array, LCOS panel, and lens component",
+                        "describe blazed-grating-like structure on LCOS panel",
+                        "illustrate critical state of LCOS panel deflection",
+                        "derive critical \u03b8 value for crosstalk suppression",
+                        "describe WSS structure",
+                        "derive grating equation",
+                        "apply grating equation to determine grating period",
+                        "describe 1x4 WSS implementation",
+                        "calculate \u03b8 value and grating periods",
+                        "explain WSS function",
+                        "describe LCOS panel and blazed-grating-like structure",
+                        "introduce another LCOS-based WSS",
+                        "describe grating periods in different directions",
+                        "explain deflection of LCOS panel and blazed-grating-like structure",
+                        "illustrate WSS principle with figures",
+                        "summarize WSS advantages"
+                    ],
+                    "outline_short": [
+                        "introduce LCOS-based wavelength selective switch",
+                        "describe components of WSS",
+                        "motivate need for crosstalk suppression",
+                        "describe solution for suppressing port crosstalk",
+                        "detail implementation of LCOS panel deflection",
+                        "provide mathematical conditions for effective crosstalk suppression",
+                        "describe WSS structure",
+                        "derive grating equation",
+                        "apply grating equation to WSS",
+                        "describe LCOS panel configuration",
+                        "illustrate WSS operation",
+                        "summarize WSS benefits"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A wavelength selective switch (WSS), comprising:\na liquid crystal on silicon (LCOS) panel;\na fiber array, wherein the fiber array comprises multiple ports that are arranged in a column, wherein the multiple ports comprise an input port and multiple output ports, and wherein two outermost ports of the multiple ports that are arranged in a column are a first port and a second port; and\na lens component, wherein an included angle between an intersecting line of the LCOS panel and a first plane and incident light entering the LCOS panel is (90\u2212\u03b8) degrees, wherein the first plane is a plane on which the incident light entering the LCOS panel and emergent light exiting the LCOS panel are located, wherein a wavelength of the incident light is same as a wavelength of the emergent light, wherein \u03b8 is less than 15 degrees and is\n\n\n\\({\\theta > {\\frac{\\arctan \ue8a0\\left( {l_{1}/f} \\right)}{2} + {\\arctan \ue8a0\\left( {l_{2}/f} \\right)}}},\\)\n\nwherein l1 is a distance between the input port and the first port, l2 is a distance between the input port and the second port, wherein the first port and the included angle of (90\u2212\u03b8) degrees is located on a same side of the incident light, wherein the second port and the included angle of (90\u2212\u03b8) degrees are separately located on two sides of the incident light, and wherein f is a focal length of the lens component on the first plane.",
+        "2. The WSS according to claim 1, wherein a grating period \u039b of a blazed-grating-like structure on the LCOS panel meets a condition of \u039b=\u03bb/(sin \u03b8+sin B1) wherein B1 is a diffraction angle of a +1-order diffractive light in the emergent light and \u03bb is the wavelength of the incident light and the emergent light, wherein B1 is equal to \u03b8+arctan(l3/f) when a destination output port of the +1-order diffractive light and the included angle of (90\u2212\u03b8) degrees are located on a same side of the incident light, and wherein l3 is a distance between the destination output port and the input port.",
+        "3. The WSS according to claim 1, wherein \u03b8 is less than 5 degrees.",
+        "4. The WSS according to claim 1, wherein a blazed-grating-like structure on the LCOS panel is configured to adjust a diffraction angle of diffractive light at various orders in the emergent light, and wherein the first plane is parallel to a straight line in which the multiple ports that are arranged in a column are located.",
+        "5. The WSS according to claim 1, further comprising:\na deflection processing component;\na reflection component;\na demultiplexing component; and\na multiplexing component.",
+        "6. A wavelength selective switch (WSS), comprising:\na liquid crystal on silicon (LCOS) panel;\na lens component; and\na fiber array, wherein the fiber array comprises an input port and multiple output ports, wherein the input port and the multiple output ports are located in a straight line, wherein an included angle between the LCOS panel and a first plane is equal to (90\u2212\u03b8) degrees, wherein the first plane is a plane on which incident light entering the LCOS panel and a +1-order diffractive light exiting the LCOS panel are located, wherein a first grating period \u039b1 of a blazed-grating-like structure on the LCOS panel that is in a direction perpendicular to the straight line meets a condition of \u039b1=\u03bb/2 sin \u03b8, wherein a second grating period \u039b2 of the blazed-grating-like structure on the LCOS panel that is in a direction parallel to the straight line meets a condition of \u039b2=\u03bb/(l/f), and wherein \u03bb is a wavelength of the incident light, l is a distance between the input port and a destination output port, and f is a focal length of the lens component on the first plane.",
+        "7. The WSS according to claim 6, wherein \u03b8 is less than 5 degrees.",
+        "8. The WSS according to claim 6, wherein the blazed-grating-like structure on the LCOS panel is configured to adjust a diffraction angle of diffractive light at various orders in emergent light, and wherein the first plane is parallel to the straight line.",
+        "9. The WSS according to claim 6, wherein the WSS further comprises:\na deflection processing component;\na reflection component;\na demultiplexing component; and\na multiplexing component.",
+        "10. The WSS according to claim 1, wherein a grating period \u039b of a blazed-grating-like structure on the LCOS panel meets \u039b=\u03bb/(sin \u03b8+sin B1), wherein B1 is a diffraction angle of a +1-order diffractive light in the emergent light and \u03bb is the wavelength of the incident light and the emergent light, B1 is equal to \u03b8\u2212arctan(l3/f) when a destination output port of the +1-order diffractive light and the included angle of (90\u2212\u03b8) degrees is separately located on two sides of the incident light, and wherein l3 is a distance between the destination output port and the input port."
+    ]
+}

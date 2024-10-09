@@ -1,0 +1,166 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to quantum computing
+
+## SUMMARY
+
+- introduce mixed-binary constrained optimization
+- describe system embodiment
+- describe method embodiment
+
+## DETAILED DESCRIPTION
+
+- disclaim limitations of embodiments
+- introduce decision-making problems
+- motivate quantum computing
+- describe quantum computing principles
+- introduce mixed-binary constrained optimization
+- describe MBCO problem structure
+- introduce system for facilitating MBCO
+- describe system components
+- introduce hybrid optimization computing system
+- describe quantum processor
+- describe classical processor
+- introduce MBCO data
+- introduce problem data
+- describe quantum processor functionality
+- describe classical processor functionality
+- introduce binary unconstrained optimization process
+- describe binary unconstrained optimization process
+- introduce convex constrained optimization process
+- describe convex constrained optimization process
+- introduce alternating direction method of multipliers
+- describe ADMM process
+- introduce quantum measurement data
+- introduce optimization data
+- describe iterative hybrid optimization
+- introduce solution data
+- describe solution data
+- introduce convergence criterion
+- describe quantum state
+- illustrate system architecture
+- describe system functionality
+- introduce technical improvements
+- describe technical improvements
+- introduce quantum device improvements
+- describe quantum device improvements
+- introduce classical processor functionality
+- describe classical processor functionality
+- introduce machine-executable components
+- describe machine-executable components
+- introduce classical processor
+- employ probabilistic analysis
+- utilize inference component
+- employ machine-learning techniques
+- perform machine learning computations
+- highlight limitations of human processing
+- describe quantum processor capabilities
+- highlight advantages of system
+- illustrate system 200
+- describe quantum processor function
+- perform binary unconstrained optimization
+- map process onto qubits
+- process binary variables
+- associate with complexity class
+- perform based on variational quantum eigensolver
+- illustrate system 300
+- perform convex constrained optimization
+- provide input data for binary optimization
+- update binary optimization process
+- generate solution data
+- illustrate system 400
+- perform ADMM process
+- split data for processing
+- employ penalty term
+- determine data portion for processing
+- apply to mixed-binary linear programming
+- illustrate block diagram of formulation 500
+- define variables and constraints of formulation 500
+- illustrate block diagram of modified formulation 500'
+- split formulation 500 into binary and continuous components
+- illustrate block diagram of system 700
+- describe binary unconstrained optimization process 202
+- describe convex constrained optimization process 302
+- illustrate flow diagram of method 800
+- perform binary unconstrained optimization process
+- perform convex constrained optimization process
+- determine whether criterion is satisfied
+- iterate between binary and convex optimization processes
+- generate solution data
+- describe complexity class of binary unconstrained optimization process
+- describe variational quantum eigensolver
+- describe phase estimation
+- illustrate operating environment 900
+- describe computer 912
+- describe processing unit 914
+- describe system memory 916
+- describe system bus 918
+- describe disk storage 924
+- describe interface 926
+- describe operating system 928
+- describe system applications 930
+- describe program modules 932
+- describe program data 934
+- describe input device(s) 936
+- describe interface port(s) 938
+- describe output device(s) 940
+- describe output adapter 942
+- describe remote computer(s) 944
+- describe memory storage device 946
+- describe network interface 948
+- describe communication connection 950
+- describe LAN technologies
+- describe WAN technologies
+- describe communication connection hardware/software
+- introduce cloud computing
+- define cloud computing
+- describe characteristics of cloud computing
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- describe service models
+- describe software as a service (SaaS)
+- describe platform as a service (PaaS)
+- describe infrastructure as a service (IaaS)
+- describe deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- illustrate cloud computing environment
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe resource provisioning
+- describe metering and pricing
+- describe security
+- describe user portal
+- describe service level management
+- describe service level agreement (SLA) planning and fulfillment
+- describe workloads layer
+- describe mapping and navigation
+- describe software development and lifecycle management
+- describe virtual classroom education delivery
+- describe data analytics processing
+- describe transaction processing
+- describe mixed-binary constrained optimization software
+- describe computer program product
+- describe computer readable storage medium
+- describe network adapter card or network interface
+- describe computer readable program instructions
+- describe flowchart illustrations and/or block diagrams
+- describe computer readable storage medium having instructions stored therein
+- describe special purpose hardware-based systems
+- describe program modules
+- describe distributed computing environments
+- describe component, system, platform, interface
+- describe apparatus with specific functionality
+- describe electronic components without mechanical parts
+- describe exemplary structures and techniques
+

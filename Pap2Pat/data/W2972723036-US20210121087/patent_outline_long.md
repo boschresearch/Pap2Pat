@@ -1,0 +1,211 @@
+# DESCRIPTION
+
+## FIELD
+
+- define field of technology
+
+## BACKGROUND
+
+- introduce intracranial pressure
+- describe risks of elevated ICP
+- discuss current invasive ICP measurement techniques
+- discuss limitations of current techniques
+- motivate need for noninvasive ICP estimation
+
+## SUMMARY
+
+- introduce system embodiment
+- describe data acquisition
+- estimate initial ICP value
+- obtain updated data
+- estimate updated ICP value
+- output updated ICP value
+- introduce software embodiment
+- describe data acquisition
+- estimate initial ICP value
+- obtain updated data
+- estimate updated ICP value
+- output updated ICP value
+
+## DETAILED DESCRIPTION
+
+- introduce limitations of conventional ICP estimation techniques
+- describe inaccuracy of ICP estimates due to lack of physiological data
+- explain limitations of mapping ABP and CBFV to ICP measurements
+- describe inaccuracies due to misalignment of ABP and CBFV waveforms
+- motivate development of new computational techniques for ICP estimation
+- introduce statistical model for ICP estimation
+- describe use of statistical model to compute initial ICP value
+- explain estimation of changes in ICP using additional ABP and CBFV data
+- describe dynamic updating of ICP value using patient data
+- introduce importance of accounting for biases in ICP estimates
+- describe use of patient's own data to compensate for biases
+- explain inaccuracy of ICP estimates due to misalignment of ABP and CBFV waveforms
+- introduce time offsets as parameters of the statistical model
+- describe determination of time offset values to align ABP and CBFV waveforms
+- summarize issues with estimating ICP
+- introduce embodiments of technology for estimating ICP
+- describe obtaining data identifying ABP and CBFV of a patient
+- explain estimation of initial ICP value using statistical model
+- describe estimation of updated ICP value using changes in ICP
+- introduce use of Bayesian statistics in estimating ICP
+- describe computation of posterior distribution of ICP values
+- explain use of prior distribution of ICP values
+- describe evaluation of time periods with low-quality data
+- introduce removal of low-quality time periods in estimating ICP
+- describe determination of changes in ICP using statistical model
+- explain use of optimization techniques for estimating parameter values
+- describe computation of ICP estimates during different time periods
+- introduce prediction of ICP value using ABP and CBFV data
+- describe estimation of change in ICP for a future time
+- explain use of predicted change in ICP in estimating updated ICP value
+- describe evaluation of possible values for parameters of statistical model
+- introduce prediction of change in ICP for a time period
+- describe comparison of predicted and data-derived changes in ICP
+- explain evaluation of time offsets between ABP and CBFV waveforms
+- describe alignment of ABP and CBFV waveforms using physiological constraints
+- introduce prediction of physiological signals using statistical model
+- describe computation of prediction errors
+- explain use of prediction errors in computing likelihood of ICP
+- describe computation of likelihood distribution of ICP for different time offsets
+- summarize various aspects and embodiments of technology described
+- introduce ICP estimation technique
+- describe ICP baseline value estimation
+- describe ICP change tracking technique
+- introduce statistical model
+- describe physiological model
+- describe Bayesian statistical techniques
+- describe time shift estimation technique
+- describe time offset range estimation
+- describe optimization routine
+- describe parameter value estimation
+- describe prediction change model
+- describe prediction error estimation
+- describe ABP and CBFV waveform alignment
+- describe shifted CBFV waveforms
+- describe optimization routine for model parameters
+- describe prediction of physiological signals
+- describe using one signal to predict another
+- describe optimization routine for ICP values
+- describe predicted CBFV waveforms
+- describe prediction errors
+- describe Bayesian statistical framework
+- describe likelihood of ICP computation
+- describe combining likelihood distributions
+- describe data processing pipeline
+- describe likelihood distribution of ICP
+- describe exponential relationship between likelihood and prediction errors
+- describe inverse relationship between likelihood and prediction errors
+- describe prior distribution of ICP
+- describe combining likelihood and prior distributions
+- describe posterior distribution of ICP
+- describe estimated ICP value determination
+- describe using posterior distribution for ICP estimation
+- conclude ICP estimation technique
+- introduce noninvasive intracranial pressure estimation method
+- describe first-order subject-specific model of cerebral vasculature
+- explain model-based estimation within probabilistic framework
+- outline process for establishing baseline ICP estimate
+- describe single-state model of cerebral autoregulatory dynamics
+- summarize performance characteristics of method
+- introduce importance of intracranial pressure measurement
+- describe current clinical practice for ICP measurement
+- discuss limitations of current ICP measurement modalities
+- introduce noninvasive ICP estimation schemes
+- describe physiologic model-based methods
+- outline Bayesian estimation framework
+- describe model of cerebral hemodynamics
+- explain time-varying, first-order FIR filter approximation
+- describe AR process description of ICP dynamics
+- outline model-based estimation algorithm
+- describe use of radial arterial blood pressure
+- explain probabilistic estimation framework
+- describe process for establishing baseline ICP
+- outline process for tracking changes in baseline ICP
+- describe use of uniform prior distribution
+- explain filtering of ICP changes via Kalman filter-like approach
+- describe data description and method validation
+- introduce illustrative implementation of computer system
+- describe computer system components
+- explain processor control of data writing and reading
+- describe non-transitory computer-readable storage media
+- outline processor-executable instructions
+- describe network input/output interface
+- describe user input/output interfaces
+- explain implementation of embodiments
+- describe computer-readable storage medium
+- outline computer program
+- describe Section A
+- introduce noninvasive intracranial pressure estimation method
+- describe first-order subject-specific model of cerebral vasculature
+- explain model-based estimation within probabilistic framework
+- outline process for establishing baseline ICP estimate
+- describe single-state model of cerebral autoregulatory dynamics
+- summarize performance characteristics of method
+- describe results of method
+- outline model of cerebral hemodynamics
+- describe time-varying, first-order FIR filter approximation
+- explain AR process description of ICP dynamics
+- describe model-based estimation algorithm
+- outline data description and method validation
+- conclude method summary
+- introduce data collection
+- describe data collection protocol
+- introduce metadata recording
+- describe data segments extraction
+- introduce signal conditioning stage
+- describe estimation routine
+- introduce ICP estimation results
+- describe estimation results for patient 1
+- describe estimation results for patient 3
+- describe estimation results for patient 11
+- perform Bland-Altman analysis
+- describe per-estimation-window analysis
+- describe per-recording analysis
+- describe per-patient analysis
+- compute fraction of nICP estimates
+- discuss invasive ICP measurement modalities
+- compare with previous methods
+- discuss advantages of noninvasive approach
+- discuss challenges in adopting model-based nICP estimation
+- discuss differences from previous methods
+- discuss interpretability of approach
+- discuss Bayesian framework
+- discuss estimation performance
+- discuss potential applications
+- introduce data processing
+- describe time alignment step
+- describe resampling step
+- describe baseline adjustment step
+- describe out-of-band-noise removal stage
+- describe FIR model derivation
+- describe model-based Bayesian estimation routine
+- describe time offset scan range
+- describe ICP scan range
+- compute estimates for α and β
+- define likelihood distribution
+- marginalize likelihood distribution
+- define a posteriori distribution
+- derive mode and variance of combined distribution
+- specify prior belief
+- select parameters for prior belief
+- establish baseline ICP estimation
+- compute a posteriori mode estimates
+- set baseline ICP
+- pass baseline to tracking stage
+- compute reference nICP and variance
+- initialize tracking filter
+- compute filtered ICP-change estimates
+- combine observed and model-predicted changes
+- update filtered change estimates
+- compute final nICP estimate
+- define program or software
+- specify computer-executable instructions
+- describe data structures
+- define relationships among data elements
+- describe processes
+- define phrase "at least one"
+- define phrase "and/or"
+- describe use of ordinal terms
+- provide disclaimer and scope of disclosure
+

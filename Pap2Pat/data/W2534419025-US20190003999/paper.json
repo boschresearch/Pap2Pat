@@ -1,0 +1,193 @@
+{
+    "id": "https://semopenalex.org/work/W2534419025",
+    "authors": [
+        "David H. Thompson",
+        "Fei Guo",
+        "Guimei Yu",
+        "Wen Jiang",
+        "Tamara L. Kinzer\u2010Ursem",
+        "Kyle J. Wright",
+        "Christopher J. Benjamin",
+        "Mahima Grover",
+        "Scott C. Bolton",
+        "Seok\u2010Hee Hyun",
+        "Kyle Krynski"
+    ],
+    "title": "Selective Capture of Histidine-tagged Proteins from Cell Lysates Using TEM grids Modified with NTA-Graphene Oxide",
+    "date": "2016-10-17",
+    "abstract": "We report the fabrication of transmission electron microscopy (TEM) grids bearing graphene oxide (GO) sheets that have been modified with N \u03b1 , N \u03b1 -dicarboxymethyllysine (NTA) and deactivating agents to block non-selective binding between GO-NTA sheets and non-target proteins. The resulting GO-NTA-coated grids with these improved antifouling properties were then used to isolate His 6 -T7 bacteriophage and His 6 -GroEL directly from cell lysates. To demonstrate the utility and simplified workflow enabled by these grids, we performed cryo-electron microscopy (cryo-EM) of His 6 -GroEL obtained from clarified E. coli lysates. Single particle analysis produced a 3D map with a gold standard resolution of 8.1 \u00c5. We infer from these findings that TEM grids modified with GO-NTA are a useful tool that reduces background and improves both the speed and simplicity of biological sample preparation for high-resolution structure elucidation by cryo-EM.",
+    "sections": [
+        {
+            "title": "Results And Discussion",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Synthesis Of Go Sheets Functionalized With Nta",
+                    "paragraphs": [
+                        "GO was produced from graphene using Hummer\u2019s method16. Activation of the GO carboxylic acid groups with SOCl2 prior to reaction with the tris-t-butyl ester of lysine NTA gave GO-NTA-(O-t-Bu)3. TFA deprotection of this intermediate gave GO-NTA (Fig. 2A). Fourier transfer infrared spectroscopy was used to monitor these reactions as shown in Fig. 2B\u200917. The spectra of GO displayed a broad absorption at 3236\u2009cm\u22121 (O-H stretch) and a sharper absorption at 1648\u2009cm\u22121 (C=O stretch)16. The NTA-GO tris-t-butyl ester displayed an additional absorption at 2933\u2009cm\u22121 (C-H stretch) due to the incorporation of the lysine and t-butyl moieties. Following treatment of NTA-GO tris-t-butyl ester with TFA, the presence of the aliphatic C-H stretching was greatly reduced, indicating successful deprotection of the NTA chelator substituents18.",
+                        "Previous work has shown that the typical GO sheet absorption band at ~240\u2009nm is shifted to ~270\u2009nm when the GO sheets are dispersed in aqueous solution. The origin of this hypsochromic shift is due to n-\u03c0* electronic transitions arising from the C=O bonds introduced by oxidation19. GO-NTA samples prepared in this manner exhibited a major absorption peak at ~280\u2009nm (Figure S1), in good agreement with these reports."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go-Nta Monolayer Formation",
+                    "paragraphs": [
+                        "Most reports of Langmuir dispersions of GO at the air-water interface focus on surfactant-assisted dispersion methods to stabilize GO sheets dispersed in water20. Treatment of GO with surfactants in these cases; however, biases the interfacial activity towards water-surfactant activity rather than GO-NTA activity due to their high relative abundance. The planar structure and functional group distribution on GO-NTA confers edge amphiphilicity due to the distribution of hydrophilic carboxyl, ketone, aldehyde, amide, and alcohol groups around the periphery of the hydrophobic aryl GO-NTA core (Fig. 2A)21. Since GO-NTA becomes increasingly hydrophobic as displacement toward the core from the GO-NTA edge increases, larger sheets will tend to be more hydrophobic and migrate to the air-water interface, whereas smaller more hydrophilic GO-NTA sheets are displaced into the aqueous subphase by the larger GO-NTA sheets22.",
+                        "Previously, it was thought that the use of surface-active agents was needed to disperse GO sheets. More recent work; however, has shown that GO layers form at the air-water interface in the absence of surfactant molecules23. Brewster angle microscopy studies have shown that the interfacial refractive index of GO solutions change after a few hours of stirring pure GO dispersions in water24. This suggests a time-dependent mechanism for GO absorption at the air-water interface, with slower interfacial adsorption rates attributable to slower diffusion rates of large graphene sheets relative to typical surfactant molecules used for studies of the air-water interfaces. To increase the amount of surface-active graphene sheets present at the air-water interface while circumventing hours of stirring, studies using rising gas bubbles of CO2 and N2 as a way of transporting these sheets to the surface have proven successful22. These studies show that GO can migrate to the air-water interface, while other work suggests that the surface activity of GO sheets in water can be increased using volatile, polar protic solvents to enable their manipulation using Langmuir compression23.",
+                        "Compression of the GO-NTA material at the interface gave a characteristic surface pressure-area isotherm (Fig. 3A), suggesting a progression from isolated GO-NTA sheets to close edge-to-edge packing of GO-NTA sheets, followed by folding, wrinkling, and sliding of the nearest neighbor GO-NTA sheets atop one another upon further compression25, in a manner analogous to pressure-induced collapse of Langmuir phospholipid monolayer films23. Repulsive electrostatic interactions and attractive van der Waals forces compete as GO-NTA sheets come into close contact. Previous work with GO monolayers has suggested that over-compression of GO causes irreversible coagulation above ~15\u2009mN/m23 due to the increasing participation of attractive van der Waals interactions once the repulsive electrostatic interactions between sheet edges has been overcome by lateral compression. Transfer of these films onto silicon substrates at multiple surface pressures enabled the transfer of single layer GO sheets at surface pressures above 15\u2009mN/m."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Characterization Of Go-Nta Monolayers",
+                    "paragraphs": [
+                        "Epifluorescence microscopy, AFM, and SEM was employed to determine the thickness and lateral distribution of GO-NTA sheets deposited onto solid substrates by L-S transfer from the air-water interface26. In particular, epifluorescence microscopy of F-PABA-GO-NTA monolayers proved useful because opacity of the graphene-based sheet is directly related to its thickness as revealed by analysis of monolayer-coated grid and negative control bare Cu TEM grid samples that showed significantly greater fluorescence intensity for grids coated with F-PABA-GO-NTA (Figure S2).",
+                        "We then evaluated drop casting and L-S transfer deposition methods for the production of the thinnest films possible, while yielding films with the highest density of NTA capture ligands. Drop casting2627, followed by slow evaporation of solvent, resulted in a fluorescence signal that completely spanned the holes of Formvar-coated 400 mesh Cu grids (data not shown). Slow solvent evaporation enables GO sheets to settle on top of one another to form a multi-layered film covering the TEM grid holes. Although successful, our findings suggest that drop casting typically yields sheets that are too thick and heterogeneous for protein structure elucidation applications by cryoEM. L-S transfer in the presence of 2-propanol (IPA) proved successful for depositions onto 1500 mesh grids, both with and without Formvar coating; however, L-S transfers with pure water resulted in thicker heterogeneous coatings over a limited area of the holes. L-S transfer onto Si wafers under identical conditions confirmed the presence of multilayered films (Fig. 3B,D). We were not able to fabricate functional coatings with 400 mesh grids using L-S transfer, a finding we attribute to the mismatch between the average GO-NTA sheet size of ~16\u2009\u03bcm\u2009\u00d7\u200916\u2009\u03bcm and the 37\u2009\u03bcm\u2009\u00d7\u200937\u2009\u03bcm grid holes of these grids. It is worth noting that the GO-NTA sheet size can vary as a function of oxidation reaction duration and sonication time employed during GO synthesis28.",
+                        "To gain further insight into the structure of these GO-NTA films, SEM and AFM analyses were performed after compression to 15\u2009mN/m and L-S transfer of GO-NTA monolayer sheets onto Si wafers. To prepare Si wafers for L-S transfer, ~2.25\u2009cm2 wafers were cut and glued (bottom side) onto a transfer tube. The surface pressure was maintained until the Si wafer contacted the monolayer; the film was then recompressed to 15\u2009mN/m after the L-S transfer step. The area difference before and after L-S transfer indicated transfer efficiencies of 75\u201385%. Image analysis of the coated Si wafers revealed the presence of GO-NTA monolayer sheets transferred from IPA-containing subphases with ~1.3\u2009nm thicknesses that were relatively uniform (Fig. 3D,E), in good agreement with previously reported values for single layer GO29. In the absence of IPA; however, data from SEM and AFM experiments revealed GO-NTA films comprised of overlapping sheets and undesirable layer thickness variations (Fig. 3B,C).",
+                        "Selected area electron diffraction analysis of GO-NTA L-S films, deposited onto bare 2000 mesh grids from the air-IPA/H2O interface, revealed a hexagonal diffraction pattern, indicative of a single layer of graphenic material (Fig. 3F). The measured intensity of the inner and outer peaks confirms the presence of a single GO-NTA layer (Figure S3)27."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Affinity Capture Of His6-T7 Bacteriophage From E. Coli Lysate Using Go-Nta Monolayer Purification And Paba + Bsa As Antifouling Agents",
+                    "paragraphs": [
+                        "The capacity of GO-NTA coated grids to capture His6-T7 bacteriophage (His6-T7) by affinity interaction was examined first by negative-stain TEM. After a 2\u2009min exposure of purified His6-T7 on GO-NTA modified 1500 mesh grids, dense clusters of phage particles were found on the GO-NTA surface in the absence of Ni2+ (Fig. 4A). Paradoxically, we observed fewer phage particles after charging the GO-NTA grids with Ni2+ (Fig. 4B). We attribute these findings to non-specific and random covalent coupling of lysine residues with epoxide and aldehyde residues on the GO sheets that are inactivated upon exposure to the metal ion30. To obviate this problem, we chemically deactivated these functional groups by treatment of GO-NTA with 4-aminobenzoic acid (PABA) after L-S transfer. The resulting PABA-GO-NTA grids showed a reduction in, but incomplete abrogation of, non-specific His6-T7 binding under the same incubation conditions (Fig. 4C). When activated with Ni2+, PABA-GO-NTA grids revealed a higher density of phage particles due to engagement of the NTA:Ni2+:His6 affinity interaction (Fig. 4D). To further enhance the anti-fouling properties of this material, we incubated the PABA-GO-NTA grids with BSA immediately before the affinity capture step. Under these conditions, BSA appears to complete the blockade of non-specific viral particle adsorption (Fig. 4E), suggesting that BSA inhibits non-specific binding more effectively than PABA modification. After Ni2+ activation of the BSA-blocked PABA-GO-NTA surfaces, we observed a recovery in His6-T7 binding to the grids (Fig. 4F). To further demonstrate the Ni2+ dependence of this interaction, we treated the grid with 500\u2009mM imidazole, leading to the elution of His6-T7 from the grid (data not shown). Taken together, these findings demonstrate the importance of deactivating highly reactive chemical functionalities on the surface of GO prior to use in affinity capture experiments.",
+                        "Next, we sought to capture His6-T7 directly from clarified E. coli lysate. The engineered His-tag does not interfere with His6-T7 infectivity, thereby enabling the infection of BL21 cells and viral replication in vitro. A negative control experiment demonstrated that Ni2+-free BSA-PABA-GO-NTA grids resulted in little or no capture of phage and minimal background adsorption from non-targeted cellular material (Figure S4); however, Ni2+ activation prompted selective His6-mediated binding of bacteriophage to the grid surface (Fig. 4G). As an additional control, the grid was washed with 500\u2009mM imidazole after Ni2+, but prior to incubation with lysate, to demonstrate that imidazole stripping of the metal ion results in the abrogation of His6-T7 binding (Fig. 4H). These results indicate that BSA-PABA-GO-NTA coated grids are able to effectively purify His6-T7 directly from clarified lysate on the grid using the reversible NTA:Ni2+:His6 affinity interaction."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Affinity Capture Of Groel From E. Coli Lysate Using Bsa-Paba-Go-Nta Monolayer Purification",
+                    "paragraphs": [
+                        "The performance of antifouling BSA-PABA-GO-NTA coatings for high-resolution single particle reconstruction analysis was then evaluated by performing on-grid affinity capture of His6-GroEL from E. coli lysates. As observed for His6-T7 capture, specific binding of His6-GroEL occurred only with Ni2+-activated (Fig. 5B), but not Ni2+-free (Fig. 5A) or 500\u2009mM imidazole treated grids (Fig. 5C). Next, we obtained cryo-EM images of His6-GroEL deposited onto BSA-PABA-GO-NTA coated grids (Fig. 5D). Initial attempts at His6-GroEL capture and cryofixation on 1500 mesh grids coated with BSA-PABA-GO-NTA generated unacceptably thick sample vitrification; however, high quality samples of His6-GroEL captured from lysate were afforded by BSA-PABA-GO-NTA films deposited by L-S transfer onto lacey carbon-supported 400 mesh copper grids."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Single Particle Analysis Of His6-Groel",
+                    "paragraphs": [
+                        "EMAN 2.131 was used for single particle analysis of His6-GroEL deposited onto BSA-PABA-GO-NTA coated grids since this protein target is often used for gauging workflow performance and data processing robustness323334. The reconstruction effort followed the usual steps from within the application, except that the particles were manually picked. Background signal contributions by the BSA blocking layer may have contributed to the difficulties encountered during attempts at automated particle picking. Nonetheless, 5363 particles were hand-picked from 217 micrographs and the particles rapidly converged into coherent classes displaying high contrast (Fig. 6A).",
+                        "Of 50 total class averages, 12 were chosen to produce an initial model with imposed D7 symmetry (Fig. 6A). After 12 refinement iterations with an angular sampling of 1.76 degrees, we were able to produce a gold standard (0.143 criteria) density map having 8.1\u2009\u00c5 resolution using conservative masking (Fig. 6B\u2013D). There were visible nodes in the FSC curve at regular intervals that resulted from an uneven distribution of micrograph defocuses.",
+                        "To probe the accuracy of our model, we performed a comparison with published 4.2\u2009\u00c5 resolution cryo-EM map EMD-500134 that was also produced by EMAN using D7 symmetry. Chimera35 was used to fit the volumes before calculating the FSC, yielding a 9\u2009\u00c5 resolution using 0.5 criteria (Fig. 6D\u2013F).",
+                        "A substantial difference between our map and the published structure was observed, wherein additional electron density within the inner pore of the protein was found in the case of our His6-GroEL map. We attribute this finding to the extended amino acid sequences at the N- and C-termini (i.e., MRGSHHHHHHTDPALRA and GLCGR, respectively) of our His6-GroEL construct derived from the ASKA Library.",
+                        "Wild type N- and C-termini of the protomers are located at the surface of the inner pore lining the assembled tetradecameric complex. Thus, the 14 engineered subunits comprising our His6-GroEL complex yield an additional 308 residues that occupy the pore, of which 84 are histidines. Given the large number of potential metal chelation regioisomers and topoisomers, as well as the high potential for conformational flexibility in the N- and C-terminal sequences, we believe that this density is unlikely to adopt a defined structure and instead appears as a filled \u201cdroplet\u201d within each ring. Also, there is a noticeable decrease in density in the flexible apical region that suggests less structural coherency. We infer from these findings that the additional pore residues, along with NTA chelation, may create dynamic distortions to the structure of GroEL that could vary for each particle, reducing coherency and map density at the apical ends. Further experiments that vary the length and number of his-tag linkers per particle may allow for a better model convergence with improved resolution, and potentially improved resemblance to wild type GroEL."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusions",
+            "paragraphs": [
+                "Our findings show that a new functionalized GO-NTA monolayer sheet can be used as a coating to facilitate on-grid affinity purification from clarified cell lysates for negative stain TEM and cryo-EM single particle reconstruction analysis. GO sheets were successfully functionalized with lysine-NTA affinity ligands and compressed monolayer films at the air-water interface were prepared by employing an IPA/H2O mixture to lower surface tension before L-S transfer onto EM grids. SEM, AFM, fluorescence spectroscopy, and TEM analysis of these films suggests that single monolayer sheets of GO-NTA can be transferred onto Si wafers, bare copper grids, and holey carbon grids using this method. Since GO films are thinner than amorphous carbon substrates and offer better electron dissipation than lipid-based affinity grids, we believe these two benefits will yield improved contrast for cryo-EM image acquisition of biological molecules.",
+                "Two blocking techniques, PABA coupling and BSA adsorption, were needed to deactivate the reactive GO surface towards non-specific adsorption of occult impurities present in complex samples such as cell lysates. Our data shows that further investigations into blocking agents that minimize background noise and improve cryofixation reliability are needed. Nonetheless, this grid coating approach showed good specificity for capture of His-tagged T7 bacteriophage and GroEL from highly complex cell lysates, while limiting background adsorption of non-targeted cellular material.",
+                "The utility of these grids for on-grid purification from cell lysates and single particle reconstruction was demonstrated using His6-GroEL. Capture of this target onto the surface of GO-NTA affinity grids from clarified cell lysates was then used as the key step to enable selection of 5363 particles for reconstruction analysis, yielding a map with a gold standard resolution of 8.1\u2009\u00c5. The presence of additional His-tag and linker amino acids in our engineered GroEL was distinctly visible in our density map, but our final map could still be fit to a published high-resolution EM map to 9\u2009\u00c5 resolution using 0.5 criteria. We conclude based on these findings that affinity capture-based graphenic materials offer great potential for simplified and accelerated cryo-EM sample preparation for high-resolution structure elucidation. These coatings possess many advantages over NTA-lipid-modified grids78 or other grid coatings that lack protection from non-specific binding456, thereby offering substantial improvements in sample preparation time and reduced sample volumes needed to acquire high resolution structural information of a given protein target and, potentially, its interaction partners."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Experimental Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Graphene-Oxide-Nta Synthesis",
+                    "paragraphs": [
+                        "GO was synthesized as described by Marcano et al.16. This intermediate (335\u2009mg) was stirred in a mixture of SOCl2 (60\u2009mL) and DMF (1.5\u2009mL) at 70\u2009\u00b0C for 3\u2009d before evaporating the SOCl2 and DMF and washing the residue with dry DCM (3\u2009\u00d7\u200950\u2009mL). ACN (50\u2009mL) and Et3N (3\u2009mL) were then added and the mixture stirred for 30\u2009min. Tris(O-t-butyl)-N\u03b1,N\u03b1-dicarboxymethyllysine ester (533\u2009mg) was then added and the mixture stirred at 100\u2009\u00b0C for 3\u2009d before washing with THF and H2O (9,000 rpm for 15\u2009min, 3 times for each solvent), and vacuum drying at 60\u2009\u00b0C for 24\u2009h. TFA (10\u2009mL) in THF (30\u2009mL) was added to the dried t-butyl-NTA ester intermediate (180\u2009mg) and stirred at 60\u2009\u00b0C for 5\u2009h before washing with THF and H2O (11,000 rpm\u2009\u00d7\u200915\u2009min, 3 times for each solvent)2936."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go-Nta Exfoliation",
+                    "paragraphs": [
+                        "The GO-NTA sheets were ultrasonically exfoliated at 1\u2009mg/mL by suspension of the powder in 5:1 MeOH:H2O using probe sonication at 150\u2009watts for five cycles (45\u2009s sonication followed by 45\u2009s of rest in each cycle). The product was centrifuged at 1200\u2009g for 10\u2009min, after which the supernatant of exfoliated GO-NTA sheets was removed from the sediment of aggregated sheets and subjected to another 5 rounds of sonication. A final centrifugation at 1200\u2009g for 10\u2009min was performed prior to removal of the supernatant to yield a GO-NTA solution that was stored for subsequent grid coating experiments."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Langmuir-Trough Setup",
+                    "paragraphs": [
+                        "Exfoliated GO-NTA was deposited at the air-water interface of a Kibron \u03bcTrough via a syringe pump fitted with a 20\u2009mL syringe. The GO-NTA dispersion was loaded into the syringe and slowly introduced at the air-water interface at a rate of 100\u2009\u03bcL/min until the surface pressure reached 15\u2009mN/m. The film was then allowed to relax for 5\u2009min, followed by slow compression of the film to 15\u2009mN/m. IPA was then added to the subphase and the film transferred to either Si wafers, bare 1500 mesh TEM grids, or holey carbon grids by Langmuir-Schaefer (L-S) transfer."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "4-Aminobenzoic Acid (Paba) Modification Of Go-Nta",
+                    "paragraphs": [
+                        "GO-NTA (1\u2009mg/mL) was partially deactivated by adding PABA (30\u2009mg) to a 10\u2009mL GO-NTA dispersion. This mixture was probe sonicated at 150\u2009W for 30\u2009sec of continuous sonication, followed by shaking for 24\u2009h on a rotary mixer. The PABA-GO-NTA was then exfoliated and washed as described above for GO-NTA exfoliation."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescein Modification",
+                    "paragraphs": [
+                        "Fluorescein modification of GO-NTA was performed by adding 2\u2009mg of aminofluorescein to an aqueous solution of PABA-GO-NTA (10\u2009mL at 1\u2009mg/mL). This mixture was probe sonicated for 30\u2009s at 150\u2009W of continuous sonication and then placed on a rotary mixer in the dark for another 24\u2009h. The material was then centrifuged to pellet the GO species before re-suspending in water, addition of 5:1 MeOH:H2O, re-pelleted, and decanted a total of 10 times before exfoliation of the Fluorescein-PABA-GO-NTA (F-PABA-GO-NTA) product as described above for GO-NTA."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Bovine Serum Albumin (Bsa) Modification",
+                    "paragraphs": [
+                        "Following L-S transfer of GO-NTA or PABA-GO-NTA onto EM grids and overnight drying in a desiccator, the grids were placed on a strip of Teflon before addition of BSA (10\u2009\u03bcL of 0.1\u2009mg/mL) and incubation for 5\u2009min, followed by 3\u2009\u00d7\u200920\u2009\u03bcL double deionized H2O washes. The modified grids were then stored in a desiccator until use."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fluorescence Microscopy Sample Preparation",
+                    "paragraphs": [
+                        "F-PABA-GO-NTA was deposited onto 1500 mesh grids in the dark by L-S transfer as described above. After transfer, the grids were allowed to dry in the dark for 1\u2009d before sandwiching them between a glass and cover slip with 5\u2009\u03bcL of double deionized H2O and the sandwich sealed with nail polish. The glass slide was then mounted on a light microscope for epifluorescence imaging."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go Concentration Measurements",
+                    "paragraphs": [
+                        "The concentrations of the GO-NTA dispersions were measured at different steps of the synthesis by monitoring the UV-vis spectra of the products. The extinction coefficient data used for one batch of GO-NTA is shown (Fig. S1A). Since each batch of GO-NTA has minor differences in concentration, each preparation was evaluated for its own experimentally determined extinction coefficient for subsequent concentration measurements. Standard solutions used to determine the extinction coefficients were prepared by dispersing a weighed amount of dry GO-NTA into known volumes of 5:1 MeOH:H2O and measuring the absorbance at 280\u2009nm across a series of dilutions with 5:1 MeOH:H2O. The extinction coefficient was derived from the slope of these concentration-dependent absorption plots."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go-Nta Grid Treatment With Purified His6-T7 Bacteriophage",
+                    "paragraphs": [
+                        "Purified C-terminal gp10 His6-T7 bacteriophage was initially prepared at a concentration of 1012 particles/mL, with dilution to 1010 particles/mL in HEPES buffer (pH\u2009=\u20097.4), before application to the affinity grid surface. GO-NTA modified grids were placed on a Teflon strip, 1\u2009mM NiSO4 (10\u2009\u03bcL) added, and the grids incubated for 5\u2009min before washing with double deionized H2O (2\u2009\u00d7\u200920\u2009\u03bcL) and HEPES buffer (1\u2009\u00d7\u200920\u2009\u03bcL). Purified phage (3.5\u2009\u03bcL) was then applied to the surface and incubated for 2\u2009min before washing with HEPES (2\u2009\u00d7\u200920\u2009\u03bcL), double deionized H2O (1\u2009\u00d7\u200920\u2009\u03bcL), and staining with 2% uranyl acetate (5\u2009\u03bcL)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go-Nta Grid Treatment With His6-T7 Bacteriophage Lysate",
+                    "paragraphs": [
+                        "BL21 bacterial cells in 1\u2009mL of LB media were grown to an OD of 0.8 before adding 1.0\u2009\u03bcL of His6-T7 bacteriophage (1\u2009\u00d7\u20091012 particles/mL) to the media and shaking the culture for 1\u2009h. After bench top centrifugation of the cells, the supernatant was withdrawn for use in His6-T7 bacteriophage particle capture studies. The grids were Ni2+-activated as described above, except that His6-T7 lysate (5\u2009\u03bcL) was applied to the surface before incubation for 2\u2009min. The grids were then washed with HEPES (2\u2009\u00d7\u200920\u2009\u03bcL), double deionized H2O (1\u2009\u00d7\u200920\u2009\u03bcL), and then stained with 2% uranyl acetate (5\u2009\u03bcL)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Go-Nta Grid Treatment With His6-Groel Lysate",
+                    "paragraphs": [
+                        "The ASKA Library was used to express N-terminal His6-GroEL. Cells containing N-His6-GroEL gene overexpression vector were grown to OD\u2009=\u20090.6 (in 100\u2009mL of LB broth using a 37\u2009\u00b0C shaker/incubator) and induced with a final concentration of 1.0\u2009mM IPTG, before allowing the cells to grow for an additional 4\u2009h. After centrifugation and removal of the supernatant, the cell pellet was re-suspended in lysis buffer (20\u2009mM HEPES, 100\u2009mM NaCl, pH\u2009=\u20097.4, 100\u2009\u03bcg aprotinin, 174\u2009\u03bcg phenylmethanesulfonyl fluoride (PMSF), and 500\u2009\u03bcg of lysozyme) and allowed to sit for 20\u2009min. Further disruption of the cell membranes was effected by 110\u2009W probe sonication (35 pulses at 1\u2009second/pulse), followed by centrifugation at 11,000\u2009g for 10\u2009min. The supernatant containing His6-GroEL was diluted 10-fold and assayed for affinity binding using the Ni2+-activation procedure described above, except that N-His6-GroEL lysate (5\u2009\u03bcL) was applied to the surface and incubated for 2\u2009min. The grids were then washed and stained with 2% uranyl acetate as described above."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Affinity Capture Of His6-Groel From E. Coli Lysates Onto Bsa-Paba-Go-Nta Grids For Cryo-Em Imaging",
+                    "paragraphs": [
+                        "Samples were prepared as described above for negative stain TEM imaging, except that BSA-PABA-GO-NTA modified grids were exposed to His6-GroEL lysate, after which the excess solution was removed by blotting twice for 6\u2009s per blot using an offset setting of \u22121 at 80% humidity using a Vitrobot device (FEI Company). The grids were then plunged into liquid ethane for cryofixation and imaged at 300\u2009kV on an FEI Titan Krios equipped with a Gatan K2 Summit direct electron detection camera using low-dose techniques. Integrated microscope automation software (Leginon)37 was used to acquire a large set of micrographs at 11,000x magnification with an exposure time of 7.6\u2009sec."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Single Particle Analysis Of His6- Groel",
+                    "paragraphs": [
+                        "Direct electron detector movie frames were processed in Appion38 to produce a set of averaged, motion-compensated micrographs to be used in subsequent steps. The micrographs had a 1.32\u2009\u00c52/pixel resolution across a 4096\u2009\u00c5\u2009\u00d7\u20094096\u2009\u00c5 array. EMAN 2.1 software31 was used for reconstruction of 5363 particles that were manually picked from 217 micrographs using a box size of 256. Automatic contrast transfer function (CTF) estimation and structure factor were determined from the incoherent sum of particles using e2ctf and phase-flipped to generate high-pass CTF-corrected particle stacks. Defocus was estimated to range between 0.4\u2009\u03bcm\u20134\u2009\u03bcm, but 55% of the particles were defocused between 2\u2009\u03bcm\u20133\u2009\u03bcm which resulted in a somewhat jagged CTF slope. Particles were binned 2X for class averaging and 12 classes were chosen to create an initial model with imposed D7 symmetry. The classes contained a mix of top and side views. In the refinement steps, the input set of particles was divided into even/odd halves, each containing 2682 particles. Two independent refinements were generated, producing a gold standard of 8.1\u2009\u00c5 (using 0.143 criteria) after 12 iterations over two refinements with an angular sampling of 1.76 degrees. Additionally, we performed Fourier shell correlation against an existing high-resolution cryo-EM map, EMD-500134. The maps were rotated and translated using Chimera35 to fit the volumes together. The correlation of our model against EMD-5001 (4.2\u2009\u00c5) gave an approximate resolution of 9\u2009\u00c5."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Additional Information",
+            "paragraphs": [
+                "How to cite this article: Benjamin, C. J. et al. Selective Capture of Histidine-tagged Proteins from Cell Lysates Using TEM grids Modified with NTA-Graphene Oxide. Sci. Rep. 6, 32500; doi: 10.1038/srep32500 (2016)."
+            ],
+            "subsections": []
+        }
+    ]
+}

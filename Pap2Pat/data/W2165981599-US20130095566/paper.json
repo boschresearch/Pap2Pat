@@ -1,0 +1,245 @@
+{
+    "id": "https://semopenalex.org/work/W2165981599",
+    "authors": [
+        "Ziv Bar\u2010Joseph",
+        "Zolt\u00e1n N. Oltvai",
+        "Yi Zhou",
+        "Alexei V\u00e1zquez",
+        "Katsuhiko Warita",
+        "Tomoko Warita",
+        "Aaron Wise"
+    ],
+    "title": "Carbon catabolite repression correlates with the maintenance of near invariant molecular crowding in proliferating E. coli cells",
+    "date": "2013-12-01",
+    "abstract": "Background Carbon catabolite repression (CCR) is critical for optimal bacterial growth, and in bacterial (and yeast) cells it leads to their selective consumption of a single substrate from a complex environment. However, the root cause(s) for the development of this regulatory mechanism is unknown. Previously, a flux balance model (FBAwMC) of Escherichia coli metabolism that takes into account the crowded intracellular milieu of the bacterial cell correctly predicted selective glucose uptake in a medium containing five different carbon sources, suggesting that CCR may be an adaptive mechanism that ensures optimal bacterial metabolic network activity for growth. Results Here, we show that slowly growing E. coli cells do not display CCR in a mixed substrate culture and gradual activation of CCR correlates with an increasing rate of E. coli cell growth and proliferation. In contrast, CCR mutant cells do not achieve fast growth in mixed substrate culture, and display differences in their cell volume and density compared to wild-type cells. Analyses of transcriptome data from wt E. coli cells indicate the expected regulation of substrate uptake and metabolic pathway utilization upon growth rate change. We also find that forced transient increase of intracellular crowding or transient perturbation of CCR delay cell growth, the latter leading to associated cell density-and volume alterations. Conclusions CCR is activated at an increased bacterial cell growth rate when it is required for optimal cell growth while intracellular macromolecular density is maintained within a narrow physiological range. In addition to CCR, there are likely to be other regulatory mechanisms of cell metabolism that have evolved to ensure optimal cell growth in the context of the fundamental biophysical constraint imposed by intracellular molecular crowding.",
+    "sections": [
+        {
+            "title": "Background",
+            "paragraphs": [
+                "Carbon catabolite repression (CCR) denotes the phenomenon of selective substrate uptake from complex media by yeast and bacterial cells [1]. Indeed, E. coli strains with defective CCR display slower glucose uptake and growth [2-4], suggesting that CCR contributes significantly to their survival and proliferation in ever changing nutrient conditions. CCR is mediated by various mechanisms, including transcriptional repression and protein-protein interaction-mediated inhibition of substrate uptake- and catabolism related proteins [5,6]. However, the fundamental reason(s) for the development of this regulatory mechanism remains poorly understood.",
+                "In a previous study, we observed the characteristic CCR in E. coli cells that were grown in batch culture in a medium containing an equal mix of five different carbon substrates [7]. In that study we developed a constraint-based modeling framework [8], called flux balance analysis with macromolecular crowding (FBAwMC). This model has successfully predicted the observed sequential substrate uptake kinetics by using a modified form of FBA, which takes into account the total enzyme occupancy limit inside the cell due to the highly crowded nature of the cell\u2019s cytoplasm [7].",
+                "Volume exclusion by the presence of macromolecules (macromolecular crowding [MC]), has various effects on biochemical reactions both in-vitro and inside the cell [9,10]. In-vitro systems show that increased macromolecular concentration attenuates diffusion limited reactions [11,12] but accelerates the transition state-limited reactions [13], accelerates and stabilizes gene-and protein expression [14], promotes correct protein folding by extending association between the unfolded polypeptides with chaperon proteins [15] and prevents protein aggregation [16]. In E. coli cells, in which the concentration of total protein and RNA is in the range of 200\u2009~\u2009300\u00a0g/l [17], increased macromolecular density enhances the self-association of bacterial cell division protein, FtsZ [18], increases PTS (phosphor-transferase system) flux and activities [19], and may promote the reorganization of cell metabolism in rapidly proliferating cells from oxidative phosphorylation (OxPhos) to simultaneous OxPhos and aerobic glycolysis [20]. Moreover, experimental and theoretical studies indicate that normally functioning cells maintain their intracellular macromolecular density within a narrow physiological range [21-26].",
+                "In light of these observations, we have hypothesized that CCR is a regulatory mechanism for the maintenance of a near constant intracellular macromolecular density in cells producing biomass at a rapid rate. To test this hypothesis, in this study we characterize the growth of E. coli cells both in single substrate-limited and mixed substrate cultures. We find that in mixed substrate cultures E. coli cells do not display CCR at slow growth rates and that the gradual activation of CCR correlates with the increasing rate of E. coli cell growth and proliferation. We also find that a forced transient increase of intracellular macromolecular crowding (MC) or perturbation of CCR delays cell growth. Moreover, cell density and volume alteration were associated with CCR perturbation. Thus CCR appears to represent an adaptive mechanism that contributes to the maintenance of physiological intracellular macromolecular density in bacterial cells for optimal cell growth."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "E. Coli Cells Display Slower Substrate Uptake And Growth Rate In Single Carbon-Limited-Than In Mixed Substrate Cultures",
+                    "paragraphs": [
+                        "We previously characterized the culture density-, growth rate- (Figure\u00a01A, B, black lines, respectively) and substrate uptake kinetics (Figure\u00a01D) of E. coli cells in mixed substrate culture, and also determined the level of acetate, a well-known metabolic byproduct of rapidly dividing E. coli cells, in that culture\u2019s supernatant (Figure\u00a01C, black line) [7]. The carbon source consumption profiles we observed [7] were compatible with the presence of carbon catabolite repression (CCR) in the culture, in which the sole consumption of glucose preceded the concomitant utilization of all other substrates (Figure\u00a01D). To better understand the root cause of the observed substrate uptake patterns, we grew E. coli cells separately in the individual components of the mixed culture medium (i.e., in single carbon-limited media), the experiments being terminated upon substrate exhaustion from the growth media or when cells entered the stationary phase.",
+                        "Compared with the mixed substrate culture, the culture density (Figure\u00a01A) and growth kinetics (Figure\u00a01B) of E. coli cells in single carbon-limited media significantly differed, glucose-limited cultures displaying the fastest-and lactate-limited cultures the slowest growth. In terms of their maximal biomass glucose, maltose-, and galactose-limited cultures were comparable and slightly below the glycerol-limited culture (which achieved the highest biomass), while lactate-limited growth resulted in about one half of that level (Figure\u00a01A). As in the mixed culture, all growth rate kinetic curves displayed an initial increase, peaked in the early exponential growth phase, and then decreased (Figure\u00a01B). However, compared to the growth rate seen in the mixed substrate culture the curves were substantially flattened for the galactose-, lactate-, and glycerol-limited cultures and slightly less flattened for the glucose- and maltose-limited cultures (Figure\u00a01B). This behavior correlated with their delayed substrate uptake rate from the culture media (Figure\u00a01E). Acetate (i.e., acetic acid) secretion by E. coli cells mirrored these trends, except that in contrast to that seen in the mixed substrate culture (Figure\u00a01C, black tracing) on a population level there was no evidence for acetate reuptake in the single carbon cultures (Figure\u00a01C)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "The Fbawmc Model Predicts The Substrate Uptake Order Of E. Coli Cells Both In Single Carbon-Limited- And In Mixed Substrate Cultures",
+                    "paragraphs": [
+                        "The substrate consumption rates in the five single carbon-limited cultures (Figure\u00a01E) correlate with their apparent substrate uptake order in mixed substrate culture (Figure\u00a01D). In both culture types glucose was utilized first (and at the fastest rate) and glycerol last (and at the slowest rate), while the other three substrates displayed slightly different rank order among the single substrate-limited and mixed substrate cultures.",
+                        "To quantify the rate and order of substrate consumption kinetics independent of total biomass, we normalized the measured substrate consumption (Figure\u00a01D, E) to the biomass data (Figure\u00a01A). It is evident that the order of intrinsic substrate uptake rate among the five single substrate cultures (Figure\u00a01H) has varied from that seen in the mixed culture medium (Figure\u00a01G). The rate of glucose and maltose uptake rates have displayed consistent consumption ranks in both culture types (first and second, respectively), while the other three substrates displayed different consumption orders. Of note, the consumption rates of all the substrates proved higher in the mixed substrate culture than in the single carbon-limited cultures.",
+                        "We previously developed a model of E. coli metabolism to investigate the origin of the substrate hierarchy consumption in mixed substrate cultures [7]. This model, called flux balance analysis with molecular crowding (FBAwMC) obtains the steady-state metabolic flux distribution that result in the maximum biomass production rate given the available nutrients [7,20]. Here we used FBAwMC to model substrate utilization in the single carbon-limited cultures, finding that its predictions (Figure\u00a01F) are similar to the observed uptake profiles (Figure\u00a01E), while the same model without applying MC as a constraint failed to predict this behavior. The modeling and experimental results thus imply that intracellular macromolecular crowding may relate to the presence of CCR in mixed cell culture."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "E. Coli Cells Resist The Activation Of Maltose Regulon More In Mixed Substrate- Than In Single Substrate-Limited Growth Media",
+                    "paragraphs": [
+                        "The presence of a single substrate in a growth medium is known to exert a repressive effect on the uptake of other substrates (reviewed in [6]); For example, glucose represses the transcription of genes encoding transporters of other non-PTS substrates, as previously reported in [7]. Each of the specific substrates also tends to upregulate a spectrum of genes including its own transporter genes due to substrate induction [27,28]. The sequential substrate uptake observed in mixed substrate growth medium (Figure\u00a01D), however, suggest that it is a result of strict CCR. Although substrate induction observed in single substrate culture tended to repress the expression of other substrates\u2019 transporter genes (Additional file 1: Figure S1), the repression should be more stringent when multiple substrates are present. To test this hypothesis, we examined the promoter activities of operons within the maltose regulon upon their induction in single carbon limited- and mixed substrates cultures using promoter-GFP reporter plasmid-containing E. coli cells (Additional file 2: Figure S2 and Table S1). We used a real-time monitoring system, in which the ratios of GFP/OD600nm of cells, with or without maltose regulon induction, were calculated to evaluate promoter activities (Additional file 2: Figure S2).",
+                        "Selected maltose operon promoters, such as malE and malK, whose gene products are subunits of the maltose transporter, responded strongly to the inducers, maltotriose and cAMP, in glucose-, galactose-, and glycerol-limited cultures (Figure\u00a02A-C) and displayed milder responses in lactate- and maltose-limited cultures (Figure\u00a02D, E). In contrast, delayed and repressed promoter responses were evident in the mixed substrate culture (Figure\u00a02F). Of note, the repressed gene activities in mixed substrate cannot be interpreted as higher basal gene activity because the GFP/OD levels in mixed substrate culture were similar to that in the maltose culture (data not shown). These data indicate the presence of stronger CCR in mixed substrate- than in single substrate-limited growth media."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "The Presence And Magnitude Of Ccr Is Dependent On The Biomass Production Rate Of E. Coli Cells In Mixed Substrate Media",
+                    "paragraphs": [
+                        "To further investigate the potential relationship between CCR and the biomass production (i.e., growth) rate of cells, we next examined substrate consumption behavior in a mixed-substrate E. coli culture at various cell growth rates. In continuous-feed chemostat cultures the growth rate of E. coli cells can be precisely controlled by changing the culture\u2019s dilution rate. As cells respond to a stepwise increase in the dilution rate of the growth medium, their rate of biomass synthesis and cell division increases [20]. We sampled the chemostat culture 24\u00a0hr after increasing the dilution rate (i.e., after the culture has reached a new steady state growth rate [20] and measured the culture density (OD600nm), the pH of the growth medium, and the E. coli cell volume and cell density.",
+                        "As in glucose-limited culture [20], the cell concentration in the culture medium (i.e., the culture density) decreases with the increased exchange rate of the culture medium (Figure\u00a03A, red curve). Also, the pH of the culture medium decreases slightly to pH\u2009~\u20096.8 at 0.2/hr dilution rate but then returns to pH\u2009~\u20096.9 and above at growth rates higher than 0.3/hr. This is likely due to the faster dilution rate of the pH\u00a07.0 growth medium (Figure\u00a03A, green curve). From a cell volume of 0.89\u00a0fL at the 0.1/hr dilution rate there is an initial increase in the volume of E. coli cells with increasing dilution (and cell growth) rate that reaches its peak (1.064\u00a0fL) at 0.4/hr, and then decreases and levels off with ~0.98\u00a0fL at the highest dilution rate of 0.7/hr (Figure\u00a03A, purple curve). However, the buoyant density of E. coli cells displays much less variation. It is lowest (1.11\u00a0g/ml) at the lowest dilution/ growth rate at 0.1/hr, and then reaches a medium density (~1.13\u00a0g/ml) at growth rates 0.2 and 0.3/hr, respectively. Cell density reaches its highest value of ~1.14\u00a0g/ml at 0.4/hr dilution rate that is then maintained till 0.7/hr. These data indicate that while cell volumes change dynamically to match the faster biomass accumulation rate brought on by faster cell growth, cell buoyant density remains remarkably stable and does not increase above a threshold level.",
+                        "Simultaneously, substrate consumption profiles indicate a clear correlation between the rate of cell proliferation and the presence of CCR (Figure\u00a03B, C, [in Figure\u00a03C, the specific substrate uptake rate is normalized to the total substrate uptake rate]). At the lowest growth rate (at 0.1/hr dilution rate) CCR is absent, as glucose and the other four substrates are utilized fully and simultaneously. At a faster cell growth (0.2/hr) a limited CCR partially inhibiting the consumption of lactate and glycerol is seen (Figure\u00a03B). CCR is more widespread at 0.3/hr when the uptake of galactose and maltose are also partially inhibited (Figure\u00a03B, C). Above this dilution rate there is extensive CCR with predominant (though not exclusive) glucose utilization. Indeed, the utilization of maltose, glycerol and galactose is limited and lactate is not utilized at all at growth rate at and above 0.4/hr (Figure\u00a03B).",
+                        "The substrate consumption rate compared to total carbon uptake ratio is calculated to describe the percent contribution of each substrates\u2019 uptake to the total carbon uptake along growth rate increase. As shown in Figure\u00a03C, the substrate uptake ratio curves start to diverge after growth rate 0.2/hr, showing that the glucose consumption ratio increases as the growth rate accelerates and it becomes the dominantly utilized substrate. In contrast, as the growth rate increases the substrate consumption ratio of lactate and galactose decreases while that of maltose and glycerol only display a slight change (Figure\u00a03C). This pattern supports the notion that CCR is inactive in slow growing cells but becomes increasingly activated in rapidly growing cells, showing the largest effect at the fastest cell proliferation rate. FBAwMC modeling provides largely similar results and predicts an even more dominant selective glucose consumption at the highest proliferation rates than seen experimentally (Additional file 3: Figure S3).",
+                        "Of note, at the lowest proliferation rate (0.1/hr) no secreted acetate is present in the growth medium indicating that metabolism takes place exclusively through oxidative phosphorylation (OxPhos). However, with the initial appearance of CCR there is a concomitant presence of secreted acetate in the growth medium, indicating the appearance of partial aerobic glycolysis in the culture (Figure\u00a03B). At very high growth rates (0.6-0.7/hr) there is a second, much larger phase in acetate secretion that may indicate the down-regulation of OxPhos and a dominance of aerobic glycolysis in the culture (Figure\u00a03B). This has been predicted by FBAwMC and is also seen in a glucose-limited continuous-feed chemostat culture [20].",
+                        "Taken together, these results show that the extent of CCR positively correlates with the E. coli cell growth rate, and implies that the activation of CCR in a mixed substrate environment may enable optimal cell growth."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Transcriptome Analysis Of Mixed-Substrate E. Coli Chemostat Culture Reveals Several Switches In Its Metabolic State",
+                    "paragraphs": [
+                        "To search for transcriptional evidence for the activation of CCR in proliferating E. coli cells and to further understand the consequence of growth rate change on E. coli cell physiology at the various dilution rates, we collected culture samples for microarray experiments and subsequent transcriptome profiling. We then focused on the relative gene expression levels of the main substrate transport- and catabolism related genes, metabolic enzyme-encoding genes, and genes encoding osmosensor-, anti-stress-, and cell morphology related proteins.",
+                        "Expression of ptsG, the gene encoding the glucose transporter PtsG/Crr, is at a high level from the 0.2/hr growth rate with a peak at 0.3/hr (Figure\u00a04A, top row). The low expression level of ptsG at 0.1/hr coincides with the high expression levels of the glycerol regulon genes (glpKF), the galactose regulon genes (mglABC), the maltose regulon genes (malEFG) and lactate dehydrogenase gene (dld) (Figure\u00a04A). This finding is in agreement with the concomitant utilization of all substrates at this growth rate (Figure\u00a03B, C). The expression level of the transporter genes for all five substrates remained increased at 0.2 and 0.3/hr growth rates indicating active and simultaneous substrate consumption at the slow growing phase. At 0.3/hr there is also an increased expression of the galEKPT whose gene product is responsible for the transformation of galactose to intracellular glucose (Figure\u00a04A). However, with further increase in the culture growth rate the expression levels of most transporter genes have decreased sharply, except that of ptsG\u2019s, whose expression was still maintained at a medium level from 0.3\u2009~\u20090.7/hr, corresponding to the continued glucose consumption at all growth rates (Figure\u00a03B, C). Of particular interest, the gene encoding the alternative glucose transporter, glucokinase (glk), which binds to malT to repress the expression of maltose regulon genes [29], peaks at the highest growth rate, 0.7/hr, when overall glucose uptake rate is at its highest (Figure\u00a03C). These results are consistent with the observed substrate consumption kinetics (Figure\u00a03B, C) and support the notion that CCR is only fully activated at a growth rate above 0.3/hr.",
+                        "We next examined the correlation between the expression of genes on specific metabolic pathways and the observed growth rate. Most TCA cycle related genes were expressed highly only at the slow growth phase (<0.2/hr) (Figure\u00a04B). In contrast, the expression of glycolysis pathway genes were initially repressed, followed by an initial peak expression at 0.3/hr growth rate and a second peak at the highest growth rate phase (0.7/hr) (Figure\u00a04B). A largely similar transcriptional shift from TCA cycle gene activation to the utilization of glycolysis pathway genes with increasing growth rate was observed previously in a glucose-limited continuous-feed chemostat experiment [20], implying that the selection of the metabolic pathway enzyme activities is more growth rate dependent than substrate dependent.",
+                        "The activity of the glycolysis pathway is partially reflected by its metabolic byproduct, acetate, whose extracellular concentration is the consequence of a balance of its rate of secretion (via pta and ackA) and re-uptake (acs). We find that acetate production genes (pta and ackA) are expressed highly between 0.2\u2009~\u20090.4/hr growth rates (Figure\u00a04B). Besides the metabolic switches, osmosensing and cell morphology related genes were also found to be activated differentially along growth rate increase (Additional file 4: Figure S4) indicating their potential involvement in MC optimization of dynamic cell growth."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "The Ccr Mutant, \u0394ptsg, Displays Growth Defects And Altered Cell Density In Mixed Substrate Chemostat Culture",
+                    "paragraphs": [
+                        "E. coli strains with defective CCR display slower glucose uptake and growth. The \u0394ptsG mutant with the deletion of the glucose transporter gene encoding EIICBGlc displays repressed glucose consumption with concomitant growth defects in glucose culture [1,3] yet elevates CCR repression when grown in media containing other substrates such as xylose and arabinose [30].",
+                        "When grown in rate-controlled mixed substrate chemostat culture, E. coli \u0394ptsG cells displayed similar cell culture density to wild type cells at growth rate 0.1 to 0.4/hr, but could not reach steady state growth above 0.5/hr (Figure\u00a05A). Interestingly, mutant cells displayed lower buoyant density (Figure\u00a05B) and larger cell volume (Figure\u00a05C) than wild type cells, implying that physiological cell density and volume regulation is intertwined with CCR.",
+                        "As expected, the measured uptake rates of the five substrates have diverged significantly (Figure\u00a05D) from that seen in the wt E. coli culture (Figure\u00a03C). Glucose consumption (through alternative glucose uptake mechanisms) remained very low throughout, while glycerol and lactate displayed the highest uptake rates at the faster growth rates. Interestingly, the consumption of maltose and galactose also remained suppressed, probably because their transporters, such as galP, were allocated to transport glucose as the shared transporter, besides the maltose transporter malEFG[31]. The altered substrate metabolism phenotype of \u0394ptsG mutant cells is associated with morphology and intracellular density alteration.",
+                        "In summary, these data demonstrate that defective CCR results in cell growth defects (with cell volume and density alterations) only at a fast growth phase but not at a slow growth phase, further suggesting that CCR is required for rapid cell growth and cell physiology regulation."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Transient Ccr Disruption In Mixed Substrate E. Coli Culture Is Associated With Cell Growth Inhibition And Cell Density Alteration",
+                    "paragraphs": [
+                        "CCR is activated in rapidly growing E. coli cells (Figure\u00a03), while in the CCR mutant, E. coli \u0394ptsG cells, MC alteration is associated with growth defects in the fast growth phase (Figure\u00a05A and B). However, CCR-negative mutants always have compromised glucose uptake [3,4] (Figure\u00a05D) and potentially have adapted to a new MC level in the extended period of culture. Therefore, we also wished to examine the cell\u2019s response to transient disruption of CCR. To this end, we induced maltose uptake in a mixed substrate culture with the addition of cAMP (4\u00a0mM) plus maltotriose (200\u00a0\u03bcM) (Additional file 2: Figure S2) at a proliferation rate when maltose uptake is normally inhibited (Figure\u00a01D).",
+                        "First, we tested if the inducers are sufficient to overcome the CCR-induced repression caused by glucose on the maltose regulon genes. We determined the protein expression level of MalE (or MBP), a subunit of the maltose transporter complex, by western blot analysis after 3.5\u00a0hr of induction. We found that MalE expression level was significantly increased upon maltose regulon induction (Figure\u00a06D), indicating that the inducers are able to upregulate maltose transporter expression.",
+                        "Next, we studied cell growth upon the inducers\u2019 addition. We observed that cAMP plus maltotriose treated cells displayed slightly inhibited cell growth compared to uninduced cells (Figure\u00a06A, B). Simultaneously, the substrate consumption rate of E. coli cells displayed decreased uptake of maltose and glucose, with maltose consumption eventually accelerating (Figure\u00a06C). In contrast, the uptake of glycerol was unaffected. We also found a significant increase in cell volume (Figure\u00a06F) and a slight decrease in cell density (Figure\u00a06E) upon induction of the maltose regulon. Thus, upon inappropriate activation of the maltose regulon E. coli cells expand their cell volume with concomitant slight delay in cell growth, perhaps in part to accommodate extra proteome mass. Indeed, increase in proteome mass by inducing the expression of an exogenous protein yields a similar growth phenotype (Additional file 5: Figure S5). These data suggest that optimal intracellular MC is constantly sensed and dynamically adjusted along CCR activation."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Discussion",
+            "paragraphs": [
+                "Carbon catabolite repression (CCR) is an important regulatory mechanism in bacteria that ensures that the cell relies on its preferred substrates to achieve optimal growth [1]. CCR may provide a similar function to the stringent response regulatory mechanism [32] by being sensitive to the growth needs (i.e., to the availability or the lack of nutrients) of the cell. It may act by turning on/off metabolic pathways by facilitating or repressing the necessary molecules of the pathway to ensure optimal cell growth. Indeed, CCR was evident in a mixed substrate batch chemostat E. coli culture in the form of sequential substrate consumption (Figure\u00a01D) [7]. This behavior was predicted by a flux balance model that takes into account the crowded intracellular milieu of the cell (FBAwMC) without any prior knowledge of CCR [7]. Nevertheless, the relationship of CCR and intracellular molecular crowding has not been formally examined.",
+                "In this study, we show that mixed substrate E. coli culture with CCR grows faster and to higher final biomass density than in any of its individual substrates, and that the kinetics of individual substrate uptake is very similar to that predicted by the FBAwMC model (Figure\u00a01). These data suggest that substrate uptake and cell growth relates to macromolecular crowding and that CCR enables optimal cell growth. In turn, we also show that in a mixed substrate culture the extent of CCR\u2019s activation is proportional to the culture\u2019s growth rate while the density of E. coli cells remains essentially unchanged (Figure\u00a03). Furthermore, transiently altered CCR in E. coli cells decreases their rate of proliferation and growth (Figure\u00a06). Transcriptome analyses (Figure\u00a04) also show that strict transcription level regulation of substrate uptake only appears at higher cell growth rates. Taken together, these data indicate that CCR is a regulatory mechanism that is fully active only during rapid cell growth and may exert its effect on cell function in part by enabling cells to maintain a near constant cytoplasmic density and/or by reducing transporter competition for membrane space [33].",
+                "However, CCR may not be the only mechanism that may contribute to the maintenance of intracellular MC by reducing the need for increased total protein (enzyme) content of the cell at rapid growth. Indeed, we have shown previously that with increasing cell growth there is a switch from oxidative phosphorylation (OxPhos) to a \u201cmixed OxPhos with glycolysis\u201d mode both in E. coli[20] and mammalian cells [34] that can be interpreted by the same principle. Temporal separation of metabolic activities (i.e., metabolic oscillations) [35-37] may also contribute to the maintenance of optimal intracellular MC. Thus, at slow growth biomass synthesis rate is low and cell metabolism operates in a \u201csubstrate limited\u201d mode, in which multiple substrate catabolism pathways are used through OxPhos to maximize substrate uptake and metabolic yield (Figure\u00a07). Yet, when cells are growing rapidly the biomass production rate is significantly higher, which with the same metabolic regime would require higher catalytic proteome content with subsequent increase in MC. To counter this need and to maintain a near constant MC level, bacterial cells initially increase their cell volume to accommodate the extra biomass production and, simultaneously, cell metabolism is reorganized in part to maintain a physiologically optimal MC."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Conclusions",
+            "paragraphs": [
+                "MC is a biophysical constraint and cell metabolism has to adapt to this fundamental constraint. In rapidly growing cells, CCR and/or the switch to \u201cmixed OxPhos with glycolysis\u201d mode is activated to supply ATP production and substrate catabolism with less MC variation (Figure\u00a07). Additional regulatory mechanisms of cell metabolism have likely developed in response to the need for maintaining intracellular MC at an optimal level. Uncovering the genes, proteins and pathways involved in the detection and regulation of MC is an important step for the understanding of the system-level regulation of cell metabolism."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Bacterial Strains And Growth Conditions",
+                    "paragraphs": [
+                        "We used the wild-type E. coli MG1655 strain and CCR mutant, \u0394ptsG (obtained from the Keio collection [38], Thermo Scientific), throughout the study. Before inoculation, E. coli cells were routinely cultured with agitation at 200\u00a0rpm, 37\u00b0C in Luria-Bertani broth (Teknova) for 48\u00a0hr from a frozen glycerol stock, or 24\u00a0hr from an LB-agar plate. After the pre-culture in LB, cells were inoculated into a 125\u00a0ml flask with 55\u00a0ml 1\u00d7 M9-minimal salts medium (Sigma) with various carbon substrates. The 1 \u00d7 M9-minimal salts media was supplemented with MgSO4 and CaCl2 to final concentrations of 2\u00a0mM and 0.1\u00a0mM, respectively. In single substrate culture experiments, the concentration of substrates was 0.2% w/vol. In mixed substrate culture experiments, five substrates (glucose, glycerol, galactose, lactate and maltose) were added such that each of the substrates had a final concentration of 0.04% w/vol. The cells were cultured in flasks for 6\u00a0hr continuously at 260\u00a0rpm, 37\u00b0C. For fermenter batch culture, cells were inoculated after LB-preculture. In continuous-feed chemo-stat cultures, cells were grown in a continuous growth mode at 7 different dilution rates (0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7/hr) in a Labfors bioreactor (Infors, Switzerland). The growth of the bacterial culture was regularly monitored at OD600nm to document steady state. For all the experiments, the initial OD of the cells was at OD600nm\u2009~\u20090.035."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Gfp Reporter System Of Maltose Regulon Genes",
+                    "paragraphs": [
+                        "The GFP reporter system was constructed as described in [39]. The promoter regions and binding sites of maltose regulon genes (malEKSTPZ) that participate in maltose biosynthesis in E. coli MG1655 were PCR amplified using E. coli genomic DNA from the sequenced E. coli genome (http://ecocyc.org). The functions of the genes were introduced in Additional file 2: Table S1. The primers were designed using Invitrogen\u00ae custom design software to amplify the sequences that contain the promoter region with CRP and all other transcription factor binding sites for the gene of interest, with an extension of ~100\u00a0bp before the first TF binding site in each case. Both the forward and reverse primers were designed with either XhoI or BamHI restriction site tails.",
+                        "Plasmids that showed the presence of an insert of correct size on gel were extracted, purified and sequenced. The inserts that showed 100% match were further selected for second round of subcloning into a site upstream of a promoterless low-copy reporter plasmid, pCS21 (obtained from Dr. M. Surette, University of Calgary, AB, Canada) in JM109. The selected gene inserts were then grown in large batches of 150\u00a0ml LB-Amp cultures, followed by plasmid purification. These plasmids were again digested by the suitable restriction enzyme followed by gel extraction and purification of the insert to confirm the correct insertion. Then the vectors were transferred into MG1655 cells."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Plasmids",
+                    "paragraphs": [
+                        "High-copy reporter plasmids (pET28a), in which an inserted promoter can control the expression of the UCH gene were obtained from Dr. Hao Liu, University of Pittsburgh."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Batch Culture Experiments With Inducer Induction",
+                    "paragraphs": [
+                        "Before inoculation into 24-well plate culture, E. coli cells were routinely cultured with agitation at 200\u00a0rpm, 37\u00b0C in Luria-Bertani broth (Teknova) overnight from a glycerol stock, or from an LB-agar plate. In flask culture, LB overnight cultured cells were inoculated as introduced above. The cells were cultured in the flasks for 6\u00a0hr continuously at 200\u00a0rpm, 37\u00b0C. Inducers (4\u00a0mM cAMP and 200\u00a0\u03bcM maltotriose) were added after 15mins culture and cell culture was monitored for 6\u00a0hr. Cell culture media was sampled to determine OD600nm and substrate consumption."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cell Growth And Growth Rate Calculation",
+                    "paragraphs": [
+                        "The cell growth data were collected at 30\u00a0min intervals and 150\u00a0\u03bcl aliquot of the cell cultures were measured by a photometer (Eppendorf) at OD600nm. The growth rate (GR) was calculated as:",
+                        "\\(\\left( \\frac{\\left. {}^{\\mathit{ODt}}/{}_{\\mathit{OD}{({t - 1})}} \\right.}{\\mathit{\\Delta t}} \\right)\\)",
+                        "Where GR denotes the growth rate at t (hr-1), ODt: the OD600nm measured at t, and \u0394t: the sampling interval (hr)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cell Density Measurement With Ficoll Gradient",
+                    "paragraphs": [
+                        "The Ficoll step gradient was prepared by dissolving the Ficoll 400 powder (GE Healthcare) in 1\u2009\u00d7\u2009PBS to achieve\u2009~\u200960%w/v concentration. The density of the solution was measured with a Densito 30PX densitometer (Mettler Toledo). The most condensed Ficoll solution prepared for the experiments was 1.19\u00a0g/ml (\u03c10). The lower density solutions (\u03c11~ \u03c17) were prepared from \u03c10 solution by diluting the dissolved Ficoll solution with PBS. The densities of the gradient used for the cell separation were, \u03c10- 1.19\u00a0g/ml, \u03c11- 1.18\u00a0g/ml, \u03c12- 1.16\u00a0g/ml, \u03c13- 1.14\u00a0g/ml, \u03c14- 1.12\u00a0g/ml, \u03c15- 1.10\u00a0g/ml, \u03c16- 1.08\u00a0g/ml, \u03c17- 1.06\u00a0g/ml. 0.5\u00a0ml of each individual gradient solution were gently layered into a 4.5\u00a0ml centrifuge tube (Beckman, 344062) from the heaviest to the lightest solution, as previously described [40]. The interface of each two layers was marked on the tube before centrifugation.",
+                        "In the Ficoll gradient experiment, 10\u00a0ml of the cells were centrifuged at 4,500\u00a0g \u00d7 15\u00a0min in Beckman Coulter Allegra 15R at 4\u00b0C. The supernatant was removed until only ~0.1\u00a0ml culture media was left in the tube. 0.1\u00a0ml PBS was added into each tube and the cells were resuspended. The cells were then transferred into the 4.5\u00a0ml tube with the 8 layers of Ficoll gradient. More PBS solution was added into the 4.5\u00a0ml tube to fill the remaining space to prevent cracking during the high speed centrifugation. The prepared tubes were loaded into a SW60 Ti rotor and subjected to centrifugation at 16,000\u00a0g\u2009\u00d7\u20091\u00a0hr at 4\u00b0C in an L8 Ultracentrifuge (Beckman Coulter). The cells distributed into each of the layer that has had the most similar density to the cells. At the end of the run, 0.5\u00a0ml of each layer was carefully transferred into a 70\u00a0\u03bcl UV-Cuvette (BRAND) and the solution was mixed through pipetting. The OD was measured at 600\u00a0nm with a Photometer (Eppendof) and the background of the same Ficoll gradient solution was subtracted from the readout. The cell density distribution (CDD) was calculated as:",
+                        "\\(\\mathit{CDD\\rho i} = \\frac{\\mathit{OD\\rho i}}{\\sum_{i = 0}^{7}\\mathit{OD\\rho i}}\\)"
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cell Volume Measurement",
+                    "paragraphs": [
+                        "After adjusting the dilution rate of the feeding medium, cells in chemostat culture were sampled several times a day, until after the growth rate had been stabilized. Cell culture media was vortexed for 5\u00a0seconds then 20\u00a0\u03bcl cell suspension for each sample was measured by diluting in 20\u00a0ml suspension solution (Beckman Coulter) then loaded into Multisizer 3 (Beckman Coulter) for cell volume measurements. Each sample was measured twice."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Western Blotting",
+                    "paragraphs": [
+                        "For each sample, 20\u00a0\u03bcg of protein lysates were mixed with 1\u2009\u00d7\u2009sample buffer, boiled for 5\u00a0min., and then loaded onto 15% SDS-PAGE, 100\u00a0V for 2\u00a0hr. The gel was transferred on a nitrocellulose membrane (Bio-Rad) at 25\u00a0V for 2\u00a0hr. The membrane was blotted with a mouse monoclonal MalE antibody (NEB) (1: 3000) overnight at 4\u00b0C. The membrane was then washed 3 \u00d7 5\u00a0min with TBST buffer. The secondary HRP-anti mouse (1:10,000) antibody was used to probe the membrane for 1\u00a0hr at RT. The membrane was washed 3 times with TBST then processed for chemiluminescence development."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Substrate Concentration Measurement",
+                    "paragraphs": [
+                        "The sampled cell culture (1.5\u00a0ml) at different time points was subjected to centrifugation at 4,500\u2009\u00d7\u2009g for 10\u00a0min at 4\u00b0C. The supernatant was transferred to a 1.5\u00a0ml tube and incubated at 80\u00b0C for 15\u00a0min to deactivate the enzymes. Substrate concentrations were determined according to the manufacturer\u2019s protocol (R-Biopharm, Germany)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Testing Maltose Regulon Promoter Activities",
+                    "paragraphs": [
+                        "For measuring the promoter activities of operons within the maltose regulon upon their induction in single carbon limited- and mixed substrates cultures, we first created promoter-GFP reporter plasmid-containing E. coli cells, as shown in Additional file 2. The inducers, cAMP and maltotriose activate the promoters of the maltose regulon genes to synthesize GFP. This is the indirect measurement of the activities of the maltose regulon genes. We used a real-time monitoring system, in which the ratio of GFP/ OD600nm between cells with or without maltose regulon induction were calculated to evaluate promoter activities."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Microarray Experiments",
+                    "paragraphs": [
+                        "For the chemostat culture experiments, cells were sampled at every 24\u00a0hrs after the dilution rate was adjusted. The whole cell culture volume (45\u00a0ml) was mixed with 5\u00a0ml of ice-cold stop-solution (5% water-saturated phenol in absolute ethanol), and a cell pellet was obtained by centrifugation at 4,500\u2009\u00d7\u2009g for 10\u00a0min at 4\u00b0C, followed by flash freezing of pellets with liquid nitrogen. The pellets were stored at \u221280\u00b0C until further use. RNA was isolated from the frozen cell pellets by using Epicenter\u2019s Masterpure RNA isolation kit (using the manufacturer\u2019s product manual). The samples were also treated with DNase for 1\u00a0hr at 37\u00b0C to remove DNA contamination in the RNA samples. Ten micrograms of all RNA samples were processed for transcriptome analysis using E. coli Affy-metrix microarray chips by the Microarray Resource Centre, Department of Genetics and Genomics at Boston University School of Medicine http://www.bumc.bu.edu/microarray/. Microarray data were processed in R using the \u2018affy\u2019 package. Background correction was done with MAS5, which is Affymetrix\u2019s recommended procedure. For Figure\u00a03 normalization of gene expression values was performed first with qspline; cross-array normalization was then done using R\u2019s version of dchip [41]. Relative gene expression values from the highest (red) to the lowest (green) are shown."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Fbawmc Model",
+                    "paragraphs": [
+                        "The simulations of mixed and single substrate cultures were performed using the FBAwMC model reported in Ref. [20] and described in Additional file 3."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Statistics",
+                    "paragraphs": [
+                        "Values are expressed as the mean\u2009\u00b1\u2009SD. Data are plotted and regressed with Graphpad Prism5 (Graphpad Scientific). Intergroup differences were assessed by using the t-test."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Availability Of Supporting Data",
+                    "paragraphs": [
+                        "Microarray data have been deposited in Gene Expression Omnibus (GEO accession number: GSE51581)."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Abbreviations",
+            "paragraphs": [
+                "CCR: Carbon catabolite repression; FBAwMC: Flux balance model with macromolecular crowding; MC: Macromolecular crowding; OxPhos: Oxidative phosphorylation; PTS: Phosphor-transferase system; UCHL1: Ubiquitin carboxy-terminal hydrolase-L1."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Competing Interest",
+            "paragraphs": [
+                "The authors declare that no competing financial and non-financial interests exist."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Authors\u2019 Contributions",
+            "paragraphs": [
+                "YZ and ZNO designed the experiments. YZ, TW and KW performed the experiments. AV and AW performed the modeling and microarray data analysis, respectively. YZ, AV, ZBJ and ZNO wrote the manuscript. All authors read and approved the final manuscript."
+            ],
+            "subsections": []
+        }
+    ]
+}

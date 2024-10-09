@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce chatbots
+- motivate need for analysis
+
+## SUMMARY
+
+- introduce embodiments
+- motivate bot analysis
+- define bot embeddings
+- describe detection of real bots
+- describe detection of problematic conversations
+- train neural network model
+- receive chatbot graph
+- analyze chatbot graph
+- generate content-based representation
+- generate structure-based representation
+- describe system embodiment
+- describe computer program product
+- summarize method
+
+## DETAILED DESCRIPTION
+
+- introduce conversational systems
+- motivate analysis of conversational systems
+- define representation of bot structure
+- describe classification task for bot analysis
+- introduce system overview
+- describe voice response system
+- describe computer system
+- describe bots
+- describe voice response software
+- introduce bot overview
+- describe graph components
+- describe node structure
+- describe positive and negative edges
+- describe graph execution
+- describe conversation example
+- describe node classification
+- describe node traversal
+- describe special sink nodes
+- describe graph notations
+- describe depth and width of graph
+- describe bot behavior
+- describe characteristics of bot graph
+- introduce process of operation
+- generate representations of bot graph
+- create content-based representation
+- build vocabulary
+- define vector template
+- compute document frequency
+- create vectors for user utterances and bot responses
+- create structure-based representation
+- map nodes to bin vector
+- describe bin vector structure
+- map graph nodes to bin vector
+- describe utterance modeling
+- represent utterance in bin vector
+- distinguish between node types
+- update counters in bin vector
+- describe conversation modeling
+- aggregate bin vectors
+- capture conversation patterns
+- describe example of conversation modeling
+- conclude detailed description
+- introduce neural network model training
+- describe content-based representation
+- describe structure-based representation
+- motivate bot classification analytics tasks
+- describe detecting real bots
+- describe detecting egregious conversations
+- introduce experiments
+- describe data collection
+- describe experimental setting
+- describe bot2vec implementation details
+- describe content-based model input
+- describe structure-based model input
+- describe neural network model architecture
+- describe task 1: detecting real bots
+- describe ground truth data
+- describe baseline model
+- describe results
+- describe task 2: detecting egregious conversations
+- describe ground truth data
+- describe baseline model
+- describe results
+- analyze structure-based representation
+- describe average distance calculation
+- describe computer system architecture
+- describe input/output circuitry
+- describe network adapter
+- describe memory
+- describe neural network training routines
+- describe content-based representation routines
+- describe structure-based representation routines
+- describe classification routines
+- describe real bot detection routines
+- describe egregious conversation detection routines
+- describe neural network models
+- describe database management system
+- describe data skipping indexes
+- describe filters and routines
+- describe operating system
+- describe multi-processor computing
+- describe multi-tasking computing
+- describe multi-process computing
+- describe computer program product
+- describe computer readable storage medium
+- describe network transmission
+- describe computer readable program instructions
+- describe assembler instructions
+- describe instruction-set-architecture instructions
+- describe machine instructions
+- describe microcode
+- describe firmware instructions
+- describe state-setting data
+

@@ -1,0 +1,487 @@
+# DESCRIPTION
+
+## GOVERNMENT FUNDING
+
+- disclose government funding
+
+## BACKGROUND OF THE INVENTION
+
+- introduce homologous recombination
+- describe limitations of prior approaches
+- motivate need for efficient genome editing
+
+## SUMMARY OF THE INVENTION
+
+- introduce fusion protein
+- describe guide nucleotide sequence-programmable DNA binding protein domain
+- describe recombinase catalytic domain
+- describe optional linker
+- describe guide nucleotide sequence-programmable DNA binding protein domain options
+- describe recombinase catalytic domain options
+- describe linker options
+- describe nuclear localization signal domain
+- describe affinity tag options
+- describe fusion protein structure
+- describe fusion protein with NLS domain
+- describe fusion protein with affinity tag
+- describe fusion protein with multiple domains
+- describe fusion protein with specific linker
+- describe fusion protein with specific recombinase catalytic domain
+- describe fusion protein with specific guide nucleotide sequence-programmable DNA binding protein domain
+- describe fusion protein with specific NLS domain
+- describe fusion protein with specific affinity tag
+- describe dimer of fusion protein
+- describe tetramer of fusion protein
+- describe method for site-specific recombination
+- describe contacting DNA with fusion protein
+- describe binding of fusion protein to DNA
+- describe tetramerization of recombinase catalytic domains
+- describe recombination of DNA
+- describe method for site-specific recombination with single DNA molecule
+- describe deletion of region of DNA molecule
+- describe recombination of DNA with different sequences
+- describe gRNA binding sites flanking recombinase site
+- describe recombinase site options
+- describe distance between gix core and gRNA binding site
+- describe DNA molecule options
+- describe cell options
+- describe subject options
+- describe polynucleotide encoding fusion protein
+- describe vector comprising polynucleotide
+- describe cell comprising genetic construct
+- describe kit comprising fusion protein
+- describe kit comprising polynucleotide
+- describe kit comprising vector
+- describe kit comprising cell
+- describe kit comprising gRNA and/or vector
+
+## DEFINITIONS
+
+- define singular and plural forms
+- introduce RNA-programmable DNA-binding proteins
+- define Cas9 nuclease
+- describe Cas9 nickases
+- introduce CRISPR system
+- describe CRISPR clusters
+- explain processing of pre-crRNA
+- describe Cas9/crRNA/tracrRNA endonucleolytic cleavage
+- introduce single guide RNAs (sgRNA)
+- describe Cas9 recognition of PAM motif
+- introduce dCas9 protein
+- describe mutations in dCas9
+- introduce variants of dCas9
+- describe homologues of dCas9
+- introduce methods for generating Cas9 protein with inactive DNA cleavage domain
+- describe mutations in HNH and RuvC1 subdomains
+- introduce proteins comprising fragments of Cas9
+- describe Cas9 variants
+- introduce wild type Cas9
+- describe Cas9 domain with amino acid sequence identical to wild type Cas9
+- introduce mutations in Cas9 domain
+- describe fragment of Cas9 with amino acid sequence identical to wild type Cas9
+- introduce length of fragment
+- describe wild type Cas9 from various organisms
+- introduce PAM motif
+- describe PAM recognition by Cas9
+- introduce Cas9 variants with different PAM requirements
+- describe deamination window
+- introduce Cas9 domains that bind non-canonical PAM sequences
+- describe examples of Cas9 domains with altered PAM specificities
+- introduce Cpf1 as an RNA-programmable DNA-binding protein
+- describe features of Cpf1
+- introduce Cpf1-family proteins
+- define nuclease-inactive Cpf1 variants
+- describe RuvC-like endonuclease domain
+- motivate inactivation of RuvC-like domain
+- introduce guide nucleotide sequence-programmable DNA-binding protein domain
+- describe Argonaute protein from Natronobacterium gregoryi
+- motivate use of nuclease inactive NgAgo
+- introduce Cas9 variants with relaxed PAM requirements
+- describe mutations that relax PAM requirements
+- introduce additional Cas9 proteins
+- describe nuclease dead Cas9
+- describe Cas9 nickase
+- describe nuclease active Cas9
+- introduce Cas9 from archaea
+- describe CasX and CasY
+- motivate use of CasX and CasY
+- introduce guide nucleotide sequence-programmable DNA-binding protein domain of fusion proteins
+- describe CasX or CasY protein
+- define conjugating, conjugated, and conjugation
+- define consensus sequence
+- define engineered
+- define effective amount
+- define guide nucleotide sequence-programmable DNA-binding protein
+- describe bifurcated or circularly permuted guide nucleotide sequence-programmable DNA-binding protein
+- define homologous
+- describe homology between sequences
+- define sequence identity
+- describe percent sequence identity
+- define linker
+- describe linker properties
+- provide linker examples
+- define mutation
+- describe mutation methods
+- define nuclear localization sequence
+- provide NLS examples
+- define nuclease
+- describe nuclease properties
+- describe nuclease types
+- define nucleic acid
+- describe nucleic acid properties
+- provide nucleic acid examples
+- describe nucleic acid analogs
+- define orthogonal
+- describe orthogonality
+- provide orthogonality examples
+- describe gRNA-directed recCas9 proteins
+- demonstrate orthogonality of the system
+- define pharmaceutical composition
+- define active ingredient
+- define Cas9 variant/fusion protein
+- define target nucleic acid
+- define proliferative disease
+- define protein, peptide, and polypeptide
+- define fusion protein
+- define pseudo-gix site
+- define RNA-programmable nuclease
+- define guide RNA
+- define tracrRNA
+- define extended gRNA
+- define Cas9 endonuclease
+- describe RNA-programmable nuclease functionality
+- define recombinase
+- classify serine recombinases
+- classify tyrosine recombinases
+- define Gin recombinase
+- describe Gin recombinase mutations
+- define gix target site
+- describe gix target site mutations
+- define distance between gix core and gRNA binding site
+- provide examples of gix target site distances
+- provide references to incorporated publications
+- provide SEQ ID NO references
+- define recombinase names
+- introduce recombinase applications
+- cite prior art
+- describe recombinase catalytic domains
+- discuss recombinase DNA binding activity
+- introduce nuclease-inactivated RNA-programmable nucleases
+- describe engineering of recombinases
+- discuss serine recombinases
+- introduce tyrosine recombinases
+- describe Cre recombinase mutants
+- define recombine and recombination
+- define recombinant
+- define subject
+- describe subject embodiments
+- define target nucleic acid
+- define target genome
+- describe target nucleic acid embodiments
+- discuss target site numbers
+- provide examples of recombinases
+- discuss recombinase engineering
+- summarize recombinase applications
+- define target site
+- describe target site structure
+- specify PAM sequences
+- define TALE
+- describe TALE DNA binding domain
+- explain RVD motif
+- define TALEN
+- describe TALEN DNA cleavage domain
+- specify modular assembly schemes
+- define treatment
+- describe treatment goals
+- specify treatment timing
+- define vector
+- describe vector characteristics
+- specify vector types
+- define zinc finger
+- describe zinc finger structure
+- explain zinc finger motifs
+- specify zinc finger binding domains
+- define zinc finger nuclease
+- describe zinc finger nuclease structure
+- explain zinc finger nuclease targeting
+- specify zinc finger nuclease applications
+- describe zinc finger nuclease design
+- explain zinc finger nuclease engineering
+- specify zinc finger nuclease cleavage domains
+- describe zinc finger nuclease linker
+- explain zinc finger nuclease dimerization
+- specify zinc finger nuclease monomers
+- describe zinc finger nuclease binding sites
+- explain zinc finger nuclease cutting mechanism
+- specify zinc finger nuclease advantages
+- describe zinc finger nuclease limitations
+- summarize zinc finger nuclease technology
+
+## DETAILED DESCRIPTION OF CERTAIN EMBODIMENTS OF THE INVENTION
+
+- introduce embodiments
+
+### Guide Nucleotide Sequence-Programmable DNA Binding Protein
+
+- introduce programmable DNA binding domain
+- describe zinc finger nuclease and TALE
+- define guide nucleotide sequence-programmable DNA binding protein
+- describe dCas9 and Cas9 nickase
+- specify dCas9 domain mutations
+- describe Cas9 nickase mutations
+- provide variants of dCas9 and Cas9 nickase
+- describe additional suitable nuclease-inactive dCas9 domains
+- introduce nucleobase editors with decreased electrostatic interactions
+- describe Cas9 domain mutations for decreased electrostatic interactions
+- introduce dCas9 and Cas9 nickase with additional mutations
+- describe high-fidelity Cas9 domains
+- introduce PAM motif
+- describe Cas9-DNA interaction
+- explain PAM specificity
+- describe different Cas9 nucleases with different PAM requirements
+- introduce RNA-programmable DNA binding proteins
+- describe Cas9, CasX, CasY, Cpf1, C2c1, C2c2, and Argonaute
+- introduce Cpf1 with different PAM specificity
+- describe Cpf1 features
+- describe Cpf1-mediated DNA interference
+- introduce Cpf1-family proteins
+- describe Cpf1 proteins in genome-editing activity
+- introduce guide nucleotide sequence-programmable DNA binding protein
+- describe Cpf1 protein
+- discuss RuvC-like endonuclease domain
+- describe mutations inactivating Cpf1 nuclease activity
+- introduce C2c1, C2c2, and C2c3 CRISPR-Cas systems
+- describe C2c1 and C2c3 proteins
+- discuss C2c2 protein and its RNase activity
+- describe crystal structure of C2c1
+- discuss catalytically competent conformations of AacC2c1
+- introduce Argonaute protein from Natronobacterium gregoryi (NgAgo)
+- describe NgAgo-gDNA system
+- introduce Cas9 variants with relaxed PAM requirements
+- describe PAMless Cas9
+- introduce linker
+- describe linker as chemical group or molecule
+- discuss linker length and flexibility
+- introduce various linker motifs
+- describe XTEN linker
+- introduce other linker sequences
+- discuss linker length in angstroms
+- discuss linker weight in kDa
+- introduce peptide linker
+- describe peptide linker length
+- introduce XTEN linker sequence
+- introduce other peptide linker sequences
+- introduce non-peptide linker
+- describe non-peptide linker components
+- introduce alkyl linker
+- describe alkyl linker formula
+- discuss guide nucleotide sequence-programmable DNA binding protein domain
+- discuss recombinase catalytic domain
+- describe fusion of guide nucleotide sequence-programmable DNA binding protein domain and recombinase catalytic domain via linker
+
+### Recombinase Catalytic Domain
+
+- introduce recombinase catalytic domain
+- describe suitable recombinases
+- list tyrosine and serine recombinases
+- provide examples of recombinases
+- describe mutations in recombinases
+- specify sequence identity of mutated recombinases
+- introduce evolved recombinases
+- describe altered target sequence preferences
+- explain use of evolved recombinases
+- describe catalytic domains of evolved recombinases
+- specify sequence identity of evolved recombinases
+- describe recognition of non-canonical target sequences
+- provide examples of non-canonical target sequences
+- describe use of partial recombinase sequences
+- specify C-terminal portion of Cre recombinase
+- describe mutations in C-terminal portion of Cre recombinase
+- introduce truncation of Cre recombinase
+- specify truncation positions
+- describe recombinase target sequence length
+- specify examples of recombinases
+- describe canonical recombinase target sequences
+- introduce evolved recombinase recognizing naturally occurring sequence
+- describe recognition of sequences in mammalian genome
+- specify recognition of sequences in human genome
+- describe recognition of unique sequences in mammalian genome
+- specify recognition of sequences differing from others
+- introduce recognition of safe harbor genomic locus
+- specify Rosa26 locus
+- describe recognition of sequences associated with disease
+- introduce evolved Cre recombinase
+- describe recognition of non-palindromic target sequences
+- specify recognition of naturally occurring sequences
+- describe recognition of sequences in mammalian genome
+- specify recognition of sequences in human genome
+- describe recognition of unique sequences in mammalian genome
+- specify recognition of sequences differing from others
+- introduce recognition of safe harbor genomic locus
+- specify Rosa26 locus
+- describe recognition of sequences associated with disease
+
+### Structure of the Fusion Protein
+
+- define fusion protein structure
+- list exemplary fusion protein structures
+- describe NH2-[recombinase catalytic domain]-[linker sequence]-[guide nucleotide sequence-programmable DNA binding protein domain]-
+- describe NH2-[recombinase catalytic domain]-[linker sequence]-[guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[recombinase catalytic domain]-[optional linker sequence]-[guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[guide nucleotide sequence-programmable DNA binding protein domain]-[linker sequence]-[recombinase catalytic domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]-
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[N-terminal portion of a bifurcated or circularly permuted guide nucleotide sequence-programmable DNA binding protein domain]
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[optional NLS domain]-[optional linker sequence]-[recombinase catal
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[recombinase catalytic
+- describe NH2-[affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[recombinase catalytic
+- describe NH2-[affinity tag]-[linker sequence]-[NLS domain]-[linker sequence]-[recombinase catalytic
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[optional NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[affinity tag]-[linker sequence]-[NLS domain]-[linker sequence]-[guide nucleotide
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[optional NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[optional affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[affinity tag]-[optional linker sequence]-[NLS domain]-[optional linker sequence]-[guide nucleotide
+- describe NH2-[affinity tag]-[linker sequence]-[NLS domain]-[linker sequence]-[guide nucleotide
+- conclude fusion protein structures
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe fusion protein structure
+- describe affinity tags
+- list affinity tags
+- describe third linker
+- list third linker sequences
+- describe non-peptide linker
+- list non-peptide linker types
+- describe alkyl linker
+- describe sequence identity
+- introduce LSR structure
+- describe left-half site
+- describe right-half site
+- describe spacer sequence
+- describe LSR structure variations
+- describe half-site lengths
+- describe spacer sequence lengths
+- describe spacer sequence lengths
+
+## EXAMPLES
+
+### Example 1: A Programmable Cas9-Serine Recombinase Fusion Protein that Operates on DNA Sequences in Mammalian Cells
+
+- introduce materials and methods
+- describe oligonucleotides and PCR
+- outline reporter construction
+- describe Golden Gate assembly
+- detail plasmid construction
+- describe pCALNL-GFP subcloning vector
+- outline recCas9 reporter plasmid creation
+- describe Gin recombinase catalytic domain
+- detail dCas9 domain
+- describe plasmid sequencing experiments
+- outline pHU6-NT1 guide RNA expression vector
+- describe guide RNA expression vector creation
+- detail spectinomycin resistance introduction
+- describe cell culture and transfection
+- outline HEK293T cell culture
+- describe transfection reactions
+- detail flow cytometry
+- describe iRFP fluorescence measurement
+- outline EGFP fluorescence measurement
+- describe data analysis
+- identify genomic target sites
+- describe Bioconductor package use
+- outline genome searching
+- describe DNA sequencing
+- detail episomal DNA extraction
+- describe RecBCD digestion
+- outline Machl-T1 cell transformation
+- describe sequencing read analysis
+- analyze recCas9 catalyzed genomic deletions
+- describe transfection reactions
+- outline GFP transfection control
+- detail genomic DNA harvesting
+- describe nested PCR
+- outline primary PCR conditions
+- describe secondary PCR conditions
+- detail DNA analysis
+- calculate limit of detection
+- introduce programmable Cas9-Serine recombinase fusion protein
+- estimate minimum deletion efficiency
+- describe limitations of quantitative PCR
+- motivate fusion of Gin Recombinase to dCas9
+- describe dCas9-FokI fusion
+- describe Ginβ promiscuous recombination
+- introduce guide RNA-dependent recombination activity
+- describe reporter plasmid construction
+- vary recCas9 component architecture
+- describe results of varying recCas9 architecture
+- motivate targeting DNA sequences in human genome
+- describe low levels of observed activity
+- describe optimization of guide RNA sequence
+- describe optimization of core gix sequence
+- search for target sites in human genome
+- describe reporter construct creation
+- describe guide RNA expression vector construction
+- describe co-transfection results
+- determine requirement for both guide RNA sequences
+- describe results of single guide RNA transfection
+- motivate testing of recCas9 orthogonality
+- select target sites in human genome
+- describe identification of safe-harbor loci
+- construct reporters and guide RNA vector pairs
+- evaluate orthogonality of recCas9
+- describe results of orthogonality testing
+- summarize recCas9 activity
+- describe dependence on recCas9 and guide RNA
+- conclude recCas9 orthogonality
+- characterize recCas9 products
+- sequence reporter plasmids
+- analyze sequencing data
+- discuss limitations of flow cytometry
+- discuss transformation efficiency
+- test for mutagenesis
+- analyze recombination products
+- discuss error-free recombination
+- introduce recCas9-mediated genomic deletion
+- design guide RNA expression vectors
+- cotransfect recCas9 and guide RNA vectors
+- analyze genomic PCR results
+- identify recCas9 target sites
+- design guide RNA sequences
+- cotransfect recCas9 and guide RNA vectors
+- analyze nested PCR results
+- sequence PCR product
+- estimate genomic deletion efficiency
+- introduce alternative recombinases
+- fuse Cre recombinase to dCas9
+- optimize linker sequences
+- analyze reversion data
+- identify PAMs flanking Rosa26 site
+- design guide RNAs and plasmid reporter
+- test dCas9-36C6 activity
+- truncate Cre recombinase fused to dCas9
+
+## EQUIVALENTS AND SCOPE
+
+- describe equivalents to specific embodiments
+- discuss scope of present invention
+- introduce articles such as “a,” “an,” and “the”
+- describe claims or descriptions with “or”
+- discuss embodiments with one or more members of a group
+- introduce variations, combinations, and permutations
+- describe methods of using compositions
+- discuss methods of making compositions
+- introduce open-ended language
+

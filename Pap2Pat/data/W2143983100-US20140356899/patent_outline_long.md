@@ -1,0 +1,215 @@
+# DESCRIPTION
+
+## STATEMENT OF GOVERNMENT INTEREST
+
+- describe government interest
+
+## BACKGROUND
+
+- introduce predictive modeling
+- motivate biological decontamination
+- describe limitations of chemical fumigants
+- introduce thermal decontamination
+- summarize thermal spore inactivation
+- describe experimental goals
+
+## SUMMARY
+
+- introduce hot humid air decontamination
+- motivate RSM application
+- describe protocol for testing and analyzing spores
+- summarize relation for k conditions
+
+## DETAILED DESCRIPTION
+
+- introduce decontamination need
+- describe test methods for spore inactivation
+- summarize response surface methodology (RSM)
+- describe spore survival on different materials
+- discuss limitations of chemical decontamination
+- introduce hot, humid air as alternative decontamination
+- describe RSM experimental design
+- identify significant predictor variables
+- generate response surface plots
+- predict spore survival on various materials
+- discuss dependence on material substrate
+- introduce decontamination of sensitive equipment
+- describe need for mild decontaminants
+- introduce mathematical models for decontamination
+- describe Bacillus anthracis ΔSterne sample preparation
+- describe Bacillus thuringiensis Al Hakam sample preparation
+- describe sporulation medium preparation
+- illustrate validation method for spore response
+- describe environmental test equipment setup
+- validate environmental test equipment
+- describe substrate coupons and materials
+- prepare and autoclave coupons
+- describe response surface methodology (RSM)
+- set experimental boundaries for RSM
+- select test combinations for RSM
+- illustrate design box for testing conditions
+- describe inoculation and drying of coupons
+- illustrate hot, humid air decontamination method
+- describe extraction and plating of spores
+- summarize test replicates per test run
+- describe spore survival quantification
+- detail extraction medium preparation
+- outline spore extraction procedure
+- describe vortexing and plating process
+- explain spore survival calculation
+- introduce TEM analysis of spores
+- describe strain selection process
+- present spore preparation and characterization data
+- show spore size distribution data
+- describe environmental test chamber setup
+- validate environmental chamber conditions
+- present cell division data for B. anthracis ΔSterne and B. thuringiensis Al Hakam
+- describe spore extraction from substrates
+- detail spore extraction protocol development
+- present spore extraction efficiency data
+- describe hot, humid air decontamination process
+- present log survival data for B. anthracis ΔSterne and B. thuringiensis Al Hakam
+- compare spore survival rates on different substrates
+- discuss influence of substrate surfaces on spore survival kinetics
+- present t-test mean comparisons of hot, humid air variables and pairs of substrates
+- describe TEM analysis of untreated, heat-killed, and pH-adjusted bleach-killed spores
+- show TEM images of spores
+- describe damage to spore outer structures after chemical decontamination
+- compare TEM images of outgrown spores
+- discuss species comparisons of germination/outgrowth morphologies
+- describe Coulter analysis results for spore debris and purity
+- validate use of Coulter analysis for spore purity quantification
+- present data on spore size distribution and purity
+- describe optimization of spore extraction process
+- discuss importance of timing of spore extraction
+- present data on spore extraction efficiency improvement
+- describe iterative RSM process for spore extraction optimization
+- discuss limitations of spore extraction protocol
+- describe need for further optimization of spore extraction process
+- discuss potential applications of spore extraction protocol
+- summarize spore survival and extraction results
+- introduce test method development
+- motivate need for controlled data
+- describe spore preparation protocol
+- describe filter-cap tube method
+- describe control driven experimental design
+- summarize statistical design of experiments
+- characterize spores by Coulter analysis and electron microscopy
+- justify hot, humid air test methods
+- explain limitations of existing regulations
+- describe examination of spore inactivation variables
+- discuss end-user requirements
+- analyze spore inactivation on different substrates
+- hypothesize effects of substrate properties
+- justify selection of simulants
+- describe advantages of B. thuringiensis Al Hakam
+- compare B. thuringiensis Al Hakam with B. anthracis
+- analyze spore morphology before and after decontamination
+- discuss potential spore targets for decontamination
+- describe baseline performance data for hot, humid air decontamination
+- discuss impact of debris on spore inactivation kinetics
+- introduce response surface modeling
+- describe response surface methodology
+- illustrate response surface views
+- describe inactivation diagrams
+- analyze spore survival data
+- model spore inactivation using RSM
+- describe generalized expression for RSM
+- explain log odds of spore inactivation
+- discuss analysis of variance
+- describe sequential use of RSM
+- discuss region of operability
+- introduce contour plots for log odds of spore inactivation
+- illustrate contour plots for different substrates
+- describe tabular views of parameters
+- show sequential sum of squares ANOVA tables
+- show parameter estimates tables
+- describe measured proportion response
+- standardize predictors to coded variables
+- convert temperature to coded variable
+- convert relative humidity to coded variable
+- discuss application of RSM to experimental design
+- discuss data analysis using RSM
+- conclude hot, humid air decontamination study
+- define variables
+- justify selection of variables
+- describe experimental design
+- introduce response variable
+- describe data analysis
+- omit data from test run three
+- fit second order model
+- analyze ANOVA table
+- report correlation parameters
+- provide parameter estimates
+- show response surface
+- omit data from test run three again
+- fit second order model again
+- analyze ANOVA table again
+- report correlation parameters again
+- provide parameter estimates again
+- show response surface again
+- omit run number one for B. anthracis ΔSterne on antiskid
+- fit first order model
+- analyze ANOVA table again
+- report correlation parameters again
+- provide parameter estimates again
+- show response surface again
+- omit run number one for B. thuringiensis Al Hakam on antiskid
+- fit first order model again
+- analyze ANOVA table again
+- report correlation parameters again
+- provide parameter estimates again
+- show response surface again
+- present equation for log odds of spore inactivation
+- analyze ANOVA table for sequential sum of squares
+- show significance of pure quadratic terms
+- discuss two-way interactions and F-test for lack of fit
+- present parameter estimates and standard errors
+- display response surface at four days and blocking term b fixed
+- discuss limitations of RSM for B. anthracis ΔSterne in wet solution
+- highlight points with live spores culturable
+- discuss limitations of RSM for B. thuringiensis Al Hakam in wet solution
+- highlight points with live spores culturable
+- provide compact summary of fitted coefficients
+- discuss control driven test method improvements
+- highlight application of RSM for predictive capability
+- discuss significance of predictors for spore inactivation
+- discuss piecewise modeling strategy for B. thuringiensis Al Hakam on polypropylene
+- discuss difficulties in modeling nylon webbing and polypropylene
+- discuss hot, humid air decontamination for wet spores and those dried onto wiring insulation
+- discuss objective of Tier II testing
+- discuss development of single spore preparation protocol
+- discuss control-driven test methods and response surface methodology
+- discuss predictive models for hot humid air decontamination
+- discuss two-dimensional contour plots for spore inactivation
+- present fitted equations for average log odds of inactivation
+- present 2D contour plot views
+- show log odds plot at 24 hours
+- show 90% LCL for log odds plot
+- show log odds plot at two days
+- show 90% LCL for log odds plot
+- show log odds plot at four days
+- show 90% LCL for log odds plot
+- show log odds plot at seven days
+- show 90% LCL for log odds plot
+- present 2D contour plot views of B. anthracis ΔSterne
+- show log odds plot at 24 hours
+- show 90% LCL for log odds plot
+- show log odds plot at two days
+- show 90% LCL for log odds plot
+- show log odds plot at four days
+- show 90% LCL for log odds plot
+- show log odds plot at seven days
+- show 90% LCL for log odds plot
+- present 2D contour plot views of B. thuringinesis Al Hakam on nylon webbing
+- describe single spore preparation protocol
+- present Coulter profiles of spore preparations
+- describe hot humid air decontamination biological test design
+- describe response surface modeling
+- describe statistical analysis
+- describe modeling of spore inactivation
+- present coefficients for fitted equations
+- discuss results of modeling
+- discuss limitations of modeling
+- conclude with developments for modeling of pathogen neutralization
+

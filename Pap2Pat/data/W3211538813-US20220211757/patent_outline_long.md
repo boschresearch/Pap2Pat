@@ -1,0 +1,222 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical fields
+
+## BACKGROUND OF THE INVENTION
+
+- introduce gamma delta T cells
+- describe limitations of gamma delta T cells
+- discuss conventional method of generating gamma delta T cells
+- highlight need for novel methods
+- motivate off-the-shelf gamma delta T cell therapies
+
+## SUMMARY OF THE INVENTION
+
+- introduce off-the-shelf gamma delta T cell therapies
+- describe engineered gamma delta T cells
+- outline method of producing engineered gamma delta T cells
+- discuss gamma and delta chain polypeptides
+- describe compositions of matter
+- outline methods of making engineered functional T cells
+- describe differentiating transduced pluripotent cells in vitro
+- discuss culturing transduced cells
+- outline co-culturing transduced cells
+- describe expanding pluripotent cells in vitro
+- outline engrafting transduced cells in vivo
+- describe engineered T cell characteristics
+- outline applications of engineered gamma delta T cells
+- summarize invention
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce gamma delta T cells
+- describe their recognition ability
+- motivate need for methods to generate engineered gamma delta T cells
+- describe limitations of current methods
+- introduce invention's solution: gene-engineering of pluripotent human cells
+- describe pluripotent human cells' multipotentiality
+- cite reference for CD34 marker
+- describe unexpected discovery of gamma delta T cell development
+- highlight importance of in vitro differentiated gamma delta T cells
+- describe co-expression of disease-targeting molecules
+- introduce method of making engineered functional T cells
+- describe transduction of pluripotent human cells
+- describe differentiation of transduced cells
+- describe expansion of differentiated cells
+- describe optional steps: cell sorting, co-culturing, and engrafting
+- describe engineered T cell's gene expression profile
+- describe optional exogenous nucleic acid molecules
+- describe therapeutic gene products
+- introduce materials and methods relating to gamma and delta chain polypeptides
+- describe compositions of matter comprising gamma and delta chain polypeptides
+- describe polynucleotides encoding gamma and delta chain polypeptides
+- describe vectors for expressing gamma and delta chain polypeptides
+- describe compositions of matter comprising engineered gamma delta T cells
+- describe methods of treating patients with engineered gamma delta T cells
+- describe administering engineered gamma delta T cells to patients
+- describe optional additional nucleic acids
+- describe therapeutic benefits of engineered gamma delta T cells
+- introduce figures and data
+- describe construction of lentiviral vectors
+- describe functional characterization of cloned gamma delta TCR
+- describe long-term in vivo provision of transgenic gamma delta T cells
+- describe in vitro generation of allogeneic hematopoietic stem cell-engineered human gamma delta T cells
+- describe feeder-dependent and feeder-independent cultures
+- describe generation of AlloHSC-gamma delta T cells in feeder-free ex vivo differentiation culture
+- describe scale of AlloHSC-gamma delta T cell production
+- describe phenotype and functionality of AlloHSC-gamma delta T cells
+- conclude description of invention
+- describe FIG. 8
+- show phenotype and functionality of AlloHSC-γδT cells
+- compare AlloHSC-γδT cells with endogenous human γδ T cells
+- describe FIG. 9
+- establish in vitro tumor cell killing assay
+- study tumor killing capacities of AlloHSC-γδT cells
+- describe FIG. 10
+- evaluate in vivo antitumor efficacy of AlloHSC-γδT cells
+- compare AlloHSC-γδT cells with PBMC-NK cells
+- describe FIG. 11
+- study tumor attacking potency of AlloBCAR-γδT cells
+- evaluate CAR-dependent and CAR-independent killing paths
+- describe FIG. 12
+- evaluate in vivo antitumor efficacy of AlloBCAR-γδT cells
+- compare AlloBCAR-γδT cells with conventional BCAR-T cells
+- describe FIG. 13
+- study in vivo antitumor efficacy of AlloBCAR-γδT cells with ZOL treatment
+- describe FIG. 14
+- generate and characterize IL-15-enhanced AlloBCAR-γδT cells
+- evaluate in vivo persistence and antitumor responses of Allo15BCAR-γδT cells
+- describe FIG. 15
+- study immunogenicity of AlloHSC-γδT and AlloBCAR-γδT cells
+- describe FIG. 16 and compare AlloHSC-γδT cell products with existing methods
+- note general applicability of embodiments
+- describe engineered γδ T cell with suicide gene product
+- specify TK gene as viral TK gene
+- describe activation of suicide gene product
+- describe labeling of substrate for detection
+- describe encoding of suicide gene product
+- describe lack of surface expression of HLA-I/II molecules
+- describe disruption of genes encoding HLA-I/II molecules
+- describe gene editing technologies
+- describe use of siRNA or miRNA molecules
+- describe recombinant vector or nucleic acid sequence
+- specify viral vector
+- describe integration of nucleic acid into host genome
+- describe media conditions for growth and differentiation
+- describe freezing of γδ T cells
+- describe stability of frozen cells
+- describe composition of solution for γδ T cells
+- describe population of engineered γδ T cells
+- describe production of population from single batch
+- describe specific embodiment of T cell population
+- describe methods of preparing engineered γδ T cells
+- describe steps involved in preparing engineered γδ T cells
+- introduce pluripotent cells
+- describe CD34+ cells
+- discuss culturing CD34+ cells
+- introduce growth factors
+- specify growth factor concentrations
+- introduce nucleic acid encoding TCR
+- describe gene editing of HLA-I/II molecules
+- introduce CRISPR and guide RNAs
+- discuss transfecting cells with CRISPR and guide RNAs
+- introduce serum-free medium
+- specify components of serum-free medium
+- introduce vitamins in serum-free medium
+- introduce proteins in serum-free medium
+- describe artificial thymic organoid system
+- introduce Notch ligand
+- specify Notch ligand types
+- describe creating 3D cell aggregate
+- introduce cell population size
+- specify cell population size ranges
+- introduce time period for cell production
+- specify time period ranges
+- introduce feeder cells
+- describe activating γδ T cells
+- introduce ZOL
+- describe storing cells
+- specify cell storage solutions
+- introduce engineered γδ T cells
+- describe producing engineered γδ T cells
+- introduce therapeutic gene products
+- specify therapeutic gene products
+- introduce off-the-shelf γδ T cells
+- describe producing off-the-shelf γδ T cells
+- introduce HLA-negative γδ T cells
+- describe modifying γδ T cells for allogeneic use
+- introduce gene editing for HLA-I/II molecules
+- describe disrupting genes for HLA-I/II molecules
+- introduce viral vectors
+- describe modifying γδ T cells for non-alloreactive use
+- introduce genomic mutations
+- specify genomic mutations
+- introduce engineered nucleases
+- introduce engineered γδ T cells
+- imaging and detection of cells
+- positron emission tomography (PET) reporter/thymidine kinase gene
+- populations of engineered γδ T cells
+- γδ T clonal cells with exogenous nucleic acid encoding γδ T-cell receptor
+- suicide gene, including enzyme-based suicide gene
+- TK gene and substrate activation
+- cells with exogenous nucleic acid encoding polypeptide for imaging
+- suicide gene product as polypeptide for imaging
+- γδ T cell population with nucleic acid sequences from recombinant vector
+- cells with or without exposure to certain conditions
+- cells in solution with dextrose, electrolytes, albumin, dextran, and/or DMSO
+- solution with dextrose, electrolytes, albumin, dextran, and DMSO
+- solution that is sterile, nonpyogenic, and isotonic
+- cells activated with ZOL
+- cell population with at least about 102-106 clonal cells
+- cell population with at least about 106-1012 total cells
+- γδ T cell population with clonal cells and thymidine kinase suicide gene
+- cells frozen in solution
+- UHSC-γδ T cells and/or precursors formulated and/or cultured in medium
+- medium prepared using basal medium for culturing animal cells
+- medium with serum or without serum
+- alternatives to serum in medium
+- commercially available materials for serum alternatives
+- serum-free medium for cell development
+- medium with B-27 supplement, xeno-free B-27 supplement, or GS21 supplement
+- cell expressing polypeptides with amino acid sequence shown in Table 1
+- method for producing UHSC-γδ T cells
+- in vitro culture system, including artificial thymic organoid (ATO) system
+- method for preparing population of clonal gamma delta (T6) T cells
+
+### EXAMPLES
+
+- clone human Vγ9Vδ2 TCRs
+- generate γδ T cells through gene-engineering
+- differentiate into transgenic γδ T cells
+- engineer HSC-γδT to express additional targeting molecules
+- utilize CAR-γδT cells for off-the-shelf disease-targeting cellular therapy
+- engineer HSC-γδT to overexpress genes encoding T cell stimulatory factors
+- disrupt genes encoding T cell inhibitory factors
+- generate HSC-γδT cells in vivo for HSC adoptive therapy
+- genetically modify HSCs to express a selected γδ TCR gene
+- adoptively transfer γδ TCR gene-engineered HSCs into a patient
+- generate HSC-γδT cells in vivo
+- generate AlloHSC-γδT cells for off-the-shelf cell therapy applications
+- genetically modify HSCs to express a selected γδ TCR gene
+- ex vivo generate AlloHSC-γδT cells with feeder cells
+- ex vivo expand differentiated AlloHSC-γδT cells
+- generate AlloHSC-γδT cells without feeder cells
+- ex vivo expand differentiated AlloHSC-γδT cells
+- apply engineered γδ T cells to target multiple diseases
+- apply engineered γδ T cells to target cancer
+- apply engineered γδ T cells to target infectious diseases
+- describe in vivo generation of HSC-γδT cells
+- describe feeder-dependent ex vivo generation of AlloHSC-γδT cells
+- describe feeder-free ex vivo generation of AlloHSC-γδT cells
+- engineer AlloHSC-γδT cells to express additional transgenes
+- disrupt selected genes in AlloHSC-γδT cells
+- describe novel features and advantages of AlloHSC-γδT cells
+- provide proof of principle
+
+## ILLUSTRATIVE VECTOR SEQUENCES
+
+- incorporate prior art references
+- define terms of art
+

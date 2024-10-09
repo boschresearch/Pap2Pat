@@ -1,0 +1,212 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate trajectory planning
+
+## DETAILED DESCRIPTION
+
+- introduce description purpose
+- clarify specific details
+- illustrate block diagrams
+- explain schematic element ordering
+- clarify connecting elements
+- define terminology
+- explain singular and plural forms
+- define "and/or" and "includes"
+- define "communication" and "communicate"
+- explain "if" and "if it is determined"
+- define "has" and "having"
+- explain "based on"
+- introduce embodiment descriptions
+
+### General Overview
+
+- introduce safety filter for machine learning planners
+- describe functionality of safety filter
+- explain benefits of safety filter
+- motivate need for safety filter
+- describe limitations of machine learning planners
+- introduce expert knowledge incorporation
+- describe environment 100
+- introduce vehicles 102a-102n
+- describe objects 104a-104n
+- introduce routes 106a-106n
+- describe area 108
+- introduce vehicle-to-infrastructure (V2I) device 110
+- describe network 112
+- introduce remote autonomous vehicle (AV) system 114
+- describe fleet management system 116
+- introduce V2I system 118
+- describe safety filter 504
+- describe interconnections between components
+- describe vehicles 102
+- describe objects 104
+- describe routes 106
+- describe area 108
+- describe V2I device 110
+- describe network 112
+- introduce environment 100
+- describe vehicle 200
+- introduce autonomous system 202
+- describe autonomous system 202 functionality
+- introduce sensor suite
+- describe cameras 202a
+- describe camera data
+- describe camera features
+- introduce LiDAR sensors 202b
+- describe LiDAR sensor functionality
+- introduce radar sensors 202c
+- describe radar sensor functionality
+- introduce microphones 202d
+- describe microphone functionality
+- introduce communication device 202e
+- describe communication device 202e functionality
+- introduce autonomous vehicle compute 202f
+- describe autonomous vehicle compute 202f functionality
+- introduce safety controller 202g
+- describe safety controller 202g functionality
+- introduce DBW system 202h
+- describe DBW system 202h functionality
+- introduce powertrain control system 204
+- describe powertrain control system 204 functionality
+- introduce steering control system 206
+- describe steering control system 206 functionality
+- introduce brake system 208
+- describe brake system 208 functionality
+- conclude vehicle 200 systems
+- introduce steering control system
+- describe brake system
+- introduce platform sensor
+- describe device 300 components
+- introduce bus 302
+- describe processor 304
+- describe memory 306
+- describe storage component 308
+- describe input interface 310
+- describe output interface 312
+- describe communication interface 314
+- introduce device 300 processes
+- describe software instructions
+- describe data storage
+- introduce module
+- describe autonomous vehicle compute 400
+- introduce perception system 402
+- describe planning system 404
+- introduce localization system 406
+- describe control system 408
+- introduce database 410
+- describe perception system 402 functions
+- describe planning system 404 functions
+- describe localization system 406 functions
+- describe control system 408 functions
+- introduce trajectory generator 502
+- introduce safety filter 504
+- introduce ML planner 506
+- describe trajectory generator 502 functions
+- describe safety filter 504 functions
+- describe ML planner 506 functions
+- introduce machine learning model
+- describe localization system 406 data
+- describe control system 408 data
+- introduce database 410 data
+- describe database 410 storage
+- introduce process 600
+- describe safety filter 504 implementation
+- describe process 600 steps
+- introduce safety filter 504 devices
+- describe safety filter 504 systems
+- introduce vehicle-to-infrastructure device 110
+- describe network 112
+- introduce remote autonomous vehicle system 114
+- describe fleet management system 116
+- introduce V2I system 118
+- describe planning system 404 systems
+- introduce vehicles 102a-102n
+- describe objects 104a-104n
+- describe routes 106a-106n
+- generate trajectories
+- define scene context
+- generate plurality of trajectories
+- apply safety parameters
+- define predefined assumption
+- define safety check
+- apply trajectory modifier
+- filter trajectories
+- determine unsafe trajectories
+- filter out unsafe trajectories
+- provide remaining trajectories
+- generate scores for trajectories
+- extract features from trajectories
+- generate score for each trajectory
+- select optimal trajectory
+- define filter horizon
+- apply filter horizon
+- determine sufficient time headway
+- determine sufficient time to collision
+- determine sufficient headway
+- add safety buffer
+- apply trajectory modifier recursively
+- downsample trajectories
+- evaluate ego vehicle at downsampled times
+- determine unsafe trajectories with downsampled times
+- filter out unsafe trajectories with downsampled times
+- provide remaining trajectories with downsampled times
+- generate scores for trajectories with downsampled times
+- extract features from trajectories with downsampled times
+- generate score for each trajectory with downsampled times
+- select optimal trajectory with downsampled times
+- assume non-ego vehicles perform hard brake
+- modify trajectory of ego vehicle
+- filter unsafe trajectories with modified trajectory
+- provide remaining trajectories with modified trajectory
+- generate scores for trajectories with modified trajectory
+- extract features from trajectories with modified trajectory
+- generate score for each trajectory with modified trajectory
+- select optimal trajectory with modified trajectory
+- perform trajectory filtering after ML planner
+- receive plurality of trajectories
+- determine scores for trajectories
+- evaluate trajectory with safety filter
+- determine if trajectory is safe
+- provide safe trajectory to vehicle controller
+- ignore unsafe trajectory
+- recursively evaluate trajectories
+- select optimal trajectory
+- extract features from trajectories
+- generate score for each trajectory
+- select optimal trajectory
+- define time-to-collision
+- define adaptive cruise control information
+- define maximum jerk
+- define maximum lateral acceleration
+- define concatenation of trajectories
+- introduce ML planner
+- select trajectory based on score
+- provide selected trajectory to vehicle controller
+- control ego vehicle operation
+- define system embodiment
+- apply safety parameters to trajectories
+- determine unsafe trajectories
+- filter unsafe trajectories
+- provide remaining trajectories to ML model
+- define non-transitory computer-readable medium
+- execute instructions on processor
+- define method embodiment
+- apply safety parameters to trajectories
+- determine unsafe trajectories
+- filter unsafe trajectories
+- provide remaining trajectories to ML model
+- define clause 1: system embodiment
+- define clause 2: unsafe trajectory determination
+- define clause 3: safety check
+- define clause 4: predefined assumptions
+- define clause 5: trajectory modifier
+- define clause 6: trajectory modifier examples
+- define clause 7: time horizon and downsampling
+- define clause 8: multiple assumptions and modifiers
+- define clause 9: ML model types
+- define clause 10: additional processor instructions
+- define clause 11: method embodiment
+- define clause 20: non-transitory storage media
+

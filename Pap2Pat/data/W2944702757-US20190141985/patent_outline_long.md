@@ -1,0 +1,220 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSED SUBJECT MATTER
+
+- introduce organ transplantation
+
+## BACKGROUND OF THE DISCLOSED SUBJECT MATTER
+
+- motivate organ transplantation
+- describe current transplant procedures
+- highlight donor organ shortage
+- discuss limitations of current preservation techniques
+- describe extracorporeal membrane oxygenation
+- introduce initiatives to increase transplantable lungs
+- describe ex vivo lung perfusion
+- discuss xenogeneic lungs
+- highlight limitations of current EVLP systems
+- describe current organ preservation techniques
+- highlight need for improved preservation techniques
+- describe benefits of physiologic preservation
+- discuss limitations of conventional extracorporeal support systems
+- highlight need for improved extracorporeal support systems
+
+## SUMMARY
+
+- introduce normothermic extracorporeal support
+- describe cross-circulation perfusion
+- highlight prolonged support periods
+- describe extracorporeal host connection
+- introduce system for maintaining extracorporeal organ
+- describe extracorporeal chamber
+- highlight auto-regulation of blood flow
+- describe extracorporeal cross-circulation circuit
+- introduce pressure-controlled blood flow
+- describe integrated heat exchanger
+- highlight remote monitoring capability
+- describe extracorporeal organ chamber stand
+- introduce automatic height adjustability
+- describe organ-specific accessories
+- highlight rechargeable power source back-up
+- describe biologic cuff device
+- introduce native vessel as biological bridge
+- describe draining cannula
+- highlight patient safety clamp
+- describe automatic clamping mechanism
+- introduce method for normothermic extracorporeal support
+- describe treating extracorporeal organ with acute injury
+- highlight transplanting extracorporeal organ
+
+## DETAILED DESCRIPTION OF THE DISCLOSED SUBJECT MATTER
+
+- introduce cross-circulation support of extracorporeal organs
+- describe limitations of current organ transplant methods
+- motivate long-term preservation of organs
+- describe the invention's capabilities
+- outline various applications of the invention
+- describe the mobile platform or system for prolonged extracorporeal support
+- detail the connection between the host and extracorporeal organ
+- describe the system's uses for recovery, regeneration, and maintenance of organs
+- outline additional research applications
+- describe the system's use for cross-circulation between the organ recipient and donor organ
+- describe the use of a healthy animal as a cross-circulation host
+- describe the system's application for the recovery of injured human donor organs
+- introduce the human-xenogeneic bioreactor application
+- describe the benefits of the human-xenogeneic bioreactor
+- outline additional uses of the human-xenogeneic bioreactor
+- describe the cross-circulation platform's opportunities for organ recovery
+- describe the systems, methods, and devices for cross-circulation support of extracorporeal organs
+- outline envisioned uses of cross-circulation
+- describe the benefits of cross-circulation over conventional EVLP
+- describe the cross-circulation circuit
+- detail the fluid conduits and auto-regulation of blood flow
+- describe the integrated circuit elements
+- introduce FIG. 1A and 1B
+- describe the cross-circulation system components
+- introduce FIG. 11
+- describe the cross-circulation circuit diagram
+- introduce FIG. 2
+- describe the system for cross-circulation of plasma
+- introduce FIGS. 3A to 3E
+- describe the organ chamber basin
+- introduce FIG. 4A to 4C
+- describe the extracorporeal organ, tissue, or bioengineered graft chamber
+- introduce FIGS. 5A and 5B
+- describe the control of cross-circulation perfusion
+- introduce FIG. 6A to 6C
+- describe the organ cart or stand
+- introduce FIG. 7A to 7E
+- describe the biologic cuff device
+- introduce FIGS. 8A to 8H
+- describe the use of a biologic cuff device for single lung venous cannulation
+- introduce FIGS. 9A to 9E
+- describe vascular components of the biologic cuff device
+- introduce FIGS. 10A to 10C
+- describe crenellated or self-expanding stenting drainage cannulas
+- describe the pre-clinical swine model of cross-circulation
+- describe haemodynamic stability
+- measure biochemical analysis
+- measure haemolytic markers
+- measure pro-inflammatory markers
+- measure anti-inflammatory markers
+- describe extracorporeal lung performance
+- measure trans-pulmonary pressure gradient
+- measure pressure volume loops
+- measure dynamic compliance
+- measure clearance of lactate
+- measure PaO2/FiO2 ratios
+- describe responses to performance challenges
+- analyze lung weight
+- analyze trans-pulmonary pressure gradient
+- analyze pressure-volume loops
+- analyze dynamic compliance
+- analyze lactate accumulation
+- analyze PaO2/FiO2 ratios
+- analyze responses to performance challenges
+- describe extracorporeal lung analysis
+- analyze macroscopic appearance
+- analyze airway bronchoscopy
+- analyze histologic analysis
+- analyze scanning electron microscopy
+- analyze transmission electron microscopy
+- analyze metabolic activity
+- analyze functional analyses
+- analyze vasoresponsiveness
+- analyze integrity of microvascular endothelium
+- analyze neutrophils
+- analyze macrophage quantification
+- describe extracorporeal lung analysis for ischaemic recovery group
+- analyze macroscopic analysis
+- analyze bronchoscopy
+- analyze assessment of airway inflammation
+- analyze BAL fluid
+- measure inflammatory markers
+- demonstrate multiscale interventions
+- develop compact transpleural imaging system
+- deliver microbeads and MSCs
+- demonstrate feasibility of replacing lung epithelium
+- decellularize targeted bronchopulmonary segments
+- deliver pulmonary epithelial cells
+- maintain viable extracorporeal lungs
+- recover lungs subjected to ischaemia reperfusion injury
+- provide benefits to extracorporeal lung
+- extend duration of normothermic support
+- develop strategies for prolonged extracorporeal organ support
+- manage pulmonary venous drainage
+- maintain physiologic trans-pulmonary pressure gradient
+- establish recipient safety
+- assess ability of cross-circulation to recover damaged lungs
+- analyze inflammatory cytokines in serum and BAL fluid
+- assess preservation of lung integrity and function
+- demonstrate significant increase in anti-inflammatory IL-10
+- reduce lung weight and airway oedema
+- recover cellular and structural integrity
+- enable interventions not currently feasible ex vivo
+- develop targeted micro-volume delivery techniques
+- enable directed region-specific interventions
+- demonstrate global, single-lobe and subsegmental delivery of MSCs
+- investigate prolonged cross-circulation between unrelated donor and recipient swine
+- assess ability of cross-circulation to rescue severely damaged lungs
+- envision clinical applications of cross-circulation
+
+## EXAMPLES
+
+### Methods
+
+- design pilot study
+- state hypothesis
+- describe study conduct
+- explain randomization of sampling
+- describe blinded review
+- introduce animals
+- describe animal selection
+- describe animal care
+- introduce donor lung harvest
+- describe anaesthesia
+- describe heparin administration
+- describe cannula placement
+- describe lung storage for prolonged cold ischaemia
+- describe lung cannulation and conventional EVLP
+- describe circuit priming
+- describe ventilation initiation
+- describe atelectatic lung region recruitment
+- introduce cross-circulation
+- describe recipient preparation
+- describe circuit connection
+- describe physiological parameter monitoring
+- describe blood analysis
+- describe extracorporeal lung monitoring
+- describe HAL analysis
+- describe BODIPY-surfactant uptake method
+- detail vasoconstriction/responsiveness test
+- outline metabolic activity assay
+- describe myeloperoxidase activity assay
+- detail live cilia imaging method
+- outline immunohistochemical staining
+- describe histopathologic analysis
+- detail blinded pathologic review
+- outline thermal imaging
+- describe electron microscopy
+- detail scanning electron microscopy
+- outline transmission electron microscopy
+- describe therapeutic delivery into extracorporeal lung
+- detail decellularization of target lung regions
+- outline delivery of mesenchymal stem cells
+- describe cell delivery using bronchoscope
+- detail live transpleural imaging of near-infrared-labelled cells
+- outline delivery of CSFE and fluorescent microbeads
+- describe delivery of human airway epithelial cells
+- detail delivery of human embryonic stem cell-derived alveolar progenitor cells
+- outline statistical analysis
+- describe one-way analysis of variance test
+- detail Tukey's multiple comparison post hoc tests
+- outline Student's t-tests
+- describe significance of p-value
+- outline modification of described embodiments
+- describe scope of invention
+- detail application of principles
+- outline embodiments of invention
+- claim invention
+

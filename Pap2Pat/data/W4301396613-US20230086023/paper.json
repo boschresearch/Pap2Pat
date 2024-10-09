@@ -1,0 +1,198 @@
+{
+    "id": "https://semopenalex.org/work/W4301396613",
+    "authors": [
+        "Yu Hu",
+        "Asim Kadav",
+        "Farley Lai",
+        "Cheng-En Wu"
+    ],
+    "title": "Self-supervised Video Representation Learning with Cascade Positive  Retrieval",
+    "date": "2022-01-19",
+    "abstract": "Self-supervised video representation learning has been shown to effectively improve downstream tasks such as video retrieval and action recognition. In this paper, we present the Cascade Positive Retrieval (CPR) that successively mines positive examples w.r.t. the query for contrastive learning in a cascade of stages. Specifically, CPR exploits multiple views of a query example in different modalities, where an alternative view may help find another positive example dissimilar in the query view. We explore the effects of possible CPR configurations in ablations including the number of mining stages, the top similar example selection ratio in each stage, and progressive training with an incremental number of the final Top-k selection. The overall mining quality is measured to reflect the recall across training set classes. CPR reaches a median class mining recall of 83.3%, outperforming previous work by 5.5%. Implementation-wise, CPR is complementary to pretext tasks and can be easily applied to previous work. In the evaluation of pretraining on UCF101, CPR consistently improves existing work and even achieves state-of-the-art R@1 of 56.7% and 24.4% in video retrieval as well as 83.8% and 54.8% in action recognition on UCF101 and HMDB51. The code is available at https://github.com/necla-ml/CPR.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Recently, large-scale self-supervised pretraining such as BERT [7] and DINO [3] has been shown to improve the representations and potentially outperform its supervised counterpart. Most approaches revolve around proposing pretext tasks [1,10,16,19,23,38,[40][41][42] based on instance discrimination to learn representations by matching or classifying specific relationships between the query example and its augmented variants with the objective to minimize * Work done as a NEC Labs intern in 2021. the contrastive loss [33] and other predictive losses. However, few address the lack of true positives (TP) other than the query example variants and likely harmful false negatives uniformly sampled from the entire dataset [6]. Previous work CoCLR [12] demonstrates the significant performance gap with the upper bound achieved in a supervised contrastive setting using the labels for TP as in [18].",
+                "We are inspired by related work [11,14,27,32,35,37] that exploits multi-views of video to learn the representations through the correspondences between different modalities. Previous work [12,17,30] incorporating hard example mining in metric learning, object detection and action recognition further motivates the necessity of positive example mining in self-supervised representation learning. As for video representation learning, hard positive examples in the RGB view may be mined from the motion view despite seemingly different background appearances. On the other hand, hard positive examples in the motion view may be mined from the RGB view as the motions can differ significantly from various camera angles while the background remains similar in the RGB view for actions in the same class. CoCLR [12] shows mining in the alternative view during training improves the representations and downstream task performance. Nonetheless, it is not necessarily sufficient for mining only once in a single view to prevent sampling false positives (FP).",
+                "To address this issue, we propose the Cascade Positive Retrieval (CPR) and systematically explore the design space of positive example mining. The idea is to refine the mining successively in a cascade of stages across different views as search with filters to be applied progressively. For instance, given a query example, one may first select those with similar background in the RGB view, then further filter out those dissimilar in the motion view and so on. Apparently, the number of mining stages and the selection ratio in each stage matter. The goal is to conclude the strategy for effective positive example mining and make it applicable to existing work. Moreover, it remains unclear of the overall mining quality in terms of the recall across train-ing set classes despite the R@1 mining retrieval recall by CoCLR [12]. We measure and compare the mining quality that suggests correlation with the resulting performance in ablations.",
+                "In short, we make the following contributions:",
+                "1.) We propose the Cascade Positive Retrieval for selfsupervised learning (SSL) of video representations that complements pretext tasks and can be applied to existing work easily regardless of the SSL framework used.",
+                "2.) We apply CPR to previous work and observed consistent improvement in downstream video retrieval and action recognition. We then extensively explore the design space of mining configurations in ablations w.r.t. the number of stages in the cascade, the top similar example selection ratio in each stage and the progressive training regime.",
+                "3.) We measure the mining quality of CPR in terms of the positive mining recall denoting each time the fraction of TPs in the final stage Top-k selected as the positive set, and the class mining recall representing the fraction of distinct TPs selected from a class in one training epoch."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "4.)",
+            "paragraphs": [
+                "We evaluate the transfer performance in video retrieval and action recognition on UCF101 and HMDB51 from pretraining on UCF101 with CPR applied to an existing work, achieving state-of-the-art (SOTA) results."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Related Work",
+            "paragraphs": [
+                "Self-supervised Learning. Large-scale representation learning through self-supervision has achieved great success in multiple fields including natural language processing (NLP) and computer vision (CV). In NLP, the general idea is to build a language model that learns to predict masked out words as in BERT [7]. In CV, the feature extraction backbone is trained to learn representations based on instance discrimination that works on both images and videos. The instance discrimination views an example and its augmented variants as positive while the other examples are treated as negative. A typical objective is to minimize the contrastive loss that encourages positive examples to be similar in representations while pushing away negative examples. Many SSL frameworks were proposed in recent years such as SimCLR [4], BYOL [9], MoCo [5,13] and SwAV [2] to facilitate systematic composition of numerous pretext tasks that augment the input examples and formulate the contrastive loss, delivering competitive performance in comparison with supervised counterparts. In this paper, we focus on improving self-supervised video representation learning from the perspective of hard positive example mining and show our method can be easily applied to existing work regardless of a particular SSL framework used or not.",
+                "Video Representation Learning. In contrast with SSL of images, videos enables rich spatiotemporal augmentation to generate diverse positive and negative example clips from sampled frames. Common pretext tasks include future prediction [11] and speed prediction [1,16,38,42] to infer the relationship between clips and the pace a clip is sampled.",
+                "Other tasks may require to sort out the ordering of frames or clips [41], solve jigsaw puzzles [19], match features in different modalities [14,27,35,37] or group visual entities based on co-occurrences in space and time [15]. We target the video domain as videos in multiple views potentially provide opportunities to mine hard positive examples in the query class. Nonetheless, the proposed method is not limited to video tasks or specific pretext tasks. Instead, we aim to complement existing approaches with hard positive example mining.",
+                "Hard Example Mining. Hard example mining in supervised learning is well studied in metric learning and other CV tasks. In metric learning, the goal is the push away those hard negative examples but the challenge is the intractable computational overhead over large datasets as the embedding is updated constantly. One possible solution is to efficiently sample negative instances in nearest classes as in deep metric learning [30]. Regarding positive example mining, InvP [34] selects positive examples that preserve high semantic consistency through a recursive k-nearest neighbors graph. In addition, CMA [25] introduces the crossmodal agreement that discovers positive examples highly similar in both audio and visual feature space through multiview learning [32].",
+                "In video object detection, [17] leverages the temporal consistency to identify hard negative and positive examples from detection misses and isolated detection in consecutive video frames.",
+                "In the case of SSL, it is challenging for no labels and the representation learning is limited to the augmentations of the query example with instance discrimination for the lack of hard positive examples in the query class. Worse, the negative examples are uniformly sampled and potentially include false negatives (FN). This is called the sampling bias in [6] and a possible solution is to reweight the positive and negative terms in the contrastive loss for correction given the estimated class priors [6,28].",
+                "On the other hand, as with the video object detection, self-supervised video representation learning may exploit multi-views of video clips to mine hard positive examples. CoCLR [12] mines positive examples from action recognition datasets given a query example in the RGB view with its corresponding motion or flow view. Intuitively, this may help find positive examples with similar motions despite dissimilar background and vice versa. Our work further explores the possibilities to mine diverse positive examples in the query example class as CoCLR only mines positive examples in one view at a time. Chances are out of those with similar motions, top instances similar in the RGB view could be more likely the true positives. Therefore, we reshape the positive example mining as a cascade refining process between different video views. While Co-CLR measures R@1 for mining retrieval recall, we further evaluate the mining quality in terms of the overall mining recall across the classes throughout training in reflection of the coverage of distinct class instances. The metric is expected to correlate with the resulting performance w.r.t. the upper bound in the supervised contrastive setting where the mining recall is essentially perfect for all the class instances being selected during training."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Proposed Method Algorithm 1 CPR: Cascade Positive Retrieval",
+            "paragraphs": [
+                "Variables: M B, C, S, B, V, r, vq, qv, q, q + Macros: E(c), K(c, s), SV (s), B(e) Macros: select(fv, candidatesv, r), topk(fv, candidatesv, k) for (q, q+) \u2208 B(e) do fq vq \u2190 encoderv q (qv q ) 16: f q + vq \u2190 encoder ema vq (q + vq )",
+                "17:",
+                "else 18:",
+                "end if pos \u2190 select(f",
+                "else if s == n then ",
+                ", posv, r)",
+                "end if"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "32:",
+            "paragraphs": [
+                "end for"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "33:",
+            "paragraphs": [
+                "loss \u2190 M IL N CE(qv q , posv q , negv q ) 34:",
+                "optimize(encoderv q , loss)",
+                "end for 37:",
+                "end for 38: end for",
+                "In this section, we first revisit the concept of contrastive learning with different discrimination learning objectives. Next, we present CPR in Algorithm 1, detailing the cascade positive retrieval for mining examples in general."
+            ],
+            "subsections": [
+                {
+                    "title": "Instance Discrimination",
+                    "paragraphs": [
+                        "Self-supervised video representation learning based instance discrimination where each instance serves as its own class has been shown effective with the contrastive loss of InfoNCE [33]. Specifically, given a set of videos V , a video clip v i is a number of frames sampled from a video in V and its positive variant v + i that can be an augmentation or another clip sampled from the same video, forming a positive pair (v i , v + i ). On the other hand, a set of negative examples N -consists of those clips v - j , j = i. These clips are fed into a query encoder and a key encoder to obtain the visual representations. The output features of the query, its positive augmentation and negative keys are denoted by q i , q + i , and k - j respectively. The InfoNCE loss is defined as follows:",
+                        "where the similarity is measured by dot product with a temperature hyperparameterper \u03c4 to adjust its scale. Intuitively, InfoNCE encourages to pull positive pairs closer while pushing away negative pairs."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Multi-instance Discrimination",
+                    "paragraphs": [
+                        "In the case of multiple positive pairs, Multi-Instance In-foNCE or MIL-NCE proposed in [24] is defined as follows:",
+                        "where P is a positive set containing positive augmentation of the query and other keys with the same label as the query. For example, in an action video dataset, a fencing positive set includes the augmentation of the query video and other videos with the fencing label."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Cascade Positive Retrieval",
+                    "paragraphs": [
+                        "In view of issues with instance discrimination including the lack of other non-augmented positives and potential false negatives, previous work CoCLR [12] has proposed to mine positive examples in an alternative view other than the query view. However, there is a possibility that CoCLR suffers from FPs with similar motion patterns from the flow view because the mining in the alternative view is only done once such that some actions with very similar motion patterns such as Shouput and ThrowDiscus may be wrongly selected and confuse the model as shown in Figure 2. Unlike CoCLR mining heavily dependent on a single view, our CPR fully exploits the advantage of multi-views to improve the mining quality. Figure 1 illustrates that in one cascade of positive retrieval, CPR alternates between the RGB and flow views to mine a top number of positive examples with most similar appearances and motions as the query clip.",
+                        "When applying CPR to existing work, there are many possible configurations and hyperparameters to consider as described in Algorithm 1 that assumes a memory bank M B storing encoded instance features in different views, a progressive training schedule in cycles, the number of epochs "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Figure 1.",
+            "paragraphs": [
+                "Overview of CPR in mining alternately from both RGB and flow views for one cascade retrieval. K denotes the size of the memory queues storing instance features in both views. Given a query example in the RGB view, the mining starts with selecting top k1 most similar instances from the flow memory queue at stage 1, top k2 most similar instances from the RGB memory queue at stage 2, and so on up to top kn-1 from the RGB memory queue at stage n-1, where k1, k2, ..., kn-1 are values derived from the number of instances selected from the previous stage multiplied by a fixed selection ratio (e.g. 0.5) at each stage. Unlike previous stages, the Top-k most similar instances kn at the final stage are selected to form the positive set. in one cycle, the number of mining stages in one cascade, the selection ratio of top similar examples at each stage and etc. Specifically, the algorithm iterates through each cycle c and epoch e to train with query examples in batches B. Each batch consists of query examples and their positive variants from augmentation or sampling as q and q + . In the beginning of the batch processing, the representation encoder to train in the query view, encoder vq , encodes the query examples q vq and produces the features f qv q . Those q + may be encoded in the query view with the momentum encoder ema vq (q + vq ) and in the other views with frozen encoder f ixed v (q + v ). Next, CPR retrieves the most similar examples in successive stages S given a selection ratio r used at stages before the last one and a Top-k for the final stage selection determined by the current cycle c and stage s. Note that the mining always uses the features of positive query variants to measure the similarities with those stored in M B by view. Eventually, a set of Top-k most likely positives are selected at the last stage as pos and combined with q + . The other instances in M B are viewed as negatives neg. Then the MIL-NCE loss is computed given the query examples, mined positives and negatives to optimize the encoder in the query view. Afterwards, the memory bank M B is updated with the newly encoded query example variants for the next batch training iteration. In the next section, we will evaluate the effects of changing CPR hyperparameters in ablations as well as compare the performance with SO-TAs."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Experiments",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Setup",
+                    "paragraphs": [
+                        "Dataset. In this section, we conduct ablation studies and evaluate CPR on two action video datasets:",
+                        "UCF101 [29] contains 13K videos in 101 human action classes at more diverse camera angles than HMDB51. Out of the three splits of the dataset, the first one is used for our ablations, pretraining, and downstream task evaluations.",
+                        "HMDB51 [21] consists of 7K videos in 51 human action categories. The dataset is divided into three splits. We use the first split to conduct two downstream tasks in video retrieval and action recognition. Implementations. We apply CPR to previous work IIC [31] and CoCLR [12]. While the latter uses MoCo [13], CPR is not dependent on specific SSL frameworks. For fair comparison, we use exactly the same hyperparameters as previous work and only plug in CPR to construct the positive and negative sets for computing the MIL-NCE loss. If necessary, we even retrain previous work for the same number of epochs to compare with the reproduced results. More details can be found in the supplemental materials. Data Preprocessing: The data preparation follows previous work respectively. As for CoCLR [12], a clip in both RGB and flow views is randomly sampled from 32 consecutive frames in the video. Each frame is randomly cropped and resized to 128\u00d7128 pixels. We apply the same data augmentations including horizontal flips, color jittering and Gaussian blur to the clips. Note that Gaussian blur is not used for downstream tasks. To generate optical flow maps from the video, we use TV-L1 [43] to extract the flow view with a third channel filled with zeros. The features are clipped in the range of 20 pixels and rescaled from [-20, 20] to [0, 255]. In contrast, the motion view for IIC [31] is based on frame difference residuals. Self-supervised Pretraining on UCF101. For IIC [31], we train from scratch with CPR under NPID [39]. For Co-CLR [12], we begin with the released RGB and flow models pretrained with InfoNCE as there is no positive mining in the initialization. Next at the co-training stage, the RGB and flow models are alternately trained for 400 epochs on 2 GPUs, each with a batch size of 16. That is the same number of epochs as two cycles in CoCLR. Video Retrieval. We evaluate video retrieval as a downstream task on both UCF101 and HMDB51 based on extracted features from the pretrained model without finetuning. Following the test protocol in [23,41], we take a video in the test set as a query and use it to retrieve k-nearest neighbors in its corresponding training set. The recall at k (R@k) serves as the evaluation metric, which means if one of the retrieved top k nearest neighbors is from the same class as the query, it is counted as a correct retrieval result. Action Recognition. In addition to video retrieval, we also evaluate the action recognition performance of the pretrained models on UCF101 and HMDB51. The pretrained models are transferred as the feature extraction backbone for downstream tasks. Two scenarios including linear probing and finetuning are considered respectively. For linear probing, we freeze the backbone while training the linear classifier only. For finetuning, we train the entire network including the backbone and the linear classifier. The training and evaluation protocols essentially follow previous work for fair comparison even with test time augmentation used."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Ablation Study",
+                    "paragraphs": [
+                        "In this section, we explore CPR in numerous configurations. All experiments are conducted on UCF101 following the setup mentioned in Section 4.1 except for the number of training epochs fixed at 100 for pretraining and finetuning respectively. Unless said otherwise, the ablations are based Stages (s) R@1 R@5 R@10 Probe Finetune s = 1 45. "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "IIC(+CPR)",
+            "paragraphs": [
+                "R@1 R@5 R@10 R@20 Baseline-Top- 5   Method R@1 R@5 R@10 Finetune IIC [31] 34  Selection Ratio. In this ablation, we set the selection ratio (SR) to 0.5 and 0.8 respectively to evaluate the impact of SR before the final stage that uses fixed Top-5. The total number of stages are set to 5 and 7 for comparison. It is observed that no matter in 5 or 7 stages, a smaller SR can get better performance in Table 2. Hence, we choose SR = 0.5 when comparing with other SOTAs.",
+                "Progressive Training. This configuration examines the training regime of the Top-k selection at the last stage. Specifically, is it better to train with a fixed Top-k or the training should be progressive with an incremental number of Top-k. The conclusion is likely model architecture dependent as we see the improvement with IIC shown in Table 3 in terms of video retrieval recalls but little with Co-CLR. Therefore, progressive training will not be applied to CoCLR in other evaluations. CPR Mining Quality. While CoCLR [12] measures R@1 for the mining retrieval against the ground truth (GT) throughout training, it remains unclear how many TPs are actually mined each time and throughout the training. Therefore, we measure the positive mining recall and class mining recall defined in Eq. 3 and Eq. 5:",
+                "P ositive M ining Recall = # T P Size of P ositive Set",
+                "(3)",
+                "The positive mining recall (PMR) measures each time the fraction of TPs in the final Top-k selected as the positive"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Method",
+            "paragraphs": [
+                "Year Backbone UCF101 HMDB51 R@1 R@5 R@10 R@20 R@1 R@5 R@10 R@20 VCOP [41] 2019 R(2+1)D set. The class mining recall (CMR) measures the fraction of distinct TPs selected from a class in one training epoch. Table 4 shows that as PMR and mining R@1 increase with more stages, higher fine-tuning performance on action recognition is expected. However, PMR seems to serve as a better performance indicator for being in proportion to improvement. Furthermore, we provide a breakdown of full PMR during the entire pretraining process for 100 epochs on UCF101 in Figure 3. The results show CPR gradually increases its PMR from 34.0% to 40.3%. On the other hand, the PMR of baseline CoCLR is sluggish between 35.2% and 37.4%. It can be found that CPR indeed can mine more true positives by leveraging both RGB and flow views while baseline CoCLR suffers from false positives for mining only in a single view. This is the crucial factor to support why CPR has better performance than baseline CoCLR. In summary, PMR seems to serve as a better performance indicator for being in proportion to improvement.",
+                "To further quantify the mining quality across classes, we count the number of distinct TPs selected for each action class. Figure 4 illustrates the statistics from 10 randomly chosen classes with 18 instances each in the last training epoch. CPR succeeds in selecting all the distinct TPs from both Surfing and UnevenBars classes while discovering much less from the Hammering class. Through visual inspection, Hammering is difficult with motions at different camera angles in varied scenes. In contrast, Swing and Surfing are easy to mine for having regular motion patterns and consistent background. Furthermore, we list the CMRs of the Top-3 and the bottom 3 classes respectively. The Top-3 classes are Diving(100%) , PommelHorse(100%), and UnevenBars(100%). On the other hand, the bottom 3 classes are Lunges(27.8%), Haircut(33.3%) and Hand-standWalking(33.3%). We demonstrate video frames from these classes above to visualize their content including human action and background. In Figure 5, sampled frames in the bottom 3 classes cover different camera angles and varied backgrounds, which increases the difficulty of mining full video instances in each class. In contrast, it is simple to discover entire video instances in each Top-3 class because these classes represent a relatively consistent background and standard motion with a fixed pattern. To sum up, out of all the UCF101 classes, CPR scores higher CMR than baseline CoCLR in 48 classes while the baseline mines better only in 20 classes. It is even in the rest classes. Overall, CPR achieves the median CMR of 83.3% across all the classes, which is 5.5% improvement over the baseline Co-CLR with the median CMR of 77.8%.",
+                "Besides quantitative measurements, we visualize the Top-5 positive examples mined from the baseline CoCLR and CPR for qualitative comparison. In Figure 2, the baseline mining heavily relies on the motions from optical flows and tends to select false positives (FPs) with similar motion patterns to the query. Instead, our CPR alternately mines from both RGB and flow views to discover positive examples with similar appearances and motions to the query. Even the only FP still contains visually similar motions and context as the query. This indicates that CPR is able to effectively filter out potential FPs from a single view. Consequently, CPR facilitates learning representations from more diverse TPs compared with the baseline mining.",
+                "Applicability. In addition to CoCLR, CPR is also applied to IIC [31] in the ablation of progressive training, demonstrat-"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Method Year Dataset",
+            "paragraphs": [
+                "Resolution Architecture UCF101 HMDB51 VCOP [41] 2019 UCF101 16 \u00d7 112 2 R(2+1)D-26 72.4 30.9 VCP [23] 2020 UCF101 16 \u00d7 112 2 C3D 68.5 32.5 IIC [31] 2020 UCF101 ing the general applicability. Particularly, IIC uses memory banks instead of momentum encoders to maintain features as well as frame difference residuals as motion views. It focuses on generating hard negatives from the query video by repeating or shuffling the frames but there is no positive example mining. With CPR, IIC gains significant performance improvement in both downstream tasks on UCF101 in Table 5 where CoCLR is also listed to show consistent performance boost. This suggests that CPR is generally applicable whether or not the existing approach has positive example mining in mind."
+            ],
+            "subsections": [
+                {
+                    "title": "Comparison with State-of-the-arts",
+                    "paragraphs": [
+                        "As CPR aims to benefit existing work in terms of better positive example mining, our focus is to show how much improvement an existing work can be enhanced with CPR to compete with newer SOTAs. CoCLR [12] is chosen as it already has positive example mining in mind. Video Retrieval. To validate the effectiveness of learned representations with CPR, we evaluate the nearest neighbor video retrieval on both UCF101 and HMDB51. Specifically, the top-k video retrieval recalls for k = 1, 5, 10, 20 are computed as the performance metrics. As shown in Table 6, CoCLR-Flow(+CPR) outperforms the the other SOTA methods in all recall metrics on both datasets. We achieve the best top-1 recall of 56.7% on UCF101 and 24.4% on HMDB51, outperforming the the latest SOTA MCN [22] by up to 2.9% based on the same backbone. Moreover, CPR also gains much more improvement at higher top-k metrics. Since video retrieval does not require fine-tuning and leaves little room for manipulation, positive example mining from diverse positive examples across distinct videos is likely the key to learning effective representations. Action Recognition. In table 7, we compare our method with SOTAs on video action recognition. All methods are applied in a fully finetuning setting that finetunes all layers on the downstream task. Pretrained on UCF101, CoCLR-Flow(+CPR) outperforms all the previous SOTAs fine-tuned on UCF101 and HMDB51 with accuracies of 83.8% and 54.8% based on the same or comparable backbone and resolutions as illustrated in Table 7."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this work, we propose the Cascade Positive Retrieval (CPR) for self-supervised video representation learning and extensively explore the design space of positive example mining configurations. We find that more mining stages in the cascade likely improves the performance. The positive selection ratio on the contrary works better if set to a smaller number. The progressive training with an incremental final Top-k selection could bring potential improvement. Beyond the R@1 mining retrieval recall by CoCLR [12], we further measure the mining quality quantitatively in PMR and CMR that seem to correlate with downstream task performance better. Moreover, the mining quality is also visualized for qualitative comparison. Finally, we evaluate the transfer performance from UCF101 to UCF101 and HMDB51 that is either SOTA or competitive in both video retrieval and action recognition. Aside from promising results, our CPR can be applied to existing work easily regardless of a specific SSL framework used or not. Nonetheless, the gap from the supervised contrastive performance upper bound remains, suggesting the necessity of follow-up research for even better mining in self-supervised representation learning. In the future, we plan to facilitate the application of CPR to existing work, automate the hyperparameter search for improved mining quality, and examine the scalability of transfer learning from large-scale dataset."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.1. Self-supervised Pretraining",
+            "paragraphs": [
+                "We use MoCo [13] as the contrastive learning framework and S3D [40] as the feature extractor to implement CPR. Note that MoCo is not required but is useful to save memory usage. Therefore, it is simply a coincidence that the baseline CoCLR [12] uses MoCo and we have applied CPR to other work not using MoCo such as IIC as well. At pretraining stage, two fully connected layers (FC1024\u2192ReLU\u2192FC128) are used as a projection head after the global average pooling layer to obtain the embedding features but the projection head is removed for the model to perform downstream tasks. Following CoCLR we set the momentum to 0.999, the temperature to 0.07, and the size of the queue to 2048 on every dataset Training each model on UCF 101 , we use ADAM as our optimizer with an initial learning rate of 10 -3 and weight decay of 10 -5 , where the learning rate is multiplied by 0.1 at 300 and 350 epochs."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A.2. Action Recognition",
+            "paragraphs": [
+                "For action recognition task, we use ADAM to optimize the model for 500 epochs with a batch size of 16 on two GPUs. The initial learning rate is set to 10 -3 , where the learning rate is decayed by 0.1 at 400 and 450 epoch respectively. The momentum is 0.9 and the weight decay is 10 -3 . At evaluation stage, we follow the practice of CoCLR to uniformly sample 32 frames from each video, perform tencrop to 128\u00d7128 pixels, and then average their predictions to become the final video prediction."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.1. Class Mining Recall (CMR)",
+            "paragraphs": [
+                "To evaluate the overall mining quality, we further define Class Mining Recall (CMR) in Eq 5 to measure how a model is able to successfully mine distinct true positives from a certain class in one training epoch.",
+                "As shown in Figure 6, we present the full CMR in the UCF101 classes. Closer inspection of the figure reveals that CPR has the Top-3 classes are Diving (100%) , Pommel-Horse (100%), and UnevenBars (100%). On the other hand, the bottom 3 classes are Lunges (27.8%), Haircut (33.3%), and HandstandWalking (33.3%). Furthermore, we demonstrate video frames from these classes above to visualize their content including human action and background.",
+                "In the overall evaluations of all 101 classes, CPR scores higher CMR than baseline CoCLR in 48 classes while the baseline mines better only in 20 classes. It is even in the rest classes. Regarding the classes that the baseline has higher CMR, it may that those positive classes highly correlate with a single view while CPR sometimes does not help much after visual inspection. A further comparison of the number of 100% CMR between both methods, CPR obtains eight perfect CMRs across 101 classes, which exceeds two classes compared to the baseline getting six. In addition, we evaluate the entire performance of CPR by applying median CMR. Our approach achieves the median CMR of 83.3% across all the classes, which outperforms the baseline with the median CMR of 77.8%. This outcome shows a great improvement with a margin of 5.5%. In summary, these empirical evidence validates the effectiveness of our approach in mining the higher quality positives than the baseline. "
+            ],
+            "subsections": []
+        }
+    ]
+}

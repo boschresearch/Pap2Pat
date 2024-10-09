@@ -1,0 +1,835 @@
+# DESCRIPTION
+
+## FEDERALLY SPONSORED RESEARCH
+
+- disclose government funding
+
+## BACKGROUND OF THE DISCLOSURE
+
+- introduce base editors
+- describe limitations of base editors
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce CRISPR/Cas system
+- describe adenine base editors
+- summarize base editing capabilities
+- describe ABE7.10
+- introduce TadA7.10
+- describe ABE structure
+- summarize base editing applications
+- describe RNA editing concerns
+- introduce mutagenesis approach
+- describe TadA7.10 variants
+- introduce TadA(V106W)
+- introduce TadA(E59A)
+- describe adenosine deaminase domains
+- describe napDNAbp domain
+- describe Cas9 nickase
+- describe adenosine deaminase dimer
+- describe ecTadA variants
+- describe E59A substitution
+- describe TadA7.10 variants
+- describe V106W substitution
+- describe N108W substitution
+- describe R47Q substitution
+- describe improved DNA editing efficiency
+- describe reduced off-target effects
+- describe reduced Cas9-independent off-target effects
+- describe reduced off-target editing in mRNA
+- describe limiting indel formation
+- describe expanded target window
+- describe compatibility with Cas homologs
+- describe methods of DNA editing
+- describe average A-to-I editing frequency
+- describe compositions with reduced off-target effects
+- describe nucleic acid molecules encoding adenine base editors
+- describe expression vectors and host cells
+- describe complexes with gRNA
+- describe kits for expressing and transducing host cells
+- describe methods for editing target nucleic acid molecules
+
+## DEFINITIONS
+
+- define singular and plural forms
+- define adenosine deaminase domain
+- define base editing
+- describe limitations of CRISPR-based systems
+- introduce base editor
+- define adenine base editor (ABE)
+- define thymine base editor (TBE)
+- define base editor (BE)
+- describe deamination by base editor
+- introduce CRISPR-mediated fusion proteins
+- describe dCas9 mutations
+- describe HNH and RuvC1 subdomains
+- define base editor encompassing CRISPR-mediated fusion proteins
+- reference prior art
+- define Cas9 or Cas9 nuclease
+- describe Cas9 variants
+- define functional fragments of Cas9
+- describe Cas9 variant homology
+- define dCas9
+- describe dCas9 mutations
+- define nCas9 or Cas9 nickase
+- describe nCas9 mutations
+- define CRISPR
+- describe CRISPR clusters
+- describe CRISPR RNA (crRNA)
+- describe single guide RNAs (sgRNA)
+- reference prior art on CRISPR biology
+- define deaminases
+- specify deaminase sources
+- describe adenosine deaminases
+- detail adenosine deaminase variants
+- introduce TadA deaminase
+- describe truncated ecTadA
+- reference prior art
+- define DNA binding protein
+- describe RNA-programmable proteins
+- list CRISPR-Cas systems
+- define DNA editing efficiency
+- describe editing efficiency metrics
+- define off-target editing frequency
+- describe off-target editing measurement
+- introduce high-throughput sequencing
+- describe amplicons
+- define RNA editing activity
+- describe RNA off-target editing
+- define on-target editing
+- define off-target DNA editing
+- define effective amount
+- describe effective amount metrics
+- define evolved base editor
+- describe evolved base editor variants
+- define fusion protein
+- describe fusion protein components
+- define host cell
+- describe host cell types
+- specify host cell/viral vector combinations
+- define linker
+- describe properties of linker
+- define low toxicity
+- describe measurement of low toxicity
+- define mutation
+- describe types of mutations
+- define non-naturally occurring or engineered
+- describe nucleic acid
+- describe nucleic acid analogs
+- define backbone of guide RNA
+- define nucleic acid programmable DNA binding protein (napDNAbp)
+- describe napDNAbp-programming nucleic acid molecule
+- describe Cas9 equivalents
+- describe napDNAbp as RNA-programmable nuclease
+- describe guide RNA (gRNA)
+- describe gRNA domains
+- describe extended gRNA
+- describe RNA-programmable nuclease
+- describe napDNAbp nucleases
+- describe site-specific cleavage
+- define napDNAbp-programming nucleic acid molecule
+- describe nuclear localization signal (NLS)
+- describe function of NLS
+- describe bipartite NLS (bpNLS)
+- define promoter
+- describe constitutively active promoter
+- describe conditionally active promoter
+- describe inducible promoter
+- describe examples of promoters
+- describe vectors with promoters
+- describe driving expression of nucleic acid sequences
+- describe fusion proteins
+- define recombinant proteins or nucleic acids
+- define subject
+- define target site
+- define treatment
+- define unique loci
+- define variant proteins
+- describe characteristics of variant proteins
+- define degree of identity for variant proteins
+- describe hybridization conditions
+- define polypeptides with identical sequences
+- describe method for determining percent identity
+- define parameters for FASTDB alignment
+- describe manual correction for N- and C-terminal deletions
+- define wild type
+- mention detailed description in other sections
+- mention examples in other sections
+- mention claims in other sections
+- disclaim limitation by exemplary listing
+- conclude definitions
+
+## DETAILED DESCRIPTION OF CERTAIN EMBODIMENTS
+
+- introduce adenine base editors with lower RNA editing footprint
+- describe composition of adenine base editors
+- explain base editing process
+- discuss applications of adenine base editors
+- motivate development of ABE7.10 variants
+- describe limitations of ABE7.10
+- introduce structure-guided mutagenesis approach
+- design mutations in TadA domains
+- describe substitutions in ecTadA
+- explain rationale for substitutions
+- discuss off-target activity of adenine base editors
+- describe napDNAbp-independent editing events
+- measure A-to-I editing attributable to ABEmax overexpression
+- utilize targeted deep sequencing and RNA-seq techniques
+- compare RNA editing rates between ABEmax mutants
+- discuss contribution of wild-type E. coli TadA monomer to RNA editing
+- discuss contribution of laboratory-evolved E. coli TadA7.10 to RNA editing
+- recognize off-target RNA editing in ABEmax
+- describe novel ABEmax variants with reduced RNA editing
+- analyze RNA editing frequencies using high-throughput screening
+- analyze RNA editing frequencies on a human cell transcriptome-wide basis
+- discuss retention of DNA editing fidelity in novel ABEmax variants
+- analyze indel formation at target DNA loci
+- discuss correlation between RNA editing tolerance and DNA specificity
+- provide fusion proteins comprising adenosine deaminase and napDNAbp domains
+- describe exemplary fusion proteins
+- discuss applications of fusion proteins
+- provide deaminases, cells, compositions, methods, kits, and systems
+- discuss making fusion proteins by fusing protein domains
+- describe features that improve base editing activity of fusion proteins
+- provide methods of making adenine base editors
+- describe methods of using base editors in applications
+- introduce transduction of cells with complexes of fusion protein and gRNA molecule
+- describe formation of complexes with fusion protein and gRNA molecule
+- introduce transfection of nucleic acid constructs encoding components of complex
+- describe introduction of fusion protein into cells
+- introduce transduction or transfection with nucleic acid construct encoding fusion protein
+- describe methods for editing target nucleic acid molecule
+- introduce nicking of one strand of double-stranded DNA
+- describe methods for efficiently editing target nucleic acid molecule
+- introduce therapeutic methods for treating genetic disease
+- describe target nucleotide sequence associated with disease
+- introduce exemplary target genes
+- describe application of adenine base editors resulting in deamination of target site
+- introduce contacting base editor with target nucleotide sequence in vitro, ex vivo, or in vivo
+- describe pharmaceutical compositions comprising base editor fusion proteins
+- introduce pharmaceutical composition comprising complex of fusion protein and gRNA
+- describe pharmaceutical composition comprising vectors
+- introduce preparation of lipid particles
+- describe exemplary adenine base editors having general structure of evolved fusion protein
+- explain mechanism of adenine base editors
+
+### Adenosine Deaminases
+
+- introduce adenosine deaminases
+- fusion proteins with ecTadA and TadA7.10 substitutions
+- deaminate adenosine in nucleic acid sequences
+- dimerization of adenosine deaminases
+- exemplary embodiments of adenosine deaminases
+- adenosine deaminase domain composition
+- mutations in ecTadA
+- adenosine deaminases from other organisms
+- naturally-occurring adenosine deaminases with mutations
+- modified adenosine deaminases
+- targeted mutagenesis and continuous evolution process
+- deaminating adenine in deoxyadenosine residues
+- reference to prior art
+- adenosine deaminases with specific percent identity
+- adenosine deaminases with specific mutations
+- E59X mutation in ecTadA
+- D108X mutation in ecTadA
+- A106X mutation in ecTadA
+- R47X mutation in ecTadA
+- specific mutations in TadA7.10
+- introducing mutations into other adenosine deaminases
+- adenosine deaminases with multiple mutations
+- adenosine deaminase domains with low off-target effects
+- adenine base editors with broadened target sequence compatibility
+- optimizing adenosine deaminase proteins for target sequences
+- target sequences for adenosine deaminases
+- N-terminal truncated E. coli TadA
+- full-length E. coli TadA deaminase
+- additional adenosine deaminases
+- describe adenosine deaminase variants
+- connect adenosine deaminases
+- specify adenosine deaminase sequences
+- describe heterodimer of adenosine deaminases
+- specify second adenosine deaminase sequences
+- describe adenosine deaminase mutations
+- describe napDNAbp domains
+- describe guide nucleic acid
+- describe CRISPR-associated nuclease
+- describe CRISPR system
+- describe napDNAbp-guide RNA complex
+- describe R-loop formation
+- describe nuclease activities
+- describe napDNAbp variants
+- describe Cas9 protein
+- describe Cas9 nickase
+- describe Cas9 equivalents
+- describe Cas9 modifications
+- describe napDNAbp cleavage
+- describe Cas protein
+- describe CRISPR-Cas systems
+- describe Cas9 domain
+- describe Cas9 proteins
+- describe Cas9 sequences
+- describe Cas9 structures
+- describe wild type canonical SpCas9
+- describe SpCas9 variants
+- describe SpCas9 mutations
+- describe SpCas9 sequences
+
+### Wild Type Cas9 Orthologs
+
+- introduce wild type Cas9 orthologs
+- list examples of Cas9 orthologs
+- specify sequence identity requirements
+- describe napDNAbp inclusion
+- mention Cas9 homologs and orthologs
+- specify nickase configuration
+- reference Chylinski et al. publication
+- describe inactive DNA cleavage domain
+- specify amino acid sequence identity
+- introduce dead napDNAbp variants
+- describe dead SpCas9
+- specify nuclease inactivation mutations
+- describe dead SaCas9
+- define dCas9
+- describe dCas9 proteins and methods
+- introduce dCas9 variants
+- specify mutations for nuclease inactivation
+- describe napDNAbp nickase variants
+- introduce Cas9 nickase
+- specify RuvC domain mutations
+- describe HNH domain mutations
+- mention N-terminal methionine removal
+- define Cas9 variants
+- describe Cas9 fragments
+- introduce Cas9 equivalents
+- describe CasX and CasY
+- discuss Cas9 equivalents from archaea
+- introduce other RNA-guided DNA binding proteins
+- describe Cas12a and Cas12b
+- introduce Cpf1
+- describe C2c1, C2c2, and C2c3
+- list other Cas proteins
+- describe small-sized Cas9 variants
+- introduce SaCas9 and LbCas12a
+- describe Cas12a/Cpf1 variants
+- introduce napDNAbps that recognize non-canonical PAM sequences
+- describe Argonaute protein from Natronobacterium gregoryi
+- introduce SpCas9 variants that recognize NRRH, NRCH, and NRTH PAMs
+- describe SpCas9-NRRH
+- describe SpCas9-NRCH
+- describe SpCas9-NRTH
+- discuss use of SpCas9-NRRH, SpCas9-NRCH, and SpCas9-NRTH
+- introduce napDNAbp domains with high identity to SpCas9-NRRH
+- introduce napDNAbp domains with high identity to SpCas9-NRCH
+- introduce napDNAbp domains with high identity to SpCas9-NRTH
+- describe use of napDNAbp domains with high identity to SpCas9-NRRH
+- describe use of napDNAbp domains with high identity to SpCas9-NRCH
+- describe use of napDNAbp domains with high identity to SpCas9-NRTH
+- summarize Cas9 variants and equivalents
+- conclude base editor disclosure
+- introduce wild type Cas9 orthologs
+- describe SpCas9-NRTH
+- describe SmacCas9 and its variants
+- describe iSpyMac-Cas9
+- describe Argonaute proteins
+- describe Marinitoga piezophila Argunaute (MpAgo) protein
+- describe single effectors of microbial CRISPR-Cas systems
+- describe Class 1 and Class 2 CRISPR-Cas systems
+- describe C2c1, C2c2, and C2c3 proteins
+- describe C2c1-sgRNA complex structure
+- describe C2c1-mediated cleavage
+- describe Cas9 domains with different PAM specificities
+- describe Francisella novicida Cpf1
+- describe Geobacillus thermodenitrificans Cas9
+- describe nucleic acid programmable DNA binding proteins without canonical PAM sequence
+- describe Argonaute protein from Natronobacterium gregoryi (NgAgo)
+- describe NgAgo-gDNA system
+- describe dNgAgo
+- introduce Cas9 circular permutants
+- describe structure of circular permutants of Cas9
+- describe examples of circular permutants of S. pyogenes Cas9
+- describe additional examples of circular permutants of S. pyogenes Cas9
+- describe further examples of circular permutants of S. pyogenes Cas9
+- describe use of circular permutants of Cas9 in base editors
+- describe advantages of circular permutants of Cas9
+- describe methods of making circular permutants of Cas9
+- describe methods of using circular permutants of Cas9
+- describe applications of circular permutants of Cas9
+- describe benefits of circular permutants of Cas9
+- describe future directions for circular permutants of Cas9
+- conclude description of circular permutants of Cas9
+- define wild type Cas9 orthologs
+- describe circular permutant Cas9 variants
+- provide exemplary CP-Cas9 amino acid sequences
+- introduce Cas9 variants with modified PAM specificities
+- describe napDNAbp domain comprising SpCas9-NG
+- describe napDNAbp domain comprising SpCas9-KKH
+- discuss conservative amino acid substitutions
+- provide examples of conservative mutations
+- describe Cas9 protein with combination of mutations
+- provide examples of Cas9 clones with mutations
+- describe Cas9 protein with increased activity
+- provide examples of increased activity
+- describe Cas9 protein with nickase activity
+- describe Cas9 protein with inactive nucleases
+- introduce Cas9 equivalents, including Cas12a/Cpf1 and Cas12b
+- describe modifications that alter/enhance PAM specificities
+- provide examples of sequence identity to reference Cas9 sequences
+- introduce SpCas9-VRQR
+- provide amino acid sequence of SpCas9-VRQR
+- introduce SpCas9-VRER
+- provide amino acid sequence of SpCas9-VRER
+- discuss methods for making amino acid substitutions
+- describe loss-of-function mutations
+- describe gain-of-function mutations
+- introduce site-directed mutagenesis
+- describe older methods of site-directed mutagenesis
+- describe PCR-based site-directed mutagenesis
+- discuss considerations for PCR-based site-directed mutagenesis
+- describe end-polishing step
+- discuss incorporation of references
+- provide examples of napDNAbp domains
+- describe Cas9 variants with expanded PAM capabilities
+- provide examples of Cas9 variants with expanded PAM capabilities
+- discuss methods for obtaining or constructing variant or mutant Cas9 proteins
+- describe mutations, including single base polymorphisms and indels
+- discuss categories of mutations
+- describe regulatory sequences
+- discuss consequences of gain-of-function mutations
+- describe dominant mutations
+- discuss site-directed mutagenesis methods
+- provide examples of site-directed mutagenesis methods
+
+### Exemplary Fusion Proteins
+
+- define fusion proteins
+- describe adenosine deaminase domain
+- introduce mutations to TadA 7.10
+- specify fusion protein embodiments
+- provide exemplary fusion protein sequences
+- illustrate fusion protein structures
+
+### Fusion Protein Architectures
+
+- describe fusion proteins with Cas9 domain and adenosine deaminase domain
+- specify Cas9 domains and adenosine deaminases used
+- describe fusion proteins with single adenosine deaminase enzyme
+- describe fusion proteins with two adenosine deaminases
+- specify linkers between adenosine deaminases and napDNAbp
+- describe optional linkers between domains
+- specify nuclear localization sequences (NLS)
+- describe NLS fused to N-terminus or C-terminus of fusion protein
+- describe NLS fused to adenosine deaminase or napDNAbp
+- specify NLS sequences
+- describe fusion protein architectures with NLS
+- describe additional domains in fusion proteins
+- specify protein tags and reporter genes
+- describe epitope tags and reporter genes
+- specify examples of protein domains
+- describe gene sequences encoding proteins or fragments
+- specify DNA binding domains
+- describe additional domains in base editors
+- specify reporter genes and gene products
+- describe alteration of gene product expression
+- specify protein tags
+- describe linkers
+- specify types of linkers
+- describe covalent bonds as linkers
+- specify polymeric linkers
+- describe amino acid-based linkers
+- specify XTEN linker
+- describe linkers with specific amino acid sequences
+- specify linkers with repeating motifs
+- describe linkers with varying lengths
+- specify examples of linkers
+- describe fusion proteins with linkers
+- specify adenosine deaminase and napDNAbp fusion proteins
+- describe first and second adenosine deaminase fusion proteins
+- specify NLS fusion proteins
+- describe optimal linker lengths for deaminase activity
+- specify examples of linker sequences
+
+### Reduced RNA Editing Effects
+
+- define RNA editing effects
+- describe goal of DNA base editing efficiency
+- provide methods of administering base editors
+- specify A-to-I editing frequencies in RNA
+- specify A-to-I editing frequencies in mRNA transcriptome
+- specify magnitudes of detectable A-to-I edits
+- provide particular embodiments of methods
+
+### Reduced Off-Target DNA Editing and Indel Frequencies
+
+- recognize adenine base editors' capability
+- define indel
+- describe intended mutation
+- specify types of intended mutations
+- describe deamination that alters regulatory sequence
+- describe deamination that alters splicing
+- specify ratio of intended point mutations to indels
+- describe method of determining indel frequencies
+- specify limiting formation of indels in a region
+- specify time of exposure to base editor
+- specify ratio of intended mutations to unintended mutations
+- provide particular embodiments of base editors
+- specify ratio of intended point mutation to indel formation
+
+### Guide Sequences (e.g., Guide RNAs)
+
+- provide guide RNAs for use in editing methods
+- design guide sequences to recognize target sequences
+- describe guide RNAs for use with fusion proteins
+- specify guide sequences having complementarity to protospacer
+- describe methods for editing target nucleic acid molecule
+- transduce cells with fusion protein and gRNA complexes
+- bind gRNA to napDNAbp domain of fusion protein
+- specify guide sequence length
+- describe complexes of adenine base editors and gRNA
+- specify guide RNA length
+- describe ability of guide sequence to direct sequence-specific binding
+- assess guide sequence ability by Surveyor assay
+- select guide sequence to target any target sequence
+- describe target sequences within a genome
+- provide examples of unique target sequences
+- select guide sequence to reduce secondary structure
+- determine secondary structure by polynucleotide folding algorithm
+- describe tracr mate sequence
+- specify degree of complementarity between tracr sequence and tracr mate sequence
+- describe tracr sequence length
+- contain tracr sequence and tracr mate sequence within a single transcript
+- produce hairpin structure by hybridization
+- specify loop forming sequences for hairpin structures
+- provide examples of single polynucleotides comprising guide sequence, tracr mate sequence, and tracr sequence
+- describe transcription termination sequence
+- provide examples of guide RNAs for use with Cas9 from S. thermophilus CRISPR1
+- provide examples of guide RNAs for use with Cas9 from S. pyogenes
+- co-express fusion protein with guide RNA
+- describe backbone structure recognized by S. pyogenes Cas9 protein
+- describe backbone structure recognized by S. aureus Cas9 protein
+- provide guide RNA sequences for targeting specific genomic target sites
+- describe methods of making improved adenine base editors
+
+### Methods for Making Fusion Proteins
+
+- introduce fusion proteins
+- codon optimization for expression
+- use of nuclear localization sequences
+- modifications for increased expression
+- codon optimization for eukaryotic cells
+- define codon optimization
+- explain codon bias
+- describe codon usage tables
+- introduce computer algorithms for codon optimization
+- ancestral sequence reconstruction analysis
+- define ancestral sequence reconstruction
+- explain limitations of ancestral sequence reconstruction
+- list software packages for ancestral reconstruction
+- demonstrate ancestral sequence reconstruction
+- increase expression using ancestral sequence reconstruction
+- vectors for making base editors
+- design vectors for cloning and expression
+- design vectors for transfecting base editors
+- express base editor transcripts in prokaryotic or eukaryotic cells
+- introduce host cells for expression
+- use prokaryotes to amplify vectors
+- express proteins in prokaryotes
+- use fusion expression vectors
+- introduce inducible non-fusion E. coli expression vectors
+- drive protein expression in insect cells
+- drive protein expression in mammalian cells
+- use tissue-specific regulatory elements
+- define fusion proteins
+- specify editing efficiency
+- specify off-target DNA editing frequency
+- specify ratio of intended products to unintended products
+- describe location of intended edited base pair
+- describe method for editing nucleobase pair
+- specify conversion of first nucleobase to second nucleobase
+- describe cutting of target region
+- specify replacement of third nucleobase with fourth nucleobase
+- describe generation of intended edited base pair
+- specify hybridization of cut single strand to guide nucleic acid
+- describe properties of base editor
+- specify use of adenine base editors
+- describe editing methods using guide nucleic acid
+- specify target DNA sequence associated with disease or disorder
+- describe correction of point mutation
+- specify use of base editors for targeted editing
+- describe introduction of point mutation into nucleic acid
+- describe applications of nucleobase editing proteins
+- outline treatment methods
+- specify disease types
+- introduce fusion proteins for disease treatment
+- list exemplary diseases and disorders
+- explain numbering of specific positions or residues in sequences
+- describe methods for identifying residues in homologous proteins
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- list diseases and disorders (continued)
+- conclude list of diseases and disorders
+- list genetic disorders
+- describe fusion proteins
+- introduce methods for making fusion proteins
+- outline applications of fusion proteins
+- discuss advantages of fusion proteins
+- describe limitations of fusion proteins
+- motivate use of fusion proteins
+- summarize importance of fusion proteins
+- introduce genetic disorders treated by fusion proteins
+- describe fusion protein therapy for genetic disorders
+- outline benefits of fusion protein therapy
+- discuss challenges of fusion protein therapy
+- motivate development of fusion protein therapy
+- summarize current state of fusion protein therapy
+- introduce methods for producing fusion proteins
+- describe expression systems for fusion proteins
+- outline purification methods for fusion proteins
+- discuss characterization of fusion proteins
+- motivate large-scale production of fusion proteins
+- summarize importance of fusion protein production
+- introduce applications of fusion proteins in research
+- describe use of fusion proteins in diagnostics
+- outline therapeutic applications of fusion proteins
+- summarize future directions for fusion protein research
+- list genetic disorders
+- describe hypogonadotropic hypogonadism 11
+- describe hypohidrotic ectodermal dysplasia with immune deficiency
+- describe hypokalemic periodic paralysis 1 and 2
+- describe hypomagnesemia 1, intestinal
+- describe hypomyelinating leukodystrophy 7
+- describe hypoplastic left heart syndrome
+- describe atrioventricular septal defect and common atrioventricular junction
+- describe hypospadias 1 and 2, X-linked
+- describe hypothyroidism, congenital, nongoitrous, 1
+- describe hypotrichosis 8 and 12
+- describe hypotrichosis-lymphedema-telangiectasia syndrome
+- describe I blood group system
+- describe ichthyosis bullosa of Siemens
+- describe ichthyosis exfoliativa
+- describe ichthyosis prematurity syndrome
+- describe idiopathic basal ganglia calcification 5
+- describe idiopathic fibrosing alveolitis, chronic form
+- describe dyskeratosis congenita, autosomal dominant, 2 and 5
+- describe idiopathic hypercalcemia of infancy
+- describe immune dysfunction with T-cell inactivation due to calcium entry defect 2
+- describe immunodeficiency 15, 16, 19, 30, 31C, 38, 40, 8, due
+- describe infantile convulsions and paroxysmal choreoathetosis, familial
+- describe infantile cortical hyperostosis
+- list genetic disorders
+- describe osteopathia striata with cranial sclerosis
+- describe osteopetrosis autosomal dominant type 1 and 2
+- describe recessive 4, recessive 1, recessive 6
+- describe osteoporosis with pseudoglioma
+- describe oto-palato-digital syndrome, types I and II
+- describe ovarian dysgenesis 1
+- describe ovarioleukodystrophy
+- describe pachyonychia congenita 4 and type 2
+- describe paget disease of bone, familial
+- describe pallister-hall syndrome
+- describe palmoplantar keratoderma, nonepidermolytic, focal or diffuse
+- describe pancreatic agenesis and congenital heart disease
+- describe papillon-lefevre syndrome
+- describe paragangliomas 3
+- describe paramyotonia congenita of von eulenburg
+- describe parathyroid carcinoma
+- describe parkinson disease 14, 15, 19 (juvenile-onset), 2, 20 (early-onset), 6
+- describe partial albinism
+- describe partial hypoxanthine-guanine phosphoribosyltransferase deficiency
+- describe patterned dystrophy of retinal pigment epithelium
+- describe pc-k6a
+- describe pelizaeus-merzbacher disease
+- describe pendred syndrome
+- provide fusion protein uses
+- specify contacting conditions
+- provide uses of fusion proteins
+- define pharmaceutical composition
+- describe composition embodiments
+- describe administration methods
+- provide examples of administration
+- discuss modification for animals
+- list subjects for administration
+- introduce pharmaceutical compositions
+- describe formulation methods
+- list excipients
+- define pharmaceutically-acceptable carrier
+- describe routes of administration
+- describe local administration
+- describe controlled release systems
+- describe pump-based delivery
+- describe polymeric materials
+- describe pharmaceutical composition for intravenous administration
+- describe pharmaceutical composition for subcutaneous administration
+- describe lyophilized forms
+- describe lipid particles or vesicles
+- describe unit dose
+- describe pharmaceutical kit
+- describe article of manufacture
+- describe container and label
+- describe delivery methods
+- describe nucleofection
+- describe microinjection
+- describe biolistics
+- describe virosomes
+- describe liposomes
+- describe immunoliposomes
+- describe polycation or lipid:nucleic acid conjugates
+- describe naked DNA
+- describe artificial virions
+- describe agent-enhanced uptake of DNA
+- describe RNP complexes
+- describe viral vector delivery systems
+- describe non-viral vector delivery systems
+- describe lipofection
+- introduce fusion proteins
+- describe viral vectors
+- describe retroviral vectors
+- describe lentiviral vectors
+- describe adenoviral vectors
+- describe AAV vectors
+- describe packaging cells
+- describe viral vector production
+- describe rAAV vectors
+- describe rAAV serotypes
+- describe chimeric rAAV vectors
+- describe methods for producing rAAV vectors
+- describe methods for delivering nucleic acids
+- describe split intein-based methods
+- describe dual rAAV vectors
+- describe fusion protein engineering
+- describe split site engineering
+- describe delivery of nucleic acids to cells
+- describe transduction and transfection methods
+- describe kits and cells
+- describe nucleic acid constructs
+- describe expression constructs
+- describe guide nucleic acid backbones
+- describe kits comprising fusion proteins
+- describe kits comprising gRNAs
+- describe cells comprising fusion proteins
+- describe cells comprising nucleotide constructs
+- describe cell lines
+- describe transfection methods
+- describe cell line establishment
+- describe CRISPR system components
+- describe RNA editing reduction
+- describe off-target DNA editing reduction
+- describe indel formation reduction
+- describe ABEmaxAW variant
+- describe ABEmaxQW variant
+- describe application considerations
+
+## EXAMPLES
+
+### Example 1
+
+- transfect HEK293T cells with ABEmax plasmid
+- isolate genomic DNA and RNA
+- perform high-throughput sequencing
+- analyze RNA editing activity
+- introduce E59A mutations into TadA or TadA* monomers
+- measure RNA and DNA editing activity
+- test if RNA editing requires Cas9 component
+- perform transcriptome-wide analysis
+- identify A-to-I edits
+- compare RNA editing activity
+- analyze DNA editing activity
+- compare DNA editing activity
+- analyze indel formation
+- discuss results
+
+### Example 2
+
+- identify TadA* residues for substitutions
+- generate ABEmax mutants with TadA* substitutions
+- analyze DNA base editing activity
+- analyze RNA editing activity
+- discuss results of Arg 47 mutations
+- discuss results of Asn 108 mutations
+- discuss results of Val 106 mutations
+- identify ABEmaxAW variant
+- analyze DNA base editing activity of ABEmaxAW
+- analyze RNA editing activity of ABEmaxAW
+- discuss results of ABEmaxAW
+- summarize findings
+
+### Example 3
+
+- test ABEmaxAW in HeLa cells
+- test ABEmaxAW in U2OS and K562 cells
+- analyze DNA base editing activity
+- analyze RNA editing activity
+- test effect of longer exposure time
+- analyze DNA base editing activity after 5 days
+- analyze RNA editing activity after 5 days
+
+### Example 4
+
+- generate additional ABEmax mutants
+- test and analyze DNA and RNA editing activities
+
+### Example 5
+
+- perform RNA-Seq to identify transcriptome-wide A-to-I editing frequencies
+- confirm on-target DNA editing activity
+- compare A-to-I RNA editing frequencies across all transcripts
+- determine potential biological significance of A-to-I edits
+- analyze impact of coding changes on protein function
+
+### Materials and Methods for Examples 1-5
+
+- construct plasmids by USER cloning
+- amplify DNA using Phusion U Green Multiplex PCR Master Mix
+- construct sgRNA plasmids by blunt end ligation
+- culture mammalian cells
+- prepare plasmids for mammalian cell transfection
+- perform lipofection
+- isolate genomic DNA
+- perform mammalian cell nucleofection
+- isolate RNA from mammalian cells
+- generate cDNA for targeted RNA amplicon sequencing
+- prepare genomic DNA and RNA amplicons for high-throughput sequencing
+- analyze HTS data for DNA sequencing and targeted amplicon sequencing
+- prepare RNA libraries for RNA-Seq
+- sequence RNA libraries
+- analyze RNA-Seq data
+- perform variant calling
+- filter variant calls
+- predict effect of A-to-I variants
+- calculate average frequency of A-to-I editing
+- analyze transcriptome-wide position of A-to-I edits
+- describe plasmid construction
+- describe mammalian cell culture
+- describe lipofection
+- describe genomic DNA isolation
+- describe mammalian cell nucleofection
+- describe RNA isolation
+- describe cDNA generation
+- describe preparation of genomic DNA and RNA amplicons
+- describe analysis of HTS data
+
+## EQUIVALENTS AND SCOPE
+
+- define claim articles
+- describe group members in claims
+- introduce variations and combinations of limitations
+- discuss Markush group format
+- define comprising and containing
+- describe range values
+- incorporate references and exclude prior art
+

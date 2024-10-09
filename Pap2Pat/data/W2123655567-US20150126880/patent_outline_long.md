@@ -1,0 +1,147 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- introduce field of invention
+
+## SUMMARY
+
+- introduce arterial pressure measurement
+- describe current practice
+- describe advantages of current practice
+- describe limitations of current practice
+- introduce hydraulic connection distortions
+- describe transfer function of hydraulic connection
+- describe distortions caused by hydraulic connection
+- describe impact on derived indices
+- describe clinical staff detection of defects
+- describe proposed solutions
+- describe limitations of proposed solutions
+- introduce need for improvement
+- describe aim of invention
+- describe method for improving quality of measured signal
+- describe device for improving quality of measured signal
+- describe steps of method
+- determine dynamic parameters of hydraulic connection
+- analyse frequential content of incident signal
+- detect situation of hydraulic connection
+- describe situation (a)
+- describe situation (b)
+- describe situation (c)
+- describe mechanical action on tubing
+- describe synchronisation of mechanical action
+- describe alternative mechanical actions
+- describe detection of decoupling
+- describe applanation tonometry
+- describe pulse wave velocity propagation
+- describe comparison with reference value
+- describe alarm in case of decoupling
+- describe device for continuous monitoring and correction
+- describe monitoring and correcting module
+- describe actuator module
+- describe integration into conventional measuring chain
+- describe advantages of device
+- describe ease of installation
+- describe transparency for hospital staff
+- describe neutralisation of device
+- describe first processor
+- describe second processor
+- describe redundant treatments
+- describe actuator module
+- describe wired connection
+- describe wireless connection
+- describe rechargeable battery
+- describe casing for monitoring module
+- describe actuator module connection
+- describe processing system
+- describe communication with monitoring module
+- describe applanation tonometry casing
+
+## DETAILED DESCRIPTION
+
+- introduce monitoring device for measuring arterial pressure
+- describe device components: monitoring and correcting module, actuator module, remote processing system
+- describe monitoring and correcting module functions
+- characterise dynamic parameters of hydraulic connection
+- perform frequential analysis of incident arterial pressure signal
+- estimate aptitude of hydraulic connection for reproducing incident signal
+- detect measuring artefacts and incidents
+- provide information on hydraulic connection state and corrective action
+- describe three operating modes: active, passive, neutral
+- describe architecture of monitoring and correcting module
+- describe two processors: first processor for signal processing, second processor for correction
+- describe communication between processors and with actuator module and remote processing system
+- describe power management module
+- describe energy efficiency of monitoring and correcting module
+- describe actuator module functions
+- apply mechanical action to tubing to excite hydraulic connection
+- describe pulse and sinusoidal loads for characterising hydraulic connection
+- synchronise mechanical action with diastole
+- describe actuator module components: actuator, power source
+- describe remote processing system functions
+- process measured signal and deduce derived indices
+- display arterial pressure plottings and record measurements
+- perform quality follow-up and calibration
+- describe methods for processing signal
+- determine dynamic parameters of hydraulic connection
+- describe percussion method using fast flushes
+- extract response to fast flush from haemodynamic signal
+- calculate damping factor and natural frequency
+- describe limitations of percussion method
+- describe harmonic method
+- apply brief series of sinusoidal loads
+- describe advantages of harmonic method
+- describe limitations of harmonic method
+- describe combination of percussion and harmonic methods
+- describe advantages of combination
+- describe limitations of combination
+- describe other methods for processing signal
+- describe implementation of monitoring device
+- describe casing for monitoring and correcting module
+- describe connectors for interconnecting module to existing measuring device
+- describe simplified man-machine interface
+- describe sterilisation of monitoring and correcting module
+- describe actuator module implementation
+- describe advantages of actuator module implementation
+- describe remote processing system implementation
+- introduce percussion method
+- describe actuator module
+- motivate harmonic method
+- describe harmonic analysis
+- derive formulas for z and f0
+- describe need for segmenting mechanical action
+- motivate analysis of signal spectrum
+- describe principle of signal spectrum analysis
+- motivate determination of frequential content
+- describe FFT analysis
+- estimate aptitude of hydraulic connection
+- describe first method for estimation
+- describe second method for estimation
+- illustrate second method
+- motivate monitoring of hydraulic connection
+- describe detection of artefacts
+- describe detection of abnormal attenuation
+- describe correction and alert
+- describe logging of incidents
+- motivate detection of decoupling
+- describe detection module
+- illustrate variation in aortic and radial pressures
+- describe frequential analysis method
+- illustrate spectral content of aortic and radial pressures
+- describe measurement of pulse wave velocity
+- describe Moens-Korteweg equation
+- illustrate decrease in pulse wave velocity
+- describe distribution of arterial pressure
+- illustrate mean pulse wave velocity
+- describe principle of second detection method
+- describe measurement of time delay
+- describe estimation of pulse wave velocity
+- describe variant using brachial and carotid measurements
+- describe transfer function for aortic pressure
+- describe operation of tonometric casing
+- describe monitoring of radial arterial pressure
+- describe warning generation
+- describe input of distances
+- describe data fusion device
+- conclude invention
+

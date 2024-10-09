@@ -1,0 +1,161 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate whole-slide imaging
+- limitations of traditional scanning microscopes
+- limitations of other systems
+- limitations of micro-camera arrays
+
+## BRIEF SUMMARY
+
+- introduce re-imaging microscopy systems
+- achieve high resolution at low cost
+- use macro-camera lens as primary lens
+- achieve gigapixel capabilities
+- enable 3D video imaging
+- enable multi-channel fluorescence and/or polarimetry
+- describe microscopy system
+- generate 3D image
+- specify overlap amount
+- specify frame rate
+- describe filter options
+- describe illumination source
+
+## DETAILED DESCRIPTION
+
+- introduce re-imaging microscopy systems
+- describe high-resolution 3D video imaging capabilities
+- explain space bandwidth product (SBP) of re-imaging microscopy systems
+- describe planar array of micro-cameras with overlapping fields of view
+- list applications of re-imaging microscopy systems
+- describe in vivo model organism imaging
+- describe in vitro cell-culture imaging experiments
+- describe whole-slide imaging in pathology, cytopathology, and hematology
+- describe examining large tissue sections
+- describe large field of view light-sheet imaging experiments
+- describe optimized illumination patterns using convolution neural network (CNN)
+- describe re-imaging microscopy systems with large field of view at high resolution
+- illustrate re-imaging microscopy system with micro-camera array
+- describe primary lens and planar array of micro-cameras
+- describe overlapping fields of view of micro-cameras
+- illustrate planar micro-camera array
+- describe overlap of fields of view of micro-cameras
+- illustrate overlap of fields of view of micro-cameras
+- describe creating composite image
+- illustrate re-imaging microscopy system with planar micro-camera array and intermediate platform
+- describe intermediate platform at intermediate plane
+- describe fiber bundle array at intermediate platform
+- illustrate fiber bundle array
+- describe parameters for fiber bundle array
+- illustrate fibers used in fiber bundle array
+- describe re-imaging microscopy system with light filters
+- illustrate re-imaging microscopy system with light filters
+- describe light filters on micro-cameras
+- describe patterns of light filters
+- describe overlap requirements for simultaneous composite images
+- describe applications of light filters
+- describe advantages of re-imaging microscopy systems
+- conclude re-imaging microscopy systems
+- describe re-imaging microscopy system
+- explain multi-channel imaging
+- explain multi-channel fluorescence imaging
+- explain polarization imaging
+- illustrate micro-camera array with light filters
+- describe emission filters
+- describe fluorescence emission filters
+- describe types of emission filters
+- illustrate normal illumination design
+- illustrate illumination design for phase-contrast imaging
+- describe illumination design for phase-contrast imaging
+- illustrate illumination design for dual-channel polarization imaging
+- describe illumination design for dual-channel polarization imaging
+- illustrate illumination design for dual-channel fluorescence imaging
+- describe illumination design for dual-channel fluorescence imaging
+- illustrate re-imaging microscopy system with planar micro-camera array
+- describe re-imaging microscopy system with planar micro-camera array
+- illustrate method of controlling re-imaging microscopy system
+- describe method of controlling re-imaging microscopy system
+- describe generating composite images
+- describe image stitching algorithm
+- describe denoising methods
+- illustrate system controller for re-imaging microscopy system
+- describe system controller for re-imaging microscopy system
+- illustrate computing system for re-imaging microscopy system
+- describe computing system for re-imaging microscopy system
+- describe processor of computing system
+- describe storage of computing system
+- describe communications interface of computing system
+- describe user interface of computing system
+- describe instructions for generating composite images
+- describe storage media for instructions
+- describe communications interface for communicating with system controller
+
+### EXPERIMENT
+
+- conduct experiment with primary objective lens and planar array of micro-cameras
+- describe planar array of micro-cameras with 96 individual micro-cameras
+- specify micro-camera lens and field of view
+- describe fiber bundle array used in experiment
+- specify entrance NA of micro-camera lens and primary lens
+- describe 6 μm fiber faceplate used
+- explain how each micro-camera captures de-magnified image of intermediate plane
+- describe stitching of images to produce composite image
+- specify half-pitch resolution of planar array of micro-cameras
+- describe placement of planar array of micro-cameras with respect to intermediate plane
+- specify maximum two-point resolution of re-imaging microscopy system
+- introduce software and post-processing section
+- describe vignetting effects and correction method
+- explain introduction of fixed, high-spatial frequency modulation pattern by fiber bundle array
+- describe method to remove speckle-like modulation using motorized stage
+- specify two methods to achieve fiber plate vibration
+- introduce results section
+- describe assessment of resolution of re-imaging microscopy system
+- specify measured two-point resolution at center and edge of field of view
+- describe benefit of adopting fiber bundle array
+- illustrate results of time averaging method
+- describe modification of illumination unit for Differential Phase Contrast imagery
+- specify design setup for DPC modulation
+- describe imaging of 10 μm diameter polystyrene microspheres
+- illustrate phase contrast maps and average 1D traces
+- describe testing of re-imaging microscopy system with buccal epithelial cell samples
+- describe demonstration of snapshot multi-modal acquisition with multi-scale microscope
+- specify design setup for dual-channel fluorescence video
+- illustrate results of dual-channel fluorescent imaging
+- introduce certain embodiments with 3D image and/or video capabilities
+- describe re-imaging microscopy system with micro-camera array providing 3D imaging capabilities
+- illustrate angular distribution of light
+- describe micro-camera capturing unique angular distribution
+- explain effect of aperture and positioning on angular distribution
+- illustrate images of target area captured by micro-cameras
+- describe variation in angular distribution between images
+- illustrate 3D imaging through image reconstruction process
+- illustrate shrimp claw imaged by micro-cameras
+- describe variation in angular distribution between images
+- illustrate 3D image generation through image reconstruction process
+- illustrate process of volumetric reconstruction
+- describe method of volumetric reconstruction
+- direct light to target area
+- capture images of target area
+- generate composite image
+- generate height map
+- generate 3D tomographic image
+- describe 3D video imaging capabilities
+- capture simultaneous images per second
+- generate composite video feed
+- generate height map video feed
+- generate 3D tomographic video feed
+- describe use of deconvolution algorithm
+- calculate point-spread-functions
+- generate optical transfer functions
+- perform forward projection
+- compute error image
+- back-project error image
+- describe algorithm using ray optics model with neural network
+- track camera parameters
+- update object guess
+- generate 3D height map using CNN
+- compute error between guessed images and actual images
+- update object guess and camera parameters
+- display 3D height maps and composite images
+

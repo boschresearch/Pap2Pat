@@ -1,0 +1,91 @@
+{
+    "id": "https://semopenalex.org/work/W2037225694",
+    "authors": [
+        "B. Agarwal",
+        "D.A. Badillo",
+        "Hasan Akyol",
+        "Hamid Firouzkouhi"
+    ],
+    "title": "A CMOS dB-linear RF VGA for SAW-less WEDGE transmitters",
+    "date": "2010-01-01",
+    "abstract": "A CMOS dB-linear RF variable gain amplifier (VGA) that can provide a variable gain of 25-dB is implemented. The 25-dB of this range is achieved by a dB-linear V-I converter, which includes current limiting circuitry to reduce the gain variation due to process and temperature at maximum and minimum output power levels. The circuits are designed in a 0.13-um RF CMOS process. The measurement results demonstrate -45 dBc ACLR, -165-dBc/Hz Rx-band noise at 5-dBm output power and 25-dB dynamic gain control range in UMTS band for WCDMA. The RF VGA consumes 30-mA of current at maximum gain from a 1.8-V supply.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "HE goal of designing an integrated transceiver to address global cellular markets while maintaining backward compatibility with earlier networks requires supporting multiple standards including EDGE and WCDMA, collectively referred to as WEDGE. Designing circuits flexible enough to satisfy all of these standards presents a formidable design challenge. Further complicating the task is the need to reduce the cost of the complete RF solution by either integrating external components or mitigating the need for them through innovative design. This paper presents a novel dB-linear transmitter driver amplifier (DA) which meets all WEDGE specifications, without external SAW filter which is a key building block of a larger, fully integrated WEDGE transceiver.",
+                "WCDMA systems suffer from the \"near-far\" effect, which refers to the interference caused by multiple users transmitting on the same frequency at varying distances from the base station (BS). Higher powered signals that are closer to the BS tend to dominate or \"jam\" distant, weaker signals. In order to minimize this interference and maximize the channel capacity, mobile transmitters are required to provide over 74dB of gain control in 1dB steps with 0.5dB accuracy. Accounting for the gain variation of the power amplifier (PA), the transmitter (TX) is required to achieve a dynamic range exceeding 90dB. This flexibility allows handsets that are closer to the BS to transmit at a power lower than those further away, resulting in both signals being received at roughly equal power. Gain control of a WEDGE transmitter is usually divided between the baseband filter, up-converter and driver amplifier. Implementing gain control in the driver amplifier is more difficult because of the higher amplitude and frequency but has the benefit of scaling both the desired signal and unwanted spurs/noise equally, thus preserving performance. In addition, maximizing the gain control range of the driver amplifier relaxes the requirement of blocks earlier in the TX chain. Previously published transmitters do their gain control in digital/analog baseband and/or have large gain steps at RF [1]. This approach is sub-optimal in terms of meeting Rxband noise and current requirements for a SAW-less transceiver system.",
+                "This work presents a linear, low-noise CMOS RF variable gain amplifier (VGA) operating from 1.7-GHz to 2-GHz, which eliminates the need for an interstage SAW filters typically used between the RF VGA and power amplifier (PA). In order to satisfy the dB-linear and current-backoff requirements, a linear-to-exponential bias current generator is employed. A novel current clamp circuit is included to reduce gain range variations across process and temperature variation."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "II. SYSTEM REQUIREMENTS",
+            "paragraphs": [
+                "In a multimode mobile handset transmitter addressing WEDGE application, the most stringent specifications belong to WCDMA standard. In WCDMA, the transmit and receive chains are on at the same time, thus requiring low noise at the Tx output in the Rx-band. To minimize interference between neighboring channels, adjacent channel leakage rejection (ACLR) is specified as -33dBc at the antenna.",
+                "By the elimination of SAW filter after RF VGA, with specific PA gain and duplexer rejection, the RX band noise at the output of the RF VGA is specified as -159-dBc/Hz at 190-MHz offset for WCDMA Band I. Accounting for other noise contributors in the chain, the RF VGA should have very low output noise in the Rxband.",
+                "RF VGA output power variation over process and temperature needs to be low, and the gain control curves at different temperatures should not cross each other. A T linear-in-dB characteristic reduces the calibration requirements in the factory and lends itself to more accurate power control. In addition, it is desired to reduce the current consumption as the output power is reduced to conserve battery life. As the bias current of the RF VGA is backed off, the output noise can be relaxed."
+            ],
+            "subsections": [
+                {
+                    "title": "III. CIRCUIT DESIGN",
+                    "paragraphs": [
+                        "The TX driver amplifier consists of two sub-blocks: a RF VGA and a linear-dB voltage-to-current converter."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. RF VGA as Driver Amplifier",
+                            "paragraphs": [
+                                "A simplified schematic of the RF-VGA is shown in Fig. 1. The amplifier is cascoded to increase reverse isolation, which increases the dynamic range of the amplifier, and gain. Moreover, the cascode transistor, M2, reduces the miller effect across the trans-conductor transistor, M1, and protects it from the high voltage swing generated by the reactive load. Transistors M1 and M2 are biased by the output of the dB-linear voltage to current converter which provides 25dB of total gain control.",
+                                "The nonlinearity of the RF VGA has three main sources; input voltage nonlinearity, gm nonlinearity due to input swing and channel length modulation (1).",
+                                "Class A amplifier scheme is chosen due to its capability to drive high voltage swing with higher linearity. It is known that in order to have a constant gm over a big current swing, the input transistor current density needs to be high. To have high gm value and high current density, Class A operation requires large bias current. However, because of the large DC current consumption, the power efficiency of the VGA at maximum output power is sacrificed.",
+                                "Rx-band noise of the RF VGA needs to be below -159-dBc/Hz at 190-MHz offset in UMTS band, which is the most challenging noise spec within the band of interest. The input transistor gm is the main source for the noise and it can be increased by using higher bias current values for the VGA.",
+                                "The bias current of the RF VGA is reduced quickly at lower power values by means of high slope of the linear-dB voltage to current converter output characteristics."
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "B. dB-Linear Voltage to Current Converter",
+                            "paragraphs": [
+                                "In order to control output power of the VGA in linear-dB characteristic, the DC current of the VGA must vary exponentially. In order to comprehend this better, the operation of the VGA is examined below:",
+                                "For the same input voltage swing, in order to vary the output power linearly in logarithmic scale, the gain of the VGA needs to vary linearly in logarithmic scale. The voltage gain of the VGA is shown as in (2):  "
+                            ],
+                            "subsections": []
+                        },
+                        {
+                            "title": "Vdd",
+                            "paragraphs": [
+                                "gain can be controlled over a specific range of ctrl V . In order to adjust this range, a voltage scaler is used at the input. After the control voltage is scaled, a multiplier is used to convert this voltage to a current with a positive temperature coefficient. The exponential current generator takes the linear current and converts into an exponentially varying current by leveraging sub-threshold characteristics of an NMOS transistor. The exponential current generator block employs an NMOS differential pair in sub-threshold region and its output current is an exponential function of In order to minimize the output current variation as well as gain variation of the RF VGA over process and temperature, linear-dB V-to-I converter employs a current limiting circuitry, a novel way to clip the maximum and minimum output current (Fig. 3). This circuitry includes a comparator which keeps the output current either equal or lower than I max . If the exponential current exceeds the value of I max , M 2 turns on and I exp -I max flows through M 2 , whereas I max flows through M 1 . The minimum current is set by an additional current source of I min connected to the output as shown in the schematic."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "IV. MEASUREMENT RESULTS",
+            "paragraphs": [
+                "The RF VGA was tested as part of a WEDGE SAWless transceiver IC [2]. The output power, linearity and noise performances are shown in this section. Fig. 4 shows the output spectrum of the transmitter with a WCDMA signal at 1950-MHz at maximum gain control setting. The output ACLR1 and ACLR2 achieved is -45dBc and -65dBc respectively at 5dBm output power. The measurement offsets are 5MHz and 10MHz respectively.",
+                "Fig. 5 shows a measurement of the ACLR vs. output power, as the gain control voltage is varied. As can be seen from the graph, cascaded linearity is maintained across the gain control range.",
+                "Rx-band noise performance of the transmitter at 1950 MHz for different output power values is shown in Fig. 6. As shown, we achieve a very low noise of -166dBc/Hz at 6dBm output power @ 190MHz offset at 1950MHz. As the power is reduced from the maximum value, dBc noise increases dB-to-dB thus maintaining output noise floor.   7 shows the bias current and output power of the RF VGA versus the 10-bit gain control DAC setting. The gain control DAC generates the analog control voltage that is used to vary the bias current varies from 30mA to 300uA. Over this range, the RF VGA provides a gain range of 25dB. As can be seen from the graph, the current varies exponentially, which causes the output power to vary in a dB-linear fashion over the gain control range."
+            ],
+            "subsections": [
+                {
+                    "title": "V. CONCLUSION",
+                    "paragraphs": [
+                        "A CMOS dB-linear RF variable gain amplifier that can provide a variable gain of 25-dB by means of a novel dBlinear V-I converter was designed, fabricated and tested. The transmitter chain has measured ACLR1 and ACLR2 of -45dBc and -65dBc, respectively. The RX-band noise is -166dBc/Hz in the UMTS band I at an offset of 190MHz. Linearity and noise performance is maintained as the gain of the VGA is reduced. This design is the first published RF VGA satisfying stringent linearity, noise, current and gain control range requirements of a SAW-less WEDGE transmitter."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "VI. ACKNOWLEDGEMENTS",
+            "paragraphs": [
+                "The authors would like to thank various members of the Mobile Transceiver Team at Skyworks Solutions Inc. for their help and support."
+            ],
+            "subsections": []
+        }
+    ]
+}

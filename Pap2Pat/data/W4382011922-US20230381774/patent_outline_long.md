@@ -1,0 +1,366 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to cellular reprogramming and gene editing
+
+## BACKGROUND OF THE INVENTION
+
+- introduce cell reprogramming
+- describe limitations of direct cell conversion
+- explain epigenetic state of cell
+- discuss regulation of epigenetic state
+- highlight importance of biophysical factors
+- describe new approaches to enhance cell reprogramming
+- reiterate need for cell reprogramming methods
+- summarize background of invention
+
+## SUMMARY OF THE INVENTION
+
+- introduce microfluidic device for cell reprogramming
+- describe enhancement of cellular reprogramming
+- explain microfluidic systems for cellular engineering
+- describe high-throughput microfluidic systems
+- detail microfluidic cell culture/processing system
+- explain cellular and/or nuclear deformation
+- describe effects of mechanical squeezing on chromatin
+- discuss enhancement of reprogramming processes
+- introduce method of deforming cells in microfluidic systems
+- describe selection of channel width and height
+- explain selection of aspect ratio and cross-section area ratio
+- describe use of microfluidic systems for various applications
+- detail methods for high-efficiency conversion of cells
+- describe methods for guided stem cell differentiation
+- explain boosting efficiency of gene therapy
+- discuss reorganization of chromatin for cell rejuvenation
+- summarize summary of invention
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce cell reprogramming
+- discuss limitations of cell reprogramming
+- describe innovative microfluidic device
+- motivate use of biophysical factors
+- discuss direct induced neuronal reprogramming
+- introduce induced pluripotent stem cells (iPSCs)
+- describe direct reprogramming approach
+- discuss limitations of direct reprogramming
+- introduce microfluidic cell processing/culturing systems
+- describe microfluidic cell culture system components
+- discuss cellular and nuclear deformation
+- introduce 3D biomaterials engineering
+- discuss modulation of cell adhesion
+- introduce cytoskeletal and adhesion inhibitors
+- describe genetic modification of mammalian cells
+- introduce CRISPR ribonucleoprotein complex
+- discuss CRISPR-associated endonuclease activity
+- describe microfluidic channel design
+- introduce aspect ratio (AR) and cross-section area ratio (CR)
+- discuss optimization of microchannel design
+- describe experiments with different cell types
+- discuss reprogramming efficiency results
+- introduce optimal AR and CR values
+- discuss guidance for microfluidics device design
+- describe methods of making and using microfluidics devices
+- introduce personalized medicine applications
+- discuss manipulation of cells under culture conditions
+- describe use of microfluidic cell culture system
+- introduce agents to modulate cell physiology
+- discuss exogenous nucleic acid expression
+- describe nuclear deformation and chromatin changes
+- introduce method of culturing mammalian cells
+- discuss mechanical deformation of cells
+- describe optimization of microchannel design
+- introduce polydimethylsiloxane (PDMS) based microfluidics lab-on-chip
+- describe method for using microfluidics device
+- discuss use of small molecule compounds
+- introduce disruption of intracellular structures
+- describe reprogramming experiments with inhibitors
+- discuss enhancement of iN reprogramming efficiency
+- introduce use of 3D spheroids in microfluidic systems
+- describe enhancement of reprogramming efficiency
+- discuss spatial distribution of reprogrammed cells
+- introduce inhibition of TGF-β/Activin and BMP pathways
+- describe removal of spatial heterogeneity
+- discuss reduction to practice with human neonatal dermal fibroblasts
+- describe expression of neuron-specific β-tubulin III (Tuj1)
+- discuss relative reprogramming efficiency
+- introduce inhibition of TGF-β/Activin/Nodal and BMP pathways
+- discuss enhancement of Tuj1 expression
+
+## EXAMPLES
+
+### Example 1: Transient Nuclear Deformation Primes Epigenetic State and Promotes Cell Reprogramming
+
+- introduce cell reprogramming technologies
+- describe direct reprogramming
+- motivate low efficiency of direct reprogramming
+- introduce epigenetic barrier of heterochromatin
+- discuss roles of transcriptional factors and biochemical factors
+- discuss effects of biophysical factors on cell reprogramming
+- describe mechano-chemical signaling and chromatin changes
+- introduce hypothesis of mechanical perturbation of cell nucleus
+- describe microfluidic device for studying nuclear deformation
+- measure size of mouse fibroblasts and their nuclei
+- fabricate microdevices with different channel widths
+- describe cell viability after passing through microchannels
+- detect cell membrane leakage
+- detect nuclear transport or nuclear membrane leakage
+- observe nuclear blebbing or segregation
+- describe rupture of cell membrane and nuclear envelope
+- assess cell viability after mechanical deformation
+- examine DNA damage after mechanical deformation
+- choose optimal microchannel width and flow rate
+- measure cell viability and channel clogging at various flow rates
+- measure elastic modulus of cells after deformation
+- examine nuclear shape change after deformation
+- describe reprogramming experimental procedure
+- determine timing of mechanical squeezing
+- examine reprogramming efficiency after mechanical deformation
+- monitor expression of neuronal markers
+- detect mRNA expression of Tubb3
+- analyze Tubb3 expression by qPCR
+- determine reprogramming efficiency at various time points
+- characterize derived cells
+- investigate epigenetic changes after nuclear deformation
+- monitor levels of heterochromatin mark H3K9me3
+- examine temporal change in H3K9me3 FRET signal
+- analyze immunostaining of heterochromatin and euchromatin marks
+- investigate effect of nuclear deformation on DNA methylation
+- test role of H3K9me3 in iN conversion
+- test effect of H3K9-specific histone methyltransferase inhibitor
+- test effect of H3K9-specific histone demethylase inhibitor
+- investigate combined effects of suppressing H3K9me3 and DNA methylation
+- introduce nuclear deformation
+- investigate ion channels in mechanotransduction
+- observe nuclear deformation effects on lamin A/C
+- examine lamin A/C phosphorylation
+- analyze lamin B1 behavior
+- investigate H3K9me3 and 5-mC changes
+- examine LADs and nuclear lamina interaction
+- silence lamin A/C to mimic mechanical squeezing
+- analyze iN reprogramming efficiency
+- test mechanical reprogramming on different cell types
+- develop higher-throughput microfluidic device
+- validate device design with fluid flow simulation
+- compare device performance with original device
+- describe microfabrication of microfluidic device
+- detail cell isolation, culture, and reprogramming
+- describe lentiviral preparation and transduction
+- outline cell viability assays
+- describe live and dead assays
+- detail PrestoBlue cell viability reagent assay
+- outline DNA damage assays
+- conclude with significance of findings
+- perform DNA damage assays
+- describe immunofluorescence staining and microscopy
+- treat cells with chemical inhibitors
+- determine role of H3K9 methylation
+- determine involvement of ion channels
+- determine effect of pH on iN reprogramming
+- perform DNA methylation assay
+- perform reverse transcription and qPCR
+- perform lamin a siRNA knockdown
+- perform m6A-tracer transfection
+- describe FRET biosensor
+- analyze epifluorescence images
+- quantify lamin and histone marker intensities
+- perform confocal imaging
+- analyze confocal images
+- introduce cell reprogramming
+- describe lentivirus production
+- detail FRET experiment setup
+- outline GNR LNA probe for mRNA detection
+- describe AFM measurement of cell mechanical property
+- detail Western blotting procedure
+- outline statistical analysis
+- discuss transient nuclear deformation and epigenetic state
+- compare mechanical squeezing with chemical inhibitors
+- discuss nuclear lamina's role in mechanotransduction
+- describe FRET experiments and nuclear deformation
+- discuss microfluidic device development
+- reference cell reprogramming studies
+- reference nuclear mechanotransduction studies
+- reference chromatin regulation studies
+- reference cell engineering studies
+- reference mechanobiology studies
+- reference epigenetic state regulation studies
+- reference cell motility and morphology studies
+- reference nuclear softening studies
+- reference chromatin condensation studies
+- reference histone acetylation studies
+- reference nuclear envelope rupture and repair studies
+- reference cancer cell migration studies
+- reference DNA damage and repair studies
+- reference direct reprogramming of fibroblasts to neurons
+- reference single-cell nanobiosensors for gene expression profiling
+- reference asymmetric cell division studies
+- reference DNA methylation and cellular reprogramming studies
+- reference mechanosensing by the lamina studies
+- reference lamina-associated domains studies
+- reference single-cell dynamics of genome-nuclear lamina interactions
+- reference small-molecule-driven direct reprogramming studies
+- reference coordinated histone modifications studies
+- reference domain organization of human chromosomes studies
+- reference YAP nuclear entry and chromatin accessibility studies
+
+### Example 2: Reduction of Intracellular Tension and Cell Adhesion Promotes Open Chromatin Structure and Enhances Cell Reprogramming
+
+- introduce cell reprogramming
+- importance of cell reprogramming
+- limitations of direct reprogramming strategies
+- role of mechanotransduction in direct reprogramming
+- introduce focal adhesions and cytoskeleton
+- mechanical properties of cells during reprogramming
+- changes in actin cytoskeleton during reprogramming
+- changes in cell stiffness during reprogramming
+- role of Ascl1 in regulating cell mechanical phenotype
+- Ascl1 promotes actin cage-like structure
+- Ascl1 regulates paxillin expression
+- AFM analysis of cell stiffness
+- RNA sequencing analysis of Ascl1-transduced fibroblasts
+- reduction of cytoskeletal tension enhances iN reprogramming
+- effects of disrupting cytoskeleton on iN reprogramming
+- blebbistatin treatment enhances iN conversion
+- optimal level of intracellular tension for iN conversion
+- effects of blebbistatin on Ascl1-induced iN conversion
+- effects of other chemical inhibitors on iN conversion
+- minimum length of time for blebbistatin to elicit an effect
+- effects of blebbistatin during distinct phases of reprogramming
+- maturation and functionality of iN cells derived with blebbistatin
+- electrophysiological analysis of iN cells
+- cytoskeletal disruption modulates fibroblast and neuronal marker expression
+- effects of blebbistatin on cell morphology
+- effects of blebbistatin on focal adhesion assembly
+- repression of mesenchymal phenotype in fibroblasts
+- downregulation of mesenchymal and fibroblast-associated genes
+- induction of neuronal phenotype by blebbistatin
+- upregulation of Ascl1 expression by blebbistatin
+- upregulation of Brn2 and Myt1l expression by blebbistatin
+- reduction of intracellular tension influences iN conversion efficiency
+- cell morphological changes impact nuclear morphology and chromatin architecture
+- reduction of cytoskeletal tension promotes a more open chromatin structure globally
+- reduction of cytoskeletal tension promotes a more open chromatin structure locally
+- introduce iPSC reprogramming
+- postulate cytoskeletal modulation effect
+- perform immunofluorescence analysis
+- analyze histone marks
+- examine chromatin-modifying enzyme activity
+- perform ATAC-seq assay
+- perform ChIP-qPCR assay
+- examine DNA methylation
+- inhibit focal adhesion kinase
+- examine FAK inhibition effect
+- analyze iN cell generation
+- characterize iN cells
+- examine mesenchymal and neuronal marker expression
+- modulate cell adhesions using biomaterials
+- examine biomaterial-mediated reduction in cell adhesions
+- describe fibroblast isolation and culture
+- describe reprogramming protocol
+- describe lentiviral production and cell transduction
+- describe immunofluorescent staining and quantification
+- describe image acquisition and analysis
+- describe quantification of histone intensity
+- describe animal housing and care
+- describe euthanasia and tissue isolation
+- describe fibroblast expansion and passage
+- describe reprogramming medium composition
+- describe doxycycline-induced gene expression
+- perform Quantitative Deformability Cytometry (q-DC)
+- fabricate microfluidic channels
+- capture images of cells during deformation
+- analyze time-dependent shape changes of individual cells
+- determine mechanical stresses applied to individual cells
+- perform Atomic Force Microscopy (AFM)
+- measure cell stiffness at various time points
+- perform Electrophysiology
+- record action potentials
+- record spontaneous EPSCs (sEPSCs)
+- record spontaneous IPSC (sIPSCs)
+- perform off-line analyses of action potential properties
+- perform Quantitative Reverse Transcriptase-Polymerase Chain Reaction (qRT-PCR)
+- isolate RNA from samples
+- perform Chromatin Immunoprecipitation (ChIP)-qPCR
+- fix cells using formaldehyde
+- perform sonication
+- perform RNA Sequencing
+- perform library preparation
+- perform Assay of Transposase Accessible Chromatin Sequencing (ATAC-Seq)
+- introduce cell preparation and ATAC-seq library construction
+- describe transposition reaction and sequencing
+- outline mapping, peak calling, and differential peak analysis
+- detail Western blotting procedure
+- describe histone acetyltransferase, histone deacetylase, histone methyltransferase, histone demethylase, and DNA methyl
+- transferase activity assays
+- outline DNA methylation assay
+- describe microgroove substrate fabrication
+- detail statistical analysis
+- summarize findings on reduction of cytoskeletal tension and cell adhesion
+- discuss regulation of epigenetic state through nuclear enzyme activities
+- describe effects of cytoskeletal tension on mesenchymal genes
+- discuss modulation of cell reprogramming by cell adhesions and ECM
+- introduce references
+- cite Grskovic et al. (2011)
+- cite Cherry and Daley (2012)
+- cite Graf (2011)
+- cite Morris and Daley (2013)
+- cite Vierbuchen et al. (2010)
+- cite Pang et al. (2011)
+- cite Ieda et al. (2010)
+- cite Xu et al. (2015)
+- cite Lu and Yoo (2018)
+- cite Wong et al. (2017)
+- cite Song et al. (2022)
+- cite Martino et al. (2018)
+- cite Muncie and Weaver (2018)
+- cite Shamsan and Odde (2019)
+- cite Stutchbury et al. (2017)
+- cite Fletcher and Mullins (2010)
+- cite Lin et al. (2015)
+- cite Toyoda et al. (2017)
+- cite Clippinger et al. (2019)
+- cite Uhler and Shivashankar (2017)
+- cite Song et al. (2020)
+- cite Limouze et al. (2004)
+- cite Kovics et al. (2004)
+- cite Watanabe et al. (2010)
+
+### Example 3: 3D Spheroid Culture to Increase Cell Reprogramming Efficiency
+
+- introduce 3D spheroid culture
+- describe spheroid culture method
+- analyze Tuj1 expression in spheroids
+- evaluate reprogramming efficiency
+- describe spatial pattern of Tuj1 expression
+- discuss inhibition of TGF-β and BMP signaling
+
+### Example 4: Mechano-Epigenetic Mapping for Guided Gene Activation and Silencing
+
+- describe mechano-epigenetic mapping method
+- illustrate CRISPR-mediated gene activation or silencing
+
+### Example 5: Matrix Stiffness Regulates Epigenetic State and Cell Reprogramming
+
+- introduce matrix stiffness regulation
+- describe cell culture method on PAAm gels
+- analyze cell area and nuclear volume
+- examine cell cycle progression
+- determine reprogramming efficiency
+- describe biphasic enhancement of reprogramming
+- analyze Ascl1 expression
+- characterize derived iN cells
+- describe histone acetylation and chromatin accessibility
+- analyze chromatin immunoprecipitation (ChIP)-qPCR
+- discuss HAT activity and iN reprogramming efficiency
+
+### Example 6: Viscoelasticity of Matrix Regulates Epigenetic State and Cell Reprogramming
+
+- introduce matrix viscoelasticity regulation
+- describe hydrogel fabrication method
+- characterize mechanical properties of hydrogels
+- analyze reprogramming efficiency on hydrogels
+- examine epigenetic changes on viscoelastic matrix
+- analyze HDAC activity
+- discuss mechanistic insights of mechanical cues
+

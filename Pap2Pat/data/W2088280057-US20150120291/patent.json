@@ -1,0 +1,293 @@
+{
+    "id": "US20150120291",
+    "authors": [
+        "Tao Xue",
+        "Junzhao Du",
+        "Hui Liu",
+        "Yuewei Liu",
+        "Wenjing Chen"
+    ],
+    "title": "Scene Recognition Method, Device and Mobile Terminal Based on Ambient Sound",
+    "date": "2013-04-18 00:00:00",
+    "abstract": "The present document provides a scene recognition method and device based on ambient sound and a mobile terminal. The device includes: a sound collection module, a preprocessing module, a feature extraction module, a scene recognition module and a database. The method includes: collecting a sound signal; processing the sound signal into a frequency domain signal; extracting sound feature information from the frequency domain signal; inputting the sound feature information under a preset model, matching a model output result with weight values of sound sample models of scenes, and determining a scene corresponding to the sound feature information. The present document implements locating based on background sound information as the feature of the scene, so that the mobile terminal quickly and correctly recognizes the current scene under the maintaining low-consumption state.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present document relates to the technical field of intelligent terminals, and in particular, to a scene recognition method, device, and mobile terminal based on ambient sound."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to intelligent terminals"
+                    ],
+                    "num_characters": 179,
+                    "outline_medium": [
+                        "relate to intelligent terminals"
+                    ],
+                    "outline_short": [
+                        "relate to intelligent terminals"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND ART",
+                    "paragraphs": [
+                        "Sound recognition technology is widely used in communication systems, for example, applying the sound recognition detection technology in a mobile communication system can improve the traffic processing capacity of the system. In addition, the sound recognition technology is increasingly used in a voice recognition filed, and the technology is already very mature, such as, IBM voice recognition input system ViaVoice, Microsoft voice recognition system SpeechSDK, etc.",
+                        "With more and more smart phones are used in daily life, voice recognition is also well applied in the smart phones, e.g., iphone has issued a voice recognition application \u201cGoogle Mobile App\u201d. Another improvement of that voice search is that accents can be selected, and Google can successfully recognize voices from different regions.",
+                        "Due to the popularity of smart phones, a locating technology is also a hot spot for the application of the smart phone. At present, a scene recognition problem can be solved by making use of antenna-based locating technologies (e.g., WIFI, GSM and GPS) on which study has been widely made. With regard to outdoor locating, GPS has provided very ideal recognition accuracy. However, with regard to indoor locating, there is no ideal and thorough locating solution currently. With the restriction from factors such as internal topology and intense electromagnetic interference inside the building, the antenna signal strength often tends to vary irregularly, thereby making sensing devices unable to perform reasonable location speculation. It is found in study that WIFI signals fluctuate greatly during different periods over a day, and the variations of its strength are not even, and moreover we cannot ensure that the WIFI signals exist in all environments. On the other hand, signals of a base station are more stable at different time periods. However, since the deployment of base stations is not dense enough, there are a lot of difficulties in locating. In addition, such a locating method generally has a high requirement on perfection of infrastructure. However, such costs are undoubtedly high for developing regions. Locating based on GPS, GSM, WIFI signals cannot work in the indoor environment, or has larger locating error, and thus cannot distinguish indoor places geographically close to each other."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce sound recognition technology",
+                        "describe voice recognition applications",
+                        "discuss limitations of antenna-based locating technologies",
+                        "motivate scene recognition problem"
+                    ],
+                    "num_characters": 2326,
+                    "outline_medium": [
+                        "introduce sound recognition technology",
+                        "limitations of current locating technologies"
+                    ],
+                    "outline_short": [
+                        "introduce sound recognition technology"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The technical problem to be solved by the present document is to provide a scene recognition method, device and mobile terminal based on ambient sound, to solve the problem that the mobile terminal cannot recognize the current scene.",
+                        "In order to solve the above technical problem, the present document provides a scene recognition device based on ambient sound, comprising: a sound collection module, a preprocessing module, a feature extraction module, a scene recognition module, and a database; wherein,",
+                        "the sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;",
+                        "the preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;",
+                        "the feature extraction module is configured to extract sound feature information from the frequency domain signal;",
+                        "the database is configured to store weight values of sound sample models of different scenes;",
+                        "the scene recognition module is configured to input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the different scenes, and determine a scene corresponding to the sound feature information.",
+                        "The above device may further have the following characteristic:",
+                        "the scenes refer to space scenes in different sound environments.",
+                        "The above device may further have the following characteristic:",
+                        "the sound collection module, the preprocessing module, the feature extraction module, the scene recognition module, and the database are all located in a mobile terminal.",
+                        "The above device may further have the following characteristic:",
+                        "the sound collection module, the preprocessing module, the feature extraction module, and the scene recognition module are all located in a mobile terminal, and the database is located in a service-side device.",
+                        "The above device may further have the following characteristic:",
+                        "the sound collection module, the preprocessing module, and the feature extraction module are all located in a mobile terminal, the scene recognition module and the database are located in a service-side device;",
+                        "the mobile terminal further comprises a scene recognition control module, which is configured to receive the sound feature information and transmit the sound feature information to the service-side device, and is further configured to receive a recognition result output by the scene recognition module.",
+                        "In order to solve the above technical problem, the present document further provides a mobile terminal, comprising: a sound collection module, a preprocessing module, a feature extraction module, a scene recognition module, and a database; wherein,",
+                        "the sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;",
+                        "the preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;",
+                        "the feature extraction module is configured to extract sound feature information from the frequency domain signal;",
+                        "the database is configured to store weight values of sound sample models of different scenes;",
+                        "the scene recognition module is configured to receive the sound feature information, input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the different scenes, and determine a scene corresponding to the sound feature information.",
+                        "In order to solve the above technical problem, the present document further provides a mobile terminal, comprising: a sound collection module, a preprocessing module, a feature extraction module, and a scene recognition module; wherein,",
+                        "the sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;",
+                        "the preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;",
+                        "the feature extraction module is configured to extract sound feature information from the frequency domain signal;",
+                        "the scene recognition module is configured to receive the sound feature information, and is further configured to receive weight values of sound sample models of scenes from the service-side device, input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the scenes, and determine a scene corresponding to the sound feature information.",
+                        "In order to solve the above technical problem, the present document further provides a mobile terminal, comprising: a sound collection module, a preprocessing module, a feature extraction module, and a recognition control module; wherein,",
+                        "the sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;",
+                        "the preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;",
+                        "the feature extraction module is configured to extract sound feature information from the frequency domain signal;",
+                        "the recognition control module is configured to receive the sound feature information and transmit the sound feature information to a service-side device, and receive a scene recognition result returned by the service-side device.",
+                        "In order to solve the above technical problem, the present document further provides a scene recognition method based on ambient sound, comprising:",
+                        "collecting a sound signal;",
+                        "processing the sound signal into a frequency domain signal;",
+                        "extracting sound feature information from the frequency domain signal;",
+                        "inputting the sound feature information under a preset model, matching a model output result with weight values of sound sample models of scenes, and determining a scene corresponding to the sound feature information.",
+                        "The above method may further have the following characteristic:",
+                        "the scenes refer to space scenes in different sound environments.",
+                        "The present document implements locating based on background sound information as the feature of the scene, so that the mobile terminal quickly and correctly recognizes the current scene under the maintaining low-consumption state. The scene locating of the present document can be complementary to the antenna position locating, to improve their accuracies and improve the performance of the mobile terminal."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce scene recognition method based on ambient sound",
+                        "describe sound collection module",
+                        "describe preprocessing module",
+                        "describe feature extraction module",
+                        "describe scene recognition module",
+                        "describe database",
+                        "define scenes",
+                        "describe sound collection module in mobile terminal",
+                        "describe preprocessing module in mobile terminal",
+                        "describe feature extraction module in mobile terminal",
+                        "describe scene recognition module in mobile terminal",
+                        "describe recognition control module in mobile terminal",
+                        "describe scene recognition method"
+                    ],
+                    "num_characters": 6645,
+                    "outline_medium": [
+                        "solve scene recognition problem",
+                        "provide scene recognition method based on ambient sound",
+                        "describe scene recognition device",
+                        "describe mobile terminal",
+                        "describe scene recognition method",
+                        "highlight advantages of invention"
+                    ],
+                    "outline_short": [
+                        "solve scene recognition problem",
+                        "provide scene recognition method and device",
+                        "recognize scene based on ambient sound"
+                    ]
+                },
+                {
+                    "title": "PREFERRED EMBODIMENTS OF THE INVENTION",
+                    "paragraphs": [
+                        "FIG. 1 illustrates a flow diagram of a sound recognition processing in the related art, in which the sound is recognized through a classifier after splitting the sound and extracting features.",
+                        "A scene recognition method based on ambient sound comprises: collecting a sound signal; processing the sound signal into a frequency domain signal; extracting sound feature information from the frequency domain signal; inputting the sound feature information under a preset model, matching a model output result with weight values of sound sample models of scenes, and determining a scene corresponding to the sound feature information.",
+                        "The scenes refer to space scenes in different sound environments, for example, the scenes refer to one of the following scenes: dining hall, classroom, laboratory, dorm, corridor, badminton court, table tennis court, elevator, meeting room, playground and street.",
+                        "As shown in FIG. 2, a scene recognition device based on ambient sound comprises: a sound collection module (201), a preprocessing module (202), a feature extraction module (203), a scene recognition module (204), and a database (205).",
+                        "The sound collection module (201) is configured to collect a sound signal and transmit the sound signal to the preprocessing module (202);",
+                        "the preprocessing module (202) is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module (203);",
+                        "the feature extraction module (203) is configured to extract sound feature information from the frequency domain signal;",
+                        "the database (205) is configured to store weight values of sound sample models of different scenes; and",
+                        "the scene recognition module (204) is configured to input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the different scenes, and determine a scene corresponding to the sound feature information.",
+                        "The preprocessing module (202) samples the collected sound signals, with the sampling frequency being 8000 Hz and the length of the collected sample being 15 s, and then performs framing operation on this segment of sound sample, wherein each frame comprises 256 sampling points, i.e., each frame has a length of 32 ms. In this way, the initial audio becomes 468 frames having a length of 32 ms. The purpose of framing operation is that: some big or small burst sounds are randomly present in any segment of sound sample, the burst sound has no regulation and is not the sound to be able to represent the characteristic of the scene, and the burst sound causes the sound waveform to present bigger burrs, thereby affecting the accuracy of sound recognition; but, the shorter the time of the audio is, the more stable the audio waveform is. However, if the length of a frame is too short, it will cause the increase of operation costs, i.e., increase of calculation energy consumption and time consumption. This scheme adopts 32 ms as the length of each frame, which achieves the balance between accuracy and calculation costs.",
+                        "The sound feature extracted by the feature extraction module (203) can be Mel-frequency cepstrum coefficient (MFCC), for example, 13-dimensional MFCC coefficient. For example, 468 groups of 13-dimensional feature vectors can be extracted from each segment of 15 s sound sample. After calculating the feature vector of each frame, an arithmetic mean must be taken for these 468 groups of feature vectors. The above dividing each segment of sound sample into frames with the length of 32 ms is for removing the burrs in the sound sample, but only framing each segment of audio cannot clear away the burrs. Therefore, in this scheme, after extracting the feature vector from each frame of audio, the arithmetic mean must be taken for these 468 groups of feature vectors to obtain a unique group of 13-dimensional feature vector. Such a group of feature vectors reduces the influence of burrs in the sample, and correctly represents the characteristic of this segment of scene.",
+                        "A preset model in the present scheme may be a classification model such as neural network, etc.",
+                        "The present scheme uses an algorithm in the mode classification field. This algorithm is divided into two parts, a training part and a recognition part. In the training part, this algorithm uses a training set of a certain scale, and generates several so-called intermediate matrix data sets. In the recognition part, calculation is made using these matrixes and feature vectors extracted from the sound sample to obtain a final result, i.e., recognition result. In the developing process, the training part of this algorithm does not need to be written into the mobile phone system, and the calculation is not needed for each time of recognition, which can greatly reduce the calculation time. The training set used in the recognition algorithm is collected from each scene needed to be recognized, 160 to 200 segments of sound samples need to be collected from each scene, and the feature vector is extracted from each segment of sound sample. The feature vectors from these sound samples, as parameters, are collectively delivered to the training part of the algorithm to finally obtain the intermediate matrixes. These intermediate matrixes are stored in the database and are used for invoking by the recognition part of the algorithm. Since the accuracy of scene recognition needs to be improved constantly, and meanwhile the scenes to be recognized need to be updated constantly, the intermediate matrixes required in the classification recognition algorithm in the present scheme also need to be updated constantly. With the update of the scenes, this technology will have the more powerful timeliness and availability.",
+                        "As shown in FIG. 3, in the embodiment One, the sound collection module (201), the preprocessing module (202), the feature extraction module (203), the scene recognition module (204), and the database (205) are all located in a mobile terminal.",
+                        "As shown in FIG. 4, in the embodiment Two, the sound collection module (201), the preprocessing module (202), the feature extraction module (203), and the scene recognition module (204) are all located in a mobile terminal, and the database (205) is located in a service-side device.",
+                        "As shown in FIG. 5, in the embodiment Three, the sound collection module (201), the preprocessing module (202), and the feature extraction module (203) are all located in a mobile terminal, the scene recognition module (204) and the database (205) are located in a service-side device. The mobile terminal further comprises a scene recognition control module (206), which is configured to receive the sound feature information and transmit the sound feature information to the service-side device, and is further configured to receive a recognition result output by the scene recognition module (204).",
+                        "Description will be made in detail below with reference to specific examples.",
+                        "The present document is developed based on the Android system. A smart phone is selected as a test device. The recognition process comprises the following steps:",
+                        "Step 1, Sound Collection Process",
+                        "The microphone in the smart phone is responsible for collecting sounds, wherein the sampling rate is 8000 Hz and the sampling code is 16 bit, and the length of each segment of sound sample is 15 s.",
+                        "Step 2, Scene Recognition Process",
+                        "During the preprocessing, the framing process is performed to the audio, and the signal is converted from the time domain signal to the frequency domain signal. It is found in the experiment that when the frame length is 256, i.e., the time length is 32 ms, the highest recognition accuracy rate can be obtained. Meanwhile, there are several defective points at the beginning of each segment of audio. Therefore, deleting some sampling points at the very beginning of each segment of audio can ensure that the remaining audio sampling points all can show the characteristic of this audio segment. In order to save more hardware space, once one frame is separated out, this frame, as a parameter, is delivered to the feature extraction function for calculation. In this way, it only needs to store the feature vectors extracted from each frame, without the waste of control for storing the audio of each frame.",
+                        "The step of extracting the feature comprises the following steps.",
+                        "In step 2.1, a fast Fourier transform is executed to convert the time domain signal into the frequency domain signal.",
+                        "\\({{X_{a}\ue8a0(k)} = {\\sum\\limits_{n = 0}^{N - 1}\ue89e{{x\ue8a0(n)}\ue89e\uf74d^{- \\frac{j\ue89e\\; \ue89e2\ue89e\\pi}{N}}}}},{0 \\leq k \\leq N}\\)",
+                        "In this formula, x(n) is an input audio signal, and N is the point number of the Fourier transform.",
+                        "In step 2.2, the arithmetic square is calculated for the spectrum amplitude of the signal, then the power spectrum can be obtained.",
+                        "In step 2.3, as shown in FIG. 6, the power spectrum of the signal is filtered by a group of quarter window filters (24 quarter window filters in total) linearly distributed on a Mel frequency standard. The scope covered by each quarter window filter is approximate to a critical bandwidth of a human's ear, thereby simulating the shelter effect of the human's ear. Wherein, the Mel frequency standard",
+                        "\\({m = {2596\ue89e{\\log_{10}\ue8a0\\left( {1 + \\frac{f}{700}} \\right)}}},\\)",
+                        "the center frequency of the quarter filter is f(y), y=1, 2, . . . , 24, and the frequency response definition of the quarter filter is as below:",
+                        "\\({H_{y}\ue8a0(k)} = \\left\\{ {\\begin{matrix}\n{0,} & {k < {f\ue8a0\\left( {y - 1} \\right)}} \\\\\n{\\frac{2\ue89e\\left( {k - {f\ue8a0\\left( {y - 1} \\right)}} \\right)}{\\left( {{f\ue8a0\\left( {y + 1} \\right)} - {f\ue8a0\\left( {y - 1} \\right)}} \\right)\ue89e\\left( {{f\ue8a0(y)} - {f\ue8a0\\left( {m - 1} \\right)}} \\right)},} & {{f\ue8a0\\left( {y - 1} \\right)} \\leq k \\leq {f\ue8a0(y)}} \\\\\n{\\frac{2\ue89e\\left( {{f\ue8a0\\left( {y + 1} \\right)} - k} \\right)}{\\left( {{f\ue8a0\\left( {y + 1} \\right)} - {f\ue8a0\\left( {y - 1} \\right)}} \\right)\ue89e\\left( {{f\ue8a0\\left( {y + 1} \\right)} - {f\ue8a0(y)}} \\right)},} & {{f\ue8a0(y)} \\leq k \\leq {f\ue8a0\\left( {y + 1} \\right)}} \\\\\n{0,} & {k \\geq {f\ue8a0\\left( {y + 1} \\right)}}\n\\end{matrix},\ue89e{{{wherein}\ue89e\\mspace{14mu} \ue89e{\\sum\\limits_{y = 0}^{23}\ue89e{H_{y}\ue8a0(k)}}} = 1}} \\right.\\)",
+                        "In step 2.4, the logarithm is taken from each power spectrum through the filter, by which a result S(y) approximate to homomorphism conversion can be obtained.",
+                        "\\({{S\ue8a0(y)} = {\\ln \ue8a0\\left( {\\sum\\limits_{k = 0}^{23}\ue89e{{\uf603{X_{a}\ue8a0(k)}\uf604}^{2}\ue89e{H_{y}\ue8a0(k)}}} \\right)}},{0 \\leq y \\leq 24}\\)",
+                        "wherein, Xa(k) is the power spectrum of the audio signal, and Hy (k) is the filter group.",
+                        "In step 2.5, a final feature vector C(n) is obtained respectively through the discrete cosine transform.",
+                        "\\({{C\ue8a0(n)} = {\\sum\\limits_{y = 0}^{23}\ue89e{{S\ue8a0(y)}\ue89e{\\cos \ue8a0\\left( \\frac{\\pi \ue89e\\; \ue89e{n\ue8a0\\left( {y - 0.5} \\right)}}{24} \\right)}}}},{0 \\leq n \\leq 24}\\)",
+                        "wherein, n represents the number of dimensions of the obtained feature vector, the feature vector is set to be 13-dimensional, and then n is set to be 12.",
+                        "In step 2.6, the obtained 13-dimensional feature vector is stored in the memory, and after the feature vector of each frame in this segment of sound sample finishes the calculation, an arithmetic mean is calculated to obtain the feature vector of this segment of audio sample.",
+                        "Step 3, Scene Recognition Process",
+                        "After the feature vector is extracted, this group of 13-dimensional feature vectors, as parameters, is then transmitted to the classification recognition algorithm. A probability neural network structure is adopted (as shown in FIG. 7), wherein, there are d input layer units, n mode layer units and c classification layer units. Each mode layer unit is able to make the inner product of normalized sample connection x and its weight vector, to obtain z=wtx and then map it to exp[(z\u22121)/\u03c32].",
+                        "The recognition classification algorithm has two parts, i.e., the training part and the recognition part.",
+                        "Training Part",
+                        "In step 3.1, the normalized sample x which is participated the training is a unit length, i.e.,",
+                        "\\({{\\sum\\limits_{i = 1}^{d}\ue89ex_{i}^{2}} = 1},\\)",
+                        "and the first normalized sample is placed on the input layer unit.",
+                        "In step 3.2, those connections connecting the input units and the first mode layer unit are initialized as w1=x1. Then, a connection is established from the first mode layer unit to the unit representing the classification to which the x1 belongs in the classification layer. The same process is repeated for each of the remaining mode units, i.e., wk=xk, wherein k=1, 2, 3, L, n.",
+                        "In step 3.3, after step 3.2 is finished, a particular network can be obtained, i.e., the input layer units and the mode layer units are completely connected, and the mode layer units to the classification layer units are coefficient-connected. The kth component of the jth sample is recorded as xjk, the connection weight coefficient from this component to the jth mode layer unit is recorded as wjk, wherein j=1, 2, L, n, k=1, 2, L, d.",
+                        "The matrix w appearing in this algorithm is the intermediate matrix which will be used in the recognition part of the algorithm.",
+                        "The recognition part of the algorithm performs the calculation mainly concentrating on two elements, the first one is so-called net activation netk=wtx, which is used to construct a non-linear function e(net\u22121)\u03c3about netk, wherein, \u03c3 is a self-defined parameter and is set to be 10 in this algorithm. The second one is a judging function gi(x) calculated using e(net\u22121)\u03c3, and the scene of the sound feature information input into the neural network by calculating",
+                        "\\(\\max\\limits_{i}\ue89e\\; \ue89e{g_{i}\ue8a0(x)}\\)",
+                        "at the end of the algorithm.",
+                        "The present document implements locating based on background sound information as the feature of the scene, so that the mobile terminal quickly and correctly recognizes the current scene under the maintaining low-consumption state. The scene locating of the present document can be complementary to the antenna position locating, to improve their accuracies and improve the performance of the mobile terminal.",
+                        "It should be noted that the embodiments and features in the embodiments in the present document can be arbitrarily combined with each other without conflict.",
+                        "Of course, the present document may have many other embodiments, and a person having ordinary skill in the art can make various corresponding modifications and transformations according to the present document without departing from the spirit and essence of the present document. However, these corresponding modifications and transformations shall all fall into the protection scope of the appending claims of the present document.",
+                        "A person having ordinary skill in the art can understand that all of or part of the steps of the above method may be implemented by instructing related hardware with a program which may be stored in a computer-readable medium, such as a read-only memory, a magnetic disk or an optical disk. Optionally, all of or part of the steps of the above embodiments may also be implemented by using one or more integrated circuits. Correspondingly, each module/unit in the above embodiments may be implemented in the form of hardware, or in the form of software functional modules. The present document is not limited to any particular form of combination of hardware and software."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "illustrate sound recognition processing",
+                        "describe scene recognition method",
+                        "describe sound collection module",
+                        "describe preprocessing module",
+                        "describe feature extraction module",
+                        "describe scene recognition module",
+                        "describe database",
+                        "describe sampling process",
+                        "describe framing operation",
+                        "describe feature extraction process",
+                        "describe classification model",
+                        "describe training part of algorithm",
+                        "describe recognition part of algorithm",
+                        "describe embodiment One",
+                        "describe embodiment Two",
+                        "describe embodiment Three",
+                        "describe scene recognition control module",
+                        "describe sound collection process",
+                        "describe scene recognition process",
+                        "describe feature extraction process",
+                        "describe fast Fourier transform",
+                        "describe power spectrum calculation",
+                        "describe Mel frequency standard",
+                        "describe quarter window filters",
+                        "describe logarithm calculation",
+                        "describe discrete cosine transform",
+                        "describe feature vector calculation",
+                        "describe probability neural network structure",
+                        "describe training part of algorithm",
+                        "describe recognition part of algorithm"
+                    ],
+                    "num_characters": 15278,
+                    "outline_medium": [
+                        "illustrate sound recognition processing",
+                        "describe scene recognition method",
+                        "describe sound collection module",
+                        "describe preprocessing module",
+                        "describe feature extraction module",
+                        "describe scene recognition module",
+                        "describe database",
+                        "describe framing operation",
+                        "describe feature extraction",
+                        "describe classification model",
+                        "describe algorithm",
+                        "describe training part",
+                        "describe recognition part",
+                        "describe embodiment one",
+                        "describe embodiment two and three"
+                    ],
+                    "outline_short": [
+                        "illustrate sound recognition processing",
+                        "describe scene recognition method",
+                        "detail preprocessing module",
+                        "extract sound feature information",
+                        "describe classification recognition algorithm",
+                        "illustrate neural network structure",
+                        "describe training and recognition parts"
+                    ]
+                },
+                {
+                    "title": "INDUSTRIAL APPLICABILITY",
+                    "paragraphs": [
+                        "The present document implements locating based on background sound information as the feature of the scene, so that the mobile terminal quickly and correctly recognizes the current scene under the maintaining low-consumption state. The scene locating of the present document can be complementary to the antenna position locating, to improve the performance of the mobile terminal."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe industrial applicability of scene locating"
+                    ],
+                    "num_characters": 380,
+                    "outline_medium": [
+                        "highlight industrial applicability"
+                    ],
+                    "outline_short": [
+                        "improve mobile terminal performance"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A scene recognition device based on ambient sound, comprising: a sound collection module, a preprocessing module, a feature extraction module, a scene recognition module, and a database; wherein,\nthe sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;\nthe preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;\nthe feature extraction module is configured to extract sound feature information from the frequency domain signal;\nthe database is configured to store weight values of sound sample models of different scenes;\nthe scene recognition module is configured to input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the different scenes, and determine a scene corresponding to the sound feature information.",
+        "2. The device according to claim 1, wherein,\nthe scenes refer to space scenes in different sound environments.",
+        "3. The device according to claim 1, wherein,\nthe sound collection module, the preprocessing module, the feature extraction module, the scene recognition module, and the database are all located in a mobile terminal.",
+        "4. The device according to claim 1, wherein,\nthe sound collection module, the preprocessing module, the feature extraction module, and the scene recognition module are all located in a mobile terminal, and the database is located in a service-side device.",
+        "5. The device according to claim 1, wherein,\nthe sound collection module, the preprocessing module, and the feature extraction module are all located in a mobile terminal, the scene recognition module and the database are located in a service-side device;\nthe mobile terminal further comprises a scene recognition control module, which is configured to receive the sound feature information and transmit the sound feature information to the service-side device, and is further configured to receive a recognition result output by the scene recognition module.",
+        "6. (canceled)",
+        "7. (canceled)",
+        "8. (canceled)",
+        "9. A scene recognition method based on ambient sound, comprising:\ncollecting a sound signal;\nprocessing the sound signal into a frequency domain signal;\nextracting sound feature information from the frequency domain signal;\ninputting the sound feature information under a preset model, matching a model output result with weight values of sound sample models of scenes, and determining a scene corresponding to the sound feature information.",
+        "10. The method according to claim 9, wherein,\nthe scenes refer to space scenes in different sound environments.",
+        "11. A mobile terminal, comprising: a sound collection module, a preprocessing module, a feature extraction module, and a processing module; wherein,\nthe sound collection module is configured to collect a sound signal and transmit the sound signal to the preprocessing module;\nthe preprocessing module is configured to process the sound signal into a frequency domain signal and transmit the frequency domain signal to the feature extraction module;\nthe feature extraction module is configured to extract sound feature information from the frequency domain signal; and\nthe processing module is configured to receive the sound feature information and obtain a scene corresponding to the sound feature information.",
+        "12. The mobile terminal according to claim 11, wherein the processing module comprises a recognition control module, which is configured to receive the sound feature information and transmit the sound feature information to a service-side device, and receive a scene recognition result returned by the service-side device.",
+        "13. The mobile terminal according to claim 11, wherein the processing module comprises a scene recognition module, which is configured to receive the sound feature information, and is further configured to receive weight values of sound sample models of scenes from the service-side device, input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the scenes, and determine a scene corresponding to the sound feature information.",
+        "14. The mobile terminal according to claim 11, wherein the processing module comprises a scene recognition module and a database; wherein,\nthe database is configured to store weight values of sound sample models of different scenes; and\nthe scene recognition module is configured to receive the sound feature information, input the sound feature information under a preset model, match a model output result with the weight values of the sound sample models of the different scenes, and determine a scene corresponding to the sound feature information."
+    ]
+}

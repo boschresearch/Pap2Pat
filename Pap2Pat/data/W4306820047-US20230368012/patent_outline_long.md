@@ -1,0 +1,207 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce object recognition
+- describe limitations of digital ANNs
+- introduce optical neural networks (ONNs)
+- highlight challenges of ONNs
+
+## SUMMARY
+
+- introduce target recognition system
+- describe system components
+- specify light wave processing
+- describe target types
+- specify wavelength range
+- describe power supply and speed
+- describe target recognition
+- describe meta-unit materials
+- describe meta-unit symmetries
+- describe output plane and detection zones
+- describe target recognition methods
+
+## DETAILED DESCRIPTION
+
+- define technical terms
+- provide definitions for "about" and "approximately"
+- describe system for processing light
+- introduce meta-units and metasurface
+- explain spatial and spectral control of light
+- define "coupled" and describe connection methods
+- describe system for recognizing targets
+- introduce diffractive optical neural network (ONN)
+- describe passive and power-free operation
+- describe transparent substrate options
+- introduce passive dielectric materials
+- describe actively tunable materials
+- describe patterning meta-units on substrate
+- introduce isotropic and birefringent libraries
+- describe controlling optical amplitude and phase
+- describe engineering optical dispersion
+- introduce output plane and detection zones
+- describe concentrating light intensity
+- describe modifying detection zone locations
+- describe recognizing objects by processing light waves
+- describe forming diffractive ONN
+- describe recognizing hand-written digits and letters
+- describe recognizing facial photos
+- introduce double-layered metasurface
+- describe handling tasks with enhanced expressive power
+- describe translating images into low-dimensional representations
+- describe evaluating similarity between images
+- introduce additional metasurfaces
+- describe bypassing digitalization for security
+- describe method for processing light
+- describe training diffractive neural network
+- describe iterative training process
+- describe improving robustness against experimental errors
+- describe converting light into optical barcode
+- describe choosing configuration for target recognition accuracy
+
+### EXAMPLES
+
+- introduce metasurface smart glass for object recognition
+- describe metasurface composition and functionality
+- explain optical wavefront processing by metasurface
+- illustrate object recognition mechanism
+- describe training process for metasurface smart glass
+- introduce experimental setup for object recognition
+- describe photomask creation for input objects
+- explain optical setup for object recognition
+- describe metasurface fabrication process
+- show phase responses of meta-unit libraries
+- test polarization-multiplexing smart glasses
+- recognize hand-written digits using single-layered metasurface
+- show trained phase modulation for digit recognition
+- implement metasurface using optically isotropic meta-units
+- show examples of digit classification
+- compare experimental and theoretical results for digit recognition
+- recognize 10 classes of hand-written digits using single-layered metasurface
+- show trained phase modulation for 10-class digit recognition
+- implement metasurface using optically isotropic meta-units
+- show examples of 10-class digit classification
+- compare experimental and theoretical results for 10-class digit recognition
+- recognize hand-written digits using polarization-multiplexing smart glasses
+- show trained phase modulation for polarization-multiplexing digit recognition
+- implement metasurface using birefringent meta-units
+- show examples of polarization-multiplexing digit classification
+- compare experimental and theoretical results for polarization-multiplexing digit recognition
+- recognize typed alphabetical letters and typographic styles using polarization-multiplexing smart glasses
+- show trained phase modulation for letter and style recognition
+- implement metasurface using birefringent meta-units
+- show examples of letter and style classification
+- compare experimental and theoretical results for letter and style recognition
+- introduce facial verification using double-layered metasurface smart glass
+- describe working mechanism of metasurface doublet
+- show example human face images used in training and testing
+- show trained phase modulations of metasurface doublet
+- evaluate facial verification accuracy
+- compare results with digital ANN
+- show examples of facial verification
+- describe limitations of single-layered metasurface smart glasses
+- discuss advantages of metasurface smart glasses over digital ANNs
+- discuss potential applications of metasurface smart glasses
+- describe future directions for metasurface smart glass development
+- discuss challenges in scaling up metasurface smart glasses
+- describe potential solutions to scaling challenges
+- summarize benefits of metasurface smart glasses
+- conclude with potential impact of metasurface smart glasses
+- introduce metasurface ONN robustness
+- motivate inter-zone contrast
+- describe ONN expressive power
+- introduce width and depth increase
+- describe polarization multiplexing
+- describe phase-amplitude metasurface holograms
+- describe wavelength-multiplexing
+- describe array of distinct metasurfaces
+- summarize ONN advantages
+- introduce advanced sensors
+- describe ONN compactness
+- describe ONN energy efficiency
+- describe ONN computing speed
+- describe ONN accuracy
+- describe ONN data security
+- introduce digital ANN limitations
+- describe ONN advantages over digital ANNs
+- describe ONN design process
+- describe forward calculation process
+- describe backward calculation process
+- describe strategies for robustness
+- introduce experimental results
+- describe recognition of handwritten digits
+- describe metasurface device fabrication
+- describe recognition results
+- describe polarization multiplexing example
+- describe handwritten digit classification task
+- describe human facial verification task
+- describe error rate diagram
+- introduce facial image verification dataset
+- describe ONN design parameters
+- describe metasurface doublet design
+- describe optical barcode size
+- describe loss function design
+- describe partial facial coverage effect
+- describe facial photo examples
+- describe verification accuracy results
+- describe separation distance effect
+- describe relative size effect
+- describe substrate thickness effect
+- introduce one-layer metasurface ONN
+- describe design and performance of one-layer metasurface ONN
+- illustrate verification process with examples
+- explain training process and optimization of metasurface design
+- define barcode calculation and Euclidean distance
+- introduce loss function and its design
+- discuss performance of one-layer metasurface ONN
+- introduce metasurface doublet ONN
+- describe design and performance of metasurface doublet ONN
+- illustrate verification process with examples
+- compare performance of one-layer and metasurface doublet ONNs
+- discuss robustness of metasurface doublet design against experimental errors
+- discuss robustness of metasurface doublet design against wavelength variation
+- introduce concept of optimal barcode size
+- investigate relationship between verification accuracy and barcode size
+- show error rate diagrams for different barcode sizes
+- discuss optimal barcode size for one-layer ONN
+- show facial verification examples for one-layer ONNs
+- assess ONNs based on metasurface doublets
+- discuss optimal barcode size for metasurface doublet ONNs
+- show error rate diagrams for different barcode sizes
+- discuss performance of metasurface doublet ONNs
+- show facial verification examples for metasurface doublet ONNs
+- summarize results of one-layer and metasurface doublet ONNs
+- conclude with optimal barcode sizes for both designs
+- introduce optical neural networks (ONNs)
+- describe ONN design with metasurface
+- explain optical scattering pattern concentration
+- define loss function for training ONN
+- show results of ONN with different weights
+- compare ONN designs with different degrees of concentration
+- discuss effect of partial facial coverage on verification accuracy
+- describe ONN design for verifying photos with partial facial coverage
+- show error rate diagram for ONN with partial facial coverage
+- show trained phase distributions for ONN with partial facial coverage
+- show examples of correct facial verification using ONN
+- describe ONN design for verifying facial photos without facial cover
+- show error rate diagram for ONN without facial cover
+- show trained phase distributions for ONN without facial cover
+- discuss classification of optically incoherent images
+- describe ONN using parallel array of metasurfaces
+- show design for classifying incoherent images
+- show amplitude masks of metasurfaces for recognizing handwritten digits
+- show confusion matrix for recognizing handwritten digits
+- describe generation of optically coherent facial images
+- show transparency-based method for generating coherent images
+- show LCD-based method for generating coherent images
+- show optical setup for ONN
+- show scanning electron micrographs of fabricated metasurfaces
+- describe advantages of ONNs over digital ANNs
+- estimate computing time of ONN
+- estimate power consumption of ONN
+- describe system for developing and validating ONN designs
+- discuss accuracy of ONNs for verifying optically coherent facial images
+- discuss strategy for classifying optically incoherent images
+- describe benefits of ONNs over digital ANNs
+- discuss scope of disclosed subject matter
+

@@ -1,0 +1,339 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce complement system
+- describe C3 and its role
+- explain C3b and its functions
+- discuss CRIg and its identification
+- describe C3b:CRIg complex
+- explain alternative pathway of complement
+- discuss regulators of complement system
+- summarize recent findings on C3 and C3c
+- highlight importance of CRIg and C3b
+
+## SUMMARY OF THE INVENTION
+
+- introduce crystal structure of CRIg
+- describe crystal structure of C3b:CRIg complex
+- explain significance of C3b binding region
+- define native sequence CRIg polypeptide
+- specify cell constants of CRIg crystal
+- describe functional fragment of CRIg
+- specify resolution of X-ray diffraction
+- introduce crystalline form of CRIg:C3b complex
+- specify cell constants of CRIg:C3b complex
+- describe functional fragment of CRIg in complex
+- specify resolution of X-ray diffraction of complex
+- introduce crystalline form of CRIg:C3c complex
+- specify cell constants of CRIg:C3c complex
+- describe application of crystal structures
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+
+### Definitions
+
+- define technical terms
+- introduce CRIg and its synonyms
+- define native sequence CRIg
+- specify native sequence CRIg polypeptides
+- define CRIg variant
+- specify CRIg variant requirements
+- define extracellular domain (ECD)
+- specify ECD composition
+- define percent amino acid sequence identity
+- explain alignment for sequence identity
+- define percent nucleic acid sequence identity
+- explain alignment for nucleic acid sequence identity
+- define isolated nucleic acid molecule
+- define isolated CRIg polypeptide-encoding nucleic acid molecule
+- introduce complement-associated disease
+- specify examples of complement-associated diseases
+- define complement-associated eye condition
+- specify examples of complement-associated eye conditions
+- define inflammatory disease
+- define T-cell mediated disease
+- introduce immune-related and inflammatory diseases
+- specify examples of immune-related and inflammatory diseases
+- specify examples of autoimmune diseases
+- specify examples of demyelinating diseases
+- specify examples of hepatobiliary diseases
+- specify examples of inflammatory and fibrotic lung diseases
+- specify examples of autoimmune or immune-mediated skin diseases
+- specify examples of allergic diseases of the lung
+- specify examples of transplantation associated diseases
+- define tumor
+- define cancer
+- define treatment
+- define pathology
+- define mammal
+- define administration
+- define cytokine
+- define therapeutically effective amount
+- define control sequences
+- define operably linked
+- define stringency
+- define stringent conditions
+- define moderately stringent conditions
+- define epitope tagged
+- define active
+- describe examples of cancer
+- describe examples of cytokines
+- describe examples of control sequences
+- describe examples of stringency conditions
+- describe biological activity of CRIg polypeptides
+- define biological activity
+- define CRIg agonist
+- define antagonist
+- describe suitable agonist or antagonist molecules
+- define small molecule
+- define antibody
+- describe antibody structure
+- define native antibodies and native immunoglobulins
+- describe variable domains
+- describe framework regions
+- describe complementarity-determining regions
+- define antibody fragments
+- describe Fab fragments
+- describe F(ab')2 fragments
+- describe Fv fragments
+- describe light chains
+- describe immunoglobulin classes
+- define monoclonal antibody
+- describe monoclonal antibody production
+- describe chimeric antibodies
+- describe humanized antibodies
+- describe single-chain Fv antibody fragments
+- describe diabodies
+- define isolated polypeptide
+- describe purification methods
+- define label
+- describe solid phase
+- define liposome
+- describe immunoadhesin
+- define chronic administration
+- define intermittent administration
+- describe administration in combination
+- define subject
+- define mammal
+- define effective amount
+
+### MODES OF CARRYING OUT THE INVENTION
+
+- employ conventional techniques of molecular biology
+- explain techniques fully in literature
+- introduce crystal structure of CRIg and C3b:CRIg and C3c complexes
+- determine three-dimensional structure of polypeptide
+- employ x-ray crystallography
+- require high-quality crystals
+- prepare crystalline proteins and polypeptides
+- crystallize polypeptides to size and clarity
+- obtain crystals of sufficient size and resolution
+- provide structural information
+- provide other advantages of crystalline polypeptides
+- further purify polypeptide
+- satisfy classical criteria for homogeneity
+- provide unparalleled purification quality
+- remove impurities
+- stabilize at ambient temperatures
+- free of protease contamination
+- useful as pharmaceutical preparations
+- describe conformational changes upon C3 activation
+- define binding sites of complement receptor CRIg
+- examine consequences of interaction for proteolytic activity
+- provide CRIg crystals with specific dimensions
+- provide structural coordinates of CRIg crystals
+- describe crystal structure of C3b:CRIg complex
+- describe crystal structure of C3c:CRIg complex
+- describe β-chain of C3b
+- describe α-chain of C3b
+- describe conformational change upon activation
+- describe binding site for CRIg
+- describe binding interface between CRIg and C3c or C3b
+- design, prepare, and screen CRIg agonists and antagonists
+- identify CRIg agonists for treatment of complement associated diseases
+- describe immunoadhesins
+- describe peptide mimetics
+- describe non-peptide small organic molecules
+- describe agonist antibodies
+- facilitate screening and identification of CRIg agonists
+- describe protective groups for carboxyl functional group
+- describe protection of specific amino acids
+- describe sources of blocked amino acids
+- describe peptide cleavage from solid support
+- describe deprotection of side chain functional groups
+- describe purification of peptide
+- describe application of CRIg antagonists in immunoadjuvant therapy
+- describe use of CRIg antagonists in tumor treatment
+- describe macrophages in tumor eradication
+- describe use of antibodies to block CRIg
+- describe types of antibodies
+- describe preparation of monoclonal antibodies
+- describe immunizing agent
+- describe fusion of lymphocytes with immortalized cell line
+- describe selection of hybridoma cells
+- describe assay for monoclonal antibodies
+- describe determination of binding affinity
+- describe subcloning of hybridoma cells
+- describe purification of monoclonal antibodies
+- describe recombinant DNA methods for making monoclonal antibodies
+- describe modification of DNA encoding monoclonal antibodies
+- describe expression of monoclonal antibodies in host cells
+- describe preparation of monovalent antibodies
+- describe humanized antibodies
+- describe humanization of non-human antibodies
+- describe preparation of human antibodies
+- describe transgenic animals for human antibody production
+- describe bispecific antibodies
+- describe preparation of bispecific antibodies
+- describe heteroconjugate antibodies
+- describe modification of antibody effector function
+- describe introduction of cysteine residue in Fc region
+- describe homodimeric antibodies with enhanced anti-tumor activity
+- describe immunoconjugates with cytotoxic agents
+- describe chemotherapeutic agents
+- describe enzymatically active toxins
+- describe radioactive isotopes
+- describe bifunctional protein coupling agents
+- describe conjugation of antibody and cytotoxic agent
+- describe preparation of ricin immunotoxin
+- describe conjugation of antibody to receptor
+- outline tissue pretargeting method
+- introduce CRIg and its agonists/antagonists
+- describe in vitro and in vivo assays for CRIg
+- highlight utility of CRIg in preventing/treating complement-associated diseases
+- list examples of complement-associated diseases
+- describe age-related macular degeneration (AMD)
+- explain non-exudative and exudative forms of AMD
+- highlight role of complement components in AMD
+- describe category 3 and category 4 high risk AMD
+- outline utility of CRIg in treating high risk AMD
+- list examples of inflammatory conditions
+- describe systemic lupus erythematosus
+- outline pathogenesis of systemic lupus erythematosus
+- describe rheumatoid arthritis (RA)
+- outline pathogenesis of RA
+- describe juvenile chronic arthritis
+- outline sub-classification of juvenile chronic arthritis
+- describe spondyloarthropathies
+- outline common features of spondyloarthropathies
+- describe systemic sclerosis (scleroderma)
+- outline pathogenesis of systemic sclerosis
+- describe idiopathic inflammatory myopathies
+- outline muscle injury/inflammation in idiopathic inflammatory myopathies
+- describe Sjögren's syndrome
+- outline pathogenesis of Sjögren's syndrome
+- describe systemic vasculitis
+- outline pathogenesis of systemic vasculitis
+- describe sarcoidosis
+- outline pathogenesis of sarcoidosis
+- describe autoimmune hemolytic anemia
+- outline pathogenesis of autoimmune hemolytic anemia
+- describe autoimmune thrombocytopenia
+- outline pathogenesis of autoimmune thrombocytopenia
+- describe thyroiditis
+- outline pathogenesis of thyroiditis
+- outline therapeutic uses of CRIg
+- introduce animal models for disease testing
+- describe collagen-induced arthritis model
+- describe antibody-mediated arthritis model
+- describe transgenic animal models
+- describe psoriasis animal models
+- describe xenotransplantation models
+- describe recombinant animal models
+- describe techniques for producing transgenic animals
+- describe monitoring transgene expression
+- describe examining animals for immune disease pathology
+- describe blocking experiments
+- describe constructing "knock out" animals
+- describe characterizing "knock out" animals
+- describe asthma animal models
+- describe contact hypersensitivity model
+- describe graft-versus-host disease models
+- describe skin allograft rejection models
+- describe transplant rejection models
+- describe delayed type hypersensitivity models
+- describe experimental autoimmune encephalomyelitis models
+- describe age-related macular degeneration models
+- describe myocardial ischemia-reperfusion models
+- describe diabetic retinopathy models
+- describe membranoproliferative glomerulonephritis models
+- introduce pharmaceutical compositions
+- describe formulation of pharmaceutical compositions
+- describe lipofections and liposomes
+- describe microcapsules and colloidal drug delivery systems
+- describe sustained-release preparations
+- describe semipermeable matrices
+- describe hydrogels and copolymers
+- describe stabilization strategies
+- introduce examples
+- describe examples
+- describe literature references
+- incorporate patent and literature references
+
+### Example 1
+
+- describe production and purification of mature human CRIg protein
+- describe crystallization of CRIg
+- describe data collection, structure solution and refinement of CRIg
+- summarize structure determination of CRIg
+- describe overall structure of C3b
+- describe conformational changes upon C3 activation
+- describe movement of CUB and TED modules
+- describe conformational changes of α'NT domain
+- describe potential binding sites for receptors and regulators
+- describe differences between C3 and C3b structures
+- describe CUB and TED modules in C3b
+- describe interaction between R80 and TED domain
+- describe conformation of TED in C3b
+- describe binding of CRIg to β-chain of C3b and C3c
+- describe N-terminal domain of CRIg
+- describe IgV family of immunoglobulin-like domains
+- describe disulfide bond in CRIg domain
+- describe arrangement of contacting domains in CRIg complexes
+- describe affinity of CRIg for C3b and C3c
+- describe binding site for CRIg on C3b
+- describe binding interface between CRIg and C3c or C3b
+- describe role of MG3 domain in gating CRIg binding
+- describe rotation of MG3 in C3b
+- describe movement of helical section in LNK region
+- describe importance of binding interface revealed by structural complex
+- summarize binding parameters in Table 1
+
+### CRIg Variants
+
+- describe design and production of CRIg mutants
+- describe binding studies using CRIg mutants
+
+### Example 3
+
+- describe inhibition of alternative pathway of complement by CRIg
+- describe selective inhibition of alternative pathway by CRIg
+- describe molecular mechanisms of CRIg inhibition of convertase
+
+### Example 4
+
+- introduce arthritis model
+- describe collagen-induced arthritis method
+- outline antibody-induced arthritis method
+- detail bone volume measurement and histological examination
+- describe cytokine concentration measurement in arthritic hind paws
+- outline ELISA analysis for cytokine concentration
+- present results of CRIg treatment on arthritis
+- show CRIg inhibition of complement activation
+- demonstrate CRIg binding to convertases locally
+- discuss therapeutic potential of CRIg
+
+### Example 5
+
+- describe decay acceleration assays
+- outline C3b-C4b and C3b-C3b dimer preparation
+- detail binding and competition assays
+- present results of CRIg binding to C3b-C4b and C3b-C3b
+- show CRIg blocking of C5 binding to C3b-C4b and C3b-C3b
+- discuss mechanism of CRIg inhibition of AP complement activation
+- describe CRIg interference with C3b function
+- outline CRIg effect on C5 convertase activity
+- present results of CRIg inhibition of C5 convertase
+- discuss steric or allosteric inhibition of C5 binding to C3b by CRIg
+

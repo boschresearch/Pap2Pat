@@ -1,0 +1,28 @@
+# DESCRIPTION
+
+## RELATED APPLICATION INFORMATION
+
+## FIELD OF THE DISCLOSURE
+
+## BACKGROUND
+
+## SUMMARY OF THE DISCLOSURE
+
+## DETAILED DESCRIPTION OF THE DISCLOSURE
+
+### Definitions
+
+### The Duplex
+
+### Mismatches
+
+### Utility
+
+## EXAMPLES SECTION
+
+### Example 1
+
+### Example 2
+
+### Example 3
+

@@ -1,0 +1,280 @@
+# Introduction
+
+Grease has widespread application in machinery components such as rolling element bearings, pin bushings and journal bearings [1][2][3][4][5][6][7], gears [8][9][10], slide-ways [11,12], and the like. In these applications, grease composition changes with time, degrading its performance. As a result, the efficiency of the machine deteriorates to the extent that, eventually, the grease can no longer adequately protect the surfaces, at which point failure becomes imminent. To avoid forced shut down, machine operators are required to periodically inspect the health of the grease and replenish or replace it, as deemed necessary.
+
+Grease degradation occurs due to physical changes, chemical changes, or a combination thereof [13][14][15]. Physical degradation occurs due to bleed-off and/or evaporation of base oil and contamination by particles and/or water. This type of degradation primarily prevails during the shearing of greases below 50 • C. On the other hand, chemical degradation is a result of oxidation of the base oil, or depletion of the additives, occurring at temperatures higher than 50 • C. In general, grease is more prone to physical degradation at high operating speed (i.e., high shearing rate), while chemical degradation occurs at high operating temperatures or during long-term storage [15]. The focus of the present work is on assessing the degradation of grease due to physical change.
+
+The industry typically measures the physical changes in grease by evaluating its consistency through the worked penetration test provided in the American Society for Testing and Materials (ASTM) standard D217 [16]. In this test, a cone of standard shape and weight is released to fall into a cup of grease, after which the depth of penetration Lubricants 2021, 9, 11 2 of 14 into the sample is recorded. The larger the penetration value, the lower is the consistency, and vice versa. ASTM D217, however, requires a large amount of grease, which is not practical when trying to assess the consistency of small amounts of grease taken from roller element bearings or other lube points. To overcome this complication, Rezasoltani and Khonsari [17] employed a rheometer for assessing grease degradation by monitoring the change in the rheological properties and correlating it to the mechanical degradation of the grease. The mechanical degradation was determined by squeezing the grease between two parallel plates and measuring the difference in the plate position after 60 s. The mechanical degradation of the grease can also be determined in a rheometer by measuring the yield stress, zero viscosity, cross-over stress, etc.
+
+Lijesh and Khonsari [18] extended the approach proposed by Rezasoltani and Khonsari [17] for developing a predictive model for determining the degradation of grease from their operating NLGI grade and thereafter estimating their remaining useful life. Specifically, they based their degradation assessment on a relationship between the change in the grease consistency and entropy generation. For example, the drop in the consistency of a pristine grease of NLGI grade 2 to NLGI grade 1 or 0 can be considered an indication of the reduction of performance and the necessity for re-lubrication. Testing via a rheometer requires far less grease compared to D217; however, an expensive rheometer and appropriate technical expertise are required, making it unaffordable for many industries.
+
+Lijesh et al. [19] very recently developed a unique approach to quantify the water repellant properties of grease by measuring the contact angle of a droplet of water on the surface of a grease sample. In this method, a small quantity of grease is spread over a surface, a water droplet is dropped on it, and the contact angle of the water droplet is measured. The contact angle values are dependent on the type and composition of the grease, i.e., thickener, base oil, and additives. Thus, we hypothesize that the degradation of grease can also be effectively characterized using the contact angle approach. The immediate advantage of this approach is that only a small quantity of grease is needed. Ideally, a portable instrument can be built for testing grease performance in the field [20,21].
+
+To validate the hypothesis, experiments were performed by degrading grease in a grease worker and measuring the contact angle after periodic intervals. In the present work, the evaluation was performed for three types of greases. The change in the contact angle values after a different number of strokes was considered for evaluating the degradation characteristics of the grease. To corroborate the findings, the same greases were also tested in a rheometer. To gain further confidence, two of the greases rendering higher and lower variation in contact angle with time were tested for tribological performance in a tribometer.
+
+The outline of this paper is as follows. Section 2 provides the details of the instruments used for shearing grease, i.e., a grease worker for measuring the rheological properties and a rheometer for measuring contact angles. Section 3 is devoted to the presentation of results, followed by a discussion in Section 4. In Section 5, summary and concluding remarks are provided.
+
+# Materials and Methods
+
+Table 1 shows the list of eight commercially available greases considered for the present investigation. It includes the base oil, the type of thickener, the color, and NLGI grades of each grease. 
+
+## Grease Worker
+
+The grease was degraded by shearing in the grease worker rig shown in Figure 1. This rig contained a 2 hp gear reduction motor, plunger assembly, a grease cup, cover, and an electrical counter. The plunger assembly consisted of a handle, a shaft, and a perforated plate. The handle had an oval shape slot to convert the rotary motion of the motor to linear-reciprocating motion. The number of strokes was counted using an electric counter. The shearing action was induced in grease by reciprocating the handle and shaft inside the grease cup and forcing grease to pass through a series of holes in the plunger.
+
+## Grease Worker
+
+The grease was degraded by shearing in the grease worker rig shown in Figure 1. This rig contained a 2 hp gear reduction motor, plunger assembly, a grease cup, cover, and an electrical counter. The plunger assembly consisted of a handle, a shaft, and a perforated plate. The handle had an oval shape slot to convert the rotary motion of the motor to linear-reciprocating motion. The number of strokes was counted using an electric counter. The shearing action was induced in grease by reciprocating the handle and shaft inside the grease cup and forcing grease to pass through a series of holes in the plunger.
+
+Grease samples of 30 g by weight were sheared in the grease cup at 1 s -1 shear rate at room temperature (25 °C). The grease from the cup was then used for evaluation under three cases: Case 1: 10,000 strokes, Case 2: after 86,400 strokes (i.e., after 24 h), and Case 3: after 172,800 strokes (i.e., after 48 h). Measurements of grease samples were performed using a digital scale with an accuracy of 0.1 mg. The testing conditions were selected such that the grease sheared enough to show considerable degradation within the cases. 
+
+## Water Droplet Analyzer
+
+The drop shape analyzer (Krüss, Hamburg, Germany) shown in Figure 2 was used to determine the contact angle of the water droplets on the grease surface. This setup consisted of a camera (IDS UI-5480CP-M-GL GigE camera) and adjustable lens (Thorlabs AC254-075-A-ML Lens) through which the water droplet on grease sample was analyzed. Using an adjustable screw, the height of the sample stage was adjusted such that the water droplet was in line with the lens height. The angle of the lens was further adjusted by an alignment screw, as needed. The apparatus provided a monochromatic blue light that Grease samples of 30 g by weight were sheared in the grease cup at 1 s -1 shear rate at room temperature (25 • C). The grease from the cup was then used for evaluation under three cases: Case 1: 10,000 strokes, Case 2: after 86,400 strokes (i.e., after 24 h), and Case 3: after 172,800 strokes (i.e., after 48 h). Measurements of grease samples were performed using a digital scale with an accuracy of 0.1 mg. The testing conditions were selected such that the grease sheared enough to show considerable degradation within the cases.
+
+## Water Droplet Analyzer
+
+The drop shape analyzer (Krüss, Hamburg, Germany) shown in Figure 2 was used to determine the contact angle of the water droplets on the grease surface. This setup consisted of a camera (IDS UI-5480CP-M-GL GigE camera) and adjustable lens (Thorlabs AC254-075-A-ML Lens) through which the water droplet on grease sample was analyzed. Using an adjustable screw, the height of the sample stage was adjusted such that the water droplet was in line with the lens height. The angle of the lens was further adjusted by an alignment screw, as needed. The apparatus provided a monochromatic blue light that helped in obtaining a clear and distinguishable image of the droplet from the background. The apparatus used the captured image to calculate the contact angle θ via the builtin software.
+
+helped in obtaining a clear and distinguishable image of the droplet from the background The apparatus used the captured image to calculate the contact angle θ via the built-in software. A mold made of polymer with rhombus shapes was used in the present work to achieve consistent thickness and a uniform surface of grease. To remove the trapped air the grease in the mold slots was completely compressed. The grease sample was refilled again if trapped air was observed. The slot containing grease to be tested was kept in front of the camera and a 5 µL water drop was placed on the grease surface using a 10 µL syringe. Due to the semi-solid nature and complex structure of grease, the dimensions of the droplets on the grease surface changed with time, making it difficult to capture the image instantaneously. To address this issue, a video of the droplet was recorded for more than 5 min at 3 frames/s. Images of the water droplet from the video after 60 s were considered for measuring the contact angles. The standard operating procedure is explained in Appendix A and also an explanation of the methodology is provided elsewhere [19]. It was made sure that the grease sample considered for testing was at 25 °C.
+
+## Rheometeric Tests
+
+The yield stress results for grease sheared for different numbers of strokes were measured using a rheometer (Anton Paar MCR 301, Graz, Austria) shown in Figure 3. The details of the specification of the rheometer are provided elsewhere [18].
+
+To determine the yield stress, a grease sample of 2 mm thick and 15 mm diameter was placed onto the stationary surface (see Figure 4a). The plate was moved to the desired gap thickness of 1 mm (Figure 4b) and the excess grease was trimmed off (Figure 4c). To remove the deformation history due to the squeezing of grease, sufficient rest time was provided to relax.
+
+The yield stress values were determined from the shear stress-strain plot. The plot was obtained by oscillate-sweeping the plate from 0.001% to 1% at a fixed frequency of 1 Hz. The oscillatory strain sweep approach was adopted due to its robustness and reliability. Further, the results obtained were insensitive to the geometry of the plates, surface roughness, the gap between the plates, and the frequency of shearing [22,23]. The yield stress is the point on the stress-strain curve where the coefficient of determination (R 2 ) A mold made of polymer with rhombus shapes was used in the present work to achieve consistent thickness and a uniform surface of grease. To remove the trapped air, the grease in the mold slots was completely compressed. The grease sample was refilled again if trapped air was observed. The slot containing grease to be tested was kept in front of the camera and a 5 µL water drop was placed on the grease surface using a 10 µL syringe. Due to the semi-solid nature and complex structure of grease, the dimensions of the droplets on the grease surface changed with time, making it difficult to capture the image instantaneously. To address this issue, a video of the droplet was recorded for more than 5 min at 3 frames/s. Images of the water droplet from the video after 60 s were considered for measuring the contact angles. The standard operating procedure is explained in Appendix A and also an explanation of the methodology is provided elsewhere [19]. It was made sure that the grease sample considered for testing was at 25 • C.
+
+## Rheometeric Tests
+
+The yield stress results for grease sheared for different numbers of strokes were measured using a rheometer (Anton Paar MCR 301, Graz, Austria) shown in Figure 3. The details of the specification of the rheometer are provided elsewhere [18].
+
+Lubricants 2021, 9, x FOR PEER REVIEW 5 of 14 between the third-order polynomial fit of the experimental values and a linear fit is found to be greater than 99.5% [23].  To determine the yield stress, a grease sample of 2 mm thick and 15 mm diameter was placed onto the stationary surface (see Figure 4a). The plate was moved to the desired gap thickness of 1 mm (Figure 4b) and the excess grease was trimmed off (Figure 4c). To remove the deformation history due to the squeezing of grease, sufficient rest time was provided to relax.  
+
+## Tribometer
+
+The change in the tribological performance (friction and wear) of the grease with water contamination was studied using a tribometer setup, shown in Figure 5. The setup consisted of a stationary disk with projection sliding against a rotating disk with a groove (see Figure 5). The tribometer setup was designed for performing pin-on-disk; However, to perform disk-on-disk tests, a disk holder was designed and built (see Figure 5).
+
+The stationary disk was fastened to the disk holder and connected to a dual load sensor through the suspension. Similarly, the rotating disk was fastened to a lubricating cup and then to the driven pulley. The driven pulley was connected to the motor using the driving pulley through a belt-pulley drive system. The dual load sensor was attached to the motion control drive to measure the applied load in the vertical direction and frictional force in the horizontal direction. Using the motion control drive, the required displacement in the vertical as well as horizontal motion was achieved. Inbuilt software was used to control the motions of the motor and control drive. The additional details of the setup are available in [24,25].
+
+The mean diameter and thickness in the stationary part were 30 and 2 mm, respectively. The depth, mean diameter, and thickness of the groove in the rotating part were 1, 30, and 8 mm, respectively. Experiments were performed at 30 N load and 0.126 m/s for 3 h. The weight loss was determined using a weighing gauge having an accuracy of 0.1 mg. The yield stress values were determined from the shear stress-strain plot. The plot was obtained by oscillate-sweeping the plate from 0.001% to 1% at a fixed frequency of 1 Hz. The oscillatory strain sweep approach was adopted due to its robustness and reliability. Further, the results obtained were insensitive to the geometry of the plates, surface roughness, the gap between the plates, and the frequency of shearing [22,23]. The yield stress is the point on the stress-strain curve where the coefficient of determination (R 2 ) between the third-order polynomial fit of the experimental values and a linear fit is found to be greater than 99.5% [23].
+
+## Tribometer
+
+The change in the tribological performance (friction and wear) of the grease with water contamination was studied using a tribometer setup, shown in Figure 5. The setup consisted of a stationary disk with projection sliding against a rotating disk with a groove (see Figure 5). The tribometer setup was designed for performing pin-on-disk; However, to perform disk-on-disk tests, a disk holder was designed and built (see Figure 5).
+
+The stationary disk was fastened to the disk holder and connected to a dual load sensor through the suspension. Similarly, the rotating disk was fastened to a lubricating cup and then to the driven pulley. The driven pulley was connected to the motor using the driving pulley through a belt-pulley drive system. The dual load sensor was attached to the motion control drive to measure the applied load in the vertical direction and frictional force in the horizontal direction. Using the motion control drive, the required displacement in the vertical as well as horizontal motion was achieved. Inbuilt software was used to control the motions of the motor and control drive. The additional details of the setup are available in [24,25].
+
+The mean diameter and thickness in the stationary part were 30 and 2 mm, respectively. The depth, mean diameter, and thickness of the groove in the rotating part were 1, 30, and 8 mm, respectively. Experiments were performed at 30 N load and 0.126 m/s for 3 h. The weight loss was determined using a weighing gauge having an accuracy of 0.1 mg. 
+
+# Results
+
+## Pristine Grease
+
+Initial testing was performed on the pristine grease to study the variation in contact angle with different grades of lithium-based greases. Greases were sheared in the grease worker for 60 strokes, and the worked penetration values were determined using a penetrometer. Figure 6 shows the results of the contact angle measurement as a function of the worked penetration. From this figure, the existence of a linear correlation between different NLGI grade greases and contact angle values can be observed.  
+
+# Results
+
+## Pristine Grease
+
+Initial testing was performed on the pristine grease to study the variation in contact angle with different grades of lithium-based greases. Greases were sheared in the grease worker for 60 strokes, and the worked penetration values were determined using a penetrometer. Figure 6 shows the results of the contact angle measurement as a function of the worked penetration. From this figure, the existence of a linear correlation between different NLGI grade greases and contact angle values can be observed. 
+
+# Results
+
+## Pristine Grease
+
+Initial testing was performed on the pristine grease to study the variation in contact angle with different grades of lithium-based greases. Greases were sheared in the grease worker for 60 strokes, and the worked penetration values were determined using a penetrometer. Figure 6 shows the results of the contact angle measurement as a function of the worked penetration. From this figure, the existence of a linear correlation between different NLGI grade greases and contact angle values can be observed.  
+
+## Degraded Grease
+
+In this section, results are provided for degraded greases induced in the grease worker for different strokes. The contact angle values are measured and compared with the rheological property.
+
+### Water Droplet Analyzer
+
+A water droplet was dispensed on the grease surface. The droplet was recorded for more than 60 s. From the recorded video, the images of the water droplet at 60 s were considered for evaluation. The contact angle of the captured images was determined using the built-in software. The values of the contact angle at 60 s for PU grease for different cases are plotted in Figure 7. It can be observed that the contact angle values tended to drop with the increase in the number of strokes.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 7 of 14
+
+In this section, results are provided for degraded greases induced in the grease worker for different strokes. The contact angle values are measured and compared with the rheological property.
+
+### Water Droplet Analyzer
+
+A water droplet was dispensed on the grease surface. The droplet was recorded for more than 60 s. From the recorded video, the images of the water droplet at 60 s were considered for evaluation. The contact angle of the captured images was determined using the built-in software. The values of the contact angle at 60 s for PU grease for different cases are plotted in Figure 7. It can be observed that the contact angle values tended to drop with the increase in the number of strokes.
+
+Similarly, the contact angle values obtained for Li-P and CaS greases for different cases are shown in Figure 8a,b and Table 2. Referring to these figures, it can be inferred that for both types of greases, the contact angle values were reduced with the number of strokes.    Similarly, the contact angle values obtained for Li-P and CaS greases for different cases are shown in Figure 8a,b and Table 2. Referring to these figures, it can be inferred that for both types of greases, the contact angle values were reduced with the number of strokes.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 7 of 14
+
+In this section, results are provided for degraded greases induced in the grease worker for different strokes. The contact angle values are measured and compared with the rheological property.
+
+### Water Droplet Analyzer
+
+A water droplet was dispensed on the grease surface. The droplet was recorded for more than 60 s. From the recorded video, the images of the water droplet at 60 s were considered for evaluation. The contact angle of the captured images was determined using the built-in software. The values of the contact angle at 60 s for PU grease for different cases are plotted in Figure 7. It can be observed that the contact angle values tended to drop with the increase in the number of strokes.
+
+Similarly, the contact angle values obtained for Li-P and CaS greases for different cases are shown in Figure 8a,b and Table 2. Referring to these figures, it can be inferred that for both types of greases, the contact angle values were reduced with the number of strokes.      
+
+### Rheometric Measurements
+
+The yield stress values for all three types of greases and for Cases 1-3 were determined from the shear stress-strain plots obtained from the oscillatory sweep experiments [26,27]. The shear stress-strain plots for PU, Li-P, and CaS greases are presented in Figure 9a-c The yield stress values for all three types of greases and for Cases 1-3 were determined from the shear stress-strain plots obtained from the oscillatory sweep experiments [26,27]. The shear stress-strain plots for PU, Li-P, and CaS greases are presented in Figure 9a-c, respectively.
+
+From the obtained shear stress-strain values and using the linear fit function in Matlab, the yield stress values were determined for R 2 > 99.5%. Yield stress values for Cases 1-3 were determined for PU, Li-P, and CaS greases and the values are shown in Figure 10a-c, respectively. It is observed that the yield stress values were reduced with the increasing number of strokes. From the obtained shear stress-strain values and using the linear fit function in Matlab, the yield stress values were determined for R 2 > 99.5%. Yield stress values for Cases 1-3 were determined for PU, Li-P, and CaS greases and the values are shown in Figure 10a-c, respectively. It is observed that the yield stress values were reduced with the increasing number of strokes. From the obtained shear stress-strain values and using the linear fit function in Matlab, the yield stress values were determined for R 2 > 99.5%. Yield stress values for Cases 1-3 were determined for PU, Li-P, and CaS greases and the values are shown in Figure 10a-c, respectively. It is observed that the yield stress values were reduced with the increasing number of strokes. The yield stress values for all three types of greases and for Cases 1-3 were determined from the shear stress-strain plots obtained from the oscillatory sweep experiments [26,27]. The shear stress-strain plots for PU, Li-P, and CaS greases are presented in Figure 9a-c, respectively.
+
+# Discussion
+
+From the obtained shear stress-strain values and using the linear fit function in Matlab, the yield stress values were determined for R 2 > 99.5%. Yield stress values for Cases 1-3 were determined for PU, Li-P, and CaS greases and the values are shown in Figure 10a-c, respectively. It is observed that the yield stress values were reduced with the increasing number of strokes.  From the obtained shear stress-strain values and using the linear fit function in Matlab, the yield stress values were determined for R 2 > 99.5%. Yield stress values for Cases 1-3 were determined for PU, Li-P, and CaS greases and the values are shown in Figure 10a-c, respectively. It is observed that the yield stress values were reduced with the increasing number of strokes. 
+
+# Discussion
+
+The contact angle values of water droplets on grease surfaces depend on the composition and types of the ingredients used for developing greases. Therefore, it was postulated that greases having the same types of ingredients, but in different proportions, have differ-ent contact angles. To test the hypothesis, contact angle values were measured for different grades of Li-m greases, and the results are provided in Figure 6. A linear relationship between the contact angle values and different NLGI grade penetration values was observed. This concludes that through the contact angle values, different grades of the same kind of grease can be determined. Further, in a very recent finding, Lijesh and Khonsari [18] demonstrated the existence of a relationship between the NLGI grade reduction and degradation. Therefore, by measuring the contact angle of the grease, one can determine the degradation of grease.
+
+The three types of greases (PU, Li-P, and CaS) were degraded in the grease worker, and the contact angle values were measured for Cases 1-3. The measured contact angle values for PU grease are shown in Figure 7 and for Li-P and CaS greases are shown in Figure 8a,b, respectively. From these figures, it can be observed that the contact angle values decreased with an increasing number of strokes, i.e., with the degradation of grease, the contact angle values reduced. The percentage changes of contact angle values between Cases 1 and 3 for all three greases are plotted in Figure 11a.
+
+different contact angles. To test the hypothesis, contact angle values were measured for different grades of Li-m greases, and the results are provided in Figure 6. A linear relationship between the contact angle values and different NLGI grade penetration values was observed. This concludes that through the contact angle values, different grades of the same kind of grease can be determined. Further, in a very recent finding, Lijesh and Khonsari [18] demonstrated the existence of a relationship between the NLGI grade reduction and degradation. Therefore, by measuring the contact angle of the grease, one can determine the degradation of grease.
+
+The three types of greases (PU, Li-P, and CaS) were degraded in the grease worker, and the contact angle values were measured for Cases 1-3. The measured contact angle values for PU grease are shown in Figure 7 and for Li-P and CaS greases are shown in Figure 8a,b, respectively. From these figures, it can be observed that the contact angle values decreased with an increasing number of strokes, i.e., with the degradation of grease, the contact angle values reduced. The percentage changes of contact angle values between Cases 1 and 3 for all three greases are plotted in Figure 11a.
+
+Further, to gain more confidence in the results obtained using the contact angle approach, the rheological change in grease with degradation was evaluated by determining yield stress values. Shear stress versus strain values for all greases and cases are plotted in Figure 9, and the measured yield stress values for PU, Li-P, and CaS greases are shown in Figure 10a-c. The change in yield stress values was determined for all the greases and plotted in Figure 11b. From Figure 11a,b, the highest and lowest changes were determined for PU and CaS greases, respectively. In other words, the PU grease degraded faster while CaS degraded slowly. 
+
+# Tribological Performance
+
+To further assess the importance of a grease having lower degradation with time, experiments were performed on a tribometer for 3 h, and tribological properties (i.e., friction coefficient and weight loss) were determined for Pu and CaS greases. The online friction coefficient values for both greases are plotted in Figure 12. In the case of CaS grease, the friction coefficient values remained almost constant, signifying satisfactory operation. For the PU grease, however, the friction coefficient values exhibited significant fluctuation after 130 min. The reason for the fluctuation can be attributed to the interference of wornout particles between the sliding surfaces. To investigate, an optical surface profilometer Further, to gain more confidence in the results obtained using the contact angle approach, the rheological change in grease with degradation was evaluated by determining yield stress values. Shear stress versus strain values for all greases and cases are plotted in Figure 9, and the measured yield stress values for PU, Li-P, and CaS greases are shown in Figure 10a-c. The change in yield stress values was determined for all the greases and plotted in Figure 11b. From Figure 11a,b, the highest and lowest changes were determined for PU and CaS greases, respectively. In other words, the PU grease degraded faster while CaS degraded slowly.
+
+# Tribological Performance
+
+To further assess the importance of a grease having lower degradation with time, experiments were performed on a tribometer for 3 h, and tribological properties (i.e., friction coefficient and weight loss) were determined for Pu and CaS greases. The online friction coefficient values for both greases are plotted in Figure 12. In the case of CaS grease, the friction coefficient values remained almost constant, signifying satisfactory operation. For the PU grease, however, the friction coefficient values exhibited significant fluctuation after 130 min. The reason for the fluctuation can be attributed to the interference of wornout particles between the sliding surfaces. To investigate, an optical surface profilometer was used to examine the 3D profiles of the rotating disk surface. Figure 13a shows the surface profile at the pristine condition and Figure 13b,c shows the profiles for the PU and CaS greases, respectively. The measured roughness value of the pristine surface was 0.43 µm, while the surfaces tested with PU and CaS greases were determined to be 1.2 and 0.66 µm, respectively. From the surface roughness values and the 3D profile images provided in Figure 13, the following observations are made: (i) the surface roughness values increased by performing experiments, and (ii) the surface of rotating disks operated with PU grease caused more damage than CaS grease. Therefore, the CaS grease protected the disk surfaces from wearing out, whereas the PU grease degraded faster and after 130 min. of shearing, it failed to protect the surfaces.
+
+was used to examine the 3D profiles of the rotating disk surface. Figure 13a shows the surface profile at the pristine condition and Figure 13b,c shows the profiles for the PU and CaS greases, respectively. The measured roughness value of the pristine surface was 0.43 µm, while the surfaces tested with PU and CaS greases were determined to be 1.2 and 0.66 µm, respectively. From the surface roughness values and the 3D profile images provided in Figure 13, the following observations are made: (i) the surface roughness values increased by performing experiments, and (ii) the surface of rotating disks operated with PU grease caused more damage than CaS grease. Therefore, the CaS grease protected the disk surfaces from wearing out, whereas the PU grease degraded faster and after 130 min of shearing, it failed to protect the surfaces.    The average friction coefficient values and measured weight loss after completion of the experiment are plotted in Figure 14a,b, respectively. From these figures, it can be concluded that CaS showed better tribological performance than PU grease. This finding is in agreement with the findings of the contact angle approach. The average friction coefficient values and measured weight loss after completion of the experiment are plotted in Figure 14a,b, respectively. From these figures, it can be concluded that CaS showed better tribological performance than PU grease. This finding is in agreement with the findings of the contact angle approach.
+
+The average friction coefficient values and measured weight loss after completion of the experiment are plotted in Figure 14a,b, respectively. From these figures, it can be concluded that CaS showed better tribological performance than PU grease. This finding is in agreement with the findings of the contact angle approach. 
+
+# Conclusions
+
+This paper is dedicated to the development of a procedure for the characterization of grease degradation using the contact angle approach. In this approach, a water droplet is placed onto the grease surface and the contact angle of the water droplet is measured. It is postulated that this approach has the potential to reflect the change in the composition of the grease, which in turn can be employed for determining the degradation of the grease. To validate, a contact angle test was performed on different grades of Li-m greases and the results were compared with those obtained by penetration tests. A linear correlation was observed between them, indicating the capability of the contact angle approach in determining the change in consistency of the grease. PU, Li-P, and CaS greases were sheared in a grease worker for a different number of strokes and their degradation was evaluated by measuring the contact angle values and comparing these with the yield stress values. From both approaches, it was found that the PU grease degraded faster and CaS grease degraded slower. To assess the importance of the finding, experiments were performed on a tribometer to evaluate the tribological properties of PU and CaS greases. From the experimental results, it was concluded that the wear and friction coefficient values for PU grease were higher than those of CaS grease. Further, for PU grease, the generation of wear particles was observed. This concludes that CaS grease degraded at a lower rate compared to PU grease, which is in agreement with the findings of the contact angle approach.
+
+Author Contributions: Conceptualization, M.M.K. and K.P.L.; Methodology, software, validation, formal analysis, investigation: K.P.L.; resources, data curation, writing-original draft preparation, M.M.K. and K.P.L.; writing-review and editing, M.M.K., R.A.M. and R.S.; visualization, supervision, project administration, funding acquisition: M.M.K. All authors have read and agreed to the published version of the manuscript. Funding: M. M. Khonsari and K. P. Lijesh gratefully acknowledge the support of background research on this subject through the LIFT 2 Program, grant number LSU-2021-LIFT-007.
+
+Institutional Review Board Statement: Not applicable. 
+
+# Conclusions
+
+This paper is dedicated to the development of a procedure for the characterization of grease degradation using the contact angle approach. In this approach, a water droplet is placed onto the grease surface and the contact angle of the water droplet is measured. It is postulated that this approach has the potential to reflect the change in the composition of the grease, which in turn can be employed for determining the degradation of the grease. To validate, a contact angle test was performed on different grades of Li-m greases and the results were compared with those obtained by penetration tests. A linear correlation was observed between them, indicating the capability of the contact angle approach in determining the change in consistency of the grease. PU, Li-P, and CaS greases were sheared in a grease worker for a different number of strokes and their degradation was evaluated by measuring the contact angle values and comparing these with the yield stress values. From both approaches, it was found that the PU grease degraded faster and CaS grease degraded slower. To assess the importance of the finding, experiments were performed on a tribometer to evaluate the tribological properties of PU and CaS greases. From the experimental results, it was concluded that the wear and friction coefficient values for PU grease were higher than those of CaS grease. Further, for PU grease, the generation of wear particles was observed. This concludes that CaS grease degraded at a lower rate compared to PU grease, which is in agreement with the findings of the contact angle approach.
+
+# Institutional Review Board Statement: Not applicable.
+
+Informed Consent Statement: Not applicable.
+
+# Conflicts of Interest:
+
+The authors declare no conflict of interest.
+
+# Appendix A
+
+Step 1: Collect grease samples from the machinery or components which need to be tested. The volume of sample required is 75 mm 3 ; i.e., around 0.25 g of grade 2 grease.
+
+Step 2: Apply the grease sample to the rhombus slot.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 12 of 14
+
+# Appendix A
+
+Step 1: Collect grease samples from the machinery or components which need to be tested. The volume of sample required is 75 mm 3 ; i.e., around 0.25 g of grade 2 grease.
+
+Step 2:
+
+Apply the grease sample to the rhombus slot.
+
+Step 3:
+
+Remove the excess grease. The grease is reapplied if air bubbles are entrapped in the grease.
+
+Step 4:
+
+Keep the mold in front of the lens of the drop shape analyzer.
+
+Step 5:
+
+Start button in the software provided for drop shape analyzer is clicked.
+
+Step 6:
+
+Drop water droplet on the grease surface.
+
+Step 7: Wait for more than 60 s.
+
+Step 3: Remove the excess grease. The grease is reapplied if air bubbles are entrapped in the grease.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 12 of 14
+
+# Appendix A
+
+Step 1: Collect grease samples from the machinery or components which need to be tested. The volume of sample required is 75 mm 3 ; i.e., around 0.25 g of grade 2 grease.
+
+Step 2:
+
+Apply the grease sample to the rhombus slot.
+
+Step 3:
+
+Remove the excess grease. The grease is reapplied if air bubbles are entrapped in the grease.
+
+Step 4:
+
+Keep the mold in front of the lens of the drop shape analyzer.
+
+Step 5:
+
+Start button in the software provided for drop shape analyzer is clicked.
+
+Step 6:
+
+Drop water droplet on the grease surface.
+
+Step 7: Wait for more than 60 s.
+
+Step 4: Keep the mold in front of the lens of the drop shape analyzer.
+
+Step 5: Start button in the software provided for drop shape analyzer is clicked.
+
+Step 6: Drop water droplet on the grease surface.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 12 of 14
+
+# Appendix A
+
+Step 1: Collect grease samples from the machinery or components which need to be tested. The volume of sample required is 75 mm 3 ; i.e., around 0.25 g of grade 2 grease.
+
+Step 2:
+
+Apply the grease sample to the rhombus slot.
+
+Step 3:
+
+Remove the excess grease. The grease is reapplied if air bubbles are entrapped in the grease.
+
+Step 4:
+
+Keep the mold in front of the lens of the drop shape analyzer.
+
+Step 5:
+
+Start button in the software provided for drop shape analyzer is clicked. Step 6:
+
+Drop water droplet on the grease surface.
+
+Step 7: Wait for more than 60 s.
+
+Lubricants 2021, 9, 11 13 of 14
+
+Step 7: Wait for more than 60 s.
+
+Step 8: Stop the recording.
+
+Step 9: Time for water droplet touching the grease surface is noted and the contact angle of the droplet after 60 s from the noted time is measured.
+
+Lubricants 2021, 9, x FOR PEER REVIEW 13 of 14
+
+Step 8: Stop the recording. Step 9:
+
+Time for water droplet touching the grease surface is noted and the contact angle of the droplet after 60 s from the noted time is measured.
+

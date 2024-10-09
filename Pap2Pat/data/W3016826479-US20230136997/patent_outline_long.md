@@ -1,0 +1,185 @@
+# DESCRIPTION
+
+## FEDERALLY SPONSORED RESEARCH
+
+- disclose government support
+
+## BACKGROUND OF INVENTION
+
+- introduce glioblastoma multiforme
+- describe limitations of existing treatments
+- explain mechanism of TMZ resistance
+- motivate need for novel therapeutic strategies
+
+## SUMMARY OF INVENTION
+
+- introduce ABCB5 in GBM
+- describe correlation with poor survival
+- summarize functional blockade experiments
+- describe in vivo xenograft experiments
+- summarize TMZ-induced G2/M arrest inhibition
+- introduce methods for modulating ABCB5+ CSC activity
+- describe method for treating GBM
+- describe method for treating chemoresistant cancer
+- describe method for treating cancer with G2/M cell cycle arrest
+
+## DETAILED DESCRIPTION OF INVENTION
+
+- introduce GBM and its poor prognosis
+- describe role of ABCB5 in GBM growth and chemoresistance
+- summarize functional ABCB5 blockade results
+- describe in vivo human GBM xenograft experiments
+- demonstrate ABCB5 blockade inhibits drug-induced G2/M arrest
+- describe ABCB5 as GBM chemoresistance marker and therapeutic target
+- explain ABCB5 blockade mobilizes resistant tumor cells
+- describe pharmacological agents that block ABCB5
+- explain blockers of RTKs and associated signal adapters
+- describe blockers of InsR or IGF1R
+- explain role of ABCB5 in signal transduction
+- describe tyrosine autophosphorylation of RTKs
+- explain pathological loss of function mutations in RTKs
+- describe FGFR as an example of RTK
+- summarize ABCB5's role in tumor growth and aggressiveness
+- describe ABCB5's role in modulating G2/M checkpoint regulation
+- explain TMZ-induced G2/M arrest in GBM
+- describe inhibition of cell-cycle arrest leading to mitotic catastrophe
+- summarize specific enrichment of cell cycle regulation-related gene categories
+- describe treatment with TMZ triggering G2/M arrest in GBM cells
+- explain ABCB5 blockade inhibiting G2/M arrest-inducing signaling
+- describe inter-tumor heterogeneity in human GBM
+- explain ABCB5 as a marker for isolation of drug-resistant cancer cells
+- describe the invention's usefulness in treating cancer
+- introduce ABCB5 inhibitors
+- list compounds as ABCB5 inhibitors
+- list ABCB1 agents for heart disease/vessel disease treatment
+- list miscellaneous ABCB5 inhibitors
+- describe PIP2 antagonist as ABCB5 inhibitor
+- describe anti-ABCB5 antibody or fragment as ABCB5 inhibitor
+- describe human anti-ABCB5 antibody or ABCB5-binding fragment
+- describe affinity maturation of human anti-ABCB5 antibody
+- describe ABCB5 antibody or ABCB5-binding fragment specificity
+- describe bispecific antibody specific for ABCB5 and RTKs
+- describe modulation of signaling pathway using bispecific antibody
+- describe antibody conjugates
+- define specific binding of antibody to antigen
+- describe dissociation constant of antibody-antigen interaction
+- describe inhibitory nucleic acid as ABCB5 inhibitor
+- describe gene knockdown strategies using RNAi and/or miRNA pathways
+- describe vector-based RNAi modalities
+- describe therapeutic compositions comprising isolated plasmid vector
+- describe packaging of isolated plasmid vector in virus
+- describe pharmaceutical composition formation
+- describe pharmaceutically acceptable carriers and excipients
+- describe pharmaceutical composition formulations
+- describe pharmaceutical composition
+- formulate liposomes with compounds or antibodies
+- generate liposomes by reverse phase evaporation method
+- extrude liposomes through filters
+- entrap compounds or antibodies in microcapsules
+- prepare microcapsules by coacervation techniques
+- prepare microcapsules by interfacial polymerization
+- formulate sustained-release format
+- prepare semipermeable matrices of solid hydrophobic polymers
+- prepare shaped articles
+- formulate unit dosage forms
+- mix principal active ingredient with pharmaceutical carrier
+- form solid preformulation composition
+- subdivide solid preformulation composition into unit dosage forms
+- coat or compound tablets or pills
+- provide enteric layer
+- use surface-active agents
+- formulate emulsions
+- prepare emulsions using commercially available fat emulsions
+- dissolve active ingredient in oil and form emulsion
+- add ingredients to adjust tonicity of emulsion
+- formulate compositions for inhalation or insufflation
+- prepare solutions and suspensions
+- add pharmaceutically acceptable excipients
+- administer compositions by oral or nasal respiratory route
+- nebulize solutions
+- administer compositions from devices
+- treat cancer with compounds or antibodies
+- administer effective amount of pharmaceutical composition
+- determine effective amount empirically
+- follow indicator of disease to assess efficacy
+- administer initial candidate dosage
+- adjust dosage based on factors
+- administer repeated dosages over time
+- sustain treatment until desired suppression of symptoms
+- define treating
+- alleviate target disease or disorder
+- delay development of target disease or disorder
+- define development or progression of disease
+- administer compounds or antibodies to inhibit ABCB5 activity
+- administer compounds or antibodies to reduce ABCB5 activity level
+- administer pharmaceutical composition via various routes
+
+### EXAMPLES
+
+- query TCGA datasets
+- culture GBM cell lines
+- extract RNA from GBM cells
+- perform RT PCR
+- sequence full ORF of ABCB5
+- analyze ABCB5 expression by flow cytometry
+- generate stable ABCB5 knockdown cell variants
+- perform cell proliferation assay
+- conduct in vivo tumor xenograft study
+- perform immunohistochemistry
+- analyze apoptosis by flow cytometry
+- perform microarray analyses
+- analyze cell cycle distribution
+- perform Western blot
+- perform capillary Western blot analyses
+- perform statistical analysis
+- deposit data to GenBank database
+- deposit microarray data to Gene Expression Omnibus
+- examine ABCB5 copy number alteration
+- determine ABCB5 mRNA expression in GBM and LGG
+- analyze correlation of ABCB5 mRNA expression with overall survival
+- examine ABCB5 expression in GBM subtypes
+- confirm ABCB5 expression by immunohistochemistry
+- examine ABCB5 expression in GBM cell lines
+- analyze ABCB5 expression by qRT-PCR
+- analyze ABCB5 expression by nested RT-PCR
+- analyze ABCB5 expression by flow cytometry
+- summarize ABCB5 expression in GBM cell lines
+- conclude clinical significance of ABCB5 expression in GBM
+- introduce ABCB5 expression in GBM cells
+- correlate ABCB5 expression with overall survival in GBM patients
+- examine ABCB5 expression on CD133-positive GBM stem cells
+- hypothesize ABCB5 role in GBM stem cell maintenance and tumor aggressiveness
+- test ABCB5 blockade on CD133-positive stem cell frequency
+- analyze effect of ABCB5 blockade on GBM cell proliferation
+- examine effect of ABCB5 blockade on apoptosis in GBM cells
+- evaluate ABCB5 blockade on tumor growth in GBM xenotransplantation model
+- analyze Ki-67 and cleaved caspase-3 expression in tumor xenografts
+- test ABCB5 blockade with TMZ treatment on GBM cell proliferation
+- examine TMZ-induced apoptosis with ABCB5 blockade
+- evaluate ABCB5 blockade with TMZ treatment on tumor growth in GBM xenotransplantation model
+- analyze Ki-67 and cleaved caspase-3 expression in tumor xenografts with TMZ treatment
+- perform microarray gene expression analysis of ABCB5-positive and ABCB5-negative cells
+- identify differentially expressed genes between ABCB5-positive and ABCB5-negative cells
+- perform Ingenuity Pathway Analysis on differentially expressed genes
+- identify enriched disease and functional categories related to cell cycle
+- examine ABCB5 blockade on TMZ-induced G2/M arrest
+- analyze cell cycle protein expression with ABCB5 blockade and TMZ treatment
+- confirm ABCB5 knockdown by shRNA
+- examine effect of ABCB5 knockdown on GBM cell proliferation
+- analyze TMZ-induced apoptosis with ABCB5 knockdown
+- examine effect of ABCB5 knockdown on TMZ-induced G2/M arrest
+- analyze cell cycle protein expression with ABCB5 knockdown and TMZ treatment
+- discuss ABCB5 as a novel therapeutic target in GBM
+- summarize ABCB5 expression in primary human GBM tumors and cell lines
+- discuss ABCB5 inhibition strategies in vitro and in vivo
+- highlight ABCB5 role in GBM aggression and therapeutic resistance
+- discuss CD133-positive GBM stem cells and ABCB5 expression
+- summarize ABCB5 blockade effect on CD133-positive stem cell frequency
+- discuss ABCB5 role in GBM CSC survival
+- highlight potential of ABCB5 targeting in reversing CSC-mediated GBM tumorigenesis
+- discuss incorporation of references cited
+- mention alterations, modifications, and improvements to the invention
+- discuss spirit and scope of the invention
+- provide example of the invention
+- conclude the invention description
+

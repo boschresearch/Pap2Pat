@@ -1,0 +1,372 @@
+# DESCRIPTION
+
+## STATEMENT REGARDING FEDERALLY SPONSORED R&D
+
+- disclose government rights
+
+## BACKGROUND
+
+### Field
+
+- define field of invention
+
+### Description of the Related Art
+
+- limitations of FACS
+
+## SUMMARY
+
+- introduce cell sorting method
+- describe microfluidic channel
+- explain cell expression of gas vesicles
+- define acoustic contrast
+- describe population of cells
+- introduce ultrasound application
+- explain acoustic standing waves
+- describe pressure antinodes
+- explain cell actuation
+- describe outlet channels
+- introduce inlet channels
+- describe flow streams
+- explain pressure nodes
+- describe cell uptake of gas vesicles
+- explain internalization methods
+- describe cell degradation of gas vesicles
+- introduce acoustic radiation force
+- describe actuation of first subpopulation
+- describe actuation of second subpopulation
+- introduce microfluidic channel design
+- describe fluid sample introduction
+- explain sheath flow
+- describe trifurcation
+- introduce cell collection
+- describe cell counting
+- explain enrichment of subpopulations
+- describe acoustic properties of cells
+- explain context-dependent uptake of gas vesicles
+- introduce collapsing of gas vesicles
+- introduce gas vesicle (GV) polynucleotides
+- describe GV protein expression
+- associate GV expression with cell type/state
+- link payload protein expression to GV expression
+- introduce transactivator polynucleotide
+- describe transactivator-induced GV transcription
+- specify transactivator recognition sequence
+- describe tetracycline response element (TRE)
+- introduce transactivator-binding compound
+- describe constitutive signal peptide for protein degradation
+- introduce 5'UTR and 3'UTR elements
+- describe tandem gene expression elements
+- introduce transcript stabilization elements
+- specify minimal promoters
+- describe tissue-specific and lineage-specific promoters
+- introduce ubiquitous promoters
+- specify GVA and GVS genes from various species
+- describe codon optimization for eukaryotic expression
+- introduce GVS variant with tag for clustering
+- describe hybrid GVs from multiple species
+- specify configurable GV density and compressibility
+- introduce GvpC variant with protease-sensing/Ca2+-sensing capabilities
+- describe unique cell state and cell type
+- associate unique cell state with cellular activities
+- specify hereditable, environmental, and idiopathic factors
+- describe endogenous context-dependent promoter regulation
+- associate unique cell state with disease/disorder
+- describe aberrant signaling in unique cell state
+- specify signal transducers and their regulation
+- describe disease/disorder characterization
+- specify unique cell state physiological/pathological states
+- describe cell characteristics in unique cell state
+- specify eukaryotic cell types (e.g., mammalian cells)
+- describe stem cell types (e.g., embryonic, induced pluripotent)
+
+## DETAILED DESCRIPTION
+
+- introduce patent application structure
+- describe illustrative embodiments
+- discuss limitations of embodiments
+- incorporate prior art by reference
+- describe method of sorting cells
+- detail microfluidic channel configuration
+- explain acoustic contrast modulation
+- describe ultrasound application
+- outline method variations
+
+### Definitions
+
+- define nucleic acid and polynucleotide
+- define vector
+- define construct
+- define plasmid
+- define element
+- define regulatory element
+- define enhancer
+- redefine construct
+- define variant polynucleotide
+- define variant polypeptide
+- define subject
+- define mammal
+
+### Genetically Encoded Actuators for Acoustic Inversion, Manipulation and Patterning of Engineered Cells
+
+- introduce acoustic manipulation of cells
+- motivate genetic encoding of actuators
+- describe gas vesicles as genetically encodable actuators
+- explain acoustic radiation force on gas vesicles
+- summarize advantages of gas vesicles over fluorescent proteins
+- introduce method of sorting cells using microfluidic channels
+- describe fluid sample preparation
+- explain expression of gas vesicles in cells
+- describe modulation of acoustic contrast by gas vesicles
+- introduce threshold negative acoustic contrast
+- describe population of cells with varying acoustic contrast
+- apply ultrasound to microfluidic channel
+- generate acoustic standing waves
+- position pressure antinode in microfluidic channel
+- actuate cells towards pressure antinode
+- exclude buoyancy purification
+- introduce alternative method of sorting cells
+- describe incubation of cells with gas vesicles
+- explain uptake of gas vesicles by cells
+- define microfluidic components
+- describe characteristics of microfluidic channels
+- specify dimensions of microfluidic channels
+- define microfluidic channel
+- describe flow streams
+- introduce acoustic standing waves
+- motivate cell actuation
+- describe incubation with GVs
+- explain uptake of GVs
+- detail actuation methods
+- describe microfluidic channel design
+- explain fluid sample introduction
+- describe sheath flow
+- detail cell sorting methods
+- describe cell collection
+- explain cell counting
+- define enrichment of cells
+- describe acoustic properties of cells
+- explain context-dependent uptake of GVs
+- detail amplification of acoustic radiation force
+- define threshold negative acoustic contrast
+- explain cell classification
+- describe acoustic contrast of cells
+- define acoustic inversion
+- describe microfluidic channel
+- specify ultrasound application
+- detail fluid composition
+- describe acoustic wave direction
+- explain standing wave nodes and antinodes
+- specify frequency range
+- describe acoustic energy sources
+- detail piezoelectric element positioning
+- specify piezoelectric element shapes and sizes
+- describe piezoelectric element materials
+- explain piezoelectric element operation
+- describe interdigital transducer
+- specify frequency range for piezoelectric element
+- describe buoyancy purification
+- detail cell types
+- explain cell uptake and expression
+- describe mixed cell population separation
+- specify sorting rates
+- describe cell integrity maintenance
+- explain engineered gas-filled protein structures
+- describe gas vesicle protein structure
+- detail gas vesicle structural proteins
+- specify gas vesicle composition
+- describe gas vesicle function
+- explain gas vesicle regulation
+- describe gas vesicle expression
+- detail gas vesicle buoyancy regulation
+- specify gas vesicle applications
+- describe gas vesicle advantages
+- explain gas vesicle limitations
+- describe gas vesicle variations
+- provide references
+- introduce genetically encoded actuators
+- relate to prior art
+- describe GV production
+- define gas vesicle structure
+- describe gas vesicle properties
+- describe gas vesicle shapes
+- define gas vesicle structural proteins
+- describe GVS shell composition
+- describe gvpC protein structure
+- describe repeat regions in gvpC
+- define GV type
+- describe GV properties based on shape and dimensions
+- describe nucleic acid compositions encoding GV types
+- describe GV collapse pressure profiles
+- define critical collapse pressure
+- describe GV collapse mechanisms
+- relate to prior art on gas vesicles
+- describe applications of gas vesicles
+- incorporate prior art by reference
+- define acoustic collapse pressure profile
+- describe method for determining acoustic collapse pressure profile
+- introduce hybrid gas vesicle gene cluster
+- describe gas vesicle reporting genetic circuits
+- define gas vesicle genes cluster
+- explain gene cluster
+- provide example of gene cluster
+- introduce engineered GVs and methods of tuning acoustic properties
+- describe endogenous expression of Gvp proteins
+- explain heterologous expression of Gvp proteins
+- introduce multiplexed imaging methods
+- describe GVA genes and GVS genes derived from various organisms
+- list GV polynucleotides comprising GVS genes from different prokaryotic species
+- describe GVs with tuned acoustophoretic phenotypic properties
+- introduce GvpC variant
+- describe genetic modification of interest
+- explain cell type and/or cell state of a cell
+- introduce gene modification vector
+- describe viral vector options
+- introduce context-dependent promoters operably connected to GV polynucleotides
+- describe activity of context-dependent promoter associated with cell type and/or cell state
+- introduce tandem gene expression element
+- describe second subpopulation of cells
+- define genetically encoded actuators
+- describe acoustic inversion, manipulation, and patterning of engineered cells
+- introduce context-dependent promoter
+- describe transactivator polynucleotide
+- explain transactivator recognition sequence
+- introduce tetracycline response element (TRE)
+- describe reverse tetracycline-controlled transactivator (rtTA)
+- describe tetracycline-controlled transactivator (tTA)
+- introduce transactivator-binding compound
+- describe constitutive signal peptide for protein degradation
+- introduce 5'UTR and 3'UTR
+- describe tandem gene expression element
+- introduce transcript stabilization element
+- describe minimal promoter
+- introduce tissue-specific promoter
+- describe ubiquitous promoter
+- introduce unique cell state
+- describe activation of cellular activities of interest
+- introduce endogenous signal transducer
+- describe aberrant signaling of signal transducer
+- introduce disease or disorder
+- describe physiological state
+- describe pathological state
+- introduce cell type
+- describe eukaryotic cell
+
+## EXAMPLES
+
+- introduce genetically encoded actuators for acoustic inversion, manipulation and patterning of engineered cells
+
+### Example 1
+
+- motivate acoustic radiation force (ARF) for cellular manipulation
+- describe advantages of ultrasound over optical, magnetic and printing-based approaches
+- introduce gas vesicles (GVs) as genetically encodable agents for ARF-based actuation
+- model GVs as spherical particles with effective density and compressibility
+- predict ARF acting on GVs based on acoustic contrast factor
+- test ARF on purified GVs using single-particle tracking
+- quantify ARF acting on GV particles in solution
+- estimate ARF acting on a single GV
+- express GVs in E. coli using bacterial acoustic reporter genes (bARG1)
+- test ARF on bARG1-expressing cells
+- quantify ARF enhancement provided by GV expression
+- test selective actuation of cells expressing GVs
+- implement genetic circuit to control GV expression
+- test dynamic patterning and rapid biofabrication with engineered bacteria
+- generate standing wave pattern using an unfocused 5 MHz transducer
+- image cells using fluorescence microscopy
+- test focal trapping using a 40 MHz focused ultrasound transducer
+- coalesce GV-expressing cells into a cellular cluster
+- move cellular cluster using lateral translation of the ultrasound transducer
+- fabricate living materials using acoustic hologram
+- create 3D-printed phase mask to produce an ‘R’-shaped pressure profile
+- immobilize bacteria inside agarose gel
+- image spatial distribution of GV-expressing cells with ultrasound
+- test GV expression in mammalian cells
+- engineer human HEK293T cancer cells to express GVs
+- apply ultrasound to engineered cells in microfluidic channel
+- observe negative contrast factor in engineered cells
+- test GV expression as externally applied acoustic labels
+- incubate fluorescently-tagged GVs with murine macrophages
+- apply ultrasound to macrophages and observe negative contrast factor
+- visualize separate fluorescence channels corresponding to macrophages and GVs
+- test acoustic sorting of cells based on their genotype
+- engineer mammalian cells to express GVs via transient transfection
+- design genetic sequence to link GV expression to cargo protein expression
+- quantify cargo protein expression level optically
+- construct acoustofluidic device for continuous-flow sorting
+- introduce cells with range of transgene expression into device
+- apply acoustic field to section of channel
+- separate central and peripheral streams at outlet
+- quantify genotypes of input and output cell populations
+- demonstrate enrichment of EBFP2-positive cells after acoustofluidic sorting
+- test GV collapse at specific, tunable acoustic pressures
+- engineer variant of Ana GVs (AnaΔC) with lower acoustic collapse pressure
+- image GV sample infused into microfluidic channel at steady flow rate
+- observe formation of distinct bands based on GV collapse
+- measure acoustic pressure inside microfluidic channels using GV collapse
+- compare pressure calibrated using GV collapse with established method
+- demonstrate multiplexed actuation of different GV types with distinct collapse pressures
+
+### Discussion
+
+- establish GVs as first genetically encodable material
+- explain unique physical properties of GVs
+- describe application in biomaterials and biotechnology
+- discuss advantages of ultrasound over other approaches
+- highlight benefits of GV-expressing cells in applications
+- describe acoustofluidic devices for cell separation
+- compare GVs to fluorescent proteins
+- explain connection of GVs to genetic circuits
+- discuss use of GVs as exogenous cellular labels
+- describe potential for in vivo ARF and nanoscale actuation
+- outline potential variations and extensions of GV methods
+
+### Methods
+
+- estimate acoustic contrast factor
+- prepare gas vesicles
+- label gas vesicles
+- prepare acoustic E. coli
+- induce GV expression
+- enrich high-expressing cells
+- prepare fluorescently labeled bacteria
+- prepare acoustic mammalian cells
+- induce mARG1 expression
+- prepare RAW264.7 cells
+- label GVs for uptake
+- design acoustofluidic channel
+- fabricate acoustofluidic channel
+- assemble acoustofluidic setup
+- perform single-particle tracking experiment
+- analyze particle trajectories
+- calculate mean-squared-displacement
+- extract diffusion coefficient
+- obtain mobility
+- fit trajectories to equation of motion
+- obtain peak particle velocity
+- calculate peak ARF
+- determine hydrodynamic radius
+- fit force measurements to fractal clustering model
+- calculate peak ARF for single GV
+- obtain acoustic contrast factor
+- perform acoustic GV collapse experiment
+- analyze fluorescence signal
+- calculate acoustic pressure
+- perform acoustic manipulation of cells
+- image cells during ultrasound application
+- perform dynamic patterning of acoustic bacteria
+- vary ultrasound frequency
+- perform image-guided positioning of acoustic bacteria
+- align transducer with glass reflector
+- trap acoustic bacteria
+- move transducer to form desired pattern
+- perform acoustic biofabrication
+- design acoustic phase mask
+- 3D print phase mask
+- couple transducer to phase mask
+- apply ultrasound
+- image acoustically fabricated material
+- perform acoustofluidic cell enrichment
+- prepare cells for enrichment
+- apply continuous wave ultrasound
+

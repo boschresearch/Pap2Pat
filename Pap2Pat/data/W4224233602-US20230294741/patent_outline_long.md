@@ -1,0 +1,236 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous vehicle
+
+## DETAILED DESCRIPTION
+
+- introduce description purpose
+- clarify specific details
+- illustrate block diagrams
+- explain schematic element ordering
+- clarify connecting elements
+- define terminology
+- explain singular and plural forms
+- define "and/or" and "includes"
+- define "communication" and "communicate"
+- explain "if" and "if it is determined"
+- define "has" and "having"
+- explain "based on"
+- introduce embodiment descriptions
+
+### General Overview
+
+- introduce autonomous vehicle
+- describe sensors monitoring vehicle parameters
+- explain controller determining subsequent actions
+- motivate prediction of agent importance
+- describe processing input features
+- determine output features
+- predict importance value
+- determine vehicle movements
+- illustrate environment 100
+- describe vehicles 102a-102n
+- describe objects 104a-104n
+- describe routes 106a-106n
+- describe area 108
+- describe vehicle-to-infrastructure (V2I) device 110
+- describe network 112
+- describe remote autonomous vehicle (AV) system 114
+- describe fleet management system 116
+- describe V2I system 118
+- describe interconnections between components
+- describe vehicles 102a-102n in communication with V2I device 110
+- describe objects 104a-104n interconnecting with components
+- describe routes 106a-106n prescribing actions
+- describe area 108 as physical area
+- describe V2I device 110 in communication with vehicles 102
+- describe remote AV system 114 in communication with vehicles 102
+- describe fleet management system 116 in communication with vehicles 102
+- describe V2I system 118 in communication with vehicles 102
+- describe variations in environment 100
+- introduce cameras
+- describe camera features
+- explain camera data generation
+- describe camera applications
+- introduce LiDAR sensors
+- describe LiDAR sensor features
+- explain LiDAR data processing
+- describe LiDAR image generation
+- introduce radar sensors
+- describe radar sensor features
+- explain radar data processing
+- describe radar image generation
+- introduce microphones
+- describe microphone features
+- explain audio data generation
+- describe audio data applications
+- introduce communication device
+- describe communication device features
+- introduce autonomous vehicle compute
+- describe autonomous vehicle compute features
+- introduce safety controller
+- describe safety controller features
+- introduce DBW system
+- describe DBW system features
+- introduce powertrain control system
+- describe powertrain control system features
+- introduce steering control system
+- describe steering control system features
+- introduce brake system
+- describe brake system features
+- introduce device 300
+- describe input interface 310
+- describe output interface 312
+- describe communication interface 314
+- describe processor 304
+- describe software instructions
+- describe memory 306 and storage component 308
+- describe data storage
+- describe module implementation
+- introduce autonomous vehicle compute 400
+- describe perception system 402
+- describe planning system 404
+- describe localization system 406
+- describe control system 408
+- describe database 410
+- describe perception system 402 functionality
+- describe planning system 404 functionality
+- describe localization system 406 functionality
+- describe control system 408 functionality
+- describe machine learning model implementation
+- describe database 410 functionality
+- describe data storage in database 410
+- describe 2D and 3D map storage
+- describe drivable region data storage
+- describe LiDAR sensor data generation
+- describe image representation of objects
+- describe field of view of LiDAR sensor
+- describe autonomous vehicle compute 400 implementation
+- describe remote system communication
+- describe system configuration
+- introduce database implementation
+- describe autonomous vehicle systems
+- illustrate convolutional neural network
+- define convolution layers
+- explain sub-sampling layer
+- describe perception system operations
+- detail convolution operations
+- illustrate data processing
+- explain output generation
+- describe feature value identification
+- train convolutional neural network
+- illustrate example operation of CNN
+- provide image data as input
+- perform first convolution function
+- explain filter configuration
+- describe output generation
+- provide outputs to downstream layer
+- add bias value
+- perform first subsampling function
+- explain aggregation function
+- describe max pooling function
+- describe average pooling function
+- generate subsampled convolved output
+- perform second convolution function
+- explain filter configuration
+- introduce CNN architecture
+- describe output of each neuron
+- add bias value to aggregates
+- determine final value with activation function
+- perform subsampling function
+- generate output based on subsampling
+- provide output to fully connected layers
+- generate output associated with prediction
+- introduce transformer model
+- describe self-attention mechanism
+- capture relative significance of input portions
+- generate output with attention vectors
+- describe encoder stack
+- describe decoder stack
+- generate context-aware encoding
+- apply weights to incorporate other portions
+- include multi-headed attention mechanism
+- learn weights during training
+- decode input to generate output
+- generate context-aware decoding
+- introduce system for predicting agent importance score
+- describe vehicle controller and sensors
+- monitor various parameters associated with vehicle
+- supply data to vehicle controller
+- determine trajectory prediction
+- analyze attention information
+- generate forward or backward prediction
+- measure importance score of each agent
+- introduce agent importance prediction model
+- analyze attention weights between ego vehicle and agents
+- represent degree of agent's impact on ego vehicle
+- share attention weights between forward and backward prediction
+- increase accuracy of output
+- determine agent importance scores without ground-truth labels
+- predict future trajectories of agents
+- model interactions between agents
+- use graph attention mechanism
+- process input data with agent-to-agent attention system
+- compute agent output features
+- use transformer attention system to process input data
+- define attention vector
+- formulate attention vector
+- generalize attention modules
+- derive transformer attention
+- express attention vector
+- aggregate importance scores
+- implement agent importance prediction
+- demonstrate agent impact
+- determine correlation
+- adjust trajectory path
+- illustrate distribution of ego trajectory delta
+- illustrate distribution of attention values
+- illustrate quantile distribution of attention value and trajectory angular delta
+- illustrate plots of average normalized attention value
+- perform ablation study of aggregation functions
+- show techniques for allocating attention to agents
+- illustrate process for predicting agent importance score
+- process input features associated with agents
+- determine output features associated with agents
+- predict importance score of each agent
+- determine movements of vehicle based on predictions
+- describe system for predicting agent importance score
+- describe non-transitory computer-readable medium
+- describe method for predicting agent importance score
+- describe further non-limiting aspects or embodiments
+- describe system with at least one sensing device
+- describe system with agent importance prediction model
+- describe system with interaction model using single attention layer
+- describe system with interaction model using multiple attention layers
+- describe system with at least one sensing device positioned on vehicle
+- describe method with processing of input features
+- describe method with determining output features
+- describe method with predicting importance score
+- describe method with determining movements of vehicle
+- describe method with modifying input features
+- describe method with determining correlation
+- describe method with normalizing importance score
+- describe method with detecting input features using sensing device
+- describe method with generating ranking of agents
+- describe method with adjusting movements of vehicle
+- describe method with causing vehicle to operate
+- describe non-transitory storage media
+- describe operations performed by processor
+- describe processing of input features
+- describe determining output features
+- describe predicting importance score
+- describe determining movements of vehicle
+- describe further non-limiting aspects or embodiments
+- describe system with vehicle controller
+- describe system with agent importance prediction component
+- describe system with transformer model
+- describe system with trajectory prediction model
+- describe method with processing of input features
+- describe method with determining output features
+- describe method with predicting importance score
+- describe method with determining movements of vehicle
+- describe method with modifying input features
+- describe method with determining correlation
+

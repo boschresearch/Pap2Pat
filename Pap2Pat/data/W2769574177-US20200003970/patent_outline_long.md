@@ -1,0 +1,160 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to couplers for waveguide structures
+
+## BACKGROUND
+
+- introduce silicon photonics
+- describe advantages of silicon photonics
+- describe limitations of current couplers
+- describe current coupler technology
+- motivate need for improved couplers
+
+## SUMMARY OF THE DISCLOSURE
+
+- introduce apodised grating coupler
+- describe benefits of apodised grating coupler
+- describe grating coupler structure
+- describe fill factor variation
+- describe Bragg condition
+- describe apodisation function
+- describe linear apodisation function
+- describe etch depth selection
+- describe coupling efficiency optimisation
+- describe design process
+- describe fabrication process
+- describe non-transitory computer readable media
+- describe method of using grating coupler
+- describe photonic apparatus
+- describe grating coupler embodiment
+- describe apodisation function embodiment
+- describe etch depth embodiment
+- describe fill factor variation embodiment
+- describe Bragg condition embodiment
+- describe silicon on insulator waveguide embodiment
+- describe top silicon oxide layer embodiment
+- describe linear apodisation function equation
+- describe Bragg condition equation
+- describe effective refractive index calculation
+- describe method of designing grating coupler
+- describe setting coupling wavelength and diffraction angle
+- describe performing mode simulations
+- describe setting apodisation function parameters
+- describe iteratively determining grating element lengths
+- describe generating design data
+- describe simulating coupling of light
+- describe evaluating coupling efficiency
+- describe evaluating transmission spectrum
+- describe designing multiple grating couplers
+- describe simulating multiple grating couplers
+- describe evaluating multiple grating couplers
+- describe method of making grating coupler
+
+## DETAILED DESCRIPTION
+
+- define terms used in the disclosure
+- describe meaning of terms based on known meaning and description
+- introduce exemplary embodiments
+- describe structure of Silicon On Insulator wafer
+- describe handle layer
+- describe BOX layer
+- describe device layer
+- describe TOX layer
+- describe waveguide formation
+- describe grating coupler
+- describe grating elements
+- describe fill factor
+- describe effective refractive index
+- describe Bragg condition
+- describe coupling light into/out of grating coupler
+- describe drawbacks of conventional uniform grating couplers
+- describe low coupling efficiency
+- describe mode mismatch limitation
+- introduce approach to improve coupling efficiency
+- describe varying etching depth or fill factor
+- describe using Genetic Algorithm for optimization
+- describe limitations of Genetic Algorithm approach
+- introduce present disclosure's approach
+- describe non-uniform grating pattern
+- describe apodization function
+- describe linear apodization function
+- describe advantages of linear apodization
+- describe grating coupler design
+- describe linearly apodized grating elements
+- describe limitations of linear apodization
+- describe need to vary total grating element length
+- describe adjusting total length to satisfy Bragg condition
+- describe calculating effective refractive index
+- describe calculating tooth and trench lengths
+- describe advantages of present disclosure's approach
+- introduce method of designing grating coupler
+- describe system for designing and fabricating grating coupler
+- describe grating design apparatus
+- describe controller and non-transitory computer readable medium
+- describe user interface input/output subsystem
+- describe inputs to grating design process
+- describe outputs from grating design process
+- introduce grating design method
+- set parameters for grating design
+- perform mode simulations
+- set apodization function parameters
+- determine length of etched and unetched sections
+- calculate fill factor
+- determine total length of grating element
+- determine values of Le and L0
+- store grating design data
+- select grating coupler design for desired coupling efficiency
+- optimize etch depth and apodization factor
+- simulate coupling of light
+- evaluate coupling efficiency
+- adjust coupling wavelength
+- sweep apodization function parameters
+- design multiple grating couplers
+- simulate coupling of light for multiple grating couplers
+- evaluate coupling efficiency for multiple grating couplers
+- sweep etch depth
+- design multiple grating couplers with different etch depths
+- perform mode simulations for multiple etch depths
+- simulate coupling of light for multiple etch depths
+- evaluate coupling efficiency for multiple etch depths
+- select optimal grating design
+- determine optimal etch depth and apodization function parameters
+- illustrate coupler design and optimization process
+- describe example of apodized grating design
+- set parameters for example
+- describe grating design and optimization results
+- introduce grating design parameters
+- sweep etch depth and apodization factor
+- simulate coupling efficiency using FDTD
+- evaluate coupling efficiency for each design
+- create model of grating design
+- simulate Gaussian beam output
+- measure optical power coupled to waveguide
+- calculate coupling efficiency
+- optimize fiber mode offset
+- show simulation results in contour plot
+- plot coupling efficiency against etch depth
+- analyze peak coupling efficiency
+- compare with genetic algorithm-derived solutions
+- design optimized apodized grating coupler
+- simulate outcoupling device
+- measure directionality and reflectivity
+- compare with uniform grating
+- encode grating design data
+- pass design data to CMOS masking system
+- fabricate grating coupler
+- etch silicon waveguide
+- clad with TOX cladding layer
+- show fabricated grating design
+- assess coupling efficiency of fabricated gratings
+- measure fiber-to-fiber transmission
+- calculate grating coupling efficiency
+- show measured coupling efficiency curve
+- compare with theoretical coupling efficiency
+- highlight advantages over other approaches
+- compare with edge coupling approach
+- discuss fabrication and testing advantages
+- conclude grating coupler design and fabrication method
+

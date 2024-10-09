@@ -1,0 +1,197 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- introduce field of invention
+
+## BACKGROUND
+
+- introduce 5mC and 5hmC
+- describe TET oxidation
+- describe 5fC and 5caC
+- describe demethylation process
+- describe 5mC in RNA
+- describe 5hmC in RNA
+- describe limitations of bisulfite sequencing
+- describe RNA-BS-seq
+- describe need for new method
+- conclude background
+
+## SUMMARY OF THE INVENTION
+
+- introduce TAPS method
+- describe TAPS reaction
+- describe advantages of TAPS
+- describe method for identifying 5mC
+- describe blocking group addition
+- describe 5mC conversion
+- describe DHU conversion
+- describe sequence detection
+- describe quantitative analysis
+- describe nucleic acid types
+- describe method for identifying 5mC or 5hmC
+- describe 5mC and 5hmC conversion
+- describe DHU conversion
+- describe sequence detection
+- describe quantitative analysis
+- describe nucleic acid types
+- describe method for identifying 5mC and 5hmC
+- describe 5mC identification
+- describe 5hmC identification
+- describe comparison of results
+- describe quantitative analysis
+- describe nucleic acid types
+- describe blocking group addition
+- describe TET enzyme
+- describe method for identifying 5caC or 5fC
+- describe method for identifying 5caC
+- describe method for identifying 5fC
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce TAPS method
+- describe advantages over bisulfate sequencing
+- outline method for identifying 5mC
+- provide DNA sample
+- modify DNA by blocking 5hmC
+- convert 5mC to 5caC and/or 5fC
+- convert 5caC and/or 5fC to DHU
+- detect sequence of modified target DNA
+- quantify 5mC modification frequency
+- describe blocking 5hmC with sugar
+- outline glucosyltransferase enzyme reaction
+- convert 5mC to 5caC and/or 5fC using TET enzyme
+- convert 5caC and/or 5fC to DHU using borane oxidation
+- outline method for identifying 5mC or 5hmC
+- modify DNA by converting 5mC and 5hmC to 5caC and/or 5fC
+- convert 5caC and/or 5fC to DHU
+- detect sequence of modified target DNA
+- quantify 5mC or 5hmC modification frequency
+- outline method for identifying 5mC and 5hmC
+- compare results of 5mC and 5mC or 5hmC methods
+- outline method for identifying 5caC or 5fC
+- convert 5caC and/or 5fC to DHU
+- detect sequence of modified target DNA
+- define method for identifying 5fC in target DNA
+- outline steps of method
+- describe blocking 5caC in DNA sample
+- detail quantitative measure of 5fC modification
+- introduce RNA sample application
+- define target nucleic acid
+- describe nucleic acid sample sources
+- introduce RNA sample/target RNA
+- describe RNA sample sources
+- introduce DNA sample/target DNA
+- describe DNA sample sources
+- detail DNA sample quantities
+- describe converting 5mC and 5hmC to 5caC and/or 5fC
+- introduce TET enzyme
+- describe converting 5caC and/or 5fC to DHU
+- introduce reducing agent
+- describe amplifying copy number of modified target nucleic acid
+- introduce PCR and cloning methods
+- describe detecting sequence of modified target nucleic acid
+- introduce sequencing methods
+- describe kits for identification of 5mC and 5hmC
+- detail kit components
+- introduce 5hmC blocking group and glucosyltransferase enzyme
+- describe oxidizing agent
+- introduce reagents for blocking 5fC and 5caC
+- describe reagents for isolating DNA or RNA
+
+## EXAMPLES
+
+- prepare model DNA for conversion test
+- synthesize DNA oligos with C, 5mC, and 5hmC
+- synthesize DNA oligo with 5fC
+- synthesize DNA oligo with 5caC
+- generate 222 bp model DNA
+- methylate 222 bp model DNA
+- prepare model DNA for TAPS, TAPSβ, and CAPS validation
+- prepare model DNA for polymerase test and Sanger sequencing
+- prepare model DNA for PCR bias test
+- prepare methylated bacteriophage lambda genomic DNA
+- validate DNA methylation with HpaII digestion assay
+- prepare 2 kb unmodified spike-in controls
+- prepare 120 mer spike-in controls
+- methylate 120 mer spike-in controls
+- generate synthetic spike-in with N5mCNN and N5hmCNN
+- digest DNA samples with Nuclease P1 and deaminase inhibitor
+- treat samples with alkaline phosphatase and phosphodiesterase I
+- filter samples with Amicon Ultra-0.5 mL 10 K centrifugal filters
+- perform HPLC-MS/MS analysis
+- express and purify NgTET1 protein
+- characterize NgTET1 protein
+- express and purify mTET1CD
+- oxidize with NgTET1
+- oxidize with mTET1
+- reduce with pic-BH3
+- reduce with pyridine borane
+- reduce single nucleoside with pic-borane
+- block 5hmC
+- block 5fC
+- block 5caC
+- oxidize 5hmC
+- validate TAPS conversion with TaqαI assay
+- perform quantitative polymerase chain reaction (qPCR)
+- validate CmCGG methylation level with HpaII-qPCR assay
+- perform Sanger sequencing
+- describe TET oxidation of model DNA oligos
+- describe TET oxidation of genomic DNA
+- describe borane reduction of DNA sample
+- describe pyridine borane reduction of oxidised DNA
+- describe DNA damage test
+- detail mESCs culture and isolation
+- prepare mESC gDNA for TAPS and WGBS
+- perform whole-genome bisulfite sequencing
+- perform whole-genome TAPS
+- prepare low-input whole-genome TAPS with dsDNA library
+- prepare low-input whole-genome TAPS with ssDNA library
+- prepare cell-free DNA TAPS
+- process WGBS data
+- trim WGBS reads
+- map WGBS reads to genome
+- filter WGBS reads
+- preprocess TAPS data
+- trim TAPS reads
+- map TAPS reads to genome
+- detect converted bases in TAPS
+- analyze sequencing quality of TAPS and WGBS
+- analyze coverage of TAPS and WGBS
+- introduce examples
+- generate genome coverage files
+- subsample TAPS reads
+- analyze Cytosine modifications
+- perform statistical analyses
+- visualize genomic regions
+- simulate data processing time
+- describe pic-BH3 reaction
+- screen chemicals for 5caC reaction
+- analyze MALDI results
+- describe pyridine borane reaction
+- analyze HPLC-MS/MS results
+- introduce Pyridine borane Sequencing
+- describe TET-Assisted Pyridine borane Sequencing
+- introduce TAPSβ and CAPS
+- evaluate TAPS performance
+- apply TAPS to model DNA
+- apply TAPS to genomic DNA
+- analyze HPLC-MS/MS results
+- compare TAPS to bisulfite sequencing
+- analyze DNA recovery
+- analyze DNA length
+- analyze PCR bias
+- perform whole genome sequencing
+- assess TAPS accuracy
+- analyze spike-in controls
+- compare TAPS to WGBS
+- analyze sequencing quality
+- analyze mapping rates
+- analyze coverage distribution
+- analyze CpG Islands
+- analyze demethylation
+- analyze modification-coverage bias
+- analyze methylation measurements
+- test TAPS with low input DNA
+- test TAPS with circulating cell-free DNA
+

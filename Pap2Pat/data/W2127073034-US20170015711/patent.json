@@ -1,0 +1,499 @@
+{
+    "id": "US20170015711",
+    "authors": [
+        "Andre Marozsan",
+        "Albert Cupo",
+        "John Moore"
+    ],
+    "title": "MATERIALS AND METHODS FOR PRODUCING CLEAVED, HIV-1 ENVELOP GLYCOPROTEIN TRIMERS",
+    "date": "2015-03-09 00:00:00",
+    "abstract": "Expression vectors and mammalian cell lines containing them are described that enable the recombinant production of HIV-1 envelope proteins, including SOSIP modified gp140 trimers capable of inducing broadly neutralizing antibodies.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "The development of a vaccine against HIV-1 infection remains a significant global health problem. One of the major vaccine design concepts is the induction of high titer broadly neutralizing antibodies (bNAbs) that are capable of preventing HIV-1 entry into target cells, and hence intervening against virus transmission (Burton et al., Nat. Immunol., 5: 233-236 (2004)). A relevant target for bNAbs is the envelope, or Env, glycoprotein complex, or spike, on the virus surface (Zwick et al., Curr. HIV. Res., 5: 608-624 (2007); Walker et al., Curr. Opin. Immunol., 22: 358-366 (2010)). This complex, a trimer of gp120/gp41 heterodimers, attaches to receptors on target cells and then mediates fusion of the viral and cell membranes (Liu et al., Nature, 455: 109-113 (2008)). Any antibodies that can bind to a sufficient number of functional Env spikes will impede one or more stages in the receptor-binding and fusion process, thereby neutralizing infectivity (Zwick et al., Curr. HIV. Res., 5: 608-624 (2007)).",
+                        "The development of vaccines which induce bNAbs remains elusive. One potential strategy is to create structural and antigenic mimics of the native, virion-associated Env spike. To do so a stop codon is inserted to truncate the gp41 protein prior to the membrane-spanning domain, thereby yielding soluble proteins that can be secreted from producer cells and purified. Unfortunately, without suitable sequence modifications, soluble gp140s are highly unstable and either disintegrate completely into their constituents or adopt non-native configurations that may be compromised from the perspective of bNAb induction (Guttman et al., J. Virol., 87: 11462-11475 (2013); Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110: 18256-18261 (2013)). One effective strategy for making soluble, native-like trimers involves introducing \u201cSOSIP\u201d modifications: (i) a disulfide bond (designated SOS) to link the gp120 and gp41 ectodomain (gp41ECTO) components, and (ii) a point substitution (I559P) in gp41ECTO that creates additional stability (Sanders et al., J. Virol., 76: 8875-8889 (2002); Binley et al., J. Virol., 74: 627-643 (2000); Binley et al., J. Virol., 76: 2606-2616 (2002)). Proteolytic cleavage between the gp120 and gp41 subunits is also critical for making native-like trimers, and is facilitated by optimizing the cleavage site and co-expressing the furin protease (Binley et al., J. Virol., 74: 627-643 (2000); Binley et al., J. Virol., 76: 2606-2616 (2002)). At present, the most advanced soluble, cleaved trimers, based on a subtype A founder virus, are designated BG505 SOSIP.664 (Sanders et al., PLoS Pathog., 9: e1003618 (2013); Wu et al., J. Virol., 80: 835-844 (2006); Hoffenberg et al., J. Virol., 87: 5372-5383 (2013)). These highly homogeneous trimers closely resemble virus spikes when visualized by negative stain electron microscopy (EM) (Sanders et al., PLoS Pathog., 9: e1003618 (2013)). They also have highly favorable antigenic properties, expressing multiple bNAb epitopes while occluding most epitopes for non-neutralizing antibodies (non-NAbs) (Ringe et al., Proc. Natl. Acad. Sci. U.S.A.,110: 18256-18261 (2013); Sanders et al., PLoSPathog., 9: e1003618 (2013)). In addition, the structure of these trimers has been determined by both x-ray diffraction and cryo-EM at \u02dc5-6 \u212b resolution (Julien et al., Science, 342: 1477-1483 (2013); Lyumkis et al., Science, 342: 1484-1490 (2013)).",
+                        "A need remains for methods facilitating the production and manufacture of HIV Env glycoproteins (such as BG505 SOSIP.664 gp140 trimers), of sufficient quality, and in sufficient quantity, to serve as pre-clinical research reagents, and clinical-grade immunogens."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce HIV-1 infection problem",
+                        "describe Env glycoprotein complex",
+                        "explain limitations of soluble gp140s",
+                        "introduce SOSIP modifications",
+                        "describe BG505 SOSIP.664 trimers",
+                        "highlight antigenic properties",
+                        "identify need for improved production methods"
+                    ],
+                    "num_characters": 3684,
+                    "outline_medium": [
+                        "motivate HIV vaccine development",
+                        "describe Env glycoprotein complex",
+                        "discuss limitations of soluble gp140s"
+                    ],
+                    "outline_short": [
+                        "discuss HIV vaccine development challenges"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "In one aspect, the invention provides an expression vector. The vector comprises a first nucleic acid sequence encoding an HIV Env glycoprotein and a second nucleic acid sequence encoding a furin protease, wherein (i) expression of the nucleic acid sequence encoding the Env glycoprotein is controlled by a first constitutive promoter and the expression of the nucleic acid sequence encoding the furin protease is controlled by a second constitutive promoter, (ii) the first constitutive promoter is more potent than the second constitutive promoter, and (iii) the expression vector integrates into the genome of a mammalian cell.",
+                        "The invention further provides a mammalian cell comprising the aforementioned expression vector. The mammalian cell expresses furin-cleaved HIV Env glycoproteins.",
+                        "The invention also provides a method of generating a mammalian cell line that expresses cleaved HIV Env glycoproteins. The method comprises (a) transfecting one or more mammalian cells with the aforementioned expression vector of the invention under conditions wherein the expression vector integrates into the genome of the one or more mammalian cells, (b) selecting one or more mammalian cells comprising the expression vector integrated into the genome thereof and expressing cleaved HIV Env glycoproteins, and (c) propagating the selected mammalian cells indefinitely, thereby generating a mammalian cell line that expresses cleaved HIV Env glycoproteins.",
+                        "The invention also provides a method of producing cleaved Env glycoproteins. The method comprises (i) culturing an isolated mammalian cell comprising the aforementioned expression vector under conditions to express the first and second nucleic acid sequences to provide HIV Env glycoproteins and furin proteases, and (ii) allowing the furin protease to cleave the Env glycoproteins to provide cleaved Env glycoproteins."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce expression vector",
+                        "describe mammalian cell line",
+                        "outline method of producing cleaved Env glycoproteins"
+                    ],
+                    "num_characters": 1876,
+                    "outline_medium": [
+                        "introduce expression vector for HIV Env glycoproteins"
+                    ],
+                    "outline_short": [
+                        "introduce expression vector for HIV Env glycoproteins"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The invention provides an expression vector comprising nucleic acid sequences encoding an HIV Env glycoprotein and furin. As used herein, \u201cexpression vector\u201d refers to a plasmid or virus designed to express a protein of interest in cells. In one embodiment the expression vector is a plasmid. \u201cPlasmid\u201d refers to small DNA molecules physically separated from chromosomal DNA. The plasmid may be, e.g., a circular, double stranded DNA molecule.",
+                        "Any suitable expression vector or vector system, e.g., a recombinant vector, can be used in accordance with the invention, so long as the expression vector or vector system can be transfected into mammalian cells and can comprise nucleic acid sequences encoding an HIV Env glycoprotein and furin as described herein. Preferably, the expression vector integrates into the genome of the mammalian cells. Examples of vectors that integrate in a site specific manner include, for example, components of the Flp-in\u2122 system (Invitrogen, Carlsbad, Calif) (e.g., pcDNA.TM.5/FRT), or the cre-lox system, such as can be found in the pExchange-6 core vectors (Stratagene, La Jolla, Calif.). In a preferred embodiment, the expression vector is a pcDNATM5/FRT vector suitable for use with the Flp-In\u2122 expression system (Invitrogen, Carlsbad, Calif.).",
+                        "Viral expression vectors also can be used. Representative viral expression vectors include, for example, the adenovirus-based vectors (e.g., the adenovirus-based Per.C6 system available from Crucell, Inc. (Leiden, The Netherlands)), lentivirus-based vectors (e.g., the lentiviral-based pLPI from Life Technologies (Carlsbad, Calif.)), and retroviral vectors (e.g., the pFB-ERV plus pCFB-EGSH from Stratagene (La Jolla, Calif.)).",
+                        "As used herein, \u201cHIV Env glycoprotein\u201d or \u201cEnv glycoprotein\u201d refers to the Env complexes, or spikes, which occur on the HIV virion surface (see e.g. Zwick et al., Curr. HIV. Res., 5: 608-624 (2007); Walker et al., Curr. Opin. Immunol., 22: 358-366 (2010)). This complex occurs in nature as a trimer of gp120/gp41 heterodimers. A gene encoding an HIV Env glycoprotein is referred to herein as an \u201cenv\u201d gene. The HIV Env glycoprotein, and the nucleic acid sequence encoding it, may be derived from any strain, group, or clade (subtype) of the HIV virus. In one embodiment the HIV Env glycoprotein is derived from HIV-1, group M. In especially preferred embodiments the HIV Env glycoprotein is derived from Subtypes A, B or C. Preferably, the HIV Env glycoprotein is derived from virus BG505 (a Subtype A virus). In another preferred embodiment the HIV Env glycoprotein is derived from B41, an env gene isolated from a Subtype B founder virus. In another preferred embodiment, the HIV Env glycoprotein is derived from a Subtype C virus. The HIV Env glycoprotein may also be a genetically modified Env protein and/or Env protein fragment. Suitable Env proteins are known in the art and include, for example, gp160, gp120, gp41, gp145, and gp140. In a preferred embodiment the HIV Env glycoprotein is gp140 or a modified gp140. In preferred embodiments, the HIV Env glycoproteins form trimers. The Env glycoproteins may also be fusion proteins. For example, all or part of an HIV Env protein (e.g., gp120 or gp160), can be fused to all or part of another HIV protein such as Pol.",
+                        "The expression vector of the invention comprises a nucleic acid sequence encoding an HIV Env glycoprotein. To optimize protein production, the nucleic acid sequence encoding the HIV Env glycoprotein can further comprise a polyadenylation site following the coding region of the nucleic acid molecule. Any suitable polyadenylation sequence can be used, including a synthetic optimized sequence, as well as the polyadenylation sequence of BGH (Bovine Growth Hormone), polyoma virus, TK (Thymidine Kinase), EBV (Epstein Barr Virus), and the papillomaviruses, including human papillomaviruses and BPV (Bovine Papilloma Virus) and SV40 (Human Sarcoma Virus-40). In one embodiment, the polyadenylation sequence is a synthetic Poly A modeled from the HSV Thymidine Kinase Poly A (New England BioLabs, Ipswich, Mass.). Also, preferably all the proper transcription signals (and translation signals, where appropriate) will be correctly arranged such that the exogenous nucleic acid will be properly expressed in the cells into which it is introduced. Moreover, the nucleic acid sequence can further comprise the appropriate sequences for processing, secretion, intracellular localization, and the like.",
+                        "In a one embodiment, the first nucleic acid sequence encoding an HIV Env glycoprotein is genetically modified such that the gp41 domain of the HIV Env glycoprotein is truncated prior to the hydrophobic membrane spanning domain resulting in a gp41ECTO domain. This can be achieved, for example, by introducing a stop codon at gp41ECTO residue 664 to improve homogeneity and solubility (see Khayat et al., J. Virol., 87: 9865-9872 (2013); Klasse et al., J. Virol., 87: 9873-9885 (2013)). The resultant HIV Env glycoproteins are trimers of gp120/gp41ECTO heterodimers.",
+                        "In an another embodiment, the first nucleic acid sequence encoding an HIV glycoprotein is genetically modified such that a disulfide bond (designated SOS) is introduced into the HIV Env glycoprotein linking the gp120 domain and the gp41ECTO domains. This can be achieved by, for example, substituting residues A501 and T605 in the Env glycoprotein with cysteine. Preferably the isoleucine occurring at position 559 of the gp41ECTO domain is substituted with proline. These modifications are referred to collectively as \u201cSOSIP modifications.\u201d",
+                        "In addition to the aforementioned modifications, the Env glycoprotein can comprise other modifications, such as, for example, the substitution of REKR to RRRRRR in gp120 for cleavage enhancement, (see Binley et al., J. Virol., 76: 2606-2616 (2002)), and the insertion of a TPA leader peptide to increase gene expression (see Sanders et al., PLoS Pathog., 9: e1003618 (2013); Sellhorn et al., Vaccine, 28: 430-436 (2009)). These and other modifications can be introduced via methods known in the art such as, e.g., site-directed mutagenesis. It will further be understood that HIV Env glycoproteins expressed in mammalian cells may undergo post-translational modification. Post translational modifications associated with mammalian expression may include, without limitation, phosphorylation, glycosylation, carboxylation, ubiquitination, myristylation, or lipidation.",
+                        "In a preferred embodiment, the HIV Env glycoprotein is BG505 SOSIP.664 (the amino acid sequence of which comprises SEQ ID NO: 1). BG505 SOSIP.664 is an HIV Env glycoprotein expressed derived from HIV subtype A transmitted/founder strain BG505 in which the SOS and I559P modifications have been introduced (see, e.g., Sanders et al., PLoS Pathog., 9: e1003618 (2013); Wu et al., J. Virol., 80: 835-844 (2006); Hoffenberg et al., J. Virol., 87: 5372-5383 (2013)). The nucleotide sequence encoding BG505 SOSIP.664 is provided as SEQ ID NO: 2. In another preferred embodiment, the HIV Env glycoprotein is B41 SOSIP.664 (the amino acid sequence of which comprises SEQ ID NO: 3). The nucleotide sequence encoding B41 SOSIP.664 is provided as SEQ ID NO: 4. The B41 SOSIP.664 protein is based on a Subtype B HIV virus. It is modified relative to wild type in similar fashion to BG505 SOSIP.664 (see Pugach et al., J. Virol., Advance online publication, doi: 10112/JVI.03473-14 (2015)). In another preferred embodiment, the HIV Env Glycoprotein is a SOSIP modified HIV Env glycoprotein derived from an HIV clade C virus (the amino acid sequence of which comprises SEQ ID NO: 5). The nucleotide sequence encoding the Env glycoprotein derived from an HIV clade C virus is provided as SEQ ID NO: 6. It will be understood that the vectors described herein can be readily adapted to facilitate the insertion of other HIV Env glycoprotein genes.",
+                        "The expression vector of the invention also comprises a second nucleic acid sequence encoding furin protease. Furin protease is a calcium-dependent serine endoprotease that cleaves various precursor proteins. It is known in the art as one of the proteases responsible for the proteolytic cleavage of the HIV env proteins gp160 and gp140 (Hallenberger et al., Nature, 360(6402): 358-61 (1992)). To optimize furin protease production, the nucleic acid sequence encoding the furin protease preferably includes all the proper transcription signals (and translation signals, where appropriate). Moreover, the nucleic acid sequence can further comprise the appropriate sequences for processing, secretion, intracellular localization, and the like.",
+                        "In one aspect, the expression vector of the present invention is capable of co-expressing an Env glycoprotein and furin protease, such that the furin protease is expressed in mammalian cells at levels sufficient to affect efficient HIV Env glycoprotein cleavage without inducing toxicity to the host cells. Accordingly, the first nucleic acid sequence encoding the HIV Env glycoprotein is operably linked to a first promoter, while the second nucleic acid sequence encoding furin protease is operably linked to a second, different, promoter. Each of the first and second promoters can be any suitable promoter obtained or derived from any source, and desirably is a constitutive promoter or an inducible promoter. A constitutive promoter is a promoter that actively promotes transcription of the regulated gene at all times in the cell. An inducible promoter becomes active only in response to specific stimuli. In one embodiment, each of the first promoter and second promoter is a constitutive promoter.",
+                        "A large number of promoters, including constitutive, and inducible, from a variety of different sources are well known in the art. Representative sources of promoters include for example, virus, mammal, insect, plant, yeast, and bacteria, and suitable promoters from these sources are readily available, or can be made synthetically, based on sequences publicly available, for example, from depositories such as the ATCC as well as other commercial or individual sources. Promoters can be unidirectional (i.e., initiate transcription in one direction) or bi-directional (i.e., initiate transcription in either a 3\u2032 or 5\u2032 direction). Non-limiting examples of promoters include, for example, the T7 bacterial expression system, pBAD (araA) bacterial expression system, the cytomegalovirus (CMV) promoter, the SV40 promoter, and the Rous Sarcoma Virus promoter. Inducible promoters include, for example, the Tet system (U.S. Pat. Nos. 5,464,758 and 5,814,618), the Ecdysone inducible system (No et al., Proc. Natl. Acad. Sci., 93: 3346-3351 (1996)), the T-REx\u2122 system (Invitrogen, Carlsbad, Calif.), LACSWITCH\u2122 system (Stratagene, San Diego, Calif.), and the Cre-ERT tamoxifen inducible recombinase system (Indra et al., Nuc. Acid. Res., 27: 4324-4327 (1999); Nuc. Acid. Res., 28: e99 (2000); U.S. Pat. No. 7,112,715; and Kramer & Fussenegger, Methods Mol. Biol., 308: 123-144 (2005)).",
+                        "In one embodiment, either or both the first promoter or the second promoter can be a viral promoter. Suitable viral promoters include, for instance, cytomegalovirus (CMV) promoters, such as the CMV immediate-early promoter (described in, for example, U.S. Pat. Nos. 5,168,062 and 5,385,839), promoters derived from human immunodeficiency virus (HIV), such as the HIV long terminal repeat promoter, Rous sarcoma virus (RSV) promoters, such as the RSV long terminal repeat, mouse mammary tumor virus (MMTV) promoters, HSV promoters, such as the Lap2 promoter or the herpes thymidine kinase promoter (Wagner et al., Proc. Natl. Acad. Sci., 78, 144-145 (1981)), promoters derived from SV40 or Epstein Barr virus, an adeno-associated viral promoter, such as the p5 promoter, and the like. A preferred viral promoter for use in the invention is a CMV promoter.",
+                        "In another embodiment, either or both the first promoter and the second promoter can be a eukaryotic cellular promoter, i.e., a promoter that drives expression of a cellular protein. Preferred eukaryotic cellular promoters for use in the invention will depend on the desired expression profile to produce the HIV Env glycoprotein and/or furin protease. In one aspect, the cellular promoter is preferably a constitutive promoter that works in a variety of cell types. Suitable constitutive promoters can drive expression of genes encoding transcription factors, housekeeping genes, or structural genes common to eukaryotic cells. A preferred eukaryotic cellular promoter for use in the invention is the constitutive promoter human elongation factor-1 alpha or EF1-alpha.",
+                        "In one embodiment, the activity of the first promoter is greater than the activity of the second promoter, that is, the first promoter is more potent than the second promoter. Ideally, the activity of the first promoter is at least 2-fold greater than, but not more than 20-fold greater than, the activity of the second promoter. For example, the activity of the first promoter can be about 3-fold, about 5-fold, about 10-fold, about 12-fold, or about 15-fold greater than the activity of the second promoter. It will be understood that the activity of a given promoter, and therefore the relative activity of the first and second promoters, may vary from cell-type to cell-type. The activity of the first and second promoters can be determined by using standard assays for measuring gene expression, which include but are not limited to northern blotting, RT-qPCR, serial analysis of gene expression (SAGE), and/or whole transcriptome shotgun sequencing (WTSS or RNA-Seq).",
+                        "In a preferred embodiment, the first promoter is CMV and the second promoter is EF 1-alpha.",
+                        "In accordance with the invention, the expression vector is transfected into a mammalian cell. The mammalian cell can be any mammalian cell suitable for expression. The mammalian cell can be, for example, selected from the group consisting of CHO cells, 293T cells, COS cells, HEK293 cells, 3T3 cells, NS0 cells, Sp20 cells, Vero cells, HeLa cells HepG2 cells, SkHep cells, and BHK cells. In some preferred embodiments, the mammalian cell is a CHO cell. In other preferred embodiments the mammalian cell is a 293T cell. The mammalian cell can comprise any modification deemed useful, for example, in protein expression generally, or expression of the HIV Env glycoprotein specifically. For example, suitable CHO cells can be dihydrofolate reductase (DHFR)-deficient, or modified to include a tetracycline repressor or an expression control vector, or have some other recombinant or selected modification. Cells suitable for use in the invention are capable of producing proteins having at least one post-translational modification typically understood by one of ordinary skill in the art to be associated with mammalian expression.",
+                        "The invention provides for a mammalian cell transformed or transfected with an expression vector. Means of transforming, or transfecting, cells with exogenous DNA molecules are well known in the art. For example, without limitation, a DNA molecule is introduced into a cell using standard transformation or transfection techniques well known in the art such as calcium-phosphate or DEAE-dextran-mediated transfection, protoplast fusion, electroporation, liposomes and direct microinjection (see, e.g., Sambrook & Russell, Molecular Cloning: A Laboratory Manual, Cold Spring Harbor Laboratory Press, New York (2001), pp. 1.1-1.162, 15.1-15.53, 16.1-16.54). A widely used method for transformation is transfection mediated by either calcium phosphate or DEAE-dextran.",
+                        "According to the invention the expression vector is integrated within the genome of the host mammalian cell. This integration can be achieved via methods known in art. In a preferred embodiment, the mammalian cells and expression vector are components of the Flp-In\u2122 System (Invitrogen, Carlsbad, Calif.). The mammalian cells are co-transfected with a pOG44 Flp recombinase plasmid and the expression vector. The expression vector is then integrated into the host cell genome in an Flp-recombinase-dependent manner. Briefly, integration occurs via recombination between specific FRT sites on the interacting DNA molecules, e.g. the expression vector and host genome (pcDNA\u21225/FRT Vector, Instruction Manual, Ver. pp. 1-8. Invitrogen, USA 2012). The FRT site, originally isolated from Saccharomyces cerevisiae, serves as a binding site for Flp recombinase and has been well-characterized (see Gronostajski et al, J. Biol. Chem., 260, 12320-12327 (1985); Jayaram, Proc. Natl. Acad. Sci. USA, 82: 5875-79 (1985); Sauer, Curr. Opin. Biotechnol. 5: 521-27 (1994); Senecoff et al., Proc. Natl. Acad. Sci. USA, 82: 7270-74 (1985)). Cell lines suitable for use in the Flp-In\u2122 System contain a single integrated FRT site. Exemplary cell lines include Flp-In\u2122-CHO cells and Flp-In\u2122-293 cells (Invitrogen, Carlsbad, Calif.).",
+                        "The isolation of stably transformed cells requires the introduction of a selectable marker in conjunction with the transformation with expression vector. For example, the expression vector may contain a gene for hygromycin resistance providing for the selection of transformed cells with the antibiotic hygromycin B. In one embodiment, it is possible to select for cells in which the expression vector has been successfully integrated into the host genome. For example in the Flp-In\u2122 System, the hygromycin gene in the pcDNA\u21225/FRT Vector lacks a promoter and is active only after it is integrated in the host genome (see pcDNA\u21225/FRT Vector, Instruction Manual, Invitrogen, USA (2012)).",
+                        "The invention also provides a method of producing cleaved HIV Env glycoproteins, by culturing the cell lines co-expressing HIV Env glycoprotein and furin protease. Methods for culturing appropriate mammalian cell-lines are known in the art (see, e.g., Growth and Maintenance of Flp-In\u2122 Cell Lines, Instruction Manual, Rev. 3, Invitrogen (2013)). Generally, cells are grown and maintained at an appropriate temperature and gas mixture in a cell incubator. For example, for mammalian cells, typical conditions include a temperature of approximately 37 \u00b0 C., and a CO2 concentration of approximately 5%. The cells may be grown either in suspended or adherent cell cultures. Any appropriate cell growth medium may be used. It will be understood that the growth medium may vary in pH, glucose concentration, and nutrient concentration. The growth medium may include one or more growth factors, including, for example, fetal bovine serum (FBS), bovine calf serum, equine serum and/or porcine serum. In some embodiments the growth medium contains 10%, 5%, or 1% FBS. In other embodiments, the growth medium is serum free.",
+                        "The methods of the invention can be adapted for the manufacture of GMP-compliant lines that could serve as, for example, the sources of BG505 SOSIP.664 gp140 trimers for human testing as vaccine antigens. CHO cell lines, for example, are commonly employed to make clinical grade recombinant proteins.",
+                        "The invention provides for the development of mammalian cell lines, which produce high quality, cleaved HIV Env glycoprotein trimers that are capable of generating bNAbs at yields of up to 12-15 mg per 1\u00d7109 cells. Preferably, expression at such levels is maintained for up to 30 days after initial seeding and is consistently superior to what could be achieved by transient transfection. Preferably, the HIV Env glycoproteins generated by the cell lines have the same native-like appearance as those derived by transient transfection as confirmed by, for example, electron microscopy analysis. The Env glycoproteins also desirably have appropriate antigenic properties, including, preferably, the presentation of the quaternary epitope for the broadly neutralizing antibody PGT145. Preferably, the mammalian cell lines can be propagated indefinitely.",
+                        "In a particular embodiment of the invention, the Flp-in\u2122 system from Invitrogen (Carlsbad, Calif) is used to make 293T and CHO cell lines that yield substantial amounts (e.g., up to 12-15 mg from 1\u00d7109 cells) of high quality BG505 SOSIP.664 gp140 trimers. The purified trimers are fully cleaved, have appropriate antigenic properties, and, when viewed by negative stain electron microscopy (EM), appear identical to ones produced by transient transfection (see Ringe et al., supra; Sanders et al. (2013), supra). The method used to make the cell lines is adaptable to Good Manufacturing Practice (GMP) conditions appropriate for producing immunogens for human vaccine trials.",
+                        "While the expression vectors and methods discussed herein are directed towards the creation of cell lines expressing the HIV Env glycoprotein, it will be understood that the expression vectors of the invention may also be used for generating furin-cleaved Env-glycoproteins by transient transfection.",
+                        "In certain embodiments, anti-Env glycoprotein antibodies may be used, for example, to detect, purify, quantify or analyze the HIV Env glycoproteins produced. Desirably, the antibody exhibits specific binding to HIV Env glycoproteins, such as, e.g., BG505 SOSIP.664 trimers or B41 SOSIP.664 trimers. The antibody can either be monoclonal or polyclonal; and can be produced either through immunization of an animal or produced through recombinant DNA technology such as phage display and in vitro mutagenesis or synthesis of the variable regions of the antibody heavy and light chain genes. Polyclonal antibodies include, but are not limited to, human antibodies and humanized antibodies derived from animals such as avian (e.g., chicken), rodent (e.g., rat, mouse, hamster, guinea pig), cow, goat, sheep, rabbit and the like. Monoclonal antibody include antibody derived from a single clone of antibody producing cells including, but not limited to, human cells, and antibodies derived from the cells of other animal types, such as, for example, chicken, rabbit, rat, mouse, hamster, guinea pig, cow, goat, sheep, and the like. Methods of making antibodies are well known in the art (see, e.g., Harlow & Lane, Antibodies, A Laboratory Manual, Cold Spring Harbor, pp. 1-420 (1988)).",
+                        "Env glycoproteins produced according to the invention can be isolated and purified using methods known in the art. For example, affinity chromatography employing HIV Env glycoprotein ligands and/or anti-Env glycoprotein antibodies can be used to purify the HIV Env glycoproteins. Affinity chromatography can be used alone or in conjunction with ion-exchange, molecular sizing, or HPLC chromatographic techniques. Such chromatographic approaches can be performed using columns or in batch formats, which are well known in the art. In a preferred embodiment, the Env glycoproteins are purified using bNAb 2G12-affinity chromatography followed by size exclusion chromatography (SEC) on a Superdex 200 26/60 column (GE Healthcare, Little Chalfont, United Kingdom) (see Ringe et al., Proc. Natl. Acad. Sci. U.S.A.,110: 18256-18261 (2013); Sanders et al., PLoS Pathog., 9: e1003618 (2013)).",
+                        "In another embodiment, the Env glycoproteins are purified on an affinity chromatography column based on the PGT145 bNAb that recognizes a trimer-specific, quaternary epitope (Yasmeen et al., Retrovirology, 11: 41 (2014); Sanders et al., PLoS Pathog., 9: e1003618 (2013); Julien et al., Proc. Natl. Acad. Sci. U.S.A, 110: 4351-4356 (2013))) in whichPGT145 is coupled to CNBr-activated Sepharose 4B beads (GE Healthcare, Little Chalfont, United Kingdom). The PGT145 affinity column is optionally followed by SEC.",
+                        "The following examples further illustrate the invention but, of course, should not be construed as in any way limiting its scope."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EXAMPLE 1",
+                            "paragraphs": [
+                                "This example demonstrates the design of a vector co-expressing an Env glycoprotein (BG505 SOSIP.664) and furin designated pAM/C BG505.",
+                                "Complete cleavage of BG505 SOSIP.664 gp140 at the gp120-gp41ECTO juncture is essential for the production of native-like trimers (see e.g., Schulke et al., J. Virol., 76: 7760-7776 (2002), Guttman et al., J. Virol., 87: 11462-11475 (2013), Binley et al., J. Virol., 76: 2606-2616 (2002), Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110:18256-18261 (2013)). Accordingly, the plasmid pcDNA5/FRT (Invitrogen, Carlsbad, Calif.) was modified to co-express an Env protein (BG505 SOSIP.664 gp140) and furin protease (see FIG. 1). The vector was designed such that different promoters were carefully selected for the env and furin genes to balance their expression, such that furin expression was sufficient to cause efficient Env glycoprotein cleavage without being toxic to host cells. A less potent promoter, EFI Alpha, was chosen to control the expression of furin to reduce the risk of cytotoxicity. A more potent promoter, CMV, was chosen to control Env glycoprotein expression (to maximize trimer production).",
+                                "To prepare the vector, the complete BG505 SOSIP.664 gp140 env gene was cloned into pcDNA5/FRT plasmid vector between the HindIII and NotI sites, under the control of the CMV promoter to promote high-level constitutive Env glycoprotein expression. The EF 1 Alpha promoter, the furin protease gene, and a synthetic Poly A modeled from the HSV Thymidine Kinase Poly A (New England BioLabs, Ipswich, Mass.) were also inserted (see FIG. 1 depicting insertion sites). The nucleotide sequence of this vector, designated pAM/C BG505 or pcDNA-FRT BG505 furin A, is provided as SEQ ID NO: 7.",
+                                "This example explains the design of a vector expressing an Env glycoprotein consistent with the invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "design vector co-expressing Env glycoprotein and furin",
+                                "balance expression of env and furin genes",
+                                "describe vector pAM/C BG505 or pcDNA-FRT BG505 furin A"
+                            ],
+                            "num_characters": 1836,
+                            "outline_medium": [
+                                "design vector co-expressing Env glycoprotein and furin protease"
+                            ],
+                            "outline_short": [
+                                "design vector co-expressing Env glycoprotein and furin protease"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 2",
+                            "paragraphs": [
+                                "This example demonstrates the selection and propagation of stable 293T and CHO cell lines expressing BG505 SOSIP.664 gp140.",
+                                "The pAM/C BG505 vector (see Example 1) was co-transfected with vector pOG44, which encodes the Flp recombinase that mediates integration of the pcDNA5/FRT vector into the FRT site of Flp-In\u2122 cells (Invitrogen, Carlsbad, Calif.). Briefly, the Flp-In\u2122 system allows a gene (or genes) of interest to be inserted into the genome of mammalian cells in an Flp recombinase-dependent manner (pcDNATM5/FRT Vector, Instruction Manual, Invitrogen (2012). Using this system, four potentially stable preliminary cell lines were obtained: 293T lines (designated 13 and 15) and CHO lines (designated A and B). To eliminate the possibility that these initial lines were non-isogenic (i.e., genetically mixed), limiting dilution was performed on the 293T line 13 and CHO lines A and B. These three lines were selected for limiting dilution, as they consistently expressed the highest Env glycoprotein levels relative to parental controls based on a dot blot assay using MAb 2G12. Limiting dilution resulted in 32 potential 293T cell clones and 10 potential CHO cell clones. FITC-labeled MAb 2G12 (FITC-2G12) and fluorescence activated cell sorting (FACS) was used to assess Env expression and clonality. This procedure identified 293T clone 13 #3-5 and CHO clone B-D7 as the highest-expressing clones for further propagation. An ELISA based on 2G12 capture of Env proteins followed by detection of trimers with biotinylated MAb PGT145 (bio-PGT145) confirmed that culture supernatants from these clones contained the highest quantities of trimers: 2.1 \u03bcg/ml for 293T clone 13 #3-5 and 1.7 \u03bcg/ml for CHO clone B-D7, as shown in FIG. 2. Fluorescent microscopy was also used to confirm stable cell clones. Cells were grown in an 8-well chamber slide, treated with Brefeldin A, fixed, permeabilized, and stained for Env (FITC-2G12) or nuclear DNA (DAPI). The results showed that Env proteins accumulated within the cell for both these clones, but were absent from the parental controls.",
+                                "These results demonstrate a method for selecting and propagating cells stably expressing the Env glycoprotein and confirm that the desired protein accumulates within selected stable clones."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "co-transfect pAM/C BG505 vector with vector pOG44",
+                                "select and propagate stable 293T and CHO cell lines",
+                                "perform limiting dilution to eliminate non-isogenic lines",
+                                "identify highest-expressing clones for further propagation"
+                            ],
+                            "num_characters": 2280,
+                            "outline_medium": [
+                                "select and propagate stable cell lines expressing Env glycoprotein",
+                                "confirm Env expression and clonality using FACS and ELISA"
+                            ],
+                            "outline_short": [
+                                "select and propagate stable cell lines expressing Env glycoprotein"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 3",
+                            "paragraphs": [
+                                "This example demonstrates that selected cell lines expressing BG505 SOSIP.664 gp140 are capable of sustained intracellular Env glycoprotein expression.",
+                                "Intracellular BG505 SOSIP.664 expression was visually monitored with continued passage of the 293T 13# 3-5 and CHO B-D7 stable cell lines. The fixed and permeabilized cells were stained with FITC-2G12 (20 \u03bcg/ml) after culture for 6 hours in the presence of Brefeldin A. MFI (mean fluorescence intensity) values for the Env-expressing cells were determined, and parental cells served as negative controls.",
+                                "After initial seeding, approximately constant levels of intracellular Env glycoprotein (as determined by ELISA) were detected during ten subsequent passages (P1-10, one passage every 4 days) of the 293T clone 13 #3-5 and the CHO clone B-D7. This indicated that both lines were stable and not prone to genetic instability (see FIG. 3).",
+                                "The production of BG505 SOSIP.664 gp140 trimers, as judged by ELISA, was also steady over time during passages 1 through 10, with yields in the range of 2 and 3 \u03bcg/ml of supernatant for the 293T and CHO cell clones, respectively (FIG. 3). Cell viability (parental vs. stable cell lines) was 91-98% vs. 91-96% for 293T, and 86-95% vs. 87-94% for CHO, throughout the culture period, implying that neither the Env glycoprotein nor furin was cytotoxic to these lines (FIG. 4). Overall, the two stable cell lines could be passaged for five weeks without any observable reduction in Env expression or cell viability. The BG505 SOSIP.664 trimers can, therefore, be produced by the same batch of cells for at least this period after initial seeding, and probably far longer.",
+                                "This example demonstrates that the inventive methods result in sustained intracellular Env expression in stable 293T and CHO cell lines."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "monitor intracellular Env glycoprotein expression",
+                                "detect sustained Env expression over multiple passages",
+                                "confirm stability of cell lines and Env expression"
+                            ],
+                            "num_characters": 1799,
+                            "outline_medium": [
+                                "demonstrate sustained intracellular Env glycoprotein expression"
+                            ],
+                            "outline_short": [
+                                "demonstrate sustained intracellular Env glycoprotein expression"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 4",
+                            "paragraphs": [
+                                "This example describes the biochemical characterization of BG505 SOSIP.664 gp140 trimers from 293T and CHO stable cell lines. The quantity and quality of the trimers produced by the stable cell lines were compared with trimers obtained from transiently transfected 293T and CHO cells.",
+                                "In all cases, the trimers were purified by 2G12-affinity chromatography followed by size exclusion chromatography (SEC) (see Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110: 18256-18261 (2013); and Sanders et al., PLoS Pathog., 9: e1003618 (2013)). A Coomassie blue-stained native (BN-PAGE) gel showed that the 2G12-enriched Env glycoproteins were mostly trimeric, with only modest amounts of dimers and/or monomers visible, as shown in FIG. 5. The trimer fractions were then purified by SEC. Gel-electrophoretic analyses under native conditions (BN-PAGE, followed by Coomassie blue staining) showed that the purities of the different trimer preparations (cell lines vs. transient transfection) were indistinguishable, as shown in FIG. 6. The CHO cell-derived trimers migrated slightly more quickly than their 293T counterparts, probably reflecting subtle, cell-dependent differences in glycan profiles that affect mobility during electrophoresis (see FIG. 6).",
+                                "The yield of purified trimers from the 293T stable cell line was 12 mg (range 10-15 mg) per 1\u00d7109 cells, which is 10-fold greater than when the same number of 293T cells were transiently transfected (range 1.25-1.5 mg) (Table 1). For the stable CHO cell line vs. transiently transfected CHO cells, the corresponding values were 12 mg (range 10-15 mg) and 0.375 mg (range 0.25-0.5 mg), which represents a \u02dc32-fold differential.",
+                                "The various SEC-purified BG505 SOSIP.664 trimer preparations were fully cleaved. As confirmation, when the reducing agent dithiothreitol (DTT) was included in SDS-PAGE gels, the gp140 proteins dissociated into their gp120 and gp41ECTO subunits, as shown in FIG. 7. Note that the gp41ECTO fragments stained poorly and were not always visible.",
+                                "The purified trimers were next analyzed on a reducing SDS-PAGE gel followed by western blotting, with the goal of identifying whether any proteolytic degradation events occur during production or purification, as shown in FIG. 8. The detection MAb, ARP 3119, binds to a well-conserved, linear epitope within the N-terminal half of gp 120. The antibody recognizes the 70-kDa (but not the 50-kDa) fragment that is produced when monomeric MN gp120 is clipped by proteases within the V3 region. When the BG505 SOSIP.664 trimer blots were probed with ARP 3119, only a 120-kDa band (i.e., gp120) was detected, with no degradation products visible (see FIG. 9).",
+                                "To seek any Env fragments that might escape detection by ARP 3119, a similar reducing SDS-PAGE and Western blotting analysis was performed. Here, the blots were probed with polyclonal HIV-Ig (FIGS. 9 and 10). Two other types of Env protein were included as positive controls: a monomeric gp120 (MN) and an uncleaved gp140 that contained three gp120 and three gp41ECTO subunits (CZA97.012). The controls were known to be vulnerable to proteolytic degradation (see Guttman et al., J. Virol., 87: 11462-11475 (2013); Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110:18256-18261 (2013); Schulz et al., AIDS Res. Hum. Retroviruses, 9:159-166 (1993); and Clements et al., AIDS Res. Hum. Retroviruses, 7: 3-16 (1991)). The BG505 SOSIP.664 trimers were derived from subtype A, the gp120 protein was derived from subtype B, and the uncleaved gp140, was derived from subtype C (see Kovacs et al., Proc. Natl. Acad. Sci. U.S.A., 109: 12111-12116 (2012)). Accordingly, an HIV-Ig pool was used based on sera from different individuals infected with viruses from all three subtypes. The gp120 and gp140 proteins were SEC-purified and each migrated as a single band of appropriate size when analyzed by BN-PAGE and Coomassie blue staining.",
+                                "The Coomassie blue-stained, reducing SDS-PAGE gel again revealed no degradation products of the BG505 SOSIP.664 trimers; the major band corresponded to the gp120 subunit and a less well stained, smaller band corresponded to the gp4lEcTo moiety. In contrast, multiple degradation products were clearly visible in the SEC-purified monomeric gp120 and uncleaved gp140 preparations. The dominant bands from the gp120 monomers were the characteristic 70 kDa and 50 kDa fragments arising from V3 clipping. However, additional, unknown fragments of the uncleaved gp140 were also present, as well as high molecular weight bands corresponding to proteins that spontaneously aggregated after SEC-purification (FIG. 9). These observations were reinforced by Western blots, which confirmed that the various additional gp120- or gp140-derived bands were Env proteins. Again, however, there were no signs of degradation or aggregation with the various cell sources of BG505 SOSIP.664 trimers, as shown in FIG. 10.",
+                                "The results described above demonstrate that the cell line-derived BG505 SOSIP.664 trimers are not degraded by proteases, including but not limited to proteases that clip the V3 region to yield characteristic 70 kDa and 50 kDa fragments on reducing SDS-PAGE gels and Western blots (see FIGS. 9-10) (Schulz et al., AIDS Res. Hum. Retroviruses, 9: 159-166 (1993); and Clements et al., AIDS Res. Hum. Retroviruses, 7: 3-16 (1991)18, 19). In contrast, the monomeric gp120 (MN) and the uncleaved gp140 (CZA97.012) were highly vulnerable to proteolytic degradation, including but in the latter case not limited to, V3 clipping. The uncleaved gp140 also formed aggregates even after the fraction corresponding to three gp120 and three gp41ECTO subunits was first SEC-purified (FIGS. 9-10). The resistance of the BG505 SOSIP.664 trimers to proteolytic degradation may be the result of the BG505 V3 sequence not being particularly vulnerable to clipping compared to other Env genotypes. For example, no signs of V3 clipping were observed when making monomeric BG505 gp120 proteins by transient transfection when, under the same conditions, MN gp120 is badly degraded. However, there are also structural considerations; the SOSIP.664 trimers are compact entities in which potentially vulnerable scissile sites, particularly V3, are inaccessible to proteases (Julien et al., Science, 342: 1477-1483 (2013); Lyumkis et al., Science, 342: 1484-1490 (2013)). In contrast, V3 and other protease-sensitive regions are more exposed on both gp120 monomers and uncleaved gp140s. The latter invariably adopt splayed out, non-native shapes with three individual gp120 subunits dangling freely from a central gp4lEcTo 6-helix-bundle, conformations in which various sites, including V3, are exposed to protease attack (Guttman et al., J. Virol., 87: 11462-11475 (2013); Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110: 18256-18261 (2013)). In addition, the uncleaved gp140 proteins formed aggregates post-purification. This probably arose from the exposure of hydrophobic sites within gp41ECTO. The native-like, cleaved BG505 SOSIP.664 trimers do not form such aggregates.",
+                                "The results of this example confirm that the inventive methods result in high quantities of properly cleaved, high quality, Env glycoprotein trimers."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe biochemical characterization of BG505 SOSIP.664 gp140 trimers",
+                                "compare trimers from stable cell lines and transient transfection",
+                                "purify trimers by 2G12-affinity chromatography and SEC",
+                                "analyze trimers by BN-PAGE and Coomassie blue staining",
+                                "compare yields of purified trimers from different sources",
+                                "analyze trimers by reducing SDS-PAGE and Western blotting",
+                                "detect no degradation products of BG505 SOSIP.664 trimers",
+                                "compare to degradation products of monomeric gp120 and uncleaved gp140",
+                                "analyze trimers by Western blotting with HIV-Ig",
+                                "detect no signs of V3 clipping or aggregation",
+                                "compare to monomeric gp120 and uncleaved gp140",
+                                "discuss structural considerations for trimer stability",
+                                "discuss potential reasons for resistance to proteolytic degradation",
+                                "confirm high quality of Env glycoprotein trimers"
+                            ],
+                            "num_characters": 7204,
+                            "outline_medium": [
+                                "purify and characterize BG505 SOSIP.664 gp140 trimers",
+                                "compare yields of trimers from stable cell lines vs. transient transfection",
+                                "analyze trimer purity using BN-PAGE and Coomassie blue staining",
+                                "confirm full cleavage of trimers using reducing SDS-PAGE and Western blotting",
+                                "analyze trimer stability using Western blotting with HIV-Ig",
+                                "compare trimer stability to monomeric gp120 and uncleaved gp140",
+                                "demonstrate resistance of trimers to proteolytic degradation"
+                            ],
+                            "outline_short": [
+                                "purify and characterize BG505 SOSIP.664 gp140 trimers",
+                                "compare yields and quality of trimers from stable cell lines vs. transient transfection",
+                                "analyze trimer stability and resistance to proteolytic degradation"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 5",
+                            "paragraphs": [
+                                "This example describes surface plasmon resonance and ELISA analysis of BG505 SOSIP.664 gp140 trimers produced from stable 293T and CHO cell lines.",
+                                "The BG505 SOSIP.664 gp140 trimers produced by the permanent cell lines do not contain a D7324-epitope or His-tags. Accordingly, surface plasmon resonance (SPR) and ELISA methods were developed that are suitable for use with non-tagged trimers derived from both the permanent 293T and CHO cell lines and, for comparison, trimers made by transient transfection.",
+                                "For SPR, anti-Env glycoprotein MAbs were immobilized on CM5 chips and the purified BG505 SOSIP.664 gp140 trimers were flowed over them. Binding was recorded as the response difference (RU). bNAb PGT145, immobilized to a quaternary structure-dependent epitope, bound strongly to the trimers, as shown in FIG. 11. In contrast, the non-NAb F105 bound only minimally, which is consistent with the occlusion of its CD4bs epitope on native-like trimers (Sanders et al., PLoS Pathog., 9: e1003618 (2013); Walker et al., Nature, 477: 466-470 (2011)). Of note is that the binding profiles obtained for the two MAbs were independent of the cell source of the trimers (FIG. 11).",
+                                "The ELISA assay involved trimer capture to the solid phase via absorbed bNAb 2G12. This was followed by detection using biotin-labeled versions of the same PGT145 or F105 MAbs used in the SPR assay. As with the SPR system, an appropriate measure of structural authenticity for the trimers is strong PGT145 reactivity combined with low binding of F105. Again, irrespective of the trimer source, PGT145 bound efficiently in the 2G12-capture ELISA whereas F105 was completely non-reactive (FIG. 12).",
+                                "These results confirm that the Env glycoprotein trimers obtained from the stable 293T and CHO cell lines are comparable to trimers produced by transient transfection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "develop SPR and ELISA methods for non-tagged trimers",
+                                "analyze binding of bNAb PGT145 and non-NAb F105 to trimers",
+                                "confirm structural authenticity of trimers from stable cell lines"
+                            ],
+                            "num_characters": 1842,
+                            "outline_medium": [
+                                "analyze BG505 SOSIP.664 gp140 trimers using SPR and ELISA"
+                            ],
+                            "outline_short": [
+                                "analyze BG505 SOSIP.664 gp140 trimers by surface plasmon resonance and ELISA"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 6",
+                            "paragraphs": [
+                                "This example describes the use of Electron microscopy to image BG505 SOSIP.664 gp140 trimers produced from stable 293T and CHO cell lines.",
+                                "The different preparations of purified trimers were viewed by negative-stain EM, and the reference-free 2D class averages were examined to determine their overall morphology. The trimers from both cell lines had the same consistently native-like appearance as those derived by transient transfection (see FIG. 13) (see Sanders et al., PLoS Pathog., 9: e1003618 (2013)). The percentages of native-like trimers varied in the range of 81-100%, and were usually somewhat higher for 293T cell-derived trimers (90-100%) than CHO (80-90%). However, native-like trimer percentages in this range (80-100%) are within experimental error for this method. Accordingly, the data demonstrates that trimers from both the 293T and CHO stable lines adopt a single native-like configuration that is indistinguishable, at this level of resolution, from the transient transfection products used to derive high-resolution cryo-EM and X-ray structures (see Julien et al., Science, 342: 1477-1483 (2013); and Lyumkis et al., Science, 342:1484-1490 (2013)).",
+                                "The results of this example further confirm that the Env glycoprotein trimers obtained from the stable 293T and CHO cell lines are comparable to trimers produced by transient transfection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "image BG505 SOSIP.664 gp140 trimers by negative-stain EM",
+                                "confirm native-like morphology of trimers from stable cell lines"
+                            ],
+                            "num_characters": 1363,
+                            "outline_medium": [
+                                "image BG505 SOSIP.664 gp140 trimers using negative-stain EM"
+                            ],
+                            "outline_short": [
+                                "image BG505 SOSIP.664 gp140 trimers by electron microscopy"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 7",
+                            "paragraphs": [
+                                "This example describes the use of a differential scanning calorimetry (DSC) assay to analyze trimers derived from stable 293T and CHO cells.",
+                                "In the DSC assay, trimers produced in the stable 293T and CHO cell lines underwent a single, sharp thermal transition at 66.9\u00b0 C. and 66.3\u00b0 C., respectively (FIG. 14). These values are comparable to those observed at 68.1\u00b0 C. for trimers produced by transient transfection of 293T cells (Sanders et al., PLoS Pathog., 9: e1003618 (2013)), and 67.9 \u00b0 C. for trimers produced by transient transfection of 293S cells (Julien et al., Proc. Natl. Acad. Sci. U.S.A, 110: 4351-4356 (2013)).",
+                                "The results of this example further confirm that the Env glycoprotein trimers obtained from the stable 293T and CHO cell lines are comparable to trimers produced by transient transfection."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "analyze trimers by DSC assay and confirm thermal transition"
+                            ],
+                            "num_characters": 815,
+                            "outline_medium": [
+                                "analyze thermal stability of trimers using DSC assay"
+                            ],
+                            "outline_short": [
+                                "analyze thermal stability of trimers by differential scanning calorimetry"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 8",
+                            "paragraphs": [
+                                "This example describes the modification of env genes derived from HIV subtype B and Subtype C.",
+                                "The BG505 SOSIP.664 gp140 trimers discussed above are derived from HIV subtype A. The B41 env gene, discussed in this example, is an env gene derived from a subtype B founder virus isolated from a HIV-1-infected serial plasma donor. It is formally designated 9032-08.A1.4685 and its GenBank accession number is EU576114 (Wilen et al., J. Virol., 85: 8514-8527 (2011)). To prepare a SOSIP.664 gp140 construct based on B41, the following sequence changes were introduced to the B41 gene (HxB2 numbering system):\n\n\n- - a. A501C and T605C\u2014resulting in a gp120-gp41_(ECTO) disulfide bond\n    (see Binley et al., *J. Virol.,* 74: 627-643 (2000));\n  - b. I559P in gp41_(ECTO)\u2014a trimer-stabilizing modification (see\n    Sanders et al., *J. Virol.,* 76: 8875-8889 (2002));\n  - c. REKR to RRRRRR in gp120 - for cleavage enhancement (see Binley et\n    al., *J. Virol.,* 76: 2606-2616 (2002));\n  - d. A TPA leader peptide was added to increase gene expression (see\n    Sanders et al., *PLoS Pathog.,* 9: e1003618 (2013); and Sellhorn et\n    al., *Vaccine,* 28:430-436 (2009)); and\n  - e. A stop codon was added at gp41_(ECTO) residue 664 to improve\n    homogeneity and solubility (see Khayat et al., *J. Virol.,* 87:\n    9865-9872 (2013); and Klasse et al., *J. Virol.,* 87: 9873-9885\n    (2013)).",
+                                "The resulting, codon-optimized B41 SOSIP.664 env gene was obtained from Genscript (Piscataway, N.J.) and cloned into pPPI4 using Pstl and Notl (see Binley et. al., J. Virol 74:627-643 (2000)). The encoded HIV glycoprotein trimers were designated B41 SOSIP.664. Trimer variants containing a D7324 epitope-tag sequence at the C-terminus of gp41ECTO were also made, by adding the sequence GSAPTKAKRRVVQREKR (SEQ ID NO: 8) after residue 664 in gp4lEcTo and prior to the stop codon (see Sanders et al., PLoS Pathog., 9: e1003618 (2013)). This trimer was designated B41 SOSIP.664-D7324.",
+                                "Additionally, SOSIP modifications such as those outlined above were applied to an env gene derived from a Subtype C HIV virus.",
+                                "A monomeric B41 gp120 protein was also prepared based on the same sequence with the following alterations:\n\n\n- - a. introducing a stop codon into the SOSIP.664 construct at residue\n    512;\n  - b. reverting the optimized cleavage site to wild type (RRRRRR-\\>REKR\n    at residues 508-511);\n  - c. reverting the A501C change and making an A500K substitution to\n    optimize the D7324 epitope that is present in the C5 domain at the\n    gp120 C-terminus.",
+                                "This example demonstrates methods for making SOSIP modifications to an Env glycoprotein gene derived from different subtypes of HIV. The example further demonstrates the preparation of a monomeric gp120 protein."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "modify env genes from HIV subtype B and subtype C",
+                                "introduce SOSIP modifications to B41 env gene",
+                                "prepare B41 SOSIP.664-D7324 trimer variant",
+                                "apply SOSIP modifications to subtype C env gene",
+                                "prepare monomeric B41 gp120 protein"
+                            ],
+                            "num_characters": 2757,
+                            "outline_medium": [
+                                "modify env genes derived from HIV subtype B and Subtype C",
+                                "prepare SOSIP-modified env genes and monomeric gp120 protein"
+                            ],
+                            "outline_short": [
+                                "modify env genes derived from HIV subtype B and subtype C"
+                            ]
+                        },
+                        {
+                            "title": "EXAMPLE 9",
+                            "paragraphs": [
+                                "This example describes the expression of B41 SOSIP.664 by transient transfection.",
+                                "B41 SOSIP.664 Env glycoproteins were expressed in wild type, adherent HEK293T (\u201c293T\u201d) cells by transient transfection of the B41 SOSIP.664 genes using polyethyleneimine (PEI), essentially as described elsewhere (see Sanders et al., PLoS Pathog., 9: e1003618 (2013); Kirschner et al., Protein Expr. Purif., 48: 61-68 (2006)). The furin gene was co-transfected with all SOSIP.664 trimer-encoding env genes to maximize gp120-gp41ECTO cleavage (see Binley et al., J. Virol., 74: 627-643 (2000); Binley et al., J. Virol., 76: 2606-2616 (2002)). The transfected 293T cells were initially cultured in the presence of 10% fetal calf serum (FCS).",
+                                "The secreted B41 SOSIP.664 Env proteins were first affinity-purified using the 2G12 bNAb, followed by SEC via a Superdex 200 26/60 column to isolate trimers. A BN PAGE analysis of the B41 SOSIP.664 Env proteins eluted from the 2G12 column showed that >40% were trimers, while dimers, monomers, and aggregates were each present at relative abundances of \u02dc20%, as shown in FIG. 15. The SEC column removed unwanted Env forms, yielding pure (>95%) trimers (see FIG. 16). A comparative reducing vs. non-reducing SDS-PAGE gel analysis showed that the purified trimers were fully cleaved (>95%) into their gp120 and gp41ECTO subunits (data not shown). These results broadly mirror results observed with BG505 SOSIP.664 trimers (see, e.g., Sanders et al., PLoS Pathog., 9: e1003618 (2013)).",
+                                "However, in contrast with BG505, some degradation products were observed when the B41 SOSIP.664 trimers were analyzed by reducing SDS-PAGE followed by Coomassie blue staining or western blotting (FIG. 17). The anti-gp120 MAb ARP3119 detected a band of \u02dc70 kDa that is characteristically observed when the V3 region of gp120 is proteolytically clipped at a scissile site near the tip of its \u03b2-hairpin loop (see Berman et al., Nature, 345:622-625 (1990); Clements et al., AIDS Res. Hum. Retroviruses, 7: 3-16 (1991); Du et al., Protein Expr. Purif, 59: 223-231 (2008)). The other gp120 fragment generated by V3-clipping, a band of approximately 50 kDa, is not recognized by MAb ARP3119. This fragment and other less prominent bands (i.e., other degradation products) were detected when an HIV-Ig (subtype B) preparation was used to probe the blots.",
+                                "The extent of V3-clipping varied between B41 SOSIP.664 trimer preparations but never exceeded more than \u02dc25%, as judged by the relative intensities of the 70 kDa and 120 kDa bands in semi-quantitative assessments. In contrast, monomeric B41 gp120 proteins were much more extensively V3-clipped (usually >50%) when produced and analyzed under the same conditions, as shown in FIG. 18. Compared to other subtypes, Env glycoproteins from subtype B are known to be generally quite vulnerable to V3 clipping, because a scissile site for thrombin-family proteases is present in their consensus V3 sequence that is absent from the corresponding non-subtype B consensus sequence (GPGQAF) (see Berman et al., Nature, 345:622-625 (1990); Clements et al., AIDS Res. Hum. Retroviruses, 7: 3-16 (1991); Du et al., Protein Expr. Purif., 59: 223-231 (2008); and Aggarwal et al., Abstr. Cell Cul. Eng. XIV Conf., abstr. D015 (2014)). A transient opening of the closed form of the B41 SOSIP.664 trimer may expose the V3 region to any proteases present in the cell culture.",
+                                "To overcome the problem of V3 clipping, B41 SOSIP.664 proteins were subsequently produced by transient transfection of 293F cells in serum-free medium. The resulting trimers, purified by 2G12/SEC columns, were fully intact with no evidence of V3-clipping in a western blot analysis, implying that FCS was indeed the source of the proteolytic activity (FIG. 18). When the non-clipped, 293F cell-derived trimers were treated with thrombin, a sub-population (-20%) became clipped (FIG. 18). Hence, 293F cells do not produce Env glycoprotein variants that are intrinsically resistant to V3-clipping, but rather it is their ability to be cultured in serum-free medium that yields non-clipped B41 gp120 monomers and SOSIP.664 trimers.",
+                                "The results of this example demonstrate the production and purification of B41 SOSIP.664 trimers by transient transfection, and that decreased serum concentration results in decreased V3-clipping in the trimers.",
+                                "**EXAMPLE 10**",
+                                "This example describes the preparation of cell lines expressing BG41 SOSIP.664 trimers and cell lines expressing an Env glycoprotein derived from HIV Subtype C.",
+                                "CHO and 293T cell lines that produce B41 SOSIP.664 trimers were generated using the methods described in Examples 2 and 3. In this regard, a pcDNA5/FRT vector (Invitrogen, Carlsbad, Calif.) was modified to co-express an Env protein (in this case B41 SOSIP.664) and furin protease. The initial clones of stably transfected CHO and 293T cells, cultured in 10% FCS, also yielded trimers that were \u02dc20% V3-clipped in the absence of significant cell damage/death. To reduce the extent of V3 clipping, it was necessary to try to adapt the stable lines to grow at lower serum concentrations than the standard culture conditions (i.e., with 10% FCS present). With the stable 293T line, the FCS concentration could only be reduced to 5% without a substantial decrease in cell viability; at 5% FCS, some V3-clipping still occurred. However, the stable CHO cell line could be successfully adapted to 1% serum. The B41 SOSIP.664 trimers produced when this line was cultured in 1% serum were only minimally (<5%) V3-clipped, as shown in FIG. 19. The resultant stable CHO cells were then propagated under hygromycin resistance in PRO-CHO-AT medium (Lonza, Basel, Switzerland) containing 1% FCS.",
+                                "Using the methods described herein, cell lines were also established that express a SOSIP modified Env glycoprotein derived from a Subtype C HIV virus. To do this, an expression vector was constructed by modifying a pcDNA5/FRT vector (Invitrogen, Carlsbad, Calif.) to co-express the SOSIP modified env gene derived from a Subtype C HIV virus and furin protease.",
+                                "The results of this example demonstrate that the inventive method can be used to develop stable cell lines expressing BG41 SOSIP trimers, and cell lines expressing Env glycoproteins derived from an HIV Subtype C virus. The results of this example further demonstrate that the method can be optimized to produce high-quality Env glycoproteins by varying concentration of FCS in cell culture.",
+                                "**EXAMPLE 11**",
+                                "This example describes methods for purifying the B41 SOSIP.664 trimers.",
+                                "Two methods were used to purify B41 SOSIP.664 trimers (and D7324-tagged variants thereof) from transfection supernatants. In the first procedure, Env proteins were isolated via a bNAb 2G12 affinity column and MgC12 elution, and the trimer fraction was purified by SEC on a Superdex 200 26/60 column (GE Healthcare, Little Chalfont, United Kingdom) (see Ringe et al., Proc. Natl. Acad. Sci. U.S.A., 110: 18256-18261 (2013); and Sanders et al., PLoS Pathog., 9: e1003618 (2013)).",
+                                "The second method involved an affinity column based on the PGT145 bNAb that recognizes a trimer-specific, quaternary epitope (Yasmeen et al., Retrovirology, 11:41 (2014); Sanders et al., PLoS Pathog., 9: e1003618 (2013); and Julien et al., Proc. Natl. Acad. Sci. U.S.A, 110: 4351-4356 (2013))). PGT145 was coupled to CNBr-activated Sepharose 4B beads (GE Healthcare, Little Chalfont, United Kingdom). Env-containing culture supernatants were flowed through the resulting column, the beads were washed with 2 column volumes of buffer (0.5 M NaCl, 20 mM Tris, pH 8.0), and the bound trimers were eluted using 1 column volume of 3 M MgCl2. The eluted trimers were immediately buffer-exchanged into 75 mM NaCl, 10 mM Tris, pH 8.0, using Snakeskin dialysis tubing (10K MWCO) (Thermo Scientific, Waltham, Mass.). The purified trimers were then concentrated using Vivaspin columns with a 30-kDa cut off (GE Healthcare Little Chalfont, United Kingdom). Trimers eluted from the PGT 145 column were then further purified by SEC.",
+                                "The results of this example demonstrate two methods for purifying an Env glycoprotein.",
+                                "**EXAMPLE 12**",
+                                "This example describes the use of affinity chromatography to remove V3 clipped B41 SOSIP.664 trimers.",
+                                "The trimer apex is formed by an association between the V2 and V3 variable regions and is recognized by the PGT145 bNAb. PGT145 is highly specific for native-like, closed trimers and thus does not bind gp120 monomers, gp120-gp41ECTO promoters, or non-native gp140UNC proteins (Yasmeen et al., Retrovirology, 11:41 (2014); Sanders et al., PLoS Pathog., 9: e1003618 (2013); and Julien et al., Proc. Natl. Acad. Sci. U.S.A, 110: 4351-4356 (2013)). It was hypothesized that V3 clipping damages the variable loop-dependent structures at the trimer apex and that, accordingly, clipped trimers would flow through the column. It was further hypothesized that, because of the selectivity for PGT 145 for native trimers, any non-native Env forms present (monomers, dimers, aggregates, uncleaved gp140s, etc.) would fail to bind to the PGT145 column, flow through, and be discarded.",
+                                "When B41 SOSIP.664 Env proteins were produced in 293T cells in the presence of 10% serum and then passed down the PGT145 column, the bound and then eluted trimers were not detectably V3-clipped, as shown in FIG. 20. This outcome contrasts with the purification of the same 293T cell-produced proteins via the 2G12 and SEC columns, which yielded trimers that were \u02dc25% V3-clipped (see FIGS. 17, 20). Thus, by inference, V3-clipping does indeed destroy the PGT145 epitope at the trimer apex, allowing the use of the PGT145 column to positively select for non V3-clipped trimers. Moreover, PGT145 column-purified trimers were essentially homogeneous (i.e., free of contaminating Env aggregates, dimers or monomers) when analyzed by BN-PAGE or SEC, as shown in FIG. 21.",
+                                "B41 SOSIP.664-D7324 trimers purified by the PGT145/SEC method were also analyzed by ELISA. Compared to non V3-clipped trimers purified by the 2G12/SEC method, 2G12, VRC01, PG16 and PGT145 each bound indistinguishably, whereas the binding of the non-NAbs b6 and F91 to their CD4bs epitopes was modestly reduced, as shown in FIG. 22. It is possible that the PGT145 column eliminates a very minor subset of non-native B41 trimers that is either present in preparations purified by the 2G12 and SEC method, or that arises over time.",
+                                "The results of this example confirm that the use of the PGT145 column results in non V3-clipped homogenous trimers.",
+                                "All references, including publications, patent applications, and patents, cited herein are hereby incorporated by reference to the same extent as if each reference were individually and specifically indicated to be incorporated by reference and were set forth in its entirety herein.",
+                                "The use of the terms \u201ca\u201d and \u201can\u201d and \u201cthe\u201d and \u201cat least one\u201d and similar referents in the context of describing the invention (especially in the context of the following claims) are to be construed to cover both the singular and the plural, unless otherwise indicated herein or clearly contradicted by context. The use of the term \u201cat least one\u201d followed by a list of one or more items (for example, \u201cat least one of A and B\u201d) is to be construed to mean one item selected from the listed items (A or B) or any combination of two or more of the listed items (A and B), unless otherwise indicated herein or clearly contradicted by context. The terms \u201ccomprising,\u201d \u201chaving,\u201d \u201cincluding,\u201d and \u201ccontaining\u201d are to be construed as open-ended terms (i.e., meaning \u201cincluding, but not limited to,\u201d) unless otherwise noted. Recitation of ranges of values herein are merely intended to serve as a shorthand method of referring individually to each separate value falling within the range, unless otherwise indicated herein, and each separate value is incorporated into the specification as if it were individually recited herein. All methods described herein can be performed in any suitable order unless otherwise indicated herein or otherwise clearly contradicted by context. The use of any and all examples, or exemplary language (e.g., \u201csuch as\u201d) provided herein, is intended merely to better illuminate the invention and does not pose a limitation on the scope of the invention unless otherwise claimed. No language in the specification should be construed as indicating any non-claimed element as essential to the practice of the invention.",
+                                "Preferred embodiments of this invention are described herein, including the best mode known to the inventors for carrying out the invention. Variations of those preferred embodiments may become apparent to those of ordinary skill in the art upon reading the foregoing description. The inventors expect skilled artisans to employ such variations as appropriate, and the inventors intend for the invention to be practiced otherwise than as specifically described herein. Accordingly, this invention includes all modifications and equivalents of the subject matter recited in the claims appended hereto as permitted by applicable law. Moreover, any combination of the above-described elements in all possible variations thereof is encompassed by the invention unless otherwise indicated herein or otherwise clearly contradicted by context."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "express B41 SOSIP.664 Env glycoproteins",
+                                "transient transfect HEK293T cells",
+                                "co-transfect furin gene",
+                                "culture cells in presence of FCS",
+                                "affinity-purify using 2G12 bNAb",
+                                "perform SEC via Superdex 200 26/60 column",
+                                "analyze by BN PAGE",
+                                "show trimers, dimers, monomers, and aggregates",
+                                "analyze by SEC",
+                                "show pure trimers",
+                                "analyze by reducing vs. non-reducing SDS-PAGE",
+                                "show fully cleaved trimers",
+                                "compare with BG505 SOSIP.664 trimers",
+                                "analyze by reducing SDS-PAGE and Coomassie blue staining",
+                                "detect V3-clipped gp120",
+                                "analyze by western blotting",
+                                "detect V3-clipped gp120",
+                                "explain V3-clipping mechanism",
+                                "produce trimers in serum-free medium",
+                                "analyze by western blotting",
+                                "show no V3-clipping",
+                                "treat with thrombin",
+                                "show V3-clipping",
+                                "conclude FCS source of proteolytic activity",
+                                "conclude 293F cells do not produce resistant Env glycoproteins",
+                                "summarize results"
+                            ],
+                            "num_characters": 13313,
+                            "outline_medium": [
+                                "express B41 SOSIP.664 Env glycoproteins",
+                                "co-transfect furin gene",
+                                "culture transfected cells",
+                                "affinity-purify using 2G12 bNAb",
+                                "perform SEC to isolate trimers",
+                                "analyze by BN PAGE",
+                                "analyze by reducing vs. non-reducing SDS-PAGE",
+                                "detect V3-clipping by western blotting",
+                                "compare with BG505 SOSIP.664 trimers",
+                                "produce trimers in serum-free medium",
+                                "analyze by western blotting",
+                                "treat with thrombin",
+                                "conclude on V3-clipping"
+                            ],
+                            "outline_short": [
+                                "express B41 SOSIP.664 Env glycoproteins",
+                                "purify Env proteins using 2G12 bNAb and SEC",
+                                "analyze purified trimers by BN PAGE and SDS-PAGE",
+                                "observe V3-clipping of B41 SOSIP.664 trimers",
+                                "produce non-clipped trimers using 293F cells in serum-free medium",
+                                "demonstrate production and purification of B41 SOSIP.664 trimers"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "define expression vector",
+                        "describe plasmid",
+                        "introduce HIV Env glycoprotein",
+                        "define Env glycoprotein",
+                        "describe Env protein structure",
+                        "specify HIV Env glycoprotein strains",
+                        "describe preferred Env glycoproteins",
+                        "introduce furin protease",
+                        "describe furin protease function",
+                        "optimize protein production",
+                        "introduce polyadenylation site",
+                        "describe polyadenylation sequences",
+                        "introduce transcription signals",
+                        "describe gp41ECTO domain",
+                        "introduce SOSIP modifications",
+                        "describe Env glycoprotein modifications",
+                        "introduce post-translational modifications",
+                        "describe preferred HIV Env glycoproteins",
+                        "introduce BG505 SOSIP.664",
+                        "introduce B41 SOSIP.664",
+                        "describe SOSIP modified HIV Env glycoprotein",
+                        "introduce expression vector components",
+                        "describe promoter options",
+                        "introduce constitutive promoters",
+                        "describe inducible promoters",
+                        "define promoter activity",
+                        "specify relative activity of promoters",
+                        "describe method for determining promoter activity",
+                        "introduce preferred embodiment of promoters",
+                        "describe transfection of expression vector into mammalian cell",
+                        "specify suitable mammalian cells",
+                        "describe modifications to mammalian cells",
+                        "introduce means of transforming or transfecting cells",
+                        "describe integration of expression vector into host genome",
+                        "introduce Flp-In System",
+                        "describe integration via Flp-recombinase-dependent manner",
+                        "introduce selectable marker for transformed cells",
+                        "describe method for producing cleaved HIV Env glycoproteins",
+                        "introduce culturing of cell lines",
+                        "describe growth medium and conditions",
+                        "introduce adaptation for GMP-compliant lines",
+                        "describe development of mammalian cell lines",
+                        "introduce use of Flp-in system for making cell lines",
+                        "describe purification and analysis of Env glycoproteins",
+                        "introduce use of anti-Env glycoprotein antibodies",
+                        "describe purification methods for Env glycoproteins"
+                    ],
+                    "num_characters": 23685,
+                    "outline_medium": [
+                        "define expression vector",
+                        "describe plasmid characteristics",
+                        "introduce HIV Env glycoprotein",
+                        "describe Env glycoprotein structure",
+                        "discuss Env glycoprotein modifications",
+                        "introduce furin protease",
+                        "describe furin protease function",
+                        "discuss co-expression of Env glycoprotein and furin protease",
+                        "describe promoter options",
+                        "introduce viral promoters",
+                        "introduce eukaryotic cellular promoters",
+                        "specify preferred promoters",
+                        "define promoter activity",
+                        "specify promoter types",
+                        "describe transfection of expression vector",
+                        "introduce mammalian cell types",
+                        "explain transformation and integration methods",
+                        "describe selection of stably transformed cells",
+                        "outline method of producing cleaved HIV Env glycoproteins",
+                        "discuss development of mammalian cell lines",
+                        "describe purification of Env glycoproteins",
+                        "provide examples of the invention"
+                    ],
+                    "outline_short": [
+                        "define expression vector",
+                        "describe HIV Env glycoprotein",
+                        "describe furin protease",
+                        "outline expression vector components",
+                        "discuss promoters for expression vector",
+                        "provide examples of promoters",
+                        "describe promoter activity",
+                        "specify expression vector transfection",
+                        "integrate expression vector into host genome",
+                        "produce cleaved HIV Env glycoproteins",
+                        "purify and analyze Env glycoproteins"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An expression vector comprising a first nucleic acid sequence encoding an HIV Env glycoprotein and a second nucleic acid sequence encoding a furin protease, wherein (i) expression of the nucleic acid sequence encoding the Env glycoprotein is controlled by a first constitutive promoter and the expression of the nucleic acid sequence encoding the furin protease is controlled by a second constitutive promoter, (ii) the first constitutive promoter is more potent than the second constitutive promoter, and (iii) the expression vector integrates into the genome of a mammalian cell.",
+        "2. The expression vector of claim 1, wherein the Env glycoprotein comprises a gp120 subunit and a gp41 subunit, wherein (i) the gp120 subunit and the gp41 subunit are linked by an inter-subunit disulfide bond, and (ii) the isoleucine at position 559 of the gp41 subunit is substituted with proline.",
+        "3. The expression vector of claim 1, wherein the Env glycoprotein forms the cleaved trimer BG505 SOSIP.664.",
+        "4. The expression vector of claim 1, wherein the Env glycoprotein forms the cleaved trimer B41 SOSIP.664.",
+        "5. The expression vector of claim 1, wherein the first constitutive promoter is a CMV promoter.",
+        "6. The expression vector of claim 1, wherein the second constitutive promoter is an EF 1 alpha promoter.",
+        "7. The expression vector of claim 1, wherein the first nucleic acid sequence further comprises a synthetic poly A sequence.",
+        "8. The expression vector of claim 1, wherein the expression vector comprises a DNA plasmid.",
+        "9. The expression vector of claim 8, wherein the DNA plasmid comprises SEQ ID NO: 1.",
+        "10. The expression vector of claim 1, wherein the expression vector integrates into the genome of a mammalian cell via Flp-mediated recombination.",
+        "11. An isolated mammalian cell comprising the expression vector of claim 1.",
+        "12. The isolated mammalian cell of claim 11, which is a 293T cell.",
+        "13. The isolated mammalian cell of claim 11, which is a CHO cell.",
+        "14. A method of generating a mammalian cell line that expresses cleaved HIV Env glycoproteins, the method comprising:\n(a) transfecting one or more mammalian cells with the expression vector of claim 1 under conditions wherein the expression vector integrates into the genome of the one or more mammalian cells;\n(b) selecting one or more mammalian cells comprising the expression vector integrated into the genome thereof and expressing cleaved HIV Env glycoproteins; and\n(c) propagating the selected mammalian cells indefinitely, thereby generating a mammalian cell line that expresses cleaved HIV Env glycoproteins.",
+        "15. A method of producing cleaved Env glycoproteins, wherein the method comprises (i) culturing the isolated mammalian cell of claim 11 under conditions to express the first and second nucleic acid sequences to provide HIV Env glycoproteins and furin proteases, and (ii) allowing the furin protease to cleave the Env glycoproteins to provide cleaved Env glycoproteins.",
+        "16. The method of claim 15, which further comprises isolating and purifying the cleaved Env glycoproteins."
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": "https://semopenalex.org/work/W2341568498",
+    "authors": [
+        "Min Wei",
+        "Ping Ma",
+        "Lingling Lu",
+        "Xiaoxu Jia",
+        "Chunxia Qi"
+    ],
+    "title": "HEK293T Cells Are Heterozygous for CCR5 Delta 32 Mutation",
+    "date": "2016-04-04",
+    "abstract": "C-C chemokine receptor 5 (CCR5) is a receptor for chemokines and a co-receptor for HIV-1 entry into the target CD4+ cells. CCR5 delta 32 deletion is a loss-of-function mutation, resistant to HIV-1 infection. We tried to induce the CCR5 delta 32 mutation harnessing the genome editing technique, CRISPR-Cas9 (Clustered Regularly Interspaced Short Palindromic Repeats, CRISPR and CRISPR associated protein 9, Cas9) in the commonly used cell line human embryonic kidney HEK 293T cells. Surprisingly, we found that HEK293T cells are heterozygous for CCR5 delta 32 mutation, in contrast to the wild type CCR5 cells, human acute T cell leukemia cell line Jurkat and human breast adenocarcinoma cell line MDA-MB-231 cells. This finding indicates that at least one human cell line is heterozygous for the CCR5 delta 32 mutation. We also found that in PCR amplification, wild type CCR5 DNA and mutant delta 32 DNA can form mismatched heteroduplex and move slowly in gel electrophoresis.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Human Immunodeficiency Virus (HIV) infection and Acquired Immunodeficiency Syndrome (AIDS) is characterized by progressive CD4+ T cell depletion in patients\u2019 peripheral blood and lymphoid tissues. [1\u20135]. The pathogen of AIDS is HIV [1]. HIV entry into CD4+ cells is dependent on the receptor CD4 and co-receptors, such as CCR5 (C-C chemokine receptor 5) or CXCR4 (C-X-C chemokine receptor type 4) on the surface of target cells [4, 6\u20139]. CCR5-tropic viruses predominate most isolates from human bodies globally and usually found in the early HIV infection. CXCR4-tropic viruses are fewer, and usually found in the late stage of infection [4, 9, 10]. CCR5 delta 32 mutation is a deletion of 32 base pairs after amino acid position 185, resulting in a premature and non-functional CCR5 receptor [9, 11]. Homozygous CCR5 delta 32 (CCR5 delta32/delta32) individual was resistant to CCR5-tropic HIV infection, and heterozygous carriers were slow in AIDS progression [4, 11\u201313].",
+                "In 2009, German doctors reported that a Berlin patient, who suffered chronic HIV infection and acute myeloid leukemia, got a bone marrow transplant. The donor was homozygous for CCR5 delta 32 mutation [14]. After the transplantation, the Berlin patient is still healthy [14]. Most importantly, he is still healthy after 7 years of stopping the antiretroviral therapy [15]. Now, he is considered the first and only cured HIV-infected patient in the world [15\u201317]. The success of Berlin patient stimulates the scientists\u2019 interest to disrupt CCR5 gene and even integrated HIV genome by up-to-date genome editing techniques, such as zinc finger nuclease (ZFNs), or transcription activator-like effector nuclease (TALENs), or RNA-guided CRISPR-Cas9 nuclease techniques [18\u201325].",
+                "We also tried to convert wild type CCR5 gene into mutant CCR5 delta 32 using CRISPR-Cas9 technique. However, we accidentally found that commonly used normal HEK293T cells are heterozygous for CCR5 delta32 mutation."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Material And Methods",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Cell Culture",
+                    "paragraphs": [
+                        "Human embryonic kidney HEK293T cells (ATCC, CRL-11268), human acute T cell leukemia cell line Jurkat clone E6-1 (ATCC, TIB-152), and human breast adenocarcinoma cell line MDA-MB-231 (ATCC, HTB26) were obtained from American Type Culture Collection (ATCC). The cells were maintained in DMEM (Gibco) or RPMI1640 (Gibco) media containing 10% fetal bovine serum (Gbico) and 1% Penicillin- Streptomycin (Gbico) according to the protocols (http://www.atcc.org)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Construction Of Vectors, Ta Cloning And Sequencing",
+                    "paragraphs": [
+                        "First, genomic DNA was extracted from cells with the Multisource Genomic DNA Miniprep Kit (Axygen), and then amplified by PCR with forward primer 5,TCTTCTTCATCATCCTCCTG 3, and reverse primer 5, GTTTGGCAATGTGCTTTT 3,. The PCR products were resolved in 1.7% agarose gel. Target bands were cut and purified with DNA Gel Extraction Kit (Axygen), and cloned into TA vector (CloneJET PCR cloning Kit, Ferments). After TA vector transformation into DH5\u03b1 E.coli and incubation at 37\u00b0C overnight, we picked and sequenced several bacterium colonies."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "T7 Endonuclease I (T7E1) Digestion Assay",
+                    "paragraphs": [
+                        "Genomic DNA extraction and PCR amplification were described as above. PCR products were then purified with DNA Gel Extraction Kit (Axygen). The purified PCR products 400ng were mixed with 2\u03bcl 10\u00d7 T7E1 nuclease buffer and nuclease-free water to a volume of 19\u03bcl. These products were denatured for 10 min at 95\u00b0C, annealed by gradual cooling in a thermocycler and digested by 1\u03bcl T7E1 nuclease (GeneCopoeiaTM). The digestion was performed at 37\u00b0C water bath for 40 minutes, and followed by analyzing in 1.7% agarose gel."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Results",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "Ccr5 Gene Mutation Exists In Hek293T Cells",
+                    "paragraphs": [
+                        "We tried to convert CCR5 gene into homozygous CCR5 delta 32 mutation in HEK293T cells, using CRISPR-Cas9 technique. T7E1 digestion assay is usually used in CRISPR-Cas9-induced mutation detection. T7E1 can recognize heteroduplex DNA and cleave mismatched regions. When we amplified CCR5 gene from HEK293T cells, we accidently found that CCR5 PCR products from HEK293T cells can be digested by T7E1 (Fig 1A). This phenomenon only appeared in HEK293T cells, but not in Jurkat cells and MAD-MB-231 cells (Fig 1A). To further confirm this, we analyzed another source-unknown HEK293T cells obtained from another laboratory. The same results were acquired (Fig 1B). This suggests that CCR5 allele in HEK293T cells contains a mutation."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Hek293T Cells Are Heterozygous For Ccr5 Delta32 Mutation",
+                    "paragraphs": [
+                        "To further confirm the CCR5 mutation in HEK293T cells, the above CCR5 PCR products were resolved in 3% agarose gel. Surprisingly, three different bands were observed in the results. The middle band was same as the band amplified from Jurkat cells (Fig 2A). Since there was one band below and one band above the wild type band respectively, we could not ascertain the type of mutations, insertion or deletion.",
+                        "We then cut each band, purified, inserted into TA vectors, and transformed into DH5\u03b1 E.coli for sequencing. As expected, the middle band was wild type CCR5 sequence, the lower band was CCR5 delta 32 deletion (Fig 2B). However, sequencing data from the upper band were complicated. In total fifteen single E.coli colonies, four colonies were wild type CCR5, six colonies were delta 32 deletion, and all the remaining five colonies gave noisy signals in sequencing chromatograms both from forward and reverse directions (Fig 2B), even though we picked a single colony for sequencing. When we read the noisy chromatogram carefully, we found that the noisy signal started from the position of delta 32 deletion, suggesting that the sequencing sample contained a mixture of samples."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Identification Of Three Bands Produced From The Results Of Dna Electrophoresis",
+                    "paragraphs": [
+                        "These data show that HEK293T cells are heterozygous for CCR5 delta 32. However, the third upper band still puzzled us. Theoretically, PCR products from HEK293T cell should produce two bands when analyzed in agarose gel, but actually three bands appeared. To answer this question, we mixed the plasmid containing wild type CCR5 sequence and the plasmid containing mutant CCR5 delta 32 in an equal amount. We used the mixture as a template in PCR amplification. Interestingly, this mixture showed the same result as HEK293T cells (Fig 3A). This data implies that HEK293T cells have equal template of wild type CCR5 and mutant CCR5 delta 32, which confirmed the conclusion of CCR5 delta 32 heterozygosity of HEK293T cells. Next, we directly mixed the PCR products from wild type and mutant CCR5 delta 32 in an equal amount. This mixture was divided equally. One remained at room temperature and the other was denatured at 95\u00b0C for ten minutes, cooled gradually, and then analyzed on 3% agarose gel. We found that only the heated PCR product mixture emerged the third band, but the mixture without heating did not show the third upper band (Fig 3B, compare lane 3 and 4). Again, we cut the third upper band, cloned into the vector, transformed into E.coli, incubated overnight and picked six single colonies for sequencing. The chromatograms from all colonies gave noisy signals again, the same as the third band from HEK293T cells. These data indicate that the third band is heteroduplex double strand DNA between the wild type and mutant CCR5 delta 32. The herteroduplex DNA always move more slowly than homoduplex DNA in electrophoresis."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Discussion",
+            "paragraphs": [
+                "To date, although antiretroviral therapy (ART) is employed to treat HIV/AIDS patients and control viremia effectively, ART can not completely eliminate integrated proviral DNA [2, 16]. Therefore, AIDS is still currently incurable. The Berlin patient success encourages scientists to cure AIDS by genome editing techniques [14, 25].",
+                "In this study, we accidentally found natural HEK293T cells are heterozygous for CCR5 delta 32 mutation, and this mutation does not exist in Jurkat cells and MDA-MB-231 cells. We detected three bands in PCR amplification of CCR5 allele from HEK293T cells, which was also found in Hutter\u2019s study [14]. They speculated the third band was an artifact, but did not prove it. Here we provide the experimental evidence to prove the third band is the heteroduplex of wild type and mutant CCR5 delta 32. The third band could not be separated well if the agarose gel was less than 2% [26]. In Fig 3B, only the mixture of PCR products from wild type and mutant CCR5 treated at 95\u00b0C, produced the third band; but the untreated mixture did not. This data indicate that high temperature can denature the double strand DNA, and form the mismatched heteroduplex of wild type and mutant CCR5. It also proves that the third band is an artifact during the PCR amplification, because PCR also undergoes repeated cycles on denaturing step typically at 94\u201396\u00b0C, annealing step at 50\u201365\u00b0C, and extension step at 72\u00b0C.",
+                "Surprisingly, it is unexpected that DNA sequencing of the single bacterium colony containing CCR5 heteroduplex produces noisy signals. We even picked the single colony with noisy signals in sequencing, streaked inoculation in a new LB plate, grew overnight, picked single colony and sequenced again. In total twenty single colonies, one (5%) was wild type CCR5, one (5%) was delta 32 mutation, and the remaining eighteen (90%) colonies were heteroduplex, producing noisy signals in sequencing again (Table 1). In another repeated experiment, similar results were obtained, 10% (2/20) was wild type, 10% (2/20) was delta 32 mutation, and 80% (16/20) was heteroduplex (Table 1). Our explanation is that two types of plasmids wild type and mutant CCR5 could go into one bacterium, and replicate to form one single colony.",
+                "HEK293T cells could come from a heterozygous individual of CCR5 delta 32 mutation. The average frequency of CCR5 delta 32 mutation is around 10% in European populations, but it is almost absent in African, American Indian, and Asian populations [27, 28]. It is still not clear that the occurrence of CCR5 mutation is under which kind of nature pressures. Many hypotheses were raised to explain the higher mutation frequency in Europe. One is the selective pressure of epidemic of bubonic plague in Europe during medieval times [27, 28]. Other alternative hypotheses attribute this pressure to viral diseases, such as small pox, or viral hemorrhagic fever [27, 28]. But it is still inconclusive. If we ascertain the reasons in the future, it may support an enormous potential approach to obtain sufficient homozygous CCR5 delta 32 cells in vitro to cure AIDS.",
+                "The significance of this study is the identification of CCR5 delta 32 heterozygous HEK293T cell line. HEK293T cells could be used as a positive control in genotyping CCR5 allele of other cell lines or individuals in the future. Furthermore, wild type CCR5 and mutant delta 32 DNA can form heteroduplex in PCR and move slowly in gel electrophoresis. It is possible that this heteroduplex double strand DNA could enter into a single bacterium and replicate separately in a single bacterium."
+            ],
+            "subsections": []
+        }
+    ]
+}

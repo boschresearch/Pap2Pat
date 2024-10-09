@@ -1,0 +1,212 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- describe PEDV problem
+- limitations of current vaccines
+
+## SUMMARY
+
+- introduce plant-based vaccine
+- describe vaccine production
+- summarize vaccine benefits
+- describe experiment results
+- discuss immune modulator effects
+- propose diagnostic use
+
+## DESCRIPTION
+
+- introduce PEDV
+- describe PEDV history
+- relate PEDV to other coronaviruses
+- describe PEDV genome structure
+- detail PEDV Spike protein
+- describe S1 region
+- describe S2 region
+- discuss cleavage of Spike protein
+- identify GPRLQPY motif
+- discuss receptor-binding and neutralization
+- compare S gene and regions among strains
+- describe M protein
+- describe N protein
+- discuss ORF3 gene
+- relate ORF3 to virulence
+- describe PEDV strains and virulence
+- detail clinical signs of PEDV infection
+- describe gross and histological changes in gut
+- characterize PEDV strains from US outbreaks
+- group PEDV strains into genogroups
+- describe genogroup 1 and subgroups
+- describe genogroup 2 and subgroups
+- introduce PEDV vaccines
+- describe attenuated vaccine
+- provide plant-produced Spike polypeptide
+- describe coronavirus viral genome
+- explain Spike protein structure
+- describe S protein expression
+- provide maize grain-based production
+- describe oral administration
+- define nucleic acid or polynucleotide
+- explain nucleic acid sources
+- describe nucleic acid modifications
+- define degenerate codon substitutions
+- describe nucleic acid employed
+- explain nucleic acid identity
+- describe obtaining nucleic acids
+- explain cloning and in vitro amplification
+- provide examples of cloning and in vitro amplification
+- describe PCR and other in vitro amplification methods
+- explain codon optimization
+- define codon optimization
+- describe codon optimization for animal expression
+- define polypeptide
+- define fragment, derivative, and homologue
+- define conservatively modified variants
+- explain silent substitutions
+- describe optimized nucleotide sequences
+- define conservatively modified variants for amino acid sequences
+- provide conservative substitution tables
+- describe isolated variant proteins
+- explain purification methods
+- describe methods for producing variant proteins
+- define percentage identity of amino acid sequences
+- describe chimeric or fusion proteins
+- explain production of chimeric or fusion proteins
+- describe modifications of polypeptides
+- list known modifications
+- describe functional fragments of nucleic acid molecules and polypeptides
+- define subunit
+- define construct
+- define vector
+- describe types of vectors
+- define cassette
+- define transfection
+- define transformation
+- describe expression vectors
+- define promoter
+- describe regulatory region
+- introduce nucleic acid molecule
+- describe functional linking
+- introduce selection marker
+- describe expression vector
+- introduce promoter elements
+- describe constitutive promoters
+- describe inducible promoters
+- describe tissue-specific promoters
+- describe seed-preferred promoters
+- describe endosperm-preferred promoters
+- describe embryo-preferred promoters
+- describe pericarp-specific promoters
+- describe glutamine synthetase promoters
+- describe inducible regulatory elements
+- describe chemical-regulated promoters
+- describe steroid-responsive promoters
+- describe tetracycline-inducible promoters
+- describe other components of the vector
+- describe expression cassette
+- describe signal sequence
+- describe expression cassette
+- introduce transit peptides
+- motivate use of transit peptides
+- describe endoplasmic reticulum retention signal sequences
+- describe vacuole signal sequences
+- describe termination regions
+- introduce various terminators
+- describe plant definition
+- describe plant parts
+- describe plant species
+- introduce method of transformation
+- describe various transformation methods
+- describe microprojectile-mediated delivery
+- describe electroporation
+- describe polyethylene glycol precipitation
+- describe direct gene transfer
+- describe in vitro protoplast transformation
+- describe microinjection of plant cell protoplasts
+- describe Agrobacterium transformation methods
+- describe co-cultivation of plant tissue with Agrobacterium tumefaciens
+- describe rice transformation
+- describe canola transformation
+- describe corn, wheat, sorghum, and barley transformation
+- describe Agrobacterium transformation method
+- modify Ishida method
+- use Hi II maize line
+- use bialaphos instead of phosphinothricin
+- describe dedifferentiation process
+- contact tissue with Agrobacterium
+- describe Agrobacterium cell population
+- describe plasmid pTOK162
+- describe virulence region
+- describe bacterial strain LBA4404
+- describe cloning vector
+- describe EHA101 strain
+- describe cointegrated super binary/cloning vector
+- describe growing Agrobacterium on plates
+- describe resuspending bacteria in co-culture medium
+- describe using Hi II medium
+- describe redifferentiation process
+- produce transgenic plant
+- introduce nucleotide sequence into plant
+- describe plant breeding techniques
+- describe pollination methods
+- describe backcrossing methods
+- describe selection and propagation techniques
+- harvest transgenic plants
+- extract polypeptide from biomass
+- describe downstream processing
+- test therapeutics in vitro
+- describe in vitro cell culture assays
+- describe in vivo testing
+- provide embodiments of the invention
+- describe method of providing passive immunity protection
+- describe method of reducing inflammatory cytokine response
+- describe immune modulating composition
+
+### EXAMPLES
+
+- introduce spike protein as primary immunogen
+- discuss prototype candidates based on different portions of spike protein
+- mention difficulties in producing S protein at high levels
+- motivate oral administration of vaccines
+- summarize precedent for oral immunization for PEDV
+- discuss production of S protein in plants
+- introduce maize grain as preferred option for oral vaccines
+- list advantages of maize system
+- discuss early studies with spike protein from TGEV
+- mention efficacy of maize-based vaccines in animal trials
+- discuss safety in human clinical trial
+- introduce expression of PEDV spike protein COE in maize
+- summarize previous work on high expression of S antigen in maize
+- discuss administration of vaccine candidate to naïve sows/gilts
+- introduce production of maize-produced S antigen
+- describe constructs used for production
+- discuss codon optimization and synthesis of fragments
+- describe cloning into pSB11 vector
+- introduce entire PEDV sequence
+- discuss expression of S protein in maize grain
+- describe Western blot analysis
+- discuss preparation of material for animal trials
+- introduce animal trial
+- describe treatment groups
+- discuss administration of treatments
+- introduce challenge
+- describe daily observations and sample collection
+- discuss diagnostics
+- introduce statistics
+- discuss results of virus challenge
+- introduce general health index
+- discuss survival rates
+- introduce correlates of protection
+- discuss sera and milk NABs
+- analyze cytokine levels
+- discuss reduced cytokine levels in sows and piglets
+- summarize significance of results
+
+## Example 2
+
+- describe survival rates of different groups
+
+## Example 3
+
+- describe cytokine levels in different groups
+

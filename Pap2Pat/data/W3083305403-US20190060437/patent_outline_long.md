@@ -1,0 +1,326 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field of bacterial capsular saccharides
+
+## BACKGROUND ART
+
+- introduce capsular saccharides in vaccines
+- motivate conjugation to carriers
+- summarize Hib conjugate vaccine
+- list serogroups of N. meningitidis
+- describe tetravalent vaccine
+- limitations of polysaccharide vaccines
+- introduce conjugate vaccines against serogroup C
+- describe mixtures of conjugates
+- introduce serogroup X capsular polysaccharide
+- motivate need for vaccine against serogroup X
+- describe structure of group X capsular polysaccharide
+- motivate need for aqueous formulations
+
+## DISCLOSURE OF THE INVENTION
+
+- introduce serogroup X capsular polysaccharide conjugates
+- describe immunogenicity of conjugates
+- discuss combination with other antigens
+- highlight stability of serogroup X capsular polysaccharides
+- introduce first aspect of invention: conjugate of serogroup X capsular polysaccharide and carrier molecule
+- describe process for preparing conjugate
+- introduce second aspect of invention: processes for preparing conjugate
+- describe first embodiment of second aspect: oxidation and coupling
+- describe advantages of first embodiment
+- introduce third aspect of invention: pharmaceutical composition
+- describe composition
+- introduce other aspects of invention: intermediates and uses
+- describe first embodiment of second aspect: oxidation step
+- describe first embodiment of second aspect: coupling step
+- introduce second embodiment of second aspect: reductive amination
+- describe second embodiment of second aspect: advantages
+- introduce third embodiment of second aspect: reduction, oxidative cleavage, and reductive amination
+- describe third embodiment of second aspect: advantages
+- introduce fourth embodiment of second aspect: reduction, oxidative cleavage, and direct coupling
+- describe fourth embodiment of second aspect: advantages
+- introduce method for assaying serogroup X capsular polysaccharide
+- describe method for assaying serogroup X capsular polysaccharide
+- introduce processes and reagents for preparing N-acetylglucosamine-4-phosphate
+- describe structure of serogroup X capsular polysaccharide
+- describe purification of capsular polysaccharide
+- describe modification of capsular polysaccharide
+- describe fragmentation of capsular polysaccharide
+- describe sizing of polysaccharide
+- introduce carrier molecules
+- describe preferred carrier proteins
+- describe other suitable carrier proteins
+- describe oxidation step
+- conclude disclosure of invention
+- introduce oxidation of hydroxyl groups
+- describe TEMPO-mediated oxidation
+- outline oxidative cleavage
+- describe reduction of polysaccharides
+- outline reductive amination
+- describe reductive amination in third embodiment
+- describe reductive amination in fourth embodiment
+- outline coupling to a carrier molecule
+- describe direct coupling
+- describe coupling via a linker
+- outline attachment of polysaccharide or linker-derivatised polysaccharide
+- describe reductive amination for direct coupling
+- describe coupling via a linker in first embodiment
+- describe coupling via a linker in second embodiment
+- describe coupling via a linker in third embodiment
+- outline bifunctional linkers
+- describe homobifunctional linkers
+- outline other bifunctional linkers
+- describe linker moiety
+- outline particularly useful linker moiety
+- describe other chemistries for attaching a linker
+- outline conjugates with a polysaccharide:protein ratio
+- describe ratios for conjugates made by first embodiment
+- describe ratios for conjugates made by second embodiment
+- describe ratios for conjugates made by third embodiment
+- outline compositions with a small amount of free carrier
+- describe separation of free and conjugated polysaccharides
+- outline combinations of conjugates and other antigens
+- describe further antigens comprising further conjugates
+- outline use of different carriers for different conjugates
+- introduce polysaccharide antigens
+- discuss carrier proteins
+- describe conjugation process
+- list possible further antigens
+- describe combinations of conjugates
+- discuss advantages of combinations
+- mention additional bacterial, viral, or parasitic antigens
+- list examples of additional antigens
+- discuss detoxification of toxic protein antigens
+- describe typical antigen concentrations
+- discuss adsorption to aluminium salt
+- mention use of nucleic acid encoding antigens
+- discuss upper limit of antigens in composition
+- introduce pharmaceutical compositions and methods
+- describe pharmaceutically acceptable carriers
+- discuss composition formulations
+- describe lyophilisation and reconstitution
+- discuss presentation of compositions
+- describe kit for reconstituting lyophilised vaccines
+- discuss dosage volumes and pH
+- describe buffers and isotonicity
+- discuss immunogenicity and vaccine compositions
+- describe prophylactic and therapeutic uses
+- discuss immunologically effective amounts
+- describe administration forms
+- discuss antimicrobial and detergent additives
+- describe tonicity and buffer additives
+- discuss adjuvants and immunoregulatory agents
+- list examples of adjuvants
+- introduce aluminum salts
+- describe aluminum phosphate adjuvant
+- discuss oil emulsions
+- motivate squalene-water emulsions
+- describe submicron oil-in-water emulsions
+- introduce complete and incomplete Freund's adjuvants
+- motivate saponin formulations
+- describe saponin adjuvant formulations
+- discuss immunostimulating complexes
+- introduce virosomes and virus-like particles
+- describe viral proteins for virosomes and VLPs
+- motivate bacterial or microbial derivatives
+- describe non-toxic LPS derivatives
+- discuss immunostimulatory oligonucleotides
+- introduce human immunomodulators
+- describe cytokines and interferons
+- motivate bioadhesives and mucoadhesives
+- introduce microparticles
+- introduce liposome formulations
+- describe polyoxyethylene ether and ester formulations
+- describe polyphosphazene formulations
+- describe muramyl peptides
+- describe imidazoquinolone compounds
+- describe thiosemicarbazone compounds
+- describe tryptanthrin compounds
+- describe combinations of adjuvants
+- describe methods of treatment
+- describe composition for use as medicament
+- describe use of conjugate in manufacture of medicament
+- describe preferred compositions
+- describe administration of compositions
+- describe exemplary carrier proteins
+- introduce spr0096 polypeptide sequence
+- describe CD4+ T cell epitopes
+- define preferred spr0096 antigens
+- describe variants of SEQ ID NO: 1
+- introduce spr2021 polypeptide sequence
+- describe CD4+ T cell epitopes of spr2021
+- define preferred spr2021 antigens
+- describe variants of SEQ ID NO: 3
+- introduce hybrid polypeptide
+- describe structure of hybrid polypeptide
+- define linker amino acid sequence
+- describe N-terminal amino acid sequence
+- describe C-terminal amino acid sequence
+- provide examples of hybrids
+- describe method for assaying a sample
+- hydrolyse serogroup X capsular polysaccharide
+- subject hydrolysate to liquid chromatography
+- detect glucosamine-4-phosphate
+- quantify serogroup X capsular polysaccharide
+- describe sample
+- describe vaccine as a sample
+- describe process intermediate as a sample
+- describe fermentation broth as a sample
+- describe supernatant as a sample
+- describe free and conjugated serogroup X capsular polysaccharide
+- describe stability of conjugate
+- describe level of free polysaccharide
+- describe lyophilisation stabilizers
+- describe dilution of sample
+- introduce serogroup X capsular polysaccharide
+- describe sample composition
+- discuss spiking studies
+- motivate hydrolysis
+- describe hydrolysis conditions
+- discuss separation techniques
+- introduce liquid chromatography
+- describe HPLC
+- motivate HPAEC
+- describe HPAEC-PAD
+- discuss elution methods
+- describe eluents
+- motivate chemical suppression
+- describe MMS products
+- list suitable HPAEC columns
+- discuss pre-columns and trap columns
+- describe PA1 and PA10 columns
+- motivate further analysis
+- introduce N-acetylglucosamine-4-phosphate
+- describe first embodiment of preparation process
+- describe second embodiment of preparation process
+- describe third embodiment of preparation process
+- discuss further embodiments of preparation process
+- describe process for making compound of formula A
+- describe first embodiment of invention
+- detail step i) of first embodiment
+- detail step ii) of first embodiment
+- describe second embodiment of invention
+- detail first example of second embodiment
+- detail second example of second embodiment
+- detail third example of second embodiment
+- describe third embodiment of invention
+- detail first example of third embodiment
+- detail second example of third embodiment
+- detail third example of third embodiment
+- describe purification of N-acetylglucosamine-4-phosphate
+- provide compounds and intermediates of processes
+- describe further embodiment of process
+- provide general information on practice of invention
+- define "GI" numbering
+- define omission of antigen "domain"
+- define "comprising"
+- define "about"
+- define "substantially"
+- describe flexibility of process steps
+- provide general information on sugar rings and anomeric forms
+
+### Particular Embodiments of the Invention
+
+- define conjugate of Neisseria meningitidis serogroup X capsular polysaccharide and carrier molecule
+- describe process for obtaining conjugate
+- specify oxidation of primary hydroxyl group in capsular polysaccharide
+- specify extent of oxidation
+- specify TEMPO-mediated oxidation
+- specify direct coupling
+- specify reductive amination
+- describe alternative process for obtaining conjugate
+- specify coupling via linker
+- describe alternative process for obtaining conjugate
+- specify location of primary amine group
+- specify reductive amination with bifunctional linker
+- specify X₁ and X₂ groups
+- specify coupling via linker
+- specify bifunctional linker
+- specify homobifunctional linker
+- specify N-oxysuccinimide
+- specify L
+- specify L²
+- specify capsular polysaccharide as oligosaccharide
+- specify degree of polymerisation
+
+## MODES FOR CARRYING OUT THE INVENTION
+
+- test bacterial growth conditions
+- monitor growth by proton NMR spectroscopy
+- analyze culture supernatants by NMR sequence
+- analyze pellets by HR-MAS NMR
+- quantify polysaccharide by HPAEC-PAD
+- select medium for fermentation
+- perform large-scale fermentation
+- purify serogroup X capsular polysaccharide
+- conjugate polysaccharide by oxidation and reductive amination
+- monitor depolymerization by UPLC-SEC and NMR
+- oxidize saccharide with TEMPO
+- purify oxidized saccharide by precipitation and gel filtration
+- quantify saccharide by HPAEC-PAD
+- conjugate saccharide to carrier protein CRM197
+- purify conjugates by Sephacryl S300 column
+- verify conjugation by SDS PAGE
+- make conjugates with different chain lengths and carriers
+- conjugate by reductive amination followed by SIDEA linker
+- solubilize saccharide in sodium acetate buffer
+- react saccharide with SIDEA linker
+- conjugate saccharide to CRM197
+- purify conjugates by precipitation with ammonium sulfate
+- verify conjugation by SDS PAGE
+- conjugate by reduction, oxidation, and reductive amination
+- reduce saccharide with NaBH4
+- oxidize saccharide with NaIO4
+- react saccharide with SIDEA linker
+- conjugate saccharide to CRM197
+- purify conjugates by precipitation with ammonium sulfate
+- verify conjugation by SDS PAGE
+- immunize mice with conjugates
+- measure IgG antibody titre and serum bactericidal antibody titre
+- analyze stability of polysaccharides by NMR and HPLC
+- describe stability experiments
+- monitor polysaccharide stability
+- calculate avDP values
+- evaluate HPLC profiles
+- analyze degradation mechanism
+- assign NMR spin systems
+- confirm phosphodiester bond cleavage
+- rule out phosphate migration
+- assign 31P spin systems
+- analyze thermal stability
+- measure avDP variation
+- maintain pH range
+- analyze HPLC profiles
+- confirm polysaccharide structure
+- describe stability study
+- prepare conjugates
+- perform accelerated stability studies
+- quantify free saccharide
+- describe experimental conditions
+- synthesize compound 3
+- synthesize compound 4
+- synthesize compound 5
+- synthesize compound 6
+- describe HPAEC-PAD method
+- describe acid hydrolysis of MenX polysaccharide
+- select hydrolysis conditions
+- describe linearity of method
+- describe recovery study
+- describe repeatability inter-analysis
+- describe synthesis of 4P-GlcNAc
+- describe NMR characterization of products
+- describe NMR characterization of 4P-GlcNAc
+- describe NMR characterization of hydrolyzed MenX polysaccharide
+- describe use of 4P-GlcNAc as standard
+- describe comparison of calibration curves
+- describe analysis of mixtures of hydrolyzed MenX polysaccharide and synthetic monomer
+- describe use of glucosamine-6-phosphate as standard
+- describe importance of method for monitoring saccharide content
+- describe advantages of using synthetic monomer
+- describe rapid detection of low concentrations of sugar
+- describe minimal sample clean-up
+- describe suitability for characterization of purification process intermediates
+- describe scope and spirit of invention
+

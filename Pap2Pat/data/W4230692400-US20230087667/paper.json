@@ -1,0 +1,259 @@
+{
+    "id": "https://semopenalex.org/work/W4230692400",
+    "authors": [
+        "Nandana Mihindukulasooriya",
+        "Alfio Gliozzo",
+        "Gaetano Rossiello",
+        "Sugato Bagchi",
+        "Sarthak Dash"
+    ],
+    "title": "Open Knowledge Graphs Canonicalization using Variational Autoencoders",
+    "date": "2021-01-01",
+    "abstract": "Noun phrases and Relation phrases in open knowledge graphs are not canonicalized, leading to an explosion of redundant and ambiguous subject-relation-object triples. Existing approaches to solve this problem take a two-step approach. First, they generate embedding representations for both noun and relation phrases, then a clustering algorithm is used to group them using the embeddings as features. In this work, we propose Canonicalizing Using Variational AutoEncoders and Side Information (CUVA), a joint model to learn both embeddings and cluster assignments in an end-to-end approach, which leads to a better vector representation for the noun and relation phrases. Our evaluation over multiple benchmarks shows that CUVA outperforms the existing state-of-the-art approaches. Moreover, we introduce CanonicNell, a novel dataset to evaluate entity canonicalization systems.",
+    "sections": [
+        {
+            "title": "Introduction",
+            "paragraphs": [
+                "Open Information Extraction (OpenIE) methods (Fader et al., 2011a;Stanovsky et al., 2018) can be used to extract triples in the form (noun phrase, relation phrase, noun phrase) from given text corpora in an unsupervised way without requiring a pre-defined ontology schema. This makes them suitable to build large Open Knowledge Graphs (OpenKGs) from huge collections of unstructured text documents, thereby making the usage of Ope-nIE methods highly adaptable to new domains.",
+                "Although OpenIE methods are highly adaptable, one major shortcoming of OpenKGs is that Noun Phrases (NPs) and Relation Phrases (RPs) are not canonicalized. This means that two NPs (or RPs) having different surface forms, but referring to the same entity (or relation) in a canonical KB, are treated differently. Consider the following triples as an example: (NBC-TV, has headquarters in, NYC), (NBC Television, is in, New York City) and (NBC-TV, has main office in, NYC). Looking at the previous example, both OpenIE methods and associated Open KGs would not have any knowledge that NYC and New York City refer to the same entity, or has headquarters in and has main office in are similar relations.",
+                "Moreover, while it is true that similar relations will have same argument types (see the previous example), the converse need not hold true. For example, given the following two triples (X, is born in, Y) and (X, has died in, Y) in an Open KG, where X is of type Person and Y is of type Location, does not imply is born in and has died in are similar relations.",
+                "Thus, the task of canonicalizing NPs and RPs within an Open KG is significant. Otherwise, Open KGs will have an explosion of redundant facts, which is highly undesirable, for the following reasons. Firstly, redundant facts use a higher memory footprint. Secondly, querying an Open KG is likely to yield sub-optimal results, for e.g. it will not return all facts associated with NYC when using New York City as the query. Finally, allowing downstream applications such as Link Prediction (Bordes et al., 2013) to know that NYC and New York City refers to the same entity, will improve their performance while operating on large Open KGs. Hence, it is imperative to canonicalize NPs and RPs within an Open KG.",
+                "In this paper, we introduce Canonicalizing Using Variational Autoencoders (CUVA), a neural network architecture that learns unique embeddings for NPs and RPs as well as cluster assignments in a joint fashion. CUVA combines a) The Variational Deep Embedding (VaDE) framework (Jiang et al., 2017a), a generative approach to Clustering, and b) A KG Embedding Model that aims to utilize the structural knowledge present within the Open KG. In addition, CUVA uses additional contextual information obtained from the documents used to build the Open KG.",
+                "The input to CUVA is a) An Open KG expressed as a list of triples and b) Contextual Information obtained from the documents. The output is a set of NP and RP clusters grouping all items together that refer to the same entity (or relation).",
+                "In summary, we make the following contributions,",
+                "\u2022 We introduce CUVA, a novel neural architecture for the CANONICALIZATION task, based on joint learning of mention representations and cluster assignments for entity and relation clusters using variational autoencoders.",
+                "\u2022 We demonstrate empirically that CUVA improves state of the art (SOTA) on the Entity CANONICALIZATION task, across four academic benchmarks."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Related Work",
+            "paragraphs": [
+                "Extracting triples from sentences is the first step to build Open KGs. The OpenIE technique has been originally introduced in (Banko et al., 2007). Thereafter, several approaches have been proposed to improve the quality of the extracted triples. Rulebased approaches, such as REVERB (Fader et al., 2011a) and PREDPATT (White et al., 2016), use patterns on top of syntactic features to extract relation phrases and their arguments from text. Learningbased methods, such as OLLIE (Mausam et al., 2012) and RNNOIE (Stanovsky et al., 2018), train a self-supervised system using bootstrapping techniques. Clause-based approaches (Angeli et al., 2015) navigate through the dependency trees to split the sentences into simpler and independent segments.",
+                "There have been several previous works to group NPs and RPs into coherent clusters. A traditional approach to canonicalize NPs is to map them to an existing KB such as Wikidata, also referred to as the Entity Linking (EL) task (Lin et al., 2012;Ceccarelli et al., 2014). A major problem with these EL approaches is that many NPs may refer to entities that are not present in the KB, in which case they are not clustered.",
+                "The RESOLVER system (Yates and Etzioni, 2009) uses string similarity features to cluster phrases in TextRunner (Banko et al., 2007) triples. (Gal\u00e1rraga et al., 2014a) uses manually defined features for NP canonicalization, and subsequently performs relation phrase clustering by using AMIE algorithm (Gal\u00e1rraga et al., 2013). (Wu et al., 2018) propose a modification to the previous approach by using pruning and bounding techniques. Concept Resolver (Krishnamurthy and Mitchell, 2011), which makes \"one sense per category\" assumption, is used for clustering NP mentions in NELL. This approach requires additional information in the form of a schema of relation types. KB-Unify (Delli Bovi et al., 2015) addresses the problem of unifying multiple canonical and open KGs into one KG, but requires additional sense inventory, which may not be available.",
+                "The CESI architecture (Vashishth et al., 2018a) models the CANONICALIZATION task in a two-step pipeline approach, i.e., in the first step, it uses a HolE algorithm (Nickel et al., 2016) to learn embeddings for NPs (and RPs), and then in an independent second step, it \"plugs\" these learned embeddings into a Hierarchical Agglomerative Clustering (HAC) algorithm to generate clusters. Currently, CESI is the state of the art on this task. Unlike CESI, our proposed model CUVA learns the embedding representations and the cluster assignments of both NPs and RPs in an end-to-end manner, using a single model."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Open KGs Canonicalization Using VAE",
+            "paragraphs": [
+                "Formally, the CANONICALIZATION task is defined as follows: given a list of triples T = (h, r, t) from an OpenIE system O on a document collection C, where h, t are Noun Phrases (NPs) and r is a Relation Phrase (RP), the objective is to cluster NPs (and RPs), so that items referring to the same entity (or relation) are in the same cluster. We assume that each cluster corresponds to either a latent entity or a latent relation; the label of such a latent entity/relation is unknown to the learner.",
+                "CUVA uses two variational autoencoders i.e. E-VAE and R-VAE, one each for entities and relations. Both E-VAE and R-VAE use a mixture of Gaussians for modeling latent entities and relations. Also, we use a Knowledge Graph Embedding (KGE) module to encode the structural information present within the Open KG. CUVA works as follows:",
+                "1. A latent entity (or relation) as defined above, is modeled via a Gaussian distribution. The sampled items from the Gaussian distribution  correspond to the observed NPs (and RPs) within T .",
+                "2. NPs (h, t) and RPs (r) are modeled using larger embedding dimensions compared to the Gaussian distributions, to account for variations in the observed surface forms.",
+                "3. We use Gaussian parameters to refer to the entity (relation) as opposed to the NP (or RP).",
+                "4. Since the items are clustered together, we assume that different NPs, e.g. New York City and NYC (or RPs) belonging to the same Gaussian distribution (i.e. cluster) have similar attributes.",
+                "Fig. 1 illustrates an instantiation for CUVA. A description of each of the components of CUVA follows below."
+            ],
+            "subsections": [
+                {
+                    "title": "Variational Autoencoder",
+                    "paragraphs": [
+                        "Based on the above modeling assumptions, we use Variational Deep Embedding (VaDE) (Jiang et al., 2017a) generative model for clustering. This generative clustering model implements a Mixture of Gaussians within the latent space of a variational autoencoder (VAE). We believe such a model is better suited to cluster mentions because its softclustering ability can account for different senses (polysemy) of a given entity mention. Such behavior is preferable to hard-clustering methods, such as agglomerative clustering algorithms, that assign each entity mention to exactly one cluster. Moreover, the high dimensional input space of VAE is better equipped to encode variations in the observed surface forms of different entity/relation mentions.",
+                        "The generative process of VaDE is described as follows. Assuming that there are K clusters, an observed instance x \u2208 R D is generated as, 1. Choose a cluster c \u223c Cat(\u03c0), i.e. a categorical distribution parametrized by probability vector \u03c0.",
+                        "2. Choose a latent vector z \u223c N (\u00b5 c , \u03c3 2 c I) i.e. sample z from a multi-variate Gaussian distribution parametrized by mean \u00b5 c and diagonal covariance \u03c3 2 c I.",
+                        "where f \u03b8 corresponds to a neural network parametrized by \u03b8, and z is obtained from the previous step. 4. Finally, choose a sample x \u223c N (\u00b5 x , \u03c3 2",
+                        "x I) i.e. sample x from a multi-variate Gaussian distribution parametrized by mean \u00b5 x and diagonal covariance \u03c3 2",
+                        "x I. where \u03c0 k is the prior probability for cluster k, \u03c0 \u2208 R K + and K k=1 \u03c0 k = 1. We make the same assumptions as made by (Jiang et al., 2017a), and assume the variational posterior q(z, c|x) to be a mean field distribution, and factorize it as: q(z, c|x) = q(z|x)q(c|x)",
+                        "(1)",
+                        "We describe below the inner workings of CUVA with respect to the head Noun Phrase, or the leftmost vertical structure in Fig. 1. An analogous description follows for the tail Noun Phrase, and the Relation Phrase as well.",
+                        "Encoder: Fig. 2  The Encoder block is used to model q(z|h) i.e. the variational posterior probability of the latent representation z given input representation h, via the following equations,",
+                        "After the parameters \u03bch , \u03c3h for the variational posterior q(z|h) have been calculated, we use the reparametrization trick (Kingma and Welling, 2014) to sample z 1 as follows,",
+                        "where \u223c N (0, I) (i.e. a standard normal distribution) and \u2022 denotes element-wise multiplication.",
+                        "Decoder: Given z 1 , the decoding phase continues through the Decoder block, as illustrated in Fig. 3, and via the following equations, Following (Jiang et al., 2017a), the variational posterior q(c|h) i.e. the probability of the NP h belonging to cluster c is calculated as:",
+                        "In practice, we use z 1 obtained from Equation 4in place of z (in Equation 7), and calculate a vector of assignment probability for an input h.",
+                        "During inference phase, h is assigned to a cluster having the highest probability, i.e. cluster assignment (in Fig. 1) occurs via a winners-take-all strategy."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "The KGE Module",
+                    "paragraphs": [
+                        "The motivation behind using a Knowledge Graph Embedding (KGE) module is to encode the structural information present within the Open KG. This module is responsible for the joint learning between the latent representations for entities and relations (See Figure 1) and is described as follows.",
+                        "Given a triple mention (h, r, t) belonging to an Open KG, we use Equation 7to obtain a vector of cluster assignment probabilities c h , c r and c t for the NPs and RPs respectively. As the next step, we choose a base \u03c4 > 0 and employ a soft argmax function on probability vectors c h , c r and c t as follows,",
+                        "where \u03b1 \u2208 {h, r, t} and K denotes the number of clusters.",
+                        "Choosing a large value of \u03c4 ensures that the resulting vectors v h , v t and v r obtained from Equation 8 are one-hot in nature, and indicate the most probable cluster ids for the NPs h, t and RP r respectively. For all our experiments, we choose \u03c4 = 1e5. In short, Equation 8 is a differentiable approximation to the non-differentiable argmax function.",
+                        "Given that, we now know the most probable cluster ids for a triple mention (h, r, t), we build the entity and relation representations of these mentions, namely e h , e t and e r as,",
+                        "where M E , M R represent matrices containing mean vectors (stacked across rows) for each of the K E and K R Gaussians present in E-VAE and R-VAE respectively. Here, K E and K R (Fig. 1) are hyper-parameters for CUVA.",
+                        "Once, we have the entity and relation representations, we use HolE as described in Nickel et al. (2016) as our choice of KGE algorithm for CUVA."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Side Information",
+                    "paragraphs": [
+                        "Noun and Relation Phrases present within an Open KG can be often tagged with relevant side information extracted from the context sentence in which the triple appears. We use the same side information (i.e. a list of equivalent mention pairs) as CESI (Vashishth et al., 2018a). These side information tuples are obtained via the following sources/strategies: Entity Linking, PPDB (Para-Phrase DataBase), IDF Token Overlap, and Morph Normalization. Each source generates a list of equivalent mention pairs along with a score per pair. A description of these sources together with their associated scoring procedures is provided in Section A of the Appendix.",
+                        "Let's consider the example of an equivalent mention pair (NYC, New York City) as shown in Fig. 4 to illustrate the use of side information as a constraint in CUVA. We first perform an embedding lookup for the mentions NYC and New York City and then compute a Mean Squared Error (MSE) value weighted by its plausibility score. The MSE value indicates how far CUVA is from satisfying all the constraints represented as equivalent mention pairs. Finally, we sum up the weighted MSE values for all equivalent mention pairs, which comprises our Side Information Loss L SI in Fig. 1."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Evaluation",
+            "paragraphs": [
+                "The CANONICALIZATION task is inherently unsupervised, i.e. we are not given any manually annotated data for training. With this in mind, we train the CUVA model according to the procedure described in Section B of the Appendix and then evaluate our approach on the Entity Canonicalization task only. We do not include quantitative evaluations on the Relation Canonicalization task, as none of the benchmarks described below have ground-truth annotations for canonicalizing relations, leaving the creation of a dataset for relation clustering as an interesting future work."
+            ],
+            "subsections": [
+                {
+                    "title": "Benchmarks",
+                    "paragraphs": [
+                        "For comparing the performance of CUVA against the existing state of the art approaches, we use the Base and Ambiguous datasets introduced by (Gal\u00e1rraga et al., 2014a), and ReVerb45K dataset from (Vashishth et al., 2018a In addition, we introduce a new dataset called CANONICNELL, which we built by using the 165th iteration snapshot of NELL, i.e. Never-Ending Language Learner (Carlson et al., 2010) system. We created CANONICNELL to build a dataset whose provenance is not related to ReVerb Open KB, unlike the datasets mentioned above.",
+                        "Building CANONICNELL. The CANONICNELL dataset is built via an automated strategy as follows. The above snapshot of NELL aka NELL165, contains accumulated knowledge as a list of (subject, relation, object) triples. For building CANONIC-NELL, we use the data artifact generated by (Pujara et al., 2013) which marks co-referent entities within NELL165 triples, together with a soft-truth value per entity pair. We filter out all pairs having a score less than 0.25, and view the remaining pairs as undirected edges in a graph. To this graph, we apply a depth-first-search to obtain a set of connected components, which we refer to as the set of Gold Clusters. Next, we filter through the list of NELL165 triples and keep only those whose either head or tail entity is present within the set of Gold Clusters. These triples together with the Gold Clusters obtained previously, form our newly proposed CANONICNELL dataset.",
+                        "Table 1 shows the dataset statistics for all the benchmarks, wherein the split into test and validation folds for Base, Ambiguous and Re-Verb45K datasets is already given by Vashishth et al. (2018a) 2 . This task is unsupervised in nature, hence we do not possess any training data. For CANONICNELL, we did a random 80:20 split of the triples into validation and test folds. For all methods, grid search over the hyper-parameter space using the validation set is performed, and results corresponding to the best-performing settings are reported on the test set. Following Gal\u00e1rraga et al. (2014a), we use the macro, micro, and pair F1 scores for evaluations.  Following Vashishth et al. (2018a), we use the Side Information as mentioned in Section 3.3 for canonicalizing NPs and RPs for the Base, Ambiguous, and ReVerb45K datasets. For canonicalizing NPs on CANONICNELL, we use IDF Token Overlap as the only strategy to generate Side Information. This strategy is an inherent property of the dataset and needs no external resources (Section A). Moreover, for CANONICNELL we do not canonicalize the RPs, since they are already unique.",
+                        "Finally, a detailed description of the range of values tried per hyperparameter, and the final values used within CUVA is provided in Section C."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Results",
+                    "paragraphs": [
+                        "The existing state of the art model CESI (Vashishth et al., 2018a) evaluates on the Entity Canonicalization task using head entity mentions only 2 . To be comparable, we first evaluate on the head entity mentions only and illustrate our results in Table 2. Table 3 illustrates the results when evaluated for all entity mentions on Reverb45K.",
+                        "The first line in Table 2, i.e. Gal\u00e1rraga-IDF (Gal\u00e1rraga et al., 2014a) depicts the performance of a feature-based method on this task. This approach is more likely to put two NPs together if they share a token with a high IDF value. The second row in Table 2, i.e., GloVe+HAC uses a pretrained GloVe model (Pennington et al., 2014a) to first build embeddings for entity mentions and then uses a HAC algorithm for clustering. For multi token phrases, GloVe embeddings for tokens are averaged together. GloVe captures the semantics of NPs and does not rely on its surface form, thus performing well across all the datasets. The third row augments GloVe+HAC by first initializing with pretrained GloVe vectors, followed by an optimization step wherein the Side Information (Section 3.3) loss objective is minimized, and finally clustering via the HAC algorithm. The fourth row, i.e. HolE (GloVe) uses the HolE Knowledge Graph Embedding model (initialized with pretrained GloVe vectors) to learn unique embeddings for NPs and RPs, followed by clustering using a HAC algorithm. It captures structural information with the KG and is an effective approach for NP Canonicalization.",
+                        "The current state of the art, i.e. CESI (Vashishth et al., 2018a) extends the HolE (GloVe) approach, by adding Side Information (Section 3.3) as an additional loss objective to be minimized. Looking at the results, it is clear that the addition of Side Information provides a significant boost in performance for this task. metric, with the Micro and Pair F1 metrics achieving identical performance as CESI. Finally, on the Base dataset, CUVA achieves identical performance as CESI. Moreover, the results in Table 3 also show a similar trend when evaluated on all entity mentions, i.e., both head and tail NPs belonging to Reverb45K. Table 4 shows the results for the Entity Canonicalization task when evaluated on the CANONIC-NELL dataset. The first two rows correspond to approaches that use pretrained FastText (Mikolov et al., 2018) and GloVe models to build unique embeddings for NPs and then use HAC to generate clusters. Moreover, in the absence of contextual information for the CANONICNELL triples, both CESI and CUVA use IDF Token Overlap as the only source of Side Information. Moreover, from Table 4, it is clear that CUVA achieves the new state of the art result on this benchmark as well."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Qualitative Analysis",
+            "paragraphs": [
+                "Table 5 illustrates the output of our system for canonicalizing NPs and RPs on ReVerb45K. The top block corresponds to six NP clusters, one per line. The algorithm is able to correctly group kodagu and coorg (different name of the same district in India), despite having completely different surface forms. However, a common mistake that our proposed system makes is depicted in row five, i.e., four different people each having the same name bill are clustered together. This error can be mitigated by keeping track of the type information (Dash et al., 2020) of each NP for disambiguation.",
+                "The bottom four rows in Table 5 correspond to four RP clusters. While the equivalence of RPs is captured in the first two rows of the bottom block, the final two rows highlight a potential issue involving negations and antonyms, i.e. rank below and Predicted Clusters for ReVerb45K {utc, coordinate universal time, universal coordinate time} {justice alito, samuel alito, sam alito, alito} {kodagu, coorg} {johnny storm, human torch} {bill cosby, bill maher, bill doolin, bill nye} {toyota, honda, toyota motor corporation} {be associate with, have be affiliate to, be now associate with} {lead a march on, lead the assault on} {be far behind, be not far behind, be way behind, be close behind, be seat behind, be firmly entrench in } {rank below, rank just below, be rank above} be rank above have opposite meanings. We leave the resolution of this issue as future work."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "Further Analysis",
+            "paragraphs": [
+                "In this section, we analyze CUVA under three different configurations. Section 6.1 compares how CUVA performs against pretrained language models. Section 6.2 analyzes the effect of ablating components from our proposed network architecture. Finally, Section 6.3 demonstrates the effectiveness of a joint learning approach over a pipeline-based strategy using the same network architecture."
+            ],
+            "subsections": [
+                {
+                    "title": "Comparison with Pretrained LMs",
+                    "paragraphs": [
+                        "In this section, we investigate how CUVA fares against pretrained language models. Table 6 illustrates the results when evaluated on ReVerb45K. Following the observations of (Liu et al., 2019;Tenney et al., 2019), we use the lower layers (layers one through six) of a pretrained BERT, RoBERTa and a knowledge graph enhanced ERNIE (Zhang et al., 2019) base model via the HuggingFace Transformers library (Wolf et al., 2020). For building static representation for each entity mentions, we use a mean pooling strategy to aggregate the contextualized representations. The entity mention representations are finally clustered using HAC.",
+                        "Empirically, we found layer one to work best for all the language models introduced above. Furthermore, RoBERTa performs worse out of the three when comparing the derived static embeddings on this task. In comparison, CUVA performs significantly better, i.e. +4.1%, +4.5% and +11.8% improvement on the average of Macro, Micro, and Pair F1 values, when compared against ERNIE+HAC, BERT+HAC and RoBERTa+HAC respectively. From the results, it is clear that adding an hidden layer to the VAE certainly improves CUVA's performance. Moreover, we find that removing the KGE Module drops the Pair F1 value significantly by 8.4%, with a statistically insignificant increase in the Macro and Micro F1 values. This drop in Pair F1 is due to a drop in the pairwise precision, i.e., from 0.379 with KGE to 0.229 without KGE."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Structural Ablations",
+                    "paragraphs": [
+                        "Pairwise precision measures the quality of a set of clusters as the ratio of number of hits to the total possible allowed pairs, wherein a pair of NPs produce a hit if they refer to the same entity. Therefore, using a KGE module causes CUVA to generate a higher hit ratio, and in turn supports our hypothesis that a KGE Module helps to better disambiguate entity clusters by considering the context given by the relations, and is therefore necessary."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "Effectiveness of Joint Learning",
+                    "paragraphs": [
+                        "CUVA models the Canonicalization task via a latent variable generative model and approximates the likelihood of an observed Open KG triple via a variational inference approach. Under this method, the probability of an NP (or RP) belonging to a latent cluster is entangled with both the representations of the observed mentions and the representations of the latent, and consequently, affects the likelihood of an observed triple in a joint manner. This is relevant because it allows gradients to update both the mention embeddings and soft cluster assignments jointly, thereby effectively learning from one another. Table 8 empirically demonstrates this relevance, i.e. benefits of joint learning over a pipeline approach, while using the same network architecture. In this study, the experiments have been done on the Entity Canonicalization task (head mentions only) for the ReVerb45K dataset. In addition to CUVA, we build a second model following a pipeline approach, which we refer to as VAE+HAC. This model first uses the same architecture as CUVA for learning mention representations, and in a subsequent independent step, uses a hierarchical agglomerative clustering step to cluster the mentions together. The results indicate that a joint approach outperforms a pipeline-based strategy used by existing state-of-the-art models, such as CESI."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "paragraphs": [
+                "In this paper, we introduced CUVA, a novel neural architecture to canonicalize Noun Phrases and Relation Phrases within an Open KG. We argued that CUVA learns unique mention embeddings and cluster assignments in a joint fashion, compared to a pipeline strategy followed by the current state of the art methods. Moreover, we also introduced CANONICNELL, a new dataset for Entity Canonicalization. An evaluation over four benchmarks demonstrates the effectiveness of CUVA over state of the art baselines."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "A Side Information",
+            "paragraphs": [
+                "Following CESI (Vashishth et al., 2018b), we use the following five sources of side information, which are described as follows:",
+                "\u2022 Entity Linking: Given unstructured text, from which the triple was extracted, we use Stanford CoreNLP entity linker (Spitkovsky and Chang, 2012) to map Noun Phrases (NPs) to Wikipedia Entities. If two NPs are linked to the same Wikipedia entity, we assume them to be equivalent as per this information.",
+                "\u2022 PPDB Information: We follow the same strategy as (Vashishth et al., 2018b) and modify the PPDB 2.0 (Pavlick et al., 2015) collection into a set of clusters. If two NPs (or RPs) belong to the same cluster, then they are treated as equivalent.",
+                "\u2022 IDF Token Overlap: In (Gal\u00e1rraga et al., 2014b), IDF Token Overlap was found to be the most effective feature for canonicalization. For example, it is very likely that William Shakespeare and Shakespeare refer to the same entity, or in other words, Noun Phrases (NPs) or Relation Phrases (RPs) sharing infrequent terms are more likely to refer to the same entity (or relation). An overlap score for every NP (or RP) pair is calculated as per the formula provided in (Vashishth et al., 2018b), and we keep only those pairs with scores beyond a particular threshold.",
+                "\u2022 Morph Normalization: We use multiple morphological normalization operations, as used in (Fader et al., 2011b) for finding out equivalent NPs.",
+                "We use the following strategy to calculate the plausibility scores for the mention pairs generated by each of the five aforementioned sources of Side Information. Mention pairs identified by IDF Token Overlap follow the same scoring strategy as mentioned before, whereas mention pairs identified by WordNet (with Word-sense disambiguation) and Morphological normalizations get a score of one.",
+                "The remaining sources, i.e. Entity Linking and PPDB, tend to group the NP and RP mentions into clusters. Being empirical in nature, these approaches are likely to introduce errors in their results, for e.g. due to incorrect disambiguation, and can cause some of the generated clusters to overlap.",
+                "Working with such a set of potentially overlapping clusters, we make an observation that, if a particular mention belongs to more than one cluster, then it is likely to be ambiguous, and therefore should have a low equivalence score with other members of the same cluster. Therefore, we score two mentions p and q belonging to the same cluster C as,",
+                "where e denotes the exponential function, \u03b7(x) denotes the number of clusters containing x, and |C| denotes the cluster size. The scaling factor of 1/|C| 2 favors clusters of smaller size, since for the CANONICALIZATION task, ideal cluster sizes are expected to be small."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B Training Strategy",
+            "paragraphs": [
+                "In this section, we describe our strategy for training the CUVA model. Let E, R denote the entity and relation vocabulary for an Open KG. Unless otherwise specified, all trainable CUVA parameters are randomly initialized. We train the model in three stages, as follows:"
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.1 Initializing Mixture of Gaussians",
+            "paragraphs": [
+                "We use the pretrained 100-dimensional GloVe vectors (Pennington et al., 2014b) for embedding matrices E g and R g corresponding to the vocabulary E and R respectively.",
+                "The embeddings for multi-token phrases are calculated by averaging GloVe vectors for each token. This step can be done in one of two ways, a) Normalize individual GloVe token vectors and then average them, or b) Average individual GloVe token vectors without Normalizing. In the absence of any other information, we evaluate CUVA on the validation fold of each of the benchmark datasets, as shown in Table 9. For each dataset, we mark the embedding initialization strategy that yields the best performance, and then use it to evaluate our model on the test fold of the corresponding benchmark datasets (as illustrated in the main paper).",
+                "Based on the results from for the CANONICNELL dataset as well.",
+                "For the CANONICALIZATION task, the cluster sizes will be likely small, and in turn, we get a large number of clusters. The average-case time complexity per iteration of k-Means using Lloyd's algorithm (Lloyd, 1982) is O(nk), where n is the number of samples. However, for our case, as k is comparable to n, the average time complexity becomes O(n 2 ) similar to the Hierarchical Agglomerative Clustering (HAC) method with complete linkage criterion (Defays, 1977). Though both methods have the same time complexity, we use HAC as our clustering method as we observe that it gives a better performance empirically. We cover the empirical comparison between both methods of initialization, i.e. HAC and KMeans in Section D of this Appendix.",
+                "We run HAC separately over E g for NPs, and R g over RPs. We use two different thresholds \u03b8 E for entities, and \u03b8 R for relations to convert the output dendrograms from HAC into flat clusters. Using these clusters, we compute within-cluster means and variances to initialize the means and the variances of the Gaussians for both E-VAE and R-VAE respectively. Note that, the choice of \u03b8 E and \u03b8 R sets the values for the number of mixtures K E and K R used in the next stage."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "B.2 Two-step training procedure",
+            "paragraphs": [
+                "We train CUVA in two independent steps. Our training strategy is similar to (Miao et al., 2016) where they train the encoder and decoder of the VAE alternatively rather than simultaneously. In the first step, we train the encoder in both E-VAE and R-VAE while keeping the decoder fixed. Then, in the second step, we keep the encoder fixed and only train the decoder.",
+                "Encoder training: We train the Encoder for both E-VAE and R-VAE by using the labels generated via the HAC algorithm (during initialization of the mixture of gaussians) as a source of weak supervision. Specifically, for a given triple (h, r, t), we compute:",
+                "\u2022 Negative log likelihood (NLL) loss L h calculated using the predicted cluster assignment probability vector for h and the cluster label for h.",
+                "\u2022 NLL values L r , L t for r, t computed in a similar manner.",
+                "\u2022 L1 Regularizer values using the Encoder parameters for E-VAE and R-VAE, denoted by L REG1 .",
+                "\u2022 Side Information Loss L SI applicable between any two equivalent NPs (or RPs). See Figure 1.",
+                "The overall loss function for the first step is therefore,",
+                "We train the Encoder for a maximum of T e epochs, and then proceed to the second step.",
+                "Using labels generated by the HAC algorithm as a source of weak supervision introduces noise and sets an upper limit to how much CUVA can learn. However, we also use side information during the Encoder training procedure, which helps CUVA fix the errors introduced by HAC, thus resulting in an improved performance. This behavior is empirically demonstrated by comparing GloVe+HAC and CUVA approaches on the ReVerb45K dataset in the main paper.",
+                "Decoder training: In this step, we train the decoder only, and keep the encoder fixed. The cluster parameters and the embedding lookup table are also updated. The decoder is trained by minimizing the following loss values:",
+                "\u2022 The evidence lower bound (ELBO) loss L E ELBO for E-VAE and L R ELBO for R-VAE respectively, with the decoder being a multivariate Gaussian with a diagonal covariance structure. The ELBO loss breaks into two parts namely, the Reconstruction Loss, and the KL divergence between the variational posterior and the prior. The expressions for ELBO loss are based on (Jiang et al., 2017b).",
+                "\u2022 The KGE Module loss L KGE and the Side Information Loss L SI (Refer to Figure 1).",
+                "\u2022 L1 Regularizer loss values (L REG2 ) using the Decoder parameters for E-VAE and R-VAE.",
+                "The combined loss function for the second step is:",
+                "where \u03bb corresponds to the weight value for the regularizer, a hyper-parameter set to 0.001. The decoder is trained for a maximum of T d epochs.",
+                "The motivation behind using a two-step training strategy for the VAEs is to prevent the decoder from ignoring latent representations z and learning directly from the input data (Bowman et al., 2016). Once the encoder has been trained in the first step, we keep the encoder weights fixed for the second step. This forces the decoder to learn only from the latent representations, and not from the input data. Note that the KGE loss L KGE is not used in",
+                "Step one, since it causes the model to diverge in practice."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "C Hyperparameters",
+            "paragraphs": [
+                "In this section, we discuss the grid search for hyperparameters and present the final hyperparameters used."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "C.1 Grid Search Details",
+            "paragraphs": [
+                "The search space used to obtain the best performing hyper-parameters for our experiments is described as follows: We calculate the threshold cutoff for HAC based initializations using the validation fold via a two-step approach. In the first step, we use a search space of [0.2, 1.0) in steps of 0.1. In the final step, we take the best cutoff value c from the previous step and construct a new search space [c -0.1, c + 0.1] with a step size of 0.01. Finally, we take the best performing threshold cutoff value from the previous step and use it to evaluate CUVA models on the test set.",
+                "For choosing the threshold cutoff for the IDF Token Overlap strategy in regards to Entity Side Information, we used a search space of [0.2, 0.8] in increments of 0.1 for all the datasets. In comparison, we chose 0.9 as a cutoff for the IDF Token Overlap strategy in regards to Relation Side Information (wherever applicable), without any search as it already produced a decent number of relation pairs and manual inspection of a sample indicated good quality. Finally, as to the choice of the latent space dimensions for the VAE, we employed a grid search over {50, 100, 200} dimensions."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "C.2 Final Hyperparameters used",
+            "paragraphs": [
+                "We use the following hyperparameter values in our experiments.",
+                "Common hyperparams. The fully connected layers in the Encoder section of the VAEs have embedding dimensions of 768, 384, and 100, whereas the Decoder sections have the same dimensions, but in reverse order. Both Encoder and Decoder use tanh nonlinearities. A learning rate of 1e-3 and 1e-4 together with Adam optimizer (Kingma and Ba, 2015) is used in steps one and two during our proposed two-step training procedure. L1 regularization with a regularizer weight of 1e-3 is used. A batch size of 50 is used for training, whereas for evaluation, we use a batch size of 5. Moreover, we use 20 random negative samples per positive sample, while calculating the loss function pertaining to the HolE algorithm. The GloVe vectors used for initializing the Gaussian Mixture models are obtained from http://nlp.stanford.edu/ data/GloVe.6B.zip.",
+                "For Base, Ambiguous and ReVerb45K datasets, we use a threshold of 0.4 for entities and 0.9 for relations regarding the IDF Token Overlap strategy for scoring Side Information pairs, i.e. pairs whose scores are less than these cutoff values, are discarded. For CANONICNELL we employ a threshold of 0.5 concerning the IDF Token Overlap strategy for scoring Entity Side Information pairs. Furthermore, the relations within CANONICNELL are unique, therefore they are treated as singleton clus-  ters for the experiments.",
+                "Dataset specific hyperparameters. The dataset specific hyperparameters are illustrated in Table 10. The first six rows corresponds to hyperparameters related to our proposed CUVA model, whereas the final row pertains to the Seed values (for reproducibility purposes) used for evaluating CUVA models on the test fold of the benchmark datasets. Moreover, all experiments are implemented in PyTorch v1.4.0 using a single Intel x86 CPU and one NVIDIA v100 GPU, with a max of 16GB RAM."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "D Other Ablation Experiments",
+            "paragraphs": [
+                "In this section, we describe additional experiments to analyze the performance of our proposed CUVA model.",
+                "Table 11 illustrates the performance of CUVA while varying the strategies on the choice of initializations for the Gaussian Mixture model and Knowledge Graph Embedding. While our proposed instantiation of CUVA, i.e. Row two, uses HAC clustered GloVe vectors for initializations and HolE for Knowledge Graph Embedding, it is worthwhile to note that all the other combinations also do outperform CESI, which is the current state of the art model.  in those values while varying \u03b8 E was minimal.",
+                "Its interesting to note that setting \u03b8 E = 0.2 yields a better Macro F1 value (by 1%) on the test fold, even though \u03b8 E = 0.3 had the best performance on the validation fold.  10. The list of Macro F1 values reported here have a standard deviation of 4.6%.",
+                "Furthermore, from Section A (of the Appendix), we note that CUVA uses several sources to generate additional side information, and utilizes it while training. Specifically, CUVA uses two external resources, i.e. an off the shelf Stanford CoreNLP entity linker (EL) (Spitkovsky and Chang, 2012) and a lexical resource called PPDB 2.0 (Pavlick et al., 2015), which is a collection of equivalent paraphrases. Table 12 illustrates the performance of CUVA when each of these external resources is ablated one at a time.",
+                "From these results, it is clear that the entity linker (EL) has a bigger impact on the results as opposed to PPDB 2.0 resource. This is because, being a statistical model, the Stanford CoreNLP entity linker"
+            ],
+            "subsections": []
+        }
+    ]
+}

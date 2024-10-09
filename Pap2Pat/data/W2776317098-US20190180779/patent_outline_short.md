@@ -1,0 +1,113 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate magnetic tape heads
+
+## SUMMARY
+
+- describe apparatus
+
+## DETAILED DESCRIPTION
+
+- define terms and scope of invention
+- describe general embodiment of magnetic storage systems
+- illustrate tape drive system and components
+- describe tape cartridge and nonvolatile memory
+- illustrate magnetic tape head and components
+- describe readers and writers in piggyback configuration
+- illustrate complementary modules of magnetic tape head
+- describe multi-module head configurations (W-R-W, R-W-R, etc.)
+- illustrate three-module head with tape bearing surfaces
+- describe benefits of fixed inner wrap angle and reduced wear
+- illustrate alternative module configurations (tangent, overwrap)
+- describe applications of various embodiments
+- describe multi-module head structure
+- explain tape tenting and its application
+- discuss file systems and data storage libraries
+- detail tape cartridge loading and unloading processes
+- introduce LTFS format and its benefits
+- describe recessed TMR sensor structures and their advantages
+- illustrate apparatus with module and read transducers
+- explain TMR sensor configurations for reduced magnetic noise
+- discuss patterned tape bearing surface and narrow land
+- describe sensor performance limitations
+- motivate hard bias magnets
+- explain hard bias magnet functionality
+- discuss trade-offs in hard bias magnet strength
+- introduce new geometric characteristics for free layers and hard bias layers
+- describe apparatus 1000 and its components
+- detail tunnel valve read transducer 1006 and its components
+- describe tunnel valve read transducer 1070
+- detail sensor structure 1012 and magnetic shields 1014, 1016
+- explain hard bias magnets 1032 and electrically insulating layers 1034
+- discuss impact of hard bias magnet construction on performance
+- describe preferred approaches for hard bias magnet thickness and profile
+- illustrate alternative hard bias magnet configurations and results
+- detail hard bias magnet formation and material composition
+- describe hard bias magnet structure
+- motivate shape anisotropy
+- describe patterning of tape bearing surface
+- illustrate module with patterning
+- describe narrow land and tape tenting
+- illustrate apparatus with tenting
+- describe sensor structure with reference layer
+- illustrate guide mechanism for wrap angle
+- describe multiple modules with internal wrap angle
+- illustrate apparatus with recessed media facing side
+- describe module structure
+- illustrate wear simulation results
+- discuss advantages of asymmetrical head geometry
+- introduce hard and dielectric spacers in TMR sensor structures
+- describe apparatus with transducer structure and spacer layers
+- describe transducer structure
+- motivate spacer layers
+- describe spacer layer materials
+- explain unexpected performance
+- describe electrical lead layers
+- explain stud implementation
+- discuss equipotential along sensor layer
+- illustrate alternative embodiment
+- describe transducer structure
+- illustrate variations of transducer structure
+- motivate stitched lead layers
+- describe write transducers with high moment layer
+- illustrate write transducers with high moment layer
+- describe array of write transducers
+- describe write transducer structure
+- detail pole tip and write gap configuration
+- introduce high moment layer and its properties
+- discuss influence of deposition thickness on high moment layer effectiveness
+- describe variations of write transducer structure
+- detail pedestal trimming process and its effects
+- introduce bi-directional recording with second high moment layer
+- discuss properties and effects of second high moment layer
+- describe write transducer configuration
+- discuss trimming of second high moment layer
+- describe write transducer configuration with trimmed second high moment layer
+- discuss processing of non-trimmed portion of second high moment layer
+- describe apparatus with beaked high moment layer
+- describe array of write transducers with high moment layer
+- describe write transducer structure
+- detail nonmagnetic write gap
+- describe high moment layer
+- explain beaked profile formation
+- discuss high moment layer properties
+- describe write transducer operation
+- illustrate variations of write transducer
+- show additional embodiments of write transducers
+- describe second high moment layer
+- specify dimensions of second high moment layer
+- discuss deposition thickness of high moment layers
+- describe benefits of symmetrical write gap
+- discuss trimming of second high moment layer
+- describe variations of write transducer configuration
+- introduce alternative write transducer embodiment
+- describe write transducer structure
+- motivate high moment layer
+- describe high moment layer properties
+- describe computer implementations
+- describe computer readable storage medium
+- describe computer readable program instructions
+- describe system architecture
+

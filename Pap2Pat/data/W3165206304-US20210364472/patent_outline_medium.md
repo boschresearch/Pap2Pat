@@ -1,0 +1,197 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+### 1. Field of the Invention
+
+- define field of invention
+
+### 2. Description of Related Art
+
+- introduce non-destructive testing (NDT)
+- summarize traditional NDT methods
+- describe U.S. Pat. No. 9,207,639 for visualizing A-scan data
+- describe U.S. Pat. No. 8,265,886 for non-destructive testing of pipes
+- describe U.S. Pat. No. 9,121,817 for ultrasonic testing device
+- describe U.S. Pat. No. 10,302,600 for inspection devices
+- describe U.S. Pat. No. 4,215,583 for bondtesting by ultrasonic complex impedance plane analysis
+- describe U.S. Pat. No. 4,184,373 for evaluating a bond
+- describe U.S. Pat. No. 8,347,723 for sonic resonator system
+- describe US Patent Publication No. 2019/0293610 for detection of kiss bonds
+- describe U.S. Pat. No. 7,574,915 for simplified impedance plane bondtesting inspection
+- describe U.S. Pat. No. 8,234,924 for damage location and identification
+- describe various other patents for non-destructive testing and bond strength evaluation
+- summarize related art
+- describe patent for near surface inconsistency detection
+- describe patent for ultrasonic non-destructive testing
+- describe patent for wrinkle characterization and performance prediction
+- describe patent for measuring out-of-plane wrinkles
+- describe patent for non-destructive testing and ultrasonic inspection
+- describe patent for quantifying porosity
+- describe patent for simplified direct-reading porosity measurement
+- describe patent for determining porosity of a workpiece
+- describe patent for ultrasonic detection of porous medium characteristics
+- describe patent for differential ultrasonic waveguide cure monitoring probe
+- describe patent for system and method for identifying incompletely cured adhesive
+- describe patent for method and system of non-destructive testing for composites
+- describe patent for automated calibration of non-destructive testing equipment
+- describe patent for ultrasonic device and method for non-destructive evaluation of polymer composites
+- describe patent for method and system for non-destructive testing of curved composites
+
+## SUMMARY OF THE INVENTION
+
+- introduce ultrasonic non-destructive testing
+- motivate real-time visualization of defects
+- describe system embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce non-destructive testing systems
+- describe system for non-destructive testing of composite materials
+- describe system for non-destructive testing of composite materials with material database
+- describe system for non-destructive testing of composite materials with characteristic length
+- introduce ultrasonic testing
+- describe pulse-echo and through transmission configurations
+- explain reflection coefficient equation
+- discuss constraints of portability and robustness
+- describe contact transducer limitations
+- introduce spherically focused transducer
+- discuss acoustic coupling methods
+- describe full immersion tank testing and water jets
+- introduce bubbler alternative
+- discuss limitations of traditional water jets and bubblers
+- introduce types of scan data (A-scans, B-scans, C-scans)
+- describe A-scan, B-scan, and C-scan formation
+- discuss limitations of current systems using calibration blocks
+- introduce importance of composite material testing
+- discuss limitations of current portable transducer systems
+- describe portable transducer housing assembly
+- detail transducer housing assembly components
+- explain offset element function
+- describe calibration wave method
+- detail robotic arm mounting
+- explain translation stage operation
+- describe array element attachment
+- detail manual operation
+- explain membrane-less transducer housing assembly
+- describe connection receiving end
+- detail computer and display means
+- explain graphical user interface
+- describe transducer housing assembly components
+- detail central housing and fluid connector
+- explain mounting bracket and surface offset elements
+- describe coupling element and elongate member
+- illustrate transducer housing assembly components
+- describe fluid connector functionality
+- explain pressure relief valve operation
+- describe securing element functionality
+- illustrate lens housing components
+- describe membrane functionality
+- explain transducer frequency operation
+- describe external couplant usage
+- illustrate surface offset element components
+- describe surface offset element functionality
+- illustrate transducer housing assembly mounting options
+- describe data input and calibration process
+- illustrate data input screen components
+- describe z-gate selection module functionality
+- explain wavelet transform usage for defect detection
+- introduce composite manufacturing issue
+- describe foreign object inclusions
+- motivate need for reliable detection method
+- describe limitations of current scanning methods
+- introduce neural networks for foreign object detection
+- summarize prior art studies
+- describe embodiments of the present invention
+- illustrate graphical representations of test material
+- describe A-scan amplitude gradient map
+- distinguish foreign objects from air pockets
+- describe material database
+- illustrate experiment with foreign objects
+- describe automated detection signatures
+- illustrate A-scans of carbon fiber test objects
+- describe fingerprint region analysis
+- illustrate B-scans of carbon fiber test object
+- describe histogram analysis of amplitudes
+- illustrate histogram analysis examples
+- describe gate size selection
+- illustrate C-scan of test object
+- describe amplitude filtering of C-scan data
+- illustrate edge delineation of foreign objects
+- describe measurements of foreign object sizes
+- introduce artificial intelligence module
+- describe bond line thickness importance
+- describe kissing bonds and disbonds
+- describe limitations of composite materials
+- motivate need for improved bond line inspection
+- describe limitations of existing phased array transducers
+- describe limitations of existing flat front contact transducers
+- introduce spherically focused transducer system
+- describe advantages of spherically focused transducer system
+- describe ability to detect void regions
+- describe ability to detect areas of no adhesive
+- describe ability to achieve through-thickness resolution
+- describe limitations of existing immersion-based scanning systems
+- introduce waveform-based approach
+- describe ability to calculate relative position of gap regions
+- describe ability to report 3D coordinates of gap regions
+- describe limitations of existing methods for measuring bond line thickness
+- introduce A-scan image generation
+- describe algorithm for calculating bond line thickness
+- describe visualization of bond line surfaces
+- describe interactive features of visualization
+- describe ability to match bond line material to material database
+- describe 2D view of adhesive bond line with color gradient
+- introduce thermographic testing apparatus
+- motivate phased array ultrasonic testing apparatus
+- describe initial thermographic scan
+- describe phased array ultrasonic scan
+- describe individual scan transducer
+- describe A-scan and gate selection
+- describe maximum value plotting and C-scan creation
+- describe Fourier transform and frequency spectrum intensity C-scan creation
+- describe damage area determination
+- describe reconciled C-scan creation
+- describe visualization of damage area
+- describe 3-D damage profile creation
+- motivate wrinkle detection
+- describe wrinkle detection and characterization
+- describe B-scan creation and wrinkle identification
+- describe 3-D graphical representation of wrinkle
+- describe porosity determination
+- introduce degree of cure evaluation
+- describe improper curing defects
+- motivate real-time ultrasonic monitoring
+- explain limitations of thermographic analysis
+- describe importance of regulating curing conditions
+- introduce ultrasonic emitter probe embodiment
+- describe data analysis for degree of cure evaluation
+- explain automatic adjustment of curing process
+- introduce acoustic window embodiment
+- describe continuous scanning embodiment
+- motivate evaluating degree of cure of composite
+- introduce liquid coupled transducer embodiment
+- describe 3-D graphical image production
+- introduce layer orientation evaluation
+- describe A-scan and C-scan generation
+- explain data transformation for fiber direction determination
+- introduce curved parts evaluation
+- describe limitations of current ultrasonic testing systems
+- motivate need for new system
+- introduce present system
+- describe advantages of present system
+- describe operation of main transducer
+- describe calibration step
+- describe use of offset transducer
+- describe use of visual analysis system
+- describe portable transducer housing assembly
+- describe capabilities of present system
+- describe FIG. 50
+- describe computer system
+- describe network and communication
+- describe computing devices
+- describe processor and memory
+- describe input/output controller
+- describe multiple processors and buses
+- describe various embodiments of computer system
+

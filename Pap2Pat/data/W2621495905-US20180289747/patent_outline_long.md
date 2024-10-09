@@ -1,0 +1,308 @@
+# DESCRIPTION
+
+## FIELD
+
+- define field of invention
+
+## BACKGROUND
+
+- motivate organ transplantation
+- describe drawbacks of organ transplantation
+- introduce cell-based therapies
+- describe benefits of mesenchymal stromal/stem cells
+- summarize paracrine effects of MSC
+- describe MSC secretome
+- discuss in vivo data on MSC conditioned media
+- highlight limitations of cell-based therapies
+
+## SUMMARY
+
+- introduce ADHLSC-CM
+- describe composition of ADHLSC-CM
+- highlight anti-fibrotic effects
+- describe cell-free composition
+- define ADHLSC
+- describe conditioned medium
+- highlight beneficial properties
+- describe fractioning of ADHLSC-CM
+- introduce soluble proteins
+- describe specific proteins
+- introduce microvesicles
+- describe concentration of proteins and microvesicles
+- introduce method for producing ADHLSC-CM
+- describe culturing ADHLSC
+- separate cell culture medium
+- introduce method for producing cell-free composition
+- describe applications of ADHLSC-CM
+- introduce use as medicament
+- describe pharmaceutical formulations
+- introduce combination with exogenous active ingredients
+- describe treatment of disorders
+- introduce use in organ or cell transplantation
+
+## DESCRIPTION OF EMBODIMENTS
+
+- define singular and plural forms
+- define "comprising" and related terms
+- define numerical ranges
+- define "about" and "approximately"
+- define "one or more"
+- discuss background of invention
+- incorporate references by citation
+- define technical and scientific terms
+- define aspects and embodiments
+- combine features of different embodiments
+- illustrate representative embodiments
+- describe ADHLSC-CM and its properties
+- define "adult-derived human liver stem or progenitor cells"
+- characterise ADHLSC
+- describe morphology of ADHLSC
+- describe differentiating capabilities of ADHLSC
+- describe lack of expression of certain markers
+- characterise ADHLSC by co-expression of markers
+- describe further characterisation of ADHLSC
+- define positivity and negativity for markers
+- describe detection of cell-specific markers
+- define "progenitor" and "progenitor cell"
+- define "stem cell"
+- define "adult stem or progenitor cell"
+- describe isolation of ADHLSC
+- describe genetic modification of ADHLSC
+- describe ADHLSC obtainment method
+- detail culturing and passaging steps
+- specify substrate and medium composition
+- describe emergence and proliferation of ADHLSC
+- provide example of method with specific growth factors
+- detail passaging and culturing steps in example
+- describe emergence of ADHLSC in example
+- provide another example of method with collagenase
+- detail culturing and passaging steps in example
+- describe emergence and proliferation of ADHLSC in example
+- summarize method for producing cell-free conditioned medium
+- define "cell-free" and "free of cells"
+- describe method for separating cells from culture media
+- define "medium" and its characteristics
+- describe suitable culture medium formulations
+- detail basal medium composition
+- describe supplements for basal medium
+- detail antioxidant supplements
+- describe lipids and lipid carriers as supplements
+- describe supplementation with mammalian plasma or sera
+- detail heat inactivation and sterilization of plasma or serum
+- describe serum replacements for serum-free media
+- detail proportion of plasma or serum in medium
+- describe preferred medium composition
+- define "conditioned medium"
+- describe period of time for conditioning medium
+- provide example of period of time for conditioning medium
+- describe secretion of mixed secretion products by ADHLSC
+- detail period of time for secretion of mixed secretion products
+- describe typical period of time for conditioning medium
+- provide another example of period of time for conditioning medium
+- conclude description of conditioned medium
+- define conditioned medium
+- describe cell culture conditions
+- specify cell density at seeding
+- describe medium volumes
+- discuss serum-free medium
+- outline method for producing cell-free conditioned medium
+- specify time points for obtaining conditioned medium
+- describe manufacturing conditioned medium according to GMP guidelines
+- sterilize conditioned medium
+- separate conditioned medium from cells
+- describe centrifugation and filtration methods
+- discuss repetitions and combinations of separation methods
+- illustrate co-culture system
+- describe filtering conditioned medium
+- sterilize conditioned medium
+- define ADHLSC-CM Fraction
+- describe fractionation of ADHLSC-CM
+- outline protein separation techniques
+- describe enzymatic digestion
+- describe centrifugation
+- describe adsorption
+- describe chromatography
+- list soluble proteins in ADHLSC-CM
+- describe concentration of soluble proteins
+- discuss identification of soluble proteins
+- describe technologies for determining secretome
+- discuss liver-relevant activities of secretomes
+- describe characterization of microvesicles
+- describe selection of microvesicles
+- define fraction
+- describe separation process
+- discuss composition of fractions
+- describe alteration of composition
+- conclude description of fractions
+- define ADHLSC-CM Fractions
+- motivate active fractions
+- describe fractionation methods
+- summarize protein fractionation
+- describe protein sub-fractionation
+- outline fractioning technologies
+- introduce isolated fractions
+- define isolated and purified
+- describe microvesicle fractionation
+- outline microvesicle characteristics
+- describe microvesicle isolation
+- introduce mixed secretion proteins
+- define peptide, polypeptide, and protein
+- describe mixed secretion proteins
+- introduce isolated ADHLSC-CM Fractions
+- describe concentration methods
+- outline concentration ranges
+- describe dilution methods
+- outline dilution ranges
+- introduce therapeutic uses
+- describe product combinations
+- outline exogenous compounds
+- describe pharmaceutical formulations
+- outline formulation options
+- describe kit compositions
+- introduce pharmaceutical effective amounts
+- describe excipient roles
+- outline administration methods
+- summarize pharmaceutical formulations
+- define "pharmaceutically acceptable"
+- define "carrier" or "excipient"
+- list examples of carriers
+- describe pharmaceutical compositions for various routes of administration
+- describe oral administration
+- describe oral dosage forms
+- describe solid carriers
+- describe oral or nasal aerosol or inhalation administration
+- describe pharmaceutical formulations for aerosols or sprays
+- describe delivery devices
+- describe administration via mucosal surfaces
+- describe carriers for mucosal administration
+- describe parenteral administration
+- describe pharmaceutical compositions for parenteral administration
+- describe solvents and diluents
+- describe dispersing or wetting and suspending agents
+- describe lyophilisation
+- describe carriers for intravenous use
+- describe carriers for subcutaneous or intramuscular use
+- describe aqueous formulations with surfactants
+- describe micellar dispersions
+- describe phospholipid surfactants
+- describe surfactant:active substance molar ratio
+- describe rectal administration
+- describe suppositories
+- describe microcapsules, implants or rods
+- describe dosage or amount of active substances
+- describe factors affecting dosage
+- describe typical daily dosage
+- describe repeated administrations
+- describe combination therapy
+- describe administration of active substances and other active ingredients
+- describe subjects and treatment
+- describe administration methods
+- describe delivery system
+- describe treatment of disorders
+- describe use in transplantation
+- describe treatment of organ injury
+- describe treatment of liver disease
+- describe prevention of liver disorders
+- describe diagnosis of liver disease
+- describe biochemical markers
+- describe treatment of fibrotic disorders
+- describe organ failure
+- describe liver failure
+- describe acute liver failure
+- describe chronic liver failure
+- describe symptoms of liver failure
+- describe diagnosis of acute liver failure
+- describe causes of acute liver failure
+- describe fulminant hepatic failure
+- describe sub-fulminant hepatic failure
+- describe multiple organ failure
+- describe multiple organ dysfunction syndrome
+- describe liver fibrosis
+- describe liver disease
+- describe assays of liver function
+- describe examples of liver function assays
+- define proliferative disease
+- provide examples of proliferative diseases
+- describe use of ADHLSC-CM in treating proliferative diseases
+- describe inhibition of fibrogenesis and fibrosis in vivo
+- describe use of ADHLSC-CM in inhibiting fibrogenesis in vitro
+- describe co-culture system for testing combination products
+- describe experimental results of co-culture system
+- define hepatic stellate cells
+- describe pharmaceutical formulation comprising HSC and ADHLSC
+- describe pharmaceutical formulation comprising hepatocytes and ADHLSC
+- describe composition of pharmaceutical formulation
+- describe administration of pharmaceutical formulation
+- describe use of ADHLSC-CM in identifying biologically active compounds
+- describe method for identifying biologically active compounds
+- describe cell-free conditioned medium obtainable by culturing ADHLSC
+- describe cell-free composition obtainable by fractioning ADHLSC-CM
+- describe characteristics of cell-free conditioned medium
+- describe characteristics of cell-free composition
+- describe method for producing cell-free conditioned medium
+- describe use of cell-free conditioned medium as a medicament
+- describe pharmaceutical formulation comprising cell-free conditioned medium
+- describe use of cell-free conditioned medium in treating fibrotic disorders
+- describe use of cell-free conditioned medium in treating liver disorders
+- describe use of cell-free conditioned medium in treating organ injury or failure
+- describe use of cell-free conditioned medium in organ or cell transplantation
+- describe method of treating a disorder using cell-free conditioned medium
+
+### EXAMPLES
+
+- introduce example 1
+- describe ADHLSC and HSC isolation and culture
+- detail cell culture conditions
+- explain cell viability evaluation
+- describe flow cytometry
+- detail antibody usage
+- explain production of conditioned media
+- describe ELISA analysis
+- detail collagen secretion analysis
+- describe HGF and TGFβ1 analysis
+- explain Luminex analysis
+- detail Bio-Plex Pro Human Cytokine 27-plex Assay kit usage
+- describe statistics
+- present results of ADHLSC and HSC isolation
+- describe fibroblastic morphology and population doubling
+- detail mesenchymal phenotype investigation
+- describe secretome analysis
+- present results of protein-specific immunoassays
+- compare ADHLSC-CM and HSC-CM
+- discuss differences with other conditioned media
+- introduce ADHLSC secretome
+- distinguish ADHLSC from HSC and other cells
+- describe potential beneficial effects of ADHLSC-CM
+- introduce Example 2
+- describe ADHLSC/HSC Co-Culture Model
+- outline assays for comparing ADHLSC and ADHLSC-CM effects on HSC
+- describe CCK-8 biochemical assay
+- describe propidium iodide assay
+- describe Ki-67 immunocytochemistry
+- present results of HSC proliferation analysis
+- present results of CCK-8 biochemical assay
+- present results of adherent and floating HSC analysis
+- present results of ADHLSC-CM effect on HSC proliferation and adherence
+- present results of HSC plating kinetic analysis
+- present results of HSC cell cycle analysis
+- present results of Ki67 staining analysis
+- summarize effects of ADHLSC-CM on HSC
+- describe influence of ADHLSC on collagen secretion capacity of HSC
+- present results of pro-collagen I secretion analysis
+- present results of multiplex Luminex assay
+- summarize anti-fibrotic effect of ADHLSC-CM
+- describe potential pharmaceutical uses of ADHLSC-CM
+- introduce Example 3
+- describe in vivo models and pharmaceutical uses of ADHLSC-CM
+- outline methods for administering ADHLSC-CM in vivo
+- describe selection of animal models
+- describe treatment of animals with ADHLSC-CM
+- outline controls and end-points for in vivo studies
+- list non-exhaustive models and related indications
+- describe D-galactosamine/endotoxin-induced mouse model of fulminant hepatic failure
+- describe carbon tetrachloride-induced mouse model of liver fibrosis
+- outline administration of ADHLSC-CM in human subjects
+- describe formulation and administration of ADHLSC-CM
+- describe site of administration
+- describe delivery to the liver via portal vein
+

@@ -1,0 +1,215 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce technical field of C. difficile assay and toxin production
+
+## BACKGROUND
+
+- introduce C. difficile and its effects
+- describe current diagnostic challenges
+- discuss limitations of current diagnostic methods
+- highlight need for rapid and sensitive assay
+- describe toxins TcdA and TcdB
+- discuss structure and function of toxins
+- describe current methods for toxin production
+- highlight limitations of current toxin production methods
+- discuss need for alternative expression systems
+- introduce Bacillus megaterium as alternative expression system
+- describe advantages of B. megaterium expression system
+- discuss previous attempts at expressing C. difficile toxins
+- highlight limitations of previous attempts
+- describe need for improved toxin production methods
+- discuss importance of understanding pathogenesis of CDAD
+- highlight need for new assay and treatment tools
+
+## SUMMARY
+
+- introduce method for detecting C. difficile toxin
+- describe contacting test cells with sample and toxin-enhancing antibody
+- describe measuring cell death in test cells
+- introduce positive control with known amount of C. difficile toxin
+- describe measuring cell death in positive control
+- introduce various methods for measuring cell death
+- describe using white blood cells or colonic epithelial cells as test cells
+- introduce various types of test cells
+- describe toxin-enhancing antibody and its specificity
+- introduce various embodiments of toxin-enhancing antibody
+- describe detecting toxin in sample
+- introduce various embodiments of detecting toxin
+- describe analyzing cell death data
+- introduce various embodiments of analyzing cell death data
+
+## DETAILED DESCRIPTION
+
+- introduce C. difficile
+- describe pathogenicity of C. difficile
+- discuss antibiotic usage and C. difficile proliferation
+- motivate development of novel preventive and treatment modalities
+- describe cell-based immunocytotoxicity assay
+- introduce A1H3 enhancing antibody
+- describe real-time and ultrasensitive assay for C. difficile toxin detection
+- discuss toxin A and toxin B as virulence factors
+- describe enterotoxic effects of TcdA and TcdB
+- discuss structural homology of TcdA and TcdB
+- describe receptor-mediated endocytosis of toxins
+- discuss intracellular mode of action of toxins
+- describe clinical manifestation of CDAD
+- discuss systemic complications of CDAD
+- motivate protection against C. difficile
+- discuss anti-toxin antibodies and protection
+- describe animal studies on neutralizing antibodies
+- discuss mechanism of antibody-mediated protection
+- introduce Fc receptors and their role in protection
+- describe method for detecting C. difficile toxin
+- introduce toxin-enhancing antibody
+- describe measurement of cell viability
+- discuss use of white blood cells in assays
+- describe use of electronic sensing system
+- discuss toxin detection limits
+- describe method for producing Clostridium toxins in Bacillus host
+- introduce nucleic acid vector and gene encoding toxin protein
+- describe screening transformants for toxin expression
+- discuss use of signal sequence and affinity marker
+- describe purification of recombinant toxin
+- provide vector for recombinant high level expression of C. difficile toxin
+- describe shuttle vector replicating in Bacillus and another prokaryotic cell
+- detail gene encoding toxin with BsrG1 cloning site
+- introduce cell carrying vector expressing C. difficile toxin in Bacillus cell
+- describe kit for assay for presence of C. difficile
+- motivate monoclonal antibody A1H3 enhancing killing of murine macrophages and human monocytes by TcdA
+- summarize effects of A1H3 on mammalian cells
+- introduce assay for presence of C. difficile cells and toxins
+- describe toxin-enhancing antibody of IgG2a class
+- detail effects of A1H3 on murine macrophages and human monocytes
+- motivate role of FcγRI in A1H3-dependent enhancement of TcdA toxicity
+- describe blocking of FcγRII/III with anti-mouse-CD16/32 antibodies
+- summarize results of pre-saturation of FcγRI on THP1 with anti-human-CD64 antibodies
+- describe pre-incubation of TcdA/A1H3 with recombinant mouse CD64
+- motivate expression of FcγRI enhancing sensitivity of mRG1-1 cells to TcdA
+- describe glucosyltransferase activity of TcdA in mRG1-1 cells
+- introduce FcγR family members
+- describe binding of A1H3 to RAW 264.7
+- motivate binding of TcdA with FcγRI
+- describe internalization of immune complexes via phagocytosis or endocytosis
+- detail mode of internalization linked to size of bound complexes
+- introduce relationship of antibody response in host protection and pathogenesis of C. difficile associated diseases
+- describe protective effects of antibodies against TcdA and TcdB
+- motivate different subsets of antibodies having different roles in host protection and disease progression
+- introduce methods and vectors for expression of C. difficile toxins
+- describe expression systems using aerobic Bacillus strains
+- detail cloning of tcdA and tcdB genes into shuttle vector
+- summarize purification and biological activities of recombinant toxins
+
+### EXAMPLES
+
+- describe cell lines
+- describe toxins
+- describe antibodies
+- describe animals and samples
+- introduce real-time cell viability monitoring
+- describe RT-CES system
+- explain cell index measurement
+- describe assay protocol
+- introduce A1H3 antibody
+- show enhanced sensitivity with A1H3
+- describe blocking toxin activity
+- introduce frozen test cells
+- describe thawing and treating cells
+- show enhanced sensitivity with A1H3 and frozen cells
+- introduce detecting toxin in biological samples
+- describe treating cells with fecal samples
+- show detection of toxin activity in fecal samples
+- describe detecting toxin in serum and pleural effusion samples
+- show detection of toxin activity in serum and pleural effusion samples
+- discuss systemic complications
+- introduce additional test cells
+- describe cell maintenance and isolation
+- describe toxin purification
+- express recombinant TcdA peptide fragments
+- describe MAb generation
+- summarize immunofluorescence staining
+- describe TNF-α production
+- summarize cytotoxicity assay
+- describe immunodetection of Rac1
+- summarize A1H3-dependent enhancement of cytotoxicity
+- describe enhanced Rac1 glucosylation
+- summarize cytoskeleton disruption
+- describe A1H3-mediated enhancement of TNF-α production
+- motivate use of pET32a prokaryotic expression system
+- describe protein expression induction
+- summarize peptide fragment purification
+- describe MAb isotype determination
+- summarize MAb reactivity mapping
+- describe immunofluorescence staining protocol
+- summarize F-actin staining
+- describe flow cytometry analysis
+- summarize TNF-α production assay
+- describe pharmacologic agent inhibition
+- summarize Rac1 glucosylation assay
+- describe cytoskeleton disruption imaging
+- introduce FcγRI role in antibody-dependent enhancement of toxin effects
+- test FcγRI involvement in A1H3-dependent enhancement of TcdA toxicity
+- examine surface binding of TcdA/A1H3 to RAW 264.7 cells
+- analyze binding of TcdA/A1H3 to FcγRI-expressing cells
+- investigate endocytosis of TcdA/A1H3 immune complex
+- dissect molecular mechanisms of FcγRI-mediated endocytosis
+- describe cell lines for toxin biochemistry
+- detail purification of native toxins
+- outline constructs and cloning
+- express recombinant toxins
+- purify recombinant toxins
+- perform SDS-PAGE and western blot
+- analyze Rac1 glucosylation
+- perform cytotoxicity assay
+- describe FcγRI-mediated enhancement of TcdA toxicity
+- examine A1H3-dependent enhancement of TcdA toxicity
+- investigate surface binding of TcdA/A1H3
+- analyze internalization of TcdA/A1H3
+- dissect endocytic pathway of TcdA/A1H3
+- describe TNF-α production by TcdA/A1H3
+- analyze inhibitory effects on TNF-α production
+- detail purification of TcdA and TcdB
+- outline cloning of tcdA and tcdB genes
+- express and purify recombinant TcdA and TcdB
+- perform western blot analysis
+- describe CT26 cell assay
+- describe blocking assay
+- describe MTT assay
+- describe disruption of tight junctions by recombinant toxins
+- describe cloning and expression of recombinant toxins
+- describe transformation of B. megaterium protoplasts
+- describe screening of plasmids
+- describe expression of recombinant toxins
+- describe purification of recombinant toxins
+- describe Western blot analysis
+- describe cytopathic effect of recombinant toxins
+- describe cytotoxic effect of recombinant toxins
+- describe glucosylation of Rac1 by recombinant toxins
+- describe inhibition of glucosylation by NH4Cl
+- describe disruption of tight junctions by recombinant toxins
+- describe background of CDAD
+- describe limitations of native toxin purification
+- describe advantages of B. megaterium expression system
+- describe cloning strategy
+- describe functional screening approach
+- describe DNA sequencing verification
+- describe yields of recombinant toxins
+- describe purification of recombinant toxins
+- describe His6 tag fusion
+- describe Ni-affinity chromatography
+- describe additional purification steps
+- describe protein secretory pathway in B. megaterium
+- describe expression of secretory rTcdB
+- describe limitations of secretory expression
+- describe significance of recombinant toxins
+- describe biological activities of recombinant toxins
+- describe use of recombinant toxins in studying CDAD
+- describe use of recombinant toxins in studying host immune response
+- describe use of recombinant toxins in studying Rho GTPase signaling
+- describe importance of highly purified recombinant toxins
+- describe absence of TLR2 and TLR4 stimulants
+- describe significance of recombinant toxin expression
+- describe improvement in yield of recombinant toxins
+- describe conclusion
+

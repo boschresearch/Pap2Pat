@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- describe limitations of custom optical systems
+
+## SUMMARY
+
+- introduce optical block
+- describe plate with tapped holes and dowel pin holes
+- specify dowel pin hole arrangement
+- describe optical element coupling
+- list optical element types
+- introduce optomechanical system
+- describe intermediate plate
+- describe optical block coupling
+- specify dowel pin hole arrangement
+- describe base plate and cryostat coupling
+- describe optical block optical coupling
+- introduce cryo-package assembly
+- describe package and lid
+- describe meandering passageway
+- describe getter cavity
+- describe ring frame and imaging window
+- describe ground shield wall
+
+## DETAILED DESCRIPTION OF THE DRAWINGS
+
+- introduce patent drawings
+- explain drawing limitations
+- define embodiment terminology
+- describe hardware and software implementation
+- explain machine-readable storage medium
+- discuss drawing arrangements and orderings
+- introduce optomechanical system 100
+- describe module plate and optical blocks
+- explain optical element interactions
+- describe system 100 advantages
+- introduce module plate 102
+- describe module plate material and machining
+- explain tapped holes and grid arrangement
+- describe dowel pin holes and arrangement
+- introduce optical block 118
+- describe optical block material and machining
+- explain dowel pin holes on optical block
+- describe tapped holes on optical block
+- explain alignment of tapped holes and dowel pin holes
+- describe attachment of optical block to module plate
+- introduce optical elements and attachment
+- describe optical element alignment and replacement
+- explain system 100 assembly and optical functions
+- describe CAD tool use in system design and manufacturing
+- describe optical block assembly
+- attach optical block to module plate
+- precision positioning of optical block
+- secure optical block with dowel pins or screws
+- illustrate alternative mechanical arrangements
+- attach additional optical blocks to module plate
+- describe optomechanical system operation
+- illustrate system with fiber optic links
+- introduce intermediate plate and cryostat
+- describe base plate and dowel pin holes
+- describe intermediate plate and tapped holes
+- describe optical block and tapped holes
+- describe optical block and dowel pin holes
+- describe optical block manufacturing
+- secure intermediate plate to base plate
+- describe cryostat and cryo chamber
+- illustrate cryostat attachment to base plate
+- describe cryo chamber windows and interior
+- illustrate optomechanical system with cryostat
+- describe system operation with cryostat
+- illustrate optical elements interaction
+- describe system stability under vibrations
+- illustrate alternative system configurations
+- describe system applications
+- summarize system advantages
+- conclude system description
+- describe optical block assembly
+- attach optical elements to optical block
+- secure optical block to intermediate plate
+- introduce optomechanical system
+- describe cryostat and cryo chamber
+- detail cryo chamber components
+- describe experiments for mechanical and thermal stability
+- introduce cryo-package assembly
+- describe cryo-package assembly components
+- detail lid and package components
+- describe imaging window and ground shield wall
+- introduce meandering passageway
+- describe getter cavity and charcoal getter
+- detail ion trap and interposer
+- introduce ablation target
+- describe assembly of cryo-package assembly
+- attach lid to package
+- mount cryo-package assembly to sample mount
+- evacuate cryo chamber
+- describe cryopumping process
+- detail experiments for cryo-package assembly
+- measure temperature and pressure
+- estimate pressure using zig-zag flip events
+- measure motional heating rate
+- describe advantages of cryo-package assembly
+- introduce optomechanical system applications
+- describe laser frequency stabilization module
+- introduce 355 nm Raman laser modulation module
+- describe ion imaging and state detection optical block
+- introduce CW beam delivery optical block
+- describe ablation loading for ion source
+- detail optical blocks for quantum computing
+- describe cryo-device applications
+- introduce cryo-package assembly variations
+- describe alternative lid materials
+- introduce alternative package configurations
+- describe alternative imaging window materials
+- introduce alternative getter materials
+- describe alternative cryopumping methods
+- summarize optomechanical system advantages
+

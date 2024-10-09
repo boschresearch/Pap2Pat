@@ -1,0 +1,121 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate transfer learning
+
+## SUMMARY
+
+- introduce system for transfer learning
+- describe AI platform components
+- explain source model selection process
+- detail metric calculation
+- describe base model selection
+- outline training process
+- introduce computer program product
+- describe method for transfer learning
+
+## DETAILED DESCRIPTION
+
+- introduce embodiments of apparatus, system, method, and computer program product
+- define artificial intelligence and machine learning
+- describe cognitive computing
+- explain concept of similarity in AI and associated reasoning
+- discuss limitations of building structures and deploying machine learning models
+- introduce transfer learning
+- describe fine-tuning source machine learning models for target domain
+- discuss limitations of selecting source MLM with largest dataset
+- introduce prediction technique for sequence label task
+- describe computer system with tools for transfer learning
+- illustrate artificial intelligence platform
+- describe receiving input from various sources
+- illustrate knowledge base with source models
+- describe selecting source MLM for transfer learning
+- illustrate target knowledge base with library of target datasets
+- describe target datasets with data objects and labels
+- introduce machine learning model manager
+- describe accessing pre-trained source MLMs
+- input data objects into source MLMs
+- generate labels from inputted data objects
+- introduce metric manager
+- calculate metric reflecting similarity between labels
+- describe exemplary similarity metric
+- determine score or weight for each source MLM
+- describe weighted similarity metric
+- introduce MLM manager
+- select base MLM
+- capture knowledge of base MLM
+- replace classification layer
+- train base MLM with target dataset
+- describe AI tools
+- describe AI platform
+- describe information handling systems
+- describe nonvolatile data stores
+- describe API
+- describe MLM manager API
+- describe metric manager API
+- describe training manager API
+- describe API orchestrator
+- describe process for selecting base MLM
+- access pre-trained source MLMs
+- input data objects into source MLM
+- generate labels
+- assess similarity metric
+- rank source MLMs
+- select base MLM
+- describe weighted similarity metric
+- determine weight score
+- determine weighted similarity metric score
+- describe process for training base MLM
+- access target datasets
+- train base MLM with target dataset
+- output trained target MLM
+- predict label from data objects
+- introduce host computing device
+- describe components of host
+- detail bus architecture
+- describe computer system readable media
+- introduce program/utility
+- describe program modules
+- detail host communication with external devices
+- describe I/O interface
+- introduce network adapter
+- describe communication with other nodes
+- introduce cloud computing environment
+- describe characteristics of cloud computing
+- detail on-demand self-service
+- describe broad network access
+- introduce resource pooling
+- describe rapid elasticity
+- detail measured service
+- introduce service models
+- describe software as a service
+- describe platform as a service
+- describe infrastructure as a service
+- introduce deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- introduce cloud computing network
+- describe cloud computing nodes
+- detail local computing devices
+- introduce functional abstraction layers
+- describe hardware and software layer
+- describe virtualization layer
+- describe management layer
+- describe workload layer
+- introduce mapping and navigation
+- describe software development and lifecycle management
+- describe virtual classroom education delivery
+- describe data analytics processing
+- describe transaction processing
+- describe source MLM selection and training
+- introduce system, method, and computer program product
+- describe computer readable storage medium
+- introduce computer readable program instructions
+- describe downloading instructions
+- describe network adapter card or network interface
+- introduce computer readable program instructions for carrying out operations
+- describe electronic circuitry
+

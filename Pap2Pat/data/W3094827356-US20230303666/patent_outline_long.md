@@ -1,0 +1,330 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce integrated platform for generating and engineering antibodies
+
+## BACKGROUND
+
+- motivate need for alternative antibody generation methods
+- describe traditional antibody generation methods
+- discuss limitations of traditional methods
+- introduce in vitro antibody generation methods
+- highlight recent advances in antibody library design and construction
+
+## SUMMARY
+
+- introduce antibody or antigen binding fragment
+- describe CDRs selected or derived from clusters
+- specify SR1, SR2, SR4, SR6, SR8, SR12, SR15, SR18, SR25, SR30
+- describe SR6v15, SR6v7, SR38, SR6c3, SR4t13, or SR2c3
+- introduce heavy chain antibody or VHH
+- specify SR38 binding to N501Y SARS-CoV-2 variant
+- describe SR6v15, SR6v7, or SR38
+- introduce camelid heavy chain antibodies
+- describe humanization of camelid antibodies
+- specify framework residues to be humanized
+- describe modification of antibody or antigen binding fragment
+- introduce fusion protein
+- describe fusion to another antibody or antibody fragment
+- describe treatment of SARS-CoV-2 infection
+- specify administration of SR38 or SR6v15
+- describe detection of SARS-CoV-2
+- specify detection using SR38 or SR6v15
+- introduce method of generating VHH library
+- describe PCR amplification and ligation
+- specify primer sequences and conditions
+- describe method of identifying CDRs
+
+## DETAILED DESCRIPTION OF THE EXAMPLE EMBODIMENTS
+
+### General Definitions
+
+- define technical terms
+- provide references for molecular biology
+- define singular and plural forms
+- define "optional" and "optionally"
+- define numerical ranges
+- define "about" and "approximately"
+- define biological sample
+- define bodily fluid
+- define subject, individual, and patient
+- describe various embodiments
+- incorporate publications by reference
+
+### OVERVIEW
+
+- introduce cell-free antibody engineering platform
+- describe CeVICA platform and its applications
+
+### Therapeutic Antibodies or Binding Fragments of an Antibody
+
+- define antibodies
+- describe antibody fragments
+- introduce antigen-binding fragments
+- motivate therapeutic antibodies
+- describe neutralizing antibodies
+- introduce SARS-CoV-2 variants
+- define variants and strains
+- discuss clades and lineages
+- list SARS-CoV-2 variants
+- describe Phylogenetic Assignment of Named Global Outbreak (PANGO) Lineages
+- introduce complementarity determining regions (CDRs)
+- describe frame regions (FRs)
+- motivate heavy chain antibodies
+- introduce VHH domains
+- describe single-domain antibodies (sdAbs)
+- introduce camelid heavy chain antibody domains
+- identify CDR clusters
+- describe binding and neutralizing activity
+- introduce amino acid changes for potency improvement
+- describe CDRs and framework substitutions
+- introduce mutated antibodies with enhanced neutralizing activity
+- define substantially free of non-antibody protein
+- introduce monoclonal antibodies
+- describe polyclonal antibodies
+- introduce binding portions of antibodies
+- describe humanized forms of non-human antibodies
+- introduce chimeric antibodies
+- describe humanized residues in frame regions
+- introduce human IGHV gene
+- describe humanized frames based on VHHs
+- introduce epitope-binding proteins
+- list examples of antibody portions
+- describe Ig classes and subclasses
+- define IgG subclass
+- define single-chain immunoglobulin
+- define domain
+- define constant and variable domains
+- define region
+- define conformation
+- define specific binding
+- define affinity
+- describe blocking antibodies
+- describe agonist and antagonist antibodies
+- describe receptor-specific antibodies
+- describe ligand-specific antibodies
+- describe receptor activation
+- describe antibody modifications
+- define modified therapeutic antibodies
+- describe conjugation to a carrier protein
+- describe conjugation to a ligand
+- describe conjugation to another antibody
+- describe PEGylation
+- describe polysialylation
+- describe HESylation
+- describe recombinant PEG mimetics
+- describe Fc fusion
+- describe albumin fusion
+- describe nanoparticle attachment
+- describe nanoparticulate encapsulation
+- describe cholesterol fusion
+- describe iron fusion
+- describe acylation
+- describe amidation
+- describe glycosylation
+- describe side chain oxidation
+- describe phosphorylation
+- describe biotinylation
+- describe addition of a surface active material
+- describe addition of amino acid mimetics
+- describe addition of unnatural amino acids
+- describe analogs
+- describe spacers or linkers
+- describe PEG-conjugated biomolecules
+- describe PEGylation methods
+- describe PEG molecule attachment
+- describe glycosylation and polysialylation
+- define therapeutic antibodies or binding fragments of an antibody
+- fusion of albumin to one or more antibodies
+- albumin binding strategies
+- modification of polypeptide sequences
+- conjugate modification
+- hesylation modification
+- protecting group covalently joined to the N-terminal amino group
+- amino protecting groups
+- deamination of the N-terminal amino acid
+- chemically modified compositions of the antibodies
+- polymer selection
+- PEGylation, cholesterylation, or palmitoylation
+- modification to any amino acid residue
+- N-terminus modification
+- substitutions of amino acids
+- conservative substitutions
+- non-conservative substitutions
+- production of therapeutic antibodies
+- in vitro production
+- in vivo production
+- antibody derivatives
+- covalent attachment of molecules
+- glycosylation, acetylation, pegylation, phosphorylation, amidation
+- simple binding assays
+- detection methods
+- affinity biosensor methods
+- administration of therapeutic antibodies
+- routes of administration
+- dosage amounts
+- therapeutic regimens
+- vector delivery
+- define therapeutic antibodies or binding fragments
+- describe delivery system comprising vectors or polynucleotide molecules
+- define vector
+- describe types of vectors
+- describe use of antibodies for detection
+- describe immunoassay methods
+- describe immunoassay formats
+- describe labels for detection
+- describe methods of detecting labels
+- describe platforms and methods for generating antibodies
+- describe in vitro platform for generating antibodies
+- describe libraries of DNA sequences encoding antibodies
+- describe screening library by ribosome display
+- describe identifying families of antibodies
+- describe affinity maturation
+- describe validation of antibodies
+- describe VHH library
+- describe generating libraries
+- describe randomizing CDR regions
+- describe PCR and ligation for each CDR
+- describe using promoter sequence
+- describe transcribing into mRNAs
+- describe translating into antibody polypeptide
+- describe ribosome display
+- describe selecting for translated antibody frameworks
+- describe washing and isolating mRNA
+- describe converting to cDNA
+- describe successive rounds of ribosome display
+- describe adjusting stringency
+- describe including epitope tag
+- describe enriching for full-length mRNA sequences
+- describe clustering antibodies having similar CDRs
+- describe affinity maturation
+- describe validating antibody binding and neutralization activity
+
+### EXAMPLES
+
+- introduce CeVICA platform
+- describe CeVICA components
+- explain ribosome display
+- detail selection cycle
+- describe computational clustering
+- analyze natural VHH sequences
+- design VHH DNA templates
+- introduce randomization in CDRs
+- describe PCR and ligation process
+- detail CDR randomization hierarchy
+- describe VHH DNA library construction
+- test library performance in ribosome display
+- reduce unproductive sequences
+- enrich functional VHH sequences
+- perform binder selection for RBD and EGFP
+- immobilize target proteins
+- perform selection rounds
+- analyze output library sequences
+- identify target-specific binders
+- cluster CDR sequences
+- validate RBD binders
+- test SARS-CoV-2 pseudovirus neutralization
+- compare input, output, and natural CDR sequence distributions
+- assess fitness of binders
+- design affinity maturation strategy
+- introduce random mutations
+- perform stringent selection
+- identify putative beneficial mutations
+- generate mutated variants
+- assess binding and neutralization of variants
+- compare performance to VHH72
+- analyze correlation between neutralization and binding
+- perform dose response curve
+- determine IC50 of SR6c3
+- examine VHH sequences' impact on immunogenicity
+- identify conversion options for VHH hallmark residues
+- demonstrate feasibility of converting VHH hallmark residues
+- extend CeVICA for affinity maturation
+- identify true binders and neutralizers across CeVICA predicted list
+- clone and purify VHHs for ELISA and pseudovirus neutralization
+- assay VHHs by ELISA and pseudovirus neutralization
+- identify positive binders among tested VHHs
+- engineer potent and stable VHHs for virus neutralization
+- perform second affinity maturation using SR6c3 as template
+- identify mutation combinations that enhance binding affinity
+- compare binding affinity and pseudovirus neutralization of SR6v15 variants
+- convert SR6v15 into tandemly linked dimer and trimer
+- compare pseudovirus neutralization of SR6v15 based agents
+- evaluate biophysical characteristics of CeVICA selected nanobodies
+- perform size exclusion chromatography analysis of nanobodies
+- investigate impact of cysteines in CDRs on nanobody biophysical properties
+- analyze non-reducing SDS-PAGE gel of VHHs with 0-2 cysteines in CDRs
+- evaluate functional consequences of CDR cysteine mediated dimer formation
+- assess thermal stability of VHHs produced by CeVICA
+- test VHHs' ability to refold after complete thermal denaturation
+- discuss CeVICA platform's generalizable solution for in vitro VHH antibody engineering
+- validate fully random NNB encoded codons in all CDR positions
+- discuss binder sequence recovery using CDR-directed clustering
+- apply CeVICA to engineer SARS-CoV-2 neutralizing VHHs
+- identify SR38, a VHH with rare ability to strongly favor binding of N501Y containing RBD
+- discuss previous synthetic nanobody library designs
+- test fitness of randomized amino acid profile in binder selection
+- discuss biophysical properties of VHHs produced by CeVICA
+- conclude CeVICA's suitability for engineering high affinity VHH antibodies
+- cell culture
+- amino acid profile construction
+- analyze natural VHHs
+- calculate amino acid profile
+- define CDR boundaries
+- compare annotation methods
+- measure diversity
+- construct VHH library
+- design library sequence
+- randomize CDRs
+- ligate PCR products
+- purify ligation products
+- quantify purified products
+- randomize CDR2
+- randomize CDR1
+- randomize CDR3
+- construct final VHH library
+- prepare sequencing libraries
+- perform high-throughput sequencing
+- analyze sequencing data
+- perform ribosome display
+- prepare DNA template
+- perform in vitro transcription and translation
+- stop ribosome display reaction
+- perform in vitro selection
+- immobilize target proteins
+- incubate with ribosome display solution
+- extract and analyze selected RNA
+- perform control experiment
+- describe CDR-directed clustering analysis
+- calculate CDR scores
+- calculate mean distance to diagonal
+- express and purify target proteins
+- describe ELISA assay for VHH binding to RBD
+- produce pseudotyped SARS-CoV-2 lentivirus
+- perform lentiviral production for transductions
+- describe SARS-CoV-2 S pseudotyped lentivirus neutralization assay
+- perform affinity maturation
+- identify and rank beneficial mutations
+- describe Biolayer Interferometry
+- perform size exclusion chromatography
+- perform thermal stability assays
+- describe protein expression and purification
+- describe VHH purification
+- describe ELISA assay for VHH binding to RBD
+- describe pseudotyped lentivirus production
+- describe lentiviral production for transductions
+- describe SARS-CoV-2 S pseudotyped lentivirus neutralization assay
+- perform error-prone PCR
+- describe mutagenized library preparation
+- perform ribosome display and in vitro selection
+- build amino acid profile tables
+- identify putative beneficial mutations
+- rank beneficial mutations
+- incorporate beneficial mutations into VHH parental sequences
+- describe Biolayer Interferometry assay conditions
+- analyze Biolayer Interferometry data
+- describe size exclusion chromatography conditions
+- analyze size exclusion chromatography data
+- describe thermal stability assay conditions
+

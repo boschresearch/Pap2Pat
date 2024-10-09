@@ -1,0 +1,412 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD OF INVENTION
+
+- relate to polypeptide fragments of PA subunit
+- relate to crystals of polypeptide fragments
+- relate to computational methods for compound screening
+
+## BACKGROUND OF THE INVENTION
+
+- introduce Influenza
+- describe Influenza epidemics
+- describe limitations of vaccination
+- introduce antiviral medication
+- describe neuraminidase inhibitors
+- describe amantadine and rimantadine
+- describe ribavirin
+- describe Orthomyxoviridae family
+- describe RNA-dependent RNA polymerase
+- describe cap-snatching mechanism
+- describe PB2 subunit
+- describe PB1 subunit
+- describe PA subunit
+- describe endonucleolytic activity
+- describe attempts to target polymerase subunits
+- describe attempts to target viral transcription
+- describe attempts to target endonuclease activity
+- describe PA subunit as antiviral drug target
+- describe recent findings on PA subunit
+- describe achievement of present inventors
+
+## SUMMARY OF THE INVENTION
+
+- introduce polypeptide fragment of PA subunit
+- introduce isolated polynucleotide
+- introduce recombinant vector
+- introduce recombinant host cell
+- describe method for identifying compounds
+- describe computational method
+- describe in vitro method
+- introduce compound modulating endonuclease activity
+- introduce pharmaceutical composition
+- introduce antibody
+- describe use of compound or composition
+- describe use of antibody
+- describe specific compounds
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- disclaim limitations of invention
+- define terminology
+- describe elements of invention
+- explain combinations of elements
+- define preferred terms
+- reference conventional methods
+- clarify language usage
+
+### Definitions
+
+- define polypeptide fragment
+- define protein
+- define peptide
+- define peptoid
+- define corresponding residues
+- explain alignment tools
+- define best sequence alignment
+- define region of best sequence alignment
+- introduce RNA-dependent RNA polymerase PA subunit
+- define PA subunit variant
+- explain sequence similarity
+- explain sequence identity
+- define PA polypeptide fragment
+- define PA polypeptide fragment variants
+- explain additional amino acids
+- define alignment score
+- explain endonuclease active site
+- define PA polypeptide fragment variants with serine
+- define PA-Nter
+- define PA-Nter mutant
+- explain sequence similarity searching tools
+- define soluble
+- explain solubility test
+- define purified
+- explain purification methods
+- define associate
+- explain endonuclease activity
+- explain endonucleolytic activity
+- define single stranded
+- define nucleotide
+- define isolated polynucleotide
+- define recombinant vector
+- define expression vector
+- define cloning vector
+- define recombinant host cell
+- explain types of host cells
+- define crystal
+- define unit cell
+- define space group
+- define structure coordinates
+- define root mean square deviation
+- define constructing a computer model
+- define fitting program operation
+- define test compound
+- define small molecules
+- define compound which modulates endonucleolytic activity
+- define compound which decreases endonucleolytic activity
+- define high-throughput setting
+- define antibody
+- define antigen-binding portions
+- define pharmaceutically acceptable salt
+- define acid addition salts
+- define alkali metal salts
+- define alkaline earth metal salts
+- define salts formed with organic ligands
+- define pharmaceutically acceptable excipient
+- define carriers
+- define binders
+- define lubricants
+- define thickeners
+- define surface active agents
+- define preservatives
+- define emulsifiers
+- define buffers
+
+### DETAILED DESCRIPTION
+
+- introduce PA polypeptide fragment
+- describe endonuclease activity
+- motivate crystallization
+- define polypeptide fragment
+- specify preferred embodiments
+- describe solubility
+- determine minimal length
+- specify endonuclease activity
+- describe crystallization conditions
+- specify protein concentration
+- describe buffer system
+- specify pH range
+- describe precipitant solution
+- specify salt concentrations
+- describe co-crystallization
+- specify compound concentrations
+- describe crystallization medium
+- specify preferred crystallization conditions
+- describe co-crystallization with modulators
+- specify preferred co-crystallization conditions
+- provide examples of co-crystallization
+- describe crystallization methods
+- list crystallization conditions
+- explain microseeding
+- describe obtaining structure coordinates
+- interpret structure coordinates
+- describe utility of structure coordinates
+- specify preferred amino terminal PA fragment
+- describe purification of polypeptide fragment
+- specify preferred purification extent
+- describe binding to divalent cations
+- specify preferred divalent cations
+- describe coordination of divalent cations
+- specify preferred N-terminus and C-terminus
+- describe variant with amino acid serine at position 186
+- describe variant with glycine replacement
+- describe variant with glycine replacement and linker
+- describe further variant with glycine replacement
+- describe further variant with glycine replacement and linker
+- specify preferred amino acid sequence
+- describe polypeptide fragment with structure defined by FIG. 1
+- describe polypeptide fragment with structure defined by FIG. 2-5, 15 or 16
+- specify preferred crystal structure
+- describe crystal structure with space group and unit cell dimensions
+- specify preferred X-ray diffraction resolution
+- list examples of X-ray diffraction resolutions
+- conclude crystal structure description
+- provide isolated polynucleotide
+- code for PA polypeptide fragment
+- code for PA polypeptide fragment variant
+- code for PA polypeptide fragment variant
+- code for PA polypeptide fragment variant
+- obtain isolated nucleotide fragments
+- isolate RNA from infected cells
+- generate cDNA using RT-PCR
+- amplify fragments using PCR
+- derive isolated polynucleotides from SEQ ID NO: 1
+- provide recombinant vector
+- incorporate polynucleotide sequence into vector
+- include regulatory sequences in vector
+- include epitope-, peptide-, or protein-tags in vector
+- cleave off tags using protease
+- include functional sequences for secretion
+- provide recombinant host cell
+- introduce isolated polynucleotide or vector into host cell
+- express polynucleotide fragment of interest
+- purify polypeptide fragments
+- identify compounds modulating endonuclease activity
+- construct computer model of active site
+- select potential modulating compound
+- evaluate association between compound and active site
+- quantify ability of compound to associate with active site
+- describe molecular design techniques
+- identify compounds modulating endonucleolytic activity
+- generate structure coordinates of PA subunit
+- convert structure coordinates into 3D shape
+- screen chemical entities for modulating activity
+- visually inspect 3D computer model of active site
+- position fragments or compounds in active site
+- dock compounds within active site
+- perform energy minimization and molecular dynamics
+- select suitable compounds or fragments
+- design or assemble compounds into single compound
+- perform manual model building
+- connect individual compounds or fragments
+- computationally screen small molecule databases
+- judge quality of fit by shape complementarity
+- judge quality of fit by estimated interaction energy
+- design modulator de novo based on 3D structure
+- optimize compound deformation energy
+- evaluate electrostatic interaction
+- make conservative substitutions to improve binding
+- analyze substituted compounds for efficiency of fit
+- describe endonucleolytically active site of PA subunit
+- specify amino acids of active site
+- provide embodiments of active site
+- list amino acids corresponding to active site
+- define active site
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- specify amino acids
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- define active site
+- identify required amino acids
+- describe compound binding
+- discuss importance of 3D knowledge
+- outline design of new compounds
+- describe computer modeling
+- indicate binding of compound
+- synthesize and formulate compound
+- test ability to modulate endonucleolytic activity
+- describe testing in vitro or in vivo
+- outline further step of testing
+- define Influenza A 2009 pandemic H1N1 PA subunit polypeptide fragment
+- describe endonuclease activity
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe active site structure
+- list amino acids in active site
+- describe method for identifying compound
+- introduce test compound
+- describe reaction conditions
+- analyze substrate degradation
+- introduce alternative test method
+- describe labeled substrate molecule
+- specify compound types
+- exclude specific compounds
+- describe in vitro method for identifying compounds
+- introduce pull-down assay
+- describe ELISA-based experiment
+- introduce peptide array
+- describe co-immunoprecipitation
+- introduce directly labeled test compounds
+- describe high-throughput screening
+- specify test compound libraries
+- introduce in vivo testing
+- describe viral plaque formation
+- specify small molecule inhibitors
+- describe peptide or protein libraries
+- formulate compound with excipients
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulating endonuclease activity
+- specify compound binding to active site
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulating endonuclease activity
+- specify compound binding to active site
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulating endonuclease activity
+- specify compound binding to active site
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulating endonuclease activity
+- specify compound binding to active site
+- introduce compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulating endonuclease activity
+- specify compound binding to active site
+- describe compound modulation of endonuclease activity
+- specify preferred embodiments of compound
+- exclude specific compounds from invention
+- introduce pharmaceutical composition
+- describe pharmaceutical composition components
+- specify compound's ability to modulate endonuclease activity
+- describe production of pharmaceutical composition
+- discuss computational modeling and screening
+- introduce optimization of pharmacology
+- describe computer programs for pharmacophore selection
+- formulate pharmaceutical composition
+- specify solid administration forms
+- list excipients for solid administration forms
+- describe aqueous suspensions and solutions
+- introduce release rate modifiers
+- describe fast dispersing or dissolving dosage formulations
+- specify ingredients for fast dispersing or dissolving dosage formulations
+- prepare suppositories
+- prepare pharmaceutical composition for parenteral administration
+- prepare pharmaceutical composition for intranasal administration
+- describe aerosol spray delivery
+- define antibody
+- specify antibody variant
+- describe preferred embodiment
+- detail polypeptide fragment recognition
+- specify epitope length
+- list preferred epitopes
+- describe antibody production
+- detail polyclonal antibody generation
+- describe monoclonal antibody generation
+- explain hybridoma selection
+- describe antibody characteristics
+- relate to pharmaceutical composition
+- specify disease treatment
+- describe compound modulation
+- detail endonuclease activity
+- specify compound identification
+- relate to pharmaceutical composition production
+- describe disease prevention
+- specify compound treatment
+- detail disease conditions
+- relate to specific compounds
+- describe compound administration
+- detail pharmaceutical composition formulation
+- specify unit dosage form
+- describe active component quantity
+- detail initial dosage
+- specify daily dose range
+- describe dosage variation
+- relate to invention modifications
+- describe invention scope
+
+### EXAMPLES
+
+- clone and express PA-Nter protein
+- engineer PA-Nter mutant with improved crystallization properties
+- purify PA-Nter protein
+- crystallize PA-Nter protein with and without compounds/ligands
+- describe crystallization conditions for native crystals and co-crystals
+- describe cryo-protection methods for crystals
+- list compounds used for co-crystallization
+- describe crystallization results
+- show crystal structure of PA-Nter with rUMP
+
+### 2. Results
+
+- summarize PA H1N1 polypeptide fragment or variant generation and crystallization
+- describe crystallization properties of PA H1N1 polypeptide fragment or variant
+- describe structure of PA H1N1 polypeptide fragment or variant with and without compounds/ligands
+- describe H1N1 PA native structure
+- describe EMBL-R05-3-bound structure
+- compare native and EMBL-R05-3-bound structures
+- describe EMBL-R05-3-bound structure with different configuration
+- describe EMBL-R05-2-bound structure
+- describe rUMP-bound structure
+- describe co-crystallization trials with rUMP
+- compare rUMP-bound structure with previously published structure
+- describe EMBL-R05-1-bound structure
+- describe EGCG-bound structure
+- describe EGCG binding mode
+- superpose all diketo inhibitor compounds and EGCG
+- describe divalent cation binding in native structure
+- describe divalent cation binding in other structures
+- show structural co-ordinates of native H1N1 PA endonuclease domain
+- show structural co-ordinates of H1N1 PA endonuclease domain with EMBL-R05-3
+- show structural co-ordinates of H1N1 PA endonuclease domain with EMBL-R05-2
+- show structural co-ordinates of H1N1 PA endonuclease domain with rUMP
+- show structural co-ordinates of H1N1 PA endonuclease domain with EMBL-R05-1
+- show structural co-ordinates of H1N1 PA endonuclease domain with EGCG
+- illustrate endonuclease active site with bound compounds/ligands
+

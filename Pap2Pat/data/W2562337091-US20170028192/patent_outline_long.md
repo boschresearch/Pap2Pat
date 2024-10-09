@@ -1,0 +1,328 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define invention field
+
+## BACKGROUND OF THE INVENTION
+
+- introduce nervous system
+- describe nervous system damage
+- discuss spinal cord injury
+- describe axon sprouting
+- discuss electrical stimulation
+- limitations of one-point stimulation
+- describe abnormalities after SCI
+- discuss Hebbian plasticity principle
+- motivate improved electrical stimulation
+
+## SUMMARY OF THE INVENTION
+
+- introduce dipole cortico-muscular stimulation
+- describe two-point stimulation method
+- explain improved muscle twitch force and spinal cord responses
+- describe dCMS configuration
+- specify active electrode at motor cortex and reference electrode at contralateral muscle
+- explain passage of pulsed direct current across cortico-muscular pathway
+- describe overcoming excitability-confounding factors
+- explain application of electrical pulses to spinal column
+- specify at least one reference electrode outside central nervous system
+- describe use of multiple stimulator units
+- explain treatment of various traumas and/or injuries
+- describe enhancement of neuromuscular performance
+- specify use in human patients with spinal cord injury, stroke, multiple sclerosis, etc.
+- describe use in athletic activity to enhance neuromuscular performance
+- explain strengthening or awakening weak or dormant pathways
+- introduce method of improving neuromuscular condition
+- describe placing active electrode at central nerve system
+- describe placing reference electrode outside central nervous system
+- explain enhancing neural connection by passing electrical current
+- specify use of trans-spinal direct current (tsDC) and trans-cranial DC stimulation (tcDC)
+- describe application of additional electrical stimulus to motor cortex
+- describe application of additional electrical stimulus to at least one muscle
+- specify use of prompt to move a limb
+- describe use of aural, visual, or tactile prompt
+- specify use in mammals and humans
+- describe placing active electrode at spinal column
+- describe placing reference electrode at pelvis
+- explain use of stimulator unit with at least one active electrode and at least one reference electrode
+- describe use of multiple active electrodes or reference electrodes
+- specify attachment of electrodes to motor cortex or muscle
+- describe identifying motoneuron that affects movement of muscle
+- explain determining maximal stimulus strength
+- describe setting voltage differential in proportion to maximal stimulus strength
+- specify use of pulses with duration from 0.5 ms to 5 ms
+- specify use of pulses with frequency from 0.5 Hz to 5 Hz
+- describe use of dipolar cortico-muscular stimulation in patients with neurologic pathology
+- introduce another method of improving neuromuscular condition
+- describe placing active electrode at one side of spinal column
+- describe placing reference electrode at opposite side of spinal column
+- explain enhancing neural connection by passing electrical current
+- specify use of motor pathway between motor cortex and muscle
+- describe use of multiple paths across spinal column
+- specify use of stimulator unit with multiple stimulator units
+- describe use of prompt to move a limb
+- specify use in mammals and humans
+- introduce system for improving neuromuscular condition
+- describe system components
+- explain system configuration
+- describe system operation
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define vertebrate being
+- define limb
+- define in proximity to
+- define point
+- define configured to
+- define active electrode
+- define reference electrode
+- define polarizing current
+- define central nervous system
+- define lower motoneuron
+- describe dCMS effect
+- describe electrode attachment
+- describe active electrode placement
+- describe reference electrode placement
+- describe dipolar cortico-muscular stimulator
+- describe stimulator configuration
+- describe pulse type and waveform
+- describe pulse duration and amplitude
+- describe frequency range
+- describe safety features
+- describe digital-to-analog converter
+- describe programmable attenuation network
+- describe buffer amplifiers
+- describe electrode wire splitting
+- describe system employment
+- describe active and reference electrode placement
+- describe electrical current path
+- describe motor pathway
+- describe probe for identifying motoneuron
+- describe stimulator linking to EMG monitor
+- describe multiple stimulator units
+- introduce neuromuscular condition treatment
+- describe electrode placement for spinal column stimulation
+- specify location of active electrode based on injury or disability
+- describe repetitive stimulations at brain and spinal column
+- detail treatment for conditions such as ALS and peripheral nerve injuries
+- illustrate electrical stimulation to brain and muscle
+- describe system for improving neuromuscular condition
+- detail active and reference electrodes
+- describe stimulator and lead wires
+- specify current path through motor pathway
+- describe pulse duration and frequency
+- introduce prompt means for providing prompt to move limb
+- describe automated control unit for generating prompt
+- specify vertebrate being and muscle
+- describe stimulator configuration for applying voltages
+- detail multiple paths for electrical current flow
+- describe system for providing electrical current
+- specify stimulator unit configuration
+- describe simultaneous application of voltages
+- introduce third stimulator unit for delivering polarizing current
+- describe synchronization of stimulator units
+- detail independent operation of stimulator units
+- describe DC stimulation for modulating central nervous system
+- specify effects of DC stimulation on neuronal activity
+- describe research on trans-spinal direct current stimulation
+- detail effects of tsDC on cortically-elicited twitches
+- describe interaction between tsDC and cortical activity
+- introduce rehabilitative strategies using tsDC
+- describe effects of c-tsDC on motoneurons and synaptic activation
+- detail pre-synaptic hyperpolarization and post-synaptic depolarization
+- describe study on cortically-elicited TS twitches
+- detail effects of a-tsDC and c-tsDC on TS twitches
+- describe pairing ICES with c-tsDC
+- detail polarizing pattern induced by c-tsDC
+- describe long-term potentiation mechanism
+- specify reduction of inhibitory inputs to spinal circuits
+- describe experimental data on components in FIG. 1A
+- illustrate placement scheme for additional electrodes
+- describe configuration of stimulator units
+- detail control panel for stimulator units
+- describe flexibility in designing stimulation patterns
+- specify safety and pain considerations
+- describe system for improving neuromuscular condition
+- detail active and reference electrodes
+- describe stimulator and lead wires
+- specify current path through motor pathway
+- describe pulse duration and frequency
+- introduce prompt means for providing prompt to move limb
+- describe automated control unit for generating prompt
+- specify vertebrate being and muscle
+
+### First Experiment
+
+- introduce dCMS configuration
+- describe constant voltage output
+- specify electrode placement
+- detail pulse duration and frequency
+- report muscle contraction improvement
+- describe reduction of M1 maximal threshold
+- detail potentiation of spinal motoneuronal evoked responses
+- report increase in spontaneous activity
+- summarize findings on motor pathway functionality
+- conclude therapeutic potential
+- introduce animal subjects
+- describe spinal cord contusion injury
+- detail anesthesia and recovery
+- introduce behavioral testing
+- describe Basso mouse scale
+- detail abnormal pattern scale
+- describe horizontal ladder scale
+- introduce electrophysiological procedures
+- describe anesthesia and preparation
+- detail electrode placement and connection
+- describe motor point location
+- detail muscle attachment and adjustment
+- describe head fixation and setup
+- introduce stimulating and recording electrodes
+- describe extracellular recordings
+- detail data acquisition and analysis
+- describe single motoneuron isolation
+- detail antidromic pulse application
+- describe latency calculation
+- introduce cortical pre-test stimulation
+- describe dCMS application
+- detail post-test stimulation
+- describe experimental design
+- detail pulsing parameters
+- describe muscle contraction and spinal response evaluation
+- introduce white matter staining
+- describe tissue preparation and sectioning
+- detail luxol fast blue staining
+- describe spared white matter measurement
+- introduce data analysis
+- describe latency measurement
+- detail statistical analysis
+- conclude results
+- present experiment
+- show recorded traces
+- summarize average latencies
+- describe dCMS application
+- show muscle contraction increase
+- show spinal responses increase
+- examine muscle twitches and neuronal activity
+- show twitch force and spinal responses increase
+- examine influence of dCMS on non-stimulated pathway
+- show bilateral effects of dCMS
+- examine influence of dCMS on control animals
+- show twitch force and spinal responses increase in control animals
+- compare control and SCI animals
+- compare cortically-induced twitches
+- compare cortically-induced spinal responses
+- summarize differences between control and SCI animals
+- introduce first experiment
+- define fidelity index
+- describe experiment results
+- analyze FI reduction
+- compare FI between control and SCI animals
+- describe increase in spinal motoneurons spontaneous activity
+- analyze spontaneous activity results
+- describe effects of one point stimulation
+- analyze muscle stimulation results
+- analyze cortical stimulation results
+- summarize dCMS effects
+- discuss bilateral responses
+- speculate on dCMS mechanism
+- discuss polarizing current
+- describe membrane potential changes
+- discuss spike-timing-dependent plasticity
+- discuss long-term potentiation
+- compare dCMS effects in control and injured animals
+- discuss axonal sprouting
+- discuss dormant connections
+- discuss potentiating normal connections
+- analyze dCMS effectiveness in injured animals
+- discuss spinal motoneurons response
+- discuss peripheral nerve and muscle inexcitability
+- discuss muscle atrophy
+- analyze fidelity index changes
+- discuss injury-induced regeneration
+- describe spontaneous activity before dCMS
+- analyze spontaneous activity results
+- discuss motor unit firing in humans and animals
+- discuss intracellular recordings from sacrocaudal motoneurons
+- describe spontaneous activity after dCMS
+- discuss coordinated spontaneous activity
+- discuss voltage-dependent persistent inward currents
+
+### Second Experiment
+
+- describe human experiment setup
+- report patient results with erb's palsy
+- report patient results with cerebral palsy
+- conclude effectiveness of dCMS
+- suggest applications of dCMS
+- mention clinical trials
+
+### Third Experiment
+
+- report child treatment results with quadriplegic paralysis
+
+### Fourth Experiment
+
+- introduce experiment
+- describe tsDC and rCES protocols
+- outline experimental aims
+- describe animal preparation
+- detail surgical procedure
+- describe electrode placement
+- outline muscle force recording
+- describe data acquisition
+- detail polarization and stimulation protocols
+- describe control experiments
+- outline histological analysis
+- describe injection of glycine and GABA blockers
+- detail calculations and statistics
+- present results of histochemical analysis
+- describe effect of tsDC on spontaneous activity
+- present results of spontaneous activity analysis
+- describe effect of tsDC on spike amplitude
+- present results of spike amplitude analysis
+- describe effect of tsDC on cortically-elicited TS twitches
+- present results of cortically-elicited TS twitches analysis
+- describe effect of a-tsDC on cortically-elicited TS twitches
+- present results of a-tsDC analysis
+- describe effect of c-tsDC on cortically-elicited TS twitches
+- present results of c-tsDC analysis
+- compare effects of a-tsDC and c-tsDC
+- describe effect of testing procedure on tsDC after-effects
+- present results of testing procedure analysis
+- describe effect of a-tsDC and c-tsDC on latency
+- present results of latency analysis
+- describe paired rCES and tsDC stimulation
+- present results of paired rCES and a-tsDC stimulation
+- present results of paired rCES and c-tsDC stimulation
+- compare effects of different stimulation paradigms
+- describe effect of ICES alone
+- present results of ICES alone analysis
+- compare effects of different stimulation paradigms
+- describe significance of results
+- discuss implications of results
+- outline limitations of study
+- suggest future directions
+- conclude experiment
+
+## DISCUSSION
+
+- introduce histological analysis
+- compare tsDC parameters to prior art
+- describe differences in spinal cord stimulation
+- summarize effects of a-tsDC on tibial nerve activity
+- compare a-tsDC to c-tsDC effects
+- describe c-tsDC effects on neuronal discharges
+- discuss c-tsDC-induced rhythmic firing
+- summarize effects of tsDC on cortically-elicited TS twitches
+- describe changes in latency after tsDC stimulation
+- propose factors underlying latency changes
+- discuss effects of pairing tsDC with rCES
+- suggest distinctive neuronal types affected by a-tsDC and c-tsDC
+- illustrate effects of dorsal cathodal current on spinal neurons
+- discuss presynaptic depolarization and its effects
+- propose alternative explanations for depressing cortically-elicited TS twitches
+- discuss rhythmic activity during c-tsDC
+- suggest mechanisms mediating c-tsDC-induced potentiation
+- conclude with scope and spirit of the invention
+

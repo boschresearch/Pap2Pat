@@ -1,0 +1,261 @@
+{
+    "id": "US20200273177",
+    "authors": [
+        "Chengjun Chen",
+        "Chunlin Zhang",
+        "Dongnian Li",
+        "Jun Hong"
+    ],
+    "title": "ASSEMBLY MONITORING METHOD AND DEVICE BASED ON DEEP LEARNING, AND READABLE STORAGE MEDIUM",
+    "date": "2020-01-10 00:00:00",
+    "abstract": "The present invention relates to an assembly monitoring method based on deep learning, comprising steps of: creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at multiple monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; training a deep learning network model by the training set; and obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body. In the present invention, parts in the assembly body can be identified, and the assembly steps, as well as the occurrence of assembly errors and the type of errors, can be monitored for the parts.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The present invention relates to an assembly monitoring method and device based on deep learning, and a readable storage medium, belonging to the field of computer monitoring based on image processing."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to assembly monitoring method and device based on deep learning"
+                    ],
+                    "num_characters": 201,
+                    "outline_medium": [
+                        "relate to assembly monitoring method and device based on deep learning"
+                    ],
+                    "outline_short": [
+                        "relate to assembly monitoring method and device based on deep learning"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE PRESENT INVENTION",
+                    "paragraphs": [
+                        "Personalized customization is one of main trends of development in the manufacturing industry. At present, the mechanical assembly industry in China is low in automation level. The assembly of a large number of customized products and complex mechanical products still relies on manual assembly. Due to the frequent change of product types and the large number of parts, the process and assembly accuracy are highly required. During the assembly, various events such as missing of parts and wrong assembly sequence occur easily, which affect the product assembly quality and efficiency. In order to better adapt to the new situation of the manufacturing industry and to meet the assembly of large-scale customized products, the conventional assembly workshop urgently needs an intelligent assembly monitoring system that can intelligently identify parts of the assembly body and monitor the assembly process.",
+                        "On the other hand, during the assembly of complex products, the assembly progresses of components are not coordinated. As a result, the components needed during the final assembly of products are not all in readiness, thereby affecting the production efficiency. Therefore, it is also necessary to monitor and coordinate the assembly progresses of components, thus to improve the assembly efficiency.",
+                        "The Invention Patent CN108491776A, entitled \u201cMETHOD AND DEVICE FOR ASSEMBLY PART IDENTIFICATION BASED ON PIXEL CLASSIFICATION, AND ASSEMBLY MONITORING SYSTEM\u201d, disclosed part identification by training a random forest model. The training process requires artificially designed deep differential features, and features cannot be learned automatically. This technical solution can only realize part identification and determine whether the part is wrong, and cannot further monitor whether the assembly position and assembly sequence of the part are wrong, so it is impossible to detect missing and misplacing in time."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe current state of mechanical assembly industry",
+                        "identify problems with current assembly methods",
+                        "introduce need for intelligent assembly monitoring system"
+                    ],
+                    "num_characters": 1928,
+                    "outline_medium": [
+                        "motivate assembly monitoring system"
+                    ],
+                    "outline_short": [
+                        "motivate assembly monitoring system"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE PRESENT INVENTION",
+                    "paragraphs": [
+                        "To solve the technical problems, the present invention provides an assembly monitoring method based on deep learning, by which parts in the assembly body can be identified, and the assembly steps during the assembly, as well as the occurrence of assembly errors and the type of errors, can be monitored for the parts.",
+                        "The present invention employs the following technical solution.",
+                        "An assembly monitoring method based on deep learning is provided, implemented by execution of a computer program by a processor, comprising steps of:",
+                        "creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at multiple monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; the monitoring angle is an angle of view between a depth camera and an assembly body to be monitored, the depth camera is arranged in situ and changed in its capture angle within a preset rotation range to form the multiple monitoring angles; and the 3D assembly body is a 3D model of the physical assembly body; training a deep learning network model by the training set; and obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+                        "Preferably, the step of creating a training set comprises: establishing a 3D assembly body, comprising 3D models of parts and a positional relation between the parts; annotating different parts in the 3D assembly body by different colors to establish an annotation model of the 3D assembly body; defining an assembly sequence model, comprising defining parts contained in each assembly step; and according to the assembly sequence model, loading annotation models of different parts, generating a 3D model and an annotation model for an assembly body corresponding to each assembly step, synthesizing a depth image set Di of the 3D assembly body at multiple monitoring angles by a depth buffer, and synthesizing a label image set Li by an imaging model of the depth camera, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li , different parts of the 3D assembly body are rendered by different colors thus to establish a training set.",
+                        "Preferably, the deep learning network model is a fully convolutional deep network comprising a convolution process and a deconvolution process, and the deep learning network model is trained by using the depth image set Di in the training set as the input to the deep learning network model and the label image set Li in the training set as the output from the deep learning network model.",
+                        "Preferably, the step of obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene comprises: in an initialization stage, fixing the depth camera, aligning the depth camera to an assembly zone, and capturing a physical assembly scene depth image A not containing the physical assembly body by the depth camera; in a circulation stage, capturing a physical assembly scene depth image B containing the physical assembly body by the depth camera; and in the physical assembly scene depth image A and the physical assembly scene depth image B, calculating the physical assembly body depth image C by subtracting depth values of corresponding pixel points, specifically: if the absolute value of the difference between depth values of corresponding pixel points in the depth image A and the depth image B is less than a preset threshold D, considering this pixel point in the depth image B as the background, or otherwise considering this pixel point in the depth image B as the assembly body; and if a pixel point in the depth image A and a pixel point in the depth image B have same coordinates in an image coordinate system, considering the two pixel points as corresponding pixel points.",
+                        "Preferably, after identifying all the parts of the physical assembly body, the method further comprises assembly step monitoring: obtaining statistic information about the composition of pixels for parts in the pixel segmentation image of the physical assembly body, determining the composition of the parts, and inquiring a current assembly step according to the composition of the parts and based on the assembly sequence model to complete assembly step monitoring.",
+                        "Preferably, after identifying all the parts of the physical assembly body, the method further comprises parts assembly monitoring: determining whether a part is assembled incorrectly, specifically: according to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel overlap rate qz between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,",
+                        "\\({q_{z} = \\frac{n_{c}}{n_{z}}},\\)",
+                        "wherein nc represents the number of pixel points, the coordinates of which are overlapped, for the assembled part in the correct label image and the pixel segmentation image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body; the correct label image is a label image synthesized by the imaging model of the depth camera by using coordinates of the depth camera in the physical assembly scene as coordinates of a viewpoint in a virtual scene, and each step corresponds to one correct label image; and determining that the part is not assembled incorrectly if qz is greater than or equal to a preset overlap threshold E, or otherwise presenting examination information.",
+                        "Preferably, the part assembly monitoring further comprises determining the type of assembly errors, comprising: according to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel reduction rate qn between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,",
+                        "\\({q_{n} = \\frac{n_{a} - n_{z}}{n_{a}}},\\)",
+                        "wherein na represents the number of pixel points for the assembled part in the correct label image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body; determining that the part is missed, when the qz for the part is less than or equal to a preset overlap threshold F and the absolute value of qn is greater than or equal to a preset missing threshold, that is, the part has a low overlap rate of pixel points and a great difference in the number of pixel points; and determining that the part is misplaced, when the qz for the part is less than or equal to the preset overlap threshold F and the absolute value of qn is less than or equal to a preset misplacing threshold, that is, the part has a low overlap rate of pixel points but a small difference in the number of pixel points.",
+                        "The present invention further provides an assembly monitoring device based on deep learning, comprising a memory, a processor, and a computer program stored in the memory and can be run on the processor, wherein the program, when executed by the processor, causes the processor to perform steps of: creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at different monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; the 3D assembly body is a 3D model of the physical assembly body; training a deep learning network model by the training set; and obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+                        "The present invention further provides a computer-readable storage medium storing a computer program that, when executed by the processor, causes the processor to perform steps of: creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at different monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; the 3D assembly body is a 3D model of the physical assembly body; training a deep learning network model by the training set; and obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+                        "The present invention has the following beneficial effects:",
+                        "1. in the present invention, the composition of parts of the assembly body is calculated by a deep learning neural network and according to a depth image, to realize the identification of the parts of the assembly body;",
+                        "2. in the present invention, the deep learning network model is trained by a depth image set and a label image set, to realize the monitoring of the physical assembly and meet the assembly monitoring requirement for customized products; and 3. in the present invention, the assembly step monitoring, the missing determination, the misplacing monitoring and the like can be realized, and it is of great application value for large-scale customization in workshops."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "provide assembly monitoring method based on deep learning",
+                        "identify parts in assembly body",
+                        "monitor assembly steps and errors",
+                        "create training set for physical assembly body",
+                        "train deep learning network model",
+                        "obtain physical assembly body depth image",
+                        "input depth image into network model",
+                        "output pixel segmentation image",
+                        "identify all parts of physical assembly body",
+                        "monitor assembly step",
+                        "determine composition of parts",
+                        "inquire current assembly step",
+                        "monitor parts assembly",
+                        "determine whether part is assembled incorrectly",
+                        "calculate pixel overlap rate",
+                        "determine type of assembly errors",
+                        "calculate pixel reduction rate",
+                        "determine if part is missed",
+                        "determine if part is misplaced",
+                        "provide assembly monitoring device based on deep learning",
+                        "provide computer-readable storage medium storing computer program"
+                    ],
+                    "num_characters": 10906,
+                    "outline_medium": [
+                        "provide assembly monitoring method based on deep learning",
+                        "identify parts in assembly body",
+                        "monitor assembly steps and errors",
+                        "create training set for physical assembly body",
+                        "train deep learning network model",
+                        "obtain physical assembly body depth image",
+                        "input depth image into network model",
+                        "output pixel segmentation image",
+                        "identify all parts of physical assembly body",
+                        "monitor assembly step and errors"
+                    ],
+                    "outline_short": [
+                        "provide assembly monitoring method based on deep learning",
+                        "identify parts in assembly body",
+                        "monitor assembly steps and errors",
+                        "train deep learning network model",
+                        "output pixel segmentation image"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE PRESENT INVENTION",
+                    "paragraphs": [
+                        "The present invention will be described below in detail with reference to the accompanying drawings by specific embodiments."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "EMBODIMENT 1",
+                            "paragraphs": [
+                                "The Embodiment 1 of the present application provides a schematic flowchart of a verification method, as shown in FIG. 1, comprising:",
+                                "1. establishing a 3D assembly body by CAD software or other three-dimensional software, comprising 3D models of parts and a positional relation between the parts;",
+                                "2. importing the 3D assembly body into virtual reality modeling software (for example, Multigen Creator), and annotating different parts in the 3D assembly body by different colors to establish an annotation model of the 3D assembly body;",
+                                "3. defining an assembly sequence model, comprising defining parts contained in each assembly step; and 4. according to the assembly sequence model, loading annotation models of different parts, and generating a 3D model and an annotation model for an assembly body corresponding to each assembly step.",
+                                "5. A depth image set Di of the 3D assembly body at multiple monitoring angles synthesized by a depth buffer, and a label image set Li is synthesized by an imaging model of the depth camera, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors thus to establish a training set. Generally, the images in the depth image set Di and the images in label image set Li have a same resolution. A depth image set corresponding to each step contains a set of depth images at multiple monitoring angles in this assembly step, and a label image set corresponding to each step contains a set of label images at multiple monitoring angles in this assembly step.",
+                                "6. The deep learning network model is trained by the training set. The deep learning network model is a fully convolutional deep network that replaces fully connected layers in the conventional convolutional neural network with convolutional layers, comprising a convolution process and a deconvolution process, and the deep learning network model is trained by using the depth image set Di in the training set as the input to the deep learning network model and the label image set Li in the training set as the output from the deep learning network model.",
+                                "7. A physical assembly body depth image C in a physical assembly scene is obtained by the depth camera. The step of obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene comprises: in an initialization stage, fixing the depth camera, aligning the depth camera to an assembly zone, and capturing a physical assembly scene depth image A not containing the physical assembly body by the depth camera; in a circulation stage, capturing a physical assembly scene depth image B containing the physical assembly body by the depth camera; and in the physical assembly scene depth image A and the physical assembly scene depth image B, calculating the physical assembly body depth image C by subtracting corresponding pixels, specifically: if the absolute value of the difference between depth values of corresponding pixel points in the physical assembly scene depth image A and the physical assembly scene depth image B is less than a preset threshold d, considering this pixel point in the physical assembly scene depth image B as the background and considering the depth value of the corresponding pixel point in the physical assembly body depth image C as 0, or otherwise considering this pixel point in the physical assembly scene depth image B as the assembly body and considering the depth value of the corresponding pixel point in the physical assembly body depth image C as the depth value of the corresponding pixel point in the physical assembly scene depth image B. The pixel points in the two depth images, having same coordinates, are corresponding pixel points in the two depth images.",
+                                "8. The physical assembly body depth image C is input into the deep learning network model, and a pixel segmentation image of the physical assembly body is output, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+                                "9. After identifying all the parts of the physical assembly body, the method further comprises assembly step monitoring: obtaining statistic information about the composition of pixels for parts in the pixel segmentation image of the physical assembly body, determining the composition of the parts, and inquiring a current assembly step according to the composition of the parts and based on the assembly sequence model to complete assembly step monitoring.",
+                                "10. After identifying all the parts of the physical assembly body, the method further comprises parts assembly monitoring: determining whether a part is assembled incorrectly, specifically: according to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel overlap rate qz between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,",
+                                "\\({q_{z} = \\frac{n_{c}}{n_{z}}},\\)",
+                                "wherein nc represents the number of pixel points, the coordinates of which are overlapped, for the assembled part in the correct label image and the pixel segmentation image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body; the pixel segmentation image of the physical assembly body and the correct label image have a same resolution; the correct label image is a label image synthesized by the imaging model of the depth camera by using coordinates of the depth camera in the physical assembly scene as coordinates of a viewpoint in a virtual scene, and in the correct label image, different parts of the 3D assembly body are rendered by different colors. It is determined that the part is not assembled incorrectly if qz is greater than or equal to a preset overlap threshold E, or otherwise examination information is presented. Generally, it is indicated that the part is not assembled incorrectly when qz approaches 1. Therefore, the overlap threshold E may be a numerical value approaching 1.",
+                                "11. The part assembly monitoring further comprises determining the type of assembly errors, specifically: according to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel reduction rate qnn between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,",
+                                "\\({q_{n} = \\frac{n_{a} - n_{z}}{n_{a}}},\\)",
+                                "wherein na represents the number of pixel points for the assembled part in the correct label image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body; determining that the part is missed, when the qz for the part is less than or equal to a preset overlap threshold F and the absolute value of qn is greater than or equal to a preset missing threshold, that is, the part has a low overlap rate of pixel points and a great difference in the number of pixel points; and determining that the part is misplaced, when the qz for the part is less than or equal to the preset overlap threshold F and the absolute value of qn is less than or equal to a preset misplacing threshold, that is, the part has a low overlap rate of pixel points but a small difference in the number of pixel points. The overlap threshold F is a numerical value approaching 0. When qzis less than the overlap threshold F, it is indicated that the part has a low overlap rate of pixel points. The missing threshold may be a numerical value greater than 0 or approaching 1, indicating a great difference in the number of pixel points for the part between the pixel segmentation image of the physical assembly body and the correct label image. The misplacing threshold may be a numerical value approaching 0, indicating a small difference in the number of pixel points for the part between the pixel segmentation image of the physical assembly body and the correct label image. The absolute value of the obtained qn approaches 0."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "establish 3D assembly body",
+                                "annotate different parts in 3D assembly body",
+                                "define assembly sequence model",
+                                "generate 3D model and annotation model for assembly body",
+                                "synthesize depth image set and label image set",
+                                "train deep learning network model",
+                                "obtain physical assembly body depth image",
+                                "input depth image into network model",
+                                "output pixel segmentation image",
+                                "identify all parts of physical assembly body",
+                                "monitor assembly step",
+                                "determine composition of parts",
+                                "inquire current assembly step",
+                                "monitor parts assembly",
+                                "determine whether part is assembled incorrectly",
+                                "calculate pixel overlap rate",
+                                "determine type of assembly errors"
+                            ],
+                            "num_characters": 8571,
+                            "outline_medium": [
+                                "establish 3D assembly body",
+                                "annotate parts in 3D assembly body",
+                                "define assembly sequence model",
+                                "generate 3D model and annotation model",
+                                "synthesize depth image set and label image set",
+                                "train deep learning network model",
+                                "obtain physical assembly body depth image",
+                                "output pixel segmentation image"
+                            ],
+                            "outline_short": [
+                                "establish 3D assembly body",
+                                "create training set",
+                                "train deep learning network model",
+                                "obtain and process physical assembly body depth image"
+                            ]
+                        },
+                        {
+                            "title": "EMBODIMENT 2",
+                            "paragraphs": [
+                                "As shown in FIG. 2, this embodiment is a schematic view of an assembly monitoring device based on deep learning, comprising a server computer system 20. The server computer system comprises a processor 201, a storage unit 202, and a computer program stored in the storage unit and can be run on the processor. The computer program comprises steps of:",
+                                "2010: creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at multiple monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; and the 3D assembly body is a 3D model of the physical assembly body;",
+                                "2020: training a deep learning network model by the training set; and",
+                                "2030: obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe assembly monitoring device based on deep learning",
+                                "provide steps of computer program"
+                            ],
+                            "num_characters": 1317,
+                            "outline_medium": [
+                                "describe assembly monitoring device based on deep learning"
+                            ],
+                            "outline_short": [
+                                "describe assembly monitoring device based on deep learning"
+                            ]
+                        },
+                        {
+                            "title": "EMBODIMENT 3",
+                            "paragraphs": [
+                                "A computer-readable storage medium is provided, storing a computer program that, when executed by the processor, causes the processor to perform steps of:",
+                                "creating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at multiple monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; and the 3D assembly body is a 3D model of the physical assembly body;",
+                                "training a deep learning network model by the training set; and",
+                                "obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+                                "The specific steps in the Embodiment 2 and Embodiment 3 may refer to the related descriptions of the embodiment of the method.",
+                                "The foregoing contents are merely embodiments of the present invention, and are not intended to limit the patent scope of the present invention. Any equivalent structures or equivalent flow transformations made on the basis of the descriptions and drawings of the present invention, or direct or indirect applications thereof in other related technical fields shall be within the patent scope of the present invention."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "provide computer-readable storage medium",
+                                "store computer program",
+                                "execute steps of computer program"
+                            ],
+                            "num_characters": 1651,
+                            "outline_medium": [
+                                "describe computer-readable storage medium"
+                            ],
+                            "outline_short": [
+                                "describe computer-readable storage medium"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe embodiment of assembly monitoring method"
+                    ],
+                    "num_characters": 124,
+                    "outline_medium": [
+                        "describe embodiment of assembly monitoring method"
+                    ],
+                    "outline_short": [
+                        "describe embodiment of assembly monitoring method"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An assembly monitoring method based on deep learning, implemented by execution of a computer program by a processor, comprising steps of:\ncreating a training set for a physical assembly body, the training set comprising a depth image set Di and a label image set Li of a 3D assembly body at multiple monitoring angles, wherein i represents an assembly step, the depth image set Di in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors; the monitoring angle is an angle of view between a depth camera and an assembly body to be monitored, the depth camera is arranged in situ and changed in its capture angle within a preset rotation range to form the multiple monitoring angles; and the 3D assembly body is a 3D model of the physical assembly body;\ntraining a deep learning network model by the training set; and\nobtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene, inputting the physical assembly body depth image C into the deep learning network model, and outputting a pixel segmentation image of the physical assembly body, in which different parts are represented by pixel colors to identify all the parts of the physical assembly body.",
+        "2. The assembly monitoring method based on deep learning according to claim 1, wherein the step of creating a training set comprises:\nestablishing a 3D assembly body, comprising 3D models of parts and a positional relation between the parts;\nannotating different parts in the 3D assembly body by different colors to establish an annotation model of the 3D assembly body;\ndefining an assembly sequence model, comprising defining parts contained in each assembly step; and\naccording to the assembly sequence model, loading annotation models of different parts, generating a 3D model and an annotation model for an assembly body corresponding to each assembly step, synthesizing a depth image set Di of the 3D assembly body at multiple monitoring angles by a depth buffer, and synthesizing a label image set Li by an imaging model of the depth camera, wherein i represents an assembly step, the depth image set a in the ith step corresponds to the label image set Li in the ith step, and in label images in the label image set Li, different parts of the 3D assembly body are rendered by different colors thus to establish a training set.",
+        "3. The assembly monitoring method based on deep learning according to claim 1, wherein the deep learning network model is a fully convolutional deep network comprising a convolution process and a deconvolution process, and the deep learning network model is trained by using the depth image set Di in the training set as the input to the deep learning network model and the label image set Li in the training set as the output from the deep learning network model.",
+        "4. The assembly monitoring method based on deep learning according to claim 1, wherein the step of obtaining, by the depth camera, a physical assembly body depth image C in a physical assembly scene comprises:\nin an initialization stage, fixing the depth camera, aligning the depth camera to an assembly zone, and capturing a physical assembly scene depth image A not containing the physical assembly body by the depth camera;\nin a circulation stage, capturing a physical assembly scene depth image B containing the physical assembly body by the depth camera; and\nin the physical assembly scene depth image A and the physical assembly scene depth image B, calculating the physical assembly body depth image C by subtracting depth values of corresponding pixel points, comprising: if the absolute value of the difference between depth values of corresponding pixel points in the depth image A and the depth image B is less than a preset threshold D, considering this pixel point in the depth image B as the background, or otherwise considering this pixel point in the depth image B as the assembly body; and if a pixel point in the depth image A and a pixel point in the depth image B have same coordinates in an image coordinate system, considering the two pixel points as corresponding pixel points.",
+        "5. The assembly monitoring method based on deep learning according to claim 2, after identifying all the parts of the physical assembly body, further comprising assembly step monitoring: obtaining statistic information about the composition of pixels for parts in the pixel segmentation image of the physical assembly body, determining the composition of the parts, and inquiring a current assembly step according to the composition of the parts and based on the assembly sequence model to complete assembly step monitoring.",
+        "6. The assembly monitoring method based on deep learning according to claim 1, after identifying all the parts of the physical assembly body, further comprising parts assembly monitoring: determining whether a part is assembled incorrectly, comprising:\naccording to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel overlap rate qz between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,\n\n\n\\({q_{z} = \\frac{n_{c}}{n_{z}}},\\)\nwherein nc represents the number of pixel points, the coordinates of which are overlapped, for the assembled part in the correct label image and the pixel segmentation image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body;\nthe correct label image is a label image synthesized by the imaging model of the depth camera by using coordinates of the depth camera in the physical assembly scene as coordinates of a viewpoint in a virtual scene, and each step corresponds to one correct label image; and\ndetermining that the part is not assembled incorrectly if qz is greater than or equal to a preset overlap threshold E, or otherwise presenting examination information.",
+        "7. The assembly monitoring method based on deep learning according to claim 6, wherein the part assembly monitoring further comprises determining the type of assembly errors, comprising:\naccording to the current assembly step, comparing each pixel point in the pixel segmentation image of the physical assembly body with each pixel point in a correct label image corresponding thereto, and respectively calculating a pixel reduction rate qn between pixels for a part, which is assembled in the current assembly step, in the pixel segmentation image of the physical assembly body with respect to pixels for the part in the correct label image,\n\n\n\\({q_{n} = \\frac{n_{a} - n_{z}}{n_{a}}},\\)\nwherein na represents the number of pixel points for the assembled part in the correct label image, and nz represents the number of pixel points for the assembled part in the pixel segmentation image of the physical assembly body; determining that the part is missed, when the qz for the part is less than or equal to a preset overlap threshold F and the absolute value of qn is greater than or equal to a preset missing threshold, that is, the part has a low overlap rate of pixel points and a great difference in the number of pixel points; and determining that the part is misplaced, when the qz for the part is less than or equal to the preset overlap threshold F and the absolute value of qn is less than or equal to a preset misplacing threshold, that is, the part has a low overlap rate of pixel points but a small difference in the number of pixel points.",
+        "8. An assembly monitoring device based on deep learning, comprising a memory, a processor, and a computer program stored in the memory and can be run on the processor, wherein the program, when executed by the processor, causes the processor to perform the assembly monitoring method based on deep learning according to claim 1.",
+        "9. A computer-readable storage medium storing a computer program that, when executed by the processor, causes the processor to perform the assembly monitoring method based on deep learning according to claim 1."
+    ]
+}

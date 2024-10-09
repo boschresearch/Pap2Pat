@@ -1,0 +1,74 @@
+# DESCRIPTION
+
+- introduce CNAP devices
+- describe measurement methods
+- explain Peňáz Principle
+- describe Vascular Unloading Technique
+- explain Volume Clamp Method
+- introduce WESSELIG method
+- describe FORTIN method
+- explain limitations of known systems
+- state object of invention
+- describe validation method
+- introduce apparatus for validation
+- describe differences from intermittent blood pressure monitors
+- explain evaluation procedures
+- describe test systems for intermittent blood pressure monitors
+- explain limitations of known test systems
+- describe CNAP control system
+- explain control deviation
+- describe reconstruction of pA(t)
+- introduce newer methods
+- describe frequency contents of v(t)
+- explain comparator function
+- describe limitations of conventional CNAP systems
+- introduce invention
+- describe apparatus for validation
+- explain modulation of light pulses
+- describe simulation module
+- explain closed control loop
+- describe validation methods
+- introduce test system or simulator
+- describe methods for equivalence proof
+- introduce FIG. 1
+- describe state-of-the-art blood pressure measuring system
+- explain control mechanism
+- describe comparator function
+- introduce FIG. 2
+- describe validation apparatus
+- describe finger dummy
+- define haptic properties
+- describe optical characteristics
+- explain modulation of light source
+- introduce simulation module
+- describe comparator function
+- show p-v diagram
+- explain oscillometric principle
+- determine pulsatile component
+- describe constant component
+- show S-curve shape
+- parameterize S-curve
+- set up system of equations
+- describe other S-curve functions
+- determine comparator function
+- map physiological properties
+- describe hysteresis
+- represent hysteresis mathematically
+- re-measure S-curve
+- check and correct comparator function
+- close control loop
+- summarize control loop
+- describe digital reproduction
+- validate test systems
+- describe validation methods
+- record blood pressure curve
+- compare CNAP and IBP
+- create simulator dataset
+- compare datasets
+- show tolerance triangle
+- illustrate validated simulator system
+- show unacceptable simulator system
+- test new CNAP systems
+- create new dataset
+- show tolerance tetrahedron
+

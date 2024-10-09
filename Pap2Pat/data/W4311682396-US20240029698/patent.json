@@ -1,0 +1,318 @@
+{
+    "id": "US20240029698",
+    "authors": [
+        "Yuning Guo",
+        "Massimo Ruzzene",
+        "Matheus Rosa"
+    ],
+    "title": "GYROID-BASED ACOUSTIC MATERIALS AND DEVICES",
+    "date": "2023-07-24 00:00:00",
+    "abstract": "An acoustic device includes a three-dimensional phononic crystal having cubic symmetry. The phononic crystal includes a first region filled with a first material and a second region filled with a solid material that is different from the first material. The second region is the solid complement of the first region. A boundary between the first and second regions is shaped as a single gyroid surface that has constant mean curvature and is not pinched off. The volume of the second region is greater than or equal to that of the first region. The first material may be a gas, such as air, or a fluid. The phononic crystal supports topological surface states, has a band structure with at least one degenerate point protected by nonsymmorphic symmetry, and exhibits negative refraction where two of its external surfaces meet.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "The single gyroid is a triply periodic minimal surface with body-centered cubic symmetry. It features multiple rotational axes and screw axes as well as numerous axial and diagonal glide planes, but does not have any mirror symmetry. Accordingly, the single gyroid is chiral in nature."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe single gyroid"
+                    ],
+                    "num_characters": 285,
+                    "outline_medium": [
+                        "describe single gyroid"
+                    ],
+                    "outline_short": [
+                        "describe single gyroid"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "The present embodiments include acoustic materials created from three-dimensional (3D) blocks whose shape is based on the single gyroid geometry. These acoustic materials exhibit unique behavior in which the acoustic energy only propagates on the surfaces of the 3D block material. The gyroid structure supports topological surface modes for a broad frequency range with a relative bandwidth up to 45% (and higher). Prototypes built with additive manufacturing illustrate the robust surface modes that appear on the surface of the sample.",
+                        "The acoustic materials of the present embodiments can confine acoustic energy at the surface of the material while negating sound propagation through its interior. Thus, the present embodiments can be used for soundproofing, noise control, filtering, switching, and sensing, among other applications. For example, the acoustic materials of the present embodiments can be fabricated as sound panels that can be installed in a room for sound insulation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce acoustic materials"
+                    ],
+                    "num_characters": 991,
+                    "outline_medium": [
+                        "introduce acoustic materials"
+                    ],
+                    "outline_short": [
+                        "introduce acoustic materials"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "FIG. 1 shows two perspective views of a gyroid-based acoustic material that is based on a three-dimensional (3D) phononic crystal 100, or 3D lattice, having cubic symmetry. The phononic crystal 100 has three primitive translation vectors that are mutually orthogonal and aligned with the x, y, and z axes of a right-handed coordinate system 120. Accordingly, x, y, and z are the primitive axes of the phononic crystal 100, and therefore the lattice sites, or cells, of the phononic crystal 100 extend linearly along x, y, and z. In the example of FIG. 1, the phononic crystal 100 has 12 cells along x, 12 cells along y, and 6 cells along z. However, the phononic crystal 100 may have a different number of cells along any one or more of the x, y, and z axis without departing from the scope hereof. The phononic crystal 100 of FIG. 1 is three-dimensional in that it contains more than one cell along each of the three primitive axes. The acoustic material of FIG. 1 may also be referred to as an acoustic device without departing from the scope hereof.",
+                        "FIG. 2 is a perspective view of a unit cell 200 of the 3D phononic crystal 100 of FIG. 1. All cells of the phononic crystal 100 are replicas of the unit cell 200. The unit cell 200 is shaped as a cube of length a that is spatially bounded by six planar faces. For clarity in FIG. 2, only two of these planar faces are labeled: a first planar face 202 lying parallel to the y-z plane and a second planar face 204 that is also parallel to the y-z plane and opposite to the first planar face 202. The length a of the unit cell 200 is also the lattice constant of the 3D phononic crystal 100. While FIG. 2 shows the unit cell 200 as a cube, the unit cell 200 may be, more generally, another type of cuboid (e.g., a rectangular cuboid).",
+                        "The working frequency range of the 3D phononic crystal 100 is determined by the unit cell length, or lattice constant, a. For acoustic frequencies (e.g., 20 Hz-20 kHz), a may be between a few millimeters and a few meters. For ultrasonic frequencies, (e.g., greater than 20 kHz) a may be a fraction of a millimeter, or less (e.g., 1 micron, or a fraction thereof). For infrasonic frequencies (e.g., less than 20 Hz), a may be several meters, or more. However, a may have a different value without departing from the scope hereof. In some embodiments, a is less than one-half of the acoustic wavelength, in which case the phononic crystal 100 is a phononic metamaterial.",
+                        "FIG. 2 also shows how a boundary 214 partitions the unit cell 200 into a first region 210 and a second region 220. The second region 220 is the solid complement of the first region 210, i.e., the second region 220 includes all points in the unit cell 200 that do not belong to the first region 210. Thus, the intersection of the regions 210 and 220 is the null set while the union of the regions 210 and 220 is the entire unit cell 200.",
+                        "The second region 220 is filled with a solid material while the first region 210 is filled with a first material that is different from the solid material. The volume fraction is the ratio of the volume of the second region 220 to the volume a3 of the unit cell 200. In some embodiments, the volume fraction is greater than or equal to 50%. Equivalently, the volume of the second region 220 is greater than the volume of the first region 210. As described in more detail below, some of the present embodiments can achieve a volume fraction up to approximately 97.1%, or more.",
+                        "By forming the second region 220 from a solid material, as opposed to the first region 210, the phononic crystal 100 advantageously has a volume factor of at least 50%, helping to ensure that the phononic crystal 100 is structurally rigid and therefore can be handled without deforming, or otherwise damaging, its physical structure.",
+                        "The solid material of the second region 220 is harder than the material filling the first region 210. For example, the phononic crystal 100 may be fabricated by 3D printing only the second region 220 of each cell. In this case, the solid material can be any material that can be 3D printed, such as plastic, metal, glass, ceramic, polymer, carbon fiber, resin, or any combination thereof. In some embodiments, the solid material is an electrical insulator. In other embodiments, the solid material is an electrical conductor. The first region 210 may be filled with a fluid, such as air, an inert gas, or liquid. Regardless of materials, the solid material is \u201chard\u201d in that it has an acoustic impedance that is larger than that of the material filling the first region 210. Accordingly, when crossing the boundary 214, the acoustic impedance undergoes a step-like transition. Under these conditions, the boundary 214 acts like a hard boundary.",
+                        "The boundary 214 is shaped as a single gyroid surface having a constant mean curvature. In the present embodiments, the single gyroid surface is not in the pinch-off regime. As known in the art, the single gyroid surface can be mathematically approximated by the isosurface function",
+                        "F=cos({tilde over (x)})sin({tilde over (y)})+cos({tilde over (y)})sin({tilde over (z)})+cos({tilde over (z)})sin({tilde over (x)}),\u2003\u2003(1)",
+                        "where {tilde over (x)}=2\u03c0x/a, {tilde over (y)}=2\u03c0y/a, and {tilde over (z)}=2\u03c0z/a are scaled spatial coordinates along the x, y, and z axes, respectively, and F is a constant that is related to (but not identical with) the constant mean curvature. The volume fraction also depends on the value of F. Equation 1, which is also known as a level surface, is only mathematically defined for |F|\u22641.5.",
+                        "FIGS. 3A-3H are plots of the single-gyroid isosurface of Eqn. 1 for various values of F. In FIGS. 3A-3H, the top image is a perspective view of the single-gyroid isosurface over the unit cell 200 while the bottom image is the same perspective view taken over an array of 2\u00d72\u00d72 cells. FIGS. 3A-3H are best viewed together with the following description.",
+                        "In FIGS. 3A and 3B, F=0 and 0.5, respectively. In FIG. 3A, the resulting single-gyroid isosurface divides the space into regions 210 and 220 that have the same volume, i.e., the volume fraction is 50%. In FIG. 3B, the single-gyroid isosurface divides the space into regions 210 and 220 having different volumes, i.e., the volume fraction is greater than 50%. The surface shown in FIG. 3A approximates the minimal gyroid surface, for which the constant mean curvature is zero. Since the isosurface in FIG. 3A only approximates a true single gyroid surface, its mean curvature is close to, but not exactly, zero.",
+                        "In some embodiments, the constant F has a value such that 1\u2264F<1.413. FIGS. 3C-3F show gyroid surfaces for F=1.0, 1.08, 1.2, and 1.4, respectively. In the range 1\u2264F<1.413, the constant mean curvature is great enough that the single gyroid isosurface locally loops back onto itself. In this case, the first region 210 forms a network of tubes, or closed channels, that pass through the bulk of the unit cell 200. Acoustic wave propagation within the bulk of the phononic crystal 100 is essentially confined to these closed channels. The tubes form ports where they intersect the boundaries of the phononic crystal 100, such as ports 212 shown in FIG. 2 (F=1.2 for the boundary 214 in FIG. 2, and is therefore the same gyroid surface as in FIG. 3E). For F=1.0, the volume fraction is 83%. The 3D phononic crystal 100 of FIG. 1 has F=1.08.",
+                        "It is also apparent from FIGS. 3C-3F that the first region 210 becomes discontinuous for 1\u2264F<1.413, but only within the unit cell 200. When the unit cell 200 is repeated to form a 3D crystal or lattice, the discontinuous sections join together in neighboring cells, as shown in the bottom images of FIGS. 3C-3F. Thus, across the entire 3D crystal, the first region 210 is continuous (ignoring one remaining discontinuous section at the bottom corner of the 3D crystal).",
+                        "In FIGS. 3G and 3H, F=1.413 and 1.49, respectively. Starting at F=1.413, the tubes of the first region 210 become \u201cpinched-off,\u201d thereby causing the first region 210 to fracture into eight discontinuous sections. For this reason, the range of values F\u22651.413 is also known as the \u201cpinch-off regime.\u201d In some of the present embodiments, the single gyroid surface is not pinched-off, i.e., F<1.413. At F=1.413, the volume fraction is approximately 97.1%. Accordingly, the volume fraction of these embodiments is less than this value.",
+                        "The 3D phononic crystal 100 of FIG. 1 may be shaped as any three-dimensional geometric object (e.g., block, sphere, cylinder, etc.) or an approximation thereof. For example, the 3D phononic crystal 100 of FIG. 1 may be shaped as a panel whose width and length are both greater than its thickness. Such a panel may be used as an acoustic material for walls, floors, or ceilings of a room. The panel, when installed, has a front surface that is visible from inside of the room. In some embodiments, the panel includes an outer layer that fully covers the front surface. This outer layer visibly hides the ports at the front surface, giving the panel a visibly smooth appearance. Thus, the outer layer is similar to the paper layers used to cover the gypsum cores of sheetrock and other types of wallboard panels. In the present embodiments, the outer layer may be paper, foil (e.g., aluminum), or another type of material. While the outer layer will alter the boundary conditions for acoustic propagation, the geometry of the 3D phononic crystal 100 ensures that the panel can form surface states regardless of whether the ports are covered or not. Accordingly, the outer cover will not prevent the panel from achieving its intended functionality. In other embodiments, a rear surface of the panel (i.e., the surface opposite to the front surface) is also covered with an outer layer. In other embodiments, the front and rear surfaces are uncovered, in which case the ports are visible on both of these surfaces."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "1. Introduction",
+                            "paragraphs": [
+                                "Due to their complex morphologies and symmetries, triply periodic minimal surfaces have attracted interest for structured materials that achieve superior mechanical properties. Such surfaces efficiently tessellate space, and therefore can be used to create structured materials with high stiffness and strength [1-6] while also incorporating additional functionalities such as frequency band gaps [7], topological waveguiding [8], energy absorption [9], and thermal management [10]. The gyroid surface, which is one type of triple periodic minimal surface, is endowed by a spiral-like shape with cubic symmetry and chiral morphology whose properties have been explored in various fields including biology, mechanics, optics, and acoustics [11-20]. The observation of gyroid morphologies in nature and self-assembly systems also suggests that its architecture is mechanically robust [20-22]. In addition, materials based on gyroid surfaces applied as photonic crystals have shown extraordinary optical properties such as complete bandgaps, linear/circular dichroism, and Weyl points and line nodes [17, 18, 23-25]. Despite these achievements, the potential of gyroid-structured materials for topological wave physics phenomena has not been fully explored in the context of acoustics and elastic waves.",
+                                "We here investigate an acoustic gyroid crystal and exploit the non-trivial acoustic dispersion topology that naturally occurs due to its unique geometry and symmetry. The ensuing topological surface states have not yet been demonstrated in 3D continuous material platforms such as minimal surface-based architectures. In parallel to the development of gapped phases of topological insulators [26-29], gapless phases have been recently observed in the so-called \u201ctopological semimetals\u201d [30-32], based on which classical analogues have been explored in both photonic and phononic systems [24, 33-41]. These semimetals have band structures with multi-fold band degeneracies points like Weyl and Dirac points, or other touching patterns like nodal lines and nodal rings, which do not require a band gap and can result in Fermi arcs associated with topologically protected surface states [42-44]. Recent studies illustrate that multi-fold topological band degeneracies are protected by crystalline space-group symmetries in electric, photonic, and phononic systems [40, 41, 45, 46]. Two established configurations for phononic semimetal states are based on layer-stacked honeycomb lattices with proper interlayer coupling [37, 38], and cubic lattices with nonsymmorphic symmetries [39-41]. These notable studies advance the state of the art by implementing topological surface states in phononics, however they rely on demonstrator models with ad hoc designs that are not readily applicable as compact continuous materials. Also, minimal surface-based materials were shown to integrate efficient load-bearing capabilities with the robust topological waveguiding features of gapped insulators [8] and therefore may provide a path toward continuous materials hosting gapless topological states.",
+                                "We experimentally demonstrate a 3D gyroid acoustic crystal that hosts multi-fold topological degenerate points which are associated with the existence of topological surface states. Indeed, the gyroid surface is a natural candidate for exploring non-trivial dispersion topology within a continuous material platform due to its nonsymmorphic symmetry. The results presented herein illustrate the emergence of spin-1 Weyl and charge-2 Dirac degenerate points whose topological character is connected to chiral topological states whose propagation is confined to the surfaces of the material. In addition to surface confinement, the topological states define open arcs in reciprocal space, which makes their propagation along the surfaces highly directional. These topological states were experimentally observed on an additive manufactured sample, illustrating the ability to control the propagation of waves at the surface of the material.",
+                                "The experimental results described herein demonstrate how directional-wave properties resulting from surface arcs in reciprocal space produce negative refraction of surface modes propagating across the interface between two neighboring facets of the 3D material. These features are naturally enforced by the nonsymmorphic symmetry of the gyroid, revealing that gapless topological states can widely exist in this class of continuous materials without fine parameter tuning or delicate symmetry designs, which do not provide self-contained material platforms. A gyroid embedded with a rigid material provides the framework for the design of an acoustic material that leverages topological waveguiding and directional propagation which may translate into sound redirection and insulation capabilities."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce triply periodic minimal surfaces",
+                                "describe structured materials with superior mechanical properties",
+                                "describe frequency band gaps",
+                                "describe topological waveguiding",
+                                "describe energy absorption",
+                                "describe thermal management",
+                                "introduce gyroid surface",
+                                "describe acoustic gyroid crystal",
+                                "introduce topological surface states"
+                            ],
+                            "num_characters": 4831,
+                            "outline_medium": [
+                                "motivate triply periodic minimal surfaces",
+                                "introduce gyroid surface and its properties",
+                                "describe topological wave physics phenomena",
+                                "introduce acoustic gyroid crystal and its potential"
+                            ],
+                            "outline_short": [
+                                "motivate gyroid-structured materials for topological wave physics",
+                                "introduce acoustic gyroid crystal and topological surface states"
+                            ]
+                        },
+                        {
+                            "title": "2. Geometry of Gyroid Acoustic Crystals",
+                            "paragraphs": [
+                                "Crystal symmetry plays a critical role in the physics of topological materials. In this context, 3D band degenerate points introduced by nonsymmorphic symmetries provide an effective approach to realize 3D semimetal states through a combination of point group symmetry and translation of a Bravais lattice vector [47, 48]. The single gyroid, a triply periodic minimal surface with body-centered cubic symmetry, belongs to the nonsymmorphic space I4132 (No. 214, a subgroup of Iad). It features multiple rotational axes and screw axes as well as numerous axial and diagonal glide planes, but does not have any mirror symmetry, and therefore it is chiral in nature [18, 46, 49-51]. The gyroid can be defined by the isosurface function F=cos(x)sin(y)+cos(y)sin(z)+cos(z)sin(x), where the parameter F defines the morphology type (also see Eqn. 1). For 0\u2264|F|<1, the gyroid forms a single surface that partitions the space into two regions, as illustrated by the first region 210 and second region 220 in FIG. 2. In the range 1<|F|<1.413, the gyroid surfaces define closed channels with open ports at the boundaries, as illustrated for F=1.08 in FIGS. 2 and 3D [1, 17, 52]. In this section, the value F=1.08 is utilized to define the geometry of gyroid channels within a rigid material. This produces an acoustic crystal, within which spiral channels support the airborne propagation of acoustic waves. These spiral channels are also referred to herein as \u201cairborne gyroid channels.\u201d Local helices along the screw axes of the gyroid can be identified in different directions, e.g., [100], [001], or [111] (see [17, 53]). The chirality of a gyroid surface in the y-z plane is illustrated in FIG. 4, where left-handed helices and right-handed helices are shown in black. The zoomed views at the bottom of FIG. 4 illustrate the chiral paths that connect two points (white triangular markers) translated by a unit cell along the [100] and [111] directions. FIG. 1 shows perspective views of the fabricated 3D sample of gyroid acoustic crystal, whereby the solid material occupies the region that is complementary to the airborne gyroid channels. The sample consists of 12\u00d712\u00d76 unit cells in a cubic lattice structure with the lattice spacing a=10 mm, and is fabricated through fused deposition modeling using a Markforged printing machine (see Experimental Section below). Considering the large acoustic impedance mismatch between the solid material and the air, the acoustic-solid boundaries are treated as rigid and sound propagates only through the gyroid channels. The results that follow focus on the choice F=1.08 as a demonstration, but similar properties are found in the entire regime 1<|F|<1.413 since it results in similar morphologies."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe crystal symmetry",
+                                "introduce nonsymmorphic symmetries",
+                                "describe single gyroid",
+                                "define isosurface function F",
+                                "describe geometry of gyroid channels"
+                            ],
+                            "num_characters": 2737,
+                            "outline_medium": [
+                                "describe crystal symmetry and nonsymmorphic space group",
+                                "illustrate gyroid geometry and airborne gyroid channels"
+                            ],
+                            "outline_short": [
+                                "describe geometry and symmetry of gyroid acoustic crystals"
+                            ]
+                        },
+                        {
+                            "title": "3. Results",
+                            "paragraphs": [
+                                "We first investigate the dispersion and wave propagation properties of the gyroid acoustic crystal through numerical simulations conducted within the COMSOL Multiphysics software (see Experimental Section for details on numerical simulations). FIG. 5A shows the 3D body-center cubic Brillouin zone (BZ) and a projected surface BZ for the considered gyroid. The 2D surface BZ is obtained by projecting the 3D BZ onto a specific plane, in this case the x-y plane. The dots denote the positions of the symmetry points P and \u0393 in the 3D BZ and the corresponding projected symmetry points  and  in the surface BZ. The bulk dispersion of the acoustic gyroid material of geometry and size corresponding to the experimental sample shown in FIG. 1 is displayed in FIG. 5B along the high symmetry lines of the 3D BZ. It exhibits a fourfold degenerate band crossing at the high-symmetry point P (the four bands consisting of two sets of doubly degenerate bands), and a threefold degenerate band crossing at \u0393. These degenerate nodal points are protected by the nonsymmorphic symmetry of the gyroid surface [45, 48]. Here, we focus on the properties of the symmetry-enforced degeneracies at P and \u0393 within 13-28 kHz, but there are other band degenerate points appearing at a higher frequency range (34-48 kHz) or other symmetry lines like the \u0393H line, which may also be considered in future studies.",
+                                "FIGS. 5C and 5D show the surface dispersion on the kx-ky plane in the vicinity of the quadruple and triple degenerate points at P and r, respectively, where linear dispersions are observed around the degeneracies. The non-trivial topological character of the bands is evidenced by their Chern numbers C, which are computed from the evolution of the Wannier centers around closed loops in the 3D BZ by using the Wilson loop method [40, 54, 55]. The Chern numbers of the two doubly degenerate bands in FIG. 5C are calculated to be \u22122 and +2, signaling the degeneracy at P is a charge-2 Dirac point [56-58]. The four eigenmodes at the charge-2 Dirac point define two sets of modes with opposite chirality. The bands crossing at this point exhibit linear dispersion in all directions in the 3D momentum space, which further confirms that this quadruple degenerate point is a Dirac point. Meanwhile, the three bands in the vicinity of the triple degenerate point at \u0393 exhibit Chern numbers of \u22122, 0, and +2, respectively, indicating that this degenerate point is a threefold spin-1 Weyl point [58-60]. This deduction is also evidenced by eigenmodes of distinct chirality and the linear dispersions crossing at this point. The charge-2 Dirac point and spin-1 Weyl point are enforced by the nonsymmorphic symmetry of the gyroid material, illustrating that multifold degeneracies with Chern numbers greater than 1 naturally occur in this class of continuous materials without requiring intricate ad hoc designs [42, 61, 62].",
+                                "According to the bulk-edge correspondence principle, a degeneracy with non-zero topological results in surface states that can be identified along a closed loop encircling the degeneracy in the projected surface BZ [35]. This is illustrated in the inset of FIG. 5E, which depicts the 2D surface dispersion along a circular loop of radius 0.75\u03c0r/a centered at . The dispersion is obtained by using a ribbon structure consisting of 1\u00d71\u00d78 cells with rigid boundaries along the z direction and periodic boundary conditions applied along the x and y directions. Surface states are identified by computing a localization factor ls for each mode. The localization factor is defined based on the ratio between the integral of the pressure field at the surfaces and the integral across the entire ribbon, indicating a surface mode when its value approaches \u00b11, or a bulk mode when it approximates zero. The dispersion branches of the ribbon are shaded according to ls, whereby surface modes localized at the top and bottom surfaces are respectively associated with positive and negative values (dark shading), while bulk modes are associated with ls close to zero (light shading). Four chiral surface bands are identified, two with positive slope corresponding to modes localized at the bottom surface and two with negative slope corresponding to modes localized at the top surface. This behavior is expected from the degenerate charge-2 Dirac point with \u22122/+2 Chern numbers. These surface modes also circle around . We note that the gyroid acoustic crystal supports chiral surface states regardless of the type of surface termination as enforced by the topological degeneracy, but the dispersion of the surface states may be different under different termination types. The sensitivity with respect to surface terminations provides an additional degree of freedom which opens the possibility of tailoring the surface states on 3D bulk materials [16].",
+                                "The dispersion of the identified surface modes is displayed in the upper panel of FIG. 5F along the entire surface BZ in the projected kx-ky plane. The four sheets of the surface states surround the degenerate point, spanning a broad frequency range with a relative bandwidth \u0394\u03c9/\u03c9 of about 45%. The contours of the surface states at any frequency define open arcs analogous to the well-known Fermi arcs of electronic systems [63, 64]. An example of the open arcs at a frequency of 16.5 kHz is highlighted in the surface plot, and displayed in the bottom panel of FIG. 5F. Their chiral nature implies that only one pair of the four arcs is defined at a single surface (the other pair being localized at the opposite surface) making their propagation through the specific surface highly directional. While the x-y plane was selected to exemplify the nature of the surface states, these would also exist in other planes such as the x-z or y-z planes, which we will later use to demonstrate negative refraction through states of different surfaces.",
+                                "Experimental measurements were performed to identify the topological surface states, which are unveiled by the acoustic surface field mapping and associated Fourier spectra. FIG. 6A shows the measurement setup for mapping the acoustic field at the top surface of the sample. To excite the surface states, a broadband acoustic signal is fed to a speaker connected to a subwavelength-sized tube that is placed at a hole at the center of the sample surface. The acoustic pressure was measured hole-by-hole by a \u00bc-inch microphone (GRAS type BD 46) and recorded by a dynamic signal analyzer (see Experimental Section). To mimic the rigid boundary conditions considered in the simulations, the other holes on the upper surface were sealed with duct tape, except for the excitation and measurement holes. A photograph showing the detail of a sealed hole and an unsealed hole is shown in the inset of FIG. 6A.",
+                                "The measured pressure field p(x,y,t) was transformed to its reciprocal space representation {circumflex over (p)}(kx,ky,\u03c9) through a 3D Fourier transformation which produces a representation of the wavefield in the frequency/wavenumber domain [65]. FIG. 6B specifies the surface BZ used in the analysis of the experimental results, which maintains the projection at the kx-ky plane but with the center shifted from  to . FIG. 6C compares the measured transmission spectra to the numerical surface dispersion along the specific momentum path indicated in FIG. 6B. The light gray dots correspond to bulk modes while the dark gray lines denote the chiral surface modes localized at the top surface. The measured pressure field confirms the excitation of the chiral surface states predicted by the numerical simulations. The left panel in FIG. 6C shows the frequency spectrum of the pressure field averaged across the top surface, where the response amplitude varies with frequency considering the acoustic resonances in the sample. The transmission peaks indicated by the horizontal dashed lines coincide with the frequencies highlighted in the right panel. The matching of the high amplitude regions between the two panels occurs since the average transmission at the surface coincides with the average taken in reciprocal space coordinates kx-ky via a L2 norm due to Parseval's theorem of Fourier transforms. Isofrequency contours of the surface dispersion at selected frequencies illustrate the surface arcs: eight representative experimentally observed surface arcs are displayed in FIG. 6D at frequencies of 14.1, 15.8, 16.9, 18.7, 19.2, 20.9, 21.5, and 22.4 kHz, respectively. The shading ranges are adjusted for each panel for better visualization of the wavefield in the wavenumber domain. We note that for increasing frequencies, the surface arcs in the surface BZ progressively rotate and align along the horizontal direction, which is in good agreement with the numerical predictions (solid lines). The open surface arcs are indicative of directional propagation of the acoustic surface modes, which are further explored in the following.",
+                                "The topological surface arcs give rise to negative refraction across the surfaces of the sample [40, 66]. The excitation configuration for the recording of the acoustic field at the frequency where negative refraction is expected is shown in FIG. 7A. For the experiments, the holes on the surfaces to be measured were sealed to mimic hard boundary conditions, and a source was fixed at the center of the surface. The analysis here involves the surface acoustic fields on the XY, YZ, XZ1, and XZ2 surfaces, which were measured using the same procedures and excitation conditions as in the experimental analysis of FIGS. 6A-6D, but with hole-by-hole scanning of all surfaces of interest. FIG. 7B provides a representation of the experimentally measured acoustic fields in 3D at a frequency of 18.4 kHz, while FIG. 7C shows the separate fields at the i) XZ2, ii) XY, and iii) XZ1 surfaces. The results illustrate the confinement of the acoustic fields to the XZ2, XY, and XZ1 surfaces according to the excitation of the surface states, while the field at the YZ surface confirms the lack of penetration into the bulk of the sample due to the surface-confined source that excites mostly surface states. Also, the wave propagation at the XY surface is highly directional, as predicted by its open surface arcs, and exhibits negative refraction as it propagates into the XZ1 and XZ2 surfaces. This behavior is further illustrated by the contours shown in FIG. 7D representing the measured acoustic fields in the reciprocal space, which are overlaid to, and agree with, the numerically predicted isofrequency contours (solid lines). The arrows pointing along the normal directions to the contours in FIG. 7D indicate the directions of group velocity, which correspond to the directions along which waves propagate at that frequency [67]. The surface arcs exhibit small curvatures for a wide range of wavevectors, allowing the acoustic waves to propagate nearly in the same direction, as FIG. 7C shows. Due to the body-centered cubic symmetry of the gyroid surface, the surface arcs in the surface BZs at the xy, yz, and xz planes are the same but rotated in reciprocal space. Indeed, the surface arcs at the XZ and YZ surfaces are identical to the surface arcs observed at the XY surface, with their isofrequency contours rotated by 90\u00b0 as shown in FIG. 7D (considering a fixed perspective with kx as the x-axis). The source at the center of the XY surface excites the chiral surface modes with two opposite propagation directions (upward and downward propagation), which can be interpreted from the directions of group velocities demonstrated in the corresponding wavevector space (panel (ii) in FIG. 7D). When the generated acoustic wave reaches the interface between two adjoining surfaces, it propagates in the neighboring surface according to its surface arc, which is rotated by 90\u00b0, thereby leading to negative refraction. The non-zero topological charges of the multifold degenerate points in this design guarantee the existence of the open arcs, ensuring the observation of negative refraction of topologically protected acoustic waves."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate dispersion and wave propagation properties",
+                                "conduct numerical simulations in COMSOL Multiphysics software",
+                                "show 3D body-center cubic Brillouin zone (BZ) and projected surface BZ",
+                                "display bulk dispersion of acoustic gyroid material",
+                                "exhibit fourfold degenerate band crossing at high-symmetry point P",
+                                "exhibit threefold degenerate band crossing at \u0393",
+                                "focus on properties of symmetry-enforced degeneracies at P and \u0393",
+                                "show surface dispersion on kx-ky plane in vicinity of quadruple and triple degenerate points",
+                                "observe linear dispersions around degeneracies",
+                                "compute Chern numbers of bands",
+                                "signal degeneracy at P is a charge-2 Dirac point",
+                                "exhibit linear dispersion in all directions in 3D momentum space",
+                                "confirm quadruple degenerate point is a Dirac point",
+                                "deduce triple degenerate point is a threefold spin-1 Weyl point",
+                                "illustrate multifold degeneracies with Chern numbers greater than 1",
+                                "apply bulk-edge correspondence principle",
+                                "identify surface states along closed loop encircling degeneracy",
+                                "compute localization factor for each mode",
+                                "identify chiral surface bands",
+                                "display dispersion of identified surface modes",
+                                "show contours of surface states at any frequency",
+                                "perform experimental measurements to identify topological surface states",
+                                "measure pressure field p(x,y,t) and transform to reciprocal space representation",
+                                "compare measured transmission spectra to numerical surface dispersion"
+                            ],
+                            "num_characters": 12086,
+                            "outline_medium": [
+                                "simulate dispersion and wave propagation of gyroid acoustic crystal",
+                                "show 3D body-center cubic Brillouin zone and projected surface BZ",
+                                "display bulk dispersion along high symmetry lines of 3D BZ",
+                                "identify degenerate band crossings at high-symmetry points P and \u0393",
+                                "show surface dispersion on kx-ky plane near degenerate points",
+                                "compute Chern numbers of bands using Wilson loop method",
+                                "identify charge-2 Dirac point and spin-1 Weyl point",
+                                "illustrate bulk-edge correspondence principle",
+                                "show surface states along circular loop in projected surface BZ",
+                                "identify chiral surface bands with positive and negative slopes",
+                                "display dispersion of surface modes along entire surface BZ",
+                                "show open arcs of surface states at selected frequencies"
+                            ],
+                            "outline_short": [
+                                "simulate dispersion and wave propagation of gyroid acoustic crystal",
+                                "analyze bulk dispersion and surface dispersion",
+                                "identify topological degeneracies and chiral surface states",
+                                "experimentally measure acoustic surface field and Fourier spectra",
+                                "confirm excitation of chiral surface states and negative refraction",
+                                "illustrate directional propagation of acoustic surface modes"
+                            ]
+                        },
+                        {
+                            "title": "4. Conclusions",
+                            "paragraphs": [
+                                "We investigated a gyroid acoustic crystal that implements a phononic \u201csemimetal\u201d phase. The chiral morphology and nonsymmorphic symmetry of the gyroid surface lead to topological degeneracies and chiral surface states, which are predicted numerically and confirmed experimentally. The topological states are not only confined to the surfaces but are also characterized by highly directional propagation and negative refraction when traversing an edge separating two surfaces of the crystal. We demonstrate these properties on a rigid material block that incorporates gyroid acoustic channels. These features rely solely on the symmetry of the gyroid, which makes the design easily scalable to other length scales and operating frequencies. Our results pave the way to exploiting the observed topological phases of matter for acoustic materials that have the ability to confine sound according to surface states, and that are characterized by anomalous (negative) refraction as the sound propagates across edges of a solid with gyroid channels. These characteristics may prove useful in enhancing the absorption of incident sound, or in reducing the transmission of sound across an acoustic panel design with the considered gyroid channels tuned for a frequency range of interest."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "summarize topological degeneracies and chiral surface states",
+                                "discuss potential applications of observed topological phases of matter"
+                            ],
+                            "num_characters": 1279,
+                            "outline_medium": [
+                                "summarize topological properties of gyroid acoustic crystal"
+                            ],
+                            "outline_short": [
+                                "summarize topological properties of gyroid acoustic crystal"
+                            ]
+                        },
+                        {
+                            "title": "5. Experimental Section",
+                            "paragraphs": [
+                                "Simulations: The geometry of the gyroid acoustic crystal was constructed by considering the isosurface function in MATLAB with a given lattice constant and F value, and then exporting it as a .stl file to the COMSOL Multiphysics software for the modeling and simulations shown herein. All simulations were conducted in the \u201cPressure Acoustics\u201d module of COMSOL Multiphysics. The gyroid channels were filled with air and only the acoustic wave propagating in the air was considered in the simulation. The density and the acoustic velocity of the air were 1.2 kg\u00b7m\u22123 and 343 m\u00b7s\u22121, respectively. For the bulk dispersion obtained from the unit cell, periodic boundary conditions were applied in all three directions. For the surface dispersion in the surface Brillouin zone, a ribbon structure with 1\u00d71\u00d78 cells was used and periodic boundary conditions were imposed along the x and y directions, while rigid boundary conditions were applied along the z direction. Surface states were identified from the bulk states by inspecting the surface localization of the eigenstates.",
+                                "Experiments: The physical test sample of the gyroid acoustic crystal was 3D-printed through fused deposition modeling using a Markforged printing machine and the Onyx material. The size of this acoustic sample was 120 mm\u00d7120 mm\u00d760 mm. A broadband sound signal with a sweeping frequency of 10-26 kHz was launched from a deep sub-wavelength tube (inner diameter 4 mm, \u22480.2\u03bbacoustic) to experimentally excite the surface states. The distribution of the acoustic pressure field was manually measured through a portable probe microphone (GRAS type 46BD) with a radius of 3.2 mm. In the measurements, the microphone was moved to scan the 2D acoustic surface field point by point, where the scanning steps were given by the lattice spacing of 10 mm. The amplitude and phase of the acoustic pressure field were recorded by a Data Translation DT9857E signal analyzer. The recorded signals were then post-processed within the Matlab environment."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe simulation setup in COMSOL Multiphysics software",
+                                "outline experimental procedure for measuring acoustic pressure field",
+                                "detail post-processing of recorded signals",
+                                "describe 3D printing of physical test sample"
+                            ],
+                            "num_characters": 2008,
+                            "outline_medium": [
+                                "describe simulation setup and parameters",
+                                "describe experimental measurement setup and procedures"
+                            ],
+                            "outline_short": [
+                                "describe simulation and experimental methods"
+                            ]
+                        },
+                        {
+                            "title": "Embodiments NEAR F=0",
+                            "paragraphs": [
+                                "FIG. 8A is a perspective view of a portion of a phononic crystal 800 that is similar to the phononic crystal 100 of FIG. 1 except that the surface between the first and second regions is given by the isosurface of Eqn. 1 with F=0 (see FIG. 3A). While FIG. 8A shows a 1\u00d71\u00d78 portion of the phononic crystal 800, it should be understood that periodic boundary conditions are applied along the x and y directions, and therefore the phononic crystal 800 is three-dimensional. FIG. 8B is a plot of surface dispersion along a circular momentum loop centered at the symmetry point  (see FIG. 5A). Thus, FIG. 8B is similar to FIG. 5E except that it was calculated for the phononic crystal 800 of FIG. 8A (F=0) rather than the phononic crystal 100 of FIG. 1 (F=1.08).",
+                                "FIG. 8C is a plot showing the existence of chiral surface modes at the points (a) and (b) labeled in FIG. 8B. In FIG. 8C, the dark regions identify these chiral surface modes 802 while the lighter gray regions indicate bulk modes 804. The existence of the chiral surface modes 802 demonstrates that the present embodiments can work for values of F near, or equal to 0, and thus also for a true minimal gyroid surface. Accordingly, F=0 in some of the present embodiments.",
+                                "Changes may be made in the above methods and systems without departing from the scope hereof. It should thus be noted that the matter contained in the above description or shown in the accompanying drawings should be interpreted as illustrative and not in a limiting sense. The following claims are intended to cover all generic and specific features described herein, as well as all statements of the scope of the present method and system, which, as a matter of language, might be said to fall therebetween."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe phononic crystal with F=0",
+                                "show surface dispersion along circular momentum loop",
+                                "demonstrate existence of chiral surface modes"
+                            ],
+                            "num_characters": 1740,
+                            "outline_medium": [
+                                "describe phononic crystal with F=0 and its surface dispersion"
+                            ],
+                            "outline_short": [
+                                "illustrate phononic crystal with F=0 and chiral surface modes"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "describe 3D phononic crystal 100",
+                        "illustrate unit cell 200 of phononic crystal 100",
+                        "define lattice constant a",
+                        "determine working frequency range",
+                        "partition unit cell 200 into regions 210 and 220",
+                        "define volume fraction",
+                        "describe solid material of region 220",
+                        "describe material filling region 210",
+                        "define acoustic impedance",
+                        "describe boundary 214",
+                        "illustrate single-gyroid isosurface of Eqn. 1",
+                        "describe volume fraction dependence on F",
+                        "illustrate gyroid surfaces for various F values",
+                        "describe constant mean curvature",
+                        "describe acoustic wave propagation",
+                        "describe ports at boundaries of phononic crystal 100",
+                        "describe 3D phononic crystal 100 shape",
+                        "describe outer layer of panel",
+                        "describe functionality of panel"
+                    ],
+                    "num_characters": 9887,
+                    "outline_medium": [
+                        "describe 3D phononic crystal structure",
+                        "illustrate unit cell with gyroid surface",
+                        "explain volume fraction and solid material properties",
+                        "show plots of single-gyroid isosurface for various F values",
+                        "describe gyroid surface properties for different F ranges",
+                        "illustrate 3D phononic crystal with F=1.08",
+                        "describe acoustic wave propagation within closed channels",
+                        "explain formation of ports at boundaries",
+                        "describe 3D phononic crystal applications"
+                    ],
+                    "outline_short": [
+                        "describe 3D phononic crystal structure",
+                        "illustrate unit cell and gyroid surface",
+                        "explain properties of gyroid surface and volume fraction",
+                        "show plots of single-gyroid isosurface for various values of F"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An acoustic device, comprising:\na three-dimensional phononic crystal having cubic symmetry and comprising:\na first region filled with a first material; and\na second region that is the solid complement of the first region, the second region being filled with a solid material that is different from the first material;\n\nwherein:\na boundary between the first and second regions is shaped as a single gyroid surface with constant mean curvature and not pinched off; and\na second volume of the second region is greater than a first volume of the first region.",
+        "2. The acoustic device of claim 1, the first material comprising a fluid.",
+        "3. The acoustic device of claim 2, the solid material being stiffer than the fluid.",
+        "4. The acoustic device of claim 2, the fluid comprising a gas.",
+        "5. The acoustic device of claim 4, the gas comprising air.",
+        "6. The acoustic device of claim 1, the three-dimensional phononic crystal supporting topological surface states.",
+        "7. The acoustic device of claim 1, the three-dimensional phononic crystal exhibiting a band structure that has at least one degenerate point that is protected by nonsymmorphic symmetry.",
+        "8. The acoustic device of claim 1, the solid material fully filling a solid complement of a unit cell of the three-dimensional phononic crystal.",
+        "9. The acoustic device of claim 1, the gyroid surface being mathematically approximated by the isosurface function:\n\n\nF=cos({tilde over (x)})sin({tilde over (y)})+cos({tilde over (y)})sin({tilde over (z)})+cos({tilde over (z)})sin({tilde over (x)}),\n\nwherein:\n{tilde over (x)}=2\u03c0x/a, {tilde over (y)}=2\u03c0y/a, and {tilde over (z)}=2\u03c0z/a are scaled spatial coordinates along the x, y, and z axes, respectively, of a unit cell of the three-dimensional phononic crystal;\na is a length of the unit cell; and\nF is a constant such that 0\u2264|F|<Fpo, Fpo being the value of F at which the pinch-off regime begins.",
+        "10. The acoustic device of claim 9, the constant F having a value such that 1\u2264|F|<Fpo.",
+        "11. The acoustic device of claim 1, a volume fraction of the three-dimensional phononic crystal being greater than 50% and less than 97.1%.",
+        "12. The acoustic device of claim 1, the solid material comprising plastic, metal, glass, ceramic, polymer, carbon fiber, or resin, or any combination thereof.",
+        "13. The acoustic device of claim 1, wherein:\nthe three-dimensional phononic crystal is bounded by a plurality of external surfaces; and\nthe acoustic device exhibits acoustic negative refraction where two of the plurality of external surfaces meet.",
+        "14. The acoustic device of claim 1, wherein:\nthe three-dimensional phononic crystal is bounded by a first external surface;\nthe acoustic device further comprises an acoustic material bounded by a second external surface; and\nthe second external surface directly contacts the first external surface to form an acoustic interface therebetween.",
+        "15. A method, comprising coupling an acoustic wave into the acoustic device of claim 1 to excite a topological surface state of the three-dimensional phononic crystal.",
+        "16. A method, comprising guiding an acoustic wave along a surface of the acoustic device of claim 1.",
+        "17. A method, comprising energy harvesting with the acoustic device of claim 1.",
+        "18. A method comprising coupling an acoustic wave into the acoustic device of claim 14 to excite a topological surface state of the acoustic interface.",
+        "19. A method comprising guiding an acoustic wave along the acoustic interface of the acoustic device of claim 14."
+    ]
+}

@@ -1,0 +1,115 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce neural networks
+
+## SUMMARY
+
+- describe system for training point cloud processing neural network
+- define point cloud processing task
+- introduce labeled training examples
+- introduce unlabeled point clouds
+- generate pseudo-labels for unlabeled point clouds
+- generate pseudo-elements for unlabeled point clouds
+- generate augmented training data
+- train neural network on augmented training data
+- incorporate techniques into population-based training framework
+- describe advantages of subject matter
+- motivate need for automatic machine-learning framework
+- describe benefits of data augmentation and semi-supervised learning
+- describe flexibility and efficiency of pseudo-element-based data augmentation
+- describe applicability and advantages of provided techniques
+
+## DETAILED DESCRIPTION
+
+- introduce neural network training system
+- describe system components
+- define point cloud processing task
+- describe labeled training examples
+- describe unlabeled point clouds
+- generate pseudo-labels for unlabeled point clouds
+- generate pseudo-elements from pseudo-labels
+- augment labeled training examples with pseudo-elements
+- train neural network on augmented training data
+- describe population-based training framework
+- maintain data for population of training candidates
+- initialize population of training candidates
+- assign hyperparameters to training candidates
+- perform training generations
+- select top-performing training candidates
+- generate pseudo-labels using top-performing candidates
+- generate pseudo-elements from pseudo-labels
+- update training candidates using pseudo-elements
+- mutate training candidates
+- generate augmented training data
+- determine whether to augment background
+- select pseudo background element
+- augment background with pseudo background element
+- determine whether to augment foreground
+- select pseudo bounding box elements
+- augment foreground with pseudo bounding box elements
+- add bounding box information to label
+- align pseudo bounding box elements with ground plane
+- remove colliding points from point cloud
+- apply additional augmentation policies
+- train neural network on augmented training data
+- evaluate neural network performance
+- update training candidate data
+- describe data augmentation example
+- generate pseudo background element
+- generate pseudo bounding box element
+- augment point cloud with pseudo background element
+- augment point cloud with pseudo bounding box element
+- describe process for training neural network
+- obtain labeled training examples
+- obtain unlabeled point clouds
+- generate pseudo-labels for unlabeled point clouds
+- generate augmented training data
+- train neural network on augmented training data
+- describe pseudo-elements
+- describe pseudo background element
+- describe pseudo bounding box elements
+- generate augmented training data
+- select labeled training example
+- determine whether to augment background
+- select pseudo background element
+- replace background element
+- determine whether to augment foreground
+- select pseudo bounding box elements
+- add pseudo bounding box elements
+- apply additional augmentation policies
+- train neural network
+- iterate through training process
+- maintain data specifying training candidates
+- perform training generations
+- obtain labeled training examples
+- obtain unlabeled point clouds
+- select training candidates
+- generate pseudo-labels
+- generate pseudo-elements
+- determine updated network parameters
+- determine updated hyperparameters
+- generate augmented training data
+- train neural network
+- determine updated measure of performance
+- update maintained data
+- describe system configuration
+- describe data processing apparatus
+- describe computer program
+- describe database
+- describe engine
+- describe computer readable media
+- describe user interaction
+- describe machine learning models
+- describe computing system
+- describe client-server relationship
+- describe data transmission
+- describe feature implementation
+- describe claim scope
+- describe operation order
+- describe system module integration
+- describe program component integration
+- describe software product packaging
+- describe claim scope
+

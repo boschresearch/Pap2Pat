@@ -1,0 +1,223 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce natural language processing
+- limitations of conventional NLP devices
+
+## SUMMARY
+
+- motivate conditional graph modification technique
+- summarize structured representation generation
+- describe method for natural language processing
+- describe apparatus for natural language processing
+- describe method for training neural network
+- application of neural network in NLP
+
+## DETAILED DESCRIPTION
+
+- relate to natural language processing
+- introduce conditional graph modification
+- motivate neural network training
+- describe structured representations
+- explain limitations of conventional NLP devices
+- describe human-computer interaction sessions
+- illustrate parsing a single sentence
+- describe updating a previously generated graph
+- motivate seamless multi-turn engagements
+- introduce improved NLP device
+- describe encoding structured representation
+- describe encoding modification expression
+- combine encoded representations
+- generate output structure representation
+- describe graph-based sparse transformer
+- describe cross attention information fusion
+- create large graph modification datasets
+- train models using datasets
+- show example process for providing search results
+- describe user providing search query
+- describe server generating structure representation
+- describe structured representation features
+- describe natural language expression features
+- describe graph generator
+- describe scene graph
+- describe nodes and edges
+- describe database providing search results
+- describe user modifying search query
+- describe server modifying graph
+- describe updated structure representation
+- describe database providing updated search results
+- describe multiple iterations
+- show example system for natural language processing
+- describe user device
+- describe server
+- describe cloud
+- describe database
+- describe processor unit
+- describe memory unit
+- describe input component
+- describe neural network
+- describe graph generator
+- describe search component
+- describe artificial neural network
+- describe recurrent neural network
+- define neural network architecture
+- describe graph encoder
+- explain self-attention architecture
+- detail graph-conditioned sparse transformer
+- describe text encoder
+- explain feature fusion network
+- describe early feature fusion
+- describe late feature fusion
+- explain edge decoder
+- describe node decoder
+- generate target graph
+- describe graph modification task
+- explain node-level RNN
+- describe edge generation
+- detail graph encoder architecture
+- explain sparsely connected transformer
+- describe edge-aware node embedding
+- explain contextualized embeddings
+- describe attention grid
+- explain graph node representations
+- describe text encoder architecture
+- explain semantic alignment
+- describe feature fusion network architecture
+- explain late fusion via gating
+- describe information communication
+- explain gating mechanism
+- describe holistic understanding
+- describe gating mechanism
+- introduce early fusion via cross-attention
+- share parameters of graph and query encoders
+- describe feature fusion network
+- describe transformer encoder
+- describe node-level RNN
+- describe edge decoder
+- describe adjacency matrix style edge decoder
+- describe attentional decoder
+- describe generating edges
+- describe flat edge-level decoder
+- describe scene graph
+- describe parser
+- describe label attention model
+- describe object ontologies
+- describe grounding ontology
+- describe insertion process
+- describe modification query
+- describe target graph
+- describe create data for MGM task
+- describe heuristic algorithm
+- describe scene graph generation
+- describe triplet construction
+- describe graph modification operations
+- describe insert command
+- describe deletion process
+- describe delete operation
+- describe modification query generation
+- describe object substitution process
+- describe substitute operation
+- describe attribute substitution process
+- describe natural language processing
+- receive structured representation
+- receive modification expression
+- generate modified structured representation
+- describe neural network architecture
+- describe graph encoder
+- describe text encoder
+- describe feature fusion network
+- describe edge decoder and node decoder
+- perform search based on modified structured representation
+- introduce process for combining graph features and text features
+- generate structured representation features using graph encoder
+- generate natural language expression features using text encoder
+- combine features using feature fusion network
+- generate nodes using node decoder
+- generate edges using edge decoder
+- generate modified structured representation
+- describe graph encoder architecture
+- describe text encoder architecture
+- describe feature fusion network architecture
+- describe node decoder architecture
+- describe edge decoder architecture
+- describe process for generating modified structured representation
+- describe training process for neural network
+- formulate task as conditional generation task
+- describe log-likelihood function
+- describe node-level and edge-level decoders
+- describe training settings
+- evaluate model performance
+- identify training data
+- generate structured representation features for source structured representation
+- generate natural language expression features for modification expression
+- combine features using feature fusion network
+- generate nodes using node decoder
+- generate edges using edge decoder
+- compare generated nodes and edges to target structured representation
+- update neural network based on comparison
+- describe graph-conditioned, sparsely connected transformer
+- describe standard transformer encoder
+- describe gating mechanism
+- describe early fusion via cross-attention
+- describe node decoder architecture
+- describe edge decoder architecture
+- describe adjacency matrix decoder
+- describe flat edge-level decoder
+- describe training process for neural network
+
+### Evaluation
+
+- create benchmark datasets
+- captioning datasets
+- construct scene graphs
+- generate modified scene graphs
+- leverage human annotators
+- add annotations on top of captions
+- create 200 k scene graphs from MSCOCO
+- create 420 k scene graphs from GCC
+- compare MSCOCO and GCC graphs
+- achieve 8.5% increase in performance
+- define F1 score
+- calculate precision and recall
+- use crowd-sourcing applications
+- obtain diverse modification queries
+- refer to template-based datasets as “synthetic”
+- refer to user-generated contents as “user-generated”
+- face challenges during data collection
+- filter data by removing graphs with disconnected components
+- filter data by removing low-quality instances
+- filter data by removing excessively long descriptions
+- perform user study with 15 testers
+- record score distribution
+- analyze search log
+- create multi-operation version of dataset
+- analyze graph size distributions
+- record percentage of query lengths
+- augment user-generated data with synthetic data
+- up-sample user-generated data
+- mix data distributions
+- compare data augmentation with transfer learning
+- record graph accuracy results
+- use templates for synthetic data
+- consider five baselines for comparison
+- describe “Copy Source” baseline
+- describe “Text2Text” baseline
+- describe “Modified GraphRNN” baseline
+- describe “Graph Transformer” and “DCGCN” baselines
+- configure model in various ways
+- record results of different configurations
+- use two automatic metrics for evaluation
+- calculate precision/recall/F1-score
+- define strict-match accuracy
+- partition synthetic MSCOCO data
+- partition GCC data
+- record results of model and baselines
+- compare performance of different configurations
+- evaluate multiple operations scenario
+- create two datasets for multiple operations
+- train baselines and methods on full training set
+- group test set into four bins
+- record performance of models
+- conclude best performance comes from model with cross-attention, flat-edge decoder, and sparse transformer
+

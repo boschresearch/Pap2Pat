@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+## BACKGROUND ART
+
+## SUMMARY OF THE INVENTION
+
+### Object to be Achieved by the Invention
+
+### Means for Achieving the Object
+
+## EMBODIMENTS FOR CARRYING OUT THE INVENTION
+
+### EXAMPLES
+
+## INDUSTRIAL APPLICABILITY
+

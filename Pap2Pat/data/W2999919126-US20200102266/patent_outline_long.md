@@ -1,0 +1,456 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce brain water homeostasis
+- describe choroid plexus epithelium function
+- discuss hydrocephalus and IVH
+- introduce CCCs and their function
+- describe SPAK and OSR1 kinases
+- discuss WNK-SPAK/OSR1 signaling
+- describe CCC regulation by SPAK/OSR1
+- discuss importance of CCCs in CNS physiology
+- introduce SPAK-regulated CCC-mediated ion transport
+- discuss experimental ischemic cerebral edema
+- describe choroid plexus NKCC1 in hydrocephalus
+- discuss genetic inhibition of choroid plexus SPAK
+- highlight need for CCC-modulating compounds
+
+## SUMMARY
+
+- introduce N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphenyl)ben
+- describe compound structure
+- disclose pharmaceutical compositions
+- describe method for treating hypoxic brain injury
+- describe method for modifying SPAK kinase function
+- describe method for modifying SPAK kinase function in cells
+- disclose kits for treating hypoxic brain injury
+- describe kit components
+- highlight objects of the invention
+- describe advantages of the invention
+- discuss embodiments of the invention
+- highlight scope of the invention
+
+## DETAILED DESCRIPTION
+
+- introduce detailed description
+- clarify scope of invention
+- discuss statutory class
+- clarify method steps order
+- incorporate references by reference
+
+### A. Definitions
+
+- define singular forms
+- define ranges with "about"
+- define endpoints of ranges
+- define parts by weight
+- define weight percent
+- define "optional" or "optionally"
+- define "subject"
+- define "treatment"
+- define "prevent" or "preventing"
+- define "diagnosed"
+- define "administering" and "administration"
+- define "treating"
+- define "preventing"
+- define "contacting"
+- define "effective amount" and "amount effective"
+- define IC50
+- define "comprising"
+- define prodrugs
+- define derivatives
+- define pharmaceutically acceptable salts
+- define acid addition salts
+- define salts derived from organic acids
+- define examples of pharmaceutically acceptable salts
+- define optical isomers and stereo-isomers
+- define leaving group
+- define substituted
+- define permissible substituents
+- define heteroatoms
+- define substitution
+- define stable compound
+- define individual substituents
+- define further optional substitution
+- define alkyl
+- define lower alkyl
+- define substituted alkyl
+- define cycloalkyl
+- define heterocycloalkyl
+- define polyalkylene group
+- define alkoxy
+- define alkenyl
+- define cycloalkenyl
+- define heterocycloalkenyl
+- define alkynyl
+- define cycloalkynyl
+- define heterocycloalkynyl
+- define aryl
+- define heteroaryl
+- define biaryl
+- define aldehyde
+- define amine
+- define alkylamino
+- define dialkylamino
+- define carboxylic acid
+- define ester
+- define polyester
+- define ether
+- define polyether
+- define halide
+- define azide
+- define nitro
+- define nitrile
+- define silyl
+- define sulfo-oxo
+- define sulfonyl
+- define sulfone
+- define sulfoxide
+- define thiol
+- describe R1, R2, R3, Rn
+- describe optionally substituted moieties
+- define stable
+- list suitable monovalent substituents
+- describe R°
+- list suitable divalent substituents
+- describe R*
+- describe R†
+- define organic residue
+- define radical
+- describe organic radicals
+- describe inorganic radicals
+- discuss isomers
+- discuss stereoisomers
+- discuss optical activity
+- discuss enantiomers
+- discuss racemic mixtures
+- discuss chiral centers
+- discuss absolute configuration
+- discuss Cahn-Inglod-Prelog system
+- discuss depiction of bonds
+- discuss wedge and dash notation
+- discuss assignment of R or S configuration
+- conclude definitions
+- define enantiomers and racemic mixtures
+- describe methods for resolving enantiomers
+- define enantiomeric excess
+- describe designation of absolute configuration
+- discuss diastereoisomers
+- describe separation of diastereoisomers
+- discuss isotopically-labeled compounds
+- describe preparation of isotopically-labeled compounds
+- discuss prodrugs and pharmaceutically acceptable salts
+- describe solvates and hydrates
+- define co-crystals
+- discuss polymorphic forms
+- describe representation of compound structures
+- discuss independent substituents
+- describe alternative representations of compound structures
+- discuss commercial availability of materials
+- describe synthesis of compounds using known techniques
+- discuss order of steps in methods
+- describe components and compositions of the invention
+- discuss combinations and permutations of materials
+- describe functions of compositions
+- discuss structural requirements for functions
+- describe related structures that perform the same function
+- discuss achievement of the same result
+- conclude definitions and descriptions
+
+### B. Compounds
+
+- introduce compounds for treating SPAK kinase function disorders
+- describe modification of SPAK kinase function
+- describe inhibition of SPAK kinase function
+- describe use in inhibiting SPAK kinase function in a mammal
+- describe use in inhibiting SPAK kinase function in at least one cell
+- describe use in treating hypoxic brain injuries
+- contemplate optional further substitution of derivatives
+- contemplate optional omission of derivatives
+- describe provision of compounds by disclosed methods
+- describe employment of compounds in disclosed methods
+- define structure of compounds
+- describe R1 groups
+- describe R2A, R2B, R2C, and R2D groups
+- describe R20 groups
+- describe R21a and R21b groups
+- provide example compounds
+- provide additional example compounds
+- provide further example compounds
+- provide yet further example compounds
+- provide prophetic compound examples
+- describe prophetic compounds as inhibitors of SPAK kinase function
+- describe assay methods for determining activity
+- provide prophetic compounds with specific structures
+- provide additional prophetic compounds with specific structures
+
+### C. Pharmaceutical Compositions
+
+- define pharmaceutical compositions
+- pharmaceutical composition comprising at least one disclosed compound
+- pharmaceutical composition comprising a therapeutically effective amount
+- pharmaceutical composition comprising a prophylactically effective amount
+- pharmaceutical composition comprising a pharmaceutically acceptable carrier
+- examples of suitable aqueous and nonaqueous carriers
+- examples of suitable powders
+- examples of suitable suspensions
+- examples of suitable emulsions
+- pharmaceutical composition administered to a mammal
+- pharmaceutical composition administered to a human
+- pharmaceutical composition administered to a patient
+- pharmaceutical composition administered following identification of need for treatment
+- pharmaceutical composition administered following diagnosis of cancer
+- pharmaceutical composition administered following diagnosis of fibrotic disorder
+- pharmaceutical composition administered following diagnosis of need for immunotherapy
+- pharmaceutical composition comprising disclosed compounds and other therapeutic ingredients
+- pharmaceutical composition suitable for oral administration
+- examples of oral formulations
+- pharmaceutical composition suitable for aerosol administration
+- examples of aerosol formulations
+- pharmaceutical composition suitable for parenteral administration
+- examples of parenteral formulations
+- pharmaceutical composition suitable for topical administration
+- examples of topical formulations
+- pharmaceutical composition suitable for rectal administration
+- examples of rectal formulations
+- pharmaceutical composition suitable for vaginal administration
+- examples of vaginal formulations
+- method of exogenously administering a compound
+- administration to an animal, particularly a mammal, and more particularly a human
+- administration of a therapeutically effective amount
+- administration of a compound for treatment of patient having a predisposition
+- dosage and administration regimen
+
+### D. Methods of Making the Compounds
+
+- methods of making N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphenyl
+- benzamide compounds
+- compounds prepared by several methods outlined
+- use of protecting groups
+- preparation of known compounds found in the literature
+- synthetic methods described
+- pharmaceutical composition comprising a therapeutically effective amount
+
+### E. Methods of Using the Compounds
+
+- introduce compounds and pharmaceutical compositions
+- describe treating or controlling conditions or disorders associated with SPAK kinase function
+- specify hypoxic brain injuries due to various causes
+- administer compounds and pharmaceutical compositions to subjects
+- define subjects as vertebrates, including mammals and humans
+- diagnose subjects with need for treatment of cancer, immune dysfunction, or fibrotic disorder
+- describe methods of administration
+- specify dosage and frequency of administration
+- describe therapeutically effective amount or dosage of compound
+- adjust dosage based on individual requirements
+- describe treatment methods
+- treat hypoxic brain injuries associated with SPAK kinase function
+- administer effective amount of compound to subject
+- specify structure of compound
+- describe hypoxic brain injury causes
+- identify subject in need of treatment
+- administer agent associated with treatment of hypoxic brain injury
+- specify examples of agents associated with treatment
+- administer compound and agent sequentially or simultaneously
+- co-formulate or co-package compound and agent
+- describe methods for modifying SPAK kinase function in subject
+- administer effective amount of compound to subject
+- specify structure of compound
+- describe modifying SPAK kinase function
+- identify subject in need of modifying SPAK kinase function
+- describe methods for modifying SPAK kinase function in at least one cell
+- contact cell with effective amount of compound
+- specify structure of compound
+- describe modifying SPAK kinase function in cell
+- identify cell as mammalian or human
+- describe use of compounds
+- use compound for treatment of hypoxic brain injury
+- use compound for modification of SPAK kinase function
+- use compound for inhibition of SPAK kinase function
+- describe manufacture of medicament
+- combine compound with pharmaceutically acceptable carrier or diluent
+- describe administration to animal, particularly mammal or human
+- specify dosage and frequency of administration
+- describe treatment of chronic conditions or disease states
+- describe kits
+- combine compound with agent associated with treatment of hypoxic brain injury
+- include instructions for administering compound
+- include instructions for treating hypoxic brain injury
+- specify examples of agents associated with treatment
+- co-formulate or co-package compound and agent
+- describe preparation of kits
+- describe use of kits
+
+### F. Examples
+
+- introduce dual CCC modulator ZT-1a
+- describe ZT-1a-mediated SPAK inhibition
+- summarize effects of ZT-1a on CSF hypersecretion and cerebral infarction
+- provide general chemistry experimental methods
+- outline general synthesis of compounds 1a-1j
+- prepare 5-chloro-2-hydroxybenzoyl chloride (I-1a)
+- synthesize 5-chloro-N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2
+- synthesize N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphenyl)-
+- synthesize N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphenyl)
+- synthesize 2-amino-N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-m
+- synthesize N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphen
+- synthesize N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphen
+- synthesize 3,5-dichloro-N-(5-chloro-4-((4-chlorophenyl)(cyano)m
+- synthesize N-(5-chloro-4-((4-chlorophenyl)(cyano)methyl)-2-methylphen
+- provide NMR and MS data for compounds 1a-1g
+- provide HRMS data for compounds 1a-1g
+- describe compound synthesis
+- describe compound synthesis
+- describe compound synthesis
+- describe compound synthesis
+- list reagents and materials
+- describe plasmid preparation
+- describe protein expression and purification
+- describe SPAK kinase assays
+- describe IC50 determination
+- describe fluorescence polarization
+- describe peptide labelling
+- describe pharmacodynamic study
+- describe animal treatment
+- describe tissue collection
+- describe cell culture
+- describe transfections and stimulations
+- describe lysis and protein concentration
+- describe immunoblotting
+- describe phospho-antibody immunoprecipitation
+- describe data analysis
+- describe 86Rb+ uptake assay in HEK293 cells
+- describe model of post-hemorrhagic hydrocephalus
+- quantify rates of CSF production and intracerebroventricular drug administration
+- describe tissue harvest and choroid plexus isolation
+- describe middle cerebral artery occlusion model
+- measure cerebral blood flow
+- measure brain infarction volume and hemispheric swelling
+- evaluate neurological deficit score
+- perform corner test
+- perform adhesive removal test
+- perform DTI of ex-vivo brains
+- prepare brain membrane and cytosolic protein fractions
+- describe animal preparation
+- induce focal ischemic stroke and reperfusion with transient middle cerebral artery occlusion
+- determine ZT-1a pharmacokinetic properties in sham control and tMCAO ischemic stroke normotensive mice
+- induce Ang II-mediated hypertension and measure blood pressure
+- perform focal cerebral ischemia with permanent middle cerebral artery occlusion
+- administer drug treatment in HTN mice
+- measure brain infarction volume and hemispheric swelling in HTN mice
+- evaluate neurological function tests in HTN mice
+- describe 86Rb+ uptake assay in HEK293 cells with mutant forms of full-length flag-tagged human KCCs
+- describe model of post-hemorrhagic hydrocephalus with blood infusion into the right lateral ventricle
+- quantify rates of CSF production and intracerebroventricular drug administration with ZT-1a infusion
+- describe tissue harvest and choroid plexus isolation from rat brains
+- describe middle cerebral artery occlusion model with silicon-coated nylon filament
+- measure cerebral blood flow using laser speckle contrast analysis system
+- measure brain infarction volume and hemispheric swelling with TTC staining
+- evaluate neurological deficit score with grading system
+- perform corner test to assess MCAO-induced sensorimotor abnormalities
+- perform adhesive removal test to measure somatosensory deficits
+- perform DTI of ex-vivo brains with region of interests drawn for the ipsilateral and contralateral cortex
+- prepare brain membrane and cytosolic protein fractions with homogenization buffer
+- describe animal preparation with C57BL/6J mice
+- induce focal ischemic stroke and reperfusion with transient middle cerebral artery occlusion in normotensive mice
+- determine ZT-1a pharmacokinetic properties in sham control and tMCAO ischemic stroke normotensive mice with LC-MS/
+- induce Ang II-mediated hypertension and measure blood pressure with tail-cuff method
+- perform focal cerebral ischemia with permanent middle cerebral artery occlusion in saline-infused control and Ang II-mediated HTN mice
+- administer drug treatment in HTN mice with ZT-1a or vehicle
+- measure brain infarction volume and hemispheric swelling in HTN mice with TTC staining
+- evaluate neurological function tests in HTN mice with grading system
+- describe overall experimental design and procedures
+- introduce examples
+- describe statistical analysis
+- motivate restoration of brain water homeostasis
+- identify ZT-1a as a novel kinase-cotransporter modulator
+- describe design and synthesis of ZT-1a
+- illustrate hybrid design strategy
+- compare ZT-1a with existing SPAK inhibitors
+- describe SPAK activity monitoring
+- illustrate ZT-1a dose-dependent inhibition
+- describe Western blot quantitation
+- illustrate concentration-response experiments
+- describe kinase selectivity assessment
+- illustrate non-ATP-competitive inhibition
+- describe kinase profiling results
+- disrupt SPAK interaction with WNK
+- illustrate crystallographic analysis
+- describe fluorescence polarization studies
+- illustrate co-immunoprecipitation of WNK1 with SPAK
+- describe MO25α activation of SPAK kinase
+- introduce ZT-1a
+- inhibit SPAK/OSR1 phosphorylation
+- reduce NKCC1 phosphorylation
+- reduce KCC2 phosphorylation
+- promote KCC-dependent Cl- extrusion
+- describe ZT-1a effects on CCC phosphorylation
+- show ZT-1a reduces SPAK/OSR1 phosphorylation
+- show ZT-1a reduces NKCC1 phosphorylation
+- show ZT-1a reduces KCC2 phosphorylation
+- describe KCC2 activity assay
+- show ZT-1a activates KCC2
+- describe SPAK inhibitory effects of ZT-1a
+- show ZT-1a reduces NCC phosphorylation
+- show ZT-1a reduces NKCC1 phosphorylation
+- show ZT-1a reduces KCC2 phosphorylation
+- describe ICV delivery of ZT-1a
+- show ZT-1a reduces SPAK phosphorylation
+- show ZT-1a reduces NKCC1 phosphorylation
+- show ZT-1a reduces KCC4 phosphorylation
+- describe CSF hypersecretion assay
+- show ZT-1a reduces CSF hypersecretion
+- describe post-stroke administration of ZT-1a
+- show ZT-1a reduces infarct volume
+- show ZT-1a reduces cerebral hemispheric swelling
+- introduce ZT-1a neuroprotection
+- evaluate sensorimotor function deficits
+- describe neurological deficit scores
+- analyze corner test results
+- evaluate adhesive contact and removal tests
+- show neurological deficit scores and corner test results
+- inhibit SPAK-NKCC1 phospho-activation
+- test SPAK/OSR1, NKCC1, and KCC3 phosphorylation
+- analyze immunoblots of phospho-SPAK/OSR1, phospho-KCC3, and phospho-NKCC1
+- show densitometry analyses of immunoblots
+- exhibit persistent protection of grey and white matter
+- conduct ex vivo MRI studies
+- analyze T2-weighted MRI and fractional anisotropy maps
+- show representative images of directionally encoded color and fractional anisotropy maps
+- compare neuroprotective efficacy of Closantel and WNK463
+- administer Closantel and WNK463
+- analyze infarct volume and hemispheric swelling
+- show superiority of ZT-1a to WNK463 and Closantel
+- introduce SPAK kinase inhibitor ZT-1a
+- describe ZT-1a's neuroprotective effects
+- discuss problems with directly targeting NKCC or KCCs
+- focus on upstream SPAK kinase
+- introduce STOCK1S-50699 and STOCK2S-26016
+- discuss in vitro studies of STOCK1S-50699 and STOCK2S-26016
+- introduce Closantel as a candidate drug
+- discuss ATP-independence of SPAK inhibition by Closantel
+- design and synthesize a new focused chemical library
+- screen and characterize ZT-1a as a SPAK inhibitor
+- compare ZT-1a to existing SPAK inhibitors
+- discuss post-stroke administration of Closantel and WNK463
+- discuss adverse effects of Closantel and WNK463
+- summarize ZT-1a's neuroprotective effects and potential
+- introduce CSF production
+- describe NKCC1 role in CSF production
+- summarize IVH-induced hypersecretion of CSF
+- motivate ZT-1a as a novel pharmacological treatment
+- introduce ZT-1a as a SPAK kinase inhibitor
+- describe ZT-1a's effect on CCCs
+- summarize ZT-1a's therapeutic potential
+- introduce therapeutic application of ZT-1a
+- describe ZT-1a's brain penetration in normotensive mice
+- summarize ZT-1a's effect on ischemic stroke in male and female mice
+- describe Ang II-mediated HTN mice model
+- summarize ZT-1a's effect on infarct volume and hemispheric swelling
+- describe post-stroke administration of ZT-1a
+- summarize ZT-1a's effect on neurological deficits
+- describe cylinder test
+- describe foot fault test
+- describe adhesive contact and removal tests
+

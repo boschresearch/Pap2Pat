@@ -1,0 +1,340 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+1. Field of the Invention
+
+The invention relates to field of whole-genome sequencing, and more particularly to a whole-genome sequencing method based on DNA cloning mixing pool.
+
+2. Description of the Related Art
+
+Currently, there are two types of whole-genome sequencing strategies: clone-by-clone (CBC) and whole-genome shotgun sequencing (WGS).
+
+The strategy of CBC includes constructing Genetic Map and Physical Map. The constructing of physical map is time-consuming, laborsome, and requires a lot of materials. It is the most complicated step in the whole sequencing process. Therefore, the application of such a whole-genome sequencing strategy is greatly restricted.
+
+The WGS is simple and rapid and does not need preparing physical map, especially with the continuous development of next-generation sequencing technologies (NGS), the method is increasingly popular. However, WGS method has the following disadvantages: the read length of the sequence is too short, the calculation during sequence assembly is too complex and difficult, and the assembled sequence contains lots of gaps which are very difficult to fill up. In addition, it is hard to position the obtained scaffold on chromosomes and determine the relative positions thereof in the absence of reference sequences.
+
+To fully utilize the advantages and avoid disadvantages, other methods are developed based on the two strategies. For example, the Short-tag Pooled Genomic Indexing, ST-PGI, and the End-sequence profiling, ESP.
+
+A common precondition for using ST-PGI and ESP is that a high quality whole-genome of the same or similar species is provided as a reference sequence to position sequences and clones. However, the fact is that: not all species have respective high quality whole-genome sequence as reference.
+
+## SUMMARY OF THE INVENTION
+
+In view of the above-described problems, it is one objective of the invention to provide a whole-genome sequencing method. Based on clone DNA mixing pool, the method can rapidly and accurately accomplish whole-genome sequencing while reducing cost effective. The method comprises the following steps:
+
+1) extracting a whole-genome DNA and constructing a BAC library;
+
+2) constructing BAC clone mixing pools;
+
+3) extracting DNA of the BAC clone mixing pools;
+
+4) performing pair-end sequencing for the DNA extracted from the BAC clone mixing pools in 3) by NGS sequences;
+
+5) scanning sequences of each of the mixing pools to obtain a feature sequence set and a k-mer set of each mixing pool;
+
+6) analyzing a corresponding feature sequence set and a corresponding k-mer set of each clone according to the feature sequence set and the k-mer set of the mixing pools;
+
+7) constructing clone contigs according to the feature sequence sets of the clones;
+
+8) dividing the k-mer sets of the clones into small k-mer sets by the clone contigs and positioning the small k-mer sets onto the clone contigs;
+
+9) assembling the NGS sequences in the mixing pool of 3) to yield sequence contigs;
+
+10) positioning the sequence contigs onto the clone contigs, using sequenced paired-end information to connect the sequence contigs and determining directions thereof, to obtain sequences of the clone contigs; and
+
+11) determining relative positions and directions of the clone contigs by molecular markers, and connecting the sequences of clone contigs as whole stripe of chromosome sequences to obtain whole-genome sequences;
+
+in which, algorithms for analyzing the feature sequence sets and the k-mer sets of the clones are as follows:
+
+a total number of clones of a BAC library of a certain species is defined as a, and a total number of the constructed mixing pools is defined x, then:
+
+the k-mer set of the mixing pool at a κ-th dimension having an index of λ is expressed as: P(κ,λ);
+
+the k-mer sets of the mixing pools comprising a given clone are expressed as: {P(δ)|δ<m, P(δ)εP};
+
+an intersection set of k-mer sets of the mixing pools comprising the give clone, namely an initial k-mer set of the given clone, is expressed as: Cτ=∩δ=1x=P(δ);
+
+an excluded union k-mer set (EUKS) of the given clone in the mixing pools is expressed as: CU(κ,τ)=∪ν (ν≠τ,0<ν<a);
+
+an intersection set of all excluded union k-mer sets (EUKS) of the given clone is expressed as: CIτ=∩κ=0xCU(κ,τ; and
+
+a final k-mer set (FKS) of the given clone is: CF=Cτ−CIτ.
+
+More specifically, the detailed algorithm for k-mer set analysis is as follows: since the feature sequence set is a sub-set of the k-mer set, the following algorithm is totally suitable for the feature sequence set.
+
+I. Basic Operation of Sets
+
+For two sets A and B, basic operations concerned in this method include:
+
+A∩B: its result set is the elements in both Set A and Set B, namely intercross set of A and B.
+
+A∪B: its result set is the elements either in Set A or Set B, namely union of A and B;
+
+A−B: its result set is the elements in Set A but not in Set B, namely difference set of A and B;
+
+∪i=mnAi: it refers to Am∪Am+1∪Am+2 . . . An−2∪An−1∪An;
+
+∩i=mnAi: it refers to Am∩Am+1∩Am+2 . . . An−2∩An−1∩An.
+
+The above defined sets exclude repetitive elements, namely every element in the set only appears once. However, it still needs to observe the times of element appearing during the computing process. The set that can record appearing times at the same is defined as Frequency Set or Key-value Set (KV-set). For frequency sets A and B, basic operations thereof are as follows:
+
+1. A+B: it represents a union for elements in both the frequency set A and the frequency set B; if an element appears in both A and B, its frequency shall be a sum of its frequency in A and B.
+
+2. A−B: it represents elements in the frequency set A, but not in the frequency set B. If an element appears in both A and B, its frequency shall be a difference obtained by minus frequency in B from A; if this difference is smaller or equals to 0, the element shall be eliminated from a result frequency set.
+
+3. Key (A): it represents all elements in the frequency set A.
+
+II. Analysis of the Feature Sequence Sets and K-Mer Sets of Clones
+
+After the mixing pools are sequenced, scan the sequence of the mixing pools to get the feature sequence set (the definition refers to detailed embodiments of the invention “scan sequencing results and get the feature sequence sets of the mixing pools”) and the k-mer set (the definition refers to detailed embodiments of the invention “scan sequencing results and get the k-mer set of the mixing pools”) of each mixing pool, then calculate the feature sequence and the k-mer set of each clone. Among them, the calculation of the feature sequence and the k-mer set of the clone is the core part of the whole method.
+
+Taking the calculation of the k-mer sets of the clone as an example, assume that put all the clones into a cube and construct mixing pools of clones, the dimension of the mixing pools is x (x>0); the number of mixing pools of each dimension is n (n>0), the total number of clones is a (a>0). The k-mer set of the mixing pool at the κ-th dimension with the index of λ is expressed as P(κ,λ) (κ<x, λ<n), a set after combination of the k-mer sets in all the mixing pools is a complete set of k-mer set of the genome sequence, which is expressed as ∪=κ=1,λ=1κ=x,λ=nP(κ,λ), namely a union set of the k-mer seta of all the mixing pools.
+
+For the x mixing pools, the same number of clones are contained. Assume that the k-mer set of a given mixing pool is {P(δ)|δ<m, P(δ)εP}, the k-mer set of a clone jointly confirmed by a plurality of mixing pools is Cτ=∩δ=1xP(δ) which is called the initial k-mer set (IKS) of the given clone. Cτ (0<τ<a) means the IKS of the clone with the index τ.
+
+For a given clone in a certain mixing pool, calculate the union set of the IKS of all other clones excluded from the given clone in the mixing pool CU(κ,τ)=∪ν=0aCν (ν≠τ,0<ν<a). CU(κ,τ) means the excluded union set of the clone with the index of τ in the clone mixing pool at κ—the dimension with the index τ. The resulted union set is called as an excluded union k-mer set (EUKS) of the given clone. Then calculate an intersection of all the EUKS of the given clone CIτ=∩κ=0xCU(κ,τ), and finally calculate the final k-mer set (FKS) of the certain clone CF=Cτ−CIτ.
+
+According to the definition of the feature sequence and the k-mer, it is known that in case of the same length, the feature sequence set is a subset of the k-mer set. Thus, the calculation of a final feature sequence set (FFS) is the same as that of the final k-mer set. As shown in FIG. 8, 8 clones are obtained in the same cube, which is the simplest case of the clone number.
+
+For the simplest case considered here, assume that there are eight clones A1-A8 (the clone and the real k-mer set of the clone are represented by the same symbol, for example, A1 represents the clone A1 as well as the real k-mer set of A1), and put them in one cube (FIG. 8). Then construct three-dimensional clone mixing pool (namely PX, PY, PZ in the mixing pool construction strategy), so as to get 6 mixing pools as P1 TO P6. According to the position of clones in the cube, the clones included in each mixing pool are as follows:
+
+P1={A1,A2,A5,A6} P2={A1,A2,A3,A4} P3={A3,A4,A7,A8}
+
+P4={A5,A6,A7,A8} P5={A1,A3,A5,A7} P6={A2,A4,A6,A8}
+
+The mixing pool P1 contains clones A1, A2, A5 and A6, similar to the other mixing pools.
+
+Assume that in order to obtain the final k-mer set of clone A1, the following steps are conducted:
+
+1. Carry out high throughput sequencing for all the mixing pools, scan the sequencing results to get the k-mer sets B1-B6 corresponding to P1-PP6.
+
+2. According to the information of the mixing pools containing a certain clone, calculate the intersection of the mixing pools. If clone A1 is in P1, P2 and P5, the intersected k-mer set of A1 is A1=B1∩B2∩B5. Intersected k-mer set of other clones are calculated in the same way and listed as follows:
+
+A1=B1∩B2∩B5A2=B1∩B2∩B6A3=B2∩B3∩B5A4=B2∩B3∩B6
+
+A5=B1∩B4∩B5A6=B1∩B4∩B6A7=B3∩B4∩B5A8=B3∩B4∩B6
+
+3. Calculate the union set of the intersected k-mer set of all clones in addition to A1 in each mixing pool A1 locates to get the excluded union k-mer set of clone A1 in each mixing pool:
+
+B1′=A2∪A5∪A6B2′=A2∪A3∪A4B5′=A3∪A5∪A7
+
+4. Calculate the intersection of the excluded union k-mer set of the clone A1 obtained from the last step:
+
+A1−=B1′∩B2′∩B5′
+
+5. The intersected k-mer set of A1 obtained in step 2 minuses the intersection of the last step, to get the final k-mer set of clone A1:
+
+A1˜A1−A1−
+
+The above process can be represented by graphs. Assume that the k-mer of all the clones A1-A8 (FIG. 9) is represented by a circle and the overlapped part represents the co-owned k-mer. Since all the clones come from the same BAC library, they all contain the k-mer which is a vector to construct the library, namely as the part of the center circle. The more overlap between the circle and the circle, the more same k-mer the two clones have.
+
+The following uses the mutual overlap of figures or excluded calculation to explain how to calculate the final k-mer set of clone A1. 6 mixing pools constructed by 8 clones are shown FIG. 10A, and clones contained in each mixing pool are obtained correspondingly. Then calculate the intersection of the k-mer set of every three mixing pools, such as A1 is the intersection result of the mixing pool P1, P2 and P5, and all the calculation results of the 8 clones are illustrated in FIG. 10B. The part with the deepest color is the intersection part of three mixing pools. For clone A1 existed in the mixing pool P1, P2 and P5, respectively calculate the union of k-mer set of all the other clones in addition to A1 in P1, P2 and P5, to obtain union sets P1′, P2′ and P5′ excluded from A1, as shown FIG. 10C. Then calculate the intersection A1′ of P1′, P2 and P5′, as shown in FIG. 10D. Finally the original k-mer set of A1 minuses A1′ to get the final k-mer set A1˜ of A1, as shown in FIG. 10E. The dark color part in the figure is the final k-mer set of A1.
+
+Through figure calculation, it can be directly seen that the final k-mer set of A1 is not the complete real k-mer set (RKS) of A1, some k-mers are excluded from the real k-mer set, but the retained k-mers are the elements in the real k-mer set.
+
+After the above calculation, A1˜ is the final k-mer set of clone A1, and calculation of the final k-mer set of clones A2-A8 are conducted in the same way.
+
+In the above example, when calculating the intersection of the k-mer set of the mixing pool to obtain the k-mer set A1 of clone A1, if the real k-mer set of clone A6, A4 and A7 contains common k-mers, the mixing pool P1, P2 and P5 also contain the common k-mers. When computing A1, the k-mer will also be assigned to A1. But in fact, the common k-mers of the three clones does not belong to clone A1, which introduces the false k-mers in A1. The false k-mers need to be removed, so step 3-5 are needed. If the real k-mer set of A1 and the real k-mer sets of A6, A4 and A7 have the common k-mers, the common k-mer also will appear in B1′, B2′ and B5′, namely A1—obtained by intersecting the three sets will also contain the k-mers. After the calculation of step 5, the k-mers will be removed from A1, that is, the real k-mers are removed from A1. Therefore from step 3-5, when removing the false k-mers, some real k-mers are also removed. Though the final k-mer set of clone obtained through the above calculation will lose some k-mers compared to the real k-mer set of clone, the elements in the final k-mer set all belong to the real k-mer set, that is, it does not contain the false elements.
+
+The premise of the above derivation is in the ideal case that the sequence of all the clones in each pool can be detected, the k-mers of each clone can also be detected, and there is no sequence error. But in fact, due to the influence of the experimental conditions, sequencing errors and the randomness of sequencing, the ideal situation is impossible to achieve. So, A1 cannot contain all the real k-mers belonging to C1. Similarly, the k-mer set of other clones cannot contain all of their real k-mers. Therefore it will lead to that BP will lose some k-mers belonging to the mixing pool P1, and B2′ and B5′ in the same way will lose some k-mers belonging to P2 and P5 respectively. When compute the intersection of B1′, B2′ and B5′ to get A1−1, A1− will lose some k-mers. When the missing k-mers belong to A1, but do not belong to the real k-mer of P1, these errors will be retained in the final k-mer set A1˜ of P1, that is, the false positive is introduced in A1˜. For the introduced false k-mer set due to sequencing errors, before analyze the k-mer set of clones, it is required to use the frequency of k-mer appeared in the k-mer set of the mixing pool to filter. That is, if the occurrence of a certain k-mer in the set is less than a certain value, it is considered that the k-mer is introduced due to sequencing errors, so as to remove most of the false k-mers in the k-mer set of the mixing pool. Filter frequency is related to sequencing depth and sequencing errors. The greater sequencing depth is, the more sequencing errors are, and the greater filter frequency is. If the sequencing error is less than 3%, the sequencing depth is 20 times, and the filter frequency selects 1, which can filter most of the false k-mer.
+
+Taking into account the introduction of false positive of the final k-mer set of clones, it is needed to increase the sequencing depth in order to detect the real k-mer contained in each hybrid pool as much as possible. As far as possible exclude the false positive in the final k-mer set. When calculate the excluded union set of specific clones, balance the union set, which is called as balancing the k-mer set of mixing pools.
+
+III. Balance the Feature Sequence Set and K-Mer Set of the Mixing Pool
+
+Suppose that there are n clones in a mixing pool. Put the elements in the intersected set of all the clone k-mers in the mixing pool in one KV-set, the frequency of all the elements is 1. When calculate the union set of the intersected set of clone k-mers (step 3 in the above example), calculate the sum of the KV-set of all clones in the mixing pool to get the KV-set of the mixing pool. Then compare the key in KV-set of mixing pool and the elements in the original k-mer set of mixing pool, add the elements included in the original k-mer set but not in KV-set into KV-set, set the frequency of the newly added key as 2. The KV-set obtained in this way is called a sum KV-set of the mixing pool.
+
+If one clone is in this mixing pool, construct a KV-set C according to the intersected set of the clone k-mers. The elements in C are the elements in the intersected set of clone k-mers. Set the frequency of all the elements as 1. Assume that the sum KV-set of the mixing pool is P, P minuses C, namely P′=P−C, then take the key set Key (P′) from P′ as the union set of the mixing pool to exclude the given clone. For the above example, that is B1′, B2′ and B5′ of the k-mer set of B1, B2 and B5 after excluding A1.
+
+On the integration of sequence positioning and physical map, more detailed algorithm is as follows:
+
+1) Segmentation of the Clone Contigs
+
+The k-mer sets of the clones are segmented into blocks according to relative positions of the clones in the clone contigs. Assuming that two clones belongs to a same contig and overlap with each other, set A represents the k-mer set of one clone, and set B represents the k-mer set of the other clone, then the two k-mer sets are divided into three sub sets, that is, a common k-mer set (A∩B), a specific k-mer set of A (A−B), and a specific k-mer of B(B−A). The relative position of the three k-mer sets are determined according that the common k-mer set is located between the two specific k-mer sets. According to this algorithm, it is possible to segment all the clone k-mer sets in each clone contig from the end into smaller sub sets according to their relative position, and the relative position of these sub sets is determined (As shown in FIG. 7).
+
+2) Sequence Positioning and Integration
+
+NGS sequences of the mixing pools are respectively assembled by a short sequence assembly software (such as velvet), assembly results are then merged and further assembled by a long sequence assembly software (such as PCAP) to get sequence contigs. Each sequence contig is divided into k-mer sets, intersection between the k-mer sets divided from the sequence contigs and the k-mer sets of all the blocks are computed, and blocks with a maximum number of intersection elements are obtained thereby locating the sequence contigs onto the blocks of the clone overlapping area (9 sequences from seq_1 to seq_9 shown in FIG. 7 are distributed to the relevant small blocks). In case the sequence located onto the same clone contig comprises multiple of overlapped regions, the overlapped sequences are required to be assembled and merged again, and a resulting sequence is then re-positioned.
+
+Use double end comparison software (such as Bowtie2) to carry out double end comparison for NGS sequences of all the mixing pools and the positioned sequences (shown in FIG. 7, four pairs of double end from PE1 to PE4 are highly matched to the relative sequence). If the two sequences and the double end of a certain sequence are highly matched (such as identity value ≧97%), the two sequences are positioned in the same clone contig and the positioned contig block is in a certain range, then it is considered that the two sequences can be connected together. According to the sequencing library fragment length and the comparison results of double end, calculate the gap length between them, and use “N” to fill the gap. Meanwhile according to the relative position of the block of two sequences, determine the direction of the sequence after connection (in FIG. 7, seq_4 and seq_5 can be connected by two ends of PE2, expressed as seq_4-seq_5. Seq_4 and seq_5 are positioned in block bin_4 bin_5 respectively, so the direction of the sequence seq_4-seq_5 after connection can be determined). If a connection and other sequences cannot be connected by double end sequence, then compare the decomposed k-mer set and the k-mer set of the adjacent block. If it has a certain intersection with the k-mer set of the adjacent block, it can position the junction of the two blocks so as to determine its direction (in FIG. 7, seq_3 is positioned in the small block bin_3, also has larger intersection with bin_4, so it can determine the direction of seq_3 according to its intersection with the k-mer set of the two small block). Finally, according to the relative position of these sequences in blocks, connect all the positioned sequences after the double end connection into the sequence of the whole clone contig. If several sequences after double end connection are positioned in the same block, the relative position and direction between them can be randomly selected (in FIG. 7, three sequences seq_6-seq_7-seq_9 connected by PE3, PE4 and seq_8 are all positioned in bin_6, so the sequence and direction between them are not determined. Randomly select their direction and position when connect).
+
+Advantages of the whole-genome sequencing method according to embodiments of the invention are given below:
+
+1) The method does not need to carry out the enzyme digestion and electrophoresis for each clone, and is able to construct the physical map according to the feature sequence. The number of available feature sequences can be selected according to the needs, and the number is large, no error in the length reading of the electrophoresis bands exists.
+
+2) The method employs NGS high throughput sequencing technology and clone mixing pool to construct the physical map of the whole-genome as well as position the assembled sequences to the physical map. In addition, all the data come from the same sequencing data set.
+
+3) The construction of physical map and sequence assembly can be carried out simultaneously. The large genome can be divided into many small projects which are then processed simultaneously, thus improving the efficiency.
+
+4) The complete sequence of the genome has little error in the large framework due to the presence of physical maps. For the error in the small area, the clear position can be located during the sequence assembly process which is beneficial to the gap filling and error correction of the complete sequence of genome in the future.
+
+5) The method has more general applicability and is applicable for the shotgun sequencing (WGS) of the complete genome, the second generation sequencing technology (NGS), or the third generation sequencing technology. In addition, these sequencing methods can be integrated to make full use of their advantages in order to improve the accuracy and integrity of the sequence.
+
+6) The method has high flexibility, because the feature sequence is an absolute value. The feature sequences can be easily added and integrated to further improve the genome sequence.
+
+## DETAILED DESCRIPTION OF THE EMBODIMENTS
+
+For further illustrating the invention, experiments detailing a whole-genome sequencing method are described below. It should be noted that the following examples are intended to describe and not to limit the invention.
+
+Complete genome sequencing is carried out on Arabidopsis thaliana ecotype Columbia. The species has a total of 5 chromosomes, the complete genome sequence of about 122 Mb. It should be noted that the data reproduced in this example is only used for the description of the implementation process of the invention.
+
+Construct BAC Library
+
+Use restriction endonuclease BamHI to carry out partial digestion too the complete genome DNA, construct the BAC library with about 5 times of complete genome coverage. The library is preserved in 11 blocks with each block containing 384 wells, a total of 4224 BAC clones are obtained. The average insert fragment size of BAC clones is 137 kb with fragment length of between 60 and 300 kb.
+
+Number the BAC Clones from 0 to 4223.
+
+Construct the Clone Mixing Pool
+
+N clones are selected from the BAC library, and the clones are arranged in an n×n×n cube. Then place this cube (FIG. 2) in the right-hand rectangular coordinate system, X, Y, Z are the coordinate axes, O is the origin. The position of each clone can be determined by three coordinate values (x, y, and z), and the position of the clone in the cube is represented by (x, y, z). Construct the clone mixing pool on the basis of cube constructed by BAC clone. The clone set in the same mixing pool can be represented by {(x1, y1, z1), (x2, y2, z2), (x3, y3, z3), . . . , (xn, yn, zn)}.
+
+When the position of all the clones in a cube is determined, no change is required. When construct a multidimensional mixing pool, just reassemble a new mixing pool (FIG. 3) through the clones from different dimensions. Taking into account the simplicity of the actual operation, the clones of the same column or the same row on each dimension belong to the same mixing pool. According to this principle, for a determined cube, there are 9 kinds of strategies of mixing pool construction, and the mixing pool constructed by each strategy is called 1 dimension. The 9 strategies are divided into three categories, respectively as perpendicular crossing pools (including PX, PY and PZ), oblique crossings pools (including OX, OY and OZ) and angle crossings pools (including AX, AY and AZ). In FIG. 3, a face and the cube intersect, the clones with same color or material mark belong to the same mixing pool.
+
+In the PX, a face perpendicular to the X axis intersects with the cube, the clones on the same face belong to the same mixing pool, namely the clones with the same x value in all the clone position are in the same mixing pool, for instance, when x value is 0, the clones include:
+
+{(0,0,0),(0,1,0),(0,2,0) . . . (0,n−1,0),
+
+(0,0,1),(0,1,1),(0,2,1) . . . (0,n−1,1),
+
+(0,0,2),(0,1,2),(0,2,2) . . . (0,n−1,2),
+
+(0,0,3),(0,1,3),(0,2,3) . . . (0,n−1,3),
+
+. . .
+
+(0,0,n−1),(0,1,n−1),(0,2,n−1) . . . (0,n−1,n−1)}
+
+A total of n×n clones are contained. When x is an arbitrary value, the clones belonging to the same mixing pool are:
+
+{(x,0,0),(x,1,0),(x,2,0) . . . (x,n−1,0),
+
+(x,0,1),(x,1,1),(x,2,1) . . . (x,n−1,1),
+
+(x,0,2),(x,1,2),(x,2,2) . . . (x,n−1,2),
+
+(x,0,3),(x,1,3),(x,2,3) . . . (x,n−1,3),
+
+. . .
+
+(x,0,n−1),(x,1,n−1),(x,2,n−1) . . . (x,n−1,n−1)}
+
+In this way, n mixing pools can be obtained. Similar to PY, PX and PZ can also be constructed out of N mixing pool, respectively.
+
+In OX, the plane intersected with the cube is perpendicular to the plane YOZ, and the slope of the projection line on the YOZ plane is −1. When the projection of the plane on the plane YOZ is a diagonal line (the white box line in OX in FIG. 3), then all the clones with white markers in the figure are the same mixing pool. When the projection of the plane on the plane YOZ is not a diagonal line, then the clones at the intersected position of the two planes and the cube are merged into one mixing pool. Such as the clones marked with black and white grid in the figure, the projection position of the corresponding two plates on plate YOX is linear y=−z+2 and linear y=−z+(2n+2). In the same way, it will get n mixing pools and each mixing pool contains n×n clones.
+
+Similarly, n mixing pools are obtained in OY, OZ and OX, each mixing pool contains n×n clones.
+
+AX can refer to the OX, but it is different from OX in that the slope of the projection line of the plane intersected with cube on the plane YOZ is 1. AY and AZ can refer to OY and OZ respectively.
+
+Each strategy is to get n mixing pools, and each mixing pool contains n×n clones, so that the total length of the genome segment in each pool is as close as possible. The pool dimension refers to the total times of each clone appeared in all the mixing pools when construct mixing pools. For example, 3D pool can contain the mixing pools constructed by PX, PY and PZ or any other three cubes; 6D pool and 9D pool are similar to 3D pool. In order to position a clone, it needs three different dimension pools at least, but not 3 arbitrary mixing pools can position a clone. For instance, in 84 combination results of all the 3 arbitrary mixing pools listed in Table 1, 69 combinations can determine the clone position. Three mixing pools can position a clone, then 6 mixing pools can position the same clone for twice or 9 mixing pools can position the same clone for three times. If reorder the clone position in the cube, it can get a new cube, and the new cube can construct 9 pools, so as to get higher dimension pools to improve the accuracy and quality.
+
+“TRUE” in the table indicates that the intersection of the three mixing pools only has one clone, “FALSE” indicates that the intersection of these three mixing pools has more than 1 clone. When construct the mixing pool, it is best to choose the three mixing pools combination which can position one clone.
+
+Select 4096 clones from the BAC library and put into a 16×16×16 cube. Select the PX, PY, PZ, OX, OY and OZ to construct 6 dimension mixing pool (if there are higher quality requirements, construct 9 dimension mixing pool, or higher dimension). Each dimension has 16 mixing pools, a total of 96 mixing pools, and each mixing pool contains 256 clones.
+
+96 mixing pools with their clone number are as follows:
+
+Extraction of DNA of Mixing Pool
+
+4096 clones selected from the library are inoculated into 96-hole culture plates, each culture hole containing 1 ml of freezing substrate (formula for 1 L of the freezing substrate is as follows: 10 g of peptone, 5 g of yeast extract, 10 g of NaCl, 8.215 g of K2HPO4.3H2O, 1.795 g of KH2PO4, 0.5 g of citric acid sodium, 0.848 g of (NH4)2SO4, 44 mL of glycerol. 0.4 mL of 1 M/L MgSO4 is added to the formula before usage), cultured for 18 hours at 37° C. preserved at 80° C. Mix consecutive 8 clones of each row and each column of every 96-hole culture plate to form base pools. If the number of consecutive clones in the same row is less than 8, then put the clones of the same row of the next plate into the base pool to get a total of 1024 base pools (FIG. 4). Suck 150 μL of bacteria from each culture hole, then each base pool contains 1.2 mL of bacteria. Then according to the construction strategy of sequencing pool, put 4096 clones to a 16×16×16 cube to construct the 6D pool, each of which contains 16×16=256 clones. Compare the clones of each mixing pool to the base pool, 32 base pools can be once again combined into a sequencing pool with 256 clones. Replicate the base pools into the new 96-hole culture plate, 100 μL of bacteria and 1.1 ml of 2×YT culture substrate are absorbed into each hole. The base pools belonging to the same sequencing pool are adjacent to each other in 96-hole culture plate, among which column 1 to column 4, a total of 32 base pools can be combined into a sequencing pool, column 9 to column 12 can be combined into another sequencing pool, four columns in the middle are vacated to prevent cross contamination. Then newly replicated 96-hole culture plate is cultured for 18 hours at 37° C. Finally replicate 15 copies of the consecutive base pools belonging to the same sequencing pool on the newly replicated 96-hole culture plate into five new culture plates, each new hole containing 40 μL of bacteria and 1 ml of 2×YT substrate, being cultured at 37° C. for 18 hours. Mix the clones in each newly cultured sequencing pool, use Large-Construct Kit of QIAGEN company to extract plasmid DNA. The concentration of plasmid DNA is required to be ≧150 ng/μL, the total amount is required to be ≧30 ug. This process can also first extract the DNA of all clones respectively, then mix.
+
+Sequence DNA of Mixing Pool
+
+Use HiSeq 2000 high throughput sequencing instrument of Illumina company to carry out the double terminal sequencing for plasmid DNA of 96 mixing pools. When the DNA of PX, PY, PZ mixing pool constructs sequencing library, the fragment length is 500 bp; when the DNA of OX mixing pool constructs sequencing library, the fragment length is 800 bp; when the DNA of OY mixing pool constructs sequencing library, the fragment length is 1200 bp; when the DNA of OZ mixing pool constructs sequencing library, the fragment length is 1800 bp. The sequence read length of both ends is 100 bp; each pool can get the total sequence length of about 710 Mb, about 20 times of coverage. The average error rate of the sequence is less than 3%. The average error rate through the calculation of sequencing quality values is 2.64%.
+
+Scan Sequencing Results and Obtain the Feature Sequence Set of the Mixing Pool
+
+Feature sequences are used for the assembly of the physical map, as a feature of the DNA segment of the clone. It is equivalent to the band length in the traditional use of fingerprints to build the physical map. As shown in FIG. 5, for a strip of DNA sequence, when the specified mark prefix sequence is “AATT” and the length of the feature sequence is 31, 31 bases in the prefix sequence upstream and 31 bases in the prefix sequence reverse complementary sequence upstream are the feature sequences of the DNA sequence. Several prefix sequences can be specified, and the length of the feature sequence can also be specified according to the requirement.
+
+In the specific embodiment, select the prefix sequence with two restriction enzyme sites BamHI(G|GATCC) and EcoRI(G|AATTC), the feature sequence length is 31 bp. Scan all the sequences in each mixing pool one by one, and combine all the feature sequences into one set, which is called the feature sequence set of the mixing pool, not containing duplicate elements. When scan the feature sequences of mixing pools, record the number of times of each feature sequence appears. 96 mixing pools can get 96 feature sequence sets, the feature sequence set of each mixing pool contains about 98000 feature sequences.
+
+Analyze the Clone Feature Sequence Set
+
+For the feature sequence set obtained from each mixing pool, delete the feature sequences which only appear for once, number the feature sequence sets of mixing pools after processing. The number is corresponding to the pool number:
+
+PX0,PX1,PX2 . . . PX15;
+
+PY0,PY1,PY2 . . . PY15;
+
+PZ0,PZ1,PZ2 . . . PZ15;
+
+OX0,OX1,OX2 . . . OX15;
+
+OY0,OY1,OY2 . . . OY15;
+
+OY0,OY1,OY2 . . . OY15;
+
+respectively represent the feature sequence sets of 16 mixing pools in PX, PY, PZ, OX, OY and OZ mixing pool strategies.
+
+According to the following steps, analyze the clone feature sequence sets:
+
+1) Compute the intersection set of the feature sequence sets of the mixing pool where the clones locate. Such as number 1225 clone in six mixing pools as PX0, PY15, PZ0, OX0, OY15 and OZ0, compute the intersection set of the feature sequence set of the six mixing pools PX0∩PY15∩PZ0∩OX0∩OY15∩OZ0 (the operator “∩” represents the intersection set of two sets), to get the initial intersection set I1225 of clone 1225 feature sequence. Similar to other clones, obtain the initial intersection of the feature sequences of all clones, expressed as Ii (where the subscript i indicates the clone number), such as I1191 indicates the initial intersection of the feature sequence of number 1191 clone.
+
+2) Compute the excluded union set of the mixing pools where the clone s locate. The excluded union set of all the mixing pools of clone is expresses as Ui(p), among which i is clone number, p is the pool number of the clone. Taking clone 1225 as an example, the excluded union set of its mixing pool PX0 is the union set of the initial intersection of all the other clones (in addition to clone 1225), the excluded union set of clone 1225 in the mixing pool PX0 U1225(PX0)=I68 U I509 U I3904 U . . . U I3761 U I3663 U I3091; (the operator “U” represents the union set of two sets; the order of the initial union set is consistent with the order of clone number in the PX0 of Table 1, but not include clone 1225).
+
+Similarly, the excluded union sets of clone 1225 in the mixing pool PY15, PZ0, OX0, OY15 and OZ0 respectively are as follows:
+
+U1225(PY15)=I1191U I3294U I2073U . . . U I3403U I3253U I1085;
+
+U1225(PZ0)=I2151U I44U I3661U . . . U I436U I3329U I1981;
+
+U1225(OX0)=I68U I509U I3904U . . . U I82U I3487U I1428;
+
+U1225(OX0)=I68U I509U I3904U . . . U I1547U I1791U I973;
+
+U1225(OZ0)=I1191U I3294U I2073U . . . U I3923U I3803U I1981
+
+3) The final feature sequence set of the clone. Use the symbol Fi to express, where the subscript i is the clone number. For each clone, use its initial feature sequence intersection to minus the intersection of its excluded union set in the mixing pool to get its final feature sequence set. Such as clone 1225, the final feature sequence set is
+
+F1225=I1225−(U1225(PX0)∩U1225(PY15)∩U1225(PZ0)∩U1225(OX0)∩U1225(OY15)∩U1225(OZ0))
+
+Among which the operator “−” represents the calculation of difference set of two sets.
+
+The more detailed algorithm for the analysis of the clone feature sequence set refers to the analysis algorithm of the clone feature sequence set and k-mer set.
+
+Construct the Clone Contigs
+
+Compute the union set of feature sequences of all the clones, construct index table for the feature sequences in the union set, each feature sequence corresponding to an index value which starts from 1. Replace the feature sequences in the final feature sequence set of each clone with the corresponding index values, then sort the index value from small to large, export the index values after sorting to “.size” file compatible with the clone assembly software FingerPrinted Contig (FPC V9.4). The index values exported to “.size” file are equivalent to the band length in the fingerprint construction physical map method. The contents of “.size” files of the index values of the final feature sequences of all clones are as follows:
+
+The “.size” file contents of each clone include three parts, that is, the first part includes clone name (number), the number of index values (band number) and “Gel”, the second part includes each index value, the third part is the end tag “−1”. For instance, clone 1225 finally gets 117 feature sequences, corresponding to 117 index values.
+
+Input the exported “.size” file into the assembly software FPC to assemble. Set Tolerance to 0 (this value must be set to 0), set Cutoff to 1e-12, other values are default. Carry out the initial assembly to produce clone contig. Then, set if >=5 Qs, Step is 5, carry out DQer. Finally obtain 220 clone contig. All the contig contain a total of 4021 clones for the first time assembled to produce clones overlap. Then, set the >=5 Qs if, Step 5, DQer. Finally, 220 clones were obtained, and all the contig contained 4021 clones, and 75 clones were not in any one contig. As shown in FIG. 6 it is the arrangement of the clones in the contig 157 (ctg157).
+
+Scan the Sequencing Results and Get K-Mer Set of the Mixing Pool
+
+The definition of k-mer is the same as the k-mer definition in the short sequence assembly method based on Bruijn graph. For a certain DNA sequence, take the window of a certain length, slide from 5′ to 3′ one base by one base. For each slide, the subsequence in the window is one k-mer of the DNA sequence. When the window length of a sequence is 13, there are a total of 34 k-mers. Therefore, for a sequence of length L, when the window length (or k-mer length) is k, the maximum number of k-mer generated is L−k+1.
+
+In the embodiment, the length of k-mer is 31 bp. Scan all the sequences of each mixing pool and combine all the k-mers into one set which is called the k-mer set of this mixing pool where repetitive elements are not contained. When scan the k-mers of mixing pool, it will also record the number of times each k-mer appears. 96 mixing pools can get 96 k-mer sets, the k-mer set of each pool contains about 95000000 feature sequences.
+
+Analyze the K-Mer Set of the Clone
+
+Due to the same nature of feature sequence and k-mer, the algorithm of analyzing the clone feature sequence is also applicable to the analysis of the k-mer set of the clone. In the process of concrete calculation, only replace the feature sequence set with k-mer set, and the other process is completely consistent.
+
+Segment the Contigs
+
+The algorithm for the segmentation of clone contigs is detailed in the above mentioned above “on the integration of sequence positioning and physical map”.
+
+In the embodiment, if the contig 49 (ctg49) is segmented into 27 blocks, a total of 635264 k-mer. From one end to the other end, the number of k-mers in each block is respectively 85353, 24951, 3044, 3992, 1284, 1175, 172, 125881, 12172, 8580, 4305, 16549, 1959, 26952, 12668, 6886, 6195, 6364, 20721, 6553, 4309, 4893, 26776, 18726, 12071, 83478, 1680 and 107575. Similarly other contigs are segmented into small blocks.
+
+Sequence Assembly and Integration into the Physical Map
+
+Assemble the NGS sequence of each mixing pool by the short sequence assembly software velvet respectively, to get the sequence contig of each mixing pool. When assembling, the parameter value of Hash length is 31, the other parameters are default, so as to obtain the initial assembly sequence of the 96 mixing pools which is about 3.4 Gb, the smallest sequence length is 62 bp. Then, filter the sequences after the initial assembly, remove the sequences less than 100 bp, combine the rest of the sequences together, so as to get a total of 1.59 Gb “fasta” format sequence, and compressed into a “gzip” format. According to the combined sequence, result in the corresponding “fasta” format quality file. All the base quality values are taken 20, and then compress the quality file generated into “gzip” format.
+
+Reassemble the sequences after combination by the use of long sequence assembly software PCAP. The assembly parameters are all default parameters, to obtain about 270 Mb sequences after assembly.
+
+Decompose each sequence after PCAP assembly to k-mer sets, then compute intersection sets with the k-mer sets of blocks after the clonal sequence contig segmentation, to find the one with the most intersection elements, then position the sequence to the location of this block. Through the analysis of the sequence positioned to the same clonal sequence contig, it is easy to find out which contains more overlapping sequences, so it is necessary to reassemble and combine the sequences and position it again. Reassemble the sequences positioned to the same clone contig with the sequence assembly software Phrap, and the parameter is the default parameter. Then decompose the sequences after assembly into k-mer sets, and position the sequences to the blocks of contig. After this step, there are a total of 103.1 Mb positioned sequences.
+
+Use the double end comparison software Bowtie2 to carry out double end comparison for the NGS sequences of all the mixing pools and the positioned sequences. If two sequences are highly matching to the double end of one sequence (examples selected identity value ≧97%), and the two sequences are positioned in the same clone contig, where the contig block is in a certain range, it is considered the two sequences can be connected together. According to the sequencing library fragment length and double end comparison results, calculate the length of the gap between them and fill the gap with “N”. At the same time, according to the relative position of the blocks where the two sequences are located, determine the direction of the sequence. If a sequence has no double end sequence connection with other sequences, then compare its decomposed k-mer set and the k-mer sets of the adjacent blocks. If it has intersection with the k-mer sets of the adjacent blocks, then it can position the junction of the two blocks and determine its direction. For the sequences positioned in the block but not able to determine the direction, randomly select its direction. Finally according to the relative position of the blocks where these sequences are located, connect all the positioned sequences through double end connection into the sequences of all the clone contig. If several sequences after double end connection are positioned in the same block, then their relative position and direction can be randomly selected.
+
+For the NGS sequence of mixing pools of 500 bp long sequencing library fragments, when carry out double end comparison to the positioned sequences, the identity is required to be ≧97%, and the relative position of two sequences in the contig blocks is in the range of 10 (the relative position range is called block range. If start from the left end of the contig, the relative position of the first block at the left end is 1, the second is 2, followed by analogy). If not the same, just according to the matching position of the two sequence and the double end, as well as the default length of 500, calculate the length of the gap between them. If the length of the gap between them is less than 100 bp (the length is referred to as the minimum gap length), and then compare 13 bases at the adjacent ends of two sequences. If the 13 bases are the same, directly connect the two sequences into one sequence, otherwise fill the gap with the corresponding number of “N”. The NGS sequences of other sequencing libraries are similar to that, but the block range (500 bp sequencing library is 10) and the minimum gap length are not the same. The block range of 800 bp, 1200 bp and 1800 bp sequencing library are respectively 17, 22, 31, and the minimum gap length is 120 bp, 150 bp, 180 bp, respectively. Through the connection of the sequence double end and filling the gap between sequences, obtain 220 contig sequence, a total of 109.9 Mb.
+
+The Contig is Positioned and Connected to the Chromosome
+
+If there are molecular markers, decompose the sequence of each marker into k-mer set, and compute the intersection of the k-mer set of each mixing pool (delete the k-mer sets which only appear once). If the k-mer set of the mixing pool contains the k-mer set of the marker sequence, assign the sequence to the mixing pool, so as to get the marker sequence of the mixing pool. Use the algorithm for analyzing the clone feature sequence set to analyze the market set of the clone. If by Southern blot hybridization or PCR, it can directly determine the marker of the clone in the BAC library. In this way, the chromosomes and the relative positions of the clones containing the markers can be determined. According to all the clone contig and the chromosomes of the clone containing the mark, assign the clone contig to the chromosome. According to the relative position of the clones in the contig and the relative position of the markers on the chromosomes, determine the direction of the contig. Finally, connect the sequences of the clone contig positioned on the same chromosome to the whole chromosome.
+
+In the embodiment, use a total of 2072 known molecular markers (from http://www.arabidopsis.org/), filter out the markers with sequence less than 100 bp, remaining 1515 markers. If the k-mer set of a mixing pool (delete the k-mer which only appears once) contains 90% of the elements of the k-mer set of one marker sequence, assign the marker into the mixing pool, then analyze the marker set of the clone, use PCR to verify if each clone contains the analyzed molecular markers, among which 2953 clones contain one or more molecular markers. Through the marker sets of the clones, position 211 clone contig on the chromosome, then connect the clone contig sequences on the same chromosome, fill up 50 kb long “N” between the adjacent contig. Finally obtain 5 chromosome sequences, a total of 118.4 Mb.
+
+The above embodiment adopts arabidopsis thaliana as experimental model. In the actual process, according to the complete genome of different species, construct BAC library, establish mixing pools is not less than 3 dimensions. Through the above calculation method obtain the complete genome sequence.
+
+While particular embodiments of the invention have been shown and described, it will be obvious to those skilled in the art that changes and modifications may be made without departing from the invention in its broader aspects, and therefore, the aim in the appended claims is to cover all such changes and modifications as fall within the true spirit and scope of the invention.
+

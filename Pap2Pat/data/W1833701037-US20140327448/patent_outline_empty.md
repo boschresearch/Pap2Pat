@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+## BACKGROUND ART
+
+## DISCLOSURE OF INVENTION
+
+### Technical Problem
+
+### Technical Solution
+
+### Advantageous Effects
+
+## DESCRIPTION OF SYMBOLS
+
+## BEST MODE FOR CARRYING OUT THE INVENTION
+

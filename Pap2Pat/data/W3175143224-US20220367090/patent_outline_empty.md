@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## STATEMENT OF RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH
+
+## FIELD OF THE DISCLOSURE
+
+## BACKGROUND
+
+## SUMMARY
+
+## DETAILED DESCRIPTION
+
+### Construction of Intersecting Chiral Channels
+
+### Extracting the S Matrix
+
+### Discussion
+

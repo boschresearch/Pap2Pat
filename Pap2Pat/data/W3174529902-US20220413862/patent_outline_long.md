@@ -1,0 +1,117 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce deep neural networks
+- motivate operator fusion
+- limitations of existing fusion approaches
+- describe resurgence of machine learning
+- motivate need for optimizing DNN execution
+- describe traditional operator fusion optimizations
+- limitations of polyhedral-based loop fusion
+- motivate need for novel fusion framework
+
+## SUMMARY
+
+- summarize method for accelerating DNNs
+- highlight advantages of DNNFusion approach
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce DNNFusion framework
+- classify operators into different types
+- develop rules for different combinations of operator types
+- enhance computational graph representation into ECG
+- design mapping type analysis
+- infer profitability of fusing operations
+- apply graph rewriting rules
+- determine fusion of specific operations
+- generate optimized fused code
+- show contributions of DNNFusion
+- design high-level abstractions for operator fusion
+- propose mathematical-property-based graph rewriting
+- present integrated fusion plan generation
+- implement optimized fusion code generation
+- evaluate DNNFusion on 15 cutting-edge DNN models
+- compare with four popular end-to-end DNN execution frameworks
+- motivate work by demonstrating challenges of executing deep neural networks
+- correlate execution efficiency with total amount of computation and number of layers
+- classify DNN operators and analyze fusion opportunities
+- classify operators into five high-level abstract types
+- define One-to-One mapping type
+- define One-to-Many mapping type
+- define Many-to-Many mapping type
+- define Reorganize mapping type
+- define Shuffle mapping type
+- analyze fusion opportunities based on mapping types
+- propose new fusion analysis
+- simplify profitability evaluation and correct implementation of fusion
+- classify fusion of combinations of mapping types into three groups
+- elaborate on representative combinations of mapping types
+- introduce Extended Computational Graph (ECG)
+- overview DNNFusion's design
+- employ mathematical-property-based graph rewriting
+- perform lightweight profile-driven fusion plan exploration
+- generate fusion code and perform advanced fusion-based optimizations
+- remove unnecessary operations
+- eliminate redundant intermediate data copies
+- replace costly operators with more efficient ones
+- introduce light-weight profile-driven fusion plan exploration
+- motivate greedy approach
+- define extended computational graph (ECG) IR
+- classify operations into mapping types
+- select fusion seed operators
+- explore fusion opportunities along seed operator's successors
+- create fusion plans based on machine-independent mapping type analysis
+- illustrate fusion plan generation algorithm
+- select One-to-One operator with minimum intermediate result as fusion seed operator
+- process seed operator's successors
+- apply mapping type analysis
+- check constraints
+- explore fusion candidates recursively
+- process seed operator's predecessors
+- iterate fusion plan generation
+- generate fused code for each fusion block
+- build data-flow tree (DFT) from ECG
+- generate code for each pair of operators to be fused
+- recognize input/output data dependence
+- fuse operators with common sub-tree identification
+- perform intra-fusion-block optimizations
+- perform inter-fusion-block optimizations
+- introduce evaluation objectives
+- describe evaluation setup
+- characterize models and datasets
+- compare DNNFusion with state-of-the-art frameworks
+- analyze impact of compiler optimizations
+- demonstrate effective portability of DNNFusion
+- introduce evaluation environment
+- describe mobile devices used
+- specify execution settings
+- report model training datasets
+- explain motivation for focusing on execution times
+- introduce fusion rate evaluation
+- describe table 5 contents
+- compare fusion rates with other frameworks
+- analyze benefits for R-CNN and transformer-based models
+- explain reasons for better fusion rates
+- introduce execution latency evaluation
+- describe table 6 contents
+- compare execution latency with other frameworks
+- analyze speedup on mobile CPU and GPU
+- explain reasons for speedup
+- compare with TASO approach
+- introduce optimization breakdown
+- describe figure 7 contents
+- evaluate each optimization's speedup
+- analyze benefits of graph rewriting
+- introduce memory and cache performance evaluation
+- describe figure 8 contents
+- compare memory performance with other frameworks
+- introduce CPU/GPU utilization evaluation
+- describe figure 9 contents
+- compare CPU/GPU utilization with other frameworks
+- introduce compilation time evaluation
+- describe figure 9(b) contents
+- compare compilation time with TVM
+- introduce portability evaluation
+

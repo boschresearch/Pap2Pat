@@ -1,0 +1,54 @@
+# Background
+
+Dynamics of excitation waves in reaction-diffusion media can be altered by spatio-temporal periodic forcing. Additional (secondary) periodic stimulations superimposed on primary forcing may alter the primary excitation waves and entrain (lock) them to the period of secondary stimuli. Locking of primary waves to the period of secondary stimulations occurs at particular values of forcing periods and amplitudes. This resonant shift is characterized by Arnold tongues which determine the margins of different types of M : N (M ≥ N, N ≥1) locking responses as a function of amplitude and frequency of external forcing [1,2].
+
+It was found that the phenomenon of locking manifests itself in different ways depending on the spatio-temporal complexity of the particular reaction-diffusion system. For example, under the periodic forcing, spatially uniform two-dimensional BZ reaction oscillations were transformed into standing wave type labyrinths of complex geometry [1]. It was also demonstrated that one-dimensional Turing patterns can be modulated by spatio-temporal forcing in the form of a travelling wave [3].
+
+A similar type of resonant behaviour of Turing patterns was observed in experiments with photosensitive chemical reactions [4]. It was also shown that the presence of large amplitude periodic forcing in a one-dimensional bistable reaction-diffusion medium resulted in bifurcating of an originally stable wavefront into two counter propagating wavefronts [5]. In contrast, modulating the intensity and frequency of the periodic forcing controlled the trajectory and rotational frequency of two-dimensional spiral waves in the Oregonator model [6].
+
+Additional periodic forcing can be also applied for locking of primary waves in some biological excitable media. A typical example of practical realization of such resonant dynamics is a post-traumatic adjustment of excitation in nerves with impaired excitability. It was shown that impaired excitation may be restored by applying additional functional electrical stimulation using implantable [7] or body surface stimulation electrodes [8-10]. This method has been confirmed as an effective tool for restoration of movement of paralyzed muscles in individuals with a variety of neurological impairments [11].
+
+Usually, after severe neuromuscular injuries nerve conductivity is significantly reduced, which in turn, prevents the passage of excitation waves through neuromuscular transmitters. Under these circumstances propagation of excitation pulses is marginally stable and implementation of functional electrical stimulation necessitates a significant increase of frequencies and amplitudes of additional electrical stimuli. The latest, instead of stabilization of propagation, can facilitate conduction blocks and may completely disrupt the process of training paralyzed muscles.
+
+To address this deficiency we investigate a new approach of entrainment of marginally stable excitation waves by spatially extended low amplitude sub-threshold forcing. We demonstrate that such sub-threshold forcing can transform excitation blocks to stable 1:1 responses synchronized in the entire excitable medium.
+
+# Methods
+
+Dynamics of conduction in nerves is simulated by Fitzhugh-Nagumo type reaction-diffusion equations with just two fundamental excitation and post-excitation recovery variables [12,13]. Unlike our recent work where we studied the dynamics initiated by a single excitation source [14], the adjusted model is set up to reflect the interference of several sources which deliver multiple stimuli of different amplitudes. In particular, the main source delivered localized over-threshold stimuli applied at the beginning of the cable and a set of additional sources originated secondary sub-threshold forcing which was extended throughout the entire cable (Eqs. 1).
+
+\(\begin{aligned} \frac{\partial u}{\partial t} & {= \frac{\partial^{2}u}{\partial x^{2}} - i\left( {u,v} \right)\mspace{500mu} + P\left( {x,t} \right)\mspace{500mu} + \sum\limits_{i = 1}^{n}S\left( {x - x_{i},t} \right)\qquad} & & \qquad \\  & {\quad i\left( {u,v} \right) = \left\{ \begin{matrix} {\lambda u,} & {u < v} \\ {u - 1,} & {u \geq v} \\  &  \end{matrix} \right)\qquad} & & \qquad \\  & {\qquad\frac{\partial v}{\partial t} = \varepsilon\left( {\zeta u + v_{r} - v} \right)\qquad} & & \qquad \\  & \qquad & &  \end{aligned}\)
+
+Here u and v are dimensionless excitation and recovery functions, respectively. ε is a small parameter and vr is the excitation threshold. λ and ζ control the rates of changes of excitation and recovery functions, respectively.
+
+The system of Eqs. 1 was solved numerically in a one-dimensional cable of finite length using a second order explicit difference scheme with zero flux boundary conditions [15]. Spatial, Δx, and temporal, Δt, steps used in the numerical integration were equal to 0.23 and 0.0072, respectively. The cable length, L, was equal to 150Δx. Primary forcing, P (x, t), was a train of rectangular pulses with duration 100Δt, an over-threshold amplitude A0 and period T0. Primary stimuli were applied near the left end of the cable between x = 2Δx and x = 15Δx. Secondary forcing {S (x - xi, t), i = 1,2,..., n} also a rectangular pulse train with duration 100 Δt, was delivered at n equidistant locations between x = 40Δx and x = 140Δx. The secondary stimuli were simultaneously activated after the wavefront which resulted from the first primary stimulation arrived at the end of the cable. The amplitude and period of secondary stimulations were equal to A and T, respectively.
+
+Unless mentioned otherwise, values of parameters in all computations were ε = 0.1, λ = 0.4, ζ = 1.2, A0 = 1.4, α = 0.31, β = 0.0025 and n = 6. As in [14] we used a simplified primary rate dependent excitation threshold given by linear equation vr = α - βT0, α > 0, β > 0. The duration of a pulse, Th, was measured as the time interval between consecutive intersections of u and v near their rest and excited states, respectively (Figure 1). The steady state value of Th was computed after 80 primary stimulation periods.
+
+# Results
+
+In the absence of secondary stimulation (A = 0), at long periods T0 the variable v has enough time to reach its steady state vr before the next stimulus is applied. However, as T0 is reduced to a critical limit, Tend, the system does not respond to every stimulus and exhibits unstable M : N (M >N ) excitation blocks which occur due to incomplete recovery of control variable v. Figure 2 compares phase portraits of the system at two values of T0. At T0 = 60, u closely follows its nullcline and v almost completely recovers to its steady state value of 0.16 as depicted by the intersection of the u - v nullclines. However, at T0 = Tend = 30, deviations of u and v from their nullclines are quite significant, thereby v recovers to a value which is much higher than the corresponding threshold of 0.23.
+
+Analysis of pulse duration Th at the critical primary period Tend = 30, as a function of secondary frequency F = T -1 and forcing amplitude A ≥ 0 revealed a variety of entrainment regimes (Figure 3). We found that the system did not respond to secondary stimuli at amplitudes which were smaller than critical values depicted by the curve with circular markers. For the amplitudes above this curve and frequencies smaller than F0 we observed intermediate M : M responses with M greater than one.
+
+For even greater amplitudes, above the upper curve with square markers, the system locked to secondary stimuli with consistent 1:1 responses. It should be noticed that such locking occurred over a wide range of secondary frequencies, and that secondary amplitudes were five times smaller than the amplitudes of primary stimulations. We also observed that for frequencies greater than F0 the entrainment of blocked excitation occurred without intermediate M:M responses (Figure 3).
+
+Spatio-temporal contours of u shown in Figure 4 demonstrate expected unstable responses to primary stimulation at T0 <Tend. Temporal dynamics of u and v, as well as spatio-temporal contours of u, show 3:2 excitation blocks (Figure 4,5). However, in the presence of secondary stimulations such unstable responses can be entrained and stabilized by secondary driving even at T0 <Tend. Indeed, Figure 6 demonstrates that 3:2 blocks can be transformed into stable 1:1 responses which evolve homogeneously in the entire cable except for short segments located near the site of primary stimulation.
+
+Formation of these fully synchronized responses are preceded by very short (~ 0.02T0) transient periods during which standing wave type oscillations of u rapidly saturate at constant excitation levels (Figure 7).
+
+When compared with primary forcing alone (A = 0), secondary sub-threshold stimuli facilitate development of stable pulses shorter than those at Tend = 30. Figure 8 shows that secondary stimuli of higher amplitudes sustain shorter entrained pulses at progressively smaller stimulation periods. The trend can be slightly augmented for higher coefficients β when Tend decreases as shown in Figure 9.
+
+Stabilization of the system due to secondary driving can also be achieved using a greater number of secondary stimulation sources. Correspondingly, Figure 10 demonstrates that an initial two-fold increase of the number of secondary sources from 2 to 4 extends the region of stability towards shorter values of Tend. Further increase of the number of sources saturates these changes at progressively shorter values of Tend for smaller coefficients β.
+
+# Conclusions
+
+In summary, we demonstrated that additional sub-threshold driving stimuli can entrain otherwise unstable primary reaction-diffusion waves and transform M : N excitation blocks into stable 1:1 spatially homogeneous responses synchronized in the entire cable. Compared to pulses resulting from primary forcing alone, pulses entrained by secondary stimulations were stable at considerably shorter periods. These periods decreased at higher amplitudes and greater number of secondary stimuli. We also found that locking to stable 1:1 responses occurred over a wide range of secondary frequencies. In addition, the sub-threshold secondary amplitudes were a factor of five smaller than the amplitudes of primary stimuli. Our results outline the possibility of entrainment of reaction-diffusion waves by sub-threshold additional driving and may be applied for stabilization of excitation in nerves with regions of impaired excitability [16].
+
+# Competing Interests
+
+The authors declare that they have no competing interests.
+
+# Authors' Contributions
+
+JS conceived, developed and designed the theory and numerical experiments. VV performed the numerical simulations and has been involved in drafting and revising the manuscript. Both authors read and approved the final manuscript.
+

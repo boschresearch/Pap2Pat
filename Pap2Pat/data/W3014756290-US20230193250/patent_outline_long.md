@@ -1,0 +1,377 @@
+# DESCRIPTION
+
+## TECHNOLOGY FIELD
+
+- define technology area
+
+## BACKGROUND
+
+- introduce lncRNAs
+- motivate cancer therapy
+- limitations of current screens
+- describe malignant glioma
+- introduce organoids
+
+## SUMMARY
+
+- introduce CRISPRi screen
+- identify lncRNAs that sensitize glioma cells to radiotherapy
+- prioritize lncGRS-1 as glioma radiation sensitizer
+- knockdown lncGRS-1 in glioma cells
+- develop human brain organoid model of malignant glioma
+- use antisense oligonucleotides to target lncGRS-1
+- identify lncGRS-1 as glioma-specific therapeutic target
+- establish generalizable approach to identify therapeutic targets
+- describe compositions and methods for diagnosing and treating malignant glioma
+- provide method for generation of human brain organoid model
+- describe method of identifying radiotherapy sensitizer
+- expose cells to radiation
+- select test cells with decreased proliferation
+- identify locus targeted by sgRNA
+- obtain test cells for screening
+- describe method of diagnosing malignant glioma
+- expose sample to nucleic acid complementary to lncRNA
+- detect binding between lncRNA and nucleic acid
+- provide treatment regime to manage malignant glioma
+- describe method of treating malignant glioma
+- administer agent that knockdowns lncRNA expression
+- inhibit growth and/or proliferation of glioma cells
+- describe pharmaceutical composition
+- generate human brain organoid model of malignant glioma
+- relate to human brain organoid model
+- describe method of screening agent
+- specify radiation treatment
+- describe candidate agent
+- specify lncRNA sequence
+- describe method of treating malignant glioma
+- specify sample used
+- describe detection method
+- specify treatment regime
+- describe method of treating brain cancer
+- specify agent that knockdowns lncRNA
+- describe concurrent radiation therapy
+- relate to method of identifying radiotherapy sensitizer
+- describe radiation modifier screen score
+- describe growth screen score
+- specify sensitizer score
+- identify radiotherapy sensitizer
+- specify test cells
+- describe transcriptional modulator
+- specify dCas9 sequence
+- describe radiation used
+- correlate binding to malignant glioma
+- describe method of preparing sample
+- analyze total RNA with probe
+- describe system comprising nucleic acids and solid support
+
+## DETAILED DESCRIPTION OF EMBODIMENTS
+
+- introduce embodiments
+- clarify terminology
+- specify method steps
+- incorporate prior publications
+
+### Definitions
+
+- define technical terms
+- define "comprising"
+- define singular forms
+- define "or"
+- define "about"
+- define "nucleic acid"
+- define "biomarker"
+- define "small non-coding RNA"
+- define "long noncoding RNA"
+- define "locus"
+- define "microRNA"
+- define "small interfering RNA"
+- define "antisense activity"
+- define "antisense compound"
+- define "antisense oligonucleotide"
+- define "morpholino"
+- define "complementary"
+- define "hybridization"
+- define "identical"
+- define "percent identity"
+- define "radiotherapy sensitizer"
+- describe CRISPR/Cas system
+- define Cas proteins
+- describe CRISPR system
+- define tracr sequence
+- define guide sequence
+- define target sequence
+- describe formation of CRISPR complex
+- define DNA target sequence
+- describe proto-spacer adjacent motifs
+- define NNG motif
+- define NNA motif
+- define GAA motif
+- define NNAGAAW motif
+- define NGGNG motif
+- describe CRISPR system elements
+- describe CRISPR complex formation
+- define Cas9 protein
+- describe Cas9 homologs
+- introduce dCas9
+- explain catalytic deactivation of Cas9
+- define functional fragment
+- introduce transcriptional modulator
+- describe transcriptional activator
+- describe transcriptional repressor
+- provide non-limiting examples of nuclease-deficient sgRNA-mediated nucleases
+- define sample
+- define subject
+- explain phrase "in need thereof"
+- define patient
+- define inhibit
+- define modulate
+- define determining
+- define organoid
+- define therapeutically effective amount
+- explain regimen of administration
+- define treating
+- define tumor
+- define glioma
+- describe types of glioma
+- define malignant glioma
+- provide non-limiting examples of transcriptional activators
+- provide non-limiting examples of transcriptional repressors
+- provide non-limiting examples of nuclease-deficient sgRNA-mediated nucleases
+- describe sequence identity of nuclease-deficient sgRNA-mediated nucleases
+- explain inhibition or reduction
+- provide dosage ranges
+
+### Method for Identification of a Radiotherapy Sensitizer
+
+- introduce CRISPRi technology
+- motivate genome-scale CRISPRi screening
+- describe method for obtaining radiotherapy sensitizers
+- define test cells
+- describe sgRNA-mediated nuclease (dCas9)
+- specify dCas9 domain fused to transcriptional modulator
+- provide examples of dCas9 domains
+- describe dCas9 as transcriptional activator
+- specify dCas9 domain fused to p65AD or VP8/VP16/VP64
+- describe dCas9 as transcriptional repressor
+- specify dCas9 domain fused to KRAB or chromoshadow repressor domain
+- list examples of suitable cells
+- specify radiation types
+- describe radiation dose and fractionation
+- outline selection of test cells based on phenotype
+- identify radiotherapy sensitizer using RNA-seq analysis
+- describe lncGRS specific to glioma
+- outline method of preparing RNA from a sample
+- describe RNA isolation and purification
+- analyze isolated RNA for specific RNA sequences
+- relate methods to nuclease-based modification of cells
+- identify lncRNA associated with radiotherapy sensitivity
+
+### Methods of Diagnosis and Treatment
+
+- diagnose malignant glioma
+- detect lncGRSs in subject
+- use nucleic acid complementary to lncGRSs
+- detect hybridization of lncRNAs
+- obtain sample from subject
+- correlate binding to diagnosis
+- normalize binding against control
+- provide treatment regime
+- administer therapeutically effective amount
+- knockdown expression of lncGRSs
+- use interference mechanism
+- use microRNA or siRNA
+- use oligomer
+- target lncGRS with sequence identity
+- target SEQ ID NO: 1
+- target SEQ ID NO: 2
+- target SEQ ID NO: 3
+- target SEQ ID NO: 4
+- target SEQ ID NO: 5
+- target SEQ ID NO: 6
+- target SEQ ID NO: 7
+- target SEQ ID NO: 8
+- target SEQ ID NO: 9
+- use nucleic acid with sequence identity
+- use SEQ ID NO: 38
+- use SEQ ID NO: 39
+- use SEQ ID NO: 40
+- use SEQ ID NO: 41
+- use SEQ ID NO: 42
+- use SEQ ID NO: 43
+- use SEQ ID NO: 44-46
+- define methods of diagnosis and treatment
+- specify target lncGRS
+- describe agent for knocking down lncGRS
+- specify sequence identity of target lncGRS
+- describe administration of agent with radiation therapy
+- specify effect of administration on radiation therapy
+- describe method of inhibiting growth of glioma cells
+- specify target lncGRS for inhibition
+- describe agent for knocking down lncGRS
+- specify sequence identity of agent
+- describe subject in need of treatment
+- specify type of malignant glioma
+- describe concurrent radiation therapy
+- specify effect of administration on radiation therapy
+- describe agent with sequence identity to SEQ ID NO: 38-46
+- describe fragment of SEQ ID NO: 38-46
+- specify length of fragment
+- describe miRNA, siRNA, or ASO with sequence identity to SEQ ID NO: 38-46
+- describe functional fragment of SEQ ID NO: 38-46
+- describe administration of agent
+- specify mechanisms of administration
+- describe pharmaceutically acceptable carriers
+- specify examples of carriers
+- describe determination of effective amount of agent
+- specify factors affecting effective amount
+
+### Pharmaceutical Compositions
+
+- provide pharmaceutical composition for treating malignant glioma
+- describe composition comprising agent that knocks down lncGRS expression
+- specify agent as miRNA, siRNA, ASO, or morpholino
+- describe composition with pharmaceutically acceptable carrier
+- list compatible active ingredients
+- describe methods for preparing administrable pharmaceutical compositions
+- specify therapeutically effective or prophylactically effective amount
+- describe administration routes
+- describe modification for administration to animals
+- list formulations suitable for different administration routes
+- describe preparation of sterile injectable aqueous or oily suspension or solution
+- specify dispersing agents, wetting agents, or suspending agents
+- describe parenterally-administrable formulations
+- describe compositions for sustained release or implantation
+- specify pharmaceutically acceptable polymeric or hydrophobic materials
+- describe aqueous suspensions with viscosity-increasing substances
+- describe 3D human brain organoid model of malignant glioma
+
+### Three-Dimensional Human Brain Organoid of Malignant Glioma
+
+- relate to generation and use of 3D human brain organoids of malignant glioma
+- describe organoids as miniature 3D representations of in vivo counterpart organs
+- specify utility of organoid-based models of cancer
+- describe generation of human brain organoids from PSC populations
+- specify characteristics of "mature" human brain organoids (MBOs)
+- describe differences between embryonic brain organoids and MBOs
+- specify limitations of embryonic brain organoids
+- describe systematic three-dimensional coculture
+- specify components of coculture
+- describe method for generation of human brain organoid model of malignant glioma
+- specify seeding cells derived from glioblastoma (GBM) or diffuse intrinsic pontine gliomas (DIPG)
+- describe growth and formation of tumor within human brain organoid
+- specify types of malignant gliomas
+- describe human brain organoid model of malignant glioma obtained by methods
+- specify use in screening therapeutics for treating gliomas
+- describe method of screening agent capable of synergizing with radiation
+- specify adding candidate agent to human brain organoid model
+- describe treating human brain organoid model with radiation
+- specify detecting effectiveness of candidate agent
+- describe types of candidate agents
+- specify lncRNA being knocked down
+- describe functional fragments of candidate agents
+- specify level of radiation used to treat human brain organoid model
+
+### Systems
+
+- define system for detecting lncRNAs
+- specify nucleic acids in system
+- describe sequence identity of nucleic acids
+- specify fragments of nucleic acids
+- describe capabilities of system
+- specify solid supports for system
+- provide examples of solid supports
+
+## EXAMPLES
+
+### Example 1
+
+- introduce lncRNAs as therapeutic targets in glioma
+- motivate CRISPRi-based radiation modifier screen
+- describe glioma treatment with ionizing radiation
+- introduce CRISPRi screen to identify lncRNA therapeutic targets
+- describe cell culture and radiation treatment methods
+- outline CRISPRi screen protocol
+- explain data processing and hit analysis
+- identify radiation sensitizers
+- validate sgRNA knockdowns
+- perform internally controlled growth assays
+- describe RT-qPCR methods
+- outline subcellular fractionation protocol
+- perform single-molecule FISH
+- describe Western blot methods
+- perform immunohistochemistry for P53BP1 & Gamma-H2AX
+- describe flow cytometry for cell cycle analysis
+- design and transfect antisense oligonucleotides
+- perform nanopore direct RNA-sequencing
+- prepare RNA-seq samples and analyze data
+- describe mature brain organoids and tumor co-cultures
+- generate iAstrocytes
+- generate i3Neurons
+- generate MBO cultures
+- seed DIPG cells and perform time course
+- describe radiation synergy calculation
+- outline sgRNA library derivation
+- describe lentivirus pool generation
+- infect U87-dCas9-KRAB cells
+- select and recover infected cells
+- harvest genomic DNA and process for sequencing
+- analyze CRISPRi screen data
+- identify lncGRS-1 as a glioma-specific therapeutic target
+- establish a generalizable approach to identify novel therapeutic targets
+- summarize study findings
+- introduce cell culture model
+- describe DIPG SF8628 cell seeding
+- describe U87 cell seeding
+- quantify tumor burden
+- prepare organoids for confocal imaging
+- introduce CRISPRi platform
+- determine radiation dose and delivery schedule
+- analyze gene expression changes
+- test CRISPRi gene targeting
+- identify lncRNA glioma radiation sensitizer hits
+- screen lncRNA function
+- identify lncRNA hits that modify cell growth
+- analyze lncRNA expression following radiation
+- identify lncRNA glioma radiation sensitizer genes
+- define transcript structure of lncGRS-1
+- analyze lncGRS-1 localization and expression
+- test CRISPRi-mediated knockdown of lncGRS-1
+- analyze synergy of lncGRS-1 knockdown and radiation
+- test cell type specificity of lncGRS-1
+- introduce CRISPRi- and ASO-mediated lncGRS-1 knockdown
+- inhibit growth of glioma cells from adult patients
+- inhibit growth of glioma cells from pediatric patients
+- conclude lncGRS-1 as a radiation sensitizer target
+- introduce lncGRS-1 knockdown in GBM and DIPG cells
+- study growth inhibition
+- introduce ASOs for lncGRS-1 knockdown
+- test ASO efficacy in patient-derived glioma cell cultures
+- study cell proliferation decrease
+- study ASO-mediated knockdown of lncGRS-1 in multiple patient-derived cultures
+- study toxicity to human astrocytes
+- study effect of lncGRS-1 knockdown on NHA cells
+- study cell viability and apoptosis
+- study CRISPRi-mediated knockdown of lncGRS-1 in HeLa cells
+- perform RNA-seq analysis following ASO-mediated lncGRS-1 knockdown
+- study transcriptome-wide differential gene expression
+- study upregulated and downregulated genes
+- study correlation between differentially expressed genes
+- study CDKN1A levels following lncGRS-1 knockdown
+- study cell cycle progression
+- study p53BP1 and γH2AX foci
+- introduce MBOs for evaluating treatment efficacy and brain toxicity
+- generate pure populations of mature human astrocytes and cortical neurons
+- form MBOs from iAstrocytes and iNeurons
+- study ASO-mediated lncGRS-1 knockdown in A-MBOs
+- study organoid viability and apoptosis
+- study glioma tumor growth in MBOs
+- study ASO-mediated lncGRS-1 knockdown in AN-MBOs
+- study radiation therapy in AN-MBOs
+- study tumor burden with lncGRS-1 knockdown and radiation
+- discuss CRISPRi-based pooled screening platform
+- discuss prioritization of combinatorial therapeutic targets
+- discuss interaction between radiation treatment and biological target
+- discuss lncGRS-1 as a radiation sensitizer
+- discuss glioma-specific function of lncGRS-1
+- discuss utility of MBOs for preclinical research
+

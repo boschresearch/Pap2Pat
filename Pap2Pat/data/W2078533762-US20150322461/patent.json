@@ -1,0 +1,362 @@
+{
+    "id": "US20150322461",
+    "authors": [
+        "Marta Semkiv",
+        "Kostyantyn Dmytruk",
+        "Andriy Sibirny"
+    ],
+    "title": "IMPROVEMENT OF ETHANOL YIELD WITH REDUCTION OF BIOMASS ACCUMULATION IN THE RECOMBINANT STRAIN OF SACCHAROMYCES CEREVISIAE OVEREXPRESSING ALKALINE PHOSPHATE",
+    "date": "2013-12-20 00:00:00",
+    "abstract": "Described herein is a method to increase ethanol yield during alcoholic fermentation by expression a truncated versions of the Saccharomyces cerevisiae PHO8 gene coding for vacuolar or cytosolic form of alkaline phosphatase, which expression lowers biomass accumulation while diverting greater carbon to ethanol production. Also described are as nucleic acid sequences and vectors for expression of the PHO8 gene and strains carrying the same. Strains containing intact PHO8 gene encoding vacuolar form of alkaline phosphatase, had slightly lower intracellular ATP levels with insignificant changes in biomass accumulation and up to 13% increase in ethanol production.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD",
+                    "paragraphs": [
+                        "The invention relates to the field of ethanol; production by fermentation, and more particularly to expression of an alkaline phosphatase e gene in the yeast Saccahromyces cerevisiae to improve the production of ethanol while reducing biomass accumulation."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "relate to ethanol production by fermentation"
+                    ],
+                    "num_characters": 256,
+                    "outline_medium": [
+                        "relate to ethanol production by fermentation"
+                    ],
+                    "outline_short": [
+                        "relate to ethanol production by fermentation"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Alcoholic fermentation represents the largest application of the yeast Saccahromyces cerevisiae in the field of industrial biotechnology with the production of over 80 billion liters of fuel, industrial and beverage ethanol in 2011. Over the past decade and due to economic and environmental reasons, the world has experienced exponential growth in the production of fuel ethanol (Schubert, 2006). Though lignocellulose is considered to be one of the most promising feedstocks for production of fuel ethanol, the current industrial production of fuel ethanol relies heavily on the fermentation of traditional feedstocks such as sucrose (derived primarily from sugarcane or sweet sugar beets) and glucose obtained from starchy materials (corn, wheat, barley, potatoes etc). The most common organism currently used for bioethanol production is the baker's yeast, Saccharomyces cerevisiae. This yeast catabolizes glucose via the glycolytic Embeden Meyerhof Pathway (EMP) pathway yielding 2 moles ATP per mole of consumed glucose. The efficiency of this pathway in yeast is low with a maximal biomass yield of around 7% and an ethanol yield in the range 90 and 93% of the theoretical value (Ingledew, 1999). However, at industrial scale the 7% of the sugar that is converted to cell mass represents a huge amount of by-product, which though valuable as animal feed significantly lowers the overall yield of the target product, ethanol. Even a slight improvement in ethanol yield by S. cerevisiae, can add several millions 1 liters of ethanol to the worldwide production of ethanol production annually.",
+                        "In contrast to S. cerevisiae, the bacterium Zymomonas mobilis ferments glucose through Entner Doudorf (ED) pathway. This pathway gives only 1 mole of ATP per mole of glucose, and directs only 3% of glucose to cell biomass achieving ethanol yield of up to 97% of the possible theoretical value (Sprenger, 1996). This indicates that lowering the level of ATP yield during alcoholic fermentation increases ethanol yield with reduced substrate conversion to cell mass. Furthermore, Z. mobilis has another important advantage over S. cerevisiae: in faster fermentation of glucose to ethanol (Sprenger, 1996, Panesar et al., 2006), The higher productivity of Z. mobilis is frequently attributed to faster rate of sugar uptake and subsequent catabolism rather than low ATP yield. Attempts to substitute S. cerevisiae by Z. mobilis for the production of industrial ethanol were considered to increase ethanol yield by 3-4% thereby adding several hundred million liters worldwide annually. However, Z. mobilis has several serious drawbacks which hamper its industrial use and these consist of: (i) a very narrow substrate range (sucrose is hardly fermented with low yield), (ii) natural auxotrophy for lysine, methionine and some vitamins, (iii) non-GRAS status, which prevents use of biomass as feed additive, (iv) requirement for a higher pH to grow (Jeffries, 2005; Bai et al., 2008; Abbas, unpublished finding). Furthermore, the technology of yeast cell utilization for alcoholic fermentation is well developed whereas the use of bacterial cells for ethanol production is far less common. Thus, a better approach to increase ethanol yield and reduce cell mass production is to construct yeast strains which yield less ATP during alcoholic fermentation (e.g. one mole ATP, as Z. mobilis does in ED pathway). These new yeast strains would combine all of the possible advantages of yeast with the high ethanol yield of Z. mobilis. There are several approaches that can be used to achieve this goal, for example: substitution of EMP pathway in yeast by ED pathway from Z. mobilis or other bacteria possessing genes of the pathway; increasing the activity of enzymes involved in generation of futile cycles; construction of recombinant strains with elevated ATPase activity; and the introduction of heterologous genes encoding for plasma membrane symporters.",
+                        "The first approach tried was to express ED dehydratase and ED aldolase genes edd and eda in a phosphofructokinase deficient mutant of S. cerevisiae (Lancashire et al., 1998). The yeast transformants obtained grew and fermented glucose to ethanol, though activities of ED dehydratase and ED aldolase were not measured. The work described in this patented work, was not further developed as there is no additional reports in the scientific literature. Quite often prokaryotic enzymes display low or no activity in S. cerevisiae hosts (Hahn-Hagerdal et al., 2007). This is probably due in part to improper folding or instability of the expressed bacterial protein products in yeast. In addition, there are difficulties in NADP regeneration in the yeast engineered ED pathway as NADPH produced in glucose-6-phosphate dehydrogenase reaction, cannot be reoxidized via alcohol dehydrogenase reaction. It has already been reported that the major alcohol dehydrogenases in S. cerevisiae utilize NADH but not NADPH and yeast does not possess NADH/NADPH transhydrogenase (Lescovac et al., 2002; Jeffries and Jin, 2004). In order to maintain a low level of ATP during yeast alcoholic fermentation through EMP pathway, it is not necessary to substitute it for a pathway with lower efficiency. A better approach to achieve the above is to keep EMP pathway unchanged and to lower level of ATP by a more specific approaches that rely on the activation of some cytosolic ATPase or via the induction or construction of some kind of futile cycle to dissipate cellular pool of ATP.",
+                        "In our previous work, we carried out a successful attempt to decrease intracellular ATP level by overexpression of 5\u2032 part of the S. cerevisiae SSBl gene encoding cytosolic ATPase domain and by the heterologous gene apy encoding apyrase from Escherichia coli (Sibirny et al., 2010). Some of the constructed strains showed a decrease in cellular ATP level during anaerobic, aerobic or semi-anaerobic cultivation and were characterized by a reduction in cellular biomass yield with the corresponding increase in ethanol yield during glucose utilization under anaerobic, aerobic or semi-anaerobic conditions. We suggested that this approach can be useful tor the construction of a new generation of industrial strains of S. cerevisiae which are characterized by improved ethanol yield from conventional (glucose, sucrose) and non-conventional (lignocellulose) feedstocks.",
+                        "In this application we describe another approach to lowering cellular ATP by overexpression of intact or truncated versions of the S. cerevisiae PHO8 gene, encoding alkaline phosphatase."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce ethanol production",
+                        "describe current industrial production of fuel ethanol",
+                        "describe limitations of yeast fermentation",
+                        "introduce Zymomonas mobilis as alternative",
+                        "describe advantages of Z. mobilis",
+                        "describe drawbacks of Z. mobilis",
+                        "propose approach to increase ethanol yield",
+                        "describe previous work on ATPase overexpression",
+                        "describe goal of current work",
+                        "introduce ED pathway",
+                        "describe difficulties in expressing bacterial enzymes in yeast",
+                        "describe alternative approach to reduce ATP level",
+                        "introduce PHO8 gene encoding alkaline phosphatase"
+                    ],
+                    "num_characters": 6568,
+                    "outline_medium": [
+                        "introduce ethanol production",
+                        "describe current industrial production of fuel ethanol",
+                        "discuss limitations of yeast fermentation",
+                        "introduce Zymomonas mobilis as alternative",
+                        "discuss drawbacks of Z. mobilis",
+                        "propose approach to improve ethanol yield in yeast"
+                    ],
+                    "outline_short": [
+                        "describe current industrial production of fuel ethanol",
+                        "discuss limitations of yeast fermentation",
+                        "introduce approach to increase ethanol yield"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "In a general embodiment, the invention provides a strain of S. cerevisiae comprising a nucleic acid sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell. In certain more particular embodiments. The strain of the alkaline phosphatase enzyme expressed by the nucleic acid sequence contains a vacuolar targeting sequence and the alkaline phosphatase is present in the vacuole of the cell. In other distinctive embodiments, the alkaline phosphatase enzyme lacks a vacuolar targeting sequence and alkaline phosphatase is present in the cytoplasm of the cell.",
+                        "In the most useful embodiments the strain overexpresses alkaline phosphatase in the cell relative to a parent cell lacking the nucleic acid sequence encoding the alkaline phosphatase. In certain embodiments of overexpression the cell contains multiple copies of the nucleic add sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell. In some particular embodiments, be nucleic acid sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell is integrated into the genome of the cell.",
+                        "In particularly useful embodiments the promoter used to overexpress the alkaline phosphatase activity is an ethanol inducible promoter from S. cerevisiae. In exemplary embodiments, the inducible promoter is an alcohol dehydrogenase promoter.",
+                        "The embodiments of the most useful strains are characterized by producing a higher titer of ethanol during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme. Also, the most useful strains are further characterized by having a reduced biomass accumulation rate during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme.",
+                        "In a related aspect there is provided a method of producing ethanol comprising growing at least one of the forging strains under anaerobic growth conditions for a time sufficient to produce ethanol."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe invention as yeast strain with PHO8 gene",
+                        "describe variants with vacuolar targeting sequence",
+                        "describe variants with cytoplasmic localization",
+                        "describe benefits of invention"
+                    ],
+                    "num_characters": 2359,
+                    "outline_medium": [
+                        "describe invention as yeast strain with alkaline phosphatase",
+                        "outline benefits of invention"
+                    ],
+                    "outline_short": [
+                        "describe invention of yeast strain with alkaline phosphatase"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Strains, Plasmids and Growth Conditions",
+                            "paragraphs": [
+                                "The Saccharomyces cerevisiae strain BY4742 (MAT\u03b1, his3\u03941, leu2\u03940, lys2\u03940, ura3\u03940; (Giaever et al., 2002) and an industrial strain designated AS400 were used for the expression of the intact or truncated versions of PHO8 ORF coding for the alkaline phosphatase, Escherichia coli DH5\u03b1 (\u03a680dlacZ\u0394M15, recA1, endA1, gyrA96, thi-1, hsdR17 (rK+, mK+), supE44, relA1, deoR, \u0394(lacZYA-argF) U169) was used for general purposes and routine subcloning.",
+                                "For the isolation of plasmid DNA E. coli strains were grown in LB media at 37\u00b0 C. for 18 hours as described (Sambrook and Rusell 2001). S. cerevisiae strains were incubated at 30\u00b0 C. For routine application, yeast strains were maintained in a rich YPD medium (1% yeast extract, 1% peptone and 2% glucose) or in a minimal medium of YNB (0.67%, yeast nitrogen base without amino acids, DIFCO, 0.5% ammonium sulfate, 2% glucose) media. For ethanol fermentation, YNB medium was supplemented with 10% glucose or Corn Steep Liqour (CSL) medium supplemented with hydrolyzed corn maltodextrin were used. When antibiotic selection was needed, strains were incubated with ampicillin (100 \u03bcg ml\u22121) or geneticin (200 mg L\u22121). When required, histidine (20 mg L\u22121), leucine (60 mg L\u22121), lysine (20 mg L\u22121), or uracil (20 mg L\u22121) were added. Chromogenic substrates X-gal and IPTG (Fermentas, Vilnius, Lithuania) were used according to the manufacturer specifications."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe yeast and E. coli strains used",
+                                "describe growth conditions"
+                            ],
+                            "num_characters": 1395,
+                            "outline_medium": [
+                                "describe strains and growth conditions used"
+                            ],
+                            "outline_short": [
+                                "describe strains and growth conditions used"
+                            ]
+                        },
+                        {
+                            "title": "DNA Manipulations",
+                            "paragraphs": [
+                                "Genomic DNA from S. cerevisiae strains was isolated using the Wizard\u00ae Genomic DNA Purification Kit (Promega, Madison, Wis. USA). Plasmid DNA from E. coli was isolated using the Wizard\u00ae Plus SV Minipreps DNA Purification System (Promega). Taq and High Fidelity polymerase mix, T4 DNA ligase, T4 DNA polymerase and restriction enzymes were used according to recommendation of supplier (Fermentas). S. cerevisiae transformation was performed by standard protocol (Sambrook and Russell 2001)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe DNA isolation and manipulation methods"
+                            ],
+                            "num_characters": 488,
+                            "outline_medium": [
+                                "describe DNA isolation and manipulation methods"
+                            ],
+                            "outline_short": [
+                                "describe DNA isolation and manipulation methods"
+                            ]
+                        },
+                        {
+                            "title": "Expression Cassette Preparation",
+                            "paragraphs": [
+                                "154 bp part of S. cerevisiae YJRWdelta12 sequence was amplified from genomic DNA of S. cerevisiae strain BY4742 using the primers",
+                                "and the other 180 bp part of this sequence was amplified from the same template using the primers",
+                                "Then these two parts containing delta sequences were fused via overlap PCR using primers SM16 and SM19, digested with EcoRI and HindIII and cloned into EcoRI/HindIII-linearized plasmid pUC57. The resulted plasmid was named pUC57-delta1\u20142, 807 bp DNA fragment corresponding to ADH1 gene (encoding alcohol dehydrogenase) promoter was amplified from genomic DNA of S. cerevisiae strain BY4742 using primers",
+                                "A 269 bp DNA fragment corresponding to CYC1 gene (encoding cytochrome C) terminator was amplified from genomic DNA of BY4742 strain using primers",
+                                "Then promoter and terminator were fused via overlap PCR using printers Ko419 and Ko454. The obtained DNA fragment was digested with SalI and XmaI endonucleases and cloned into corresponding sites of the plasmid pUC57-delta1\u20142 giving the plasmid pUC57-delta1\u20142-ADHpr-CYCt. A 1470 bp DNA fragment corresponding to the selective marker kanMX providing resistance to geneticin was cut out from the plasmid pRS303K with restriction endonucleases SacI and SmaI, blunt-ended and cloned into XbaI-digested and blunted plasmid pUC57-delta1\u20142-ADHpr-CYCt yielding the plasmid pUC57-delta1\u20142-ADHpr-CYCt-kanMX (FIG. 1A)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe preparation of ADH1 promoter and CYC1 terminator",
+                                "describe construction of plasmid pUC57-delta1\u20142-ADHpr-CYCt-kanMX"
+                            ],
+                            "num_characters": 1389,
+                            "outline_medium": [
+                                "describe preparation of expression cassette"
+                            ],
+                            "outline_short": [
+                                "describe preparation of expression cassette"
+                            ]
+                        },
+                        {
+                            "title": "Plasmid for PHO8 Expression",
+                            "paragraphs": [
+                                "A 1701 bp DNA fragment bearing the ORF of PHO8 gene coding for unspecific alkaline phosphatase was amplified from genomic DNA of S. cerevisiae strain BY4742 using primers",
+                                "This fragment was digested with BamHI and NotI and subcloned into BamHI/NotI digested plasmid pUC57-delta1\u20142-ADHpr-CYCt-kanMX. The resulted plasmid was designated pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX (FIG. 1B)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe construction of plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX"
+                            ],
+                            "num_characters": 382,
+                            "outline_medium": [
+                                "describe construction of plasmid for PHO8 expression"
+                            ],
+                            "outline_short": [
+                                "describe construction of plasmid for PHO8 expression"
+                            ]
+                        },
+                        {
+                            "title": "Plasmids for Truncated Versions of PHO8 Gene Expression",
+                            "paragraphs": [
+                                "It was decided to create several truncated forms of alkaline phosphatase. The first form lacks the 60 initial amino acids that are responsible for transmembrane protein delivery; and 22 terminal amino acids, that compose the C-terminal propeptide that is normally cleaved from the protein in vacuole. A 1452 bp DNA fragment corresponding to this truncated form, was amplified from genomic DNA of BY4742 strain using primers",
+                                "digested with endonucleases BamHI and NotI and cloned into BamHI/NotI digested plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX. The obtained plasmid was designated pUC57-delta1\u20142-ADHpr-PHO8_trunc-CYCt-kanMX (FIG. 2A). The second form of alkaline phosphatase was constructed that has extracellular export signal from mating pheromone a-factor (MFl\u03b1) instead of its natural delivery signal. To construct such a form, the 258 bp DNA fragment corresponding to MFl\u03b1 export signal, was amplified from genomic DNA of BY4742 strain using primers SM31 (CGC  AGA TTT CCT TCA ATT TTT ACT GCA G) and SM32 (GAC ATT CTT CTT CTT GTG TGA TGC AGA CTC TCT TTT ATC CAA AGA TAC CCC), and the 1452 bp DNA fragment corresponding to PHO8 truncated form, was amplified from the same template using primers",
+                                "and SM29. Then both fragments were fused by overlap-PCR using primers SM31/SM29, digested with endonucleases BamHI and NotI and cloned into BamHI/NotI digested plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX. The constructed plasmid was designated pUC57-delta1\u20142-ADHpr-MAT\u03b1sign.-PHO8_trunc-CYCt-kanMX (FIG. 2B). The third form of alkaline phosphatase has the extracellular export signal from acid phosphatase (PHO5). To construct such a form, a 1503 bp DNA fragment corresponding to PHO8 truncated form was fused with PHO5 delivery signal, and amplified from genomic DNA of BY4742 strain using primers",
+                                "digested with endonucleases BamHI and NotI and cloned into BamHI/NotI digested plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX. The Constructed plasmid was designated as pUC57-delta1\u20142-ADHpr-PHO5sign.-PHO8_trunc-CYCt-kanMX (FIG. 2C)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe construction of plasmid pUC57-delta1\u20142-ADHpr-PHO8_trunc-CYCt-kanMX",
+                                "describe construction of plasmid pUC57-delta1\u20142-ADHpr-MAT\u03b1sign.-PHO8_trunc-CYC",
+                                "describe construction of plasmid pUC57-delta1\u20142-ADHpr-PHO5sign.-PHO8_trunc-CYC",
+                                "describe purpose of truncated versions"
+                            ],
+                            "num_characters": 2035,
+                            "outline_medium": [
+                                "describe construction of plasmids for truncated PHO8 forms",
+                                "outline different truncated forms constructed"
+                            ],
+                            "outline_short": [
+                                "describe construction of plasmids for truncated PHO8 forms"
+                            ]
+                        },
+                        {
+                            "title": "Selection of S. Cerevisiae Transformants",
+                            "paragraphs": [
+                                "The vectors containing full or truncated versions of the PHO8 gene were digested with the AhdI restriction endonuclease. After that DNA fragments containing expression cassette and selective marker flanked by two parts of delta sequences, were eluted from an agarose gel and used for transformation of S. cerevisiae strains BY4742 and AS400. The transformants were selected on a solid YPD medium supplemented with 200 mg/L of geneticin. The selected transformants were stabilized by alternating cultivation in non-selective and selective media and examined by diagnostic PCR using a forward primer specific to the ADH1 promoter (Ko419) and a reverse one specific to PHO8 gene (Ko509)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe transformation and selection of yeast transformants"
+                            ],
+                            "num_characters": 684,
+                            "outline_medium": [
+                                "describe transformation and selection of yeast transformants"
+                            ],
+                            "outline_short": [
+                                "describe transformation and selection of yeast transformants"
+                            ]
+                        },
+                        {
+                            "title": "Assay of Alkaline Phosphatase and ATP in Yeast Cells",
+                            "paragraphs": [
+                                "Alkaline phophatase activity was assayed by using p-nitrophenylphosphate as the substrate with cell extracts as the enzyme source, as described elsewhere (Kaneko et al., 1982). One unit of alkaline phosphatase activity was defined as the amount of enzyme which liberates 1 \u03bcmol of p-nitrophenol per min under the assay conditions.",
+                                "ATP extraction from the S. cerevisiae cells was performed using the method of metabolites extraction with boiling ethanol and subsequent evaporation (Entian et al. 1983). To optimize ATP assay via ethanol extraction, a wide range of yeast biomass from 2 to 15 mg was tested. Reproducible results were obtained during ATP extraction with 8-10 mg of S. cerevisiae cells using 1 ml of boiling ethanol. The measurement of extracted ATP level was determined using a mixture of hexokinase and glucose-6-phosphate dehydrogenase (Ano Y. et al. 2005)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe assay methods for alkaline phosphatase and ATP"
+                            ],
+                            "num_characters": 874,
+                            "outline_medium": [
+                                "describe assay methods for alkaline phosphatase and ATP"
+                            ],
+                            "outline_short": [
+                                "describe assay methods for alkaline phosphatase and ATP"
+                            ]
+                        },
+                        {
+                            "title": "Ethanol Production and Growth Analysis",
+                            "paragraphs": [
+                                "Strains were grown overnight in YPD media followed by washing of cells with sterile water and an equal amounts of each culture were used to inoculate test media. For S. cerevisiae BY4742 strain and its PHO8-expressing derivatives, YNB supplemented with 10% glucose was used. Strains were grown using a rotary shaker Inkubator 1000 Heidolph (Schwabach, Germany) under semi-anaerobic (120 revolutions/min) conditions at 30\u00b0 C. and samples were taken every 24 hours. For S. cerevisiae AS400 strain and its PHO8-expressing derivatives, a Corn Steep Liquor (CSL) medium supplemented with hydrolyzed maltodextrin was used. Strains were incubated under semi-anaerobic condition at 34\u00b0 C. for 2 days and samples were taken every 24 hours. Ethanol and glucose concentrations were measured by protocols described elsewhere (Gonchar et al., 2001, Gonchar, 1998).",
+                                "**CSL Medium Preparation**",
+                                "To prepare Solution 1, 200-280 g of maltodextrin was mixed with 800 ml of water and the pH adjusted to 6.0. Alpha-amylase (at a rate of 0.1 unit of Liquizyme SC DS per grant of maltodextrin) was added for liquefaction with the mixture heated to 80\u00b0 C. and sample held for 30 minutes.",
+                                "To prepare Solution 2, 63 ml of CSL Concentrate (containing \u02dc50% dry solids) was mixed with 137 ml of deionized water. Following that Solutions 1 and 2 were autoclaved, cooled, combined and mixed. An aliquot of glucoamylase (at a rate of 0.2 units of glucoamylase per gram of maltodextrin) was added to sterile flasks and the flasks were incubated at 28\u00b0 C. Glucose concentration was determined before yeast inoculation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe growth conditions for ethanol production",
+                                "describe measurement of ethanol and glucose concentrations",
+                                "describe CSL medium preparation"
+                            ],
+                            "num_characters": 1586,
+                            "outline_medium": [
+                                "describe methods for ethanol production and growth analysis"
+                            ],
+                            "outline_short": [
+                                "describe methods for ethanol production and growth analysis"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "Results",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Cloning and Overexpression of Intact Form of Alkaline Phosphatase",
+                            "paragraphs": [
+                                "S. cerevisiae unspecific alkaline phosphatise, encoded by gene PHO8, catalyzes the hydrolysis of the diphosphate bonds in different compounds including ATP (Kaneko et al., 1982). Therefore this enzyme may operate as other ATPases. In order to carry out the hydrolysis of diphosphate bonds in cells The activity of this enzyme need to be quite high. The activity of this cloned enzyme in S. cerevisiae cells depends on many factors, among them strength of chosen promoter, stability of produced mRNA, absence of posttranslational enzyme inhibition, and the number of copies of the gene integrated into the host genome. We have shown that ADH1 promoter of the gene encoding alcohol dehydrogenase provides inducible expression of target genes, under the conditions of alcoholic fermentation (Sibirny et al, 2011). We decided to use this promoter for PHO8 gene expression. In order to get higher copy number of PHO8 gene integrated into the yeast genome, an integrative plasmid containing \u03b4 sequences was constructed. The S. cerevisiae \u03b4 sequences are the long terminal repeats of the retro-transposons Ty1 and Ty2. A total of approximately 425 \u03b4 sequences are typically dispersed throughout the yeast genome. It was shown that usage of \u03b4 sequences-based vectors, can provide tandem multicopy integration in one or several sites of yeast genomic DNA via homologous recombination (Lee and Da Silva, 1997). The \u03b4 sequences-based plasmid harboring PHO8 gene under the control of ADH promoter was constructed as described in Materials and Methods and subsequently transformed into S. cerevisiae laboratory strain BY4742.",
+                                "The specific alkaline phosphatase activity of the selected recombinant strains was assayed. Among 11 tested transformants, six strains were characterized by considerably higher specific phospatase activity (FIG. 3, strains 1-5 and 11). In these strains, the specific activity of alkaline phospatase was 30-40-fold higher when compared to the initial host strain BY4742. Thus, this constructed expression vector can be used for efficient multi-copy integration into the genome of a Saccharomyces host.",
+                                "Genomic DNA preparations isolated from the recombinant strains, was subjected to dot-blot hybridization to estimate plasmid copy number which harbour the target gene, integrated into the genome. Gene PHO8 was used as a probe (FIG. 4). It was revealed that recombinant strains contained from 1 to 7-9 additional copies of PHO8 gene. A good correlation between copies number of PHO8 gene and specific alkaline phospatase activity was observed.",
+                                "The Southern-hybridization was performed to analyse the vector Integration pattern of the tested strains (FIG. 5, A). Total genomic DNA from WT and recombinant strains were HindIII digested and hybridized with a labelled PHO8 gene. It was shown that constructed \u03b4 sequences-based vector provide tandem multi-copy integration in up to three sites of yeast genomic DNA in so called \u201chead-to-tale\u201d conformation (FIG. 5, B), which is consistent with published results (Lee and Da Silva, 1997).",
+                                "Surprisingly, several of the selected recombinant strains revealed impaired biomass accumulation, which does not correlate with the increased alkaline phosphatise activity level (FIG. 6).",
+                                "The plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX was used for transformation of industrial strain AS400. Selected transformants possess at the most 5.5-fold increase of specific activity of alkaline phospatase as compared with parental strain AS400 (FIG. 7). Recombinant strains with the highest specific activity of alkaline phospatase were subjected to tested for the efficiency of alcoholic fermentation on a CSL medium supplemented with hydrolyzed corn meal. Strains AS400+-PHO8-6, AS400+PHO8-8, AS400+PHO8-3B, AS400+PHO8-12 produced increased amount of ethanol (84.4, 86.5, 84.4, 90.1 g/L) as compared with the parental strain (79.1 g/L) (Table 1). Some of the analyzed recombinant strains possessed slightly lower intracellular ATP level than that of wild type strain AS400 (FIG. 8)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce alkaline phosphatase",
+                                "describe gene expression system",
+                                "construct integrative plasmid",
+                                "transform S. cerevisiae laboratory strain BY4742",
+                                "assay specific alkaline phosphatase activity",
+                                "estimate plasmid copy number",
+                                "analyze vector integration pattern",
+                                "test for impaired biomass accumulation"
+                            ],
+                            "num_characters": 4028,
+                            "outline_medium": [
+                                "describe PHO8 gene and its function",
+                                "construct expression vector with ADH promoter and \u03b4 sequences",
+                                "transform S. cerevisiae with plasmid and analyze alkaline phosphatase activity",
+                                "analyze integration pattern and biomass accumulation"
+                            ],
+                            "outline_short": [
+                                "construct expression vector for PHO8 gene",
+                                "analyze recombinant strains for alkaline phosphatase activity and gene copy number"
+                            ]
+                        },
+                        {
+                            "title": "Cloning and Overexpression  of Truncated Forms  of Alkaline Phosphatase",
+                            "paragraphs": [
+                                "As described herein, some of the recombinant strains bearing plasmid pUC57-delta1\u20142-ADHpr-PHO8-CYCt-kanMX had up to 30 fold increase in alkaline phosphatase activity, but their growth level did not differ substantially from that of the WT strain. This result can be explained by the vacuolar localization of the alkaline phosphatase that may hinder ATP hydrolysis. In order to test we decided to construct strains containing gene encoding truncated version of alkaline phosphatase that will remain in the cytoplasm instead of being delivered to the vacuole. However there are several drawbacks that prevent that obstruct the generation of an active cytosolic form of alkaline phosphatase. First, it was shown that alkaline phosphatase is synthesized as an inactive precursor containing a C-terminal propeptide that is afterwards cleaved from the protein in vacuole in a PEP4-dependent manner (Klionsky D. and Emr S. D. 1989). During vacuolar delivery, which shares the same early stages with the secretory pathway, the precursor form of this enzyme is glycosylated in the endoplasmic reticulum. It has also been shown that the active form of alkaline phosphatase receives its metal cofactor zinc in the vacuole rather than in earlier compartments of the secretory pathway (Qiao W. et al. 1985). To estimate how these factors influence this enzyme's activity, we decided to produce several truncated forms of alkaline phosphatase. The first form lacks 60 initial amino acids that are responsible for transmembrane protein delivery; and 22 terminal amino acids, that composite the C-terminal propeptide that is normally cleaved from the protein in the vacuole. The second form has an extracellular export signal from mating pheromone a-factor (MFl\u03b1) instead of its natural delivery signal, and, finally, the third form constructed has an extracellular export signal from acid phosphatase (gene PHO5).",
+                                "The DNA fragments containing the expression cassette of three mentioned PHO8 modified forms in part with selective marker flanked by \u03b4 sequences were used to transform S. cerevisiae strain BY4742. The presence of these expression cassettes was confirmed after transformation by PCR.",
+                                "The specific alkaline phosphatase activity of the obtained recombinant strains was assayed and compared with the activity of transformants with intact form of PHO8. The intracellular alkaline phosphatase activity in strains containing plasmid pUC57-delta1\u20142-ADHpr-PHO8_trunc-CYCt-kanMX was at the same level as in strains with intact form of PHO8. Intracellular alkaline phosphatase activity in strains containing plasmid pUC57-delta1\u20142-ADHpr-MAT\u03b1sign.-PHO8_trunc-CYCt-kanMX was very low, almost in the same level as in WT strain. Most likely this form of alkaline phosphatase is secreted from the cells. The intracellular alkaline phosphatase activity of strains containing plasmid pUC57-delta1\u20142-ADHpr-PHO5sign.-PHO8_trunc-CYCt-kanMX was high on the first day of cultivation. This activity decreased on the second day of cultivation and this can be explained by the delay in the export of the secreted form of alkaline phosphatase. (FIG. 9 A, B).",
+                                "Growth kinetics of the constructed recombinants was tested. Almost all strains with different truncated PHO8 forms had impaired growth on the first and, to a lesser degree by the second day of cultivation (FIG. 10) These recombinant strains especially those that had a truncated form of alkaline phospatase that remains in the cell's cytoplasm produced significantly less ethanol, also (FIG. 11). This indicates that the cytosolic form of alkaline phosphatase also strongly influences the level of other cellular phosphorylated compounds, that affect all of the metabolic pathways, in particular, the reactions responsible for alcoholic fermentation.",
+                                "In conclusion and on the basis of this work, the intact vacuolar form of alkaline phosphatase is suitable for achieving higher ethanol in S. cerevisiae cells."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "explain drawbacks of generating active cytosolic form",
+                                "construct truncated forms of alkaline phosphatase",
+                                "transform S. cerevisiae strain BY4742",
+                                "assay specific alkaline phosphatase activity",
+                                "test growth kinetics of recombinants",
+                                "analyze ethanol production",
+                                "conclude on suitability of intact vacuolar form"
+                            ],
+                            "num_characters": 3944,
+                            "outline_medium": [
+                                "describe limitations of intact alkaline phosphatase and construct truncated forms",
+                                "transform S. cerevisiae with plasmids and analyze alkaline phosphatase activity",
+                                "analyze growth kinetics and ethanol production"
+                            ],
+                            "outline_short": [
+                                "construct and analyze recombinant strains with truncated forms of alkaline phosphatase"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A strain of S. cerevisiae comprising a nucleic acid sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell.",
+        "2. The strain of claim 1 wherein the alkaline phosphatase enzyme expressed by the nucleic acid sequence contains a vacuolar targeting sequence and the alkaline phosphatase is present in the vacuole of the cell.",
+        "3. The strain of claim 1 wherein the nucleic acid encoding the alkaline phosphatase enzyme lacks a vacuolar targeting sequence and alkaline phosphatase is present in the cytoplasm of the cell.",
+        "4. The strain of claim 1 wherein the alkaline phosphatase is overexpressed in the cell relative to a parent cell lacking the nucleic acid sequence encoding the alkaline phosphatase.",
+        "5. The strain of claim 4 wherein the cell contains multiple copies of the nucleic acid sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell.",
+        "6. The strain of claim 4 wherein the nucleic acid sequence encoding an alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme in the cell is integrated into the genome of the cell.",
+        "7. The strain of claim 1 wherein the promoter is an ethanol inducible promoter from S. cerevisiae.",
+        "8. The strain of claim 7 wherein the inducible promoter is an alcohol dehydrogenase promoter.",
+        "9. The strain of claim 1 further characterized by producing a higher titer of ethanol during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme.",
+        "10. The strain of claim 1 further characterized by having a reduced biomass accumulation rate during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme.",
+        "11. A method of producing ethanol comprising growing the S. cerevisiae according to claim 1 under anaerobic growth conditions for a time sufficient to produce ethanol.",
+        "12. The strain of claim 4 wherein the promoter is an ethanol inducible promoter from S. cerevisiae.",
+        "13. The strain of claim 12 wherein the inducible promoter is an alcohol dehydrogenase promoter.",
+        "14. The strain of claim 4 further characterized by producing a higher titer of ethanol during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme.",
+        "15. The strain of claim 4 further characterized by having a reduced biomass accumulation rate during an anaerobic fermentation period than a parent strain lacking the nucleic acid sequence encoding the alkaline phosphatase enzyme operably linked to a promoter that expresses the alkaline phosphatase enzyme.",
+        "16. A method of producing ethanol comprising growing the S. cerevisiae according to claim 4 under anaerobic growth conditions for a time sufficient to produce ethanol."
+    ]
+}

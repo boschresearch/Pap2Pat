@@ -1,0 +1,124 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce cloud storage
+- describe prior art of cloud storage
+- define erasure codes
+- explain optimal erasure codes
+- illustrate err-mail example
+- describe limitations of mirroring
+- introduce erasure codes for storage systems
+- explain MDS codes
+- describe Reed-Solomon code
+- mention LDPC and Raptor codes
+- discuss limitations of prior MDS codes
+- propose Hierarchical Codes
+- discuss node failure recovery
+- explain functional and exact recovery
+- describe MDS codes for data protection
+- discuss data recovery and regeneration
+- motivate need for flexible MDS codes
+- describe limitations of traditional MDS codes
+- propose minimum repair bandwidth MDS codes
+- discuss tradeoff between nodes and repair bandwidth
+- motivate need for progressive engagement MDS codes
+- propose new objective for MDS codes
+
+## BRIEF SUMMARY
+
+- introduce cloud storage system challenge
+- define problem of single storage node failure
+- propose linear combination of cost metrics
+- introduce progressive engagement property
+- describe permutation code example
+- present search algorithm for rotation codes
+- illustrate simulation results
+- introduce progressive engagement scheme
+- summarize method for data failure recovery
+- define total cost function
+- describe accessing cost metric
+- describe repair bandwidth cost metric
+- minimize total cost during data recovery
+- use MDS code with progressive engagement property
+- determine optimal number of participating nodes
+- solve integer equation for optimal solution
+- find p* nodes from parity set
+- define binary indicator αi
+- represent accessing cost with cost matrix C
+- denote repair bandwidth cost with γ(p)
+- normalize weights ω1 and ω2
+- sort accessing costs using quicksort algorithm
+- iterate over p to find minimum A(p)+w2γ(p)
+- incrementally engage parity nodes
+- calculate total cost after each engagement
+- search for code with lowest repair bandwidth
+- construct directed weighted graph
+- use rotation codes for search algorithm
+- define distributed storage system
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- formulate optimization problem
+- provide polynomial-time solution
+- apply solution to dynamic cloud system
+- disclose design for MDS code with progressive engagement property
+- motivate progressive engagement property
+- limitations of traditional MDS codes
+- limitations of existing MDS codes for reducing repair bandwidth
+- introduce progressive engagement property
+- define MDS code with progressive engagement property
+- describe system model
+- formulate problem of optimal node selection
+- explain progressive engagement scheme
+- describe example of MDS code with progressive engagement property
+- illustrate code structure
+- calculate repair bandwidth
+- show flexibility of code
+- introduce search algorithm for rotation codes
+- modify recovering scheme for permutation code
+- focus on exact repair
+- define repair bandwidth
+- describe prior work on functional repair
+- describe prior work on exact repair
+- describe limitations of prior work
+- consider storage system
+- describe system model
+- assume erasure code with MDS property
+- describe coding operation
+- maintain data integrity
+- describe traditional MDS code
+- describe proposed coding scheme
+- define accessing cost and repair bandwidth cost
+- formulate integer programming problem
+- solve optimization problem
+- define progressive engagement property
+- motivate MDS codes with progressive engagement property
+- provide formal definition for MDS codes with progressive engagement property
+- state proposition 1
+- derive repair bandwidth cost equation
+- obtain lower bound for exact repair
+- compare repair bandwidth of permutation code and Reed-Solomon code
+- describe implementation of MDS code in C
+- evaluate recovery speed of MDS code
+- include accessing cost in experiment
+- plot total cost vs. number of participating nodes
+- introduce progressive engagement in rotation codes
+- define rotation codes
+- constrain encoder to be a member of a family of codes
+- search for a code with the lowest repair bandwidth
+- reduce search space by using symmetrical properties
+- choose λij parameters to make the code an MDS code
+- check if the code provides the progressive engagement property
+- employ a conventional algorithm for single failure recovery
+- describe an example of a rotation code
+- show that the code provides the progressive engagement property
+- compare repair bandwidth of rotation code and permutation code
+- discuss alterations and modifications to the embodiments
+- discuss combinations of elements in claims
+- discuss excision of disclosed elements
+- define words used in the specification
+- discuss equivalent structure, material or acts
+- discuss substitution of elements in claims
+- discuss insubstantial changes from the claimed subject matter
+

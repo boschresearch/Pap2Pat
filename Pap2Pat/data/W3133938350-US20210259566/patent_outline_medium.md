@@ -1,0 +1,38 @@
+# DESCRIPTION
+
+- introduce CNAP devices
+- describe measurement methods
+- motivate need for validation
+- describe limitations of current validation methods
+- introduce invention
+- describe validation method
+- describe apparatus for validation
+- compare with intermittent blood pressure monitors
+- describe CNAP control loop
+- explain importance of control deviation
+- describe comparator function
+- motivate need for standardized validation
+- describe embodiment variants of apparatuses and methods
+- describe modulation of light pulses
+- describe simulation module
+- describe closed control loop
+- describe validation methods
+- describe FIG. 1 and FIG. 2
+- describe finger dummy
+- motivate haptic properties
+- describe optical characteristics
+- explain modulation of light source
+- describe control mechanism
+- introduce simulation module
+- describe comparator function
+- explain pressure-volume diagram
+- determine pulsatile component
+- describe S-curve shape
+- parameterize S-curve
+- set up system of equations
+- describe hysteresis
+- check and correct comparator function
+- close control loop
+- describe validation methods
+- illustrate tolerance limits
+

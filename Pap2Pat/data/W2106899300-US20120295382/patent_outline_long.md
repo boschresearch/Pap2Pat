@@ -1,0 +1,121 @@
+# DESCRIPTION
+
+- claim priority to provisional application
+
+## BACKGROUND OF THE INVENTION
+
+- relate to patterning of metallic, insulator, and semiconductor thin films
+- introduce large area electronics
+- describe limitations of photolithography
+- motivate alternative patterning methods
+- describe fine metal masks with physical vapor deposition
+- limitations of fine metal masks
+- describe printheads for selective deposition
+- limitations of printheads
+- describe materials uniformly pre-coated on a secondary substrate
+- limitations of materials uniformly pre-coated on a secondary substrate
+- describe patterned cylinders for selective deposition
+- limitations of patterned cylinders
+- describe specialized materials with photochemical reaction
+- limitations of specialized materials
+- describe lasers to selectively ablate material
+- limitations of lasers to selectively ablate material
+- describe U.S. Pat. No. 7,282,430
+- differences between U.S. Pat. No. 7,282,430 and the instant invention
+- describe Cuomo's method to pattern films
+- limitations of Cuomo's method
+- describe Johnson's method for in situ lithography
+- limitations of Johnson's method
+- describe U.S. Pat. No. 7,435,353
+- differences between U.S. Pat. No. 7,435,353 and the instant invention
+- describe U.S. Pat. No. 7,524,431
+- differences between U.S. Pat. No. 7,524,431 and the instant invention
+- describe U.S. Pat. No. 7,759,609
+- differences between U.S. Pat. No. 7,759,609 and the instant invention
+- describe German patent DE 4318663 C1
+- differences between German patent DE 4318663 C1 and the instant invention
+- describe U.S. Pat. No. 4,535,023
+- differences between U.S. Pat. No. 4,535,023 and the instant invention
+- describe European patent document EP 0233747
+- differences between European patent document EP 0233747 and the instant invention
+- describe U.S. Pat. No. 4,348,473
+- differences between U.S. Pat. No. 4,348,473 and the instant invention
+- summarize limitations of prior art
+- motivate the instant invention
+- describe the instant invention
+- advantages of the instant invention
+
+## SUMMARY OF THE INVENTION
+
+- introduce phase change lithography
+- describe process of phase change lithography
+- describe applications of phase change lithography
+- summarize advantages of phase change lithography
+
+## DESCRIPTION OF THE PREFERRED EMBODIMENT
+
+- introduce phase change lithography
+- describe resist materials
+- list compatible resist materials
+- explain limitations of photolithographic techniques
+- describe carbon dioxide as a prime example
+- illustrate proof-of-concept investigation
+- describe substrate cooling
+- introduce resist gas flow
+- explain condensation process
+- describe substrate cooling methods
+- monitor condensation rate
+- explain effect of solid structure on patterning
+- describe resist gas compression
+- illustrate compressor design
+- explain compression process
+- describe material compression analogy
+- introduce temperature-pressure phase diagram
+- describe melting point process
+- illustrate microfeatured stamp/roller
+- describe patterning resolution
+- explain thermal energy transfer
+- describe direct application of thermal energy
+- illustrate transparent conducting oxide
+- explain joule heating
+- describe resistive heating
+- illustrate optical patterning
+- describe light absorption
+- explain wavelength selection
+- describe optically dense guest material
+- illustrate Alq3 example
+- describe substrate absorption
+- illustrate microfeatured stamp
+- describe stamp patterning
+- explain stamp material selection
+- describe stamp design
+- illustrate rotogravure printing analogy
+- describe stamp alignment
+- explain substrate cooling during patterning
+- describe chamber wall cooling
+- describe solid condensate resist patterning environment
+- specify gas concentrations
+- motivate OLED display application
+- specify feature dimensions for OLED displays
+- motivate OLED lighting component application
+- specify feature dimensions for OLED lighting components
+- motivate organic photovoltaic array application
+- specify feature dimensions for organic photovoltaic arrays
+- motivate insulating thin film application
+- specify feature dimensions for insulating layers
+- describe partial-depth stamping process
+- illustrate burn-off process
+- describe uniform sublimation process
+- specify energy sources for uniform sublimation
+- describe pattern transfer to deposited film
+- illustrate codeposition and single material deposition
+- describe film deposition methods
+- specify deposition environments
+- describe thermal baffles usage
+- describe substrate cooling during deposition
+- describe uniform sublimation during deposition
+- illustrate patterning by subliming resist mask
+- describe resist lift-off process
+- describe advantages of dry deposition and removal cycle
+- describe chamber design and substrate temperature control
+

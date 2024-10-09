@@ -1,0 +1,153 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce composite material damage detection
+
+## BACKGROUND
+
+- introduce carbon fiber reinforced polymer (CFRP) composite materials
+- describe advantages of CFRP composite materials
+- describe challenges of structural health monitoring (SHM) in composites
+- describe types of damage in composite structures
+- describe barely visible impact damage (BVID)
+- describe impact monitoring systems limitations
+- describe importance of efficient SHM techniques
+- describe manufacturing flaws and operational damage
+- describe BVID during manufacturing and service life
+- describe low velocity impact events
+- describe BVID definition and characterization
+- describe importance of detecting impact damage
+- describe nondestructive evaluation and SHM methods
+- describe acoustic emission methods for SHM
+- describe uniqueness of current disclosure
+
+## SUMMARY
+
+- introduce acoustic emission based SHM method
+- describe method for obtaining and analyzing AE signal
+- describe differentiating between internal damage and benign impact
+- describe predicting future behavior of composite structure
+- describe predicting crack propagation and complex damage formation
+- describe indicating damage by irregularities in force-time curve
+- describe determining force-time, velocity-time, displacement-time, and energy-time histories
+- describe AE signal characteristics for impact hit and irreversible damage
+- describe estimating size, location, shape, and extent of impact damage
+- describe method for detecting damage in composite structure
+- describe utilizing ultrasound scans to characterize damage size, shape, and location
+
+## DETAILED DESCRIPTION OF A PREFERRED EMBODIMENT
+
+- define scope of disclosure
+- clarify terminology usage
+- explain open-ended language
+- describe singular and plural forms
+- define ranges and endpoints
+- explain numerical data expressions
+- describe "about" and "approximately"
+- clarify "optional" and "optionally"
+- introduce various embodiments
+- explain embodiment descriptions
+- describe combining features
+- incorporate references by reference
+- propose methodology for recording wave signals
+- describe use of AE system and PWAS
+- motivate low-velocity impact events
+- describe passive sensing diagnosis process
+- introduce extracting acoustic emission signals
+- describe impact testing of instrumented CFRP composite plates
+- describe experimental setup
+- introduce ASTM D7136 drop weight impact testing machine
+- describe MISTRAS AE system
+- describe PWAS mounted on coupons
+- describe impact testing experiments
+- provide details of impact tests
+- describe controlled damage sizes on coupons
+- introduce Table 1
+- describe FIG. 1
+- describe FIG. 2
+- describe FIG. 3 and FIG. 4
+- introduce impact testing on composite coupons
+- describe immersion tank setup
+- explain quad plot creation
+- present results for AE1 coupon
+- present results for AE2 coupon
+- present results for AE3 coupon
+- introduce AE signal signature analysis
+- describe preliminary sensing results
+- present signature 1 and signature 2 signals
+- analyze time frequency of AE signal signature 2
+- present AE hits of signature 1 and signature 2
+- discuss potential industrial applications
+- introduce BVID in composite aircraft structures
+- describe impact testing methodology
+- explain AE based structural health monitoring
+- describe manufacturing of quasi-isotropic CFRP composites
+- explain experimental setup for ASTM drop weight impact testing
+- describe experimental setup for acoustic emission recording
+- introduce methodology of analyzing impact testing data
+- explain calculation of impact velocity
+- describe energy absorption calculation
+- present damage identification methodology
+- discuss distinguishing between different types of damage
+- introduce real-time impact monitoring
+- describe conducting ASTM D7136 drop weight impact testing
+- explain damage identification based on impact monitoring
+- discuss distinguishing between different types of damage
+- introduce rapid, remote and real-time impact monitoring
+- describe structural health monitoring technique
+- explain AE signal analysis and mode separation study
+- discuss impact events and damage formation
+- introduce manufacturing of composite plates
+- conclude with potential applications
+- define velocity and displacement history equations
+- calculate velocity and displacement history
+- calculate energy absorbed by coupon
+- describe impact experiments on 2-mm quasi-isotropic coupons
+- present details of impact tests
+- analyze data to obtain force-time, velocity-time, displacement-time, and energy-time histories
+- conduct UT scans to obtain B-scan and C-scan images
+- describe experimental setup for UT scans
+- analyze UT scan data to obtain C-scan image, B-scan image, and A-scans
+- present quad plot of coupon I
+- analyze force-time history plot
+- analyze energy-time history plot
+- describe B-scan and C-scan images
+- conduct 1 J impact test on AE instrumented 2-mm composite coupon
+- acquire AE signals using MISTRAS AE system
+- analyze AE signals to identify impact hits
+- separate time domain signals and FFTs for 1st and 2nd impact hits
+- conduct 16 J impact test on AE instrumented 2-mm composite coupon
+- acquire AE signals and force-time history data
+- analyze data to obtain energy-time history, B-scan, and C-scan images
+- analyze AE signals
+- observe impact hit
+- note cable detachment issue
+- discuss future experiments
+- separate time domain signals
+- analyze FFTs
+- observe low frequency flexural modes
+- separate hits from damage propagation
+- analyze C-scan image
+- take closer look at PWAS 2 signals
+- separate high amplitude impact hit
+- discuss future goal
+- perform mode separation study
+- use SAFE method
+- analyze impact hits
+- conduct time-frequency analysis
+- superimpose with group velocity dispersion curve
+- observe strong A0 mode
+- analyze AE hit from damage growth
+- observe strong S0 and SH0 mode
+- discuss preliminary inspection
+- use AE signal signature identification
+- modify ASTM D7136 standard test method
+- conduct preliminary impact tests
+- bond PWAS on composite coupons
+- perform drop weight impact tests
+- conduct UT scans
+- use X-ray micro-CT technique
+- conduct profilometry scans
+- discuss modifications and variations
+

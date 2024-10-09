@@ -1,0 +1,277 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce autonomous platforms
+
+## SUMMARY
+
+- motivate realistic simulated environmental scenes
+- introduce environmental scene generators
+- describe probabilistic distributions of scenes
+- describe traffic scene generators
+- describe object characteristics sampling
+- describe multiple characteristics sampling
+- describe joint probability distributions
+- describe autoregressive decomposition
+- describe sequential object insertion
+- describe joint probability distribution sampling
+- describe probability determination of input traffic scenes
+- describe training of traffic scene generators
+- describe technical effects and benefits
+- describe realistic simulated environmental scenes usage
+- describe simulated environmental data generation
+- describe advantages over prior approaches
+- describe limitations of prior approaches
+- describe machine-learned traffic scene generation model
+- describe probabilistic distributions learning
+- describe example computer-implemented method
+- describe obtaining environmental data
+- describe sampling object parameters
+- describe updating environmental data
+- describe outputting synthesized traffic scene
+- describe iterative object insertion
+- describe end token termination
+- describe joint probability distribution determination
+- describe autoregressive factorization
+- describe shared backbone feature extraction
+- describe generating simulated sensor data
+- describe obtaining labels for simulated sensor data
+- describe training machine-learned models
+- describe example computing system
+- describe example autonomous vehicle control system
+- describe other example aspects
+
+## DETAILED DESCRIPTION
+
+- introduce autonomous vehicle example
+- describe operational scenario
+- define environment
+- describe dynamic objects
+- illustrate trajectories
+- introduce autonomous platform
+- describe sensors
+- detail sensor types
+- describe autonomous platform types
+- illustrate system overview
+- describe vehicle computing system
+- detail sensor data processing
+- describe motion planning
+- introduce vehicle types
+- describe operating modes
+- detail fully autonomous mode
+- detail semi-autonomous mode
+- detail manual mode
+- describe operating mode data structure
+- describe remote operating mode selection
+- describe onboard operating mode selection
+- introduce operations computing system
+- describe operations computing system components
+- detail communication networks
+- describe remote computing systems
+- detail remote computing system components
+- describe vehicle state monitoring
+- describe vehicle control
+- introduce vehicle computing system
+- describe communication system
+- detail autonomy computing system components
+- describe sensor data acquisition
+- summarize sensor data types
+- describe sensor data processing
+- introduce map data
+- describe map data types
+- detail positioning system
+- describe autonomy computing system functions
+- introduce perception function
+- describe perception data
+- introduce prediction function
+- describe prediction data
+- introduce motion planning function
+- describe motion planning data
+- detail motion planning optimization
+- describe motion plan implementation
+- introduce vehicle control systems
+- describe vehicle interface
+- detail motion control implementation
+- describe data storage
+- introduce remote data communication
+- describe vehicle user devices
+- detail user device functionality
+- describe user input processing
+- introduce sensor data processing
+- describe sensor data analysis
+- detail object perception
+- describe object prediction
+- introduce motion planning optimization
+- describe motion plan generation
+- detail motion plan optimization
+- describe motion plan implementation
+- introduce vehicle control systems
+- describe vehicle interface
+- detail motion control implementation
+- describe data storage
+- introduce remote data communication
+- describe vehicle user devices
+- detail user device functionality
+- describe user input processing
+- introduce vehicle computing system overview
+- conclude vehicle computing system description
+- describe autonomy computing system
+- motivate machine-learned models
+- summarize training process
+- introduce environmental scene data
+- define environment
+- describe data descriptive of environment
+- illustrate example traffic scene
+- describe objects in environment
+- associate objects with state data
+- process simulated scene
+- generate simulated sensor data
+- label simulated sensor data
+- train perception models
+- evaluate perception models
+- describe system for generating environmental scenes
+- introduce scene generator
+- describe inputs to scene generator
+- describe initialized scene data
+- describe map data
+- combine initialized scene data and map data
+- describe feature extractor
+- describe scene probability modeler
+- estimate joint probability distribution
+- factorize joint distribution
+- illustrate example iterations
+- describe scene generator output
+- describe scene generator
+- introduce environmental data
+- explain scene generation process
+- illustrate iteration in FIG. 5B
+- illustrate iteration in FIG. 5C
+- describe end token
+- parametrize subject vehicle and objects
+- explain initialized scene data
+- describe scene probability modeler
+- illustrate prediction models
+- explain sampling parameters
+- illustrate sampling process
+- describe factorizing joint distribution
+- explain autoregressive factorization
+- describe feature extractor
+- explain backbone models
+- illustrate recurrent neural network
+- illustrate convolutional neural network
+- describe output of feature extractor
+- illustrate parameter models
+- describe input multi-channel data structure
+- explain RNN and CNN
+- illustrate feature vector
+- describe parameter models in FIG. 7
+- explain parameter models conditioning
+- describe factorized distribution
+- explain class label distribution
+- describe position distribution
+- explain discrete distribution over segments
+- describe machine-learned distribution parameter prediction model
+- explain output of machine-learned distribution parameter prediction model
+- introduce multi-modal distribution
+- model bounding box size parameters
+- predict distribution parameters
+- sample bounding box size parameters
+- model orientation of bounding box
+- predict distribution parameters
+- sample orientation parameters
+- model velocity of object
+- predict distribution parameters
+- sample velocity parameters
+- model speed and direction
+- predict distribution parameters
+- sample speed and direction
+- use machine-learned models
+- predict mixture weights and distribution parameters
+- sample from component distributions
+- use scene probability modeler
+- sample repeatedly to obtain plurality of samples
+- obtain effective sample
+- exclude invalid samples
+- introduce model trainer
+- evaluate outputs of scene generator
+- input reference scene data
+- evaluate probability distribution
+- define objective for training
+- update parameters using optimization techniques
+- use teacher forcing and backpropagation
+- introduce method 800
+- obtain environmental data
+- sample parameters of new object
+- update environmental data
+- output environmental data
+- iterate sampling and updating
+- condition sampling on prior objects
+- factorize joint probability distribution
+- train machine-learned traffic scene generation model
+- introduce method 900A
+- generate simulated sensor data
+- obtain labels for simulated sensor data
+- train machine-learned models
+- introduce method 900B
+- input training instance into machine-learned model
+- generate objective metrics for machine-learned model
+- compare output with training data
+- train perception model
+- train prediction model
+- train motion planning model
+- use remote computing system for training
+- use operations computing system for training
+- divide training data into datasets
+- generate simulated LIDAR point clouds
+- generate simulated imagery
+- scale images for training and evaluation
+- describe machine-learned traffic scene generation model
+- describe shared backbone feature extraction
+- describe autoregressive model
+- describe convolutional long short-term memory neural network
+- describe joint probability distribution
+- describe training dataset
+- describe method for training machine-learned autonomous vehicle models
+- introduce scene generator models
+- describe end-to-end training of machine-learned models
+- depict flowchart of method for training scene generator models
+- obtain training data for scene generator models
+- collect training data using autonomous platforms or sensors
+- describe training data structure
+- select training instance based on training data
+- input training instance into scene generator model
+- generate loss metrics and objectives for scene generator model
+- modify scene generator model parameters based on loss metrics and objectives
+- describe end-to-end training of machine-learned models
+- depict block diagram of computing system
+- describe computing system components
+- describe machine-learning computing system components
+- store machine-learned models in computing system
+- receive machine-learned models from machine-learning computing system
+- implement machine-learned models in computing system
+- obtain simulated environmental scenes using machine-learned models
+- obtain simulated sensor data using machine-learned models
+- train autonomous vehicle systems using simulated traffic scenes
+- describe machine-learned models in machine-learning computing system
+- train machine-learned models using model trainer
+- perform supervised or unsupervised training techniques
+- use generalization techniques to improve model generalization
+- describe communication interface in computing system
+- describe communication interface in machine-learning computing system
+- communicate between computing systems over network
+- describe network components
+- illustrate example system for implementing present disclosure
+- describe alternative system configurations
+- perform computing tasks remotely or locally
+- store data and instructions in single or multiple memory devices
+- perform computer-implemented operations sequentially or in parallel
+- describe scope of present disclosure
+- describe modifications and variations within scope of disclosure
+- combine and rearrange features in claims
+- describe lists of example elements joined by conjunctions
+- describe terms such as "based on"
+- adapt, rearrange, expand, omit, combine, or modify claim elements
+- describe letter references to claim elements
+- describe operation identifiers
+

@@ -1,0 +1,124 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate feature selection
+- summarize benefits of feature selection
+- describe limitations of feature selection
+
+## BRIEF SUMMARY
+
+- introduce sparse learnable masks
+- describe dual mechanisms for mask scaling
+- describe objective of increasing mutual information
+- summarize empirical results
+- introduce method for training machine learning model
+- receive features and initialize mask vector
+- generate sparse mask vector
+- select features based on sparse mask vector
+- compute mutual information based error
+- update learnable mask vector
+- describe iterative process
+- describe final selected set of features
+
+## DETAILED DESCRIPTION
+
+- introduce sparse learnable masks (SLM) for scalable feature selection
+- describe SLM integration into deep learning or machine learning architecture
+- explain end-to-end learning through joint training with predictive models
+- describe improvement of scaling of feature selection
+- introduce modified learnable masks to select target number of features
+- explain improved mutual information (MI) regularization
+- depict block diagram of sparse learnable masks system 100
+- describe input data 102 for feature selection
+- explain types of input data (e.g., numerical, categorical)
+- describe training data for machine learning tasks
+- explain training/validation/testing split
+- describe learning techniques for training a model
+- explain supervised learning technique
+- describe backpropagation algorithm
+- explain output data 104 related to scalable feature selection
+- describe output data formats (e.g., display, computer programs)
+- integrate feature selection layer into machine learning architecture
+- describe predictor model fθ with learnable parameters θ
+- explain multiplication of binary mask Msp for feature selection
+- describe training for scalable feature selection
+- explain task loss and MI loss computation
+- update parameters θ and M using task loss and/or MI loss
+- describe normalization engine 106 for sparse non-linear normalization
+- explain sparsemax normalization
+- describe tempering engine 108 for gradually decreasing features
+- explain tempering threshold Ntmp
+- describe mask scaling engine 110 for scaling sparse feature mask
+- explain sparsity in sparsemax normalization
+- describe mutual information engine 112 for increasing MI
+- explain quadratic relaxation of MI
+- describe optimization to increase MI
+- connect Iq(X,Y) with predictions from predictor model
+- define quadratic error term E(X,Y)
+- explain feature selection to reduce error
+- describe consistency constraints for training
+- define probabilistic form
+- motivate consistency regularization
+- derive regularized objective
+- introduce mutual information engine
+- describe sparse learnable masks system
+- explain computational complexity
+- illustrate environment for implementation
+- describe server computing device
+- detail memory and instructions
+- explain data storage and retrieval
+- describe client computing device
+- detail user input and output
+- explain data transmission and display
+- describe data center and hardware accelerators
+- explain scalable feature selection services
+- illustrate machine learning model architectures
+- describe hardware accelerator
+- explain machine learning model deployment
+- describe network communication protocols
+- explain system configurations and quantities
+- illustrate process for training machine learning model
+- receive features for training
+- receive labels associated with features
+- receive total number of training steps
+- describe training machine learning model
+- explain sparse learnable masks system configuration
+- conclude process for training machine learning model
+- describe sparse learnable masks system
+- initialize learnable mask vector
+- perform training step
+- generate sparse mask vector
+- select features
+- compute mutual information based error
+- update learnable mask vector
+- output final selected features
+- output trained machine learning model
+- describe process for performing training step
+- receive number of features to be selected
+- generate sparse mask vector
+- select features
+- compute mutual information based error
+- update learnable mask vector
+- compare SLM to other feature selection approaches
+- describe datasets used for comparison
+- describe results of comparison
+- describe advantages of SLM
+- describe use of SLM for interpretation of global feature importance
+- describe how SLM accounts for feature inter-dependence
+- describe how SLM learns feature selection and task objective
+- describe how SLM improves generalization
+- describe implementation of SLM in digital electronic circuitry
+- describe implementation of SLM in computer software or firmware
+- describe implementation of SLM in computer hardware
+- define term "configured"
+- define term "data processing apparatus"
+- define term "computer program"
+- define term "database"
+- define term "engine"
+- describe how computer programs are executed
+- describe computer readable media
+- describe computing system architecture
+- describe client-server relationships
+- provide disclaimer for alternative examples
+

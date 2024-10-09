@@ -1,0 +1,448 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- define field of invention
+- describe background art
+- motivate need for invention
+
+### Lung Bone-Specific Metastasis
+
+- describe lung cancer
+- classify lung cancer
+- describe non-small-cell lung carcinoma
+- describe small-cell lung carcinoma
+- discuss prognosis
+- describe metastasis
+- describe skeletal metastasis
+- discuss bone metastasis
+- describe osteolytic lesions
+- describe osteosclerotic lesions
+- discuss molecular mechanisms
+- describe genome-aberration-induced transcriptional changes
+- discuss developmental history of cancer
+- describe predisposing factors
+- motivate need for understanding metastasis
+- describe complex mechanisms of metastasis
+- discuss tissue-specific metastatic cells
+- describe acquired functions of metastatic cells
+- motivate need for genetic markers
+- describe current lack of markers
+- motivate need for identifying new markers
+- describe potential therapeutic opportunities
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- identify role of MAF in lung cancer metastasis
+- associate c-MAF with bone metastasis
+- study c-MAF expression in patient cohorts
+- correlate c-MAF expression with clinical parameters
+- identify c-MAF as marker for prognosis
+- associate 16q22-q24 amplification with metastasis
+- describe in vitro method for diagnosis of metastasis
+- quantify c-MAF gene expression level
+- compare expression level to control sample
+- diagnose metastasis based on expression level
+- describe in vitro method for designing customized therapy
+- quantify c-MAF gene expression level
+- compare expression level to control sample
+- determine therapy based on expression level
+- describe in vitro method for designing customized therapy
+- quantify c-MAF gene expression level in bone metastatic tumor
+- compare expression level to control sample
+- determine therapy based on expression level
+- describe in vitro method for diagnosis of metastasis
+- determine if c-MAF gene is amplified or translocated
+- diagnose metastasis based on amplification or translocation
+- describe in vitro method for predicting clinical outcome
+- determine if c-MAF gene is amplified
+- predict poor clinical outcome based on amplification
+- describe use of c-MAF inhibitory agent
+- describe kit for predicting bone metastasis
+- quantify c-MAF expression level
+- compare expression level to reference level
+- determine therapy based on expression level
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce c-MAF gene and protein overexpression in lung cancer metastasis
+- correlate c-MAF expression levels with clinical parameters of lung cancer
+- describe c-MAF as a marker for diagnosis and prognosis of metastasis
+- outline in vitro method for diagnosis of metastasis and prognosis of tendency to develop metastasis
+- quantify c-MAF gene expression level in tumor sample
+- compare expression level with control sample
+- define c-MAF gene and its transcription factor function
+- describe DNA sequence and coding sequence of c-MAF
+- outline two messenger RNA transcribed from DNA sequence
+- define metastasis and secondary tumor
+- describe diagnosis of metastasis and prognosis of tendency to develop metastasis
+- outline method of quantifying c-MAF gene expression level
+- describe preferred embodiment of method using single marker
+- define subject and patient
+- describe clinical outcome and statistical significance
+- outline methods for obtaining tumor sample
+- describe methods for quantifying gene expression levels
+- outline conventional methods for detecting and quantifying mRNA levels
+- describe particular embodiment of quantifying c-MAF gene expression levels
+- define functionally equivalent variant of c-MAF protein
+- identify variants using methods
+- determine sequence similarity
+- quantify c-MAF protein expression level
+- describe detection and quantification methods
+- list antibodies and reagents
+- quantify c-MAF protein levels in particular embodiments
+- describe exosomes and circulating DNA
+- isolate exosomes
+- describe first method of the invention
+- compare c-MAF gene expression levels
+- diagnose metastasis or tendency to develop metastasis
+- determine reference sample or control sample
+- describe considerations for determining reference concentration
+- establish reference value using ROC curve
+- assign increased or reduced expression levels
+- describe increased expression levels
+- define positive diagnosis for metastasis
+- describe osteolytic bone metastasis
+- define greater tendency to develop metastasis
+- describe prediction of tendency to metastasize
+- describe statistical significance
+- define agent for avoiding or preventing bone degradation
+- define c-MAF inhibitory agent
+- identify c-MAF gene expression inhibitors
+- define Mammalian target of rapamycin (mTOR)
+- define mTor inhibitor
+- describe mTor inhibitors
+- describe mTor gene expression inhibition
+- describe direct inhibition of mTor protein activity
+- describe mTor inhibitors with multiple targets
+- define Src
+- define Src inhibitor
+- define COX-2
+- define COX-2 inhibitor
+- define outcome
+- define predicting
+- define good prognosis
+- define poor prognosis
+- define reference value
+- define treatment
+- define sample
+- define expression level
+- define gene copy number
+- define increased expression level
+- define probe
+- define tag
+- define translocation
+- describe polyploid
+- describe whole genome sequencing
+- describe Src role
+- describe COX-2 role
+- define exome sequencing
+- define tumor tissue sample
+- define osteolytic bone metastasis
+- introduce method for designing customized therapy
+- quantify c-MAF gene expression level
+- compare expression level with control sample
+- determine therapy based on expression level
+- describe metastasis treatment options
+- describe systemic treatments
+- describe chemotherapy
+- describe hormone therapy
+- describe immunotherapy
+- describe Alpharadin treatment
+- describe mTor inhibitor treatment
+- list mTor inhibitors
+- describe Src kinase inhibitor treatment
+- list Src kinase inhibitors
+- describe use of mTor inhibitor in combination therapy
+- describe use of Src kinase inhibitor in combination therapy
+- describe use of mTor inhibitor in advanced lung cancer
+- describe use of Src kinase inhibitor in advanced lung cancer
+- describe use of Src kinase inhibitor in SRS+ patients
+- describe use of Src kinase inhibitor in ER- patients
+- describe identification of mTor inhibitors
+- describe identification of Src kinase inhibitors
+- describe treatment of bone metastasis
+- describe treatment of osteolytic metastasis
+- describe prevention of bone degradation
+- describe prevention of metastasis
+- introduce COX-2 inhibitors
+- list COX-2 inhibitors
+- describe use of COX-2 inhibitors to prevent metastasis
+- describe use of COX-2 inhibitors in combination with second treatment
+- list second treatments
+- introduce treatment agents for avoiding bone degradation
+- describe parathyroid hormone inhibitors
+- describe strontium ranelate
+- describe estrogen receptor modulators
+- describe calcitonin
+- describe bisphosphonates
+- describe cathepsin K inhibitors
+- describe DKK-1 inhibitors
+- describe dual MET and VEGFR2 inhibitors
+- describe RANKL inhibitors
+- describe RANK protein
+- describe osteoprotegerin
+- describe RANKL-specific antisense molecules
+- describe ribozymes
+- describe anti-RANKL antibodies
+- describe preparation of polyclonal antibodies
+- describe preparation of monoclonal antibodies
+- describe antibody fragments
+- describe nanobodies
+- describe structure of nanobodies
+- describe VHH domain
+- describe use of nanobodies as therapeutic antibodies
+- describe other treatment agents
+- describe Denosumab
+- describe Zometa
+- describe Carbozantinib or Cabozantinib
+- describe Antibody or peptide blocking PTHLH or PTHrP
+- describe other COX-2 inhibitors
+- describe other treatment agents for avoiding bone degradation
+- describe other dual MET and VEGFR2 inhibitors
+- conclude treatment agents
+- specify RANKL inhibitors
+- describe embodiments
+- list bone degradation agents
+- describe CCR5 antagonist embodiments
+- specify dual MET and VEGFR2 inhibitor embodiments
+- outline combined treatment options
+- introduce lung cancer patients
+- motivate customized therapy
+- outline third method of invention
+- define terms and expressions
+- describe preferred embodiments
+- determine susceptibility to therapy
+- define agent for avoiding or preventing bone degradation
+- illustrate examples of agents
+- describe parathyroid hormone
+- describe strontium ranelate
+- describe estrogen receptor modulators
+- describe calcitonin
+- describe bisphosphonates
+- describe cathepsin K inhibitors
+- describe DKK-1 inhibitors
+- describe dual MET and VEGFR2 inhibitors
+- describe RANKL inhibitors
+- describe RANK protein
+- describe osteoprotegerin
+- describe RANKL-specific antisense molecules
+- describe ribozymes
+- describe specific anti-RANKL antibodies
+- describe specific anti-RANKL nanobodies
+- describe preferred RANKL inhibitors
+- describe Denosumab
+- describe ALX-0141
+- describe preferred agents preventing bone degradation
+- describe CCR5 antagonists
+- describe Maraviroc
+- describe Vicriviroc
+- describe Aplaviroc
+- describe spiropiperidine CCR5 antagonists
+- describe INCB009471
+- describe dual MET and VEGFR2 inhibitors
+- describe mTor inhibitors
+- describe specific mTor inhibitors
+- introduce Src kinase inhibitors
+- list Src kinase inhibitors
+- describe use of Src kinase inhibitors to prevent or inhibit metastasis
+- describe use of Src kinase inhibitors to treat or prevent or inhibit metastasis in a patient with advanced lung cancer
+- describe use of Src kinase inhibitors in combination with a second treatment
+- introduce COX-2 inhibitors
+- list COX-2 inhibitors
+- describe use of COX-2 inhibitors to prevent or inhibit metastasis
+- describe use of COX-2 inhibitors to treat or prevent or inhibit metastasis in a patient with advanced lung cancer
+- describe use of COX-2 inhibitors in combination with a second treatment
+- introduce Radium 223 therapy
+- describe properties of Radium 223
+- describe use of Radium 223 to kill cancer cells
+- introduce bisphosphonates
+- describe use of bisphosphonates to prevent bone degradation
+- introduce combined treatment
+- describe combined treatment with multiple agents
+- introduce method of diagnosis or prognosis of metastasis in lung cancer
+- describe determining amplification of c-MAF gene
+- describe use of amplification of c-MAF gene for diagnosis of metastasis
+- describe use of amplification of c-MAF gene for prognosis of tendency to develop metastasis
+- describe determining degree of amplification of c-MAF gene
+- describe use of chromosome region containing c-MAF gene
+- describe use of probe specific for c-MAF gene
+- describe first step of diagnosis/prognosis method
+- describe comparing amplification of c-MAF gene in tumor sample with control sample
+- describe use of NSCLC in diagnosis/prognosis method
+- describe terms used in diagnosis/prognosis method
+- describe applicability of terms to fourth method of invention
+- conclude diagnosis/prognosis method
+- define amplification of a gene
+- describe gene copy number
+- introduce c-MAF gene copy number determination
+- describe control sample
+- explain increased gene copy number
+- describe in situ hybridization
+- describe fluorescence in situ hybridization
+- describe chromogenic in situ hybridization
+- describe silver in situ hybridization
+- describe polymerase chain reaction
+- introduce method of prognosis of metastasis
+- describe determining c-MAF gene copy number
+- compare with control sample
+- determine bone metastasis
+- describe osteolytic bone metastasis
+- introduce method of prognosis of metastasis based on translocation
+- describe determining translocation of c-MAF gene
+- describe translocation of chromosome region
+- describe probe specific for translocation
+- describe dual color probe
+- describe dual fusion probe
+- describe dual color, dual fusion probe
+- describe separate probes
+- introduce Vysis LSI IGH/MAF Dual Color dual fusion probe
+- introduce Kreatech diagnostics MAF/IGH gt(14;16) Fusion probe
+- introduce other probes
+- describe fluorophore on probe
+- describe specific fluorophores
+- describe DAPI counterstain
+- introduce method of prognosis of bone metastasis
+- describe determining c-MAF gene copy number
+- compare with control sample
+- determine bone metastasis
+- describe osteolytic metastasis
+- introduce average level
+- describe standard deviation
+- determine c-MAF gene expression level
+- compare with average level
+- determine bone metastasis
+- describe methods for determining translocation
+- describe whole genome sequencing
+- describe exome sequencing
+- describe PCR-derived technology
+
+### Therapeutic Methods of the Invention
+
+- treat bone metastasis using c-MAF inhibitory agents
+- use c-MAF inhibitory agent for manufacturing medicament
+- method for treating bone metastasis from lung cancer
+- prevent or reduce risk of bone metastasis in lung cancer patients
+- use c-MAF gene expression inhibitory agent in medicinal product
+- define c-MAF inhibitory agent
+- identify c-MAF gene expression inhibitors
+- describe antisense oligonucleotides
+- administer antisense construct as expression plasmid
+- generate antisense oligonucleotide probes ex vivo
+- modify oligonucleotides for stability and hybridization capacity
+- design oligonucleotides for antisense therapy
+- conjugate oligonucleotides to other molecules
+- use modified base groups in antisense oligonucleotides
+- use modified sugar groups in antisense oligonucleotides
+- use peptide nucleic acid (PNA) oligomers
+- use alpha-anomeric oligonucleotides
+- use antisense oligonucleotides complementary to coding region
+- use antisense oligonucleotides complementary to non-translated region
+- use recombinant DNA construct with antisense oligonucleotide
+- direct deoxyribonucleotide sequences to form triple helix structures
+- describe siRNA
+- synthesize siRNA chemically or in vitro
+- synthesize siRNA in vivo in target cells
+- describe siRNA structure and function
+- modify siRNA with chemical modifications
+- use vectors for expressing siRNA
+- describe promoters for expressing siRNA
+- use convergent and divergent transcription vectors
+- describe shRNA
+- generate shRNA intracellularly
+- encode shRNA by plasmids or viruses
+- describe vectors for expressing shRNA
+- design siRNA and shRNA
+- identify AA(N19)TT motifs in c-MAF gene sequence
+- select siRNA with high G/C content
+- describe c-MAF specific siRNA sequences
+- describe DNA enzymes
+- design DNA enzymes to inhibit c-MAF gene expression
+- describe ribozymes for catalytically cleaving target mRNA
+- introduce therapeutic methods of the invention
+- describe ribozymes used in the invention
+- describe formation of ribozymes
+- describe distribution of ribozymes to cells
+- introduce inhibitory antibodies
+- describe preparation of inhibitory antibodies
+- describe types of inhibitory antibodies
+- describe selection of inhibitory antibodies
+- introduce inhibitory peptides
+- describe inhibitory peptides
+- introduce negative c-MAF dominants
+- describe negative c-MAF dominants
+- describe variants of negative c-MAF dominants
+- describe promoters for regulating transcription
+- describe constitutive promoters
+- describe inducible promoters
+- describe vectors for expressing polynucleotides
+- describe types of vectors
+- introduce other inhibitory compounds
+- describe other inhibitory compounds
+- introduce pharmaceutical composition
+- describe pharmaceutical composition
+- describe carriers for pharmaceutical composition
+- describe pharmaceutical dosage forms
+- describe administration routes
+- describe nucleic acid administration
+- describe liposome conjugation
+- describe viral vector administration
+- describe dose and frequency of administration
+- describe treatment or prevention of bone degradation
+- describe use of agent for preventing bone degradation
+- describe method of preventing bone degradation
+- describe agents for preventing bone degradation
+- describe control sample
+- describe methods for determining elevated c-MAF levels
+- describe combined treatment
+- describe administration of agents for preventing bone degradation
+
+### Kits of the Invention
+
+- define kit for predicting bone metastasis
+- define kit for predicting clinical outcome
+- define kit for determining therapy
+- describe kit components
+
+### Method for Typing a Sample of a Subject Suffering Lung Cancer.
+
+- outline method for typing sample
+- quantify expression level of c-MAF
+- compare expression level to reference
+- provide prognostic information
+
+## EXAMPLES
+
+### Example 1
+
+- test c-MAF in lung cancer patient cohorts
+- correlate c-MAF expression with clinical parameters
+- analyze patient cohort I
+- perform statistical analysis
+- determine association between c-MAF expression and bone relapse
+- describe patient cohort II
+
+### Example 2
+
+- correlate c-MAF expression with metastasis
+- perform statistical analysis
+
+### Example 3
+
+- perform immunohistochemistry analysis
+- score c-MAF immunostaining
+- evaluate prognostic and predictive value of c-MAF
+- determine c-MAF protein levels
+- analyze spectral data
+- set computer-aided threshold
+- summarize results in Table 3
+
+### Example 4
+
+- determine 16q22-q24 chromosome amplification
+- use FISH probe to measure 16q22-24 region
+- evaluate prognostic and predictive value of 16q22-24 CNA gain
+- determine 16q23 and 14q32 copies
+- calculate odds ratio of risk of bone metastasis
+- summarize results in Tables 4 and 5
+

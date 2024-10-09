@@ -1,0 +1,129 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce tsunamis
+- limitations of DART sensors
+- limitations of numerical models
+
+## SUMMARY
+
+- introduce tsunami detection system
+- receive Bragg peak information
+- generate tsunami alert
+- determine credibility of alert
+- transmit alert to warning center
+- ignore alert
+- correlate with external sources
+- estimate arrival time window
+- determine complexity of ocean currents
+- estimate height and arrival time
+- resolve radial current information
+- determine orbital velocity
+- generate Doppler spectra information
+- remove signal interference
+- extract Bragg peak information
+- generate tsunami alert
+- determine credibility of alert
+- correlate with stored correlations
+- transmit alert to warning center
+- ignore alert
+- correlate with nearby radar systems
+- estimate arrival time window
+- determine complexity of ocean currents
+- estimate height and arrival time
+- generate tsunami alert
+- determine credibility of alert
+- correlate with external sources
+- estimate arrival time window
+- determine complexity of ocean currents
+
+## DETAILED DESCRIPTION
+
+- introduce HF radar systems for tsunami detection
+- describe existing national networks of coastal HF radars
+- motivate use of HF radars for tsunami detection
+- describe limitations of DART tsunami warning systems
+- introduce orbital velocity as a sensitive indicator of tsunamis
+- describe challenges in detecting tsunamis using HF radars
+- introduce systems enabled by the present disclosure
+- describe history of HF radar use
+- summarize Barrick's 1979 concept for tsunami detection
+- describe development of algorithms for robust detection
+- introduce quantitative metrics for system effectiveness
+- describe tradeoff between probability of detection and false-alarm probability
+- introduce q-factor tsunami pattern recognition algorithm
+- describe factors affecting Pd and Pfa
+- introduce numerical near-field tsunami model
+- describe importance of accurate prediction of tsunami wave height and time of arrival
+- define HF radar frequency range
+- describe possibility of using radar systems operating in other frequency ranges
+- introduce FIG. 1, a simplified diagram of a coastal HF radar site
+- describe components of the radar system
+- introduce GPS receiver and its role in generating a stable clock signal
+- describe radar state machine and its functions
+- introduce microprocessor and its role in controlling the radar
+- describe direct signal synthesizer and its role in generating RF signals
+- introduce two modes of operation: simulator and online
+- describe simulator mode of operation
+- introduce FIG. 2, algorithmic flow of a simulator mode of operation
+- describe processing steps in FIG. 2
+- introduce FIG. 3, algorithmic flow of an online mode of operation
+- describe processing steps in FIG. 3
+- describe factors affecting system performance
+- introduce methods to detect and filter out external background interference
+- describe impact of real-time currents on system performance
+- introduce simulation techniques to mitigate background flow variations
+- describe echoes from targets such as ships or the ionosphere
+- introduce techniques to detect and filter out spurious echoes
+- describe influence of bathymetry on tsunami detectability
+- introduce numerical models for near-field tsunami propagation
+- describe use of correlation windows to eliminate false alarms
+- introduce credibility level assessment
+- describe adjustment of alert warning signal priority based on changing background conditions
+- introduce simulator mode of operation for evaluating site performance
+- describe optimization of detectability thresholds and other parameters
+- introduce processing steps in FIG. 2
+- describe logging of interference bands and their correlation with false-alarm peaks
+- describe block E
+- extract Bragg-peak spectral echoes
+- motivate tsunami pattern recognition
+- describe block F1
+- describe block F2
+- describe block G
+- describe block H
+- describe block J
+- describe block K
+- describe FIG. 3
+- describe block A
+- describe block B
+- describe block C
+- describe block D
+- describe block E of FIG. 3
+- describe tsunami pattern recognition
+- describe q-factor algorithm
+- describe FIG. 4
+- describe block F
+- eliminate false alarms
+- describe block G
+- describe block H
+- describe block I
+- calculate expected arrival time
+- describe equation (1)
+- describe block G
+- describe block K
+- describe numerical near-field model
+- describe equations (2) and (3)
+- describe equations (4) and (5)
+- describe application of equations
+- describe block J
+- describe block L
+- describe final processing step
+- determine credibility of q-factor alerts
+- transmit tsunami alert information
+- describe correlation with other information
+- describe integration into displays
+- describe changes in implementations
+- describe advantages and aspects
+- describe scope of disclosure
+

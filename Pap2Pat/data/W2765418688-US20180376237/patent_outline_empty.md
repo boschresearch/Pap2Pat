@@ -1,0 +1,18 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+## SUMMARY OF THE INVENTION
+
+## DETAILED DESCRIPTION
+
+## EXAMPLES
+
+### Example 1—Filtering Alarm Sound
+
+### Example 2
+
+### Example 3
+
+## DISCUSSION
+

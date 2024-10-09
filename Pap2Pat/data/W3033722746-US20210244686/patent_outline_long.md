@@ -1,0 +1,309 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce therapeutic use of cannabinoids
+
+## BACKGROUND
+
+- introduce cannabidiol
+- summarize FDA approval
+- propose therapeutic applications
+- discuss molecular mechanism of action
+- discuss limitations of research
+- describe commercial formulation
+- summarize previous studies
+- discuss cholesterol-related diseases
+- describe prevention of CVD
+- discuss pharmaceutical compounds
+- describe limitations of statins
+- introduce need for novel treatments
+
+## SUMMARY OF THE INVENTION
+
+- introduce multi-omic method for CBD MoA
+- identify cholesterol homeostasis components
+- describe CBD's effect on cholesterol and lipid order
+- explain CBD's incorporation into plasma membrane
+- outline downstream effects of CBD on cholesterol
+- propose novel systems for cholesterol modulation
+- describe combination therapy with cholesterol treatment
+- introduce cannabinoid and cholesterol treatment
+- describe cholesterol-related conditions
+- modulate cholesterol sensing, production, and trafficking
+- modulate cholesterol content of cell membranes and plaques
+- introduce method of modulating cholesterol level in cell
+- specify cell type
+- specify administration method
+- specify CBD analog
+- introduce method of modulating cholesterol level in subject
+- specify subject type
+- specify administration method
+- specify CBD source
+- specify CBD manufacturing method
+- co-administer cholesterol regulation medication
+- specify cholesterol regulation medication
+- specify CBD analog
+- introduce method of treating disease condition
+- specify cannabinoid
+- specify CBD analog
+- specify disease condition
+- specify subject type
+- specify indication
+- compare to statin
+- specify administration method
+- specify CBD source
+- specify CBD manufacturing method
+- co-administer cholesterol regulation medication
+- specify cholesterol regulation medication
+- introduce method of treating lipid-order disease
+- specify disease condition
+- specify subject type
+- specify subject type
+- specify no apoptosis
+- specify CBD analog
+- specify CBD source
+- specify CBD manufacturing method
+- co-administer lipid-ordering compound
+- specify Alzheimer's disease controlling compound
+- introduce method of enhancing T-Cell immune response
+- specify subject type
+- specify subject type
+- specify no apoptosis
+- specify CBD analog
+- specify CBD source
+- specify CBD manufacturing method
+- co-administer lipid-ordering compound
+
+## DETAILED DESCRIPTION OF INVENTION
+
+- introduce multi-omics approach
+- integrate transcriptomics, metabolomics, and proteomics
+- identify biochemical components in MoA of CBD
+- demonstrate CBD disrupts cellular cholesterol homeostasis
+- perturb cholesterol biosynthesis
+- perturb cholesterol transport
+- perturb cholesterol storage
+- provide evidence for perturbed cholesterol biosynthesis
+- report transcriptional activation and protein accumulation of HMG-CR
+- demonstrate increased HMG-CR protein production
+- demonstrate accumulation of metabolic precursors of cholesterol
+- demonstrate decreased total cholesterol production
+- trigger sensing of low cholesterol via SREBP-SCAP processing
+- inhibit DHCR7/24 enzymatic step of cholesterol biosynthesis
+- activate cholesterol esterification/storage
+- demonstrate CBD incorporates into cellular membranes
+- increase lipid order
+- demonstrate CBD incorporation into SUVs
+- demonstrate increased accessibility of cholesterol to cholesterol oxidase
+- detect same behavior of cholesterol in CBD treated ER membranes
+- demonstrate fluorescent cholesterol displays diminished lateral diffusion
+- demonstrate opposing effect between CBD and DHA on model membranes
+- demonstrate CBD incorporates primarily into plasma membrane
+- demonstrate CBD itself may be trafficked with other cellular membrane components
+- demonstrate CBD dependent activation of lipid order
+- demonstrate downstream effects on cholesterol subcellular distribution
+- demonstrate downstream effects on cholesterol storage and biosynthesis
+- demonstrate potential risks in CBD use
+- identify key mechanistic components in CBD response
+- classify components into broad biological processes
+- predict potential therapeutic applications of CBD
+- provide use of CBD in medicament manufacture
+- describe pharmaceutical compositions
+- define natural cannabinoid
+- define synthetic cannabinoid
+- define cannabinoid
+- list cannabinoid examples
+- describe cannabinoid glycoside forms
+- define prodrug
+- list cannabinoid analog examples
+- describe tetrahydrocannabinol analogs
+- define abnormal CBD
+- describe cannabinoid derivation
+- describe cannabinoid isolation and purification
+- define lipid-order disease condition
+- describe lipid rafts
+- describe lipid raft function
+- describe lipid raft regulation
+- describe lipid raft perturbation
+- define compound
+- define method of treating
+- describe substantially pure cannabinoid
+- describe treatment effects
+- describe stereoisomers
+- describe geometric isomers
+- describe tautomeric forms
+- describe salts and solvates
+- describe inclusion complexes
+- describe pharmaceutically acceptable salts
+- provide examples of pharmaceutically acceptable salts
+- define pharmaceutically acceptable salt forms
+- describe synthesis of salt forms
+- list suitable salts
+- define pharmaceutically acceptable
+- describe pharmaceutical compositions and formulations
+- list carriers and excipients
+- describe supplementary active compounds
+- describe cosolvents and adjuvants
+- list examples of cosolvents
+- list examples of adjuvants
+- describe preservatives and other additives
+- list examples of preservatives
+- list examples of antioxidants
+- describe pharmaceutical compositions for specific routes of administration
+- list examples of routes of administration
+- describe administering therapeutically effective amounts
+- describe modulation of cholesterol
+- list examples of modulation
+- describe dosage ranges
+- describe formulations for parenteral administration
+- list examples of aqueous carriers
+- list examples of non-aqueous solvents
+- describe formulations for transmucosal or transdermal administration
+- describe formulations for topical administration
+- describe formulations for oral administration
+- describe formulations for airway or nasal administration
+- describe aerosol and spray delivery systems
+- describe dry-powder inhalers
+- describe formulations for rectal administration
+- describe formulations for vaginal administration
+- describe pharmaceutical formulations and delivery systems
+- describe unit dosage forms
+- describe dosage considerations
+- motivate pharmaceutical kits
+- summarize factors influencing dosage
+- define effective treatment
+- describe administering methods
+- list dosage forms
+- describe administration routes
+- list treatable diseases
+- define modulating cholesterol
+- define cholesterol types
+- define subject and patient
+- clarify terminology usage
+- describe embodiment variations
+- define compound and composition
+- describe pharmaceutical compositions
+- define pharmaceutically acceptable salt or ester
+- describe salt formation
+- describe base salt formation
+- mention tautomeric forms
+- incorporate references by citation
+
+### Examples
+
+- introduce CBD analogs eliciting biochemical responses
+- demonstrate medicinal value of CBD analogs
+- show cellular responses similar to cholesterol drugs
+- demonstrate low cholesterol response of CBD and analogs
+- introduce CBD analogs exhibiting low cellular toxicity
+- show select CBD analogs with little to no toxicity
+- demonstrate structural changes in cellular endoplasmic reticulum
+- show effect of CBD on ER organelle structure
+- demonstrate influence of structural alteration on toxicity and cholesterol sensing
+- introduce CBD analogs causing increased cholesterol solubility
+- demonstrate ability of CBD analogs to alter cholesterol solubility
+- describe enzymatic product formation of cholesterol oxidase
+- quantify average reaction rate of cholesterol oxidase
+- introduce design and execution of multi-omic detection
+- describe workflow integrating mass spectrometry-based proteomics and metabolomics
+- apply multi-omics approach to gain insight into MoA of CBD
+- determine EC50 of toxicity of CBD
+- conduct large dose and time survey of CBD response
+- analyze biosensor activity profiles as a function of CBD dose and time
+- design multi-omic experiment based on biosensor activity profiles
+- identify proteins undergoing robust drug-dependent changes
+- develop novel subcellular fractionation method
+- analyze peptides derived from each fraction
+- identify differentially expressed genes in CBD response
+- reveal CBD-dependent inhibition of cholesterol biosynthesis
+- introduce CBD treated cells
+- display reduced free fatty acid levels
+- accumulate free phospholipid head-groups
+- suggest fatty acid utilization for cholesterol esterification
+- survey cellular abundance of phosphatidylcholine and phosphatidylethanolamine
+- find reduced abundance in CBD treated vs vehicle treated cells
+- support activation of cholesterol esterification in CBD response
+- use live cell confocal microscopy to quantify lipid droplets
+- show CBD increases average abundance of lipid droplets
+- show CBD does not affect lipid droplet size
+- highlight CBD response includes activation of cholesterol esterification and storage
+- introduce combination of CBD and cholesterol storage/transport inhibitors
+- induce cholesterol dependent apoptosis in multiple cell types
+- measure cellular apoptosis over time
+- show toxic effect of high CBD doses is reduced by atorvastatin
+- show ability of inhibition of cholesterol biosynthesis to protect cells
+- test hypothesis by repeating cellular apoptosis analyses
+- show CBD exposed cells are sensitive to 25-hydroxy cholesterol induced apoptosis
+- repeat apoptosis assay with combinatorial 25-hydroxy cholesterol/CBD stimulation
+- show inhibition of cholesterol transport or cholesterol storage restores apoptotic response
+- explain why CBD sensitizes cells to inhibitors of cholesterol trafficking and storage
+- test hypothesis by repeating live cell confocal microscopy experiments
+- show CBD increases flux of cholesterol through lysosome
+- outline model where CBD triggers plasma membrane to lipid droplet transport of cholesterol
+- introduce membrane incorporation of CBD affects cholesterol orientation and lateral diffusion
+- design and execute subcellular fractionation method
+- show CBD is concentrated mostly at plasma membrane
+- test hypothesis that CBD affects cholesterol directly
+- show CBD increases accessibility of cholesterol to cholesterol oxidase
+- validate effect of CBD on cholesterol orientation in ER membranes
+- describe transcriptomics workflow
+- perform sequencing and trimming
+- perform read alignment and quantitation
+- describe proteomics bioinformatics workflow
+- perform protein quantification
+- perform differential expression analysis
+- calculate effect size and statistical power
+- select proteins for further consideration
+- perform time course differential analysis
+- combine p-values and correct for multiple hypothesis testing
+- describe proteomics network analysis
+- generate correlation networks
+- assign edge values using Spearman correlation
+- evaluate significantly changed edges
+- generate stochastic block-model representation
+- describe subcellular fractionation
+- harvest and wash cells
+- lyse cells and separate fractions
+- describe quantitative subcellular proteomics
+- prepare samples for FASP
+- perform FASP and digest proteins
+- label peptides with TMT
+- perform high pH C18 fractionation
+- perform liquid chromatography/mass spectrometry analysis
+- describe phosphoproteomics
+- prepare samples for phosphoenrichment
+- enrich phosphopeptides using TiO
+- perform high pH C18 fractionation of phosphoenriched peptides
+- prepare samples for analysis
+- describe liquid chromatography/mass spectrometry analysis
+- detail sample preparation for bulk metabolomics
+- outline UHPLC-MS analysis for bulk metabolomics
+- describe lipidomics sample preparation
+- outline UHPLC-MS analysis for lipidomics
+- detail western blot analysis of SREBP2 proteolytic processing
+- describe confocal microscopy of lipid droplets and lysosomes
+- outline cell viability and apoptosis assays
+- detail fluorometric cholesterol oxidase experiments
+- describe SUV preparation
+- outline cholesterol oxidase reactions
+- detail FRAP experiments using synthetic membranes
+- describe SUV formulation and preparation
+- outline centrifugation and sonication of SUVs
+- detail washing and incubation of SUVs
+- describe imaging and FRAP experiments
+- outline photobleaching and analysis
+- detail normalization of trends
+- describe error calculation
+- detail metabolite assignments and isotopologue distributions
+- outline correction for expected natural abundances
+- describe graphs, heat maps, and statistical analyses
+- outline metabolic pathway analysis
+- detail PLS-DA and hierarchical clustering
+- describe subcellular fractionation of organelles
+- outline mechanical disruption of cells
+- detail extraction of cholesterol and precursors
+- describe extraction of free fatty acids and phospholipids
+- outline extraction of cholesteryl esters
+- detail extraction of other lipids
+

@@ -1,0 +1,146 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce bone tissue defects
+- motivate bone tissue engineering
+- limitations of current graft sources
+- challenges of FDA approval
+- summarize existing monitoring methods
+
+## DETAILED DESCRIPTION
+
+- introduce bone tissue engineered constructs
+- describe limitations of current methods
+- introduce method for monitoring bone constructs
+- describe real-time, non-destructive monitoring
+- explain utilization of key metabolic rates
+- define scope of embodiments
+- disclaim limitations of description
+- describe purpose of detailed description
+- incorporate prior art by reference
+- define technical terms
+- explain use of "a" and "an"
+- define "or" and "at least one"
+- explain "comprising" and "having"
+- define "about" and "approximately"
+- explain "substantially"
+- describe use of "one embodiment"
+- explain numerical values and ranges
+- define "pharmaceutically acceptable"
+- explain "biologically active"
+- define "pure" and "substantially pure"
+- explain "high specificity" and "high sensitivity"
+- define "subject" and "patient"
+- explain "treatment" and "treating"
+- define "therapeutic composition" and "pharmaceutical composition"
+- explain "effective amount"
+- describe factors affecting effective amount
+- explain determination of effective amount
+- conclude detailed description
+- define ameliorate
+- describe therapeutic effect
+- introduce tissue engineering
+- motivate bone tissue engineering
+- describe current treatment for bone fractures
+- introduce scaffolds
+- describe properties of scaffolds
+- list types of scaffolds
+- describe low molecular weight polymers
+- describe high molecular weight polymers
+- describe osteogenic induction media
+- list growth factors
+- describe seeding methods
+- introduce perfusion bioreactors
+- describe types of perfusion bioreactors
+- motivate dynamic bioreactor culture
+- describe benefits of perfusion bioreactors
+- describe shear forces in bone tissue engineering
+- describe cell seeding
+- motivate homogeneous seeding distribution
+- describe limitations of static seeding
+- describe dynamic seeding
+- describe oscillatory seeding
+- introduce example of work
+- describe experimental setup
+- describe monitoring of physio-metabolic markers
+- describe trends in marker values
+- describe ratio of oxygen uptake to glucose consumption
+- describe supplementary monitoring of osteoprotegerin and osteocalcin
+- validate metrics
+- conclude example
+- finalize description
+
+## EXAMPLES
+
+- introduce specific, non-limiting examples
+- describe cell extraction and isolation
+- detail cell culture and expansion
+- outline bioreactor system
+- describe scaffold production
+- detail scaffold pre-seeding treatments
+- outline bioreactor seeding and culture
+- describe mid-culture species sampling
+- calculate oxygen uptake rate
+- derive oxygen uptake rate equation
+- describe glucose consumption measurement
+- derive glucose consumption rate equation
+- describe osteoprotegerin and osteocalcin production measurement
+- derive osteoprotegerin production rate equation
+- describe post-culture quality analyses
+- quantify cellularity
+- describe alkaline phosphatase activity quantification
+- describe calcium deposition quantification
+- outline statistical analysis
+- determine threshold for maturation of BTE construct
+- describe experimental methods for threshold determination
+- calculate OUR/GCR rate value
+- identify statistically significant jump in ratio
+- confirm threshold effectiveness
+- examine calcium deposition
+- detail results of osteoinduction media group
+- detail results of baseline media group
+- compare results of both groups
+- discuss significance of results
+- outline potential applications
+- summarize key findings
+- introduce construct quality metrics
+- describe cellularity results
+- describe alkaline phosphatase activity results
+- describe calcium deposition results
+- introduce mid-culture monitored species rates
+- describe cell-specific oxygen uptake rate results
+- describe cell-specific glucose consumption rate results
+- describe cell-specific osteoprotegerin production rate results
+- describe osteocalcin production results
+- introduce metabolic ratio analysis
+- describe OUR/GCR ratio over time
+- correlate OUR/GCR with ALP activity and calcium deposition
+- introduce OUR/GCR as a metric for construct cellularity
+- derive equations for cell-specific metabolic rates
+- use OUR/GCR to predict cellularity
+- discuss construct quality
+- discuss physio-metabolic rate trends
+- discuss oxygen uptake rate results
+- discuss glucose consumption rate results
+- discuss OPG production rate results
+- discuss osteocalcin production results
+- discuss use of OUR/GCR for monitoring BTE constructs
+- correlate OUR/GCR with osteo-maturation markers
+- discuss threshold value of OUR/GCR
+- introduce cellularity prediction method
+- derive equations for cellularity prediction
+- compare predicted and experimentally determined cellularity
+- discuss implications of results
+- discuss real-time, non-destructive monitoring of BTE constructs
+- discuss use of OUR/GCR ratio
+- discuss supplementary methods for monitoring osteoblastic maturation
+- discuss adaptability of principles to other tissue engineered constructs
+- discuss quality control and optimal implant timing
+- conclude discussion
+
+## CITED REFERENCES
+
+- list prior art references
+- provide bibliographic information
+

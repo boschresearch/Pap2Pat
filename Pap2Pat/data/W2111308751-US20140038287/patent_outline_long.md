@@ -1,0 +1,335 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define invention scope
+
+## BACKGROUND OF THE INVENTION
+
+- introduce antibody structure
+- describe antigen binding
+- explain effector functions
+- detail Fc region interactions
+- describe Fc receptor types
+- explain FcγRII characteristics
+- discuss FcγRII genotypes
+- describe FcγRIIa and FcγRIIb differences
+- discuss monoclonal antibody therapy
+- identify need for modified Fc regions
+- summarize limitations of prior art
+
+## SUMMARY OF THE INVENTION
+
+- introduce altered polypeptides
+- describe FcγR binding portion
+- introduce variant CDR3 region
+- describe altered antibodies with variant CDR3 region
+- describe altered polypeptides with variant CDR3 region
+- introduce specific amino acid substitutions
+- describe modified antibody with altered effector function
+- describe prevention of proinflammatory mediator release
+- introduce human IgG isotype
+- describe altered antibodies with increased potency
+- introduce modified Fc portion
+- describe modified Fc receptor activity
+- introduce CD32A receptor
+- describe increased inhibition of proinflammatory mediator release
+- introduce neutralizing antibody
+- describe modified Fc receptor activity with neutralizing antibody
+- introduce human IgG1 isotype
+- describe amino acid substitution at EU position 328
+- describe amino acid substitution at EU position 325
+- describe amino acid substitution at EU position 326
+- introduce human IgG2 isotype
+- describe amino acid substitution at EU position 328
+- describe amino acid substitution at EU position 325
+- describe amino acid substitution at EU position 326
+- introduce human IgG3 isotype
+- describe amino acid substitution at EU position 328
+- describe amino acid substitution at EU position 325
+- describe amino acid substitution at EU position 326
+- introduce human IgG4 isotype
+- describe altered antibodies with variant CDR3 region and variant Fc region
+- describe altered polypeptides with variant CDR3 region and variant Fc region
+- define altered polypeptides and antibodies
+- describe variant Fc region
+- describe heavy chain variable amino acid sequence
+- describe light chain variable amino acid sequence
+- describe CH2 domain mutations
+- describe CDR regions
+- describe targeting human CD32A
+- describe modified Fc effector activity
+- describe binding to target
+- describe human IgG1 isotype antibody
+- describe VH CDR regions
+- describe VL CDR regions
+- describe gamma heavy chain constant region substitutions
+- describe altered antibody properties
+- describe modified versions of existing antibodies
+- describe isolated polypeptides with gamma 1 Fc region
+- describe production of altered antibodies
+- describe numbering of residues in gamma heavy chain
+- describe numbering of immunoglobulin variable regions
+- describe pharmaceutical compositions
+- describe kits
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- define altered antibodies
+- describe preferred embodiments
+- introduce variant CDR3 regions
+- summarize altered Fc regions
+- motivate modified effector functions
+- describe prevention of proinflammatory mediators release
+- introduce neutralizing antibodies
+- describe altered antibodies binding TLR4/MD-2 receptor complex
+- summarize antibodies binding TLR4 and MD-2
+- introduce antibodies recognizing toll-like receptors
+- describe other suitable altered antibodies
+
+### DEFINITIONS
+
+- define scientific and technical terms
+- specify singular and plural terms
+- describe cell and tissue culture techniques
+- outline molecular biology techniques
+- outline protein and oligo- or polynucleotide chemistry and hybridization
+- describe recombinant DNA techniques
+- describe oligonucleotide synthesis techniques
+- describe tissue culture and transformation techniques
+- describe enzymatic reactions and purification techniques
+- define antibody terms
+- describe immunoglobulin molecules
+- define antigen-binding site
+- describe framework regions
+- describe hypervariable regions
+- describe complementarity-determining regions
+- define epitope
+- describe immunological binding properties
+- define isolated polynucleotide
+- define isolated protein
+- describe polypeptide terms
+- define naturally-occurring
+- describe operably linked
+- describe control sequence
+- describe polynucleotide
+- define twenty conventional amino acids
+- describe stereoisoforms of amino acids
+- describe unconventional amino acids
+- describe polypeptide notation
+- define substantial identity
+- describe conservative amino acid substitutions
+- describe preferred conservative amino acid substitutions
+- describe minor variations in amino acid sequences
+- describe genetically encoded amino acids
+- describe hydrophilic and hydrophobic amino acids
+- describe aliphatic-hydroxy family
+- describe amide-containing family
+- describe aliphatic family
+- describe aromatic family
+- describe label or labeled
+- describe pharmaceutical agent or drug
+- define substantially pure
+- define altered antibodies
+- describe altered antibodies with variant CDR3 regions
+- describe altered antibodies with variant Fc regions
+- describe inhibition of LPS-induced proinflammatory cytokine production
+- describe specific monoclonal antibodies
+- describe epitopes recognized by altered antibodies
+- describe method for determining epitopic specificity
+- describe production of polyclonal or monoclonal antibodies
+- describe purification of antibodies
+- describe generation of monoclonal antibodies
+- describe hybridoma method
+- describe immunizing agent
+- describe fusion of lymphocytes with immortalized cell line
+- describe culture of hybridoma cells
+- describe assay for monoclonal antibodies
+- describe determination of binding affinity
+- describe subcloning of hybridoma cells
+- describe growth of hybridoma cells
+- describe purification of monoclonal antibodies
+- describe recombinant DNA methods for producing monoclonal antibodies
+- describe isolation and sequencing of DNA encoding monoclonal antibodies
+- describe expression vectors for recombinant monoclonal antibodies
+- describe modification of DNA encoding monoclonal antibodies
+- describe humanized antibodies
+- describe fully human antibodies
+- describe production of human antibodies using trioma technique
+- describe production of human antibodies using human B-cell hybridoma technique
+- describe production of human antibodies using EBV hybridoma technique
+- describe production of human antibodies using phage display libraries
+- describe production of human antibodies using transgenic animals
+- describe production of human antibodies using Xenomouse
+- describe method for producing nonhuman host lacking endogenous immunoglobulin heavy chain
+- describe method for producing antibody of interest
+- describe method for identifying clinically relevant epitope
+- describe method for selecting antibody that binds specifically to relevant epitope
+- describe expression of single chain antibody
+- describe vectors for gene transfer
+- describe viral vectors
+- describe fusion proteins
+- describe chemical conjugates
+- describe modes of gene transfer
+- define bispecific antibodies
+- describe traditional production methods
+- summarize purification methods
+- introduce antibody variable domains
+- describe fusion with immunoglobulin constant domains
+- outline expression vector construction
+- discuss co-transfection into host organisms
+- describe alternative approach for maximizing heterodimer yield
+- introduce techniques for generating bispecific antibodies from fragments
+- describe chemical linkage methods
+- outline leucine zipper technology
+- introduce diabody technology
+- describe single-chain Fv dimers
+- contemplate trispecific antibodies
+- describe exemplary bispecific antibodies
+- introduce heteroconjugate antibodies
+- describe methods for making heteroconjugate antibodies
+- contemplate modifying antibody effector function
+- describe cysteine residue introduction
+- outline homodimeric antibody generation
+- introduce dual Fc region engineering
+- describe immunoconjugates
+- list enzymatically active toxins
+- list radionuclides for radioconjugates
+- describe conjugate formation using bifunctional agents
+- list exemplary bifunctional agents
+- describe preferred linkers
+- outline linker attributes
+- describe immunoliposome formation
+- outline liposome composition
+- describe Fab' fragment conjugation
+- introduce altered antibody use
+- describe therapeutic formulations
+- outline treatment of immune-related disorders
+- list autoimmune diseases
+- list inflammatory disorders
+- describe treatment of acute inflammation and sepsis
+- describe treatment of neurodegenerative autoimmune diseases
+- describe treatment of diseases caused by mechanical stress
+- define immune-related disorders
+- list symptoms of immune-related disorders
+- describe efficaciousness of treatment
+- outline methods for screening antibodies
+- describe use of antibodies in localization and quantitation
+- describe use of altered antibodies in isolation and diagnostics
+- list detectable substances for antibody detection
+- describe therapeutic use of antibodies
+- define therapeutically effective amount of antibody
+- describe administration of antibodies
+- describe pharmaceutical compositions
+- outline principles for preparing pharmaceutical compositions
+- describe use of antibody fragments
+- describe formulation of pharmaceutical compositions
+- describe sterilization of pharmaceutical compositions
+- describe sustained-release preparations
+- describe use of antibodies in detection
+- describe labeling of antibodies
+- describe biological samples
+- describe in vitro and in vivo detection methods
+- describe pharmaceutical compositions for administration
+- describe carriers and diluents for pharmaceutical compositions
+- describe supplementary active compounds
+- describe routes of administration
+- describe parenteral administration
+- describe oral administration
+- describe injectable solutions
+- describe sterile powders for injectable solutions
+- describe oral compositions
+- describe tablets, pills, and capsules
+- describe ingredients for oral compositions
+- describe administration by inhalation
+- describe transmucosal and transdermal administration
+- describe penetrants for transmucosal and transdermal administration
+- describe suppositories and retention enemas
+- describe controlled release formulations
+- describe biodegradable polymers
+- describe liposomal suspensions
+- describe dosage unit forms and containers
+
+### EXAMPLES
+
+- introduce generation of monoclonal antibodies
+- describe antibody sequences
+- test antibody neutralization of LPS-induced IL-8
+- evaluate antibody specificity
+- introduce humanization of murine monoclonal antibodies
+- describe humanized antibody sequences
+- test humanized antibody binding to TLR4/MD2
+- evaluate humanized antibody inhibition of LPS-induced IL-6
+- introduce increasing potency of modified monoclonal antibodies
+- describe modification of Fc portion of antibody
+- evaluate chimeric antibody neutralization of LPS
+- compare murine and chimeric antibody potency
+- evaluate antibody binding to Fc gamma receptors
+- introduce mutation to disrupt Fc gamma receptor binding
+- evaluate mutated antibody potency
+- test antibody inhibition of LPS-induced IL-6
+- evaluate role of CD32 in antibody potency
+- test anti-CD32 antibody blockade of Fc binding
+- evaluate CD32A polymorphism effect on antibody potency
+- test antibody potency in different CD32A genotypes
+- introduce studies on critical region of Fc region
+- describe replacement of CH2 domain with human CH2
+- evaluate antibody binding to TLR4/MD2
+- test antibody potency in human whole blood assay
+- evaluate role of CH2 domain in Fc-mediated inhibition
+- introduce studies on critical residues of CH2 domain
+- describe subdivision of CH2 domain into four parts
+- introduce human residues into CH2 domain
+- evaluate antibody binding to TLR4/MD2
+- test antibody potency in human whole blood assay
+- evaluate effect of human residues on Fc-mediated inhibition
+- identify critical residues of CH2 domain
+- evaluate role of CH2 domain in Fc-mediated inhibition
+- summarize findings on Fc-mediated inhibition
+- discuss implications for antibody therapy
+- conclude importance of Fc region in antibody potency
+- finalize discussion of antibody potency
+- demonstrate equivalent binding to TLR4/MD2
+- evaluate neutralizing capability using human whole blood assay
+- conclude inhibitory activity of mouse CH2 domain
+- design studies to determine minimum number of residues
+- introduce mouse IgG1 CH2 amino acid residues
+- express and purify mutant MAbs
+- evaluate neutralizing capability of mutant MAbs
+- conclude critical residues for inhibitory activity
+- design new set of mutants
+- express and purify new mutants
+- evaluate relative binding affinity of new mutants
+- evaluate neutralizing capability of new mutants
+- conclude inhibitory activity of new mutants
+- evaluate humanized version of 15C1
+- compare inhibitory activity of chimeric and humanized versions
+- construct mutants based on human or mouse amino acid residues
+- evaluate binding affinity of mutants
+- evaluate neutralizing capability of mutants
+- conclude inhibitory activity of mutants
+- test best humanized CH2 mutant
+- evaluate implication of CD32 in inhibitory effect
+- align CH2 domain of human, mouse, and rat IgG isotypes
+- describe CDR3 mutated neutralizing antibodies
+- modify CDR3 portion of antibody
+- analyze binding of mutants by FACS
+- express and purify mutants
+- evaluate binding of mutants to TLR4-MD2
+- conclude relative affinity of mutants
+- describe humanized VH mutant 1 and VL mutant 2
+- evaluate binding of humanized mutants
+- conclude higher relative affinity of humanized mutants
+- describe humanized VH mutant 2 and VL mutant 1
+- evaluate binding of humanized mutants
+- conclude higher relative affinity of humanized mutants
+- describe humanized VH mutant 3 and VL mutant 4
+- evaluate binding of humanized mutants
+- conclude higher relative affinity of humanized mutants
+- describe humanized VH mutant 4 and VL mutant 3
+- evaluate binding of humanized mutants
+
+## OTHER EMBODIMENTS
+
+- disclaim limitation
+

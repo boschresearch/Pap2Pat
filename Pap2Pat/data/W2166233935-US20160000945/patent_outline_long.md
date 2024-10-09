@@ -1,0 +1,630 @@
+# DESCRIPTION
+
+## 1. TECHNICAL FIELD
+
+- introduce glio-vascular pathway function
+
+## 2. BACKGROUND OF THE INVENTION
+
+- describe lymphatic vasculature
+- describe cerebrospinal fluid function
+- describe neurodegenerative diseases
+- describe prior art
+- discuss limitations of prior art
+
+## 3. SUMMARY OF THE INVENTION
+
+- introduce glymphatic system function measurement
+- describe imaging step
+- describe CSF-ISF exchange measurement
+- describe mammal subjects
+- describe imaging agent administration
+- describe intrathecal administration
+- describe MRI contrast agents
+- describe PET scanning
+- describe CSF-ISF exchange measurement methods
+- describe therapeutic agent clearance measurement
+- describe influx kinetics analysis
+- describe parametric data analysis
+- describe kinetic parameter calculation
+- describe risk calculation for neurodegenerative diseases
+- describe treatment of neurodegenerative diseases
+- describe glymphatic clearance increase
+- describe reactive gliosis treatment
+- describe pumping fluid through CNS interstitium
+- describe agent administration for glymphatic clearance
+- describe Stat-3 inhibitor administration
+- describe BMP signaling axis molecule administration
+- describe AVP antagonist administration
+- describe ANP antagonist administration
+- describe Angiotensin II antagonist administration
+- describe AT2R receptor antagonist administration
+- describe AT1 receptor antagonist administration
+- describe AQP4 depolarization prevention
+- describe JNJ-17299425 or JNJ-17306861 administration
+- describe pumping fluid through CNS interstitium
+- describe glymphatic clearance promotion
+- describe waste product clearance promotion
+- describe brain injury treatment
+- describe adrenergic receptor antagonist administration
+- describe glymphatic system function measurement
+
+## 5. DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce methods for measuring and treating neurodegenerative diseases
+
+### 5.1. Methods for Measuring Glio-Vascular Pathway (Glymphatic System) Function in the Brain
+
+- define glymphatic system function
+- introduce method for measuring glymphatic function
+- describe imaging of central nervous system
+- measure CSF-ISF exchange
+- administer imaging agent
+- describe intrathecal administration
+- describe other routes of administration
+- track exchange process with imaging
+- analyze influx kinetics
+- analyze parenchymal distribution
+- analyze clearance of imaging agent
+- measure CSF-ISF exchange at specific locations
+- perform parametric data analysis
+- perform non-parametric data analysis
+- calculate influx kinetic parameter
+- calculate kinetic parameter from static image
+- calculate risk of neurodegenerative disease
+- describe method for traumatic brain injury
+- describe surgical method for administering contrast agent
+- describe MRI imaging protocol
+- describe image processing procedures
+- correct for head motion
+- normalize image intensity
+- subtract and divide by baseline image
+- obtain time-activity curves
+- draw regions of interest
+- extract signals from ROIs
+- calculate area under curve
+- normalize AUC by time intervals
+- compare mAUC between groups
+
+### 5.2. Methods for Treating Onset of a Neurodegenerative Disease
+
+- introduce method for treating neurodegenerative disease
+- increase glymphatic system clearance
+- reduce reactive gliosis
+- describe association of reactive gliosis with neurodegenerative diseases
+- administer therapeutic agent to increase glymphatic clearance
+- measure glymphatic system function
+- treat reactive gliosis
+
+### 5.3. Methods for Promoting Clearance of a Brain Waste Product from Brain Interstitium
+
+- introduce method for promoting clearance of brain waste product
+- administer agent to increase glymphatic clearance
+- describe agents that increase glymphatic clearance
+- pump fluid through central nervous system interstitium
+- measure glymphatic system function
+- promote clearance of brain waste product
+
+### 5.4. Methods for Slowing, Delaying or Preventing Accumulation of a Brain Waste Product
+
+- introduce method for slowing accumulation of brain waste product
+- increase glymphatic clearance
+- administer therapeutic agent
+- describe agents that increase glymphatic clearance
+- pump fluid through central nervous system interstitium
+- slow accumulation of brain waste product
+
+### 5.5. Methods for Decreasing or Impeding Clearance of a Therapeutic or Modulatory Agent from the Brain Interstitium of a Mammal
+
+- introduce method for decreasing clearance
+- specify therapeutic or modulatory agents
+- describe embodiments of method
+
+### 5.6. Therapeutic Uses of Methods
+
+- outline therapeutic approaches
+- provide examples of therapeutic uses
+
+## 6. EXAMPLES
+
+### 6.1. Example 1
+
+- introduce paravascular pathway for CSF flow and solute clearance
+- describe limitations of current understanding of CSF flow
+- motivate study of CSF flow and solute clearance
+- introduce two-photon imaging and other techniques
+- describe animal models used
+- describe anesthesia protocol
+- describe statistical analysis methods
+- describe CSF tracers used
+- describe ventriculo-cisternal perfusion method
+- describe intracisternal tracer injection method
+- describe ex vivo fluorescence imaging method
+- describe in vivo two-photon laser scanning microscopy method
+- describe intraparenchymal tracer injection method
+- describe immunofluorescence method
+- describe preembedding light and electron microscopic cytochemistry method
+- describe electron microscopic morphological analysis method
+- introduce Aqp4-null mice model
+- describe Tie2-GFP:NG2-DsRed double reporter mouse model
+- describe CSF influx and efflux routes
+- describe paravascular astrocytic endfeet
+- describe NG2-DsRed and Tie2-GFP:NG2-DsRed mice models
+- describe fluorescent CSF tracers used
+- describe radio-labeled CSF tracers used
+- describe ventriculo-cisternal perfusion protocol
+- describe intracisternal injection protocol
+- describe ex vivo fluorescence imaging protocol
+- describe in vivo two-photon laser scanning microscopy protocol
+- describe intraparenchymal injection protocol
+- describe immunofluorescence protocol
+- describe preembedding light and electron microscopic cytochemistry protocol
+- describe electron microscopic morphological analysis protocol
+- analyze CSF influx and efflux data
+- analyze paravascular astrocytic endfeet data
+- analyze fluorescent CSF tracers data
+- analyze radio-labeled CSF tracers data
+- analyze in vivo two-photon laser scanning microscopy data
+- discuss results and implications
+- introduce CSF flow into brain parenchyma
+- evaluate ventricular CSF entry into brain
+- describe fluorescent tracers of differing molecular weights
+- assess movement of tracers into brain parenchyma ex vivo
+- summarize results of ventricular CSF entry
+- evaluate subarachnoid CSF entry into brain parenchyma
+- describe fluorescent and radio-labeled tracers
+- assess distribution of tracers in brain parenchyma
+- summarize results of subarachnoid CSF entry
+- introduce in vivo imaging of paravascular CSF influx
+- describe two-photon laser scanning microscopy
+- visualize movement of fluorescent dextrans
+- describe paravascular CSF influx and clearance
+- map paravascular CSF influx and clearance throughout brain
+- analyze distribution of ovalbumin-conjugated Alexa Fluor 647
+- describe paravascular CSF influx and clearance pathways
+- introduce astroglial water transport
+- describe localization of astroglial aquaporin-4
+- investigate effect of Aqp4 gene deletion on CSF flux
+- analyze CSF tracer influx in Aqp4-null mice
+- describe differences in AQP4 expression
+- introduce astroglial water transport facilitating bulk ISF solute clearance
+- test effect of Aqp4 gene deletion on clearance of radiolabeled mannitol
+- analyze clearance of radiolabeled dextran-10
+- introduce AQP4-dependent ISF bulk flow clearing soluble Aβ
+- evaluate clearance of 125I-amyloid β1-40
+- analyze movement of fluorescent-tagged Aβ
+- describe recirculation of soluble Aβ1-40 through brain parenchyma
+- quantify fluorescent CSF tracer distribution
+- measure subarachnoid CSF entry into brain parenchyma
+- describe in vivo imaging of para-arterial influx of small- and large-molecular weight tracers
+- analyze movement of small molecular weight tracer
+- analyze movement of large molecular weight tracer
+- conclude astroglial water transport supports CSF flux into parenchyma
+- introduce example 1
+- describe experimental design
+- show para-arterial versus paravenous CSF tracer influx
+- illustrate paravascular spaces surrounding large perforating arteries
+- demonstrate paravenous drainage pathway
+- visualize paravascular accumulation of tracer and Virchow-Robin space
+- compare wild-type and Aqp4-null mice
+- show differential expression of AQP4 in periarterial versus perivenous astrocytes
+- quantify AQP4 immunoreactivity in perivascular endfeet
+- measure interstitial solute clearance from the brain
+- describe measurement of interstitial solute clearance
+- show effect of Aqp4 gene deletion on clearance of intra-parenchymally injected 3H-dextran-10
+- illustrate paravascular and interstitial bulk flow pathways
+- propose role of periarterial astroglial endfoot AQP4 in facilitating bulk water flow
+- discuss glymphatic pathway
+- relate CSF compartment to peripheral lymphatics
+- discuss previous studies on CSF drainage
+- contrast para-arterial and paravenous pathways
+- discuss limitations of previous studies
+- describe methodological differences
+- discuss role of AQP4 in paravascular pathway function
+- summarize findings
+- conclude glymphatic pathway
+- introduce AQP4-dependent astroglial water flux
+- motivate CSF influx and ISF clearance
+- describe bulk flow CSF movement
+- explain perivascular astrocytic endfeet
+- discuss AQP4 role in water movement
+- describe solute flux from paravascular space
+- explain ISF clearance along paravenous pathways
+- discuss AQP4 role in ISF clearance
+- describe relationship between paravenous spaces and dural sinuses
+- discuss effects of Aqp4 gene deletion
+- discuss terminal clearance routes for solutes
+- introduce Alzheimer's disease
+- describe paravascular pathways
+- motivate AQP4-dependent bulk flow
+- discuss clearance of Aβ
+- describe CSF compartment
+- discuss paravascular routes
+- introduce choroid plexus
+- discuss lymphatic pathways
+- describe perivascular astroglial sheath
+- discuss Aβ deposition
+- introduce low-density lipoprotein receptor-related protein-1
+- discuss choroid plexus removal of Aβ
+- describe CSF turnover
+- discuss AQP4-deficient mice
+- introduce aquaporin-4
+- describe blood-brain barrier integrity
+- discuss glial-conditional deletion of AQP4
+- describe specialized membrane domains
+- introduce three-dimensional cerebral vasculature
+- discuss extracellular space
+- describe a-syntrophin-dependent pool of AQP4
+- discuss bidirectional water flow
+- introduce dystrophic mdx mice
+- describe altered blood-brain barrier integrity
+- discuss deletion of AQP4
+- describe perivascular glial protein scaffold
+- discuss blood-brain barrier integrity
+- introduce AQP4 gene deletion
+- describe trafficking of glucose, lactate, and Aβ
+- discuss perivascular drainage of Aβ
+- introduce reactive gliosis
+- discuss altered AQP4 expression and localization
+- discuss therapeutic approaches
+
+### 6.2. Example 2
+
+- introduce brain-wide paravascular pathway for waste clearance
+- describe glymphatic system
+- motivate CSF-ISF exchange measurement
+- introduce dynamic contrast-enhanced MRI
+- visualize CSF-ISF exchange across rat brain
+- characterize features of glymphatic pathway function
+- identify influx nodes and clearance routes
+- define kinetic parameters for glymphatic CSF-ISF exchange
+- motivate Alzheimer's disease susceptibility evaluation
+- introduce classical model of CSF secretion and reabsorption
+- describe limitations of classical model
+- introduce glymphatic system as alternative
+- describe paravascular spaces and interstitial fluid exchange
+- motivate use of contrast-enhanced MRI
+- describe surgical preparation of rats
+- introduce anesthesia and monitoring procedures
+- describe atlanto-occipital membrane exposure and catheter insertion
+- introduce MRI imaging protocol
+- describe 3D T1-weighted FLASH sequence
+- introduce paramagnetic contrast agents
+- describe phantom experiments for T1 effect matching
+- introduce data processing procedure
+- describe head motion correction and intensity normalization
+- introduce smoothing and voxel-by-voxel conversion
+- describe SPM8 software use
+- introduce cluster analysis
+- describe k-means cluster algorithm
+- introduce fluorescent intrathecal tracer imaging
+- describe ex vivo fluorescence imaging of brain slices
+- introduce statistics overview
+- describe data presentation and statistical analysis
+- introduce phantom MRI experiments
+- describe phantom preparation and T1 calculation
+- introduce results of phantom experiments
+- describe results of animal study
+- introduce physiological stability of rats during experiment
+- describe anatomical structures identified in MRI
+- introduce paravascular influx of paramagnetic contrast
+- conclude results of Example 2
+- introduce example 2
+- describe influx of CSF into brain parenchyma
+- show influx of Gd-DTPA and GadoSpin
+- describe paravascular influx including arrival of contrast agent
+- describe transport along olfactory arterial complex
+- describe transport via posterior choroidal arterial complex
+- compare brain-wide distribution of Gd-DTPA and GadoSpin
+- describe effect of molecular size on brain-wide transport
+- measure total time-exposure of paramagnetic contrast
+- calculate average TACs for Gd-DTPA and GadoSpin
+- compare influx rate, time-to-peak, and efflux rates
+- calculate mean AUC values
+- normalize mAUCs to pituitary recess
+- perform cluster analysis on midline sagittal slices
+- associate clusters with anatomical areas
+- show distribution pattern of clusters and zones
+- compare cluster analysis results for Gd-DTPA and GadoSpin
+- calculate ratio of zone 2 to zone 1
+- calculate ratio of zone 3 to zone 1
+- compare ratios for Gd-DTPA and GadoSpin
+- introduce fluorescence-based imaging of glymphatic pathway function
+- describe discrepancy between MRI and fluorescence-based imaging
+- co-inject fluorescent dextrans with MRI contrast agents
+- evaluate routes and extent of tracer penetration into brain
+- describe ex vivo fluorescence microscopy results
+- introduce example 2
+- describe fluorescent tracer distribution
+- describe paravascular CSF influx
+- compare TR-d3 and FITC-d500 distribution
+- describe signal changes induced by Gd-DTPA
+- discuss glymphatic pathway function
+- propose clinical prognostic test
+- describe glymphatic pathway function measurement
+- discuss CSF-ISF exchange patterns
+- analyze kinetic parameters
+- describe para-arterial bulk flow pathways
+- discuss CSF transport pathways
+- analyze exchange of CSF and ISF
+- discuss differences in CSF-ISF exchange patterns
+- confirm permeation of small molecular weight CSF tracers
+- discuss limitations of Gd-DTPA contrast concentrations
+- describe visualization of paravascular CSF-ISF exchange pathway
+- analyze kinetics of CSF tracer influx
+- compare CSF-ISF exchange between Gd-DTPA and GadoSpin
+- discuss cluster analysis
+- discuss glymphatic pathway function in AD
+- propose safe, minimally invasive imaging approach
+- discuss suitability of single-shot intrathecal lumbar injections
+- discuss potential clinical application
+- cite reference 1
+- cite reference 2
+- cite reference 3
+- cite reference 4
+- cite reference 5
+- cite reference 6
+- cite references 7-16
+
+### 6.3. Example 3
+
+- introduce glymphatic pathway function evaluation
+- motivate need for clinically acceptable approach
+- describe limitations of existing approaches
+- summarize findings of Examples 1 and 2
+- introduce lumbar intrathecal injection approach
+- describe experimental design
+- detail surgical preparation
+- describe tracer injection procedure
+- explain perfusion and fixation procedure
+- describe immunofluorescence labeling
+- detail fluorescence imaging procedure
+- explain image analysis and quantification
+- describe statistical analysis
+- present results of intracisternal injection
+- present results of lumbar intrathecal injection
+- compare results of both injection routes
+- discuss implications of findings
+- relate to neurodegenerative diseases
+- discuss potential of lumbar intrathecal injection
+- summarize advantages of dynamic nuclear imaging
+- discuss potential for clinical application
+- highlight significance of glymphatic pathway function evaluation
+- conclude feasibility of lumbar intrathecal injection approach
+- introduce Example 3
+- describe mouse study in Example 1
+- motivate glymphatic system study
+- describe rat study design
+- describe intracisternal CSF tracer injections
+- analyze CSF-ISF exchange in mouse and rat
+- describe imaging CSF-ISF exchange
+- quantify fluorescent CSF tracer influx
+- compare anterior and posterior brain regions
+- analyze white matter fluorescence intensity
+- describe lumbar intrathecal CSF tracer injections
+- analyze effect of molecular weight on CSF tracer influx
+- describe CSF bulk flow
+- analyze paravascular pathway of CSF tracer influx
+- describe confocal microscopy analysis
+- analyze FITC-d500 and TR-d3 movement
+- describe astrocytic endfoot processes
+- analyze CSF-ISF exchange after lumbar injection
+- describe conclusion
+- summarize findings
+- describe glymphatic pathway function
+- motivate clinical translation
+- describe contrast-enhanced MRI analysis
+- describe lumbar intrathecal delivery route
+- describe references cited in Example 3
+- list references
+- describe spinal cord birth injury
+- describe traumatic cerebrospinal fluid leak
+- describe physiology of choroid plexus
+- describe role of blood-brain barrier in Alzheimer's disease
+- describe spinal CSF absorption
+- describe normal flow patterns of intracranial and spinal CSF
+- describe risks and side-effects of intrathecal morphine
+- describe amyloid hypothesis of Alzheimer's disease
+- describe comparison of intrathecal morphine and pethidine
+- describe role of digital subtraction myelography
+- describe intrathecal chemotherapy
+- describe revitalized tau hypothesis on Alzheimer's disease
+
+### 6.4. Example 4
+
+- introduce cerebrospinal fluid (CSF) secretion and flow
+- motivate Alzheimer's disease (AD) as major application
+- describe background of AD
+- explain amyloid β (Aβ) production and accumulation
+- discuss glymphatic system and its role in Aβ clearance
+- describe reduced CSF secretion in aging brain and AD
+- motivate restoring or augmenting CSF flow and CSF/ISF exchange
+- describe experimental design
+- introduce artificial CSF infusion system
+- describe injection of 125I-Aβ40 and 14C-inulin into brain ISF
+- explain tissue sampling and radioactivity analysis
+- calculate clearance parameters
+- show effect of CSF infusion rate on recovery of 125I-Aβ40 and 14C-inulin
+- show effect of CSF infusion on recovery of 125I-Aβ40 and 14C-inulin
+- show effect of duration of CSF infusion on recovery of 125I-Aβ40 and 14C-inulin
+- discuss results and implications for AD treatment
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+- cite references
+
+### 6.5 Example 5
+
+- introduce methods for evaluating brain-wide paravascular pathway
+- describe dynamic integrated MRI-PET imaging
+- explain intrathecal administration of paramagnetic contrast agent and 18F-labeled radioisotopes
+- describe clinical protocol for implementing technique in humans
+- introduce glymphatic transport in rodent brain imaged via dynamic integrated MRI-PET
+- describe PET-MRI image fusion and registration to rat brain atlas template
+- show results of experiments demonstrating rapid movement of 18FDG through glymphatic pathway
+- discuss implications for clinical application
+- outline clinical protocol to assess glymphatic transport in human brain
+- discuss advantages of using intrathecal 18FDG for diagnostic purposes
+
+### 6.6 Example 6
+
+- demonstrate impaired glymphatic pathway function in aging brain
+- introduce FIGS. 33A-F, paravascular CSF influx evaluation
+- describe experimental design for FIGS. 33A-F
+- quantify paravascular CSF influx in young and aged brains
+- show representative serial imaging of CSF tracer entry
+- compare CSF tracer entry in young and aged brains
+- introduce FIGS. 34A-E, brain-wide glymphatic pathway function evaluation
+- describe experimental design for FIGS. 34A-E
+- quantify CSF tracer influx in young, middle-aged, and old brains
+- show representative images of CSF tracer influx differences
+- introduce FIGS. 35A-J, region-specific age-related impairment evaluation
+- describe experimental design for FIGS. 35A-J
+- evaluate CSF tracer influx across whole brain
+- assess CSF influx in different brain regions
+- compare glymphatic pathway function in young and aged brains
+- introduce FIGS. 36A-B, interstitial amyloid β clearance evaluation
+- describe experimental design for FIGS. 36A-B
+- quantify clearance of radio-labeled amyloid β1-40 and inulin
+- compare clearance in young, middle-aged, and old brains
+- introduce FIGS. 37A-E, cerebral arterial pulsation evaluation
+- describe experimental design for FIGS. 37A-E
+- visualize cerebral vasculature and measure pulsatility
+- compare pulsatility in young and aged brains
+- introduce FIGS. 38A-D, cortical extracellular volume fraction and tortuosity evaluation
+- describe experimental design for FIGS. 38A-D
+- quantify extracellular volume fraction and tortuosity
+- compare values in young and aged brains
+- introduce FIGS. 39A-F, perivascular AQP4 expression evaluation
+- describe experimental design for FIGS. 39A-F
+- quantify AQP4 expression and polarization
+- compare values in young and aged brains
+- present example 6
+- show impaired glymphatic clearance after TBI
+- demonstrate interstitial tau clearance along paravascular pathways
+- confirm AQP4 immunoreactivity absence in Aqp4−/− mice
+- evaluate Aqp4 gene deletion effect on TBI lesion volume
+- show exacerbated tauopathy development after TBI with Aqp4 gene deletion
+- demonstrate impaired glymphatic pathway function promoting tau aggregation
+- evaluate Aqp4 gene deletion effect on neuroinflammation after TBI
+- show sustained neuroinflammation with impaired glymphatic pathway function
+- evaluate Aqp4 gene deletion effect on post-traumatic cognitive impairment
+- demonstrate exacerbated post-traumatic cognitive impairment with Aqp4 gene deletion
+- introduce AQP4-M1 variant as a determinant of perivascular AQP4 polarization
+- evaluate AQP4-M1 expression after TBI
+- demonstrate AQP4-M1 knockdown in cultured primary mouse cortical astrocytes
+- show STAT3 inhibition reducing AQP4-M1 expression
+- evaluate glymphatic pathway function after diffuse ischemic injury
+- demonstrate impaired glymphatic pathway function after diffuse ischemic injury
+- show reduced CSF influx into the cortex after diffuse ischemic injury
+- evaluate CSF tracer movement into the cortical parenchyma
+- demonstrate impaired CSF influx into the contralateral cortex
+- show reduced CSF influx into the brain parenchyma after diffuse ischemic injury
+- evaluate paravascular CSF influx in the contralateral hemisphere
+- demonstrate reduced rate and extent of CSF exchange with the interstitial space
+- show impaired glymphatic pathway function after diffuse ischemic injury
+- evaluate CSF influx into the brain parenchyma after diffuse ischemic injury
+- demonstrate reduced CSF influx into the brain parenchyma
+- conclude impaired glymphatic pathway function after diffuse ischemic injury
+
+### 6.7 Example 7
+
+- introduce glymphatic system as target for brain-wide clearance
+- motivate modulating brain's renin-angiotensin system (RAS) to enhance clearance
+- describe Alzheimer's disease as major target for treatment
+- list art-known antagonists of AVP, ANP, Angiotensin II, AT2R receptors, and AT1 receptors
+- background: accumulation of toxic dysfunctional proteins in brain
+- describe mechanism of Aβ production and accumulation
+- explain "amyloid cascade" hypothesis
+- describe Aβ extraction from senile plaques
+- discuss soluble forms of Aβ in CSF and brain
+- background: therapies based on lowering brain Aβ production
+- describe Aβ elimination routes from brain ISF
+- introduce glymphatic system as macroscopic brain-wide path of CSF/ISF exchange
+- describe three main pathways of glymphatic system
+- discuss fluid balance in the periphery
+- describe interacting systems maintaining plasma volume and composition
+- explain renin-angiotensin system (RAS) in the periphery
+- describe angiotensin-converting enzyme 2 and its role in RAS
+- introduce brain RAS as independent of peripheral RAS
+- describe brain RAS controlling fluid environment and other roles
+- discuss activation of angiotensin 2 receptor and Mas receptor
+- describe brain RAS in aging and AD
+- discuss levels of angiotensin-converting enzyme in AD
+- introduce astrocytes as major source of angiotensinogen and angiotensin-converting enzyme 2
+- describe noradrenalin receptors and their role in RAS
+- discuss blocking noradrenalin receptors and increased clearance of Aβ and inulin
+- introduce hypothesis: RAS plays a major role in controlling clearance of ISF substances via glymphatic system
+- describe methods: brain clearance studies and tissue sampling
+- describe analysis of radioactivity and calculations
+- results: effect of angiotensin II and losartan on recovery of Aβ40 and inulin
+- results: effect of angiotensin II and losartan on influx of Aβ40 and inulin
+- results: effect of vasopressin and atrial natriuretic peptide on recovery of Aβ40 and inulin
+- results: effect of angiotensin (1-7) on recovery of Aβ40 and inulin
+- results: effect of blocking nitric oxide on glymphatic pathways
+- describe dose dependent increase in influx of Aβ and inulin with L-NIL
+- describe mechanical disruption of the glymphatic system
+- describe clearance of Aβ and inulin under sleep conditions
+- describe effect of sleep deprivation on clearance of Aβ
+- list agents for use in treatment of insomnia or aids for sleep
+- list antihistamines
+- list nonprescription sleep aids
+- list benzodiazepines
+- list non-benzodiazepines
+- list melatonin receptor stimulator
+- list barbiturates
+- cite references related to Alzheimer's disease
+- cite references related to angiotensin receptors
+- cite references related to brain renin-angiotensin system
+- cite references related to clearance of amyloid-beta peptide
+- cite references related to sleep and Alzheimer's disease
+
+### 6.8 Example 8
+
+- introduce aquaporin 4 (AQP4) modulation
+- describe AQP4 function in brain
+- explain neurodegenerative diseases
+- motivate AQP4-targeting compounds
+- describe JNJ-17299425 and JNJ-17306861
+- explain proof-of-concept studies
+- describe AQP4 function in aging brain
+- explain AQP4-targeting compounds' effects
+- introduce glymphatic system function measurement
+- describe imaging of central nervous system
+- explain CSF-ISF exchange measurement
+- describe administration of imaging agent
+- explain MRI contrast agents
+- describe PET scanning
+- explain clearance measurement
+- describe therapeutic agent measurement
+- explain influx kinetic parameter calculation
+- describe static contrast-enhanced MRI or PET image analysis
+- explain risk calculation of neurodegenerative disease
+- describe neurodegenerative diseases
+- explain CTE risk calculation
+- introduce glymphatic system clearance treatment
+- describe mammal treatment
+- explain neurodegenerative disease treatment
+- describe glymphatic system function measurement
+- explain agent administration
+- describe Stat-3 inhibitor or BMP signaling axis molecules
+- explain AVP, ANP, Angiotensin II, AT2R, or AT1 receptor antagonists
+- describe insomnia or sleep aid treatment
+- explain AQP4 depolarization prevention
+- describe JNJ-17299425 or JNJ-17306861 administration
+- explain fluid pumping through central nervous system interstitium
+- introduce reactive gliosis treatment
+- describe glymphatic system clearance increase
+- explain mammal treatment
+- describe glymphatic system function measurement
+- explain agent administration
+- describe waste product clearance promotion
+- explain glymphatic system function measurement
+

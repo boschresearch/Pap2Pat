@@ -1,0 +1,181 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field
+
+## BACKGROUND OF THE INVENTION
+
+- motivate image processing
+- describe applications
+- limitations of software
+- limitations of hardware
+- importance of performance
+- limitations of memoization
+- need for customized memoization
+
+## SUMMARY OF THE INVENTION
+
+- introduce memoization compiler
+- describe method
+- describe system
+
+## DETAILED DESCRIPTION
+
+- introduce automated window memoization
+- describe hardware and software implementations
+- define memoization compiler and module
+- explain design phase inputs
+- describe graphical user interface
+- list input code and image processing algorithms
+- categorize spatial domain and transform-domain algorithms
+- detail local processing and global processing
+- provide examples of image processing algorithms
+- explain local image processing algorithms
+- describe mask operations set
+- define response of local window
+- explain memoization compiler functionality
+- describe reuse table
+- explain computation skipping
+- highlight speedup benefits
+- describe software-based memoization compiler
+- illustrate memoization compiler components
+- explain compression and hashing engine
+- describe design parameters
+- explain hit rate and memoization overhead cost
+- define measure of similarity and comparability
+- discuss design options and constraints
+- explain processor-memory performance gap
+- describe memory mapping scheme and hash function
+- discuss complexity of image processing algorithm
+- explain dynamic adjustment of design parameters
+- illustrate method for applying software-based window memoization
+- describe creating a window in the input image
+- explain compression and hashing engine functionality
+- describe reuse table lookup
+- explain hit and miss scenarios
+- describe updating the reuse table
+- explain outputting results
+- compare memoization compiler to cache and hash table
+- explain mapping scheme and eviction policy
+- describe reuse table structure
+- define speedup equation
+- explain hit rate and memoization overhead time
+- discuss time required for mask operations set
+- explain memoization overhead time components
+- describe data redundancy in image processing
+- explain psychovisual redundancy
+- describe coding redundancy
+- define entropy equation
+- explain coding redundancy equation
+- describe interpixel redundancy
+- explain mapping transforms
+- discuss window size and interpixel redundancy
+- describe weight given to interpixel redundancy
+- provide general form of mapping transform
+- define interpixel redundancy
+- calculate interpixel redundancy
+- define windows of pixels
+- define gray-level vectors
+- define strings
+- calculate probability of occurrences of strings
+- define computational redundancy
+- calculate computational redundancy
+- relate data redundancy to computational redundancy
+- prove relationship between data redundancy and computational redundancy
+- define relaxed string matching
+- generate strings from windows
+- minimize memoization overhead time
+- describe mapping schemes
+- describe direct-mapped mapping
+- describe fully associative mapping
+- describe set associative mapping
+- choose mapping scheme
+- provide hash function
+- describe division method
+- describe multiplication method
+- choose hash function
+- define speedup
+- relate speedup to memoization overhead time
+- model memoization overhead time
+- simplify memoization overhead time model
+- predict memoization overhead time
+- calculate hit rate
+- relate hit rate to memoization overhead time
+- describe caching mechanism
+- describe write-through cache
+- describe write-back cache
+- model nonlinear relationship between memoization overhead time and hit rate
+- define memoization overhead model
+- simplify model for two images
+- calculate coefficients of simplified model
+- validate simplified model using empirical data
+- illustrate experimental data and simplified model
+- compare simplified model with other models
+- evaluate accuracy of window memoization
+- define misclassification error
+- describe empirical results of window memoization
+- introduce hardware-based memoization module
+- describe design parameters of hardware-based module
+- explain effect of core latency on hit rate
+- describe mapping scheme and its effect on hit rate
+- explain hardware area overhead cost
+- describe measure of similarity for pixel neighborhoods
+- illustrate hardware-based memoization module
+- describe reuse table and control circuitry
+- explain input and output of memoization compiler
+- illustrate 2-wide superscalar pipeline
+- describe operation of 2-wide superscalar pipeline
+- explain handling of hits and misses
+- calculate speedup of 2-wide superscalar pipeline
+- derive equation for speedup
+- explain sprawl of 2-wide superscalar pipeline
+- derive equation for sprawl
+- describe hardware area consumed by scalar pipeline
+- describe hardware area consumed by superscalar pipeline
+- calculate sprawl of 2-wide superscalar pipeline
+- explain coefficient in sprawl equation
+- describe application of window memoization
+- summarize benefits of window memoization
+- conclude description of window memoization
+- introduce equation for sprawl
+- explain factors affecting speedup
+- describe effect of core latency on hit rate
+- introduce two-level reuse table
+- describe space-efficient architecture for reuse table
+- explain use of parallel Bloom filters
+- describe optimized architecture of memoization module
+- illustrate optimized architecture in FIG. 6
+- explain operation of optimized architecture
+- define efficiency of hardware design
+- explain performance and cost of hardware design
+- define relative efficiency
+- derive equation for relative efficiency
+- explain speedup and sprawl
+- describe pipelining in digital hardware design
+- explain hazards in pipelines
+- illustrate scalar and 2-wide superscalar pipelines
+- derive equation for speedup
+- derive equation for sprawl
+- explain relative efficiency of n-wide superscalar pipeline
+- model hardware-based memoization module
+- calculate speedup, sprawl, and accuracy results
+- implement scalar and 2-wide superscalar pipelines in VHDL
+- use Kirsch edge detector and median filter as case studies
+- calculate speedups for four sets of images
+- calculate sprawl using synthesis tool
+- illustrate average hit rates and false positives in FIG. 10
+- calculate speedup based on hit rate
+- show average speedups and accuracy in Table 2
+- calculate accuracy using misclassification error and signal-to-noise ratio
+- calculate sprawls for Kirsch edge detector and median filter
+- calculate relative efficiencies for both algorithms
+- explain importance of considering both speedup and sprawl
+- describe benefits of hardware-based memoization module
+- explain limitations of conventional superscalar pipelines
+- describe advantages of n-wide superscalar pipeline with window memoization
+- explain importance of modeling and simulation
+- describe use of VHDL and FPGA for implementation
+- explain importance of case studies in software
+- summarize benefits of hardware-based memoization module
+

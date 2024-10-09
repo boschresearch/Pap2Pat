@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce contextual biasing for speech recognition
+
+## BACKGROUND
+
+- motivate ASR systems
+- describe limitations of conventional ASR systems
+- introduce end-to-end models
+- describe challenges of contextual ASR for E2E models
+
+## SUMMARY
+
+- introduce speech recognition model
+- describe model configuration
+- describe audio processing components
+- describe contextual biasing components
+- describe joint training
+- describe optimization
+- describe advantages
+- describe dynamic context phrases
+- describe personalized context phrases
+- describe context data
+- describe CLAS model
+- describe embeddings of context n-grams
+- describe inference
+- describe method for incorporating contextual bias
+- receive audio data
+- obtain bias phrases
+- process acoustic features
+- generate output
+- describe speech recognition model components
+- describe first encoder
+- describe bias encoder
+- describe decoder
+- describe optional features
+- describe bias attention module
+- describe variable number of bias phrases
+- describe speech elements
+- describe training
+- describe additional implementations
+
+## DETAILED DESCRIPTION
+
+- introduce speech technologies
+- describe importance of context in ASR
+- explain limitations of traditional ASR systems
+- introduce end-to-end (E2E) speech recognition model
+- describe contextual biasing functionality
+- explain traditional on-the-fly (OTF) rescoring framework
+- motivate extending OTF rescoring to sequence-to-sequence models
+- introduce contextual Listen, Attend, and Spell (CLAS) model
+- describe CLAS model architecture
+- explain bias encoder and bias attention mechanism
+- describe example ASR system
+- introduce user device and user
+- describe speech recognition model
+- explain audio encoder and audio attention module
+- describe bias phrase selector and context data
+- explain selecting contextual bias phrases
+- describe bias conditioning module
+- explain activating bias phrases
+- describe disabling bias phrases
+- explain bias attention module
+- describe decoder context state
+- explain audio attention module
+- describe decoder audio state
+- explain concatenating attention vectors
+- describe decoder and softmax layer
+- explain beam search module
+- describe using transcription output
+- illustrate example CLAS model architecture
+- describe LAS model architecture
+- explain encoder and decoder components
+- describe attention network
+- explain computing probability of output tokens
+- describe on-the-fly (OTF) rescoring approach
+- explain compiling word-level biasing phrases into WFST
+- describe incorporating contextual language model scores
+- explain tunable hyperparameter lambda
+- illustrate OTF rescoring technique without weight pushing
+- describe limitations of OTF rescoring without weight pushing
+- illustrate OTF rescoring technique with weight pushing
+- describe limitations of OTF rescoring with weight pushing
+- illustrate OTF rescoring technique with weight pushing to each subword unit
+- describe subtractive cost in OTF rescoring
+- explain CLAS model modifications to LAS model
+- describe using additional context through bias phrases
+- explain bias encoder and bias attention mechanism
+- describe individual elements in bias phrases
+- explain purpose of biasing phrases
+- describe bias encoder embedding biasing phrases
+- explain learnable vector for no-bias input
+- describe multilayer LSTM network in bias encoder
+- introduce CLAS model
+- describe bias attention module
+- define bias context vector
+- explain CLAS model training
+- describe generation of bias phrases
+- introduce no-bias option
+- explain hyperparameters of training process
+- describe insertion of </bias> symbol
+- explain purpose of </bias> symbol
+- describe inference process
+- introduce bias conditioning
+- explain bias conditioning algorithm
+- describe example training setup
+- specify training data
+- describe model architecture
+- specify number of trainable parameters
+- describe performance of CLAS model
+- explain scalability issue
+- introduce bias-conditioning solution
+- describe test setup
+- explain rule-based prefix generation
+- describe benefits of bias conditioning
+- introduce OTF rescoring approach
+- describe combination of bias conditioning and OTF rescoring
+- explain benefits of combination
+- describe flowchart of method 400
+- receive audio data
+- obtain set of bias phrases
+- process acoustic features
+- determine transcript
+- describe software application
+- define non-transitory memory
+- describe computing device 500
+- specify components of computing device
+- describe processor 510
+- describe memory 520
+- describe storage device 530
+- describe high-speed interface/controller 540
+- describe low-speed interface/controller 560
+- describe display 580
+- describe various implementations of computing device
+- describe digital electronic and/or optical circuitry
+- describe integrated circuitry
+- describe specially designed ASICs
+- describe computer hardware, firmware, software, and/or combinations thereof
+- describe machine-readable medium
+

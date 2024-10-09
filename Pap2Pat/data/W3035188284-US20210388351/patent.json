@@ -1,0 +1,659 @@
+{
+    "id": "US20210388351",
+    "authors": [
+        "Albert Cheng",
+        "Nathaniel Jillette"
+    ],
+    "title": "ARTIFICIAL RNA-GUIDED SPLICING FACTORS",
+    "date": "2019-09-27 00:00:00",
+    "abstract": "Provided herein, in some aspects, are compositions and methods for artificially modulating alternative splicing, for example, inducing exon inclusion and/or exon exclusion events. In some embodiments, a catalytically inactive programmable nuclease, such as dCasRx, is fused to an RNA-binding protein (or fragment or isoform thereof) and, when guided to a target of interest by a specific guide RNA (gRNA), can regulate alternative splicing in eukaryotic cells.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "RNA, located at the center of the central dogma of molecular biology, regulates diverse biological processes and is itself subject to multiple layers of regulation effected by intricate networks of regulators1, 2. Dysregulation of RNA processes underlies a plethora of diseases3. Tethering of RNA effector domains from natural RNA processing enzymes by heterologous RNA binding proteins (e.g., Pumilio and MS2)4, 5, have allowed artificial regulation of RNA processes, and may enable targeted RNA therapeutics. These artificial RNA effectors require either protein engineering or insertion of artificial tags to target RNA, and depend on short recognition sequences, thus affording only limited targeting flexibility or specificity."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce RNA regulation"
+                    ],
+                    "num_characters": 732,
+                    "outline_medium": [
+                        "motivate RNA regulation"
+                    ],
+                    "outline_short": [
+                        "motivate RNA regulation"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Provided herein, in some aspects, are compositions and methods for artificially regulating alternative splicing of mRNA, for example, by inducing exon inclusion and exclusion events. In some embodiments, a catalytically inactive programmable nuclease, such as dCasRx, is fused to an RNA-binding protein (or fragment or isoform thereof) and, when guided to a target of interest by a specific guide RNA (gRNA), can regulate alternative splicing in eukaryotic cells. This versatile, artificial RNA-guided splicing factor can be used, as demonstrated herein, to induce exon inclusion and/or exclusion events at precise locations within a target gene or other genomic locus of interest.",
+                        "The discovery of RNA-guided RNA nucleases from bacterial CRISPR systems and their adaptation to mammalian cells have enabled programmable RNA degradation as well as RNA-guided regulation of endogenous RNAs (e.g., mRNAs). CasRx is a type IV-D CRISPR-Cas ribonuclease isolated from Ruminococcus flavefaciens XPD3002 with robust activity in degrading target RNAs matching designed gRNA sequences8. The data provided herein demonstrates that programmable nucleases (e.g., dCasRx with a mutated nuclease domain (R239A/H244A/R858A/H863A)8) can be guided by gRNAs to bind splicing elements to induce exon exclusion and/or inclusion events.",
+                        "Thus, provided herein, in some aspects, are artificial RNA-guided splicing factors comprising an RNA splicing factor (e.g., RBFOX1 or RBM38) linked to a catalytically inactive programmable nuclease (e.g., dCasRx). In some embodiments, the artificial RNA-guided splicing factor is complexed with a gRNA.",
+                        "In other aspects, provided herein are compositions comprising a splicing factor (e.g., RBFox1 or RBM38) modified to replace the RNA-binding domain with a first binding partner molecule, a gRNA modified to include a second binding partner molecule that is capable of binding to (e.g., binds to) the first binding partner molecule, and a catalytically inactive programmable nuclease (e.g., dCasRx).",
+                        "Further provided herein are methods and compositions for modulating RNA splicing. In some embodiments, the methods comprise contacting a cell comprising a gene of interest with the artificial RNA-guided splicing factor of the present disclosure and a gRNA that targets RNA encoded by the gene of interest, and inducing an exon inclusion and/or exclusion event in RNA encoded by the gene of interest.",
+                        "Also provided herein are methods and compositions for inducing an exon inclusion event. In some embodiments, the methods comprise contacting a cell that expresses a gene of interest with the artificial RNA-guided splicing factor of the present disclosure and a gRNA that targets an intron adjacent to an exon of interest within RNA encoded by the gene of interest, and inducing inclusion of the exon in the RNA encoded by the gene of interest. In other embodiments, the methods comprise a contacting a cell that expresses a gene of interest with (a) a first interaction domain fused to a catalytically inactive programmable nuclease, (b) a second interaction domain fused to a splicing factor, and (c) a gRNA, wherein the first interaction domain and the second interaction domain bind to an inducer agent, and wherein the gRNA targets RNA encoded by a gene of interest; and inducing an exon inclusion and/or exon exclusion event in the RNA encoded by the gene of interest.",
+                        "The present disclosure also provides, in some aspects, nucleic acids encoding artificial RNA-guided splicing factors.",
+                        "The present disclosure further provides nucleic acids encoding an RNA splicing factor linked to an N-terminal fragment of a catalytically inactive programmable nuclease linked to an N-terminal fragment of an intein and/or an RNA splicing factor linked to a C-terminal fragment of a catalytically inactive programmable nuclease linked to a C-terminal fragment of an intein.",
+                        "Also provided herein, in some aspects, are recombinant viral genomes (e.g., AAV genome) comprising the nucleic acids described herein. Further provided herein are viral particles comprising the recombinant viral genomes."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce artificial RNA regulation",
+                        "describe programmable nuclease",
+                        "describe RNA-guided splicing factor",
+                        "describe artificial RNA-guided splicing factor",
+                        "describe modified splicing factor",
+                        "describe method for modulating RNA splicing",
+                        "describe method for inducing exon inclusion",
+                        "describe nucleic acids and viral particles"
+                    ],
+                    "num_characters": 4108,
+                    "outline_medium": [
+                        "introduce RNA-guided splicing factor",
+                        "describe programmable nuclease",
+                        "summarize artificial RNA-guided splicing factor",
+                        "outline methods and compositions"
+                    ],
+                    "outline_short": [
+                        "introduce RNA-guided splicing factor",
+                        "describe applications of RNA-guided splicing factor"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The present disclosure provides methods and compositions for modulating RNA splicing. In eukaryotes and some prokaryotes, transcribed RNA comprises exons, which encode proteins, and intervening intron sequences, which do not encode proteins. Splicing is the process of removing the intron sequences and joining the remaining exon sequences to produce a mature messenger RNA (mRNA).",
+                        "Alternative splicing occurs when a single gene codes for multiple proteins because one or more exons are included or excluded from the mature mRNA. The production of alternatively spliced mRNAs is regulated by trans-activating proteins (splicing factors) that bind to cis-activating sites on the mRNA transcript (splice acceptor sites). The proteins translated from alternatively spliced mRNAs have different amino acid sequences, which often translate into differences in biological function."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Splicing Factors",
+                            "paragraphs": [
+                                "Splicing is the process of removing introns from a pre-mRNA molecule and joining the remaining exons in a mRNA molecule. Some aspects of the present disclosure provide artificial RNA-guided splicing factors that comprise an RNA splicing factor. An RNA splicing factor is a protein involved in the removal of introns, and in some instances, exons, from transcribed pre-messenger RNA (pre-mRNA). The resulting processed mRNA includes mostly exons, which are nucleotide sequences within a gene that encode part of the processed mRNA, as opposed to introns, which are nucleotide sequences within a gene that are removed by mRNA splicing.",
+                                "An RNA splicing factor comprises an RNA-binding domain and a splicing domain. An RNA-binding domain (also referred to in the art as an RNA recognition motif) binds to RNA (e.g., single-stranded RNA or a secondary structure). A splicing domain of an RNA splicing factor is a catalytic domain. Binding of the splicing factor to RNA through the RNA-binding domain enables exertion of its function as a splicing factor. In some embodiments, as discussed elsewhere herein, an RNA-binding domain of a splicing factor is replaced with a catalytically inactive RNA-guided programmable nuclease. In some embodiments, an RNA splicing factor comprises a functional fragment (e.g., catalytic domain) of a splicing factor. In other embodiments, the RNA splicing factor comprises both the binding domain and the splicing domain (or functional fragments thereof). In yet other embodiments, the RNA splicing factor comprises a full-length functional splicing factor, which includes the entire amino acid sequence encoded by the splicing factor gene. It should be understood that an RNA splicing factor as used herein, when isolated as a fragment of a full length splicing factor, retains its function/activity (e.g., RNA-binding and/or splicing).",
+                                "Non-limiting examples of splicing factors that may be used as provided herein include 9G8, CUG-BP1, DAZAP1, ESRP1, ESRP2, ETR-3, FMRP, Fox-1, Fox-2, hnRNP A0, hnRNP A1, hnRNP A2/B1, hnRNP A3, hnRNP C, hnRNP C1, hnRNP C2, hnRNP D, hnRNP D0, hnRNP DL, hnRNP E1, hnRNP E2, hnRNP F, hnRNP G, hnRNP H1, hnRNP H2, hnRNP H3, hnRNP I (PTB), hnRNP J, hnRNP K, hnRNP L, hnRNP LL, hnRNP M, hnRNP P (TLS), hnRNP Q, hnRNP U, HTra2\u03b1, HTra2\u03b21, HuB, HuC, HuD, HuR, KSRP, MBNL1, Nova-1, Nova-2, nPTB, PSF, QKI, RBM25, RBM4, RBM5, Sam68, SAP155, SC35, SF1, SF2/ASF, SLM-1, SLM-2, SRm160, SRp20, SRp30c, SRp38, SRp40, SRp54, SRp55, SRp75, TDP43, TIA-1, TIAL1, YB-1, and ZRANB2 (see, e.g., Giulietti M et al. Nucleic Acids Res 2013; 41:D125-131). In some embodiments, the splicing factor is selected from RBFOX1, RBM38, DAZAP1, U2AF65, U2AF35, HNRNPH1, TRA2A, TRA2B, SYMPK, CPSF2, SRSF1, 9G8, PTB1/2, MBNL1/2/3, ESRP1, NOVA1, NOVA2, CELF4, SRM160, and SNRPC (U1C). In some embodiments, the splicing factor is selected from RBFOX1 and RBM38.",
+                                "The RNA binding fox-1 homolog 1 (RBFOX1) gene (Gene ID: 54715) encodes the RBFOX1 protein (also known as FOX1 or A2BP1), which regulates alternative splicing of a variety of RNA transcripts that are critical for neuronal function. Abnormalities in RBFOX1 that cause aberrant RBFOX1 activity are associated with autism and other neurodevelopmental and neuropsychiatric disorders, including intellectual disability, epilepsy, attention deficit hyperactivity disorder, schizophrenia, and Alzheimer disease. In some embodiments, an RNA splicing factor comprises RBFOX1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of RBFOX1.",
+                                "The RNA binding motif protein 38 (RBM38) gene (Gene ID: 55544) encodes the RBM38 protein, which regulates alternative splicing during late erythroid differentiation, where it regulates the translation of p53 and PTEN tumors. Loss of RBM38 enhances p53 expression and decreases PTEN expression, thereby promoting lymphomagenesis. In some embodiments, an RNA splicing factor comprises RBM38. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of RBM38.",
+                                "The DAZ associated protein 1 (DAZAP1) gene (Gene ID: 26528) encodes the DAZAP1 RNA-binding protein, which is involved in mammalian development and spermatogenesis. DAZAP1 promotes inclusion of weak exons and neutralizes splicing inhibitors when recruited to RNA. In some embodiments, an RNA splicing factor comprises DAZAP1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of DAZAP1.",
+                                "U2AF65 (Gene ID: 11338), together with U2AF35 (Gene ID: 7307), forms the U2 small nuclear ribonucleoprotein auxiliary factor (U2AF) complex, a component of splicing machinery. The large subunit (U2AF65) of the complex binds to the polypyrimidine tract of introns early in spliceosome assembly and also includes a protein-protein interaction domain that binds and recruits other splicing factors. The small subunit (U2AF35) is required for constitutive RNA splicing and also functions as a mediator of enhancer-dependent splicing, where it binds to an enhancer and acts as a bridge to recruit U2AF65 to an adjacent intron. In some embodiments, an RNA splicing factor comprises U2AF65. In some embodiments, an RNA splicing factor comprises U2AF35. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of U2AF35.",
+                                "The heterogeneous nuclear ribonucleoprotein H1 (HNRNPH1) gene (Gene ID: 3187) encodes a member of a subfamily of ubiquitously expressed heterogeneous nuclear ribonucleoproteins (hnRNPS) including additional family members HNRNPA1 and PTBP1. HnRNPs are a family of RNA binding protein that bind heterogeneous nuclear RNA and are associated with pre-mRNA processing and other aspects of mRNA metabolism and transport. In some embodiments, an RNA splicing factor comprises HNRNPH1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of HNRNPH1.",
+                                "The transformer 2 alpha homolog (TRA2A) gene (Gene ID: 29896) encodes the TRA2A protein. TRA2A is a sequence-specific RNA-binding protein that participates in the control of pre-mRNA splicing. In some embodiments, an RNA splicing factor comprises TRA2A. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of TRA2A.",
+                                "The transformer 2 beta homolog (TRA2B) gene (Gene ID: 6434) encodes the TRA2B protein. TRA2B is a splicing regulator that plays a role in pre-mRNA processing, splicing patterns, and gene expression. It is involved in spermatogenesis and neurologic disease through regulation of nuclear autoantigenic sperm protein (NASP), microtubule associated protein tau (MAPT), and survival motor neurons (SMN) genes. In some embodiments, an RNA splicing factor comprises TRA2B. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of TRA2B.",
+                                "The symplekin (SYMPK) gene (Gene ID: 8189) encodes the SYMPK protein. SYMPK regulates polyadenylation and promotes gene expression as part of a polyadenylation protein complex. The SYMPK protein is thought to serves as a scaffold for recruiting other members of the polyadenylation complex. In some embodiments, an RNA splicing factor comprises SYMPK. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of SYMPK.",
+                                "The cleavage and polyadenylation specific factor 2 (CPSF2) gene (Gene ID: 53981) encodes the CPSF2 protein, a component of the CPSF complex. The CPSF complex regulates pre-mRNA 3-end formation and processing by recognizing the AAUAAA signal sequence and recruiting other factors that promote cleavage and polyadenylation. In some embodiments, an RNA splicing factor comprises CPSF2. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of CPSF2.",
+                                "The serine and arginine rich splicing factor 1 (SRSF1) gene (Gene ID: 6426) encodes the SRSF1 protein, which activates or represses splicing depending on its phosphorylation state and its interaction partners. SRSF1 promotes spliceosome assembly, constitutive pre-mRNA splicing, and regulates alternative splicing. In some embodiments, an RNA splicing factor comprises SRSF1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of SRSF1.",
+                                "The serine and arginine rich splicing factor 7 (SRSF7) gene (Gene ID: 6432) encodes the SRSF7 (9G8) protein. The 9G8 protein promotes spliceosome assembly and constitutive pre-mRNA splicing and regulates mRNA export from the nucleus. In some embodiments, an RNA splicing factor comprises 9G8. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of 9G8.",
+                                "The polypyrimidine tract binding protein 1 (PTBP1) gene (Gene ID: 5725) encodes the PTB1 protein. The PTB1 protein is a negative regulator of alternative splicing, causing exon-skipping in numerous pre-mRNAs. PTB1 also regulators 3\u2032-end processing of mRNA and mRNA stability. In some embodiments, an RNA splicing factor comprises PTB1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of PTB1.",
+                                "The polypyrimidine tract binding protein 2 (PTBP2) gene (Gene ID: 58155) encodes the PTB2 protein. The PTB2 protein regulates pre-mRNA splicing in neurons and germ cells. PTB2 also regulates 3\u2032-end processing of mRNA and mRNA stability. In some embodiments, an RNA splicing factor comprises PTB2. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of PTB2.",
+                                "The muscleblind like splicing regulator 1 (MBNL1) gene (Gene ID: 4154) encodes the MBNL1 protein. The MBNL1 protein is a sequence-specific pre-mRNA splicing factor that binds RNA through pairs of highly conserved zinc fingers. It is predominantly expressed in skeletal muscles, neuronal tissues, thymus, liver, and kidney tissues, and it is important for the terminal differentiation of myocytes and neurons. MBNL1 transcripts are alternatively splicing to generate a variety of protein isoforms, and inclusion of exon 5 is critical for differentiation of hear and muscle. Perturbation of MBNL1 activity is associated with myotonic dystrophy. In some embodiments, an RNA splicing factor comprises MBNL1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of MBNL1.",
+                                "The muscleblind like splicing regulator 2 (MBNL2) gene (Gene ID: 10150) encodes the MBNL2 protein. The MBNL2 protein is a sequence-specific pre-mRNA splicing factor that binds RNA through pairs of highly conserved zinc fingers. MBNL2 acts as either an activator or repressor of splicing on specific pre-mRNA targets, including cardiac troponin-T, insulin receptor, and CELF proteins. Perturbation of MBNL2 activity is associated with myotonic dystrophy. In some embodiments, an RNA splicing factor comprises MBNL2. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of MBNL2.",
+                                "The muscleblind like splicing regulator 3 (MBNL3) gene (Gene ID: 55796) encodes the MBNL3 protein. The MBNL3 protein is a sequence-specific pre-mRNA splicing factor that binds RNA through a pair of highly-conserved zinc fingers. MBNL3 may function in the regulator of alternative splicing and may play a role in the pathophysiology of myotonic dystrophy. In some embodiments, an RNA splicing factor comprises MBNL3. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of MBNL3.",
+                                "The epithelial splicing regulatory protein 1 (ESRP1) gene (Gene ID: 54845) encodes the ESPR1 splicing regulator protein. The ESPR1 protein is a regulator of alternative splicing in epithelial cells whose expression is down-regulated during the epithelial-mesenchymal transition, a fundamental development process that is abnormally activated in cancer metastasis. ESPR1 is upregulated in numerous cancers, including ovarian and cervical cancers. In some embodiments, an RNA splicing factor comprises ESPR1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of ESPR1.",
+                                "The epithelial splicing regulator protein 2 (ESPR2) gene (Gene ID: 80004) encodes the ESPR2 splicing regulator protein. The ESPR2 protein is a regulator of alternative splicing in epithelial cells whose expression is down-regulated during the epithelial-mesenchymal transition. ESPR2 is upregulated in numerous cancers, including ovarian and cervical cancers. In some embodiments, an RNA splicing factor comprises ESPR2. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of ESPR2.",
+                                "The NOVA alternative splicing regulator 1 (NOVA1) gene (Gene ID: 4857) encodes the NOVA1 protein. The NOVA1 protein is a neuron-specific RNA-binding protein, a member of paraneoplastic disease antigens that is recognized and inhibited by paraneoplastic antibodies. These antibodies are found in the sera of patients with paraneoplastic opsoclonus-ataxia, breast cancer, and small cell lung cancer. In some embodiments, an RNA splicing factor comprises NOVA1. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of NOVA1.",
+                                "The NOVA alternative splicing regulator 2 (NOVA2) gene (Gene ID: 4858) encodes the NOVA2 protein. The NOVA2 protein is a neuron-specific RNA-binding protein that regulates splicing in a series of RNA molecules that guide axons to the correct location in developing brains. In some embodiments, an RNA splicing factor comprises NOVA2. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of NOVA2.",
+                                "The CUGBP Elav-like family member 4 (CELF4) gene (Gene ID: 56853) encodes the CELF4 protein. The CELF4 protein regulates pre-mRNA alternative splicing and may also be involved in mRNA editing and translation. CELF4 is primarily expressed at axons in neuronal tissue and deficits in CELF4 function are associated with brain disorders such as epilepsy. In some embodiments, an RNA splicing factor comprises CELF4. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of CELF4.",
+                                "The serine and arginine repetitive matrix 1 (SRRM1) gene (Gene ID: 10250) encodes the SRM160 protein. The SRM160 protein contains an RNA recognition motif (RRM) and forms a splicing coactivator heterodimer with the SRM300 protein, a complex that promotes interactions between splicing factors bound to pre-mRNA. In some embodiments, an RNA splicing factor comprises SRM160. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of SRM160.",
+                                "The U1 small nuclear ribonucleoprotein C (SNRPC; aka U1C) gene (Gene ID: 6631) encodes one of the specific protein components of the U1 small nuclear ribonucleoprotein (snRNP) particle required for the formation of the spliceosome. The encoded protein participates in the processing of nuclear precursor messenger RNA splicing. In some embodiments, an RNA splicing factor comprises SNRPC. In some embodiments, an RNA splicing factor of the present disclosure comprises a catalytic domain of SNRPC.",
+                                "Provided herein, in some embodiments, are methods and compositions for modulating RNA splicing. Modulation of RNA splicing may include inducing an exon inclusion event (whereby a particular exon is included in the processed mRNA) and/or inducing an exon exclusion event (whereby a particular exon is excluded from the processed mRNA).",
+                                "In some embodiments, the methods comprise contacting a cell comprising a gene of interest with the artificial RNA-guided splicing factor and a guide RNA (gRNA) that targets RNA encoded by the gene of interest, and inducing an exon inclusion event or an exclusion event in RNA encoded by the gene of interest. In some embodiments, the methods comprise inducing an exon inclusion event and an exclusion event in RNA encoded by the gene of interest. An exon inclusion event is a form of alternative splicing in which an exon otherwise excluded from processed mRNA is included (present) in the processed mRNA. An exon exclusion event is a form of alternative splicing in which an exon otherwise included in processed mRNA is excluded from (absent) in the processed mRNA.",
+                                "In some embodiments, the present disclosure provides methods and compositions for modulating RNA splicing comprising contacting a cell comprising two genes of interest with the artificial RNA-guided splicing factor and two separate (independent) gRNAs or a concatemer of tandem gRNAs, wherein one of the gRNAs (e.g., a first gRNA) targets RNA encoded by one of the genes of interest (e.g., a first gene of interest) and the other of the gRNAs (e.g., a second gRNA) targets RNA encoded by the other gene of interest (e.g., a second gene of interest), and inducing an exon inclusion even in RNA encoded by one of the genes of interest (e.g., the first gene of interest) and inducing an exon exclusion event in RNA encoded by the other gene of interest (e.g., the second gene of interest). As used herein, a concatemer is a long, contiguous nucleic acid molecule that comprises multiple discrete nucleic acid sequences (e.g., each encoding a gRNA) arranged in tandem. In some embodiments, the nucleic acid sequences arranged in tandem encode gRNAs. In some embodiments, the concatemer comprises nucleic acid sequences that encode two gRNAs, three gRNAs, four gRNAs, five gRNAs, six gRNAs, seven gRNAs, eight gRNAs, nine gRNAs, or ten gRNAs.",
+                                "In some embodiments, the present disclosure provides methods and compositions for inducing an exon inclusion event. In some embodiments, the methods comprise contacting a cell that expresses a gene of interest with the artificial RNA-guided splicing factor and a gRNA that targets an intron adjacent to (e.g., downstream from or upstream from) an exon of interest within RNA encoded by the gene of interest, and inducing inclusion of the exon in the RNA encoded by the gene of interest.",
+                                "In some embodiments, the present disclosure provides methods and compositions for inducing an exon inclusion event. In some embodiments the methods comprise contacting a cell that expresses a gene of interest with the artificial RNA-guided splicing factor and a gRNA or a concatemer of tandem gRNAs that target(s) an intron adjacent to the exon of interest within RNA encoded by the gene of interest, and inducing inclusion of the exon in the RNA encoded by the gene of interest.",
+                                "In some embodiments, a method of the present disclosure results in a change in the ratio of inclusion of the exon to exclusion of the exon. In some embodiments, the ratio of inclusion of the exon to exclusion of the exon is increased by at least 1.5 fold, at least 2 fold, at least 5 fold, at least 10 fold, or at least 20 fold relative to a control. In some embodiments, the ratio of inclusion of the exon to exclusion of the exon is increased by at least 1.1 fold, 1.2 fold, 1.3 fold, 1.4 fold, 1.5 fold, 1.6 fold, 1.7 fold, 1.8 fold, or 1.9 fold relative to a control.",
+                                "In some aspects, the present disclosure provides compositions comprising the artificial RNA-guided splicing factor and a gRNA or a concatemer of tandem gRNAs. In some embodiments, the present disclosure provides compositions comprising an artificial RNA-guided splicing factor. In some embodiments, the compositions further comprise a carrier. As used herein, a carrier refers to an organic or inorganic ingredient, natural or synthetic, with which the active ingredient is combined to facilitate an intended use. Active ingredients (e.g., RNA splicing factor, gRNA or concatemer gRNAs, catalytically inactive programmable nuclease) may be admixed or compounded with any conventional pharmaceutical carrier or excipient."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define RNA splicing factor",
+                                "describe RNA-binding domain",
+                                "describe splicing domain",
+                                "introduce RBFOX1",
+                                "describe RBFOX1 function",
+                                "introduce RBM38",
+                                "describe RBM38 function",
+                                "introduce DAZAP1",
+                                "describe DAZAP1 function",
+                                "introduce U2AF65",
+                                "describe U2AF65 function",
+                                "introduce U2AF35",
+                                "describe U2AF35 function",
+                                "introduce HNRNPH1",
+                                "describe HNRNPH1 function",
+                                "introduce TRA2A",
+                                "describe TRA2A function",
+                                "introduce TRA2B",
+                                "describe TRA2B function",
+                                "introduce SYMPK",
+                                "describe SYMPK function",
+                                "introduce CPSF2",
+                                "describe CPSF2 function",
+                                "introduce SRSF1",
+                                "describe SRSF1 function",
+                                "introduce SRSF7 (9G8)",
+                                "describe SRSF7 (9G8) function",
+                                "introduce PTBP1",
+                                "describe PTBP1 function",
+                                "introduce PTBP2",
+                                "describe PTBP2 function",
+                                "introduce MBNL1",
+                                "describe MBNL1 function",
+                                "introduce MBNL2",
+                                "describe MBNL2 function",
+                                "introduce MBNL3",
+                                "describe MBNL3 function",
+                                "introduce ESPR1",
+                                "describe ESPR1 function"
+                            ],
+                            "num_characters": 19820,
+                            "outline_medium": [
+                                "define RNA splicing factor",
+                                "describe RNA-binding domain and splicing domain",
+                                "list examples of splicing factors",
+                                "describe RBFOX1 and its role in alternative splicing",
+                                "describe RBM38 and its role in alternative splicing",
+                                "describe DAZAP1 and its role in alternative splicing",
+                                "describe U2AF65 and U2AF35 and their roles in splicing",
+                                "describe HNRNPH1 and its role in pre-mRNA processing",
+                                "describe TRA2A and TRA2B and their roles in splicing",
+                                "describe SYMPK and its role in polyadenylation",
+                                "describe CPSF2 and its role in pre-mRNA 3-end formation",
+                                "describe SRSF1 and its role in splicing",
+                                "describe SRSF7 (9G8) and its role in splicing",
+                                "describe PTBP1 and PTBP2 and their roles in splicing",
+                                "describe MBNL1, MBNL2, and MBNL3 and their roles in splicing",
+                                "describe ESPR1 and ESPR2 and their roles in splicing",
+                                "describe NOVA1 and NOVA2 and their roles in splicing",
+                                "describe CELF4 and its role in splicing",
+                                "describe SRM160 and SNRPC and their roles in splicing"
+                            ],
+                            "outline_short": [
+                                "define RNA splicing factor",
+                                "describe RNA binding domain and splicing domain",
+                                "list examples of splicing factors",
+                                "describe RBFOX1 and its role in alternative splicing",
+                                "describe RBM38 and its role in alternative splicing",
+                                "describe DAZAP1 and its role in alternative splicing",
+                                "describe U2AF65 and U2AF35 and their roles in alternative splicing",
+                                "describe additional splicing factors and their roles",
+                                "summarize splicing factors and their functions"
+                            ]
+                        },
+                        {
+                            "title": "Programmable Nucleases",
+                            "paragraphs": [
+                                "RNA splicing factors of the present disclosure, in some embodiments, are linked to a catalytically inactive programmable nuclease. Programmable nuclease are nucleases that can be targeted to a specific site (e.g., nucleotide or sequence of nucleotides) within a nucleic acid (e.g., within a gene (or genome) and/or a gene transcript). Examples of the most common programmable nucleases include zinc-finger nucleases (ZFNs), transcription activator-like effector nucleases (TALENs) and RNA-guided engineered nucleases (RGENs) derived from the bacterial clustered regularly interspaced short palindromic repeat (CRISPR)-Cas (CRISPR-associated) system. Programmable nucleases include both deoxyribonucleases, which catalyze cleavage of DNA, and ribonucleases, which catalyze cleavage of RNA. Several known programmable nucleases, such as Cas nucleases, have been shown to function as both a deoxyribonuclease and a ribonuclease. In some embodiments, a programmable nuclease of the present disclosure is a programmable deoxyribonuclease. In other embodiments, a programmable nuclease of the present disclosure is a programmable ribonuclease.",
+                                "Non-limiting examples of programmable nucleases include Cas nucleases, such as type VI-D CRISPR-Cas ribonucleases, Leptotrichia wadei C2c2/Cas13a ribonucleases (see, e.g., Abudayyeh O O et al. Science 2016; 353(6299):aaf5573; and Abudayyeh O O et al. Nature 2017; 550:280-284), Cas13b ribonucleases (see, e.g., Cox D B T et al. Science 2017; 358(6366):1019-1027), Cas13d ribonucleases (see e.g., Zhang et al., Cell 2018 175(1), 212-223 e217 and Neisseria meningitidis Cas9 endonuclease (see, e.g., Lee C M et al. Mol Ther 2016; 24(3):645-654). In some embodiments, the programmable ribonuclease is a type VI-D CRISPR-Cas ribonuclease is dCasRx (Konermann, S et al. Cell 2018; 173:665-676). Other programmable nucleases may be used, in some embodiments, including Staphylococcus aureus Cas9, Streptococcus pyogenes Cas9, Campylobacter jejuni Cas9, and Neisseria meningitides Cas9, each of which have been shown to be capable of targeting both DNA and RNA (see, e.g., Strutt S C et al. eLife 2018; 7:e32724; Dugar et al., Molecular Cell 2018; 69(5), 893-905 e897; and Rousseau B A et al. Molecular Cell 2018; 69(5):P906-914). In some embodiments, the programmable nuclease is selected from catalytically inactive type VI-D CRISPR-Cas ribonucleases, C2c2/Cas13a ribonucleases, Cas13b ribonucleases, and Cas13d ribonucleases. In some embodiments, the programmable nuclease is a Neisseria meningitides Cas9 protein. Programmable nucleases are rendered inactive, in some embodiments, through mutation of the naturally-occurring enzymes.",
+                                "The dCasRx catalytically inactive programmable ribonuclease is a ribonuclease effector protein derived from the Ruminococcus flavefaciens strain XPD3002. CasRx is a class 2 CRISPR-Cas ribonuclease protein that comprises two HEPN (RxxxxH) ribonuclease motifs. Point mutations (i.e., R295A, H300A, R849A, H854A) of catalytic residues in the HEPN motifs of the CasRx protein results in inactivation of ribonuclease activity without inhibiting the targeting of dCasRx to the coding portion of the mRNA.",
+                                "In some embodiments, an RNA splicing factor is fused to a catalytically inactive programmable nuclease. A fusion protein comprises a two or more linked polypeptides that are encoded by a single or separate nucleic acid sequences (e.g., two or more separate nucleic acid sequences). Fusion proteins are typically recombinantly produced, wherein the polynucleotides that encode the fusion protein are in a system that supports the expression of the two or more linked polynucleotides, for example, and the translation of the resulting polynucleotides into recombinant polypeptides. Fusion proteins (or other fusion polypeptides) may be configured in multiple arrangements. An RNA splicing factor, in some embodiments, is fused to the amino terminus (N terminus) of a catalytically inactive programmable nuclease. In other embodiments, an RNA splicing factor is fused to the carboxy terminus (C terminus) of a catalytically inactive programmable nuclease.",
+                                "In some embodiments, the catalytically inactive programmable nuclease is in a \u201csplit\u201d form, whereby the coding sequence of the nuclease is split, creating two fragments that can be encoded separately (e.g., encoded on separate nucleic acids and/or vectors) but joined together once expressed to render an active artificial RNA-guided splicing factor. Such a split form allows, e.g., for the packaging of the active artificial RNA-guided splicing factor in two or more vectors, such as viral vectors including AAV. In some embodiments, the two fragments each comprise a fragment of an intein which can be (self-) spliced together. For example, in some embodiments the artificial RNA-guided splicing factor comprises an N-terminal fragment of a catalytically inactive programmable nuclease linked to an N-terminal fragment of an intein and a C-terminal fragment of a catalytically inactive programmable nuclease linked to a C-terminal fragment of an intein, wherein the N-terminal fragment and the C-terminal fragment of the intein catalyze joining of the N-terminal and C-terminal fragments of the catalytically inactive programmable nuclease to produce the full-length artificial RNA-guided splicing factor. In some embodiments the intein utilized is the Npu DnaE intein (see e.g., Zettler et al., FEBS Lett. 2009 Mar. 4; 583(5):909-14). Inteins suitable for use in embodiments described herein are well known in the art, and include those provided in International Publication No. WO 2019/075200, the contents of which are hereby incorporated in their entirety."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define programmable nucleases",
+                                "describe types of programmable nucleases",
+                                "introduce zinc-finger nucleases",
+                                "introduce transcription activator-like effector nucleases",
+                                "introduce RNA-guided engineered nucleases",
+                                "describe Cas nucleases",
+                                "describe Leptotrichia wadei C2c2/Cas13a ribonucleases",
+                                "describe Cas13b ribonucleases",
+                                "describe Cas13d ribonucleases",
+                                "describe Neisseria meningitidis Cas9 endonuclease",
+                                "describe dCasRx catalytically inactive programmable ribonuclease"
+                            ],
+                            "num_characters": 5687,
+                            "outline_medium": [
+                                "define programmable nucleases",
+                                "describe types of programmable nucleases",
+                                "describe Cas nucleases",
+                                "describe catalytically inactive programmable nucleases",
+                                "describe fusion proteins of RNA splicing factors and programmable nucleases"
+                            ],
+                            "outline_short": [
+                                "define programmable nucleases",
+                                "describe examples of programmable nucleases"
+                            ]
+                        },
+                        {
+                            "title": "Guide RNA",
+                            "paragraphs": [
+                                "Compositions of the present disclosure, in some embodiments, comprise an artificial RNA-guided splicing factor and a guide RNA (gRNA). A gRNA is a short RNA (e.g., synthetic RNA) composed of a scaffold sequence used for programmable nuclease (e.g., Cas) binding and a \u02dc20-25 nucleotide spacer that defines a nucleic acid target. In some embodiments, a spacer is 15 to 30 nucleotides. In some embodiments, the spacer is 15, 16, 17, 18, 19, 29, 21, 22, 23, 24, 25, 26, 27, 28, 29, or 30 nucleotides. In some embodiments, a spacer is 22 nucleotides.",
+                                "In some embodiments, a composition comprises an artificial RNA-guided splicing factor and a concatemer (two or more, for example, three, four, or five) of tandem (e.g., adjacent) gRNAs (also referred to as a pre-gRNA molecule). In some embodiments, an artificial RNA-guided splicing factor is complexed with (e.g., non-covalently bound to) a gRNA. In some embodiments, a composition comprises a gRNA that targets a first gene of interest. In some embodiments, a composition further comprises an additional RNA (e.g., 1, 2, 3, 4, or more) that targets a second gene of interest."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce guide RNA",
+                                "describe composition of guide RNA"
+                            ],
+                            "num_characters": 1125,
+                            "outline_medium": [
+                                "describe guide RNA composition and function"
+                            ],
+                            "outline_short": [
+                                "describe guide RNA composition and function"
+                            ]
+                        },
+                        {
+                            "title": "Genes of Interest",
+                            "paragraphs": [
+                                "SMN2 Gene",
+                                "In some embodiments, a gRNA targets the survival of motor neuron 2 SMN2 gene (Gene ID: 6607), which encodes the survival of motor neuron (SMN) protein. A C840T mutation in Exon 7 of the SMN2 gene creates an exonic splicing suppressor (ESS) that leads to exclusion of Exon 7 during pre-mRNA splicing. The exclusion of Exon 7 results in roughly 90% truncated, non-functional SMN protein, which is rapidly degraded. Subjects with SMN2 exon exclusion have approximately only 10% of functional SMN protein, which is insufficient to sustain survival of spinal motor neurons in the CNS, resulting in spinal muscular atrophy (SMA).",
+                                "Spinal muscular atrophies (OMIM: 253300, 253550, 253400, and 271150) are a rare, debilitating family of autosomal recessive neuromuscular diseases characterized by motor neuron degeneration and loss of muscle strength. Four types of SMA (I-IV) are recognized depending upon the age of onset, the maximum muscular activity achieved, and survival. In individuals with SMA, degeneration of motor neurons in the spinal cord results in skeletal muscular atrophy and weakness most commonly involving the limbs.",
+                                "Thus, in some embodiments, provided herein are methods and compositions for treating a subject (e.g., a human subject) having (e.g., diagnosed with) SMA. In some embodiments, the methods comprise administering to the subject an artificial RNA-guided splicing factor as provided herein and a gRNA that targets the SMN2 gene, e.g., an intron adjacent to Exon 7. In some embodiments, the artificial RNA-guided splicing factor and gRNA are formulated in a lipid nanoparticle, such as a cationic lipid nanoparticle.",
+                                "The SMN1 gene (Gene ID: 6606) is a homolog of SMN2. The sequence difference between SMN1 and SMN2 is a single nucleotide in exon 7 (+6 position), which is a \u201cC\u201d (cytosine) in SMN1 and a \u201cT\u201d (thymine) in SMN2. This thymine creates an exonic splicing silencer (ESS) in SMN2, which results in inefficient splicing and inclusion of Exon 7 (see, e.g., Kashima, T. and Manley, J. L. Nature Genetics, 2003 34(4): 460-463).",
+                                "In some embodiments, the exon subjected to an exon inclusion event is Exon 7 of SMN2. In some embodiments, Exon 7 comprises a thymine \u201cT\u201d at the +6 position of Exon 7. In some embodiments, Exon 7 comprises a cytosine \u201cC\u201d at the +6 position of Exon 7. In some embodiments, a gRNA targets an intron between Exon 7 and Exon 8 of SMN2. In some embodiments, a gRNA targets an intron between Exon 6 and Exon 7 of SMN2. In some embodiments, a gRNA targets Exon 7. In some embodiments, the gRNA has a sequence as set forth in SEQ ID NOs: 2-6, 8, or 10.",
+                                "RG6 Minigene",
+                                "In some embodiments, a gene of interest is a RG6 minigene. In some embodiments, the additional gRNA targets a splice acceptor site of the RG6 minigene (Orengo, J. et al. Nucleic Acids Research 2006; 34(22):e148). The RG6 minigene is a biochromatic alternative splicing reporter for cardiac troponin T upstream of dsRED and EGFP fluorescent reporter proteins. Alternative splicing of a 28 nucleotide cassette exon shifts the reading frame between the dsRED and EGFP reporter proteins."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce SMN2 gene",
+                                "describe C840T mutation in Exon 7 of SMN2 gene",
+                                "describe spinal muscular atrophies",
+                                "introduce RG6 minigene",
+                                "describe alternative splicing of RG6 minigene",
+                                "describe targeting of SMN2 gene with gRNA"
+                            ],
+                            "num_characters": 3114,
+                            "outline_medium": [
+                                "describe SMN2 gene and its relation to spinal muscular atrophy",
+                                "describe RG6 minigene",
+                                "describe gRNA targeting of genes of interest"
+                            ],
+                            "outline_short": [
+                                "describe genes of interest, including SMN2 and RG6 minigene"
+                            ]
+                        },
+                        {
+                            "title": "Artificial RNA-Guided Splicing Factor Complexes",
+                            "paragraphs": [
+                                "Also provided herein are artificial RNA-guided splicing factor complexes that modulate RNA splicing. In some embodiments, an artificial RNA-guided splicing factor complex comprises an RNA splicing factor and a catalytically inactive programmable nuclease that are separately recruited to form a complex with (to bind directly or indirectly to) a gRNA targeting a gene of interest (e.g., targeting mRNA encoded by a gene of interest).",
+                                "Also provided herein, in some aspects, are compositions comprising a splicing factor (e.g., any one of the splicing factors described herein) modified to replace the RNA-binding domain with a first binding partner molecule (e.g., MS2 bacteriophage coat protein), a guide RNA modified to include a second binding partner molecule that binds to the first binding partner molecule (e.g., a stem-loop structure from the MS2 bacteriophage genome), and a catalytically inactive programmable nuclease (e.g., dCasRx). Thus, in some embodiments, a splicing factor comprises a binding partner molecule instead of an RNA-binding domain.",
+                                "Binding partner molecules may be any two molecules that bind to each other (e.g., transiently or stably). In some embodiments, the binding partner molecules are proteins (e.g., ligand/receptor pairs). In some embodiments, the binding partner molecules are nucleic acids (e.g., complementary nucleic acids). In some embodiments, one binding partner molecule is a protein and the other binding partner molecule is a nucleic acid (e.g., MS2 bacteriophage coat protein and a stem-loop structure from the MS2 bacteriophage genome).",
+                                "In some embodiments, the first binding partner molecule is a MS2 bacteriophage coat protein (see, e.g., Johansson H E et al. Sem Virol. 1997; 8(3):176-185). In some embodiments, the second binding partner molecule is a stem-loop structure from the MS2 bacteriophage genome. In some embodiments, a modified gRNA comprises at least two (e.g., 2, 3, 4, or 5) copies of the second binding partner molecule.",
+                                "In some embodiments, the catalytically inactive programmable nuclease is a type VI-D CRISPR-Cas ribonuclease. In some embodiments, the type VI-D CRISPR-Cas ribonuclease is dCasRx. Other catalytically inactive programmable nuclease may be used and are described elsewhere herein.",
+                                "Further provided herein, in some aspects are methods of modulating RNA splicing, the methods comprising contacting a cell comprising a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule (e.g., MS2 bacteriophage coat protein), (b) a guide RNA modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule (e.g., a stem-loop structure from the MS2 bacteriophage genome), and (c) a catalytically inactive programmable nuclease (e.g., dCasRx), wherein the gRNA targets RNA encoded by the gene of interest and inducing an exon inclusion and/or exclusion event in the RNA encoded by the gene of interest.",
+                                "In some embodiments, the methods comprise contacting a cell that expresses a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule (e.g., MS2 bacteriophage coat protein), (b) a guide RNA (gRNA) modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule (e.g., a stem-loop structure from the MS2 bacteriophage genome), and (c) a catalytically inactive programmable nuclease (e.g., dCasRx), wherein the gRNA targets an intron adjacent to an exon of interest within RNA encoded by the gene of interest, and inducing inclusion of the exon in the RNA encoded by the gene of interest.",
+                                "In some embodiments, the present disclosure provides methods of modulating RNA splicing comprising contacting a cell comprising a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule, (b) a guide RNA modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule, and (c) a catalytically inactive programmable nuclease, wherein the guide RNA targets RNA encoded by the gene of interest and, inducing an exon inclusion and/or exclusion event in the RNA encoded by the gene of interest.",
+                                "In some embodiments, the present disclosure provides methods of inducing an exon inclusion event comprising contacting a cell that expresses a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule, (b) a guide RNA (gRNA) molecule modified to include a second binding partner that is capable of binding to the first binding partner molecule, and (c) a catalytically inactive programmable nuclease, wherein the gRNA targets an intron adjacent to an exon of interest within RNA encoded by the gene of interest, and inducing inclusion of the exon in the RNA encoded by the gene of interest. In some aspects, the present disclosure provides compositions comprising an artificial RNA-guided splicing factor and a gRNA.",
+                                "iCASFx",
+                                "Also provided herein, in some aspects, are methods and compositions for exon inclusion comprising a two-peptide, inducible CRISPR Artificial Splicing Factors (iCASFx) system. In some embodiments, the iCASFx system comprises a first interaction domain fused to a catalytically inactive programmable nuclease, a second interaction domain fused to splicing factor, wherein the first interaction domain and the second interaction domain dimerize in the presence of an inducer agent, and a guide RNA. Interaction domains are molecules (e.g., proteins) that can binds to each other or can bind to an inducer agent, such as a chemical agent. A non-limiting example of a pair of interaction domains (a first and second interaction domain) includes FRB protein and FKBP protein. The FK506 binding protein 1A (FKBP1A) (Gene ID: 2280) gene encodes the FKBP protein. The FKBP protein is a cis-trans prolyl isomerase enzyme that plays a role in immunoregulation and basic cellular processes involving protein folding and trafficking. FKBP also binds the immunosuppressants FK506 (tacrolimus) and rapamycin. The FKBP-rapamycin-binding (FRB) domain is the portion of the mTOR protein that interaction with rapamycin. Rapamycin binds the FRB domain of mTOR and inhibits its kinase activity.",
+                                "Other non-limiting examples of interaction domains include GyrB, GAI, Calcineurin A, CyP-Fas, mTOR, Fab, BCL-xL, eDHFR, CRY2, LOV, PHYB, PIF, FKF1, GI, and Snap-Tag, and their corresponding binding partners, as well as those disclosed in Luker, K E et al. Proc Natl Acad Sci 2004 101(33): 12288-12293; Liang, F S, et al. Sci Signal 2011 4(164): rs2; Miyamoto, T, et al. Nat Chem Biol 2012 8: 465-470; Kennedy, M J, et al. Nat Methods 2012 7(12): 973-975; Yazawa, M, et al. Nat Biotechnol 2009 27(10): 941-945; Levskaya, A, et al., Nature 2009 461: 997-1001, the contents of which are incorporated herein in their entirety.",
+                                "The iCASFx system enables greater control over splicing events by introducing an inducible component to the artificial RNA-guided splicing factors of the present disclosure. An inducer agent is an agent that promotes binding of two interaction domains to each other, or binding of two interaction domains to a third molecule, thereby bringing the two interaction domains into close proximity relative to each other. Non-limiting examples of agents which may be utilized in this system include chemicals (e.g., rapamycin, Coumermycin, or Gibberellin), light, and heat.",
+                                "In some embodiments, an RNA splicing factor is fused to one interaction domain, and a catalytically inactive programmable nuclease is fused to another interaction domain. In some embodiments, an RNA splicing factor is fused to FRB, and a catalytically inactive programmable nuclease is fused to FKBP. In other embodiments, an RNA splicing factor is fused to FKBP, and a catalytically inactive programmable nuclease is fused to FRB.",
+                                "The interaction domain may be used to the N-terminus or the C-terminus of the RNA splicing factor or the catalytically inactive programmable nuclease. In some embodiments, FRB is fused to the N-terminus of RBFOX1 or RBM38. In some embodiments, FRB is fused to the C-terminus of RBFOX1 or RBM38. In some embodiments, FRB is fused to the N-terminus of the catalytically inactive programmable nuclease. In some embodiments, FRB is fused to the C-terminus of the catalytically inactive programmable nuclease. In some embodiments, FKBP is fused to the N-terminus of RBFOX1 or RBM38. In some embodiments, FKBP is fused to the C-terminus of RBFOX1 or RBM38. In some embodiments, FKBP is fused to the N-terminus of the catalytically inactive programmable nuclease. In some embodiments, FKBP is fused to the C-terminus of the catalytically inactive programmable nuclease."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce artificial RNA-guided splicing factor complexes",
+                                "describe composition of artificial RNA-guided splicing factor complexes",
+                                "introduce modified splicing factor",
+                                "describe binding partner molecules",
+                                "introduce MS2 bacteriophage coat protein",
+                                "introduce stem-loop structure from MS2 bacteriophage genome",
+                                "describe modified gRNA",
+                                "introduce catalytically inactive programmable nuclease",
+                                "describe dCasRx",
+                                "describe methods of modulating RNA splicing",
+                                "describe contacting cell with modified splicing factor, gRNA, and catalytically inactive programmable nuclease",
+                                "describe inducing exon inclusion event",
+                                "introduce iCASFx system",
+                                "describe composition of iCASFx system",
+                                "introduce interaction domains",
+                                "describe inducer agent",
+                                "describe methods of exon inclusion using iCASFx system"
+                            ],
+                            "num_characters": 8887,
+                            "outline_medium": [
+                                "describe artificial RNA-guided splicing factor complexes",
+                                "describe recruitment of RNA splicing factor and catalytically inactive programmable nuclease",
+                                "describe modified splicing factor with binding partner molecule",
+                                "describe modified gRNA with binding partner molecule",
+                                "describe catalytically inactive programmable nuclease",
+                                "describe binding partner molecules",
+                                "describe methods of modulating RNA splicing",
+                                "describe compositions comprising artificial RNA-guided splicing factor and gRNA"
+                            ],
+                            "outline_short": [
+                                "describe artificial RNA-guided splicing factor complexes",
+                                "describe modified splicing factors with binding partner molecules",
+                                "describe guide RNA with binding partner molecules",
+                                "describe methods of modulating RNA splicing using artificial RNA-guided splicing factor complexes"
+                            ]
+                        },
+                        {
+                            "title": "Nucleic Acids and Vectors",
+                            "paragraphs": [
+                                "Also provided are nucleic acids and vectors encoding any of the artificial RNA-guided splicing factors, complexes, or components thereof, as described herein. In some embodiments, the nucleic acid is DNA (e.g., in the form of a plasmid) or RNA (e.g., in the form of mRNA). As used herein, \u201cvector\u201d means a nucleic acid of any transmissible agent (e.g., plasmid or virus) into which nucleic acids encoding any of the artificial RNA-guided splicing factors, complexes, or components thereof can be spliced in order to introduce the nucleic acids(s) into host cells to promote its (their) replication and/or transcription.",
+                                "In some embodiments, viral genomes comprising any of the foregoing nucleic acids (or sequences thereof) are provided. In some embodiments, the viral genome is in the form of an AAV genome (e.g., comprising inverted terminal repeats). In some embodiments, the viral genome (e.g., the AAV genome) is packaged in a viral particle (e.g., an AAV particle) capable of infecting/transducing a cell. Other forms of viral genomes and particles suitable for delivering the artificial RNA-guided splicing factors, complexes, or components thereof described herein are well known, and include, for example, adenovirus, AAV, HSV, Retroviruses (e.g., MMSV, MSCV), and Lentiviruses (e.g., HIV-1, HIV-2) (See e.g., Lundstrom, Diseases. 2018 June; 6(2): 42; the entire contents of which are hereby incorporated by reference)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce nucleic acids and vectors",
+                                "describe viral genomes and particles"
+                            ],
+                            "num_characters": 1429,
+                            "outline_medium": [
+                                "describe nucleic acids and vectors encoding artificial RNA-guided splicing factors"
+                            ],
+                            "outline_short": [
+                                "describe nucleic acids and vectors encoding artificial RNA-guided splicing factors"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce RNA splicing and alternative splicing"
+                    ],
+                    "num_characters": 876,
+                    "outline_medium": [
+                        "introduce RNA splicing and alternative splicing"
+                    ],
+                    "outline_short": [
+                        "introduce RNA splicing and alternative splicing"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Example 1. An RNA-Guided Artificial Splicing Factor RBFOX1N-dCasRx-C Activates SMN2-E7",
+                            "paragraphs": [
+                                "We created an artificial RNA-guided splicing factor (RBFOX1N-dCasRx-C) by replacing segments containing the RNA binding domain of splicing factor RBFOX1 (residues 118-189) with dCasRx and tested its activity to induce inclusion of Exon 7 of SMN2 (SMN2-E7) in the presence of targeting guide RNAs (gRNAs) (FIG. 1A). Four gRNAs (gSMN2-1 through gSMN2-4) were designed within the intron between SMN2-E7 and E8. When transfected with pCI-SMN2 and control GFP plasmid (pmaxGFP), SMN2 minigene expressed predominantly exclusion isoform (FIG. 1B, lane 1). When transfected with RBFOX1N-dCasRx-C and individual gRNAs, inclusion isoform level increased (FIG. 1B, lanes 11-14, see upper bands). Introduction of pools of two, three or four gRNAs simultaneously, increased further E7-included transcripts, as well as decreased the level of E7-excluded transcripts, switching the splicing pattern to predominantly inclusion (FIG. 1B, lanes 15-16). SMN2-E7 activation is dependent on RBFOX1 effector because dCasRx alone did not result in activation (FIG. 1B, lanes 2-9). Activation is also dependent on binding of the RBFOX1N-dCasRx-C on the SMN2 intron as control gRNAs (\u201cC\u201d) did not induce SMN2-E7 inclusion (FIG. 1B, lanes 2 and 10). To further quantitate the effect of SMN2-E7 activation, we conducted quantitative RT-PCR (qRT-PCR) using SYBR green reagents and primer pairs corresponding to E7-inclusion or E7-exclusion isoforms (FIG. 1C). We observed fold changes of inc/exc ratio compared to control GFP transfection consistent with the patterns observed in the semiquantitative RT-PCR assay, with pools of three gRNAs (gSMN2-1 through 3) giving the highest fold change."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "create artificial splicing factor RBFOX1N-dCasRx-C",
+                                "test activity to induce inclusion of Exon 7 of SMN2",
+                                "analyze results using semiquantitative RT-PCR and qRT-PCR"
+                            ],
+                            "num_characters": 1664,
+                            "outline_medium": [
+                                "create artificial splicing factor RBFOX1N-dCasRx-C"
+                            ],
+                            "outline_short": [
+                                "create artificial splicing factor"
+                            ]
+                        },
+                        {
+                            "title": "Example 2. RNA-Guided Artificial Splicing Factor RBM38-dCasRx and dCasRx-RBM38 Activates SMN2-E7",
+                            "paragraphs": [
+                                "We constructed two other artificial splicing factors by fusing RBM38 to the N-terminus (RBM38-dCasRx) or C-terminus (dCasRx-RBM38) of dCasRx and tested its ability to active SMN2-E7 (FIG. 2A). By guiding the artificial splicing factors to intronic sequences between SMN2-E7 and E8, we observed increase in E7 inclusion, with a switch to E7-dominance observed for the dCasRx-RBM38 fusion configuration (FIG. 2B)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test ability of RBM38-dCasRx and dCasRx-RBM38 to active SMN2-E7"
+                            ],
+                            "num_characters": 411,
+                            "outline_medium": [
+                                "create artificial splicing factors RBM38-dCasRx and dCasRx-RBM38"
+                            ],
+                            "outline_short": [
+                                "create artificial splicing factors"
+                            ]
+                        },
+                        {
+                            "title": "Example 3. Both Exon Activation and Repression can be Effected by RBFOX1N-dCasRx-C, RBM38-dCasRx or dCasRx-RBM38 by Differential Positioning of Target Sites",
+                            "paragraphs": [
+                                "We investigated whether the RNA-guided artificial splicing activators can also induce exon skipping (exclusion) by binding to a different location (FIG. 3A). We designed a gRNA targeting within SMN2-E7 and found that it can direct RBFOX1N-dCasRx-C, RBM38-dCasRx or dCasRx-RBM38 to induce skipping of E7 (FIG. 3B, lanes 7,10,13). However, the splicing domains were not required for exon exclusion because unfused dCasRx was also capable of inducing exon skipping (FIG. 3B, lane 4). Nonetheless, the RNA-guided artificial splicing factors can induce both inclusion (FIG. 3B, lanes 6,9,12) or exclusion of exons (FIG. 3B, lanes 7,10,13) depending on the designed locations of targeting, providing a dual functionality for splicing modulation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "investigate whether RNA-guided artificial splicing activators can induce exon skipping"
+                            ],
+                            "num_characters": 739,
+                            "outline_medium": [
+                                "test exon activation and repression by RBFOX1N-dCasRx-C, RBM38-dCasRx or dCasRx-RBM38"
+                            ],
+                            "outline_short": [
+                                "induce exon skipping"
+                            ]
+                        },
+                        {
+                            "title": "Example 4. Simultaneous Activation and Repression of Two Independent Exons by RBFOX1N-dCasRx-C",
+                            "paragraphs": [
+                                "Given that we can activate or repress exons by differential positioning of targeting, we further tested whether we can exploit such property to simultaneously activate and repress two independent exons by RNA-guided artificial splicing factors. We simultaneously target RBFOX1N-dCasRx-C to splice acceptor (SA) site of RG6 minigene using gRNA RG6-SA, and sites downstream of SMN2-E7 of the SMN2 minigene using a pool of gRNAs (DN) (FIG. 4A). We observed simultaneous activation of SMN2-E7 and repression of RG6 cassette exon (CX) when both RG6-SA gRNA and DN gRNAs were co-transfected with RBFOX1N-dCasRx-C into cells (FIG. 4B, lane 4) compared to control (FIG. 4B, lane 1). These modulations are gRNA-dependent because when either of these gRNAs were replaced by Control gRNA (FIG. 4B, lanes 2 and 3), the splicing pattern of the corresponding target exon resemble the control cells (FIG. 4B, lane 1)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test whether RBFOX1N-dCasRx-C can simultaneously activate and repress two independent exons"
+                            ],
+                            "num_characters": 902,
+                            "outline_medium": [
+                                "test simultaneous activation and repression of two exons by RBFOX1N-dCasRx-C"
+                            ],
+                            "outline_short": [
+                                "simultaneously target two exons"
+                            ]
+                        },
+                        {
+                            "title": "Example 5. A Three-Component Two-Peptide Artificial Splicing Factor Activates SMN2-E7",
+                            "paragraphs": [
+                                "To allow for flexibility of targeting, we tested whether we could separate the effector function from the targeting domain of an artificial splicing factor into two separate peptides. Such design will allow dissociation of target recognition and effector operation that can be reconstituted by bridging gRNAs. The effector module is constructed by replacing RNA binding domain of RBFOX1 with MS2 coat protein (MCP), resulting in RBFOX1N-MCP-C (FIG. 5A). A modified gRNA with one or more copy of MS2 hairpins appended at the 3\u2032 end guides dCasRx to the target RNA as well as recruits the effector module RBFOX1N-MCP-C via the MS2 hairpins. A functional splicing factor is thus assembled at the target. We observed increase of SMN2-E7 levels in cells transfected with this artificial splicing factor with SMN2 intron targeting gRNAs with 1 or 5 MS2 hairpins, demonstrating such strategy of constructing a three-component two-peptide artificial splicing factor worked (FIG. 5B)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test whether a three-component two-peptide artificial splicing factor can activate SMN2-E7"
+                            ],
+                            "num_characters": 975,
+                            "outline_medium": [
+                                "create three-component two-peptide artificial splicing factor"
+                            ],
+                            "outline_short": [
+                                "create three-component artificial splicing factor"
+                            ]
+                        },
+                        {
+                            "title": "Example 6. Polycistronic Pre-gRNA Supports Multiplex Splicing Modulation",
+                            "paragraphs": [
+                                "CasRx is capable of processing gRNAs encoded in tandem (pre-gRNA) by cleaving 5\u2032 of the direct repeat (DR) stem loop structures. We tested whether we could make use of such property to encode gRNAs in tandem on one plasmid, and compare that with different gRNA architectures (FIG. 6A). As described in earlier examples in this application, we could induce simultaneous exon activation and skipping on SMN2 and RG6, respectively, when a mixture of plasmids each expressing one gRNA targeting these two splicing events were co-transfected in conjunction with RBFOX1N-dCasRx-C into cells (FIG. 6B, lane 4). We then tested whether gRNA with two DRs flanking targeting spacer could be processed by CasRx into functional mature gRNAs to affect splicing. As shown in FIG. 6B (lanes 5 and 6), double DR-flanked gRNAs DR-SMN2-2-DR, DR-RG6-SA-DR, containing spacers flanked by two direct repeats (DR), were able to direct RBFOX1N-dCasRx-C to induce exon inclusion and exclusion, respectively. We then tested the functionality of a polycistronic pre-gRNA (SMN2-DN-RG6-SA) containing three DN spacer targeting SMN2 intron and a splice acceptor spacer targeting RG6 cassette exon (RG6-CX) encoded in tandem and separated by DRs. As shown in FIG. 6B (lane 7), such pre-gRNA architecture enabled simultaneous inclusion of SMN2-E7 and exclusion of RG6-CX."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test whether gRNA with two DRs flanking targeting spacer can be processed by CasRx",
+                                "test functionality of polycistronic pre-gRNA containing three DN spacer targeting SMN2 intron and a splice acceptor spacer targeting RG6 cassette"
+                            ],
+                            "num_characters": 1339,
+                            "outline_medium": [
+                                "test polycistronic pre-gRNA for multiplex splicing modulation"
+                            ],
+                            "outline_short": [
+                                "test polycistronic pre-gRNA"
+                            ]
+                        },
+                        {
+                            "title": "Example 7. dCasRx-DAZAP1(191-407) Activates Splicing when Bound at Downstream Intron",
+                            "paragraphs": [
+                                "We tested the ability of DAZAP1 to induce exon inclusion when tethered by dCasRx to bind downstream of a cassette exon (FIG. 7A). We fused catalytic domain of DAZAP1 amino acids 191-407 to C-terminus of dCasRx [dCasRx-DAZAP1(191-407)] and directed it to downstream intron of SMN2-E7 by a mixture of three gRNAs (DN), and found that it could induce exon inclusion of SMN2-E7 (FIG. 7B, lane 2). Such activity was dependent on binding of dCasRx-DAZAP1(191-407) to the target RNA as non-targeting gRNA (C) did not induce exon inclusion (FIG. 7B, lane 1)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test ability of DAZAP1 to induce exon inclusion when tethered by dCasRx to bind downstream of a cassette exon"
+                            ],
+                            "num_characters": 550,
+                            "outline_medium": [
+                                "test dCasRx-DAZAP1(191-407) for splicing activation"
+                            ],
+                            "outline_short": [
+                                "test dCasRx-DAZAP1(191-407) activity"
+                            ]
+                        },
+                        {
+                            "title": "Example 8. Tethering of U2 Auxiliary Factor (U2AF) to Introns Modulates Splicing",
+                            "paragraphs": [
+                                "We fused two subunits of U2AF (U2AF65, U2AF35) separately to N- or C-termini of dCasRx to create four CRISPR Artificial Splicing factors (CASFx), U2AF65-dCasRx, U2AF35-dCasRx, dCasRx-U2AF65, dCasRx-U2AF35 and tested their activity when directed to bind at the intron downstream of SMN2-E7 (FIG. 8A). When directed by gRNAs to bind downstream of SMN2-E7, these CASFx induce exon exclusion (FIG. 8B, lanes 2,4,6,8). We next investigated whether a different effect would be induced if these CASFx were directed to bind to the intron upstream of SMN2-E7 (FIG. 9A). As shown in FIG. 9B, dCasRx-U2AF35 induced exon inclusion if bound to the intron upstream of SMN2-E7 (FIG. 9B, lane 3) while it induced exon exclusion if bound to the downstream intron (FIG. 9B, lane 2). This example demonstrates the targeting of CASFx to different sequence elements can induce different splicing effects on target RNAs."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "test whether U2AF can modulate splicing when tethered to introns"
+                            ],
+                            "num_characters": 898,
+                            "outline_medium": [
+                                "test U2AF for splicing modulation"
+                            ],
+                            "outline_short": [
+                                "test U2AF activity"
+                            ]
+                        },
+                        {
+                            "title": "Example 9. Chemical-Inducible Exon Activation by Three-Component Two-Peptide iCASFx",
+                            "paragraphs": [
+                                "We created two-peptide inducible CRISPR Artificial Splicing Factors (iCASFx) by separating the RNA binding module (FKBP-dCasRx, or dCasRx-FKBP) and exon activation module (RBFOX1N-FRB-C, RBM38-FRB, or FRB-RBM38) into two peptides that can be induced to interact via the FKBP/FRB domains in the presence of rapamycin (FIG. 10A). As shown in FIG. 10B, cells cultured with rapamycin activated SMN2-E7 inclusion (FIG. 10B, lanes 2, 4, 6, 8, 10, and 12) compared to those without rapamycin (FIG. 10B, lanes 1, 3, 5, 7, 9, and 11). This example demonstrates that chemical-inducible CRISPR Artificial Splicing Factors iCASFx can be created by splitting the artificial splicing factor by chemical-inducible domains (e.g., FKBP/FRB).",
+                                "**Example 10. Induction of Endogenous SMN2-E7 by RBFOX1N-dCasRx-C in GM03813 SMA2 Patient Fibroblast Cells**",
+                                "We tested the activation of endogenous SMN2-E7 exon by RBFOX1N-dCasRx-C in SMA2 patient cells by transfecting GM03813 cells (Coriell Institute) transiently with vectors expressing RBFOX1N-dCasRx-C and gRNA targeting downstream of SMN2-E7 (FIG. 11A). RBFOX1N-dCasRx-C and SMN2-DN gRNA in concert activated endogenous SMN2-E7 inclusion detected by both semi-quantitative RT-PCR (FIG. 11B) and quantitative RT-PCR (FIG. 11C).",
+                                "**Example 11. Split CASFx (RBFOX1N-dCasRx-C) Architecture**",
+                                "To fit CASFx into AAV vectors with limited payload, we split RBFOX1N-dCasRx-C into two fragments fused to split NpuDnaE intein elements. These split CASFx fragments were cloned into two separate AAV vectors with the C-split vectors carrying, in addition, the gRNA targeting SMN2 downstream intron (FIG. 12A). Three split designs were tested at different split points within the CasRx coding region, e.g., 652/653, 463/464, and 497/498. For split points 463/464 and 497/498, an obligatory cysteine for NpuDnaE splicing activity was added to the C-split fragment. Split RBFOX1N-dCasRx-C with the CasRx-652/653 split points supported SMN2-E7 exon activation detected by RT-PCR (FIG. 12B).",
+                                "**Example 12. SNRPC-dCasRx Activates Splicing when Bound at Downstream Intron**",
+                                "We tested the ability of core splicing factor SNRPC/U1C to induce exon inclusion when tethered by dCasRx to bind intron downstream of SMN2-E7 exon (FIG. 13A). We fused SNRPC to N-terminus of dCasRx [SNRPC-dCasRx] and directed it to downstream intron of SMN2-E7 by a mixture of three gRNAs (DN), and found that it could induce exon inclusion of SMN2-E7 (FIG. 13B, lane 3). Such activity was dependent on binding of SNRPC-dCasRx to the target RNA as non-targeting gRNA (C) did not induce exon inclusion (FIG. 13B, lane 1).",
+                                "**Example 13. dNMCas9-RBM38 Activates Splicing when Bound at Downstream Intron**",
+                                "We tested the ability of dNMCas9 to tether RBM38 splicing factor to intron downstream of SMN2-E7 exon to activate its inclusion (FIG. 14A). We fused RBM38 to C-terminus of dNMCas9 [dNMCas9-RBM38] and directed it to downstream intron of SMN2-E7 by sgRNA N1, N2 or N3. dNMCas9-RBM38 directed by sgRNA-N2 induce exon inclusion of SMN2-E7 (FIG. 14B, lane 3). Such activity was dependent on binding of dNMCas9-RBM38 to the target RNA as non-targeting gRNA (NC) did not induce exon inclusion (FIG. 14B, lane 1)."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "create two-peptide inducible CRISPR Artificial Splicing Factors (iCASFx)",
+                                "test ability of iCASFx to activate SMN2-E7 inclusion",
+                                "analyze results using RT-PCR",
+                                "test whether iCASFx can be induced to interact via FKBP/FRB domains",
+                                "test whether iCASFx can activate SMN2-E7 inclusion in presence of rapamycin",
+                                "analyze results using RT-PCR"
+                            ],
+                            "num_characters": 3198,
+                            "outline_medium": [
+                                "create two-peptide inducible CRISPR Artificial Splicing Factors (iCASFx)",
+                                "test iCASFx for chemical-inducible exon activation",
+                                "demonstrate rapamycin-induced SMN2-E7 inclusion"
+                            ],
+                            "outline_short": [
+                                "create chemical-inducible iCASFx"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "Materials and Methods",
+                    "paragraphs": [
+                        "Cloning",
+                        "HEK293T cDNA was used as a source for PCR-amplification of coding sequences of splicing factors or other RNA binding proteins. Alternatively, geneBlocks (gBlocks) encoding human codon optimized versions of their coding sequences were ordered from Integrated DNA Technologies (IDT; Coralville, Iowa USA) to serve as PCR template. The pXR002: EF1a-dCasRx-2A-EGFP plasmid (Addgene #109050) served as PCR template for dCasRx coding sequence. Coding sequence of a Neisseria meningitidis Cas9 (dNMCas9) was PCR-amplified from pHAGE-TO-dCas9-3\u00d7GFP (Addgene #64107). The coding sequences of the CRISPR Artificial Splicing Factors (CASFx) were then cloned into pmax expression vector (Lonza; Basel, Switzerland) by a combination of fusion PCR, restriction-ligation cloning and Sequence- and Ligation-Independent Cloning (SLIC) [DOI: 10.1128/AEM.00844-12] fusing the coding sequences splicing factors with those of dCasRx or dNMCas9 via polypeptide linkers. gRNA expression cloning plasmids were generated by similar procedures using IDT oligonucleotides encoding CasRx gRNA direct repeat and PCR reaction using a ccdbCam selection cassette (Invitrogen; Carlsbad, Calif. USA) and a U6-containing plasmid as templates. Two BbsI restriction sites flanking the ccdbCam selection cassette serves as the restriction cloning sites for insertion of target-specific spacers. Target-specific spacer sequences were then cloned into the gRNA expression plasmids by annealed oligonucleotide ligation.",
+                        "To create the split CASFx constructs, fusion PCR was performed on gBlock encoding NpuDnaE inteins and N or C-terminal halves of CASFx (from pmax expression plasmid encoding the CASFx mentioned above) at different split points, followed by SLIC cloning into a Gateway donor plasmid, and subsequently recombined via LR clonase II Gateway recombination reaction into an AAV expression destination vector derived from AAV-CAG-GFP (Addgene #28014). Expression cassette encoding gRNA targeting intron downstream of SMN2-E7 were subsequently transferred to the AAV construct expression the C-split CASFx via PCR and SLIC.",
+                        "Cell Culture and Transfection",
+                        "For Examples 1-9 and 11-13, HEK293T cells were cultivated in Dulbecco's modified Eagle's medium (DMEM) (Sigma Aldrich; St. Louis, Mo. USA) with 10% fetal bovine serum (FBS)(Lonza; Basel Switzerland), 4% Glutamax (Gibco; Gaithersburg, Md. USA), 1% Sodium Pyruvate (Gibco; Gaithersburg, Md. USA) and penicillin-streptomycin (Gibco; Gaithersburg, Md. USA). Incubator conditions were 37\u00b0 C. and 5% CO2. For activation experiments, cells were seeded into 12-well plates at 100,000 cells per well the day before being transfected with 600 ng (the \u201cquota\u201d) of plasmid DNA with 2.25 uL Attractene tranfection reagent (Qiagen; Hilden Germany). 18 ng of each reporter minigene plasmid was transfected. The remaining quota was then divided equally among the effector and gRNA plasmids. In cases where there were two or more gRNA plasmids, the quota allocated for gRNA plasmids is further subdivided equally. For two-peptide effectors (i.e., the MS2 and the FKBP-FRB systems), the effector plasmid quota was divided equally between the plasmids encoding the individual peptides. Media was changed 24 hr after transfection. 100 nM (final concentration) of rapamycin was added during media change if applicable. Cells were harvested 48 hr after transfection for RT-PCR analysis.",
+                        "For Example 10, GM03813 fibroblasts derived from the SMA type II patient were obtained from Coriell Institute Cell Repository. Cells were maintained in Dulbecco's modified Eagle's medium (DMEM) (Sigma) with 10% fetal bovine serum (FBS) (Lonza), 4% Glutamax (Gibco), 1% Sodium Pyruvate (Gibco) and penicillin-streptomycin (Gibco). Incubator conditions were 37\u00b0 C. and 5% CO2. CASFx plasmid with a GFP marker was nucleofected using 4D-Nucleofector\u2122 System (Lonza) and the P2 Primary Cell 4D-Nucleofector kit (Lonza), program EN150. For each reaction, 1\u00d7106 cells were collected, resuspended in 1000 complete P2 solution and mixed with plasmids DNA. GFP-positive cells were collected 2 days after nucleofection with FACSAria Fusion (BD Biosciences) and seeded in 6-well plate to expand. Cells pellets were collected 13 days after nucleofection for RNA extraction and downstream analysis.",
+                        "RT-PCR",
+                        "Cells were harvested for RNA extraction using RNeasy Plus Mini Kit (Qiagen; Hilden Germany). Equal amount of RNAs from one transfection experiment (either 700 ng or 1000 ng) were reverse-transcribed using High Capacity RNA-to-cDNA Kit (ThermoFisher; Waltham, Mass. USA). PCR was then performed using 2 uL (out of 10 uL) of cDNA using Phusion\u00ae High-Fidelity DNA Polymerase (New England Biolabs; Boston, Mass. USA) using minigene plasmid-specific primers for 25 cycles. PCR products were then analyzed on a 3% agarose gel.",
+                        "Quantitative RT-PCR (qRT-PCR) for Endogenous SMN2-E7 Splicing Quantification in GM03813 Fibroblasts Cells.",
+                        "Cells pellets were collected 13 days after nucleofection, and total RNA was isolated using RNeasy plus Mini Kit following the manufacturer's instructions (QIAGEN). 1 \u03bcg of RNA was used to synthesize cDNA using High Capacity RNA-cDNA kit (ThermoFisher Scientific) according to the supplier's protocol. qRT-PCR reaction was performed in a 20 \u03bcl mixture containing cDNA, primers, and 1\u00d7SYBR GREEN PCR Master mix (Roche). The following primers were used in the study:",
+                        "Inclusion Isoform Forward Primer (SEQ ID NO: 55)",
+                        "Inclusion Isoform Reverse Primer (SEQ ID NO: 56)",
+                        "Exclusion Isoform Forward Primer (SEQ ID NO: 57)",
+                        "Exclusion Isoform Reverse Primer (SEQ ID NO: 58)"
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "describe cloning of coding sequences of splicing factors or other RNA binding proteins",
+                        "describe PCR amplification of coding sequences",
+                        "describe cloning of CRISPR Artificial Splicing Factors (CASFx) into pmax expression vector",
+                        "describe generation of gRNA expression cloning plasmids",
+                        "describe creation of split CASFx constructs",
+                        "describe cell culture and transfection",
+                        "describe RT-PCR analysis",
+                        "describe quantitative RT-PCR (qRT-PCR) for endogenous SMN2-E7 splicing quantification",
+                        "describe primers used in qRT-PCR",
+                        "describe RNA extraction and reverse transcription",
+                        "describe PCR reaction"
+                    ],
+                    "num_characters": 5589,
+                    "outline_medium": [
+                        "describe cloning procedures",
+                        "describe cell culture and transfection procedures",
+                        "describe RT-PCR procedures",
+                        "describe quantitative RT-PCR procedures",
+                        "list references"
+                    ],
+                    "outline_short": [
+                        "describe cloning methods",
+                        "describe cell culture and transfection methods"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. An artificial ribonucleic acid (RNA)-guided splicing factor comprising:\nan RNA splicing factor linked to a catalytically inactive programmable nuclease.",
+        "2. The artificial RNA-guided splicing factor of claim 1, wherein the RNA splicing factor comprises an RNA-binding domain and a splicing domain.",
+        "3. The artificial RNA-guided splicing factor of claim 1 or 2, wherein the splicing factor is selected from RBFOX1, RBM38, DAZAP1, U2AF65, U2AF35, HNRNPH1, TRA2A, TRA2B, SYMPK, CPSF2, SRSF1, 9G8, PTB1/2, MBNL1/2/3, ESRP1, NOVA1, NOVA2, CELF4, SRM160, and SNRPC (U1C).",
+        "4. The artificial RNA-guided splicing factor of any one of claims 1-3, wherein the RNA splicing factor is fused to the catalytically inactive programmable nuclease.",
+        "5. The artificial RNA-guided splicing factor of claim 4, wherein the RNA splicing factor is fused to the amino terminus (N terminus) of the catalytically inactive programmable nuclease.",
+        "6. The artificial RNA-guided splicing factor of claim 4, wherein the RNA splicing factor is fused to the carboxy terminus (C terminus) of the catalytically inactive programmable nuclease.",
+        "7. The artificial RNA-guided splicing factor of any one of claims 1-6, wherein the catalytically inactive programmable nuclease is an RNA-guided Cas protein capable of binding RNA.",
+        "8. The artificial RNA-guided splicing factor of claim 7, wherein the catalytically inactive programmable nuclease is selected from catalytically inactive type VI-D CRISPR-Cas ribonucleases, C2c2/Cas13a ribonucleases, Cas13b ribonucleases, and a catalytically inactive Neisseria meningitidis Cas9 endonuclease.",
+        "9. The artificial RNA-guided splicing factor of claim 8, wherein the catalytically inactive type VI-D CRISPR-Cas ribonuclease is dCasRx.",
+        "10. The artificial RNA-guided splicing factor of any one of claims 1-9, wherein the catalytically inactive programmable nuclease comprises an N-terminal fragment of the catalytically inactive programmable nuclease linked to an N-terminal fragment of an intein and a C-terminal fragment of the catalytically inactive programmable nuclease linked to a C-terminal fragment of an intein, wherein the N-terminal fragment and the C-terminal fragment of the intein catalyze joining of the N-terminal and C-terminal fragments of the catalytically inactive programmable nuclease to produce the full-length artificial RNA-guided splicing factor.",
+        "11. The artificial RNA-guided splicing factor of any one of claims 1-10 bound to a guide RNA (gRNA).",
+        "12. A nucleic acid encoding the artificial RNA-guided splicing factor of any one of claims 1-10.",
+        "13. A recombinant viral genome comprising the nucleic acid of claim 12.",
+        "14. The recombinant viral genome of claim 13, wherein the recombinant viral genome is an AAV genome.",
+        "15. A viral particle comprising the recombinant viral genome of claim 13.",
+        "16. An AAV particle comprising the recombinant viral genome of claim 14.",
+        "17. A nucleic acid encoding an RNA splicing factor linked to an N-terminal fragment of a catalytically inactive programmable nuclease linked to an N-terminal fragment of an intein.",
+        "18. A nucleic acid encoding an RNA splicing factor linked to a C-terminal fragment of a catalytically inactive programmable nuclease linked to a C-terminal fragment of an intein.",
+        "19. A recombinant viral genome comprising the nucleic acid of claim 17 or 18.",
+        "20. The recombinant viral genome of claim 19, further encoding a gRNA.",
+        "21. The recombinant viral genome of claim 19 or 20, wherein the recombinant viral genome is an AAV genome.",
+        "22. A viral particle comprising the recombinant viral genome of claim 19 or 20.",
+        "23. An AAV particle comprising the recombinant viral genome of claim 21.",
+        "24. A composition comprising the artificial RNA-guided splicing factor of any one of claims 1-10 and a gRNA or a concatemer of tandem gRNAs.",
+        "25. The composition of claim 24, wherein the gRNA targets a first gene of interest.",
+        "26. The composition of claim 25, wherein the first gene of interest is SMN2.",
+        "27. The composition of claim 26, wherein the gRNA targets an intron between Exon 7 and Exon 8 of SMN2.",
+        "28. The composition of any one of claims 24-27, wherein the artificial RNA-guided splicing factor is complexed with the gRNA.",
+        "29. The composition of any one of claims 24-28, wherein the composition further comprises an additional gRNA that targets a second gene of interest.",
+        "30. The composition of claim 29, wherein the second gene of interest is a RG6 minigene.",
+        "31. The composition of claim 30, wherein the additional gRNA targets a splice acceptor site of the RG6 minigene.",
+        "32. A method of modulating RNA splicing, comprising\ncontacting a cell comprising a gene of interest with the artificial RNA-guided splicing factor of any one of claims 1-10 and a gRNA that targets RNA encoded by the gene of interest, and\ninducing an exon inclusion and/or exclusion event in RNA encoded by the gene of interest.",
+        "33. A method of modulating RNA splicing, comprising\ncontacting a cell comprising two genes of interest with the artificial RNA-guided splicing factor of any one of claims 1-10 and a concatemer of tandem guide gRNAs, wherein one of the gRNAs targets RNA encoded by one of the genes of interest and the other of the gRNAs targets RNA encoded by the other of the genes of interest, and\ninducing an exon inclusion event in RNA encoded by one of the genes of interest and inducing an exon exclusion event in RNA encoded by the other of the genes of interest.",
+        "34. A method of inducing an exon inclusion event, comprising\ncontacting a cell that expresses a gene of interest with the artificial RNA-guided splicing factor of any one of claims 1-10 and a guide RNA (gRNA) or a concatemer of tandem gRNAs that target(s) an intron adjacent to an exon of interest within RNA encoded by the gene of interest, and\ninducing inclusion of the exon in the RNA encoded by the gene of interest.",
+        "35. The method of any one of claims 32-34, wherein the gene of interest is SMN2.",
+        "36. The method of claim 34, wherein the exon is Exon 7 of SMN2.",
+        "37. The method of claim 34, wherein the intron is located between Exon 7 and Exon 8 of SMN2.",
+        "38. The method of any one of claims 18-21, wherein the ratio of inclusion of the exon to exclusion of the exon and/or the ratio of exclusion of the exon to inclusion is increased by at least 1.5 fold, at least 2 fold, at least 5 fold, at least 10 fold, or at least 20 fold relative to a control.",
+        "39. A composition comprising an artificial RNA-guided splicing factor complex comprising:\na splicing factor modified to replace the RNA-binding domain with a first binding partner molecule;\na guide RNA modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule; and\na catalytically inactive programmable nuclease.",
+        "40. A composition comprising:\na splicing factor modified to replace the RNA-binding domain with a first binding partner molecule; and/or\na guide RNA modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule; and\noptionally a catalytically inactive programmable nuclease.",
+        "41. The composition of claim 40 comprising a catalytically inactive programmable nuclease.",
+        "42. The composition of any one of claims 39-41, wherein the splicing factor is selected from RBFOX1, RBM38, DAZAP1, U2AF65, U2AF35, HNRNPH1, TRA2A, TRA2B, SYMPK, CPSF2, SRSF1, 9G8, PTB1/2, MBNL1/2/3, ESRP1, NOVA1, NOVA2, CELF4, SRM160, and SNRPC (U1C).",
+        "43. The composition of any one of claims 39-42, wherein the catalytically inactive programmable nuclease is an RNA-guided Cas protein capable of binding RNA.",
+        "44. The composition of claim 43, wherein the catalytically inactive programmable nuclease is selected from catalytically inactive type VI-D CRISPR-Cas ribonucleases, C2c2/Cas13a ribonucleases, Cas13b ribonucleases, and a catalytically inactive Neisseria meningitidis Cas9 endonuclease.",
+        "45. The composition of claim 44, wherein the catalytically inactive type VI-D CRISPR-Cas ribonuclease is dCasRx.",
+        "46. The composition of any one of claims 39-45, wherein the first binding partner molecule is a MS2 bacteriophage coat protein.",
+        "47. The composition of claim 46, wherein the second binding partner molecule is a stem-loop structure from the bacteriophage genome.",
+        "48. The composition of any one of claims 39-47, wherein the modified gRNA comprises at least two copies of the second binding partner molecule.",
+        "49. A method of modulating RNA splicing, comprising\ncontacting a cell comprising a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule, (b) a guide RNA modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule, and (c) a catalytically inactive programmable nuclease, wherein the gRNA targets RNA encoded by the gene of interest and\ninducing an exon inclusion and/or exclusion event in the RNA encoded by the gene of interest.",
+        "50. A method of inducing an exon inclusion event, comprising\ncontacting a cell that expresses a gene of interest with (a) a splicing factor modified to replace the RNA-binding domain with a first binding partner molecule, (b) a guide RNA (gRNA) modified to include a second binding partner molecule that is capable of binding to the first binding partner molecule, and (c) a catalytically inactive programmable nuclease, wherein the gRNA targets an intron adjacent to an exon of interest within RNA encoded by the gene of interest, and\ninducing inclusion of the exon in the RNA encoded by the gene of interest.",
+        "51. An artificial RNA-guided splicing factor complex comprising:\na first interaction domain fused to a catalytically inactive programmable nuclease;\na second interaction domain fused to splicing factor, wherein the first interaction domain and the second interaction domain dimerize in the presence of an inducer agent; and\na guide RNA.",
+        "52. The artificial RNA-guided splicing factor complex of claim 51, wherein the inducer agent is selected from a chemical agent, a biological agent, light, and heat.",
+        "53. The artificial RNA-guided splicing factor complex of claim 52, wherein the chemical agent is rapamycin, and optionally wherein the first and second interaction domain are selected from FRB protein and FKBP protein.",
+        "54. An artificial RNA-guided splicing factor complex comprising:\na first interaction domain fused to a catalytically inactive programmable nuclease;\na second interaction domain fused to splicing factor, wherein the first interaction domain and the second interaction domain are bound to an inducer agent; and\na guide RNA.",
+        "55. The artificial RNA-guided splicing factor complex of claim 54, wherein the inducer agent is a chemical agent.",
+        "56. The artificial RNA-guided splicing factor complex of claim 55, wherein the chemical agent is rapamycin, and optionally wherein the first and second interaction domain are selected from FRB protein and FKBP protein.",
+        "57. A composition comprising:\na first interaction domain fused to a catalytically inactive programmable nuclease;\na second interaction domain fused to splicing factor; and\na guide RNA,\nwherein the first interaction domain and the second interaction domain bind to an inducer agent.",
+        "58. The composition of claim 57, wherein the inducer agent is a chemical agent.",
+        "59. The composition of claim 58, the chemical agent is rapamycin, and optionally wherein the first and second interaction domain are selected from FRB protein and FKBP protein.",
+        "60. A method of modulating RNA splicing, comprising:\ncontacting a cell that expresses a gene of interest with (a) a first interaction domain fused to a catalytically inactive programmable nuclease, (b) a second interaction domain fused to a splicing factor, and (c) a guide RNA, wherein the first interaction domain and the second interaction domain bind to an inducer agent, and wherein the gRNA targets RNA encoded by a gene of interest; and\ninducing an exon inclusion and/or exon exclusion event in the RNA encoded by the gene of interest.",
+        "61. The composition of claim 60, wherein the inducer agent is a chemical agent.",
+        "62. The composition of claim 61, the chemical agent is rapamycin, and optionally wherein the first and second interaction domain are selected from FRB protein and FKBP protein."
+    ]
+}

@@ -1,0 +1,124 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce medical imaging techniques
+- describe radiography
+- explain X-ray properties
+- introduce computed tomography (CT)
+- describe conventional CT scans
+- describe Cone-beam CT (CBCT) scans
+- compare conventional CT and CBCT scans
+- highlight advantages of CBCT scans
+
+## SUMMARY
+
+- introduce apparatus embodiment
+- describe method embodiment
+- preview detailed description
+
+## DETAILED DESCRIPTION
+
+- introduce CBCT and conventional CT reconstruction techniques
+- limitations of assuming patient remains static during scanning period
+- patient motion resulting from voluntary relaxation and/or involuntary organ motion
+- conventional CT scans and CBCT scans have different scanning periods
+- patient motion may result in significant motion related image artifacts in CBCT
+- limitations of CBCT as a medical imaging tool for applications requiring enhanced positioning accuracy
+- conventional CT scanning techniques to reduce motion related image artifacts
+- limitations of conventional CT scanning techniques in CBCT scanning applications
+- conventional image processing techniques to retrospectively correct motion related artifacts
+- limitations of conventional image processing techniques in CBCT scanning applications
+- real-time position management (RPM) technique for CBCT scanning applications
+- limitations of RPM technique
+- need for a more effective technique for reducing motion related artifacts in CBCT
+- method for retrospectively correcting CBCT projections according to an extracted 3D motion trajectory
+- positioning internal markers in and/or around a region of interest (ROI)
+- generating a series of CBCT projections capturing the ROI from various angles
+- locating internal markers in some or all of the CBCT projections
+- generating a 2D mobile track of the internal marker's actual projected position
+- computing a 2D stationary track of the marker's ideal projected position
+- extracting a 3D motion trajectory based on differences between the 2D mobile track and the 2D stationary track
+- remapping pixels in each of the CBCT projections to produce motion-corrected CBCT projections
+- performing CBCT reconstruction using the motion-corrected CBCT projections
+- CBCT scanners comprising an on-board-imager (OBI) fixed to a rotating gantry
+- OBI components used to generate radiographic images
+- X-ray source and flat-panel detector components
+- generating a series of 2D radiographic projections as the conical beam is rotated around the object
+- assuming the patient is composed of discrete volumetric picture elements (voxels) of uniform size
+- geometric relationships between a marker's 3D position and the corresponding projection's 2D position
+- derive radial distance equation
+- derive relationship between displacement and projection position
+- derive 3D position equation
+- describe voxel projection behavior
+- illustrate 3D motion trajectory extraction method
+- perform CBCT scan
+- locate internal marker position
+- generate 2D mobile track
+- generate 2D stationary track
+- compute 2D position shifts
+- extract 3D motion trajectory
+- process CBCT projections
+- perform CBCT reconstruction
+- describe simulation setup
+- illustrate sinogram of stationary voxels
+- illustrate sinogram of stationary voxels with motion
+- illustrate J-K positions of stationary voxel projections
+- illustrate J-K positions of non-stationary voxel projections
+- extract net displacement along J-axis
+- extract net displacement along k-axis
+- describe simulation results
+- conclude simulation
+- extract mobile track
+- apply non-linear curve fitting
+- find spherical coordinates
+- extract net motion components
+- compute sinusoidal approximation
+- track marker motion in 3D space
+- correct motion in CBCT reconstruction
+- track motion and/or trajectory of markers
+- compute transformation vector
+- transform radiographic projections
+- introduce seed marker motion tracking
+- describe patient treatment with IMRT
+- show marker positions in FIGS. 6(a) and 6(b)
+- track marker motion in CBCT radiographic projections
+- extract motion tracks from CBCT scans
+- show motion tracks in FIGS. 6(c) and 6(d)
+- discuss respiratory cycles and marker motion
+- compare HF and FF scanning modes
+- discuss limitations of tracking algorithm
+- use polynomial interpolation for motion prediction
+- discuss advantages of internal marker tracking
+- compare internal and external marker motion
+- establish radiographic correlation between markers
+- use non-radiographic methods for tracking
+- show improved image quality in FIGS. 8 and 9
+- discuss correction of CBCT projections
+- compare techniques with phase-sorted 4D-CT
+- assume rigid body motion
+- use internal marker motion for compensation
+- use multiple markers for motion correction
+- discuss marker-less tracking methods
+- compare marker-less tracking with internal markers
+- discuss limitations of marker-less tracking
+- use implanted markers for accurate tracking
+- discuss blind spots in marker motion
+- recover blind spots in other angular views
+- use FF scanning modes to capture entire ROI
+- extend techniques to 4D-CBCT
+- use motion amplitudes for treatment margins
+- correct for sagging imaging shifts
+- design algorithms for extracting 3D marker motions
+- correlate internal and external marker motions
+- use marker motion for patient setup and tumor tracking
+- implement techniques on a general-purpose network component
+- describe network component architecture
+- discuss variations and modifications of embodiments
+- discuss numerical ranges and limitations
+- discuss use of broader terms
+- discuss incorporation of references
+- discuss non-admission of prior art
+- discuss embodiment of the present disclosure
+- discuss scope of the present disclosure
+

@@ -1,0 +1,118 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- limitations of current image editing systems
+
+## SUMMARY
+
+- overview of disclosed systems and methods
+
+## DETAILED DESCRIPTION
+
+- introduce image reprojection system
+- describe system's functionality
+- motivate multi-image inpainting techniques
+- describe depth prediction generation
+- determine relative camera pose
+- generate reprojected image
+- refine warping parameters
+- generate refined composite image
+- describe limitations of conventional systems
+- motivate use of geometric depth information
+- describe advantages of image reprojection system
+- illustrate system's functionality
+- describe environment for implementing system
+- describe client device and image editing system
+- provide context for digital images
+- introduce image editing system
+- describe image reprojection system
+- define depth image
+- describe server device and image reprojection server system
+- outline functionality of image reprojection server system
+- describe client-server interaction
+- illustrate environment configurations
+- introduce flow diagram of generating reprojected source image
+- receive target and source images
+- generate depth prediction and relative camera matrix
+- determine rescaled depth prediction
+- generate reprojected image by warping source image
+- refine reprojected image using optimization pipeline
+- generate refined composite image using content-aware fill model
+- describe image editing system functionality
+- illustrate generating reprojected source image
+- describe depth prediction and relative camera pose
+- introduce relative camera pose
+- define relative camera matrix
+- motivate monocular depth prediction
+- describe image reprojection system
+- generate rescaled depth prediction
+- utilize depth prediction optimization pipeline
+- generate reprojected source image
+- describe monocular depth prediction neural network
+- generate monocular depth prediction
+- describe matching correspondence model
+- generate matching correspondence points
+- determine relative camera pose
+- describe multi-point algorithm
+- generate relative camera pose
+- determine scale and offset
+- describe mid-point triangulation
+- generate 3D point cloud
+- generate sparse depth map
+- determine scale and offset
+- describe linear projection function
+- generate rescaled depth prediction
+- describe optimization pipeline
+- refine warping parameters
+- generate reprojected source image
+- define depth prediction optimization pipeline
+- introduce negative depth penalty function
+- formulate negative depth penalty function
+- describe multi-scale photometric function
+- formulate multi-scale photometric function
+- introduce feature correspondence function
+- formulate feature correspondence function
+- describe adaptive robust function
+- formulate adaptive robust function
+- combine optimization functions
+- validate convergence of objective function
+- formulate convergence check
+- generate reprojected source image
+- generate initial composite image
+- formulate initial composite image generation
+- introduce content-aware fill model
+- generate refined composite image
+- generate final composite image
+- describe image reprojection system
+- illustrate reprojections from image reprojection system
+- compare reprojections from single homography system and image reprojection system
+- introduce image reprojection system components
+- describe digital image manager
+- describe neural network manager
+- describe depth prediction manager
+- describe camera parameter manager
+- describe image reprojection manager
+- describe parameter optimizer
+- describe image refinement manager
+- illustrate communication between components
+- describe implementation of image reprojection system
+- illustrate flowchart of generating reprojected image
+- describe generating depth prediction for source image
+- describe determining relative camera matrix and refining depth prediction
+- describe image reprojection system
+- generate refined parameters of depth prediction and relative camera matrix
+- jointly optimize refined parameters utilizing optimization functions
+- generate reprojected source image to align with target image
+- generate refined composite image from target image, image mask hole, and reprojected source image
+- refine composite image utilizing content-aware fill model
+- receive image mask and generate monocular depth prediction
+- generate refined rescaled depth prediction and reprojected image
+- refine parameters of rescaled depth prediction utilizing optimization functions
+- describe computer-readable media and computer-executable instructions
+- define non-transitory computer-readable storage media and transmission media
+- describe network and data links
+- describe computer system components and configurations
+- describe cloud computing environments and service models
+- illustrate example computing device and its components
+

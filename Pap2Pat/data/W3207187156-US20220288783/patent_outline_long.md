@@ -1,0 +1,993 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND
+
+- motivate robotic automation
+- limitations of grasp determination
+
+## DETAILED DESCRIPTION
+
+- introduce grasping objects in unconstrained environments
+- motivate 6-Degree of Freedom (“DoF”) grasps
+- define 3D points in a recorded point cloud as potential grasp contacts
+- reduce dimensionality of grasp representation to 4-DoF
+- implement class-agnostic approach
+- train on 17 million simulated grasps
+- generalize to real-world sensor data
+- achieve over 90% success rate in robotic grasping study
+- motivate model-based grasping
+- describe limitations of model-based approaches
+- motivate model-free approaches
+- describe limitations of planar grasping
+- illustrate robot grasping an object in a cluttered environment
+- efficiently predict diverse and stable grasps
+- avoid collisions
+- describe point cloud produced by a depth camera
+- motivate grasping objects from cluttered scenes with structure
+- generate diverse set of grasps for target object
+- filter out colliding grasps
+- describe multi-stage process for synthesizing grasps
+- address issues with instance segmentation errors
+- describe advantages of end-to-end method
+- utilize end-to-end policy learning
+- learn from interactions of the robot with the environment
+- demonstrate iterative 6-DoF grasping approaches
+- describe limitations of monolithic policy
+- utilize discriminative methods
+- train a classifier to evaluate quality of existing grasps
+- use different sampling strategies to generate potential candidates
+- utilize generative methods
+- predict 6-DoF grasps densely projected to their contact points
+- aim to generate stable grasps for unknown objects
+- use loss formulation to improve convergence
+- address problem of generating 6-DoF grasps in cluttered scenes
+- generate 6-DoF grasp proposals and corresponding grasp widths
+- illustrate training process using dataset of training objects
+- generate set of possible grasps for cluttered scene
+- remove grasps that generate interference for gripper
+- illustrate second portion of training process
+- map grasp poses to their contacts on mesh surface
+- supervise Contact Grasp Network
+- define projection and orthonormalization
+- motivate dimensionality reduction
+- introduce contact grasp success predictions
+- describe backpropagation
+- define 6-DoF grasp pose
+- transform gripper points
+- formulate 6-DoF grasp loss
+- motivate advantages of loss formulation
+- introduce grasp width bin predictions
+- optimize weighted, multi-label binary cross entropy loss
+- define total loss
+- describe Adam optimizer
+- specify set abstraction layers
+- describe inference
+- generate table top scenes
+- train neural network
+- evaluate grasping method
+- describe inference pipeline
+- illustrate loss ablations
+- illustrate data ablations
+- apply method to raw depth images
+- extract local regions of interest
+- describe neural network runtime
+- select grasps
+- execute grasps
+- illustrate grasp determined based on incomplete segmentation
+- evaluate diversity of grasps
+- conduct robotic experiments
+- show grasp evaluation results
+- address shortcomings of cropping objects
+- illustrate effect of loss targets
+
+### Inference and Training Logic
+
+- illustrate inference and/or training logic
+- introduce code and/or data storage
+- store forward and/or output weight and/or input/output data
+- store graph code or other software
+- load weight or other parameter information
+- introduce code and/or data storage
+- store backward and/or output weight and/or input/output data
+- store graph code or other software
+- load weight or other parameter information
+- introduce arithmetic logic units (ALUs)
+- perform logical and/or mathematical operations
+- store activations in activation storage
+- generate activations according to linear algebraic and/or matrix-based mathematics
+- use weight values stored in code and/or data storage
+- introduce ALUs within one or more processors
+- introduce ALUs external to a processor
+- share a processor or other hardware logic device or circuit
+- store activation storage with other on-chip or off-chip data storage
+- introduce inference and/or training logic with ASIC
+- introduce inference and/or training logic with CPU hardware
+- introduce inference and/or training logic with GPU hardware
+- introduce inference and/or training logic with FPGA
+- dedicate computational resources to weight values or other information
+- associate each of code and/or data storage with a dedicated computational resource
+
+### Neural Network Training and Deployment
+
+- illustrate training and deployment of a deep neural network
+- train untrained neural network using a training dataset
+- introduce training framework
+- train untrained neural network using supervised learning
+- train untrained neural network using unsupervised learning
+- train untrained neural network using semi-supervised learning
+- deploy trained neural network to implement machine learning operations
+
+### Data Center
+
+- illustrate an example data center
+- introduce data center infrastructure layer
+- introduce resource orchestrator
+- introduce grouped computing resources
+- introduce node computing resources
+- introduce framework layer
+- introduce job scheduler
+- introduce configuration manager
+- introduce resource manager
+- introduce distributed file system
+- introduce software layer
+- introduce application layer
+- introduce software used by node computing resources
+- introduce applications used by node computing resources
+- implement self-modifying actions
+- use data center to train machine learning models or predict information
+
+### Autonomous Vehicle
+
+- introduce autonomous vehicle
+- describe vehicle types
+- define automation levels
+- describe vehicle components
+- detail propulsion system
+- describe steering system
+- describe brake sensor system
+- introduce controller
+- describe controller functionality
+- detail sensor data inputs
+- describe instrument cluster
+- describe human-machine interface
+- introduce network interface
+- describe communication protocols
+- introduce inference and/or training logic
+- describe inference and/or training operations
+- illustrate camera locations
+- describe camera types
+- detail camera functionality
+- describe advanced driver assistance systems
+- introduce mounting assembly
+- describe camera integration
+- detail front-facing cameras
+- describe surround view functionality
+- introduce wide-view camera
+- describe long-range camera
+- introduce stereo camera
+- describe side-view cameras
+- detail surround camera
+- describe rear-view cameras
+- introduce inference and/or training logic
+- describe inference and/or training operations
+- illustrate system architecture
+- describe bus functionality
+- introduce controller
+- describe controller functionality
+- introduce system on chip
+- describe system on chip components
+- detail central processing unit
+- describe graphics processing unit
+- introduce high definition map
+- describe network interface
+- introduce autonomous vehicle
+- describe power management capabilities of CPU
+- describe features of GPU
+- describe unified memory technology
+- describe access counters
+- describe cache
+- describe accelerator
+- describe deep learning accelerator
+- describe programmable vision accelerator
+- describe RISC cores
+- describe DMA
+- describe vector processors
+- describe computer vision network on-chip
+- describe real-time ray-tracing hardware accelerator
+- describe uses of accelerator for autonomous driving
+- describe PVA for computer stereo vision
+- describe PVA for dense optical flow
+- describe DLA for neural network
+- describe data store
+- describe processor
+- describe boot and power management processor
+- describe temperature sensors
+- describe audio processing engine
+- describe always-on processor engine
+- describe safety cluster engine
+- describe real-time camera engine
+- describe high-dynamic range signal processor
+- describe GPU power optimization
+- describe FinFET circuitry
+- describe mixed-precision processing cores
+- describe independent parallel integer and floating-point data paths
+- describe independent thread scheduling capability
+- describe combined L1 data cache and shared memory unit
+- describe high bandwidth memory
+- describe synchronous graphics random-access memory
+- describe address translation services
+- describe unified virtual address space
+- describe cache coherence protocol
+- describe hardware acceleration cluster
+- describe large on-chip memory
+- describe targeted workloads
+- describe deep learning accelerator
+- describe tensor processing units
+- describe image processing functions
+- describe neural network types and floating point operations
+- introduce autonomous vehicle
+- describe video image compositor
+- describe lens distortion correction
+- describe in-cabin monitoring camera sensor
+- describe in-cabin system functions
+- describe enhanced temporal noise reduction
+- describe stereo rectification
+- describe user interface composition
+- describe offloading GPU
+- describe mobile industry processor interface
+- describe high-speed interface
+- describe video input block
+- describe input/output controller
+- describe peripheral interfaces
+- describe processing data from cameras
+- describe processing data from sensors
+- describe processing data from bus
+- describe processing data from GNSS sensor
+- describe dedicated high-performance mass storage controllers
+- describe end-to-end platform
+- describe computer vision algorithms
+- describe limitations of CPUs
+- describe multiple neural networks
+- describe text and word recognition
+- describe identifying and interpreting signs
+- describe running multiple neural networks simultaneously
+- describe CNN for facial recognition
+- describe always-on sensor processing engine
+- describe CNN for emergency vehicle detection
+- describe classifying environmental and urban sounds
+- describe identifying relative closing speed
+- describe identifying emergency vehicles specific to a local area
+- describe executing emergency vehicle safety routine
+- describe CPU(s) for arbitrating results
+- describe GPU(s) for artificial intelligence functionality
+- describe network interface
+- describe wireless connectivity
+- describe direct and indirect links
+- describe data store(s)
+- describe GNSS sensor(s)
+- introduce autonomous vehicle
+- describe vehicle components
+- describe microphone usage
+- describe camera types and usage
+- describe vibration sensor usage
+- introduce ADAS system
+- describe ACC system functionality
+- describe CACC system functionality
+- describe FCW system functionality
+- describe AEB system functionality
+- describe LDW system functionality
+- describe LKA system functionality
+- describe BSW system functionality
+- describe RCTW system functionality
+- describe conventional ADAS system limitations
+- introduce supervisory MCU
+- describe supervisory MCU functionality
+- describe neural network usage in supervisory MCU
+- describe secondary computer functionality
+- describe output of ADAS system
+- introduce infotainment SoC
+- describe infotainment SoC functionality
+- describe GPU functionality in infotainment SoC
+- introduce instrument cluster
+- describe instrument cluster functionality
+- describe inference and/or training logic
+- introduce system for communication between cloud-based server and autonomous vehicle
+- describe server functionality
+- describe neural network transmission
+- describe map information transmission
+- describe training machine learning models
+- describe data tagging and pre-processing
+- describe using machine learning models in vehicles
+- describe using machine learning models in servers
+- describe real-time intelligent inferencing
+- describe deep-learning infrastructure
+- describe evaluating and verifying processor health
+- describe fail-safe computer functionality
+- describe GPU-powered servers
+- describe programmable inference accelerators
+- describe CPU-powered servers
+- describe FPGA-powered servers
+- describe hardware structure usage
+- describe inference and/or training logic usage
+- conclude autonomous vehicle system
+
+### Computer Systems
+
+- introduce computer system
+- describe processor
+- specify processor types
+- describe operating systems
+- mention handheld devices
+- mention embedded applications
+- describe processor components
+- describe execution units
+- describe machine learning model training
+- describe processor bus
+- describe cache memory
+- describe register file
+- describe execution unit logic
+- describe packed instruction set
+- describe multimedia applications
+- describe memory
+- describe memory types
+- describe system logic chip
+- describe memory controller hub
+- describe high bandwidth memory path
+- describe system I/O interface
+- describe I/O controller hub
+- describe local I/O bus
+- describe I/O devices
+- describe data storage
+- describe network controller
+- describe inference and/or training logic
+- describe computer system usage
+- introduce electronic device
+- describe electronic device components
+- describe display and touch screen
+- describe sensor hub and thermal sensor
+- describe Express Chipset and Trusted Platform Module
+- describe drive and wireless units
+- describe camera and LPDDR memory unit
+- describe inference and/or training logic usage
+- introduce computer systems
+- describe inference and/or training logic
+- describe computer system 1700
+- describe training a neural network
+- describe simulation results
+- illustrate architecture with GPUs and multi-core processors
+- describe high-speed links
+- describe interconnection protocols
+- describe processor memory and GPU memory
+- describe memory access technologies
+- describe unified memory architecture
+- illustrate interconnection between multi-core processor and graphics acceleration module
+- describe processor components
+- describe caches and shared caches
+- describe system memory
+- describe coherency maintenance
+- describe cache snooping protocol
+- describe proxy circuit and coherence bus
+- describe accelerator integration circuit
+- describe cache management and memory access
+- describe context management and interrupt management
+- describe virtual-to-physical memory translations
+- describe cache and memory coherence
+- describe context switches and thread contexts
+- describe interrupt management
+- describe virtualized graphics execution environment
+- describe accelerator integration circuit as a bridge
+- describe physical separation of graphics processing engines
+- describe graphics memories
+- describe biasing techniques
+- illustrate accelerator integration circuit integrated within processor
+- describe dedicated-process programming model
+- describe shared programming models
+- describe accelerator integration slice
+- describe computer systems
+- introduce WD fetch unit
+- describe data storage in registers
+- explain MMU segment/page walk circuitry
+- describe interrupt management circuit
+- explain effective address translation
+- describe duplicated registers
+- list exemplary registers initialized by hypervisor
+- list exemplary registers initialized by operating system
+- describe WD specificity
+- illustrate shared model
+- describe hypervisor real address space
+- explain shared programming models
+- describe time-sliced shared model
+- describe graphics directed shared model
+- explain system hypervisor requirements
+- describe application system call
+- explain graphics acceleration module type
+- describe work descriptor
+- explain authority mask register value
+- describe context save/restore area pointer
+- explain operating system verification
+- describe hypervisor verification
+- explain process element initialization
+- illustrate unified memory architecture
+- describe bias/coherence management circuitry
+- explain GPU memory mapping
+- describe bias tracker data structure
+- illustrate integrated circuits and graphics processors
+- describe inference and/or training logic
+- illustrate graphics processors
+- describe low power graphics processor core
+- describe higher performance graphics processor core
+- detail vertex processor
+- detail fragment processor
+- describe memory management units
+- describe cache and circuit interconnect
+- describe shader core architecture
+- describe inter-core task manager
+- describe tiling unit
+- describe inference and/or training logic
+- describe graphics processor for neural network training
+- illustrate additional graphics processor logic
+- describe graphics core
+- describe shared instruction cache
+- describe texture unit
+- describe cache/shared memory
+- describe slices and support logic
+- describe additional function units
+- describe floating-point units
+- describe integer arithmetic logic units
+- describe address computational units
+- describe double-precision floating-point units
+- describe matrix processing units
+- describe inference and/or training logic
+- describe graphics core for neural network training
+- illustrate general-purpose processing unit
+- describe host interface
+- describe global scheduler
+- describe compute clusters
+- describe cache memory
+- describe memory controllers
+- describe memory
+- describe compute clusters for machine learning
+- describe communication between compute clusters
+- describe I/O hub
+- describe GPU link
+- describe training neural networks
+- describe inferencing platform
+- describe computing system
+- introduce parallel processor
+- describe components of parallel processor
+- detail I/O unit
+- explain host interface
+- describe front end
+- detail scheduler
+- explain processing cluster array
+- describe processing cluster
+- detail parallel graphics processing operations
+- explain memory crossbar
+- describe memory interface
+- detail partition units
+- explain memory units
+- describe render targets
+- explain memory crossbar functionality
+- detail processing cluster communication
+- describe multiple instances of parallel processing unit
+- explain interoperation of instances
+- describe system configurations
+- detail partition unit
+- explain L2 cache
+- describe frame buffer interface
+- detail ROP
+- explain compression logic
+- describe ROP functionality
+- detail processing cluster
+- explain pipeline manager
+- describe graphics multiprocessor
+- detail texture unit
+- explain data crossbar
+- describe thread execution
+- explain thread group
+- detail processing engine
+- explain internal cache memory
+- describe L1 cache
+- detail MMU
+- explain page table entries
+- describe address translation
+- detail texture unit functionality
+- explain preROP
+- describe inference and/or training logic
+- explain inferencing and/or training operations
+- detail neural network training operations
+- describe neural network functions and/or architectures
+- explain neural network use cases
+- describe computer systems
+- introduce graphics multiprocessor
+- detail execution pipeline
+- explain instruction cache
+- describe instruction unit
+- detail address mapping unit
+- explain register file
+- describe GPGPU cores
+- detail SIMD logic
+- explain memory and cache interconnect
+- describe shared memory
+- detail cache memory
+- explain parallel processor
+- introduce inference and/or training logic
+- describe multi-GPU computing system
+- detail host interface switch
+- explain GPU-to-GPU links
+- describe inference and/or training logic
+- explain multi-GPU computing system usage
+- describe computer systems
+- illustrate graphics processor architecture
+- detail pipeline front-end
+- explain command streamer
+- describe geometry pipeline
+- detail media engine
+- explain thread execution resources
+- describe graphics core architecture
+- detail sub-core architecture
+- explain shared resources
+- introduce inference and/or training logic
+- describe graphics processor usage
+- illustrate processor micro-architecture
+- detail instruction execution
+- explain instruction prefetcher
+- describe instruction decoder
+- detail trace cache
+- explain microcode ROM
+- describe out-of-order execution engine
+- detail allocator/register renamer
+- explain memory uop queue
+- describe integer/floating point uop queue
+- detail uop schedulers
+- explain execution block
+- describe register files
+- detail execution units
+- explain register networks
+- describe floating point ALU
+- detail fast ALUs
+- explain slow ALU
+- define registers
+- describe register file
+- introduce inference and/or training logic
+- describe processor 2600
+- introduce deep learning application processor 2700
+- describe processing clusters 2710
+- describe Inter-Chip Links 2720 and Inter-Chip Controllers 2730
+- describe HBM2s 2740
+- describe SPI, I2C, GPIO 2760, PCIe Controller and DMA 2770, and/or PCIe 2780
+- describe neuromorphic processor 2800
+- describe neurons 2802
+- describe synapses 2808
+- describe neuron layers
+- describe reconfigurable interconnect architecture
+- describe system 2900
+- describe processors 2902
+- describe graphics processors 2908
+- describe cache memory 2904
+- describe register file 2906
+- describe interface bus 2910
+- describe memory device 2920
+- describe memory controller 2916
+- describe platform controller hub 2930
+- describe display device 2911
+- describe audio controller 2946
+- describe network controller 2934
+- describe firmware interface 2928
+- describe wireless transceiver 2926
+- describe touch sensors 2925
+- describe data storage device 2924
+- describe legacy I/O controller 2940
+- describe USB controllers 2942
+- describe keyboard and mouse 2943
+- describe camera 2944
+- describe external graphics processor 2912
+- describe inference and/or training logic 1015
+- describe graphics processor 2900
+- describe ALUs
+- describe weight parameters
+- describe system 2900 usage
+- describe processor 3000
+- describe processor cores 3002A-3002N
+- describe integrated memory controller 3014
+- describe integrated graphics processor 3008
+- describe internal cache units 3004A-3004N
+- describe shared cached units 3006
+- describe additional cores
+- describe additional core 3002N
+- conclude processor 3000
+- describe computer systems
+- introduce cache memory hierarchy
+- describe cache coherency logic
+- introduce bus controller units
+- describe system agent core
+- introduce integrated memory controllers
+- describe simultaneous multi-threading
+- introduce power control unit
+- describe graphics processor
+- introduce display controller
+- describe ring-based interconnect unit
+- introduce I/O link
+- describe embedded memory module
+- introduce heterogeneous processor cores
+- describe inference and/or training logic
+- introduce graphics processor 3100
+- describe memory interface
+- introduce display controller 3102
+- describe video codec engine
+- introduce block image transfer engine
+- describe graphics processing engine
+- introduce 3D pipeline
+- describe media pipeline
+- introduce 3D/Media subsystem
+- describe thread dispatch logic
+- introduce graphics execution units
+- describe inference and/or training logic
+- introduce graphics processing engine 3210
+- describe command streamer
+- introduce 3D pipeline 3212
+- describe media pipeline 3216
+- introduce graphics core array
+- describe unified return buffer
+- introduce shared function logic
+- describe shared function logic within graphics core array
+- introduce computer systems
+- describe inference and/or training logic
+- detail graphics processing engine
+- describe graphics processor core
+- introduce fixed function block
+- describe geometry and fixed function pipeline
+- detail graphics SoC interface
+- describe graphics microcontroller
+- introduce media pipeline
+- describe shared function logic
+- detail shared and/or cache memory
+- introduce geometry/fixed function pipeline
+- describe additional fixed function logic
+- detail machine-learning acceleration logic
+- introduce execution resources
+- describe EU arrays
+- detail thread dispatch and inter-thread communication logic
+- introduce 3D sampler
+- describe media sampler
+- introduce shader processor
+- describe thread execution logic
+- detail scalable execution unit array
+- introduce sampler
+- describe data cache
+- introduce data port
+- describe execution units
+- detail shader processor
+- introduce thread dispatcher
+- describe instruction cache
+- detail execution units
+- introduce fused execution unit
+- describe thread control logic
+- detail fused graphics execution unit
+- introduce internal instruction caches
+- describe data caches
+- introduce sampler
+- describe thread execution
+- detail graphics and media pipelines
+- introduce pixel processor logic
+- describe shader processor
+- detail texture sampling logic
+- introduce data port
+- describe graphics execution unit
+- introduce instruction fetch unit
+- describe general register file array
+- detail architectural register file array
+- introduce thread arbiter
+- describe send unit
+- detail branch unit
+- introduce computer systems
+- describe graphics execution unit
+- detail thread execution logic
+- explain inference and/or training logic
+- illustrate parallel processing unit
+- describe I/O unit
+- detail front-end unit
+- explain scheduler unit
+- describe work distribution unit
+- detail hub
+- explain crossbar
+- describe general processing clusters
+- detail partition units
+- explain high-speed GPU interconnect
+- describe system bus
+- detail memory devices
+- explain I/O unit functionality
+- describe front-end unit functionality
+- detail scheduler unit functionality
+- explain work distribution unit functionality
+- describe GPC functionality
+- detail task management
+- explain result processing
+- describe host processor functionality
+- detail driver kernel functionality
+- explain application programming interface
+- describe task generation
+- detail warp functionality
+- explain cooperating threads
+- describe inference and/or training logic functionality
+- detail deep learning application processor
+- explain neural network use cases
+- describe GPC architecture
+- detail pipeline manager functionality
+- explain pre-raster operations unit
+- describe raster engine
+- detail work distribution crossbar
+- explain memory management unit
+- describe data processing clusters
+- detail M-Pipe Controller functionality
+- explain primitive engine
+- describe streaming multi-processor
+- detail Single-Instruction, Multiple-Data architecture
+- explain Single-Instruction, Multiple Thread architecture
+- introduce computer systems
+- describe MMU functionality
+- describe inference and/or training logic
+- describe GPC usage
+- illustrate memory partition unit
+- describe ROP unit functionality
+- describe memory hierarchy
+- describe copy engines
+- describe data fetching
+- describe L2 cache functionality
+- describe SM functionality
+- describe instruction cache
+- describe scheduler unit
+- describe register file
+- describe processing cores
+- describe SFUs
+- describe LSUs
+- describe interconnect network
+- describe shared memory/L1 cache
+- describe combining data cache and shared memory
+- describe general purpose parallel computation
+- describe PPU inclusion
+- describe inference and/or training logic
+- describe deep learning application processor
+- describe SM usage
+- describe integrated graphics processing unit
+- describe neural network use cases
+- describe virtualized computing platform
+- describe medical applications
+- describe radiography
+- describe MRI
+- describe nuclear medicine
+- describe ultrasound
+- describe sonography
+- describe elastography
+- describe photoacoustic imaging
+- describe tomography
+- describe echocardiography
+- describe functional near-infrared spectroscopy
+- describe magnetic particle imaging
+- describe forensic science analysis
+- describe sub-surface detection and imaging
+- introduce computer systems
+- describe process of generating and deploying image processing and inferencing pipeline
+- motivate use of machine learning models
+- describe training system
+- describe deployment system
+- explain use of virtual instruments
+- describe model registry
+- explain training pipeline
+- describe AI-assisted annotation
+- explain use of labeled clinic data
+- describe output model
+- explain scenario where facility needs machine learning model
+- describe selection of existing machine learning model
+- explain retraining or updating machine learning model
+- describe deployment system components
+- explain software stack
+- describe containers and applications
+- explain advanced processing and inferencing pipeline
+- describe virtual instrument
+- explain data processing pipeline
+- describe input data formats
+- explain pre-processing and post-processing
+- describe inferencing tasks
+- explain containerization of tasks
+- describe publishing and storing applications
+- explain development and testing of applications
+- describe software development kit
+- explain management of DICOM data
+- describe validation of applications
+- explain availability of applications in container registry
+- introduce computer systems
+- describe system architecture
+- explain application sharing
+- detail container registry and model registry
+- describe request processing
+- explain deployment system components
+- introduce services
+- describe service functionality
+- explain service abstraction
+- detail inference server
+- describe model training service
+- explain data augmentation service
+- introduce visualization service
+- describe virtual instrument services
+- explain AI service integration
+- describe hardware components
+- explain GPU processing
+- detail software optimization
+- describe datacenter architecture
+- explain HIPAA compliance
+- introduce cloud platform
+- describe cloud platform architecture
+- explain system diagram
+- describe training system
+- detail deployment system
+- explain cloud computing environment
+- describe security protocols
+- introduce communication protocols
+- describe training pipelines
+- explain model selection
+- detail machine learning models
+- describe AI-assisted annotation
+- introduce computer systems
+- describe deployment pipelines
+- define virtual instruments
+- list applications for deployment pipelines
+- describe image enhancement
+- describe segmentation
+- describe reconstruction
+- describe anomaly detection
+- describe object detection
+- describe feature detection
+- describe treatment planning
+- describe dosimetry
+- describe beam planning
+- describe DICOM adapter
+- describe data type adapters
+- describe data augmentation library
+- describe parallel computing platform
+- describe machine learning model
+- describe model registry
+- describe user interface
+- describe pipeline manager
+- describe application orchestration system
+- describe container orchestration system
+- describe individual development of applications
+- describe communication between containers
+- describe resource allocation
+- describe services
+- describe compute services
+- describe AI services
+- describe visualization services
+- describe parallel processing
+- describe inter-process communication
+- describe inferencing services
+- describe shared storage
+- describe inference server
+- introduce computer systems
+- describe visualization services
+- describe hardware components
+- describe AI system
+- describe cloud infrastructure
+- describe confidentiality preservation
+- describe example system usage
+- describe deployment pipeline
+- describe container registry
+- describe deployment pipeline customization
+- describe CT scanner data processing
+- describe DICOM adapter
+- describe pipeline manager
+- describe DICOM reader
+- describe CT reconstruction
+- describe organ segmentation
+- describe inference processing
+- describe DICOM writer
+- describe visualization generation
+- describe parallel processing
+- describe virtual instruments
+- describe deployment system implementation
+- describe virtual instrument functionality
+- describe containerized inference support
+- describe virtual instrument execution
+- describe on-premise installation
+- describe cloud-environment installation
+- describe supercomputer installation
+- describe high-bandwidth uses
+- describe real-time processing
+- describe cloud-computing architecture
+- describe dynamic bursting
+- describe machine learning model training
+- describe virtual instrument improvement
+- introduce computer systems
+- describe hardware distribution
+- motivate virtual instruments
+- describe deployment system
+- introduce neural network training
+- describe data flow diagram for virtual instrument
+- introduce DICOM reader
+- describe reconstruction application
+- describe detection application
+- introduce inference engine
+- describe visualization application
+- introduce render component
+- describe deployment pipeline
+- introduce CT scanner
+- describe patient movement detection AI
+- describe exposure control AI
+- introduce non-real-time pipeline
+- describe CT reconstruction application
+- describe coarse detection AI
+- describe fine detection AI
+- describe visualization application
+- introduce DICOM writer
+- describe deployment pipeline
+- introduce model training
+- describe model retraining
+- introduce pre-trained models
+- describe model registry
+- introduce customer dataset
+- describe model fine-tuning
+- introduce AI-assisted annotation
+- describe annotation tools
+- introduce polygon editing feature
+- describe refined model deployment
+- introduce client-server architecture
+- describe AI-assisted annotation tools
+- introduce annotation assistant server
+- describe pre-trained annotation models
+- introduce training pipelines
+- describe inference and/or training logic
+- introduce arithmetic logic unit
+- introduce computer systems
+- define ALU
+- describe processor operation
+- motivate neural networks
+- describe grasp pose determination
+- describe simulation of scene
+- generate point cloud
+- train neural networks
+- describe clauses 1-8
+- describe clause 1
+- describe clause 2
+- describe clause 3
+- describe clause 4
+- describe clause 5
+- describe clause 6
+- describe clause 7
+- describe clause 8
+- describe computer-implemented method
+- describe clause 9
+- describe clause 10
+- describe clause 11
+- describe clause 12
+- describe clause 13
+- describe clause 14
+- describe clause 15
+- describe machine-readable medium
+- describe clause 16
+- describe clause 17
+- describe clause 18
+- describe clause 19
+- describe clause 20
+- describe clause 21
+- describe clause 22
+- describe clause 23
+- describe clause 24
+- describe system
+- describe clause 25
+- describe clause 26
+- describe clause 27
+- describe clause 28
+- describe clause 29
+- describe clause 30
+- describe clause 31
+- describe computer programs
+- describe memory and storage
+- describe architecture and functionality
+- describe parallel processing system
+- describe PPUs and associated memories
+- describe variations and equivalents
+

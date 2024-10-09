@@ -1,0 +1,249 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce nanopore-based sensors
+
+## SUMMARY
+
+- introduce hybrid nanopores
+- describe lipid-free hybrid nanopore
+- describe sensor embodiment
+- describe solid-state matrix
+- describe hydrophilic protein channel
+- describe protein nanopore channel
+- describe modification of amino acid sequence
+- describe modification of upper internal surface residue
+- describe modification of lower internal surface residue
+- describe modification of tunnel loop residue
+- describe modification of electrostatic charge property
+- describe modification of external charge
+- describe modification promoting binding
+- describe modification extending N-terminus or C-terminus
+- describe deletion of amino acid residue
+- describe modification of SEQ ID NO: 1
+- describe modification of SEQ ID NO: 27
+- describe modification of SEQ ID NO: 11
+- describe modification of SEQ ID NO: 37
+- describe modification of SEQ ID NO: 15
+- describe modification of SEQ ID NO: 17
+- describe modification of SEQ ID NO: 21
+- describe modification of SEQ ID NO: 23
+- describe modification of SEQ ID NO: 25
+- describe modification of SEQ ID NO: 19
+- describe modification of SEQ ID NO: 9
+- describe modification of SEQ ID NO: 13
+- describe modification of SEQ ID NO: 29
+- describe modification of SEQ ID NO: 31
+- describe modification of SEQ ID NO: 35
+- describe modification of SEQ ID NO: 33
+- describe modification of SEQ ID NO: 3
+- describe modification of SEQ ID NO: 5
+- describe modification of SEQ ID NO: 7
+- describe voltage source
+- describe solid-state matrix material
+- describe solid-state pore opening diameter
+- describe coating on solid-state matrix
+- describe protein variant embodiment
+- describe nucleic acid molecule embodiment
+- describe method of sensing biomolecule
+- define biomolecule
+- describe protein forming hydrophilic protein channel
+- list modifications of SEQ ID NO: 1
+- describe solid-state matrix
+- describe method of manufacturing sensor
+- describe hydrophilic protein channel
+- list modifications of SEQ ID NO: 1
+- describe solid-state matrix
+- describe method of manufacturing sensor
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- describe protein variant encoded by modification of SEQ ID NO: 2
+- list modifications of SEQ ID NO: 2
+- define protein variant
+- list modifications
+- describe vector embodiment
+- describe modification of lower internal surface residue
+- describe modification of cysteine residue
+- describe modification of tunnel loop residue
+- describe modification of electrostatic charge property
+- describe modification of external charge
+- describe modification for binding to solid-state matrix
+- describe modification of N-terminus or C-terminus
+- describe deletion of amino acid residue
+- describe modification of various residues
+- describe cell embodiment
+- describe nucleic acid sequence embodiment
+
+## DETAILED DESCRIPTION
+
+- introduce hybrid nanopores
+- describe advantages of hybrid nanopores
+- motivate need for hybrid nanopores
+- describe limitations of solid-state membranes
+- describe limitations of protein channels
+- introduce portal protein of Thermus thermophilus bacteriophage G20c
+- describe structure of portal protein
+- describe function of portal protein
+- describe engineering of portal protein
+- describe electrokinetic insertion of portal protein
+- describe stable insertion fit of portal protein
+- describe peripheral ion leakage
+- describe applications of hybrid nanopores
+- describe high-resolution mapping of DNA
+- describe protein identification
+- describe polypeptide sequencing
+- describe small-molecule detection
+- describe biomolecular complex detection
+- describe enzyme-ligand binding
+- describe impact on human health, biotechnology, and agri-food sectors
+- describe single-molecule detection
+- describe nanopores as electrical sensors
+- describe nanopores as electro-optical sensors
+- describe DNA sequencing using nanopores
+- describe RNA sequencing using nanopores
+- describe limitations of existing nanopore platforms
+- describe hybrid nanopore devices
+- describe portal protein as nanoscale adapter
+- describe electrokinetic "corking" of portal protein
+- describe geometric constraints of solid-state pore
+- describe self-inserting and self-aligning hybrid
+- describe peripheral ion leakage
+- describe mutations of portal protein
+- describe CD/N mutant
+- describe CGG mutant
+- describe C mutant
+- describe D400C mutant
+- describe V325M mutant
+- describe Loop2GG and CLoop3G mutants
+- describe 1328K mutant
+- describe V40E and L230E mutants
+- describe SIN1, SIN2, and SIN4 mutants
+- describe SIN3 mutant
+- describe extensions to N- and C-terminal
+- describe modifications to tunnel loop residue
+- describe modifications to external charge of hydrophilic protein channel
+
+### EXAMPLES
+
+- introduce example experiments
+- describe hybrid pore formation
+- show current profile over time
+- interpret portal collisions with solid-state nanopore
+- show current vs time trace
+- interpret stable insertion of portal protein
+- calculate conductance of hybrid pores
+- show current noise analysis
+- deduce reduced surface charge fluctuations
+- measure ion leakage from pore
+- show reproducible signals from biomolecules
+- demonstrate sensing capabilities of hybrid pore
+- analyze transport of TPX2 peptide
+- show current vs time trace at different voltages
+- interpret bumping and translocation events
+- fit inter-event time distribution to exponential equation
+- describe entry frequency of peptide into hybrid pore
+- fit dwell time distributions to double-exponential equation
+- show sensing of different biopolymers
+- analyze transport of dsDNA, ssDNA, and peptide
+- show current vs time trace for each biopolymer
+- compare event characteristics for different biopolymers
+- show scatter plot of ΔI vs dwell time
+- discuss biopolymer-dependent current blockade levels
+- discuss transport of structured biopolymers
+- describe advantages of hybrid nanopores
+- introduce materials and methods
+- describe preparation of CGG and CD/N mutants
+- clone, express, and purify portal proteins
+- describe protein engineering and purification
+- produce mutant portal proteins
+- characterize protein stability and assembly state
+- describe experimental set-up
+- fabricate nanopores in SiN membranes
+- clean and assemble nanopore chips
+- introduce electrolyte solution and portal protein
+- add biopolymers to cis chamber
+- describe electrical detection and data acquisition
+- measure ionic current through SS nanopores
+- filter and acquire data
+- process and detect events using Pythion software
+- extract open pore current and noise values
+
+### Definitions and Discussion of Terminology
+
+- define protein
+- describe protein structure
+- introduce posttranslational modification
+- define protein variant
+- describe isolated protein
+- introduce protein purification techniques
+- define fragments and sequence variants
+- describe allelic variants
+- introduce orthologs
+- describe recombinant methods
+- define sequence identity
+- introduce sequence comparison program
+- describe mathematical algorithm
+- introduce BLAST programs
+- describe GAP program
+- introduce conservative substitutions
+- describe functional variants
+- introduce non-functional variants
+- define protein and peptide fragments
+- describe recombinant techniques
+- introduce modification of amino acid sequence
+- define nucleic acid
+- describe sources of nucleic acids
+- introduce synthetic nucleic acids
+- define modification of nucleic acid sequence
+- describe missense mutation
+- introduce cell-free protein synthesis
+- define vector
+- describe site-directed mutagenesis
+- define biomolecule
+- introduce hydrophilic protein channel
+- define protein variants
+- define vector modifications
+- define cell modifications
+- define nanopore
+- define solid-state matrix
+- define solid-state pore opening
+- define hydrophilic protein
+- define hydrophilic protein channel
+- define stable insertion fit
+- define protein nanopore channel
+- define wing loop residue
+- define tunnel loop residue
+- define upper internal surface residue
+- define lower internal surface residue
+- define external surface residue
+- present tables of protein versions and associated DNA
+- describe properties of protein versions
+- explain sequence notation
+

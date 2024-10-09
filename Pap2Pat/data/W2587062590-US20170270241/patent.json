@@ -1,0 +1,524 @@
+{
+    "id": "US20170270241",
+    "authors": [
+        "Daniel J. Garry",
+        "Wuming Gong",
+        "Naoko Koyano-Nakagawa"
+    ],
+    "title": "ANALYSIS OF SINGLE CELL TRANSCRIPTOMICS",
+    "date": "2017-03-17 00:00:00",
+    "abstract": "Developmental, stem cell and cancer biologists are interested in the molecular definition of cellular differentiation. Although single-cell RNA sequencing represents a transformational advance for global gene analyses, novel obstacles have emerged, including the computational management of dropout events, the reconstruction of biological pathways and the isolation of target cell populations. Provided herein is an algorithm named dpath that applies the concept of metagene entropy and allows the ranking of cells based on their differentiation potential. Also provided herein are self-organizing map (SOM) and random walk with restart (RWR) algorithms to separate the progenitors from the differentiated cells and reconstruct the lineage hierarchies in an unbiased manner. These algorithms were tested using single cells from Etv2-EYFP transgenic mouse embryos and reveal specific molecular pathways that direct differentiation programs involving the haemato-endothelial lineages. This software program quantitatively assesses the progenitor and committed states in single-cell RNA-seq data sets in a non-biased manner.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "GOVERNMENT FUNDING",
+                    "paragraphs": [
+                        "This invention was made with government support under R01HL122576, U01HL100407 and HL099997-101330A awarded by National Institutes of Health. The government has certain rights in the invention.",
+                        "This invention was made with government support under grant 11763537 awarded by Department of Defense. The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "disclose government funding"
+                    ],
+                    "num_characters": 349,
+                    "outline_medium": [
+                        "disclose government funding"
+                    ],
+                    "outline_short": [
+                        "disclose government funding"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Developmental, stem cell and cancer biologists are interested in the molecular definition of cellular differentiation. While single cell RNA sequencing represents a transformational advance for global gene analyses, novel obstacles have emerged, including the computational management of dropout events, the reconstruction of biological pathways, and the isolation of target cell populations.",
+                        "Cardiovascular lineages, including: blood, endothelium, endocardium, and myocardium, arise within a narrow time window from nascent mesoderm exiting the primitive streak and these lineages develop in synchrony to form the circulatory system. The haematopoietic and the endothelial lineages are closely related and express a number of common transcripts (1). Based on the number of gene mutations that affect both haematopoietic and endothelial lineages, it has been proposed that that they arise from common progenitors (2-10). The bifurcation point of these two lineages in embryos, however, has been debated and the gene expression profiles of the progenitors have not been fully defined, in part, due to the difficulty with the isolation of these bipotential cell populations."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce cellular differentiation",
+                        "describe limitations of single cell RNA sequencing"
+                    ],
+                    "num_characters": 1173,
+                    "outline_medium": [
+                        "motivate cellular differentiation"
+                    ],
+                    "outline_short": [
+                        "motivate single cell RNA sequencing"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "The molecular definition of differentiation is of intense interest for developmental and stem cell biologists. While single cell RNA sequencing represents a transformational advance for global gene analyses, certain obstacles have emerged including: the computational management of dropout events, the reconstruction of biological pathways and the isolation of target cell populations. Described herein is the use of Etv2-EYFP transgenic embryos to isolate hematopoietic, endothelial and endocardial progenitors and perform single cell transcriptome analyses. The analyses revealed specific molecular and signaling pathways that directed differentiation programs of the hematopoietic and endothelial lineages. A concept of metagene entropy is discussed, that enables one to rank cells based on their differentiation potential. An example of analysis software according to one embodiment is referred to herein as \u2018dpath\u2019 and can be configured as a downloadable package. This is the first software program that quantitatively assesses the progenitor and committed states in single cell RNA-seq datasets and will be a powerful tool for stem cell biologists.",
+                        "One embodiment provides a machine readable medium with instructions for analyzing cellular differentiation, the instructions, when executed by processing circuitry, cause the processing circuitry to perform operations comprising: receiving an expression profile matrix for a single cell RNA-seq dataset; decomposing the expression profile matrix; quantitatively assessing the cellular state; and prioritizing genes for progenitor and committed cellular states. In one embodiment, decomposing the expression profile matrix includes identifying metagenes using weighted Poisson non-negative matrix factorization. In another embodiment, the machine readable medium of claim 1, wherein an expected gene expression level is modeled as a linear combination of non-negative metagene basis and coefficients. In one embodiment, an observed gene expression level is modeled as a mixture of Poisson distribution of expected expression level and a dropout event represented by a low-magnitude Poisson process. In another embodiment, decomposing the expression matrix includes approximating a product of non-negative metagene basis and coefficients. In one embodiment, the metagene basis corresponds to a contribution of each gene to each metagene. In another embodiment, the metagene coefficient corresponds to a probabilistic simplex that indicates the relative weight of each metagene in each cell.",
+                        "In one embodiment, the machine readable medium further includes assigning a metagene signature for an individual cell. In another embodiment, the machine readable medium of further includes mapping cells into metacells using a self-organizing map (SOM). In another embodiment the machine readable medium further including ranking cells with respect to specific cellular states including: generating a heterogeneous metagene-metacell graph; and using a random walk with restart process on the heterogeneous metagene-metacell graph. In one embodiment, the machine readable medium further including ranking genes for cellular states according to their expression profile. In another embodiment prioritizing genes for progenitor and committed cellular states includes determining a measure of metagene entropy for cells. In one embodiment, the machine readable medium further including imposing a requirement in which the metagene expression profiles between cells in neighboring development stages are similar. In one embodiment, the machine readable medium includes using a self-organized map. In one embodiment, using the self-organized map includes correlating a hexagonal grid of the map with a cell expression pattern. In another embodiment, the machine readable medium further including clustering cells by partitioning the map. In one embodiment, a central cell of the map is correlated with an early progenitor. In one embodiment, a peripheral cell of the map is correlated with a mature cell. In another embodiment, prioritizing genes for progenitor and committed cellular states includes generating a transition matrix. In one embodiment, the machine readable medium includes classifying a metacell as a progenitor of a neighboring metacell if the metagene entropy is higher than a derivative metacell.",
+                        "In one embodiment, the machine readable medium includes using a random walk with restart (RWR) process on the heterogeneous graph to determine a probability of a metacell being in a committed state to one metagene, or being in a progenitor state with the ability to transition to multiple metagenes. In one embodiment, the machine readable medium includes identifying a developmental trajectory based on a path length of the self-organized map."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate molecular definition of differentiation",
+                        "introduce Etv2-EYFP transgenic embryos",
+                        "describe single cell transcriptome analyses",
+                        "introduce concept of metagene entropy",
+                        "describe analysis software 'dpath'",
+                        "outline machine readable medium with instructions",
+                        "describe decomposing expression profile matrix",
+                        "outline prioritizing genes for progenitor and committed states",
+                        "describe ranking cells with respect to specific cellular states"
+                    ],
+                    "num_characters": 4801,
+                    "outline_medium": [
+                        "introduce single cell RNA sequencing",
+                        "describe Etv2-EYFP transgenic embryos",
+                        "summarize metagene entropy concept",
+                        "outline dpath software embodiment"
+                    ],
+                    "outline_short": [
+                        "summarize molecular definition of differentiation",
+                        "introduce dpath software"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Definitions",
+                            "paragraphs": [
+                                "In describing and claiming the invention, the following terminology will be used in accordance with the definitions set forth below. Unless defined otherwise, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this invention belongs. Any methods and materials similar or equivalent to those described herein can be used in the practice or testing of the present invention. Specific and preferred values listed below for radicals, substituents, and ranges are for illustration only; they do not exclude other defined values or other values within defined ranges for the radicals and substituents.",
+                                "As used herein, the articles \u201ca\u201d and \u201can\u201d refer to one or to more than one, i.e., to at least one, of the grammatical object of the article. By way of example, \u201can element\u201d means one element or more than one element.",
+                                "The term \u201cabout,\u201d as used herein, means approximately, in the region of, roughly, or around. When the term \u201cabout\u201d is used in conjunction with a numerical range, it modifies that range by extending the boundaries above and below the numerical values set forth. In general, the term \u201cabout\u201d is used herein to modify a numerical value above and below the stated value by a variance of 20%.",
+                                "\u201cCells\u201d include cells from, or the \u201csubject\u201d is, a vertebrate, such as a mammal, including a human. Mammals include, but are not limited to, humans, farm animals, sport animals and companion animals. Included in the term \u201canimal\u201d is dog, cat, fish, gerbil, guinea pig, hamster, horse, rabbit, swine, mouse, monkey (e.g., ape, gorilla, chimpanzee, or orangutan), rat, sheep, goat, cow and bird.",
+                                "Totipotent (a.k.a. omnipotent) stem cells can differentiate into embryonic and extraembryonic cell types. Such cells can construct a complete, viable organism. These cells are produced from the fusion of an egg and sperm cell. Cells produced by the first few divisions of the fertilized egg are also totipotent. Pluripotent stem cells are the descendants of totipotent cells and can differentiate into nearly all cells, i.e. cells derived from any of the three germ layers. Multipotent stem cells can differentiate into a number of cell types, but only those of a closely related family of cells. Oligopotent stem cells can differentiate into only a few cell types, such as lymphoid or myeloid stem cells. Unipotent cells can produce only one cell type, their own,[4] but have the property of self-renewal, which distinguishes them from non-stem cells (e.g. progenitor cells, muscle stem cells).",
+                                "\u201cProgenitor cells\u201d are cells produced during differentiation of a stem cell that have some, but not all, of the characteristics of their terminally differentiated progeny. Defined progenitor cells, such as \u201cendothelial progenitor cells,\u201d are committed to a lineage, but not to a specific or terminally differentiated cell type.",
+                                "\u201cSelf-renewal\u201d refers to the ability to produce replicate daughter stem cells having differentiation potential that is identical to those from which they arose. A similar term used in this context is \u201cproliferation.\u201d",
+                                "\u201cExpansion\u201d refers to the propagation of a cell or cells without differentiation.",
+                                "The terms \u201ccomprises,\u201d \u201ccomprising,\u201d and the like can have the meaning ascribed to them in U.S. Patent Law and can mean \u201cincludes,\u201d \u201cincluding\u201d and the like. As used herein, \u201cincluding\u201d or \u201cincludes\u201d or the like means including, without limitation."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define terminology",
+                                "explain articles \"a\" and \"an\"",
+                                "define \"about\"",
+                                "define \"cells\"",
+                                "explain stem cell types",
+                                "define \"self-renewal\" and \"expansion\""
+                            ],
+                            "num_characters": 3460,
+                            "outline_medium": [
+                                "define terminology",
+                                "explain usage of articles",
+                                "define specific terms"
+                            ],
+                            "outline_short": [
+                                "define terminology"
+                            ]
+                        },
+                        {
+                            "title": "ASPECTS OF THE INVENTION",
+                            "paragraphs": [
+                                "Etv2, an ETS domain transcription factor, plays a role endothelial, endocardial and haematopoietic development and has a negative impact on myocardial development (11-15). Etv2 mutants are nonviable and completely lack haematopoietic and endothelial lineages. Furthermore, Etv2 overexpression in differentiating embryonic stem cells (ESs) induces the haematopoietic and endothelial lineages (13, 16). Etv2 is expressed in a narrow developmental window starting from embryonic day 7 (E7.0) and has diminished expression after E8.5 during murine embryogenesis (14, 16). Collectively, these data support a role for Etv2 in mesodermal differentiation at the junction of blood, endothelial and cardiac lineages. In the present study, Etv2-EYFP transgenic embryos (14) and single-cell RNA-seq analysis was used to develop a blueprint of the lineage hierarchies of Etv2-positive cells early during development.",
+                                "Single-cell RNA-seq provides an unprecedented opportunity to study the global transcriptional dynamics at the single-cell resolution (17-23). Although multiple methods have been published to analyze the single-cell sequencing data, there are technical hurdles that need to be resolved in order to fully appreciate the biological impact. Herein is described mathematical solutions to two major issues encountered by the single-cell RNA-seq field. The first issue addresses the dropout events, arising from the systematic noise. This is a common problem in which an expressed gene observed in one cell cannot always be detected in another cell from the same population (24). The presence of dropout events combined with sampling noise and the natural stochasticity and diversity of transcriptional regulation at the single-cell level (25) makes profiling the low amounts of mRNA within individual cells extremely challenging. Herein is provided a weighted Poisson non-negative matrix factorization (wp-NMF) method as a solution to this problem.",
+                                "The second outstanding issue is the need for additional biological information to determine the directionality of differentiation using the currently available methods. A number of conventional methods allow one to cluster cells into subpopulations and qualitatively associate the subpopulations with different cellular states during embryogenesis (19). Recently, several single cell RNA-seq analysis pipelines were developed to detect the branching trajectories and order single cells based on their maturity (23, 26-28). However, these methods required either a set of differentially expressed genes be predefined or the beginning and the end of the trajectory be determined by the investigator, limiting their general and non-biased applicability to a heterogeneous novel cell population. Herein is described a concept termed metagene entropy, which is combined with a self-organizing map (SOM) and random walk with restart (RWR) algorithms to separate the progenitors from the differentiated cells and reconstruct the lineage hierarchies in an unbiased fashion. In these studies, solutions to these two major issues are provided in the analysis of single-cell RNA-seq data. An R package was developed named dpath that decomposes the expression profiles with the awareness of the dropout events, quantitatively assesses the cellular state and prioritizes genes for both progenitor and committed cellular states. A head-to head comparison was undertaken with commonly used factorization methods and pseudotime inference algorithms and demonstrate the superiority of the dpath program. Finally, dpath was used to decipher three major lineages of Etv2+ cells and identify key genes and signalling pathways for the group of progenitor cells with both endothelial and haematopoietic characteristics. This program, dpath, will facilitate and decipher the biological mechanisms that govern stem cell and progenitor cell populations.",
+                                "FIG. 6 illustrates a block diagram of system 600, in accordance with one example of the present subject matter. System 600 includes processor 620, input 630, and output 640. Processor 620 can include a DNA/RNA sequencing machine. In various examples, processor 620 can be configured to filter, amplify, react, or analyse a specimen. Processor 620 can evaluate metagene entropy, allow ranking of cells, generate a self-organized map, conduct random walk with restart analysis, separate progenitors from differentiated cells, reconstruct lineage, identify pathways, quantitatively assess progenitor, and committed states in data sets. Input 630 can include user controls or a user interface to allow an operator to manage operation of processor 620. Input 630 can include a keyboard, a user module, a cursor control, or other user-operable interface. Output 640 can include an output device such as a printer, a display, an interface, or a telemetry module. Output 640 can render the output from processor 620.",
+                                "As illustrated, system 600 can be configured to receive sample 610 and provide result 650. Sample 610 can include an embryo. Result 650 can include a determination as to gene analysis including data as to a biological pathway or an isolated target cell population.",
+                                "FIG. 7 illustrates a block diagram of an example machine 700 upon which any one or more of the techniques (e.g., methodologies) discussed herein may perform. Examples, as described herein, may include, or may operate by, logic or a number of components, or mechanisms in the machine 700. Circuitry (e.g., processing circuitry) is a collection of circuits implemented in tangible entities of the machine 700 that include hardware (e.g., simple circuits, gates, logic, etc.). Circuitry membership may be flexible over time. Circuitries include members that may, alone or in combination, perform specified operations when operating. In an example, hardware of the circuitry may be immutably designed to carry out a specific operation (e.g., hardwired). In an example, the hardware of the circuitry may include variably connected physical components (e.g., execution units, transistors, simple circuits, etc.) including a machine readable medium physically modified (e.g., magnetically, electrically, moveable placement of invariant massed particles, etc.) to encode instructions of the specific operation. In connecting the physical components, the underlying electrical properties of a hardware constituent are changed, for example, from an insulator to a conductor or vice versa. The instructions enable embedded hardware (e.g., the execution units or a loading mechanism) to create members of the circuitry in hardware via the variable connections to carry out portions of the specific operation when in operation. Accordingly, in an example, the machine readable medium elements are part of the circuitry or are communicatively coupled to the other components of the circuitry when the device is operating. In an example, any of the physical components may be used in more than one member of more than one circuitry. For example, under operation, execution units may be used in a first circuit of a first circuitry at one point in time and reused by a second circuit in the first circuitry, or by a third circuit in a second circuitry at a different time. Additional examples of these components with respect to the machine 700 follow.",
+                                "In one embodiment, the machine 700 may operate as a standalone device or may be connected (e.g., networked) to other machines. An example of another machines can include a sequencer. In a networked deployment, the machine 700 may operate in the capacity of a server machine, a client machine, or both in server-client network environments. In an example, the machine 700 may act as a peer machine in peer-to-peer (P2P) (or other distributed) network environment. The machine 700 may be a personal computer (PC), a tablet PC, a set-top box (STB), or any machine capable of executing instructions (sequential or otherwise) that specify actions to be taken by that machine. Further, while only a single machine is illustrated, the term \u201cmachine\u201d shall also be taken to include any collection of machines that individually or jointly execute a set (or multiple sets) of instructions to perform any one or more of the methodologies discussed herein, such as cloud computing, software as a service (SaaS), other computer cluster configurations.",
+                                "The machine (e.g., computer system) 700 may include a hardware processor 702 (e.g., a central processing unit (CPU), a graphics processing unit (GPU), a hardware processor core, or any combination thereof), a main memory 704, a static memory (e.g., memory or storage for firmware, microcode, a basic-input-output (BIOS), unified extensible firmware interface (UEFI), etc.) 706, and mass storage 721 (e.g., hard drive, tape drive, flash storage, or other block devices) some or all of which may communicate with each other via an interlink (e.g., bus) 708. The machine 700 may further include a display unit 710, an alphanumeric input device 712 (e.g., a keyboard), and a user interface (UI) navigation device 714 (e.g., a mouse). In an example, the display unit 710, input device 712 and UI navigation device 714 may be a touch screen display. The machine 700 may additionally include a storage device (e.g., drive unit) 716, a signal generation device 718 (e.g., a speaker), a network interface device 720, and one or more sensors 721, such as a global positioning system (GPS) sensor, compass, accelerometer, or other sensor. The machine 700 may include an output controller 728, such as a serial (e.g., universal serial bus (USB), parallel, or other wired or wireless (e.g., infrared (IR), near field communication (NFC), etc.) connection to communicate or control one or more peripheral devices (e.g., a printer, card reader, etc.).",
+                                "Registers of the processor 702, the main memory 704, the static memory 706, or the mass storage 716 may be, or include, a machine readable medium 722 on which is stored one or more sets of data structures or instructions 724 (e.g., software) embodying or utilized by any one or more of the techniques or functions described herein. The instructions 724 may also reside, completely or at least partially, within any of registers of the processor 702, the main memory 704, the static memory 706, or the mass storage 716 during execution thereof by the machine 700. In an example, one or any combination of the hardware processor 702, the main memory 704, the static memory 706, or the mass storage 716 may constitute the machine readable media 702. While the machine readable medium 722 is illustrated as a single medium, the term \u201cmachine readable medium\u201d may include a single medium or multiple media (e.g., a centralized or distributed database, and/or associated caches and servers) configured to store the one or more instructions 724.",
+                                "The term \u201cmachine readable medium\u201d may include any medium that is capable of storing, encoding, or carrying instructions for execution by the machine 700 and that cause the machine 700 to perform any one or more of the techniques of the present disclosure, or that is capable of storing, encoding or carrying data structures used by or associated with such instructions. Non-limiting machine readable medium examples may include solid-state memories, optical media, magnetic media, and signals (e.g., radio frequency signals, other photon based signals, sound signals, etc.). In an example, a non-transitory machine readable medium comprises a machine readable medium with a plurality of particles having invariant (e.g., rest) mass, and thus are compositions of matter. Accordingly, non-transitory machine-readable media are machine readable media that do not include transitory propagating signals. Specific examples of non-transitory machine readable media may include: non-volatile memory, such as semiconductor memory devices (e.g., Electrically Programmable Read-Only Memory (EPROM), Electrically Erasable Programmable Read-Only Memory (EEPROM)) and flash memory devices; magnetic disks, such as internal hard disks and removable disks; magneto-optical disks; and CD-ROM and DVD-ROM disks.",
+                                "The instructions 724 may be further transmitted or received over a communications network 726 using a transmission medium via the network interface device 720 utilizing any one of a number of transfer protocols (e.g., frame relay, internet protocol (IP), transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), etc.). Example communication networks may include a local area network (LAN), a wide area network (WAN), a packet data network (e.g., the Internet), mobile telephone networks (e.g., cellular networks), Plain Old Telephone (POTS) networks, and wireless data networks (e.g., Institute of Electrical and Electronics Engineers (IEEE) 802.11 family of standards known as Wi-Fi\u00ae, IEEE 802.16 family of standards known as WiMax\u00ae), IEEE 802.15.4 family of standards, peer-to-peer (P2P) networks, among others. In an example, the network interface device 720 may include one or more physical jacks (e.g., Ethernet, coaxial, or phone jacks) or one or more antennas to connect to the communications network 726. In an example, the network interface device 720 may include a plurality of antennas to wirelessly communicate using at least one of single-input multiple-output (SIMO), multiple-input multiple-output (MIMO), or multiple-input single-output (MISO) techniques. The term \u201ctransmission medium\u201d shall be taken to include any intangible medium that is capable of storing, encoding or carrying instructions for execution by the machine 700, and includes digital or analog communications signals or other intangible medium to facilitate communication of such software. A transmission medium is a machine readable medium.",
+                                "FIG. 8 illustrates a flow chart of method 800, in accordance with one example of the present subject matter. Method 800, in one example, is configured to perform single-cell RNA-seq analysis using the dpath pipeline. Method 800 can include, at 810, decomposing the expression profile matrix of single-cell RNA-seq into metagenes using wp-NMF. At 820, method 800 include mapping cells into metacells using a SOM algorithm. At 830, method 800 includes prioritizing cells with respect to specific cellular states using a RWR algorithm on a heterogeneous metagene-metacell graph. At 840, method 800 can include ranking genes for cellular states according to their expression profile. Method 800 can include addition or different elements as well.",
+                                "FIG. 9 illustrates a flow chart of method 900, in accordance with one example of the present subject matter. At 910, method 900 includes receiving a single cell RNA-seq. At 920, method 900 includes modelling an expected gene expression level. The expected gene expression level can be modelled as the linear combination of non-negative metagene basis and coefficients. The observed gene expression level can be modelled as a mixture of Poisson distribution of expected expression level and a dropout event represented by a low-magnitude Poisson process. At 930, method 900 includes determining metagene entropy. Metagene entropy can be determined by non-negative singular value decomposition. At 940, method 900 includes clustering cells into metacells using a self-organized map. The map can be organized on a two dimensional hexagonal grid. At 950, method 900 includes partitioning the self-organized map using partitioning around medoids. Partitioning can include connected clusters. At 960, method 900 includes constructing a heterogeneous metagene-metacell graph. This can include determining a transition probability matrix. At 970, method 900 can include prioritizing metacells with respect to cellular states (committed or progenitor). In one example, a random walk with restart algorithm can be executed to prioritize metacells. In one example, the user can specific a parameter \u03b2 associated with the probability of staying in the metagene graph. At 980, method 900 includes determining a gene enrichment score. The enrichment score is based on the sum of steady state probabilities. At 990, method 900 includes simulating a single cell RNA-seq expression data.",
+                                "The following example is intended to further illustrate certain embodiments and is not intended to limit the scope in any way."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Etv2 and its role in development",
+                                "describe Etv2 mutants and overexpression",
+                                "explain Etv2 expression during embryogenesis",
+                                "describe single-cell RNA-seq analysis",
+                                "introduce mathematical solutions to dropout events",
+                                "describe weighted Poisson non-negative matrix factorization (wp-NMF)",
+                                "introduce metagene entropy and self-organizing map (SOM)",
+                                "describe random walk with restart (RWR) algorithm",
+                                "explain dpath program and its functionality",
+                                "describe comparison with other factorization methods",
+                                "illustrate system 600 block diagram",
+                                "describe processor 620 functionality",
+                                "explain input 630 and output 640",
+                                "illustrate system 600 operation",
+                                "describe machine 700 block diagram",
+                                "explain hardware processor 702",
+                                "describe main memory 704 and static memory 706",
+                                "explain mass storage 716 and signal generation device 718",
+                                "describe network interface device 720 and sensors 721",
+                                "explain output controller 728",
+                                "describe machine readable medium 722",
+                                "explain instructions 724",
+                                "describe communications network 726",
+                                "illustrate method 800 flow chart",
+                                "describe decomposing expression profile matrix",
+                                "map cells into metacells using SOM",
+                                "prioritize cells using RWR algorithm",
+                                "rank genes for cellular states",
+                                "illustrate method 900 flow chart",
+                                "receive single cell RNA-seq",
+                                "model expected gene expression level",
+                                "determine metagene entropy"
+                            ],
+                            "num_characters": 16323,
+                            "outline_medium": [
+                                "introduce Etv2 and its role in development",
+                                "describe Etv2 mutants and overexpression",
+                                "explain Etv2 expression during embryogenesis",
+                                "introduce single-cell RNA-seq analysis",
+                                "describe technical hurdles in single-cell RNA-seq",
+                                "introduce wp-NMF method to address dropout events",
+                                "describe need for additional biological information",
+                                "introduce metagene entropy and SOM algorithm",
+                                "describe RWR algorithm for prioritizing genes",
+                                "introduce dpath program and its capabilities",
+                                "describe comparison with other factorization methods",
+                                "illustrate system 600 for single-cell RNA-seq analysis",
+                                "describe components of system 600",
+                                "illustrate machine 700 for executing methodologies",
+                                "describe components of machine 700",
+                                "illustrate flow charts of methods 800 and 900"
+                            ],
+                            "outline_short": [
+                                "motivate Etv2 in endothelial, endocardial and haematopoietic development",
+                                "describe single-cell RNA-seq analysis",
+                                "introduce mathematical solutions to dropout events and directionality of differentiation",
+                                "describe wp-NMF method",
+                                "describe metagene entropy and SOM algorithm",
+                                "describe RWR algorithm and dpath program",
+                                "illustrate system 600 and its components",
+                                "illustrate machine 700 and its components"
+                            ]
+                        },
+                        {
+                            "title": "Materials and Methods",
+                            "paragraphs": [
+                                "Cell Isolation",
+                                "Cell isolation. Etv2-EYFP embryos were harvested from time mated females at E7.25, E7.75 or E8.25 and screened using microscopy for EYFP expression (14). Embryos were divided into EYFP-positive and -negative pools for dissociation with TrypLE Express (Gibco by Life Technologies). After dissociation, cells were diluted with 10% foetal bovine serum in DMEM and pelleted at 1,000 g. Cells were resuspended in 0.1% propidium iodide and 2% serum in PBS. EYFP-negative embryos were used as a gating control sample. Propidium iodide-negative, EYFP-positive cells were sorted by FACS using a MoFlo XDP (Beckman Coulter) into DMEM plus 10% foetal bovine serum. FACS sorted cells were resuspended at 500 cells ul\u22121 before loading onto a Fluidigm 10-17 um integrated fluidics circuit for capture, viability screening, lysis and library amplification on a C1 Single-Cell Auto Prep System (Fluidigm).",
+                                "Single-Cell RNA-Seq.",
+                                "Libraries were analyzed for cDNA content by pico green staining. Wells that contained a single viable cell and at least 0.2 ng ul\u22121 cDNA were chosen to proceed with sequencing. All libraries were sequenced using 75-bp paired end sequencing on a MiSeq (Illuminia), generating 202K-1,910K paired end reads for each cell. The cells with <100K paired reads were removed, resulting in 281 cells for analysis. The transcripts per million (TPM) estimates were obtained with TopHat (v2.0.13) and Cufflinks (v2.2.1)61. The median mapping rate was 88.3%. Among 14,480 genes that could be detected in at least two cells (TPMZ1), a noise model was fitted with respect to each gene's mean and coefficient of variance (CV, s.d. divided by the mean) as log2 CV=log2 (mean\u03b1=k). Then 1,448 genes were removed with high technical noise, which were furthest from the fitted line (62,63). 7,240 ubiquitously expressed genes whose CV was below the median CV were also removed. The resulting 5,799 genes were used for the following analysis.",
+                                "Weighted Poisson non-negative matrix factorization.",
+                                "Let Xnm be the log-transformed TPM of gene n in cell m. It was hypothesized that the expected log-transformed TPM of gene n in cell m, unm, could be represented as:",
+                                "\\(\\mu_{nm} = {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{U_{nk}\ue89eV_{km}}}\\)\n\\({U_{nk} \\geq 0},{V_{km} \\geq 0}\\)\n\\({\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89eV_{km}} = 1\\)",
+                                "where K was the number of metagenes, Unk was the metagene basis indicating the contribution of gene n on the kth metagene and Vkm was the metagene coefficient indicating the expression profile of the kth metagene in cell m. Specifically, the expected gene expression level was modelled as the linear combination of non-negative metagene basis and coefficients. The cell-wise metagene coefficients were summed up to one.",
+                                "Similar to work by Kharchenko et al. (24) on the identification of differentially expressed genes in single-cell RNA-seq data, a weighted log-likelihood function for an observed expression level of gene n in cell m was defined as:",
+                                "L[U,V,\u03c0]=\u03c0nm ln Pois(Xnm|\u03bcnm)+(1\u2212\u03c0nm)ln Pois(Xnm|\u03bb0)",
+                                "where \u03c0nm ranges from zero to one, approximating the likelihood of gene n being expressed in cell m, that is, the probability that observed expression level Xnm follows a Poisson distribution with the mean as unm. The dropout event was also modelled as a Poisson distribution with the mean as \u03bb0=0.1. As it was reasonable to hypothesize that \u03c0nm was proportional to the probability of being expressed, it could be estimated by:",
+                                "\\(\\pi_{nm} = \\frac{{Pois}\ue8a0\\left( {X_{nm}\ue85c\\mu_{nm}} \\right)}{{{Pois}\ue8a0\\left( {X_{nm}\ue85c\\mu_{nm}} \\right)} + {{Pois}\ue8a0\\left( {X_{nm}\ue85c\\lambda_{0}} \\right)}}\\)",
+                                "\u03c0nm could be viewed as a weight for the observed expression level of gene n in cell m, depending on the probability of being expressed over that of a dropout event.",
+                                "Taken together, to decompose expression matrix into metagene basis and coefficients, such a constrained maximization problem was solved as:",
+                                "\\(\\max\\limits_{U,V,n}\ue89e{\\sum\\limits_{n = 1}^{N}\ue89e\\; \ue89e{\\sum\\limits_{m = 1}^{M}\ue89e\\; \ue89eL_{\\lbrack{U_{n},V_{m},\\pi_{nm}}\\rbrack}}}\\)\n\\({{s.t.\\mspace{14mu} \ue89e\\mu_{nm}} = {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{U_{nk}\ue89eV_{km}}}},{{\\forall n} = 1},\\ldots \ue89e\\mspace{14mu},{N;{m = 1}},\\ldots \ue89e\\mspace{14mu},M\\)\n\\({U_{nk} \\geq 0},{V_{km} \\geq 0},{{\\forall n} = 1},\\ldots \ue89e\\mspace{14mu},{N;{m = 1}},\\ldots \ue89e\\mspace{14mu},{M;{k = 1}},\\ldots \ue89e\\mspace{14mu},{{K\ue89e{\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89eV_{km}}} = 1},{m = 1},\\ldots \ue89e\\mspace{14mu},M\\)",
+                                "Similar to solving a regular NMF problem with cost functions as Euclidean distance or Kullback-Leibler divergence, the objective function was optimized using a gradient ascent method and multiplicative rules to iteratively update U and V, until convergence or maximum iterations were reached:",
+                                "\\(\\quad\\left\\{ \\begin{matrix}\n\\left. U\\leftarrow{U \\circ \\frac{\\left\\lbrack {\\pi \\circ \\left( {X/{UV}} \\right)} \\right\\rbrack \ue89eV^{T}}{\\pi \ue89e\\; \ue89eV^{T}}} \\right. \\\\\n\\left. V\\leftarrow{V \\circ \\frac{U^{T}\ue8a0\\left\\lbrack {\\pi \\circ \\left( {X/{UV}} \\right)} \\right\\rbrack}{U^{T}\ue89e\\pi}} \\right. \\\\\n\\left. V\\leftarrow{V\ue89e\\; \ue89e{{diag}\ue8a0\\left( {{1/{\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89eV_{k\ue89e\\; \ue89e1}}},\\ldots \ue89e\\mspace{14mu},{1/{\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89eV_{kM}}}} \\right)}} \\right. \\\\\n{{\\left. \\pi_{nm}\\leftarrow{\\frac{{Pois}\ue8a0\\left( {X_{nm}/\\mu_{nm}} \\right)}{{{Pois}\ue8a0\\left( {X_{nm}/\\mu_{nm}} \\right)} + {{Pois}\ue8a0\\left( {X_{nm}\ue85c\\lambda_{0}} \\right)}}\ue89e{\\forall n}} \\right. = 1},\\ldots \ue89e\\mspace{14mu},{N;{m = 1}},\\ldots \ue89e\\mspace{14mu},M}\n\\end{matrix} \\right.\\)",
+                                "where \u2018\u00b0\u2019 was the Hadamard matrix product, \u2018/\u2019 was the element-wise division and \u2018diag( . . . )\u2019 represents a diagonal matrix where diagonal entries are indicated by \u2018 . . . \u2019.",
+                                "To accelerate the convergence, weighted NMF was used as a burn-in phase to initialize U and V, where a fixed weight of w0=0.1 was given to the zero entries in the gene expression matrix X and a weight of one to non-zero entries (64). In weighted NMF, V was initialized using non-negative singular value decomposition (65).",
+                                "The metagene entropy of cell m was defined as",
+                                "\\(- {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{V_{km}\ue89e\\ln \ue89e\\; \ue89e{V_{km}.}}}\\)",
+                                "Choice of the size of metagene K.",
+                                "As the objective function was not convex, wp-NMF may or may not converge to the same solution on each run, depending on the initialization of U. The wp-NMF was repeated for rmf times with different random initialization of U. The consensus matrix C and the cophenetic correlation coefficients pk (C) were computed as described in Brunet et al. (31). Values of K=4 were selected where the magnitude of the cophenetic correlation coefficient began to fall. The experiments also suggested that rmf=20 was sufficient to obtain stable aggregated metagene coefficients, as the cophenetic correlation coefficients were not significantly less than rmf=50 or 75.",
+                                "Evaluating the performance of factorization methods.",
+                                "For LOO-CV-based evaluation, we trained linear support vector machine classifiers were trained by using the factors from (m\u22121) cells and predicted the cell group (Emcn+/Gata1\u2212/Tbx20\u2212, Gata1/Emcn\u2212/Gata1+/Tbx20\u2212 and Emcn\u2212/Gata1\u2212/Tbx20+) of the remaining cell. This procedure was repeated for every single cell and the LOO-CV error was determined as the overall prediction error. Lower LOO-CV error suggested better factorizations on capturing the difference of the three groups of cells. For WSS/TSS ratio-based evaluation, we computed the ratio of WSS and TSS of resulting factors. Lower WSS/TSS ratio suggested that three group of cells were more tightly clustered together on the reduced dimensions.",
+                                "Clustering cells into metacells using a SOM.",
+                                "SOM was used to map cells into P=225 prototype metacells that were spatially organized on a 15\u00d715 2D hexagonal grid 44. The input space for SOM was the mean metagene expression profiles (metagene coefficients) V from rmf repetitive runs of wp-NMF. The R package kohonen was used to fit the SOM model with default parameters (66). Wkp was used to represent scaled expression level of kth metagene in metacell p, where",
+                                "\u03a3k-1KWkp=1.",
+                                "Partitioning SOM using PAM.",
+                                "The SOM were partitioned into multiple segments using PAM algorithm. If the number of desired clusters C was specified, the metacells were directly clustered into C clusters; otherwise, the SOM would be partitioned into the maximum number of clusters, as long as the size of each metacell cluster was no <15 and every metacell cluster was connected on the SOM (that is, no clusters were divided into two or more isolated regions).",
+                                "Constructing a heterogeneous metagene-metacell graph.",
+                                "A transition probability matrix was used to characterize the hierarchical relationships among P metacells and between P metacells and K metagenes. The transition probability matrix was defined as:",
+                                "\\(G = \\begin{bmatrix}\nG_{MC} & G_{MCMG} \\\\\nG_{MGMC} & {\\beta \ue89e\\; \ue89eI}\n\\end{bmatrix}\\)",
+                                "where \u03b2\u03b5[0,1] and I was a K\u00d7K identity matrix.",
+                                "As with the metagene entropy for the cells, we defined the metagene entropy of metacell p as:",
+                                "\\(H_{p} = {- {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{W_{kp}\ue89e\\ln \ue89e\\; \ue89e{W_{kp}.}}}}\\)",
+                                "Based on the hypothesis that cells in a progenitor state have higher metagene entropy than cells at the committed state, we initially constructed a P\u00d7P directed metacell graph GMC for the hierarchical relationship of metacells. To prioritize committed (progenitor) states, for any metacell p on the SOM, the parental metacells were its neighbouring metacells in which metagene entropy was higher (smaller) than Hp and the derivative metacells were the neighbouring metacells where the metagene entropy was lower (higher) than Hp.",
+                                "Thus the similarity between any two metacell p and q could be computed as:",
+                                "\\(A_{pq} = \\left\\{ \\begin{matrix}\n{1/\\left( {{1 + {\uf605{W_{p} - W_{q}}\uf606}_{2}},} \\right.} \\\\\n{0,}\n\\end{matrix} \\right.\\)\n\n\n- - if p was a parental metacell of q otherwise  \n    where \u2225w_(p)\u2212w_(q)\u2225\u2082 was the Euclidean distance between the metagene\n    coefficients of metacell p and q.",
+                                "Finally, the transition probability from metacell p to metacell q, from metagene k to metacell p and from metacell p to metagene k were defined as:",
+                                "\\(\\left( G_{MC} \\right)_{pq} = {{\\beta \ue89e\\; \ue89e{A_{pq}/{\\sum\\limits_{j = 1}^{P}\ue89e\\; \ue89e{A_{pi}\ue89e\\left( G_{MGMC} \\right)}_{kp}}}} = {{\\left( {1 - \\beta} \\right)\ue89e{W_{kp}/{\\sum\\limits_{i = 1}^{P}\ue89e\\; \ue89e{W_{ki}\ue89e\\left( G_{MCMG} \\right)}_{pk}}}} = {\\left( {1 - \\beta} \\right)\ue89e{W_{kp}/{\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89eW_{kp}}}}}}\\)",
+                                "Prioritizing metacells with respect to cellular states.",
+                                "To prioritize metacells with respect to specified cellular states (committed or progenitor), a RWR algorithm was used based on the transition probability matrix G (ref 67). RWR is a method that has been successfully used in numerous item prioritization tasks, such as web searches and characterizing disease-related genes (56, 68). The flexibility and robustness of RWR algorithms allowed us to prioritize cells/metacells with defined cellular states. The random walker starts from the vertex representing the metagene(s) and randomly moves to one of its neighbouring metacell or metagene, based on the transition probability described by G. Finally, the probability that the random walker reaching a metacell p converges to a scaled steady state up, where \u03a3p-1pup=1, and all the metacell vertices in the graph are ranked by the steadystate probabilities. The R package igraph was used to perform the RWR with the default restarting probability 0.85 (ref 69).",
+                                "During the random walk, the parameter \u03b2 regulates the probability of staying in the metagene graph. A large \u03b2 encourages the random walker staying in the metacell graph GMC, resulting in a sharper ranking results, whereas a small \u03b2 encourages the random walker staying in the metacell-metagene graph GMGMC and GMCMG, resulting in a more smoothened ranking. For the results reported in this study, \u03b2=0.85.",
+                                "Gene Enrichment Score.",
+                                "Genes were prioritized for a specified cellular state based on the correlation between their expression level in metacells and the steady-state probability u. Let Ynp be the expression level of gene n in metacell p. The enrichment score of gene n in prioritized metacells for a specified cellular state was defined as:",
+                                "\\({ES}_{n} = {\\sum\\limits_{p = 1}^{P}\ue89e\\; \ue89e{\\frac{Y_{np} + 1}{\\sum\\limits_{i = 1}^{N}\ue89e\\; \ue89e\\left( {Y_{ip} + 1} \\right)}\ue89e\\left( {u_{p} - {\\frac{1}{P}\ue89e{\\sum\\limits_{j = 1}^{P}\ue89e\\; \ue89eu_{j}}}} \\right)}}\\)",
+                                "The enrichment score was the sum of steady-state probability (after scaled to mean of zero), weighted by the observed expression level. High enrichment score suggested high correlation between steady-state probability and expression levels.",
+                                "Simulating single-cell RNA-seq expression data.",
+                                "It was assumed the expected expression level of a gene n\u03b5[1, . . . , N] in cell \u03b5[1, . . . , M],",
+                                "\\({\\mu_{nm} = {\\sum\\limits_{k = 1}^{K}\ue89e\\; \ue89e{U_{nk}\ue89eV_{km}}}},\\)",
+                                "where V was randomly filled with 0 and 1 with probability 0.3 and 0.7, respectively, followed by scaling each column so that \u03a3k-1KVkm=1 for each m, and Unk was randomly sampled from a Gamma distribution with fixed shape and rate. Let Dnm be a binary indicator matrix of being a dropout event for gene n in cell m, where the dropout rate is 50%. The observed expression level of gene n in cell m is Xnm, followed a Poisson distribution with mean as unm if Dnm=0, otherwise zero. In the experiments, the total number of genes and cells were set to 200 and 50, respectively."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "isolate cells from embryos",
+                                "screen for EYFP expression",
+                                "dissociate cells with TrypLE Express",
+                                "sort cells by FACS",
+                                "load cells onto Fluidigm 10-17 um integrated fluidics circuit",
+                                "capture, viability screen, lyse, and amplify libraries",
+                                "sequence libraries using MiSeq",
+                                "filter out low-quality reads",
+                                "estimate transcripts per million (TPM)",
+                                "fit noise model to TPM data",
+                                "remove genes with high technical noise",
+                                "remove ubiquitously expressed genes",
+                                "define weighted Poisson non-negative matrix factorization (wp-NMF) model",
+                                "derive objective function for wp-NMF",
+                                "optimize wp-NMF using gradient ascent method",
+                                "initialize U and V using weighted NMF",
+                                "define metagene entropy",
+                                "choose size of metagene K",
+                                "evaluate performance of factorization methods",
+                                "train linear support vector machine classifiers",
+                                "compute LOO-CV error",
+                                "compute WSS/TSS ratio",
+                                "cluster cells into metacells using SOM",
+                                "partition SOM using PAM",
+                                "construct heterogeneous metagene-metacell graph",
+                                "prioritize metacells with respect to cellular states"
+                            ],
+                            "num_characters": 13341,
+                            "outline_medium": [
+                                "isolate cells from embryos",
+                                "sort cells using FACS",
+                                "perform single-cell RNA sequencing",
+                                "analyze sequencing data using TopHat and Cufflinks",
+                                "filter out low-quality genes",
+                                "define weighted Poisson non-negative matrix factorization model",
+                                "derive optimization problem for model",
+                                "solve optimization problem using gradient ascent method",
+                                "initialize U and V using weighted NMF",
+                                "evaluate performance of factorization methods",
+                                "cluster cells into metacells using SOM",
+                                "partition SOM using PAM",
+                                "construct heterogeneous metagene-metacell graph"
+                            ],
+                            "outline_short": [
+                                "isolate cells from embryos",
+                                "perform single-cell RNA sequencing",
+                                "analyze sequencing data using weighted Poisson non-negative matrix factorization",
+                                "evaluate performance of factorization methods",
+                                "cluster cells into metacells using self-organizing maps",
+                                "construct heterogeneous metagene-metacell graph and prioritize metacells"
+                            ]
+                        },
+                        {
+                            "title": "Data Availability",
+                            "paragraphs": [
+                                "The single cell RNA-seq data that support the findings of this study have been deposited in NCBI Sequence Read Archive (SRA) database with the project accession number PRJNA350294 (incorporated herein by reference). The dpath pipeline was implemented as an R package. Further, supplementary data and figures and aspects can be found in and through accessing Gong et al. Nat Commun. 2017 Feb. 9; 8:14362, which are also incorporated by reference herein in their entirety."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "deposit single cell RNA-seq data in NCBI Sequence Read Archive (SRA) database"
+                            ],
+                            "num_characters": 470,
+                            "outline_medium": [
+                                "provide data availability statement"
+                            ],
+                            "outline_short": [
+                                "provide data access information"
+                            ]
+                        },
+                        {
+                            "title": "Results",
+                            "paragraphs": [
+                                "Single-Cell RNA-Seq Analysis Using the Dpath Pipeline.",
+                                "The dpath pipeline consists of four major steps. First, this program decomposes the expression profile matrix of single-cell RNA-seq into metagenes using wp-NMF. Second, dpath maps cells into metacells using a SOM algorithm. Third, the dpath algorithm prioritizes cells with respect to specific cellular states using a RWR algorithm on a heterogeneous metagene-metacell graph. Finally, this algorithm ranks genes for cellular states according to their expression profile.",
+                                "NMF is distinguished from principal component analysis (PCA) by its use of non-negativity constraints (29). These constraints lead to a parts-based representation of subpopulations, instead of the holistic representations observed using PCA (29). To account for the dropout events, we used a weighted Poisson model as the cost function for NMF. The expected gene expression level was modelled as the linear combination of non-negative metagene basis and coefficients. The observed gene expression level was then modelled as a mixture of Poisson distribution of expected expression level and a dropout event represented by a low magnitude Poisson process (24). When decomposing the single-cell expression profile, wp-NMF gave each entry a different weight depending on the odds of being a dropout event. The simulation study suggested, that in the presence of the dropout noise, wp-NMP was superior to PCA in the separation of the cell clusters on the low dimensional space and with regards to the t-distributed stochastic neighbour embedding of top principal components (30).",
+                                "wp-NMF was used to decompose the expression profile matrix of 281 Etv2-EYFP cells captured from E7.25, E7.75 and E8.25 into four metagenes (31). The expression matrix was therefore approximated by the product of nonnegative metagene basis and coefficients. The metagene basis represented the contribution of each gene to each metagene, and the metagene coefficient, a probabilistic simplex that indicated the relative weight of each metagene in each cell, assigns distinct metagene signatures for individual cells (FIG. 1a).",
+                                "To verify that this deconvolution strategy produced biologically relevant results, a list of selected genes with known expression patterns was first examined. The haematopoietic markers: Gata1, Ik2f1, Itga2b, Hba-a1, and Runx1, contributed to several metagenes, but primarily to the second metagene (MG2). The endocardial/cardiac genes: Gata4, Smarcd3, Tbx20, Alcam, and Dok4, contributed primarily to the third metagene (MG3) (32-34). The mesodermal marker, Pdgfra, also contributed significantly to MG3, consistent with the previous observations that Pdgfra is expressed in the cardiac mesoderm (35, 36). Also the previously described endocardial marker, Cgnl1, contributed to MG1 and MG3 metagenes. The endothelial markers, Plasmalemma vesicle associated protein (Plvap), Endomucin (Emcn) and Icam1 contributed primarily to MG1. Interestingly, other common endothelial markers, such as Pecam1, Cd34 and Cdh5, contributed broadly to a number of metagenes. The broad contribution of several haematopoietic and endothelial markers supported the notion that the current lineage markers for these populations are not specific. In contrast, the mesodermal lineage marker Brachyury (T) and Gli2, an effector of sonic hedgehog signaling pathway, contributed strongly to MG4. Moreover, Pou5f1 and Nanog that are expressed at the primitive steak stage (E7.25) contributed exclusively to MG4 (refs 37,38). The gene set enrichment analysis (GSEA) also suggested that genes that were specific to MG1 to MG4 were significantly associated with blood vessel development (GO:0001568), erythrocyte differentiation (GO:0030218), heart development (GO:0007507) and stem cell maintenance (GO:0035019), respectively (FIG. 1b-e). Collectively, these data demonstrated that four metagenes represented the endothelial, haematopoietic, endocardial lineages and mesodermal progenitors, respectively.",
+                                "The observation that the single cells carrying different metagene signatures associated with different biological functions prompted the hypothesis that the cells with a distinct metagene signature had a distinct spatial distribution. To experimentally test this hypothesis, Emcn, Gata1 and Tbx20 were identified as the distinguishing marker genes for MG1 (endothelium), MG2 (blood) and MG3 (endocardium). Expression levels of these genes were strongly positively correlated with the metagene intensity of MG1, MG2 and MG3, respectively (FIG. 2a). Immunohistochemical staining demonstrated that the Etv2-EYFP+ cells segregate into three distinct subpopulations defined by these markers, namely, those exclusively marked by (1) Emcn (Etv2+/Emcn+/Gata1\u2212/Tbx20\u2212), (2) Gata1 (Etv2+/Emcn\u2212/Gata1/Tbx20\u2212) and (3) Tbx20 (Etv2+/Emcn\u2212/Gata1\u2212/Tbx20+). These subgroups showed distinct spatial distribution in the E7.75 embryo (FIG. 2b) and confirmed that MG1 represented the endothelium, MG2 represented the blood and MG3 the endocardium. These results indicated that the metagene signature determined by wp-NMF was able to successfully separate three cell clusters with distinct spatial distribution. Moreover, wp-NMF had superior performance for the separation of these three spatially distinct Etv2-EYFP cell populations compared with other popular factorization and dimension reduction tools, such as PCA, dimensionality reduction for zero-inflated single-cell gene expression analysis, diffusion map and t-distributed stochastic neighbour embedding. To make these comparisons, the leave-one-out cross-validation (LOO-CV) was used and within-cluster sum of squares (WSS) to total sum of squares (TSS) ratio (FIG. 2c,d) (30, 39, 40).",
+                                "Identification of Progenitor and Committed Cells Using Dpath.",
+                                "The metagene coefficient indicates the expression profile of each metagene in each cell. For example, MG1, MG2 and MG3 dominated isolated groups of cells (FIG. 1a). Alternatively, multiple metagenes could also be expressed in a single cell, suggesting that this cell harbored the gene signature of multiple lineages and is multipotent with regards to lineage commitment.",
+                                "Indeed, marker genes that are abundantly expressed in the committed lineages tend to be expressed in their common progenitor cells but at a lower level (19, 41). Thus the concept of metagene entropy was introduced as a novel tool to use the heterogeneity of gene expression signature of a single cell to predict the differentiation state of the cell (42). Entropy is used in statistical mechanics and information theory as a measure of disorder or uncertainty. It was hypothesized that cells with high metagene entropy have higher differentiation potential than cells with low metagene entropy. The analysis using two published single-cell RNA-seq data sets on lung epithelium development and mouse fibroblasts reprogramming suggested metagene entropy was indeed significantly higher in progenitor cells compared with more differentiated cells (19, 43). Following the application of metagene entropy to the Etv2+ cells, it was noted that the cells from E7.25 had significantly higher metagene entropy than the cells from E7.75, and the metagene entropy of E7.75 cells was significantly higher than E8.25 cells (Wilcoxon rank-sum test, P-value=1.2E-10 and P-value=0.00075). This finding was consistent with the general consensus that cells from early developmental stages have higher differentiation potency than from the later stages (FIG. 3a). This is the first method in this field of single-cell RNA-seq analysis that establishes a quantitative measurement of cellular (progenitor versus committed) state.",
+                                "Establishing the metacell landscape for Etv2 derivatives. Although metagene entropy was defined and established the directionality of the developmental programme, another requirement was introduced such that the metagene expression profiles between cells in the neighbouring developmental stages are similar. A SOM algorithm was used to organize Etv2+ cells with similar metagene coefficients into a hexagonal grid and visualized the lineage structures in a 15\u00d7 15 two-dimensional (2D) map. The SOM is an unsupervised machine learning method that was developed to cluster and visualize the high dimensional data and has been widely used in bioinformatics because of its superb visualization capability (44). In this application, each hexagonal grid on the SOM was defined as a metacell, and each cell was mapped to the metacell with the most similar metagene expression pattern. The analysis revealed a graded distribution of metagene entropy on the SOM: in the central region of the SOM, the metacells had higher metagene entropy than those at the periphery or corners, and the region with the highest metagene entropy was enriched by the cells from E7.25. In contrast, the region with low metagene entropy was associated with more cells from the later developmental stages, E7.75 and E8.25 (FIG. 3b). Moreover, the committed haematopoietic, endothelial and endocardial lineages were clearly separated or located at the edges and corners of the SOM (FIG. 3c,d). This metacell landscape therefore represented the lineage relationships reminiscent of the branching valleys of the epigenetic landscape envisioned by Waddington (45).",
+                                "Next, to reveal the identity of the major populations of Etv2-EYFP+ cells, all 281 cells were clustered into 8 cell clusters by partitioning the SOM using the Partitioning Around Medoids (PAM) algorithm (FIG. 3d,e). Among these cell clusters, C2, C4, C5 and C6 that expressed multiple metagenes were enriched in earlier time points (E7.25 and E7.75) and therefore, it was hypothesized, represent the more progenitor-like cellular states. In contrast, C1, C3 and C7 expressed primarily the endocardial (MG3), endothelial (MG1) and haematopoietic (MG2) metagenes, respectively, and as such had relatively low average metagene entropy, supporting the notion that these cell clusters represent more differentiated cells (FIG. 3b). C8 is a unique population that is found abundantly in E7.25 and disappears at later stages. As this population expresses pluripotency markers and very low level of Etv2 and EYFP (enhanced yellow fluorescent protein) compared with other populations, it was hypothesize that these cells represent descendants of early blastomeres and epiblasts that express Etv2 at low levels or stochastically (46).",
+                                "It was found that the metacells with the highest entropy in the cell population were positive for T (C5, highest expressors are marked with asterisks). This T+ group of cells clustered adjacent to the common haematopoietic and endothelial progenitors (highlighted in yellow) and represented the most immature progenitors present in our Etv2-EYFP population. The metacells with highest entropy in C5 (demarcated by yellow lines) expressed Etv2, Kdr, Sox7, Runx1, Gata1 and Snca. Interestingly, these progenitors represented cells that expressed Sox7 and Runx1. The central location of these cells suggested that they were the earlier progenitors. In contrast, more mature cells of the haematopoietic and endothelial lineages segregated to peripheral locations. These peripherally located cells expressed Hbb-y, Car1 and Hba-a1, which are the mature markers of the haematopoietic lineage (C7), and Emcn, Plvap, and Nos3, which are the mature markers of the endothelial lineage (C3), respectively.",
+                                "Towards the lower left corner of the SOM, metacells enriched in endocardial/cardiac mesodermal genes (Tbx20 and Pdgfra) were localized. As these cells were isolated based on EYFP expression driven by the Etv2 promoter, it is likely that C2 represents endocardium. To examine this hypothesis, the expression of Cgnl1 and Dok4 was analyzed, which are reported to be enriched in endocardium (47). It was observed that both Cgnl1 and Dok4 were expressed in C2 population. The segregation of the putative endocardium from the haematopoietic and endothelial lineages is consistent with previous reports that endocardium is derived from cardiac mesoderm (FIG. 3c) (48).",
+                                "Biological Verification of the Dpath Pipeline Output.",
+                                "The data demonstrated that, by combining the biologically relevant metagene signature, metagene entropy and the metacell landscape, the dpath pipeline provided a straightforward way to examine the lineage relationships of underlying single cells. Here, two predictions from analyzing the metacell landscape of Etv2-EYFP+ single cells were experimentally verified.",
+                                "Identification of Endocardial Cushion Progenitors.",
+                                "C1, C2 and C3 clusters were first compared, which were particularly intriguing. C2 had the metagene signature for endothelial, cardiac and mesodermal progenitors (MG1, MG3 and MG4), while C1 and C3 were dominated by the endocardial (MG3) and endothelial (MG1) metagenes, respectively (FIG. 4a). On the SOM, C2 connected C1 and C3 clusters and it had higher metagene entropy (FIG. 3b). It was then predicted that the C2 population was the progenitors of the C1 population, according to their metagene coefficients and metagene entropy change. The gene profile analysis revealed that the general gene expression change was C2 (Etv2-EYFP+, Cardiac+, Endothelial+)-C1 (Etv2-EYFP+, Cardiac+, Endothelial). This transition is similar to the endothelial-mesenchymal transition involved in the generation of cardiac cushion from the endocardium (49). By using Emcn and Tbx20 as markers for MG1 and MG3, respectively, the immunohistochemical experiments confirmed the existence of the C2 cell populations and supported that the C2 population were progenitors of the cardiac cushion that originated from endocardium, and the molecular transition (that is, changes in gene expression profile) occurred as early as E8.25 (FIG. 4b).",
+                                "Identification of Two Waves of Haematopoiesis.",
+                                "Next, the paths leading to haematopoiesis were examined. It was observed that, on the SOM, between the highest entropy cell cluster C5 and the committed haematopoietic cluster C7, there existed a transitional cell cluster C6 with metagene entropy between C5 and C7, predicting that the differentiation path is C5-C6-C7. Within the C6 cluster, Runx1 was expressed in most of the C6 metacells, while Gata1 was only expressed in a few metacells near the border with C7 (FIG. 4c,d). This order of gene expression is consistent with the observation that Runx1 expression precedes Gata1 expression during primitive haematopoiesis (50). C4 is another group that neighbours C7. The C4 cell cluster also had relatively higher metagene entropy than C7 and harbored the endothelial and haematopoietic metagenes; C4 had relatively stronger expression of genes related to definite erythrocyte differentiation (GO:0060216) than those related to primitive erythrocyte differentiation (GO:0060215), thus the C4 cell cluster represents the haemogenic endothelial lineage (FIG. 4e,f).",
+                                "Endothelial Differentiation.",
+                                "The C2 cell cluster was located between C5 and the committed endothelial cluster C3 and had an intermediate metagene entropy levels and served as a transition state between C5 and C3. Therefore, C5-C2-C6 transition represents the early differentiation of endothelial lineages.",
+                                "Identification of Pathways for Haematoendothelial Bifurcation.",
+                                "It was hypothesized that the signalling pathways enriched in clusters C2, C5 and C6 have functional roles in the haemato-endothelial development. 132 genes were identified that were significantly upregulated in progenitor cellular clusters C2, C5 and C6, compared with the other five clusters (SCDE P value<0.001) (24), and 21 KEGG pathways that were enriched in these upregulated genes (Fisher's exact test P value<0.05). Sonic signaling pathway (SHH) ranked as the fifth most enriched pathways in C2/C5/C6 (FIG. 4g,h). SHH has functions during development and regeneration (51). To examine the roles of the SHH pathway in haemato-endothelial differentiation, an ES/embryonic body (EB) differentiation model system was used and exposed them to SHH agonist (SAG) or the SHH antagonist cyclopamine from days 2 to 4.5 (FIG. 4i). At day 4.5, FACS analysis was undertaken for the Etv2-EYFP+ cells from respective ES/EBs and analyzed them for endothelial and haematopoietic markers. Compared with the dimethyl sulfoxide control, it was observed that the SHH agonist significantly promoted the endothelial and haematopoietic progenitor cells (CD41+/Tie2+), while cyclopamine significantly suppressed this cell population (FIG. 4j). The SHH agonist and antagonist also had similar effects on differentiated endothelial (Tie2+/CD31+) and haematopoietic (CD41+/CD45+) lineages. These experiments confirmed SHH as a key signaling pathway that regulates the differentiation of haemato-endothelial lineages (52-55). The studies further established a new role for hedgehog signalling in the regulation of the haemato-endothelial (Etv2+Tie2+CD41+) progenitors (FIG. 4i,j).",
+                                "Discovery of Trajectory from Progenitor to Committed State.",
+                                "After organizing cells into a SOM such that neighbouring metacells had a similar metagene expression pattern and establishing metagene entropy as a means to add directionality to the differentiation process, next quantitatively assessed the progenitor and committed states on the metacell SOM and predicted the developmental trajectories. A heterogeneous metacell-metagene probability graph (a transition matrix) was built to describe the probability of transitioning from a metagene to a metacell (or vice versa) or from a metacell to another metacell. A metacell was considered as a parent (progenitor) of its neighbouring metacell on the SOM only if its metagene entropy was higher than that of the derivative metacell. Second, a RWR algorithm was used on the heterogeneous graph to infer the probability of a metacell being in a committed state to one metagene or being in a progenitor state with the ability to transition to multiple metagenes (56). Once the most likely progenitor and committed states (metacells) were identified, developmental trajectories from the progenitor cellular states toward the committed cellular states of endothelium, blood and endocardium were determined as the shortest paths between them on the SOM (FIG. 5a).",
+                                "First, the inferred the progenitor and committed cellular states were first verified. The genes were ranked according to the similarity between their metacell expression profiles and the probability of being a specific cellular (progenitor or committed) state of the metagene(s). The GSEA suggested that regulation of vasculature development (GO:1904018), erythrocyte differentiation (GO:0030218) and epithelial to mesenchymal transition (GO:0001837) related genes were significantly enriched at the top ranking genes for the committed metacells for the first, second and third metagenes, while the cell fate commitment (GO:0045165) related genes were significantly correlated with both MG3 and MG4, which was consistent with the previous determination of metagene fates based on known marker genes (57). The GSEA of known mouse phenotypic-related genes suggested similar functional separations of metagenes. To further confirm the biological relevance of genes that are enriched in predicted progenitor cellular states, a previously published Etv2 chromatin immunoprecipitation sequence data set was examined and it was found that the genes that had experimentally verified 3,953 highly confident (common in their V5 and PolyAb experiments) Etv2-binding sites (at least one chromatin immunoprecipitation sequence hit within \u22125,000 to +1,000 bp region surrounding the transcription start sites of at least one transcript) had significantly greater prioritization scores than those that did not (Wilcoxon rank-sum test, P value<1.0\u00d710\u221220) (58). These results verified the biological relevance of progenitor and committed cellular states inferred by the RWR algorithm.",
+                                "Second, by examining the expression of three known lineage marker genes (Emcn, Gata1 and Tbx20) along the dpath's developmental trajectories, it was found that Emcn, Gata1 and Tbx20 were upregulated along the endothelial path (P1), haematopoietic path (P2) and endocardial path (P3) (FIG. 5b). A head-to-head comparison was then conducted and evaluated whether currently available methods can predict the trajectories that were obtained. Results show that Monocle, Wishbone and Mpath were not able to infer the pseudotemporal or developmental trajectories that agree with the current biological knowledge. Moreover, to quantitatively evaluate the accuracy of inferred pseudotime, it was counted how often a pseudotime puts a cell from a later temporal sorting before an earlier one (measured by Kendall rank correlation coefficient). It was found that there existed a strong positive correlation between temporal labels (E7.25, E7.75 and E8.25) and dpath's pseudotime (mean Kendall rank correlation coefficient\u00bc 0.798), which was noticeably higher than popular pseudotime inference algorithms such as Monocle (0.213) and Wishbone (0.375) (FIG. 5c, Mpath was excluded from this comparison as the pseudotime could not be automatically calculated).",
+                                "Taken together, the GSEA of genes that were enriched in committed and progenitor cellular states confirmed the biological significance of developmental trajectories predicted by dpath, and the results also suggested that the predicted pseudotime was more accurate than Monocle and Wishbone."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce dpath pipeline",
+                                "decompose expression profile matrix using wp-NMF",
+                                "define metagene basis and coefficients",
+                                "verify biological relevance of metagenes",
+                                "identify metagene signatures for endothelium, blood, and endocardium",
+                                "compare wp-NMF with other factorization tools",
+                                "introduce metagene entropy concept",
+                                "apply metagene entropy to predict differentiation state",
+                                "establish metacell landscape using SOM algorithm",
+                                "visualize lineage structures on 2D map",
+                                "identify cell clusters using PAM algorithm",
+                                "characterize cell clusters based on metagene expression",
+                                "identify T+ cells as most immature progenitors",
+                                "analyze gene expression profiles of T+ cells",
+                                "identify Sox7 and Runx1 as progenitor markers",
+                                "analyze gene expression profiles of haematopoietic and endothelial lineages",
+                                "identify endocardial/cardiac mesodermal genes",
+                                "analyze expression of Cgnl1 and Dok4 in C2 population",
+                                "verify predictions from metacell landscape",
+                                "identify endocardial cushion progenitors",
+                                "analyze gene profile changes between C2 and C1",
+                                "confirm existence of C2 population using immunohistochemistry",
+                                "identify two waves of haematopoiesis",
+                                "analyze gene expression profiles of C5, C6, and C7",
+                                "identify Runx1 and Gata1 as haematopoietic markers",
+                                "analyze gene expression profiles of C4",
+                                "identify C4 as haemogenic endothelial lineage",
+                                "analyze endothelial differentiation",
+                                "identify pathways for haematoendothelial bifurcation",
+                                "identify upregulated genes in progenitor clusters",
+                                "enrich KEGG pathways in upregulated genes",
+                                "identify SHH pathway as key regulator",
+                                "verify role of SHH pathway in haemato-endothelial differentiation",
+                                "analyze effects of SHH agonist and antagonist",
+                                "discover trajectory from progenitor to committed state",
+                                "build heterogeneous metacell-metagene probability graph",
+                                "apply RWR algorithm to infer progenitor and committed states",
+                                "determine developmental trajectories on SOM",
+                                "verify biological relevance of inferred progenitor and committed states",
+                                "analyze gene expression profiles along developmental trajectories",
+                                "compare dpath with other pseudotime inference algorithms",
+                                "evaluate accuracy of inferred pseudotime"
+                            ],
+                            "num_characters": 21454,
+                            "outline_medium": [
+                                "introduce dpath pipeline",
+                                "decompose expression profile matrix using wp-NMF",
+                                "motivate use of non-negativity constraints",
+                                "describe simulation study",
+                                "apply wp-NMF to Etv2-EYFP cells",
+                                "analyze metagene basis and coefficients",
+                                "verify biological relevance of metagenes",
+                                "identify metagene signatures for endothelium, blood, and endocardium",
+                                "compare performance of wp-NMF with other methods",
+                                "introduce concept of metagene entropy",
+                                "apply metagene entropy to Etv2+ cells",
+                                "establish metacell landscape using SOM algorithm",
+                                "analyze metacell landscape for Etv2 derivatives",
+                                "identify progenitor and committed cells using dpath",
+                                "verify predictions from metacell landscape",
+                                "identify endocardial cushion progenitors",
+                                "identify two waves of haematopoiesis",
+                                "analyze endothelial differentiation",
+                                "identify pathways for haematoendothelial bifurcation",
+                                "discover trajectory from progenitor to committed state",
+                                "verify biological relevance of inferred progenitor and committed states"
+                            ],
+                            "outline_short": [
+                                "introduce dpath pipeline for single-cell RNA-seq analysis",
+                                "decompose expression profile matrix using wp-NMF",
+                                "map cells into metacells using SOM algorithm",
+                                "prioritize cells with respect to specific cellular states using RWR algorithm",
+                                "rank genes for cellular states according to their expression profile",
+                                "identify progenitor and committed cells using metagene entropy",
+                                "establish metacell landscape for Etv2 derivatives",
+                                "biologically verify dpath pipeline output",
+                                "identify endocardial cushion progenitors and two waves of haematopoiesis",
+                                "discover trajectory from progenitor to committed state"
+                            ]
+                        },
+                        {
+                            "title": "DISCUSSION",
+                            "paragraphs": [
+                                "Herein is described the use of the dpath pipeline to decompose single-cell RNA-seq data with the awareness of dropout events. Three major technical breakthroughs are provided to the single-cell analysis technology that includes: (1) a method to fill in dropout events; (2) a method to rank the differentiation potential using the metagene entropy, and (3) a method to visualize the differentiation paths on a 2D map. This method was used to prioritize committed and progenitor states for haematopoietic, endocardial and endothelial lineages obtained from 281 Etv2+ cells and ranked genes for distinct cellular states, especially for progenitor endothelial and haematopoietic states.",
+                                "The first unique feature of dpath is applying wp-NMF for decomposing single-cell RNA-seq data. The use of the weighted Poisson model as the cost function reduced the impact of dropout events on matrix decomposition by maximizing the usage of informative genes that have a high probability of being expressed. The other advantage of NMF-based matrix decomposition method, compared with PCA, is that NMF yields a sparse parts-based representation of gene expression profiles (31). Just as NMF is able to distinguish different meanings of words used in different contexts, metagene basis and coefficients can overlap and thus expose the participation of a single gene in multiple pathways and account for the activity of multiple pathways in a single cell. As a result of the parts-based representation, the metagene entropy, the entropy of metagene coefficients after proper scaling, serves as a measure of how many distinct programmes (parts) are active (expressed) in a cell. A cell with high metagene entropy implies that multiple programmes (represented by metagene basis) participate in the cellular activity, leading to a high uncertainty with respect to the lineage commitment and thus high level of cellular plasticity (59). dpath was applied to publicly available single-cell data sets and a head-to-head comparison was undertaken with conventional programs. It was demonstrated the superiority of dpath as it accurately predicted differentiation states and had higher resolution than previously published methods. Although entropy has been described as a potential measure for the uncertainty concerning the cellular state, this is the first study to establish an entropy-based method to measure the multipotency in the context of single-cell expression analysis (42).",
+                                "Another unique feature of our new package dpath is that it represents the cellular states on a 2D SOM where metacells with similar metagene expression profiles are grouped together. This not only provides an intuitive way to visualize the distribution of cellular states from the input cells but also reduces the impact of dominant lineages in the analysis. Another feature of this method is that one metacell is allowed to have multiple parental states, and globally, there can be multiple progenitor states that can give rise to individual committed states. This provides additional flexibility of modelling lineage hierarchies than organizing cells into a lineage tree-like structure where all individual committed states originate from one single cell, because single-cell transcriptome analysis represents a snapshot of cells present at experimental time points (E7.25, E7.75 or E8.25, in this case), and any given cell is unlikely to be a descendant of similar cells present at the same time. Therefore, SOM reflects continuous differentiation paths of multiple cells that are asynchronously differentiating towards the same differentiated state.",
+                                "To further examine the dpath algorithm, a subpopulation of the Etv2-expressing cells were interrogated during murine embryogenesis. The high entropy progenitor cells of the haematopoietic and the endothelial lineages that we have identified are of intense interest, with respect to lineage specification. At E7.25 (early streak), E7.75 (late streak-late allantoic bud stage (60)) and E8.25 (linear heart loop stage), Etv2-EYFP+ cells are present in endothelial cells and primitive erythrocytes of the yolk sac blood islands (extraembryonic) and embryonic blood vessels, including dorsal aortae, endocardium and migrating angioblasts (14). Moreover, previous studies are consistent with the notion that prior to gastrulation epiblast cells are largely unspecified, and the signals they encounter as they ingress through the primitive streak specifies their fate (60, 61). New mesodermal cells emerging from the streak are still plastic but commit quickly to specific lineages based on the signals they received in the primitive streak. Differential enrichment of multiple signalling pathways in haematopoietic and endothelial metacells indicate that these are candidates that cells encounter as they pass through the primitive streak. In the present study, dpath was used to successfully identify the dynamic expression pattern of the members of SHH signalling pathway and experimentally verify its critical roles in haemato-endothelial lineage differentiation. It is recognized that the number of profiled cells was relatively small compared with the total population of Etv2+ cells in vivo, especially for the later time point E8.25. Although the major developmental trajectories were successfully identified within the Etv2+ cells, addition of more single cells will reveal further subpopulations within committed endothelial, endocardial and haematopoietic lineages.",
+                                "In summary, using the dpath pipeline, single-cell RNA seq data was clustered without using previously known information, which was then verified by gene expression analysis and functional analysis. The expression patterns of known genes and calculated metagene entropy were consistent with known differentiation pathways of haematopoietic and endothelial cells. The data are significant in multiple ways. First, the full transcriptome of individual Etv2+ cells was provided, which was not available previously. This is important as many genes are commonly expressed in haematopoietic and endothelial lineages. Cell surface markers commonly used to distinguish them from each other or their progenitors are not highly specific. The transcriptome of single cells was analyzed and that provides information for identifying novel markers of these cell populations to improve the purity of populations for transcriptome and functional analyses. Second, differentiation paths from progenitors to more mature cells were identified using the novel concept of metagene entropy. The gene expression observations within the SOM differentiation paths validate the method and attests that this concept is an excellent approximation of the differentiation process. We predict that this method will be able to reconstruct differentiation pathways with any data set, including different populations and broader, heterogeneous data sets. Third, pathway enrichment analysis based on the results identified signaling pathways and molecules that were not previously identified as well as those that have been previously identified. The dpath pipeline is provided in a downloadable R package. This is a tool to extract meaningful information from exponential amounts of RNA-seq data produced daily."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce dpath pipeline for single-cell RNA-seq data analysis",
+                                "describe three major technical breakthroughs",
+                                "motivate wp-NMF for matrix decomposition",
+                                "explain advantages of NMF over PCA",
+                                "define metagene entropy as a measure of cellular plasticity",
+                                "compare dpath with conventional programs",
+                                "describe 2D SOM for visualizing cellular states",
+                                "explain flexibility of modelling lineage hierarchies",
+                                "introduce subpopulation of Etv2-expressing cells for analysis",
+                                "describe high entropy progenitor cells of haematopoietic and endothelial lineages",
+                                "discuss signals specifying cell fate during gastrulation",
+                                "identify dynamic expression pattern of SHH signalling pathway",
+                                "summarize significance of dpath pipeline",
+                                "conclude with potential applications of dpath pipeline"
+                            ],
+                            "num_characters": 7264,
+                            "outline_medium": [
+                                "introduce dpath pipeline for single-cell RNA-seq data analysis",
+                                "motivate technical breakthroughs in single-cell analysis",
+                                "describe wp-NMF for matrix decomposition",
+                                "explain metagene entropy for measuring cellular plasticity",
+                                "visualize cellular states on 2D SOM",
+                                "apply dpath to Etv2-expressing cells during murine embryogenesis",
+                                "summarize significance of dpath pipeline"
+                            ],
+                            "outline_short": [
+                                "introduce dpath pipeline for single-cell RNA-seq data analysis",
+                                "describe technical breakthroughs of dpath, including dropout event filling, metagene entropy-based differentiation potential ranking, and 2D visualization of differentiation paths",
+                                "apply dpath to Etv2+ cells and discuss results, including identification of high entropy progenitor cells and reconstruction of differentiation pathways"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A machine readable medium with instructions for analyzing cellular differentiation, the instructions, when executed by processing circuitry, cause the processing circuitry to perform operations comprising:\nreceiving an expression profile matrix for a single cell RNA-seq dataset;\ndecomposing the expression profile matrix;\nquantitatively assessing the cellular state; and\nprioritizing genes for progenitor and committed cellular states.",
+        "2. The machine readable medium of claim 1, wherein decomposing the expression profile matrix includes identifying metagenes using weighted Poisson non-negative matrix factorization.",
+        "3. The machine readable medium of claim 1, wherein an expected gene expression level is modeled as a linear combination of non-negative metagene basis and coefficients.",
+        "4. The machine readable medium of claim 1, wherein an observed gene expression level is modeled as a mixture of Poisson distribution of expected expression level and a dropout event represented by a low-magnitude Poisson process.",
+        "5. The machine readable medium of claim 1, wherein decomposing the expression matrix includes approximating a product of non-negative metagene basis and coefficients.",
+        "6. The machine readable medium of claim 1, wherein the metagene basis corresponds to a contribution of each gene to each metagene.",
+        "7. The machine readable medium of claim 1, wherein the metagene coefficient corresponds to a probabilistic simplex that indicates the relative weight of each metagene in each cell.",
+        "8. The machine readable medium of claim 1 further including assigning a metagene signature for an individual cell.",
+        "9. The machine readable medium of claim 1 further including mapping cells into metacells using a self-organizing map (SOM).",
+        "10. The machine readable medium of claim 1 further including ranking cells with respect to specific cellular states including:\ngenerating a heterogeneous metagene-metacell graph; and\nusing a random walk with restart process on the heterogeneous metagene-metacell graph.",
+        "11. The machine readable medium of claim 1 further including ranking genes for cellular states according to their expression profile.",
+        "12. The machine readable medium of claim 1, where prioritizing genes for progenitor and committed cellular states includes determining a measure of metagene entropy for cells.",
+        "13. The machine readable medium of claim 1 further including imposing a requirement in which the metagene expression profiles between cells in neighboring development stages are similar.",
+        "14. The machine readable medium of claim 13 includes using a self-organized map.",
+        "15. The machine readable medium of claim 14, wherein using the self-organized map includes correlating a hexagonal grid of the map with a cell expression pattern.",
+        "16. The machine readable medium of claim 15 further including clustering cells by partitioning the map.",
+        "17. The machine readable medium of claim 16 wherein a central cell of the map is correlated with an early progenitor.",
+        "18. The machine readable medium of claim 16, wherein a peripheral cell of the map is correlated with a mature cell.",
+        "19. The machine readable medium of claim 1, wherein prioritizing genes for progenitor and committed cellular states includes generating a transition matrix.",
+        "20. The machine readable medium of claim 1 including classifying a metacell as a progenitor of a neighboring metacell if the metagene entropy is higher than a derivative metacell.",
+        "21. The machine readable medium of claim 1 including using a random walk with restart (RWR) process on the heterogeneous graph to determine a probability of a metacell being in a committed state to one metagene, or being in a progenitor state with the ability to transition to multiple metagenes.",
+        "22. The machine readable medium of claim 1 including identifying a developmental trajectory based on a path length of the self-organized map."
+    ]
+}

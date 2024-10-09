@@ -1,0 +1,199 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce antimicrobial glass-ceramics
+- limitations of conventional antimicrobial glass-ceramics
+
+## SUMMARY
+
+- introduce unique glass-ceramic compositions
+- describe antimicrobial properties
+- describe machinability
+- describe color options
+- introduce material composition
+- describe phosphate glass composition
+- describe method of making product
+- introduce aspect A of innovative technology
+- describe aspect B of innovative technology
+- describe aspect C of innovative technology
+- describe aspect D of innovative technology
+- describe aspect E of innovative technology
+- introduce aspect F of innovative technology
+- describe aspect G of innovative technology
+- describe aspect H of innovative technology
+- describe aspect I of innovative technology
+- describe aspect J of innovative technology
+- describe aspect K of innovative technology
+
+## DETAILED DESCRIPTION
+
+- introduce materials in P2O5—Fe2O3—CuO ternary space
+- process materials to form glasses, glass-ceramics, and ceramics
+- describe materials with other constituents, such as contaminants or additives
+- define phosphate glasses with P2O5 as glass-forming substrate
+- describe materials with crystalline or amorphous structure
+- describe materials with dense or porous structure
+- specify mol % ranges for P2O5, Fe2O3, and CuO constituents
+- describe phosphorus presence in materials by x-ray diffraction
+- clarify mol % ranges as batch constituents
+- describe Fe2O3 presence in materials by x-ray diffraction
+- specify mol % ranges for Fe2O3
+- describe CuO presence in materials by x-ray diffraction
+- specify mol % ranges for CuO
+- describe materials as mostly ternary
+- define antimicrobial properties of materials
+- describe kill rates of materials
+- specify testing conditions for bactericidal efficacy
+- describe test material preparation and testing procedure
+- describe calculation of log and percentage reductions
+- summarize results of bactericidal efficacy tests
+- describe microstructure of glass-ceramic material BHB
+- describe microstructure of single-phase glass BHE
+- compare BHB and BHE microstructures
+- describe x-ray diffraction measurements of BHB and BHE
+- summarize compositions of phosphate glass-ceramics and phase-separated phosphate glasses
+- introduce amorphous glass
+- compare to BHB
+- motivate antimicrobial properties
+- describe phase separation of BHB
+- describe phase separation of BHE
+- present Table 1
+- describe color coordinates
+- present Table 1A
+- describe copper and iron oxidation state distributions
+- describe R value
+- describe optional constituents
+- describe P2O5—Fe2O3—CuO—SiO2 system
+- describe processing of P2O5—Fe2O3—CuO—SiO2 system
+- describe properties of P2O5—Fe2O3—CuO—SiO2 system
+- describe SiO2 content
+- describe advantages of SiO2
+- present Table 2
+- describe log kill performance
+- describe SEM images of Ex2.5
+- describe x-ray diffraction of Ex2.5
+- conclude single-phase amorphous glass
+- define material composition
+- specify P2O5 and CuO amounts
+- describe sum of CuO and P2O5
+- introduce additional constituents
+- specify amounts of additional constituents
+- describe majority composition
+- characterize material as phosphate glass
+- compare SiO2 and P2O5 amounts
+- compare SiO2 and CuO amounts
+- summarize material composition
+- introduce Table 3
+- describe Table 3 compositions
+- discuss log kill performance
+- describe material microstructure
+- discuss advantages of single phase materials
+- discuss difficulties with Fe2O3
+- introduce modifier cations
+- describe substitution of Fe2O3
+- introduce alkali metal oxide modifier
+- specify amounts of alkali metal oxide
+- describe combination with SiO2
+- describe materials without SiO2
+- discuss ion-exchange strengthening
+- conclude material composition
+- describe FIGS. 13A, 13B, and 13C
+- describe material of Example F
+- describe FIGS. 14A, 14B, and 14C
+- describe material of Example G
+- describe FIGS. 15A, 15B, and 15C
+- describe material of Example H
+- describe embodiments of materials
+- describe FIGS. 8A, 8B, and 8C
+- describe material of Example A
+- describe FIGS. 9A, 9B, and 9C
+- describe material of Example B
+- describe FIGS. 10A, 10B, and 10C
+- describe material of Example C
+- describe FIGS. 11A, 11B, and 11C
+- describe material of Example D
+- describe FIGS. 16A, 16B, and 16C to 19A, 19B, and 19C
+- describe embodiments of materials
+- introduce glass compositions
+- describe antimicrobial properties
+- discuss limitations of prior art
+- motivate use of copper oxide
+- explain convention for copper oxide notation
+- discuss redox reaction of copper
+- describe desired properties of glass
+- discuss weathering and crystallization
+- introduce iron-containing oxide for durability
+- describe color mitigation
+- introduce black glass composition
+- describe advantages for architectural applications
+- introduce comparative examples
+- describe weathering test conditions
+- illustrate weathering effects
+- discuss durability and antimicrobial properties
+- introduce higher durability compositions
+- describe glass compositions in Table 5
+- discuss P2O5 and CuO concentrations
+- describe Fe2O3 concentration and durability
+- discuss monovalent copper and antimicrobial efficacy
+- describe melting temperature and copper reduction
+- discuss quartz crucible contamination
+- introduce innovative methods of producing materials
+- describe Fe2O3 concentration and devitrification
+- discuss glass structure and chemical durability
+- describe P—Fe—O bonds and weathering resistance
+- introduce Fe2+ and Fe3+ ions
+- discuss balancing copper and iron content
+- introduce BMS1 example
+- describe BMS1 composition and testing
+- illustrate BMS1 degradation
+- introduce BMS2 example
+- describe BMS2 composition and testing
+- introduce BLF example
+- describe BLF composition and testing
+- illustrate BLF degradation
+- introduce BLN example
+- describe BLN composition and testing
+- illustrate BLN degradation
+- introduce BLT example
+- describe BLT composition and testing
+- illustrate BLT degradation
+- conclude glass compositions and properties
+- describe durability of glass samples
+- illustrate log kill performance
+- discuss surface roughness effect on weathering
+- describe abrasion testing
+- discuss maximum roughness tolerance
+- describe polishing to improve color retention
+- illustrate manufacturing process
+- describe batching step
+- describe mixing step
+- describe intermediate pretreatment step
+- describe calcining treatment
+- describe heating to melting temperature
+- describe melting step
+- describe cooling step
+- describe mold preheating step
+- describe pouring into mold
+- describe cooling to room temperature
+- describe self-annealing step
+- describe polishing step
+- discuss benefits of method 100
+- describe alternative method 150
+- describe weighing step in method 150
+- describe intermediate pretreatment in method 150
+- describe melting step in method 150
+- describe pouring onto surface in method 150
+- describe quenching step in method 150
+- describe annealing step in method 150
+- describe polishing step in method 150
+- discuss benefits of method 150
+- describe glass composition
+- discuss advantages of single-phase glass
+- describe concentration ranges of P2O5, Fe2O3, and CuO
+- describe concentration range of SiO2
+- discuss architectural applications
+- discuss use as additive in paint
+- incorporate by reference other applications
+- discuss variations and modifications
+

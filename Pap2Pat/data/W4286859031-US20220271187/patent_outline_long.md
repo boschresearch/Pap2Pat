@@ -1,0 +1,171 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce nanoscale optical devices
+
+## BRIEF SUMMARY
+
+- define optical device
+- describe method of changing reflective properties
+- describe method of changing angle of reflection
+- define optical device with voltage source
+- describe operation of optical device
+
+## DETAILED DESCRIPTION
+
+- introduce programmable optical systems
+- motivate tunable components
+- describe spatial light modulator
+- introduce electrostatic gate control of excitons
+- describe atomically thin semiconductor
+- motivate strong light-matter interactions
+- describe wavefront phase profile shaping
+- introduce beam deflection and steering
+- describe limitations of conventional optical devices
+- motivate flat optics
+- describe steep gradients in phase, amplitude, or polarization
+- introduce tuning mechanisms
+- describe optically and thermally induced phase transitions
+- describe magnetically tuned transparency
+- describe micro-electrical mechanical systems (MEMS) technology
+- motivate full electrical control
+- describe global ionic gating
+- describe field effect
+- introduce continuously tunable, atomically thin optical device
+- describe phase profile modulation in field-effect transistors
+- introduce exfoliated monolayer MoSe2
+- describe exciton resonance
+- describe graphene gates
+- illustrate continuously tunable phase patterning
+- describe spatial control of exciton resonance
+- introduce spatial light modulator structure
+- describe semiconductor layer and insulating layers
+- describe gate electrodes
+- describe additional electrode
+- illustrate split-gate geometry
+- describe independent electrostatic doping
+- describe phase discontinuity and constructive interference
+- illustrate reflection spectrum and phase extraction
+- describe gate dependence of resonance wavelengths
+- describe phase difference and beam steering
+- illustrate Fourier images of reflected beam
+- describe two-dimensional beam steering
+- illustrate beam deflection tracing out "PHYSICS"
+- introduce device region
+- utilize bilayer MoSe2
+- show Fourier images
+- plot center-of-mass deflections
+- demonstrate two-dimensional steering capability
+- illustrate high-frequency beam steering
+- show oscillations of center-of-mass deflection
+- collect reflection at different voltages
+- measure photon count oscillations
+- investigate temporal response
+- apply oscillating bottom gate voltage
+- measure beam deflection
+- examine practical aspects
+- demonstrate beam steering at different temperatures
+- show deflection range
+- discuss potential applications
+- describe atomically thin optical elements
+- discuss active metasurfaces
+- leverage chiral selection rules
+- achieve polarization patterning
+- discuss nonlinear and quantum optical effects
+- describe device fabrication
+- assemble mechanically exfoliated flakes
+- define platinum contacts
+- deposit extended electrical contacts
+- describe experimental method
+- perform electrostatic gating
+- use avalanche photodetector
+- extract phase through spectrum fitting
+- model beam deflection
+- compute reflected intensity
+- introduce background subtraction theory
+- motivate physical interpretation of background-subtracted results
+- define background reflection spectrum
+- derive reflection profile equation
+- calculate background-subtracted intensity
+- define center-of-mass deflection for background-subtracted signal
+- evaluate expression analytically
+- discuss limitations of raw signal deflection
+- show numerically calculated center-of-mass deflections
+- compare background-subtracted deflection to raw deflection
+- discuss importance of background-subtracted deflection
+- clarify misconception about background-subtracted signal
+- introduce high-frequency transmission characterization
+- describe Vector Network Analyzer measurement
+- discuss impact of external cabling on transmission
+- introduce temperature dependence
+- show reflection spectra at different temperatures
+- discuss changes in exciton resonance with temperature
+- show beam deflection range at different temperatures
+- discuss operation at higher temperatures
+- show deflection range of background-subtracted signal
+- discuss noise floor in background-subtracted deflection
+- introduce polarization dependence
+- show gate dependence of integrated reflection
+- show gate dependence of beam deflection
+- show scatter plots of deflections
+- discuss robustness to polarization variations
+- introduce gate edge localization
+- describe method for positioning laser beam
+- show beam steering in different locations
+- discuss inhomogeneity and deflection path width
+- refer to FIG. 5
+- refer to FIG. 6
+- refer to FIG. 7
+- refer to FIG. 8
+- refer to FIG. 9
+- describe spot size dependence
+- illustrate beam steering at other wavelengths
+- illustrate beam steering at λ0=752 nm
+- provide example of gate edge localization
+- illustrate deflection behavior away from gate edge
+- describe crossbar array for beam steering
+- describe computing node
+- describe computer system/server
+- describe system memory
+- describe bus
+- describe computer readable storage medium
+- describe program/utility
+- describe computer readable program instructions
+- describe network adapter
+- describe external devices
+- describe input/output interfaces
+- describe computer readable storage medium
+- describe electronic circuitry
+- describe flowchart illustrations
+- describe block diagrams
+- describe computer readable program instructions
+- describe article of manufacture
+- describe computer implemented process
+- describe optical device
+- describe semiconductor layer
+- describe first electrode
+- describe first insulating layer
+- describe second insulating layer
+- describe first group of gate electrodes
+- describe second group of gate electrodes
+- describe electrostatic field
+- describe optically transparent layer
+- describe semiconductor having electrostatic doping level-dependent resonance wavelength
+- describe transition metal dichalcogenide (TMD)
+- describe TMD selected from MoSe2, WSe2, MoS2, or WS2
+- describe first and second insulating layers
+- describe atomically flat insulating layers
+- describe electrodes
+- describe rectangular grid
+- describe TMD, insulating layers, and electrodes
+- describe atomically thin semiconductor layer
+- describe method of changing reflective properties
+- describe method of changing angle of reflection
+- describe time-variable voltage
+- describe periodic voltage
+- describe optical device with voltage source and computing node
+- describe computing node
+- describe voltage source
+- describe scope and spirit of embodiments
+

@@ -1,0 +1,298 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- define technical field
+
+## BACKGROUND ART
+
+- introduce gastrointestinal disorders
+- describe diabetic enteropathy
+- discuss intestinal homeostasis
+- introduce colonic stem cells
+- describe CoSC niche
+- discuss treatment of gastrointestinal disorders
+- discuss diagnosis of gastrointestinal disorders
+- summarize WO 2011133886
+- summarize WO2007024715
+- summarize WO0187238
+- summarize WO 2014089262
+- summarize U.S. Pat. No. 6,066,464
+- summarize WO2013152989
+- summarize WO0153837
+- discuss type 1 diabetes
+
+## SUMMARY OF THE INVENTION
+
+- hypothesize hormonal dyad controls CoSCs
+- introduce long-standing T1D and DE
+- describe altered CoSCs and mini-gut growth
+- identify IGFBP3 as a key factor
+- describe IGFBP3's effect on CoSCs and mini-gut growth
+- introduce ecto-TMEM219 recombinant protein
+- describe ecto-TMEM219's effect on IGFBP3
+- report data on IGFBP3 release in T1D and T2D
+- describe TMEM219 expression on beta cells
+- describe IGFBP3's toxic effect on beta cells
+- introduce ecto-TMEM219 as a potential therapy
+- describe ecto-TMEM219's effect on beta cell loss
+- describe advantages over prior art treatments
+- introduce inhibitor of IGFBP3/TMEM219 axis
+- describe types of inhibitors
+- describe preferred inhibitors
+- introduce pharmaceutical composition
+- describe therapeutic agents
+- introduce method to identify subjects at risk
+- describe measuring IGFBP3 levels
+- introduce kit for measuring IGFBP3 levels
+- describe inhibiting IGFBP3/TMEM219 axis
+- describe blocking IGFBP3 binding to TMEM219
+- describe blocking IGFBP3-binding site on TMEM219
+- describe inhibiting TMEM219 function and/or expression
+- introduce soluble Ecto-TMEM219
+- describe fusion protein TMEM219-Ig
+- describe anti-IGFBP3 antibody
+- describe anti-TMEM219 antibody
+- describe oligonucleotides complementary to IGFBP3 mRNA
+- describe patient population for treatment
+- describe measuring IGFBP3 expression
+- describe measuring IGFBP3 function
+- describe inhibiting IGFBP3-TMEM219 interaction
+- describe fragment of TMEM219
+- describe preferred embodiments of the invention
+- define pharmaceutical compositions
+- describe control amount and control means
+- outline diagnosis method
+- describe kit components
+- explain proper control samples
+- describe monitoring disease progression
+- describe monitoring treatment efficacy
+- define measuring amount
+- describe direct and indirect measurements
+- outline methods for measuring mRNA and DNA
+- interpret measurement results
+- define protein IGFBP3 and gene IGFBP3
+- describe functional mutants
+- describe modifications to increase bioavailability
+- outline microcapsule preparation methods
+- describe colloidal drug delivery systems
+- outline sustained-release preparations
+- describe stabilization strategies
+- define functional
+- define analogue
+- define derivative
+- define fragments
+- define effective amount
+- outline dosage considerations
+- describe administration methods
+- outline delivery vehicles
+- describe viral vectors
+- outline gene transfer techniques
+- describe composition forms
+- outline carrier options
+- describe recombinant expression vectors
+- outline regulatory sequences
+- describe marker genes
+- outline promoter options
+- describe expression vector design
+- outline processing techniques
+- describe administration with other therapeutic agents
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+### Example 1
+
+- enroll patients with T1D+ESRD
+- match patients with healthy subjects
+- assess gastrointestinal symptoms
+- identify CoSCs on colonic purified crypts
+- evaluate CoSCs self-renewal properties
+- detect circulating factors regulating CoSCs
+- test candidate factors in mini-gut assay
+- describe study design and patients
+- match patients for age, gender, and duration of T1D
+- describe treatment of patients
+- follow up patients for 8 years
+- evaluate transplantation and immunosuppression
+- obtain organs for transplantation
+- maintain immunosuppression
+- evaluate gastrointestinal symptoms using GSRS
+- describe GSRS questionnaire
+- perform anorectal manometry
+- evaluate anorectal manometry data
+- perform pathology, immunohistochemistry, and electron microscopy
+- evaluate intestinal mucosal samples
+- perform immunohistochemistry
+- evaluate immunohistochemistry data
+- perform electron microscopy
+- evaluate electron microscopy data
+- perform immunofluorescence
+- evaluate immunofluorescence data
+- perform in situ hybridization
+- evaluate in situ hybridization data
+- characterize CoSCs
+- purify and culture colonic crypts
+- determine CoSC markers expression
+- sort EphB2+ cells
+- detect hTERT expression
+- generate mini-guts
+- create hyperglycemic conditions
+- mimic uremic conditions
+- examine morphology and marker expression
+- use caspase inhibitors
+- culture isolated crypts
+- assess EphB2+ cells properties
+- perform immunoblotting
+- extract total proteins
+- perform live imaging
+- analyze morphology
+- perform transcriptome profiling
+- perform qRT-PCR analysis
+- perform ELISA assay
+- use recombinant proteins
+- generate recombinant human ecto TMEM219
+- isolate crypts
+- add ecto-TMEM219 to culture
+- assess caspase 8 and 9 expression
+- assess CoSCSC signature markers expression
+- assess number of developed mini-guts
+- perform small RNA interference
+- analyze gene silencing
+- perform proteomic analysis
+- deplete highly abundant proteins
+- analyze total protein concentration
+- perform in-solution digestion
+- separate peptides
+- perform mass spectrometry analysis
+- search UniProt_Human Complete Proteome
+- quantify proteins
+- select candidate proteins
+- evaluate altered factors
+- test proteins in mini-gut assay
+- perform animal studies
+- render mice diabetic
+- assess diabetic enteropathy
+- isolate colonic stem cells
+- perform RT-PCR studies
+- analyze plasma and serum
+- perform statistical analysis
+- present results
+- characterize intestinal morphology and function
+- assess anorectal sphincter function
+- analyze intestinal mucosa
+- assess epithelial cell proliferation
+- analyze CoSC signature genes
+- generate mini-guts in vitro
+- analyze serum unbiased proteomic profiling
+- analyze peripheral IGFBP3 and IGF-I control CoSCs
+- introduce IGF-I/IGFBP3 dyad
+- test effect on mini-guts
+- test effect on single cell-derived mini-guts
+- analyze effect on pathways controlling CoSCs
+- analyze effect on apoptotic pathways
+- analyze effect on caspase-mediated effect
+- analyze effect on oxidative stress target genes
+- test effect in preclinical model of DE
+- analyze effect on crypt numbers and morphology
+- analyze effect on Aldh+ cells
+- analyze effect on serum levels of IGFBP3 and IGF-I
+- analyze effect on CoSCs loss and weight decrease
+- analyze effect on expression of Caspase 8 and 9
+- analyze effect of IGF-I administration
+- analyze effect of SPK on clinical and morphological features of DE
+- analyze effect of SPK on intestinal mucosa morphology
+- analyze effect of SPK on local self-renewal properties
+- analyze effect of SPK on CoSCs
+- analyze effect of SPK on circulating IGF-I and IGFBP3
+- analyze effect of ecto-TMEM219 on IGFBP3-mediated mini-gut destruction
+- analyze effect of ecto-TMEM219 on CoSCs in vitro
+- analyze effect of ecto-TMEM219 on mucosa morphology in vivo
+- analyze effect of ecto-TMEM219 on body weight and CoSCs in vivo
+- analyze effect of ecto-TMEM219 on caspase 8 and 9 expression
+- analyze effect of ecto-TMEM219 on circulating IGFBP3 levels
+- discuss diabetic enteropathy and its complications
+- discuss inventors' findings and implications for therapy
+
+### Example 2
+
+- define patient population
+- describe study design
+- outline treatment of patients
+- assess IGFBP3 levels
+- perform statistical analysis
+- measure renal function and glycometabolic parameters
+- present results of IGFBP3 levels
+- correlate IGFBP3 levels with renal function
+
+### Example 3
+
+- analyze IGFBP3 levels in inflammatory bowel disease
+
+### Example 4
+
+- introduce patients and study design
+- describe serum sample collection
+- describe study population characteristics
+- outline inclusion and exclusion criteria
+- describe concomitant treatment
+- outline institutional review board approval
+- introduce pancreatic islets
+- describe islet isolation procedure
+- outline islet purification and culture
+- describe in vitro characterization of islets
+- introduce beta cell lines
+- describe beta cell line culture
+- introduce pathology and immunohistochemistry
+- describe tissue fixation and processing
+- outline immunohistochemistry protocol
+- describe antibody selection and validation
+- introduce immunofluorescence
+- describe immunofluorescence protocol
+- outline co-localization studies
+- introduce culturing conditions
+- describe islet and beta cell culture conditions
+- outline supernatant collection and analysis
+- introduce immunoblotting
+- describe protein extraction and electrophoresis
+- outline immunoblotting protocol
+- introduce ELISA assay
+- describe ELISA protocol and data analysis
+- introduce animal model
+- describe diet and treatment
+- measure glycemia and glucose tolerance
+- collect blood and tissue samples
+- analyze plasma and serum
+- perform statistical analysis
+- present results
+- profile serum proteome
+- identify IGFBP3 as potential factor
+- analyze IGFBP3 levels in individuals at risk for T1D
+- analyze IGFBP3 levels in T2D individuals
+- demonstrate IGFBP3 production by hepatocytes
+- analyze TMEM219 expression in human islets
+- analyze TMEM219 expression in murine islets
+- demonstrate IGFBP3-mediated damage to beta cells
+- demonstrate IGFBP3-mediated damage to murine islets
+- demonstrate IGFBP3-mediated damage to human islets
+- inject IGFBP3 in mice and analyze islet morphology
+- demonstrate ecto-TMEM219 prevents IGFBP3-mediated damage
+- demonstrate ecto-TMEM219 prevents IGFBP3-mediated damage in murine islets
+- demonstrate ecto-TMEM219 prevents IGFBP3-mediated damage in human islets
+- discuss T1D pathogenesis
+- discuss limitations of immunotherapeutic strategies
+- discuss discovery of novel factors involved in beta cell loss
+- discuss IGFBP3 as a mediator of beta cell loss
+- discuss potential therapeutic approaches
+- discuss ecto-TMEM219 as a therapeutic strategy
+- discuss prevention of diabetes onset
+- discuss treatment of T2D
+- discuss identification of individuals at risk for T1D and T2D
+- discuss prevention of T2D
+- discuss current therapeutic options for T2D
+- discuss potential of inhibitors of IGFBP3/TMEM219 axis
+- discuss use of ecto-TMEM219 in individuals at risk for T1D and T2D
+- discuss use of ecto-TMEM219 in early treatment of T2D
+- discuss role of inhibitors of IGFBP3/TMEM219 axis in preventing diabetes onset
+- discuss potential of ecto-TMEM219 as a therapeutic agent
+- conclude invention as a new clinical therapeutic agent
+

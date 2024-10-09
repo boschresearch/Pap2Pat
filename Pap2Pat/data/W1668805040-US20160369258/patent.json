@@ -1,0 +1,618 @@
+{
+    "id": "US20160369258",
+    "authors": [
+        "Nancy Maizels",
+        "Quy Le"
+    ],
+    "title": "RESTRICTING NUCLEAR PROTEIN TO SPECIFIC PHASES OF THE CELL CYCLE",
+    "date": "2015-03-11 00:00:00",
+    "abstract": "The present invention relates generally to mutagenesis of target genes that enhances the natural mutagenic capabilities of adaptive immune cells by providing a chimeric construct that exploits the ability of molecules such as AID to stimulate diversification and the ability of a second molecule to restrict nuclear activity of the molecules and/or protect cell viability. The invention provides a method for stimulating diversification in expressed genes, such as antibody genes, using polypeptides whose nuclear activity is restricted to specific phases of the cell cycle. This method can be coupled with selection to identify B cell clones that produce, for example, antibodies of high affinity or specificity, or for developing T cells for immunotherapy. The invention provides an improved means of developing a repertoire of variant immunoglobulins and other polypeptides.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [
+                "This application claims benefit of U.S. provisional patent application Nos. 61/951,312, filed Mar. 11, 2014, and 62/094,260, filed Dec. 19, 2014, the entire contents of each of which are incorporated by reference into this application."
+            ],
+            "subsections": [
+                {
+                    "title": "TECHNICAL FIELD OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention relates generally to constructs and methods that restrict nuclear proteins and polypeptides to specific phases of the cell cycle. One application is in mutagenesis of target genes that enhances the natural mutagenic capabilities of adaptive immune cells by stimulating the process of diversification while protecting the cells from mutagenic factors that can kill cells as they progress through the cell cycle. The invention provides a method for safely initiating mutations and other types of diversification in expressed genes, such as antibody genes. This method can be coupled with selection to identify B cell clones that produce, for example, antibodies of high affinity or specificity. The diversification process can also be used to produce optimized T cells that express chimeric antigen receptors for use in therapeutic applications. The invention thus provides a means of developing a repertoire of variant immunoglobulins and other polypeptides."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce constructs and methods for restricting nuclear proteins and polypeptides"
+                    ],
+                    "num_characters": 979,
+                    "outline_medium": [
+                        "introduce constructs and methods for restricting nuclear proteins and polypeptides"
+                    ],
+                    "outline_short": [
+                        "introduce constructs and methods for restricting nuclear proteins and polypeptides"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND OF THE INVENTION",
+                    "paragraphs": [
+                        "Antibodies are molecules that provide a key defense against infection in humans. They are used as therapeutics in treatment of a variety of diseases, from infectious disease to cancer. They are also used as diagnostic reagents in a huge variety of tests carried out daily in clinical and research laboratories.",
+                        "Antibody specificity and affinity are modified in vivo by processes of mutation, targeted to specific regions within the genes that encode antibodies. Variability in the V region primary sequence (and hence three-dimensional structure and antigen specificity) is the result of processes which alter V region sequence by causing irreversible genetic changes. These changes are programmed during B cell development, and can also be induced in the body in response to environmental signals that activate B cells. Several genetic mechanisms contribute to this variability. Two subpathways of the same mechanism lead to two different mutagenic outcomes, referred to as somatic hypermutation and gene conversion (reviewed (Maizels, 2005)). Somatic hypermutation inserts point mutations. Somatic hypermutation provides the advantage of enabling essentially any mutation to be produced, so a collection of mutated V regions has essentially sampled a large variety of possible mutations.",
+                        "Activation-induced cytosine deaminase (AID) initiates immunoglobulin (Ig) gene diversification in activated B cells by deaminating C to U (1, 2). This triggers error-prone repair leading to somatic hypermutation (SHM), class switch recombination (CSR) and gene conversion (3-8), and to the chromosomal translocations characteristic of B cell malignancies (9, 10). AID also participates in erasing CpG methylation to reprogram the genome in early development (11-15), promotes B cell tolerance (16, 17) and limits autoimmunity (18, 19).",
+                        "AID is tightly regulated. Increased AID levels stimulate Ig gene diversification, and also promote translocation (20-23). The AID active site is not optimized for catalysis, but mutations that increase catalytic activity not only accelerate Ig gene diversification but also stimulate translocation and compromise cell viability (24). AID deaminates single-stranded DNA, but not RNA (25-30). AID localizes predominately to the cytoplasm but requires access to the nucleus to function, and subcellular localization is regulated by other proteins (7). AID persistence in the nucleus is limited by proteosomal degradation (31, 32) and by CRM1-dependent nuclear export (33-35). Mutation or deletion of the C-terminal region that includes the nuclear export signal (NES) diminishes AID stability and the efficiency of CSR, and compromises cell viability (36-38). There remains a need for improved methods of stimulating gene diversification, and for methods that can exploit the diversification-enhancing capabilities of AID without compromising cell viability."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce antibodies and their importance",
+                        "describe antibody specificity and affinity modification",
+                        "explain somatic hypermutation and gene conversion",
+                        "discuss activation-induced cytosine deaminase (AID) and its regulation",
+                        "highlight the need for improved methods of stimulating gene diversification"
+                    ],
+                    "num_characters": 2884,
+                    "outline_medium": [
+                        "describe importance of antibodies",
+                        "discuss limitations of current methods for antibody diversification"
+                    ],
+                    "outline_short": [
+                        "discuss antibody specificity and affinity modification"
+                    ]
+                },
+                {
+                    "title": "SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "The invention meets these needs and others by providing materials and methods for restricting nuclear activity of a polypeptide to G1 or to S-G2/M phase of the cell cycle. In one embodiment, the method comprises restricting expression of an enzyme to G1 or to S-G2/M phase of the cell cycle in a host cell. In one embodiment, the enzyme whose expression or nuclear activity is restricted is an enzyme that modifies the sequence and/or structure of a nucleic acid. In one embodiment, the enzyme is AID. In another embodiment, the AID is a catalytically inactive derivative of AID. One example of a catalytically inactive variant of AID is AID H56A. Thus, a representative example of a fusion construct is one that encodes AIDH56A,F193A-CDT1. In another embodiment, the enzyme is CRISPR/Cas9 or CRISPR/Cas9D10A.",
+                        "In one embodiment, the method comprises transfecting a host cell with a fusion construct comprising a nucleotide sequence that expresses the polypeptide fused to a nucleotide sequence that expresses CDT1 or geminin (GEM), wherein a fusion construct expressing CDT1 restricts expression of the enzyme to G1 and a fusion construct expressing GEM restricts expression of the enzyme to S/G2-M phase (Sakaue-Sawano et al. 2008. Cell 132:487).",
+                        "Additional variations for restricting expression to particular phases of the cell cycle are contemplated. For example, fragments from RAG2 (Li et al. 1996. Immunity 5: 575) for G1 restriction; and Cyclins can be used for cell cycle restricted expression. In some embodiments, the nucleotide sequence that expresses CDT1 or GEM is positioned downstream of the nucleotide sequence that expresses the polypeptide whose nuclear activity is to be restricted.",
+                        "The invention additionally provides a method of diversification of target sequences while protecting cell viability. The invention provides a cell, which in one embodiment is a lymphocyte, such as a B cell or T cell, modified to enhance diversification of a target gene. The cell comprises a construct as described herein and a target gene of interest. The B cell can be a chicken DT40 B cell or other vertebrate B cell, with a human B cell or a chicken DT40 B cell containing humanized immunoglobulin (Ig) genes (in which human IgH and IgL replace chicken IgH and IgL) preferred for some embodiments.",
+                        "In one embodiment, the invention provides a nucleic acid construct that expresses a fusion of nuclear export deficient enzyme that initiates or enhances diversification and a polypeptide targeted for cell cycle-dependent nuclear destruction (a \u201cfusion construct\u201d). One representative example of an enzyme that initiates or enhances diversification is a deaminase. Deamination accelerates mutagenesis. In one embodiment, the construct comprises a first nucleotide sequence that expresses activation-induced cytosine deaminase (AID), wherein the AID is modified to prevent nuclear export; and a second nucleotide sequence that expresses chromatin licensing and DNA replication factor 1 (CDT1) or another polypeptide targeted for cell cycle-dependent nuclear destruction, wherein the second nucleotide sequence is operably linked to and downstream of the first nucleotide sequence. AID is a B cell-specific DNA deaminase that initiates Ig gene diversification.",
+                        "Mutants that promote AID accumulation in the nucleus include, but are not limited to: AIDF198A (McBride et al. 2004. J Exp Med 199:1235); AID196X and other C-terminal deletion mutants that remove the nuclear export signal (see, e.g., Ito et al. 2004. PNAS 101: 1975); AIDF193A, F193E, F193H, L196A (Geisberger et al. 2009. PNAS 106:6736); and L198S (Patenaude et al. 2009, NSMB 16:17).",
+                        "Fragments of other proteins that are targeted for nuclear destruction in specific phases of cell cycle can function analogously to the CDT1 tag (Sakaue-Sawano et al. 2008. Cell 132:487) that is exemplified herein to target proteolysis to a fusion protein. These include but are not limited to fragments from: Geminin (Sakaue-Sawano et al. 2008. Cell 132:487): S/G2-M restriction; RAG2 (Li et al. 1996. Immunity 5: 575): G1 restriction; and Cyclins.",
+                        "The invention provides an adaptive immune cell, such as a B cell or a T cell. A typical example of a B cell for use in the invention is a Ramos human B cell. The B cell can be a human B cell, or a chicken B cell such as DT40, or other vertebrate B cell, or a B cell that has been humanized by replacement of endogenous IgH and IgL genes with human IgH and IgL genes. A typical example of a T cell for use with the invention is a chimeric antigen receptor (CAR) T cell. Candidate lymphocytes for use in the invention are those which can benefit from modulation of the affinity and/or specificity of the cell for its target.",
+                        "The lymphocyte can be from any vertebrate species. In a typical embodiment, the lymphocyte is from a mammalian or avian species, and in one embodiment, the lymphocyte is a human B cell or human T cell. Other (non-lymphocyte) host cells are suitable for use with the invention as well. In one embodiment, the invention provides a yeast or bacterial cell transfected with the nucleic acid construct.",
+                        "Typically, the target gene comprises a promoter and a coding region. The coding region of the target gene in the lymphocyte of the invention can be one that encodes any protein or peptide of interest, and need not comprise a complete coding region. In some embodiments, a particular region or domain is targeted for diversification, and the coding region may optionally encode only a portion that includes the region or domain of interest.",
+                        "In one embodiment, the target gene comprises an immunoglobulin (Ig) gene, wherein the Ig gene comprises an Ig gene enhancer and coding region. The Ig gene can be all or part of an IgL and/or IgH gene. The coding region can be native to the Ig gene, or a heterologous gene. In some embodiments, the target gene is or contains a non-Ig target domain for diversification, as well as domains permitting display of the gene product on the B cell surface, including a transmembrane domain and a cytoplasmic tail.",
+                        "In one embodiment, the invention provides a method of producing a repertoire of polypeptides having variant sequences of a polypeptide of interest. In one embodiment, the method comprises culturing a lymphocyte transfected with a nucleic acid construct of the invention in conditions that allow expression of the nucleic acid construct. The lymphocyte contains the coding region of the polypeptide of interest, thereby permitting diversification of the coding region. The method further comprises maintaining the culture under conditions that permit proliferation of the lymphocyte until a plurality of lymphocytes and the desired repertoire is obtained. The method optionally further comprises selecting lymphocytes that express a polypeptide exhibiting desired characteristics. For example, a cell expressing an enzyme modified to metabolize an otherwise toxic compound can be selected by growth in a medium containing that compound. Alternatively, a cell that expresses a cytoplasmic fluorescent protein with enhanced fluorescence can be selected by flow for cells with higher mean fluorescent intensity than the starting population. As another example, a cell that expresses a steroid hormone receptor with higher affinity for the hormone can be selected by a fluorescence based assay for increased activity, and a cell that expresses a signaling molecule with higher affinity for a small molecule can be selected by a fluorescence-based signaling assay or other form of such assay that is not toxic to the cell. Likewise, a cell that expresses a DNA damage repair protein with increased activity can be selected for the ability to survive damage by that agent.",
+                        "In another embodiment, the invention provides a method of producing lymphocytes that produce an optimized polypeptide of interest. In one embodiment, the method comprises culturing a lymphocyte transfected with a nucleic acid construct of the invention in conditions that allow expression of the nucleic acid construct, wherein the lymphocyte contains the coding region of the polypeptide of interest, and wherein and the lymphocyte expresses the polypeptide of interest on the surface of the lymphocyte. The method further comprises selecting cells from the culture that bind a ligand that specifically binds the polypeptide of interest expressed on the lymphocyte surface; and repeating these two steps until cells are selected that have a desired affinity and/or specificity for the ligand that specifically binds the polypeptide of interest. In one embodiment, the polypeptide of interest is an Ig. In a typical embodiment, the Ig is an IgL, IgH or both.",
+                        "The invention provides a method of producing a repertoire of polypeptides having variant sequences of a polypeptide of interest via diversification of polynucleotide sequences that encode the polypeptide. The cell to be used in the method comprises both the nucleic acid construct of the invention and a nucleic acid encoding the polypeptide of interest. Typically, the method comprises culturing the cell of the invention in conditions that allow expression of the nucleic acids, wherein the target gene contains the coding region of the polypeptide of interest, thereby permitting diversification of the coding region. The method can further comprise maintaining the culture under conditions that permit proliferation of the cell until a plurality of variant polypeptides and the desired repertoire is obtained. The repertoire can then be used for selection of polypeptides having desired properties.",
+                        "Also provided is a kit that can be used to carry out the methods of the invention. The kit comprises a lymphocyte or other cell of the invention and one or more fusion constructs described herein. The kit further comprises one or more containers, with one or more fusion constructs stored in the containers. Each fusion construct comprises a polynucleotide that can be expressed in the cell. The kit of the invention will typically comprise the container described above and one or more other containers comprising materials desirable from a commercial and user standpoint, including buffers, diluents, filters, needles, syringes, and package inserts with instructions for use. In addition, a label can be provided on the container to indicate that the composition is used for a specific therapeutic or non-therapeutic application, and can also indicate directions for use. Directions and or other information can also be included on an insert which is included with the kit."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce materials and methods for restricting nuclear activity of a polypeptide",
+                        "describe restricting expression of an enzyme to G1 or S-G2/M phase",
+                        "specify AID as an example of an enzyme",
+                        "introduce catalytically inactive derivatives of AID",
+                        "describe fusion constructs with CDT1 or geminin (GEM)",
+                        "explain restricting expression to particular phases of the cell cycle",
+                        "introduce fragments from RAG2 and Cyclins for cell cycle restricted expression",
+                        "describe positioning of nucleotide sequences",
+                        "introduce method of diversification of target sequences while protecting cell viability",
+                        "describe modified B cells or T cells",
+                        "introduce nucleic acid construct with fusion of nuclear export deficient enzyme",
+                        "specify deaminase as an enzyme that initiates or enhances diversification",
+                        "describe AID modified to prevent nuclear export",
+                        "introduce mutants that promote AID accumulation in the nucleus",
+                        "describe fragments from other proteins targeted for nuclear destruction",
+                        "introduce adaptive immune cells, such as B cells or T cells",
+                        "specify lymphocytes for use in the invention",
+                        "describe target gene with promoter and coding region",
+                        "introduce immunoglobulin (Ig) gene as a target gene",
+                        "describe method of producing a repertoire of polypeptides",
+                        "introduce kit for carrying out the methods of the invention"
+                    ],
+                    "num_characters": 10582,
+                    "outline_medium": [
+                        "introduce method for restricting nuclear activity of polypeptide",
+                        "describe fusion construct for restricting expression to G1 or S-G2/M phase",
+                        "provide examples of enzymes for use in fusion construct",
+                        "describe method for diversification of target sequences while protecting cell viability",
+                        "introduce cell modified to enhance diversification of target gene",
+                        "describe nucleic acid construct for expressing fusion of nuclear export deficient enzyme",
+                        "provide examples of mutants that promote AID accumulation in nucleus",
+                        "describe fragments of other proteins for targeting nuclear destruction",
+                        "introduce adaptive immune cell for use in invention",
+                        "describe method of producing repertoire of polypeptides having variant sequences"
+                    ],
+                    "outline_short": [
+                        "restrict nuclear activity of a polypeptide to G1 or S-G2/M phase",
+                        "provide materials and methods for stimulating gene diversification",
+                        "describe fusion constructs for restricting expression to particular phases",
+                        "provide a method of diversification of target sequences while protecting cell viability",
+                        "outline various embodiments of the invention"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "The present invention is based on the unexpected discovery that an enzyme useful for genome engineering can be regulated by fusion of its encoding gene to a protein whose expression is restricted to selected phases of the cell cycle. This allows for an improved method of mutagenesis of target genes by stimulating the process of diversification while protecting the cells from mutagenic factors that can kill cells. The invention provides a method for safely initiating mutations and other types of diversification in expressed genes, such as antibody genes. This method can be coupled with selection to identify B cell clones that produce, for example, antibodies of high affinity or specificity. The diversification process can also be used to produce T cells bearing optimized chimeric antigen receptor for use in therapeutic applications. The invention thus provides a means of developing a repertoire of variant immunoglobulins and other polypeptides."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "DEFINITIONS",
+                            "paragraphs": [
+                                "All scientific and technical terms used in this application have meanings commonly used in the art unless otherwise specified. As used in this application, the following words or phrases have the meanings specified.",
+                                "As used herein, \u201cpolypeptide\u201d includes proteins, fragments of proteins, and peptides, whether isolated from natural sources, produced by recombinant techniques or chemically synthesized. Peptides of the invention typically comprise at least about 6 amino acids.",
+                                "As used herein, a \u201cpolypeptide targeted for cell cycle-dependent nuclear destruction\u201d means a polypeptide that can target proteolysis to a fusion protein comprising this polypeptide during select phases of the cell cycle. Examples of such polypeptides include fragments of CDT1 (Sakaue-Sawano et al. 2008. Cell 132:487), Geminin (GEM; Sakaue-Sawano et al. 2008. Cell 132:487), RAG2 (Li et al. 1996. Immunity 5: 575), and Cyclins.",
+                                "As used herein, \u201cCDT1\u201d refers to chromatin licensing and DNA replication factor 1, and includes fragments of CDT1 that can be fused to another polypeptide and that target this fusion protein for degradation in the nucleus during S-G2/M phase of cell cycle.",
+                                "As used herein, \u201clymphocyte\u201d refers to adaptive immune cells, including B cells and T cells. A typical example of a B cell for use in the invention is a Ramos human B cell. A typical example of a T cell for use with the invention is a T cell bearing a chimeric antigen receptor (CAR). Candidate lymphocytes for use in the invention are those which can benefit from modulation of the affinity and/or specificity of a cell surface receptor for its target.",
+                                "As used herein, \u201cnuclear export deficient activation-induced cytosine deaminase (AID)\u201d, means a derivative of the AID protein deficient in nuclear export, such as an AID that lacks a functional nuclear export signal due to one or more mutations at the C terminus or deletion of a portion of the C terminus, including, for example, mutation or deletion of one or more amino acids within the C-terminal residues 183-198, or mutation of another region necessary to enable nuclear export. Examples of nuclear export deficient AIDs include, but are not limited to, AIDF193A, AIDF193E, AIDF193H, AIDL196A, AIDF198A, AIDF198S, AID193X or AID196X. Additional information about AID variants that are deficient in nuclear export can be found in Ito, et al., PNAS 101 (7):1975-1980, 2004; and in Patenaude et al., Nat. Struct. Mol. Biol. 16(5):517-27, 2009.",
+                                "As used herein, \u201cdiversification\u201d of a target gene means a change or mutation in sequence or structure of the target gene. Diversification includes the biological processes of somatic hypermutation, gene conversion, and class switch recombination, which can result in point mutation, templated mutation, DNA deletion and DNA insertion. The diversification factors of the invention can induce, enhance or regulate any of these methods of diversification.",
+                                "A \u201cmutation\u201d is an alteration of a polynucleotide sequence, characterized either by an alteration in one or more nucleotide bases, or by an insertion of one or more nucleotides into the sequence, or by a deletion of one or more nucleotides from the sequence, or a combination of these.",
+                                "As used herein, \u201cpromoter\u201d means a region of DNA, generally upstream (5\u2032) of a coding region, which controls at least in part the initiation and level of transcription. Reference herein to a \u201cpromoter\u201d is to be taken in its broadest context and includes the transcriptional regulatory sequences of a classical genomic gene, including a TATA box or a non-TATA box promoter, as well as additional regulatory elements (i.e., activating sequences, enhancers and silencers) that alter gene expression in response to developmental and/or environmental stimuli, or in a tissue-specific or cell-type-specific manner. A promoter is usually, but not necessarily, positioned upstream or 5\u2032, of a structural gene, the expression of which it regulates. Furthermore, the regulatory elements comprising a promoter are usually positioned within 2 kb of the start site of transcription of the gene, although they may also be many kb away. Promoters may contain additional specific regulatory elements, located more distal to the start site to further enhance expression in a cell, and/or to alter the timing or inducibility of expression of a structural gene to which it is operably connected.",
+                                "As used herein, \u201coperably connected\u201d or \u201coperably linked\u201d and the like means that the polynucleotide elements are linked in a functional relationship. For instance, a promoter or enhancer is operably linked to a coding sequence if it affects the transcription of the coding sequence. Operably linked means that the relevant nucleic acid sequences are typically contiguous and, where necessary to join two protein coding regions, contiguous and in reading frame. \u201cOperably linking\u201d a promoter to a transcribable polynucleotide means placing the transcribable polynucleotide (e.g., protein encoding polynucleotide or other transcript) under the regulatory control of a promoter, which then controls the transcription and optionally translation of that polynucleotide.",
+                                "The term \u201cnucleic acid\u201d or \u201cpolynucleotide\u201d refers to a deoxyribonucleotide or ribonucleotide polymer in either single- or double-stranded form, and unless otherwise limited, encompasses known analogs of natural nucleotides that hybridize to nucleic acids in a manner similar to naturally-occurring nucleotides.",
+                                "As used herein, \u201cprevent\u201d means to reduce, hinder, or otherwise minimize the occurrence of an event.",
+                                "As used herein, \u201ca\u201d or \u201can\u201d means at least one, unless clearly indicated otherwise."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define polypeptide",
+                                "define polypeptide targeted for cell cycle-dependent nuclear destruction",
+                                "define lymphocyte",
+                                "define nuclear export deficient activation-induced cytosine deaminase (AID)",
+                                "define diversification",
+                                "define mutation",
+                                "define promoter",
+                                "define operably connected",
+                                "define nucleic acid",
+                                "define prevent",
+                                "define a or an"
+                            ],
+                            "num_characters": 5657,
+                            "outline_medium": [
+                                "define polypeptide",
+                                "define polypeptide targeted for cell cycle-dependent nuclear destruction",
+                                "define lymphocyte",
+                                "define operably connected",
+                                "define nucleic acid"
+                            ],
+                            "outline_short": [
+                                "define polypeptide",
+                                "define other terms"
+                            ]
+                        },
+                        {
+                            "title": "Fusion Constructs",
+                            "paragraphs": [
+                                "The invention provides a nucleic acid construct that expresses a fusion of an enzyme that modifies the sequence or structure of DNA or RNA when localized to the nucleus, and a polypeptide targeted for cell cycle-dependent nuclear destruction (a \u201cfusion construct\u201d). In one embodiment, the enzyme is a nuclear export deficient enzyme that initiates or enhances diversification. One representative example of an enzyme that initiates or enhances diversification is a deaminase. Deamination accelerates mutagenesis. In one embodiment, the construct comprises a first nucleotide sequence that expresses activation-induced cytosine deaminase (AID), wherein the AID is modified to prevent nuclear export; and a second nucleotide sequence that expresses chromatin licensing and DNA replication factor 1 (CDT1) or another polypeptide targeted for cell cycle-dependent nuclear destruction, wherein the second nucleotide sequence is operably linked to and downstream of the first nucleotide sequence. AID is a B cell-specific DNA deaminase that initiates Ig gene diversification.",
+                                "Mutants that prevent AID nuclear export include, but are not limited to: AIDF198A(McBride et al. 2004. J Exp Med 199:1235); AID196X and other C-terminal deletion mutants that remove the nuclear export signal (see, e.g., Ito et al. 2004. PNAS 101: 1975); AIDF193A, F193E, F193H, L196A (Geisberger et al. 2009. PNAS 106:6736); and L198S (Patenaude et al. 2009, NSMB 16:17).",
+                                "Fragments of other proteins that are targeted for nuclear destruction in specific phases of cell cycle can function analogously to the CDT1 tag (Sakaue-Sawano et al. 2008. Cell 132:487) that is exemplified herein to target proteolysis to a fusion protein. These include but are not limited to fragments from: Geminin (Sakaue-Sawano et al. 2008. Cell 132:487): S/G2-M restriction; RAG2 (Li et al. 1996. Immunity 5: 575): G1 restriction; and Cyclins.",
+                                "AID has been fused to a variety of tags to regulate its stability or to visualize it by flow, microscopy, and western blotting. Representative examples of such tags, or fusion partners, include CDT1, GEM, mK02, mAG, GFP, mCherry and T7 tags. Fusion constructs of the invention may optionally include a tag to facilitate visualization, detection, or tracking.",
+                                "Fusion constructs may generally be prepared using standard techniques. For example, DNA sequences encoding the peptide components may be assembled separately, and ligated into an appropriate expression vector. The ligated DNA sequences are operably linked to suitable transcriptional or translational regulatory elements. The 3\u2032 end of the DNA sequence encoding one peptide component is ligated, with or without a linker, to the 5\u2032 end of a DNA sequence encoding the second peptide component so that the reading frames of the sequences are in phase. This permits translation into a single fusion protein that retains the biological activity of both component peptides. Additional fusion partners, or visualization tags, may be joined in a similar manner. Thus, a fusion construct of the invention optionally further comprises a detectable marker. In one embodiment, the detectable marker is a fluorescent protein.",
+                                "A peptide linker sequence may be employed to separate the first and the second peptide components by a distance sufficient to ensure that each peptide folds into its secondary and tertiary structures. Such a peptide linker sequence is incorporated into the fusion protein using standard techniques well known in the art. Suitable peptide linker sequences may be chosen based on the following factors: (1) their ability to adopt a flexible extended conformation; (2) their inability to adopt a secondary structure that could interact with functional regions on the first and second peptides; and (3) the lack of hydrophobic or charged residues that might react with the peptide functional regions. Preferred peptide linker sequences contain Gly, Asn and Ser residues. Other near neutral amino acids, such as Thr and Ala may also be used in the linker sequence."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce fusion construct",
+                                "describe enzyme that modifies DNA or RNA",
+                                "describe polypeptide targeted for cell cycle-dependent nuclear destruction",
+                                "describe AID as enzyme that initiates or enhances diversification",
+                                "describe mutants that prevent AID nuclear export",
+                                "describe fragments of other proteins that target nuclear destruction",
+                                "describe tags to regulate stability or visualize AID",
+                                "describe preparation of fusion constructs"
+                            ],
+                            "num_characters": 4028,
+                            "outline_medium": [
+                                "introduce fusion construct",
+                                "describe AID and CDT1 fusion",
+                                "describe other fusion partners",
+                                "describe peptide linker sequence"
+                            ],
+                            "outline_short": [
+                                "describe fusion construct for diversification",
+                                "provide examples of fusion partners"
+                            ]
+                        },
+                        {
+                            "title": "Lymphocytes and Other Host Cells",
+                            "paragraphs": [
+                                "The invention provides an adaptive immune cell, such as a B cell or a T cell. A typical example of a B cell for use in the invention is a Ramos human B cell. The B cell can be a human B cell, or a chicken B cell such as DT40, or other vertebrate B cell, or a B cell that has been humanized by replacement of endogenous IgH and IgL genes with human IgH and IgL genes. A typical example of a T cell for use with the invention is a chimeric antigen receptor (CAR) T cell. Candidate lymphocytes for use in the invention are those which can benefit from modulation of the affinity and/or specificity of the cell for its target.",
+                                "The lymphocyte can be from any vertebrate species. In a typical embodiment, the lymphocyte is from a mammalian or avian species, and in one embodiment, the lymphocyte is a human B cell or human T cell. Other (non-lymphocyte) host cells are suitable for use with the invention as well. In one embodiment, the invention provides a yeast or bacterial cell transfected with the nucleic acid construct.",
+                                "B cells are natural producers of antibodies, making them an attractive cell for production of both improved antibodies and improved non-immunoglobulin proteins and polypeptides. DT40 B cells are an effective starting point for evolving specific and high affinity antibodies by iterative cycles of hypermutation and selection (Cumbers et al., 2002; Seo et al., 2005). DT40 cells have several advantages over other vehicles tested for this purpose. DT40 constitutively diversifies its Ig genes in culture, and proliferates more rapidly than human B cell lines (10-12 hr generation time, compared to 24 hr); clonal populations can be readily isolated because cells are easily cloned by limiting dilution, without addition of special factors or feeder layers; and DT40 carries out efficient homologous gene targeting (Sale, 2004), so specific loci can be replaced at will allowing one to manipulate factors that regulate hypermutation.",
+                                "The invention provides a novel platform for generating high affinity antibodies and other optimized polypeptides. In one embodiment, the vehicle for antibody evolution is a B cell line, DT40, which naturally produces antibodies, and which has been engineered to facilitate mutagenesis. Like other B cells, DT40 expresses antibodies on the cell surface, allowing convenient clonal selection for high affinity and optimized specificity, by fluorescence or magnetic-activated cell sorting. In the DT40 cell line, hypermutation is carried out by the same pathway that has been perfected over millions of years of vertebrate evolution to Ig gene hypermutation in a physiological context. This highly conserved pathway targets mutations preferentially (though not exclusively) to the complementarity-determining regions (CDRs), the subdomains of the variable (V) regions that make contact with antigen.",
+                                "Thus far, the use of DT40 (and other cultured B cell lines) for antibody selection has been limited because the rate of hypermutation is very slow, about 0.1%-1% that of physiological hypermutation. To accelerate hypermutation, key regulatory sites and factors have been manipulated, taking advantage of our current sophisticated understanding of the molecular mechanisms of hypermutation.",
+                                "Although chicken DT40 B cells offer many advantages, in some embodiments it may be desired to use human B cells. Alternatively, one can employ humanized Ig genes with the chicken DT40 B cells. By humanizing the DT40 immunoglobulin genes, the utility of this platform for therapeutics can be broadened, as the antibodies generated in the DT40 platform could be used directly for treatment.",
+                                "There is ample documentation of the utility of humanized antibody genes, and a number of validated approaches for humanization, as reviewed recently (Waldmann and Morris, 2006; Almagro and Fransson, 2008). Humanization is effected by substitution of human Ig genes for the chicken Ig genes, and this is readily done in DT40 by taking advantage of the high efficiency of homologous gene targeting. The substitutions are designed to modify distinct parts of the heavy and light chain loci. Substitution could produce DT40 derivatives that generate entirely humanized antibodies, by swapping V(D)J and C regions; or chimeric antibodies (humanized C regions but not V regions). These replacements will not alter the adjacent cis-regulatory elements or affect their ability to accelerate hypermutation. The conserved mechanisms that promote hypermutation will target mutagenesis to the CDRs of humanized sequences. The humanized line can thus be used for accelerated development of human monoclonals in cell culture, providing a dual platform for rapid production of useful antibodies for either therapeutic or diagnostic purposes.",
+                                "In addition, one can optimize antibody effector function by C region replacement. Antibody-based immunotherapy is a powerful approach for therapy, but this approach thus far been limited in part by availability of specific antibodies with useful effector properties (Hung et al., 2008; Liu et al., 2008). The constant (C) region of an antibody determines effector function. Substitutions of either native or engineered human C regions can be made by homologous gene targeting in the DT40 vehicle to generate antibodies with desired effector function."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce adaptive immune cells",
+                                "describe B cells and T cells",
+                                "describe Ramos human B cell",
+                                "describe DT40 B cell",
+                                "describe humanized Ig genes",
+                                "describe homologous gene targeting",
+                                "describe humanized line for accelerated development of human monoclonals",
+                                "describe optimization of antibody effector function",
+                                "describe C region replacement",
+                                "describe antibody-based immunotherapy"
+                            ],
+                            "num_characters": 5313,
+                            "outline_medium": [
+                                "introduce lymphocytes",
+                                "describe B cells",
+                                "describe T cells",
+                                "describe DT40 cells",
+                                "describe humanized Ig genes"
+                            ],
+                            "outline_short": [
+                                "describe lymphocytes for use in invention",
+                                "describe other host cells for use in invention"
+                            ]
+                        },
+                        {
+                            "title": "Target Genes",
+                            "paragraphs": [
+                                "Typically, the target gene comprises a promoter and a coding region. The coding region of the target gene in the lymphocyte of the invention can be one that encodes any protein or peptide of interest, and need not comprise a complete coding region. In some embodiments, a particular region or domain is targeted for diversification, and the coding region may optionally encode only a portion that includes the region or domain of interest.",
+                                "In one embodiment, the target gene comprises an immunoglobulin (Ig) gene, wherein the Ig gene comprises an Ig gene enhancer and coding region. The Ig gene can be all or part of an IgL and/or IgH gene. The coding region can be native to the Ig gene, or a heterologous gene. In some embodiments, the target gene is or contains a non-Ig target domain for diversification, as well as domains permitting display of the gene product on the B cell surface, including a transmembrane domain and a cytoplasmic tail."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe target gene with promoter and coding region"
+                            ],
+                            "num_characters": 947,
+                            "outline_medium": [
+                                "introduce target genes"
+                            ],
+                            "outline_short": [
+                                "describe target genes for diversification"
+                            ]
+                        },
+                        {
+                            "title": "Methods and Uses of the Invention",
+                            "paragraphs": [
+                                "The invention provides a method of producing a repertoire of polypeptides having variant sequences of a polypeptide of interest. In one embodiment, the method comprises culturing a lymphocyte transfected with a nucleic acid construct of the invention in conditions that allow expression of the nucleic acid construct. The lymphocyte contains the coding region of the polypeptide of interest, thereby permitting diversification of the coding region. The method further comprises maintaining the culture under conditions that permit proliferation of the lymphocyte until a plurality of lymphocytes and the desired repertoire is obtained. In another embodiment, the invention provides a method of producing lymphocytes that produce an optimized polypeptide of interest.",
+                                "In one embodiment, the method comprises culturing a lymphocyte transfected with a nucleic acid construct of the invention in conditions that allow expression of the nucleic acid construct, wherein the lymphocyte contains the coding region of the polypeptide of interest, and wherein and the lymphocyte expresses the polypeptide of interest on the surface of the lymphocyte. The method further comprises selecting cells from the culture that bind a ligand that specifically binds the polypeptide of interest expressed on the lymphocyte surface; and repeating these two steps until cells are selected that have a desired affinity and/or specificity for the ligand that specifically binds the polypeptide of interest. In one embodiment, the polypeptide of interest is an Ig. In a typical embodiment, the Ig is an IgL, IgH or both.",
+                                "The invention provides a method of producing a repertoire of polypeptides having variant sequences of a polypeptide of interest via diversification of polynucleotide sequences that encode the polypeptide. The cell to be used in the method comprises both the nucleic acid construct of the invention and a nucleic acid encoding the polypeptide of interest. Typically, the method comprises culturing the cell of the invention in conditions that allow expression of the nucleic acids, wherein the target gene contains the coding region of the polypeptide of interest, thereby permitting diversification of the coding region. The method can further comprise maintaining the culture under conditions that permit proliferation of the cell until a plurality of variant polypeptides and the desired repertoire is obtained. The repertoire can then be used for selection of polypeptides having desired properties.",
+                                "In embodiments in which the polypeptide of interest is an Ig, such as an IgL, IgH or both, the ligand may be a polypeptide, produced by recombinant or other means, that represents an antigen. The ligand can be bound to or linked to a solid support to facilitate selection, for example, by magnetic-activated cell selection (MACS). In another example, the ligand can be bound to or linked to a fluorescent tag, to allow for or fluorescence-activated cell sorting (FACS). Those skilled in the art appreciate that other methods of labeling and selecting cells are known and can be used in this method.",
+                                "The invention also provides a vehicle for selection of T cell receptors. T cell-based immunotherapy has great potential (Blattman and Greenberg, 2004). T cell receptor specificity and affinity is governed by CDR contacts (Chlewicki et al., 2005). Selection for specificity or high affinity T cell receptors can be carried out in a DT40 vehicle, which has been modified by substitution of T cell receptors (V regions or entire genes) for the Ig loci; or directly in human T cells.",
+                                "Production of catalytic Igs is another aspect of the invention. The Ig-related methods of the invention are not simply limited to the production of Igs for binding and recognition, as the target Ig could also be used for catalysis. After development of a stable molecule that mimics the transition state of an enzymatic reaction, DT40 cells can be used to evolve an antibody that binds and stabilizes the actual chemical transition state. After identifying clones that produce an Ig capable of binding the intermediate, the system can be used again to screen for catalytic activity of Igs on the real substrate in culture. Once some activity has been demonstrated in this system, optimization of activity can proceed by further evolution of the Ig loci through mutagenesis. Thus, invention does not require animal immunization (a slow step), immortalization by hybridoma technology, and the inefficiency of later having to screen hybridomas for antibodies that demonstrate catalytic activity.",
+                                "The genomic structure at the Ig loci has evolved to promote mutagenesis of 1-1.5 kb downstream of the promoter. This system can be harnessed to mutate short regions of genes. Clonal selection based on surface protein expression can be incorporated by fusion of the region of interest to a portion of a gene expressing elements that mediate surface expression. Exemplary elements for surface expression include a signal peptide, transmembrane domain and cytoplasmic tail from a protein expressed on the B cell surface (Chou et al., 1999; Liao et al., 2001).",
+                                "The invention can also be used for the production of recognition arrays. The ability to evolve cells harboring receptors with affinities for a large spectrum of antigens allows the development of recognition arrays. Combining this technology with intracellular responses/signaling from receptor stimulation in DT40 (such as measurement of Ca2+ by aequorin (Rider et al., 2003) or use of reporter gene transcription) would create a useful biosensor. Diversified clones would be spotted into arrays or 96 well plates, and exposed to samples. Each sample would yield a \u201cfingerprint\u201d of stimulation. The arrays would permit qualitative comparisons of biological/medical, environmental, and chemical samples. Analysis need not be limited to the analysis of proteins, as is the case for comparative techniques like 2D gels, since all forms of compounds could have antigenic properties. Furthermore, the arrays would lead to the identification of components without knowledge of their presence beforehand.",
+                                "The invention additionally provides a method of restricting nuclear activity of a polypeptide to G1 or to S-G2/M phase of the cell cycle. In one embodiment, the method comprises restricting expression of an enzyme to G1 or to S-G2/M phase of the cell cycle in a host cell. In one embodiment, the enzyme whose expression or nuclear activity is restricted is AID. In one embodiment, the AID is a catalytically inactive derivative of AID. One example of a catalytically inactive variant of AID is AID H56A. Thus, a representative example of a fusion construct is one that encodes AIDH56A,F193A-CDT1. In another embodiment, the enzyme is CRISPR/Cas9 or CRISPR/Cas9D10A.",
+                                "In one embodiment, the method comprises transfecting a host cell with a fusion construct comprising a nucleotide sequence that expresses the polypeptide fused to a nucleotide sequence that expresses CDT1 or geminin (GEM), wherein a fusion construct expressing CDT1 restricts expression of the enzyme to G1 and a fusion construct expressing GEM restricts expression of the enzyme to S/G2-M phase (Sakaue-Sawano et al. 2008. Cell 132:487).",
+                                "Additional variations for restricting expression to particular phases of the cell cycle are contemplated. For example, fragments from RAG2 (Li et al. 1996. Immunity 5: 575) for G1 restriction; and Cyclins can be used for cell cycle restricted expression. In some embodiments, the nucleotide sequence that expresses CDT1 or GEM is positioned downstream of the nucleotide sequence that expresses the polypeptide whose nuclear activity is to be restricted."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce method of producing repertoire of polypeptides",
+                                "describe culturing lymphocyte with nucleic acid construct",
+                                "describe maintaining culture for proliferation",
+                                "describe selecting cells that bind ligand",
+                                "describe repeating selection steps",
+                                "describe producing optimized polypeptide of interest",
+                                "describe diversification of polynucleotide sequences",
+                                "describe culturing cell with nucleic acid construct",
+                                "describe maintaining culture for proliferation",
+                                "describe selecting cells that bind ligand",
+                                "describe producing repertoire of polypeptides",
+                                "describe vehicle for selection of T cell receptors",
+                                "describe production of catalytic Igs",
+                                "describe recognition arrays",
+                                "describe method of restricting nuclear activity of polypeptide"
+                            ],
+                            "num_characters": 7693,
+                            "outline_medium": [
+                                "introduce method of producing repertoire of polypeptides",
+                                "describe culturing lymphocytes",
+                                "describe selecting cells",
+                                "describe producing optimized polypeptides",
+                                "describe producing repertoire of polypeptides via diversification",
+                                "describe selecting T cell receptors",
+                                "describe producing recognition arrays"
+                            ],
+                            "outline_short": [
+                                "describe method for producing repertoire of variant polypeptides",
+                                "describe method for producing optimized polypeptides",
+                                "describe other uses of the invention"
+                            ]
+                        },
+                        {
+                            "title": "Kits",
+                            "paragraphs": [
+                                "For use in the methods described herein, kits are also within the scope of the invention. Such kits can comprise a carrier, package or container that is compartmentalized to receive one or more containers such as vials, tubes, and the like, each of the container(s) comprising one of the separate elements (e.g., cells, constructs) to be used in the method.",
+                                "Typically, the kit comprises a lymphocyte or other cell of the invention and one or more fusion constructs described herein. The kit further comprises one or more containers, with one or more fusion constructs stored in the containers. Each fusion construct comprises a polynucleotide that can be expressed in the cell. The kit of the invention will typically comprise the container described above and one or more other containers comprising materials desirable from a commercial and user standpoint, including buffers, diluents, filters, needles, syringes, and package inserts with instructions for use. In addition, a label can be provided on the container to indicate that the composition is used for a specific therapeutic or non-therapeutic application, and can also indicate directions for use. Directions and or other information can also be included on an insert which is included with the kit."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce kit for use in methods",
+                                "describe components of kit"
+                            ],
+                            "num_characters": 1262,
+                            "outline_medium": [
+                                "introduce kits"
+                            ],
+                            "outline_short": [
+                                "describe kits for use in methods"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "introduce invention for genome engineering"
+                    ],
+                    "num_characters": 957,
+                    "outline_medium": [
+                        "introduce invention for genome engineering"
+                    ],
+                    "outline_short": [
+                        "introduce invention for genome engineering"
+                    ]
+                },
+                {
+                    "title": "EXAMPLES",
+                    "paragraphs": [
+                        "The following examples are presented to illustrate the present invention and to assist one of ordinary skill in making and using the same. The examples are not intended in any way to otherwise limit the scope of the invention."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "Example 1",
+                            "paragraphs": [
+                                "**Cell Cycle Regulates Nuclear Stability of AID and the Cellular Response to AID**",
+                                "This example illustrates features that support the invention, namely the means by which a diversification factor like AID can be modified to persist in the nucleus and also coupled with a nuclear destruction signal to protect cell viability. AID (Activation Induced Deaminase) deaminates cytosines in DNA to initiate immunoglobulin gene diversification and to reprogram the genome in early development. This example demonstrates how the cell cycle regulates AID and the cellular response to AID. Using high content screening microscopy to quantify subcellular localization, we show that AID undergoes nuclear degradation more slowly in G1 phase than in S or G2-M phase. Using CDT1 and GEM tags to promote degradation of nuclear AID in specific phases of cell cycle, we show that elevated nuclear AID accelerates somatic hypermutation and class switch recombination. Strikingly, nuclear AID is tolerated in G1 phase but compromises cell viability in other phases of cell cycle. These results establish that cell cycle regulates subcellular localization and nuclear stability of AID, and identify an unexpected connection between spatiotemporal regulation of AID and cell viability",
+                                "AID levels are constant during cell cycle (31, 36), but several observations suggested that cell cycle may regulate AID. In DT40 chicken B cells, brief treatment with leptomycin B (LMB), an inhibitor of the CRM1-dependent nuclear export, increases nuclear AID signal in G1 phase cells (39); Pol\u03b7, which copies donor DNA in AID-initiated gene conversion, co-localizes with the diversifying Ig\u03bbR allele predominately in G1 phase (40); UNG2 removes uracils produced upon deamination by AID predominately in G1 phase (41); and RPA initially accumulates at Ig switch regions in G1 phase (42).",
+                                "We have now asked if cell cycle regulates subcellular localization, stability or physiological activity of AID. We demonstrate that nuclear degradation occurs more slowly in G1 phase than in S-G2/M phase cells, and that the presence of AID in the nucleus in G1 phase accelerates SHM and CSR. Strikingly, elevated nuclear AID is tolerated in G1 phase, but it compromises fitness in other stages of cell cycle. These results establish that cell cycle regulates both nuclear AID and the ability of cells to respond to AID.",
+                                "**Results**",
+                                "Nuclear AID is More Stable in G1 Phase than in S or G21M Phases.",
+                                "We analyzed subcellular distribution of AID in the human B cell line, Ramos, transduced with a lentiviral construct expressing human AID fused to the mCherry fluorescent protein at the C-terminus. Ramos B cells express endogenous AID and actively diversify their Ig genes, so the pathways that regulate and respond to damage by AID are intact. Cells were analyzed by high content screening (HCS) microscopy (43), a flow-based approach that automatically quantifies signals per unit area (pixels) in each compartment of each cell (FIG. 1A). Nuclear and cytoplasmic signals essentially overlapped in populations that were untreated or treated with MG132, an inhibitor of the ubiquitin-dependent 26S proteasome; while treatment with LMB or both LMB+MG132 rapidly increased nuclear signal in most cells (FIG. 1B). Quantification established that nuclear signal was unaffected by MG132 treatment; rapidly increased (1.5-fold) and then declined in response to LMB treatment; and increased (1.7-fold) and plateaued in response to treatment with both LMB+MG132 (FIG. 1C; FIG. 5, Table 1). The cytoplasmic signal was unaffected by MG132 treatment, but diminished upon treatment with LMB or LMB+MG132, paralleling the increase in nuclear signal. These results are consistent with previous reports that AID undergoes nuclear proteolysis (31, 32).",
+                                "Statistical tests were performed using two-tailed, unpaired Student's t-test, assuming unequal variances, for comparison of nuclear and cytoplasmic AID-mCherry signal and the N/C ratio between different treatment groups and between different times post treatment and untreated control in each treatment group.",
+                                "We used HCS to quantify AID-mCherry subcellular distribution in Ramos B cells in each phase of cell cycle (FIG. 1D). Treatment with MG132 had little effect on nuclear or cytoplasmic AID-mCherry signals in any phase of cell cycle. Treatment with LMB or LMB+MG132 caused the cytoplasmic signal to drop by 50% in all stages of cell cycle, evidence of the importance of nuclear export in maintaining cytoplasmic signal. Treatment with LMB caused the nuclear AID-mCherry signal to increase (0-1 hr) and then drop, while treatment with LMB+MG132 caused this signal to increase and then plateau; thus the drop in nuclear signal following treatment with LMB alone was due to proteolysis. Notably, LMB treatment caused a sharper initial increase and more gradual decrease in nuclear signal in G1 phase than S or G2/M phase cells; while LMB+MG132 treatment resulted in a significantly higher relative signal in G1 phase than S or G2/M phase cells (at 2 hr, G1 vs. S, p=1.4\u00d710\u22123; G1 vs. G2/M, p=1.8\u00d710\u22125; FIG. 1D, right, Table 2). Thus, nuclear stability of AID-mCherry is cell cycle dependent, and stability is highest in G1 phase.",
+                                "Statistical tests were performed using two-tailed, unpaired Student's t-test, assuming unequal variances, for comparison of nuclear and cytoplasmic AID-mCherry signal and the N/C ratio between G1 and S; G1 and G2/M; and S and G2/M at different times post-treatment in each treatment group.",
+                                "Comparison of the slopes of the LMB response curves between the 1 and 2 hr time points (FIG. 1D, center) suggested that degradation occurred more rapidly in S-G2/M phase than G1 phase. To quantify this, we calculated the average rate of loss of nuclear signal between 1-2 hr of treatment, as defined by the slope of the line between these time points, for 4 independent experiments (FIG. 1D; and FIG. 6). Rates of initial degradation were 1.56-fold and 1.54-fold higher in S and G2/M phases (p=0.02 and 0.03, respectively; FIG. 1E) than in G1 phase. We conclude that nuclear AID-mCherry is degraded more rapidly in S and G2/M phase than in G1 phase.",
+                                "Elevated Nuclear AID Compromises Viability of AID-mCherry-CDT1 Transductants.",
+                                "With the goal of restricting the presence of AID-mCherry in the nucleus to G1 or S/G2-M phases, we fused AID-mCherry to tags derived from the CDT1 and GEM cell cycle regulators, which target a fused protein for destruction in the nucleus in S-G2/M phase (CDT1) or G1/early S phase (GEM) (44). Control experiments confirmed that, in Ramos B cells, these tags fused to monomeric Kusabira Orange 2 (mKO2) or monomeric Azami-Green (mAG) promoted nuclear localization and conferred the predicted cell cycle regulation: signals from mKO2-CDT1 or mAG-GEM were restricted to G1 phase or late G1/S-G2/M phase, respectively (FIG. 7). Expression of AID-mCherry-CDT1 or AID-mCherry-GEM did not disrupt the cell cycle profile of Ramos B cells (FIG. 2A). However, regulation directed toward AID seemed to override some predicted effects of each tag. Flow cytometry showed that restriction of the AID-mCherry-CDT1 signal to G1 phase was incomplete (FIG. 2A), in contrast to that of mKO2-CDT1 (FIG. 7A) or of AID-mCherry-GEM (FIG. 2A). Immunofluorescence microscopy identified no nuclear signal among cells expressing AID-mCherry-GEM (FIG. 2B), in contrast to the strong nuclear signal among some (but not all) cells expressing AID-mCherry-CDT1 (FIG. 2B) or mAG-GEM (FIG. 7B). Nonetheless both the CDT1 and GEM tags did target the fusion protein for nuclear degradation during a portion of cell cycle, as predicted, as HCS analysis showed that total and cytoplasmic mCherry signals were significantly lower in AID-mCherry-CDT1 and AID-mCherry-GEM relative to AID-mCherry transductant populations (p=0; FIG. 2C, Table 3). Moreover, active nuclear export was confirmed by showing that treatment with LMB or LMB+MG132 caused a comparable increase in nuclear signal (relative to untreated cells) in AID-mCherry, AID-mCherry-CDT1 and AID-mCherry-GEM transductants (FIG. 8).",
+                                "The number of cells (N) and the mean total, cytoplasmic, and nuclear mCherry signals are tabulated for Ramos AID-mCherry, AID-mCherry-CDT1, AID-mCherry-GEM, AIDF193A-mCherry, AIDF193A-mCherry-CDT1 and AIDF193A-mCherry-GEM transductants. Nuclear signals as determined by HCS were corrected for cytoplasmic baseline (see Materials and Methods). Statistical tests were performed using two-tailed, unpaired Student's t-test, assuming unequal variances for comparisons among transductant populations.",
+                                "The nuclear localization of the AID-mCherry-CDT1 derivative could reflect more rapid nuclear import. However, while the nuclear signal and the ratio of nuclear to cytoplasmic signal (N/C) peaked more quickly in AID-mCherry-CDT1 than in AID-mCherry or AID-mCherry-GEM transductants following treatment with LMB (FIG. 8), this modest increase does not fully explain the strong nuclear signal in a significant fraction of AID-mCherry-CDT1 transductants. In addition, HCS analysis showed that while AID-mCherry-CDT1 nuclear signal was greatest in G1 phase cells, it was also evident in S phase cells. This suggested that AID-mCherry-CDT1 exported from the nucleus in G1 phase may re-enter in S phase to create a signal before it is targeted for proteolysis by the CDT1 tag. This possibility is addressed experimentally below (FIG. 4).",
+                                "HCS analysis also showed that AID-mCherry and AID-mCherry-GEM signals were exclusively cytoplasmic, independent of cell cycle (FIG. 2D, Table 4). Combined with the evidence that AID is degraded more rapidly in S and G2-M phases than in G1 phase (FIG. 1), the absence of nuclear signal in AID-mCherry-GEM transductants suggests that mechanisms targeted to the GEM tag promote its nuclear proteolysis in G1 phase, while mechanisms targeted to AID promote its proteolysis in other stages of cell cycle.",
+                                "The number of cells (N) and the mean total, cytoplasmic, and nuclear mCherry signals are tabulated for G1, S and G2/M cells in Ramos AID-mCherry, AID-mCherry-CDT1 and AID-mCherry-GEM, AIDF193A-mCherry, AIDF193A-mCherry-CDT1, AIDF193A-mCherry-GEM transductant populations. Nuclear signals as determined by HCS were corrected for cytoplasmic baseline (see Materials and Methods). Statistical tests were performed using two-tailed, unpaired Student's t-test, assuming unequal variances for comparisons among G1, S and G2/M phase cells in transductant populations.",
+                                "AID-mCherry-CDT1 Reduced Viablity and Accelerated Ig Gene Diversification.",
+                                "The distinctive spatiotemporal regulation of AID-mCherry, AID-mCherry-CDT1 and AID-mCherry-GEM allowed us to analyze the physiological consequences of nuclear AID at different stages of cell cycle. Strikingly, AID-mCherry-CDT1 transductants exhibited diminished cell viability relative to AID-mCherry or AID-mCherry-GEM transductants (FIG. 2E; FIG. 9). This suggested that nuclear AID can compromise fitness; and we show below (FIG. 4) that the effect on fitness is cell cycle dependent.",
+                                "sIgM loss frequency was 7.9% in AID-mCherry transductants, 41.1% (p=0.003) in AID-mCherry-CDT1 transductants, and 6.5% in AID-mCherry-GEM transductants (FIG. 2F; FIG. 10A). Similar results were obtained in assays of Ramos AID-mKO2-CDT1 and AID-mKO2-GEM transductants, which carry an mKO2 fluorescent tag which is degraded more rapidly than the mCherry tag (FIG. 10B, 10C). Thus, the CDT1 tag accelerated AID-initiated SHM in Ramos B cells.",
+                                "We assayed the effects of the tagged AID derivatives in a more physiological context by transducing primary murine B cells with AID-mCherry, AID-mCherry-CDT1 or AID-mCherry-GEM, and culturing in vitro with IL-4 and anti-CD40 to stimulate CSR. The mCherry signal in transduced primary B cells was too low for HCS analysis (FIG. 11A). Nonetheless, expression of the tagged derivatives had consequences parallel to those observed in Ramos B cells, as among AID-mCherry-CDT1 transductants, a significantly greater average fraction of cells switched to IgG1+(27%) than among AID-mCherry (21%; p=0.006) or AID-mCherry-GEM (18%; p=0.026) transductants (FIG. 2G; FIG. 11B). Thus, AID-mCherry-CDT1 expression accelerated both SHM in the Ramos B cell line and CSR in primary B cells.",
+                                "We sequenced IgVH regions amplified from single cells (FIG. 12) to determine mutation frequencies and spectra. AID-mCherry-CDT1 transductants accumulated more mutations and more mutations per V region than AID-mCherry transductants (p=2.4\u00d71019; FIG. 3A). Point mutations at G or C accounted for over 80% of mutations in all transductants, accompanied by a few deletions and insertions (FIG. 13), similar to other analyses of SHM in Ramos B cells and derivatives expressing AID-GFP (45-47). Accelerated SHM was further evident in diagrams of mutant lineages (FIG. 3B). There were fewer mutations at A or T in AID-mCherry-CDT1 and AID-mCherry-GEM transductants relative to AID-mCherry transductants (6.8%, 8.4% and 17.9%, respectively; FIG. 3C). An especially high fraction of transversion mutations from G to T were evident in AID-mCherry-GEM relative to AID-mCherry or AID-mCherry-CDT1 transductants (11.1%, 0% and 3.4% respectively; FIG. 3C).",
+                                "Elevated Nuclear AID is Tolerated in G1 Phase but not in S-G2/M Phase Cells.",
+                                "The presence of a nuclear AID-mCherry-CDT1 signal in both G1 and S phase cells (FIG. 2D) suggested that AID-mCherry-CDT1 that is exported from the nucleus in G1 phase can re-enter in S phase, generating a nuclear signal until it is targeted for proteolysis by the CDT1 tag. To test this, we analyzed spatiotemporal localization of derivatives carrying the well-characterized AIDF193A mutation, which prevents nuclear export, reduces protein levels and accelerates SHM (36). Flow cytometry showed that expression of AIDF193A-mCherry, AIDF193A-mCherry-CDT1 or AIDF193A-mCherry-GEM did not disrupt the cell cycle profile in Ramos B cells (FIG. 4A). Fluorescence microscopy identified clear nuclear signals in each transductant population, consistent with inhibition of nuclear export (FIG. 4B). In the AIDF193A-mCherry-CDT1 transductant population, essentially no S-G2/M phase cells exhibited mCherry signal, in contrast to AID-mCherry-CDT1 transductants (cf. FIGS. 2A and 4A; 2D and 4D). This establishes that nuclear export and re-entry is the source of the AID-mCherry-CDT1 nuclear signal.",
+                                "HCS analysis showed that total and cytoplasmic mCherry signals were significantly lower in AIDF193A-mCherry-CDT1 and AIDF193A-mCherry-GEM transductants than in AIDF193A-mCherry transductants, as predicted for tags that target the protein for nuclear degradation during a portion of cell cycle (FIG. 4C). Comparison of AID-mCherry vs. AIDF193A-mCherry and AID-mCherry-GEM vs. AIDF193-mCherry-GEM transductants showed that the F193A mutation reduced total and cytoplasmic signals several-fold or more, and greatly increased nuclear signals; while signals were reduced to a lesser extent in AID-mCherry-CDT1 relative to AIDF193-mCherry-CDT1 transductants (cf. FIGS. 2C and 4C).",
+                                "HCS documented persistent nuclear localization of AIDF193A-mCherry and AIDF193A-mCherry-GEM in all phases of cell cycle, while nuclear localization of AIDF193A-mCherry-CDT1 occurred exclusively in G1 phase (FIG. 4D). AIDF193A-mCherry and AIDF193A-mCherry-GEM transductants exhibited diminished cell viability, but AIDF193A-mCherry-CDT1 transductants proliferated robustly (FIG. 4E). We conclude that cells tolerate high levels of nuclear AID provided that it is restricted to G1 phase, but do not tolerate nuclear AID at other stages of cell cycle.",
+                                "The Ramos AIDF193A-mCherry, AIDF193A-mCherry-CDT1 and AIDF193A-mCherry-GEM transductants all exhibited greatly elevated sIgM loss rates (FIG. 4F), as previously documented for AIDF193A mutants (36). However, CSR to IgG1 was not accelerated in primary B cells expressing AID derivatives bearing the F193A mutation (FIG. 4G; FIG. 11C), as expected because CSR requires an intact AID C-terminal region (36, 37).",
+                                "AIDF193A-mCherry-CDT1 was distinguished by its ability to accelerate SHM without vastly compromising cell viability. This will make AIDF193A-mCherry-CDT1 a useful tool for accelerating mutagenesis in platforms designed to optimize evolution of antibodies and other targets.",
+                                "**Discussion**",
+                                "We have shown that cell cycle regulates AID nuclear stability and the cellular response to AID. The role of cell cycle regulation of AID-initiated mutagenesis has previously been elusive. Although total AID levels had been found to remain constant during cell cycle (31, 36), evidence that AID-initiated DNA damage occurred in G1 phase (39-42) had suggested that temporal regulation might be important. We have distinguished nuclear from total AID levels, to demonstrate that AID is degraded in the nucleus more slowly in G1 than S-G2/M phases, and that G1 phase nuclear AID accelerates SHM and CSR, without compromising cell viability. Thus, G1 phase is the sweet spot for AID-initiated mutagenesis.",
+                                "The unanticipated resilience of G1 phase cells to AID-initiated damage was especially evident in the contrast between the high viability of AIDF193A-mCherry-CDT1 transductants, in which AID is in the nucleus only in G1 phase, and the poor viability of AIDF193A-mCherry and AIDF193A-mCherry-GEM transductants, in which AID is in the nucleus outside G1 phase (FIG. 4E). Restriction of nuclear AID to G1 phase will limit the ability of AID to initiate genomic instability, by preventing access to DNA when it becomes transiently single-stranded during replication in S phase. Nonetheless, G1 phase AID will be able to access single-stranded regions within transcribed genes. Deaminated DNA (particularly within transcribed regions) may be repaired more efficiently in G1 phase than in other phases of cell cycle, reversing this initial damage caused by AID.",
+                                "The GEM tag was predicted to restrict nuclear protein to S-G2/M phase, but there was no nuclear AID-mCherry-GEM signal in any stage of cell cycle. Nuclear AID is degraded more slowly in G1 than S or G2/M phase (FIG. 1). Our results argue that the AID-mCherry-GEM fusion protein was eliminated from the nucleus in G1 phase by degradation targeted to the GEM tag, and that it was eliminated from the nucleus in S phase by degradation targeted to AID itself. AID has eight lysine targets for ubiquitination (31), and differential ubiquitination may be one source of temporal regulation.",
+                                "AIDF193A-mCherry-GEM accumulated in the nucleus during S-G2/M phase, while AID-mCherry-GEM did not (compare FIGS. 2D and 4D). This suggests that nuclear export directed to AID overrides nuclear import specified by the two NLS's in the GEM tag. We note that cell cycle may also differentially regulate nuclear export of AID in G1 and S-G2/M phases, a possibility that can be addressed in future experiments.",
+                                "The CDT1 tag destabilizes nuclear protein outside G1 phase (44) and would not be predicted to increase nuclear levels at any stage of cell cycle. Nonetheless, AID-mCherry-CDT1 nuclear signal exceeded that of AID-mCherry (FIG. 3C, D). This somewhat paradoxical result could be explained if the CDT1 tag enabled more efficient nuclear import. Consistent with this, treatment with LMB or LMB+MG132 did cause a more rapid increase in nuclear signal in AID-mCherry-CDT1 than AID-mCherry transductants (FIG. 8), but the modest difference observed is unlikely to provide a complete explanation. Alternatively, we speculate that AID may be regulated by feedback loops that determine nuclear levels in G1 phase based on the level in another compartment or stage of cell cycle. A cell that has not carried out Ig gene diversification in one cell cycle may be favored to do so in the next, in which case low levels of AID in G2/M phase may lead to elevated nuclear levels in the next G1 phase, as was evident in the AID-mCherry-CDT1 transductants (FIG. 2D).",
+                                "The CDT1 and GEM tags somewhat altered the spectrum of SHM. A reduced frequency of mutations at A and T was evident in AID-mCherry-CDT1 (6.8%) and AID-mCherry-GEM (8.4%) relative to AID-mCherry transductants (17.9%; FIG. 3). An especially high fraction of transversion mutations from G to T was evident in AID-mCherry-GEM transductants (11.1%) relative to AID-mCherry (0%) or AID-mCherry-CDT1 transductants (3.4%; FIG. 4D). This class of mutations can be generated by activity of Rev1 (48) or Pol\u03b7 (49). The reduced level of mutations at A and T argues against a predominant role for Pol\u03b7, which is especially active at mutating at A and T (50). Instead Rev1 may be responsible for the G to T transversions in AID-mCherry-GEM transductants. This suggests that Rev1 may function late in cell cycle. Consistent with this, Rev1 has been shown to repair UV damage at gaps that persist into G2 phase (51).",
+                                "The use of CDT1 and GEM tags to destabilize nuclear protein outside specific windows of cell cycle (44) proved unexpected insights into regulation of AID and the response to AID-initiated DNA damage. These tags can be readily applied to study repair in other contexts, and they should also prove useful for optimizing the nucleases (CRISPR/Cas9, TALENs, etc.) that target nicks and double-strand breaks for genome engineering and gene correction applications. The utility of these tags is especially evident in the AIDF193A-mCherry-CDT1 derivative. AIDF193A-mCherry-CDT1 expression greatly accelerates hypermutation, but without the negative impact on cell proliferation associated with other AID derivatives that increase the frequency of SHM but compromise cell viability, including AID mutants selected for increased deamination activity (24); NES mutants (36, 37); and the naturally occurring human AID\u0394E5 dominant negative mutant, which exhibits increased hypermutation activity coupled with diminished cell viability (38). AIDF193A-mCherry-CDT1 should prove to be useful for defining the mechanisms that protect the genome from AID-initiated DNA damage in G1 phase, and in very practical applications directed toward evolving or optimizing antibodies and other proteins.",
+                                "**Materials and Methods**",
+                                "Expression Constructs.",
+                                "The pEGFP-N3 construct for expression of AID-GFP was a gift from Dr. Javier Di Noia (Department of Microbiology and Immunology, University of Montreal, Montreal, Quebec, Canada). We substituted mCherry for a region of GFP flanked by ApaI and BsrGI restriction sites in the pEGFP-N3 construct to generate an AID-mCherry expression construct, pAID-mCh. Cell cycle reporter constructs p-mKO2-CDT1 CSII and p-mAG-GEM CSII, in a lentiviral vector, were a gift from Dr. Atsushi Miyawaki (Brain Science Institute, RIKEN, Hirosawa, Wako-city, Saitama 351-0198, Japan).",
+                                "pAID-mCh CSII: We amplified AID-mCherry from pAID-mCh with primers PQL31, 5\u2032-ATATCAATTGAGATCCCAAATGGACAGCC-3\u2032 (SEQ ID NO: 7) and PQL32, 5\u2032-ATATTCTAGATTACTTGTACAGCTCGTCCATGC-3\u2032, (SEQ ID NO: 8) and inserted it between EcoRI and XbaI sites in p-mAG-GEM CSII, thereby replacing mAG-GEM with AID-mCherry.",
+                                "pAID-mCh-CDT1 and pAID-mCh-GEM: We amplified CDT1 with primers PQL44 5\u2032-TATATGTACAAGGGATATCCATCACACTGGCGGCC-3\u2032 (SEQ ID NO: 9) and PQL45 5\u2032-TATATGTACATCTAGATTAGATGGTGTCCTGGTCC-3\u2032 (SEQ ID NO: 10) from p-mKO2-CDT1 CSII, and GEM with primers PQL44 5\u2032-TATATGTACAAGGGATATCCATCACACTGGCGGCC-3\u2032 (SEQ ID NO: 9) and PQL46 5\u2032-TATATGTACATCTAGATTACAGCGCCTTTCTCCG-3\u2032 (SEQ ID NO: 11) from p-mAG-GEM CSII, and inserted the resulting fragments between BsrGI and XbaI restriction sites of pAID-mCh CSII.",
+                                "pAID-mKO2-CDT1 and pAID-mKO2-GEM: We amplified mKO2 with primers mKO2 FOR 5\u2032-ATATGGATCCATCGCCACCATGGTGAGTGTG-3\u2032 (SEQ ID NO: 12) and mKO2 REV 5\u2032-ATATGCGGCCGCCAGTGTGATGGATATCCGC-3\u2032 (SEQ ID NO: 13), and inserted the resulting fragment between BamHI and NotI restriction sites in pAID-mCh-CDT1 or pAID-mCh-GEM CSII, respectively.",
+                                "pAIDF193A-mCh-CDT1, pAIDF193A-mCh-CDT1 and pAIDF193A-mCh-GEM: F193A mutants were generated using QuikChange II XL Site-Directed Mutagenesis Kit (Agilent) with primer set, F193A FOR 5\u2032-CTTACGAGACGCAGCTCGTACTTTGGGAC-3\u2032 (SEQ ID NO: 14) and F193A REV 5\u2032-GTCCCAAAGTACGAGCTGCGTCTCGTAAG-3\u2032(SEQ ID NO: 15).",
+                                "Cell Culture and Transduction.",
+                                "The human Burkitt lymphoma cell line, Ramos, was cultured in supplemented RPMI 1640 (Gibco), which contained 10% FBS, 2 mM L-glutamine, penicillin/streptomycin, 1\u00d7 non-essential amino acids (Gibco), 1 mM sodium pyruvate, and 10 mM HEPES. Lentiviral transductions used 2\u00d7105 cells cultured in medium containing 8 \u03bcg/ml of polybrene. Following transduction, cells were cultured for 3-4 days and these recent transductants then sorted for mCherry+ to enrich for transduced cells, typically constituting 0.1-10% of the population. Cells were treated with leptomycin B (LMB; LC Laboratories) at 50 ng/ml and MG132 (Z-Leu-Leu-Leu-aldehyde; Sigma-Aldrich) at 50 \u03bcM. Viable cells were counted after trypan blue staining. Cell viability was confirmed by CellTiter-Glo\u00ae Luminescent Cell Viability Assay (Promega).",
+                                "Assays of Cell Cycle.",
+                                "To determine cell cycle distribution, cells were fixed, permeabilized with 0.5% Triton X-100, stained with DAPI (2 \u03bcg/ml) and analyzed by FACS.",
+                                "High Content Screening (HCS) Microscopy and Analysis.",
+                                "Cells were fixed in 3.7% formaldehyde at a density of 2\u00d7106 cells/ml and stained with whole cell stain (HCS CellMask, Invitrogen) and DAPI (0.2 \u03bcg/ml). Fixed cells were then washed, resuspended in PBS and spun down in a 96-well \u03bcclear microplate (Greiner Bio One) for imaging. Cells were imaged by Thermo Scientific ArrayScan VTI HCS reader, analyzing 3000-6000 cells in each treatment group. Cells with very low or very high mCherry signals were eliminated, gating based on the mock transduction control (low) and eliminating cells with signals more than 5 SD from the mean (high). The HCS Colocalization BioApplication protocol was used to determine nuclear and whole cell boundaries in individual cells as defined by DAPI and HCS CellMask, respectively, thereby defining the cytoplasmic region as the region between nuclear and whole cell boundaries. The average signal in the nuclear and cytoplasmic compartments was determined in individual cells by measuring the total intensity of mCherry signal divided by area within each compartment. The ratio of nuclear to cytoplasmic signal (N/C) was calculated as the ratio of the average signals of nuclear and cytoplasmic mCherry.",
+                                "Confocal microscopy showed that AID-mCherry was mostly absent from the nucleus when out-of-focus signal was eliminated, regardless of the level of cytoplasmic signal (FIG. 14). HCS analysis of AID-mCherry transductants showed that nuclear AID-mCherry signals increased linearly with increasing cytoplasmic signals (slope of linear regression=0.848; FIG. 15), consistent with a contribution of cytoplasmic signal from above or below the nucleus to the signal identified as nuclear by HCS. Thus in order to enable accurate comparisons among AID-mCherry, AID-mCherry-CDT1, AID-mCherry-GEM, AIDF193A-mCherry, AIDF193A-mCherry-CDT1, and AIDF193A-mCherry-GEM transductants, the nuclear signal for each cell, as determined by HCS, was corrected by subtraction of the corresponding baseline value, as established by linear regression analysis of nuclear vs. cytoplasmic signals of untreated AID-mCherry transductants (FIG. 15), using the formula: Nuclear signal=(Nuclear signal)HCS\u2212(0.848X+21.1).",
+                                "G1, S, and G2/M phase cells were distinguished by ranking DNA content as determined by total DAPI signal, and specific fractions of the population assigned to G1, S and G2/M phases (FIG. 16A). HCS results were expressed in terms of average signal, to ensure independence of cell size, which increases during cell cycle (FIG. 16). Control experiments verified that cell cycle was not perturbed significantly by up to 4 hr of culture with MG132, LMB or MG132+LMB (FIG. 17).",
+                                "Assays of sIgM Loss Frequency in Ramos B Cell Transductants.",
+                                "sIgM loss frequency provides a convenient surrogate assay for SHM (45, 46). To determine fractions of sIgM\u2212 cells, 2-5\u00d7105 cells were fixed in 3.7% formaldehyde and stained with anti-human IgM (1:500, Souther Biotech), and sIgM\u2212 variants quantified by FACS as described (47). To establish that selective pressure was not sufficient to affect the frequency of sIgM loss, we assayed loss of mCherry signal posttransduction (FIG. 18). There was modest loss of mCherry expression between days 3 and 7 in the AID-mCherry-CDT1 transductants (decrease from 37.2% to 31.3%), consistent with some selective pressure against AID-mCherry-CDT1 expression, but not sufficient to alter interpretation of the sIgM loss data.",
+                                "Assay of CSR in Primary Splenic B Cells.",
+                                "B cells were isolated from spleens of C57BL/6 mice and enriched through a negative selection in AUTOMACs with biotinylated anti-CD43 antibody (BD Pharmigen, Cat #5532269) and streptavidin magnetic microbeads (Miltenyi Biotech, Cat #130-048-102). Purified B cells were transduced for 24 hr in X-vivo medium (Lonza) containing 2 mM L-glutamine, 50 \u03bcM \u03b2-mercaptoethanol, 5 ng/mL IL-4 (R&D Systems, cat#404-ML-010) and 1 \u03bcg/mL anti-CD40 antibody (BioLegend, Cat#102802) in 100 \u03bcL total volume in a round bottom 96-well plate, then transferred at 24 hr to supplemented RPMI (see above) containing 5 ng/mL IL-4 and 1 \u03bcg/mL anti-CD40 antibody. Cells were cultured for 4-5 days, stained with anti-IgG1 (FITC anti-mouse IgG1; BioLegend, Cat#406605), and surface IgG1 quantified by flow-cytometry.",
+                                "Single-Cell PCR and Sequencing of VH Regions.",
+                                "At day 7 post sorting recent transductants for mCherry+ cells, single cells from AID-mCherry, AID-mCherry-CDT1 or AID-mCherry-GEM transductant populations were aliquoted, one cell per well, into 96-well plates containing 20 \u03bcl of Pfu reaction buffer (Agilent). Samples were frozen, thawed, and treated with 250 \u03bcg/ml proteinase K for 1 hr at 50\u00b0 C. then 5 min at 95\u00b0 C., the primers and high-fidelity Pfu Turbo DNA polymerase (Agilent) were added and the rearranged VH region amplified by nested PCR with first round primers, RVHFOR QL 5\u2032-TCCCAGGTGCAGCTACAGCAG-3\u2032 (SEQ ID NO: 16) and JOL48 QL 5\u2032-GTACCTGAGGAGACGGTGACC-3\u2032 (SEQ ID NO: 17) (52); followed by 1:30 dilution and second round amplification with primers 5\u2032-AGGTGCAGCTACAGCAGTG-3\u2032 (SEQ ID NO: 18) and 5\u2032-GCCCCAGACGTCCATACC-3\u2032 (SEQ ID NO: 19). Predicted sizes of PCR products were confirmed by gel electrophoresis and fragments purified and sequenced.",
+                                "Cell Culture and Transduction.",
+                                "Ramos B cells were transduced in medium containing polybrene, cultured for 3-4 days, then sorted for mCherry+ to enrich for transduced cells, typically constituting 0.1-10% of the population. Primary murine B cells were transduced in supplemented X-vivo medium, then cultured 4-5 days with IL-4 and anti-CD40, and the fraction of IgG1+ cells quantified.",
+                                "High Content Screening (HCS) Microscopy.",
+                                "Cells were fixed and stained with whole cell stain (HCS CellMask, Invitrogen) and DAPI, washed, and imaged by Thermo Scientific ArrayScan VTI HCS reader, analyzing 3000-6000 cells in each treatment group. To enable accurate comparisons among different transductant populations, nuclear signal for each cell was corrected by subtraction of the corresponding baseline value, as established by linear regression analysis. HCS results were expressed in terms of average signal, to ensure independence of cell size."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce AID and its function",
+                                "describe cell cycle regulation of AID",
+                                "motivate study of AID regulation",
+                                "describe experimental approach",
+                                "introduce Ramos B cell line",
+                                "describe AID-mCherry construct",
+                                "analyze subcellular distribution of AID-mCherry",
+                                "describe effect of MG132 treatment",
+                                "describe effect of LMB treatment",
+                                "describe effect of LMB+MG132 treatment",
+                                "quantify nuclear and cytoplasmic AID-mCherry signals",
+                                "compare signals between different treatment groups",
+                                "analyze AID-mCherry subcellular distribution in different cell cycle phases",
+                                "describe effect of MG132 treatment in different cell cycle phases",
+                                "describe effect of LMB treatment in different cell cycle phases",
+                                "describe effect of LMB+MG132 treatment in different cell cycle phases",
+                                "quantify nuclear AID-mCherry signal in different cell cycle phases",
+                                "compare nuclear AID-mCherry signal between different cell cycle phases",
+                                "describe CDT1 and GEM tags",
+                                "introduce AID-mCherry-CDT1 and AID-mCherry-GEM constructs",
+                                "analyze subcellular distribution of AID-mCherry-CDT1 and AID-mCherry-GEM",
+                                "describe effect of CDT1 and GEM tags on AID-mCherry localization",
+                                "analyze viability of AID-mCherry-CDT1 transductants",
+                                "analyze Ig gene diversification in AID-mCherry-CDT1 transductants",
+                                "analyze CSR in AID-mCherry-CDT1 transductants",
+                                "introduce AIDF193A mutation",
+                                "analyze subcellular distribution of AIDF193A-mCherry-CDT1",
+                                "describe effect of AIDF193A mutation on AID-mCherry-CDT1 localization",
+                                "analyze viability of AIDF193A-mCherry-CDT1 transductants",
+                                "analyze Ig gene diversification in AIDF193A-mCherry-CDT1 transductants",
+                                "analyze CSR in AIDF193A-mCherry-CDT1 transductants",
+                                "discuss implications of results",
+                                "summarize conclusions",
+                                "describe AID-initiated damage",
+                                "contrast viability of AIDF193A-mCherry-CDT1 and AIDF193A-mCherry transductants",
+                                "restrict nuclear AID to G1 phase",
+                                "describe GEM tag function",
+                                "analyze AID-mCherry-GEM nuclear signal",
+                                "discuss cell cycle regulation of AID",
+                                "describe CDT1 tag function",
+                                "analyze AID-mCherry-CDT1 nuclear signal",
+                                "discuss regulation of AID by feedback loops",
+                                "describe altered SHM spectrum with CDT1 and GEM tags",
+                                "discuss Rev1 function in SHM",
+                                "describe utility of CDT1 and GEM tags",
+                                "introduce expression constructs",
+                                "describe pAID-mCh CSII construct",
+                                "describe pAID-mCh-CDT1 and pAID-mCh-GEM constructs",
+                                "describe pAID-mKO2-CDT1 and pAID-mKO2-GEM constructs",
+                                "describe F193A mutants",
+                                "describe cell culture and transduction",
+                                "describe cell viability assay",
+                                "describe cell cycle analysis",
+                                "describe high content screening microscopy",
+                                "describe HCS analysis of nuclear and cytoplasmic signals",
+                                "describe assay of sIgM loss frequency",
+                                "describe assay of CSR in primary splenic B cells",
+                                "describe single-cell PCR and sequencing of VH regions",
+                                "describe cell culture and transduction for primary murine B cells",
+                                "describe high content screening microscopy for primary murine B cells",
+                                "conclude HCS results"
+                            ],
+                            "num_characters": 31324,
+                            "outline_medium": [
+                                "introduce AID and its role in immunoglobulin gene diversification",
+                                "motivate cell cycle regulation of AID",
+                                "describe experimental approach using high content screening microscopy",
+                                "present results on subcellular distribution of AID in Ramos B cells",
+                                "analyze effect of leptomycin B and MG132 on AID localization",
+                                "quantify AID-mCherry subcellular distribution in different cell cycle phases",
+                                "compare nuclear stability of AID-mCherry in G1, S, and G2/M phases",
+                                "describe fusion of AID-mCherry to CDT1 and GEM tags",
+                                "analyze effect of CDT1 and GEM tags on AID-mCherry localization and degradation",
+                                "show that elevated nuclear AID compromises cell viability",
+                                "demonstrate that AID-mCherry-CDT1 accelerates Ig gene diversification",
+                                "analyze mutation frequencies and spectra in AID-mCherry-CDT1 transductants",
+                                "show that elevated nuclear AID is tolerated in G1 phase but not in S-G2/M phase cells",
+                                "analyze spatiotemporal localization of AIDF193A-mCherry derivatives",
+                                "demonstrate that AIDF193A-mCherry-CDT1 accelerates SHM without compromising cell viability",
+                                "discuss implications of cell cycle regulation of AID for mutagenesis and antibody evolution",
+                                "describe AID-initiated damage",
+                                "restrict nuclear AID to G1 phase",
+                                "describe GEM tag function",
+                                "describe CDT1 tag function",
+                                "analyze SHM spectrum",
+                                "discuss Rev1 function",
+                                "describe utility of CDT1 and GEM tags",
+                                "describe expression constructs",
+                                "describe cell culture and transduction",
+                                "describe assays of cell cycle",
+                                "describe high content screening microscopy",
+                                "describe assays of sIgM loss frequency",
+                                "describe assay of CSR in primary splenic B cells",
+                                "describe single-cell PCR and sequencing of VH regions"
+                            ],
+                            "outline_short": [
+                                "introduce AID and its role in immunoglobulin gene diversification",
+                                "motivate cell cycle regulation of AID",
+                                "describe experimental design using high content screening microscopy",
+                                "analyze subcellular distribution of AID in different cell cycle phases",
+                                "demonstrate cell cycle-dependent nuclear stability of AID",
+                                "show that elevated nuclear AID compromises cell viability in S-G2/M phase",
+                                "analyze effects of AID-mCherry-CDT1 on Ig gene diversification and cell viability",
+                                "discuss implications of cell cycle regulation of AID for mutagenesis",
+                                "describe AID protein regulation",
+                                "describe CDT1 and GEM tags",
+                                "describe expression constructs",
+                                "describe cell culture and transduction",
+                                "describe assays of cell cycle",
+                                "describe assays of SHM and CSR",
+                                "describe single-cell PCR and sequencing"
+                            ]
+                        },
+                        {
+                            "title": "Example 2",
+                            "paragraphs": [
+                                "**Modulation and Optimization of Chimeric Antigen Receptor T Cells**",
+                                "This example illustrates an embodiment of the invention that implements the principles described above for use with B cells to T cells. More specifically, one can use the invention described herein to modulate and optimize chimeric antigen receptor (CAR) T cells for use in therapeutic treatments. One can modulate and improve the affinity or specificity of a CAR T cell by transfecting a host T cell with a fusion construct of the invention. The fusion construct would couple a fragment of a protein targeted for nuclear destruction during a relevant portion of the cell cycle (e.g., CDT1 for destruction upon entry into S phase; GEM for G1 phase destruction) with AID modified to promote accumulation of AID in the nucleus. This construct stimulates diversification of the target gene to be optimized for immunotherapeutic use."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "modulate and optimize chimeric antigen receptor T cells"
+                            ],
+                            "num_characters": 899,
+                            "outline_medium": [
+                                "modulate and optimize chimeric antigen receptor T cells"
+                            ],
+                            "outline_short": [
+                                "modulate chimeric antigen receptor T cells"
+                            ]
+                        },
+                        {
+                            "title": "Example 3",
+                            "paragraphs": [
+                                "**Modulation of Nuclear Protein Activity**",
+                                "This example illustrates an embodiment of the invention, whereby cell cycle tags derived from CDT1 or GEM (or other proteins involved in cell cycle control) can confer cell cycle restriction to enzymes that function in the nucleus. This modulation of nuclear protein activity can be of use, for example, in genome engineering. The nuclease activities of enzymes used to target DNA and the pathways of downstream repair can reflect the stage of cell cycle in which the DSB or nick occurs. For example, the frequency of a desired outcome (e.g. homology-directed repair) would be higher if DNA is cleaved in G1 phase, by an enzyme bearing a CDT1 tag; or the frequency of an undesired outcome (mutagenic end-joining) would be lower if DNA is cleaved in S phase, by an enzyme bearing a GEM tag.",
+                                "Two enzymes widely used for genome engineering are CRISPR/Cas9, which creates targeted double-strand breaks (DSBs); and the CRISPR/Cas9D10A nickase, which creates targeted single-strand breaks (nicks). This can be implemented by using standard cloning approaches to generate constructs that express Cas9-CDT1 and Cas9-GEM or Cas9D10A-CDT1 and Cas9D10A-GEM fusion proteins. These fusion proteins will be expressed upon transfection of cultured cells, and predicted cell cycle regulation confirmed by flow cytometry. Frequencies of homology-directed repair, targeted deletions and mutagenic end-joining can be measured, using standard published approaches (e.g. Davis and Maizels, PNAS, 111(10):E924-32, 2014). Comparison of these frequencies can be used to identify optimum stages of cell cycle (and corresponding fusion proteins) for genome engineering.",
+                                "Throughout this application various publications are referenced. The disclosures of these publications in their entireties are hereby incorporated by reference into this application in order to describe more fully the state of the art to which this invention pertains.",
+                                "From the foregoing it will be appreciated that, although specific embodiments of the invention have been described herein for purposes of illustration, various modifications may be made without deviating from the spirit and scope of the invention. Accordingly, the invention is not limited except as by the appended claims."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "describe modulation of nuclear protein activity",
+                                "explain use of cell cycle tags in genome engineering",
+                                "detail implementation of CRISPR/Cas9 system",
+                                "outline measurement of genome engineering outcomes"
+                            ],
+                            "num_characters": 2283,
+                            "outline_medium": [
+                                "modulate nuclear protein activity",
+                                "implement cell cycle restriction for genome engineering"
+                            ],
+                            "outline_short": [
+                                "modulate nuclear protein activity"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "provide illustrative examples"
+                    ],
+                    "num_characters": 226,
+                    "outline_medium": [
+                        "provide illustrative examples"
+                    ],
+                    "outline_short": [
+                        "illustrate invention"
+                    ]
+                }
+            ],
+            "outline_long": [
+                "claim benefit of provisional patent applications"
+            ],
+            "num_characters": 235,
+            "outline_medium": [
+                "claim benefit of provisional patent applications"
+            ],
+            "outline_short": [
+                "claim benefit of provisional patent applications"
+            ]
+        }
+    ],
+    "claims": [
+        "1. A nucleic acid construct comprising:\n(a) a first nucleotide sequence that expresses an activation-induced cytosine deaminase (AID) polypeptide, wherein the AID polypeptide is modified to prevent nuclear export; and\n(b) a second nucleotide sequence that expresses chromatin licensing and DNA replication factor 1 (CDT1) or another polypeptide targeted for cell cycle-dependent nuclear destruction, wherein the second nucleotide sequence is operably linked to the first nucleotide sequence.",
+        "2. The nucleic acid construct of claim 1, wherein the AID is AIDF193A, AIDF193E, AIDF193H, AIDL196A, AIDF198A, AIDL198S, AID193X or AID196X.",
+        "3. The nucleic acid construct of claim 1, further comprising a detectable marker.",
+        "4. The nucleic acid construct of claim 3, wherein the detectable marker is a fluorescent protein.",
+        "5. A lymphocyte transfected with the nucleic acid construct of claim 1.",
+        "6. The lymphocyte of claim 5, which is a human B cell.",
+        "7. The lymphocyte of claim 5, which is a Ramos human B cell.",
+        "8. The lymphocyte of claim 5, which is a human T cell.",
+        "9. A yeast or bacterial cell transfected with the nucleic acid construct of claim 1.",
+        "10. A method of producing a repertoire of polypeptides having variant sequences of a polypeptide of interest, the method comprising:\n(a) culturing the lymphocyte of claim 5 in conditions that allow expression of the nucleic acid construct, wherein the lymphocyte contains the coding region of the polypeptide of interest, thereby permitting diversification of the coding region; and\n(b) maintaining the culture under conditions that permit proliferation of the lymphocyte until a plurality of lymphocytes and the desired repertoire is obtained.",
+        "11. A method of producing lymphocytes that produce an optimized polypeptide of interest, the method comprising:\n(a) culturing a lymphocyte of claim 5 in conditions that allow expression of the nucleic acid construct, wherein the lymphocyte contains the coding region of the polypeptide of interest, and wherein and the lymphocyte expresses the polypeptide of interest on the surface of the lymphocyte;\n(b) selecting cells from the culture that bind a ligand that specifically binds the polypeptide of interest expressed on the lymphocyte surface; and\n(c) repeating steps (a) and (b) until cells are selected that have a desired affinity and/or specificity for the ligand that specifically binds the polypeptide of interest.",
+        "12. The method of claim 10, wherein the polypeptide of interest is an Ig.",
+        "13. The method of claim 12, wherein the Ig is an IgL, IgH or both.",
+        "14. A kit comprising:\n(a) a lymphocyte according to claim 5; and\n(b) one or more containers; and\n(c) a target gene expressible in the lymphocyte, wherein the target gene encodes a polypeptide of interest.",
+        "15. The kit of claim 14, wherein the target gene is a human Ig gene.",
+        "16. The kit of claim 14, wherein the target gene is an IgL gene.",
+        "17. The kit of claim 14, wherein the target gene is an IgH gene.",
+        "18. The kit of claim 13, wherein the target gene comprises a heterologous coding region and regions encoding a transmembrane domain and a cytoplasmic tail sufficient to effect display of the target gene product on the lymphocyte surface.",
+        "19. A method of restricting nuclear activity of an enzyme that modifies nucleic acids to G1 or to S-G2/M phase of the cell cycle in a host cell, the method comprising transfecting a host cell with a fusion construct comprising a nucleotide sequence that expresses the enzyme fused to a nucleotide sequence that expresses CDT1 or geminin (GEM), wherein a fusion construct expressing CDT1 restricts expression of the enzyme to G1 and a fusion construct expressing GEM restricts expression of the enzyme to S phase.",
+        "20. The method of claim 19, wherein the enzyme is CRISPR/Cas9 or CRISPR/Cas9D10A."
+    ]
+}

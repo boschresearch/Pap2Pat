@@ -1,0 +1,304 @@
+{
+    "id": "US20070153971",
+    "authors": [
+        "Chenglin Wang",
+        "Ying Liu"
+    ],
+    "title": "Controlled cardiac computed tomography",
+    "date": "2006-12-28 00:00:00",
+    "abstract": "Cardiac computed tomography (CT) has been a hot topic for years because of the clinical importance of cardiac diseases and the rapid evolution of CT systems. In this application, we disclose a novel strategy for controlled cardiac CT (CCCT) that may effectively reduce image artifacts due to cardiac and respiratory motions and reduce the scan time. Our approach is radically different from existing ones and is based on controlling the x-ray source rotation velocity and powering status in reference to the cardiac motion. By such a control-based intervention the data acquisition process can be optimized for cardiac CT in the cases of periodic and quasi-periodic cardiac motions. Specifically, we present the corresponding coordination/control schemes for either exact or approximate matches between the ideal and actual source positions.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND OF INVENTION",
+                    "paragraphs": [
+                        "Cardio-vascular disease is the number one killer in the Western world. It is responsible for 1 of every 2.6 deaths in the United States. Cardio-vascular disease was listed as a primary or contributing cause on about 1,408,000 death certificates annually. One in five persons has some form of cardiovascular diseases in the United States, account for 64,400,000 Americans (http://www.americanheart.org/). In 2004, the estimated cost of cardio-vascular diseases is $368.4 billion.",
+                        "Electron-beam CT (EBCT) is a unique mode of medical x-ray CT, which is for early screening of coronary artery diseases [1]. There are three major limitations with the current EBCT techniques. First, it is not in cone-beam geometry, and hence it can only acquire a limited number of transverse slices through the heart. It has become clear that the multi-slice/cone-beam scanning is much more advantageous for a good portion or even the whole volume of the heart to be contained in a cone-beam, and reconstructed from a rapidly acquired dataset for both high temporal resolution and excellent anatomical consistency. Second, the x-ray spot in EBCT is not sufficiently intensive to produce the image quality that the mechanical rotation based scanners can achieve, which compromises contrast resolution in reconstructed images. Third, the EBCT scanner is expensive and monstrous. As such, EBCT is far less accessible and less cost-effective than the main stream CT scanner that utilizes a mechanically rotated x-ray source.",
+                        "Given the aforementioned limitations of the EBCT, multi-slice/cone-beam CT has been growing into a strong competitor of the EBCT [2,3]. There are two major problems with current gating based cardiac CT methods. First, these existing methods are passive in their nature, and require that the cardiac motion and the x-ray source rotation must be at favorable relative frequencies; otherwise, the data sectors to be assembled for a complete dataset would span a wide range of the cardiac status leading to a compromised image quality, or the data acquisition time would be too long to be practical (in a most unfavorable case, it could be impossible to acquire a complete dataset). Second, even in the favorable cases, retrospectively reconstructed cardiac images still suffer from substantial motion blurring because in practice each projection sector covers a projection angular range of a substantial length. Within such an angular range, the heart moves appreciably, especially when it is not in a relative stationary phase. As a benchmark, we routinely achieve <0.3 mm spatial resolution in spiral CT of the temporal bone where the motion magnitude is much less than that of the heart. On the other hand, the spatial resolution with cardiac CT is at best in the millimeter domain. It is claimed that the spatial resolution with our invented controlled cardiac CT can be significantly better than that with current cardiac CT, and eventually made to be comparable to that with temporal bone CT.",
+                        "To understand etiology and pathogenesis of the human cardio-vascular diseases as well as develop prevention and treatment strategies, small animals have become common laboratory models. To use these animal models fully, the extension of cardiovascular imaging from patients to small animals, such as mice and rats, is imperative. Because of the small size and high heart rate of a mouse, high spatial and temporal resolutions are required. Currently, an x-ray micro-CT scanner takes at least 20 s to acquire a full dataset. Hence, cardiac micro-CT represents a daunting challenge in this field, requiring major interdisciplinary efforts. The recent small animal micro-CT work performed at Duke University [4] showed the feasibility of respiratory and cardiac gated micro-CT but their system runs very slowly (\u201cnot well suited for high throughput\u201d), and requires that the mouse is placed vertically and rotated asynchronously, violating the natural physiological conditions."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce cardio-vascular disease",
+                        "describe limitations of EBCT",
+                        "motivate multi-slice/cone-beam CT",
+                        "describe limitations of gating based cardiac CT",
+                        "introduce cardiac micro-CT",
+                        "describe current small animal micro-CT work",
+                        "emphasize need for controlled cardiac CT"
+                    ],
+                    "num_characters": 3973,
+                    "outline_medium": [
+                        "introduce cardio-vascular disease",
+                        "describe limitations of EBCT",
+                        "motivate multi-slice/cone-beam CT"
+                    ],
+                    "outline_short": [
+                        "motivate cardio-vascular disease"
+                    ]
+                },
+                {
+                    "title": "BRIEF SUMMARY OF THE INVENTION",
+                    "paragraphs": [
+                        "Over the past several decades, tremendous progress has been made in the fields of computed tomography (CT) and automatic control, largely driven by the need for real-time performance in these fields. However, the synergy between CT and control has not been effectively utilized in the medical imaging arenas until the recent project on bolus-chasing CT angiography that was initiated at the University of Iowa and funded by NIH/NIBIB [5-8]. While bolus-chasing CTA project couples adaptive control and real-time CT to translate the patient table for synchronization of a moving bolus and the imaging aperture of a scanner, this invention is to control the X-ray source rotation based on the ECG signal or similar information to achieve unprecedented cardiac CT capabilities [9-11]. The development of such controlled cardiac CT (CCCT) systems has just become technically feasible and commercially profitable for not only medical imaging but also micro-CT of small animals. We emphasize that the current gating based cardiac CT methods do not have the leverage to manipulate or select the source rotation speed adaptively, hence they miss a major opportunity for optimization of the imaging performance. Our invention is to make CCCT a vital mode in cardiac studies. Here we disclose our technologies that can be used by those who are experts in the fields to (1) develop schemes for adaptive control or real-time selection of the x-ray source rotation to minimize the effects of cardiac motions and the data acquisition time under realistic hardware constraints, assuming periodic and quasi-periodic cardiac motion respectively; (2) optimize CT algorithms for cardiac reconstruction in both fan-beam and cone-beam geometry; (3) integrate and evaluate the control and imaging techniques into real systems for cardiac imaging."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce controlled cardiac CT",
+                        "describe synergy between CT and control",
+                        "outline goals of invention"
+                    ],
+                    "num_characters": 1824,
+                    "outline_medium": [
+                        "introduce controlled cardiac CT"
+                    ],
+                    "outline_short": [
+                        "introduce controlled cardiac CT"
+                    ]
+                },
+                {
+                    "title": "BRIEF DESCRIPTION OF DRAWINGS",
+                    "paragraphs": [
+                        "The accompanying drawings, which are incorporated in and constitute a part of this specification, illustrate embodiments of the invention and together with the description, serve to explain the principles of the invention:",
+                        "FIG. 1. Illustration for one embodiment of the invented controlled cardiac CT/micro-CT system.",
+                        "FIG. 2. Illustration for one embodiment of the source rotation control strategy.",
+                        "FIG. 3. Cardiac CT implemented using a constant source rotation velocity and the same set of projection angles for all the volumetric levels of interest.",
+                        "FIG. 4. Cardiac CT implemented using a constant source rotation velocity and different sets of projection angles for various volumetric levels of interest.",
+                        "FIG. 5. Relationships among the total scanning time, maximum velocity and maximum acceleration for controlled cardiac CT. (a) Plots showing the total time needed to cover three angles exactly versus the corresponding maximum velocity/maximum acceleration in one case study, and (b) plots showing velocity and acceleration changes versus the total time. The greater the allowed acceleration is, the shorter the total time will be, vice versa.",
+                        "FIG. 6. Simulation results of controlled cardiac CT with multi-level multi-angle quasi-periodic tracking. The projection angles are \u201crandomly\u201d ordered for each of the pre-specified levels of the cardiac function. The velocity of the x-ray source rotation must be variable for an accurate solution.",
+                        "FIG. 7. Simplified heart volume function used in our simulation. There are 5 phases for cardiac motion. Period between 0.3-0.4 s is the least motion phase, which was used for cardiac imaging.",
+                        "FIG. 8. Reconstructed images in different cardiac phases (heart beat period=0.6 s) using the current multi-segment algorithm. (a) A reconstructed image with ideal data segments for t=0.3-04 s, and (b) that with gaps between data segments for t=0.3-0.38 s. (a) is the best (ideal data segments), while (b) is compromised.",
+                        "FIG. 9. Reconstructed images with a fixed source velocity for GE Light scanner and an optimally selected source velocity in the case of heart rate 78 bpm. (a)-(f) Images from source rotation periods 0.5, 0.6, 0.7, 0.8, 0.9, and 1.0 s per source rotation which are permitted by a GE Light speed CT scanner, and (g) the corresponding image with our selected source period 0.43 s. Clearly, (g) is significantly better than (a)-(f).",
+                        "FIG. 10. Reconstructed images with different velocities as determined by our selectable velocity method, assuming that the heart beat period is 0.6 s. (a) An image with a slower source rotation velocity Pc=0.5 s (m=1), and (b) that with a faster source rotation period Pc=0.33 s (m=2). Clearly, (b) is superior to (a) because of faster rotation.",
+                        "FIG. 11. Reconstructed images with different scan times as determined by our selectable velocity method. (a) An image with a scan time Pc=5P, and (b) that with a scan time Pc=36P. Clearly, (b) is better than (a) because of longer scan time."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce drawings",
+                        "describe FIG. 1",
+                        "describe FIG. 2",
+                        "describe FIGs. 3-11",
+                        "conclude drawings description"
+                    ],
+                    "num_characters": 2988,
+                    "outline_medium": [
+                        "describe drawings",
+                        "illustrate embodiments"
+                    ],
+                    "outline_short": [
+                        "describe accompanying drawings"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE INVENTION",
+                    "paragraphs": [
+                        "One or more exemplary embodiments are now described in detail herein below. Referring to the drawings, like numbers indicate like parts throughout the views. As used in the description herein, the meaning of \u201ca,\u201d \u201can,\u201d and \u201cthe\u201d includes plural reference unless the context clearly dictates otherwise. Also, as used in the description herein, the meaning of \u201cin\u201d includes \u201cin\u201d and \u201con\u201d unless the context clearly dictates otherwise. Finally, as used in the description herein, the meanings of \u201cand\u201d and \u201cor\u201d include both the conjunctive and disjunctive and may be used interchangeably unless the context clearly dictates otherwise.",
+                        "Ranges may be expressed herein as from \u201cabout\u201d one particular value, and/or to \u201cabout\u201d another particular value. When such a range is expressed, another embodiment includes from the one particular value and/or to the other particular value. Similarly, when values are expressed as approximations, by use of the antecedent \u201cabout,\u201d it will be understood that the particular value forms another embodiment. It will be further understood that the endpoints of each of the ranges are significant both in relation to the other endpoint, and independently of the other endpoint.",
+                        "FIG. 1 illustrates one embodiment of the invented controlled cardiac CT/micro-CT system. Based on the clinical requirements (010), the image quality requirements (020) are defmed, which are translated to the CT data requirements (030). Then, a single-/multi-slice/cone-beam data acquisition system (040) starts collecting data. The acquired data (050) is constantly processed by a data completeness checker (060) to reveal the data missing status in reference to the data requirements (030). The cardiac motion is monitored by an ECG device (070) which produces the cardiac motion signal (080). Such a signal may be also extracted from a data/image analyzer (090). Based on the cardiac motion signal (080), the cardiac motion pattern will be estimated/predicted (100). If a sufficient amount of data has not been accumulated yet, according to our source rotation control strategy (110) the x-ray source will be optimally steered as needed by a control servo system (120) at variable source rotation velocity/acceleration (130) to fill in the missing data gaps. Finally, image reconstruction (140) is completed for further analysis and visualization (150) The computing resources are important for implementation of these functionalities but they are not shown here for clarity.",
+                        "FIG. 2 illustrates one embodiment of the source rotation control strategy. The objective functions (010) are set in reference to a cardiac motion model (020). The off-line design (030) is first performed to optimize the control strategies in various settings based on the cardiac motion modeling. The real-time estimation/prediction (040) is done to capture the trend of the cardiac motion, which is also based on the cardiac motion modeling. The off-line optimized guidelines and the real-time analysis results are combined to update our control law (050) in real-time. Under the control law, the control servo system (060) steers the source rotation at a variable velocity/acceleration (070) for the data acquisition system (080) to collect projection data up to the CT data requirements. At any instant, acquired data (090) are analyzed by the data completeness checker (100) to update the data completeness status (110) with respect to the CT data requirements (200). The computing resources are not shown here for brevity.",
+                        "It is underlined that the references of ours cited therein provide more details on our invention, and should be considered as an integrated part of this patent application. Also, the description in this part should be interpreted as exemplary instead of restrictive. We recognize that variants of this technology are clearly possible in the spirit of this application including the cited references of ours."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "A. Adaptive Control",
+                            "paragraphs": [
+                                "It is recognized that the cardiac motion is certainly complicated by other factors, especially the respiratory motion. However, in the following we will focus on the cardiac motion for two reasons. Primarily, the methodology applies similarly to the combination of cardiac and respiratory motions. Secondarily, the cardiac motion is the dominating component to be corrected for cardiac CT in most cases.",
+                                "For a heart in a periodic cardiac motion, it is relatively easy to verify its regularity and estimate its period. For example, it can be done based on analysis of a number of cycles of the ECG signal of a patient. We will start with the case of periodic motion based control as a basis for quasi-periodic motion based control, which is our desired model for cardiac CT.",
+                                "**A.1. Period Cardiac Motion**",
+                                "To convey the idea without unnecessary complication, we will first focus on one volume level in the expanding or contracting phase of the cardiac motion. Let v(t)=v(t+P) be the heart volume which is periodic with period P, and v(t1) be the heart level that we are interested in and  \n\\({a_{l} = {\\frac{l - 1}{p}2\\pi}},{l = 1},\\ldots\\quad,p,\\)\n\n be p angles at which the x-ray source has to be on. It is recognized that for the same cardiac volume level the structure of the heart may be slightly different in the expanding and contracting phases. Without loss of generality, we assume such a difference is substantial and requires that the heart of a pre-specified volume must be sampled at the consistent phases of the ECG signal; for example, in the expanding phase.",
+                                "Ideally, the problem might be solved with a pre-specified constant source velocity. Recall that v(t)=v(t+P) is the heart volume, \u03b1l, l=1, 2, . . . , p, p evenly spaced angles and s(t) the source angle. The problem we have to solve is to find a source angle profile s(t) as a function of time t so that for every angle \u03b1l, l=1, . . . , p, at every level v(ti), i=1. . . , q, there exists a time t such that s(t)=\u03b1l and v(t)=v(ti). In other words, the source angle is \u03b1l when the volume level is at v(ti) for all i, l or the source covers all the angles \u03b1l, l=1, . . . , p exactly at all the levels v(ti), i=1, . . . , q. FIG. 3 illustrates cardiac CT implemented using a constant source rotation velocity and the same set of projection angles for all the volumetric levels of interest. Further, among all the solutions s(t)'s, find one that requires the minimum time to cover all the angles for all the levels. However, the solution may not always exist in this setting. To illustrate the situation, we provide a numerical example. Let the heart volume be v(t)=r1+r2 sin(2\u03c0t) for some constants r1, r2. Suppose the volume that we are interested in is at r1+r2 sin [2\u03c0(5/8+m)] for integers m. Without lose of generality, let us assume that the x-ray source must scan the given heart volume at only three angles 2\u03c0(l\u22121)/3,l=1, 2, 3. This implies for some integers m, \u03b1(5/8+m)=2\u03c0(l\u22121)/3, mod 2\u03c0, l=1, 2, 3. It can be shown that there does not exist a constant x-ray source s(t)=\u03b1t so that these equations can be satisfied simultaneously.",
+                                "Approximate solutions however do exist. To quantify the error, for example, we can define the minimum error between the given angles and all possible x-ray source angles at a given heart volume as e=min min max {\u03b1(5/8+m)\u22122\u03c0(l\u22121)/3, mod 2\u03c0}. The following table shows e, converted to\n\n\u03b1>0m\u22670l",
+                                "degrees, and the corresponding optimal \u03b1* and m*. For instance, if the error is required to be no larger than 0.631\u00b0, the optimal \u03b1*, among all possible values (0, \u221e), is 0.316\u03c0 that achieves the minimum error at t=82+5/8 (unit: s). Clearly, the more accurate the solution is, the longer time the scan takes. The optimal \u03b1* is not unique. For example, \u03b1*+2k\u03c0 is also a solution, but the minimum time m+5/8 is unique.",
+                                "Nevertheless, we can modify the problem to allow a constant but not pre-fixed velocity solution with some angle offsets: To find a source angle profile s(t) as a fuinction of time t so that for every i at every l, there exists a corresponding time t such that s(t)=\u03b1i,l=\u03b1l+\u03b8i, and v(t)=v(ti), where \u03b8i is independent of the level 1. The interpretation is that at any level i, projections have to be taken at p evenly spaced angles \u03b1i,l=\u03b1l+\u03b8i, l=1, . . . , p, with the same offset angle \u03b8i. However, the offset angle \u03b8i at level i may not be the same as the offset angle \u03b8j at level j. Further, among all the solutions s(t)'s, find one that requires the minimum time. As shown in FIG. 4, the difference lies in that it does not require that p evenly spaced angles at level i are the same as that at level j. This makes perfect sense for practical applications where an accurate image of level v(ti) is reconstructed as long as p is large enough independent of whether the same angles are used for levels i and j. Surprisingly, this seeming complicated problem is solved by a constant source rotation velocity s(t) [9-11]. Let k>0 be any integer and consider  \n\\({s(t)} = {\\frac{2\\pi}{p\\quad{Pk}}{t.}}\\)\n\n Then s(ti+(l\u22121)Pk)=\u03b1i,l=\u03b1l+\u03b8i. This solves the problem, and further the solution with k=1 is the minimum time solution.",
+                                "The solution can be also implemented by using a variable velocity X-ray source rotation [9-11]. The requirement is s(t1+(l\u22121)kP)=\u03b1l which is an interpolation problem and k balances the minimum time needed and the maximum velocity and acceleration. One solution would be a polynomial solution s(t)=s0+s1t+s2t2+ . . . +sp\u22121tp\u22121 so that\n\ns0+s1t1+s2t12+ . . . +sp\u22121t1p\u22121=\u03b11\n\ns0+s1(t1+(l\u22122)kP)+s2(t1+(l\u22122)kP)2+ . . . +sp\u22121(t1+(l\u22122)kP)p\u22121=\u03b1l\u22121\n\ns0+s1(t1+(l\u22121)kP)+s2(t1+(l\u22121)kP)2+ . . . +sp\u22121(t1+(l\u22121)kP)p\u22121=\u03b1l",
+                                "This polynomial solution not only matches exact p angles precisely at the level v(tl) but also reaches the minimum time when k=1. Recall again that a polynomial solution is just an example and any other function can also be a solution as long as the required interpolation condition is satisfied.",
+                                "**A.2. Quasi-Period Cardiac Motion**",
+                                "Recall v(t) is periodic if and only if it is completely determined by the first period, i.e., v(t)|t\u03b5[(l\u22121)P,lP)=v(t\u2212(l\u22121)P)|t\u2212(l\u22121)P\u03b5[0,P). In reality, the cardiac motion may not be periodic, especially under diseased conditions. As a result, the period for one cycle may be different from that for another cycle. However, despite the variability in the period, the cardiac volume usually alternates between the minimum and maximum volumes monotonically. Approximately, such a motion pattern can be characterized by a class of functions referred to as quasi-periodic functions. Let 0=P0<P1< . . . <Pl< . . . be a monotonically increasing sequence [9-11). The interval Pl+1\u2212Pl is the lth \u201cperiod\u201d of v(t), i.e., the time to finish that specific cycle. In general, Pl+1\u2212Pl\u2260Pl\u2212Pl\u22121. However, we assume that v(t) is completely determined by its first period in the following sense. Let v1(t)=v(t), t\u03b5[0, P1), then  \n\\({v(t)} = {v_{1}\\left( {\\frac{P_{1} - P_{0}}{P_{l} - P_{l - 1}}\\left( {t - P_{l - 1}} \\right)} \\right)}\\)\n\\(for\\)\n\\(t \\in {\\left\\lbrack {P_{l - 1},P_{l}} \\right).}\\)",
+                                "Simply put, v(t) is not periodic but its appropriately scaled (expanded or compressed) version matches its profile in the first period. For such functions, the techniques that we proposed for period functions can be applied with some modifications . In particular, if all the periods are known, a control scheme can be calculated \u03b1 priori that determines the order and time when the angle \u03b1l at the level v(ti) should be imaged. The problem is that periods of a quasi-periodic heart motion are unknown \u03b1 priori and have to be estimated online. Nevertheless, all the related major issues can be addressed as follows.",
+                                "How to estimate periods? Suppose the period is time varying but does not change too much from one cycle to the next, it can be estimated, for example, from the ECG signal. Keep in mind, however, measurement of ECG signals is always corrupted by noises with some delay. This affects the accuracy of the estimation but can be addressed properly. For example, this can be done as follows. Suppose for the (1\u22121)th period, Pl\u22121\u2212Pl\u22122, is estimated, and we need to estimate the lth period Pl\u2212Pl\u22121 or equivalently to estimate  \n\\(\\alpha_{l} = {\\frac{P_{1} - P_{0}}{P_{l} - P_{l - 1}}.}\\)\n\n Now, a new observation  \n\\({v\\left( \\overset{\\_}{t} \\right)} = {v_{1}\\left( {\\frac{1}{\\alpha_{l}}\\left( {\\overset{\\_}{t} - P_{l - 1}} \\right)} \\right)}\\)\n\n is obtained, this gives rise to the information on \u03b11=( \u2212Pl\u22121)/v\u22121(v( )), where v\u22121 denotes the inverse function of v. To reduce the effect of noises, an average of several such observations could be used. If necessary, other estimation and prediction algorithms that were developed by our and other teams [13-19] can be used for controlled cardiac CT, including algorithms that are based on the Hammerstein model, non-parametric model, variable gain model and approximate linear model, respectively.",
+                                "How to design the control scheme based on the estimates of the periods? There is always a chance that the estimation error is larger than a pre-specified threshold. For example, if in the lth period the error is larger than the threshold, then the images taken during the lth period may become non-usable. We can address this problem using a monitoring mechanism in the system that compares the predicted and the actual periods (see FIG. 1). If a larger error occurs, the missing data has to be re-sampled later, using a similar control scheme to fill in the missing gaps in the desirable projection region.",
+                                "In the solution given above, the variable k is used to balance the minimum time required and maximum velocity and acceleration. As k increases, the required scan time increases and at the same time the maximum velocity/acceleration of s(t) decreases. Addition of k in the solution is important practically. There are other ways to take velocity/acceleration into consideration. For instance, instead of usual polynomial interpolation, Fejer or other similar types of interpolations [12,13] that have constraints on its derivatives can be used. Since velocity and acceleration are the first and second order derivatives respectively, Fejer interpolation effectively sets constraints on the allowable maximum velocity and acceleration. It is important to emphasize again that hardware constraints must be taken into account in practice, which can be achieved by balancing between the scan time and the maximum speed and maximum acceleration using our invented control scheme, as demonstrated in FIG. 5.",
+                                "To illustrate the method, we give an example. Consider a heart volume v(t)=1\u22120.5 Cos(2*\u03c0*t/H) for three unknown periods H=1, 0.8 and 0.5. This is no longer periodic but quasi-periodic. Suppose that three heart levels v(t)=0.64, 1, 1.5 and three angles at 0, 120 and 240 degrees are specified. By using the method discussed above with a polynomial interpolation, FIG. 6 shows the computer simulation results based on the estimates of the unknown periods. Clearly, all angles at all three heart levels are imaged. The goal is achieved using a variable velocity X-ray source. A constant velocity X-ray source either fails to do that or takes too long to even have a good approximate solution, as discussed in Table 1.",
+                                "As another embodiment, CCCT can be implemented using a monitoring mechanism and a control mechanism which is manual, semi-automatic, automatic, or in a mixed mode. This combined setup monitors the data completeness status, identifies missing projections, and adjusts the source rotation velocity/acceleration of the scanner to make up these missing projections in an optimal or heuristic way. For example, for each cardiac state/phase, covered and not covered projection angles can be graphically displayed in a disk like panel, in which the current heart motion frequency, the source angular position, velocity and acceleration can be also graphically shown. Based on this type of visual input, an operator can steer the source using, for example, arrow keys, subject to some physical constraints. A sample heuristic rule for steering the source is that the source be driven to cover the missing projection that takes the shortest source motion time. More sophisticated rules can be constructed in a similar spirit. This type of rules can be automated as preferred; for example, using an interpolation based control strategy similar to what discussed above.",
+                                "**A.3. Approximate Matching to Desirable Projection Angular Positions**",
+                                "Another very useful problem is the non-exact matching case. In the above analysis, the p angles have to be exactly covered at q volume levels. In reality, the exact angles and precise levels are not necessary as long as the errors are small. By non-exact matching, we mean at each level images do not have to reflect the volume level v(\u03b1lti+Pl\u22121) exactly as long as it stays in a small neighborhood of the targeted level. Likewise, the projection angles do not have to be exactly at \u03b1l but it suffices for them to be in a small neighborhood of \u03b1l.",
+                                "To this end, at each level i, let the error bound \u03b4>0, the corresponding times t\u2212i,l\u2266ti\u2266 i,l can be found  \n\\({\\max\\limits_{t \\in {\\lbrack{{{\\alpha_{l}{\\underset{\\_}{t}}_{i,l}} + {P_{{l - 1},}\\alpha_{l}\\overset{\\_}{t\\quad}i}},{l + P_{l - 1}}}\\rbrack}}{\uf603{{v(t)} - {v\\left( {{\\alpha_{l}t_{i}} + P_{l - 1}} \\right)}}\uf604}} \\leq \\delta\\)",
+                                "Furthermore, let us define \u03c4i,l=[\u03b1li,l+Pl\u22121,\u03b1l i,l+Pl\u22121] and  \n\\(\\Delta_{i,l}\\left\\lbrack {\\underset{t \\in {\\lbrack{{\\alpha_{l}{\\underset{\\_}{t}}_{i,l}} + {P_{{l - 1},}\\alpha_{l}{\\overset{\\_}{t}}_{i,l}} + P_{l - 1}}\\rbrack}}{\\min\\quad{v(t)}},{\\max\\quad{v(t)}}} \\right\\rbrack\\)",
+                                "The neighborhood of v(\u03b1l ti+Pl\u22121) is \u0394i,l with the corresponding permissible time interval \u03c4i,l. That is, v(\u03b1l ti+Pl\u22121)\u03b5\u0394i,l, maxt\u03b5\u03c4|v(t)\u2212v(\u03b1lti+Pl\u22121)|\u2266\u03b4 and \u03c4i,l is the time interval in which the images for any angle \u03b1l, l=1, . . . , p can be taken at the level i. By the same token, in a non-exact case, the volume level i can be defined as Li={\u0394i,l, \u0394i,2, . . . , \u0394i,p . . . } or in time domain Ti={\u03c4i,l, \u03c4i,2, . . . , \u03c4i,p, . . . }. Now, the non-exact match problem can be defined as to find an x-ray source angular position s(t) that satisfies |s(t)\u2212\u03b1l\u2266\u03b5 for t\u03b5\u03c4i,k, where \u03b5>0 is the given angle error bound. The resultant s(t) significantly reduces the total data acquisition time needed to cover all the projection angles at each of the desired cardiac volume levels. The control algorithms can be accordingly developed, for example, using the numerical search technique."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate cardiac motion control",
+                                "focus on periodic motion based control",
+                                "define heart volume and periodicity",
+                                "formulate problem: find source angle profile",
+                                "illustrate problem with numerical example",
+                                "show that constant source velocity may not exist",
+                                "modify problem to allow constant velocity with angle offsets",
+                                "solve modified problem with constant source rotation velocity",
+                                "implement solution using variable velocity X-ray source rotation",
+                                "describe polynomial solution",
+                                "illustrate solution with FIG. 4",
+                                "describe quasi-periodic cardiac motion",
+                                "formulate problem for quasi-periodic motion",
+                                "estimate periods from ECG signal",
+                                "design control scheme based on period estimates",
+                                "monitor and adjust source rotation velocity/acceleration",
+                                "illustrate method with example",
+                                "show computer simulation results in FIG. 6",
+                                "describe manual, semi-automatic, automatic, or mixed mode control",
+                                "illustrate control with graphical display",
+                                "describe heuristic rule for steering source",
+                                "automate rules using interpolation-based control strategy",
+                                "describe approximate matching to desirable projection angular positions",
+                                "define error bound and corresponding times",
+                                "define neighborhood of volume level",
+                                "define permissible time interval",
+                                "formulate non-exact match problem",
+                                "describe control algorithms using numerical search technique"
+                            ],
+                            "num_characters": 14525,
+                            "outline_medium": [
+                                "motivate cardiac motion correction",
+                                "introduce periodic cardiac motion model",
+                                "formulate problem statement",
+                                "provide numerical example",
+                                "describe approximate solutions",
+                                "introduce constant velocity solution",
+                                "describe variable velocity solution",
+                                "introduce quasi-periodic cardiac motion model",
+                                "estimate periods from ECG signal",
+                                "design control scheme based on period estimates",
+                                "address estimation error",
+                                "balance scan time and maximum velocity/acceleration",
+                                "illustrate method with example",
+                                "describe manual/semi-automatic/automatic control mechanisms"
+                            ],
+                            "outline_short": [
+                                "motivate cardiac motion control",
+                                "define periodic cardiac motion",
+                                "describe constant source rotation velocity solution",
+                                "describe variable velocity X-ray source rotation solution",
+                                "define quasi-periodic cardiac motion",
+                                "estimate periods of quasi-periodic heart motion",
+                                "design control scheme based on period estimates"
+                            ]
+                        },
+                        {
+                            "title": "B. Image Reconstruction",
+                            "paragraphs": [
+                                "**B.1. Feldkamp-Type Reconstruction**",
+                                "As far as the imaging part is concerned, we may, for example, use the Feldkamp cone-beam image reconstruction algorithm or the generalized Feldkamp algorithm developed by Wang et al. [20,21]. This algorithm can be written as:  \n\\({{g\\left( {x,y,z} \\right)} = {\\frac{1}{2}{\\int_{0}^{2\\pi}{\\frac{D^{2}(\\beta)}{\\left( {{D(\\beta)} - s} \\right)^{2}}{\\int_{- \\infty}^{\\infty}{{R\\left( {p,\\zeta,\\beta} \\right)}{h\\left( {\\frac{{D(\\beta)}t}{{D(\\beta)} - s} - p} \\right)}\\frac{D(\\beta)}{\\sqrt{{D^{2}(\\beta)} + p^{2} + \\zeta^{2}}}{\\mathbb{d}p}{\\mathbb{d}\\beta}}}}}}},\\)\n\n where g(x,y,z) is a reconstructed 3D image, D(\u03b2) the distance between the source and the z-axis of the reconstruction system in which an object of interest \u03b7(x,y,z) is located, \u03b2 the source rotation angle relative to the z axis, R(p,\u03b6, \u03b2) cone-beam projection data of \u03b7(x,y,z),  \n\\(\\left\\{ {\\begin{matrix}\n{\\zeta = \\frac{{D(\\beta)}z}{{D(\\beta)} - s}} \\\\\n{{p = \\frac{{D(\\beta)}t}{{D(\\beta)} - s}},}\n\\end{matrix}\\left\\{ \\begin{matrix}\n{t = {{x\\quad\\cos\\quad\\beta} - {y\\quad\\sin\\quad\\beta}}} \\\\\n{s = {{{- x}\\quad\\sin\\quad\\beta} - {y\\quad\\cos\\quad{\\beta.}}}}\n\\end{matrix} \\right.} \\right.\\)",
+                                "Let us assume that D(\u03b2) is a constant, the approximate reconstruction procedure consists of the following three steps: \n\n\n- - 1. Weight cone-beam projection data \\\\{{R^{\\prime}\\left(\n    {p,\\zeta,\\beta} \\right)} = {\\frac{D}{\\sqrt{D^{2} + p^{2} +\n    \\zeta^{2}}}{R\\left( {p,\\zeta,\\beta} \\right)}}};\\\\\n  - 2. Filter the weighted data Q(p, \u03b6, \u03b2)=R\u2032(p, \u03b6, \u03b2)\\*h(p);\n  - 3. Back-project the filtered data \\\\{g\\left( {x,y,z} \\right)} =\n    {\\int\\_{0}^{2\\pi}{\\frac{D^{2}}{2\\left( {D - s} \\right)^{2}}{Q\\left(\n    {p,\\zeta,\\beta} \\right)}\\quad{{\\mathbb{d}\\beta}.}}}\\\\",
+                                "Note that the algorithm does allow non-uniform sampling patterns along a scanning circle. If the cone-angle becomes larger, more sophisticated algorithms may be adapted, including both exact and approximate algorithms with circular or non-circular scanning trajectories [22-28].",
+                                "**B.2. Grangeat-Type Reconstruction**",
+                                "Collected CCCT data can be fed into any representative CT algorithm after appropriate data interpolation, which should be clear to those who practice in the cardiac CT field. As another example of the method for cone-beam CCCT, we can use the Grangeat-type reconstruction [29-31]. While traditional half-scan cone-beam algorithms are in the Feldkamp framework, Grangeat-type half-scan cone-beam algorithms were subsequently developed in the circular and helical scanning cases. The Grangeat-type framework promises better quality reconstruction from an incomplete dataset after missing data are appropriately estimated. We can utilize the explicit Radon space information available in collected cone-beam data, perform appropriate data filling in the shadow zone of the Radon space, and suppress various artifacts in the final reconstruction. In the circular half-scan case, the original Grangeat formula can be modified into the following half-scan  \n\\({{{version}:{\\frac{\\partial}{\\partial\\rho}{{Rf}\\left( {\\rho\\overset{\\rho}{h}} \\right)}}} = {\\sum\\limits_{i = 1}^{2}{{\\omega_{i}\\left( {\\rho\\overset{\\rho}{h}} \\right)}\\frac{1}{\\cos^{2}\\beta}\\frac{\\partial}{\\partial s}{\\int_{- \\infty}^{\\infty}{\\frac{SO}{SA}{{Xf}\\left( {s\\left( {\\rho\\overset{\\rho}{h}} \\right)} \\right)}\\quad{\\mathbb{d}t}}}}}},{{{where}{\\psi_{1}\\left( {\\rho,\\theta,\\varphi} \\right)}} = {{\\varphi + {{\\sin^{- 1}\\left\\lbrack \\frac{\\rho}{{SO}\\quad\\sin\\quad\\theta} \\right\\rbrack}\\quad{and}\\quad{\\psi_{2}\\left( {\\rho,\\theta,\\varphi} \\right)}}} = {\\varphi + \\pi - {\\sin^{- 1}\\left\\lbrack \\frac{\\rho}{{SO}\\quad\\sin\\quad\\theta} \\right\\rbrack}}}}\\)\n\n are two meridian plane angle functions, depending on a characteristic point in the Radon space. The scanning angle \u03c8 varies from 0 to \u03c0+2\u03b3m, where \u03b3m is the cone angle. In the circular full-scan case, for any characteristic point not in the shadow zone or not on its surface there exist a pair of detector planes specified by the above two angle functions. However, in our half-scan case, such the dual planes are not always possible. When the dual planes are found, we are in a doubly sampled zone. When one of them is missing due to the half-scan, we are in a singly sampled zone. Relative to the full-scan, the shadow zone is increased due to the reduction in the amount of cone-beam data.",
+                                "In the context of this invention, we can adapt our half-scan Grangeat-type reconstruction for cardiac CT from data collected from x-ray source positions pseudo-randomly distributed along a scanning circle. This adaptation can be done in a number of ways. The main challenge is how to design an best interpolation strategy so that the image quality, especially the temporal resolution, can be optimized. For that purpose, we can model time-varying Radon information as well to interpolate for missing data in both the spatial and temporal domains. We can use various linear interpolation methods to estimate missing derivative data in the shadow zone corresponding to different cardiac phases. The heuristics behind our choice of the linear interpolation approach is that the derivative Radon data of many geometrically regular objects, such as ellipsoids or tetrahedrons, are piece-wise linear along the \u03c1 direction. Therefore, the linear interpolation method may help effectively recover missing data. Then, we can equip this interpolation method with some adaptive capabilities. That is, the slope of the linear interpolation may vary region by region, according to prior knowledge such as the boundaries of the cardiac components derived from earlier reconstructions.",
+                                "**B. 3. Examples on Controlled Cardiac CT**",
+                                "The essential feature of this invention is to synchronize the x-ray source rotation and data acquisition optimally so that the dynamics of a beating heart can be captured with minimum distortion. This type of synchronization can be implemented in a number of ways. In a simple case, we can use an arbitrary but pre-selected source rotation speed. In a complicated case, we have to steer the source rotation with a variable acceleration.",
+                                "Without loss of generality, here we compare the results obtained with the existing schemes of fixed source rotation with our method for a selectable source rotation speed [11]. Several numerical tests were carried out using two cardiac phantoms. They are the thorax phantom and the motion phantom. The thorax phantom consists of parts simulating lungs, heart, aorta, ribs, spine, stemum and shoulders, respectively. There are 271 basic objects in the thorax phantom, constructed by spheres, cylinders and boxes. A heart is represented by an ellipsoid. The aorta is composed of three cylinders. For simplicity, the motion of the left ventricle is divided into 5 phases, depicting the basic systolic and diastolic processes, as shown in FIG. 7. The period of the cardiac motion was set to 0.6 s with the motion amplitude being 1 cm along each semi-axis of the heart. The motion phantom contained three rows of cylindrical patterns with the diameters being 1, 2 and 3 mm, respectively. The second and fourth columns were vibrated along the horizontal direction according to a sinusoid function. The motion amplitude was set to 5 mm. Other relevant parameters include the heart period P=0.6 s, the source rotation period Pc=0.5 s, temporal resolution \u03c4=0.1 s, allowing an ideal combination of data segments. The circular fan-beam scanning was assumed with 400 detectors and 360 views. A 256 by 256 image matrix was reconstructed. For the thorax phantom, the reconstructed images are shown in FIG. 8 corresponding to the cases of multi-segment combinations without any gap ((a), \u03c4=0.1 s), with gaps ((b), \u03c4<0.1) and with overlaps ((c), \u03c4>0.1 s), respectively. FIG. 8(a) has the best quality because the data segment was ideal. FIG. 8(b) is unsatisfactory and FIG. 8(c) is a little distorted due to the gaps and overlaps. This simulation shows that better image can be only achieved in ideal segment. However, temporal resolution is fixed and can not be improved in current cardiac CT. In the following, three types of simulations are provided.",
+                                "In the first simulation, we consider the GE Light Speed scanner because it can offer more choices of velocities than others. Six fixed velocities were assumed, including 0.5, 0.6, 0.7, 0.8, 0.9, and 1.0 s per rotation as provided by GE Light Speed scanner. We reconstructed images based on these velocities and compared these images with ones reconstructed using the selectable velocity method. When the heart rate was 78 bpm (beats per minute) or the heart period was 0.77 s. None of the available source rotation periods 0.5 s, 0.6 s, 0.7 s, 0.8 s, 0.9 s and 1.0 s would provide an ideal multi-segment combination. Hence, needed multi-segments must be assembled from available data after necessary interpolation. FIG. 9 shows the reconstructed image over 5 heart cycles using the current and our methods. Clearly, the image reconstructed by the selected rotation period 0.43 s (FIG. 9(g)) is better than the images reconstructed with fixed periods 0.5, 0.6, 0.7, 0.8, 0.9, and 1.0 s (FIG. 9(a)-(f)) because the data segment was ideal with the selected source rotation velocity but it was not ideal with any fixed velocity.",
+                                "In the second simulation, different velocities were selected by selecting different adjustable parameters in the formula. Generally speaking, the faster the rotation is, the better the temporal resolution is. For example, the setting of P=0.6 s, and m=1 implies Pc=0.5 s. If m=2, then Pc=0.33 s. Some representative images are illustrated in FIG. 10. FIG. 10(b) is better than FIG. 10(a) because the velocity was higher for FIG. 10(b). On the other hand, commercially available CT scanners do not allow a free choice of the source rotation velocity to optimize the image quality. The simulation shows that faster rotation would result in better images using our method.",
+                                "In the third simulation, the images were reconstructed from scans of different temporal spans. For a fixed source rotation velocity, even if ideal data segments were collected, temporal resolution would not be improved further by prolonging the scanning time. On the other hand, a higher temporal resolution would be achieved using our selectable velocity method if a longer scanning time was taken. Some simulation results are given in FIG. 11. FIG. 11(b) is much better than FIG. 11(a) because the total time was longer for FIG. 11(b). This example shows that the image quality can always be improved by extending the total scanning time for our selectable velocity method. On the other hand, the image quality could not be improved by prolonging scanning time for a fixed velocity CT.",
+                                "As mentioned above and demonstrated in our simulation, the our variable velocity method also outperformed the fixed velocity method in terms of image quality in both the periodic and quasi-periodic cases. The major merits with the variable velocity method include a significantly reduced scanning time and a unique capability of dealing with a quasi-periodic cardiac motion pattern. Once a better dataset is collected using any of our proposed techniques, the image reconstruction process is not so much different, since it is nothing but image reconstruction from projections at pseudo-randomly distributed angular positions. Therefore, we will not present more simulation results here, for sake of brevity."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "introduce Feldkamp-type reconstruction",
+                                "define Feldkamp algorithm",
+                                "provide mathematical formula for Feldkamp algorithm",
+                                "explain approximate reconstruction procedure",
+                                "describe step 1 of reconstruction procedure",
+                                "describe step 2 of reconstruction procedure",
+                                "describe step 3 of reconstruction procedure",
+                                "discuss limitations of Feldkamp algorithm",
+                                "introduce Grangeat-type reconstruction",
+                                "define Grangeat-type algorithm",
+                                "provide mathematical formula for Grangeat-type algorithm",
+                                "explain half-scan Grangeat-type reconstruction",
+                                "discuss data interpolation for Grangeat-type reconstruction",
+                                "introduce Radon space information",
+                                "explain data filling in shadow zone",
+                                "discuss artifact suppression",
+                                "introduce controlled cardiac CT",
+                                "explain synchronization of x-ray source rotation and data acquisition",
+                                "describe numerical tests using cardiac phantoms",
+                                "present simulation results for thorax phantom",
+                                "present simulation results for motion phantom",
+                                "summarize advantages of variable velocity method"
+                            ],
+                            "num_characters": 11461,
+                            "outline_medium": [
+                                "introduce Feldkamp-type reconstruction algorithm",
+                                "derive Feldkamp algorithm formula",
+                                "explain approximate reconstruction procedure",
+                                "introduce Grangeat-type reconstruction algorithm",
+                                "derive Grangeat formula for half-scan case",
+                                "explain data filling in shadow zone",
+                                "introduce controlled cardiac CT",
+                                "describe synchronization of x-ray source rotation and data acquisition",
+                                "present examples of cardiac CT simulations",
+                                "compare results of fixed and selectable source rotation speeds",
+                                "conclude advantages of variable velocity method"
+                            ],
+                            "outline_short": [
+                                "introduce Feldkamp-type reconstruction",
+                                "describe Grangeat-type reconstruction",
+                                "motivate controlled cardiac CT",
+                                "simulate cardiac CT with fixed source rotation",
+                                "simulate cardiac CT with selectable source rotation"
+                            ]
+                        }
+                    ],
+                    "outline_long": [
+                        "define terms and conventions",
+                        "describe FIG. 1: controlled cardiac CT/micro-CT system",
+                        "describe FIG. 2: source rotation control strategy",
+                        "outline adaptive control for cardiac motion",
+                        "describe periodic cardiac motion control",
+                        "describe quasi-periodic cardiac motion control",
+                        "describe non-exact matching to desirable projection angular positions"
+                    ],
+                    "num_characters": 3922,
+                    "outline_medium": [
+                        "define terms and conventions",
+                        "describe system overview",
+                        "outline patent application structure"
+                    ],
+                    "outline_short": [
+                        "introduce cardiac CT/micro-CT system"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. The controlled cardiac computed tomography (CCCT) methodology and techniques that consist of all or some of the following components: \n(i) a method for monitoring and predicting the cardiac motion pattern; \n(ii) a method for identifying missing projections needed for a desirable cardiac reconstruction quality; \n(iii) a mechanism for steering the x-ray source rotation in reference to the cardiac motion pattern, the data incompleteness and the current source parameters (position, velocity, etc.) for collection of needed projection data; \n(iv) a data acquisition system controlled by the said mechanism; \n(v) an image reconstruction algorithm that reconstructs cardiac images from the data collected by the said data acquisition system;",
+        "2. The methods and techniques described by claim 1 in which the control mechanism uses a constant source rotation velocity but different sets of projection angles for various cardiac levels/states;",
+        "3. The methods and techniques described by claim 1 in which the control mechanism uses a variable source rotation velocity for collection of needed projection data;",
+        "4. The methods and techniques described by claim 1 in which the control mechanism uses an interpolation based scheme, and is featured by a variable source rotation velocity for collection of needed projection data;",
+        "5. The methods and techniques described by claim 1 in which the control mechanism has a variable that balances the scanning time and maximum velocity/acceleration.",
+        "6. The methods and techniques described by claim 1 in which the control law is derived according to various motion models: periodic, quasi-periodic or non-periodic;",
+        "7. The methods and techniques described by claim 1 in which the control implementation is based on robust control, adaptive control, optimal control, nonlinear control and/or other types of control methods and techniques;",
+        "8. The methods and techniques described by claim 1 in which the data acquisition process uses a circular, helical, saddle curves or other scanning trajectories;",
+        "9. The methods and techniques described by claim 1 in which the reconstruction algorithm is analytic and/or iterative (such as filtered backprojection, ART, EM, OSEM);",
+        "10. The system that utilizes the methods and techniques described by claim 1;",
+        "11. The system defined by claim 10 that utilizes a multi-source/detector design;",
+        "12. The system defined by claim 10 that is for CT imaging of a patient;",
+        "13. The system defined by claim 10 that is for CT imaging of an animal;",
+        "14. The system defined by claim 10 that is for micro-CT imaging of a small animal;",
+        "15. The system defined by claim 10 that is based on the rotation of an animal instead of the rotation of the x-ray source(s);",
+        "16. The method defined by claim 1 that integrates control and imaging algorithms based on ECG signals or likes in cardiac CT.",
+        "17. The method defined by claim 1 that is implemented using a monitoring mechanism and a control mechanism which is manual, semi-automatic, automatic, or in a mixed mode. This combined setup monitors the data completeness status, identifies missing projections, and adjusts the source rotation velocity/acceleration of the scanner to make up these missing projections in an optimal or heuristic way.",
+        "18. The system defined by claim 10 that is implemented using a monitoring mechanism and a control mechanism which is manual, semi-automatic, automatic, or in a mixed mode. This combined setup monitors the data completeness status, identifies missing projections, and adjusts the source rotation velocity/acceleration of the scanner to make up these missing projections in an optimal or heuristic way.",
+        "19. The method defined by claim 1 except that the beating heart is replaced by another periodic or quasi-periodic moving structure, relevant to another biomedical, industrial application or applications in other areas.",
+        "20. The system defined by claim 10 except that the beating heart is replaced by another periodic or quasi-periodic moving structure, relevant to another biomedical, industrial application or applications in other areas."
+    ]
+}

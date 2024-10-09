@@ -1,0 +1,239 @@
+{
+    "id": "US20230084726",
+    "authors": [
+        "Ronald Walsworth",
+        "Nithya Arunkumar",
+        "Connor Hart",
+        "Dominik Bucher",
+        "David Glenn"
+    ],
+    "title": "SYSTEMS AND METHODS FOR QUANTUM SENSING USING SOLID-STATE SPIN ENSEMBLES",
+    "date": "2022-06-01 00:00:00",
+    "abstract": "Systems and methods of quantum sensing include obtaining information regarding a target signal in electronic spin states of quantum defects in an ensemble of quantum defects, mapping the information regarding the target signal from the electronic spin states of the quantum defects to corresponding nuclear spin states associated with the quantum defects, applying a light pulse to the ensemble of quantum defects to reset the electronic spin states of the quantum defects, and repeating a readout stage a plurality of times within a readout duration. The readout stage includes mapping the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states and applying a data acquisition readout pulse to optically measure the electronic spin states of the quantum defects.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "STATEMENT REGARDING FEDERALLY SPONSORED RESEARCH/DEVELOPMENT",
+                    "paragraphs": [
+                        "This invention was made with government support under W911NF1920181 awarded by the Department of the Army, Army Research Office (ARO) and W911NF1510548 awarded by the US Army Research Laboratory (ARL). The government has certain rights in the invention."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "disclose government funding"
+                    ],
+                    "num_characters": 253,
+                    "outline_medium": [
+                        "disclose government funding"
+                    ],
+                    "outline_short": [
+                        "disclose government funding"
+                    ]
+                },
+                {
+                    "title": "FIELD",
+                    "paragraphs": [
+                        "The present disclosure relates to quantum sensing and, more specifically, to systems, methods, and devices for quantum sensing using solid-state spin ensembles, e.g., nitrogen-vacancy (NV) center ensembles in diamond."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce quantum sensing"
+                    ],
+                    "num_characters": 217,
+                    "outline_medium": [
+                        "introduce quantum sensing"
+                    ],
+                    "outline_short": [
+                        "introduce quantum sensing"
+                    ]
+                },
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [
+                        "Optically-probed solid state quantum defects such as nitrogen-vacancy (NV) centers in diamond enable the detection of magnetic signals. As a result, an NV center ensemble in diamond is a prominent candidate for quantum sensing applications, e.g., in biological and material sciences, especially under ambient conditions. For example, quantum sensing may find applicability in nuclear magnetic resonance (NMR), integrated circuits, magnetic microscopy, crystal stress and pressure spectroscopy, thermometry, and/or other areas.",
+                        "A quantum memory technique facilitating quantum sensing was first realized in a single NV system in 2009 and later utilized for NMR spectroscopy of a single protein. However, this technique has yet to be extended to NV center ensembles, due to technical differences between single NV centers and NV center ensembles."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "motivate NV center ensembles"
+                    ],
+                    "num_characters": 844,
+                    "outline_medium": [
+                        "motivate NV center ensembles"
+                    ],
+                    "outline_short": [
+                        "motivate NV center ensembles"
+                    ]
+                },
+                {
+                    "title": "SUMMARY",
+                    "paragraphs": [
+                        "Provided in accordance with aspects of the present disclosure is a method of quantum sensing including obtaining information regarding a target signal in electronic spin states of quantum defects in an ensemble of quantum defects, mapping the information regarding the target signal from the electronic spin states of the quantum defects to corresponding nuclear spin states associated with the quantum defects, applying a light pulse to the ensemble of quantum defects to reset the electronic spin states of the quantum defects, and repeating a readout stage a plurality of times within a readout duration. The readout stage includes mapping the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states and applying a data acquisition readout pulse to optically measure the electronic spin states of the quantum defects.",
+                        "In an aspect of the present disclosure, obtaining the information includes applying a light pulse to the ensemble of quantum defects to polarize the electronic spin states of the quantum defects, and performing a sensing sequence to obtain the information regarding the target signal in the electronic spin states of the quantum defects. The sensing sequence may include, for example and without limitation, an XY decoupling sequence; a correlation spectroscopy sequence; or a DROID-60 decoupling sequence. Other suitable sensing sequences include, for example and without limitation, T1 relaxometry, Ramsey sequences, and strain-CPMG sequences (e.g., for sensing non-magnetic sources like lattice strain in the diamond, pressure, or temperature).",
+                        "In another aspect of the present disclosure, mapping the information regarding the target signal from the electronic spin states of the quantum defects to the corresponding nuclear spin states associated with the quantum defects includes applying a microwave (MW) pulse and a radio frequency (RF) pulse to the ensemble of quantum defects.",
+                        "In yet another aspect of the present disclosure, mapping the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states includes applying an MW pulse to the ensemble of quantum defects.",
+                        "In still another aspect of the present disclosure, the readout stage further includes, after applying the MW pulse, applying a light pulse to the ensemble of quantum defects to repolarize the electronic spin states of the quantum defects. Application of the light pulse generates fluorescence that can be optically measured. Indeed, in still yet another aspect of the present disclosure, the method further includes determining the information regarding the target signal based upon the optical measuring (e.g., of the fluorescence) in the plurality of readout stages.",
+                        "In aspects of the present disclosure, the ensemble of quantum defects includes an ensemble of nitrogen vacancy (NV) centers in diamond. The number of quantum defects in the ensemble of quantum defects may be at least on the order of 104, at least on the order of 106, or at least on the order of 108. Additionally or alternatively, the NV center density may be about 1 ppm.",
+                        "In another aspect of the present disclosure, the information regarding the target signal includes information regarding a magnetic field signal, e.g., an AC or DC magnetic field signal.",
+                        "In still another aspect of the present disclosure, the method includes applying a magnetic bias field to the ensemble of quantum defects during the obtaining, the mapping, the applying, and the repeating. The magnetic bias field may have a magnitude significantly different from 51.2 mT; in aspects, the magnitude is at least 3\u00d7, 5\u00d7, or 7\u00d7 the magnitude of 51.2 mT. Additionally or alternatively, the magnetic bias field has a range of less than about 100 uT across the spatial extent of the NV center ensemble.",
+                        "A quantum sensor provided in accordance with the present disclosure includes an ensemble of quantum defects and at least one controller including at least one processor and at least one associated memory storing instructions to be executed by the processor to cause the at least one controller to perform any of the methods detailed herein. In particular, the controller may be caused to direct application of a sensing sequence of energy pulses to the ensemble of quantum defects to obtain information regarding a target signal in electronic spin states of quantum defects in an ensemble of quantum defects, direct application of a microwave (MW) pulse and a radio frequency (RF) pulse to the ensemble of quantum defects to map the information regarding the target signal from the electronic spin states of the quantum defects to corresponding nuclear spin states associated with the quantum defects, direct application of a light pulse to the ensemble of quantum defects to reset the electronic spin states of the quantum defects, and direct repetition of a readout stage a plurality of times within a readout duration. In each readout stage, the controller is caused to direct application of an MW pulse to the ensemble of quantum defects to map the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states, and direct application of a data acquisition readout pulse to the ensemble of quantum defects to optically measure the electronic spin states of the quantum defects, e.g., by measuring fluorescence from excitation of the NC center by the light pulse.",
+                        "In an aspect of the present disclosure, the at least one controller is further caused to direct application of a light pulse to the ensemble of quantum defects to polarize the electronic spin states of the quantum defects prior to the sensing sequence.",
+                        "In another aspect of the present disclosure, the at least one controller is further caused to direct application of a light pulse to the ensemble of quantum defects to repolarize the electronic spin states of the quantum defects after the MW pulse in each readout stage.",
+                        "In still another aspect of the present disclosure, the ensemble of quantum defects includes an ensemble of nitrogen vacancy (NV) centers in diamond.",
+                        "In yet another aspect of the present disclosure, the information regarding the target signal includes information regarding a magnetic field signal.",
+                        "In still yet another aspect of the present disclosure, the at least one controller is further caused to direct application of a magnetic bias field to the ensemble of quantum defects at a magnitude significantly different from 51.2 mT; in aspects, the magnitude is at least 3\u00d7, 5\u00d7, or 7\u00d7 the magnitude of 51.2 mT. Additionally or alternatively, the magnetic bias field has a range of less than about 100 uT across the spatial extent of the NV center ensemble.",
+                        "To the extent consistent, any of the aspects and/or features detailed herein may be used in conjunction with any or all of the other aspects and/or features described herein."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce method of quantum sensing",
+                        "obtain information regarding target signal",
+                        "map information to nuclear spin states",
+                        "apply light pulse to reset electronic spin states",
+                        "repeat readout stage",
+                        "map information back to electronic spin states",
+                        "apply data acquisition readout pulse",
+                        "determine information regarding target signal",
+                        "introduce ensemble of quantum defects",
+                        "specify NV center density",
+                        "introduce magnetic bias field",
+                        "specify magnitude of magnetic bias field",
+                        "introduce quantum sensor"
+                    ],
+                    "num_characters": 6949,
+                    "outline_medium": [
+                        "introduce method of quantum sensing",
+                        "describe obtaining information",
+                        "describe mapping information",
+                        "describe applying light pulse",
+                        "describe repeating readout stage",
+                        "describe determining target signal"
+                    ],
+                    "outline_short": [
+                        "describe method of quantum sensing",
+                        "detail mapping information between electronic and nuclear spin states",
+                        "outline repetitive readout stage"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION",
+                    "paragraphs": [
+                        "The present disclosure provides systems, methods, and devices for quantum sensing (e.g., AC or DC magnetometry) using solid-state spin ensembles, e.g., nitrogen-vacancy (NV) center ensembles in diamond. Other suitable solid-state spin ensembles include, for example and without limitation, quantum defect ensembles in silicon carbide, hexagonal boron nitride, and rare-earth doped crystals such as Ce3+ in a yttrium aluminum garnet crystal. More specifically, the present disclosure leverages the two-qubit system (electronic spin and nuclear spin) of each NV center in an ensemble of NV centers in diamond, utilizing the electronic spins of the NV centers as sensor/readout qubits and the nearby nuclear spins as memory qubits. That is, sensed information captured in the electronic spin in each negatively charged NV center in the ensemble is mapped (entangled and swapped) onto the nearby 15N nuclear spin, thus enabling storage of the information for sufficient time to allow for repetitive optical readout performed by repeatedly re-mapping (re-entangling and re-swapping) the information stored in the 15N nuclear spin onto the electronic spin and optically measuring the electronic spin. Although detailed herein with respect to an ensemble of negatively charged NV centers in diamond, the present disclosure is applicable for use with any other suitable defect centers in solid-state ensembles that enable the above-noted two-qubit functionality.",
+                        "The present disclosure also solves the technical challenges introduced when moving from a single NV center system to an NV center ensemble. In particular, the present disclosure utilizes a homogeneous NV center ensemble in diamond, a homogeneous external magnetic field, homogeneous microwave (MW) and radio frequency (RF) pulses (at appropriate speeds and powers), homogeneous optical pulses, and homogeneous NV electronic spin properties. As a result, the nuclear memory spin lifetime is maximized (thus enabling a greater number of readouts) and all of the NV centers (two-qubit systems) in the ensemble are maintained sufficiently identical to permit global control of the spin states, thereby enabling high fidelity.",
+                        "The result of the above is a quantum sensor system that provides a factor of 30 improvement in signal-to-noise ratio and sensitivity enhancement exceeding an order of magnitude. Aspects and features of the quantum sensor systems and methods of the present disclosure are described in greater detail below. Although detailed herein with respect to quantum magnetometry, the aspects and features of the present disclosure are also applicable for use in other suitable quantum sensing applications such as, for example, crystal stress and pressure spectroscopy, thermometry, and/or other areas.",
+                        "Turning to FIGS. 1 and 2, a quantum sensor system 10 provided in accordance with the present disclosure includes a diamond chip 20 having an NV center ensemble layer 30, e.g., formed via chemical vapor deposition, irradiation, and annealing, or in any other suitable manner. The NV center ensemble layer 30 may define a thickness of 10 \u03bcm (or any other suitable thickness) and includes a plurality of NV centers 32. The number of NV centers 32 may be at least on the order of 104 in aspects; in other aspects, at least on the order of 106; in still other aspects, at least on the order of 108; and, in yet other aspects, on the order of 109. As noted above, each NV center 32 in the ensemble layer 30 forms a two-qubit system: a sensing/readout qubit (electronic spin states ms=0 and ms=\u22121 and corresponding qubit states De and Ue) 34 and a memory qubit (nuclear spin states mI=\u2212\u00bd and mI=\u00bd and corresponding qubit states Dn and Un) 36 that can be entangled to map information therebetween (see FIG. 2). An external magnetic bias field, e.g., an external DC magnetic bias field, is applied to system 10 along the NV symmetry axis. The magnetic bias field may be generated by a feedback-stabilized electromagnet or in any other suitable manner.",
+                        "System 10 further includes an antenna 40 configured to deliver both MW and RF pulse signals. Antenna 40 is shown as a shorted single-loop coil (e.g., of 1 mm diameter) although other suitable antennae for both MW and RF pulse signal delivery, or separate antennae for MW and RF pulse signal delivery are also contemplated. The MW pulse signals are utilized to drive transition of the NV electronic spins while the RF pulse signals are utilized to drive transition of the nuclear spins. With momentary reference to FIG. 5, antenna 40, more specifically, may be connected to an MW source 42 and an RF source 44. Respective amplifiers 43, 45 amplify the MW and RF signals produced by MW source 42 and RF source 44, respectively. A power splitter is configured to receive both the MW and RF signals to enable transmission of both the MW and RF pulse signals to the antenna 40 for application to the delivery to the NV center ensemble layer 30 (FIG. 1).",
+                        "Referring back to FIGS. 1 and 2, system 10 also includes a laser source 50 configured to deliver a light pulse, e.g., at 532 nm, to polarize the electronic spin states of the NV centers 32 in the ensemble layer 30 (see also FIGS. 3 and 4). An optical pulse is provided via laser source 50 prior to sensing (as noted above, to polarize the electronic spin states of the NV centers 32) as well as after mapping (entanglement and swapping) of the information contained in the electronic spin states to the nuclear spin states. The optical pulse after mapping functions to reset the electronic spin states of the NV centers 32. This allows the information stored in the nuclear spins to be repeatedly re-mapped (re-entangled and re-swapped) back onto the electronic spins and measured optically, thus providing plural readouts within a defined duration of time (which is limited by the nuclear spin lifetime of the system). Such repetitive readouts enable the detection of more photons over a longer amount of time, thus enhancing the overall readout fidelity.",
+                        "A fluorescence sensor 60 of system 10 is configured to repetitively optically measure (readout) the electronic spin states of the NV centers 32 in the ensemble layer 30 (see also FIGS. 3 and 4), from which the magnetic field is determined. As illustrated in FIG. 1, a test coil 70 is utilized to provide the magnetic field to be sensed; of course, in practice, test coil 70 is replaced with the target signal to be sensed, such as a magnetic field signal originating, e.g., from NMR, integrated circuits, materials science, thermometry applications, etc.",
+                        "Continuing to refer to FIG. 1, with respect to homogeneity, the external DC magnetic field applied to system 10 is controlled to provide a magnitude significantly different from 512 G (51.2 mT) in order to avoid the NV ground and excited state level crossing which dramatically reduces nuclear memory spin lifetime. In aspects, the magnitude of the external DC magnetic field is 370 mT (7\u00d7 greater than 51.2 mT). Nuclear memory spin lifetime improves quadratically as the field increases from 51.2 mT, so higher magnitudes are generally preferred, e.g., at least 3\u00d7, at least 5\u00d7, or at least 7\u00d7 greater than 51.2 mT). However, a significantly different magnitude from 51.2 mT, as utilized herein, includes any value above 60 mT or less than 40 mT.",
+                        "The absolute bias magnetic field range is less than about 100 uT across the spatial extent of the NV centers 32 in the ensemble layer 30. This requirement comes from the need to selectively address the hyperfine split NV resonances individually. Ranges an order of magnitude smaller or multiple orders of magnitude smaller are also contemplated. The above-detailed magnetic field may be produced and shimmed in any suitable manner. With respect to temporal variations, the absolute bias magnetic field range is configured to drift over the course of a quantum sensing and repetitive readout protocol by less than 100 uT).",
+                        "As the MW and RF pulses are applied globally to the NV center ensemble layer 30, system 10 is configured such that variation in the MW and RF pulses over the ensemble 30 is less than 6 dB such that high fidelity can be maintained.",
+                        "With respect to optical pulses, although a wavelength of 532 nm of laser light is detailed herein, any other suitable wavelength of from about 500 nm to about 637 nm is contemplated, as wavelengths in this range are sufficient to repolarize the NV centers 32 into the ms=0 electronic ground state within a time of <5 ms (typically about 3-7 \u03bcs) determined by the nuclear spin lifetime of the NV centers 32. With regard to optical intensity, a Gaussian beam or a flat-top providing uniform illumination at sufficient brightness to repolarize the NV centers 32 without harming the nuclear spin lifetime of the NV centers 32 may be provided.",
+                        "System 10 may further include at least one controller 80 having at least one processor 82, e.g., at least one quantum processor, and associated memory(s) 84, e.g., quantum memory(s), storing instructions to be executed by the processor(s) 82 to control application of the energy pulses (MW, RF, and optical), readout pulses, and magnetic field. In particular, the at least one controller 80 may implement the quantum sensing and repetitive readout protocol 600 detailed below (see FIG. 6) and/or any other aspects and features of the present disclosure detailed herein.",
+                        "Referring to FIG. 6, a quantum sensing and repetitive readout protocol 600 in accordance with the present disclosure is described. Protocol 600 may be implemented using system 10 (FIG. 1) or any other suitable system. Further, protocol 600 is only exemplary, as it is contemplated that other suitable pulse configurations, sequences, and/or durations may be utilized in accordance with the aspects and features of the present disclosure.",
+                        "Initially, in a preparation stage 610, a light pulse, e.g., at 532 nm, is provided to polarize the electronic spin states of the NV centers in the ensemble layer. In a subsequent sensing stage 620, a magnetic field sensing sequence is performed for a duration Tsense. The magnetic field sensing sequence may be configured for AC magnetic field sensing or DC magnetic field sensing. With momentary reference to FIG. 7, example AC magnetic field sensing sequences are shown: an XY 8:6 dynamical decoupling sequence (top); a correlation spectroscopy sequence (middle); and a DROID-60 decoupling sequence (bottom). Other suitable sensing sequences include, for example and without limitation, T1 relaxometry, Ramsey sequences, and strain-CPMG sequences (e.g., for sensing non-magnetic sources like lattice strain in the diamond, pressure, or temperature). The sensing sequence, in aspects, may include MW pulses, RF pulses, combined MW & RF pulses, optical pulses, combinations thereof, or any other suitable sensing sequence pulses. Regardless of the particular implementation, as a result of the magnetic field sensing sequence, the electronic spins of the NV centers reflect (obtain) information regarding the sensed magnetic field.",
+                        "Turning back to FIG. 6, at the completion of the sensing stage 620, a swap stage 630 is performed wherein the sensed information captured in the electronic spin in each NV center in the ensemble is mapped (entangled and swapped) onto the nearby nuclear spin. The swap stage 630 operates for a duration Tswap. The swap stage 630 includes two controlled NOT (CNOT) gates. The first CNOT gate is an MW pulse 632 that exchanges the spin populations of the states De, Un and Ue, Un. Thus, this MW pulse 632 acts as a CNOT operation on the electronic spin, conditioned on the nuclear spin state. The second CNOT gate is an RF pulse 634 that exchanges the spin populations of the states Ue, Un and Ue, Dn. As a result, the electronic spin population is mapped to that of the nuclear spin, thus encoding the information measured by the sensor spins (the electronic spins) onto the memory spins (the nuclear spins). The swap stage 630 concludes with an optical pulse 636 that, as mentioned above, resets the electronic spin states of the NV centers after the mapping (entanglement and swapping) has occurred.",
+                        "Continuing with reference to FIG. 6, after the swap stage 630, a readout stage 640 is repeated a plurality of times, e.g., N times, over the course of a total duration defined by the nuclear spin lifetime. Each readout stage 640 includes application of an MW CNOT gate 642 which functions to map the information stored in the nuclear memory spins back to the electronic spins and, subsequently, an optical repolarization pulse 644 and a data acquisition readout pulse 646 (for optically measuring the electronic spins of the NV centers, enabling determination of the magnetic field based thereon). Repeating the readout stage 640 enables a larger number of readouts (e.g., as many readouts as can be performed within the duration defined by the nuclear spin lifetime). These plural readouts enhance the overall readout fidelity and allow for a high-precision average measurement of the sensor spin states of the ensemble. In aspects, the number of readouts is at least 250; in other aspects, at least 500; in yet other aspects, at least 1000; and in still other aspects, at least 1500.",
+                        "FIGS. 8 and 9 contrastingly illustrate the number of repetitive readouts \u201cR\u201d after each sensing sequence \u201cS\u201d capable of being obtained using the systems and methods of the present disclosure (see FIG. 8) within a period of time, as compared to the single readout \u201cR\u201d following each sensing sequence \u201cS\u201d capable of being obtained using the systems and methods of the prior art (see FIG. 9) within the same period of time. For example, in accordance with the present disclosure, after a single sensing sequence \u201cS\u201d duration of 100 \u03bcs, followed by a swap sequence \u201cW,\u201d over forty (40) readouts \u201cR\u201d may be obtained in a total readout duration of 1 ms since multiple readouts \u201cR\u201d are obtained after a single sensing sequence \u201cS\u201d and swap sequence \u201cW\u201d (see FIG. 8) whereas, with respect to the prior art, for the same sensing sequence \u201cS\u201d duration of 100 \u03bcs, only ten readouts \u201cR\u201d may be performed in the same total readout duration of 1 ms owing to the fact that a sensing sequence \u201cS\u201d is required prior to each readout \u201cR\u201d (see FIG. 9).",
+                        "FIG. 10 illustrates experimental results of signal to noise ratio enhancement (compared to prior art systems and methods) as a function of overall readout duration for various different readout pulse durations in accordance with the systems and methods of the present disclosure. As shown, as the overall readout duration increases (thus enabling more readouts within the overall readout duration), the signal to noise ratio enhancement increases (before ultimately flattening out). Likewise, as more readouts within an overall readout duration can be obtained as the readout pulse duration is decreased (overall readout duration is defined as the readout pulse duration multiplied by the number of readouts), a greater signal to noise ratio enhancement is achieved for each successive shorter readout pulse duration. As shown, a signal to noise ratio enhancement approaching 30\u00d7 can be achieved in accordance with the systems and methods of the present disclosure.",
+                        "FIG. 11 illustrates experimental results of sensitivity enhancement (compared to prior art systems and methods) as a function of overall readout duration for various different readout pulse durations in accordance with the systems and methods of the present disclosure. As shown, sensitivity enhancement is substantially maintained as the overall readout duration increases; indeed, the systems and methods of the present disclosure enable minimization of the slope of any decrease. As shown, a sensitivity enhancement greater than 10\u00d7 can be achieved in accordance with the systems and methods of the present disclosure. At a greater than 10\u00d7 sensitivity enhancement (corresponding to a 3 \u03bcs readout pulse duration) the signal to noise enhancement approaches 30\u00d7 (see FIG. 10)).",
+                        "It should be understood that the foregoing description is only illustrative of the present disclosure. Various alternatives and modifications can be devised by those skilled in the art without departing from the disclosure. Accordingly, the present disclosure is intended to embrace all such alternatives, modifications, and variances. The aspects described with reference to the attached drawings are presented only to demonstrate certain examples of the disclosure. Other elements, steps, methods, and techniques that are insubstantially different from those described above and/or in the appended claims are also intended to be within the scope of the disclosure."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce quantum sensor system",
+                        "describe NV center ensemble layer",
+                        "specify number of NV centers",
+                        "introduce two-qubit system",
+                        "describe external magnetic bias field",
+                        "introduce antenna for MW and RF pulse signals",
+                        "describe MW and RF pulse signals",
+                        "introduce laser source for light pulse",
+                        "describe fluorescence sensor",
+                        "introduce test coil for magnetic field",
+                        "specify magnitude of external DC magnetic field",
+                        "describe nuclear memory spin lifetime",
+                        "specify absolute bias magnetic field range",
+                        "describe MW and RF pulse signal delivery",
+                        "specify variation in MW and RF pulses",
+                        "describe optical pulses",
+                        "introduce controller for quantum sensing",
+                        "describe quantum sensing and repetitive readout protocol",
+                        "introduce preparation stage",
+                        "introduce sensing stage",
+                        "describe magnetic field sensing sequence",
+                        "introduce swap stage",
+                        "describe mapping of information to nuclear spin states",
+                        "introduce readout stage",
+                        "describe repetitive readouts",
+                        "compare to prior art",
+                        "illustrate signal to noise ratio enhancement",
+                        "illustrate sensitivity enhancement",
+                        "describe experimental results",
+                        "specify signal to noise ratio enhancement",
+                        "specify sensitivity enhancement",
+                        "describe alternatives and modifications",
+                        "conclude disclosure"
+                    ],
+                    "num_characters": 16703,
+                    "outline_medium": [
+                        "introduce quantum sensor system",
+                        "describe NV center ensemble layer",
+                        "describe two-qubit system",
+                        "describe external magnetic bias field",
+                        "describe antenna for MW and RF pulses",
+                        "describe laser source for light pulse",
+                        "describe fluorescence sensor",
+                        "describe test coil for magnetic field",
+                        "describe homogeneity of magnetic field",
+                        "describe MW and RF pulses",
+                        "describe optical pulses",
+                        "describe controller for quantum sensing",
+                        "describe quantum sensing and repetitive readout protocol",
+                        "describe preparation stage",
+                        "describe sensing stage",
+                        "describe readout stage"
+                    ],
+                    "outline_short": [
+                        "introduce quantum sensor system",
+                        "describe NV center ensemble layer",
+                        "detail two-qubit system of NV centers",
+                        "describe antenna for MW and RF pulse signals",
+                        "introduce laser source for optical pulses",
+                        "describe fluorescence sensor for readout",
+                        "detail homogeneity requirements",
+                        "introduce controller for pulse control and readout"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method of quantum sensing, comprising:\nobtaining information regarding a target signal in electronic spin states of quantum defects in an ensemble of quantum defects;\nmapping the information regarding the target signal from the electronic spin states of the quantum defects to corresponding nuclear spin states associated with the quantum defects;\napplying a light pulse to the ensemble of quantum defects to reset the electronic spin states of the quantum defects; and\nrepeating a readout stage a plurality of times within a readout duration, wherein the readout stage includes:\nmapping the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states; and\napplying a data acquisition readout pulse to optically measure the electronic spin states of the quantum defects.",
+        "2. The method according to claim 1, wherein obtaining the information includes:\napplying a light pulse to the ensemble of quantum defects to polarize the electronic spin states of the quantum defects; and\nperforming a sensing sequence to obtain the information regarding the target signal in the electronic spin states of the quantum defects.",
+        "3. The method according to claim 2, wherein the sensing sequence includes one of: an XY decoupling sequence; a correlation spectroscopy sequence; or a DROID-60 decoupling sequence.",
+        "4. The method according to claim 1, wherein mapping the information regarding the target signal from the electronic spin states of the quantum defects to the corresponding nuclear spin states associated with the quantum defects includes applying a microwave (MW) pulse and a radio frequency (RF) pulse to the ensemble of quantum defects.",
+        "5. The method according to claim 1, wherein mapping the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states includes applying an MW pulse to the ensemble of quantum defects.",
+        "6. The method according to claim 5, wherein the readout stage further includes, after applying the MW pulse, applying a light pulse to the ensemble of quantum defects to repolarize the electronic spin states of the quantum defects.",
+        "7. The method according to claim 1, further comprising determining the information regarding the target signal based upon the optical measuring in the plurality of readout stages.",
+        "8. The method according to claim 1, wherein the ensemble of quantum defects includes an ensemble of nitrogen vacancy (NV) centers in diamond.",
+        "9. The method according to claim 1, wherein the information regarding the target signal includes information regarding a magnetic field signal.",
+        "10. The method according to claim 9, wherein the information regarding the target signal includes information regarding an AC magnetic field signal.",
+        "11. The method according to claim 1, further comprising applying a magnetic bias field to the ensemble of quantum defects during the obtaining, the mapping, the applying, and the repeating.",
+        "12. The method according to claim 11, wherein the magnetic bias field has a magnitude at least three times 51.2 mT.",
+        "13. The method according to claim 11, wherein the magnetic bias field has a range of less than 100 uT.",
+        "14. The method according to claim 1, wherein the number of quantum defects in the ensemble of quantum defects is at least on the order of 104.",
+        "15. A quantum sensor, comprising:\nan ensemble of quantum defects; and\nat least one controller including at least one processor and at least one associated memory storing instructions to be executed by the processor to cause the at least one controller to:\ndirect application of a sensing sequence of energy pulses to the ensemble of quantum defects to obtain information regarding a target signal in electronic spin states of quantum defects in an ensemble of quantum defects;\ndirect application of a microwave (MW) pulse and a radio frequency (RF) pulse to the ensemble of quantum defects to map the information regarding the target signal from the electronic spin states of the quantum defects to corresponding nuclear spin states associated with the quantum defects;\ndirect application of a light pulse to the ensemble of quantum defects to reset the electronic spin states of the quantum defects; and\ndirect repetition of a readout stage a plurality of times within a readout duration, wherein, in the readout stage, the at least one controller is caused to:\ndirect application of an MW pulse to the ensemble of quantum defects to map the information regarding the target signal back from the nuclear spin states to the corresponding electronic spin states; and\ndirect application of a data acquisition readout pulse to the ensemble of quantum defects to optically measure the electronic spin states of the quantum defects.",
+        "16. The quantum sensor according to claim 15, wherein the at least one controller is further caused to direct application of a light pulse to the ensemble of quantum defects to polarize the electronic spin states of the quantum defects prior to the sensing sequence.",
+        "17. The quantum sensor according to claim 16, wherein the at least one controller is further caused to direct application of a light pulse to the ensemble of quantum defects to repolarize the electronic spin states of the quantum defects after the MW pulse in each readout stage.",
+        "18. The quantum sensor according to claim 16, wherein the ensemble of quantum defects includes an ensemble of nitrogen vacancy (NV) centers in diamond.",
+        "19. The quantum sensor according to claim 16, wherein the information regarding the target signal includes information regarding a magnetic field signal.",
+        "20. The quantum sensor according to claim 16, wherein the at least one controller is further caused to direct application of a magnetic bias field to the ensemble of quantum defects at a magnitude at least three times 51.2 mT."
+    ]
+}

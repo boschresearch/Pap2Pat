@@ -1,0 +1,345 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to frequency comb generation
+
+## BRIEF SUMMARY
+
+- introduce optical frequency comb generation
+- describe device with thermal oxide substrate and microring resonator
+- specify microring resonator material as lithium niobate
+- describe pump laser optically coupled to microring resonator
+- specify Kerr frequency comb emission
+- specify Kerr frequency comb span
+- describe microring resonator structure
+- specify slab portion thickness
+- specify ridge portion height
+- specify ridge portion width
+- specify cross-sectional area of ridge portion
+- specify pump rejection ratio
+- specify pump mode wavelength
+- specify Q factor of microring resonator
+- specify pump laser power
+- specify microring resonator radius
+- specify Kerr frequency comb line spacing
+- specify Kerr frequency comb polarization
+- describe device with electrodes for modulating refractive index
+- specify electro-optical frequency comb emission
+- specify electro-optical frequency comb span
+- specify electro-optical frequency comb spacing
+- describe electrodes and their positioning
+- specify thermal oxide substrate thickness
+- describe inductor electrically coupled to electrodes
+- summarize embodiments
+- describe resonator characteristics
+- describe electrode characteristics
+- describe substrate characteristics
+- describe pump laser characteristics
+- describe electro-optical frequency comb characteristics
+- describe method of generating Kerr frequency comb
+- describe microring resonator characteristics
+- describe electro-optic material characteristics
+- describe Kerr frequency comb characteristics
+- describe method of generating electro-optical frequency
+- describe resonator characteristics
+- describe substrate characteristics
+- describe electro-optic material characteristics
+- describe racetrack resonator characteristics
+- describe ring resonator characteristics
+- describe electrode positioning
+- describe pump laser coupling
+- describe output waveguide coupling
+- describe coupling resonator characteristics
+- describe electro-optical frequency comb characteristics
+- describe electrode characteristics
+- describe resonator characteristics
+- describe method of generating electro-optical frequency
+
+## DETAILED DESCRIPTION
+
+- introduce frequency combs
+- applications of frequency combs
+- limitations of current frequency comb generation methods
+- introduce χ(2) materials
+- introduce Kerr frequency comb generation
+- describe Kerr comb generation on lithium niobate
+- design waveguide widths and heights for anomalous dispersion
+- discuss limitations of other material platforms
+- introduce monolithic integration of lithium niobate nanophotonic waveguides
+- describe χ(2) and χ(3) nonlinearities of lithium niobate
+- discuss requirements for χ(3) optical parametric oscillation process
+- describe dispersion engineered micro-ring resonator
+- show simulated group velocity dispersion of integrated LN waveguides
+- show simulated field profile of fundamental TE mode
+- describe measurement setup
+- show transmission spectrum of pump mode
+- show optical spectrum of generated frequency comb
+- discuss frequency comb generation in high Q LN microresonator
+- describe single-crystal LN film bonding on SiO2 substrate
+- describe microresonator fabrication using lithography and dry etching
+- discuss anomalous dispersion in telecom wavelength range
+- describe loaded and intrinsic Q factors of microresonator
+- discuss OPO pump threshold
+- describe microring resonator used in Kerr comb generator
+- describe broadband frequency comb generation
+- discuss soliton states
+- describe LN microresonators sustaining high optical powers
+- discuss quenching behavior at high pump powers
+- describe monolithic integrated photonic circuit
+- describe microresonator frequency comb generator
+- describe electro-optically tunable add-drop filter
+- describe continuous wave pump light passing through microring resonator
+- describe frequency comb generation and filtering
+- describe single target comb line selection
+- describe modulation of selected comb line
+- describe fabrication of devices from LNOI wafer
+- describe electron-beam lithography and reactive ion etching
+- describe cladding with SiO2 layer
+- describe removal of oxide cladding in comb generation areas
+- describe chip edge dicing and polishing
+- show transmission spectrum of microring resonator
+- show transmission spectra of comb generator
+- describe numerical simulation of group-velocity dispersions
+- show generated frequency comb spectra
+- describe comb generator and measurement setup
+- show measured optical spectra at points along filter
+- show eye diagrams of output of filter
+- motivate electro-optic modulation
+- introduce type II comb generation
+- describe EO comb generation using χ(2) process
+- motivate on-chip frequency comb generation
+- describe Kerr frequency comb generation
+- describe limitations of Kerr combs
+- introduce EO comb generators
+- describe resonator-based EO comb generator
+- derive output electric field equation
+- simplify output electric field equation
+- describe optical frequency comb generation
+- derive power equation for qth comb line
+- approximate power equation
+- describe effect of optical and microwave detuning
+- derive power equation for qth comb line with detuning
+- describe modified modulation indices
+- describe effect of microwave detuning
+- describe optical phase noise
+- modify modulator coherence function
+- derive output optical field equation with phase noise
+- describe microwave phase noise suppression
+- introduce round-trip phase model
+- describe resonance condition
+- describe effect of EO modulation on resonance condition
+- plot transmission spectrum
+- describe contributions to optical phase offset
+- derive total phase offset equation
+- describe maximum dispersion-limited bandwidth
+- describe optimization problem
+- visualize sideband generation process
+- introduce EO frequency comb generation
+- limitations of traditional EO comb generators
+- motivation for integrated EO comb generators
+- describe monolithic integration on thin-film lithium niobate platform
+- introduce microring resonator design
+- describe EO comb generation process
+- show micrograph of fabricated LN microring resonator
+- describe fabrication process
+- introduce tunable laser and optical spectrum analyzer
+- describe measurement setup
+- show plot of output characteristics of generated EO comb
+- describe resonator parameters
+- introduce equation for output power transmission
+- describe fitting process for resonator parameters
+- describe waveguide dispersion engineering
+- show plots of simulated dispersion and phase matching condition
+- describe optimization for low microwave drive powers
+- describe optimization for octave-spanning comb
+- describe electrical power consumption estimation
+- introduce equation for electrical power consumption
+- describe ways to reduce electrical power consumption
+- introduce equation for effective pumping power
+- describe minimum electrical power required for octave-spanning EO comb
+- introduce theoretical model for EO comb generation
+- describe resonance condition for comb line generation
+- describe dynamic resonance condition
+- show plot of measured EO comb output spectrum and calculated round-trip phase
+- describe generation of asymmetric combs
+- show plot of measured EO comb output spectrum and calculated round-trip phase for various values of optical frequency detuning
+- describe advantages of integrated EO comb generators
+- show plot of round-trip phase for various EO comb generators
+- describe dispersion engineering for octave-spanning EO combs
+- show plot of beats of an EO comb
+- describe experimental setup for generating beats
+- describe coherent beating between comb lines
+- describe tolerance to detuning of modulation frequency
+- describe driving microresonator electrodes with two phase-locked microwave sources
+- describe frequency offsets ranging from 10 Hz to over 100 MHz
+- describe advantages of integrated EO comb generators
+- describe potential applications of integrated EO comb generators
+- describe noise-filtering properties of optical resonator
+- describe potential for low-noise sources for optical communications
+- describe configurability and stability of EO comb generators
+- describe potential for generating combs with specific shapes and widths
+- conclude with advantages and potential applications of integrated EO comb generators
+- introduce EO comb generation
+- contrast with Kerr-based combs
+- demonstrate frequency components beyond resonator bandwidth
+- describe dual-drive EO comb generation experiment
+- highlight advantages of integrated EO comb sources
+- motivate high-Q microring resonators and confined optical waveguides
+- describe dispersion engineering and high frequency modulation
+- highlight applications of EO combs
+- describe racetrack resonator design
+- explain electro-optic driving principle
+- describe microwave driving signal options
+- highlight importance of waveguide dispersion
+- introduce integrated optical frequency comb generators
+- describe nonlinear OFC generation
+- describe EO comb generation approaches
+- highlight advantages of resonant phase modulation
+- introduce LiNbO3 racetrack micro-resonator with integrated microwave electrodes
+- describe microwave electrode geometry
+- illustrate sideband generation process
+- describe optical microring resonator operation
+- explain mode conversion principle
+- describe continuous-wave light coupling
+- illustrate fabricated LiNbO3 resonator
+- show optical power spectrum of EO comb
+- describe EO comb generator operation
+- highlight advantages of integrated EO comb platform
+- describe travelling wave electrode design
+- describe LC microwave resonator design
+- introduce combining χ(2) and χ(3) combs
+- describe benefits of combined χ(2) and χ(3) combs
+- illustrate integration of array of filters and modulators
+- describe applications of integrated combs
+- illustrate sideband generation process for Kerr combs
+- illustrate sideband generation process for EO combs
+- introduce combined Kerr and EO comb generator
+- describe experimental results of combined Kerr and EO comb generator
+- illustrate frequency combs generated by various comb generators
+- describe electrode configuration for integrated lithium niobate microring resonator
+- introduce optical frequency combs
+- describe limitations of comb generators
+- propose solution using ring as wavelength-dependent coupler
+- describe design trade-offs of ring coupler
+- discuss applications of optical frequency combs
+- describe methods of generating optical frequency combs
+- introduce resonator-enhanced electro-optic (RE-EO) comb generators
+- describe early RE-EO comb generators
+- discuss low-loss integrated technologies for RE-EO comb generators
+- describe dual-resonator design for RE-EO comb generators
+- introduce analysis of output spectrum and noise properties of RE-EO comb generator
+- describe numerical models for determining output comb spectrum
+- propose dual-ring RE-EO comb generator design
+- describe RE-EO comb generator based on ring resonator
+- define complex output optical field
+- describe intra-resonator field gain
+- define cascaded modulation function
+- describe output optical field for resonant operation
+- show intra-resonator power spectrum
+- show intra-resonator temporal power profile
+- describe simplified analytical models for RE-EO comb generators
+- describe power in pth comb line
+- describe analytical solution for resonant operation
+- define power in pth comb line for resonant operation
+- show output spectra for various modulation indices
+- show output spectra for various coupling power transmissions
+- discuss output noise
+- introduce optical input phase noise
+- define power spectral density of input optical field
+- describe electrode configurations for RE-EO comb generator
+- describe microwave inductor and capacitor driver
+- describe traveling wave configuration
+- describe ring coupler design
+- describe limitations of ring coupler design
+- describe dual-ring RE-EO comb generator design
+- describe advantages of dual-ring design
+- describe applications of RE-EO comb generators
+- describe noise properties of RE-EO comb generators
+- describe output comb spectrum
+- conclude RE-EO comb generator design
+- define resonant comb line output PSD
+- derive frequency-dependent linewidth correction term
+- illustrate linewidth correction factor plots
+- analyze modulation phase noise impact
+- derive output field of pth comb line with modulation phase noise
+- calculate PSD of pth comb line with modulation phase noise
+- relate linewidth to phase noise
+- discuss high-frequency comb line phase noise filtering
+- analyze non-resonant optical input
+- derive output power in pth comb line with input optical frequency offset
+- illustrate output spectra with input optical frequency offset
+- analyze non-resonant modulation
+- derive power in pth comb line with modulation frequency offset
+- illustrate output spectra with modulation frequency offset
+- define modified modulation indices
+- discuss efficient numerical model
+- discuss dispersive RE-EO comb generator
+- introduce round-trip phase model
+- derive resonance condition with phase modulation
+- validate round-trip phase model
+- derive timedependent output field with optical frequency offset
+- illustrate time-averaged power transmission
+- discuss extension of round-trip phase model
+- include modulation frequency offset effects
+- include dispersion effects
+- discuss linear dispersion profile
+- conclude round-trip phase model discussion
+- define resonance condition
+- derive dispersion-limited comb width
+- introduce assumptions for output power spectrum
+- define round-trip phase model
+- introduce limitations of round-trip phase model
+- introduce steady-state matrix method
+- derive intra-resonator field equation
+- express intra-resonator field as superposition
+- derive relation between comb lines
+- discuss practical considerations for matrix solver
+- introduce comparison of methods
+- compare analytical model and round-trip phase model
+- compare analytical model and steady-state matrix method
+- discuss effects of dispersion
+- compare output comb spectra with dispersion
+- discuss asymmetric comb spectra
+- introduce frequency-dependent coupler
+- analyze impact of additional ring coupler
+- introduce dual-ring EO comb generator
+- derive equations for dual-ring comb generator
+- relate fields in small and large resonators
+- express fields as superpositions
+- derive relation between comb lines in dual-ring generator
+- discuss output field calculation
+- define output and reflected fields
+- introduce dual-ring comb generator
+- compare output spectra of single-ring and dual-ring comb generators
+- discuss limitations of dual-ring comb generator design
+- propose solution to fabrication challenges
+- analyze output spectra for different FSR ratios
+- discuss application in WDM coherent optical communications systems
+- describe WDM point-to-point inter-data center link
+- list parameters for OSNR calculation
+- compare OSNR of single-ring and dual-ring RE-EO comb generators
+- discuss analytical and numerical methods for predicting output comb spectrum
+- validate models against each other
+- provide fabricable RE-EO comb generator design
+- calculate relation between phase noise of comb line and input optical field
+- define PSD of input optical field
+- derive PSD of output field
+- define So,1(ω), So,2(ω), and So,3(ω)
+- separate time-averaging into two terms
+- discuss uncorrelated optical phase noise
+- separate time-averaging into two terms
+- derive Jacobi-Anger expansion
+- apply expansion to terms
+- obtain expressions for So,1(ω) and So,2(ω)
+- calculate So,3(ω)
+- express So,3(ω) as a function of Sin(ω)
+- derive output PSD
+- introduce modulation frequency offset
+- adjust cascaded modulation function
+- derive output optical field
+- calculate output power in pth comb line
+- discuss alternative materials
+- discuss alternative resonator configurations
+- discuss alternative substrates
+

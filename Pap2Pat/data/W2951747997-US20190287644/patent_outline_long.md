@@ -1,0 +1,145 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate traditional approach
+
+## SUMMARY
+
+- introduce personalized bioinformatics correlation methods
+- describe method of identifying relevant genes
+- acquire data for individuals
+- calculate correlation coefficients
+- randomize pairings and recalculate coefficients
+- compare observed and randomized coefficients
+- identify relevant genes
+- describe system for identifying relevant genes
+- configure interface and memory
+- configure processor to calculate coefficients
+- describe machine-readable storage medium
+- elaborate on acquiring data and calculating coefficients
+
+## DETAILED DESCRIPTION
+
+- motivate personalized bioinformatics methods
+- describe correlation methods and systems
+- exemplify application in gene therapy
+
+### INTRODUCTION
+
+- introduce complex diseases
+- describe heart failure
+- explain limitations of previous studies
+- introduce Hybrid Mouse Diversity Panel (HMDP)
+- describe experimental design
+- explain importance of genetic background
+- introduce concept of "Good Enough Solutions"
+- motivate personalized medicine
+- describe HMDP data
+- explain analysis of differential gene expression
+- introduce Pearson correlation coefficient
+- describe calculation of fold-change of expression
+- describe calculation of fold-change of heart mass
+- explain identification of "fold-change" (FC) genes
+- compare FC genes to SAM genes
+- describe limitations of traditional clinical studies
+- motivate HMDP approach
+- summarize results
+- describe two types of responses to stressor-induced cardiac hypertrophy
+- show global response to ISO
+- analyze gene expression at population level
+- describe individual variations of gene expression
+- compare global DEGs to individual FC genes
+- show correlation between individual FC genes and hypertrophy
+- generalize observations to identify larger set of genes
+- describe method to determine genes associated with hypertrophy
+- filter genes based on co-expression network
+- compute Pearson correlation between gene expression and hypertrophy
+- control for false positives
+- quantify enrichment of genes with high correlation
+- identify 36 FC genes
+- compare FC genes to SAM genes
+- evaluate biological relevance of FC genes
+- enrich FC genes in disease genes from GWAS
+- analyze co-expression and co-regulation of FC and SAM genes
+- show co-expression networks in pre- and post-ISO conditions
+- quantify density of modules
+- compare to randomly selected genes
+- show disjoint communities in co-expression network
+- summarize results
+- introduce FC genes
+- motivate co-regulation
+- summarize enrichment in common TF binding sites
+- describe iRegulon algorithm
+- associate motifs with putative TFs
+- discuss cross-talk between FC and SAM genes
+- explore neighborhood in interactome
+- compute pathway enrichment
+- discuss NFAT signaling
+- describe Cardiac Hypertrophy Signaling Network
+- discuss Hes1 interactions
+- motivate experimental validation of Hes1
+- describe siRNA knockdown in NRVMs
+- discuss effect of Hes1 knockdown on HF markers
+- discuss role of Hes1 in modulating cell cross-sectional area
+- summarize findings on Hes1 as a regulator of cardiac hypertrophy
+- introduce discussion section
+- discuss global response at population level
+- discuss FC genes and their fold-change
+- discuss SAM genes and their enrichment
+- discuss roles of FC and SAM genes in biological networks
+- discuss co-expression modules
+- discuss Nppb as a bridge between FC and SAM genes
+- discuss predicted TFs and their roles
+- discuss potential regulatory balance
+- evaluate post-translational effects at protein level
+- discuss FC genes and their connection to CHSN
+- discuss strain-to-strain variation in response to stressor
+- discuss genetic backgrounds and their effects
+- discuss Kcnip2 and its regulation
+- discuss Nppb and its regulation
+- validate approach by testing Hes1's role
+- discuss Hes1's involvement in cardiac development and disease
+- discuss Hes1's role in regulating cardiac hypertrophy
+- conclude on the importance of the approach
+- introduce RNA extraction and microarray analysis
+- overview of gene correlation method
+- motivate traditional differential gene expression analysis
+- describe traditional differential gene expression analysis
+- introduce HMDP and its advantages
+- describe HMDP experimental design
+- introduce SAM genes
+- motivate correlation-based differential gene expression analysis
+- describe correlation-based differential gene expression analysis
+- introduce fold-change genes
+- describe replicability analysis
+- summarize results of replicability analysis
+- introduce pre-filtering of data
+- describe network approach for pre-filtering
+- introduce computation of randomized correlations
+- describe computation of randomized correlations
+- introduce computation of population-wide DEGs
+- describe computation of population-wide DEGs
+- introduce conversion from mouse symbols to human Entrez IDs
+- describe conversion from mouse symbols to human Entrez IDs
+- introduce HuGE database
+- describe HuGE database
+- introduce pathways
+- describe pathways
+- introduce TF enrichment
+- describe TF enrichment
+- introduce computation of statistics
+- describe computation of statistics
+- introduce cell culture and treatments
+- describe cell culture and treatments
+- introduce RNA isolation and qPCR
+- describe RNA isolation and qPCR
+- introduce quantification of cardiomyocyte cell cross-sectional area
+- describe quantification of cardiomyocyte cell cross-sectional area
+- introduce method of identifying relevant genes
+- describe method of identifying relevant genes
+- introduce example digital processing environment
+- describe example digital processing environment
+- introduce internal structure of a computer
+- describe internal structure of a computer
+

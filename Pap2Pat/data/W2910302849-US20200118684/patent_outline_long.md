@@ -1,0 +1,141 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND
+
+- describe organ transplant waiting list
+- describe limitations of current organ transplant process
+- highlight need for improved system
+
+## SUMMARY
+
+- introduce predictive organ transplant survival rate system
+- describe method for calculating survival rates
+- describe receiving datasets
+- describe calculating first set of estimated survival rates
+- describe calculating second set of estimated survival rates
+- describe generating graph of survival rates
+- describe displaying graph
+- describe characteristics of previous recipients and donors
+- describe characteristics of prospective recipient
+- describe characteristics of organ
+- describe calculating survival rates based on organ type
+- describe assigning weights to characteristics
+- describe comparing characteristics
+- describe calculating transplant score
+- describe updating predictive algorithm
+- describe sending graph to user device
+- describe determining organ recipient
+- describe calculating survival rates for multiple recipients
+- describe identifying organ recipient
+- describe generating graph for organ recipient
+- describe sending offer to organ recipient
+- describe receiving response from organ recipient
+- describe sending graph to server
+- describe determining next organ recipient
+- describe sending offer to next organ recipient
+- describe receiving response from next organ recipient
+- describe sending graph to server
+
+## DETAILED DESCRIPTION
+
+- introduce system for predictive survival rates of prospective organ transplant recipients
+- describe system components, including user devices, computing device, and external server
+- detail user device architecture
+- detail computing device architecture
+- describe database and its contents
+- explain method for calculating estimated survival rates
+- identify characteristics of previous prospective organ transplant recipients
+- identify characteristics of previous organs received by previous prospective organ transplant recipients
+- identify characteristics of previous persons in need of an organ transplant that did not receive the organ transplant
+- describe first set of actual survival rates of previous prospective organ transplant recipients
+- describe second set of actual survival rates of previous persons in need of an organ transplant that did not receive the organ transplant
+- explain congruence of characteristics between prospective organ transplant recipient and previous persons
+- calculate first set of estimated survival rates based on congruent previous persons
+- calculate second set of estimated survival rates based on congruent previous prospective organ transplant recipients
+- generate graph of estimated survival rates
+- send graph to external server for download by user device
+- send instructions to user device to display graph
+- receive response from user device, including approval or denial of organ transplant
+- refine predictive algorithm based on new data
+- update weights assigned to characteristics
+- determine organ recipient for donor organ
+- receive first dataset, including characteristics of previous prospective organ transplant recipients
+- receive second dataset, including characteristics of prospective organ recipients and organ donor
+- calculate first set of estimated survival rates for each prospective organ recipient
+- calculate second set of estimated survival rates for each prospective organ recipient
+- analyze estimated survival rates to determine prospective organ recipient most likely to live longest
+- generate graph of estimated survival rates for prospective organ recipient
+- send graph and offer of organ to prospective organ recipient
+- receive response from prospective organ recipient, including acceptance or denial of organ transplant
+- update predictive algorithm based on new data
+- determine next prospective organ recipient if organ transplant is denied
+- generate graph of estimated survival rates for next prospective organ recipient
+- send graph and offer of organ to next prospective organ recipient
+- receive response from next prospective organ recipient, including acceptance or denial of organ transplant
+- store personally identifiable data for prospective organ recipients
+- provide graphs and information for download by prospective organ recipients
+- require matching personally identifiable data for download
+- describe method for determining predictive organ transplant survival rates
+- receive first dataset from database, external server, and/or user device
+- receive second dataset from database, external server, and/or user device
+- calculate first set of estimated survival rates based on first and second datasets
+- calculate second set of estimated survival rates based on first and second datasets
+- generate graph of estimated survival rates
+- transmit graph to user device and/or external server
+- receive response from user device, including acceptance or denial of organ transplant
+- update predictive algorithm based on new data
+- describe flow chart of method for determining predictive organ transplant survival rates
+- receive first dataset from database, external server, and/or user device
+- receive second dataset from database, external server, and/or user device
+- calculate estimated survival rates based on first and second datasets
+- generate graph of estimated survival rates
+- calculate first set of estimated survival rates
+- compare characteristics of prospective organ recipients
+- determine partial congruence
+- identify second set of actual survival rates
+- set first set of estimated survival rates
+- calculate second set of estimated survival rates
+- compare characteristics of previous organs received
+- determine partial congruence
+- identify first set of actual survival rates
+- set second set of estimated survival rates
+- identify prospective organ recipient with highest second set of estimated survival rates
+- generate first graph
+- send first graph and first message
+- receive first response
+- determine whether first response is acceptance or denial
+- determine next organ recipient
+- identify first set of estimated survival rates for next organ recipient
+- generate second graph
+- send second graph and second message
+- receive second response
+- describe user device
+- describe components of user device
+- describe memory of user device
+- describe transplant app
+- describe data storage devices of user device
+- describe transceiver of user device
+- describe output device of user device
+- describe input device of user device
+- describe computing device
+- describe components of computing device
+- describe memory of computing device
+- describe transplant app of computing device
+- describe data storage devices of computing device
+- describe transceiver of computing device
+- describe output device of computing device
+- describe input device of computing device
+- describe graphical user interface
+- describe buttons of graphical user interface
+- describe functionality of buttons
+- describe display of graph
+- describe user interaction with graphical user interface
+- define terms used in specification
+- describe scope of disclosed technology
+- describe relationship between implementations
+- describe patentable scope of disclosed technology
+

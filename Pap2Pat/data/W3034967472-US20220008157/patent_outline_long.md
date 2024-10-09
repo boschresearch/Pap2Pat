@@ -1,0 +1,397 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- define field of invention
+
+## BACKGROUND OF THE INVENTION
+
+- introduce augmented imaging
+- define tissue parameter
+- motivate oxygenation
+- motivate perfusion
+- limitations of ischemia
+- application of ischemia
+- limitations of existing methods
+- limitations of linear estimation approaches
+- limitations of Monte Carlo methods
+- limitations of illumination conditions
+
+## SUMMARY OF THE INVENTION
+
+- introduce problem of functional imaging
+- propose solution with method and system
+- define method of generating augmented images
+- estimate spectral composition of light
+- obtain multispectral images
+- apply machine learning based regressor or classifier
+- derive tissue parameters from multispectral images
+- train regressor or classifier for different illuminations
+- transform multispectral image based on estimated spectral composition
+- apply standard regressor or classifier
+- retrain regressor or classifier using simulation data
+- combine multiple variants
+- define augmented imaging and tissue parameter
+- provide functional information
+- provide physiological information
+- associate tissue parameters with pixels or regions
+- define tissue classification parameter
+- designate morphological information
+- segment image according to morphological features
+- designate different materials and/or tooth decay
+- designate key landmarks
+- provide event parameter
+- predict medical event
+- estimate spectral composition of illuminating light
+- measure spectral composition
+- compute spectral composition based on control parameters
+- estimate spectral composition from specularly reflected light
+- identify regions of specular reflection
+- transform multispectral image to lower dimensional color space
+- sort regions of specular reflection according to size
+- discard small specular regions
+- subject identified regions to morphologic dilation
+- separate specular and diffused reflection
+- use blind source separation method
+- record multispectral images with lower exposure
+- estimate spectral composition based on selected pixels
+- select pixels with high lightness
+- transform spectral information to quasi-continuous spectrum
+- generate series of augmented images at video rate
+- obtain multispectral images using multispectral sensor
+- configure sensor pixels for measuring intensity of received light
+- obtain multispectral image in a single shot
+- use convolutional neural network (CNN)
+- allow for rapid calculation of tissue parameters
+- enable end-to-end processing of spectral images
+- provide accurate results
+- describe preferred embodiments
+- conclude summary of invention
+- introduce multispectral imaging
+- motivate CNNs for tissue parameter estimation
+- describe neighborhood-based estimation
+- define multispectral pixel
+- describe simulated neighborhood training
+- input reflectance values to regressor/classifier
+- derive RGB image from multispectral image
+- train regressor/classifier with forward model
+- describe layered tissue model
+- define optically relevant tissue parameters
+- adapt spectral reflectance to imaging system
+- estimate intensity associated with each color channel
+- select simulations by comparison with real tissue measurements
+- train regressor/classifier with domain adaption
+- apply multiple regressors/classifiers to multispectral image
+- provide confidence value with tissue parameter prediction
+- handle low confidence values
+- combine tissue parameters from different regions/images
+- derive probabilistic distribution of tissue parameters
+- handle ambiguous tissue parameter distributions
+- generate new multispectral image with different setup
+- describe oxygenation estimation with few wavelength bands
+- determine suitable wavelength bands for oxygenation estimation
+- project augmented image into field of vision of goggles
+- describe components of goggles
+- convert multispectral reflectance to tissue parameters
+- detect out-of-distribution multispectral images
+- determine closeness of multispectral image to training data
+- describe out-of-distribution detection algorithm
+- use ensemble of neural networks for out-of-distribution detection
+- transform data sample with neural networks
+- determine numerical closeness value from transformed data samples
+- use widely applicable information criterion for out-of-distribution detection
+- define widely applicable information criterion
+- use WAIC as numerical closeness value
+- describe predetermined statistical distribution
+- define multivariate standard Gaussian distribution
+- introduce OoD detection algorithm
+- motivate neural networks
+- describe autoencoder based anomaly detection
+- explain variational autoencoder
+- describe OoD detection for regressor or classifier selection
+- outline system for generating augmented images
+- describe apparatus for estimating spectral composition
+- explain multispectral camera
+- outline computing device with machine learning module
+- describe tissue parameters
+- outline system components
+- describe apparatus for estimating spectral composition
+- explain multispectral image transformation
+- describe region of specular reflection identification
+- outline spectral composition estimation
+- describe lower exposure multispectral image recording
+- explain pixel or pixel group selection
+- describe quasi-continuous spectrum transformation
+- outline augmented image generation
+- describe multispectral sensor
+- explain regressor or classifier application
+- describe neighborhood selection
+- outline simulated neighborhood training
+- describe reflectance value input
+- explain dark image subtraction and normalization
+- describe RGB image derivation
+- outline forward model training
+- describe tissue model
+- explain spectral reflectance simulation
+- describe imaging system adaptation
+- outline regressor or classifier training
+- describe subset selection
+- explain confidence value provision
+- describe probabilistic distribution derivation
+- outline new multispectral image generation
+- describe oxygenation or blood volume fraction related tissue parameter
+- explain multispectral image composition
+- describe out of distribution detection
+- outline OoD detection algorithm
+- describe ensemble of neural networks
+- explain widely applicable information criterion
+- describe predetermined statistical distribution
+- outline variational autoencoder based OoD detection
+- describe OoD detection for regressor or classifier selection
+- explain training dataset association
+- describe repeated OoD detection
+- outline change in condition detection
+- describe illumination condition detection
+- explain system configuration
+- describe display device configuration
+- outline goggles configuration
+- describe multispectral camera integration
+- explain microphone integration
+- describe wireless data link integration
+- outline data processing unit configuration
+- describe gesture recognition
+- explain augmented image display control
+- describe system configuration
+
+## DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce multispectral imaging
+- describe limitations of deciphering molecular composition
+- introduce embodiment of invention for video-rate estimation
+- describe offline and online parts of augmented imaging method
+- generate samples from point-wise model of artificial tissue
+- calculate spectral reflectance using highly accurate simulations
+- transform spectral reflectance to camera space
+- train machine learning regressor
+- apply trained regressor to real multispectral images
+- derive tissue parameters from reflectance measurements
+- display tissue parameters as an image
+- describe display options for laparoscopic applications
+- describe display options for open surgery applications
+- introduce forward model for sample creation and transformation
+- describe layered tissue model
+- define optically relevant tissue properties
+- calculate absorption coefficient
+- calculate reduced scattering coefficient
+- calculate scattering coefficient
+- assume pixel independence
+- calculate spectral reflectance using MCML approach
+- adapt spectral reflectance to imaging system
+- convert spectral reflectance to image intensities
+- describe camera noise
+- simulate image intensity
+- simplify image intensity model
+- calculate band reflectance
+- calculate normalized reflectance
+- calculate normalized absorbance
+- train machine learning regressor
+- describe machine learning based inversion
+- introduce random regression forests
+- describe decision trees
+- describe learning trees using greedy algorithm
+- describe advantages of random forest regressors
+- introduce neural networks as alternative
+- apply trained regressor to in vivo acquired multispectral images
+- transform images to normalized reflectance
+- transform images to absorbance
+- normalize images by 2 norm
+- enable video rate analysis
+- describe laparoscopic system
+- introduce multispectral snapshot camera
+- explain camera specifications
+- describe blue/green filter
+- introduce computing device and machine learning module
+- describe data link and display device
+- show example image on display
+- motivate convolutional neural networks
+- describe offline training network
+- describe live evaluation network
+- introduce data preparation module
+- simulate spectral reflectance
+- adapt simulations to imaging hardware
+- simulate local neighborhoods
+- account for spatial extent of mosaic pattern
+- describe incorporation of neighborhood information
+- model tissue inhomogeneities
+- model sensor noise
+- introduce normalization module
+- demosaic images
+- normalize reflectances
+- introduce functional estimation module
+- describe convolution/ReLU blocks
+- describe fully convolutional architecture
+- obtain tissue parameter image
+- compare with true tissue parameters
+- calculate loss
+- employ functional estimation module in live evaluation network
+- output functional image
+- apply machine learning based regressor
+- define loss function
+- introduce Euclidean loss
+- scale real and estimated parameters
+- copy trained weights and biases
+- transform camera images to reflectance
+- compute reflectance
+- incorporate normalization into network
+- store white and dark recordings
+- estimate RGB image
+- reconstruct idealized RGB filter response
+- find linear transformation by least squares regression
+- represent transformation by 1x1 filters
+- introduce practical implementation
+- describe target application
+- explain verification of correct clamping
+- show results of multispectral imaging
+- compare performance of different methods
+- discuss limitations of Beer-Lambert approach
+- show mean oxygenation and standard deviation
+- compare different training methods for CNN
+- introduce autocalibration step
+- estimate spectral composition of light source
+- ensure regressor matches estimated spectral composition
+- describe method for estimating light source from specular reflections
+- identify specular highlights in MSI
+- transform MSI to HSI color space
+- segment HSI image into specular regions and non-specular regions
+- sort specular regions by size
+- deal with overexposed pixels using morphologic dilatation
+- separate diffused and specular reflection components using PCA
+- estimate spectrum of illumination light source
+- derive quasi-continuous spectrum of actual light source
+- apply color constancy method
+- illustrate simpler variant for estimating spectral composition of light
+- acquire low exposure images
+- process low exposure images using specular highlight segmentation approach
+- estimate illuminant based on specular highlight pixels
+- compute Euclidean angle between illuminant spectra
+- generate in silico data for quantitative validation
+- simulate multispectral measurements with corresponding ground truth oxygenation
+- assess accuracy and robustness of approach to estimating spectrum
+- analyze effect of errors in estimation of spectrum on accuracy of functional parameter estimation
+- determine empirically appropriate values for hyperparameters
+- perform initial experiments using validation LS
+- analyze low exposure images in validation set
+- define signal-to-noise ratio (SNR)
+- set exposure time to that with maximum SNR
+- acquire multiple low exposure images
+- compute descriptive statistics for angle between reference spectrum and estimated spectrum
+- quantify impact of error in illuminant estimation on oxygenation estimation error
+- simulate set of ground truth optical properties
+- generate training sets for each of the five light sources
+- train regressor for oxygenation estimation
+- test performance of regressors
+- compute descriptive statistics for quality of oxygenation estimation
+- perform qualitative validation using multispectral imaging stream
+- apply automatic light source calibration
+- update regressor to one tailored to estimated light source
+- visualize oxygenation results in region of interest
+- show reference illuminant spectrum along with estimations
+- summarize performance of illuminant estimation method
+- show mean error in oxygenation estimation when using ground truth illuminant for training
+- show benefit of presented approach in vivo
+- illustrate error in blood oxygenation estimation when assuming constant illumination
+- compensate for changing illumination spectrum using automatic LS calibration
+- produce same blood oxygenation value under different illumination spectrum
+- describe method for estimating light source from specular reflections
+- summarize approach to illuminant estimation
+- confirm guiding hypothesis
+- show high accuracy of estimations
+- attribute robustness to hyperparameters
+- describe embodiment assumptions
+- extend method for different illuminants
+- describe alternative machine learning algorithms
+- describe MSI-based augmented imaging system
+- associate camera with operating room light source
+- describe computing device and display device
+- describe goggles embodiment
+- describe data processing unit functionality
+- describe autocalibration schemes
+- describe augmented image display
+- describe gesture recognition
+- describe eye tracking
+- describe speech control
+- describe rearrangement of components
+- describe connection to external database
+- describe teaching programs
+- describe anatomic structure classification
+- describe automatic classification step
+- describe organ recognition approach
+- describe confidence estimate assessment
+- describe improvement over prior art
+- describe multispectral imaging limitations
+- describe improvement with multispectral sensor
+- describe trade-off between processing speed and spatial resolution
+- describe framework for performance assessment
+- describe simulation workflow
+- describe band selection approaches
+- describe wrapper methods
+- describe filter methods
+- describe comparison of band selection methods
+- describe identified optimal bands
+- describe preferred embodiments
+- propose integrating uncertainty quantification
+- categorize main sources of uncertainty
+- determine uncertainty of estimation
+- describe measures of confidence
+- describe probabilistic inference
+- describe other probabilistic approaches
+- use uncertainty in multiple ways
+- visualize uncertainty
+- perform confidence-based value aggregation
+- perform mode-based post-processing
+- resolve ambiguity
+- describe machine learning algorithms
+- guarantee accuracy of algorithms
+- detect out of distribution spectra
+- propose multi-stage process for uncertainty handling
+- describe OoD detection
+- perform regression and uncertainty estimation
+- establish full posterior probability distribution
+- implement information theory based approach
+- describe widely applicable information criterion
+- define WAIC
+- compute WAIC with invertible neural networks
+- use deep neural network to encode spectra
+- compute log-likelihood
+- describe architecture of invertible neural networks
+- train ensemble of INNs
+- describe training process
+
+### EXAMPLES
+
+- introduce in silico validation
+- describe simulation framework
+- generate data set Xraw
+- split data set into training and test sets
+- convert spectra to camera measurements
+- split XSCtr into small training set and superset
+- train ensemble of INNs on XSCtr,s
+- evaluate WAIC value on XSCsup
+- define XSCsup,r
+- investigate WAIC distribution of XSCsup,r
+- investigate correct classification of outliers
+- show results of WAIC method in FIG. 23
+- show WAIC distribution of training set, superset, and restricted superset in FIG. 24
+- introduce in vivo applications
+- describe detection of abnormal tissue or artificial objects
+- train ensemble of INNs on complete training set XSCtr
+- acquire endoscopic images of porcine organs
+- classify organs as in-domain or out-of-domain
+- show WAIC distributions of simulated test data, in-domain organs, and out-of-domain organ in FIG. 25
+- describe use of OoD detection for detecting scene changes
+- describe automatic detection of change in illumination
+- show WAIC time series for region of interest in FIG. 26
+- discuss limitations of WAIC and need for normalization
+- suggest adapting methods for network compression
+- conclude with remarks on scope of invention
+

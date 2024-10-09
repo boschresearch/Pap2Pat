@@ -1,0 +1,143 @@
+# DESCRIPTION
+
+## BACKGROUND OF THE INVENTION
+
+- introduce microfluidic devices
+- limitations of current microfluidic systems
+- need for reliable and cost-effective solutions
+
+## SUMMARY OF THE INVENTION
+
+- introduce programmable fluidic manipulation
+- describe apparatus with punch card guide
+- explain actuator rotation using punch card
+- describe microfluidic channel chip
+- introduce punch card medium
+- summarize system and kit embodiments
+
+## DETAILED DESCRIPTION
+
+- introduce programmable microfluidics
+- define microfluidic channel
+- define microfluidic device and chip
+- define microfluidic protocol
+- describe punch card
+- define actuator
+- describe microfluidic actuation apparatus
+- describe chip with inputs and output
+- describe actuator interaction region
+- describe multi-phase system
+- describe limitations of current systems
+- describe valve-based systems
+- describe thin film metal flexures
+- describe programmability of microfluidic systems
+- describe droplet-based system
+- describe advantages of programmable microfluidics
+- describe high-speed materials processing
+- describe expandable microfluidic chip design
+- describe disposable devices
+- describe advantages over pipettes
+- describe new features of embodiments
+- describe system components
+- describe actuator apparatus
+- describe stiff paper card with holes
+- describe microchannel compression
+- describe fluid manipulation
+- describe actuator and shaft
+- describe punch card guides and punch card
+- describe actuator interaction region
+- describe multiple-mode actuation
+- illustrate rocking actuator
+- describe actuator and spring configuration
+- describe punch card guide and spring support
+- describe manual actuation
+- illustrate exploded view of microfluidic chip and actuation apparatus
+- describe actuator support and recess
+- describe actuators and teeth
+- describe punch card guide and roller
+- describe actuation apparatus with manual crank
+- describe fluid propulsion and punch card advancement
+- illustrate wind-up mechanism
+- illustrate hydraulic pump
+- describe microfluidic chip and reaction chamber
+- describe microfluidic channel chip
+- illustrate microfluidic chip with fluid movement
+- describe actuation apparatus
+- illustrate phase-diagram of flow regimes
+- describe operation of apparatus with chip and punch card tape
+- illustrate example droplet generation
+- describe operation of device with punch card tape and material encapsulated
+- illustrate compression of microchannel by actuator
+- illustrate example actuator and tooth shapes
+- describe various actuator shapes and tooth designs
+- describe various size actuators and teeth
+- describe analytical model for single phase fluid experiments
+- illustrate geometry of actuator interaction with microchannel
+- describe calculation of distance along microchannel
+- describe equation for value of L
+- illustrate example operation of device with punch card tape
+- describe incorporation of multiple droplets per bit of code
+- define microchannel geometry
+- derive volume of fluid in motion
+- illustrate fluid flow in microchannel
+- describe actuator tooth motion
+- calculate fluid velocity
+- illustrate droplet volume dependence on compressed volume
+- illustrate droplet volume dependence on actuation height
+- illustrate flow rate dependence on time
+- describe compression effects on channels
+- illustrate phase diagram of flow regimes
+- describe multiplexing through layered chip
+- illustrate correspondence between punch card and droplets
+- illustrate distribution of droplets in microchannels
+- measure correspondence between punch card and droplets
+- illustrate single phase microfluidics
+- illustrate correspondence between punch card and continuous flow
+- describe microfluidic channels
+- illustrate droplet formation
+- introduce reagent encapsulation
+- describe reagent introduction mechanisms
+- illustrate material transfer from punch card
+- describe import portion configuration
+- illustrate import portion operation
+- describe alternative material transfer mechanism
+- illustrate punch pin activation
+- describe import port configuration
+- illustrate punch pin operation
+- describe capillary action
+- illustrate reagent transfer
+- describe result storage
+- illustrate transmission and processing
+- describe microfluidics chip interface
+- detail capsule rupture mechanism
+- illustrate import channel and absorbent material
+- describe punch pin and actuator interaction
+- illustrate microchannel and capillary tube interaction
+- detail sample/reagent injection process
+- illustrate punch card configurations
+- describe capsule and punch card interaction
+- illustrate dimple configurations
+- describe sample/reagent collection process
+- detail punch card tape features
+- describe material encapsulation and blister pack
+- illustrate valve action by tilting microfluidic chip
+- describe individual valve control mechanism
+- illustrate valve operation with actuator
+- describe bank of valves and actuators
+- illustrate valve with open neutral position
+- describe fabrication methods for component parts
+- describe valve tooth on rocking actuator
+- illustrate method for performing microfluidics
+- obtain apparatus with actuators and punch card guide
+- form chip with microchannels and reservoirs
+- add fluid to reservoirs
+- form punch card with punch features
+- embed material-filled capsules in punch card
+- distribute apparatus, chips, or punch cards
+- receive apparatus, chips, and punch cards
+- contact sample to reservoirs or capsules
+- advance punch card through apparatus
+- visually inspect result in reaction chamber
+- describe applications of programmable microfluidic system
+- provide examples of assays and protocols
+

@@ -1,0 +1,119 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate point cloud processing
+
+## DETAILED DESCRIPTION
+
+- describe system implemented as computer programs on one or more computers
+- introduce point cloud processing task
+- motivate autonomous vehicles
+- describe on-board systems
+- introduce sensor systems
+- describe laser sensors
+- explain point cloud generation
+- describe point cloud processing system
+- introduce voxel grid
+- explain voxel assignment
+- describe non-empty and empty voxels
+- generate initial features
+- process initial features
+- generate multi-scale features
+- fuse features
+- generate point cloud output
+- describe planning system
+- make autonomous driving decisions
+- generate planned vehicle path
+- describe user interface system
+- present information to driver
+- describe point cloud processing system
+- introduce multiple neural networks
+- obtain trained parameter values
+- describe training system
+- receive training data
+- process training data
+- generate new training example
+- provide training examples
+- update network parameters
+- provide trained parameter values
+- describe point cloud output generation
+- obtain point clouds
+- assign points to voxels
+- generate initial features
+- process initial features
+- generate multi-scale features
+- fuse features
+- generate point cloud output
+- describe FIG. 2
+- obtain point clouds
+- assign points to voxels
+- generate initial features
+- process initial features
+- generate multi-scale features
+- fuse features
+- generate point cloud output
+- describe FIG. 3
+- convert points to voxels
+- generate features for each scale
+- perform sparse partition
+- process features using SWFormer block
+- perform feature fusion
+- generate point cloud output
+- define sparse partition
+- motivate sparse representation
+- describe scaled voxel grid
+- explain region division
+- identify selected non-empty voxels
+- assign initial features
+- process empty voxels
+- divide scaled voxel grid into windows
+- introduce n-m-layer SWFormer block
+- describe self-attention mechanism
+- explain Transformer layers
+- apply layer normalization
+- apply multilayer perceptron
+- perform shifted sparse window partition
+- identify non-empty voxels in shifted windows
+- process shifted windows using M Transformer layers
+- fuse multi-scale features
+- generate concatenated features
+- iteratively fuse features
+- perform upsampling and concatenation
+- process concatenated features using 1-layer SWFormer block
+- generate fused features
+- use fused features for point cloud processing task
+- describe system for point cloud processing
+- perform segmentation of voxels
+- filter out background voxels
+- perform voxel diffusion
+- generate diffused features
+- use decoder neural network
+- generate point cloud output
+- perform box regression
+- generate 3D boxes
+- assign object classes
+- jointly train point processing neural network
+- perform segmentation and object detection
+- assign binary ground truth labels
+- train neural network with two-class focal loss
+- determine segmentation score
+- train decoder head neural network
+- perform object detection with total loss function
+- define segmentation loss
+- define heatmap loss
+- define box regression loss
+- backpropagate total loss
+- describe head for semantic segmentation
+- obtain initial feature for each point
+- obtain fused features
+- obtain per-voxel features
+- concatenate features
+- predict segmentation label
+- define configured systems and computer program components
+- describe digital electronic circuitry
+- describe computer storage medium
+- define data processing apparatus
+- describe computer program
+- describe engine and computer-readable media
+

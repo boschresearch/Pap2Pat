@@ -1,0 +1,239 @@
+# DESCRIPTION
+
+## FIELD
+
+- define MS interferometry and OCT embodiments
+
+## BACKGROUND
+
+- explain SD-interferometry and SD-OCT
+
+## SUMMARY
+
+- introduce OCT techniques
+- describe SD methods
+- explain spectrometer and tunable laser formats
+- define spectral domain OCT system
+- describe two arms interferometer
+- explain decoder function
+- describe channeled spectrum modulation
+- explain Fourier transform operation
+- discuss limitations of FT-OCT
+- introduce Master Slave interferometry
+- describe MS-OCT method
+- explain MS-calculator function
+- describe storage of masks
+- explain MS-processor operation
+- describe en-face OCT images production
+- explain A-scan production
+- describe typical en-face scans
+- describe typical A-scan
+- explain electrical signal representation
+- describe minimum number of resolvable pixels
+- explain sweeping time interval
+- describe normal raster scanning
+- explain index of spectral scan events
+- describe channeled spectrum delivery
+- explain correlation in wavenumber
+- describe MS-calculator implementation
+- explain compound comparator operation
+- describe Master stage operation
+- explain Slave stage operation
+- distinguish OCT applications
+- describe retina imaging
+- describe organs and tissue subject to surgery
+- explain axial movement correction
+- describe post-acquisition methods
+- describe post-acquisition methods with sensor
+- describe real-time tracking
+- explain software compensation method
+- describe correction of eye-motion artifacts
+- explain phase-resolved OCT angiography
+- describe optical coherence angiography
+- explain real-time eye motion correction
+- describe RTT using two interferometers
+- explain axial eye motion correction
+- describe limitations of RTT
+- introduce prior art in OCT imaging
+- limitations of prior art in tracking and correction
+- need for faster tracking and correction methods
+- problem of pulsatile blood in retina
+- need to distinguish between axial movement due to bulk displacements and pulsatile blood
+- application to imaging curved targets
+- problem of fragmented en-face images
+- need for real-time en-face flattening
+- need to reduce time between acquisition and display of flattened en-face OCT slices
+- need for quick display of flattened en-face OCT images in surgery
+- dynamics of correction needs to be faster than axial movement
+- need to compensate for cumulated effect of bulk axial movement and axial "walking off" due to lateral scanning of curved objects
+- edge detection in OCT practice
+- limitations of conventional edge detection methods
+- need for more efficient segmentation/edge detection methods
+- limitations of prior art MS implementations
+- need for more versatile signal processing
+- first aspect: Master Slave-OCT system with accessible Mask Selector
+- second aspect: method for dynamic selection of masks from a storage of masks
+- third aspect: method for selection and swap of a selected number of Q masks
+- fourth aspect: devices and methods for flattening tissue
+- fifth aspect: devices and systems employing a position sensor of axial position using a separate interferometer
+- sixth aspect: devices and methods combining axial tracking and correction of curvature
+- seventh aspect: devices and methods using two sensors for better inference of axial movements
+- eighth aspect: devices and methods to produce in quasi real-time en-face images of vasculature
+- overview of the disclosure
+- importance of understanding the nature and character of the claimed subject matter
+- role of the accompanying drawings
+- explanation of the principles and operations of the claimed subject matter
+- summary of the disclosure
+- conclusion
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- introduce embodiments of the apparatus
+- describe single interferometer embodiment
+- detail Master Slave (MS) processor components
+- explain sensor function and corrector operation
+- describe decoder operation and synchro signal generation
+- calculate time available for different processes
+- discuss real-time, quasi real-time, and post-acquisition correction modes
+- explain mode switch operation and control signal distribution
+- describe interleaved processes of acquisition, sensing, storage, and correction
+- detail sensor operation using signal from imaging interferometer
+- describe alternative sensor embodiment using separate interferometer
+- explain segmentation using MS or FFT
+- introduce different MS-processor embodiments
+- detail first MS-processor embodiment for flattening of C-scans
+- explain single mask calculation and correction
+- detail second MS-processor embodiment for correction of axial movement in B-scans
+- explain Q masks calculation and correction
+- detail third MS-processor embodiment employing stored masks for flattening of C-scans
+- explain stored mask selection and correction
+- detail fourth MS-processor embodiment employing stored masks for correction of axial movement in B-scans
+- explain dynamic swap of Q masks and correction
+- discuss range of masks and axial range settings
+- compare MS protocol with FFT in terms of operations required
+- explain advantages of MS protocol over FFT
+- discuss dynamic allocation of masks
+- explain selection of masks for different scenarios
+- detail use of MS-processor in different scenarios
+- explain use of MS-processor for displaying en-face OCT images
+- detail storage of masks and selection of mask indices
+- explain use of MS-calculators for C-scans and B-scans
+- discuss enabling of MS-processor embodiments in synchronism with lateral scanning
+- explain flattening process using MS-processor embodiment
+- detail sensor embodiments using MS algorithm or FFT
+- explain segmentation via MS protocol
+- introduce modulus difference threshold
+- define single surface object
+- explain thresholder operation
+- describe array of mask indices
+- illustrate contour of mask indices
+- explain corrector operation
+- introduce alternative embodiment
+- describe stored channeled spectra
+- explain Dynamic MS comparator
+- illustrate T-scan along contour
+- explain speedup of sensing
+- introduce FFT-based embodiment
+- explain FFT processor operation
+- describe A-scan strength
+- explain thresholder operation
+- illustrate depth position retention
+- explain corrector operation
+- describe array of distances
+- illustrate intersection of contour and peaks
+- explain equivalent matrix
+- describe population of matrix
+- explain flattening of T-scan and C-scan
+- describe corrector operation
+- explain storage of mask indices
+- describe generation of single C-scan
+- explain Dynamic MS comparator
+- describe correction function
+- explain timely correction of acquired signals
+- describe storage of channeled spectra
+- explain sequential regimes of operation
+- describe lateral scan duration
+- explain parallel processing
+- describe edge detection for tissue
+- explain results obtained with proof of concept system
+- describe images from finger skin
+- illustrate quasi real time axial tracking and tilting
+- describe images collected from retina
+- explain feedback loop operation
+- describe segmentation operation
+- discuss parallel processing
+- introduce manual segmentation
+- present preliminary results
+- describe axial tracking
+- introduce second interferometer
+- describe sensing axial position
+- correct for axial distance
+- describe sensor operation
+- discuss differences from previous figures
+- describe sensing events
+- discuss trigger rates
+- describe modulus difference
+- discuss thresholding
+- describe mask indices
+- discuss storage of channeled spectra
+- describe edge detection
+- discuss T-scan
+- describe FFT processor
+- discuss A-scan peak position
+- describe distance retention
+- discuss matrix of mask indices
+- describe sensor data transmission
+- discuss MS processor operation
+- describe mask selector operation
+- discuss corrector operation
+- describe axial interval extension
+- discuss edge detection speed
+- describe dynamic search in depth
+- discuss reduced number of masks
+- conclude axial tracking
+- describe ultra-fast sensing and parallel processing
+- introduce dual-sensor embodiment
+- describe first stage of processing
+- describe second stage of processing
+- introduce variance calculation
+- describe OCTA image synthesis
+- describe method for producing en-face OCTA images
+- describe method for producing C-scan OCTA images
+- describe co-registration of images
+- describe alternative method for producing C-scan OCTA images
+- describe method for producing volume OCTA data
+- describe advantage of adaptability to variation of axial resolution
+- describe proof of concept of axial tracking
+- describe imaging system capable of compensating axial movements
+- describe sensor system for axial sensing
+- describe imaging system for OCT imaging
+- describe mechanical correction replacement
+- describe en-face C-scan images acquired without and with axial motion compensation
+- describe moving subset of masks for axial motion compensation
+- describe reduction of motion artefacts
+- describe cross-correlation between B-scan frames
+- describe modifications and other possibilities
+- describe use of one, two or three Tx/2 intervals
+- describe compact 2D lateral scanner implementation
+- describe adjustment of OPD
+- describe refractive and reflective elements
+- describe fiber splitters and plate beamsplitters
+- describe alternative splitting elements
+- describe ultra-fast sensing and parallel processing
+- describe dual-sensor embodiment
+- describe first stage of processing
+- describe second stage of processing
+- introduce variance calculation
+- describe OCTA image synthesis
+- describe method for producing en-face OCTA images
+- describe method for producing C-scan OCTA images
+- describe co-registration of images
+- describe alternative method for producing C-scan OCTA images
+- describe method for producing volume OCTA data
+- describe advantage of adaptability to variation of axial resolution
+- describe proof of concept of axial tracking
+- describe imaging system capable of compensating axial movements
+- describe sensor system for axial sensing
+- describe imaging system for OCT imaging
+- describe mechanical correction replacement
+

@@ -1,0 +1,111 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- motivate trajectory planning
+
+## DETAILED DESCRIPTION
+
+- clarify purpose of description
+- explain diagram conventions
+- define terminology usage
+- explain communication and messaging
+- clarify conditional language usage
+- introduce embodiment descriptions
+
+### General Overview
+
+- introduce safety filter for machine learning-based planners
+- describe functionality of safety filter
+- motivate need for safety filter
+- summarize benefits of safety filter
+- describe limitations of machine learning planners
+- introduce expert knowledge incorporation
+- illustrate example environment
+- describe vehicles and their components
+- describe objects and their characteristics
+- describe routes and their properties
+- describe area and its features
+- describe various systems and their interconnections
+- introduce environment 100
+- describe vehicle 200 components
+- detail autonomous system 202
+- introduce sensor suite
+- describe cameras 202a
+- describe LiDAR sensors 202b
+- describe radar sensors 202c
+- describe microphones 202d
+- describe communication device 202e
+- describe autonomous vehicle compute 202f
+- describe safety controller 202g
+- describe DBW system 202h
+- describe powertrain control system 204
+- describe steering control system 206 and brake system 208
+- introduce steering control system
+- describe brake system
+- introduce platform sensors
+- describe device architecture
+- introduce bus component
+- describe processor component
+- describe memory component
+- describe storage component
+- describe input interface component
+- describe output interface component
+- describe communication interface component
+- introduce device performance
+- describe software instructions
+- introduce data storage
+- describe module implementation
+- introduce autonomous vehicle compute
+- describe perception system
+- describe planning system
+- describe localization system
+- describe control system
+- describe database
+- introduce planning system components
+- describe trajectory generator
+- describe safety filter
+- describe machine learning planner
+- generate trajectories
+- filter trajectories
+- apply safety parameters
+- define predefined assumption
+- define safety check
+- apply trajectory modifier
+- determine unsafe trajectories
+- filter unsafe trajectories
+- provide remaining trajectories
+- generate scores
+- extract features
+- generate score
+- select optimal trajectory
+- determine sufficient time headway
+- determine sufficient time to collision
+- determine sufficient headway
+- add safety buffer
+- apply recursive safety
+- downsample trajectories
+- evaluate ego vehicle
+- modify trajectory
+- filter unsafe trajectories
+- generate filtered trajectories
+- perform trajectory filtering
+- generate scores
+- evaluate trajectory
+- determine safe trajectory
+- provide safe trajectory
+- introduce ML planner
+- select trajectory based on score
+- provide selected trajectory to vehicle controller
+- define system with at least one processor and memory
+- apply safety parameters to trajectories
+- determine unsafe trajectories
+- filter unsafe trajectories
+- provide remaining trajectories to machine learning model
+- define non-transitory computer-readable medium
+- define method with safety parameters and machine learning model
+- set forth non-limiting aspects or embodiments
+- define system with safety check and trajectory modifier
+- define method with safety check and trajectory modifier
+- conclude with scope of invention
+

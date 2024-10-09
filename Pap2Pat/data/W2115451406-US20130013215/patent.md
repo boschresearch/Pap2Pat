@@ -1,0 +1,149 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+The secondary and higher-order structures of a protein dictate its function and biological activity, and are therefore important to many fundamental life processes. Such structures can be determined experimentally through, for example, crystallography or Nuclear Magnetic Resonance Spectroscopy (NMR). However, these experimental techniques are often limited to small-sized proteins. The sample preparation, data gathering and spectra interpretation for these techniques are usually highly time-consuming and complex.
+
+In recent years, computational methods for protein structure prediction have been gaining increasing importance in structural biology. Current approaches to computational analysis often rely on comparisons to previously described (experimentally determined) sequences and structures. One of such approaches is homology modeling, which is based on sequence or structural alignment of the protein or polypeptide with a “template” protein that has a known structure. However, for a protein of interest, a suitable template for homology analysis may be difficult to find, especially in the case of a novel artificial protein. Furthermore, even if such template can be found, an amino acid sequences to be analyzed may have different degrees of divergence from the template, and sequence homology modeling may be unable to predict the structure of those portions of the sequence that are unmatched by the template or their influence on the structure matched portions.
+
+Alternatively, physics-based computational methods have been employed for protein structure determination. These methods include energy minimization, which is not able to sample the vast conformational space of a protein to obtain its native structure, and molecular dynamics simulations, which are computational resource-intensive and therefore can be limited to small proteins (or fractions of larger proteins) and short timescale molecular phenomena.
+
+Physics-based computational methods for determining protein secondary structures are disclosed in International Application PCT/US07/067,639 (the '639 application), filed Apr. 27, 2007, published as WO/2007/140061 and entitled “A Method For Determining And Predicting Protein Autonomous Folding,” the disclosure of which is hereby incorporated by reference in its entirety. The '639 application makes use of an energy-coupled mobility term in multi-energy fields, which relates response speed to energy gradients. The energy gradients have two components: the first energy gradient is the electric field and the second is molecular free energy (with all electrostatic components removed):
+
+\(\begin{matrix}
+{{VP} - {ST} + {\sum\limits_{j}{\varphi_{L_{j}}{n_{j}.}}}} & (1)
+\end{matrix}\)
+
+where V is volume, P is pressure, S is molecular (global) entropy, T is temperature (degrees Kelvin), φLare various non-electrostatic energy terms relating to one or more identifiable molecular constituents, nj. The mobility term is derived based on a condition where the drift of a charged particle in an electric field gradient and its diffusion in free energy gradient reaches an equilibrium, and therefore, the term does not explicitly incorporate electrostatic interactions.
+
+In particular, with D being the diffusion constant, k being the Boltzman constant, the concentration of a charged species of interest being np, the energy-coupled mobility of the charged species is:
+
+\(\begin{matrix}
+{\mu = {\frac{D{\nabla{\ln \left( n_{p} \right)}}}{{\nabla\left\{ {{VP} - {ST} + {\sum\limits_{j}{\varphi_{L_{j}}n_{j}}}} \right\}} + {{kT}{\nabla\ln}\mspace{11mu} n_{p}}}.}} & (2)
+\end{matrix}\)
+
+The computational method of the '639 application employs an effective force based on the energy-coupled mobility and thermal mobility to transform a protein molecule in a computer simulation to its folded structure.
+
+There exists a need for a further refinement of physics-based computational method to improve their efficiency and accuracy for predicting the secondary and higher-order structure of a protein or polypeptide sequence.
+
+## SUMMARY
+
+The disclosed subject matter provides efficient computational methods for determining and/or predicting the secondary or higher-ordered structures of a protein or polypeptide. The method is based, in part, on the recognition of the role of various considerations, including different forces as well as the size of the residues, in determining the secondary structures of a protein or polypeptide. One of such forces is short-range repulsive force that repels non-polar residues from the vicinity of highly charged residues.
+
+In one aspect, the disclosed subject matter provides a screening method for determining secondary structures of a protein without performing computer simulation. The screening method is based in part on the interaction between the electrostatic forces and the electrostatic displacement forces in a subsequence on the protein, and makes use of a set of computational conditional statements. The screening method can include determining both alpha helix and beta sheet structures. The alpha helix determination can include searching for an opening hydrophilic residue and a closing hydrophilic residue spaced by the intervening residues. The opening and closing hydrophilic residues together with the intervening residues define a bracket of residues, and are subject to queries or evaluations using one or more of factors relating to the charge, hydrophobic character, and in some cases, the size (or mass) of the bracketed residues to determine the existence of an alpha helix. The beta sheet determination can include a comparison between the sum of charges of a consecutive sequence of residues and the sum of the hydrophobic character of the sequence. The screening method can be carried out by one or more computing devices, such as desktop computers, work stations, super computers, etc. The computing devices can include processors and computer-readable storage media (e.g., transient and permanent memories), where the processors can be configured to receive instructions loaded on the computer-readable storage media to perform the method.
+
+In a further aspect, the disclosed subject provides a computational method for determining an overall folded structure of a protein or polypeptide. The computational method can makes use of the various forces described above, and can include the screening method to prepare an initial secondary structure of a protein for further simulation. The computational method can provide accurate three dimensional description of a protein, including its tertiary structure, in a highly efficient manner.
+
+## DETAILED DESCRIPTION
+
+The presently disclosed subject matter provides a computational method for determining and/or predicting secondary and/or higher-ordered structures of a protein or polypeptide molecule, or any portion thereof, based on considerations of effective forces including explicit electrostatic interactions as well as thermal mobility.
+
+As depicted in FIG. 1, the computational method includes screening (120) for determining the secondary structures of an amino acid sequence provided (110), and optionally, building an initial 3-dimensional structure of the amino acid sequence (130) based on the secondary structure determined, and simulating the initial 3-dimensional structure using a physics-based simulation method to obtain an overall folded structure of the amino acid sequence (140).
+
+The computational method is based on the understanding that three forces play a central role in protein structure: the electrostatic force, an electrostatic displacement force, and a thermal energy related force. Global entropy change can also be considered a force (the fourth force).
+
+The first force, electrostatic force between two charged bodies, can be determined from Coulomb's law using an appropriate dielectric constant. For example, the dielectric constant of water can be used.
+
+The second force, electrostatic displacement force, refers to a force generated by an electric field acting on a mobile polar media (e.g., liquid water) which is in the direction towards lower electric field strength on mobile non-polar objects. This force, which involves the structural coupling between transporting neural ionic charge and the vapor filled neighboring alpha helix neural structure, is described in Kang and Fortmann, “A Structural Basis for the Hodgkin and Huxley Relation” Appl. Phys. Lett. (2007) 91:223903-05, the contents of which are incorporated by reference herein. This coupling arises through the electrostatic interaction among water, point charge electric field
+
+\(\left( {\overset{\rightarrow}{E} = \frac{q}{4{\pi ɛ}\; r^{2}}} \right),\)
+
+and the vapor filled and/or vapor-like nature of hydrophobic (non-polar) residues that make up the core of neighboring alpha helices.
+
+The reduction in electrostatic field energy generated by an external point charge, W, from when a non-polar species (or a dielectric object) is in an electric field in water (dielectric constant, ∈w) to when the non-polar species is replaced with water, results in a force that pulls water toward the electric field and thereby pushes non-polar matter away from the electric field. This displacement force can be calculated by:
+
+\(\begin{matrix}
+{W = {{{- \frac{1}{2}}{\int_{V_{1}}{\left( {ɛ_{w} - ɛ_{0}} \right){\overset{\rightarrow}{E} \cdot {\overset{\rightarrow}{E}}_{0}}\ {\mspace{11mu} V}}}} \approx {{- \frac{1}{2}}\left( {ɛ_{w} - ɛ_{0}} \right){\overset{\rightarrow}{E} \cdot {\overset{\rightarrow}{E}}_{0}}\Delta \; V} \approx \frac{{- \beta_{0}}{q}^{2}}{r^{4}}}} & (3) \\
+{{Force} = {{- \frac{\partial W}{\partial r}} = \frac{\beta {q}^{2}}{r^{5}}}} & (4)
+\end{matrix}\)
+
+where the subscript 0 denotes electric field strength or dielectric constant at vacuum, and the integration is over the volume of the non-polar protein region.
+
+Here the polarity of the displaced objects is assumed to be water vapor having the permittivity of space, ∈0 and where the volume of the objects and the other constants have been collected in parameter β. It is noted that in Eq. 4, the force is derived approximately as proportional to the inverse of the distance between the non-polar object and the external point charge to the 5th power. However, the force can also be described generally as being proportional to 1/rz, where z is a real number greater than 3, for example, from 3 to 6. The magnitude of the displacement forces acting upon a completely charge-neutral alpha helix sized object under the influence of an electronic point charge at about 0.1 nm distance is comparable to the Coulomb force between two opposite point charges a similar distance.
+
+The third force arises from the thermal energy. This thermal energy force relates to the average motion of one part of the protein relative to another arising from diffusion. There are several possible formulations for the thermal energy force, of which one particularly simple formulation relates the thermal diffusion speed,
+
+\({v = {\sqrt{D/\tau}\underset{\mu\rightarrow{D/{kT}}}{}\sqrt{\mu \; {{kT}/\tau}}}},\)
+
+to the force needed to produce the same speed through drift (where drift speed≡μ∇φeff when the effective thermal force is ∇φeff).
+
+Combining the above three forces, the effective force acting on a portion of the protein relative to another portion can be expressed by:
+
+\(\begin{matrix}
+{F = {\left\lbrack \frac{q_{1}q_{2}}{4{\pi ɛ}\; r^{2}} \right\rbrack + \left\lbrack \frac{\beta {q}^{2}}{r^{5}} \right\rbrack + {\sqrt{{kT}/{\mu\tau}}\underset{\sqrt{{1/{\mu\tau}}\rightarrow\gamma}}{}\left\lbrack \frac{q_{1}q_{2}}{4\pi \; ɛ\; r^{2}} \right\rbrack} + \left\lbrack \frac{\beta {q}^{2}}{r^{5}} \right\rbrack + {\gamma \sqrt{kT}}}} & (5)
+\end{matrix}\)
+
+where τ is a time step or unit time, and γ is constant close to unity (alternatively, the energy-coupled mobility μ described in Eq. 2 can be used explicitly without making the approximation of γ). The first term of Eq. 5 (Coulomb) includes forces between a charge and any polar structure, including those that have net neutral charge, where the attraction of unlike charges and the repulsion of like charges will always orient a polar structure in a way that generates attractive force. The fourth force, the global entropy temperature product can be incorporated into the mobility.
+
+While it is well known that hydrophobic residues can aggregate to form the core of an alpha helix, many regions of a protein having large numbers of closely spaced hydrophobic (non-polar) residues do not form alpha helices. This can be understood in terms of the repulsive force (or displacement force) as described by the second term of Eq. 5. Hydrophobic residues tend to aggregate whenever in close proximity to reduce interfacial energy with water unless blocked from doing so. When a sufficiently large charge exists in the intervening protein segments (e.g., charged residues) the repulsive component generates a large repulsive force. Since both hydrophobic residues are repelled by the same intervening charge(s), hydrophobic-hydrophobic residue aggregation is blocked, and the two hydrophobic residues are forced to separate (displaced) by incoming water drawing by the charge.
+
+An additional consideration unrelated to force for determining the secondary structure of a protein can be included to account for the size effect of large residues. It has been found by the current inventors that alpha helix can be blocked from forming by large sized residues on the sequence concerned (a form of steric hindrance).
+
+Eq. 5 can operate on all size scales. On small size scales, Eq. 5 can be used to determine the conditions for the formation of secondary structures. On larger size-scales, the expression guides the generation of tertiary structures by determining the force between charged protein residues outside of the secondary structures and the secondary structures as a unit.
+
+Based on the above considerations, including the relationship of forces described in Eq. 5, folded structures, e.g., secondary structure and/or higher ordered structures, of proteins can be determined using a detailed model of particle motion in appropriate fields with the appropriate constraint for protein backbone motion. For example, the computational methods for incorporating the forces into internal molecular rotation as described in the '639 application can be used. The relative location of residues and the hydrophobic and charge characteristics of each residue can be used as input parameters.
+
+The method for the determination of the folded structure of a protein can include first determining or denoting secondary structures of the protein according to a screening method that does not require simulation but instead makes use of a set of computational conditional statements. The screening method can be based, in part, on the interplay between the electrostatic forces (the first term in Eq. 5) and the electrostatic displacement force (the second term in Eq. 5) of a subsequence on the protein. The screening method can be implemented in a computer program based on the following considerations.
+
+The screening method includes first determining alpha helix regions, and then determining the beta sheet regions of a protein. Before the alpha helix and beta sheet determination procedure, all the residues on the given amino acid sequence can be denoted unstructured.
+
+FIG. 2 is a diagram illustrating the procedure for determining an alpha helix region according to one embodiment of the screening method. A residue on the amino acid sequence is first selected (210). If the residue is hydrophobic, the next residue is selected (230). The procedure is repeated until a hydrophilic residue is encountered. Whether a residue is hydrophilic can be determined by its hydrophobic character. The hydrophobic character and charge of amino acid residues are well known and can be found in the literature, e.g., Copeland, R. A., 1994, Methods for Protein Analysis, a practical guide to laboratory protocols, Chapman & Hall, New York, where positive values indicate hydrophilic residues and negative indicates hydrophobic residues.
+
+Upon encountering a hydrophilic residue (i-th residue, denoted ni), a scanning bracket is opened (240). The next neighbor amino in the sequence (ni+1) is not queried. The following five amino acids in sequence (ni+2, ni+3, . . . ni+6) are queried to determine if there is a second hydrophilic residue (250). If a second hydrophilic residue cannot be found in the sequence (ni+2, ni+3, . . . ni+6), this procedure stops (260). Otherwise, the first occurrence of such a second hydrophilic residue marks the end point of the bracket (ni+J) (270). The screening method then checks the bracketed set against one or more of the following conditional rules (280). When any of these rules is tested true, the bracketed set is determined to be an alpha helix region.
+
+The first rule involves testing whether there are a sufficient number of hydrophobic residues to aggregate into an alpha helix in the bracket. This can be described by a condition where the cumulative hydrophobic character,
+
+\({\sum\limits_{k = {i + 1}}^{k = {i + {({J - 1})}}}h_{k}},\)
+
+is smaller than a first preset threshold value Γ1. For example, Γ1 can be set to be −3×(J−1).
+
+The second rule involves testing whether the summed charge of the residues within the bracketed set,
+
+\({\sum\limits_{k = {i + 1}}^{k = {i + {({J - 1})}}}q_{k}},\)
+
+is smaller than a second preset threshold, Γ2, i.e., For
+
+\({\sum\limits_{k = {i + 1}}^{k = {i + {({J - 1})}}}q_{k}} < {\Gamma_{2}.}\)
+
+example, Γ2 can be selected to be 0.8 e, where e is the charge of an electron. Under this condition, the bracketed region can be determined to be an alpha helix, as the repulsive component of the electrostatic interaction (Eq. 5) between a charge and a hydrophobic residue is not large enough to prevent the closely spaced hydrophobic residues from aggregating into an alpha helix.
+
+The third rule involves testing whether a large number of residues having the same charge sign that are capable of forming an exterior shell within which hydrophobic residues can aggregate. This condition is expressed as
+
+\({{\sum\limits_{k = {i + 1}}^{k = {i + {({J - 1})}}}q_{k}} > \Gamma_{3}},\)
+
+where Γ3 can be set at approximately 1.5 e.
+
+Additionally, separate considerations for the formation of alpha helices can be applied to bracketed sets containing three or four residues. For the case of a three residue bracketed set, if qi, qi+1, and qi+2 all have the same sign, and either |qi+1|>|qi|&|qi+1|>|qi+2| or |q1+1|<0.2e & mi+1<100 (m is the mass of a residue, in Daltons), the region can be determined to be an alpha helix region. A three residue helix can also be determined to be present when qi and qi+2 have opposite signs and |qi+1|>0.11e.
+
+For a bracketed set containing four residues, when the two interior hydrophobic residues are oppositely charged, alpha helix can form under two conditions: (1) when the two interior residues are both strongly hydrophobic (e.g., hi+1, hi+2<−3); (2) when the charges of the two interior residues are sufficiently small (e.g., |qi+1|, |qi+2|0.5e).
+
+In specific embodiments for a 3-residue bracket, a 5-residue bracket and a 7-residue bracket, an alpha helix can be determined based on the conditionals tabulated in Table 1, where each row independently identifies a conditional sufficient to determine an alpha helix. The summation of charges (Table 1 column 1) determines the overall charge and therefore the magnitude of the electric field exerting repulsive force on hydrophobic residues, a force that opposes hydrophobic residue aggregation and therefore alpha helix formation. The product of charge, as shown in column 2, is positive when there are equal numbers of same charged residues, and negative otherwise. This product of charge when combined with the summation of charge relates to the magnitude of electrostatic attractive (or repulsive) force. The summation of hydrophobic character (last column) is an indication of the net hydrophobic attractive force operating within the region of concern.
+
+In Table 1 above, qk is partial charge of kth residue, hk is hydrophobicity of kth residue, and n is the number of residues intervening the two boundary hydrophilic residues defining the bracket.
+
+The above procedure for determining an alpha helix can be used to determine whether there is an alpha helix region in any portion of interest on the given amino acid sequence. In order to obtain all of the alpha helix regions, the procedure can be repeated by scanning through the entire amino acid sequence. Thereafter, the determination of a beta sheet region can be initiated.
+
+FIG. 3 is a diagram illustrating how a beta sheet can be determined within an exemplary screening method. A residue on the amino acid sequence is first selected (310). If the residue is denoted unstructured (i.e., it is not previously determined to belong to an alpha helix or beta sheet region, 320), the next residue is selected (330). The procedure is repeated until an unstructured residue n, is encountered. A scanning bracket is opened using this unstructured residue as a starting residue (340), and its next 4 consecutive residues (ni+1 through ni+4) are queried to determine if they are all unstructured (350). If the answer is no, the procedure is stopped (360). Otherwise, a scanning bracket of residues ni through ni+4 is established (370). Beta sheet determination is then performed (380) based on the summation of the magnitude of charges and the summation of the hydrophobic character of each residue in the 5-residue bracket. For example, such a 5-residue bracket is determined to be a beta sheet when
+
+\({{\sum\limits_{i}^{i + 4}{q_{i}}} - {0.1{\sum\limits_{i}^{i + 4}h_{i}}}} < {0.3\mspace{14mu} {and}\mspace{14mu} {\sum\limits_{i}^{i + 4}h_{i}}} > {0.1.}\)
+
+The above procedure for beta sheet determination can be repeated for the entire amino acid sequence to obtain all of the beta sheet structures on the sequence.
+
+FIG. 4 shows the results of the screening method performed on Ubiquitin, represented by the dashed line, as compared with its secondary structure determined by NMR, represented by the solid line. The horizontal axis represents the amino acid residue index number on the Ubiquitin sequence, and the vertical axis represents the denotation of each amino acid residue on the Ubiquitin sequence as either belonging to an alpha helix (an assigned value of 1), a beta sheet (value of 2), or an unstructured region (value of 0). As can be seen in FIG. 4, the screening method of the disclosed subject matter correctly identifies most of the secondary structure of Ubiquitin. It is important to note that the experiment itself can have a relatively large margin of error, which can be attributed to data interpretation, thermal fluctuations, and end point constraint on natural proteins (e.g., a residue neighboring an alpha helix may be physically close enough to be confused with an actual helix structure that is characterized by reduced energy). Considering these errors, the secondary structure determined according to the screening method approximates the accuracy of experimental results.
+
+FIGS. 5A-5C show the results of secondary structure prediction using the disclosed screening method for a wide cross-section of proteins. The reference (experimental) structure was obtained from Rost, B., “Review: Protein secondary structure prediction continues to rise”, J. Struct. Bio., no. 134, pp 204-218, 2001. The screening method found essentially all of the secondary structures and correctly determined their character. The accuracy of this procedure has been tested on hundreds of proteins producing accuracies of ˜70±9% for alpha helix and ˜66±14% for beta sheet identification (residue-by-residue comparison between model and experimental for proper secondary structure assignment). The core secondary structure identification has greater accuracy: ˜75±7% and ˜70±12% for helices and beta-sheet respectively.
+
+Further, Table 2 below compares the accuracy of the disclosed screening methods relative to another popular model as embodied in commercial PSIPRED described in the literature. The commercial PSIPRED is based on recognized (statistically analyzed) correlations between a given amino acid sequence and the corresponding experimentally determined structure, and does not depend on physical parameters or perform physics-based calculations. Reference for theoretical background of the PSIPRED program can be found in Jones D T, (1999) Protein secondary structure prediction based on position-specific scoring matrices. J Mol Biol 292:195-202. Again, the data in the table demonstrate the accuracy of the screening method in secondary structure determination.
+
+After determining all the alpha helix and beta sheet structures of an amino acid sequence using the above-described screening method, an initial three dimensional representation (or conformation) of the sequence can be built with the amino acid residues with the appropriate geometries required by the alpha helices and beta sheets as determined. The portion of the protein not belonging to any determined alpha helix or beta sheet, i.e., the unstructured portion, can be built as a linear chain, or in an arbitrary physically permissible conformation. Residue properties including charge, hydrophobic character, mass, etc., can be assigned to an appropriate alpha-carbon atom of each residue of the protein. In addition, for each alpha helix or beta sheet identified in the screening method, the alpha helix or beta sheet can be tagged accordingly with aggregate or summed properties (summed charges, summed hydrophobic character, etc.).
+
+Physics-based computer simulations can then be employed based on the above initial conformations and assigned properties to obtain the tertiary or higher-order structures of the amino acid sequence, as shown in FIG. 1. For example, the methods described in the '639 application for rotating the protein along torsional angles on the protein backbone using effective torques can be used to fold the protein to obtain an overall folded protein structure. Each secondary structure identified in the screening method can be treated as a unit with the summed properties, in which case the internal conformation of these secondary structures are not allowed to change during the simulated folding. This leads to fast convergence of the computational method to arrive at a stable conformation, where higher-ordered structure can be determined. For example, if a physics-based simulation method of the '639 application (i.e., the method based on the mobility of Eq. 2 to account for global factors and the forces represented by Eq. 5) is used, the simulated folding can converge in less than a minute of a desktop computer CPU time to arrive at RMSD values in the 4-5 Å as compared to an experimentally determined structure. Simulations of approximately 10-20 Kilo-Dalton proteins on a desktop computer can predict the full three dimensional protein tertiary structure with RMSD values in the 5-10 Angstroms range. Alternatively, the secondary structures can be allowed to change in the simulated folding to examine the influences of the chain segments surrounding the secondary structures on the secondary structures in the folding process.
+
+FIG. 6 shows a comparison of the overall structure of protein Villin as determined experimentally by NMR (in 6A), and by the physics-based computational method as described above (6B). The superposition (6C) of the structures of 6A and 6B indicates that the method of the disclosed matter has reproduced substantially the “real” structure of Villin.
+
+Table 3 below shows the simulation result of various proteins ranging from 30 to 157 amino acid sequences from physics-based model of the disclosed subject matter using the structures determined by PSIPRED as a reference. Average RMSD value for these sequences relative to experiment (NMR data) was found to be 4.9±1.08 Å. The largest protein reported was the human protein tyrosin phosphotome with 320 amino acids. The method of the disclosed subject matter produced a RMSD value of ˜8 Å. This value is reasonable relative to alternative ab-initio methods for a protein of this size. The RMSD values can be further improved by using molecular dynamics to relax the simulated results, for example, by the AMBER program running on a computer (e.g., a supercomputer).
+
+The methods of the disclosed subject matter can take an arbitrary amino acid sequence as input, and can therefore be used to classify, identify, and investigate shape change dynamics of any given protein or polypeptide. The methods can further be used to gain insight into function-structure relationship, such as the effects of mutation on the structure and function of a protein.
+
+The foregoing merely illustrates the principles of the disclosed subject matter. Various modifications and alterations to the described embodiments will be apparent to those skilled in the art in view of the teachings herein. It will thus be appreciated that those skilled in the art will be able to devise numerous systems and methods which, although not explicitly shown or described herein, embody the principles of the disclosed subject matter and are thus within its spirit and scope. For example, use of different physical parameters for the forces as described in Eq. 5 is contemplated.
+

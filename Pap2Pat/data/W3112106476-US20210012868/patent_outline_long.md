@@ -1,0 +1,1699 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+### Technical Field
+
+- relate to systems and methods for analysis of videos of surgical procedures
+
+### Background Information
+
+- motivate need for unconventional approaches to analyze surgical videos
+
+## SUMMARY
+
+- provide systems and methods for analysis of surgical videos
+- implement using combination of hardware and software
+- store program instructions in non-transitory computer-readable storage media
+- review surgical video
+- access at least one video of a surgical procedure
+- cause video to be output for display
+- overlay surgical timeline on video
+- include markers identifying surgical phase, intraoperative surgical event, and decision making junction
+- enable surgeon to select marker on surgical timeline
+- cause display of video to skip to location associated with selected marker
+- include decision making junction marker
+- enable surgeon to view alternative video clips
+- present differing conduct
+- select decision making junction marker
+- cause display of one or more alternative possible decisions
+- index video
+- access video footage to be indexed
+- analyze video footage to identify video footage location associated with surgical phase
+- generate phase tag
+- associate phase tag with video footage location
+- analyze video footage to identify event location of intraoperative surgical event
+- associate event tag with event location
+- store event characteristic
+- associate video footage with phase tag, event tag, and event characteristic
+- enable user to access data structure through selection of phase tag, event tag, and event characteristic
+- perform lookup in data structure to identify matching subset of stored video footage
+- display matching subset of stored video footage to user
+- generate surgical summary footage
+- access particular surgical footage
+- distinguish frames associated with intraoperative surgical events from frames not associated with surgical activity
+- analyze particular surgical footage to identify surgical outcome and cause
+- detect outcome set of frames and cause set of frames
+- generate cause-effect summary of surgical footage
+- enable surgeon to view cause-effect summary
+- prepare for surgical procedure
+- access repository of surgical video footage
+- enable surgeon to input case-specific information
+
+## DETAILED DESCRIPTION
+
+- define processing and calculating terms
+- introduce computer and processor terminology
+- describe operations performed by a computer
+- explain phrase "for example" and variants
+- describe features of embodiments
+- discuss order of stages in figures
+- describe modules in figures
+- explain phraseology and terminology
+- discuss data structure
+- describe machine learning algorithms
+- train machine learning algorithms
+- use trained machine learning algorithms
+- describe artificial neural networks
+- configure artificial neural networks
+- analyze image data
+- preprocess image data
+- transform image data
+- smooth image data
+- obtain different representation of image data
+- extract edges from image data
+- extract image features from image data
+- analyze image data using rules and functions
+- analyze image data using artificial neural networks
+- analyze image data using object detection algorithms
+- analyze image data using face detection algorithms
+- analyze image data using visual event detection algorithms
+- analyze image data using action detection algorithms
+- analyze image data using motion detection algorithms
+- analyze image data using background subtraction algorithms
+- analyze image data using inference models
+- analyze pixels, voxels, point cloud, range data, etc.
+- describe operating room setup
+- introduce audio sensors and video/image sensors
+- describe light sources in operating room
+- capture video and audio data during surgery
+- capture video/image data of operating table
+- capture video/image data of surgeon
+- capture video/image data of medical equipment
+- describe movable cameras
+- control pitch and yaw angles of cameras
+- track region-of-interest using camera control application
+- use laser for precision tracking
+- control positions of multiple cameras
+- zoom in on region-of-interest
+- capture video/image data from different view angles
+- coordinate position, focus, and magnification of cameras
+- detect bleeding using cameras
+- identify source of bleeding using cameras
+- control camera settings using algorithm
+- describe settings of cameras
+- introduce camera control application
+- track moving or deforming object
+- determine maximum allowable zoom
+- adjust zoom to prevent object escape
+- readjust zoom based on object direction and speed
+- use multiple cameras for triangulation
+- calculate distances using law of sines
+- approximate distance between ROIs
+- determine length scale for anatomical structure
+- measure distances between points and cameras
+- reconstruct 3D model of anatomical structure
+- measure distances between instruments and points
+- use 3D camera for actual and relative locations
+- track ROIs with movable light sources
+- control light color and intensity
+- vary light spectrum and intensity over surface
+- include sensors in operating room components
+- use audio sensors to capture audio
+- use temperature sensors for thermal imaging
+- display views from different cameras
+- show zoomed-in image of surgical instrument
+- introduce surgical instrument with sensors and light sources
+- transmit data from instrument to data-receiving device
+- use wireless communication for data transmission
+- include local memory and processor in instrument
+- control instrument using external device
+- use input controls to adjust sensor and light source parameters
+- measure tissue properties using instrument tips
+- transmit measured data to data-receiving device
+- determine elastic properties of tissue
+- measure distance between instrument tips
+- use distance measurements as length scale
+- introduce other surgical instruments with sensors and light sources
+- review surgical video with surgical timeline
+- mark key decision making junction points
+- view alternative actions at decision making junction points
+- access video of surgical procedure
+- output video for display
+- overlay surgical timeline on video
+- display timeline as graphical representation of events
+- include textual information identifying portions of surgical procedure
+- display timeline alongside video
+- illustrate example timeline overlaid on video
+- define playback
+- introduce markers
+- describe marker representations
+- explain selection of markers
+- detail skipping to marker location
+- introduce automatic marker generation
+- describe computer analysis
+- explain image recognition algorithms
+- detail object detection algorithms
+- introduce machine learning model
+- describe training machine learning model
+- explain identifying surgical phases
+- detail identifying intraoperative events
+- describe identifying event characteristics
+- introduce video indexing techniques
+- explain storing indexed video information
+- detail coding markers by color
+- explain coding markers by criticality level
+- introduce varying marker appearances
+- describe using icons for markers
+- explain distinguishing between events
+- detail using icons for specific events
+- introduce using other visual properties
+- explain using animations for markers
+- detail using font properties for markers
+- conclude marker representations
+- define decision making junction
+- describe decision making junction marker
+- illustrate decision making junction marker
+- explain decision making junction detection
+- describe video analysis for decision making junction detection
+- introduce machine learning model for decision making junction detection
+- explain training examples for machine learning model
+- describe selection of decision making junction marker
+- enable viewing alternative video clips
+- describe alternative video clips
+- present alternative video clips
+- describe display of alternative video clips
+- introduce alternative possible decisions
+- describe display of alternative possible decisions
+- present list of alternative possible decisions
+- include images and statistics in list
+- make list interactive
+- display estimated outcomes of alternative possible decisions
+- determine estimated outcomes
+- base estimated outcomes on known probabilities
+- tailor estimated outcomes to patient characteristics
+- select similar decision making junctions from past surgical procedures
+- base selection on patient characteristics
+- base selection on medical professional characteristics
+- base selection on prior events in surgical procedure
+- determine similarity of prior events
+- include adverse events and complications as prior events
+- associate decision making junction with medical condition
+- select similar decision making junctions based on medical condition
+- determine medical condition from video data
+- analyze video to determine medical condition
+- train machine learning model to determine medical condition
+- display distribution of past decisions
+- describe past decisions made in similar decision making junctions
+- present conditional and unconditional distributions of past decisions
+- introduce surgical video analysis
+- describe video indexing
+- motivate need for efficient video review
+- describe displayed distribution of decision making junctions
+- summarize alternative possible decisions
+- describe graphical representation of distribution
+- introduce analysis of videos of past surgical procedures
+- describe usage of computer vision algorithm
+- analyze video footage to determine outcome
+- use electronic medical records to determine outcome
+- identify similar decision making junctions
+- describe similarity metric
+- introduce intraoperative surgical event markers
+- describe automatic identification of markers
+- enable selection of intraoperative surgical event markers
+- display alternative video clips
+- describe compilation of footage from multiple procedures
+- arrange footage in procedural chronological order
+- display complications from multiple procedures
+- associate markers with multiple procedures
+- display markers on common timeline
+- illustrate process for reviewing surgical videos
+- access at least one video of a surgical procedure
+- cause video to be output for display
+- overlay surgical timeline on video
+- enable selection of markers on timeline
+- skip to location associated with selected marker
+- display additional information about event
+- view alternative video clips of past procedures
+- view information about decision making junction
+- describe need for efficient video indexing
+- automatically detect surgical events
+- enable skipping to specific events
+- view events with specified characteristics
+- specify event within surgical phase
+- access video footage to be indexed
+- describe video footage
+- define surgical procedure
+- access video footage from storage location
+- index video footage
+- associate properties with video footage
+- analyze video footage to identify location
+- describe video footage location
+- represent location as frame number or time index
+- represent location as pixel or coordinate
+- describe image sensor locations
+- describe image sensor in surgical cavity
+- describe image sensor in organ or vasculature
+- describe image sensor on surgical tool
+- define phase
+- provide examples of surgical phases
+- describe user input for identifying video footage location
+- explain user interface for receiving user input
+- describe computer analysis for identifying video footage location
+- introduce image recognition algorithms
+- describe object detection algorithms
+- explain machine learning model for identifying video footage location
+- describe training examples for machine learning model
+- introduce neural network model for identifying video footage location
+- describe training neural network model
+- explain updating trained neural network model
+- describe analyzing video footage to identify surgical event or phase
+- introduce computer image analysis for identifying surgical event or phase
+- describe object and motion detection algorithms
+- explain machine learning techniques for identifying surgical event or phase
+- describe generating phase tag associated with surgical phase
+- explain generating phase tag based on computer analysis
+- describe generating phase tag using machine learning model
+- introduce associating phase tag with video footage location
+- describe associating phase tag with video footage location in database
+- introduce analyzing video footage to identify event location
+- describe intraoperative surgical events
+- explain analyzing video footage to identify event location using computer analysis
+- describe using neural network model to identify event location
+- introduce associating event tag with event location
+- describe associating event tag with event location in database
+- explain associating event tag with event location using data structure
+- describe using same file or database for phase and event tags
+- describe using separate file or database for phase and event tags
+- summarize identifying video footage location
+- summarize generating phase tag
+- summarize associating event tag
+- define event characteristic
+- describe event characteristic examples
+- determine event characteristic
+- user input event characteristic
+- computer analysis event characteristic
+- associate event characteristic with video footage
+- describe data structure
+- illustrate data structure
+- associate video footage with phase tags
+- associate video footage with event tags
+- associate video footage with event characteristics
+- enable user access to data structure
+- select phase tag
+- select event tag
+- select event characteristic
+- illustrate user interface
+- describe search boxes
+- describe dropdown buttons
+- refine search
+- access data structure
+- display video footage
+- electronically transmit video footage
+- store video footage
+- play video footage
+- perform lookup in data structure
+- identify matching subset of video footage
+- use computer analysis for similarity
+- calculate degree of similarity
+- express degree of similarity
+- use graph matching algorithms
+- use k-Nearest-Neighbors algorithms
+- embed data in mathematical space
+- calculate distance in embedded space
+- select nearest entries
+- cause matching subset to be displayed
+- execute instructions for playback
+- present video footage to user
+- transmit video footage for display
+- omit playback of non-matching video footage
+- prevent transmission of non-matching video footage
+- describe surgical footage selection
+- introduce event characteristic
+- motivate adverse outcome
+- describe outcome identification
+- motivate surgical technique
+- describe technique identification
+- motivate surgeon identity
+- describe surgeon identification
+- motivate healthcare provider
+- describe healthcare provider identification
+- motivate time association
+- describe time-based filtering
+- motivate patient characteristic
+- describe patient characteristic identification
+- motivate anatomical structure
+- describe anatomical structure identification
+- motivate physiological response
+- describe physiological response identification
+- motivate surgeon skill level
+- describe surgeon skill level identification
+- describe skill level determination
+- motivate global skill level
+- describe event-specific skill level
+- motivate skill level variation
+- describe skill level aggregation
+- motivate required skill level
+- describe skill level expression
+- motivate aggregate data
+- describe aggregate data compilation
+- motivate similar surgical procedures
+- describe similar procedure identification
+- motivate event tag
+- describe event tag identification
+- motivate phase tag
+- present statistical information
+- define statistical information
+- illustrate statistical information
+- introduce flowcharts
+- describe processing device
+- specify processor components
+- explain memory types
+- describe non-transitory computer readable medium
+- introduce process 800
+- access video footage
+- analyze video footage
+- generate phase tag
+- associate phase tag
+- analyze video footage using VCA
+- identify event location
+- associate event tag
+- store event characteristic
+- describe event characteristic
+- train machine learning model
+- analyze video footage using machine learning model
+- associate event characteristic
+- store data structure
+- enable user access
+- perform lookup
+- display matching video footage
+- motivate surgical summary footage
+- describe method for generating surgical summary footage
+- access surgical footage
+- define surgical footage
+- describe intraoperative surgical event
+- define frame
+- describe first group of frames
+- describe second group of frames
+- define historical data
+- describe accessing historical data
+- distinguish frames with surgical events
+- describe indicators for surgical activity
+- describe machine learning models for surgical activity
+- describe signal processing algorithms
+- detect tools and anatomical features
+- analyze interaction between tools and features
+- detect actions performed by tools
+- detect changes in anatomical features
+- distinguish frames using historical data
+- train machine learning model using historical data
+- analyze surgical footage to detect medical instruments
+- analyze surgical footage to detect anatomical structures
+- detect relative movement between instruments and structures
+- distinguish frames based on relative movement
+- omit non-surgical activity frames
+- detect relative position between instruments and structures
+- distinguish frames based on relative position
+- detect interaction between instruments and structures
+- distinguish frames based on interaction
+- present aggregate of surgical activity frames
+- omit non-surgical activity frames from presentation
+- generate video file of surgical activity frames
+- present surgical activity frames as still images
+- describe medical instruments
+- describe anatomical structures
+- describe machine learning algorithms
+- describe video and image recognition algorithms
+- describe motion detection algorithms
+- describe object detection algorithms
+- describe training examples for machine learning models
+- describe labels for training examples
+- describe threshold selection for relative position
+- describe interaction between instruments and structures
+- describe reflex actions by anatomical structures
+- describe presentation formats for surgical activity frames
+- describe instructions for identifying frames to present
+- define presenting aggregate
+- describe display options
+- explain transmission methods
+- introduce user
+- describe user roles
+- explain request submission
+- describe request processing
+- introduce intraoperative surgical event
+- describe event classification
+- explain exporting frames
+- describe medical record association
+- introduce indexing
+- describe index generation
+- explain compilation generation
+- introduce cause-effect summary
+- describe cause-effect analysis
+- explain outcome detection
+- describe cause detection
+- introduce intermediate phase
+- explain cause-effect summary generation
+- describe FIG. 10
+- introduce process 1000
+- describe step 1010
+- describe step 1020
+- describe step 1030
+- describe step 1040
+- introduce process 1100
+- introduce surgical preparation
+- limitations of conventional approaches
+- motivate compilation video
+- define method
+- describe repository of surgical video footage
+- define surgical video footage
+- describe sets of surgical video footage
+- describe characteristics of surgical procedures
+- describe case-specific information
+- input case-specific information
+- describe graphical user interface
+- receive case-specific information from external device
+- describe patient characteristics
+- enter patient characteristic directly
+- retrieve patient characteristic from database
+- describe surgical tool information
+- compare case-specific information with data
+- identify group of intraoperative events
+- calculate similarity measures
+- compare similarity measures with threshold
+- train machine learning model
+- use machine learning model to identify group of intraoperative events
+- identify tiers of intraoperative events
+- describe artificial neural network
+- feed training data to artificial neural network
+- generate trained model
+- provide case-specific information to artificial neural network
+- identify group of intraoperative events using artificial neural network
+- describe other machine learning algorithms
+- identify specific frames in specific sets of surgical video footage
+- describe indexing of surgical video footage
+- perform lookup or search for intraoperative events
+- form compilation of footage associated with intraoperative events
+- omit portions of identified specific frames
+- determine common characteristic of intraoperative events
+- use machine learning model to identify common characteristic
+- train machine learning model using training examples
+- implement trained machine learning model
+- omit second set from compilation
+- include first set in compilation
+- describe compilation
+- store compilation as separate video file
+- store compilation as instructions
+- include additional frames in compilation
+- describe application of compilation video
+- describe benefits of compilation video
+- describe use of compilation video in surgical preparation
+- describe use of compilation video in training
+- describe use of compilation video in research
+- describe variations of compilation video
+- describe extensions of compilation video
+- describe limitations of compilation video
+- describe future directions of compilation video
+- describe advantages of compilation video
+- describe disadvantages of compilation video
+- describe potential applications of compilation video
+- describe potential impact of compilation video
+- conclude compilation video
+- introduce surgical video footage repository
+- describe presentation of compilation of frames
+- detail outputting data for displaying presentation
+- describe storing presentation in accessible location
+- outline transmitting presentation to external device
+- stitch together disparate clips from differing procedures
+- present clips in chronological order
+- display common surgical timeline with chronological markers
+- describe sequential display of discrete sets of video footage
+- simulate surgical procedure based on identified group of intraoperative events
+- display index of discrete sets of video footage
+- include intraoperative surgical event marker in timeline
+- enable clicking on intraoperative surgical event marker
+- train machine learning model to generate index of repository
+- compare case-specific information with data associated with repository
+- identify group of intraoperative events likely to be encountered
+- identify specific frames in specific sets of surgical video footage
+- determine common characteristic of intraoperative events
+- omit inclusion of second set from compilation
+- include first set in compilation
+- enable surgeon to view presentation
+- describe need for efficient analysis of surgical footage
+- introduce method for analyzing complexity of surgical footage
+- analyze frames to identify anatomical structure
+- use object detection algorithms to identify anatomical structure
+- use machine learning model to identify anatomical structure
+- access first historical data based on analysis of first frame data
+- retrieve first historical data from storage location
+- receive first historical data from image capture device
+- analyze first frame data to identify first historical data
+- include complexity information in first historical data
+- indicate statistical relation between anatomical structure and surgical complexity level
+- correlate surgical complexity level with anatomical structure
+- describe flowchart illustrating example process for surgical preparation
+- access repository of surgical video footage
+- enable surgeon to input case-specific information
+- compare case-specific information with data associated with repository
+- identify group of intraoperative events likely to be encountered
+- identify specific frames in specific sets of surgical video footage
+- determine common characteristic of intraoperative events
+- omit inclusion of second set from compilation
+- include first set in compilation
+- enable surgeon to view presentation
+- introduce surgical complexity level
+- define complexity level
+- motivate complexity level
+- describe factors affecting complexity level
+- represent complexity level
+- analyze frames using historical data
+- identify anatomical structure
+- determine complexity level
+- describe medical tool
+- identify interaction between medical tool and anatomical structure
+- analyze frames using object detection algorithms
+- analyze frames using motion detection algorithms
+- train machine learning model
+- use machine learning model to detect medical tools and anatomical structures
+- identify anatomical structure based on medical tool and interaction
+- determine time between interactions
+- access second historical data
+- analyze second frame data
+- identify second anatomical structure
+- determine second complexity level
+- describe differences between first and second historical data
+- store historical data and frame data
+- tag frames with complexity level
+- store tagged frames
+- receive selection of complexity level
+- access data structure
+- retrieve selected frames
+- display selected frames
+- omit unselected frames
+- describe second historical data
+- analyze second set of frames
+- determine second complexity level
+- describe machine learning model
+- train machine learning model
+- use machine learning model to determine complexity level
+- describe physiological response
+- determine complexity level based on physiological response
+- describe condition of anatomical structure
+- determine complexity level based on condition of anatomical structure
+- describe patient characteristic
+- determine complexity level based on patient characteristic
+- describe skill level of surgeon
+- determine complexity level based on skill level of surgeon
+- describe past performances of surgeon
+- describe training and education of surgeon
+- describe number of surgeries performed by surgeon
+- describe types of surgeries performed by surgeon
+- describe qualifications of surgeon
+- describe years of experience of surgeon
+- describe ratings of surgeon
+- describe past surgical outcomes
+- describe past surgical complications
+- use artificial intelligence to classify surgeon's skill level
+- introduce surgical footage analysis
+- determine skill level of healthcare provider
+- analyze electronic medical record
+- identify medical tool in frames
+- determine complexity level based on tool type
+- analyze event occurring after frames
+- determine complexity level based on event
+- compare complexity levels to threshold
+- select frames for display based on complexity level
+- tag frames with complexity level
+- generate data structure with complexity level
+- analyze frames to identify anatomical structure
+- access historical data for analysis
+- analyze frames using historical data
+- determine complexity level based on analysis
+- analyze frames to identify medical tool and interaction
+- access historical data for analysis
+- analyze frames using historical data
+- determine complexity level based on analysis
+- adjust operating room schedule based on complexity level
+- receive visual data from image sensor
+- track ongoing surgical procedure
+- capture visual data of operating room
+- capture visual data of surgeon and surgical team
+- store visual data as computer files
+- configure image sensor to capture visual data
+- position image sensor in operating room
+- define surgical procedure
+- describe operating room environment
+- track region of interest in visual data
+- control camera motion and rotation
+- zoom in on region of interest
+- analyze visual data to determine complexity level
+- analyze visual data to determine skill level
+- analyze visual data to identify medical tool
+- analyze visual data to identify anatomical structure
+- analyze visual data to determine event occurrence
+- compare complexity levels to threshold
+- select frames for display based on complexity level
+- tag frames with complexity level
+- generate data structure with complexity level
+- analyze visual data to adjust operating room schedule
+- receive input from user to adjust schedule
+- analyze visual data to determine delays
+- analyze visual data to determine early completion
+- adjust operating room schedule based on analysis
+- display adjusted schedule to user
+- store adjusted schedule in database
+- update operating room schedule in real-time
+- provide feedback to user on schedule adjustments
+- introduce camera system
+- describe camera functionality
+- define anatomical structure
+- describe zoom lens functionality
+- explain control application
+- describe rule-based control
+- explain algorithm for camera control
+- describe tracking of moving objects
+- explain zoom adjustment
+- describe prediction of future camera positions
+- introduce system 1401
+- describe computer system 1410
+- explain network 1418
+- describe image sensors 1421 and 1423
+- introduce database 1411
+- describe data storage 1413
+- explain input module 1414
+- describe software instructions 1416
+- introduce audio sensors 1425
+- describe light emitting devices 1427
+- introduce schedule 1430
+- describe input module 1414
+- explain software instructions 1416
+- describe computer-implemented methods
+- explain tangible non-transitory computer-readable mediums
+- describe systems
+- introduce memory
+- describe input interface
+- explain software instructions 1416
+- describe image sensors 1421
+- introduce audio sensors 1425
+- describe light emitting devices 1427
+- introduce schedule 1430
+- describe schedule 1430
+- explain data structure
+- describe form 1601
+- explain information entry
+- describe medical history field
+- introduce surgical team fields
+- explain data structure
+- describe enabling adjustments of an operating room schedule
+- define data structure
+- describe relational database
+- illustrate data tables
+- define fields
+- describe data formats
+- describe accessing data structure
+- analyze visual data
+- determine estimated completion time
+- describe statistical data analysis
+- illustrate graph of completion time
+- describe linear regression model
+- describe multivariate regression model
+- describe non-linear regression model
+- describe machine learning model
+- describe training examples
+- describe analyzing historical data
+- describe determining initial estimated completion time
+- describe using average historical completion time
+- describe selecting similar historical surgical procedures
+- describe analyzing historical data for healthcare professional
+- describe determining expected completion time
+- describe using machine learning model
+- describe obtaining completion time
+- describe analyzing visual data and historical surgical data
+- describe identifying records in historical surgical data
+- describe determining estimated time of completion
+- describe collecting visual data
+- describe adjusting operating room schedule
+- describe training machine learning model
+- describe accessing schedule for surgical operating room
+- describe reading and/or writing information to schedule
+- describe calculating variance from scheduled time
+- describe outputting notification
+- describe updating operating room schedule
+- describe transmitting notification
+- describe determining extent of variance
+- describe outputting notification based on extent of variance
+- describe forgoing outputting notification
+- describe determining whether expected completion time results in delay
+- describe outputting notification based on delay
+- describe forgoing outputting notification based on delay
+- describe using machine learning model to determine delay
+- describe selecting threshold amount of time
+- describe determining delay based on threshold amount
+- describe outputting notification based on delay
+- describe forgoing outputting notification based on delay
+- describe using urgency or importance to determine threshold amount
+- describe outputting notification based on urgency or importance
+- describe forgoing outputting notification based on urgency or importance
+- describe system for analyzing completion times
+- describe outputting notification
+- introduce surgical procedure analysis
+- describe visual data collection
+- explain historical surgical data access
+- analyze visual and historical data
+- determine estimated time of completion
+- access operating room schedule
+- calculate variance from scheduled time
+- output notification
+- define characteristic event
+- detect characteristic event
+- assess information based on historical data
+- determine expected time to complete
+- describe intraoperative surgical event
+- classify events as positive or adverse
+- analyze extended events
+- use machine learning to detect events
+- train machine learning model
+- implement trained model
+- recognize features in visual data
+- analyze video frames
+- detect objects in video
+- track motion in video
+- form conclusions about surgical procedure
+- determine skill level of surgeon
+- update skill level based on success
+- assign success level to surgical procedure
+- update skill level based on adverse events
+- calculate estimated time of completion based on skill level
+- store estimated time of completion in database
+- retrieve estimated time of completion from database
+- detect characteristic event using machine learning
+- detect characteristic event using medical professional input
+- analyze historical times to complete surgical procedure
+- compute average historical completion time
+- update average historical completion time
+- use machine learning to estimate completion time
+- train machine learning model using historical data
+- detect medical tool in visual data
+- calculate estimated completion time based on medical tool
+- detect anatomical structure in visual data
+- calculate estimated completion time based on anatomical structure
+- detect interaction between anatomical structure and medical tool
+- calculate estimated completion time based on interaction
+- describe system for analyzing visual data
+- describe process for analyzing visual data
+- describe computer readable media for analyzing visual data
+- motivate insurance reimbursement
+- limitations of current methods
+- introduce machine learning approach
+- describe surgical footage analysis
+- identify medical instruments
+- identify anatomical structures
+- identify interactions between instruments and structures
+- describe image recognition techniques
+- analyze video frames
+- detect proximity of instruments to structures
+- access database of reimbursement codes
+- correlate codes with instruments, structures, and interactions
+- describe data structure for reimbursement codes
+- show example data structure
+- describe internal data structure of reimbursement codes
+- use machine learning to determine reimbursement codes
+- compare identified interactions with database information
+- determine reimbursement codes associated with surgical procedure
+- identify interactions using machine learning algorithm
+- identify interactions using healthcare professionals
+- output reimbursement codes for insurance reimbursement
+- transmit reimbursement codes to insurance provider
+- output multiple reimbursement codes
+- output codes for multiple segments of surgical procedure
+- output codes for multiple medical instruments
+- output codes for multiple surgeons
+- output codes for multiple reimbursable procedures
+- output codes based on differing interactions with common anatomical structure
+- output codes based on detection of different medical instruments
+- describe use of machine learning for image recognition
+- describe use of machine learning for code generation
+- describe use of database for reimbursement codes
+- describe use of software application for data manipulation
+- describe transmission of reimbursement codes
+- summarize disclosed embodiments
+- conclude insurance reimbursement method
+- introduce reimbursement code determination
+- analyze post-operative surgical report
+- determine reimbursement code based on report
+- capture video frames of surgical footage
+- analyze video frames to determine surgical procedure segments
+- update database with reimbursement codes
+- generate correlations between reimbursement codes and medical instruments
+- generate correlations between reimbursement codes and anatomical structures
+- generate correlations between reimbursement codes and interactions between instruments and structures
+- update database based on generated correlations
+- receive processed reimbursement code and update database
+- use machine learning model to detect medical instruments
+- use machine learning model to detect anatomical structures
+- use machine learning model to detect interactions between instruments and structures
+- analyze video frames to determine condition of anatomical structure
+- determine reimbursement code based on condition of anatomical structure
+- analyze video frames to determine change in condition of anatomical structure
+- determine reimbursement code based on change in condition of anatomical structure
+- analyze video frames to determine usage of medical device
+- determine reimbursement code based on usage of medical device
+- analyze video frames to determine type of usage of medical device
+- determine reimbursement code based on type of usage of medical device
+- train machine learning model using training examples
+- use trained machine learning model to determine reimbursement code
+- analyze video frames to determine amount of medical supply used
+- determine reimbursement code based on amount of medical supply used
+- access video frames captured during surgical procedure
+- analyze video frames to identify medical instruments
+- analyze video frames to identify anatomical structures
+- analyze video frames to identify interactions between instruments and structures
+- access database of reimbursement codes
+- compare identified interactions with database information
+- determine reimbursement code associated with surgical procedure
+- output reimbursement code for insurance reimbursement
+- analyze surgical footage to identify features of surgery
+- analyze surgical footage to identify patient conditions
+- analyze surgical footage to identify surgical intraoperative events
+- extract information from analyzed data for populating postoperative report
+- populate postoperative report with extracted information
+- analyze surgical data to identify features of surgery
+- analyze surgical data to identify patient conditions
+- analyze surgical data to identify surgical intraoperative events
+- extract information from analyzed data for populating postoperative report
+- populate postoperative report with extracted information
+- use machine learning model to analyze surgical data
+- use machine learning model to extract information from surgical data
+- use machine learning model to populate postoperative report
+- analyze video frames to determine surgical procedure segments
+- update database with reimbursement codes for segments
+- generate correlations between reimbursement codes and medical instruments for segments
+- generate correlations between reimbursement codes and anatomical structures for segments
+- generate correlations between reimbursement codes and interactions between instruments and structures for segments
+- update database based on generated correlations for segments
+- introduce post-operative report
+- describe structure of post-operative report
+- explain fields in post-operative report
+- describe sections and subsections in post-operative report
+- illustrate post-operative report with FIG. 23
+- describe uploading information into post-operative report
+- explain processing information for populating post-operative report
+- illustrate process for populating post-operative report with FIG. 24A
+- describe system for processing information and populating post-operative report
+- illustrate system with FIG. 24B
+- describe receiving input of patient identifier
+- describe receiving input of healthcare provider identifier
+- explain types of patient identifiers
+- explain types of healthcare provider identifiers
+- describe receiving input of surgical footage
+- explain types of surgical footage
+- describe analyzing surgical footage to derive image-based information
+- explain types of image-based information
+- describe using machine-learning model to analyze surgical footage
+- describe populating post-operative report with image-based information
+- describe process of populating post-operative report
+- illustrate process with FIG. 25
+- describe analyzing surgical footage to identify phases of surgical procedure
+- explain types of phases of surgical procedure
+- describe identifying phases using user input
+- describe identifying phases using computer analysis
+- explain using image recognition algorithms to identify features
+- describe analyzing frames of video footage
+- describe detecting motion or changes between frames
+- describe using trained machine-learning model to identify phases
+- explain types of surgical procedures
+- describe laparoscopic surgery
+- describe thoracoscopic procedure
+- describe bronchoscopic procedure
+- describe microscopic procedure
+- describe open surgery
+- describe robotic surgery
+- describe appendectomy
+- describe carotid endarterectomy
+- describe carpal tunnel release
+- describe cataract surgery
+- describe cesarean section
+- describe cholecystectomy
+- describe colectomy
+- describe other surgical procedures
+- associate phase name with phase
+- identify phase property
+- express phase property as alphanumerical string
+- use non-textual data as phase property
+- train machine learning model to identify phase properties
+- analyze surgical footage to identify phase property
+- determine beginning of phase
+- associate time marker with phase beginning
+- determine phase property from phase beginning
+- detect surgical event using action detection algorithms
+- identify beginning of phase from surgical event
+- determine ending of phase
+- associate time marker with phase ending
+- transmit data to healthcare provider
+- include patient identifier with transmitted data
+- analyze surgical footage to identify recommendation
+- provide identified recommendation
+- identify intraoperative events
+- provide indications for intraoperative events
+- train machine learning model to generate recommendations
+- analyze surgical footage to identify condition of anatomical structure
+- provide recommendation based on condition
+- provide recommendations to healthcare professional
+- provide recommendations to third party
+- analyze surgical footage to identify potential complications
+- send notification to healthcare professional
+- enable healthcare professional to alter derived image-based information
+- track updates to post-operative report
+- identify automatically generated data in post-operative report
+- analyze surgical footage to identify surgical event
+- identify property of surgical event
+- derive image-based information from event and property
+- determine event name using machine learning model
+- determine event name from healthcare professional
+- associate time marker with surgical event
+- associate time marker with beginning of event
+- associate time marker with end of event
+- include event name in derived image-based information
+- include segment of surgical footage in derived image-based information
+- include image of surgical instrument in derived image-based information
+- include image of anatomical structure in derived image-based information
+- include interaction of surgical instrument and anatomical structure in derived image-based information
+- include duration time for event in derived image-based information
+- describe electronic medical record update
+- introduce software application for storing and displaying medical record
+- describe user input for derived image-based information
+- separate image-based information into parts
+- classify image-based information
+- describe post-operative report structure
+- indicate start of report portions
+- separate post-operative report into portions
+- receive preliminary post-operative report
+- analyze preliminary post-operative report
+- select positions within report
+- identify indicators for positions
+- use NLP algorithms to analyze textual information
+- associate portions of textual information with surgical procedure
+- insert derived image-based information into report
+- analyze surgical footage to select frames
+- cause selected frames to be included in post-operative report
+- receive preliminary post-operative report and surgical footage
+- analyze report and footage to select frames
+- identify adverse event in report
+- retrieve surgical footage for adverse event
+- identify portion of frame showing adverse event
+- insert portion of frame into report
+- analyze report and footage to identify inconsistencies
+- determine inconsistency between report and footage
+- provide indication of identified inconsistency
+- transmit notification of inconsistency
+- receive patient identifier and healthcare provider identifier
+- receive surgical footage of surgical procedure
+- analyze frames to identify phases of surgical procedure
+- associate name with each identified phase
+- detect interactions between medical instruments and biological structures
+- update name associated with phase
+- transmit data to healthcare provider
+- determine beginning of each identified phase
+- associate time marker with beginning of each phase
+- populate post-operative report with transmitted data
+- enable alteration of phase names in post-operative report
+- analyze surgical footage to identify events
+- compare events with sequence of recommended events
+- define surgical procedure
+- list examples of surgical procedures
+- describe deviation from recommended sequence of events
+- provide examples of deviations in various surgeries
+- describe operating room environment
+- describe features of operating room
+- describe operating suite
+- access video frames of video captured during surgery
+- describe image sensor and video frame
+- retrieve video frames from database
+- access stored data identifying recommended sequence of events
+- define surgical event
+- provide examples of surgical events
+- describe unplanned events and complications
+- describe errors and extended events
+- define recommended event
+- describe recommended sequence of events
+- establish recommended sequence of events
+- provide examples of recommended sequences of events
+- describe critical view of safety
+- use critical view of safety to avoid biliary injury
+- describe process of critical view of safety
+- apply critical view of safety in open cholecystectomy
+- apply critical view of safety in laparoscopic surgery
+- confirm critical view of safety intraoperatively
+- describe importance of critical view of safety
+- relate critical view of safety to safe hunting procedures
+- summarize surgical procedure and events
+- summarize recommended sequence of events
+- conclude surgical procedure and events
+- describe recommended sequence of events
+- illustrate example sequence of events
+- describe accessing stored data
+- describe selecting recommended sequence of events
+- describe modifying recommended sequence of events
+- describe analyzing image data
+- describe training machine learning model
+- illustrate example recommended sequence of events
+- describe comparing video frames with recommended sequence
+- describe identifying events within video frames
+- describe identifying deviation between surgical procedure and recommended sequence
+- describe detecting characteristic event
+- describe identifying events using machine learning method
+- describe identifying events using medical professional
+- describe comparing sequence of identified events with recommended sequence
+- illustrate example comparison of sequences
+- describe quantifying difference between events
+- describe defining measure function
+- describe characterizing events by parameters
+- describe representing parameters using data structure
+- describe defining measure function for numerical parameters
+- describe defining measure function for text strings
+- describe comparing images using image recognition algorithm
+- describe evaluating measure function for events of different types
+- describe calculating complete deviation
+- describe identifying large deviations
+- describe storing data related to events and measure function
+- describe using database to store data
+- describe using hard drive to store data
+- describe analyzing stored data
+- describe using stored data for further analysis
+- describe using stored data for machine learning model
+- describe using stored data for identifying deviations
+- introduce measure function
+- compare lists and/or graphs
+- use machine learning model
+- train machine learning model
+- identify deviations
+- list or classify events
+- compare frames to reference frames
+- synchronize frames
+- correlate events
+- identify elapsed time
+- determine deviation
+- provide notification
+- display frames
+- train machine learning model
+- analyze measure of deviation
+- adjust machine learning model
+- assert coincidence of measures
+- define mathematical measure function
+- illustrate process of determining deviation
+- compare events
+- identify inserted event
+- record characterization of event
+- identify indication of deviation
+- provide notification
+- receive indication of action
+- analyze frames
+- recognize surgical tool
+- determine interaction
+- identify preliminary action
+- determine absence of preliminary action
+- identify characteristic of preliminary action
+- provide notification of deviation
+- provide notification postoperatively
+- determine name of intraoperative surgical event
+- access data structure
+- determine video footage characteristics
+- provide notification of deviation
+- receive input from healthcare professional
+- provide notification before action
+- define action
+- introduce surgical procedure monitoring
+- receive input from healthcare professional
+- recognize input using speech recognition model
+- receive input from non-healthcare professional
+- receive input from machine-learning algorithm
+- detect medical instrument in region of interest
+- provide notification of instrument presence
+- identify recommended sequence of events
+- access stored data structure
+- detect surgical tool in anatomical region
+- identify deviation from recommended sequence
+- determine interaction between tool and structure
+- identify proximity of tool to structure
+- determine deviation from reference procedure
+- access frames of video captured during procedure
+- compare frames with recommended sequence
+- identify indication of deviation
+- determine name of intraoperative surgical event
+- provide notification of deviation
+- relate to methods and systems for enabling determination
+- analyze current and/or historical surgical footage
+- identify features of surgery and patient conditions
+- predict and improve surgical outcomes
+- provide decision support for surgical procedures
+- receive video footage of surgical procedure
+- capture video footage using cameras and/or sensors
+- depict patient, medical professional, robot, tool, action
+- include images from endoscope or intracorporeal camera
+- receive video footage via sensor, robot, camera, device
+- access video footage from data storage
+- read, retrieve, or access video footage
+- analyze video footage to identify features
+- identify course of action for positive outcome
+- provide recommendation to operating surgeon
+- provide computerized interface for alerting surgeon
+- provide real-time recommendations during procedure
+- update recommendations during procedure
+- provide decision support for surgical procedures
+- define operating room
+- introduce data structure
+- describe data structure components
+- define image-related data
+- describe surgical decision making junction
+- analyze video footage
+- perform image analysis
+- use machine learning model
+- describe decision making junction examples
+- determine decision making junction
+- analyze historical procedures
+- describe differing courses of action
+- detect physiological response
+- detect motion associated with surgical tool
+- access correlation between outcome and action
+- describe correlation
+- define specific action
+- describe specific action examples
+- introduce additional surgeon
+- output recommendation
+- describe recommendation
+- output recommendation to user
+- provide output at interface
+- describe medical test
+- receive result of medical test
+- output recommendation based on test result
+- describe additional surgeon selection
+- provide indication to additional surgeon
+- describe recommendation components
+- describe current surgical situation
+- describe preemptive or corrective measures
+- describe danger zone mapping
+- identify danger zones
+- train machine learning model
+- analyze video footage using model
+- describe danger zone mapping output
+- describe recommended placement of surgical drain
+- describe other recommendation examples
+- summarize decision support method
+- describe data structure usage
+- describe image-related data usage
+- describe correlation usage
+- conclude decision support method
+- define recommendation
+- include confidence level
+- base on historical surgical procedures
+- include probability of outcome
+- define desired outcome
+- include avoidance of undesired situation
+- base on time elapsed since surgical event
+- include alternative course of action
+- define course of action
+- include indication of undesired outcome
+- base on skill level of surgeon
+- select action based on skill level
+- base on complexity levels of actions
+- assess skill level of surgeon
+- base on historical performance score
+- base on number of surgeries performed
+- base on time spent as surgeon
+- base on level of training
+- base on classification of surgeon's skill
+- base on video image analysis
+- base on prior surgical event
+- correlate prior event with outcome
+- present instruction to perform step
+- receive indication of step completion
+- present next instruction
+- forgo presenting next instruction
+- present alternative instruction
+- analyze video footage
+- receive vital sign of patient
+- base on accessed correlation
+- base on condition of tissue or organ
+- analyze video footage for condition
+- determine condition of tissue or organ
+- suggest creation of stoma
+- suggest stoma creation technique
+- suggest location for stoma creation
+- base on physiological impact
+- select threshold based on patient characteristic
+- base on decision making junction
+- suggest mobilization of ileum and/or cecum
+- base on procedure complexity level
+- base on patient age and gender
+- suggest division of appendix
+- base on instrument used for division
+- suggest treatment of appendiceal stump
+- base on procedure complexity level
+- suggest removal of resected sample
+- base on procedure complexity level
+- introduce contact force concept
+- describe direct and indirect contact force application
+- define normal and shear forces
+- describe force estimation through image analysis
+- explain machine vision techniques for force estimation
+- describe historical video footage analysis for force estimation
+- introduce relative scale for force estimation
+- describe categorical scale for force estimation
+- describe numerical scale for force estimation
+- explain discrete and continuous force estimation
+- introduce method for estimating contact force on anatomical structure
+- describe receiving image data from image sensor
+- explain analyzing image data to determine anatomical structure identity
+- describe image analysis methods for anatomical structure identification
+- introduce artificial intelligence methods for anatomical structure identification
+- describe analyzing image data to determine anatomical structure condition
+- explain condition representation as a vector
+- describe machine learning model for condition determination
+- introduce selecting contact force threshold associated with anatomical structure
+- describe selecting contact force threshold based on anatomical structure condition
+- explain selecting contact force threshold based on type of contact force
+- describe selecting contact force threshold based on location of contact
+- explain selecting contact force threshold based on angle of contact
+- describe implementing regression model for contact force threshold selection
+- introduce using machine learning model for contact force threshold selection
+- describe training machine learning model for contact force threshold selection
+- explain selecting contact force threshold based on surgeon actions
+- describe analyzing image data to identify surgeon actions
+- introduce receiving indication of actual contact force on anatomical structure
+- describe estimating actual contact force based on image analysis
+- explain estimating actual contact force using regression model
+- describe estimating actual contact force using machine learning model
+- introduce receiving indication of actual contact force from sensor data
+- describe comparing actual contact force with selected contact force threshold
+- explain outputting notification based on excessive force applied
+- describe transmitting notification to device
+- explain displaying notification at interface
+- describe playing sound notification
+- introduce providing haptic feedback notification
+- describe logging notification in file
+- explain notification including information on contact force
+- describe notification including information on contact angle
+- introduce providing notifications of different intensity
+- describe outputting notification based on difference between actual and selected force
+- explain notification including information on level of intensity
+- introduce notification system
+- describe notification types
+- explain fight mode determination
+- discuss notification suspension
+- introduce surgeon mode ignoring notifications
+- analyze image data for surgeon mode
+- suspend notifications based on surgeon mode
+- resume notifications after time period
+- illustrate process 3000 for estimating contact force
+- receive image data of surgical procedure
+- analyze image data to determine anatomical structure
+- determine condition of anatomical structure
+- select contact force threshold
+- receive indication of actual contact force
+- compare actual contact force with threshold
+- output notification based on comparison
+- update predicted surgical outcome
+- analyze image data to detect changes in outcome
+- communicate remedial action to surgeon
+- predict outcome based on patient characteristics
+- predict outcome based on surgical events
+- receive image data associated with first event
+- determine predicted outcome based on image data
+- identify event based on image data analysis
+- identify interaction between surgical tool and anatomical structure
+- predict outcome based on identified interaction
+- train machine learning model using training examples
+- use trained model to predict outcome
+- discuss hospital readmission prediction
+- predict hospital readmission based on image data
+- predict hospital readmission based on patient characteristics
+- discuss post-operative complications
+- predict post-operative complications based on image data
+- predict post-operative complications based on patient characteristics
+- introduce determining predicted outcome
+- skill level of surgeon
+- condition of anatomical structure
+- estimated contact force
+- machine learning model
+- statistical model
+- receive image data
+- analyze image data
+- determine skill level
+- determine condition of anatomical structure
+- estimate contact force
+- predict outcome
+- receive image data of second event
+- determine change in predicted outcome
+- machine learning model
+- Markov model
+- determine change in confidence
+- threshold confidence
+- elapsed time between events
+- correlate variables
+- fluid leakage
+- determine change in predicted outcome
+- updated estimate of skill level
+- level of skill of second surgeon
+- change in color, texture, size, condition
+- machine learning model
+- object recognition model
+- image classification model
+- regression model
+- access data structure
+- read and write data
+- image-related data
+- correlations between data
+- recommended remedial action
+- machine learning model
+- output recommended remedial action
+- transmit notification
+- update scheduling record
+- change in expected duration
+- data structure
+- model
+- update schedule
+- broadcast update
+- flowchart for updating predicted outcome
+- describe surgical procedure
+- receive image data
+- determine change in predicted outcome
+- access data structure of image-related data
+- identify recommended remedial action
+- output recommended remedial action
+- analyze current and/or historical surgical footage
+- detect fluid leakage
+- determine source and/or extent of fluid leakage
+- provide information related to fluid leakage
+- analyze intracavitary video
+- determine abnormal fluid leakage situation
+- identify ruptured anatomical structure
+- identify blood splash
+- identify spray of blood
+- determine property of abnormal fluid leakage situation
+- store intracavitary video
+- analyze prior historical frames
+- determine leakage source
+- institute remedial action
+- select remedial action
+- provide notification of leakage source
+- transmit notification
+- display notification
+- play sound
+- provide haptic feedback
+- send instructions to robot
+- direct robot to undertake action
+- direct robot to cease action
+- direct robot to move aside
+- base remedial action on flow rate
+- base remedial action on volume of fluid loss
+- base remedial action on property of fluid
+- base remedial action on statistical analysis
+- use regression model
+- fit regression model to historical data
+- identify correlations between properties
+- correlate properties with outcomes
+- use data structure to correlate properties
+- use machine learning model
+- train machine learning model
+- use trained machine learning model
+- analyze frames of intracavitary video
+- define fluid leakage situation
+- classify fluid leakage situations
+- store properties of fluid leakage situations
+- use regression model to determine abnormal fluid leakage
+- train machine learning model to determine abnormal fluid leakage
+- analyze frames to determine property of fluid leakage situation
+- associate property with volume of fluid leakage
+- associate property with type of fluid leakage
+- associate property with rate of fluid leakage
+- associate property with source of fluid leakage
+- use vital signs to determine abnormal fluid leakage
+- use surgical event to determine abnormal fluid leakage
+- institute remedial action for abnormal fluid leakage
+- forgo remedial action for normal fluid leakage
+- receive intracavitary video in real time
+- analyze frames to determine abnormal fluid leakage situation
+- identify blood splash and properties
+- determine source of blood splash
+- determine intensity of blood splash
+- determine color of blood splash
+- determine viscosity of blood splash
+- determine volume of blood splash
+- store intracavitary video
+- analyze prior frames to determine leakage source
+- institute remedial action for abnormal fluid leakage
+- select remedial action based on property of fluid leakage
+- analyze surgical footage to identify events
+- identify events affecting post discharge risk
+- use historical data to determine post discharge risk
+- access frames of video captured during surgical procedure
+- access metadata related to frames
+- access pixel values of pixels of frames
+- analyze frames using machine-learning method
+- recognize events within video frames
+- recognize surgical instruments and anatomical structures
+- access stored historical data identifying intraoperative events
+- associate intraoperative events with outcomes
+- define intraoperative event
+- identify adverse events or complications
+- identify errors during surgical procedure
+- define extended events during surgical procedure
+- define intraoperative events and associated outcomes
+- describe database structure for storing historical data
+- illustrate example intraoperative events and outcomes
+- describe accessing historical data by computerized device
+- describe processing historical data using machine-learning model
+- describe accessing historical data by healthcare professionals
+- describe identifying intraoperative events using machine-learning model
+- describe image analysis for event detection
+- describe object detection algorithms
+- describe machine-learning model output
+- describe using machine-learning module to identify events
+- describe identifying event characteristics
+- describe training machine-learning model using example data
+- describe evaluating error for machine-learning model
+- describe alternative approaches to event detection
+- describe identifying events using medical professionals
+- describe identifying events based on surgical tools and anatomical structures
+- describe detecting surgical tools using machine-learning model
+- describe detecting anatomical structures using machine-learning model
+- describe detecting interactions between tools and structures
+- describe identifying proximity of tools to structures
+- describe detecting abnormal fluid leakage situations
+- describe configuring machine-learning models for different tasks
+- describe analyzing frames to identify intraoperative events
+- describe using historical data to identify events
+- describe determining predicted outcomes based on events
+- describe using statistical models to predict outcomes
+- describe using machine-learning models to predict outcomes
+- describe predicting post-discharge mishaps, adverse events, and complications
+- describe evaluating patient well-being using objective measures
+- describe determining predicted outcomes using statistical analysis
+- describe using probability distributions to predict outcomes
+- describe determining predicted outcomes based on multiple events
+- describe using statistical data to determine probability distributions
+- describe determining probability distributions based on event characteristics
+- describe plotting probability distributions in a three-dimensional system
+- describe interpolating height values for probability distributions
+- describe using event characteristic values to determine probability distributions
+- describe using machine-learning models to analyze historical data
+- describe using historical data to train machine-learning models
+- describe using machine-learning models to identify patterns in data
+- describe using machine-learning models to make predictions
+- describe using historical data to evaluate machine-learning models
+- describe using machine-learning models to improve surgical procedures
+- describe using machine-learning models to reduce complications
+- describe using machine-learning models to improve patient outcomes
+- introduce surgical procedure prediction
+- describe patient characteristics
+- discuss electronic medical record
+- explain postoperative surgical report
+- analyze historical surgical outcomes
+- introduce event-based machine learning model
+- describe input parameters
+- explain event data
+- discuss surgical footage segments
+- describe event starting and finishing times
+- train event-based machine learning model
+- use trained model to predict surgical outcomes
+- determine predicted outcome
+- use machine learning model to predict post-discharge risk
+- identify patient characteristic
+- analyze pre-operative patient data
+- analyze post-operative patient data
+- use image recognition algorithm
+- train machine learning model to identify patient characteristics
+- receive postoperative information
+- update machine learning model
+- use online machine learning algorithm
+- use reinforcement machine learning algorithm
+- receive visual or audio data
+- receive lab results
+- receive data related to patient's vital signs
+- receive notes from healthcare provider
+- determine realized surgical outcome
+- update machine learning model using received information
+- output predicted outcome
+- associate predicted outcome with patient
+- transmit predicted outcome
+- update electronic medical record
+- access data structure containing recommended sequences
+- identify deviation between recommended and actual sequences
+- identify specific intraoperative event
+- analyze surgical footage
+- utilize machine learning approach
+- identify actual event that deviates from recommended sequence
+- perform machine learning method for identifying deviation
+- define deviation-based model
+- train deviation-based model
+- identify deviation using machine learning
+- compare frames to reference frames
+- synchronize frames and reference frames
+- correlate events to reference events
+- identify deviation based on surgical tool
+- identify deviation based on anatomical structure
+- identify deviation based on interaction
+- identify deviation based on fluid leakage
+- determine action to improve outcome
+- use machine learning to determine action
+- train machine learning model
+- analyze frames to determine action
+- provide recommendation
+- provide electronic notification
+- provide sound signal
+- provide visual signal
+- provide tactile signal
+- introduce recommendation threshold
+- motivate outcome-based decision
+- illustrate patient characteristic-based threshold
+- introduce process for predicting post-discharge risk
+- access video frames and historical data
+- analyze frames and identify intraoperative events
+- determine and output predicted outcome
+- introduce system overview
+- define disclosed embodiments
+- introduce video analysis
+- describe video overlay
+- detail marker selection
+- explain marker coding
+- describe textual information
+- introduce video compilation
+- describe complication depiction
+- explain common timeline
+- detail decision making junction
+- describe alternative video clips
+- explain differing conduct
+- detail alternative possible decisions
+- describe estimated outcomes
+- explain analysis of past decisions
+- describe distribution of past decisions
+- detail similar patient characteristics
+- explain similar medical professional characteristics
+- describe similar prior events
+- introduce intraoperative surgical event markers
+- detail alternative video clips for events
+- describe pre-procedure overlay
+- explain electronic medical record analysis
+- detail similarity metric
+- introduce computer vision algorithm
+- describe video indexing
+- detail phase and event tagging
+- explain data structure creation
+- describe user access and video display
+- introduce adverse outcome analysis
+- describe surgical footage
+- export frames for storage
+- generate index of intraoperative events
+- associate frames with patient identifier
+- distinguish between surgical and non-surgical frames
+- analyze footage to detect medical instrument
+- analyze footage to detect anatomical structure
+- analyze relative movement between instrument and structure
+- distinguish frames based on relative movement
+- omit non-surgical activity frames
+- access repository of surgical video footage
+- enable surgeon to input case-specific information
+- compare case-specific information with repository data
+- identify specific frames corresponding to intraoperative events
+- omit frames from differing patients
+- determine common characteristic between frames
+- omit frames without common characteristic
+- enable surgeon to view presentation
+- display common surgical timeline
+- sequentially display discrete sets of video footage
+- display index of discrete sets
+- enable surgeon to select discrete sets
+- use artificial neural network to identify intraoperative events
+- provide case-specific information to neural network
+- receive case-specific information from external device
+- train machine learning model to determine common characteristic
+- analyze frames to identify anatomical structure
+- access historical data to determine surgical complexity level
+- determine level of skill demonstrated by healthcare provider
+- output notification based on estimated completion time
+- train machine learning model
+- estimate completion times
+- detect medical tool
+- analyze anatomical structure
+- detect interaction
+- determine skill level
+- access video frames
+- analyze video frames
+- access database
+- compare interactions
+- output reimbursement code
+- output multiple reimbursement codes
+- determine reimbursement code
+- analyze postoperative report
+- capture video frames
+- generate correlations
+- update database
+- implement statistical model
+- detect medical instruments
+- analyze anatomical structure condition
+- determine reimbursement code
+- analyze anatomical structure change
+- determine reimbursement code
+- analyze medical device usage
+- determine reimbursement code
+- analyze medical device type
+- determine reimbursement code
+- receive processed reimbursement code
+- analyze medical supply usage
+- determine reimbursement code
+- define surgical decision making junction
+- motivate recommendation based on time elapsed
+- motivate recommendation based on skill level of surgeon
+- motivate recommendation based on surgical event
+- describe specific action including plurality of steps
+- determine existence of surgical decision making junction
+- receive vital sign of patient
+- analyze image data to determine anatomical structure
+- select contact force threshold
+- receive indication of actual contact force
+- compare actual contact force with threshold
+- output notification based on comparison
+- associate contact force threshold with tension level
+- associate contact force threshold with compression level
+- estimate actual contact force based on image analysis
+- provide real-time warning to surgeon
+- suspend notification during fight mode
+- suspend notification based on surgeon's mode
+- select contact force threshold based on location of contact
+- select contact force threshold based on angle of contact
+- select contact force threshold using regression model
+- select contact force threshold based on table of anatomical structures
+- select contact force threshold based on surgeon's actions
+- receive indication of actual contact force from surgical tool
+- use machine learning model to determine condition of anatomical structure
+- use machine learning model to select contact force threshold
+- determine predicted outcome based on image data
+- identify recommended remedial action
+- output recommended remedial action
+- determine skill level of surgeon
+- disclaim limitations
+- provide non-limiting disclaimer
+- discuss software implementation options
+- broaden scope of embodiments
+- clarify claim interpretation
+

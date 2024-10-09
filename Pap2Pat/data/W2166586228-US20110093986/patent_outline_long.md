@@ -1,0 +1,236 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to tomato SlMYB12 transcription factor
+
+## BACKGROUND OF THE INVENTION
+
+- introduce plant cuticle
+- describe cutin and waxes
+- discuss flavonoids in tomato fruit
+- describe NarCh biosynthesis
+- discuss flavonoid accumulation patterns
+- describe Slimestad et al. study
+- discuss Iijima et al. study
+- describe Mintz-Oron et al. study
+- discuss CHI-overexpression
+- describe CHS RNAi study
+- introduce tomato y mutant
+- describe y mutant mapping
+- discuss flavonoid biosynthesis regulation
+- describe R2R3-MYB gene family
+- discuss maize MYB-type C1 and LC genes
+- describe PAP1 study
+- discuss Luo et al. study
+- introduce ANT1 gene
+- describe Lin et al. study
+- discuss flavonoid biosynthesis pathway
+- describe prior art patents
+
+## SUMMARY OF THE INVENTION
+
+- provide genetic markers for tomato y phenotype
+- describe transcriptomic and metabolic characterization
+- provide methods for detecting y phenotype
+- describe SlMYB12 allele y-1
+- introduce isolated polynucleotide encoding SlMYB12 variant
+- describe alterations in SlMYB12 gene
+- introduce detecting agent for SlMYB12 variant
+- describe primer pair for selectively amplifying SlMYB12 variant
+- provide method for screening genetic markers
+- describe identifying alterations in SlMYB12 gene
+- introduce method for identifying tomato plant with y phenotype
+- describe determining SlMYB12 sequence
+- compare SlMYB12 sequence to wild type
+- detect at least one alteration in SlMYB12 sequence
+- describe alterations in promoter region
+- describe alterations in intron 1
+- describe alterations in intron 2
+- describe alterations in exon 3
+- introduce isolated polynucleotide encoding wild type SlMYB12
+- describe DNA constructs and expression vectors
+- introduce transgenic plant with elevated flavonoid content
+- describe flavonoids in transgenic plant
+- introduce DNA construct with expression regulating element
+- describe promoter in DNA construct
+- describe transcription termination and polyadenylation sequence signals
+- introduce plant of Solanaceae family
+- describe optional detection marker
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- describe y mutant phenotype of tomato plant
+
+### Definitions
+
+- define plant
+- define colorless peel phenotype
+- define phenylpropanoids
+- define gene
+- define allele
+- define complementary
+- define oligonucleotides
+- define nucleotide
+- define isolated
+- define primer
+- define probe
+- define sequencing
+- define construct
+- define operably linked
+- define promoter element
+- define enhancer
+- define expression
+- define transgenic
+- define transformants
+- define transient transformation
+- define transient transformant
+- define stable transformation
+- define stable transformant
+- define polypeptide
+- describe SlMYB12 transcription factor
+- describe association of SlMYB12 with y mutant phenotype
+- describe fruit tissues and plant parts
+- describe alterations in transcripts and metabolites
+
+### PREFERRED MODES FOR CARRYING OUT THE INVENTION
+
+- introduce y mutant phenotype
+- analyze transcriptome and metabolome
+- focus on MYB and MYC transcription factors
+- identify down-regulated transcription factors
+- describe SlTHM27 sequence
+- describe SlMYB4-like sequence
+- describe SlMYB12 sequence
+- create artificial microRNA
+- down-regulate SlMYB12 transcript
+- induce y-mutant like phenotype
+- analyze flavonol accumulation
+- link SlMYB12 to y phenotype
+- identify SlMYB12 allele (y-1)
+- analyze RACE transcripts
+- describe SlMYB12 expression pattern
+- provide isolated polynucleotide encoding SlMYB12 variant
+- describe alterations in promoter region
+- describe alterations in intron 1
+- describe alterations in intron 2
+- describe alterations in exon 3
+- provide detecting agent for SlMYB12 variant
+- describe polynucleotide probe
+- describe primer pair
+- provide method for screening genetic markers
+- compare genomic polynucleotide sequences
+- identify alterations in SlMYB12 genomic sequence
+- describe sample preparation
+- describe DNA amplification methods
+- identify alterations in non-coding region
+- identify alterations in regulatory sequence
+- describe detection methods
+- provide method for identifying tomato plant
+- determine SlMYB12 sequence
+- compare to wild type SlMYB12 sequence
+- detect alterations indicative of y phenotype
+- identify alteration in SlMYB12 sequence
+- employ nucleotides with detectable characteristic
+- describe y mutant tissues
+- correlate down-regulated transcripts and metabolites
+- explain flavonol biosynthesis
+- describe SlFLS expression
+- compare y mutant and amiR-SlMYB12 transgenic plants
+- describe glycosylated metabolites
+- explain up-regulation of lignin pathway
+- describe phenylalanine regulation
+- discuss tissue translocation of precursors
+- describe AtMYB12 function
+- compare AtMYB12 and SlMYB12 functions
+- describe SlMYB12 down-regulation
+- discuss flavonol accumulation pattern
+- describe SlTHM27 and SlMYB4-like genes
+- discuss health promoting effects of flavonoids
+- describe transgenic plant with elevated phenylpropanoid content
+- specify SlMYB12 amino acid sequence
+- specify polynucleotide encoding SlMYB12
+- describe flavonoids and derivatives
+- describe DNA constructs for elevated phenylpropanoid content
+- list regulatory elements
+- describe promoters
+- describe 3' non-coding sequences
+- describe transformation methods
+- describe Agrobacterium-mediated gene transfer
+- describe direct DNA uptake
+- describe electroporation
+- describe microinjection
+- describe microparticle bombardment
+- describe regeneration of transgenic plants
+- describe selection of transgenic plants
+- describe extraction and detection of metabolites
+- describe cultivation of transgenic plants
+- describe seeds or plant parts obtained from transgenic plants
+- describe plant tissue regeneration
+- provide examples of the invention
+
+### EXAMPLES
+
+- introduce plant material
+- describe seed source
+- outline flower marking and fruit harvesting
+- explain peel and flesh dissection and freezing
+- motivate flavonoids detection
+- describe DPBA staining
+- outline fruit slice and peel piece preparation
+- explain photography on UV transilluminator
+- motivate generation of constructs and plant transformation
+- describe SlCHS1 gene isolation and sub-cloning
+- outline amiR-MYB12 synthetic gene synthesis and cloning
+- explain cotyledon transformation in cv. MicroTom tomato
+- motivate gene expression analysis
+- describe total RNA extraction and cDNA synthesis
+- outline biotinylated cRNA generation and hybridization
+- explain replicate reproducibility and variance filtering
+- describe normalization and filtering of expression values
+- motivate non-targeted UPLC-QTOF-MS profiling
+- describe UPLC-QTOF-MS instrument setup and data analysis
+- outline PCA plot construction and metabolite detection
+- motivate GC-MS profiling of derivatized polar extracts
+- describe GC-MS analysis and data pretreatment
+- outline statistical analysis and multiple hypothesis control
+- summarize microarray analysis of transcriptional changes
+- introduce y mutant fruit
+- describe metabolome analysis
+- present PCA results
+- summarize primary metabolite levels
+- describe secondary metabolite analysis
+- present gene expression results
+- summarize phenylpropanoid/flavonoid pathway alterations
+- describe gene expression in flesh tissue
+- introduce SlMYB12 transcription factor
+- describe phylogenetic analysis
+- present expression analysis of SlMYB12
+- map SlMYB12 to chromosome 1
+- describe SlMYB12 gene structure
+- present RACE analysis results
+- sequence SlMYB12 gene from colorless-peel lines
+- describe sequence changes in SlMYB12
+- predict protein stability effects
+- describe premature polyadenylation signals
+- co-segregate y-1 allele with colorless-peel phenotype
+- design artificial microRNA targeting SlMYB12
+- express amiR-SlMYB12 in transgenic plants
+- describe y-like phenotype in transgenic plants
+- present Real-Time PCR analysis results
+- present PCA analysis of metabolic profiling data
+- describe metabolite profile differences
+- describe flavonoid and caffeic acid derivative levels
+- drive phenotype complementation by SlMYB12 expression
+- present UPLC-PDA analysis results
+- evaluate gene expression in leaves
+- present gene expression results in young leaves
+- present gene expression results in fully expended leaves
+- present PCA analysis of metabolite data in roots
+- describe effects of y lesion on metabolism
+- discuss generic concept of invention
+- discuss adaptations and modifications
+- discuss phraseology and terminology
+- discuss means, materials, and steps for carrying out functions
+- conclude description of invention
+

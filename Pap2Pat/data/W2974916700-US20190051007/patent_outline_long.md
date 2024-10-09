@@ -1,0 +1,166 @@
+# DESCRIPTION
+
+## FIELD OF THE DISCLOSURE
+
+- relate to collision avoidance systems
+
+## BACKGROUND
+
+- introduce UAVs and collision avoidance systems
+
+## DETAILED DESCRIPTION
+
+- introduce collision avoidance systems
+- describe limitations of processing depth maps
+- introduce example depth map modifiers
+- describe downsizing techniques
+- introduce foveated filter techniques
+- describe application of foveated filter techniques
+- describe broader applicability of examples
+- introduce example UAV
+- describe UAV components
+- describe motor controller
+- describe power source
+- describe sensor system
+- describe inertial measurement unit
+- describe GPS sensor
+- describe flight control system
+- describe wireless transceiver
+- describe camera
+- introduce collision avoidance system
+- describe depth sensor
+- describe generation of depth maps
+- describe structure of depth maps
+- illustrate example 2D image representation of depth map
+- describe pixel locations and distance values
+- describe analysis of depth maps by collision avoidance system
+- describe limitations of processing large amounts of data
+- describe need for efficient processing of depth maps
+- introduce UAV 100 with depth map modifier 130
+- describe function of depth map modifier 130
+- illustrate example depth map modifier 130 in FIG. 3
+- describe block definer 304
+- describe pixel distance analyzer 306
+- describe resizer 308
+- describe pixel distance assignor 310
+- describe depth map compiler 312
+- describe high detail area definer 314
+- describe memory 316
+- describe first downsizing technique
+- illustrate first downsizing technique in FIG. 4
+- describe second downsizing technique
+- illustrate second downsizing technique in FIG. 5
+- describe third downsizing technique
+- illustrate third downsizing technique in FIG. 6
+- describe variations of downsizing techniques
+- describe application to multiple depth sensors
+- illustrate multiple depth sensors in FIG. 7
+- describe foveated depth filter technique
+- illustrate foveated depth filter technique in FIG. 8
+- describe high detail area definer 314
+- describe application of filter blocks
+- illustrate foveated depth filter technique in FIG. 9
+- describe dynamic high detail area
+- describe advantages of downsizing techniques
+- describe reduction of computational power
+- describe reduction of overheating
+- describe application to other components
+- describe visual simultaneous localizations and mapping (SLAM)
+- describe object detection
+- describe video recording
+- describe other applications
+- describe variations of depth map modifier 130
+- describe variations of downsizing techniques
+- describe variations of foveated depth filter technique
+- describe advantages of UAV 100
+- describe reduction of weight
+- describe reduction of power consumption
+- describe UAV collision avoidance system
+- introduce depth map modifier
+- explain high detail area concept
+- describe filter block application
+- detail pixel distance analysis
+- describe resizer functionality
+- explain pixel distance assignment
+- describe depth map compiler
+- illustrate example with FIG. 10
+- illustrate example with FIG. 11
+- describe multiple depth sensor scenario
+- describe remote collision avoidance system
+- describe hardware implementation options
+- describe software implementation options
+- define "in communication" phrase
+- describe flowcharts for processor implementation
+- describe non-transitory computer readable medium
+- define "including" and "comprising" phrases
+- describe FIG. 12 flowchart
+- receive depth map from sensor
+- generate updated depth map
+- provide updated depth map to collision avoidance system
+- determine if another depth map is received
+- describe FIG. 13 flowchart
+- apply filter block to depth map
+- identify smallest distance value in each block
+- assign smallest distance value to center pixel
+- generate updated depth map
+- describe FIG. 14 flowchart
+- apply filter block to depth map
+- identify smallest distance value in each block
+- generate updated depth map
+- describe FIG. 15 flowchart
+- apply filter block to depth map
+- identify smallest and largest distance values
+- compare difference to threshold distance
+- assign smallest distance value or save pixel
+- generate updated depth map
+- describe FIG. 16 flowchart
+- receive depth map from sensor
+- define high detail area and apply filter blocks
+- describe depth map modifier process
+- analyze updated depth map
+- detect potential collision
+- communicate with flight control system
+- determine whether to receive new depth map
+- end process if no new depth map
+- introduce processor platform
+- describe processor
+- describe local memory
+- describe main memory
+- describe interface circuit
+- describe input devices
+- describe output devices
+- describe communication device
+- describe mass storage devices
+- store machine executable instructions
+- summarize disclosed examples
+- introduce example 1
+- describe unmanned aerial vehicle
+- describe depth map modifier
+- describe collision avoidance system
+- introduce example 2
+- describe downsizing blocks
+- introduce example 3
+- describe assigning distance values
+- introduce example 4
+- describe saving pixels
+- introduce example 5
+- describe comparing differences
+- introduce example 6
+- describe assigning distance values based on threshold
+- introduce example 7
+- describe determining high detail area
+- introduce example 8
+- describe virtual cone
+- introduce example 9
+- describe second depth sensor
+- introduce example 10
+- describe generating fourth depth map
+- introduce example 11
+- describe modifying trajectory or velocity
+- introduce example 12
+- describe method to reduce depth map size
+- introduce example 13
+- describe downsizing blocks
+- introduce example 14
+- describe assigning distance values
+

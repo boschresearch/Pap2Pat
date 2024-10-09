@@ -1,0 +1,344 @@
+# DESCRIPTION
+
+- introduce Alzheimer disease and its relation to amyloid-β (Aβ)
+- describe the importance of Aβ oligomers in AD pathology
+
+## BACKGROUND OF THE INVENTION
+
+- describe Alzheimer disease and its characteristics
+- discuss the role of Aβ peptides in AD
+- introduce N-truncated Aβ peptides and their significance
+- describe the discovery of AβpE in AD brains
+- discuss the aggregation propensity of AβpE3
+- introduce glutaminyl cyclase and its role in AβpE formation
+- describe the therapeutic approach of inhibiting glutaminyl cyclase
+- discuss the generation of transgenic mice overexpressing APP
+- describe the characteristics of APP/PS1KI mice
+- discuss the role of intraneuronal Aβ in AD pathology
+- introduce the concept of soluble oligomers and β-sheet containing amyloid fibrils as toxic forms of Aβ
+- describe the limitations of current therapeutic approaches
+
+## SUMMARY OF THE INVENTION
+
+- introduce the technical problem and its solution
+- describe the antibody molecule capable of recognizing Aβ oligomers
+- discuss the use of oligomeric AβpE3 peptides for neuropathological differentiation
+- describe the generation of new diagnostic and pharmaceutically useful tools
+- introduce antibodies directed against oligomeric forms of Aβ
+- describe the staining patterns of these antibodies in AD cases
+- discuss the use of these antibodies as diagnostic tools
+- introduce the exemplified antibody molecules 9D5H6 and 8C4D2
+- describe the binding molecule capable of recognizing Aβ oligomers
+- discuss the method of diagnosing a subject suspected of suffering from an amyloid-related disorder
+- describe the method of monitoring the efficacy of a treatment
+- introduce the method of predicting the efficacy of a treatment
+- describe the passive immunization of 5XFAD mice with 9D5
+- discuss the reduction of AβpE3 levels and Aβ-plaque load
+- describe the normalization of behavioral deficits
+- discuss the key component for the pathogenesis of AD
+- introduce therapeutic methods and substances reducing oligomeric AβpE3
+- describe the advantage of the present invention over QC inhibitors
+- introduce the binding molecule capable of inhibiting Aβ-oligomerization
+- describe the pharmaceutical composition and its use in treating amyloid-related disorders
+
+## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+- characterize antibodies
+- immunohistochemistry in APP/PS1KI and 5xFAD mice
+- staining in sporadic and familial AD cases and healthy controls
+- abundant intraneuronal staining in transgenic models
+- strong immunostaining in human AD cases in blood vessels
+- negligible staining in healthy control specimens
+- intraneuronal staining with antibodies during aging
+- recognize AβpE3-42 oligomers by SDS-Western blot and Dot Blot assays
+- do not cross-react with Aβ1-42
+- useful in diagnostic assays
+- sandwich ELISA with “9D5” as capturing antibody
+- levels of oligomers in plasma samples from patients with AD and healthy controls
+- neuropathologically differentiate healthy controls from AD cases
+- diagnostic tools
+- relate to diagnostic compositions
+- capable of specifically recognizing Aβ oligomers
+- method of diagnosing a subject/patient suspected of suffering from a disease
+- determining in a cell or tissue sample the amount of Aβ oligomers
+- comparing the amount of Aβ oligomers with a reference amount
+- disease is diagnosed when the amount differs from the reference amount
+- “cell or tissue sample” may also be a biological sample
+- “comparing step” can also comprise comparison with a reference amount
+- method of monitoring the efficacy of a treatment of a disease
+- determining in a biological sample the amount of Aβ oligomers
+- comparing the amount of Aβ oligomers with a reference amount
+- extent of the difference is indicative for the efficacy of a treatment
+- method of predicting the efficacy of a treatment of a disease
+- determining in biological sample the amount of Aβ oligomers
+- comparing the amount of Aβ oligomers with a reference amount
+- extent of the difference is indicative for the predicted efficacy
+- relate to a binding molecule capable of specifically recognizing
+- capable of inhibiting Aβ-oligomerization
+- for use in the treatment and/or prevention of an amyloid-related disorder
+- binding molecule may be an antibody molecule
+- polypeptide, peptide, peptidomimetic, or a small molecule
+- natural or synthetic peptide
+- peptidomimetic may comprise natural or synthetic amino acids
+- small molecule may be isolated from a natural source or developed synthetically
+- examples of small molecules
+- antibody molecules of the present invention
+- N-terminal truncated Aβ starting with pyroglutamate (AβpE) can form stable oligomers
+- binding molecules according to the present invention specifically bind AβpE3 oligomers
+- do not cross react with oligomers derived from full-length Aβ 1-42 peptides
+- recognize AβpE oligomers within neurons and blood vessels
+- treatment with antibodies or other binding molecules against soluble AβpE oligomers
+- define antibody
+- specify immunoglobulin isotypes
+- describe antibody fragments
+- introduce monoclonal antibodies
+- explain production of monoclonal antibodies
+- describe hybridoma method
+- specify deposited hybridomas
+- describe antibody 9D5H6
+- describe antibody 8C4D2
+- specify CDRs and variable regions
+- provide nucleic acid sequences
+- describe identity of nucleic acid sequences
+- provide amino acid sequences
+- describe binding molecules with CDRs
+- specify variable regions
+- describe variants of variable regions
+- provide antibodies with specific CDRs
+- describe functional fragments and derivatives
+- introduce methods for antibody preparation
+- describe culturing host cells
+- specify conditions for antibody synthesis
+- describe recovery of antibody molecules
+- provide examples of host cells
+- describe hybridoma producing antibody molecules
+- specify antibody 9D5H6
+- describe binding molecule recognizing epitope
+- specify immunoblotting analysis
+- specify immunostaining
+- specify immunoisolation
+- specify comparative dot-blotting
+- describe immunoblotting analysis
+- describe immunostaining
+- describe immunoisolation
+- provide non-limiting examples for immunoblotting
+- provide non-limiting examples for immunostaining
+- provide non-limiting examples for immunoisolation
+- describe ELISA test
+- describe quantitative immunoisolation
+- describe immunostaining with different biological samples
+- describe characterization of antibodies
+- describe staining with antibodies
+- relate to a composition comprising a binding molecule
+- describe diagnostic composition
+- describe pharmaceutical composition
+- describe choice of carrier
+- describe acceptable excipients
+- describe pharmaceutical composition for treatment
+- describe amyloid-related disorders
+- describe subject
+- describe dose of pharmaceutical composition
+- describe administration of pharmaceutical composition
+- describe dosage regimen
+- describe local or systemic administration
+- describe parenteral administration
+- describe preparations for parenteral administration
+- describe intravenous vehicles
+- describe preservatives and additives
+- describe method of treating or preventing amyloid-related disorder
+- describe binding molecule capable of specifically recognizing AβpE3
+- describe method of inhibiting Aβ-oligomerization
+- describe preferred embodiments
+- specify binding molecule properties
+- define amyloid-related disorders
+- describe antibody molecule properties
+- specify pharmaceutical composition
+- describe administration methods
+- define method of inhibiting oligomerization
+- specify binding molecule properties
+- describe pharmaceutical composition
+- describe administration methods
+- define method of inhibiting oligomerization
+- specify binding molecule properties
+- describe pharmaceutical composition
+- describe administration methods
+- define method of inhibiting oligomerization
+- describe binding substance properties
+- define method of treating amyloid-related disorder
+- describe pharmaceutical composition
+- describe method of determining inhibition of oligomerization
+- describe method of determining inhibition of seeding effect
+- describe method of determining disintegrating effect on amyloid plaques
+- describe example of in vivo experiment
+- describe method for identifying agents useful in treatment and/or prevention of amyloid-related disorder
+- define AβpE3
+- describe thioflavin T aggregation assay
+- determine rate of oligomerization and aggregation
+- calculate rate of oligomerization and aggregation
+- describe significance of rate decrease
+- introduce alternative methods for determining binding constant
+- describe reference control antibodies
+- introduce candidate agents
+- describe properties of small molecule candidate agents
+- list sources of candidate agents
+- describe types of antibody molecules
+- list amyloid-related disorders
+- describe nucleic acid molecules encoding antibody molecules
+- describe nucleic acid residues
+- provide examples of nucleic acid molecules
+- describe vectors containing nucleic acid molecules
+- describe expression vectors
+- provide examples of vectors
+- describe host cells comprising nucleic acid molecules or vectors
+- describe prokaryotic and eukaryotic host cells
+- describe genetic modification of host cells
+- describe expression of antibody molecules in host cells
+- provide overview of expression systems
+- describe transformation of host cells with nucleic acid molecules or vectors
+- introduce antibody molecules for diagnosis
+- relate to diagnosis of disease associated with amyloidogenesis
+- provide examples of diseases associated with amyloidogenesis
+- relate to diagnosis of susceptibility to disease associated with amyloidogenesis
+- provide examples of diseases associated with amyloidogenesis
+- describe method of diagnosing disease associated with amyloidogenesis
+- specify biological samples for diagnosis
+- provide examples of biological samples
+- describe method of diagnosing familial Alzheimer disease
+- describe method of diagnosing sporadic Alzheimer disease
+- relate to in vitro and in vivo methods
+- describe method of monitoring efficacy of treatment
+- specify biological samples for monitoring efficacy
+- provide examples of biological samples
+- describe method of monitoring efficacy of treatment of sporadic Alzheimer disease
+- describe method of monitoring efficacy of treatment of familial Alzheimer disease
+- describe method of predicting efficacy of treatment
+- specify biological samples for predicting efficacy
+- provide examples of biological samples
+- describe method of predicting efficacy of treatment of sporadic Alzheimer disease
+- describe method of predicting efficacy of treatment of familial Alzheimer disease
+- define terms "subject" and "sample"
+- define terms "reference" and "control samples"
+- explain processing steps for samples
+- discuss validation of methodology
+- define "reference amount"
+- explain determination of reference amount
+- relate to comparison of amount of Abeta oligomers to reference amount
+- describe method of diagnosis
+- describe method of prognosis
+- describe method of monitoring efficacy of treatment
+- describe method of predicting efficacy of treatment
+- specify AβpE3 oligomers
+- relate to kit comprising antibody molecule
+- relate to kit comprising composition
+- relate to kit comprising nucleic acid molecule
+- relate to kit comprising vector
+- relate to kit comprising host cell
+- provide sequences
+- illustrate invention with figures
+- illustrate invention with examples
+- provide non-limiting examples of diseases associated with amyloidogenesis
+- provide non-limiting examples of biological samples
+- conclude invention
+
+### EXAMPLES
+
+- generate antibodies
+- describe antibody selection
+- introduce comparison antibodies
+- describe peptide preparation
+- perform Western blot
+- describe Western blot protocol
+- perform statistical analysis
+- describe statistical analysis method
+- perform immunohistochemistry
+- describe immunohistochemistry protocol
+- describe dot blot
+- perform dot blot analysis
+- describe Western blot analysis
+- analyze Western blot results
+- perform antibody differentiation
+- describe antibody differentiation method
+- analyze antibody differentiation results
+- discuss antibody differentiation implications
+- introduce 5XFAD mice model
+- describe staining of 5XFAD mice using 9D5H6
+- show age-dependent accumulation of AβpE3
+- describe double-staining using 9D5H6 and GFAP
+- describe double-staining using 9D5H6 and Iba-1
+- describe strong intraneuronal 9D5H6-immunoreactivity
+- introduce sandwich ELISA of plasma samples
+- describe ELISA analysis
+- present demographic data of individuals for plasma assay
+- show results of pilot study on oligomer levels in plasma
+- discuss intraneuronal Aβ accumulations in AD
+- discuss controversy of intraneuronal Aβ accumulations
+- discuss previous studies on intraneuronal Aβ accumulations
+- discuss Aβ levels in CA1 pyramidal neurons of AD hippocampus
+- discuss presence of ApoE4 alleles and intraneuronal Aβ accumulation
+- discuss intracellular levels of AβX-42 in neurons from sporadic AD cases
+- discuss toxicity of AβpE3-42 in vivo
+- discuss severity of neurological phenotype in TBA2 mice
+- discuss time point of high levels of AβpE3-42
+- discuss removal of N-terminal amino acids of Aβ
+- discuss aminopeptidase A and N-terminal truncation of full-length Aβ peptides
+- discuss glutamate cyclization by glutaminyl cyclase
+- discuss N-truncated AβpE3 peptides in AD brains
+- discuss aggregation propensity and toxicity of AβpE3
+- discuss level of IgM autoantibodies in plasma directed against AβpE3
+- introduce dot blot competition and ELISA competition
+- describe dot blot competition assay
+- describe ELISA competition assay
+- discuss epitope shared by 9D5H6 and 8C4D2
+- introduce immunostaining competition
+- describe immunostaining competition assay
+- introduce dot blot analysis
+- perform size-exclusion chromatography
+- analyze binding properties of 9D5 antibody
+- describe ThT aggregation assay
+- investigate aggregation of Aβ1-42 and AβpE3-42 peptides
+- analyze effect of 9D5 antibody on aggregation
+- introduce 5xFAD mouse model of Alzheimer's disease
+- describe behavioral deficits in 5xFAD mice
+- administer 9D5 antibody to 5xFAD mice
+- analyze effect of 9D5 antibody on behavioral deficits
+- measure AβpE3 levels in brain lysates
+- discuss role of Aβ oligomers in Alzheimer's disease
+- summarize evidence for neurotoxicity of Aβ oligomers
+- describe formation of Aβ oligomers within neurons
+- discuss correlation of Aβ oligomers with cognitive dysfunction
+- introduce 9D5 antibody as diagnostic tool
+- describe passive immunization with 9D5 antibody
+- analyze effect of 9D5 antibody on Aβ peptides in plaques
+- evaluate extracellular Aβ load in cortex and hippocampus
+- describe processing of human and mouse tissue
+- perform immunohistochemistry
+- analyze effect of 9D5 antibody on plaque load
+- compare age-dependent changes in plaque load
+- discuss therapeutic potential of 9D5 antibody
+- discuss diagnostic properties of 9D5 antibody
+- summarize results of study
+- present plaque-load quantification results
+- motivate AβpE3 oligomers as seeding species
+- describe passive immunization with 9D5
+- summarize reduction of Aβ peptides in plaques
+- hypothesize therapeutic mechanism
+- describe 9D5 passive immunization experiment
+- present results of 9D5 treatment on Aβ40 and Aβ42 plaque load
+- introduce non-human primate models for AD research
+- describe tissue preparation and staining
+- present results of AD-like pathology in non-human primates
+- test cross-reactivity of 9D5 antibody with other organs
+- summarize results of AD-like pathology in non-human primates
+- introduce microglia cell visualization with 9D5 immunostaining
+- describe patient cohort and staining protocol
+- present results of 9D5 immunostaining in microglia cells
+- analyze correlation of 9D5-positive staining with patient parameters
+- introduce passive immunization with N-terminal specific monoclonal antibody 2-48
+- describe treatment protocol and tissue processing
+- present results of passive immunization with 2-48 antibody
+- describe evaluation of extracellular Aβ load
+- present results of 2-48 treatment on plaque load reduction
+- discuss implications of 2-48 treatment results
+- summarize therapeutic potential of AβpE3 oligomer reduction
+- conclude on therapeutic mechanism of 9D5 and 2-48 antibodies
+

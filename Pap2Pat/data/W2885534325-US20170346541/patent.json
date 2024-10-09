@@ -1,0 +1,283 @@
+{
+    "id": "US20170346541",
+    "authors": [
+        "Hamid Jafarkhani",
+        "Erdem Koyuncu"
+    ],
+    "title": "Interleaved Training and Limited Feedback for Multiple-Antenna Systems",
+    "date": "2017-05-24 00:00:00",
+    "abstract": "A method includes the step of interleaving training and feedback stages in a transmitter and a multiplicity of antennas, wherein the transmitter trains the corresponding ones of the multiplicity of antennas one by one and receives feedback information after training each one of the corresponding ones of the multiplicity of antennas. An apparatus operating using the method includes a multiple-input single-output system with t transmitter antennas, a short-term power constraint P, and target data rate \u03c1 where for any t, the same outage probability as a system with perfect transmitter and receiver channel state information is achieved with a feedback rate of R1 bits per channel state and via training R2 transmitter antennas on average, where R1 and R2 are independent of t, and depend only on \u03c1 and P.",
+    "sections": [
+        {
+            "title": "DESCRIPTION",
+            "paragraphs": [],
+            "subsections": [
+                {
+                    "title": "BACKGROUND",
+                    "paragraphs": [],
+                    "subsections": [
+                        {
+                            "title": "Field of the Technology",
+                            "paragraphs": [
+                                "The invention relates to the field of wireless communication and in particular with beamforming, feedback and channel training."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "define field of technology"
+                            ],
+                            "num_characters": 127,
+                            "outline_medium": [
+                                "define field of technology"
+                            ],
+                            "outline_short": [
+                                "define wireless communication"
+                            ]
+                        },
+                        {
+                            "title": "Description of the Prior Art",
+                            "paragraphs": [
+                                "The performance of a wireless communication system can be greatly improved by making the channel state information (CSI) available at the transmitter and the receiver. In wireless communications, channel state information (CSI) refers to known channel properties of a communication link. This information describes how a signal propagates from the transmitter to the receiver and represents the combined effect of, for example, scattering, fading, and power decay with distance. The CSI makes it possible to adapt transmissions to current channel conditions, which is crucial for achieving reliable communication with high data rates in multi-antenna systems. In a massive multiple-input single-output (MISO) system, having CSI at the transmitter (CSIT) is especially desirable as one can then fully exploit the performance gains promised by the large number of transmitter antennas via CSI-adaptive transmission strategies such as beamforming. A typical way to acquire CSIT is channel training followed by (digital) feedback.",
+                                "Training and feedback are traditionally viewed as two non-interleaving processes, as shown in prior art FIG. 1. According to this traditional viewpoint, for each channel state, the transmitter first trains all of its antennas at once, so that the receiver acquires the entire CSI (or, in general, an erroneous version thereof.). This initial training phase is followed by the receiver feeding back a possibly-quantized version of the CSI. The receiver's feedback is then utilized at the transmitter side for data transmission (e.g., as a quantized beamforming vector.). Designing such limited feedback systems is a fundamental problem of communication theory and has been the subject of many publications and at least one survey.",
+                                "The conventional scheme in prior art shown FIG. 1 appears to be infeasible in the case of a massive MISO system. Even the training phase, by itself, would be very challenging to realize due to the large number of transmitter antennas that need to be trained. Moreover, even if one assumes that the training stage somehow comes with no cost, feeding back the associated large number of channel values to the transmitter appears to be infeasible. Conventional limited feedback schemes also do not provide much hope in this context: The feedback rates required for even the simplest of the limited feedback schemes, such as antenna selection, theoretically grow without bound as the number of transmitter antennas grow to infinity."
+                            ],
+                            "subsections": [],
+                            "outline_long": [
+                                "motivate channel state information",
+                                "describe traditional channel training",
+                                "limitations of traditional feedback",
+                                "summarize prior art"
+                            ],
+                            "num_characters": 2487,
+                            "outline_medium": [
+                                "motivate channel state information",
+                                "limitations of traditional training and feedback"
+                            ],
+                            "outline_short": [
+                                "limitations of traditional channel training"
+                            ]
+                        }
+                    ],
+                    "outline_long": [],
+                    "num_characters": 0,
+                    "outline_medium": [],
+                    "outline_short": []
+                },
+                {
+                    "title": "BRIEF SUMMARY",
+                    "paragraphs": [
+                        "Our proposed solution is to interleave the training and feedback stages. Unlike the conventional scheme of the prior art, the transmitter trains its antennas one by one and receives feedback information after training each one of its antennas. A feedback message may ask the transmitter to train another antenna (and also provide side information about the channel state), or it may result in the termination of the training phase, in which case it also provides the quantized code word to be utilized by the transmitter for data transmission.",
+                        "An interleaved scheme offers the following unique opportunity: If the already-trained antennas provide sufficiently favorable conditions for data transmission, one can then terminate the training phase and thus avoid wasting more resources on training the rest of the antennas. In certain scenarios, we can make use of this opportunity to design multi-antenna communication systems whose feedback and training overheads remain completely independent of the number of transmitter antennas, and which, at the same time, can achieve the same performance as a system with perfect transmitter and receiver CSI. Specifically, in the illustrated embodiment we consider a single-user point-to-point MISO system having an outage probability performance measure. Extensions to multiple-input multiple-output (MIMO) systems, or to multiuser scenarios with different performance measures are also within the scope and spirit of the invention.",
+                        "We introduce and investigate the opportunities of multi-antenna communication schemes whose training and feedback stages are interleaved and mutually interacting. Specifically, unlike the traditional schemes where the transmitter first trains all of its antennas at once and then receives a single feedback message, we consider a scenario where the transmitter instead trains its antennas one by one and receives feedback information immediately after training each one of its antennas. The feedback message may ask the transmitter to train another antenna; or it may terminate the feedback/training phase and provide a quantized code word (e.g., a beamforming vector) to be utilized for data transmission.",
+                        "As a specific application, we consider a multiple-input single-output system with t transmitter antennas, a short-term power constraint P, and a target data rate \u03c1. We show that for any t, the same outage probability as a system with perfect transmitter and receiver channel state information can be achieved with a feedback rate of R1 bits per channel state and via training R2 transmitter antennas on average, where R1 and R2 are independent of t, and depend only on \u03c1 and P.",
+                        "While the apparatus and method has or will be described for the sake of grammatical fluidity with functional explanations, it is to be expressly understood that the claims, unless expressly formulated under 35 USC 112, are not to be construed as necessarily limited in any way by the construction of \u201cmeans\u201d or \u201csteps\u201d limitations, but are to be accorded the full scope of the meaning and equivalents of the definition provided by the claims under the judicial doctrine of equivalents, and in the case where the claims are expressly formulated under 35 USC 112 are to be accorded full statutory equivalents under 35 USC 112. The disclosure can be better visualized by turning now to the following drawings wherein like elements are referenced by like numerals.",
+                        "The disclosure and its various embodiments can now be better understood by turning to the following detailed description of the preferred embodiments which are presented as illustrated examples of the embodiments defined in the claims. It is expressly understood that the embodiments as defined by the claims may be broader than the illustrated embodiments described below."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "introduce interleaved training and feedback",
+                        "describe benefits of interleaved scheme",
+                        "application of interleaved scheme",
+                        "describe embodiment of invention",
+                        "extensions of invention",
+                        "summarize opportunities of interleaved scheme",
+                        "describe specific application"
+                    ],
+                    "num_characters": 3799,
+                    "outline_medium": [
+                        "propose interleaved training and feedback",
+                        "advantage of interleaved scheme",
+                        "application of interleaved scheme"
+                    ],
+                    "outline_short": [
+                        "propose interleaved training and feedback"
+                    ]
+                },
+                {
+                    "title": "DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS",
+                    "paragraphs": [
+                        "Our proposed solution is to interleave the training and feedback stages as shown in FIG. 2. Unlike the conventional scheme in FIG. 1, the transmitter trains its antennas one by one and receives feedback information after training each one of its antennas. A feedback message may ask the transmitter to train another antenna (and also provide side information about the channel state), or it may result in the termination of the training phase, in which case it also provides the quantized code word to be utilized by the transmitter for data transmission.",
+                        "An interleaved scheme offers the following unique opportunity: If the already-trained antennas provide sufficiently favorable conditions for data transmission, one can then terminate the training phase and thus avoid wasting more resources on training the remaining antennas. As a result in certain scenarios, we can make use of this opportunity to design multi-antenna communication systems whose feedback and training overheads remain completely independent of the number of transmitter antennas, and which, at the same time, can achieve the same performance as a system with perfect transmitter and receiver CSI. Specifically, we consider here a single-user point-to-point MISO system having an outage probability performance measure. Extensions to multiple-input multiple-output (MIMO) systems, or to multiuser scenarios with different performance measures are within the scope and spirit of the invention.",
+                        "Preliminaries",
+                        "We consider a MISO system with t transmitter antennas. The channel from transmitter antenna i to the receiver antenna is denoted by hi, and let h=[h1 . . . ht]T\u03b5Ct represent the entire channel state. We assume that h\u2248CN(It), where It is intensity of the transmitted signal and CN(.) is the circularly-symmetric complex normal distribution. The transmitted symbol s\u03b5Ct and the received symbol y\u03b5C have the input-output relationship y=sT \u221aPh+\u03b7, where P is the short-term power constraint of the transmitter, and the noise term \u03b7\u02dcCN(1) is independent of h.",
+                        "For a fixed h, suppose that input symbol s is distributed as CN(KT), where K is a covariance matrix with tr(K)\u22661. With perfect channel state information at the receiver, CSIR, the channel capacity under this strategy is log2 (1+h\u2020KhP) bits/sec/Hz. For a given target data transmission rate \u03c1=log2(1+\u03b1P), where \u03b1>0 can be chosen arbitrarily, an outage event occurs if log2(1+h\u2020KhP)<\u03c1, or equivalently if h\u2020Kh<\u03b1. We refer to one special case where K=xx\u2020 for some X\u03b5Ct with \u2225x\u2225\u22661 as \u201cbeamforming,\u201d in which case the outage event is x, h2<\u03b1.",
+                        "For random h, the transmitter can utilize different covariance matrices for different h. For this purpose, let M: Ct\u2192Ct\u00d7t be an arbitrary mapping, so that given h, the input symbol is distributed as CN([M(h)]T). We define the outage probability with M as out(M)P (h\u2020Mh<\u03b1). We often consider beamforming-only systems, so that for a mapping N: Ct\u2192Ct, we define out(N)P|(N(h), h|2<\u03b1).",
+                        "With perfect channel state information at the transmitter, CSIT, and CSIR (a \u201cfull-CSI\u201d system), the optimal mapping that minimizes the outage probability is beamforming along h. In other words, the mapping F(h)h/\u2225h\u2225 provides the minimum-possible outage probability out(F)=P(\u2225h\u22252\u2266\u03b1). With perfect CSIR but no CSIT (an \u201copen-loop\u201d system), it has been shown that the optimal mapping is",
+                        "\\(\\mspace{20mu} \ue89e{{G\ue8a0(h)}\ue89e\\overset{\\Delta}{=}\ue89e{\\frac{1}{\\kappa}\ue89e\\begin{pmatrix}\n{I\ue89e\\text{?}} & 0_{\\kappa \\times {({t - \\kappa})}} \\\\\n0_{{({1 - \\kappa})} \\times \\kappa} & {0\ue89e\\text{?}}\n\\end{pmatrix}}}\\)\n\\(\\text{?}\ue89e\\text{indicates text missing or illegible when filed}\\)",
+                        "where \u03ba=argmink P(\u03a3k|hi|2<\u03ba\u03b1). Hence, only \u03ba out of the t antennas are used in general, and we have out(G)=P(\u2225h\u03ba\u22252<\u03ba\u03b1).",
+                        "The outage performance of two communication systems are usually compared in terms of their a-asymptotic behaviors for a fixed t. For example, given a fixed t, as \u03b1\u21920, we have out(F)\u03b5\u2296(\u03b1t) and out(G)\u03b5\u2296(\u03b1t) so that the outage probabilities of a full-CSI and an open-loop system have the same \u03b1\u21920 behavior (they both provide a \u201cdiversity gain\u201d of t.). In contrast, we are primarily interested in the t-asymptotic behavior of outage probabilities for a fixed \u03b1. The following proposition, provides a rough characterization in this context.",
+                        "Proposition 1 As t\u2192\u221e, for a full-CSI system, we have",
+                        "\\({{{out}\ue8a0(F)} \\in {\\theta \ue8a0\\left( \\frac{\\alpha^{t}}{t!} \\right)}},\\)",
+                        "whereas for an open-loop system,",
+                        "\\(\\begin{matrix}\n{{{out}\ue8a0(G)} \\in \\left\\{ {\\begin{matrix}\n{{\\theta \ue8a0\\left( \\frac{\\left( {t\ue89e\\; \ue89e\\alpha} \\right)^{t}\ue89ee^{{- \\alpha}\ue89e\\; \ue89et}}{t!} \\right)},} & {0 < \\alpha < 1} \\\\\n{{\\theta \ue8a0(1)},} & {\\alpha \\geq 1}\n\\end{matrix}.} \\right.} & (1)\n\\end{matrix}\\)",
+                        "Moreover, if 0<\u03b1<1, then \u03ba=t for every sufficiently large t, but if \u03b1\u22671, then \u03ba\u03b5\u2296(1) as t\u2192\u221e.\n\nThis result brings both good and bad news. The good news is that for a full-CSI system, one can transmit with an arbitrarily large data rate (by choosing a sufficiently large \u03b1) with a fixed power consumption P and zero outage as t\u2192\u221e. The bad news is that it is not always possible to do the same in an open-loop system: When \u03b1>1, the outage probability does not decay with increasing t, and in fact, it saturates to a certain non-zero value. Also, for 0<\u03b1<1, even though we have out(G)\u21920 as t\u2192\u221e, there is still room for improvement: As t increases, the outage probability of a full-CSI system decays much faster than that of an open-loop system.",
+                        "In order to obtain a vanishing outage probability as t\u2192\u221e for every a, one should thus utilize CSIT. The full-CSI system is impractical as it requires an \u201cinfinite\u201d rate of feedback from the receiver to the transmitter. A more practical approach is to settle for quantized CSIT via finite-rate receiver feedback. Another issue that is common to both a full-CSI and an open-loop system is the requirement of perfect CSIR, which may, by itself, not be feasible when t is large. In the following, we thus consider the design of partial CSIT, partial CSIR schemes that are based on the idea of interleaving the training and feedback processes as shown in FIG. 2.",
+                        "Interleaved Training and Limited Feedback",
+                        "We begin with a simple example of an interleaved scheme that is based on antenna selection. We first describe its conventional non-interleaved counterpart.",
+                        "A. The Conventional Antenna Selection Scheme",
+                        "A well-known partial-CSIT scheme is what we shall refer to as the \u201cconventional\u201d antenna selection scheme: Given h, the transmitter first trains all of its antennas to the receiver so that the receiver acquires the entire CSI. The receiver determines the antenna index arg maxi|hi| with the highest channel gain and sends \u250clog2 t\u2510 feedback bits to the transmitter that can uniquely represent . The transmitter recovers from the feedback bits and transmits over antenna",
+                        "This scheme can be characterized by the mapping A(h)\u2296, where ei=[01\u00d7(i-1) 1 01\u00d7(t-1)]T, i=1, . . . , t are the standard basis vectors for Ct. We have out(A)=(1\u2212e\u2212\u03b1)t, which implies \u2200\u03b1>0, limt\u2192\u221eout(A)=0. Hence, for every \u03b1>0, we can obtain a vanishing outage probability as t\u2192\u221e, as desired. Moreover, for any \u03b1 and t, we have out(A)\u2266out(G), and in fact, it can be shown (e.g. by applying Stirling's approximation to (1)) that out(A)o(out(G)), \u2200\u03b1(0, 1). Hence, relative to an open-loop system, antenna selection improves the t-asymptotic behavior of the outage probability for all \u03b1>0. On the other hand, to implement this scheme, one needs to train t scalar channels (one for each hi) and feed back |log2 t| bits for every channel state. Clearly, this is not feasible in the t\u2192\u221e regime.",
+                        "B. A New Antenna Selection Scheme",
+                        "The conventional antenna selection scheme is excessively precise in the sense that it always tries to select the antenna with the highest gain. On the other hand, without any loss of optimality in terms of the outage probability, we can in fact select any one of the antennas that avoid outage (not necessarily the antenna that provides the highest channel gain) whenever there is one. We use this observation to design an alternate antenna selection scheme that is based on the idea of interleaving training and limited feedback.",
+                        "Our new antenna selection scheme operates as shown in FIG. 3. The transmitter first trains the channel h1 corresponding to the first antenna and waits for receiver feedback. The receiver, having acquired the knowledge of h1, sends the one-bit feedback message \u201c1\u201d if |h1|2\u2267\u03b1, i.e. if selecting the first antenna avoids outage. Otherwise, it feeds back a \u201c0,\u201d which indicates that selecting the first antenna will result in an outage. Now, if the transmitter receives a \u201c1,\u201d the training and feedback process can end; the transmitter starts data transmission over the first antenna only (without the need of training the remaining antennas) and outage is avoided. Otherwise, if the transmitter receives a \u201c0,\u201d it proceeds to training the channel state h2 corresponding to its second antenna. The process continues in the same manner until an antenna (selection vector) that avoids outage is found. If all the antennas result in an outage, then the transmitter can simply transmit over an arbitrary antenna.",
+                        "Clearly, the new scheme achieves the same outage probability (1\u2212e\u2212\u03b1)t as the conventional scheme discussed above. Let us now define and calculate its training and feedback overheads. Note that the transmitter trains a different number of antennas for different channel states. Therefore, we define the \u201ctraining rate\u201d of the scheme (measured in antennas per channel state) as the expected number of antennas that the transmitter needs to train, where the expectation is over all the channel states. Also, the receiver feeds back a different number of feedback bits for different channel states, so that we may define the \u201cfeedback rate\u201d of the scheme (measured in bits per channel state) as the number of receiver feedback bits averaged over all the channel states. Now, given 1\u2266i\u2266t\u22121, the transmitter trains only the first i antennas with probability e\u2212\u03b1(1\u2212e\u2212\u03b1)i-1, and it trains all the t antennas with probability e\u2212\u03b1(1\u2212e\u2212\u03b1)t\u22121+(1\u2212e\u2212\u03b1)t. The training rate is thus: \u03a3i=1tie\u2212\u03b1(1\u2212e\u2212\u03b1)t-1+t(1\u2212e\u2212\u03b1)t=e\u03b1(1\u2212(1\u2212e\u2212\u03b1)t).",
+                        "A similar calculation reveals that the feedback rate of the new scheme is actually (numerically) equal to its training rate. Hence, the training and the feedback rates of the new scheme are both given by the formula e\u03b1 (1\u2212(1\u2212e\u2212\u03b1)t). Note that for any t, the two rates are both upper bounded by e\u03b1, which is independent of t.",
+                        "The significance of the new scheme is that it provides a vanishing outage probability as t\u2192\u221e with t-independent training and feedback rates. One can thus obtain the benefits of having infinitely many antennas with finite training and feedback overheads. For example, setting \u03b1=1, we can observe that if the transmitter has infinitely many antennas, then for any given power constraint P, we can transmit with rate log(1+P) bits/sec/Hz outage-free via training only e<3 antennas and feeding back 3 bits on average.",
+                        "Also, comparison with an open-loop system (a system with perfect CSIR but no CSIT) leads to the following conclusion: It is much better to have a little bit of CSIT and a little bit of CSIR rather than to have perfect CSIR but no CSIT.",
+                        "C. General Description of an Interleaved Scheme",
+                        "So far, we have discussed many seemingly-different scenarios including non-interleaved or interleaved schemes, the full-CSI and the open-loop systems, and so on. All of these scenarios can in fact be viewed as manifestations of a single unifying framework of a scheme, which describes the rules of how the tasks of training and feedback are to be performed. The advantage of this viewpoint is that it will allow us to more meaningfully compare the different scenarios with respect to their outage probabilities and training/feedback rates.",
+                        "One task of a scheme S is to specify a quantized covariance matrix S(h). The outage probability with S is thus given by out(S). A scheme S also describes which antennas are to be trained in which order, the corresponding feedback messages of the receiver, and how these messages are decoded at the transmitter. An example of these \u201cinner workings\u201d of a scheme can be found above for the special case of our new antenna selection scheme. The two important figures of merit of S is its training rate tr(S) and its feedback rate fr(S), which can be defined in the same manner as we have done above.",
+                        "Using these definitions, we can now view a full-CSI system as one particular scheme F with out(F)=P(\u2225h\u22252<\u03b1), tr(F)=t, and fr(F)=\u221e, an open-loop system as another scheme G with out(G)=P{\u2225h\u22252<\u03ba\u03b1), tr(G)=\u03ba, and fr(G)=0, and the conventional antenna selection as a scheme A with out(A)=(1\u2212e\u2212\u03b1)t, tr(A)=t, and fr(A)=[log2 t]. These extend the previous definitions in a consistent manner. Also, regarding the new antenna selection scheme described above, we have proved the following theorem: Theorem 1 There is a scheme B with out(B)=out(A)=(1\u2212e\u2212\u03b1)t and tr(B)=fr(B)=e\u03b1(1\u2212(1\u2212e\u2212\u03b1)t)<e\u03b1.",
+                        "Theorem 1 shows the existence of a \u201cgood\u201d scheme that can achieve a vanishing outage probability as t\u2192\u221e with t-independent feedback and training rates. One fundamental question that immediately comes to mind is then to determine whether one can achieve the ultimate limit out(F) with again t-independent training and feedback rates. The answer is yes, and the construction of such a scheme will be provided next. Meanwhile, we note that even though antenna selection provides a reasonable performance, we still have out(F)\u03b5o(out(A)) as t\u2192\u221e. In other words, the outage probability with a full-CSI system decays much faster than the one with antenna selection. This also provides a \u201cpractical motivation\u201d for construction of schemes that achieve the full-CSI gains.",
+                        "Achieving the Full-CSI Gains by Interleaving",
+                        "A. Variable-Length Limited Feedback with Perfect CSTR",
+                        "We begin by defining a simple dead zone scalar quantizer. For any given integer l\u22670 and x\u03b5(\u22121, +1], let",
+                        "\\({q\ue8a0\\left( {x;l} \\right)}\ue89e\\overset{\\Delta}{=}\ue89e{{{sign}\ue8a0(x)}\ue89e\\frac{1}{2^{l + 1}}\ue89e{\\left\\lfloor {{\uf603x\uf604}\ue89e2^{l + 1}} \\right\\rfloor.}}\\)",
+                        "We can easily calculate q(x; l) by taking the most significant l+2 bits (b1, b2 . . . bt+1)2 of the binary representation (b1, b2 . . . )2 of |x, while preserving the sign of x. For example, we have q(\u00b1(0.101)2; 1)=\u00b1(0.10)2.",
+                        "We extend the definition of the dead zone quantizer q to an arbitrary beamforming vector X=[x1 . . . xt]TCt with \u2225x\u2225\u22661 by setting q(x; l)=[q(Rx1; l)+jq(\u2111x1; l) . . . q(Rxt; l)+jq(\u2111xt; l)]TCt. We refer to the parameter l as the \u201cresolution\u201d of q. Note that by construction, \u2225q(x: l)\u2225\u22661, and therefore, q(x; l) is itself a feasible beamforming vector. Moreover, for a fixed l and t, each quantized vector q(x; l) can be uniquely represented by 2t(l+3) bits (For each of the 2t complex dimensions of x, we spend one bit for the sign, and l+2 bits for the most significant l+2 binary digits.).",
+                        "Now, for an arbitrary channel state h with \u2225h\u22252>\u03b1, let",
+                        "\\({L\ue8a0(h)}\ue89e\\overset{\\Delta}{=}\ue89e{\\max \ue89e\\left\\{ {\\left\\lceil {\\log_{2}\ue8a0\\left( {4\ue89et} \\right)} \\right\\rceil,\\left\\lceil {\\log_{2}\ue89e\\frac{4\ue89et\ue89e\\; \ue89e\\alpha}{{\uf605h\uf606}^{2} - \\alpha}} \\right\\rceil} \\right\\} \ue89e{\\mspace{11mu} \ue89e\\;}\ue89e{and}}\\)\n\\(\\overset{\\rightarrow}{h}\ue89e\\overset{\\Delta}{=}\ue89e{{F\ue8a0(h)} = {\\frac{h}{\uf605h\uf606}.}}\\)",
+                        "We have the following proposition.",
+                        "Proposition 2 Let h\u03b5Ct with \u2225h\u22252>\u03b1 for some t\u22671. Then, q({right arrow over (h)};L(h)),h|2>\u03b1.",
+                        "This result has the following interpretation. Suppose \u2225h\u22252>\u03b1 and thus outage is avoidable with the beamforming vector {right arrow over (h)}. By construction, the sequence of quantized beamforming vectors q({right arrow over (h)};l), l\u22670 (which are feasible since \u2225q({right arrow over (h)}; l}\u2225\u2266\u2225{right arrow over (h)}\u2225=1) provide an increasingly finer approximation of as the resolution l grows to infinity. The proposition shows that for every given h with \u2225h\u22252>\u03b1, there is in fact a \u201csufficient resolution\u201d L(h) (that depends only on \u2225h\u2225) such that the quantized beamforming vector q({right arrow over (h)};l) can avoid outage.",
+                        "Proposition 2 leads to the following limited feedback scheme under the assumption of perfect CSIR: If \u2225h\u22252>\u03b1, the receiver calculates the required resolution L(h) to avoid outage, and sends 2t(L(h)+3) feedback bits that represent the corresponding outage-avoiding beamforming vector q({right arrow over (h)}; L(h)). The transmitter, which we assume can perfectly know the length of the feedback code word that it has received, first recovers L(h), and then the beamforming vector q({right arrow over (h)}; L(h)). Otherwise, if \u2225h\u22252\u2266\u03b1, outage is unavoidable except for channel states \u2225h\u22252=\u03b1 with zero probability. Ln this case, the receiver sends the one-bit feedback message \u201c0\u201d so that the transmitter can transmit with an arbitrary but fixed beamforming vector, say e1. We refer to this scheme as scheme Ct, where the subscript indicates the number of transmitter antennas. We have Ct(h)=q({right arrow over (h)}; L(h)). By construction, Ct achieves the full-CSI outage probability with the feedback rate",
+                        "fr(Ct)=P(\u2225h\u22252\u2266\u03b1)+\u03a3l\u221e\u250clog(4t)\u2510\u221e2t(l+3)pl,\u2003\u2003(2)",
+                        "where plP (L(h)=l, \u2225h\u22252>\u03b1). As l\u2192\u221e, pl can be shown to decay fast enough so that the resulting feedback rate is finite. Intuitively, instead of trying to pick the best beamforming vector that maximizes the signal-to-noise ratio in some given codebook, one spends just enough bits to describe a beamforming vector that avoids outage. This allows us to achieve the full-CSI performance with a finite feedback rate under the assumption of perfect CSIR.",
+                        "B. Achieving Out{F) by Interleaving",
+                        "We now return to our main goal of designing a scheme that can achieve the full-CSI outage probability with finite training and feedback rates. The scheme Ct as described above is not immediately applicable for our purposes as (i) it requires perfect CSIR and thus induces a training rate of t, and (ii) according to equation 2, its feedback rate grows at least as e(t) (We have fr(Ct)\u22676t\u03a3l\u221e\u250clog(4t)\u2510\u221epl=6tP(\u2225h\u22252>\u03b1)\u03b5\u2296(t).).",
+                        "We can however incorporate the sequence of schemes Ci, i=1, . . . , t as sub-blocks of an interleaved training and limited feedback scheme D as shown in FIG. 4. In the figure, we use the notation hi[h1 . . . hi]T, i=1, . . . t to represent the first i components of the channel state h. Given h and a value of the variable i\u03b5{1, . . . , t} in the figure, suppose that the transmitter has \u201cjust\u201d trained its ith antenna, so that the receiver has acquired the knowledge of hi. At this stage, the receiver knows the channel values h1, . . . , hi corresponding to the first i antennas of the transmitter, or equivalently, it knows hi. We consider the following two cases for the receiver's feedback and the corresponding transmitter action.",
+                        "If \u2225hi\u22252\u2266\u03b1, as far as the channels that have been made available to the receiver are concerned, outage is unavoidable with probability 1. The receiver thus requests the transmitter to train the next antenna by sending the feedback bit \u201c0,\u201d and the transmitter complies. The case i=t is an exception: Outage is unavoidable with any beamforming vector with probability 1 (we have \u2225ht\u22252=\u2225h\u22252\u2266\u03b1), and thus the transmitter transmits via the (arbitrarily chosen) beamforming vector e1.",
+                        "On the other hand, if \u2225hi\u22252>\u03b1, the receiver feeds back the i-dimensional vector Ci(hi)=q({right arrow over (h)}i; L(hi)) using 2i(L(hi)+3) feedback bits. By Proposition 2, we have |Ci(hi),hi|2>\u03b1. This implies that the actual t-dimensional beamforming vector utilized at the transmitter, which is simply constructed by appending t\u2212i zeroes to Ci(hi), will also avoid outage.",
+                        "By construction, scheme D avoids outage for any channel state h with \u2225h\u22252>\u03b1. Hence, it achieves the full-CSI outage probability out(F). Calculations for the training and feedback rates of D are slightly more involved.",
+                        "Theorem 2 We have out(D)=out(F) with tr{D)\u22661+\u03b1 and fr(D)\u226686(1+\u03b13).",
+                        "We shall emphasize that Theorem 2 should be interpreted as \u201cjust\u201d an achievability result. Its main message is that the full-CSI performance can be achieved with t-independent training and feedback rates. Hence, the \u03b1-dependent bounds in the statement of Theorem 2 are not necessarily the best-possible as far as a general scheme that can achieve out(F) is concerned (this can be observed from the proof of the theorem itself.).",
+                        "Let us now first compare the results of Theorem 2 with what we have achieved by Theorem 1 using the antenna selection scheme B. For scheme B, we have tr(B), fr(B)\u03b5e\u2296(e\u03b1) as a\u2192\u221e, while for scheme D, we have tr(D)\u03b5\u2296(\u03b1) and fr(D)\u03b5O(\u03b1 log \u03b1). Hence, there are certain values of t and \u03b1 where the scheme D improves upon scheme B in every aspect. It should be clear why scheme D provides a better outage performance. Regarding the training rates, note that scheme B terminates only if the most-recently trained antenna avoids outage. On the other hand, scheme D terminates whenever the joint contribution of all trained antennas avoids outage. Therefore, for every channel state, scheme D always terminates before scheme B does, and thus, in fact, tr(D)\u2266tr(B). The efficiency of scheme D in terms of training also positively affects its feedback rate: The fewer the amount of antennas that one needs to train, the fewer the feedback messages spent requesting these antennas to be trained.",
+                        "An interesting special case of Theorem 2 is to assume P is large (but still fixed), and choose \u03b1=Pm-1 for some m>1. Then, if the transmitter has infinitely many antennas (for a simpler discussion, we put the physical impossibility of such an assumption aside), Theorem 2 tells us that we can transmit with rate log(1+Pm)\u02dcm log P (as P\u2192\u221e) outage-free, and thus achieve a multiplexing gain of m. In other words, by using interleaving, one can also achieve \u201cthe MIMO effect\u201d from a M ISO system with a very large number of antennas. The price to pay however is a training rate of O(Pm) and a feedback rate of O(P3m), which are both much larger than the data transmission rate m log P. Ideally, we would like the feedback and training rates in Theorem 2 (or in another scheme with a t\u2192\u221e vanishing outage probability) to be O(log \u03b1) as \u03b1\u2192\u221e.",
+                        "On the other hand, regarding the data rate log(I+\u03b1P), when P is small (a typical case of a low-power system), even slight increases in \u03b1 significantly improves the data transmission rate. For example, for P=1, increasing \u03b1 from 1 to 3 doubles the data rate. For such scenarios with small \u03b1, tighter bounds on the training and feedback rates and/or custom-made numerically-designed interleaved schemes are a necessity. In this context, finding an efficient scheme for the numerical design of interleaved schemes would prove to be a challenging network vector quantization problem, where one has to design several interdependent vector quantizers managing the multiple feedback phases of the interleaved scheme.",
+                        "Many alterations and modifications may be made by those having ordinary skill in the art without departing from the spirit and scope of the embodiments.",
+                        "Therefore, it must be understood that the illustrated embodiment has been set forth only for the purposes of example and that it should not be taken as limiting the embodiments as defined by the following embodiments and its various embodiments.",
+                        "Therefore, it must be understood that the illustrated embodiment has been set forth only for the purposes of example and that it should not be taken as limiting the embodiments as defined by the following claims. For example, notwithstanding the fact that the elements of a claim are set forth below in a certain combination, it must be expressly understood that the embodiments includes other combinations of fewer, more or different elements, which are disclosed in above even when not initially claimed in such combinations. A teaching that two elements are combined in a claimed combination is further to be understood as also allowing for a claimed combination in which the two elements are not combined with each other, but may be used alone or combined in other combinations. The excision of any disclosed element of the embodiments is explicitly contemplated as within the scope of the embodiments.",
+                        "The words used in this specification to describe the various embodiments are to be understood not only in the sense of their commonly defined meanings, but to include by special definition in this specification structure, material or acts beyond the scope of the commonly defined meanings. Thus if an element can be understood in the context of this specification as including more than one meaning, then its use in a claim must be understood as being generic to all possible meanings supported by the specification and by the word itself.",
+                        "The definitions of the words or elements of the following claims are, therefore, defined in this specification to include not only the combination of elements which are literally set forth, but all equivalent structure, material or acts for performing substantially the same function in substantially the same way to obtain substantially the same result. In this sense it is therefore contemplated that an equivalent substitution of two or more elements may be made for any one of the elements in the claims below or that a single element may be substituted for two or more elements in a claim. Although elements may be described above as acting in certain combinations and even initially claimed as such, it is to be expressly understood that one or more elements from a claimed combination can in some cases be excised from the combination and that the claimed combination may be directed to a subcombination or variation of a subcombination.",
+                        "Insubstantial changes from the claimed subject matter as viewed by a person with ordinary skill in the art, now known or later devised, are expressly contemplated as being equivalently within the scope of the claims. Therefore, obvious substitutions now or later known to one with ordinary skill in the art are defined to be within the scope of the defined elements.",
+                        "The claims are thus to be understood to include what is specifically illustrated and described above, what is conceptionally equivalent, what can be obviously substituted and also what essentially incorporates the essential idea of the embodiments."
+                    ],
+                    "subsections": [],
+                    "outline_long": [
+                        "propose interleaved training and feedback scheme",
+                        "describe conventional scheme limitations",
+                        "introduce MISO system with t transmitter antennas",
+                        "define channel state and input-output relationship",
+                        "introduce outage probability and beamforming",
+                        "define outage probability with arbitrary mapping",
+                        "introduce full-CSI and open-loop systems",
+                        "describe optimal mapping for full-CSI system",
+                        "describe optimal mapping for open-loop system",
+                        "compare outage probabilities of full-CSI and open-loop systems",
+                        "introduce proposition 1 for t-asymptotic behavior",
+                        "describe good and bad news from proposition 1",
+                        "motivate need for partial CSIT and partial CSIR",
+                        "introduce interleaved training and limited feedback",
+                        "describe conventional antenna selection scheme",
+                        "introduce new antenna selection scheme",
+                        "describe operation of new antenna selection scheme",
+                        "calculate outage probability of new scheme",
+                        "define training and feedback rates",
+                        "calculate training and feedback rates of new scheme",
+                        "discuss significance of new scheme",
+                        "generalize to arbitrary interleaved scheme",
+                        "describe tasks of a scheme",
+                        "define outage probability, training rate, and feedback rate",
+                        "view different scenarios as manifestations of a single scheme",
+                        "introduce theorem 1",
+                        "motivate full-CSI gains",
+                        "define dead zone scalar quantizer",
+                        "extend definition to beamforming vector",
+                        "introduce proposition 2",
+                        "interpret proposition 2",
+                        "describe limited feedback scheme",
+                        "calculate feedback rate",
+                        "introduce scheme Ct",
+                        "describe limitations of scheme Ct",
+                        "introduce scheme D",
+                        "describe scheme D",
+                        "calculate training and feedback rates of scheme D",
+                        "state theorem 2",
+                        "compare scheme D with scheme B",
+                        "discuss advantages of scheme D",
+                        "discuss special case of theorem 2",
+                        "discuss limitations of theorem 2",
+                        "discuss need for efficient scheme design",
+                        "discuss alterations and modifications",
+                        "discuss scope of embodiments",
+                        "discuss combinations of elements",
+                        "discuss definitions of words and elements",
+                        "discuss equivalent structure, material, or acts",
+                        "discuss insubstantial changes",
+                        "discuss scope of claims"
+                    ],
+                    "num_characters": 26288,
+                    "outline_medium": [
+                        "introduce interleaved training and feedback scheme",
+                        "motivate interleaved scheme with advantages over conventional scheme",
+                        "define MISO system and channel state",
+                        "derive channel capacity with perfect CSIR",
+                        "define outage probability and beamforming",
+                        "discuss full-CSI and open-loop systems",
+                        "state proposition 1 on outage probability behavior",
+                        "discuss limitations of full-CSI and open-loop systems",
+                        "introduce partial CSIT, partial CSIR schemes",
+                        "describe conventional antenna selection scheme",
+                        "describe new antenna selection scheme with interleaved training and limited feedback",
+                        "generalize interleaved scheme and define figures of merit",
+                        "motivate full-CSI gains",
+                        "define dead zone scalar quantizer",
+                        "extend definition to beamforming vector",
+                        "introduce proposition 2",
+                        "describe limited feedback scheme",
+                        "introduce scheme Ct",
+                        "describe achieving out(F) by interleaving",
+                        "introduce scheme D",
+                        "describe feedback and transmitter action",
+                        "state theorem 2",
+                        "compare results with theorem 1",
+                        "discuss special case of theorem 2",
+                        "discuss future work and modifications"
+                    ],
+                    "outline_short": [
+                        "introduce interleaved training and feedback scheme",
+                        "motivate need for partial CSIT and partial CSIR",
+                        "describe conventional antenna selection scheme",
+                        "propose new antenna selection scheme with interleaved training and limited feedback",
+                        "analyze training and feedback rates of new scheme",
+                        "generalize to framework of interleaved schemes",
+                        "motivate full-CSI gains",
+                        "define dead zone scalar quantizer",
+                        "derive proposition 2",
+                        "describe scheme Ct",
+                        "describe scheme D",
+                        "discuss implications of theorem 2"
+                    ]
+                }
+            ],
+            "outline_long": [],
+            "num_characters": 0,
+            "outline_medium": [],
+            "outline_short": []
+        }
+    ],
+    "claims": [
+        "1. A method for improving wireless communication in a system having multiple transmitting antennas comprising:\ntransmitting a signal from one of a multiplicity of transmitting antennas to a receiver;\nfeeding back channel state information CSI from the receiver to the one of the multiplicity of transmitting antennas;\ntraining the one of the multiplicity of antennas to transmit in a determined manner according to feedback CSI from the receiver for the purpose of improving data transmission from the one of the multiplicity of antennas to the receiver; and\nrepeating transmitting a signal, feeding back channel state information and training another one of the multiplicity of transmitting antennas in a one-by-one interleaved fashion.",
+        "2. The method of claim 1 further comprising providing a feedback message to request the transmitter to train another one antenna or if already trained transmitting antennas provide data transmission meeting a predetermined condition, then terminating further interleaved training of additional transmitting antennas.",
+        "3. The method of claim 2 where providing a feedback message to request the transmitter to train another antenna comprises providing side information about the channel state.",
+        "4. The method of claim 2 further comprising providing a feedback message which includes a quantized code word to be utilized by the transmitter for data transmission.",
+        "5. The method of claim 1 wherein the feeding back and training uses an overhead that is independent of the number of transmitting antennas.",
+        "6. The method of claim 1 where transmitting a signal, feeding back channel state information and training another one of the multiplicity of transmitting antennas in a one-by-one interleaved fashion and repeating transmitting a signal, feeding back channel state information and training another one of the multiplicity of transmitting antennas in a one-by-one interleaved fashion comprises achieving the same performance as a system with perfect transmitter and receiver channel state information (CSI).",
+        "7. The method of claim 1 where training the one of the multiplicity of antennas to transmit in a determined manner according to feedback CSI from the receiver for the purpose of improving data transmission from the one of the multiplicity of antennas to the receiver comprises training a channel h1 corresponding to a first on of the transmitting antennas and waiting for receiver feedback, where feeding back channel state information CSI from the receiver to the one of the multiplicity of transmitting antennas comprises after the receiver, having acquired the knowledge of h1, feeds back a one-bit feedback message \u201c1\u201d if |h1|2\u2267\u03b1 indicating that the first one of the transmitting antennas avoids outage, otherwise, feeding back a \u201c0,\u201d indicating that the first one of the transmitting antennas will result in an outage,\nfurther comprising terminating feeding back and training if the transmitter receives a \u201c1\u201d;\nstarting data transmission over the first transmitting antenna only without training remaining transmitting antennas;\notherwise, if the first transmitting antenna receives a \u201c0,\u201d training the channel state h2 corresponding to a second transmitting antenna.",
+        "8. The method of claim 7 repeating training each channel hi in sequence corresponding to each corresponding transmitting antenna and waiting for receiver feedback, where feeding back channel state information CSI from the receiver to the one of the multiplicity of transmitting antennas comprises after the receiver, having acquired the knowledge of h1, feeds back a one-bit feedback message \u201c1\u201d if |h1|2\u2267\u03b1 indicating that the first one of the transmitting antennas avoids outage, otherwise, feeding back a \u201c0,\u201d indicating that the first one of the transmitting antennas will result in an outage, terminating feeding back and training if the transmitter receives a \u201c1\u201d; starting data transmission over the first transmitting antenna only without training remaining transmitting antennas, otherwise, if the first transmitting antenna receives a \u201c0,\u201d training the channel state hi+1 corresponding to a corresponding transmitting antenna until a transmitting antenna which avoid outage is found or if not transmitting over an arbitrarily chosen one of the transmitting antennas.",
+        "9. The method of claim 8 where the rate of feeding back and training the transmitting antennas is independent of t, the number of antennas including in the multiplicity of antennas whereby benefits of having a larger number of transmitting antennas are obtained with finite training and feedback overheads.",
+        "10. The method of claim 1 where the i th transmitting antenna has been trained so that the receiver has been sent the first i components of the CSI, where feeding back channel state information (CSI) from the receiver to the one of the multiplicity of transmitting antennas comprises: If \u2225hi\u22252\u2266\u03b1 requesting the next antenna to be trained by sending the feedback bit \u201c0,\u201d and training the next transmitting antenna, unless the i th transmitting antenna is the last one of the multiplicity of transmitting antennas in which case the last transmitting antenna transmits via an arbitrarily chosen beamforming vector e1; otherwise if \u2225hi\u22252>\u03b1, feeding back an i-dimensional vector, Ci(hi)=q({right arrow over (h)}i; L(hi)) using 2i(L(hi)+3) feedback bits and transmitting data using a t-dimensional beamforming vector at the next transmitting antenna, which i-dimensional vector is constructed by appending t\u2212i zeroes to Ci(hi).",
+        "11. The method of claim 10 further comprising avoiding outage for any channel state h with \u2225h\u22252>\u03b1 to achieve the full-CSI outage probability, out(F).",
+        "12. A method for improving wireless communication in a system having a multiplicity of transmitting antennas of tin number coupled to a transmitter communicating with a receiver where channel state information (CSI) is fed back from the receiver to the multiplicity of transmitting antennas and where the multiplicity of antennas are trained to transmit in a determined manner according to feedback CSI from the receiver for the purpose of improving data transmission from the multiplicity of antennas to the receiver, comprising:\ntraining the transmitting antennas in a one-by-one interleaved fashion as follows, where when the i th transmitting antenna has been trained so that the receiver has been sent the first i components of the CSI, feeding back channel state information (CSI) from the receiver to the i+1 transmitting antenna comprises:\nIf \u2225hi\u22252\u2266\u03b1 requesting the i+1 transmitting antenna to be trained by sending the feedback bit \u201c0,\u201d and training the i+1 transmitting antenna, unless the i th transmitting antenna is the t th transmitting antenna in which case the transmitting antenna is trained to transmit via an arbitrarily chosen beamforming vector e1;\notherwise if \u2225hi\u22252>\u03b1, feeding back an i-dimensional vector, Ci(hi)=q({right arrow over (h)}i; L(hi)) using 2i(L(hi)+3) feedback bits, where q(x; l) is the dead zone quantizer, {right arrow over (h)}i is a beamforming vector for channel state hi, L(hi) the corresponding resolution of q, and transmitting data using a t-dimensional beamforming vector at the transmitter, which is constructed by appending t\u2212i zeroes to Ci(hi).",
+        "13. The method of claim 12 further comprising avoiding outage for any channel state h with \u2225h\u22252>\u03b1 to achieve the full-CSI outage probability, out(F)."
+    ]
+}

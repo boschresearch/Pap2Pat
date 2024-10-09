@@ -1,0 +1,266 @@
+# Introduction
+
+Multi-task learning [7, 42] (MTL) solves multiple tasks using a single model, with potential advantages of fast inference and improved generalization by sharing representations across related tasks. However, in practical scenarios, simultaneously optimizing all tasks is difficult due to task conflicts and limited model capacity [58]. Consequently, a trade-off between the competing tasks has to be found, necessitating precise balancing of the different task losses during optimization. In many applications, the desired trade-off can change over time, requiring a new model to be retrained from scratch. To overcome this lack of flexibility, recent methods propose dynamic networks for multi-task learning [28,38]. These frameworks enable a single multi-task model to learn the entire trade-off curve, and allow users to control the desired trade-off during inference via task preferences denoting the relative task importance. Our goal is to enable users to control resource allocation dynamically among multiple tasks at inference time. Conventional dynamic networks (PHN [38]) for MTL achieve this in terms of weight changes within a fixed model (color gradients indicate proportion of weights allocated for each task). In contrast, we perform resource allocation in terms of both architecture and weights. This enables us to control total compute cost in addition to task preference. Dashed circle represents maximum compute budget, while filled circle represents the desired budget. Portion of colors represents the user-defined task importance.
+
+Conventional dynamic approaches for MTL assume a fixed model architecture, with all but the last prediction layers shared, and control trade-offs by changing the weights of this model. While such hard-parameter sharing is helpful in saving resources, the performance is inevitably lower than single task baselines when task conflicts exist due to oversharing of parameters between tasks [42] . Furthermore, the fixed architecture suffers from a lack of flexibility, leading to a constant compute cost irrespective of the given task preference or compute budget changes. In many applications where the budget can change over time, these approaches may fail to take advantage of the increased resources in order to improve performance or accordingly lower the compute cost in order to satisfy stricter budget requirements.
+
+To address the aforementioned issue and strike a balance between flexibility and performance, we propose a more expressive tree-structured [15] dynamic multi-task network which can adapt its architecture in addition to its weights at test-time, as illustrated in Figure 1. Specifically, we design a controller using two hypernetworks [17] that predict archi-tectures and weights, respectively, given a user preference that specifies test-time trade-offs of relative task importance and resource availability. This increases flexibility by changing branching locations to re-allocate resources over tasks to match user-preferred task importance, and enhance or compromise task accuracy given computation budget requirements at any given moment. However, this comes at the cost of increase in complexity: 1) generalizing architecture prediction to unseen preferences, and 2) performing dynamic weight changes on potentially thousands of different models.
+
+To tackle these challenges, we develop a two-stage training scheme that starts from an N -stream network, termed the anchor net, which is initialized using weights from N pre-trained single-task models. This guides the architecture search as a prior that is preference-agnostic yet captures inter-task relations. In the first stage, we exploit inter-task relations derived from the anchor net to train the first hypernetwork that predicts connections between the different streams. We introduce a branching regularized loss that encourages more resource allocation for dominant tasks while reducing the network cost from the less preferred ones. The predicted architectures contain edges that have not been observed during the anchor net initialization. These are denoted as cross-task edges since they connect nodes that belong to different streams. In the second stage, to improve the performance of the predicted architectures with cross-task edges, we train a secondary hypernetwork for cross-task adaptation via modulation of the normalization parameters.
+
+Our framework is evaluated on three MTL datasets (PASCAL-Context, NYU-v2 and CIFAR-100) in terms of task performance, computational cost, and controllability (for both task importance and computational cost). Achieving performance comparable to state-of-the-art MTL architecture search methods under uniform task preference, our controller can further approximate efficient architectures for non-uniform preferences with provisions for reducing network size depending on computational constraints.
+
+The primary contributions of our work are as follows: • A controllable multi-task framework which allows users to assign task preference and the trade-off between task performance and network capacity via architectural changes. • A controller, composed of two hypernetworks, to provide dynamic network structure and adapted network weights. • A new joint learning objective including task-related losses and network complexity regularization to achieve the user defined trade-offs. • Experiments on several MTL benchmarks (PASCAL-Context [37], NYU-v2 [48], CIFAR-100 [25]) demonstrate the efficacy of our framework.
+
+# Related Work
+
+Multi-Task Learning. Multi-task learning seeks to learn a single model to simultaneously solve a variety of learning tasks by sharing information among the tasks [7]. In the context of deep learning, current works focus mostly on designing novel network architectures and constructing efficient shared representation among tasks [42,59]. Typically, these works can be grouped into two classes -hard-parameter sharing and soft-parameter sharing. In the soft sharing setting [14,36,43], each task has its own set of backbone parameters with some sort of regularization mechanisms to enforce the distance between weights of the model to be close. In contrast, the hard sharing setting entails all the tasks sharing the same set of backbone parameters, with branches towards the outputs [23, 24,33]. More recent works have attempted learning the optimal architectures via differentiable architecture search [5,15,50]. The overwhelming majority of these approaches are trained using a simple weighted sum of the individual task losses, where a proper set of weights is commonly selected using grid search or using techniques such as gradient balancing [9]. Other approaches [29,35,47] attempt to model multi-task learning as a multi-objective optimization problem and find Pareto stationary solutions among different tasks. Recently, optimization methods have also been proposed to manipulate gradients in order to avoid conflicts across tasks [10,56]. None of these methods are suitable for dynamically modeling performance trade-offs, which is the focus of our work.
+
+Hypernetworks. A hypernetwork is used to learn context dependent parameters for a dynamic network [17,46], thus, obtaining multiple customizable models using a single network. Such hypernetworks have been successfully applied in different scenarios, e.g., recurrent networks [17], 3D point cloud prediction [30], video frame prediction [22], neural architecture search [4] and reinforcement learning [40,45].
+
+Recent works [28,38] propose using hypernetworks to model the Pareto front of competing multi-task objectives. Our approach is closely related to these works, however, these methods focus on generating weights for a fixed, handcrafted architecture, while we use hypernetworks to model the tradeoffs in multi-task learning by varying the architecture. This allows us to take dynamic resource allocation into account, an aspect largely ignored in previous works.
+
+Dynamic Networks. Dynamic neural networks, as opposed to usual static models, can adapt their structures during inference, leading to notable improvements in performance and computational efficiency [18]. Previous works focus on adjusting the network depth [3,20,52,54], width [26,57], or perform dynamic routing within a fixed supernet that includes multiple possible paths [27,32,39]. Dynamic depth is realised by either early exiting, i.e. allowing "easy" samples to be processed at shallow layers without executing the deeper layers [3,20], or layer skipping, i.e. selectively skipping intermediate network layers conditioned on each sample [52,54]. Dynamic width is an alternative to the dynamic depth where instead of layers, filters are selectively pruned  conditioned on the input [26,57]. Dynamic routing can be implemented by learning controllers to selectively execute one of multiple candidate modules at each layer [32,39]. Due to the non-differentiable nature of the discrete choices, reinforcement learning is employed to learn these controllers.
+
+In [27], the routing modules utilize a differentiable activation function which conditionally outputs zero values, facilitating the end-to-end training of routing decisions. Recent works have also proposed learning dynamic weights for modeling different hyperparameter configurations [11] and domain adaptation [53]. In contrast to most of the existing works which intrinsically adapt network structures as a function of input, our method enables explicit control of the total computational cost as well as the task trade-offs.
+
+Weight Sharing Neural Architecture Search. Weight sharing has evolved as a powerful tool to amortize computational cost across models for neural architecture search (NAS). These methods integrate the whole search space of architectures into a weight sharing supernet and optimize network architectures by pursuing the best performing subnetworks. Joint optimization methods [6,31,55] optimize the weights of the supernet and a differentiable routing policy simultaneously. In contrast, one-shot methods [1,2,4,16] disentangle the training into two steps: first, the weights of the supernet are trained, after which the agent is trained with the fixed supernet. We utilize such a weight sharing strategy in our framework for dynamic resource allocation.
+
+# Method
+
+Given a set of N tasks T = {T 1 , T 2 , . . . , T N }, conventional multi-task learning seeks to minimize a weighted sum of task-specific losses: L task (r) = i r i L i , where each L i represents the loss associated with task T i , and r denotes a task preference vector. This vector signifies the desired performance trade-off across the different tasks, with larger values of r i denoting higher importance to task T i . Here [42]. We seek to approximate the trade-off curve defined by different values of r using tree-structured sub-networks [15] within a single multi-task model, given a total computational budget defined by a resource preference variable c ∈ [0, 1], where larger c denotes more frugal resource usage. This is formulated as a minimization of the expected value of the task loss over the user preference distribution, with regularization Ω to control resource usage, i.e., E (r,c)∼P (r,c) L task (r) + Ω(r, c). Optimizing this directly is equivalent to solving NAS [31] for every possible (r, c) simultaneously. Thus, instead of solving directly, we cast it as a search to find tree sub-structures and the corresponding modulation of features for every (r, c), within an N -stream anchor network with fixed weights.
+
+Our framework consists of two hypernets (h and h) [17] and an anchor net F, as shown in Figure 2. At test-time, given an input preference, we utilize the network connections and adapted weights predicted by the hypernets to modulate F, to obtain the final model. We propose a two-stage training scheme to train the framework. First, we initialize a preference agnostic anchor net, which provides the anchor weights at test time (Section 3.1). Based on this anchor net, the tree-structured architecture search space is then defined (Section 3.2). Next, we train the edge hypernet using prior task relations obtained from the anchor net by optimizing a novel branching regularized loss function derived by inducing a dichotomy over the tasks (Section 3.3.1). Finally, we train a weight hypernet, keeping the anchor net and edge hypernet fixed, to modulate the anchor net weights (Section 3.3.2).
+
+## Anchor Network
+
+We introduce an anchor net F as an alternative approach to model weight generation in dynamic networks for MTL [28,38]. Previous methods adopt chunking [17] to mitigate the large computation and memory required for generating entire network weights at the expense of limiting the < l a t e x i t s h a 1 _ b a s e 6 4 = " t 6 i H j Z m z 9 u J a F f S H S 0 x 8 E 4 V r N J E = " > A A A B 7 X i c b V D L S g M x F L 1 T X 7 W + q i 7 d B I v g q s x I U Z d F N y 4 r 2 A e 0 Q 8 m k m T Y 2 k x m S O 0 I p / Q c 3 L h R x 6 / + 4 8 2 / M t L P Q 1 g O B w z n 3 k H t P k E h h 0 H W / n c L a + s b m V n G 7 t L O 7 t 3 9 Q P j x q m T j V j D d Z L G P d C a j h U i j e R I G S d x L N a R R I 3 g 7 G t 5 n f f u L a i F g 9 4 C T h f k S H S o S C U b R S q z e I 0 Z T 6 5 Y p b d e c g q 8 T L S Q V y N P r l L x t k a c Q V M k m N 6 X p u g v 6 U a h R M 8 l m p l x q e U D a m Q 9 6 1 V N G I G 3 8 6 3 3 Z G z q w y I G G s 7
+
+X 1 d p 9 r V K / y e s o w g m c w j l 4 c A V 1 u I M G N I H B I z z D K 7 w 5 s f P i v D s f i 9 G C k 2 e O 4 Q + c z x 8 q j 4 7 f < / l a t e x i t > . . . < l a t e x i t s h a 1 _ b a s e 6 4 = " t 6 i H j Z m z 9 u J a F f S H S 0 x 8 E 4 V r N J E = " > A A A B 7 X i c b V D L S g M x F L 1 T X 7 W + q i 7 d B I v g q s x I U Z d F N y 4 r 2 A e 0 Q 8 m k m T Y 2 k x m S O 0 I p / Q c 3 L h R x 6 / + 4 8 2 / M t L P Q 1 g O B w z n 3 k H t P k E h h 0 H W / n c L a + s b m V n G 7 t L O 7 t 3 9 Q P j x q m T j V j D d Z L G P d C a j h U i j e R I G S d x L N a R R I 3 g 7 G t 5 n f f u L a i F g 9 4 C T h f k S H S o S C U b R S q z e I 0 Z T 6 5 Y p b d e c g q 8 T L S Q V y N P r l L x t k a c Q V M k m N 6 X p u g v 6 U a h R M 8 l m p l x q e U D a m Q 9 6 1 V N G I G 3 8 6 3 3 Z G z q w y I G G s 7
+
+X 1 d p 9 r V K / y e s o w g m c w j l 4 c A V 1 u I M G N I H B I z z D K 7 w 5 s f P i v D s f i 9 G C k 2 e O 4 Q + c z x 8 q j 4 7 f < / l a t e x i t > . . . < l a t e x i t s h a 1 _ b a s e 6 4 = " D y L 8 4 u H Y K o u i b 8 M r c E 4 A V z B R O K w = " > A A A B 6 3 i c b V B N S w M x E J 3 U r 1 q / q h 6 9 B I v g q e y K q M e i F 4 8 V 7 A e 0 S 8 m m 2 T Y 0 y S 5 J V i h L / 4 I X D 4 p 4 9 Q 9 5 8 9 + Y b f e g r Q 8 G H u / N M D M v T A Q 3 1 v O + U W l t f W N z q 7 x d 2 d n d 2 z + o H h 6 1 T Z x q y l o 0 F r H u h s Q w w R V r W W 4 F 6 y a a E R k K 1 g k n d 7 n f e W L a 8 F g 9 2 m n C A k l G i k e c E p t L f c P l o F r z 6 t 4 c e J X 4 B a l B g e a g + t U f x j S V T F k q i D E 9   
+
+# e x i t s h a 1 _ b a s e 6 4 = " R e 4 P O e n 4 A 1 A p j + W b K P b 1 b j c e j 5 w = " >
+
+1 (1) < l a t e x i t s h a 1 _ b a s e 6 4 = " W h z V O s w y 5 c p y 8 6 j 6 L Y K M k O 6 I A d g = " > A A A B 9 H i c b V B N S 8 N A E J 3 4 W e t X 1 a O X Y B H q p S S l q M e i F 4 8 V 7 A e 0 s U y 2 m 3 b p Z h N 3 N 4 U S + j u 8 e F D E q z / G m / / G b Z u D t j 4 Y e L w 3 w 8 w 8 P + Z M a c f 5 t t b W N z a 3 t n M 7 + d 2 9 / Y P D w t F x U 0 W J J L R B I h 7 J t o + K c i Z o Q z P N a T u W F E O f 0 5 Y / u p 3 5 r T G V i k X i Q U 9 i 6 o U 4 E C x g B L W R v C 7 y e I i P v O e W K h e 9 Q t E p O 3 P Y q 8 T N S B E y 1 H u F r 2 4 / I k l I h S Y c l e q 4 T q y 9 F K V m h N N p v p s o G i M Z 4 Y B 2 D B U Y U u W l 8 6 O n 9 r l R + n Y Q S V N C 2 3 P 1 9 0 S K o V K T 0 D e d I e q h W v Z m 4 n 9 e J 9 H B t Z c y E S e a C r J Y F C T c 1 p E 9 S 8 D u M 0 m J 5 h N D k E h m b r X J E C U S b X L K m x D c 5 Z d X S b N S d i / L 1 f t q s X a T x Z G D U z i D E r h w B T W 4 g z o 0 g M A T P M M r v F l j 6 8 V 6 t z 4 W r W t W N n M C f 2 B 9 / g B 7 2 p F E < / l a t e x i t > ↵ l 1 (2)
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " 8 V a m o 8   hypernet capacity. The anchor net, consisting of N -stream backbones trained for N individual tasks (Figure 2), overcomes this bottleneck by providing the weights in the tree structures predicted by the edge hypernet. Our choice of the anchor net is motivated by the need for an initialization that reflects inter-task relations and is based on observations from [51], where branching in tree-structured MTL networks is shown to be contingent on how similar task features are at any layer. It can also be interpreted as a supernet used in one-shot NAS approaches [2], which is capable of emulating any architecture in the search space. Subsequently, the base weights of the anchor net are further modulated via the weight hypernet to address the cross-task connections unseen in the anchor net (Section 3.3.2).
+
+## Architecture Search Space
+
+We utilize a tree-structured network topology which has been shown to be highly effective for multi-task learning in [15]. It shares common low-level features over tasks while extracting task-specific ones in the higher layers, enabling control of the trade-off between tasks by changing branching locations conditioned on the desired preference (r, c). The search space is represented as a directed acyclic graph (DAG), where vertices in the graph represent different operations and edges denote the data flow through the network. Figure 3 shows a block of such a graph, containing N parent and child nodes. In this work, we realize a tree-structure by stacking such blocks sequentially and allowing a child node to sample a path from the candidate paths between itself and all its parent nodes. Concretely, we formulate the stochastic branching operation at layer l as
+
+where x l+1 j denotes the input to the j-th node in layer l + 1, d j is a one-hot vector indicating the parent node sampled from the categorical distribution parameterized by α l j and, Y l = [y l 1 , . . . , y l N ] concatenates outputs from all parent nodes at layer l. Note that selecting a parent from every node determines a unique tree structure. This suggests learning α = {α l j } 0≤j≤N,0≤l<L , conditioned on a preference (r, c), in a manner which satisfies the desired task trade-offs. Here, L denotes the total number of layers.
+
+## Preference Conditioned Hypernetworks
+
+We use two hypernets [17] to construct our controller for architectural changes. The edge hypernet h, parameterized by ϕ, predicts the branching parameters α = h(r, c; ϕ) within the anchor net. Subsequently, the weight hypernet h, parameterized by φ, predicts the normalization parameters { β, γ} = h(r, c; φ) to adapt the predicted network.
+
+Optimizing the task loss L task only takes into account the individual task performances without considering computational cost. Consequently, we introduce a branching regularizer Ω(r, c, α) to encourage node sharing (or branching) based on the preference. This regularizer contains two terms, the active loss, which encourages limited sharing of features among the high preference tasks, and the inactive loss, which aims to reduce resource utilization for the less important ones. In particular, the active loss is additionally weighted by the cost preference c to enable the control of total computational cost. Formally, our objective is formulated as to find the controller (ϕ and φ) that minimizes the expectation of the branching regularized task loss over the distribution of user preferences P (r,c) :
+
+We disentangle the training of the hypernetworks for stability -the edge hypernet is trained first, followed by the weight hypernet. At test time, when a preference (r, c) is presented to the controller, the maximum likelihood architecture corresponding to the supplied preference is first sampled from the branching distribution parameterized by the predictions of h. The weights of this tree-structure are then inherited from the anchor net, supplemented via adapted normalization parameters predicted by h.
+
+### Regularizing the Edge Hypernet
+
+We illustrate the idea of branching regularization in Figure 4: tasks with higher preferences should have a greater influence on the branching structure while tasks with smaller preferences may be de-emphasized by encouraging them to follow existing branching choices. Specifically, we define two losses, active and inactive losses, based on the task division into two groups, active tasks A = {T i | r i ≥ τ, ∀i ∈ [N ]}, and inactive tasks I = {T i | r i < τ, ∀i ∈ [N ]} with some threshold τ . Although individual tasks are already weighted by r in task loss L task , this explicit emphasizing of certain tasks over others was found to be crucial to induce better controllability, as shown in Section 4.6.
+
+Active loss. The active loss L active encourages nodes in the anchor net, corresponding to the active tasks, to be shared in order to avoid the whole network being split up by tasks with little knowledge shared among them. Specifically, we encourage any pair of nodes that are likely to be sampled in the final architecture (P ) and are from two similar tasks (A) to take the same parent node. Formally, we define L active as,
+
+where P (l, i, j) = P use (l, i)
+
+} denotes the probability that the nodes i in layer l are used in the sampled tree structure. A(i, j) captures the task affinity between tasks T i and T j , where we adopt Representational Similarity Analysis (RSA) [12] to compute the affinity. The factor L-l L encourages more sharing of nodes which contain low-level features. The full derivations of P use and A are detailed in the supplementary document.
+
+We use the Gumbel-Softmax reparameterization trick [21] to obtain the samples ν l i from the predicted logits α,
+
+Here, G l i =log(-log U l i ) is a standard Gumbel distribution with U l i sampled i.i.d. from the uniform distribution Unif(0, 1), and ζ denotes the temperature of the softmax. Inactive loss. The inactive tasks should have minimal effect in terms of branching. Inactive loss, L inactive , encourages these tasks to mimic the most closely related branching pattern,
+
+This ensures that the network branching is controlled by the active tasks, with the inactive tasks sharing nodes with the active tasks. Thus, the branching regularizer is defined as follows,
+
+where λ A , λ I are hyperparameters to determine the weighting of the losses. Typically, we set λ A = 1 and λ I = 0.1.
+
+Here, the active loss is additionally weighted by the resource preference c, so that larger c encourages more feature sharing to reduce total computational cost.
+
+### Cross-task Adaptation
+
+The architecture sampled by the edge hypernet h contains edges that have not been observed during the anchor net training. These are denoted as cross-task edges since they connect Figure 4. Branching loss. Illustration of the branching regularization, consisting of active and inactive losses. The active loss encourages limited sharing between high importance tasks, while the inactive loss tries to limit branching for less preferred tasks as much as possible.
+
+nodes that belong to different streams in F. Consequently, the performance of the sampled network is sub-optimal. To rectify this issue, we propose to modulate the weights of the anchor net to adaptively update the unseen edges using an additional weight hypernet h. Inspired from the prior works [34, 53] that estimate normalization statistics and optimize channel-wise affine transformations, we modulate only the normalization parameters using a hypernetwork. Concretely, we modulate the original batch normalization operation at layer l,
+
+) by predicting the perturbations to the parameters: {∆β l i , ∆γ l i } 0≤i≤N,0≤l<L = h(r, c; θ), where γ l i and β l i are the original affine parameters, and µ l i and σ l i denote the batch statistics of the node input x l i . This modulation primarily affects the preferences with two or more dominant tasks, where cross-task connections occur.
+
+# Experiments
+
+In this section, we demonstrate the ability of our framework to dynamically search for efficient architectures for multi-task learning. We show that our framework achieves flexibility between two extremes of the accuracy-efficiency trade-off, allowing a better control within a single model. Extensive experiments indicate that the predicted network structures match well with the input preferences, in terms of both resource usage and task performance.
+
+## Evaluation Criteria
+
+Uniformity. To measure controllability with respect to task preferences, we utilize uniformity [35] which quantifies how well the vector of task losses L = [L 1 , . . . , L N ] is aligned with the given preference. Specifically, for the loss vector L corresponding to the architecture for task preference r, uniformity is defined as µ r = 1 -D KL ( L ∥ 1/N ), where L(j) = rj Lj i riLi . This arises from the fact that, ideally, r j ∝ 1/L j , which in turn implies
+
+Hypervolume. Using the trained controller, we are able to approximate the trade-off curve among the different tasks in the loss space. To evaluate the quality of this curve we utilize hypervolume (HV) [60] -a popular metric in the multi-objective optimization literature to compare different sets of solutions approximating the Pareto front [13]. It measures the volume in the loss space of points dominated by a solution in the evaluated set. Since this volume is unbounded, hypervolume measures the volume in a rectangle defined by the solutions and a selected reference point. More details can be found in the appendix. Computational Resource. We measure the computational cost using the memory of the activated nodes in the anchor net and the GFLOPs, which approximates the time spent in the forward pass. We also report the computational cost of the hypernets to take into account their overheads. We discuss more on the model size in the appendix.
+
+## Datasets
+
+We evaluate the performance of our approach using three multi-task datasets, namely PASCAL-Context [37] and NYU-v2 [48], and CIFAR-100 [25]. The PASCAL-Context dataset is used for joint semantic segmentation, human parts segmentation and saliency estimation, as well as these three tasks together with surface normal estimation, and edge detection as in [5]. The NYU-v2 dataset comprises images of indoor scenes, fully labeled for semantic segmentation, depth estimation and surface normal estimation. For CIFAR-100, we split the dataset into 20 five-way classification tasks [41].
+
+## Baselines
+
+We compare our framework with both static and dynamic networks. Static networks include Single-task networks, where we train each task separately using a task-specific backbone, and Multi-task networks, in which all tasks share the backbone but have separate task-specific heads at the end. These multi-task networks are trained separately for different preferences and thus, training time scales linearly with the number of preferences. We use this to contrast the training time of our framework. The single-task networks demonstrate the anchor net performance. We also compare our architectures with two multi-task NAS methods, LTB [27] and BMTAS [5], which use the same tree-structured search space to perform NAS, but are static. The dynamic networks include Pareto Hypernetworks (PHN) [38], which predicts only the weights of a shared backbone network conditioned on a task preference vector using hypernetworks, and PHN-BN, a variation of PHN which predicts only the normalization parameters similar to our weight hypernet. Implementation details are presented in the appendix.
+
+## Comparison with Baselines
+
+Controllable resource usage. We visualize the variation in computational cost with respect to different task and resource usage preferences in Figure 5. We adopt the ratio of the size of the predicted architecture to the size of the     
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g
+
+# a t e x i t s h a 1 _ b a s e 6 4 = " 9 h z 6 u G E C k p n n k v r / I / B h G J J k n e M = " >
+
+r e p d V e s P 9 U r j N q + j C G d w D p f g w T U 0 4 B 6 a 0 A Y C T / A M r / D m T J 0 X 5 9 3 5 W I 4 W n H z n F P 7 A + f w B v 0 O S G A = = < / l a t e x i t > T2 < l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g  
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g   total anchor net as the criterion for evaluating computational cost. Compared to conventional dynamic networks that only adjust weights with a fixed computational cost (right), our framework (left) enables control over the total cost via a cost preference c. Resource usage peaks at the center of the contour, when more tasks are active, and falls down gradually as we move towards the corners, where task preferences are heavily skewed. Furthermore, the average resource usage decreases as c is increased, indicating the ability of the controller to incorporate resource constraints. Multi-task performance. We demonstrate the overall multitask performance in Tables 1-4 on four different settings (PASCAL-Context 5-task, PASCAL-Context 3-task, NYU-v2 3-task, CIFAR-100 20-task). In all cases, we report hypervolume (reference point mentioned below heading) and uniformity averaged across 20 task preference vectors r, sampled uniformly from S N . Inference network cost is calculated similarly over 1000 preference vectors. These are shown for two choices of c ∈ {0, 1} to highlight the two extreme cases of resource usage.
+
+Our framework achieves higher values in both hypervolume and uniformity compared to the existing dynamic models (PHN and PHN-BN) in all four settings. While the high hypervolume reinforces the efficacy of tree-structured models in solving multi-task problems, the uniformity values consolidate architectural change as an effective approach towards modeling task trade-offs. This is accompanied by increased average computational cost, indicated by inference parameter count. As discussed above, this is due to the flexible architecture over preferences, where actual cost will differ for each preference, e.g., reaching the cost of PHN-BN for extremely skewed preferences (Figure 5). Compared to Single-Task, the proposed controller is able to find effective architectures (as indicated by the hypervolume) which    perform nearly at par with a smaller memory footprint (as indicated by the average inference network parameter count). Notably, in the NYU-v2 3-task and CIFAR-100 settings, the ability to find effective architectures enables the model to outperform single-task networks, demonstrating the benefit of sharing features among related tasks via architectural change. In addition, our framework enjoys flexibility between two extreme cases, i.e. Single-Task (highest accuracy with lowest inference efficiency) and dynamic models with shared backbone (lowest accuracy with highest inference efficiency), spanning a range of trade-offs for different c values. The range of HV is larger when task-specific features are useful, compared to when the compact architecture already achieves higher HV than the Single-Task (Tables 3,4). "Control Params." is the cost of the hypernets. Note that this overhead will materialize only when the preference changes and does not have any effect on the task inference time. that persists across all the settings is the slight drop in uniformity that accompanies the adapted models in comparison to the unadapted ones. This is due to the propensity of the weight hypernet to improve task performance as much as possible while keeping the preferences intact. This leads to improved performance even in the low-priority tasks at the expense of lower uniformity. Note that our primary factor of controllability is through architectural changes which remains unaffected by the weight hypernet.
+
+# Effect of cross-task adaptation
+
+Training efficiency. In contrast to dynamic networks, static multi-task networks require multiple models to be trained, corresponding to different task preferences, to approximate the trade-off curve. As a result, these methods have a clear trade-off between their performance and their training time.
+
+To analyze this trade-off, we plot hypervolume vs. training time for our framework when compared to training multiple static models in Figure 6. We trained 20 multi-task models with different preferences sampled uniformly, and at the inference time we selected subsets of various sizes and computed their hypervolume. The shaded area in Figure 6 reflects the variance over different selections of task preference subsets. This empirically shows that our approach requires shorter training time to achieve similar hypervolume compared to the static multi-task networks.
+
+Method 
+
+## Analysis
+
+Architecture evaluation. We study the effectiveness of the architectures predicted by the edge hypernet by comparing them with those predicted by LTB [15] and BMTAS [5]. We choose the architecture predicted for a uniform task preference and, similar to LTB, we retrain it for a fair comparison. We evaluate the performance in terms of relative drop in performance across tasks and number of parameters with respect to the single task baseline. Despite not being directly trained for NAS, our framework is able to output architectures which perform at par with LTB (Table 5). More results on the Pascal-Context dataset and visualization of dynamic architectures can be found in the appendix. Task controllability. In Figure 7 we visualize the task controllability for our framework by plotting the test loss at different values of task preference for that specific task, marginalized over preference values of the other tasks. As expected, increasing the preference for a task gradually leads to a decrease in the loss value. Furthermore, increasing c leads to higher loss values due to smaller predicted architectures. The effect of the weight hypernet is also evident, as shown by the lower loss values obtained on using it on top of the edge hypernet (w/o adaptation).
+
+## Ablation Study
+
+Impact of inactive loss. Removing L inact leads to loss of controllability with the edge hypernet predominantly predicting the full original anchor net, with minimal branching, leading to high resource usage and poor uniformity (Table 6). Impact of weighting factors. Removing the two branching weights, L-l L and A, in the active loss, we make three key observations in Table 6: 1) average resource usage increases, 2) uniformity drops due to poor alignment between architectures and preferences, with larger architectures incorrectly predicted for skewed preferences, which ideally require less resources, 3) hypervolume remains almost constant across different c indicating poor cost control. Resource usage plots are presented in the appendix. Analysis of task threshold. We compare the effect of vary-   ing the threshold τ in Figure 8. Increasing the value beyond 1/N (∼ 0.3) leads to loss of controllability as indicated by the constant hypervolume across different values of c. This is due to the inability to account for uniform preferences. On the other hand, choosing values below this threshold leads to comparable performance. Additional explanations are provided in the appendix. Task classification. We analyse the importance of the induced task dichotomy by considering all tasks as active. This leads to: 1) high overall resource usage, and 2) poor controllability, especially at low values of c, as shown in Table 6.
+
+Resource usage plots are presented in the appendix.
+
+# Conclusion
+
+We present a new framework for dynamic resource allocation in multi-task networks. We design a controller using hypernets to dynamically predict both network architecture and weights to match user-defined task trade-offs and resource constraints. In contrast to current dynamic MTL methods which work with a fixed model, our formulation allows the flexibility in controlling the total compute cost and matches the task preference better. We show the effectiveness of our approach on four multi-task settings, attaining diverse and efficient architectures across a wide range of preferences. Limitations and future work. Our framework searches solely over network width and thus, the compute cost is lower bounded by network depth. One possible solution is to extend the search space to allow skip connections within and across streams to allow variable depth. Also, scalability could be an issue as the required memory for the anchor net is proportional to the number of tasks. Our future work will address these issues by reducing the dependency on the anchor net initialization.  Table 7. Architecture evaluation on PASCAL-Context (5 tasks).
+
+We report the mean intersection over union for T1 : Semantic seg., T2 : Parts seg., and T3 : Saliency. We report mean error in angle for T4 : Surface normal and mean loss for T5 : Edge. Presence of † indicates that we train the networks from ImageNet weights, while its absence indicates training from anchor net weights.
+
+# C. Architecture Evaluation
+
+Figure 16 illustrates the architectures predicted by the edge hypernet for uniform task preference on the NYU-v2 3-task setting. As we increase c, the model size decreases via increased sharing of the low-level features. We also visualize the architectures for skewed preferences in Figure 17. This leads to architectures which are predominantly a singlestream network, with the selected stream corresponding to the primary task. In all cases, Task 1 denotes semantic segmentation, Task 2 denotes surface normals estimation, and Task 3 denotes depth estimation. We report an additional evaluation of the predicted architectures on the Pascal-Context dataset in Table 7. We choose the architecture predicted for a uniform task preference and, similar to LTB, we retrain it for a fair comparison.
+
+# D. Calculation of Task Affinity
+
+We adopt Representational Similarity Analysis (RSA) [12] to obtain the task affinity scores from the anchor net F. First, using a random subset of K instances from the training set, we extract the features for each of these data points for every task. Let us denote the extracted feature map for instance k at layer l for task i as f [i,l,k] . Using these feature maps, we compute the feature similarity tensor S l at each layer, of dimensions N × K × K, as follows,
+
+# Appendix A. Resource Usage Plots
+
+In Figures 9101112, we plot the resource usage across different preferences on the NYU-v2 dataset to analyze the effect of different parts of our framework. The primary observation in each case is the lack of proper controllability. On removing L inact or task dichotomy (Figures 9,12), the overall resource usage increases across all preferences. On the other hand, removing the active loss branching weights (Figures 10,11) leads to a misallocation of resources -more compute cost is allocated to skewed resources than the dense ones.
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " E + K 7 2 h N m 9 l V n G o c Z C y B a + q a 2 a M 4 = " > A A A B 7 H i c b V B N S w M x E J 2 t X 7 V + V T    
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g
+
+T3 < l a t e x i t s h a 1 _ b a s e 6 4 = " X U X U R l v b A 4 P 3 P u H o O 8 3 C a t Y 5 i p c = " > A A A B 9 H i c b V D L S g M x F L 2 p r 1 p f V Z d u g k V w V W a k q M u i G 5 c V + o J 2 K J k 0 0 4 Z m M m O S K Z S h 3 + H G h S J u / R h 3 / o 2 Z d h b a e i B w O O d e 7 s n x Y 8 G 1 c Z x v V N j Y 3 N r e K e 6 W 9 v Y P D o / K x y d t H S W K s h a N R K S 6 P t F M c M l a h h v B u r F i J P Q F 6 / i T + 8 z v T J n S P J J N M 4 u Z F 5 K R 5 A G n x F j J 6 4 f E j C k R a X M + c A f l i l N 1 F s D r x M 1 J B X I 0 B u W v / j C i S c i k o Y J o 3 X O d 2 H g p U Y Z T w e a l f q J Z T O i E j F j P U k l C p r 1 0 E X q O L 6 w y x E G k 7 J M G L 9 T f G y k J t Z 6 F v p 3 M Q u p V L x P / 8 3 q J C W 6 9 l M s 4 M U z S 5 a E g E d h E O G s A D 7 l i 1 I i Z J Y Q q b r N i O i a K U G N 7 K t k S 3 N U v r 5 P 2 V d W 9 r t Y e a 5 X 6 X V 5 H E c 7 g H C 7 B h R u o w w M 0 o A U U n u A Z X u E N T d E L e k c f y 9 E C y n d O 4 Q / Q 5 w + 9 v 5 I X < / l a t e x i t > T1 
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = " 
+
+# B. Additional Results on Controllability
+
+Trade-off curves. In Figures 13 and14, we visualize the task controllability on pairs of tasks while keeping the preference on the rest fixed to zero. Compared to conventional dynamic models, our framework achieves a much larger dynamic range in terms of performance.
+
+Marginal evaluation. We present the marginal evaluation of task controllability on the PASCAL-Context 3 task learning setting in Figure 15.    
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = " 
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = "  
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = " T3 < l a t e x i t s h a 1 _ b a s e 6 4 = " X U X U R l v b A 4  
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = "     
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = "  
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g  T3 < l a t e x i t s h a 1 _ b a s e 6 4 = " X U X U R l v b A 4 P 3 P u H o O 8 3 C a t Y 5 i p c = " > A A A B 9 H i c b V D L S g M x F L 2 p r 1 p f V Z d u g k V w V W a k q M u i G 5 c V + o J 2 K J k 0 0 4 Z m M m O S K Z S h 3 + H G h S J u / R h 3 / o 2 Z d h b a e i B w O O d e 7 s n x Y 8 G 1 c Z x v V N j Y 3 N r e K e 6 W 9 v Y P D o / K x y d t H S W K s h a N R K S 6 P t F M c M l a h h v B u r F i J P Q F 6 / i T + 8 z v T J n S P J J N M 4 u Z F 5 K R 5 A G n x F j J 6 4 f E j C k R a X M + c A f l i l N 1 F s D r x M 1 J B X I 0 B u W v / j C i S c i k o Y J o 3 X O d 2 H g p U Y Z T w e a l f q J Z T O i E j F j P U k l C p r 1 0 E X q O L 6 w y x E G k 7 J M G L 9 T f G y k J t Z 6 F v p 3 M Q u p V L x P / 8 3 q J C W 6 9 l M s 4 M U z S 5 a E g E d h E O G s A D 7 l i 1 I i Z J Y Q q b r N i O i a K U G N 7 K t k S 3 N U v r 5 P 2 V d W 9 r t Y e a 5 X 6 X V 5 H E c 7 g H C 7 B h R u o w w M 0 o A U U n u A Z X u E N T d E L e k c f y 9 E C y n d O 4 Q / Q 5 w + 9 v 5 I X < / l a t e x i t > T1
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = "     
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = " 
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g = " 
+
+# T2
+
+< l a t e x i t s h a 1 _ b a s e 6 4 = " j e s 7 E 4 V s x R z y 0 J 2 V g U 4 2 q q w W S H g T3 < l a t e x i t s h a 1 _ b a s e 6 4 = " X U X U R l v b A 4
+
+N r e K e 6 W 9 v Y P D o / K x y d t H S W K s h a N R K S 6 P t F M c M l a h h v B u r F i J P Q F 6 / i T + 8 z v T J n S P J J N M 4 u Z F 5 K R 5 A G n x F j J 6 4 f E j C k R a X M + c A f l i l N 1 F s D r x M 1 J B X I 0 B u W v / j C i S c i k o Y J o 3 X O d 2 H g p U Y Z T w e a l f q J Z T O i E j F j P U k l C p r 1 0 E X q O L 6 w y x E G k 7 J M G L 9 T f G y k J t Z 6 F v p 3 M Q u p V L x P / 8 3 q J C W 6 9 l M s 4 M U z S 5 a E g E d h E O G s A D 7 l i 1 I i Z J Y Q q b r N i O i a K U G N 7 K t k S 3 N U v r 5 P 2 V d W 9 r t Y e a 5 X 6 X V 5 H E c 7 g H C 7 B h R u o w w M 0 o A U U n u A Z X u E N T d E L e k c f y 9 E C y n d O 4 Q / Q 5 w + 9 v 5 I X < / l a t e x i t > T1      The task dissimilarity matrix D l at layer l, of dimensions N × N , is calculated as follows, D l (i, j) = ∥S l (i, :, :) -S l (j, :, :
+
+The rows of D l are normalized separately between [0, 1] to get the scaled task dissimilarity matrix Dl . The task affinity matrix is subsequently calculated as A l (i, j) = 1 -Dl (i, j).
+
+The factor A(i, j) is obtained by taking the mean of the affinity scores across layers, i.e., A(i, j) = 1 L l A l (i, j). Figure 18 presents an example of A for the PASCAL-Context dataset.
+
+E. Calculation of P use P use (l, i) represents the probability that the node i at layer l is present in the tree structure that is sampled by the edge hypernet. We follow a dynamic programming approach to calculate this value. Denoting the i th node in the l th layer as (l, i), we can define the marginal probability that the node (l + 1, k) samples the node (l, i) as its parent as ν l k (i). Thus, the probability that the node (l, i) is used in the sampled tree structure is
+
+where
+
+Note that the actual path chosen from hypernet can be different from the ones whose α is penalized in (3). We also tested an alternative, which applies dynamic programming similarly as in (9), to penalize exact activated path. Since the performance gain was minor, we adopt (3) for simplicity. Calculate Ω(r, c, α)
+
+# F. Pseudo Code
+
+Calculate L task (r) = i r i L i (x, y i , F, α) β, γ = h(r, c; φ)
+
+14:
+
+Calculate L task (r) = i r i L i (x, y i , F, α, β, γ)
+
+15:
+
+Update φ by back-propagating L task
+
+# G. Implementation Details
+
+Hypernet architecture. The edge hypernet is constructed using an MLP with two hidden layers (dimension 100) and L linear heads, (dimension N × N ) which output the flattened branching distribution parameters at each layer. For the weight hypernet, we use a similar MLP with three hidden layers (dimension 100) and generate the normalization parameters using linear heads. In both cases we use learnable embeddings for each task (e i ) and the cost (e c ). Given the user preference (r, c), the preference embedding is calculated as p = i r i e i + ce c . This embedding p is then used as input the MLP. The preference dimension is set to 32 in all experiments. PHN-BN and PHN [38] use a similar architecture to the weight hypernet, with PHN employing an additional chunking [17]  before applying linear scalarization with respect to r. This ensures that the relative task importance is not skewed by the different loss scales. Thus, L task (r) = i r i w i L i .
+
+Anchor net architecture. The anchor net comprises N single-task networks, with each stream corresponding to a particular task. For experiments on dense prediction tasks, we use the DeepLabv3+ architecture [8] for each task. The MobileNetV2 [44] backbone is used for experiments on PASCAL-Context [37], while the ResNet-34 [19] backbone is used for experiments on NYU-v2 [48]. Training. Hypernetworks are trained using Adam for 30K steps with a learning rate of 1e-3, reduced by a factor of 0.3 every 14K steps. Temperature ζ is initialized to 5 and is decayed by 0.97 every 300 steps. Single-task networks for dense-prediction tasks are trained in accordance to [5]. For CIFAR, we use Adam with a learning rate of 1e-3 and weight decay of 1e-5 for 75 epochs. Preference sampling. During training we sample preferences (r, c) from the distribution P (r,c) = P r P c , where P r is defined as a Dirichlet distribution of order N with parameter η = [η 1 , η 2 , . . . , η N ] (η i > 0) and P c is defined as a standard uniform distribution Unif(0, 1). Following [38], we set η = (0.2, 0.2, . . . , 0.2) for all our experiments. As shown in Table 8, varying this parameter on PASCAL-Context (3 tasks) does not have any significant impact on the hypervolume.
+
+1 https://github.com/davidcpage/cifar10-fast
+
+# H. Effect of τ
+
+Setting τ ≫ 1 N leads to virtually all tasks being treated as inactive. This results in lack of control since there is no active task to be tied to the resource control c. Also, there is no compression since the inactive loss searches for active tasks to share nodes with. Consequently, this mostly leads to a fully branched out network which explains the flat curve in Figure 8. When τ = 1 N + ϵ (ϵ ≥ 0), both losses are in effect, which results in proper controllability, but possible ignorance of the uniform (or near uniform) preferences explains the slightly poorer performance. In our experiments, τ = 0.6/N works well across all datasets.
+
+# I. Computational Resource
+
+Controller overhead. The usage of hypernetworks leads to additional resource usage which we term as controller overhead. In comparison to PHN-BN, while we incur a larger overhead due to the prediction of a higher number of normalization parameters, the effect is minimal due to the controller being active infrequently only during preference change. This overhead has no impact on inference. Model size. In this work, we consider inference time as a measure of computational resource. We believe fast inference matters in many practical scenarios, whereas reasonable amount of increase in memory overhead is relatively easy to handle. This justifies our design choice to introduce the anchor net.
+
+# J. Hypervolume
+
+Given a point set S ⊂ R N and a reference point p ∈ R N in the loss space, the hypervolume of the set S is defined as the size of the region dominated by S and bounded above by p, HV(S) = λ {a ∈ R N |∃b ∈ S : b ⪯ a and b ⪯ p} , (10) where λ is the Lebesgue measure. Figure 19 shows an example in two-dimensions. 
+
+# K. Potential Negative Societal Impact
+
+The requirement of heavy computation makes neural architecture search (NAS) environmentally unfriendly. As pointed out in [49], the CO2 emissions from a NAS process can be comparable to that from 5 cars' lifetime. Since our framework is fundamentally a NAS method for multi-task learning, it shares these drawbacks. However, due to the dynamic nature of our method, it saves energy in the long run by allowing a single network to emulate different models corresponding to various preferences.
+

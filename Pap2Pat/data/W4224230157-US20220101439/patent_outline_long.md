@@ -1,0 +1,169 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- describe art market
+
+## SUMMARY
+
+- introduce art investment system
+- describe system components
+- outline system functionality
+
+## DETAILED DESCRIPTION
+
+- introduce art investment estimation system
+- describe system components
+- explain processor configuration
+- introduce artwork price data
+- describe database structure
+- explain sales pair data
+- introduce investment value variables
+- describe market adjusted risk per unit of return ratio (MARPUR)
+- explain salability
+- describe relative artist liquid market size (RLMS)
+- introduce artist loss likelihood (LL)
+- describe determining MARPUR
+- explain compound annual return (CAR) calculation
+- describe market adjusted returns
+- explain coefficient of variability
+- describe determining salability
+- explain percent sold calculation
+- describe determining RLMS
+- explain ratio calculation
+- describe determining LL
+- explain percent sold with negative CAR calculation
+- introduce user input
+- describe user input components
+- explain weights
+- describe behavioral factors
+- introduce artist investment potential (AIP) value
+- explain AIP value calculation
+- describe multiplicative estimation method
+- describe additive estimation method
+- introduce GUI components
+- describe artist selector
+- explain estimation method selector
+- describe weight type selector
+- introduce user-designated weight input mechanism
+- describe crowd mean calculation
+- explain difference score calculation
+- introduce show crowd AIP value selector
+- describe relative artist risk (RAR) calculation
+- explain owner expectation (OE) calculation
+- describe additional investment value variables
+- explain variations of investment value variables
+- conclude art investment estimation system
+- introduce art investment estimation system
+- describe system components
+- explain AIP formulas
+- describe suggest other artist selector
+- explain crowd inputs and weights
+- describe computing crowd mean and AIP values
+- explain difference score computation
+- describe preferred artist investment potential tool
+- explain AIP value range selector
+- describe obtaining optimized weights
+- explain displaying optimized weights
+- describe illiquid AIP tool
+- explain selecting illiquid artist
+- describe assigning artist to groups
+- explain determining median compound annual return
+- describe displaying illiquid artist AIP value
+- explain tracking investment potential of art collection
+- describe storing collection data
+- explain determining weights for investment value variables
+- describe determining AIP values for collection
+- explain outputting updated AIP values
+- describe price prediction tool
+- explain selecting work of art
+- describe selecting calculation metric
+- explain selecting performance measure
+- describe entering first sale price and year
+- explain entering insurance appraisal price and year
+- describe selecting calculation method
+- explain computing and displaying predicted price
+- describe collection curation tool
+- explain selecting collection and inputting assets
+- describe editing weights for behavioral variables
+- explain selecting transaction price range
+- describe selecting artist groups
+- explain computing sell and purchase suggestions
+- describe displaying sell and purchase suggestions
+- explain editing collection assets
+- describe using collection curation tool
+- describe GUI components
+- introduce sell suggestion selector
+- introduce purchase suggestion selector
+- describe transaction price range selector
+- describe artist group selector
+- describe weights input
+- describe collection input
+- describe display of ranked list of assets
+- describe filtering by transaction price range
+- describe filtering by artist group
+- describe display of AIP value
+- describe method for use with computing device
+- store database of sale prices
+- determine investment value variables
+- receive user input of weights
+- determine AIP value
+- display AIP value
+- describe MARPUR calculation
+- describe salability calculation
+- describe RLMS calculation
+- describe artist LL calculation
+- determine AIP value from investment value variables
+- receive user preferences for AIP value range
+- determine weights to minimize difference
+- display determined weights and difference
+- receive designated weights for multiple artists
+- determine artists with maximum AIP value
+- describe server configuration
+- store user input on server
+- determine averaged values and variability
+- determine score representing similarity
+- describe illiquid artists
+- assign illiquid artists to groups
+- determine median compound annual return
+- display median compound annual return
+- receive user request for illiquid artist investment potential
+- display illiquid artist investment potential value
+- receive user input of collection
+- determine weights from designated and predetermined weights
+- determine updated AIP values
+- output updated AIP values
+- describe art investment estimation system
+- introduce formulaic model
+- illustrate system configuration
+- describe trained AI model
+- outline input data
+- explain predicted error calculation
+- discuss application of predicted error
+- describe computing system
+- introduce logic subsystem
+- describe storage subsystem
+- outline display subsystem
+- describe input subsystem
+- explain communication subsystem
+- discuss machine learning techniques
+- describe differentiable functions
+- outline training procedures
+- discuss simultaneous training
+- describe independent training
+- outline display subsystem functionality
+- describe input subsystem functionality
+- explain communication subsystem functionality
+- discuss user data handling
+- outline privacy and security standards
+- describe data encryption
+- discuss user control over data
+- outline ML and AI component training
+- describe minimizing bias in ML and AI components
+- discuss accountability in ML and AI systems
+- outline monitoring of ML and AI systems
+- discuss drawing figures
+- describe configurations and approaches
+- outline processing strategies
+- discuss subject matter of the disclosure
+

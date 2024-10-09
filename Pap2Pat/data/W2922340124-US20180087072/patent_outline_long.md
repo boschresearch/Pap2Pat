@@ -1,0 +1,375 @@
+# DESCRIPTION
+
+## STATEMENT OF RIGHTS TO INVENTIONS MADE UNDER FEDERALLY SPONSORED RESEARCH
+
+- not applicable
+
+## TECHNICAL FIELD
+
+- polypeptide and genome engineering
+
+## BACKGROUND
+
+- introduce artificial nucleases
+- describe ZFN, TALEN, CRISPR/Cas systems
+- motivate targeted alteration of genomic sequences
+- summarize prior art
+- describe intermolecular ion pairs
+- explain zinc finger proteins
+- discuss non-specific ion pair interactions
+- describe phosphate contacting side chains
+- hypothesize non-specificity cleavage activity
+- propose decreasing cationic charges
+- discuss role of cationic amino acids
+- motivate optimal cleavage specificity
+- describe saturating conditions
+- motivate need for additional methods
+
+## SUMMARY
+
+- introduce nuclease specificity methods
+- describe artificial nucleases with mutations
+- outline methods for targeted cleavage
+- summarize integration of transgenes
+- introduce engineered nuclease cleavage half domains
+- describe mutations in FokI homologues
+- outline mutations in cleavage half domains
+- summarize mutations in dimerization domain
+- describe mutations in phosphate contact residues
+- outline preferred mutations in cleavage half domains
+- describe ELD and ELE mutations
+- outline KKK and KKR mutations
+- summarize mutations in dimerization and catalytic domains
+- describe fusion proteins with engineered cleavage half domains
+- outline artificial nucleases with zinc finger nucleases
+- describe TALENs and CRISPR/Cas nucleases
+- summarize mutations in DNA binding domain
+- describe mutations in ZFP backbone
+- outline mutations in TALE backbone
+- summarize mutations in cationic amino acid residues
+- describe mutations at positions (-5), (-9), and (-14)
+- outline polynucleotides encoding engineered cleavage half domains
+- describe cells comprising nucleases and polypeptides
+- summarize cells with fusion polypeptides
+- describe ZFP partners with mutations
+- outline mutations in zinc finger DNA binding domain
+- describe Arg mutations at positions (-5), (-9), and (-14)
+- summarize fusion polypeptides with mutations
+- introduce modified cells
+- describe nuclease-mediated insertion or knockout
+- summarize methods for targeted cleavage
+- describe methods for treating infection or disease
+- motivate engineered cleavage half-domains
+- describe methods for targeted cleavage of cellular chromatin
+- summarize compositions including fusion molecules
+- describe expression of fusion molecules in cells
+- motivate methods for increasing engineered nuclease specificity
+- describe methods for increasing on-target cleavage specificity
+- summarize methods for decreasing off-target cleavage activity
+- describe deployment of cleavage half-domains at non-1:1 ratio
+- motivate methods for decreasing off-target nuclease activity
+- describe methods for varying ratio of DNA binding molecules
+- summarize methods for cleaving cellular chromatin in a region of interest
+- describe engineering of DNA-binding molecules
+- motivate methods of altering a region of cellular chromatin
+- describe methods of introducing targeted mutations
+- summarize methods of altering cellular chromatin
+- describe donor polynucleotides
+- motivate cells comprising polypeptides and/or polynucleotides
+- describe cells comprising fusion molecules
+- summarize kits comprising fusion proteins or polynucleotides
+- describe ancillary reagents and instructions
+
+## DETAILED DESCRIPTION
+
+- disclose methods and compositions
+- cite conventional techniques
+
+### Definitions
+
+- define nucleic acid terms
+- define polypeptide terms
+- define binding terms
+- define binding protein terms
+- define DNA binding molecule terms
+- define DNA binding protein terms
+- define zinc finger DNA binding protein terms
+- define TALE DNA binding domain terms
+- define engineered zinc finger proteins
+- define selected zinc finger proteins
+- define TtAgo system terms
+- define recombination terms
+- define homologous recombination terms
+- define targeted integration terms
+- define cleavage terms
+- define cleavage half-domain terms
+- define engineered cleavage half-domain terms
+- define sequence terms
+- define transgene terms
+- define chromosome terms
+- define episome terms
+- define exogenous molecule terms
+- define small molecule terms
+- define macromolecule terms
+- define nucleic acid terms
+- define protein terms
+- define DNA-binding protein terms
+- define transcription factor terms
+- define chromatin remodeling factor terms
+- define methylated DNA binding protein terms
+- define polymerase terms
+- define methylase terms
+- define demethylase terms
+- define acetylase terms
+- define deacetylase terms
+- define endogenous molecule
+- define product of exogenous nucleic acid
+- define fusion molecule
+- describe expression of fusion protein
+- define gene
+- define gene expression
+- define modulation of gene expression
+- define region of interest
+- define safe harbor locus
+- define reporter gene
+- define eukaryotic cells
+- define operative linkage
+- define functional fragment
+- define polynucleotide vector
+- define subject and patient
+- define treating and treatment
+- define chromatin
+- define accessible region
+- define target site
+- introduce DNA-binding molecules/domains
+- describe zinc finger DNA-binding domain
+- describe engineering of zinc finger binding domain
+- describe selection methods for zinc finger binding domain
+- describe linkers for zinc finger domains
+- describe enhancement of binding specificity
+- describe selection of target sites
+- describe design and construction of fusion proteins
+- describe polynucleotides encoding fusion proteins
+- describe methods for design and construction of fusion proteins
+- describe polynucleotides encoding same
+- define ZFPs
+- describe ZFP structure
+- introduce DNA-binding domain
+- motivate nuclease-derived DNA-binding domain
+- describe homing endonucleases and meganucleases
+- introduce engineered DNA-binding specificity
+- describe zinc finger protein mutations
+- introduce TAL effector DNA-binding domain
+- describe TAL effector structure
+- motivate TAL effector DNA-binding specificity
+- introduce TALEN
+- describe mega TAL nuclease
+- introduce compact TALEN
+- describe linker sequences
+- motivate enhancement of binding specificity
+- introduce CRISPR/Cas nuclease system
+- describe CRISPR/Cas system components
+- introduce TtAgo system
+- describe TtAgo protein structure
+- motivate TtAgo DNA-binding specificity
+- describe exogenous guide DNA loading
+- introduce targeted double-strand break in DNA
+- describe applications of TtAgo-guide DNA system
+- define fusion molecules
+- list DNA-binding domains
+- list functional domains
+- describe activation domains
+- provide examples of activation domains
+- describe repression domains
+- provide examples of repression domains
+- describe construction of fusion molecules
+- describe optional components of fusion molecules
+- describe biochemical conjugation methods
+- describe accessible regions of cellular chromatin
+- describe generation of accessible regions
+- describe "pioneer" DNA-binding domains
+- describe formulation of fusion molecules
+- describe functional components of fusion molecules
+- describe regulated functional domains
+- introduce nucleases
+- describe engineered nucleases
+- define nucleases
+- list examples of nucleases
+- describe TALENs
+- describe mega TAL nucleases
+- describe compact TALENs
+- describe meganucleases
+- list examples of meganucleases
+- describe DNA-binding domains
+- describe engineering of meganucleases
+- describe zinc finger nucleases
+- describe TALE DNA binding domain-nuclease fusion
+- describe engineering of zinc finger binding domains
+- describe selection of target sites
+- describe design and construction of fusion proteins
+- describe linkers between zinc fingers
+- describe heterologous cleavage domains
+- list examples of endonucleases
+- describe cleavage half-domains
+- describe restriction endonucleases
+- describe Type IIS restriction enzymes
+- describe Fok I enzyme
+- describe zinc finger-Fok I fusions
+- describe parameters for targeted cleavage
+- define Type IIS restriction enzymes
+- describe FokI cleavage domain
+- introduce mutations in FokI cleavage domain
+- describe engineered cleavage half-domains
+- introduce obligate heterodimers
+- describe fusion proteins with engineered cleavage half-domains
+- introduce mutations in FokI catalytic domain
+- describe nuclease domains with mutations
+- introduce split-enzyme technology
+- describe screening of nucleases for activity
+- introduce CRISPR/Cas system
+- describe Type II CRISPR system
+- introduce CRISPR-Cpf1 system
+- describe differences between Cas9 and Cpf1
+- introduce functional derivatives of Cas proteins
+- describe fragments of Cas proteins
+- introduce covalent modifications of Cas proteins
+- describe fusions of Cas proteins
+- introduce mutants of Cas proteins
+- describe Cas proteins obtainable from cells
+- introduce Cas proteins synthesized chemically
+- describe small Cas9 orthologs for delivery via AAV vector
+- introduce catalytically inactive cleavage domains
+- describe use of catalytically inactive cleavage domains as nickases
+- introduce combination of nickases to make double-stranded cuts
+- describe additional nickases
+- introduce mutations in FokI cleavage half-domains
+- describe engineered cleavage half-domains with mutations
+- introduce fusion proteins with engineered cleavage half-domains and mutations
+- describe nuclease domains with engineered cleavage half-domains and mutations
+- introduce screening of nucleases with engineered cleavage half-domains and mutations
+- describe CRISPR/Cas system with engineered cleavage half-domains and mutations
+
+### Delivery
+
+- introduce delivery methods
+- describe suitable cells
+- list non-limiting examples of cells
+- describe viral vector delivery systems
+- describe non-viral vector delivery systems
+- introduce electroporation
+- introduce lipofection
+- introduce microinjection
+- introduce biolistics
+- introduce virosomes
+- introduce liposomes
+- introduce immunoliposomes
+- introduce polycation or lipid:nucleic acid conjugates
+- introduce naked DNA
+- introduce mRNA
+- introduce artificial virions
+- introduce agent-enhanced uptake of DNA
+- describe sonoporation
+- introduce capped mRNAs
+- describe ARCA caps
+- introduce additional nucleic acid delivery systems
+- describe lipofection reagents
+- introduce lipid:nucleic acid complexes
+- describe targeted liposomes
+- introduce EnGeneIC delivery vehicles
+- describe RNA or DNA viral based systems
+- introduce retroviral vectors
+- introduce lentiviral vectors
+- introduce adenoviral vectors
+- introduce adeno-associated virus vectors
+- describe viral vector approaches in clinical trials
+- introduce pLASN and MFG-S retroviral vectors
+- introduce recombinant adeno-associated virus vectors
+- describe replication-deficient recombinant adenoviral vectors
+- introduce delivery methods for CRISPR/Cas systems
+- introduce stem cell delivery
+- isolate stem cells
+- modify stem cells
+- administer vectors
+- introduce nucleic acids
+- administer pharmaceutical compositions
+- determine carriers
+- list cell lines
+- describe applications
+- treat genetic diseases
+- treat infections
+- target viral genomes
+- block viral receptors
+- list viruses
+- improve ZFN specificity
+- describe gene modification
+- describe gene correction
+- describe gene disruption
+- list repair pathways
+- treat genetic diseases
+- treat infectious diseases
+- apply to stem cell therapies
+- correct somatic cell mutations
+- disrupt dominant negative alleles
+- disrupt pathogen entry
+- enhance tissue engineering
+- apply to somatic cell therapy
+- apply to crop engineering
+- apply to disease models
+
+### EXAMPLES
+
+- introduce ZFNs
+- design ZFNs
+- incorporate ZFNs into plasmid vectors
+- use AAVS1 targeted ZFNs
+- identify positively charged arginine or lysine residues
+- mutate residues to serine
+- test cleavage activity
+- analyze off-target sites
+- identify off-target sites
+- test mutations in FokI domain
+- analyze on-target activity
+- analyze off-target activity
+- compare on-target and off-target activity
+- perform experiments in K562 cells
+- deliver mRNAs to cells
+- analyze off-target cleavage sites
+- design novel engineered zinc finger backbone mutations
+- analyze zinc finger sequences
+- identify positively charged amino acid residues
+- modify finger backbone
+- test mutations in TCRA (TRAC)-specific ZFN pair
+- analyze on-target activity
+- analyze off-target activity
+- compare on-target and off-target activity
+- test mutations in BCL11A-specific ZFN pair
+- analyze on-target activity
+- analyze off-target activity
+- compare on-target and off-target activity
+- titrate ZFN partners
+- analyze on-target activity
+- analyze off-target activity
+- compare on-target and off-target activity
+- perform Western analysis
+- analyze expression of ZFN proteins
+- titrate both ZFNs independently
+- analyze on-target activity
+- analyze off-target activity
+- combine ZFN partner titrations and FokI-phosphate contact mutations
+- analyze on-target activity
+- analyze off-target activity
+- present example data
+- analyze data for off-target activity
+- describe experiment with ZFNs at different concentrations
+- present results of experiment
+- introduce example 6
+- combine ZFP backbone mutations with FokI phosphate contact mutations
+- present results of example 6
+- introduce example 7
+- combine partner titration with ZFP backbone and FokI phosphate contact mutations
+- introduce example 8
+- test specificity of ZFN in CD34+ cells at clinical scale
+- present results of example 8
+- introduce example 9
+- conduct further specificity studies
+

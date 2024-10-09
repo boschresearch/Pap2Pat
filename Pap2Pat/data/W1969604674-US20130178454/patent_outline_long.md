@@ -1,0 +1,562 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- introduce invention overview
+
+## BACKGROUND OF THE INVENTION
+
+- introduce testosterone function
+- describe testosterone deficiency
+- list symptoms of hypogonadism
+- discuss current testosterone replacement therapies
+- describe side effects of current therapies
+- discuss testosterone levels in aging men
+- correlate low testosterone with diseases
+- describe testosterone's role in women's health
+- discuss virilization in women
+- highlight need for alternative therapies
+
+## SUMMARY OF THE INVENTION
+
+- introduce testosterone administration objectives
+- define beneficial effects of testosterone
+- describe side effects of testosterone therapy
+- motivate alternative testosterone administration methods
+- introduce ornithine decarboxylase (ODC) inhibitor
+- describe ODC's role in testosterone's growth promoting effect
+- summarize prior art on ODC and testosterone
+- contrast prior art with inventors' discovery
+- describe inventors' discovery on ODC and testosterone
+- introduce follistatin and its effects on muscle mass
+- describe follistatin's lack of effect on prostate
+- summarize signaling pathways activated by testosterone and follistatin
+- describe blocking testosterone's effects on prostate with ODC inhibitor
+- introduce specific ODC inhibitors
+- describe method for selectively targeting testosterone's anabolic effects
+- introduce new formulation for testosterone replacement therapy
+- describe conditions for using combination of testosterone and ODC inhibitor
+- summarize selective beneficial effect of testosterone with ODC inhibitor
+- introduce low-testosterone associated disorder treatment
+- describe method of treating low-testosterone disease
+- detail composition of testosterone and ornithine decarboxylase inhibitor
+- specify ornithine decarboxylase inhibitor
+- describe effective amount of ornithine decarboxylase inhibitor
+- illustrate inhibition of prostate growth
+- provide pharmaceutical composition
+- specify testosterone analogues
+- detail ornithine decarboxylase inhibitors
+- describe dosage
+- prevent side effects
+- provide therapeutic benefit
+- improve muscle mass and performance
+- improve physical function
+- treat muscle wasting
+- promote recovery of physical function
+- provide controlled release composition
+- add additional agent
+- administer in various forms
+- co-administer testosterone and ornithine decarboxylase inhibitor
+- select testosterone analogue
+- select ornithine decarboxylase inhibitor
+- prevent prostate related side effects
+- provide beneficial effects
+- treat muscle wasting and physical dysfunction
+- promote recovery of physical function
+- provide controlled release composition
+- add additional agent
+- administer in various forms
+- increase testosterone levels
+- select ornithine decarboxylase inhibitor
+- select testosterone analogue
+- prevent side effects
+- provide beneficial effects
+- treat muscle wasting and physical dysfunction
+- promote recovery of physical function
+- provide controlled release composition
+- add additional agent
+- administer in various forms
+- treat low testosterone levels
+- select ornithine decarboxylase inhibitor
+- provide diagnostic kit
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- introduce invention concept
+- motivate testosterone effects
+- describe ODC inhibitor effects
+- define pharmaceutical composition
+- outline co-administrable combination
+- describe method for increasing testosterone
+- summarize treatment applications
+- outline androgen replacement therapy
+- describe methods for treating disorders
+- outline kit composition
+- summarize kit instructions
+
+### DEFINITIONS
+
+- define antagonist
+- define inhibitor
+- define selective ODC inhibitor
+- define decreased ODC activity
+- define biologically active
+- define isomer
+- define combination therapy
+- define low dose
+- define treating
+- define male sexual dysfunction
+- define erectile dysfunction
+- define pharmaceutically acceptable excipient
+- define salts
+- define pharmaceutically acceptable salts
+- define subject
+- describe mammal subjects
+- describe primate subjects
+- describe rodent subjects
+- describe domestic and game animal subjects
+- describe patient or subject
+- describe animal models of age-related low testosterone levels
+- describe treating domesticated animals and/or pets
+- describe diagnosing low testosterone levels
+- describe selecting subjects with low testosterone levels
+- define prodrug
+- describe prodrug synthesis and use
+- describe prodrug activation in vivo
+- describe prodrug advantages
+- describe covalently bonded carriers
+- describe prodrug release in vivo
+- define therapeutically effective amount
+- describe determination of therapeutically effective amount
+- list physiological effects of a compound
+- define pharmacologically effective amount
+- define biologically active
+- define pharmaceutically acceptable
+- list pharmaceutically acceptable cations
+- list pharmaceutically acceptable acids
+- define administration
+- describe co-administration of testosterone and ODC inhibitor
+- define decrease, reduced, reduction, decrease, or inhibit
+- define increased, increase, enhance, or activate
+- define statistically significant
+- define substantially
+- define comprising
+- define consisting essentially of
+- define consisting of
+- describe use of singular forms
+- describe use of about
+- describe use of or
+- describe use of including
+- describe use of element or component
+- describe use of scientific and technical terms
+- provide references for definitions
+- describe scope of invention
+- describe incorporation of prior art
+
+### Testosterone
+
+- define testosterone
+- describe chemical name and formula
+- discuss isolation and purification methods
+- introduce analogue of testosterone
+- explain metabolite or precursor of testosterone
+- discuss time point for administration of ODC inhibitor
+- describe derivative or analogue or salt of testosterone
+- introduce fatty acid ester of testosterone
+- explain slow release of testosterone
+- describe oral form of testosterone
+- introduce methyltestosterone
+- discuss US Patent Application US2011/0251167
+- introduce testosterone undecanoate
+- describe undecanoate acid ester of testosterone
+- discuss short-chain, medium-chain, and long-chain fatty acid esters
+- introduce testosterone alkyl ester
+- describe pharmaceutical composition with testosterone alkyl ester
+- discuss dose of testosterone alkyl ester
+- introduce Crnax
+- explain peak plasma level of free testosterone
+- discuss time lag in testosterone effect
+- introduce testosterone composition with ODC inhibitor
+- describe mean Cmax of testosterone
+- discuss mean plasma Cmax of dihydrotestosterone
+- introduce testosterone mean plasma Cmax at steady state
+- describe ratio of testosterone equivalent dose to mean steady state testosterone Cmax
+- discuss difference between mean plasma Cmax and Cmin
+- introduce single dose of pharmaceutical composition
+- describe mean plasma concentration of testosterone after 1 hour
+- discuss mean plasma concentration of testosterone after 2 hours
+- introduce delayed release composition
+- describe mean plasma Cmax of testosterone in delayed release composition
+- discuss ratio of testosterone equivalent dose to mean plasma testosterone Cmax
+- introduce hydrophilic carrier
+- describe polyoxylated castor oil
+- discuss lipophilic carrier
+- introduce monoglyceride, diglyceride, and triglyceride
+- describe polyoxylated fatty acid and polyoxylated triglyceride
+- discuss sublingual formulation
+- introduce cyclodextrins as carrier
+- describe buco-mucosal or intranasal administration
+- discuss short-lasting high peak of testosterone
+- introduce SHBG and albumin binding
+- describe peak plasma level of free testosterone
+- discuss temporary increase in testosterone level
+- introduce short-lasting high peak of testosterone in blood circulation
+- describe Ornithine Decarboxylase Inhibitors
+- discuss eflornithine and other ODC inhibitors
+
+### Compositions Comprising Testosterone or Analogues or Derivatives Thereof and ODC Inhibitors
+
+- define composition
+- introduce testosterone or analogue
+- introduce ornithine decarboxylase (ODC) inhibitor
+- describe combination of testosterone and ODC inhibitor
+- specify percentage of testosterone or analogue
+- define composition as product or resulting product
+- describe separation of stereoisomers
+- describe resolution of enantiomers
+- describe resolution using chiral HPLC column
+- list examples of testosterone analogues
+- describe existence of enantiomers and diastereomers
+- describe existence of polymorphs and solvates
+- describe all stereoisomers as contemplated
+- describe reaction step in various solvents
+- describe use of pharmaceutically acceptable salts
+- describe acid addition salts
+- list examples of acid addition salts
+- describe basic salts
+- list examples of basic salts
+- describe synthesis of salts
+- describe use of pharmaceutically acceptable salts in medicine
+- describe acid addition salts in medicine
+- describe basic salts in medicine
+- list examples of pharmaceutically acceptable salts
+- describe prodrugs
+- describe solvates
+- describe prodrugs as functional derivatives
+- describe prodrugs as convertible in vivo
+- describe conventional procedures for prodrug preparation
+- describe prodrugs as becoming activated in vivo
+- describe examples of prodrugs
+- describe bioreversible carriers
+- describe prodrug approaches to improved delivery
+- describe design of prodrugs
+- describe use of prodrugs to improve oral drug transport
+- describe involvement of multiple transporters
+- describe improved delivery of peptide drugs
+- describe use of protecting groups
+- define compositions
+- describe solvates
+- introduce prodrugs
+- discuss polymorphs
+- describe asymmetric centers
+- discuss enantiomeric forms
+- introduce tautomeric forms
+- describe compounds for medicament manufacture
+- outline method for preventing low testosterone effects
+- specify dosage range
+- describe side effects reduction
+- outline beneficial effects promotion
+- describe timed release composition
+- introduce additional agents
+- list administration forms
+- characterize testosterone and ODC inhibitors combination
+- describe ODC inhibitor effects
+- outline in vivo study methods
+- discuss pharmacokinetic properties
+- describe combination selection criteria
+- outline non-human use formulation
+- describe method for treating low testosterone
+- outline dosage determination
+
+### Method for Increasing Testosterone Levels in a Subject
+
+- define method for increasing testosterone levels
+- introduce testosterone and ODC inhibitor administration
+- specify testosterone or analogue thereof amount
+- describe side effects of testosterone administration
+- introduce beneficial effects of testosterone
+- specify beneficial effects in subjects with sarcopenia
+- specify beneficial effects in subjects with mobility limitation
+- describe method for treating low testosterone levels
+- specify subject with low testosterone levels
+- specify testosterone level of less than 350 pg/ml
+- specify age-related low testosterone production
+- specify low-testosterone associated disorders
+- introduce ornithine decarboxylase inhibitor
+- specify ODC inhibitor for method of treatment
+- describe administration routes
+- specify oral administration
+- specify intravenous administration
+- specify intramuscular administration
+- specify transdermal administration
+- specify rectal administration
+- specify parenteral administration
+- specify intrathecal administration
+- specify vaginal administration
+- describe administration forms
+- specify gel administration
+- specify tablet administration
+- specify capsule administration
+- specify granulate administration
+- specify food product administration
+- specify troches administration
+- specify dispersions administration
+- specify suspensions administration
+- specify solutions administration
+- specify patches administration
+- describe method for treating hypogonadism
+- specify diagnostic kit
+- describe administration of testosterone or analogue
+- describe administration of ODC inhibitor
+- specify parenteral administration routes
+- specify intravenous injection
+- specify subcutaneous injection
+- specify intramuscular injection
+- specify intra-arterial injection
+- specify intrathecal injection
+- specify intra-peritoneal injection
+- describe composition with pharmaceutically-acceptable carriers
+- specify single dose administration
+- specify multiple dose administration
+- describe simultaneous administration
+- describe sequential administration
+
+### Oral Formulations
+
+- introduce oral formulations
+- describe administration routes
+- discuss advantages of oral administration
+- describe composition of oral formulations
+- discuss trappsol and/or captisol for stability
+- introduce preservative challenge test
+- describe sweeteners used in oral formulations
+- discuss High Fructose Corn syrup
+- discuss Sodium saccharin
+- discuss Aspartame
+- discuss Acesulfame
+- discuss Sucralose
+- describe flavors used in oral formulations
+- introduce enteric coated formulation
+- describe tablets for oral and/or enteral administration
+- discuss solid carriers used in formulations
+- describe diluents used in formulations
+- discuss lubricants used in formulations
+- discuss disintegrants used in formulations
+- describe microcrystalline cellulose
+- discuss active ingredient composition
+- describe free base equivalent
+- discuss enteric coating materials
+- introduce EUDRAGIT enteric polymers
+- discuss plasticisers used in enteric coatings
+- describe anti-tack agents used in enteric coatings
+- discuss surfactants used in enteric coatings
+- introduce seal coat
+- describe OPADRY coating
+- discuss example of enteric-coated formulation
+- describe granulation process
+- discuss drying process
+- describe compression process
+- discuss coating process
+- introduce other formulations and routes of administration
+- discuss sustained release delivery systems
+- describe time-release delivery systems
+- describe delayed release delivery systems
+- discuss pro-drug composition
+- introduce polymer-based systems
+- describe polylactic and polyglycolic acid
+- discuss poly(lactide-glycolide)
+- describe copolyoxalates
+- discuss polyanhydrides
+- describe polyesteramides
+- discuss polyorthoesters
+- describe polyhydroxybutyric acid
+- discuss polycaprolactone
+- introduce non-polymer systems
+- discuss lipids and other systems
+
+### Doses and Administration Regimens
+
+- define effective dosages
+- introduce bolus administration
+- describe multiple dosing schedules
+- discuss dosage levels and concentration
+- motivate bioactivity and bioavailability factors
+- consider chemical properties of compounds
+- outline route and scheduling of administration
+- discuss individual factors affecting dosage
+- introduce GLP and GMP regulations
+- describe record keeping and QA/QC monitoring
+- outline oversight of patient protocols
+- discuss informed consent and ethical guidelines
+- introduce dosages and formulations
+- describe dosage volumes and regimens
+- outline methods for analyzing results
+- discuss minimum and maximum effective dosages
+- consider race, sex, and age factors
+- outline route of administration factors
+- discuss concurrent administration with other molecules
+- introduce safe compositions and dosages
+- describe non-toxic and non-mutagenic compositions
+- outline side effects and benefits
+- discuss Leydig cell viability and prostate function
+- introduce combination therapies
+- outline advantages of combination therapies
+- discuss administration for prophylaxis or therapy
+- consider subject age and dosing regimen
+- outline continuous infusion and bolus administration
+- describe daily and weekly dosing schedules
+- introduce combination with other drug therapies
+- discuss immunosuppressants and anti-cancer agents
+- outline additional compounds and drug therapies
+- describe administration modes and amounts
+- introduce prophylaxis treatment
+- discuss augmentation of cancer treatment
+- outline composition preparation and carriers
+- introduce doses and administration regimens
+- motivate non-toxic compositions
+- describe amount of composition in dosage form
+- determine dosage from cell culture assays
+- determine dosage from animal models
+- describe dosage ranges
+- describe dosage adjustments
+- describe effective amounts
+- describe factors affecting dosage
+- describe dosage ranges for ODC inhibitor
+- describe in vivo concentrations
+- introduce regimens of administration
+- describe therapeutic treatment
+- describe prophylactic treatment
+- describe duration and frequency of treatment
+- describe dosing schedules
+- describe intermittent administration
+- describe pulsed administration
+- describe pulsed administration for treatment
+- describe pulsed administration for prophylaxis
+- describe pulse therapy benefits
+- describe pulse delivery methods
+- describe interval between pulses
+- describe number of pulses in regimen
+- describe lifelong administration
+- describe delivery methods
+- describe infusion methods
+- describe cycles of treatment
+- describe co-administration with other agents
+- describe co-administration with chemotherapeutic treatment
+- describe co-administration with radiation treatment
+- describe pharmaceutical compositions
+- describe additional agents
+- describe PDE5 inhibitors
+- describe AGE breaker
+- describe alpha 1 blocker
+- describe alpha 1A antagonists
+- describe alpha 2 antagonists
+- describe dopamine agonists
+- describe dopamine D4 agonists
+- describe guanylate cyclase stimulants
+- describe melanocortin agonists
+- describe oxytocin agonists
+- describe prostaglandin agonists
+- describe radical scavengers
+- describe rotamase inhibitors
+
+### Low Testosterone Disorders and Subjects Amenable to Treatment
+
+- introduce low testosterone disorders
+- describe compositions for elevating testosterone levels
+- motivate combination of testosterone with ODC inhibitor
+- summarize benefits of preventing prostate growth
+- define subjects amenable to treatment
+- specify male subjects with low testosterone levels
+- specify female subjects with low testosterone levels
+- describe normal testosterone levels in males
+- describe normal testosterone levels in females
+- identify subjects undergoing exogenous testosterone therapy
+- motivate weaning subjects from testosterone replacement therapy
+- describe athletes as subjects amenable to treatment
+- specify hypogonadal subjects
+- describe male humans over 50 years old
+- describe male humans with hypogonadism
+- specify serum total testosterone levels
+- specify serum free testosterone levels
+- specify serum bioavailable testosterone levels
+- describe men with sexual dysfunction
+- describe human males with partial androgen deficiency
+- specify subjects with benign prostatic hyperplasia
+- describe subjects without benign prostatic hyperplasia
+- motivate maintaining testosterone levels during aging
+- describe treatment of hypogonadism and male menopause
+- describe correlations between low testosterone levels and diseases
+- describe preventative treatment of low-testosterone associated diseases
+- describe treatment of symptoms of low-testosterone associated diseases
+- summarize testosterone physiology
+- define bioavailable testosterone
+- list symptoms of low testosterone
+- describe andropause
+- discuss age-dependent decline of testosterone levels
+- explain circadian rhythm of plasma testosterone levels
+- introduce subjects amenable to treatment
+- specify total testosterone levels for treatment
+- specify free testosterone levels for treatment
+- describe subjects undergoing exogenous testosterone therapy
+- discuss weaning subjects from testosterone replacement therapy
+- introduce hypogonadal subjects
+- specify age ranges for treatment
+- describe serum total testosterone levels for treatment
+- describe serum free testosterone levels for treatment
+- describe serum bioavailable testosterone levels for treatment
+- introduce subjects with partial androgen deficiency
+- describe subjects with sexual dysfunction
+- introduce subjects with benign prostatic hyperplasia
+- describe treatment for hypogonadism and male menopause
+- discuss maintaining testosterone levels during aging
+- introduce subjects with testicular cancer
+- describe subjects with acquired immune deficiency syndrome
+- discuss correlations between low testosterone and diseases
+- introduce preventative treatment for low-testosterone associated diseases
+- describe treatment for anemia and sarcopenia
+- introduce treatment for XXY males
+- discuss treatment for damage to testicles and genetic diseases
+
+### Other Uses of the Methods and PDE8 Inhibitors Dual PDE8/PDE4 Inhibitor Compounds
+
+- treat autoimmune diseases
+- prevent multiple sclerosis
+- treat allergic diseases
+- increase testosterone production
+- prevent disease associated with low testosterone
+- treat anemia
+- treat male menopause
+- monitor low testosterone diseases
+- assess cell damage
+- assess insulin tolerance
+- improve well-being
+- enhance athletic performance
+- manufacture food products
+- treat sexual dysfunction
+- include in animal feeds
+
+### Kits
+
+- provide kits for prevention and treatment
+- include instructions for use
+- provide combination in various forms
+- include other pharmaceutically active agents
+- include materials for administration
+- describe permutations of elements
+
+## EXAMPLES
+
+- illustrate invention with example 1
+
+### Example 1
+
+- introduce testosterone's effects
+- describe inventors' discovery of follistatin's role
+- demonstrate follistatin's effects on muscle and bone mass
+- show follistatin's lack of effect on prostate growth
+- elucidate signaling pathways in muscle and prostate
+- identify ornithine decarboxylase pathway in prostate
+- demonstrate blocking of testosterone's effects on prostate
+- propose anabolic drug combination
+- describe potential applications of drug combination
+

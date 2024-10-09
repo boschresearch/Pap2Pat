@@ -1,0 +1,164 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- introduce terahertz electromagnetic waves detector
+
+## BACKGROUND
+
+- motivate terahertz devices
+- describe thermal terahertz detectors
+- describe bolometers
+- describe Golay cells
+- limitations of existing detectors
+- need for new detector
+
+## SUMMARY
+
+- introduce detector for terahertz electromagnetic waves
+- describe terahertz optomechanical transducer
+- describe mechanical response
+- describe electric field generation
+- describe terahertz electromagnetic resonator
+- describe light-matter interaction
+- describe electromagnetic forces
+- compare with bolometers
+- describe advantages
+- describe detector operation
+- describe detection and measurement
+- describe another aspect of detector
+- describe method for detecting terahertz electromagnetic waves
+- describe transforming incident electromagnetic wave
+- describe detecting output signal
+- describe advantages over prior art
+- conclude detector description
+
+## DETAILED DESCRIPTION
+
+- introduce terahertz optomechanical transducer
+- define terahertz frequency band
+- describe electromagnetic resonator
+- specify response bandwidth of electromagnetic resonator
+- explain usage of incident electromagnetic wave
+- describe geometric characteristics of electromagnetic resonator
+- provide exemplary embodiments of electromagnetic resonator
+- describe split hollow form of electromagnetic resonator
+- describe dog-bone form of electromagnetic resonator
+- describe materials used in electromagnetic resonator
+- explain activation of electric charges
+- describe inductive-capacitive type of electromagnetic resonator
+- explain collection and conversion of incident electromagnetic wave
+- describe structure resonating devices
+- describe device with one or multiple electromagnetic resonators
+- describe detector with multiple optomechanical transducers
+- describe THz electromagnetic resonator and mechanical resonator
+- explain co-localization of THz wave and mechanical resonance mode
+- describe mechanical response of mechanically responsive element
+- provide examples of mechanically responsive elements
+- describe shift of mechanical equilibrium position
+- describe micromechanical movement of mechanically responsive element
+- describe mechanically responsive element with fixed and movable extremities
+- describe different embodiments of terahertz optomechanical transducer
+- describe electromagnetic resonator
+- detail deformable cantilever
+- explain capacitive gap
+- motivate Coulomb force
+- describe electric field generation
+- detail mechanical resonator
+- explain modulation of incident wave
+- compare to LC circuit
+- describe alternating electric charges
+- detail synchronous vibration
+- describe tuning fork embodiment
+- detail double split ring embodiment
+- explain symmetric electromagnetic resonator
+- describe two distinct electrically-connected parts
+- detail planar antenna embodiment
+- describe patch antenna embodiment
+- explain advantages of planar antennas
+- explain advantages of patch antennas
+- describe measurement of electromagnetic characteristics
+- detail set-up for measurement
+- show measurement results
+- simulate electric fields
+- describe vertical electric field distribution
+- describe horizontal electric field distribution
+- describe mechanical characteristics measurement
+- detail set-up for mechanical measurement
+- show mechanical measurement results
+- simulate fundamental mechanical mode
+- describe optical detection scheme
+- detail mechanical resonance frequency and quality factor
+- compute effective mass of oscillator
+- compute peak noise spectral density
+- calibrate voltage readings
+- simulate displacement of cantilever
+- describe displacement of free extremity
+- describe displacement of middle of cantilever
+- describe texture of element 4
+- detail first element and opposite element
+- explain electric field generation
+- describe force stemming from electric field
+- detail dynamic distribution of electric charges
+- describe fundamental electromagnetic resonance mode
+- describe detector embodiment
+- introduce optomechanical THz transducer
+- describe detection device
+- explain measurement of mechanical response
+- derive equation of motion
+- describe electric energy oscillation
+- explain effect of THz radiation
+- define internal responsivity
+- explain double effect of recycling
+- estimate effective capacitive gap
+- derive internal Noise Equivalent Power
+- apply equations to other geometries
+- describe detector embodiment with QCL
+- illustrate spectrum obtained by detector
+- show variation of signal amplitude
+- describe modulation of THz power
+- explain conditions for mechanical response
+- describe characteristics of signal
+- illustrate experimental set-up
+- show spectra of mechanical response
+- determine amplitude and NEP
+- summarize linear dynamics of detector
+- describe Lock-in signal, noise level, and NEP as a function of modulation frequency
+- analyze detector performance and operation bandwidth
+- show lock-in signal and phase in high resolution scans near mechanical resonances
+- describe piezoelectric detector and its operation
+- illustrate method for collecting and transducing THz radiation
+- describe step of generating incident electromagnetic wave
+- describe step of collecting electromagnetic wave by THz optomechanical transducer
+- describe step of producing mechanical response of mechanically responsive element
+- describe step of detecting output signal representative of mechanical response
+- illustrate example of THz optomechanical transducer with electromagnetic characteristics
+- simulate electric fields generated in electromagnetic resonator
+- describe embodiment of THz optomechanical transducer in form of patch antenna
+- describe embodiment of THz optomechanical transducer in form of "horseshoe" resonator
+- describe optical detection means
+- describe electrical detection means
+- summarize advantages of optomechanical THz detector and THz optomechanical transducer
+- describe planar geometry of THz optomechanical transducer
+- describe semiconductor technology and frequency ranges of THz electronic transitions
+- describe optomechanical THz detector without thermally sensitive material
+- define terahertz optomechanical transducer for transducing incident electromagnetic wave
+- describe electromagnetic resonator with response bandwidth including frequency
+- describe first element as mechanical resonator
+- describe multiple pairs of electric poles of opposite signs
+- describe electric charges excited in part of electromagnetic resonator
+- describe electromagnetic resonator with at least one split ring and cantilever
+- define detector for detecting electromagnetic waves
+- describe method for transducing incident electromagnetic wave
+- describe mechanical response of first element
+- describe method for detecting electromagnetic waves
+- describe intensity modulation of incident electromagnetic wave
+- describe variants, modifications, and improvements of detector and THz optomechanical transducer
+- describe detector and THz optomechanical transducer for transducing incident electromagnetic wave
+- describe various embodiments of detector and THz optomechanical transducer
+- describe operation of detector and THz optomechanical transducer
+- describe advantages of detector and THz optomechanical transducer
+- describe applications of detector and THz optomechanical transducer
+- describe scope of detector and THz optomechanical transducer
+- conclude description of detector and THz optomechanical transducer
+

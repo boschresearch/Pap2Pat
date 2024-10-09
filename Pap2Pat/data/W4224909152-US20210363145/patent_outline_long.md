@@ -1,0 +1,459 @@
+# DESCRIPTION
+
+## FIELD OF INVENTION
+
+- introduce sigma-2 receptor binders
+
+## BACKGROUND OF THE INVENTION
+
+- identify sigma-1 and sigma-2 receptors
+- describe physiological properties of SKF-10,047
+- determine true function of sigma receptor
+- facilitate binding studies of ligands
+- identify two distinct subtypes of sigma receptors
+- suggest sigma-2 receptor synonymous with PGRMC1
+- explore therapeutic utility of sigma-2 receptor binders
+- prevent binding of beta amyloid protein oligomers
+- displace beta amyloid protein oligomers from neurons
+- demonstrate expression of sigma-2 receptor in tumor cells
+- modulate sigma-2 receptor activity to induce cancer cell death
+
+## BRIEF SUMMARY OF THE INVENTION
+
+- introduce novel sigma-2 receptor binders
+- define compounds of formula (I)
+- specify A, n, R1a, R1b, R2, R3, R4, R5, R6, R7
+- describe R4 groups on benzene ring
+- describe R5 groups on pyridine ring
+- specify R8a, R8b, R9a, R9b, R10, R11, R12a, R12b
+- relate to compositions comprising compounds
+- relate to method for treating neuropsychiatric disorders
+- relate to method for treating cancer
+- relate to method for treating diseases involving dysregulation
+- relate to method for treating diseases involving overexpression
+- relate to method for treating or preventing disease or conditions
+- relate to process for preparing sigma-2 receptor binders
+- describe effective amount of compounds
+- describe excipient in composition
+- describe administering to a subject
+
+## DETAILED DESCRIPTION OF THE INVENTION
+
+- identify disease states associated with sigma-2 receptor dysregulation
+- motivate need for new sigma-2 receptor binders and activity modulators
+- introduce invention to address need for therapeutic agents
+- describe sigma-2 receptor binders and activity modulators
+- specify diseases and disorders treatable by invention
+- elaborate on treating and preventing diseases associated with dysregulation
+- elaborate on treating and preventing diseases associated with overexpression
+- define compositions and processes
+- clarify meaning of "including" and "comprising"
+- clarify meaning of "about"
+- clarify order of steps
+- define "halogen"
+- define "alkyl" and "aliphatic"
+- provide examples of alkyl groups
+- define "alkenyl" and "alkynyl"
+- provide examples of alkenyl and alkynyl groups
+- define "cycloalkyl"
+- provide examples of cycloalkyl groups
+- define "haloalkyl"
+- provide examples of haloalkyl groups
+- define "alkoxy"
+- define "haloalkoxy"
+- define "aryl"
+- provide examples of aryl groups
+- define "arylalkyl" or "aralkyl"
+- define "heterocyclic" and/or "heterocycle" and/or "heterocyclyl"
+- provide examples of heterocycle groups
+- define heterocyclic units
+- provide non-limiting examples of heterocyclic units
+- define heteroaryl
+- provide non-limiting examples of heteroaryl rings
+- define C1-C5 heteroaryl
+- provide examples of C1-C5 heteroaryl
+- define fused ring units
+- provide examples of fused ring units
+- define substituents
+- provide non-limiting examples of substituents
+- define optionally substituted groups
+- provide non-limiting examples of substituents
+- define R13 and R14
+- provide non-limiting examples of R13 and R14
+- define substituents in some embodiments
+- provide non-limiting examples of substituents in some embodiments
+- define R15
+- provide non-limiting examples of R15
+- define compounds
+- define analogs and compositions of matter
+- discuss optical isomers
+- discuss regioisomers
+- discuss pharmaceutically acceptable salts
+- provide non-limiting examples of bases for forming salts
+- provide non-limiting examples of acids for forming salts
+- discuss internal salts
+- define treating and treatment
+- define terms
+- introduce subject patients
+- describe screening methods
+- introduce sigma-2 receptor binders
+- define formula (I)
+- describe R1a and R1b
+- describe R2
+- describe R3
+- describe R4
+- describe R5
+- introduce compounds of formula (II)
+- describe compounds of formula (IIa)
+- describe compounds of formula (IIb)
+- describe compounds of formula (IIc)
+- describe compounds of formula (IId)
+- conclude sigma-2 receptor binders
+- define compounds
+- specify formula (III)
+- specify formula (IIIa)
+- specify formula (IIIb)
+- specify formula (IIIc)
+- specify formula (IId)
+- specify formula (IV)
+- specify formula (IVa)
+- specify formula (IVb)
+- specify formula (IVc)
+- specify formula (IVd)
+- specify formula (V)
+- specify formula (Va)
+- specify formula (Vb)
+- describe hydrates
+- describe solvates
+- describe enantiomers
+- describe diastereomers
+- define compounds having formula Vc
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula Vd
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula VI
+- define compounds having formula VIa
+- specify R4a, R4b, R4c, R4d, and R4e groups
+- define compounds having formula VIb
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula VIc
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula VId
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula VII
+- define compounds having formula VIIa
+- specify R4a, R4b, R4c, R4d, and R4e groups
+- define compounds having formula VIIb, VIIc, VIId, and VIII
+- define compounds having formula (VIIIb)
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula (VIIIc)
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula (VIIId)
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula (IX)
+- define compounds having formula (IXa)
+- specify R4a, R4b, R4c, R4d, and R4e groups
+- define compounds having formula (IXb)
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula (IXc)
+- specify R5a, R5b, R5c, and R5d groups
+- define compounds having formula (IXd)
+- specify R5a, R5b, R5c, and R5d groups
+- specify A
+- specify n
+- specify R1a
+- specify R1b
+- specify R1a and R1b taken together
+- specify R2
+- specify R3
+- specify R4
+- specify R4a
+- specify R4b and R4c
+- define R4c embodiments
+- define R4d embodiments
+- define R4c embodiments
+- define R4d embodiments
+- define R4c embodiments
+- define R5 embodiments
+- define R5a embodiments
+- define R5a embodiments
+- define R5b embodiments
+- define R5b embodiments
+- define R5b embodiments
+- define R5b embodiments
+- define R5b embodiments
+- define R5c embodiments
+- define R5d embodiments
+- define R6 embodiments
+- define R7 embodiments
+- define R8 and R9 embodiments
+- define R9a
+- define R9b
+- define R9a and R9b taken together
+- define R10
+- define R11
+- define R12a
+- define R12b
+- list examples of compounds
+- define formula II
+- define formula X
+- define formula XI
+- define formula XII
+- define formula XIII
+- define formula VI
+- define formula XIV
+- define formula XV
+- define formula XVI
+- define formula XVII
+- provide naming convention
+- provide example of naming convention
+- provide example of naming convention
+- provide enantiomer notation
+- provide diastereomer notation
+- provide scope of substituents
+
+### Process
+
+- introduce process for preparing sigma-2 receptor binders
+- outline standard synthetic methods and procedures
+- describe reaction conditions and optimization
+- discuss monitoring of product formation
+- explain protection and deprotection of chemical groups
+- describe selection of suitable solvents
+- outline preparation of compounds by known methods
+- introduce general synthetic schemes for preparation
+- describe reaction schemes for preparing compounds
+- outline specific reaction conditions and reagents
+- provide examples of palladium catalysts and bases
+- react compound 5 with compound 6
+- react compound 9 with compound 10
+- react compound 13 with compound 14
+- react compound 17 with compound 18
+- treat compound 19 with paraformaldehyde
+- treat compound 20 with base
+- convert compound 21 to compound 22
+- react compound 22 with compound 23
+- react compound 25 with compound 26
+- treat compound 27 with paraformaldehyde
+- treat compound 28 with base
+- convert compound 29 to compound 30
+- react compound 30 with compound 31
+- prepare compound 37 according to Scheme 7
+- react compound 33 with base
+- react compound 34 with iodine
+- react compound 35 with compound 36
+- prepare compound 46 according to Scheme 8
+- react compound 38 with ruthenium chloride
+- react compound 39 with compound 40
+- react compound 41 with ruthenium chloride
+- react compound 42 with reducing agent
+- convert compound 43 to compound 44
+- react compound 44 with compound 45
+- provide representative methods for preparing compounds
+- substitute reagents and starting materials
+- use purification methods
+- prepare compounds of the present invention
+- react compounds according to Schemes
+- treat compounds with reagents
+- convert compounds to other compounds
+- react compounds with other compounds
+- provide examples of preparing compounds
+
+### EXAMPLES
+
+- introduce examples of the invention
+- provide representative methods for preparing compounds
+- describe experimental conditions
+- specify instruments used
+- detail procedure for Example 1
+- provide NMR and mass spectral data for Example 1
+- generalize procedure for other compounds
+- detail procedure for Example 2
+- provide NMR data for Example 2
+- detail procedure for Example 3
+- provide NMR and mass spectral data for Example 3
+- generalize procedure for other compounds
+- detail procedure for Example 4
+- provide NMR data for Example 4
+- detail procedure for Example 5
+- provide NMR data for Example 5
+- detail procedure for Example 6
+- provide NMR and mass spectral data for Example 6
+- generalize procedure for other compounds
+- detail procedure for Example 7
+- provide NMR data for Example 7
+- detail procedure for Example 8
+- provide NMR and mass spectral data for Example 8
+- detail procedure for Example 9-12
+- prepare 2-(5-oxo-6-oxaspiro[3.4]octan-7-yl)ethyl 4
+- prepare 2-(1-oxo-2-oxaspiro[4.4]nonan-3-yl)ethyl 4
+- prepare 2-(1-oxo-2-oxaspiro[4.5]decan-3-yl)ethyl 4
+- prepare 5-(2-bromoethyl)-3,3-diethyldihydrofuran-2(3H)-one
+- prepare 3-(2-bromoethyl)-2-oxaspiro[4.5]decan-1-one
+- prepare 2,2-diethylpent-4-enoic acid
+- prepare 3,3-diethyl-5-(iodomethyl)dihydrofuran-2(3H)-one
+- prepare 3-(iodomethyl)-2-oxaspiro[4.4]nonan-1-one
+- prepare 3-(iodomethyl)-2-oxaspiro[4.5]decan-1-one
+- prepare 3-hydroxy-2-oxaspiro[4.4]nonan-1-one
+- prepare 3-hydroxy-2-oxaspiro[4.5]decan-1-one
+- prepare 3-(but-3-en-1-yl)-2-oxaspiro[4.4]nonan-1-one
+- prepare 3-(but-3-en-1-yl)-2-oxaspiro[4.5]decan-1-one
+- prepare 3-(1-oxo-2-oxaspiro[4.4]nonan-3-yl)propyl
+- reduce aldehyde
+- prepare tosylate
+- purify tosylate
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- generalize procedure
+- provide examples
+- describe preparation of 3-(1-oxo-2-oxaspiro[4.5]decan-3-yl)prop
+- describe preparation of 5-(2-(5-benzylhexahydropyrrolo[3,4-c]pyrrol-2(
+- describe preparation of 3-(2-(5-benzylhexahydropyrrolo[3,4-c]pyrrol-2(
+- describe preparation of 3,3-diethyl-5-(2-(hexahydropyrrolo[3,4-c]pyrrol-
+- describe preparation of 3-(2-(hexahydropyrrolo[3,4-c]pyrrol-2(1H)-yl
+- describe preparation of 3,3-diethyl-5-(2-(5-(pyridin-4-yl)hexahydropyr
+- describe preparation of 3-(2-(5-(pyridin-4-yl)hexahydropyrrolo[3,4-c]
+- describe preparation of 1-(benzyloxy)-2-bromobenzene
+- describe preparation of 1-(benzyloxy)-3-bromobenzene
+- describe preparation of 1-(benzyloxy)-4-bromobenzene
+- provide NMR data for example 27
+- provide NMR data for other examples
+- describe example 37
+- describe example 38
+- describe example 39
+- describe example 40
+- describe example 41
+- describe example 42
+- describe example 43
+- describe example 44
+- describe example 45
+- describe example 46
+- provide NMR data
+- provide MS data
+- provide reaction conditions
+- provide examples
+- prepare tert-butyl 5-(m-tolyl)hexahydropyrrolo[3,4-c]pyrrole-2(
+- prepare tert-butyl 5-(p-tolyl)hexahydropyrrolo[3,4-c]pyrrole-2(
+- prepare tert-butyl 5-(2-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(3-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(4-methoxyphenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(2-cyanophenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(3-cyanophenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(4-cyanophenyl)hexahydropyrrolo[3,4-c]pyrrole-
+- prepare tert-butyl 5-(2-(benzyloxy)phenyl)hexahydropyrrolo[3,4-c]py
+- prepare tert-butyl 5-(3-(benzyloxy)phenyl)hexahydropyrrolo[3,4-c]py
+- provide NMR data
+- provide MS data
+- describe example 57
+- describe example 58
+- describe example 59
+- describe example 60
+- describe example 61
+- describe example 62
+- describe example 63
+- describe example 64
+- describe example 65
+- describe example 66
+- provide examples
+- prepare 2-(2,6-dimethylpyridin-4-yl)octahydropyrrolo[3,4-c]
+- prepare 2-(o-tolyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(m-tolyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(p-tolyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(2-methoxyphenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(4-methoxyphenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 3-(hexahydropyrrolo[3,4-c]pyrrol-2(1H)-yl)benzonitr
+- prepare 4-(hexahydropyrrolo[3,4-c]pyrrol-2(1H)-yl)benzonitr
+- prepare 2-(hexahydropyrrolo[3,4-c]pyrrol-2(1H)-yl)benzonitr
+- prepare 2-(3-methoxyphenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(2-(benzyloxy)phenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(3-(benzyloxy)phenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 2-(4-(benzyloxy)phenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 4-(2-(hexahydropyrrolo[3,4-c]pyrrol-2(1H)-yl)phen
+- prepare 2-(2-isopropylphenyl)octahydropyrrolo[3,4-c]pyrrole
+- prepare 3-(2-(6-(pyridin-4-yl)-2,6-diazaspiro[3.3]he
+- prepare 3,3-diethyl-5-(2-(6-phenyl-2,6-diazaspiro[3.3]
+- prepare 3-(2-(6-phenyl-2,6-diazaspiro[3.3]heptan-2-
+- prepare 3,3-diethyl-5-(2-(5-(2-isopropylphenyl)hexahydro
+- describe example 86
+- describe example 87
+- describe example 88
+- describe example 89
+- describe example 90
+- describe example 91
+- describe example 92
+- describe example 93
+- describe example 94
+- describe example 95
+- provide NMR data for example 86
+- provide NMR data for example 87
+- provide NMR data for example 88
+- provide NMR data for example 89
+- provide NMR data for example 90
+- provide NMR data for examples 91-95
+- describe example 96
+- describe example 97
+- describe example 98
+- describe example 99
+- describe example 100
+- describe example 101
+- describe example 102
+- describe example 103
+- describe example 104
+- describe example 105
+- provide NMR data for example 96
+- provide NMR data for example 97
+- provide NMR data for example 98
+- provide NMR data for example 99
+- provide NMR data for example 100
+- provide NMR data for examples 101-105
+- describe example 106
+- describe example 107
+- describe example 108
+- describe example 109
+- introduce formulations
+- define excipient
+- describe role of excipient
+- describe pharmaceutical compositions
+- list examples of carriers
+- describe oral formulations
+- describe solid carriers
+- describe powders
+- describe tablets
+- describe capsules
+- describe liquid carriers
+- describe solutions
+- describe suspensions
+- describe emulsions
+- describe syrups
+- describe elixirs
+- describe inhaled delivery
+- describe parenteral administration
+- describe sterile liquid carriers
+- describe unit dosage forms
+- describe packaging
+- describe dosage
+- describe therapeutic applications
+- describe administration to airways
+- describe intranasal or intrabronchial inhalation
+- describe aerosol composition
+- describe parenteral or intraperitoneal administration
+- describe transdermal administration
+- introduce transdermal administration
+- describe carrier forms
+- describe suppository formulations
+- describe lipid formulations
+- describe combination therapy
+- describe treatment methods
+- describe pharmaceutical compositions
+- introduce procedures
+- describe radiolabel binding studies
+- describe assay preparation
+- describe data analysis
+- describe Ki calculation
+- describe screening at single concentration
+

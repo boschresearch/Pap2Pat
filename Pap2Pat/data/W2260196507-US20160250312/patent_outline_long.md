@@ -1,0 +1,306 @@
+# DESCRIPTION
+
+- introduce malaria
+- describe malaria as a serious disease
+- discuss preventative medicines
+- highlight limitations of current medicines
+- discuss vaccination programs
+- introduce RTS, S and ChAd63-MVA ME-TRAP vaccines
+- describe limitations of current vaccines
+- discuss irradiated sporozoites as a 'gold-standard'
+- highlight the need for better targets
+- introduce the problem of identifying suitable antigens
+- discuss the lack of a suitable small animal model
+- introduce LSA-1 as a liver-stage protein
+- describe the function of LSA-1
+- discuss the association of LSA-1 with protection
+- introduce clinical trials of LSA-1
+- discuss the failures of previous trials
+- highlight the need for alternative antigens and delivery methods
+- introduce the invention
+- describe the antigenic composition or vaccine
+- introduce PfLSA1 as a Plasmodium protein
+- introduce PfLSAP2 as a Plasmodium protein
+- introduce PfUIS3 as a Plasmodium protein
+- introduce PfI0580c as a Plasmodium protein
+- introduce PfSPECT-1 as a Plasmodium protein
+- describe the method of identifying key candidate antigens
+- discuss the use of viral vectors
+- introduce the results of the method
+- highlight the protective efficacy of PfLSA1 and LSAP2
+- discuss the moderate protective efficacy of PfUIS3 and PfI0580c
+- introduce the term "protective immune response"
+- describe the characteristics of a protective immune response
+- discuss the use of redundant codons
+- introduce the viral vector
+- describe the modification of the viral vector
+- introduce the composition
+- discuss the use of two or more different viral vectors
+- introduce the pharmaceutical composition
+- list adjuvants
+- describe nucleic acid encoding viral protein and Plasmodium protein
+- describe nucleic acid encoding viral protein and PfLSA1
+- describe nucleic acid encoding viral protein and PfLSAP2
+- describe nucleic acid encoding viral protein and PfUIS3
+- describe nucleic acid encoding viral protein and PfI0580c
+- describe nucleic acid encoding viral protein and PfSPECT-1
+- describe nucleic acid encoding viral protein and additional Plasmodium proteins
+- describe virus comprising nucleic acid
+- describe virus particle comprising Plasmodium proteins
+- describe host cell comprising nucleic acid
+- describe method of eliciting immune response
+- describe method of prevention or treatment of malaria
+- describe single dose vaccination regime
+- describe prime-boost vaccination regime
+- describe pharmaceutical composition for use in prevention or treatment of malaria
+- describe kit for vaccination regime against malaria
+- describe kit for vaccination regime against malaria with PfLSA1
+- describe kit for vaccination regime against malaria with PfLSAP2
+- describe kit for vaccination regime against malaria with PfUIS3
+- describe kit for vaccination regime against malaria with PfI0580c
+- describe kit for vaccination regime against malaria with PfSPECT-1
+- describe method of manufacturing immunogenic composition or vaccine
+
+## 1 MATERIALS AND METHODS
+
+- list reagents
+- describe ACK Lysis Buffer
+- describe Buffer A
+- describe Cell Separation Medium
+- describe Coating Buffer
+- describe Complete α-MEM Medium
+- describe Diethanolamine Buffer
+- describe Digestion Solution
+- describe Ear Punch Buffer
+- describe Ex-flagellation Medium
+- describe FACS Buffer
+- describe Fructose/PABA Solution
+- describe Giemsa
+- describe Hepa1-6 Medium
+- describe LB Agar/Broth
+- describe MACS Buffer
+- describe Mowiol
+- describe Perfusion Solution
+- describe Perm/Wash
+- describe PBS and PBS/Tween
+- describe Plasmodium berghei Freezing Medium
+- describe Primary Hepatocyte Culture Medium
+- describe R0 and R10 Media
+- introduce materials and methods
+- describe PCR primers design
+- outline PCR procedure
+- describe In-Fusion HD Enzyme Premix usage
+- outline plasmid transformation into E. coli
+- describe plasmid DNA preparation and sequencing
+- motivate transfection of HEK 293A cells
+- describe lipofectamine preparation
+- outline DNA-lipofectamine mixture preparation
+- describe transfection procedure
+- motivate harvest of cellular lysate
+- describe lysis buffer preparation
+- outline cellular lysate harvesting procedure
+- describe luciferase activity quantification
+- motivate genotyping of HHD mice
+- describe ear punch DNA extraction
+- outline PCR procedure for genotyping
+- describe adenovirus transfection and purification
+- describe MVA transfection and purification
+- motivate animal and immunization procedures
+- describe animal housing and handling
+- outline immunization and injection procedures
+- describe vaccine formulation and administration
+- dissect liver
+- tease apart liver cells
+- pass through strainer
+- spin and resuspend cells
+- count and viability of cells
+- resuspend cells in culture medium
+- collect mouse sera
+- store sera at -20°C
+- synthesize peptides
+- reconstitute peptides in DMSO
+- combine peptides into sub-pools
+- perform intracellular cytokine staining
+- stimulate cells with peptides
+- stain cells with antibodies
+- fix and permeabilize cells
+- stain for memory cell markers
+- acquire and analyze data
+- perform ELISpot assay
+- coat plates with antibody
+- add splenocytes and peptides
+- incubate and wash plates
+- add detection antibody
+- develop and count spots
+- isolate CD4+ and CD8+ T cells
+- perform positive selection of CD4+ T cells
+- perform negative selection of CD8+ T cells
+- enrich CD8+ T cells
+- deplete T cells in vivo
+- perform luminescence immunoprecipitation assay
+- perform enzyme-linked immunosorbent assay
+- describe materials and methods
+- detail antibody detection
+- outline whole IgG passive transfer
+- introduce parasitology
+- describe parasite strains
+- detail preparation of thin blood smears
+- outline sporozoite production
+- describe cryopreservation of pRBCs
+- detail sporozoite challenge
+- outline in vivo imaging using IVIS system
+- describe immunofluorescence antibody test
+- introduce murine in vitro T cell killing assay
+- detail preparation of hepatoma cells
+- outline infection of hepatoma cells with murine parasites
+- describe addition of cytokines, drugs or splenocytes
+- detail assessment of infectivity by flow cytometry
+- calculate percentage inhibition
+- describe monitoring of parasitaemia
+- detail exflagellation measurement
+- outline mosquito maintenance
+- describe salivary gland dissection
+- detail sporozoite counting
+- outline blood film analysis
+
+## 2 ASSESSING IMMUNOGENICITY AND EFFICACY OF EIGHT CANDIDATE P. FALCIPARUM VACCINES IN MICE
+
+- introduce malaria vaccines
+- motivate liver-stage malaria vaccines
+- describe ex vivo IFNγ ELISpot assay
+- explain limitations of ELISpot assay
+- introduce multi-parameter flow cytometry
+- describe cytokines and markers assessed
+- motivate assessment of antibody levels
+- describe difficulties in assessing functional immunogenicity
+- introduce transgenic P. berghei parasites
+- describe generation of transgenic parasites
+- motivate use of P. berghei UIS4 promoter
+- describe P. berghei 230p locus
+- summarize vaccine development strategy
+- introduce results section
+- describe ex vivo IFNγ ELISpot results
+- compare immunogenicity in Balb/c and C57BL/6 mice
+- describe ICS results
+- summarize cytokine profiles in Balb/c mice
+- summarize cytokine profiles in C57BL/6 mice
+- introduce antibody response assessment
+- describe LIPS assay
+- summarize antibody responses in Balb/c mice
+- summarize antibody responses in C57BL/6 mice
+- analyze fold change in antibody levels
+- introduce efficacy assessment
+- describe challenge model using P. berghei wild-type sporozoites
+- motivate use of P. berghei homologs
+- summarize vaccination results
+- introduce P. falciparum and P. berghei protein sequences
+- motivate cross-species protection
+- describe ChAd63-MVA PfCe1TOS vaccination in Balb/c and C57BL/6 mice
+- assess cellular immunogenicity via ICS
+- describe challenge with P. berghei sporozoites
+- summarize protective efficacy of PfCe1TOS vaccination
+- describe PFI0580c vaccination in Balb/c mice
+- assess cellular immunogenicity via ICS
+- describe challenge with P. berghei sporozoites
+- summarize protective efficacy of PFI0580c vaccination
+- describe PfUIS3 vaccination in Balb/c mice
+- assess cellular immunogenicity via ICS
+- describe challenge with P. berghei sporozoites
+- summarize protective efficacy of PfUIS3 vaccination
+- introduce transgenic P. berghei parasites expressing P. falciparum antigens
+- describe vaccination and challenge experiments
+- summarize protective efficacy of each candidate antigen
+- describe PfLSAP1, PFE1590w, PfCe1TOS, and PfLSA3 vaccination
+- describe PfUIS3, PFI0580c, PfLSAP2, and PfLSA1 vaccination
+- summarize immunogenicity and efficacy for each candidate antigen
+- discuss immunogenicity and efficacy results
+- describe ELISpot results
+- describe ICS results
+- discuss CD8+ T cell responses
+- discuss humoral responses
+- discuss differences between C57BL/6 and Balb/c mice
+- discuss limitations of outbred mice
+- discuss PfCe1TOS vaccination results
+- discuss PfUIS3 vaccination results
+- discuss PfLSA1 and PfLSAP2 vaccination results
+- discuss CSP and TRAP vaccination results
+- discuss PfLSAP1, PFE1590w, and PfLSA3 vaccination results
+- discuss importance of antigenic target
+- discuss quality of immune response
+- discuss confirmation of results in other mouse strains
+- summarize immunogenicity and protective efficacy results
+- discuss CD8+ T cell responses
+- discuss antibody responses
+- discuss protective efficacy of PfLSA1, PfLSAP2, and PfUIS3
+- conclude with proof-of-concept for better target antigens
+
+## 3 ASSESSMENT OF PfUIS3, PfLSA1 AND PfLSAP2 AS CANDIDATES FOR A LIVER-STAGE MALARIA VACCINE
+
+- introduce PfUIS3, PfLSA1, and PfLSAP2 as vaccine candidates
+- motivate further assessment of vaccine candidates
+- describe limitations of using inbred mice
+- outline aims of the section
+- confirm protection in Balb/c mice with PfUIS3
+- describe protection mechanism in Balb/c mice with PfUIS3
+- assess protection in C57BL/6 mice with PfUIS3
+- assess protection in CD-1 mice with PfUIS3
+- confirm sterile protection in Balb/c mice with PfLSA1
+- describe protection mechanism in Balb/c mice with PfLSA1
+- assess protection in C57BL/6 mice with PfLSA1
+- assess protection in CD-1 mice with PfLSA1
+- confirm sterile protection in Balb/c mice with PfLSAP2
+- describe protection mechanism in Balb/c mice with PfLSAP2
+- assess protection in C57BL/6 mice with PfLSAP2
+- assess protection in CD-1 mice with PfLSAP2
+- assess immunogenicity of PfUIS3 in Balb/c mice
+- assess immunogenicity of PfLSA1 in Balb/c mice
+- assess immunogenicity of PfLSAP2 in Balb/c mice
+- assess immunogenicity of PfUIS3 in C57BL/6 mice
+- assess immunogenicity of PfLSA1 in C57BL/6 mice
+- assess immunogenicity of PfLSAP2 in C57BL/6 mice
+- assess immunogenicity of PfUIS3 in CD-1 mice
+- assess immunogenicity of PfLSA1 in CD-1 mice
+- assess immunogenicity of PfLSAP2 in CD-1 mice
+- compare protective efficacy of PfUIS3, PfLSA1, and PfLSAP2
+- assess competition when combining vaccines
+- assess immunogenicity of ME-TRAP in combination with PfUIS3 or PfLSAP2
+- assess immunogenicity of PfUIS3 and PfLSAP2 combination vaccination
+- assess immunogenicity of TRIP and PfLSA1 combination vaccination
+- summarize protective efficacy of vaccine candidates in CD-1 mice
+- compare protective efficacy of PfCSP and PfTRAP in CD-1 mice
+- assess protective efficacy of PfFalstatin and PfLSA3 in CD-1 mice
+- assess protective efficacy of PfCe1TOS, PfLSAP1, and PfETRAMP5 in CD-1 mice
+- summarize rank/order of new P. falciparum antigens
+
+### 4. PROTECTIVE EFFICACY OF THE CANDIDATES VACCINES IN CD-1 OUTBRED MICE
+
+- assess protective efficacy of PfLSA1 in CD-1 mice
+- assess protective efficacy of PfLSAP2 in CD-1 mice
+- assess protective efficacy of PfUIS3 in CD-1 mice
+- assess protective efficacy of PfCSP and PfTRAP in CD-1 mice
+- assess protective efficacy of PfFalstatin, PfLSA3, PfCe1TOS, PfLSAP1, and PfETRAMP
+
+## 5. SUMMARY
+
+- summarize results supporting PfLSA1, PfUIS3, PfLSAP2, and PfI0580c as candidate vaccines
+- highlight value of transgenic parasites in assessing vaccine candidates
+
+## 5. SPECT-1
+
+- PfSPECT-1 protein as a vaccine candidate
+
+## 6. RESULTS
+
+- design PfSPECT-1-ChAd63 and -MVA viral vector vaccines
+- generate PfSPECT-1 expressing P. berghei chimeric parasites
+- confirm integration of PfSPECT-1 coding sequence into P. berghei genome
+- analyze expression of PfSPECT-1 in chimeric sporozoites
+- assess chimeric parasite fitness and liver loads in mice
+- immunize mice with PfSPECT-1 vaccine and challenge with transgenic sporozoites
+- monitor mice for parasitaemia and calculate time to 1% parasitaemia
+- analyze protective efficacy of PfSPECT-1 vaccine in Balb/c and CD-1 mice
+- compare protective efficacy of PfSPECT-1 to PfCSP vaccine
+- assess blocking activity of serum from vaccinated mice in vitro
+- measure decline in GFP signal from infected hepatocytes with serum from vaccinated mice
+- analyze blocking activity of serum from vaccinated mice at different concentrations
+

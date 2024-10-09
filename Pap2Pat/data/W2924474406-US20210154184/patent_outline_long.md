@@ -1,0 +1,658 @@
+# DESCRIPTION
+
+## FIELD OF THE INVENTION
+
+- relate to bifunctional compounds for neurological diseases
+
+## BACKGROUND OF THE INVENTION
+
+- introduce Alzheimer's disease
+- describe tau protein and its role in AD
+- discuss current therapeutic strategies
+- highlight need for new treatments
+
+## SUMMARY OF THE INVENTION
+
+- introduce PROTAC strategy
+- describe bifunctional compounds
+- define tau binding moiety
+- define E3 ubiquitin ligase binding moiety
+- describe linker
+- provide formula I
+- describe T-I formula
+- define L, M, P, Q, X, R1-8, and R9
+- describe R3
+- describe A
+- provide T-II formula
+- describe X1-5, R13-15, and R14
+- describe T-III and T-IV formulas
+- define R20-24, G, Rx, and Ry
+- describe E3 ubiquitin ligase binding moiety
+- provide exemplary compounds
+- describe radiolabeled compounds
+- describe pharmaceutical compositions
+- describe methods of treating neurological disorders
+- describe methods of promoting tau degradation
+- describe methods of detecting neurological disorders
+- describe methods of diagnosing neurological disorders
+- describe kits
+
+## DEFINITIONS
+
+### Chemical Definitions
+
+- define chemical elements
+- introduce functional groups
+- discuss stereoisomers
+- describe isomer isolation methods
+- define bond notation
+- discuss isotopically enriched atoms
+- explain range of values
+- define aliphatic and heteroaliphatic groups
+- describe alkyl groups
+- discuss haloalkyl groups
+- provide examples of alkyl and haloalkyl groups
+- define heteroalkyl
+- specify heteroalkyl embodiments
+- define alkenyl
+- specify alkenyl embodiments
+- define heteroalkenyl
+- specify heteroalkenyl embodiments
+- define alkynyl
+- specify alkynyl embodiments
+- define heteroalkynyl
+- specify heteroalkynyl embodiments
+- define carbocyclyl
+- specify carbocyclyl embodiments
+- define cycloalkyl
+- specify cycloalkyl embodiments
+- provide examples of cycloalkyl groups
+- specify unsubstituted or substituted cycloalkyl
+- define monocyclic carbocyclyl
+- specify monocyclic carbocyclyl embodiments
+- define saturated carbocyclyl
+- specify saturated carbocyclyl embodiments
+- provide examples of carbocyclyl groups
+- specify unsubstituted or substituted carbocyclyl
+- define fused carbocyclyl
+- specify fused carbocyclyl embodiments
+- provide examples of fused carbocyclyl groups
+- specify unsubstituted or substituted fused carbocyclyl
+- define polycyclic carbocyclyl
+- specify polycyclic carbocyclyl embodiments
+- provide examples of polycyclic carbocyclyl groups
+- specify unsubstituted or substituted polycyclic carbocyclyl
+- define heterocyclyl
+- describe heterocyclyl groups
+- exemplify heterocyclyl groups
+- define aryl
+- describe aryl groups
+- exemplify aryl groups
+- define heteroaryl
+- describe heteroaryl groups
+- exemplify heteroaryl groups
+- define aralkyl
+- define heteroaralkyl
+- define unsaturated bond
+- define unsaturated
+- define saturated
+- explain suffix "-ene"
+- describe optional substitution
+- exemplify substituents
+- describe substituents on nitrogen
+- describe substituents on carbon
+- describe substituents on sulfur
+- describe substituents on oxygen
+- describe substituents on phosphorus
+- describe substituents on boron
+- describe alkyl substituents
+- describe perhaloalkyl substituents
+- describe alkenyl substituents
+- describe alkynyl substituents
+- describe heteroalkyl substituents
+- describe heteroalkenyl substituents
+- describe heteroalkynyl substituents
+- describe carbocyclyl substituents
+- describe heterocyclyl substituents
+- define Raa
+- define Rbb
+- define Rcc
+- define Rdd
+- define Ree
+- define Rff
+- define Rgg
+- define halo
+- define hydroxyl
+- define substituted hydroxyl
+- define amino
+- define substituted amino
+- define monosubstituted amino
+- define disubstituted amino
+- define trisubstituted amino
+- define sulfonyl
+- define sulfinyl
+- define acyl
+- describe acyl substituents
+- provide examples of acyl groups
+- define carbonyl group
+- define silyl group
+- define oxo and thiooxo groups
+- describe nitrogen atom substituents
+- introduce nitrogen protecting groups
+- list nitrogen protecting groups
+- describe amide nitrogen protecting groups
+- list amide nitrogen protecting groups
+- describe carbamate nitrogen protecting groups
+- list carbamate nitrogen protecting groups
+- describe sulfonamide nitrogen protecting groups
+- list sulfonamide nitrogen protecting groups
+- provide reference for nitrogen protecting groups
+- conclude chemical definitions
+- define nitrogen protecting groups
+- list examples of nitrogen protecting groups
+- define oxygen protecting groups
+- list examples of oxygen protecting groups
+- define sulfur protecting groups
+- list examples of sulfur protecting groups
+- define counterion
+- list examples of counterions
+- define leaving group
+- list examples of leaving groups
+- explain use of phrase "at least one instance"
+- define non-hydrogen group
+- introduce chemical definitions
+- describe nitrogen protecting groups
+- describe oxygen protecting groups
+- describe sulfur protecting groups
+- describe counterions
+- describe leaving groups
+- provide general information on protecting groups
+- reference external source for protecting groups
+- describe scope of invention
+- provide examples of substituents
+- describe use of substituents
+- conclude chemical definitions
+
+### Other Definitions
+
+- define salt
+- describe pharmaceutically acceptable salt
+- provide examples of pharmaceutically acceptable salts
+- define solvate
+- describe types of solvates
+- define hydrate
+- describe types of hydrates
+- define tautomers
+- describe tautomerization
+- define isomers
+- describe stereoisomers
+- define diastereomers
+- define enantiomers
+- describe absolute configuration
+- define polymorph
+- describe differences between polymorphs
+- define prodrugs
+- describe types of prodrugs
+- define composition and formulation
+- define subject
+- describe types of subjects
+- define patient
+- define biological sample
+- describe types of biological samples
+- define tissue
+- describe types of tissues
+- define administer
+- describe modes of administration
+- define treatment
+- describe goals of treatment
+- define condition, disease, and disorder
+- define effective amount
+- describe factors affecting effective amount
+- define therapeutically effective amount
+- describe benefits of therapeutically effective amount
+- define prophylactically effective amount
+- describe benefits of prophylactically effective amount
+- define neurological disorder
+- define tau protein
+- define tauopathy
+
+## DETAILED DESCRIPTION OF CERTAIN EMBODIMENTS
+
+- introduce bifunctional compounds
+
+### Compounds
+
+- introduce compounds interacting with tau protein and E3 ubiquitin ligase
+- describe therapeutic effect of compounds
+- define compound of Formula I
+- specify T as tau protein binding moiety
+- specify E as E3 ubiquitin ligase binding moiety
+- define L as linker
+- describe Group T
+- define T as tau protein binding moiety derived from prior art
+- specify T of Formula T-I
+- describe embodiments of Formula T-I
+- specify embodiments of L, M, P, Q, X, R3, and R1-8
+- define compounds
+- specify R9
+- specify R3
+- specify R1, R2, and R4
+- introduce formula T-I-a
+- define L, M, X, R9, R3, A, R2, R7, R8, and n
+- specify R3 in formula T-I-a
+- introduce formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- specify R3 in formula T-I-b
+- define compounds
+- specify formula T-II
+- define R13, R14, and R15
+- specify embodiments of Formula T-II
+- specify formula T-II-a
+- define R13, R14, and R15 for T-II-a
+- specify embodiments of Formula T-II-a
+- specify formula T-II-b
+- define R14 for T-II-b
+- specify embodiments of Formula T-II-b
+- specify formulas T-III and T-IV
+- define R20, R21, G, R22, R23, R24, Rx, Ry, n, t, and r
+- specify formula T-III
+- define R20, R21, G, R22, Rx, Ry, n, t, and r for T-III
+- specify formula T-III-a
+- define R20, G, R22, Rx, Ry, and n for T-III-a
+- specify additional embodiments of T
+- specify additional formulas for T
+- define compounds
+- specify R20
+- specify G
+- specify R22
+- specify T
+- specify R21
+- specify R23
+- specify R24
+- specify Rx and Ry
+- specify tau binding moiety
+- specify selectivity
+- introduce Group L
+- specify L
+- specify atoms in L
+- specify carbon atoms in L
+- specify alkylene in L
+- specify heteroalkylene in L
+- specify formulas for L
+- specify q, u, p, and s in L
+- define compounds
+- specify L
+- specify RA
+- introduce E3 ubiquitin ligase
+- describe Cereblon
+- specify E
+- describe E as modulator, binder, inhibitor, or ligand of Cereblon
+- specify E as modulator, binder, inhibitor, or ligand of Cereblon variant or isoform
+- describe E as comprising heteroaryl ring
+- describe E as comprising fused bicyclic heteroaryl ring
+- describe E as comprising phthalimido group
+- specify E of Formula E-I
+- specify Y in Formula E-I
+- specify R1A, R3A, R3', R4A, and R5A in Formula E-I
+- specify E of Formula E-II or E-III
+- specify Y in Formula E-II or E-III
+- specify XA and X1-X2 in Formula E-II or E-III
+- specify R1A, R3A, R3', R4A, and R5A in Formula E-II or E-III
+- describe E3 ubiquitin ligase complex
+- describe Cereblon ubiquitination of target proteins
+- describe regulation of fibroblast growth factor 8 and 10
+- describe developmental processes regulated by FGF8
+- incorporate references
+- define compounds
+- specify m and n values
+- define E of formula E-II
+- specify Y, XA, X1-X2, RB, R1A, R3A, R3', R4A, R5
+- define certain embodiments of formula E-II
+- specify Y, XA, X1-X2, RB, R1A, R3A, R3', R4A, R5
+- define certain embodiments of formula E-II
+- specify Y, XA, X1-X2, RB, R1A, R3A, R3', R4A, R5
+- define E of formula E-II-a
+- specify Y, XA, RB, R1A, R3A, R4A, R5
+- define certain embodiments of formula E-II-a
+- specify Y, XA, RB, R1A, R3A, R4A, R5
+- define E of formula E-II-b
+- specify Y, XA, RB, R3A, R4A, R5
+- define certain embodiments of formula E-II-b
+- specify Y, XA, RB, R3A, R4A, R5
+- define E of formula E-II-c
+- specify Y, RB, R4A, R5
+- define certain embodiments of formula E-II-c
+- specify Y, RB, R4A, R5
+- define E of formula E-II-d, E-II-e, E-II-f, E-II-g
+- define compounds
+- specify R4A and R5A
+- define E of Formula E-III
+- specify Y in Formula E-III
+- specify X1-X2 in Formula E-III
+- specify RB in Formula E-III
+- specify R1A in Formula E-III
+- specify R3A in Formula E-III
+- specify R3' in Formula E-III
+- define E of Formula E-III-a
+- define E of Formula E-III-b
+- specify Y in Formula E-III-b
+- define compounds
+- specify Y
+- specify X1-X2
+- specify RB
+- specify R3A
+- specify R4A
+- specify R5A
+- specify k
+- describe E-III-c
+- describe E-III-d
+- describe E-III-d-1
+- describe E-III-d-2
+- describe E-III-e
+- describe E-III-e-1
+- describe E-III-e-2
+- describe VHL
+- describe VHL structure
+- describe E as VHL modulator
+- describe E as peptide backbone structure
+- describe E3 ligase binding moiety
+- describe selectivity of E3 ligase binding moiety
+
+### Further Embodiments of Formula I
+
+- define compound of Formula I-a
+- specify E3 ubiquitin ligase binding moiety
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- specify optional replacement of carbon in R2, R3, R7, and R8
+- define L, M, X, R9, R3, A, R2, R7, R8, R12, n, and
+- define formula I
+- specify R9
+- specify R3
+- specify A
+- specify R2, R7, R8
+- specify n and q
+- define formula I-a
+- specify L, M, X, R9, R3, A, R2, R7, R8, n, q
+- define formula I-b
+- specify E, R3, A, n, q
+- define formula I-b-1, I-b-2, I-b-3, I-b-4, I-b-5
+- specify E, q
+- define formula I-c
+- define formula I-c
+- specify X3, X4, X5, R14, R15, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- define formula I-d
+- specify R14, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- specify R14, A, n, q
+- define formula I-d-1
+- specify E, q
+- define formula I-e
+- specify E, R20, G, R22
+- specify R20
+- specify R22
+- define Rx and Ry
+- define n and q
+- define R20
+- define G
+- define R22
+- define embodiment of Formula I-e
+- define embodiment of Formula I-e
+- define embodiment of Formula I-e
+- define embodiment of Formula I-e
+- define embodiment of Formula I-e
+- define embodiment of Formula I-e
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-f
+- define embodiment of Formula I-g
+- define embodiment of Formula I-h
+- define embodiment of Formula I-i
+- define embodiment of Formula I-j
+- define embodiment of Formula I-k
+- define embodiment of Formula I-1
+- define embodiment of Formula I-m
+- define embodiment of Formula I-n
+- define embodiment of Table 1
+- define embodiment of Table 2
+- define radionuclide
+- define tau protein binding
+- define E3 ubiquitin ligase binding
+- define Cereblon binding
+
+### Pharmaceutical Compositions, Kits, and Administration
+
+- define pharmaceutical compositions
+- describe compound of Formula I
+- specify effective amount
+- describe therapeutically effective amount
+- describe prophylactically effective amount
+- describe amount for treating neurological disorder
+- describe amount for preventing neurological disorder
+- describe amount for treating neurodegenerative disease
+- describe amount for preventing neurodegenerative disease
+- describe amount for treating tauopathy
+- describe amount for preventing tauopathy
+- describe amount for reducing disease risk
+- specify subject
+- describe animal subject
+- describe human subject
+- describe non-human animal subject
+- describe mammal subject
+- describe non-human mammal subject
+- describe domesticated animal subject
+- describe companion animal subject
+- describe livestock animal subject
+- describe zoo animal subject
+- describe research animal subject
+- describe genetically engineered animal subject
+- describe transgenic animal subject
+- describe fish or reptile subject
+- describe effective amount for tau protein degradation
+- describe pharmaceutical composition for treating neurological disorder
+- describe pharmaceutical composition for treating neurodegenerative disease
+- describe pharmaceutical composition for treating tauopathy
+- describe administration with additional pharmaceutical agents
+- describe solid pharmaceutical composition
+- describe liquid pharmaceutical composition
+- describe administration routes
+- describe pharmaceutical composition preparation
+- list antioxidants
+- list chelating agents
+- list antimicrobial preservatives
+- list antifungal preservatives
+- list alcohol preservatives
+- list acidic preservatives
+- list other preservatives
+- list buffering agents
+- list lubricating agents
+- list natural oils
+- list synthetic oils
+- describe liquid dosage forms
+- list inert diluents
+- list adjuvants
+- describe injectable preparations
+- list vehicles and solvents
+- describe sterilization methods
+- describe solid dosage forms
+- list excipients
+- list fillers or extenders
+- list binders
+- list humectants
+- list disintegrating agents
+- list solution retarding agents
+- list absorption accelerators
+- list wetting agents
+- list absorbents
+- list lubricants
+- describe coatings and shells
+- describe micro-encapsulated form
+- describe topical formulations
+- describe kits
+- describe kit contents and instructions
+
+### Methods of Treatment
+
+- motivate tau protein degradation
+- describe tau protein aggregation
+- introduce bifunctional compounds
+- describe Cereblon binding
+- provide methods for treating neurodegenerative diseases
+- provide methods for treating tauopathies
+- list specific tauopathies
+- provide methods for promoting tau protein degradation
+- describe administering compounds to subjects
+- describe compounds of Formula I
+- provide uses of compounds of Formula I
+- describe manufacturing medicaments
+- describe administering effective amounts
+- describe therapeutically effective amounts
+- describe prophylactically effective amounts
+- describe treating animals
+- describe treating humans
+- describe treating domesticated animals
+- describe treating companion animals
+- describe treating livestock animals
+- describe treating zoo animals
+- describe administering additional pharmaceutical agents
+
+### Diagnostic Methods
+
+- motivate in vivo imaging of tau protein
+- describe early diagnosis of neurological diseases
+- introduce radiolabeled compounds of Formula I
+- describe fluorescence imaging techniques
+- describe nuclear imaging techniques
+- describe PET imaging
+- describe SPECT imaging
+- provide methods for detecting neurological disorders
+- provide methods for detecting tauopathies
+- provide methods for detecting Alzheimer's disease
+- describe contacting compounds with tissue
+- describe administering compounds to subjects
+- describe imaging tau protein in subjects
+- describe diagnosing neurological disorders
+
+## EXAMPLES
+
+- provide examples of compounds and their preparation
+
+### Preparation of Synthetic Intermediates
+
+- prepare compound C
+- prepare compound D
+- prepare compound E
+- prepare compound F
+- prepare compound G
+- prepare compound H
+- prepare compound I
+- prepare compound J
+- describe purification methods
+
+### N-(6-02-(2,6-Dioxopiperidin-3-yl)-1,3-dioxoisoindolin-4-yl)amino)hexyl)-3-(5H-pyrido[4,3-b]indol-7-yl)propanamide (1; QC-01-178))
+
+- prepare compound 1
+- characterize compound 1 by NMR
+
+### (2S,4R)-1-[(2S)-3,3-Dimethyl-2-(3-{2-[2-(3-{5H-pyrido[4,3-b]indol-7-yl}propanamido)ethoxy]ethoxy}propanamido)butanoyl]-4-hydroxy-N-[(1S)-1-[4-(4-methyl-1,3-thiazol-5-yl)phenyl]ethyl]pyrrolidine-2-earboxamide (8; FMF-05-129-1)
+
+- prepare compound M
+- prepare compound N
+- prepare compound 8
+- characterize compound 8 by NMR
+
+### 2-{[2-(2,6-dioxopiperidin-3-yl)-1,3-dioxo-2,3-dihydro-1H-isoindol-4-yl]oxy}-N-{2-[2-(2-{2-[(5-{5H-pyrido[4,3-b]indol-7-yl}pyridin-2-yl)oxy]acetamido}ethoxy)ethoxy]ethyl}acetamide (15; FMF-05-183-1)
+
+- prepare compound R
+- prepare compound S
+- prepare compound U
+- prepare compound V
+- prepare compound 15
+- characterize compound 15
+- provide MS data for compound 15
+
+### N-[2-(2-{[2-(2,6-dioxopiperidin-3-yl)-1,3-dioxo-2,3-dihydro-1H-isoindol-4-yl]amino}ethoxy)ethyl]-2-[(5-{5H-pyrido [4,3-b]indol-7-yl}pyridirt-2-yl)oxy]acetamide (19; FMF-05-167-1)
+
+- prepare compound 19
+- characterize compound 19
+- provide MS data for compound 19
+- prepare example compounds 16-18
+- prepare compound AA
+- prepare compound BB
+- prepare compound 20
+
+### Tau Degradation Assays
+
+- introduce tau degradation assays
+- describe experimental design
+- introduce example compounds 1-12
+- describe treatment of neurons with compounds
+- describe protein extraction and quantification
+- describe Western blot analysis
+- present results of tau degradation assays
+- evaluate effect of T807 on tau levels
+- reevaluate example compounds 2-5
+- describe effect on E3 ubiquitin ligases
+- present results of Western blot analysis
+- evaluate effect of compounds on CRBN, VHL, and CHIP
+- describe tau accumulation in A152T and P301L neurons
+- evaluate effect of compounds on CHIP levels
+- describe evaluation of example compounds 2-5 in non-mutant control neurons
+- present results of Western blot analysis
+- evaluate dose-dependent effect of compounds on tau
+- describe evaluation of compounds in rescue stress vulnerability assay
+- present results of rescue stress vulnerability assay
+- summarize findings of tau degradation assays
+
+### In Vivo Assay
+
+- introduce in vivo assay
+- describe animal husbandry
+- describe formulation and dosing of compound 3
+- describe sample collection and processing
+- describe bioanalytical method development
+- present results of in vivo assay
+
+## Equivalents And Scope
+
+- define claim language
+- interpret or relationships
+- include variations and combinations
+- disclose subgroup elements
+- understand open-ended terms
+- incorporate references by reference
+- determine scope of invention
+

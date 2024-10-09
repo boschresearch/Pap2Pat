@@ -1,0 +1,39 @@
+# DESCRIPTION
+
+- introduce circulating tumor cells (CTC) and tumor cell clusters (CTCC)
+- motivate metastasis formation in cancers
+- describe current treatments for primary tumors
+- limitations of current treatments
+- summarize existence of circulating tumor cells
+- describe methods for isolating and examining circulating tumor cells
+- introduce circulating tumor cell clusters (CTCC)
+- motivate importance of CTCC in metastasis formation
+- describe studies on CTCC
+- summarize object of the invention
+- describe device for comminution or inactivation of CTC or CTCC
+- describe method for comminution or inactivation of CTC or CTCC
+- explain principle of shear stresses
+- describe experimental studies on shear stresses
+- summarize therapeutic window for shear stress
+- describe blood pressure in veins
+- propose pump design
+- explain pump operation
+- describe importance of shear forces
+- introduce pressure sensor and control unit
+- explain function of pressure difference
+- describe design of micro-axial pump
+- explain throttle design
+- discuss cavitation prevention
+- describe micropump design
+- explain differences from cardiac assist systems
+- specify volumetric flow and pumping pressure
+- discuss variation in venous blood circulation
+- explain individualized pump design
+- describe application of device
+- explain pump operation with reference to figures
+- describe experimental results
+- explain therapeutic window
+- describe model illustration of process
+- explain placement of pump in venous drain
+- discuss advantages of different placement locations
+

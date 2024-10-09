@@ -1,0 +1,174 @@
+# DESCRIPTION
+
+## CROSS REFERENCE
+
+- claim priority
+
+## FIELD OF TECHNOLOGY
+
+- define application area
+
+## BACKGROUND
+
+- limitations of conventional techniques
+
+## DETAILED DESCRIPTION
+
+- introduce wearable devices for collecting user data
+- describe sleep data collection throughout a 24-hour period
+- classify different sleep stages for a user
+- utilize physiological data to determine sleep stages
+- display classified sleep stages via a GUI
+- provide feedback to a user regarding sleeping patterns
+- utilize a machine learning classifier for sleep stage classification
+- identify features associated with physiological data
+- normalize physiological data prior to input into a machine learning classifier
+- tailor sleep staging algorithms to each individual user
+- utilize circadian rhythm-derived features to improve sleep stage classification
+- describe a circadian rhythm adjustment model
+- input a circadian rhythm adjustment model into a machine learning classifier
+- describe a system that supports sleep staging algorithms
+- illustrate an example of a system that supports sleep staging algorithms
+- describe electronic devices that measure physiological parameters
+- describe user devices that process and store physiological data
+- describe servers that receive and analyze physiological data
+- describe a network that facilitates communication between electronic devices
+- illustrate an example of a ring wearable device
+- describe components of a ring wearable device
+- describe housing components
+- describe outer housing fabrication
+- describe inner housing configuration
+- describe ring substrate arrangement
+- describe device electronics and battery arrangement
+- describe module functionality
+- describe memory functionality
+- describe processing module functionality
+- describe communication module functionality
+- describe power module functionality
+- describe temperature sensor functionality
+- describe temperature data sampling
+- describe temperature data processing
+- describe temperature data transmission
+- describe multiple temperature sensor arrangement
+- describe distal temperature measurement
+- describe PPG system functionality
+- describe PPG signal generation
+- describe pulse waveform determination
+- describe physiological parameter determination
+- describe ring 104 components
+- determine heart rate and HRV
+- determine respiratory rate
+- describe motion sensors
+- sample motion signals
+- store data in memory
+- calculate derived values
+- compress data
+- describe alternative devices
+- take physiological measurements
+- describe data processing operations
+- evaluate sleep patterns
+- calculate sleep scores
+- describe sleep contributors
+- calculate readiness scores
+- describe readiness contributors
+- classify sleep stages
+- describe sleep tracking motivation
+- describe PSG and actigraphy
+- compare PSG and actigraphy
+- describe limitations of conventional wearable devices
+- describe benefits of ANS mediated peripheral signals
+- describe challenges of automatic sleep stage classification
+- describe system 200 sleep staging techniques
+- describe ring 104 collecting physiological data
+- describe use of multiple light sources
+- describe advantages of ring 104 over other wearable devices
+- describe collecting accelerometer data
+- describe processing accelerometer data
+- describe collecting temperature data
+- describe processing temperature data
+- describe relationship between finger temperature and core body temperature
+- describe collecting PPG data
+- describe processing PPG data
+- describe extracting HRV features
+- describe normalizing physiological data
+- describe extracting features from physiological data
+- describe calculating scores (e.g., Sleep Score, Readiness Score)
+- describe displaying scores and physiological data
+- describe inputting physiological data into machine learning classifier
+- describe training machine learning classifier
+- describe classifying physiological data into sleep stages
+- describe displaying classified sleep stages
+- describe identifying features associated with physiological data
+- describe generating recommendations for user
+- describe training machine learning classifier based on user inputs
+- describe training individualized machine learning models
+- describe continually training machine learning classifier
+- describe machine learning classifier
+- introduce physiological data features
+- motivate circadian rhythm adjustment model
+- explain circadian rhythm adjustment model components
+- describe circadian drive component
+- describe homeostatic sleep pressure component
+- describe elapsed sleep duration component
+- illustrate circadian rhythm adjustment model
+- explain adjustment of circadian drive component
+- explain adjustment of homeostatic sleep pressure component
+- explain adjustment of elapsed sleep duration component
+- describe use of physiological data in circadian rhythm adjustment model
+- describe use of machine learning classifier with circadian rhythm adjustment model
+- explain importance of circadian rhythm adjustment model in sleep stage classification
+- describe performance of machine learning classifier with circadian rhythm adjustment model
+- compare performance of machine learning classifier with and without circadian rhythm adjustment model
+- explain advantages of using circadian rhythm adjustment model
+- describe limitations of machine learning classifier without circadian rhythm adjustment model
+- explain importance of combining multiple data streams in sleep stage classification
+- summarize performance of system 200 in sleep stage classification
+- describe sleep stage detection using accelerometer-only data
+- motivate use of physiological data for sleep stage detection
+- describe benefits of adding peripheral finger temperature measurement
+- describe benefits of adding HRV features for sleep stage detection
+- describe patterns of sleep stages across the night
+- describe modeling changes in sleep stage distribution across the night
+- introduce block diagram of device supporting sleep staging algorithms
+- describe input module of device
+- describe output module of device
+- describe wearable application components
+- describe data acquisition component of wearable application
+- describe machine learning classifier component of wearable application
+- describe user interface component of wearable application
+- describe data normalization component of wearable application
+- describe user evaluation component of wearable application
+- describe data transmission component of wearable application
+- introduce block diagram of wearable application
+- describe system including device supporting sleep staging algorithms
+- describe I/O controller of device
+- describe user interface component and database of device
+- introduce sleep staging algorithms
+- describe benefits of improved sleep staging
+- illustrate method 1000 for sleep staging
+- receive physiological data from wearable ring device
+- input physiological data into machine learning classifier
+- classify physiological data into sleep stages
+- display sleep stages on user device GUI
+- illustrate method 1100 for sleep staging
+- receive physiological data from wearable ring device
+- input physiological data into machine learning classifier
+- classify physiological data into sleep stages
+- classify sleep intervals within time interval
+- classify each sleep interval into awake, light, REM, or deep sleep
+- display sleep stages on user device GUI
+- illustrate method 1200 for sleep staging
+- receive physiological data from wearable ring device
+- perform normalization procedures on physiological data
+- input normalized physiological data into machine learning classifier
+- classify physiological data into sleep stages
+- display sleep stages on user device GUI
+- illustrate method 1300 for sleep staging
+- receive physiological data from wearable ring device
+- input physiological data into machine learning classifier
+- classify physiological data into sleep stages
+- receive additional physiological data from wearable ring device
+- classify additional physiological data into sleep stages
+- display sleep stages on user device GUI
+- describe apparatus and non-transitory computer-readable medium for sleep staging
+

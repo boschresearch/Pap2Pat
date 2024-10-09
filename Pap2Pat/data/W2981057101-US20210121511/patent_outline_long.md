@@ -1,0 +1,175 @@
+# DESCRIPTION
+
+## SUMMARY
+
+- introduce pharmaceutical composition
+- describe method of treating dysbiosis
+- specify embodiments of VLPs
+- describe second pharmaceutical composition
+- specify embodiments of epithelial tissue
+- describe incorporation into medical device
+- describe method of preparing gut environment
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- introduce microbiomes
+- describe dysbiosis
+- explain gut microbiome
+- discuss disease associations
+- describe mutualism and dysbiosis
+- list environmental factors
+- describe characteristics of dysbiosis
+- introduce dysbiosis recovery system
+- describe VLPs
+- explain VLP regulation
+- describe VLP transplantation
+- illustrate dysbiosis recovery system
+- describe mouse model
+- characterize dysbiosis in mouse model
+- describe VLP treatment
+- explain VLP isolation
+- define diverse VLP population
+- list alternative hosts
+- define host in health
+- define homeostasis
+- list microbiome locations
+- describe industrial applications
+- describe medical device applications
+- list environmental influences
+- describe prebiotics
+- describe probiotics
+- list exemplary prebiotics
+- list exemplary probiotics
+- describe phage therapy
+- describe immunoglobulin therapy
+- describe interferon-gamma therapy
+- describe growth factor therapy
+- list antibiotics
+- list pharmaceuticals and non-pharmaceutical pharmacological agents
+- list nutraceuticals and nutritional supplements
+- list biofilm modifiers and emulsifiers
+- list autophagy regulators
+- list phage-encoded proteins and genes
+- list fecal microbiota transplants (FMTs) or other microbiota transplants
+- list alternative physical or psychological disorders
+- list alternative dietary treatments
+- describe consequences of perturbed microbiome during dysbiosis
+- describe characterization of dysbiosis
+- describe detection of dysbiosis by assessing diversity of gut bacterial community
+- describe expansion of certain bacterial members during dysbiosis
+- describe diagnosis of dysbiosis by examining Firmicutes-Bacteroidetes ratio
+- describe increased Firmicutes-Bacteroidetes ratio as marker of dysbiosis
+- describe other forms of dysbiosis associated with decreased Firmicutes-Bacteroidetes ratio
+- describe measurement of Firmicutes-Bacteroidetes ratio against suitable control
+- describe suitable control as Firmicutes-Bacteroidetes ratio observed in subject when not experiencing dysbiosis
+- describe suitable control as Firmicutes-Bacteroidetes ratio from individual or group not experiencing dysbiosis
+- describe suitable control as art-recognized standard
+- describe FIG. 2, HFD-PBS
+- describe dysbiosis resulting from HFD or Western diet
+- describe decreased diversity during dysbiosis
+- describe certain bacterial members expanding during dysbiosis
+- describe phylum Firmicutes expanding relative to phylum Bacteroidetes during dysbiosis
+- describe diagnosis of dysbiosis by examining Firmicutes-Bacteroidetes ratio
+- describe increased Firmicutes-Bacteroidetes ratio as marker of dysbiosis
+- describe other forms of dysbiosis associated with decreased Firmicutes-Bacteroidetes ratio
+- describe measurement of Firmicutes-Bacteroidetes ratio against suitable control
+- define dysbiosis
+- characterize SIBO
+- motivate treatment of SIBO
+- describe beta diversity analysis
+- illustrate altered beta diversity
+- discuss metagenome, transcriptome, and metabolome
+- describe methods for detecting dysbiosis
+- list characteristics of dysbiosis
+- describe impaired epithelial function
+- assess markers of impaired epithelial function
+- describe dysbiosis-related medical conditions
+- list clinical signs and symptoms
+- introduce existing treatments for dysbiosis
+- motivate VLP transplantation
+- describe VLP population
+- discuss advantages of VLP transplantation
+- describe regulation of bacterial population density
+- discuss gene transfer among bacterial members
+- describe maintenance of intestinal homeostasis
+- discuss promotion of mucosal immunity
+- introduce phage therapy
+- introduce microbiome dysbiosis
+- describe VLP transplantation therapy
+- explain VLP composition preparation
+- detail VLP enrichment process
+- describe VLP administration in mouse model
+- present results of VLP treatment on dysbiosis
+- show reduction of Firmicutes-Bacteroidetes ratio
+- show reduction of bacterial overgrowth
+- show increase of Muc2 expression
+- describe beta diversity analysis
+- discuss VLP-mediated transfer of microbiome composition
+- contrast VLP therapy with conventional phage therapy
+- explain "treat" and variations thereof
+- define "therapeutic" and "prophylactic" treatments
+- describe subject "at risk" of having a condition
+- discuss prophylactic treatment initiation
+- explain administration of VLP preparation
+- define "effective amount" of VLP preparation
+- describe formulation with pharmaceutically acceptable carrier
+- discuss routes of administration
+- describe pharmaceutical composition forms
+- discuss additives to formulation
+- describe treatment of dysbiosis in epithelial tissue
+- discuss unit dosage form preparation
+- describe association with pharmaceutically acceptable carrier
+- discuss shaping of product into desired formulation
+- explain variation of dose depending on factors
+- discuss concentration of VLP in formulation
+- describe determination of effective amount
+- discuss species, age, weight, and physical condition factors
+- discuss method of administration factor
+- describe VLP preparation for different routes
+- discuss VLP preparation for different epithelial tissues
+- conclude VLP preparation for treating dysbiosis
+- describe VLP preparation administration
+- specify dose range
+- describe frequency of administration
+- describe single one-off dose
+- describe multiple doses
+- describe interval between doses
+- describe administration after nutrient deprivation
+- define sustained period of nutrient deprivation
+- describe effects of nutrient deprivation on gut bacteria
+- describe administration period
+- describe single one-off dose
+- describe multiple doses
+- describe VLPs encoding genes
+- describe collecting VLPs from environmental samples
+- describe constructing artificial VLP communities
+- describe VLP preparations from various hosts and environments
+- describe administering additional compositions for treating dysbiosis
+- describe pre-treating donors with compositions
+- describe retreatment to reduce recurrence of dysbiosis
+- describe fecal microbiota transplants
+- describe improving FMT efficacy with VLPs
+- describe VLPs reducing intestinal bacterial density
+- describe VLPs improving FMT in unperturbed gut microbiome
+- describe general terms and definitions
+
+### EXAMPLES
+
+- isolate VLPs from mouse feces
+- centrifuge and filter samples
+- concentrate VLPs using centrifugal filter
+- confirm VLP presence using fluorescent microscopy
+- visualize VLPs using electron microscopy
+- capture transmission electron microscopy images
+- stain samples with uranyl acetate
+- examine samples using Hitachi HT7700 TEM
+- capture images with AMT XR-81 CCD camera
+- describe mouse model for dysbiosis
+- feed mice high fat diet or standard diet
+- administer enriched VLPs or PBS control
+- analyze DNA from ileum of small intestine
+- quantify bacterial population using qPCR
+- quantify Muc2 protein expression
+- sequence 16s rRNA gene using MiSeq platform
+- analyze sequencing data using QIIME2 software
+

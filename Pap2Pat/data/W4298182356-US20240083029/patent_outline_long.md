@@ -1,0 +1,170 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to robotic operation
+
+## BACKGROUND
+
+- introduce robotic devices
+- describe learning from demonstration
+- explain dynamic movement primitives
+- highlight limitations of DMP-based techniques
+
+## SUMMARY
+
+- introduce objective of embodiments
+- describe constrained control of robots
+- specify robotic manipulators
+- incorporate constraints during task execution
+- provide constrained control in presence of constraints
+- understand skills demonstrated offline
+- capture skills using forcing function
+- adapt forcing function for different environments
+- find minimum correction to weights
+- make constraints internal part of skill
+- simplify adaptation
+- consider different types of constraints
+- reuse legacy methods
+- represent correction as additional parameters
+- optimize using off-the-shelf solver
+
+## DETAILED DESCRIPTION
+
+- introduce patent disclosure
+- explain purpose of detailed description
+- describe block diagram form
+- define terminology
+- explain phraseology and terminology
+- introduce transformation of DMP-based techniques
+- describe DMP-based techniques
+- explain forcing function
+- describe adaptation of forcing function
+- introduce objective of present disclosure
+- describe correction to predefined weights
+- explain difference from learning new weights
+- describe finding correction
+- introduce CDMP
+- describe FIG. 1A
+- introduce robot 102
+- describe tasks performed by robot 102
+- explain trajectory of motion
+- describe examples of tasks
+- introduce task description
+- describe constraints for robot 102
+- explain objective for robot 102
+- describe sensors of robot 102
+- introduce control inputs
+- describe FIG. 1B
+- introduce controller 101
+- describe components of controller 101
+- introduce DMPs 104
+- describe learning phase of robot 102
+- explain DMPs 104
+- describe FIG. 2A
+- introduce dynamical systems
+- describe forcing function 110
+- introduce basis functions 112
+- describe mathematical formulation of basis function 112
+- introduce DMP transformation
+- define perturbation to original forcing function
+- illustrate block diagram of transformation
+- define operational constraints
+- introduce collision avoidance constraint
+- introduce self-collision avoidance constraint
+- introduce joint limit constraint
+- transform DMPs to CDMPs using perturbation function
+- illustrate block diagram of transformation using perturbation function
+- represent perturbation function as barrier function
+- formulate non-linear optimization problem
+- solve non-linear optimization problem
+- determine value of barrier function
+- determine perturbation function
+- generate control inputs for robot
+- illustrate flow diagram of method for execution of task
+- obtain set of DMPs associated with task
+- transform DMPs to CDMPs
+- formulate and solve non-linear optimization problem
+- determine solution of non-linear optimization problem
+- generate control inputs for robot
+- illustrate flow diagram of method for determining solution of non-linear optimization problem
+- determine feasible set of values for barrier function
+- determine value of perturbation function
+- generate control inputs for robot
+- explain method using exemplar task of trajectory generation
+- obtain original trajectory using sensor
+- generate DMPs corresponding to movements performed by end-effector
+- adapt forcing function during actual operation
+- define ZBF
+- derive inequality for ZBF
+- introduce dynamical system
+- prove forward invariance
+- motivate collision avoidance
+- define signed distance function
+- compute SDF for primitive shapes
+- compute smooth lower-bound SDF
+- formulate optimization problem
+- introduce CDMP
+- describe DMP dynamical system
+- formulate nonlinear optimization problem
+- optimize perturbations of weights
+- solve nonlinear optimization problem
+- generate new trajectory
+- formulate nonlinear dynamic constrained optimization problem
+- solve optimization problem using IPOPT or SNOPT
+- add deviation constraint to optimization problem
+- describe CDMPs for motion control
+- introduce controller 101 for robot 102
+- describe computer system 502 for implementing controller 101
+- detail processor 504 of computer system 502
+- describe I/O interface 506 and devices 508, 510, 512
+- detail communication network 514 and devices 518, 520, 522
+- describe storage interface 524 and memory 530
+- detail operating system 532 and user interface application 534
+- describe web browser 536 and mail server 538, mail client 540
+- detail user/application data 542
+- describe combination of computer system 502 and controller 101
+- illustrate robot 602 in process of learning from demonstration
+- describe human operator 600 performing demonstration
+- detail teaching pendant 601 and remote-control device
+- describe controller 602a and memory storing DMPs
+- illustrate robot 602 in different environment with obstacle 608
+- describe transformation of DMPs to CDMPs
+- detail optimization of predefined weights
+- describe generation of new trajectory 605a
+- formulate non-linear dynamic constrained optimization problem
+- solve optimization problem using radial basis function
+- determine new trajectory 605a satisfying operational constraints
+- describe correction terms modifying weights of forcing function
+- detail new feasible trajectory allowing safe navigation
+- describe change of environment and object 604 being manipulated
+- detail physical constraints on structure of robot 602
+- describe solution of non-linear optimization problem
+- determine new trajectory 605a for placement of object 604
+- generate control inputs for gripper 603
+- place object 604 in immovable object 606
+- describe adaptation to different environments
+- detail transformation of DMPs to CDMPs without extra learning
+- describe re-configuration of weights of basis functions
+- solve non-linear optimization problem using off-the-shelf solvers
+- achieve safety through enforcement of constraints
+- describe distribution of functionality between processors
+- detail computer-readable storage medium
+- describe computer or controller implemented processes
+- detail computer program code containing instructions
+- describe computer program code or signal
+- implement on general-purpose microprocessor
+- configure microprocessor to create specific logic circuits
+- describe conventional or general-purpose computer system
+- detail personal computer or server computer
+- describe distribution of functionality between functional units
+- detail robot simulator and 2D or 3D visualization
+- describe changes that may be made in function and arrangement
+- detail specific details that may be omitted
+- describe processes as sequential or concurrent
+- detail flowchart, flow diagram, data flow diagram, structure diagram
+- describe termination of process and additional steps
+- detail manual or automatic implementations
+- describe machines, hardware, software, firmware, middleware
+- detail coding as software executable on one or more processors
+

@@ -1,0 +1,208 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce stem cell technology
+- motivate industrialization of stem-cell based therapies
+- describe limitations of traditional 2D culture
+- introduce hiPSCs as key source material
+- describe importance of microenvironment in iPSC maintenance
+- motivate need for scalable cell production platforms
+- describe advantages of microcarrier-based 3D culture systems
+- summarize benefits of cGMP compliant, commercially viable process
+- outline desired features of end-to-end platform and process
+
+## SUMMARY
+
+- introduce process for manufacturing pluripotent stem cells
+- describe inoculation and incubation steps
+- outline concentrating and cryopreserving steps
+- describe optional aspects of process
+- summarize features of microcarriers and harvesting step
+- outline additional aspects of concentrating and cryopreserving steps
+
+## DEFINITIONS AND ABBREVIATIONS
+
+- define terms "about," "approximately," and "generally"
+- define term "xeno-free" and list abbreviations
+
+## DETAILED DESCRIPTION
+
+- introduce hPSC expansion platform
+- describe end-to-end process
+- highlight advantages of platform
+- introduce FIG. 1A
+- describe cryopreserved cells
+- detail inoculation of 2D seed train flask
+- specify seed density
+- introduce kinase inhibitor
+- describe nutrient media
+- list components of nutrient media
+- specify confluence of cells
+- describe passaging to 2D seed train cell stack
+- detail passaging solution
+- specify seeding density
+- describe cell maintenance
+- introduce bioreactor
+- describe bioreactor components
+- specify bioreactor volume
+- describe bioreactor materials
+- introduce FIG. 1B
+- describe impellers and sparger
+- detail gas supply
+- introduce probes for measurement
+- describe rotatable shaft and motor
+- specify impeller materials
+- describe ports and supply lines
+- introduce load cell
+- describe bottom port and effluent
+- detail top ports and feeds
+- describe sidewall ports
+- introduce monitoring and control system
+- describe bioreactor system
+- measure parameters during cell culture growth
+- analyze cell culture using NOVA Bioprofile 400 analyzer
+- feed data to controller
+- forecast lactate concentration using control model
+- provide early warning system for lactate concentration
+- predict lactate concentration trajectory
+- suggest corrective actions for lactate concentration
+- determine nutrient feed changes
+- configure controller to operate in open or closed loop system
+- inoculate bioreactor with cells from 2D seed train cell stack
+- add microcarriers to bioreactor
+- introduce microcarriers with nutrient medium
+- add microcarriers after initial nutrient medium
+- promote cell growth using microcarriers
+- provide surface area for cell culture growth
+- suspend microcarriers in nutrient medium
+- optimize growing conditions in bioreactor
+- make microcarriers from various materials
+- specify microcarrier shape and size
+- coat microcarriers with nutrient medium
+- improve cell growth using coated microcarriers
+- inoculate bioreactor with cells at seeding density
+- specify seeding density range
+- achieve high fold expansion at low seeding density
+- reduce incubation time at low seeding density
+- agitate bioreactor contents
+- specify agitation speed range
+- increase agitation speed based on cell density
+- use stepped agitation based on cell density
+- harvest expanded cells
+- separate cells from microcarriers using passaging solution
+- concentrate cells using centrifugation
+- optimize flow rate for fluidized bed formation
+- retain cells in fluidized bed
+- fill and preserve cells by cryopreservation
+- eliminate passaging during incubation time
+- introduce alternative cells for expansion
+- discuss iPSCs as intermediates
+- describe materials and methods
+- detail L7 culture system
+- describe human iPSC lines
+- generate iPSC lines
+- culture hiPSCs in 2D
+- passage and harvest hiPSCs
+- coat microcarriers
+- culture hiPSCs in spinner flask
+- inoculate spinner flask
+- monitor hiPSC growth
+- expand hiPSCs in stirred tank bioreactors
+- set up bioreactor vessel
+- inoculate bioreactor
+- monitor bioreactor parameters
+- harvest hiPSCs from bioreactor
+- detach hiPSCs from microcarriers
+- filter and collect hiPSCs
+- cryopreserve harvested cells
+- optimize flow rate for fluidized bed formation
+- test flow rates
+- collect concentrated cells
+- describe downstream processing
+- detail hPSC concentration post full harvest
+- explain cryopreservation
+- describe immunofluorescence staining
+- detail flow cytometry
+- describe alkaline phosphatase staining
+- detail karyotyping
+- describe embryoid body formation
+- detail definitive endoderm differentiation
+- describe neural stem cell differentiation
+- detail neural stem cell culture
+- describe cardiac differentiation
+- detail cardiac differentiation protocol
+- describe iPSC-derived cardiomyocyte dissociation
+- detail iPSC-derived cardiomyocyte culture
+- describe iPSC-derived cardiomyocyte staining
+- detail germ-layer specific marker detection
+- describe hPSC-associated marker detection
+- detail hPSC characterization
+
+## FIGURES AND EXAMPLES
+
+- show fold expansion of hiPSCs
+- describe hPSC culture system
+- discuss RTiPSC4i and RTiPSC3B cell growth
+- describe L7™ TFO2 hPSC medium
+- discuss maintenance of hESC and hiPSC lines
+- describe 2D cell culture platforms
+- discuss inoculation of RTiPSC3B and RTiPSC4i cells
+- show initial decrease in cell number
+- show increase in cell number
+- discuss 10-fold expansion
+- show larger diameter microcarriers support expansion
+- compare cell growth with small and large MCs
+- discuss lower inoculation density
+- show comparable cell densities
+- compare expansion fold results
+- discuss higher seeding density
+- discuss lower seeding density inoculum
+- show cell growth and fold expansion
+- discuss coating microcarriers in nutrient matrix
+- show cell expansion with coated MCs
+- show minimal expansion with uncoated MCs
+- discuss scalability to larger bioreactors
+- show 3D expansion system in 1 L and 3 L bioreactors
+- discuss cell counts and expansion
+- show average 93-fold expansion
+- discuss cell viability and metabolites
+- show decrease in glucose levels
+- show increase in lactate production
+- discuss pH and dissolved oxygen levels
+- discuss characterization of cells harvested from bioreactor
+- show morphology and expression of hPSC-associated markers
+- discuss karyotype and pluripotency
+- show potential of expanded hiPSCs to differentiate
+- discuss optimization of flow rate during fluidized bed formation
+- discuss quality assessments of expanded hiPSCs post kSep
+- introduce cryopreservation of cell-based therapeutic products
+- motivate maintaining viability and performance of cryopreserved cells
+- describe cryopreservation of hiPSCs in various cell densities
+- show viability and vitality of thawed cells
+- demonstrate feasibility of cryopreserving hiPSCs to high cell density
+- motivate eliminating 2D seed train
+- describe inoculation of cryopreserved cells into suspension culture
+- show growth and expansion graphs of cryopreserved and fresh single cell inoculum
+- demonstrate scalability of findings in 3 L bioreactor
+- show quality of expanded cells
+- demonstrate directed differentiation of expanded cells
+- motivate replacing 2D seed train with 3D seed train
+- describe inoculation of cryopreserved cells into 3 L bioreactor
+- show cell density and fold expansion of cryopreserved cells
+- demonstrate quality of expanded cells
+- motivate using 3D seed train for commercial scale manufacturing
+- describe re-inoculation of cell-MC clusters from spinner flask to 3 L bioreactor
+- show cell density and fold expansion of re-inoculated cells
+- demonstrate quality of expanded cells
+- motivate using 3D seed train for large-scale manufacturing
+- describe end-to-end platform for hiPSC culture system
+- motivate optimizing cell inoculum density
+- describe scalability of process in 1 L or 3 L bioreactor vessels
+- show cell expansion and quality in bioreactor cultures
+- motivate using closed and automated concentration step
+- describe harvesting and concentrating cells using kSep
+- show recovery of high-quality hiPSCs
+- motivate maintaining viability of cryopreserved cells
+- summarize key elements in large-scale manufacturing of cell-based therapies
+

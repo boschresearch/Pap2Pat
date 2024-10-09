@@ -1,0 +1,204 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce decision support systems
+- motivate quantum machine learning models
+- limitations of quantum machine learning models
+
+## SUMMARY
+
+- introduce ensemble generation
+- describe system embodiment
+- advantage of system embodiment
+- describe computer-implemented method
+- advantage of computer-implemented method
+- describe computer program product
+- advantage of computer program product
+- describe training and performance metric
+- advantage of modified plurality of quantum kernels
+
+## DETAILED DESCRIPTION
+
+- introduce patent application structure
+- define scope of embodiments
+- describe problems with other feature space discovery implementations
+- introduce boosting procedure to generate feature space
+- define boosting procedure
+- describe advantages of boosting procedure
+- introduce ensemble of quantum kernel-based learners
+- describe application of ensemble to machine learning tasks
+- introduce computer processing systems, methods, apparatus, and program products
+- describe technical improvements over conventional quantum machine learning models
+- illustrate block diagram of system 100
+- describe server 102 components
+- introduce ensemble component 110
+- describe communications component 112
+- introduce memory 116
+- describe system bus 118
+- introduce processor 120
+- describe one or more networks 104
+- introduce input devices 106
+- describe quantum computers 108
+- introduce quantum data plane
+- describe control processor plane
+- introduce control and measurement plane
+- describe qubit technologies
+- introduce trapped ion qubits
+- describe superconducting qubits
+- introduce photonic qubits, quantum dot qubits, gate-based neutral atom qubits, semiconductor qubits
+- describe control processor plane functions
+- introduce control and measurement plane functions
+- describe quantum kernel-based learners 122
+- introduce quantum algorithms for kernel-based machine learning
+- describe QSVM models and quantum NN models
+- introduce machine learning tasks
+- describe supervised and unsupervised learning protocols
+- introduce ensemble component 110 functions
+- describe one or more boosting procedures
+- introduce selection of top performing quantum kernel
+- describe weighting and combining quantum kernel-based learners
+- introduce modification of quantum kernel search
+- describe control of quantum kernel-based learners
+- introduce input data processing
+- describe feature mapping and quantum kernel calculation
+- introduce input data entry
+- describe input data processing for machine learning tasks
+- introduce splitting of input data into training and testing datasets
+- describe processing of input data for machine learning tasks
+- introduce definition of boosting procedure parameters
+- describe storage of training datasets, testing datasets, and boosting procedure parameters
+- illustrate diagram of system 100 with training component 202 and testing component 204
+- describe training component 202 functions
+- introduce testing component 204 functions
+- describe training of quantum kernel-based learners
+- introduce calculation of kernel matrix
+- describe permutations of feature maps and Pauli rotation factors
+- introduce boosting procedure
+- test performance of quantum kernel-based learners
+- generate performance metric
+- select quantum kernel and associate learner
+- illustrate feature maps
+- describe qubit connections and quantum gates
+- modify quantum kernel search
+- analyze performance metrics
+- select top performing quantum kernel-based learner
+- exclude selected quantum kernel
+- adjust weight values of samples
+- assign weight value to learner
+- combine top performing learners
+- illustrate weight value determinations
+- train learners on samples
+- test learners on training dataset
+- generate performance metrics
+- adjust sample weights
+- assign weight value to learner
+- exclude selected learner
+- repeat iterations
+- terminate boosting procedure
+- combine top performing learners
+- assign weight value to learner
+- illustrate algorithm
+- fit classifiers
+- choose best classifier
+- compute errors
+- compute learner weights
+- adjust sample weights
+- sample training dataset
+- combine learners
+- implement quantum machine learning model
+- generate reports
+- detect overfitting
+- combine with other models
+- receive input data and feature maps
+- train quantum kernel-based learners
+- generate performance metrics
+- select quantum kernel-based learner
+- repeat iterations
+- terminate boosting procedure
+- combine top performing learners
+- assign weight value to learner
+- implement quantum machine learning model
+- generate reports
+- detect overfitting
+- combine with other models
+- describe system components
+- describe training component
+- describe testing component
+- describe modification component
+- describe error weight component
+- describe learner weight component
+- describe ensemble component
+- describe computer-implemented method 900
+- modify quantum kernels
+- adjust learner weight
+- adjust error weight
+- determine termination event
+- perform boosting procedure
+- generate ensemble of quantum kernel-based learners
+- employ ensemble in quantum machine learning models
+- introduce cloud computing
+- define cloud computing characteristics
+- describe on-demand self-service
+- describe broad network access
+- describe resource pooling
+- describe rapid elasticity
+- describe measured service
+- introduce service models
+- describe software as a service
+- describe platform as a service
+- describe infrastructure as a service
+- introduce deployment models
+- describe private cloud
+- describe community cloud
+- describe public cloud
+- describe hybrid cloud
+- describe cloud computing environment
+- illustrate cloud computing environment
+- describe functional abstraction layers
+- describe hardware and software layer
+- describe workloads layer
+- describe computer readable program instructions
+- describe network for downloading instructions
+- describe types of instructions
+- describe execution of instructions
+- describe flowchart and block diagrams
+- describe blocks as modules or segments
+- describe alternative implementations
+- describe computing environment
+- describe program modules
+- describe distributed computing environments
+- describe memory and memory units
+- describe computer-readable storage media
+- describe machine-readable storage media
+- describe communications media
+- describe tangible and non-transitory media
+- describe accessing storage media
+- describe modulated data signal
+- describe example environment
+- describe computer components
+- describe processing unit
+- describe system memory
+- describe system bus
+- describe ROM and RAM
+- describe BIOS
+- describe internal hard disk drive
+- describe external storage devices
+- describe optical disk drive
+- describe interfaces for storage devices
+- describe drives and storage media
+- describe program modules and data
+- describe operating system
+- describe application programs
+- describe emulation technologies
+- describe hypervisor
+- describe virtual machine
+- describe runtime environments
+- describe containers
+- describe security module
+- describe input devices
+- describe display device
+- describe networked environment
+- describe remote computer
+- describe cloud storage systems
+

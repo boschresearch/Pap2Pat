@@ -1,0 +1,123 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- relate to entangled photon pair sources
+
+## BRIEF SUMMARY
+
+- introduce device embodiment
+- describe quantum system configuration
+- introduce method embodiment
+- describe method steps
+
+## DETAILED DESCRIPTION
+
+- introduce scalable quantum systems
+- describe deterministic entangled photon pair sources
+- motivate defect-based entangled photon pair sources
+- describe on-demand, on-chip, solid-state, and chemically stable entanglement generator
+- introduce devices with two electric-dipole coupled defects
+- describe electronic energy structure of defects
+- explain symmetric superposition of doubly excited product states
+- describe entangled photon pair emission
+- discuss solid-state material options
+- introduce pumping schemes
+- describe methods to enhance fidelity and emission efficiency
+- optimize energy level differences and transition dipole moments
+- arrange electric dipole-coupled defect pairs with other defects
+- integrate on chip with quantum memories, emitters, sensors, and transducers
+- create and select defects
+- excite defects into symmetric superposition of doubly excited product states
+- use stochastic methods to create defects
+- use optical or electron-based imaging techniques to find defects
+- describe deterministic methods of creating defects
+- introduce semiconductor quantum dots as alternative approaches
+- describe biexciton decay cascade
+- discuss challenges of semiconductor quantum dots
+- refer to FIG. 1, a schematic view of an exemplary device
+- describe light source for preparing symmetric doubly excited state
+- describe dipole-coupled defect pair
+- describe binner
+- refer to FIG. 2, a schematic view of an exemplary light source
+- describe coherent, x-polarized source and coherent, y-polarized source
+- prepare dipole-coupled defect pair into symmetric doubly excited state
+- refer to FIG. 3, a schematic view of an exemplary solid state crystal lattice
+- describe defects in lattice
+- discuss pumping schemes
+- describe methods to enhance fidelity and emission efficiency
+- arrange electric dipole-coupled defect pairs with other defects
+- create and select defects
+- excite defects into symmetric superposition of doubly excited product states
+- use stochastic methods to create defects
+- use optical or electron-based imaging techniques to find defects
+- describe deterministic methods of creating defects
+- refer to FIG. 4, a schematic view of an exemplary binner
+- describe binning by polarization and frequency
+- discuss applications in quantum computing and quantum repeaters
+- describe operating temperatures and limitations
+- summarize the present disclosure
+- define dipole interaction energy
+- derive dipole interaction energy equation
+- describe assumptions for emitter states
+- introduce Hamiltonian for emitter system
+- diagonalize Hamiltonian to produce eigenstates
+- describe energy diagram and dipole-allowed transitions
+- calculate emission spectra into free space
+- introduce total Hamiltonian for coupled emitter-photon system
+- describe photonic Hamiltonian
+- describe electron-photon coupling Hamiltonian
+- introduce ansatz for electron-photon wave function
+- solve time-dependent Schrödinger equation
+- describe final state of electron-photon system
+- calculate spectra of emitted polarization-entangled photon pair
+- describe cross-correlation function
+- introduce metrics to quantify entanglement
+- define entanglement entropy
+- perform Schmidt decomposition
+- define Bell state efficiency and fidelity
+- describe optimization of entanglement
+- illustrate entanglement optimization
+- describe entanglement entropy
+- motivate Bell pair observation
+- analyze Schmidt coefficients
+- optimize entanglement measures
+- describe pumping scheme
+- derive driving Hamiltonian
+- apply rotating-wave approximation
+- derive effective Hamiltonian
+- describe Rabi oscillations
+- provide alternative pumping scheme
+- introduce deterministic entangled photon pair source
+- describe composite emitter system
+- discuss defect emitters
+- highlight applicability in quantum technologies
+- discuss challenges in realizing defect-based quantum emitters
+- introduce dipole operator
+- derive Weisskopf-Wigner approximation
+- write electron-photon wave function
+- derive interaction Hamiltonian
+- plug state vector into Schrödinger equation
+- derive differential equations for coefficients
+- discuss significance of results
+- conclude deterministic entangled photon pair source
+- present differential equations
+- solve differential equations in Weisskopf-Wigner approximation
+- integrate equation 31
+- obtain analogous equation for cjy
+- insert equations into equation 30
+- apply Markov approximation
+- decompose integral
+- extend lower integration limit to -∞
+- neglect imaginary part and principal part
+- retain delta function
+- obtain result for equation 38
+- obtain similar result for equation 39
+- neglect remaining terms
+- obtain final result for equation 41
+- derive remaining differential equations
+- solve system of equations with initial conditions
+- obtain steady-state solution
+- discuss robust entanglement
+- discuss dephasing
+

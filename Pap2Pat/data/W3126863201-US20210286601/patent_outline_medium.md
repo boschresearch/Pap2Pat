@@ -1,0 +1,151 @@
+# DESCRIPTION
+
+## TECHNICAL FIELD
+
+- relate to unified computing on digital and quantum processors
+
+## BACKGROUND
+
+- describe limitations of classical and quantum computations
+- motivate need for unified computing approaches
+
+## SUMMARY
+
+- introduce quantum compiler for unified computing language
+- motivate basis for approach
+- describe computer system for compiling program
+- introduce unified level module
+- describe conversion to high level quantum language
+- introduce high level module
+- describe conversion to low level quantum language
+- introduce low level module
+- describe conversion to gate level operations
+- introduce gate level module
+- describe optional error mitigation procedures
+- describe optional gate synthesis
+- describe variations in module structure
+- introduce digital computer system for compiling program
+- describe unified level module
+- describe high level module
+- describe low level module
+- describe gate level module
+- describe code refactoring
+- describe quantum data structures
+- describe implementation of data types
+- describe conditional and subroutine support
+
+## DETAILED DESCRIPTION
+
+- introduce compiler system for quantum computers
+- describe compiler functionality
+- explain code refactoring and conversion process
+- illustrate computer system topology
+- describe compiler computer system components
+- explain memory storage and data sharing
+- motivate need for expanding quantum algorithm users
+- introduce novel approach for compiling unified language
+- provide background on programming languages for digital computers
+- describe classical computational languages
+- illustrate compiler procedures for accomplishing quantum algorithm techniques
+- explain abstract representation and quantum algorithm construction
+- describe circuit representation and native circuit conversion
+- outline outputting native circuit operations for target quantum computer
+- introduce compiler structure
+- describe classical programming source code
+- introduce quantum languages
+- describe gate level module
+- describe low level module
+- describe high level module
+- describe unified level module
+- illustrate compiler structure
+- describe characterization and compilation
+- describe hardware and characterization of quantum computer
+- describe noise and error in quantum processors
+- describe characterization of gates
+- describe calibration of quantum computer
+- illustrate calibration of quantum computer
+- describe mitigation of stray couplings
+- illustrate mitigation of stray couplings
+- describe wait command
+- describe error mitigation techniques
+- illustrate error mitigation techniques
+- describe updating frame through compiler
+- introduce quantum computer architecture
+- describe qubit calibration techniques
+- illustrate frame update approach
+- describe spin-echo approach
+- discuss limitations of spin-echo approach
+- introduce decoupling strategies
+- describe pairwise tomography
+- discuss non-Markovian dephasing
+- illustrate decoupling pulse sequence
+- discuss limitations of decoupling strategies
+- introduce hydrogen programming language
+- describe gate level module
+- illustrate hydrogen code structure
+- describe fault tolerance module
+- discuss gate synthesis from fault-tolerant gate set
+- describe fault tolerance gate set optimization
+- discuss circuit embedding
+- describe fault-tolerance encoding
+- illustrate example hydrogen code
+- describe parameterized gates
+- discuss gate set definition
+- illustrate gate synthesis for parameterized gate
+- illustrate gate synthesis for discrete variable quantum system
+- introduce quantum computer limitations
+- characterize target quantum computer
+- define quantum channel
+- describe imperfect operations
+- introduce goal of approximating "C"
+- process program representation
+- consider quality of 2-subsystem gates
+- reorder stages
+- convert between instruction sets
+- scan for opportunities to reduce instruction count
+- introduce helium language
+- support conditionals
+- support repetitions
+- support subroutines
+- support increment loops
+- support read out
+- optimize code within conditionals
+- convert helium code to quantum circuit fragments
+- scan for opportunities to reduce instruction count
+- introduce beryllium language
+- support functions and data structures
+- support breakable loops
+- support pointers
+- define quantum data structure
+- motivate use of quantum data structure
+- describe state vector representation
+- describe graph representation
+- describe intersect edge complementation
+- describe graph comparison
+- describe vertex comparison
+- describe automorphism testing
+- introduce carbon language
+- describe carbon language functionality
+- describe compiler workflow
+- describe complexity reduction approach
+- illustrate complexity conversion example
+- describe compiler 12
+- motivate quantum extremal value search
+- illustrate loop processing
+- describe sequential search
+- explain amplitude amplification-based computation
+- illustrate analytical solution
+- describe quadratic speedup
+- motivate optimization
+- describe loop processing stage
+- describe recursion processing stage
+- describe data structure processing stage
+- illustrate constructing quantum algorithms
+- describe analyzing loops, recursion, and data types
+- motivate compiling code into quantum code
+- describe determining architecture of target quantum system
+- describe handling qRAM
+- describe synthesizing qRAM
+- describe compiler 12 communication
+- describe different languages for each level of modules
+

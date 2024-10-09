@@ -1,0 +1,193 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce labor management problem
+- describe limitations of current methods
+- discuss Friedman curve
+- introduce Philpott and Castle's work
+- describe WHO partogram
+- discuss limitations of WHO partogram
+- introduce Zhang et al.'s work
+- discuss Rosenbloom et al.'s study
+- discuss LaPS trial
+- conclude need for new approach
+
+## SUMMARY
+
+- introduce system for predicting labor outcomes
+- describe feature vector generation
+- describe machine learning model training
+- describe risk prediction
+- describe output presentation
+- describe gradient boosting machine model
+- describe baseline model
+- describe dynamic variable inclusion
+- describe static variable inclusion
+- describe graph plotting
+- describe second feature vector generation
+- describe second machine learning model
+- describe updated risk prediction
+- describe updated graph plotting
+- describe method for predicting labor outcomes
+- describe generating feature vector
+- describe providing feature vector to model
+- describe receiving output
+- describe presenting information to user
+
+## DETAILED DESCRIPTION
+
+- introduce intrapartum prediction mechanisms
+- establish individualized labor chart
+- facilitate patient counseling and decision making
+- reduce CD, maternal complications, and neonatal complications
+- train intrapartum models using machine learning techniques
+- predict probability of unfavorable labor outcome (LRS)
+- define unfavorable labor outcomes
+- generate LRS indicative of probability of unfavorable labor outcome
+- train baseline model using variables identified at admission
+- train intrapartum prediction models using dynamic variables
+- incorporate dynamic variables into prediction models
+- adjust dynamic confounders in data
+- use machine learning techniques to incorporate representative features
+- analyze patterns of changes in prenatal and intrapartum variables
+- train incremental gradient boosting machine (GBM)-based model
+- execute models by processor
+- use "Consortium on Safe Labor" database
+- generate series of prediction models incorporating static and dynamic predictors
+- make individualized predictions using baseline and labor characteristics
+- address challenges associated with creation of labor charts
+- determine relationships between inputs and outcomes in large databases
+- minimize statistical assumptions using machine learning
+- incorporate evolving risks during labor progression
+- determine cumulative likelihood of safe labor
+- promote intrapartum decision-making processes
+- describe system for intrapartum prediction of unfavorable labor outcomes
+- receive variables from data source
+- execute intrapartum risk prediction system
+- communicate information about variables to server
+- format variables for use in training machine learning model
+- generate predicted risk of one or more unfavorable outcomes
+- describe hardware components of computing device 110
+- describe display 204
+- describe inputs 206
+- describe communication systems 208
+- describe memory 210
+- describe processor 212
+- describe display 214
+- describe inputs 216
+- describe communication systems 218
+- describe memory 220
+- introduce system 300
+- describe baseline model 304
+- describe patient data at admission 302
+- describe output of baseline model 304
+- describe graph 350
+- describe 4 cm dilation model 314
+- describe patient data admission to 4 cm 312
+- describe output of 4 cm dilation model 314
+- describe aggregation of dynamic variables
+- describe additional models
+- describe use of new data
+- introduce flow for training and using mechanisms
+- describe labeled data
+- describe data from DASH database
+- describe removal of data associated with certain patients
+- describe characteristics of training data
+- describe demographic characteristics of population
+- describe clinical characteristics of population
+- describe medical complications of pregnancy
+- describe rate of prior CD
+- describe initiation of delivery by labor induction
+- describe detailed demographic and clinical characteristics
+- motivate intrapartum prediction of unfavorable labor outcomes
+- describe limitations of current methods
+- describe importance of accurate prediction
+- describe advantages of disclosed subject matter
+- describe use of machine learning models
+- describe use of dynamic variables
+- describe use of static variables
+- describe aggregation of data points
+- describe use of risk scores
+- describe presentation of risk scores to user
+- define unfavorable outcomes
+- describe data episodes
+- impute missing values
+- introduce gradient boosting machine models
+- train models using grid search
+- format patient data as vectors
+- code outcomes as binary values
+- group data into folds
+- perform cross-validation
+- conduct grid search for hyperparameters
+- generate first tree
+- generate subsequent trees
+- increase accuracy using GBM techniques
+- generate residuals
+- train subsequent trees
+- aggregate individual trees
+- evaluate model performance
+- generate performance metrics
+- perform grid search with multiple hyperparameters
+- select best-performing hyperparameters
+- generate final trained model
+- combine multiple models
+- assign weights to models
+- generate final output
+- provide unlabeled data as input
+- generate prediction
+- train multiple prediction models
+- use different data for different models
+- select data for baseline model
+- select data for subsequent models
+- receive labeled data for training
+- divide data into k folds
+- perform cross-validation
+- train machine learning model
+- describe process 500
+- generate groupings of folds
+- find highest performing hyperparameters
+- perform search over hyperparameters
+- select best performing hyperparameters
+- train final model
+- generate/select training data
+- describe process 600
+- receive novel data
+- provide novel data to trained GBM model
+- receive output from trained GBM model
+- plot outcome on curve of predicted risks
+- generate report
+- cause curve to be presented to user
+- describe trends in average risk scores
+- show trends in average risk scores for deliveries
+- show trends in average risk scores for intrapartum CD
+- describe variables with largest impact on predicted risk score
+- show performance metrics for series of models
+- describe diagnostic performance of intrapartum prediction models
+- show most significant variables for intrapartum models
+- describe performance of machine learning model
+- show AUC of intrapartum prediction models
+- describe trend of increasing performance
+- show examples of variables with largest impact
+- describe spectrum of contributing factors
+
+### Further Examples Having a Variety of Features
+
+- define method for predicting risk of unfavorable labor outcomes
+- specify feature vector generation
+- provide feature vector to trained machine learning model
+- receive output indicative of risk
+- present information to user
+- specify gradient boosting machine model
+- receive baseline output from baseline model
+- generate feature vector with baseline output
+- specify trained model prediction based on data up to 4 cm cervical dilation
+- specify static variables
+- specify dynamic variables
+- plot outcome on graph
+- generate second feature vector
+- provide second feature vector to second trained model
+- receive second output and update graph
+- specify system with hardware processor
+- specify non-transitory computer readable medium
+

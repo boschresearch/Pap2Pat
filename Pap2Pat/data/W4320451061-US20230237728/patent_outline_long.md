@@ -1,0 +1,121 @@
+# DESCRIPTION
+
+## BACKGROUND
+
+- introduce computer vision and graphics
+
+## DETAILED DESCRIPTION OF ILLUSTRATIVE EMBODIMENTS
+
+- introduce volume rendering approaches
+- motivate limitations of current volume rendering approaches
+- introduce generic renderers
+- motivate limitations of generic renderers
+- introduce differentiable volume renderer using neural Gaussian Ellipsoids (VoGE)
+- describe explicit representation of object geometry in VoGE
+- describe volume rendering formulation in VoGE
+- describe aggregation of volume density along viewing rays in VoGE
+- introduce approximate closed-form solution for volume density aggregation
+- describe various tasks performed by VoGE
+- describe system integration of VoGE
+- describe cloud network and client computing devices
+- describe application interface
+- describe plurality of computing nodes
+- describe virtualized computing instances
+- describe models for performing computer vision/graphics related tasks
+- describe utilization of VoGE in various models
+- describe rendering using VoGE
+- describe conversion of 3D object models into Gaussian ellipsoids
+- describe feature or texture sampling using VoGE
+- describe rendering pipeline of VoGE
+- describe object representation using explicit object geometries
+- describe volume density aggregation along viewing rays
+- describe computation of occupancy along each ray
+- describe synthesis of image using computed weights
+- describe approximate closed-form solution for volume density aggregation
+- describe kernel reconstruction for volume rendering
+- describe volume ellipsoidal Gaussians as reconstruction kernels
+- describe rendering a cuboid using VoGE
+- describe effect of varying σ on rendering
+- describe effect of varying τ on rendering
+- describe anisotropic Gaussian ellipsoid kernels
+- describe conversion of meshes and point clouds into Gaussian ellipsoids
+- describe viewing transformation
+- describe rotation and translation of vertices
+- describe change of variance matrices upon camera rotations
+- describe rendering with increasing number of Gaussian ellipsoids
+- describe kernel-to-pixel weights
+- describe perspective rays
+- describe computation of ray direction vector
+- describe observation along the ray
+- describe approximate closed-form solution for volume density aggregation
+- describe embedding VoGE into neural networks
+- describe sampling deep neural features using VoGE
+- describe example process implementing VoGE
+- define VoGE
+- introduce Gaussian ellipsoids
+- explain kernel reconstruction
+- describe volume rendering
+- compute occupancy along viewing rays
+- approximate volume density aggregation
+- reweight Gaussian ellipsoids
+- synthesize image
+- illustrate VoGE process
+- compare VoGE with other renderers
+- describe object pose estimation
+- evaluate pose estimation performance
+- illustrate pose estimation results
+- compare VoGE with other methods
+- describe feature sampler and renderer
+- embed VoGE into neural networks
+- evaluate pose estimation on PASCAL3D+
+- illustrate qualitative pose estimation results
+- evaluate pose estimation on ObjectNet3D
+- illustrate ablation study
+- describe neural view matching
+- evaluate neural view matching
+- illustrate viewpoint matching results
+- describe texture extraction and re-rendering
+- illustrate texture extraction results
+- describe shape fitting
+- illustrate shape fitting results
+- compare VoGE with PyTorch3D
+- conclude VoGE advantages
+- describe computing device architecture
+- introduce central processing units (CPUs)
+- explain CPU operations
+- describe chipset functionality
+- introduce random-access memory (RAM)
+- describe computer-readable storage medium
+- explain network connectivity
+- describe storage device functionality
+- explain storage controller interface
+- describe mass storage device functionality
+- explain data transformation on physical storage units
+- describe reading information from mass storage device
+- introduce other computer-readable storage media
+- describe operating system functionality
+- introduce various operating systems
+- describe mass storage device storing system programs
+- explain computer-executable instructions
+- describe input/output controller functionality
+- introduce various input devices
+- describe output devices
+- explain virtual machine host process
+- describe computer-executable instructions execution
+- introduce terminology usage
+- explain singular forms usage
+- describe range expressions
+- explain "optional" or "optionally" usage
+- describe "comprise" and variations usage
+- explain "exemplary" usage
+- describe "such as" usage
+- introduce components description
+- explain methods and systems implementation
+- describe computer program product on computer-readable storage medium
+- introduce web-implemented computer software
+- describe block diagrams and flowchart illustrations
+- explain computer program instructions loading
+- describe computer-readable memory functionality
+- explain article of manufacture including computer-readable instructions
+- describe various features and processes usage
+

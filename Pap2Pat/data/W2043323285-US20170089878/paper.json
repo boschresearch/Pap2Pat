@@ -1,0 +1,162 @@
+{
+    "id": "https://semopenalex.org/work/W2043323285",
+    "authors": [
+        "Jun Lu",
+        "Chan Tian",
+        "Thomas J. Carlson",
+        "Zhiqun Deng",
+        "Scott Morris",
+        "Mitchell J. Myjak",
+        "Daqing Zhou",
+        "Jayson J. Martinez",
+        "Hongfei Hou"
+    ],
+    "title": "Design and implementation of a new autonomous sensor fish to support advanced hydropower development",
+    "date": "2014-11-01",
+    "abstract": "Acceleration in development of additional conventional hydropower requires tools and methods to perform laboratory and in-field validation of turbine performance and fish passage claims. The new-generation Sensor Fish has been developed with more capabilities to accommodate a wider range of users over a broader range of turbine designs and operating environments. It provides in situ measurements of three-dimensional (3D) linear accelerations, 3D rotational velocities, 3D orientation, pressure, and temperature at a sampling frequency of 2048 Hz. It also has an automatic floatation system and built-in radio-frequency transmitter for recovery. The relative errors of the pressure, acceleration, and rotational velocity were within \u00b12%, \u00b15%, and \u00b15%, respectively. The accuracy of orientation was within \u00b14\u00b0 and accuracy of temperature was \u00b12 \u00b0C. The new-generation Sensor Fish is becoming a major technology and being deployed for evaluating the conditions for fish passage of turbines or other hydraulic structures in both the United States and several other countries.",
+    "sections": [
+        {
+            "title": "I. INTRODUCTION",
+            "paragraphs": [
+                "Fish passing through hydroturbines or other hydraulic structures may be injured or killed when they are exposed to severe hydraulic conditions. 2,4,11 Injury mechanisms could include rapid and extreme pressure changes, 1,16 shear stress and turbulence, 5 strike by runner blades, 6 and cavitation. 8 In addition, in the Columbia and Snake River hydropower systems and elsewhere, turbines are nearing the end of their operational life expectancies. Before rehabilitating or replacing these turbines, new designs for runners and other portions of the turbine system are being considered. As part of this effort, in the Pacific Northwest and elsewhere, improved survival rates and reduced injury rates for fish passing through turbines are being sought through changes in turbine design and operation.",
+                "To design or operate hydroelectric facilities for maximum power generation and minimum ecological impact, it is critical to understand the nature of the hydraulic conditions or physical stresses to which fish are exposed when they pass through complex hydraulic environments and to identify the locations within turbines and operations where conditions are severe enough to injure or kill fish. While field studies using live fish 9,10 are necessary for the evaluation of turbine biological performance, they are limited in that they cannot determine the specific hydraulic conditions or physical stresses experienced by the fish, the locations where deleterious conditions occur, or the specific causes of the biological response. To overcome this deficiency, an autonomous sensor device (the Gen 1 Sensor Fish) was developed that could be released independently or concurrently with live fish directly into operating turbines as a means of measuring hydraulic conditions such as pressure, acceleration, and rotation acting on a body in situ during downstream passage. 3,6 It was originally designed specifically for the large Kaplan turbines in the Columbia River basin. The Gen 1 Sensor Fish was a key tool employed by the North Pacific Division of the U.S. Army Corps of Engineers, who collaborated with the U.S. Department of Energy for its development, for virtually all of their post-construction structural and operations fish passage evaluations at mainstem Columbia River dams. 7 Correlation metrics between the Gen 1 Sensor Fish measurements and live fish injuries were also developed by conducting concurrent releases in turbulent shear flows under controlled laboratory conditions. 12 However, the size, aspects of function, deployment and recovery requirements, availability, and cost of the original design have limited its use beyond the main-stem Columbia River.",
+                "To better support hydropower development nationally and internationally, it was necessary to develop a newgeneration Sensor Fish device (Gen 2 Sensor Fish). Two research areas where the Gen 2 Sensor Fish has been proposed for international use are high-head dams with Francis turbines and pump storage facilities. Some high-head dams and pump storage facilities 13,14 have depths and pressures that would exceed the pressure measurement range of the Gen 1 Sensor Fish. In addition, many Francis turbines have higher fish mortalities than Kaplan turbines 15 due to increased incidents of blade strike, so the evaluation of Francis turbines requires improved robustness of the Sensor Fish to avoid excessive damages. Overall, identified areas for improvement included: conditions as well as interaction with turbine water passage structures and moving mechanical components; (5) more robustness under extreme conditions; (6) increased data acquisition, storage capacity, and communication data rate; and (7) improved software for analysis and visualization of data. In addition to the improvements listed the estimated cost was also reduced by approximately 80%. After it was designed and built, the Gen 2 Sensor Fish was then evaluated systematically in both a controlled laboratory environment and field conditions."
+            ],
+            "subsections": []
+        },
+        {
+            "title": "II. DESIGN AND IMPLEMENTATION",
+            "paragraphs": [
+                "The Gen 2 Sensor Fish (Figure 1) is 24.5 mm in diameter and 89.9 mm long, weighs approximately 42.1 g, and is neutrally buoyant in fresh water at deployment, with size and density similar to those of a yearling salmon smolt. It contains three-dimensional (3D) rotation sensors (i.e., 3axis gyroscope), 3D linear acceleration sensors (i.e., 3-axis accelerometers), a pressure sensor, a temperature sensor, a 3D orientation sensor (i.e., 3-axis magnetometer), a radiofrequency (RF) transmitter, a recovery module, and a communication module. A low-power microcontroller collects data from the sensors and stores up to 5 min of data on an internal non-volatile flash memory at a sampling frequency of 2048 Hz. A rechargeable battery supplies power to the Gen 2 Sensor Fish. The recovery module makes the Gen 2 Sensor Fish positively buoyant and float to the surface for recovery after a pre-programmed time. The components were placed so that the center of gravity is very close to the geometric center. Overall, the design of the Gen 2 Sensor Fish features several improvements over the Gen 1 Sensor Fish (Table I). "
+            ],
+            "subsections": [
+                {
+                    "title": "A. Acceleration",
+                    "paragraphs": [
+                        "The primary accelerometer (ADXL377, Analog Devices, Inc., Norwood, MA, USA) is a chip-scale package, low power, three-axis analog component with a typical full-scale range of \u00b1200 g per axis and a 10 000 g shock survival overload rating. The accelerometer also has user-selectable bandwidths to suit different applications, with a range of 0.5-1300 Hz for the x-axis and y-axis (see Figure 1 for axis definition) and a range of 0.5-1000 Hz for the z-axis. It is placed at the center of the circuit board, which coincides with the center of mass of the device, for the greatest accuracy."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "B. Rotation velocity",
+                            "paragraphs": [
+                                "The gyroscope (ITG-3200, InvenSense, Inc., San Jose, California, USA) is a digital-output three-axis microelectromechanical systems component with a full-scale range of \u00b12000 \u2022 /s per axis. The ITG-3200 includes three 16-bit analog-to-digital converters, which are used to digitize the gyroscope outputs. It includes a user-selectable internal lowpass filter bandwidth and an inter-integrated circuit (I 2 C) interface. The initial zero-rate output is \u00b140 \u2022 /s and the linear acceleration sensitivity is 0.1 \u2022 /s/g. The gyroscope also includes an embedded temperature sensor. The gyroscope is mounted near the center of the circuit board, close to the accelerometer."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "C. Orientation",
+                    "paragraphs": [
+                        "The eCompass module (LSM303DLHC, STMicroelectronics, Geneva, Switzerland) integrates a three-axis digital accelerometer and a three-axis digital magnetometer in the same package. The accelerometer has a maximum full-scale range of up to \u00b116 g, and thus is not suitable for collecting data during the most intense part of the passage (e.g., collision with structures), but it can improve the precision of the remaining data. The magnetometer has a selectable full-scale range of up to \u00b18.1 gauss. As with the gyroscope, this component supports an I 2 C serial bus interface and has an on-board temperature sensor."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "D. Pressure",
+                            "paragraphs": [
+                                "The pressure sensor (MS5412-BM, Measurement Specialties, Inc., Hampton, VA, USA) on the flexible board consists of a micromachined silicon pressure sensor die mounted on a 6.2 \u00d7 6.4 mm ceramic carrier; it has a full-scale range of 12 bars (174 psi (absolute)). The overpressure rating is 30 bars (435 psi (absolute)). The pressure sensor is of the Wheatstone bridge type with a typical full-scale span of 150 mV and zero offset of \u00b140 mV. The positive and negative outputs connect to an instrumentation amplifier on the circuit board. This amplifier has gain set to 13.0 and offset set to 40 mV, which allows an input range of -40 to +190 mV for 0 to 12 bars measurements."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "E. Temperature",
+                    "paragraphs": [
+                        "The primary temperature sensor (TC1046, Microchip Technology Inc., Chandler, AZ, USA) on the flexible board is also an analog component with linear temperature slope of 6.25 mV/ \u2022 C and a full-scale range of -40 to +125 \u2022 C. The temperature sensor is mounted close to the pressure sensor, with the intervening space covered with heat-conductive epoxy (Omega Bond 200, OMEGA Engineering) to improve the thermal contact between the temperature sensor and the metal enclosure of the pressure sensor, which comes into direct contact with the water."
+                    ],
+                    "subsections": [
+                        {
+                            "title": "F. Recovery module",
+                            "paragraphs": [
+                                "The recovery module includes a download board and a program board, each located at one end of the Gen 2 Sensor Fish. The download board allows users to download serial data from the Gen 2 Sensor Fish and recharge the battery, and the program board allows users to update the microcontroller firmware. Both boards contain a nichrome wire used for the recovery mechanism, which consists of a springloaded weight tied down with a piece of fishing line that loops over the nichrome wire. The microcontroller briefly applies a large current to the nichrome wire, which heats up the wire, severs the fishing line, and releases the weight on the end. The process is then repeated for the opposite end of the Gen 2 Sensor Fish. The Gen 2 Sensor Fish rises to the surface after the first weight has been released. A radio-frequency transmitter and four high-intensity orange light-emitting diodes (LEDs) are activated periodically so that users can locate the device. The carrier frequency of the RF pulse is 146 MHz for compatibility with existing receiver equipment. The LEDs face outward to permit good visibility in most orientations and the color was chosen to provide good contrast with water. For scenarios where an orange LED is not suitable the Gen 2 Sensor Fish can be manufactured using an alternate color."
+                            ],
+                            "subsections": []
+                        }
+                    ]
+                },
+                {
+                    "title": "G. Data acquisition and Sensor Fish configuration",
+                    "paragraphs": [
+                        "The users activate the Gen 2 Sensor Fish by holding a magnet near a magnetic switch located on the main circuit board. The Gen 2 Sensor Fish then performs a self-check to make sure that the battery voltage is above a preset threshold and the flash memory is empty. A successful check causes the status LED to flash yellow indicating the start of a configurable data acquisition delay time; otherwise, the status LED flashes red. After the delay time has elapsed, the Gen 2 Sensor Fish starts collecting sensor data and saving it to flash memory. Once data acquisition is complete, the status LED first flashes green indicating the start of a configurable resurface time. After the resurface time has elapsed the Gen 2 Sensor Fish activates the recovery mechanism. Finally, the LEDs and RF transmitter are activated periodically until the Gen 2 Sensor Fish is located and the magnetic switch is triggered.",
+                        "After data are collected and the Gen 2 Sensor Fish is retrieved, it is placed into the docking station. The status LED on the Gen 2 Sensor Fish is set to yellow and if the battery is fully charged, the status LED is set to green. The Gen 2 Sensor Fish then waits for serial commands from the docking station sent by the Sensor Fish communicator software (described below). The docking station plugs into the Gen 2 Sensor Fish on the download board to recharge the battery and download the sensor data via a two-pin serial interface. The docking station uses a transistor-transistor-logic to Universal Serial Bus (TTL-to-USB) converter module to transfer the data to a personal computer. It can service up to four Gen 2 Sensor Fish simultaneously. Users interact with the Gen 2 Sensor Fish via communication software developed at Pacific Northwest National Laboratory (PNNL), with the serial port configured to 921.6 kbps, 8 data bits, 1 start bit, 1 stop bit, and no parity. The Sensor Fish Communicator can also be used to convert the raw binary data file into a comma-separated value (CSV) file with physical units, using calibration coefficients, and plot the resulting data. The software supports the commands listed in Table II."
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "III. CALIBRATION AND EVALUATION",
+            "paragraphs": [
+                "All of the sensors, including the pressure sensor, threeaxis accelerometer, three-axis gyroscope, three-axis orientation sensor, and temperature sensor, were calibrated and evaluated individually before and after assembly in the lab. All data analysis was conducted using MATLAB programs (The MathWorks, Inc., Natick, MA, USA). All laboratory calibrations and evaluations, except for durability, were performed on each individual Gen 2 Sensor Fish that has been manufactured to date."
+            ],
+            "subsections": [
+                {
+                    "title": "A. Pressure",
+                    "paragraphs": [
+                        "Before pressure sensors were mounted on the Gen 2 Sensor Fish housing, they were calibrated using a HOBO R U20-001-02 water level logger (Onset Computer Corporation, Bourne, MA, USA) in a pressure chamber. The pressure sensor in the HOBO logger has a full-scale measurement range of 160 psi, with accuracy of \u00b10.05% FS. The pressure of the chamber was set at five different values for specific times.",
+                        "After the complete Gen 2 Sensor Fish device was built, its pressure sensor measurement was evaluated by placing it in a rapid-decompression testing chamber (hyperbaric chamber) in the laboratory. 16 The chamber is programmed to simulate the pressure-time history of a passage through a hydro turbine, with pressure range and rate of change representative of turbine passage. The pressure data acquired by the Gen 2 Sensor Fish during the test were compared to the pressure data measured by another pressure sensor (Honeywell TJE Pressure Transducer with 200 psi (absolute) range and 0.10% accuracy) built into the hyperbaric chamber. The relative error of pressure measurement was determined to be less than 2% (Figure 2)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "B. Acceleration",
+                    "paragraphs": [
+                        "Before final assembly, the acceleration measurement of the Gen 2 Sensor Fish was calibrated on a linear acceleration test track with a triaxial constant-current line drive accelerometer (Br\u00fcel & Kjaer Sound & Vibration Measurement A/S, Naerum, Denmark) (B&K) and a data acquisition card (Model PXIe-6124, National Instruments, Austin, TX, USA) (NI) housed in a PXIe-1073 chassis. The NI data acquisition card has a 16-bit analog-to-digital converter (analog input) with a maximum sampling frequency of 4 MHz. The Gen 2 Sensor Fish was mounted on a test track aligned with one of its axes, along with the B&K accelerometer, for each acceleration test. Each axis output of the B&K accelerometer was connected to one of the three PXIe-6124 analog inputs. The data acquisition card was controlled by a MATLAB program written specifically for these tests. The Sensor Fish mounting plate was pulled from a selected distance to collide with a stopper. After accelerating following release, the impact with the stopper caused the Gen 2 Sensor Fish to experience a high-magnitude impulsive acceleration event. The other two axes were also calibrated using the same methods. After final assembly, the acceleration of each axis was evaluated again using the same test fixture as part of the acceptance testing. The relative errors of linear acceleration measurements were determined to be less than 5%. In most cases, the relative errors were less than 2% (Figure 3)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "C. Rotational velocity",
+                    "paragraphs": [
+                        "The 3D rotational velocity measurement of the Gen 2 Sensor Fish was calibrated in a rotation test fixture with high-FIG. 3. Calibration of linear acceleration of a Gen 2 Sensor Fish. speed videography. Each of the three axes was calibrated individually by mounting the Gen 2 Sensor Fish in the fixture with one axis parallel to the rotational axis of the fixture. The rotational movement was also recorded using a digital highspeed camera (Photron PCI FastCAM 1280; Photron USA, Inc., San Diego, California) equipped with a 50 mm lens. The camera is capable of a frame rate of 500 frames per second at a resolution of 1280 \u00d7 1024 pixels and up to 16 000 frames per second at a reduced resolution. Trajectories of the Gen 2 Sensor Fish were obtained using a motion-tracking software package (Visual Fusion 4.2; Boeing-SVS Inc., the Albuquerque, New Mexico). The calibration and evaluation were conducted in two modes: variable and stationary rotation. In the variable rotation mode, the rotational velocity of the fixture was controlled to alternate between \u00b1150, \u00b1500, \u00b11500, and \u00b12000 \u2022 /s. In the stationary rotation mode, each axis of the gyroscope was evaluated again using the same rotation test fixture at five different constant speeds (both clockwise and counterclockwise). The relative error of rotational velocity measurements was determined to be less than 5% by comparing the sensor measurements with the results of the motion analysis using high-speed videos (Figure 4)."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "D. Orientation",
+                    "paragraphs": [
+                        "The orientation sensor (electronic compass) was calibrated using the same rotation test fixture used for calibration of the gyroscope. The sensor was placed in the fixture with one axis parallel to the rotational axis of the fixture. The speed of the rotation fixture was set at a constant slow speed of 150 \u2022 /s for a minimum of 360 \u2022 to get rotation through a FIG. 4. Calibration of rotational velocity of a Gen 2 Sensor Fish. full 2D plane. The performance of the electronic compass was checked by placing the Gen 2 Sensor Fish on a leveled antistatic mat and aligning the x-axis to the local magnetic north direction. The accuracy of the heading output of the electronic compass was determined to be within \u00b14 \u2022 ."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "E. Temperature",
+                    "paragraphs": [
+                        "The primary temperature sensor was calibrated in ice water with a DT8852 digital thermocouple thermometer (General Tools and Instruments, New York, NY). The thermometer has a full scale range of -200 \u2022 C to +1370 \u2022 C, with 0.1% accuracy and 1 s response time. Mixed crushed ice and deionized water were added to a clean beaker to form a watery slush. The Gen 2 Sensor Fish was submerged in ice water for 20 min before starting data collection. The ice water temperature was recorded by the DT8852. Extra care was taken to not let the Gen 2 Sensor Fish or the probe of the DT8852 contact the beaker. The temperature sensor was also evaluated at room temperature by comparing with the DT8852 reading. The difference between the Gen 2 Sensor Fish measurement and the DT8852 for both tests was less than \u00b12 \u2022 C."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "F. Durability",
+                    "paragraphs": [
+                        "Besides evaluating the performance of all sensors in the Gen 2 Sensor Fish individually, multiple durability tests were conducted using the linear acceleration test track to confirm there was no effect from the assembly process after the final assembly of the Gen 2 Sensor Fish. At 100 impact tests of up to 600 g acceleration, the two Gen 2 Sensor Fish randomly selected for testing remained fully functional. In addition to measurement sensors, the recovery module worked as designed despite the strong impact."
+                    ],
+                    "subsections": []
+                },
+                {
+                    "title": "G. Field evaluation",
+                    "paragraphs": [
+                        "A field evaluation of the new Gen 2 Sensor Fish was performed at the spillway of Ice Harbor Dam, which is located on the Snake River, 16 river kilometers from its confluence with the main stem of the Columbia River, in south-central Washington State. The dam is 860 m long and 30.5 m tall and consists of a six-unit powerhouse, a ten-bay spillway, a navigation lock, two fish ladders, a juvenile fish bypass facility, and a removable spillway weir. The spillway is 180 m long and has 15.2 m tainter gates. Three Gen 2 Sensor Fish were released in front of Spillbay 6. During the releases, the flow from Spillbay 6 was 8.5 kcfs (241 m 3 /s) and the total spill was 41.6 kcfs (1178 m 3 /s). The Gen 2 Sensor Fish were introduced into the spill discharge flow from the spillway deck using a fishing pole and a downrigger release clip (Black Marine RC-95 downrigger release clip) at a depth of approximately 15.2 m immediately upstream of the spill opening. The Gen 2 Sensor Fish were recovered in the tailrace and data were successfully recovered from all sensors for all releases (Figure 5). "
+                    ],
+                    "subsections": []
+                }
+            ]
+        },
+        {
+            "title": "IV. CONCLUSION",
+            "paragraphs": [
+                "The new Gen 2 Sensor Fish has been developed with more capabilities to help accelerate conventional hydropower development. It provides in situ measurements of 3D linear accelerations, 3D rotational velocities, 3D orientation, pressure, and temperature at a sampling frequency of 2048 Hz. Each sensor has been calibrated and evaluated in the lab. The relative errors of the pressure, acceleration and gyroscope were determined to be within \u00b12%, \u00b15%, and \u00b15%, respectively, by laboratory acceptance testing. The accuracy of orientation was determined to be within \u00b14 \u2022 and accuracy of temperature was \u00b12 \u2022 C. In addition, the performance of the Gen 2 Sensor Fish, which included the recovery module, was validated in field conditions. It is being deployed to evaluate the conditions for fish passage of turbines or other hydraulic structures in several countries."
+            ],
+            "subsections": [
+                {
+                    "title": "ACKNOWLEDGMENTS",
+                    "paragraphs": [
+                        "The study was funded by the U.S. Department of Energy Wind and Water Power Technologies Office and The Electric Power Research Institute. The authors also would like to thank the U.S. Army Corps of Engineers for their support of the field deployment. The study was conducted at Pacific Northwest National Laboratory, operated by Battelle for the U.S. Department of Energy."
+                    ],
+                    "subsections": []
+                }
+            ]
+        }
+    ]
+}
